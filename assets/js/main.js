@@ -14,6 +14,10 @@ function renderScene(sceneId) {
 
     currentSceneId = sceneId;
     
+    // 대화창 및 선택지 초기화
+    dialogueBox.style.display = 'block';
+    choiceContainer.style.display = 'none';
+    
     // 배경 및 캐릭터 업데이트
     if (scene.background) {
         bgLayer.style.backgroundImage = `url(${scene.background})`;
@@ -31,13 +35,6 @@ function renderScene(sceneId) {
 
     // 텍스트 타이핑 효과
     typeText(scene.text);
-
-    // 선택지 처리
-    if (scene.choices) {
-        dialogueBox.style.pointerEvents = 'none'; // 타이핑 중 클릭 방지
-    } else {
-        dialogueBox.style.pointerEvents = 'auto';
-    }
 }
 
 function typeText(text) {
@@ -50,7 +47,6 @@ function typeText(text) {
         if (i >= text.length) {
             clearInterval(interval);
             isTyping = false;
-            checkChoices();
         }
     }, 30);
 }
@@ -64,7 +60,6 @@ function checkChoices() {
             btn.className = 'choice-btn';
             btn.textContent = choice.text;
             btn.onclick = () => {
-                choiceContainer.style.display = 'none';
                 renderScene(choice.next);
             };
             choiceContainer.appendChild(btn);
@@ -77,7 +72,10 @@ dialogueBox.onclick = () => {
     if (isTyping) return;
     
     const scene = SCENARIO[currentSceneId];
-    if (scene.next) {
+    if (scene.choices) {
+        dialogueBox.style.display = 'none'; // 대화창 숨기기
+        checkChoices(); // 선택지 표시
+    } else if (scene.next) {
         renderScene(scene.next);
     }
 };
