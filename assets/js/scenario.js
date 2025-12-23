@@ -61,7 +61,7 @@ const SCENARIO = {
     "alone_2": {
         name: "???",
         text: "(뒤에서 들려온 낯선 목소리에 깜짝 놀라 뒤를 돌아보았다. 거기에는 묘한 분위기를 풍기는 소녀가 서 있었다.)\n\n어머, 길을 잃은 어린 양인가요?",
-        character: "https://api.dicebear.com/7.x/avataaars/svg?seed=Molly",
+        character: "assets/images/characters/girl2.png",
         next: "end_demo"
     },
     "end_demo": {
