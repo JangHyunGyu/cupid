@@ -77,6 +77,9 @@ dialogueBox.onclick = () => {
         checkChoices(); // 선택지 표시
     } else if (scene.next) {
         renderScene(scene.next);
+    } else {
+        // 다음 장면이 없고 선택지도 없는 경우 (게임 종료)
+        location.href = 'index.html';
     }
 };
 
