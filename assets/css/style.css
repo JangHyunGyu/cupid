@@ -137,43 +137,33 @@ body, html {
     color: #fff;
 }
 
-/* 가로 모드 강제 오버레이 스타일 */
-#orientation-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    color: #fff;
-    z-index: 9999;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-/* 세로 모드일 때만 오버레이 표시 */
+/* 반응형 및 세로 모드 최적화 */
 @media (orientation: portrait) {
-    #orientation-overlay {
-        display: flex;
+    #character-layer {
+        height: 70%; /* 세로 모드에서는 캐릭터를 조금 낮게 배치 */
+        bottom: 10%;
+    }
+
+    #dialogue-box {
+        min-height: 180px; /* 세로 모드에서 텍스트 가독성을 위해 높이 확보 */
+        padding: 25px 20px;
+    }
+
+    #message {
+        font-size: 1.1rem; /* 작은 화면 대응 */
+    }
+
+    #choice-container {
+        width: 90%;
+    }
+
+    .choice-btn {
+        padding: 12px;
+        font-size: 1rem;
     }
 }
 
-.overlay-content p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-top: 20px;
-}
-
-.rotate-icon {
-    font-size: 4rem;
-    animation: rotate-anim 2s infinite;
-}
-
-@keyframes rotate-anim {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(90deg); }
-    100% { transform: rotate(0deg); }
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
 }

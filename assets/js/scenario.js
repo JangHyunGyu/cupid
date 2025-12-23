@@ -44,24 +44,75 @@ const SCENARIO = {
         name: "서연",
         text: "(서연이의 얼굴이 순식간에 붉어진다. 당황해서 시선을 피하는 모습이 꽤 귀엽다.)\n\n어...? 그, 그건 그렇겠지만... 갑자기 그렇게 물어보면 좀 당황스럽잖아.",
         character: "assets/images/characters/girl1.png",
-        next: "end_demo"
+        next: "classroom_1"
     },
     "path_normal": {
         name: "서연",
         text: "(그녀는 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 건 왜일까.)\n\n응, 서두를 필요는 없지. 전학 첫날이니까 학교 분위기부터 익히는 게 중요해.",
+        next: "classroom_1"
+    },
+    "classroom_1": {
+        name: "서연",
+        text: "(교실 문 앞에 도착했다. 안쪽에서 아이들의 웅성거리는 소리가 들려온다.)\n\n자, 여기가 네가 앞으로 지낼 교실이야. 긴장하지 말고, 내가 옆에 있으니까.",
+        background: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1280&q=80",
+        character: "assets/images/characters/girl1.png",
+        next: "classroom_2"
+    },
+    "classroom_2": {
+        name: "선생님",
+        text: "(교탁 앞에 서자 수십 개의 시선이 나에게 꽂힌다. 서연이는 내 옆에서 든든하게 미소 짓고 있다.)\n\n자, 다들 주목! 오늘부터 우리와 함께하게 된 전학생이다. 자기소개 한마디 할까?",
+        character: null,
+        choices: [
+            { text: "안녕, 잘 부탁해! 운동하는 걸 좋아해.", next: "class_after_active" },
+            { text: "만나서 반가워. 조용히 지내는 편이야.", next: "class_after_quiet" }
+        ]
+    },
+    "class_after_active": {
+        name: "아이들",
+        text: "(교실 여기저기서 환호성이 터져 나온다. 활기찬 분위기가 마음에 든다.)\n\n오~ 운동 잘하게 생겼는데? 점심시간에 축구 한 판 고?",
+        next: "lunch_time"
+    },
+    "class_after_quiet": {
+        name: "아이들",
+        text: "(아이들이 고개를 끄덕이며 차분하게 나를 받아들인다. 부담스럽지 않은 시선이 편안하다.)\n\n그래, 반가워. 모르는 거 있으면 언제든 물어봐.",
+        next: "lunch_time"
+    },
+    "lunch_time": {
+        name: "나",
+        text: "(어느덧 오전 수업이 끝나고 점심시간이 되었다. 전학 첫날의 점심, 누구와 먹을까?)",
+        background: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1280&q=80",
+        choices: [
+            { text: "서연이에게 같이 먹자고 제안한다.", next: "lunch_seoyeon" },
+            { text: "혼자 학교를 둘러보며 먹을 곳을 찾는다.", next: "lunch_alone" }
+        ]
+    },
+    "lunch_seoyeon": {
+        name: "서연",
+        text: "(서연이에게 다가가자 그녀가 기다렸다는 듯 가방에서 도시락을 꺼낸다.)\n\n아, 같이 먹자고? 마침 나도 혼자 먹기 심심했는데 잘됐다! 옥상으로 갈까?",
+        character: "assets/images/characters/girl1.png",
+        next: "rooftop_1"
+    },
+    "rooftop_1": {
+        name: "서연",
+        text: "(시원한 바람이 부는 학교 옥상. 서연이가 정성스럽게 싸온 도시락을 펼친다.)\n\n자, 이건 내가 직접 만든 거야. 입맛에 맞을지 모르겠네. 한 번 먹어볼래?",
+        background: "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?auto=format&fit=crop&w=1280&q=80",
         next: "end_demo"
     },
-    "alone_1": {
+    "lunch_alone": {
         name: "나",
-        text: "(서연이를 보내고 혼자 남겨졌다. 차가운 공기가 피부에 닿자 조금 후회가 밀려온다.)\n\n혼자 가겠다고는 했지만... 생각보다 건물이 복잡하네. 여기가 어디지?",
+        text: "(혼자 복도를 걷다 보니 아침에 봤던 그 신비로운 소녀와 다시 마주쳤다.)",
         background: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1280&q=80",
-        character: null,
         next: "alone_2"
     },
     "alone_2": {
         name: "???",
-        text: "(뒤에서 들려온 낯선 목소리에 깜짝 놀라 뒤를 돌아보았다. 거기에는 묘한 분위기를 풍기는 소녀가 서 있었다.)\n\n어머, 길을 잃은 어린 양인가요?",
+        text: "(그녀는 창가에 기대어 책을 읽고 있다가 나를 발견하고는 살며시 미소 짓는다.)\n\n어머, 다시 만났네요. 전학생 군. 혼자 점심이라니, 외로운 늑대 스타일인가요?",
         character: "assets/images/characters/girl2.png",
+        next: "molly_talk_1"
+    },
+    "molly_talk_1": {
+        name: "???",
+        text: "(그녀의 보랏빛 눈동자가 나를 꿰뚫어 보는 것 같다. 왠지 모를 긴장감이 흐른다.)\n\n나는 '유나'라고 해요. 이 학교의 비밀을 알고 싶다면, 언제든 나를 찾아오세요.",
         next: "end_demo"
     },
     "end_demo": {
