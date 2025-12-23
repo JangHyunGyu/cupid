@@ -11,7 +11,9 @@ const SCENARIO = {
         text: "(그녀가 생긋 웃으며 다가온다. 바람에 살짝 흔들리는 그녀의 머리카락에서 은은한 샴푸 향기가 나는 것 같다.)\n\n혹시 오늘 온다는 그 전학생이니? 나는 학생회장 '서연'이라고 해.",
         choices: [
             { text: "응, 반가워. 길을 좀 헤매고 있었어.", next: "path_friendly_1" },
-            { text: "맞긴 한데, 학생회장이 마중까지 나올 줄은 몰랐네.", next: "path_cold_1" }
+            { text: "맞긴 한데, 학생회장이 마중까지 나올 줄은 몰랐네.", next: "path_cold_1" },
+            { text: "너, 참 예쁘다... (나도 모르게 본심이 튀어나왔다!)", next: "path_blush_1" },
+            { text: "(긴장해서 아무 말도 나오지 않는다. 그저 멍하니 그녀를 바라볼 뿐...)", next: "path_silent_1" }
         ]
     },
     "path_friendly_1": {
@@ -26,6 +28,18 @@ const SCENARIO = {
         character: "assets/images/characters/girl1.png",
         next: "alone_1"
     },
+    "path_blush_1": {
+        name: "서연",
+        text: "(서연이의 얼굴이 순식간에 사과처럼 빨개진다. 당황해서 어쩔 줄 몰라 하는 모습이 무척 신선하다.)\n\n에...? 그, 갑자기 무슨 소리를 하는 거야! 전학생은 다 너처럼 능글맞니? 어서 따라오기나 해!",
+        character: "assets/images/characters/girl1.png",
+        next: "hallway_1"
+    },
+    "path_silent_1": {
+        name: "서연",
+        text: "(그녀가 내 눈앞에서 손을 흔든다. 걱정스러운 눈빛이 나를 향한다.)\n\n저기... 괜찮니? 어디 아픈 건 아니지? 일단 보건실보다는 교무실부터 가는 게 좋겠어. 안내해줄게.",
+        character: "assets/images/characters/girl1.png",
+        next: "hallway_1"
+    },
     "hallway_1": {
         name: "서연",
         text: "(서연이의 뒤를 따라 복도를 걷는다. 복도 창문 너머로 학생들의 활기찬 목소리가 들려온다.)\n\n복도를 지나면서 학교 시설들을 설명해줄게. 저기 보이는 곳이 우리 학교 자랑인 도서관이야.",
@@ -37,7 +51,9 @@ const SCENARIO = {
         text: "(그녀가 갑자기 멈춰 서서 나를 돌아본다. 진지한 눈빛에 나도 모르게 침을 꼴깍 삼켰다.)\n\n너는 어떤 동아리에 관심 있어? 우리 학생회도 항상 새로운 인재를 환영하고 있거든.",
         choices: [
             { text: "학생회에 들어가면 너랑 더 자주 볼 수 있는 거야?", next: "path_flirt" },
-            { text: "아직은 잘 모르겠어. 천천히 생각해볼게.", next: "path_normal" }
+            { text: "아직은 잘 모르겠어. 천천히 생각해볼게.", next: "path_normal" },
+            { text: "도서관 동아리는 어때? 조용히 책 읽는 걸 좋아하거든.", next: "path_library" },
+            { text: "동아리보다는 너에 대해 더 알고 싶어. (직구!)", next: "path_direct" }
         ]
     },
     "path_flirt": {
@@ -49,6 +65,18 @@ const SCENARIO = {
     "path_normal": {
         name: "서연",
         text: "(그녀는 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 건 왜일까.)\n\n응, 서두를 필요는 없지. 전학 첫날이니까 학교 분위기부터 익히는 게 중요해.",
+        next: "classroom_1"
+    },
+    "path_library": {
+        name: "서연",
+        text: "(그녀가 의외라는 듯 눈을 크게 뜬다. 하지만 이내 부드러운 미소를 짓는다.)\n\n도서관 동아리? 너랑 잘 어울리는 것 같아. 우리 학교 도서관은 정말 조용하고 아늑하거든. 나중에 같이 가볼래?",
+        character: "assets/images/characters/girl1.png",
+        next: "classroom_1"
+    },
+    "path_direct": {
+        name: "서연",
+        text: "(그녀가 멍하니 나를 바라보다가, 이내 풋 하고 웃음을 터뜨린다.)\n\n후훗, 너 정말 솔직하구나? 나에 대해서라... 글쎄, 그건 네가 학생회에 들어오면 천천히 알려줄 수도 있는데?",
+        character: "assets/images/characters/girl1.png",
         next: "classroom_1"
     },
     "classroom_1": {
@@ -64,7 +92,9 @@ const SCENARIO = {
         character: null,
         choices: [
             { text: "안녕, 잘 부탁해! 운동하는 걸 좋아해.", next: "class_after_active" },
-            { text: "만나서 반가워. 조용히 지내는 편이야.", next: "class_after_quiet" }
+            { text: "만나서 반가워. 조용히 지내는 편이야.", next: "class_after_quiet" },
+            { text: "빨리 친해지고 싶어! 오늘 방과 후에 다 같이 놀러 갈 사람?", next: "class_after_party" },
+            { text: "공부하러 왔어. 방해하지 말아줬으면 좋겠네.", next: "class_after_study" }
         ]
     },
     "class_after_active": {
@@ -77,13 +107,25 @@ const SCENARIO = {
         text: "(아이들이 고개를 끄덕이며 차분하게 나를 받아들인다. 부담스럽지 않은 시선이 편안하다.)\n\n그래, 반가워. 모르는 거 있으면 언제든 물어봐.",
         next: "lunch_time"
     },
+    "class_after_party": {
+        name: "아이들",
+        text: "(교실이 순식간에 시끌벅적해진다. 몇몇 아이들이 벌써부터 내 주변으로 몰려든다.)\n\n와! 전학생 성격 진짜 시원시원하네! 좋아, 오늘 노래방 콜?",
+        next: "lunch_time"
+    },
+    "class_after_study": {
+        name: "아이들",
+        text: "(교실에 잠시 정적이 흐른다. 아이들이 조금 당황한 듯 서로 눈치를 본다.)\n\n아... 그래, 열공해... (왠지 모르게 벽이 생긴 기분이다.)",
+        next: "lunch_time"
+    },
     "lunch_time": {
         name: "나",
         text: "(어느덧 오전 수업이 끝나고 점심시간이 되었다. 전학 첫날의 점심, 누구와 먹을까?)",
         background: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1280&q=80",
         choices: [
             { text: "서연이에게 같이 먹자고 제안한다.", next: "lunch_seoyeon" },
-            { text: "혼자 학교를 둘러보며 먹을 곳을 찾는다.", next: "lunch_alone" }
+            { text: "혼자 학교를 둘러보며 먹을 곳을 찾는다.", next: "lunch_alone" },
+            { text: "매점에 가서 빵을 사 먹는다. (매점 빵이 그렇게 맛있다던데!)", next: "lunch_store" },
+            { text: "교실에서 잠을 잔다. (어제 긴장해서 잠을 설쳤더니 너무 졸려...)", next: "lunch_sleep" }
         ]
     },
     "lunch_seoyeon": {
@@ -103,6 +145,16 @@ const SCENARIO = {
         text: "(혼자 복도를 걷다 보니 아침에 봤던 그 신비로운 소녀와 다시 마주쳤다.)",
         background: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1280&q=80",
         next: "alone_2"
+    },
+    "lunch_store": {
+        name: "나",
+        text: "(매점으로 달려가 가장 인기 있다는 '초코 소라빵'을 쟁취했다! 한 입 베어 물자 달콤함이 입안 가득 퍼진다.)\n\n음~ 역시 소문대로야! 혼자 먹는 빵도 나쁘지 않네.",
+        next: "end_demo"
+    },
+    "lunch_sleep": {
+        name: "나",
+        text: "(책상에 엎드려 잠을 청한다. 멀리서 아이들의 웃음소리가 들려오지만, 이내 깊은 잠에 빠져들었다.)\n\n(꿈속에서 누군가 나를 부르는 것 같은 기분이 들었다...)",
+        next: "end_demo"
     },
     "alone_2": {
         name: "???",
