@@ -136,23 +136,6 @@ body, html {
     color: #fff;
 }
 
-#menu-layer {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    gap: 10px;
-}
-
-#menu-layer button {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 /* 가로 모드 강제 오버레이 스타일 */
 #orientation-overlay {
     display: none;
