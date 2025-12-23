@@ -163,6 +163,41 @@ body, html {
     }
 }
 
+/* 모바일 가로 모드 최적화 (화면 높이가 작을 때) */
+@media (max-height: 500px) and (orientation: landscape) {
+    #character-layer {
+        height: 100%;
+        bottom: -5%; /* 캐릭터가 너무 위로 올라오지 않게 조정 */
+    }
+
+    #dialogue-box {
+        min-height: 100px;
+        padding: 15px 20px;
+        margin-bottom: 5px;
+    }
+
+    #name-tag {
+        top: -20px;
+        font-size: 0.9rem;
+        padding: 3px 10px;
+    }
+
+    #message {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    #choice-container {
+        gap: 8px;
+        width: 70%;
+    }
+
+    .choice-btn {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(5px); }
