@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+    font-family: 'Pretendard', sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px; /* 16:9 비율 권장 */
+    margin: 0 auto;
+    background-color: #222;
+    overflow: hidden;
+}
+
+#background-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+#character-layer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+#character-img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#ui-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    pointer-events: none;
+}
+
+#dialogue-box {
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-bottom: 10px;
+}
+
+#name-tag {
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    background: #ff69b4;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#message {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+#next-indicator {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+}
+
+#choice-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    pointer-events: auto;
+}
+
+.choice-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #ff69b4;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.choice-btn:hover {
+    background: #ff69b4;
+    color: #fff;
+}
+
+#menu-layer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#menu-layer button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 가로 모드 강제 오버레이 스타일 */
+#orientation-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 세로 모드일 때만 오버레이 표시 */
+@media (orientation: portrait) {
+    #orientation-overlay {
+        display: flex;
+    }
+}
+
+.overlay-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.rotate-icon {
+    font-size: 4rem;
+    animation: rotate-anim 2s infinite;
+}
+
+@keyframes rotate-anim {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(90deg); }
+    100% { transform: rotate(0deg); }
+}

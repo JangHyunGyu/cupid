@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Cupid - 미연시 게임</title>
+    <!-- iOS 전용 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="assets/images/icon.png">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+</head>
+<body>
+    <div id="game-container">
+        <!-- 가로 모드 유도 오버레이 -->
+        <div id="orientation-overlay">
+            <div class="overlay-content">
+                <div class="rotate-icon">🔄</div>
+                <p>원활한 게임 플레이를 위해<br>기기를 가로로 돌려주세요.</p>
+            </div>
+        </div>
+
+        <!-- 배경 이미지 -->
+        <div id="background-layer"></div>
+        
+        <!-- 캐릭터 레이어 -->
+        <div id="character-layer">
+            <img id="character-img" src="" alt="character" style="display: none;">
+        </div>
+
+        <!-- UI 레이어 -->
+        <div id="ui-layer">
+            <div id="dialogue-box">
+                <div id="name-tag"></div>
+                <div id="message"></div>
+                <div id="next-indicator">▼</div>
+            </div>
+            
+            <div id="choice-container" style="display: none;">
+                <!-- 선택지 버튼들이 여기에 생성됨 -->
+            </div>
+        </div>
+
+        <!-- 메뉴 버튼 -->
+        <div id="menu-layer">
+            <button id="save-btn">저장</button>
+            <button id="load-btn">불러오기</button>
+        </div>
+    </div>
+
+    <script src="assets/js/scenario.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

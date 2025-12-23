@@ -1,0 +1,88 @@
+let currentSceneId = "start";
+let isTyping = false;
+
+const messageEl = document.getElementById('message');
+const nameTagEl = document.getElementById('name-tag');
+const dialogueBox = document.getElementById('dialogue-box');
+const choiceContainer = document.getElementById('choice-container');
+const bgLayer = document.getElementById('background-layer');
+const charImg = document.getElementById('character-img');
+
+function renderScene(sceneId) {
+    const scene = SCENARIO[sceneId];
+    if (!scene) return;
+
+    currentSceneId = sceneId;
+    
+    // 배경 및 캐릭터 업데이트
+    if (scene.background) {
+        bgLayer.style.backgroundImage = `url(${scene.background})`;
+    }
+    if (scene.character) {
+        charImg.src = scene.character;
+        charImg.style.display = 'block';
+    } else if (scene.character === null) {
+        charImg.style.display = 'none';
+    }
+
+    // 이름 태그
+    nameTagEl.textContent = scene.name || "";
+    nameTagEl.style.display = scene.name ? 'block' : 'none';
+
+    // 텍스트 타이핑 효과
+    typeText(scene.text);
+
+    // 선택지 처리
+    if (scene.choices) {
+        dialogueBox.style.pointerEvents = 'none'; // 타이핑 중 클릭 방지
+    } else {
+        dialogueBox.style.pointerEvents = 'auto';
+    }
+}
+
+function typeText(text) {
+    isTyping = true;
+    messageEl.textContent = "";
+    let i = 0;
+    const interval = setInterval(() => {
+        messageEl.textContent += text[i];
+        i++;
+        if (i >= text.length) {
+            clearInterval(interval);
+            isTyping = false;
+            checkChoices();
+        }
+    }, 30);
+}
+
+function checkChoices() {
+    const scene = SCENARIO[currentSceneId];
+    if (scene.choices) {
+        choiceContainer.innerHTML = "";
+        scene.choices.forEach(choice => {
+            const btn = document.createElement('button');
+            btn.className = 'choice-btn';
+            btn.textContent = choice.text;
+            btn.onclick = () => {
+                choiceContainer.style.display = 'none';
+                renderScene(choice.next);
+            };
+            choiceContainer.appendChild(btn);
+        });
+        choiceContainer.style.display = 'flex';
+    }
+}
+
+dialogueBox.onclick = () => {
+    if (isTyping) return;
+    
+    const scene = SCENARIO[currentSceneId];
+    if (scene.next) {
+        renderScene(scene.next);
+    }
+};
+
+// 초기 실행
+window.onload = () => {
+    renderScene("start");
+};
