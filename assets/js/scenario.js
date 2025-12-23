@@ -3,7 +3,7 @@ const SCENARIO = {
         name: "???",
         text: "(따스한 햇살이 내리쬐는 교문 앞. 전학 첫날의 설렘과 긴장감이 교차한다.)\n\n안녕? 처음 보는 얼굴이네. 이 시간에 교문 앞에 서 있는 걸 보니...",
         background: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1280&q=80",
-        character: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
+        character: "assets/images/characters/girl1.png",
         next: "intro_1"
     },
     "intro_1": {
@@ -17,13 +17,13 @@ const SCENARIO = {
     "path_friendly_1": {
         name: "서연",
         text: "(나의 대답에 그녀가 안심한 듯 밝게 웃는다.)\n\n후훗, 역시 그랬구나. 우리 학교가 좀 넓긴 하지? 내가 교무실까지 안내해줄게. 따라와!",
-        character: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&mood[]=happy",
+        character: "assets/images/characters/girl1.png",
         next: "hallway_1"
     },
     "path_cold_1": {
         name: "서연",
         text: "(그녀의 표정이 순식간에 어색하게 굳어진다. 아차, 너무 까칠하게 말했나...)\n\n아... 마중이라기보다는 순찰 중이었어. 기분 나빴다면 미안해. 교무실은 저쪽 건물 2층이야.",
-        character: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&mood[]=sad",
+        character: "assets/images/characters/girl1.png",
         next: "alone_1"
     },
     "hallway_1": {
@@ -43,7 +43,7 @@ const SCENARIO = {
     "path_flirt": {
         name: "서연",
         text: "(서연이의 얼굴이 순식간에 붉어진다. 당황해서 시선을 피하는 모습이 꽤 귀엽다.)\n\n어...? 그, 그건 그렇겠지만... 갑자기 그렇게 물어보면 좀 당황스럽잖아.",
-        character: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&mood[]=happy&accessories[]=shades",
+        character: "assets/images/characters/girl1.png",
         next: "end_demo"
     },
     "path_normal": {
