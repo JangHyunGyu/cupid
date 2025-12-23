@@ -43,7 +43,7 @@ const SCENARIO = {
     "hallway_1": {
         name: "서연",
         text: "(서연이의 뒤를 따라 복도를 걷는다. 복도 창문 너머로 학생들의 활기찬 목소리가 들려온다.)\n\n복도를 지나면서 학교 시설들을 설명해줄게. 저기 보이는 곳이 우리 학교 자랑인 도서관이야.",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/load_school.png",
         next: "hallway_2"
     },
     "hallway_2": {
@@ -82,7 +82,7 @@ const SCENARIO = {
     "classroom_1": {
         name: "서연",
         text: "(교실 문 앞에 도착했다. 안쪽에서 아이들의 웅성거리는 소리가 들려온다.)\n\n자, 여기가 네가 앞으로 지낼 교실이야. 긴장하지 말고, 내가 옆에 있으니까.",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/room_school.png",
         character: "assets/images/characters/girl1.png",
         next: "classroom_2"
     },
@@ -120,7 +120,7 @@ const SCENARIO = {
     "lunch_time": {
         name: "나",
         text: "(어느덧 오전 수업이 끝나고 점심시간이 되었다. 전학 첫날의 점심, 누구와 먹을까?)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/load_school.png",
         choices: [
             { text: "서연이에게 같이 먹자고 제안한다.", next: "lunch_seoyeon" },
             { text: "혼자 학교를 둘러보며 먹을 곳을 찾는다.", next: "lunch_alone" },
@@ -137,13 +137,13 @@ const SCENARIO = {
     "rooftop_1": {
         name: "서연",
         text: "(시원한 바람이 부는 학교 옥상. 서연이가 정성스럽게 싸온 도시락을 펼친다.)\n\n자, 이건 내가 직접 만든 거야. 입맛에 맞을지 모르겠네. 한 번 먹어볼래?",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/top_school.png",
         next: "end_demo"
     },
     "lunch_alone": {
         name: "나",
         text: "(혼자 복도를 걷다 보니 아침에 봤던 그 신비로운 소녀와 다시 마주쳤다.)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/load_school.png",
         next: "alone_2"
     },
     "lunch_store": {
