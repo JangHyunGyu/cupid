@@ -44,7 +44,13 @@ const SCENARIO = {
         name: "나",
         text: "(서연이는 차갑게 가버렸다. 첫날부터 너무 까칠하게 굴었나...)\n\n뭐, 어쩔 수 없지. 일단 알려준 대로 교무실을 찾아가서 선생님을 만나야겠다.",
         background: "assets/images/background/school.png",
-        next: "classroom_2"
+        next: "classroom_1_alone"
+    },
+    "classroom_1_alone": {
+        name: "나",
+        text: "(선생님께 안내를 받아 교실 문 앞에 도착했다. 안쪽에서 아이들의 웅성거리는 소리가 들려온다.)\n\n후우... 서연이 없이 혼자 들어가려니 아까보다 더 긴장되는걸.",
+        background: "assets/images/background/room_school.png",
+        next: "classroom_2_alone"
     },
     "hallway_1": {
         name: "서연",
@@ -95,6 +101,17 @@ const SCENARIO = {
     "classroom_2": {
         name: "선생님",
         text: "(교탁 앞에 서자 수십 개의 시선이 나에게 꽂힌다. 서연이는 내 옆에서 든든하게 미소 짓고 있다.)\n\n자, 다들 주목! 오늘부터 우리와 함께하게 된 전학생이다. 자기소개 한마디 할까?",
+        character: null,
+        choices: [
+            { text: "안녕, 잘 부탁해! 운동하는 걸 좋아해.", next: "class_after_active" },
+            { text: "만나서 반가워. 조용히 지내는 편이야.", next: "class_after_quiet" },
+            { text: "빨리 친해지고 싶어! 오늘 방과 후에 다 같이 놀러 갈 사람?", next: "class_after_party" },
+            { text: "공부하러 왔어. 방해하지 말아줬으면 좋겠네.", next: "class_after_study" }
+        ]
+    },
+    "classroom_2_alone": {
+        name: "선생님",
+        text: "(교탁 앞에 서자 수십 개의 시선이 나에게 꽂힌다. 아는 얼굴 하나 없는 교실이 낯설게 느껴진다.)\n\n자, 다들 주목! 오늘부터 우리와 함께하게 된 전학생이다. 자기소개 한마디 할까?",
         character: null,
         choices: [
             { text: "안녕, 잘 부탁해! 운동하는 걸 좋아해.", next: "class_after_active" },
