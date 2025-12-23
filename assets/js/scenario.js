@@ -2,7 +2,7 @@ const SCENARIO = {
     "start": {
         name: "???",
         text: "안녕? 처음 보는 얼굴이네. 이 시간에 교문 앞에 서 있는 걸 보니...",
-        background: "https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=1280&h=720&auto=format&fit=crop",
+        background: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1280&q=80",
         character: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
         next: "intro_1"
     },
@@ -29,7 +29,7 @@ const SCENARIO = {
     "hallway_1": {
         name: "서연",
         text: "복도를 지나면서 학교 시설들을 설명해줄게. 저기 보이는 곳이 우리 학교 자랑인 도서관이야.",
-        background: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1280&h=720&auto=format&fit=crop",
+        background: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1280&q=80",
         next: "hallway_2"
     },
     "hallway_2": {
@@ -54,7 +54,7 @@ const SCENARIO = {
     "alone_1": {
         name: "나",
         text: "혼자 가겠다고는 했지만... 생각보다 건물이 복잡하네. 여기가 어디지?",
-        background: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1280&h=720&auto=format&fit=crop",
+        background: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1280&q=80",
         character: null,
         next: "alone_2"
     },
