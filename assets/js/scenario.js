@@ -40,6 +40,12 @@ const SCENARIO = {
         character: "assets/images/characters/girl1.png",
         next: "hallway_1"
     },
+    "alone_1": {
+        name: "나",
+        text: "(서연이는 차갑게 가버렸다. 첫날부터 너무 까칠하게 굴었나...)\n\n뭐, 어쩔 수 없지. 일단 알려준 대로 교무실을 찾아가서 선생님을 만나야겠다.",
+        background: "assets/images/background/school.png",
+        next: "classroom_2"
+    },
     "hallway_1": {
         name: "서연",
         text: "(서연이의 뒤를 따라 복도를 걷는다. 복도 창문 너머로 학생들의 활기찬 목소리가 들려온다.)\n\n복도를 지나면서 학교 시설들을 설명해줄게. 저기 보이는 곳이 우리 학교 자랑인 도서관이야.",
