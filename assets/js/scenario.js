@@ -44,6 +44,7 @@ const SCENARIO = {
         name: "나",
         text: "(서연이는 차갑게 가버렸다. 첫날부터 너무 까칠하게 굴었나...)\n\n뭐, 어쩔 수 없지. 일단 알려준 대로 교무실을 찾아가서 선생님을 만나야겠다.",
         background: "assets/images/background/school.png",
+        character: null,
         next: "classroom_1_alone"
     },
     "classroom_1_alone": {
