@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /game.html
 
 Sitemap: https://cupid.archerlab.dev/sitemap.xml
