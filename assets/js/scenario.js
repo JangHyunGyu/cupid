@@ -239,7 +239,10 @@
         name: "선생님",
         text: "(교탁 앞에 서자 수십 개의 시선이 일제히 나에게 꽂힌다. 호기심 어린 눈빛, 경계하는 눈빛... 서연이는 내 옆에서 든든하게 미소 지으며 나를 지켜봐 주고 있다.)",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/teacher.png",
+        characters: {
+            left: "assets/images/characters/teacher.png",
+            right: "assets/images/characters/seyoun_laugh.png"
+        },
         next: "classroom_2_2"
     },
     "classroom_2_2": {
@@ -262,13 +265,13 @@
     "class_after_active": {
         name: "아이들",
         text: "(교실 여기저기서 환호성이 터져 나온다. 특히 뒷자리에 앉은 남학생들이 눈을 빛낸다. 서연이도 흐뭇한 미소를 지으며 박수를 쳐준다.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_2"
     },
     "class_after_active_2": {
         name: "아이들",
         text: "(아이들은 벌써부터 나를 팀에 영입하려 수군거린다.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_3"
     },
     "class_after_active_3": {
@@ -286,7 +289,7 @@
     "class_after_quiet_2": {
         name: "아이들",
         text: "(서연이는 내 진지한 모습이 마음에 든 듯 고개를 끄덕인다. 교실 분위기가 한결 차분해진다.)",
-        character: null,
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "class_after_quiet_3"
     },
     "class_after_quiet_3": {
@@ -304,7 +307,7 @@
     "class_after_party_2": {
         name: "아이들",
         text: "(서연이는 조금 당황한 듯하지만 이내 웃음을 터뜨린다. 아이들은 벌써 메뉴를 정하느라 바쁘다.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_party_3"
     },
     "class_after_party_3": {
@@ -322,7 +325,7 @@
     "class_after_study_2": {
         name: "아이들",
         text: "(서연이의 표정도 조금 굳어진다. 왠지 모르게 벽이 생긴 기분이다. 아이들은 내 눈치를 보며 조용해진다.)",
-        character: null,
+        character: "assets/images/characters/seyoun_pout.png",
         next: "class_after_study_3"
     },
     "class_after_study_3": {
@@ -1266,19 +1269,19 @@
     "day2_lesson_solve_active": {
         name: "아이들",
         text: "(칠판 앞으로 나가 거침없이 문제를 풀어나갔다. 분필 소리가 경쾌하게 울려 퍼진다. 정답을 맞히자 아이들이 감탄 섞인 박수를 보낸다. 서연이도 뒤에서 엄지를 치켜세우며 웃어준다.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2_active"
     },
     "day2_lesson_solve_normal": {
         name: "아이들",
         text: "(칠판 앞으로 나가 거침없이 문제를 풀어나갔다. 분필 소리가 경쾌하게 울려 퍼진다. 정답을 맞히자 아이들이 감탄 섞인 박수를 보낸다. 서연이도 뒤에서 엄지를 치켜세우며 웃어준다.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2"
     },
     "day2_lesson_solve_study": {
         name: "아이들",
         text: "(칠판 앞으로 나가 거침없이 문제를 풀어나갔다. 분필 소리가 경쾌하게 울려 퍼진다. 정답을 맞히자 아이들이 감탄 섞인 박수를 보낸다. 서연이도 뒤에서 엄지를 치켜세우며 웃어준다.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2"
     },
     "day2_lesson_solve_2": {

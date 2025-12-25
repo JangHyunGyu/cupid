@@ -239,7 +239,10 @@ const SCENARIO = {
         name: "Teacher",
         text: "(As I stand in front of the podium, dozens of gazes are fixed on me all at once. Curious eyes, wary eyes... Seoyeon is standing beside me, watching over me with a reassuring smile.)",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/teacher.png",
+        characters: {
+            left: "assets/images/characters/teacher.png",
+            right: "assets/images/characters/seyoun_laugh.png"
+        },
         next: "classroom_2_2"
     },
     "classroom_2_2": {
@@ -262,13 +265,13 @@ const SCENARIO = {
     "class_after_active": {
         name: "Kids",
         text: "(Cheers burst out from all over the classroom. Especially the boys sitting in the back seats have their eyes sparkling. Seoyeon also gives a satisfied smile and applauds.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_2"
     },
     "class_after_active_2": {
         name: "Kids",
         text: "(The kids are already whispering about recruiting me to their team.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_3"
     },
     "class_after_active_3": {
@@ -286,7 +289,7 @@ const SCENARIO = {
     "class_after_quiet_2": {
         name: "Kids",
         text: "(Seoyeon nods as if she likes my serious appearance. The classroom atmosphere becomes much calmer.)",
-        character: null,
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "class_after_quiet_3"
     },
     "class_after_quiet_3": {
@@ -304,7 +307,7 @@ const SCENARIO = {
     "class_after_party_2": {
         name: "Kids",
         text: "(Seoyeon seems a bit flustered but soon bursts into laughter. The kids are already busy deciding on the menu.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_party_3"
     },
     "class_after_party_3": {
@@ -322,7 +325,7 @@ const SCENARIO = {
     "class_after_study_2": {
         name: "Kids",
         text: "(Seoyeon's expression also hardens a bit. For some reason, it feels like a wall has been built. The kids become quiet while watching my reaction.)",
-        character: null,
+        character: "assets/images/characters/seyoun_pout.png",
         next: "class_after_study_3"
     },
     "class_after_study_3": {
@@ -724,19 +727,11 @@ const SCENARIO = {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
-        next: "after_dain_tteokbokki_2"
-    },
-    "after_dain_tteokbokki_2": {
-        name: "Dain",
-        text: "\"Kya~ as expected, tteokbokki eaten after exercise is the best! Thank you so much for coming with me today. Thanks to you, it feels twice as delicious as usual!\"",
-        background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shirt.png",
-        night: true,
         next: "after_dain_tteokbokki_3"
     },
     "after_dain_tteokbokki_3": {
         name: "Dain",
-        text: "\"Let's come to eat together often tomorrow... no, in the future too! Is it a promise?\"",
+        text: "\"Let's come eat together often, starting tomorrow... no, from now on! Is it a promise?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -1275,19 +1270,19 @@ const SCENARIO = {
     "day2_lesson_solve_active": {
         name: "Kids",
         text: "(I went to the front of the blackboard and solved the problem without hesitation. The sound of chalk echoes rhythmically. When I get the right answer, the kids send admiring applause. Seoyeon also smiles and gives a thumbs up from behind.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2_active"
     },
     "day2_lesson_solve_normal": {
         name: "Kids",
         text: "(I went to the front of the blackboard and solved the problem without hesitation. The sound of chalk echoes rhythmically. When I get the right answer, the kids send admiring applause. Seoyeon also smiles and gives a thumbs up from behind.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2"
     },
     "day2_lesson_solve_study": {
         name: "Kids",
         text: "(I went to the front of the blackboard and solved the problem without hesitation. The sound of chalk echoes rhythmically. When I get the right answer, the kids send admiring applause. Seoyeon also smiles and gives a thumbs up from behind.)",
-        character: null,
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2"
     },
     "day2_lesson_solve_2": {
@@ -1507,6 +1502,9 @@ const SCENARIO = {
     "day2_lunch_yuna_2_3": {
         name: "Yuna",
         text: "\"This boy... do you know who he is? He's a senior who disappeared from this school two years ago.\"",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        next: "day2_lunch_yuna_2_4"
+    },
     "day2_lunch_yuna_2_4": {
         name: "Yuna",
         text: "(She grips my collar tightly as if she doesn't want to lose me.)",
@@ -2097,7 +2095,7 @@ const SCENARIO = {
     },
     "day2_final_dain_4_again": {
         name: "Dain",
-        text: "\"Yesterday and today, the tteokbokki I eat with you is the most delicious in the world! Can we... come together tomorrow too?\"",
+        text: "\"Yesterday and today, eating tteokbokki with you has been the best! Can we... come together tomorrow too?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
