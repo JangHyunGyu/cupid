@@ -1492,7 +1492,7 @@
         text: "\"후훗... 결국 마음이 약해졌나 보네. 좋아, 오늘은 양보해 줄게. 하지만 다음엔 도망칠 수 없을 거야.\"",
         characters: {
             left: "assets/images/characters/seyoun_shy.png",
-            right: "assets/images/characters/yuna_smile.png"
+            right: "assets/images/characters/yuna_sadsmile.png"
         },
         sunset: true,
         next: "day2_final_seoyeon_2"
@@ -1607,7 +1607,7 @@
         text: "\"후훗... 결국 마음이 약해졌나 보네. 좋아, 오늘은 양보해 줄게. 하지만 다음엔 도망칠 수 없을 거야.\"",
         characters: {
             left: "assets/images/characters/seyoun_shy.png",
-            right: "assets/images/characters/yuna_smile.png"
+            right: "assets/images/characters/yuna_sadsmile.png"
         },
         sunset: true,
         next: "day2_final_seoyeon_2"
