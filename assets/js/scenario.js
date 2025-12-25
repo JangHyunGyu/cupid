@@ -1599,6 +1599,13 @@
         name: "나",
         text: "(선생님이 덮어준 이불의 포근함에 나도 모르게 깊은 잠에 빠져들었다. 양호실의 고요함 속에서 어제의 피로가 씻겨 내려가는 기분이다.)",
         background: "assets/images/background/nurse_room.jpg",
+        next: "day2_lunch_nurse_wake"
+    },
+    "day2_lunch_nurse_wake": {
+        name: "나",
+        text: "(얼마나 잤을까... 눈을 뜨니 창밖으로 붉은 노을이 스며들고 있다. 양호실은 이미 텅 비어 고요함만이 감돈다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        sunset: true,
         next: "day2_afternoon"
     },
     "day2_afternoon": {
@@ -1682,7 +1689,7 @@
         ]
     },
     "day2_final_seoyeon_back_yuna_new": {
-        name: "유나",
+        name: "???",
         text: "\"후훗... 결국 마음이 약해졌나 보네. 좋아, 오늘은 양보해 줄게. 하지만 다음엔 도망칠 수 없을 거야.\"",
         characters: {
             left: "assets/images/characters/seyoun_shy.png",
@@ -1704,7 +1711,7 @@
     },
     "day2_final_seoyeon": {
         name: "서연",
-        text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 유나를 의식하는지 눈빛이 날카롭다.)",
+        text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 옆에 서 있는 소녀를 의식하는지 눈빛이 날카롭다.)",
         characters: {
             left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1713,7 +1720,30 @@
         next: "day2_final_seoyeon_yuna_react"
     },
     "day2_final_seoyeon_yuna_react": {
+        name: "나",
+        text: "(내가 다가가자 옆에 서 있던 소녀가 나지막하게 입을 연다.)",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_sadsmile.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_seoyeon_yuna_react_met", condition: "metYuna" },
+            { text: "다음", next: "day2_final_seoyeon_yuna_react_new", excludeCondition: "metYuna" }
+        ]
+    },
+    "day2_final_seoyeon_yuna_react_met": {
         name: "유나",
+        text: "\"...그래, 네 선택이 그렇다면 어쩔 수 없지. 하지만 조심해. 빛이 강할수록 그림자도 깊은 법이니까.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_sadsmile.png"
+        },
+        sunset: true,
+        next: "day2_final_seoyeon_2"
+    },
+    "day2_final_seoyeon_yuna_react_new": {
+        name: "???",
         text: "\"...그래, 네 선택이 그렇다면 어쩔 수 없지. 하지만 조심해. 빛이 강할수록 그림자도 깊은 법이니까.\"",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
@@ -1915,7 +1945,7 @@
     },
     "day2_final_dain_react": {
         name: "나",
-        text: "(서연이와 유나의 시선을 뒤로하고 다인이에게 달려갔다. 뒤에서 유나의 나지막한 목소리가 들려온다.)",
+        text: "(서연이와 옆에 서 있는 소녀의 시선을 뒤로하고 다인이에게 달려갔다. 뒤에서 나지막한 목소리가 들려온다.)",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_sadsmile.png"
