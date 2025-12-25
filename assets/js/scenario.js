@@ -46,7 +46,7 @@
     "path_friendly_1": {
         name: "서연",
         text: "(나의 대답에 그녀가 안심한 듯 꽃이 피어나듯 밝게 웃는다. 그 미소에 얼어붙었던 긴장이 조금씩 녹아내리는 기분이다. 그녀의 미소는 마치 봄날의 햇살처럼 따스하다. 그녀는 내 가방 끈을 살짝 잡아당기며 앞장선다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "path_friendly_1_2"
     },
     "path_friendly_1_2": {
@@ -917,7 +917,7 @@
     "day2_gate_2": {
         name: "서연",
         text: "(그녀는 오늘도 활기찬 모습으로 나를 반겨준다. 아침 이슬을 머금은 꽃처럼 싱그러운 미소다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_gate_2_2"
     },
     "day2_gate_2_2": {
