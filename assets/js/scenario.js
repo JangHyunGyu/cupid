@@ -1420,6 +1420,7 @@
         name: "서연",
         text: "\"응, 좀 바쁘긴 하겠지만... 너랑 같이 보낼 시간은 어떻게든 만들 거야. 학생회장의 권한으로 말이지! 후훗, 농담이야. 같이 가줄 거지?\"",
         character: "assets/images/characters/seyoun_nomal.png",
+        setFlag: "promisedFestival",
         next: "day2_afternoon"
     },
     "day2_lunch_yuna_new": {
@@ -1621,6 +1622,7 @@
         text: "\"어머, 이제 일어났니? 정말 달게 자더구나. 이제 곧 하교 시간이야. 몸은 좀 어떠니?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
+        sunset: true,
         next: "day2_afternoon"
     },
     "day2_afternoon": {
@@ -2109,16 +2111,6 @@
         character: null,
         sunset: true,
         next: "day2_final_run_2"
-    },
-    "day2_final_run_2": {
-        name: "나",
-        text: "\"(하아... 하아... 살았다. 하지만 내일 학교에 어떻게 가지? 벌써부터 걱정이 태산이네...)\"",
-        background: "assets/images/background/school.png",
-        sunset: true,
-        choices: [
-            { text: "다음", next: "day2_final_run_3", condition: "promisedFestival" },
-            { text: "다음", next: "day2_ending_pre", excludeCondition: "promisedFestival" }
-        ]
     },
     "day2_final_run_2": {
         name: "나",
