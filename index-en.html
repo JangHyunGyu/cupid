@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Cupid: 무료 웹 미연시 - 브라우저 미소녀 연애 시뮬레이션</title>
-    <meta name="description" content="설치 없이 즐기는 무료 웹 미연시 게임 Cupid. 학원 로맨스 비주얼 노벨의 주인공이 되어 서연, 유나와 함께 설레는 학교 생활을 시작하세요.">
-    <meta name="keywords" content="미연시, 무료 미연시, 웹 미연시, 브라우저 게임, 비주얼 노벨, 미소녀 연애 시뮬레이션, 학원 로맨스, Cupid">
+    <title>Cupid: Free Web Visual Novel - Browser Anime Dating Sim</title>
+    <meta name="description" content="Play Cupid, a free web visual novel game without installation. Become the protagonist of a school romance and start an exciting school life with Seoyeon and Yuna.">
+    <meta name="keywords" content="visual novel, free visual novel, web visual novel, browser game, anime dating sim, school romance, Cupid">
     <meta name="naver-site-verification" content="d1b1d31619e3752f70e28ef54cb08b49698ccf66" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cupid.archerlab.dev/">
-    <meta property="og:title" content="Cupid: 무료 웹 미연시 - 브라우저 미소녀 연애 시뮬레이션">
-    <meta property="og:description" content="설치 없이 즐기는 무료 웹 미연시 게임 Cupid. 학원 로맨스 비주얼 노벨의 주인공이 되어 서연, 유나와 함께 설레는 학교 생활을 시작하세요.">
+    <meta property="og:url" content="https://cupid.archerlab.dev/index-en.html">
+    <meta property="og:title" content="Cupid: Free Web Visual Novel - Browser Anime Dating Sim">
+    <meta property="og:description" content="Play Cupid, a free web visual novel game without installation. Become the protagonist of a school romance and start an exciting school life with Seoyeon and Yuna.">
     <meta property="og:image" content="https://cupid.archerlab.dev/assets/images/background/school.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://cupid.archerlab.dev/">
-    <meta property="twitter:title" content="Cupid: 무료 웹 미연시 - 브라우저 미소녀 연애 시뮬레이션">
-    <meta property="twitter:description" content="설치 없이 즐기는 무료 웹 미연시 게임 Cupid. 학원 로맨스 비주얼 노벨의 주인공이 되어 서연, 유나와 함께 설레는 학교 생활을 시작하세요.">
+    <meta property="twitter:url" content="https://cupid.archerlab.dev/index-en.html">
+    <meta property="twitter:title" content="Cupid: Free Web Visual Novel - Browser Anime Dating Sim">
+    <meta property="twitter:description" content="Play Cupid, a free web visual novel game without installation. Become the protagonist of a school romance and start an exciting school life with Seoyeon and Yuna.">
     <meta property="twitter:image" content="https://cupid.archerlab.dev/assets/images/background/school.png">
 
     <!-- Google tag (gtag.js) -->
@@ -119,7 +119,7 @@
         .contact-link:hover {
             background: rgba(255, 255, 255, 0.4);
         }
-        /* 모바일 가로 모드 최적화 */
+        /* Mobile Landscape Optimization */
         @media (max-height: 500px) and (orientation: landscape) {
             h1 {
                 font-size: 2rem;
@@ -218,21 +218,22 @@
 </head>
 <body>
     <div class="lang-switch">
-        <a href="index-en.html" class="lang-btn">English</a>
+        <a href="index.html" class="lang-btn">한국어</a>
     </div>
+
     <div id="landing-container">
         <div class="content">
             <h1>CUPID</h1>
-            <p>당신의 운명을 결정할 전학 첫날의 이야기</p>
-            <a href="game.html" class="start-btn">게임 시작</a>
+            <p>A story of your first day at school that will decide your fate</p>
+            <a href="game-en.html" class="start-btn">Start Game</a>
         </div>
 
         <div class="footer">
             <div class="contact-links">
-                <button class="contact-link" onclick="openContactModal()">📞 문의하기</button>
-                <button class="contact-link" onclick="installApp()">⬇️ 앱 설치</button>
+                <button class="contact-link" onclick="openContactModal()">📞 Contact Us</button>
+                <button class="contact-link" onclick="installApp()">⬇️ Install App</button>
             </div>
-            <p style="font-size: 0.85rem; margin-bottom: 5px; color: #ffb6c1;">Advisor: 김유진 프로, 이상훈 프로</p>
+            <p style="font-size: 0.85rem; margin-bottom: 5px; color: #ffb6c1;">Advisor: Pro Yujin Kim, Pro Sanghoon Lee</p>
             <p style="font-size: 0.8rem; opacity: 0.7;">© 2025 ArcherLab. All rights reserved.</p>
         </div>
     </div>
@@ -240,12 +241,12 @@
     <!-- Contact Modal -->
     <div id="contactModal" class="modal-overlay" onclick="closeContactModal(event)">
         <div class="modal-container" onclick="event.stopPropagation()">
-            <h3 class="modal-title">문의하기</h3>
+            <h3 class="modal-title">Contact Us</h3>
             <div class="contact-options">
-                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option">💬 카카오톡 오픈채팅</a>
-                <a href="mailto:hyungyu@archerlab.dev" class="contact-option">📧 이메일 보내기</a>
+                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option">💬 KakaoTalk Open Chat</a>
+                <a href="mailto:hyungyu@archerlab.dev" class="contact-option">📧 Send Email</a>
             </div>
-            <button onclick="closeContactModal()" style="margin-top: 20px; background: none; border: none; color: #aaa; cursor: pointer;">닫기</button>
+            <button onclick="closeContactModal()" style="margin-top: 20px; background: none; border: none; color: #aaa; cursor: pointer;">Close</button>
         </div>
     </div>
 
@@ -270,9 +271,9 @@
                     deferredPrompt = null;
                 });
             } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                alert('아이폰/아이패드에서는 [공유] 버튼을 누르고 [홈 화면에 추가]를 선택해주세요.');
+                alert('On iPhone/iPad, tap the [Share] button and select [Add to Home Screen].');
             } else {
-                alert('이미 설치되어 있거나 지원하지 않는 브라우저입니다.');
+                alert('Already installed or browser not supported.');
             }
         }
     </script>

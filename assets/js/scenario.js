@@ -1646,6 +1646,7 @@
     "day2_afternoon_2": {
         name: "나",
         text: "(가방을 챙겨 교실을 나서려는데, 두 소녀가 동시에 나를 부른다. 복도에 묘한 긴장감이 흐른다.)",
+        background: "assets/images/background/load_school.png",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
