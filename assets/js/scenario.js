@@ -1449,6 +1449,19 @@
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_yuna_new_betrayal", condition: "promisedFestival" },
+            { text: "다음", next: "day2_final_yuna_new_2", excludeCondition: "promisedFestival" }
+        ]
+    },
+    "day2_final_yuna_new_betrayal": {
+        name: "서연",
+        text: "\"전학생 군... 아까 축제 때 같이 가기로 약속했으면서... 처음 보는 애한테 가버리는 거야?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_sad.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
         next: "day2_final_yuna_new_2"
     },
     "day2_final_yuna_new_2": {
@@ -1601,7 +1614,17 @@
     },
     "day2_final_run_2": {
         name: "나",
-        text: "\"(하아... 하아... 살았다. 하지만 내일 학교에 어떻게 가지? 서연이랑 축제 약속도 했는데... 벌써부터 걱정이 태산이네...)\"",
+        text: "\"(하아... 하아... 살았다. 하지만 내일 학교에 어떻게 가지? 벌써부터 걱정이 태산이네...)\"",
+        background: "assets/images/background/school.png",
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_run_3", condition: "promisedFestival" },
+            { text: "다음", next: "day2_ending_pre", excludeCondition: "promisedFestival" }
+        ]
+    },
+    "day2_final_run_3": {
+        name: "나",
+        text: "\"(서연이랑 축제 약속도 했는데... 이렇게 도망쳐버리면 어떡하지? 내일 얼굴 보기가 정말 힘들 것 같아...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_ending_pre"
