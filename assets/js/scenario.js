@@ -502,9 +502,9 @@
         next: "day2_afternoon"
     },
     "day2_lunch_yuna": {
-        name: "유나",곳을 응시하고 있다. 내가 다가가자 그녀가 천천히 고개를 돌린다. 그녀의 눈동자 속에 알 수 없는 슬픔이 서려 있다. 그녀는 내 손을 잡고 구석진 서가로 나를 이끈다.)\n\n\"왔구나. 네가 올 줄 알았어. 이 학교의 비밀... 그리고 너와 나의 연결고리에 대해 이야기해줄 때가 된 것 같네.\"",
-        background: "assets/images/background/library_old. 내가 다가가자 그녀가 천천히 고개를 돌린다. 그녀의 눈동자 속에 알 수 없는 슬픔이 서려 있다. 그녀는 내 손을 잡고 구석진 서가로 나를 이끈다.)\n\n\"왔구나. 네가 올 줄 알았어. 이 학교의 비밀... 그리고 너와 나의 연결고리에 대해 이야기해줄 때가 된 것 같네.\"",
-        background: "assets/images/background/load_school.png",
+        name: "유나",
+        text: "(도서관 별관에 들어서자 유나가 창가에 앉아 먼 곳을 응시하고 있다. 내가 다가가자 그녀가 천천히 고개를 돌린다. 그녀의 눈동자 속에 알 수 없는 슬픔이 서려 있다. 그녀는 내 손을 잡고 구석진 서가로 나를 이끈다.)\n\n\"왔구나. 네가 올 줄 알았어. 이 학교의 비밀... 그리고 너와 나의 연결고리에 대해 이야기해줄 때가 된 것 같네.\"",
+        background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2"
     },
