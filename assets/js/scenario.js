@@ -1335,7 +1335,7 @@
     },
     "day2_lunch_seoyeon": {
         name: "서연",
-        text: "(옥상에 올라가자 서연이가 어제보다 더 화려한 도시락을 꺼낸다. 오늘은 무려 수제 샌드위치다!)",
+        text: "(옥상에 올라가자 서연이가 어제보다 더 화려한 도시락을 꺼낸다. 고소한 냄새가 코끝을 자극한다.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
@@ -1347,27 +1347,27 @@
         name: "서연",
         text: "\"어제 네가 학생회 일을 도와준 덕분에 시간이 좀 남아서, 오늘은 특별히 더 신경 써서 준비했어. 자, 어서 먹어봐!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "day2_lunch_seoyeon_1_2_2"
+        next: "day2_lunch_seoyeon_1_3"
     },
     "day2_lunch_seoyeon_1_2": {
         name: "서연",
-        text: "(그녀는 기대에 찬 눈빛으로 나를 바라본다. 그녀의 정성이 가득 담긴 샌드위치에서 고소한 냄새가 난다.)",
+        text: "(그녀는 기대에 찬 눈빛으로 나를 바라본다. 그녀의 정성이 가득 담긴 도시락통이 열리자 먹음직스러운 샌드위치가 모습을 드러낸다.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_lunch_seoyeon_1_2_2"
     },
     "day2_lunch_seoyeon_1_2_2": {
         name: "서연",
-        text: "\"짜잔! 오늘은 샌드위치를 만들어 봤어.\"",
+        text: "\"짜잔! 오늘은 샌드위치를 만들어 봤어. 전학생 군이 좋아할 것 같아서 아침부터 서둘렀지.\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
-        next: "day2_lunch_seoyeon_1_3"
+        next: "day2_lunch_seoyeon_2"
     },
     "day2_lunch_seoyeon_1_3": {
         name: "서연",
-        text: "\"전학생 군이 좋아할 것 같아서 아침부터 서둘렀지. 어때, 맛있어 보여?\"",
+        text: "\"짜잔! 오늘은 특별히 수제 샌드위치야. 전학생 군이 좋아할 것 같아서 아침부터 서둘렀지. 어때, 맛있어 보여?\"",
         background: "assets/images/background/top_school.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_2"
     },
     "day2_lunch_seoyeon_2": {
@@ -1818,6 +1818,19 @@
             right: "assets/images/characters/yuna_nomal.png"
         },
         sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_seoyeon_3_react", excludeCondition: "metYuna" },
+            { text: "다음", next: "day2_final_seoyeon_4", condition: "metYuna" }
+        ]
+    },
+    "day2_final_seoyeon_3_react": {
+        name: "나",
+        text: "\"(유나...? 저 소녀의 이름이 유나였나? 서연이는 저 소녀를 알고 있는 것 같다.)\"",
+        characters: {
+            left: "assets/images/characters/seyoun_nomal.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
+        sunset: true,
         next: "day2_final_seoyeon_4"
     },
     "day2_final_seoyeon_4": {
@@ -2105,24 +2118,47 @@
         background: "assets/images/background/school.png",
         sunset: true,
         choices: [
-            { text: "다음", next: "day2_final_run_3", condition: "promisedFestival" },
-            { text: "다음", next: "day2_final_run_dain", condition: "datedDainDay1", excludeCondition: "promisedFestival" },
-            { text: "다음", next: "day2_ending_pre", excludeCondition: "promisedFestival" }
+            { text: "다음", next: "day2_final_run_seoyeon", condition: "promisedFestival" },
+            { text: "다음", next: "day2_final_run_dain_check", excludeCondition: "promisedFestival" }
         ]
     },
-    "day2_final_run_3": {
+    "day2_final_run_seoyeon": {
         name: "나",
         text: "\"(서연이랑 축제 약속도 했는데... 이렇게 도망쳐버리면 어떡하지? 내일 얼굴 보기가 정말 힘들 것 같아...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
+        next: "day2_final_run_dain_check"
+    },
+    "day2_final_run_dain_check": {
+        name: "나",
+        text: "(숨을 고르며 오늘 있었던 일들을 떠올려 본다.)",
+        background: "assets/images/background/school.png",
+        sunset: true,
         choices: [
             { text: "다음", next: "day2_final_run_dain", condition: "datedDainDay1" },
-            { text: "다음", next: "day2_ending_pre", excludeCondition: "datedDainDay1" }
+            { text: "다음", next: "day2_final_run_yuna_check", excludeCondition: "datedDainDay1" }
         ]
     },
     "day2_final_run_dain": {
         name: "나",
         text: "\"(그러고 보니 다인이랑도 떡볶이 먹으러 가기로 약속했었는데... 다인이가 운동장에서 계속 기다리고 있겠지? 정말 미안하네...)\"",
+        background: "assets/images/background/school.png",
+        sunset: true,
+        next: "day2_final_run_yuna_check"
+    },
+    "day2_final_run_yuna_check": {
+        name: "나",
+        text: "(숨을 몰아쉬며 교문을 나선다. 등 뒤로 학교의 그림자가 길게 늘어져 있다.)",
+        background: "assets/images/background/school.png",
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_run_yuna", condition: "knowsSecret" },
+            { text: "다음", next: "day2_ending_pre", excludeCondition: "knowsSecret" }
+        ]
+    },
+    "day2_final_run_yuna": {
+        name: "나",
+        text: "\"(유나가 말한 학교의 비밀... 그리고 나를 지켜주겠다던 그 간절한 눈빛. 이렇게 도망치는 게 정말 맞는 걸까?)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_ending_pre"
