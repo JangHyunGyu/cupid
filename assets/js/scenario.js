@@ -69,8 +69,20 @@
     },
     "hallway_1": {
         name: "서연",
-        text: "(서연이의 뒤를 따라 복도를 걷는다. 복도 창문 너머로 학생들의 활기찬 목소리와 운동장에서 들려오는 호각 소리가 어우러진다. 그녀의 뒷모습을 보고 있자니 왠지 모를 설렘이 가시지 않는다. 그녀의 걸음걸이는 가볍고 우아하다. 복도에는 은은한 왁스 냄새와 아이들의 열기가 섞여 있다.)\n\n\"복도를 지나면서 학교 시설들을 간단히 설명해줄게. 저기 보이는 곳이 우리 학교의 자랑인 도서관이야. 그리고 저쪽은...\"",
+        text: "(서연이의 뒤를 따라 복도를 걷는다. 복도 창문 너머로 학생들의 활기찬 목소리와 운동장에서 들려오는 호각 소리가 어우러진다.)",
         background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_1_2"
+    },
+    "hallway_1_2": {
+        name: "서연",
+        text: "(그녀의 뒷모습을 보고 있자니 왠지 모를 설렘이 가시지 않는다. 그녀의 걸음걸이는 가볍고 우아하다. 복도에는 은은한 왁스 냄새와 아이들의 열기가 섞여 있다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_1_3"
+    },
+    "hallway_1_3": {
+        name: "서연",
+        text: "\"복도를 지나면서 학교 시설들을 간단히 설명해줄게. 저기 보이는 곳이 우리 학교의 자랑인 도서관이야. 그리고 저쪽은...\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club" },
@@ -98,7 +110,19 @@
     },
     "hallway_2": {
         name: "서연",
-        text: "(그녀가 갑자기 멈춰 서서 나를 돌아본다. 진지하면서도 기대에 찬 눈빛에 나도 모르게 침을 꼴깍 삼켰다. 복도의 소음이 멀어지고 오직 우리 두 사람만 남은 것 같은 정적이 흐른다. 그녀의 눈동자가 내 눈을 뚫어지게 쳐다본다.)\n\n\"너는 어떤 동아리에 관심 있어? 우리 학생회도 항상 새로운 인재를 환영하고 있거든. 만약 네가 들어온다면... 내가 직접 업무를 가르쳐줄 수도 있어.\"",
+        text: "(그녀가 갑자기 멈춰 서서 나를 돌아본다. 진지하면서도 기대에 찬 눈빛에 나도 모르게 침을 꼴깍 삼켰다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2_2"
+    },
+    "hallway_2_2": {
+        name: "서연",
+        text: "(복도의 소음이 멀어지고 오직 우리 두 사람만 남은 것 같은 정적이 흐른다. 그녀의 눈동자가 내 눈을 뚫어지게 쳐다본다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2_3"
+    },
+    "hallway_2_3": {
+        name: "서연",
+        text: "\"너는 어떤 동아리에 관심 있어? 우리 학생회도 항상 새로운 인재를 환영하고 있거든. 만약 네가 들어온다면... 내가 직접 업무를 가르쳐줄 수도 있어.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2" },
@@ -121,14 +145,38 @@
     },
     "path_normal_2": {
         name: "서연",
-        text: "(그녀는 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 건 왜일까. 그녀의 뒷모습이 아침보다 조금 더 멀게 느껴진다. 그녀는 차분한 목소리로 말을 잇는다.)\n\n\"응, 서두를 필요는 없지. 전학 첫날니까 학교 분위기부터 익히는 게 중요해. 도움이 필요하면 언제든 학생회실로 찾아와. 내가 기다리고 있을게.\"",
+        text: "(그녀는 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 건)",
+        background: "assets/images/background/room_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        next: "classroom_1_2"
+    },
+    "classroom_1_2": {
+        name: "서연",
+        text: "(서연이가 내 어깨를 가볍게 두드리며 응원해준다. 그녀의 손길이 닿은 곳이 화끈거린다. 그녀는 내 눈을 보며 작게 파이팅을 외친다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "classroom_1_3"
+    },
+    "classroom_1_3": {
+        name: "서연",
+        text: "\"자, 여기가 네가 앞으로 지낼 2학년 3반이야. 긴장하지 마. 내가 옆에 있으니까, 넌 그냥 평소대로 하면 돼. 알았지?\"",
         next: "classroom_1"
     },
     "path_direct_2": {
         name: "서연",
         text: "(그녀가 멍하니 나를 바라보다가, 이내 풋 하고 맑은 웃음을 터뜨린다. 그 웃음소리가 마치 은방울 소리처럼 복도에 울려 퍼진다. 그녀의 눈가에 맺힌 작은 눈물이 햇빛에 반짝인다. 그녀는 배를 잡고 한참을 웃는다.)\n\n\"후훗, 너 정말 솔직하구나? 나에 대해서라... 글쎄, 그건 네가 앞으로 어떻게 하느냐에 따라 알려줄 수도 있고, 아닐 수도 있지. 기대해볼게!\"",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: "assets/images/characters/seyoun_laugh.png",)",
+        character: "assets/images/characters/teacher.png",
+        next: "classroom_2_2"
+    },
+    "classroom_2_2": {
+        name: "선생님",
+        text: "(교실 안의 공기가 무겁게 느껴진다. 선생님이 교탁을 탁탁 치며 주의를 집중시킨다.)",
+        character: "assets/images/characters/teacher.png",
+        next: "classroom_2_3"
+    },
+    "classroom_2_3": {
+        name: "선생님",
+        text: "
         next: "classroom_1"
     },
     "classroom_1": {
@@ -159,7 +207,13 @@
         text: "(아이들이 고개를 끄덕이며 차분하게 나를 받아들인다. 몇몇 여학생들이 소곤거리며 나를 쳐다본다. 서연이는 내 진지한 모습이 마음에 든 듯 고개를 끄덕인다. 교실 분위기가 한결 차분해진다.)\n\n\"와, 왠지 분위기 있다... 나중에 도서관에서 마주치면 인사해도 될까?\"",
         next: "lunch_time"
     },
-    "class_after_party": {
+    "class_after_party": {)",
+        background: "assets/images/background/load_school.png",
+        next: "lunch_time_2"
+    },
+    "lunch_time_2": {
+        name: "나",
+        text: "(
         name: "아이들",
         text: "(교실이 순식간에 시장통처럼 시끌벅적해진다. 벌써부터 내 주변으로 아이들이 몰려든다. 서연이는 조금 당황한 듯하지만 이내 웃음을 터뜨린다. 아이들은 벌써 메뉴를 정하느라 바쁘다.)\n\n\"와! 전학생 성격 진짜 대박! 좋아, 오늘 떡볶이는 내가 쏜다! 노래방까지 풀코스로 가자!\"",
         next: "lunch_time"
@@ -176,13 +230,31 @@
         choices: [
             { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon" },
             { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone" },
-            { text: "매점으로 달려가 전설의 '초코 소라빵'을 사 먹는다.", next: "lunch_store" },
+            { text: "매점으로 달려가 전설의 '초코 소라빵'을 사 먹는다.", next: "lunch_store" },",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "lunch_seoyeon_2"
+    },
+    "lunch_seoyeon_2": {
+        name: "서연",
+        text: "
             { text: "교실에 남아서 부족한 잠을 보충한다. (어제 너무 설쳤어...)", next: "lunch_sleep" }
         ]
     },
     "lunch_seoyeon": {
         name: "서연",
-        text: "(서연이에게 다가가자 그녀가 기다렸다는 듯 가방에서 예쁜 체크무늬 도시락을 꺼낸다. 그녀의 눈이 반짝이며 나를 반긴다. 그녀는 도시락을 흔들며 나를 유혹한다.)\n\n\"아, 전학생 군! 마침 나도 혼자 먹기 심심해서 널 찾으려던 참이었어. 우리 옥상에 비밀 장소가 있는데, 거기서 같이 먹을래?\"",
+        text: "(서연이에게 다가가자 그녀가 기다렸다는 듯 가방에서 예쁜 체크무늬 도시락을 꺼낸다. 그녀의 눈이 반짝이며 나를 반긴다. 그녀는 도시락을)",
+        background: "assets/images/background/top_school.png",
+        next: "rooftop_1_2"
+    },
+    "rooftop_1_2": {
+        name: "서연",
+        text: "(고소한 냄새가 코끝을 자극한다. 그녀는 젓가락을 건네며 수줍게 웃는다.)",
+        background: "assets/images/background/top_school.png",
+        next: "rooftop_1_3"
+    },
+    "rooftop_1_3": {
+        name: "서연",
+        text: "서 널 찾으려던 참이었어. 우리 옥상에 비밀 장소가 있는데, 거기서 같이 먹을래?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1"
     },
