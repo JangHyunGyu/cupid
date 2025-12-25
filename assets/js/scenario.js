@@ -1519,6 +1519,7 @@
         name: "나",
         text: "(서연이와 함께 학생회실로 향했다. 회의는 늦게까지 이어졌지만, 그녀와 함께라면 힘들지 않았다. 회의가 끝나고 우리는 나란히 밤길을 걸으며 축제 때 입을 옷에 대해 이야기했다.)",
         background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         night: true,
         next: "day2_ending_pre"
     },
@@ -1602,6 +1603,7 @@
         name: "나",
         text: "(유나와 함께 어두운 복도를 걸으며 그녀가 들려주는 학교의 진실에 귀를 기울였다. 그녀의 목소리는 차가웠지만, 잡은 손에서는 미세한 떨림이 느껴졌다. 우리는 어느새 어둠이 짙게 깔린 교문 앞에 서 있었다.)",
         background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "day2_ending_pre"
     },
@@ -1609,6 +1611,7 @@
         name: "나",
         text: "(두 사람의 시선이 너무 무서워서 나도 모르게 뒷문으로 도망치듯 빠져나왔다. 뒤에서 나를 부르는 소리가 들리는 것 같지만 돌아보지 않고 달렸다. 심장이 터질 것만 같다. 나는 숨을 헐떡이며 교문을 나섰다.)",
         background: "assets/images/background/school.png",
+        character: null,
         sunset: true,
         next: "day2_final_run_2"
     },
