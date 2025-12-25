@@ -1295,7 +1295,7 @@
         name: "서연",
         text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 유나를 의식하는지 눈빛이 날카롭다.)",
         characters: {
-            left: "assets/images/characters/seyoun_nomal.png",
+            left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
         sunset: true,
@@ -1315,7 +1315,7 @@
         name: "서연",
         text: "\"전학생 군, 오늘 학생회 회의가 있는데 같이 가줄 수 있지?\"",
         characters: {
-            left: "assets/images/characters/seyoun_pout.png",
+            left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
         sunset: true,
@@ -1325,7 +1325,7 @@
         name: "서연",
         text: "\"중요한 안건이 있거든. 유나 양, 전학생 군은 내가 데려갈게.\"",
         characters: {
-            left: "assets/images/characters/seyoun_pout.png",
+            left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
         sunset: true,
@@ -1335,7 +1335,7 @@
         name: "유나",
         text: "(유나에게 다가가자 그녀가 승리자의 미소를 짓는다. 서연이의 얼굴이 순식간에 굳어진다.)",
         characters: {
-            left: "assets/images/characters/seyoun_nomal.png",
+            left: "assets/images/characters/seyoun_angry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
