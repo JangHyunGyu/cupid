@@ -368,6 +368,7 @@
         name: "나",
         text: "(집에 돌아와 침대에 눕자 오늘 하루의 일들이 주마등처럼 스쳐 지나간다. 서연이의 따뜻한 미소, 유나의 신비로운 눈동자... 천장을 바라보며 나는 깊은 생각에 잠긴다. 방 안에는 시계 초침 소리만이 규칙적으로 울려 퍼진다.)\n\n\"(전학 첫날부터 이렇게 파란만장할 줄이야... 내일은 또 어떤 일이 기다리고 있을까?)\"",
         background: "assets/images/background/room_school.png",
+        character: null,
         choices: [
             { text: "서연이에게 오늘 고마웠다고 메시지를 보낸다.", next: "evening_message_seoyeon" },
             { text: "유나가 했던 말들을 곱씹어 본다.", next: "evening_think_yuna" },
@@ -530,6 +531,7 @@
         name: "나",
         text: "(오후 수업도 모두 끝나고, 다시 노을이 지는 시간이 찾아왔다. 오늘은 어제보다 더 많은 일이 있었던 것 같다. 가방을 챙겨 교실을 나서려는데, 서연이와 유나가 동시에 나를 부른다. 복도에 묘한 긴장감이 흐른다.)\n\n\"(어라... 이거 분위기가 좀 이상한데? 누구에게 먼저 가야 하지?)\"",
         background: "assets/images/background/room_school.png",
+        character: null,
         choices: [
             { text: "서연이에게 다가간다.", next: "day2_final_seoyeon" },
             { text: "유나에게 다가간다.", next: "day2_final_yuna" },
@@ -558,11 +560,13 @@
         name: "나",
         text: "(학교를 나서며 밤하늘을 올려다본다. 수많은 별이 반짝이며 나를 내려다보고 있다. 전학 온 지 겨우 이틀... 하지만 내 인생은 이미 거대한 소용돌이 속에 휘말린 것 같다. 앞으로 어떤 미래가 나를 기다리고 있을까?)",
         background: "assets/images/background/school.png",
+        character: null,
         next: "end_demo_real"
     },
     "end_demo_real": {
         name: "시스템",
         text: "(화면이 서서히 어두워지며 'To Be Continued'라는 문구가 나타난다. 감미로운 피아노 선율이 흐르며 여운을 남긴다. 캐릭터들의 실루엣이 하나둘씩 지나간다.)\n\n\"페이드 아웃\"\n\n축하합니다! 당신은 '큐피드의 화살' 데모 버전의 모든 시나리오를 완료하셨습니다. 서연이와의 설레는 로맨스, 유나와의 미스터리한 진실... 당신의 선택이 어떤 결말을 맺을지, 정식 버전에서 확인해주세요! 플레이해주셔서 감사합니다.",
+        character: null,
         next: null
     }
 };
