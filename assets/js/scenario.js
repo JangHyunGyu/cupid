@@ -273,7 +273,7 @@
     },
     "class_after_active_3": {
         name: "아이들",
-        text: "\"오~ 운동 좀 하나 본데? 점심시간에 축구 한 판 고? 전학생 실력 좀 보자구!\"",
+        text: "\"오~ 운동 좀 하나 본데? 점심시간에 배구 한 판 고? 전학생 실력 좀 보자구!\"",
         character: null,
         next: "lunch_time"
     },
@@ -340,10 +340,11 @@
     },
     "lunch_time_2": {
         name: "나",
-        text: "(나는 어떻게 할까? 창밖으로 보이는 운동장에는 벌써 축구공을 차는 아이들이 보인다. 배꼽시계가 요란하게 울린다.)",
+        text: "(나는 어떻게 할까? 창밖으로 보이는 운동장에는 벌써 배구공을 주고받는 아이들이 보인다. 배꼽시계가 요란하게 울린다.)",
         choices: [
             { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon" },
             { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone" },
+            { text: "운동장으로 나가 활기찬 아이들과 어울린다.", next: "lunch_dain" },
             { text: "매점으로 달려가 전설의 '초코 소라빵'을 사 먹는다.", next: "lunch_store" },
             { text: "교실에 남아서 부족한 잠을 보충한다. (어제 너무 설쳤어...)", next: "lunch_sleep" }
         ]
@@ -562,6 +563,33 @@
     "lunch_sleep_2": {
         name: "나",
         text: "(꿈속에서 누군가 내 이름을 부르는 소리가 들렸다. 아주 그립고도 슬픈 목소리... 하지만 눈을 떴을 때 내 곁에는 아무도 없었다.)",
+        next: "after_school_start"
+    },
+    "lunch_dain": {
+        name: "나",
+        text: "(운동장으로 나가자 활기찬 기운이 가득하다. 그중에서도 유독 눈에 띄는 한 소녀가 있다. 짧은 머리에 건강미 넘치는 그녀는 아이들 사이에서 시원시원하게 스파이크를 때리고 있다.)",
+        background: "assets/images/background/playground.png",
+        next: "lunch_dain_2"
+    },
+    "lunch_dain_2": {
+        name: "???",
+        text: "(그녀가 나를 발견하고는 환하게 웃으며 손을 흔든다. 그녀의 미소는 태양처럼 눈부시다.)",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "lunch_dain_3"
+    },
+    "lunch_dain_3": {
+        name: "다인",
+        text: "\"어이, 전학생! 거기서 구경만 하지 말고 이리 와서 한 판 붙자! 너, 운동 좀 하게 생겼는데?\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "lunch_dain_4"
+    },
+    "lunch_dain_4": {
+        name: "다인",
+        text: "\"난 배구부 '다인'이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라구! 자, 간다!\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
         next: "after_school_start"
     },
     "after_school_start": {
@@ -1083,7 +1111,7 @@
         choices: [
             { text: "서연이와 함께 옥상으로 간다.", next: "day2_lunch_seoyeon" },
             { text: "유나를 만나러 도서관 별관으로 간다.", next: "day2_lunch_yuna" },
-            { text: "오늘은 친구들과 축구를 하러 운동장으로 나간다.", next: "day2_lunch_soccer" }
+            { text: "오늘은 친구들과 배구를 하러 운동장으로 나간다.", next: "day2_lunch_volleyball" }
         ]
     },
     "day2_lunch_seoyeon": {
@@ -1248,16 +1276,18 @@
         character: "assets/images/characters/yuna_sad.png",
         next: "day2_afternoon"
     },
-    "day2_lunch_soccer": {
+    "day2_lunch_volleyball": {
         name: "나",
-        text: "(운동장으로 달려나가 아이들과 땀을 흘리며 축구를 했다. 공을 차고 달리다 보니 잡생각이 사라지고 기분이 상쾌해진다. 골을 넣자 아이들이 나를 얼싸안으며 환호한다. 멀리서 서연이가 응원하는 모습이 보인다.)",
+        text: "(운동장으로 달려나가 다인이가 이끄는 아이들과 땀을 흘리며 배구를 했다. 날아오는 공을 받아내고 넘기다 보니 잡생각이 사라지고 기분이 상쾌해진다. 강력한 스파이크를 성공시키자 다인이가 나를 얼싸안으며 환호한다.)",
         background: "assets/images/background/playground.png",
-        next: "day2_lunch_soccer_2"
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_lunch_volleyball_2"
     },
-    "day2_lunch_soccer_2": {
-        name: "나",
-        text: "\"와! 전학생 골 결정력 대박인데? 우리 팀 에이스로 임명한다! 오늘 정말 최고였어!\"",
+    "day2_lunch_volleyball_2": {
+        name: "다인",
+        text: "\"와! 전학생 스파이크 실력 대박인데? 우리 팀 에이스로 임명한다! 오늘 정말 최고였어!\"",
         background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
         next: "day2_afternoon"
     },
     "day2_afternoon": {
