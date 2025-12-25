@@ -37,19 +37,37 @@ body, html {
 #character-layer {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 100%;
-    height: 110%; /* 데스크탑에서 캐릭터가 더 꽉 차 보이도록 확대 */
+    height: 110%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    pointer-events: none;
+    padding: 0 5%;
+}
+
+.char-slot {
+    flex: 1;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    pointer-events: none;
+    transition: all 0.3s ease-in-out;
 }
 
-#character-img {
+.char-slot img {
     max-height: 100%;
+    max-width: 100%;
     object-fit: contain;
+}
+
+#char-center {
+    z-index: 2;
+}
+
+#char-left, #char-right {
+    z-index: 1;
 }
 
 #ui-layer {

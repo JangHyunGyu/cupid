@@ -6,7 +6,11 @@ const nameTagEl = document.getElementById('name-tag');
 const dialogueBox = document.getElementById('dialogue-box');
 const choiceContainer = document.getElementById('choice-container');
 const bgLayer = document.getElementById('background-layer');
-const charImg = document.getElementById('character-img');
+const charSlots = {
+    left: document.getElementById('char-left'),
+    center: document.getElementById('char-center'),
+    right: document.getElementById('char-right')
+};
 const fadeLayer = document.getElementById('fade-layer');
 
 function renderScene(sceneId) {
@@ -26,15 +30,31 @@ function renderScene(sceneId) {
         fadeLayer.classList.remove('active');
     }
 
-    // 배경 및 캐릭터 업데이트
+    // 배경 업데이트
     if (scene.background) {
         bgLayer.style.backgroundImage = `url(${scene.background})`;
     }
-    if (scene.character) {
-        charImg.src = scene.character;
-        charImg.style.display = 'block';
-    } else if (scene.character === null) {
-        charImg.style.display = 'none';
+
+    // 캐릭터 업데이트
+    // 모든 슬롯 초기화 (scene.character가 null이거나 새로운 캐릭터 설정이 있을 때)
+    if (scene.character === null || scene.characters || scene.character) {
+        Object.values(charSlots).forEach(slot => slot.innerHTML = '');
+    }
+
+    if (scene.characters) {
+        // 여러 캐릭터 설정 (예: { left: "...", right: "..." })
+        for (const [pos, src] of Object.entries(scene.characters)) {
+            if (charSlots[pos] && src) {
+                const img = document.createElement('img');
+                img.src = src;
+                charSlots[pos].appendChild(img);
+            }
+        }
+    } else if (scene.character) {
+        // 단일 캐릭터 설정 (기본 center)
+        const img = document.createElement('img');
+        img.src = scene.character;
+        charSlots.center.appendChild(img);
     }
 
     // 이름 태그

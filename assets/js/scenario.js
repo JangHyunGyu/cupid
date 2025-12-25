@@ -898,6 +898,10 @@
     "day2_afternoon_2": {
         name: "나",
         text: "(가방을 챙겨 교실을 나서려는데, 서연이와 유나가 동시에 나를 부른다. 복도에 묘한 긴장감이 흐른다.)\n\n\"(어라... 이거 분위기가 좀 이상한데? 누구에게 먼저 가야 하지?)\"",
+        characters: {
+            left: "assets/images/characters/seyoun_nomal.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
         choices: [
             { text: "서연이에게 다가간다.", next: "day2_final_seoyeon" },
             { text: "유나에게 다가간다.", next: "day2_final_yuna" },
@@ -907,25 +911,55 @@
     "day2_final_seoyeon": {
         name: "서연",
         text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 유나를 의식하는지 눈빛이 날카롭다.)",
-        character: "assets/images/characters/seyoun_pout.png",
+        characters: {
+            left: "assets/images/characters/seyoun_nomal.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
         next: "day2_final_seoyeon_2"
     },
     "day2_final_seoyeon_2": {
         name: "서연",
         text: "(그녀는 내 팔짱을 끼며 유나를 쳐다본다. 그녀의 손에 힘이 들어간다.)\n\n\"전학생 군, 오늘 학생회 회의가 있는데 같이 가줄 수 있지?\"",
-        character: "assets/images/characters/seyoun_pout.png",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
         next: "day2_final_seoyeon_3"
     },
     "day2_final_seoyeon_3": {
         name: "서연",
         text: "\"중요한 안건이 있거든. 유나 양, 전학생 군은 내가 데려갈게.\"",
-        character: "assets/images/characters/seyoun_pout.png",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
         next: "day2_ending_pre"
     },
     "day2_final_yuna": {
         name: "유나",
-        text: "(유나에게 다가가자 그녀가 승리자의 미소를 짓는다. 서연이의 얼굴이 순식간에 굳어진다. 유나는 내 손을 잡고 서연이를 지나쳐 걷는다. 그녀의 손에서 차가운 승리감이 느껴진다.)\n\n\"후훗, 역시 넌 남들과 달라. 서연 양, 미안하지만 이 사람은 나랑 할 이야기가 있어서. 학교의 '진짜' 모습에 대해서 말이야.\"",
-        character: "assets/images/characters/yuna_smile.png",
+        text: "(유나에게 다가가자 그녀가 승리자의 미소를 짓는다. 서연이의 얼굴이 순식간에 굳어진다.)",
+        characters: {
+            left: "assets/images/characters/seyoun_nomal.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        next: "day2_final_yuna_2"
+    },
+    "day2_final_yuna_2": {
+        name: "유나",
+        text: "(유나는 내 손을 잡고 서연이를 지나쳐 걷는다. 그녀의 손에서 차가운 승리감이 느껴진다.)\n\n\"후훗, 역시 넌 남들과 달라.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        next: "day2_final_yuna_3"
+    },
+    "day2_final_yuna_3": {
+        name: "유나",
+        text: "\"서연 양, 미안하지만 이 사람은 나랑 할 이야기가 있어서. 학교의 '진짜' 모습에 대해서 말이야.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
         next: "day2_ending_pre"
     },
     "day2_final_run": {
