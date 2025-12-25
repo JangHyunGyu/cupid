@@ -699,9 +699,33 @@
     },
     "after_dain_end": {
         name: "나",
-        text: "(다인이의 연습이 끝날 때까지 운동장 스탠드에 앉아 그녀를 지켜보았다. 노을이 지고 어둠이 깔릴 때까지 그녀의 열정은 식을 줄 몰랐다. 연습이 끝나고 우리는 가벼운 발걸음으로 함께 교문을 나섰다.)",
+        text: "(다인이의 연습이 끝날 때까지 운동장 스탠드에 앉아 그녀를 지켜보았다. 노을이 지고 어둠이 깔릴 때까지 그녀의 열정은 식을 줄 몰랐다. 연습이 끝나고 우리는 약속대로 학교 앞 분식집으로 향했다.)",
         background: "assets/images/background/school.png",
         sunset: true,
+        next: "after_dain_tteokbokki"
+    },
+    "after_dain_tteokbokki": {
+        name: "다인",
+        text: "(김이 모락모락 나는 떡볶이를 한 입 베어 물며 다인이가 행복한 미소를 짓는다. 운동 후라 그런지 평소보다 더 맛있게 느껴진다.)",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_shirt.png",
+        night: true,
+        next: "after_dain_tteokbokki_2"
+    },
+    "after_dain_tteokbokki_2": {
+        name: "다인",
+        text: "\"캬~ 역시 운동 끝나고 먹는 떡볶이가 최고라니까! 오늘 같이 와줘서 정말 고마워. 덕분에 평소보다 두 배는 더 맛있는 것 같아!\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_shirt.png",
+        night: true,
+        next: "after_dain_tteokbokki_3"
+    },
+    "after_dain_tteokbokki_3": {
+        name: "다인",
+        text: "\"우리 내일도... 아니, 앞으로도 자주 같이 먹으러 오자! 약속이다?\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_shirt.png",
+        night: true,
         next: "evening_home"
     },
     "after_yuna_new": {
