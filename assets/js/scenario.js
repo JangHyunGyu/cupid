@@ -1179,7 +1179,8 @@
             { text: "유나가 있는 도서관 별관으로 향한다.", next: "day2_lunch_yuna", condition: "metYuna", excludeCondition: "readNote" },
             { text: "조용한 도서관 별관으로 향한다.", next: "day2_lunch_yuna_new", excludeCondition: "metYuna" },
             { text: "다인이가 있는 운동장으로 배구를 하러 간다.", next: "day2_lunch_volleyball", condition: "metDain" },
-            { text: "운동장으로 나가서 아이들과 배구를 한다.", next: "day2_lunch_volleyball_new", excludeCondition: "metDain" }
+            { text: "운동장으로 나가서 아이들과 배구를 한다.", next: "day2_lunch_volleyball_new", excludeCondition: "metDain" },
+            { text: "몸이 좀 안 좋은 것 같아 양호실로 간다.", next: "day2_lunch_nurse" }
         ]
     },
     "day2_lunch_volleyball_new": {
@@ -1417,11 +1418,65 @@
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_afternoon"
     },
+    "day2_lunch_nurse": {
+        name: "나",
+        text: "(어제부터 쌓인 긴장 탓인지 머리가 지끈거린다. 나는 조용한 양호실로 발걸음을 옮겼다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_2"
+    },
+    "day2_lunch_nurse_2": {
+        name: "양호선생님",
+        text: "\"어머, 전학생이구나? 얼굴색이 안 좋네. 어디가 아파서 왔니?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_3"
+    },
+    "day2_lunch_nurse_3": {
+        name: "양호선생님",
+        text: "(선생님은 따뜻한 미소를 지으며 나를 침대로 안내한다. 그녀의 손길에서 포근한 약초 향기가 난다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "머리가 좀 아파요.", next: "day2_lunch_nurse_head" },
+            { text: "그냥 좀 쉬고 싶어서요.", next: "day2_lunch_nurse_rest" }
+        ]
+    },
+    "day2_lunch_nurse_head": {
+        name: "양호선생님",
+        text: "\"긴장성 두통인 것 같네. 전학 첫날부터 너무 무리했나 봐. 자, 이 약 먹고 한숨 자고 나면 괜찮아질 거야.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_sleep"
+    },
+    "day2_lunch_nurse_rest": {
+        name: "양호선생님",
+        text: "\"후훗, 가끔은 그런 날도 있지. 우리 학교가 좀... 기운이 세거든. 여기 커튼 치고 편하게 쉬렴.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_sleep"
+    },
+    "day2_lunch_nurse_sleep": {
+        name: "나",
+        text: "(선생님이 덮어준 이불의 포근함에 나도 모르게 깊은 잠에 빠져들었다. 양호실의 고요함 속에서 어제의 피로가 씻겨 내려가는 기분이다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        next: "day2_afternoon"
+    },
     "day2_afternoon": {
         name: "나",
-        text: "(오후 수업도 모두 끝나고, 다시 노을이 지는 시간이 찾아왔다. 다인이는 배구부 연습이 있다며 서둘러 운동장으로 뛰어갔다. 오늘은 어제보다 더 많은 일이 있었던 것 같다.)",
+        text: "(오후 수업도 모두 끝나고, 다시 노을이 지는 시간이 찾아왔다. 오늘은 어제보다 더 많은 일이 있었던 것 같다.)",
         background: "assets/images/background/room_school.png",
         character: null,
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_afternoon_dain", condition: "metDain" },
+            { text: "다음", next: "day2_afternoon_2", excludeCondition: "metDain" }
+        ]
+    },
+    "day2_afternoon_dain": {
+        name: "나",
+        text: "(다인이는 배구부 연습이 있다며 활기차게 손을 흔들고 운동장으로 뛰어갔다.)",
+        background: "assets/images/background/room_school.png",
         sunset: true,
         next: "day2_afternoon_2"
     },
