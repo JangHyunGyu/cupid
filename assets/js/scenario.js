@@ -1468,7 +1468,7 @@
         name: "서연",
         text: "\"전학생 군... 아까 축제 때 같이 가기로 약속했으면서... 처음 보는 애한테 가버리는 거야?\"",
         characters: {
-            left: "assets/images/characters/seyoun_sad.png",
+            left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
@@ -1560,7 +1560,7 @@
         name: "서연",
         text: "\"전학생 군... 아까 축제 때 같이 가기로 약속했으면서... 어떻게 이럴 수 있어?\"",
         characters: {
-            left: "assets/images/characters/seyoun_sad.png",
+            left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
@@ -1644,7 +1644,7 @@
         name: "서연",
         text: "\"잠깐, 전학생 군! 나랑 축제 가기로 했잖아! 그런데 지금 다인이한테 가는 거야...?\"",
         characters: {
-            left: "assets/images/characters/seyoun_sad.png",
+            left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
         sunset: true,
