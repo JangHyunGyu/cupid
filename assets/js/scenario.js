@@ -1254,6 +1254,7 @@
         name: "서연",
         text: "(그녀가 너무 기쁜 나머지 내 손을 덥석 잡는다. 따뜻하고 부드러운 감촉에 얼굴이 화끈거린다. 그녀는 자신의 행동에 놀라 서둘러 손을 떼지만, 여전히 얼굴에는 미소가 가득하다.)",
         character: "assets/images/characters/seyoun_shy2.png",
+        setFlag: "promisedFestival",
         next: "day2_festival_promise_2"
     },
     "day2_festival_promise_2": {
@@ -1390,7 +1391,7 @@
     },
     "day2_afternoon": {
         name: "나",
-        text: "(오후 수업도 모두 끝나고, 다시 노을이 지는 시간이 찾아왔다. 오늘은 어제보다 더 많은 일이 있었던 것 같다.)",
+        text: "(오후 수업도 모두 끝나고, 다시 노을이 지는 시간이 찾아왔다. 다인이는 배구부 연습이 있다며 서둘러 운동장으로 뛰어갔다. 오늘은 어제보다 더 많은 일이 있었던 것 같다.)",
         background: "assets/images/background/room_school.png",
         character: null,
         sunset: true,
@@ -1487,6 +1488,19 @@
         text: "(유나에게 다가가자 그녀가 승리자의 미소를 짓는다. 서연이의 얼굴이 순식간에 굳어진다.)",
         characters: {
             left: "assets/images/characters/seyoun_angry.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_yuna_betrayal", condition: "promisedFestival" },
+            { text: "다음", next: "day2_final_yuna_2", excludeCondition: "promisedFestival" }
+        ]
+    },
+    "day2_final_yuna_betrayal": {
+        name: "서연",
+        text: "\"전학생 군... 아까 축제 때 같이 가기로 약속했으면서... 어떻게 이럴 수 있어?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_sad.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
