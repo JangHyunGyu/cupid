@@ -1700,7 +1700,7 @@
         sunset: true,
         choices: [
             { text: "서연아, 미안해... 역시 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna_new" },
-            { text: "미안해. 하지만 난 유나랑 할 이야기가 있어.", next: "day2_final_yuna_new_2" }
+            { text: "미안해. 하지만 난 이 소녀랑 할 이야기가 있어.", next: "day2_final_yuna_new_2" }
         ]
     },
     "day2_final_seoyeon_back_yuna_new": {
@@ -2099,9 +2099,30 @@
             { text: "다음", next: "day2_ending_pre", excludeCondition: "promisedFestival" }
         ]
     },
+    "day2_final_run_2": {
+        name: "나",
+        text: "\"(하아... 하아... 살았다. 하지만 내일 학교에 어떻게 가지? 벌써부터 걱정이 태산이네...)\"",
+        background: "assets/images/background/school.png",
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_run_3", condition: "promisedFestival" },
+            { text: "다음", next: "day2_final_run_dain", condition: "datedDainDay1", excludeCondition: "promisedFestival" },
+            { text: "다음", next: "day2_ending_pre", excludeCondition: "promisedFestival" }
+        ]
+    },
     "day2_final_run_3": {
         name: "나",
         text: "\"(서연이랑 축제 약속도 했는데... 이렇게 도망쳐버리면 어떡하지? 내일 얼굴 보기가 정말 힘들 것 같아...)\"",
+        background: "assets/images/background/school.png",
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_run_dain", condition: "datedDainDay1" },
+            { text: "다음", next: "day2_ending_pre", excludeCondition: "datedDainDay1" }
+        ]
+    },
+    "day2_final_run_dain": {
+        name: "나",
+        text: "\"(그러고 보니 다인이랑도 떡볶이 먹으러 가기로 약속했었는데... 다인이가 운동장에서 계속 기다리고 있겠지? 정말 미안하네...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_ending_pre"
