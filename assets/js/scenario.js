@@ -1308,7 +1308,24 @@
     },
     "day2_lunch_yuna_1_2_2": {
         name: "유나",
-        text: "\"왔구나. 네가 올 줄 알았어.\"",
+        text: "(그녀가 나를 빤히 바라본다. 마치 내 마음속을 꿰뚫어 보려는 것 같다.)",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        choices: [
+            { text: "다음", next: "day2_lunch_yuna_1_2_2_note", condition: "readNote" },
+            { text: "다음", next: "day2_lunch_yuna_1_2_2_no_note", excludeCondition: "readNote" }
+        ]
+    },
+    "day2_lunch_yuna_1_2_2_note": {
+        name: "유나",
+        text: "\"왔구나. 쪽지를 보고 올 줄 알았어.\"",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        next: "day2_lunch_yuna_1_3"
+    },
+    "day2_lunch_yuna_1_2_2_no_note": {
+        name: "유나",
+        text: "\"여기까지 발걸음을 하다니... 너와 나는 역시 연결되어 있는 걸까?\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_1_3"
