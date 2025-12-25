@@ -1644,7 +1644,7 @@
         name: "나",
         text: "(우리는 학교 앞 분식집에서 떡볶이를 먹으며 배구 이야기로 꽃을 피웠다. 다인이와 함께라면 어떤 고민도 금방 사라질 것만 같다.)",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_shirt.png",
         night: true,
         next: "day2_ending_pre"
     },
