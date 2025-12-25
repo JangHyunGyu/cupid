@@ -1619,6 +1619,39 @@
         next: "day2_ending_pre"
     },
     "day2_final_dain": {
+        name: "나",
+        text: "(서연과 유나의 따가운 시선을 뒤로하고, 나는 운동장에서 손을 흔드는 다인에게 발걸음을 옮겼다.)",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_dain_betrayal", condition: "promisedFestival" },
+            { text: "다음", next: "day2_final_dain_react", excludeCondition: "promisedFestival" }
+        ]
+    },
+    "day2_final_dain_betrayal": {
+        name: "서연",
+        text: "\"잠깐, 전학생 군! 나랑 축제 가기로 했잖아! 그런데 지금 다인이한테 가는 거야...?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_sad.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
+        sunset: true,
+        next: "day2_final_dain_react"
+    },
+    "day2_final_dain_react": {
+        name: "유나",
+        text: "\"후훗... 결국 저런 활기찬 타입이 취향이었나 보네. 서연 양, 우리 둘 다 차인 것 같은데?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
+        next: "day2_final_dain_start"
+    },
+    "day2_final_dain_start": {
         name: "다인",
         text: "(운동장 쪽으로 고개를 돌리자, 다인이가 배구공을 들고 나를 향해 손을 흔들고 있다. 그녀의 건강한 미소가 노을빛에 반짝인다.)",
         background: "assets/images/background/playground.png",
@@ -1688,6 +1721,7 @@
         tbc: true,
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
+            center: "assets/images/characters/dain_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
         silhouette: true,
