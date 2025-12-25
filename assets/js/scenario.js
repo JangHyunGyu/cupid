@@ -590,6 +590,7 @@
         text: "\"난 배구부 '다인'이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라구! 자, 간다!\"",
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
+        setFlag: "metDain",
         next: "after_school_start"
     },
     "after_school_start": {
@@ -1175,7 +1176,8 @@
         choices: [
             { text: "서연이와 함께 옥상으로 간다.", next: "day2_lunch_seoyeon" },
             { text: "쪽지의 내용대로 도서관 별관으로 간다.", next: "day2_lunch_yuna", condition: "readNote" },
-            { text: "조용한 도서관 별관으로 향한다.", next: "day2_lunch_yuna_new", excludeCondition: "readNote" },
+            { text: "유나가 있는 도서관 별관으로 향한다.", next: "day2_lunch_yuna", condition: "metYuna", excludeCondition: "readNote" },
+            { text: "조용한 도서관 별관으로 향한다.", next: "day2_lunch_yuna_new", excludeCondition: "metYuna" },
             { text: "다인이가 있는 운동장으로 배구를 하러 간다.", next: "day2_lunch_volleyball", condition: "metDain" },
             { text: "운동장으로 나가서 아이들과 배구를 한다.", next: "day2_lunch_volleyball_new", excludeCondition: "metDain" }
         ]
