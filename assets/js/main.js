@@ -1,5 +1,6 @@
 let currentSceneId = "start";
 let isTyping = false;
+let gameState = {};
 
 const messageEl = document.getElementById('message');
 const nameTagEl = document.getElementById('name-tag');
@@ -101,10 +102,24 @@ function checkChoices() {
     if (scene.choices) {
         choiceContainer.innerHTML = "";
         scene.choices.forEach(choice => {
+            // 조건 확인 (condition이 없거나, condition이 gameState에 true로 있을 때만 표시)
+            if (choice.condition && !gameState[choice.condition]) {
+                return;
+            }
+            // 반대 조건 확인 (excludeCondition이 gameState에 true로 있으면 표시 안 함)
+            if (choice.excludeCondition && gameState[choice.excludeCondition]) {
+                return;
+            }
+
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
             btn.textContent = choice.text;
             btn.onclick = () => {
+                // 플래그 설정
+                if (choice.setFlag) {
+                    gameState[choice.setFlag] = true;
+                }
+
                 if (choice.next === 'index.html') {
                     location.href = 'index.html';
                 } else {

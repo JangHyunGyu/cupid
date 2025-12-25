@@ -253,10 +253,10 @@
         text: "\"자, 다들 주목! 오늘부터 우리와 함께하게 된 전학생이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야. 같이 운동할 사람 언제든 환영해!", next: "class_after_active" },
-            { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야. 잘 부탁해.", next: "class_after_quiet" },
-            { text: "빨리 친해지고 싶어! 오늘 방과 후에 다 같이 떡볶이 먹으러 갈 사람?", next: "class_after_party" },
-            { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study" }
+            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야. 같이 운동할 사람 언제든 환영해!", next: "class_after_active", setFlag: "personality_active" },
+            { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야. 잘 부탁해.", next: "class_after_quiet", setFlag: "personality_quiet" },
+            { text: "빨리 친해지고 싶어! 오늘 방과 후에 다 같이 떡볶이 먹으러 갈 사람?", next: "class_after_party", setFlag: "personality_party" },
+            { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study", setFlag: "personality_study" }
         ]
     },
     "class_after_active": {
@@ -342,9 +342,9 @@
         name: "나",
         text: "(나는 어떻게 할까? 창밖으로 보이는 운동장에는 벌써 배구공을 주고받는 아이들이 보인다. 배꼽시계가 요란하게 울린다.)",
         choices: [
-            { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon" },
-            { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone" },
-            { text: "운동장으로 나가 활기찬 아이들과 어울린다.", next: "lunch_dain" },
+            { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
+            { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone", setFlag: "metYuna" },
+            { text: "운동장으로 나가 활기찬 아이들과 어울린다.", next: "lunch_dain", setFlag: "metDain" },
             { text: "매점으로 달려가 전설의 '초코 소라빵'을 사 먹는다.", next: "lunch_store" },
             { text: "교실에 남아서 부족한 잠을 보충한다. (어제 너무 설쳤어...)", next: "lunch_sleep" }
         ]
@@ -611,8 +611,8 @@
         text: "(오늘 하루도 참 길었네. 이제 어떻게 할까?)",
         sunset: true,
         choices: [
-            { text: "서연이가 있는 학생회실에 들러본다.", next: "after_seoyeon" },
-            { text: "유나가 있던 도서관 별관으로 향한다.", next: "after_yuna" },
+            { text: "서연이가 있는 학생회실에 들러본다.", next: "after_seoyeon", setFlag: "metSeoyeon" },
+            { text: "유나가 있던 도서관 별관으로 향한다.", next: "after_yuna", setFlag: "metYuna" },
             { text: "오늘은 피곤하니 바로 집으로 돌아간다.", next: "after_home" }
         ]
     },
@@ -633,7 +633,7 @@
         text: "\"어? 전학생 군! 이 시간에 어쩐 일이야? 설마... 나 기다려준 거야?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "응, 같이 하교하고 싶어서. 도와줄까?", next: "after_seoyeon_help" },
+            { text: "응, 같이 하교하고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon" },
             { text: "그냥 얼굴 보고 싶어서 왔어. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry" }
         ]
     },
@@ -962,7 +962,8 @@
         choices: [
             { text: "응, 서연이 덕분에 푹 잤어. 너도 잘 잤니?", next: "day2_gate_talk_1" },
             { text: "아침부터 서연이를 보니까 힘이 나네!", next: "day2_gate_talk_2" },
-            { text: "혹시 '유나'라는 학생에 대해 알아?", next: "day2_gate_talk_yuna" }
+            { text: "어제 유나라는 애를 만났는데... (유나 이야기를 꺼낸다)", next: "day2_gate_talk_yuna", condition: "metYuna" },
+            { text: "혹시 '유나'라는 학생에 대해 알아?", next: "day2_gate_talk_yuna", excludeCondition: "metYuna" }
         ]
     },
     "day2_gate_talk_1": {
@@ -1036,7 +1037,7 @@
         name: "나",
         text: "(내 자리에 앉아 책을 꺼내는데, 책상 위에 작은 쪽지 하나가 놓여 있다. 보랏빛 향기가 은은하게 배어 있는 쪽지다.)",
         choices: [
-            { text: "쪽지를 열어본다.", next: "day2_note_open" },
+            { text: "쪽지를 열어본다.", next: "day2_note_open", setFlag: "readNote" },
             { text: "무시하고 가방에 넣는다.", next: "day2_note_ignore" }
         ]
     },
@@ -1107,11 +1108,13 @@
     },
     "day2_lunch_choice": {
         name: "나",
-        text: "(드디어 점심시간! 배꼽시계가 요란하게 울린다. 오늘은 어떻게 할까? 서연이는 벌써 도시락을 챙겨 나를 바라보고 있고, 유나의 쪽지도 머릿속을 맴돈다. 선택의 시간이 다가왔다.)",
+        text: "(드디어 점심시간! 배꼽시계가 요란하게 울린다. 오늘은 어떻게 할까? 서연이는 벌써 도시락을 챙겨 나를 바라보고 있고... 선택의 시간이 다가왔다.)",
         choices: [
             { text: "서연이와 함께 옥상으로 간다.", next: "day2_lunch_seoyeon" },
-            { text: "유나를 만나러 도서관 별관으로 간다.", next: "day2_lunch_yuna" },
-            { text: "오늘은 친구들과 배구를 하러 운동장으로 나간다.", next: "day2_lunch_volleyball" }
+            { text: "쪽지의 내용대로 도서관 별관으로 간다.", next: "day2_lunch_yuna", condition: "readNote" },
+            { text: "왠지 모르게 끌리는 도서관 별관으로 향한다.", next: "day2_lunch_yuna", excludeCondition: "readNote" },
+            { text: "다인이가 있는 운동장으로 배구를 하러 간다.", next: "day2_lunch_volleyball", condition: "metDain" },
+            { text: "운동장으로 나가서 아이들과 배구를 한다.", next: "day2_lunch_volleyball", excludeCondition: "metDain" }
         ]
     },
     "day2_lunch_seoyeon": {
