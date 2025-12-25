@@ -44,6 +44,7 @@
         name: "서연",
         text: "(서연이의 뒤를 따라 복도를 걷는다. 복도 창문 너머로 학생들의 활기찬 목소리와 운동장에서 들려오는 호각 소리가 어우러진다. 그녀의 뒷모습을 보고 있자니 왠지 모를 설렘이 가시지 않는다.)\n\n\"복도를 지나면서 학교 시설들을 간단히 설명해줄게. 저기 보이는 곳이 우리 학교의 자랑인 도서관이야. 그리고 저쪽은...\"",
         background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club" },
             { text: "시설도 좋지만, 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter" },
@@ -53,6 +54,7 @@
     "hallway_talk_club": {
         name: "서연",
         text: "(그녀가 반가운 듯 고개를 돌려 나를 바라본다.)\n\n\"응! 나는 학생회 활동도 하지만, 사실 원예부 소속이기도 해. 꽃을 가꾸는 걸 좋아하거든. 나중에 시간 되면 우리 온실에도 놀러 와!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
     "hallway_talk_flatter": {
@@ -64,11 +66,13 @@
     "hallway_talk_listen": {
         name: "서연",
         text: "(그녀는 나의 진지한 태도가 마음에 든 듯 더욱 열정적으로 설명을 이어간다.)\n\n\"내 설명을 이렇게 잘 들어주니 정말 고마워. 전학생 군은 참 성실한 사람인 것 같네!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
     "hallway_2": {
         name: "서연",
         text: "(그녀가 갑자기 멈춰 서서 나를 돌아본다. 진지하면서도 기대에 찬 눈빛에 나도 모르게 침을 꼴깍 삼켰다.)\n\n\"너는 어떤 동아리에 관심 있어? 우리 학생회도 항상 새로운 인재를 환영하고 있거든. 만약 네가 들어온다면... 내가 직접 업무를 가르쳐줄 수도 있어.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2" },
             { text: "원예부도 끌리는데? 꽃보다 예쁜 부장이 있다면 더더욱.", next: "path_club_flower" },
@@ -91,6 +95,7 @@
     "path_normal_2": {
         name: "서연",
         text: "(그녀는 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 건 왜일까.)\n\n\"응, 서두를 필요는 없지. 전학 첫날이니까 학교 분위기부터 익히는 게 중요해. 도움이 필요하면 언제든 학생회실로 찾아와.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_1"
     },
     "path_direct_2": {
@@ -179,11 +184,13 @@
     "rooftop_talk_thanks": {
         name: "서연",
         text: "(그녀가 부드러운 미소를 지으며 내 눈을 지긋이 바라본다.)\n\n\"고맙긴... 나야말로 같이 먹어줘서 고마워. 혼자 먹는 것보다 훨씬 맛있는 것 같아. 앞으로도 종종 이렇게 같이 먹어줄래?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_2"
     },
     "rooftop_2": {
         name: "서연",
         text: "(식사를 마치고 우리는 나란히 앉아 먼 하늘을 바라본다. 평화로운 오후의 한때... 서연이가 조심스럽게 입을 연다.)\n\n\"저기, 전학생 군... 사실 나, 처음 널 봤을 때부터 왠지 모르게... 예전부터 알고 지냈던 사이 같은 기분이 들었어. 너는 어때?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny" },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 거 아닐까?", next: "rooftop_kind" },
@@ -199,11 +206,13 @@
     "rooftop_kind": {
         name: "서연",
         text: "(그녀가 살짝 토라진 듯 입술을 내민다. 그 모습마저 사랑스럽다.)\n\n\"치... 너무 정석적인 대답이잖아. 하지만 뭐, 틀린 말은 아니니까 봐줄게. 앞으로는 좀 더 솔직한 대답 기대할게?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "end_demo"
     },
     "rooftop_comfortable": {
         name: "서연",
         text: "(그녀가 만족스러운 듯 고개를 끄덕인다.)\n\n\"편안하다니 다행이야. 나도 너랑 있으면 학생회장이라는 짐을 잠시 내려놓을 수 있는 것 같아. 고마워, 전학생 군.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "end_demo"
     },
     "lunch_alone": {
@@ -214,13 +223,13 @@
     },
     "alone_2": {
         name: "???",
-        text: "(그녀는 책에서 눈을 떼지 않은 채 나지막한 목소리로 말을 건넨다. 차가운 듯하면서도 왠지 모를 슬픔이 서린 목소리다.)\n\n\"...길을 잃었나요? 아니면, 보이지 않는 무언가에 이끌려 여기까지 온 건가요? 전학생 군.\"",
-        character: "assets/images/characters/girl2.png",
+        text: "(그녀는 책에서 눈을 떼지 않은 채 나지막한 목소리로 말을 건넨다. 차가운 듯하면서도 왠지 모를 슬픔이 서린 목소리다.)\n\n\"...길을 잃었어? 아니면, 보이지 않는 무언가에 이끌려 여기까지 온 거야? 전학생.\"",
+        character: "assets/images/characters/yuna_nomal.png",
         next: "yuna_intro"
     },
     "yuna_intro": {
         name: "???",
-        text: "(그녀가 천천히 고개를 들어 나를 바라본다. 깊고 신비로운 보랏빛 눈동자가 마치 내 영혼까지 꿰뚫어 보는 것 같다.)\n\n\"나는 '유나'라고 해요. 이 학교의 그림자 속에 숨겨진 진실을 기록하는 사람이죠. 당신에게서는... 아주 흥미로운 향기가 나네요.\"",
+        text: "(그녀가 천천히 고개를 들어 나를 바라본다. 깊고 신비로운 보랏빛 눈동자가 마치 내 영혼까지 꿰뚫어 보는 것 같다.)\n\n\"난 '유나'라고 해. 이 학교의 그림자 속에 숨겨진 진실을 기록하는 사람이지. 너한테서는... 아주 흥미로운 향기가 나네.\"",
         choices: [
             { text: "학교의 비밀? 그게 무슨 소리야?", next: "yuna_secret" },
             { text: "향기라니... 나한테서 무슨 냄새라도 나?", next: "yuna_scent" },
@@ -229,17 +238,17 @@
     },
     "yuna_secret": {
         name: "유나",
-        text: "(그녀가 입가에 묘한 미소를 띠며 책을 덮는다.)\n\n\"후훗, 궁금한가요? 하지만 진실은 때로 감당하기 힘든 법이죠. 준비가 된다면 다시 오세요. 그때는... 당신이 알고 싶지 않은 것까지 알려줄지도 모르니까.\"",
+        text: "(그녀가 입가에 묘한 미소를 띠며 책을 덮는다.)\n\n\"후훗, 궁금해? 하지만 진실은 때로 감당하기 힘든 법이지. 준비가 되면 다시 와. 그때는... 네가 알고 싶지 않은 것까지 알려줄지도 모르니까.\"",
         next: "end_demo"
     },
     "yuna_scent": {
         name: "유나",
-        text: "(그녀가 한 걸음 다가와 내 목덜미 근처에서 숨을 들이킨다. 차가운 숨결에 소름이 돋는다.)\n\n\"운명의 수레바퀴가 돌아가는 소리... 그리고 피할 수 없는 파멸의 향기. 당신은 참으로 가혹한 운명을 타고났군요. 하지만 걱정 마세요, 내가 지켜봐 줄 테니까.\"",
+        text: "(그녀가 한 걸음 다가와 내 목덜미 근처에서 숨을 들이킨다. 차가운 숨결에 소름이 돋는다.)\n\n\"운명의 수레바퀴가 돌아가는 소리... 그리고 피할 수 없는 파멸의 향기. 넌 참으로 가혹한 운명을 타고났구나. 하지만 걱정 마, 내가 지켜봐 줄 테니까.\"",
         next: "end_demo"
     },
     "yuna_danger": {
         name: "유나",
-        text: "(그녀가 차가운 손가락으로 내 뺨을 살짝 스친다.)\n\n\"위험한 것에 끌리는 건 인간의 본능이죠. 당신의 그 눈빛... 마음에 들어요. 우리, 앞으로 자주 보게 될 것 같네요. 후훗...\"",
+        text: "(그녀가 차가운 손가락으로 내 뺨을 살짝 스친다.)\n\n\"위험한 것에 끌리는 건 인간의 본능이지. 너의 그 눈빛... 마음에 들어. 우리, 앞으로 자주 보게 될 것 같네. 후훗...\"",
         next: "end_demo"
     },
     "lunch_store": {
