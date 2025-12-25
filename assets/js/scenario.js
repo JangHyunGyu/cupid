@@ -748,24 +748,28 @@
         name: "유나",
         text: "(별관 옥상에서 내려다보는 학교는 낮과는 전혀 다른 모습이다. 차가운 밤공기가 우리를 감싸고, 멀리서 도시의 불빛이 반짝인다.)",
         character: "assets/images/characters/yuna_nomal.png",
+        night: true,
         next: "after_yuna_rooftop_2"
     },
     "after_yuna_rooftop_2": {
         name: "유나",
         text: "(유나는 난간에 기대어 먼 곳을 응시한다.)",
         character: "assets/images/characters/yuna_nomal.png",
+        night: true,
         next: "after_yuna_rooftop_2_2"
     },
     "after_yuna_rooftop_2_2": {
         name: "유나",
         text: "\"사람들은 이 학교가 완벽하다고 생각하지. 하지만 완벽한 건 없어.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        night: true,
         next: "after_yuna_rooftop_3"
     },
     "after_yuna_rooftop_3": {
         name: "유나",
         text: "\"겉으로 드러나지 않은 문제들이 곪아가고 있을 뿐이야. 넌 그런 위화감, 못 느꼈어?\"",
         character: "assets/images/characters/yuna_nomal.png",
+        night: true,
         choices: [
             { text: "너와 함께라면 어디든 갈 수 있어.", next: "after_yuna_together" },
             { text: "어둠이라니... 좀 무서운데.", next: "after_yuna_scared" }
@@ -775,24 +779,28 @@
         name: "유나",
         text: "(그녀가 내 손을 꽉 쥔다. 그녀의 손은 여전히 차갑지만, 그 속에서 뜨거운 열망이 느껴진다. 그녀는 내 눈을 보며 슬픈 미소를 짓는다.)",
         character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
         next: "after_yuna_together_2"
     },
     "after_yuna_together_2": {
         name: "유나",
         text: "\"바보 같은 소리... 하지만 그 대답, 싫지 않아. 좋아, 그럼 우리... 서로의 비밀을 공유하는 사이가 되는 건 어때?\"",
         character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
         next: "evening_home"
     },
     "after_yuna_scared": {
         name: "유나",
         text: "(그녀가 차갑게 웃으며 내 손을 놓는다. 그녀의 눈빛이 다시 무심해진다. 그녀는 다시 창밖으로 시선을 돌리며 나를 밀어낸다.)",
         character: "assets/images/characters/yuna_nomal.png",
+        night: true,
         next: "after_yuna_scared_2"
     },
     "after_yuna_scared_2": {
         name: "유나",
         text: "\"후훗, 역시 그렇겠지. 평범한 학생에게는 너무 무거운 이야기니까. 오늘은 이만 돌아가. 더 이상 깊이 알려고 하지 마.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        night: true,
         next: "evening_home"
     },
     "after_yuna_secret": {
@@ -828,16 +836,19 @@
         text: "(집에 돌아와 침대에 눕자 오늘 하루의 일들이 주마등처럼 스쳐 지나간다. 서연이의 따뜻한 미소, 유나의 신비로운 눈동자...)",
         background: "assets/images/background/room_my.png",
         character: null,
+        night: true,
         next: "evening_home_2"
     },
     "evening_home_2": {
         name: "나",
         text: "(천장을 바라보며 나는 깊은 생각에 잠긴다. 방 안에는 시계 초침 소리만이 규칙적으로 울려 퍼진다.)",
+        night: true,
         next: "evening_home_2_2"
     },
     "evening_home_2_2": {
         name: "나",
         text: "(전학 첫날부터 이렇게 파란만장할 줄이야... 내일은 또 어떤 일이 기다리고 있을까?)",
+        night: true,
         choices: [
             { text: "서연이에게 오늘 고마웠다고 메시지를 보낸다.", next: "evening_message_seoyeon" },
             { text: "유나가 했던 말들을 곱씹어 본다.", next: "evening_think_yuna" },
@@ -847,26 +858,31 @@
     "evening_message_seoyeon": {
         name: "나",
         text: "(조심스럽게 휴대폰을 들어 서연이에게 메시지를 보냈다. '오늘 안내해줘서 정말 고마웠어. 덕분에 학교에 잘 적응할 수 있을 것 같아.')",
+        night: true,
         next: "evening_message_seoyeon_2"
     },
     "evening_message_seoyeon_2": {
         name: "나",
         text: "(잠시 후, 휴대폰이 진동하며 답장이 왔다. 심장이 두근거린다.)",
+        night: true,
         next: "evening_message_seoyeon_2_2"
     },
     "evening_message_seoyeon_2_2": {
         name: "나",
         text: "\"[서연]: 아니야, 나도 오늘 정말 즐거웠어! 전학생 군 덕분에 학생회 일도 빨리 끝났고. 내일 학교에서 봐! 잘 자~ (하트 이모티콘)\"",
+        night: true,
         next: "day2_start"
     },
     "evening_think_yuna": {
         name: "나",
         text: "(유나가 했던 '학교의 비밀'이라는 말이 머릿속을 떠나지 않는다. 그녀의 차가운 손길과 슬픈 눈빛... 그녀는 대체 무엇을 알고 있는 걸까? 창밖의 어둠이 평소보다 더 깊게 느껴진다. 나는 밤늦게까지 잠을 이루지 못했다.)",
+        night: true,
         next: "day2_start"
     },
     "evening_sleep": {
         name: "나",
         text: "(눈을 감자마자 깊은 잠에 빠져들었다. 꿈속에서 나는 끝없는 복도를 달리고 있었다. 저 멀리서 누군가 나를 부르는 소리가 들렸지만, 아무리 달려도 닿을 수 없었다. 차가운 땀을 흘리며 나는 새벽녘에 눈을 떴다.)",
+        night: true,
         next: "day2_start"
     },
     "day2_start": {

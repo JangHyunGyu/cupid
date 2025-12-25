@@ -42,6 +42,13 @@ function renderScene(sceneId) {
         bgLayer.style.backgroundImage = `url(${scene.background})`;
     }
 
+    // 밤 필터 적용
+    if (scene.night) {
+        bgLayer.classList.add('night');
+    } else {
+        bgLayer.classList.remove('night');
+    }
+
     // 캐릭터 업데이트
     // 모든 슬롯 초기화 (scene.character가 null이거나 새로운 캐릭터 설정이 있을 때)
     if (scene.character === null || scene.characters || scene.character) {
