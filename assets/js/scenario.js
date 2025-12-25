@@ -579,7 +579,7 @@
         next: "lunch_dain_3"
     },
     "lunch_dain_3": {
-        name: "다인",
+        name: "???",
         text: "\"어이, 전학생! 거기서 구경만 하지 말고 이리 와서 한 판 붙자! 너, 운동 좀 하게 생겼는데?\"",
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
@@ -616,8 +616,93 @@
             { text: "학생회실 쪽을 한 번 가본다.", next: "after_seoyeon", excludeCondition: "metSeoyeon", setFlag: "metSeoyeon" },
             { text: "유나가 있던 도서관 별관으로 향한다.", next: "after_yuna", condition: "metYuna" },
             { text: "학교의 조용한 곳을 좀 더 둘러본다.", next: "after_yuna_new", excludeCondition: "metYuna" },
+            { text: "운동장에서 연습 중인 다인이를 보러 간다.", next: "after_dain", condition: "metDain" },
+            { text: "활기찬 소리가 들리는 운동장으로 향한다.", next: "after_dain_new", excludeCondition: "metDain" },
             { text: "오늘은 피곤하니 바로 집으로 돌아간다.", next: "after_home" }
         ]
+    },
+    "after_dain_new": {
+        name: "나",
+        text: "(운동장으로 향하자 노을 아래에서 땀 흘리며 배구 연습을 하는 아이들이 보인다. 그중에서도 유독 눈에 띄는 한 소녀가 있다.)",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_new_intro"
+    },
+    "after_dain_new_intro": {
+        name: "???",
+        text: "\"안녕! 난 배구부 다인이야. 너 오늘 전학 온 그 애 맞지?\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        setFlag: "metDain",
+        next: "after_dain_2"
+    },
+    "after_dain": {
+        name: "다인",
+        text: "(운동장에 도착하자 다인이가 높게 뛰어올라 강력한 스파이크를 내리꽂고 있다. 그녀의 건강한 에너지가 주변을 밝히는 것 같다.)",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_2"
+    },
+    "after_dain_2": {
+        name: "다인",
+        text: "(연습이 잠시 멈춘 사이, 다인이가 나를 발견하고는 수건으로 땀을 닦으며 달려온다.)",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_3"
+    },
+    "after_dain_3": {
+        name: "다인",
+        text: "\"어이, 전학생! 여기까지 웬일이야? 나 연습하는 거 구경하러 온 거야? 후훗, 내 멋진 모습에 반하기라도 한 건 아니지?\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        choices: [
+            { text: "응, 다인이 연습하는 거 보니까 나도 힘이 나는 것 같아.", next: "after_dain_cheer" },
+            { text: "그냥 학교 둘러보다가 소리가 들려서 와봤어.", next: "after_dain_normal" }
+        ]
+    },
+    "after_dain_cheer": {
+        name: "다인",
+        text: "(다인이가 쑥스러운 듯 코끝을 찡긋하며 웃는다. 그녀의 얼굴에 건강한 홍조가 핀다.)",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_cheer_2"
+    },
+    "after_dain_cheer_2": {
+        name: "다인",
+        text: "\"뭐, 뭐야... 갑자기 그렇게 칭찬하면 부끄럽잖아! 그래도 고마워. 네 응원 덕분에 오늘 연습은 더 잘 될 것 같아!\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_end"
+    },
+    "after_dain_normal": {
+        name: "다인",
+        text: "(다인이가 장난스럽게 내 어깨를 툭 친다. 그녀의 손길에서 기분 좋은 온기가 느껴진다.)",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_normal_2"
+    },
+    "after_dain_normal_2": {
+        name: "다인",
+        text: "\"에이~ 솔직하지 못하긴! 뭐, 좋아. 온 김에 우리 연습 끝날 때까지 좀 기다려줄래? 같이 떡볶이라도 먹으러 가자!\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_end"
+    },
+    "after_dain_end": {
+        name: "나",
+        text: "(다인이의 연습이 끝날 때까지 운동장 스탠드에 앉아 그녀를 지켜보았다. 노을이 지고 어둠이 깔릴 때까지 그녀의 열정은 식을 줄 몰랐다. 연습이 끝나고 우리는 가벼운 발걸음으로 함께 교문을 나섰다.)",
+        background: "assets/images/background/school.png",
+        sunset: true,
+        next: "evening_home"
     },
     "after_yuna_new": {
         name: "나",
@@ -913,9 +998,16 @@
         choices: [
             { text: "서연이에게 오늘 고마웠다고 메시지를 보낸다.", next: "evening_message_seoyeon", condition: "metSeoyeon" },
             { text: "유나가 했던 말들을 곱씹어 본다.", next: "evening_think_yuna_met", condition: "metYuna" },
+            { text: "다인이의 활기찬 미소를 떠올려 본다.", next: "evening_think_dain", condition: "metDain" },
             { text: "학교에 대해 느꼈던 의문점들을 떠올려 본다.", next: "evening_think_yuna", excludeCondition: "metYuna" },
             { text: "피곤하니 아무 생각 말고 잠이나 자자.", next: "evening_sleep" }
         ]
+    },
+    "evening_think_dain": {
+        name: "나",
+        text: "(다인이의 건강한 웃음소리가 귓가에 맴도는 것 같다. 그녀와 함께라면 이 낯선 학교생활도 즐겁게 해낼 수 있을 것 같은 기분이 든다. 나는 내일 그녀와 함께 먹을 떡볶이를 기대하며 잠을 청했다.)",
+        night: true,
+        next: "day2_start"
     },
     "evening_message_seoyeon": {
         name: "나",
@@ -991,8 +1083,21 @@
             { text: "응, 서연이 덕분에 푹 잤어. 너도 잘 잤니?", next: "day2_gate_talk_1" },
             { text: "아침부터 서연이를 보니까 힘이 나네!", next: "day2_gate_talk_2" },
             { text: "어제 유나라는 애를 만났는데... (유나 이야기를 꺼낸다)", next: "day2_gate_talk_yuna_met", condition: "metYuna" },
+            { text: "어제 다인이라는 애를 만났는데... (다인 이야기를 꺼낸다)", next: "day2_gate_talk_dain_met", condition: "metDain" },
             { text: "혹시 이 학교에 좀... 신비로운 분위기의 학생이 있어?", next: "day2_gate_talk_yuna", excludeCondition: "metYuna" }
         ]
+    },
+    "day2_gate_talk_dain_met": {
+        name: "서연",
+        text: "(다인이의 이름을 듣자 서연이가 환하게 웃는다. 그녀의 표정이 한결 부드러워진다.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_gate_talk_dain_met_2"
+    },
+    "day2_gate_talk_dain_met_2": {
+        name: "서연",
+        text: "\"아, 다인이! 그 아이 정말 활기차지? 우리 학교의 분위기 메이커야. 다인이랑 친해지면 학교생활이 정말 즐거워질 거야. 나랑도 꽤 친한 사이니까, 나중에 셋이서 같이 놀자!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "day2_classroom"
     },
     "day2_gate_talk_1": {
         name: "서연",
@@ -1191,8 +1296,8 @@
         next: "day2_lunch_volleyball_new_2"
     },
     "day2_lunch_volleyball_new_2": {
-        name: "다인",
-        text: "\"어이, 거기 전학생! 멍하니 서 있지 말고 이리 와서 같이 한 게임 어때?\"",
+        name: "???",
+        text: "\"어이, 거기 전학생! 멍하니 서 있지 말고 이리 와서 같이 한 게임 어때? 난 배구부 다인이야!\"",
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
