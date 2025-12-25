@@ -612,19 +612,19 @@
     "after_seoyeon_help": {
         name: "서연",
         text: "(그녀가 감동한 듯 눈을 크게 뜬다. 이내 환한 미소를 지으며 내 옆자리를 내어준다. 그녀의 곁에서 종이 냄새와 그녀의 향기가 섞여 난다.)",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "after_seoyeon_help_2"
     },
     "after_seoyeon_help_2": {
         name: "서연",
         text: "(우리는 말없이 서류를 정리하며 묘한 유대감을 느낀다.)",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_help_2_2"
     },
     "after_seoyeon_help_2_2": {
         name: "서연",
         text: "\"정말? 고마워! 네가 도와준다면 금방 끝낼 수 있을 것 같아. 자, 이 서류들 분류하는 것 좀 도와줄래?\"",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "after_seoyeon_help_3"
     },
     "after_seoyeon_help_3": {
@@ -981,7 +981,7 @@
     "day2_gate_talk_2_3": {
         name: "서연",
         text: "\"그래도 고마워. 나도 네 얼굴 보니까 기운이 나는 것 같아.\"",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_classroom"
     },
     "day2_gate_talk_yuna": {
@@ -1114,7 +1114,7 @@
     "day2_lunch_seoyeon_2": {
         name: "서연",
         text: "(샌드위치를 한 입 베어 물자 신선한 야채와 소스의 조화가 일품이다. 내가 맛있게 먹는 모습을 보며 서연이가 행복한 듯 웃는다.)",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_2_2"
     },
     "day2_lunch_seoyeon_2_2": {
@@ -1126,13 +1126,13 @@
     "day2_lunch_seoyeon_2_2_2": {
         name: "서연",
         text: "\"후훗, 그렇게 맛있어? 천천히 먹어. 체하겠다.\"",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_2_3"
     },
     "day2_lunch_seoyeon_2_3": {
         name: "서연",
         text: "\"아, 맞다! 이번 주말에 학교 축제가 있는데... 혹시 시간 되니?\"",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "당연하지! 서연이랑 같이 축제 구경하고 싶어.", next: "day2_festival_promise" },
             { text: "축제? 재미있겠다. 학생회 일로 바쁘지 않아?", next: "day2_festival_worry" }
@@ -1147,7 +1147,7 @@
     "day2_festival_promise_2": {
         name: "서연",
         text: "\"정말?! 약속한 거다? 그럼 내가 축제 때 입을 옷도 골라야겠네... 아, 아니! 아무것도 아니야! 암튼 기대하고 있을게!\"",
-        character: "assets/images/characters/seyoun_shy2.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_afternoon"
     },
     "day2_festival_worry": {
