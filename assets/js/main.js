@@ -7,6 +7,7 @@ const dialogueBox = document.getElementById('dialogue-box');
 const choiceContainer = document.getElementById('choice-container');
 const bgLayer = document.getElementById('background-layer');
 const charImg = document.getElementById('character-img');
+const fadeLayer = document.getElementById('fade-layer');
 
 function renderScene(sceneId) {
     const scene = SCENARIO[sceneId];
@@ -18,6 +19,13 @@ function renderScene(sceneId) {
     dialogueBox.style.display = 'block';
     choiceContainer.style.display = 'none';
     
+    // 페이드 아웃 묘사가 있는 경우 실제 페이드 효과 적용
+    if (scene.text && scene.text.includes("페이드 아웃")) {
+        fadeLayer.classList.add('active');
+    } else {
+        fadeLayer.classList.remove('active');
+    }
+
     // 배경 및 캐릭터 업데이트
     if (scene.background) {
         bgLayer.style.backgroundImage = `url(${scene.background})`;
