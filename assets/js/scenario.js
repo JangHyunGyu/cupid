@@ -730,7 +730,7 @@
     },
     "after_yuna": {
         name: "유나",
-        text: "(도서관 별관은 낮보다 더 어둡고 고요하다. 유나는 여전히 그 자리에 앉아 창밖의 노을을 바라보고 있다.)",
+        text: "(도서관 별관은 낮보다 더 어둡고 고요하다. 그곳에는 한 소녀가 창가에 앉아 노을을 바라보고 있다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -746,7 +746,7 @@
     },
     "after_yuna_3": {
         name: "유나",
-        text: "\"...결국 다시 왔구나. 방과 후의 도서관은 더 고요해서 좋아. 넌 무슨 일로 온 거야?\"",
+        text: "\"아, 전학생... 방과 후의 도서관은 더 고요해서 좋아. 넌 무슨 일로 온 거야?\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -854,7 +854,7 @@
     },
     "after_home": {
         name: "나",
-        text: "(교문을 나서며 오늘 하루를 되돌아본다. 서연이와의 만남, 유나와의 기묘한 대화... 전학 첫날치고는 정말 많은 일이 있었다.)",
+        text: "(교문을 나서며 오늘 하루를 되돌아본다. 서연이와의 만남, 그리고 학교 곳곳에서 느꼈던 묘한 분위기들... 전학 첫날치고는 정말 많은 일이 있었다.)",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "after_home_2"
@@ -891,7 +891,7 @@
         night: true,
         choices: [
             { text: "서연이에게 오늘 고마웠다고 메시지를 보낸다.", next: "evening_message_seoyeon" },
-            { text: "유나가 했던 말들을 곱씹어 본다.", next: "evening_think_yuna" },
+            { text: "학교에 대해 느꼈던 의문점들을 떠올려 본다.", next: "evening_think_yuna" },
             { text: "피곤하니 아무 생각 말고 잠이나 자자.", next: "evening_sleep" }
         ]
     },
@@ -915,7 +915,7 @@
     },
     "evening_think_yuna": {
         name: "나",
-        text: "(유나가 했던 '학교의 비밀'이라는 말이 머릿속을 떠나지 않는다. 그녀의 차가운 손길과 슬픈 눈빛... 그녀는 대체 무엇을 알고 있는 걸까? 창밖의 어둠이 평소보다 더 깊게 느껴진다. 나는 밤늦게까지 잠을 이루지 못했다.)",
+        text: "(학교 곳곳에서 느껴졌던 기묘한 분위기와 소문들이 머릿속을 떠나지 않는다. 누군가 나를 지켜보고 있는 듯한 기분... 대체 이 학교는 무엇을 숨기고 있는 걸까? 창밖의 어둠이 평소보다 더 깊게 느껴진다. 나는 밤늦게까지 잠을 이루지 못했다.)",
         night: true,
         next: "day2_start"
     },
@@ -962,7 +962,7 @@
         choices: [
             { text: "응, 서연이 덕분에 푹 잤어. 너도 잘 잤니?", next: "day2_gate_talk_1" },
             { text: "아침부터 서연이를 보니까 힘이 나네!", next: "day2_gate_talk_2" },
-            { text: "어제 유나라는 애를 만났는데... (유나 이야기를 꺼낸다)", next: "day2_gate_talk_yuna" }
+            { text: "혹시 '유나'라는 학생에 대해 알아?", next: "day2_gate_talk_yuna" }
         ]
     },
     "day2_gate_talk_1": {
@@ -1021,7 +1021,7 @@
     },
     "day2_gate_talk_yuna_2": {
         name: "서연",
-        text: "\"유나...? 아, 그 아이를 만났구나. 유나는 좀... 신비로운 구석이 있지. 하지만 너무 깊게 엮이지 않는 게 좋을 거야. 선생님들도 그 아이에 대해서는 말을 아끼시거든.\"",
+        text: "\"유나...? 아, 그 아이에 대해 묻는구나. 유나는 좀... 신비로운 구석이 있지. 하지만 너무 깊게 엮이지 않는 게 좋을 거야. 선생님들도 그 아이에 대해서는 말을 아끼시거든.\"",
         character: "assets/images/characters/seyoun_worried.png",
         next: "day2_classroom"
     },
@@ -1042,7 +1042,7 @@
     },
     "day2_note_open": {
         name: "나",
-        text: "(쪽지를 펼치자 정갈하면서도 날카로운 필체가 눈에 들어온다. '오늘 점심시간, 어제 그곳에서 기다릴게. 할 말이 있어. - Y' 유나다.)",
+        text: "(쪽지를 펼치자 정갈하면서도 날카로운 필체가 눈에 들어온다. '오늘 점심시간, 도서관 별관에서 기다릴게. 할 말이 있어. - Y' ...누구지?)",
         next: "day2_note_open_2"
     },
     "day2_note_open_2": {
@@ -1057,7 +1057,7 @@
     },
     "day2_note_ignore_2": {
         name: "나",
-        text: "(유나의 그 신비로운 눈동자가 자꾸만 눈앞에 아른거린다.)",
+        text: "(왠지 모를 기묘한 기분이 자꾸만 머릿속을 맴돈다. 그 쪽지의 주인공은 대체 누구일까?)",
         next: "day2_lesson"
     },
     "day2_lesson": {
