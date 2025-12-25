@@ -1500,6 +1500,13 @@
             right: "assets/images/characters/yuna_nomal.png"
         },
         sunset: true,
+        next: "day2_final_seoyeon_4"
+    },
+    "day2_final_seoyeon_4": {
+        name: "나",
+        text: "(서연이와 함께 학생회실로 향했다. 회의는 늦게까지 이어졌지만, 그녀와 함께라면 힘들지 않았다. 회의가 끝나고 우리는 나란히 밤길을 걸으며 축제 때 입을 옷에 대해 이야기했다.)",
+        background: "assets/images/background/load_school.png",
+        night: true,
         next: "day2_ending_pre"
     },
     "day2_final_yuna": {
@@ -1566,7 +1573,7 @@
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
-        next: "day2_ending_pre"
+        next: "day2_final_yuna_4"
     },
     "day2_final_yuna_no_secret": {
         name: "유나",
@@ -1576,6 +1583,13 @@
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
+        next: "day2_final_yuna_4"
+    },
+    "day2_final_yuna_4": {
+        name: "나",
+        text: "(유나와 함께 어두운 복도를 걸으며 그녀가 들려주는 학교의 진실에 귀를 기울였다. 그녀의 목소리는 차가웠지만, 잡은 손에서는 미세한 떨림이 느껴졌다. 우리는 어느새 어둠이 짙게 깔린 교문 앞에 서 있었다.)",
+        background: "assets/images/background/load_school.png",
+        night: true,
         next: "day2_ending_pre"
     },
     "day2_final_run": {
@@ -1587,7 +1601,7 @@
     },
     "day2_final_run_2": {
         name: "나",
-        text: "\"(하아... 하아... 살았다. 하지만 내일 학교에 어떻게 가지? 벌써부터 걱정이 태산이네...)\"",
+        text: "\"(하아... 하아... 살았다. 하지만 내일 학교에 어떻게 가지? 서연이랑 축제 약속도 했는데... 벌써부터 걱정이 태산이네...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_ending_pre"
