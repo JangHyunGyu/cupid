@@ -183,7 +183,7 @@
         name: "서연",
         text: "\"매, 매일이라니... 업무가 얼마나 많은데! 하지만 네가 들어온다면... 나도 조금은 즐거울지도 모르겠네. 기대하고 있을게?\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "classroom_1"
+        next: "classroom_1_1"
     },
     "path_club_flower": {
         name: "서연",
@@ -195,25 +195,14 @@
         name: "서연",
         text: "\"치... 너 정말 선수 아니니? 원예부는 부원이 적어서 걱정이었는데, 너 같은 사람이 들어오면 시끌벅적해지겠어. 꼭 와야 해? 약속한 거다?\"",
         character: "assets/images/characters/seyoun_nomal.png",
-        next: "classroom_1"
+        next: "classroom_1_1"
     },
     "path_normal_2": {
         name: "서연",
         text: "(그녀는 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 건)",
         background: "assets/images/background/room_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
-        next: "classroom_1_2"
-    },
-    "classroom_1_2": {
-        name: "서연",
-        text: "(서연이가 내 어깨를 가볍게 두드리며 응원해준다. 그녀의 손길이 닿은 곳이 화끈거린다. 그녀는 내 눈을 보며 작게 파이팅을 외친다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "classroom_1_3"
-    },
-    "classroom_1_3": {
-        name: "서연",
-        text: "\"자, 여기가 네가 앞으로 지낼 2학년 3반이야. 긴장하지 마. 내가 옆에 있으니까, 넌 그냥 평소대로 하면 돼. 알았지?\"",
-        next: "classroom_1"
+        next: "classroom_1_1"
     },
     "path_direct_2": {
         name: "서연",
