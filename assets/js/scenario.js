@@ -95,13 +95,13 @@
         name: "서연",
         text: "(서연이의 뒤를 따라 복도를 걷는다. 복도 창문 너머로 학생들의 활기찬 목소리와 운동장에서 들려오는 호각 소리가 어우러진다.)",
         background: "assets/images/background/load_school.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_back.png",
         next: "hallway_1_2"
     },
     "hallway_1_2": {
         name: "서연",
         text: "(그녀의 뒷모습을 보고 있자니 왠지 모를 설렘이 가시지 않는다. 그녀의 걸음걸이는 가볍고 우아하다. 복도에는 은은한 왁스 냄새와 아이들의 열기가 섞여 있다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_back.png",
         next: "hallway_1_3"
     },
     "hallway_1_3": {
@@ -201,7 +201,7 @@
         name: "서연",
         text: "(그녀는 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 건)",
         background: "assets/images/background/load_school.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_back.png",
         next: "classroom_1_1"
     },
     "path_direct_2": {
@@ -371,18 +371,21 @@
         name: "서연",
         text: "(고소한 냄새가 코끝을 자극한다. 그녀는 젓가락을 건네며 수줍게 웃는다.)",
         background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_2_2"
     },
     "rooftop_1_2_2": {
         name: "서연",
         text: "\"자, 이건 내가 오늘 아침에 일찍 일어나서 만든 거야. 네 입맛에 맞을지 모르겠네...\"",
         background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_3"
     },
     "rooftop_1_3": {
         name: "서연",
         text: "\"특히 이 문어 모양 소시지는 내 회심의 역작이야! 한 번 먹어볼래?\"",
         background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "와, 정말 맛있어 보여! 서연이는 요리도 잘하는구나.", next: "rooftop_talk_food" },
             { text: "아... 아 해줘. (용기를 내어 본다!)", next: "rooftop_talk_ah" },
@@ -701,6 +704,7 @@
         name: "나",
         text: "(다인이의 연습이 끝날 때까지 운동장 스탠드에 앉아 그녀를 지켜보았다. 노을이 지고 어둠이 깔릴 때까지 그녀의 열정은 식을 줄 몰랐다. 연습이 끝나고 우리는 약속대로 학교 앞 분식집으로 향했다.)",
         background: "assets/images/background/school.png",
+        character: null,
         sunset: true,
         setFlag: "datedDainDay1",
         next: "after_dain_tteokbokki"
@@ -987,6 +991,7 @@
         name: "나",
         text: "(교문을 나서며 오늘 하루를 되돌아본다. 서연이와의 만남, 그리고 학교 곳곳에서 느꼈던 묘한 분위기들... 전학 첫날치고는 정말 많은 일이 있었다.)",
         background: "assets/images/background/school.png",
+        character: null,
         sunset: true,
         next: "after_home_2"
     },
@@ -1513,11 +1518,13 @@
     "day2_yuna_denial": {
         name: "유나",
         text: "(그녀가 차갑게 웃으며 사진을 다시 책 속에 넣는다. 그녀의 눈빛이 다시 무심해진다. 그녀는 내 가슴에 손을 얹으며 심장 박동을 느낀다. 그녀의 손길이 얼음처럼 차갑다.)",
+        character: "assets/images/characters/yuna_smile.png",
         next: "day2_yuna_denial_2"
     },
     "day2_yuna_denial_2": {
         name: "유나",
         text: "\"믿기 힘들겠지. 하지만 이건 실제로 있었던 일이야. 너도 조심해. 튀는 행동을 하면 학교는 가만히 있지 않으니까. 이미 넌 그들의 눈에 띄었을지도 몰라.\"",
+        character: "assets/images/characters/yuna_nomal.png",
         setFlag: "knowsSecret",
         next: "day2_afternoon"
     },
