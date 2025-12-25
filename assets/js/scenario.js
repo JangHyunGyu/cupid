@@ -268,6 +268,7 @@
         name: "나",
         text: "(어느덧 모든 수업이 끝나고 방과 후를 알리는 종소리가 울려 퍼진다. 노을빛이 교실 안을 붉게 물들이고 있다. 가방을 챙겨 교실을 나서려는데... 복도에는 하교하는 아이들의 발소리가 가득하다.)\n\n\"(오늘 하루도 참 길었네. 이제 어떻게 할까?)\"",
         background: "assets/images/background/room_school.png",
+        character: null,
         choices: [
             { text: "서연이가 있는 학생회실에 들러본다.", next: "after_seoyeon" },
             { text: "유나가 있던 도서관 별관으로 향한다.", next: "after_yuna" },
@@ -426,6 +427,7 @@
         name: "나",
         text: "(교실에 들어서자 어제보다 훨씬 편안한 분위기가 느껴진다. 아이들이 나에게 손을 흔들며 인사를 건넨다. 내 자리에 앉아 책을 꺼내는데, 책상 위에 작은 쪽지 하나가 놓여 있다. 보랏빛 향기가 은은하게 배어 있는 쪽지다.)",
         background: "assets/images/background/room_school.png",
+        character: null,
         choices: [
             { text: "쪽지를 열어본다.", next: "day2_note_open" },
             { text: "무시하고 가방에 넣는다.", next: "day2_note_ignore" }
@@ -444,6 +446,7 @@
     "day2_lesson": {
         name: "선생님",
         text: "(지루한 수학 수업이 이어지고 있다. 칠판을 가득 채운 공식들이 마치 외계어처럼 보인다. 창밖으로는 체육 수업을 하는 아이들의 활기찬 목소리가 들려온다. 나는 턱을 괴고 창밖을 바라보며 생각에 잠긴다.)\n\n\"자, 거기 전학생! 딴짓하지 말고 이 문제 한번 풀어볼까?\"",
+        character: null,
         choices: [
             { text: "당당하게 일어나서 문제를 푼다.", next: "day2_lesson_solve" },
             { text: "모르겠다고 솔직하게 말한다.", next: "day2_lesson_fail" }
