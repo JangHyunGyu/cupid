@@ -2083,12 +2083,20 @@
         night: true,
         choices: [
             { text: "다음", next: "day2_final_dain_4_again", condition: "datedDainDay1" },
-            { text: "다음", next: "day2_ending_pre", excludeCondition: "datedDainDay1" }
+            { text: "다음", next: "day2_final_dain_4_first", excludeCondition: "datedDainDay1" }
         ]
     },
     "day2_final_dain_4_again": {
         name: "다인",
         text: "\"어제도 오늘도, 너랑 먹는 떡볶이가 세상에서 제일 맛있어! 우리 내일도... 같이 올 수 있을까?\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_shirt.png",
+        night: true,
+        next: "day2_ending_pre"
+    },
+    "day2_final_dain_4_first": {
+        name: "다인",
+        text: "\"너랑 먹으니까 떡볶이가 평소보다 훨씬 맛있는 것 같아! 우리 내일도... 같이 올 수 있을까?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
