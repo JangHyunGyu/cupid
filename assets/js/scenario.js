@@ -611,8 +611,10 @@
         text: "(오늘 하루도 참 길었네. 이제 어떻게 할까?)",
         sunset: true,
         choices: [
-            { text: "서연이가 있는 학생회실에 들러본다.", next: "after_seoyeon", setFlag: "metSeoyeon" },
-            { text: "유나가 있던 도서관 별관으로 향한다.", next: "after_yuna", setFlag: "metYuna" },
+            { text: "서연이가 있는 학생회실에 들러본다.", next: "after_seoyeon", condition: "metSeoyeon" },
+            { text: "학생회실 쪽을 한 번 가본다.", next: "after_seoyeon", excludeCondition: "metSeoyeon", setFlag: "metSeoyeon" },
+            { text: "유나가 있던 도서관 별관으로 향한다.", next: "after_yuna", condition: "metYuna" },
+            { text: "학교의 조용한 곳을 좀 더 둘러본다.", next: "after_yuna", excludeCondition: "metYuna", setFlag: "metYuna" },
             { text: "오늘은 피곤하니 바로 집으로 돌아간다.", next: "after_home" }
         ]
     },
@@ -890,8 +892,9 @@
         text: "(전학 첫날부터 이렇게 파란만장할 줄이야... 내일은 또 어떤 일이 기다리고 있을까?)",
         night: true,
         choices: [
-            { text: "서연이에게 오늘 고마웠다고 메시지를 보낸다.", next: "evening_message_seoyeon" },
-            { text: "학교에 대해 느꼈던 의문점들을 떠올려 본다.", next: "evening_think_yuna" },
+            { text: "서연이에게 오늘 고마웠다고 메시지를 보낸다.", next: "evening_message_seoyeon", condition: "metSeoyeon" },
+            { text: "유나가 했던 말들을 곱씹어 본다.", next: "evening_think_yuna_met", condition: "metYuna" },
+            { text: "학교에 대해 느꼈던 의문점들을 떠올려 본다.", next: "evening_think_yuna", excludeCondition: "metYuna" },
             { text: "피곤하니 아무 생각 말고 잠이나 자자.", next: "evening_sleep" }
         ]
     },
@@ -916,6 +919,12 @@
     "evening_think_yuna": {
         name: "나",
         text: "(학교 곳곳에서 느껴졌던 기묘한 분위기와 소문들이 머릿속을 떠나지 않는다. 누군가 나를 지켜보고 있는 듯한 기분... 대체 이 학교는 무엇을 숨기고 있는 걸까? 창밖의 어둠이 평소보다 더 깊게 느껴진다. 나는 밤늦게까지 잠을 이루지 못했다.)",
+        night: true,
+        next: "day2_start"
+    },
+    "evening_think_yuna_met": {
+        name: "나",
+        text: "(유나가 했던 '학교의 비밀'이라는 말이 머릿속을 떠나지 않는다. 그녀의 차가운 손길과 슬픈 눈빛... 그녀는 대체 무엇을 알고 있는 걸까? 창밖의 어둠이 평소보다 더 깊게 느껴진다. 나는 밤늦게까지 잠을 이루지 못했다.)",
         night: true,
         next: "day2_start"
     },
@@ -962,7 +971,7 @@
         choices: [
             { text: "응, 서연이 덕분에 푹 잤어. 너도 잘 잤니?", next: "day2_gate_talk_1" },
             { text: "아침부터 서연이를 보니까 힘이 나네!", next: "day2_gate_talk_2" },
-            { text: "어제 유나라는 애를 만났는데... (유나 이야기를 꺼낸다)", next: "day2_gate_talk_yuna", condition: "metYuna" },
+            { text: "어제 유나라는 애를 만났는데... (유나 이야기를 꺼낸다)", next: "day2_gate_talk_yuna_met", condition: "metYuna" },
             { text: "혹시 '유나'라는 학생에 대해 알아?", next: "day2_gate_talk_yuna", excludeCondition: "metYuna" }
         ]
     },
@@ -1012,6 +1021,18 @@
         name: "서연",
         text: "\"그래도 고마워. 나도 네 얼굴 보니까 기운이 나는 것 같아.\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_classroom"
+    },
+    "day2_gate_talk_yuna_met": {
+        name: "서연",
+        text: "(유나의 이름을 듣자 서연이의 표정이 순식간에 어두워진다. 그녀는 주변을 살피더니 목소리를 낮춰 말한다. 그녀의 눈동자에 걱정 어린 빛이 서린다.)",
+        character: "assets/images/characters/seyoun_worried.png",
+        next: "day2_gate_talk_yuna_met_2"
+    },
+    "day2_gate_talk_yuna_met_2": {
+        name: "서연",
+        text: "\"유나...? 아, 그 아이를 만났구나. 유나는 좀... 신비로운 구석이 있지. 하지만 너무 깊게 엮이지 않는 게 좋을 거야. 선생님들도 그 아이에 대해서는 말을 아끼시거든.\"",
+        character: "assets/images/characters/seyoun_worried.png",
         next: "day2_classroom"
     },
     "day2_gate_talk_yuna": {
@@ -1078,11 +1099,18 @@
         text: "\"자, 거기 전학생! 딴짓하지 말고 이 문제 한번 풀어볼까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "당당하게 일어나서 문제를 푼다.", next: "day2_lesson_solve" },
+            { text: "당당하게 일어나서 문제를 푼다.", next: "day2_lesson_solve_study", condition: "personality_study" },
+            { text: "당당하게 일어나서 문제를 푼다.", next: "day2_lesson_solve", excludeCondition: "personality_study" },
             { text: "모르겠다고 솔직하게 말한다.", next: "day2_lesson_fail" }
         ]
     },
     "day2_lesson_solve": {
+        name: "아이들",
+        text: "(칠판 앞으로 나가 거침없이 문제를 풀어나갔다. 분필 소리가 경쾌하게 울려 퍼진다. 정답을 맞히자 아이들이 감탄 섞인 박수를 보낸다. 서연이도 뒤에서 엄지를 치켜세우며 웃어준다.)",
+        character: null,
+        next: "day2_lesson_solve_2_alt"
+    },
+    "day2_lesson_solve_study": {
         name: "아이들",
         text: "(칠판 앞으로 나가 거침없이 문제를 풀어나갔다. 분필 소리가 경쾌하게 울려 퍼진다. 정답을 맞히자 아이들이 감탄 섞인 박수를 보낸다. 서연이도 뒤에서 엄지를 치켜세우며 웃어준다.)",
         character: null,
@@ -1091,6 +1119,12 @@
     "day2_lesson_solve_2": {
         name: "아이들",
         text: "\"와~ 전학생 공부도 잘하네! 완전 사기 캐릭터 아니야?\"",
+        character: null,
+        next: "day2_lunch_choice"
+    },
+    "day2_lesson_solve_2_alt": {
+        name: "아이들",
+        text: "\"오~ 전학생, 운동만 잘하는 줄 알았더니 공부도 좀 하는데? 의외인걸!\"",
         character: null,
         next: "day2_lunch_choice"
     },
