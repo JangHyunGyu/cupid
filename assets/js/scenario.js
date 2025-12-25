@@ -1732,6 +1732,29 @@
             right: "assets/images/characters/yuna_nomal.png"
         },
         sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_seoyeon_met_yuna", condition: "metYuna" },
+            { text: "다음", next: "day2_final_seoyeon_new_yuna", excludeCondition: "metYuna" }
+        ]
+    },
+    "day2_final_seoyeon_met_yuna": {
+        name: "서연",
+        text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 유나를 의식하는지 눈빛이 날카롭다.)",
+        characters: {
+            left: "assets/images/characters/seyoun_laugh.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
+        sunset: true,
+        next: "day2_final_seoyeon_yuna_react"
+    },
+    "day2_final_seoyeon_new_yuna": {
+        name: "서연",
+        text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 옆에 서 있는 소녀를 의식하는지 눈빛이 날카롭다.)",
+        characters: {
+            left: "assets/images/characters/seyoun_laugh.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
+        sunset: true,
         next: "day2_final_seoyeon_yuna_react"
     },
     "day2_final_seoyeon_yuna_react": {
@@ -1913,6 +1936,32 @@
         next: "day2_ending_pre"
     },
     "day2_final_dain": {
+        name: "나",
+        text: "(서연이와 옆에 서 있는 소녀의 따가운 시선을 뒤로하고, 나는 운동장에서 손을 흔드는 다인에게 발걸음을 옮겼다.)",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_dain_met_yuna", condition: "metYuna" },
+            { text: "다음", next: "day2_final_dain_new_yuna", excludeCondition: "metYuna" }
+        ]
+    },
+    "day2_final_dain_met_yuna": {
+        name: "나",
+        text: "(서연이와 유나의 따가운 시선을 뒤로하고, 나는 운동장에서 손을 흔드는 다인에게 발걸음을 옮겼다.)",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_dain_betrayal", condition: "promisedFestival" },
+            { text: "다음", next: "day2_final_dain_react", excludeCondition: "promisedFestival" }
+        ]
+    },
+    "day2_final_dain_new_yuna": {
         name: "나",
         text: "(서연이와 옆에 서 있는 소녀의 따가운 시선을 뒤로하고, 나는 운동장에서 손을 흔드는 다인에게 발걸음을 옮겼다.)",
         characters: {
