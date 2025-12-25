@@ -87,7 +87,7 @@ body, html {
     justify-content: flex-end;
     padding: 20px;
     pointer-events: none;
-    z-index: 10; /* 캐릭터보다 앞에 위치하도록 설정 */
+    z-index: 110; /* 페이드 레이어(100)보다 위에 위치 */
 }
 
 #dialogue-box {

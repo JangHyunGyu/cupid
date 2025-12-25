@@ -23,8 +23,8 @@ function renderScene(sceneId) {
     dialogueBox.style.display = 'block';
     choiceContainer.style.display = 'none';
     
-    // 페이드 아웃 묘사가 있는 경우 실제 페이드 효과 적용
-    if (scene.text && scene.text.includes("페이드 아웃")) {
+    // 페이드 아웃 효과 적용
+    if (scene.fade || (scene.text && scene.text.includes("페이드 아웃")) || (scene.text && scene.text.includes("어두워집니다"))) {
         fadeLayer.classList.add('active');
     } else {
         fadeLayer.classList.remove('active');
@@ -88,7 +88,11 @@ function checkChoices() {
             btn.className = 'choice-btn';
             btn.textContent = choice.text;
             btn.onclick = () => {
-                renderScene(choice.next);
+                if (choice.next === 'index.html') {
+                    location.href = 'index.html';
+                } else {
+                    renderScene(choice.next);
+                }
             };
             choiceContainer.appendChild(btn);
         });
