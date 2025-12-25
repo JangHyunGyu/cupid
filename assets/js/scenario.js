@@ -987,11 +987,13 @@
     "day2_gate_talk_yuna": {
         name: "서연",
         text: "(유나의 이름을 듣자 서연이의 표정이 순식간에 어두워진다. 그녀는 주변을 살피더니 목소리를 낮춰 말한다. 그녀의 눈동자에 걱정 어린 빛이 서린다.)",
+        character: "assets/images/characters/seyoun_worried.png",
         next: "day2_gate_talk_yuna_2"
     },
     "day2_gate_talk_yuna_2": {
         name: "서연",
         text: "\"유나...? 아, 그 아이를 만났구나. 유나는 좀... 신비로운 구석이 있지. 하지만 너무 깊게 엮이지 않는 게 좋을 거야. 선생님들도 그 아이에 대해서는 말을 아끼시거든.\"",
+        character: "assets/images/characters/seyoun_worried.png",
         next: "day2_classroom"
     },
     "day2_classroom": {
