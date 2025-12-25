@@ -1724,7 +1724,7 @@
         text: "\"후훗... 결국 저런 활기찬 타입이 취향이었나 보네. 서연 양, 우리 둘 다 차인 것 같은데?\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
-            right: "assets/images/characters/yuna_smile.png"
+            right: "assets/images/characters/yuna_sadsmile.png"
         },
         sunset: true,
         next: "day2_final_dain_start"
