@@ -1202,7 +1202,16 @@
         text: "(옥상에 올라가자 서연이가 어제보다 더 화려한 도시락을 꺼낸다. 오늘은 무려 수제 샌드위치다!)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
-        next: "day2_lunch_seoyeon_1_2"
+        choices: [
+            { text: "다음", next: "day2_lunch_seoyeon_special", condition: "helpedSeoyeon" },
+            { text: "다음", next: "day2_lunch_seoyeon_1_2", excludeCondition: "helpedSeoyeon" }
+        ]
+    },
+    "day2_lunch_seoyeon_special": {
+        name: "서연",
+        text: "\"어제 네가 학생회 일을 도와준 덕분에 시간이 좀 남아서, 오늘은 특별히 더 신경 써서 준비했어. 자, 어서 먹어봐!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_lunch_seoyeon_1_2_2"
     },
     "day2_lunch_seoyeon_1_2": {
         name: "서연",
