@@ -1891,9 +1891,9 @@
     },
     "day2_final_yuna_2": {
         name: "유나",
-        text: "(유나는 내 손을 잡고 서연이를 지나쳐 걷는다. 그녀의 손에서 차가운 승리감이 느껴진다.)",
+        text: "(유나는 내 손을 잡고 서연이를 지나쳐 걷는다. 그녀의 손에서 차가운 승리감이 느껴진다. 서연이는 아무 말도 하지 못한 채 고개를 떨구고 있다.)",
         characters: {
-            left: "assets/images/characters/seyoun_cry.png",
+            left: "assets/images/characters/seyoun_sad.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
