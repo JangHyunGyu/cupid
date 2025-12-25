@@ -1468,6 +1468,16 @@
         name: "서연",
         text: "\"전학생 군... 아까 축제 때 같이 가기로 약속했으면서... 처음 보는 애한테 가버리는 거야?\"",
         characters: {
+            left: "assets/images/characters/seyoun_angry.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
+        next: "day2_final_yuna_new_betrayal_2"
+    },
+    "day2_final_yuna_new_betrayal_2": {
+        name: "서연",
+        text: "(서연이의 입술이 파르르 떨린다. 화를 내려는 것 같았지만, 이내 참지 못한 눈물이 뺨을 타고 흘러내린다.)",
+        characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
@@ -1478,7 +1488,7 @@
         name: "유나",
         text: "\"안녕? 전학생. 나는 유나라고 해. 어제부터 널 지켜보고 있었어.\"",
         characters: {
-            left: "assets/images/characters/seyoun_pout.png",
+            left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
@@ -1560,6 +1570,16 @@
         name: "서연",
         text: "\"전학생 군... 아까 축제 때 같이 가기로 약속했으면서... 어떻게 이럴 수 있어?\"",
         characters: {
+            left: "assets/images/characters/seyoun_angry.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
+        next: "day2_final_yuna_betrayal_2"
+    },
+    "day2_final_yuna_betrayal_2": {
+        name: "서연",
+        text: "(서연이의 목소리가 떨리기 시작하더니, 이내 맑은 눈동자에 눈물이 고여 흐르기 시작한다.)",
+        characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
@@ -1570,7 +1590,7 @@
         name: "유나",
         text: "(유나는 내 손을 잡고 서연이를 지나쳐 걷는다. 그녀의 손에서 차가운 승리감이 느껴진다.)",
         characters: {
-            left: "assets/images/characters/seyoun_pout.png",
+            left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
@@ -1580,7 +1600,7 @@
         name: "유나",
         text: "\"후훗, 역시 넌 남들과 달라.\"",
         characters: {
-            left: "assets/images/characters/seyoun_pout.png",
+            left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
@@ -1590,7 +1610,7 @@
         name: "유나",
         text: "\"서연 양, 미안하지만 이 사람은 나랑 할 이야기가 있어서.\"",
         characters: {
-            left: "assets/images/characters/seyoun_pout.png",
+            left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
@@ -1603,7 +1623,7 @@
         name: "유나",
         text: "\"학교의 '진짜' 모습에 대해서 말이야. 아까 하던 이야기, 마저 해야지?\"",
         characters: {
-            left: "assets/images/characters/seyoun_pout.png",
+            left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
@@ -1613,7 +1633,7 @@
         name: "유나",
         text: "\"우리 학교에 대해 네가 꼭 알아야 할 게 있거든. 아주 흥미로운 이야기야.\"",
         characters: {
-            left: "assets/images/characters/seyoun_pout.png",
+            left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
@@ -1644,6 +1664,16 @@
         name: "서연",
         text: "\"잠깐, 전학생 군! 나랑 축제 가기로 했잖아! 그런데 지금 다인이한테 가는 거야...?\"",
         characters: {
+            left: "assets/images/characters/seyoun_angry.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
+        sunset: true,
+        next: "day2_final_dain_betrayal_2"
+    },
+    "day2_final_dain_betrayal_2": {
+        name: "서연",
+        text: "\"정말... 너무해. 나만 진심이었던 거야? (서연이의 눈에서 굵은 눈물방울이 툭 떨어지기 시작한다.)\"",
+        characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
@@ -1654,7 +1684,7 @@
         name: "유나",
         text: "\"후훗... 결국 저런 활기찬 타입이 취향이었나 보네. 서연 양, 우리 둘 다 차인 것 같은데?\"",
         characters: {
-            left: "assets/images/characters/seyoun_pout.png",
+            left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
