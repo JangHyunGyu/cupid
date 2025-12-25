@@ -110,39 +110,38 @@ body, html {
 }
 
 #choice-container {
-    position: absolute;
-    bottom: 20px; /* 대화창 위치와 비슷하게 하단으로 이동 */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     pointer-events: auto;
     z-index: 10;
+    margin-bottom: 20px; /* 하단 여백 확보 */
 }
 
 .choice-btn {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.8); /* 어두운 반투명 배경으로 캐릭터 가림 최소화 */
     border: 2px solid #ff69b4;
-    padding: 15px;
-    border-radius: 30px;
+    color: #fff;
+    padding: 18px;
+    border-radius: 15px;
     font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.2s;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .choice-btn:hover {
     background: #ff69b4;
-    color: #fff;
+    transform: scale(1.02);
 }
 
 /* 반응형 및 세로 모드 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 70%; /* 세로 모드에서는 캐릭터를 조금 낮게 배치 */
-        bottom: 10%;
+        height: 85%; /* 캐릭터 크기 최적화 */
+        bottom: 0;
     }
 
     #dialogue-box {
@@ -154,12 +153,8 @@ body, html {
         font-size: 1.1rem; /* 작은 화면 대응 */
     }
 
-    #choice-container {
-        width: 90%;
-    }
-
     .choice-btn {
-        padding: 12px;
+        padding: 15px;
         font-size: 1rem;
     }
 }
@@ -190,17 +185,17 @@ body, html {
     }
 
     #choice-container {
-        bottom: 5px;
-        gap: 5px;
-        width: 95%;
+        gap: 8px;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr; /* 2열 배치로 높이 절약 */
+        margin-bottom: 5px;
     }
 
     .choice-btn {
-        padding: 6px 10px;
-        font-size: 0.85rem;
-        border-radius: 15px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        border-radius: 10px;
     }
 }
 
