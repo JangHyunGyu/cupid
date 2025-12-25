@@ -1146,10 +1146,25 @@
         choices: [
             { text: "서연이와 함께 옥상으로 간다.", next: "day2_lunch_seoyeon" },
             { text: "쪽지의 내용대로 도서관 별관으로 간다.", next: "day2_lunch_yuna", condition: "readNote" },
-            { text: "왠지 모르게 끌리는 도서관 별관으로 향한다.", next: "day2_lunch_yuna", excludeCondition: "readNote" },
+            { text: "조용한 도서관 별관으로 향한다.", next: "day2_lunch_yuna_new", excludeCondition: "readNote" },
             { text: "다인이가 있는 운동장으로 배구를 하러 간다.", next: "day2_lunch_volleyball", condition: "metDain" },
-            { text: "운동장으로 나가서 아이들과 배구를 한다.", next: "day2_lunch_volleyball", excludeCondition: "metDain" }
+            { text: "운동장으로 나가서 아이들과 배구를 한다.", next: "day2_lunch_volleyball_new", excludeCondition: "metDain" }
         ]
+    },
+    "day2_lunch_volleyball_new": {
+        name: "나",
+        text: "(운동장으로 나가니 활기찬 기운이 느껴진다. 한 소녀가 아이들을 이끌며 열정적으로 배구를 가르치고 있다.)",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_lunch_volleyball_new_2"
+    },
+    "day2_lunch_volleyball_new_2": {
+        name: "다인",
+        text: "\"어이, 거기 전학생! 멍하니 서 있지 말고 이리 와서 같이 한 게임 어때?\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        setFlag: "metDain",
+        next: "day2_lunch_volleyball"
     },
     "day2_lunch_seoyeon": {
         name: "서연",
@@ -1230,6 +1245,21 @@
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_afternoon"
     },
+    "day2_lunch_yuna_new": {
+        name: "나",
+        text: "(조용한 곳을 찾아 도서관 별관으로 향했다. 그곳에는 한 소녀가 창가에 앉아 책을 읽고 있었다.)",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_lunch_yuna_new_2"
+    },
+    "day2_lunch_yuna_new_2": {
+        name: "유나",
+        text: "\"안녕? 여기까지 찾아오다니, 너도 참 특이하네. 나는 유나라고 해.\"",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "metYuna",
+        next: "day2_lunch_yuna_1_2"
+    },
     "day2_lunch_yuna": {
         name: "유나",
         text: "(도서관 별관에 들어서자 유나가 창가에 앉아 먼 곳을 응시하고 있다. 내가 다가가자 그녀가 천천히 고개를 돌린다.)",
@@ -1299,6 +1329,7 @@
     "day2_yuna_denial_2": {
         name: "유나",
         text: "\"믿기 힘들겠지. 하지만 이건 실제로 있었던 일이야. 너도 조심해. 튀는 행동을 하면 학교는 가만히 있지 않으니까. 이미 넌 그들의 눈에 띄었을지도 몰라.\"",
+        setFlag: "knowsSecret",
         next: "day2_afternoon"
     },
     "day2_yuna_accept": {
@@ -1311,6 +1342,7 @@
         name: "유나",
         text: "\"그 선배는... 나에게 아주 소중한 사람이었어. 널 보면 자꾸 그 선배가 생각나서... 이번에는 지켜주고 싶어. 너만은 다치지 않게.\"",
         character: "assets/images/characters/yuna_sad.png",
+        setFlag: "knowsSecret",
         next: "day2_afternoon"
     },
     "day2_lunch_volleyball": {
@@ -1337,7 +1369,7 @@
     },
     "day2_afternoon_2": {
         name: "나",
-        text: "(가방을 챙겨 교실을 나서려는데, 서연이와 유나가 동시에 나를 부른다. 복도에 묘한 긴장감이 흐른다.)",
+        text: "(가방을 챙겨 교실을 나서려는데, 서연이와 또 다른 소녀가 동시에 나를 부른다. 복도에 묘한 긴장감이 흐른다.)",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1355,9 +1387,31 @@
         sunset: true,
         choices: [
             { text: "서연이에게 다가간다.", next: "day2_final_seoyeon" },
-            { text: "유나에게 다가간다.", next: "day2_final_yuna" },
+            { text: "유나에게 다가간다.", next: "day2_final_yuna", condition: "metYuna" },
+            { text: "낯선 소녀에게 다가간다.", next: "day2_final_yuna_new", excludeCondition: "metYuna" },
             { text: "둘 다 모른 척하고 서둘러 하교한다.", next: "day2_final_run" }
         ]
+    },
+    "day2_final_yuna_new": {
+        name: "나",
+        text: "(낯선 소녀에게 다가가자 그녀가 옅은 미소를 짓는다. 서연이의 얼굴이 순식간에 굳어진다.)",
+        characters: {
+            left: "assets/images/characters/seyoun_angry.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
+        next: "day2_final_yuna_new_2"
+    },
+    "day2_final_yuna_new_2": {
+        name: "유나",
+        text: "\"안녕? 전학생. 나는 유나라고 해. 어제부터 널 지켜보고 있었어.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
+        setFlag: "metYuna",
+        next: "day2_final_yuna_2_2"
     },
     "day2_final_seoyeon": {
         name: "서연",
@@ -1431,7 +1485,30 @@
     },
     "day2_final_yuna_3": {
         name: "유나",
-        text: "\"서연 양, 미안하지만 이 사람은 나랑 할 이야기가 있어서. 학교의 '진짜' 모습에 대해서 말이야.\"",
+        text: "\"서연 양, 미안하지만 이 사람은 나랑 할 이야기가 있어서.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_yuna_secret", condition: "knowsSecret" },
+            { text: "다음", next: "day2_final_yuna_no_secret", excludeCondition: "knowsSecret" }
+        ]
+    },
+    "day2_final_yuna_secret": {
+        name: "유나",
+        text: "\"학교의 '진짜' 모습에 대해서 말이야. 아까 하던 이야기, 마저 해야지?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
+        next: "day2_ending_pre"
+    },
+    "day2_final_yuna_no_secret": {
+        name: "유나",
+        text: "\"우리 학교에 대해 네가 꼭 알아야 할 게 있거든. 아주 흥미로운 이야기야.\"",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_smile.png"
