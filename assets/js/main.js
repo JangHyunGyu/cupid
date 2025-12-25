@@ -42,11 +42,12 @@ function renderScene(sceneId) {
         bgLayer.style.backgroundImage = `url(${scene.background})`;
     }
 
-    // 밤 필터 적용
+    // 밤/노을 필터 적용
+    bgLayer.classList.remove('night', 'sunset');
     if (scene.night) {
         bgLayer.classList.add('night');
-    } else {
-        bgLayer.classList.remove('night');
+    } else if (scene.sunset) {
+        bgLayer.classList.add('sunset');
     }
 
     // 캐릭터 업데이트

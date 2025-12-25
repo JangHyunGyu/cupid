@@ -200,7 +200,7 @@
     "path_normal_2": {
         name: "서연",
         text: "(그녀는 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 건)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_1_1"
     },
@@ -219,7 +219,7 @@
     "classroom_1_1": {
         name: "서연",
         text: "(교실 문 앞에 도착했다. 안쪽에서 아이들의 웅성거리는 소리와 웃음소리가 들려온다. 서연이가 내 어깨를 가볍게 두드리며 응원해준다.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_1_2"
     },
@@ -568,16 +568,19 @@
         text: "(어느덧 모든 수업이 끝나고 방과 후를 알리는 종소리가 울려 퍼진다. 노을빛이 교실 안을 붉게 물들이고 있다.)",
         background: "assets/images/background/room_school.png",
         character: null,
+        sunset: true,
         next: "after_school_start_2"
     },
     "after_school_start_2": {
         name: "나",
         text: "(가방을 챙겨 교실을 나서려는데... 복도에는 하교하는 아이들의 발소리가 가득하다.)",
+        sunset: true,
         next: "after_school_start_3"
     },
     "after_school_start_3": {
         name: "나",
         text: "(오늘 하루도 참 길었네. 이제 어떻게 할까?)",
+        sunset: true,
         choices: [
             { text: "서연이가 있는 학생회실에 들러본다.", next: "after_seoyeon" },
             { text: "유나가 있던 도서관 별관으로 향한다.", next: "after_yuna" },
@@ -701,6 +704,7 @@
         text: "(도서관 별관은 낮보다 더 어둡고 고요하다. 유나는 여전히 그 자리에 앉아 창밖의 노을을 바라보고 있다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
         next: "after_yuna_2"
     },
     "after_yuna_2": {
@@ -708,6 +712,7 @@
         text: "(그녀의 옆모습이 마치 한 폭의 그림처럼 아름답고도 위태로워 보인다. 그녀는 내가 온 것을 알면서도 한참 동안 창밖만 바라본다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
         next: "after_yuna_3"
     },
     "after_yuna_3": {
@@ -715,6 +720,7 @@
         text: "\"...결국 다시 왔구나. 방과 후의 도서관은 더 고요해서 좋아. 넌 무슨 일로 온 거야?\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
         choices: [
             { text: "너에 대해 더 알고 싶어서 왔어.", next: "after_yuna_know" },
             { text: "이 학교의 비밀... 그게 뭔지 알려줘.", next: "after_yuna_secret" }
@@ -724,6 +730,7 @@
         name: "유나",
         text: "(그녀가 천천히 고개를 돌려 나를 바라본다. 그녀의 눈동자에 붉은 노을빛이 서린다. 그녀의 입가에 희미한 미소가 번진다.)",
         character: "assets/images/characters/yuna_smile.png",
+        sunset: true,
         next: "after_yuna_know_2"
     },
     "after_yuna_know_2": {
@@ -819,16 +826,19 @@
         name: "나",
         text: "(교문을 나서며 오늘 하루를 되돌아본다. 서연이와의 만남, 유나와의 기묘한 대화... 전학 첫날치고는 정말 많은 일이 있었다.)",
         background: "assets/images/background/school.png",
+        sunset: true,
         next: "after_home_2"
     },
     "after_home_2": {
         name: "나",
         text: "(노을이 지는 거리를 걸으며 내일은 또 어떤 일이 벌어질지 기대해본다. 가로등이 하나둘씩 켜지며 밤을 준비한다.)",
+        sunset: true,
         next: "after_home_2_2"
     },
     "after_home_2_2": {
         name: "나",
         text: "(내일도... 그녀들을 만날 수 있겠지?)",
+        sunset: true,
         next: "evening_home"
     },
     "evening_home": {
@@ -899,6 +909,7 @@
     "day2_gate": {
         name: "서연",
         text: "(교문 앞에 도착하자, 멀리서 누군가 손을 흔들며 달려온다. 서연이다!)",
+        background: "assets/images/background/school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_gate_2"
     },
@@ -1250,6 +1261,7 @@
         text: "(오후 수업도 모두 끝나고, 다시 노을이 지는 시간이 찾아왔다. 오늘은 어제보다 더 많은 일이 있었던 것 같다.)",
         background: "assets/images/background/room_school.png",
         character: null,
+        sunset: true,
         next: "day2_afternoon_2"
     },
     "day2_afternoon_2": {
@@ -1259,6 +1271,7 @@
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
+        sunset: true,
         next: "day2_afternoon_2_2"
     },
     "day2_afternoon_2_2": {
@@ -1268,6 +1281,7 @@
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
+        sunset: true,
         choices: [
             { text: "서연이에게 다가간다.", next: "day2_final_seoyeon" },
             { text: "유나에게 다가간다.", next: "day2_final_yuna" },
@@ -1281,6 +1295,7 @@
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
+        sunset: true,
         next: "day2_final_seoyeon_2"
     },
     "day2_final_seoyeon_2": {
@@ -1290,6 +1305,7 @@
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
+        sunset: true,
         next: "day2_final_seoyeon_2_2"
     },
     "day2_final_seoyeon_2_2": {
@@ -1299,6 +1315,7 @@
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
+        sunset: true,
         next: "day2_final_seoyeon_3"
     },
     "day2_final_seoyeon_3": {
@@ -1308,6 +1325,7 @@
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
+        sunset: true,
         next: "day2_ending_pre"
     },
     "day2_final_yuna": {
@@ -1317,6 +1335,7 @@
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_smile.png"
         },
+        sunset: true,
         next: "day2_final_yuna_2"
     },
     "day2_final_yuna_2": {
@@ -1326,6 +1345,7 @@
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_smile.png"
         },
+        sunset: true,
         next: "day2_final_yuna_2_2"
     },
     "day2_final_yuna_2_2": {
@@ -1335,6 +1355,7 @@
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_smile.png"
         },
+        sunset: true,
         next: "day2_final_yuna_3"
     },
     "day2_final_yuna_3": {
@@ -1344,18 +1365,21 @@
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_smile.png"
         },
+        sunset: true,
         next: "day2_ending_pre"
     },
     "day2_final_run": {
         name: "나",
         text: "(두 사람의 시선이 너무 무서워서 나도 모르게 뒷문으로 도망치듯 빠져나왔다. 뒤에서 나를 부르는 소리가 들리는 것 같지만 돌아보지 않고 달렸다. 심장이 터질 것만 같다. 나는 숨을 헐떡이며 교문을 나섰다.)",
         background: "assets/images/background/school.png",
+        sunset: true,
         next: "day2_final_run_2"
     },
     "day2_final_run_2": {
         name: "나",
         text: "\"(하아... 하아... 살았다. 하지만 내일 학교에 어떻게 가지? 벌써부터 걱정이 태산이네...)\"",
         background: "assets/images/background/school.png",
+        sunset: true,
         next: "day2_ending_pre"
     },
     "day2_ending_pre": {
@@ -1363,6 +1387,7 @@
         text: "(학교를 나서며 밤하늘을 올려다본다. 수많은 별이 반짝이며 나를 내려다보고 있다. 전학 온 지 겨우 이틀... 하지만 내 인생은 이미 거대한 소용돌이 속에 휘말린 것 같다. 앞으로 어떤 미래가 나를 기다리고 있을까?)",
         background: "assets/images/background/school.png",
         character: null,
+        night: true,
         next: "end_demo_real"
     },
     "end_demo_real": {

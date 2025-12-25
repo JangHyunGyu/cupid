@@ -38,6 +38,10 @@ body, html {
     filter: brightness(0.4) sepia(0.2) hue-rotate(200deg);
 }
 
+#background-layer.sunset {
+    filter: brightness(0.7) sepia(0.5) hue-rotate(-20deg) saturate(1.2);
+}
+
 #character-layer {
     position: absolute;
     bottom: 0;
