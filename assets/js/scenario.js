@@ -755,6 +755,7 @@
     "after_yuna_rooftop": {
         name: "유나",
         text: "(별관 옥상에서 내려다보는 학교는 낮과는 전혀 다른 모습이다. 차가운 밤공기가 우리를 감싸고, 멀리서 도시의 불빛이 반짝인다.)",
+        background: "assets/images/background/top_school.png",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         next: "after_yuna_rooftop_2"
@@ -769,14 +770,14 @@
     "after_yuna_rooftop_2_2": {
         name: "유나",
         text: "\"사람들은 이 학교가 완벽하다고 생각하지. 하지만 완벽한 건 없어.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         next: "after_yuna_rooftop_3"
     },
     "after_yuna_rooftop_3": {
         name: "유나",
         text: "\"겉으로 드러나지 않은 문제들이 곪아가고 있을 뿐이야. 넌 그런 위화감, 못 느꼈어?\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         choices: [
             { text: "너와 함께라면 어디든 갈 수 있어.", next: "after_yuna_together" },
