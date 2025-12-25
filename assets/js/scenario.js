@@ -1603,9 +1603,17 @@
     },
     "day2_lunch_nurse_wake": {
         name: "나",
-        text: "(얼마나 잤을까... 눈을 뜨니 창밖으로 붉은 노을이 스며들고 있다. 양호실은 이미 텅 비어 고요함만이 감돈다.)",
+        text: "(얼마나 잤을까... 눈을 뜨니 창밖으로 붉은 노을이 스며들고 있다. 양호선생님이 책상에 앉아 나를 보며 인자하게 미소 짓고 계신다.)",
         background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
         sunset: true,
+        next: "day2_lunch_nurse_wake_2"
+    },
+    "day2_lunch_nurse_wake_2": {
+        name: "양호선생님",
+        text: "\"어머, 이제 일어났니? 정말 달게 자더구나. 이제 곧 하교 시간이야. 몸은 좀 어떠니?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
         next: "day2_afternoon"
     },
     "day2_afternoon": {
