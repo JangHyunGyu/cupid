@@ -12,6 +12,7 @@ const charSlots = {
     right: document.getElementById('char-right')
 };
 const fadeLayer = document.getElementById('fade-layer');
+const tbcText = document.getElementById('tbc-text');
 
 function renderScene(sceneId) {
     const scene = SCENARIO[sceneId];
@@ -26,8 +27,14 @@ function renderScene(sceneId) {
     // 페이드 아웃 효과 적용
     if (scene.fade || (scene.text && scene.text.includes("페이드 아웃")) || (scene.text && scene.text.includes("어두워집니다"))) {
         fadeLayer.classList.add('active');
+        if (scene.tbc) {
+            setTimeout(() => {
+                tbcText.classList.add('show');
+            }, 1000);
+        }
     } else {
         fadeLayer.classList.remove('active');
+        tbcText.classList.remove('show');
     }
 
     // 배경 업데이트
@@ -47,6 +54,7 @@ function renderScene(sceneId) {
             if (charSlots[pos] && src) {
                 const img = document.createElement('img');
                 img.src = src;
+                if (scene.silhouette) img.classList.add('silhouette');
                 charSlots[pos].appendChild(img);
             }
         }
@@ -54,6 +62,7 @@ function renderScene(sceneId) {
         // 단일 캐릭터 설정 (기본 center)
         const img = document.createElement('img');
         img.src = scene.character;
+        if (scene.silhouette) img.classList.add('silhouette');
         charSlots.center.appendChild(img);
     }
 

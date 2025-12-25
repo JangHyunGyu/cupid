@@ -1351,14 +1351,20 @@
     },
     "end_demo_real": {
         name: "시스템",
-        text: "(화면이 서서히 어두워지며 'To Be Continued'라는 문구가 나타난다. 감미로운 피아노 선율이 흐르며 여운을 남긴다. 캐릭터들의 실루엣이 하나둘씩 지나간다.)",
-        character: null,
+        text: "(감미로운 피아노 선율이 흐르며 여운을 남깁니다...)",
+        fade: true,
+        tbc: true,
+        characters: {
+            left: "assets/images/characters/seyoun_nomal.png",
+            right: "assets/images/characters/yuna_nomal.png"
+        },
+        silhouette: true,
         next: "end_demo_real_2"
     },
     "end_demo_real_2": {
         name: "시스템",
-        text: "(화면이 완전히 어두워집니다...)",
-        character: null,
+        text: "당신은 학교의 숨겨진 진실에 한 걸음 더 다가갔습니다.",
+        fade: true,
         next: "end_demo_real_3"
     },
     "end_demo_real_3": {
