@@ -702,6 +702,7 @@
         text: "(다인이의 연습이 끝날 때까지 운동장 스탠드에 앉아 그녀를 지켜보았다. 노을이 지고 어둠이 깔릴 때까지 그녀의 열정은 식을 줄 몰랐다. 연습이 끝나고 우리는 약속대로 학교 앞 분식집으로 향했다.)",
         background: "assets/images/background/school.png",
         sunset: true,
+        setFlag: "datedDainDay1",
         next: "after_dain_tteokbokki"
     },
     "after_dain_tteokbokki": {
@@ -1583,6 +1584,15 @@
         text: "\"후훗, 가끔은 그런 날도 있지. 우리 학교가 좀... 기운이 세거든. 여기 커튼 치고 편하게 쉬렴.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "다음", next: "day2_lunch_nurse_rest_yuna", condition: "metYuna" },
+            { text: "다음", next: "day2_lunch_nurse_sleep", excludeCondition: "metYuna" }
+        ]
+    },
+    "day2_lunch_nurse_rest_yuna": {
+        name: "나",
+        text: "\"(기운이 세다고...? 유나가 했던 말들이 떠오른다. 이 학교, 정말 뭔가가 있는 걸까?)\"",
+        background: "assets/images/background/nurse_room.jpg",
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_sleep": {
@@ -1682,7 +1692,7 @@
         next: "day2_final_seoyeon_2"
     },
     "day2_final_yuna_new_2": {
-        name: "유나",
+        name: "???",
         text: "\"안녕? 전학생. 나는 유나라고 해. 어제부터 널 지켜보고 있었어.\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
@@ -1859,7 +1869,7 @@
     },
     "day2_final_dain": {
         name: "나",
-        text: "(서연과 유나의 따가운 시선을 뒤로하고, 나는 운동장에서 손을 흔드는 다인에게 발걸음을 옮겼다.)",
+        text: "(서연이와 옆에 서 있는 소녀의 따가운 시선을 뒤로하고, 나는 운동장에서 손을 흔드는 다인에게 발걸음을 옮겼다.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1904,7 +1914,30 @@
         next: "day2_final_seoyeon_2"
     },
     "day2_final_dain_react": {
+        name: "나",
+        text: "(서연이와 유나의 시선을 뒤로하고 다인이에게 달려갔다. 뒤에서 유나의 나지막한 목소리가 들려온다.)",
+        characters: {
+            left: "assets/images/characters/seyoun_cry.png",
+            right: "assets/images/characters/yuna_sadsmile.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "다음", next: "day2_final_dain_react_yuna_met", condition: "metYuna" },
+            { text: "다음", next: "day2_final_dain_react_yuna_new", excludeCondition: "metYuna" }
+        ]
+    },
+    "day2_final_dain_react_yuna_met": {
         name: "유나",
+        text: "\"후훗... 결국 저런 활기찬 타입이 취향이었나 보네. 서연 양, 우리 둘 다 차인 것 같은데?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_cry.png",
+            right: "assets/images/characters/yuna_sadsmile.png"
+        },
+        sunset: true,
+        next: "day2_final_dain_start"
+    },
+    "day2_final_dain_react_yuna_new": {
+        name: "???",
         text: "\"후훗... 결국 저런 활기찬 타입이 취향이었나 보네. 서연 양, 우리 둘 다 차인 것 같은데?\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
@@ -1938,6 +1971,17 @@
     "day2_final_dain_4": {
         name: "나",
         text: "(우리는 학교 앞 분식집에서 떡볶이를 먹으며 배구 이야기로 꽃을 피웠다. 다인이와 함께라면 어떤 고민도 금방 사라질 것만 같다.)",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_shirt.png",
+        night: true,
+        choices: [
+            { text: "다음", next: "day2_final_dain_4_again", condition: "datedDainDay1" },
+            { text: "다음", next: "day2_ending_pre", excludeCondition: "datedDainDay1" }
+        ]
+    },
+    "day2_final_dain_4_again": {
+        name: "다인",
+        text: "\"어제도 오늘도, 너랑 먹는 떡볶이가 세상에서 제일 맛있어! 우리 내일도... 같이 올 수 있을까?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
