@@ -1191,7 +1191,7 @@
     },
     "day2_gate_talk_yuna": {
         name: "서연",
-        text: "(유나의 이름을 듣자 서연이의 표정이 순식간에 어두워진다. 그녀는 주변을 살피더니 목소리를 낮춰 말한다. 그녀의 눈동자에 걱정 어린 빛이 서린다.)",
+        text: "(그 말을 듣자 서연이의 표정이 순식간에 어두워진다. 그녀는 주변을 살피더니 목소리를 낮춰 말한다. 그녀의 눈동자에 걱정 어린 빛이 서린다.)",
         character: "assets/images/characters/seyoun_worried.png",
         next: "day2_gate_talk_yuna_2"
     },
@@ -1430,7 +1430,7 @@
         next: "day2_lunch_yuna_new_2"
     },
     "day2_lunch_yuna_new_2": {
-        name: "유나",
+        name: "???",
         text: "\"안녕? 여기까지 찾아오다니, 너도 참 특이하네. 나는 유나라고 해.\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
@@ -1769,7 +1769,7 @@
     },
     "day2_final_seoyeon_2": {
         name: "서연",
-        text: "(그녀는 내 팔짱을 끼며 유나를 쳐다본다. 그녀의 손에 힘이 들어간다.)",
+        text: "(그녀는 내 팔짱을 끼며 옆에 서 있는 소녀를 쳐다본다. 그녀의 손에 힘이 들어간다.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
