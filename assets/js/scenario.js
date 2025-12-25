@@ -1438,6 +1438,7 @@
             { text: "서연이에게 다가간다.", next: "day2_final_seoyeon" },
             { text: "유나에게 다가간다.", next: "day2_final_yuna", condition: "metYuna" },
             { text: "낯선 소녀에게 다가간다.", next: "day2_final_yuna_new", excludeCondition: "metYuna" },
+            { text: "운동장에서 기다리는 다인에게 간다.", next: "day2_final_dain", condition: "metDain" },
             { text: "둘 다 모른 척하고 서둘러 하교한다.", next: "day2_final_run" }
         ]
     },
@@ -1481,6 +1482,16 @@
         characters: {
             left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
+        },
+        sunset: true,
+        next: "day2_final_seoyeon_yuna_react"
+    },
+    "day2_final_seoyeon_yuna_react": {
+        name: "유나",
+        text: "\"...그래, 네 선택이 그렇다면 어쩔 수 없지. 하지만 조심해. 빛이 강할수록 그림자도 깊은 법이니까.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_pout.png",
+            right: "assets/images/characters/yuna_sadsmile.png"
         },
         sunset: true,
         next: "day2_final_seoyeon_2"
@@ -1604,6 +1615,36 @@
         text: "(유나와 함께 어두운 복도를 걸으며 그녀가 들려주는 학교의 진실에 귀를 기울였다. 그녀의 목소리는 차가웠지만, 잡은 손에서는 미세한 떨림이 느껴졌다. 우리는 어느새 어둠이 짙게 깔린 교문 앞에 서 있었다.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/yuna_smile.png",
+        night: true,
+        next: "day2_ending_pre"
+    },
+    "day2_final_dain": {
+        name: "다인",
+        text: "(운동장 쪽으로 고개를 돌리자, 다인이가 배구공을 들고 나를 향해 손을 흔들고 있다. 그녀의 건강한 미소가 노을빛에 반짝인다.)",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "day2_final_dain_2"
+    },
+    "day2_final_dain_2": {
+        name: "다인",
+        text: "\"어이! 전학생! 연습 끝나고 기다리고 있었다구! 오늘 같이 떡볶이 먹으러 가기로 한 거 안 잊었지?\"",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "day2_final_dain_3"
+    },
+    "day2_final_dain_3": {
+        name: "나",
+        text: "(서연이와 유나의 시선을 뒤로하고 다인이에게 달려갔다. 그녀의 활기찬 에너지에 복잡했던 마음이 한순간에 풀리는 기분이다.)",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "day2_final_dain_4"
+    },
+    "day2_final_dain_4": {
+        name: "나",
+        text: "(우리는 학교 앞 분식집에서 떡볶이를 먹으며 배구 이야기로 꽃을 피웠다. 다인이와 함께라면 어떤 고민도 금방 사라질 것만 같다.)",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_nomal.png",
         night: true,
         next: "day2_ending_pre"
     },
