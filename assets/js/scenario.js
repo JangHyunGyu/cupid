@@ -238,6 +238,7 @@
     "classroom_2": {
         name: "선생님",
         text: "(교탁 앞에 서자 수십 개의 시선이 일제히 나에게 꽂힌다. 호기심 어린 눈빛, 경계하는 눈빛... 서연이는 내 옆에서 든든하게 미소 지으며 나를 지켜봐 주고 있다.)",
+        background: "assets/images/background/room_school.png",
         character: "assets/images/characters/teacher.png",
         next: "classroom_2_2"
     },
