@@ -1482,7 +1482,20 @@
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
-        next: "day2_final_yuna_new_2"
+        choices: [
+            { text: "서연아, 미안해... 역시 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna_new" },
+            { text: "미안해. 하지만 난 유나랑 할 이야기가 있어.", next: "day2_final_yuna_new_2" }
+        ]
+    },
+    "day2_final_seoyeon_back_yuna_new": {
+        name: "유나",
+        text: "\"후훗... 결국 마음이 약해졌나 보네. 좋아, 오늘은 양보해 줄게. 하지만 다음엔 도망칠 수 없을 거야.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_shy.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
+        next: "day2_final_seoyeon_2"
     },
     "day2_final_yuna_new_2": {
         name: "유나",
@@ -1584,7 +1597,20 @@
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
-        next: "day2_final_yuna_2"
+        choices: [
+            { text: "서연아, 미안해... 역시 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna" },
+            { text: "미안해. 하지만 난 유나랑 할 이야기가 있어.", next: "day2_final_yuna_2" }
+        ]
+    },
+    "day2_final_seoyeon_back_yuna": {
+        name: "유나",
+        text: "\"후훗... 결국 마음이 약해졌나 보네. 좋아, 오늘은 양보해 줄게. 하지만 다음엔 도망칠 수 없을 거야.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_shy.png",
+            right: "assets/images/characters/yuna_smile.png"
+        },
+        sunset: true,
+        next: "day2_final_seoyeon_2"
     },
     "day2_final_yuna_2": {
         name: "유나",
@@ -1678,7 +1704,20 @@
             right: "assets/images/characters/yuna_nomal.png"
         },
         sunset: true,
-        next: "day2_final_dain_react"
+        choices: [
+            { text: "서연아, 울지 마... 내가 잘못했어. 너랑 같이 갈게.", next: "day2_final_seoyeon_back_dain" },
+            { text: "미안해, 서연아. 하지만 다인이랑 약속이 먼저야.", next: "day2_final_dain_react" }
+        ]
+    },
+    "day2_final_seoyeon_back_dain": {
+        name: "다인",
+        text: "\"뭐야~ 전학생! 서연이를 울리면 어떡해! 좋아, 오늘은 서연이한테 양보할 테니까 내일은 꼭 나랑 놀아줘야 해?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_shy.png",
+            right: "assets/images/characters/dain_nomal.png"
+        },
+        sunset: true,
+        next: "day2_final_seoyeon_2"
     },
     "day2_final_dain_react": {
         name: "유나",
