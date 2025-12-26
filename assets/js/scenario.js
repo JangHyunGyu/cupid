@@ -856,7 +856,7 @@
         name: "다인",
         text: "\"어이, {name?}! 여기까지 웬일이야? 나 연습하는 거 구경하러 온 거야? 후훗, 내 멋진 모습에 반하기라도 한 건 아니지?\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_sweat.png",
+        character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         choices: [
             { text: "응, 다인이 연습하는 거 보니까 나도 힘이 나는 것 같아.", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
@@ -877,7 +877,7 @@
         name: "다인",
         text: "\"뭐, 뭐뭐뭐... 무슨 소릴 하는 거야, 이 변태야! 너 진짜 실망이다! 당장 나가! 안 나가면 배구공으로 스파이크 날려버릴 줄 알아!\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_angry.png",
         sunset: true,
         next: "after_home"
     },
@@ -885,7 +885,7 @@
         name: "다인",
         text: "(다인이의 표정이 순식간에 굳어진다. 그녀는 배구공을 꽉 쥐며 나를 노려본다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_angry.png",
         sunset: true,
         next: "after_dain_rude_2"
     },
@@ -893,9 +893,9 @@
         name: "다인",
         text: "\"뭐...? 시끄러워? 하, 어이가 없네. 연습 방해하지 말고 당장 나가! 너 같은 애한테 보여줄 모습 따윈 없으니까!\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_angry.png",
         sunset: true,
-        next: "day1_ending_pre"
+        next: "after_home"
     },
     "after_dain_cheer": {
         name: "다인",
@@ -911,7 +911,7 @@
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
-        next: "after_dain_4"
+        next: "after_dain_end"
     },
     "after_dain_normal": {
         name: "다인",
@@ -2123,7 +2123,7 @@
     },
     "day2_lunch_nurse_rest": {
         name: "양호선생님",
-        text: "\"후훗, 가끔은 그런 날도 있지. 여기 커튼 치고 편하게 쉬렴.\"",
+        text: "\"후훗, 가끔은 그런 날도 있지. 여기 커튼 치고 편하게 쉬렴. 그나저나... {name?}은 참 기운이 세네. 보고만 있어도 내 몸이 다 뜨거워지는 것 같아.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         choices: [
