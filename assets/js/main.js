@@ -1,7 +1,9 @@
 const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
 let currentSceneId = "start";
 let isTyping = false;
-let gameState = {};
+let gameState = {
+    playerName: "주인공" // 기본 이름
+};
 
 // 프리토킹 관련 변수
 let freeTalkTurns = 0;
@@ -18,6 +20,9 @@ const chatContainer = document.getElementById('chat-container');
 const chatInput = document.getElementById('chat-input');
 const chatSendBtn = document.getElementById('chat-send');
 const turnCountEl = document.getElementById('turn-count');
+const nameInputContainer = document.getElementById('name-input-container');
+const playerNameInput = document.getElementById('player-name-input');
+const nameConfirmBtn = document.getElementById('name-confirm-btn');
 const bgLayer = document.getElementById('background-layer');
 const charSlots = {
     left: document.getElementById('char-left'),
@@ -37,6 +42,7 @@ async function renderScene(sceneId) {
     dialogueBox.style.display = 'block';
     choiceContainer.style.display = 'none';
     chatContainer.style.display = 'none';
+    nameInputContainer.style.display = 'none';
     isFreeTalking = false;
     
     // 페이드 아웃 효과 적용
@@ -98,6 +104,9 @@ async function renderScene(sceneId) {
     // 프리토킹 모드 확인
     if (scene.type === 'free_talk') {
         startFreeTalk(scene);
+    } else if (scene.type === 'input') {
+        await typeText(scene.text);
+        nameInputContainer.style.display = 'block';
     } else {
         // 텍스트 타이핑 효과
         await typeText(scene.text);
@@ -113,6 +122,7 @@ function startFreeTalk(scene) {
     freeTalkHistory = [];
     
     // 시스템 프롬프트 설정
+    const knowsName = gameState[`knowsName_${scene.name}`];
     const systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
 현재 상황: ${scene.context || "사용자와 대화 중입니다."}
 성격: ${scene.personality || "다정하고 친절한 학생회장"}
@@ -121,7 +131,9 @@ ${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
 1. 답변은 반드시 1~2문장으로 짧게 하세요.
 2. AI임을 절대 밝히지 마세요.
 3. 대화는 최대 ${currentMaxTurns}턴까지만 가능하며, 자연스럽게 대화를 마무리하는 느낌으로 답변하세요.
-4. 반응 수위 지침:
+4. 사용자 호칭 지침:
+   - ${knowsName ? `사용자의 이름은 '${gameState.playerName}'입니다. 반드시 '${gameState.playerName}' 또는 '${gameState.playerName} 군/씨' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '전학생 군'이라고 부르세요."}
+5. 반응 수위 지침:
    - 대화 초기나 어색한 사이일 때는 예의를 지키며 적당한 거리감을 유지하세요.
    - 대화가 진행되며 분위기가 무르익거나 현재 상황이 로맨틱할 경우, 아래 수준의 반응을 허용합니다:
      * 로맨틱한 텐션: "심장 소리가 들릴 것 같아", "너랑 있으면 자꾸 이상한 기분이 들어" 같은 감정적인 밀당.
@@ -155,14 +167,17 @@ ${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
 }
 
 function typeText(text) {
+    // 이름 치환
+    const processedText = text.replace(/{name}/g, gameState.playerName);
+    
     return new Promise((resolve) => {
         isTyping = true;
         messageEl.textContent = "";
         let i = 0;
         const interval = setInterval(() => {
-            messageEl.textContent += text[i];
+            messageEl.textContent += processedText[i];
             i++;
-            if (i >= text.length) {
+            if (i >= processedText.length) {
                 clearInterval(interval);
                 isTyping = false;
                 resolve();
@@ -231,6 +246,26 @@ chatInput.onkeypress = (e) => {
     if (e.key === 'Enter') sendChatMessage();
 };
 
+nameConfirmBtn.onclick = () => {
+    const name = playerNameInput.value.trim();
+    
+    // 유효성 검사: 1~4자, 숫자/특수문자 제외 (한글, 영문만 허용)
+    const nameRegex = /^[a-zA-Z가-힣]{1,4}$/;
+    
+    if (!nameRegex.test(name)) {
+        alert("이름은 한글 또는 영문 1~4자로 입력해주세요. (숫자, 특수문자 제외)");
+        return;
+    }
+    
+    gameState.playerName = name;
+    nameInputContainer.style.display = 'none';
+    
+    const scene = SCENARIO[currentSceneId];
+    if (scene.next) {
+        renderScene(scene.next);
+    }
+};
+
 function checkChoices() {
     const scene = SCENARIO[currentSceneId];
     if (scene.choices) {
@@ -247,7 +282,7 @@ function checkChoices() {
 
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
-            btn.textContent = choice.text;
+            btn.textContent = choice.text.replace(/{name}/g, gameState.playerName);
             btn.onclick = () => {
                 // 플래그 설정
                 if (choice.setFlag) {

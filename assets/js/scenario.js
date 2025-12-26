@@ -14,6 +14,12 @@
     "start_3": {
         name: "나",
         text: "(심장 소리가 귓가에 울릴 정도로 크게 들려온다. 나는 심호흡을 하며 교문을 향해 한 걸음을 내디뎠다.)",
+        next: "name_input_scene"
+    },
+    "name_input_scene": {
+        type: "input",
+        name: "시스템",
+        text: "당신의 이름을 입력해주세요.",
         next: "start_4"
     },
     "start_4": {
@@ -96,6 +102,27 @@
         text: "(서연이의 뒤를 따라 복도를 걷는다. 복도 창문 너머로 학생들의 활기찬 목소리와 운동장에서 들려오는 호각 소리가 어우러진다.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_back.png",
+        next: "hallway_name_ask"
+    },
+    "hallway_name_ask": {
+        name: "서연",
+        text: "(서연이가 갑자기 멈춰 서더니 나를 돌아본다.) \"아, 그러고 보니 내 소개만 하고 네 이름은 아직 못 들었네! 전학생 군, 이름이 뭐야?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "내 이름은 '{name}'야. 잘 부탁해.", next: "hallway_name_share", setFlag: "knowsName_서연" },
+            { text: "그냥 전학생이라고 불러줘. 그게 더 편해.", next: "hallway_name_keep" }
+        ]
+    },
+    "hallway_name_share": {
+        name: "서연",
+        text: "\"{name}... 후훗, 좋은 이름이다! 그럼 이제부터 {name}라고 부를게. 잘 부탁해, {name}야!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "hallway_1_2"
+    },
+    "hallway_name_keep": {
+        name: "서연",
+        text: "\"에이, 싱겁긴! 알았어. 네가 원한다면 당분간은 전학생 군이라고 부를게. 하지만 나중에 마음 바뀌면 꼭 알려줘야 해?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1_2"
     },
     "hallway_1_2": {
@@ -274,9 +301,21 @@
         text: "\"자, 다들 주목! 오늘부터 우리와 함께하게 된 전학생이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야. 같이 운동할 사람 언제든 환영해!", next: "class_after_active", setFlag: "personality_active" },
-            { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야. 잘 부탁해.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "빨리 친해지고 싶어! 오늘 방과 후에 다 같이 떡볶이 먹으러 갈 사람?", next: "class_after_party", setFlag: "personality_party" },
+            { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_선생님" },
+            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlag: "personality_active" },
+            { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlag: "personality_quiet" }
+        ]
+    },
+    "teacher_name_share": {
+        name: "선생님",
+        text: "\"오, {name}라고 하는구나. 이름이 참 듬직하네. 자, 그럼 {name}야, 어떤 스타일로 친구들에게 인사하고 싶니?\"",
+        character: "assets/images/characters/teacher.png",
+        choices: [
+            { text: "활발하게 인사한다.", next: "class_after_active", setFlag: "personality_active" },
+            { text: "차분하게 인사한다.", next: "class_after_quiet", setFlag: "personality_quiet" },
+            { text: "사교적으로 인사한다.", next: "class_after_party", setFlag: "personality_party" }
+        ]
+    },
             { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study", setFlag: "personality_study" }
         ]
     },
@@ -991,10 +1030,18 @@
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
         choices: [
+            { text: "내 이름은 '{name}'야. 너랑 친해지고 싶어.", next: "yuna_name_share", setFlag: "knowsName_유나" },
             { text: "너에 대해 더 알고 싶어서 왔어.", next: "after_yuna_know" },
             { text: "이 학교의 비밀... 그게 뭔지 알려줘.", next: "after_yuna_secret", condition: "metYuna" },
             { text: "이 학교는 어떤 곳이야?", next: "after_yuna_secret", excludeCondition: "metYuna" }
         ]
+    },
+    "yuna_name_share": {
+        name: "유나",
+        text: "(그녀가 내 이름을 나지막이 읊조린다. 마치 주문을 외우는 듯한 기묘한 느낌이다.) \"...{name}. 기억해둘게. 하지만 이름 같은 건... 이 학교에선 큰 의미가 없을지도 몰라.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "after_yuna_know"
     },
     "after_yuna_know": {
         name: "유나",
@@ -1482,6 +1529,23 @@
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
+        next: "dain_name_ask"
+    },
+    "dain_name_ask": {
+        name: "다인",
+        text: "\"근데 너, 이름이 뭐야? 계속 전학생이라고 부를 순 없잖아!\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        choices: [
+            { text: "내 이름은 '{name}'야. 잘 부탁해!", next: "dain_name_share", setFlag: "knowsName_다인" },
+            { text: "그냥 전학생이라고 불러도 돼.", next: "day2_lunch_volleyball" }
+        ]
+    },
+    "dain_name_share": {
+        name: "다인",
+        text: "\"{name}? 오케이! {name}, 오늘부터 우린 배구 친구다! 자, 공 간다!\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_laugh.png",
         next: "day2_lunch_volleyball"
     },
     "day2_lunch_seoyeon": {
@@ -1810,6 +1874,25 @@
     "nurse_contact_success": {
         name: "양호선생님",
         text: "(그녀가 내 스마트폰을 가져가 직접 번호를 입력하고는 윙크를 보낸다.) \"후훗, 착하네. 그럼... 밤에 기다리고 있을게? 너무 늦지 않게 연락해줘.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "nurse_name_ask"
+    },
+    "nurse_name_ask": {
+        name: "양호선생님",
+        text: "\"그런데... 그러고 보니 아직 이름을 못 들었네? 전학생 군, 이름이 뭐야?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "제 이름은 '{name}'예요.", next: "nurse_name_share", setFlag: "knowsName_양호선생님" },
+            { text: "그냥 전학생이라고 불러주세요.", next: "day2_afternoon" }
+        ]
+    },
+    "nurse_name_share": {
+        name: "양호선생님",
+        text: "\"{name}... 후훗, 이름도 귀엽네. 그럼 {name}야, 이따 밤에 연락 기다릴게?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
