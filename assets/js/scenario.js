@@ -2902,7 +2902,7 @@
     },
     "msg_teacher": {
         type: "free_talk",
-        name: "선생님",
+        name: "담임선생님",
         text: "(선생님께 메시지를 보냈습니다.) \"음, {name?}? 이 시간에 무슨 일이니? 학교생활에 어려운 점이라도 있는 거야?\"",
         background: "assets/images/background/room_my.png",
         night: true,
