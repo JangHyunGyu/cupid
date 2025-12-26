@@ -954,16 +954,18 @@ function checkChoices() {
     const scene = SCENARIO[currentSceneId];
     if (scene.choices) {
         choiceContainer.innerHTML = "";
-        scene.choices.forEach(choice => {
-            // 조건 확인 (condition이 없거나, condition이 gameState에 true로 있을 때만 표시)
-            if (choice.condition && !gameState[choice.condition]) {
-                return;
-            }
-            // 반대 조건 확인 (excludeCondition이 gameState에 true로 있으면 표시 안 함)
-            if (choice.excludeCondition && gameState[choice.excludeCondition]) {
-                return;
-            }
+        
+        // 선택지 복사 및 필터링
+        let availableChoices = scene.choices.filter(choice => {
+            if (choice.condition && !gameState[choice.condition]) return false;
+            if (choice.excludeCondition && gameState[choice.excludeCondition]) return false;
+            return true;
+        });
 
+        // 선택지 무작위 셔플 (난이도 상승)
+        availableChoices.sort(() => Math.random() - 0.5);
+
+        availableChoices.forEach(choice => {
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
             btn.textContent = choice.text.replace(/{name}/g, gameState.playerName);

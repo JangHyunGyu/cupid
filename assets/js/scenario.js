@@ -163,10 +163,23 @@
         text: "\"복도를 지나면서 학교 시설들을 간단히 설명해줄게. 저기 보이는 곳이 우리 학교의 자랑인 도서관이야. 그리고 저쪽은...\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club" },
-            { text: "시설도 좋지만, 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter" },
-            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen" }
+            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "시설도 좋지만, 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -15 } } },
+            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 3 } } }
         ]
+    },
+    "hallway_talk_trap": {
+        name: "서연",
+        text: "(서연이가 당황한 듯 멈춰 서서 나를 빤히 바라본다. 그녀의 눈빛이 조금 차가워진다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_talk_trap_2"
+    },
+    "hallway_talk_trap_2": {
+        name: "서연",
+        text: "\"어... 음, 고맙긴 한데... 그런 말은 좀 부담스럽네. 우리 아직 만난 지 얼마 안 됐잖아? 장난이 좀 심한 것 같아.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2"
     },
     "hallway_talk_club": {
         name: "서연",
