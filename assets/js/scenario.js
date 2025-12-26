@@ -849,7 +849,7 @@
         text: "\"와, {name?}! 가까이서 보니까 더 반가운데? 나한테 궁금한 거 없어? 운동이라든가, 학교생활이라든가!\"",
         context: "방과 후 노을 지는 체육관, 연습을 마친 다인과 대화를 나누는 상황",
         personality: "털털하고 시원시원한 성격의 배구부 에이스. 운동을 사랑하며 주인공에게 호의적이고 에너지가 넘침.",
-        character: "assets/images/characters/dain_sweat.png",
+        character: "assets/images/characters/dain_nomal.png",
         next: "after_dain_3"
     },
     "after_dain_3": {
