@@ -799,7 +799,7 @@
         name: "나",
         text: "(체육관으로 향하자 노을빛이 스며드는 창가 아래에서 땀 흘리며 배구 연습을 하는 아이들이 보인다. 그중에서도 유독 눈에 띄는 한 소녀가 있다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_active.png",
         sunset: true,
         next: "after_dain_new_intro"
     },
@@ -807,7 +807,7 @@
         name: "???",
         text: "\"안녕! 난 배구부 다인이야. 너 오늘 전학 온 그 애 맞지?\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "metDain",
         next: "after_dain_2"
@@ -816,7 +816,7 @@
         name: "다인",
         text: "(체육관에 도착하자 다인이가 높게 뛰어올라 강력한 스파이크를 내리꽂고 있다. 그녀의 건강한 에너지가 주변을 밝히는 것 같다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_active.png",
         sunset: true,
         next: "after_dain_2"
     },
@@ -824,7 +824,7 @@
         name: "다인",
         text: "(연습이 잠시 멈춘 사이, 다인이가 나를 발견하고는 수건으로 땀을 닦으며 달려온다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         next: "dain_free_talk"
     },
@@ -834,20 +834,37 @@
         text: "\"와, 전학생! 가까이서 보니까 더 반가운데? 나한테 궁금한 거 없어? 운동이라든가, 학교생활이라든가!\"",
         context: "방과 후 노을 지는 체육관, 연습을 마친 다인과 대화를 나누는 상황",
         personality: "털털하고 시원시원한 성격의 배구부 에이스. 운동을 사랑하며 주인공에게 호의적이고 에너지가 넘침.",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sweat.png",
         next: "after_dain_3"
     },
     "after_dain_3": {
         name: "다인",
         text: "\"어이, 전학생! 여기까지 웬일이야? 나 연습하는 거 구경하러 온 거야? 후훗, 내 멋진 모습에 반하기라도 한 건 아니지?\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         choices: [
             { text: "응, 다인이 연습하는 거 보니까 나도 힘이 나는 것 같아.", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
             { text: "그냥 학교 둘러보다가 소리가 들려서 와봤어.", next: "after_dain_normal", stats: { Dain: { affinity: -5 } } },
+            { text: "다인아, 땀 흘리는 모습이 정말 섹시해. 우리 지금 단둘이 있는데...", next: "after_dain_trap", stats: { Dain: { affinity: -20 } } },
             { text: "시끄러워서 와봤어. 연습 좀 조용히 하면 안 돼?", next: "after_dain_rude", stats: { Dain: { affinity: -30 } } }
         ]
+    },
+    "after_dain_trap": {
+        name: "다인",
+        text: "(다인이의 얼굴이 순식간에 홍당무처럼 빨개지더니, 이내 화난 표정으로 바뀐다.)",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_shy.png",
+        sunset: true,
+        next: "after_dain_trap_2"
+    },
+    "after_dain_trap_2": {
+        name: "다인",
+        text: "\"뭐, 뭐뭐뭐... 무슨 소릴 하는 거야, 이 변태야! 너 진짜 실망이다! 당장 나가! 안 나가면 배구공으로 스파이크 날려버릴 줄 알아!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_home"
     },
     "after_dain_rude": {
         name: "다인",
@@ -1133,8 +1150,21 @@
             { text: "내 이름은 '{name}'야. 너랑 친해지고 싶어.", next: "yuna_name_share", setFlag: "knowsName_유나", stats: { Yuna: { affinity: 5 } } },
             { text: "너에 대해 더 알고 싶어서 왔어.", next: "after_yuna_know", stats: { Yuna: { affinity: 10 } } },
             { text: "이 학교의 비밀... 그게 뭔지 알려줘.", next: "after_yuna_secret", condition: "metYuna", stats: { Yuna: { affinity: 5 } } },
+            { text: "오늘 급식 뭐 나왔는지 알아? 배고프다.", next: "after_yuna_boring", stats: { Yuna: { affinity: -10 } } },
             { text: "여긴 왜 이렇게 음침해? 기분 나빠.", next: "after_yuna_rude", stats: { Yuna: { affinity: -25 } } }
         ]
+    },
+    "after_yuna_boring": {
+        name: "유나",
+        text: "(유나가 한심하다는 듯 한숨을 내쉬며 다시 책으로 시선을 돌린다.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_boring_2"
+    },
+    "after_yuna_boring_2": {
+        name: "유나",
+        text: "\"급식...? 그런 세속적인 이야기는 다른 애들이랑 해. 난 지금 바쁘니까 방해하지 말고 나가줄래?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_home"
     },
     "after_yuna_rude": {
         name: "유나",
