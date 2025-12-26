@@ -149,12 +149,29 @@ function startFreeTalk(scene) {
     // 시스템 프롬프트 설정
     const knowsName = gameState[`knowsName_${scene.name}`];
     
+    // 캐릭터별 기본 성격 설정
+    const defaultPersonalities = isEn ? {
+        "Seoyeon": "Kind and friendly student council president",
+        "Yuna": "Mysterious and quiet girl with a cold atmosphere",
+        "Dain": "Energetic and lively volleyball club ace",
+        "Teacher": "Caring and diligent homeroom teacher",
+        "Nurse": "Provocative and mature school nurse"
+    } : {
+        "서연": "다정하고 친절한 학생회장",
+        "유나": "신비롭고 조용한 분위기의 소녀",
+        "다인": "에너지 넘치고 활기찬 배구부 에이스",
+        "선생님": "학생을 걱정하는 성실한 담임 선생님",
+        "양호선생님": "도발적이고 성숙한 분위기의 양호 선생님"
+    };
+
+    const charPersonality = scene.personality || defaultPersonalities[scene.name] || (isEn ? "A character from the school" : "학교의 캐릭터");
+
     let systemPrompt = "";
     if (isEn) {
         systemPrompt = `You are the character '${scene.name}' from the visual novel game 'Cupid'.
 Current Location: ${locationName}
 Current Situation: ${scene.context || "Talking with the user."}
-Personality: ${scene.personality || "Kind and friendly student council president"}
+Personality: ${charPersonality}
 ${scene.extra_guideline ? `Extra Guideline: ${scene.extra_guideline}` : ""}
 
 Style Guidelines (Targeting Visual Novel Fans):
@@ -179,7 +196,7 @@ Instructions:
         systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
 현재 장소: ${locationName}
 현재 상황: ${scene.context || "사용자와 대화 중입니다."}
-성격: ${scene.personality || "다정하고 친절한 학생회장"}
+성격: ${charPersonality}
 ${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
 
 스타일 지침 (미연시 매니아 타겟):
