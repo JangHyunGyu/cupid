@@ -43,10 +43,10 @@
         name: "서연",
         text: "\"나는 학생회장 '서연'이라고 해. 선생님께 부탁받아서 널 마중 나왔어. 만나서 반가워!\"",
         choices: [
-            { text: "응, 반가워. 학교가 너무 커서 길을 좀 헤매고 있었어.", next: "path_friendly_1" },
-            { text: "학생회장이 직접 마중까지? 내가 좀 특별한 대우를 받는 건가?", next: "path_tease_1" },
-            { text: "너... 정말 예쁘다. (나도 모르게 본심이 튀어나와 버렸다!)", next: "path_blush_1" },
-            { text: "(긴장해서 아무 말도 하지 못한다.)", next: "path_silent_1" }
+            { text: "응, 반가워. 학교가 너무 커서 길을 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "학생회장이 직접 마중까지? 내가 좀 특별한 대우를 받는 건가?", next: "path_tease_1", stats: { Seoyeon: { intimacy: 5 } } },
+            { text: "너... 정말 예쁘다. (나도 모르게 본심이 튀어나와 버렸다!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 10, intimacy: 5 } } },
+            { text: "(긴장해서 아무 말도 하지 못한다.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 2 } } }
         ]
     },
     "path_friendly_1": {
@@ -301,15 +301,15 @@
         text: "\"자, 다들 주목! 오늘부터 우리와 함께하게 된 전학생이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_선생님" },
-            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlag: "personality_active" },
-            { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study", setFlag: "personality_study" }
+            { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_선생님", stats: { Teacher: { affinity: 5 } } },
+            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlag: "personality_active", stats: { Teacher: { affinity: 2 } } },
+            { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlag: "personality_quiet", stats: { Teacher: { affinity: 2 } } },
+            { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -2 } } }
         ]
     },
     "teacher_name_share": {
         name: "선생님",
-        text: "\"오, {name}라고 하는구나. 이름이 참 듬직하네. 자, 그럼 {name}야, 어떤 스타일로 친구들에게 인사하고 싶니?\"",
+        text: "\"오, {name}라고 하는구나. 이름이 참 예쁘네. 자, {name}야. 친구들에게 자기소개 한마디 부탁할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "활발하게 인사한다.", next: "class_after_active", setFlag: "personality_active" },
@@ -614,9 +614,9 @@
         name: "유나",
         text: "(그녀의 보랏빛 눈동자가 나를 꿰뚫어 보는 듯하다.)",
         choices: [
-            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret" },
-            { text: "낯익다니... 나를 본 적 있어?", next: "yuna_scent" },
-            { text: "너, 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger" }
+            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 5 } } },
+            { text: "낯익다니... 나를 본 적 있어?", next: "yuna_scent", stats: { Yuna: { intimacy: 5 } } },
+            { text: "너, 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { intimacy: 10 } } }
         ]
     },
     "yuna_secret": {
@@ -694,9 +694,9 @@
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         choices: [
-            { text: "내 이름은 '{name}'야.", next: "dain_name_share", setFlag: "knowsName_다인" },
-            { text: "운동은 별로 자신 없는데...", next: "lunch_dain_4" },
-            { text: "좋아, 누가 더 잘하는지 보자고!", next: "lunch_dain_4" }
+            { text: "내 이름은 '{name}'야.", next: "dain_name_share", setFlag: "knowsName_다인", stats: { Dain: { affinity: 5 } } },
+            { text: "운동은 별로 자신 없는데...", next: "lunch_dain_4", stats: { Dain: { affinity: 2 } } },
+            { text: "좋아, 누가 더 잘하는지 보자고!", next: "lunch_dain_4", stats: { Dain: { intimacy: 5 } } }
         ]
     },
     "dain_name_share": {
@@ -1909,8 +1909,8 @@
         character: "assets/images/characters/nurse.png",
         sunset: true,
         choices: [
-            { text: "제 이름은 '{name}'예요.", next: "nurse_name_share", setFlag: "knowsName_양호선생님" },
-            { text: "그냥 전학생이라고 불러주세요.", next: "day2_afternoon" }
+            { text: "제 이름은 '{name}'예요.", next: "nurse_name_share", setFlag: "knowsName_양호선생님", stats: { Nurse: { affinity: 5 } } },
+            { text: "그냥 전학생이라고 불러주세요.", next: "day2_afternoon", stats: { Nurse: { affinity: -2 } } }
         ]
     },
     "nurse_name_share": {

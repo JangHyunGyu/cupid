@@ -2,7 +2,14 @@ const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
 let currentSceneId = "start";
 let isTyping = false;
 let gameState = {
-    playerName: "주인공" // 기본 이름
+    playerName: "주인공", // 기본 이름
+    stats: {
+        Seoyeon: { affinity: 0, intimacy: 0 },
+        Yuna: { affinity: 0, intimacy: 0 },
+        Dain: { affinity: 0, intimacy: 0 },
+        Teacher: { affinity: 0, intimacy: 0 },
+        Nurse: { affinity: 0, intimacy: 0 }
+    }
 };
 
 // 프리토킹 관련 변수
@@ -150,6 +157,14 @@ function startFreeTalk(scene) {
     // 시스템 프롬프트 설정
     const knowsName = gameState[`knowsName_${scene.name}`];
     
+    // 캐릭터 스탯 가져오기 (한글 이름 대응)
+    const charNameMap = {
+        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "선생님": "Teacher", "양호선생님": "Nurse",
+        "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
+    };
+    const charKey = charNameMap[scene.name] || scene.name;
+    const charStats = gameState.stats[charKey] || { affinity: 0, intimacy: 0 };
+
     // 캐릭터별 기본 성격 설정
     const defaultPersonalities = isEn ? {
         "Seoyeon": "The perfect student council president who is kind to everyone, but secretly has a lonely side and becomes very shy and 'Megadere' when alone with the protagonist. She values rules but sometimes wants to break them for the protagonist.",
@@ -173,6 +188,7 @@ function startFreeTalk(scene) {
 Current Location: ${locationName}
 Current Situation: ${scene.context || "Talking with the user."}
 Personality: ${charPersonality}
+Hidden Stats: Affinity ${charStats.affinity}, Intimacy ${charStats.intimacy} (Higher values mean more favorable and closer relationship)
 ${scene.extra_guideline ? `Extra Guideline: ${scene.extra_guideline}` : ""}
 
 Style Guidelines (Targeting Visual Novel Fans):
@@ -197,8 +213,7 @@ Instructions:
         systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
 현재 장소: ${locationName}
 현재 상황: ${scene.context || "사용자와 대화 중입니다."}
-성격: ${charPersonality}
-${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
+성격: ${charPersonality}히든 스탯: 호감도 ${charStats.affinity}, 친밀도 ${charStats.intimacy} (수치가 높을수록 당신은 사용자에게 더 호의적이고 가깝게 느낍니다)${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
 
 스타일 지침 (미연시 매니아 타겟):
 1. 미연시 매니아들이 설렐만한 감성적이고 로맨틱한 표현을 적극적으로 사용하세요.
@@ -383,10 +398,20 @@ function checkChoices() {
                 // 플래그 설정
                 if (choice.setFlag) {
                     gameState[choice.setFlag] = true;
-                }                if (choice.setFlags && Array.isArray(choice.setFlags)) {
+                }
+                if (choice.setFlags && Array.isArray(choice.setFlags)) {
                     choice.setFlags.forEach(flag => {
                         gameState[flag] = true;
                     });
+                }
+                // 스탯 업데이트 (affinity, intimacy)
+                if (choice.stats) {
+                    for (const [char, stats] of Object.entries(choice.stats)) {
+                        if (gameState.stats[char]) {
+                            if (stats.affinity) gameState.stats[char].affinity += stats.affinity;
+                            if (stats.intimacy) gameState.stats[char].intimacy += stats.intimacy;
+                        }
+                    }
                 }
                 if (choice.next === 'index.html') {
                     location.href = 'index.html';

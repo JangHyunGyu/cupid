@@ -43,10 +43,10 @@ const SCENARIO = {
         name: "Seoyeon",
         text: "\"I'm the student council president, Seoyeon. I came to meet you at the teacher's request. Nice to meet you!\"",
         choices: [
-            { text: "Yeah, nice to meet you. The school is so big that I was getting a bit lost.", next: "path_friendly_1" },
-            { text: "The student council president herself came to meet me? Am I getting some special treatment?", next: "path_tease_1" },
-            { text: "You... are really pretty. (The truth slipped out without me realizing!)", next: "path_blush_1" },
-            { text: "(I'm too nervous to speak. I just stare at her blankly...)", next: "path_silent_1" }
+            { text: "Yeah, nice to meet you. The school is so big that I was getting a bit lost.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "The student council president herself came to meet me? Am I getting some special treatment?", next: "path_tease_1", stats: { Seoyeon: { intimacy: 5 } } },
+            { text: "You... are really pretty. (The truth slipped out without me realizing!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 10, intimacy: 5 } } },
+            { text: "(I'm too nervous to speak. I just stare at her blankly...)", next: "path_silent_1", stats: { Seoyeon: { affinity: 2 } } }
         ]
     },
     "path_friendly_1": {
@@ -292,15 +292,15 @@ const SCENARIO = {
         text: "\"Now, everyone pay attention! This is the transfer student who will be joining us from today. Everyone, get along well. Now, shall we have a word of self-introduction?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher" },
-            { text: "Hi! I like exercising and have an active personality!", next: "class_after_active", setFlag: "personality_active" },
-            { text: "Nice to meet you. I tend to like reading books quietly.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "I came here to study. I hate being disturbed.", next: "class_after_study", setFlag: "personality_study" }
+            { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 5 } } },
+            { text: "Hi! I like exercising and have an active personality!", next: "class_after_active", setFlag: "personality_active", stats: { Teacher: { affinity: 2 } } },
+            { text: "Nice to meet you. I tend to like reading books quietly.", next: "class_after_quiet", setFlag: "personality_quiet", stats: { Teacher: { affinity: 2 } } },
+            { text: "I came here to study. I hate being disturbed.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -2 } } }
         ]
     },
     "teacher_name_share": {
         name: "Teacher",
-        text: "\"Oh, so your name is {name}. It's a very reliable name. Now, {name}, what kind of style would you like to introduce yourself to your friends?\"",
+        text: "\"Oh, so your name is {name}. What a lovely name. Now, {name}, why don't you introduce yourself to the class?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "Introduce actively.", next: "class_after_active", setFlag: "personality_active" },
@@ -573,9 +573,9 @@ const SCENARIO = {
         text: "\"This school... is different from how it looks. I feel a familiar atmosphere from you.\"",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
-            { text: "The school is different? What does that mean?", next: "yuna_secret" },
-            { text: "Familiar... have you seen me before?", next: "yuna_scent" },
-            { text: "You look somehow dangerous. But I can't take my eyes off you.", next: "yuna_danger" }
+            { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 5 } } },
+            { text: "Familiar... have you seen me before?", next: "yuna_scent", stats: { Yuna: { intimacy: 5 } } },
+            { text: "You look somehow dangerous. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { intimacy: 10 } } }
         ]
     },
     "yuna_secret": {
@@ -654,9 +654,9 @@ const SCENARIO = {
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         choices: [
-            { text: "My name is '{name}'.", next: "dain_name_share", setFlag: "knowsName_Dain" },
-            { text: "I'm not that good at exercise...", next: "lunch_dain_4" },
-            { text: "Okay, let's see who's better!", next: "lunch_dain_4" }
+            { text: "My name is '{name}'.", next: "dain_name_share", setFlag: "knowsName_Dain", stats: { Dain: { affinity: 5 } } },
+            { text: "I'm not that good at exercise...", next: "lunch_dain_4", stats: { Dain: { affinity: 2 } } },
+            { text: "Okay, let's see who's better!", next: "lunch_dain_4", stats: { Dain: { intimacy: 5 } } }
         ]
     },
     "dain_name_share": {
@@ -1753,8 +1753,8 @@ const SCENARIO = {
         character: "assets/images/characters/nurse.png",
         sunset: true,
         choices: [
-            { text: "My name is '{name}'.", next: "nurse_name_share", setFlag: "knowsName_Nurse" },
-            { text: "Just call me 'Transfer Student'.", next: "day2_afternoon" }
+            { text: "My name is '{name}'.", next: "nurse_name_share", setFlag: "knowsName_Nurse", stats: { Nurse: { affinity: 5 } } },
+            { text: "Just call me 'Transfer Student'.", next: "day2_afternoon", stats: { Nurse: { affinity: -2 } } }
         ]
     },
     "nurse_name_share": {
