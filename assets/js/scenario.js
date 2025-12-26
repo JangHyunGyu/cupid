@@ -24,7 +24,7 @@
     },
     "start_4": {
         name: "???",
-        text: "\"안녕? 처음 보는 얼굴이네. 이 시간에 교문 앞에 멍하니 서 있는 걸 보니... 혹시 오늘 온다는 그 전학생이니?\"",
+        text: "\"안녕? 처음 보는 얼굴이네. 이 시간에 교문 앞에 멍하니 서 있는 걸 보니... 혹시 오늘 온다는 그 {name?}이니?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "intro_1"
     },
@@ -80,7 +80,7 @@
     },
     "path_tease_1_2": {
         name: "서연",
-        text: "\"어머, 자신감이 넘치는 전학생이네? 특별 대우라기보다는... 학생회장으로서의 책임감이랄까? 하지만 네가 그렇게 생각한다면, 오늘 하루는 특별히 신경 써줄게!\"",
+        text: "\"어머, 자신감이 넘치는 {name?}이네? 특별 대우라기보다는... 학생회장으로서의 책임감이랄까? 하지만 네가 그렇게 생각한다면, 오늘 하루는 특별히 신경 써줄게!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1"
     },
@@ -92,7 +92,7 @@
     },
     "path_blush_1_2": {
         name: "서연",
-        text: "\"에...? 그, 갑자기 무슨 소리를 하는 거야! 전학생은 다 너처럼 이렇게... 능글맞니? 어서 따라오기나 해! 늦으면 담임선생님께 혼난다구!\"",
+        text: "\"에...? 그, 갑자기 무슨 소리를 하는 거야! {name?}은 다 너처럼 이렇게... 능글맞니? 어서 따라오기나 해! 늦으면 담임선생님께 혼난다구!\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },
@@ -117,7 +117,7 @@
     },
     "hallway_name_ask": {
         name: "서연",
-        text: "(서연이가 갑자기 멈춰 서더니 나를 돌아본다.) \"아, 그러고 보니 내 소개만 하고 네 이름은 아직 못 들었네! 전학생 군, 이름이 뭐야?\"",
+        text: "(서연이가 갑자기 멈춰 서더니 나를 돌아본다.) \"아, 그러고 보니 내 소개만 하고 네 이름은 아직 못 들었네! {name?}, 이름이 뭐야?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "내 이름은 '{name}'야. 잘 부탁해.", next: "hallway_name_share", setFlag: "knowsName_서연" },
@@ -133,13 +133,13 @@
     },
     "hallway_name_share": {
         name: "서연",
-        text: "\"{name}... 후훗, 좋은 이름이다! 그럼 이제부터 {name}라고 부를게. 잘 부탁해, {name}야!\"",
+        text: "\"{name}... 후훗, 좋은 이름이다! 그럼 이제부터 {name}이라고 부를게. 잘 부탁해, {name}!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_1_2"
     },
     "hallway_name_keep": {
         name: "서연",
-        text: "\"에이, 싱겁긴! 알았어. 네가 원한다면 당분간은 전학생 군이라고 부를게. 하지만 나중에 마음 바뀌면 꼭 알려줘야 해?\"",
+        text: "\"에이, 싱겁긴! 알았어. 네가 원한다면 당분간은 {name?}이라고 부를게. 하지만 나중에 마음 바뀌면 꼭 알려줘야 해?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1_2"
     },
@@ -334,7 +334,7 @@
     },
     "classroom_2_3": {
         name: "담임선생님",
-        text: "\"자, 다들 주목! 오늘부터 우리와 함께하게 된 전학생이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
+        text: "\"자, 다들 주목! 오늘부터 우리와 함께하게 된 {name?}이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_담임선생님", stats: { Teacher: { affinity: 5 } } },
@@ -345,7 +345,7 @@
     },
     "teacher_name_share": {
         name: "담임선생님",
-        text: "\"오, {name}라고 하는구나. 이름이 참 예쁘네. 자, {name}야. 친구들에게 자기소개 한마디 부탁할까?\"",
+        text: "\"오, {name}이라고 하는구나. 이름이 참 예쁘네. 자, {name}. 친구들에게 자기소개 한마디 부탁할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "활발하게 인사한다.", next: "class_after_active", setFlag: "personality_active" },
@@ -367,7 +367,7 @@
     },
     "class_after_active_3": {
         name: "아이들",
-        text: "\"오~ 운동 좀 하나 본데? 점심시간에 배구 한 판 고? 전학생 실력 좀 보자구!\"",
+        text: "\"오~ 운동 좀 하나 본데? 점심시간에 배구 한 판 고? {name?} 실력 좀 보자구!\"",
         character: null,
         next: "lunch_time"
     },
@@ -403,7 +403,7 @@
     },
     "class_after_party_3": {
         name: "아이들",
-        text: "\"와! 전학생 성격 진짜 대박! 좋아, 오늘 떡볶이는 내가 쏜다! 노래방까지 풀코스로 가자!\"",
+        text: "\"와! {name?} 성격 진짜 대박! 좋아, 오늘 떡볶이는 내가 쏜다! 노래방까지 풀코스로 가자!\"",
         character: null,
         next: "lunch_time"
     },
@@ -648,7 +648,7 @@
     },
     "alone_2_2": {
         name: "???",
-        text: "\"...길을 잃었어? 여긴 학생들이 잘 안 오는 곳인데. 용케 찾았네, 전학생.\"",
+        text: "\"...길을 잃었어? 여긴 학생들이 잘 안 오는 곳인데. 용케 찾았네, {name?}.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "yuna_intro"
     },
@@ -751,7 +751,7 @@
     },
     "lunch_dain_3": {
         name: "???",
-        text: "\"어이, 전학생! 거기서 구경만 하지 말고 이리 와서 한 판 붙자! 너, 운동 좀 하게 생겼는데?\"",
+        text: "\"어이, {name?}! 거기서 구경만 하지 말고 이리 와서 한 판 붙자! 너, 운동 좀 하게 생겼는데?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         choices: [
@@ -1790,7 +1790,7 @@
     },
     "day2_lunch_volleyball_new_2": {
         name: "???",
-        text: "\"어이, 거기 전학생! 멍하니 서 있지 말고 이리 와서 같이 한 게임 어때? 난 배구부 다인이야!\"",
+        text: "\"어이, 거기 {name?}! 멍하니 서 있지 말고 이리 와서 같이 한 게임 어때? 난 배구부 다인이야!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
@@ -2073,7 +2073,7 @@
     },
     "day2_lunch_nurse_2": {
         name: "양호선생님",
-        text: "\"어머, 귀여운 전학생이네? 어디가 아픈 걸까, 아니면 내 얼굴을 봐서 설레는 걸까?\"",
+        text: "\"어머, 귀여운 {name?}이네? 어디가 아픈 걸까, 아니면 내 얼굴을 봐서 설레는 걸까?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 5 } },
@@ -2680,7 +2680,7 @@
     },
     "day2_final_dain_2": {
         name: "다인",
-        text: "\"어이! 전학생! 기다리고 있었다구! 오늘 떡볶이 먹으러 가기로 한 거 안 잊었지?\"",
+        text: "\"어이! {name?}! 기다리고 있었다구! 오늘 떡볶이 먹으러 가기로 한 거 안 잊었지?\"",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "day2_final_dain_3"

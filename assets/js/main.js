@@ -817,15 +817,21 @@ ${charAddressingGuideline}${datingGuideline}
 
 function typeText(text, charName) {
     const isEn = document.documentElement.lang === 'en';
+    
+    // 한국어일 경우 이름 뒤에 항상 '군'을 붙임
+    let nameWithGun = gameState.playerName;
+    if (!isEn && nameWithGun) {
+        nameWithGun += " 군";
+    }
+
     // 이름 치환
-    let processedText = text.replace(/{name}/g, gameState.playerName);
+    let processedText = text.replace(/{name}/g, nameWithGun);
     
     // {name?} 처리: 이름을 알면 이름, 모르면 '전학생'
     const nameKnown = charName && gameState[`knowsName_${charName}`];
     const defaultTitle = isEn ? "Transfer Student" : "전학생";
     let nameToUse = nameKnown ? gameState.playerName : defaultTitle;
     
-    // 한국어일 경우 이름 뒤에 항상 '군'을 붙임
     if (!isEn) {
         nameToUse += " 군";
     }
