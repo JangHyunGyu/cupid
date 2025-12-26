@@ -1,19 +1,19 @@
 const SCENARIO = {
     "start": {
         name: "Me",
-        text: "(In front of the school gate where the warm spring sunlight shines down. The excitement and tension of the first day of transfer swirl in my heart.)",
+        text: "(In front of the school gate. I feel the excitement and tension of the first day.)",
         background: "assets/images/background/school.png",
         character: null,
         next: "start_2"
     },
     "start_2": {
         name: "Me",
-        text: "(The scratchy feel of the unfamiliar school uniform, the strangeness of the unfamiliar scenery... everything feels so new.)",
+        text: "(The unfamiliar school uniform and scenery... everything feels new.)",
         next: "start_3"
     },
     "start_3": {
         name: "Me",
-        text: "(My heartbeat sounds so loud it rings in my ears. I take a deep breath and take a step toward the school gate.)",
+        text: "(My heart is racing. I take a deep breath and step toward the school gate.)",
         next: "name_input_scene"
     },
     "name_input_scene": {
@@ -30,13 +30,13 @@ const SCENARIO = {
     },
     "intro_1": {
         name: "Me",
-        text: "(She smiles brightly and takes a step closer. A faint scent of lavender tickles the tip of my nose from her long hair swaying slightly in the wind.)",
+        text: "(She smiles and approaches. A faint scent of lavender drifts from her hair.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "intro_2"
     },
     "intro_2": {
         name: "Me",
-        text: "(As her clear eyes stare straight at me, my heart rate speeds up uncontrollably. It feels as if time has stopped.)",
+        text: "(As she looks at me, my heart starts to race.)",
         next: "intro_3"
     },
     "intro_3": {
@@ -51,55 +51,55 @@ const SCENARIO = {
     },
     "path_friendly_1": {
         name: "Seoyeon",
-        text: "(At my answer, she smiles as brightly as a flower blooming, looking relieved. The tension that had frozen me seems to melt away at that smile. Her smile is as warm as the spring sunlight. She lightly pulls on my bag strap and leads the way.)",
+        text: "(She smiles, looking relieved. She lightly pulls on my bag strap and leads the way.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_friendly_1_2"
     },
     "path_friendly_1_2": {
         name: "Seoyeon",
-        text: "\"Hehe, I thought so. Our school can be a bit complicated when you first come, right? I'll guide you perfectly to the faculty office. Just trust me and follow!\"",
+        text: "\"Hehe, I thought so. Our school can be a bit complicated at first, right? I'll guide you to the faculty office. Just follow me!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1"
     },
     "path_tease_1": {
         name: "Seoyeon",
-        text: "(She narrows her eyes slightly and answers playfully. But a pleasant smile still hangs on her lips. A playful light twinkles in her eyes. She puts her index finger to her lips and winks.)",
+        text: "(She narrows her eyes and answers playfully. She winks with a smile.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "path_tease_1_2"
     },
     "path_tease_1_2": {
         name: "Seoyeon",
-        text: "\"Oh my, what a confident transfer student! Rather than special treatment... shall we call it a sense of responsibility as the student council president? But if you think so, I'll pay special attention to you today!\"",
+        text: "\"Oh my, what a confident transfer student! I'll pay special attention to you today!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1"
     },
     "path_blush_1": {
         name: "Seoyeon",
-        text: "(Seoyeon's face instantly turns as red as a ripe apple. Seeing her avoid my gaze and fiddle with her hair in embarrassment is very fresh and cute. I can see her fingertips trembling slightly. She clears her throat and quickly turns around.)",
+        text: "(Seoyeon's face turns red. She avoids my gaze and fiddles with her hair in embarrassment.)",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "path_blush_1_2"
     },
     "path_blush_1_2": {
         name: "Seoyeon",
-        text: "\"Eh...? Wh-what are you saying all of a sudden! Are all transfer students as... sly as you? Just follow me! You'll get in trouble with the teacher if you're late!\"",
+        text: "\"Eh...? Wh-what are you saying all of a sudden! Just follow me! You'll be late!\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },
     "path_silent_1": {
         name: "Seoyeon",
-        text: "(She waves her hand in front of my eyes. As her worried gaze turns toward me, a protective instinct is triggered for some reason. My reflection in her clear eyes looks very foolish. She places her hand on my forehead to check for a fever.)",
+        text: "(She waves her hand in front of my eyes and checks my forehead for a fever.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "path_silent_1_2"
     },
     "path_silent_1_2": {
         name: "Seoyeon",
-        text: "\"Um... are you okay? You're not sick, are you? Your face looks a bit red... It's better to go to the faculty office first rather than the nurse's office. Should I support you?\"",
+        text: "\"Um... are you okay? Your face is a bit red. Let's go to the faculty office first.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1"
     },
     "hallway_1": {
         name: "Seoyeon",
-        text: "(I walk down the hallway following Seoyeon. Beyond the hallway windows, the lively voices of students and the sound of whistles from the playground blend together.)",
+        text: "(I follow Seoyeon down the hallway. I can hear students' voices from the playground.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_back.png",
         next: "hallway_name_ask"
@@ -127,13 +127,13 @@ const SCENARIO = {
     },
     "hallway_1_2": {
         name: "Seoyeon",
-        text: "(Looking at her back, the excitement doesn't seem to fade. Her gait is light and elegant. The hallway is filled with a faint smell of wax and the heat of the children.)",
+        text: "(Looking at her back, the excitement doesn't fade. The hallway is filled with the heat of the students.)",
         character: "assets/images/characters/seyoun_back.png",
         next: "hallway_1_3"
     },
     "hallway_1_3": {
         name: "Seoyeon",
-        text: "\"I'll give you a brief explanation of the school facilities as we pass through the hallway. That place you see over there is our school's pride, the library. And over there is...\"",
+        text: "\"I'll explain the school facilities as we go. Over there is the library, and over there is...\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club" },
@@ -143,49 +143,49 @@ const SCENARIO = {
     },
     "hallway_talk_club": {
         name: "Seoyeon",
-        text: "(She turns her head toward me as if she's glad. Her eyes sparkle, showing her passion. She speaks proudly, placing her hand on her chest.)",
+        text: "(She turns toward me, her eyes sparkling with passion.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_talk_club_2"
     },
     "hallway_talk_club_2": {
         name: "Seoyeon",
-        text: "\"Yes! I'm active in the student council, but I'm actually also part of the gardening club. I like taking care of flowers. Touching the soil makes me feel at peace. Come visit our greenhouse later if you have time!\"",
+        text: "\"Yes! I'm in the student council and the gardening club. I like taking care of flowers. Come visit our greenhouse later!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
     "hallway_talk_flatter": {
         name: "Seoyeon",
-        text: "(She clears her throat shyly and answers. But she doesn't seem to be in a bad mood. A faint blush brushes her cheeks. She grips her bag strap tightly as if embarrassed.)",
+        text: "(She clears her throat shyly. A faint blush brushes her cheeks.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "hallway_talk_flatter_2"
     },
     "hallway_talk_flatter_2": {
         name: "Seoyeon",
-        text: "\"Really... you speak so beautifully. Actually, I'm always tense because of my position as the student council president, but I feel at ease when I'm with you. I might even want to act like a spoiled child without realizing it... Hehe, just kidding.\"",
+        text: "\"Really... you speak so beautifully. I feel at ease when I'm with you. I might even want to act like a spoiled child... Hehe, just kidding.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "hallway_2"
     },
     "hallway_talk_listen": {
         name: "Seoyeon",
-        text: "(She seems to like my serious attitude and continues her explanation even more passionately. Her voice is clear and beautiful, making me feel good just by listening. She speaks excitedly, pointing here and there with her finger.)",
+        text: "(She seems to like my attitude and continues her explanation passionately.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_talk_listen_2"
     },
     "hallway_talk_listen_2": {
         name: "Seoyeon",
-        text: "\"Thank you so much for listening to my explanation so well. You seem like a very sincere person! With this attitude, you'll adapt to school life in no time.\"",
+        text: "\"Thank you for listening so well. You seem like a very sincere person! You'll adapt in no time.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
     "hallway_2": {
         name: "Seoyeon",
-        text: "(She suddenly stops and turns to look at me. I swallowed hard at her serious yet expectant gaze.)",
+        text: "(She suddenly stops and turns to look at me with an expectant gaze.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2_2"
     },
     "hallway_2_2": {
         name: "Seoyeon",
-        text: "(The noise of the hallway fades away, and a silence flows as if only the two of us are left. Her eyes stare intently into mine.)",
+        text: "(A silence flows as if only the two of us are left. Her eyes stare into mine.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2_3"
     },
@@ -202,69 +202,69 @@ const SCENARIO = {
     },
     "path_flirt_2": {
         name: "Seoyeon",
-        text: "(Seoyeon's face turns red once again. While avoiding my gaze in embarrassment, a small smile spreads across her lips. Her fingers fiddle with the hem of her school uniform skirt. She taps the floor with her toes shyly.)",
+        text: "(Seoyeon's face turns red. She avoids my gaze with a small smile.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "path_flirt_2_2"
     },
     "path_flirt_2_2": {
         name: "Seoyeon",
-        text: "\"E-every day... there's so much work! But if you join... I might be a little happy too. I'll be looking forward to it, okay?\"",
+        text: "\"E-every day... there's so much work! But if you join... I might be a little happy too. I'll be looking forward to it.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "classroom_1_1"
     },
     "path_club_flower": {
         name: "Seoyeon",
-        text: "(She playfully hits my shoulder. It feels like the distance between us has gotten closer. I can feel a pleasant warmth from her touch. She looks up at me with a playful expression.)",
+        text: "(She playfully hits my shoulder. It feels like we've gotten closer.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "path_club_flower_2"
     },
     "path_club_flower_2": {
         name: "Seoyeon",
-        text: "\"Hmph... are you really a player? I was worried because the gardening club has few members, but it'll get noisy if someone like you joins. You have to come, okay? It's a promise!\"",
+        text: "\"Hmph... are you a player? The gardening club will get noisy if you join. You have to come, okay? It's a promise!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_1_1"
     },
     "path_normal_2": {
         name: "Seoyeon",
-        text: "(She nods and starts leading the way again. I feel a bit disappointed.)",
+        text: "(She nods and leads the way again.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_back.png",
         next: "classroom_1_1"
     },
     "path_direct_2": {
         name: "Seoyeon",
-        text: "(She stares at me blankly, then bursts into a clear laugh. That laughter rings through the hallway like the sound of silver bells. A small tear in the corner of her eye sparkles in the sunlight. She laughs for a long time, holding her stomach.)",
+        text: "(She stares at me blankly, then bursts into a clear laugh.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_direct_2_2"
     },
     "path_direct_2_2": {
         name: "Seoyeon",
-        text: "\"Hehe, you're really honest, aren't you? About me... well, I might tell you or I might not, depending on how you do in the future. I'll be looking forward to it!\"",
+        text: "\"Hehe, you're honest. About me... well, I might tell you depending on how you do. I'll be looking forward to it!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "classroom_1_1"
     },
     "classroom_1_1": {
         name: "Seoyeon",
-        text: "(We arrived in front of the classroom door. I can hear the murmuring and laughter of the children inside. Seoyeon lightly taps my shoulder to cheer me on.)",
+        text: "(We arrived at the classroom. I can hear the children inside. Seoyeon taps my shoulder to cheer me on.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_1_2"
     },
     "classroom_1_2": {
         name: "Seoyeon",
-        text: "(The place where her touch reached feels hot. She looks into my eyes and gives a small 'fighting' cheer.)",
+        text: "(The place she touched feels hot. She looks into my eyes and gives a small cheer.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_1_3"
     },
     "classroom_1_3": {
         name: "Seoyeon",
-        text: "\"Now, this is Class 2-3 where you'll be staying. Don't be nervous. I'm right here, so just do as you usually do. Got it?\"",
+        text: "\"This is Class 2-3. Don't be nervous. I'm right here, so just be yourself. Got it?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_2"
     },
     "classroom_2": {
         name: "Teacher",
-        text: "(As I stand in front of the podium, dozens of gazes are fixed on me all at once. Curious eyes, wary eyes... Seoyeon is standing beside me, watching over me with a reassuring smile.)",
+        text: "(As I stand at the podium, dozens of gazes are fixed on me. Seoyeon stands beside me with a reassuring smile.)",
         background: "assets/images/background/room_school.png",
         characters: {
             left: "assets/images/characters/teacher.png",
@@ -310,7 +310,7 @@ const SCENARIO = {
     },
     "class_after_active": {
         name: "Kids",
-        text: "(Cheers burst out from all over the classroom. Especially the boys sitting in the back seats have their eyes sparkling. Seoyeon also gives a satisfied smile and applauds.)",
+        text: "(Cheers burst out. The boys in the back look excited. Seoyeon smiles and applauds.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_2"
     },
@@ -322,74 +322,74 @@ const SCENARIO = {
     },
     "class_after_active_3": {
         name: "Kids",
-        text: "\"Oh~ you look like you can exercise? How about a game of volleyball during lunch? Let's see the transfer student's skills!\"",
+        text: "\"Oh~ you look like you can exercise? How about a game of volleyball during lunch?\"",
         character: null,
         next: "lunch_time"
     },
     "class_after_quiet": {
         name: "Kids",
-        text: "(The kids nod and accept me calmly. A few girls whisper and look at me.)",
+        text: "(The kids nod and accept me calmly. A few girls whisper while looking at me.)",
         character: null,
         next: "class_after_quiet_2"
     },
     "class_after_quiet_2": {
         name: "Kids",
-        text: "(Seoyeon nods as if she likes my serious appearance. The classroom atmosphere becomes much calmer.)",
+        text: "(Seoyeon nods, liking my serious appearance. The classroom becomes calmer.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "class_after_quiet_3"
     },
     "class_after_quiet_3": {
         name: "Kids",
-        text: "\"Wow, somehow there's an atmosphere... Can I say hi if we run into each other in the library later?\"",
+        text: "\"Wow, there's an atmosphere... Can I say hi if we meet in the library later?\"",
         character: null,
         next: "lunch_time"
     },
     "class_after_party": {
         name: "Kids",
-        text: "(The classroom instantly becomes as noisy as a marketplace. Kids are already flocking around me.)",
+        text: "(The classroom instantly becomes noisy. Kids flock around me.)",
         character: null,
         next: "class_after_party_2"
     },
     "class_after_party_2": {
         name: "Kids",
-        text: "(Seoyeon seems a bit flustered but soon bursts into laughter. The kids are already busy deciding on the menu.)",
+        text: "(Seoyeon is flustered but soon bursts into laughter. The kids are busy deciding on the menu.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_party_3"
     },
     "class_after_party_3": {
         name: "Kids",
-        text: "\"Wow! The transfer student's personality is really awesome! Okay, today's tteokbokki is on me! Let's go for a full course including karaoke!\"",
+        text: "\"Wow! Your personality is awesome! Today's tteokbokki is on me! Let's go to karaoke!\"",
         character: null,
         next: "lunch_time"
     },
     "class_after_study": {
         name: "Kids",
-        text: "(A cold silence flows through the classroom. The kids seem a bit flustered and whisper while looking at each other.)",
+        text: "(A cold silence flows. The kids seem flustered and whisper among themselves.)",
         character: null,
         next: "class_after_study_2"
     },
     "class_after_study_2": {
         name: "Kids",
-        text: "(Seoyeon's expression also hardens a bit. For some reason, it feels like a wall has been built. The kids become quiet while watching my reaction.)",
+        text: "(Seoyeon's expression hardens. It feels like a wall has been built.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "class_after_study_3"
     },
     "class_after_study_3": {
         name: "Kids",
-        text: "\"Wow... no joke. Is he a total bookworm? It looks like it'll be big trouble if we touch him...\"",
+        text: "\"Wow... no joke. Is he a total bookworm? It looks like trouble if we touch him...\"",
         character: null,
         next: "lunch_time"
     },
     "lunch_time": {
         name: "Me",
-        text: "(The morning classes passed by in a blur, and finally, the long-awaited lunch bell rang. The kids rush toward the cafeteria.)",
+        text: "(Morning classes passed in a blur. The lunch bell rings and kids rush to the cafeteria.)",
         background: "assets/images/background/room_school.png",
         character: null,
         next: "lunch_time_2"
     },
     "lunch_time_2": {
         name: "Me",
-        text: "(What should I do? Through the window, I can already see kids running around kicking a soccer ball on the playground. My stomach clock is ringing loudly.)",
+        text: "(What should I do? I can see kids playing on the playground. I'm hungry.)",
         choices: [
             { text: "Approach Seoyeon and suggest having lunch together.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "Look around the school alone and find a quiet place to eat.", next: "lunch_alone", setFlag: "metYuna" },
@@ -400,39 +400,39 @@ const SCENARIO = {
     },
     "lunch_seoyeon": {
         name: "Seoyeon",
-        text: "(As I approach Seoyeon, she takes out a pretty checkered lunch box from her bag as if she had been waiting. Her eyes sparkle as she welcomes me.)",
+        text: "(As I approach, she takes out a lunch box as if she had been waiting.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "lunch_seoyeon_2"
     },
     "lunch_seoyeon_2": {
         name: "Seoyeon",
-        text: "\"I was just about to look for you. We have a secret place on the rooftop, want to eat there together?\"",
+        text: "\"I was just about to look for you. Want to eat at our secret place on the rooftop?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1"
     },
     "rooftop_1": {
         name: "Seoyeon",
-        text: "(The school rooftop where a cool breeze blows pleasantly. Seoyeon unfolds a three-tier lunch box she carefully packed. The colorful side dishes look really delicious.)",
+        text: "(The school rooftop with a pleasant breeze. Seoyeon unfolds a three-tier lunch box.)",
         background: "assets/images/background/top_school.png",
         next: "rooftop_1_2"
     },
     "rooftop_1_2": {
         name: "Seoyeon",
-        text: "(A savory smell tickles the tip of my nose. She hands me chopsticks and smiles shyly.)",
+        text: "(A savory smell drifts from the food. She hands me chopsticks and smiles shyly.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_2_2"
     },
     "rooftop_1_2_2": {
         name: "Seoyeon",
-        text: "\"Here, I made this by waking up early this morning. I don't know if it'll suit your taste...\"",
+        text: "\"I made this this morning. I hope it suits your taste...\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_3"
     },
     "rooftop_1_3": {
         name: "Seoyeon",
-        text: "\"Especially this octopus-shaped sausage is my masterpiece! Want to try one?\"",
+        text: "\"This octopus-shaped sausage is my masterpiece! Want to try one?\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
@@ -443,49 +443,49 @@ const SCENARIO = {
     },
     "rooftop_talk_food": {
         name: "Seoyeon",
-        text: "(She blushes happily and answers. Her eyes are full of happiness. She feels proud seeing me eat the food she made with gusto.)",
+        text: "(She blushes happily. She looks proud seeing me eat with gusto.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_talk_food_2"
     },
     "rooftop_talk_food_2": {
         name: "Seoyeon",
-        text: "\"Really? I'm glad! Actually, I was worried if you'd like it, so I even lost sleep thinking about the menu yesterday. Eat a lot, there's still plenty left!\"",
+        text: "\"Really? I'm glad! I was worried about the menu yesterday. Eat a lot!\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_2"
     },
     "rooftop_talk_ah": {
         name: "Seoyeon",
-        text: "(Seoyeon's face turns red as if it's about to explode. Her hand holding the chopsticks trembles. Her breathing becomes a bit rough. She looks around and carefully picks up a sausage and brings it to my mouth.)",
+        text: "(Seoyeon's face turns red. She carefully picks up a sausage and brings it to my mouth.)",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "rooftop_talk_ah_2"
     },
     "rooftop_talk_ah_2": {
         name: "Seoyeon",
-        text: "\"Wh-wh-what?! You really... say such things so casually... Haa, I really can't with you. Fine, just this once! Say... Ah...\"",
+        text: "\"Wh-what?! You say such things so casually... Fine, just this once! Say... Ah...\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "rooftop_2"
     },
     "rooftop_talk_thanks": {
         name: "Seoyeon",
-        text: "(She gives a soft smile and stares intently into my eyes. I can feel her sincere affection in her gaze. She lightly wipes the sauce from the corner of my mouth with her finger.)",
+        text: "(She smiles and stares into my eyes. She wipes the sauce from my mouth with her finger.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_talk_thanks_2"
     },
     "rooftop_talk_thanks_2": {
         name: "Seoyeon",
-        text: "\"Thank you for what... I'm the one who's thankful for you eating with me. It seems much more delicious than eating alone. Will you eat with me like this often in the future?\"",
+        text: "\"I'm the one who's thankful. It's better than eating alone. Will you eat with me often?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_2"
     },
     "rooftop_2": {
         name: "Seoyeon",
-        text: "(After finishing the meal, we sit side by side and look at the distant sky. A peaceful afternoon moment... Seoyeon carefully opens her mouth. Her voice is a bit lower and more serious than usual. She lightly leans her head on my shoulder.)",
+        text: "(After the meal, we sit side by side. Seoyeon leans her head on my shoulder.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_2_2"
     },
     "rooftop_2_2": {
         name: "Seoyeon",
-        text: "\"Um, transfer student... Actually, from the first time I saw you, for some reason... I felt like we were people who had known each other for a long time. How about you?\"",
+        text: "\"Actually, from the first time I saw you... I felt like we've known each other for a long time. How about you?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "Me too. It feels like destiny, in a way?", next: "rooftop_destiny" },
@@ -495,66 +495,66 @@ const SCENARIO = {
     },
     "rooftop_destiny": {
         name: "Seoyeon",
-        text: "(She smiles shyly and gently overlaps her hand on top of mine. A warm heat is transmitted. Her hand is small and soft. She fiddles with my fingers and asks for a promise.)",
+        text: "(She smiles shyly and overlaps her hand on mine. She fiddles with my fingers.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_destiny_2"
     },
     "rooftop_destiny_2": {
         name: "Seoyeon",
-        text: "\"Destiny... Hehe, that word sounds really good. Let's make many more happy memories in the future. Is it a promise?\"",
+        text: "\"Destiny... that word sounds good. Let's make many more memories. Promise?\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "after_school_start"
     },
     "rooftop_kind": {
         name: "Seoyeon",
-        text: "(She pouts her lips as if slightly sulky. Even that look is lovely. Her eyes shake slightly. She lightly pinches my arm and complains.)",
+        text: "(She pouts, looking lovely. She lightly pinches my arm.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "rooftop_kind_2"
     },
     "rooftop_kind_2": {
         name: "Seoyeon",
-        text: "\"Hmph... that's such a textbook answer. But well, it's not wrong, so I'll let it slide. I'll look forward to a more honest answer next time, okay?\"",
+        text: "\"Hmph... such a textbook answer. But I'll let it slide. I'll look forward to a more honest answer next time!\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "after_school_start"
     },
     "rooftop_comfortable": {
         name: "Seoyeon",
-        text: "(She nods as if satisfied. Her expression looks much more comfortable. She lets out a deep sigh and relaxes.)",
+        text: "(She nods, looking comfortable. She lets out a sigh and relaxes.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_comfortable_2"
     },
     "rooftop_comfortable_2": {
         name: "Seoyeon",
-        text: "\"I'm glad you feel comfortable. I feel like I can put down the burden of being the student council president for a moment when I'm with you. Thank you, transfer student.\"",
+        text: "\"I'm glad you feel comfortable. I can put down the burden of being the president when I'm with you. Thank you.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_school_start"
     },
     "lunch_alone": {
         name: "Me",
-        text: "(Walking down the quiet hallway alone, I arrived at the library annex located in a secluded spot I hadn't seen this morning. The smell of old paper flows through the old wooden door. There, I encountered a girl with a mysterious atmosphere reading a book while leaning against the window. Dust is dancing and sparkling in the sunlight around her.)",
+        text: "(I arrived at a secluded library annex. I see a girl with a mysterious atmosphere reading by the window.)",
         background: "assets/images/background/library_old.png",
         next: "alone_2"
     },
     "alone_2": {
         name: "???",
-        text: "(She speaks in a low voice without taking her eyes off the book. It's a voice that seems cold yet somehow carries a hidden sadness. The air around her seems to have settled coldly. She slowly turns the pages of the book, conscious of me.)",
+        text: "(She speaks in a low voice without looking up. She slowly turns the pages, conscious of me.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "alone_2_2"
     },
     "alone_2_2": {
         name: "???",
-        text: "\"...Are you lost? Students don't usually come here. You managed to find it, transfer student.\"",
+        text: "\"...Are you lost? Students don't usually come here. You found it, transfer student.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "yuna_intro"
     },
     "yuna_intro": {
         name: "???",
-        text: "(She slowly raises her head and looks at me. Deep and mysterious purple eyes quietly observe me. It seems like there's a story in her eyes that others don't know. She closes the book and approaches me.)",
+        text: "(She raises her head and looks at me with mysterious purple eyes. She closes the book and approaches.)",
         next: "yuna_intro_2"
     },
     "yuna_intro_2": {
         name: "???",
-        text: "\"I'm Yuna. I'm just... someone who likes staying quiet. This school... is very different from how it looks. From you... I feel a somehow familiar atmosphere.\"",
+        text: "\"I'm Yuna. I like staying quiet. This school... is different from how it looks. I feel a familiar atmosphere from you.\"",
         choices: [
             { text: "My name is '{name}'.", next: "yuna_name_share", setFlag: "knowsName_Yuna" },
             { text: "The school is different? What does that mean?", next: "yuna_secret" },
@@ -564,13 +564,13 @@ const SCENARIO = {
     },
     "yuna_name_share": {
         name: "Yuna",
-        text: "\"{name}... It's a name that somehow suits you. I'll remember it. I'm Yuna. I'm just... someone who likes staying quiet.\"",
+        text: "\"{name}... It suits you. I'll remember it. I'm Yuna. I like staying quiet.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "yuna_intro_3"
     },
     "yuna_intro_3": {
         name: "Yuna",
-        text: "\"This school... is very different from how it looks. From you... I feel a somehow familiar atmosphere.\"",
+        text: "\"This school... is different from how it looks. I feel a familiar atmosphere from you.\"",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "The school is different? What does that mean?", next: "yuna_secret" },
@@ -580,13 +580,13 @@ const SCENARIO = {
     },
     "yuna_secret": {
         name: "Yuna",
-        text: "(She closes the book with a mysterious smile on her lips. The sound of the book closing breaks the silence. She puts her lips close to my ear and whispers.)",
+        text: "(She closes the book with a mysterious smile. She whispers close to my ear.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "yuna_secret_2"
     },
     "yuna_secret_2": {
         name: "Yuna",
-        text: "\"Hehe, are you curious? But secrets might be better left unknown. The stories the school wants to hide... you might get hurt if you know them.\"",
+        text: "\"Hehe, are you curious? Secrets might be better left unknown. You might get hurt if you know the school's stories.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
     },
@@ -604,59 +604,59 @@ const SCENARIO = {
     },
     "yuna_danger": {
         name: "Yuna",
-        text: "(She lightly brushes my cheek with her cold finger. The place where her fingertip touched is chilly. She stares intently into my eyes and gives a mysterious smile.)",
+        text: "(She brushes my cheek with her cold finger. She stares into my eyes with a mysterious smile.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "yuna_danger_2"
     },
     "yuna_danger_2": {
         name: "Yuna",
-        text: "\"Looking dangerous... Hehe, you're right. But I don't dislike people like you who approach even while knowing it's dangerous. Until you lose that special light... I'll stay by your side.\"",
+        text: "\"Looking dangerous... Hehe, you're right. But I don't dislike people like you. Until you lose that light... I'll stay by your side.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
     },
     "lunch_store": {
         name: "Me",
-        text: "(I sprinted to the snack bar and secured the last remaining 'Chocolate Conch Bread'! With the feeling of a victor, I take a bite of the bread, and the sweetness of the rich chocolate stimulates my brain. I can hear the hearty laughter of the snack bar lady. I returned to the classroom, holding the bread precious in my arms.)",
+        text: "(I secured the last 'Chocolate Conch Bread'! I take a bite, and the sweetness stimulates my brain. I return to the classroom with the bread.)",
         next: "lunch_store_2"
     },
     "lunch_store_2": {
         name: "Me",
-        text: "\"Kuu~ as expected, this is the taste! I feel like the fatigue of the first day of transfer is completely gone! To think that bread eaten alone could be this delicious!\"",
+        text: "\"Kuu~ this is the taste! The fatigue of the first day is gone!\"",
         next: "after_school_start"
     },
     "lunch_sleep": {
         name: "Me",
-        text: "(I lie face down on the desk and try to sleep. The laughter of the kids heard from afar sounds like a lullaby. My consciousness gradually blurs and I fall into deep darkness. The sunlight coming through the window warms my back. I saw a vision of happily talking with someone in my dream.)",
+        text: "(I lie on the desk and try to sleep. The sunlight warms my back. I see a vision of talking with someone in my dream.)",
         background: "assets/images/background/room_school.png",
         next: "lunch_sleep_2"
     },
     "lunch_sleep_2": {
         name: "Me",
-        text: "(In my dream, I heard someone calling my name. A very nostalgic and sad voice... But when I opened my eyes, there was no one by my side.)",
+        text: "(In my dream, I heard someone calling my name. A nostalgic and sad voice... But when I woke up, no one was there.)",
         next: "after_school_start"
     },
     "lunch_dain": {
         name: "Me",
-        text: "(Going out to the playground, it's full of lively energy. Kids are having a great time playing soccer and basketball. It doesn't look like there's a place for me to join in.)",
+        text: "(The playground is full of energy. Kids are playing soccer and basketball. It doesn't look like there's a place for me.)",
         background: "assets/images/background/playground.png",
         next: "lunch_dain_to_gym"
     },
     "lunch_dain_to_gym": {
         name: "Me",
-        text: "(Just then, the cheerful sound of a volleyball bouncing comes from the nearby gym. Feeling curious, I moved my steps toward the gym.)",
+        text: "(Just then, the sound of a volleyball comes from the gym. I head toward the gym.)",
         background: "assets/images/background/playground.png",
         next: "lunch_dain_2"
     },
     "lunch_dain_2": {
         name: "???",
-        text: "(As I open the gym door, she is there. With short hair and full of healthy beauty, she is coolly spiking the ball on the court. She discovers me and waves her hand with a bright smile.)",
+        text: "(As I open the gym door, she is there. She is spiking the ball on the court. She discovers me and waves with a bright smile.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_3"
     },
     "lunch_dain_3": {
         name: "???",
-        text: "\"Hey, transfer student! Don't just watch from there, come here and let's have a match! You look like you can exercise a bit?\"",
+        text: "\"Hey, transfer student! Come here and let's have a match! You look like you can exercise?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         choices: [
@@ -667,21 +667,21 @@ const SCENARIO = {
     },
     "dain_name_share": {
         name: "Dain",
-        text: "\"{name}? Cool name! It sounds like a name that's good at sports! I'm Dain from the volleyball club. There's no one in our school with a better jump than me, so be prepared!\"",
+        text: "\"{name}? Cool name! I'm Dain from the volleyball club. No one has a better jump than me, so be prepared!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_gym_2"
     },
     "lunch_dain_4": {
         name: "Dain",
-        text: "\"I'm Dain from the volleyball club. There's no one in our school with a better jump than me, so be prepared!\"",
+        text: "\"I'm Dain from the volleyball club. No one has a better jump than me, so be prepared!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_gym_2"
     },
     "lunch_dain_gym_2": {
         name: "Dain",
-        text: "\"Now, this is my territory! Transfer student, are you ready? I won't go easy on you, so be prepared!\"",
+        text: "\"Now, this is my territory! Are you ready? I won't go easy on you!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_active.png",
         setFlag: "metDain",
@@ -689,7 +689,7 @@ const SCENARIO = {
     },
     "after_school_start": {
         name: "Me",
-        text: "(Before I knew it, all classes ended and the bell announcing after school rang out. The sunset light is coloring the inside of the classroom red.)",
+        text: "(Classes ended and the bell rang. The sunset light colors the classroom red.)",
         background: "assets/images/background/room_school.png",
         character: null,
         sunset: true,
@@ -697,13 +697,13 @@ const SCENARIO = {
     },
     "after_school_start_2": {
         name: "Me",
-        text: "(I'm about to pack my bag and leave the classroom... The hallway is full of the footsteps of kids going home.)",
+        text: "(I pack my bag to leave. The hallway is full of kids going home.)",
         sunset: true,
         next: "after_school_start_3"
     },
     "after_school_start_3": {
         name: "Me",
-        text: "(Today was a really long day. What should I do now?)",
+        text: "(Today was a long day. What should I do now?)",
         sunset: true,
         choices: [
             { text: "Stop by the student council room where Seoyeon is.", next: "after_seoyeon", condition: "metSeoyeon" },
@@ -717,7 +717,7 @@ const SCENARIO = {
     },
     "after_dain_new": {
         name: "Me",
-        text: "(Heading to the gym, I see kids practicing volleyball while sweating under the window where the sunset light seeps in. Among them, there's one girl who particularly stands out.)",
+        text: "(At the gym, I see kids practicing volleyball in the sunset light. One girl particularly stands out.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -725,7 +725,7 @@ const SCENARIO = {
     },
     "after_dain_new_intro": {
         name: "???",
-        text: "\"Hi! I'm Dain from the volleyball club. You're that kid who transferred today, right?\"",
+        text: "\"Hi! I'm Dain from the volleyball club. You're the transfer student, right?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -734,7 +734,7 @@ const SCENARIO = {
     },
     "after_dain": {
         name: "Dain",
-        text: "(Arriving at the gym, Dain is jumping high and slamming down a powerful spike. Her healthy energy seems to brighten the surroundings.)",
+        text: "(At the gym, Dain is jumping high and slamming down a powerful spike.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -742,7 +742,7 @@ const SCENARIO = {
     },
     "after_dain_2": {
         name: "Dain",
-        text: "(While practice is briefly stopped, Dain discovers me and runs over while wiping sweat with a towel.)",
+        text: "(Dain discovers me and runs over, wiping sweat with a towel.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -750,7 +750,7 @@ const SCENARIO = {
     },
     "after_dain_3": {
         name: "Dain",
-        text: "\"Hey, transfer student! What brings you here? Did you come to watch me practice? Hehe, you haven't fallen for my cool appearance, have you?\"",
+        text: "\"Hey, transfer student! What brings you here? Did you come to watch me practice? Hehe, fallen for me already?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -761,7 +761,7 @@ const SCENARIO = {
     },
     "after_dain_cheer": {
         name: "Dain",
-        text: "(Dain smiles while scrunching her nose shyly. A healthy blush blooms on her face.)",
+        text: "(Dain smiles shyly. A healthy blush blooms on her face.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -769,7 +769,7 @@ const SCENARIO = {
     },
     "after_dain_cheer_2": {
         name: "Dain",
-        text: "\"Wh-what... it's embarrassing if you praise me so suddenly! It's not like I worked hard just for you to hear, so don't get the wrong idea! But... I guess I feel a bit more energized since you're watching...\"",
+        text: "\"Wh-what... it's embarrassing! I didn't work hard just for you! But... I feel more energized since you're watching...\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
@@ -777,7 +777,7 @@ const SCENARIO = {
     },
     "after_dain_normal": {
         name: "Dain",
-        text: "(Dain playfully hits my shoulder. I can feel a pleasant warmth from her touch.)",
+        text: "(Dain playfully hits my shoulder. I feel a pleasant warmth from her touch.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -785,7 +785,7 @@ const SCENARIO = {
     },
     "after_dain_normal_2": {
         name: "Dain",
-        text: "\"Ayy~ you're not being honest! Well, fine. Since you're here, want to wait until our practice is over? Let's go eat tteokbokki together!\"",
+        text: "\"Ayy~ you're not being honest! Since you're here, wait until practice is over. Let's go eat tteokbokki!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -793,7 +793,7 @@ const SCENARIO = {
     },
     "after_dain_end": {
         name: "Me",
-        text: "(I sat on the gym stands and watched Dain until her practice was over. Her passion didn't seem to cool down until the sun set and darkness fell.)",
+        text: "(I sat on the stands and watched Dain until practice was over. Her passion didn't cool down until sunset.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_active.png",
         sunset: true,
@@ -801,7 +801,7 @@ const SCENARIO = {
     },
     "after_dain_end_2": {
         name: "Dain",
-        text: "(After finishing practice, Dain approaches me while panting heavily. The sweat on her forehead sparkles in the sunset light.) \"Phew... phew... sorry for making you wait! Now, let's go eat the tteokbokki we promised!\"",
+        text: "(Dain approaches me, panting heavily. Sweat sparkles on her forehead.) \"Phew... sorry for making you wait! Let's go eat tteokbokki!\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "datedDainDay1",
@@ -809,7 +809,7 @@ const SCENARIO = {
     },
     "after_dain_tteokbokki": {
         name: "Dain",
-        text: "(Dain gives a happy smile while taking a bite of the steaming tteokbokki. Maybe because it's after exercise, it feels more delicious than usual.)",
+        text: "(Dain smiles while eating steaming tteokbokki. It feels more delicious after exercise.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -817,7 +817,7 @@ const SCENARIO = {
     },
     "after_dain_tteokbokki_2": {
         name: "Dain",
-        text: "\"Kya~ as expected, tteokbokki eaten after exercise is the best! Thank you so much for coming with me today. Thanks to you, it feels twice as delicious as usual!\"",
+        text: "\"Kya~ tteokbokki after exercise is the best! Thanks for coming with me. It's twice as delicious!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -825,7 +825,7 @@ const SCENARIO = {
     },
     "after_dain_tteokbokki_3": {
         name: "Dain",
-        text: "\"Let's come eat together often, starting tomorrow... no, from now on! Is it a promise?\"",
+        text: "\"Let's eat together often from now on! Promise?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -833,7 +833,7 @@ const SCENARIO = {
     },
     "after_yuna_new": {
         name: "Me",
-        text: "(Looking for a quiet place in the school, I arrived at the old library annex. There, where the sunset light seeps in, a girl is sitting by the window.)",
+        text: "(I arrived at the old library annex. A girl is sitting by the window in the sunset light.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -841,7 +841,7 @@ const SCENARIO = {
     },
     "after_yuna_new_2": {
         name: "???",
-        text: "\"Hello? Coming here at this hour... you're quite unique. I'm Yuna.\"",
+        text: "\"Hello? Coming here at this hour... you're unique. I'm Yuna.\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -850,19 +850,19 @@ const SCENARIO = {
     },
     "after_seoyeon": {
         name: "Seoyeon",
-        text: "(Opening the student council room door, I see Seoyeon struggling among piles of documents.)",
+        text: "(Opening the student council room door, I see Seoyeon struggling with documents.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_2"
     },
     "after_seoyeon_2": {
         name: "Seoyeon",
-        text: "(As I enter, she looks up in surprise. Fatigue is evident behind her glasses. She puts down her pen and stretches.)",
+        text: "(She looks up in surprise. Fatigue is evident. She stretches and puts down her pen.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_3"
     },
     "after_seoyeon_3": {
         name: "Seoyeon",
-        text: "\"Oh? Transfer student! What brings you here at this hour? Could it be... you were waiting for me?\"",
+        text: "\"Oh? Transfer student! What brings you here? Were you waiting for me?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "Yeah, I wanted to go home together. Should I help?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon" },
@@ -871,7 +871,7 @@ const SCENARIO = {
     },
     "after_seoyeon_help": {
         name: "Seoyeon",
-        text: "(She opens her eyes wide as if moved. Soon she gives a bright smile and makes room for me beside her. Beside her, the smell of paper and her scent blend together.)",
+        text: "(She looks moved and makes room for me. I can smell her scent among the papers.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "after_seoyeon_help_2"
     },
@@ -895,28 +895,28 @@ const SCENARIO = {
     },
     "after_seoyeon_cafe": {
         name: "Seoyeon",
-        text: "(After finishing the document organization, we stopped by a small cafe in front of the school. The scent of warm cocoa fills the cafe.)",
+        text: "(We stopped by a cafe. The scent of warm cocoa fills the air.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe_2"
     },
     "after_seoyeon_cafe_2": {
         name: "Seoyeon",
-        text: "(Seoyeon gives a happy expression while drinking a beverage topped with plenty of whipped cream.)",
+        text: "(Seoyeon looks happy while drinking her beverage.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe_2_2"
     },
     "after_seoyeon_cafe_2_2": {
         name: "Seoyeon",
-        text: "\"Haa~ I feel like I can live now. Thank you so much today, transfer student.\"",
+        text: "\"Haa~ I feel alive. Thank you so much today.\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe_3"
     },
     "after_seoyeon_cafe_3": {
         name: "Seoyeon",
-        text: "\"Thanks to you, I was able to finish the student council work happily. Can we... go home together tomorrow too?\"",
+        text: "\"I finished the work happily thanks to you. Can we go home together tomorrow too?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
@@ -926,43 +926,43 @@ const SCENARIO = {
     },
     "after_seoyeon_promise": {
         name: "Seoyeon",
-        text: "(She smiles brightly while holding out her pinky finger. The cafe lights sparkle in her eyes. Her laughter blends with the noise in the cafe and sounds sweet.)",
+        text: "(She smiles and holds out her pinky finger. Her laughter sounds sweet.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "after_seoyeon_promise_2"
     },
     "after_seoyeon_promise_2": {
         name: "Seoyeon",
-        text: "\"Is it a promise? You can't break it! Then see you tomorrow, transfer student. Get home safely!\"",
+        text: "\"Is it a promise? See you tomorrow. Get home safely!\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "evening_home"
     },
     "after_seoyeon_tease": {
         name: "Seoyeon",
-        text: "(She glares at me while puffing out her cheeks. But her eyes are full of playfulness. She bursts into laughter while lightly hitting my arm.)",
+        text: "(She glares playfully while puffing out her cheeks. She bursts into laughter and hits my arm.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "after_seoyeon_tease_2"
     },
     "after_seoyeon_tease_2": {
         name: "Seoyeon",
-        text: "\"Hmph... you're really mean! But you still have to come, okay? If you don't, I'll punish you with the authority of the student council president! Hehe, just kidding. See you tomorrow!\"",
+        text: "\"Hmph... you're mean! But you still have to come, okay? See you tomorrow!\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "evening_home"
     },
     "after_seoyeon_worry": {
         name: "Seoyeon",
-        text: "(She smiles while scratching her head shyly. Her smile seems to have cleared some of the fatigue. She seems moved, feeling that my worry is sincere, and her eyes turn red.)",
+        text: "(She smiles shyly. She seems moved by my concern.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_worry_2"
     },
     "after_seoyeon_worry_2": {
         name: "Seoyeon",
-        text: "\"Hehe, you caught me. Being the student council president has more work than I thought. But since you're worrying like this, I feel energized! Just wait a bit, I'll finish quickly and let's go together!\"",
+        text: "\"Hehe, you caught me. Being president is hard work. But I feel energized now! Wait a bit, let's go together!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe"
     },
     "after_yuna": {
         name: "Yuna",
-        text: "(The library annex is darker and quieter than during the day. There, a girl is sitting by the window, looking at the sunset.)",
+        text: "(The library annex is darker and quieter. Yuna is sitting by the window, looking at the sunset.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -970,7 +970,7 @@ const SCENARIO = {
     },
     "after_yuna_2": {
         name: "Yuna",
-        text: "(Her profile looks as beautiful and precarious as a painting. Even though she knows I've come, she stares out the window for a long time.)",
+        text: "(She looks beautiful and precarious. She stares out the window for a long time.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -978,7 +978,7 @@ const SCENARIO = {
     },
     "after_yuna_3": {
         name: "Yuna",
-        text: "\"Ah, transfer student... I like the library after school because it's quieter. What brings you here?\"",
+        text: "\"Ah, transfer student... I like the library after school. What brings you here?\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -990,7 +990,7 @@ const SCENARIO = {
     },
     "after_yuna_know": {
         name: "Yuna",
-        text: "(She slowly turns her head and looks at me. The red sunset light is reflected in her eyes. A faint smile spreads across her lips.)",
+        text: "(She turns her head and looks at me. A faint smile spreads across her lips.)",
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
         next: "after_yuna_know_2"
@@ -1009,13 +1009,13 @@ const SCENARIO = {
     },
     "after_yuna_know_3": {
         name: "Yuna",
-        text: "\"Fine, tonight will be long. I'll tell you... little by little. Follow me.\"",
+        text: "\"Fine, tonight will be long. I'll tell you little by little. Follow me.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_yuna_rooftop"
     },
     "after_yuna_rooftop": {
         name: "Yuna",
-        text: "(The school looked down from the annex rooftop is completely different from during the day. The cold night air wraps around us, and city lights twinkle in the distance.)",
+        text: "(The school from the rooftop looks different. The cold night air wraps around us.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
@@ -1037,7 +1037,7 @@ const SCENARIO = {
     },
     "after_yuna_rooftop_3": {
         name: "Yuna",
-        text: "\"Hidden problems are just festering. Haven't you felt that kind of discomfort?\"",
+        text: "\"Hidden problems are festering. Haven't you felt that discomfort?\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         choices: [
@@ -1047,47 +1047,47 @@ const SCENARIO = {
     },
     "after_yuna_together": {
         name: "Yuna",
-        text: "(She grips my hand tightly. Her hand is still cold, but I can feel a burning desire within it. She looks into my eyes and gives a sad smile.)",
+        text: "(She grips my hand tightly. She looks into my eyes and gives a sad smile.)",
         character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         next: "after_yuna_together_2"
     },
     "after_yuna_together_2": {
         name: "Yuna",
-        text: "\"What a foolish thing to say... but I don't hate that answer. Fine, then how about we... become people who share each other's secrets?\"",
+        text: "\"What a foolish thing to say... but I don't hate it. Let's share each other's secrets.\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         next: "evening_home"
     },
     "after_yuna_scared": {
         name: "Yuna",
-        text: "(She laughs coldly and lets go of my hand. Her gaze becomes indifferent again. She turns her eyes back out the window and pushes me away.)",
+        text: "(She laughs coldly and lets go of my hand. She turns back to the window and pushes me away.)",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         next: "after_yuna_scared_2"
     },
     "after_yuna_scared_2": {
         name: "Yuna",
-        text: "\"Hehe, I thought so. It's too heavy a story for an ordinary student. Go back for today. Don't try to know any deeper.\"",
+        text: "\"Hehe, I thought so. It's too heavy for an ordinary student. Go back for today.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         next: "evening_home"
     },
     "after_yuna_secret": {
         name: "Yuna",
-        text: "(She puts her finger to her lips, signaling to be quiet. Her eyes shine sharply. She pulls my collar and brings me close to her.)",
+        text: "(She signals to be quiet. She pulls my collar and brings me close.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_yuna_secret_2"
     },
     "after_yuna_secret_2": {
         name: "Yuna",
-        text: "\"Shh... even walls have ears. Once you know the truth, you can't go back to your ordinary daily life. If you're okay with that... take my hand.\"",
+        text: "\"Shh... walls have ears. Once you know the truth, you can't go back. If you're okay with that... take my hand.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_yuna_rooftop"
     },
     "after_home": {
         name: "Me",
-        text: "(Leaving the school gate, I look back on today. Meeting Seoyeon, and the strange atmosphere I felt throughout the school... A lot happened for the first day of transfer.)",
+        text: "(Leaving the school, I look back on today. A lot happened for the first day.)",
         background: "assets/images/background/school.png",
         character: null,
         sunset: true,
@@ -1095,7 +1095,7 @@ const SCENARIO = {
     },
     "after_home_2": {
         name: "Me",
-        text: "(Walking down the street where the sunset is falling, I look forward to what will happen tomorrow. Streetlights turn on one by one, preparing for the night.)",
+        text: "(Walking down the street, I look forward to tomorrow. Streetlights turn on one by one.)",
         sunset: true,
         next: "after_home_2_2"
     },
@@ -1107,7 +1107,7 @@ const SCENARIO = {
     },
     "evening_home": {
         name: "Me",
-        text: "(Returning home and lying on the bed, today's events pass through my mind like a kaleidoscope. Seoyeon's warm smile, Yuna's mysterious eyes...)",
+        text: "(Lying on the bed, today's events pass through my mind. Seoyeon's smile, Yuna's eyes...)",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1115,13 +1115,13 @@ const SCENARIO = {
     },
     "evening_home_2": {
         name: "Me",
-        text: "(Staring at the ceiling, I fall into deep thought. Only the sound of the clock's second hand echoes regularly in the room.)",
+        text: "(Staring at the ceiling, I fall into deep thought. Only the sound of the clock echoes.)",
         night: true,
         next: "evening_home_2_2"
     },
     "evening_home_2_2": {
         name: "Me",
-        text: "(I didn't expect it to be this eventful from the first day of transfer... What kind of things are waiting for me tomorrow?)",
+        text: "(I didn't expect it to be this eventful... What's waiting for me tomorrow?)",
         night: true,
         choices: [
             { text: "Send a message to Seoyeon saying thanks for today.", next: "evening_message_seoyeon", condition: "metSeoyeon" },
@@ -1133,67 +1133,67 @@ const SCENARIO = {
     },
     "evening_think_dain": {
         name: "Me",
-        text: "(Dain's healthy laughter seems to linger in my ears. I feel like I can enjoy this unfamiliar school life if I'm with her. I went to sleep looking forward to the tteokbokki I'll eat with her tomorrow.)",
+        text: "(Dain's laughter lingers in my ears. I look forward to the tteokbokki tomorrow.)",
         night: true,
         next: "day2_start"
     },
     "evening_message_seoyeon": {
         name: "Me",
-        text: "(I carefully picked up my phone and sent a message to Seoyeon. 'Thank you so much for guiding me today. I think I'll be able to adapt well to the school thanks to you.')",
+        text: "(I sent a message to Seoyeon. 'Thank you for today. I think I'll adapt well thanks to you.')",
         night: true,
         next: "evening_message_seoyeon_2"
     },
     "evening_message_seoyeon_2": {
         name: "Me",
-        text: "(After a while, the phone vibrated and a reply came. My heart is pounding.)",
+        text: "(After a while, a reply came. My heart is pounding.)",
         night: true,
         next: "evening_message_seoyeon_2_2"
     },
     "evening_message_seoyeon_2_2": {
         name: "Me",
-        text: "\"[Seoyeon]: No, I really enjoyed today too! Thanks to you, I finished the student council work quickly. See you at school tomorrow! Good night~ (Heart emoticon)\"",
+        text: "\"[Seoyeon]: I enjoyed today too! See you at school tomorrow! Good night~ (Heart emoticon)\"",
         night: true,
         next: "day2_start"
     },
     "evening_think_yuna": {
         name: "Me",
-        text: "(The strange atmosphere and rumors I felt throughout the school don't leave my head. The feeling that someone is watching me... What on earth is this school hiding? The darkness outside the window feels deeper than usual. I couldn't fall asleep until late at night.)",
+        text: "(The strange atmosphere of the school doesn't leave my head. What is this school hiding? I couldn't fall asleep until late.)",
         night: true,
         next: "day2_start"
     },
     "evening_think_yuna_met": {
         name: "Me",
-        text: "(Yuna's words about 'the school's secret' don't leave my head. Her cold touch and sad eyes... What on earth does she know? The darkness outside the window feels deeper than usual. I couldn't fall asleep until late at night.)",
+        text: "(Yuna's words about the school's secret don't leave my head. What does she know? I couldn't fall asleep until late.)",
         night: true,
         next: "day2_start"
     },
     "evening_sleep": {
         name: "Me",
-        text: "(I fell into a deep sleep as soon as I closed my eyes. In my dream, I was running down an endless hallway. I heard someone calling me from afar, but no matter how much I ran, I couldn't reach them. I woke up at dawn sweating coldly.)",
+        text: "(I fell into a deep sleep. In my dream, I was running down an endless hallway. I woke up at dawn sweating coldly.)",
         night: true,
         next: "day2_start"
     },
     "day2_start": {
         name: "Me",
-        text: "(I woke up to the sound of the alarm. The morning sunlight shining through the window is dazzling. Yesterday's tension is gone, and I put on the uniform that has become a bit familiar now.)",
+        text: "(I woke up to the alarm. The morning sunlight is dazzling. I put on the uniform that feels familiar now.)",
         background: "assets/images/background/room_my.png",
         next: "day2_start_2"
     },
     "day2_start_2": {
         name: "Me",
-        text: "(My reflection in the mirror looks a bit more confident than yesterday. I packed my bag and left the house.)",
+        text: "(I look more confident in the mirror. I packed my bag and left the house.)",
         next: "day2_gate"
     },
     "day2_gate": {
         name: "Seoyeon",
-        text: "(Arriving at the school gate, someone waves and runs over from afar. It's Seoyeon!)",
+        text: "(At the school gate, Seoyeon waves and runs over from afar.)",
         background: "assets/images/background/school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_gate_2"
     },
     "day2_gate_2": {
         name: "Seoyeon",
-        text: "(She welcomes me with a lively appearance today as well. It's a fresh smile like a flower with morning dew.)",
+        text: "(She welcomes me with a fresh smile.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_gate_2_2"
     },
@@ -1217,19 +1217,19 @@ const SCENARIO = {
     },
     "day2_gate_talk_dain_met": {
         name: "Seoyeon",
-        text: "(Seoyeon smiles brightly upon hearing Dain's name. Her expression becomes much softer.)",
+        text: "(Seoyeon smiles brightly at Dain's name.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_gate_talk_dain_met_2"
     },
     "day2_gate_talk_dain_met_2": {
         name: "Seoyeon",
-        text: "\"Ah, Dain! That girl is really lively, isn't she? She's our school's mood maker. If you get close to Dain, school life will become really fun. We're quite close too, so let's all hang out together later!\"",
+        text: "\"Ah, Dain! She's our school's mood maker. If you get close to her, school life will be fun. Let's all hang out later!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_classroom"
     },
     "day2_gate_talk_1": {
         name: "Seoyeon",
-        text: "(She smiles as if in a good mood and approaches my side. A faint scent of shampoo is carried by the wind.)",
+        text: "(She smiles and approaches. A faint scent of shampoo drifts in the wind.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_gate_talk_1_2"
     },
@@ -1247,61 +1247,61 @@ const SCENARIO = {
     },
     "day2_gate_talk_1_3": {
         name: "Seoyeon",
-        text: "\"I have a feeling something good will happen. Now, shall we go to the classroom together?\"",
+        text: "\"I have a feeling something good will happen. Shall we go to the classroom?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_classroom"
     },
     "day2_gate_talk_2": {
         name: "Seoyeon",
-        text: "(Seoyeon's face turns slightly red. She avoids my gaze as if embarrassed and tucks her hair behind her ear.)",
+        text: "(Seoyeon's face turns red. She avoids my gaze and tucks her hair behind her ear.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_gate_talk_2_2"
     },
     "day2_gate_talk_2_2": {
         name: "Seoyeon",
-        text: "(Her shy appearance shines even more under the morning sun.)",
+        text: "(Her shy appearance shines under the morning sun.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_gate_talk_2_2_2"
     },
     "day2_gate_talk_2_2_2": {
         name: "Seoyeon",
-        text: "\"Really... saying such things from the morning... you're really something.\"",
+        text: "\"Really... saying such things from the morning...\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_gate_talk_2_3"
     },
     "day2_gate_talk_2_3": {
         name: "Seoyeon",
-        text: "\"But thanks. I feel energized seeing your face too.\"",
+        text: "\"But thanks. I feel energized seeing you too.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_classroom"
     },
     "day2_gate_talk_yuna_met": {
         name: "Seoyeon",
-        text: "(Seoyeon's expression instantly darkens upon hearing Yuna's name. She looks around and speaks in a lowered voice. A worried light dwells in her eyes.)",
+        text: "(Seoyeon's expression darkens at Yuna's name. She speaks in a lowered voice.)",
         character: "assets/images/characters/seyoun_worried.png",
         next: "day2_gate_talk_yuna_met_2"
     },
     "day2_gate_talk_yuna_met_2": {
         name: "Seoyeon",
-        text: "\"Yuna...? Ah, you met that girl. Yuna has some... mysterious parts. But it would be better not to get too deeply involved. Even the teachers keep their words about her.\"",
+        text: "\"Yuna...? You met her. She's... mysterious. It's better not to get too involved. Even teachers are careful around her.\"",
         character: "assets/images/characters/seyoun_worried.png",
         next: "day2_classroom"
     },
     "day2_gate_talk_yuna": {
         name: "Seoyeon",
-        text: "(Seoyeon's expression instantly darkens upon hearing those words. She looks around and speaks in a lowered voice. A worried light dwells in her eyes.)",
+        text: "(Seoyeon's expression darkens. She looks around and lowers her voice.)",
         character: "assets/images/characters/seyoun_worried.png",
         next: "day2_gate_talk_yuna_2"
     },
     "day2_gate_talk_yuna_2": {
         name: "Seoyeon",
-        text: "\"Mysterious atmosphere...? Ah, are you talking about Yuna? Yuna has some... mysterious parts. But it would be better not to get too deeply involved. Even the teachers keep their words about her.\"",
+        text: "\"Mysterious atmosphere...? You mean Yuna? She's... mysterious. It's better not to get too involved. Even teachers are careful around her.\"",
         character: "assets/images/characters/seyoun_worried.png",
         next: "day2_classroom"
     },
     "day2_classroom": {
         name: "Me",
-        text: "(Entering the classroom, I feel a much more comfortable atmosphere than yesterday. Kids wave and greet me.)",
+        text: "(The classroom feels more comfortable today. Kids wave and greet me.)",
         background: "assets/images/background/room_school.png",
         character: null,
         choices: [
@@ -1311,7 +1311,7 @@ const SCENARIO = {
     },
     "day2_classroom_2": {
         name: "Me",
-        text: "(As I sit in my seat and take out my books, there's a small note on the desk. It's a note with a faint scent of purple.)",
+        text: "(There's a small note on my desk with a faint purple scent.)",
         choices: [
             { text: "Open the note.", next: "day2_note_open", setFlag: "readNote" },
             { text: "Ignore it and put it in my bag.", next: "day2_note_ignore" }
@@ -1319,113 +1319,113 @@ const SCENARIO = {
     },
     "day2_note_open": {
         name: "Me",
-        text: "(Opening the note, neat yet sharp handwriting catches my eye. 'Today at lunch, I'll be waiting at the library annex. I have something to say. - Y' ...Who is it?)",
+        text: "('Today at lunch, I'll be waiting at the library annex. I have something to say. - Y' ...Who is it?)",
         next: "day2_note_open_2"
     },
     "day2_note_open_2": {
         name: "Me",
-        text: "(What on earth does she have to say to me? My heart starts pounding.)",
+        text: "(What does she want to say? My heart starts pounding.)",
         next: "day2_lesson"
     },
     "day2_note_ignore": {
         name: "Me",
-        text: "(I tucked the note deep into my bag out of an unknown sense of unease. But throughout class, I couldn't concentrate because I was curious about the contents of the note.)",
+        text: "(I put the note in my bag, but I can't concentrate on class.)",
         next: "day2_note_ignore_2"
     },
     "day2_note_ignore_2": {
         name: "Me",
-        text: "(A strange feeling keeps lingering in my head. Who on earth is the owner of that note?)",
+        text: "(Who sent that note? The thought lingers in my head.)",
         next: "day2_lesson"
     },
     "day2_lesson": {
         name: "Teacher",
-        text: "(A boring math class is continuing. The formulas filling the blackboard look like an alien language.)",
+        text: "(Math class continues. The formulas on the blackboard look like an alien language.)",
         character: "assets/images/characters/teacher.png",
         next: "day2_lesson_2"
     },
     "day2_lesson_2": {
         name: "Teacher",
-        text: "(Lively voices of kids having PE class can be heard from outside the window. I rest my chin on my hand and fall into thought while looking out the window.)",
+        text: "(I hear voices from PE class outside. I look out the window and fall into thought.)",
         character: "assets/images/characters/teacher.png",
         next: "day2_lesson_3"
     },
     "day2_lesson_3": {
         name: "Teacher",
-        text: "\"Now, you there, transfer student! Instead of daydreaming, why don't you try solving this problem?\"",
+        text: "\"Transfer student! Try solving this problem.\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "Stand up confidently and solve the problem.", next: "day2_lesson_solve_study", condition: "personality_study" },
-            { text: "Stand up confidently and solve the problem.", next: "day2_lesson_solve_active", condition: "personality_active" },
-            { text: "Stand up confidently and solve the problem.", next: "day2_lesson_solve_normal", condition: "personality_quiet" },
-            { text: "Stand up confidently and solve the problem.", next: "day2_lesson_solve_normal", condition: "personality_party" },
-            { text: "Honestly say I don't know.", next: "day2_lesson_fail" }
+            { text: "Solve the problem.", next: "day2_lesson_solve_study", condition: "personality_study" },
+            { text: "Solve the problem.", next: "day2_lesson_solve_active", condition: "personality_active" },
+            { text: "Solve the problem.", next: "day2_lesson_solve_normal", condition: "personality_quiet" },
+            { text: "Solve the problem.", next: "day2_lesson_solve_normal", condition: "personality_party" },
+            { text: "Say I don't know.", next: "day2_lesson_fail" }
         ]
     },
     "day2_lesson_solve_active": {
         name: "Kids",
-        text: "(I went to the front of the blackboard and solved the problem without hesitation. The sound of chalk echoes rhythmically. When I get the right answer, the kids send admiring applause. Seoyeon also smiles and gives a thumbs up from behind.)",
+        text: "(I solve the problem easily. The kids applaud, and Seoyeon gives a thumbs up.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2_active"
     },
     "day2_lesson_solve_normal": {
         name: "Kids",
-        text: "(I went to the front of the blackboard and solved the problem without hesitation. The sound of chalk echoes rhythmically. When I get the right answer, the kids send admiring applause. Seoyeon also smiles and gives a thumbs up from behind.)",
+        text: "(I solve the problem easily. The kids applaud, and Seoyeon gives a thumbs up.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2"
     },
     "day2_lesson_solve_study": {
         name: "Kids",
-        text: "(I went to the front of the blackboard and solved the problem without hesitation. The sound of chalk echoes rhythmically. When I get the right answer, the kids send admiring applause. Seoyeon also smiles and gives a thumbs up from behind.)",
+        text: "(I solve the problem easily. The kids applaud, and Seoyeon gives a thumbs up.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2"
     },
     "day2_lesson_solve_2": {
         name: "Kids",
-        text: "\"Wow~ the transfer student is good at studying too! Isn't he a total cheat character?\"",
+        text: "\"Wow, the transfer student is good at studying too!\"",
         character: null,
         next: "day2_lunch_choice"
     },
     "day2_lesson_solve_2_active": {
         name: "Kids",
-        text: "\"Oh~ transfer student, I thought you were only good at sports, but you're pretty good at studying too? That's unexpected!\"",
+        text: "\"Oh, you're good at studying too? That's unexpected!\"",
         character: null,
         next: "day2_lunch_choice"
     },
     "day2_lesson_fail": {
         name: "Kids",
-        text: "(When I scratch my head and say I don't know, a small laugh breaks out in the classroom. The teacher smiles kindly and explains again. Seoyeon looks at me regretfully and mouths that she'll teach me later.)",
+        text: "(I say I don't know, and the kids laugh lightly. Seoyeon mouths that she'll teach me later.)",
         character: null,
         next: "day2_lesson_fail_2"
     },
     "day2_lesson_fail_2": {
         name: "Kids",
-        text: "\"It's okay, transfer student! That problem is originally a bit difficult. I'll help you later!\"",
+        text: "\"It's okay! I'll help you later!\"",
         character: null,
         next: "day2_lunch_choice"
     },
     "day2_lunch_choice": {
         name: "Me",
-        text: "(Finally lunch time! My stomach clock is ringing loudly. What should I do today? Seoyeon is already looking at me with her lunch box... The time for choice has come.)",
+        text: "(Lunchtime! What should I do? Seoyeon is looking at me with her lunch box.)",
         choices: [
             { text: "Go to the rooftop with Seoyeon.", next: "day2_lunch_seoyeon" },
             { text: "Go to the library annex as the note said.", next: "day2_lunch_yuna", condition: "readNote" },
             { text: "Head to the library annex where Yuna is.", next: "day2_lunch_yuna", condition: "metYuna", excludeCondition: "readNote" },
             { text: "Head to the quiet library annex.", next: "day2_lunch_yuna_new", excludeCondition: "metYuna" },
-            { text: "Go to the gym to play volleyball with Dain.", next: "day2_lunch_volleyball", condition: "metDain" },
-            { text: "Go to the gym and play volleyball with the kids.", next: "day2_lunch_volleyball_new", excludeCondition: "metDain" },
-            { text: "I don't feel well, so I'll go to the nurse's office.", next: "day2_lunch_nurse" }
+            { text: "Go to the gym to see Dain.", next: "day2_lunch_volleyball", condition: "metDain" },
+            { text: "Go to the gym to see the kids.", next: "day2_lunch_volleyball_new", excludeCondition: "metDain" },
+            { text: "Go to the nurse's office.", next: "day2_lunch_nurse" }
         ]
     },
     "day2_lunch_volleyball_new": {
         name: "Me",
-        text: "(Going to the gym, I feel a lively energy. A girl is leading the kids and passionately teaching volleyball.)",
+        text: "(The gym is full of energy. A girl is teaching volleyball.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_lunch_volleyball_new_2"
     },
     "day2_lunch_volleyball_new_2": {
         name: "???",
-        text: "\"Hey, you there, transfer student! Don't just stand there blankly, come here and how about a game? I'm Dain from the volleyball club!\"",
+        text: "\"Hey, transfer student! Come and play a game! I'm Dain!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
@@ -1433,7 +1433,7 @@ const SCENARIO = {
     },
     "day2_lunch_seoyeon": {
         name: "Seoyeon",
-        text: "(Going up to the rooftop, Seoyeon takes out a more elaborate lunch box than yesterday. A savory smell stimulates the tip of my nose.)",
+        text: "(On the rooftop, Seoyeon takes out an elaborate lunch box. A savory smell fills the air.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
@@ -1443,80 +1443,80 @@ const SCENARIO = {
     },
     "day2_lunch_seoyeon_special": {
         name: "Seoyeon",
-        text: "\"Thanks to you helping with the student council work yesterday, I had some time left, so I prepared it with extra care today. Here, try it!\"",
+        text: "\"I prepared this with extra care today. Try it!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_1_3"
     },
     "day2_lunch_seoyeon_1_2": {
         name: "Seoyeon",
-        text: "(She looks at me with expectant eyes. As the lunch box full of her care opens, delicious-looking sandwiches reveal themselves.)",
+        text: "(She looks at me expectantly. The lunch box is full of delicious sandwiches.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_lunch_seoyeon_1_2_2"
     },
     "day2_lunch_seoyeon_1_2_2": {
         name: "Seoyeon",
-        text: "\"Ta-da! I made sandwiches today. I hurried from the morning thinking you'd like them, transfer student.\"",
+        text: "\"Ta-da! I made sandwiches today. I hope you like them.\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_lunch_seoyeon_2"
     },
     "day2_lunch_seoyeon_1_3": {
         name: "Seoyeon",
-        text: "\"Ta-da! Today is a special handmade sandwich. I hurried from the morning thinking you'd like it, transfer student. How is it, does it look delicious?\"",
+        text: "\"Ta-da! Special handmade sandwiches. How do they look?\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_2"
     },
     "day2_lunch_seoyeon_2": {
         name: "Seoyeon",
-        text: "(Taking a bite of the sandwich, the harmony of fresh vegetables and sauce is excellent. Seoyeon smiles happily seeing me eat with gusto.)",
+        text: "(The sandwiches are excellent. Seoyeon smiles happily as I eat.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_2_2"
     },
     "day2_lunch_seoyeon_2_2": {
         name: "Seoyeon",
-        text: "(She lightly wipes the sauce from the corner of my mouth with her finger. For a moment, I thought my heart stopped.)",
+        text: "(She lightly wipes the sauce from my mouth. My heart skips a beat.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_lunch_seoyeon_2_2_2"
     },
     "day2_lunch_seoyeon_2_2_2": {
         name: "Seoyeon",
-        text: "\"Hehe, is it that delicious? Eat slowly. You'll get indigestion.\"",
+        text: "\"Hehe, is it that delicious? Eat slowly.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_2_3"
     },
     "day2_lunch_seoyeon_2_3": {
         name: "Seoyeon",
-        text: "\"Ah, right! There's a school festival this weekend... are you free by any chance?\"",
+        text: "\"Ah, right! There's a school festival this weekend... are you free?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "Of course! I want to see the festival with you, Seoyeon.", next: "day2_festival_promise" },
-            { text: "Festival? Sounds fun. Aren't you busy with student council work?", next: "day2_festival_worry" }
+            { text: "Of course! I want to go with you.", next: "day2_festival_promise" },
+            { text: "Aren't you busy with student council work?", next: "day2_festival_worry" }
         ]
     },
     "day2_festival_promise": {
         name: "Seoyeon",
-        text: "(She's so happy that she suddenly grabs my hand. My face heats up at the warm and soft touch. She hurriedly lets go of my hand, surprised by her own action, but her face is still full of smiles.)",
+        text: "(She grabs my hand in excitement. Her face is full of smiles.)",
         character: "assets/images/characters/seyoun_shy2.png",
         setFlag: "promisedFestival",
         next: "day2_festival_promise_2"
     },
     "day2_festival_promise_2": {
         name: "Seoyeon",
-        text: "\"Really?! It's a promise? Then I'll have to pick out clothes to wear for the festival... Ah, no! It's nothing! Anyway, I'll be looking forward to it!\"",
+        text: "\"Really?! It's a promise! I'm so looking forward to it!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_afternoon"
     },
     "day2_festival_worry": {
         name: "Seoyeon",
-        text: "(She answers bravely, puffing out her chest. But a bit of fatigue is visible in her eyes. She lightly leans her head on my shoulder, as if thankful for my worry. A faint flower scent comes from her hair.)",
+        text: "(She leans her head on my shoulder. A faint flower scent comes from her hair.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_festival_worry_2"
     },
     "day2_festival_worry_2": {
         name: "Seoyeon",
-        text: "\"Yeah, I'll be a bit busy, but... I'll make time to spend with you somehow. With the authority of the student council president! Hehe, just kidding. You'll go with me, right?\"",
+        text: "\"I'll make time somehow. You'll go with me, right?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         setFlag: "promisedFestival",
         next: "day2_afternoon"
@@ -1552,7 +1552,7 @@ const SCENARIO = {
     },
     "day2_lunch_yuna_1_2_2": {
         name: "Yuna",
-        text: "(She stares intently at me. It's as if she's trying to see through my heart.)",
+        text: "(She stares intently at me, as if trying to see through my heart.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_sadsmile.png",
         choices: [
@@ -1569,125 +1569,125 @@ const SCENARIO = {
     },
     "day2_lunch_yuna_1_2_2_no_note": {
         name: "Yuna",
-        text: "\"To have made your way here... are you and I connected after all?\"",
+        text: "\"To have made your way here... are we connected?\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_1_3"
     },
     "day2_lunch_yuna_1_3": {
         name: "Yuna",
-        text: "\"The school's secret... and the link between you and me. I think it's time to tell you about it.\"",
+        text: "\"The school's secret... and the link between us. It's time to tell you.\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2"
     },
     "day2_lunch_yuna_2": {
         name: "Yuna",
-        text: "(She takes out an old book and opens it. Inside, an old photograph is tucked.)",
+        text: "(She opens an old book. Inside is an old photograph.)",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2_2"
     },
     "day2_lunch_yuna_2_2": {
         name: "Yuna",
-        text: "(In the photo, along with the old appearance of our school... a boy who looks exactly like me is standing. I'm overwhelmed with shock and can't speak.)",
+        text: "(In the photo, a boy who looks exactly like me is standing. I'm shocked.)",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2_3"
     },
     "day2_lunch_yuna_2_3": {
         name: "Yuna",
-        text: "\"This boy... do you know who he is? He's a senior who disappeared from this school two years ago.\"",
+        text: "\"This boy... he's a senior who disappeared two years ago.\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2_4"
     },
     "day2_lunch_yuna_2_4": {
         name: "Yuna",
-        text: "(She grips my collar tightly as if she doesn't want to lose me.)",
+        text: "(She grips my collar tightly.)",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2_4_2"
     },
     "day2_lunch_yuna_2_4_2": {
         name: "Yuna",
-        text: "\"He stood up against the school's unfair treatment... and was framed and kicked out. You look so much like that senior.\"",
+        text: "\"He stood up against the school and was kicked out. You look just like him.\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         choices: [
-            { text: "That's impossible! There's no way.", next: "day2_yuna_denial" },
-            { text: "That senior...? Then did you know me?", next: "day2_yuna_accept" }
+            { text: "That's impossible!", next: "day2_yuna_denial" },
+            { text: "That senior...? Did you know me?", next: "day2_yuna_accept" }
         ]
     },
     "day2_yuna_denial": {
         name: "Yuna",
-        text: "(She laughs coldly and puts the photo back in the book. Her gaze becomes indifferent again. She places her hand on my chest and feels my heartbeat. Her touch is as cold as ice.)",
+        text: "(She laughs coldly. She feels my heartbeat with a cold touch.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "day2_yuna_denial_2"
     },
     "day2_yuna_denial_2": {
         name: "Yuna",
-        text: "\"It must be hard to believe. But this actually happened. You be careful too. The school won't stay still if you stand out. You might have already caught their eye.\"",
+        text: "\"It's hard to believe, but it happened. Be careful. The school is watching you.\"",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "knowsSecret",
         next: "day2_afternoon"
     },
     "day2_yuna_accept": {
         name: "Yuna",
-        text: "(Dew forms in her eyes. She softly caresses my cheek and whispers. Her voice trembles faintly. She grips my collar tightly as if she doesn't want to lose me.)",
+        text: "(Dew forms in her eyes. She caresses my cheek and whispers.)",
         character: "assets/images/characters/yuna_sad.png",
         next: "day2_yuna_accept_2"
     },
     "day2_yuna_accept_2": {
         name: "Yuna",
-        text: "\"That senior... was someone very precious to me. Seeing you keeps making me think of him... I want to protect you this time. So that you, at least, don't get hurt.\"",
+        text: "\"He was precious to me. I want to protect you this time.\"",
         character: "assets/images/characters/yuna_sad.png",
         setFlag: "knowsSecret",
         next: "day2_afternoon"
     },
     "day2_lunch_volleyball": {
         name: "Me",
-        text: "(I ran to the gym and played volleyball, sweating with the kids led by Dain. Receiving and passing the flying ball made my stray thoughts disappear and I felt refreshed. When I succeeded in a powerful spike, Dain hugged me and cheered.)",
+        text: "(I play volleyball with the kids led by Dain. Sweating makes me feel refreshed.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_lunch_volleyball_2"
     },
     "day2_lunch_volleyball_2": {
         name: "Dain",
-        text: "\"Wow! Transfer student, your spike skill is awesome! I appoint you as our team's ace! Today was really the best!\"",
+        text: "\"Wow! Your spike is awesome! I appoint you as our ace!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_afternoon"
     },
     "day2_lunch_nurse": {
         name: "Me",
-        text: "(Perhaps due to the tension accumulated since yesterday, my head is throbbing. I moved my steps to the quiet nurse's office.)",
+        text: "(My head is throbbing. I head to the quiet nurse's office.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_2"
     },
     "day2_lunch_nurse_2": {
         name: "Nurse",
-        text: "\"Oh, what a cute transfer student. Your face is red... I wonder if you're sick, or if your heart is fluttering because you saw my face?\"",
+        text: "\"Oh, cute transfer student. Is your heart fluttering because of me?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_3": {
         name: "Nurse",
-        text: "(The nurse guides me to the bed with a warm smile. A cozy herbal scent comes from her touch.)",
+        text: "(The nurse guides me to the bed with a warm smile.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         choices: [
-            { text: "My head hurts a bit.", next: "day2_lunch_nurse_head" },
-            { text: "I just want to rest for a bit.", next: "day2_lunch_nurse_rest" }
+            { text: "My head hurts.", next: "day2_lunch_nurse_head" },
+            { text: "I want to rest.", next: "day2_lunch_nurse_rest" }
         ]
     },
     "day2_lunch_nurse_head": {
         name: "Nurse",
-        text: "\"It seems like a tension headache. You must have overdone it since the first day of transfer. Here, take this medicine and sleep for a bit, and you'll feel better.\"",
+        text: "\"It's a tension headache. Take this medicine and sleep for a bit.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_rest": {
         name: "Nurse",
-        text: "\"Hehe, there are days like that. Our school... has a strong energy. Close the curtain here and rest comfortably.\"",
+        text: "\"Hehe, there are days like that. Close the curtain and rest.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         choices: [
@@ -1697,19 +1697,19 @@ const SCENARIO = {
     },
     "day2_lunch_nurse_rest_yuna": {
         name: "Me",
-        text: "\"(Strong energy...? Yuna's words come to mind. Is there really something about this school?)\"",
+        text: "\"(Strong energy...? Yuna's words come to mind.)\"",
         background: "assets/images/background/nurse_room.jpg",
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_sleep": {
         name: "Me",
-        text: "(I fell into a deep sleep without realizing it due to the coziness of the blanket the nurse covered me with. In the silence of the nurse's office, I feel yesterday's fatigue being washed away.)",
+        text: "(I fall into a deep sleep. The fatigue from yesterday washes away.)",
         background: "assets/images/background/nurse_room.jpg",
         next: "day2_lunch_nurse_wake"
     },
     "day2_lunch_nurse_wake": {
         name: "Me",
-        text: "(How long did I sleep... When I open my eyes, the red sunset is seeping through the window. The nurse is sitting at her desk, smiling kindly at me.)",
+        text: "(When I wake up, the sunset is seeping through the window. The nurse is smiling at me.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -1717,7 +1717,7 @@ const SCENARIO = {
     },
     "day2_lunch_nurse_wake_2": {
         name: "Nurse",
-        text: "\"Oh, are you awake now? You slept really soundly. It's almost time to go home. How is your body?\"",
+        text: "\"Are you awake? You slept soundly. It's almost time to go home.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -1726,7 +1726,7 @@ const SCENARIO = {
     "nurse_wake_free_talk": {
         type: "free_talk",
         name: "Nurse",
-        text: "\"Hehe, you still have that sleepy face. Want to talk with me a bit more before going home?\"",
+        text: "\"You still look sleepy. Want to talk a bit more?\"",
         context: "The nurse's office at sunset, a situation where the protagonist and the nurse are left alone after just waking up.",
         personality: "A languid, sexy, yet kind nurse. She feels a strange charm from the protagonist and has a bold personality that openly seduces him.",
         extra_guideline: "As a mature adult, openly seduce the protagonist and create a risky atmosphere. Don't be flustered by the user's mature jokes or provocative remarks, but rather show a bold and provocative reaction enough to fluster the protagonist even more. Fully radiate mature charm and pull the romantic tension to the maximum.",
@@ -1735,18 +1735,18 @@ const SCENARIO = {
     },
     "nurse_contact_exchange": {
         name: "Nurse",
-        text: "(The nurse takes out a smartphone from her gown pocket and leans slightly toward me. Her scent tickles the tip of my nose.) \"Hey, Transfer Student. If you're sick again at night or can't sleep... do you want to contact me? I'll give you my personal number specially.\"",
+        text: "(The nurse leans toward me, her scent tickling my nose.) \"If you can't sleep at night... want to contact me? I'll give you my number.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         choices: [
-            { text: "Yes, I'd definitely like to know your number, Teacher.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
-            { text: "Ah... I think it would be a bit rude to contact you outside of school.", next: "nurse_contact_fail" }
+            { text: "Yes, I'd like that.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { text: "I think it's better not to.", next: "nurse_contact_fail" }
         ]
     },
     "nurse_contact_success": {
         name: "Nurse",
-        text: "(She takes my smartphone, enters the number herself, and sends a wink.) \"Hehe, good boy. Then... I'll be waiting tonight? Contact me not too late.\"",
+        text: "(She enters her number in my phone and winks.) \"Good boy. I'll be waiting tonight.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -1754,7 +1754,7 @@ const SCENARIO = {
     },
     "nurse_name_ask": {
         name: "Nurse",
-        text: "\"By the way... come to think of it, I haven't heard your name yet? Transfer Student, what's your name?\"",
+        text: "\"By the way... what's your name?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -1765,7 +1765,7 @@ const SCENARIO = {
     },
     "nurse_name_share": {
         name: "Nurse",
-        text: "\"{name}... Hehe, even the name is cute. Then {name}, I'll be waiting for your contact tonight?\"",
+        text: "\"{name}... Even the name is cute. I'll be waiting for your contact.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -1773,7 +1773,7 @@ const SCENARIO = {
     },
     "nurse_contact_fail": {
         name: "Nurse",
-        text: "(She bites her lip slightly as if a bit disappointed, but soon regains her relaxed smile.) \"Oh my, you're unexpectedly conservative? Well, that's cute too. Tell me anytime if you change your mind.\"",
+        text: "(She looks a bit disappointed but soon smiles.) \"Oh, you're conservative? That's cute too. Tell me if you change your mind.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -1781,7 +1781,7 @@ const SCENARIO = {
     },
     "day2_afternoon": {
         name: "Me",
-        text: "(All afternoon classes ended, and the time for the sunset has come again. It seems like more things happened today than yesterday.)",
+        text: "(Classes ended, and it's sunset. More things happened today than yesterday.)",
         background: "assets/images/background/room_school.png",
         character: null,
         sunset: true,
@@ -1792,14 +1792,14 @@ const SCENARIO = {
     },
     "day2_afternoon_dain": {
         name: "Me",
-        text: "(Dain said she has volleyball club practice and ran to the gym, waving her hand lively.)",
+        text: "(Dain ran to the gym for practice, waving her hand.)",
         background: "assets/images/background/room_school.png",
         sunset: true,
         next: "day2_afternoon_2"
     },
     "day2_afternoon_2": {
         name: "Me",
-        text: "(I'm about to leave the classroom with my bag, but two girls call me at the same time. A strange tension flows in the hallway.)",
+        text: "(I'm about to leave, but two girls call me at the same time. A strange tension flows.)",
         background: "assets/images/background/load_school.png",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
@@ -1810,7 +1810,7 @@ const SCENARIO = {
     },
     "day2_afternoon_2_2": {
         name: "Me",
-        text: "\"(Uh... the atmosphere is a bit strange? Who should I go to first?)\"",
+        text: "\"(The atmosphere is strange. Who should I go to?)\"",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1820,8 +1820,8 @@ const SCENARIO = {
             { text: "Approach Seoyeon.", next: "day2_final_seoyeon" },
             { text: "Approach Yuna.", next: "day2_final_yuna", condition: "metYuna" },
             { text: "Approach the unfamiliar girl.", next: "day2_final_yuna_new", excludeCondition: "metYuna" },
-            { text: "Go to Dain waiting in the gym.", next: "day2_final_dain", condition: "metDain" },
-            { text: "Pretend not to know both and hurry home.", next: "day2_final_run" }
+            { text: "Go to Dain in the gym.", next: "day2_final_dain", condition: "metDain" },
+            { text: "Pretend not to know and go home.", next: "day2_final_run" }
         ]
     },
     "day2_final_yuna_new": {
