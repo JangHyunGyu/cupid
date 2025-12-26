@@ -398,7 +398,7 @@
     },
     "lunch_time_2": {
         name: "나",
-        text: "(나는 어떻게 할까? 창밖으로 보이는 운동장에는 벌써 배구공을 주고받는 아이들이 보인다. 배꼽시계가 요란하게 울린다.)",
+        text: "(나는 어떻게 할까? 창밖으로 보이는 운동장에는 벌써 축구공을 차며 뛰어다니는 아이들이 보인다. 배꼽시계가 요란하게 울린다.)",
         choices: [
             { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone", setFlag: "metYuna" },
@@ -677,21 +677,27 @@
     },
     "lunch_dain": {
         name: "나",
-        text: "(운동장으로 나가자 활기찬 기운이 가득하다. 그중에서도 유독 눈에 띄는 한 소녀가 있다. 짧은 머리에 건강미 넘치는 그녀는 아이들 사이에서 시원시원하게 스파이크를 때리고 있다.)",
+        text: "(운동장으로 나가자 활기찬 기운이 가득하다. 아이들이 축구와 농구를 하며 즐거운 시간을 보내고 있다. 딱히 내가 끼어들 자리는 보이지 않는 것 같다.)",
+        background: "assets/images/background/playground.png",
+        next: "lunch_dain_to_gym"
+    },
+    "lunch_dain_to_gym": {
+        name: "나",
+        text: "(그때, 근처 체육관 쪽에서 배구공이 바닥에 튀는 경쾌한 소리가 들려온다. 호기심이 생긴 나는 체육관으로 발걸음을 옮겼다.)",
         background: "assets/images/background/playground.png",
         next: "lunch_dain_2"
     },
     "lunch_dain_2": {
         name: "???",
-        text: "(그녀가 나를 발견하고는 환하게 웃으며 손을 흔든다. 그녀의 미소는 태양처럼 눈부시다.)",
-        background: "assets/images/background/playground.png",
+        text: "(체육관 문을 열자, 그곳에 그녀가 있었다. 짧은 머리에 건강미 넘치는 그녀는 코트 위에서 시원시원하게 스파이크를 때리고 있다. 그녀가 나를 발견하고는 환하게 웃으며 손을 흔든다.)",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_3"
     },
     "lunch_dain_3": {
         name: "???",
         text: "\"어이, 전학생! 거기서 구경만 하지 말고 이리 와서 한 판 붙자! 너, 운동 좀 하게 생겼는데?\"",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         choices: [
             { text: "내 이름은 '{name}'야.", next: "dain_name_share", setFlag: "knowsName_다인" },
@@ -702,28 +708,15 @@
     "dain_name_share": {
         name: "다인",
         text: "\"{name}? 멋진 이름이네! 왠지 운동 잘할 것 같은 이름인데? 난 배구부 다인이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라구!\"",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_move_gym"
+        next: "lunch_dain_gym_2"
     },
     "lunch_dain_4": {
         name: "다인",
         text: "\"난 배구부 '다인'이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라구!\"",
-        background: "assets/images/background/playground.png",
-        character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_move_gym"
-    },
-    "lunch_dain_move_gym": {
-        name: "다인",
-        text: "\"근데 여기서 하기엔 햇볕이 너무 뜨겁네. 우리 체육관으로 가자! 거기라면 제대로 된 네트도 있고, 내 실력을 더 잘 보여줄 수 있거든!\"",
-        background: "assets/images/background/playground.png",
-        character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_gym"
-    },
-    "lunch_dain_gym": {
-        name: "나",
-        text: "(다인이를 따라 도착한 체육관. 높은 천장과 매끄러운 나무 바닥, 그리고 배구공이 튀는 경쾌한 소리가 울려 퍼진다.)",
         background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_gym_2"
     },
     "lunch_dain_gym_2": {

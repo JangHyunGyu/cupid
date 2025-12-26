@@ -389,7 +389,7 @@ const SCENARIO = {
     },
     "lunch_time_2": {
         name: "Me",
-        text: "(What should I do? Through the window, I can already see kids passing a volleyball back and forth on the playground. My stomach clock is ringing loudly.)",
+        text: "(What should I do? Through the window, I can already see kids running around kicking a soccer ball on the playground. My stomach clock is ringing loudly.)",
         choices: [
             { text: "Approach Seoyeon and suggest having lunch together.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "Look around the school alone and find a quiet place to eat.", next: "lunch_alone", setFlag: "metYuna" },
@@ -637,21 +637,27 @@ const SCENARIO = {
     },
     "lunch_dain": {
         name: "Me",
-        text: "(Going out to the playground, it's full of lively energy. Among them, there's one girl who particularly stands out. With short hair and full of healthy beauty, she is coolly spiking the ball among the kids.)",
+        text: "(Going out to the playground, it's full of lively energy. Kids are having a great time playing soccer and basketball. It doesn't look like there's a place for me to join in.)",
+        background: "assets/images/background/playground.png",
+        next: "lunch_dain_to_gym"
+    },
+    "lunch_dain_to_gym": {
+        name: "Me",
+        text: "(Just then, the cheerful sound of a volleyball bouncing comes from the nearby gym. Feeling curious, I moved my steps toward the gym.)",
         background: "assets/images/background/playground.png",
         next: "lunch_dain_2"
     },
     "lunch_dain_2": {
         name: "???",
-        text: "(She discovers me and waves her hand with a bright smile. Her smile is as dazzling as the sun.)",
-        background: "assets/images/background/playground.png",
+        text: "(As I open the gym door, she is there. With short hair and full of healthy beauty, she is coolly spiking the ball on the court. She discovers me and waves her hand with a bright smile.)",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_3"
     },
     "lunch_dain_3": {
         name: "???",
         text: "\"Hey, transfer student! Don't just watch from there, come here and let's have a match! You look like you can exercise a bit?\"",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         choices: [
             { text: "My name is '{name}'.", next: "dain_name_share", setFlag: "knowsName_Dain" },
@@ -662,28 +668,15 @@ const SCENARIO = {
     "dain_name_share": {
         name: "Dain",
         text: "\"{name}? Cool name! It sounds like a name that's good at sports! I'm Dain from the volleyball club. There's no one in our school with a better jump than me, so be prepared!\"",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_move_gym"
+        next: "lunch_dain_gym_2"
     },
     "lunch_dain_4": {
         name: "Dain",
         text: "\"I'm Dain from the volleyball club. There's no one in our school with a better jump than me, so be prepared!\"",
-        background: "assets/images/background/playground.png",
-        character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_move_gym"
-    },
-    "lunch_dain_move_gym": {
-        name: "Dain",
-        text: "\"But it's too hot to play here. Let's go to the gym! There's a proper net there, and I can show you my real skills better!\"",
-        background: "assets/images/background/playground.png",
-        character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_gym"
-    },
-    "lunch_dain_gym": {
-        name: "Me",
-        text: "(The gym I arrived at following Dain. The high ceiling, smooth wooden floor, and the cheerful sound of volleyballs bouncing echo around.)",
         background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_gym_2"
     },
     "lunch_dain_gym_2": {
