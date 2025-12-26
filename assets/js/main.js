@@ -41,6 +41,7 @@ async function renderScene(sceneId) {
     
     // 대화창 및 선택지 초기화
     dialogueBox.style.display = 'block';
+    dialogueBox.style.pointerEvents = 'auto';
     choiceContainer.style.display = 'none';
     chatContainer.style.display = 'none';
     nameInputContainer.style.display = 'none';
@@ -109,6 +110,7 @@ async function renderScene(sceneId) {
     if (scene.type === 'free_talk') {
         startFreeTalk(scene);
     } else if (scene.type === 'input') {
+        dialogueBox.style.pointerEvents = 'none'; // 클릭이 입력창으로 전달되도록 설정
         await typeText(scene.text);
         nameInputContainer.style.display = 'block';
         playerNameInput.value = "";
@@ -263,16 +265,29 @@ nameConfirmBtn.onclick = () => {
     
     if (!nameRegex.test(name)) {
         alert("이름은 한글 또는 영문 1~4자로 입력해주세요. (숫자, 특수문자 제외)");
+        playerNameInput.focus();
         return;
     }
     
     gameState.playerName = name;
     nameInputContainer.style.display = 'none';
+    dialogueBox.style.pointerEvents = 'auto';
     
     const scene = SCENARIO[currentSceneId];
     if (scene.next) {
         renderScene(scene.next);
     }
+};
+
+// 이름 입력창 포커스 유지 및 엔터키 처리
+playerNameInput.onblur = () => {
+    if (nameInputContainer.style.display === 'block') {
+        setTimeout(() => playerNameInput.focus(), 10);
+    }
+};
+
+playerNameInput.onkeypress = (e) => {
+    if (e.key === 'Enter') nameConfirmBtn.click();
 };
 
 function checkChoices() {
