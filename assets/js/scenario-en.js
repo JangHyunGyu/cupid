@@ -1811,10 +1811,10 @@ const SCENARIO = {
         },
         sunset: true,
         choices: [
-            { text: "Approach Seoyeon.", next: "day2_final_seoyeon" },
-            { text: "Approach Yuna.", next: "day2_final_yuna", condition: "metYuna" },
-            { text: "Approach the unfamiliar girl.", next: "day2_final_yuna_new", excludeCondition: "metYuna" },
-            { text: "Go to Dain in the gym.", next: "day2_final_dain", condition: "metDain" },
+            { text: "Approach Seoyeon.", next: "day2_final_seoyeon", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "Approach Yuna.", next: "day2_final_yuna", condition: "metYuna", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: 15 } } },
+            { text: "Approach the unfamiliar girl.", next: "day2_final_yuna_new", excludeCondition: "metYuna", stats: { Seoyeon: { affinity: -30 } } },
+            { text: "Go to Dain in the gym.", next: "day2_final_dain", condition: "metDain", stats: { Seoyeon: { affinity: -30 }, Dain: { affinity: 15 } } },
             { text: "Pretend not to know and go home.", next: "day2_final_run" }
         ]
     },
@@ -1851,7 +1851,7 @@ const SCENARIO = {
         sunset: true,
         choices: [
             { text: "Seoyeon, I'm sorry... I'll go with you after all.", next: "day2_final_seoyeon_back_yuna_new" },
-            { text: "I'm sorry. But I have something to talk about with this girl.", next: "day2_final_yuna_new_2" }
+            { text: "I'm sorry. But I have something to talk about with this girl.", next: "day2_final_yuna_new_2", stats: { Seoyeon: { affinity: -70 } } }
         ]
     },
     "day2_final_seoyeon_back_yuna_new": {
@@ -2025,7 +2025,7 @@ const SCENARIO = {
         sunset: true,
         choices: [
             { text: "Seoyeon, I'm sorry... I'll go with you after all.", next: "day2_final_seoyeon_back_yuna" },
-            { text: "I'm sorry. But I have something to talk about with Yuna.", next: "day2_final_yuna_2" }
+            { text: "I'm sorry. But I have something to talk about with Yuna.", next: "day2_final_yuna_2", stats: { Seoyeon: { affinity: -70 } } }
         ]
     },
     "day2_final_seoyeon_back_yuna": {
@@ -2158,7 +2158,7 @@ const SCENARIO = {
         sunset: true,
         choices: [
             { text: "Seoyeon, don't cry... I'll go with you.", next: "day2_final_seoyeon_back_dain" },
-            { text: "I'm sorry. But my promise with Dain comes first.", next: "day2_final_dain_react" }
+            { text: "I'm sorry. But my promise with Dain comes first.", next: "day2_final_dain_react", stats: { Seoyeon: { affinity: -70 } } }
         ]
     },
     "day2_final_seoyeon_back_dain": {
@@ -2276,6 +2276,7 @@ const SCENARIO = {
         text: "\"(I promised to go to the festival with Seoyeon... It's going to be hard to see her tomorrow...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
+        stats: { Seoyeon: { affinity: -50 } },
         next: "day2_final_run_dain_check"
     },
     "day2_final_run_dain_check": {
@@ -2293,6 +2294,7 @@ const SCENARIO = {
         text: "\"(I also promised to eat tteokbokki with Dain... She must be waiting in the gym. I'm sorry...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
+        stats: { Dain: { affinity: -50 } },
         next: "day2_final_run_yuna_check"
     },
     "day2_final_run_yuna_check": {

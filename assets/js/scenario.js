@@ -1967,10 +1967,10 @@
         },
         sunset: true,
         choices: [
-            { text: "서연이에게 다가간다.", next: "day2_final_seoyeon" },
-            { text: "유나에게 다가간다.", next: "day2_final_yuna", condition: "metYuna" },
-            { text: "낯선 소녀에게 다가간다.", next: "day2_final_yuna_new", excludeCondition: "metYuna" },
-            { text: "체육관의 다인에게 간다.", next: "day2_final_dain", condition: "metDain" },
+            { text: "서연이에게 다가간다.", next: "day2_final_seoyeon", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "유나에게 다가간다.", next: "day2_final_yuna", condition: "metYuna", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: 15 } } },
+            { text: "낯선 소녀에게 다가간다.", next: "day2_final_yuna_new", excludeCondition: "metYuna", stats: { Seoyeon: { affinity: -30 } } },
+            { text: "체육관의 다인에게 간다.", next: "day2_final_dain", condition: "metDain", stats: { Seoyeon: { affinity: -30 }, Dain: { affinity: 15 } } },
             { text: "모른 척하고 하교한다.", next: "day2_final_run" }
         ]
     },
@@ -2007,7 +2007,7 @@
         sunset: true,
         choices: [
             { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna_new" },
-            { text: "미안해. 하지만 할 이야기가 있어.", next: "day2_final_yuna_new_2" }
+            { text: "미안해. 하지만 할 이야기가 있어.", next: "day2_final_yuna_new_2", stats: { Seoyeon: { affinity: -70 } } }
         ]
     },
     "day2_final_seoyeon_back_yuna_new": {
@@ -2181,7 +2181,7 @@
         sunset: true,
         choices: [
             { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna" },
-            { text: "미안해. 하지만 할 이야기가 있어.", next: "day2_final_yuna_2" }
+            { text: "미안해. 하지만 할 이야기가 있어.", next: "day2_final_yuna_2", stats: { Seoyeon: { affinity: -70 } } }
         ]
     },
     "day2_final_seoyeon_back_yuna": {
@@ -2314,7 +2314,7 @@
         sunset: true,
         choices: [
             { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_dain" },
-            { text: "미안해. 하지만 다인이랑 약속이 먼저야.", next: "day2_final_dain_react" }
+            { text: "미안해. 하지만 다인이랑 약속이 먼저야.", next: "day2_final_dain_react", stats: { Seoyeon: { affinity: -70 } } }
         ]
     },
     "day2_final_seoyeon_back_dain": {
@@ -2432,6 +2432,7 @@
         text: "\"(서연이랑 축제 약속도 했는데... 내일 얼굴 보기가 정말 힘들 것 같아...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
+        stats: { Seoyeon: { affinity: -50 } },
         next: "day2_final_run_dain_check"
     },
     "day2_final_run_dain_check": {
@@ -2449,6 +2450,7 @@
         text: "\"(다인이랑 떡볶이 먹기로 약속했는데... 계속 기다리고 있겠지? 미안하네...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
+        stats: { Dain: { affinity: -50 } },
         next: "day2_final_run_yuna_check"
     },
     "day2_final_run_yuna_check": {
