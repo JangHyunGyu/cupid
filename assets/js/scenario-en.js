@@ -393,7 +393,7 @@ const SCENARIO = {
         choices: [
             { text: "Approach Seoyeon and suggest having lunch together.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "Look around the school alone and find a quiet place to eat.", next: "lunch_alone", setFlag: "metYuna" },
-            { text: "Go out to the playground and hang out with the lively kids.", next: "lunch_dain", setFlag: "metDain" },
+            { text: "Follow the sound of a volleyball coming from the gym.", next: "lunch_dain", setFlag: "metDain" },
             { text: "Run to the snack bar and buy the legendary 'Chocolate Conch Bread'.", next: "lunch_store" },
             { text: "Stay in the classroom and catch up on some sleep. (I was too restless yesterday...)", next: "lunch_sleep" }
         ]
@@ -637,13 +637,7 @@ const SCENARIO = {
     },
     "lunch_dain": {
         name: "Me",
-        text: "(The playground is full of energy. Kids are playing soccer and basketball. It doesn't look like there's a place for me.)",
-        background: "assets/images/background/playground.png",
-        next: "lunch_dain_to_gym"
-    },
-    "lunch_dain_to_gym": {
-        name: "Me",
-        text: "(Just then, the sound of a volleyball comes from the gym. I head toward the gym.)",
+        text: "(The sound of a volleyball comes from the gym. I head toward the gym.)",
         background: "assets/images/background/playground.png",
         next: "lunch_dain_2"
     },
@@ -1883,7 +1877,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon": {
         name: "Seoyeon",
-        text: "(As I approach Seoyeon, she smiles as if relieved. But her gaze is sharp, perhaps conscious of the girl standing next to her.)",
+        text: "(Seoyeon smiles as I approach. She seems conscious of the girl next to her.)",
         characters: {
             left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1896,7 +1890,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon_met_yuna": {
         name: "Seoyeon",
-        text: "(As I approach Seoyeon, she smiles as if relieved. But her gaze is sharp, perhaps conscious of Yuna.)",
+        text: "(Seoyeon smiles as I approach. She seems conscious of Yuna.)",
         characters: {
             left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1906,7 +1900,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon_new_yuna": {
         name: "Seoyeon",
-        text: "(As I approach Seoyeon, she smiles as if relieved. But her gaze is sharp, perhaps conscious of the girl standing next to her.)",
+        text: "(Seoyeon smiles as I approach. She seems conscious of the girl next to her.)",
         characters: {
             left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1916,7 +1910,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon_yuna_react": {
         name: "Me",
-        text: "(As I approach, the girl standing next to her speaks in a low voice.)",
+        text: "(The girl next to her speaks in a low voice.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -1929,7 +1923,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon_yuna_react_met": {
         name: "Yuna",
-        text: "\"...Fine, if that's your choice, there's nothing I can do. But be careful. The stronger the light, the deeper the shadow.\"",
+        text: "\"...Fine, if that's your choice. But be careful.\"",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -1939,7 +1933,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon_yuna_react_new": {
         name: "???",
-        text: "\"...Fine, if that's your choice, there's nothing I can do. But be careful. The stronger the light, the deeper the shadow.\"",
+        text: "\"...Fine, if that's your choice. But be careful.\"",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -1949,7 +1943,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon_2": {
         name: "Seoyeon",
-        text: "(She links her arm with mine and glares at the girl standing next to her. Strength enters her hand.)",
+        text: "(She links her arm with mine and glares at the girl.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1959,7 +1953,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon_2_2": {
         name: "Seoyeon",
-        text: "\"Transfer student, we have a student council meeting today. Can you come with me?\"",
+        text: "\"Transfer student, we have a student council meeting. Come with me.\"",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1969,7 +1963,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon_3": {
         name: "Seoyeon",
-        text: "\"There's an important agenda. Yuna, I'll be taking the transfer student with me.\"",
+        text: "\"It's important. Yuna, I'm taking him with me.\"",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1982,7 +1976,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon_3_react": {
         name: "Me",
-        text: "\"(Yuna...? Was that girl's name Yuna? Seoyeon seems to know her.)\"",
+        text: "\"(Yuna...? Seoyeon seems to know her.)\"",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1992,7 +1986,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon_4": {
         name: "Me",
-        text: "(I headed to the student council room with Seoyeon. The meeting lasted until late, but it wasn't hard as long as I was with her. After the meeting, we walked side by side along the night path, talking about what to wear for the festival.)",
+        text: "(I head to the student council room with Seoyeon. After the meeting, we walk home talking about the festival.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_laugh.png",
         night: true,
@@ -2056,7 +2050,7 @@ const SCENARIO = {
     },
     "day2_final_yuna_2_2": {
         name: "Yuna",
-        text: "\"Hehe, as expected, you're different from the others.\"",
+        text: "\"Hehe, you're different from the others.\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2066,7 +2060,7 @@ const SCENARIO = {
     },
     "day2_final_yuna_3": {
         name: "Yuna",
-        text: "\"Seoyeon, I'm sorry, but this person has something to talk about with me.\"",
+        text: "\"Seoyeon, sorry, but he has something to talk about with me.\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2079,7 +2073,7 @@ const SCENARIO = {
     },
     "day2_final_yuna_secret": {
         name: "Yuna",
-        text: "\"About the 'real' face of the school. We should finish the conversation we were having earlier, shouldn't we?\"",
+        text: "\"About the 'real' face of the school. Let's finish our talk.\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2089,7 +2083,7 @@ const SCENARIO = {
     },
     "day2_final_yuna_no_secret": {
         name: "Yuna",
-        text: "\"There's something you absolutely need to know about our school. It's a very interesting story.\"",
+        text: "\"There's something you need to know about our school.\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2099,7 +2093,7 @@ const SCENARIO = {
     },
     "day2_final_yuna_4": {
         name: "Me",
-        text: "(Walking down the dark hallway with Yuna, I listened to the truth about the school she was telling me. Her voice was cold, but I could feel a slight tremor in the hand I was holding. Before we knew it, we were standing in front of the school gate, where the darkness was thick.)",
+        text: "(I listen to the truth about the school from Yuna. We stand in front of the gate in the thick darkness.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
@@ -2107,7 +2101,7 @@ const SCENARIO = {
     },
     "day2_final_dain": {
         name: "Me",
-        text: "(Leaving behind the stinging gazes of Seoyeon and the girl standing next to her, I walked towards Dain, who was waving from the gym.)",
+        text: "(I walk towards Dain, leaving Seoyeon and the other girl behind.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2120,7 +2114,7 @@ const SCENARIO = {
     },
     "day2_final_dain_met_yuna": {
         name: "Me",
-        text: "(Leaving behind the stinging gazes of Seoyeon and Yuna, I walked towards Dain, who was waving from the gym.)",
+        text: "(I walk towards Dain, leaving Seoyeon and Yuna behind.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2133,7 +2127,7 @@ const SCENARIO = {
     },
     "day2_final_dain_new_yuna": {
         name: "Me",
-        text: "(Leaving behind the stinging gazes of Seoyeon and the girl standing next to her, I walked towards Dain, who was waving from the gym.)",
+        text: "(I walk towards Dain, leaving Seoyeon and the other girl behind.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2146,7 +2140,7 @@ const SCENARIO = {
     },
     "day2_final_dain_betrayal": {
         name: "Seoyeon",
-        text: "\"Wait, transfer student! You said you'd go to the festival with me! But now you're going to Dain...?\"",
+        text: "\"Wait! You promised to go to the festival with me!\"",
         characters: {
             left: "assets/images/characters/seyoun_angry.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2156,20 +2150,20 @@ const SCENARIO = {
     },
     "day2_final_dain_betrayal_2": {
         name: "Seoyeon",
-        text: "\"Really... that's too much. Was I the only one who was serious? (Thick teardrops begin to fall from Seoyeon's eyes.)\"",
+        text: "\"Was I the only one who was serious? (Tears fall from her eyes.)\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
         sunset: true,
         choices: [
-            { text: "Seoyeon, don't cry... I was wrong. I'll go with you.", next: "day2_final_seoyeon_back_dain" },
-            { text: "I'm sorry, Seoyeon. But my promise with Dain comes first.", next: "day2_final_dain_react" }
+            { text: "Seoyeon, don't cry... I'll go with you.", next: "day2_final_seoyeon_back_dain" },
+            { text: "I'm sorry. But my promise with Dain comes first.", next: "day2_final_dain_react" }
         ]
     },
     "day2_final_seoyeon_back_dain": {
         name: "Dain",
-        text: "\"What~ Transfer student! You can't make Seoyeon cry! Fine, I'll let Seoyeon have you today, so you have to play with me tomorrow, okay?\"",
+        text: "\"What! You can't make Seoyeon cry! I'll let her have you today.\"",
         characters: {
             left: "assets/images/characters/seyoun_shy.png",
             right: "assets/images/characters/dain_nomal.png"
@@ -2179,7 +2173,7 @@ const SCENARIO = {
     },
     "day2_final_dain_react": {
         name: "Me",
-        text: "(I ran to Dain, leaving behind the gazes of Seoyeon and the girl standing next to her. A low voice can be heard from behind.)",
+        text: "(I run to Dain. A low voice can be heard from behind.)",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2192,7 +2186,7 @@ const SCENARIO = {
     },
     "day2_final_dain_react_yuna_met": {
         name: "Yuna",
-        text: "\"Hehe... I guess that kind of energetic type was your preference after all. Seoyeon, it looks like we both got dumped.\"",
+        text: "\"Hehe... I guess you like that type. Seoyeon, we both got dumped.\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2202,7 +2196,7 @@ const SCENARIO = {
     },
     "day2_final_dain_react_yuna_new": {
         name: "???",
-        text: "\"Hehe... I guess that kind of energetic type was your preference after all. Seoyeon, it looks like we both got dumped.\"",
+        text: "\"Hehe... I guess you like that type. Seoyeon, we both got dumped.\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2212,7 +2206,7 @@ const SCENARIO = {
     },
     "day2_final_dain_start": {
         name: "Dain",
-        text: "(Turning towards the gym, Dain is holding a volleyball and waving at me. Her healthy smile sparkles in the sunset.)",
+        text: "(Dain is holding a volleyball and waving at me.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -2220,21 +2214,21 @@ const SCENARIO = {
     },
     "day2_final_dain_2": {
         name: "Dain",
-        text: "\"Hey! Transfer student! I was waiting for you after practice! You didn't forget we were going to eat tteokbokki today, right?\"",
+        text: "\"Hey! I was waiting for you! Let's go eat tteokbokki!\"",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "day2_final_dain_3"
     },
     "day2_final_dain_3": {
         name: "Me",
-        text: "(I ran to Dain, leaving behind the gazes of Seoyeon and Yuna. Her energetic energy makes my complicated heart feel relieved in an instant.)",
+        text: "(I run to Dain. My complicated heart feels relieved.)",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "day2_final_dain_4"
     },
     "day2_final_dain_4": {
         name: "Me",
-        text: "(We ate tteokbokki at the snack bar in front of the school and talked about volleyball. With Dain, it feels like any worry will disappear soon.)",
+        text: "(We ate tteokbokki and talked about volleyball. My worries disappear.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -2245,7 +2239,7 @@ const SCENARIO = {
     },
     "day2_final_dain_4_again": {
         name: "Dain",
-        text: "\"Yesterday and today, eating tteokbokki with you has been the best! Can we... come together tomorrow too?\"",
+        text: "\"Eating tteokbokki with you is the best! Can we... come together tomorrow too?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -2253,7 +2247,7 @@ const SCENARIO = {
     },
     "day2_final_dain_4_first": {
         name: "Dain",
-        text: "\"I think the tteokbokki tastes much better than usual because I'm eating it with you! Can we... come together tomorrow too?\"",
+        text: "\"It tastes much better because I'm with you! Can we... come together tomorrow too?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -2261,7 +2255,7 @@ const SCENARIO = {
     },
     "day2_final_run": {
         name: "Me",
-        text: "(The gazes of the two were so scary that I unconsciously ran out the back door as if escaping. I thought I heard someone calling me from behind, but I ran without looking back. My heart feels like it's going to burst. I stepped out of the school gate, panting.)",
+        text: "(I run out the back door to escape. My heart is pounding. I step out of the gate, panting.)",
         background: "assets/images/background/school.png",
         character: null,
         sunset: true,
@@ -2269,7 +2263,7 @@ const SCENARIO = {
     },
     "day2_final_run_2": {
         name: "Me",
-        text: "\"(Phew... phew... I'm alive. But how do I go to school tomorrow? I'm already worried sick...)\"",
+        text: "\"(Phew... I'm alive. But how do I go to school tomorrow?)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         choices: [
@@ -2279,14 +2273,14 @@ const SCENARIO = {
     },
     "day2_final_run_seoyeon": {
         name: "Me",
-        text: "\"(I even made a promise to go to the festival with Seoyeon... What if I just run away like this? It's going to be really hard to see her face tomorrow...)\"",
+        text: "\"(I promised to go to the festival with Seoyeon... It's going to be hard to see her tomorrow...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_final_run_dain_check"
     },
     "day2_final_run_dain_check": {
         name: "Me",
-        text: "(Catching my breath, I think back on what happened today.)",
+        text: "(I catch my breath and think back on today.)",
         background: "assets/images/background/school.png",
         sunset: true,
         choices: [
@@ -2296,14 +2290,14 @@ const SCENARIO = {
     },
     "day2_final_run_dain": {
         name: "Me",
-        text: "\"(Come to think of it, I also promised to go eat tteokbokki with Dain... Dain must be waiting in the gym, right? I'm really sorry...)\"",
+        text: "\"(I also promised to eat tteokbokki with Dain... She must be waiting in the gym. I'm sorry...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_final_run_yuna_check"
     },
     "day2_final_run_yuna_check": {
         name: "Me",
-        text: "(I step out of the school gate, catching my breath. The shadow of the school stretches long behind my back.)",
+        text: "(I step out of the gate. The school's shadow stretches long.)",
         background: "assets/images/background/school.png",
         sunset: true,
         choices: [
@@ -2313,14 +2307,14 @@ const SCENARIO = {
     },
     "day2_final_run_yuna": {
         name: "Me",
-        text: "\"(The secret of the school Yuna mentioned... and that desperate look in her eyes saying she would protect me. Is it really right to run away like this?)\"",
+        text: "\"(The secret Yuna mentioned... Is it really okay to run away?)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_ending_pre"
     },
     "day2_ending_pre": {
         name: "Me",
-        text: "(Leaving the school, I look up at the night sky. Countless stars are twinkling and looking down at me. It's only been two days since I transferred... but my life already seems to be caught in a huge whirlpool. What kind of future awaits me?)",
+        text: "(I look up at the night sky. What kind of future awaits me?)",
         background: "assets/images/background/school.png",
         character: null,
         night: true,
@@ -2328,7 +2322,7 @@ const SCENARIO = {
     },
     "home_sequence": {
         name: "Me",
-        text: "(I returned home and threw myself onto the bed. My body feels heavy like wet cotton. I took out my phone and looked at the contact list.)",
+        text: "(I returned home and threw myself onto the bed. I took out my phone.)",
         background: "assets/images/background/room_home.png",
         character: null,
         night: true,
@@ -2350,42 +2344,42 @@ const SCENARIO = {
     },
     "contact_seoyeon": {
         name: "Seoyeon",
-        text: "Seoyeon's contact information has been registered. You can now have a free conversation with her.",
+        text: "You can now have a free conversation with Seoyeon.",
         character: "assets/images/characters/seyoun_nomal.png",
         freeTalk: "Seoyeon",
         next: "contact_menu"
     },
     "contact_yuna": {
         name: "Yuna",
-        text: "Yuna's contact information has been registered. You can now have a free conversation with her.",
+        text: "You can now have a free conversation with Yuna.",
         character: "assets/images/characters/yuna_nomal.png",
         freeTalk: "Yuna",
         next: "contact_menu"
     },
     "contact_dain": {
         name: "Dain",
-        text: "Dain's contact information has been registered. You can now have a free conversation with her.",
+        text: "You can now have a free conversation with Dain.",
         character: "assets/images/characters/dain_nomal.png",
         freeTalk: "Dain",
         next: "contact_menu"
     },
     "contact_teacher": {
         name: "Teacher",
-        text: "The teacher's contact information has been registered. You can now have a free conversation with her.",
+        text: "You can now have a free conversation with the teacher.",
         character: "assets/images/characters/teacher_nomal.png",
         freeTalk: "Teacher",
         next: "contact_menu"
     },
     "contact_nurse": {
         name: "Nurse",
-        text: "The nurse's contact information has been registered. You can now have a free conversation with her.",
+        text: "You can now have a free conversation with the nurse.",
         character: "assets/images/characters/nurse_nomal.png",
         freeTalk: "Nurse",
         next: "contact_menu"
     },
     "end_demo_real": {
         name: "System",
-        text: "(A sweet piano melody flows, leaving a lingering feeling...)",
+        text: "(A sweet piano melody flows...)",
         fade: true,
         tbc: true,
         characters: {
@@ -2404,7 +2398,7 @@ const SCENARIO = {
     },
     "end_demo_real_3": {
         name: "System",
-        text: "Congratulations! You have completed all the scenarios of the demo version.\n\nFluttering romance with Seoyeon, mysterious truth with Yuna, and energetic friendship with Dain... Please look forward to what kind of ending your choices will lead to in the full version! Thank you for playing.",
+        text: "Congratulations! You have completed the demo version.\n\nPlease look forward to the full version! Thank you for playing.",
         character: null,
         fade: true,
         choices: [

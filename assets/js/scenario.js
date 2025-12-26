@@ -402,7 +402,7 @@
         choices: [
             { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone", setFlag: "metYuna" },
-            { text: "운동장으로 나가 활기찬 아이들과 어울린다.", next: "lunch_dain", setFlag: "metDain" },
+            { text: "체육관 쪽에서 들려오는 배구공 소리를 따라가 본다.", next: "lunch_dain", setFlag: "metDain" },
             { text: "매점으로 달려가 전설의 '초코 소라빵'을 사 먹는다.", next: "lunch_store" },
             { text: "교실에 남아서 부족한 잠을 보충한다. (어제 너무 설쳤어...)", next: "lunch_sleep" }
         ]
@@ -677,13 +677,7 @@
     },
     "lunch_dain": {
         name: "나",
-        text: "(운동장으로 나가자 활기찬 기운이 가득하다. 딱히 내가 끼어들 자리는 보이지 않는 것 같다.)",
-        background: "assets/images/background/playground.png",
-        next: "lunch_dain_to_gym"
-    },
-    "lunch_dain_to_gym": {
-        name: "나",
-        text: "(그때, 체육관 쪽에서 배구공이 튀는 소리가 들려온다. 호기심이 생긴 나는 체육관으로 발걸음을 옮겼다.)",
+        text: "(체육관 쪽에서 배구공이 튀는 소리가 들려온다. 나는 소리를 따라 체육관으로 향했다.)",
         background: "assets/images/background/playground.png",
         next: "lunch_dain_2"
     },
