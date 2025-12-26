@@ -1,11 +1,22 @@
+const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
 let currentSceneId = "start";
 let isTyping = false;
 let gameState = {};
+
+// 프리토킹 관련 변수
+let freeTalkTurns = 0;
+const MAX_FREE_TALK_TURNS = 5;
+let freeTalkHistory = [];
+let isFreeTalking = false;
 
 const messageEl = document.getElementById('message');
 const nameTagEl = document.getElementById('name-tag');
 const dialogueBox = document.getElementById('dialogue-box');
 const choiceContainer = document.getElementById('choice-container');
+const chatContainer = document.getElementById('chat-container');
+const chatInput = document.getElementById('chat-input');
+const chatSendBtn = document.getElementById('chat-send');
+const turnCountEl = document.getElementById('turn-count');
 const bgLayer = document.getElementById('background-layer');
 const charSlots = {
     left: document.getElementById('char-left'),
@@ -15,7 +26,7 @@ const charSlots = {
 const fadeLayer = document.getElementById('fade-layer');
 const tbcText = document.getElementById('tbc-text');
 
-function renderScene(sceneId) {
+async function renderScene(sceneId) {
     const scene = SCENARIO[sceneId];
     if (!scene) return;
 
@@ -24,6 +35,8 @@ function renderScene(sceneId) {
     // 대화창 및 선택지 초기화
     dialogueBox.style.display = 'block';
     choiceContainer.style.display = 'none';
+    chatContainer.style.display = 'none';
+    isFreeTalking = false;
     
     // 페이드 아웃 효과 적용
     if (scene.fade || (scene.text && scene.text.includes("페이드 아웃")) || (scene.text && scene.text.includes("어두워집니다"))) {
@@ -79,23 +92,113 @@ function renderScene(sceneId) {
     nameTagEl.textContent = scene.name || "";
     nameTagEl.style.display = scene.name ? 'block' : 'none';
 
-    // 텍스트 타이핑 효과
-    typeText(scene.text);
+    // 프리토킹 모드 확인
+    if (scene.type === 'free_talk') {
+        startFreeTalk(scene);
+    } else {
+        // 텍스트 타이핑 효과
+        await typeText(scene.text);
+    }
+}
+
+function startFreeTalk(scene) {
+    isFreeTalking = true;
+    freeTalkTurns = 0;
+    freeTalkHistory = [];
+    
+    // 시스템 프롬프트 설정
+    const systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
+현재 상황: ${scene.context || "사용자와 대화 중입니다."}
+성격: ${scene.personality || "다정하고 친절한 학생회장"}
+지침: 
+1. 답변은 반드시 1~2문장으로 짧게 하세요.
+2. 게임의 분위기에 맞춰 설레고 다정한 말투를 사용하세요.
+3. AI임을 절대 밝히지 마세요.
+4. 대화는 최대 5턴까지만 가능하며, 자연스럽게 대화를 마무리하는 느낌으로 답변하세요.`;
+
+    freeTalkHistory.push({ role: "system", content: systemPrompt });
+    
+    chatContainer.style.display = 'block';
+    turnCountEl.textContent = MAX_FREE_TALK_TURNS;
+    
+    if (scene.text) {
+        typeText(scene.text);
+        freeTalkHistory.push({ role: "assistant", content: scene.text });
+    }
 }
 
 function typeText(text) {
-    isTyping = true;
-    messageEl.textContent = "";
-    let i = 0;
-    const interval = setInterval(() => {
-        messageEl.textContent += text[i];
-        i++;
-        if (i >= text.length) {
-            clearInterval(interval);
-            isTyping = false;
-        }
-    }, 30);
+    return new Promise((resolve) => {
+        isTyping = true;
+        messageEl.textContent = "";
+        let i = 0;
+        const interval = setInterval(() => {
+            messageEl.textContent += text[i];
+            i++;
+            if (i >= text.length) {
+                clearInterval(interval);
+                isTyping = false;
+                resolve();
+            }
+        }, 30);
+    });
 }
+
+async function sendChatMessage() {
+    const text = chatInput.value.trim();
+    if (!text || freeTalkTurns >= MAX_FREE_TALK_TURNS || isTyping) return;
+    
+    chatInput.value = "";
+    freeTalkTurns++;
+    turnCountEl.textContent = MAX_FREE_TALK_TURNS - freeTalkTurns;
+    
+    // 사용자 메시지 표시
+    nameTagEl.textContent = "나";
+    messageEl.textContent = text;
+    freeTalkHistory.push({ role: "user", content: text });
+    
+    // 로딩 표시
+    chatSendBtn.disabled = true;
+    chatSendBtn.textContent = "생각 중";
+    
+    try {
+        const response = await fetch(API_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ messages: freeTalkHistory })
+        });
+        
+        const data = await response.json();
+        const reply = data?.choices?.[0]?.message?.content?.trim();
+        
+        if (reply) {
+            const scene = SCENARIO[currentSceneId];
+            nameTagEl.textContent = scene.name;
+            await typeText(reply); // 타이핑이 끝날 때까지 기다립니다.
+            freeTalkHistory.push({ role: "assistant", content: reply });
+            
+            if (freeTalkTurns >= MAX_FREE_TALK_TURNS) {
+                // 모든 타이핑이 끝난 후 0.5초 뒤에 안내 문구 표시
+                setTimeout(() => {
+                    chatContainer.style.display = 'none';
+                    isFreeTalking = false;
+                    messageEl.textContent += "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+                }, 500);
+            }
+        }
+    } catch (error) {
+        console.error("AI Chat Error:", error);
+        messageEl.textContent = "대화 도중 오류가 발생했습니다.";
+    } finally {
+        chatSendBtn.disabled = false;
+        chatSendBtn.textContent = "말하기";
+    }
+}
+
+chatSendBtn.onclick = sendChatMessage;
+chatInput.onkeypress = (e) => {
+    if (e.key === 'Enter') sendChatMessage();
+};
 
 function checkChoices() {
     const scene = SCENARIO[currentSceneId];
@@ -132,15 +235,15 @@ function checkChoices() {
     }
 }
 
-dialogueBox.onclick = () => {
-    if (isTyping) return;
+dialogueBox.onclick = async () => {
+    if (isTyping || isFreeTalking) return;
     
     const scene = SCENARIO[currentSceneId];
     if (scene.choices) {
         dialogueBox.style.display = 'none'; // 대화창 숨기기
         checkChoices(); // 선택지 표시
     } else if (scene.next) {
-        renderScene(scene.next);
+        await renderScene(scene.next);
     } else {
         // 다음 장면이 없고 선택지도 없는 경우 (게임 종료)
         location.href = 'index.html';
@@ -148,6 +251,6 @@ dialogueBox.onclick = () => {
 };
 
 // 초기 실행
-window.onload = () => {
-    renderScene("start");
+window.onload = async () => {
+    await renderScene("start");
 };

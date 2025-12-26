@@ -171,6 +171,57 @@ body, html {
     transform: scale(1.02);
 }
 
+/* 프리토킹 스타일 */
+#chat-container {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff69b4;
+    border-radius: 15px;
+    padding: 15px;
+    pointer-events: auto;
+    z-index: 120;
+    margin-bottom: 10px;
+}
+
+#chat-input-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+#chat-input {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ff69b4;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+#chat-send {
+    background: #ff69b4;
+    border: none;
+    border-radius: 8px;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#chat-send:hover {
+    background: #ff1493;
+}
+
+#chat-turn-indicator {
+    color: #ff69b4;
+    font-size: 0.85rem;
+    text-align: right;
+    font-weight: bold;
+}
+
 /* 반응형 및 세로 모드 최적화 */
 @media (orientation: portrait) {
     #character-layer {

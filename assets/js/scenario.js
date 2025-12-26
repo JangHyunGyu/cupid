@@ -102,6 +102,15 @@
         name: "서연",
         text: "(그녀의 뒷모습을 보고 있자니 왠지 모를 설렘이 가시지 않는다. 그녀의 걸음걸이는 가볍고 우아하다. 복도에는 은은한 왁스 냄새와 아이들의 열기가 섞여 있다.)",
         character: "assets/images/characters/seyoun_back.png",
+        next: "hallway_free_talk"
+    },
+    "hallway_free_talk": {
+        type: "free_talk",
+        name: "서연",
+        text: "\"아, 그러고 보니 우리 통성명만 하고 제대로 대화를 못 했네? 궁금한 거 있으면 뭐든 물어봐!\"",
+        context: "학교 복도를 함께 걸으며 전학생인 주인공과 가벼운 대화를 나누는 상황",
+        personality: "친절하고 상냥하며 책임감 강한 학생회장. 전학생인 주인공에게 호감을 느끼고 있음.",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1_3"
     },
     "hallway_1_3": {
@@ -441,6 +450,20 @@
         name: "서연",
         text: "\"저기, 전학생 군... 사실 나, 처음 널 봤을 때부터 왠지 모르게... 예전부터 알고 지냈던 사이 같은 기분이 들었어. 너는 어때?\"",
         character: "assets/images/characters/seyoun_nomal.png",
+        next: "rooftop_free_talk"
+    },
+    "rooftop_free_talk": {
+        type: "free_talk",
+        name: "서연",
+        text: "\"후훗, 갑자기 너무 진지했나? 우리 좀 더 편하게 이야기하자. 넌 어떤 스타일의 사람을 좋아해?\"",
+        context: "점심시간, 학교 옥상에서 단둘이 도시락을 먹고 난 뒤 나른하고 로맨틱한 분위기에서 대화를 나누는 상황",
+        personality: "평소보다 조금 더 대담하고 솔직해진 상태. 주인공의 취향이나 생각에 대해 깊이 알고 싶어 함.",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "rooftop_choices"
+    },
+    "rooftop_choices": {
+        name: "서연",
+        text: "(그녀가 내 대답을 기다리며 눈을 반짝인다. 나는 잠시 고민하다 입을 열었다.)",
         choices: [
             { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny" },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 거 아닐까?", next: "rooftop_kind" },
@@ -509,6 +532,20 @@
     "yuna_intro_2": {
         name: "???",
         text: "\"난 '유나'라고 해. 그냥... 조용히 지내는 걸 좋아하는 사람이야. 이 학교... 겉보기와는 많이 다르거든. 너한테서는... 왠지 낯익은 분위기가 느껴져.\"",
+        next: "yuna_free_talk"
+    },
+    "yuna_free_talk": {
+        type: "free_talk",
+        name: "유나",
+        text: "\"...나한테 궁금한 거라도 있어? 아니면, 이 학교에 대해 알고 싶은 거야?\"",
+        context: "조용한 도서관 별관, 신비롭고 차가운 분위기의 유나와 처음 만난 상황",
+        personality: "신비롭고 차가우며 비밀이 많은 소녀. 주인공에게 묘한 흥미를 느끼고 있음.",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "yuna_choices"
+    },
+    "yuna_choices": {
+        name: "유나",
+        text: "(그녀의 보랏빛 눈동자가 나를 꿰뚫어 보는 듯하다. 나는 침을 꿀꺽 삼키며 물었다.)",
         choices: [
             { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret" },
             { text: "낯익다니... 나를 본 적 있어?", next: "yuna_scent" },
