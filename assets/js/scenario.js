@@ -489,7 +489,7 @@
         name: "서연",
         text: "\"운명... 후훗, 그 말 참 듣기 좋다. 우리, 앞으로 더 즐거운 추억 많이 만들자. 약속이야?\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "after_school_start"
+        next: "seyoun_contact_exchange"
     },
     "rooftop_kind": {
         name: "서연",
@@ -501,7 +501,7 @@
         name: "서연",
         text: "\"치... 너무 정석적인 대답이잖아. 하지만 뭐, 틀린 말은 아니니까 봐줄게. 앞으로는 좀 더 솔직한 대답 기대할게?\"",
         character: "assets/images/characters/seyoun_pout.png",
-        next: "after_school_start"
+        next: "seyoun_contact_exchange"
     },
     "rooftop_comfortable": {
         name: "서연",
@@ -512,6 +512,27 @@
     "rooftop_comfortable_2": {
         name: "서연",
         text: "\"편안하다니 다행이야. 나도 너랑 있으면 학생회장이라는 짐을 잠시 내려놓을 수 있는 것 같아. 고마워, 전학생 군.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "seyoun_contact_exchange"
+    },
+    "seyoun_contact_exchange": {
+        name: "서연",
+        text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 수줍게 스마트폰을 내민다.) \"저기... 혹시 괜찮다면, 연락처 알려줄 수 있을까? 앞으로 도시락 메뉴 정할 때 물어보고 싶어서...\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        choices: [
+            { text: "물론이지! 나도 서연이랑 더 이야기하고 싶었어.", next: "seyoun_contact_success", setFlag: "has_number_seyoun" },
+            { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail" }
+        ]
+    },
+    "seyoun_contact_success": {
+        name: "서연",
+        text: "(그녀가 환하게 웃으며 내 번호를 저장한다. 그녀의 손가락이 기쁜 듯 바쁘게 움직인다.) \"고마워! 그럼... 나중에 메시지 보낼게. 꼭 답장해줘야 해?\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "after_school_start"
+    },
+    "seyoun_contact_fail": {
+        name: "서연",
+        text: "(그녀가 조금 시무룩한 표정을 짓지만, 이내 애써 미소 지으며 고개를 끄덕인다.) \"아... 응, 미안! 내가 너무 성급했나 봐. 천천히 친해지면 되지, 그치?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_school_start"
     },
@@ -789,6 +810,33 @@
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
+        next: "dain_contact_exchange"
+    },
+    "dain_contact_exchange": {
+        name: "다인",
+        text: "(다인이가 떡볶이 국물을 닦으며 장난스럽게 스마트폰을 흔들어 보인다.) \"야, 전학생! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처 정도는 있어야 하지 않겠어? 번호 찍어봐!\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_shirt.png",
+        night: true,
+        choices: [
+            { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "dain_contact_success", setFlag: "has_number_dain" },
+            { text: "음... 나중에 기회 되면 알려줄게.", next: "dain_contact_fail" }
+        ]
+    },
+    "dain_contact_success": {
+        name: "다인",
+        text: "(다인이가 시원하게 웃으며 내 번호를 저장한다.) \"오케이! 접수 완료! 내가 맛있는 데 찾으면 바로 메시지 날릴 테니까 대기 타고 있어라?\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "evening_home"
+    },
+    "dain_contact_fail": {
+        name: "다인",
+        text: "(다인이가 조금 의외라는 듯 눈을 동그랗게 뜨더니, 이내 씩씩하게 웃어넘긴다.) \"뭐야~ 튕기는 거야? 알았어, 알았어! 내가 더 노력해서 네 번호 따고 만다!\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_nomal.png",
+        night: true,
         next: "evening_home"
     },
     "after_yuna_new": {
@@ -1016,6 +1064,30 @@
         name: "유나",
         text: "\"바보 같은 소리... 하지만 그 대답, 싫지 않아. 좋아, 그럼 우리... 서로의 비밀을 공유하는 사이가 되는 건 어때?\"",
         character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
+        next: "yuna_contact_exchange"
+    },
+    "yuna_contact_exchange": {
+        name: "유나",
+        text: "(유나가 옥상 난간에서 몸을 떼며 무심하게 스마트폰을 내민다.) \"비밀을 공유하려면... 연락할 수단 정도는 있어야겠지. 네 번호, 여기에 남겨줘.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        choices: [
+            { text: "응, 유나랑 더 많은 비밀을 나누고 싶어.", next: "yuna_contact_success", setFlag: "has_number_yuna" },
+            { text: "미안, 아직은 좀 조심스러워.", next: "yuna_contact_fail" }
+        ]
+    },
+    "yuna_contact_success": {
+        name: "유나",
+        text: "(유나가 내 번호를 저장하고는 희미하게 미소 짓는다.) \"...됐어. 이제 우린 연결된 거야. 내가 부르면... 언제든 와줘야 해.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        night: true,
+        next: "evening_home"
+    },
+    "yuna_contact_fail": {
+        name: "유나",
+        text: "(유나가 차가운 눈빛으로 나를 바라보더니 스마트폰을 집어넣는다.) \"...그래. 억지로 강요하진 않아. 하지만 기회는 자주 오지 않는다는 걸 명심해.\"",
+        character: "assets/images/characters/yuna_nomal.png",
         night: true,
         next: "evening_home"
     },
@@ -1343,13 +1415,13 @@
         name: "아이들",
         text: "\"와~ 전학생 공부도 잘하네! 완전 사기 캐릭터 아니야?\"",
         character: null,
-        next: "day2_lunch_choice"
+        next: "teacher_contact_exchange"
     },
     "day2_lesson_solve_2_active": {
         name: "아이들",
         text: "\"오~ 전학생, 운동만 잘하는 줄 알았더니 공부도 좀 하는데? 의외인걸!\"",
         character: null,
-        next: "day2_lunch_choice"
+        next: "teacher_contact_exchange"
     },
     "day2_lesson_fail": {
         name: "아이들",
@@ -1361,6 +1433,27 @@
         name: "아이들",
         text: "\"괜찮아, 전학생! 저 문제는 원래 좀 어렵긴 해. 나중에 내가 도와줄게!\"",
         character: null,
+        next: "teacher_contact_exchange"
+    },
+    "teacher_contact_exchange": {
+        name: "선생님",
+        text: "(선생님이 교탁을 정리하다 말고 나를 따로 부르신다. 그리고는 수첩에서 작은 메모지를 찢어 무언가를 적어주신다.) \"전학생 군, 이건 내 개인 연락처란다. 학교생활 하면서 힘든 일이 있거나 상담이 필요하면 언제든 연락하렴. 선생님은 항상 네 편이니까.\"",
+        character: "assets/images/characters/teacher.png",
+        choices: [
+            { text: "감사합니다, 선생님! 소중히 간직할게요.", next: "teacher_contact_success", setFlag: "has_number_teacher" },
+            { text: "아... 괜찮습니다. 학교에서 뵈면 되니까요.", next: "teacher_contact_fail" }
+        ]
+    },
+    "teacher_contact_success": {
+        name: "선생님",
+        text: "(선생님이 인자하게 웃으며 내 어깨를 다독여주신다. 그녀의 손길에서 따뜻한 격려가 느껴진다.) \"그래, 부담 갖지 말고. 그럼 남은 시간도 즐겁게 보내렴.\"",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lunch_choice"
+    },
+    "teacher_contact_fail": {
+        name: "선생님",
+        text: "(선생님이 조금 머쓱한 듯 웃으시지만, 이내 고개를 끄덕이신다.) \"후훗, 그래. 전학생 군은 참 독립심이 강하구나. 알았다, 그럼 도움이 필요하면 언제든 교무실로 찾아오렴.\"",
+        character: "assets/images/characters/teacher.png",
         next: "day2_lunch_choice"
     },
     "day2_lunch_choice": {
@@ -1701,6 +1794,33 @@
         personality: "나른하고 섹시하면서도 자상한 양호 선생님. 주인공에게 묘한 매력을 느끼며 대놓고 유혹하는 대담한 성격.",
         extra_guideline: "성숙한 어른으로서 주인공을 대놓고 유혹하며 아슬아슬한 분위기를 조성하세요. 사용자의 성숙한 농담이나 도발적인 발언(섹드립 등)도 당황하지 않고 여유롭게 받아치며, 오히려 주인공을 더 당황하게 만들 정도로 대담하고 도발적인 반응을 보이세요. 성숙한 매력을 한껏 발산하며 로맨틱한 긴장감을 최대치로 끌어올리세요.",
         character: "assets/images/characters/nurse.png",
+        next: "nurse_contact_exchange"
+    },
+    "nurse_contact_exchange": {
+        name: "양호선생님",
+        text: "(양호선생님이 가운 주머니에서 스마트폰을 꺼내며 내 쪽으로 몸을 살짝 기울인다. 그녀의 향기가 코끝을 간지럽힌다.) \"저기, 전학생 군. 혹시 밤에 또 아프거나 잠이 안 오면... 나한테 연락할래? 특별히 내 개인 번호 알려줄게.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "네, 선생님 번호라면 꼭 알고 싶어요.", next: "nurse_contact_success", setFlag: "has_number_nurse" },
+            { text: "아... 학교 밖에서 연락하는 건 좀 실례일 것 같아요.", next: "nurse_contact_fail" }
+        ]
+    },
+    "nurse_contact_success": {
+        name: "양호선생님",
+        text: "(그녀가 내 스마트폰을 가져가 직접 번호를 입력하고는 윙크를 보낸다.) \"후훗, 착하네. 그럼... 밤에 기다리고 있을게? 너무 늦지 않게 연락해줘.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "day2_afternoon"
+    },
+    "nurse_contact_fail": {
+        name: "양호선생님",
+        text: "(그녀가 조금 아쉽다는 듯 입술을 살짝 깨물더니, 이내 여유로운 미소를 되찾는다.) \"어머, 의외로 보수적이네? 뭐, 그런 점도 귀엽지만. 마음 바뀌면 언제든 말해줘.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
         next: "day2_afternoon"
     },
     "day2_afternoon": {
@@ -2312,11 +2432,11 @@
         name: "시스템",
         text: "누구에게 메시지를 보낼까요?",
         choices: [
-            { text: "서연", next: "msg_seyoun", excludeCondition: "messaged_msg_seyoun" },
-            { text: "유나", next: "msg_yuna", excludeCondition: "messaged_msg_yuna" },
-            { text: "다인", next: "msg_dain", excludeCondition: "messaged_msg_dain" },
-            { text: "담임선생님", next: "msg_teacher", excludeCondition: "messaged_msg_teacher" },
-            { text: "양호선생님", next: "msg_nurse", excludeCondition: "messaged_msg_nurse" },
+            { text: "서연", next: "msg_seyoun", condition: "has_number_seyoun", excludeCondition: "messaged_msg_seyoun" },
+            { text: "유나", next: "msg_yuna", condition: "has_number_yuna", excludeCondition: "messaged_msg_yuna" },
+            { text: "다인", next: "msg_dain", condition: "has_number_dain", excludeCondition: "messaged_msg_dain" },
+            { text: "담임선생님", next: "msg_teacher", condition: "has_number_teacher", excludeCondition: "messaged_msg_teacher" },
+            { text: "양호선생님", next: "msg_nurse", condition: "has_number_nurse", excludeCondition: "messaged_msg_nurse" },
             { text: "뒤로 가기", next: "home_phone" }
         ]
     },
