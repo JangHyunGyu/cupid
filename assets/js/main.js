@@ -280,7 +280,10 @@ nameConfirmBtn.onclick = () => {
 };
 
 // 이름 입력창 포커스 유지 및 엔터키 처리
-playerNameInput.onblur = () => {
+playerNameInput.onblur = (e) => {
+    // 확인 버튼을 누르는 중이라면 포커스를 강제하지 않음
+    if (e.relatedTarget === nameConfirmBtn) return;
+    
     if (nameInputContainer.style.display === 'block') {
         setTimeout(() => playerNameInput.focus(), 10);
     }
