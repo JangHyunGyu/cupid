@@ -161,7 +161,7 @@ const SCENARIO = {
     },
     "hallway_talk_flatter_2": {
         name: "Seoyeon",
-        text: "\"Really... you speak so beautifully. It's rewarding to hear such praise as the student council president. But don't flatter me too much, it's embarrassing.\"",
+        text: "\"Really... you speak so beautifully. Actually, I'm always tense because of my position as the student council president, but I feel at ease when I'm with you. I might even want to act like a spoiled child without realizing it... Hehe, just kidding.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "hallway_2"
     },
@@ -275,6 +275,15 @@ const SCENARIO = {
     "classroom_2_2": {
         name: "Teacher",
         text: "(The air in the classroom feels heavy. The teacher taps the podium to focus attention.)",
+        character: "assets/images/characters/teacher.png",
+        next: "teacher_free_talk"
+    },
+    "teacher_free_talk": {
+        type: "free_talk",
+        name: "Teacher",
+        text: "\"Now, before you introduce yourself... do you have any questions for me? Actually, I'm just as nervous as you are. Hehe, I guess a teacher shouldn't be like this, right?\"",
+        context: "The situation of having a conversation with the homeroom teacher just before giving the first greeting as a transfer student in front of the podium.",
+        personality: "A professional teacher who tries to maintain boundaries, but has a 'clumsy' side and secretly relies on the protagonist for emotional support. She is weak to the protagonist's unexpected maturity.",
         character: "assets/images/characters/teacher.png",
         next: "classroom_2_3"
     },
@@ -589,19 +598,19 @@ const SCENARIO = {
     },
     "yuna_scent_2": {
         name: "Yuna",
-        text: "\"No, it's the first time. But your eyes look similar. The kids in this school all have dead eyes from being tired of competition... but yours are still alive. I hope you don't lose that light.\"",
+        text: "\"No, it's the first time. But that 'light' in your eyes... I really covet it. It's different from the dead eyes of the kids in this school. Can I keep watching so that light doesn't go out?\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_school_start"
     },
     "yuna_danger": {
         name: "Yuna",
-        text: "(She lightly brushes my cheek with her cold finger. The place where her fingertip touched is chilly. She stares intently into my eyes and gives a provocative smile.)",
+        text: "(She lightly brushes my cheek with her cold finger. The place where her fingertip touched is chilly. She stares intently into my eyes and gives a mysterious smile.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "yuna_danger_2"
     },
     "yuna_danger_2": {
         name: "Yuna",
-        text: "\"Looking dangerous... I'll take that as a compliment. Being a bit different from others can mean you're that much more special. I guess you don't like being ordinary either?\"",
+        text: "\"Looking dangerous... Hehe, you're right. But I don't dislike people like you who approach even while knowing it's dangerous. Until you lose that special light... I'll stay by your side.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
     },
@@ -755,9 +764,9 @@ const SCENARIO = {
     },
     "after_dain_cheer_2": {
         name: "Dain",
-        text: "\"Wh-what... it's embarrassing if you praise me so suddenly! But thanks. Thanks to your support, today's practice will go even better!\"",
+        text: "\"Wh-what... it's embarrassing if you praise me so suddenly! It's not like I worked hard just for you to hear, so don't get the wrong idea! But... I guess I feel a bit more energized since you're watching...\"",
         background: "assets/images/background/playground.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_shy.png",
         sunset: true,
         next: "after_dain_end"
     },
@@ -1642,7 +1651,7 @@ const SCENARIO = {
     },
     "day2_lunch_nurse_2": {
         name: "Nurse",
-        text: "\"Oh, you're the transfer student? Your complexion doesn't look good. Where does it hurt?\"",
+        text: "\"Oh, what a cute transfer student. Your face is red... I wonder if you're sick, or if your heart is fluttering because you saw my face?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_3"

@@ -170,7 +170,7 @@
     },
     "hallway_talk_flatter_2": {
         name: "서연",
-        text: "\"정말... 너는 말을 참 예쁘게 하는구나. 학생회장으로서 그런 칭찬을 들으니 보람찬걸? 하지만 너무 띄워주지는 마, 부끄러우니까.\"",
+        text: "\"정말... 너는 말을 참 예쁘게 하는구나. 사실 학생회장이라는 자리 때문에 늘 긴장하고 사는데, 너랑 있으면 왠지 마음이 놓여. 나도 모르게 어리광 부리고 싶어질지도 몰라... 후훗, 농담이야.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "hallway_2"
     },
@@ -290,9 +290,9 @@
     "teacher_free_talk": {
         type: "free_talk",
         name: "선생님",
-        text: "\"자, 자기소개 하기 전에... 나한테 궁금한 거나 학교에 대해 물어보고 싶은 거 있니?\"",
+        text: "\"자, 자기소개 하기 전에... 나한테 궁금한 거 있니? 사실 나도 전학 온 너만큼이나 긴장되네. 후훗, 선생님이 이래서야 안 되겠지?\"",
         context: "교탁 앞에서 전학생으로서 첫 인사를 하기 직전, 담임 선생님과 대화를 나누는 상황",
-        personality: "엄격해 보이지만 학생들을 아끼는 따뜻한 마음을 가진 담임 선생님. 전학생이 잘 적응하기를 바라고 있음.",
+        personality: "공과 사가 뚜렷한 전문적인 교사지만, 사실 허당끼가 있고 주인공의 예상치 못한 어른스러운 모습에 가슴 설레어 함. 은근히 주인공에게 의지하고 싶어 하는 '갭 모에'가 있음.",
         character: "assets/images/characters/teacher.png",
         next: "classroom_2_3"
     },
@@ -639,19 +639,19 @@
     },
     "yuna_scent_2": {
         name: "유나",
-        text: "\"아니, 처음 봐. 하지만 눈빛이 닮았어. 이 학교 아이들은 다들 경쟁에 지쳐서 눈이 죽어있는데... 넌 아직 살아있네. 부디 그 빛을 잃지 않았으면 좋겠어.\"",
+        text: "\"아니, 처음 봐. 하지만 네 눈동자 속의 그 '빛'... 정말 탐나네. 이 학교의 죽어있는 아이들과는 달라. 그 빛이 꺼지지 않게 내가 계속 지켜봐도 될까?\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_school_start"
     },
     "yuna_danger": {
         name: "유나",
-        text: "(그녀가 차가운 손가락으로 내 뺨을 살짝 스친다. 그녀의 손가락 끝이 닿은 곳이 서늘하다. 그녀는 내 눈을 빤히 바라보며 도발적인 미소를 짓는다.)",
+        text: "(그녀가 차가운 손가락으로 내 뺨을 살짝 스친다. 그녀의 손가락 끝이 닿은 곳이 서늘하다. 그녀는 내 눈을 빤히 바라보며 묘한 미소를 짓는다.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "yuna_danger_2"
     },
     "yuna_danger_2": {
         name: "유나",
-        text: "\"위험해 보인다니... 칭찬으로 들을게. 남들과 조금 다르다는 건, 그만큼 특별하다는 뜻일 수도 있으니까. 너도 평범한 건 싫어하나 봐?\"",
+        text: "\"위험해 보인다니... 후훗, 정답이야. 하지만 위험한 걸 알면서도 다가오는 너 같은 사람, 싫지 않아. 네가 그 특별한 빛을 잃을 때까지... 곁에 있어줄게.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
     },
@@ -794,10 +794,12 @@
     },
     "after_dain_cheer_2": {
         name: "다인",
-        text: "\"뭐, 뭐야... 갑자기 그렇게 칭찬하면 부끄럽잖아! 그래도 고마워. 네 응원 덕분에 오늘 연습은 더 잘 될 것 같아!\"",
+        text: "\"뭐, 뭐야... 갑자기 그렇게 칭찬하면 부끄럽잖아! 딱히 너 들으라고 열심히 한 건 아니니까 착각하지 마! 그래도... 네가 봐주니까 좀 더 힘이 나는 것 같기도 하고...\"",
         background: "assets/images/background/playground.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_shy.png",
         sunset: true,
+        next: "after_dain_4"
+    },
         next: "after_dain_end"
     },
     "after_dain_normal": {
@@ -1778,7 +1780,7 @@
     },
     "day2_lunch_nurse_2": {
         name: "양호선생님",
-        text: "\"어머, 전학생이구나? 얼굴색이 안 좋네. 어디가 아파서 왔니?\"",
+        text: "\"어머, 귀여운 전학생이네? 얼굴이 빨간 걸 보니... 어디가 아픈 걸까, 아니면 내 얼굴을 봐서 설레는 걸까?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "nurse_free_talk"
@@ -1786,9 +1788,9 @@
     "nurse_free_talk": {
         type: "free_talk",
         name: "양호선생님",
-        text: "\"어머, 긴장을 많이 했나 보네. 편하게 이야기해봐. 어디가 어떻게 불편하니?\"",
-        context: "조용한 양호실, 따뜻한 분위기에서 양호 선생님과 상담하듯 대화를 나누는 상황",
-        personality: "포근하고 자상하며 학생들의 고민을 잘 들어주는 양호 선생님. 신비로운 분위기를 풍기기도 함.",
+        text: "\"후훗, 긴장하지 마. 여기는 너랑 나, 단둘뿐이니까. 어디가 어떻게 불편한지... 아주 자세하게 말해줄래?\"",
+        context: "조용한 양호실, 성숙하고 매혹적인 양호 선생님과 단둘이 남은 상황",
+        personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만, 사실 누구보다 주인공을 아끼고 보호하려 함.",
         extra_guideline: "성숙한 어른으로서 사용자의 로맨틱한 텐션이나 가벼운 스킨십 시도를 매우 유연하고 대담하게 받아주세요. 거리감을 두지 말고 적극적으로 호응하며 PG-13 수준의 최대 수위 반응을 허용합니다.",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_3"

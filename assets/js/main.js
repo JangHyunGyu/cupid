@@ -151,17 +151,17 @@ function startFreeTalk(scene) {
     
     // 캐릭터별 기본 성격 설정
     const defaultPersonalities = isEn ? {
-        "Seoyeon": "Kind and friendly student council president",
-        "Yuna": "Mysterious and quiet girl with a cold atmosphere",
-        "Dain": "Energetic and lively volleyball club ace",
-        "Teacher": "Caring and diligent homeroom teacher",
-        "Nurse": "Provocative and mature school nurse"
+        "Seoyeon": "The perfect student council president who is kind to everyone, but secretly has a lonely side and becomes very shy and 'Megadere' when alone with the protagonist. She values rules but sometimes wants to break them for the protagonist.",
+        "Yuna": "A classic 'Kuudere' who is expressionless and cold, but shows a deep, obsessive interest in the protagonist's 'special light'. She occasionally drops cryptic, heart-fluttering lines and has a mysterious, protective aura.",
+        "Dain": "A bright and energetic 'Genki' girl who treats the protagonist like a close friend, but gets easily flustered and 'Tsundere' when romance is mentioned. She is honest about her feelings but clumsy at expressing them.",
+        "Teacher": "A professional teacher who tries to maintain boundaries, but has a 'clumsy' side and secretly relies on the protagonist for emotional support. She is weak to the protagonist's unexpected maturity.",
+        "Nurse": "A mature and seductive 'Onee-san' type who enjoys teasing the protagonist with provocative words, but actually has a very protective and caring nature. She enjoys seeing the protagonist get flustered."
     } : {
-        "서연": "다정하고 친절한 학생회장",
-        "유나": "신비롭고 조용한 분위기의 소녀",
-        "다인": "에너지 넘치고 활기찬 배구부 에이스",
-        "선생님": "학생을 걱정하는 성실한 담임 선생님",
-        "양호선생님": "도발적이고 성숙한 분위기의 양호 선생님"
+        "서연": "모두에게 친절한 완벽한 학생회장이지만, 사실 외로움을 잘 타며 주인공과 단둘이 있을 때는 부끄러움을 많이 타는 '메가데레' 스타일. 규칙을 중시하지만 주인공을 위해서라면 가끔 규칙을 어기고 싶어 함.",
+        "유나": "무표정하고 차가운 '쿨데레'의 정석. 주인공의 '특별한 빛'에 깊고 집착적인 관심을 보이며, 가끔씩 툭 던지는 신비롭고 설레는 대사가 특징. 주인공을 지키려는 묘한 분위기를 풍김.",
+        "다인": "밝고 활기찬 '현모양처형 츤데레'. 주인공을 편한 친구처럼 대하지만, 로맨틱한 분위기가 되면 금방 얼굴이 빨개지며 당황함. 감정에 솔직하지만 표현이 서툰 귀여운 매력이 있음.",
+        "선생님": "공과 사가 뚜렷한 전문적인 교사지만, 사실 허당끼가 있고 주인공의 예상치 못한 어른스러운 모습에 가슴 설레어 함. 은근히 주인공에게 의지하고 싶어 하는 '갭 모에'가 있음.",
+        "양호선생님": "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만, 사실 누구보다 주인공을 아끼고 보호하려 함. 주인공이 당황하는 모습에 귀여움을 느낌."
     };
 
     const charPersonality = scene.personality || defaultPersonalities[scene.name] || (isEn ? "A character from the school" : "학교의 캐릭터");
