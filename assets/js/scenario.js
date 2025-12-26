@@ -92,7 +92,7 @@
     },
     "path_blush_1_2": {
         name: "서연",
-        text: "\"에...? 그, 갑자기 무슨 소리를 하는 거야! {name?}은 다 너처럼 이렇게... 능글맞니? 어서 따라오기나 해! 늦으면 담임선생님께 혼난다구!\"",
+        text: "\"에...? 그, 갑자기 무슨 소리를 하는 거야! 전학생은 다 너처럼 이렇게... 능글맞니? 어서 따라오기나 해! 늦으면 담임선생님께 혼난다구!\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },
@@ -367,7 +367,7 @@
     },
     "class_after_active_3": {
         name: "아이들",
-        text: "\"오~ 운동 좀 하나 본데? 점심시간에 배구 한 판 고? {name?} 실력 좀 보자구!\"",
+        text: "\"오~ 운동 좀 하나 본데? 점심시간에 배구 한 판 고? 전학생 실력 좀 보자구!\"",
         character: null,
         next: "lunch_time"
     },
