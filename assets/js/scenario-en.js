@@ -14,6 +14,12 @@ const SCENARIO = {
     "start_3": {
         name: "Me",
         text: "(My heartbeat sounds so loud it rings in my ears. I take a deep breath and take a step toward the school gate.)",
+        next: "name_input_scene"
+    },
+    "name_input_scene": {
+        type: "input",
+        name: "System",
+        text: "Please enter your name.",
         next: "start_4"
     },
     "start_4": {
@@ -96,6 +102,27 @@ const SCENARIO = {
         text: "(I walk down the hallway following Seoyeon. Beyond the hallway windows, the lively voices of students and the sound of whistles from the playground blend together.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_back.png",
+        next: "hallway_name_ask"
+    },
+    "hallway_name_ask": {
+        name: "Seoyeon",
+        text: "(Seoyeon suddenly stops and turns to look at me.) \"Oh, I just realized I introduced myself but haven't heard your name yet! Transfer student, what's your name?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "My name is '{name}'. Nice to meet you.", next: "hallway_name_share", setFlag: "knowsName_Seoyeon" },
+            { text: "Just call me 'Transfer Student'. It's more comfortable.", next: "hallway_name_keep" }
+        ]
+    },
+    "hallway_name_share": {
+        name: "Seoyeon",
+        text: "\"{name}... Hehe, that's a nice name! Then I'll call you {name} from now on. Nice to meet you, {name}!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "hallway_1_2"
+    },
+    "hallway_name_keep": {
+        name: "Seoyeon",
+        text: "\"Aw, how boring! Alright. If that's what you want, I'll call you 'Transfer Student' for now. But you have to tell me later if you change your mind, okay?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1_2"
     },
     "hallway_1_2": {
@@ -256,10 +283,20 @@ const SCENARIO = {
         text: "\"Now, everyone pay attention! This is the transfer student who will be joining us from today. Everyone, get along well. Now, shall we have a word of self-introduction?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "Hi! I like exercising and have an active personality. Anyone who wants to exercise together is always welcome!", next: "class_after_active", setFlag: "personality_active" },
-            { text: "Nice to meet you. I tend to like reading books quietly. I look forward to getting along with you.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "I want to get close quickly! Anyone want to go eat tteokbokki together after school today?", next: "class_after_party", setFlag: "personality_party" },
-            { text: "I came here to study. I hate being disturbed, so let's just get along moderately.", next: "class_after_study", setFlag: "personality_study" }
+            { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher" },
+            { text: "Hi! I like exercising and have an active personality!", next: "class_after_active", setFlag: "personality_active" },
+            { text: "Nice to meet you. I tend to like reading books quietly.", next: "class_after_quiet", setFlag: "personality_quiet" },
+            { text: "I came here to study. I hate being disturbed.", next: "class_after_study", setFlag: "personality_study" }
+        ]
+    },
+    "teacher_name_share": {
+        name: "Teacher",
+        text: "\"Oh, so your name is {name}. It's a very reliable name. Now, {name}, what kind of style would you like to introduce yourself to your friends?\"",
+        character: "assets/images/characters/teacher.png",
+        choices: [
+            { text: "Introduce actively.", next: "class_after_active", setFlag: "personality_active" },
+            { text: "Introduce calmly.", next: "class_after_quiet", setFlag: "personality_quiet" },
+            { text: "Introduce socially.", next: "class_after_party", setFlag: "personality_party" }
         ]
     },
     "class_after_active": {
@@ -510,6 +547,23 @@ const SCENARIO = {
         name: "???",
         text: "\"I'm Yuna. I'm just... someone who likes staying quiet. This school... is very different from how it looks. From you... I feel a somehow familiar atmosphere.\"",
         choices: [
+            { text: "My name is '{name}'.", next: "yuna_name_share", setFlag: "knowsName_Yuna" },
+            { text: "The school is different? What does that mean?", next: "yuna_secret" },
+            { text: "Familiar... have you seen me before?", next: "yuna_scent" },
+            { text: "You look somehow dangerous. But I can't take my eyes off you.", next: "yuna_danger" }
+        ]
+    },
+    "yuna_name_share": {
+        name: "Yuna",
+        text: "\"{name}... It's a name that somehow suits you. I'll remember it. I'm Yuna. I'm just... someone who likes staying quiet.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "yuna_intro_3"
+    },
+    "yuna_intro_3": {
+        name: "Yuna",
+        text: "\"This school... is very different from how it looks. From you... I feel a somehow familiar atmosphere.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        choices: [
             { text: "The school is different? What does that mean?", next: "yuna_secret" },
             { text: "Familiar... have you seen me before?", next: "yuna_scent" },
             { text: "You look somehow dangerous. But I can't take my eyes off you.", next: "yuna_danger" }
@@ -590,11 +644,30 @@ const SCENARIO = {
         text: "\"Hey, transfer student! Don't just watch from there, come here and let's have a match! You look like you can exercise a bit?\"",
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_4"
+        choices: [
+            { text: "My name is '{name}'.", next: "dain_name_share", setFlag: "knowsName_Dain" },
+            { text: "I'm not that good at exercise...", next: "lunch_dain_4" },
+            { text: "Okay, let's see who's better!", next: "lunch_dain_4" }
+        ]
+    },
+    "dain_name_share": {
+        name: "Dain",
+        text: "\"{name}? Cool name! It sounds like a name that's good at sports! I'm Dain from the volleyball club. There's no one in our school with a better jump than me, so be prepared!\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_smile.png",
+        next: "lunch_dain_5"
     },
     "lunch_dain_4": {
         name: "Dain",
         text: "\"I'm Dain from the volleyball club. There's no one in our school with a better jump than me, so be prepared! Here I go!\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        setFlag: "metDain",
+        next: "after_school_start"
+    },
+    "lunch_dain_5": {
+        name: "Dain",
+        text: "\"Here I go!\"",
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
@@ -1627,6 +1700,62 @@ const SCENARIO = {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
+        next: "nurse_wake_free_talk"
+    },
+    "nurse_wake_free_talk": {
+        type: "free_talk",
+        name: "Nurse",
+        text: "\"Hehe, you still have that sleepy face. Want to talk with me a bit more before going home?\"",
+        context: "The nurse's office at sunset, a situation where the protagonist and the nurse are left alone after just waking up.",
+        personality: "A languid, sexy, yet kind nurse. She feels a strange charm from the protagonist and has a bold personality that openly seduces him.",
+        extra_guideline: "As a mature adult, openly seduce the protagonist and create a risky atmosphere. Don't be flustered by the user's mature jokes or provocative remarks, but rather show a bold and provocative reaction enough to fluster the protagonist even more. Fully radiate mature charm and pull the romantic tension to the maximum.",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_contact_exchange"
+    },
+    "nurse_contact_exchange": {
+        name: "Nurse",
+        text: "(The nurse takes out a smartphone from her gown pocket and leans slightly toward me. Her scent tickles the tip of my nose.) \"Hey, Transfer Student. If you're sick again at night or can't sleep... do you want to contact me? I'll give you my personal number specially.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "Yes, I'd definitely like to know your number, Teacher.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { text: "Ah... I think it would be a bit rude to contact you outside of school.", next: "nurse_contact_fail" }
+        ]
+    },
+    "nurse_contact_success": {
+        name: "Nurse",
+        text: "(She takes my smartphone, enters the number herself, and sends a wink.) \"Hehe, good boy. Then... I'll be waiting tonight? Contact me not too late.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "nurse_name_ask"
+    },
+    "nurse_name_ask": {
+        name: "Nurse",
+        text: "\"By the way... come to think of it, I haven't heard your name yet? Transfer Student, what's your name?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "My name is '{name}'.", next: "nurse_name_share", setFlag: "knowsName_Nurse" },
+            { text: "Just call me 'Transfer Student'.", next: "day2_afternoon" }
+        ]
+    },
+    "nurse_name_share": {
+        name: "Nurse",
+        text: "\"{name}... Hehe, even the name is cute. Then {name}, I'll be waiting for your contact tonight?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "day2_afternoon"
+    },
+    "nurse_contact_fail": {
+        name: "Nurse",
+        text: "(She bites her lip slightly as if a bit disappointed, but soon regains her relaxed smile.) \"Oh my, you're unexpectedly conservative? Well, that's cute too. Tell me anytime if you change your mind.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
         next: "day2_afternoon"
     },
     "day2_afternoon": {
@@ -2174,7 +2303,64 @@ const SCENARIO = {
         background: "assets/images/background/school.png",
         character: null,
         night: true,
-        next: "end_demo_real"
+        next: "home_sequence"
+    },
+    "home_sequence": {
+        name: "Me",
+        text: "(I returned home and threw myself onto the bed. My body feels heavy like wet cotton. I took out my phone and looked at the contact list.)",
+        background: "assets/images/background/room_home.png",
+        character: null,
+        night: true,
+        next: "contact_menu"
+    },
+    "contact_menu": {
+        name: "System",
+        text: "Whose contact information would you like to check?",
+        background: "assets/images/background/room_home.png",
+        night: true,
+        choices: [
+            { text: "Seoyeon", next: "contact_seoyeon", condition: "knowsName_Seoyeon" },
+            { text: "Yuna", next: "contact_yuna", condition: "knowsName_Yuna" },
+            { text: "Dain", next: "contact_dain", condition: "knowsName_Dain" },
+            { text: "Teacher", next: "contact_teacher", condition: "knowsName_Teacher" },
+            { text: "Nurse", next: "contact_nurse", condition: "knowsName_Nurse" },
+            { text: "Go to sleep", next: "end_demo_real" }
+        ]
+    },
+    "contact_seoyeon": {
+        name: "Seoyeon",
+        text: "Seoyeon's contact information has been registered. You can now have a free conversation with her.",
+        character: "assets/images/characters/seyoun_nomal.png",
+        freeTalk: "Seoyeon",
+        next: "contact_menu"
+    },
+    "contact_yuna": {
+        name: "Yuna",
+        text: "Yuna's contact information has been registered. You can now have a free conversation with her.",
+        character: "assets/images/characters/yuna_nomal.png",
+        freeTalk: "Yuna",
+        next: "contact_menu"
+    },
+    "contact_dain": {
+        name: "Dain",
+        text: "Dain's contact information has been registered. You can now have a free conversation with her.",
+        character: "assets/images/characters/dain_nomal.png",
+        freeTalk: "Dain",
+        next: "contact_menu"
+    },
+    "contact_teacher": {
+        name: "Teacher",
+        text: "The teacher's contact information has been registered. You can now have a free conversation with her.",
+        character: "assets/images/characters/teacher_nomal.png",
+        freeTalk: "Teacher",
+        next: "contact_menu"
+    },
+    "contact_nurse": {
+        name: "Nurse",
+        text: "The nurse's contact information has been registered. You can now have a free conversation with her.",
+        character: "assets/images/characters/nurse_nomal.png",
+        freeTalk: "Nurse",
+        next: "contact_menu"
     },
     "end_demo_real": {
         name: "System",

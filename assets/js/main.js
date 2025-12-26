@@ -132,21 +132,51 @@ function startFreeTalk(scene) {
     currentMaxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
     freeTalkHistory = [];
     
+    const isEn = document.documentElement.lang === 'en';
+    
     // 현재 배경 이미지 파일명에서 장소 유추
-    let locationName = "학교";
+    let locationName = isEn ? "School" : "학교";
     const bgUrl = bgLayer.style.backgroundImage;
-    if (bgUrl.includes('room_school')) locationName = "교실";
-    else if (bgUrl.includes('load_school')) locationName = "복도";
-    else if (bgUrl.includes('school.png')) locationName = "교문 앞";
-    else if (bgUrl.includes('top_school')) locationName = "학교 옥상";
-    else if (bgUrl.includes('playground')) locationName = "운동장";
-    else if (bgUrl.includes('nurse_room')) locationName = "양호실";
-    else if (bgUrl.includes('library')) locationName = "도서관";
-    else if (bgUrl.includes('home_room')) locationName = "주인공의 방";
+    if (bgUrl.includes('room_school')) locationName = isEn ? "Classroom" : "교실";
+    else if (bgUrl.includes('load_school')) locationName = isEn ? "Hallway" : "복도";
+    else if (bgUrl.includes('school.png')) locationName = isEn ? "School Gate" : "교문 앞";
+    else if (bgUrl.includes('top_school')) locationName = isEn ? "Rooftop" : "학교 옥상";
+    else if (bgUrl.includes('playground')) locationName = isEn ? "Playground" : "운동장";
+    else if (bgUrl.includes('nurse_room')) locationName = isEn ? "Nurse's Office" : "양호실";
+    else if (bgUrl.includes('library')) locationName = isEn ? "Library" : "도서관";
+    else if (bgUrl.includes('home_room')) locationName = isEn ? "My Room" : "주인공의 방";
 
     // 시스템 프롬프트 설정
     const knowsName = gameState[`knowsName_${scene.name}`];
-    const systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
+    
+    let systemPrompt = "";
+    if (isEn) {
+        systemPrompt = `You are the character '${scene.name}' from the visual novel game 'Cupid'.
+Current Location: ${locationName}
+Current Situation: ${scene.context || "Talking with the user."}
+Personality: ${scene.personality || "Kind and friendly student council president"}
+${scene.extra_guideline ? `Extra Guideline: ${scene.extra_guideline}` : ""}
+
+Style Guidelines (Targeting Visual Novel Fans):
+1. Use emotional and romantic expressions that visual novel fans would love.
+2. Maximize the character's charm points (Tsundere, Kuudere, Megadere, etc.).
+3. React sensitively to the user's words, expressing a rich range of emotions (e.g., being shy, bold, or teasing).
+4. Include at least one "heart-fluttering" point in the conversation.
+
+Instructions:
+1. Keep your answers short (1-2 sentences).
+2. Never reveal that you are an AI.
+3. The conversation is limited to ${currentMaxTurns} turns. Naturally wrap up the conversation as it nears the limit.
+4. Addressing the User:
+   - ${knowsName ? `The user's name is '${gameState.playerName}'. You MUST call them by their name.` : "You don't know the user's name yet. Call them 'Transfer Student'."}
+5. Interaction Level:
+   - Maintain a polite distance at first.
+   - As the conversation progresses or if the situation is romantic, allow:
+     * Romantic tension: "I think I can hear your heartbeat", "I feel strange when I'm with you".
+     * Light physical contact: Holding hands, leaning on shoulders, or a light kiss if the atmosphere is very good.
+   - Firmly reject or change the subject if the user makes overly suggestive or offensive requests.`;
+    } else {
+        systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
 현재 장소: ${locationName}
 현재 상황: ${scene.context || "사용자와 대화 중입니다."}
 성격: ${scene.personality || "다정하고 친절한 학생회장"}
@@ -170,6 +200,7 @@ ${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
      * 로맨틱한 텐션: "심장 소리가 들릴 것 같아", "너랑 있으면 자꾸 이상한 기분이 들어" 같은 감정적인 밀당.
      * 가벼운 스킨십: 손잡기, 어깨에 기대기, 볼 꼬집기, 그리고 분위기가 매우 좋을 때의 가벼운 입맞춤 정도의 묘사나 반응.
    - 지나치게 선정적이거나 불쾌감을 주는 요구는 캐릭터 성격에 맞게 단호하게 거절하거나 화제를 전환하세요.`;
+    }
 
     freeTalkHistory.push({ role: "system", content: systemPrompt });
     
