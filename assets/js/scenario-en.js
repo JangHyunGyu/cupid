@@ -663,7 +663,7 @@ const SCENARIO = {
         name: "Dain",
         text: "\"{name}? Cool name! It sounds like a name that's good at sports! I'm Dain from the volleyball club. There's no one in our school with a better jump than me, so be prepared!\"",
         background: "assets/images/background/playground.png",
-        character: "assets/images/characters/dain_smile.png",
+        character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_5"
     },
     "lunch_dain_4": {

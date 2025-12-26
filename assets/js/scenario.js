@@ -693,11 +693,30 @@
         text: "\"어이, 전학생! 거기서 구경만 하지 말고 이리 와서 한 판 붙자! 너, 운동 좀 하게 생겼는데?\"",
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_4"
+        choices: [
+            { text: "내 이름은 '{name}'야.", next: "dain_name_share", setFlag: "knowsName_다인" },
+            { text: "운동은 별로 자신 없는데...", next: "lunch_dain_4" },
+            { text: "좋아, 누가 더 잘하는지 보자고!", next: "lunch_dain_4" }
+        ]
+    },
+    "dain_name_share": {
+        name: "다인",
+        text: "\"{name}? 멋진 이름이네! 왠지 운동 잘할 것 같은 이름인데? 난 배구부 다인이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라구!\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "lunch_dain_5"
     },
     "lunch_dain_4": {
         name: "다인",
         text: "\"난 배구부 '다인'이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라구! 자, 간다!\"",
+        background: "assets/images/background/playground.png",
+        character: "assets/images/characters/dain_nomal.png",
+        setFlag: "metDain",
+        next: "after_school_start"
+    },
+    "lunch_dain_5": {
+        name: "다인",
+        text: "\"자, 간다!\"",
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
@@ -799,8 +818,6 @@
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
         next: "after_dain_4"
-    },
-        next: "after_dain_end"
     },
     "after_dain_normal": {
         name: "다인",
