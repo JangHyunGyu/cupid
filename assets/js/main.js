@@ -885,38 +885,38 @@ async function sendChatMessage() {
         let reply = data?.choices?.[0]?.message?.content?.trim();
         
         if (reply) {
-            // 표정 변화 파싱 [EXPRESSION: name]
-            const exprRegex = /\[EXPRESSION:\s*(\w+)\]/i;
-            const exprMatch = reply.match(exprRegex);
-            if (exprMatch) {
+            // 표정 변화 파싱 [EXPRESSION: name] - 전역 검색(/g)으로 모든 태그 제거
+            const exprRegex = /\[EXPRESSION:\s*(\w+)\]/gi;
+            let exprMatch;
+            
+            // 마지막으로 매칭된 표정을 적용
+            while ((exprMatch = exprRegex.exec(reply)) !== null) {
                 const exprName = exprMatch[1].toLowerCase();
                 const scene = SCENARIO[currentSceneId];
                 const charExprs = CHARACTER_EXPRESSIONS[scene.name];
                 if (charExprs && charExprs[exprName]) {
-                    // 중앙 슬롯의 캐릭터 이미지 교체
                     const centerSlot = charSlots.center;
                     if (centerSlot.firstChild) {
                         centerSlot.firstChild.src = charExprs[exprName];
                     } else {
-                        // 이미지가 없으면 새로 생성 (보통 center에 위치)
                         const img = document.createElement('img');
                         img.src = charExprs[exprName];
                         centerSlot.appendChild(img);
                     }
                 }
-                reply = reply.replace(exprRegex, "").trim();
             }
+            // 모든 표정 태그 제거
+            reply = reply.replace(exprRegex, "").trim();
 
-            // 스탯 변화 파싱 [STATS: affinity+X]
-            const statsRegex = /\[STATS:\s*affinity\s*([+-]?\d+)\]/i;
-            const match = reply.match(statsRegex);
+            // 스탯 변화 파싱 [STATS: affinity+X] - 전역 검색(/g)으로 모든 태그 제거
+            const statsRegex = /\[STATS:\s*affinity\s*([+-]?\d+)\]/gi;
+            let statMatch;
             
-            if (match) {
-                const affinityChange = parseInt(match[1]);
-                
+            while ((statMatch = statsRegex.exec(reply)) !== null) {
+                const affinityChange = parseInt(statMatch[1]);
                 const scene = SCENARIO[currentSceneId];
                 const charNameMap = {
-                    "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "선생님": "Teacher", "양호선생님": "Nurse",
+                    "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "양호선생님": "Nurse",
                     "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
                 };
                 const charKey = charNameMap[scene.name] || scene.name;
@@ -925,10 +925,9 @@ async function sendChatMessage() {
                     gameState.stats[charKey].affinity = Math.max(-100, Math.min(100, gameState.stats[charKey].affinity + affinityChange));
                     console.log(`AI Stat Change (${charKey}): Affinity ${affinityChange} (Total: Aff ${gameState.stats[charKey].affinity})`);
                 }
-                
-                // 답변에서 스탯 태그 제거
-                reply = reply.replace(statsRegex, "").trim();
             }
+            // 모든 스탯 태그 제거
+            reply = reply.replace(statsRegex, "").trim();
 
             const scene = SCENARIO[currentSceneId];
             nameTagEl.textContent = scene.name;
