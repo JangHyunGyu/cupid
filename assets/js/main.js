@@ -142,6 +142,7 @@ function startFreeTalk(scene) {
     else if (bgUrl.includes('school.png')) locationName = isEn ? "School Gate" : "교문 앞";
     else if (bgUrl.includes('top_school')) locationName = isEn ? "Rooftop" : "학교 옥상";
     else if (bgUrl.includes('playground')) locationName = isEn ? "Playground" : "운동장";
+    else if (bgUrl.includes('gym')) locationName = isEn ? "Gym" : "체육관";
     else if (bgUrl.includes('nurse_room')) locationName = isEn ? "Nurse's Office" : "양호실";
     else if (bgUrl.includes('library')) locationName = isEn ? "Library" : "도서관";
     else if (bgUrl.includes('home_room')) locationName = isEn ? "My Room" : "주인공의 방";

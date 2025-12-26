@@ -664,21 +664,33 @@ const SCENARIO = {
         text: "\"{name}? Cool name! It sounds like a name that's good at sports! I'm Dain from the volleyball club. There's no one in our school with a better jump than me, so be prepared!\"",
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_5"
+        next: "lunch_dain_move_gym"
     },
     "lunch_dain_4": {
         name: "Dain",
-        text: "\"I'm Dain from the volleyball club. There's no one in our school with a better jump than me, so be prepared! Here I go!\"",
+        text: "\"I'm Dain from the volleyball club. There's no one in our school with a better jump than me, so be prepared!\"",
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
-        setFlag: "metDain",
-        next: "after_school_start"
+        next: "lunch_dain_move_gym"
     },
-    "lunch_dain_5": {
+    "lunch_dain_move_gym": {
         name: "Dain",
-        text: "\"Here I go!\"",
+        text: "\"But it's too hot to play here. Let's go to the gym! There's a proper net there, and I can show you my real skills better!\"",
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
+        next: "lunch_dain_gym"
+    },
+    "lunch_dain_gym": {
+        name: "Me",
+        text: "(The gym I arrived at following Dain. The high ceiling, smooth wooden floor, and the cheerful sound of volleyballs bouncing echo around.)",
+        background: "assets/images/background/gym.png",
+        next: "lunch_dain_gym_2"
+    },
+    "lunch_dain_gym_2": {
+        name: "Dain",
+        text: "\"Now, this is my territory! Transfer student, are you ready? I won't go easy on you, so be prepared!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_active.png",
         setFlag: "metDain",
         next: "after_school_start"
     },
@@ -712,8 +724,8 @@ const SCENARIO = {
     },
     "after_dain_new": {
         name: "Me",
-        text: "(Heading to the playground, I see kids practicing volleyball while sweating under the sunset. Among them, there's one girl who particularly stands out.)",
-        background: "assets/images/background/playground.png",
+        text: "(Heading to the gym, I see kids practicing volleyball while sweating under the window where the sunset light seeps in. Among them, there's one girl who particularly stands out.)",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "after_dain_new_intro"
@@ -721,7 +733,7 @@ const SCENARIO = {
     "after_dain_new_intro": {
         name: "???",
         text: "\"Hi! I'm Dain from the volleyball club. You're that kid who transferred today, right?\"",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         setFlag: "metDain",
@@ -729,8 +741,8 @@ const SCENARIO = {
     },
     "after_dain": {
         name: "Dain",
-        text: "(Arriving at the playground, Dain is jumping high and slamming down a powerful spike. Her healthy energy seems to brighten the surroundings.)",
-        background: "assets/images/background/playground.png",
+        text: "(Arriving at the gym, Dain is jumping high and slamming down a powerful spike. Her healthy energy seems to brighten the surroundings.)",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "after_dain_2"
@@ -738,7 +750,7 @@ const SCENARIO = {
     "after_dain_2": {
         name: "Dain",
         text: "(While practice is briefly stopped, Dain discovers me and runs over while wiping sweat with a towel.)",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "after_dain_3"
@@ -746,7 +758,7 @@ const SCENARIO = {
     "after_dain_3": {
         name: "Dain",
         text: "\"Hey, transfer student! What brings you here? Did you come to watch me practice? Hehe, you haven't fallen for my cool appearance, have you?\"",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         choices: [
@@ -757,7 +769,7 @@ const SCENARIO = {
     "after_dain_cheer": {
         name: "Dain",
         text: "(Dain smiles while scrunching her nose shyly. A healthy blush blooms on her face.)",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "after_dain_cheer_2"
@@ -765,7 +777,7 @@ const SCENARIO = {
     "after_dain_cheer_2": {
         name: "Dain",
         text: "\"Wh-what... it's embarrassing if you praise me so suddenly! It's not like I worked hard just for you to hear, so don't get the wrong idea! But... I guess I feel a bit more energized since you're watching...\"",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
         next: "after_dain_end"
@@ -773,7 +785,7 @@ const SCENARIO = {
     "after_dain_normal": {
         name: "Dain",
         text: "(Dain playfully hits my shoulder. I can feel a pleasant warmth from her touch.)",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "after_dain_normal_2"
@@ -781,15 +793,15 @@ const SCENARIO = {
     "after_dain_normal_2": {
         name: "Dain",
         text: "\"Ayy~ you're not being honest! Well, fine. Since you're here, want to wait until our practice is over? Let's go eat tteokbokki together!\"",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "after_dain_end"
     },
     "after_dain_end": {
         name: "Me",
-        text: "(I sat on the playground stands and watched Dain until her practice was over. Her passion didn't seem to cool down until the sun set and darkness fell.)",
-        background: "assets/images/background/school.png",
+        text: "(I sat on the gym stands and watched Dain until her practice was over. Her passion didn't seem to cool down until the sun set and darkness fell.)",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_active.png",
         sunset: true,
         next: "after_dain_end_2"
@@ -1406,22 +1418,22 @@ const SCENARIO = {
             { text: "Go to the library annex as the note said.", next: "day2_lunch_yuna", condition: "readNote" },
             { text: "Head to the library annex where Yuna is.", next: "day2_lunch_yuna", condition: "metYuna", excludeCondition: "readNote" },
             { text: "Head to the quiet library annex.", next: "day2_lunch_yuna_new", excludeCondition: "metYuna" },
-            { text: "Go to the playground to play volleyball with Dain.", next: "day2_lunch_volleyball", condition: "metDain" },
-            { text: "Go out to the playground and play volleyball with the kids.", next: "day2_lunch_volleyball_new", excludeCondition: "metDain" },
+            { text: "Go to the gym to play volleyball with Dain.", next: "day2_lunch_volleyball", condition: "metDain" },
+            { text: "Go to the gym and play volleyball with the kids.", next: "day2_lunch_volleyball_new", excludeCondition: "metDain" },
             { text: "I don't feel well, so I'll go to the nurse's office.", next: "day2_lunch_nurse" }
         ]
     },
     "day2_lunch_volleyball_new": {
         name: "Me",
-        text: "(Going out to the playground, I feel a lively energy. A girl is leading the kids and passionately teaching volleyball.)",
-        background: "assets/images/background/playground.png",
+        text: "(Going to the gym, I feel a lively energy. A girl is leading the kids and passionately teaching volleyball.)",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_lunch_volleyball_new_2"
     },
     "day2_lunch_volleyball_new_2": {
         name: "???",
         text: "\"Hey, you there, transfer student! Don't just stand there blankly, come here and how about a game? I'm Dain from the volleyball club!\"",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
         next: "day2_lunch_volleyball"
@@ -1637,15 +1649,15 @@ const SCENARIO = {
     },
     "day2_lunch_volleyball": {
         name: "Me",
-        text: "(I ran out to the playground and played volleyball, sweating with the kids led by Dain. Receiving and passing the flying ball made my stray thoughts disappear and I felt refreshed. When I succeeded in a powerful spike, Dain hugged me and cheered.)",
-        background: "assets/images/background/playground.png",
+        text: "(I ran to the gym and played volleyball, sweating with the kids led by Dain. Receiving and passing the flying ball made my stray thoughts disappear and I felt refreshed. When I succeeded in a powerful spike, Dain hugged me and cheered.)",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_lunch_volleyball_2"
     },
     "day2_lunch_volleyball_2": {
         name: "Dain",
         text: "\"Wow! Transfer student, your spike skill is awesome! I appoint you as our team's ace! Today was really the best!\"",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_afternoon"
     },
@@ -1787,7 +1799,7 @@ const SCENARIO = {
     },
     "day2_afternoon_dain": {
         name: "Me",
-        text: "(Dain said she has volleyball club practice and ran to the playground, waving her hand lively.)",
+        text: "(Dain said she has volleyball club practice and ran to the gym, waving her hand lively.)",
         background: "assets/images/background/room_school.png",
         sunset: true,
         next: "day2_afternoon_2"
@@ -1815,7 +1827,7 @@ const SCENARIO = {
             { text: "Approach Seoyeon.", next: "day2_final_seoyeon" },
             { text: "Approach Yuna.", next: "day2_final_yuna", condition: "metYuna" },
             { text: "Approach the unfamiliar girl.", next: "day2_final_yuna_new", excludeCondition: "metYuna" },
-            { text: "Go to Dain waiting on the playground.", next: "day2_final_dain", condition: "metDain" },
+            { text: "Go to Dain waiting in the gym.", next: "day2_final_dain", condition: "metDain" },
             { text: "Pretend not to know both and hurry home.", next: "day2_final_run" }
         ]
     },
@@ -2102,7 +2114,7 @@ const SCENARIO = {
     },
     "day2_final_dain": {
         name: "Me",
-        text: "(Leaving behind the stinging gazes of Seoyeon and the girl standing next to her, I walked towards Dain, who was waving from the playground.)",
+        text: "(Leaving behind the stinging gazes of Seoyeon and the girl standing next to her, I walked towards Dain, who was waving from the gym.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2115,7 +2127,7 @@ const SCENARIO = {
     },
     "day2_final_dain_met_yuna": {
         name: "Me",
-        text: "(Leaving behind the stinging gazes of Seoyeon and Yuna, I walked towards Dain, who was waving from the playground.)",
+        text: "(Leaving behind the stinging gazes of Seoyeon and Yuna, I walked towards Dain, who was waving from the gym.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2128,7 +2140,7 @@ const SCENARIO = {
     },
     "day2_final_dain_new_yuna": {
         name: "Me",
-        text: "(Leaving behind the stinging gazes of Seoyeon and the girl standing next to her, I walked towards Dain, who was waving from the playground.)",
+        text: "(Leaving behind the stinging gazes of Seoyeon and the girl standing next to her, I walked towards Dain, who was waving from the gym.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2207,8 +2219,8 @@ const SCENARIO = {
     },
     "day2_final_dain_start": {
         name: "Dain",
-        text: "(Turning towards the playground, Dain is holding a volleyball and waving at me. Her healthy smile sparkles in the sunset.)",
-        background: "assets/images/background/playground.png",
+        text: "(Turning towards the gym, Dain is holding a volleyball and waving at me. Her healthy smile sparkles in the sunset.)",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "day2_final_dain_2"
@@ -2291,7 +2303,7 @@ const SCENARIO = {
     },
     "day2_final_run_dain": {
         name: "Me",
-        text: "\"(Come to think of it, I also promised to go eat tteokbokki with Dain... Dain must be waiting at the playground, right? I'm really sorry...)\"",
+        text: "\"(Come to think of it, I also promised to go eat tteokbokki with Dain... Dain must be waiting in the gym, right? I'm really sorry...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_final_run_yuna_check"
