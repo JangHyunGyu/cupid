@@ -603,7 +603,7 @@
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
             { text: "물론이지! 나도 서연이랑 더 이야기하고 싶었어.", next: "seyoun_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
-            { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail" }
+            { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -10 } } }
         ]
     },
     "seyoun_contact_success": {
@@ -962,7 +962,7 @@
         night: true,
         choices: [
             { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
-            { text: "음... 나중에 기회 되면 알려줄게.", next: "dain_contact_fail" }
+            { text: "음... 나중에 기회 되면 알려줄게.", next: "dain_contact_fail", stats: { Dain: { affinity: -10 } } }
         ]
     },
     "dain_contact_success": {
@@ -1263,7 +1263,7 @@
         night: true,
         choices: [
             { text: "응, 유나랑 더 많은 비밀을 나누고 싶어.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
-            { text: "미안, 아직은 좀 조심스러워.", next: "yuna_contact_fail" }
+            { text: "미안, 아직은 좀 조심스러워.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
         ]
     },
     "yuna_contact_success": {
@@ -1643,7 +1643,7 @@
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "감사합니다, 담임선생님!", next: "teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "아, 괜찮습니다.", next: "teacher_contact_fail" }
+            { text: "아, 괜찮습니다.", next: "teacher_contact_fail", stats: { Teacher: { affinity: -10 } } }
         ]
     },
     "teacher_contact_success": {
@@ -2030,7 +2030,7 @@
         sunset: true,
         choices: [
             { text: "네, 알고 싶어요.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
-            { text: "아, 괜찮습니다.", next: "nurse_contact_fail" }
+            { text: "아, 괜찮습니다.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -10 } } }
         ]
     },
     "nurse_contact_success": {
