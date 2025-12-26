@@ -1990,7 +1990,7 @@
     },
     "day2_lunch_nurse_trap_2": {
         name: "양호선생님",
-        text: "\"전학생 군... 내가 우스워 보이니? 어른을 놀리는 건 좋지 않아. 그런 무례한 태도는 어디서 배운 걸까? 당장 나가줘.\"",
+        text: "\"어머... 전학생 군, 내가 너무 받아줬나 보네. 어른을 상대로 그런 무례한 말은 농담으로 안 들려. 오늘은 그만 나가줄래? 기분이 아주 별로네.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_choice"
