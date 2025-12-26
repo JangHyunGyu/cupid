@@ -180,6 +180,31 @@ function getGameContext(charName, isEn) {
     }).join("\n");
 }
 
+// 다른 캐릭터들에 대한 정보를 생성하는 함수
+function getSocialContext(currentCharName, isEn) {
+    const characters = isEn ? {
+        "Seoyeon": "Student Council President. Kind but lonely.",
+        "Yuna": "Mysterious girl. Interested in the user's 'light'.",
+        "Dain": "Energetic girl. Close friend of the user.",
+        "Homeroom Teacher": "Professional but has a clumsy side.",
+        "Nurse": "Seductive but caring 'Onee-san'."
+    } : {
+        "서연": "학생회장. 모두에게 친절하지만 외로움을 잘 탐.",
+        "유나": "신비로운 소녀. 주인공의 '빛'에 집착함.",
+        "다인": "활기찬 소녀. 주인공과 편한 친구 사이.",
+        "담임선생님": "전문적인 교사지만 허당끼가 있음.",
+        "양호선생님": "매혹적이고 장난기 많은 양호 교사."
+    };
+
+    const otherChars = Object.entries(characters)
+        .filter(([name]) => name !== currentCharName)
+        .map(([name, desc]) => `- ${name}: ${desc}`)
+        .join("\n");
+
+    const header = isEn ? "\n\n[Other Characters in School]:\n" : "\n\n[학교의 다른 인물들]:\n";
+    return header + otherChars;
+}
+
 function startFreeTalk(scene) {
     isFreeTalking = true;
     freeTalkTurns = 0;
@@ -188,6 +213,7 @@ function startFreeTalk(scene) {
     
     const isEn = document.documentElement.lang === 'en';
     const gameContext = getGameContext(scene.name, isEn);
+    const socialContext = getSocialContext(scene.name, isEn);
     
     // 현재 배경 이미지 파일명에서 장소 유추
     let locationName = isEn ? "School" : "학교";
@@ -370,7 +396,7 @@ Current Location: ${locationName}
 Current Situation: ${scene.context || "Talking with the user."}
 Personality: ${charPersonality}
 Hidden Stats: Affinity ${charStats.affinity} (Higher values mean more favorable relationship)
-${scene.extra_guideline ? `Extra Guideline: ${scene.extra_guideline}` : ""}${gameContext}
+${scene.extra_guideline ? `Extra Guideline: ${scene.extra_guideline}` : ""}${gameContext}${socialContext}
 
 Style Guidelines (Targeting Visual Novel Fans):
 1. Use emotional and romantic expressions that visual novel fans would love.
@@ -397,7 +423,7 @@ ${charInteractionGuideline}
         systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
 현재 장소: ${locationName}
 현재 상황: ${scene.context || "사용자와 대화 중입니다."}
-성격: ${charPersonality}히든 스탯: 호감도 ${charStats.affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}${gameContext}
+성격: ${charPersonality}히든 스탯: 호감도 ${charStats.affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}${gameContext}${socialContext}
 
 스타일 지침 (미연시 매니아 타겟):
 1. 미연시 매니아들이 설렐만한 감성적이고 로맨틱한 표현을 적극적으로 사용하세요.
