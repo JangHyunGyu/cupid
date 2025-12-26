@@ -2815,8 +2815,16 @@
         night: true,
         choices: [
             { text: "연락해보기", next: "send_message_select", condition: "has_any_contact" },
+            { text: "호감도 확인", next: "check_affinity" },
             { text: "그냥 잔다", next: "end_demo_real" }
         ]
+    },
+    "check_affinity": {
+        name: "시스템",
+        text: "현재 캐릭터들과의 호감도 상태입니다.{affinity_list}",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        next: "home_phone"
     },
     "end_demo_real": {
         name: "시스템",

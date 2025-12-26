@@ -840,6 +840,32 @@ function typeText(text, charName) {
     
     processedText = processedText.replace(/{name\?}/g, nameToUse);
     
+    // 호감도 리스트 치환 {affinity_list}
+    if (processedText.includes("{affinity_list}")) {
+        const charNames = isEn ? 
+            { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Teacher", Nurse: "Nurse" } :
+            { Seoyeon: "서연", Yuna: "유나", Dain: "다인", Teacher: "담임선생님", Nurse: "양호선생님" };
+        
+        let listStr = isEn ? "\n\n[Affinity Status]\n" : "\n\n[호감도 현황]\n";
+        for (const [key, name] of Object.entries(charNames)) {
+            const affinity = gameState.stats[key].affinity;
+            let bar = "";
+            
+            if (affinity >= 0) {
+                // 양수일 때: 채워진 하트(♥)와 빈 하트(♡)
+                const filled = Math.min(10, Math.floor(affinity / 10));
+                bar = "♥".repeat(filled) + "♡".repeat(10 - filled);
+            } else {
+                // 음수일 때: 깨진 하트(💔)와 빈 하트(♡)
+                const broken = Math.min(10, Math.floor(Math.abs(affinity) / 10));
+                bar = "💔".repeat(broken) + "♡".repeat(10 - broken);
+            }
+            
+            listStr += `${name}: ${bar} (${affinity}%)\n`;
+        }
+        processedText = processedText.replace(/{affinity_list}/g, listStr);
+    }
+    
     return new Promise((resolve) => {
         isTyping = true;
         messageEl.textContent = "";
