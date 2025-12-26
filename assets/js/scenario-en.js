@@ -1767,7 +1767,7 @@ const SCENARIO = {
     },
     "nurse_contact_fail": {
         name: "Nurse",
-        text: "(She looks a bit disappointed but soon smiles.) \"Oh, you're conservative? That's cute too. Tell me if you change your mind.\"",
+        text: "(She looks a bit disappointed but soon smiles.) \"Oh, playing hard to get? Well, that innocent side is cute too. Tell me if you change your mind.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,

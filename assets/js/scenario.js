@@ -1923,7 +1923,7 @@
     },
     "nurse_contact_fail": {
         name: "양호선생님",
-        text: "(그녀가 아쉬운 듯 미소 짓는다.) \"의외로 보수적이네? 뭐, 그런 점도 귀엽지만. 마음 바뀌면 말해줘.\"",
+        text: "(그녀가 아쉬운 듯 미소 짓는다.) \"의외로 철벽이네? 후훗, 그런 순진한 면도 귀엽지만. 마음 바뀌면 말해줘.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
