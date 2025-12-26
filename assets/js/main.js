@@ -132,9 +132,22 @@ function startFreeTalk(scene) {
     currentMaxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
     freeTalkHistory = [];
     
+    // 현재 배경 이미지 파일명에서 장소 유추
+    let locationName = "학교";
+    const bgUrl = bgLayer.style.backgroundImage;
+    if (bgUrl.includes('room_school')) locationName = "교실";
+    else if (bgUrl.includes('load_school')) locationName = "복도";
+    else if (bgUrl.includes('school.png')) locationName = "교문 앞";
+    else if (bgUrl.includes('top_school')) locationName = "학교 옥상";
+    else if (bgUrl.includes('playground')) locationName = "운동장";
+    else if (bgUrl.includes('nurse_room')) locationName = "양호실";
+    else if (bgUrl.includes('library')) locationName = "도서관";
+    else if (bgUrl.includes('home_room')) locationName = "주인공의 방";
+
     // 시스템 프롬프트 설정
     const knowsName = gameState[`knowsName_${scene.name}`];
     const systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
+현재 장소: ${locationName}
 현재 상황: ${scene.context || "사용자와 대화 중입니다."}
 성격: ${scene.personality || "다정하고 친절한 학생회장"}
 ${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
