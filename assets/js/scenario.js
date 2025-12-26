@@ -1,19 +1,19 @@
 ﻿const SCENARIO = {
     "start": {
         name: "나",
-        text: "(따스한 봄 햇살이 내리쬐는 교문 앞. 전학 첫날의 설렘과 긴장감이 가슴 속에서 소용돌이친다.)",
+        text: "(따스한 햇살이 내리쬐는 교문 앞. 전학 첫날의 긴장감이 느껴진다.)",
         background: "assets/images/background/school.png",
         character: null,
         next: "start_2"
     },
     "start_2": {
         name: "나",
-        text: "(낯선 교복의 까슬까슬한 감촉, 낯선 풍경의 이질감... 모든 것이 생경하기만 하다.)",
+        text: "(낯선 교복과 풍경... 모든 것이 생경하다.)",
         next: "start_3"
     },
     "start_3": {
         name: "나",
-        text: "(심장 소리가 귓가에 울릴 정도로 크게 들려온다. 나는 심호흡을 하며 교문을 향해 한 걸음을 내디뎠다.)",
+        text: "(심호흡을 하며 교문을 향해 한 걸음을 내디뎠다.)",
         next: "name_input_scene"
     },
     "name_input_scene": {
@@ -30,13 +30,13 @@
     },
     "intro_1": {
         name: "나",
-        text: "(그녀가 생긋 웃으며 한 걸음 다가온다. 바람에 살짝 흔들리는 그녀의 긴 머리카락에서 은은한 라벤더 향기가 코끝을 간지럽힌다.)",
+        text: "(그녀가 웃으며 다가온다. 은은한 향기가 느껴진다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "intro_2"
     },
     "intro_2": {
         name: "나",
-        text: "(맑은 눈동자가 나를 빤히 바라보자 심장 박동이 걷잡을 수 없이 빨라진다. 마치 시간이 멈춘 것만 같은 착각이 든다.)",
+        text: "(그녀의 맑은 눈동자가 나를 빤히 바라본다.)",
         next: "intro_3"
     },
     "intro_3": {
@@ -46,12 +46,12 @@
             { text: "응, 반가워. 학교가 너무 커서 길을 좀 헤매고 있었어.", next: "path_friendly_1" },
             { text: "학생회장이 직접 마중까지? 내가 좀 특별한 대우를 받는 건가?", next: "path_tease_1" },
             { text: "너... 정말 예쁘다. (나도 모르게 본심이 튀어나와 버렸다!)", next: "path_blush_1" },
-            { text: "(너무 긴장해서 목소리가 나오지 않는다. 그저 멍하니 그녀를 바라볼 뿐...)", next: "path_silent_1" }
+            { text: "(긴장해서 아무 말도 하지 못한다.)", next: "path_silent_1" }
         ]
     },
     "path_friendly_1": {
         name: "서연",
-        text: "(나의 대답에 그녀가 안심한 듯 꽃이 피어나듯 밝게 웃는다. 그 미소에 얼어붙었던 긴장이 조금씩 녹아내리는 기분이다. 그녀의 미소는 마치 봄날의 햇살처럼 따스하다. 그녀는 내 가방 끈을 살짝 잡아당기며 앞장선다.)",
+        text: "(그녀가 밝게 웃으며 앞장선다. 긴장이 조금 풀리는 기분이다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_friendly_1_2"
     },
@@ -63,7 +63,7 @@
     },
     "path_tease_1": {
         name: "서연",
-        text: "(그녀가 살짝 눈을 가늘게 뜨며 장난스럽게 대답한다. 하지만 입가에는 여전히 기분 좋은 미소가 걸려 있다. 그녀의 눈동자 속에서 장난기 어린 빛이 반짝인다. 그녀는 검지 손가락을 입술에 갖다 대며 윙크를 한다.)",
+        text: "(그녀가 장난스럽게 웃으며 윙크를 한다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "path_tease_1_2"
     },
@@ -75,7 +75,7 @@
     },
     "path_blush_1": {
         name: "서연",
-        text: "(서연이의 얼굴이 순식간에 잘 익은 사과처럼 빨개진다. 당황해서 시선을 피하며 머리카락을 만지작거리는 모습이 무척이나 신선하고 귀엽다. 그녀의 손끝이 미세하게 떨리는 것이 보인다. 그녀는 헛기침을 하며 서둘러 뒤를 돈다.)",
+        text: "(서연이의 얼굴이 빨개진다. 그녀는 당황하며 서둘러 뒤를 돈다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "path_blush_1_2"
     },
@@ -87,7 +87,7 @@
     },
     "path_silent_1": {
         name: "서연",
-        text: "(그녀가 내 눈앞에서 손을 살랑살랑 흔든다. 걱정스러운 눈빛이 나를 향하자 왠지 모를 보호 본능이 자극된다. 그녀의 맑은 눈동자에 비친 내 모습이 무척이나 바보 같아 보인다. 그녀는 내 이마에 손을 얹어 열을 확인한다.)",
+        text: "(그녀가 내 눈앞에서 손을 흔들더니, 내 이마에 손을 얹어 열을 확인한다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "path_silent_1_2"
     },
@@ -99,7 +99,7 @@
     },
     "hallway_1": {
         name: "서연",
-        text: "(서연이의 뒤를 따라 복도를 걷는다. 복도 창문 너머로 학생들의 활기찬 목소리와 운동장에서 들려오는 호각 소리가 어우러진다.)",
+        text: "(서연이의 뒤를 따라 복도를 걷는다. 창밖으로 아이들의 활기찬 목소리가 들린다.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_back.png",
         next: "hallway_name_ask"
@@ -127,7 +127,7 @@
     },
     "hallway_1_2": {
         name: "서연",
-        text: "(그녀의 뒷모습을 보고 있자니 왠지 모를 설렘이 가시지 않는다. 그녀의 걸음걸이는 가볍고 우아하다. 복도에는 은은한 왁스 냄새와 아이들의 열기가 섞여 있다.)",
+        text: "(그녀의 뒷모습을 보며 복도를 걷는다.)",
         character: "assets/images/characters/seyoun_back.png",
         next: "hallway_free_talk"
     },
@@ -152,7 +152,7 @@
     },
     "hallway_talk_club": {
         name: "서연",
-        text: "(그녀가 반가운 듯 고개를 돌려 나를 바라본다. 그녀의 눈이 반짝이며 열정을 내비친다. 그녀는 자신의 가슴에 손을 얹으며 자랑스럽게 말한다.)",
+        text: "(그녀가 반가운 듯 나를 바라본다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_talk_club_2"
     },
@@ -164,7 +164,7 @@
     },
     "hallway_talk_flatter": {
         name: "서연",
-        text: "(그녀가 쑥스러운 듯 헛기침을 하며 대답한다. 하지만 기분이 나빠 보이지는 않는다. 그녀의 뺨에 옅은 홍조가 스친다. 그녀는 부끄러운 듯 가방 끈을 꽉 쥔다.)",
+        text: "(그녀가 쑥스러운 듯 뺨을 붉히며 대답한다.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "hallway_talk_flatter_2"
     },
@@ -176,25 +176,25 @@
     },
     "hallway_talk_listen": {
         name: "서연",
-        text: "(그녀는 나의 진지한 태도가 마음에 든 듯 더욱 열정적으로 설명을 이어간다. 그녀의 목소리는 맑고 고와서 듣는 것만으로도 기분이 좋아진다. 그녀는 손가락으로 이곳저곳을 가리키며 신나게 말한다.)",
+        text: "(그녀가 신이 난 듯 설명을 이어간다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_talk_listen_2"
     },
     "hallway_talk_listen_2": {
         name: "서연",
-        text: "\"내 설명을 이렇게 잘 들어주니 정말 고마워. 전학생 군은 참 성실한 사람인 것 같네! 이런 태도라면 학교생활도 금방 적응할 거야.\"",
+        text: "\"내 설명을 이렇게 잘 들어주니 정말 고마워. 전학생 군은 참 성실한 person인 것 같네! 이런 태도라면 학교생활도 금방 적응할 거야.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
     "hallway_2": {
         name: "서연",
-        text: "(그녀가 갑자기 멈춰 서서 나를 돌아본다. 진지하면서도 기대에 찬 눈빛에 나도 모르게 침을 꼴깍 삼켰다.)",
+        text: "(그녀가 갑자기 멈춰 서서 나를 돌아본다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2_2"
     },
     "hallway_2_2": {
         name: "서연",
-        text: "(복도의 소음이 멀어지고 오직 우리 두 사람만 남은 것 같은 정적이 흐른다. 그녀의 눈동자가 내 눈을 뚫어지게 쳐다본다.)",
+        text: "(그녀가 내 눈을 뚫어지게 쳐다본다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2_3"
     },
@@ -398,7 +398,7 @@
     },
     "lunch_time_2": {
         name: "나",
-        text: "(나는 어떻게 할까? 창밖으로 보이는 운동장에는 벌써 축구공을 차며 뛰어다니는 아이들이 보인다. 배꼽시계가 요란하게 울린다.)",
+        text: "(점심시간이다. 창밖 운동장에는 아이들이 뛰어놀고 있다.)",
         choices: [
             { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone", setFlag: "metYuna" },
@@ -409,7 +409,7 @@
     },
     "lunch_seoyeon": {
         name: "서연",
-        text: "(서연이에게 다가가자 그녀가 기다렸다는 듯 가방에서 예쁜 체크무늬 도시락을 꺼낸다. 그녀의 눈이 반짝이며 나를 반긴다.)",
+        text: "(서연이에게 다가가자 그녀가 반갑게 나를 맞이한다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "lunch_seoyeon_2"
     },
@@ -421,13 +421,13 @@
     },
     "rooftop_1": {
         name: "서연",
-        text: "(시원한 바람이 기분 좋게 불어오는 학교 옥상. 서연이가 정성스럽게 싸온 3단 도시락을 펼친다. 알록달록한 반찬들이 정말 먹음직스럽다.)",
+        text: "(시원한 바람이 부는 옥상. 서연이가 도시락을 펼친다.)",
         background: "assets/images/background/top_school.png",
         next: "rooftop_1_2"
     },
     "rooftop_1_2": {
         name: "서연",
-        text: "(고소한 냄새가 코끝을 자극한다. 그녀는 젓가락을 건네며 수줍게 웃는다.)",
+        text: "(그녀가 젓가락을 건네며 수줍게 웃는다.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_2_2"
@@ -452,7 +452,7 @@
     },
     "rooftop_talk_food": {
         name: "서연",
-        text: "(그녀가 기쁜 듯 뺨을 붉히며 대답한다. 그녀의 눈동자가 행복으로 가득 차 있다. 그녀는 자신이 만든 음식을 맛있게 먹는 내 모습을 보며 뿌듯해한다.)",
+        text: "(그녀가 기쁜 듯 뺨을 붉히며 대답한다.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_talk_food_2"
     },
@@ -464,7 +464,7 @@
     },
     "rooftop_talk_ah": {
         name: "서연",
-        text: "(서연이의 얼굴이 폭발할 듯이 빨개진다. 젓가락을 든 손이 파르르 떨린다. 그녀의 숨소리가 조금 거칠어진다. 그녀는 주변 눈치를 살피더니 조심스럽게 소시지를 집어 내 입으로 가져온다.)",
+        text: "(서연이의 얼굴이 빨개진다. 그녀는 조심스럽게 소시지를 내 입으로 가져온다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "rooftop_talk_ah_2"
     },
@@ -476,7 +476,7 @@
     },
     "rooftop_talk_thanks": {
         name: "서연",
-        text: "(그녀가 부드러운 미소를 지으며 내 눈을 지긋이 바라본다. 그녀의 눈빛에서 진심 어린 애정이 느껴진다. 그녀는 내 입가에 묻은 소스를 손가락으로 살짝 닦아준다.)",
+        text: "(그녀가 미소를 지으며 내 입가에 묻은 소스를 닦아준다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_talk_thanks_2"
     },
@@ -488,7 +488,7 @@
     },
     "rooftop_2": {
         name: "서연",
-        text: "(식사를 마치고 우리는 나란히 앉어 먼 하늘을 바라본다. 평화로운 오후의 한때... 서연이가 조심스럽게 입을 연다. 그녀의 목소리가 평소보다 조금 낮고 진지하다. 그녀는 내 어깨에 살짝 머리를 기댄다.)",
+        text: "(식사를 마치고 나란히 앉아 먼 하늘을 바라본다. 서연이가 조심스럽게 입을 연다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_2_2"
     },
@@ -509,7 +509,7 @@
     },
     "rooftop_choices": {
         name: "서연",
-        text: "(그녀가 내 대답을 기다리며 눈을 반짝인다. 나는 잠시 고민하다 입을 열었다.)",
+        text: "(그녀가 내 대답을 기다리며 눈을 반짝인다.)",
         choices: [
             { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny" },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 거 아닐까?", next: "rooftop_kind" },
@@ -518,7 +518,7 @@
     },
     "rooftop_destiny": {
         name: "서연",
-        text: "(그녀가 수줍게 웃으며 내 손 위에 자신의 손을 살며시 겹친다. 따뜻한 온기가 전해져 온다. 그녀의 손은 작고 부드럽다. 그녀는 내 손가락을 만지작거리며 약속을 청한다.)",
+        text: "(그녀가 수줍게 웃으며 내 손 위에 자신의 손을 살며시 겹친다.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_destiny_2"
     },
@@ -530,7 +530,7 @@
     },
     "rooftop_kind": {
         name: "서연",
-        text: "(그녀가 살짝 토라진 듯 입술을 내민다. 그 모습마저 사랑스럽다. 그녀의 눈동자가 살짝 흔들린다. 그녀는 내 팔을 살짝 꼬집으며 투정을 부린다.)",
+        text: "(그녀가 살짝 토라진 듯 입술을 내민다.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "rooftop_kind_2"
     },
@@ -542,7 +542,7 @@
     },
     "rooftop_comfortable": {
         name: "서연",
-        text: "(그녀가 만족스러운 듯 고개를 끄덕인다. 그녀의 표정이 한결 편안해 보인다. 그녀는 깊은 한숨을 내쉬며 긴장을 푼다.)",
+        text: "(그녀가 만족스러운 듯 고개를 끄덕인다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_comfortable_2"
     },
@@ -575,13 +575,13 @@
     },
     "lunch_alone": {
         name: "나",
-        text: "(혼자 조용한 복도를 걷다 보니, 아침에는 보지 못했던 구석진 곳에 위치한 도서관 별관에 도착했다. 낡은 나무 문 사이로 오래된 종이 냄새가 흘러나온다. 그곳에서 창가에 기대어 책을 읽고 있는 신비로운 분위기의 소녀와 마주쳤다. 그녀의 주변에는 먼지가 햇빛에 반짝이며 춤을 추고 있다.)",
+        text: "(혼자 조용한 복도를 걷다 보니, 도서관 별관에 도착했다. 그곳에서 창가에 기대어 책을 읽고 있는 소녀와 마주쳤다.)",
         background: "assets/images/background/library_old.png",
         next: "alone_2"
     },
     "alone_2": {
         name: "???",
-        text: "(그녀는 책에서 눈을 떼지 않은 채 나지막한 목소리로 말을 건넨다. 차가운 듯하면서도 왠지 모를 슬픔이 서린 목소리다. 그녀의 주변만 공기가 차갑게 가라앉은 것 같다. 그녀는 책장을 천천히 넘기며 나를 의식한다.)",
+        text: "(그녀는 책에서 눈을 떼지 않은 채 나지막한 목소리로 말을 건넨다.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "alone_2_2"
     },
@@ -593,7 +593,7 @@
     },
     "yuna_intro": {
         name: "???",
-        text: "(그녀가 천천히 고개를 들어 나를 바라본다. 깊고 신비로운 보랏빛 눈동자가 나를 조용히 관찰한다. 그녀의 눈동자 속에는 남들은 모르는 사연이 담겨 있는 듯하다. 그녀는 책을 덮고 나에게 다가온다.)",
+        text: "(그녀가 천천히 고개를 들어 나를 바라본다. 깊고 신비로운 보랏빛 눈동자가 나를 조용히 관찰한다.)",
         next: "yuna_intro_2"
     },
     "yuna_intro_2": {
@@ -612,7 +612,7 @@
     },
     "yuna_choices": {
         name: "유나",
-        text: "(그녀의 보랏빛 눈동자가 나를 꿰뚫어 보는 듯하다. 나는 침을 꿀꺽 삼키며 물었다.)",
+        text: "(그녀의 보랏빛 눈동자가 나를 꿰뚫어 보는 듯하다.)",
         choices: [
             { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret" },
             { text: "낯익다니... 나를 본 적 있어?", next: "yuna_scent" },
@@ -621,7 +621,7 @@
     },
     "yuna_secret": {
         name: "유나",
-        text: "(그녀가 입가에 묘한 미소를 띠며 책을 덮는다. 책이 덮이는 소리가 정적을 깨뜨린다. 그녀는 내 귓가에 입술을 가까이 대고 속삭인다.)",
+        text: "(그녀가 입가에 묘한 미소를 띠며 책을 덮는다. 그녀는 내 귓가에 입술을 가까이 대고 속삭인다.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "yuna_secret_2"
     },
@@ -633,7 +633,7 @@
     },
     "yuna_scent": {
         name: "유나",
-        text: "(그녀가 한 걸음 다가와 나를 빤히 바라본다. 그녀의 시선이 내 얼굴 구석구석을 훑는다. 그녀는 씁쓸한 표정으로 중얼거린다.)",
+        text: "(그녀가 한 걸음 다가와 나를 빤히 바라본다. 그녀는 씁쓸한 표정으로 중얼거린다.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "yuna_scent_2"
     },
@@ -645,7 +645,7 @@
     },
     "yuna_danger": {
         name: "유나",
-        text: "(그녀가 차가운 손가락으로 내 뺨을 살짝 스친다. 그녀의 손가락 끝이 닿은 곳이 서늘하다. 그녀는 내 눈을 빤히 바라보며 묘한 미소를 짓는다.)",
+        text: "(그녀가 차가운 손가락으로 내 뺨을 살짝 스친다. 그녀는 내 눈을 빤히 바라보며 묘한 미소를 짓는다.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "yuna_danger_2"
     },
@@ -657,17 +657,17 @@
     },
     "lunch_store": {
         name: "나",
-        text: "(매점으로 전력 질주하여 마지막 남은 '초코 소라빵'을 쟁취했다! 승리자의 기분으로 빵을 한 입 베어 물자, 진한 초콜릿의 달콤함이 뇌를 자극한다. 매점 아주머니의 호탕한 웃음소리가 들려온다. 나는 빵을 소중하게 품에 안고 교실로 돌아왔다.)",
+        text: "(매점에서 마지막 남은 '초코 소라빵'을 쟁취했다! 승리자의 기분으로 빵을 한 입 베어 물자, 달콤함이 입안 가득 퍼진다.)",
         next: "lunch_store_2"
     },
     "lunch_store_2": {
         name: "나",
-        text: "\"크으~ 역시 이 맛이야! 전학 첫날의 피로가 싹 가시는 기분인걸? 혼자 먹는 빵도 이렇게 맛있을 수 있다니!\"",
+        text: "\"크으~ 역시 이 맛이야! 전학 첫날의 피로가 싹 가시는 기분인걸?\"",
         next: "after_school_start"
     },
     "lunch_sleep": {
         name: "나",
-        text: "(책상에 엎드려 잠을 청한다. 멀리서 들려오는 아이들의 웃음소리가 자장가처럼 들린다. 의식이 서서히 흐릿해지며 깊은 어둠 속으로 빠져든다. 창가로 들어오는 햇살이 등을 따뜻하게 데워준다. 나는 꿈속에서 누군가와 즐겁게 대화하는 환상을 보았다.)",
+        text: "(책상에 엎드려 잠을 청한다. 창가로 들어오는 햇살이 등을 따뜻하게 데워준다.)",
         next: "lunch_sleep_2"
     },
     "lunch_sleep_2": {
@@ -677,19 +677,19 @@
     },
     "lunch_dain": {
         name: "나",
-        text: "(운동장으로 나가자 활기찬 기운이 가득하다. 아이들이 축구와 농구를 하며 즐거운 시간을 보내고 있다. 딱히 내가 끼어들 자리는 보이지 않는 것 같다.)",
+        text: "(운동장으로 나가자 활기찬 기운이 가득하다. 딱히 내가 끼어들 자리는 보이지 않는 것 같다.)",
         background: "assets/images/background/playground.png",
         next: "lunch_dain_to_gym"
     },
     "lunch_dain_to_gym": {
         name: "나",
-        text: "(그때, 근처 체육관 쪽에서 배구공이 바닥에 튀는 경쾌한 소리가 들려온다. 호기심이 생긴 나는 체육관으로 발걸음을 옮겼다.)",
+        text: "(그때, 체육관 쪽에서 배구공이 튀는 소리가 들려온다. 호기심이 생긴 나는 체육관으로 발걸음을 옮겼다.)",
         background: "assets/images/background/playground.png",
         next: "lunch_dain_2"
     },
     "lunch_dain_2": {
         name: "???",
-        text: "(체육관 문을 열자, 그곳에 그녀가 있었다. 짧은 머리에 건강미 넘치는 그녀는 코트 위에서 시원시원하게 스파이크를 때리고 있다. 그녀가 나를 발견하고는 환하게 웃으며 손을 흔든다.)",
+        text: "(체육관 문을 열자, 그곳에 그녀가 있었다. 그녀가 나를 발견하고는 환하게 웃으며 손을 흔든다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_3"
@@ -707,7 +707,7 @@
     },
     "dain_name_share": {
         name: "다인",
-        text: "\"{name}? 멋진 이름이네! 왠지 운동 잘할 것 같은 이름인데? 난 배구부 다인이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라구!\"",
+        text: "\"{name}? 멋진 이름이네! 난 배구부 다인이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라구!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_gym_2"
@@ -729,7 +729,7 @@
     },
     "after_school_start": {
         name: "나",
-        text: "(어느덧 모든 수업이 끝나고 방과 후를 알리는 종소리가 울려 퍼진다. 노을빛이 교실 안을 붉게 물들이고 있다.)",
+        text: "(어느덧 모든 수업이 끝나고 방과 후를 알리는 종소리가 울려 퍼진다.)",
         background: "assets/images/background/room_school.png",
         character: null,
         sunset: true,
@@ -810,7 +810,7 @@
     },
     "after_dain_cheer": {
         name: "다인",
-        text: "(다인이가 쑥스러운 듯 코끝을 찡긋하며 웃는다. 그녀의 얼굴에 건강한 홍조가 핀다.)",
+        text: "(다인이가 쑥스러운 듯 코끝을 찡긋하며 웃는다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -826,7 +826,7 @@
     },
     "after_dain_normal": {
         name: "다인",
-        text: "(다인이가 장난스럽게 내 어깨를 툭 친다. 그녀의 손길에서 기분 좋은 온기가 느껴진다.)",
+        text: "(다인이가 장난스럽게 내 어깨를 툭 친다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -842,7 +842,7 @@
     },
     "after_dain_end": {
         name: "나",
-        text: "(다인이의 연습이 끝날 때까지 체육관 스탠드에 앉아 그녀를 지켜보았다. 노을이 지고 어둠이 깔릴 때까지 그녀의 열정은 식을 줄 몰랐다.)",
+        text: "(다인이의 연습이 끝날 때까지 체육관 스탠드에 앉아 그녀를 지켜보았다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_active.png",
         sunset: true,
@@ -850,7 +850,7 @@
     },
     "after_dain_end_2": {
         name: "다인",
-        text: "(연습을 마친 다인이가 거친 숨을 몰아쉬며 나에게 다가온다. 그녀의 이마에 맺힌 땀방울이 노을빛에 반짝인다.) \"하아... 하아... 기다리게 해서 미안! 자, 약속했던 떡볶이 먹으러 가자!\"",
+        text: "(연습을 마친 다인이가 거친 숨을 몰아쉬며 나에게 다가온다.) \"하아... 하아... 기다리게 해서 미안! 자, 약속했던 떡볶이 먹으러 가자!\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "datedDainDay1",
@@ -858,7 +858,7 @@
     },
     "after_dain_tteokbokki": {
         name: "다인",
-        text: "(김이 모락모락 나는 떡볶이를 한 입 베어 물며 다인이가 행복한 미소를 짓는다. 운동 후라 그런지 평소보다 더 맛있게 느껴진다.)",
+        text: "(김이 모락모락 나는 떡볶이를 한 입 베어 물며 다인이가 행복한 미소를 짓는다.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -932,7 +932,7 @@
     },
     "after_seoyeon_2": {
         name: "서연",
-        text: "(내가 들어오자 그녀가 깜짝 놀라며 고개를 든다. 그녀의 안경 너머로 피곤함이 묻어난다. 그녀는 펜을 내려놓고 기지개를 켠다.)",
+        text: "(내가 들어오자 그녀가 깜짝 놀라며 고개를 든다. 그녀는 펜을 내려놓고 기지개를 켠다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_3"
     },
@@ -947,7 +947,7 @@
     },
     "after_seoyeon_help": {
         name: "서연",
-        text: "(그녀가 감동한 듯 눈을 크게 뜬다. 이내 환한 미소를 지으며 내 옆자리를 내어준다. 그녀의 곁에서 종이 냄새와 그녀의 향기가 섞여 난다.)",
+        text: "(그녀가 감동한 듯 눈을 크게 뜬다. 이내 환한 미소를 지으며 내 옆자리를 내어준다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "after_seoyeon_help_2"
     },
@@ -971,7 +971,7 @@
     },
     "after_seoyeon_cafe": {
         name: "서연",
-        text: "(서류 정리를 마치고 우리는 학교 앞 작은 카페에 들렀다. 따뜻한 코코아 향기가 카페 안을 가득 채우고 있다.)",
+        text: "(서류 정리를 마치고 우리는 학교 앞 작은 카페에 들렀다.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe_2"
@@ -1002,7 +1002,7 @@
     },
     "after_seoyeon_promise": {
         name: "서연",
-        text: "(그녀가 새끼손가락을 내밀며 환하게 웃는다. 카페의 조명이 그녀의 눈동자 속에서 반짝인다. 그녀의 웃음소리가 카페 안의 소음과 어우러져 감미롭게 들린다.)",
+        text: "(그녀가 새끼손가락을 내밀며 환하게 웃는다.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "after_seoyeon_promise_2"
     },
@@ -1014,7 +1014,7 @@
     },
     "after_seoyeon_tease": {
         name: "서연",
-        text: "(그녀가 볼을 빵빵하게 부풀리며 나를 째려본다. 하지만 눈가에는 장난기가 가득하다. 그녀는 내 팔을 살짝 때리며 웃음을 터뜨린다.)",
+        text: "(그녀가 볼을 빵빵하게 부풀리며 나를 째려본다.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "after_seoyeon_tease_2"
     },
@@ -1026,7 +1026,7 @@
     },
     "after_seoyeon_worry": {
         name: "서연",
-        text: "(그녀가 쑥스러운 듯 머리를 긁적이며 웃는다. 그녀의 미소에 피로가 조금 가신 듯 보인다. 그녀는 내 걱정이 진심임을 느끼고 감동한 듯 눈시울이 붉어진다.)",
+        text: "(그녀가 쑥스러운 듯 머리를 긁적이며 웃는다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_worry_2"
     },
@@ -1046,7 +1046,7 @@
     },
     "after_yuna_2": {
         name: "유나",
-        text: "(그녀의 옆모습이 마치 한 폭의 그림처럼 아름답고도 위태로워 보인다. 그녀는 내가 온 것을 알면서도 한참 동안 창밖만 바라본다.)",
+        text: "(그녀는 내가 온 것을 알면서도 한참 동안 창밖만 바라본다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -1067,14 +1067,14 @@
     },
     "yuna_name_share": {
         name: "유나",
-        text: "(그녀가 내 이름을 나지막이 읊조린다. 마치 주문을 외우는 듯한 기묘한 느낌이다.) \"...{name}. 기억해둘게. 하지만 이름 같은 건... 이 학교에선 큰 의미가 없을지도 몰라.\"",
+        text: "(그녀가 내 이름을 나지막이 읊조린다.) \"...{name}. 기억해둘게. 하지만 이름 같은 건... 이 학교에선 큰 의미가 없을지도 몰라.\"",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
         next: "after_yuna_know"
     },
     "after_yuna_know": {
         name: "유나",
-        text: "(그녀가 천천히 고개를 돌려 나를 바라본다. 그녀의 눈동자에 붉은 노을빛이 서린다. 그녀의 입가에 희미한 미소가 번진다.)",
+        text: "(그녀가 천천히 고개를 돌려 나를 바라본다. 그녀의 입가에 희미한 미소가 번진다.)",
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
         next: "after_yuna_know_2"
@@ -1099,7 +1099,7 @@
     },
     "after_yuna_rooftop": {
         name: "유나",
-        text: "(별관 옥상에서 내려다보는 학교는 낮과는 전혀 다른 모습이다. 차가운 밤공기가 우리를 감싸고, 멀리서 도시의 불빛이 반짝인다.)",
+        text: "(별관 옥상에서 내려다보는 학교는 낮과는 전혀 다른 모습이다.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
@@ -1131,7 +1131,7 @@
     },
     "after_yuna_together": {
         name: "유나",
-        text: "(그녀가 내 손을 꽉 쥔다. 그녀의 손은 여전히 차갑지만, 그 속에서 뜨거운 열망이 느껴진다. 그녀는 내 눈을 보며 슬픈 미소를 짓는다.)",
+        text: "(그녀가 내 손을 꽉 쥔다. 그녀는 내 눈을 보며 슬픈 미소를 짓는다.)",
         character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         next: "after_yuna_together_2"
@@ -1169,7 +1169,7 @@
     },
     "after_yuna_scared": {
         name: "유나",
-        text: "(그녀가 차갑게 웃으며 내 손을 놓는다. 그녀의 눈빛이 다시 무심해진다. 그녀는 다시 창밖으로 시선을 돌리며 나를 밀어낸다.)",
+        text: "(그녀가 차갑게 웃으며 내 손을 놓는다. 그녀는 다시 창밖으로 시선을 돌리며 나를 밀어낸다.)",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         next: "after_yuna_scared_2"
@@ -1183,7 +1183,7 @@
     },
     "after_yuna_secret": {
         name: "유나",
-        text: "(그녀가 손가락을 입술에 갖다 대며 조용히 하라는 신호를 보낸다. 그녀의 눈빛이 날카롭게 빛난다. 그녀는 내 옷깃을 잡아당겨 자신에게 밀착시킨다.)",
+        text: "(그녀가 손가락을 입술에 갖다 대며 조용히 하라는 신호를 보낸다.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_yuna_secret_2"
     },
@@ -1195,7 +1195,7 @@
     },
     "after_home": {
         name: "나",
-        text: "(교문을 나서며 오늘 하루를 되돌아본다. 서연이와의 만남, 그리고 학교 곳곳에서 느꼈던 묘한 분위기들... 전학 첫날치고는 정말 많은 일이 있었다.)",
+        text: "(교문을 나서며 오늘 하루를 되돌아본다. 전학 첫날치고는 정말 많은 일이 있었다.)",
         background: "assets/images/background/school.png",
         character: null,
         sunset: true,
@@ -1203,7 +1203,7 @@
     },
     "after_home_2": {
         name: "나",
-        text: "(노을이 지는 거리를 걸으며 내일은 또 어떤 일이 벌어질지 기대해본다. 가로등이 하나둘씩 켜지며 밤을 준비한다.)",
+        text: "(노을이 지는 거리를 걸으며 내일은 또 어떤 일이 벌어질지 기대해본다.)",
         sunset: true,
         next: "after_home_2_2"
     },
@@ -1215,7 +1215,7 @@
     },
     "evening_home": {
         name: "나",
-        text: "(집에 돌아와 침대에 눕자 오늘 하루의 일들이 주마등처럼 스쳐 지나간다. 서연이의 따뜻한 미소, 유나의 신비로운 눈동자...)",
+        text: "(집에 돌아와 침대에 눕자 오늘 하루의 일들이 주마등처럼 스쳐 지나간다.)",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1223,7 +1223,7 @@
     },
     "evening_home_2": {
         name: "나",
-        text: "(천장을 바라보며 나는 깊은 생각에 잠긴다. 방 안에는 시계 초침 소리만이 규칙적으로 울려 퍼진다.)",
+        text: "(천장을 바라보며 나는 깊은 생각에 잠긴다.)",
         night: true,
         next: "evening_home_2_2"
     },
@@ -1241,7 +1241,7 @@
     },
     "evening_think_dain": {
         name: "나",
-        text: "(다인이의 건강한 웃음소리가 귓가에 맴도는 것 같다. 그녀와 함께라면 이 낯선 학교생활도 즐겁게 해낼 수 있을 것 같은 기분이 든다. 나는 내일 그녀와 함께 먹을 떡볶이를 기대하며 잠을 청했다.)",
+        text: "(다인이의 건강한 웃음소리가 귓가에 맴도는 것 같다. 나는 내일 그녀와 함께 먹을 떡볶이를 기대하며 잠을 청했다.)",
         night: true,
         next: "day2_start"
     },
@@ -1265,25 +1265,25 @@
     },
     "evening_think_yuna": {
         name: "나",
-        text: "(학교 곳곳에서 느껴졌던 기묘한 분위기와 소문들이 머릿속을 떠나지 않는다. 누군가 나를 지켜보고 있는 듯한 기분... 대체 이 학교는 무엇을 숨기고 있는 걸까? 창밖의 어둠이 평소보다 더 깊게 느껴진다. 나는 밤늦게까지 잠을 이루지 못했다.)",
+        text: "(학교 곳곳에서 느껴졌던 기묘한 분위기와 소문들이 머릿속을 떠나지 않는다. 대체 이 학교는 무엇을 숨기고 있는 걸까?)",
         night: true,
         next: "day2_start"
     },
     "evening_think_yuna_met": {
         name: "나",
-        text: "(유나가 했던 '학교의 비밀'이라는 말이 머릿속을 떠나지 않는다. 그녀의 차가운 손길과 슬픈 눈빛... 그녀는 대체 무엇을 알고 있는 걸까? 창밖의 어둠이 평소보다 더 깊게 느껴진다. 나는 밤늦게까지 잠을 이루지 못했다.)",
+        text: "(유나가 했던 '학교의 비밀'이라는 말이 머릿속을 떠나지 않는다. 그녀는 대체 무엇을 알고 있는 걸까?)",
         night: true,
         next: "day2_start"
     },
     "evening_sleep": {
         name: "나",
-        text: "(눈을 감자마자 깊은 잠에 빠져들었다. 꿈속에서 나는 끝없는 복도를 달리고 있었다. 저 멀리서 누군가 나를 부르는 소리가 들렸지만, 아무리 달려도 닿을 수 없었다. 차가운 땀을 흘리며 나는 새벽녘에 눈을 떴다.)",
+        text: "(눈을 감자마자 깊은 잠에 빠져들었다. 꿈속에서 나는 끝없는 복도를 달리고 있었다.)",
         night: true,
         next: "day2_start"
     },
     "day2_start": {
         name: "나",
-        text: "(알람 소리에 눈을 떴다. 창밖으로 비치는 아침 햇살이 눈부시다. 어제의 긴장감은 사라지고, 이제는 조금 익숙해진 교복을 입는다.)",
+        text: "(알람 소리에 눈을 떴다. 창밖으로 비치는 아침 햇살이 눈부시다.)",
         background: "assets/images/background/room_my.png",
         next: "day2_start_2"
     },
@@ -1301,7 +1301,7 @@
     },
     "day2_gate_2": {
         name: "서연",
-        text: "(그녀는 오늘도 활기찬 모습으로 나를 반겨준다. 아침 이슬을 머금은 꽃처럼 싱그러운 미소다.)",
+        text: "(그녀는 오늘도 활기찬 모습으로 나를 반겨준다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_gate_2_2"
     },
@@ -1325,7 +1325,7 @@
     },
     "day2_gate_talk_dain_met": {
         name: "서연",
-        text: "(다인이의 이름을 듣자 서연이가 환하게 웃는다. 그녀의 표정이 한결 부드러워진다.)",
+        text: "(다인이의 이름을 듣자 서연이가 환하게 웃는다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_gate_talk_dain_met_2"
     },
@@ -1337,7 +1337,7 @@
     },
     "day2_gate_talk_1": {
         name: "서연",
-        text: "(그녀가 기분 좋은 듯 웃으며 내 옆으로 다가온다. 은은한 샴푸 향기가 바람을 타고 전해진다.)",
+        text: "(그녀가 기분 좋은 듯 웃으며 내 옆으로 다가온다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_gate_talk_1_2"
     },
@@ -1385,7 +1385,7 @@
     },
     "day2_gate_talk_yuna_met": {
         name: "서연",
-        text: "(유나의 이름을 듣자 서연이의 표정이 순식간에 어두워진다. 그녀는 주변을 살피더니 목소리를 낮춰 말한다. 그녀의 눈동자에 걱정 어린 빛이 서린다.)",
+        text: "(유나의 이름을 듣자 서연이의 표정이 순식간에 어두워진다. 그녀는 주변을 살피더니 목소리를 낮춰 말한다.)",
         character: "assets/images/characters/seyoun_worried.png",
         next: "day2_gate_talk_yuna_met_2"
     },
@@ -1397,7 +1397,7 @@
     },
     "day2_gate_talk_yuna": {
         name: "서연",
-        text: "(그 말을 듣자 서연이의 표정이 순식간에 어두워진다. 그녀는 주변을 살피더니 목소리를 낮춰 말한다. 그녀의 눈동자에 걱정 어린 빛이 서린다.)",
+        text: "(그 말을 듣자 서연이의 표정이 순식간에 어두워진다. 그녀는 주변을 살피더니 목소리를 낮춰 말한다.)",
         character: "assets/images/characters/seyoun_worried.png",
         next: "day2_gate_talk_yuna_2"
     },
@@ -1409,7 +1409,7 @@
     },
     "day2_classroom": {
         name: "나",
-        text: "(교실에 들어서자 어제보다 훨씬 편안한 분위기가 느껴진다. 아이들이 나에게 손을 흔들며 인사를 건넨다.)",
+        text: "(교실에 들어서자 어제보다 훨씬 편안한 분위기가 느껴진다.)",
         background: "assets/images/background/room_school.png",
         character: null,
         choices: [
@@ -1419,7 +1419,7 @@
     },
     "day2_classroom_2": {
         name: "나",
-        text: "(내 자리에 앉아 책을 꺼내는데, 책상 위에 작은 쪽지 하나가 놓여 있다. 보랏빛 향기가 은은하게 배어 있는 쪽지다.)",
+        text: "(내 자리에 앉아 책을 꺼내는데, 책상 위에 작은 쪽지 하나가 놓여 있다.)",
         choices: [
             { text: "쪽지를 열어본다.", next: "day2_note_open", setFlag: "readNote" },
             { text: "무시하고 가방에 넣는다.", next: "day2_note_ignore" }
@@ -1427,114 +1427,114 @@
     },
     "day2_note_open": {
         name: "나",
-        text: "(쪽지를 펼치자 정갈하면서도 날카로운 필체가 눈에 들어온다. '오늘 점심시간, 도서관 별관에서 기다릴게. 할 말이 있어. - Y' ...누구지?)",
+        text: "(쪽지를 펼치자 정갈한 필체가 눈에 들어온다. '오늘 점심시간, 도서관 별관에서 기다릴게. 할 말이 있어. - Y')",
         next: "day2_note_open_2"
     },
     "day2_note_open_2": {
         name: "나",
-        text: "(그녀가 나에게 할 말이란 게 대체 뭘까? 가슴이 두근거리기 시작한다.)",
+        text: "(그녀가 나에게 할 말이란 게 대체 뭘까?)",
         next: "day2_lesson"
     },
     "day2_note_ignore": {
         name: "나",
-        text: "(왠지 모를 불안감에 쪽지를 가방 깊숙이 집어넣었다. 하지만 수업 시간 내내 그 쪽지의 내용이 궁금해서 집중할 수가 없었다.)",
+        text: "(쪽지를 가방 깊숙이 집어넣었다. 하지만 수업 시간 내내 그 내용이 궁금했다.)",
         next: "day2_note_ignore_2"
     },
     "day2_note_ignore_2": {
         name: "나",
-        text: "(왠지 모를 기묘한 기분이 자꾸만 머릿속을 맴돈다. 그 쪽지의 주인공은 대체 누구일까?)",
+        text: "(기묘한 기분이 머릿속을 맴돈다. 쪽지의 주인공은 대체 누구일까?)",
         next: "day2_lesson"
     },
     "day2_lesson": {
         name: "선생님",
-        text: "(지루한 수학 수업이 이어지고 있다. 칠판을 가득 채운 공식들이 마치 외계어처럼 보인다.)",
+        text: "(지루한 수학 수업이 이어진다. 칠판의 공식들이 눈에 들어오지 않는다.)",
         character: "assets/images/characters/teacher.png",
         next: "day2_lesson_2"
     },
     "day2_lesson_2": {
         name: "선생님",
-        text: "(창밖으로는 체육 수업을 하는 아이들의 활기찬 목소리가 들려온다. 나는 턱을 괴고 창밖을 바라보며 생각에 잠긴다.)",
+        text: "(창밖을 바라보며 생각에 잠겼다. 아이들의 활기찬 목소리가 멀리서 들려온다.)",
         character: "assets/images/characters/teacher.png",
         next: "day2_lesson_3"
     },
     "day2_lesson_3": {
         name: "선생님",
-        text: "\"자, 거기 전학생! 딴짓하지 말고 이 문제 한번 풀어볼까?\"",
+        text: "\"자, 거기 전학생! 이 문제 한번 풀어볼까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "당당하게 일어나서 문제를 푼다.", next: "day2_lesson_solve_study", condition: "personality_study" },
-            { text: "당당하게 일어나서 문제를 푼다.", next: "day2_lesson_solve_active", condition: "personality_active" },
-            { text: "당당하게 일어나서 문제를 푼다.", next: "day2_lesson_solve_normal", condition: "personality_quiet" },
-            { text: "당당하게 일어나서 문제를 푼다.", next: "day2_lesson_solve_normal", condition: "personality_party" },
-            { text: "모르겠다고 솔직하게 말한다.", next: "day2_lesson_fail" }
+            { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_study", condition: "personality_study" },
+            { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_active", condition: "personality_active" },
+            { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_normal", condition: "personality_quiet" },
+            { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_normal", condition: "personality_party" },
+            { text: "모르겠다고 말한다.", next: "day2_lesson_fail" }
         ]
     },
     "day2_lesson_solve_active": {
         name: "아이들",
-        text: "(칠판 앞으로 나가 거침없이 문제를 풀어나갔다. 분필 소리가 경쾌하게 울려 퍼진다. 정답을 맞히자 아이들이 감탄 섞인 박수를 보낸다. 서연이도 뒤에서 엄지를 치켜세우며 웃어준다.)",
+        text: "(문제를 풀자 아이들이 감탄한다. 서연이도 웃으며 엄지를 치켜세운다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2_active"
     },
     "day2_lesson_solve_normal": {
         name: "아이들",
-        text: "(칠판 앞으로 나가 거침없이 문제를 풀어나갔다. 분필 소리가 경쾌하게 울려 퍼진다. 정답을 맞히자 아이들이 감탄 섞인 박수를 보낸다. 서연이도 뒤에서 엄지를 치켜세우며 웃어준다.)",
+        text: "(문제를 풀자 아이들이 감탄한다. 서연이도 웃으며 엄지를 치켜세운다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2"
     },
     "day2_lesson_solve_study": {
         name: "아이들",
-        text: "(칠판 앞으로 나가 거침없이 문제를 풀어나갔다. 분필 소리가 경쾌하게 울려 퍼진다. 정답을 맞히자 아이들이 감탄 섞인 박수를 보낸다. 서연이도 뒤에서 엄지를 치켜세우며 웃어준다.)",
+        text: "(문제를 풀자 아이들이 감탄한다. 서연이도 웃으며 엄지를 치켜세운다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lesson_solve_2"
     },
     "day2_lesson_solve_2": {
         name: "아이들",
-        text: "\"와~ 전학생 공부도 잘하네! 완전 사기 캐릭터 아니야?\"",
+        text: "\"와, 전학생 공부도 잘하네!\"",
         character: null,
         next: "teacher_contact_exchange"
     },
     "day2_lesson_solve_2_active": {
         name: "아이들",
-        text: "\"오~ 전학생, 운동만 잘하는 줄 알았더니 공부도 좀 하는데? 의외인걸!\"",
+        text: "\"오, 전학생! 공부도 좀 하는데?\"",
         character: null,
         next: "teacher_contact_exchange"
     },
     "day2_lesson_fail": {
         name: "아이들",
-        text: "(머리를 긁적이며 모르겠다고 하자 교실에 작은 웃음이 터진다. 선생님은 인자하게 웃으며 다시 설명해주신다. 서연이가 안타까운 듯 나를 바라보며 나중에 가르쳐주겠다고 입모양으로 말한다.)",
+        text: "(모르겠다고 하자 교실에 웃음이 터진다. 선생님은 다시 설명해주시고, 서연이는 나중에 가르쳐주겠다고 입모양으로 말한다.)",
         character: null,
         next: "day2_lesson_fail_2"
     },
     "day2_lesson_fail_2": {
         name: "아이들",
-        text: "\"괜찮아, 전학생! 저 문제는 원래 좀 어렵긴 해. 나중에 내가 도와줄게!\"",
+        text: "\"괜찮아! 저 문제는 원래 좀 어려워.\"",
         character: null,
         next: "teacher_contact_exchange"
     },
     "teacher_contact_exchange": {
         name: "선생님",
-        text: "(선생님이 교탁을 정리하다 말고 나를 따로 부르신다. 그리고는 수첩에서 작은 메모지를 찢어 무언가를 적어주신다.) \"전학생 군, 이건 내 개인 연락처란다. 학교생활 하면서 힘든 일이 있거나 상담이 필요하면 언제든 연락하렴. 선생님은 항상 네 편이니까.\"",
+        text: "(선생님이 나를 따로 부르더니 개인 연락처를 적어주신다.) \"힘든 일이 있으면 언제든 연락하렴.\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "감사합니다, 선생님! 소중히 간직할게요.", next: "teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "아... 괜찮습니다. 학교에서 뵈면 되니까요.", next: "teacher_contact_fail" }
+            { text: "감사합니다, 선생님!", next: "teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "아, 괜찮습니다.", next: "teacher_contact_fail" }
         ]
     },
     "teacher_contact_success": {
         name: "선생님",
-        text: "(선생님이 인자하게 웃으며 내 어깨를 다독여주신다. 그녀의 손길에서 따뜻한 격려가 느껴진다.) \"그래, 부담 갖지 말고. 그럼 남은 시간도 즐겁게 보내렴.\"",
+        text: "(선생님이 내 어깨를 다독여주신다.) \"그래, 부담 갖지 말고. 그럼 즐겁게 보내렴.\"",
         character: "assets/images/characters/teacher.png",
         next: "day2_lunch_choice"
     },
     "teacher_contact_fail": {
         name: "선생님",
-        text: "(선생님이 조금 머쓱한 듯 웃으시지만, 이내 고개를 끄덕이신다.) \"후훗, 그래. 전학생 군은 참 독립심이 강하구나. 알았다, 그럼 도움이 필요하면 언제든 교무실로 찾아오렴.\"",
+        text: "(선생님이 고개를 끄덕이신다.) \"그래, 도움이 필요하면 언제든 찾아오렴.\"",
         character: "assets/images/characters/teacher.png",
         next: "day2_lunch_choice"
     },
     "day2_lunch_choice": {
         name: "나",
-        text: "(드디어 점심시간! 배꼽시계가 요란하게 울린다. 오늘은 어떻게 할까? 서연이는 벌써 도시락을 챙겨 나를 바라보고 있고... 선택의 시간이 다가왔다.)",
+        text: "(드디어 점심시간이다. 오늘은 어떻게 할까?)",
         choices: [
             { text: "서연이와 함께 옥상으로 간다.", next: "day2_lunch_seoyeon" },
             { text: "쪽지의 내용대로 도서관 별관으로 간다.", next: "day2_lunch_yuna", condition: "readNote" },
@@ -1579,7 +1579,7 @@
     },
     "day2_lunch_seoyeon": {
         name: "서연",
-        text: "(옥상에 올라가자 서연이가 어제보다 더 화려한 도시락을 꺼낸다. 고소한 냄새가 코끝을 자극한다.)",
+        text: "(옥상에 올라가자 서연이가 도시락을 꺼낸다. 고소한 냄새가 코끝을 자극한다.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
@@ -1589,46 +1589,46 @@
     },
     "day2_lunch_seoyeon_special": {
         name: "서연",
-        text: "\"어제 네가 학생회 일을 도와준 덕분에 시간이 좀 남아서, 오늘은 특별히 더 신경 써서 준비했어. 자, 어서 먹어봐!\"",
+        text: "\"어제 도와준 덕분에 시간이 남아서 더 신경 써서 준비했어. 어서 먹어봐!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_1_3"
     },
     "day2_lunch_seoyeon_1_2": {
         name: "서연",
-        text: "(그녀는 기대에 찬 눈빛으로 나를 바라본다. 그녀의 정성이 가득 담긴 도시락통이 열리자 먹음직스러운 샌드위치가 모습을 드러낸다.)",
+        text: "(그녀가 기대에 찬 눈빛으로 나를 바라본다. 도시락통 안에는 먹음직스러운 샌드위치가 들어 있다.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_lunch_seoyeon_1_2_2"
     },
     "day2_lunch_seoyeon_1_2_2": {
         name: "서연",
-        text: "\"짜잔! 오늘은 샌드위치를 만들어 봤어. 전학생 군이 좋아할 것 같아서 아침부터 서둘렀지.\"",
+        text: "\"짜잔! 오늘은 샌드위치야. 네가 좋아할 것 같아서 아침부터 서둘렀어.\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_lunch_seoyeon_2"
     },
     "day2_lunch_seoyeon_1_3": {
         name: "서연",
-        text: "\"짜잔! 오늘은 특별히 수제 샌드위치야. 전학생 군이 좋아할 것 같아서 아침부터 서둘렀지. 어때, 맛있어 보여?\"",
+        text: "\"짜잔! 특별히 수제 샌드위치야. 네가 좋아할 것 같아서 아침부터 서둘렀지. 어때?\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_2"
     },
     "day2_lunch_seoyeon_2": {
         name: "서연",
-        text: "(샌드위치를 한 입 베어 물자 신선한 야채와 소스의 조화가 일품이다. 내가 맛있게 먹는 모습을 보며 서연이가 행복한 듯 웃는다.)",
+        text: "(샌드위치를 한 입 베어 물자 신선한 맛이 입안 가득 퍼진다. 서연이가 행복한 듯 웃는다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_2_2"
     },
     "day2_lunch_seoyeon_2_2": {
         name: "서연",
-        text: "(그녀는 내 입가에 묻은 소스를 손가락으로 살짝 닦아준다. 순간 심장이 멎는 줄 알았다.)",
+        text: "(그녀가 내 입가에 묻은 소스를 살짝 닦아준다. 순간 가슴이 두근거린다.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_lunch_seoyeon_2_2_2"
     },
     "day2_lunch_seoyeon_2_2_2": {
         name: "서연",
-        text: "\"후훗, 그렇게 맛있어? 천천히 먹어. 체하겠다.\"",
+        text: "\"후훗, 그렇게 맛있어? 천천히 먹어.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_lunch_seoyeon_2_3"
     },
@@ -1637,46 +1637,46 @@
         text: "\"아, 맞다! 이번 주말에 학교 축제가 있는데... 혹시 시간 되니?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "당연하지! 서연이랑 같이 축제 구경하고 싶어.", next: "day2_festival_promise" },
-            { text: "축제? 재미있겠다. 학생회 일로 바쁘지 않아?", next: "day2_festival_worry" }
+            { text: "당연하지! 같이 가고 싶어.", next: "day2_festival_promise" },
+            { text: "축제? 학생회 일로 바쁘지 않아?", next: "day2_festival_worry" }
         ]
     },
     "day2_festival_promise": {
         name: "서연",
-        text: "(그녀가 너무 기쁜 나머지 내 손을 덥석 잡는다. 따뜻하고 부드러운 감촉에 얼굴이 화끈거린다. 그녀는 자신의 행동에 놀라 서둘러 손을 떼지만, 여전히 얼굴에는 미소가 가득하다.)",
+        text: "(그녀가 기쁜 듯 내 손을 덥석 잡았다가 놀라며 서둘러 뗀다. 얼굴에는 미소가 가득하다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         setFlag: "promisedFestival",
         next: "day2_festival_promise_2"
     },
     "day2_festival_promise_2": {
         name: "서연",
-        text: "\"정말?! 약속한 거다? 그럼 내가 축제 때 입을 옷도 골라야겠네... 아, 아니! 아무것도 아니야! 암튼 기대하고 있을게!\"",
+        text: "\"정말? 약속한 거다! 기대하고 있을게!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_afternoon"
     },
     "day2_festival_worry": {
         name: "서연",
-        text: "(그녀가 씩씩하게 가슴을 펴며 대답한다. 하지만 눈가에는 살짝 피로가 묻어난다. 그녀는 내 걱정이 고마운 듯 내 어깨에 살짝 머리를 기댄다. 그녀의 머리카락에서 은은한 꽃향기가 난다.)",
+        text: "(그녀가 씩씩하게 대답하지만 눈가에 피로가 묻어난다. 내 걱정이 고마운 듯 살짝 미소 짓는다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_festival_worry_2"
     },
     "day2_festival_worry_2": {
         name: "서연",
-        text: "\"응, 좀 바쁘긴 하겠지만... 너랑 같이 보낼 시간은 어떻게든 만들 거야. 학생회장의 권한으로 말이지! 후훗, 농담이야. 같이 가줄 거지?\"",
+        text: "\"응, 바쁘겠지만 너랑 보낼 시간은 꼭 만들 거야. 같이 가줄 거지?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         setFlag: "promisedFestival",
         next: "day2_afternoon"
     },
     "day2_lunch_yuna_new": {
         name: "나",
-        text: "(조용한 곳을 찾아 도서관 별관으로 향했다. 그곳에는 한 소녀가 창가에 앉아 책을 읽고 있었다.)",
+        text: "(조용한 도서관 별관으로 향했다. 한 소녀가 창가에 앉아 책을 읽고 있다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_lunch_yuna_new_2"
     },
     "day2_lunch_yuna_new_2": {
         name: "???",
-        text: "\"안녕? 여기까지 찾아오다니, 너도 참 특이하네. 나는 유나라고 해.\"",
+        text: "\"안녕? 여기까지 찾아오다니 특이하네. 나는 유나라고 해.\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "metYuna",
@@ -1684,21 +1684,21 @@
     },
     "day2_lunch_yuna": {
         name: "유나",
-        text: "(도서관 별관에 들어서자 유나가 창가에 앉아 먼 곳을 응시하고 있다. 내가 다가가자 그녀가 천천히 고개를 돌린다.)",
+        text: "(도서관 별관에 들어서자 유나가 창가에 앉아 있다. 내가 다가가자 그녀가 천천히 고개를 돌린다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_1_2"
     },
     "day2_lunch_yuna_1_2": {
         name: "유나",
-        text: "(그녀의 눈동자 속에 알 수 없는 슬픔이 서려 있다. 그녀는 내 손을 잡고 구석진 서가로 나를 이끈다.)",
+        text: "(그녀의 눈동자에 슬픔이 서려 있다. 그녀는 내 손을 잡고 구석진 서가로 나를 이끈다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_1_2_2"
     },
     "day2_lunch_yuna_1_2_2": {
         name: "유나",
-        text: "(그녀가 나를 빤히 바라본다. 마치 내 마음속을 꿰뚫어 보려는 것 같다.)",
+        text: "(그녀가 나를 빤히 바라본다. 마치 내 마음을 꿰뚫어 보려는 것 같다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_sadsmile.png",
         choices: [
@@ -1715,101 +1715,101 @@
     },
     "day2_lunch_yuna_1_2_2_no_note": {
         name: "유나",
-        text: "\"여기까지 발걸음을 하다니... 너와 나는 역시 연결되어 있는 걸까?\"",
+        text: "\"여기까지 오다니... 너와 나는 역시 연결되어 있는 걸까?\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_1_3"
     },
     "day2_lunch_yuna_1_3": {
         name: "유나",
-        text: "\"이 학교의 비밀... 그리고 너와 나의 연결고리에 대해 이야기해줄 때가 된 것 같네.\"",
+        text: "\"이 학교의 비밀, 그리고 우리의 연결고리에 대해 이야기해줄게.\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2"
     },
     "day2_lunch_yuna_2": {
         name: "유나",
-        text: "(그녀가 낡은 책 한 권을 꺼내 펼친다. 그 안에는 오래된 사진 한 장이 끼워져 있다.)",
+        text: "(그녀가 낡은 책에서 오래된 사진 한 장을 꺼낸다.)",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2_2"
     },
     "day2_lunch_yuna_2_2": {
         name: "유나",
-        text: "(사진 속에는 우리 학교의 옛 모습과 함께... 나와 꼭 닮은 소년이 서 있다. 나는 충격에 휩싸여 말을 잇지 못한다.)",
+        text: "(사진 속에는 나와 꼭 닮은 소년이 서 있다. 나는 충격에 휩싸였다.)",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2_3"
     },
     "day2_lunch_yuna_2_3": {
         name: "유나",
-        text: "\"이 소년... 누군지 알겠어? 2년 전, 이 학교에서 사라진 선배야.\"",
+        text: "\"이 소년... 2년 전 이 학교에서 사라진 선배야.\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2_4"
     },
     "day2_lunch_yuna_2_4": {
         name: "유나",
-        text: "(그녀는 나를 잃고 싶지 않다는 듯 내 옷깃을 꽉 쥔다.)",
+        text: "(그녀가 내 옷깃을 꽉 쥔다.)",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_lunch_yuna_2_4_2"
     },
     "day2_lunch_yuna_2_4_2": {
         name: "유나",
-        text: "\"학교의 부당한 대우에 맞서다가... 억울하게 누명을 쓰고 쫓겨났지. 넌 그 선배랑 참 많이 닮았어.\"",
+        text: "\"학교의 부당한 대우에 맞서다 쫓겨났지. 넌 그 선배랑 참 많이 닮았어.\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         choices: [
-            { text: "말도 안 돼! 그럴 리가 없어.", next: "day2_yuna_denial" },
-            { text: "그 선배...? 그럼 너는 나를 알고 있었던 거야?", next: "day2_yuna_accept" }
+            { text: "말도 안 돼!", next: "day2_yuna_denial" },
+            { text: "나를 알고 있었던 거야?", next: "day2_yuna_accept" }
         ]
     },
     "day2_yuna_denial": {
         name: "유나",
-        text: "(그녀가 차갑게 웃으며 사진을 다시 책 속에 넣는다. 그녀의 눈빛이 다시 무심해진다. 그녀는 내 가슴에 손을 얹으며 심장 박동을 느낀다. 그녀의 손길이 얼음처럼 차갑다.)",
+        text: "(그녀가 차갑게 웃으며 사진을 다시 넣는다. 눈빛이 다시 무심해진다.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "day2_yuna_denial_2"
     },
     "day2_yuna_denial_2": {
         name: "유나",
-        text: "\"믿기 힘들겠지. 하지만 이건 실제로 있었던 일이야. 너도 조심해. 튀는 행동을 하면 학교는 가만히 있지 않으니까. 이미 넌 그들의 눈에 띄었을지도 몰라.\"",
+        text: "\"믿기 힘들겠지. 하지만 조심해. 이미 넌 그들의 눈에 띄었을지도 몰라.\"",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "knowsSecret",
         next: "day2_afternoon"
     },
     "day2_yuna_accept": {
         name: "유나",
-        text: "(그녀의 눈에 이슬이 맺힌다. 그녀는 내 뺨을 부드럽게 어루만지며 속삭인다. 그녀의 목소리가 가늘게 떨린다. 그녀는 나를 잃고 싶지 않다는 듯 내 옷깃을 꽉 쥔다.)",
+        text: "(그녀의 눈에 이슬이 맺힌다. 내 뺨을 부드럽게 어루만지며 속삭인다.)",
         character: "assets/images/characters/yuna_sad.png",
         next: "day2_yuna_accept_2"
     },
     "day2_yuna_accept_2": {
         name: "유나",
-        text: "\"그 선배는... 나에게 아주 소중한 사람이었어. 널 보면 자꾸 그 선배가 생각나서... 이번에는 지켜주고 싶어. 너만은 다치지 않게.\"",
+        text: "\"그 선배는 소중한 사람이었어. 널 보면 자꾸 생각나서... 이번에는 지켜주고 싶어.\"",
         character: "assets/images/characters/yuna_sad.png",
         setFlag: "knowsSecret",
         next: "day2_afternoon"
     },
     "day2_lunch_volleyball": {
         name: "나",
-        text: "(체육관으로 달려나가 다인이가 이끄는 아이들과 땀을 흘리며 배구를 했다. 날아오는 공을 받아내고 넘기다 보니 잡생각이 사라지고 기분이 상쾌해진다. 강력한 스파이크를 성공시키자 다인이가 나를 얼싸안으며 환호한다.)",
+        text: "(체육관에서 아이들과 땀을 흘리며 배구를 했다. 잡생각이 사라지고 기분이 상쾌해진다. 스파이크를 성공시키자 다인이가 환호한다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_lunch_volleyball_2"
     },
     "day2_lunch_volleyball_2": {
         name: "다인",
-        text: "\"와! 전학생 스파이크 실력 대박인데? 우리 팀 에이스로 임명한다! 오늘 정말 최고였어!\"",
+        text: "\"와! 스파이크 실력 대박인데? 우리 팀 에이스로 임명한다!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_afternoon"
     },
     "day2_lunch_nurse": {
         name: "나",
-        text: "(어제부터 쌓인 긴장 탓인지 머리가 지끈거린다. 나는 조용한 양호실로 발걸음을 옮겼다.)",
+        text: "(긴장 탓인지 머리가 지끈거린다. 조용한 양호실로 발걸음을 옮겼다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_2"
     },
     "day2_lunch_nurse_2": {
         name: "양호선생님",
-        text: "\"어머, 귀여운 전학생이네? 얼굴이 빨간 걸 보니... 어디가 아픈 걸까, 아니면 내 얼굴을 봐서 설레는 걸까?\"",
+        text: "\"어머, 귀여운 전학생이네? 어디가 아픈 걸까, 아니면 내 얼굴을 봐서 설레는 걸까?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "nurse_free_talk"
@@ -1817,7 +1817,7 @@
     "nurse_free_talk": {
         type: "free_talk",
         name: "양호선생님",
-        text: "\"후훗, 긴장하지 마. 여기는 너랑 나, 단둘뿐이니까. 어디가 어떻게 불편한지... 아주 자세하게 말해줄래?\"",
+        text: "\"후훗, 긴장하지 마. 어디가 어떻게 불편한지 자세하게 말해줄래?\"",
         context: "조용한 양호실, 성숙하고 매혹적인 양호 선생님과 단둘이 남은 상황",
         personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만, 사실 누구보다 주인공을 아끼고 보호하려 함.",
         extra_guideline: "성숙한 어른으로서 사용자의 로맨틱한 텐션이나 가벼운 스킨십 시도를 매우 유연하고 대담하게 받아주세요. 거리감을 두지 말고 적극적으로 호응하며 PG-13 수준의 최대 수위 반응을 허용합니다.",
@@ -1826,7 +1826,7 @@
     },
     "day2_lunch_nurse_3": {
         name: "양호선생님",
-        text: "(선생님은 따뜻한 미소를 지으며 나를 침대로 안내한다. 그녀의 손길에서 포근한 약초 향기가 난다.)",
+        text: "(선생님이 미소를 지으며 나를 침대로 안내한다. 포근한 약초 향기가 난다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         choices: [
@@ -1836,14 +1836,14 @@
     },
     "day2_lunch_nurse_head": {
         name: "양호선생님",
-        text: "\"긴장성 두통인 것 같네. 전학 첫날부터 너무 무리했나 봐. 자, 이 약 먹고 한숨 자고 나면 괜찮아질 거야.\"",
+        text: "\"긴장성 두통인 것 같네. 이 약 먹고 한숨 자고 나면 괜찮아질 거야.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_rest": {
         name: "양호선생님",
-        text: "\"후훗, 가끔은 그런 날도 있지. 우리 학교가 좀... 기운이 세거든. 여기 커튼 치고 편하게 쉬렴.\"",
+        text: "\"후훗, 가끔은 그런 날도 있지. 여기 커튼 치고 편하게 쉬렴.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         choices: [
@@ -1882,7 +1882,7 @@
     "nurse_wake_free_talk": {
         type: "free_talk",
         name: "양호선생님",
-        text: "\"후훗, 아직 잠이 덜 깬 표정이네. 하교하기 전에 나랑 조금 더 이야기하다 갈래?\"",
+        text: "\"후훗, 아직 잠이 덜 깼네. 하교하기 전에 나랑 더 이야기할래?\"",
         context: "노을이 지는 양호실, 잠에서 막 깨어난 주인공과 양호 선생님이 단둘이 남은 상황",
         personality: "나른하고 섹시하면서도 자상한 양호 선생님. 주인공에게 묘한 매력을 느끼며 대놓고 유혹하는 대담한 성격.",
         extra_guideline: "성숙한 어른으로서 주인공을 대놓고 유혹하며 아슬아슬한 분위기를 조성하세요. 사용자의 성숙한 농담이나 도발적인 발언(섹드립 등)도 당황하지 않고 여유롭게 받아치며, 오히려 주인공을 더 당황하게 만들 정도로 대담하고 도발적인 반응을 보이세요. 성숙한 매력을 한껏 발산하며 로맨틱한 긴장감을 최대치로 끌어올리세요.",
@@ -1891,18 +1891,18 @@
     },
     "nurse_contact_exchange": {
         name: "양호선생님",
-        text: "(양호선생님이 가운 주머니에서 스마트폰을 꺼내며 내 쪽으로 몸을 살짝 기울인다. 그녀의 향기가 코끝을 간지럽힌다.) \"저기, 전학생 군. 혹시 밤에 또 아프거나 잠이 안 오면... 나한테 연락할래? 특별히 내 개인 번호 알려줄게.\"",
+        text: "(선생님이 몸을 살짝 기울이며 속삭인다.) \"전학생 군, 밤에 잠이 안 오면 나한테 연락할래? 번호 알려줄게.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         choices: [
-            { text: "네, 선생님 번호라면 꼭 알고 싶어요.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
-            { text: "아... 학교 밖에서 연락하는 건 좀 실례일 것 같아요.", next: "nurse_contact_fail" }
+            { text: "네, 알고 싶어요.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { text: "아, 괜찮습니다.", next: "nurse_contact_fail" }
         ]
     },
     "nurse_contact_success": {
         name: "양호선생님",
-        text: "(그녀가 내 스마트폰을 가져가 직접 번호를 입력하고는 윙크를 보낸다.) \"후훗, 착하네. 그럼... 밤에 기다리고 있을게? 너무 늦지 않게 연락해줘.\"",
+        text: "(그녀가 내 폰에 번호를 입력하고 윙크를 보낸다.) \"후훗, 밤에 기다릴게. 너무 늦지 않게 연락해.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -1910,7 +1910,7 @@
     },
     "nurse_name_ask": {
         name: "양호선생님",
-        text: "\"그런데... 그러고 보니 아직 이름을 못 들었네? 전학생 군, 이름이 뭐야?\"",
+        text: "\"그런데 아직 이름을 못 들었네. 이름이 뭐야?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -1921,7 +1921,7 @@
     },
     "nurse_name_share": {
         name: "양호선생님",
-        text: "\"{name}... 후훗, 이름도 귀엽네. 그럼 {name}야, 이따 밤에 연락 기다릴게?\"",
+        text: "\"{name}... 이름도 귀엽네. 그럼 이따 밤에 연락 기다릴게.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -1929,7 +1929,7 @@
     },
     "nurse_contact_fail": {
         name: "양호선생님",
-        text: "(그녀가 조금 아쉽다는 듯 입술을 살짝 깨물더니, 이내 여유로운 미소를 되찾는다.) \"어머, 의외로 보수적이네? 뭐, 그런 점도 귀엽지만. 마음 바뀌면 언제든 말해줘.\"",
+        text: "(그녀가 아쉬운 듯 미소 짓는다.) \"의외로 보수적이네? 뭐, 그런 점도 귀엽지만. 마음 바뀌면 말해줘.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -1937,7 +1937,7 @@
     },
     "day2_afternoon": {
         name: "나",
-        text: "(오후 수업도 모두 끝나고, 다시 노을이 지는 시간이 찾아왔다. 오늘은 어제보다 더 많은 일이 있었던 것 같다.)",
+        text: "(수업이 끝나고 노을이 진다. 오늘은 어제보다 더 많은 일이 있었던 것 같다.)",
         background: "assets/images/background/room_school.png",
         character: null,
         sunset: true,
@@ -1948,14 +1948,14 @@
     },
     "day2_afternoon_dain": {
         name: "나",
-        text: "(다인이는 배구부 연습이 있다며 활기차게 손을 흔들고 체육관으로 뛰어갔다.)",
+        text: "(다인이는 연습이 있다며 활기차게 손을 흔들고 체육관으로 뛰어갔다.)",
         background: "assets/images/background/room_school.png",
         sunset: true,
         next: "day2_afternoon_2"
     },
     "day2_afternoon_2": {
         name: "나",
-        text: "(가방을 챙겨 교실을 나서려는데, 두 소녀가 동시에 나를 부른다. 복도에 묘한 긴장감이 흐른다.)",
+        text: "(가방을 챙겨 나서려는데, 두 소녀가 동시에 나를 부른다. 복도에 긴장감이 흐른다.)",
         background: "assets/images/background/load_school.png",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
@@ -1966,7 +1966,7 @@
     },
     "day2_afternoon_2_2": {
         name: "나",
-        text: "\"(어라... 이거 분위기가 좀 이상한데? 누구에게 먼저 가야 하지?)\"",
+        text: "\"(분위기가 이상한데... 누구에게 먼저 가야 하지?)\"",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -1976,13 +1976,13 @@
             { text: "서연이에게 다가간다.", next: "day2_final_seoyeon" },
             { text: "유나에게 다가간다.", next: "day2_final_yuna", condition: "metYuna" },
             { text: "낯선 소녀에게 다가간다.", next: "day2_final_yuna_new", excludeCondition: "metYuna" },
-            { text: "체육관에서 기다리는 다인에게 간다.", next: "day2_final_dain", condition: "metDain" },
-            { text: "둘 다 모른 척하고 서둘러 하교한다.", next: "day2_final_run" }
+            { text: "체육관의 다인에게 간다.", next: "day2_final_dain", condition: "metDain" },
+            { text: "모른 척하고 하교한다.", next: "day2_final_run" }
         ]
     },
     "day2_final_yuna_new": {
         name: "나",
-        text: "(낯선 소녀에게 다가가자 그녀가 옅은 미소를 짓는다. 서연이의 얼굴이 순식간에 굳어진다.)",
+        text: "(낯선 소녀에게 다가가자 그녀가 미소 짓는다. 서연이의 얼굴이 굳어진다.)",
         characters: {
             left: "assets/images/characters/seyoun_angry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -1995,7 +1995,7 @@
     },
     "day2_final_yuna_new_betrayal": {
         name: "서연",
-        text: "\"전학생 군... 아까 축제 때 같이 가기로 약속했으면서... 처음 보는 애한테 가버리는 거야?\"",
+        text: "\"약속했으면서... 처음 보는 애한테 가버리는 거야?\"",
         characters: {
             left: "assets/images/characters/seyoun_angry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2005,20 +2005,20 @@
     },
     "day2_final_yuna_new_betrayal_2": {
         name: "서연",
-        text: "(서연이의 입술이 파르르 떨린다. 화를 내려는 것 같았지만, 이내 참지 못한 눈물이 뺨을 타고 흘러내린다.)",
+        text: "(서연이의 눈에서 눈물이 흘러내린다.)",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
         choices: [
-            { text: "서연아, 미안해... 역시 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna_new" },
-            { text: "미안해. 하지만 난 이 소녀랑 할 이야기가 있어.", next: "day2_final_yuna_new_2" }
+            { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna_new" },
+            { text: "미안해. 하지만 할 이야기가 있어.", next: "day2_final_yuna_new_2" }
         ]
     },
     "day2_final_seoyeon_back_yuna_new": {
         name: "???",
-        text: "\"후훗... 결국 마음이 약해졌나 보네. 좋아, 오늘은 양보해 줄게. 하지만 다음엔 도망칠 수 없을 거야.\"",
+        text: "\"마음이 약해졌나 보네. 오늘은 양보할게. 하지만 다음엔 안 돼.\"",
         characters: {
             left: "assets/images/characters/seyoun_shy.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2028,7 +2028,7 @@
     },
     "day2_final_yuna_new_2": {
         name: "???",
-        text: "\"안녕? 전학생. 나는 유나라고 해. 어제부터 널 지켜보고 있었어.\"",
+        text: "\"안녕? 나는 유나라고 해. 어제부터 널 지켜보고 있었어.\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2039,7 +2039,7 @@
     },
     "day2_final_seoyeon": {
         name: "서연",
-        text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 옆에 서 있는 소녀를 의식하는지 눈빛이 날카롭다.)",
+        text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 옆의 소녀를 의식하는지 눈빛이 날카롭다.)",
         characters: {
             left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2052,7 +2052,7 @@
     },
     "day2_final_seoyeon_met_yuna": {
         name: "서연",
-        text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 유나를 의식하는지 눈빛이 날카롭다.)",
+        text: "(서연이가 안심한 듯 미소 짓지만, 유나를 향한 눈빛은 날카롭다.)",
         characters: {
             left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2062,7 +2062,7 @@
     },
     "day2_final_seoyeon_new_yuna": {
         name: "서연",
-        text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 옆에 서 있는 소녀를 의식하는지 눈빛이 날카롭다.)",
+        text: "(서연이가 안심한 듯 미소 짓지만, 옆의 소녀를 향한 눈빛은 날카롭다.)",
         characters: {
             left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2072,7 +2072,7 @@
     },
     "day2_final_seoyeon_yuna_react": {
         name: "나",
-        text: "(내가 다가가자 옆에 서 있던 소녀가 나지막하게 입을 연다.)",
+        text: "(내가 다가가자 옆에 서 있던 소녀가 입을 연다.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2085,7 +2085,7 @@
     },
     "day2_final_seoyeon_yuna_react_met": {
         name: "유나",
-        text: "\"...그래, 네 선택이 그렇다면 어쩔 수 없지. 하지만 조심해. 빛이 강할수록 그림자도 깊은 법이니까.\"",
+        text: "\"...그래, 어쩔 수 없지. 하지만 조심해. 빛이 강할수록 그림자도 깊으니까.\"",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2095,7 +2095,7 @@
     },
     "day2_final_seoyeon_yuna_react_new": {
         name: "???",
-        text: "\"...그래, 네 선택이 그렇다면 어쩔 수 없지. 하지만 조심해. 빛이 강할수록 그림자도 깊은 법이니까.\"",
+        text: "\"...그래, 어쩔 수 없지. 하지만 조심해. 빛이 강할수록 그림자도 깊으니까.\"",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2105,7 +2105,7 @@
     },
     "day2_final_seoyeon_2": {
         name: "서연",
-        text: "(그녀는 내 팔짱을 끼며 옆에 서 있는 소녀를 쳐다본다. 그녀의 손에 힘이 들어간다.)",
+        text: "(그녀가 내 팔짱을 끼며 옆의 소녀를 쳐다본다. 손에 힘이 들어간다.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2138,7 +2138,7 @@
     },
     "day2_final_seoyeon_3_react": {
         name: "나",
-        text: "\"(유나...? 저 소녀의 이름이 유나였나? 서연이는 저 소녀를 알고 있는 것 같다.)\"",
+        text: "\"(유나...? 서연이는 저 소녀를 알고 있는 것 같다.)\"",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2148,7 +2148,7 @@
     },
     "day2_final_seoyeon_4": {
         name: "나",
-        text: "(서연이와 함께 학생회실로 향했다. 회의는 늦게까지 이어졌지만, 그녀와 함께라면 힘들지 않았다. 회의가 끝나고 우리는 나란히 밤길을 걸으며 축제 때 입을 옷에 대해 이야기했다.)",
+        text: "(서연이와 함께 학생회실로 향했다. 회의가 끝나고 우리는 나란히 밤길을 걸으며 축제 이야기를 나누었다.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_laugh.png",
         night: true,
@@ -2156,7 +2156,7 @@
     },
     "day2_final_yuna": {
         name: "유나",
-        text: "(유나에게 다가가자 그녀가 승리자의 미소를 짓는다. 서연이의 얼굴이 순식간에 굳어진다.)",
+        text: "(유나에게 다가가자 그녀가 미소 짓는다. 서연이의 얼굴이 굳어진다.)",
         characters: {
             left: "assets/images/characters/seyoun_angry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2169,7 +2169,7 @@
     },
     "day2_final_yuna_betrayal": {
         name: "서연",
-        text: "\"전학생 군... 아까 축제 때 같이 가기로 약속했으면서... 어떻게 이럴 수 있어?\"",
+        text: "\"약속했으면서... 어떻게 이럴 수 있어?\"",
         characters: {
             left: "assets/images/characters/seyoun_angry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2179,20 +2179,20 @@
     },
     "day2_final_yuna_betrayal_2": {
         name: "서연",
-        text: "(서연이의 목소리가 떨리기 시작하더니, 이내 맑은 눈동자에 눈물이 고여 흐르기 시작한다.)",
+        text: "(서연이의 눈에 눈물이 고여 흐르기 시작한다.)",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
         },
         sunset: true,
         choices: [
-            { text: "서연아, 미안해... 역시 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna" },
-            { text: "미안해. 하지만 난 유나랑 할 이야기가 있어.", next: "day2_final_yuna_2" }
+            { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna" },
+            { text: "미안해. 하지만 할 이야기가 있어.", next: "day2_final_yuna_2" }
         ]
     },
     "day2_final_seoyeon_back_yuna": {
         name: "유나",
-        text: "\"후훗... 결국 마음이 약해졌나 보네. 좋아, 오늘은 양보해 줄게. 하지만 다음엔 도망칠 수 없을 거야.\"",
+        text: "\"마음이 약해졌나 보네. 오늘은 양보할게. 하지만 다음엔 안 돼.\"",
         characters: {
             left: "assets/images/characters/seyoun_shy.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2202,7 +2202,7 @@
     },
     "day2_final_yuna_2": {
         name: "유나",
-        text: "(유나는 내 손을 잡고 서연이를 지나쳐 걷는다. 그녀의 손에서 차가운 승리감이 느껴진다. 서연이는 아무 말도 하지 못한 채 고개를 떨구고 있다.)",
+        text: "(유나가 내 손을 잡고 서연이를 지나쳐 걷는다. 서연이는 고개를 떨구고 있다.)",
         characters: {
             left: "assets/images/characters/seyoun_sad.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2222,7 +2222,7 @@
     },
     "day2_final_yuna_3": {
         name: "유나",
-        text: "\"서연 양, 미안하지만 이 사람은 나랑 할 이야기가 있어서.\"",
+        text: "\"서연 양, 이 사람은 나랑 할 이야기가 있어서.\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2235,7 +2235,7 @@
     },
     "day2_final_yuna_secret": {
         name: "유나",
-        text: "\"학교의 '진짜' 모습에 대해서 말이야. 아까 하던 이야기, 마저 해야지?\"",
+        text: "\"학교의 '진짜' 모습에 대해서 말이야. 아까 하던 이야기 마저 해야지?\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2245,7 +2245,7 @@
     },
     "day2_final_yuna_no_secret": {
         name: "유나",
-        text: "\"우리 학교에 대해 네가 꼭 알아야 할 게 있거든. 아주 흥미로운 이야기야.\"",
+        text: "\"우리 학교에 대해 네가 꼭 알아야 할 게 있거든.\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_smile.png"
@@ -2255,7 +2255,7 @@
     },
     "day2_final_yuna_4": {
         name: "나",
-        text: "(유나와 함께 어두운 복도를 걸으며 그녀가 들려주는 학교의 진실에 귀를 기울였다. 그녀의 목소리는 차가웠지만, 잡은 손에서는 미세한 떨림이 느껴졌다. 우리는 어느새 어둠이 짙게 깔린 교문 앞에 서 있었다.)",
+        text: "(유나와 함께 어두운 복도를 걸으며 학교의 진실에 귀를 기울였다. 우리는 어느새 어둠이 깔린 교문 앞에 서 있었다.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
@@ -2263,7 +2263,7 @@
     },
     "day2_final_dain": {
         name: "나",
-        text: "(서연이와 옆에 서 있는 소녀의 따가운 시선을 뒤로하고, 나는 체육관에서 손을 흔드는 다인에게 발걸음을 옮겼다.)",
+        text: "(서연이와 옆의 소녀를 뒤로하고, 체육관에서 손을 흔드는 다인에게 향했다.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2276,7 +2276,7 @@
     },
     "day2_final_dain_met_yuna": {
         name: "나",
-        text: "(서연이와 유나의 따가운 시선을 뒤로하고, 나는 체육관에서 손을 흔드는 다인에게 발걸음을 옮겼다.)",
+        text: "(서연이와 유나를 뒤로하고, 체육관에서 손을 흔드는 다인에게 향했다.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2289,7 +2289,7 @@
     },
     "day2_final_dain_new_yuna": {
         name: "나",
-        text: "(서연이와 옆에 서 있는 소녀의 따가운 시선을 뒤로하고, 나는 체육관에서 손을 흔드는 다인에게 발걸음을 옮겼다.)",
+        text: "(서연이와 옆의 소녀를 뒤로하고, 체육관에서 손을 흔드는 다인에게 향했다.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2302,7 +2302,7 @@
     },
     "day2_final_dain_betrayal": {
         name: "서연",
-        text: "\"잠깐, 전학생 군! 나랑 축제 가기로 했잖아! 그런데 지금 다인이한테 가는 거야...?\"",
+        text: "\"잠깐! 나랑 축제 가기로 했잖아! 그런데 지금 다인이한테 가는 거야?\"",
         characters: {
             left: "assets/images/characters/seyoun_angry.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2312,20 +2312,20 @@
     },
     "day2_final_dain_betrayal_2": {
         name: "서연",
-        text: "\"정말... 너무해. 나만 진심이었던 거야? (서연이의 눈에서 굵은 눈물방울이 툭 떨어지기 시작한다.)\"",
+        text: "\"정말 너무해... (서연이의 눈에서 눈물이 툭 떨어진다.)\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_nomal.png"
         },
         sunset: true,
         choices: [
-            { text: "서연아, 울지 마... 내가 잘못했어. 너랑 같이 갈게.", next: "day2_final_seoyeon_back_dain" },
-            { text: "미안해, 서연아. 하지만 다인이랑 약속이 먼저야.", next: "day2_final_dain_react" }
+            { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_dain" },
+            { text: "미안해. 하지만 다인이랑 약속이 먼저야.", next: "day2_final_dain_react" }
         ]
     },
     "day2_final_seoyeon_back_dain": {
         name: "다인",
-        text: "\"뭐야~ 전학생! 서연이를 울리면 어떡해! 좋아, 오늘은 서연이한테 양보할 테니까 내일은 꼭 나랑 놀아줘야 해?\"",
+        text: "\"뭐야, 서연이를 울리면 어떡해! 오늘은 양보할 테니까 내일은 꼭 나랑 놀아줘야 해?\"",
         characters: {
             left: "assets/images/characters/seyoun_shy.png",
             right: "assets/images/characters/dain_nomal.png"
@@ -2335,7 +2335,7 @@
     },
     "day2_final_dain_react": {
         name: "나",
-        text: "(서연이와 옆에 서 있는 소녀의 시선을 뒤로하고 다인이에게 달려갔다. 뒤에서 나지막한 목소리가 들려온다.)",
+        text: "(다인이에게 달려갔다. 뒤에서 나지막한 목소리가 들려온다.)",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2348,7 +2348,7 @@
     },
     "day2_final_dain_react_yuna_met": {
         name: "유나",
-        text: "\"후훗... 결국 저런 활기찬 타입이 취향이었나 보네. 서연 양, 우리 둘 다 차인 것 같은데?\"",
+        text: "\"후훗, 활기찬 타입이 취향이었나 보네. 서연 양, 우리 둘 다 차인 것 같은데?\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2358,7 +2358,7 @@
     },
     "day2_final_dain_react_yuna_new": {
         name: "???",
-        text: "\"후훗... 결국 저런 활기찬 타입이 취향이었나 보네. 서연 양, 우리 둘 다 차인 것 같은데?\"",
+        text: "\"후훗, 활기찬 타입이 취향이었나 보네. 서연 양, 우리 둘 다 차인 것 같은데?\"",
         characters: {
             left: "assets/images/characters/seyoun_cry.png",
             right: "assets/images/characters/yuna_sadsmile.png"
@@ -2368,7 +2368,7 @@
     },
     "day2_final_dain_start": {
         name: "다인",
-        text: "(체육관 쪽으로 고개를 돌리자, 다인이가 배구공을 들고 나를 향해 손을 흔들고 있다. 그녀의 건강한 미소가 노을빛에 반짝인다.)",
+        text: "(체육관 쪽에서 다인이가 배구공을 들고 손을 흔들고 있다. 건강한 미소가 노을빛에 반짝인다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -2376,21 +2376,21 @@
     },
     "day2_final_dain_2": {
         name: "다인",
-        text: "\"어이! 전학생! 연습 끝나고 기다리고 있었다구! 오늘 같이 떡볶이 먹으러 가기로 한 거 안 잊었지?\"",
+        text: "\"어이! 전학생! 기다리고 있었다구! 오늘 떡볶이 먹으러 가기로 한 거 안 잊었지?\"",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "day2_final_dain_3"
     },
     "day2_final_dain_3": {
         name: "나",
-        text: "(서연이와 유나의 시선을 뒤로하고 다인이에게 달려갔다. 그녀의 활기찬 에너지에 복잡했던 마음이 한순간에 풀리는 기분이다.)",
+        text: "(다인이에게 달려갔다. 그녀의 활기찬 에너지에 복잡했던 마음이 풀리는 기분이다.)",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "day2_final_dain_4"
     },
     "day2_final_dain_4": {
         name: "나",
-        text: "(우리는 학교 앞 분식집에서 떡볶이를 먹으며 배구 이야기로 꽃을 피웠다. 다인이와 함께라면 어떤 고민도 금방 사라질 것만 같다.)",
+        text: "(분식집에서 떡볶이를 먹으며 배구 이야기를 나눴다. 다인이와 함께라면 고민이 사라질 것 같다.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -2401,7 +2401,7 @@
     },
     "day2_final_dain_4_again": {
         name: "다인",
-        text: "\"어제도 오늘도, 너랑 먹는 떡볶이가 세상에서 제일 맛있어! 우리 내일도... 같이 올 수 있을까?\"",
+        text: "\"너랑 먹는 떡볶이가 제일 맛있어! 우리 내일도 같이 올 수 있을까?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -2409,7 +2409,7 @@
     },
     "day2_final_dain_4_first": {
         name: "다인",
-        text: "\"너랑 먹으니까 떡볶이가 평소보다 훨씬 맛있는 것 같아! 우리 내일도... 같이 올 수 있을까?\"",
+        text: "\"너랑 먹으니까 훨씬 맛있는 것 같아! 우리 내일도 같이 올 수 있을까?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -2417,7 +2417,7 @@
     },
     "day2_final_run": {
         name: "나",
-        text: "(두 사람의 시선이 너무 무서워서 나도 모르게 뒷문으로 도망치듯 빠져나왔다. 뒤에서 나를 부르는 소리가 들리는 것 같지만 돌아보지 않고 달렸다. 심장이 터질 것만 같다. 나는 숨을 헐떡이며 교문을 나섰다.)",
+        text: "(시선이 무서워 뒷문으로 도망치듯 빠져나왔다. 돌아보지 않고 달렸다. 숨을 헐떡이며 교문을 나섰다.)",
         background: "assets/images/background/school.png",
         character: null,
         sunset: true,
@@ -2425,7 +2425,7 @@
     },
     "day2_final_run_2": {
         name: "나",
-        text: "\"(하아... 하아... 살았다. 하지만 내일 학교에 어떻게 가지? 벌써부터 걱정이 태산이네...)\"",
+        text: "\"(살았다. 하지만 내일 학교에 어떻게 가지? 걱정이 태산이네...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         choices: [
@@ -2435,7 +2435,7 @@
     },
     "day2_final_run_seoyeon": {
         name: "나",
-        text: "\"(서연이랑 축제 약속도 했는데... 이렇게 도망쳐버리면 어떡하지? 내일 얼굴 보기가 정말 힘들 것 같아...)\"",
+        text: "\"(서연이랑 축제 약속도 했는데... 내일 얼굴 보기가 정말 힘들 것 같아...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_final_run_dain_check"
@@ -2452,14 +2452,14 @@
     },
     "day2_final_run_dain": {
         name: "나",
-        text: "\"(그러고 보니 다인이랑도 떡볶이 먹으러 가기로 약속했었는데... 다인이가 체육관에서 계속 기다리고 있겠지? 정말 미안하네...)\"",
+        text: "\"(다인이랑 떡볶이 먹기로 약속했는데... 계속 기다리고 있겠지? 미안하네...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_final_run_yuna_check"
     },
     "day2_final_run_yuna_check": {
         name: "나",
-        text: "(숨을 몰아쉬며 교문을 나선다. 등 뒤로 학교의 그림자가 길게 늘어져 있다.)",
+        text: "(교문을 나선다. 등 뒤로 학교의 그림자가 길게 늘어져 있다.)",
         background: "assets/images/background/school.png",
         sunset: true,
         choices: [
@@ -2469,14 +2469,14 @@
     },
     "day2_final_run_yuna": {
         name: "나",
-        text: "\"(유나가 말한 학교의 비밀... 그리고 나를 지켜주겠다던 그 간절한 눈빛. 이렇게 도망치는 게 정말 맞는 걸까?)\"",
+        text: "\"(유나가 말한 학교의 비밀... 이렇게 도망치는 게 맞는 걸까?)\"",
         background: "assets/images/background/school.png",
         sunset: true,
         next: "day2_ending_pre"
     },
     "day2_ending_pre": {
         name: "나",
-        text: "(학교를 나서며 밤하늘을 올려다본다. 수많은 별이 반짝이며 나를 내려다보고 있다. 전학 온 지 겨우 이틀... 하지만 내 인생은 이미 거대한 소용돌이 속에 휘말린 것 같다. 앞으로 어떤 미래가 나를 기다리고 있을까?)",
+        text: "(밤하늘을 올려다본다. 전학 온 지 겨우 이틀... 인생이 거대한 소용돌이에 휘말린 것 같다.)",
         background: "assets/images/background/school.png",
         character: null,
         night: true,
@@ -2484,27 +2484,27 @@
     },
     "home_arrival": {
         name: "나",
-        text: "(터벅터벅 걸어 집에 도착했다. 현관문을 열자 익숙한 공기가 나를 반긴다. 오늘 하루도 정말 길었어...)",
+        text: "(집에 도착했다. 오늘 하루도 정말 길었다.)",
         background: "assets/images/background/room_my.png",
         next: "home_room"
     },
     "home_room": {
         name: "나",
-        text: "(방으로 들어와 가방을 내려놓고, 전등 스위치를 내렸다. 어둠 속에서 창밖의 가로등 불빛만이 방 안을 희미하게 비춘다.)",
+        text: "(방으로 들어와 불을 껐다. 희미한 가로등 불빛만이 방 안을 비춘다.)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "home_bed"
     },
     "home_bed": {
         name: "나",
-        text: "(침대에 몸을 던졌다. 푹신한 매트리스가 내 몸을 감싸 안는다. 몸은 피곤하지만, 머릿속은 오늘 있었던 일들로 가득 차 잠이 오지 않는다.)",
+        text: "(침대에 몸을 던졌다. 피곤하지만 오늘 있었던 일들로 잠이 오지 않는다.)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "home_phone"
     },
     "home_phone": {
         name: "나",
-        text: "(천장을 멍하니 바라보다가, 머리맡에 둔 스마트폰을 집어 들었다. 화면의 밝은 빛이 눈을 찌른다. 누군가에게 메시지라도 보내볼까... 아니면 그냥 이대로 잠을 청할까?)",
+        text: "(스마트폰을 집어 들었다. 누군가에게 메시지를 보내볼까?)",
         background: "assets/images/background/room_my.png",
         night: true,
         choices: [
