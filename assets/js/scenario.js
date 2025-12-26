@@ -1174,7 +1174,7 @@
     },
     "after_yuna_rude_2": {
         name: "유나",
-        text: "\"음침하다고...? 후훗, 넌 아직 아무것도 모르는구나. 무지함은 때로 죄가 되기도 하지. 당장 내 눈앞에서 사라져.\"",
+        text: "\"음침하다고...? 후훗, 넌 아직 아무것도 모르는구나. 이 학교를 감싸고 있는 이 기묘한 기운... 넌 느껴지지 않아? 무지함은 때로 죄가 되기도 하지. 당장 내 눈앞에서 사라져.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_home"
     },
@@ -1234,7 +1234,7 @@
     },
     "after_yuna_rooftop_3": {
         name: "유나",
-        text: "\"겉으로 드러나지 않은 문제들이 곪아가고 있을 뿐이야. 넌 그런 위화감, 못 느꼈어?\"",
+        text: "\"겉으로 드러나지 않은 문제들이 곪아가고 있을 뿐이야. 이 학교를 가득 채운 무거운 기운... 넌 그런 위화감, 못 느꼈어?\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         choices: [
@@ -1580,8 +1580,21 @@
             { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_active", condition: "personality_active", stats: { Teacher: { affinity: 5 }, Seoyeon: { affinity: 2 } } },
             { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_normal", condition: "personality_quiet", stats: { Teacher: { affinity: 5 }, Seoyeon: { affinity: 2 } } },
             { text: "모르겠다고 말한다.", next: "day2_lesson_fail", stats: { Teacher: { affinity: -10 } } },
+            { text: "선생님, 오늘따라 정말 아름다우시네요.", next: "day2_lesson_trap", stats: { Teacher: { affinity: -30 } } },
             { text: "수업 방해하지 말고 그냥 하던 거나 하세요.", next: "day2_lesson_rude", stats: { Teacher: { affinity: -30 }, Seoyeon: { affinity: -15 } } }
         ]
+    },
+    "day2_lesson_trap": {
+        name: "담임선생님",
+        text: "(교실이 순식간에 조용해진다. 담임선생님의 얼굴이 붉게 달아오른다.)",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lesson_trap_2"
+    },
+    "day2_lesson_trap_2": {
+        name: "담임선생님",
+        text: "\"너... 너 지금 수업 시간에 무슨 소리를 하는 거니? 전학 첫날부터 장난이 너무 심하구나! 당장 복도로 나가서 손들고 서 있어!\"",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lunch_choice"
     },
     "day2_lesson_rude": {
         name: "담임선생님",
@@ -1964,8 +1977,23 @@
         character: "assets/images/characters/nurse.png",
         choices: [
             { text: "머리가 좀 아파요.", next: "day2_lunch_nurse_head", stats: { Nurse: { affinity: 5 } } },
-            { text: "그냥 좀 쉬고 싶어서요.", next: "day2_lunch_nurse_rest", stats: { Nurse: { affinity: 5 } } }
+            { text: "그냥 좀 쉬고 싶어서요.", next: "day2_lunch_nurse_rest", stats: { Nurse: { affinity: 5 } } },
+            { text: "선생님, 이런 식으로 학생들 유혹하는 게 취미세요?", next: "day2_lunch_nurse_trap", stats: { Nurse: { affinity: -30 } } }
         ]
+    },
+    "day2_lunch_nurse_trap": {
+        name: "양호선생님",
+        text: "(선생님의 미소가 순식간에 사라진다. 양호실 안의 공기가 무겁게 가라앉는다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_trap_2"
+    },
+    "day2_lunch_nurse_trap_2": {
+        name: "양호선생님",
+        text: "\"전학생 군... 내가 우스워 보이니? 어른을 놀리는 건 좋지 않아. 그런 무례한 태도는 어디서 배운 걸까? 당장 나가줘.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_choice"
     },
     "day2_lunch_nurse_head": {
         name: "양호선생님",
