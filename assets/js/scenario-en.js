@@ -710,8 +710,8 @@ const SCENARIO = {
             { text: "Go toward the student council room.", next: "after_seoyeon", excludeCondition: "metSeoyeon", setFlag: "metSeoyeon" },
             { text: "Head to the library annex where Yuna was.", next: "after_yuna", condition: "metYuna" },
             { text: "Look around the quiet parts of the school more.", next: "after_yuna_new", excludeCondition: "metYuna" },
-            { text: "Go see Dain practicing on the playground.", next: "after_dain", condition: "metDain" },
-            { text: "Head to the playground where lively sounds are coming from.", next: "after_dain_new", excludeCondition: "metDain" },
+            { text: "Go see Dain practicing in the gym.", next: "after_dain", condition: "metDain" },
+            { text: "Head to the gym where lively sounds are coming from.", next: "after_dain_new", excludeCondition: "metDain" },
             { text: "I'm tired today, so I'll go straight home.", next: "after_home" }
         ]
     },
