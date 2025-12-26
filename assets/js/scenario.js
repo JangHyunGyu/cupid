@@ -977,8 +977,33 @@
         night: true,
         choices: [
             { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
+            { 
+                text: "번호 따는 김에... 지금 바로 전화해도 돼?", 
+                next: "dain_contact_call_fail",
+                affinityChar: "Dain",
+                affinityBranches: [
+                    { minAffinity: 50, next: "dain_contact_call_success" }
+                ],
+                setFlags: ["has_number_dain", "has_any_contact"]
+            },
             { text: "음... 나중에 기회 되면 알려줄게.", next: "dain_contact_fail", stats: { Dain: { affinity: -10 } } }
         ]
+    },
+    "dain_contact_call_success": {
+        name: "다인",
+        text: "(다인이가 얼굴을 붉히며 당황한 듯 웃는다.) \"뭐, 뭐야! 갑자기? ...뭐, 목소리 듣고 싶다면 안 될 건 없지만. 대신 너무 오래 하진 마! 나 내일 연습 일찍 가야 하니까!\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_shy.png",
+        stats: { Dain: { affinity: 15 } },
+        next: "day2_start"
+    },
+    "dain_contact_call_fail": {
+        name: "다인",
+        text: "(다인이가 어이없다는 듯 헛웃음을 터뜨린다.) \"하! 너 진짜 대담하네? 번호 받자마자 전화라니, 너무 앞서가는 거 아냐? 일단 메시지부터 주고받으면서 친해지자고!\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_nomal.png",
+        stats: { Dain: { affinity: -5 } },
+        next: "day2_start"
     },
     "dain_contact_success": {
         name: "다인",
@@ -1164,10 +1189,31 @@
         choices: [
             { text: "내 이름은 '{name}'야. 너랑 친해지고 싶어.", next: "yuna_name_share", setFlag: "knowsName_유나", stats: { Yuna: { affinity: 5 } } },
             { text: "너에 대해 더 알고 싶어서 왔어.", next: "after_yuna_know", stats: { Yuna: { affinity: 10 } } },
-            { text: "이 학교의 비밀... 그게 뭔지 알려줘.", next: "after_yuna_secret", condition: "metYuna", stats: { Yuna: { affinity: 5 } } },
+            { 
+                text: "너의 진짜 비밀을 알고 싶어. 이 학교의 진실 말이야.", 
+                next: "after_yuna_secret_fail",
+                affinityChar: "Yuna",
+                affinityBranches: [
+                    { minAffinity: 60, next: "after_yuna_secret_deep" }
+                ]
+            },
             { text: "오늘 급식 뭐 나왔는지 알아? 배고프다.", next: "after_yuna_boring", stats: { Yuna: { affinity: -10 } } },
             { text: "여긴 왜 이렇게 음침해? 기분 나빠.", next: "after_yuna_rude", stats: { Yuna: { affinity: -25 } } }
         ]
+    },
+    "after_yuna_secret_deep": {
+        name: "유나",
+        text: "(유나가 책을 덮고 나를 빤히 바라본다. 그녀의 눈동자가 보랏빛으로 기묘하게 빛나는 것 같다.) \"...진실? 그걸 감당할 준비가 됐어? 좋아, 네가 그 정도로 진심이라면... 따라와. 아무에게도 말하지 않겠다고 약속해.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 20 } },
+        next: "after_yuna_rooftop"
+    },
+    "after_yuna_secret_fail": {
+        name: "유나",
+        text: "(유나가 차가운 미소를 짓는다.) \"진실이라... 후훗, 넌 아직 그 무게를 견디기엔 너무 가벼워 보여. 궁금해하는 건 자유지만, 너무 깊이 파고들지 마. 다칠 수도 있으니까.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        stats: { Yuna: { affinity: -10 } },
+        next: "after_home"
     },
     "after_yuna_boring": {
         name: "유나",
@@ -1436,7 +1482,7 @@
     },
     "day2_gate_2_2": {
         name: "서연",
-        text: "\"안녕, 전학생 군! 좋은 아침이야!\"",
+        text: "\"안녕, {name?}! 좋은 아침이야!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_gate_3"
     },
@@ -1588,7 +1634,7 @@
     },
     "day2_lesson_3": {
         name: "담임선생님",
-        text: "\"자, 거기 전학생! 이 문제 한번 풀어볼까?\"",
+        text: "\"자, 거기 {name?}! 이 문제 한번 풀어볼까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_study", condition: "personality_study", stats: { Teacher: { affinity: 5 }, Seoyeon: { affinity: 2 } } },
@@ -1643,13 +1689,13 @@
     },
     "day2_lesson_solve_2": {
         name: "아이들",
-        text: "\"와, 전학생 공부도 잘하네!\"",
+        text: "\"와, {name?} 공부도 잘하네!\"",
         character: null,
         next: "day2_teacher_free_talk"
     },
     "day2_lesson_solve_2_active": {
         name: "아이들",
-        text: "\"오, 전학생! 공부도 좀 하는데?\"",
+        text: "\"오, {name?}! 공부도 좀 하는데?\"",
         character: null,
         next: "day2_teacher_free_talk"
     },
@@ -1668,7 +1714,7 @@
     "day2_teacher_free_talk": {
         type: "free_talk",
         name: "담임선생님",
-        text: "\"전학생 군, 잠깐 나 좀 볼까? 수업 시간에 고생 많았어. 학교생활은 좀 어떠니?\"",
+        text: "\"{name?}, 잠깐 나 좀 볼까? 수업 시간에 고생 많았어. 학교생활은 좀 어떠니?\"",
         background: "assets/images/background/load_school.png",
         context: "수업이 끝난 후 교실 뒤편이나 복도에서 담임 선생님과 단둘이 대화를 나누는 상황",
         personality: "학생을 진심으로 걱정하는 다정한 선생님. 하지만 주인공의 어른스러운 반응에 가끔 당황하며 소녀 같은 모습을 보이기도 함.",
@@ -1702,7 +1748,7 @@
     },
     "teacher_contact_private_fail": {
         name: "담임선생님",
-        text: "(선생님이 엄격한 표정으로 나를 쳐다보신다.) \"전학생 군, 농담이 지나치구나. 선생님과 학생 사이에 사적인 연락이라니... 공과 사는 확실히 구분해야지. 오늘은 이만 가보렴.\"",
+        text: "(선생님이 엄격한 표정으로 나를 쳐다보신다.) \"{name?}, 농담이 지나치구나. 선생님과 학생 사이에 사적인 연락이라니... 공과 사는 확실히 구분해야지. 오늘은 이만 가보렴.\"",
         character: "assets/images/characters/teacher_angry.png",
         stats: { Teacher: { affinity: -20 } },
         next: "day2_lunch_choice"
@@ -2063,7 +2109,7 @@
     },
     "day2_lunch_nurse_trap_2": {
         name: "양호선생님",
-        text: "\"어머... 전학생 군, 내가 너무 받아줬나 보네. 어른을 상대로 그런 무례한 말은 농담으로 안 들려. 오늘은 그만 나가줄래? 기분이 아주 별로네.\"",
+        text: "\"어머... {name?}, 내가 너무 받아줬나 보네. 어른을 상대로 그런 무례한 말은 농담으로 안 들려. 오늘은 그만 나가줄래? 기분이 아주 별로네.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_angry.png",
         next: "day2_lunch_choice"
@@ -2125,14 +2171,37 @@
     },
     "nurse_contact_exchange": {
         name: "양호선생님",
-        text: "(선생님이 몸을 살짝 기울이며 속삭인다.) \"전학생 군, 밤에 잠이 안 오면 나한테 연락할래? 번호 알려줄게.\"",
+        text: "(선생님이 몸을 살짝 기울이며 속삭인다.) \"{name?}, 밤에 잠이 안 오면 나한테 연락할래? 번호 알려줄게.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         choices: [
             { text: "네, 알고 싶어요.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { 
+                text: "번호 말고... 선생님 집으로 가도 돼요?", 
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 70, next: "nurse_contact_home_success" }
+                ]
+            },
             { text: "아, 괜찮습니다.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -10 } } }
         ]
+    },
+    "nurse_contact_home_success": {
+        name: "양호선생님",
+        text: "(선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귓가에 속삭인다.) \"어머... {name?}, 생각보다 훨씬 대담하네? 좋아, 오늘 밤 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 30 } },
+        setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
+        next: "day2_afternoon"
+    },
+    "nurse_contact_home_fail": {
+        name: "양호선생님",
+        text: "(선생님이 장난스럽게 내 이마를 톡 친다.) \"후훗, {name?}! 그건 너무 앞서갔어. 선생님 집은 아무나 오는 곳이 아니거든? 일단 번호부터 받고 천천히 친해지자고.\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: -15 } },
+        next: "day2_afternoon"
     },
     "nurse_contact_success": {
         name: "양호선생님",
@@ -2350,7 +2419,7 @@
     },
     "day2_final_seoyeon_2_2": {
         name: "서연",
-        text: "\"전학생 군, 오늘 학생회 회의가 있는데 같이 가줄 수 있지?\"",
+        text: "\"{name?}, 오늘 학생회 회의가 있는데 같이 가줄 수 있지?\"",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2360,7 +2429,7 @@
     },
     "day2_final_seoyeon_3": {
         name: "서연",
-        text: "\"중요한 안건이 있거든. 유나 양, 전학생 군은 내가 데려갈게.\"",
+        text: "\"중요한 안건이 있거든. 유나 양, {name?}은 내가 데려갈게.\"",
         characters: {
             left: "assets/images/characters/seyoun_nomal.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2792,7 +2861,7 @@
     "msg_seyoun": {
         type: "free_talk",
         name: "서연",
-        text: "(서연이에게 메시지를 보냈습니다.) \"전학생 군? 이 시간에 웬일이야?\"",
+        text: "(서연이에게 메시지를 보냈습니다.) \"{name?}? 이 시간에 웬일이야?\"",
         background: "assets/images/background/room_my.png",
         night: true,
         thinking: true,
@@ -2820,7 +2889,7 @@
     "msg_dain": {
         type: "free_talk",
         name: "다인",
-        text: "(다인이에게 메시지를 보냈습니다.) \"오! 전학생! 아직 안 자고 뭐 해? 나랑 배구 영상이라도 볼래?\"",
+        text: "(다인이에게 메시지를 보냈습니다.) \"오! {name?}! 아직 안 자고 뭐 해? 나랑 배구 영상이라도 볼래?\"",
         background: "assets/images/background/room_my.png",
         night: true,
         thinking: true,
@@ -2834,7 +2903,7 @@
     "msg_teacher": {
         type: "free_talk",
         name: "선생님",
-        text: "(선생님께 메시지를 보냈습니다.) \"음, 전학생 군? 이 시간에 무슨 일이니? 학교생활에 어려운 점이라도 있는 거야?\"",
+        text: "(선생님께 메시지를 보냈습니다.) \"음, {name?}? 이 시간에 무슨 일이니? 학교생활에 어려운 점이라도 있는 거야?\"",
         background: "assets/images/background/room_my.png",
         night: true,
         thinking: true,
