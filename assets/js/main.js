@@ -31,6 +31,7 @@ const charSlots = {
 };
 const fadeLayer = document.getElementById('fade-layer');
 const tbcText = document.getElementById('tbc-text');
+const nextIndicator = document.getElementById('next-indicator');
 
 async function renderScene(sceneId) {
     const scene = SCENARIO[sceneId];
@@ -101,15 +102,23 @@ async function renderScene(sceneId) {
     nameTagEl.textContent = scene.name || "";
     nameTagEl.style.display = scene.name ? 'block' : 'none';
 
+    // 다음 지시계 초기화
+    nextIndicator.style.display = 'none';
+
     // 프리토킹 모드 확인
     if (scene.type === 'free_talk') {
         startFreeTalk(scene);
     } else if (scene.type === 'input') {
         await typeText(scene.text);
         nameInputContainer.style.display = 'block';
+        playerNameInput.value = "";
+        playerNameInput.focus();
     } else {
         // 텍스트 타이핑 효과
         await typeText(scene.text);
+        if (!scene.choices) {
+            nextIndicator.style.display = 'block';
+        }
     }
 }
 
@@ -305,9 +314,9 @@ function checkChoices() {
 }
 
 dialogueBox.onclick = async () => {
-    if (isTyping || isFreeTalking) return;
-    
     const scene = SCENARIO[currentSceneId];
+    if (isTyping || isFreeTalking || scene.type === 'input') return;
+    
     if (scene.choices) {
         dialogueBox.style.display = 'none'; // 대화창 숨기기
         checkChoices(); // 선택지 표시
