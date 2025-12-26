@@ -23,6 +23,58 @@ const FLAG_MEMORIES = [
     { flag: "personality_quiet", char: "담임선생님", ko: "주인공은 자신을 조용한 성격이라고 소개했습니다.", en: "The user introduced themselves as having a quiet personality." }
 ];
 
+// 캐릭터별 표정 이미지 매핑
+const CHARACTER_EXPRESSIONS = {
+    "서연": {
+        "normal": "assets/images/characters/seyoun_nomal.png",
+        "shy": "assets/images/characters/seyoun_shy.png",
+        "shy2": "assets/images/characters/seyoun_shy2.png",
+        "pout": "assets/images/characters/seyoun_pout.png",
+        "angry": "assets/images/characters/seyoun_angry.png",
+        "cry": "assets/images/characters/seyoun_cry.png",
+        "laugh": "assets/images/characters/seyoun_laugh.png",
+        "worried": "assets/images/characters/seyoun_worried.png",
+        "sad": "assets/images/characters/seyoun_sad.png"
+    },
+    "Seoyeon": {
+        "normal": "assets/images/characters/seyoun_nomal.png",
+        "shy": "assets/images/characters/seyoun_shy.png",
+        "shy2": "assets/images/characters/seyoun_shy2.png",
+        "pout": "assets/images/characters/seyoun_pout.png",
+        "angry": "assets/images/characters/seyoun_angry.png",
+        "cry": "assets/images/characters/seyoun_cry.png",
+        "laugh": "assets/images/characters/seyoun_laugh.png",
+        "worried": "assets/images/characters/seyoun_worried.png",
+        "sad": "assets/images/characters/seyoun_sad.png"
+    },
+    "유나": {
+        "normal": "assets/images/characters/yuna_nomal.png",
+        "smile": "assets/images/characters/yuna_smile.png",
+        "sadsmile": "assets/images/characters/yuna_sadsmile.png",
+        "sad": "assets/images/characters/yuna_sad.png"
+    },
+    "Yuna": {
+        "normal": "assets/images/characters/yuna_nomal.png",
+        "smile": "assets/images/characters/yuna_smile.png",
+        "sadsmile": "assets/images/characters/yuna_sadsmile.png",
+        "sad": "assets/images/characters/yuna_sad.png"
+    },
+    "다인": {
+        "normal": "assets/images/characters/dain_nomal.png",
+        "shy": "assets/images/characters/dain_shy.png",
+        "active": "assets/images/characters/dain_active.png",
+        "sweat": "assets/images/characters/dain_sweat.png",
+        "shirt": "assets/images/characters/dain_shirt.png"
+    },
+    "Dain": {
+        "normal": "assets/images/characters/dain_nomal.png",
+        "shy": "assets/images/characters/dain_shy.png",
+        "active": "assets/images/characters/dain_active.png",
+        "sweat": "assets/images/characters/dain_sweat.png",
+        "shirt": "assets/images/characters/dain_shirt.png"
+    }
+};
+
 let currentSceneId = "start";
 let isTyping = false;
 let gameState = {
@@ -33,7 +85,8 @@ let gameState = {
         Dain: { affinity: 0 },
         Teacher: { affinity: 0 },
         Nurse: { affinity: 0 }
-    }
+    },
+    chatMemories: {} // 캐릭터별 대화 기록 저장
 };
 
 // 프리토킹 관련 변수
@@ -209,11 +262,16 @@ function startFreeTalk(scene) {
     isFreeTalking = true;
     freeTalkTurns = 0;
     currentMaxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
-    freeTalkHistory = [];
     
     const isEn = document.documentElement.lang === 'en';
     const gameContext = getGameContext(scene.name, isEn);
     const socialContext = getSocialContext(scene.name, isEn);
+    
+    // 캐릭터별 대화 기록 불러오기
+    if (!gameState.chatMemories[scene.name]) {
+        gameState.chatMemories[scene.name] = [];
+    }
+    freeTalkHistory = [...gameState.chatMemories[scene.name]];
     
     // 현재 배경 이미지 파일명에서 장소 유추
     let locationName = isEn ? "School" : "학교";
@@ -389,6 +447,63 @@ function startFreeTalk(scene) {
     const charSpecificCriteria = defaultStatCriteria[scene.name] || "";
     const charInteractionGuideline = defaultInteractionGuidelines[scene.name] || (isEn ? "Maintain a natural distance based on the situation." : "상황에 맞는 자연스러운 거리감을 유지하세요.");
 
+    // 캐릭터별 호감도에 따른 호칭 가이드라인
+    const defaultAddressingGuidelines = isEn ? {
+        "Seoyeon": `
+     * -100 ~ -31: "Transfer Student", "You" (Cold and distant)
+     * -30 ~ 30: "Transfer Student", "${gameState.playerName} student" (Polite)
+     * 31 ~ 70: "${gameState.playerName} kun/san", "${gameState.playerName}" (Softer)
+     * 71 ~ 100: "${gameState.playerName}...", "Um..." (Shyly calling name or trailing off)`,
+        "Yuna": `
+     * -100 ~ -31: "Shadow", "You" (Chilling and dismissive)
+     * -30 ~ 30: "Transfer Student", "You" (Indifferent)
+     * 31 ~ 70: "${gameState.playerName}", "My light" (Showing mysterious interest)
+     * 71 ~ 100: "My only one", "${gameState.playerName}..." (Obsessive and intimate)`,
+        "Dain": `
+     * -100 ~ -31: "Hey", "You" (Angry and shouting)
+     * -30 ~ 30: "Transfer Student", "Hey!" (Casual friend vibe)
+     * 31 ~ 70: "${gameState.playerName}!", "Dummy" (Playful and friendly)
+     * 71 ~ 100: "${gameState.playerName}...", "Um, well..." (Blushing intensely, can't call name properly)`,
+        "Homeroom Teacher": `
+     * -100 ~ -31: "Student ${gameState.playerName}", "You" (Strict and disappointed)
+     * -30 ~ 30: "Student ${gameState.playerName}", "Transfer Student" (Professional)
+     * 31 ~ 70: "${gameState.playerName} kun/san", "${gameState.playerName}" (Softer and more personal)
+     * 71 ~ 100: "${gameState.playerName}...", "Um..." (Dropping the 'student' title, confused by feelings)`,
+        "Nurse": `
+     * -100 ~ -31: "Patient", "You" (Coldly professional)
+     * -30 ~ 30: "Cute Transfer Student", "Kiddo" (Playful teasing)
+     * 31 ~ 70: "${gameState.playerName} kun", "My cutie" (More affectionate teasing)
+     * 71 ~ 100: "Honey", "Darling", "My love" (Bold, seductive, and intimate nicknames)`
+    } : {
+        "서연": `
+     * -100 ~ -31: "전학생", "너" (매우 차갑고 무시하는 듯한 표현)
+     * -30 ~ 30: "전학생 군", "${gameState.playerName} 씨" (예의 바른 거리감)
+     * 31 ~ 70: "${gameState.playerName} 군", "${gameState.playerName} 씨" (부드러워진 말투)
+     * 71 ~ 100: "${gameState.playerName}...", "저기..." (부끄러워하며 이름을 부르거나 말끝을 흐림)`,
+        "유나": `
+     * -100 ~ -31: "그림자", "너" (소름 돋을 정도로 차가움)
+     * -30 ~ 30: "전학생", "너" (무관심함)
+     * 31 ~ 70: "${gameState.playerName}", "나의 빛" (신비로운 관심을 보임)
+     * 71 ~ 100: "나의 단 하나", "${gameState.playerName}..." (집착적이거나 운명적인 느낌)`,
+        "다인": `
+     * -100 ~ -31: "야", "너", "이봐" (화가 나서 소리 지름)
+     * -30 ~ 30: "전학생", "야!" (편한 친구 사이)
+     * 31 ~ 70: "${gameState.playerName}!", "바보야" (장난스럽고 친근함)
+     * 71 ~ 100: "${gameState.playerName}...", "저기, 그게..." (얼굴을 붉히며 이름을 제대로 못 부르고 머뭇거림)`,
+        "담임선생님": `
+     * -100 ~ -31: "${gameState.playerName} 학생", "너" (엄격하고 실망한 기색)
+     * -30 ~ 30: "${gameState.playerName} 학생", "전학생" (전문적인 교사 말투)
+     * 31 ~ 70: "${gameState.playerName} 군", "${gameState.playerName} 씨" (격의 없고 다정함)
+     * 71 ~ 100: "${gameState.playerName}...", "저기..." (선생님이라는 호칭을 버리고 이름을 부르며 당황함)`,
+        "양호선생님": `
+     * -100 ~ -31: "${gameState.playerName} 학생", "너" (장난기 없는 차갑고 엄격한 태도)
+     * -30 ~ 30: "귀여운 전학생", "꼬마야" (능글맞은 장난)
+     * 31 ~ 70: "${gameState.playerName} 군", "우리 귀염둥이" (진심 어린 애정이 섞인 장난)
+     * 71 ~ 100: "자기야", "내 사랑", "여보" (대담하고 유혹적인 애칭 사용)`
+    };
+
+    const charAddressingGuideline = defaultAddressingGuidelines[scene.name] || (isEn ? "Address the user naturally based on affinity." : "호감도에 따라 사용자를 자연스럽게 부르세요.");
+
     let systemPrompt = "";
     if (isEn) {
         systemPrompt = `You are the character '${scene.name}' from the visual novel game 'Cupid'.
@@ -420,7 +535,16 @@ ${charInteractionGuideline}
    - You MUST include the following format at the very end of your response: [STATS: affinity+X] (X is an integer based on the criteria above)
    - Example: "Thank you, Transfer Student! [STATS: affinity+2]"
 
-7. World-building & Immersion:
+7. Expression & Visuals:
+   - You can change your facial expression based on your mood. Available expressions for ${scene.name}: ${Object.keys(CHARACTER_EXPRESSIONS[scene.name] || {}).join(", ")}
+   - To change expression, include [EXPRESSION: name] in your response.
+   - Example: "I... I'm not blushing! [EXPRESSION: shy] [STATS: affinity+5]"
+
+8. Affinity-based Addressing:
+   - Adjust how you address the user based on affinity for ${scene.name}:
+${charAddressingGuideline}
+
+9. World-building & Immersion:
    - If the user mentions topics that don't fit the high school visual novel setting (e.g., stocks, corporate life, children, modern politics), react with confusion, playful dismissal, or by redirecting the conversation back to school life. Maintain the character's perspective as a high school student (or teacher).`;
     } else {
         systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
@@ -450,11 +574,21 @@ ${charInteractionGuideline}
    - 답변의 맨 마지막에 반드시 다음 형식을 포함하세요: [STATS: affinity+X] (X는 위 기준에 따른 정수)
    - 예: "고마워, 전학생 군! [STATS: affinity+5]"
 
-7. 세계관 및 몰입도 유지:
+7. 표정 및 비주얼 제어:
+   - 당신의 기분에 따라 표정을 변경할 수 있습니다. '${scene.name}'의 사용 가능한 표정: ${Object.keys(CHARACTER_EXPRESSIONS[scene.name] || {}).join(", ")}
+   - 표정을 변경하려면 답변에 [EXPRESSION: 표정명]을 포함하세요.
+   - 예: "나, 난 딱히 부끄러운 게 아니라고! [EXPRESSION: shy] [STATS: affinity+5]"
+
+8. 호감도에 따른 호칭 변화:
+   - '${scene.name}'의 호감도 수치에 따라 사용자를 부르는 호칭을 자연스럽게 변경하세요:
+${charAddressingGuideline}
+
+9. 세계관 및 몰입도 유지:
    - 사용자가 고등학교 미연시 설정에 맞지 않는 주제(주식, 회사 생활, 자녀 양육, 현대 정치 등)를 언급할 경우, 당황하거나 농담으로 넘기거나 학교 생활로 화제를 전환하세요. 철저히 고등학생(또는 교사)의 관점을 유지하세요.`;
     }
 
-    freeTalkHistory.push({ role: "system", content: systemPrompt });
+    // 시스템 프롬프트를 맨 앞에 배치
+    freeTalkHistory = [{ role: "system", content: systemPrompt }, ...freeTalkHistory.filter(m => m.role !== "system")];
     
     chatContainer.style.display = 'block';
     
@@ -529,6 +663,28 @@ async function sendChatMessage() {
         let reply = data?.choices?.[0]?.message?.content?.trim();
         
         if (reply) {
+            // 표정 변화 파싱 [EXPRESSION: name]
+            const exprRegex = /\[EXPRESSION:\s*(\w+)\]/i;
+            const exprMatch = reply.match(exprRegex);
+            if (exprMatch) {
+                const exprName = exprMatch[1].toLowerCase();
+                const scene = SCENARIO[currentSceneId];
+                const charExprs = CHARACTER_EXPRESSIONS[scene.name];
+                if (charExprs && charExprs[exprName]) {
+                    // 중앙 슬롯의 캐릭터 이미지 교체
+                    const centerSlot = charSlots.center;
+                    if (centerSlot.firstChild) {
+                        centerSlot.firstChild.src = charExprs[exprName];
+                    } else {
+                        // 이미지가 없으면 새로 생성 (보통 center에 위치)
+                        const img = document.createElement('img');
+                        img.src = charExprs[exprName];
+                        centerSlot.appendChild(img);
+                    }
+                }
+                reply = reply.replace(exprRegex, "").trim();
+            }
+
             // 스탯 변화 파싱 [STATS: affinity+X]
             const statsRegex = /\[STATS:\s*affinity\s*([+-]?\d+)\]/i;
             const match = reply.match(statsRegex);
@@ -556,6 +712,10 @@ async function sendChatMessage() {
             nameTagEl.textContent = scene.name;
             await typeText(reply); // 타이핑이 끝날 때까지 기다립니다.
             freeTalkHistory.push({ role: "assistant", content: reply });
+            
+            // 대화 기록 저장 (시스템 프롬프트 제외하고 최근 10개 정도만 유지하여 컨텍스트 최적화)
+            const chatOnly = freeTalkHistory.filter(m => m.role !== "system");
+            gameState.chatMemories[scene.name] = chatOnly.slice(-10);
             
             if (freeTalkTurns >= currentMaxTurns) {
                 // 대화 완료 플래그 설정 (선택지에서 제거하기 위함)
