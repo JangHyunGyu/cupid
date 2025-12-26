@@ -87,6 +87,16 @@ const CHARACTER_EXPRESSIONS = {
         "angry": "assets/images/characters/teacher_angry.png",
         "shy": "assets/images/characters/teacher_shy.png",
         "sad": "assets/images/characters/teacher_sad.png"
+    },
+    "양호선생님": {
+        "normal": "assets/images/characters/nurse.png",
+        "angry": "assets/images/characters/nurse_angry.png",
+        "shy": "assets/images/characters/nurse_shy.png"
+    },
+    "Nurse": {
+        "normal": "assets/images/characters/nurse.png",
+        "angry": "assets/images/characters/nurse_angry.png",
+        "shy": "assets/images/characters/nurse_shy.png"
     }
 };
 

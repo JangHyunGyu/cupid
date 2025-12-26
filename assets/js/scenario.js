@@ -2020,14 +2020,14 @@
         name: "양호선생님",
         text: "(선생님의 미소가 순식간에 사라진다. 양호실 안의 공기가 무겁게 가라앉는다.)",
         background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_angry.png",
         next: "day2_lunch_nurse_trap_2"
     },
     "day2_lunch_nurse_trap_2": {
         name: "양호선생님",
         text: "\"어머... 전학생 군, 내가 너무 받아줬나 보네. 어른을 상대로 그런 무례한 말은 농담으로 안 들려. 오늘은 그만 나가줄래? 기분이 아주 별로네.\"",
         background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_angry.png",
         next: "day2_lunch_choice"
     },
     "day2_lunch_nurse_head": {
