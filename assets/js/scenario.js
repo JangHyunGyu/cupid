@@ -517,10 +517,10 @@
     },
     "seyoun_contact_exchange": {
         name: "서연",
-        text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 수줍게 스마트폰을 내민다.) \"저기... 혹시 괜찮다면, 연락처 알려줄 수 있을까? 앞으로 도시락 메뉴 정할 때 물어보고 싶어서...\"",
+        text: "(서연이가 가방을챙기다 말고 잠시 머뭇거리더니, 수줍게 스마트폰을 내민다.) \"저기... 혹시 괜찮다면, 연락처 알려줄 수 있을까? 앞으로 도시락 메뉴 정할 때 물어보고 싶어서...\"",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
-            { text: "물론이지! 나도 서연이랑 더 이야기하고 싶었어.", next: "seyoun_contact_success", setFlag: "has_number_seyoun" },
+            { text: "물론이지! 나도 서연이랑 더 이야기하고 싶었어.", next: "seyoun_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
             { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail" }
         ]
     },
@@ -819,7 +819,7 @@
         character: "assets/images/characters/dain_shirt.png",
         night: true,
         choices: [
-            { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "dain_contact_success", setFlag: "has_number_dain" },
+            { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
             { text: "음... 나중에 기회 되면 알려줄게.", next: "dain_contact_fail" }
         ]
     },
@@ -1073,7 +1073,7 @@
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         choices: [
-            { text: "응, 유나랑 더 많은 비밀을 나누고 싶어.", next: "yuna_contact_success", setFlag: "has_number_yuna" },
+            { text: "응, 유나랑 더 많은 비밀을 나누고 싶어.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
             { text: "미안, 아직은 좀 조심스러워.", next: "yuna_contact_fail" }
         ]
     },
@@ -1440,7 +1440,7 @@
         text: "(선생님이 교탁을 정리하다 말고 나를 따로 부르신다. 그리고는 수첩에서 작은 메모지를 찢어 무언가를 적어주신다.) \"전학생 군, 이건 내 개인 연락처란다. 학교생활 하면서 힘든 일이 있거나 상담이 필요하면 언제든 연락하렴. 선생님은 항상 네 편이니까.\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "감사합니다, 선생님! 소중히 간직할게요.", next: "teacher_contact_success", setFlag: "has_number_teacher" },
+            { text: "감사합니다, 선생님! 소중히 간직할게요.", next: "teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
             { text: "아... 괜찮습니다. 학교에서 뵈면 되니까요.", next: "teacher_contact_fail" }
         ]
     },
@@ -1803,7 +1803,7 @@
         character: "assets/images/characters/nurse.png",
         sunset: true,
         choices: [
-            { text: "네, 선생님 번호라면 꼭 알고 싶어요.", next: "nurse_contact_success", setFlag: "has_number_nurse" },
+            { text: "네, 선생님 번호라면 꼭 알고 싶어요.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
             { text: "아... 학교 밖에서 연락하는 건 좀 실례일 것 같아요.", next: "nurse_contact_fail" }
         ]
     },
@@ -2396,7 +2396,7 @@
         background: "assets/images/background/room_my.png",
         night: true,
         choices: [
-            { text: "연락해보기", next: "send_message_select" },
+            { text: "연락해보기", next: "send_message_select", condition: "has_any_contact" },
             { text: "그냥 잔다", next: "end_demo_real" }
         ]
     },

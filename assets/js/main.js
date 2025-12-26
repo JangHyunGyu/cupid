@@ -236,8 +236,11 @@ function checkChoices() {
                 // 플래그 설정
                 if (choice.setFlag) {
                     gameState[choice.setFlag] = true;
+                }                if (choice.setFlags && Array.isArray(choice.setFlags)) {
+                    choice.setFlags.forEach(flag => {
+                        gameState[flag] = true;
+                    });
                 }
-
                 if (choice.next === 'index.html') {
                     location.href = 'index.html';
                 } else {
