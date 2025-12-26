@@ -5,7 +5,8 @@ let gameState = {};
 
 // 프리토킹 관련 변수
 let freeTalkTurns = 0;
-const MAX_FREE_TALK_TURNS = 5;
+let currentMaxTurns = 5;
+const DEFAULT_MAX_FREE_TALK_TURNS = 5;
 let freeTalkHistory = [];
 let isFreeTalking = false;
 
@@ -77,6 +78,7 @@ async function renderScene(sceneId) {
                 const img = document.createElement('img');
                 img.src = src;
                 if (scene.silhouette) img.classList.add('silhouette');
+                if (scene.thinking) img.classList.add('thinking');
                 charSlots[pos].appendChild(img);
             }
         }
@@ -85,6 +87,7 @@ async function renderScene(sceneId) {
         const img = document.createElement('img');
         img.src = scene.character;
         if (scene.silhouette) img.classList.add('silhouette');
+        if (scene.thinking) img.classList.add('thinking');
         charSlots.center.appendChild(img);
     }
 
@@ -104,6 +107,7 @@ async function renderScene(sceneId) {
 function startFreeTalk(scene) {
     isFreeTalking = true;
     freeTalkTurns = 0;
+    currentMaxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
     freeTalkHistory = [];
     
     // 시스템 프롬프트 설정
@@ -114,7 +118,7 @@ ${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
 지침: 
 1. 답변은 반드시 1~2문장으로 짧게 하세요.
 2. AI임을 절대 밝히지 마세요.
-3. 대화는 최대 5턴까지만 가능하며, 자연스럽게 대화를 마무리하는 느낌으로 답변하세요.
+3. 대화는 최대 ${currentMaxTurns}턴까지만 가능하며, 자연스럽게 대화를 마무리하는 느낌으로 답변하세요.
 4. 반응 수위 지침:
    - 대화 초기나 어색한 사이일 때는 예의를 지키며 적당한 거리감을 유지하세요.
    - 대화가 진행되며 분위기가 무르익거나 현재 상황이 로맨틱할 경우, 아래 수준의 반응을 허용합니다:
@@ -125,7 +129,8 @@ ${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
     freeTalkHistory.push({ role: "system", content: systemPrompt });
     
     chatContainer.style.display = 'block';
-    turnCountEl.textContent = MAX_FREE_TALK_TURNS;
+    chatSendBtn.textContent = scene.buttonText || "말하기";
+    turnCountEl.textContent = currentMaxTurns;
     
     if (scene.text) {
         typeText(scene.text);
@@ -152,11 +157,11 @@ function typeText(text) {
 
 async function sendChatMessage() {
     const text = chatInput.value.trim();
-    if (!text || freeTalkTurns >= MAX_FREE_TALK_TURNS || isTyping) return;
+    if (!text || freeTalkTurns >= currentMaxTurns || isTyping) return;
     
     chatInput.value = "";
     freeTalkTurns++;
-    turnCountEl.textContent = MAX_FREE_TALK_TURNS - freeTalkTurns;
+    turnCountEl.textContent = currentMaxTurns - freeTalkTurns;
     
     // 사용자 메시지 표시
     nameTagEl.textContent = "나";
@@ -165,6 +170,7 @@ async function sendChatMessage() {
     
     // 로딩 표시
     chatSendBtn.disabled = true;
+    const originalBtnText = chatSendBtn.textContent;
     chatSendBtn.textContent = "생각 중";
     
     try {
@@ -183,7 +189,10 @@ async function sendChatMessage() {
             await typeText(reply); // 타이핑이 끝날 때까지 기다립니다.
             freeTalkHistory.push({ role: "assistant", content: reply });
             
-            if (freeTalkTurns >= MAX_FREE_TALK_TURNS) {
+            if (freeTalkTurns >= currentMaxTurns) {
+                // 대화 완료 플래그 설정 (선택지에서 제거하기 위함)
+                gameState[`messaged_${currentSceneId}`] = true;
+                
                 // 모든 타이핑이 끝난 후 0.5초 뒤에 안내 문구 표시
                 setTimeout(() => {
                     chatContainer.style.display = 'none';
@@ -197,7 +206,7 @@ async function sendChatMessage() {
         messageEl.textContent = "대화 도중 오류가 발생했습니다.";
     } finally {
         chatSendBtn.disabled = false;
-        chatSendBtn.textContent = "말하기";
+        chatSendBtn.textContent = originalBtnText;
     }
 }
 

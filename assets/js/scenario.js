@@ -2248,7 +2248,37 @@
         background: "assets/images/background/school.png",
         character: null,
         night: true,
-        next: "end_demo_real"
+        next: "home_arrival"
+    },
+    "home_arrival": {
+        name: "나",
+        text: "(터벅터벅 걸어 집에 도착했다. 현관문을 열자 익숙한 공기가 나를 반긴다. 오늘 하루도 정말 길었어...)",
+        background: "assets/images/background/room_my.png",
+        next: "home_room"
+    },
+    "home_room": {
+        name: "나",
+        text: "(방으로 들어와 가방을 내려놓고, 전등 스위치를 내렸다. 어둠 속에서 창밖의 가로등 불빛만이 방 안을 희미하게 비춘다.)",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        next: "home_bed"
+    },
+    "home_bed": {
+        name: "나",
+        text: "(침대에 몸을 던졌다. 푹신한 매트리스가 내 몸을 감싸 안는다. 몸은 피곤하지만, 머릿속은 오늘 있었던 일들로 가득 차 잠이 오지 않는다.)",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        next: "home_phone"
+    },
+    "home_phone": {
+        name: "나",
+        text: "(천장을 멍하니 바라보다가, 머리맡에 둔 스마트폰을 집어 들었다. 화면의 밝은 빛이 눈을 찌른다. 누군가에게 메시지라도 보내볼까... 아니면 그냥 이대로 잠을 청할까?)",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        choices: [
+            { text: "연락해보기", next: "send_message_select" },
+            { text: "그냥 잔다", next: "end_demo_real" }
+        ]
     },
     "end_demo_real": {
         name: "시스템",
@@ -2277,5 +2307,88 @@
         choices: [
             { text: "처음으로 돌아가기", next: "index.html" }
         ]
+    },
+    "send_message_select": {
+        name: "시스템",
+        text: "누구에게 메시지를 보낼까요?",
+        choices: [
+            { text: "서연", next: "msg_seyoun", excludeCondition: "messaged_msg_seyoun" },
+            { text: "유나", next: "msg_yuna", excludeCondition: "messaged_msg_yuna" },
+            { text: "다인", next: "msg_dain", excludeCondition: "messaged_msg_dain" },
+            { text: "담임선생님", next: "msg_teacher", excludeCondition: "messaged_msg_teacher" },
+            { text: "양호선생님", next: "msg_nurse", excludeCondition: "messaged_msg_nurse" },
+            { text: "뒤로 가기", next: "home_phone" }
+        ]
+    },
+    "msg_seyoun": {
+        type: "free_talk",
+        name: "서연",
+        text: "(서연이에게 메시지를 보냈습니다.) \"전학생 군? 이 시간에 웬일이야?\"",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        thinking: true,
+        buttonText: "전송",
+        maxTurns: 10,
+        context: "늦은 밤, 주인공의 방에서 휴대폰 메시지로 대화를 나누는 상황",
+        personality: "다정하고 상냥한 학생회장. 밤에 온 메시지에 조금 설레하고 있음.",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "home_phone"
+    },
+    "msg_yuna": {
+        type: "free_talk",
+        name: "유나",
+        text: "(유나에게 메시지를 보냈습니다.) \"...이 시간에 메시지라니, 너도 참 잠이 없네.\"",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        thinking: true,
+        buttonText: "전송",
+        maxTurns: 10,
+        context: "늦은 밤, 주인공의 방에서 휴대폰 메시지로 대화를 나누는 상황",
+        personality: "신비롭고 차가운 소녀. 하지만 메시지를 주고받는 것에 묘한 즐거움을 느낌.",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "home_phone"
+    },
+    "msg_dain": {
+        type: "free_talk",
+        name: "다인",
+        text: "(다인이에게 메시지를 보냈습니다.) \"오! 전학생! 아직 안 자고 뭐 해? 나랑 배구 영상이라도 볼래?\"",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        thinking: true,
+        buttonText: "전송",
+        maxTurns: 10,
+        context: "늦은 밤, 주인공의 방에서 휴대폰 메시지로 대화를 나누는 상황",
+        personality: "에너지 넘치고 활기찬 배구부 에이스. 밤에도 텐션이 높음.",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "home_phone"
+    },
+    "msg_teacher": {
+        type: "free_talk",
+        name: "선생님",
+        text: "(선생님께 메시지를 보냈습니다.) \"음, 전학생 군? 이 시간에 무슨 일이니? 학교생활에 어려운 점이라도 있는 거야?\"",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        thinking: true,
+        buttonText: "전송",
+        maxTurns: 10,
+        context: "늦은 밤, 주인공의 방에서 휴대폰 메시지로 대화를 나누는 상황",
+        personality: "학생을 걱정하는 성실한 담임 선생님. 밤늦게 온 연락에 조금 당황했지만 친절하게 응대함.",
+        character: "assets/images/characters/teacher.png",
+        next: "home_phone"
+    },
+    "msg_nurse": {
+        type: "free_talk",
+        name: "양호선생님",
+        text: "(양호선생님께 메시지를 보냈습니다.) \"어머... 이 시간에 메시지라니. 잠이 안 오는 거니? 아니면... 내 생각이 난 거야?\"",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        thinking: true,
+        buttonText: "전송",
+        maxTurns: 10,
+        context: "늦은 밤, 주인공의 방에서 휴대폰 메시지로 대화를 나누는 상황",
+        personality: "대담하고 도발적인 양호 선생님. 밤에 온 메시지를 기회 삼아 주인공을 더욱 유혹함.",
+        extra_guideline: "성숙한 어른으로서 주인공을 대놓고 유혹하며 아슬아슬한 분위기를 조성하세요. 사용자의 성숙한 농담이나 도발적인 발언(섹드립 등)도 당황하지 않고 여유롭게 받아치며, 오히려 주인공을 더 당황하게 만들 정도로 대담하고 도발적인 반응을 보이세요.",
+        character: "assets/images/characters/nurse.png",
+        next: "home_phone"
     }
 };
