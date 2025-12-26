@@ -44,8 +44,8 @@ const SCENARIO = {
         text: "\"I'm the student council president, Seoyeon. I came to meet you at the teacher's request. Nice to meet you!\"",
         choices: [
             { text: "Yeah, nice to meet you. The school is so big that I was getting a bit lost.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "The student council president herself came to meet me? Am I getting some special treatment?", next: "path_tease_1", stats: { Seoyeon: { intimacy: 5 } } },
-            { text: "You... are really pretty. (The truth slipped out without me realizing!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 10, intimacy: 5 } } },
+            { text: "The student council president herself came to meet me? Am I getting some special treatment?", next: "path_tease_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "You... are really pretty. (The truth slipped out without me realizing!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
             { text: "(I'm too nervous to speak. I just stare at her blankly...)", next: "path_silent_1", stats: { Seoyeon: { affinity: 2 } } }
         ]
     },
@@ -574,8 +574,8 @@ const SCENARIO = {
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 5 } } },
-            { text: "Familiar... have you seen me before?", next: "yuna_scent", stats: { Yuna: { intimacy: 5 } } },
-            { text: "You look somehow dangerous. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { intimacy: 10 } } }
+            { text: "Familiar... have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 5 } } },
+            { text: "You look somehow dangerous. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 10 } } }
         ]
     },
     "yuna_secret": {
@@ -656,7 +656,7 @@ const SCENARIO = {
         choices: [
             { text: "My name is '{name}'.", next: "dain_name_share", setFlag: "knowsName_Dain", stats: { Dain: { affinity: 5 } } },
             { text: "I'm not that good at exercise...", next: "lunch_dain_4", stats: { Dain: { affinity: 2 } } },
-            { text: "Okay, let's see who's better!", next: "lunch_dain_4", stats: { Dain: { intimacy: 5 } } }
+            { text: "Okay, let's see who's better!", next: "lunch_dain_4", stats: { Dain: { affinity: 5 } } }
         ]
     },
     "dain_name_share": {

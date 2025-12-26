@@ -44,8 +44,8 @@
         text: "\"나는 학생회장 '서연'이라고 해. 선생님께 부탁받아서 널 마중 나왔어. 만나서 반가워!\"",
         choices: [
             { text: "응, 반가워. 학교가 너무 커서 길을 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "학생회장이 직접 마중까지? 내가 좀 특별한 대우를 받는 건가?", next: "path_tease_1", stats: { Seoyeon: { intimacy: 5 } } },
-            { text: "너... 정말 예쁘다. (나도 모르게 본심이 튀어나와 버렸다!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 10, intimacy: 5 } } },
+            { text: "학생회장이 직접 마중까지? 내가 좀 특별한 대우를 받는 건가?", next: "path_tease_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "너... 정말 예쁘다. (나도 모르게 본심이 튀어나와 버렸다!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
             { text: "(긴장해서 아무 말도 하지 못한다.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 2 } } }
         ]
     },
@@ -615,8 +615,8 @@
         text: "(그녀의 보랏빛 눈동자가 나를 꿰뚫어 보는 듯하다.)",
         choices: [
             { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 5 } } },
-            { text: "낯익다니... 나를 본 적 있어?", next: "yuna_scent", stats: { Yuna: { intimacy: 5 } } },
-            { text: "너, 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { intimacy: 10 } } }
+            { text: "낯익다니... 나를 본 적 있어?", next: "yuna_scent", stats: { Yuna: { affinity: 5 } } },
+            { text: "너, 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { affinity: 10 } } }
         ]
     },
     "yuna_secret": {
@@ -696,7 +696,7 @@
         choices: [
             { text: "내 이름은 '{name}'야.", next: "dain_name_share", setFlag: "knowsName_다인", stats: { Dain: { affinity: 5 } } },
             { text: "운동은 별로 자신 없는데...", next: "lunch_dain_4", stats: { Dain: { affinity: 2 } } },
-            { text: "좋아, 누가 더 잘하는지 보자고!", next: "lunch_dain_4", stats: { Dain: { intimacy: 5 } } }
+            { text: "좋아, 누가 더 잘하는지 보자고!", next: "lunch_dain_4", stats: { Dain: { affinity: 5 } } }
         ]
     },
     "dain_name_share": {
