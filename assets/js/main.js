@@ -220,13 +220,13 @@ async function renderScene(sceneId) {
         startFreeTalk(scene);
     } else if (scene.type === 'input') {
         dialogueBox.style.pointerEvents = 'none'; // 클릭이 입력창으로 전달되도록 설정
-        await typeText(scene.text);
+        await typeText(scene.text, scene.name);
         nameInputContainer.style.display = 'block';
         playerNameInput.value = "";
         playerNameInput.focus();
     } else {
         // 텍스트 타이핑 효과
-        await typeText(scene.text);
+        await typeText(scene.text, scene.name);
         if (!scene.choices) {
             nextIndicator.style.display = 'block';
         }
@@ -810,14 +810,20 @@ ${charAddressingGuideline}${datingGuideline}
     turnCountEl.textContent = currentMaxTurns;
     
     if (scene.text) {
-        typeText(scene.text);
+        typeText(scene.text, scene.name);
         freeTalkHistory.push({ role: "assistant", content: scene.text });
     }
 }
 
-function typeText(text) {
+function typeText(text, charName) {
+    const isEn = document.documentElement.lang === 'en';
     // 이름 치환
-    const processedText = text.replace(/{name}/g, gameState.playerName);
+    let processedText = text.replace(/{name}/g, gameState.playerName);
+    
+    // {name?} 처리: 이름을 알면 이름, 모르면 '전학생'
+    const nameKnown = charName && gameState[`knowsName_${charName}`];
+    const defaultTitle = isEn ? "Transfer Student" : "전학생";
+    processedText = processedText.replace(/{name\?}/g, nameKnown ? gameState.playerName : defaultTitle);
     
     return new Promise((resolve) => {
         isTyping = true;
@@ -911,7 +917,7 @@ async function sendChatMessage() {
 
             const scene = SCENARIO[currentSceneId];
             nameTagEl.textContent = scene.name;
-            await typeText(reply); // 타이핑이 끝날 때까지 기다립니다.
+            await typeText(reply, scene.name); // 타이핑이 끝날 때까지 기다립니다.
             freeTalkHistory.push({ role: "assistant", content: reply });
             
             // 대화 기록 저장 (시스템 프롬프트 제외하고 최근 10개 정도만 유지하여 컨텍스트 최적화)
@@ -1019,10 +1025,26 @@ function checkChoices() {
                         }
                     }
                 }
-                if (choice.next === 'index.html') {
+
+                let nextScene = choice.next;
+
+                // 호감도에 따른 결과 분기 처리
+                if (choice.affinityBranches && choice.affinityChar && gameState.stats[choice.affinityChar]) {
+                    const currentAff = gameState.stats[choice.affinityChar].affinity;
+                    // 높은 문턱부터 체크하여 조건에 맞는 가장 높은 분기를 선택
+                    const sortedBranches = [...choice.affinityBranches].sort((a, b) => b.minAffinity - a.minAffinity);
+                    for (const branch of sortedBranches) {
+                        if (currentAff >= branch.minAffinity) {
+                            nextScene = branch.next;
+                            break;
+                        }
+                    }
+                }
+
+                if (nextScene === 'index.html') {
                     location.href = 'index.html';
                 } else {
-                    renderScene(choice.next);
+                    renderScene(nextScene);
                 }
             };
             choiceContainer.appendChild(btn);

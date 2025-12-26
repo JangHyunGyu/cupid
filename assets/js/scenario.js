@@ -213,7 +213,7 @@
     },
     "hallway_talk_listen_2": {
         name: "서연",
-        text: "\"내 설명을 이렇게 잘 들어주니 정말 고마워. 전학생 군은 참 성실한 person인 것 같네! 이런 태도라면 학교생활도 금방 적응할 거야.\"",
+        text: "\"내 설명을 이렇게 잘 들어주니 정말 고마워. {name?}은 참 성실한 사람인 것 같네! 이런 태도라면 학교생활도 금방 적응할 거야.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
@@ -484,10 +484,25 @@
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "와, 정말 맛있어 보여! 서연이는 요리도 잘하는구나.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "아... 아 해줘. (용기를 내어 본다!)", next: "rooftop_talk_ah", stats: { Seoyeon: { affinity: 15 } } },
+            { 
+                text: "아... 아 해줘. (용기를 내어 본다!)", 
+                next: "rooftop_talk_ah_fail", 
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 40, next: "rooftop_talk_ah" }
+                ],
+                stats: { Seoyeon: { affinity: 5 } } 
+            },
             { text: "이렇게 정성 가득한 도시락은 처음이야. 정말 고마워.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } },
             { text: "별로 맛없어 보이는데... 그냥 매점 가서 빵이나 사 먹을걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -30 } } }
         ]
+    },
+    "rooftop_talk_ah_fail": {
+        name: "서연",
+        text: "(서연이의 얼굴이 순식간에 굳어진다. 그녀는 당황한 듯 젓가락을 내려놓는다.) \"어... 그건 좀... {name?}, 우리 아직 그 정도로 친한 건 아니지 않아? 장난이 좀 심한 것 같아.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: -15 } },
+        next: "rooftop_2"
     },
     "rooftop_talk_rude": {
         name: "서연",
@@ -503,7 +518,7 @@
     },
     "rooftop_talk_food_2": {
         name: "서연",
-        text: "\"정말? 다행이다! 사실 전학생 군이 좋아할지 걱정돼서 어제 메뉴 고민하느라 잠도 설쳤거든. 많이 먹어, 아직 많이 남았으니까!\"",
+        text: "\"정말? 다행이다! 사실 {name?}이 좋아할지 걱정돼서 어제 메뉴 고민하느라 잠도 설쳤거든. 많이 먹어, 아직 많이 남았으니까!\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_2"
     },
@@ -539,7 +554,7 @@
     },
     "rooftop_2_2": {
         name: "서연",
-        text: "\"저기, 전학생 군... 사실 나, 처음 널 봤을 때부터 왠지 모르게... 예전부터 알고 지냈던 사이 같은 기분이 들었어. 너는 어때?\"",
+        text: "\"저기, {name?}... 사실 나, 처음 널 봤을 때부터 왠지 모르게... 예전부터 알고 지냈던 사이 같은 기분이 들었어. 너는 어때?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_free_talk"
     },
@@ -593,7 +608,7 @@
     },
     "rooftop_comfortable_2": {
         name: "서연",
-        text: "\"편안하다니 다행이야. 나도 너랑 있으면 학생회장이라는 짐을 잠시 내려놓을 수 있는 것 같아. 고마워, 전학생 군.\"",
+        text: "\"편안하다니 다행이야. 나도 너랑 있으면 학생회장이라는 짐을 잠시 내려놓을 수 있는 것 같아. 고마워, {name?}.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "seyoun_contact_exchange"
     },
@@ -761,7 +776,7 @@
     },
     "lunch_dain_gym_2": {
         name: "다인",
-        text: "\"자, 여기가 내 구역이야! 전학생, 준비됐어? 살살 봐주지 않을 거니까 각오하라구!\"",
+        text: "\"자, 여기가 내 구역이야! {name?}, 준비됐어? 살살 봐주지 않을 거니까 각오하라구!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_active.png",
         setFlag: "metDain",
@@ -831,7 +846,7 @@
     "dain_free_talk": {
         type: "free_talk",
         name: "다인",
-        text: "\"와, 전학생! 가까이서 보니까 더 반가운데? 나한테 궁금한 거 없어? 운동이라든가, 학교생활이라든가!\"",
+        text: "\"와, {name?}! 가까이서 보니까 더 반가운데? 나한테 궁금한 거 없어? 운동이라든가, 학교생활이라든가!\"",
         context: "방과 후 노을 지는 체육관, 연습을 마친 다인과 대화를 나누는 상황",
         personality: "털털하고 시원시원한 성격의 배구부 에이스. 운동을 사랑하며 주인공에게 호의적이고 에너지가 넘침.",
         character: "assets/images/characters/dain_sweat.png",
@@ -839,7 +854,7 @@
     },
     "after_dain_3": {
         name: "다인",
-        text: "\"어이, 전학생! 여기까지 웬일이야? 나 연습하는 거 구경하러 온 거야? 후훗, 내 멋진 모습에 반하기라도 한 건 아니지?\"",
+        text: "\"어이, {name?}! 여기까지 웬일이야? 나 연습하는 거 구경하러 온 거야? 후훗, 내 멋진 모습에 반하기라도 한 건 아니지?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
@@ -956,7 +971,7 @@
     },
     "dain_contact_exchange": {
         name: "다인",
-        text: "(다인이가 떡볶이 국물을 닦으며 장난스럽게 스마트폰을 흔들어 보인다.) \"야, 전학생! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처 정도는 있어야 하지 않겠어? 번호 찍어봐!\"",
+        text: "(다인이가 떡볶이 국물을 닦으며 장난스럽게 스마트폰을 흔들어 보인다.) \"야, {name?}! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처 정도는 있어야 하지 않겠어? 번호 찍어봐!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -1013,7 +1028,7 @@
     },
     "after_seoyeon_3": {
         name: "서연",
-        text: "\"어? 전학생 군! 이 시간에 어쩐 일이야? 설마... 나 기다려준 거야?\"",
+        text: "\"어? {name?}! 이 시간에 어쩐 일이야? 설마... 나 기다려준 거야?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "응, 같이 하교하고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 10 } } },
@@ -1073,7 +1088,7 @@
     },
     "after_seoyeon_cafe_2_2": {
         name: "서연",
-        text: "\"하아~ 이제야 좀 살 것 같아. 오늘 정말 고마웠어, 전학생 군.\"",
+        text: "\"하아~ 이제야 좀 살 것 같아. 오늘 정말 고마웠어, {name?}.\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe_3"
@@ -1096,7 +1111,7 @@
     },
     "after_seoyeon_promise_2": {
         name: "서연",
-        text: "\"약속한 거다? 어기면 안 돼! 그럼 내일 봐, 전학생 군. 조심히 들어가!\"",
+        text: "\"약속한 거다? 어기면 안 돼! 그럼 내일 봐, {name?}. 조심히 들어가!\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "evening_home"
     },
@@ -1142,7 +1157,7 @@
     },
     "after_yuna_3": {
         name: "유나",
-        text: "\"아, 전학생... 방과 후의 도서관은 더 고요해서 좋아. 넌 무슨 일로 온 거야?\"",
+        text: "\"아, {name?}... 방과 후의 도서관은 더 고요해서 좋아. 넌 무슨 일로 온 거야?\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -1373,7 +1388,7 @@
     },
     "evening_message_seoyeon_2_2": {
         name: "나",
-        text: "\"[서연]: 아니야, 나도 오늘 정말 즐거웠어! 전학생 군 덕분에 학생회 일도 빨리 끝났고. 내일 학교에서 봐! 잘 자~ (하트 이모티콘)\"",
+        text: "\"[서연]: 아니야, 나도 오늘 정말 즐거웠어! {name?} 덕분에 학생회 일도 빨리 끝났고. 내일 학교에서 봐! 잘 자~ (하트 이모티콘)\"",
         night: true,
         next: "day2_start"
     },
@@ -1666,8 +1681,31 @@
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "감사합니다, 담임선생님!", next: "teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { 
+                text: "학교 일 아니어도... 사적으로 연락해도 돼요?", 
+                next: "teacher_contact_private_fail", 
+                affinityChar: "Teacher",
+                affinityBranches: [
+                    { minAffinity: 50, next: "teacher_contact_private" }
+                ],
+                setFlags: ["has_number_teacher", "has_any_contact"] 
+            },
             { text: "아, 괜찮습니다.", next: "teacher_contact_fail", stats: { Teacher: { affinity: -10 } } }
         ]
+    },
+    "teacher_contact_private": {
+        name: "담임선생님",
+        text: "(선생님의 얼굴이 순식간에 붉어진다. 그녀는 당황한 듯 서류 뭉치를 뒤적거린다.) \"어, 어머... 사, 사적인 연락? 그, 글쎄... 뭐, 정말 급한 일이 있다면... 안 될 건 없지만...\"",
+        character: "assets/images/characters/teacher_shy.png",
+        stats: { Teacher: { affinity: 20 } },
+        next: "day2_lunch_choice"
+    },
+    "teacher_contact_private_fail": {
+        name: "담임선생님",
+        text: "(선생님이 엄격한 표정으로 나를 쳐다보신다.) \"전학생 군, 농담이 지나치구나. 선생님과 학생 사이에 사적인 연락이라니... 공과 사는 확실히 구분해야지. 오늘은 이만 가보렴.\"",
+        character: "assets/images/characters/teacher_angry.png",
+        stats: { Teacher: { affinity: -20 } },
+        next: "day2_lunch_choice"
     },
     "teacher_contact_success": {
         name: "담임선생님",
