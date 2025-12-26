@@ -1587,25 +1587,25 @@
     "day2_lesson_trap": {
         name: "담임선생님",
         text: "(교실이 순식간에 조용해진다. 담임선생님의 얼굴이 붉게 달아오른다.)",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_angry.png",
         next: "day2_lesson_trap_2"
     },
     "day2_lesson_trap_2": {
         name: "담임선생님",
         text: "\"너... 너 지금 수업 시간에 무슨 소리를 하는 거니? 전학 첫날부터 장난이 너무 심하구나! 당장 복도로 나가서 손들고 서 있어!\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_angry.png",
         next: "day2_lunch_choice"
     },
     "day2_lesson_rude": {
         name: "담임선생님",
         text: "(교실 전체가 얼어붙는다. 담임선생님의 얼굴이 붉으락푸르락해지며 부들부들 떨린다.)",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_angry.png",
         next: "day2_lesson_rude_2"
     },
     "day2_lesson_rude_2": {
         name: "담임선생님",
         text: "\"너... 너 지금 뭐라고 했니? 전학 첫날부터 이게 무슨 버릇이야! 당장 복도로 나가서 손들고 서 있어!\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_angry.png",
         next: "day2_lunch_choice"
     },
     "day2_lesson_solve_active": {

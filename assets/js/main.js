@@ -68,15 +68,21 @@ const CHARACTER_EXPRESSIONS = {
         "normal": "assets/images/characters/dain_nomal.png",
         "shy": "assets/images/characters/dain_shy.png",
         "active": "assets/images/characters/dain_active.png",
-        "sweat": "assets/images/characters/dain_sweat.png",
-        "shirt": "assets/images/characters/dain_shirt.png"
+        "sweat": "assets/images/characters/dain_sweat.png"
     },
     "Dain": {
         "normal": "assets/images/characters/dain_nomal.png",
         "shy": "assets/images/characters/dain_shy.png",
         "active": "assets/images/characters/dain_active.png",
-        "sweat": "assets/images/characters/dain_sweat.png",
-        "shirt": "assets/images/characters/dain_shirt.png"
+        "sweat": "assets/images/characters/dain_sweat.png"
+    },
+    "담임선생님": {
+        "normal": "assets/images/characters/teacher.png",
+        "angry": "assets/images/characters/teacher_angry.png"
+    },
+    "Teacher": {
+        "normal": "assets/images/characters/teacher.png",
+        "angry": "assets/images/characters/teacher_angry.png"
     }
 };
 
