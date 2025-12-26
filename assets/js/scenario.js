@@ -44,9 +44,7 @@
         text: "\"나는 학생회장 '서연'이라고 해. 담임선생님께 부탁받아서 널 마중 나왔어. 만나서 반가워!\"",
         choices: [
             { text: "응, 반가워. 학교가 너무 커서 길을 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "학생회장이 직접 마중까지? 내가 좀 특별한 대우를 받는 건가?", next: "path_tease_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "너... 정말 예쁘다. (나도 모르게 본심이 튀어나와 버렸다!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "(긴장해서 아무 말도 하지 못한다.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 2 } } },
             { text: "아, 그래? 근데 좀 비켜줄래? 나 바쁘거든.", next: "path_rude_1", stats: { Seoyeon: { affinity: -10 } } }
         ]
     },
@@ -224,9 +222,7 @@
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "원예부도 끌리는데? 꽃보다 예쁜 부장이 있다면 더더욱.", next: "path_club_flower", stats: { Seoyeon: { affinity: 8 } } },
             { text: "아직은 잘 모르겠어. 학교생활에 좀 적응하고 나서 결정할게.", next: "path_normal_2" },
-            { text: "동아리보다는... 서연이 너에 대해 더 알고 싶어. (직구!)", next: "path_direct_2", stats: { Seoyeon: { affinity: 12 } } },
             { text: "귀찮게 동아리는 무슨... 그냥 혼자 있을래.", next: "path_rude_2", stats: { Seoyeon: { affinity: -10 } } }
         ]
     },
@@ -429,9 +425,7 @@
         choices: [
             { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone", setFlag: "metYuna" },
-            { text: "체육관 쪽에서 들려오는 배구공 소리를 따라가 본다.", next: "lunch_dain", setFlag: "metDain" },
-            { text: "매점으로 달려가 전설의 '초코 소라빵'을 사 먹는다.", next: "lunch_store" },
-            { text: "교실에 남아서 부족한 잠을 보충한다. (어제 너무 설쳤어...)", next: "lunch_sleep" }
+            { text: "체육관 쪽에서 들려오는 배구공 소리를 따라가 본다.", next: "lunch_dain", setFlag: "metDain" }
         ]
     },
     "lunch_seoyeon": {
