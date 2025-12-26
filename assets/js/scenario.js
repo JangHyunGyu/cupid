@@ -839,7 +839,7 @@
         name: "나",
         text: "(다인이의 연습이 끝날 때까지 운동장 스탠드에 앉아 그녀를 지켜보았다. 노을이 지고 어둠이 깔릴 때까지 그녀의 열정은 식을 줄 몰랐다.)",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/dain_sweat.png",
+        character: "assets/images/characters/dain_active.png",
         sunset: true,
         next: "after_dain_end_2"
     },

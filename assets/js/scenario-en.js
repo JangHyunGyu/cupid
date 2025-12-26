@@ -790,7 +790,7 @@ const SCENARIO = {
         name: "Me",
         text: "(I sat on the playground stands and watched Dain until her practice was over. Her passion didn't seem to cool down until the sun set and darkness fell.)",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/dain_sweat.png",
+        character: "assets/images/characters/dain_active.png",
         sunset: true,
         next: "after_dain_end_2"
     },
