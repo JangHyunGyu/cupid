@@ -41,7 +41,7 @@
     },
     "intro_3": {
         name: "서연",
-        text: "\"나는 학생회장 '서연'이라고 해. 선생님께 부탁받아서 널 마중 나왔어. 만나서 반가워!\"",
+        text: "\"나는 학생회장 '서연'이라고 해. 담임선생님께 부탁받아서 널 마중 나왔어. 만나서 반가워!\"",
         choices: [
             { text: "응, 반가워. 학교가 너무 커서 길을 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "학생회장이 직접 마중까지? 내가 좀 특별한 대우를 받는 건가?", next: "path_tease_1", stats: { Seoyeon: { affinity: 5 } } },
@@ -81,7 +81,7 @@
     },
     "path_blush_1_2": {
         name: "서연",
-        text: "\"에...? 그, 갑자기 무슨 소리를 하는 거야! 전학생은 다 너처럼 이렇게... 능글맞니? 어서 따라오기나 해! 늦으면 선생님께 혼난다구!\"",
+        text: "\"에...? 그, 갑자기 무슨 소리를 하는 거야! 전학생은 다 너처럼 이렇게... 능글맞니? 어서 따라오기나 해! 늦으면 담임선생님께 혼난다구!\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },
@@ -272,7 +272,7 @@
         next: "classroom_2"
     },
     "classroom_2": {
-        name: "선생님",
+        name: "담임선생님",
         text: "(교탁 앞에 서자 수십 개의 시선이 일제히 나에게 꽂힌다. 호기심 어린 눈빛, 경계하는 눈빛... 서연이는 내 옆에서 든든하게 미소 지으며 나를 지켜봐 주고 있다.)",
         background: "assets/images/background/room_school.png",
         characters: {
@@ -282,33 +282,33 @@
         next: "classroom_2_2"
     },
     "classroom_2_2": {
-        name: "선생님",
-        text: "(교실 안의 공기가 무겁게 느껴진다. 선생님이 교탁을 탁탁 치며 주의를 집중시킨다.)",
+        name: "담임선생님",
+        text: "(교실 안의 공기가 무겁게 느껴진다. 담임선생님이 교탁을 탁탁 치며 주의를 집중시킨다.)",
         character: "assets/images/characters/teacher.png",
         next: "teacher_free_talk"
     },
     "teacher_free_talk": {
         type: "free_talk",
-        name: "선생님",
-        text: "\"자, 자기소개 하기 전에... 나한테 궁금한 거 있니? 사실 나도 전학 온 너만큼이나 긴장되네. 후훗, 선생님이 이래서야 안 되겠지?\"",
-        context: "교탁 앞에서 전학생으로서 첫 인사를 하기 직전, 담임 선생님과 대화를 나누는 상황",
+        name: "담임선생님",
+        text: "\"자, 자기소개 하기 전에... 나한테 궁금한 거 있니? 사실 나도 전학 온 너만큼이나 긴장되네. 후훗, 담임선생님이 이래서야 안 되겠지?\"",
+        context: "교탁 앞에서 전학생으로서 첫 인사를 하기 직전, 담임선생님과 대화를 나누는 상황",
         personality: "공과 사가 뚜렷한 전문적인 교사지만, 사실 허당끼가 있고 주인공의 예상치 못한 어른스러운 모습에 가슴 설레어 함. 은근히 주인공에게 의지하고 싶어 하는 '갭 모에'가 있음.",
         character: "assets/images/characters/teacher.png",
         next: "classroom_2_3"
     },
     "classroom_2_3": {
-        name: "선생님",
+        name: "담임선생님",
         text: "\"자, 다들 주목! 오늘부터 우리와 함께하게 된 전학생이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_선생님", stats: { Teacher: { affinity: 5 } } },
+            { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_담임선생님", stats: { Teacher: { affinity: 5 } } },
             { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlag: "personality_active", stats: { Teacher: { affinity: 2 } } },
             { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlag: "personality_quiet", stats: { Teacher: { affinity: 2 } } },
             { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -2 } } }
         ]
     },
     "teacher_name_share": {
-        name: "선생님",
+        name: "담임선생님",
         text: "\"오, {name}라고 하는구나. 이름이 참 예쁘네. 자, {name}야. 친구들에게 자기소개 한마디 부탁할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
@@ -1440,19 +1440,19 @@
         next: "day2_lesson"
     },
     "day2_lesson": {
-        name: "선생님",
+        name: "담임선생님",
         text: "(지루한 수학 수업이 이어진다. 칠판의 공식들이 눈에 들어오지 않는다.)",
         character: "assets/images/characters/teacher.png",
         next: "day2_lesson_2"
     },
     "day2_lesson_2": {
-        name: "선생님",
+        name: "담임선생님",
         text: "(창밖을 바라보며 생각에 잠겼다. 아이들의 활기찬 목소리가 멀리서 들려온다.)",
         character: "assets/images/characters/teacher.png",
         next: "day2_lesson_3"
     },
     "day2_lesson_3": {
-        name: "선생님",
+        name: "담임선생님",
         text: "\"자, 거기 전학생! 이 문제 한번 풀어볼까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
@@ -1495,7 +1495,7 @@
     },
     "day2_lesson_fail": {
         name: "아이들",
-        text: "(모르겠다고 하자 교실에 웃음이 터진다. 선생님은 다시 설명해주시고, 서연이는 나중에 가르쳐주겠다고 입모양으로 말한다.)",
+        text: "(모르겠다고 하자 교실에 웃음이 터진다. 담임선생님은 다시 설명해주시고, 서연이는 나중에 가르쳐주겠다고 입모양으로 말한다.)",
         character: null,
         next: "day2_lesson_fail_2"
     },
@@ -1506,23 +1506,23 @@
         next: "teacher_contact_exchange"
     },
     "teacher_contact_exchange": {
-        name: "선생님",
-        text: "(선생님이 나를 따로 부르더니 개인 연락처를 적어주신다.) \"힘든 일이 있으면 언제든 연락하렴.\"",
+        name: "담임선생님",
+        text: "(담임선생님이 나를 따로 부르더니 개인 연락처를 적어주신다.) \"힘든 일이 있으면 언제든 연락하렴.\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "감사합니다, 선생님!", next: "teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "감사합니다, 담임선생님!", next: "teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
             { text: "아, 괜찮습니다.", next: "teacher_contact_fail" }
         ]
     },
     "teacher_contact_success": {
-        name: "선생님",
-        text: "(선생님이 내 어깨를 다독여주신다.) \"그래, 부담 갖지 말고. 그럼 즐겁게 보내렴.\"",
+        name: "담임선생님",
+        text: "(담임선생님이 내 어깨를 다독여주신다.) \"그래, 부담 갖지 말고. 그럼 즐겁게 보내렴.\"",
         character: "assets/images/characters/teacher.png",
         next: "day2_lunch_choice"
     },
     "teacher_contact_fail": {
-        name: "선생님",
-        text: "(선생님이 고개를 끄덕이신다.) \"그래, 도움이 필요하면 언제든 찾아오렴.\"",
+        name: "담임선생님",
+        text: "(담임선생님이 고개를 끄덕이신다.) \"그래, 도움이 필요하면 언제든 찾아오렴.\"",
         character: "assets/images/characters/teacher.png",
         next: "day2_lunch_choice"
     },

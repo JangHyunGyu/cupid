@@ -159,8 +159,8 @@ function startFreeTalk(scene) {
     
     // 캐릭터 스탯 가져오기 (한글 이름 대응)
     const charNameMap = {
-        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "선생님": "Teacher", "양호선생님": "Nurse",
-        "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
+        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "양호선생님": "Nurse",
+        "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Homeroom Teacher": "Teacher", "Nurse": "Nurse"
     };
     const charKey = charNameMap[scene.name] || scene.name;
     const charStats = gameState.stats[charKey] || { affinity: 0 };
@@ -170,13 +170,13 @@ function startFreeTalk(scene) {
         "Seoyeon": "The perfect student council president who is kind to everyone, but secretly has a lonely side and becomes very shy and 'Megadere' when alone with the protagonist. She values rules but sometimes wants to break them for the protagonist.",
         "Yuna": "A classic 'Kuudere' who is expressionless and cold, but shows a deep, obsessive interest in the protagonist's 'special light'. She occasionally drops cryptic, heart-fluttering lines and has a mysterious, protective aura.",
         "Dain": "A bright and energetic 'Genki' girl who treats the protagonist like a close friend, but gets easily flustered and 'Tsundere' when romance is mentioned. She is honest about her feelings but clumsy at expressing them.",
-        "Teacher": "A professional teacher who tries to maintain boundaries, but has a 'clumsy' side and secretly relies on the protagonist for emotional support. She is weak to the protagonist's unexpected maturity.",
+        "Homeroom Teacher": "A professional homeroom teacher who tries to maintain boundaries, but has a 'clumsy' side and secretly relies on the protagonist for emotional support. She is weak to the protagonist's unexpected maturity.",
         "Nurse": "A mature and seductive 'Onee-san' type who enjoys teasing the protagonist with provocative words, but actually has a very protective and caring nature. She enjoys seeing the protagonist get flustered."
     } : {
         "서연": "모두에게 친절한 완벽한 학생회장이지만, 사실 외로움을 잘 타며 주인공과 단둘이 있을 때는 부끄러움을 많이 타는 '메가데레' 스타일. 규칙을 중시하지만 주인공을 위해서라면 가끔 규칙을 어기고 싶어 함.",
         "유나": "무표정하고 차가운 '쿨데레'의 정석. 주인공의 '특별한 빛'에 깊고 집착적인 관심을 보이며, 가끔씩 툭 던지는 신비롭고 설레는 대사가 특징. 주인공을 지키려는 묘한 분위기를 풍김.",
         "다인": "밝고 활기찬 '현모양처형 츤데레'. 주인공을 편한 친구처럼 대하지만, 로맨틱한 분위기가 되면 금방 얼굴이 빨개지며 당황함. 감정에 솔직하지만 표현이 서툰 귀여운 매력이 있음.",
-        "선생님": "공과 사가 뚜렷한 전문적인 교사지만, 사실 허당끼가 있고 주인공의 예상치 못한 어른스러운 모습에 가슴 설레어 함. 은근히 주인공에게 의지하고 싶어 하는 '갭 모에'가 있음.",
+        "담임선생님": "공과 사가 뚜렷한 전문적인 교사지만, 사실 허당끼가 있고 주인공의 예상치 못한 어른스러운 모습에 가슴 설레어 함. 은근히 주인공에게 의지하고 싶어 하는 '갭 모에'가 있음.",
         "양호선생님": "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만, 사실 누구보다 주인공을 아끼고 보호하려 함. 주인공이 당황하는 모습에 귀여움을 느낌."
     };
 
@@ -205,7 +205,7 @@ function startFreeTalk(scene) {
      * -1 ~ -3: Being a bit gloomy/down in the chat, not reacting to her jokes, or being too passive.
      * -4 ~ -7: Being a "killjoy", acting too cool/aloof to the point of being rude, or dismissing her energetic invitations.
      * -8 ~ -10: Being overly serious/boring to the point of making her uncomfortable, or ignoring her advances completely.`,
-        "Teacher": `
+        "Homeroom Teacher": `
      * +8 ~ +10: Showing unexpected maturity in your words, relying on her as a person, or romantic boldness that challenges the teacher-student boundary.
      * +4 ~ +7: Offering to help with her work, noticing she looks tired and showing concern, or polite but friendly conversation.
      * +1 ~ +3: Proper student etiquette in speech, answering her questions sincerely, or simple respect.
@@ -241,7 +241,7 @@ function startFreeTalk(scene) {
      * -1 ~ -3: 채팅에서 우울한 분위기 풍기기, 농담에 반응하지 않고 단답하기, 너무 수동적인 태도.
      * -4 ~ -7: 분위기 깨는 말(갑분싸), 너무 차갑게 거리 두는 말투, 그녀의 활기찬 제안을 귀찮다는 듯 거절하기.
      * -8 ~ -10: 지나치게 진지해서 대화를 무겁게 만들기, 그녀의 활기찬 대시를 대놓고 무시하거나 비난하기.`,
-        "선생님": `
+        "담임선생님": `
      * +8 ~ +10: 대화 중 예상치 못한 어른스러운 통찰력 보이기, 그녀를 한 명의 여성으로 대하는 대담한 고백이나 표현.
      * +4 ~ +7: 업무로 힘들어 보이는 그녀에게 위로의 말 건네기, 도와줄 것이 없는지 묻기, 격의 없으면서도 다정한 대화.
      * +1 ~ +3: 학생다운 예의 바른 말투, 질문에 성실하게 답변하기, 기본적인 존경심 표현.

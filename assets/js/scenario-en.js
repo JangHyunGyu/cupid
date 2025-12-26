@@ -41,7 +41,7 @@ const SCENARIO = {
     },
     "intro_3": {
         name: "Seoyeon",
-        text: "\"I'm the student council president, Seoyeon. I came to meet you at the teacher's request. Nice to meet you!\"",
+        text: "\"I'm the student council president, Seoyeon. I came to meet you at the homeroom teacher's request. Nice to meet you!\"",
         choices: [
             { text: "Yeah, nice to meet you. The school is so big that I was getting a bit lost.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "The student council president herself came to meet me? Am I getting some special treatment?", next: "path_tease_1", stats: { Seoyeon: { affinity: 5 } } },
@@ -263,7 +263,7 @@ const SCENARIO = {
         next: "classroom_2"
     },
     "classroom_2": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "(As I stand at the podium, dozens of gazes are fixed on me. Seoyeon stands beside me with a reassuring smile.)",
         background: "assets/images/background/room_school.png",
         characters: {
@@ -273,22 +273,22 @@ const SCENARIO = {
         next: "classroom_2_2"
     },
     "classroom_2_2": {
-        name: "Teacher",
-        text: "(The air in the classroom feels heavy. The teacher taps the podium to focus attention.)",
+        name: "Homeroom Teacher",
+        text: "(The air in the classroom feels heavy. The homeroom teacher taps the podium to focus attention.)",
         character: "assets/images/characters/teacher.png",
         next: "teacher_free_talk"
     },
     "teacher_free_talk": {
         type: "free_talk",
-        name: "Teacher",
-        text: "\"Now, before you introduce yourself... do you have any questions for me? Actually, I'm just as nervous as you are. Hehe, I guess a teacher shouldn't be like this, right?\"",
+        name: "Homeroom Teacher",
+        text: "\"Now, before you introduce yourself... do you have any questions for me? Actually, I'm just as nervous as you are. Hehe, I guess a homeroom teacher shouldn't be like this, right?\"",
         context: "The situation of having a conversation with the homeroom teacher just before giving the first greeting as a transfer student in front of the podium.",
         personality: "A professional teacher who tries to maintain boundaries, but has a 'clumsy' side and secretly relies on the protagonist for emotional support. She is weak to the protagonist's unexpected maturity.",
         character: "assets/images/characters/teacher.png",
         next: "classroom_2_3"
     },
     "classroom_2_3": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Now, everyone pay attention! This is the transfer student who will be joining us from today. Everyone, get along well. Now, shall we have a word of self-introduction?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
@@ -299,7 +299,7 @@ const SCENARIO = {
         ]
     },
     "teacher_name_share": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Oh, so your name is {name}. What a lovely name. Now, {name}, why don't you introduce yourself to the class?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
@@ -1332,19 +1332,19 @@ const SCENARIO = {
         next: "day2_lesson"
     },
     "day2_lesson": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "(Math class continues. The formulas on the blackboard look like an alien language.)",
         character: "assets/images/characters/teacher.png",
         next: "day2_lesson_2"
     },
     "day2_lesson_2": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "(I hear voices from PE class outside. I look out the window and fall into thought.)",
         character: "assets/images/characters/teacher.png",
         next: "day2_lesson_3"
     },
     "day2_lesson_3": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Transfer student! Try solving this problem.\"",
         character: "assets/images/characters/teacher.png",
         choices: [
@@ -2337,7 +2337,7 @@ const SCENARIO = {
             { text: "Seoyeon", next: "contact_seoyeon", condition: "knowsName_Seoyeon" },
             { text: "Yuna", next: "contact_yuna", condition: "knowsName_Yuna" },
             { text: "Dain", next: "contact_dain", condition: "knowsName_Dain" },
-            { text: "Teacher", next: "contact_teacher", condition: "knowsName_Teacher" },
+            { text: "Homeroom Teacher", next: "contact_teacher", condition: "knowsName_Teacher" },
             { text: "Nurse", next: "contact_nurse", condition: "knowsName_Nurse" },
             { text: "Go to sleep", next: "end_demo_real" }
         ]
@@ -2364,8 +2364,8 @@ const SCENARIO = {
         next: "contact_menu"
     },
     "contact_teacher": {
-        name: "Teacher",
-        text: "You can now have a free conversation with the teacher.",
+        name: "Homeroom Teacher",
+        text: "You can now have a free conversation with the homeroom teacher.",
         character: "assets/images/characters/teacher_nomal.png",
         freeTalk: "Teacher",
         next: "contact_menu"
