@@ -646,7 +646,6 @@ function startFreeTalk(scene) {
 
     // 사귀는 사이일 경우 호칭 가이드라인 추가
     let datingGuideline = "";
-    const charKey = charNameMap[scene.name] || scene.name;
     const isDatingCurrent = gameState[`isDating_${charKey}`] || gameState[`isDating_${scene.name}`];
     
     if (isDatingCurrent) {
