@@ -19,6 +19,11 @@ const FLAG_MEMORIES = [
     { flag: "metSeoyeon", char: "서연", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
     { flag: "metYuna", char: "유나", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
     { flag: "metDain", char: "다인", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
+    { flag: "isDating_서연", char: "서연", ko: "당신은 주인공과 사귀는 사이입니다. 주인공을 '자기야' 또는 '내 사랑'이라고 부르며 매우 다정하게 대하세요.", en: "You are dating the user. Call them 'Honey' or 'My Love' and be very affectionate." },
+    { flag: "isDating_유나", char: "유나", ko: "당신은 주인공과 사귀는 사이입니다. 주인공을 '나의 단 하나'라고 부르며 집착적이고 깊은 사랑을 표현하세요.", en: "You are dating the user. Call them 'My Only One' and express deep, obsessive love." },
+    { flag: "isDating_다인", char: "다인", ko: "당신은 주인공과 사귀는 사이입니다. 주인공을 '바보 남친'이라고 부르며 츤데레 같으면서도 애정 가득하게 대하세요.", en: "You are dating the user. Call them 'Dummy Boyfriend' and be affectionate in a tsundere way." },
+    { flag: "isDating_Teacher", char: "담임선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 애교 섞인 말투를 사용하세요.", en: "You are in a secret relationship with the user. When alone, act like a 'woman' rather than a 'teacher' and be cute." },
+    { flag: "isDating_Nurse", char: "양호선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 더욱 대담하고 유혹적으로 대하며, '여보' 또는 '내 사랑' 같은 애칭을 사용하세요.", en: "You are in a secret relationship with the user. When alone, act more like a 'woman' than a 'teacher', being bold and seductive, and use nicknames like 'Darling' or 'My Love'." },
     { flag: "personality_active", char: "담임선생님", ko: "주인공은 자신을 활발한 성격이라고 소개했습니다.", en: "The user introduced themselves as having an active personality." },
     { flag: "personality_quiet", char: "담임선생님", ko: "주인공은 자신을 조용한 성격이라고 소개했습니다.", en: "The user introduced themselves as having a quiet personality." }
 ];
@@ -504,6 +509,15 @@ function startFreeTalk(scene) {
 
     const charAddressingGuideline = defaultAddressingGuidelines[scene.name] || (isEn ? "Address the user naturally based on affinity." : "호감도에 따라 사용자를 자연스럽게 부르세요.");
 
+    // 사귀는 사이일 경우 호칭 가이드라인 추가
+    let datingGuideline = "";
+    const charKey = charNameMap[scene.name] || scene.name;
+    if (gameState[`isDating_${charKey}`] || gameState[`isDating_${scene.name}`]) {
+        datingGuideline = isEn ? 
+            `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.` :
+            `\n- 특별 지침: 당신은 현재 사용자와 사귀는 사이입니다. 아래의 호감도 등급과 상관없이 매우 친밀하고 애정 어린 호칭(자기야, 내 사랑 등)을 사용하세요.`;
+    }
+
     let systemPrompt = "";
     if (isEn) {
         systemPrompt = `You are the character '${scene.name}' from the visual novel game 'Cupid'.
@@ -537,12 +551,12 @@ ${charInteractionGuideline}
 
 7. Expression & Visuals:
    - You can change your facial expression based on your mood. Available expressions for ${scene.name}: ${Object.keys(CHARACTER_EXPRESSIONS[scene.name] || {}).join(", ")}
-   - To change expression, include [EXPRESSION: name] in your response.
+   - To change expression, include [EXPRESSION: name] in [EXPRESSION: name] in your response.
    - Example: "I... I'm not blushing! [EXPRESSION: shy] [STATS: affinity+5]"
 
 8. Affinity-based Addressing:
    - Adjust how you address the user based on affinity for ${scene.name}:
-${charAddressingGuideline}
+${charAddressingGuideline}${datingGuideline}
 
 9. World-building & Immersion:
    - If the user mentions topics that don't fit the high school visual novel setting (e.g., stocks, corporate life, children, modern politics), react with confusion, playful dismissal, or by redirecting the conversation back to school life. Maintain the character's perspective as a high school student (or teacher).`;
@@ -581,7 +595,7 @@ ${charInteractionGuideline}
 
 8. 호감도에 따른 호칭 변화:
    - '${scene.name}'의 호감도 수치에 따라 사용자를 부르는 호칭을 자연스럽게 변경하세요:
-${charAddressingGuideline}
+${charAddressingGuideline}${datingGuideline}
 
 9. 세계관 및 몰입도 유지:
    - 사용자가 고등학교 미연시 설정에 맞지 않는 주제(주식, 회사 생활, 자녀 양육, 현대 정치 등)를 언급할 경우, 당황하거나 농담으로 넘기거나 학교 생활로 화제를 전환하세요. 철저히 고등학생(또는 교사)의 관점을 유지하세요.`;

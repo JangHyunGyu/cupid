@@ -46,8 +46,21 @@
             { text: "응, 반가워. 학교가 너무 커서 길을 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "학생회장이 직접 마중까지? 내가 좀 특별한 대우를 받는 건가?", next: "path_tease_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "너... 정말 예쁘다. (나도 모르게 본심이 튀어나와 버렸다!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "(긴장해서 아무 말도 하지 못한다.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 2 } } }
+            { text: "(긴장해서 아무 말도 하지 못한다.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 2 } } },
+            { text: "아, 그래? 근데 좀 비켜줄래? 나 바쁘거든.", next: "path_rude_1", stats: { Seoyeon: { affinity: -10 } } }
         ]
+    },
+    "path_rude_1": {
+        name: "서연",
+        text: "(서연이의 표정이 순식간에 굳어진다. 그녀는 당황한 듯 입술을 깨문다.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "path_rude_1_2"
+    },
+    "path_rude_1_2": {
+        name: "서연",
+        text: "\"아... 미안. 내가 방해했나 보네. 하지만 교무실까지는 안내해야 하니까... 따라와.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "hallway_1"
     },
     "path_friendly_1": {
         name: "서연",
@@ -110,8 +123,15 @@
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "내 이름은 '{name}'야. 잘 부탁해.", next: "hallway_name_share", setFlag: "knowsName_서연" },
-            { text: "그냥 전학생이라고 불러줘. 그게 더 편해.", next: "hallway_name_keep" }
+            { text: "그냥 전학생이라고 불러줘. 그게 더 편해.", next: "hallway_name_keep" },
+            { text: "알아서 뭐 하게? 그냥 가기나 해.", next: "hallway_name_rude", stats: { Seoyeon: { affinity: -8 } } }
         ]
+    },
+    "hallway_name_rude": {
+        name: "서연",
+        text: "(그녀가 상처받은 듯 고개를 떨군다. 복도에 무거운 침묵이 흐른다.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "hallway_1_2"
     },
     "hallway_name_share": {
         name: "서연",
@@ -203,11 +223,18 @@
         text: "\"너는 어떤 동아리에 관심 있어? 우리 학생회도 항상 새로운 인재를 환영하고 있거든. 만약 네가 들어온다면... 내가 직접 업무를 가르쳐줄 수도 있어.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2" },
-            { text: "원예부도 끌리는데? 꽃보다 예쁜 부장이 있다면 더더욱.", next: "path_club_flower" },
+            { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "원예부도 끌리는데? 꽃보다 예쁜 부장이 있다면 더더욱.", next: "path_club_flower", stats: { Seoyeon: { affinity: 8 } } },
             { text: "아직은 잘 모르겠어. 학교생활에 좀 적응하고 나서 결정할게.", next: "path_normal_2" },
-            { text: "동아리보다는... 서연이 너에 대해 더 알고 싶어. (직구!)", next: "path_direct_2" }
+            { text: "동아리보다는... 서연이 너에 대해 더 알고 싶어. (직구!)", next: "path_direct_2", stats: { Seoyeon: { affinity: 12 } } },
+            { text: "귀찮게 동아리는 무슨... 그냥 혼자 있을래.", next: "path_rude_2", stats: { Seoyeon: { affinity: -10 } } }
         ]
+    },
+    "path_rude_2": {
+        name: "서연",
+        text: "(그녀가 실망한 기색을 감추지 못한다. 어깨가 조금 처진 것 같다.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "classroom_1_1"
     },
     "path_flirt_2": {
         name: "서연",
@@ -447,8 +474,15 @@
         choices: [
             { text: "와, 정말 맛있어 보여! 서연이는 요리도 잘하는구나.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 5 } } },
             { text: "아... 아 해줘. (용기를 내어 본다!)", next: "rooftop_talk_ah", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "이렇게 정성 가득한 도시락은 처음이야. 정말 고마워.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } }
+            { text: "이렇게 정성 가득한 도시락은 처음이야. 정말 고마워.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "별로 맛없어 보이는데... 그냥 매점 가서 빵이나 사 먹을걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -15 } } }
         ]
+    },
+    "rooftop_talk_rude": {
+        name: "서연",
+        text: "(서연이의 손이 미세하게 떨린다. 그녀는 억지로 미소를 지어 보이지만, 눈가가 촉촉해진다.)",
+        character: "assets/images/characters/seyoun_sad.png",
+        next: "rooftop_2"
     },
     "rooftop_talk_food": {
         name: "서연",
@@ -800,8 +834,25 @@
         sunset: true,
         choices: [
             { text: "응, 다인이 연습하는 거 보니까 나도 힘이 나는 것 같아.", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
-            { text: "그냥 학교 둘러보다가 소리가 들려서 와봤어.", next: "after_dain_normal", stats: { Dain: { affinity: 2 } } }
+            { text: "그냥 학교 둘러보다가 소리가 들려서 와봤어.", next: "after_dain_normal", stats: { Dain: { affinity: 2 } } },
+            { text: "시끄러워서 와봤어. 연습 좀 조용히 하면 안 돼?", next: "after_dain_rude", stats: { Dain: { affinity: -15 } } }
         ]
+    },
+    "after_dain_rude": {
+        name: "다인",
+        text: "(다인이의 표정이 순식간에 굳어진다. 그녀는 배구공을 꽉 쥐며 나를 노려본다.)",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_rude_2"
+    },
+    "after_dain_rude_2": {
+        name: "다인",
+        text: "\"뭐...? 시끄러워? 하, 어이가 없네. 연습 방해하지 말고 당장 나가! 너 같은 애한테 보여줄 모습 따윈 없으니까!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "day1_ending_pre"
     },
     "after_dain_cheer": {
         name: "다인",
