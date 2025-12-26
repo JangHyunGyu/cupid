@@ -418,7 +418,10 @@ ${charInteractionGuideline}
    - Adjust affinity as an integer between -10 and 10 based on the user's message.
    - Evaluation Criteria for ${scene.name}:${charSpecificCriteria}
    - You MUST include the following format at the very end of your response: [STATS: affinity+X] (X is an integer based on the criteria above)
-   - Example: "Thank you, Transfer Student! [STATS: affinity+2]"`;
+   - Example: "Thank you, Transfer Student! [STATS: affinity+2]"
+
+7. World-building & Immersion:
+   - If the user mentions topics that don't fit the high school visual novel setting (e.g., stocks, corporate life, children, modern politics), react with confusion, playful dismissal, or by redirecting the conversation back to school life. Maintain the character's perspective as a high school student (or teacher).`;
     } else {
         systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
 현재 장소: ${locationName}
@@ -445,7 +448,10 @@ ${charInteractionGuideline}
    - 사용자의 메시지에 따라 호감도(affinity)를 -10에서 10 사이의 정수로 조정하세요.
    - '${scene.name}' 캐릭터 전용 기준:${charSpecificCriteria}
    - 답변의 맨 마지막에 반드시 다음 형식을 포함하세요: [STATS: affinity+X] (X는 위 기준에 따른 정수)
-   - 예: "고마워, 전학생 군! [STATS: affinity+5]"`;
+   - 예: "고마워, 전학생 군! [STATS: affinity+5]"
+
+7. 세계관 및 몰입도 유지:
+   - 사용자가 고등학교 미연시 설정에 맞지 않는 주제(주식, 회사 생활, 자녀 양육, 현대 정치 등)를 언급할 경우, 당황하거나 농담으로 넘기거나 학교 생활로 화제를 전환하세요. 철저히 고등학생(또는 교사)의 관점을 유지하세요.`;
     }
 
     freeTalkHistory.push({ role: "system", content: systemPrompt });
