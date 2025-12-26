@@ -565,6 +565,7 @@
         name: "서연",
         text: "(그녀가 환하게 웃으며 내 번호를 저장한다. 그녀의 손가락이 기쁜 듯 바쁘게 움직인다.) \"고마워! 그럼... 나중에 메시지 보낼게. 꼭 답장해줘야 해?\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 15 } },
         next: "after_school_start"
     },
     "seyoun_contact_fail": {
@@ -891,6 +892,7 @@
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
+        stats: { Dain: { affinity: 15 } },
         next: "evening_home"
     },
     "dain_contact_fail": {
@@ -1152,6 +1154,7 @@
         text: "(유나가 내 번호를 저장하고는 희미하게 미소 짓는다.) \"...됐어. 이제 우린 연결된 거야. 내가 부르면... 언제든 와줘야 해.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
+        stats: { Yuna: { affinity: 15 } },
         next: "evening_home"
     },
     "yuna_contact_fail": {
@@ -1518,6 +1521,7 @@
         name: "담임선생님",
         text: "(담임선생님이 내 어깨를 다독여주신다.) \"그래, 부담 갖지 말고. 그럼 즐겁게 보내렴.\"",
         character: "assets/images/characters/teacher.png",
+        stats: { Teacher: { affinity: 15 } },
         next: "day2_lunch_choice"
     },
     "teacher_contact_fail": {
@@ -1900,6 +1904,7 @@
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
+        stats: { Nurse: { affinity: 15 } },
         next: "nurse_name_ask"
     },
     "nurse_name_ask": {
@@ -1967,10 +1972,10 @@
         },
         sunset: true,
         choices: [
-            { text: "서연이에게 다가간다.", next: "day2_final_seoyeon", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "유나에게 다가간다.", next: "day2_final_yuna", condition: "metYuna", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: 15 } } },
-            { text: "낯선 소녀에게 다가간다.", next: "day2_final_yuna_new", excludeCondition: "metYuna", stats: { Seoyeon: { affinity: -30 } } },
-            { text: "체육관의 다인에게 간다.", next: "day2_final_dain", condition: "metDain", stats: { Seoyeon: { affinity: -30 }, Dain: { affinity: 15 } } },
+            { text: "서연이에게 다가간다.", next: "day2_final_seoyeon", stats: { Seoyeon: { affinity: 40 } } },
+            { text: "유나에게 다가간다.", next: "day2_final_yuna", condition: "metYuna", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: 40 } } },
+            { text: "낯선 소녀에게 다가간다.", next: "day2_final_yuna_new", excludeCondition: "metYuna", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: 40 } } },
+            { text: "체육관의 다인에게 간다.", next: "day2_final_dain", condition: "metDain", stats: { Seoyeon: { affinity: -30 }, Dain: { affinity: 40 } } },
             { text: "모른 척하고 하교한다.", next: "day2_final_run" }
         ]
     },
@@ -2006,8 +2011,8 @@
         },
         sunset: true,
         choices: [
-            { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna_new" },
-            { text: "미안해. 하지만 할 이야기가 있어.", next: "day2_final_yuna_new_2", stats: { Seoyeon: { affinity: -70 } } }
+            { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna_new", stats: { Seoyeon: { affinity: 40 }, Yuna: { affinity: -70 } }, setFlag: "betrayedYunaForSeoyeon" },
+            { text: "미안해. 하지만 할 이야기가 있어.", next: "day2_final_yuna_new_2", stats: { Seoyeon: { affinity: -70 }, Yuna: { affinity: 40 } }, setFlag: "betrayedSeoyeonForYuna" }
         ]
     },
     "day2_final_seoyeon_back_yuna_new": {
@@ -2180,8 +2185,8 @@
         },
         sunset: true,
         choices: [
-            { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna" },
-            { text: "미안해. 하지만 할 이야기가 있어.", next: "day2_final_yuna_2", stats: { Seoyeon: { affinity: -70 } } }
+            { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_yuna", stats: { Seoyeon: { affinity: 40 }, Yuna: { affinity: -70 } }, setFlag: "betrayedYunaForSeoyeon" },
+            { text: "미안해. 하지만 할 이야기가 있어.", next: "day2_final_yuna_2", stats: { Seoyeon: { affinity: -70 }, Yuna: { affinity: 40 } }, setFlag: "betrayedSeoyeonForYuna" }
         ]
     },
     "day2_final_seoyeon_back_yuna": {
@@ -2313,8 +2318,8 @@
         },
         sunset: true,
         choices: [
-            { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_dain" },
-            { text: "미안해. 하지만 다인이랑 약속이 먼저야.", next: "day2_final_dain_react", stats: { Seoyeon: { affinity: -70 } } }
+            { text: "미안해, 너랑 같이 갈게.", next: "day2_final_seoyeon_back_dain", stats: { Seoyeon: { affinity: 40 }, Dain: { affinity: -70 } }, setFlag: "betrayedDainForSeoyeon" },
+            { text: "미안해. 하지만 다인이랑 약속이 먼저야.", next: "day2_final_dain_react", stats: { Seoyeon: { affinity: -70 }, Dain: { affinity: 40 } }, setFlag: "betrayedSeoyeonForDain" }
         ]
     },
     "day2_final_seoyeon_back_dain": {
@@ -2432,7 +2437,7 @@
         text: "\"(서연이랑 축제 약속도 했는데... 내일 얼굴 보기가 정말 힘들 것 같아...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
-        stats: { Seoyeon: { affinity: -50 } },
+        stats: { Seoyeon: { affinity: -70 } },
         next: "day2_final_run_dain_check"
     },
     "day2_final_run_dain_check": {
@@ -2450,7 +2455,7 @@
         text: "\"(다인이랑 떡볶이 먹기로 약속했는데... 계속 기다리고 있겠지? 미안하네...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
-        stats: { Dain: { affinity: -50 } },
+        stats: { Dain: { affinity: -70 } },
         next: "day2_final_run_yuna_check"
     },
     "day2_final_run_yuna_check": {
@@ -2540,11 +2545,11 @@
         name: "시스템",
         text: "누구에게 메시지를 보낼까요?",
         choices: [
-            { text: "서연", next: "msg_seyoun", condition: "has_number_seyoun", excludeCondition: "messaged_msg_seyoun" },
-            { text: "유나", next: "msg_yuna", condition: "has_number_yuna", excludeCondition: "messaged_msg_yuna" },
-            { text: "다인", next: "msg_dain", condition: "has_number_dain", excludeCondition: "messaged_msg_dain" },
-            { text: "담임선생님", next: "msg_teacher", condition: "has_number_teacher", excludeCondition: "messaged_msg_teacher" },
-            { text: "양호선생님", next: "msg_nurse", condition: "has_number_nurse", excludeCondition: "messaged_msg_nurse" },
+            { text: "서연", next: "msg_seyoun", condition: "has_number_seyoun", excludeCondition: "messaged_msg_seyoun", stats: { Seoyeon: { affinity: 20 } } },
+            { text: "유나", next: "msg_yuna", condition: "has_number_yuna", excludeCondition: "messaged_msg_yuna", stats: { Yuna: { affinity: 20 } } },
+            { text: "다인", next: "msg_dain", condition: "has_number_dain", excludeCondition: "messaged_msg_dain", stats: { Dain: { affinity: 20 } } },
+            { text: "담임선생님", next: "msg_teacher", condition: "has_number_teacher", excludeCondition: "messaged_msg_teacher", stats: { Teacher: { affinity: 20 } } },
+            { text: "양호선생님", next: "msg_nurse", condition: "has_number_nurse", excludeCondition: "messaged_msg_nurse", stats: { Nurse: { affinity: 20 } } },
             { text: "뒤로 가기", next: "home_phone" }
         ]
     },

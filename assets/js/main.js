@@ -1,4 +1,28 @@
 const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
+
+// 캐릭터별 기억(플래그) 정의
+const FLAG_MEMORIES = [
+    { flag: "promisedFestival", char: "서연", ko: "당신은 주인공과 이번 축제에 같이 가기로 약속했습니다.", en: "You have promised to go to the upcoming festival with the user." },
+    { flag: "datedDainDay1", char: "다인", ko: "당신은 어제 주인공과 함께 떡볶이를 먹으며 즐거운 시간을 보냈습니다.", en: "You had a great time eating tteokbokki with the user yesterday." },
+    { flag: "helpedSeoyeon", char: "서연", ko: "주인공은 어제 당신의 학생회 업무를 성심성의껏 도와주었습니다.", en: "The user sincerely helped you with your student council work yesterday." },
+    { flag: "knowsSecret", char: "유나", ko: "주인공은 이 학교의 숨겨진 비밀에 대해 어느 정도 알고 있습니다.", en: "The user knows something about the hidden secrets of this school." },
+    { flag: "readNote", char: "유나", ko: "주인공은 당신이 책상에 남긴 쪽지를 읽었습니다.", en: "The user read the note you left on the desk." },
+    { flag: "betrayedDainForSeoyeon", char: "다인", ko: "주인공은 서연이를 위해 당신과의 약속을 저버렸습니다. 당신은 매우 화가 나고 슬픈 상태입니다.", en: "The user broke their promise with you for Seoyeon. You are very angry and sad." },
+    { flag: "betrayedDainForSeoyeon", char: "서연", ko: "주인공은 다인이가 아닌 당신을 선택했습니다. 당신은 미안하면서도 기쁩니다.", en: "The user chose you over Dain. You feel sorry but happy." },
+    { flag: "betrayedSeoyeonForDain", char: "서연", ko: "주인공은 당신과의 축제 약속을 어리고 다인이를 선택했습니다. 당신은 큰 배신감을 느낍니다.", en: "The user broke their festival promise with you and chose Dain. You feel deeply betrayed." },
+    { flag: "betrayedSeoyeonForDain", char: "다인", ko: "주인공은 서연이가 아닌 당신을 선택했습니다. 당신은 승리감을 느낍니다.", en: "The user chose you over Seoyeon. You feel a sense of victory." },
+    { flag: "betrayedYunaForSeoyeon", char: "유나", ko: "주인공은 당신이 아닌 서연이를 선택했습니다. 당신은 주인공의 '빛'이 흐려졌다고 생각합니다.", en: "The user chose Seoyeon over you. You think the user's 'light' has dimmed." },
+    { flag: "betrayedSeoyeonForYuna", char: "서연", ko: "주인공은 당신을 버리고 유나를 선택했습니다. 당신은 절망적인 기분입니다.", en: "The user abandoned you and chose Yuna. You feel despair." },
+    { flag: "has_number_seyoun", char: "서연", ko: "당신은 주인공과 연락처를 교환했습니다.", en: "You have exchanged contact information with the user." },
+    { flag: "has_number_yuna", char: "유나", ko: "당신은 주인공과 연락처를 교환했습니다.", en: "You have exchanged contact information with the user." },
+    { flag: "has_number_dain", char: "다인", ko: "당신은 주인공과 연락처를 교환했습니다.", en: "You have exchanged contact information with the user." },
+    { flag: "metSeoyeon", char: "서연", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
+    { flag: "metYuna", char: "유나", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
+    { flag: "metDain", char: "다인", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
+    { flag: "personality_active", char: "담임선생님", ko: "주인공은 자신을 활발한 성격이라고 소개했습니다.", en: "The user introduced themselves as having an active personality." },
+    { flag: "personality_quiet", char: "담임선생님", ko: "주인공은 자신을 조용한 성격이라고 소개했습니다.", en: "The user introduced themselves as having a quiet personality." }
+];
+
 let currentSceneId = "start";
 let isTyping = false;
 let gameState = {
@@ -133,6 +157,29 @@ async function renderScene(sceneId) {
 
 const SEND_ICON = `<svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>`;
 
+// 게임 내 플래그를 기반으로 캐릭터의 기억(컨텍스트)을 생성하는 함수
+function getGameContext(charName, isEn) {
+    const memories = FLAG_MEMORIES.filter(m => {
+        // 캐릭터 이름 매칭 (한글/영어 모두 고려)
+        const charMatch = m.char === charName || 
+                         (charName === "서연" && m.char === "Seoyeon") ||
+                         (charName === "Seoyeon" && m.char === "서연") ||
+                         (charName === "유나" && m.char === "Yuna") ||
+                         (charName === "Yuna" && m.char === "유나") ||
+                         (charName === "다인" && m.char === "Dain") ||
+                         (charName === "Dain" && m.char === "다인");
+        return charMatch && gameState[m.flag];
+    });
+
+    if (memories.length === 0) return "";
+
+    const header = isEn ? "\n\n[Recent Events & Memories]:\n" : "\n\n[최근 사건 및 기억]:\n";
+    return header + memories.map(m => {
+        let text = isEn ? m.en : m.ko;
+        return `- ${text.replace(/{name}/g, gameState.playerName)}`;
+    }).join("\n");
+}
+
 function startFreeTalk(scene) {
     isFreeTalking = true;
     freeTalkTurns = 0;
@@ -140,6 +187,7 @@ function startFreeTalk(scene) {
     freeTalkHistory = [];
     
     const isEn = document.documentElement.lang === 'en';
+    const gameContext = getGameContext(scene.name, isEn);
     
     // 현재 배경 이미지 파일명에서 장소 유추
     let locationName = isEn ? "School" : "학교";
@@ -322,7 +370,7 @@ Current Location: ${locationName}
 Current Situation: ${scene.context || "Talking with the user."}
 Personality: ${charPersonality}
 Hidden Stats: Affinity ${charStats.affinity} (Higher values mean more favorable relationship)
-${scene.extra_guideline ? `Extra Guideline: ${scene.extra_guideline}` : ""}
+${scene.extra_guideline ? `Extra Guideline: ${scene.extra_guideline}` : ""}${gameContext}
 
 Style Guidelines (Targeting Visual Novel Fans):
 1. Use emotional and romantic expressions that visual novel fans would love.
@@ -349,7 +397,7 @@ ${charInteractionGuideline}
         systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
 현재 장소: ${locationName}
 현재 상황: ${scene.context || "사용자와 대화 중입니다."}
-성격: ${charPersonality}히든 스탯: 호감도 ${charStats.affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
+성격: ${charPersonality}히든 스탯: 호감도 ${charStats.affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}${gameContext}
 
 스타일 지침 (미연시 매니아 타겟):
 1. 미연시 매니아들이 설렐만한 감성적이고 로맨틱한 표현을 적극적으로 사용하세요.

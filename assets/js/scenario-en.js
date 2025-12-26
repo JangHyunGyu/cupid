@@ -1744,6 +1744,7 @@ const SCENARIO = {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
+        stats: { Nurse: { affinity: 15 } },
         next: "nurse_name_ask"
     },
     "nurse_name_ask": {
@@ -1811,10 +1812,10 @@ const SCENARIO = {
         },
         sunset: true,
         choices: [
-            { text: "Approach Seoyeon.", next: "day2_final_seoyeon", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "Approach Yuna.", next: "day2_final_yuna", condition: "metYuna", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: 15 } } },
-            { text: "Approach the unfamiliar girl.", next: "day2_final_yuna_new", excludeCondition: "metYuna", stats: { Seoyeon: { affinity: -30 } } },
-            { text: "Go to Dain in the gym.", next: "day2_final_dain", condition: "metDain", stats: { Seoyeon: { affinity: -30 }, Dain: { affinity: 15 } } },
+            { text: "Approach Seoyeon.", next: "day2_final_seoyeon", stats: { Seoyeon: { affinity: 40 } } },
+            { text: "Approach Yuna.", next: "day2_final_yuna", condition: "metYuna", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: 40 } } },
+            { text: "Approach the unfamiliar girl.", next: "day2_final_yuna_new", excludeCondition: "metYuna", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: 40 } } },
+            { text: "Go to Dain in the gym.", next: "day2_final_dain", condition: "metDain", stats: { Seoyeon: { affinity: -30 }, Dain: { affinity: 40 } } },
             { text: "Pretend not to know and go home.", next: "day2_final_run" }
         ]
     },
@@ -1850,8 +1851,8 @@ const SCENARIO = {
         },
         sunset: true,
         choices: [
-            { text: "Seoyeon, I'm sorry... I'll go with you after all.", next: "day2_final_seoyeon_back_yuna_new" },
-            { text: "I'm sorry. But I have something to talk about with this girl.", next: "day2_final_yuna_new_2", stats: { Seoyeon: { affinity: -70 } } }
+            { text: "Seoyeon, I'm sorry... I'll go with you after all.", next: "day2_final_seoyeon_back_yuna_new", stats: { Seoyeon: { affinity: 40 }, Yuna: { affinity: -70 } }, setFlag: "betrayedYunaForSeoyeon" },
+            { text: "I'm sorry. But I have something to talk about with this girl.", next: "day2_final_yuna_new_2", stats: { Seoyeon: { affinity: -70 }, Yuna: { affinity: 40 } }, setFlag: "betrayedSeoyeonForYuna" }
         ]
     },
     "day2_final_seoyeon_back_yuna_new": {
@@ -2024,8 +2025,8 @@ const SCENARIO = {
         },
         sunset: true,
         choices: [
-            { text: "Seoyeon, I'm sorry... I'll go with you after all.", next: "day2_final_seoyeon_back_yuna" },
-            { text: "I'm sorry. But I have something to talk about with Yuna.", next: "day2_final_yuna_2", stats: { Seoyeon: { affinity: -70 } } }
+            { text: "Seoyeon, I'm sorry... I'll go with you after all.", next: "day2_final_seoyeon_back_yuna", stats: { Seoyeon: { affinity: 40 }, Yuna: { affinity: -70 } }, setFlag: "betrayedYunaForSeoyeon" },
+            { text: "I'm sorry. But I have something to talk about with Yuna.", next: "day2_final_yuna_2", stats: { Seoyeon: { affinity: -70 }, Yuna: { affinity: 40 } }, setFlag: "betrayedSeoyeonForYuna" }
         ]
     },
     "day2_final_seoyeon_back_yuna": {
@@ -2157,8 +2158,8 @@ const SCENARIO = {
         },
         sunset: true,
         choices: [
-            { text: "Seoyeon, don't cry... I'll go with you.", next: "day2_final_seoyeon_back_dain" },
-            { text: "I'm sorry. But my promise with Dain comes first.", next: "day2_final_dain_react", stats: { Seoyeon: { affinity: -70 } } }
+            { text: "Seoyeon, don't cry... I'll go with you.", next: "day2_final_seoyeon_back_dain", stats: { Seoyeon: { affinity: 40 }, Dain: { affinity: -70 } }, setFlag: "betrayedDainForSeoyeon" },
+            { text: "I'm sorry. But my promise with Dain comes first.", next: "day2_final_dain_react", stats: { Seoyeon: { affinity: -70 }, Dain: { affinity: 40 } }, setFlag: "betrayedSeoyeonForDain" }
         ]
     },
     "day2_final_seoyeon_back_dain": {
@@ -2276,7 +2277,7 @@ const SCENARIO = {
         text: "\"(I promised to go to the festival with Seoyeon... It's going to be hard to see her tomorrow...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
-        stats: { Seoyeon: { affinity: -50 } },
+        stats: { Seoyeon: { affinity: -70 } },
         next: "day2_final_run_dain_check"
     },
     "day2_final_run_dain_check": {
@@ -2294,7 +2295,7 @@ const SCENARIO = {
         text: "\"(I also promised to eat tteokbokki with Dain... She must be waiting in the gym. I'm sorry...)\"",
         background: "assets/images/background/school.png",
         sunset: true,
-        stats: { Dain: { affinity: -50 } },
+        stats: { Dain: { affinity: -70 } },
         next: "day2_final_run_yuna_check"
     },
     "day2_final_run_yuna_check": {
@@ -2336,11 +2337,11 @@ const SCENARIO = {
         background: "assets/images/background/room_home.png",
         night: true,
         choices: [
-            { text: "Seoyeon", next: "contact_seoyeon", condition: "knowsName_Seoyeon" },
-            { text: "Yuna", next: "contact_yuna", condition: "knowsName_Yuna" },
-            { text: "Dain", next: "contact_dain", condition: "knowsName_Dain" },
-            { text: "Homeroom Teacher", next: "contact_teacher", condition: "knowsName_Teacher" },
-            { text: "Nurse", next: "contact_nurse", condition: "knowsName_Nurse" },
+            { text: "Seoyeon", next: "contact_seoyeon", condition: "knowsName_Seoyeon", stats: { Seoyeon: { affinity: 20 } } },
+            { text: "Yuna", next: "contact_yuna", condition: "knowsName_Yuna", stats: { Yuna: { affinity: 20 } } },
+            { text: "Dain", next: "contact_dain", condition: "knowsName_Dain", stats: { Dain: { affinity: 20 } } },
+            { text: "Homeroom Teacher", next: "contact_teacher", condition: "knowsName_Teacher", stats: { Teacher: { affinity: 20 } } },
+            { text: "Nurse", next: "contact_nurse", condition: "knowsName_Nurse", stats: { Nurse: { affinity: 20 } } },
             { text: "Go to sleep", next: "end_demo_real" }
         ]
     },
