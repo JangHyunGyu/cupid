@@ -104,6 +104,8 @@ async function renderScene(sceneId) {
     }
 }
 
+const SEND_ICON = `<svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>`;
+
 function startFreeTalk(scene) {
     isFreeTalking = true;
     freeTalkTurns = 0;
@@ -129,7 +131,21 @@ ${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}
     freeTalkHistory.push({ role: "system", content: systemPrompt });
     
     chatContainer.style.display = 'block';
-    chatSendBtn.textContent = scene.buttonText || "말하기";
+    
+    // 버튼 텍스트 또는 아이콘 설정 (말하기, 전송, 전송하기 등은 아이콘으로 표시)
+    const iconButtons = ["말하기", "전송", "전송하기", "Send"];
+    if (scene.buttonText && !iconButtons.includes(scene.buttonText)) {
+        chatSendBtn.textContent = scene.buttonText;
+        chatSendBtn.style.borderRadius = "8px";
+        chatSendBtn.style.width = "auto";
+        chatSendBtn.style.padding = "0 20px";
+    } else {
+        chatSendBtn.innerHTML = SEND_ICON;
+        chatSendBtn.style.borderRadius = "50%";
+        chatSendBtn.style.width = "45px";
+        chatSendBtn.style.padding = "0";
+    }
+    
     turnCountEl.textContent = currentMaxTurns;
     
     if (scene.text) {
@@ -170,8 +186,8 @@ async function sendChatMessage() {
     
     // 로딩 표시
     chatSendBtn.disabled = true;
-    const originalBtnText = chatSendBtn.textContent;
-    chatSendBtn.textContent = "생각 중";
+    const originalBtnContent = chatSendBtn.innerHTML;
+    chatSendBtn.innerHTML = `<span class="loading-dots">...</span>`;
     
     try {
         const response = await fetch(API_ENDPOINT, {
@@ -206,7 +222,7 @@ async function sendChatMessage() {
         messageEl.textContent = "대화 도중 오류가 발생했습니다.";
     } finally {
         chatSendBtn.disabled = false;
-        chatSendBtn.textContent = originalBtnText;
+        chatSendBtn.innerHTML = originalBtnContent;
     }
 }
 

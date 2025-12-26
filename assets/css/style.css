@@ -203,16 +203,41 @@ body, html {
 #chat-send {
     background: #ff69b4;
     border: none;
-    border-radius: 8px;
-    padding: 0 20px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
-    font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s;
+    padding: 0;
+    flex-shrink: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#chat-send svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    margin-left: 3px; /* 비행기 아이콘 중심 맞추기 */
 }
 
 #chat-send:hover {
     background: #ff1493;
+    transform: scale(1.05);
+}
+
+#chat-send:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.loading-dots {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 8px;
 }
 
 #chat-turn-indicator {
