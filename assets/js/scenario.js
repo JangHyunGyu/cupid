@@ -303,7 +303,8 @@
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_선생님" },
             { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlag: "personality_active" },
-            { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlag: "personality_quiet" }
+            { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlag: "personality_quiet" },
+            { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study", setFlag: "personality_study" }
         ]
     },
     "teacher_name_share": {
@@ -314,9 +315,6 @@
             { text: "활발하게 인사한다.", next: "class_after_active", setFlag: "personality_active" },
             { text: "차분하게 인사한다.", next: "class_after_quiet", setFlag: "personality_quiet" },
             { text: "사교적으로 인사한다.", next: "class_after_party", setFlag: "personality_party" }
-        ]
-    },
-            { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study", setFlag: "personality_study" }
         ]
     },
     "class_after_active": {
