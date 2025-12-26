@@ -45,7 +45,7 @@
         choices: [
             { text: "응, 반가워. 학교가 너무 커서 길을 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "너... 정말 예쁘다. (나도 모르게 본심이 튀어나와 버렸다!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "아, 그래? 근데 좀 비켜줄래? 나 바쁘거든.", next: "path_rude_1", stats: { Seoyeon: { affinity: -10 } } }
+            { text: "아, 그래? 근데 좀 비켜줄래? 나 바쁘거든.", next: "path_rude_1", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "path_rude_1": {
@@ -222,8 +222,8 @@
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "아직은 잘 모르겠어. 학교생활에 좀 적응하고 나서 결정할게.", next: "path_normal_2" },
-            { text: "귀찮게 동아리는 무슨... 그냥 혼자 있을래.", next: "path_rude_2", stats: { Seoyeon: { affinity: -10 } } }
+            { text: "아직은 잘 모르겠어. 학교생활에 좀 적응하고 나서 결정할게.", next: "path_normal_2", stats: { Seoyeon: { affinity: -5 } } },
+            { text: "귀찮게 동아리는 무슨... 그냥 혼자 있을래.", next: "path_rude_2", stats: { Seoyeon: { affinity: -25 } } }
         ]
     },
     "path_rude_2": {
@@ -337,7 +337,7 @@
         choices: [
             { text: "활발하게 인사한다.", next: "class_after_active", setFlag: "personality_active" },
             { text: "차분하게 인사한다.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "사교적으로 인사한다.", next: "class_after_party", setFlag: "personality_party" }
+            { text: "귀찮다는 듯 대충 인사한다.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -10 } } }
         ]
     },
     "class_after_active": {
@@ -438,7 +438,11 @@
         name: "서연",
         text: "\"마침 널 찾으려던 참이었어. 우리 옥상에 비밀 장소가 있는데, 거기서 같이 먹을래?\"",
         character: "assets/images/characters/seyoun_nomal.png",
-        next: "rooftop_1"
+        choices: [
+            { text: "응! 서연이랑 같이 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "음... 다른 애들이랑 먹기로 했는데. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
+            { text: "옥상? 귀찮게 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+        ]
     },
     "rooftop_1": {
         name: "서연",
@@ -469,7 +473,7 @@
             { text: "와, 정말 맛있어 보여! 서연이는 요리도 잘하는구나.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 5 } } },
             { text: "아... 아 해줘. (용기를 내어 본다!)", next: "rooftop_talk_ah", stats: { Seoyeon: { affinity: 15 } } },
             { text: "이렇게 정성 가득한 도시락은 처음이야. 정말 고마워.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "별로 맛없어 보이는데... 그냥 매점 가서 빵이나 사 먹을걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -15 } } }
+            { text: "별로 맛없어 보이는데... 그냥 매점 가서 빵이나 사 먹을걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -30 } } }
         ]
     },
     "rooftop_talk_rude": {
@@ -828,8 +832,8 @@
         sunset: true,
         choices: [
             { text: "응, 다인이 연습하는 거 보니까 나도 힘이 나는 것 같아.", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
-            { text: "그냥 학교 둘러보다가 소리가 들려서 와봤어.", next: "after_dain_normal", stats: { Dain: { affinity: 2 } } },
-            { text: "시끄러워서 와봤어. 연습 좀 조용히 하면 안 돼?", next: "after_dain_rude", stats: { Dain: { affinity: -15 } } }
+            { text: "그냥 학교 둘러보다가 소리가 들려서 와봤어.", next: "after_dain_normal", stats: { Dain: { affinity: -5 } } },
+            { text: "시끄러워서 와봤어. 연습 좀 조용히 하면 안 돼?", next: "after_dain_rude", stats: { Dain: { affinity: -30 } } }
         ]
     },
     "after_dain_rude": {
@@ -983,8 +987,21 @@
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "응, 같이 하교하고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "그냥 얼굴 보고 싶어서 왔어. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 5 } } }
+            { text: "그냥 얼굴 보고 싶어서 왔어. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "착각하지 마. 그냥 길을 잘못 든 것뿐이야.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -20 } } }
         ]
+    },
+    "after_seoyeon_rude": {
+        name: "서연",
+        text: "(서연이의 표정이 순식간에 굳어진다. 그녀는 다시 서류로 시선을 돌린다.)",
+        character: "assets/images/characters/seyoun_angry.png",
+        next: "after_seoyeon_rude_2"
+    },
+    "after_seoyeon_rude_2": {
+        name: "서연",
+        text: "\"아... 그래? 그럼 방해하지 말고 나가줄래? 나 지금 좀 바쁘거든.\"",
+        character: "assets/images/characters/seyoun_angry.png",
+        next: "evening_home"
     },
     "after_seoyeon_help": {
         name: "서연",
@@ -1100,11 +1117,23 @@
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
         choices: [
-            { text: "내 이름은 '{name}'야. 너랑 친해지고 싶어.", next: "yuna_name_share", setFlag: "knowsName_유나" },
-            { text: "너에 대해 더 알고 싶어서 왔어.", next: "after_yuna_know" },
-            { text: "이 학교의 비밀... 그게 뭔지 알려줘.", next: "after_yuna_secret", condition: "metYuna" },
-            { text: "이 학교는 어떤 곳이야?", next: "after_yuna_secret", excludeCondition: "metYuna" }
+            { text: "내 이름은 '{name}'야. 너랑 친해지고 싶어.", next: "yuna_name_share", setFlag: "knowsName_유나", stats: { Yuna: { affinity: 5 } } },
+            { text: "너에 대해 더 알고 싶어서 왔어.", next: "after_yuna_know", stats: { Yuna: { affinity: 10 } } },
+            { text: "이 학교의 비밀... 그게 뭔지 알려줘.", next: "after_yuna_secret", condition: "metYuna", stats: { Yuna: { affinity: 5 } } },
+            { text: "여긴 왜 이렇게 음침해? 기분 나빠.", next: "after_yuna_rude", stats: { Yuna: { affinity: -25 } } }
         ]
+    },
+    "after_yuna_rude": {
+        name: "유나",
+        text: "(그녀가 책을 덮으며 나를 차갑게 쳐다본다. 공기가 순식간에 얼어붙는 것 같다.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_rude_2"
+    },
+    "after_yuna_rude_2": {
+        name: "유나",
+        text: "\"음침하다고...? 후훗, 넌 아직 아무것도 모르는구나. 무지함은 때로 죄가 되기도 하지. 당장 내 눈앞에서 사라져.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_home"
     },
     "yuna_name_share": {
         name: "유나",
@@ -1507,9 +1536,21 @@
             { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_study", condition: "personality_study", stats: { Teacher: { affinity: 5 }, Seoyeon: { affinity: 2 } } },
             { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_active", condition: "personality_active", stats: { Teacher: { affinity: 5 }, Seoyeon: { affinity: 2 } } },
             { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_normal", condition: "personality_quiet", stats: { Teacher: { affinity: 5 }, Seoyeon: { affinity: 2 } } },
-            { text: "일어나서 문제를 푼다.", next: "day2_lesson_solve_normal", condition: "personality_party", stats: { Teacher: { affinity: 5 }, Seoyeon: { affinity: 2 } } },
-            { text: "모르겠다고 말한다.", next: "day2_lesson_fail", stats: { Teacher: { affinity: -5 } } }
+            { text: "모르겠다고 말한다.", next: "day2_lesson_fail", stats: { Teacher: { affinity: -10 } } },
+            { text: "수업 방해하지 말고 그냥 하던 거나 하세요.", next: "day2_lesson_rude", stats: { Teacher: { affinity: -30 }, Seoyeon: { affinity: -15 } } }
         ]
+    },
+    "day2_lesson_rude": {
+        name: "담임선생님",
+        text: "(교실 전체가 얼어붙는다. 담임선생님의 얼굴이 붉으락푸르락해지며 부들부들 떨린다.)",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lesson_rude_2"
+    },
+    "day2_lesson_rude_2": {
+        name: "담임선생님",
+        text: "\"너... 너 지금 뭐라고 했니? 전학 첫날부터 이게 무슨 버릇이야! 당장 복도로 나가서 손들고 서 있어!\"",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lunch_choice"
     },
     "day2_lesson_solve_active": {
         name: "아이들",
@@ -2027,7 +2068,7 @@
             { text: "유나에게 다가간다.", next: "day2_final_yuna", condition: "metYuna", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: 40 } } },
             { text: "낯선 소녀에게 다가간다.", next: "day2_final_yuna_new", excludeCondition: "metYuna", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: 40 } } },
             { text: "체육관의 다인에게 간다.", next: "day2_final_dain", condition: "metDain", stats: { Seoyeon: { affinity: -30 }, Dain: { affinity: 40 } } },
-            { text: "모른 척하고 하교한다.", next: "day2_final_run", stats: { Seoyeon: { affinity: -20 }, Yuna: { affinity: -20 }, Dain: { affinity: -20 } } }
+            { text: "모른 척하고 하교한다.", next: "day2_final_run", stats: { Seoyeon: { affinity: -30 }, Yuna: { affinity: -30 }, Dain: { affinity: -30 } } }
         ]
     },
     "day2_final_yuna_new": {
