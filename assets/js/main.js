@@ -240,6 +240,11 @@ function getGameContext(charName, isEn) {
 
 // 다른 캐릭터들에 대한 정보를 생성하는 함수
 function getSocialContext(currentCharName, isEn) {
+    const charNameMap = {
+        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "양호선생님": "Nurse",
+        "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Homeroom Teacher": "Teacher", "Nurse": "Nurse"
+    };
+
     const characters = isEn ? {
         "Seoyeon": "Student Council President. Kind but lonely.",
         "Yuna": "Mysterious girl. Interested in the user's 'light'.",
@@ -256,7 +261,14 @@ function getSocialContext(currentCharName, isEn) {
 
     const otherChars = Object.entries(characters)
         .filter(([name]) => name !== currentCharName)
-        .map(([name, desc]) => `- ${name}: ${desc}`)
+        .map(([name, desc]) => {
+            const charKey = charNameMap[name] || name;
+            let status = "";
+            if (gameState[`isDating_${charKey}`] || gameState[`isDating_${name}`]) {
+                status = isEn ? " (Currently DATING the user)" : " (현재 사용자와 사귀는 사이)";
+            }
+            return `- ${name}: ${desc}${status}`;
+        })
         .join("\n");
 
     const header = isEn ? "\n\n[Other Characters in School]:\n" : "\n\n[학교의 다른 인물들]:\n";
@@ -512,10 +524,25 @@ function startFreeTalk(scene) {
     // 사귀는 사이일 경우 호칭 가이드라인 추가
     let datingGuideline = "";
     const charKey = charNameMap[scene.name] || scene.name;
-    if (gameState[`isDating_${charKey}`] || gameState[`isDating_${scene.name}`]) {
+    const isDatingCurrent = gameState[`isDating_${charKey}`] || gameState[`isDating_${scene.name}`];
+    
+    if (isDatingCurrent) {
         datingGuideline = isEn ? 
             `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.` :
             `\n- 특별 지침: 당신은 현재 사용자와 사귀는 사이입니다. 아래의 호감도 등급과 상관없이 매우 친밀하고 애정 어린 호칭(자기야, 내 사랑 등)을 사용하세요.`;
+            
+        // 양다리(문어발) 감지 로직
+        const otherDatingChars = Object.keys(charNameMap).filter(name => {
+            const key = charNameMap[name];
+            return key !== charKey && (gameState[`isDating_${key}`] || gameState[`isDating_${name}`]);
+        });
+        
+        if (otherDatingChars.length > 0) {
+            const jealousyPrompt = isEn ?
+                `\n- JEALOUSY: You noticed the user is also dating other people (${otherDatingChars.join(", ")}). If the user acts unfaithfully or mentions them, react with intense jealousy, suspicion, or sadness according to your personality.` :
+                `\n- 질투 지침: 당신은 사용자가 다른 사람들(${otherDatingChars.join(", ")})과도 사귀고 있다는 사실을 눈치챘습니다. 사용자가 불성실하게 행동하거나 다른 캐릭터를 언급할 경우, 당신의 성격에 맞춰 강한 질투, 의심, 또는 슬픔을 표현하세요.`;
+            datingGuideline += jealousyPrompt;
+        }
     }
 
     let systemPrompt = "";
