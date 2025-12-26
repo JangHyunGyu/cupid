@@ -788,9 +788,16 @@ const SCENARIO = {
     },
     "after_dain_end": {
         name: "Me",
-        text: "(I sat on the playground stands and watched Dain until her practice was over. Her passion didn't seem to cool down until the sun set and darkness fell. After practice, we headed to the snack bar in front of the school as promised.)",
+        text: "(I sat on the playground stands and watched Dain until her practice was over. Her passion didn't seem to cool down until the sun set and darkness fell.)",
         background: "assets/images/background/school.png",
-        character: null,
+        character: "assets/images/characters/dain_sweat.png",
+        sunset: true,
+        next: "after_dain_end_2"
+    },
+    "after_dain_end_2": {
+        name: "Dain",
+        text: "(After finishing practice, Dain approaches me while panting heavily. The sweat on her forehead sparkles in the sunset light.) \"Phew... phew... sorry for making you wait! Now, let's go eat the tteokbokki we promised!\"",
+        character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         setFlag: "datedDainDay1",
         next: "after_dain_tteokbokki"

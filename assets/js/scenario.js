@@ -837,9 +837,16 @@
     },
     "after_dain_end": {
         name: "나",
-        text: "(다인이의 연습이 끝날 때까지 운동장 스탠드에 앉아 그녀를 지켜보았다. 노을이 지고 어둠이 깔릴 때까지 그녀의 열정은 식을 줄 몰랐다. 연습이 끝나고 우리는 약속대로 학교 앞 분식집으로 향했다.)",
+        text: "(다인이의 연습이 끝날 때까지 운동장 스탠드에 앉아 그녀를 지켜보았다. 노을이 지고 어둠이 깔릴 때까지 그녀의 열정은 식을 줄 몰랐다.)",
         background: "assets/images/background/school.png",
-        character: null,
+        character: "assets/images/characters/dain_sweat.png",
+        sunset: true,
+        next: "after_dain_end_2"
+    },
+    "after_dain_end_2": {
+        name: "다인",
+        text: "(연습을 마친 다인이가 거친 숨을 몰아쉬며 나에게 다가온다. 그녀의 이마에 맺힌 땀방울이 노을빛에 반짝인다.) \"하아... 하아... 기다리게 해서 미안! 자, 약속했던 떡볶이 먹으러 가자!\"",
+        character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         setFlag: "datedDainDay1",
         next: "after_dain_tteokbokki"
