@@ -2399,7 +2399,7 @@ const SCENARIO = {
     },
     "end_demo_real_3": {
         name: "System",
-        text: "Congratulations! You have completed all the scenarios of the demo version.\n\nFluttering romance with Seoyeon, mysterious truth with Yuna, and energetic friendship with Dain... Please check out what kind of ending your choices will lead to in the full version! Thank you for playing.",
+        text: "Congratulations! You have completed all the scenarios of the demo version.\n\nFluttering romance with Seoyeon, mysterious truth with Yuna, and energetic friendship with Dain... Please look forward to what kind of ending your choices will lead to in the full version! Thank you for playing.",
         character: null,
         fade: true,
         choices: [
