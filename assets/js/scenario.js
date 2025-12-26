@@ -258,6 +258,15 @@
         name: "선생님",
         text: "(교실 안의 공기가 무겁게 느껴진다. 선생님이 교탁을 탁탁 치며 주의를 집중시킨다.)",
         character: "assets/images/characters/teacher.png",
+        next: "teacher_free_talk"
+    },
+    "teacher_free_talk": {
+        type: "free_talk",
+        name: "선생님",
+        text: "\"자, 자기소개 하기 전에... 나한테 궁금한 거나 학교에 대해 물어보고 싶은 거 있니?\"",
+        context: "교탁 앞에서 전학생으로서 첫 인사를 하기 직전, 담임 선생님과 대화를 나누는 상황",
+        personality: "엄격해 보이지만 학생들을 아끼는 따뜻한 마음을 가진 담임 선생님. 전학생이 잘 적응하기를 바라고 있음.",
+        character: "assets/images/characters/teacher.png",
         next: "classroom_2_3"
     },
     "classroom_2_3": {
@@ -695,6 +704,15 @@
         background: "assets/images/background/playground.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
+        next: "dain_free_talk"
+    },
+    "dain_free_talk": {
+        type: "free_talk",
+        name: "다인",
+        text: "\"와, 전학생! 가까이서 보니까 더 반가운데? 나한테 궁금한 거 없어? 운동이라든가, 학교생활이라든가!\"",
+        context: "방과 후 노을 지는 운동장, 연습을 마친 다인과 시원한 바람을 맞으며 대화를 나누는 상황",
+        personality: "털털하고 시원시원한 성격의 배구부 에이스. 운동을 사랑하며 주인공에게 호의적이고 에너지가 넘침.",
+        character: "assets/images/characters/dain_nomal.png",
         next: "after_dain_3"
     },
     "after_dain_3": {
@@ -1607,6 +1625,15 @@
         name: "양호선생님",
         text: "\"어머, 전학생이구나? 얼굴색이 안 좋네. 어디가 아파서 왔니?\"",
         background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_free_talk"
+    },
+    "nurse_free_talk": {
+        type: "free_talk",
+        name: "양호선생님",
+        text: "\"어머, 긴장을 많이 했나 보네. 편하게 이야기해봐. 어디가 어떻게 불편하니?\"",
+        context: "조용한 양호실, 따뜻한 분위기에서 양호 선생님과 상담하듯 대화를 나누는 상황",
+        personality: "포근하고 자상하며 학생들의 고민을 잘 들어주는 양호 선생님. 신비로운 분위기를 풍기기도 함.",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_3"
     },
