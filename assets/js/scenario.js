@@ -846,7 +846,7 @@
     "after_dain_end_2": {
         name: "다인",
         text: "(연습을 마친 다인이가 거친 숨을 몰아쉬며 나에게 다가온다. 그녀의 이마에 맺힌 땀방울이 노을빛에 반짝인다.) \"하아... 하아... 기다리게 해서 미안! 자, 약속했던 떡볶이 먹으러 가자!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "datedDainDay1",
         next: "after_dain_tteokbokki"
