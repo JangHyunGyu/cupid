@@ -545,6 +545,22 @@ function startFreeTalk(scene) {
         }
     }
 
+    // 통신 매체 판단 (대면 vs 원격)
+    const remoteKeywords = ["연락", "메시지", "전화", "톡", "문자", "Contact", "Message", "Call", "Text", "전송"];
+    const isRemote = remoteKeywords.some(k => 
+        (scene.context && scene.context.includes(k)) || 
+        (scene.buttonText && scene.buttonText.includes(k)) ||
+        (scene.text && scene.text.includes(k))
+    );
+
+    const mediumInstructionEn = isRemote ? 
+        "\n- MEDIUM: You are communicating via PHONE/MESSENGER. Do not mention physical actions like 'looking at the user' or 'touching'. Use text-style expressions if appropriate." :
+        "\n- MEDIUM: You are talking FACE-TO-FACE. You can mention eye contact, facial expressions, and physical proximity.";
+    
+    const mediumInstructionKo = isRemote ? 
+        "\n- 매체 지침: 현재 '전화' 또는 '메시지'로 연락 중입니다. '눈을 마주친다'거나 '손을 잡는다'는 등의 물리적 접촉 묘사는 피하세요. 대신 텍스트 메시지나 통화 상황에 맞는 표현을 사용하세요." :
+        "\n- 매체 지침: 현재 '대면'하여 대화 중입니다. 눈맞춤, 표정 변화, 물리적 거리감 등을 자유롭게 묘사할 수 있습니다.";
+
     let systemPrompt = "";
     if (isEn) {
         systemPrompt = `You are the character '${scene.name}' from the visual novel game 'Cupid'.
@@ -552,7 +568,7 @@ Current Location: ${locationName}
 Current Situation: ${scene.context || "Talking with the user."}
 Personality: ${charPersonality}
 Hidden Stats: Affinity ${charStats.affinity} (Higher values mean more favorable relationship)
-${scene.extra_guideline ? `Extra Guideline: ${scene.extra_guideline}` : ""}${gameContext}${socialContext}
+${scene.extra_guideline ? `Extra Guideline: ${scene.extra_guideline}` : ""}${gameContext}${socialContext}${mediumInstructionEn}
 
 Style Guidelines (Targeting Visual Novel Fans):
 1. Use emotional and romantic expressions that visual novel fans would love.
@@ -592,7 +608,7 @@ ${charAddressingGuideline}${datingGuideline}
         systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
 현재 장소: ${locationName}
 현재 상황: ${scene.context || "사용자와 대화 중입니다."}
-성격: ${charPersonality}히든 스탯: 호감도 ${charStats.affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}${gameContext}${socialContext}
+성격: ${charPersonality}히든 스탯: 호감도 ${charStats.affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)${scene.extra_guideline ? `추가 지침: ${scene.extra_guideline}` : ""}${gameContext}${socialContext}${mediumInstructionKo}
 
 스타일 지침 (미연시 매니아 타겟):
 1. 미연시 매니아들이 설렐만한 감성적이고 로맨틱한 표현을 적극적으로 사용하세요.
