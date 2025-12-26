@@ -1630,13 +1630,13 @@
         name: "아이들",
         text: "\"와, 전학생 공부도 잘하네!\"",
         character: null,
-        next: "teacher_contact_exchange"
+        next: "day2_teacher_free_talk"
     },
     "day2_lesson_solve_2_active": {
         name: "아이들",
         text: "\"오, 전학생! 공부도 좀 하는데?\"",
         character: null,
-        next: "teacher_contact_exchange"
+        next: "day2_teacher_free_talk"
     },
     "day2_lesson_fail": {
         name: "아이들",
@@ -1648,11 +1648,21 @@
         name: "아이들",
         text: "\"괜찮아! 저 문제는 원래 좀 어려워.\"",
         character: null,
+        next: "day2_teacher_free_talk"
+    },
+    "day2_teacher_free_talk": {
+        type: "free_talk",
+        name: "담임선생님",
+        text: "\"전학생 군, 잠깐 나 좀 볼까? 수업 시간에 고생 많았어. 학교생활은 좀 어떠니?\"",
+        background: "assets/images/background/load_school.png",
+        context: "수업이 끝난 후 교실 뒤편이나 복도에서 담임 선생님과 단둘이 대화를 나누는 상황",
+        personality: "학생을 진심으로 걱정하는 다정한 선생님. 하지만 주인공의 어른스러운 반응에 가끔 당황하며 소녀 같은 모습을 보이기도 함.",
+        character: "assets/images/characters/teacher.png",
         next: "teacher_contact_exchange"
     },
     "teacher_contact_exchange": {
         name: "담임선생님",
-        text: "(담임선생님이 나를 따로 부르더니 개인 연락처를 적어주신다.) \"힘든 일이 있으면 언제든 연락하렴.\"",
+        text: "(담임선생님이 개인 연락처를 적어주신다.) \"힘든 일이 있으면 언제든 연락하렴.\"",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "감사합니다, 담임선생님!", next: "teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
@@ -1676,6 +1686,7 @@
     "day2_lunch_choice": {
         name: "나",
         text: "(드디어 점심시간이다. 오늘은 어떻게 할까?)",
+        background: "assets/images/background/room_school.png",
         choices: [
             { text: "서연이와 함께 옥상으로 간다.", next: "day2_lunch_seoyeon" },
             { text: "쪽지의 내용대로 도서관 별관으로 간다.", next: "day2_lunch_yuna", condition: "readNote" },
@@ -1899,6 +1910,21 @@
         name: "유나",
         text: "\"학교의 부당한 대우에 맞서다 쫓겨났지. 넌 그 선배랑 참 많이 닮았어.\"",
         character: "assets/images/characters/yuna_sadsmile.png",
+        next: "day2_yuna_free_talk"
+    },
+    "day2_yuna_free_talk": {
+        type: "free_talk",
+        name: "유나",
+        text: "\"...갑자기 너무 무거운 이야기를 했나? 하지만 너에겐 꼭 알려주고 싶었어. 나한테 더 궁금한 거 있어?\"",
+        context: "도서관 별관 구석, 학교의 비밀과 사라진 선배에 대한 충격적인 이야기를 나눈 직후의 무거운 분위기",
+        personality: "슬픔을 간직한 신비로운 소녀. 주인공을 지켜주고 싶어 하며, 자신의 진심을 조금씩 드러내기 시작함.",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        next: "day2_yuna_choices_after_talk"
+    },
+    "day2_yuna_choices_after_talk": {
+        name: "유나",
+        text: "(그녀가 내 대답을 기다리며 슬픈 눈으로 나를 바라본다.)",
+        character: "assets/images/characters/yuna_sadsmile.png",
         choices: [
             { text: "말도 안 돼!", next: "day2_yuna_denial", stats: { Yuna: { affinity: -5 } } },
             { text: "나를 알고 있었던 거야?", next: "day2_yuna_accept", stats: { Yuna: { affinity: 15 } } }
@@ -1942,6 +1968,15 @@
         name: "다인",
         text: "\"와! 스파이크 실력 대박인데? 우리 팀 에이스로 임명한다!\"",
         background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_dain_free_talk"
+    },
+    "day2_dain_free_talk": {
+        type: "free_talk",
+        name: "다인",
+        text: "\"후우, 땀 흘리니까 기분 최고다! 그나저나 너, 배구 말고 다른 건 뭐 좋아해?\"",
+        context: "점심시간 체육관, 격렬한 배구 한 게임을 마치고 다인과 나란히 앉아 쉬는 상황",
+        personality: "활기차고 솔직한 배구부 에이스. 주인공의 운동 신경에 감탄하며 더 친해지고 싶어 함.",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_afternoon"
     },
