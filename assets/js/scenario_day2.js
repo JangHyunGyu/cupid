@@ -36,9 +36,10 @@ SCENARIO[2] = {
     "day2_meet_someone": {
         name: "나",
         text: "(뒤를 돌아보자 그곳에는...)",
-        next: "day2_meet_seoyeon",
-        condition: "metSeoyeon",
-        priority: 3
+        choices: [
+            { text: "다음", next: "day2_meet_dain", condition: "metDain" },
+            { text: "다음", next: "day2_meet_seoyeon", excludeCondition: "metDain" }
+        ]
     },
     "day2_meet_dain": {
         name: "다인",
