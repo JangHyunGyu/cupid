@@ -1481,6 +1481,23 @@ const SCENARIO = {
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
+        next: "dain_name_ask"
+    },
+    "dain_name_ask": {
+        name: "Dain",
+        text: "\"By the way... what's your name? I can't keep calling you transfer student!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        choices: [
+            { text: "My name is '{name}'. Nice to meet you!", next: "day2_dain_name_share", setFlag: "knowsName_Dain" },
+            { text: "You can just call me transfer student.", next: "day2_lunch_volleyball" }
+        ]
+    },
+    "day2_dain_name_share": {
+        name: "Dain",
+        text: "\"{name}? Okay! {name}, from today on, we're volleyball buddies! Here comes the ball!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_laugh.png",
         next: "day2_lunch_volleyball"
     },
     "day2_lunch_seoyeon": {

@@ -1798,11 +1798,11 @@
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         choices: [
-            { text: "내 이름은 '{name}'야. 잘 부탁해!", next: "dain_name_share", setFlag: "knowsName_다인" },
+            { text: "내 이름은 '{name}'야. 잘 부탁해!", next: "day2_dain_name_share", setFlag: "knowsName_다인" },
             { text: "그냥 전학생이라고 불러도 돼.", next: "day2_lunch_volleyball" }
         ]
     },
-    "dain_name_share": {
+    "day2_dain_name_share": {
         name: "다인",
         text: "\"{name}? 오케이! {name}, 오늘부터 우린 배구 친구다! 자, 공 간다!\"",
         background: "assets/images/background/gym.png",
