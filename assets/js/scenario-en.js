@@ -1188,34 +1188,22 @@ const SCENARIO = {
         text: "(I didn't expect it to be this eventful... What's waiting for me tomorrow?)",
         night: true,
         choices: [
-            { text: "Send a message to Seoyeon saying thanks for today.", next: "evening_message_seoyeon", condition: "metSeoyeon" },
+            { text: "Recall Seoyeon's kind smile.", next: "evening_think_seoyeon", condition: "metSeoyeon" },
             { text: "Ponder over the things Yuna said.", next: "evening_think_yuna_met", condition: "metYuna" },
             { text: "Recall Dain's lively smile.", next: "evening_think_dain", condition: "metDain" },
             { text: "Recall the questions I felt about the school.", next: "evening_think_yuna", excludeCondition: "metYuna" },
             { text: "I'm tired, so let's just sleep without thinking.", next: "evening_sleep" }
         ]
     },
-    "evening_think_dain": {
+    "evening_think_seoyeon": {
         name: "Me",
-        text: "(Dain's laughter lingers in my ears. I look forward to the tteokbokki tomorrow.)",
+        text: "(Seoyeon's kind smile and voice don't leave my head. Thanks to her, I feel a bit more confident about my new school life.)",
         night: true,
         next: "evening_sleep"
     },
-    "evening_message_seoyeon": {
+    "evening_think_dain": {
         name: "Me",
-        text: "(I sent a message to Seoyeon. 'Thank you for today. I think I'll adapt well thanks to you.')",
-        night: true,
-        next: "evening_message_seoyeon_2"
-    },
-    "evening_message_seoyeon_2": {
-        name: "Me",
-        text: "(After a while, a reply came. My heart is pounding.)",
-        night: true,
-        next: "evening_message_seoyeon_2_2"
-    },
-    "evening_message_seoyeon_2_2": {
-        name: "Me",
-        text: "\"[Seoyeon]: I enjoyed today too! See you at school tomorrow! Good night~ (Heart emoticon)\"",
+        text: "(Dain's laughter lingers in my ears. I look forward to the tteokbokki tomorrow.)",
         night: true,
         next: "evening_sleep"
     },

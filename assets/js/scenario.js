@@ -1415,34 +1415,22 @@
         text: "(전학 첫날부터 이렇게 파란만장할 줄이야... 내일은 또 어떤 일이 기다리고 있을까?)",
         night: true,
         choices: [
-            { text: "서연이에게 오늘 고마웠다고 메시지를 보낸다.", next: "evening_message_seoyeon", condition: "metSeoyeon" },
+            { text: "서연이의 다정한 미소를 떠올려 본다.", next: "evening_think_seoyeon", condition: "metSeoyeon" },
             { text: "유나가 했던 말들을 곱씹어 본다.", next: "evening_think_yuna_met", condition: "metYuna" },
             { text: "다인이의 활기찬 미소를 떠올려 본다.", next: "evening_think_dain", condition: "metDain" },
             { text: "학교에 대해 느꼈던 의문점들을 떠올려 본다.", next: "evening_think_yuna", excludeCondition: "metYuna" },
             { text: "피곤하니 아무 생각 말고 잠이나 자자.", next: "evening_sleep" }
         ]
     },
-    "evening_think_dain": {
+    "evening_think_seoyeon": {
         name: "나",
-        text: "(다인이의 건강한 웃음소리가 귓가에 맴도는 것 같다. 나는 내일 그녀와 함께 먹을 떡볶이를 기대하며 잠을 청했다.)",
+        text: "(서연이의 다정한 미소와 목소리가 머릿속을 떠나지 않는다. 그녀 덕분에 낯선 학교생활에 조금은 자신감이 생기는 기분이다.)",
         night: true,
         next: "evening_sleep"
     },
-    "evening_message_seoyeon": {
+    "evening_think_dain": {
         name: "나",
-        text: "(조심스럽게 휴대폰을 들어 서연이에게 메시지를 보냈다. '오늘 안내해줘서 정말 고마웠어. 덕분에 학교에 잘 적응할 수 있을 것 같아.')",
-        night: true,
-        next: "evening_message_seoyeon_2"
-    },
-    "evening_message_seoyeon_2": {
-        name: "나",
-        text: "(잠시 후, 휴대폰이 진동하며 답장이 왔다. 심장이 두근거린다.)",
-        night: true,
-        next: "evening_message_seoyeon_2_2"
-    },
-    "evening_message_seoyeon_2_2": {
-        name: "나",
-        text: "\"[서연]: 아니야, 나도 오늘 정말 즐거웠어! {name?} 덕분에 학생회 일도 빨리 끝났고. 내일 학교에서 봐! 잘 자~ (하트 이모티콘)\"",
+        text: "(다인이의 건강한 웃음소리가 귓가에 맴도는 것 같다. 나는 내일 그녀와 함께 먹을 떡볶이를 기대하며 잠을 청했다.)",
         night: true,
         next: "evening_sleep"
     },
