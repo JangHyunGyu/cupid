@@ -126,7 +126,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store": {
         name: "Me",
         text: "(I headed to the snack bar with Dain. Since it's break time, the front of the store is crowded with kids.)",
-        background: "assets/images/background/food_room.png",
+        background: "assets/images/background/store.png",
         character: "assets/images/characters/dain_nomal.png",
         choices: [
             { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 10 } } },
