@@ -1,0 +1,208 @@
+if (typeof SCENARIO === 'undefined') {
+    var SCENARIO = {};
+}
+if (!SCENARIO[2]) {
+    SCENARIO[2] = {};
+}
+
+Object.assign(SCENARIO[2], {
+    "day2_start": {
+        name: "나",
+        text: "(알람 소리에 눈을 떴다. 전학 이틀째 아침이다.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        next: "day2_start_2"
+    },
+    "day2_start_2": {
+        name: "나",
+        text: "(어제의 일들이 꿈만 같지만, 책상 위에 놓인 교복이 현실임을 일깨워준다.)",
+        next: "day2_start_3"
+    },
+    "day2_start_3": {
+        name: "나",
+        text: "(오늘은 또 어떤 일들이 벌어질까? 서둘러 준비하고 학교로 향했다.)",
+        next: "day2_school_gate"
+    },
+    "day2_school_gate": {
+        name: "나",
+        text: "(교문 앞에 도착하자 어제보다 한결 익숙한 풍경이 나를 반긴다.)",
+        background: "assets/images/background/school.png",
+        next: "day2_school_gate_2"
+    },
+    "day2_school_gate_2": {
+        name: "나",
+        text: "(교문을 통과하려는데, 누군가 내 어깨를 툭 친다.)",
+        choices: [
+            { text: "뒤를 돌아본다.", next: "day2_meet_someone" }
+        ]
+    },
+    "day2_meet_someone": {
+        name: "나",
+        text: "(뒤를 돌아보자 그곳에는...)",
+        branches: [
+            { next: "day2_meet_nurse", character: "Nurse" },
+            { next: "day2_meet_dain", character: "Dain" },
+            { next: "day2_meet_seoyeon", character: "Seoyeon" },
+            { next: "day2_meet_teacher" }
+        ],
+        selectByHighestAffinity: true
+    },
+    "day2_meet_nurse": {
+        name: "양호선생님",
+        text: "\"어머, {name?}! 좋은 아침이야. 오늘도 기운이 넘쳐 보이네?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_nurse_talk"
+    },
+    "day2_nurse_talk": {
+        name: "양호선생님",
+        text: "(선생님이 나에게 다가와 살짝 윙크를 한다.)",
+        character: "assets/images/characters/nurse.png",
+        branches: [
+            { next: "day2_nurse_talk_has_number", condition: "has_number_nurse" },
+            { next: "day2_nurse_talk_no_number" }
+        ]
+    },
+    "day2_nurse_talk_has_number": {
+        name: "양호선생님",
+        text: "\"어젯밤에 내 생각 하느라 잠 못 잔 건 아니지? 후훗, 농담이야. 오늘도 아프면 언제든 양호실로 오렴.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_classroom"
+    },
+    "day2_nurse_talk_no_number": {
+        name: "양호선생님",
+        text: "\"전학 이틀째인데 벌써 학교에 익숙해진 모양이네. 오늘도 무리하지 말고, 힘들면 양호실로 쉬러 오렴.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_classroom"
+    },
+    "day2_meet_seoyeon": {
+        name: "서연",
+        text: "\"안녕, {name?}! 잘 잤니? 오늘도 일찍 왔구나!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "day2_seoyeon_talk"
+    },
+    "day2_seoyeon_talk": {
+        name: "서연",
+        text: "(서연이가 내 눈을 맞추며 살짝 미소 짓는다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        branches: [
+            { next: "day2_seoyeon_talk_has_number", condition: "has_number_seyoun" },
+            { next: "day2_seoyeon_talk_no_number" }
+        ]
+    },
+    "day2_seoyeon_talk_has_number": {
+        name: "서연",
+        text: "\"어제는 잘 들어갔어? 연락처 교환하고 나서 메시지 보낼까 말까 고민하다가... 너무 늦은 것 같아서 참았어.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        choices: [
+            { text: "나도 서연이 메시지 기다렸는데! 지금이라도 보내줘.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "아, 그랬구나. 나도 피곤해서 바로 잠들었어.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 2 } } }
+        ]
+    },
+    "day2_seoyeon_talk_no_number": {
+        name: "서연",
+        text: "\"어제는 잘 들어갔어? 전학 첫날이라 걱정 많이 했는데, 오늘 보니까 안심이 되네. 오늘도 힘내자!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_classroom"
+    },
+    "day2_seoyeon_happy": {
+        name: "서연",
+        text: "\"정말? 후훗, 그럼 오늘부터는 사소한 거라도 다 공유하기다? 자, 같이 교실로 가자!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_classroom"
+    },
+    "day2_seoyeon_normal": {
+        name: "서연",
+        text: "\"그렇지? 전학 첫날이라 많이 피곤했을 거야. 자, 오늘도 힘내서 학교생활 해보자!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "day2_classroom"
+    },
+    "day2_meet_dain": {
+        name: "다인",
+        text: "\"여어, {name?}! 좋은 아침! 오늘따라 일찍 왔네?\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_dain_talk"
+    },
+    "day2_dain_talk": {
+        name: "다인",
+        text: "(다인이가 활기차게 내 어깨를 툭 친다.)",
+        character: "assets/images/characters/dain_laugh.png",
+        branches: [
+            { next: "day2_dain_talk_dated", condition: "datedDainDay1" },
+            { next: "day2_dain_talk_not_dated" }
+        ]
+    },
+    "day2_dain_talk_dated": {
+        name: "다인",
+        text: "\"어제 먹은 떡볶이 덕분에 오늘 컨디션 최고야! 너도 그렇지?\"",
+        character: "assets/images/characters/dain_laugh.png",
+        choices: [
+            { text: "응! 나도 다인이 덕분에 푹 잤어.", next: "day2_dain_happy", stats: { Dain: { affinity: 10 } } },
+            { text: "난 좀 피곤한데... 다인이는 체력이 정말 좋구나.", next: "day2_dain_normal", stats: { Dain: { affinity: 2 } } }
+        ]
+    },
+    "day2_dain_talk_not_dated": {
+        name: "다인",
+        text: "\"어제는 잘 들어갔어? 전학 첫날인데 학교 구경은 좀 했나 모르겠네! 오늘도 활기차게 보내자구!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_classroom"
+    },
+    "day2_dain_happy": {
+        name: "다인",
+        text: "\"하하! 역시 내 에너지가 좀 넘치긴 하지? 좋아, 오늘 점심시간에도 체육관으로 와! 기다릴게!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_classroom"
+    },
+    "day2_dain_normal": {
+        name: "다인",
+        text: "\"에이~ 엄살은! 학교생활 적응하려면 체력이 국력이라구! 자, 어서 교실로 가자!\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_classroom"
+    },
+    "day2_meet_teacher": {
+        name: "담임선생님",
+        text: "\"어라, {name?} 아니니? 전학 이틀째인데 벌써 학교에 적응한 모양이구나. 일찍 오는 모습이 보기 좋다.\"",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_classroom"
+    },
+    "day2_classroom": {
+        name: "나",
+        text: "(교실에 들어서자 아이들이 어제보다 훨씬 친근하게 인사를 건네온다.)",
+        background: "assets/images/background/room_school.png",
+        next: "day2_classroom_2"
+    },
+    "day2_classroom_2": {
+        name: "나",
+        text: "(자리에 앉아 수업 준비를 하려는데, 책상 위에 작은 쪽지 하나가 놓여 있다.)",
+        choices: [
+            { text: "쪽지를 확인한다.", next: "day2_check_note" }
+        ]
+    },
+    "day2_check_note": {
+        name: "나",
+        text: "(쪽지에는 정갈한 글씨체로 이렇게 적혀 있다.)",
+        next: "day2_note_content"
+    },
+    "day2_note_content": {
+        name: "시스템",
+        text: "\"'점심시간에 도서관 별관 뒤뜰로 와줘. 할 말이 있어.' - 유나\"",
+        next: "day2_morning_class"
+    },
+    "day2_morning_class": {
+        name: "나",
+        text: "(수업 시간 내내 유나의 쪽지가 머릿속을 떠나지 않는다. 대체 무슨 할 말이 있는 걸까?)",
+        branches: [
+            { next: "day2_morning_class_yuna_met", condition: "metYuna" },
+            { next: "day2_morning_class_yuna_new" }
+        ]
+    },
+    "day2_morning_class_yuna_met": {
+        name: "나",
+        text: "(어제 만났던 유나... 그녀가 왜 나에게 이런 쪽지를 남긴 걸까? 비밀이라는 게 대체 무엇인지 궁금해진다.)",
+        next: "day2_lunch_time"
+    },
+    "day2_morning_class_yuna_new": {
+        name: "나",
+        text: "(유나...? 어제는 들어본 적 없는 이름이다. 대체 누구길래 나에게 이런 쪽지를 남긴 걸까?)",
+        next: "day2_lunch_time"
+    }
+});
