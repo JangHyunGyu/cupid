@@ -30,8 +30,8 @@ Object.assign(SCENARIO[2], {
         text: "\"{name?}! 마침 오길 기다리고 있었어! 이리 와서 앉아. 오늘 샌드위치를 좀 넉넉하게 만들어 왔거든.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "와, 정말 맛있어 보여요! 서연 선배는 요리 천재네요.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "학생회 일 때문에 피곤하진 않아요? 무리하는 거 아니죠?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "와, 정말 맛있어 보여! 서연이 넌 요리 천재구나.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "학생회 일 때문에 피곤하진 않아? 너무 무리하는 거 아니지?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 10 } } },
             { text: "(서연의 볼에 묻은 빵가루를 떼어준다)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 20 } } }
         ]
     },
@@ -89,8 +89,8 @@ Object.assign(SCENARIO[2], {
         text: "\"너... 내가 누군지 궁금해서 온 거지? 사실 이 학교에는 아주 깊은 비밀이 있어. 너한테만 보여주고 싶은 게 있는데.\"",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
-            { text: "비밀? 그게 뭔데?", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
-            { text: "그냥 쪽지 보고 궁금해서 와봤어.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
+            { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
+            { text: "그냥 쪽지 보고 궁금해서 와봤어. 넌 누구야?", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
         ]
     },
     "day2_yuna_secret": {
@@ -179,14 +179,43 @@ Object.assign(SCENARIO[2], {
         text: "(긴장 탓일까, 관자놀이가 지끈거린다. 홀린 듯 조용한 양호실로 발걸음을 옮겼다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
-        next: "day2_lunch_nurse_2"
+        next: "day2_lunch_nurse_talk"
     },
-    "day2_lunch_nurse_2": {
+    "day2_lunch_nurse_talk": {
+        name: "양호선생님",
+        text: "\"어머, 안녕? 점심시간에 양호실이라니, 어디가 아픈 거니?\"",
+        character: "assets/images/characters/nurse.png",
+        branches: [
+            { next: "day2_lunch_nurse_met", condition: "metNurse" },
+            { next: "day2_lunch_nurse_new" }
+        ]
+    },
+    "day2_lunch_nurse_met": {
         name: "양호선생님",
         text: "\"어머, 귀여운 {name?}이네? 어디가 아픈 걸까, 아니면 내 얼굴을 봐서 설레는 걸까?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 5 } },
+        next: "nurse_free_talk"
+    },
+    "day2_lunch_nurse_new": {
+        name: "양호선생님",
+        text: "\"어머, 처음 보는 얼굴이네? 오늘 전학 온 그 학생이니? 나는 양호 선생님이야.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        setFlag: "metNurse",
+        next: "day2_lunch_nurse_new_name_ask"
+    },
+    "day2_lunch_nurse_new_name_ask": {
+        name: "양호선생님",
+        text: "\"그러고 보니 이름이 뭐야? 선생님한테만 살짝 알려줄래?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_new_name_share"
+    },
+    "day2_lunch_nurse_new_name_share": {
+        name: "나",
+        text: "\"제 이름은 {name}이에요.\"",
+        setFlag: "knowsName_양호선생님",
         next: "nurse_free_talk"
     },
     "nurse_free_talk": {

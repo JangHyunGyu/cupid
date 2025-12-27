@@ -230,18 +230,30 @@ Object.assign(SCENARIO[1], {
     },
     "alone_2_2": {
         name: "???",
-        text: "\"...Are you lost? Students don't usually come here. You found it well, {name?}.\"",
+        text: "\"...Are you lost? Students don't usually come here. You managed to find your way here.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "yuna_intro"
     },
     "yuna_intro": {
         name: "???",
         text: "(She slowly raises her head and looks at me. Her deep and mysterious purple eyes quietly observe me.)",
+        next: "yuna_intro_name_ask"
+    },
+    "yuna_intro_name_ask": {
+        name: "???",
+        text: "\"I'm Yuna. And you... what's your name?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "yuna_intro_name_share"
+    },
+    "yuna_intro_name_share": {
+        name: "Me",
+        text: "\"I'm {name}. I just transferred today.\"",
+        setFlag: "knowsName_유나",
         next: "yuna_intro_2"
     },
     "yuna_intro_2": {
-        name: "???",
-        text: "\"I'm 'Yuna'. I'm just... someone who likes to stay quiet. This school... is very different from how it looks. From you... somehow I feel a familiar atmosphere.\"",
+        name: "Yuna",
+        text: "\"{name}... Hehe, that's a nice name. This school... is very different from how it looks. From you... somehow I feel a familiar atmosphere.\"",
         setFlag: "metYuna",
         next: "yuna_free_talk"
     },
@@ -367,14 +379,14 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_3": {
         name: "???",
-        text: "\"Hey, {name?}! Don't just watch from there, come here and let's have a game! You look like you're good at sports?\"",
+        text: "\"Hey, you there! Don't just watch from there, come here and let's have a game! You look like you're good at sports?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "dain_name_share"
     },
     "dain_name_share": {
         name: "Me",
-        text: "\"My name is '{name}'.\"",
+        text: "\"Me? I'm {name}. I just transferred today.\"",
         setFlag: "knowsName_다인",
         next: "dain_name_share_2"
     },

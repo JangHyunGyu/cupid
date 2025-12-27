@@ -89,8 +89,8 @@ Object.assign(SCENARIO[2], {
         text: "\"You... you're curious about me, aren't you? This school hides a very deep secret. And I want to show it to you. Only you.\"",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
-            { text: "A secret? What kind of secret?", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
-            { text: "I was just curious after seeing your note.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
+            { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
+            { text: "I was just curious after seeing your note. Who are you?", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
         ]
     },
     "day2_yuna_secret": {
@@ -179,14 +179,43 @@ Object.assign(SCENARIO[2], {
         text: "(Maybe it's the stress, but my head is throbbing. I find myself walking toward the quiet of the nurse's office.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
-        next: "day2_lunch_nurse_2"
+        next: "day2_lunch_nurse_talk"
     },
-    "day2_lunch_nurse_2": {
+    "day2_lunch_nurse_talk": {
+        name: "Nurse",
+        text: "\"Oh, hello there. What brings you to the nurse's office during lunch? Are you feeling unwell?\"",
+        character: "assets/images/characters/nurse.png",
+        branches: [
+            { next: "day2_lunch_nurse_met", condition: "metNurse" },
+            { next: "day2_lunch_nurse_new" }
+        ]
+    },
+    "day2_lunch_nurse_met": {
         name: "Nurse",
         text: "\"Oh, if it isn't my favorite student. Is something hurting, or did you just come to see my pretty face?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 5 } },
+        next: "nurse_free_talk"
+    },
+    "day2_lunch_nurse_new": {
+        name: "Nurse",
+        text: "\"Oh, I haven't seen you before. Are you the new transfer student? I'm the school nurse.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        setFlag: "metNurse",
+        next: "day2_lunch_nurse_new_name_ask"
+    },
+    "day2_lunch_nurse_new_name_ask": {
+        name: "Nurse",
+        text: "\"By the way, what's your name? Won't you tell me? Just between us.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_new_name_share"
+    },
+    "day2_lunch_nurse_new_name_share": {
+        name: "Me",
+        text: "\"My name is {name}.\"",
+        setFlag: "knowsName_양호선생님",
         next: "nurse_free_talk"
     },
     "nurse_free_talk": {

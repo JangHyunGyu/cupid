@@ -87,12 +87,34 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "day2_after_yuna_2"
+        branches: [
+            { next: "day2_after_yuna_met", condition: "metYuna" },
+            { next: "day2_after_yuna_new" }
+        ]
     },
-    "day2_after_yuna_2": {
+    "day2_after_yuna_met": {
         name: "유나",
         text: "\"봐, {name?}. 이 벽에 새겨진 문양들... 어제 도서관에서 봤던 책의 내용과 일치해.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_after_yuna_3"
+    },
+    "day2_after_yuna_new": {
+        name: "유나",
+        text: "\"너... 내가 누군지 궁금해서 온 거지? 사실 이 학교에는 아주 깊은 비밀이 있어.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "metYuna",
+        next: "day2_after_yuna_new_name_ask"
+    },
+    "day2_after_yuna_new_name_ask": {
+        name: "유나",
+        text: "\"난 유나야. 넌 이름이 뭐야?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_after_yuna_new_name_share"
+    },
+    "day2_after_yuna_new_name_share": {
+        name: "나",
+        text: "\"내 이름은 {name}야.\"",
+        setFlag: "knowsName_유나",
         next: "day2_after_yuna_3"
     },
     "day2_after_yuna_3": {
@@ -133,14 +155,36 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(다인이의 스파이크 연습을 도와주다 보니 온몸이 땀으로 젖었다. 하지만 기분은 상쾌하다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_active.png",
+        character: "assets/images/characters/dain_sweat.png",
         night: true,
-        next: "day2_after_dain_2"
+        branches: [
+            { next: "day2_after_dain_met", condition: "metDain" },
+            { next: "day2_after_dain_new" }
+        ]
     },
-    "day2_after_dain_2": {
+    "day2_after_dain_met": {
         name: "다인",
         text: "\"하아, 하아... {name?}, 너 진짜 대단하다! 내 공을 그렇게 다 받아낼 줄은 몰랐어!\"",
-        character: "assets/images/characters/dain_laugh.png",
+        character: "assets/images/characters/dain_sweat.png",
+        next: "day2_after_dain_3"
+    },
+    "day2_after_dain_new": {
+        name: "다인",
+        text: "\"하아, 하아... 너 운동 신경 진짜 대박인데? 처음 보는데 호흡이 척척 맞네!\"",
+        character: "assets/images/characters/dain_sweat.png",
+        setFlag: "metDain",
+        next: "day2_after_dain_new_name_ask"
+    },
+    "day2_after_dain_new_name_ask": {
+        name: "다인",
+        text: "\"난 2학년 3반 정다인이야! 넌 이름이 뭐야?\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_after_dain_new_name_share"
+    },
+    "day2_after_dain_new_name_share": {
+        name: "나",
+        text: "\"난 {name}라고 해. 나도 2학년 3반이야.\"",
+        setFlag: "knowsName_다인",
         next: "day2_after_dain_3"
     },
     "day2_after_dain_3": {
@@ -162,7 +206,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_match": {
         name: "다인",
         text: "\"오~ 자신만만한데? 좋아, 내기 걸고 한판 하는 거다? 지는 사람이 떡볶이 쏘기!\"",
-        character: "assets/images/characters/dain_active.png",
+        character: "assets/images/characters/dain_laugh.png",
         next: "day2_dain_night_talk"
     },
     "day2_dain_food": {
@@ -183,12 +227,34 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
-        next: "day2_after_nurse_2"
+        branches: [
+            { next: "day2_after_nurse_met", condition: "metNurse" },
+            { next: "day2_after_nurse_new" }
+        ]
     },
-    "day2_after_nurse_2": {
+    "day2_after_nurse_met": {
         name: "양호선생님",
         text: "\"어머, {name?}. 또 왔네? 오늘은 어디가 아파서 온 걸까? 아니면... 그냥 내 얼굴 보러 온 거야?\"",
         character: "assets/images/characters/nurse.png",
+        next: "day2_after_nurse_3"
+    },
+    "day2_after_nurse_new": {
+        name: "양호선생님",
+        text: "\"어머, 처음 보는 얼굴이네? 오늘 전학 온 그 학생이니? 나는 양호 선생님이야.\"",
+        character: "assets/images/characters/nurse.png",
+        setFlag: "metNurse",
+        next: "day2_after_nurse_new_name_ask"
+    },
+    "day2_after_nurse_new_name_ask": {
+        name: "양호선생님",
+        text: "\"그러고 보니 이름이 뭐야? 선생님한테만 살짝 알려줄래?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_after_nurse_new_name_share"
+    },
+    "day2_after_nurse_new_name_share": {
+        name: "나",
+        text: "\"제 이름은 {name}이에요.\"",
+        setFlag: "knowsName_양호선생님",
         next: "day2_after_nurse_3"
     },
     "day2_after_nurse_3": {

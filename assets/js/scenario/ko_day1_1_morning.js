@@ -125,13 +125,13 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_name_ask": {
         name: "서연",
-        text: "(서연이가 갑자기 멈춰 서더니 나를 돌아본다.) \"아, 그러고 보니 내 소개만 하고 네 이름은 아직 못 들었네! {name?}, 이름이 뭐야?\"",
+        text: "(서연이가 갑자기 멈춰 서더니 나를 돌아본다.) \"아, 그러고 보니 아까 내가 네 이름을 먼저 말해버렸네. {name}, 맞지? 다시 한번 정식으로 인사할게!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_name_share"
     },
     "hallway_name_share": {
         name: "나",
-        text: "\"내 이름은 '{name}'야. 잘 부탁해.\"",
+        text: "\"응, 맞아. {name}이야. 아까는 정신이 없어서 제대로 인사를 못 했네. 잘 부탁해, 서연아.\"",
         setFlag: "knowsName_서연",
         next: "hallway_name_share_2"
     },
@@ -233,6 +233,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "서연이가 있는 원예부라면 나도 관심 있어! 같이 꽃 가꾸고 싶어.", next: "path_club_flower", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "동아리보다는... 서연이 너에 대해 더 알고 싶은데.", next: "path_direct_2", stats: { Seoyeon: { affinity: 12 } } },
             { text: "아직은 잘 모르겠어. 학교생활에 좀 적응하고 나서 결정할게.", next: "path_normal_2", stats: { Seoyeon: { affinity: -5 } } },
             { text: "귀찮게 동아리는 무슨... 그냥 혼자 있을래.", next: "path_rude_2", stats: { Seoyeon: { affinity: -25 } } }
         ]
@@ -337,6 +339,7 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_담임선생님", stats: { Teacher: { affinity: 5 } } },
+            { text: "와아아! 반가워 얘들아! 오늘부터 잘 지내보자!", next: "class_after_party", setFlags: ["personality_active", "knowsName_담임선생님"], stats: { Teacher: { affinity: 3 } } },
             { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlags: ["personality_active", "knowsName_담임선생님"], stats: { Teacher: { affinity: 2 } } },
             { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_담임선생님"], stats: { Teacher: { affinity: 2 } } },
             { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study", setFlags: ["personality_study", "knowsName_담임선생님"], stats: { Teacher: { affinity: -2 } } }
@@ -347,6 +350,7 @@ Object.assign(SCENARIO[1], {
         text: "\"오, {name}이라고 하는구나. 이름이 참 예쁘네. 자, {name}. 친구들에게 자기소개 한마디 부탁할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
+            { text: "엄청나게 텐션 높게 인사한다!", next: "class_after_party", setFlag: "personality_active" },
             { text: "활발하게 인사한다.", next: "class_after_active", setFlag: "personality_active" },
             { text: "차분하게 인사한다.", next: "class_after_quiet", setFlag: "personality_quiet" },
             { text: "귀찮다는 듯 대충 인사한다.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -10 } } }

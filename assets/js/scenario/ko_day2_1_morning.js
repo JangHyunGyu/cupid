@@ -40,12 +40,25 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(뒤를 돌아보자 그곳에는...)",
         branches: [
+            { next: "day2_meet_yuna", character: "Yuna", condition: "metYuna" },
             { next: "day2_meet_nurse", character: "Nurse", condition: "metNurse" },
             { next: "day2_meet_dain", character: "Dain", condition: "metDain" },
             { next: "day2_meet_seoyeon", character: "Seoyeon", condition: "metSeoyeon" },
             { next: "day2_meet_teacher" }
         ],
         selectByHighestAffinity: true
+    },
+    "day2_meet_yuna": {
+        name: "나",
+        text: "(교문 옆 커다란 느티나무 아래, 유나가 무심한 표정으로 서 있는 것이 보였다. 그녀는 책을 덮고 나를 가만히 바라본다.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_talk"
+    },
+    "day2_yuna_talk": {
+        name: "유나",
+        text: "\"...안녕. 오늘도 그 '빛'은 여전하네. 다행이야. 이따가... 쪽지 확인해봐.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_classroom"
     },
     "day2_meet_nurse": {
         name: "양호선생님",

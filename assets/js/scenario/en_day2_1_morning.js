@@ -40,12 +40,25 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(I turn around to see...)",
         branches: [
+            { next: "day2_meet_yuna", character: "Yuna", condition: "metYuna" },
             { next: "day2_meet_nurse", character: "Nurse", condition: "metNurse" },
             { next: "day2_meet_dain", character: "Dain", condition: "metDain" },
             { next: "day2_meet_seoyeon", character: "Seoyeon", condition: "metSeoyeon" },
             { next: "day2_meet_teacher" }
         ],
         selectByHighestAffinity: true
+    },
+    "day2_meet_yuna": {
+        name: "Me",
+        text: "(Under the large zelkova tree by the school gate, I saw Yuna standing with an indifferent expression. She closes her book and stares at me quietly.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_talk"
+    },
+    "day2_yuna_talk": {
+        name: "Yuna",
+        text: "\"...Hi. That 'light' is still there today. I'm glad. Later... check the note.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_classroom"
     },
     "day2_meet_nurse": {
         name: "Nurse",

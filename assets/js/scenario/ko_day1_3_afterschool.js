@@ -496,7 +496,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(다인이의 연습이 끝날 때까지 체육관 스탠드에 앉아 그녀를 지켜보았다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_active.png",
+        character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         next: "after_dain_end_2"
     },
@@ -606,6 +606,18 @@ Object.assign(SCENARIO[1], {
         text: "\"어머, 처음 보는 얼굴이네? 오늘 전학 온 그 학생이니? 나는 양호 선생님이야. 어디가 아파서 온 걸까?\"",
         character: "assets/images/characters/nurse.png",
         setFlag: "metNurse",
+        next: "after_nurse_new_name_ask"
+    },
+    "after_nurse_new_name_ask": {
+        name: "양호선생님",
+        text: "\"그러고 보니 이름이 뭐야? 선생님한테만 살짝 알려줄래?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "after_nurse_new_name_share"
+    },
+    "after_nurse_new_name_share": {
+        name: "나",
+        text: "\"제 이름은 {name}이에요.\"",
+        setFlag: "knowsName_양호선생님",
         next: "nurse_free_talk_after_day1"
     },
     "after_nurse_2": {

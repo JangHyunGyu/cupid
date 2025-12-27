@@ -125,13 +125,13 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_name_ask": {
         name: "Seoyeon",
-        text: "(Seoyeon suddenly stops and turns to me.) \"Oh, come to think of it, I only introduced myself and haven't heard your name yet! {name?}, what's your name?\"",
+        text: "(Seoyeon suddenly stops and turns to me.) \"Oh, come to think of it, I already said your name earlier. {name}, right? Let me introduce myself properly once more!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_name_share"
     },
     "hallway_name_share": {
         name: "Me",
-        text: "\"My name is '{name}'. Nice to meet you.\"",
+        text: "\"Yeah, that's right. I'm {name}. I was a bit distracted earlier and couldn't greet you properly. Nice to meet you, Seoyeon.\"",
         setFlag: "knowsName_서연",
         next: "hallway_name_share_2"
     },
@@ -233,6 +233,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "If I join the student council, can I be with you every day? Then I'll definitely apply!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "If it's the gardening club you're in, I'm interested too! I want to grow flowers with you.", next: "path_club_flower", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "Rather than a club... I want to know more about you, Seoyeon.", next: "path_direct_2", stats: { Seoyeon: { affinity: 12 } } },
             { text: "I'm not sure yet. I'll decide after I adapt to school life a bit.", next: "path_normal_2", stats: { Seoyeon: { affinity: -5 } } },
             { text: "Clubs are annoying... I'll just be alone.", next: "path_rude_2", stats: { Seoyeon: { affinity: -25 } } }
         ]
@@ -337,6 +339,7 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_담임선생님", stats: { Teacher: { affinity: 5 } } },
+            { text: "Waaaah! Nice to meet you guys! Let's get along well from today!", next: "class_after_party", setFlags: ["personality_active", "knowsName_담임선생님"], stats: { Teacher: { affinity: 3 } } },
             { text: "Hi! I like exercising and have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_담임선생님"], stats: { Teacher: { affinity: 2 } } },
             { text: "Nice to meet you. I'm the type who likes reading books quietly.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_담임선생님"], stats: { Teacher: { affinity: 2 } } },
             { text: "I came here to study. I hate being disturbed, so let's just get along moderately.", next: "class_after_study", setFlags: ["personality_study", "knowsName_담임선생님"], stats: { Teacher: { affinity: -2 } } }
@@ -347,6 +350,7 @@ Object.assign(SCENARIO[1], {
         text: "\"Oh, so your name is {name}. It's a very pretty name. Now, {name}. Can you give a word of introduction to your friends?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
+            { text: "Greet with incredibly high tension!", next: "class_after_party", setFlag: "personality_active" },
             { text: "Greet actively.", next: "class_after_active", setFlag: "personality_active" },
             { text: "Greet calmly.", next: "class_after_quiet", setFlag: "personality_quiet" },
             { text: "Greet roughly as if it's annoying.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -10 } } }

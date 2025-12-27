@@ -87,12 +87,34 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "day2_after_yuna_2"
+        branches: [
+            { next: "day2_after_yuna_met", condition: "metYuna" },
+            { next: "day2_after_yuna_new" }
+        ]
     },
-    "day2_after_yuna_2": {
+    "day2_after_yuna_met": {
         name: "Yuna",
         text: "\"Look, {name?}. These patterns on the wall... they're identical to the ones in the book we found yesterday.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_after_yuna_3"
+    },
+    "day2_after_yuna_new": {
+        name: "Yuna",
+        text: "\"You... you're curious about me, aren't you? This school hides a very deep secret.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "metYuna",
+        next: "day2_after_yuna_new_name_ask"
+    },
+    "day2_after_yuna_new_name_ask": {
+        name: "Yuna",
+        text: "\"I'm Yuna. What's your name?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_after_yuna_new_name_share"
+    },
+    "day2_after_yuna_new_name_share": {
+        name: "Me",
+        text: "\"My name is {name}.\"",
+        setFlag: "knowsName_유나",
         next: "day2_after_yuna_3"
     },
     "day2_after_yuna_3": {
@@ -133,14 +155,36 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Helping Dain with her spikes has left me drenched in sweat, but the physical exertion feels good.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_active.png",
+        character: "assets/images/characters/dain_sweat.png",
         night: true,
-        next: "day2_after_dain_2"
+        branches: [
+            { next: "day2_after_dain_met", condition: "metDain" },
+            { next: "day2_after_dain_new" }
+        ]
     },
-    "day2_after_dain_2": {
+    "day2_after_dain_met": {
         name: "Dain",
         text: "\"Haa, haa... {name?}, you're incredible! I didn't think you'd be able to return all of those!\"",
-        character: "assets/images/characters/dain_laugh.png",
+        character: "assets/images/characters/dain_sweat.png",
+        next: "day2_after_dain_3"
+    },
+    "day2_after_dain_new": {
+        name: "Dain",
+        text: "\"Haa, haa... Your reflexes are insane! We've never met, but we're totally in sync!\"",
+        character: "assets/images/characters/dain_sweat.png",
+        setFlag: "metDain",
+        next: "day2_after_dain_new_name_ask"
+    },
+    "day2_after_dain_new_name_ask": {
+        name: "Dain",
+        text: "\"I'm Dain Jung from Class 2-3! What's your name?\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_after_dain_new_name_share"
+    },
+    "day2_after_dain_new_name_share": {
+        name: "Me",
+        text: "\"I'm {name}. I'm in Class 2-3 too.\"",
+        setFlag: "knowsName_다인",
         next: "day2_after_dain_3"
     },
     "day2_after_dain_3": {
@@ -162,7 +206,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_match": {
         name: "Dain",
         text: "\"Oh? Confident, are we? Fine, let's make a bet. Loser buys Tteokbokki!\"",
-        character: "assets/images/characters/dain_active.png",
+        character: "assets/images/characters/dain_laugh.png",
         next: "day2_dain_night_talk"
     },
     "day2_dain_food": {
@@ -183,12 +227,34 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
-        next: "day2_after_nurse_2"
+        branches: [
+            { next: "day2_after_nurse_met", condition: "metNurse" },
+            { next: "day2_after_nurse_new" }
+        ]
     },
-    "day2_after_nurse_2": {
+    "day2_after_nurse_met": {
         name: "Nurse",
         text: "\"Oh, {name?}. Back again? What's the matter today? Or... did you just come to see me?\"",
         character: "assets/images/characters/nurse.png",
+        next: "day2_after_nurse_3"
+    },
+    "day2_after_nurse_new": {
+        name: "Nurse",
+        text: "\"Oh, I haven't seen you before. Are you the new transfer student? I'm the school nurse.\"",
+        character: "assets/images/characters/nurse.png",
+        setFlag: "metNurse",
+        next: "day2_after_nurse_new_name_ask"
+    },
+    "day2_after_nurse_new_name_ask": {
+        name: "Nurse",
+        text: "\"By the way, what's your name? Won't you tell me? Just between us.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_after_nurse_new_name_share"
+    },
+    "day2_after_nurse_new_name_share": {
+        name: "Me",
+        text: "\"My name is {name}.\"",
+        setFlag: "knowsName_양호선생님",
         next: "day2_after_nurse_3"
     },
     "day2_after_nurse_3": {

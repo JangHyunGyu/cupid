@@ -430,7 +430,7 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(I sit in the stands and watch as Dain finishes her practice with incredible focus.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_active.png",
+        character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         next: "after_dain_end_2"
     },
@@ -540,6 +540,18 @@ Object.assign(SCENARIO[1], {
         text: "\"Oh? A new face. You must be the transfer student. I'm the school nurse. What brings you here? Not feeling well?\"",
         character: "assets/images/characters/nurse.png",
         setFlag: "metNurse",
+        next: "after_nurse_new_name_ask"
+    },
+    "after_nurse_new_name_ask": {
+        name: "Nurse",
+        text: "\"By the way, what's your name? Won't you tell me?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "after_nurse_new_name_share"
+    },
+    "after_nurse_new_name_share": {
+        name: "Me",
+        text: "\"My name is {name}.\"",
+        setFlag: "knowsName_양호선생님",
         next: "nurse_free_talk_after_day1"
     },
     "after_nurse_2": {

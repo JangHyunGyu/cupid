@@ -230,18 +230,30 @@ Object.assign(SCENARIO[1], {
     },
     "alone_2_2": {
         name: "???",
-        text: "\"...길을 잃었어? 여긴 학생들이 잘 안 오는 곳인데. 용케 찾았네, {name?}.\"",
+        text: "\"...길을 잃었어? 여긴 학생들이 잘 안 오는 곳인데. 용케 여기까지 찾아왔네.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "yuna_intro"
     },
     "yuna_intro": {
         name: "???",
         text: "(그녀가 천천히 고개를 들어 나를 바라본다. 깊고 신비로운 보랏빛 눈동자가 나를 조용히 관찰한다.)",
+        next: "yuna_intro_name_ask"
+    },
+    "yuna_intro_name_ask": {
+        name: "???",
+        text: "\"난 '유나'라고 해. 너는... 이름이 뭐야?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "yuna_intro_name_share"
+    },
+    "yuna_intro_name_share": {
+        name: "나",
+        text: "\"난 {name}이야. 오늘 전학 왔어.\"",
+        setFlag: "knowsName_유나",
         next: "yuna_intro_2"
     },
     "yuna_intro_2": {
-        name: "???",
-        text: "\"난 '유나'라고 해. 그냥... 조용히 지내는 걸 좋아하는 사람이야. 이 학교... 겉보기와는 많이 다르거든. 너한테서는... 왠지 낯익은 분위기가 느껴져.\"",
+        name: "유나",
+        text: "\"{name}... 후훗, 좋은 이름이네. 이 학교... 겉보기와는 많이 다르거든. 너한테서는... 왠지 낯익은 분위기가 느껴져.\"",
         setFlag: "metYuna",
         next: "yuna_free_talk"
     },
@@ -367,14 +379,14 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_3": {
         name: "???",
-        text: "\"어이, {name?}! 거기서 구경만 하지 말고 이리 와서 한 판 붙자! 너, 운동 좀 하게 생겼는데?\"",
+        text: "\"어이, 거기 너! 거기서 구경만 하지 말고 이리 와서 한 판 붙자! 너, 운동 좀 하게 생겼는데?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "dain_name_share"
     },
     "dain_name_share": {
         name: "나",
-        text: "\"내 이름은 '{name}'야.\"",
+        text: "\"나? 난 {name}이야. 오늘 전학 왔어.\"",
         setFlag: "knowsName_다인",
         next: "dain_name_share_2"
     },
