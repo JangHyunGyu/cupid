@@ -45,8 +45,16 @@ Object.assign(SCENARIO[1], {
             { text: "Send a message to Seoyeon.", next: "night_message_seyoun", condition: "has_number_seyoun" },
             { text: "Send a message to Yuna.", next: "night_message_yuna", condition: "has_number_yuna" },
             { text: "Send a message to Dain.", next: "night_message_dain", condition: "has_number_dain" },
+            { text: "Check Affinity Status", next: "day1_check_affinity" },
             { text: "Just sleep.", next: "day1_end" }
         ]
+    },
+    "day1_check_affinity": {
+        name: "System",
+        text: "Current affinity status with the characters.{affinity_list}",
+        background: "assets/images/background/room_night.png",
+        night: true,
+        next: "night_home_check_contact"
     },
     "night_message_seyoun": {
         name: "Me",

@@ -45,8 +45,16 @@ Object.assign(SCENARIO[1], {
             { text: "서연이에게 메시지를 보낸다.", next: "night_message_seyoun", condition: "has_number_seyoun" },
             { text: "유나에게 메시지를 보낸다.", next: "night_message_yuna", condition: "has_number_yuna" },
             { text: "다인이에게 메시지를 보낸다.", next: "night_message_dain", condition: "has_number_dain" },
+            { text: "호감도 확인하기", next: "day1_check_affinity" },
             { text: "그냥 잠을 청한다.", next: "day1_end" }
         ]
+    },
+    "day1_check_affinity": {
+        name: "시스템",
+        text: "현재 캐릭터들과의 호감도 상태입니다.{affinity_list}",
+        background: "assets/images/background/room_night.png",
+        night: true,
+        next: "night_home_check_contact"
     },
     "night_message_seyoun": {
         name: "나",
