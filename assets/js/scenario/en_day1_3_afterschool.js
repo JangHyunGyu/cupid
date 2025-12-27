@@ -135,7 +135,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"It's a promise! No breaking it! See you tomorrow, {name?}. Get home safe!\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "after_home"
+        next: "after_seoyeon_contact_check"
     },
     "after_seoyeon_tease": {
         name: "Seoyeon",
@@ -147,6 +147,34 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"Hmph... You're so mean! But you'd better show up. If you don't, I'll use my authority as president to punish you! Hehe, just kidding. See you tomorrow!\"",
         character: "assets/images/characters/seyoun_pout.png",
+        next: "after_seoyeon_contact_check"
+    },
+    "after_seoyeon_contact_check": {
+        branches: [
+            { next: "after_home", condition: "has_number_seyoun" },
+            { next: "after_seoyeon_contact_ask" }
+        ]
+    },
+    "after_seoyeon_contact_ask": {
+        name: "Seoyeon",
+        text: "\"Oh, right! We haven't exchanged contact info yet, have we? If you don't mind... could I have your number? I'd love to message you later!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        choices: [
+            { text: "Sure, here's my number.", next: "after_seoyeon_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
+            { text: "Sorry, maybe later.", next: "after_seoyeon_contact_fail" }
+        ]
+    },
+    "after_seoyeon_contact_success": {
+        name: "Seoyeon",
+        text: "\"Thanks! I'll definitely message you later then. Get home safe!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 10 } },
+        next: "after_home"
+    },
+    "after_seoyeon_contact_fail": {
+        name: "Seoyeon",
+        text: "\"Oh... okay! I guess I was a bit sudden. Sorry about that. See you at school tomorrow!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "after_home"
     },
     "after_seoyeon_worry": {
@@ -491,7 +519,7 @@ Object.assign(SCENARIO[1], {
                 next: "dain_contact_call_fail",
                 affinityChar: "Dain",
                 affinityBranches: [
-                    { minAffinity: 50, next: "dain_contact_call_success" }
+                    { minAffinity: 40, next: "dain_contact_call_success" }
                 ],
                 setFlags: ["has_number_dain", "has_any_contact"]
             },

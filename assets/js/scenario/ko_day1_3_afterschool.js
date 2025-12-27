@@ -135,7 +135,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"약속한 거다? 어기면 안 돼! 그럼 내일 봐, {name?}. 조심히 들어가!\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "after_home"
+        next: "after_seoyeon_contact_check"
     },
     "after_seoyeon_tease": {
         name: "서연",
@@ -147,6 +147,34 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"치... 정말 못됐다니까! 그래도 꼭 와야 해? 안 오면 학생회장으로서 아주 무서운(?) 잔소리를 들려줄 테니까! 후훗, 농담이야. 내일 봐!\"",
         character: "assets/images/characters/seyoun_pout.png",
+        next: "after_seoyeon_contact_check"
+    },
+    "after_seoyeon_contact_check": {
+        branches: [
+            { next: "after_home", condition: "has_number_seyoun" },
+            { next: "after_seoyeon_contact_ask" }
+        ]
+    },
+    "after_seoyeon_contact_ask": {
+        name: "서연",
+        text: "\"아, 맞다! 우리 아직 연락처 교환 안 했지? 괜찮다면... 번호 알려줄 수 있어? 나중에 메시지 하고 싶어서!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        choices: [
+            { text: "응, 좋아. 여기 내 번호야.", next: "after_seoyeon_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
+            { text: "미안, 번호는 좀... 나중에 알려줄게.", next: "after_seoyeon_contact_fail" }
+        ]
+    },
+    "after_seoyeon_contact_success": {
+        name: "서연",
+        text: "\"고마워! 그럼 진짜로 나중에 연락할게. 잘 가!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 10 } },
+        next: "after_home"
+    },
+    "after_seoyeon_contact_fail": {
+        name: "서연",
+        text: "\"아... 응, 알았어! 내가 너무 갑자기 물어봤지? 미안해. 그럼 내일 학교에서 봐!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "after_home"
     },
     "after_seoyeon_worry": {
@@ -557,7 +585,7 @@ Object.assign(SCENARIO[1], {
                 next: "dain_contact_call_fail",
                 affinityChar: "Dain",
                 affinityBranches: [
-                    { minAffinity: 50, next: "dain_contact_call_success" }
+                    { minAffinity: 40, next: "dain_contact_call_success" }
                 ],
                 setFlags: ["has_number_dain", "has_any_contact"]
             },
