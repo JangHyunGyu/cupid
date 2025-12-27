@@ -153,6 +153,13 @@ function getScene(id) {
         return SCENARIO[gameState.currentDay][id];
     }
     
+    // 모든 날짜를 순회하며 검색 (날짜 변경 시점의 유연성을 위해)
+    for (const day in SCENARIO) {
+        if (SCENARIO[day] && SCENARIO[day][id]) {
+            return SCENARIO[day][id];
+        }
+    }
+    
     // 공통 시나리오(0)에서 검색
     if (SCENARIO[0] && SCENARIO[0][id]) {
         return SCENARIO[0][id];

@@ -9,20 +9,21 @@ Object.assign(SCENARIO[2], {
     "day2_end": {
         name: "나",
         text: "(이틀째 밤이 깊어간다. 창밖의 어둠이 어제보다 더 짙게 느껴지는 건 기분 탓일까...?)",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_end_2"
     },
     "day2_end_2": {
         name: "나",
         text: "(침대에 누워 오늘 있었던 일들을 되짚어본다. 유나가 말한 학교의 비밀, 그리고 그녀들과의 시간...)",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_home"
     },
     "day2_night_home": {
         name: "나",
         text: "(잠들기 전, 습관적으로 스마트폰을 확인한다.)",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         character: null,
         night: true,
         branches: [
@@ -33,6 +34,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_home_check_contact": {
         name: "나",
         text: "(누군가에게 메시지를 보내볼까...?)",
+        background: "assets/images/background/room_my.png",
         night: true,
         choices: [
             { text: "서연이에게 메시지를 보낸다.", next: "day2_night_message_seyoun", condition: "has_number_seyoun" },
@@ -46,7 +48,7 @@ Object.assign(SCENARIO[2], {
     "day2_check_affinity": {
         name: "시스템",
         text: "현재 캐릭터들과의 호감도 상태입니다.{affinity_list}",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_home_check_contact"
     },

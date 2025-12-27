@@ -9,7 +9,7 @@ Object.assign(SCENARIO[1], {
     "after_home": {
         name: "Me",
         text: "(The sun has set, and I've returned home through the dark streets. My first day at the new school... it's been a long one.)",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         character: null,
         night: true,
         next: "after_home_2"
@@ -17,19 +17,21 @@ Object.assign(SCENARIO[1], {
     "after_home_2": {
         name: "Me",
         text: "(I throw myself onto the bed. Staring at the ceiling, I retrace the day's events. The unfamiliar school, and the new faces...)",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "after_home_3"
     },
     "after_home_3": {
         name: "Me",
         text: "(What kind of things are waiting for me tomorrow? With a strange sense of anticipation, I close my heavy eyelids.)",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "night_home"
     },
     "night_home": {
         name: "Me",
         text: "(Before falling asleep, I check my phone out of habit.)",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         character: null,
         night: true,
         branches: [
@@ -53,7 +55,7 @@ Object.assign(SCENARIO[1], {
     "day1_check_affinity": {
         name: "System",
         text: "Current affinity status with the characters.{affinity_list}",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "night_home_check_contact"
     },
@@ -112,8 +114,10 @@ Object.assign(SCENARIO[1], {
     "day1_end": {
         name: "Me",
         text: "(As I close my eyes, the faces of the girls I met today flicker through my mind. Will I be able to get closer to them tomorrow...?)",
-        background: "assets/images/background/black.png",
+        background: "assets/images/background/room_my.png",
         character: null,
+        night: true,
+        fade: true,
         changeDay: 2,
         next: "day2_start"
     }

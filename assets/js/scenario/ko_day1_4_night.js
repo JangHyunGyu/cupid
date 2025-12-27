@@ -9,7 +9,7 @@ Object.assign(SCENARIO[1], {
     "after_home": {
         name: "나",
         text: "(어느덧 해가 지고 어둠이 깔린 거리를 지나 집으로 돌아왔다. 전학 첫날... 참 긴 하루였다.)",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         character: null,
         night: true,
         next: "after_home_2"
@@ -17,19 +17,21 @@ Object.assign(SCENARIO[1], {
     "after_home_2": {
         name: "나",
         text: "(침대에 몸을 던진다. 천장을 바라보며 오늘 있었던 일들을 되짚어본다. 낯선 학교, 그리고 새로운 만남들...)",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "after_home_3"
     },
     "after_home_3": {
         name: "나",
         text: "(내일은 또 어떤 일들이 기다리고 있을까? 묘한 설렘과 함께 무거운 눈꺼풀을 닫는다.)",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "night_home"
     },
     "night_home": {
         name: "나",
         text: "(잠들기 전, 습관적으로 스마트폰을 확인한다.)",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         character: null,
         night: true,
         branches: [
@@ -53,7 +55,7 @@ Object.assign(SCENARIO[1], {
     "day1_check_affinity": {
         name: "시스템",
         text: "현재 캐릭터들과의 호감도 상태입니다.{affinity_list}",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "night_home_check_contact"
     },
@@ -112,8 +114,10 @@ Object.assign(SCENARIO[1], {
     "day1_end": {
         name: "나",
         text: "(눈을 감자 오늘 만난 소녀들의 얼굴이 하나둘씩 스쳐 지나간다. 내일은 그녀들과 더 가까워질 수 있을까...)",
-        background: "assets/images/background/black.png",
+        background: "assets/images/background/room_my.png",
         character: null,
+        night: true,
+        fade: true,
         changeDay: 2,
         next: "day2_start"
     }

@@ -9,20 +9,21 @@ Object.assign(SCENARIO[2], {
     "day2_end": {
         name: "Me",
         text: "(The second night is deepening. Is it just my imagination, or does the darkness outside the window feel even heavier than yesterday?)",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_end_2"
     },
     "day2_end_2": {
         name: "Me",
         text: "(Lying on the bed, I retrace the events of the day. The school's secrets Yuna spoke of, and the time spent with the girls...)",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_home"
     },
     "day2_night_home": {
         name: "Me",
         text: "(Before falling asleep, I check my phone out of habit.)",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         character: null,
         night: true,
         branches: [
@@ -33,6 +34,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_home_check_contact": {
         name: "Me",
         text: "(Should I send a message to someone...?)",
+        background: "assets/images/background/room_my.png",
         night: true,
         choices: [
             { text: "Send a message to Seoyeon.", next: "day2_night_message_seyoun", condition: "has_number_seyoun" },
@@ -46,7 +48,7 @@ Object.assign(SCENARIO[2], {
     "day2_check_affinity": {
         name: "System",
         text: "Current affinity status with the characters.{affinity_list}",
-        background: "assets/images/background/room_night.png",
+        background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_home_check_contact"
     },
