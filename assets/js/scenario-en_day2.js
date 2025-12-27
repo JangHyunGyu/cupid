@@ -38,9 +38,16 @@ SCENARIO[2] = {
         text: "(When I turn around, there is...)",
         branches: [
             { next: "day2_meet_dain", character: "Dain" },
-            { next: "day2_meet_seoyeon", character: "Seoyeon" }
+            { next: "day2_meet_seoyeon", character: "Seoyeon" },
+            { next: "day2_meet_teacher" }
         ],
         selectByHighestAffinity: true
+    },
+    "day2_meet_teacher": {
+        name: "Teacher",
+        text: "\"Oh, isn't it {name?}? It's only your second day, but you seem to have adapted to school already. It's good to see you arriving early.\"",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_classroom"
     },
     "day2_meet_dain": {
         name: "Dain",
@@ -122,15 +129,30 @@ SCENARIO[2] = {
     "day2_morning_class": {
         name: "Me",
         text: "(Throughout the class, Yuna's note doesn't leave my head. What on earth does she have to say?)",
+        branches: [
+            { next: "day2_morning_class_yuna_met", condition: "metYuna" },
+            { next: "day2_morning_class_yuna_new" }
+        ]
+    },
+    "day2_morning_class_yuna_met": {
+        name: "Me",
+        text: "(Yuna, whom I met yesterday... Why did she leave me such a note? I'm curious about what the secret is.)",
+        next: "day2_lunch_time"
+    },
+    "day2_morning_class_yuna_new": {
+        name: "Me",
+        text: "(Yuna...? It's a name I haven't heard yesterday. Who on earth is she to leave me such a note?)",
         next: "day2_lunch_time"
     },
     "day2_lunch_time": {
         name: "Me",
-        text: "(Finally, the lunch bell rang. Kids rush to the cafeteria.)",
+        text: "(Finally, the lunch bell rang. Kids are running to the cafeteria.)",
         choices: [
-            { text: "Head to the library annex backyard as promised with Yuna.", next: "day2_lunch_yuna" },
-            { text: "Go to Seoyeon and ask to have lunch together.", next: "day2_lunch_seoyeon" },
-            { text: "Go to the gym to see Dain.", next: "day2_lunch_dain" }
+            { text: "Head to the library annex backyard as promised with Yuna.", next: "day2_lunch_yuna", condition: "metYuna" },
+            { text: "Go to the backyard to see who this Yuna is.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
+            { text: "Go to Seoyeon and suggest eating lunch together.", next: "day2_lunch_seoyeon" },
+            { text: "Go to the gym to see Dain.", next: "day2_lunch_dain", condition: "metDain" },
+            { text: "Go toward the gym where lively sounds are coming from.", next: "day2_lunch_dain", excludeCondition: "metDain" }
         ]
     },
     "day2_lunch_yuna": {
@@ -210,8 +232,10 @@ SCENARIO[2] = {
         sunset: true,
         choices: [
             { text: "Help Seoyeon with student council work.", next: "day2_after_seoyeon" },
-            { text: "Help Dain with volleyball practice.", next: "day2_after_dain" },
-            { text: "Uncover more of the school's secrets with Yuna.", next: "day2_after_yuna" }
+            { text: "Help Dain with volleyball practice.", next: "day2_after_dain", condition: "metDain" },
+            { text: "Follow the lively sounds coming from the gym.", next: "day2_after_dain", excludeCondition: "metDain" },
+            { text: "Uncover more of the school's secrets with Yuna.", next: "day2_after_yuna", condition: "metYuna" },
+            { text: "Go find Yuna at the library annex again.", next: "day2_after_yuna", excludeCondition: "metYuna" }
         ]
     },
     "day2_after_seoyeon": {

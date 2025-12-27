@@ -38,9 +38,16 @@ SCENARIO[2] = {
         text: "(뒤를 돌아보자 그곳에는...)",
         branches: [
             { next: "day2_meet_dain", character: "Dain" },
-            { next: "day2_meet_seoyeon", character: "Seoyeon" }
+            { next: "day2_meet_seoyeon", character: "Seoyeon" },
+            { next: "day2_meet_teacher" }
         ],
         selectByHighestAffinity: true
+    },
+    "day2_meet_teacher": {
+        name: "담임선생님",
+        text: "\"어라, {name?} 아니니? 전학 이틀째인데 벌써 학교에 적응한 모양이구나. 일찍 오는 모습이 보기 좋다.\"",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_classroom"
     },
     "day2_meet_dain": {
         name: "다인",
@@ -122,15 +129,30 @@ SCENARIO[2] = {
     "day2_morning_class": {
         name: "나",
         text: "(수업 시간 내내 유나의 쪽지가 머릿속을 떠나지 않는다. 대체 무슨 할 말이 있는 걸까?)",
+        branches: [
+            { next: "day2_morning_class_yuna_met", condition: "metYuna" },
+            { next: "day2_morning_class_yuna_new" }
+        ]
+    },
+    "day2_morning_class_yuna_met": {
+        name: "나",
+        text: "(어제 만났던 유나... 그녀가 왜 나에게 이런 쪽지를 남긴 걸까? 비밀이라는 게 대체 무엇인지 궁금해진다.)",
+        next: "day2_lunch_time"
+    },
+    "day2_morning_class_yuna_new": {
+        name: "나",
+        text: "(유나...? 어제는 들어본 적 없는 이름이다. 대체 누구길래 나에게 이런 쪽지를 남긴 걸까?)",
         next: "day2_lunch_time"
     },
     "day2_lunch_time": {
         name: "나",
         text: "(드디어 점심시간 종이 울렸다. 아이들이 급식실로 달려나간다.)",
         choices: [
-            { text: "유나와의 약속대로 도서관 별관 뒤뜰로 향한다.", next: "day2_lunch_yuna" },
+            { text: "유나와의 약속대로 도서관 별관 뒤뜰로 향한다.", next: "day2_lunch_yuna", condition: "metYuna" },
+            { text: "유나라는 애가 누구인지 확인하러 뒤뜰로 간다.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
             { text: "서연이에게 가서 같이 점심 먹자고 한다.", next: "day2_lunch_seoyeon" },
-            { text: "다인이를 보러 체육관으로 간다.", next: "day2_lunch_dain" }
+            { text: "다인이를 보러 체육관으로 간다.", next: "day2_lunch_dain", condition: "metDain" },
+            { text: "활기찬 소리가 들리는 체육관 쪽으로 가본다.", next: "day2_lunch_dain", excludeCondition: "metDain" }
         ]
     },
     "day2_lunch_yuna": {
@@ -210,8 +232,10 @@ SCENARIO[2] = {
         sunset: true,
         choices: [
             { text: "서연이와 함께 학생회 일을 돕는다.", next: "day2_after_seoyeon" },
-            { text: "다인이의 배구 연습을 도와준다.", next: "day2_after_dain" },
-            { text: "유나와 함께 학교의 비밀을 더 파헤친다.", next: "day2_after_yuna" }
+            { text: "다인이의 배구 연습을 도와준다.", next: "day2_after_dain", condition: "metDain" },
+            { text: "체육관에서 들리는 활기찬 소리를 따라가 본다.", next: "day2_after_dain", excludeCondition: "metDain" },
+            { text: "유나와 함께 학교의 비밀을 더 파헤친다.", next: "day2_after_yuna", condition: "metYuna" },
+            { text: "도서관 별관의 유나를 다시 찾아가 본다.", next: "day2_after_yuna", excludeCondition: "metYuna" }
         ]
     },
     "day2_after_seoyeon": {
