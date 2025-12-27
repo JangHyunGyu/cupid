@@ -302,6 +302,7 @@ Object.assign(SCENARIO[1], {
     "lunch_store": {
         name: "나",
         text: "(매점에서 마지막 남은 '초코 소라빵'을 쟁취했다! 승리자의 기분으로 빵을 한 입 베어 물자, 달콤함이 입안 가득 퍼진다.)",
+        background: "assets/images/background/food_room.png",
         next: "lunch_store_2"
     },
     "lunch_store_2": {

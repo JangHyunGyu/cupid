@@ -302,6 +302,7 @@ Object.assign(SCENARIO[1], {
     "lunch_store": {
         name: "Me",
         text: "(I won the last 'chocolate conch bread' at the store! As I take a bite of the bread with a winner's feeling, sweetness spreads throughout my mouth.)",
+        background: "assets/images/background/food_room.png",
         next: "lunch_store_2"
     },
     "lunch_store_2": {

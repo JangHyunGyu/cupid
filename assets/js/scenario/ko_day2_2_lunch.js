@@ -126,7 +126,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store": {
         name: "나",
         text: "(다인이와 함께 매점으로 향했다. 쉬는 시간이라 그런지 매점 앞은 아이들로 북적거린다.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/food_room.png",
         character: "assets/images/characters/dain_nomal.png",
         choices: [
             { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 10 } } },
