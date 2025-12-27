@@ -124,28 +124,18 @@ SCENARIO[1] = {
         name: "서연",
         text: "(서연이가 갑자기 멈춰 서더니 나를 돌아본다.) \"아, 그러고 보니 내 소개만 하고 네 이름은 아직 못 들었네! {name?}, 이름이 뭐야?\"",
         character: "assets/images/characters/seyoun_nomal.png",
-        choices: [
-            { text: "내 이름은 '{name}'야. 잘 부탁해.", next: "hallway_name_share", setFlag: "knowsName_서연" },
-            { text: "그냥 전학생이라고 불러줘. 그게 더 편해.", next: "hallway_name_keep" },
-            { text: "알아서 뭐 하게? 그냥 가기나 해.", next: "hallway_name_rude", stats: { Seoyeon: { affinity: -8 } } }
-        ]
-    },
-    "hallway_name_rude": {
-        name: "서연",
-        text: "(그녀가 상처받은 듯 고개를 떨군다. 복도에 무거운 침묵이 흐른다.)",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "hallway_1_2"
+        next: "hallway_name_share"
     },
     "hallway_name_share": {
+        name: "나",
+        text: "\"내 이름은 '{name}'야. 잘 부탁해.\"",
+        setFlag: "knowsName_서연",
+        next: "hallway_name_share_2"
+    },
+    "hallway_name_share_2": {
         name: "서연",
         text: "\"{name}... 후훗, 좋은 이름이다! 그럼 이제부터 {name}이라고 부를게. 잘 부탁해, {name}!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "hallway_1_2"
-    },
-    "hallway_name_keep": {
-        name: "서연",
-        text: "\"에이, 싱겁긴! 알았어. 네가 원한다면 당분간은 {name?}이라고 부를게. 하지만 나중에 마음 바뀌면 꼭 알려줘야 해?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1_2"
     },
     "hallway_1_2": {
@@ -343,9 +333,9 @@ SCENARIO[1] = {
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_담임선생님", stats: { Teacher: { affinity: 5 } } },
-            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlag: "personality_active", stats: { Teacher: { affinity: 2 } } },
-            { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlag: "personality_quiet", stats: { Teacher: { affinity: 2 } } },
-            { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -2 } } }
+            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlags: ["personality_active", "knowsName_담임선생님"], stats: { Teacher: { affinity: 2 } } },
+            { text: "만나서 반가워. 조용히 책 읽는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_담임선생님"], stats: { Teacher: { affinity: 2 } } },
+            { text: "공부하러 왔어. 방해받는 건 딱 질색이니까 적당히 지내자.", next: "class_after_study", setFlags: ["personality_study", "knowsName_담임선생님"], stats: { Teacher: { affinity: -2 } } }
         ]
     },
     "teacher_name_share": {
@@ -761,22 +751,17 @@ SCENARIO[1] = {
         text: "\"어이, {name?}! 거기서 구경만 하지 말고 이리 와서 한 판 붙자! 너, 운동 좀 하게 생겼는데?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
-        choices: [
-            { text: "내 이름은 '{name}'야.", next: "dain_name_share", setFlag: "knowsName_다인", stats: { Dain: { affinity: 5 } } },
-            { text: "운동은 별로 자신 없는데...", next: "lunch_dain_4", stats: { Dain: { affinity: 2 } } },
-            { text: "좋아, 누가 더 잘하는지 보자고!", next: "lunch_dain_4", stats: { Dain: { affinity: 5 } } }
-        ]
+        next: "dain_name_share"
     },
     "dain_name_share": {
+        name: "나",
+        text: "\"내 이름은 '{name}'야.\"",
+        setFlag: "knowsName_다인",
+        next: "dain_name_share_2"
+    },
+    "dain_name_share_2": {
         name: "다인",
         text: "\"{name}? 멋진 이름이네! 난 배구부 다인이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라구!\"",
-        background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_gym_2"
-    },
-    "lunch_dain_4": {
-        name: "다인",
-        text: "\"난 배구부 '다인'이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라구!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_gym_2"
@@ -1193,20 +1178,13 @@ SCENARIO[1] = {
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
-        choices: [
-            { text: "내 이름은 '{name}'야. 너랑 친해지고 싶어.", next: "yuna_name_share", setFlag: "knowsName_유나", stats: { Yuna: { affinity: 5 } } },
-            { text: "너에 대해 더 알고 싶어서 왔어.", next: "after_yuna_know", stats: { Yuna: { affinity: 10 } } },
-            { 
-                text: "너의 진짜 비밀을 알고 싶어. 이 학교의 진실 말이야.", 
-                next: "after_yuna_secret_fail",
-                affinityChar: "Yuna",
-                affinityBranches: [
-                    { minAffinity: 60, next: "after_yuna_secret_deep" }
-                ]
-            },
-            { text: "오늘 급식 뭐 나왔는지 알아? 배고프다.", next: "after_yuna_boring", stats: { Yuna: { affinity: -10 } } },
-            { text: "여긴 왜 이렇게 음침해? 기분 나빠.", next: "after_yuna_rude", stats: { Yuna: { affinity: -25 } } }
-        ]
+        next: "yuna_name_share_pre"
+    },
+    "yuna_name_share_pre": {
+        name: "나",
+        text: "\"내 이름은 '{name}'야. 너랑 친해지고 싶어.\"",
+        setFlag: "knowsName_유나",
+        next: "yuna_name_share"
     },
     "after_yuna_secret_deep": {
         name: "유나",

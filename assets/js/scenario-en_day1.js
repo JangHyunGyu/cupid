@@ -124,28 +124,18 @@ SCENARIO[1] = {
         name: "Seoyeon",
         text: "(Seoyeon suddenly stops and turns to me.) \"Oh, come to think of it, I only introduced myself and haven't heard your name yet! {name?}, what's your name?\"",
         character: "assets/images/characters/seyoun_nomal.png",
-        choices: [
-            { text: "My name is '{name}'. Nice to meet you.", next: "hallway_name_share", setFlag: "knowsName_서연" },
-            { text: "Just call me the transfer student. That's more comfortable.", next: "hallway_name_keep" },
-            { text: "What do you want to know for? Just go.", next: "hallway_name_rude", stats: { Seoyeon: { affinity: -8 } } }
-        ]
-    },
-    "hallway_name_rude": {
-        name: "Seoyeon",
-        text: "(She lowers her head as if hurt. A heavy silence flows in the hallway.)",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "hallway_1_2"
+        next: "hallway_name_share"
     },
     "hallway_name_share": {
+        name: "Me",
+        text: "\"My name is '{name}'. Nice to meet you.\"",
+        setFlag: "knowsName_서연",
+        next: "hallway_name_share_2"
+    },
+    "hallway_name_share_2": {
         name: "Seoyeon",
         text: "\"{name}... Hehe, that's a good name! Then I'll call you {name} from now on. Nice to meet you, {name}!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "hallway_1_2"
-    },
-    "hallway_name_keep": {
-        name: "Seoyeon",
-        text: "\"Aw, how boring! Okay. If you want, I'll call you {name?} for the time being. But you have to let me know if you change your mind later, okay?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1_2"
     },
     "hallway_1_2": {
@@ -343,9 +333,9 @@ SCENARIO[1] = {
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_담임선생님", stats: { Teacher: { affinity: 5 } } },
-            { text: "Hi! I like exercising and have an active personality!", next: "class_after_active", setFlag: "personality_active", stats: { Teacher: { affinity: 2 } } },
-            { text: "Nice to meet you. I'm the type who likes reading books quietly.", next: "class_after_quiet", setFlag: "personality_quiet", stats: { Teacher: { affinity: 2 } } },
-            { text: "I came here to study. I hate being disturbed, so let's just get along moderately.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -2 } } }
+            { text: "Hi! I like exercising and have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_담임선생님"], stats: { Teacher: { affinity: 2 } } },
+            { text: "Nice to meet you. I'm the type who likes reading books quietly.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_담임선생님"], stats: { Teacher: { affinity: 2 } } },
+            { text: "I came here to study. I hate being disturbed, so let's just get along moderately.", next: "class_after_study", setFlags: ["personality_study", "knowsName_담임선생님"], stats: { Teacher: { affinity: -2 } } }
         ]
     },
     "teacher_name_share": {
@@ -761,22 +751,17 @@ SCENARIO[1] = {
         text: "\"Hey, {name?}! Don't just watch from there, come here and let's have a game! You look like you're good at sports?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
-        choices: [
-            { text: "My name is '{name}'.", next: "dain_name_share", setFlag: "knowsName_다인", stats: { Dain: { affinity: 5 } } },
-            { text: "I'm not really confident in sports...", next: "lunch_dain_4", stats: { Dain: { affinity: 2 } } },
-            { text: "Okay, let's see who's better!", next: "lunch_dain_4", stats: { Dain: { affinity: 5 } } }
-        ]
+        next: "dain_name_share"
     },
     "dain_name_share": {
+        name: "Me",
+        text: "\"My name is '{name}'.\"",
+        setFlag: "knowsName_다인",
+        next: "dain_name_share_2"
+    },
+    "dain_name_share_2": {
         name: "Dain",
         text: "\"{name}? That's a cool name! I'm Dain from the volleyball club. No one in our school has a better jump than me, so be prepared!\"",
-        background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
-        next: "lunch_dain_gym_2"
-    },
-    "lunch_dain_4": {
-        name: "Dain",
-        text: "\"I'm 'Dain' from the volleyball club. No one in our school has a better jump than me, so be prepared!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "lunch_dain_gym_2"
@@ -1193,20 +1178,13 @@ SCENARIO[1] = {
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
-        choices: [
-            { text: "My name is '{name}'. I want to get close to you.", next: "yuna_name_share", setFlag: "knowsName_유나", stats: { Yuna: { affinity: 5 } } },
-            { text: "I came because I wanted to know more about you.", next: "after_yuna_know", stats: { Yuna: { affinity: 10 } } },
-            { 
-                text: "I want to know your real secret. The truth about this school.", 
-                next: "after_yuna_secret_fail",
-                affinityChar: "Yuna",
-                affinityBranches: [
-                    { minAffinity: 60, next: "after_yuna_secret_deep" }
-                ]
-            },
-            { text: "Do you know what came out for lunch today? I'm hungry.", next: "after_yuna_boring", stats: { Yuna: { affinity: -10 } } },
-            { text: "Why is it so gloomy here? It feels bad.", next: "after_yuna_rude", stats: { Yuna: { affinity: -25 } } }
-        ]
+        next: "yuna_name_share_pre"
+    },
+    "yuna_name_share_pre": {
+        name: "Me",
+        text: "\"My name is '{name}'. I want to get close to you.\"",
+        setFlag: "knowsName_유나",
+        next: "yuna_name_share"
     },
     "after_yuna_secret_deep": {
         name: "Yuna",
