@@ -946,6 +946,9 @@ function typeText(text, charName) {
         
         let listStr = isEn ? "\n\n[Affinity Status]\n" : "\n\n[호감도 현황]\n";
         for (const [key, name] of Object.entries(charNames)) {
+            // 만난 적이 있는 캐릭터만 표시
+            if (!gameState["met" + key]) continue;
+            
             const affinity = gameState.stats[key].affinity;
             let bar = "";
             

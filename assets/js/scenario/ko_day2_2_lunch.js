@@ -21,6 +21,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_seoyeon": {
         name: "서연",
         text: "(학생회실 문을 열자, 도시락을 먹던 서연이가 눈을 동그랗게 뜨며 나를 반긴다.)",
+        background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_seoyeon_lunch_talk"
     },

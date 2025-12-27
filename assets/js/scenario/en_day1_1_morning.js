@@ -313,6 +313,7 @@ Object.assign(SCENARIO[1], {
             left: "assets/images/characters/teacher.png",
             right: "assets/images/characters/seyoun_laugh.png"
         },
+        setFlag: "metTeacher",
         next: "classroom_2_2"
     },
     "classroom_2_2": {

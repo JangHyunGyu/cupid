@@ -36,7 +36,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_seoyeon": {
         name: "Me",
         text: "(The student council room. As I help Seoyeon organize documents, the world outside the window slowly fades into darkness.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
         next: "day2_after_seoyeon_2"

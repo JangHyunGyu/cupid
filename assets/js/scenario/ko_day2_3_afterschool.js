@@ -36,7 +36,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_seoyeon": {
         name: "나",
         text: "(학생회실. 서연이와 함께 서류를 정리하다 보니 어느덧 창밖이 어두워졌다.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
         next: "day2_after_seoyeon_2"

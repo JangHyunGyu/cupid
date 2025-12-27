@@ -38,6 +38,7 @@ Object.assign(SCENARIO[1], {
     "after_seoyeon": {
         name: "Seoyeon",
         text: "(When I open the student council room door, I see Seoyeon struggling amidst a mountain of documents.)",
+        background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_2"
     },

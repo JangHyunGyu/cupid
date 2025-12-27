@@ -38,6 +38,7 @@ Object.assign(SCENARIO[1], {
     "after_seoyeon": {
         name: "서연",
         text: "(학생회실 문을 열자, 서류 더미 속에서 고군분투하는 서연이가 보인다.)",
+        background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_2"
     },

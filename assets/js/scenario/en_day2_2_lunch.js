@@ -21,6 +21,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_seoyeon": {
         name: "Seoyeon",
         text: "(I open the student council room door to find Seoyeon eating her lunch. She looks up, her eyes widening in a bright welcome.)",
+        background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_seoyeon_lunch_talk"
     },
