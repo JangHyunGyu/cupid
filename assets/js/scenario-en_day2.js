@@ -71,18 +71,6 @@ SCENARIO[2] = {
         character: "assets/images/characters/nurse.png",
         next: "day2_classroom"
     },
-    "day2_meet_teacher": {
-        name: "Teacher",
-        text: "\"Oh, isn't it {name?}? It's only your second day, but you seem to have adapted to school already. It's good to see you arriving early.\"",
-        character: "assets/images/characters/teacher.png",
-        next: "day2_classroom"
-    },
-    "day2_meet_dain": {
-        name: "Dain",
-        text: "\"Hey, {name?}! Good morning! You're early today!\"",
-        character: "assets/images/characters/dain_nomal.png",
-        next: "day2_dain_talk"
-    },
     "day2_meet_seoyeon": {
         name: "Seoyeon",
         text: "\"Hi, {name?}! Did you sleep well? You're early today too!\"",
@@ -125,6 +113,12 @@ SCENARIO[2] = {
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_classroom"
     },
+    "day2_meet_dain": {
+        name: "Dain",
+        text: "\"Hey, {name?}! Good morning! You're early today!\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_dain_talk"
+    },
     "day2_dain_talk": {
         name: "Dain",
         text: "(Dain taps my shoulder energetically.)",
@@ -159,6 +153,12 @@ SCENARIO[2] = {
         name: "Dain",
         text: "\"Aw~ Don't be a wimp! Stamina is national power if you want to adapt to school life! Now, let's go to the classroom!\"",
         character: "assets/images/characters/dain_nomal.png",
+        next: "day2_classroom"
+    },
+    "day2_meet_teacher": {
+        name: "Teacher",
+        text: "\"Oh, isn't it {name?}? It's only your second day, but you seem to have adapted to school already. It's good to see you arriving early.\"",
+        character: "assets/images/characters/teacher.png",
         next: "day2_classroom"
     },
     "day2_classroom": {
@@ -206,13 +206,95 @@ SCENARIO[2] = {
         name: "Me",
         text: "(Finally, the lunch bell rang. Kids are running to the cafeteria.)",
         choices: [
+            { text: "Go to Seoyeon and suggest eating lunch together.", next: "day2_lunch_seoyeon" },
             { text: "Head to the library annex backyard as promised with Yuna.", next: "day2_lunch_yuna", condition: "metYuna" },
             { text: "Go to the backyard to see who this Yuna is.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
-            { text: "Go to Seoyeon and suggest eating lunch together.", next: "day2_lunch_seoyeon" },
             { text: "Go to the gym to see Dain.", next: "day2_lunch_dain", condition: "metDain" },
             { text: "Go to the gym where lively sounds are heard.", next: "day2_lunch_dain", excludeCondition: "metDain" },
             { text: "I feel a bit unwell, so I'll go to the nurse's office.", next: "day2_lunch_nurse" }
         ]
+    },
+    "day2_lunch_seoyeon": {
+        name: "Seoyeon",
+        text: "(Seoyeon was eating a lunch box in the student council room and smiles brightly when she sees me.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_seoyeon_lunch_talk"
+    },
+    "day2_seoyeon_lunch_talk": {
+        name: "Seoyeon",
+        text: "\"{name?}! I was just waiting to eat together! Now, sit here.\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_lunch_yuna": {
+        name: "Me",
+        text: "(Library annex backyard. Yuna is standing among the lush trees.)",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_talk"
+    },
+    "day2_yuna_talk": {
+        name: "Yuna",
+        text: "\"...You came. I thought you wouldn't come after seeing the note.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_talk_2"
+    },
+    "day2_yuna_talk_2": {
+        name: "Yuna",
+        text: "(Yuna stares at me with an expressionless face.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        branches: [
+            { next: "day2_yuna_talk_2_met", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_new" }
+        ]
+    },
+    "day2_yuna_talk_2_met": {
+        name: "Yuna",
+        text: "\"Do you remember... what I said yesterday? About the school's secret. Actually, there's something I want to show only to you.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        choices: [
+            { text: "What is it? I'm curious too.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
+            { text: "I'm not interested in secrets. I just came because I wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
+        ]
+    },
+    "day2_yuna_talk_2_new": {
+        name: "Yuna",
+        text: "\"You... you came because you were curious about who I am, right? Actually, there's a very deep secret in this school. There's something I want to show only to you.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        choices: [
+            { text: "Secret? What is it?", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
+            { text: "I just came because I was curious after seeing the note.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
+        ]
+    },
+    "day2_yuna_secret": {
+        name: "Yuna",
+        text: "(Yuna takes my hand and leads me toward the old warehouse. Her hand feels colder than yesterday.)",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day2_yuna_secret_2"
+    },
+    "day2_yuna_secret_2": {
+        name: "Yuna",
+        text: "\"Inside here... are records the school has hidden for a long time. If you see this... everything will change.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_yuna_normal": {
+        name: "Yuna",
+        text: "\"...Really? You're a very strange kid. All the other kids are scared. Okay, then let's just stay like this today.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_lunch_dain": {
+        name: "Dain",
+        text: "(Dain was practicing volleyball in the gym and runs over when she discovers me.)",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_dain_lunch_talk"
+    },
+    "day2_dain_lunch_talk": {
+        name: "Dain",
+        text: "\"Oh! You really came? Okay, lunch is on me today! Let's go to the store!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {
         name: "Me",
@@ -366,88 +448,6 @@ SCENARIO[2] = {
         character: "assets/images/characters/nurse.png",
         next: "day2_afternoon_class"
     },
-    "day2_lunch_yuna": {
-        name: "Me",
-        text: "(Library annex backyard. Yuna is standing among the lush trees.)",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_talk"
-    },
-    "day2_yuna_talk": {
-        name: "Yuna",
-        text: "\"...You came. I thought you wouldn't come after seeing the note.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_talk_2"
-    },
-    "day2_yuna_talk_2": {
-        name: "Yuna",
-        text: "(Yuna stares at me with an expressionless face.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        branches: [
-            { next: "day2_yuna_talk_2_met", condition: "metYuna" },
-            { next: "day2_yuna_talk_2_new" }
-        ]
-    },
-    "day2_yuna_talk_2_met": {
-        name: "Yuna",
-        text: "\"Do you remember... what I said yesterday? About the school's secret. Actually, there's something I want to show only to you.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        choices: [
-            { text: "What is it? I'm curious too.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
-            { text: "I'm not interested in secrets. I just came because I wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
-        ]
-    },
-    "day2_yuna_talk_2_new": {
-        name: "Yuna",
-        text: "\"You... you came because you were curious about who I am, right? Actually, there's a very deep secret in this school. There's something I want to show only to you.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        choices: [
-            { text: "Secret? What is it?", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
-            { text: "I just came because I was curious after seeing the note.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
-        ]
-    },
-    "day2_yuna_secret": {
-        name: "Yuna",
-        text: "(Yuna takes my hand and leads me toward the old warehouse. Her hand feels colder than yesterday.)",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "day2_yuna_secret_2"
-    },
-    "day2_yuna_secret_2": {
-        name: "Yuna",
-        text: "\"Inside here... are records the school has hidden for a long time. If you see this... everything will change.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "day2_afternoon_class"
-    },
-    "day2_yuna_normal": {
-        name: "Yuna",
-        text: "\"...Really? You're a very strange kid. All the other kids are scared. Okay, then let's just stay like this today.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_afternoon_class"
-    },
-    "day2_lunch_seoyeon": {
-        name: "Seoyeon",
-        text: "(Seoyeon was eating a lunch box in the student council room and smiles brightly when she sees me.)",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "day2_seoyeon_lunch_talk"
-    },
-    "day2_seoyeon_lunch_talk": {
-        name: "Seoyeon",
-        text: "\"{name?}! I was just waiting to eat together! Now, sit here.\"",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "day2_afternoon_class"
-    },
-    "day2_lunch_dain": {
-        name: "Dain",
-        text: "(Dain was practicing volleyball in the gym and runs over when she discovers me.)",
-        character: "assets/images/characters/dain_laugh.png",
-        next: "day2_dain_lunch_talk"
-    },
-    "day2_dain_lunch_talk": {
-        name: "Dain",
-        text: "\"Oh! You really came? Okay, lunch is on me today! Let's go to the store!\"",
-        character: "assets/images/characters/dain_laugh.png",
-        next: "day2_afternoon_class"
-    },
     "day2_afternoon_class": {
         name: "Me",
         text: "(Afternoon classes also ended safely. Now it's after school time.)",
@@ -461,27 +461,12 @@ SCENARIO[2] = {
         sunset: true,
         choices: [
             { text: "Help Seoyeon with student council work.", next: "day2_after_seoyeon" },
-            { text: "Help Dain with volleyball practice.", next: "day2_after_dain", condition: "metDain" },
-            { text: "Follow the lively sounds coming from the gym.", next: "day2_after_dain", excludeCondition: "metDain" },
             { text: "Uncover more of the school's secrets with Yuna.", next: "day2_after_yuna", condition: "metYuna" },
             { text: "Visit Yuna at the library annex again.", next: "day2_after_yuna", excludeCondition: "metYuna" },
+            { text: "Help Dain with volleyball practice.", next: "day2_after_dain", condition: "metDain" },
+            { text: "Follow the lively sounds coming from the gym.", next: "day2_after_dain", excludeCondition: "metDain" },
             { text: "Go to the teacher in the nurse's office.", next: "day2_after_nurse" }
         ]
-    },
-    "day2_after_nurse": {
-        name: "Nurse",
-        text: "(When I open the door to the nurse's office, the teacher was waiting for me in the room full of sunset light.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        next: "day2_nurse_night_talk"
-    },
-    "day2_nurse_night_talk": {
-        name: "Nurse",
-        text: "\"{name?}... You really came? Hehe, you came because you wanted to be with me more, right? Okay, I'll stay with you until late today specially.\"",
-        character: "assets/images/characters/nurse.png",
-        night: true,
-        next: "day2_end"
     },
     "day2_after_seoyeon": {
         name: "Seoyeon",
@@ -495,6 +480,20 @@ SCENARIO[2] = {
         name: "Seoyeon",
         text: "\"{name?}... Thank you so much for today. When I'm with you, I forget all the hard work. Can we... stay together a bit longer?\"",
         character: "assets/images/characters/seyoun_shy.png",
+        next: "day2_end"
+    },
+    "day2_after_yuna": {
+        name: "Yuna",
+        text: "(I discovered strange patterns in the school basement warehouse with Yuna. Yuna's expression becomes serious.)",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "day2_yuna_night_talk"
+    },
+    "day2_yuna_night_talk": {
+        name: "Yuna",
+        text: "\"This... is not just a scribble. It's related to the purpose of this school's establishment. {name?}, you've now chosen a path you can't turn back from.\"",
+        character: "assets/images/characters/yuna_smile.png",
         next: "day2_end"
     },
     "day2_after_dain": {
@@ -511,18 +510,19 @@ SCENARIO[2] = {
         character: "assets/images/characters/dain_laugh.png",
         next: "day2_end"
     },
-    "day2_after_yuna": {
-        name: "Yuna",
-        text: "(I discovered strange patterns in the school basement warehouse with Yuna. Yuna's expression becomes serious.)",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "day2_yuna_night_talk"
+    "day2_after_nurse": {
+        name: "Nurse",
+        text: "(When I open the door to the nurse's office, the teacher was waiting for me in the room full of sunset light.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "day2_nurse_night_talk"
     },
-    "day2_yuna_night_talk": {
-        name: "Yuna",
-        text: "\"This... is not just a scribble. It's related to the purpose of this school's establishment. {name?}, you've now chosen a path you can't turn back from.\"",
-        character: "assets/images/characters/yuna_smile.png",
+    "day2_nurse_night_talk": {
+        name: "Nurse",
+        text: "\"{name?}... You really came? Hehe, you came because you wanted to be with me more, right? Okay, I'll stay with you until late today specially.\"",
+        character: "assets/images/characters/nurse.png",
+        night: true,
         next: "day2_end"
     },
     "day2_end": {

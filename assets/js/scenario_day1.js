@@ -815,30 +815,6 @@ SCENARIO[1] = {
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"
     },
-    "after_nurse": {
-        name: "나",
-        text: "(노을이 지는 복도를 지나 양호실 문을 열었다. 방 안에는 은은한 약초 향기와 함께 선생님이 계셨다.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        next: "after_nurse_2"
-    },
-    "after_nurse_2": {
-        name: "양호선생님",
-        text: "\"어머, {name?}! 하교 안 하고 여긴 어쩐 일이야? 혹시... 나랑 단둘이 있고 싶어서 온 거니?\"",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        next: "nurse_free_talk_after_day1"
-    },
-    "nurse_free_talk_after_day1": {
-        type: "free_talk",
-        name: "양호선생님",
-        text: "\"후훗, 얼굴이 빨개졌네? 귀여워라. 자, 여기 앉아서 나랑 조금만 더 이야기하다 갈래?\"",
-        context: "방과 후 노을 지는 양호실, 양호 선생님과 단둘이 남은 상황. 선생님은 주인공을 대놓고 유혹하며 즐거워함.",
-        personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만, 사실 누구보다 주인공을 아끼고 보호하려 함.",
-        character: "assets/images/characters/nurse.png",
-        next: "after_home"
-    },
     "after_school_start": {
         name: "나",
         text: "(어느덧 모든 수업이 끝나고 방과 후를 알리는 종소리가 울려 퍼진다.)",
@@ -868,6 +844,345 @@ SCENARIO[1] = {
             { text: "양호실 쪽을 한 번 가본다.", next: "after_nurse", excludeCondition: "metNurse", setFlag: "metNurse" },
             { text: "오늘은 피곤하니 바로 집으로 돌아간다.", next: "after_home" }
         ]
+    },
+    "after_seoyeon": {
+        name: "서연",
+        text: "(학생회실 문을 열자, 산더미처럼 쌓인 서류들 사이에서 고군분투하고 있는 서연이가 보인다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_2"
+    },
+    "after_seoyeon_2": {
+        name: "서연",
+        text: "(내가 들어오자 그녀가 깜짝 놀라며 고개를 든다. 그녀는 펜을 내려놓고 기지개를 켠다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_3"
+    },
+    "after_seoyeon_3": {
+        name: "서연",
+        text: "\"어? {name?}! 이 시간에 어쩐 일이야? 설마... 나 기다려준 거야?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "응, 같이 하교하고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "그냥 얼굴 보고 싶어서 왔어. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "착각하지 마. 그냥 길을 잘못 든 것뿐이야.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -20 } } }
+        ]
+    },
+    "after_seoyeon_rude": {
+        name: "서연",
+        text: "(서연이의 표정이 순식간에 굳어진다. 그녀는 다시 서류로 시선을 돌린다.)",
+        character: "assets/images/characters/seyoun_angry.png",
+        next: "after_seoyeon_rude_2"
+    },
+    "after_seoyeon_rude_2": {
+        name: "서연",
+        text: "\"아... 그래? 그럼 방해하지 말고 나가줄래? 나 지금 좀 바쁘거든.\"",
+        character: "assets/images/characters/seyoun_angry.png",
+        next: "after_home"
+    },
+    "after_seoyeon_help": {
+        name: "서연",
+        text: "(그녀가 감동한 듯 눈을 크게 뜬다. 이내 환한 미소를 지으며 내 옆자리를 내어준다.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "after_seoyeon_help_2"
+    },
+    "after_seoyeon_help_2": {
+        name: "서연",
+        text: "(우리는 말없이 서류를 정리하며 묘한 유대감을 느낀다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_help_2_2"
+    },
+    "after_seoyeon_help_2_2": {
+        name: "서연",
+        text: "\"정말? 고마워! 네가 도와준다면 금방 끝낼 수 있을 것 같아. 자, 이 서류들 분류하는 것 좀 도와줄래?\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "after_seoyeon_help_3"
+    },
+    "after_seoyeon_help_3": {
+        name: "서연",
+        text: "\"우리... 끝나고 같이 맛있는 거 먹으러 가자!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "after_seoyeon_cafe"
+    },
+    "after_seoyeon_cafe": {
+        name: "서연",
+        text: "(서류 정리를 마치고 우리는 학교 앞 작은 카페에 들렀다.)",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_cafe_2"
+    },
+    "after_seoyeon_cafe_2": {
+        name: "서연",
+        text: "(서연이는 생크림이 듬뿍 올라간 음료를 마시며 행복한 표정을 짓는다.)",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_cafe_2_2"
+    },
+    "after_seoyeon_cafe_2_2": {
+        name: "서연",
+        text: "\"하아~ 이제야 좀 살 것 같아. 오늘 정말 고마웠어, {name?}.\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_cafe_3"
+    },
+    "after_seoyeon_cafe_3": {
+        name: "서연",
+        text: "\"네 덕분에 학생회 일도 즐겁게 마무리할 수 있었어. 우리... 내일도 같이 하교할 수 있을까?\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "물론이지. 내일도 기다릴게.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "글쎄, 내일 기분 봐서? (장난)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 7 } } }
+        ]
+    },
+    "after_seoyeon_promise": {
+        name: "서연",
+        text: "(그녀가 새끼손가락을 내밀며 환하게 웃는다.)",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "after_seoyeon_promise_2"
+    },
+    "after_seoyeon_promise_2": {
+        name: "서연",
+        text: "\"약속한 거다? 어기면 안 돼! 그럼 내일 봐, {name?}. 조심히 들어가!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "after_home"
+    },
+    "after_seoyeon_tease": {
+        name: "서연",
+        text: "(그녀가 볼을 빵빵하게 부풀리며 나를 째려본다.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "after_seoyeon_tease_2"
+    },
+    "after_seoyeon_tease_2": {
+        name: "서연",
+        text: "\"치... 정말 못됐다니까! 그래도 꼭 와야 해? 안 오면 학생회장의 권한으로 벌을 줄 테니까! 후훗, 농담이야. 내일 봐!\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "after_home"
+    },
+    "after_seoyeon_worry": {
+        name: "서연",
+        text: "(그녀가 쑥스러운 듯 머리를 긁적이며 웃는다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_worry_2"
+    },
+    "after_seoyeon_worry_2": {
+        name: "서연",
+        text: "\"헤헤, 들켰네. 학생회장이라는 게 생각보다 할 일이 많거든. 하지만 네가 이렇게 걱정해주니까 힘이 불끈 솟는걸? 조금만 기다려줘, 금방 끝내고 같이 가자!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_cafe"
+    },
+    "after_yuna_new": {
+        name: "나",
+        text: "(학교의 조용한 곳을 찾아 걷다 보니, 낡은 도서관 별관에 도착했다. 노을빛이 스며드는 그곳에는 한 소녀가 창가에 앉아 있다.)",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "after_yuna_new_2"
+    },
+    "after_yuna_new_2": {
+        name: "???",
+        text: "\"안녕? 이 시간에 여기까지 오다니... 너도 참 특이하네. 나는 유나라고 해.\"",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        setFlag: "metYuna",
+        next: "after_yuna_3"
+    },
+    "after_yuna": {
+        name: "유나",
+        text: "(도서관 별관은 낮보다 더 어둡고 고요하다. 그곳에는 한 소녀가 창가에 앉아 노을을 바라보고 있다.)",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "after_yuna_2"
+    },
+    "after_yuna_2": {
+        name: "유나",
+        text: "(그녀는 내가 온 것을 알면서도 한참 동안 창밖만 바라본다.)",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "after_yuna_3"
+    },
+    "after_yuna_3": {
+        name: "유나",
+        text: "\"아, {name?}... 방과 후의 도서관은 더 고요해서 좋아. 넌 무슨 일로 온 거야?\"",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "yuna_name_share_pre"
+    },
+    "yuna_name_share_pre": {
+        name: "나",
+        text: "\"내 이름은 '{name}'야. 너랑 친해지고 싶어.\"",
+        setFlag: "knowsName_유나",
+        next: "yuna_name_share"
+    },
+    "yuna_name_share": {
+        name: "유나",
+        text: "(그녀가 내 이름을 나지막이 읊조린다.) \"...{name}. 기억해둘게. 하지만 이름 같은 건... 이 학교에선 큰 의미가 없을지도 몰라.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "after_yuna_know"
+    },
+    "after_yuna_know": {
+        name: "유나",
+        text: "(그녀가 천천히 고개를 돌려 나를 바라본다. 그녀의 입가에 희미한 미소가 번진다.)",
+        character: "assets/images/characters/yuna_smile.png",
+        sunset: true,
+        next: "after_yuna_know_2"
+    },
+    "after_yuna_know_2": {
+        name: "유나",
+        text: "(그녀는 내 손을 잡고 별관 옥상으로 나를 이끈다.)",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "after_yuna_know_2_2"
+    },
+    "after_yuna_know_2_2": {
+        name: "유나",
+        text: "\"나에 대해...? 후훗, 용감한 건지 무모한 건지 모르겠네.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "after_yuna_know_3"
+    },
+    "after_yuna_know_3": {
+        name: "유나",
+        text: "\"좋아, 오늘 밤은 길 테니까. 조금씩... 아주 조금씩 알려줄게. 따라와.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "after_yuna_rooftop"
+    },
+    "after_yuna_rooftop": {
+        name: "유나",
+        text: "(별관 옥상에서 내려다보는 학교는 낮과는 전혀 다른 모습이다.)",
+        background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "after_yuna_rooftop_2"
+    },
+    "after_yuna_rooftop_2": {
+        name: "유나",
+        text: "(유나는 난간에 기대어 먼 곳을 응시한다.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "after_yuna_rooftop_2_2"
+    },
+    "after_yuna_rooftop_2_2": {
+        name: "유나",
+        text: "\"사람들은 이 학교가 완벽하다고 생각하지. 하지만 완벽한 건 없어.\"",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
+        next: "after_yuna_rooftop_3"
+    },
+    "after_yuna_rooftop_3": {
+        name: "유나",
+        text: "\"겉으로 드러나지 않은 문제들이 곪아가고 있을 뿐이야. 이 학교를 가득 채운 무거운 기운... 넌 그런 위화감, 못 느꼈어?\"",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
+        choices: [
+            { text: "너와 함께라면 어디든 갈 수 있어.", next: "after_yuna_together" },
+            { text: "어둠이라니... 좀 무서운데.", next: "after_yuna_scared" }
+        ]
+    },
+    "after_yuna_together": {
+        name: "유나",
+        text: "(그녀가 내 손을 꽉 쥔다. 그녀는 내 눈을 보며 슬픈 미소를 짓는다.)",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
+        next: "after_yuna_together_2"
+    },
+    "after_yuna_together_2": {
+        name: "유나",
+        text: "\"바보 같은 소리... 하지만 그 대답, 싫지 않아. 좋아, 그럼 우리... 서로의 비밀을 공유하는 사이가 되는 건 어때?\"",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
+        next: "yuna_contact_exchange"
+    },
+    "yuna_contact_exchange": {
+        name: "유나",
+        text: "(유나가 옥상 난간에서 몸을 떼며 무심하게 스마트폰을 내민다.) \"비밀을 공유하려면... 연락할 수단 정도는 있어야겠지. 네 번호, 여기에 남겨줘.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        choices: [
+            { text: "응, 유나랑 더 많은 비밀을 나누고 싶어.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
+            { text: "미안, 아직은 좀 조심스러워.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
+        ]
+    },
+    "yuna_contact_success": {
+        name: "유나",
+        text: "(유나가 내 번호를 저장하고는 희미하게 미소 짓는다.) \"...됐어. 이제 우린 연결된 거야. 내가 부르면... 언제든 와줘야 해.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        night: true,
+        stats: { Yuna: { affinity: 15 } },
+        next: "night_home"
+    },
+    "yuna_contact_fail": {
+        name: "유나",
+        text: "(유나가 차가운 눈빛으로 나를 바라보더니 스마트폰을 집어넣는다.) \"...그래. 억지로 강요하진 않아. 하지만 기회는 자주 오지 않는다는 걸 명심해.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "night_home"
+    },
+    "after_yuna_scared": {
+        name: "유나",
+        text: "(그녀가 차갑게 웃으며 내 손을 놓는다. 그녀는 다시 창밖으로 시선을 돌리며 나를 밀어낸다.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "after_yuna_scared_2"
+    },
+    "after_yuna_scared_2": {
+        name: "유나",
+        text: "\"후훗, 역시 그렇겠지. 평범한 학생에게는 너무 무거운 이야기니까. 오늘은 이만 돌아가. 더 이상 깊이 알려고 하지 마.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "night_home"
+    },
+    "after_yuna_secret": {
+        name: "유나",
+        text: "(그녀가 손가락을 입술에 갖다 대며 조용히 하라는 신호를 보낸다.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_secret_2"
+    },
+    "after_yuna_secret_2": {
+        name: "유나",
+        text: "\"쉿... 벽에도 귀가 있는 법이야. 진실을 알게 되면 넌 더 이상 평범한 일상으로 돌아갈 수 없어. 그래도 괜찮다면... 내 손을 잡아.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_rooftop"
+    },
+    "after_yuna_secret_deep": {
+        name: "유나",
+        text: "(유나가 책을 덮고 나를 빤히 바라본다. 그녀의 눈동자가 보랏빛으로 기묘하게 빛나는 것 같다.) \"...진실? 그걸 감당할 준비가 됐어? 좋아, 네가 그 정도로 진심이라면... 따라와. 아무에게도 말하지 않겠다고 약속해.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 20 } },
+        next: "after_yuna_rooftop"
+    },
+    "after_yuna_secret_fail": {
+        name: "유나",
+        text: "(유나가 차가운 미소를 짓는다.) \"진실이라... 후훗, 넌 아직 그 무게를 견디기엔 너무 가벼워 보여. 궁금해하는 건 자유지만, 너무 깊이 파고들지 마. 다칠 수도 있으니까.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        stats: { Yuna: { affinity: -10 } },
+        next: "after_home"
+    },
+    "after_yuna_boring": {
+        name: "유나",
+        text: "(유나가 한심하다는 듯 한숨을 내쉬며 다시 책으로 시선을 돌린다.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_boring_2"
+    },
+    "after_yuna_boring_2": {
+        name: "유나",
+        text: "\"급식...? 그런 세속적인 이야기는 다른 애들이랑 해. 난 지금 바쁘니까 방해하지 말고 나가줄래?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_home"
+    },
+    "after_yuna_rude": {
+        name: "유나",
+        text: "(그녀가 책을 덮으며 나를 차갑게 쳐다본다. 공기가 순식간에 얼어붙는 것 같다.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_rude_2"
+    },
+    "after_yuna_rude_2": {
+        name: "유나",
+        text: "\"음침하다고...? 후훗, 넌 아직 아무것도 모르는구나. 이 학교를 감싸고 있는 이 기묘한 기운... 넌 느껴지지 않아? 무지함은 때로 죄가 되기도 하지. 당장 내 눈앞에서 사라져.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_home"
     },
     "after_dain_new": {
         name: "나",
@@ -1081,344 +1396,28 @@ SCENARIO[1] = {
         night: true,
         next: "after_home"
     },
-    "after_yuna_new": {
-        name: "나",
-        text: "(학교의 조용한 곳을 찾아 걷다 보니, 낡은 도서관 별관에 도착했다. 노을빛이 스며드는 그곳에는 한 소녀가 창가에 앉아 있다.)",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+    "after_nurse": {
+        name: "양호선생님",
+        text: "(양호실 문을 열자, 선생님이 창가에서 차를 마시고 있다가 나를 보고 미소 짓는다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
         sunset: true,
-        next: "after_yuna_new_2"
+        next: "after_nurse_2"
     },
-    "after_yuna_new_2": {
-        name: "???",
-        text: "\"안녕? 이 시간에 여기까지 오다니... 너도 참 특이하네. 나는 유나라고 해.\"",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        sunset: true,
-        setFlag: "metYuna",
-        next: "after_yuna_3"
+    "after_nurse_2": {
+        name: "양호선생님",
+        text: "\"{name?}! 하교하기 전에 나 보러 온 거니? 정말 착한 학생이네.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_free_talk_after_day1"
     },
-    "after_seoyeon": {
-        name: "서연",
-        text: "(학생회실 문을 열자, 산더미처럼 쌓인 서류들 사이에서 고군분투하고 있는 서연이가 보인다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_2"
-    },
-    "after_seoyeon_2": {
-        name: "서연",
-        text: "(내가 들어오자 그녀가 깜짝 놀라며 고개를 든다. 그녀는 펜을 내려놓고 기지개를 켠다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_3"
-    },
-    "after_seoyeon_3": {
-        name: "서연",
-        text: "\"어? {name?}! 이 시간에 어쩐 일이야? 설마... 나 기다려준 거야?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
-        choices: [
-            { text: "응, 같이 하교하고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "그냥 얼굴 보고 싶어서 왔어. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "착각하지 마. 그냥 길을 잘못 든 것뿐이야.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -20 } } }
-        ]
-    },
-    "after_seoyeon_rude": {
-        name: "서연",
-        text: "(서연이의 표정이 순식간에 굳어진다. 그녀는 다시 서류로 시선을 돌린다.)",
-        character: "assets/images/characters/seyoun_angry.png",
-        next: "after_seoyeon_rude_2"
-    },
-    "after_seoyeon_rude_2": {
-        name: "서연",
-        text: "\"아... 그래? 그럼 방해하지 말고 나가줄래? 나 지금 좀 바쁘거든.\"",
-        character: "assets/images/characters/seyoun_angry.png",
+    "nurse_free_talk_after_day1": {
+        type: "free_talk",
+        name: "양호선생님",
+        text: "\"자, 여기 앉으렴. 따뜻한 차 한 잔 줄게. 나랑 좀 더 이야기하다 갈래?\"",
+        context: "방과 후 노을 지는 양호실, 하교 전 선생님과 단둘이 대화를 나누는 상황",
+        personality: "성숙하고 매혹적인 '누님' 스타일. 주인공을 귀여워하며 챙겨줌.",
+        character: "assets/images/characters/nurse.png",
         next: "after_home"
-    },
-    "after_seoyeon_help": {
-        name: "서연",
-        text: "(그녀가 감동한 듯 눈을 크게 뜬다. 이내 환한 미소를 지으며 내 옆자리를 내어준다.)",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "after_seoyeon_help_2"
-    },
-    "after_seoyeon_help_2": {
-        name: "서연",
-        text: "(우리는 말없이 서류를 정리하며 묘한 유대감을 느낀다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_help_2_2"
-    },
-    "after_seoyeon_help_2_2": {
-        name: "서연",
-        text: "\"정말? 고마워! 네가 도와준다면 금방 끝낼 수 있을 것 같아. 자, 이 서류들 분류하는 것 좀 도와줄래?\"",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "after_seoyeon_help_3"
-    },
-    "after_seoyeon_help_3": {
-        name: "서연",
-        text: "\"우리... 끝나고 같이 맛있는 거 먹으러 가자!\"",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "after_seoyeon_cafe"
-    },
-    "after_seoyeon_cafe": {
-        name: "서연",
-        text: "(서류 정리를 마치고 우리는 학교 앞 작은 카페에 들렀다.)",
-        background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_cafe_2"
-    },
-    "after_seoyeon_cafe_2": {
-        name: "서연",
-        text: "(서연이는 생크림이 듬뿍 올라간 음료를 마시며 행복한 표정을 짓는다.)",
-        background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_cafe_2_2"
-    },
-    "after_seoyeon_cafe_2_2": {
-        name: "서연",
-        text: "\"하아~ 이제야 좀 살 것 같아. 오늘 정말 고마웠어, {name?}.\"",
-        background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_cafe_3"
-    },
-    "after_seoyeon_cafe_3": {
-        name: "서연",
-        text: "\"네 덕분에 학생회 일도 즐겁게 마무리할 수 있었어. 우리... 내일도 같이 하교할 수 있을까?\"",
-        background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
-        choices: [
-            { text: "물론이지. 내일도 기다릴게.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "글쎄, 내일 기분 봐서? (장난)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 7 } } }
-        ]
-    },
-    "after_seoyeon_promise": {
-        name: "서연",
-        text: "(그녀가 새끼손가락을 내밀며 환하게 웃는다.)",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "after_seoyeon_promise_2"
-    },
-    "after_seoyeon_promise_2": {
-        name: "서연",
-        text: "\"약속한 거다? 어기면 안 돼! 그럼 내일 봐, {name?}. 조심히 들어가!\"",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "after_home"
-    },
-    "after_seoyeon_tease": {
-        name: "서연",
-        text: "(그녀가 볼을 빵빵하게 부풀리며 나를 째려본다.)",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "after_seoyeon_tease_2"
-    },
-    "after_seoyeon_tease_2": {
-        name: "서연",
-        text: "\"치... 정말 못됐다니까! 그래도 꼭 와야 해? 안 오면 학생회장의 권한으로 벌을 줄 테니까! 후훗, 농담이야. 내일 봐!\"",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "after_home"
-    },
-    "after_seoyeon_worry": {
-        name: "서연",
-        text: "(그녀가 쑥스러운 듯 머리를 긁적이며 웃는다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_worry_2"
-    },
-    "after_seoyeon_worry_2": {
-        name: "서연",
-        text: "\"헤헤, 들켰네. 학생회장이라는 게 생각보다 할 일이 많거든. 하지만 네가 이렇게 걱정해주니까 힘이 불끈 솟는걸? 조금만 기다려줘, 금방 끝내고 같이 가자!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_cafe"
-    },
-    "after_yuna": {
-        name: "유나",
-        text: "(도서관 별관은 낮보다 더 어둡고 고요하다. 그곳에는 한 소녀가 창가에 앉아 노을을 바라보고 있다.)",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        sunset: true,
-        next: "after_yuna_2"
-    },
-    "after_yuna_2": {
-        name: "유나",
-        text: "(그녀는 내가 온 것을 알면서도 한참 동안 창밖만 바라본다.)",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        sunset: true,
-        next: "after_yuna_3"
-    },
-    "after_yuna_3": {
-        name: "유나",
-        text: "\"아, {name?}... 방과 후의 도서관은 더 고요해서 좋아. 넌 무슨 일로 온 거야?\"",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        sunset: true,
-        next: "yuna_name_share_pre"
-    },
-    "yuna_name_share_pre": {
-        name: "나",
-        text: "\"내 이름은 '{name}'야. 너랑 친해지고 싶어.\"",
-        setFlag: "knowsName_유나",
-        next: "yuna_name_share"
-    },
-    "after_yuna_secret_deep": {
-        name: "유나",
-        text: "(유나가 책을 덮고 나를 빤히 바라본다. 그녀의 눈동자가 보랏빛으로 기묘하게 빛나는 것 같다.) \"...진실? 그걸 감당할 준비가 됐어? 좋아, 네가 그 정도로 진심이라면... 따라와. 아무에게도 말하지 않겠다고 약속해.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        stats: { Yuna: { affinity: 20 } },
-        next: "after_yuna_rooftop"
-    },
-    "after_yuna_secret_fail": {
-        name: "유나",
-        text: "(유나가 차가운 미소를 짓는다.) \"진실이라... 후훗, 넌 아직 그 무게를 견디기엔 너무 가벼워 보여. 궁금해하는 건 자유지만, 너무 깊이 파고들지 마. 다칠 수도 있으니까.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        stats: { Yuna: { affinity: -10 } },
-        next: "after_home"
-    },
-    "after_yuna_boring": {
-        name: "유나",
-        text: "(유나가 한심하다는 듯 한숨을 내쉬며 다시 책으로 시선을 돌린다.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_yuna_boring_2"
-    },
-    "after_yuna_boring_2": {
-        name: "유나",
-        text: "\"급식...? 그런 세속적인 이야기는 다른 애들이랑 해. 난 지금 바쁘니까 방해하지 말고 나가줄래?\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_home"
-    },
-    "after_yuna_rude": {
-        name: "유나",
-        text: "(그녀가 책을 덮으며 나를 차갑게 쳐다본다. 공기가 순식간에 얼어붙는 것 같다.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_yuna_rude_2"
-    },
-    "after_yuna_rude_2": {
-        name: "유나",
-        text: "\"음침하다고...? 후훗, 넌 아직 아무것도 모르는구나. 이 학교를 감싸고 있는 이 기묘한 기운... 넌 느껴지지 않아? 무지함은 때로 죄가 되기도 하지. 당장 내 눈앞에서 사라져.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_home"
-    },
-    "yuna_name_share": {
-        name: "유나",
-        text: "(그녀가 내 이름을 나지막이 읊조린다.) \"...{name}. 기억해둘게. 하지만 이름 같은 건... 이 학교에선 큰 의미가 없을지도 몰라.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        sunset: true,
-        next: "after_yuna_know"
-    },
-    "after_yuna_know": {
-        name: "유나",
-        text: "(그녀가 천천히 고개를 돌려 나를 바라본다. 그녀의 입가에 희미한 미소가 번진다.)",
-        character: "assets/images/characters/yuna_smile.png",
-        sunset: true,
-        next: "after_yuna_know_2"
-    },
-    "after_yuna_know_2": {
-        name: "유나",
-        text: "(그녀는 내 손을 잡고 별관 옥상으로 나를 이끈다.)",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "after_yuna_know_2_2"
-    },
-    "after_yuna_know_2_2": {
-        name: "유나",
-        text: "\"나에 대해...? 후훗, 용감한 건지 무모한 건지 모르겠네.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "after_yuna_know_3"
-    },
-    "after_yuna_know_3": {
-        name: "유나",
-        text: "\"좋아, 오늘 밤은 길 테니까. 조금씩... 아주 조금씩 알려줄게. 따라와.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "after_yuna_rooftop"
-    },
-    "after_yuna_rooftop": {
-        name: "유나",
-        text: "(별관 옥상에서 내려다보는 학교는 낮과는 전혀 다른 모습이다.)",
-        background: "assets/images/background/top_school.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "after_yuna_rooftop_2"
-    },
-    "after_yuna_rooftop_2": {
-        name: "유나",
-        text: "(유나는 난간에 기대어 먼 곳을 응시한다.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "after_yuna_rooftop_2_2"
-    },
-    "after_yuna_rooftop_2_2": {
-        name: "유나",
-        text: "\"사람들은 이 학교가 완벽하다고 생각하지. 하지만 완벽한 건 없어.\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
-        night: true,
-        next: "after_yuna_rooftop_3"
-    },
-    "after_yuna_rooftop_3": {
-        name: "유나",
-        text: "\"겉으로 드러나지 않은 문제들이 곪아가고 있을 뿐이야. 이 학교를 가득 채운 무거운 기운... 넌 그런 위화감, 못 느꼈어?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
-        night: true,
-        choices: [
-            { text: "너와 함께라면 어디든 갈 수 있어.", next: "after_yuna_together" },
-            { text: "어둠이라니... 좀 무서운데.", next: "after_yuna_scared" }
-        ]
-    },
-    "after_yuna_together": {
-        name: "유나",
-        text: "(그녀가 내 손을 꽉 쥔다. 그녀는 내 눈을 보며 슬픈 미소를 짓는다.)",
-        character: "assets/images/characters/yuna_sadsmile.png",
-        night: true,
-        next: "after_yuna_together_2"
-    },
-    "after_yuna_together_2": {
-        name: "유나",
-        text: "\"바보 같은 소리... 하지만 그 대답, 싫지 않아. 좋아, 그럼 우리... 서로의 비밀을 공유하는 사이가 되는 건 어때?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
-        night: true,
-        next: "yuna_contact_exchange"
-    },
-    "yuna_contact_exchange": {
-        name: "유나",
-        text: "(유나가 옥상 난간에서 몸을 떼며 무심하게 스마트폰을 내민다.) \"비밀을 공유하려면... 연락할 수단 정도는 있어야겠지. 네 번호, 여기에 남겨줘.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        choices: [
-            { text: "응, 유나랑 더 많은 비밀을 나누고 싶어.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
-            { text: "미안, 아직은 좀 조심스러워.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
-        ]
-    },
-    "yuna_contact_success": {
-        name: "유나",
-        text: "(유나가 내 번호를 저장하고는 희미하게 미소 짓는다.) \"...됐어. 이제 우린 연결된 거야. 내가 부르면... 언제든 와줘야 해.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        night: true,
-        stats: { Yuna: { affinity: 15 } },
-        next: "night_home"
-    },
-    "yuna_contact_fail": {
-        name: "유나",
-        text: "(유나가 차가운 눈빛으로 나를 바라보더니 스마트폰을 집어넣는다.) \"...그래. 억지로 강요하진 않아. 하지만 기회는 자주 오지 않는다는 걸 명심해.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "night_home"
-    },
-    "after_yuna_scared": {
-        name: "유나",
-        text: "(그녀가 차갑게 웃으며 내 손을 놓는다. 그녀는 다시 창밖으로 시선을 돌리며 나를 밀어낸다.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "after_yuna_scared_2"
-    },
-    "after_yuna_scared_2": {
-        name: "유나",
-        text: "\"후훗, 역시 그렇겠지. 평범한 학생에게는 너무 무거운 이야기니까. 오늘은 이만 돌아가. 더 이상 깊이 알려고 하지 마.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "night_home"
-    },
-    "after_yuna_secret": {
-        name: "유나",
-        text: "(그녀가 손가락을 입술에 갖다 대며 조용히 하라는 신호를 보낸다.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_yuna_secret_2"
-    },
-    "after_yuna_secret_2": {
-        name: "유나",
-        text: "\"쉿... 벽에도 귀가 있는 법이야. 진실을 알게 되면 넌 더 이상 평범한 일상으로 돌아갈 수 없어. 그래도 괜찮다면... 내 손을 잡아.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_yuna_rooftop"
     },
     "after_home": {
         name: "나",

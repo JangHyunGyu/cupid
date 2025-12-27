@@ -815,44 +815,6 @@ SCENARIO[1] = {
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"
     },
-    "after_nurse": {
-        name: "Me",
-        text: "(I passed through the hallway where the sunset was setting and opened the door to the nurse's office. The teacher was in the room with a faint herbal scent.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        next: "after_nurse_2"
-    },
-    "after_nurse_2": {
-        name: "Nurse",
-        text: "\"Oh, {name?}! What brings you here instead of going home? Maybe... did you come because you wanted to be alone with me?\"",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        next: "nurse_free_talk_after_day1"
-    },
-    "nurse_free_talk_after_day1": {
-        type: "free_talk",
-        name: "Nurse",
-        text: "\"Hehe, your face turned red? How cute. Now, do you want to sit here and talk to me a bit more before you go?\"",
-        context: "A situation where you are left alone with the nurse in the nurse's office where the sunset is setting after school. The teacher openly seduces the protagonist and enjoys it.",
-        personality: "Mature and seductive 'older sister' style. Enjoys teasing the protagonist with provocative words, but actually cares for and tries to protect the protagonist more than anyone else.",
-        character: "assets/images/characters/nurse.png",
-        next: "after_home"
-    },
-    "after_school_start": {
-        name: "Me",
-        text: "(Before I knew it, all classes were over and the bell announcing after school echoed.)",
-        background: "assets/images/background/room_school.png",
-        character: null,
-        sunset: true,
-        next: "after_school_start_2"
-    },
-    "after_school_start_2": {
-        name: "Me",
-        text: "(As I pack my bag and try to leave the classroom... the hallway is full of the footsteps of children going home.)",
-        sunset: true,
-        next: "after_school_start_3"
-    },
     "after_school_start_3": {
         name: "Me",
         text: "(Today was a really long day. What should I do now?)",
@@ -868,6 +830,345 @@ SCENARIO[1] = {
             { text: "Go toward the nurse's office.", next: "after_nurse", excludeCondition: "metNurse", setFlag: "metNurse" },
             { text: "I'm tired today, so I'll go straight home.", next: "after_home" }
         ]
+    },
+    "after_seoyeon": {
+        name: "Seoyeon",
+        text: "(As I open the student council room door, I see Seoyeon struggling among the piles of documents.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_2"
+    },
+    "after_seoyeon_2": {
+        name: "Seoyeon",
+        text: "(As I enter, she looks up in surprise. She puts down her pen and stretches.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_3"
+    },
+    "after_seoyeon_3": {
+        name: "Seoyeon",
+        text: "\"Oh? {name?}! What brings you here at this time? Don't tell me... you waited for me?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "Yeah, I wanted to go home together. Should I help?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "I just came because I wanted to see your face. Aren't you overdoing it?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Don't get me wrong. I just took the wrong way.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -20 } } }
+        ]
+    },
+    "after_seoyeon_rude": {
+        name: "Seoyeon",
+        text: "(Seoyeon's expression hardens instantly. She turns her gaze back to the documents.)",
+        character: "assets/images/characters/seyoun_angry.png",
+        next: "after_seoyeon_rude_2"
+    },
+    "after_seoyeon_rude_2": {
+        name: "Seoyeon",
+        text: "\"Oh... really? Then can you leave without disturbing me? I'm a bit busy right now.\"",
+        character: "assets/images/characters/seyoun_angry.png",
+        next: "after_home"
+    },
+    "after_seoyeon_help": {
+        name: "Seoyeon",
+        text: "(She opens her eyes wide as if moved. Soon she smiles brightly and gives me a seat next to her.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "after_seoyeon_help_2"
+    },
+    "after_seoyeon_help_2": {
+        name: "Seoyeon",
+        text: "(We feel a strange bond while organizing documents in silence.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_help_2_2"
+    },
+    "after_seoyeon_help_2_2": {
+        name: "Seoyeon",
+        text: "\"Really? Thank you! If you help me, I think I can finish it quickly. Now, can you help me sort these documents?\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "after_seoyeon_help_3"
+    },
+    "after_seoyeon_help_3": {
+        name: "Seoyeon",
+        text: "\"Let's... go eat something delicious together after we're done!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "after_seoyeon_cafe"
+    },
+    "after_seoyeon_cafe": {
+        name: "Seoyeon",
+        text: "(After finishing the document organization, we stopped by a small cafe in front of the school.)",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_cafe_2"
+    },
+    "after_seoyeon_cafe_2": {
+        name: "Seoyeon",
+        text: "(Seoyeon makes a happy expression while drinking a drink with plenty of whipped cream.)",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_cafe_2_2"
+    },
+    "after_seoyeon_cafe_2_2": {
+        name: "Seoyeon",
+        text: "\"Phew~ Now I feel like I'm living. Thank you so much for today, {name?}.\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_cafe_3"
+    },
+    "after_seoyeon_cafe_3": {
+        name: "Seoyeon",
+        text: "\"Thanks to you, I was able to finish the student council work happily. Can we... go home together tomorrow too?\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "Of course. I'll wait for you tomorrow too.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "Well, depending on my mood tomorrow? (Joke)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 7 } } }
+        ]
+    },
+    "after_seoyeon_promise": {
+        name: "Seoyeon",
+        text: "(She smiles brightly while holding out her pinky finger.)",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "after_seoyeon_promise_2"
+    },
+    "after_seoyeon_promise_2": {
+        name: "Seoyeon",
+        text: "\"Is it a promise? You can't break it! Then see you tomorrow, {name?}. Get home safely!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "after_home"
+    },
+    "after_seoyeon_tease": {
+        name: "Seoyeon",
+        text: "(She glares at me while puffing out her cheeks.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "after_seoyeon_tease_2"
+    },
+    "after_seoyeon_tease_2": {
+        name: "Seoyeon",
+        text: "\"Hmph... You're really mean! But you still have to come, okay? If you don't come, I'll punish you with the authority of the student council president! Hehe, just kidding. See you tomorrow!\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "after_home"
+    },
+    "after_seoyeon_worry": {
+        name: "Seoyeon",
+        text: "(She smiles while scratching her head as if shy.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_worry_2"
+    },
+    "after_seoyeon_worry_2": {
+        name: "Seoyeon",
+        text: "\"Hehe, you caught me. Being the student council president has more work than I thought. But I feel energized because you're worrying about me like this! Just wait a bit, I'll finish it quickly and let's go together!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "after_seoyeon_cafe"
+    },
+    "after_yuna_new": {
+        name: "Me",
+        text: "(Looking for a quiet place in the school, I arrived at the old library annex. There, a girl is sitting by the window looking at the sunset.)",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "after_yuna_new_2"
+    },
+    "after_yuna_new_2": {
+        name: "???",
+        text: "\"Hi? Coming all the way here at this time... You're quite unique too. I'm Yuna.\"",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        setFlag: "metYuna",
+        next: "after_yuna_3"
+    },
+    "after_yuna": {
+        name: "Yuna",
+        text: "(The library annex is darker and quieter than during the day. There, a girl is sitting by the window looking at the sunset.)",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "after_yuna_2"
+    },
+    "after_yuna_2": {
+        name: "Yuna",
+        text: "(She looks out the window for a long time even though she knows I've come.)",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "after_yuna_3"
+    },
+    "after_yuna_3": {
+        name: "Yuna",
+        text: "\"Oh, {name?}... I like the library after school because it's quieter. What brings you here?\"",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "yuna_name_share_pre"
+    },
+    "yuna_name_share_pre": {
+        name: "Me",
+        text: "\"My name is '{name}'. I want to get close to you.\"",
+        setFlag: "knowsName_유나",
+        next: "yuna_name_share"
+    },
+    "yuna_name_share": {
+        name: "Yuna",
+        text: "(She recites my name in a low voice.) \"...{name}. I'll remember it. But names... might not have much meaning in this school.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "after_yuna_know"
+    },
+    "after_yuna_know": {
+        name: "Yuna",
+        text: "(She slowly turns her head and looks at me. A faint smile spreads across her lips.)",
+        character: "assets/images/characters/yuna_smile.png",
+        sunset: true,
+        next: "after_yuna_know_2"
+    },
+    "after_yuna_know_2": {
+        name: "Yuna",
+        text: "(She takes my hand and leads me to the annex rooftop.)",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "after_yuna_know_2_2"
+    },
+    "after_yuna_know_2_2": {
+        name: "Yuna",
+        text: "\"About me...? Hehe, I don't know if you're brave or reckless.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "after_yuna_know_3"
+    },
+    "after_yuna_know_3": {
+        name: "Yuna",
+        text: "\"Okay, tonight will be long. I'll tell you little by little... very little by little. Follow me.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "after_yuna_rooftop"
+    },
+    "after_yuna_rooftop": {
+        name: "Yuna",
+        text: "(The school seen from the annex rooftop is completely different from during the day.)",
+        background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "after_yuna_rooftop_2"
+    },
+    "after_yuna_rooftop_2": {
+        name: "Yuna",
+        text: "(Yuna leans against the railing and gazes into the distance.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "after_yuna_rooftop_2_2"
+    },
+    "after_yuna_rooftop_2_2": {
+        name: "Yuna",
+        text: "\"People think this school is perfect. But nothing is perfect.\"",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
+        next: "after_yuna_rooftop_3"
+    },
+    "after_yuna_rooftop_3": {
+        name: "Yuna",
+        text: "\"It's just that problems that haven't been revealed are festering. This heavy energy filling this school... didn't you feel such a sense of incongruity?\"",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
+        choices: [
+            { text: "I can go anywhere with you.", next: "after_yuna_together" },
+            { text: "Darkness... it's a bit scary.", next: "after_yuna_scared" }
+        ]
+    },
+    "after_yuna_together": {
+        name: "Yuna",
+        text: "(She grips my hand tightly. She looks into my eyes and gives a sad smile.)",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
+        next: "after_yuna_together_2"
+    },
+    "after_yuna_together_2": {
+        name: "Yuna",
+        text: "\"What a foolish thing to say... But I don't dislike that answer. Okay, then... how about we become a relationship that shares each other's secrets?\"",
+        character: "assets/images/characters/yuna_sadsmile.png",
+        night: true,
+        next: "yuna_contact_exchange"
+    },
+    "yuna_contact_exchange": {
+        name: "Yuna",
+        text: "(Yuna steps away from the rooftop railing and nonchalantly holds out her smartphone.) \"To share secrets... we should at least have a means of contact. Leave your number here.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        choices: [
+            { text: "Yeah, I want to share more secrets with Yuna.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
+            { text: "Sorry, I'm still a bit cautious.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
+        ]
+    },
+    "yuna_contact_success": {
+        name: "Yuna",
+        text: "(Yuna saves my number and smiles faintly.) \"...Done. Now we're connected. If I call... you have to come anytime.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        night: true,
+        stats: { Yuna: { affinity: 15 } },
+        next: "night_home"
+    },
+    "yuna_contact_fail": {
+        name: "Yuna",
+        text: "(Yuna looks at me with cold eyes and puts her smartphone away.) \"...Yeah. I won't force you. But keep in mind that opportunities don't come often.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "night_home"
+    },
+    "after_yuna_scared": {
+        name: "Yuna",
+        text: "(She laughs coldly and lets go of my hand. She turns her gaze back to the window and pushes me away.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "after_yuna_scared_2"
+    },
+    "after_yuna_scared_2": {
+        name: "Yuna",
+        text: "\"Hehe, as expected. It's too heavy a story for an ordinary student. Go back for today. Don't try to know any deeper.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        next: "night_home"
+    },
+    "after_yuna_secret": {
+        name: "Yuna",
+        text: "(She puts her finger to her lips and signals to be quiet.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_secret_2"
+    },
+    "after_yuna_secret_2": {
+        name: "Yuna",
+        text: "\"Shh... Even walls have ears. Once you know the truth, you can no longer return to your ordinary daily life. If you're still okay with that... take my hand.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_rooftop"
+    },
+    "after_yuna_secret_deep": {
+        name: "Yuna",
+        text: "(Yuna closes the book and stares at me intently. Her eyes seem to glow strangely in purple.) \"...The truth? Are you ready to handle it? Okay, if you're that serious... follow me. Promise me you won't tell anyone.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 20 } },
+        next: "after_yuna_rooftop"
+    },
+    "after_yuna_secret_fail": {
+        name: "Yuna",
+        text: "(Yuna gives a cold smile.) \"The truth... Hehe, you still look too light to bear that weight. You're free to be curious, but don't dig too deep. You might get hurt.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        stats: { Yuna: { affinity: -10 } },
+        next: "after_home"
+    },
+    "after_yuna_boring": {
+        name: "Yuna",
+        text: "(Yuna sighs as if it's pathetic and turns her gaze back to the book.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_boring_2"
+    },
+    "after_yuna_boring_2": {
+        name: "Yuna",
+        text: "\"Lunch...? Talk about such worldly things with other kids. I'm busy right now, so can you leave without disturbing me?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_home"
+    },
+    "after_yuna_rude": {
+        name: "Yuna",
+        text: "(She closes the book and looks at me coldly. The air seems to freeze instantly.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_rude_2"
+    },
+    "after_yuna_rude_2": {
+        name: "Yuna",
+        text: "\"Gloomy...? Hehe, you still don't know anything. This strange energy surrounding this school... don't you feel it? Ignorance is sometimes a sin. Disappear from my sight right now.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_home"
     },
     "after_dain_new": {
         name: "Me",
@@ -1081,344 +1382,29 @@ SCENARIO[1] = {
         night: true,
         next: "after_home"
     },
-    "after_yuna_new": {
+    "after_nurse": {
         name: "Me",
-        text: "(Looking for a quiet place in the school, I arrived at the old library annex. There, a girl is sitting by the window looking at the sunset.)",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        text: "(I passed through the hallway where the sunset was setting and opened the door to the nurse's office. The teacher was in the room with a faint herbal scent.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
         sunset: true,
-        next: "after_yuna_new_2"
+        next: "after_nurse_2"
     },
-    "after_yuna_new_2": {
-        name: "???",
-        text: "\"Hi? Coming all the way here at this time... You're quite unique too. I'm Yuna.\"",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+    "after_nurse_2": {
+        name: "Nurse",
+        text: "\"Oh, {name?}! What brings you here instead of going home? Maybe... did you come because you wanted to be alone with me?\"",
+        character: "assets/images/characters/nurse.png",
         sunset: true,
-        setFlag: "metYuna",
-        next: "after_yuna_3"
+        next: "nurse_free_talk_after_day1"
     },
-    "after_seoyeon": {
-        name: "Seoyeon",
-        text: "(As I open the student council room door, I see Seoyeon struggling among the piles of documents.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_2"
-    },
-    "after_seoyeon_2": {
-        name: "Seoyeon",
-        text: "(As I enter, she looks up in surprise. She puts down her pen and stretches.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_3"
-    },
-    "after_seoyeon_3": {
-        name: "Seoyeon",
-        text: "\"Oh? {name?}! What brings you here at this time? Don't tell me... you waited for me?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
-        choices: [
-            { text: "Yeah, I wanted to go home together. Should I help?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "I just came because I wanted to see your face. Aren't you overdoing it?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "Don't get me wrong. I just took the wrong way.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -20 } } }
-        ]
-    },
-    "after_seoyeon_rude": {
-        name: "Seoyeon",
-        text: "(Seoyeon's expression hardens instantly. She turns her gaze back to the documents.)",
-        character: "assets/images/characters/seyoun_angry.png",
-        next: "after_seoyeon_rude_2"
-    },
-    "after_seoyeon_rude_2": {
-        name: "Seoyeon",
-        text: "\"Oh... really? Then can you leave without disturbing me? I'm a bit busy right now.\"",
-        character: "assets/images/characters/seyoun_angry.png",
+    "nurse_free_talk_after_day1": {
+        type: "free_talk",
+        name: "Nurse",
+        text: "\"Hehe, your face turned red? How cute. Now, do you want to sit here and talk to me a bit more before you go?\"",
+        context: "A situation where you are left alone with the nurse in the nurse's office where the sunset is setting after school. The teacher openly seduces the protagonist and enjoys it.",
+        personality: "Mature and seductive 'older sister' style. Enjoys teasing the protagonist with provocative words, but actually cares for and tries to protect the protagonist more than anyone else.",
+        character: "assets/images/characters/nurse.png",
         next: "after_home"
-    },
-    "after_seoyeon_help": {
-        name: "Seoyeon",
-        text: "(She opens her eyes wide as if moved. Soon she smiles brightly and gives me a seat next to her.)",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "after_seoyeon_help_2"
-    },
-    "after_seoyeon_help_2": {
-        name: "Seoyeon",
-        text: "(We feel a strange bond while organizing documents in silence.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_help_2_2"
-    },
-    "after_seoyeon_help_2_2": {
-        name: "Seoyeon",
-        text: "\"Really? Thank you! If you help me, I think I can finish it quickly. Now, can you help me sort these documents?\"",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "after_seoyeon_help_3"
-    },
-    "after_seoyeon_help_3": {
-        name: "Seoyeon",
-        text: "\"Let's... go eat something delicious together after we're done!\"",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "after_seoyeon_cafe"
-    },
-    "after_seoyeon_cafe": {
-        name: "Seoyeon",
-        text: "(After finishing the document organization, we stopped by a small cafe in front of the school.)",
-        background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_cafe_2"
-    },
-    "after_seoyeon_cafe_2": {
-        name: "Seoyeon",
-        text: "(Seoyeon makes a happy expression while drinking a drink with plenty of whipped cream.)",
-        background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_cafe_2_2"
-    },
-    "after_seoyeon_cafe_2_2": {
-        name: "Seoyeon",
-        text: "\"Phew~ Now I feel like I'm living. Thank you so much for today, {name?}.\"",
-        background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_cafe_3"
-    },
-    "after_seoyeon_cafe_3": {
-        name: "Seoyeon",
-        text: "\"Thanks to you, I was able to finish the student council work happily. Can we... go home together tomorrow too?\"",
-        background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
-        choices: [
-            { text: "Of course. I'll wait for you tomorrow too.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "Well, depending on my mood tomorrow? (Joke)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 7 } } }
-        ]
-    },
-    "after_seoyeon_promise": {
-        name: "Seoyeon",
-        text: "(She smiles brightly while holding out her pinky finger.)",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "after_seoyeon_promise_2"
-    },
-    "after_seoyeon_promise_2": {
-        name: "Seoyeon",
-        text: "\"Is it a promise? You can't break it! Then see you tomorrow, {name?}. Get home safely!\"",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "after_home"
-    },
-    "after_seoyeon_tease": {
-        name: "Seoyeon",
-        text: "(She glares at me while puffing out her cheeks.)",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "after_seoyeon_tease_2"
-    },
-    "after_seoyeon_tease_2": {
-        name: "Seoyeon",
-        text: "\"Hmph... You're really mean! But you still have to come, okay? If you don't come, I'll punish you with the authority of the student council president! Hehe, just kidding. See you tomorrow!\"",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "after_home"
-    },
-    "after_seoyeon_worry": {
-        name: "Seoyeon",
-        text: "(She smiles while scratching her head as if shy.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_worry_2"
-    },
-    "after_seoyeon_worry_2": {
-        name: "Seoyeon",
-        text: "\"Hehe, you caught me. Being the student council president has more work than I thought. But I feel energized because you're worrying about me like this! Just wait a bit, I'll finish it quickly and let's go together!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_cafe"
-    },
-    "after_yuna": {
-        name: "Yuna",
-        text: "(The library annex is darker and quieter than during the day. There, a girl is sitting by the window looking at the sunset.)",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        sunset: true,
-        next: "after_yuna_2"
-    },
-    "after_yuna_2": {
-        name: "Yuna",
-        text: "(She looks out the window for a long time even though she knows I've come.)",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        sunset: true,
-        next: "after_yuna_3"
-    },
-    "after_yuna_3": {
-        name: "Yuna",
-        text: "\"Oh, {name?}... I like the library after school because it's quieter. What brings you here?\"",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        sunset: true,
-        next: "yuna_name_share_pre"
-    },
-    "yuna_name_share_pre": {
-        name: "Me",
-        text: "\"My name is '{name}'. I want to get close to you.\"",
-        setFlag: "knowsName_유나",
-        next: "yuna_name_share"
-    },
-    "after_yuna_secret_deep": {
-        name: "Yuna",
-        text: "(Yuna closes the book and stares at me intently. Her eyes seem to glow strangely in purple.) \"...The truth? Are you ready to handle it? Okay, if you're that serious... follow me. Promise me you won't tell anyone.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        stats: { Yuna: { affinity: 20 } },
-        next: "after_yuna_rooftop"
-    },
-    "after_yuna_secret_fail": {
-        name: "Yuna",
-        text: "(Yuna gives a cold smile.) \"The truth... Hehe, you still look too light to bear that weight. You're free to be curious, but don't dig too deep. You might get hurt.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        stats: { Yuna: { affinity: -10 } },
-        next: "after_home"
-    },
-    "after_yuna_boring": {
-        name: "Yuna",
-        text: "(Yuna sighs as if it's pathetic and turns her gaze back to the book.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_yuna_boring_2"
-    },
-    "after_yuna_boring_2": {
-        name: "Yuna",
-        text: "\"Lunch...? Talk about such worldly things with other kids. I'm busy right now, so can you leave without disturbing me?\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_home"
-    },
-    "after_yuna_rude": {
-        name: "Yuna",
-        text: "(She closes the book and looks at me coldly. The air seems to freeze instantly.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_yuna_rude_2"
-    },
-    "after_yuna_rude_2": {
-        name: "Yuna",
-        text: "\"Gloomy...? Hehe, you still don't know anything. This strange energy surrounding this school... don't you feel it? Ignorance is sometimes a sin. Disappear from my sight right now.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_home"
-    },
-    "yuna_name_share": {
-        name: "Yuna",
-        text: "(She recites my name in a low voice.) \"...{name}. I'll remember it. But names... might not have much meaning in this school.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        sunset: true,
-        next: "after_yuna_know"
-    },
-    "after_yuna_know": {
-        name: "Yuna",
-        text: "(She slowly turns her head and looks at me. A faint smile spreads across her lips.)",
-        character: "assets/images/characters/yuna_smile.png",
-        sunset: true,
-        next: "after_yuna_know_2"
-    },
-    "after_yuna_know_2": {
-        name: "Yuna",
-        text: "(She takes my hand and leads me to the annex rooftop.)",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "after_yuna_know_2_2"
-    },
-    "after_yuna_know_2_2": {
-        name: "Yuna",
-        text: "\"About me...? Hehe, I don't know if you're brave or reckless.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "after_yuna_know_3"
-    },
-    "after_yuna_know_3": {
-        name: "Yuna",
-        text: "\"Okay, tonight will be long. I'll tell you little by little... very little by little. Follow me.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "after_yuna_rooftop"
-    },
-    "after_yuna_rooftop": {
-        name: "Yuna",
-        text: "(The school seen from the annex rooftop is completely different from during the day.)",
-        background: "assets/images/background/top_school.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "after_yuna_rooftop_2"
-    },
-    "after_yuna_rooftop_2": {
-        name: "Yuna",
-        text: "(Yuna leans against the railing and gazes into the distance.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "after_yuna_rooftop_2_2"
-    },
-    "after_yuna_rooftop_2_2": {
-        name: "Yuna",
-        text: "\"People think this school is perfect. But nothing is perfect.\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
-        night: true,
-        next: "after_yuna_rooftop_3"
-    },
-    "after_yuna_rooftop_3": {
-        name: "Yuna",
-        text: "\"It's just that problems that haven't been revealed are festering. This heavy energy filling this school... didn't you feel such a sense of incongruity?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
-        night: true,
-        choices: [
-            { text: "I can go anywhere with you.", next: "after_yuna_together" },
-            { text: "Darkness... it's a bit scary.", next: "after_yuna_scared" }
-        ]
-    },
-    "after_yuna_together": {
-        name: "Yuna",
-        text: "(She grips my hand tightly. She looks into my eyes and gives a sad smile.)",
-        character: "assets/images/characters/yuna_sadsmile.png",
-        night: true,
-        next: "after_yuna_together_2"
-    },
-    "after_yuna_together_2": {
-        name: "Yuna",
-        text: "\"What a foolish thing to say... But I don't dislike that answer. Okay, then... how about we become a relationship that shares each other's secrets?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
-        night: true,
-        next: "yuna_contact_exchange"
-    },
-    "yuna_contact_exchange": {
-        name: "Yuna",
-        text: "(Yuna steps away from the rooftop railing and nonchalantly holds out her smartphone.) \"To share secrets... we should at least have a means of contact. Leave your number here.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        choices: [
-            { text: "Yeah, I want to share more secrets with Yuna.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
-            { text: "Sorry, I'm still a bit cautious.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
-        ]
-    },
-    "yuna_contact_success": {
-        name: "Yuna",
-        text: "(Yuna saves my number and smiles faintly.) \"...Done. Now we're connected. If I call... you have to come anytime.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        night: true,
-        stats: { Yuna: { affinity: 15 } },
-        next: "night_home"
-    },
-    "yuna_contact_fail": {
-        name: "Yuna",
-        text: "(Yuna looks at me with cold eyes and puts her smartphone away.) \"...Yeah. I won't force you. But keep in mind that opportunities don't come often.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "night_home"
-    },
-    "after_yuna_scared": {
-        name: "Yuna",
-        text: "(She laughs coldly and lets go of my hand. She turns her gaze back to the window and pushes me away.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "after_yuna_scared_2"
-    },
-    "after_yuna_scared_2": {
-        name: "Yuna",
-        text: "\"Hehe, as expected. It's too heavy a story for an ordinary student. Go back for today. Don't try to know any deeper.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
-        next: "night_home"
-    },
-    "after_yuna_secret": {
-        name: "Yuna",
-        text: "(She puts her finger to her lips and signals to be quiet.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_yuna_secret_2"
-    },
-    "after_yuna_secret_2": {
-        name: "Yuna",
-        text: "\"Shh... Even walls have ears. Once you know the truth, you can no longer return to your ordinary daily life. If you're still okay with that... take my hand.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_yuna_rooftop"
     },
     "after_home": {
         name: "Me",
