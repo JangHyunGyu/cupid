@@ -621,6 +621,28 @@ Object.assign(SCENARIO[1], {
         context: "방과 후 노을 지는 양호실, 하교 전 선생님과 단둘이 대화를 나누는 상황",
         personality: "성숙하고 매혹적인 '누님' 스타일. 주인공을 귀여워하며 챙겨줌.",
         character: "assets/images/characters/nurse.png",
+        next: "nurse_after_day1_contact"
+    },
+    "nurse_after_day1_contact": {
+        name: "양호선생님",
+        text: "\"벌써 가려고? 아쉽네... {name?}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "네, 알려주세요!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { text: "아직은 좀 부담스러워요.", next: "nurse_after_day1_contact_fail", stats: { Nurse: { affinity: -5 } } }
+        ]
+    },
+    "nurse_after_day1_contact_success": {
+        name: "양호선생님",
+        text: "\"후훗, 착하네. 그럼 이따 밤에 연락할게? 잘 가, {name?}.\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 10 } },
+        next: "after_home"
+    },
+    "nurse_after_day1_contact_fail": {
+        name: "양호선생님",
+        text: "\"어머, 튕기는 거야? 알았어. 나중에 마음 바뀌면 말해줘. 조심히 들어가!\"",
+        character: "assets/images/characters/nurse.png",
         next: "after_home"
     }
 });

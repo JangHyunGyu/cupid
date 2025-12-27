@@ -103,6 +103,28 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "\"Inside here... are records the school has kept hidden for years. Once you see them... nothing will ever be the same.\"",
         character: "assets/images/characters/yuna_smile.png",
+        choices: [
+            { text: "Can I see those records too?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
+            { text: "Isn't it dangerous? It's better to just leave it alone.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -10 } } },
+            { text: "Yuna, why are you investigating this?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 5 } } }
+        ]
+    },
+    "day2_yuna_secret_read": {
+        name: "Yuna",
+        text: "\"Hehe, as expected, you're different from the other kids. Fine, but you should be prepared. Truth can sometimes be poison.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_yuna_secret_stop": {
+        name: "Yuna",
+        text: "\"...You're a coward. Well, I understand. For a normal kid, that's a natural reaction. You should leave for today.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_yuna_secret_why": {
+        name: "Yuna",
+        text: "\"Well... should I say it's to find lost memories? Or maybe I just need some excitement in this boring school life.\"",
+        character: "assets/images/characters/yuna_nomal.png",
         next: "day2_afternoon_class"
     },
     "day2_yuna_normal": {
@@ -205,6 +227,16 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_nurse_head": {
         name: "Nurse",
         text: "\"Sounds like a tension headache. Take this and get some sleep. You'll feel much better when you wake up.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "Can't you feed it to me yourself, teacher?", next: "day2_lunch_nurse_head_tease", stats: { Nurse: { affinity: 10 } } },
+            { text: "Thank you. (Take the medicine)", next: "day2_lunch_nurse_sleep", stats: { Nurse: { affinity: 5 } } }
+        ]
+    },
+    "day2_lunch_nurse_head_tease": {
+        name: "Nurse",
+        text: "\"Oh my... {name?}, you're really something, aren't you? Fine, say 'Ah'. I should give a reward to a good boy, right?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_sleep"

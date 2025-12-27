@@ -555,6 +555,28 @@ Object.assign(SCENARIO[1], {
         context: "Chatting with the nurse in her office at sunset before heading home.",
         personality: "A mature, alluring 'big sister' type. She's fond of the protagonist and likes to tease him gently.",
         character: "assets/images/characters/nurse.png",
+        next: "nurse_after_day1_contact"
+    },
+    "nurse_after_day1_contact": {
+        name: "Nurse",
+        text: "\"Are you leaving already? That's a shame... {name?}, just in case, do you want to save my number? Contact me anytime if you're sick or have something on your mind.\"",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "Yes, please tell me!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { text: "It's a bit overwhelming for now.", next: "nurse_after_day1_contact_fail", stats: { Nurse: { affinity: -5 } } }
+        ]
+    },
+    "nurse_after_day1_contact_success": {
+        name: "Nurse",
+        text: "\"Hehe, good boy. Then I'll contact you tonight, okay? Goodbye, {name?}.\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 10 } },
+        next: "after_home"
+    },
+    "nurse_after_day1_contact_fail": {
+        name: "Nurse",
+        text: "\"Oh, are you playing hard to get? Fine. Let me know if you change your mind later. Get home safe!\"",
+        character: "assets/images/characters/nurse.png",
         next: "after_home"
     }
 });

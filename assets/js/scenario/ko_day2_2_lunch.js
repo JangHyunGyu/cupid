@@ -103,6 +103,28 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "\"이 안에는... 학교가 오랫동안 숨겨온 기록들이 있어. 네가 이걸 보면... 모든 게 달라질 거야.\"",
         character: "assets/images/characters/yuna_smile.png",
+        choices: [
+            { text: "그 기록, 나도 같이 봐도 될까?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
+            { text: "위험한 거 아니야? 그냥 덮어두는 게 좋겠어.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -10 } } },
+            { text: "유나야, 넌 왜 이런 걸 조사하는 거야?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 5 } } }
+        ]
+    },
+    "day2_yuna_secret_read": {
+        name: "유나",
+        text: "\"후훗, 역시 넌 다른 애들과 달라. 좋아, 하지만 각오해야 할 거야. 진실은 때로 독이 되기도 하니까.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_yuna_secret_stop": {
+        name: "유나",
+        text: "\"...겁쟁이구나. 뭐, 이해해. 평범한 아이라면 그게 당연한 반응이니까. 오늘은 이만 가봐.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_yuna_secret_why": {
+        name: "유나",
+        text: "\"글쎄... 잃어버린 기억을 찾기 위해서라고 해둘까? 아니면, 이 지루한 학교 생활에 자극이 필요해서일지도.\"",
+        character: "assets/images/characters/yuna_nomal.png",
         next: "day2_afternoon_class"
     },
     "day2_yuna_normal": {
@@ -205,6 +227,16 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_nurse_head": {
         name: "양호선생님",
         text: "\"긴장성 두통인 것 같네. 이 약 먹고 한숨 자고 나면 괜찮아질 거야.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "선생님이 직접 먹여주시면 안 돼요?", next: "day2_lunch_nurse_head_tease", stats: { Nurse: { affinity: 10 } } },
+            { text: "감사합니다. (약을 받아 먹는다)", next: "day2_lunch_nurse_sleep", stats: { Nurse: { affinity: 5 } } }
+        ]
+    },
+    "day2_lunch_nurse_head_tease": {
+        name: "양호선생님",
+        text: "\"어머... {name?}, 너 정말 못 말리는구나? 좋아, 아~ 해봐. 착한 아이한테는 상을 줘야지?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_sleep"

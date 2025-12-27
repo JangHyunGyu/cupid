@@ -307,7 +307,20 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_store_2": {
         name: "Me",
-        text: "\"Kuu~ As expected, this is the taste! I feel like the fatigue of my first day as a transfer student is completely gone?\"",
+        text: "(As I turn around happily eating my bread, I bump into someone.)",
+        next: "lunch_store_teacher"
+    },
+    "lunch_store_teacher": {
+        name: "Homeroom Teacher",
+        text: "\"Oh, sorry! ...Wait, isn't that {name?}? Did you come to the store to buy bread too?\"",
+        character: "assets/images/characters/teacher.png",
+        next: "lunch_store_teacher_2"
+    },
+    "lunch_store_teacher_2": {
+        name: "Homeroom Teacher",
+        text: "\"Hehe, that bread is really delicious. I came to buy it too, but I guess I was a bit late. Enjoy!\"",
+        character: "assets/images/characters/teacher.png",
+        stats: { Teacher: { affinity: 5 } },
         next: "after_school_start"
     },
     "lunch_sleep": {
@@ -317,7 +330,25 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_sleep_2": {
         name: "Me",
-        text: "(In my dream, I heard someone calling my name. A very nostalgic and sad voice... But when I opened my eyes, there was no one by my side.)",
+        text: "(In my dream, I heard someone calling my name. A very nostalgic and sad voice...)",
+        next: "lunch_sleep_3"
+    },
+    "lunch_sleep_3": {
+        name: "Me",
+        text: "(When I opened my eyes, someone was staring intently at my face.)",
+        next: "lunch_sleep_seoyeon"
+    },
+    "lunch_sleep_seoyeon": {
+        name: "Seoyeon",
+        text: "\"Ah, you're awake? Sorry... You were sleeping so soundly that I felt bad waking you up.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "lunch_sleep_seoyeon_2"
+    },
+    "lunch_sleep_seoyeon_2": {
+        name: "Seoyeon",
+        text: "\"You look tired, so you can sleep more. I'll keep watch for you!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 5 } },
         next: "after_school_start"
     },
     "lunch_dain": {

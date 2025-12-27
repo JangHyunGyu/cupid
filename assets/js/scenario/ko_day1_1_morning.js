@@ -402,7 +402,7 @@ Object.assign(SCENARIO[1], {
     },
     "class_after_party_3": {
         name: "아이들",
-        text: "\"와! {name?} 성격 진짜 대박! 좋아, 오늘 떡볶이는 내가 쏜다! 노래방까지 풀코스로 가자!\"",
+        text: "\"와! {name?} 성격 진짜 대박! 좋아, 오늘 점심은 우리랑 같이 먹자! 맛있는 거 많이 알려줄게!\"",
         character: null,
         next: "lunch_time"
     },

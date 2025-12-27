@@ -307,7 +307,20 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_store_2": {
         name: "나",
-        text: "\"크으~ 역시 이 맛이야! 전학 첫날의 피로가 싹 가시는 기분인걸?\"",
+        text: "(기분 좋게 빵을 먹으며 돌아서는데, 누군가와 어깨를 부딪혔다.)",
+        next: "lunch_store_teacher"
+    },
+    "lunch_store_teacher": {
+        name: "담임선생님",
+        text: "\"앗, 미안해! ...어? {name?} 아니니? 너도 매점에 빵 사러 온 거야?\"",
+        character: "assets/images/characters/teacher.png",
+        next: "lunch_store_teacher_2"
+    },
+    "lunch_store_teacher_2": {
+        name: "담임선생님",
+        text: "\"후훗, 그 빵 정말 맛있지. 나도 그거 사러 왔는데 한발 늦었네. 맛있게 먹으렴!\"",
+        character: "assets/images/characters/teacher.png",
+        stats: { Teacher: { affinity: 5 } },
         next: "after_school_start"
     },
     "lunch_sleep": {
@@ -317,7 +330,25 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_sleep_2": {
         name: "나",
-        text: "(꿈속에서 누군가 내 이름을 부르는 소리가 들렸다. 아주 그립고도 슬픈 목소리... 하지만 눈을 떴을 때 내 곁에는 아무도 없었다.)",
+        text: "(꿈속에서 누군가 내 이름을 부르는 소리가 들렸다. 아주 그립고도 슬픈 목소리...)",
+        next: "lunch_sleep_3"
+    },
+    "lunch_sleep_3": {
+        name: "나",
+        text: "(눈을 뜨자, 누군가 내 얼굴을 빤히 들여다보고 있었다.)",
+        next: "lunch_sleep_seoyeon"
+    },
+    "lunch_sleep_seoyeon": {
+        name: "서연",
+        text: "\"앗, 깼어? 미안... 너무 곤히 자길래 깨우기 미안해서.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "lunch_sleep_seoyeon_2"
+    },
+    "lunch_sleep_seoyeon_2": {
+        name: "서연",
+        text: "\"피곤해 보이는데 좀 더 자도 돼. 내가 망 봐줄게!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 5 } },
         next: "after_school_start"
     },
     "lunch_dain": {
