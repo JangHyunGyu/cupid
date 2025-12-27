@@ -52,7 +52,7 @@ Object.assign(SCENARIO[1], {
         setFlag: "metSeoyeon",
         choices: [
             { text: "응, 잘 부탁해. 학교가 커서 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "너... 정말 예쁘다. (나도 모르게 본심이...!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "너... 정말 예쁘다. (나도 모르게 본심이...!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 10 } } },
             { text: "아, 그래? 근데 좀 비켜줄래? 바쁘거든.", next: "path_rude_1", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },

@@ -56,7 +56,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_talk": {
         name: "유나",
-        text: "\"...안녕. 오늘도 그 '빛'은 여전하네. 다행이야. 이따가... 쪽지 확인해봐.\"",
+        text: "\"...안녕. 오늘도 그 '분위기'는 여전하네. 다행이야. 이따가... 쪽지 확인해봐.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_classroom"
     },

@@ -54,7 +54,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_1_2_2": {
         name: "서연",
-        text: "\"자, 이건 내가 아침 일찍 일어나서 만든 거야. 입맛에 맞을지 모르겠네...\"",
+        text: "\"자, 이건 내가 오늘 좀 넉넉하게 준비한 도시락이야. 전학 첫날이라 급식실 위치도 잘 모를 것 같아서... 입맛에 맞을지 모르겠네.\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_3"
@@ -100,7 +100,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_talk_food_2": {
         name: "서연",
-        text: "\"정말? 다행이다! 사실 {name?}이 좋아할지 걱정돼서 어제 메뉴 고민하느라 잠도 설쳤거든. 많이 먹어, 아직 많이 남았으니까!\"",
+        text: "\"정말? 다행이다! 사실 누군가에게 내 요리를 대접하는 건 처음이라 조금 긴장했거든. 많이 먹어, 아직 많이 남았으니까!\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_2"
     },
@@ -136,7 +136,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_2_2": {
         name: "서연",
-        text: "\"저기, {name?}... 사실 나, 처음 널 봤을 때부터 왠지 모르게... 예전부터 알고 지냈던 사이 같은 기분이 들었어. 너는 어때?\"",
+        text: "\"저기, {name?}... 사실 나, 오늘 널 처음 봤는데도 왠지 모르게 이야기가 잘 통하는 것 같아서 기뻐. 너는 어때?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_free_talk"
     },
@@ -295,7 +295,7 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_scent_2": {
         name: "유나",
-        text: "\"아니, 처음 봐. 하지만 네 눈동자 속의 그 '빛'... 정말 탐나네. 이 학교의 죽어있는 아이들과는 달라. 그 빛이 꺼지지 않게 내가 계속 지켜봐도 될까?\"",
+        text: "\"아니, 처음 봐. 하지만 네 눈동자 속에 담긴 그 '의지'... 꽤 흥미롭네. 이 학교의 무기력한 아이들과는 조금 달라 보여. 네가 앞으로 어떻게 변해갈지, 내가 계속 지켜봐도 될까?\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_school_start"
     },
@@ -447,7 +447,7 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_name_share": {
         name: "양호선생님",
-        text: "\"{name}... 후훗, 이름만큼이나 눈빛이 참 맑구나. 어디가 아파서 온 거니? 아니면... 그냥 내가 보고 싶어서?\"",
+        text: "\"{name}... 후훗, 이름만큼이나 눈빛이 참 맑구나. 어디가 아파서 온 거니? 아니면... 전학 첫날이라 긴장해서 쉬러 온 걸까?\"",
         character: "assets/images/characters/nurse.png",
         next: "nurse_free_talk_day1"
     },
