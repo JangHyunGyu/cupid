@@ -995,7 +995,7 @@
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 15 } },
-        next: "day2_start"
+        next: "after_home"
     },
     "dain_contact_call_fail": {
         name: "다인",
@@ -1003,7 +1003,7 @@
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
         stats: { Dain: { affinity: -5 } },
-        next: "day2_start"
+        next: "after_home"
     },
     "dain_contact_success": {
         name: "다인",
@@ -1012,7 +1012,7 @@
         character: "assets/images/characters/dain_laugh.png",
         night: true,
         stats: { Dain: { affinity: 15 } },
-        next: "evening_home"
+        next: "after_home"
     },
     "dain_contact_fail": {
         name: "다인",
@@ -1020,7 +1020,7 @@
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
         night: true,
-        next: "evening_home"
+        next: "after_home"
     },
     "after_yuna_new": {
         name: "나",
@@ -1071,7 +1071,7 @@
         name: "서연",
         text: "\"아... 그래? 그럼 방해하지 말고 나가줄래? 나 지금 좀 바쁘거든.\"",
         character: "assets/images/characters/seyoun_angry.png",
-        next: "evening_home"
+        next: "after_home"
     },
     "after_seoyeon_help": {
         name: "서연",
@@ -1138,7 +1138,7 @@
         name: "서연",
         text: "\"약속한 거다? 어기면 안 돼! 그럼 내일 봐, {name?}. 조심히 들어가!\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "evening_home"
+        next: "after_home"
     },
     "after_seoyeon_tease": {
         name: "서연",
@@ -1150,7 +1150,7 @@
         name: "서연",
         text: "\"치... 정말 못됐다니까! 그래도 꼭 와야 해? 안 오면 학생회장의 권한으로 벌을 줄 테니까! 후훗, 농담이야. 내일 봐!\"",
         character: "assets/images/characters/seyoun_pout.png",
-        next: "evening_home"
+        next: "after_home"
     },
     "after_seoyeon_worry": {
         name: "서연",
@@ -1333,14 +1333,14 @@
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         stats: { Yuna: { affinity: 15 } },
-        next: "evening_home"
+        next: "night_home"
     },
     "yuna_contact_fail": {
         name: "유나",
         text: "(유나가 차가운 눈빛으로 나를 바라보더니 스마트폰을 집어넣는다.) \"...그래. 억지로 강요하진 않아. 하지만 기회는 자주 오지 않는다는 걸 명심해.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "evening_home"
+        next: "night_home"
     },
     "after_yuna_scared": {
         name: "유나",
@@ -1354,7 +1354,7 @@
         text: "\"후훗, 역시 그렇겠지. 평범한 학생에게는 너무 무거운 이야기니까. 오늘은 이만 돌아가. 더 이상 깊이 알려고 하지 마.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "evening_home"
+        next: "night_home"
     },
     "after_yuna_secret": {
         name: "유나",
@@ -1388,6 +1388,14 @@
         sunset: true,
         next: "evening_home"
     },
+    "night_home": {
+        name: "나",
+        text: "(어두워진 거리를 걸으며 집으로 향한다. 가로등 불빛이 길게 늘어진다.)",
+        background: "assets/images/background/school.png",
+        character: null,
+        night: true,
+        next: "evening_home"
+    },
     "evening_home": {
         name: "나",
         text: "(집에 돌아와 침대에 눕자 오늘 하루의 일들이 주마등처럼 스쳐 지나간다.)",
@@ -1418,7 +1426,7 @@
         name: "나",
         text: "(다인이의 건강한 웃음소리가 귓가에 맴도는 것 같다. 나는 내일 그녀와 함께 먹을 떡볶이를 기대하며 잠을 청했다.)",
         night: true,
-        next: "day2_start"
+        next: "evening_sleep"
     },
     "evening_message_seoyeon": {
         name: "나",
@@ -1436,19 +1444,19 @@
         name: "나",
         text: "\"[서연]: 아니야, 나도 오늘 정말 즐거웠어! {name?} 덕분에 학생회 일도 빨리 끝났고. 내일 학교에서 봐! 잘 자~ (하트 이모티콘)\"",
         night: true,
-        next: "day2_start"
+        next: "evening_sleep"
     },
     "evening_think_yuna": {
         name: "나",
         text: "(학교 곳곳에서 느껴졌던 기묘한 분위기와 소문들이 머릿속을 떠나지 않는다. 대체 이 학교는 무엇을 숨기고 있는 걸까?)",
         night: true,
-        next: "day2_start"
+        next: "evening_sleep"
     },
     "evening_think_yuna_met": {
         name: "나",
         text: "(유나가 했던 '학교의 비밀'이라는 말이 머릿속을 떠나지 않는다. 그녀는 대체 무엇을 알고 있는 걸까?)",
         night: true,
-        next: "day2_start"
+        next: "evening_sleep"
     },
     "evening_sleep": {
         name: "나",

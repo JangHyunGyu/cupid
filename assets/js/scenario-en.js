@@ -832,7 +832,60 @@ const SCENARIO = {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
-        next: "evening_home"
+        next: "dain_contact_exchange"
+    },
+    "dain_contact_exchange": {
+        name: "Dain",
+        text: "(Dain wipes the tteokbokki sauce and playfully shakes her smartphone.) \"Hey, {name?}! If we're going to keep eating delicious things together, shouldn't we have each other's contact info? Give me your number!\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_shirt.png",
+        night: true,
+        choices: [
+            { text: "Sure! It'll be fun to go on food tours with you.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
+            { 
+                text: "While we're at it... can I call you right now?", 
+                next: "dain_contact_call_fail",
+                affinityChar: "Dain",
+                affinityBranches: [
+                    { minAffinity: 50, next: "dain_contact_call_success" }
+                ],
+                setFlags: ["has_number_dain", "has_any_contact"]
+            },
+            { text: "Hmm... I'll let you know when I have a chance later.", next: "dain_contact_fail", stats: { Dain: { affinity: -10 } } }
+        ]
+    },
+    "dain_contact_call_success": {
+        name: "Dain",
+        text: "(Dain blushes and laughs as if flustered.) \"W-what! Suddenly? ...Well, if you want to hear my voice, I guess it's okay. But don't stay on too long! I have to go to practice early tomorrow!\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_shy.png",
+        stats: { Dain: { affinity: 15 } },
+        next: "after_home"
+    },
+    "dain_contact_call_fail": {
+        name: "Dain",
+        text: "(Dain bursts into a hollow laugh as if it's absurd.) \"Ha! You're really bold, aren't you? Calling me as soon as you get my number? Isn't that a bit too fast? Let's get close by exchanging messages first!\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_nomal.png",
+        stats: { Dain: { affinity: -5 } },
+        next: "after_home"
+    },
+    "dain_contact_success": {
+        name: "Dain",
+        text: "(Dain smiles brightly and saves my number.) \"Okay! Received! I'll message you as soon as I find a good place, so stay tuned!\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        stats: { Dain: { affinity: 15 } },
+        next: "after_home"
+    },
+    "dain_contact_fail": {
+        name: "Dain",
+        text: "(Dain opens her eyes wide as if surprised, then quickly laughs it off.) \"What~ are you playing hard to get? Okay, okay! I'll work harder to get your number!\"",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/dain_nomal.png",
+        night: true,
+        next: "after_home"
     },
     "after_yuna_new": {
         name: "Me",
@@ -937,7 +990,7 @@ const SCENARIO = {
         name: "Seoyeon",
         text: "\"Is it a promise? See you tomorrow. Get home safely!\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "evening_home"
+        next: "after_home"
     },
     "after_seoyeon_tease": {
         name: "Seoyeon",
@@ -949,7 +1002,7 @@ const SCENARIO = {
         name: "Seoyeon",
         text: "\"Hmph... you're mean! But you still have to come, okay? See you tomorrow!\"",
         character: "assets/images/characters/seyoun_pout.png",
-        next: "evening_home"
+        next: "after_home"
     },
     "after_seoyeon_worry": {
         name: "Seoyeon",
@@ -1060,7 +1113,7 @@ const SCENARIO = {
         text: "\"What a foolish thing to say... but I don't hate it. Let's share each other's secrets.\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
-        next: "evening_home"
+        next: "night_home"
     },
     "after_yuna_scared": {
         name: "Yuna",
@@ -1074,7 +1127,7 @@ const SCENARIO = {
         text: "\"Hehe, I thought so. It's too heavy for an ordinary student. Go back for today.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "evening_home"
+        next: "night_home"
     },
     "after_yuna_secret": {
         name: "Yuna",
@@ -1108,6 +1161,14 @@ const SCENARIO = {
         sunset: true,
         next: "evening_home"
     },
+    "night_home": {
+        name: "Me",
+        text: "(Walking home through the dark streets. The streetlights cast long shadows.)",
+        background: "assets/images/background/school.png",
+        character: null,
+        night: true,
+        next: "evening_home"
+    },
     "evening_home": {
         name: "Me",
         text: "(Lying on the bed, today's events pass through my mind. Seoyeon's smile, Yuna's eyes...)",
@@ -1138,7 +1199,7 @@ const SCENARIO = {
         name: "Me",
         text: "(Dain's laughter lingers in my ears. I look forward to the tteokbokki tomorrow.)",
         night: true,
-        next: "day2_start"
+        next: "evening_sleep"
     },
     "evening_message_seoyeon": {
         name: "Me",
@@ -1156,19 +1217,19 @@ const SCENARIO = {
         name: "Me",
         text: "\"[Seoyeon]: I enjoyed today too! See you at school tomorrow! Good night~ (Heart emoticon)\"",
         night: true,
-        next: "day2_start"
+        next: "evening_sleep"
     },
     "evening_think_yuna": {
         name: "Me",
         text: "(The strange atmosphere of the school doesn't leave my head. What is this school hiding? I couldn't fall asleep until late.)",
         night: true,
-        next: "day2_start"
+        next: "evening_sleep"
     },
     "evening_think_yuna_met": {
         name: "Me",
         text: "(Yuna's words about the school's secret don't leave my head. What does she know? I couldn't fall asleep until late.)",
         night: true,
-        next: "day2_start"
+        next: "evening_sleep"
     },
     "evening_sleep": {
         name: "Me",
