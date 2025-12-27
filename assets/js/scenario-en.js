@@ -753,14 +753,56 @@ const SCENARIO = {
     },
     "after_dain_3": {
         name: "Dain",
-        text: "\"Hey, transfer student! What brings you here? Did you come to watch me practice? Hehe, fallen for me already?\"",
+        text: "\"Hehe, {name?}! How was it watching me practice? Don't I look cool? Fallen for me already?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         choices: [
-            { text: "Yeah, watching you practice makes me feel energized too.", next: "after_dain_cheer" },
-            { text: "I was just looking around the school and came over because I heard sounds.", next: "after_dain_normal" }
+            { text: "Yeah, watching you practice makes me feel energized too.", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
+            { text: "Yeah, you were really cool. I couldn't take my eyes off you.", next: "after_dain_cheer", stats: { Dain: { affinity: 15 } } },
+            { text: "Dain, you look really sexy when you're sweating. And we're all alone...", next: "after_dain_trap", stats: { Dain: { affinity: -20 } } },
+            { text: "It was too noisy. Can't you practice more quietly?", next: "after_dain_rude", stats: { Dain: { affinity: -30 } } }
         ]
+    },
+    "after_dain_normal": {
+        name: "Dain",
+        text: "\"Oh, I see. Well, feel free to look around!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_end"
+    },
+    "after_dain_trap": {
+        name: "Dain",
+        text: "(Dain's face turns bright red in an instant, then changes to an angry expression.)",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_shy.png",
+        sunset: true,
+        next: "after_dain_trap_2"
+    },
+    "after_dain_trap_2": {
+        name: "Dain",
+        text: "\"Wh-wh-what... what are you talking about, you pervert! I'm really disappointed! Get out now! If you don't, I'll spike a volleyball at you!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_angry.png",
+        sunset: true,
+        next: "after_dain_end"
+    },
+    "after_dain_rude": {
+        name: "Dain",
+        text: "\"What? Noisy? This is a gym! If you don't like it, you should leave!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_angry.png",
+        sunset: true,
+        next: "after_dain_end"
+    },
+    "after_dain_end": {
+        name: "Dain",
+        text: "\"Anyway, I should get back to cleaning up. See you later!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_home"
     },
     "after_dain_cheer": {
         name: "Dain",

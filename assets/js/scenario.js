@@ -854,13 +854,13 @@
     },
     "after_dain_3": {
         name: "다인",
-        text: "\"어이, {name?}! 여기까지 웬일이야? 나 연습하는 거 구경하러 온 거야? 후훗, 내 멋진 모습에 반하기라도 한 건 아니지?\"",
+        text: "\"후훗, {name?}! 내 연습하는 모습 보니까 어때? 나 좀 멋있지 않아? 반하기라도 한 건 아니지?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         choices: [
             { text: "응, 다인이 연습하는 거 보니까 나도 힘이 나는 것 같아.", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
-            { text: "그냥 학교 둘러보다가 소리가 들려서 와봤어.", next: "after_dain_normal", stats: { Dain: { affinity: -5 } } },
+            { text: "응, 정말 멋있더라. 배구하는 모습에 눈을 뗄 수가 없었어.", next: "after_dain_cheer", stats: { Dain: { affinity: 15 } } },
             { text: "다인아, 땀 흘리는 모습이 정말 섹시해. 우리 지금 단둘이 있는데...", next: "after_dain_trap", stats: { Dain: { affinity: -20 } } },
             { text: "시끄러워서 와봤어. 연습 좀 조용히 하면 안 돼?", next: "after_dain_rude", stats: { Dain: { affinity: -30 } } }
         ]
