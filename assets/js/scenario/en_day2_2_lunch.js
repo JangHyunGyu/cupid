@@ -27,8 +27,30 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_talk": {
         name: "Seoyeon",
-        text: "\"{name?}! I was just hoping you'd stop by! Come, sit with me.\"",
+        text: "\"{name?}! I was just hoping you'd stop by! Come, sit with me. I actually made some extra sandwiches today.\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        choices: [
+            { text: "Wow, these look delicious! You're a cooking genius, Seoyeon.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "Aren't you tired from all the student council work?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "(Wipe a crumb off her cheek)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 20 } } }
+        ]
+    },
+    "day2_seoyeon_lunch_praise": {
+        name: "Seoyeon",
+        text: "\"Really? I'm glad you like them. I was a bit worried about your taste... Eat as much as you want!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_seoyeon_lunch_worry": {
+        name: "Seoyeon",
+        text: "\"It's okay. Seeing you enjoy the food makes all the tiredness go away. Really.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_seoyeon_lunch_touch": {
+        name: "Seoyeon",
+        text: "\"Ah... T-thank you. I must have been eating too fast... (She blushes slightly and looks down)\"",
+        character: "assets/images/characters/seyoun_shy.png",
         next: "day2_afternoon_class"
     },
     "day2_lunch_yuna": {
@@ -99,6 +121,35 @@ Object.assign(SCENARIO[2], {
         name: "Dain",
         text: "\"Oh! You really came! Great, lunch is on me today! Let's hit the snack bar!\"",
         character: "assets/images/characters/dain_laugh.png",
+        next: "day2_dain_store"
+    },
+    "day2_dain_store": {
+        name: "Me",
+        text: "(I headed to the snack bar with Dain. Since it's break time, the front of the store is crowded with kids.)",
+        background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/dain_nomal.png",
+        choices: [
+            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 10 } } },
+            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 5 } } },
+            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race", stats: { Dain: { affinity: 15 } } }
+        ]
+    },
+    "day2_dain_store_buy": {
+        name: "Dain",
+        text: "\"Hey~ I said it's on me! You're a transfer student, you shouldn't be spending money. I'll treat you today, so just enjoy!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_dain_store_rooftop": {
+        name: "Dain",
+        text: "\"Rooftop? Oh, that sounds good too! It'll taste even better with the cool breeze. Okay, let's just buy the bread and head up!\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_dain_store_race": {
+        name: "Dain",
+        text: "\"Ooh! That's my partner! Okay, let's see who gets it first! Loser buys drinks!\"",
+        character: "assets/images/characters/dain_active.png",
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {

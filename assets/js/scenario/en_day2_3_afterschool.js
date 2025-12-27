@@ -53,7 +53,8 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "Seoyeon, why do you work so hard?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "Let's go now. I'll walk you home.", next: "day2_seoyeon_home", stats: { Seoyeon: { affinity: 15 } } }
+            { text: "Let's go now. I'll walk you home.", next: "day2_seoyeon_home", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "(Give her a shoulder massage)", next: "day2_seoyeon_massage", stats: { Seoyeon: { affinity: 20 } } }
         ]
     },
     "day2_seoyeon_why": {
@@ -65,6 +66,12 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_home": {
         name: "Seoyeon",
         text: "\"Oh...? Walk me home? Ah... well, I'd be very happy if you did...\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "day2_seoyeon_night_talk"
+    },
+    "day2_seoyeon_massage": {
+        name: "Seoyeon",
+        text: "\"Ah... {name?}! If you do that so suddenly... (She flinches for a moment, but then relaxes and closes her eyes) ...That feels good. Thank you.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_seoyeon_night_talk"
     },
@@ -94,7 +101,8 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_smile.png",
         choices: [
             { text: "What does this even mean?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 5 } } },
-            { text: "(Taking Yuna's hand) This place is creepy. Let's get out of here.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 10 } } }
+            { text: "(Taking Yuna's hand) This place is creepy. Let's get out of here.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 10 } } },
+            { text: "This eye... it feels like it's watching us.", next: "day2_yuna_eye", stats: { Yuna: { affinity: 15 } } }
         ]
     },
     "day2_yuna_meaning": {
@@ -107,6 +115,12 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "\"...Your hand is so warm. Okay, let's call it a day.\"",
         character: "assets/images/characters/yuna_shy.png",
+        next: "day2_yuna_night_talk"
+    },
+    "day2_yuna_eye": {
+        name: "Yuna",
+        text: "\"You're right. This school might be a giant prison or a laboratory. And we are the subjects inside.\"",
+        character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_yuna_night_talk"
     },
     "day2_yuna_night_talk": {
@@ -135,7 +149,8 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_nomal.png",
         choices: [
             { text: "It's only because your tosses were so good.", next: "day2_dain_praise", stats: { Dain: { affinity: 10 } } },
-            { text: "How about a real match sometime?", next: "day2_dain_match", stats: { Dain: { affinity: 15 } } }
+            { text: "How about a real match sometime?", next: "day2_dain_match", stats: { Dain: { affinity: 15 } } },
+            { text: "Tteokbokki after a workout is the best, right?", next: "day2_dain_food", stats: { Dain: { affinity: 20 } } }
         ]
     },
     "day2_dain_praise": {
@@ -148,6 +163,12 @@ Object.assign(SCENARIO[2], {
         name: "Dain",
         text: "\"Oh? Confident, are we? Fine, let's make a bet. Loser buys Tteokbokki!\"",
         character: "assets/images/characters/dain_active.png",
+        next: "day2_dain_night_talk"
+    },
+    "day2_dain_food": {
+        name: "Dain",
+        text: "\"Whoa! You really know your stuff! Tteokbokki with some fried snacks... man, just thinking about it makes me happy!\"",
+        character: "assets/images/characters/dain_laugh.png",
         next: "day2_dain_night_talk"
     },
     "day2_dain_night_talk": {
@@ -176,7 +197,8 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         choices: [
             { text: "I missed you, teacher.", next: "day2_nurse_miss", stats: { Nurse: { affinity: 15 } } },
-            { text: "I just wanted some peace and quiet.", next: "day2_nurse_rest", stats: { Nurse: { affinity: 5 } } }
+            { text: "I just wanted some peace and quiet.", next: "day2_nurse_rest", stats: { Nurse: { affinity: 5 } } },
+            { text: "The scent in this room is wonderful.", next: "day2_nurse_aroma", stats: { Nurse: { affinity: 10 } } }
         ]
     },
     "day2_nurse_miss": {
@@ -188,6 +210,12 @@ Object.assign(SCENARIO[2], {
     "day2_nurse_rest": {
         name: "Nurse",
         text: "\"Is that so? Then go ahead and lie down. I won't bother you.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_nurse_night_talk"
+    },
+    "day2_nurse_aroma": {
+        name: "Nurse",
+        text: "\"Oh, you have a good nose. This is an aroma oil I blended myself. It helps to relax the mind.\"",
         character: "assets/images/characters/nurse.png",
         next: "day2_nurse_night_talk"
     },

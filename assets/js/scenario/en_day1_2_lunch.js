@@ -359,6 +359,21 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
+        choices: [
+            { text: "Alright, let's do this!", next: "lunch_dain_play", stats: { Dain: { affinity: 10 } } },
+            { text: "I'm not great at volleyball... can you teach me?", next: "lunch_dain_teach", stats: { Dain: { affinity: 15 } } }
+        ]
+    },
+    "lunch_dain_play": {
+        name: "Dain",
+        text: "\"Oh! That's the spirit! Here I come! (Dain sends a powerful serve. I barely manage to return it)\"",
+        character: "assets/images/characters/dain_active.png",
+        next: "after_school_start"
+    },
+    "lunch_dain_teach": {
+        name: "Dain",
+        text: "\"Hehe, don't worry! I, Dain, will teach you from the basics. Now, let's start with your posture!\"",
+        character: "assets/images/characters/dain_laugh.png",
         next: "after_school_start"
     },
     "lunch_nurse": {

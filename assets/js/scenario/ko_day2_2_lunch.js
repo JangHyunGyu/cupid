@@ -27,8 +27,30 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_talk": {
         name: "서연",
-        text: "\"{name?}! 마침 같이 먹으려고 기다리고 있었어! 자, 여기 앉아.\"",
+        text: "\"{name?}! 마침 오길 기다리고 있었어! 이리 와서 앉아. 오늘 샌드위치를 좀 넉넉하게 만들어 왔거든.\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        choices: [
+            { text: "와, 정말 맛있어 보여요! 서연 선배는 요리 천재네요.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "학생회 일 때문에 피곤하진 않아요? 무리하는 거 아니죠?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "(서연의 볼에 묻은 빵가루를 떼어준다)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 20 } } }
+        ]
+    },
+    "day2_seoyeon_lunch_praise": {
+        name: "서연",
+        text: "\"정말? 입맛에 맞을지 걱정했는데 다행이다. 자, 사양 말고 많이 먹어!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_seoyeon_lunch_worry": {
+        name: "서연",
+        text: "\"괜찮아. 네가 맛있게 먹어주는 모습 보니까 피곤함이 싹 가시는 것 같아. 정말로.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_seoyeon_lunch_touch": {
+        name: "서연",
+        text: "\"앗... 고, 고마워. 내가 너무 급하게 먹었나 보네... (서연의 얼굴이 살짝 붉어진다)\"",
+        character: "assets/images/characters/seyoun_shy.png",
         next: "day2_afternoon_class"
     },
     "day2_lunch_yuna": {
@@ -99,6 +121,35 @@ Object.assign(SCENARIO[2], {
         name: "다인",
         text: "\"오! 진짜 왔네? 좋아, 오늘 점심은 내가 쏜다! 매점으로 가자!\"",
         character: "assets/images/characters/dain_laugh.png",
+        next: "day2_dain_store"
+    },
+    "day2_dain_store": {
+        name: "나",
+        text: "(다인이와 함께 매점으로 향했다. 쉬는 시간이라 그런지 매점 앞은 아이들로 북적거린다.)",
+        background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/dain_nomal.png",
+        choices: [
+            { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 10 } } },
+            { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 5 } } },
+            { text: "다인아, 저기 마지막 남은 피자빵! 내가 쟁취해올게!", next: "day2_dain_store_race", stats: { Dain: { affinity: 15 } } }
+        ]
+    },
+    "day2_dain_store_buy": {
+        name: "다인",
+        text: "\"에이~ 내가 쏜다니까! 전학생이 무슨 돈이 있다고. 오늘은 내가 대접할 테니까 넌 맛있게 먹기나 해!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_dain_store_rooftop": {
+        name: "다인",
+        text: "\"옥상? 오, 그것도 좋지! 시원한 바람 맞으면서 먹으면 더 맛있겠다. 좋아, 얼른 빵만 사서 올라가자!\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_dain_store_race": {
+        name: "다인",
+        text: "\"오오! 역시 내 파트너다워! 좋아, 누가 먼저 잡나 내기다! 지는 사람이 음료수 쏘기!\"",
+        character: "assets/images/characters/dain_active.png",
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {

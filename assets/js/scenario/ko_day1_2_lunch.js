@@ -359,6 +359,21 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
+        choices: [
+            { text: "좋아, 어디 한번 해보자!", next: "lunch_dain_play", stats: { Dain: { affinity: 10 } } },
+            { text: "배구는 잘 못하는데... 가르쳐줄래?", next: "lunch_dain_teach", stats: { Dain: { affinity: 15 } } }
+        ]
+    },
+    "lunch_dain_play": {
+        name: "다인",
+        text: "\"오! 그 기세야! 자, 간다! (다인이가 강력한 서브를 날린다. 나는 간신히 공을 받아냈다)\"",
+        character: "assets/images/characters/dain_active.png",
+        next: "after_school_start"
+    },
+    "lunch_dain_teach": {
+        name: "다인",
+        text: "\"헤헤, 걱정 마! 이 다인 님이 기초부터 확실하게 가르쳐줄게. 자, 일단 자세부터 잡아볼까?\"",
+        character: "assets/images/characters/dain_laugh.png",
         next: "after_school_start"
     },
     "lunch_nurse": {
