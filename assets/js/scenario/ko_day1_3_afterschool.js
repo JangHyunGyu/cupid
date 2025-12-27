@@ -196,7 +196,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_3": {
         name: "유나",
-        text: "\"아, {name?}... 방과 후의 도서관은 더 고요해서 좋아. 넌 무슨 일로 온 거야?\"",
+        text: "\"아, 안녕... 방과 후의 도서관은 더 고요해서 좋아. 넌 무슨 일로 온 거야?\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -397,6 +397,18 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "metDain",
+        next: "after_dain_new_name_ask"
+    },
+    "after_dain_new_name_ask": {
+        name: "다인",
+        text: "\"그러고 보니 이름이 뭐야? 나만 통성명 안 한 것 같아서!\"",
+        character: "assets/images/characters/dain_sweat.png",
+        next: "after_dain_new_name_share"
+    },
+    "after_dain_new_name_share": {
+        name: "나",
+        text: "\"난 {name}라고 해. 2학년 3반이야.\"",
+        setFlag: "knowsName_다인",
         next: "after_dain_2"
     },
     "after_dain": {
@@ -426,7 +438,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_3": {
         name: "다인",
-        text: "\"헤이, {name?}! 진짜 왔네! 잠깐만 기다려, 이 마지막 세트만 끝내고 같이 맛있는 거 먹으러 가자!\"",
+        text: "\"헤이, {name?}! 잠깐만 기다려, 이 마지막 세트만 끝내고 같이 맛있는 거 먹으러 가자!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,

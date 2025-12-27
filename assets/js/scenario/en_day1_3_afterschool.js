@@ -196,7 +196,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_3": {
         name: "Yuna",
-        text: "\"Ah, {name?}... I love how still the library gets after school. What brings you to my sanctuary?\"",
+        text: "\"Ah, hello... I love how still the library gets after school. What brings you to my sanctuary?\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -347,6 +347,18 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "metDain",
+        next: "after_dain_new_name_ask"
+    },
+    "after_dain_new_name_ask": {
+        name: "Dain",
+        text: "\"By the way, what's your name? I realized I haven't asked yet!\"",
+        character: "assets/images/characters/dain_sweat.png",
+        next: "after_dain_new_name_share"
+    },
+    "after_dain_new_name_share": {
+        name: "Me",
+        text: "\"I'm {name}. I'm in Class 2-3.\"",
+        setFlag: "knowsName_다인",
         next: "after_dain_2"
     },
     "after_dain": {

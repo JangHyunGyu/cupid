@@ -88,10 +88,23 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "\"You... you're curious about me, aren't you? This school hides a very deep secret. And I want to show it to you. Only you.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "metYuna",
         choices: [
-            { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
-            { text: "I was just curious after seeing your note. Who are you?", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
+            { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 10 } } },
+            { text: "I was just curious after seeing your note. Who are you?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } }
         ]
+    },
+    "day2_yuna_new_name_ask": {
+        name: "Yuna",
+        text: "\"...By the way, what's your name? I didn't write it on the note.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_new_name_share"
+    },
+    "day2_yuna_new_name_share": {
+        name: "Me",
+        text: "\"My name is {name}.\"",
+        setFlag: "knowsName_유나",
+        next: "day2_yuna_secret"
     },
     "day2_yuna_secret": {
         name: "Yuna",
@@ -134,9 +147,31 @@ Object.assign(SCENARIO[2], {
         next: "day2_afternoon_class"
     },
     "day2_lunch_dain": {
-        name: "Dain",
+        name: "Me",
         text: "(I open the gym door to find Dain mid-practice, sweat glistening on her skin. She spots me and runs over with a grin.)",
         character: "assets/images/characters/dain_laugh.png",
+        branches: [
+            { next: "day2_dain_lunch_talk", condition: "metDain" },
+            { next: "day2_lunch_dain_new" }
+        ]
+    },
+    "day2_lunch_dain_new": {
+        name: "???",
+        text: "\"Oh! A new face! You're the transfer student everyone's talking about, right? I'm Dain from the volleyball club!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        setFlag: "metDain",
+        next: "day2_lunch_dain_new_name_ask"
+    },
+    "day2_lunch_dain_new_name_ask": {
+        name: "Dain",
+        text: "\"By the way, what's your name? I feel like I'm the only one who hasn't introduced myself!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_lunch_dain_new_name_share"
+    },
+    "day2_lunch_dain_new_name_share": {
+        name: "Me",
+        text: "\"My name is {name}.\"",
+        setFlag: "knowsName_다인",
         next: "day2_dain_lunch_talk"
     },
     "day2_dain_lunch_talk": {

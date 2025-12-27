@@ -88,10 +88,23 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "\"너... 내가 누군지 궁금해서 온 거지? 사실 이 학교에는 아주 깊은 비밀이 있어. 너한테만 보여주고 싶은 게 있는데.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "metYuna",
         choices: [
-            { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
-            { text: "그냥 쪽지 보고 궁금해서 와봤어. 넌 누구야?", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
+            { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 10 } } },
+            { text: "그냥 쪽지 보고 궁금해서 와봤어. 넌 누구야?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } }
         ]
+    },
+    "day2_yuna_new_name_ask": {
+        name: "유나",
+        text: "\"...그러고 보니, 네 이름은 뭐야? 쪽지에 이름은 안 적어놨거든.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_new_name_share"
+    },
+    "day2_yuna_new_name_share": {
+        name: "나",
+        text: "\"내 이름은 {name}이야.\"",
+        setFlag: "knowsName_유나",
+        next: "day2_yuna_secret"
     },
     "day2_yuna_secret": {
         name: "유나",
@@ -134,9 +147,31 @@ Object.assign(SCENARIO[2], {
         next: "day2_afternoon_class"
     },
     "day2_lunch_dain": {
-        name: "다인",
+        name: "나",
         text: "(체육관 문을 열자, 땀방울을 흩날리며 연습하던 다인이가 나를 발견하고 달려온다.)",
         character: "assets/images/characters/dain_laugh.png",
+        branches: [
+            { next: "day2_dain_lunch_talk", condition: "metDain" },
+            { next: "day2_lunch_dain_new" }
+        ]
+    },
+    "day2_lunch_dain_new": {
+        name: "???",
+        text: "\"오! 처음 보는 얼굴인데? 너 오늘 전학 온 그 애 맞지? 난 배구부 다인이야!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        setFlag: "metDain",
+        next: "day2_lunch_dain_new_name_ask"
+    },
+    "day2_lunch_dain_new_name_ask": {
+        name: "다인",
+        text: "\"그러고 보니 이름이 뭐야? 나만 통성명 안 한 것 같아서!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_lunch_dain_new_name_share"
+    },
+    "day2_lunch_dain_new_name_share": {
+        name: "나",
+        text: "\"내 이름은 {name}이야.\"",
+        setFlag: "knowsName_다인",
         next: "day2_dain_lunch_talk"
     },
     "day2_dain_lunch_talk": {
