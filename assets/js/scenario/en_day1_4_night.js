@@ -51,33 +51,39 @@ Object.assign(SCENARIO[1], {
     "night_message_seyoun": {
         name: "Me",
         text: "(I sent a message to Seoyeon: 'The lunch box was delicious today. Thank you!')",
-        next: "night_message_seyoun_2"
+        night: true,
+        next: "night_message_seyoun_reply"
     },
-    "night_message_seyoun_2": {
+    "night_message_seyoun_reply": {
         name: "Seoyeon",
         text: "(A reply came immediately!) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name?}!'",
+        night: true,
         stats: { Seoyeon: { affinity: 5 } },
         next: "day1_end"
     },
     "night_message_yuna": {
         name: "Me",
         text: "(I sent a message to Yuna: 'I had fun today. Good night.')",
-        next: "night_message_yuna_2"
+        night: true,
+        next: "night_message_yuna_reply"
     },
-    "night_message_yuna_2": {
+    "night_message_yuna_reply": {
         name: "Yuna",
         text: "(After a while, a reply came.) '...Yeah. You too. See you at school tomorrow.'",
+        night: true,
         stats: { Yuna: { affinity: 5 } },
         next: "day1_end"
     },
     "night_message_dain": {
         name: "Me",
         text: "(I sent a message to Dain: 'The tteokbokki was great! Good night.')",
-        next: "night_message_dain_2"
+        night: true,
+        next: "night_message_dain_reply"
     },
-    "night_message_dain_2": {
+    "night_message_dain_reply": {
         name: "Dain",
         text: "(She replied almost instantly.) 'Right? I told you I know all the best places! Rest well and see you tomorrow! Good night!'",
+        night: true,
         stats: { Dain: { affinity: 5 } },
         next: "day1_end"
     },

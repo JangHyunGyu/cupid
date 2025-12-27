@@ -352,10 +352,19 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_2": {
         name: "Dain",
-        text: "(She discovers me and runs over with a bright smile.)",
+        text: "(She discovers me and runs over with a bright smile while wiping her sweat with a towel.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sweat.png",
         sunset: true,
+        next: "dain_free_talk"
+    },
+    "dain_free_talk": {
+        type: "free_talk",
+        name: "Dain",
+        text: "\"Wow, {name?}! It's even better to see you up close! Anything you're curious about? Like sports, or school life!\"",
+        context: "A situation where you are talking with Dain, who just finished practice in the gym at sunset after school",
+        personality: "The ace of the volleyball club with a cool and easygoing personality. Loves sports, is friendly to the protagonist, and is full of energy.",
+        character: "assets/images/characters/dain_nomal.png",
         next: "after_dain_3"
     },
     "after_dain_3": {
