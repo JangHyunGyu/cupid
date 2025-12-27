@@ -995,14 +995,31 @@ async function sendChatMessage() {
         }
     } catch (error) {
         console.error("AI Chat Error:", error);
-        const errorMsg = document.documentElement.lang === 'en' ? 
-            "An error occurred during the conversation." : 
-            "대화 도중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.";
-        messageEl.textContent = errorMsg;
         
-        // 에러 발생 시 턴 복구 (선택 사항)
-        // freeTalkTurns--;
-        // turnCountEl.textContent = currentMaxTurns - freeTalkTurns;
+        // API 오류 시 폴백 응답 (사용자가 요청한 "음...", "흠...", "...." 등)
+        const fallbacks = document.documentElement.lang === 'en' ? 
+            ["...", "Hmm...", "Um...", "...?"] : 
+            ["...", "음...", "흠...", "...?"];
+        const fallbackMsg = fallbacks[Math.floor(Math.random() * fallbacks.length)];
+        
+        const scene = SCENARIO[currentSceneId];
+        nameTagEl.textContent = scene.name;
+        await typeText(fallbackMsg, scene.name);
+        freeTalkHistory.push({ role: "assistant", content: fallbackMsg });
+
+        // 에러 발생 시에도 대화 횟수가 다 찼다면 종료 처리하여 스토리 진행 가능하게 함
+        if (freeTalkTurns >= currentMaxTurns) {
+            gameState[`messaged_${currentSceneId}`] = true;
+            
+            setTimeout(() => {
+                chatContainer.style.display = 'none';
+                isFreeTalking = false;
+                const endMsg = document.documentElement.lang === 'en' ? 
+                    "\n\n(Conversation ended. Click the screen to continue.)" : 
+                    "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+                messageEl.textContent += endMsg;
+            }, 500);
+        }
     } finally {
         chatSendBtn.disabled = false;
         chatSendBtn.innerHTML = originalBtnContent;
