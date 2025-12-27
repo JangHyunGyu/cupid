@@ -907,6 +907,10 @@ async function sendChatMessage() {
             body: JSON.stringify({ messages: freeTalkHistory })
         });
         
+        if (!response.ok) {
+            throw new Error(`API HTTP error! status: ${response.status}`);
+        }
+
         const data = await response.json();
         let reply = data?.choices?.[0]?.message?.content?.trim();
         
@@ -955,6 +959,11 @@ async function sendChatMessage() {
             // 모든 스탯 태그 제거
             reply = reply.replace(statsRegex, "").trim();
 
+            // 태그 제거 후 내용이 비어있을 경우 대비
+            if (!reply) {
+                reply = "...";
+            }
+
             const scene = SCENARIO[currentSceneId];
             nameTagEl.textContent = scene.name;
             await typeText(reply, scene.name); // 타이핑이 끝날 때까지 기다립니다.
@@ -963,22 +972,37 @@ async function sendChatMessage() {
             // 대화 기록 저장 (시스템 프롬프트 제외하고 최근 10개 정도만 유지하여 컨텍스트 최적화)
             const chatOnly = freeTalkHistory.filter(m => m.role !== "system");
             gameState.chatMemories[scene.name] = chatOnly.slice(-10);
+        } else {
+            // AI 응답이 비어있을 경우
+            const scene = SCENARIO[currentSceneId];
+            nameTagEl.textContent = scene.name;
+            const fallbackMsg = document.documentElement.lang === 'en' ? "..." : "...";
+            await typeText(fallbackMsg, scene.name);
+        }
+
+        // 대화 종료 체크를 AI 응답 처리 이후로 이동 (응답 실패 시에도 종료 가능하도록)
+        if (freeTalkTurns >= currentMaxTurns) {
+            gameState[`messaged_${currentSceneId}`] = true;
             
-            if (freeTalkTurns >= currentMaxTurns) {
-                // 대화 완료 플래그 설정 (선택지에서 제거하기 위함)
-                gameState[`messaged_${currentSceneId}`] = true;
-                
-                // 모든 타이핑이 끝난 후 0.5초 뒤에 안내 문구 표시
-                setTimeout(() => {
-                    chatContainer.style.display = 'none';
-                    isFreeTalking = false;
-                    messageEl.textContent += "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
-                }, 500);
-            }
+            setTimeout(() => {
+                chatContainer.style.display = 'none';
+                isFreeTalking = false;
+                const endMsg = document.documentElement.lang === 'en' ? 
+                    "\n\n(Conversation ended. Click the screen to continue.)" : 
+                    "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+                messageEl.textContent += endMsg;
+            }, 500);
         }
     } catch (error) {
         console.error("AI Chat Error:", error);
-        messageEl.textContent = "대화 도중 오류가 발생했습니다.";
+        const errorMsg = document.documentElement.lang === 'en' ? 
+            "An error occurred during the conversation." : 
+            "대화 도중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.";
+        messageEl.textContent = errorMsg;
+        
+        // 에러 발생 시 턴 복구 (선택 사항)
+        // freeTalkTurns--;
+        // turnCountEl.textContent = currentMaxTurns - freeTalkTurns;
     } finally {
         chatSendBtn.disabled = false;
         chatSendBtn.innerHTML = originalBtnContent;
@@ -986,8 +1010,11 @@ async function sendChatMessage() {
 }
 
 chatSendBtn.onclick = sendChatMessage;
-chatInput.onkeypress = (e) => {
-    if (e.key === 'Enter') sendChatMessage();
+chatInput.onkeydown = (e) => {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        sendChatMessage();
+    }
 };
 
 nameConfirmBtn.onclick = () => {
