@@ -100,6 +100,7 @@ const CHARACTER_EXPRESSIONS = {
 
 let currentSceneId = "start";
 let isTyping = false;
+let skipTyping = false;
 let gameState = {
     playerName: "주인공", // 기본 이름
     stats: {
@@ -225,7 +226,21 @@ async function renderScene(sceneId) {
     } else {
         // 텍스트 타이핑 효과
         await typeText(scene.text, scene.name);
-        if (!scene.choices) {
+        
+        // 선택지가 없거나, 선택지가 하나뿐이고 그 텍스트가 "다음" 또는 "Next"인 경우 지시계 표시
+        let showNextIndicator = !scene.choices;
+        if (scene.choices) {
+            const availableChoices = scene.choices.filter(choice => {
+                if (choice.condition && !gameState[choice.condition]) return false;
+                if (choice.excludeCondition && gameState[choice.excludeCondition]) return false;
+                return true;
+            });
+            if (availableChoices.length === 1 && (availableChoices[0].text === "다음" || availableChoices[0].text === "Next")) {
+                showNextIndicator = true;
+            }
+        }
+
+        if (showNextIndicator) {
             nextIndicator.style.display = 'block';
         }
     }
@@ -864,9 +879,18 @@ function typeText(text, charName) {
     
     return new Promise((resolve) => {
         isTyping = true;
+        skipTyping = false;
         messageEl.textContent = "";
         let i = 0;
         const interval = setInterval(() => {
+            if (skipTyping) {
+                messageEl.textContent = processedText;
+                clearInterval(interval);
+                isTyping = false;
+                skipTyping = false;
+                resolve();
+                return;
+            }
             messageEl.textContent += processedText[i];
             i++;
             if (i >= processedText.length) {
@@ -1066,6 +1090,49 @@ playerNameInput.onkeypress = (e) => {
     if (e.key === 'Enter') nameConfirmBtn.click();
 };
 
+function executeChoice(choice) {
+    // 플래그 설정
+    if (choice.setFlag) {
+        gameState[choice.setFlag] = true;
+    }
+    if (choice.setFlags && Array.isArray(choice.setFlags)) {
+        choice.setFlags.forEach(flag => {
+            gameState[flag] = true;
+        });
+    }
+    // 스탯 업데이트 (affinity)
+    if (choice.stats) {
+        for (const [char, stats] of Object.entries(choice.stats)) {
+            if (gameState.stats[char]) {
+                if (stats.affinity) {
+                    gameState.stats[char].affinity = Math.max(-100, Math.min(100, gameState.stats[char].affinity + stats.affinity));
+                }
+            }
+        }
+    }
+
+    let nextScene = choice.next;
+
+    // 호감도에 따른 결과 분기 처리
+    if (choice.affinityBranches && choice.affinityChar && gameState.stats[choice.affinityChar]) {
+        const currentAff = gameState.stats[choice.affinityChar].affinity;
+        // 높은 문턱부터 체크하여 조건에 맞는 가장 높은 분기를 선택
+        const sortedBranches = [...choice.affinityBranches].sort((a, b) => b.minAffinity - a.minAffinity);
+        for (const branch of sortedBranches) {
+            if (currentAff >= branch.minAffinity) {
+                nextScene = branch.next;
+                break;
+            }
+        }
+    }
+
+    if (nextScene === 'index.html') {
+        location.href = 'index.html';
+    } else {
+        renderScene(nextScene);
+    }
+}
+
 function checkChoices() {
     const scene = SCENARIO[currentSceneId];
     if (scene.choices) {
@@ -1085,48 +1152,7 @@ function checkChoices() {
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
             btn.textContent = choice.text.replace(/{name}/g, gameState.playerName);
-            btn.onclick = () => {
-                // 플래그 설정
-                if (choice.setFlag) {
-                    gameState[choice.setFlag] = true;
-                }
-                if (choice.setFlags && Array.isArray(choice.setFlags)) {
-                    choice.setFlags.forEach(flag => {
-                        gameState[flag] = true;
-                    });
-                }
-                // 스탯 업데이트 (affinity)
-                if (choice.stats) {
-                    for (const [char, stats] of Object.entries(choice.stats)) {
-                        if (gameState.stats[char]) {
-                            if (stats.affinity) {
-                                gameState.stats[char].affinity = Math.max(-100, Math.min(100, gameState.stats[char].affinity + stats.affinity));
-                            }
-                        }
-                    }
-                }
-
-                let nextScene = choice.next;
-
-                // 호감도에 따른 결과 분기 처리
-                if (choice.affinityBranches && choice.affinityChar && gameState.stats[choice.affinityChar]) {
-                    const currentAff = gameState.stats[choice.affinityChar].affinity;
-                    // 높은 문턱부터 체크하여 조건에 맞는 가장 높은 분기를 선택
-                    const sortedBranches = [...choice.affinityBranches].sort((a, b) => b.minAffinity - a.minAffinity);
-                    for (const branch of sortedBranches) {
-                        if (currentAff >= branch.minAffinity) {
-                            nextScene = branch.next;
-                            break;
-                        }
-                    }
-                }
-
-                if (nextScene === 'index.html') {
-                    location.href = 'index.html';
-                } else {
-                    renderScene(nextScene);
-                }
-            };
+            btn.onclick = () => executeChoice(choice);
             choiceContainer.appendChild(btn);
         });
         choiceContainer.style.display = 'flex';
@@ -1134,10 +1160,27 @@ function checkChoices() {
 }
 
 dialogueBox.onclick = async () => {
+    if (isTyping) {
+        skipTyping = true;
+        return;
+    }
+    
     const scene = SCENARIO[currentSceneId];
-    if (isTyping || isFreeTalking || scene.type === 'input') return;
+    if (isFreeTalking || scene.type === 'input') return;
     
     if (scene.choices) {
+        // 선택지가 하나뿐이고 그 텍스트가 "다음" 또는 "Next"인 경우 자동 진행
+        const availableChoices = scene.choices.filter(choice => {
+            if (choice.condition && !gameState[choice.condition]) return false;
+            if (choice.excludeCondition && gameState[choice.excludeCondition]) return false;
+            return true;
+        });
+
+        if (availableChoices.length === 1 && (availableChoices[0].text === "다음" || availableChoices[0].text === "Next")) {
+            executeChoice(availableChoices[0]);
+            return;
+        }
+
         dialogueBox.style.display = 'none'; // 대화창 숨기기
         checkChoices(); // 선택지 표시
     } else if (scene.next) {
