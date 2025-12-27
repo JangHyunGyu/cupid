@@ -8,7 +8,7 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "after_school_start": {
         name: "Me",
-        text: "(Finally, all classes are over and the bell rings to announce the end of school.)",
+        text: "(Classes are over! The bell for after school rings out.)",
         background: "assets/images/background/room_school.png",
         character: null,
         sunset: true,
@@ -16,13 +16,13 @@ Object.assign(SCENARIO[1], {
     },
     "after_school_start_2": {
         name: "Me",
-        text: "(As I pack my bag and try to leave the classroom... the hallway is full of the sound of kids going home.)",
+        text: "(I pack my bag and leave the classroom. The hallway is full of kids' lively footsteps.)",
         sunset: true,
         next: "after_school_start_3"
     },
     "after_school_start_3": {
         name: "Me",
-        text: "(It's been a long day. I was thinking about going straight home, but then I remembered the people I met earlier.)",
+        text: "(It's been a long day. Should I go straight home... or find the people I met earlier?)",
         sunset: true,
         choices: [
             { text: "Stop by the student council room where Seoyeon is.", next: "after_seoyeon" },
@@ -43,7 +43,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_2": {
         name: "Seoyeon",
-        text: "(As I enter, she looks up in surprise. She puts down her pen and stretches.)",
+        text: "(As I enter, Seoyeon looks up in surprise. She puts down her pen and stretches.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_3"
     },
@@ -102,67 +102,67 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_cafe_2": {
         name: "Seoyeon",
-        text: "(Seoyeon makes a happy expression while drinking a beverage with plenty of whipped cream.)",
+        text: "(Seoyeon takes a sip of her drink topped with whipped cream, a look of pure bliss on her face.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe_2_2"
     },
     "after_seoyeon_cafe_2_2": {
         name: "Seoyeon",
-        text: "\"Haah~ I feel like I can finally breathe. Thank you so much for today, {name?}.\"",
+        text: "\"Haah~ I feel alive again. Thank you so much for today, {name?}.\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe_3"
     },
     "after_seoyeon_cafe_3": {
         name: "Seoyeon",
-        text: "\"Thanks to you, I was able to finish the student council work happily. Can we... go home together tomorrow too?\"",
+        text: "\"Thanks to you, I actually enjoyed finishing the student council work. Could we... walk home together tomorrow too?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "Of course. I'll wait for you tomorrow too.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "Well, depending on my mood tomorrow? (Teasing)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 7 } } }
+            { text: "Of course. I'll be waiting for you.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "Hmm, depends on my mood? (Tease)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 7 } } }
         ]
     },
     "after_seoyeon_promise": {
         name: "Seoyeon",
-        text: "(She smiles brightly while holding out her pinky finger.)",
+        text: "(She beams, holding out her pinky finger with a playful glint in her eyes.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "after_seoyeon_promise_2"
     },
     "after_seoyeon_promise_2": {
         name: "Seoyeon",
-        text: "\"It's a promise! You can't break it! Then see you tomorrow, {name?}. Get home safe!\"",
+        text: "\"It's a promise! No breaking it! See you tomorrow, {name?}. Get home safe!\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "after_home"
     },
     "after_seoyeon_tease": {
         name: "Seoyeon",
-        text: "(She pouts her cheeks and glares at me.)",
+        text: "(She pouts, puffing out her cheeks as she glares at me.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "after_seoyeon_tease_2"
     },
     "after_seoyeon_tease_2": {
         name: "Seoyeon",
-        text: "\"Hmph... You're really mean! But you still have to come, okay? If you don't, I'll punish you with the authority of the student council president! Hehe, just kidding. See you tomorrow!\"",
+        text: "\"Hmph... You're so mean! But you'd better show up. If you don't, I'll use my authority as president to punish you! Hehe, just kidding. See you tomorrow!\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "after_home"
     },
     "after_seoyeon_worry": {
         name: "Seoyeon",
-        text: "(She smiles while scratching her head shyly.)",
+        text: "(She scratches her head, a shy smile spreading across her face.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_worry_2"
     },
     "after_seoyeon_worry_2": {
         name: "Seoyeon",
-        text: "\"Hehe, you caught me. Being the student council president involves more work than I thought. But since you're worrying about me like this, I feel a surge of energy! Wait a moment, I'll finish quickly and let's go together!\"",
+        text: "\"Hehe, you caught me. Being president is more work than I bargained for. But knowing you're worried about me... I feel like I can take on anything! Just wait a bit, I'll finish up and we can leave together!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe"
     },
     "after_yuna_new": {
         name: "Me",
-        text: "(While walking in search of a quiet place in the school, I arrived at the old library annex. There, a girl is sitting by the window where the sunset light seeps in.)",
+        text: "(Searching for a quiet spot, I find myself at the old library annex. In the fading sunset, a girl sits by the window, bathed in a golden glow.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -170,7 +170,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_new_2": {
         name: "???",
-        text: "\"Hi? To come all the way here at this time... You're quite unique too. I'm Yuna.\"",
+        text: "\"Oh? Coming here at this hour... You're a curious one. I'm Yuna.\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -179,7 +179,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna": {
         name: "Yuna",
-        text: "(The library annex is darker and quieter than during the day. There, a girl is sitting by the window, looking at the sunset.)",
+        text: "(The library annex is even more silent and shadowed than before. A girl sits by the window, her gaze fixed on the setting sun.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -187,7 +187,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_2": {
         name: "Yuna",
-        text: "(Even though she knows I've come, she looks out the window for a long time.)",
+        text: "(She knows I'm here, yet she continues to stare out the window for a long, quiet moment.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -195,7 +195,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_3": {
         name: "Yuna",
-        text: "\"Ah, {name?}... I like the library after school because it's quieter. What brings you here?\"",
+        text: "\"Ah, {name?}... I love how still the library gets after school. What brings you to my sanctuary?\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -203,52 +203,52 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_name_share_pre": {
         name: "Me",
-        text: "\"My name is '{name}'. I want to get closer to you.\"",
+        text: "\"My name is '{name}'. I... I want to get to know you better.\"",
         setFlag: "knowsName_Yuna",
         next: "yuna_name_share"
     },
     "yuna_name_share": {
         name: "Yuna",
-        text: "(She murmurs my name softly.) \"...{name}. I'll remember it. But names... might not mean much in this school.\"",
+        text: "(She whispers my name, testing the sound of it.) \"...{name}. I'll remember that. Though names... they might not mean much in a place like this.\"",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
         next: "after_yuna_know"
     },
     "after_yuna_know": {
         name: "Yuna",
-        text: "(She slowly turns her head and looks at me. A faint smile appears on her lips.)",
+        text: "(She slowly turns to face me, a ghost of a smile playing on her lips.)",
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
         next: "after_yuna_know_2"
     },
     "after_yuna_know_2": {
         name: "Yuna",
-        text: "(She takes my hand and leads me to the rooftop of the annex.)",
+        text: "(She takes my hand, her touch light but firm, and leads me toward the rooftop.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_yuna_know_2_2"
     },
     "after_yuna_know_2_2": {
         name: "Yuna",
-        text: "\"About me...? Hehe, I don't know if you're brave or reckless.\"",
+        text: "\"You want to know about me...? Hehe, I can't tell if you're brave or just reckless.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_yuna_know_3"
     },
     "after_yuna_know_3": {
         name: "Yuna",
-        text: "\"Okay, since tonight will be long. I'll tell you little by little... very little by little. Follow me.\"",
+        text: "\"Fine. The night is young. I'll tell you... piece by piece. Follow me.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_yuna_move_rooftop"
     },
     "after_yuna_move_rooftop": {
         name: "Me",
-        text: "(As I followed her up the old stairs, a rooftop where I could feel the cool night air appeared.)",
+        text: "(I follow her up the creaking stairs to the rooftop, where the cool night air greets us.)",
         background: "assets/images/background/top_school.png",
         night: true,
         next: "after_yuna_rooftop"
     },
     "after_yuna_rooftop": {
         name: "Yuna",
-        text: "(The school seen from the rooftop of the annex is completely different from the daytime.)",
+        text: "(From up here, the school looks like a different world entirely, draped in shadows.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
@@ -256,101 +256,101 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_rooftop_2": {
         name: "Yuna",
-        text: "(Yuna leans on the railing and gazes into the distance.)",
+        text: "(Yuna leans against the railing, her eyes fixed on the distant horizon.)",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         next: "after_yuna_rooftop_2_2"
     },
     "after_yuna_rooftop_2_2": {
         name: "Yuna",
-        text: "\"People think this school is perfect. But nothing is perfect.\"",
+        text: "\"People see this school as perfect. But perfection is an illusion.\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         next: "after_yuna_rooftop_3"
     },
     "after_yuna_rooftop_3": {
         name: "Yuna",
-        text: "\"Problems that don't appear on the surface are just festering. The heavy energy that fills this school... didn't you feel that sense of incongruity?\"",
+        text: "\"Beneath the surface, things are rotting. This heavy atmosphere... haven't you felt it? That something is... wrong?\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         choices: [
-            { text: "I can go anywhere with you.", next: "after_yuna_together" },
-            { text: "Darkness... it's a bit scary.", next: "after_yuna_scared" }
+            { text: "If I'm with you, I'm not afraid of anything.", next: "after_yuna_together" },
+            { text: "The darkness... it's a bit unsettling.", next: "after_yuna_scared" }
         ]
     },
     "after_yuna_together": {
         name: "Yuna",
-        text: "(She grips my hand tightly. She looks at me and gives a sad smile.)",
+        text: "(She squeezes my hand, a sad, knowing smile on her face.)",
         character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         next: "after_yuna_together_2"
     },
     "after_yuna_together_2": {
         name: "Yuna",
-        text: "\"Foolish words... But I don't dislike that answer. Okay, then... how about we become people who share each other's secrets?\"",
+        text: "\"What a foolish thing to say... but I don't hate it. Then... shall we become partners in crime? Sharing each other's secrets?\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         night: true,
         next: "yuna_contact_exchange"
     },
     "yuna_contact_exchange": {
         name: "Yuna",
-        text: "(Yuna steps away from the rooftop railing and nonchalantly holds out her smartphone.) \"To share secrets... we should at least have a way to contact each other. Leave your number here.\"",
+        text: "(She steps back from the railing and holds out her phone with a nonchalant air.) \"If we're sharing secrets... we'll need a way to talk. Put your number in.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         choices: [
-            { text: "Yes, I want to share more secrets with Yuna.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
-            { text: "Sorry, I'm still a bit cautious.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
+            { text: "Yes, I want to know everything about you.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
+            { text: "Sorry, I'm not ready for that yet.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
         ]
     },
     "yuna_contact_success": {
         name: "Yuna",
-        text: "(Yuna saves my number and smiles faintly.) \"...Done. Now we're connected. If I call... you have to come anytime.\"",
+        text: "(She saves the number, a faint smile touching her lips.) \"...Done. We're connected now. When I call... you'd better come.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         stats: { Yuna: { affinity: 15 } },
-        next: "after_home"
+        next: "night_home"
     },
     "yuna_contact_fail": {
         name: "Yuna",
-        text: "(Yuna looks at me with cold eyes and puts her smartphone away.) \"...Okay. I won't force you. But keep in mind that opportunities don't come often.\"",
+        text: "(Her gaze turns cold as she tucks her phone away.) \"...I see. I won't force you. But remember, opportunities like this don't come twice.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "after_home"
+        next: "night_home"
     },
     "after_yuna_scared": {
         name: "Yuna",
-        text: "(She laughs coldly and lets go of my hand. She turns her gaze back to the window and pushes me away.)",
+        text: "(She lets out a cold laugh and releases my hand, turning back to the shadows.)",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         next: "after_yuna_scared_2"
     },
     "after_yuna_scared_2": {
         name: "Yuna",
-        text: "\"Hehe, I thought so. It's too heavy a story for an ordinary student. Go back for today. Don't try to know any deeper.\"",
+        text: "\"Hehe, of course. It's a heavy burden for a normal student. Go home. Don't try to dig any deeper.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "after_home"
+        next: "night_home"
     },
     "after_dain_new": {
         name: "Me",
-        text: "(Following the lively sounds, I arrived at the gym. There, a girl is practicing volleyball alone.)",
+        text: "(Drawn by the sounds of practice, I head to the gym. Through the sunset-lit windows, I see the volleyball team in action. One girl stands out from the rest.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_active.png",
         sunset: true,
-        next: "after_dain_new_2"
+        next: "after_dain_new_intro"
     },
-    "after_dain_new_2": {
+    "after_dain_new_intro": {
         name: "???",
-        text: "\"Oh! A new face? Hi! I'm Dain from the volleyball club. You look like you're good at sports, want to help me practice?\"",
+        text: "\"Hey there! I'm Dain. You're the new transfer, right?\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "metDain",
-        next: "after_dain_3"
+        next: "after_dain_2"
     },
     "after_dain": {
         name: "Dain",
-        text: "(The gym is full of the heat of practice. Dain is drenched in sweat, spiking the ball.)",
+        text: "(In the gym, Dain is mid-air, delivering a powerful spike. Her energy is infectious, lighting up the room.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_active.png",
         sunset: true,
@@ -358,7 +358,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_2": {
         name: "Dain",
-        text: "(She discovers me and runs over with a bright smile while wiping her sweat with a towel.)",
+        text: "(During a break, she spots me and jogs over, wiping sweat with a towel and grinning.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
@@ -367,57 +367,67 @@ Object.assign(SCENARIO[1], {
     "dain_free_talk": {
         type: "free_talk",
         name: "Dain",
-        text: "\"Wow, {name?}! It's even better to see you up close! Anything you're curious about? Like sports, or school life!\"",
-        context: "A situation where you are talking with Dain, who just finished practice in the gym at sunset after school",
-        personality: "The ace of the volleyball club with a cool and easygoing personality. Loves sports, is friendly to the protagonist, and is full of energy.",
+        text: "\"Whoa, {name?}! You're even cooler up close! Got any questions for me? Sports, school, anything!\"",
+        context: "Talking to Dain in the gym at sunset after her practice.",
+        personality: "The easygoing ace of the volleyball club. Loves sports, friendly, and high-energy.",
         character: "assets/images/characters/dain_nomal.png",
         next: "after_dain_3"
     },
     "after_dain_3": {
         name: "Dain",
-        text: "\"Hey, {name?}! You really came! Wait a moment, I'll finish this last set and let's go eat something delicious!\"",
+        text: "\"Hey, {name?}! You actually showed up! Hang on, let me finish this last set and we'll go grab something to eat!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         choices: [
-            { text: "Okay, I'll cheer you on! Do your best!", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
-            { text: "I'll help you practice. Toss the ball!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
-            { text: "I'm a bit tired, can we just go now?", next: "after_dain_tired", stats: { Dain: { affinity: -10 } } }
+            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
+            { text: "Need a hand? Toss me the ball!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
+            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired", stats: { Dain: { affinity: -10 } } }
         ]
     },
     "after_dain_tired": {
         name: "Dain",
-        text: "(Dain makes a slightly disappointed expression, but soon nods.)",
+        text: "(She looks a bit disappointed, but quickly nods with a smile.)",
         character: "assets/images/characters/dain_nomal.png",
         next: "after_dain_tired_2"
     },
     "after_dain_tired_2": {
         name: "Dain",
-        text: "\"Oh... right. You must be tired since it's your first day. Sorry, I was too excited. Okay, let's just go home for today. See you tomorrow!\"",
+        text: "\"Oh... right. First day must be exhausting. Sorry, I got carried away. Let's call it a day. See you tomorrow!\"",
         character: "assets/images/characters/dain_nomal.png",
         next: "after_home"
     },
-    "after_dain_cheer": {
-        name: "Dain",
-        text: "(She smiles energetically and returns to the court.)",
-        character: "assets/images/characters/dain_active.png",
-        next: "after_dain_end"
-    },
     "after_dain_help": {
         name: "Dain",
-        text: "(Her eyes sparkle as she hands me the ball.)",
+        text: "(Her eyes light up as she tosses me the ball.)",
         character: "assets/images/characters/dain_laugh.png",
         next: "after_dain_help_2"
     },
     "after_dain_help_2": {
         name: "Dain",
-        text: "\"Oh! You're going to help? Great! Then toss it high toward the net! Here I go!\"",
+        text: "\"Oh! You're in? Awesome! Toss it high to the net! Here I come!\"",
         character: "assets/images/characters/dain_active.png",
         next: "after_dain_end"
     },
-    "after_dain_end": {
+    "after_dain_cheer": {
         name: "Dain",
-        text: "(After a while, Dain finishes her practice and comes over to me.)",
+        text: "(She looks a bit flustered, rubbing her nose with a shy grin.)",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_cheer_2"
+    },
+    "after_dain_cheer_2": {
+        name: "Dain",
+        text: "\"Wh-what's with the sudden praise? You're making me blush! It's not like I'm trying harder just because you're watching! ...But maybe I am, just a little.\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_shy.png",
+        sunset: true,
+        next: "after_dain_end"
+    },
+    "after_dain_end": {
+        name: "Me",
+        text: "(I sit in the stands and watch as Dain finishes her practice with incredible focus.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_active.png",
         sunset: true,
@@ -425,7 +435,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_end_2": {
         name: "Dain",
-        text: "(Dain, having finished her practice, approaches me while breathing heavily.) \"Phew... phew... Sorry for making you wait! Now, let's go eat the tteokbokki I promised!\"",
+        text: "(Dain jogs over, catching her breath.) \"Phew... Sorry to keep you waiting! Ready for that tteokbokki?\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "datedDainDay1",
@@ -433,7 +443,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_tteokbokki": {
         name: "Dain",
-        text: "(Dain makes a happy smile while taking a bite of the steaming tteokbokki.)",
+        text: "(She takes a bite of the spicy tteokbokki, a look of pure joy on her face.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -441,7 +451,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_tteokbokki_2": {
         name: "Dain",
-        text: "\"Kyah~ As expected, tteokbokki after exercise is the best! Thank you so much for coming with me today. I think it tastes twice as good as usual thanks to you!\"",
+        text: "\"Man, nothing beats tteokbokki after a workout! Thanks for coming with me. It tastes way better when I'm not eating alone!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -449,7 +459,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_tteokbokki_3": {
         name: "Dain",
-        text: "\"Let's... no, let's come to eat together often from now on! It's a promise, okay?\"",
+        text: "\"We should... I mean, we should do this more often! Promise?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
@@ -457,27 +467,27 @@ Object.assign(SCENARIO[1], {
     },
     "dain_contact_exchange": {
         name: "Dain",
-        text: "(Dain wipes the tteokbokki sauce and playfully shakes her smartphone.) \"Hey, {name?}! If we want to keep going to eat delicious things together, shouldn't we at least have each other's contact info? Put your number in!\"",
+        text: "(She wipes her mouth and playfully waves her phone.) \"Hey, {name?}! If we're gonna be food buddies, I'm gonna need your number. Hand it over!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
         choices: [
-            { text: "Sure! It'll be fun to go on food tours with Dain.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
+            { text: "Sure! I'm always down for a food tour.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
             { 
-                text: "Since I'm getting your number... can I call you right now?", 
-                next: "dain_contact_call_fail", 
+                text: "Can I call you right now? Just to check...", 
+                next: "dain_contact_call_fail",
                 affinityChar: "Dain",
                 affinityBranches: [
                     { minAffinity: 50, next: "dain_contact_call_success" }
                 ],
                 setFlags: ["has_number_dain", "has_any_contact"]
             },
-            { text: "Um... I'll let you know when I have a chance later.", next: "dain_contact_fail", stats: { Dain: { affinity: -10 } } }
+            { text: "Maybe next time.", next: "dain_contact_fail", stats: { Dain: { affinity: -10 } } }
         ]
     },
     "dain_contact_call_success": {
         name: "Dain",
-        text: "(Dain blushes and laughs as if flustered.) \"Wh-what! All of a sudden? ...Well, if you want to hear my voice, I guess it's okay. But don't stay on too long! I have to go to practice early tomorrow!\"",
+        text: "(She blushes, looking genuinely surprised.) \"Wh-what! Right now? ...Well, if you really want to hear my voice. But don't keep me up too late! I've got early practice!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 15 } },
@@ -485,7 +495,7 @@ Object.assign(SCENARIO[1], {
     },
     "dain_contact_call_fail": {
         name: "Dain",
-        text: "(Dain lets out a hollow laugh as if it's absurd.) \"Ha! You're really bold, aren't you? Calling me as soon as you get my number? Isn't that going too far? Let's get close by exchanging messages first!\"",
+        text: "(She lets out a laugh, shaking her head.) \"Ha! You're bold, I'll give you that. Calling me already? Let's stick to texting for now, okay?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
         stats: { Dain: { affinity: -5 } },
@@ -493,7 +503,7 @@ Object.assign(SCENARIO[1], {
     },
     "dain_contact_success": {
         name: "Dain",
-        text: "(Dain laughs coolly and saves my number.) \"Okay! Received! I'll send you a message as soon as I find a good place, so be ready!\"",
+        text: "(She grins and saves the number.) \"Got it! I'll hit you up when I find the next great spot. Be ready!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
@@ -502,7 +512,7 @@ Object.assign(SCENARIO[1], {
     },
     "dain_contact_fail": {
         name: "Dain",
-        text: "(Dain opens her eyes wide as if it's a bit unexpected, then soon laughs it off energetically.) \"What~ Are you playing hard to get? Okay, okay! I'll work harder and get your number eventually!\"",
+        text: "(She looks surprised for a second, then laughs it off.) \"Playing hard to get, huh? Fine, fine! I'll just have to try harder next time!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
         night: true,
@@ -510,7 +520,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse": {
         name: "Nurse",
-        text: "(When I open the nurse's office door, the teacher is drinking tea by the window and smiles when she sees me.)",
+        text: "(I open the door to find the nurse sipping tea by the window. She looks up and offers a warm smile.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -518,7 +528,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_new": {
         name: "Me",
-        text: "(For some reason, I felt languid and walked towards the nurse's office. When I opened the door, a teacher with a mature atmosphere greeted me along with the faint scent of herbs.)",
+        text: "(Feeling a bit drained, I find myself at the nurse's office. The air inside is thick with the scent of herbs, and a mature-looking woman greets me.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -526,23 +536,23 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_new_2": {
         name: "Nurse",
-        text: "\"Oh, a face I haven't seen before? Are you the student who transferred today? I'm the school nurse. Why did you come? Are you hurting somewhere?\"",
+        text: "\"Oh? A new face. You must be the transfer student. I'm the school nurse. What brings you here? Not feeling well?\"",
         character: "assets/images/characters/nurse.png",
         setFlag: "metNurse",
         next: "nurse_free_talk_after_day1"
     },
     "after_nurse_2": {
         name: "Nurse",
-        text: "\"{name?}! Did you come to see me before going home? You're such a good student.\"",
+        text: "\"{name?}! Stopping by to say goodbye? What a sweet student you are.\"",
         character: "assets/images/characters/nurse.png",
         next: "nurse_free_talk_after_day1"
     },
     "nurse_free_talk_after_day1": {
         type: "free_talk",
         name: "Nurse",
-        text: "\"Now, sit here. I'll give you a cup of warm tea. Do you want to talk to me a bit more before you go?\"",
-        context: "A situation where you are having a conversation with the nurse in the nurse's office at sunset before going home.",
-        personality: "A mature and seductive 'older sister' style. She adores and takes care of the protagonist.",
+        text: "\"Come, sit. I'll pour you some tea. Why don't we chat for a bit before you head home?\"",
+        context: "Chatting with the nurse in her office at sunset before heading home.",
+        personality: "A mature, alluring 'big sister' type. She's fond of the protagonist and likes to tease him gently.",
         character: "assets/images/characters/nurse.png",
         next: "after_home"
     }

@@ -8,14 +8,14 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "lunch_time": {
         name: "나",
-        text: "(정신없이 오전 수업이 지나가고, 드디어 기다리던 점심시간 종이 울렸다. 아이들이 우르르 급식실로 향한다.)",
+        text: "(오전 수업 끝! 드디어 기다리던 점심시간이다. 아이들이 급식실로 달려간다.)",
         background: "assets/images/background/room_school.png",
         character: null,
         next: "lunch_time_2"
     },
     "lunch_time_2": {
         name: "나",
-        text: "(점심시간이다. 창밖 운동장에는 아이들이 뛰어놀고 있다.)",
+        text: "(점심시간... 창밖 운동장에는 아이들이 뛰어놀고 있다. 나는 어떡할까?)",
         choices: [
             { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone", setFlag: "metYuna" },
@@ -25,47 +25,47 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seoyeon": {
         name: "서연",
-        text: "(서연이에게 다가가자 그녀가 반갑게 나를 맞이한다.)",
+        text: "(서연이에게 다가가자, 그녀가 환하게 웃으며 나를 반긴다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "lunch_seoyeon_2"
     },
     "lunch_seoyeon_2": {
         name: "서연",
-        text: "\"마침 널 찾으려던 참이었어. 우리 옥상에 비밀 장소가 있는데, 거기서 같이 먹을래?\"",
+        text: "\"마침 널 찾으려던 참이었어! 우리 옥상 비밀 장소에서 같이 먹을래?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "응! 서연이랑 같이 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "음... 다른 애들이랑 먹기로 했는데. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
+            { text: "음... 다른 애들이랑 먹기로 해서. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
             { text: "옥상? 귀찮게 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
         ]
     },
     "rooftop_1": {
         name: "서연",
-        text: "(시원한 바람이 부는 옥상. 서연이가 도시락을 펼친다.)",
+        text: "(시원한 바람이 부는 옥상. 서연이가 정성스레 준비한 도시락을 꺼낸다.)",
         background: "assets/images/background/top_school.png",
         next: "rooftop_1_2"
     },
     "rooftop_1_2": {
         name: "서연",
-        text: "(그녀가 젓가락을 건네며 수줍게 웃는다.)",
+        text: "(그녀가 젓가락을 건네며 수줍게 웃는다. 왠지 두근거린다.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_2_2"
     },
     "rooftop_1_2_2": {
         name: "서연",
-        text: "\"자, 이건 내가 오늘 아침에 일찍 일어나서 만든 거야. 네 입맛에 맞을지 모르겠네...\"",
+        text: "\"자, 이건 내가 아침 일찍 일어나서 만든 거야. 입맛에 맞을지 모르겠네...\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_3"
     },
     "rooftop_1_3": {
         name: "서연",
-        text: "\"특히 이 문어 모양 소시지는 내 회심의 역작이야! 한 번 먹어볼래?\"",
+        text: "\"특히 이 문어 소시지는 내 회심의 역작! 자, 한 번 먹어볼래?\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "와, 정말 맛있어 보여! 서연이는 요리도 잘하는구나.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "와, 정말 맛있어 보여! 요리도 잘하는구나.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 5 } } },
             { 
                 text: "아... 아 해줘. (용기를 내어 본다!)", 
                 next: "rooftop_talk_ah_fail", 
@@ -75,26 +75,26 @@ Object.assign(SCENARIO[1], {
                 ],
                 stats: { Seoyeon: { affinity: 5 } } 
             },
-            { text: "이렇게 정성 가득한 도시락은 처음이야. 정말 고마워.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "별로 맛없어 보이는데... 그냥 매점 가서 빵이나 사 먹을걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -30 } } }
+            { text: "이렇게 정성 가득한 도시락은 처음이야. 고마워.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "별로 맛없어 보이는데... 매점 갈걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -30 } } }
         ]
     },
     "rooftop_talk_ah_fail": {
         name: "서연",
-        text: "(서연이의 얼굴이 순식간에 굳어진다. 그녀는 당황한 듯 젓가락을 내려놓는다.) \"어... 그건 좀... {name?}, 우리 아직 그 정도로 친한 건 아니지 않아? 장난이 좀 심한 것 같아.\"",
+        text: "(서연이의 표정이 순식간에 굳어진다. 당황한 듯 젓가락을 내려놓는다.) \"어... 그건 좀... {name?}, 우리 아직 그 정도로 친한 건 아니잖아. 장난이 심해.\"",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -15 } },
         next: "rooftop_2"
     },
     "rooftop_talk_rude": {
         name: "서연",
-        text: "(서연이의 손이 미세하게 떨린다. 그녀는 억지로 미소를 지어 보이지만, 눈가가 촉촉해진다.)",
+        text: "(서연이의 손이 미세하게 떨린다. 억지로 미소 짓지만, 눈가가 촉촉해진다.)",
         character: "assets/images/characters/seyoun_sad.png",
         next: "rooftop_2"
     },
     "rooftop_talk_food": {
         name: "서연",
-        text: "(그녀가 기쁜 듯 뺨을 붉히며 대답한다.)",
+        text: "(그녀가 기쁜 듯 뺨을 붉힌다.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_talk_food_2"
     },

@@ -8,66 +8,66 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "lunch_time": {
         name: "Me",
-        text: "(Morning classes passed by in a blur, and finally the bell for lunch rang. Kids rush to the cafeteria.)",
+        text: "(Morning classes are over! Finally, the long-awaited lunch time. Kids are rushing to the cafeteria.)",
         background: "assets/images/background/room_school.png",
         character: null,
         next: "lunch_time_2"
     },
     "lunch_time_2": {
         name: "Me",
-        text: "(It's lunch time. Kids are playing on the playground outside the window.)",
+        text: "(Lunch time... Kids are playing on the field outside. What should I do?)",
         choices: [
-            { text: "Approach Seoyeon and suggest having lunch together.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
+            { text: "Approach Seoyeon and suggest eating lunch together.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "Look around the school alone and find a quiet place to eat.", next: "lunch_alone", setFlag: "metYuna" },
             { text: "Follow the sound of the volleyball from the gym.", next: "lunch_dain", setFlag: "metDain" },
-            { text: "I feel a bit unwell, so I'll go to the nurse's office.", next: "lunch_nurse", setFlag: "metNurse" }
+            { text: "I don't feel well, so I'll go to the nurse's office.", next: "lunch_nurse", setFlag: "metNurse" }
         ]
     },
     "lunch_seoyeon": {
         name: "Seoyeon",
-        text: "(As I approach Seoyeon, she welcomes me gladly.)",
+        text: "(As I approach Seoyeon, she welcomes me with a bright smile.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "lunch_seoyeon_2"
     },
     "lunch_seoyeon_2": {
         name: "Seoyeon",
-        text: "\"I was just about to look for you. We have a secret place on the rooftop, do you want to eat there together?\"",
+        text: "\"I was just looking for you! We have a secret spot on the rooftop, want to eat there together?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "Yeah! I wanted to eat with Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "Um... I decided to eat with other kids. (Refuse)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
-            { text: "Rooftop? Do I have to go all the way there? It's annoying.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+            { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "Um... I promised to eat with others. (Decline)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
+            { text: "Rooftop? Do I have to go all the way there? It's a hassle.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
         ]
     },
     "rooftop_1": {
         name: "Seoyeon",
-        text: "(Rooftop with a cool breeze. Seoyeon unfolds her lunch box.)",
+        text: "(The rooftop with a cool breeze. Seoyeon takes out a lunch box she prepared with care.)",
         background: "assets/images/background/top_school.png",
         next: "rooftop_1_2"
     },
     "rooftop_1_2": {
         name: "Seoyeon",
-        text: "(She hands me chopsticks and smiles shyly.)",
+        text: "(She hands me chopsticks and smiles shyly. My heart flutters a bit.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_2_2"
     },
     "rooftop_1_2_2": {
         name: "Seoyeon",
-        text: "\"Here, I made this myself this morning. I don't know if it'll suit your taste...\"",
+        text: "\"Here, I woke up early this morning to make this. I hope it suits your taste...\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_3"
     },
     "rooftop_1_3": {
         name: "Seoyeon",
-        text: "\"Especially this octopus-shaped sausage is my masterpiece! Do you want to try one?\"",
+        text: "\"Especially these octopus-shaped sausages, they're my masterpiece! Want to try one?\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "Wow, it looks really delicious! Seoyeon, you're good at cooking too.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Wow, it looks delicious! You're a great cook, Seoyeon.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 5 } } },
             { 
-                text: "Ah... say ah. (Taking courage!)", 
+                text: "Say 'Ah'... (Gathering courage!)", 
                 next: "rooftop_talk_ah_fail", 
                 affinityChar: "Seoyeon",
                 affinityBranches: [
@@ -75,26 +75,26 @@ Object.assign(SCENARIO[1], {
                 ],
                 stats: { Seoyeon: { affinity: 5 } } 
             },
-            { text: "I've never had such a sincere lunch box before. Thank you so much.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "It doesn't look very tasty... I should have just bought bread at the store.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -30 } } }
+            { text: "I've never had such a heartfelt lunch box. Thank you.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "It doesn't look that good... I should've just gone to the snack bar.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -30 } } }
         ]
     },
     "rooftop_talk_ah_fail": {
         name: "Seoyeon",
-        text: "(Seoyeon's face hardens instantly. She puts down her chopsticks as if flustered.) \"Um... that's a bit... {name?}, aren't we not that close yet? I think the joke is a bit too much.\"",
+        text: "(Seoyeon's face hardens instantly. She puts down her chopsticks, looking flustered.) \"Um... that's a bit... {name?}, we're not that close yet, are we? I think the joke went too far.\"",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -15 } },
         next: "rooftop_2"
     },
     "rooftop_talk_rude": {
         name: "Seoyeon",
-        text: "(Seoyeon's hand trembles slightly. She forces a smile, but her eyes become moist.)",
+        text: "(Seoyeon's hand trembles slightly. She tries to force a smile, but her eyes get watery.)",
         character: "assets/images/characters/seyoun_sad.png",
         next: "rooftop_2"
     },
     "rooftop_talk_food": {
         name: "Seoyeon",
-        text: "(She answers while blushing as if happy.)",
+        text: "(She blushes happily.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_talk_food_2"
     },

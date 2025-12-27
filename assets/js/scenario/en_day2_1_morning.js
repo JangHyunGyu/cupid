@@ -8,37 +8,37 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_start": {
         name: "Me",
-        text: "(I woke up to the sound of the alarm. It's the morning of my second day as a transfer student.)",
+        text: "(Beep beep— The alarm pulls me from a deep sleep. It's the morning of my second day here.)",
         background: "assets/images/background/room_my.png",
         character: null,
         next: "day2_start_2"
     },
     "day2_start_2": {
         name: "Me",
-        text: "(Yesterday's events feel like a dream, but the uniform on the desk reminds me that it's reality.)",
+        text: "(Yesterday feels like a blur, almost like a dream... but the uniform waiting for me is very real.)",
         next: "day2_start_3"
     },
     "day2_start_3": {
         name: "Me",
-        text: "(What kind of things will happen today? I quickly prepared and headed to school.)",
+        text: "(I wonder who I'll meet today? With a mix of nerves and excitement, I head out.)",
         next: "day2_school_gate"
     },
     "day2_school_gate": {
         name: "Me",
-        text: "(Arriving in front of the school gate, a much more familiar scenery than yesterday welcomes me.)",
+        text: "(The school gate comes into view. It feels a little more familiar than it did yesterday.)",
         background: "assets/images/background/school.png",
         next: "day2_school_gate_2"
     },
     "day2_school_gate_2": {
         name: "Me",
-        text: "(As I try to pass through the school gate, someone taps my shoulder.)",
+        text: "(As I'm about to walk in, I feel a light tap on my shoulder.)",
         choices: [
             { text: "Turn around.", next: "day2_meet_someone" }
         ]
     },
     "day2_meet_someone": {
         name: "Me",
-        text: "(When I turn around, there is...)",
+        text: "(I turn around to see...)",
         branches: [
             { next: "day2_meet_nurse", character: "Nurse", condition: "metNurse" },
             { next: "day2_meet_dain", character: "Dain", condition: "metDain" },
@@ -49,13 +49,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_nurse": {
         name: "Nurse",
-        text: "\"Oh, {name?}! Good morning. You look full of energy today too?\"",
+        text: "\"Oh, {name?}! Good morning. You're looking lively today!\"",
         character: "assets/images/characters/nurse.png",
         next: "day2_nurse_talk"
     },
     "day2_nurse_talk": {
         name: "Nurse",
-        text: "(The teacher approaches me and winks slightly.)",
+        text: "(She leans in close and gives me a playful wink.)",
         character: "assets/images/characters/nurse.png",
         branches: [
             { next: "day2_nurse_talk_has_number", condition: "has_number_nurse" },
@@ -64,25 +64,25 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_talk_has_number": {
         name: "Nurse",
-        text: "\"You didn't stay up all night thinking about me, did you? Hehe, just kidding. If you feel sick today, come to the nurse's office anytime.\"",
+        text: "\"You weren't up all night thinking about me, were you? Hehe, just kidding. If you need a break, you know where to find me.\"",
         character: "assets/images/characters/nurse.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk_no_number": {
         name: "Nurse",
-        text: "\"It's only your second day, but you seem to have adapted to school already. Don't overdo it today, and if it's hard, come to the nurse's office to rest.\"",
+        text: "\"Only your second day and you're already a pro. Don't push yourself too hard, okay? My door is always open.\"",
         character: "assets/images/characters/nurse.png",
         next: "day2_classroom"
     },
     "day2_meet_seoyeon": {
         name: "Seoyeon",
-        text: "\"Hi, {name?}! Did you sleep well? You're early today too!\"",
+        text: "\"Morning, {name?}! Did you sleep well? You're early again!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_seoyeon_talk"
     },
     "day2_seoyeon_talk": {
         name: "Seoyeon",
-        text: "(Seoyeon makes eye contact with me and smiles slightly.)",
+        text: "(She catches my eye and offers a warm, gentle smile.)",
         character: "assets/images/characters/seyoun_nomal.png",
         branches: [
             { next: "day2_seoyeon_talk_has_number", condition: "has_number_seyoun" },
@@ -91,11 +91,11 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_talk_has_number": {
         name: "Seoyeon",
-        text: "\"Did you get home well yesterday? After we exchanged contact information, I was debating whether to send a message or not... I thought it was too late, so I held back.\"",
+        text: "\"Did you get home okay? I wanted to text you last night, but I was worried it might be too late...\"",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
-            { text: "I was waiting for Seoyeon's message too! Send it now.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "Oh, I see. I was tired, so I fell asleep right away.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 2 } } }
+            { text: "I was actually waiting for your text! You can send one anytime.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "Ah, I see. I was so tired I crashed as soon as I got home.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 2 } } }
         ]
     },
     "day2_seoyeon_talk_no_number": {

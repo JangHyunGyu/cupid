@@ -8,19 +8,19 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_start": {
         name: "나",
-        text: "(알람 소리에 눈을 떴다. 전학 이틀째 아침이다.)",
+        text: "(지리릭— 알람 소리에 무거운 눈꺼풀을 들어 올렸다. 전학 이틀째 아침이다.)",
         background: "assets/images/background/room_my.png",
         character: null,
         next: "day2_start_2"
     },
     "day2_start_2": {
         name: "나",
-        text: "(어제의 일들이 꿈만 같지만, 책상 위에 놓인 교복이 현실임을 일깨워준다.)",
+        text: "(어제의 일들이 마치 꿈처럼 느껴지지만... 책상 위에 놓인 교복이 이곳이 현실임을 말해준다.)",
         next: "day2_start_3"
     },
     "day2_start_3": {
         name: "나",
-        text: "(오늘은 또 어떤 일들이 벌어질까? 서둘러 준비하고 학교로 향했다.)",
+        text: "(오늘은 또 어떤 만남이 기다리고 있을까? 설레는 마음을 안고 학교로 향했다.)",
         next: "day2_school_gate"
     },
     "day2_school_gate": {
@@ -166,20 +166,20 @@ Object.assign(SCENARIO[2], {
     },
     "day2_classroom": {
         name: "나",
-        text: "(교실에 들어서자 아이들이 어제보다 훨씬 친근하게 인사를 건네온다.)",
+        text: "(교실 문을 열자, 어제보다 한결 부드러운 공기가 나를 감싼다. 아이들의 시선에도 호의가 섞여 있다.)",
         background: "assets/images/background/room_school.png",
         next: "day2_classroom_2"
     },
     "day2_classroom_2": {
         name: "나",
-        text: "(자리에 앉아 수업 준비를 하려는데, 책상 위에 작은 쪽지 하나가 놓여 있다.)",
+        text: "(자리에 앉아 가방을 정리하려는데, 책상 구석에 놓인 작은 쪽지 하나가 눈에 들어왔다.)",
         choices: [
             { text: "쪽지를 확인한다.", next: "day2_check_note" }
         ]
     },
     "day2_check_note": {
         name: "나",
-        text: "(쪽지에는 정갈한 글씨체로 이렇게 적혀 있다.)",
+        text: "(조심스레 쪽지를 펼치자, 정갈하지만 어딘가 서늘한 글씨체가 나타났다.)",
         next: "day2_note_content"
     },
     "day2_note_content": {

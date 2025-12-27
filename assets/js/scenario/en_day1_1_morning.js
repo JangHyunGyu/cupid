@@ -8,19 +8,19 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "start": {
         name: "Me",
-        text: "(In front of the school gate with warm sunlight. I feel the tension of my first day as a transfer student.)",
+        text: "(Warm sunlight... The tension of the first day as a transfer student fills my body.)",
         background: "assets/images/background/school.png",
         character: null,
         next: "start_2"
     },
     "start_2": {
         name: "Me",
-        text: "(Unfamiliar uniforms and scenery... everything feels new.)",
+        text: "(Unfamiliar uniform, unfamiliar scenery. Everything feels awkward.)",
         next: "start_3"
     },
     "start_3": {
         name: "Me",
-        text: "(Taking a deep breath, I took a step toward the school gate.)",
+        text: "(Whew... One deep breath. Okay, let's go.)",
         next: "name_input_scene"
     },
     "name_input_scene": {
@@ -31,40 +31,40 @@ Object.assign(SCENARIO[1], {
     },
     "start_4": {
         name: "???",
-        text: "\"Hi? I haven't seen your face before. Standing blankly in front of the school gate at this time... Are you the {name?} who's supposed to come today?\"",
+        text: "\"Hi? I haven't seen your face before. Standing here blankly... Are you the transfer student, {name?}?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "intro_1"
     },
     "intro_1": {
         name: "Me",
-        text: "(She approaches with a smile. I can smell a faint scent.)",
+        text: "(She approaches with a bright smile. A pleasant scent wafts over.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "intro_2"
     },
     "intro_2": {
         name: "Me",
-        text: "(Her clear eyes stare at me intently.)",
+        text: "(Her clear eyes stare at me intently. It's... a bit embarrassing.)",
         next: "intro_3"
     },
     "intro_3": {
         name: "Seoyeon",
-        text: "\"I'm 'Seoyeon', the student council president. I came to meet you at the request of your homeroom teacher. Nice to meet you!\"",
+        text: "\"I'm Seoyeon, the student council president. I came to meet you at the teacher's request. Nice to meet you!\"",
         setFlag: "metSeoyeon",
         choices: [
-            { text: "Yeah, nice to meet you. The school is so big that I was getting a bit lost.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "You... are really pretty. (My true feelings came out without me knowing!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "Oh, really? But can you move? I'm busy.", next: "path_rude_1", stats: { Seoyeon: { affinity: -20 } } }
+            { text: "Yeah, nice to meet you. The school is so big I was getting lost.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "You... are really pretty. (My true feelings just slipped out...!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "Oh, really? Can you move? I'm busy.", next: "path_rude_1", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "path_rude_1": {
         name: "Seoyeon",
-        text: "(Seoyeon's expression hardens instantly. She bites her lip as if flustered.)",
+        text: "(Seoyeon's expression hardens instantly. She bites her lip, looking flustered.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "path_rude_1_2"
     },
     "path_rude_1_2": {
         name: "Seoyeon",
-        text: "\"Oh... sorry. I guess I was in the way. But I have to guide you to the teacher's office... follow me.\"",
+        text: "\"Ah... sorry. I guess I was in the way. But I have to guide you to the office... follow me.\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_1"
     },
@@ -76,7 +76,7 @@ Object.assign(SCENARIO[1], {
     },
     "path_friendly_1_2": {
         name: "Seoyeon",
-        text: "\"Hehe, I thought so. It's a bit complicated when you first come to our school, right? I'll guide you perfectly to the teacher's office. Just trust me and follow!\"",
+        text: "\"Hehe, I thought so. It's a bit complicated at first, right? I'll guide you perfectly. Come on!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1"
     },
@@ -88,7 +88,7 @@ Object.assign(SCENARIO[1], {
     },
     "path_tease_1_2": {
         name: "Seoyeon",
-        text: "\"Oh, {name?} is full of confidence? It's not so much special treatment as... a sense of responsibility as the student council president? But if you think so, I'll pay special attention to you today!\"",
+        text: "\"Oh, you're full of confidence? It's not special treatment, just... responsibility? But if you want, I'll pay special attention to you!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1"
     },

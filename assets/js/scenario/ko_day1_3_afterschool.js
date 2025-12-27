@@ -8,7 +8,7 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "after_school_start": {
         name: "나",
-        text: "(어느덧 모든 수업이 끝나고 방과 후를 알리는 종소리가 울려 퍼진다.)",
+        text: "(수업 끝! 방과 후를 알리는 종소리가 울려 퍼진다.)",
         background: "assets/images/background/room_school.png",
         character: null,
         sunset: true,
@@ -16,13 +16,13 @@ Object.assign(SCENARIO[1], {
     },
     "after_school_start_2": {
         name: "나",
-        text: "(가방을 챙겨 교실을 나서려는데... 복도에는 하교하는 아이들의 발소리가 가득하다.)",
+        text: "(가방을 챙겨 교실을 나선다. 복도에는 아이들의 활기찬 발소리가 가득하다.)",
         sunset: true,
         next: "after_school_start_3"
     },
     "after_school_start_3": {
         name: "나",
-        text: "(오늘 하루도 참 길었네. 바로 집에 갈까 하다가, 아까 만났던 사람들이 떠올랐다.)",
+        text: "(오늘 하루도 길었네. 바로 집에 갈까... 아니면 아까 만났던 애들을 찾아가 볼까?)",
         sunset: true,
         choices: [
             { text: "서연이가 있는 학생회실에 들러본다.", next: "after_seoyeon" },
@@ -37,65 +37,65 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon": {
         name: "서연",
-        text: "(학생회실 문을 열자, 산더미처럼 쌓인 서류들 사이에서 고군분투하고 있는 서연이가 보인다.)",
+        text: "(학생회실 문을 열자, 서류 더미 속에서 고군분투하는 서연이가 보인다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_2"
     },
     "after_seoyeon_2": {
         name: "서연",
-        text: "(내가 들어오자 그녀가 깜짝 놀라며 고개를 든다. 그녀는 펜을 내려놓고 기지개를 켠다.)",
+        text: "(내가 들어오자 서연이가 깜짝 놀라며 고개를 든다. 펜을 내려놓고 기지개를 켜는 그녀.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_3"
     },
     "after_seoyeon_3": {
         name: "서연",
-        text: "\"어? {name?}! 이 시간에 어쩐 일이야? 설마... 나 기다려준 거야?\"",
+        text: "\"어? {name?}! 이 시간에 어쩐 일이야? 설마... 나 기다린 거야?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "응, 같이 하교하고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "그냥 얼굴 보고 싶어서 왔어. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "착각하지 마. 그냥 길을 잘못 든 것뿐이야.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -20 } } }
+            { text: "응, 같이 가고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "그냥 얼굴 보고 싶어서. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "착각하지 마. 그냥 길을 잘못 든 거야.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "after_seoyeon_rude": {
         name: "서연",
-        text: "(서연이의 표정이 순식간에 굳어진다. 그녀는 다시 서류로 시선을 돌린다.)",
+        text: "(서연이의 표정이 순식간에 굳어진다. 다시 서류로 시선을 돌리는 그녀.)",
         character: "assets/images/characters/seyoun_angry.png",
         next: "after_seoyeon_rude_2"
     },
     "after_seoyeon_rude_2": {
         name: "서연",
-        text: "\"아... 그래? 그럼 방해하지 말고 나가줄래? 나 지금 좀 바쁘거든.\"",
+        text: "\"아... 그래? 그럼 방해하지 말고 나가줄래? 나 좀 바쁘거든.\"",
         character: "assets/images/characters/seyoun_angry.png",
         next: "after_home"
     },
     "after_seoyeon_help": {
         name: "서연",
-        text: "(그녀가 감동한 듯 눈을 크게 뜬다. 이내 환한 미소를 지으며 내 옆자리를 내어준다.)",
+        text: "(그녀가 감동한 듯 눈을 크게 뜬다. 이내 환하게 웃으며 내 옆자리를 내어준다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "after_seoyeon_help_dialogue"
     },
     "after_seoyeon_help_dialogue": {
         name: "서연",
-        text: "\"정말? 고마워! 네가 도와준다면 금방 끝낼 수 있을 것 같아. 자, 이 서류들 분류하는 것 좀 도와줄래?\"",
+        text: "\"정말? 고마워! 네가 도와주면 금방 끝날 것 같아. 자, 이것 좀 도와줄래?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "after_seoyeon_help_action"
     },
     "after_seoyeon_help_action": {
         name: "서연",
-        text: "(우리는 말없이 서류를 정리하며 묘한 유대감을 느낀다. 어느덧 창밖은 노을빛으로 물들어간다.)",
+        text: "(말없이 서류를 정리하며 느껴지는 묘한 유대감. 창밖은 어느새 노을빛이다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_help_3"
     },
     "after_seoyeon_help_3": {
         name: "서연",
-        text: "\"우리... 끝나고 같이 맛있는 거 먹으러 가자!\"",
+        text: "\"우리... 이거 끝나고 맛있는 거 먹으러 가자!\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "after_seoyeon_cafe"
     },
     "after_seoyeon_cafe": {
         name: "서연",
-        text: "(서류 정리를 마치고 우리는 학교 앞 작은 카페에 들렀다.)",
+        text: "(서류 정리를 마치고, 학교 앞 작은 카페에 들렀다.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe_2"
