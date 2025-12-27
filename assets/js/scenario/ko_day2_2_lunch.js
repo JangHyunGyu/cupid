@@ -30,9 +30,9 @@ Object.assign(SCENARIO[2], {
         text: "\"{name?}! 마침 오길 기다리고 있었어! 이리 와서 앉아. 오늘 샌드위치를 좀 넉넉하게 만들어 왔거든.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "와, 정말 맛있어 보여! 서연이 넌 요리 천재구나.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "와, 정말 맛있어 보여! 서연이 넌 요리 천재구나.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 12 } } },
             { text: "학생회 일 때문에 피곤하진 않아? 너무 무리하는 거 아니지?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "(서연의 볼에 묻은 빵가루를 떼어준다)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 20 } } }
+            { text: "(서연의 볼에 묻은 빵가루를 떼어준다)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 15 } } }
         ]
     },
     "day2_seoyeon_lunch_praise": {
@@ -81,7 +81,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
-            { text: "비밀 같은 건 관심 없어. 그냥 너랑 대화하고 싶어서 온 거야.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
+            { text: "비밀 같은 건 관심 없어. 그냥 너랑 대화하고 싶어서 온 거야.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 8 } } }
         ]
     },
     "day2_yuna_talk_2_new": {

@@ -270,9 +270,9 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "(그녀의 보랏빛 눈동자가 나를 꿰뚫어 보는 듯하다.)",
         choices: [
-            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 5 } } },
-            { text: "낯익다니... 나를 본 적 있어?", next: "yuna_scent", stats: { Yuna: { affinity: 5 } } },
-            { text: "너, 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { affinity: 10 } } }
+            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 8 } } },
+            { text: "낯익다니... 나를 본 적 있어?", next: "yuna_scent", stats: { Yuna: { affinity: 8 } } },
+            { text: "너, 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
         ]
     },
     "yuna_secret": {

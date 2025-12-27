@@ -53,8 +53,8 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "서연아, 넌 왜 이렇게 열심히 해?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "이제 그만 가자. 내가 집까지 데려다줄게.", next: "day2_seoyeon_home", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "(서연의 어깨를 주물러준다)", next: "day2_seoyeon_massage", stats: { Seoyeon: { affinity: 20 } } }
+            { text: "이제 그만 가자. 내가 집까지 데려다줄게.", next: "day2_seoyeon_home", stats: { Seoyeon: { affinity: 12 } } },
+            { text: "(서연의 어깨를 주물러준다)", next: "day2_seoyeon_massage", stats: { Seoyeon: { affinity: 15 } } }
         ]
     },
     "day2_seoyeon_why": {
@@ -122,8 +122,8 @@ Object.assign(SCENARIO[2], {
         text: "(유나가 손가락으로 벽의 틈새를 가리킨다. 그곳에는 붉은색으로 기묘한 눈 모양이 그려져 있다.)",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "이게 대체 뭘 의미하는 거야?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 5 } } },
-            { text: "(유나의 손을 잡으며) 무서우니까 이제 나가자.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 10 } } },
+            { text: "이게 대체 뭘 의미하는 거야?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 8 } } },
+            { text: "(유나의 손을 잡으며) 무서우니까 이제 나가자.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 12 } } },
             { text: "이 눈... 꼭 우리를 지켜보고 있는 것 같아.", next: "day2_yuna_eye", stats: { Yuna: { affinity: 15 } } }
         ]
     },
@@ -194,7 +194,7 @@ Object.assign(SCENARIO[2], {
         choices: [
             { text: "다인이 네가 잘 때려줘서 그렇지.", next: "day2_dain_praise", stats: { Dain: { affinity: 10 } } },
             { text: "나중에 정식으로 한판 붙어볼까?", next: "day2_dain_match", stats: { Dain: { affinity: 15 } } },
-            { text: "운동 끝나고 먹는 떡볶이가 최고인데, 그치?", next: "day2_dain_food", stats: { Dain: { affinity: 20 } } }
+            { text: "운동 끝나고 먹는 떡볶이가 최고인데, 그치?", next: "day2_dain_food", stats: { Dain: { affinity: 15 } } }
         ]
     },
     "day2_dain_praise": {
