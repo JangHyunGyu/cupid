@@ -71,7 +71,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply": {
         name: "Yuna",
-        text: "(A reply arrives after a short wait.) '...Yeah. I knew you would understand. I'll be watching you in your dreams too.'",
+        text: "(A reply arrives after a short wait.) '...Yeah. I knew you would understand. I'll be watching you in your dreams too, {name?}.'",
         night: true,
         stats: { Yuna: { affinity: 5 } },
         next: "day2_final_scene"
@@ -84,7 +84,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply": {
         name: "Dain",
-        text: "(A lively reply.) 'Of course! I'm going to win, so have your wallet ready! Haha, good night!'",
+        text: "(A lively reply.) 'Of course! I'm going to win, so have your wallet ready! Haha, good night, {name?}!'",
         night: true,
         stats: { Dain: { affinity: 5 } },
         next: "day2_final_scene"

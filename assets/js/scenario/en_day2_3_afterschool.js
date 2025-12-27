@@ -287,7 +287,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_night_talk": {
         name: "Nurse",
-        text: "\"{name?}... You really came. Hehe, you wanted to spend more time with me, didn't you? Fine, I'll stay with you until late today.\"",
+        text: "(She smiles softly and strokes my hair.) \"Hehe, you wanted to spend more time with me, didn't you? Fine, I'll stay with you until late today.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         next: "day2_end"

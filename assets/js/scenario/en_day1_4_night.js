@@ -45,6 +45,7 @@ Object.assign(SCENARIO[1], {
             { text: "Send a message to Seoyeon.", next: "night_message_seyoun", condition: "has_number_seyoun" },
             { text: "Send a message to Yuna.", next: "night_message_yuna", condition: "has_number_yuna" },
             { text: "Send a message to Dain.", next: "night_message_dain", condition: "has_number_dain" },
+            { text: "Send a message to the Nurse.", next: "night_message_nurse", condition: "has_number_nurse" },
             { text: "Check Affinity Status", next: "day1_check_affinity" },
             { text: "Just sleep.", next: "day1_end" }
         ]
@@ -77,7 +78,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_yuna_reply": {
         name: "Yuna",
-        text: "(A reply arrives after a short wait.) '...Yeah. You too. See you at school tomorrow.'",
+        text: "(A reply arrives after a short wait.) '...Yeah. You too. See you at school tomorrow, {name?}.'",
         night: true,
         stats: { Yuna: { affinity: 5 } },
         next: "day1_end"
@@ -90,9 +91,22 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_dain_reply": {
         name: "Dain",
-        text: "(A lively reply.) 'Right? I told you I know all the best spots! Rest up and see you tomorrow! Good night!'",
+        text: "(A lively reply.) 'Right? I told you I know all the best spots! Rest up and see you tomorrow, {name?}! Good night!'",
         night: true,
         stats: { Dain: { affinity: 5 } },
+        next: "day1_end"
+    },
+    "night_message_nurse": {
+        name: "Me",
+        text: "(I send a message to the Nurse. 'Teacher, thank you for today. Good night.')",
+        night: true,
+        next: "night_message_nurse_reply"
+    },
+    "night_message_nurse_reply": {
+        name: "Nurse",
+        text: "(An alluring reply.) 'Oh, you actually messaged me? What a good boy. Have sweet dreams, {name?}.'",
+        night: true,
+        stats: { Nurse: { affinity: 5 } },
         next: "day1_end"
     },
     "day1_end": {

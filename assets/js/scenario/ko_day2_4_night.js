@@ -71,7 +71,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply": {
         name: "유나",
-        text: "(잠시 후 도착한 답장.) '...응. 너라면 이해해줄 줄 알았어. 꿈속에서도 널 지켜보고 있을게.'",
+        text: "(잠시 후 도착한 답장.) '...응. 너라면 이해해줄 줄 알았어. 꿈속에서도 널 지켜보고 있을게, {name?}.'",
         night: true,
         stats: { Yuna: { affinity: 5 } },
         next: "day2_final_scene"
@@ -84,7 +84,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply": {
         name: "다인",
-        text: "(활기찬 답장.) '당연하지! 내가 이길 거니까 지갑 딱 대고 있어! 하하, 잘 자!'",
+        text: "(활기찬 답장.) '당연하지! 내가 이길 거니까 지갑 딱 대고 있어! 하하, 잘 자, {name?}!'",
         night: true,
         stats: { Dain: { affinity: 5 } },
         next: "day2_final_scene"

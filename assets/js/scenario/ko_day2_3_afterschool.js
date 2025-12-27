@@ -287,7 +287,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_night_talk": {
         name: "양호선생님",
-        text: "\"{name?}... 정말 왔네? 후훗, 나랑 더 있고 싶어서 온 거지? 좋아, 오늘은 특별히 늦게까지 같이 있어줄게.\"",
+        text: "(선생님이 부드러운 미소를 지으며 내 머리를 쓰다듬는다.) \"후훗, 나랑 더 있고 싶어서 온 거지? 좋아, 오늘은 특별히 늦게까지 같이 있어줄게.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         next: "day2_end"
