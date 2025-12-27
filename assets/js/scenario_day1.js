@@ -433,7 +433,8 @@ SCENARIO[1] = {
         choices: [
             { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone", setFlag: "metYuna" },
-            { text: "체육관 쪽에서 들려오는 배구공 소리를 따라가 본다.", next: "lunch_dain", setFlag: "metDain" }
+            { text: "체육관 쪽에서 들려오는 배구공 소리를 따라가 본다.", next: "lunch_dain", setFlag: "metDain" },
+            { text: "몸이 좀 안 좋은 것 같아 양호실로 간다.", next: "lunch_nurse", setFlag: "metNurse" }
         ]
     },
     "lunch_seoyeon": {
@@ -774,6 +775,70 @@ SCENARIO[1] = {
         setFlag: "metDain",
         next: "after_school_start"
     },
+    "lunch_nurse": {
+        name: "나",
+        text: "(전학 첫날이라 그런지 긴장 탓에 머리가 조금 지끈거린다. 나는 조용한 양호실로 향했다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        next: "lunch_nurse_2"
+    },
+    "lunch_nurse_2": {
+        name: "???",
+        text: "\"어머, 처음 보는 얼굴이네? 우리 학교에 이렇게 귀여운 학생이 있었나?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_intro"
+    },
+    "nurse_intro": {
+        name: "양호선생님",
+        text: "\"나는 이곳의 양호 교사란다. 다들 그냥 '선생님'이라고 부르지만... 너한테는 특별히 내 이름을 알려줄 수도 있는데?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_name_share_pre"
+    },
+    "nurse_name_share_pre": {
+        name: "나",
+        text: "\"제 이름은 '{name}'예요.\"",
+        setFlag: "knowsName_양호선생님",
+        next: "nurse_name_share"
+    },
+    "nurse_name_share": {
+        name: "양호선생님",
+        text: "\"{name}... 후훗, 이름만큼이나 눈빛이 참 맑구나. 어디가 아파서 온 거니? 아니면... 그냥 내가 보고 싶어서?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_free_talk_day1"
+    },
+    "nurse_free_talk_day1": {
+        type: "free_talk",
+        name: "양호선생님",
+        text: "\"긴장하지 마. 여기서는 편하게 있어도 된단다. 나한테 궁금한 거라도 있니?\"",
+        context: "양호실에서 처음 만난 양호 선생님과 대화를 나누는 상황. 선생님은 주인공에게 묘한 흥미를 느끼며 도발적인 태도를 보임.",
+        personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만, 사실 누구보다 주인공을 아끼고 보호하려 함.",
+        character: "assets/images/characters/nurse.png",
+        next: "after_school_start"
+    },
+    "after_nurse": {
+        name: "나",
+        text: "(노을이 지는 복도를 지나 양호실 문을 열었다. 방 안에는 은은한 약초 향기와 함께 선생님이 계셨다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "after_nurse_2"
+    },
+    "after_nurse_2": {
+        name: "양호선생님",
+        text: "\"어머, {name?}! 하교 안 하고 여긴 어쩐 일이야? 혹시... 나랑 단둘이 있고 싶어서 온 거니?\"",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "nurse_free_talk_after_day1"
+    },
+    "nurse_free_talk_after_day1": {
+        type: "free_talk",
+        name: "양호선생님",
+        text: "\"후훗, 얼굴이 빨개졌네? 귀여워라. 자, 여기 앉아서 나랑 조금만 더 이야기하다 갈래?\"",
+        context: "방과 후 노을 지는 양호실, 양호 선생님과 단둘이 남은 상황. 선생님은 주인공을 대놓고 유혹하며 즐거워함.",
+        personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만, 사실 누구보다 주인공을 아끼고 보호하려 함.",
+        character: "assets/images/characters/nurse.png",
+        next: "after_home"
+    },
     "after_school_start": {
         name: "나",
         text: "(어느덧 모든 수업이 끝나고 방과 후를 알리는 종소리가 울려 퍼진다.)",
@@ -799,6 +864,8 @@ SCENARIO[1] = {
             { text: "학교의 조용한 곳을 좀 더 둘러본다.", next: "after_yuna_new", excludeCondition: "metYuna" },
             { text: "체육관에서 연습 중인 다인이를 보러 간다.", next: "after_dain", condition: "metDain" },
             { text: "활기찬 소리가 들리는 체육관으로 향한다.", next: "after_dain_new", excludeCondition: "metDain" },
+            { text: "양호실에 들러 선생님께 인사하고 간다.", next: "after_nurse", condition: "metNurse" },
+            { text: "양호실 쪽을 한 번 가본다.", next: "after_nurse", excludeCondition: "metNurse", setFlag: "metNurse" },
             { text: "오늘은 피곤하니 바로 집으로 돌아간다.", next: "after_home" }
         ]
     },

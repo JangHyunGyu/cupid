@@ -433,7 +433,8 @@ SCENARIO[1] = {
         choices: [
             { text: "Approach Seoyeon and suggest having lunch together.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
             { text: "Look around the school alone and find a quiet place to eat.", next: "lunch_alone", setFlag: "metYuna" },
-            { text: "Follow the sound of the volleyball from the gym.", next: "lunch_dain", setFlag: "metDain" }
+            { text: "Follow the sound of the volleyball from the gym.", next: "lunch_dain", setFlag: "metDain" },
+            { text: "I feel a bit unwell, so I'll go to the nurse's office.", next: "lunch_nurse", setFlag: "metNurse" }
         ]
     },
     "lunch_seoyeon": {
@@ -774,6 +775,70 @@ SCENARIO[1] = {
         setFlag: "metDain",
         next: "after_school_start"
     },
+    "lunch_nurse": {
+        name: "Me",
+        text: "(Maybe because it's my first day, my head is throbbing a bit due to tension. I headed to the quiet nurse's office.)",
+        background: "assets/images/background/nurse_room.jpg",
+        next: "lunch_nurse_2"
+    },
+    "lunch_nurse_2": {
+        name: "???",
+        text: "\"Oh, a new face? Was there such a cute student in our school?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_intro"
+    },
+    "nurse_intro": {
+        name: "Nurse",
+        text: "\"I'm the nurse here. Everyone just calls me 'Teacher'... but I could tell you my name specially?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_name_share_pre"
+    },
+    "nurse_name_share_pre": {
+        name: "Me",
+        text: "\"My name is '{name}'.\"",
+        setFlag: "knowsName_양호선생님",
+        next: "nurse_name_share"
+    },
+    "nurse_name_share": {
+        name: "Nurse",
+        text: "\"{name}... Hehe, your eyes are as clear as your name. Why did you come here? Are you sick? Or... did you just want to see me?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_free_talk_day1"
+    },
+    "nurse_free_talk_day1": {
+        type: "free_talk",
+        name: "Nurse",
+        text: "\"Don't be nervous. You can be comfortable here. Do you have anything you're curious about?\"",
+        context: "A situation where you talk to the nurse you met for the first time in the nurse's office. The teacher shows a provocative attitude, feeling a strange interest in the protagonist.",
+        personality: "Mature and seductive 'older sister' style. Enjoys teasing the protagonist with provocative words, but actually cares for and tries to protect the protagonist more than anyone else.",
+        character: "assets/images/characters/nurse.png",
+        next: "after_school_start"
+    },
+    "after_nurse": {
+        name: "Me",
+        text: "(I passed through the hallway where the sunset was setting and opened the door to the nurse's office. The teacher was in the room with a faint herbal scent.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "after_nurse_2"
+    },
+    "after_nurse_2": {
+        name: "Nurse",
+        text: "\"Oh, {name?}! What brings you here instead of going home? Maybe... did you come because you wanted to be alone with me?\"",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "nurse_free_talk_after_day1"
+    },
+    "nurse_free_talk_after_day1": {
+        type: "free_talk",
+        name: "Nurse",
+        text: "\"Hehe, your face turned red? How cute. Now, do you want to sit here and talk to me a bit more before you go?\"",
+        context: "A situation where you are left alone with the nurse in the nurse's office where the sunset is setting after school. The teacher openly seduces the protagonist and enjoys it.",
+        personality: "Mature and seductive 'older sister' style. Enjoys teasing the protagonist with provocative words, but actually cares for and tries to protect the protagonist more than anyone else.",
+        character: "assets/images/characters/nurse.png",
+        next: "after_home"
+    },
     "after_school_start": {
         name: "Me",
         text: "(Before I knew it, all classes were over and the bell announcing after school echoed.)",
@@ -799,6 +864,8 @@ SCENARIO[1] = {
             { text: "Look around the quiet places of the school more.", next: "after_yuna_new", excludeCondition: "metYuna" },
             { text: "Go to see Dain practicing in the gym.", next: "after_dain", condition: "metDain" },
             { text: "Head to the gym where lively sounds are heard.", next: "after_dain_new", excludeCondition: "metDain" },
+            { text: "Stop by the nurse's office to say hello to the teacher.", next: "after_nurse", condition: "metNurse" },
+            { text: "Go toward the nurse's office.", next: "after_nurse", excludeCondition: "metNurse", setFlag: "metNurse" },
             { text: "I'm tired today, so I'll go straight home.", next: "after_home" }
         ]
     },

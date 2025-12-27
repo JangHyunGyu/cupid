@@ -37,11 +37,39 @@ SCENARIO[2] = {
         name: "Me",
         text: "(When I turn around, there is...)",
         branches: [
+            { next: "day2_meet_nurse", character: "Nurse" },
             { next: "day2_meet_dain", character: "Dain" },
             { next: "day2_meet_seoyeon", character: "Seoyeon" },
             { next: "day2_meet_teacher" }
         ],
         selectByHighestAffinity: true
+    },
+    "day2_meet_nurse": {
+        name: "Nurse",
+        text: "\"Oh, {name?}! Good morning. You look full of energy today too?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_nurse_talk"
+    },
+    "day2_nurse_talk": {
+        name: "Nurse",
+        text: "(The teacher approaches me and winks slightly.)",
+        character: "assets/images/characters/nurse.png",
+        branches: [
+            { next: "day2_nurse_talk_has_number", condition: "has_number_nurse" },
+            { next: "day2_nurse_talk_no_number" }
+        ]
+    },
+    "day2_nurse_talk_has_number": {
+        name: "Nurse",
+        text: "\"You didn't stay up all night thinking about me, did you? Hehe, just kidding. If you feel sick today, come to the nurse's office anytime.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_classroom"
+    },
+    "day2_nurse_talk_no_number": {
+        name: "Nurse",
+        text: "\"It's only your second day, but you seem to have adapted to school already. Don't overdo it today, and if it's hard, come to the nurse's office to rest.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_classroom"
     },
     "day2_meet_teacher": {
         name: "Teacher",
@@ -182,8 +210,161 @@ SCENARIO[2] = {
             { text: "Go to the backyard to see who this Yuna is.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
             { text: "Go to Seoyeon and suggest eating lunch together.", next: "day2_lunch_seoyeon" },
             { text: "Go to the gym to see Dain.", next: "day2_lunch_dain", condition: "metDain" },
-            { text: "Go toward the gym where lively sounds are coming from.", next: "day2_lunch_dain", excludeCondition: "metDain" }
+            { text: "Go to the gym where lively sounds are heard.", next: "day2_lunch_dain", excludeCondition: "metDain" },
+            { text: "I feel a bit unwell, so I'll go to the nurse's office.", next: "day2_lunch_nurse" }
         ]
+    },
+    "day2_lunch_nurse": {
+        name: "Me",
+        text: "(Maybe because of the tension, my head is throbbing. I moved my steps to the quiet nurse's office.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_2"
+    },
+    "day2_lunch_nurse_2": {
+        name: "Nurse",
+        text: "\"Oh, it's cute {name?}? Is it because you're sick, or is it because you're excited to see my face?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 5 } },
+        next: "nurse_free_talk"
+    },
+    "nurse_free_talk": {
+        type: "free_talk",
+        name: "Nurse",
+        text: "\"Hehe, don't be nervous. Can you tell me in detail what's uncomfortable and how?\"",
+        context: "A situation where you are left alone with a mature and seductive nurse in a quiet nurse's office",
+        personality: "Mature and seductive 'older sister' style. Enjoys teasing the protagonist with provocative words, but actually cares for and tries to protect the protagonist more than anyone else.",
+        extra_guideline: "As a mature adult, accept the user's romantic tension or light skinship attempts very flexibly and boldly. Don't keep your distance, respond actively, and allow maximum level reactions at the PG-13 level.",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_3"
+    },
+    "day2_lunch_nurse_3": {
+        name: "Nurse",
+        text: "(The teacher smiles and leads me to the bed. There's a cozy herbal scent.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "My head hurts a bit.", next: "day2_lunch_nurse_head", stats: { Nurse: { affinity: 5 } } },
+            { text: "I just want to rest for a bit.", next: "day2_lunch_nurse_rest", stats: { Nurse: { affinity: 5 } } },
+            { text: "Teacher, is it your hobby to seduce students like this?", next: "day2_lunch_nurse_trap", stats: { Nurse: { affinity: -30 } } }
+        ]
+    },
+    "day2_lunch_nurse_trap": {
+        name: "Nurse",
+        text: "(The teacher's smile disappears in an instant. The air in the nurse's office sinks heavily.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse_angry.png",
+        next: "day2_lunch_nurse_trap_2"
+    },
+    "day2_lunch_nurse_trap_2": {
+        name: "Nurse",
+        text: "\"Oh... {name?}, I guess I accepted too much. Such rude words to an adult don't sound like a joke. Can you leave for today? I feel very bad.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse_angry.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_lunch_nurse_head": {
+        name: "Nurse",
+        text: "\"It seems like a tension headache. Take this medicine and after a nap, you'll feel better.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_sleep"
+    },
+    "day2_lunch_nurse_rest": {
+        name: "Nurse",
+        text: "\"Hehe, there are days like that sometimes. Close the curtain here and rest comfortably. By the way... {name?} is quite strong. Just looking at you makes my body feel hot.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "Next", next: "day2_lunch_nurse_rest_yuna", condition: "metYuna" },
+            { text: "Next", next: "day2_lunch_nurse_sleep", excludeCondition: "metYuna" }
+        ]
+    },
+    "day2_lunch_nurse_rest_yuna": {
+        name: "Me",
+        text: "\"(Strong...? Yuna's words come to mind. Is there really something about this school?)\"",
+        background: "assets/images/background/nurse_room.jpg",
+        next: "day2_lunch_nurse_sleep"
+    },
+    "day2_lunch_nurse_sleep": {
+        name: "Me",
+        text: "(I fell into a deep sleep without knowing it in the coziness of the blanket the teacher covered me with. In the silence of the nurse's office, it feels like yesterday's fatigue is being washed away.)",
+        background: "assets/images/background/nurse_room.jpg",
+        next: "day2_lunch_nurse_wake"
+    },
+    "day2_lunch_nurse_wake": {
+        name: "Me",
+        text: "(How long did I sleep... When I open my eyes, the red sunset is seeping through the window. The nurse is sitting at the desk and smiling kindly at me.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "day2_lunch_nurse_wake_2"
+    },
+    "day2_lunch_nurse_wake_2": {
+        name: "Nurse",
+        text: "\"Oh, are you awake now? You slept really sweetly. It's almost time to go home. How is your body?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "nurse_wake_free_talk"
+    },
+    "nurse_wake_free_talk": {
+        type: "free_talk",
+        name: "Nurse",
+        text: "\"Hehe, you're not fully awake yet. Do you want to talk to me more before going home?\"",
+        context: "A situation where the protagonist who just woke up and the nurse are left alone in the nurse's office where the sunset is setting",
+        personality: "A languid, sexy, yet kind nurse. A bold personality who feels a strange charm to the protagonist and openly seduces him.",
+        extra_guideline: "As a mature adult, openly seduce the protagonist and create a risky atmosphere. Don't be flustered by the user's mature jokes or provocative remarks (sexual jokes, etc.) and respond leisurely, and show a bold and provocative reaction enough to make the protagonist even more flustered. Fully radiate mature charm and pull the romantic tension to the maximum.",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_contact_exchange"
+    },
+    "nurse_contact_exchange": {
+        name: "Nurse",
+        text: "(The teacher leans her body slightly and whispers.) \"{name?}, if you can't sleep at night, do you want to contact me? I'll give you my number.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "Yes, I want to know.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { 
+                text: "Not the number... can I go to your house, teacher?", 
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 70, next: "nurse_contact_home_success" }
+                ]
+            },
+            { text: "Oh, it's okay.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -10 } } }
+        ]
+    },
+    "nurse_contact_success": {
+        name: "Nurse",
+        text: "(She smiles seductively and saves my number.) \"Hehe, then I'll be waiting tonight? I might get sulky if you reply late.\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 15 } },
+        next: "day2_afternoon_class"
+    },
+    "nurse_contact_home_success": {
+        name: "Nurse",
+        text: "(The teacher's eyes widen, then she whispers in my ear with a seductive smile.) \"Oh... {name?}, you're much bolder than I thought? Okay, do you want to come to my house tonight? I'll give you the address. Instead... it's a secret from your parents?\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 30 } },
+        setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
+        next: "day2_afternoon_class"
+    },
+    "nurse_contact_home_fail": {
+        name: "Nurse",
+        text: "(The teacher bursts into laughter.) \"Oh my, {name?}! You're really cute. But I think it's a bit early for my house? Let's exchange numbers first.\"",
+        character: "assets/images/characters/nurse.png",
+        setFlags: ["has_number_nurse", "has_any_contact"],
+        next: "day2_afternoon_class"
+    },
+    "nurse_contact_fail": {
+        name: "Nurse",
+        text: "(The teacher pouts her lips as if a bit disappointed.) \"Tsk... are you playing hard to get? Okay. Tell me if you change your mind later.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_afternoon_class"
     },
     "day2_lunch_yuna": {
         name: "Me",
@@ -283,8 +464,24 @@ SCENARIO[2] = {
             { text: "Help Dain with volleyball practice.", next: "day2_after_dain", condition: "metDain" },
             { text: "Follow the lively sounds coming from the gym.", next: "day2_after_dain", excludeCondition: "metDain" },
             { text: "Uncover more of the school's secrets with Yuna.", next: "day2_after_yuna", condition: "metYuna" },
-            { text: "Go find Yuna at the library annex again.", next: "day2_after_yuna", excludeCondition: "metYuna" }
+            { text: "Visit Yuna at the library annex again.", next: "day2_after_yuna", excludeCondition: "metYuna" },
+            { text: "Go to the teacher in the nurse's office.", next: "day2_after_nurse" }
         ]
+    },
+    "day2_after_nurse": {
+        name: "Nurse",
+        text: "(When I open the door to the nurse's office, the teacher was waiting for me in the room full of sunset light.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "day2_nurse_night_talk"
+    },
+    "day2_nurse_night_talk": {
+        name: "Nurse",
+        text: "\"{name?}... You really came? Hehe, you came because you wanted to be with me more, right? Okay, I'll stay with you until late today specially.\"",
+        character: "assets/images/characters/nurse.png",
+        night: true,
+        next: "day2_end"
     },
     "day2_after_seoyeon": {
         name: "Seoyeon",

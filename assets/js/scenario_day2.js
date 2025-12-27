@@ -37,11 +37,39 @@ SCENARIO[2] = {
         name: "나",
         text: "(뒤를 돌아보자 그곳에는...)",
         branches: [
+            { next: "day2_meet_nurse", character: "Nurse" },
             { next: "day2_meet_dain", character: "Dain" },
             { next: "day2_meet_seoyeon", character: "Seoyeon" },
             { next: "day2_meet_teacher" }
         ],
         selectByHighestAffinity: true
+    },
+    "day2_meet_nurse": {
+        name: "양호선생님",
+        text: "\"어머, {name?}! 좋은 아침이야. 오늘도 기운이 넘쳐 보이네?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_nurse_talk"
+    },
+    "day2_nurse_talk": {
+        name: "양호선생님",
+        text: "(선생님이 나에게 다가와 살짝 윙크를 한다.)",
+        character: "assets/images/characters/nurse.png",
+        branches: [
+            { next: "day2_nurse_talk_has_number", condition: "has_number_nurse" },
+            { next: "day2_nurse_talk_no_number" }
+        ]
+    },
+    "day2_nurse_talk_has_number": {
+        name: "양호선생님",
+        text: "\"어젯밤에 내 생각 하느라 잠 못 잔 건 아니지? 후훗, 농담이야. 오늘도 아프면 언제든 양호실로 오렴.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_classroom"
+    },
+    "day2_nurse_talk_no_number": {
+        name: "양호선생님",
+        text: "\"전학 이틀째인데 벌써 학교에 익숙해진 모양이네. 오늘도 무리하지 말고, 힘들면 양호실로 쉬러 오렴.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_classroom"
     },
     "day2_meet_teacher": {
         name: "담임선생님",
@@ -182,8 +210,161 @@ SCENARIO[2] = {
             { text: "유나라는 애가 누구인지 확인하러 뒤뜰로 간다.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
             { text: "서연이에게 가서 같이 점심 먹자고 한다.", next: "day2_lunch_seoyeon" },
             { text: "다인이를 보러 체육관으로 간다.", next: "day2_lunch_dain", condition: "metDain" },
-            { text: "활기찬 소리가 들리는 체육관 쪽으로 가본다.", next: "day2_lunch_dain", excludeCondition: "metDain" }
+            { text: "활기찬 소리가 들리는 체육관 쪽으로 가본다.", next: "day2_lunch_dain", excludeCondition: "metDain" },
+            { text: "몸이 좀 안 좋은 것 같아 양호실로 간다.", next: "day2_lunch_nurse" }
         ]
+    },
+    "day2_lunch_nurse": {
+        name: "나",
+        text: "(긴장 탓인지 머리가 지끈거린다. 조용한 양호실로 발걸음을 옮겼다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_2"
+    },
+    "day2_lunch_nurse_2": {
+        name: "양호선생님",
+        text: "\"어머, 귀여운 {name?}이네? 어디가 아픈 걸까, 아니면 내 얼굴을 봐서 설레는 걸까?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 5 } },
+        next: "nurse_free_talk"
+    },
+    "nurse_free_talk": {
+        type: "free_talk",
+        name: "양호선생님",
+        text: "\"후훗, 긴장하지 마. 어디가 어떻게 불편한지 자세하게 말해줄래?\"",
+        context: "조용한 양호실, 성숙하고 매혹적인 양호 선생님과 단둘이 남은 상황",
+        personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만, 사실 누구보다 주인공을 아끼고 보호하려 함.",
+        extra_guideline: "성숙한 어른으로서 사용자의 로맨틱한 텐션이나 가벼운 스킨십 시도를 매우 유연하고 대담하게 받아주세요. 거리감을 두지 말고 적극적으로 호응하며 PG-13 수준의 최대 수위 반응을 허용합니다.",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_3"
+    },
+    "day2_lunch_nurse_3": {
+        name: "양호선생님",
+        text: "(선생님이 미소를 지으며 나를 침대로 안내한다. 포근한 약초 향기가 난다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "머리가 좀 아파요.", next: "day2_lunch_nurse_head", stats: { Nurse: { affinity: 5 } } },
+            { text: "그냥 좀 쉬고 싶어서요.", next: "day2_lunch_nurse_rest", stats: { Nurse: { affinity: 5 } } },
+            { text: "선생님, 이런 식으로 학생들 유혹하는 게 취미세요?", next: "day2_lunch_nurse_trap", stats: { Nurse: { affinity: -30 } } }
+        ]
+    },
+    "day2_lunch_nurse_trap": {
+        name: "양호선생님",
+        text: "(선생님의 미소가 순식간에 사라진다. 양호실 안의 공기가 무겁게 가라앉는다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse_angry.png",
+        next: "day2_lunch_nurse_trap_2"
+    },
+    "day2_lunch_nurse_trap_2": {
+        name: "양호선생님",
+        text: "\"어머... {name?}, 내가 너무 받아줬나 보네. 어른을 상대로 그런 무례한 말은 농담으로 안 들려. 오늘은 그만 나가줄래? 기분이 아주 별로네.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse_angry.png",
+        next: "day2_afternoon_class"
+    },
+    "day2_lunch_nurse_head": {
+        name: "양호선생님",
+        text: "\"긴장성 두통인 것 같네. 이 약 먹고 한숨 자고 나면 괜찮아질 거야.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_sleep"
+    },
+    "day2_lunch_nurse_rest": {
+        name: "양호선생님",
+        text: "\"후훗, 가끔은 그런 날도 있지. 여기 커튼 치고 편하게 쉬렴. 그나저나... {name?}은 참 기운이 세네. 보고만 있어도 내 몸이 다 뜨거워지는 것 같아.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "다음", next: "day2_lunch_nurse_rest_yuna", condition: "metYuna" },
+            { text: "다음", next: "day2_lunch_nurse_sleep", excludeCondition: "metYuna" }
+        ]
+    },
+    "day2_lunch_nurse_rest_yuna": {
+        name: "나",
+        text: "\"(기운이 세다고...? 유나가 했던 말들이 떠오른다. 이 학교, 정말 뭔가가 있는 걸까?)\"",
+        background: "assets/images/background/nurse_room.jpg",
+        next: "day2_lunch_nurse_sleep"
+    },
+    "day2_lunch_nurse_sleep": {
+        name: "나",
+        text: "(선생님이 덮어준 이불의 포근함에 나도 모르게 깊은 잠에 빠져들었다. 양호실의 고요함 속에서 어제의 피로가 씻겨 내려가는 기분이다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        next: "day2_lunch_nurse_wake"
+    },
+    "day2_lunch_nurse_wake": {
+        name: "나",
+        text: "(얼마나 잤을까... 눈을 뜨니 창밖으로 붉은 노을이 스며들고 있다. 양호선생님이 책상에 앉아 나를 보며 인자하게 미소 짓고 계신다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "day2_lunch_nurse_wake_2"
+    },
+    "day2_lunch_nurse_wake_2": {
+        name: "양호선생님",
+        text: "\"어머, 이제 일어났니? 정말 달게 자더구나. 이제 곧 하교 시간이야. 몸은 좀 어떠니?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "nurse_wake_free_talk"
+    },
+    "nurse_wake_free_talk": {
+        type: "free_talk",
+        name: "양호선생님",
+        text: "\"후훗, 아직 잠이 덜 깼네. 하교하기 전에 나랑 더 이야기할래?\"",
+        context: "노을이 지는 양호실, 잠에서 막 깨어난 주인공과 양호 선생님이 단둘이 남은 상황",
+        personality: "나른하고 섹시하면서도 자상한 양호 선생님. 주인공에게 묘한 매력을 느끼며 대놓고 유혹하는 대담한 성격.",
+        extra_guideline: "성숙한 어른으로서 주인공을 대놓고 유혹하며 아슬아슬한 분위기를 조성하세요. 사용자의 성숙한 농담이나 도발적인 발언(섹드립 등)도 당황하지 않고 여유롭게 받아치며, 오히려 주인공을 더 당황하게 만들 정도로 대담하고 도발적인 반응을 보이세요. 성숙한 매력을 한껏 발산하며 로맨틱한 긴장감을 최대치로 끌어올리세요.",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_contact_exchange"
+    },
+    "nurse_contact_exchange": {
+        name: "양호선생님",
+        text: "(선생님이 몸을 살짝 기울이며 속삭인다.) \"{name?}, 밤에 잠이 안 오면 나한테 연락할래? 번호 알려줄게.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "네, 알고 싶어요.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { 
+                text: "번호 말고... 선생님 집으로 가도 돼요?", 
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 70, next: "nurse_contact_home_success" }
+                ]
+            },
+            { text: "아, 괜찮습니다.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -10 } } }
+        ]
+    },
+    "nurse_contact_success": {
+        name: "양호선생님",
+        text: "(그녀가 요염하게 웃으며 내 번호를 저장한다.) \"후훗, 그럼 이따 밤에 기다릴게? 답장 늦게 하면 삐질지도 몰라.\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 15 } },
+        next: "day2_afternoon_class"
+    },
+    "nurse_contact_home_success": {
+        name: "양호선생님",
+        text: "(선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귓가에 속삭인다.) \"어머... {name?}, 생각보다 훨씬 대담하네? 좋아, 오늘 밤 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 30 } },
+        setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
+        next: "day2_afternoon_class"
+    },
+    "nurse_contact_home_fail": {
+        name: "양호선생님",
+        text: "(선생님이 꺄르르 웃음을 터뜨린다.) \"어머머, {name?}! 너 정말 귀엽다. 하지만 우리 집은 아직 좀 이른 것 같네? 일단 번호부터 교환하자.\"",
+        character: "assets/images/characters/nurse.png",
+        setFlags: ["has_number_nurse", "has_any_contact"],
+        next: "day2_afternoon_class"
+    },
+    "nurse_contact_fail": {
+        name: "양호선생님",
+        text: "(선생님이 조금 아쉬운 듯 입술을 삐죽인다.) \"치... 튕기는 거야? 알았어. 나중에 마음 바뀌면 말해줘.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_afternoon_class"
     },
     "day2_lunch_yuna": {
         name: "나",
@@ -283,8 +464,24 @@ SCENARIO[2] = {
             { text: "다인이의 배구 연습을 도와준다.", next: "day2_after_dain", condition: "metDain" },
             { text: "체육관에서 들리는 활기찬 소리를 따라가 본다.", next: "day2_after_dain", excludeCondition: "metDain" },
             { text: "유나와 함께 학교의 비밀을 더 파헤친다.", next: "day2_after_yuna", condition: "metYuna" },
-            { text: "도서관 별관의 유나를 다시 찾아가 본다.", next: "day2_after_yuna", excludeCondition: "metYuna" }
+            { text: "도서관 별관의 유나를 다시 찾아가 본다.", next: "day2_after_yuna", excludeCondition: "metYuna" },
+            { text: "양호실에 있는 선생님을 찾아간다.", next: "day2_after_nurse" }
         ]
+    },
+    "day2_after_nurse": {
+        name: "양호선생님",
+        text: "(양호실 문을 열자, 노을빛이 가득한 방 안에서 선생님이 나를 기다리고 있었다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "day2_nurse_night_talk"
+    },
+    "day2_nurse_night_talk": {
+        name: "양호선생님",
+        text: "\"{name?}... 정말 왔네? 후훗, 나랑 더 있고 싶어서 온 거지? 좋아, 오늘은 특별히 늦게까지 같이 있어줄게.\"",
+        character: "assets/images/characters/nurse.png",
+        night: true,
+        next: "day2_end"
     },
     "day2_after_seoyeon": {
         name: "서연",
