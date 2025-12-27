@@ -33,7 +33,7 @@ Object.assign(SCENARIO[1], {
             { text: "Head to the gym where lively sounds are coming from.", next: "after_dain_new", excludeCondition: "metDain" },
             { text: "Stop by the nurse's office to say goodbye to the teacher.", next: "after_nurse", condition: "metNurse" },
             { text: "Go check out the nurse's office.", next: "after_nurse", excludeCondition: "metNurse", setFlag: "metNurse" },
-            { text: "I'm tired today, so I'll go straight home.", next: "night_start" }
+            { text: "I'm tired today, so I'll go straight home.", next: "after_home" }
         ]
     },
     "after_seoyeon": {
@@ -68,7 +68,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"Ah... really? Then could you leave without disturbing me? I'm a bit busy right now.\"",
         character: "assets/images/characters/seyoun_angry.png",
-        next: "night_start"
+        next: "after_home"
     },
     "after_seoyeon_help": {
         name: "Seoyeon",
@@ -135,7 +135,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"It's a promise! You can't break it! Then see you tomorrow, {name?}. Get home safe!\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "night_start"
+        next: "after_home"
     },
     "after_seoyeon_tease": {
         name: "Seoyeon",
@@ -147,7 +147,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"Hmph... You're really mean! But you still have to come, okay? If you don't, I'll punish you with the authority of the student council president! Hehe, just kidding. See you tomorrow!\"",
         character: "assets/images/characters/seyoun_pout.png",
-        next: "night_start"
+        next: "after_home"
     },
     "after_seoyeon_worry": {
         name: "Seoyeon",
@@ -302,14 +302,14 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         stats: { Yuna: { affinity: 15 } },
-        next: "night_start"
+        next: "after_home"
     },
     "yuna_contact_fail": {
         name: "Yuna",
         text: "(Yuna looks at me with cold eyes and puts her smartphone away.) \"...Okay. I won't force you. But keep in mind that opportunities don't come often.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "night_start"
+        next: "after_home"
     },
     "after_yuna_scared": {
         name: "Yuna",
@@ -323,7 +323,7 @@ Object.assign(SCENARIO[1], {
         text: "\"Hehe, I thought so. It's too heavy a story for an ordinary student. Go back for today. Don't try to know any deeper.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "night_start"
+        next: "after_home"
     },
     "after_dain_new": {
         name: "Me",
@@ -380,7 +380,7 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "\"Oh... right. You must be tired since it's your first day. Sorry, I was too excited. Okay, let's just go home for today. See you tomorrow!\"",
         character: "assets/images/characters/dain_nomal.png",
-        next: "night_start"
+        next: "after_home"
     },
     "after_dain_cheer": {
         name: "Dain",
@@ -466,7 +466,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 15 } },
-        next: "night_start"
+        next: "after_home"
     },
     "dain_contact_call_fail": {
         name: "Dain",
@@ -474,7 +474,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
         stats: { Dain: { affinity: -5 } },
-        next: "night_start"
+        next: "after_home"
     },
     "dain_contact_success": {
         name: "Dain",
@@ -483,7 +483,7 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_laugh.png",
         night: true,
         stats: { Dain: { affinity: 15 } },
-        next: "night_start"
+        next: "after_home"
     },
     "dain_contact_fail": {
         name: "Dain",
@@ -491,7 +491,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
         night: true,
-        next: "night_start"
+        next: "after_home"
     },
     "after_nurse": {
         name: "Nurse",
@@ -514,7 +514,7 @@ Object.assign(SCENARIO[1], {
         context: "A situation where you are having a conversation with the nurse in the nurse's office at sunset before going home.",
         personality: "A mature and seductive 'older sister' style. She adores and takes care of the protagonist.",
         character: "assets/images/characters/nurse.png",
-        next: "night_start"
+        next: "after_home"
     }
 });
 

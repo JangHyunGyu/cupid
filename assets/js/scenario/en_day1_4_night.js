@@ -6,28 +6,46 @@ if (!SCENARIO[1]) {
 }
 
 Object.assign(SCENARIO[1], {
-    "night_start": {
+    "after_home": {
         name: "Me",
-        text: "(I arrived home. It was a long day.)",
+        text: "(I arrived home after passing through the streets where the sun had set and darkness had fallen.)",
         background: "assets/images/background/room_night.png",
-        next: "night_choices_pre"
+        character: null,
+        night: true,
+        next: "after_home_2"
     },
-    "night_choices_pre": {
+    "after_home_2": {
         name: "Me",
-        text: "(What should I do before going to bed?)",
+        text: "(Lying on the bed, I look back on today. So many things happened since my first day as a transfer student.)",
+        night: true,
+        next: "after_home_3"
+    },
+    "after_home_3": {
+        name: "Me",
+        text: "(What kind of things will be waiting for me tomorrow? I try to sleep with an excited heart.)",
+        night: true,
+        next: "night_home"
+    },
+    "night_home": {
+        name: "Me",
+        text: "(Before falling asleep, I check my smartphone.)",
+        background: "assets/images/background/room_night.png",
+        character: null,
+        night: true,
         branches: [
-            { next: "night_sleep", excludeCondition: "has_any_contact" },
-            { next: "night_choices" }
+            { next: "day1_end", excludeCondition: "has_any_contact" },
+            { next: "night_home_check_contact" }
         ]
     },
-    "night_choices": {
+    "night_home_check_contact": {
         name: "Me",
-        text: "(I should check my phone before sleeping.)",
+        text: "(Was there anyone I got contact info from today...?)",
+        night: true,
         choices: [
             { text: "Send a message to Seoyeon.", next: "night_message_seyoun", condition: "has_number_seyoun" },
             { text: "Send a message to Yuna.", next: "night_message_yuna", condition: "has_number_yuna" },
             { text: "Send a message to Dain.", next: "night_message_dain", condition: "has_number_dain" },
-            { text: "Just sleep.", next: "night_sleep" }
+            { text: "Just sleep.", next: "day1_end" }
         ]
     },
     "night_message_seyoun": {
@@ -39,7 +57,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(A reply came immediately!) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name?}!'",
         stats: { Seoyeon: { affinity: 5 } },
-        next: "night_sleep"
+        next: "day1_end"
     },
     "night_message_yuna": {
         name: "Me",
@@ -50,7 +68,7 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "(After a while, a reply came.) '...Yeah. You too. See you at school tomorrow.'",
         stats: { Yuna: { affinity: 5 } },
-        next: "night_sleep"
+        next: "day1_end"
     },
     "night_message_dain": {
         name: "Me",
@@ -61,11 +79,13 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "(She replied almost instantly.) 'Right? I told you I know all the best places! Rest well and see you tomorrow! Good night!'",
         stats: { Dain: { affinity: 5 } },
-        next: "night_sleep"
+        next: "day1_end"
     },
-    "night_sleep": {
+    "day1_end": {
         name: "Me",
-        text: "(I fell into a deep sleep, looking forward to tomorrow.)",
+        text: "(As I close my eyes, the faces of the girls I met today come to mind one by one. Will I be able to get closer to them tomorrow...?)",
+        background: "assets/images/background/black.png",
+        character: null,
         changeDay: 2,
         next: "day2_start"
     }

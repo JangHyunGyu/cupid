@@ -419,48 +419,39 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_3": {
         name: "다인",
-        text: "\"후훗, {name?}! 내 연습하는 모습 보니까 어때? 나 좀 멋있지 않아? 반하기라도 한 건 아니지?\"",
+        text: "\"헤이, {name?}! 진짜 왔네! 잠깐만 기다려, 이 마지막 세트만 끝내고 같이 맛있는 거 먹으러 가자!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         choices: [
-            { text: "응, 다인이 연습하는 거 보니까 나도 힘이 나는 것 같아.", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
-            { text: "응, 정말 멋있더라. 배구하는 모습에 눈을 뗄 수가 없었어.", next: "after_dain_cheer", stats: { Dain: { affinity: 15 } } },
-            { text: "다인아, 땀 흘리는 모습이 정말 섹시해. 우리 지금 단둘이 있는데...", next: "after_dain_trap", stats: { Dain: { affinity: -20 } } },
-            { text: "시끄러워서 와봤어. 연습 좀 조용히 하면 안 돼?", next: "after_dain_rude", stats: { Dain: { affinity: -30 } } }
+            { text: "좋아, 내가 응원할게! 파이팅!", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
+            { text: "나도 연습 도와줄게. 공 올려줘!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
+            { text: "오늘은 좀 피곤한데, 그냥 지금 가면 안 돼?", next: "after_dain_tired", stats: { Dain: { affinity: -10 } } }
         ]
     },
-    "after_dain_trap": {
+    "after_dain_tired": {
         name: "다인",
-        text: "(다인이의 얼굴이 순식간에 홍당무처럼 빨개지더니, 이내 화난 표정으로 바뀐다.)",
-        background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_shy.png",
-        sunset: true,
-        next: "after_dain_trap_2"
+        text: "(다인이가 살짝 아쉬운 표정을 짓더니, 이내 고개를 끄덕인다.)",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "after_dain_tired_2"
     },
-    "after_dain_trap_2": {
+    "after_dain_tired_2": {
         name: "다인",
-        text: "\"뭐, 뭐뭐뭐... 무슨 소릴 하는 거야, 이 변태야! 너 진짜 실망이다! 당장 나가! 안 나가면 배구공으로 스파이크 날려버릴 줄 알아!\"",
-        background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_angry.png",
-        sunset: true,
+        text: "\"아... 맞다. 전학 첫날이라 피곤하겠구나. 미안, 내가 너무 신났나 봐. 그래, 오늘은 이만 들어가자. 내일 봐!\"",
+        character: "assets/images/characters/dain_nomal.png",
         next: "after_home"
     },
-    "after_dain_rude": {
+    "after_dain_help": {
         name: "다인",
-        text: "(다인이의 표정이 순식간에 굳어진다. 그녀는 배구공을 꽉 쥐며 나를 노려본다.)",
-        background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_angry.png",
-        sunset: true,
-        next: "after_dain_rude_2"
+        text: "(그녀의 눈이 반짝이며 나에게 공을 건넨다.)",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "after_dain_help_2"
     },
-    "after_dain_rude_2": {
+    "after_dain_help_2": {
         name: "다인",
-        text: "\"뭐...? 시끄러워? 하, 어이가 없네. 연습 방해하지 말고 당장 나가! 너 같은 애한테 보여줄 모습 따윈 없으니까!\"",
-        background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_angry.png",
-        sunset: true,
-        next: "after_home"
+        text: "\"오! 도와주겠다고? 좋아! 그럼 네트 쪽으로 높게 띄워줘! 간다!\"",
+        character: "assets/images/characters/dain_active.png",
+        next: "after_dain_end"
     },
     "after_dain_cheer": {
         name: "다인",
@@ -492,7 +483,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
-        next: "after_dain_normal_2"
+        next: "after_dain_end"
     },
     "after_dain_end": {
         name: "나",
