@@ -778,7 +778,7 @@
         name: "다인",
         text: "\"자, 여기가 내 구역이야! {name?}, 준비됐어? 살살 봐주지 않을 거니까 각오하라구!\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_active.png",
+        character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
         next: "after_school_start"
     },
