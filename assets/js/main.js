@@ -173,6 +173,16 @@ async function renderScene(sceneId) {
         bgLayer.style.backgroundImage = `url(${scene.background})`;
     }
 
+    // 플래그 설정 (노드 진입 시 자동 설정)
+    if (scene.setFlag) {
+        gameState[scene.setFlag] = true;
+    }
+    if (scene.setFlags && Array.isArray(scene.setFlags)) {
+        scene.setFlags.forEach(flag => {
+            gameState[flag] = true;
+        });
+    }
+
     // 밤/노을 필터 적용
     bgLayer.classList.remove('night', 'sunset');
     if (scene.night) {

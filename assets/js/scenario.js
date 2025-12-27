@@ -42,6 +42,7 @@
     "intro_3": {
         name: "서연",
         text: "\"나는 학생회장 '서연'이라고 해. 담임선생님께 부탁받아서 널 마중 나왔어. 만나서 반가워!\"",
+        setFlag: "metSeoyeon",
         choices: [
             { text: "응, 반가워. 학교가 너무 커서 길을 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "너... 정말 예쁘다. (나도 모르게 본심이 튀어나와 버렸다!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
@@ -660,6 +661,7 @@
     "yuna_intro_2": {
         name: "???",
         text: "\"난 '유나'라고 해. 그냥... 조용히 지내는 걸 좋아하는 사람이야. 이 학교... 겉보기와는 많이 다르거든. 너한테서는... 왠지 낯익은 분위기가 느껴져.\"",
+        setFlag: "metYuna",
         next: "yuna_free_talk"
     },
     "yuna_free_talk": {
@@ -747,6 +749,7 @@
         text: "(체육관 문을 열자, 그곳에 그녀가 있었다. 그녀가 나를 발견하고는 환하게 웃으며 손을 흔든다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
+        setFlag: "metDain",
         next: "lunch_dain_3"
     },
     "lunch_dain_3": {

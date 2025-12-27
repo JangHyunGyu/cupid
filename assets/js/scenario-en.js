@@ -42,6 +42,7 @@ const SCENARIO = {
     "intro_3": {
         name: "Seoyeon",
         text: "\"I'm the student council president, Seoyeon. I came to meet you at the homeroom teacher's request. Nice to meet you!\"",
+        setFlag: "metSeoyeon",
         choices: [
             { text: "Yeah, nice to meet you. The school is so big that I was getting a bit lost.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "The student council president herself came to meet me? Am I getting some special treatment?", next: "path_tease_1", stats: { Seoyeon: { affinity: 5 } } },
@@ -555,6 +556,7 @@ const SCENARIO = {
     "yuna_intro_2": {
         name: "???",
         text: "\"I'm Yuna. I like staying quiet. This school... is different from how it looks. I feel a familiar atmosphere from you.\"",
+        setFlag: "metYuna",
         choices: [
             { text: "My name is '{name}'.", next: "yuna_name_share", setFlag: "knowsName_Yuna" },
             { text: "The school is different? What does that mean?", next: "yuna_secret" },
@@ -646,6 +648,7 @@ const SCENARIO = {
         text: "(As I open the gym door, she is there. She is spiking the ball on the court. She discovers me and waves with a bright smile.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
+        setFlag: "metDain",
         next: "lunch_dain_3"
     },
     "lunch_dain_3": {
