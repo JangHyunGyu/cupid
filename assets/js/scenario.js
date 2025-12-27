@@ -1,11 +1,12 @@
 ﻿const SCENARIO = {
-    "start": {
-        name: "나",
-        text: "(따스한 햇살이 내리쬐는 교문 앞. 전학 첫날의 긴장감이 느껴진다.)",
-        background: "assets/images/background/school.png",
-        character: null,
-        next: "start_2"
-    },
+    1: {
+        "start": {
+            name: "나",
+            text: "(따스한 햇살이 내리쬐는 교문 앞. 전학 첫날의 긴장감이 느껴진다.)",
+            background: "assets/images/background/school.png",
+            character: null,
+            next: "start_2"
+        },
     "start_2": {
         name: "나",
         text: "(낯선 교복과 풍경... 모든 것이 생경하다.)",
@@ -1453,8 +1454,11 @@
         name: "나",
         text: "(눈을 감자마자 깊은 잠에 빠져들었다. 꿈속에서 나는 끝없는 복도를 달리고 있었다.)",
         night: true,
+        changeDay: 2,
         next: "day2_start"
+    }
     },
+    2: {
     "day2_start": {
         name: "나",
         text: "(알람 소리에 눈을 떴다. 창밖으로 비치는 아침 햇살이 눈부시다.)",
@@ -2935,5 +2939,6 @@
         extra_guideline: "성숙한 어른으로서 주인공을 대놓고 유혹하며 아슬아슬한 분위기를 조성하세요. 사용자의 성숙한 농담이나 도발적인 발언(섹드립 등)도 당황하지 않고 여유롭게 받아치며, 오히려 주인공을 더 당황하게 만들 정도로 대담하고 도발적인 반응을 보이세요.",
         character: "assets/images/characters/nurse.png",
         next: "home_phone"
+    }
     }
 };

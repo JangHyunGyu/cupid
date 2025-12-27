@@ -103,6 +103,7 @@ let isTyping = false;
 let skipTyping = false;
 let gameState = {
     playerName: "주인공", // 기본 이름
+    currentDay: 1, // 현재 진행 중인 날짜
     stats: {
         Seoyeon: { affinity: 0 },
         Yuna: { affinity: 0 },
@@ -141,11 +142,45 @@ const fadeLayer = document.getElementById('fade-layer');
 const tbcText = document.getElementById('tbc-text');
 const nextIndicator = document.getElementById('next-indicator');
 
+// 시나리오 데이터 가져오기 헬퍼 함수
+function getScene(id) {
+    if (!id) return null;
+    
+    // 현재 날짜의 시나리오에서 먼저 검색
+    if (SCENARIO[gameState.currentDay] && SCENARIO[gameState.currentDay][id]) {
+        return SCENARIO[gameState.currentDay][id];
+    }
+    
+    // 공통 시나리오(0)에서 검색
+    if (SCENARIO[0] && SCENARIO[0][id]) {
+        return SCENARIO[0][id];
+    }
+    
+    // 하위 호환성을 위해 루트 레벨에서도 검색 (기존 구조 대응)
+    if (SCENARIO[id]) {
+        return SCENARIO[id];
+    }
+    
+    return null;
+}
+
 async function renderScene(sceneId) {
-    const scene = SCENARIO[sceneId];
-    if (!scene) return;
+    const scene = getScene(sceneId);
+    if (!scene) {
+        // 만약 sceneId가 .html로 끝나면 페이지 이동 (타이틀로 돌아가기 등)
+        if (sceneId && sceneId.endsWith('.html')) {
+            window.location.href = sceneId;
+        }
+        return;
+    }
 
     currentSceneId = sceneId;
+    
+    // 날짜 변경 처리
+    if (scene.changeDay) {
+        gameState.currentDay = scene.changeDay;
+        console.log(`Day changed to: ${gameState.currentDay}`);
+    }
     
     // 대화창 및 선택지 초기화
     dialogueBox.style.display = 'block';
@@ -952,7 +987,7 @@ async function sendChatMessage() {
             // 마지막으로 매칭된 표정을 적용
             while ((exprMatch = exprRegex.exec(reply)) !== null) {
                 const exprName = exprMatch[1].toLowerCase();
-                const scene = SCENARIO[currentSceneId];
+                const scene = getScene(currentSceneId);
                 const charExprs = CHARACTER_EXPRESSIONS[scene.name];
                 if (charExprs && charExprs[exprName]) {
                     const centerSlot = charSlots.center;
@@ -974,7 +1009,7 @@ async function sendChatMessage() {
             
             while ((statMatch = statsRegex.exec(reply)) !== null) {
                 const affinityChange = parseInt(statMatch[1]);
-                const scene = SCENARIO[currentSceneId];
+                const scene = getScene(currentSceneId);
                 const charNameMap = {
                     "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "양호선생님": "Nurse",
                     "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
@@ -994,7 +1029,7 @@ async function sendChatMessage() {
                 reply = "...";
             }
 
-            const scene = SCENARIO[currentSceneId];
+            const scene = getScene(currentSceneId);
             nameTagEl.textContent = scene.name;
             await typeText(reply, scene.name); // 타이핑이 끝날 때까지 기다립니다.
             freeTalkHistory.push({ role: "assistant", content: reply });
@@ -1004,7 +1039,7 @@ async function sendChatMessage() {
             gameState.chatMemories[scene.name] = chatOnly.slice(-10);
         } else {
             // AI 응답이 비어있을 경우
-            const scene = SCENARIO[currentSceneId];
+            const scene = getScene(currentSceneId);
             nameTagEl.textContent = scene.name;
             const fallbackMsg = document.documentElement.lang === 'en' ? "..." : "...";
             await typeText(fallbackMsg, scene.name);
@@ -1032,7 +1067,7 @@ async function sendChatMessage() {
             ["...", "음...", "흠...", "...?"];
         const fallbackMsg = fallbacks[Math.floor(Math.random() * fallbacks.length)];
         
-        const scene = SCENARIO[currentSceneId];
+        const scene = getScene(currentSceneId);
         nameTagEl.textContent = scene.name;
         await typeText(fallbackMsg, scene.name);
         freeTalkHistory.push({ role: "assistant", content: fallbackMsg });
@@ -1080,7 +1115,7 @@ nameConfirmBtn.onclick = () => {
     nameInputContainer.style.display = 'none';
     dialogueBox.style.pointerEvents = 'auto';
     
-    const scene = SCENARIO[currentSceneId];
+    const scene = getScene(currentSceneId);
     if (scene.next) {
         renderScene(scene.next);
     }
@@ -1144,7 +1179,7 @@ function executeChoice(choice) {
 }
 
 function checkChoices() {
-    const scene = SCENARIO[currentSceneId];
+    const scene = getScene(currentSceneId);
     if (scene.choices) {
         choiceContainer.innerHTML = "";
         
@@ -1175,7 +1210,7 @@ dialogueBox.onclick = async () => {
         return;
     }
     
-    const scene = SCENARIO[currentSceneId];
+    const scene = getScene(currentSceneId);
     if (isFreeTalking || scene.type === 'input') return;
     
     if (scene.choices) {

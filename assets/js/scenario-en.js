@@ -1,11 +1,12 @@
 const SCENARIO = {
-    "start": {
-        name: "Me",
-        text: "(In front of the school gate. I feel the excitement and tension of the first day.)",
-        background: "assets/images/background/school.png",
-        character: null,
-        next: "start_2"
-    },
+    1: {
+        "start": {
+            name: "Me",
+            text: "(In front of the school gate. I feel the excitement and tension of the first day.)",
+            background: "assets/images/background/school.png",
+            character: null,
+            next: "start_2"
+        },
     "start_2": {
         name: "Me",
         text: "(The unfamiliar school uniform and scenery... everything feels new.)",
@@ -1268,8 +1269,11 @@ const SCENARIO = {
         name: "Me",
         text: "(I fell into a deep sleep. In my dream, I was running down an endless hallway. I woke up at dawn sweating coldly.)",
         night: true,
+        changeDay: 2,
         next: "day2_start"
+    }
     },
+    2: {
     "day2_start": {
         name: "Me",
         text: "(I woke up to the alarm. The morning sunlight is dazzling. I put on the uniform that feels familiar now.)",
@@ -2536,5 +2540,6 @@ const SCENARIO = {
         choices: [
             { text: "Return to Title", next: "index-en.html" }
         ]
+    }
     }
 };
