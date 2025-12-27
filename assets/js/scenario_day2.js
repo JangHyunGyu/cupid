@@ -36,9 +36,9 @@ SCENARIO[2] = {
     "day2_meet_someone": {
         name: "나",
         text: "(뒤를 돌아보자 그곳에는...)",
-        choices: [
-            { text: "다음", next: "day2_meet_dain", condition: "metDain" },
-            { text: "다음", next: "day2_meet_seoyeon", excludeCondition: "metDain" }
+        branches: [
+            { next: "day2_meet_dain", condition: "metDain" },
+            { next: "day2_meet_seoyeon" }
         ]
     },
     "day2_meet_dain": {

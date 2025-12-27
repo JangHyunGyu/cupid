@@ -164,6 +164,23 @@ function getScene(id) {
     return null;
 }
 
+// 다음 장면 ID를 결정하는 헬퍼 함수 (분기 로직 처리)
+function resolveNextScene(scene) {
+    if (!scene) return null;
+
+    // branches가 있는 경우 조건에 맞는 첫 번째 분기 반환
+    if (scene.branches && Array.isArray(scene.branches)) {
+        for (const branch of scene.branches) {
+            if (branch.condition && !gameState[branch.condition]) continue;
+            if (branch.excludeCondition && gameState[branch.excludeCondition]) continue;
+            return branch.next;
+        }
+    }
+
+    // 기본 next 반환
+    return scene.next;
+}
+
 async function renderScene(sceneId) {
     const scene = getScene(sceneId);
     if (!scene) {
@@ -1116,8 +1133,9 @@ nameConfirmBtn.onclick = () => {
     dialogueBox.style.pointerEvents = 'auto';
     
     const scene = getScene(currentSceneId);
-    if (scene.next) {
-        renderScene(scene.next);
+    const nextId = resolveNextScene(scene);
+    if (nextId) {
+        renderScene(nextId);
     }
 };
 
@@ -1228,11 +1246,14 @@ dialogueBox.onclick = async () => {
 
         dialogueBox.style.display = 'none'; // 대화창 숨기기
         checkChoices(); // 선택지 표시
-    } else if (scene.next) {
-        await renderScene(scene.next);
     } else {
-        // 다음 장면이 없고 선택지도 없는 경우 (게임 종료)
-        location.href = 'index.html';
+        const nextId = resolveNextScene(scene);
+        if (nextId) {
+            await renderScene(nextId);
+        } else {
+            // 다음 장면이 없고 선택지도 없는 경우 (게임 종료)
+            location.href = 'index.html';
+        }
     }
 };
 

@@ -36,9 +36,9 @@ SCENARIO[2] = {
     "day2_meet_someone": {
         name: "Me",
         text: "(When I turn around, there is...)",
-        choices: [
-            { text: "Next", next: "day2_meet_dain", condition: "metDain" },
-            { text: "Next", next: "day2_meet_seoyeon", excludeCondition: "metDain" }
+        branches: [
+            { next: "day2_meet_dain", condition: "metDain" },
+            { next: "day2_meet_seoyeon" }
         ]
     },
     "day2_meet_dain": {
