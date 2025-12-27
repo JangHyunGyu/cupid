@@ -740,6 +740,15 @@ const SCENARIO = {
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
+        next: "dain_free_talk"
+    },
+    "dain_free_talk": {
+        type: "free_talk",
+        name: "Dain",
+        text: "\"Wow, {name?}! It's even better to see you up close! Anything you're curious about? Like sports, or school life!\"",
+        context: "After school at the sunset gym, talking with Dain who just finished practice.",
+        personality: "The volleyball club ace with a cool and easygoing personality. Loves sports, is friendly toward the protagonist, and is full of energy.",
+        character: "assets/images/characters/dain_nomal.png",
         next: "after_dain_3"
     },
     "after_dain_3": {
@@ -1645,6 +1654,15 @@ const SCENARIO = {
         name: "Dain",
         text: "\"Wow! Your spike is awesome! I appoint you as our ace!\"",
         background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_dain_free_talk"
+    },
+    "day2_dain_free_talk": {
+        type: "free_talk",
+        name: "Dain",
+        text: "\"Phew, sweating feels great! By the way, what else do you like besides volleyball?\"",
+        context: "At the gym during lunch, sitting and resting with Dain after an intense volleyball game.",
+        personality: "The energetic and honest volleyball club ace. Impressed by the protagonist's athletic ability and wants to get closer.",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_afternoon"
     },

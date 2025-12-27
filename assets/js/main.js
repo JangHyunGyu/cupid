@@ -512,8 +512,8 @@ function startFreeTalk(scene) {
     } : {
         "서연": `
      * -100 ~ -31: "전학생", "너" (매우 차갑고 무시하는 듯한 표현)
-     * -30 ~ 30: "전학생 군", "${gameState.playerName} 씨" (예의 바른 거리감)
-     * 31 ~ 70: "${gameState.playerName} 군", "${gameState.playerName} 씨" (부드러워진 말투)
+     * -30 ~ 30: "전학생 군", "${gameState.playerName} 군" (예의 바른 거리감)
+     * 31 ~ 70: "${gameState.playerName} 군" (부드러워진 말투)
      * 71 ~ 100: "${gameState.playerName}...", "저기..." (부끄러워하며 이름을 부르거나 말끝을 흐림)`,
         "유나": `
      * -100 ~ -31: "그림자", "너" (소름 돋을 정도로 차가움)
@@ -528,7 +528,7 @@ function startFreeTalk(scene) {
         "담임선생님": `
      * -100 ~ -31: "${gameState.playerName} 학생", "너" (엄격하고 실망한 기색)
      * -30 ~ 30: "${gameState.playerName} 학생", "전학생" (전문적인 교사 말투)
-     * 31 ~ 70: "${gameState.playerName} 군", "${gameState.playerName} 씨" (격의 없고 다정함)
+     * 31 ~ 70: "${gameState.playerName} 군" (격의 없고 다정함)
      * 71 ~ 100: "${gameState.playerName}...", "저기..." (선생님이라는 호칭을 버리고 이름을 부르며 당황함)`,
         "양호선생님": `
      * -100 ~ -31: "${gameState.playerName} 학생", "너" (장난기 없는 차갑고 엄격한 태도)
@@ -762,7 +762,7 @@ ${charStyleGuideline}
 ${charGeneralInstruction}
 3. 대화는 최대 ${currentMaxTurns}턴까지만 가능하며, 자연스럽게 대화를 마무리하는 느낌으로 답변하세요.
 4. 사용자 호칭 지침:
-   - ${knowsName ? `사용자의 이름은 '${gameState.playerName}'입니다. 반드시 '${gameState.playerName}' 또는 '${gameState.playerName} 군/씨' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '전학생 군'이라고 부르세요."}
+   - ${knowsName ? `사용자의 이름은 '${gameState.playerName}'입니다. 반드시 '${gameState.playerName}' 또는 '${gameState.playerName} 군' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '전학생 군'이라고 부르세요."}
 5. '${scene.name}' 캐릭터 전용 반응 수위 지침:
 ${charInteractionGuideline}
    - 참고: 저질스럽거나 노골적인 성적 요구는 단호하게 거절하세요. 하지만 호감도가 높고 분위기가 로맨틱할 경우, 캐릭터의 성격에 맞는 대담한 로맨틱 플러팅이나 수위 있는 농담은 재치 있게 받아주거나 부끄러워하며 반응할 수 있습니다.
