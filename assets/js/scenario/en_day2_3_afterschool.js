@@ -13,6 +13,13 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         next: "day2_after_school"
     },
+    "day2_afternoon_nurse_skip": {
+        name: "Me",
+        text: "(After resting well in the nurse's office, it's already after school. I skipped all the afternoon classes, but my body feels much lighter.)",
+        background: "assets/images/background/nurse_room.jpg",
+        sunset: true,
+        next: "day2_after_school"
+    },
     "day2_after_school": {
         name: "Me",
         text: "(I have a feeling that something more special will happen today than yesterday.)",

@@ -22,17 +22,16 @@ Object.assign(SCENARIO[1], {
     },
     "after_school_start_3": {
         name: "Me",
-        text: "(It's been a long day. What should I do now?)",
+        text: "(It's been a long day. I was thinking about going straight home, but then I remembered the people I met earlier.)",
         sunset: true,
         choices: [
-            { text: "Stop by the student council room where Seoyeon is.", next: "after_seoyeon", condition: "metSeoyeon" },
-            { text: "Go check out the student council room.", next: "after_seoyeon", excludeCondition: "metSeoyeon", setFlag: "metSeoyeon" },
+            { text: "Stop by the student council room where Seoyeon is.", next: "after_seoyeon" },
             { text: "Head to the library annex where Yuna was.", next: "after_yuna", condition: "metYuna" },
             { text: "Look around the quiet parts of the school more.", next: "after_yuna_new", excludeCondition: "metYuna" },
             { text: "Go see Dain practicing in the gym.", next: "after_dain", condition: "metDain" },
             { text: "Head to the gym where lively sounds are coming from.", next: "after_dain_new", excludeCondition: "metDain" },
             { text: "Stop by the nurse's office to say goodbye to the teacher.", next: "after_nurse", condition: "metNurse" },
-            { text: "Go check out the nurse's office.", next: "after_nurse", excludeCondition: "metNurse", setFlag: "metNurse" },
+            { text: "Go check out the nurse's office.", next: "after_nurse_new", excludeCondition: "metNurse" },
             { text: "I'm tired today, so I'll go straight home.", next: "after_home" }
         ]
     },
@@ -74,18 +73,18 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(She opens her eyes wide as if moved. Soon, she gives me a bright smile and offers me the seat next to her.)",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "after_seoyeon_help_2"
+        next: "after_seoyeon_help_dialogue"
     },
-    "after_seoyeon_help_2": {
-        name: "Seoyeon",
-        text: "(We feel a strange bond while organizing the documents in silence.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_help_2_2"
-    },
-    "after_seoyeon_help_2_2": {
+    "after_seoyeon_help_dialogue": {
         name: "Seoyeon",
         text: "\"Really? Thank you! If you help me, I think I can finish it quickly. Now, can you help me sort these documents?\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        next: "after_seoyeon_help_action"
+    },
+    "after_seoyeon_help_action": {
+        name: "Seoyeon",
+        text: "(We feel a strange bond while organizing the documents in silence. Before we know it, the window is colored with the sunset.)",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_help_3"
     },
     "after_seoyeon_help_3": {
@@ -238,6 +237,13 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "\"Okay, since tonight will be long. I'll tell you little by little... very little by little. Follow me.\"",
         character: "assets/images/characters/yuna_smile.png",
+        next: "after_yuna_move_rooftop"
+    },
+    "after_yuna_move_rooftop": {
+        name: "Me",
+        text: "(As I followed her up the old stairs, a rooftop where I could feel the cool night air appeared.)",
+        background: "assets/images/background/top_school.png",
+        night: true,
         next: "after_yuna_rooftop"
     },
     "after_yuna_rooftop": {
@@ -509,6 +515,21 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/nurse.png",
         sunset: true,
         next: "after_nurse_2"
+    },
+    "after_nurse_new": {
+        name: "Me",
+        text: "(For some reason, I felt languid and walked towards the nurse's office. When I opened the door, a teacher with a mature atmosphere greeted me along with the faint scent of herbs.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "after_nurse_new_2"
+    },
+    "after_nurse_new_2": {
+        name: "Nurse",
+        text: "\"Oh, a face I haven't seen before? Are you the student who transferred today? I'm the school nurse. Why did you come? Are you hurting somewhere?\"",
+        character: "assets/images/characters/nurse.png",
+        setFlag: "metNurse",
+        next: "nurse_free_talk_after_day1"
     },
     "after_nurse_2": {
         name: "Nurse",

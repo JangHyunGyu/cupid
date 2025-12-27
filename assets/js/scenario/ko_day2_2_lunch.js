@@ -175,13 +175,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_sleep": {
         name: "나",
-        text: "(선생님이 덮어준 이불의 포근함에 나도 모르게 깊은 잠에 빠져들었다. 양호실의 고요함 속에서 어제의 피로가 씻겨 내려가는 기분이다.)",
+        text: "(선생님이 덮어준 이불의 포근함에 나도 모르게 깊은 잠에 빠져들었다. 어제 전학 온 뒤로 계속 긴장했던 탓인지, 몸이 천근만근 무거웠다.)",
         background: "assets/images/background/nurse_room.jpg",
         next: "day2_lunch_nurse_wake"
     },
     "day2_lunch_nurse_wake": {
         name: "나",
-        text: "(얼마나 잤을까... 눈을 뜨니 창밖으로 붉은 노을이 스며들고 있다. 양호선생님이 책상에 앉아 나를 보며 인자하게 미소 짓고 계신다.)",
+        text: "(눈을 뜨니 창밖은 이미 붉은 노을로 물들어 있다. 점심시간에 잠들었는데 벌써 방과 후라니... 오후 수업을 통째로 빼먹을 정도로 깊게 잠든 모양이다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -229,7 +229,7 @@ Object.assign(SCENARIO[2], {
         text: "(그녀가 요염하게 웃으며 내 번호를 저장한다.) \"후훗, 그럼 이따 밤에 기다릴게? 답장 늦게 하면 삐질지도 몰라.\"",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 15 } },
-        next: "day2_afternoon_class"
+        next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_success": {
         name: "양호선생님",
@@ -237,19 +237,19 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 30 } },
         setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
-        next: "day2_afternoon_class"
+        next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_fail": {
         name: "양호선생님",
         text: "(선생님이 꺄르르 웃음을 터뜨린다.) \"어머머, {name?}! 너 정말 귀엽다. 하지만 우리 집은 아직 좀 이른 것 같네? 일단 번호부터 교환하자.\"",
         character: "assets/images/characters/nurse.png",
         setFlags: ["has_number_nurse", "has_any_contact"],
-        next: "day2_afternoon_class"
+        next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_fail": {
         name: "양호선생님",
         text: "(선생님이 조금 아쉬운 듯 입술을 삐죽인다.) \"치... 튕기는 거야? 알았어. 나중에 마음 바뀌면 말해줘.\"",
         character: "assets/images/characters/nurse.png",
-        next: "day2_afternoon_class"
+        next: "day2_afternoon_nurse_skip"
     }
 });

@@ -175,13 +175,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_sleep": {
         name: "Me",
-        text: "(I fell into a deep sleep without knowing it in the coziness of the blanket the teacher covered me with. In the silence of the nurse's office, it feels like yesterday's fatigue is being washed away.)",
+        text: "(I fell into a deep sleep without realizing it due to the coziness of the blanket the teacher covered me with. Perhaps because I had been tense since transferring yesterday, my body felt as heavy as a thousand pounds.)",
         background: "assets/images/background/nurse_room.jpg",
         next: "day2_lunch_nurse_wake"
     },
     "day2_lunch_nurse_wake": {
         name: "Me",
-        text: "(How long did I sleep... When I open my eyes, the red sunset is seeping through the window. The nurse is sitting at the desk and smiling kindly at me.)",
+        text: "(When I open my eyes, the window is already colored with a red sunset. I fell asleep during lunch, but it's already after school... I must have slept so deeply that I skipped all the afternoon classes.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -229,7 +229,7 @@ Object.assign(SCENARIO[2], {
         text: "(She smiles seductively and saves my number.) \"Hehe, then I'll be waiting tonight? I might get sulky if you reply late.\"",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 15 } },
-        next: "day2_afternoon_class"
+        next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_success": {
         name: "Nurse",
@@ -237,19 +237,19 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 30 } },
         setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
-        next: "day2_afternoon_class"
+        next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_fail": {
         name: "Nurse",
         text: "(The teacher bursts into laughter.) \"Oh my, {name?}! You're really cute. But I think it's a bit early for my house? Let's exchange numbers first.\"",
         character: "assets/images/characters/nurse.png",
         setFlags: ["has_number_nurse", "has_any_contact"],
-        next: "day2_afternoon_class"
+        next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_fail": {
         name: "Nurse",
         text: "(The teacher pouts her lips as if a bit disappointed.) \"Tsk... are you playing hard to get? Okay. Tell me if you change your mind later.\"",
         character: "assets/images/characters/nurse.png",
-        next: "day2_afternoon_class"
+        next: "day2_afternoon_nurse_skip"
     }
 });

@@ -13,6 +13,13 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         next: "day2_after_school"
     },
+    "day2_afternoon_nurse_skip": {
+        name: "나",
+        text: "(양호실에서 푹 쉬고 나니 벌써 방과 후 시간이다. 오후 수업은 통째로 빼먹었지만, 몸은 한결 가볍다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        sunset: true,
+        next: "day2_after_school"
+    },
     "day2_after_school": {
         name: "나",
         text: "(오늘은 어제보다 더 특별한 일이 생길 것 같은 예감이 든다.)",

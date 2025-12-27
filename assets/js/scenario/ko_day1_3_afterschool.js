@@ -22,17 +22,16 @@ Object.assign(SCENARIO[1], {
     },
     "after_school_start_3": {
         name: "나",
-        text: "(오늘 하루도 참 길었네. 이제 어떻게 할까?)",
+        text: "(오늘 하루도 참 길었네. 바로 집에 갈까 하다가, 아까 만났던 사람들이 떠올랐다.)",
         sunset: true,
         choices: [
-            { text: "서연이가 있는 학생회실에 들러본다.", next: "after_seoyeon", condition: "metSeoyeon" },
-            { text: "학생회실 쪽을 한 번 가본다.", next: "after_seoyeon", excludeCondition: "metSeoyeon", setFlag: "metSeoyeon" },
+            { text: "서연이가 있는 학생회실에 들러본다.", next: "after_seoyeon" },
             { text: "유나가 있던 도서관 별관으로 향한다.", next: "after_yuna", condition: "metYuna" },
             { text: "학교의 조용한 곳을 좀 더 둘러본다.", next: "after_yuna_new", excludeCondition: "metYuna" },
             { text: "체육관에서 연습 중인 다인이를 보러 간다.", next: "after_dain", condition: "metDain" },
             { text: "활기찬 소리가 들리는 체육관으로 향한다.", next: "after_dain_new", excludeCondition: "metDain" },
             { text: "양호실에 들러 선생님께 인사하고 간다.", next: "after_nurse", condition: "metNurse" },
-            { text: "양호실 쪽을 한 번 가본다.", next: "after_nurse", excludeCondition: "metNurse", setFlag: "metNurse" },
+            { text: "양호실 쪽을 한 번 가본다.", next: "after_nurse_new", excludeCondition: "metNurse" },
             { text: "오늘은 피곤하니 바로 집으로 돌아간다.", next: "after_home" }
         ]
     },
@@ -74,18 +73,18 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 감동한 듯 눈을 크게 뜬다. 이내 환한 미소를 지으며 내 옆자리를 내어준다.)",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "after_seoyeon_help_2"
+        next: "after_seoyeon_help_dialogue"
     },
-    "after_seoyeon_help_2": {
-        name: "서연",
-        text: "(우리는 말없이 서류를 정리하며 묘한 유대감을 느낀다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "after_seoyeon_help_2_2"
-    },
-    "after_seoyeon_help_2_2": {
+    "after_seoyeon_help_dialogue": {
         name: "서연",
         text: "\"정말? 고마워! 네가 도와준다면 금방 끝낼 수 있을 것 같아. 자, 이 서류들 분류하는 것 좀 도와줄래?\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        next: "after_seoyeon_help_action"
+    },
+    "after_seoyeon_help_action": {
+        name: "서연",
+        text: "(우리는 말없이 서류를 정리하며 묘한 유대감을 느낀다. 어느덧 창밖은 노을빛으로 물들어간다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_help_3"
     },
     "after_seoyeon_help_3": {
@@ -238,6 +237,13 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "\"좋아, 오늘 밤은 길 테니까. 조금씩... 아주 조금씩 알려줄게. 따라와.\"",
         character: "assets/images/characters/yuna_smile.png",
+        next: "after_yuna_move_rooftop"
+    },
+    "after_yuna_move_rooftop": {
+        name: "나",
+        text: "(그녀를 따라 낡은 계단을 올라가자, 시원한 밤공기가 느껴지는 옥상이 나타났다.)",
+        background: "assets/images/background/top_school.png",
+        night: true,
         next: "after_yuna_rooftop"
     },
     "after_yuna_rooftop": {
@@ -585,6 +591,21 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/nurse.png",
         sunset: true,
         next: "after_nurse_2"
+    },
+    "after_nurse_new": {
+        name: "나",
+        text: "(왠지 모르게 몸이 나른해져 양호실 쪽으로 발걸음을 옮겼다. 문을 열자 은은한 약초 향기와 함께 성숙한 분위기의 선생님이 나를 맞이한다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "after_nurse_new_2"
+    },
+    "after_nurse_new_2": {
+        name: "양호선생님",
+        text: "\"어머, 처음 보는 얼굴이네? 오늘 전학 온 그 학생이니? 나는 양호 선생님이야. 어디가 아파서 온 걸까?\"",
+        character: "assets/images/characters/nurse.png",
+        setFlag: "metNurse",
+        next: "nurse_free_talk_after_day1"
     },
     "after_nurse_2": {
         name: "양호선생님",
