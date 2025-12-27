@@ -2343,7 +2343,7 @@
     },
     "day2_final_seoyeon": {
         name: "서연",
-        text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 옆의 소녀를 의식하는지 눈빛이 날카롭다.)",
+        text: "(서연이에게 다가가자 그녀가 안심한 듯 미소 짓는다. 하지만 옆에 있는 소녀를 의식하는 듯하다.)",
         characters: {
             left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2567,7 +2567,7 @@
     },
     "day2_final_dain": {
         name: "나",
-        text: "(서연이와 옆의 소녀를 뒤로하고, 체육관에서 손을 흔드는 다인에게 향했다.)",
+        text: "(두 소녀의 시선을 뒤로하고 체육관으로 발걸음을 옮겼다.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"

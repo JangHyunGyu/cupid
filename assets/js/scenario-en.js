@@ -1896,7 +1896,7 @@ const SCENARIO = {
     },
     "day2_final_seoyeon": {
         name: "Seoyeon",
-        text: "(Seoyeon smiles as I approach. She seems conscious of the girl next to her.)",
+        text: "(Seoyeon smiles as I approach. However, she seems to be conscious of the girl standing nearby.)",
         characters: {
             left: "assets/images/characters/seyoun_laugh.png",
             right: "assets/images/characters/yuna_nomal.png"
@@ -2120,7 +2120,7 @@ const SCENARIO = {
     },
     "day2_final_dain": {
         name: "Me",
-        text: "(I walk towards Dain, leaving Seoyeon and the other girl behind.)",
+        text: "(Leaving the two girls behind, I made my way toward the gym.)",
         characters: {
             left: "assets/images/characters/seyoun_pout.png",
             right: "assets/images/characters/yuna_nomal.png"
