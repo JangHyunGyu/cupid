@@ -63,12 +63,27 @@ SCENARIO[2] = {
     },
     "day2_seoyeon_talk": {
         name: "서연",
+        text: "(서연이가 내 눈을 맞추며 살짝 미소 짓는다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        branches: [
+            { next: "day2_seoyeon_talk_has_number", condition: "has_number_seyoun" },
+            { next: "day2_seoyeon_talk_no_number" }
+        ]
+    },
+    "day2_seoyeon_talk_has_number": {
+        name: "서연",
         text: "\"어제는 잘 들어갔어? 연락처 교환하고 나서 메시지 보낼까 말까 고민하다가... 너무 늦은 것 같아서 참았어.\"",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
             { text: "나도 서연이 메시지 기다렸는데! 지금이라도 보내줘.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 10 } } },
             { text: "아, 그랬구나. 나도 피곤해서 바로 잠들었어.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 2 } } }
         ]
+    },
+    "day2_seoyeon_talk_no_number": {
+        name: "서연",
+        text: "\"어제는 잘 들어갔어? 전학 첫날이라 걱정 많이 했는데, 오늘 보니까 안심이 되네. 오늘도 힘내자!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_classroom"
     },
     "day2_seoyeon_happy": {
         name: "서연",
@@ -84,12 +99,27 @@ SCENARIO[2] = {
     },
     "day2_dain_talk": {
         name: "다인",
+        text: "(다인이가 활기차게 내 어깨를 툭 친다.)",
+        character: "assets/images/characters/dain_laugh.png",
+        branches: [
+            { next: "day2_dain_talk_dated", condition: "datedDainDay1" },
+            { next: "day2_dain_talk_not_dated" }
+        ]
+    },
+    "day2_dain_talk_dated": {
+        name: "다인",
         text: "\"어제 먹은 떡볶이 덕분에 오늘 컨디션 최고야! 너도 그렇지?\"",
         character: "assets/images/characters/dain_laugh.png",
         choices: [
             { text: "응! 나도 다인이 덕분에 푹 잤어.", next: "day2_dain_happy", stats: { Dain: { affinity: 10 } } },
             { text: "난 좀 피곤한데... 다인이는 체력이 정말 좋구나.", next: "day2_dain_normal", stats: { Dain: { affinity: 2 } } }
         ]
+    },
+    "day2_dain_talk_not_dated": {
+        name: "다인",
+        text: "\"어제는 잘 들어갔어? 전학 첫날인데 학교 구경은 좀 했나 모르겠네! 오늘도 활기차게 보내자구!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_classroom"
     },
     "day2_dain_happy": {
         name: "다인",
@@ -170,11 +200,29 @@ SCENARIO[2] = {
     },
     "day2_yuna_talk_2": {
         name: "유나",
+        text: "(유나가 무표정한 얼굴로 나를 빤히 바라본다.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        branches: [
+            { next: "day2_yuna_talk_2_met", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_new" }
+        ]
+    },
+    "day2_yuna_talk_2_met": {
+        name: "유나",
         text: "\"어제 내가 했던 말... 기억해? 이 학교의 비밀 말이야. 사실 너한테만 보여주고 싶은 게 있어.\"",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
             { text: "비밀 같은 건 관심 없어. 그냥 너랑 대화하고 싶어서 온 거야.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
+        ]
+    },
+    "day2_yuna_talk_2_new": {
+        name: "유나",
+        text: "\"너... 내가 누군지 궁금해서 온 거지? 사실 이 학교에는 아주 깊은 비밀이 있어. 너한테만 보여주고 싶은 게 있는데.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        choices: [
+            { text: "비밀? 그게 뭔데?", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
+            { text: "그냥 쪽지 보고 궁금해서 와봤어.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
         ]
     },
     "day2_yuna_secret": {

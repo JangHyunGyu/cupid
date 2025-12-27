@@ -63,12 +63,27 @@ SCENARIO[2] = {
     },
     "day2_seoyeon_talk": {
         name: "Seoyeon",
+        text: "(Seoyeon makes eye contact with me and smiles slightly.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        branches: [
+            { next: "day2_seoyeon_talk_has_number", condition: "has_number_seyoun" },
+            { next: "day2_seoyeon_talk_no_number" }
+        ]
+    },
+    "day2_seoyeon_talk_has_number": {
+        name: "Seoyeon",
         text: "\"Did you get home well yesterday? After we exchanged contact information, I was debating whether to send a message or not... I thought it was too late, so I held back.\"",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
             { text: "I was waiting for Seoyeon's message too! Send it now.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 10 } } },
             { text: "Oh, I see. I was tired, so I fell asleep right away.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 2 } } }
         ]
+    },
+    "day2_seoyeon_talk_no_number": {
+        name: "Seoyeon",
+        text: "\"Did you get home well yesterday? I was worried since it was your first day, but I'm relieved to see you today. Let's do our best today too!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_classroom"
     },
     "day2_seoyeon_happy": {
         name: "Seoyeon",
@@ -84,12 +99,27 @@ SCENARIO[2] = {
     },
     "day2_dain_talk": {
         name: "Dain",
+        text: "(Dain taps my shoulder energetically.)",
+        character: "assets/images/characters/dain_laugh.png",
+        branches: [
+            { next: "day2_dain_talk_dated", condition: "datedDainDay1" },
+            { next: "day2_dain_talk_not_dated" }
+        ]
+    },
+    "day2_dain_talk_dated": {
+        name: "Dain",
         text: "\"Thanks to the tteokbokki we ate yesterday, I'm in top condition today! You too, right?\"",
         character: "assets/images/characters/dain_laugh.png",
         choices: [
             { text: "Yeah! I slept well thanks to Dain.", next: "day2_dain_happy", stats: { Dain: { affinity: 10 } } },
             { text: "I'm a bit tired... Dain, you really have great stamina.", next: "day2_dain_normal", stats: { Dain: { affinity: 2 } } }
         ]
+    },
+    "day2_dain_talk_not_dated": {
+        name: "Dain",
+        text: "\"Did you get home well yesterday? I don't know if you got to look around the school since it was your first day! Let's have an energetic day today too!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_classroom"
     },
     "day2_dain_happy": {
         name: "Dain",
@@ -170,11 +200,29 @@ SCENARIO[2] = {
     },
     "day2_yuna_talk_2": {
         name: "Yuna",
+        text: "(Yuna stares at me with an expressionless face.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        branches: [
+            { next: "day2_yuna_talk_2_met", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_new" }
+        ]
+    },
+    "day2_yuna_talk_2_met": {
+        name: "Yuna",
         text: "\"Do you remember... what I said yesterday? About the school's secret. Actually, there's something I want to show only to you.\"",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "What is it? I'm curious too.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
             { text: "I'm not interested in secrets. I just came because I wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
+        ]
+    },
+    "day2_yuna_talk_2_new": {
+        name: "Yuna",
+        text: "\"You... you came because you were curious about who I am, right? Actually, there's a very deep secret in this school. There's something I want to show only to you.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        choices: [
+            { text: "Secret? What is it?", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
+            { text: "I just came because I was curious after seeing the note.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
         ]
     },
     "day2_yuna_secret": {
