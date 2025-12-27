@@ -145,7 +145,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_tease_2": {
         name: "서연",
-        text: "\"치... 정말 못됐다니까! 그래도 꼭 와야 해? 안 오면 학생회장의 권한으로 벌을 줄 테니까! 후훗, 농담이야. 내일 봐!\"",
+        text: "\"치... 정말 못됐다니까! 그래도 꼭 와야 해? 안 오면 학생회장으로서 아주 무서운(?) 잔소리를 들려줄 테니까! 후훗, 농담이야. 내일 봐!\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "after_home"
     },
@@ -242,7 +242,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_move_rooftop": {
         name: "나",
-        text: "(그녀를 따라 낡은 계단을 올라가자, 시원한 밤공기가 느껴지는 옥상이 나타났다.)",
+        text: "(그녀와 이런저런 이야기를 나누며 낡은 계단을 올라갔다. 어느덧 해가 지고 시원한 밤공기가 느껴지는 옥상이 나타났다.)",
         background: "assets/images/background/top_school.png",
         night: true,
         next: "after_yuna_rooftop"

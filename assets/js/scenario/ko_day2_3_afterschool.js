@@ -141,7 +141,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_eye": {
         name: "유나",
-        text: "\"정답이야. 이 학교는 거대한 감옥이자 실험실일지도 몰라. 그리고 우린 그 안의 실험체고.\"",
+        text: "\"정답이야. 이 학교는 거대한 감시망 속에 놓여 있을지도 몰라. 그리고 우린 그 안에서 무언가를 시험받고 있는 거고.\"",
         character: "assets/images/characters/yuna_sadsmile.png",
         next: "day2_yuna_night_talk"
     },
