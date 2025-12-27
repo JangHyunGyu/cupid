@@ -37,9 +37,10 @@ SCENARIO[2] = {
         name: "Me",
         text: "(When I turn around, there is...)",
         branches: [
-            { next: "day2_meet_dain", condition: "metDain" },
-            { next: "day2_meet_seoyeon" }
-        ]
+            { next: "day2_meet_dain", character: "Dain" },
+            { next: "day2_meet_seoyeon", character: "Seoyeon" }
+        ],
+        selectByHighestAffinity: true
     },
     "day2_meet_dain": {
         name: "Dain",

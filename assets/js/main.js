@@ -168,8 +168,31 @@ function getScene(id) {
 function resolveNextScene(scene) {
     if (!scene) return null;
 
-    // branches가 있는 경우 조건에 맞는 첫 번째 분기 반환
+    // branches가 있는 경우
     if (scene.branches && Array.isArray(scene.branches)) {
+        // 호감도 비교 분기 처리 (selectByHighestAffinity: true 인 경우)
+        if (scene.selectByHighestAffinity) {
+            let winnerNext = null;
+            let maxAffinity = -999;
+            let metAnyone = false;
+
+            for (const branch of scene.branches) {
+                // 만난 적이 있는 캐릭터인지 먼저 확인 (metSeoyeon, metDain 등)
+                const metFlag = "met" + branch.character;
+                if (gameState[metFlag] && branch.character && gameState.stats[branch.character]) {
+                    metAnyone = true;
+                    const currentAff = gameState.stats[branch.character].affinity;
+                    if (currentAff > maxAffinity) {
+                        maxAffinity = currentAff;
+                        winnerNext = branch.next;
+                    }
+                }
+            }
+            // 만난 적이 있는 캐릭터가 있다면 그중 최고 호감도 반환
+            if (metAnyone) return winnerNext;
+        }
+
+        // 일반적인 조건부 분기 처리 (또는 만난 사람이 아무도 없는 경우)
         for (const branch of scene.branches) {
             if (branch.condition && !gameState[branch.condition]) continue;
             if (branch.excludeCondition && gameState[branch.excludeCondition]) continue;

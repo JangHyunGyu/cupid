@@ -37,9 +37,10 @@ SCENARIO[2] = {
         name: "나",
         text: "(뒤를 돌아보자 그곳에는...)",
         branches: [
-            { next: "day2_meet_dain", condition: "metDain" },
-            { next: "day2_meet_seoyeon" }
-        ]
+            { next: "day2_meet_dain", character: "Dain" },
+            { next: "day2_meet_seoyeon", character: "Seoyeon" }
+        ],
+        selectByHighestAffinity: true
     },
     "day2_meet_dain": {
         name: "다인",
