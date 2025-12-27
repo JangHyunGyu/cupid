@@ -260,6 +260,23 @@ async function renderScene(sceneId) {
         });
     }
 
+    // 스탯 업데이트 (노드 진입 시 자동 설정)
+    if (scene.stats) {
+        for (const [char, stats] of Object.entries(scene.stats)) {
+            const charNameMap = {
+                "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "양호선생님": "Nurse",
+                "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
+            };
+            const charKey = charNameMap[char] || char;
+            if (gameState.stats[charKey]) {
+                if (stats.affinity) {
+                    gameState.stats[charKey].affinity = Math.max(-100, Math.min(100, gameState.stats[charKey].affinity + stats.affinity));
+                    console.log(`Scene Stat Change (${charKey}): Affinity ${stats.affinity} (Total: Aff ${gameState.stats[charKey].affinity})`);
+                }
+            }
+        }
+    }
+
     // 밤/노을 필터 적용
     bgLayer.classList.remove('night', 'sunset');
     if (scene.night) {

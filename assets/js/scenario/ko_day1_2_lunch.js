@@ -17,16 +17,17 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(점심시간... 창밖 운동장에는 아이들이 뛰어놀고 있다. 나는 어떡할까?)",
         choices: [
-            { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
-            { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone", setFlag: "metYuna" },
-            { text: "체육관 쪽에서 들려오는 배구공 소리를 따라가 본다.", next: "lunch_dain", setFlag: "metDain" },
-            { text: "몸이 좀 안 좋은 것 같아 양호실로 간다.", next: "lunch_nurse", setFlag: "metNurse" }
+            { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon" },
+            { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone" },
+            { text: "체육관 쪽에서 들려오는 배구공 소리를 따라가 본다.", next: "lunch_dain" },
+            { text: "몸이 좀 안 좋은 것 같아 양호실로 간다.", next: "lunch_nurse" }
         ]
     },
     "lunch_seoyeon": {
         name: "서연",
         text: "(서연이에게 다가가자, 그녀가 환하게 웃으며 나를 반긴다.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        setFlag: "metSeoyeon",
         next: "lunch_seoyeon_2"
     },
     "lunch_seoyeon_2": {
@@ -437,6 +438,7 @@ Object.assign(SCENARIO[1], {
         name: "양호선생님",
         text: "\"나는 이곳의 양호 교사란다. 다들 그냥 '선생님'이라고 부르지만... 너한테는 특별히 내 이름을 알려줄 수도 있는데?\"",
         character: "assets/images/characters/nurse.png",
+        setFlag: "metNurse",
         next: "nurse_name_share_pre"
     },
     "nurse_name_share_pre": {

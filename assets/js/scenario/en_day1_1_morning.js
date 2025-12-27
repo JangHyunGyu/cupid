@@ -53,6 +53,8 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "Yeah, nice to meet you. The school is so big I was getting lost.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "You... are really pretty. (My true feelings just slipped out...!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
+            { text: "Is it okay for a president to be this pretty? I'd like some special treatment!", next: "path_tease_1", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "(Staring blankly because she's so pretty.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Oh, really? Can you move? I'm busy.", next: "path_rude_1", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },

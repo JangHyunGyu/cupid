@@ -17,16 +17,17 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(Lunch time... Kids are playing on the field outside. What should I do?)",
         choices: [
-            { text: "Approach Seoyeon and suggest eating lunch together.", next: "lunch_seoyeon", setFlag: "metSeoyeon" },
-            { text: "Look around the school alone and find a quiet place to eat.", next: "lunch_alone", setFlag: "metYuna" },
-            { text: "Follow the sound of the volleyball from the gym.", next: "lunch_dain", setFlag: "metDain" },
-            { text: "I don't feel well, so I'll go to the nurse's office.", next: "lunch_nurse", setFlag: "metNurse" }
+            { text: "Approach Seoyeon and suggest eating lunch together.", next: "lunch_seoyeon" },
+            { text: "Look around the school alone and find a quiet place to eat.", next: "lunch_alone" },
+            { text: "Follow the sound of a volleyball from the gym.", next: "lunch_dain" },
+            { text: "I don't feel well, so I go to the nurse's office.", next: "lunch_nurse" }
         ]
     },
     "lunch_seoyeon": {
         name: "Seoyeon",
         text: "(As I approach Seoyeon, she welcomes me with a bright smile.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        setFlag: "metSeoyeon",
         next: "lunch_seoyeon_2"
     },
     "lunch_seoyeon_2": {
@@ -436,8 +437,7 @@ Object.assign(SCENARIO[1], {
     "nurse_intro": {
         name: "Nurse",
         text: "\"I'm the nurse here. Everyone just calls me 'Teacher'... but I could tell you my name specially?\"",
-        character: "assets/images/characters/nurse.png",
-        next: "nurse_name_share_pre"
+        character: "assets/images/characters/nurse.png",        setFlag: "metNurse",        next: "nurse_name_share_pre"
     },
     "nurse_name_share_pre": {
         name: "Me",

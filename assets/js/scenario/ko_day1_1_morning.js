@@ -53,6 +53,8 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "응, 잘 부탁해. 학교가 커서 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "너... 정말 예쁘다. (나도 모르게 본심이...!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "학생회장이 이렇게 예뻐도 되는 거야? 특별 대우 부탁해!", next: "path_tease_1", stats: { Seoyeon: { affinity: 7 } } },
+            { text: "(너무 예뻐서 멍하니 바라만 본다.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 3 } } },
             { text: "아, 그래? 근데 좀 비켜줄래? 바쁘거든.", next: "path_rude_1", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
