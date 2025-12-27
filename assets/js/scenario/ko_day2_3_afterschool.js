@@ -8,21 +8,21 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_afternoon_class": {
         name: "나",
-        text: "(오후 수업도 무사히 끝났다. 이제 방과 후 시간이다.)",
+        text: "(지루한 오후 수업이 끝나고, 교실에 노을빛이 스며든다. 드디어 방과 후다.)",
         background: "assets/images/background/room_school.png",
         sunset: true,
         next: "day2_after_school"
     },
     "day2_afternoon_nurse_skip": {
         name: "나",
-        text: "(양호실에서 푹 쉬고 나니 벌써 방과 후 시간이다. 오후 수업은 통째로 빼먹었지만, 몸은 한결 가볍다.)",
+        text: "(양호실에서 푹 자고 일어났더니 벌써 방과 후다. 수업을 통째로 빼먹었지만, 몸은 한결 가볍다.)",
         background: "assets/images/background/nurse_room.jpg",
         sunset: true,
         next: "day2_after_school"
     },
     "day2_after_school": {
         name: "나",
-        text: "(오늘은 어제보다 더 특별한 일이 생길 것 같은 예감이 든다.)",
+        text: "(오늘은 어제보다 더 특별한 일이 생길 것 같은 예감이 든다. 어디로 가볼까?)",
         sunset: true,
         choices: [
             { text: "서연이와 함께 학생회 일을 돕는다.", next: "day2_after_seoyeon" },
@@ -34,8 +34,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_after_seoyeon": {
-        name: "서연",
-        text: "(서연이와 함께 학생회실에서 서류를 정리하다 보니 어느덧 창밖이 어두워졌다.)",
+        name: "나",
+        text: "(학생회실. 서연이와 함께 서류를 정리하다 보니 어느덧 창밖이 어두워졌다.)",
         background: "assets/images/background/room_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
@@ -48,7 +48,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_seoyeon_3"
     },
     "day2_after_seoyeon_3": {
-        name: "서연",
+        name: "나",
         text: "(서연이가 기지개를 켜며 살짝 웃는다. 피곤해 보이지만 눈빛은 맑다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
@@ -75,7 +75,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_end"
     },
     "day2_after_yuna": {
-        name: "유나",
+        name: "나",
         text: "(유나를 따라 학교 지하의 낡은 창고로 내려갔다. 먼지 냄새와 함께 기묘한 한기가 느껴진다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
@@ -89,7 +89,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_yuna_3"
     },
     "day2_after_yuna_3": {
-        name: "유나",
+        name: "나",
         text: "(유나가 손가락으로 벽의 틈새를 가리킨다. 그곳에는 붉은색으로 기묘한 눈 모양이 그려져 있다.)",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
@@ -116,7 +116,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_end"
     },
     "day2_after_dain": {
-        name: "다인",
+        name: "나",
         text: "(다인이의 스파이크 연습을 도와주다 보니 온몸이 땀으로 젖었다. 하지만 기분은 상쾌하다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_active.png",
@@ -130,7 +130,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_dain_3"
     },
     "day2_after_dain_3": {
-        name: "다인",
+        name: "나",
         text: "(다인이가 수건으로 땀을 닦으며 나에게 이온 음료를 건넨다.)",
         character: "assets/images/characters/dain_nomal.png",
         choices: [
@@ -157,7 +157,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_end"
     },
     "day2_after_nurse": {
-        name: "양호선생님",
+        name: "나",
         text: "(양호실 문을 열자, 은은한 아로마 향기와 함께 선생님이 책을 읽고 있는 모습이 보였다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
@@ -171,7 +171,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_nurse_3"
     },
     "day2_after_nurse_3": {
-        name: "양호선생님",
+        name: "나",
         text: "(선생님이 안경을 고쳐 쓰며 나를 빤히 바라본다.)",
         character: "assets/images/characters/nurse.png",
         choices: [

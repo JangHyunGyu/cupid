@@ -166,30 +166,30 @@ Object.assign(SCENARIO[2], {
     },
     "day2_classroom": {
         name: "Me",
-        text: "(As I enter the classroom, the kids greet me much more friendly than yesterday.)",
+        text: "(I open the classroom door and feel a much warmer atmosphere than yesterday. Even the other students' glances seem friendlier.)",
         background: "assets/images/background/room_school.png",
         next: "day2_classroom_2"
     },
     "day2_classroom_2": {
         name: "Me",
-        text: "(As I sit down and try to prepare for class, there is a small note on the desk.)",
+        text: "(As I'm about to unpack my bag, I notice a small, folded note tucked into the corner of my desk.)",
         choices: [
             { text: "Check the note.", next: "day2_check_note" }
         ]
     },
     "day2_check_note": {
         name: "Me",
-        text: "(The note says this in neat handwriting.)",
+        text: "(I carefully unfold it. The handwriting is elegant, yet carries a certain coldness.)",
         next: "day2_note_content"
     },
     "day2_note_content": {
         name: "System",
-        text: "\"'Come to the library annex backyard during lunch. I have something to say.' - Yuna\"",
+        text: "\"'Meet me behind the library annex during lunch. I have something to tell you.' - Yuna\"",
         next: "day2_morning_class"
     },
     "day2_morning_class": {
         name: "Me",
-        text: "(Throughout the class, Yuna's note doesn't leave my head. What on earth does she have to say?)",
+        text: "(Yuna's note stays on my mind all through class. What could she possibly want to tell me?)",
         branches: [
             { next: "day2_morning_class_yuna_met", condition: "metYuna" },
             { next: "day2_morning_class_yuna_new" }
@@ -197,12 +197,12 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_class_yuna_met": {
         name: "Me",
-        text: "(Yuna, whom I met yesterday... Why did she leave me such a note? I'm curious about what the secret is.)",
+        text: "(Yuna... the girl I met yesterday. Why would she leave a note like this? I can't help but feel curious about her 'secret'.)",
         next: "day2_lunch_time"
     },
     "day2_morning_class_yuna_new": {
         name: "Me",
-        text: "(Yuna...? It's a name I haven't heard yesterday. Who on earth is she to leave me such a note?)",
+        text: "(Yuna...? I don't remember meeting anyone by that name yesterday. Who is she, and why is she looking for me?)",
         next: "day2_lunch_time"
     }
 });

@@ -8,7 +8,7 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "after_home": {
         name: "Me",
-        text: "(I arrived home after passing through the streets where the sun had set and darkness had fallen.)",
+        text: "(The sun has set, and I've returned home through the dark streets. My first day at the new school... it's been a long one.)",
         background: "assets/images/background/room_night.png",
         character: null,
         night: true,
@@ -16,19 +16,19 @@ Object.assign(SCENARIO[1], {
     },
     "after_home_2": {
         name: "Me",
-        text: "(Lying on the bed, I look back on today. So many things happened since my first day as a transfer student.)",
+        text: "(I throw myself onto the bed. Staring at the ceiling, I retrace the day's events. The unfamiliar school, and the new faces...)",
         night: true,
         next: "after_home_3"
     },
     "after_home_3": {
         name: "Me",
-        text: "(What kind of things will be waiting for me tomorrow? I try to sleep with an excited heart.)",
+        text: "(What kind of things are waiting for me tomorrow? With a strange sense of anticipation, I close my heavy eyelids.)",
         night: true,
         next: "night_home"
     },
     "night_home": {
         name: "Me",
-        text: "(Before falling asleep, I check my smartphone.)",
+        text: "(Before falling asleep, I check my phone out of habit.)",
         background: "assets/images/background/room_night.png",
         character: null,
         night: true,
@@ -39,7 +39,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_home_check_contact": {
         name: "Me",
-        text: "(Was there anyone I got contact info from today...?)",
+        text: "(Did I exchange contact info with anyone today...?)",
         night: true,
         choices: [
             { text: "Send a message to Seoyeon.", next: "night_message_seyoun", condition: "has_number_seyoun" },
@@ -50,46 +50,46 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_seyoun": {
         name: "Me",
-        text: "(I sent a message to Seoyeon: 'The lunch box was delicious today. Thank you!')",
+        text: "(I send a message to Seoyeon. 'The lunch was really delicious today. Thank you!')",
         night: true,
         next: "night_message_seyoun_reply"
     },
     "night_message_seyoun_reply": {
         name: "Seoyeon",
-        text: "(A reply came immediately!) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name?}!'",
+        text: "(Beep— An immediate reply.) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name?}.'",
         night: true,
         stats: { Seoyeon: { affinity: 5 } },
         next: "day1_end"
     },
     "night_message_yuna": {
         name: "Me",
-        text: "(I sent a message to Yuna: 'I had fun today. Good night.')",
+        text: "(I send a message to Yuna. 'I had fun today. Good night.')",
         night: true,
         next: "night_message_yuna_reply"
     },
     "night_message_yuna_reply": {
         name: "Yuna",
-        text: "(After a while, a reply came.) '...Yeah. You too. See you at school tomorrow.'",
+        text: "(A reply arrives after a short wait.) '...Yeah. You too. See you at school tomorrow.'",
         night: true,
         stats: { Yuna: { affinity: 5 } },
         next: "day1_end"
     },
     "night_message_dain": {
         name: "Me",
-        text: "(I sent a message to Dain: 'The tteokbokki was great! Good night.')",
+        text: "(I send a message to Dain. 'The tteokbokki was great today! Good night.')",
         night: true,
         next: "night_message_dain_reply"
     },
     "night_message_dain_reply": {
         name: "Dain",
-        text: "(She replied almost instantly.) 'Right? I told you I know all the best places! Rest well and see you tomorrow! Good night!'",
+        text: "(A lively reply.) 'Right? I told you I know all the best spots! Rest up and see you tomorrow! Good night!'",
         night: true,
         stats: { Dain: { affinity: 5 } },
         next: "day1_end"
     },
     "day1_end": {
         name: "Me",
-        text: "(As I close my eyes, the faces of the girls I met today come to mind one by one. Will I be able to get closer to them tomorrow...?)",
+        text: "(As I close my eyes, the faces of the girls I met today flicker through my mind. Will I be able to get closer to them tomorrow...?)",
         background: "assets/images/background/black.png",
         character: null,
         changeDay: 2,
