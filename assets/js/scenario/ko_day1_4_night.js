@@ -32,18 +32,33 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/room_night.png",
         character: null,
         night: true,
-        next: "night_home_check_contact"
+        branches: [
+            { next: "day1_end", excludeCondition: "has_any_contact" },
+            { next: "night_home_check_contact" }
+        ]
     },
     "night_home_check_contact": {
         name: "나",
         text: "(오늘 연락처를 받은 사람이 있었나...?)",
         night: true,
         choices: [
+            { text: "서연이에게 메시지를 보내본다.", next: "night_message_seyoun", condition: "has_number_seyoun" },
             { text: "유나에게 메시지를 보내본다.", next: "night_message_yuna", condition: "has_number_yuna" },
             { text: "다인이에게 메시지를 보내본다.", next: "night_message_dain", condition: "has_number_dain" },
             { text: "그냥 잠을 청한다.", next: "day1_end" }
-        ],
-        excludeCondition: "has_any_contact",
+        ]
+    },
+    "night_message_seyoun": {
+        name: "나",
+        text: "(서연이에게 '오늘 도시락 정말 맛있었어. 고마워!'라고 메시지를 보냈다.)",
+        night: true,
+        next: "night_message_seyoun_reply"
+    },
+    "night_message_seyoun_reply": {
+        name: "서연",
+        text: "(금방 답장이 왔다.) '정말? 다행이다! 맛있게 먹어줘서 내가 더 고마워. 내일도 기대해! 잘 자, {name?}.'",
+        night: true,
+        stats: { Seoyeon: { affinity: 5 } },
         next: "day1_end"
     },
     "night_message_yuna": {
@@ -77,6 +92,7 @@ Object.assign(SCENARIO[1], {
         text: "(눈을 감자 오늘 만난 소녀들의 얼굴이 하나둘씩 떠오른다. 내일은 그녀들과 더 가까워질 수 있을까...)",
         background: "assets/images/background/black.png",
         character: null,
+        changeDay: 2,
         next: "day2_start"
     }
 });

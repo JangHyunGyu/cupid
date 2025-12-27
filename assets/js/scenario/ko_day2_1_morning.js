@@ -40,9 +40,9 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(뒤를 돌아보자 그곳에는...)",
         branches: [
-            { next: "day2_meet_nurse", character: "Nurse" },
-            { next: "day2_meet_dain", character: "Dain" },
-            { next: "day2_meet_seoyeon", character: "Seoyeon" },
+            { next: "day2_meet_nurse", character: "Nurse", condition: "metNurse" },
+            { next: "day2_meet_dain", character: "Dain", condition: "metDain" },
+            { next: "day2_meet_seoyeon", character: "Seoyeon", condition: "metSeoyeon" },
             { next: "day2_meet_teacher" }
         ],
         selectByHighestAffinity: true
