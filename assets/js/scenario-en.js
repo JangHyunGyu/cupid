@@ -677,7 +677,7 @@ const SCENARIO = {
         name: "Dain",
         text: "\"Now, this is my territory! Are you ready? I won't go easy on you!\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_active.png",
+        character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
         next: "after_school_start"
     },
