@@ -224,7 +224,7 @@ Object.assign(SCENARIO[1], {
     },
     "alone_2": {
         name: "???",
-        text: "(She speaks in a low voice without taking her eyes off the book.)",
+        text: "(She shifts her gaze from the book she was reading and speaks in a low voice, staring straight at me.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "alone_2_2"
     },
@@ -236,7 +236,7 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_intro": {
         name: "???",
-        text: "(She slowly raises her head and looks at me. Her deep and mysterious purple eyes quietly observe me.)",
+        text: "(Her deep and mysterious purple eyes quietly observe me, as if trying to peer into my very soul.)",
         next: "yuna_intro_name_ask"
     },
     "yuna_intro_name_ask": {

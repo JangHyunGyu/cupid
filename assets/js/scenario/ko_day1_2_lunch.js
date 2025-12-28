@@ -226,7 +226,7 @@ Object.assign(SCENARIO[1], {
     },
     "alone_2": {
         name: "???",
-        text: "(그녀는 책에서 눈을 떼지 않은 채 나지막한 목소리로 말을 건넨다.)",
+        text: "(그녀가 읽고 있던 책에서 시선을 옮겨 나를 빤히 바라보며 나지막한 목소리로 말을 건넨다.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "alone_2_2"
     },
@@ -238,7 +238,7 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_intro": {
         name: "???",
-        text: "(그녀가 천천히 고개를 들어 나를 바라본다. 깊고 신비로운 보랏빛 눈동자가 나를 조용히 관찰한다.)",
+        text: "(그녀의 깊고 신비로운 보랏빛 눈동자가 나를 조용히 관찰한다. 마치 내 영혼까지 꿰뚫어 보려는 듯한 시선이다.)",
         next: "yuna_intro_name_ask"
     },
     "yuna_intro_name_ask": {
