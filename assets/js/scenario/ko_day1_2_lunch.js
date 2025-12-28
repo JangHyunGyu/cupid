@@ -31,6 +31,33 @@ Object.assign(SCENARIO[1], {
         next: "lunch_seoyeon_2"
     },
     "lunch_seoyeon_2": {
+        branches: [
+            { next: "lunch_seoyeon_2_study", condition: "personality_study" },
+            { next: "lunch_seoyeon_2_party", condition: "personality_active" },
+            { next: "lunch_seoyeon_2_normal" }
+        ]
+    },
+    "lunch_seoyeon_2_study": {
+        name: "서연",
+        text: "\"아까 자기소개 때는 조금 차가워 보여서 걱정했는데... 그래도 마침 너를 찾으려던 참이었어! 우리 옥상 비밀 장소에서 같이 먹을래?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "응! 서연이랑 같이 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "음.. 다른 애들이랑 먹기로 해서. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
+            { text: "옥상? 귀찮게 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+        ]
+    },
+    "lunch_seoyeon_2_party": {
+        name: "서연",
+        text: "\"아까 자기소개 때 정말 대단했어! 벌써 인기인이 된 것 같던데? 후훗, 마침 너를 찾으려던 참이었어. 우리 옥상 비밀 장소에서 같이 먹을래?\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        choices: [
+            { text: "응! 서연이랑 같이 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "음.. 다른 애들이랑 먹기로 해서. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
+            { text: "옥상? 귀찮게 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+        ]
+    },
+    "lunch_seoyeon_2_normal": {
         name: "서연",
         text: "\"마침 너를 찾으려던 참이었어! 우리 옥상 비밀 장소에서 같이 먹을래?\"",
         character: "assets/images/characters/seyoun_nomal.png",
@@ -380,7 +407,20 @@ Object.assign(SCENARIO[1], {
         next: "lunch_dain_3"
     },
     "lunch_dain_3": {
-        name: "???",
+        branches: [
+            { next: "lunch_dain_3_active", condition: "personality_active" },
+            { next: "lunch_dain_3_normal" }
+        ]
+    },
+    "lunch_dain_3_active": {
+        name: "다인",
+        text: "\"에이, 거기 너! 아까 자기소개 때 봤어. 완전 텐션 높던데? 거기서 구경만 하지 말고 이리 와서 한판 붙자! 너 운동 좀 하게 생겼는데?\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "dain_name_share"
+    },
+    "lunch_dain_3_normal": {
+        name: "다인",
         text: "\"에이, 거기 너! 거기서 구경만 하지 말고 이리 와서 한판 붙자! 너 운동 좀 하게 생겼는데?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
@@ -449,6 +489,18 @@ Object.assign(SCENARIO[1], {
         next: "nurse_name_share"
     },
     "nurse_name_share": {
+        branches: [
+            { next: "nurse_name_share_study", condition: "personality_study" },
+            { next: "nurse_name_share_normal" }
+        ]
+    },
+    "nurse_name_share_study": {
+        name: "보건선생님",
+        text: "\"{name}... 후훗, 이름만큼이나 눈빛이 참 맑구나. 아까 자기소개 때 보니까 완전 모범생 같던데? 공부하느라 머리가 아픈 거니? 아니면.. 전학 첫날이라 긴장해서 들른 걸까?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_free_talk_day1"
+    },
+    "nurse_name_share_normal": {
         name: "보건선생님",
         text: "\"{name}... 후훗, 이름만큼이나 눈빛이 참 맑구나. 어디가 아파서 온 거니? 아니면.. 전학 첫날이라 긴장해서 들른 걸까?\"",
         character: "assets/images/characters/nurse.png",

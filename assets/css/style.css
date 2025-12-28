@@ -95,6 +95,7 @@ body, html {
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
     pointer-events: none;
     z-index: 110; /* 페이드 레이어(100)보다 위에 위치 */
 }
@@ -238,6 +239,14 @@ body, html {
     font-size: 1.5rem;
     line-height: 1;
     margin-bottom: 8px;
+    display: inline-block;
+    animation: loading-blink 1.4s infinite both;
+}
+
+@keyframes loading-blink {
+    0% { opacity: .2; }
+    20% { opacity: 1; }
+    100% { opacity: .2; }
 }
 
 #chat-turn-indicator {

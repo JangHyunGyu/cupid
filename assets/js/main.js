@@ -640,27 +640,27 @@ function startFreeTalk(scene) {
      * -100 ~ -31: "전학생", "너" (매우 차갑고 무시하는 듯한 표현)
      * -30 ~ 30: "전학생 군", "${gameState.playerName} 군" (예의 바른 거리감)
      * 31 ~ 70: "${gameState.playerName} 군" (부드러워진 말투)
-     * 71 ~ 100: "${gameState.playerName}...", "저기..." (부끄러워하며 이름을 부르거나 말끝을 흐림)`,
+     * 71 ~ 100: "${gameState.playerName} 군...", "저기..." (부끄러워하며 이름을 부르거나 말끝을 흐림)`,
         "유나": `
      * -100 ~ -31: "그림자", "너" (소름 돋을 정도로 차가움)
-     * -30 ~ 30: "전학생", "너" (무관심함)
-     * 31 ~ 70: "${gameState.playerName}", "너..." (신비로운 관심을 보이며 빤히 바라봄)
-     * 71 ~ 100: "${gameState.playerName}...", "나의..." (말을 끝까지 맺지 못하고 집착 어린 시선을 보냄)`,
+     * -30 ~ 30: "전학생 군", "너" (무관심함)
+     * 31 ~ 70: "${gameState.playerName} 군", "너..." (신비로운 관심을 보이며 빤히 바라봄)
+     * 71 ~ 100: "${gameState.playerName} 군...", "나의..." (말을 끝까지 맺지 못하고 집착 어린 시선을 보냄)`,
         "다인": `
      * -100 ~ -31: "야", "너", "이봐" (화가 나서 소리 지름)
-     * -30 ~ 30: "전학생", "야!" (편한 친구 사이)
-     * 31 ~ 70: "${gameState.playerName}!", "바보야" (장난스럽고 친근함)
-     * 71 ~ 100: "${gameState.playerName}...", "저기, 그게..." (얼굴을 붉히며 이름을 제대로 못 부르고 머뭇거림)`,
+     * -30 ~ 30: "전학생 군", "야!" (편한 친구 사이)
+     * 31 ~ 70: "${gameState.playerName} 군!", "바보야" (장난스럽고 친근함)
+     * 71 ~ 100: "${gameState.playerName} 군...", "저기, 그게..." (얼굴을 붉히며 이름을 제대로 못 부르고 머뭇거림)`,
         "담임선생님": `
      * -100 ~ -31: "${gameState.playerName} 학생", "너" (엄격하고 실망한 기색)
-     * -30 ~ 30: "${gameState.playerName} 학생", "전학생" (전문적인 교사 말투)
+     * -30 ~ 30: "${gameState.playerName} 학생", "전학생 군" (전문적인 교사 말투)
      * 31 ~ 70: "${gameState.playerName} 군" (격의 없고 다정함)
-     * 71 ~ 100: "${gameState.playerName}...", "저기..." (선생님이라는 호칭을 버리고 이름을 부르며 당황함)`,
+     * 71 ~ 100: "${gameState.playerName} 군...", "저기..." (선생님이라는 호칭을 버리고 이름을 부르며 당황함)`,
         "보건선생님": `
      * -100 ~ -31: "${gameState.playerName} 학생", "너" (장난기 없는 차갑고 엄격한 태도)
-     * -30 ~ 30: "전학생", "우리 환자분" (능글맞은 장난)
-     * 31 ~ 70: "${gameState.playerName} 군", "우리 전학생" (다정하고 친근한 장난)
-     * 71 ~ 100: "${gameState.playerName}", "너..." (교사와 제자 사이의 선을 넘나드는 묘한 호칭)`
+     * -30 ~ 30: "전학생 군", "우리 환자분" (능글맞은 장난)
+     * 31 ~ 70: "${gameState.playerName} 군", "우리 전학생 군" (다정하고 친근한 장난)
+     * 71 ~ 100: "${gameState.playerName} 군", "너..." (교사와 제자 사이의 선을 넘나드는 묘한 호칭)`
     };
 
     // 캐릭터별 스타일 지침 설정
@@ -944,11 +944,14 @@ function typeText(text, charName) {
     const isPlayer = charName === "나" || charName === "Me" || charName === "시스템" || charName === "System";
     
     // {name}은 항상 순수 이름으로 (자기소개 등에서 자연스럽게)
+    // 한국어이고 화자가 주인공이 아닐 때만 '군'을 붙임
     let rawName = gameState.playerName;
+    if (!isEn && !isPlayer && rawName) {
+        rawName += " 군";
+    }
     let processedText = text.replace(/{name}/g, rawName);
     
     // {name?} 처리: 이름을 알면 이름, 모르면 '전학생'
-    // 한국어이고 화자가 주인공이 아닐 때만 '군'을 붙임
     const charNameMap = {
         "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
         "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Homeroom Teacher": "Teacher", "Nurse": "Nurse"
@@ -1080,7 +1083,7 @@ function getFallbackReply(charName, isEn) {
         }
         if (charKey === "Teacher") {
             if (isDating) return isRemote ? "{name}... 미안해. 지금 교무실에서 급한 연락이 왔어. 이따가 단둘이 있을 때 다시 연락할게. 기다려줘. 💕" : "{name}... 미안해. 오늘 업무가 너무 많아서 그런지 대화에 온전히 집중하기가 어렵네. 이따가 다시 이야기하자. 기다려줘. 💕";
-            if (affinity > 50) return isRemote ? "어머, 미안해 {name} 군. 갑자기 급한 서류 업무가 생겨서... 나중에 톡할게. 미안해. 📝" : "어머, 미안해 {name} 군. 오늘 생각할 게 너무 많아서... 지금은 대화를 계속하기가 좀 힘들 것 같아. 미안해. 📝";
+            if (affinity > 50) return isRemote ? "어머, 미안해 {name}. 갑자기 급한 서류 업무가 생겨서... 나중에 톡할게. 미안해. 📝" : "어머, 미안해 {name}. 오늘 생각할 게 너무 많아서... 지금은 대화를 계속하기가 좀 힘들 것 같아. 미안해. 📝";
             return isRemote ? "아, 미안하구나. 지금 교무 회의가 있어서... 나중에 다시 연락하렴." : "아, 미안하구나. 오늘 내가 좀 피곤한 모양이야. 대화는 여기서 이만 줄이자꾸나.";
         }
         if (charKey === "Nurse") {
@@ -1107,6 +1110,7 @@ async function sendChatMessage() {
     
     // 로딩 표시
     chatSendBtn.disabled = true;
+    chatInput.disabled = true;
     const originalBtnContent = chatSendBtn.innerHTML;
     chatSendBtn.innerHTML = `<span class="loading-dots">...</span>`;
     
@@ -1228,7 +1232,9 @@ async function sendChatMessage() {
         }, 500);
     } finally {
         chatSendBtn.disabled = false;
+        chatInput.disabled = false;
         chatSendBtn.innerHTML = originalBtnContent;
+        chatInput.focus();
     }
 }
 

@@ -49,7 +49,7 @@ Object.assign(SCENARIO[1], {
     "intro_3": {
         name: "서연",
         text: "\"나는 학생회장 서연이야. 선생님 부탁으로 마중 나왔어. 잘 부탁해!\"",
-        setFlag: "metSeoyeon",
+        setFlags: ["metSeoyeon", "knowsName_Seoyeon"],
         choices: [
             { text: "응, 잘 부탁해. 학교가 커서 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "정말 예쁘다 (나도 모르게 본심이..!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
