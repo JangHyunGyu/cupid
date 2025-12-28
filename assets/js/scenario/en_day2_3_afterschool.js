@@ -20,6 +20,7 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: null,
         sunset: true,
+        setFlag: "wokeUpInNurseRoom",
         next: "day2_after_school"
     },
     "day2_after_school": {
@@ -32,15 +33,39 @@ Object.assign(SCENARIO[2], {
             { text: "Go to the library annex to find the person who left the note.", next: "day2_after_yuna", excludeCondition: "metYuna" },
             { text: "Help Dain with volleyball practice.", next: "day2_after_dain", condition: "metDain" },
             { text: "Follow the lively sounds coming from the gym.", next: "day2_after_dain", excludeCondition: "metDain" },
-            { text: "Go to the teacher in the nurse's office.", next: "day2_after_nurse" }
+            { text: "Stay and talk more with the teacher in the nurse's office.", next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
+            { text: "Go to the teacher in the nurse's office.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" }
         ]
+    },
+    "day2_after_nurse_check": {
+        branches: [
+            { next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
+            { next: "day2_after_nurse" }
+        ]
+    },
+    "day2_after_nurse_stay": {
+        name: "Me",
+        text: "(I got up from the nurse's office bed and stretched. The teacher is still reading a book.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "day2_after_nurse_3"
     },
     "day2_after_seoyeon": {
         name: "Me",
-        text: "(The student council room. As I help Seoyeon organize documents, the world outside the window slowly fades into darkness.)",
+        text: "(The student council room. I started organizing documents with Seoyeon. Seoyeon kindly taught me the tasks, as I had just transferred.)",
+        background: "assets/images/background/student_room.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
+        next: "day2_after_seoyeon_work"
+    },
+    "day2_after_seoyeon_work": {
+        name: "Me",
+        text: "(As I focused on organizing documents with Seoyeon, the world outside the window slowly turned dark. The student council room is filled only with the sound of our breathing and the rustling of paper.)",
         background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
+        setFlag: "day2_met_seoyeon_after",
         next: "day2_after_seoyeon_2"
     },
     "day2_after_seoyeon_2": {
@@ -154,11 +179,36 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_yuna_follow"
     },
     "day2_after_yuna_follow": {
+        branches: [
+            { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_follow_new" }
+        ]
+    },
+    "day2_after_yuna_follow_again": {
         name: "Me",
-        text: "(I follow Yuna down to a dusty, old warehouse in the basement. A strange chill hangs in the air.)",
+        text: "(I follow Yuna back down to the basement warehouse. The air feels even colder than before. The basement is plunged into pitch-black darkness, as if the light from outside has completely vanished.)",
+        night: true,
+        next: "day2_after_yuna_3_pre"
+    },
+    "day2_after_yuna_follow_new": {
+        name: "Me",
+        text: "(I follow Yuna down to a dusty, old warehouse in the basement. A strange chill hangs in the air. It seems it has already become completely dark outside.)",
+        night: true,
         next: "day2_after_yuna_3_pre"
     },
     "day2_after_yuna_3_pre": {
+        branches: [
+            { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_3_pre_new" }
+        ]
+    },
+    "day2_after_yuna_3_pre_again": {
+        name: "Yuna",
+        text: "\"Those patterns we saw earlier... what do you think now? Don't they look even more eerie at night?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_after_yuna_3"
+    },
+    "day2_after_yuna_3_pre_new": {
         name: "Yuna",
         text: "\"Look, {name?}. These patterns on the wall... they match the secrets of this school I've been tracking.\"",
         character: "assets/images/characters/yuna_nomal.png",
@@ -196,6 +246,7 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "\"This isn't just graffiti. It's tied to the very foundation of this school. {name?}, you've stepped onto a path from which there is no turning back.\"",
         character: "assets/images/characters/yuna_smile.png",
+        setFlag: "day2_met_yuna_after",
         next: "day2_yuna_contact_check"
     },
     "day2_yuna_contact_check": {
@@ -245,8 +296,10 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain_practice": {
         name: "Me",
-        text: "(Helping Dain with her spikes has left me drenched in sweat, but the physical exertion feels good.)",
+        text: "(Helping Dain with her spikes has left me drenched in sweat, but the physical exertion feels good. The world outside the window has already turned dark.)",
         character: "assets/images/characters/dain_sweat.png",
+        night: true,
+        setFlag: "day2_met_dain_after",
         next: "day2_after_dain_3"
     },
     "day2_after_dain_new": {
@@ -345,6 +398,15 @@ Object.assign(SCENARIO[2], {
         name: "Nurse",
         text: "\"Oh, {name?}. Back again? What's the matter today? Or... did you just come to see me?\"",
         character: "assets/images/characters/nurse.png",
+        branches: [
+            { next: "day2_after_nurse_invited", condition: "invited_nurse_home" },
+            { next: "day2_after_nurse_3" }
+        ]
+    },
+    "day2_after_nurse_invited": {
+        name: "Nurse",
+        text: "\"Hehe, {name?}. You haven't forgotten our plan to meet at my house tonight, have you? If you ran here because you missed me already, I'm truly touched.\"",
+        character: "assets/images/characters/nurse.png",
         next: "day2_after_nurse_3"
     },
     "day2_after_nurse_new": {
@@ -396,9 +458,10 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_night_talk": {
         name: "Nurse",
-        text: "(She smiles softly and strokes my hair.) \"Hehe, you wanted to spend more time with me, didn't you? Fine, I'll stay with you until late today.\"",
+        text: "(The teacher smiles softly and strokes my hair.) \"Hehe, so you came because you wanted to spend more time with me? Fine, I'll stay with you until late today, just for you.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
+        setFlag: "day2_met_nurse_after",
         next: "day2_nurse_night_talk_2"
     },
     "day2_nurse_night_talk_2": {
@@ -410,8 +473,30 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_contact_check": {
         branches: [
-            { next: "day2_end", condition: "has_number_nurse" },
+            { next: "day2_nurse_contact_already_have", condition: "has_number_nurse" },
             { next: "day2_nurse_contact_ask" }
+        ]
+    },
+    "day2_nurse_contact_already_have": {
+        branches: [
+            { next: "day2_end", condition: "invited_nurse_home" },
+            { next: "day2_nurse_contact_already_have_talk" }
+        ]
+    },
+    "day2_nurse_contact_already_have_talk": {
+        name: "Nurse",
+        text: "\"{name?}, we already exchanged numbers, didn't we? You must contact me if you're bored at night. I'll be waiting.\"",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "Yes, I will.", next: "day2_end" },
+            { 
+                text: "Not the number... can I go to your house tonight, teacher?", 
+                next: "nurse_contact_home_fail_after",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 80, next: "nurse_contact_home_success_after" }
+                ]
+            }
         ]
     },
     "day2_nurse_contact_ask": {
@@ -420,30 +505,21 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         choices: [
             { text: "Yes, please tell me!", next: "day2_nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
-            { 
-                text: "Not the number... can I go to your house, teacher?", 
-                next: "day2_nurse_contact_home_fail",
-                affinityChar: "Nurse",
-                affinityBranches: [
-                    { minAffinity: 70, next: "day2_nurse_contact_home_success" }
-                ]
-            },
             { text: "It's a bit overwhelming for now.", next: "day2_nurse_contact_fail", stats: { Nurse: { affinity: -5 } } }
         ]
     },
-    "day2_nurse_contact_home_success": {
+    "nurse_contact_home_success_after": {
         name: "Nurse",
         text: "(The teacher's eyes widen, then she whispers in my ear with a seductive smile.) \"Oh... {name?}, you're much bolder than I thought? Okay, do you want to come to my house tonight? I'll give you the address. Instead... it's a secret from your parents?\"",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 30 } },
-        setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
+        setFlags: ["invited_nurse_home"],
         next: "day2_end"
     },
-    "day2_nurse_contact_home_fail": {
+    "nurse_contact_home_fail_after": {
         name: "Nurse",
-        text: "(The teacher bursts into laughter.) \"Oh my, {name?}! You're really cute. But I think it's a bit early for my house? Let's exchange numbers first.\"",
+        text: "(The teacher bursts into laughter.) \"Oh my, {name?}! You're really cute. But I think it's a bit early for my house? Just message me later.\"",
         character: "assets/images/characters/nurse.png",
-        setFlags: ["has_number_nurse", "has_any_contact"],
         next: "day2_end"
     },
     "day2_nurse_contact_success": {

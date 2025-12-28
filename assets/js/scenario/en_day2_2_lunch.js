@@ -40,18 +40,26 @@ Object.assign(SCENARIO[2], {
         name: "Seoyeon",
         text: "\"Really? I'm glad you like them. I was a bit worried about your taste... Eat as much as you want!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "day2_afternoon_class"
+        setFlag: "day2_ate_lunch_seoyeon",
+        next: "day2_seoyeon_lunch_end"
     },
     "day2_seoyeon_lunch_worry": {
         name: "Seoyeon",
         text: "\"It's okay. Seeing you enjoy the food makes all the tiredness go away. Really.\"",
         character: "assets/images/characters/seyoun_nomal.png",
-        next: "day2_afternoon_class"
+        setFlag: "day2_ate_lunch_seoyeon",
+        next: "day2_seoyeon_lunch_end"
     },
     "day2_seoyeon_lunch_touch": {
         name: "Seoyeon",
         text: "\"Ah... T-thank you. I must have been eating too fast... (She blushes slightly and looks down)\"",
         character: "assets/images/characters/seyoun_shy.png",
+        setFlag: "day2_ate_lunch_seoyeon",
+        next: "day2_seoyeon_lunch_end"
+    },
+    "day2_seoyeon_lunch_end": {
+        name: "Me",
+        text: "(I returned to the classroom after a pleasant lunch with Seoyeon. The taste of the sandwiches she made lingers pleasantly in my mouth.)",
         next: "day2_afternoon_class"
     },
     "day2_lunch_yuna": {
@@ -127,24 +135,30 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "\"Hehe, as expected, you're different from the other kids. Fine, but you should be prepared. Truth can sometimes be poison.\"",
         character: "assets/images/characters/yuna_smile.png",
-        next: "day2_afternoon_class"
+        next: "day2_yuna_lunch_end"
     },
     "day2_yuna_secret_stop": {
         name: "Yuna",
         text: "\"...You're a coward. Well, I understand. For a normal kid, that's a natural reaction. You should leave for today.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_afternoon_class"
+        next: "day2_yuna_lunch_end"
     },
     "day2_yuna_secret_why": {
         name: "Yuna",
         text: "\"Well... should I say it's to find lost memories? Or maybe I just need some excitement in this boring school life.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_afternoon_class"
+        next: "day2_yuna_lunch_end"
     },
     "day2_yuna_normal": {
         name: "Yuna",
         text: "\"...Is that so? You're a strange one. Most people are afraid. Fine, then let's just spend some time together like this.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_lunch_end": {
+        name: "Me",
+        text: "(I left Yuna and returned to the classroom. Her mysterious words kept echoing in my mind, making it hard to focus on the afternoon classes.)",
+        setFlag: "day2_met_yuna_lunch",
         next: "day2_afternoon_class"
     },
     "day2_lunch_dain": {
@@ -202,18 +216,26 @@ Object.assign(SCENARIO[2], {
         name: "Dain",
         text: "\"Hey~ I said it's on me! You're a transfer student, you shouldn't be spending money. I'll treat you today, so just enjoy!\"",
         character: "assets/images/characters/dain_laugh.png",
-        next: "day2_afternoon_class"
+        setFlag: "day2_met_dain_lunch",
+        next: "day2_dain_lunch_end"
     },
     "day2_dain_store_rooftop": {
         name: "Dain",
         text: "\"Rooftop? Oh, that sounds good too! It'll taste even better with the cool breeze. Okay, let's just buy the bread and head up!\"",
         character: "assets/images/characters/dain_nomal.png",
-        next: "day2_afternoon_class"
+        setFlag: "day2_met_dain_lunch",
+        next: "day2_dain_lunch_end"
     },
     "day2_dain_store_race": {
         name: "Dain",
         text: "\"Ooh! That's my partner! Okay, let's see who gets it first! Loser buys drinks!\"",
         character: "assets/images/characters/dain_nomal.png",
+        setFlag: "day2_met_dain_lunch",
+        next: "day2_dain_lunch_end"
+    },
+    "day2_dain_lunch_end": {
+        name: "Me",
+        text: "(I returned to the classroom after a lively lunch with Dain. Thanks to her bright energy, I feel like I can power through the afternoon classes.)",
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {
@@ -333,9 +355,9 @@ Object.assign(SCENARIO[2], {
         text: "(The warmth of the blanket she tucked around me pulls me into a deep, dreamless sleep. The exhaustion of the past two days finally catches up.)",
         background: "assets/images/background/nurse_room.jpg",
         character: null,
-        next: "day2_lunch_nurse_wake"
+        next: "day2_lunch_nurse_sleep_end"
     },
-    "day2_lunch_nurse_wake": {
+    "day2_lunch_nurse_sleep_end": {
         name: "Me",
         text: "(I wake to find the room bathed in the orange glow of the sunset. I slept through the entire afternoon... I must have been more tired than I thought.)",
         background: "assets/images/background/nurse_room.jpg",
@@ -362,6 +384,30 @@ Object.assign(SCENARIO[2], {
         next: "nurse_contact_exchange"
     },
     "nurse_contact_exchange": {
+        branches: [
+            { next: "nurse_contact_already_have", condition: "has_number_nurse" },
+            { next: "nurse_contact_ask" }
+        ]
+    },
+    "nurse_contact_already_have": {
+        name: "Nurse",
+        text: "(The teacher leans her body slightly and whispers.) \"{name?}, we already exchanged numbers, didn't we? You must contact me if you're bored at night. I'll be waiting.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "Yes, I will.", next: "day2_afternoon_nurse_skip" },
+            { 
+                text: "Not the number... can I go to your house tonight, teacher?", 
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 70, next: "nurse_contact_home_success" }
+                ]
+            }
+        ]
+    },
+    "nurse_contact_ask": {
         name: "Nurse",
         text: "(The teacher leans her body slightly and whispers.) \"{name?}, if you can't sleep at night, do you want to contact me? I'll give you my number.\"",
         background: "assets/images/background/nurse_room.jpg",
