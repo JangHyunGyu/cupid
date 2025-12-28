@@ -34,7 +34,8 @@ Object.assign(SCENARIO[2], {
             { text: "Help Dain with volleyball practice.", next: "day2_after_dain", condition: "metDain" },
             { text: "Follow the lively sounds coming from the gym.", next: "day2_after_dain", excludeCondition: "metDain" },
             { text: "Stay and talk more with the teacher in the nurse's office.", next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
-            { text: "Go to the teacher in the nurse's office.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" }
+            { text: "Go to the teacher in the nurse's office.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" },
+            { text: "Go to the homeroom teacher in the faculty room.", next: "day2_after_teacher" }
         ]
     },
     "day2_after_nurse_stay": {
@@ -564,6 +565,98 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         night: true,
         next: "day2_end"
+    },
+    "day2_after_teacher": {
+        name: "Me",
+        text: "(When I open the faculty room door, I see the homeroom teacher reviewing documents alone under a desk lamp in the empty office.)",
+        background: "assets/images/background/teacher_room.png",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        next: "day2_after_teacher_2"
+    },
+    "day2_after_teacher_2": {
+        name: "Homeroom Teacher",
+        text: "\"Oh, {name?}? What brings you to the faculty room at this hour? Haven't you gone home yet?\"",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        next: "day2_after_teacher_3"
+    },
+    "day2_after_teacher_3": {
+        name: "Homeroom Teacher",
+        text: "\"I have a lot of documents to submit this week... Hehe, I'm showing you such a haggard side of me from the very first week of your transfer.\"",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        choices: [
+            { text: "I'll help you. It'll be over soon if we do it together!", next: "day2_after_teacher_work", stats: { Teacher: { affinity: 10 } } },
+            { text: "Hang in there, Teacher! Should I make you a cup of coffee?", next: "day2_after_teacher_coffee", stats: { Teacher: { affinity: 5 } } },
+            { text: "Teacher, aren't you overdoing it? I'm worried.", next: "day2_after_teacher_worry", stats: { Teacher: { affinity: 8 } } }
+        ]
+    },
+    "day2_after_teacher_work": {
+        name: "Me",
+        text: "(I sat next to the teacher and started helping her organize the documents. Only the sound of turning pages can be heard regularly in the quiet faculty room.)",
+        background: "assets/images/background/teacher_room.png",
+        character: "assets/images/characters/teacher.png",
+        night: true,
+        next: "day2_after_teacher_work_2"
+    },
+    "day2_after_teacher_work_2": {
+        name: "Homeroom Teacher",
+        text: "\"Thank you, {name?}. You've been a huge help. I would have had to stay up all night if I did it alone.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_after_teacher_branch"
+    },
+    "day2_after_teacher_branch": {
+        affinityChar: "Teacher",
+        affinityBranches: [
+            { minAffinity: 45, next: "day2_after_teacher_special" }
+        ],
+        next: "day2_after_teacher_normal"
+    },
+    "day2_after_teacher_special": {
+        name: "Homeroom Teacher",
+        text: "(The teacher suddenly leans toward me. I can feel her warm breath along with the faint scent of perfume.)",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_after_teacher_special_2"
+    },
+    "day2_after_teacher_special_2": {
+        name: "Homeroom Teacher",
+        text: "\"{name?}, I think you're a very special student. It's only been two days since you transferred... why do I feel so comfortable, like we've known each other for a long time?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_after_teacher_special_3"
+    },
+    "day2_after_teacher_special_3": {
+        name: "Homeroom Teacher",
+        text: "\"As a reward for helping me today... I'll drive you home. Shall we talk a bit more in the car?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        stats: { Teacher: { affinity: 15 } },
+        setFlag: "day2_teacher_date",
+        next: "day2_end"
+    },
+    "day2_after_teacher_normal": {
+        name: "Homeroom Teacher",
+        text: "\"Now, it's late, so you should head home. I should finish up and head home too. You did a great job today!\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_end"
+    },
+    "day2_after_teacher_coffee": {
+        name: "Homeroom Teacher",
+        text: "\"Oh, coffee? Hehe, thank you for the thought. But I can't drink coffee made by a student. Instead, I'll give you a delicious candy!\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_after_teacher_normal"
+    },
+    "day2_after_teacher_worry": {
+        name: "Homeroom Teacher",
+        text: "\"Thank you for worrying about me. I'm fine! I feel so reassured because {name?} is such a kind student.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_after_teacher_normal"
     }
 });
 

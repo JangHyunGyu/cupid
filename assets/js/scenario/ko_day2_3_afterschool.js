@@ -34,7 +34,8 @@ Object.assign(SCENARIO[2], {
             { text: "다인이의 배구 연습을 도와준다.", next: "day2_after_dain", condition: "metDain" },
             { text: "체육관에서 들리는 활기찬 소리를 따라가 본다.", next: "day2_after_dain", excludeCondition: "metDain" },
             { text: "보건실에 있는 선생님과 좀 더 대화한다.", next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
-            { text: "보건실에 있는 선생님을 찾아간다.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" }
+            { text: "보건실에 있는 선생님을 찾아간다.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" },
+            { text: "교무실에 계신 담임선생님을 찾아간다.", next: "day2_after_teacher" }
         ]
     },
     "day2_after_nurse_stay": {
@@ -563,6 +564,98 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         night: true,
         next: "day2_end"
+    },
+    "day2_after_teacher": {
+        name: "나",
+        text: "(교무실 문을 열자, 텅 빈 사무실 안에서 홀로 스탠드를 켜고 서류를 검토 중인 담임선생님이 보인다.)",
+        background: "assets/images/background/teacher_room.png",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        next: "day2_after_teacher_2"
+    },
+    "day2_after_teacher_2": {
+        name: "담임선생님",
+        text: "\"어머, {name?}? 이 시간에 교무실엔 어쩐 일이야? 아직 하교 안 했니?\"",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        next: "day2_after_teacher_3"
+    },
+    "day2_after_teacher_3": {
+        name: "담임선생님",
+        text: "\"선생님은 이번 주에 제출할 서류가 좀 많아서... 후훗, 전학 첫 주부터 선생님의 이런 초췌한 모습만 보여주게 되네.\"",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        choices: [
+            { text: "제가 도와드릴게요. 같이 하면 금방 끝날 거예요!", next: "day2_after_teacher_work", stats: { Teacher: { affinity: 10 } } },
+            { text: "선생님 힘내세요! 제가 커피라도 한 잔 타 드릴까요?", next: "day2_after_teacher_coffee", stats: { Teacher: { affinity: 5 } } },
+            { text: "선생님, 너무 무리하시는 거 아니에요? 걱정돼요.", next: "day2_after_teacher_worry", stats: { Teacher: { affinity: 8 } } }
+        ]
+    },
+    "day2_after_teacher_work": {
+        name: "나",
+        text: "(선생님의 옆자리에 앉아 서류 정리를 돕기 시작했다. 조용한 교무실 안에 종이 넘기는 소리만 규칙적으로 들려온다.)",
+        background: "assets/images/background/teacher_room.png",
+        character: "assets/images/characters/teacher.png",
+        night: true,
+        next: "day2_after_teacher_work_2"
+    },
+    "day2_after_teacher_work_2": {
+        name: "담임선생님",
+        text: "\"고마워, {name?}. 덕분에 정말 큰 도움이 됐어. 혼자 했으면 밤을 꼬박 새울 뻔했지 뭐야.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_after_teacher_branch"
+    },
+    "day2_after_teacher_branch": {
+        affinityChar: "Teacher",
+        affinityBranches: [
+            { minAffinity: 45, next: "day2_after_teacher_special" }
+        ],
+        next: "day2_after_teacher_normal"
+    },
+    "day2_after_teacher_special": {
+        name: "담임선생님",
+        text: "(선생님이 갑자기 내 쪽으로 몸을 기울인다. 은은한 향수 냄새와 함께 그녀의 따뜻한 숨결이 느껴진다.)",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_after_teacher_special_2"
+    },
+    "day2_after_teacher_special_2": {
+        name: "담임선생님",
+        text: "\"{name?}, 넌 참 특별한 학생인 것 같아. 전학 온 지 이틀밖에 안 됐는데... 왜 이렇게 오래 알고 지낸 사이처럼 편안할까?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_after_teacher_special_3"
+    },
+    "day2_after_teacher_special_3": {
+        name: "담임선생님",
+        text: "\"오늘 도와준 보답으로... 선생님이 집까지 데려다줄게. 차에서 좀 더 이야기할까?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        stats: { Teacher: { affinity: 15 } },
+        setFlag: "day2_teacher_date",
+        next: "day2_end"
+    },
+    "day2_after_teacher_normal": {
+        name: "담임선생님",
+        text: "\"자, 이제 늦었으니까 얼른 들어가 봐. 선생님도 이제 정리하고 퇴근해야겠다. 오늘 정말 고생 많았어!\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_end"
+    },
+    "day2_after_teacher_coffee": {
+        name: "담임선생님",
+        text: "\"어머, 커피? 후훗, 마음만으로도 고마워. 하지만 학생이 타주는 커피를 마실 순 없지. 대신 선생님이 맛있는 사탕 하나 줄게!\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_after_teacher_normal"
+    },
+    "day2_after_teacher_worry": {
+        name: "담임선생님",
+        text: "\"걱정해줘서 고마워. 선생님은 괜찮아! 우리 {name?} 학생이 이렇게 착해서 선생님은 정말 든든한걸?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day2_after_teacher_normal"
     }
 });
 
