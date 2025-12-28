@@ -42,6 +42,7 @@ Object.assign(SCENARIO[2], {
             { text: "유나에게 메시지를 보낸다.", next: "day2_night_message_yuna", condition: "has_number_yuna" },
             { text: "다인이에게 메시지를 보낸다.", next: "day2_night_message_dain", condition: "has_number_dain" },
             { text: "보건선생님께 메시지를 보낸다.", next: "day2_night_message_nurse", condition: "has_number_nurse" },
+            { text: "담임선생님께 메시지를 보낸다.", next: "day2_night_message_teacher", condition: "has_number_teacher" },
             { text: "보건선생님 댁으로 향한다.", next: "day2_night_nurse_home", condition: "invited_nurse_home" },
             { text: "호감도 확인하기", next: "day2_check_affinity" },
             { text: "그냥 잠을 청한다.", next: "day2_final_scene" }
@@ -242,6 +243,25 @@ Object.assign(SCENARIO[2], {
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 보건선생님은 주인공의 메시지에 장난스럽고 매혹적인 답장을 보낸 상태.",
         night: true,
         stats: { Nurse: { affinity: 5 } },
+        next: "day2_final_scene"
+    },
+    "day2_night_message_teacher": {
+        name: "나",
+        text: "(담임선생님께 메시지를 보냈다. '선생님, 오늘 하루 수고하셨습니다. 안녕히 주무세요.')",
+        night: true,
+        setFlag: "sent_msg_day2_teacher",
+        next: "day2_night_message_teacher_reply"
+    },
+    "day2_night_message_teacher_reply": {
+        type: "free_talk",
+        maxTurns: 10,
+        name: "담임선생님",
+        text: "(조금 늦게 도착한 답장.) '어머, {name?} 학생. 이 시간에 메시지라니 조금 놀랐네. 그래도 걱정해줘서 고마워. 너도 푹 자고 내일 지각하지 마렴.'",
+        character: "assets/images/characters/teacher.png",
+        silhouette: true,
+        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 담임선생님은 주인공의 메시지에 조금 당황하면서도 고마워하며 답장을 보낸 상태.",
+        night: true,
+        stats: { Teacher: { affinity: 5 } },
         next: "day2_final_scene"
     },
     "day2_final_scene": {

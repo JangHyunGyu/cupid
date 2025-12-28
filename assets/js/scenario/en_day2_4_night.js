@@ -42,6 +42,7 @@ Object.assign(SCENARIO[2], {
             { text: "Send a message to Yuna.", next: "day2_night_message_yuna", condition: "has_number_yuna" },
             { text: "Send a message to Dain.", next: "day2_night_message_dain", condition: "has_number_dain" },
             { text: "Send a message to the Nurse.", next: "day2_night_message_nurse", condition: "has_number_nurse" },
+            { text: "Send a message to the Teacher.", next: "day2_night_message_teacher", condition: "has_number_teacher" },
             { text: "Go to the Nurse's house.", next: "day2_night_nurse_home", condition: "invited_nurse_home" },
             { text: "Check Affinity Status", next: "day2_check_affinity" },
             { text: "Just sleep.", next: "day2_final_scene" }
@@ -240,6 +241,25 @@ Object.assign(SCENARIO[2], {
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Nurse has sent a playful and alluring reply to the protagonist's message.",
         night: true,
         stats: { Nurse: { affinity: 5 } },
+        next: "day2_final_scene"
+    },
+    "day2_night_message_teacher": {
+        name: "Me",
+        text: "(I send a message to the Teacher. 'Teacher, good job today. Good night.')",
+        night: true,
+        setFlag: "sent_msg_day2_teacher",
+        next: "day2_night_message_teacher_reply"
+    },
+    "day2_night_message_teacher_reply": {
+        type: "free_talk",
+        maxTurns: 10,
+        name: "Teacher",
+        text: "(A reply arrives a bit late.) 'Oh, {name?}. I'm a bit surprised to get a message at this hour. But thank you for your concern. Get some rest and don't be late tomorrow.'",
+        character: "assets/images/characters/teacher.png",
+        silhouette: true,
+        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Teacher is a bit surprised but grateful for the protagonist's message.",
+        night: true,
+        stats: { Teacher: { affinity: 5 } },
         next: "day2_final_scene"
     },
     "day2_final_scene": {

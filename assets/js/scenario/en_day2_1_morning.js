@@ -205,6 +205,31 @@ Object.assign(SCENARIO[2], {
         name: "Teacher",
         text: "\"Oh, isn't it {name?}? It's only your second day, but you seem to have adapted to school already. It's good to see you arriving early.\"",
         character: "assets/images/characters/teacher.png",
+        next: "day2_teacher_free_talk"
+    },
+    "day2_teacher_free_talk": {
+        type: "free_talk",
+        name: "Teacher",
+        text: "\"We still have some time before class starts. Is there anything you're curious about?\"",
+        context: "Meeting the homeroom teacher at the school gate and walking to the classroom together.",
+        personality: "A professional teacher who is strict about rules but has a soft spot for the protagonist.",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_teacher_contact_ask"
+    },
+    "day2_teacher_contact_ask": {
+        name: "Teacher",
+        text: "\"Oh, by the way, I needed your number for the emergency contact list... If you don't mind, could you give it to me now?\"",
+        character: "assets/images/characters/teacher.png",
+        choices: [
+            { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "I'll stop by the office and let you know later.", next: "day2_classroom" }
+        ]
+    },
+    "day2_teacher_contact_success": {
+        name: "Teacher",
+        text: "\"Thank you. I'll contact you if anything comes up. Now, let's head to the classroom.\"",
+        character: "assets/images/characters/teacher.png",
+        stats: { Teacher: { affinity: 15 } },
         next: "day2_classroom"
     },
     "day2_classroom": {

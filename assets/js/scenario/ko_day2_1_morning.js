@@ -205,6 +205,31 @@ Object.assign(SCENARIO[2], {
         name: "담임선생님",
         text: "\"어라, {name?} 아니니? 전학 이틀째인데 벌써 학교에 적응한 모양이구나. 일찍 오는 모습이 보기 좋다.\"",
         character: "assets/images/characters/teacher.png",
+        next: "day2_teacher_free_talk"
+    },
+    "day2_teacher_free_talk": {
+        type: "free_talk",
+        name: "담임선생님",
+        text: "\"수업 시작 전까지 시간이 좀 남았네. 나한테 궁금한 거라도 있니?\"",
+        context: "교문 앞에서 담임선생님과 마주쳐 교실로 함께 걸어가는 상황",
+        personality: "공과 사가 뚜렷하지만 주인공에게는 은근히 약한 모습을 보이는 담임선생님.",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_teacher_contact_ask"
+    },
+    "day2_teacher_contact_ask": {
+        name: "담임선생님",
+        text: "\"아, 그러고 보니 비상연락망 때문에 네 번호가 필요했는데... 괜찮다면 지금 알려줄래?\"",
+        character: "assets/images/characters/teacher.png",
+        choices: [
+            { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom" }
+        ]
+    },
+    "day2_teacher_contact_success": {
+        name: "담임선생님",
+        text: "\"고마워. 그럼 무슨 일 있으면 연락할게. 자, 이제 교실로 가자.\"",
+        character: "assets/images/characters/teacher.png",
+        stats: { Teacher: { affinity: 15 } },
         next: "day2_classroom"
     },
     "day2_classroom": {
