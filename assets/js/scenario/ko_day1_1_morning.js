@@ -139,7 +139,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_name_share_2": {
         name: "서연",
-        text: "\"{name}... 후훗, 좋은 이름이다! 그럼 이제부터 {name}(이)라고 부를게. 잘 부탁해, {name}!\"",
+        text: "\"{name}... 후훗, 좋은 이름이다! 그럼 이제부터 {name}이라고 부를게. 잘 부탁해, {name}!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_1_2"
     },
@@ -213,7 +213,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_listen_2": {
         name: "서연",
-        text: "\"내 설명을 이렇게 잘 들어주니 정말 고마워. {name}은(는) 참 성실한 사람인 것 같네! 이런 태도라면 학교생활에 금방 적응할 거야.\"",
+        text: "\"내 설명을 이렇게 잘 들어주니 정말 고마워. {name}, 참 성실한 사람인 것 같네! 이런 태도라면 학교생활에 금방 적응할 거야.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
@@ -349,7 +349,7 @@ Object.assign(SCENARIO[1], {
     },
     "teacher_name_share": {
         name: "담임선생님",
-        text: "\"오, {name}(이)라고 하는구나. 이름이 참 예쁘네. 자, {name}. 친구들에게 자기소개 한마디 부탁할게.\"",
+        text: "\"오, {name}... 이름 참 예쁘네. 자, {name}. 친구들에게 자기소개 한마디 부탁할게.\"",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "엄청나게 텐션 높게 인사한다!", next: "class_after_party", setFlag: "personality_active" },

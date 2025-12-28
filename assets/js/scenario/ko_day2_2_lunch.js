@@ -41,20 +41,25 @@ Object.assign(SCENARIO[2], {
         text: "\"정말? 입맛에 맞을지 걱정했는데 다행이다. 자, 사양 말고 많이 먹어!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         setFlag: "day2_ate_lunch_seoyeon",
-        next: "day2_afternoon_class"
+        next: "day2_seoyeon_lunch_end"
     },
     "day2_seoyeon_lunch_worry": {
         name: "서연",
         text: "\"괜찮아. 네가 맛있게 먹어주는 모습 보니까 피곤함이 싹 가시는 것 같아. 정말로.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         setFlag: "day2_ate_lunch_seoyeon",
-        next: "day2_afternoon_class"
+        next: "day2_seoyeon_lunch_end"
     },
     "day2_seoyeon_lunch_touch": {
         name: "서연",
         text: "\"아... 고, 고마워. 내가 너무 급하게 먹었나 보네... (서연이의 얼굴이 살짝 붉어진다)\"",
         character: "assets/images/characters/seyoun_shy.png",
         setFlag: "day2_ate_lunch_seoyeon",
+        next: "day2_seoyeon_lunch_end"
+    },
+    "day2_seoyeon_lunch_end": {
+        name: "나",
+        text: "(서연이와 즐거운 점심시간을 보내고 교실로 돌아왔다. 그녀가 직접 만든 샌드위치의 여운이 입안에 기분 좋게 남아있다.)",
         next: "day2_afternoon_class"
     },
     "day2_lunch_yuna": {
@@ -132,27 +137,32 @@ Object.assign(SCENARIO[2], {
         text: "\"후훗, 역시 넌 다른 애들이랑 달라. 좋아, 하지만 각오해야 할 거야. 진실은 때로 독이 되기도 하니까.\"",
         character: "assets/images/characters/yuna_smile.png",
         setFlag: "day2_met_yuna_lunch",
-        next: "day2_afternoon_class"
+        next: "day2_yuna_lunch_end"
     },
     "day2_yuna_secret_stop": {
         name: "유나",
         text: "\"...겁쟁이구나. 뭐, 이해해. 평범한 아이라면 그게 당연한 반응이니까. 오늘은 이만 가봐.\"",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "day2_met_yuna_lunch",
-        next: "day2_afternoon_class"
+        next: "day2_yuna_lunch_end"
     },
     "day2_yuna_secret_why": {
         name: "유나",
         text: "\"글쎄... 잃어버린 기억을 찾기 위해서라고 해둘까? 아니면 이 지루한 학교생활에 자극이 필요해서일지도.\"",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "day2_met_yuna_lunch",
-        next: "day2_afternoon_class"
+        next: "day2_yuna_lunch_end"
     },
     "day2_yuna_normal": {
         name: "유나",
         text: "\"...그래? 넌 참 이상한 애야. 다른 애들은 다들 무서워하는데. 좋아, 그럼 오늘은 그냥 이렇게 같이 있자.\"",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_lunch_end": {
+        name: "나",
+        text: "(유나와 헤어져 교실로 돌아왔다. 그녀가 했던 기묘한 말들이 머릿속을 맴돌아 오후 수업에 집중하기가 힘들었다.)",
         next: "day2_afternoon_class"
     },
     "day2_lunch_dain": {
@@ -211,20 +221,25 @@ Object.assign(SCENARIO[2], {
         text: "\"에이~ 내가 쏜다니까! 전학생이 무슨 돈이 있다고 그래? 오늘은 내가 대접할 테니까 그냥 맛있게 먹기나 해!\"",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "day2_met_dain_lunch",
-        next: "day2_afternoon_class"
+        next: "day2_dain_lunch_end"
     },
     "day2_dain_store_rooftop": {
         name: "다인",
         text: "\"옥상? 오, 그것도 좋지! 시원한 바람 맞으면서 먹으면 더 맛있겠다. 좋아, 얼른 빵만 사서 올라가자!\"",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "day2_met_dain_lunch",
-        next: "day2_afternoon_class"
+        next: "day2_dain_lunch_end"
     },
     "day2_dain_store_race": {
         name: "다인",
         text: "\"오호! 역시 내 파트너답다! 좋아, 누가 먼저 낚나 내기하자! 지는 사람이 음료수 쏘기!\"",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "day2_met_dain_lunch",
+        next: "day2_dain_lunch_end"
+    },
+    "day2_dain_lunch_end": {
+        name: "나",
+        text: "(다인이와 시끌벅적하게 점심을 먹고 교실로 돌아왔다. 그녀의 밝은 에너지 덕분에 오후 수업도 힘낼 수 있을 것 같다.)",
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {

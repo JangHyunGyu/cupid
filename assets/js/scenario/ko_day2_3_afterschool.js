@@ -398,6 +398,15 @@ Object.assign(SCENARIO[2], {
         name: "보건선생님",
         text: "\"어머, {name?}. 또 왔네? 오늘은 어디가 아파서 온 걸까? 아니면... 그냥 내 얼굴 보러 온 거야?\"",
         character: "assets/images/characters/nurse.png",
+        branches: [
+            { next: "day2_after_nurse_invited", condition: "invited_nurse_home" },
+            { next: "day2_after_nurse_3" }
+        ]
+    },
+    "day2_after_nurse_invited": {
+        name: "보건선생님",
+        text: "\"후훗, {name?}. 오늘 밤 우리 집에서 보기로 한 거... 잊지 않았지? 벌써부터 보고 싶어서 달려온 거라면 선생님 정말 감동인데?\"",
+        character: "assets/images/characters/nurse.png",
         next: "day2_after_nurse_3"
     },
     "day2_after_nurse_new": {

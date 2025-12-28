@@ -42,9 +42,37 @@ Object.assign(SCENARIO[2], {
             { text: "유나에게 메시지를 보낸다.", next: "day2_night_message_yuna", condition: "has_number_yuna" },
             { text: "다인이에게 메시지를 보낸다.", next: "day2_night_message_dain", condition: "has_number_dain" },
             { text: "보건선생님께 메시지를 보낸다.", next: "day2_night_message_nurse", condition: "has_number_nurse" },
+            { text: "보건선생님 댁으로 향한다.", next: "day2_night_nurse_home", condition: "invited_nurse_home" },
             { text: "호감도 확인하기", next: "day2_check_affinity" },
             { text: "그냥 잠을 청한다.", next: "day2_final_scene" }
         ]
+    },
+    "day2_night_nurse_home": {
+        name: "나",
+        text: "(선생님이 알려준 주소로 향했다. 학교 근처의 조용한 오피스텔이다.)",
+        background: "assets/images/background/nurse_house.png",
+        character: null,
+        night: true,
+        next: "day2_night_nurse_home_2"
+    },
+    "day2_night_nurse_home_2": {
+        name: "보건선생님",
+        text: "\"어머, 정말로 왔네? 어서 들어오렴. 밖이 많이 춥지?\"",
+        character: "assets/images/characters/nurse.png",
+        night: true,
+        next: "day2_night_nurse_home_3"
+    },
+    "day2_night_nurse_home_3": {
+        name: "보건선생님",
+        text: "\"자, 여기 앉으렴. 따뜻한 차 한 잔 줄게. 우리 전학생이랑 단둘이 있으니까... 왠지 기분이 묘하네?\"",
+        character: "assets/images/characters/nurse.png",
+        night: true,
+        next: "day2_night_nurse_home_4"
+    },
+    "day2_night_nurse_home_4": {
+        name: "나",
+        text: "(선생님과 단둘이 남겨진 방... 심장 소리가 귓가에 울릴 정도로 크게 들려온다. 그녀의 향기가 코끝을 간지럽히고, 밤은 점점 깊어만 간다.)",
+        next: "day2_final"
     },
     "day2_check_affinity": {
         name: "시스템",

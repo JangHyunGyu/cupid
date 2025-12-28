@@ -112,6 +112,11 @@ Object.assign(SCENARIO[1], {
         text: "(서연이의 표정이 순식간에 굳어진다. 당황한 듯 젓가락을 내려놓는다.) \"음.. 그건 좀... {name}, 우리 아직 그 정도로 친한 건 아니잖아. 장난이 과해.\"",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -15 } },
+        next: "rooftop_awkward"
+    },
+    "rooftop_awkward": {
+        name: "나",
+        text: "(분위기가 순식간에 어색해졌다. 우리는 한동안 말없이 도시락만 먹었다.)",
         next: "rooftop_2"
     },
     "rooftop_talk_rude": {
