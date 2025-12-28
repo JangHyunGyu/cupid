@@ -74,6 +74,7 @@ Object.assign(SCENARIO[2], {
         text: "(A room left alone with the teacher... My heart beats so loud I can hear it in my ears. Her scent tickles the tip of my nose, and the night grows deeper.)",
         background: "assets/images/background/nurse_house.png",
         night: true,
+        fade: true,
         next: "day2_final"
     },
     "day2_check_affinity": {
@@ -227,13 +228,14 @@ Object.assign(SCENARIO[2], {
         text: "(What kind of truth will be waiting for me tomorrow...? My heavy eyelids close as I drift into sleep.)",
         background: "assets/images/background/room_my.png",
         night: true,
+        fade: true,
         next: "day2_final"
     },
     "day2_final": {
         name: "System",
         text: "(The scenario developed so far is up to here. Please look forward to the next update!)",
-        background: "assets/images/background/room_my.png",
-        night: true,
+        background: null,
+        fade: true,
         next: "day2_final"
     }
 });
