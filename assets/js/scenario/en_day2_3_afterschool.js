@@ -340,6 +340,7 @@ Object.assign(SCENARIO[2], {
         name: "Dain",
         text: "\"Oh? Confident, are we? Fine, let's make a bet. Loser buys Tteokbokki!\"",
         character: "assets/images/characters/dain_laugh.png",
+        setFlag: "day2_dain_bet",
         next: "day2_dain_night_talk"
     },
     "day2_dain_food": {

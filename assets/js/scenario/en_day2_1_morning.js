@@ -71,9 +71,16 @@ Object.assign(SCENARIO[2], {
         text: "(She leans in close and gives me a playful wink.)",
         character: "assets/images/characters/nurse.png",
         branches: [
+            { next: "day2_nurse_talk_msg", condition: "sent_msg_day1_nurse" },
             { next: "day2_nurse_talk_has_number", condition: "has_number_nurse" },
             { next: "day2_nurse_talk_no_number" }
         ]
+    },
+    "day2_nurse_talk_msg": {
+        name: "Nurse",
+        text: "\"The message you sent last night was really cute. It helped me sleep with a smile on my face. If you feel unwell today, you know where to find me.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_classroom"
     },
     "day2_nurse_talk_has_number": {
         name: "Nurse",
@@ -98,9 +105,16 @@ Object.assign(SCENARIO[2], {
         text: "(She catches my eye and offers a warm, gentle smile.)",
         character: "assets/images/characters/seyoun_nomal.png",
         branches: [
+            { next: "day2_seoyeon_talk_msg", condition: "sent_msg_day1_seyoun" },
             { next: "day2_seoyeon_talk_has_number", condition: "has_number_seyoun" },
             { next: "day2_seoyeon_talk_no_number" }
         ]
+    },
+    "day2_seoyeon_talk_msg": {
+        name: "Seoyeon",
+        text: "\"I was so happy to get your message last night! I wanted to reply right away, but I was worried I might be bothering you. Hehe, let's go to the classroom together!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_classroom"
     },
     "day2_seoyeon_talk_has_number": {
         name: "Seoyeon",
@@ -140,9 +154,16 @@ Object.assign(SCENARIO[2], {
         text: "(Dain taps my shoulder energetically.)",
         character: "assets/images/characters/dain_laugh.png",
         branches: [
+            { next: "day2_dain_talk_msg", condition: "sent_msg_day1_dain" },
             { next: "day2_dain_talk_dated", condition: "datedDainDay1" },
             { next: "day2_dain_talk_not_dated" }
         ]
+    },
+    "day2_dain_talk_msg": {
+        name: "Dain",
+        text: "\"I got your message yesterday! You're surprisingly sweet, aren't you? Thanks to you, I slept like a baby. Let's have an energetic day today too!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_classroom"
     },
     "day2_dain_talk_dated": {
         name: "Dain",
