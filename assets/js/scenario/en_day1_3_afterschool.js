@@ -135,7 +135,10 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"It's a promise! No breaking it! See you tomorrow, {name?}. Get home safe!\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "after_seoyeon_contact_check"
+        branches: [
+            { next: "after_home", condition: "has_number_seyoun" },
+            { next: "after_seoyeon_contact_ask" }
+        ]
     },
     "after_seoyeon_tease": {
         name: "Seoyeon",
@@ -147,9 +150,6 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"Hmph... You're so mean! But you'd better show up. If you don't, I'll use my authority as president to punish you! Hehe, just kidding. See you tomorrow!\"",
         character: "assets/images/characters/seyoun_pout.png",
-        next: "after_seoyeon_contact_check"
-    },
-    "after_seoyeon_contact_check": {
         branches: [
             { next: "after_home", condition: "has_number_seyoun" },
             { next: "after_seoyeon_contact_ask" }
@@ -600,9 +600,6 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
-        next: "after_dain_contact_check"
-    },
-    "after_dain_contact_check": {
         branches: [
             { next: "after_home", condition: "has_number_dain" },
             { next: "dain_contact_exchange" }
@@ -709,9 +706,6 @@ Object.assign(SCENARIO[1], {
         context: "Chatting with the nurse in her office at sunset before heading home.",
         personality: "A mature, alluring 'big sister' type. She's fond of the protagonist and likes to tease him gently.",
         character: "assets/images/characters/nurse.png",
-        next: "after_nurse_contact_check"
-    },
-    "after_nurse_contact_check": {
         branches: [
             { next: "after_home", condition: "has_number_nurse" },
             { next: "nurse_after_day1_contact" }

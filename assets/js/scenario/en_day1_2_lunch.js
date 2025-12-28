@@ -28,9 +28,6 @@ Object.assign(SCENARIO[1], {
         text: "(As I approach Seoyeon, she welcomes me with a bright smile.)",
         character: "assets/images/characters/seyoun_nomal.png",
         setFlag: "metSeoyeon",
-        next: "lunch_seoyeon_2"
-    },
-    "lunch_seoyeon_2": {
         branches: [
             { next: "lunch_seoyeon_2_study", condition: "personality_study" },
             { next: "lunch_seoyeon_2_party", condition: "personality_active" },
@@ -490,9 +487,6 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "\"My name is '{name}'.\"",
         setFlag: "knowsName_Nurse",
-        next: "nurse_name_share"
-    },
-    "nurse_name_share": {
         branches: [
             { next: "nurse_name_share_study", condition: "personality_study" },
             { next: "nurse_name_share_normal" }

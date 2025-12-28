@@ -37,12 +37,6 @@ Object.assign(SCENARIO[2], {
             { text: "보건실에 있는 선생님을 찾아간다.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" }
         ]
     },
-    "day2_after_nurse_check": {
-        branches: [
-            { next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
-            { next: "day2_after_nurse" }
-        ]
-    },
     "day2_after_nurse_stay": {
         name: "나",
         text: "(보건실 침대에서 일어나 기지개를 켰다. 선생님은 여전히 책을 읽고 계신다.)",
@@ -112,9 +106,6 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_laugh.png",
         night: true,
         setFlag: "day2_met_seoyeon_after",
-        next: "day2_seoyeon_contact_check"
-    },
-    "day2_seoyeon_contact_check": {
         branches: [
             { next: "day2_end", condition: "has_number_seyoun" },
             { next: "day2_seoyeon_contact_ask" }
@@ -161,7 +152,10 @@ Object.assign(SCENARIO[2], {
         text: "\"왔구나. 자, 나를 따라와. 보여줄 게 있어.\"",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
-        next: "day2_after_yuna_follow"
+        branches: [
+            { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_follow_new" }
+        ]
     },
     "day2_after_yuna_new": {
         name: "???",
@@ -190,9 +184,6 @@ Object.assign(SCENARIO[2], {
         text: "\"{name}... 기억해둘게. 자, 나를 따라와. 너한테만 보여줄 게 있으니까.\"",
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
-        next: "day2_after_yuna_follow"
-    },
-    "day2_after_yuna_follow": {
         branches: [
             { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
             { next: "day2_after_yuna_follow_new" }
@@ -202,15 +193,15 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(유나를 따라 다시 지하실 창고로 내려갔다. 아까보다 공기가 더 차갑게 느껴진다. 창밖의 빛이 완전히 사라진 듯 지하실은 칠흑 같은 어둠에 잠겨 있다.)",
         night: true,
-        next: "day2_after_yuna_3_pre"
+        branches: [
+            { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_3_pre_new" }
+        ]
     },
     "day2_after_yuna_follow_new": {
         name: "나",
         text: "(유나를 따라 지하실의 먼지 쌓인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다. 어느새 밖은 완전히 어두워진 모양이다.)",
         night: true,
-        next: "day2_after_yuna_3_pre"
-    },
-    "day2_after_yuna_3_pre": {
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
             { next: "day2_after_yuna_3_pre_new" }
@@ -268,9 +259,6 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         setFlag: "day2_met_yuna_after",
-        next: "day2_yuna_contact_check"
-    },
-    "day2_yuna_contact_check": {
         branches: [
             { next: "day2_end", condition: "has_number_yuna" },
             { next: "day2_yuna_contact_ask" }
@@ -387,9 +375,6 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_laugh.png",
         night: true,
         setFlag: "day2_met_dain_after",
-        next: "day2_dain_contact_check"
-    },
-    "day2_dain_contact_check": {
         branches: [
             { next: "day2_end", condition: "has_number_dain" },
             { next: "day2_dain_contact_ask" }
@@ -515,18 +500,10 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         night: true,
         setFlag: "day2_met_nurse_after",
-        next: "day2_nurse_contact_check"
-    },
-    "day2_nurse_contact_check": {
-        branches: [
-            { next: "day2_nurse_contact_already_have", condition: "has_number_nurse" },
-            { next: "day2_nurse_contact_ask" }
-        ]
-    },
-    "day2_nurse_contact_already_have": {
         branches: [
             { next: "day2_end", condition: "invited_nurse_home" },
-            { next: "day2_nurse_contact_already_have_talk" }
+            { next: "day2_nurse_contact_already_have_talk", condition: "has_number_nurse" },
+            { next: "day2_nurse_contact_ask" }
         ]
     },
     "day2_nurse_contact_already_have_talk": {

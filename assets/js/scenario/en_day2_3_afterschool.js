@@ -37,12 +37,6 @@ Object.assign(SCENARIO[2], {
             { text: "Go to the teacher in the nurse's office.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" }
         ]
     },
-    "day2_after_nurse_check": {
-        branches: [
-            { next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
-            { next: "day2_after_nurse" }
-        ]
-    },
     "day2_after_nurse_stay": {
         name: "Me",
         text: "(I got up from the nurse's office bed and stretched. The teacher is still reading a book.)",
@@ -112,9 +106,6 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_laugh.png",
         night: true,
         setFlag: "day2_met_seoyeon_after",
-        next: "day2_seoyeon_contact_check"
-    },
-    "day2_seoyeon_contact_check": {
         branches: [
             { next: "day2_end", condition: "has_number_seyoun" },
             { next: "day2_seoyeon_contact_ask" }
@@ -150,7 +141,7 @@ Object.assign(SCENARIO[2], {
         text: "(The library annex. As I step into the old building, a cool draft of air surrounds me.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
-        night: true,
+        sunset: true,
         branches: [
             { next: "day2_after_yuna_met", condition: "metYuna" },
             { next: "day2_after_yuna_new" }
@@ -161,7 +152,10 @@ Object.assign(SCENARIO[2], {
         text: "\"You came. Come, follow me. There's something I want to show you.\"",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
-        next: "day2_after_yuna_follow"
+        branches: [
+            { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_follow_new" }
+        ]
     },
     "day2_after_yuna_new": {
         name: "???",
@@ -190,9 +184,6 @@ Object.assign(SCENARIO[2], {
         text: "\"{name}... I'll remember that. Come, follow me. I have something to show you.\"",
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
-        next: "day2_after_yuna_follow"
-    },
-    "day2_after_yuna_follow": {
         branches: [
             { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
             { next: "day2_after_yuna_follow_new" }
@@ -202,15 +193,15 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(I follow Yuna back down to the basement warehouse. The air feels even colder than before. The basement is plunged into pitch-black darkness, as if the light from outside has completely vanished.)",
         night: true,
-        next: "day2_after_yuna_3_pre"
+        branches: [
+            { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_3_pre_new" }
+        ]
     },
     "day2_after_yuna_follow_new": {
         name: "Me",
         text: "(I follow Yuna down to a dusty, old warehouse in the basement. A strange chill hangs in the air. It seems it has already become completely dark outside.)",
         night: true,
-        next: "day2_after_yuna_3_pre"
-    },
-    "day2_after_yuna_3_pre": {
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
             { next: "day2_after_yuna_3_pre_new" }
@@ -268,9 +259,6 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         setFlag: "day2_met_yuna_after",
-        next: "day2_yuna_contact_check"
-    },
-    "day2_yuna_contact_check": {
         branches: [
             { next: "day2_end", condition: "has_number_yuna" },
             { next: "day2_yuna_contact_ask" }
@@ -306,7 +294,7 @@ Object.assign(SCENARIO[2], {
         text: "(I open the gym door to hear the sound of volleyballs bouncing along with energetic shouts.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
-        night: true,
+        sunset: true,
         branches: [
             { next: "day2_after_dain_met", condition: "metDain" },
             { next: "day2_after_dain_new" }
@@ -316,7 +304,7 @@ Object.assign(SCENARIO[2], {
         name: "Dain",
         text: "\"Oh! {name?}! You're just in time. Can you help me with my practice?\"",
         character: "assets/images/characters/dain_nomal.png",
-        night: true,
+        sunset: true,
         next: "day2_after_dain_practice"
     },
     "day2_after_dain_practice": {
@@ -330,7 +318,7 @@ Object.assign(SCENARIO[2], {
         name: "???",
         text: "\"Haa, haa... Your reflexes are insane! We've never met, but we're totally in sync!\"",
         character: "assets/images/characters/dain_sweat.png",
-        night: true,
+        sunset: true,
         setFlag: "metDain",
         next: "day2_after_dain_new_name_ask"
     },
@@ -338,13 +326,13 @@ Object.assign(SCENARIO[2], {
         name: "???",
         text: "\"I'm Dain Jung from Class 2-3! What's your name?\"",
         character: "assets/images/characters/dain_nomal.png",
-        night: true,
+        sunset: true,
         next: "day2_after_dain_new_name_share"
     },
     "day2_after_dain_new_name_share": {
         name: "Me",
         text: "\"I'm {name}. I'm in Class 2-3 too.\"",
-        night: true,
+        sunset: true,
         setFlag: "knowsName_Dain",
         next: "day2_after_dain_3"
     },
@@ -515,18 +503,10 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         night: true,
         setFlag: "day2_met_nurse_after",
-        next: "day2_nurse_contact_check"
-    },
-    "day2_nurse_contact_check": {
-        branches: [
-            { next: "day2_nurse_contact_already_have", condition: "has_number_nurse" },
-            { next: "day2_nurse_contact_ask" }
-        ]
-    },
-    "day2_nurse_contact_already_have": {
         branches: [
             { next: "day2_end", condition: "invited_nurse_home" },
-            { next: "day2_nurse_contact_already_have_talk" }
+            { next: "day2_nurse_contact_already_have_talk", condition: "has_number_nurse" },
+            { next: "day2_nurse_contact_ask" }
         ]
     },
     "day2_nurse_contact_already_have_talk": {

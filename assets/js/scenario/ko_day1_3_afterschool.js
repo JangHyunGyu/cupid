@@ -135,7 +135,10 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"약속한 거다? 어기기 없기! 그럼 내일 봐 {name?}. 조심해서 들어가!\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "after_seoyeon_contact_check"
+        branches: [
+            { next: "after_home", condition: "has_number_seyoun" },
+            { next: "after_seoyeon_contact_ask" }
+        ]
     },
     "after_seoyeon_tease": {
         name: "서연",
@@ -147,9 +150,6 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"흥... 정말 못됐어! 그래도 꼭 와야 해. 안 오면 학생회장으로서 아주 무서운...? 농담이야. 내일 봐!\"",
         character: "assets/images/characters/seyoun_pout.png",
-        next: "after_seoyeon_contact_check"
-    },
-    "after_seoyeon_contact_check": {
         branches: [
             { next: "after_home", condition: "has_number_seyoun" },
             { next: "after_seoyeon_contact_ask" }
@@ -600,9 +600,6 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
-        next: "after_dain_contact_check"
-    },
-    "after_dain_contact_check": {
         branches: [
             { next: "after_home", condition: "has_number_dain" },
             { next: "dain_contact_exchange" }
@@ -709,9 +706,6 @@ Object.assign(SCENARIO[1], {
         context: "방과 후 노을 지는 보건실, 학교 보건선생님과 단둘이 대화를 나누는 상황",
         personality: "성숙하고 매혹적인 '누님' 스타일. 주인공을 귀여워하며 챙겨줌.",
         character: "assets/images/characters/nurse.png",
-        next: "after_nurse_contact_check"
-    },
-    "after_nurse_contact_check": {
         branches: [
             { next: "after_home", condition: "has_number_nurse" },
             { next: "nurse_after_day1_contact" }

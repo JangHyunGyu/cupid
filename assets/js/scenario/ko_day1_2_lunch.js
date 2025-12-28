@@ -28,9 +28,6 @@ Object.assign(SCENARIO[1], {
         text: "(서연이에게 다가가자 그녀가 환하게 웃으며 나를 반긴다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         setFlag: "metSeoyeon",
-        next: "lunch_seoyeon_2"
-    },
-    "lunch_seoyeon_2": {
         branches: [
             { next: "lunch_seoyeon_2_study", condition: "personality_study" },
             { next: "lunch_seoyeon_2_party", condition: "personality_active" },
@@ -494,9 +491,6 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "\"제 이름은 '{name}'이에요.\"",
         setFlag: "knowsName_Nurse",
-        next: "nurse_name_share"
-    },
-    "nurse_name_share": {
         branches: [
             { next: "nurse_name_share_study", condition: "personality_study" },
             { next: "nurse_name_share_normal" }
