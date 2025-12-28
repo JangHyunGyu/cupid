@@ -406,7 +406,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_2": {
         name: "???",
-        text: "(체육관 문을 열자, 그곳에 그녀가 있었다. 그녀가 나를 발견하고는 환하게 웃으며 손을 흔든다.)",
+        text: "(체육관 문을 열자, 한 소녀가 배구 연습을 하고 있었다. 그녀가 나를 발견하고는 환하게 웃으며 손을 흔든다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
@@ -460,12 +460,17 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "\"오! 그 기세야! 자, 간다! (다인이가 강력한 서브를 날린다. 나는 간신히 공을 받아냈다)\"",
         character: "assets/images/characters/dain_active.png",
-        next: "after_school_start"
+        next: "lunch_dain_end"
     },
     "lunch_dain_teach": {
         name: "다인",
         text: "\"에헤, 걱정 마! 이 다인 님이 기초부터 확실하게 가르쳐줄게. 자, 일단 자세부터 잡아볼까?\"",
         character: "assets/images/characters/dain_laugh.png",
+        next: "lunch_dain_end"
+    },
+    "lunch_dain_end": {
+        name: "나",
+        text: "(그 뒤로 점심시간이 끝날 때까지 다인과 함께 땀을 흘렸다. 전학 첫날부터 이렇게 활기차게 보낼 줄은 몰랐는데... 어느덧 오후 수업도 모두 끝났다.)",
         next: "after_school_start"
     },
     "lunch_nurse": {

@@ -442,7 +442,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_new": {
         name: "나",
-        text: "(체육관으로 향하는 노을빛이 스며드는 창문 아래에서 한 소녀가 배구 연습을 하는 다인이 보인다. 그중에서도 유독 눈에 띄는 한 소녀가 있다.)",
+        text: "(체육관으로 향하자 노을빛이 스며드는 코트 위에서 배구 연습을 하고 있는 부원들이 보인다. 그중에서도 유독 눈에 띄는 한 소녀가 있다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_active.png",
         sunset: true,

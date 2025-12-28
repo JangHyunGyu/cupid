@@ -372,7 +372,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_2": {
         name: "???",
-        text: "(As I open the gym door, she was there. She discovers me and smiles brightly, waving her hand.)",
+        text: "(As I open the gym door, a girl was practicing volleyball. She notices me and waves her hand with a bright smile.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
@@ -413,12 +413,17 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "\"Oh! That's the spirit! Here I come! (Dain sends a powerful serve. I barely manage to return it)\"",
         character: "assets/images/characters/dain_active.png",
-        next: "after_school_start"
+        next: "lunch_dain_end"
     },
     "lunch_dain_teach": {
         name: "Dain",
         text: "\"Hehe, don't worry! I, Dain, will teach you from the basics. Now, let's start with your posture!\"",
         character: "assets/images/characters/dain_laugh.png",
+        next: "lunch_dain_end"
+    },
+    "lunch_dain_end": {
+        name: "Me",
+        text: "(After that, I spent the rest of the lunch break working up a sweat with Dain. I didn't expect to spend my first day so energetically... Before I knew it, the afternoon classes were over.)",
         next: "after_school_start"
     },
     "lunch_nurse": {
