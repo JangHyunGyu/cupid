@@ -375,13 +375,17 @@ async function renderScene(sceneId) {
         startFreeTalk(scene);
     } else if (scene.type === 'input') {
         dialogueBox.style.pointerEvents = 'none'; // 클릭이 입력창으로 전달되도록 설정
-        await typeText(scene.text, scene.name);
+        if (scene.text) await typeText(scene.text, scene.name);
         nameInputContainer.style.display = 'block';
         playerNameInput.value = "";
         playerNameInput.focus();
     } else {
         // 텍스트 타이핑 효과
-        await typeText(scene.text, scene.name);
+        if (scene.text) {
+            await typeText(scene.text, scene.name);
+        } else {
+            messageEl.textContent = "";
+        }
         
         // 선택지가 없거나, 선택지가 하나뿐이고 그 텍스트가 "다음" 또는 "Next"인 경우 지시계 표시
         let showNextIndicator = !scene.choices;
@@ -986,6 +990,10 @@ ${charAddressingGuideline}${datingGuideline}
 }
 
 function typeText(text, charName) {
+    if (text === undefined || text === null) {
+        console.warn("typeText called with null/undefined text");
+        return Promise.resolve();
+    }
     const isEn = document.documentElement.lang === 'en';
     const isPlayer = charName === "나" || charName === "Me" || charName === "시스템" || charName === "System";
     
