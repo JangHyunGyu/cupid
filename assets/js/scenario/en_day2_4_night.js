@@ -121,7 +121,7 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Seoyeon has sent a reply, happy with the protagonist's message.",
         night: true,
-        stats: { Seoyeon: { affinity: 5 } },
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day2_final_scene"
     },
     "day2_night_message_yuna": {
@@ -154,7 +154,7 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Yuna has sent a short but deeply lingering reply to the protagonist's message.",
         night: true,
-        stats: { Yuna: { affinity: 5 } },
+        stats: { Yuna: { affinity: 3 } },
         next: "day2_final_scene"
     },
     "day2_night_message_dain": {
@@ -207,7 +207,7 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Dain has sent an energetic reply to the protagonist's message.",
         night: true,
-        stats: { Dain: { affinity: 5 } },
+        stats: { Dain: { affinity: 3 } },
         next: "day2_final_scene"
     },
     "day2_night_message_nurse": {
@@ -240,7 +240,7 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Nurse has sent a playful and alluring reply to the protagonist's message.",
         night: true,
-        stats: { Nurse: { affinity: 5 } },
+        stats: { Nurse: { affinity: 3 } },
         next: "day2_final_scene"
     },
     "day2_night_message_teacher": {
@@ -259,7 +259,7 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Teacher is a bit surprised but grateful for the protagonist's message.",
         night: true,
-        stats: { Teacher: { affinity: 5 } },
+        stats: { Teacher: { affinity: 3 } },
         next: "day2_final_scene"
     },
     "day2_final_scene": {

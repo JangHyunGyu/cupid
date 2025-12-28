@@ -71,7 +71,7 @@ Object.assign(SCENARIO[1], {
         name: "담임선생님",
         text: "(다정한 답장.) '어머, {name?} 학생이구나? 전학 첫날이라 힘들었을 텐데 기특하네. 푹 쉬고 내일 보자!'",
         night: true,
-        stats: { Teacher: { affinity: 5 } },
+        stats: { Teacher: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_seyoun": {
@@ -106,14 +106,14 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(징~ 즉각적인 답장.) '정말? 다행이다! 맛있게 먹어줘서 내가 더 고마워. 내일도 기대해줘! 잘 자 {name?}.'",
         night: true,
-        stats: { Seoyeon: { affinity: 5 } },
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_seyoun_reply_generic": {
         name: "서연",
         text: "(징~ 즉각적인 답장.) '나도 정말 즐거웠어! {name?} 덕분에 든든해. 내일 학교에서 보자. 잘 자요.'",
         night: true,
-        stats: { Seoyeon: { affinity: 5 } },
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_yuna": {
@@ -127,7 +127,7 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "(잠시 후 도착한 답장.) '...응. 너도 잘 자. 내일 학교에서 봐 {name?}.'",
         night: true,
-        stats: { Yuna: { affinity: 5 } },
+        stats: { Yuna: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_dain": {
@@ -154,14 +154,14 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(활기찬 답장.) '그치? 내가 맛집은 다 꿰고 있다니까! 푹 자고 내일 보자, {name?}! 굿나잇!'",
         night: true,
-        stats: { Dain: { affinity: 5 } },
+        stats: { Dain: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_dain_reply_generic": {
         name: "다인",
         text: "(활기찬 답장.) '오~ 지켜보고 있었냐? 부끄럽게! 하하, 내일은 더 멋진 모습 보여줄게. 잘 자, {name?}!'",
         night: true,
-        stats: { Dain: { affinity: 5 } },
+        stats: { Dain: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_nurse": {
@@ -175,7 +175,7 @@ Object.assign(SCENARIO[1], {
         name: "보건선생님",
         text: "(매혹적인 답장.) '어머, 정말로  연락했네? 우리 전학생, 정말 착하네. 좋은 꿈 꾸렴, {name?}.'",
         night: true,
-        stats: { Nurse: { affinity: 5 } },
+        stats: { Nurse: { affinity: 3 } },
         next: "day1_end"
     },
     "day1_end": {

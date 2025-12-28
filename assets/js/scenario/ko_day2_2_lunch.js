@@ -23,7 +23,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_teacher": {
         name: "나",
         text: "(교무실 문을 열자, 도시락을 드시려던 담임선생님이 나를 보고 반갑게 웃으신다.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_room.png",
         character: "assets/images/characters/teacher.png",
         next: "day2_lunch_teacher_2"
     },
@@ -38,9 +38,9 @@ Object.assign(SCENARIO[2], {
         text: "\"혹시 선생님이랑 같이 점심 먹고 싶어서 온 거니? 후훗, 농담이야.\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
-            { text: "네, 선생님이랑 같이 먹고 싶어요! (옆에 앉는다)", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 15 } } },
-            { text: "선생님 도시락이 너무 맛있어 보여서요.", next: "day2_lunch_teacher_food", stats: { Teacher: { affinity: 10 } } },
-            { text: "아니요, 그냥 지나가다가 들렀어요.", next: "day2_lunch_teacher_pass", stats: { Teacher: { affinity: 5 } } }
+            { text: "네, 선생님이랑 같이 먹고 싶어요! (옆에 앉는다)", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 8 } } },
+            { text: "선생님 도시락이 너무 맛있어 보여서요.", next: "day2_lunch_teacher_food", stats: { Teacher: { affinity: 5 } } },
+            { text: "아니요, 그냥 지나가다가 들렀어요.", next: "day2_lunch_teacher_pass", stats: { Teacher: { affinity: 3 } } }
         ]
     },
     "day2_lunch_teacher_eat": {
@@ -78,9 +78,9 @@ Object.assign(SCENARIO[2], {
         text: "\"{name?}! 마침 오길 기다리고 있었어. 우리 여기 앉아. 오늘 샌드위치를 좀 넉넉하게 만들었거든.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "와, 정말 맛있어 보여! 서연이는 요리 천재구나.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "학생회 일 때문에 피곤하진 않아? 너무 무리하는 거 아냐?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "(서연이 볼에 묻은 빵가루를 떼어준다.)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 20 } } }
+            { text: "와, 정말 맛있어 보여! 서연이는 요리 천재구나.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "학생회 일 때문에 피곤하진 않아? 너무 무리하는 거 아냐?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "(서연이 볼에 묻은 빵가루를 떼어준다.)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "day2_seoyeon_lunch_praise": {
@@ -148,8 +148,8 @@ Object.assign(SCENARIO[2], {
         text: "\"어제 내가 했던 말... 기억해? 이 학교의 비밀 말이야. 사실 너한테만 보여주고 싶은 게 있어.\"",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
-            { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
-            { text: "비밀 같은 건 관심 없어. 그냥 너랑 이야기하고 싶어서 온 거야.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 8 } } }
+            { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
+            { text: "비밀 같은 건 관심 없어. 그냥 너랑 이야기하고 싶어서 온 거야.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
         ]
     },
     "day2_yuna_talk_2_new": {
@@ -158,8 +158,8 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "metYuna",
         choices: [
-            { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 10 } } },
-            { text: "그냥 쪽지 보고 궁금해서 와봤어. 넌 누구야?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } }
+            { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },
+            { text: "그냥 쪽지 보고 궁금해서 와봤어. 넌 누구야?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 3 } } }
         ]
     },
     "day2_yuna_new_name_ask": {
@@ -189,9 +189,9 @@ Object.assign(SCENARIO[2], {
         text: "\"이 안에는... 학교가 오랫동안 숨겨온 기록들이 있어. 네가 이걸 보면... 모든 게 달라질 거야.\"",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "그 기록, 나도 같이 봐도 될까?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
-            { text: "위험한 거 아냐? 그냥 내버려 두는 게 좋겠어.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -10 } } },
-            { text: "유나야, 넌 왜 이런 걸 조사하는 거야?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 5 } } }
+            { text: "그 기록, 나도 같이 봐도 될까?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 8 } } },
+            { text: "위험한 거 아냐? 그냥 내버려 두는 게 좋겠어.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -20 } } },
+            { text: "유나야, 넌 왜 이런 걸 조사하는 거야?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
         ]
     },
     "day2_yuna_secret_read": {
@@ -285,9 +285,9 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_store_choices": {
         choices: [
-            { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 10 } } },
-            { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 5 } } },
-            { text: "다인아, 저기 마지막 피자빵이다! 내가 먼저 낚아채올게!", next: "day2_dain_store_race", stats: { Dain: { affinity: 15 } } }
+            { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
+            { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
+            { text: "다인아, 저기 마지막 피자빵이다! 내가 먼저 낚아채올게!", next: "day2_dain_store_race", stats: { Dain: { affinity: 8 } } }
         ]
     },
     "day2_dain_store_buy": {
@@ -337,7 +337,7 @@ Object.assign(SCENARIO[2], {
         text: "\"어머, 우리 {name?}이네? 어디가 아픈 걸까, 아니면 내 얼굴 보고 싶어서 설레는 걸까?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 5 } },
+        stats: { Nurse: { affinity: 3 } },
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_new": {
@@ -367,11 +367,14 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_4"
     },
+    "day2_lunch_nurse_4": {
+        name: "보건선생님",
+        text: "\"자, 여기 편하게 누우렴. 선생님이 어디가 불편한지 봐줄게.\"",
         character: "assets/images/characters/nurse.png",
         choices: [
-            { text: "머리가 좀 아파요.", next: "day2_lunch_nurse_head", stats: { Nurse: { affinity: 5 } } },
-            { text: "그냥 좀 쉬고 싶어요.", next: "day2_lunch_nurse_rest", stats: { Nurse: { affinity: 5 } } },
-            { text: "선생님, 이런 식으로 학생들을 유혹하는 게 취미예요?", next: "day2_lunch_nurse_trap", stats: { Nurse: { affinity: -30 } } }
+            { text: "머리가 좀 아파요.", next: "day2_lunch_nurse_head", stats: { Nurse: { affinity: 3 } } },
+            { text: "그냥 좀 쉬고 싶어요.", next: "day2_lunch_nurse_rest", stats: { Nurse: { affinity: 3 } } },
+            { text: "선생님, 이런 식으로 학생들을 유혹하는 게 취미예요?", next: "day2_lunch_nurse_trap", stats: { Nurse: { affinity: -50 } } }
         ]
     },
     "day2_lunch_nurse_trap": {
@@ -394,8 +397,8 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         choices: [
-            { text: "선생님이 직접 먹여주시면 안 돼요?", next: "day2_lunch_nurse_head_tease", stats: { Nurse: { affinity: 10 } } },
-            { text: "감사합니다. (약을 받아 먹는다)", next: "day2_lunch_nurse_sleep", stats: { Nurse: { affinity: 5 } } }
+            { text: "선생님이 직접 먹여주시면 안 돼요?", next: "day2_lunch_nurse_head_tease", stats: { Nurse: { affinity: 5 } } },
+            { text: "감사합니다. (약을 받아 먹는다)", next: "day2_lunch_nurse_sleep", stats: { Nurse: { affinity: 3 } } }
         ]
     },
     "day2_lunch_nurse_head_tease": {
@@ -500,21 +503,21 @@ Object.assign(SCENARIO[2], {
                     { minAffinity: 70, next: "nurse_contact_home_success" }
                 ]
             },
-            { text: "아, 괜찮아요.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -10 } } }
+            { text: "아, 괜찮아요.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -20 } } }
         ]
     },
     "nurse_contact_success": {
         name: "보건선생님",
         text: "(그녀가 요염하게 웃으며 번호를 저장한다.) \"후훗, 그럼 나중에 밤에 기다릴게? 답장 늦게 하면 삐질지도 몰라.\"",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 15 } },
+        stats: { Nurse: { affinity: 8 } },
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_success": {
         name: "보건선생님",
         text: "(선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귓가에 속삭인다.) \"어머... {name?}, 생각보다 훨씬 대담하네? 좋아, 오늘 밤 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 30 } },
+        stats: { Nurse: { affinity: 15 } },
         setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
         next: "day2_afternoon_nurse_skip"
     },

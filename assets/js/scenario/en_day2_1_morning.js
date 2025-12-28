@@ -130,8 +130,8 @@ Object.assign(SCENARIO[2], {
         text: "\"Did you get home okay? I wanted to text you last night, but I was worried it might be too late...\"",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
-            { text: "I was actually waiting for your text! You can send one anytime.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "Ah, I see. I was so tired I crashed as soon as I got home.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 2 } } }
+            { text: "I was actually waiting for your text! You can send one anytime.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Ah, I see. I was so tired I crashed as soon as I got home.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 1 } } }
         ]
     },
     "day2_seoyeon_talk_no_number": {
@@ -179,8 +179,8 @@ Object.assign(SCENARIO[2], {
         text: "\"Thanks to the tteokbokki we ate yesterday, I'm in top condition today! You too, right?\"",
         character: "assets/images/characters/dain_laugh.png",
         choices: [
-            { text: "Yeah! I slept well thanks to Dain.", next: "day2_dain_happy", stats: { Dain: { affinity: 10 } } },
-            { text: "I'm a bit tired... Dain, you really have great stamina.", next: "day2_dain_normal", stats: { Dain: { affinity: 2 } } }
+            { text: "Yeah! I slept well thanks to Dain.", next: "day2_dain_happy", stats: { Dain: { affinity: 5 } } },
+            { text: "I'm a bit tired... Dain, you really have great stamina.", next: "day2_dain_normal", stats: { Dain: { affinity: 1 } } }
         ]
     },
     "day2_dain_talk_not_dated": {
@@ -229,7 +229,7 @@ Object.assign(SCENARIO[2], {
         name: "Teacher",
         text: "\"Thank you. I'll contact you if anything comes up. Now, let's head to the classroom.\"",
         character: "assets/images/characters/teacher.png",
-        stats: { Teacher: { affinity: 15 } },
+        stats: { Teacher: { affinity: 8 } },
         next: "day2_classroom"
     },
     "day2_classroom": {

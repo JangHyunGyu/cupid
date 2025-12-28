@@ -51,11 +51,11 @@ Object.assign(SCENARIO[1], {
         text: "\"나는 학생회장 서연이야. 선생님 부탁으로 마중 나왔어. 잘 부탁해!\"",
         setFlags: ["metSeoyeon", "knowsName_Seoyeon"],
         choices: [
-            { text: "응, 잘 부탁해. 학교가 커서 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "정말 예쁘다 (나도 모르게 본심이..!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "학생회장이 이렇게 예뻐도 되는 거야? 나 좀 특별하게 챙겨줘!", next: "path_tease_1", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "(너무 예뻐서 멍하니 바라본다.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "아, 그래? 근데 좀 비켜줄래? 바쁘거든.", next: "path_rude_1", stats: { Seoyeon: { affinity: -20 } } }
+            { text: "응, 잘 부탁해. 학교가 커서 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "정말 예쁘다 (나도 모르게 본심이..!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "학생회장이 이렇게 예뻐도 되는 거야? 나 좀 특별하게 챙겨줘!", next: "path_tease_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "(너무 예뻐서 멍하니 바라본다.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "아, 그래? 근데 좀 비켜줄래? 바쁘거든.", next: "path_rude_1", stats: { Seoyeon: { affinity: -30 } } }
         ]
     },
     "path_rude_1": {
@@ -163,10 +163,10 @@ Object.assign(SCENARIO[1], {
         text: "\"복도를 지나면서 학교 시설들을 간단히 설명해줄게. 저기 보이는 곳이 우리 학교의 자랑인 도서관이야. 그리고 저쪽은...\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -15 } } },
-            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 3 } } }
+            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
         ]
     },
     "hallway_talk_trap": {
@@ -234,11 +234,11 @@ Object.assign(SCENARIO[1], {
         text: "\"너는 어떤 동아리에 관심 있어? 우리 학생회도 항상 새로운 인재를 환영하고 있거든. 만약 네가 들어온다면.. 내가 직접 업무를 가르쳐줄 수도 있어.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "서연이가 있는 원예부라면 나도 관심 있어! 같이 꽃 가꾸고 싶어.", next: "path_club_flower", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "동아리보다는... 서연이 너에 대해 더 알고 싶은데?", next: "path_direct_2", stats: { Seoyeon: { affinity: 12 } } },
-            { text: "아직은 잘 모르겠어. 학교생활에 좀 적응하고 나서 결정할게.", next: "path_normal_2", stats: { Seoyeon: { affinity: -5 } } },
-            { text: "귀찮게 동아리는 무슨... 그냥 혼자 있을래.", next: "path_rude_2", stats: { Seoyeon: { affinity: -25 } } }
+            { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "서연이가 있는 원예부라면 나도 관심 있어! 같이 꽃 가꾸고 싶어.", next: "path_club_flower", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "동아리보다는... 서연이 너에 대해 더 알고 싶은데?", next: "path_direct_2", stats: { Seoyeon: { affinity: 6 } } },
+            { text: "아직은 잘 모르겠어. 학교생활에 좀 적응하고 나서 결정할게.", next: "path_normal_2", stats: { Seoyeon: { affinity: -10 } } },
+            { text: "귀찮게 동아리는 무슨... 그냥 혼자 있을래.", next: "path_rude_2", stats: { Seoyeon: { affinity: -40 } } }
         ]
     },
     "path_rude_2": {
@@ -340,11 +340,11 @@ Object.assign(SCENARIO[1], {
         text: "\"자, 다들 주목! 오늘부터 우리와 함께하게 된 {name}이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
-            { text: "좋아! 반 친구들이랑 오늘부터 잘 지내보자.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 10 } } },
-            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 8 } } },
-            { text: "만나서 반가워. 조용히 지내는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_Teacher"], stats: { Teacher: { affinity: 8 } } },
-            { text: "공부하러 왔어. 방해받는 건 질색이니까 적당히 지내자.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -5 } } }
+            { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 8 } } },
+            { text: "좋아! 반 친구들이랑 오늘부터 잘 지내보자.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
+            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "만나서 반가워. 조용히 지내는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "공부하러 왔어. 방해받는 건 질색이니까 적당히 지내자.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
         ]
     },
     "teacher_name_share": {
@@ -355,7 +355,7 @@ Object.assign(SCENARIO[1], {
             { text: "엄청나게 텐션 높게 인사한다!", next: "class_after_party", setFlag: "personality_active" },
             { text: "활발하게 인사한다.", next: "class_after_active", setFlag: "personality_active" },
             { text: "차분하게 인사한다.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "귀찮은 듯 대충 인사한다.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -10 } } }
+            { text: "귀찮은 듯 대충 인사한다.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
         ]
     },
     "class_after_active": {

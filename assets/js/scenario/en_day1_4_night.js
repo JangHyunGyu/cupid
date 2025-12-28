@@ -48,6 +48,7 @@ Object.assign(SCENARIO[1], {
             { text: "Send a message to Yuna.", next: "night_message_yuna", condition: "has_number_yuna" },
             { text: "Send a message to Dain.", next: "night_message_dain", condition: "has_number_dain" },
             { text: "Send a message to the Nurse.", next: "night_message_nurse", condition: "has_number_nurse" },
+            { text: "Send a message to the Homeroom Teacher.", next: "night_message_teacher", condition: "has_number_teacher" },
             { text: "Check Affinity Status", next: "day1_check_affinity" },
             { text: "Just sleep.", next: "day1_end" }
         ]
@@ -58,6 +59,20 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/room_my.png",
         night: true,
         next: "night_home_check_contact"
+    },
+    "night_message_teacher": {
+        name: "Me",
+        text: "(I send a message to the Homeroom Teacher. 'Teacher, thank you for taking care of me today. See you tomorrow!')",
+        night: true,
+        setFlag: "sent_msg_day1_teacher",
+        next: "night_message_teacher_reply"
+    },
+    "night_message_teacher_reply": {
+        name: "Homeroom Teacher",
+        text: "(A kind reply.) 'Oh, it's {name?}. You must have been tired on your first day, but you're so thoughtful. Rest well and see you tomorrow!'",
+        night: true,
+        stats: { Teacher: { affinity: 3 } },
+        next: "day1_end"
     },
     "night_message_seyoun": {
         branches: [
@@ -91,14 +106,14 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(Vibrate~ An immediate reply.) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name?}.'",
         night: true,
-        stats: { Seoyeon: { affinity: 5 } },
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_seyoun_reply_generic": {
         name: "Seoyeon",
         text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name?}. See you at school tomorrow. Good night.'",
         night: true,
-        stats: { Seoyeon: { affinity: 5 } },
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_yuna": {
@@ -112,7 +127,7 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "(A reply arrives after a short wait.) '...Yeah. You too. See you at school tomorrow, {name?}.'",
         night: true,
-        stats: { Yuna: { affinity: 5 } },
+        stats: { Yuna: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_dain": {
@@ -139,14 +154,14 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "(A lively reply.) 'Right? I told you I know all the best spots! Rest up and see you tomorrow, {name?}! Good night!'",
         night: true,
-        stats: { Dain: { affinity: 5 } },
+        stats: { Dain: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_dain_reply_generic": {
         name: "Dain",
         text: "(A lively reply.) 'Yeah! You too! See you at school tomorrow, {name?}! Good night!'",
         night: true,
-        stats: { Dain: { affinity: 5 } },
+        stats: { Dain: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_nurse": {
@@ -160,7 +175,7 @@ Object.assign(SCENARIO[1], {
         name: "Nurse",
         text: "(An alluring reply.) 'Oh, you actually messaged me? Our transfer student is so polite. Have sweet dreams, {name?}.'",
         night: true,
-        stats: { Nurse: { affinity: 5 } },
+        stats: { Nurse: { affinity: 3 } },
         next: "day1_end"
     },
     "day1_end": {

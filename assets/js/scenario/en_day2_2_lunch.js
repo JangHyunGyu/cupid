@@ -16,8 +16,55 @@ Object.assign(SCENARIO[2], {
             { text: "Go to the backyard to see who this Yuna is.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
             { text: "Go to the gym to see Dain.", next: "day2_lunch_dain", condition: "metDain" },
             { text: "Go to the gym where lively sounds are heard.", next: "day2_lunch_dain", excludeCondition: "metDain" },
-            { text: "I feel a bit unwell, so I'll go to the nurse's office.", next: "day2_lunch_nurse" }
+            { text: "I feel a bit unwell, so I'll go to the nurse's office.", next: "day2_lunch_nurse" },
+            { text: "Go to the teacher's office to see the homeroom teacher.", next: "day2_lunch_teacher" }
         ]
+    },
+    "day2_lunch_teacher": {
+        name: "Me",
+        text: "(When I open the door to the teacher's office, the homeroom teacher, who was about to eat her lunch, smiles brightly when she sees me.)",
+        background: "assets/images/background/teacher_room.png",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lunch_teacher_2"
+    },
+    "day2_lunch_teacher_2": {
+        name: "Teacher",
+        text: "\"{name?}! Did you have a good lunch? I was just about to eat mine.\"",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lunch_teacher_3"
+    },
+    "day2_lunch_teacher_3": {
+        name: "Teacher",
+        text: "\"Did you come here because you wanted to eat lunch with me? Hehe, just kidding.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        choices: [
+            { text: "Yes, I want to eat with you! (Sits next to her)", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 8 } } },
+            { text: "Your lunch looks so delicious.", next: "day2_lunch_teacher_food", stats: { Teacher: { affinity: 5 } } },
+            { text: "No, I was just passing by.", next: "day2_lunch_teacher_pass", stats: { Teacher: { affinity: 3 } } }
+        ]
+    },
+    "day2_lunch_teacher_eat": {
+        name: "Teacher",
+        text: "\"Oh my... you're a very bold student, aren't you? Okay, I'll share some of my side dishes. Here, say 'Ah'.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day2_lunch_teacher_end"
+    },
+    "day2_lunch_teacher_food": {
+        name: "Teacher",
+        text: "\"Hehe, my mother is quite a good cook. I'd like to let you taste it too if I have a chance later.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day2_lunch_teacher_end"
+    },
+    "day2_lunch_teacher_pass": {
+        name: "Teacher",
+        text: "\"Is that so? Still, thank you for stopping by. Have a pleasant lunch break!\"",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lunch_teacher_end"
+    },
+    "day2_lunch_teacher_end": {
+        name: "Me",
+        text: "(I returned to the classroom after a short but pleasant conversation with the teacher. Her kind smile keeps coming to mind.)",
+        next: "day2_afternoon_class"
     },
     "day2_lunch_seoyeon": {
         name: "Seoyeon",
@@ -31,9 +78,9 @@ Object.assign(SCENARIO[2], {
         text: "\"{name?}! I was just hoping you'd stop by! Come, sit with me. I actually made some extra sandwiches today.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "Wow, these look delicious! You're a cooking genius, Seoyeon.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "Aren't you tired from all the student council work?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "(Wipe a crumb off her cheek)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 20 } } }
+            { text: "Wow, these look delicious! You're a cooking genius, Seoyeon.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "Aren't you tired from all the student council work?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "(Wipe a crumb off her cheek)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "day2_seoyeon_lunch_praise": {
@@ -101,8 +148,8 @@ Object.assign(SCENARIO[2], {
         text: "\"What I said yesterday... do you remember? About the secrets of this school. There's something I want to show you. Only you.\"",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
-            { text: "What is it? I want to know.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
-            { text: "I'm not here for secrets. I just wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 8 } } }
+            { text: "What is it? I want to know.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
+            { text: "I'm not here for secrets. I just wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
         ]
     },
     "day2_yuna_talk_2_new": {
@@ -111,8 +158,8 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "metYuna",
         choices: [
-            { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 10 } } },
-            { text: "I was just curious after seeing your note. Who are you?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } }
+            { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },
+            { text: "I was just curious after seeing your note. Who are you?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 3 } } }
         ]
     },
     "day2_yuna_new_name_ask": {
@@ -138,9 +185,9 @@ Object.assign(SCENARIO[2], {
         text: "\"Inside here... are records the school has kept hidden for years. Once you see them... nothing will ever be the same.\"",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "Can I see those records too?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
-            { text: "Isn't it dangerous? It's better to just leave it alone.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -10 } } },
-            { text: "Yuna, why are you investigating this?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 5 } } }
+            { text: "Can I see those records too?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 8 } } },
+            { text: "Isn't it dangerous? It's better to just leave it alone.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -20 } } },
+            { text: "Yuna, why are you investigating this?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
         ]
     },
     "day2_yuna_secret_read": {
@@ -229,9 +276,9 @@ Object.assign(SCENARIO[2], {
         next: "day2_dain_store_choices"
     },
     "day2_dain_store_choices": {        choices: [
-            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 10 } } },
-            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 5 } } },
-            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race", stats: { Dain: { affinity: 15 } } }
+            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
+            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
+            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race", stats: { Dain: { affinity: 8 } } }
         ]
     },
     "day2_dain_store_buy": {
@@ -281,7 +328,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Oh, if it isn't my favorite student. Is something hurting, or did you just come to see my pretty face?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 5 } },
+        stats: { Nurse: { affinity: 3 } },
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_new": {
@@ -310,9 +357,9 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         choices: [
-            { text: "My head hurts a bit.", next: "day2_lunch_nurse_head", stats: { Nurse: { affinity: 5 } } },
-            { text: "I just need some rest.", next: "day2_lunch_nurse_rest", stats: { Nurse: { affinity: 5 } } },
-            { text: "Is seducing students your hobby or something?", next: "day2_lunch_nurse_trap", stats: { Nurse: { affinity: -30 } } }
+            { text: "My head hurts a bit.", next: "day2_lunch_nurse_head", stats: { Nurse: { affinity: 3 } } },
+            { text: "I just need some rest.", next: "day2_lunch_nurse_rest", stats: { Nurse: { affinity: 3 } } },
+            { text: "Is seducing students your hobby or something?", next: "day2_lunch_nurse_trap", stats: { Nurse: { affinity: -50 } } }
         ]
     },
     "day2_lunch_nurse_trap": {
@@ -335,8 +382,8 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         choices: [
-            { text: "Can't you feed it to me yourself, teacher?", next: "day2_lunch_nurse_head_tease", stats: { Nurse: { affinity: 10 } } },
-            { text: "Thank you. (Take the medicine)", next: "day2_lunch_nurse_sleep", stats: { Nurse: { affinity: 5 } } }
+            { text: "Can't you feed it to me yourself, teacher?", next: "day2_lunch_nurse_head_tease", stats: { Nurse: { affinity: 5 } } },
+            { text: "Thank you. (Take the medicine)", next: "day2_lunch_nurse_sleep", stats: { Nurse: { affinity: 3 } } }
         ]
     },
     "day2_lunch_nurse_head_tease": {
@@ -435,21 +482,21 @@ Object.assign(SCENARIO[2], {
                     { minAffinity: 70, next: "nurse_contact_home_success" }
                 ]
             },
-            { text: "Oh, it's okay.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -10 } } }
+            { text: "Oh, it's okay.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -20 } } }
         ]
     },
     "nurse_contact_success": {
         name: "Nurse",
         text: "(She smiles seductively and saves my number.) \"Hehe, then I'll be waiting tonight? I might get sulky if you reply late.\"",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 15 } },
+        stats: { Nurse: { affinity: 8 } },
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_success": {
         name: "Nurse",
         text: "(The teacher's eyes widen, then she whispers in my ear with a seductive smile.) \"Oh... {name?}, you're much bolder than I thought? Okay, do you want to come to my house tonight? I'll give you the address. Instead... it's a secret from your parents?\"",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 30 } },
+        stats: { Nurse: { affinity: 15 } },
         setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
         next: "day2_afternoon_nurse_skip"
     },

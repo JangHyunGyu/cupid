@@ -53,9 +53,9 @@ Object.assign(SCENARIO[1], {
         text: "\"Oh? {name?}! What brings you here at this time? Don't tell me... were you waiting for me?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "Yeah, I wanted to go home together. Can I help?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "I just wanted to see your face. Aren't you overdoing it?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "Don't get me wrong. I just took a wrong turn.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -20 } } }
+            { text: "Yeah, I wanted to go home together. Can I help?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "I just wanted to see your face. Aren't you overdoing it?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "Don't get me wrong. I just took a wrong turn.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -30 } } }
         ]
     },
     "after_seoyeon_rude": {
@@ -121,8 +121,8 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "Of course. I'll be waiting for you.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "Hmm, depends on my mood? (Tease)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 7 } } }
+            { text: "Of course. I'll be waiting for you.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Hmm, depends on my mood? (Tease)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
     "after_seoyeon_promise": {
@@ -168,7 +168,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"Thanks! I'll definitely message you later then. Get home safe!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        stats: { Seoyeon: { affinity: 10 } },
+        stats: { Seoyeon: { affinity: 5 } },
         next: "after_home"
     },
     "after_seoyeon_contact_fail": {
@@ -358,7 +358,7 @@ Object.assign(SCENARIO[1], {
         night: true,
         choices: [
             { text: "Yes, I want to know everything about you.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
-            { text: "Sorry, I'm not ready for that yet.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
+            { text: "Sorry, I'm not ready for that yet.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -25 } } }
         ]
     },
     "yuna_contact_success": {
@@ -366,7 +366,7 @@ Object.assign(SCENARIO[1], {
         text: "(She saves the number, a faint smile touching her lips.) \"...Done. We're connected now. When I call... you'd better come.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
-        stats: { Yuna: { affinity: 15 } },
+        stats: { Yuna: { affinity: 8 } },
         next: "after_home"
     },
     "yuna_contact_fail": {
@@ -406,14 +406,14 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "(Yuna closes her book and stares at me. Her eyes seem to glow with a faint, eerie violet light.) \"...The truth? Are you prepared to carry that burden? Fine, if your eyes are sincere... follow me. Promise you won't tell anyone.\"",
         character: "assets/images/characters/yuna_smile.png",
-        stats: { Yuna: { affinity: 20 } },
+        stats: { Yuna: { affinity: 10 } },
         next: "after_yuna_rooftop"
     },
     "after_yuna_secret_fail": {
         name: "Yuna",
         text: "(Yuna gives a cold smile.) \"The truth... Hehe, you look too light to bear its weight. It's fine to be curious, but don't dig too deep. You might get hurt.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        stats: { Yuna: { affinity: -10 } },
+        stats: { Yuna: { affinity: -20 } },
         next: "after_home"
     },
     "after_yuna_boring": {
@@ -501,9 +501,9 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         choices: [
-            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer", stats: { Dain: { affinity: 10 } } },
-            { text: "Need a hand? Toss me the ball!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
-            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired", stats: { Dain: { affinity: -10 } } }
+            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer", stats: { Dain: { affinity: 5 } } },
+            { text: "Need a hand? Toss me the ball!", next: "after_dain_help", stats: { Dain: { affinity: 8 } } },
+            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired", stats: { Dain: { affinity: -20 } } }
         ]
     },
     "after_dain_tired": {
@@ -622,7 +622,7 @@ Object.assign(SCENARIO[1], {
                 ],
                 setFlags: ["has_number_dain", "has_any_contact"]
             },
-            { text: "Maybe next time.", next: "dain_contact_fail", stats: { Dain: { affinity: -10 } } }
+            { text: "Maybe next time.", next: "dain_contact_fail", stats: { Dain: { affinity: -30 } } }
         ]
     },
     "dain_contact_call_success": {
@@ -630,7 +630,7 @@ Object.assign(SCENARIO[1], {
         text: "(She blushes, looking genuinely surprised.) \"Wh-what! Right now? ...Well, if you really want to hear my voice. But don't keep me up too late! I've got early practice!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shy.png",
-        stats: { Dain: { affinity: 15 } },
+        stats: { Dain: { affinity: 12 } },
         next: "after_home"
     },
     "dain_contact_call_fail": {
@@ -638,7 +638,7 @@ Object.assign(SCENARIO[1], {
         text: "(She lets out a laugh, shaking her head.) \"Ha! You're bold, I'll give you that. Calling me already? Let's stick to texting for now, okay?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
-        stats: { Dain: { affinity: -5 } },
+        stats: { Dain: { affinity: -20 } },
         next: "after_home"
     },
     "dain_contact_success": {
@@ -647,7 +647,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
-        stats: { Dain: { affinity: 15 } },
+        stats: { Dain: { affinity: 10 } },
         next: "after_home"
     },
     "dain_contact_fail": {
@@ -714,14 +714,14 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/nurse.png",
         choices: [
             { text: "Yes, please tell me!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
-            { text: "It's a bit overwhelming for now.", next: "nurse_after_day1_contact_fail", stats: { Nurse: { affinity: -5 } } }
+            { text: "It's a bit overwhelming for now.", next: "nurse_after_day1_contact_fail", stats: { Nurse: { affinity: -15 } } }
         ]
     },
     "nurse_after_day1_contact_success": {
         name: "Nurse",
         text: "\"Hehe, how diligent. Then I'll contact you tonight, okay? Goodbye, {name?}.\"",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 10 } },
+        stats: { Nurse: { affinity: 5 } },
         next: "after_home"
     },
     "nurse_after_day1_contact_fail": {

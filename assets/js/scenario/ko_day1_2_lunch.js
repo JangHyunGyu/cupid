@@ -39,9 +39,9 @@ Object.assign(SCENARIO[1], {
         text: "\"아까 자기소개 때는 조금 차가워 보여서 걱정했는데... 그래도 마침 너를 찾으려던 참이었어! 우리 옥상 비밀 장소에서 같이 먹을래?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "응! 서연이랑 같이 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "음.. 다른 애들이랑 먹기로 해서. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
-            { text: "옥상? 귀찮게 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+            { text: "응! 서연이랑 같이 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "음.. 다른 애들이랑 먹기로 해서. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "옥상? 귀찮게 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -40 } } }
         ]
     },
     "lunch_seoyeon_2_party": {
@@ -49,9 +49,9 @@ Object.assign(SCENARIO[1], {
         text: "\"아까 자기소개 때 정말 대단했어! 벌써 인기인이 된 것 같던데? 후훗, 마침 너를 찾으려던 참이었어. 우리 옥상 비밀 장소에서 같이 먹을래?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "응! 서연이랑 같이 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "음.. 다른 애들이랑 먹기로 해서. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
-            { text: "옥상? 귀찮게 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+            { text: "응! 서연이랑 같이 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "음.. 다른 애들이랑 먹기로 해서. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "옥상? 귀찮게 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -40 } } }
         ]
     },
     "lunch_seoyeon_2_normal": {
@@ -59,9 +59,9 @@ Object.assign(SCENARIO[1], {
         text: "\"마침 너를 찾으려던 참이었어! 우리 옥상 비밀 장소에서 같이 먹을래?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "응! 서연이랑 같이 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "음.. 다른 애들이랑 먹기로 해서. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
-            { text: "옥상? 귀찮게 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+            { text: "응! 서연이랑 같이 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "음.. 다른 애들이랑 먹기로 해서. (거절)", next: "lunch_alone", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "옥상? 귀찮게 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -40 } } }
         ]
     },
     "rooftop_1": {
@@ -91,7 +91,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "와, 정말 맛있어 보여! 서연이는 요리 천재구나.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "와, 정말 맛있어 보여! 서연이는 요리 천재구나.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 3 } } },
             {
                 text: "아... 해줘. (용기 내어 본다!)",
                 next: "rooftop_talk_ah_fail",
@@ -99,17 +99,17 @@ Object.assign(SCENARIO[1], {
                 affinityBranches: [
                     { minAffinity: 40, next: "rooftop_talk_ah" }
                 ],
-                stats: { Seoyeon: { affinity: 5 } }
+                stats: { Seoyeon: { affinity: 3 } }
             },
-            { text: "이렇게 정성 가득한 도시락은 처음이야. 고마워.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "별로 맛없어 보이는데... 매점 갈걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -30 } } }
+            { text: "이렇게 정성 가득한 도시락은 처음이야. 고마워.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "별로 맛없어 보이는데... 매점 갈걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -50 } } }
         ]
     },
     "rooftop_talk_ah_fail": {
         name: "서연",
         text: "(서연이의 표정이 순식간에 굳어진다. 당황한 듯 젓가락을 내려놓는다.) \"음.. 그건 좀... {name}, 우리 아직 그 정도로 친한 건 아니잖아. 장난이 과해.\"",
         character: "assets/images/characters/seyoun_pout.png",
-        stats: { Seoyeon: { affinity: -15 } },
+        stats: { Seoyeon: { affinity: -30 } },
         next: "rooftop_awkward"
     },
     "rooftop_awkward": {
@@ -184,9 +184,9 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 내 대답을 기다리며 눈을 반짝인다.)",
         choices: [
-            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "글쎄, 아직은 잘 모르겠어. 하지만 너랑 있으면 편안해.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 7 } } }
+            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "글쎄, 아직은 잘 모르겠어. 하지만 너랑 있으면 편안해.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
     "rooftop_destiny": {
@@ -231,14 +231,14 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
             { text: "물론이지! 나도 서연이랑 더 이야기하고 싶었어.", next: "seyoun_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
-            { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -10 } } }
+            { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "seyoun_contact_success": {
         name: "서연",
         text: "(그녀가 환하게 웃으며 번호를 저장한다. 그녀의 손가락이 기쁜 듯 바쁘게 움직인다.) \"고마워! 그럼... 나중에 메시지 보낼게. 꼭 답장해줘야 해?\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        stats: { Seoyeon: { affinity: 15 } },
+        stats: { Seoyeon: { affinity: 8 } },
         next: "after_school_start"
     },
     "seyoun_contact_fail": {
@@ -302,9 +302,9 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "(그녀의 보랏빛 눈동자가 나를 꿰뚫어 보는 듯하다.)",
         choices: [
-            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 8 } } },
-            { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent", stats: { Yuna: { affinity: 8 } } },
-            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
+            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
+            { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
+            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { affinity: 6 } } }
         ]
     },
     "yuna_secret": {
@@ -364,7 +364,7 @@ Object.assign(SCENARIO[1], {
         name: "담임선생님",
         text: "\"후훗, 그 빵 정말 맛있지. 나도 그거 사러 왔는데 한발 늦었네. 맛있게 먹으렴!\"",
         character: "assets/images/characters/teacher.png",
-        stats: { Teacher: { affinity: 5 } },
+        stats: { Teacher: { affinity: 3 } },
         next: "after_school_start"
     },
     "lunch_sleep": {
@@ -392,7 +392,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"피곤해 보이는데 좀 더 자도 돼. 내가 망 봐줄게!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        stats: { Seoyeon: { affinity: 5 } },
+        stats: { Seoyeon: { affinity: 3 } },
         next: "after_school_start"
     },
     "lunch_dain": {
@@ -446,8 +446,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
         choices: [
-            { text: "좋아, 어디 한번 해보자!", next: "lunch_dain_play", stats: { Dain: { affinity: 10 } } },
-            { text: "배구는 잘 못하는데... 가르쳐줄래?", next: "lunch_dain_teach", stats: { Dain: { affinity: 15 } } }
+            { text: "좋아, 어디 한번 해보자!", next: "lunch_dain_play", stats: { Dain: { affinity: 5 } } },
+            { text: "배구는 잘 못하는데... 가르쳐줄래?", next: "lunch_dain_teach", stats: { Dain: { affinity: 8 } } }
         ]
     },
     "lunch_dain_play": {

@@ -130,8 +130,8 @@ Object.assign(SCENARIO[2], {
         text: "\"어제 잘 들어갔어? 연락처 교환하고 나서 메시지 보낼까 말까 고민하다가... 너무 늦은 것 같아서 참았어.\"",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
-            { text: "나도 서연이 메시지 기다렸는데! 지금이라도 보내줘.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "아, 그랬구나. 나도 피곤해서 바로 잠들었어.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 2 } } }
+            { text: "나도 서연이 메시지 기다렸는데! 지금이라도 보내줘.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "아, 그랬구나. 나도 피곤해서 바로 잠들었어.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 1 } } }
         ]
     },
     "day2_seoyeon_talk_no_number": {
@@ -179,8 +179,8 @@ Object.assign(SCENARIO[2], {
         text: "\"어제 먹은 떡볶이 덕분에 오늘 컨디션 최고야! 너도 그렇지?\"",
         character: "assets/images/characters/dain_laugh.png",
         choices: [
-            { text: "응! 나도 다인이 덕분에 잘 잤어.", next: "day2_dain_happy", stats: { Dain: { affinity: 10 } } },
-            { text: "난 좀 피곤한데... 다인이는 체력이 정말 좋구나.", next: "day2_dain_normal", stats: { Dain: { affinity: 2 } } }
+            { text: "응! 나도 다인이 덕분에 잘 잤어.", next: "day2_dain_happy", stats: { Dain: { affinity: 5 } } },
+            { text: "난 좀 피곤한데... 다인이는 체력이 정말 좋구나.", next: "day2_dain_normal", stats: { Dain: { affinity: 1 } } }
         ]
     },
     "day2_dain_talk_not_dated": {
@@ -229,7 +229,7 @@ Object.assign(SCENARIO[2], {
         name: "담임선생님",
         text: "\"고마워. 그럼 무슨 일 있으면 연락할게. 자, 이제 교실로 가자.\"",
         character: "assets/images/characters/teacher.png",
-        stats: { Teacher: { affinity: 15 } },
+        stats: { Teacher: { affinity: 8 } },
         next: "day2_classroom"
     },
     "day2_classroom": {

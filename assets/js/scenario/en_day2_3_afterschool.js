@@ -74,9 +74,9 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
         choices: [
-            { text: "Seoyeon, why do you work so hard?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "Let's go now. I'll walk you home.", next: "day2_seoyeon_home", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "(Give her a shoulder massage)", next: "day2_seoyeon_massage", stats: { Seoyeon: { affinity: 20 } } }
+            { text: "Seoyeon, why do you work so hard?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "Let's go now. I'll walk you home.", next: "day2_seoyeon_home", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "(Give her a shoulder massage)", next: "day2_seoyeon_massage", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "day2_seoyeon_why": {
@@ -126,7 +126,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Thank you! I'll definitely message you later. See you!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         night: true,
-        stats: { Seoyeon: { affinity: 10 } },
+        stats: { Seoyeon: { affinity: 5 } },
         next: "day2_end"
     },
     "day2_seoyeon_contact_fail": {
@@ -227,9 +227,9 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         choices: [
-            { text: "What does this even mean?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 8 } } },
-            { text: "(Taking Yuna's hand) This place is creepy. Let's get out of here.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 12 } } },
-            { text: "This eye... it feels like it's watching us.", next: "day2_yuna_eye", stats: { Yuna: { affinity: 15 } } }
+            { text: "What does this even mean?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 4 } } },
+            { text: "(Taking Yuna's hand) This place is creepy. Let's get out of here.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 6 } } },
+            { text: "This eye... it feels like it's watching us.", next: "day2_yuna_eye", stats: { Yuna: { affinity: 8 } } }
         ]
     },
     "day2_yuna_meaning": {
@@ -271,7 +271,7 @@ Object.assign(SCENARIO[2], {
         night: true,
         choices: [
             { text: "Sure. I want to know everything about you.", next: "day2_yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
-            { text: "Sorry, I'm still a bit cautious.", next: "day2_yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
+            { text: "Sorry, I'm still a bit cautious.", next: "day2_yuna_contact_fail", stats: { Yuna: { affinity: -30 } } }
         ]
     },
     "day2_yuna_contact_success": {
@@ -279,7 +279,7 @@ Object.assign(SCENARIO[2], {
         text: "\"...Done. Now we're connected. When I call... you must come, no matter what.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
-        stats: { Yuna: { affinity: 15 } },
+        stats: { Yuna: { affinity: 8 } },
         next: "day2_end"
     },
     "day2_yuna_contact_fail": {
@@ -342,9 +342,9 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_nomal.png",
         night: true,
         choices: [
-            { text: "It's only because your tosses were so good.", next: "day2_dain_praise", stats: { Dain: { affinity: 10 } } },
-            { text: "How about a real match sometime?", next: "day2_dain_match", stats: { Dain: { affinity: 15 } } },
-            { text: "Tteokbokki after a workout is the best, right?", next: "day2_dain_food", stats: { Dain: { affinity: 20 } } }
+            { text: "It's only because your tosses were so good.", next: "day2_dain_praise", stats: { Dain: { affinity: 5 } } },
+            { text: "How about a real match sometime?", next: "day2_dain_match", stats: { Dain: { affinity: 8 } } },
+            { text: "Tteokbokki after a workout is the best, right?", next: "day2_dain_food", stats: { Dain: { affinity: 10 } } }
         ]
     },
     "day2_dain_praise": {
@@ -390,7 +390,7 @@ Object.assign(SCENARIO[2], {
         night: true,
         choices: [
             { text: "Sure! It'll be fun to go on food tours with you.", next: "day2_dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
-            { text: "Hmm... maybe some other time.", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -10 } } }
+            { text: "Hmm... maybe some other time.", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -20 } } }
         ]
     },
     "day2_dain_contact_success": {
@@ -398,7 +398,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Contact saved! I'll message you as soon as I find a good place, so be ready!\"",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
-        stats: { Dain: { affinity: 15 } },
+        stats: { Dain: { affinity: 8 } },
         next: "day2_end"
     },
     "day2_dain_contact_fail": {
@@ -464,9 +464,9 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         night: true,
         choices: [
-            { text: "I missed you, teacher.", next: "day2_nurse_miss", stats: { Nurse: { affinity: 15 } } },
-            { text: "I just wanted some peace and quiet.", next: "day2_nurse_rest", stats: { Nurse: { affinity: 5 } } },
-            { text: "The scent in this room is wonderful.", next: "day2_nurse_aroma", stats: { Nurse: { affinity: 10 } } }
+            { text: "I missed you, teacher.", next: "day2_nurse_miss", stats: { Nurse: { affinity: 8 } } },
+            { text: "I just wanted some peace and quiet.", next: "day2_nurse_rest", stats: { Nurse: { affinity: 3 } } },
+            { text: "The scent in this room is wonderful.", next: "day2_nurse_aroma", stats: { Nurse: { affinity: 5 } } }
         ]
     },
     "day2_nurse_miss": {

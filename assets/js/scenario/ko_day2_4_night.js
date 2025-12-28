@@ -123,7 +123,7 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 서연이는 주인공의 메시지에 기뻐하며 답장을 보낸 상태.",
         night: true,
-        stats: { Seoyeon: { affinity: 5 } },
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day2_final_scene"
     },
     "day2_night_message_yuna": {
@@ -156,7 +156,7 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 유나는 주인공의 메시지에 짧지만 깊은 여운이 담긴 답장을 보낸 상태.",
         night: true,
-        stats: { Yuna: { affinity: 5 } },
+        stats: { Yuna: { affinity: 3 } },
         next: "day2_final_scene"
     },
     "day2_night_message_dain": {
@@ -209,7 +209,7 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 다인이는 주인공의 메시지에 활기차게 답장을 보낸 상태.",
         night: true,
-        stats: { Dain: { affinity: 5 } },
+        stats: { Dain: { affinity: 3 } },
         next: "day2_final_scene"
     },
     "day2_night_message_nurse": {
@@ -242,7 +242,7 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 보건선생님은 주인공의 메시지에 장난스럽고 매혹적인 답장을 보낸 상태.",
         night: true,
-        stats: { Nurse: { affinity: 5 } },
+        stats: { Nurse: { affinity: 3 } },
         next: "day2_final_scene"
     },
     "day2_night_message_teacher": {
@@ -261,7 +261,7 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 담임선생님은 주인공의 메시지에 조금 당황하면서도 고마워하며 답장을 보낸 상태.",
         night: true,
-        stats: { Teacher: { affinity: 5 } },
+        stats: { Teacher: { affinity: 3 } },
         next: "day2_final_scene"
     },
     "day2_final_scene": {

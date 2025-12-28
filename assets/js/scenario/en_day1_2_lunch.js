@@ -39,9 +39,9 @@ Object.assign(SCENARIO[1], {
         text: "\"I was a bit worried because you looked a little cold during the introduction... but I was just looking for you! Want to eat together at our secret spot on the rooftop?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "Um... I promised to eat with others. (Decline)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
-            { text: "Rooftop? Do I have to go all the way there? It's a hassle.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+            { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Um... I promised to eat with others. (Decline)", next: "lunch_alone", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "Rooftop? Do I have to go all the way there? It's a hassle.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -40 } } }
         ]
     },
     "lunch_seoyeon_2_party": {
@@ -49,9 +49,9 @@ Object.assign(SCENARIO[1], {
         text: "\"You were amazing during the introduction! It feels like you've already become a celebrity. Hehe, I was just looking for you. Want to eat together at our secret spot on the rooftop?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "Um... I promised to eat with others. (Decline)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
-            { text: "Rooftop? Do I have to go all the way there? It's a hassle.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+            { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Um... I promised to eat with others. (Decline)", next: "lunch_alone", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "Rooftop? Do I have to go all the way there? It's a hassle.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -40 } } }
         ]
     },
     "lunch_seoyeon_2_normal": {
@@ -59,9 +59,9 @@ Object.assign(SCENARIO[1], {
         text: "\"I was just looking for you! We have a secret spot on the rooftop, want to eat there together?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "Um... I promised to eat with others. (Decline)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
-            { text: "Rooftop? Do I have to go all the way there? It's a hassle.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+            { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Um... I promised to eat with others. (Decline)", next: "lunch_alone", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "Rooftop? Do I have to go all the way there? It's a hassle.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -40 } } }
         ]
     },
     "rooftop_1": {
@@ -91,7 +91,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "Wow, it looks delicious! You're a great cook, Seoyeon.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Wow, it looks delicious! You're a great cook, Seoyeon.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 3 } } },
             { 
                 text: "Say 'Ah'... (Gathering courage!)", 
                 next: "rooftop_talk_ah_fail", 
@@ -99,17 +99,17 @@ Object.assign(SCENARIO[1], {
                 affinityBranches: [
                     { minAffinity: 40, next: "rooftop_talk_ah" }
                 ],
-                stats: { Seoyeon: { affinity: 5 } } 
+                stats: { Seoyeon: { affinity: 3 } } 
             },
-            { text: "I've never had such a heartfelt lunch box. Thank you.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "It doesn't look that good... I should've just gone to the snack bar.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -30 } } }
+            { text: "I've never had such a heartfelt lunch box. Thank you.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "It doesn't look that good... I should've just gone to the snack bar.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -50 } } }
         ]
     },
     "rooftop_talk_ah_fail": {
         name: "Seoyeon",
         text: "(Seoyeon's face hardens instantly. She puts down her chopsticks, looking flustered.) \"Um... that's a bit... {name?}, we're not that close yet, are we? I think the joke went too far.\"",
         character: "assets/images/characters/seyoun_pout.png",
-        stats: { Seoyeon: { affinity: -15 } },
+        stats: { Seoyeon: { affinity: -30 } },
         next: "rooftop_awkward"
     },
     "rooftop_awkward": {
@@ -184,9 +184,9 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(She sparkles her eyes, waiting for my answer.)",
         choices: [
-            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 7 } } }
+            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
     "rooftop_destiny": {
@@ -231,14 +231,14 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
             { text: "Of course! I wanted to talk more with Seoyeon too.", next: "seyoun_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
-            { text: "Sorry, I think it's a bit early yet.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -10 } } }
+            { text: "Sorry, I think it's a bit early yet.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "seyoun_contact_success": {
         name: "Seoyeon",
         text: "(She smiles brightly and saves my number. Her fingers move busily as if happy.) \"Thank you! Then... I'll send you a message later. You have to reply, okay?\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        stats: { Seoyeon: { affinity: 15 } },
+        stats: { Seoyeon: { affinity: 8 } },
         next: "after_school_start"
     },
     "seyoun_contact_fail": {
@@ -300,9 +300,9 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "(Her purple eyes seem to pierce through me.)",
         choices: [
-            { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 8 } } },
-            { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 8 } } },
-            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
+            { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
+            { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 6 } } }
         ]
     },
     "yuna_secret": {
@@ -362,7 +362,7 @@ Object.assign(SCENARIO[1], {
         name: "Homeroom Teacher",
         text: "\"Hehe, that bread is really delicious. I came to buy it too, but I guess I was a bit late. Enjoy!\"",
         character: "assets/images/characters/teacher.png",
-        stats: { Teacher: { affinity: 5 } },
+        stats: { Teacher: { affinity: 3 } },
         next: "after_school_start"
     },
     "lunch_sleep": {
@@ -390,7 +390,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"You look tired, so you can sleep more. I'll keep watch for you!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        stats: { Seoyeon: { affinity: 5 } },
+        stats: { Seoyeon: { affinity: 3 } },
         next: "after_school_start"
     },
     "lunch_dain": {
@@ -444,8 +444,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
         choices: [
-            { text: "Alright, let's do this!", next: "lunch_dain_play", stats: { Dain: { affinity: 10 } } },
-            { text: "I'm not great at volleyball... can you teach me?", next: "lunch_dain_teach", stats: { Dain: { affinity: 15 } } }
+            { text: "Alright, let's do this!", next: "lunch_dain_play", stats: { Dain: { affinity: 5 } } },
+            { text: "I'm not great at volleyball... can you teach me?", next: "lunch_dain_teach", stats: { Dain: { affinity: 8 } } }
         ]
     },
     "lunch_dain_play": {

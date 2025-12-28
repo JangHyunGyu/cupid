@@ -74,9 +74,9 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
         choices: [
-            { text: "서연이는 왜 그렇게 열심히야?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "이제 그만 가자. 집까지 데려다줄게.", next: "day2_seoyeon_home", stats: { Seoyeon: { affinity: 15 } } },
-            { text: "(어깨를 주물러준다)", next: "day2_seoyeon_massage", stats: { Seoyeon: { affinity: 20 } } }
+            { text: "서연이는 왜 그렇게 열심히야?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "이제 그만 가자. 집까지 데려다줄게.", next: "day2_seoyeon_home", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "(어깨를 주물러준다)", next: "day2_seoyeon_massage", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "day2_seoyeon_why": {
@@ -126,7 +126,7 @@ Object.assign(SCENARIO[2], {
         text: "\"고마워! 그럼 진짜로 나중에 연락할게. 잘 가!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         night: true,
-        stats: { Seoyeon: { affinity: 10 } },
+        stats: { Seoyeon: { affinity: 5 } },
         next: "day2_end"
     },
     "day2_seoyeon_contact_fail": {
@@ -227,9 +227,9 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         choices: [
-            { text: "이게 대체 뭘 의미하는 거야?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 8 } } },
-            { text: "(유나의 손을 잡으며) 무서우니까 이제 나가자.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 12 } } },
-            { text: "이 눈... 꼭 우리를 지켜보고 있는 것 같아.", next: "day2_yuna_eye", stats: { Yuna: { affinity: 15 } } }
+            { text: "이게 대체 뭘 의미하는 거야?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 4 } } },
+            { text: "(유나의 손을 잡으며) 무서우니까 이제 나가자.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 6 } } },
+            { text: "이 눈... 꼭 우리를 지켜보고 있는 것 같아.", next: "day2_yuna_eye", stats: { Yuna: { affinity: 8 } } }
         ]
     },
     "day2_yuna_meaning": {
@@ -271,7 +271,7 @@ Object.assign(SCENARIO[2], {
         night: true,
         choices: [
             { text: "응, 좋아. 너에 대해 모든 걸 알고 싶어.", next: "day2_yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
-            { text: "미안, 아직은 좀 조심스러워.", next: "day2_yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
+            { text: "미안, 아직은 좀 조심스러워.", next: "day2_yuna_contact_fail", stats: { Yuna: { affinity: -30 } } }
         ]
     },
     "day2_yuna_contact_success": {
@@ -279,7 +279,7 @@ Object.assign(SCENARIO[2], {
         text: "\"...됐어. 이제 우린 연결된 거야. 내가 부르면... 언제든 와줘야 해.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
-        stats: { Yuna: { affinity: 15 } },
+        stats: { Yuna: { affinity: 8 } },
         next: "day2_end"
     },
     "day2_yuna_contact_fail": {
@@ -342,9 +342,9 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_nomal.png",
         night: true,
         choices: [
-            { text: "다인이가 토스를 잘 올려줘서 그렇지.", next: "day2_dain_praise", stats: { Dain: { affinity: 10 } } },
-            { text: "나중에 정식으로 한판 붙어볼까?", next: "day2_dain_match", stats: { Dain: { affinity: 15 } } },
-            { text: "운동 후에 먹는 떡볶이가 최고지? 그치?", next: "day2_dain_food", stats: { Dain: { affinity: 20 } } }
+            { text: "다인이가 토스를 잘 올려줘서 그렇지.", next: "day2_dain_praise", stats: { Dain: { affinity: 5 } } },
+            { text: "나중에 정식으로 한판 붙어볼까?", next: "day2_dain_match", stats: { Dain: { affinity: 8 } } },
+            { text: "운동 후에 먹는 떡볶이가 최고지? 그치?", next: "day2_dain_food", stats: { Dain: { affinity: 10 } } }
         ]
     },
     "day2_dain_praise": {
@@ -387,7 +387,7 @@ Object.assign(SCENARIO[2], {
         night: true,
         choices: [
             { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "day2_dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
-            { text: "음.. 나중에 기회 되면 알려줄게.", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -10 } } }
+            { text: "음.. 나중에 기회 되면 알려줄게.", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -20 } } }
         ]
     },
     "day2_dain_contact_success": {
@@ -395,7 +395,7 @@ Object.assign(SCENARIO[2], {
         text: "\"연락처 전송 완료! 내가 맛있는 곳 찾으면 바로 메시지 보낼 테니까 대기하고 있어!\"",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
-        stats: { Dain: { affinity: 15 } },
+        stats: { Dain: { affinity: 8 } },
         next: "day2_end"
     },
     "day2_dain_contact_fail": {
@@ -461,9 +461,9 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         night: true,
         choices: [
-            { text: "선생님이 보고 싶어서 왔어요.", next: "day2_nurse_miss", stats: { Nurse: { affinity: 15 } } },
-            { text: "그냥 조용히 쉬고 싶어서요.", next: "day2_nurse_rest", stats: { Nurse: { affinity: 5 } } },
-            { text: "이 방에서 나는 향기가 너무 좋아요.", next: "day2_nurse_aroma", stats: { Nurse: { affinity: 10 } } }
+            { text: "선생님이 보고 싶어서 왔어요.", next: "day2_nurse_miss", stats: { Nurse: { affinity: 8 } } },
+            { text: "그냥 조용히 쉬고 싶어서요.", next: "day2_nurse_rest", stats: { Nurse: { affinity: 3 } } },
+            { text: "이 방에서 나는 향기가 너무 좋아요.", next: "day2_nurse_aroma", stats: { Nurse: { affinity: 5 } } }
         ]
     },
     "day2_nurse_miss": {

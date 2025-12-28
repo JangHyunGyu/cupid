@@ -531,73 +531,73 @@ function startFreeTalk(scene) {
     // 캐릭터별 스탯 변화 기준 설정
     const defaultStatCriteria = isEn ? {
         "Seoyeon": `
-     * +8 ~ +10: Seeing her as a "girl" rather than a "president", accepting her hidden vulnerability, or deep emotional sincerity.
-     * +4 ~ +7: Praising her hidden efforts, noticing her fatigue and offering comfort, or light romantic teasing.
-     * +1 ~ +3: Polite greetings, showing respect for school rules, or simple agreement with her opinions.
+     * +3: Seeing her as a "girl" rather than a "president", accepting her hidden vulnerability, or deep emotional sincerity.
+     * +2: Praising her hidden efforts, noticing her fatigue and offering comfort, or light romantic teasing.
+     * +1: Polite greetings, showing respect for school rules, or simple agreement with her opinions.
      * -1 ~ -3: Being slightly distracted, giving short/insincere answers, or lukewarm reactions.
      * -4 ~ -7: Rudeness, light profanity, mocking her sense of responsibility, or ignoring her sincere advice.
      * -8 ~ -10: Sexual harassment, crude sexual jokes, personal attacks, or openly encouraging rule-breaking.`,
         "Yuna": `
-     * +8 ~ +10: Accepting her "darkness" or "light" without fear, fatalistic promises, or showing you are "the one" she's been looking for.
-     * +4 ~ +7: Showing genuine interest in her mysterious world, comforting her with supportive words, or not being flustered by her cryptic talk.
-     * +1 ~ +3: Simple greetings, calm reactions to her cryptic words, or showing you're listening.
+     * +3: Accepting her "darkness" or "light" without fear, fatalistic promises, or showing you are "the one" she's been looking for.
+     * +2: Showing genuine interest in her mysterious world, comforting her with supportive words, or not being flustered by her cryptic talk.
+     * +1: Simple greetings, calm reactions to her cryptic words, or showing you're listening.
      * -1 ~ -3: Being too loud/noisy, or talking too much about mundane things she finds boring.
      * -4 ~ -7: Trying to "fix" her personality, calling her weird, or light profanity.
      * -8 ~ -10: Showing genuine disgust toward her nature, severe insults, or sexual harassment.`,
         "Dain": `
-     * +8 ~ +10: Heart-pounding teasing that makes her blush intensely, sincere support for her dreams, or showing "manly" protection.
-     * +4 ~ +7: Matching her high energy, playing along with her jokes, or praising her athletic and bright personality.
-     * +1 ~ +3: Cheerful greetings, simple positive reactions to her energetic remarks.
+     * +3: Heart-pounding teasing that makes her blush intensely, sincere support for her dreams, or showing "manly" protection.
+     * +2: Matching her high energy, playing along with her jokes, or praising her athletic and bright personality.
+     * +1: Cheerful greetings, simple positive reactions to her energetic remarks.
      * -1 ~ -3: Being a bit gloomy/down, not reacting to her jokes, or being too passive.
      * -4 ~ -7: Being a "killjoy", acting too cool/aloof, or light profanity.
      * -8 ~ -10: Crude sexual jokes (she hates them), sexual harassment, or severe personal attacks.`,
         "Homeroom Teacher": `
-     * +8 ~ +10: Treating her as a "woman" rather than just a "teacher", protecting her when she's being "clumsy", or romantic boldness.
-     * +4 ~ +7: Noticing she looks tired and showing concern, offering to help with her work, or polite but friendly conversation.
-     * +1 ~ +3: Proper student etiquette, answering her questions sincerely, or simple respect.
+     * +3: Treating her as a "woman" rather than just a "teacher", protecting her when she's being "clumsy", or romantic boldness.
+     * +2: Noticing she looks tired and showing concern, offering to help with her work, or polite but friendly conversation.
+     * +1: Proper student etiquette, answering her questions sincerely, or simple respect.
      * -1 ~ -3: Complaining about schoolwork, being slightly dismissive of her authority, or using overly casual speech.
      * -4 ~ -7: Disrespectful tone, making fun of her "clumsy" mistakes, or light profanity.
      * -8 ~ -10: Sexual harassment (crude remarks crossing the line), severe insults, or mocking her professional pride.`,
         "Nurse": `
-     * +8 ~ +10: Boldly leading the pace of her teasing, seeing through her "seductive" mask to her true kindness, or "manly" confidence.
-     * +4 ~ +7: Reacting cutely/flustered to her teasing, showing interest in her well-being, or asking for her professional advice.
-     * +1 ~ +3: Polite greetings, thanking her for her care, or simple friendly conversation.
+     * +3: Boldly leading the pace of her teasing, seeing through her "seductive" mask to her true kindness, or "manly" confidence.
+     * +2: Reacting cutely/flustered to her teasing, showing interest in her well-being, or asking for her professional advice.
+     * +1: Polite greetings, thanking her for her care, or simple friendly conversation.
      * -1 ~ -3: Being too stiff/formal, not getting her jokes, or being overly defensive/scared.
      * -4 ~ -7: Rudeness, acting like she's just a "school employee", or light profanity.
      * -8 ~ -10: Crude sexual harassment (taking advantage of her playfulness), severe insults, or genuine disgust.`,
     } : {
         "서연": `
-     * +8 ~ +10: '회장'이 아닌 '소녀'로서의 그녀를 긍정해주기, 그녀의 숨겨진 나약함을 감싸주는 대화, 깊은 정서적 유대감.
-     * +4 ~ +7: 그녀의 보이지 않는 노력을 알아주기, 피곤해 보이는 그녀에게 건네는 따뜻한 위로, 가벼운 로맨틱한 밀당.
-     * +1 ~ +3: 예의 바른 인사, 학교 규칙을 존중하는 태도, 그녀의 의견에 대한 성실한 동의.
+     * +3: '회장'이 아닌 '소녀'로서의 그녀를 긍정해주기, 그녀의 숨겨진 나약함을 감싸주는 대화, 깊은 정서적 유대감.
+     * +2: 그녀의 보이지 않는 노력을 알아주기, 피곤해 보이는 그녀에게 건네는 따뜻한 위로, 가벼운 로맨틱한 밀당.
+     * +1: 예의 바른 인사, 학교 규칙을 존중하는 태도, 그녀의 의견에 대한 성실한 동의.
      * -1 ~ -3: 대화 중 딴청 피우는 듯한 짧은 대답, 미지근하거나 성의 없는 반응.
      * -4 ~ -7: 무례한 언행, 가벼운 욕설, 그녀의 책임감을 '고리타분하다'고 치부하기, 그녀의 진심 어린 조언 무시하기.
      * -8 ~ -10: 성희롱, 저질스러운 섹드립, 인격 모독, 그녀의 신뢰를 배신하는 행동.`,
         "유나": `
-     * +8 ~ +10: 그녀의 '어둠'이나 '빛'을 두려움 없이 받아들이기, 운명적인 약속, 그녀가 찾던 '단 한 사람'임을 증명하는 대화.
-     * +4 ~ +7: 그녀의 신비로운 세계관에 진심 어린 호기심 보이기, 난해한 말에도 당황하지 않고 따뜻하게 반응하기, 그녀를 안심시키기.
-     * +1 ~ +3: 가벼운 인사, 그녀의 신비로운 말에 차분하게 반응하며 경청하는 태도.
+     * +3: 그녀의 '어둠'이나 '빛'을 두려움 없이 받아들이기, 운명적인 약속, 그녀가 찾던 '단 한 사람'임을 증명하는 대화.
+     * +2: 그녀의 신비로운 세계관에 진심 어린 호기심 보이기, 난해한 말에도 당황하지 않고 따뜻하게 반응하기, 그녀를 안심시키기.
+     * +1: 가벼운 인사, 그녀의 신비로운 말에 차분하게 반응하며 경청하는 태도.
      * -1 ~ -3: 너무 시끄러운 말투, 그녀가 지루해하는 세속적이고 평범한 이야기만 늘어놓기.
      * -4 ~ -7: 그녀를 '정상'으로 바꾸려 들기, 이상한 사람 취급하기, 가벼운 욕설이나 거부감 표현.
      * -8 ~ -10: 그녀의 본질에 대해 대놓고 혐오감 표현하기, 성희롱, 심한 인격 모독.`,
         "다인": `
-     * +8 ~ +10: 그녀를 '폭발'하게 만드는 설레는 놀림, 그녀의 꿈에 대한 진심 어린 응원, 위기의 순간에 보여주는 남자다운 보호.
-     * +4 ~ +7: 그녀의 높은 텐션에 맞춰 즐겁게 대화하기, 농담을 재치 있게 받아주기, 그녀의 활기찬 매력 칭찬하기.
-     * +1 ~ +3: 밝은 인사, 그녀의 에너지 넘치는 말에 대한 긍정적인 반응.
+     * +3: 그녀를 '폭발'하게 만드는 설레는 놀림, 그녀의 꿈에 대한 진심 어린 응원, 위기의 순간에 보여주는 남자다운 보호.
+     * +2: 그녀의 높은 텐션에 맞춰 즐겁게 대화하기, 농담을 재치 있게 받아주기, 그녀의 활기찬 매력 칭찬하기.
+     * +1: 밝은 인사, 그녀의 에너지 넘치는 말에 대한 긍정적인 반응.
      * -1 ~ -3: 채팅에서 우울한 분위기 풍기기, 농담에 반응하지 않고 단답하기, 너무 수동적인 태도.
      * -4 ~ -7: 분위기 깨는 말(갑분싸), 너무 차갑게 거리 두는 말투, 가벼운 욕설이나 그녀의 제안 거절.
      * -8 ~ -10: 저질스러운 섹드립(매우 혐오함), 성희롱, 심한 인격 모독이나 비난.`,
         "담임선생님": `
-     * +8 ~ +10: '선생님'이 아닌 '여자'로서 대하기, 그녀의 '허당' 같은 실수를 듬직하게 감싸주기, 선을 넘을 듯 말 듯한 대담한 고백.
-     * +4 ~ +7: 업무로 지친 그녀를 걱정해주기, 도와줄 것이 없는지 묻는 다정함, 격의 없으면서도 선을 지키는 대화.
-     * +1 ~ +3: 학생다운 예의 바른 말투, 질문에 성실하게 답변하기, 기본적인 존경심 표현.
+     * +3: '선생님'이 아닌 '여자'로서 대하기, 그녀의 '허당' 같은 실수를 듬직하게 감싸주기, 선을 넘을 듯 말 듯한 대담한 고백.
+     * +2: 업무로 지친 그녀를 걱정해주기, 도와줄 것이 없는지 묻는 다정함, 격의 없으면서도 선을 지키는 대화.
+     * +1: 학생다운 예의 바른 말투, 질문에 성실하게 답변하기, 기본적인 존경심 표현.
      * -1 ~ -3: 학교 공부나 숙제에 대해 불평하기, 은근히 권위를 무시하는 말투, 너무 버릇없는 반말 섞기.
      * -4 ~ -7: 무례한 언행, 가벼운 욕설, 그녀의 실수를 대놓고 비웃는 발언.
      * -8 ~ -10: 성희롱(교사-학생 선을 넘는 저질 발언), 심한 인격 모독, 그녀의 전문적인 노력을 비하하기.`,
         "보건선생님": `
-     * +8 ~ +10: 그녀의 도발적인 페이스에 휘둘리지 않고 대담하게 리드하기, '유혹' 뒤에 숨겨진 그녀의 다정함을 꿰뚫어 보기, 남자다운 자신감.
-     * +4 ~ +7: 그녀의 장난에 부끄러워하며 귀엽게 반응하기, 그녀의 안부를 묻거나 건강 상담하기, 그녀의 보살핌에 진심으로 감사하기.
-     * +1 ~ +3: 예의 바른 인사, 가벼운 일상 대화, 그녀의 조언에 귀 기울이기.
+     * +3: 그녀의 도발적인 페이스에 휘둘리지 않고 대담하게 리드하기, '유혹' 뒤에 숨겨진 그녀의 다정함을 꿰뚫어 보기, 남자다운 자신감.
+     * +2: 그녀의 장난에 부끄러워하며 귀엽게 반응하기, 그녀의 안부를 묻거나 건강 상담하기, 그녀의 보살핌에 진심으로 감사하기.
+     * +1: 예의 바른 인사, 가벼운 일상 대화, 그녀의 조언에 귀 기울이기.
      * -1 ~ -3: 너무 딱딱하고 사무적인 태도, 농담을 전혀 이해하지 못하고 방어적으로 답하기.
      * -4 ~ -7: 무례한 말투, 가벼운 욕설, 그녀를 가벼운 사람 취급하며 호의 무시하기.
      * -8 ~ -10: 저질스러운 성희롱(그녀의 장난을 악용), 심한 인격 모독, 그녀의 본질에 대한 혐오 표현.`
@@ -912,7 +912,7 @@ ${charInteractionGuideline}
    - Note: Firmly reject or change the subject for crude, explicit, or non-consensual sexual content. However, allow for bold romantic flirting or suggestive remarks if the affinity is high and the atmosphere is appropriate, reacting according to the character's personality.
 
 6. Stat Change Guidelines:
-   - Adjust affinity as an integer between -10 and 10 based on the user's message.
+   - Adjust affinity as an integer between -10 and 3 based on the user's message.
    - Evaluation Criteria for ${scene.name}:${charSpecificCriteria}
    - You MUST include the following format at the very end of your response: [STATS: affinity+X] (X is an integer based on the criteria above)
    - Example: "Thank you, Transfer Student! [STATS: affinity+2]"
@@ -947,7 +947,7 @@ ${charInteractionGuideline}
    - 참고: 저질스럽거나 노골적인 성적 요구는 단호하게 거절하세요. 하지만 호감도가 높고 분위기가 로맨틱할 경우, 캐릭터의 성격에 맞는 대담한 로맨틱 플러팅이나 수위 있는 농담은 재치 있게 받아주거나 부끄러워하며 반응할 수 있습니다.
 
 6. 스탯 변화 지침:
-   - 사용자의 메시지에 따라 호감도(affinity)를 -10에서 10 사이의 정수로 조정하세요.
+   - 사용자의 메시지에 따라 호감도(affinity)를 -10에서 3 사이의 정수로 조정하세요.
    - '${scene.name}' 캐릭터 전용 기준:${charSpecificCriteria}
    - 답변의 맨 마지막에 반드시 다음 형식을 포함하세요: [STATS: affinity+X] (X는 위 기준에 따른 정수)
    - 예: "고마워, 전학생 군! [STATS: affinity+5]"
