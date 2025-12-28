@@ -71,6 +71,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(시원한 바람이 부는 옥상. 서연이는 정성스레 준비한 도시락을 꺼낸다.)",
         background: "assets/images/background/top_school.png",
+        setFlag: "ate_lunch_seoyeon",
         next: "rooftop_1_2"
     },
     "rooftop_1_2": {

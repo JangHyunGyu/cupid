@@ -233,6 +233,32 @@ Object.assign(SCENARIO[1], {
             { next: "yuna_name_share_pre" }
         ]
     },
+    "yuna_after_talk": {
+        name: "유나",
+        text: "\"또 보네, {name?}. 여긴 여전히 조용하고... 여전히 무거워. 넌 그 무게가 느껴지지 않아?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "yuna_after_choices"
+    },
+    "yuna_after_choices": {
+        name: "유나",
+        text: "\"나한테 궁금한 거라도 있는 거야? 아니면... 그냥 내가 신기해서 온 거야?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        choices: [
+            { 
+                text: "이 학교의 비밀에 대해 알려줘.", 
+                next: "after_yuna_secret",
+                affinityChar: "Yuna",
+                affinityBranches: [
+                    { minAffinity: 30, next: "after_yuna_secret_deep" },
+                    { maxAffinity: 10, next: "after_yuna_secret_fail" }
+                ]
+            },
+            { text: "오늘 급식 맛있었지?", next: "after_yuna_boring" },
+            { text: "아침부터 계속 여기 있었던 거야?", next: "after_yuna_rude" }
+        ]
+    },
     "yuna_name_share_pre": {
         name: "나",
         text: "\"내 이름은 '{name}'이야. 너랑 친해지고 싶어.\"",
@@ -574,7 +600,13 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
-        next: "dain_contact_exchange"
+        next: "after_dain_contact_check"
+    },
+    "after_dain_contact_check": {
+        branches: [
+            { next: "after_home", condition: "has_number_dain" },
+            { next: "dain_contact_exchange" }
+        ]
     },
     "dain_contact_exchange": {
         name: "다인",
@@ -677,7 +709,13 @@ Object.assign(SCENARIO[1], {
         context: "방과 후 노을 지는 보건실, 학교 보건선생님과 단둘이 대화를 나누는 상황",
         personality: "성숙하고 매혹적인 '누님' 스타일. 주인공을 귀여워하며 챙겨줌.",
         character: "assets/images/characters/nurse.png",
-        next: "nurse_after_day1_contact"
+        next: "after_nurse_contact_check"
+    },
+    "after_nurse_contact_check": {
+        branches: [
+            { next: "after_home", condition: "has_number_nurse" },
+            { next: "nurse_after_day1_contact" }
+        ]
     },
     "nurse_after_day1_contact": {
         name: "보건선생님",

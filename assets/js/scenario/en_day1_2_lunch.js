@@ -44,6 +44,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(The rooftop with a cool breeze. Seoyeon takes out a lunch box she prepared with care.)",
         background: "assets/images/background/top_school.png",
+        setFlag: "ate_lunch_seoyeon",
         next: "rooftop_1_2"
     },
     "rooftop_1_2": {

@@ -228,7 +228,36 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
-        next: "yuna_name_share_pre"
+        branches: [
+            { next: "yuna_after_talk", condition: "knowsName_Yuna" },
+            { next: "yuna_name_share_pre" }
+        ]
+    },
+    "yuna_after_talk": {
+        name: "Yuna",
+        text: "\"We meet again, {name?}. It's still quiet here... and still heavy. Don't you feel that weight?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        next: "yuna_after_choices"
+    },
+    "yuna_after_choices": {
+        name: "Yuna",
+        text: "\"Are you curious about me? Or... did you just come because I'm a novelty?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
+        choices: [
+            { 
+                text: "Tell me about the secrets of this school.", 
+                next: "after_yuna_secret",
+                affinityChar: "Yuna",
+                affinityBranches: [
+                    { minAffinity: 30, next: "after_yuna_secret_deep" },
+                    { maxAffinity: 10, next: "after_yuna_secret_fail" }
+                ]
+            },
+            { text: "Wasn't the lunch delicious today?", next: "after_yuna_boring" },
+            { text: "Have you been here since morning?", next: "after_yuna_rude" }
+        ]
     },
     "yuna_name_share_pre": {
         name: "Me",
@@ -359,6 +388,56 @@ Object.assign(SCENARIO[1], {
         text: "\"Hehe, of course. It's a heavy burden for a normal student. Go home. Don't try to dig any deeper.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
+        next: "after_home"
+    },
+    "after_yuna_secret": {
+        name: "Yuna",
+        text: "(She puts a finger to her lips, signaling for silence.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_secret_2"
+    },
+    "after_yuna_secret_2": {
+        name: "Yuna",
+        text: "\"Shh... even walls have ears. Once you know the truth, you can never go back to your ordinary life. If you're still okay with that... take my hand.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_rooftop"
+    },
+    "after_yuna_secret_deep": {
+        name: "Yuna",
+        text: "(Yuna closes her book and stares at me. Her eyes seem to glow with a faint, eerie violet light.) \"...The truth? Are you prepared to carry that burden? Fine, if your eyes are sincere... follow me. Promise you won't tell anyone.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 20 } },
+        next: "after_yuna_rooftop"
+    },
+    "after_yuna_secret_fail": {
+        name: "Yuna",
+        text: "(Yuna gives a cold smile.) \"The truth... Hehe, you look too light to bear its weight. It's fine to be curious, but don't dig too deep. You might get hurt.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        stats: { Yuna: { affinity: -10 } },
+        next: "after_home"
+    },
+    "after_yuna_boring": {
+        name: "Yuna",
+        text: "(Yuna sighs as if disappointed and turns her gaze back to her book.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_boring_2"
+    },
+    "after_yuna_boring_2": {
+        name: "Yuna",
+        text: "\"School lunch...? Go talk about such mundane things with the others. I'm busy, so would you mind leaving?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_home"
+    },
+    "after_yuna_rude": {
+        name: "Yuna",
+        text: "(She closes her book and looks at me coldly. The air seems to freeze instantly.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_yuna_rude_2"
+    },
+    "after_yuna_rude_2": {
+        name: "Yuna",
+        text: "\"Since morning...? Hehe, you really don't know anything yet. This strange energy enveloping the school... can't you feel it? Ignorance can be a sin sometimes. Get out of my sight.\"",
+        character: "assets/images/characters/yuna_nomal.png",
         next: "after_home"
     },
     "after_dain_new": {
@@ -505,7 +584,13 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shirt.png",
         night: true,
-        next: "dain_contact_exchange"
+        next: "after_dain_contact_check"
+    },
+    "after_dain_contact_check": {
+        branches: [
+            { next: "after_home", condition: "has_number_dain" },
+            { next: "dain_contact_exchange" }
+        ]
     },
     "dain_contact_exchange": {
         name: "Dain",
@@ -608,7 +693,13 @@ Object.assign(SCENARIO[1], {
         context: "Chatting with the nurse in her office at sunset before heading home.",
         personality: "A mature, alluring 'big sister' type. She's fond of the protagonist and likes to tease him gently.",
         character: "assets/images/characters/nurse.png",
-        next: "nurse_after_day1_contact"
+        next: "after_nurse_contact_check"
+    },
+    "after_nurse_contact_check": {
+        branches: [
+            { next: "after_home", condition: "has_number_nurse" },
+            { next: "nurse_after_day1_contact" }
+        ]
     },
     "nurse_after_day1_contact": {
         name: "Nurse",
