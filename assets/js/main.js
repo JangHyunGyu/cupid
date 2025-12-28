@@ -1,4 +1,12 @@
 const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
+const ASSET_VERSION = "1.0.2"; // 에셋 캐시 방지를 위한 버전 번호
+
+// 에셋 URL에 버전을 추가하는 헬퍼 함수
+function getAssetUrl(url) {
+    if (!url) return url;
+    const separator = url.includes('?') ? '&' : '?';
+    return `${url}${separator}v=${ASSET_VERSION}`;
+}
 
 // 캐릭터별 기억(플래그) 정의
 const FLAG_MEMORIES = [
@@ -257,12 +265,13 @@ async function renderScene(sceneId) {
         // 배경 이미지가 로드될 때까지 대기하여 배경이 먼저 나오도록 함
         await new Promise((resolve) => {
             const img = new Image();
+            const bgUrl = getAssetUrl(scene.background);
             img.onload = () => {
-                bgLayer.style.backgroundImage = `url(${scene.background})`;
+                bgLayer.style.backgroundImage = `url(${bgUrl})`;
                 resolve();
             };
             img.onerror = resolve; // 에러 발생 시에도 다음 단계로 진행
-            img.src = scene.background;
+            img.src = bgUrl;
         });
     }
 
@@ -313,9 +322,10 @@ async function renderScene(sceneId) {
             return new Promise((resolve) => {
                 if (charSlots[pos] && src) {
                     const img = document.createElement('img');
+                    const charUrl = getAssetUrl(src);
                     img.onload = () => resolve({ pos, img });
                     img.onerror = () => resolve(null);
-                    img.src = src;
+                    img.src = charUrl;
                     if (scene.silhouette) img.classList.add('silhouette');
                     if (scene.thinking) img.classList.add('thinking');
                 } else {
@@ -334,12 +344,13 @@ async function renderScene(sceneId) {
         // 단일 캐릭터 설정 (기본 center)
         await new Promise((resolve) => {
             const img = document.createElement('img');
+            const charUrl = getAssetUrl(scene.character);
             img.onload = () => {
                 charSlots.center.appendChild(img);
                 resolve();
             };
             img.onerror = resolve;
-            img.src = scene.character;
+            img.src = charUrl;
             if (scene.silhouette) img.classList.add('silhouette');
             if (scene.thinking) img.classList.add('thinking');
         });
@@ -1167,11 +1178,12 @@ async function sendChatMessage() {
                 const charExprs = CHARACTER_EXPRESSIONS[scene.name];
                 if (charExprs && charExprs[exprName]) {
                     const centerSlot = charSlots.center;
+                    const exprUrl = getAssetUrl(charExprs[exprName]);
                     if (centerSlot.firstChild) {
-                        centerSlot.firstChild.src = charExprs[exprName];
+                        centerSlot.firstChild.src = exprUrl;
                     } else {
                         const img = document.createElement('img');
-                        img.src = charExprs[exprName];
+                        img.src = exprUrl;
                         centerSlot.appendChild(img);
                     }
                 }
