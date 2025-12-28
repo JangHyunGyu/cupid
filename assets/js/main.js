@@ -153,6 +153,12 @@ const fadeLayer = document.getElementById('fade-layer');
 const tbcText = document.getElementById('tbc-text');
 const nextIndicator = document.getElementById('next-indicator');
 
+// 커스텀 모달 요소
+const customModal = document.getElementById('custom-modal');
+const modalMessage = document.getElementById('modal-message');
+const modalConfirmBtn = document.getElementById('modal-confirm-btn');
+const modalCancelBtn = document.getElementById('modal-cancel-btn');
+
 // 시나리오 데이터 가져오기 헬퍼 함수
 function getScene(id) {
     if (!id) return null;
@@ -1138,13 +1144,47 @@ function getFallbackReply(charName, isEn) {
     }
 }
 
+function showCustomModal(message, isAlert = false) {
+    return new Promise((resolve) => {
+        modalMessage.textContent = message;
+        customModal.style.display = 'flex';
+        
+        if (isAlert) {
+            modalCancelBtn.style.display = 'none';
+        } else {
+            modalCancelBtn.style.display = 'inline-block';
+        }
+
+        const onConfirm = () => {
+            cleanup();
+            resolve(true);
+        };
+
+        const onCancel = () => {
+            cleanup();
+            resolve(false);
+        };
+
+        const cleanup = () => {
+            modalConfirmBtn.removeEventListener('click', onConfirm);
+            modalCancelBtn.removeEventListener('click', onCancel);
+            customModal.style.display = 'none';
+        };
+
+        modalConfirmBtn.addEventListener('click', onConfirm);
+        modalCancelBtn.addEventListener('click', onCancel);
+    });
+}
+
 async function skipFreeTalk() {
     if (isTyping || !isFreeTalking) return;
     
     const isEn = document.documentElement.lang === 'en';
     const confirmMsg = isEn ? "Do you want to stop the conversation and proceed to the next scene?" : "대화를 중단하고 다음 장면으로 넘어가시겠습니까?";
     
-    if (confirm(confirmMsg)) {
+    const confirmed = await showCustomModal(confirmMsg);
+    
+    if (confirmed) {
         freeTalkTurns = currentMaxTurns;
         gameState[`messaged_${currentSceneId}`] = true;
         
@@ -1313,14 +1353,16 @@ chatInput.onkeydown = (e) => {
     }
 };
 
-nameConfirmBtn.onclick = () => {
+nameConfirmBtn.onclick = async () => {
     const name = playerNameInput.value.trim();
     
     // 유효성 검사: 1~4자, 숫자/특수문자 제외 (한글, 영문만 허용)
     const nameRegex = /^[a-zA-Z가-힣]{1,4}$/;
     
     if (!nameRegex.test(name)) {
-        alert("이름은 한글 또는 영문 1~4자로 입력해주세요. (숫자, 특수문자 제외)");
+        const isEn = document.documentElement.lang === 'en';
+        const msg = isEn ? "Please enter a name between 1-4 characters (Korean or English only)." : "이름은 한글 또는 영문 1~4자로 입력해주세요. (숫자, 특수문자 제외)";
+        await showCustomModal(msg, true);
         playerNameInput.focus();
         return;
     }

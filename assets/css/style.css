@@ -178,7 +178,7 @@ body, html {
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #ff69b4;
     border-radius: 15px;
-    padding: 15px;
+    padding: 12px;
     pointer-events: auto;
     z-index: 120;
     margin-bottom: 10px;
@@ -186,7 +186,7 @@ body, html {
 
 #chat-input-wrapper {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 8px;
 }
 
@@ -195,18 +195,19 @@ body, html {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #ff69b4;
     border-radius: 8px;
-    padding: 10px 15px;
+    padding: 8px 12px;
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.95rem;
     outline: none;
+    min-width: 0; /* flex item overflow 방지 */
 }
 
 #chat-send {
     background: #ff69b4;
     border: none;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 38px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,10 +220,10 @@ body, html {
 }
 
 #chat-send svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     fill: currentColor;
-    margin-left: 3px; /* 비행기 아이콘 중심 맞추기 */
+    margin-left: 2px; /* 비행기 아이콘 중심 맞추기 */
 }
 
 #chat-send:hover {
@@ -236,11 +237,11 @@ body, html {
 }
 
 #chat-skip-btn {
-    background: #666;
+    background: #888;
     border: none;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 38px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,13 +254,13 @@ body, html {
 }
 
 #chat-skip-btn svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     fill: none;
 }
 
 #chat-skip-btn:hover {
-    background: #444;
+    background: #ff5e5e; /* 중단 의미를 담아 호버 시 붉은색 계열로 변경 */
     transform: scale(1.05);
 }
 
@@ -460,4 +461,81 @@ body, html {
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(5px); }
+}
+
+/* 커스텀 모달 스타일 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    backdrop-filter: blur(3px);
+}
+
+.modal-content {
+    background: #222;
+    border: 2px solid #ff69b4;
+    border-radius: 20px;
+    padding: 25px;
+    width: 85%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+    animation: modal-appear 0.3s ease-out;
+}
+
+@keyframes modal-appear {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.modal-buttons button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1rem;
+}
+
+#modal-confirm-btn {
+    background: #ff69b4;
+    color: white;
+}
+
+#modal-confirm-btn:hover {
+    background: #ff1493;
+    transform: translateY(-2px);
+}
+
+#modal-cancel-btn {
+    background: #444;
+    color: #ccc;
+}
+
+#modal-cancel-btn:hover {
+    background: #555;
+    color: #fff;
+    transform: translateY(-2px);
 }
