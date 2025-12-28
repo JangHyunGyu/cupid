@@ -302,7 +302,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
             { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
-            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 6 } } }
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
         ]
     },
     "yuna_secret": {
@@ -445,7 +445,7 @@ Object.assign(SCENARIO[1], {
         setFlag: "metDain",
         choices: [
             { text: "Alright, let's do this!", next: "lunch_dain_play", stats: { Dain: { affinity: 5 } } },
-            { text: "I'm not great at volleyball... can you teach me?", next: "lunch_dain_teach", stats: { Dain: { affinity: 8 } } }
+            { text: "I'm not great at volleyball... can you teach me?", next: "lunch_dain_teach", stats: { Dain: { affinity: 15 } } }
         ]
     },
     "lunch_dain_play": {

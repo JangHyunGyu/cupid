@@ -38,7 +38,7 @@ Object.assign(SCENARIO[2], {
         text: "\"혹시 선생님이랑 같이 점심 먹고 싶어서 온 거니? 후훗, 농담이야.\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
-            { text: "네, 선생님이랑 같이 먹고 싶어요! (옆에 앉는다)", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 8 } } },
+            { text: "네, 선생님이랑 같이 먹고 싶어요! (옆에 앉는다)", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 15 } } },
             { text: "선생님 도시락이 너무 맛있어 보여서요.", next: "day2_lunch_teacher_food", stats: { Teacher: { affinity: 5 } } },
             { text: "아니요, 그냥 지나가다가 들렀어요.", next: "day2_lunch_teacher_pass", stats: { Teacher: { affinity: 3 } } }
         ]
@@ -189,7 +189,7 @@ Object.assign(SCENARIO[2], {
         text: "\"이 안에는... 학교가 오랫동안 숨겨온 기록들이 있어. 네가 이걸 보면... 모든 게 달라질 거야.\"",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "그 기록, 나도 같이 봐도 될까?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 8 } } },
+            { text: "그 기록, 나도 같이 봐도 될까?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
             { text: "위험한 거 아냐? 그냥 내버려 두는 게 좋겠어.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -20 } } },
             { text: "유나야, 넌 왜 이런 걸 조사하는 거야?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
         ]
@@ -337,7 +337,7 @@ Object.assign(SCENARIO[2], {
         text: "\"어머, 우리 {name?}이네? 어디가 아픈 걸까, 아니면 내 얼굴 보고 싶어서 설레는 걸까?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 3 } },
+        stats: { Nurse: { affinity: 6 } },
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_new": {
@@ -510,7 +510,7 @@ Object.assign(SCENARIO[2], {
         name: "보건선생님",
         text: "(그녀가 요염하게 웃으며 번호를 저장한다.) \"후훗, 그럼 나중에 밤에 기다릴게? 답장 늦게 하면 삐질지도 몰라.\"",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 8 } },
+        stats: { Nurse: { affinity: 18 } },
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_success": {

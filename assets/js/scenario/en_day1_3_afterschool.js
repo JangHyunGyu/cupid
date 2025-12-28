@@ -32,8 +32,75 @@ Object.assign(SCENARIO[1], {
             { text: "Head to the gym where lively sounds are coming from.", next: "after_dain_new", excludeCondition: "metDain" },
             { text: "Stop by the nurse's office to say goodbye to the teacher.", next: "after_nurse", condition: "metNurse" },
             { text: "Go check out the nurse's office.", next: "after_nurse_new", excludeCondition: "metNurse" },
+            { text: "Go see the homeroom teacher in the faculty room.", next: "after_teacher" },
             { text: "I'm tired today, so I'll go straight home.", next: "after_home" }
         ]
+    },
+    "after_teacher": {
+        name: "Me",
+        text: "(When I open the faculty room door, I see the homeroom teacher organizing documents.)",
+        background: "assets/images/background/teacher_room.png",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        next: "after_teacher_2"
+    },
+    "after_teacher_2": {
+        name: "Homeroom Teacher",
+        text: "\"Oh, {name?}! What brings you to the faculty room at this hour?\"",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        next: "after_teacher_3"
+    },
+    "after_teacher_3": {
+        name: "Homeroom Teacher",
+        text: "\"Since it's your first day, you must have many questions. Is there anything I can help you with?\"",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        choices: [
+            { text: "Aren't you going home, Teacher? Can I help you?", next: "after_teacher_help", stats: { Teacher: { affinity: 5 } } },
+            { text: "I just wanted to see your face one more time.", next: "after_teacher_miss", stats: { Teacher: { affinity: 15 } } },
+            { text: "I want to know more about the school facilities.", next: "after_teacher_info", stats: { Teacher: { affinity: 3 } } }
+        ]
+    },
+    "after_teacher_help": {
+        name: "Homeroom Teacher",
+        text: "\"Hehe, thank you for the thought. But this is something I have to do. You should go home and rest, {name?}.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        sunset: true,
+        next: "after_teacher_contact"
+    },
+    "after_teacher_miss": {
+        name: "Homeroom Teacher",
+        text: "\"Oh my... {name?}, you really are something. I'm happy you like me that much... Hehe.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        sunset: true,
+        next: "after_teacher_contact"
+    },
+    "after_teacher_info": {
+        name: "Homeroom Teacher",
+        text: "\"Yes, our school has a long history, so there are many hidden places. I'll show you around slowly later.\"",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        next: "after_teacher_contact"
+    },
+    "after_teacher_contact": {
+        name: "Homeroom Teacher",
+        text: "\"Ah, right. If anything urgent happens, contact me. I'll give you my number.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        sunset: true,
+        branches: [
+            { next: "after_home", condition: "has_number_teacher" },
+            { next: "after_teacher_contact_ask" }
+        ]
+    },
+    "after_teacher_contact_ask": {
+        name: "Homeroom Teacher",
+        text: "\"Here, this is my number. Save it.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        sunset: true,
+        setFlags: ["has_number_teacher", "has_any_contact"],
+        stats: { Teacher: { affinity: 5 } },
+        next: "after_home"
     },
     "after_seoyeon": {
         name: "Seoyeon",
@@ -366,7 +433,7 @@ Object.assign(SCENARIO[1], {
         text: "(She saves the number, a faint smile touching her lips.) \"...Done. We're connected now. When I call... you'd better come.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
-        stats: { Yuna: { affinity: 8 } },
+        stats: { Yuna: { affinity: 15 } },
         next: "after_home"
     },
     "yuna_contact_fail": {
@@ -502,7 +569,7 @@ Object.assign(SCENARIO[1], {
         sunset: true,
         choices: [
             { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer", stats: { Dain: { affinity: 5 } } },
-            { text: "Need a hand? Toss me the ball!", next: "after_dain_help", stats: { Dain: { affinity: 8 } } },
+            { text: "Need a hand? Toss me the ball!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
             { text: "I'm pretty beat... can we go now?", next: "after_dain_tired", stats: { Dain: { affinity: -20 } } }
         ]
     },
@@ -630,7 +697,7 @@ Object.assign(SCENARIO[1], {
         text: "(She blushes, looking genuinely surprised.) \"Wh-what! Right now? ...Well, if you really want to hear my voice. But don't keep me up too late! I've got early practice!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shy.png",
-        stats: { Dain: { affinity: 12 } },
+        stats: { Dain: { affinity: 20 } },
         next: "after_home"
     },
     "dain_contact_call_fail": {
@@ -647,7 +714,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
-        stats: { Dain: { affinity: 10 } },
+        stats: { Dain: { affinity: 15 } },
         next: "after_home"
     },
     "dain_contact_fail": {
@@ -721,7 +788,7 @@ Object.assign(SCENARIO[1], {
         name: "Nurse",
         text: "\"Hehe, how diligent. Then I'll contact you tonight, okay? Goodbye, {name?}.\"",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 5 } },
+        stats: { Nurse: { affinity: 15 } },
         next: "after_home"
     },
     "nurse_after_day1_contact_fail": {

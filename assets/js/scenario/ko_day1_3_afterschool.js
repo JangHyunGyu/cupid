@@ -58,7 +58,7 @@ Object.assign(SCENARIO[1], {
         sunset: true,
         choices: [
             { text: "선생님은 퇴근 안 하세요? 제가 도와드릴까요?", next: "after_teacher_help", stats: { Teacher: { affinity: 5 } } },
-            { text: "그냥 선생님 얼굴 한 번 더 보고 싶어서요.", next: "after_teacher_miss", stats: { Teacher: { affinity: 8 } } },
+            { text: "그냥 선생님 얼굴 한 번 더 보고 싶어서요.", next: "after_teacher_miss", stats: { Teacher: { affinity: 15 } } },
             { text: "학교 시설에 대해 좀 더 알고 싶어요.", next: "after_teacher_info", stats: { Teacher: { affinity: 3 } } }
         ]
     },
@@ -433,7 +433,7 @@ Object.assign(SCENARIO[1], {
         text: "(유나가 내 번호를 저장하고는 희미하게 미소 짓는다.) \"...됐어. 이제 우린 연결된 거야. 내가 부르면... 언제든 와줘야 해.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
-        stats: { Yuna: { affinity: 8 } },
+        stats: { Yuna: { affinity: 15 } },
         next: "after_home"
     },
     "yuna_contact_fail": {
@@ -569,7 +569,7 @@ Object.assign(SCENARIO[1], {
         sunset: true,
         choices: [
             { text: "좋아, 내가 응원할게! 파이팅!", next: "after_dain_cheer", stats: { Dain: { affinity: 5 } } },
-            { text: "나도 연습 도와줄게. 공 던져줘!", next: "after_dain_help", stats: { Dain: { affinity: 8 } } },
+            { text: "나도 연습 도와줄게. 공 던져줘!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
             { text: "오늘은 좀 피곤한데, 그냥 집에 가면 안 돼?", next: "after_dain_tired", stats: { Dain: { affinity: -20 } } }
         ]
     },
@@ -697,7 +697,7 @@ Object.assign(SCENARIO[1], {
         text: "(다인이는 얼굴을 붉히며 당황한 듯 웃는다.) \"뭐, 뭐야! 갑자기... 내 목소리 듣고 싶다니... 너무 설레게 하는 거 아냐? 나 내일 연습 일찍 가야 하니까 너무 오래 하진 마!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shy.png",
-        stats: { Dain: { affinity: 12 } },
+        stats: { Dain: { affinity: 20 } },
         next: "after_home"
     },
     "dain_contact_call_fail": {
@@ -714,7 +714,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
-        stats: { Dain: { affinity: 10 } },
+        stats: { Dain: { affinity: 15 } },
         next: "after_home"
     },
     "dain_contact_fail": {
@@ -789,7 +789,7 @@ Object.assign(SCENARIO[1], {
         name: "보건선생님",
         text: "\"후훗, 착하네. 그럼 나중에 밤에 연락할게? 잘 가, {name?}.\"",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 5 } },
+        stats: { Nurse: { affinity: 15 } },
         next: "after_home"
     },
     "nurse_after_day1_contact_fail": {

@@ -38,7 +38,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Did you come here because you wanted to eat lunch with me? Hehe, just kidding.\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
-            { text: "Yes, I want to eat with you! (Sits next to her)", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 8 } } },
+            { text: "Yes, I want to eat with you! (Sits next to her)", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 15 } } },
             { text: "Your lunch looks so delicious.", next: "day2_lunch_teacher_food", stats: { Teacher: { affinity: 5 } } },
             { text: "No, I was just passing by.", next: "day2_lunch_teacher_pass", stats: { Teacher: { affinity: 3 } } }
         ]
@@ -185,7 +185,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Inside here... are records the school has kept hidden for years. Once you see them... nothing will ever be the same.\"",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "Can I see those records too?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 8 } } },
+            { text: "Can I see those records too?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
             { text: "Isn't it dangerous? It's better to just leave it alone.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -20 } } },
             { text: "Yuna, why are you investigating this?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
         ]
@@ -328,7 +328,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Oh, if it isn't my favorite student. Is something hurting, or did you just come to see my pretty face?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 3 } },
+        stats: { Nurse: { affinity: 6 } },
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_new": {
@@ -489,7 +489,7 @@ Object.assign(SCENARIO[2], {
         name: "Nurse",
         text: "(She smiles seductively and saves my number.) \"Hehe, then I'll be waiting tonight? I might get sulky if you reply late.\"",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 8 } },
+        stats: { Nurse: { affinity: 18 } },
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_success": {

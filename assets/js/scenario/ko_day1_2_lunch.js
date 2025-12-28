@@ -304,7 +304,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
             { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
-            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { affinity: 6 } } }
+            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
         ]
     },
     "yuna_secret": {
@@ -447,7 +447,7 @@ Object.assign(SCENARIO[1], {
         setFlag: "metDain",
         choices: [
             { text: "좋아, 어디 한번 해보자!", next: "lunch_dain_play", stats: { Dain: { affinity: 5 } } },
-            { text: "배구는 잘 못하는데... 가르쳐줄래?", next: "lunch_dain_teach", stats: { Dain: { affinity: 8 } } }
+            { text: "배구는 잘 못하는데... 가르쳐줄래?", next: "lunch_dain_teach", stats: { Dain: { affinity: 15 } } }
         ]
     },
     "lunch_dain_play": {
