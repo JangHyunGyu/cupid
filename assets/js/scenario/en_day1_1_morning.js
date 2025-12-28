@@ -49,7 +49,7 @@ Object.assign(SCENARIO[1], {
     "intro_3": {
         name: "Seoyeon",
         text: "\"I'm Seoyeon, the student council president. I came to meet you at the teacher's request. Nice to meet you!\"",
-        setFlag: "metSeoyeon",
+        setFlags: ["metSeoyeon", "knowsName_Seoyeon"],
         choices: [
             { text: "Yeah, nice to meet you. The school is so big I was getting lost.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "You... are really pretty. (My true feelings just slipped out...!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 15 } } },

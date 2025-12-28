@@ -335,7 +335,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_dain_new_name_ask"
     },
     "day2_after_dain_new_name_ask": {
-        name: "Dain",
+        name: "???",
         text: "\"I'm Dain Jung from Class 2-3! What's your name?\"",
         character: "assets/images/characters/dain_nomal.png",
         night: true,

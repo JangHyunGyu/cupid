@@ -31,6 +31,33 @@ Object.assign(SCENARIO[1], {
         next: "lunch_seoyeon_2"
     },
     "lunch_seoyeon_2": {
+        branches: [
+            { next: "lunch_seoyeon_2_study", condition: "personality_study" },
+            { next: "lunch_seoyeon_2_party", condition: "personality_active" },
+            { next: "lunch_seoyeon_2_normal" }
+        ]
+    },
+    "lunch_seoyeon_2_study": {
+        name: "Seoyeon",
+        text: "\"I was a bit worried because you looked a little cold during the introduction... but I was just looking for you! Want to eat together at our secret spot on the rooftop?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "Um... I promised to eat with others. (Decline)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
+            { text: "Rooftop? Do I have to go all the way there? It's a hassle.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+        ]
+    },
+    "lunch_seoyeon_2_party": {
+        name: "Seoyeon",
+        text: "\"You were amazing during the introduction! It feels like you've already become a celebrity. Hehe, I was just looking for you. Want to eat together at our secret spot on the rooftop?\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        choices: [
+            { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "Um... I promised to eat with others. (Decline)", next: "lunch_alone", stats: { Seoyeon: { affinity: -15 } } },
+            { text: "Rooftop? Do I have to go all the way there? It's a hassle.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -25 } } }
+        ]
+    },
+    "lunch_seoyeon_2_normal": {
         name: "Seoyeon",
         text: "\"I was just looking for you! We have a secret spot on the rooftop, want to eat there together?\"",
         character: "assets/images/characters/seyoun_nomal.png",
@@ -451,6 +478,18 @@ Object.assign(SCENARIO[1], {
         next: "nurse_name_share"
     },
     "nurse_name_share": {
+        branches: [
+            { next: "nurse_name_share_study", condition: "personality_study" },
+            { next: "nurse_name_share_normal" }
+        ]
+    },
+    "nurse_name_share_study": {
+        name: "Nurse",
+        text: "\"{name}... Hehe, your eyes are as clear as your name. I saw you during the introduction earlier, and you looked like a total model student. Is your head throbbing from studying too hard? Or... did you just want to see me?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_free_talk_day1"
+    },
+    "nurse_name_share_normal": {
         name: "Nurse",
         text: "\"{name}... Hehe, your eyes are as clear as your name. Why did you come here? Are you sick? Or... did you just want to see me?\"",
         character: "assets/images/characters/nurse.png",

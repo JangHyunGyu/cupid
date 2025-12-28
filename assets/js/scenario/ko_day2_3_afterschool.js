@@ -327,7 +327,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_dain_3"
     },
     "day2_after_dain_new": {
-        name: "다인",
+        name: "???",
         text: "\"하아, 하아... 너 운동 신경 진짜 대박이다! 처음 보는데 호흡이 척척 맞네!\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
@@ -335,7 +335,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_dain_new_name_ask"
     },
     "day2_after_dain_new_name_ask": {
-        name: "다인",
+        name: "???",
         text: "\"난 2학년 3반 정다인이야! 네 이름은 뭐야?\"",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
