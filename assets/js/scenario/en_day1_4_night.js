@@ -60,14 +60,43 @@ Object.assign(SCENARIO[1], {
         next: "night_home_check_contact"
     },
     "night_message_seyoun": {
+        branches: [
+            { next: "night_message_seyoun_lunch", condition: "ate_lunch_seoyeon" },
+            { next: "night_message_seyoun_after", condition: "helpedSeoyeon" },
+            { next: "night_message_seyoun_generic" }
+        ]
+    },
+    "night_message_seyoun_lunch": {
         name: "Me",
         text: "(I send a message to Seoyeon. 'The lunch was really delicious today. Thank you!')",
         night: true,
-        next: "night_message_seyoun_reply"
+        setFlag: "sent_msg_day1_seyoun",
+        next: "night_message_seyoun_reply_lunch"
     },
-    "night_message_seyoun_reply": {
+    "night_message_seyoun_after": {
+        name: "Me",
+        text: "(I send a message to Seoyeon. 'I enjoyed helping with the student council work today. See you tomorrow!')",
+        night: true,
+        setFlag: "sent_msg_day1_seyoun",
+        next: "night_message_seyoun_reply_generic"
+    },
+    "night_message_seyoun_generic": {
+        name: "Me",
+        text: "(I send a message to Seoyeon. 'Did you have a good day? See you at school tomorrow.')",
+        night: true,
+        setFlag: "sent_msg_day1_seyoun",
+        next: "night_message_seyoun_reply_generic"
+    },
+    "night_message_seyoun_reply_lunch": {
         name: "Seoyeon",
         text: "(Vibrate~ An immediate reply.) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name?}.'",
+        night: true,
+        stats: { Seoyeon: { affinity: 5 } },
+        next: "day1_end"
+    },
+    "night_message_seyoun_reply_generic": {
+        name: "Seoyeon",
+        text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name?}. See you at school tomorrow. Good night.'",
         night: true,
         stats: { Seoyeon: { affinity: 5 } },
         next: "day1_end"
@@ -76,6 +105,7 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(I send a message to Yuna. 'I had fun today. Good night.')",
         night: true,
+        setFlag: "sent_msg_day1_yuna",
         next: "night_message_yuna_reply"
     },
     "night_message_yuna_reply": {
@@ -86,14 +116,35 @@ Object.assign(SCENARIO[1], {
         next: "day1_end"
     },
     "night_message_dain": {
+        branches: [
+            { next: "night_message_dain_dated", condition: "datedDainDay1" },
+            { next: "night_message_dain_generic" }
+        ]
+    },
+    "night_message_dain_dated": {
         name: "Me",
         text: "(I send a message to Dain. 'The tteokbokki was great today! Good night.')",
         night: true,
-        next: "night_message_dain_reply"
+        setFlag: "sent_msg_day1_dain",
+        next: "night_message_dain_reply_dated"
     },
-    "night_message_dain_reply": {
+    "night_message_dain_generic": {
+        name: "Me",
+        text: "(I send a message to Dain. 'Dain, good job today! See you tomorrow.')",
+        night: true,
+        setFlag: "sent_msg_day1_dain",
+        next: "night_message_dain_reply_generic"
+    },
+    "night_message_dain_reply_dated": {
         name: "Dain",
         text: "(A lively reply.) 'Right? I told you I know all the best spots! Rest up and see you tomorrow, {name?}! Good night!'",
+        night: true,
+        stats: { Dain: { affinity: 5 } },
+        next: "day1_end"
+    },
+    "night_message_dain_reply_generic": {
+        name: "Dain",
+        text: "(A lively reply.) 'Yeah! You too! See you at school tomorrow, {name?}! Good night!'",
         night: true,
         stats: { Dain: { affinity: 5 } },
         next: "day1_end"
@@ -102,6 +153,7 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(I send a message to the Nurse. 'Teacher, thank you for today. Good night.')",
         night: true,
+        setFlag: "sent_msg_day1_nurse",
         next: "night_message_nurse_reply"
     },
     "night_message_nurse_reply": {
