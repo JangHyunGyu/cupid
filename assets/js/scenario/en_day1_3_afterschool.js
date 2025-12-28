@@ -1,4 +1,4 @@
-if (typeof SCENARIO === 'undefined') {
+﻿if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 if (!SCENARIO[1]) {
@@ -272,6 +272,7 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(I follow her up the creaking stairs to the rooftop, where the cool night air greets us.)",
         background: "assets/images/background/top_school.png",
+        character: null,
         night: true,
         next: "after_yuna_rooftop"
     },
@@ -285,7 +286,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_rooftop_2": {
         name: "Yuna",
-        text: "(Yuna leans against the railing, her eyes fixed on the distant horizon.)",
+        text: "(Yuna leans against the railing, her eyes fixed on me.)",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         next: "after_yuna_rooftop_2_2"
@@ -386,7 +387,7 @@ Object.assign(SCENARIO[1], {
     "after_dain_new_name_share": {
         name: "Me",
         text: "\"I'm {name}. I'm in Class 2-3.\"",
-        setFlag: "knowsName_다인",
+        setFlag: "knowsName_Dain",
         next: "after_dain_2"
     },
     "after_dain": {
@@ -591,8 +592,7 @@ Object.assign(SCENARIO[1], {
     "after_nurse_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_양호선생님",
-        next: "nurse_free_talk_after_day1"
+        setFlag: "knowsName_Nurse",`n        next: "nurse_free_talk_after_day1"
     },
     "after_nurse_2": {
         name: "Nurse",
@@ -632,4 +632,7 @@ Object.assign(SCENARIO[1], {
         next: "after_home"
     }
 });
+
+
+
 

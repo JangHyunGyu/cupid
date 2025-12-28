@@ -1,4 +1,4 @@
-if (typeof SCENARIO === 'undefined') {
+﻿if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 if (!SCENARIO[2]) {
@@ -8,7 +8,7 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_lunch_time": {
         name: "Me",
-        text: "(Ding-dong-dang-dong— The long-awaited lunch bell! The classroom is instantly filled with energy.)",
+        text: "(Ding-dong-dang-dong~ The long-awaited lunch bell! The classroom is instantly filled with energy.)",
         character: null,
         choices: [
             { text: "Go to Seoyeon and suggest eating lunch together.", next: "day2_lunch_seoyeon" },
@@ -82,7 +82,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "What is it? I want to know.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 10 } } },
-            { text: "I'm not here for secrets. I just wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 5 } } }
+            { text: "I'm not here for secrets. I just wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 8 } } }
         ]
     },
     "day2_yuna_talk_2_new": {
@@ -104,7 +104,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_유나",
+        setFlag: "knowsName_Yuna",
         next: "day2_yuna_secret"
     },
     "day2_yuna_secret": {
@@ -149,7 +149,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_dain": {
         name: "Me",
-        text: "(I open the gym door to find Dain mid-practice, sweat glistening on her skin. She spots me and runs over with a grin.)",
+        text: "(I open the gym door to find a girl mid-practice, sweat glistening on her skin. She spots me and runs over with a grin.)",
         character: "assets/images/characters/dain_laugh.png",
         branches: [
             { next: "day2_dain_lunch_talk", condition: "metDain" },
@@ -172,7 +172,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_dain_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_다인",
+        setFlag: "knowsName_Dain",
         next: "day2_dain_lunch_talk"
     },
     "day2_dain_lunch_talk": {
@@ -251,8 +251,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_nurse_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_양호선생님",
-        next: "nurse_free_talk"
+        setFlag: "knowsName_Nurse",`n        next: "nurse_free_talk"
     },
     "nurse_free_talk": {
         type: "free_talk",
@@ -326,6 +325,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(The warmth of the blanket she tucked around me pulls me into a deep, dreamless sleep. The exhaustion of the past two days finally catches up.)",
         background: "assets/images/background/nurse_room.jpg",
+        character: null,
         next: "day2_lunch_nurse_wake"
     },
     "day2_lunch_nurse_wake": {
@@ -402,3 +402,6 @@ Object.assign(SCENARIO[2], {
         next: "day2_afternoon_nurse_skip"
     }
 });
+
+
+

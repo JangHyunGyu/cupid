@@ -96,7 +96,7 @@ Object.assign(SCENARIO[1], {
     },
     "path_blush_1": {
         name: "Seoyeon",
-        text: "(Seoyeon's face turns red. She flusteredly turns around quickly.)",
+        text: "(Seoyeon's face turns red. She flusteredly lowers her head in embarrassment.)",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "path_blush_1_2"
     },
@@ -134,7 +134,7 @@ Object.assign(SCENARIO[1], {
     "hallway_name_share": {
         name: "Me",
         text: "\"Yeah, that's right. I'm {name}. I was a bit distracted earlier and couldn't greet you properly. Nice to meet you, Seoyeon.\"",
-        setFlag: "knowsName_서연",
+        setFlag: "knowsName_Seoyeon",
         next: "hallway_name_share_2"
     },
     "hallway_name_share_2": {
@@ -340,11 +340,11 @@ Object.assign(SCENARIO[1], {
         text: "\"Now, everyone pay attention! This is {name?}, who will be with us from today. Everyone, get along well. Now, shall we have a word of introduction?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_담임선생님", stats: { Teacher: { affinity: 5 } } },
-            { text: "Waaaah! Nice to meet you guys! Let's get along well from today!", next: "class_after_party", setFlags: ["personality_active", "knowsName_담임선생님"], stats: { Teacher: { affinity: 3 } } },
-            { text: "Hi! I like exercising and have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_담임선생님"], stats: { Teacher: { affinity: 2 } } },
-            { text: "Nice to meet you. I'm the type who likes reading books quietly.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_담임선생님"], stats: { Teacher: { affinity: 2 } } },
-            { text: "I came here to study. I hate being disturbed, so let's just get along moderately.", next: "class_after_study", setFlags: ["personality_study", "knowsName_담임선생님"], stats: { Teacher: { affinity: -2 } } }
+            { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 5 } } },
+            { text: "Waaaah! Nice to meet you guys! Let's get along well from today!", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 3 } } },
+            { text: "Hi! I like exercising and have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 2 } } },
+            { text: "Nice to meet you. I'm the type who likes reading books quietly.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_Teacher"], stats: { Teacher: { affinity: 2 } } },
+            { text: "I came here to study. I hate being disturbed, so let's just get along moderately.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -2 } } }
         ]
     },
     "teacher_name_share": {
@@ -431,3 +431,6 @@ Object.assign(SCENARIO[1], {
         next: "lunch_time"
     }
 });
+
+
+

@@ -1,4 +1,4 @@
-if (typeof SCENARIO === 'undefined') {
+﻿if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 if (!SCENARIO[2]) {
@@ -46,7 +46,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_seoyeon_2": {
         name: "Seoyeon",
         text: "\"Phew... Finally finished. {name?}, thank you so much for staying late. I wouldn't have finished this today without you.\"",
-        character: "assets/images/characters/seyoun_smile.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_after_seoyeon_3"
     },
     "day2_after_seoyeon_3": {
@@ -80,7 +80,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_night_talk": {
         name: "Seoyeon",
         text: "\"{name?}... Thank you so much for today. When I'm with you, all the stress just melts away. Would you... like to have lunch together tomorrow too?\"",
-        character: "assets/images/characters/seyoun_smile.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_end"
     },
     "day2_after_yuna": {
@@ -116,7 +116,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_유나",
+        setFlag: "knowsName_Yuna",
         next: "day2_after_yuna_3"
     },
     "day2_after_yuna_3": {
@@ -124,8 +124,8 @@ Object.assign(SCENARIO[2], {
         text: "(Yuna points to a crack in the wall. A strange, eye-like symbol is drawn there in a dark, reddish hue.)",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "What does this even mean?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 5 } } },
-            { text: "(Taking Yuna's hand) This place is creepy. Let's get out of here.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 10 } } },
+            { text: "What does this even mean?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 8 } } },
+            { text: "(Taking Yuna's hand) This place is creepy. Let's get out of here.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 12 } } },
             { text: "This eye... it feels like it's watching us.", next: "day2_yuna_eye", stats: { Yuna: { affinity: 15 } } }
         ]
     },
@@ -186,7 +186,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_dain_new_name_share": {
         name: "Me",
         text: "\"I'm {name}. I'm in Class 2-3 too.\"",
-        setFlag: "knowsName_다인",
+        setFlag: "knowsName_Dain",
         next: "day2_after_dain_3"
     },
     "day2_after_dain_3": {
@@ -256,8 +256,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_nurse_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_양호선생님",
-        next: "day2_after_nurse_3"
+        setFlag: "knowsName_Nurse",`n        next: "day2_after_nurse_3"
     },
     "day2_after_nurse_3": {
         name: "Me",
@@ -295,3 +294,6 @@ Object.assign(SCENARIO[2], {
         next: "day2_end"
     }
 });
+
+
+

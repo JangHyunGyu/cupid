@@ -67,7 +67,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_seyoun_reply": {
         name: "Seoyeon",
-        text: "(Beep— An immediate reply.) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name?}.'",
+        text: "(Vibrate~ An immediate reply.) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name?}.'",
         night: true,
         stats: { Seoyeon: { affinity: 5 } },
         next: "day1_end"

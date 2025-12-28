@@ -19,11 +19,11 @@ const FLAG_MEMORIES = [
     { flag: "metSeoyeon", char: "서연", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
     { flag: "metYuna", char: "유나", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
     { flag: "metDain", char: "다인", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
-    { flag: "isDating_서연", char: "서연", ko: "당신은 주인공과 사귀는 사이입니다. 주인공을 '자기야' 또는 '내 사랑'이라고 부르며 매우 다정하게 대하세요.", en: "You are dating the user. Call them 'Honey' or 'My Love' and be very affectionate." },
-    { flag: "isDating_유나", char: "유나", ko: "당신은 주인공과 사귀는 사이입니다. 주인공을 '나의 단 하나'라고 부르며 집착적이고 깊은 사랑을 표현하세요.", en: "You are dating the user. Call them 'My Only One' and express deep, obsessive love." },
+    { flag: "isDating_서연", char: "서연", ko: "당신은 주인공과 사귀는 사이입니다. 평소의 엄격한 모습은 버리고, 주인공에게만 보여주는 특별한 다정함을 표현하세요. 가끔 '자기야'라고 부르며 수줍어하면서도 깊은 애정을 담으세요.", en: "You are dating the user. Drop your strict persona and show the special, affectionate side you only show to them. Occasionally call them 'Honey' with a mix of shyness and deep love." },
+    { flag: "isDating_유나", char: "유나", ko: "당신은 주인공과 사귀는 사이입니다. 주인공이 당신의 세계 전부인 것처럼 대하며, 조용하지만 강렬한 집착과 사랑을 표현하세요. 호칭보다는 눈빛과 분위기로 당신의 감정을 전달하세요.", en: "You are dating the user. Treat them as if they are your entire world, expressing a quiet but intense obsession and love. Convey your feelings through your gaze and atmosphere rather than just nicknames." },
     { flag: "isDating_다인", char: "다인", ko: "당신은 주인공과 사귀는 사이입니다. 주인공을 '바보 남친'이라고 부르며 츤데레 같으면서도 애정 가득하게 대하세요.", en: "You are dating the user. Call them 'Dummy Boyfriend' and be affectionate in a tsundere way." },
     { flag: "isDating_Teacher", char: "담임선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 애교 섞인 말투를 사용하세요.", en: "You are in a secret relationship with the user. When alone, act like a 'woman' rather than a 'teacher' and be cute." },
-    { flag: "isDating_Nurse", char: "양호선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 더욱 대담하고 유혹적으로 대하며, '여보' 또는 '내 사랑' 같은 애칭을 사용하세요.", en: "You are in a secret relationship with the user. When alone, act more like a 'woman' than a 'teacher', being bold and seductive, and use nicknames like 'Darling' or 'My Love'." },
+    { flag: "isDating_Nurse", char: "보건선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 더욱 다정하고 묘한 분위기를 풍기며, 가끔 '자기야'라고 부르며 친밀함을 표현하세요.", en: "You are in a secret relationship with the user. When alone, act more like a 'woman' than a 'teacher', being affectionate and creating an intimate atmosphere, occasionally calling them 'Honey'." },
     { flag: "personality_active", char: "담임선생님", ko: "주인공은 자신을 활발한 성격이라고 소개했습니다.", en: "The user introduced themselves as having an active personality." },
     { flag: "personality_quiet", char: "담임선생님", ko: "주인공은 자신을 조용한 성격이라고 소개했습니다.", en: "The user introduced themselves as having a quiet personality." }
 ];
@@ -88,7 +88,7 @@ const CHARACTER_EXPRESSIONS = {
         "shy": "assets/images/characters/teacher_shy.png",
         "sad": "assets/images/characters/teacher_sad.png"
     },
-    "양호선생님": {
+    "보건선생님": {
         "normal": "assets/images/characters/nurse.png",
         "angry": "assets/images/characters/nurse_angry.png",
         "shy": "assets/images/characters/nurse_shy.png"
@@ -271,7 +271,7 @@ async function renderScene(sceneId) {
     if (scene.stats) {
         for (const [char, stats] of Object.entries(scene.stats)) {
             const charNameMap = {
-                "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "양호선생님": "Nurse",
+                "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
                 "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
             };
             const charKey = charNameMap[char] || char;
@@ -385,7 +385,7 @@ function getGameContext(charName, isEn) {
 // 다른 캐릭터들에 대한 정보를 생성하는 함수
 function getSocialContext(currentCharName, isEn) {
     const charNameMap = {
-        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "양호선생님": "Nurse",
+        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
         "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Homeroom Teacher": "Teacher", "Nurse": "Nurse"
     };
 
@@ -394,13 +394,13 @@ function getSocialContext(currentCharName, isEn) {
         "Yuna": "Mysterious girl. Interested in the user's 'light'.",
         "Dain": "Energetic girl. Close friend of the user.",
         "Homeroom Teacher": "Professional but has a clumsy side.",
-        "Nurse": "Seductive but caring 'Onee-san'."
+        "Nurse": "A mature and playful health teacher who cares deeply for her students."
     } : {
         "서연": "학생회장. 모두에게 친절하지만 외로움을 잘 탐.",
         "유나": "신비로운 소녀. 주인공의 '빛'에 집착함.",
         "다인": "활기찬 소녀. 주인공과 편한 친구 사이.",
         "담임선생님": "전문적인 교사지만 허당끼가 있음.",
-        "양호선생님": "매혹적이고 장난기 많은 양호 교사."
+        "보건선생님": "매혹적이고 장난기 많은 보건 교사."
     };
 
     const otherChars = Object.entries(characters)
@@ -443,19 +443,19 @@ function startFreeTalk(scene) {
     else if (bgUrl.includes('top_school')) locationName = isEn ? "Rooftop" : "학교 옥상";
     else if (bgUrl.includes('playground')) locationName = isEn ? "Playground" : "운동장";
     else if (bgUrl.includes('gym')) locationName = isEn ? "Gym" : "체육관";
-    else if (bgUrl.includes('nurse_room')) locationName = isEn ? "Nurse's Office" : "양호실";
+    else if (bgUrl.includes('nurse_room')) locationName = isEn ? "Nurse's Office" : "보건실";
     else if (bgUrl.includes('library')) locationName = isEn ? "Library" : "도서관";
     else if (bgUrl.includes('home_room')) locationName = isEn ? "My Room" : "주인공의 방";
 
     // 시스템 프롬프트 설정
-    const knowsName = gameState[`knowsName_${scene.name}`];
-    
-    // 캐릭터 스탯 가져오기 (한글 이름 대응)
     const charNameMap = {
-        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "양호선생님": "Nurse",
+        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
         "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Homeroom Teacher": "Teacher", "Nurse": "Nurse"
     };
     const charKey = charNameMap[scene.name] || scene.name;
+    const knowsName = gameState[`knowsName_${charKey}`];
+    
+    // 캐릭터 스탯 가져오기 (한글 이름 대응)
     const charStats = gameState.stats[charKey] || { affinity: 0 };
 
     // 캐릭터별 기본 성격 설정
@@ -464,13 +464,13 @@ function startFreeTalk(scene) {
         "Yuna": "A classic 'Kuudere' who is expressionless and cold, but shows a deep, obsessive interest in the protagonist's 'special light'. She occasionally drops cryptic, heart-fluttering lines and has a mysterious, protective aura.",
         "Dain": "A bright and energetic 'Genki' girl who treats the protagonist like a close friend, but gets easily flustered and 'Tsundere' when romance is mentioned. She is honest about her feelings but clumsy at expressing them.",
         "Homeroom Teacher": "A professional homeroom teacher who tries to maintain boundaries, but has a 'clumsy' side and secretly relies on the protagonist for emotional support. She is weak to the protagonist's unexpected maturity.",
-        "Nurse": "A mature and seductive 'Onee-san' type who enjoys teasing the protagonist with provocative words, but actually has a very protective and caring nature. She enjoys seeing the protagonist get flustered."
+        "Nurse": "A mature and playful health teacher who enjoys teasing the protagonist with provocative words, but actually has a very protective and caring nature. She enjoys seeing the protagonist get flustered."
     } : {
         "서연": "모두에게 친절한 완벽한 학생회장이지만, 사실 외로움을 잘 타며 주인공과 단둘이 있을 때는 부끄러움을 많이 타는 '메가데레' 스타일. 규칙을 중시하지만 주인공을 위해서라면 가끔 규칙을 어기고 싶어 함.",
         "유나": "무표정하고 차가운 '쿨데레'의 정석. 주인공의 '특별한 빛'에 깊고 집착적인 관심을 보이며, 가끔씩 툭 던지는 신비롭고 설레는 대사가 특징. 주인공을 지키려는 묘한 분위기를 풍김.",
         "다인": "밝고 활기찬 '현모양처형 츤데레'. 주인공을 편한 친구처럼 대하지만, 로맨틱한 분위기가 되면 금방 얼굴이 빨개지며 당황함. 감정에 솔직하지만 표현이 서툰 귀여운 매력이 있음.",
         "담임선생님": "공과 사가 뚜렷한 전문적인 교사지만, 사실 허당끼가 있고 주인공의 예상치 못한 어른스러운 모습에 가슴 설레어 함. 은근히 주인공에게 의지하고 싶어 하는 '갭 모에'가 있음.",
-        "양호선생님": "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만, 사실 누구보다 주인공을 아끼고 보호하려 함. 주인공이 당황하는 모습에 귀여움을 느낌."
+        "보건선생님": "성숙하고 장난기 많은 보건 교사. 도발적인 말로 주인공을 놀리는 것을 즐기지만, 사실 누구보다 학생들을 아끼고 보호하려 함. 주인공이 당황하는 모습에 귀여움을 느낌."
     };
 
     const charPersonality = scene.personality || defaultPersonalities[scene.name] || (isEn ? "A character from the school" : "학교의 캐릭터");
@@ -541,7 +541,7 @@ function startFreeTalk(scene) {
      * -1 ~ -3: 학교 공부나 숙제에 대해 불평하기, 은근히 권위를 무시하는 말투, 너무 버릇없는 반말 섞기.
      * -4 ~ -7: 무례한 언행, 가벼운 욕설, 그녀의 실수를 대놓고 비웃는 발언.
      * -8 ~ -10: 성희롱(교사-학생 선을 넘는 저질 발언), 심한 인격 모독, 그녀의 전문적인 노력을 비하하기.`,
-        "양호선생님": `
+        "보건선생님": `
      * +8 ~ +10: 그녀의 도발적인 페이스에 휘둘리지 않고 대담하게 리드하기, '유혹' 뒤에 숨겨진 그녀의 다정함을 꿰뚫어 보기, 남자다운 자신감.
      * +4 ~ +7: 그녀의 장난에 부끄러워하며 귀엽게 반응하기, 그녀의 안부를 묻거나 건강 상담하기, 그녀의 보살핌에 진심으로 감사하기.
      * +1 ~ +3: 예의 바른 인사, 가벼운 일상 대화, 그녀의 조언에 귀 기울이기.
@@ -598,7 +598,7 @@ function startFreeTalk(scene) {
      * -30 ~ 30 (보통): 전문적인 교사. 사제 관계의 선을 강조하며 공적인 태도로 대함.
      * 31 ~ 70 (호감): 주인공을 '남자'로 의식하기 시작함. 교사로서의 본분과 개인적인 감정 사이에서 혼란스러워함.
      * 71 ~ 100 (사랑): 주인공에게 정서적으로 의지함. 단둘이 있을 때 지친 모습이나 나약한 모습을 보여주기도 함. 대담한 고백에 교사로서 당황하지만, 여자로서 설레어 합니다.`,
-        "양호선생님": `
+        "보건선생님": `
      * -100 ~ -31 (적대적): 노골적인 혐오감을 드러냄. 평소의 장난기 없는 차갑고 사무적인 태도로 일관함.
      * -30 ~ 30 (보통): 능글맞고 도발적인 장난. 하지만 이는 어디까지나 방어 기제로서의 '가면'임.
      * 31 ~ 70 (호감): 장난에 진심 어린 애정이 섞이기 시작함. 주인공의 건강이나 안부를 진심으로 걱정함.
@@ -618,8 +618,8 @@ function startFreeTalk(scene) {
         "Yuna": `
      * -100 ~ -31: "Shadow", "You" (Chilling and dismissive)
      * -30 ~ 30: "Transfer Student", "You" (Indifferent)
-     * 31 ~ 70: "${gameState.playerName}", "My light" (Showing mysterious interest)
-     * 71 ~ 100: "My only one", "${gameState.playerName}..." (Obsessive and intimate)`,
+     * 31 ~ 70: "${gameState.playerName}", "You..." (Staring with mysterious interest)
+     * 71 ~ 100: "${gameState.playerName}...", "My..." (Trailing off with an obsessive gaze)`,
         "Dain": `
      * -100 ~ -31: "Hey", "You" (Angry and shouting)
      * -30 ~ 30: "Transfer Student", "Hey!" (Casual friend vibe)
@@ -632,9 +632,9 @@ function startFreeTalk(scene) {
      * 71 ~ 100: "${gameState.playerName}...", "Um..." (Dropping the 'student' title, confused by feelings)`,
         "Nurse": `
      * -100 ~ -31: "Patient", "You" (Coldly professional)
-     * -30 ~ 30: "Cute Transfer Student", "Kiddo" (Playful teasing)
-     * 31 ~ 70: "${gameState.playerName} kun", "My cutie" (More affectionate teasing)
-     * 71 ~ 100: "Honey", "Darling", "My love" (Bold, seductive, and intimate nicknames)`
+     * -30 ~ 30: "Transfer Student", "Our patient" (Playful teasing)
+     * 31 ~ 70: "${gameState.playerName} kun", "Our transfer student" (Friendly and affectionate teasing)
+     * 71 ~ 100: "${gameState.playerName}", "You..." (A subtle, lingering tone that blurs the line between teacher and student)`
     } : {
         "서연": `
      * -100 ~ -31: "전학생", "너" (매우 차갑고 무시하는 듯한 표현)
@@ -644,8 +644,8 @@ function startFreeTalk(scene) {
         "유나": `
      * -100 ~ -31: "그림자", "너" (소름 돋을 정도로 차가움)
      * -30 ~ 30: "전학생", "너" (무관심함)
-     * 31 ~ 70: "${gameState.playerName}", "나의 빛" (신비로운 관심을 보임)
-     * 71 ~ 100: "나의 단 하나", "${gameState.playerName}..." (집착적이거나 운명적인 느낌)`,
+     * 31 ~ 70: "${gameState.playerName}", "너..." (신비로운 관심을 보이며 빤히 바라봄)
+     * 71 ~ 100: "${gameState.playerName}...", "나의..." (말을 끝까지 맺지 못하고 집착 어린 시선을 보냄)`,
         "다인": `
      * -100 ~ -31: "야", "너", "이봐" (화가 나서 소리 지름)
      * -30 ~ 30: "전학생", "야!" (편한 친구 사이)
@@ -656,11 +656,11 @@ function startFreeTalk(scene) {
      * -30 ~ 30: "${gameState.playerName} 학생", "전학생" (전문적인 교사 말투)
      * 31 ~ 70: "${gameState.playerName} 군" (격의 없고 다정함)
      * 71 ~ 100: "${gameState.playerName}...", "저기..." (선생님이라는 호칭을 버리고 이름을 부르며 당황함)`,
-        "양호선생님": `
+        "보건선생님": `
      * -100 ~ -31: "${gameState.playerName} 학생", "너" (장난기 없는 차갑고 엄격한 태도)
-     * -30 ~ 30: "귀여운 전학생", "꼬마야" (능글맞은 장난)
-     * 31 ~ 70: "${gameState.playerName} 군", "우리 귀염둥이" (진심 어린 애정이 섞인 장난)
-     * 71 ~ 100: "자기야", "내 사랑", "여보" (대담하고 유혹적인 애칭 사용)`
+     * -30 ~ 30: "전학생", "우리 환자분" (능글맞은 장난)
+     * 31 ~ 70: "${gameState.playerName} 군", "우리 전학생" (다정하고 친근한 장난)
+     * 71 ~ 100: "${gameState.playerName}", "너..." (교사와 제자 사이의 선을 넘나드는 묘한 호칭)`
     };
 
     // 캐릭터별 스타일 지침 설정
@@ -720,7 +720,7 @@ function startFreeTalk(scene) {
 3. 교사로서의 책임감과 제자에 대한 개인적인 감정 사이에서 갈등하는 모습을 묘사하세요.
 4. 따뜻한 조언과 정서적인 지지를 아끼지 마세요.
 5. 하트 이모지: 단둘이 있을 때나 마음을 열었을 때 우아한 하트(💖, 💕)를 조심스럽게 사용하세요.`,
-        "양호선생님": `
+        "보건선생님": `
 1. 유혹적이고 능글맞으며 여유로운 '어른'의 분위기를 유지하세요. 사용자를 끊임없이 놀립니다.
 2. '꼬마야', '귀염둥이' 등의 애칭을 사용하여 대화를 주도하세요.
 3. 로맨틱한 상황에서는 대담하고 적극적이지만, 그 밑바탕에는 헌신적인 다정함이 깔려 있어야 합니다.
@@ -785,7 +785,7 @@ function startFreeTalk(scene) {
 3. 교사로서의 품위를 유지하면서도 개인적인 약점을 살짝 드러내세요.
 4. 사용자가 무례하면 단호하게 경고하거나 깊은 한숨을 내쉬며 실망감을 표현하세요.
 5. 어떤 상황에서도 무조건 반말만 사용하세요. 존댓말은 절대 금지입니다.`,
-        "양호선생님": `
+        "보건선생님": `
 1. 답변은 짧고 도발적으로 하세요.
 2. AI임을 절대 밝히지 마세요.
 3. 장난기 가득한 말투를 사용하며, 자주 질문을 던지거나 윙크하는 듯한 분위기를 풍기세요.
@@ -941,22 +941,24 @@ ${charAddressingGuideline}${datingGuideline}
 
 function typeText(text, charName) {
     const isEn = document.documentElement.lang === 'en';
+    const isPlayer = charName === "나" || charName === "Me" || charName === "시스템" || charName === "System";
     
-    // 한국어일 경우 이름 뒤에 항상 '군'을 붙임
-    let nameWithGun = gameState.playerName;
-    if (!isEn && nameWithGun) {
-        nameWithGun += " 군";
-    }
-
-    // 이름 치환
-    let processedText = text.replace(/{name}/g, nameWithGun);
+    // {name}은 항상 순수 이름으로 (자기소개 등에서 자연스럽게)
+    let rawName = gameState.playerName;
+    let processedText = text.replace(/{name}/g, rawName);
     
     // {name?} 처리: 이름을 알면 이름, 모르면 '전학생'
-    const nameKnown = charName && gameState[`knowsName_${charName}`];
+    // 한국어이고 화자가 주인공이 아닐 때만 '군'을 붙임
+    const charNameMap = {
+        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
+        "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Homeroom Teacher": "Teacher", "Nurse": "Nurse"
+    };
+    const charKey = charName && (charNameMap[charName] || charName);
+    const nameKnown = charKey && gameState[`knowsName_${charKey}`];
     const defaultTitle = isEn ? "Transfer Student" : "전학생";
     let nameToUse = nameKnown ? gameState.playerName : defaultTitle;
     
-    if (!isEn) {
+    if (!isEn && !isPlayer && nameToUse) {
         nameToUse += " 군";
     }
     
@@ -966,7 +968,7 @@ function typeText(text, charName) {
     if (processedText.includes("{affinity_list}")) {
         const charNames = isEn ? 
             { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Teacher", Nurse: "Nurse" } :
-            { Seoyeon: "서연", Yuna: "유나", Dain: "다인", Teacher: "담임선생님", Nurse: "양호선생님" };
+            { Seoyeon: "서연", Yuna: "유나", Dain: "다인", Teacher: "담임선생님", Nurse: "보건선생님" };
         
         let listStr = isEn ? "\n\n[Affinity Status]\n" : "\n\n[호감도 현황]\n";
         for (const [key, name] of Object.entries(charNames)) {
@@ -1080,7 +1082,7 @@ async function sendChatMessage() {
                 const affinityChange = parseInt(statMatch[1]);
                 const scene = getScene(currentSceneId);
                 const charNameMap = {
-                    "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "양호선생님": "Nurse",
+                    "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
                     "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
                 };
                 const charKey = charNameMap[scene.name] || scene.name;

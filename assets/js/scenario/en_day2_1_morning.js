@@ -8,7 +8,7 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_start": {
         name: "Me",
-        text: "(Beep beep— The alarm pulls me from a deep sleep. It's the morning of my second day here.)",
+        text: "(Beep beep! The alarm pulls me from a deep sleep. It's the morning of my second day here.)",
         background: "assets/images/background/room_my.png",
         character: null,
         next: "day2_start_2"

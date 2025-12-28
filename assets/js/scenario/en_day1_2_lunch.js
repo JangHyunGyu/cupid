@@ -1,4 +1,4 @@
-if (typeof SCENARIO === 'undefined') {
+﻿if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 if (!SCENARIO[1]) {
@@ -248,7 +248,7 @@ Object.assign(SCENARIO[1], {
     "yuna_intro_name_share": {
         name: "Me",
         text: "\"I'm {name}. I just transferred today.\"",
-        setFlag: "knowsName_유나",
+        setFlag: "knowsName_Yuna",
         next: "yuna_intro_2"
     },
     "yuna_intro_2": {
@@ -270,9 +270,9 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "(Her purple eyes seem to pierce through me.)",
         choices: [
-            { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 5 } } },
-            { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 5 } } },
-            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 10 } } }
+            { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 8 } } },
+            { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 8 } } },
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
         ]
     },
     "yuna_secret": {
@@ -387,7 +387,7 @@ Object.assign(SCENARIO[1], {
     "dain_name_share": {
         name: "Me",
         text: "\"Me? I'm {name}. I just transferred today.\"",
-        setFlag: "knowsName_다인",
+        setFlag: "knowsName_Dain",
         next: "dain_name_share_2"
     },
     "dain_name_share_2": {
@@ -441,7 +441,7 @@ Object.assign(SCENARIO[1], {
     "nurse_name_share_pre": {
         name: "Me",
         text: "\"My name is '{name}'.\"",
-        setFlag: "knowsName_양호선생님",
+        setFlag: "knowsName_Nurse",
         next: "nurse_name_share"
     },
     "nurse_name_share": {
@@ -460,3 +460,5 @@ Object.assign(SCENARIO[1], {
         next: "after_school_start"
     }
 });
+
+
