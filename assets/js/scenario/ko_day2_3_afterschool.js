@@ -271,7 +271,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_miss": {
         name: "보건선생님",
-        text: "\"후훗, 솔직해서 좋네. 그런 아이에겐 상을 줘야겠지?\"",
+        text: "\"후훗, 솔직해서 좋네. 그렇게 솔직한 우리 전학생에겐 상을 줘야겠지?\"",
         character: "assets/images/characters/nurse.png",
         next: "day2_nurse_night_talk"
     },

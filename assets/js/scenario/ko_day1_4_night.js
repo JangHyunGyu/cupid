@@ -106,7 +106,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_nurse_reply": {
         name: "보건선생님",
-        text: "(매혹적인 답장.) '어머, 정말로 연락했네? 착한 아이구나. 좋은 꿈 꾸렴, {name?}.'",
+        text: "(매혹적인 답장.) '어머, 정말로 연락했네? 우리 전학생, 정말 착하네. 좋은 꿈 꾸렴, {name?}.'",
         night: true,
         stats: { Nurse: { affinity: 5 } },
         next: "day1_end"

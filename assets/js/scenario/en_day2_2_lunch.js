@@ -306,7 +306,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_head_tease": {
         name: "Nurse",
-        text: "\"Oh my... {name?}, you're really something, aren't you? Fine, say 'Ah'. I should give a reward to a good boy, right?\"",
+        text: "\"Oh my... {name?}, you're really something, aren't you? Fine, say 'Ah'. I should give a reward to a good student, right?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_sleep"

@@ -234,7 +234,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_met": {
         name: "보건선생님",
-        text: "\"어머, 귀여운 {name?}이네? 어디가 아픈 걸까, 아니면 내 얼굴 보고 싶어서 설레는 걸까?\"",
+        text: "\"어머, 우리 전학생 {name?}이네? 어디가 아픈 걸까, 아니면 내 얼굴 보고 싶어서 설레는 걸까?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 5 } },
@@ -307,7 +307,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_head_tease": {
         name: "보건선생님",
-        text: "\"어머... {name?}, 넌 정말 못 말리겠구나? 좋아, 아 해봐. 착한 아이한테는 상을 줘야지?\"",
+        text: "\"어머... {name?}, 넌 정말 못 말리겠구나? 좋아, 아 해봐. 착한 학생한테는 상을 줘야지?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_sleep"

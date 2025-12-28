@@ -270,7 +270,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_miss": {
         name: "Nurse",
-        text: "\"Hehe, I like an honest boy. I suppose I should reward you for that, shouldn't I?\"",
+        text: "\"Hehe, I like an honest student. I suppose I should reward you for that, shouldn't I?\"",
         character: "assets/images/characters/nurse.png",
         next: "day2_nurse_night_talk"
     },

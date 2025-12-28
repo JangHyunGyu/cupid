@@ -620,7 +620,7 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_after_day1_contact_success": {
         name: "Nurse",
-        text: "\"Hehe, good boy. Then I'll contact you tonight, okay? Goodbye, {name?}.\"",
+        text: "\"Hehe, how diligent. Then I'll contact you tonight, okay? Goodbye, {name?}.\"",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 10 } },
         next: "after_home"

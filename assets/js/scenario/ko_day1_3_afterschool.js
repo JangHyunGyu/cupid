@@ -228,7 +228,10 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
-        next: "yuna_name_share_pre"
+        branches: [
+            { next: "yuna_after_talk", condition: "knowsName_Yuna" },
+            { next: "yuna_name_share_pre" }
+        ]
     },
     "yuna_name_share_pre": {
         name: "나",
@@ -436,7 +439,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_new_name_share": {
         name: "나",
-        text: "\"나 {name}이고 나 2학년 3반이야.\"",
+        text: "\"나 {name}이고 2학년 3반이야. 잘 부탁해.\"",
         setFlag: "knowsName_Dain",
         next: "after_dain_2"
     },

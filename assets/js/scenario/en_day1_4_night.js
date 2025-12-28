@@ -106,7 +106,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_nurse_reply": {
         name: "Nurse",
-        text: "(An alluring reply.) 'Oh, you actually messaged me? What a good boy. Have sweet dreams, {name?}.'",
+        text: "(An alluring reply.) 'Oh, you actually messaged me? Our transfer student is so polite. Have sweet dreams, {name?}.'",
         night: true,
         stats: { Nurse: { affinity: 5 } },
         next: "day1_end"
