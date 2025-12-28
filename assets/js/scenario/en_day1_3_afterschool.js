@@ -546,6 +546,22 @@ Object.assign(SCENARIO[1], {
         sunset: true,
         next: "after_dain_end"
     },
+    "after_dain_normal": {
+        name: "Dain",
+        text: "(Dain playfully taps my shoulder.)",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_normal_2"
+    },
+    "after_dain_normal_2": {
+        name: "Dain",
+        text: "\"Hey~ I guess you're not that good yet. Fine. Since you're here, why don't you wait until practice is over? Let's go grab some tteokbokki together!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
+        next: "after_dain_end"
+    },
     "after_dain_end": {
         name: "Me",
         text: "(I sit in the stands and watch as Dain finishes her practice with incredible focus.)",

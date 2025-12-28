@@ -117,16 +117,16 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_dain": {
         branches: [
-            { next: "night_message_dain_dated", condition: "datedDainDay1" },
+            { next: "night_message_dain_date", condition: "datedDainDay1" },
             { next: "night_message_dain_generic" }
         ]
     },
-    "night_message_dain_dated": {
+    "night_message_dain_date": {
         name: "Me",
         text: "(I send a message to Dain. 'The tteokbokki was great today! Good night.')",
         night: true,
         setFlag: "sent_msg_day1_dain",
-        next: "night_message_dain_reply_dated"
+        next: "night_message_dain_reply_date"
     },
     "night_message_dain_generic": {
         name: "Me",
@@ -135,7 +135,7 @@ Object.assign(SCENARIO[1], {
         setFlag: "sent_msg_day1_dain",
         next: "night_message_dain_reply_generic"
     },
-    "night_message_dain_reply_dated": {
+    "night_message_dain_reply_date": {
         name: "Dain",
         text: "(A lively reply.) 'Right? I told you I know all the best spots! Rest up and see you tomorrow, {name?}! Good night!'",
         night: true,

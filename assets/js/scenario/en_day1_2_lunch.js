@@ -113,6 +113,11 @@ Object.assign(SCENARIO[1], {
         text: "(Seoyeon's face hardens instantly. She puts down her chopsticks, looking flustered.) \"Um... that's a bit... {name?}, we're not that close yet, are we? I think the joke went too far.\"",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -15 } },
+        next: "rooftop_awkward"
+    },
+    "rooftop_awkward": {
+        name: "Me",
+        text: "(The atmosphere turned awkward in an instant. We ate our lunch boxes in silence for a while.)",
         next: "rooftop_2"
     },
     "rooftop_talk_rude": {
@@ -403,9 +408,19 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
-        next: "lunch_dain_3"
+        branches: [
+            { next: "lunch_dain_3_active", condition: "personality_active" },
+            { next: "lunch_dain_3_normal" }
+        ]
     },
-    "lunch_dain_3": {
+    "lunch_dain_3_active": {
+        name: "???",
+        text: "\"Hey, you there! I saw you during the introductions earlier. You were so high-energy! Don't just watch from there, come here and let's have a game! You look like you're good at sports?\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "dain_name_share"
+    },
+    "lunch_dain_3_normal": {
         name: "???",
         text: "\"Hey, you there! Don't just watch from there, come here and let's have a game! You look like you're good at sports?\"",
         background: "assets/images/background/gym.png",
