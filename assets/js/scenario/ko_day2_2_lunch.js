@@ -16,8 +16,55 @@ Object.assign(SCENARIO[2], {
             { text: "유나는 대체 누구인지 확인하러 뒤뜰로 간다.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
             { text: "다인을 보러 체육관으로 간다.", next: "day2_lunch_dain", condition: "metDain" },
             { text: "활기찬 소리가 들리는 체육관 쪽으로 가본다.", next: "day2_lunch_dain", excludeCondition: "metDain" },
-            { text: "몸이 좀 안 좋은 것 같아 보건실로 간다.", next: "day2_lunch_nurse" }
+            { text: "몸이 좀 안 좋은 것 같아 보건실로 간다.", next: "day2_lunch_nurse" },
+            { text: "교무실에 계신 담임선생님을 찾아간다.", next: "day2_lunch_teacher" }
         ]
+    },
+    "day2_lunch_teacher": {
+        name: "나",
+        text: "(교무실 문을 열자, 도시락을 드시려던 담임선생님이 나를 보고 반갑게 웃으신다.)",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lunch_teacher_2"
+    },
+    "day2_lunch_teacher_2": {
+        name: "담임선생님",
+        text: "\"어머, {name?} 학생! 점심은 맛있게 먹었니? 선생님은 이제 막 먹으려던 참이야.\"",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lunch_teacher_3"
+    },
+    "day2_lunch_teacher_3": {
+        name: "담임선생님",
+        text: "\"혹시 선생님이랑 같이 점심 먹고 싶어서 온 거니? 후훗, 농담이야.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        choices: [
+            { text: "네, 선생님이랑 같이 먹고 싶어요! (옆에 앉는다)", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 15 } } },
+            { text: "선생님 도시락이 너무 맛있어 보여서요.", next: "day2_lunch_teacher_food", stats: { Teacher: { affinity: 10 } } },
+            { text: "아니요, 그냥 지나가다가 들렀어요.", next: "day2_lunch_teacher_pass", stats: { Teacher: { affinity: 5 } } }
+        ]
+    },
+    "day2_lunch_teacher_eat": {
+        name: "담임선생님",
+        text: "\"어머나... 정말 대담한 학생이네? 좋아, 선생님 도시락 반찬 좀 나눠줄게. 자, 아~ 해보렴.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day2_lunch_teacher_end"
+    },
+    "day2_lunch_teacher_food": {
+        name: "담임선생님",
+        text: "\"후훗, 우리 어머니가 솜씨가 좀 좋으시거든. 나중에 기회 되면 {name?} 학생한테도 맛 보여주고 싶네.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day2_lunch_teacher_end"
+    },
+    "day2_lunch_teacher_pass": {
+        name: "담임선생님",
+        text: "\"그래? 그래도 이렇게 들러주니 고맙네. 남은 점심시간 즐겁게 보내렴!\"",
+        character: "assets/images/characters/teacher.png",
+        next: "day2_lunch_teacher_end"
+    },
+    "day2_lunch_teacher_end": {
+        name: "나",
+        text: "(선생님과 짧지만 즐거운 대화를 나누고 교실로 돌아왔다. 선생님의 다정한 미소가 계속 생각난다.)",
+        next: "day2_afternoon_class"
     },
     "day2_lunch_seoyeon": {
         name: "서연",

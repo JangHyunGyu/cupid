@@ -48,6 +48,7 @@ Object.assign(SCENARIO[1], {
             { text: "유나에게 메시지를 보낸다.", next: "night_message_yuna", condition: "has_number_yuna" },
             { text: "다인이에게 메시지를 보낸다.", next: "night_message_dain", condition: "has_number_dain" },
             { text: "보건선생님께 메시지를 보낸다.", next: "night_message_nurse", condition: "has_number_nurse" },
+            { text: "담임선생님께 메시지를 보낸다.", next: "night_message_teacher", condition: "has_number_teacher" },
             { text: "호감도 확인하기", next: "day1_check_affinity" },
             { text: "그냥 잠을 잔다.", next: "day1_end" }
         ]
@@ -58,6 +59,20 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/room_my.png",
         night: true,
         next: "night_home_check_contact"
+    },
+    "night_message_teacher": {
+        name: "나",
+        text: "(담임선생님께 메시지를 보냈다. '선생님, 오늘 챙겨주셔서 감사해요. 내일 뵐게요!')",
+        night: true,
+        setFlag: "sent_msg_day1_teacher",
+        next: "night_message_teacher_reply"
+    },
+    "night_message_teacher_reply": {
+        name: "담임선생님",
+        text: "(다정한 답장.) '어머, {name?} 학생이구나? 전학 첫날이라 힘들었을 텐데 기특하네. 푹 쉬고 내일 보자!'",
+        night: true,
+        stats: { Teacher: { affinity: 5 } },
+        next: "day1_end"
     },
     "night_message_seyoun": {
         branches: [
@@ -158,7 +173,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_nurse_reply": {
         name: "보건선생님",
-        text: "(매혹적인 답장.) '어머, 정말로 연락했네? 우리 전학생, 정말 착하네. 좋은 꿈 꾸렴, {name?}.'",
+        text: "(매혹적인 답장.) '어머, 정말로  연락했네? 우리 전학생, 정말 착하네. 좋은 꿈 꾸렴, {name?}.'",
         night: true,
         stats: { Nurse: { affinity: 5 } },
         next: "day1_end"

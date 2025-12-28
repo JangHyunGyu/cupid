@@ -32,8 +32,75 @@ Object.assign(SCENARIO[1], {
             { text: "활기찬 소리가 들리는 체육관으로 향한다.", next: "after_dain_new", excludeCondition: "metDain" },
             { text: "보건실에 들러 선생님께 인사하고 간다.", next: "after_nurse", condition: "metNurse" },
             { text: "보건실 쪽을 가본다.", next: "after_nurse_new", excludeCondition: "metNurse" },
+            { text: "교무실에 계신 담임선생님을 찾아간다.", next: "after_teacher" },
             { text: "오늘은 피곤하니 바로 집으로 돌아간다.", next: "after_home" }
         ]
+    },
+    "after_teacher": {
+        name: "나",
+        text: "(교무실 문을 열자, 서류를 정리하고 계신 담임선생님이 보인다.)",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        next: "after_teacher_2"
+    },
+    "after_teacher_2": {
+        name: "담임선생님",
+        text: "\"어머, {name?} 학생 아니니? 이 시간에 교무실엔 어쩐 일이야?\"",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        next: "after_teacher_3"
+    },
+    "after_teacher_3": {
+        name: "담임선생님",
+        text: "\"전학 첫날이라 궁금한 게 많은 모양이구나. 선생님이 도와줄 수 있는 게 있을까?\"",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        choices: [
+            { text: "선생님은 퇴근 안 하세요? 제가 도와드릴까요?", next: "after_teacher_help", stats: { Teacher: { affinity: 10 } } },
+            { text: "그냥 선생님 얼굴 한 번 더 보고 싶어서요.", next: "after_teacher_miss", stats: { Teacher: { affinity: 15 } } },
+            { text: "학교 시설에 대해 좀 더 알고 싶어요.", next: "after_teacher_info", stats: { Teacher: { affinity: 5 } } }
+        ]
+    },
+    "after_teacher_help": {
+        name: "담임선생님",
+        text: "\"후훗, 마음만으로도 고마워. 하지만 이건 선생님이 해야 할 일인걸. {name?} 학생은 얼른 집에 가서 쉬렴.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        sunset: true,
+        next: "after_teacher_contact"
+    },
+    "after_teacher_miss": {
+        name: "담임선생님",
+        text: "\"어머... {name?} 학생, 정말 못 말리겠네. 선생님을 그렇게 좋아해 주니 기쁘긴 하지만... 후훗.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        sunset: true,
+        next: "after_teacher_contact"
+    },
+    "after_teacher_info": {
+        name: "담임선생님",
+        text: "\"그래, 우리 학교는 역사가 깊어서 숨겨진 곳이 많단다. 나중에 선생님이 천천히 안내해줄게.\"",
+        character: "assets/images/characters/teacher.png",
+        sunset: true,
+        next: "after_teacher_contact"
+    },
+    "after_teacher_contact": {
+        name: "담임선생님",
+        text: "\"아, 맞다. 혹시 급한 일 생기면 연락하렴. 선생님 번호 알려줄게.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        sunset: true,
+        branches: [
+            { next: "after_home", condition: "has_number_teacher" },
+            { next: "after_teacher_contact_ask" }
+        ]
+    },
+    "after_teacher_contact_ask": {
+        name: "담임선생님",
+        text: "\"자, 여기 선생님 번호야. 저장해두렴.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        sunset: true,
+        setFlags: ["has_number_teacher", "has_any_contact"],
+        stats: { Teacher: { affinity: 10 } },
+        next: "after_home"
     },
     "after_seoyeon": {
         name: "서연",
