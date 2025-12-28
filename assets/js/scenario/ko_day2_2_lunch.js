@@ -482,7 +482,7 @@ Object.assign(SCENARIO[2], {
                 next: "nurse_contact_home_fail",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 70, next: "nurse_contact_home_success" }
+                    { minAffinity: 50, next: "nurse_contact_home_success" }
                 ]
             }
         ]
@@ -500,7 +500,7 @@ Object.assign(SCENARIO[2], {
                 next: "nurse_contact_home_fail",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 70, next: "nurse_contact_home_success" }
+                    { minAffinity: 50, next: "nurse_contact_home_success" }
                 ]
             },
             { text: "아, 괜찮아요.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -20 } } }
