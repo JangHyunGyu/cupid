@@ -205,9 +205,15 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Yuna's note stays on my mind all through class. What could she possibly want to tell me?)",
         branches: [
+            { next: "day2_morning_class_yuna_msg", condition: "sent_msg_day1_yuna" },
             { next: "day2_morning_class_yuna_met", condition: "metYuna" },
             { next: "day2_morning_class_yuna_new" }
         ]
+    },
+    "day2_morning_class_yuna_msg": {
+        name: "Me",
+        text: "(Yuna, the girl I exchanged messages with last night... I already have her number, so why leave a note? I chuckle, thinking it's just like her.)",
+        next: "day2_lunch_time"
     },
     "day2_morning_class_yuna_met": {
         name: "Me",

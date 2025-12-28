@@ -65,7 +65,6 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
-        setFlag: "day2_met_seoyeon_after",
         next: "day2_after_seoyeon_2"
     },
     "day2_after_seoyeon_2": {
@@ -106,6 +105,7 @@ Object.assign(SCENARIO[2], {
         name: "Seoyeon",
         text: "\"{name?}... Thank you so much for today. When I'm with you, all the stress just melts away. Would you... like to have lunch together tomorrow too?\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        setFlag: "day2_met_seoyeon_after",
         next: "day2_seoyeon_contact_check"
     },
     "day2_seoyeon_contact_check": {
