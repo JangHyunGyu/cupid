@@ -235,6 +235,39 @@ body, html {
     cursor: not-allowed;
 }
 
+#chat-skip-btn {
+    background: #666;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0;
+    flex-shrink: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#chat-skip-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+}
+
+#chat-skip-btn:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+#chat-skip-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
 .loading-dots {
     font-size: 1.5rem;
     line-height: 1;

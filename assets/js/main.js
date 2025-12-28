@@ -138,6 +138,7 @@ const choiceContainer = document.getElementById('choice-container');
 const chatContainer = document.getElementById('chat-container');
 const chatInput = document.getElementById('chat-input');
 const chatSendBtn = document.getElementById('chat-send');
+const chatSkipBtn = document.getElementById('chat-skip-btn');
 const turnCountEl = document.getElementById('turn-count');
 const nameInputContainer = document.getElementById('name-input-container');
 const playerNameInput = document.getElementById('player-name-input');
@@ -970,6 +971,7 @@ ${charAddressingGuideline}${datingGuideline}
     }
     
     turnCountEl.textContent = currentMaxTurns;
+    if (chatSkipBtn) chatSkipBtn.disabled = false;
     
     if (scene.text) {
         typeText(scene.text, scene.name);
@@ -1036,6 +1038,7 @@ function typeText(text, charName) {
     
     return new Promise((resolve) => {
         isTyping = true;
+        if (chatSkipBtn) chatSkipBtn.disabled = true;
         skipTyping = false;
         messageEl.textContent = "";
         let i = 0;
@@ -1044,6 +1047,7 @@ function typeText(text, charName) {
                 messageEl.textContent = processedText;
                 clearInterval(interval);
                 isTyping = false;
+                if (chatSkipBtn) chatSkipBtn.disabled = false;
                 skipTyping = false;
                 resolve();
                 return;
@@ -1053,6 +1057,7 @@ function typeText(text, charName) {
             if (i >= processedText.length) {
                 clearInterval(interval);
                 isTyping = false;
+                if (chatSkipBtn) chatSkipBtn.disabled = false;
                 resolve();
             }
         }, 30);
@@ -1133,6 +1138,26 @@ function getFallbackReply(charName, isEn) {
     }
 }
 
+async function skipFreeTalk() {
+    if (isTyping || !isFreeTalking) return;
+    
+    const isEn = document.documentElement.lang === 'en';
+    const confirmMsg = isEn ? "Do you want to stop the conversation and proceed to the next scene?" : "대화를 중단하고 다음 장면으로 넘어가시겠습니까?";
+    
+    if (confirm(confirmMsg)) {
+        freeTalkTurns = currentMaxTurns;
+        gameState[`messaged_${currentSceneId}`] = true;
+        
+        chatContainer.style.display = 'none';
+        isFreeTalking = false;
+        
+        const endMsg = isEn ? 
+            "\n\n(Conversation ended. Click the screen to continue.)" : 
+            "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+        messageEl.textContent += endMsg;
+    }
+}
+
 async function sendChatMessage() {
     const text = chatInput.value.trim();
     if (!text || freeTalkTurns >= currentMaxTurns || isTyping) return;
@@ -1148,6 +1173,7 @@ async function sendChatMessage() {
     
     // 로딩 표시
     chatSendBtn.disabled = true;
+    if (chatSkipBtn) chatSkipBtn.disabled = true;
     chatInput.disabled = true;
     const originalBtnContent = chatSendBtn.innerHTML;
     chatSendBtn.innerHTML = `<span class="loading-dots">...</span>`;
@@ -1271,6 +1297,7 @@ async function sendChatMessage() {
         }, 500);
     } finally {
         chatSendBtn.disabled = false;
+        if (chatSkipBtn) chatSkipBtn.disabled = false;
         chatInput.disabled = false;
         chatSendBtn.innerHTML = originalBtnContent;
         chatInput.focus();
@@ -1278,6 +1305,7 @@ async function sendChatMessage() {
 }
 
 chatSendBtn.onclick = sendChatMessage;
+if (chatSkipBtn) chatSkipBtn.onclick = skipFreeTalk;
 chatInput.onkeydown = (e) => {
     if (e.key === 'Enter') {
         e.preventDefault();
