@@ -419,14 +419,14 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "lunch_dain_3_active": {
-        name: "다인",
+        name: "???",
         text: "\"에이, 거기 너! 아까 자기소개 때 봤어. 완전 텐션 높던데? 거기서 구경만 하지 말고 이리 와서 한판 붙자! 너 운동 좀 하게 생겼는데?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         next: "dain_name_share"
     },
     "lunch_dain_3_normal": {
-        name: "다인",
+        name: "???",
         text: "\"에이, 거기 너! 거기서 구경만 하지 말고 이리 와서 한판 붙자! 너 운동 좀 하게 생겼는데?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
