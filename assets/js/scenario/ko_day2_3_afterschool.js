@@ -29,7 +29,7 @@ Object.assign(SCENARIO[2], {
         choices: [
             { text: "서연이와 함께 학생회 일을 돕는다.", next: "day2_after_seoyeon" },
             { text: "유나와 함께 학교의 비밀을 파헤친다.", next: "day2_after_yuna", condition: "metYuna" },
-            { text: "도서관 별관으로 유나를 다시 찾아가 본다.", next: "day2_after_yuna", excludeCondition: "metYuna" },
+            { text: "도서관 별관으로 쪽지를 남긴 사람을 찾아가 본다.", next: "day2_after_yuna", excludeCondition: "metYuna" },
             { text: "다인이의 배구 연습을 도와준다.", next: "day2_after_dain", condition: "metDain" },
             { text: "체육관에서 들리는 활기찬 소리를 따라가 본다.", next: "day2_after_dain", excludeCondition: "metDain" },
             { text: "보건실에 있는 선생님을 찾아간다.", next: "day2_after_nurse" }

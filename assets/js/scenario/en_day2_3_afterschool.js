@@ -29,7 +29,7 @@ Object.assign(SCENARIO[2], {
         choices: [
             { text: "Help Seoyeon with student council work.", next: "day2_after_seoyeon" },
             { text: "Uncover more of the school's secrets with Yuna.", next: "day2_after_yuna", condition: "metYuna" },
-            { text: "Visit Yuna at the library annex again.", next: "day2_after_yuna", excludeCondition: "metYuna" },
+            { text: "Go to the library annex to find the person who left the note.", next: "day2_after_yuna", excludeCondition: "metYuna" },
             { text: "Help Dain with volleyball practice.", next: "day2_after_dain", condition: "metDain" },
             { text: "Follow the lively sounds coming from the gym.", next: "day2_after_dain", excludeCondition: "metDain" },
             { text: "Go to the teacher in the nurse's office.", next: "day2_after_nurse" }
