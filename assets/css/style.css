@@ -147,17 +147,17 @@ body, html {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     pointer-events: auto;
     z-index: 10;
     margin-bottom: 20px; /* 하단 여백 확보 */
 }
 
 .choice-btn {
-    background: rgba(0, 0, 0, 0.8); /* 어두운 반투명 배경으로 캐릭터 가림 최소화 */
+    background: rgba(0, 0, 0, 0.5); /* 투명도를 높여 캐릭터 가림 최소화 */
     border: 2px solid #ff69b4;
     color: #fff;
-    padding: 18px;
+    padding: 12px 20px;
     border-radius: 15px;
     font-size: 1.1rem;
     cursor: pointer;
