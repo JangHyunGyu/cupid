@@ -41,7 +41,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_home_check_contact": {
         name: "나",
-        text: "(오늘 연락처를 교환했던가...?.)",
+        text: "(오늘 연락처를 교환했던가...?)",
         night: true,
         choices: [
             { text: "서연이에게 메시지를 보낸다.", next: "night_message_seyoun", condition: "has_number_seyoun" },
