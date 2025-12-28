@@ -1060,7 +1060,7 @@ function typeText(text, charName) {
                 if (chatSkipBtn) chatSkipBtn.disabled = false;
                 resolve();
             }
-        }, 30);
+        }, 15);
     });
 }
 
