@@ -96,7 +96,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_cafe": {
         name: "Seoyeon",
-        text: "(After finishing the document organization, we stopped by a small cafe in front of the school.)",
+        text: "(After finishing the work, we stopped by a small cafe in front of the school.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe_2"
@@ -496,7 +496,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_3": {
         name: "Dain",
-        text: "\"Hey, {name?}! You actually showed up! Hang on, let me finish this last set and we'll go grab something to eat!\"",
+        text: "\"Hey, {name?}! Wait a second! Let me finish this last set and we'll go grab something to eat!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -528,7 +528,7 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "\"Oh! You're in? Awesome! Toss it high to the net! Here I come!\"",
         character: "assets/images/characters/dain_active.png",
-        next: "after_dain_end"
+        next: "after_dain_normal"
     },
     "after_dain_cheer": {
         name: "Dain",

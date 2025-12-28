@@ -96,7 +96,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_cafe": {
         name: "서연",
-        text: "(서류 정리를 마치고 학교 앞 작은 카페에 들렀다.)",
+        text: "(일을 마치고 우리는 학교 앞 작은 카페에 들렀다.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "after_seoyeon_cafe_2"
@@ -528,7 +528,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "\"오! 도와주겠다고? 좋아! 그럼 네트 쪽으로 높게 띄워줘! 간다!\"",
         character: "assets/images/characters/dain_active.png",
-        next: "after_dain_end"
+        next: "after_dain_normal"
     },
     "after_dain_cheer": {
         name: "다인",
