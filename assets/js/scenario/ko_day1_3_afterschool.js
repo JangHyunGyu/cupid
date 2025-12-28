@@ -663,7 +663,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_2": {
         name: "보건선생님",
-        text: "\"{name?}! 학교 가기 전에 나 보러 온 거니? 정말 착한 학생이네.\"",
+        text: "\"{name?}! 집에 가기 전에 나 보러 온 거니? 정말 착한 학생이네.\"",
         character: "assets/images/characters/nurse.png",
         next: "nurse_free_talk_after_day1"
     },

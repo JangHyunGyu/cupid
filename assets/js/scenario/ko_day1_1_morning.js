@@ -129,7 +129,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(서연이가 갑자기 멈춰 서더니 나를 돌아본다.) \"아, 그러고 보니 아까 내가 네 이름을 먼저 말해버렸네. {name}, 맞지? 다시 한번 정식으로 인사할게!\"",
         character: "assets/images/characters/seyoun_nomal.png",
-        next: "hallway_name_ask"
+        next: "hallway_name_share"
     },
     "hallway_name_share": {
         name: "나",
