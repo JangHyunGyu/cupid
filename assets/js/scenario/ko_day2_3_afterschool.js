@@ -10,6 +10,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(지루한 오후 수업이 끝나고, 교실에 노을빛이 스며든다. 드디어 방과 후다.)",
         background: "assets/images/background/room_school.png",
+        character: null,
         sunset: true,
         next: "day2_after_school"
     },
@@ -17,6 +18,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(양호실에서 푹 자고 일어났더니 벌써 방과 후다. 수업을 통째로 빼먹었지만, 몸은 한결 가볍다.)",
         background: "assets/images/background/nurse_room.jpg",
+        character: null,
         sunset: true,
         next: "day2_after_school"
     },

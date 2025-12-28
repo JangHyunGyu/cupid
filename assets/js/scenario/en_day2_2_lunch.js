@@ -206,7 +206,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store_race": {
         name: "Dain",
         text: "\"Ooh! That's my partner! Okay, let's see who gets it first! Loser buys drinks!\"",
-        character: "assets/images/characters/dain_active.png",
+        character: "assets/images/characters/dain_nomal.png",
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {

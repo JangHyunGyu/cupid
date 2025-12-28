@@ -10,6 +10,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(The tedious afternoon classes finally end. The classroom is bathed in the orange glow of the sunset. It's finally after school.)",
         background: "assets/images/background/room_school.png",
+        character: null,
         sunset: true,
         next: "day2_after_school"
     },
@@ -17,6 +18,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(I wake up in the nurse's office to find it's already after school. I skipped the entire afternoon, but I feel refreshed.)",
         background: "assets/images/background/nurse_room.jpg",
+        character: null,
         sunset: true,
         next: "day2_after_school"
     },

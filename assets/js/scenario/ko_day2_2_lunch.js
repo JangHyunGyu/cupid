@@ -206,7 +206,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store_race": {
         name: "다인",
         text: "\"오오! 역시 내 파트너다워! 좋아, 누가 먼저 잡나 내기다! 지는 사람이 음료수 쏘기!\"",
-        character: "assets/images/characters/dain_active.png",
+        character: "assets/images/characters/dain_nomal.png",
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {
