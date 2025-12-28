@@ -236,6 +236,8 @@ Object.assign(SCENARIO[2], {
         text: "(현재 개발된 시나리오는 여기까지입니다. 다음 업데이트를 기대해주세요!)",
         background: null,
         fade: true,
-        next: "day2_final"
+        choices: [
+            { text: "처음부터 다시 시작하기", next: "index.html" }
+        ]
     }
 });

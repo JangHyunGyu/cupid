@@ -236,6 +236,8 @@ Object.assign(SCENARIO[2], {
         text: "(The scenario developed so far is up to here. Please look forward to the next update!)",
         background: null,
         fade: true,
-        next: "day2_final"
+        choices: [
+            { text: "Restart from the beginning", next: "index-en.html" }
+        ]
     }
 });
