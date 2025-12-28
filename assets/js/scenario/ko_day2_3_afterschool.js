@@ -160,12 +160,14 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "\"왔구나. 자, 나를 따라와. 보여줄 게 있어.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
         next: "day2_after_yuna_follow"
     },
     "day2_after_yuna_new": {
         name: "유나",
         text: "\"너... 내가 누군지 궁금해서 온 거지? 사실 이 학교에는 아주 깊은 비밀이 있어.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
         setFlag: "metYuna",
         next: "day2_after_yuna_new_name_ask"
     },
@@ -173,11 +175,13 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "\"난 유나야. 네 이름은 뭐야?\"",
         character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
         next: "day2_after_yuna_new_name_share"
     },
     "day2_after_yuna_new_name_share": {
         name: "나",
         text: "\"내 이름은 {name}이야.\"",
+        sunset: true,
         setFlag: "knowsName_Yuna",
         next: "day2_after_yuna_new_follow"
     },
@@ -185,6 +189,7 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "\"{name}... 기억해둘게. 자, 나를 따라와. 너한테만 보여줄 게 있으니까.\"",
         character: "assets/images/characters/yuna_smile.png",
+        sunset: true,
         next: "day2_after_yuna_follow"
     },
     "day2_after_yuna_follow": {
@@ -311,6 +316,7 @@ Object.assign(SCENARIO[2], {
         name: "다인",
         text: "\"오! {name?}! 마침 잘 왔다. 나 연습하는 것 좀 도와줄래?\"",
         character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
         next: "day2_after_dain_practice"
     },
     "day2_after_dain_practice": {
@@ -324,6 +330,7 @@ Object.assign(SCENARIO[2], {
         name: "다인",
         text: "\"하아, 하아... 너 운동 신경 진짜 대박이다! 처음 보는데 호흡이 척척 맞네!\"",
         character: "assets/images/characters/dain_sweat.png",
+        sunset: true,
         setFlag: "metDain",
         next: "day2_after_dain_new_name_ask"
     },
@@ -331,11 +338,13 @@ Object.assign(SCENARIO[2], {
         name: "다인",
         text: "\"난 2학년 3반 정다인이야! 네 이름은 뭐야?\"",
         character: "assets/images/characters/dain_nomal.png",
+        sunset: true,
         next: "day2_after_dain_new_name_share"
     },
     "day2_after_dain_new_name_share": {
         name: "나",
         text: "\"난 {name}이고 나도 2학년 3반이야.\"",
+        sunset: true,
         setFlag: "knowsName_Dain",
         next: "day2_after_dain_3"
     },
@@ -343,6 +352,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(다인이가 수건으로 땀을 닦으며 나에게 시원한 음료수를 건넨다.)",
         character: "assets/images/characters/dain_nomal.png",
+        night: true,
         choices: [
             { text: "다인이가 토스를 잘 올려줘서 그렇지.", next: "day2_dain_praise", stats: { Dain: { affinity: 10 } } },
             { text: "나중에 정식으로 한판 붙어볼까?", next: "day2_dain_match", stats: { Dain: { affinity: 15 } } },
@@ -425,6 +435,7 @@ Object.assign(SCENARIO[2], {
         name: "보건선생님",
         text: "\"어머, {name?}. 또 왔네? 오늘은 어디가 아파서 온 걸까? 아니면... 그냥 내 얼굴 보러 온 거야?\"",
         character: "assets/images/characters/nurse.png",
+        sunset: true,
         branches: [
             { next: "day2_after_nurse_invited", condition: "invited_nurse_home" },
             { next: "day2_after_nurse_3" }
@@ -434,12 +445,14 @@ Object.assign(SCENARIO[2], {
         name: "보건선생님",
         text: "\"후훗, {name?}. 오늘 밤 우리 집에서 보기로 한 거... 잊지 않았지? 벌써부터 보고 싶어서 달려온 거라면 선생님 정말 감동인데?\"",
         character: "assets/images/characters/nurse.png",
+        sunset: true,
         next: "day2_after_nurse_3"
     },
     "day2_after_nurse_new": {
         name: "보건선생님",
         text: "\"어머, 처음 보는 얼굴이네? 이번에 전학 온 학생이니? 나는 보건선생님이야.\"",
         character: "assets/images/characters/nurse.png",
+        sunset: true,
         setFlag: "metNurse",
         next: "day2_after_nurse_new_name_ask"
     },
@@ -447,11 +460,13 @@ Object.assign(SCENARIO[2], {
         name: "보건선생님",
         text: "\"그러고 보니 이름이 뭐야? 선생님한테만 살짝 알려줄래?\"",
         character: "assets/images/characters/nurse.png",
+        sunset: true,
         next: "day2_after_nurse_new_name_share"
     },
     "day2_after_nurse_new_name_share": {
         name: "나",
         text: "\"제 이름은 {name}이에요.\"",
+        sunset: true,
         setFlag: "knowsName_Nurse",
         next: "day2_after_nurse_3"
     },

@@ -160,12 +160,14 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "\"You came. Come, follow me. There's something I want to show you.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
         next: "day2_after_yuna_follow"
     },
     "day2_after_yuna_new": {
         name: "Yuna",
         text: "\"You... you're curious about me, aren't you? This school hides a very deep secret.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
         setFlag: "metYuna",
         next: "day2_after_yuna_new_name_ask"
     },
@@ -173,11 +175,13 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "\"I'm Yuna. What's your name?\"",
         character: "assets/images/characters/yuna_nomal.png",
+        sunset: true,
         next: "day2_after_yuna_new_name_share"
     },
     "day2_after_yuna_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
+        sunset: true,
         setFlag: "knowsName_Yuna",
         next: "day2_after_yuna_new_follow"
     },
@@ -185,6 +189,7 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "\"{name}... I'll remember that. Come, follow me. I have something to show you.\"",
         character: "assets/images/characters/yuna_smile.png",
+        sunset: true,
         next: "day2_after_yuna_follow"
     },
     "day2_after_yuna_follow": {
@@ -311,6 +316,7 @@ Object.assign(SCENARIO[2], {
         name: "Dain",
         text: "\"Oh! {name?}! You're just in time. Can you help me with my practice?\"",
         character: "assets/images/characters/dain_nomal.png",
+        night: true,
         next: "day2_after_dain_practice"
     },
     "day2_after_dain_practice": {
@@ -324,6 +330,7 @@ Object.assign(SCENARIO[2], {
         name: "Dain",
         text: "\"Haa, haa... Your reflexes are insane! We've never met, but we're totally in sync!\"",
         character: "assets/images/characters/dain_sweat.png",
+        night: true,
         setFlag: "metDain",
         next: "day2_after_dain_new_name_ask"
     },
@@ -331,11 +338,13 @@ Object.assign(SCENARIO[2], {
         name: "Dain",
         text: "\"I'm Dain Jung from Class 2-3! What's your name?\"",
         character: "assets/images/characters/dain_nomal.png",
+        night: true,
         next: "day2_after_dain_new_name_share"
     },
     "day2_after_dain_new_name_share": {
         name: "Me",
         text: "\"I'm {name}. I'm in Class 2-3 too.\"",
+        night: true,
         setFlag: "knowsName_Dain",
         next: "day2_after_dain_3"
     },
@@ -343,6 +352,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Dain wipes her forehead with a towel and hands me a sports drink.)",
         character: "assets/images/characters/dain_nomal.png",
+        night: true,
         choices: [
             { text: "It's only because your tosses were so good.", next: "day2_dain_praise", stats: { Dain: { affinity: 10 } } },
             { text: "How about a real match sometime?", next: "day2_dain_match", stats: { Dain: { affinity: 15 } } },
@@ -425,6 +435,7 @@ Object.assign(SCENARIO[2], {
         name: "Nurse",
         text: "\"Oh, {name?}. Back again? What's the matter today? Or... did you just come to see me?\"",
         character: "assets/images/characters/nurse.png",
+        sunset: true,
         branches: [
             { next: "day2_after_nurse_invited", condition: "invited_nurse_home" },
             { next: "day2_after_nurse_3" }
@@ -434,12 +445,14 @@ Object.assign(SCENARIO[2], {
         name: "Nurse",
         text: "\"Hehe, {name?}. You haven't forgotten our plan to meet at my house tonight, have you? If you ran here because you missed me already, I'm truly touched.\"",
         character: "assets/images/characters/nurse.png",
+        sunset: true,
         next: "day2_after_nurse_3"
     },
     "day2_after_nurse_new": {
         name: "Nurse",
         text: "\"Oh, I haven't seen you before. Are you the new transfer student? I'm the school nurse.\"",
         character: "assets/images/characters/nurse.png",
+        sunset: true,
         setFlag: "metNurse",
         next: "day2_after_nurse_new_name_ask"
     },
@@ -447,11 +460,13 @@ Object.assign(SCENARIO[2], {
         name: "Nurse",
         text: "\"By the way, what's your name? Won't you tell me? Just between us.\"",
         character: "assets/images/characters/nurse.png",
+        sunset: true,
         next: "day2_after_nurse_new_name_share"
     },
     "day2_after_nurse_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
+        sunset: true,
         setFlag: "knowsName_Nurse",
         next: "day2_after_nurse_3"
     },
