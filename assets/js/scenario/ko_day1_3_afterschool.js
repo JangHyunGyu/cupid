@@ -692,27 +692,24 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "\"제 이름은 {name}이에요.\"",
         setFlag: "knowsName_Nurse",
-        next: "nurse_free_talk_after_day1"
+        next: "nurse_after_day1_contact"
     },
     "after_nurse_2": {
         name: "보건선생님",
         text: "\"{name?}! 집에 가기 전에 나 보러 온 거니? 정말 착한 학생이네.\"",
         character: "assets/images/characters/nurse.png",
-        next: "nurse_free_talk_after_day1"
+        next: "nurse_after_day1_contact"
     },
-    "nurse_free_talk_after_day1": {
-        type: "free_talk",
+    "nurse_after_day1_contact": {
         name: "보건선생님",
         text: "\"자, 여기 앉으렴. 따뜻한 차 한 잔 줄게. 나랑 좀 더 이야기하고 갈래?\"",
-        context: "방과 후 노을 지는 보건실, 학교 보건선생님과 단둘이 대화를 나누는 상황",
-        personality: "성숙하고 매혹적인 '누님' 스타일. 주인공을 귀여워하며 챙겨줌.",
         character: "assets/images/characters/nurse.png",
         branches: [
             { next: "after_home", condition: "has_number_nurse" },
-            { next: "nurse_after_day1_contact" }
+            { next: "nurse_after_day1_contact_2" }
         ]
     },
-    "nurse_after_day1_contact": {
+    "nurse_after_day1_contact_2": {
         name: "보건선생님",
         text: "\"벌써 가려고? 아쉽네... {name?}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
         character: "assets/images/characters/nurse.png",

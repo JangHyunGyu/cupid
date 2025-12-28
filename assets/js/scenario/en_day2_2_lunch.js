@@ -79,6 +79,18 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "(She stares at me with an unreadable expression, her eyes searching mine.)",
         character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_free_talk"
+    },
+    "day2_yuna_free_talk": {
+        type: "free_talk",
+        name: "Yuna",
+        text: "\"...Do you have any questions for me? Or do you want to know more about this school?\"",
+        context: "Quiet library annex backyard, having a private conversation with the mysterious Yuna.",
+        personality: "Mysterious, cold, and full of secrets. She feels a strange interest in the protagonist.",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_talk_branch"
+    },
+    "day2_yuna_talk_branch": {
         branches: [
             { next: "day2_yuna_talk_2_met", condition: "metYuna" },
             { next: "day2_yuna_talk_2_new" }
@@ -205,8 +217,18 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(I headed to the snack bar with Dain. Since it's break time, the front of the store is crowded with kids.)",
         background: "assets/images/background/store.png",
+        character: "assets/images/characters/dain_nomal.png",        next: "day2_dain_free_talk"
+    },
+    "day2_dain_free_talk": {
+        type: "free_talk",
+        name: "Dain",
+        text: "\"Wow, it's really crowded! Right? Let's chat while we wait. Any questions for me?\"",
+        context: "In front of the crowded school store, standing in line with Dain to buy snacks.",
+        personality: "Easygoing and cool-headed volleyball ace. She enjoys spending time with the protagonist.",
         character: "assets/images/characters/dain_nomal.png",
-        choices: [
+        next: "day2_dain_store_choices"
+    },
+    "day2_dain_store_choices": {        choices: [
             { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 10 } } },
             { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 5 } } },
             { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race", stats: { Dain: { affinity: 15 } } }
@@ -260,7 +282,7 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 5 } },
-        next: "nurse_free_talk"
+        next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_new": {
         name: "Nurse",
@@ -280,16 +302,6 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "\"My name is {name}.\"",
         setFlag: "knowsName_Nurse",
-        next: "nurse_free_talk"
-    },
-    "nurse_free_talk": {
-        type: "free_talk",
-        name: "Nurse",
-        text: "\"Hehe, don't be so tense. Tell me exactly what's bothering you.\"",
-        context: "Alone in the quiet nurse's office with the mature and alluring school nurse.",
-        personality: "A mature, seductive 'older sister' type. She enjoys teasing the protagonist but genuinely cares for him.",
-        extra_guideline: "As a mature adult, be very flexible and bold in accepting the user's romantic tension or light physical contact. Don't keep your distance; respond actively and allow for maximum PG-13 level reactions.",
-        character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_3": {

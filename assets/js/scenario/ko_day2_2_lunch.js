@@ -79,6 +79,18 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "(유나가 무표정한 얼굴로 나를 빤히 바라본다.)",
         character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_free_talk"
+    },
+    "day2_yuna_free_talk": {
+        type: "free_talk",
+        name: "유나",
+        text: "\"...나한테 궁금한 거라도 있어? 아니면 이 학교에 대해 더 알고 싶은 거야?\"",
+        context: "조용한 도서관 별관 뒤뜰, 신비로운 분위기의 유나와 단둘이 대화를 나누는 상황",
+        personality: "신비롭고 차가우며 비밀이 많은 소녀. 주인공에게 묘한 흥미를 느끼고 있음.",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_talk_branch"
+    },
+    "day2_yuna_talk_branch": {
         branches: [
             { next: "day2_yuna_talk_2_met", condition: "metYuna" },
             { next: "day2_yuna_talk_2_new" }
@@ -213,6 +225,18 @@ Object.assign(SCENARIO[2], {
         text: "(다인이와 함께 매점으로 향했다. 쉬는 시간이라 그런지 매점 앞은 아이들로 북적거린다.)",
         background: "assets/images/background/store.png",
         character: "assets/images/characters/dain_nomal.png",
+        next: "day2_dain_free_talk"
+    },
+    "day2_dain_free_talk": {
+        type: "free_talk",
+        name: "다인",
+        text: "\"와, 사람 진짜 많다! 그치? 기다리는 동안 나랑 수다나 떨자. 나한테 궁금한 거 없어?\"",
+        context: "북적이는 학교 매점 앞, 다인과 함께 간식을 사기 위해 줄을 서서 대화를 나누는 상황",
+        personality: "털털하고 시원시원한 성격의 배구부 에이스. 주인공과 함께 있는 시간을 즐거워함.",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_dain_store_choices"
+    },
+    "day2_dain_store_choices": {
         choices: [
             { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 10 } } },
             { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 5 } } },
@@ -267,7 +291,7 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 5 } },
-        next: "nurse_free_talk"
+        next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_new": {
         name: "보건선생님",
@@ -287,22 +311,15 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "\"제 이름은 {name}이에요.\"",
         setFlag: "knowsName_Nurse",
-        next: "nurse_free_talk"
-    },
-    "nurse_free_talk": {
-        type: "free_talk",
-        name: "보건선생님",
-        text: "\"후훗, 긴장하지 마. 어디가 어떻게 불편한지 자세하게 말해줄래?\"",
-        context: "조용한 보건실, 성숙하고 매혹적인 보건선생님과 단둘이 있는 상황",
-        personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만 사실 누구보다 주인공을 아끼고 보호하려 함",
-        extra_guideline: "성숙한 어른으로서 주인공의 로맨틱한 액션이나 가벼운 스킨십 시도도 매우 유연하고 대담하게 받아주세요. 거리감을 두지 말고 적극적으로 호응하며 PG-13 수위 내에서 최대한의 수위 반응을 허용합니다.",
-        character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_3": {
         name: "보건선생님",
         text: "(선생님이 부드러운 미소와 함께 나를 침대로 안내한다. 코끝을 간지럽히는 은은한 약초 향기에 긴장이 풀린다.)",
         background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_4"
+    },
         character: "assets/images/characters/nurse.png",
         choices: [
             { text: "머리가 좀 아파요.", next: "day2_lunch_nurse_head", stats: { Nurse: { affinity: 5 } } },

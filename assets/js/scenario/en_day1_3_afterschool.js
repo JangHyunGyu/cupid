@@ -691,27 +691,24 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "\"My name is {name}.\"",
         setFlag: "knowsName_Nurse",
-        next: "nurse_free_talk_after_day1"
+        next: "nurse_after_day1_contact"
     },
     "after_nurse_2": {
         name: "Nurse",
         text: "\"{name?}! Stopping by to say goodbye? What a sweet student you are.\"",
         character: "assets/images/characters/nurse.png",
-        next: "nurse_free_talk_after_day1"
+        next: "nurse_after_day1_contact"
     },
-    "nurse_free_talk_after_day1": {
-        type: "free_talk",
+    "nurse_after_day1_contact": {
         name: "Nurse",
         text: "\"Come, sit. I'll pour you some tea. Why don't we chat for a bit before you head home?\"",
-        context: "Chatting with the nurse in her office at sunset before heading home.",
-        personality: "A mature, alluring 'big sister' type. She's fond of the protagonist and likes to tease him gently.",
         character: "assets/images/characters/nurse.png",
         branches: [
             { next: "after_home", condition: "has_number_nurse" },
-            { next: "nurse_after_day1_contact" }
+            { next: "nurse_after_day1_contact_2" }
         ]
     },
-    "nurse_after_day1_contact": {
+    "nurse_after_day1_contact_2": {
         name: "Nurse",
         text: "\"Are you leaving already? That's a shame... {name?}, just in case, do you want to save my number? Contact me anytime if you're sick or have something on your mind.\"",
         character: "assets/images/characters/nurse.png",
