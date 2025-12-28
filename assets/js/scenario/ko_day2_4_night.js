@@ -113,8 +113,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_message_seyoun_reply"
     },
     "day2_night_message_seyoun_reply": {
+        type: "free_talk",
+        maxTurns: 10,
         name: "서연",
         text: "(징~ 즉각적인 답장.) '나도 정말 즐거웠어! {name?} 덕분에 든든해. 내일 점심 같이 먹는 거 잊지 마! 잘 자요.'",
+        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 서연이는 주인공의 메시지에 기뻐하며 답장을 보낸 상태.",
         night: true,
         stats: { Seoyeon: { affinity: 5 } },
         next: "day2_final_scene"
@@ -141,8 +144,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_message_yuna_reply"
     },
     "day2_night_message_yuna_reply": {
+        type: "free_talk",
+        maxTurns: 10,
         name: "유나",
         text: "(잠시 후 도착한 답장.) '...응. 네가 이해해줄 줄 알았어. 꿈속에서도 지켜보고 있을게, {name?}.'",
+        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 유나는 주인공의 메시지에 짧지만 깊은 여운이 담긴 답장을 보낸 상태.",
         night: true,
         stats: { Yuna: { affinity: 5 } },
         next: "day2_final_scene"
@@ -189,8 +195,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_message_dain_reply"
     },
     "day2_night_message_dain_reply": {
+        type: "free_talk",
+        maxTurns: 10,
         name: "다인",
         text: "(활기찬 답장.) '당연하지! 내가 이길 거니까 지갑 준비해둬! 하하, 잘 자, {name?}!'",
+        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 다인이는 주인공의 메시지에 활기차게 답장을 보낸 상태.",
         night: true,
         stats: { Dain: { affinity: 5 } },
         next: "day2_final_scene"
@@ -217,8 +226,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_message_nurse_reply"
     },
     "day2_night_message_nurse_reply": {
+        type: "free_talk",
+        maxTurns: 10,
         name: "보건선생님",
         text: "(매혹적인 답장.) '어머, 벌써 내 생각 하는 거니? 후훗, 오늘 푹 자고 내일 또 얼굴 보자. 잘 자요, {name?}.'",
+        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 보건선생님은 주인공의 메시지에 장난스럽고 매혹적인 답장을 보낸 상태.",
         night: true,
         stats: { Nurse: { affinity: 5 } },
         next: "day2_final_scene"

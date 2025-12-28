@@ -113,8 +113,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_message_seyoun_reply"
     },
     "day2_night_message_seyoun_reply": {
+        type: "free_talk",
+        maxTurns: 10,
         name: "Seoyeon",
         text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name?}. Don't forget to have lunch together tomorrow! Good night.'",
+        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Seoyeon has sent a reply, happy with the protagonist's message.",
         night: true,
         stats: { Seoyeon: { affinity: 5 } },
         next: "day2_final_scene"
@@ -141,8 +144,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_message_yuna_reply"
     },
     "day2_night_message_yuna_reply": {
+        type: "free_talk",
+        maxTurns: 10,
         name: "Yuna",
         text: "(A reply arrives after a short wait.) '...Yeah. I knew you would understand. I'll be watching you in your dreams too, {name?}.'",
+        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Yuna has sent a short but deeply lingering reply to the protagonist's message.",
         night: true,
         stats: { Yuna: { affinity: 5 } },
         next: "day2_final_scene"
@@ -189,8 +195,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_message_dain_reply"
     },
     "day2_night_message_dain_reply": {
+        type: "free_talk",
+        maxTurns: 10,
         name: "Dain",
         text: "(A lively reply.) 'Of course! I'm going to win, so have your wallet ready! Haha, good night, {name?}!'",
+        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Dain has sent an energetic reply to the protagonist's message.",
         night: true,
         stats: { Dain: { affinity: 5 } },
         next: "day2_final_scene"
@@ -217,8 +226,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_message_nurse_reply"
     },
     "day2_night_message_nurse_reply": {
+        type: "free_talk",
+        maxTurns: 10,
         name: "Nurse",
         text: "(An alluring reply.) 'Oh, are you thinking about me already? Hehe, rest well today and see you tomorrow. Good night, {name?}.'",
+        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Nurse has sent a playful and alluring reply to the protagonist's message.",
         night: true,
         stats: { Nurse: { affinity: 5 } },
         next: "day2_final_scene"
