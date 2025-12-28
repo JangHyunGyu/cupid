@@ -229,7 +229,7 @@ Object.assign(SCENARIO[2], {
         name: "담임선생님",
         text: "\"고마워. 그럼 무슨 일 있으면 연락할게. 자, 이제 교실로 가자.\"",
         character: "assets/images/characters/teacher.png",
-        stats: { Teacher: { affinity: 15 } },
+        stats: { Teacher: { affinity: 10 } },
         next: "day2_classroom"
     },
     "day2_classroom": {

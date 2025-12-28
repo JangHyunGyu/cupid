@@ -789,7 +789,7 @@ Object.assign(SCENARIO[1], {
         name: "보건선생님",
         text: "\"후훗, 착하네. 그럼 나중에 밤에 연락할게? 잘 가, {name?}.\"",
         character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 15 } },
+        stats: { Nurse: { affinity: 10 } },
         next: "after_home"
     },
     "nurse_after_day1_contact_fail": {
