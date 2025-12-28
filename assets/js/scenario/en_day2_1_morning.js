@@ -52,7 +52,16 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Under the large zelkova tree by the school gate, I saw Yuna standing with an indifferent expression. She closes her book and stares at me quietly.)",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_talk"
+        branches: [
+            { next: "day2_yuna_talk_msg", condition: "sent_msg_day1_yuna" },
+            { next: "day2_yuna_talk" }
+        ]
+    },
+    "day2_yuna_talk_msg": {
+        name: "Yuna",
+        text: "\"...Hi. Thanks for the message last night. It made my night a little warmer. Later... check the note.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day2_classroom"
     },
     "day2_yuna_talk": {
         name: "Yuna",
