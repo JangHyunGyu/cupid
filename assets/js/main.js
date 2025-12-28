@@ -254,7 +254,16 @@ async function renderScene(sceneId) {
 
     // 배경 업데이트
     if (scene.background) {
-        bgLayer.style.backgroundImage = `url(${scene.background})`;
+        // 배경 이미지가 로드될 때까지 대기하여 배경이 먼저 나오도록 함
+        await new Promise((resolve) => {
+            const img = new Image();
+            img.onload = () => {
+                bgLayer.style.backgroundImage = `url(${scene.background})`;
+                resolve();
+            };
+            img.onerror = resolve; // 에러 발생 시에도 다음 단계로 진행
+            img.src = scene.background;
+        });
     }
 
     // 플래그 설정 (노드 진입 시 자동 설정)
@@ -300,22 +309,40 @@ async function renderScene(sceneId) {
 
     if (scene.characters) {
         // 여러 캐릭터 설정 (예: { left: "...", right: "..." })
-        for (const [pos, src] of Object.entries(scene.characters)) {
-            if (charSlots[pos] && src) {
-                const img = document.createElement('img');
-                img.src = src;
-                if (scene.silhouette) img.classList.add('silhouette');
-                if (scene.thinking) img.classList.add('thinking');
-                charSlots[pos].appendChild(img);
+        const charPromises = Object.entries(scene.characters).map(([pos, src]) => {
+            return new Promise((resolve) => {
+                if (charSlots[pos] && src) {
+                    const img = document.createElement('img');
+                    img.onload = () => resolve({ pos, img });
+                    img.onerror = () => resolve(null);
+                    img.src = src;
+                    if (scene.silhouette) img.classList.add('silhouette');
+                    if (scene.thinking) img.classList.add('thinking');
+                } else {
+                    resolve(null);
+                }
+            });
+        });
+
+        const loadedChars = await Promise.all(charPromises);
+        loadedChars.forEach(result => {
+            if (result) {
+                charSlots[result.pos].appendChild(result.img);
             }
-        }
+        });
     } else if (scene.character) {
         // 단일 캐릭터 설정 (기본 center)
-        const img = document.createElement('img');
-        img.src = scene.character;
-        if (scene.silhouette) img.classList.add('silhouette');
-        if (scene.thinking) img.classList.add('thinking');
-        charSlots.center.appendChild(img);
+        await new Promise((resolve) => {
+            const img = document.createElement('img');
+            img.onload = () => {
+                charSlots.center.appendChild(img);
+                resolve();
+            };
+            img.onerror = resolve;
+            img.src = scene.character;
+            if (scene.silhouette) img.classList.add('silhouette');
+            if (scene.thinking) img.classList.add('thinking');
+        });
     }
 
     // 이름 태그
