@@ -40,18 +40,21 @@ Object.assign(SCENARIO[2], {
         name: "서연",
         text: "\"정말? 입맛에 맞을지 걱정했는데 다행이다. 자, 사양 말고 많이 먹어!\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        setFlag: "day2_ate_lunch_seoyeon",
         next: "day2_afternoon_class"
     },
     "day2_seoyeon_lunch_worry": {
         name: "서연",
         text: "\"괜찮아. 네가 맛있게 먹어주는 모습 보니까 피곤함이 싹 가시는 것 같아. 정말로.\"",
         character: "assets/images/characters/seyoun_nomal.png",
+        setFlag: "day2_ate_lunch_seoyeon",
         next: "day2_afternoon_class"
     },
     "day2_seoyeon_lunch_touch": {
         name: "서연",
         text: "\"아... 고, 고마워. 내가 너무 급하게 먹었나 보네... (서연이의 얼굴이 살짝 붉어진다)\"",
         character: "assets/images/characters/seyoun_shy.png",
+        setFlag: "day2_ate_lunch_seoyeon",
         next: "day2_afternoon_class"
     },
     "day2_lunch_yuna": {
@@ -128,24 +131,28 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "\"후훗, 역시 넌 다른 애들이랑 달라. 좋아, 하지만 각오해야 할 거야. 진실은 때로 독이 되기도 하니까.\"",
         character: "assets/images/characters/yuna_smile.png",
+        setFlag: "day2_met_yuna_lunch",
         next: "day2_afternoon_class"
     },
     "day2_yuna_secret_stop": {
         name: "유나",
         text: "\"...겁쟁이구나. 뭐, 이해해. 평범한 아이라면 그게 당연한 반응이니까. 오늘은 이만 가봐.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
         next: "day2_afternoon_class"
     },
     "day2_yuna_secret_why": {
         name: "유나",
         text: "\"글쎄... 잃어버린 기억을 찾기 위해서라고 해둘까? 아니면 이 지루한 학교생활에 자극이 필요해서일지도.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
         next: "day2_afternoon_class"
     },
     "day2_yuna_normal": {
         name: "유나",
         text: "\"...그래? 넌 참 이상한 애야. 다른 애들은 다들 무서워하는데. 좋아, 그럼 오늘은 그냥 이렇게 같이 있자.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
         next: "day2_afternoon_class"
     },
     "day2_lunch_dain": {
@@ -203,18 +210,21 @@ Object.assign(SCENARIO[2], {
         name: "다인",
         text: "\"에이~ 내가 쏜다니까! 전학생이 무슨 돈이 있다고 그래? 오늘은 내가 대접할 테니까 그냥 맛있게 먹기나 해!\"",
         character: "assets/images/characters/dain_laugh.png",
+        setFlag: "day2_met_dain_lunch",
         next: "day2_afternoon_class"
     },
     "day2_dain_store_rooftop": {
         name: "다인",
         text: "\"옥상? 오, 그것도 좋지! 시원한 바람 맞으면서 먹으면 더 맛있겠다. 좋아, 얼른 빵만 사서 올라가자!\"",
         character: "assets/images/characters/dain_nomal.png",
+        setFlag: "day2_met_dain_lunch",
         next: "day2_afternoon_class"
     },
     "day2_dain_store_race": {
         name: "다인",
         text: "\"오호! 역시 내 파트너답다! 좋아, 누가 먼저 낚나 내기하자! 지는 사람이 음료수 쏘기!\"",
         character: "assets/images/characters/dain_nomal.png",
+        setFlag: "day2_met_dain_lunch",
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {
@@ -363,6 +373,20 @@ Object.assign(SCENARIO[2], {
         next: "nurse_contact_exchange"
     },
     "nurse_contact_exchange": {
+        branches: [
+            { next: "nurse_contact_already_have", condition: "has_number_nurse" },
+            { next: "nurse_contact_ask" }
+        ]
+    },
+    "nurse_contact_already_have": {
+        name: "보건선생님",
+        text: "(선생님이 몸을 살짝 기울이며 속삭인다.) \"{name?}, 우리 이미 번호 교환했었지? 밤에 심심하면 꼭 연락해야 해? 기다릴 테니까.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "day2_afternoon_nurse_skip"
+    },
+    "nurse_contact_ask": {
         name: "보건선생님",
         text: "(선생님이 몸을 살짝 기울이며 속삭인다.) \"{name?}, 밤에 잠이 안 오면 나한테 연락할래? 번호 알려줄게.\"",
         background: "assets/images/background/nurse_room.jpg",

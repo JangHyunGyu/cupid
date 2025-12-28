@@ -54,8 +54,27 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun": {
+        branches: [
+            { next: "day2_night_message_seyoun_after", condition: "day2_met_seoyeon_after" },
+            { next: "day2_night_message_seyoun_lunch", condition: "day2_ate_lunch_seoyeon" },
+            { next: "day2_night_message_seyoun_generic" }
+        ]
+    },
+    "day2_night_message_seyoun_after": {
         name: "나",
         text: "(서연이에게 메시지를 보냈다. '오늘 학생회 일 돕는 거 즐거웠어. 내일 봐!')",
+        night: true,
+        next: "day2_night_message_seyoun_reply"
+    },
+    "day2_night_message_seyoun_lunch": {
+        name: "나",
+        text: "(서연이에게 메시지를 보냈다. '오늘 점심 샌드위치 정말 맛있었어! 내일 봐.')",
+        night: true,
+        next: "day2_night_message_seyoun_reply"
+    },
+    "day2_night_message_seyoun_generic": {
+        name: "나",
+        text: "(서연이에게 메시지를 보냈다. '오늘 하루 잘 보냈어? 내일 학교에서 보자.')",
         night: true,
         next: "day2_night_message_seyoun_reply"
     },
@@ -67,8 +86,21 @@ Object.assign(SCENARIO[2], {
         next: "day2_final_scene"
     },
     "day2_night_message_yuna": {
+        branches: [
+            { next: "day2_night_message_yuna_met", condition: "day2_met_yuna_after" },
+            { next: "day2_night_message_yuna_met", condition: "day2_met_yuna_lunch" },
+            { next: "day2_night_message_yuna_generic" }
+        ]
+    },
+    "day2_night_message_yuna_met": {
         name: "나",
         text: "(유나에게 메시지를 보냈다. '오늘 보여준 거... 잊지 않을게. 잘 자.')",
+        night: true,
+        next: "day2_night_message_yuna_reply"
+    },
+    "day2_night_message_yuna_generic": {
+        name: "나",
+        text: "(유나에게 메시지를 보냈다. '유나야, 오늘 하루 잘 보냈어? 잘 자.')",
         night: true,
         next: "day2_night_message_yuna_reply"
     },
@@ -80,8 +112,39 @@ Object.assign(SCENARIO[2], {
         next: "day2_final_scene"
     },
     "day2_night_message_dain": {
+        branches: [
+            { next: "day2_night_message_dain_after", condition: "day2_met_dain_after" },
+            { next: "day2_night_message_dain_lunch", condition: "day2_met_dain_lunch" },
+            { next: "day2_night_message_dain_generic" }
+        ]
+    },
+    "day2_night_message_dain_after": {
+        branches: [
+            { next: "day2_night_message_dain_bet", condition: "day2_dain_bet" },
+            { next: "day2_night_message_dain_practice" }
+        ]
+    },
+    "day2_night_message_dain_bet": {
         name: "나",
         text: "(다인이에게 메시지를 보냈다. '오늘 연습 수고했어! 내일 떡볶이 내기 잊지 마.')",
+        night: true,
+        next: "day2_night_message_dain_reply"
+    },
+    "day2_night_message_dain_practice": {
+        name: "나",
+        text: "(다인이에게 메시지를 보냈다. '오늘 연습 수고했어! 덕분에 즐거웠어. 내일 봐!')",
+        night: true,
+        next: "day2_night_message_dain_reply"
+    },
+    "day2_night_message_dain_lunch": {
+        name: "나",
+        text: "(다인이에게 메시지를 보냈다. '오늘 매점에서 본 거 재밌었어! 내일 떡볶이 먹으러 가자.')",
+        night: true,
+        next: "day2_night_message_dain_reply"
+    },
+    "day2_night_message_dain_generic": {
+        name: "나",
+        text: "(다인이에게 메시지를 보냈다. '다인아, 오늘 하루 수고했어! 내일 보자.')",
         night: true,
         next: "day2_night_message_dain_reply"
     },
@@ -93,8 +156,21 @@ Object.assign(SCENARIO[2], {
         next: "day2_final_scene"
     },
     "day2_night_message_nurse": {
+        branches: [
+            { next: "day2_night_message_nurse_rest", condition: "day2_met_nurse_after" },
+            { next: "day2_night_message_nurse_rest", condition: "wokeUpInNurseRoom" },
+            { next: "day2_night_message_nurse_generic" }
+        ]
+    },
+    "day2_night_message_nurse_rest": {
         name: "나",
         text: "(보건선생님께 메시지를 보냈다. '선생님, 오늘 감사했어요. 덕분에 잘 쉬었어요.')",
+        night: true,
+        next: "day2_night_message_nurse_reply"
+    },
+    "day2_night_message_nurse_generic": {
+        name: "나",
+        text: "(보건선생님께 메시지를 보냈다. '선생님, 오늘 하루 수고하셨어요. 안녕히 주무세요.')",
         night: true,
         next: "day2_night_message_nurse_reply"
     },

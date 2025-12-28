@@ -64,6 +64,7 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
+        setFlag: "day2_met_seoyeon_after",
         next: "day2_after_seoyeon_2"
     },
     "day2_after_seoyeon_2": {
@@ -195,6 +196,18 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_yuna_3_pre"
     },
     "day2_after_yuna_3_pre": {
+        branches: [
+            { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_3_pre_new" }
+        ]
+    },
+    "day2_after_yuna_3_pre_again": {
+        name: "유나",
+        text: "\"아까 봤던 그 문양들... 다시 보니 어때? 밤에 보니까 더 기괴하지 않아?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_after_yuna_3"
+    },
+    "day2_after_yuna_3_pre_new": {
         name: "유나",
         text: "\"봐, {name?}. 이 벽에 새겨진 문양들... 내가 추적해온 이 학교의 비밀들과 일치해.\"",
         character: "assets/images/characters/yuna_nomal.png",
@@ -232,6 +245,7 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "\"이건... 단순한 낙서가 아니야. 이 학교의 설립 목적과 관련이 있어. {name?}, 넌 이제 돌이킬 수 없는 길을 선택한 거야.\"",
         character: "assets/images/characters/yuna_smile.png",
+        setFlag: "day2_met_yuna_after",
         next: "day2_yuna_contact_check"
     },
     "day2_yuna_contact_check": {
@@ -284,6 +298,7 @@ Object.assign(SCENARIO[2], {
         text: "(다인이의 스파이크 연습을 도와주다 보니 어느새 온몸이 땀으로 젖었다. 창밖은 어느덧 어둑어둑해졌다.)",
         character: "assets/images/characters/dain_sweat.png",
         night: true,
+        setFlag: "day2_met_dain_after",
         next: "day2_after_dain_3"
     },
     "day2_after_dain_new": {
@@ -325,6 +340,7 @@ Object.assign(SCENARIO[2], {
         name: "다인",
         text: "\"오? 자신만만인데? 좋아, 내기 걸고 한판 하는 거다? 지는 사람이 떡볶이 쏘기!\"",
         character: "assets/images/characters/dain_laugh.png",
+        setFlag: "day2_dain_bet",
         next: "day2_dain_night_talk"
     },
     "day2_dain_food": {
@@ -436,6 +452,7 @@ Object.assign(SCENARIO[2], {
         text: "(선생님이 부드러운 미소를 지으며 내 머리를 쓰다듬는다) \"후훗, 나랑 더 있고 싶어서 온 거구나? 좋아, 오늘은 특별히 늦게까지 같이 있어줄게.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
+        setFlag: "day2_met_nurse_after",
         next: "day2_nurse_night_talk_2"
     },
     "day2_nurse_night_talk_2": {
