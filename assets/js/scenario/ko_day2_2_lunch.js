@@ -97,7 +97,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_new_name_ask": {
         name: "유나",
-        text: "\"...그러고 보니, 네 이름은 뭐야? 쪽지엔 이름을 안 적었거든.\"",
+        text: "\"...그러고 보니, 네 이름은 뭐야? 쪽지엔 내 이름만 적어두고 네 이름은 차마 못 적었거든.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_new_name_share"
     },

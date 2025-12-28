@@ -341,14 +341,14 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         stats: { Yuna: { affinity: 15 } },
-        next: "night_home"
+        next: "after_home"
     },
     "yuna_contact_fail": {
         name: "유나",
         text: "(유나가 차가운 눈빛으로 나를 바라보더니 스마트폰을 집어넣는다.) \"...그래. 억지로 강요하진 않아. 하지만 기회는 자주 오지 않는다는 걸 명심해.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "night_home"
+        next: "after_home"
     },
     "after_yuna_scared": {
         name: "유나",
@@ -362,7 +362,7 @@ Object.assign(SCENARIO[1], {
         text: "\"후훗, 역시 그렇겠지. 평범한 학생에게는 너무 무거운 이야기니까. 오늘은 이만 돌아가. 더 이상 깊이 알려고 하지 마.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "night_home"
+        next: "after_home"
     },
     "after_yuna_secret": {
         name: "유나",

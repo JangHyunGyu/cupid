@@ -97,7 +97,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_new_name_ask": {
         name: "Yuna",
-        text: "\"...By the way, what's your name? I didn't write it on the note.\"",
+        text: "\"...By the way, what's your name? I only wrote my name on the note, but I don't know yours yet.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_new_name_share"
     },

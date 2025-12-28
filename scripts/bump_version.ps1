@@ -6,7 +6,7 @@ $versionPattern = '\?v=(\d+\.\d+\.\d+)'
 
 # game.html에서 현재 버전 추출
 if (Test-Path "game.html") {
-    $content = Get-Content "game.html" -Raw
+    $content = Get-Content "game.html" -Raw -Encoding UTF8
     if ($content -match $versionPattern) {
         $currentVersion = $Matches[1]
         $parts = $currentVersion.Split('.')
@@ -22,7 +22,7 @@ if (Test-Path "game.html") {
         
         foreach ($file in $files) {
             if (Test-Path $file) {
-                $fileContent = Get-Content $file -Raw
+                $fileContent = Get-Content $file -Raw -Encoding UTF8
                 # 모든 ?v=X.Y.Z 패턴을 새 버전으로 교체
                 $newContent = $fileContent -replace [regex]::Escape("?v=$currentVersion"), "?v=$newVersion"
                 Set-Content $file $newContent -Encoding UTF8

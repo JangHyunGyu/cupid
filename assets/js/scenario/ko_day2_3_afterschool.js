@@ -81,11 +81,39 @@ Object.assign(SCENARIO[2], {
         name: "서연",
         text: "\"{name?}... 오늘 정말 고마웠어. 너랑 있으면 힘든 일도 다 잊게 돼. 우리... 내일도 같이 점심 먹을래?\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_seoyeon_contact_check"
+    },
+    "day2_seoyeon_contact_check": {
+        branches: [
+            { next: "day2_end", condition: "has_number_seyoun" },
+            { next: "day2_seoyeon_contact_ask" }
+        ]
+    },
+    "day2_seoyeon_contact_ask": {
+        name: "서연",
+        text: "\"아, 맞다! 우리 아직 연락처 교환 안 했지? 괜찮다면... 번호 알려줄 수 있어? 나중에 메시지 하고 싶어서.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        choices: [
+            { text: "응, 좋아. 여기 내 번호야.", next: "day2_seoyeon_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
+            { text: "미안, 번호는 좀... 나중에 알려줄게.", next: "day2_seoyeon_contact_fail" }
+        ]
+    },
+    "day2_seoyeon_contact_success": {
+        name: "서연",
+        text: "\"고마워! 그럼 진짜로 나중에 연락할게. 잘 가!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 10 } },
+        next: "day2_end"
+    },
+    "day2_seoyeon_contact_fail": {
+        name: "서연",
+        text: "\"아... 응, 알았어! 내가 너무 갑자기 물어봤지? 미안해. 그럼 내일 학교에서 봐!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_end"
     },
     "day2_after_yuna": {
         name: "나",
-        text: "(유나를 따라 학교 지하의 낡은 창고로 내려갔다. 먼지 냄새와 함께 기묘한 한기가 느껴진다.)",
+        text: "(도서관 별관. 낡은 건물 안으로 들어서자 서늘한 공기가 나를 감싼다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
@@ -96,9 +124,9 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_met": {
         name: "유나",
-        text: "\"봐, {name?}. 이 벽에 새겨진 문양들... 전에 도서관에서 봤던 책의 내용과 일치해.\"",
+        text: "\"왔구나. 자, 나를 따라와. 보여줄 게 있어.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_after_yuna_3"
+        next: "day2_after_yuna_follow"
     },
     "day2_after_yuna_new": {
         name: "유나",
@@ -117,6 +145,23 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "\"내 이름은 {name}이야.\"",
         setFlag: "knowsName_Yuna",
+        next: "day2_after_yuna_new_follow"
+    },
+    "day2_after_yuna_new_follow": {
+        name: "유나",
+        text: "\"{name}... 기억해둘게. 자, 나를 따라와. 너한테만 보여줄 게 있으니까.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day2_after_yuna_follow"
+    },
+    "day2_after_yuna_follow": {
+        name: "나",
+        text: "(유나를 따라 지하실의 먼지 쌓인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다.)",
+        next: "day2_after_yuna_3_pre"
+    },
+    "day2_after_yuna_3_pre": {
+        name: "유나",
+        text: "\"봐, {name?}. 이 벽에 새겨진 문양들... 내가 추적해온 이 학교의 비밀들과 일치해.\"",
+        character: "assets/images/characters/yuna_nomal.png",
         next: "day2_after_yuna_3"
     },
     "day2_after_yuna_3": {
@@ -151,13 +196,41 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "\"이건... 단순한 낙서가 아니야. 이 학교의 설립 목적과 관련이 있어. {name?}, 넌 이제 돌이킬 수 없는 길을 선택한 거야.\"",
         character: "assets/images/characters/yuna_smile.png",
+        next: "day2_yuna_contact_check"
+    },
+    "day2_yuna_contact_check": {
+        branches: [
+            { next: "day2_end", condition: "has_number_yuna" },
+            { next: "day2_yuna_contact_ask" }
+        ]
+    },
+    "day2_yuna_contact_ask": {
+        name: "유나",
+        text: "\"비밀을 공유하려면... 연락할 수단은 있어야겠지. 네 번호, 여기에 남겨줘.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        choices: [
+            { text: "응, 좋아. 너에 대해 모든 걸 알고 싶어.", next: "day2_yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
+            { text: "미안, 아직은 좀 조심스러워.", next: "day2_yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
+        ]
+    },
+    "day2_yuna_contact_success": {
+        name: "유나",
+        text: "\"...됐어. 이제 우린 연결된 거야. 내가 부르면... 언제든 와줘야 해.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 15 } },
+        next: "day2_end"
+    },
+    "day2_yuna_contact_fail": {
+        name: "유나",
+        text: "\"...그래. 억지로 강요하진 않아. 하지만 기회는 자주 오지 않는다는 걸 명심해.\"",
+        character: "assets/images/characters/yuna_nomal.png",
         next: "day2_end"
     },
     "day2_after_dain": {
         name: "나",
-        text: "(다인이의 스파이크 연습을 도와주다 보니 온몸이 땀으로 젖었다. 하지만 기분만은 상쾌하다.)",
+        text: "(체육관 문을 열자, 활기찬 기합 소리와 함께 배구공 튀기는 소리가 들려온다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_sweat.png",
+        character: "assets/images/characters/dain_nomal.png",
         night: true,
         branches: [
             { next: "day2_after_dain_met", condition: "metDain" },
@@ -166,7 +239,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain_met": {
         name: "다인",
-        text: "\"하아, 하아... {name?}, 너 진짜 대단하다! 내 공을 그렇게 다 받아낼 줄 몰랐어!\"",
+        text: "\"오! {name?}! 마침 잘 왔다. 나 연습하는 것 좀 도와줄래?\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_after_dain_practice"
+    },
+    "day2_after_dain_practice": {
+        name: "나",
+        text: "(다인이의 스파이크 연습을 도와주다 보니 어느새 온몸이 땀으로 젖었다. 하지만 기분만은 상쾌하다.)",
         character: "assets/images/characters/dain_sweat.png",
         next: "day2_after_dain_3"
     },
@@ -221,6 +300,34 @@ Object.assign(SCENARIO[2], {
         name: "다인",
         text: "\"와! 너 운동 신경 진짜 대박이다. 우리 팀으로 영입하고 싶을 정도야! 오늘 고생했어, {name?}! 조심해서 들어가!\"",
         character: "assets/images/characters/dain_laugh.png",
+        next: "day2_dain_contact_check"
+    },
+    "day2_dain_contact_check": {
+        branches: [
+            { next: "day2_end", condition: "has_number_dain" },
+            { next: "day2_dain_contact_ask" }
+        ]
+    },
+    "day2_dain_contact_ask": {
+        name: "다인",
+        text: "\"야 {name?}! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처는 있어야겠지? 번호 찍어줘!\"",
+        character: "assets/images/characters/dain_nomal.png",
+        choices: [
+            { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "day2_dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
+            { text: "음.. 나중에 기회 되면 알려줄게.", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -10 } } }
+        ]
+    },
+    "day2_dain_contact_success": {
+        name: "다인",
+        text: "\"연락처 전송 완료! 내가 맛있는 곳 찾으면 바로 메시지 보낼 테니까 대기하고 있어!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        stats: { Dain: { affinity: 15 } },
+        next: "day2_end"
+    },
+    "day2_dain_contact_fail": {
+        name: "다인",
+        text: "\"뭐야~ 튕기는 거야? 알았어, 알았어. 내가 더 노력해서 네 번호 따고 만다!\"",
+        character: "assets/images/characters/dain_nomal.png",
         next: "day2_end"
     },
     "day2_after_nurse": {
@@ -292,7 +399,41 @@ Object.assign(SCENARIO[2], {
         text: "(선생님이 부드러운 미소를 지으며 내 머리를 쓰다듬는다) \"후훗, 나랑 더 있고 싶어서 온 거구나? 좋아, 오늘은 특별히 늦게까지 같이 있어줄게.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
+        next: "day2_nurse_night_talk_2"
+    },
+    "day2_nurse_night_talk_2": {
+        name: "나",
+        text: "(선생님과 함께 보건실에서 도란도란 이야기를 나누다 보니 어느새 밖이 캄캄해졌다. 아쉽지만 다음을 기약하며 학교를 나섰다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        night: true,
+        next: "day2_nurse_contact_check"
+    },
+    "day2_nurse_contact_check": {
+        branches: [
+            { next: "day2_end", condition: "has_number_nurse" },
+            { next: "day2_nurse_contact_ask" }
+        ]
+    },
+    "day2_nurse_contact_ask": {
+        name: "보건선생님",
+        text: "\"{name?}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "네, 알려주세요!", next: "day2_nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { text: "아직은 좀 부담스러워요.", next: "day2_nurse_contact_fail", stats: { Nurse: { affinity: -5 } } }
+        ]
+    },
+    "day2_nurse_contact_success": {
+        name: "보건선생님",
+        text: "\"후훗, 착하네. 그럼 나중에 밤에 연락할게? 잘 가, {name?}.\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 10 } },
         next: "day2_end"
+    },
+    "day2_nurse_contact_fail": {
+        name: "보건선생님",
+        text: "\"어머, 튕기는 거야? 알았어. 나중에 마음 바뀌면 말해줘. 조심해서 들어가!\"",
+        character: "assets/images/characters/nurse.png",        next: "day2_end"
     }
 });
 

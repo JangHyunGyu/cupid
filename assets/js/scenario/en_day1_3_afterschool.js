@@ -338,14 +338,14 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         stats: { Yuna: { affinity: 15 } },
-        next: "night_home"
+        next: "after_home"
     },
     "yuna_contact_fail": {
         name: "Yuna",
         text: "(Her gaze turns cold as she tucks her phone away.) \"...I see. I won't force you. But remember, opportunities like this don't come twice.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "night_home"
+        next: "after_home"
     },
     "after_yuna_scared": {
         name: "Yuna",
@@ -359,7 +359,7 @@ Object.assign(SCENARIO[1], {
         text: "\"Hehe, of course. It's a heavy burden for a normal student. Go home. Don't try to dig any deeper.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
-        next: "night_home"
+        next: "after_home"
     },
     "after_dain_new": {
         name: "Me",

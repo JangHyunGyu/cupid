@@ -119,7 +119,7 @@ let gameState = {
 // 프리토킹 관련 변수
 let freeTalkTurns = 0;
 let currentMaxTurns = 5;
-const DEFAULT_MAX_FREE_TALK_TURNS = 3;
+const DEFAULT_MAX_FREE_TALK_TURNS = 5;
 let freeTalkHistory = [];
 let isFreeTalking = false;
 
