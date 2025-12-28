@@ -644,7 +644,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_new_2": {
         name: "보건선생님",
-        text: "\"어머, 처음 보는 얼굴이네? 오늘 전학 온 학생이니? 나는 보건 선생님이야. 어디가 아파서 온 걸까?\"",
+        text: "\"어머, 처음 보는 얼굴이네? 오늘 전학 온 학생이니? 나는 보건선생님이야. 어디가 아파서 온 걸까?\"",
         character: "assets/images/characters/nurse.png",
         setFlag: "metNurse",
         next: "after_nurse_new_name_ask"
@@ -671,7 +671,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "보건선생님",
         text: "\"자, 여기 앉으렴. 따뜻한 차 한 잔 줄게. 나랑 좀 더 이야기하고 갈래?\"",
-        context: "방과 후 노을 지는 보건실, 학교 보건 선생님과 단둘이 대화를 나누는 상황",
+        context: "방과 후 노을 지는 보건실, 학교 보건선생님과 단둘이 대화를 나누는 상황",
         personality: "성숙하고 매혹적인 '누님' 스타일. 주인공을 귀여워하며 챙겨줌.",
         character: "assets/images/characters/nurse.png",
         next: "nurse_after_day1_contact"

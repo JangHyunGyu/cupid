@@ -242,7 +242,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_new": {
         name: "보건선생님",
-        text: "\"어머, 처음 보는 얼굴이네? 이번에 전학 온 학생이니? 나는 보건 선생님이야.\"",
+        text: "\"어머, 처음 보는 얼굴이네? 이번에 전학 온 학생이니? 나는 보건선생님이야.\"",
         character: "assets/images/characters/nurse.png",
         setFlag: "metNurse",
         next: "day2_after_nurse_new_name_ask"

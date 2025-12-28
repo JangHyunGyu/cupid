@@ -242,7 +242,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_new": {
         name: "보건선생님",
-        text: "\"어머, 처음 보는 얼굴이네? 새로 전학 온 학생이니? 나는 보건 선생님이야.\"",
+        text: "\"어머, 처음 보는 얼굴이네? 새로 전학 온 학생이니? 나는 보건선생님이야.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         setFlag: "metNurse",
@@ -264,7 +264,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         name: "보건선생님",
         text: "\"후훗, 긴장하지 마. 어디가 어떻게 불편한지 자세하게 말해줄래?\"",
-        context: "조용한 보건실, 성숙하고 매혹적인 보건 선생님과 단둘이 있는 상황",
+        context: "조용한 보건실, 성숙하고 매혹적인 보건선생님과 단둘이 있는 상황",
         personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만 사실 누구보다 주인공을 아끼고 보호하려 함",
         extra_guideline: "성숙한 어른으로서 주인공의 로맨틱한 액션이나 가벼운 스킨십 시도도 매우 유연하고 대담하게 받아주세요. 거리감을 두지 말고 적극적으로 호응하며 PG-13 수위 내에서 최대한의 수위 반응을 허용합니다.",
         character: "assets/images/characters/nurse.png",
@@ -355,8 +355,8 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         name: "보건선생님",
         text: "\"후훗, 아직 잠이 덜 깼네. 학교 가기 전에 나랑 좀 더 이야기할래?\"",
-        context: "노을이 지는 보건실, 방금 잠에서 깨어난 주인공과 보건 선생님이 단둘이 남겨진 상황",
-        personality: "나른하고 섹시하면서도 다정한 보건 선생님. 주인공에게 묘한 매력을 느끼며 대담하게 유혹하는 대범한 성격.",
+        context: "노을이 지는 보건실, 방금 잠에서 깨어난 주인공과 보건선생님이 단둘이 남겨진 상황",
+        personality: "나른하고 섹시하면서도 다정한 보건선생님. 주인공에게 묘한 매력을 느끼며 대담하게 유혹하는 대범한 성격.",
         extra_guideline: "성숙한 어른으로서 주인공을 대놓고 유혹하며 아슬아슬한 분위기를 조성하세요. 사용자의 성인용 농담이나 도발적인 발언(섹드립 등)에도 당황하지 않고 여유롭게 받아치며, 오히려 주인공을 더 당황하게 만들 정도로 대담하고 도발적인 반응을 보이세요. 성숙한 매력을 한껏 발산하며 로맨틱한 긴장감을 최고치로 끌어올리세요.",
         character: "assets/images/characters/nurse.png",
         next: "nurse_contact_exchange"
