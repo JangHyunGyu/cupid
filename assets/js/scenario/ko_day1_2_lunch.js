@@ -410,9 +410,6 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
-        next: "lunch_dain_3"
-    },
-    "lunch_dain_3": {
         branches: [
             { next: "lunch_dain_3_active", condition: "personality_active" },
             { next: "lunch_dain_3_normal" }

@@ -164,7 +164,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_yuna_follow"
     },
     "day2_after_yuna_new": {
-        name: "Yuna",
+        name: "???",
         text: "\"You... you're curious about me, aren't you? This school hides a very deep secret.\"",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
@@ -327,7 +327,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_dain_3"
     },
     "day2_after_dain_new": {
-        name: "Dain",
+        name: "???",
         text: "\"Haa, haa... Your reflexes are insane! We've never met, but we're totally in sync!\"",
         character: "assets/images/characters/dain_sweat.png",
         night: true,
