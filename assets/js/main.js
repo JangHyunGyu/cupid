@@ -1037,56 +1037,56 @@ function getFallbackReply(charName, isEn) {
 
     if (isEn) {
         if (charKey === "Seoyeon") {
-            if (isDating) return isRemote ? "Honey, sorry! My battery is dying... I'll text you first later! Love you! ❤️" : "Honey, sorry! Something urgent came up... I'll contact you first later. Love you! ❤️";
-            if (affinity > 50) return isRemote ? "Oh no, something came up... I'll definitely call you back later! Sorry! 🙏" : "Oh no, something came up... I'll definitely talk to you later! Sorry! 🙏";
-            return isRemote ? "Ah, sorry. I'm a bit busy right now. Let's talk later." : "Ah, sorry. I'm a bit busy right now. Let's talk later.";
+            if (isDating) return isRemote ? "Honey, sorry! My battery is dying... I'll text you first later! Love you! ❤️" : "Honey, sorry! I have an urgent student council meeting now... I'll contact you first later. Love you! ❤️";
+            if (affinity > 50) return isRemote ? "Oh no, my phone is acting up... I'll definitely call you back later! Sorry! 🙏" : "Oh no, a teacher is calling me... I'll definitely talk to you later! Sorry! 🙏";
+            return isRemote ? "Ah, sorry. I'm a bit busy with messages right now. Let's talk later." : "Ah, sorry. I have to go to the student council room now. Let's talk later.";
         }
         if (charKey === "Yuna") {
-            if (isDating) return isRemote ? "...Honey, I don't think I can right now. The darkness is calling me. I'll contact you later for sure. 💜" : "...Honey, I don't think I can right now. The darkness is calling me. Let's meet again later. 💜";
-            if (affinity > 50) return isRemote ? "...Suddenly the energy feels off. I'll contact you later. I won't forget... your light. 🖤" : "...Suddenly the energy feels off. See you later. I won't forget... your light. 🖤";
+            if (isDating) return isRemote ? "...Honey, the signal is fading. The darkness is calling me. I'll contact you later for sure. 💜" : "...Honey, I don't think I can right now. The shadows are deepening here. Let's meet again later. 💜";
+            if (affinity > 50) return isRemote ? "...Suddenly the energy feels off. I'll contact you later. I won't forget... your light. 🖤" : "...Suddenly the energy feels off. I must leave this place. See you later. 🖤";
             return isRemote ? "...The shadows are deepening. I'll hang up now." : "...The shadows are deepening. I'll be going now.";
         }
         if (charKey === "Dain") {
-            if (isDating) return isRemote ? "Honey! I'm really sorry but I have to go in a hurry! I'll text you later, okay? Love you! 🧡" : "Honey! I'm really sorry but I have to go in a hurry! I'll text you later, okay? Love you! 🧡";
-            if (affinity > 50) return isRemote ? "Sorry, sorry! Mom's calling! I'll text you later, let's talk then! 🏃‍♀️" : "Sorry, sorry! Mom's calling! I'll buy you tteokbokki later, let's talk then! 🏃‍♀️";
+            if (isDating) return isRemote ? "Honey! I'm really sorry but I have to go to practice in a hurry! I'll text you later, okay? Love you! 🧡" : "Honey! I'm really sorry but I have to go to the gym in a hurry! I'll text you later, okay? Love you! 🧡";
+            if (affinity > 50) return isRemote ? "Sorry, sorry! Mom's calling me on the other line! I'll text you later! 🏃‍♀️" : "Sorry, sorry! I'm late for practice! I'll buy you tteokbokki later, let's talk then! 🏃‍♀️";
             return isRemote ? "Oops, I have to go to practice now! Let's text later!" : "Oops, I have to go to practice now! See ya!";
         }
         if (charKey === "Teacher") {
-            if (isDating) return isRemote ? "{name}... sorry. I don't think I can right now. I'll contact you later when we're alone. Wait for me. 💕" : "{name}... sorry. I don't think I can right now. Let's talk later when we're alone. I'll wait. 💕";
-            if (affinity > 50) return isRemote ? "Oh, sorry {name}. Something urgent came up with paperwork... Let's talk later. Sorry. 📝" : "Oh, sorry {name}. Something urgent came up with paperwork... Let's talk later. Sorry. 📝";
+            if (isDating) return isRemote ? "{name}... sorry. I have an urgent call from the office. I'll contact you later when we're alone. Wait for me. 💕" : "{name}... sorry. Another teacher is coming. Let's talk later when we're alone. I'll wait. 💕";
+            if (affinity > 50) return isRemote ? "Oh, sorry {name}. Something urgent came up with paperwork... I'll message you later. Sorry. 📝" : "Oh, sorry {name}. Something urgent came up with paperwork... Come to the office later. Sorry. 📝";
             return isRemote ? "Ah, sorry. I have a faculty meeting now... Contact me later." : "Ah, sorry. I have a faculty meeting now... Come to the office later.";
         }
         if (charKey === "Nurse") {
-            if (isDating) return isRemote ? "Honey, sorry! I think I'm going to be busy now. Shall we have our own time tonight? See you then. 💋" : "Honey, sorry! I think I'm going to be busy now. Shall we have our own time tonight? See you then. 💋";
+            if (isDating) return isRemote ? "Honey, sorry! I think I'm going to be busy with a patient now. Shall we have our own time tonight? See you then. 💋" : "Honey, sorry! I think I'm going to be busy with a patient now. Shall we have our own time tonight? See you then. 💋";
             if (affinity > 50) return isRemote ? "Sorry, my favorite student. An urgent patient just arrived... If you text me later, I'll make it more fun. 😉" : "Sorry, my favorite student. An urgent patient just arrived... If you come to the nurse's office later, I'll make it more fun. 😉";
-            return isRemote ? "Oh, a guest is here. Contact me later, transfer student." : "Oh, a guest is here. Come back later, transfer student.";
+            return isRemote ? "Oh, another student is calling me. Contact me later, transfer student." : "Oh, another student just walked in. Come back later, transfer student.";
         }
         return "Sorry, I'm a bit busy right now. Let's talk later!";
     } else {
         if (charKey === "Seoyeon") {
-            if (isDating) return isRemote ? "자기야 미안! 지금 배터리가 다 돼서... 이따가 내가 먼저 톡할게! 사랑해! ❤️" : "자기야 미안! 지금 급한 일이 생겨서... 이따가 내가 먼저 연락할게. 사랑해! ❤️";
-            if (affinity > 50) return isRemote ? "어떡하지? 갑자기 일이 생겨서... 나중에 꼭 다시 연락할게! 미안해! 🙏" : "어떡하지? 갑자기 일이 생겨서... 나중에 꼭 다시 연락할게! 미안해! 🙏";
-            return isRemote ? "아, 미안. 지금 좀 바빠서 나중에 다시 연락하자." : "아, 미안. 지금 좀 바빠서 나중에 이야기하자.";
+            if (isDating) return isRemote ? "자기야 미안! 지금 배터리가 다 돼서... 이따가 내가 먼저 톡할게! 사랑해! ❤️" : "자기야 미안! 지금 급한 학생회 회의가 생겨서... 이따가 내가 먼저 연락할게. 사랑해! ❤️";
+            if (affinity > 50) return isRemote ? "어떡하지? 갑자기 폰에 문제가 생겨서... 나중에 꼭 다시 연락할게! 미안해! 🙏" : "어떡하지? 갑자기 선생님이 부르셔서... 나중에 꼭 다시 이야기하자! 미안해! 🙏";
+            return isRemote ? "아, 미안. 지금 연락할 곳이 많아서 나중에 다시 연락하자." : "아, 미안. 지금 학생회실에 가봐야 해서 나중에 이야기하자.";
         }
         if (charKey === "Yuna") {
-            if (isDating) return isRemote ? "...자기야, 지금은 안 될 것 같아. 어둠이 나를 불러. 나중에 꼭 다시 연락할게. 💜" : "...자기야, 지금은 안 될 것 같아. 어둠이 나를 불러. 나중에 꼭 다시 만나자. 💜";
-            if (affinity > 50) return isRemote ? "...갑자기 기운이 안 좋아. 나중에 다시 연락할게. 너의 빛은... 잊지 않을게. 🖤" : "...갑자기 기운이 안 좋아. 나중에 다시 봐. 너의 빛은... 잊지 않을게. 🖤";
+            if (isDating) return isRemote ? "...자기야, 통신 상태가 안 좋아. 어둠이 나를 불러. 나중에 꼭 다시 연락할게. 💜" : "...자기야, 지금은 안 될 것 같아. 이곳의 그림자가 짙어지고 있어. 나중에 꼭 다시 만나자. 💜";
+            if (affinity > 50) return isRemote ? "...갑자기 기운이 안 좋아. 나중에 다시 연락할게. 너의 빛은... 잊지 않을게. 🖤" : "...갑자기 기운이 안 좋아. 이 자리를 벗어나야겠어. 나중에 다시 봐. 🖤";
             return isRemote ? "...그림자가 짙어지네. 이만 연락 끊을게." : "...그림자가 짙어지네. 이만 가볼게.";
         }
         if (charKey === "Dain") {
-            if (isDating) return isRemote ? "자기야! 진짜 미안한데 지금 급하게 가봐야 할 것 같아! 이따가 톡할게, 알았지? 사랑해! 🧡" : "자기야! 진짜 미안한데 지금 급하게 가봐야 할 것 같아! 이따가 톡할게, 알았지? 사랑해! 🧡";
-            if (affinity > 50) return isRemote ? "미안 미안! 갑자기 엄마가 불러서! 나중에 내가 톡할게, 그때 다시 이야기하자! 🏃‍♀️" : "미안 미안! 갑자기 엄마가 불러서! 나중에 내가 떡볶이 쏠게, 그때 다시 이야기하자! 🏃‍♀️";
+            if (isDating) return isRemote ? "자기야! 진짜 미안한데 지금 급하게 연습 가봐야 할 것 같아! 이따가 톡할게, 알았지? 사랑해! 🧡" : "자기야! 진짜 미안한데 지금 급하게 체육관 가봐야 할 것 같아! 이따가 톡할게, 알았지? 사랑해! 🧡";
+            if (affinity > 50) return isRemote ? "미안 미안! 갑자기 엄마한테 전화가 와서! 나중에 내가 톡할게, 그때 다시 이야기하자! 🏃‍♀️" : "미안 미안! 나 지금 연습 늦겠다! 나중에 내가 떡볶이 쏠게, 그때 다시 이야기하자! 🏃‍♀️";
             return isRemote ? "앗, 나 지금 연습 가야 해! 나중에 톡하자!" : "앗, 나 지금 연습 가야 해! 나중에 봐!";
         }
         if (charKey === "Teacher") {
-            if (isDating) return isRemote ? "{name}... 미안해. 지금은 좀 곤란할 것 같아. 이따가 단둘이 있을 때 다시 연락할게. 기다려줘. 💕" : "{name}... 미안해. 지금은 좀 곤란할 것 같아. 이따가 단둘이 있을 때 다시 이야기하자. 기다릴게. 💕";
-            if (affinity > 50) return isRemote ? "어머, 미안해 {name} 군. 갑자기 급한 서류 업무가 생겨서... 나중에 다시 연락하자. 미안해. 📝" : "어머, 미안해 {name} 군. 갑자기 급한 서류 업무가 생겨서... 나중에 다시 이야기하자. 미안해. 📝";
+            if (isDating) return isRemote ? "{name}... 미안해. 지금 교무실에서 급한 연락이 왔어. 이따가 단둘이 있을 때 다시 연락할게. 기다려줘. 💕" : "{name}... 미안해. 지금 다른 선생님이 오고 계셔. 이따가 단둘이 있을 때 다시 이야기하자. 기다릴게. 💕";
+            if (affinity > 50) return isRemote ? "어머, 미안해 {name} 군. 갑자기 급한 서류 업무가 생겨서... 나중에 톡할게. 미안해. 📝" : "어머, 미안해 {name} 군. 갑자기 급한 서류 업무가 생겨서... 나중에 교무실로 오렴. 미안해. 📝";
             return isRemote ? "아, 미안하구나. 지금 교무 회의가 있어서... 나중에 다시 연락하렴." : "아, 미안하구나. 지금 교무 회의가 있어서... 나중에 교무실로 오렴.";
         }
         if (charKey === "Nurse") {
-            if (isDating) return isRemote ? "자기야, 미안! 지금은 좀 바빠질 것 같네. 이따가 밤에... 우리만의 시간 가질까? 그때 봐. 💋" : "자기야, 미안! 지금은 좀 바빠질 것 같네. 이따가 밤에... 우리만의 시간 가질까? 그때 봐. 💋";
+            if (isDating) return isRemote ? "자기야, 미안! 지금 환자가 와서 좀 바빠질 것 같네. 이따가 밤에... 우리만의 시간 가질까? 그때 봐. 💋" : "자기야, 미안! 지금 환자가 와서 좀 바빠질 것 같네. 이따가 밤에... 우리만의 시간 가질까? 그때 봐. 💋";
             if (affinity > 50) return isRemote ? "미안해, 우리 전학생. 지금 급한 환자가 와서... 나중에 톡하면 더 재미있게 해줄게. 😉" : "미안해, 우리 전학생. 지금 급한 환자가 와서... 나중에 보건실로 놀러 오면 더 재미있게 해줄게. 😉";
-            return isRemote ? "어머, 손님이 왔네. 나중에 다시 연락하렴, 우리 전학생." : "어머, 손님이 왔네. 나중에 다시 오렴, 우리 전학생.";
+            return isRemote ? "어머, 다른 학생이 부르네. 나중에 다시 연락하렴, 우리 전학생." : "어머, 다른 학생이 들어왔네. 나중에 다시 오렴, 우리 전학생.";
         }
         return isEn ? "Sorry, I'm a bit busy right now. Let's talk later!" : "미안, 지금은 좀 바빠서 나중에 이야기하자!";
     }
