@@ -9,6 +9,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_time": {
         name: "Me",
         text: "(Ding-dong-dang-dong— The long-awaited lunch bell! The classroom is instantly filled with energy.)",
+        character: null,
         choices: [
             { text: "Go to Seoyeon and suggest eating lunch together.", next: "day2_lunch_seoyeon" },
             { text: "Head to the library annex backyard as promised with Yuna.", next: "day2_lunch_yuna", condition: "metYuna" },

@@ -10,6 +10,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(이틀째 밤이 깊어간다. 창밖의 어둠이 어제보다 더 짙게 느껴지는 건 기분 탓일까...?)",
         background: "assets/images/background/room_my.png",
+        character: null,
         night: true,
         next: "day2_end_2"
     },

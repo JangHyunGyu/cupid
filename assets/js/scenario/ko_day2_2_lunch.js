@@ -9,6 +9,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_time": {
         name: "나",
         text: "(딩동댕동— 기다리고 기다리던 점심시간! 교실 안은 순식간에 활기로 가득 찼다.)",
+        character: null,
         choices: [
             { text: "서연이에게 가서 같이 점심 먹자고 한다.", next: "day2_lunch_seoyeon" },
             { text: "유나와의 약속대로 도서관 별관 뒤뜰로 향한다.", next: "day2_lunch_yuna", condition: "metYuna" },

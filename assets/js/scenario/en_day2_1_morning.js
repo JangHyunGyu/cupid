@@ -181,6 +181,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(I open the classroom door and feel a much warmer atmosphere than yesterday. Even the other students' glances seem friendlier.)",
         background: "assets/images/background/room_school.png",
+        character: null,
         next: "day2_classroom_2"
     },
     "day2_classroom_2": {

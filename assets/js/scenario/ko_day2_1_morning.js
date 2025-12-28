@@ -181,6 +181,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(교실 문을 열자, 어제보다 한결 부드러운 공기가 나를 감싼다. 아이들의 시선에도 호의가 섞여 있다.)",
         background: "assets/images/background/room_school.png",
+        character: null,
         next: "day2_classroom_2"
     },
     "day2_classroom_2": {

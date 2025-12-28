@@ -10,6 +10,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(The second night is deepening. Is it just my imagination, or does the darkness outside the window feel even heavier than yesterday?)",
         background: "assets/images/background/room_my.png",
+        character: null,
         night: true,
         next: "day2_end_2"
     },

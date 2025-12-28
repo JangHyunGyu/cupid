@@ -220,8 +220,7 @@ Object.assign(SCENARIO[1], {
     "lunch_alone": {
         name: "Me",
         text: "(Walking down the quiet hallway, I arrived at the library annex. There, I ran into a girl reading a book leaning against the window.)",
-        background: "assets/images/background/library_old.png",
-        next: "alone_2"
+        background: "assets/images/background/library_old.png",        character: null,        next: "alone_2"
     },
     "alone_2": {
         name: "???",

@@ -221,6 +221,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(혼자 조용한 복도를 걷다 보니, 도서관 별관에 도착했다. 그곳에서 창가에 기대어 책을 읽고 있는 소녀와 마주쳤다.)",
         background: "assets/images/background/library_old.png",
+        character: null,
         next: "alone_2"
     },
     "alone_2": {
