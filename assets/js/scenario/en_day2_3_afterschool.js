@@ -299,7 +299,6 @@ Object.assign(SCENARIO[2], {
         text: "(Helping Dain with her spikes has left me drenched in sweat, but the physical exertion feels good. The world outside the window has already turned dark.)",
         character: "assets/images/characters/dain_sweat.png",
         night: true,
-        setFlag: "day2_met_dain_after",
         next: "day2_after_dain_3"
     },
     "day2_after_dain_new": {
@@ -352,8 +351,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_night_talk": {
         name: "Dain",
         text: "\"Wow! Your reflexes are insane. I almost want to recruit you for the team! Great work today, {name?}! Get home safe!\"",
-        character: "assets/images/characters/dain_laugh.png",
-        next: "day2_dain_contact_check"
+        character: "assets/images/characters/dain_laugh.png",        setFlag: "day2_met_dain_after",        next: "day2_dain_contact_check"
     },
     "day2_dain_contact_check": {
         branches: [

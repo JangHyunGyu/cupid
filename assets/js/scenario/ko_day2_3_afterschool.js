@@ -299,7 +299,6 @@ Object.assign(SCENARIO[2], {
         text: "(다인이의 스파이크 연습을 도와주다 보니 어느새 온몸이 땀으로 젖었다. 창밖은 어느덧 어둑어둑해졌다.)",
         character: "assets/images/characters/dain_sweat.png",
         night: true,
-        setFlag: "day2_met_dain_after",
         next: "day2_after_dain_3"
     },
     "day2_after_dain_new": {
@@ -354,6 +353,7 @@ Object.assign(SCENARIO[2], {
         name: "다인",
         text: "\"와! 너 운동 신경 진짜 대박이다. 우리 팀으로 영입하고 싶을 정도야! 오늘 고생했어, {name?}! 조심해서 들어가!\"",
         character: "assets/images/characters/dain_laugh.png",
+        setFlag: "day2_met_dain_after",
         next: "day2_dain_contact_check"
     },
     "day2_dain_contact_check": {
