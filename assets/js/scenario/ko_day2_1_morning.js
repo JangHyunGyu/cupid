@@ -52,7 +52,16 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(교문 옆 커다란 느티나무 아래, 유나가 무심한 표정으로 서 있는 것이 보인다. 그녀는 책을 덮고 나를 가만히 바라본다.)",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_talk"
+        branches: [
+            { next: "day2_yuna_talk_msg", condition: "sent_msg_day1_yuna" },
+            { next: "day2_yuna_talk" }
+        ]
+    },
+    "day2_yuna_talk_msg": {
+        name: "유나",
+        text: "\"...안녕. 어젯밤 메시지... 고마웠어. 덕분에 조금은 따뜻한 밤이었어. 이따가... 쪽지 확인해봐.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day2_classroom"
     },
     "day2_yuna_talk": {
         name: "유나",
@@ -71,9 +80,16 @@ Object.assign(SCENARIO[2], {
         text: "(선생님이 나에게 다가와 살짝 윙크를 한다.)",
         character: "assets/images/characters/nurse.png",
         branches: [
+            { next: "day2_nurse_talk_msg", condition: "sent_msg_day1_nurse" },
             { next: "day2_nurse_talk_has_number", condition: "has_number_nurse" },
             { next: "day2_nurse_talk_no_number" }
         ]
+    },
+    "day2_nurse_talk_msg": {
+        name: "보건선생님",
+        text: "\"어젯밤에 메시지 보내준 거, 정말 귀엽더라. 덕분에 선생님도 기분 좋게 잠들었어. 오늘도 아프면 언제든 보건실로 오렴.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_classroom"
     },
     "day2_nurse_talk_has_number": {
         name: "보건선생님",
@@ -98,9 +114,16 @@ Object.assign(SCENARIO[2], {
         text: "(서연이는 나와 눈을 맞추며 살짝 미소 짓는다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         branches: [
+            { next: "day2_seoyeon_talk_msg", condition: "sent_msg_day1_seyoun" },
             { next: "day2_seoyeon_talk_has_number", condition: "has_number_seyoun" },
             { next: "day2_seoyeon_talk_no_number" }
         ]
+    },
+    "day2_seoyeon_talk_msg": {
+        name: "서연",
+        text: "\"어제 메시지 정말 고마웠어! 덕분에 푹 잘 수 있었던 것 같아. 우리 오늘도 힘내자!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_classroom"
     },
     "day2_seoyeon_talk_has_number": {
         name: "서연",
@@ -140,9 +163,16 @@ Object.assign(SCENARIO[2], {
         text: "(다인이는 활기차게 내 어깨를 툭 친다.)",
         character: "assets/images/characters/dain_laugh.png",
         branches: [
+            { next: "day2_dain_talk_msg", condition: "sent_msg_day1_dain" },
             { next: "day2_dain_talk_dated", condition: "datedDainDay1" },
             { next: "day2_dain_talk_not_dated" }
         ]
+    },
+    "day2_dain_talk_msg": {
+        name: "다인",
+        text: "\"어제 메시지 잘 받았어! 너 은근히 다정하더라? 덕분에 기분 좋게 잤어. 오늘도 활기차게 보내자구!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_classroom"
     },
     "day2_dain_talk_dated": {
         name: "다인",
@@ -205,9 +235,15 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(수업 시간 내내 유나의 쪽지가 머릿속을 떠나지 않는다. 대체 무슨 할 말이 있는 걸까?)",
         branches: [
+            { next: "day2_morning_class_yuna_msg", condition: "sent_msg_day1_yuna" },
             { next: "day2_morning_class_yuna_met", condition: "metYuna" },
             { next: "day2_morning_class_yuna_new" }
         ]
+    },
+    "day2_morning_class_yuna_msg": {
+        name: "나",
+        text: "(어젯밤 메시지를 주고받았던 유나... 번호도 있는데 왜 굳이 쪽지를 남긴 걸까? 그녀다운 방식이라는 생각에 피식 웃음이 난다.)",
+        next: "day2_lunch_time"
     },
     "day2_morning_class_yuna_met": {
         name: "나",

@@ -63,6 +63,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(서연이에게 메시지를 보냈다. '오늘 점심 정말 맛있었어. 고마워.')",
         night: true,
+        setFlag: "sent_msg_day1_seyoun",
         next: "night_message_seyoun_reply"
     },
     "night_message_seyoun_reply": {
@@ -76,6 +77,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(유나에게 메시지를 보냈다. '오늘 즐거웠어. 잘 자.')",
         night: true,
+        setFlag: "sent_msg_day1_yuna",
         next: "night_message_yuna_reply"
     },
     "night_message_yuna_reply": {
@@ -89,6 +91,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(다인이에게 메시지를 보냈다. '오늘 떡볶이 맛있었어! 잘 자.')",
         night: true,
+        setFlag: "sent_msg_day1_dain",
         next: "night_message_dain_reply"
     },
     "night_message_dain_reply": {
@@ -102,6 +105,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(보건선생님께 메시지를 보냈다. '선생님, 오늘 감사했어요. 잘 자요.')",
         night: true,
+        setFlag: "sent_msg_day1_nurse",
         next: "night_message_nurse_reply"
     },
     "night_message_nurse_reply": {
