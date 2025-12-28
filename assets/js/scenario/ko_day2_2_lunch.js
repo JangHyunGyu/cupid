@@ -111,6 +111,7 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "(유나가 내 손을 잡고 낡은 창고 쪽으로 이끈다. 손끝에서 전해지는 차가운 감촉에 몸이 떨렸다.)",
         character: "assets/images/characters/yuna_smile.png",
+        setFlag: "visitedWarehouseAtLunch",
         next: "day2_yuna_secret_2"
     },
     "day2_yuna_secret_2": {

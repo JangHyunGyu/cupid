@@ -20,6 +20,7 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: null,
         sunset: true,
+        setFlag: "wokeUpInNurseRoom",
         next: "day2_after_school"
     },
     "day2_after_school": {
@@ -32,12 +33,34 @@ Object.assign(SCENARIO[2], {
             { text: "도서관 별관으로 쪽지를 남긴 사람을 찾아가 본다.", next: "day2_after_yuna", excludeCondition: "metYuna" },
             { text: "다인이의 배구 연습을 도와준다.", next: "day2_after_dain", condition: "metDain" },
             { text: "체육관에서 들리는 활기찬 소리를 따라가 본다.", next: "day2_after_dain", excludeCondition: "metDain" },
-            { text: "보건실에 있는 선생님을 찾아간다.", next: "day2_after_nurse" }
+            { text: "보건실에 있는 선생님을 찾아간다.", next: "day2_after_nurse_check" }
         ]
+    },
+    "day2_after_nurse_check": {
+        branches: [
+            { next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
+            { next: "day2_after_nurse" }
+        ]
+    },
+    "day2_after_nurse_stay": {
+        name: "나",
+        text: "(보건실 침대에서 일어나 기지개를 켰다. 선생님은 여전히 책을 읽고 계신다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        next: "day2_after_nurse_3"
     },
     "day2_after_seoyeon": {
         name: "나",
-        text: "(학생회실. 서연이와 함께 서류를 정리하다 보니 어느새 창밖이 어두워졌다.)",
+        text: "(학생회실. 서연이와 함께 서류를 정리하기 시작했다. 전학 온 지 얼마 안 된 나에게 서연이는 친절하게 업무를 가르쳐주었다.)",
+        background: "assets/images/background/student_room.png",
+        character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
+        next: "day2_after_seoyeon_work"
+    },
+    "day2_after_seoyeon_work": {
+        name: "나",
+        text: "(서연이와 함께 집중해서 서류를 정리하다 보니 어느새 창밖이 어두워졌다. 학생회실 안에는 우리 둘의 숨소리와 종이 넘기는 소리만 가득하다.)",
         background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
@@ -116,7 +139,7 @@ Object.assign(SCENARIO[2], {
         text: "(도서관 별관. 낡은 건물 안으로 들어서자 서늘한 공기가 나를 감싼다.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
-        night: true,
+        sunset: true,
         branches: [
             { next: "day2_after_yuna_met", condition: "metYuna" },
             { next: "day2_after_yuna_new" }
@@ -154,8 +177,21 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_yuna_follow"
     },
     "day2_after_yuna_follow": {
+        branches: [
+            { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_follow_new" }
+        ]
+    },
+    "day2_after_yuna_follow_again": {
         name: "나",
-        text: "(유나를 따라 지하실의 먼지 쌓인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다.)",
+        text: "(유나를 따라 다시 지하실 창고로 내려갔다. 아까보다 공기가 더 차갑게 느껴진다. 창밖의 빛이 완전히 사라진 듯 지하실은 칠흑 같은 어둠에 잠겨 있다.)",
+        night: true,
+        next: "day2_after_yuna_3_pre"
+    },
+    "day2_after_yuna_follow_new": {
+        name: "나",
+        text: "(유나를 따라 지하실의 먼지 쌓인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다. 어느새 밖은 완전히 어두워진 모양이다.)",
+        night: true,
         next: "day2_after_yuna_3_pre"
     },
     "day2_after_yuna_3_pre": {
@@ -231,7 +267,7 @@ Object.assign(SCENARIO[2], {
         text: "(체육관 문을 열자, 활기찬 기합 소리와 함께 배구공 튀기는 소리가 들려온다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
-        night: true,
+        sunset: true,
         branches: [
             { next: "day2_after_dain_met", condition: "metDain" },
             { next: "day2_after_dain_new" }
@@ -245,8 +281,9 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain_practice": {
         name: "나",
-        text: "(다인이의 스파이크 연습을 도와주다 보니 어느새 온몸이 땀으로 젖었다. 하지만 기분만은 상쾌하다.)",
+        text: "(다인이의 스파이크 연습을 도와주다 보니 어느새 온몸이 땀으로 젖었다. 창밖은 어느덧 어둑어둑해졌다.)",
         character: "assets/images/characters/dain_sweat.png",
+        night: true,
         next: "day2_after_dain_3"
     },
     "day2_after_dain_new": {
