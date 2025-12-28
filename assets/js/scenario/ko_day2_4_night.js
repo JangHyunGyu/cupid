@@ -121,7 +121,7 @@ Object.assign(SCENARIO[2], {
         text: "(징~ 즉각적인 답장.) '나도 정말 즐거웠어! {name?} 덕분에 든든해. 내일 점심 같이 먹는 거 잊지 마! 잘 자요.'",
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
-        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 서연이는 주인공의 메시지에 기뻐하며 답장을 보낸 상태.",
+        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 서연이는 주인공의 메시지에 기뻐하며 답장을 보낸 상태. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화 마무리 시점에 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
         next: "day2_final_scene"
@@ -154,7 +154,7 @@ Object.assign(SCENARIO[2], {
         text: "(잠시 후 도착한 답장.) '...응. 네가 이해해줄 줄 알았어. 꿈속에서도 지켜보고 있을게, {name?}.'",
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
-        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 유나는 주인공의 메시지에 짧지만 깊은 여운이 담긴 답장을 보낸 상태.",
+        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 유나는 주인공의 메시지에 짧지만 깊은 여운이 담긴 답장을 보낸 상태. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화 마무리 시점에 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
         stats: { Yuna: { affinity: 3 } },
         next: "day2_final_scene"
@@ -207,7 +207,7 @@ Object.assign(SCENARIO[2], {
         text: "(활기찬 답장.) '당연하지! 내가 이길 거니까 지갑 준비해둬! 하하, 잘 자, {name?}!'",
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
-        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 다인이는 주인공의 메시지에 활기차게 답장을 보낸 상태.",
+        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 다인이는 주인공의 메시지에 활기차게 답장을 보낸 상태. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화 마무리 시점에 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
         stats: { Dain: { affinity: 3 } },
         next: "day2_final_scene"
@@ -240,7 +240,7 @@ Object.assign(SCENARIO[2], {
         text: "(매혹적인 답장.) '어머, 벌써 내 생각 하는 거니? 후훗, 오늘 푹 자고 내일 또 얼굴 보자. 잘 자요, {name?}.'",
         character: "assets/images/characters/nurse.png",
         silhouette: true,
-        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 보건선생님은 주인공의 메시지에 장난스럽고 매혹적인 답장을 보낸 상태.",
+        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 보건선생님은 주인공의 메시지에 장난스럽고 매혹적인 답장을 보낸 상태. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화 마무리 시점에 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
         stats: { Nurse: { affinity: 3 } },
         next: "day2_final_scene"
@@ -259,7 +259,7 @@ Object.assign(SCENARIO[2], {
         text: "(조금 늦게 도착한 답장.) '어머, {name?} 학생. 이 시간에 메시지라니 조금 놀랐네. 그래도 걱정해줘서 고마워. 너도 푹 자고 내일 지각하지 마렴.'",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
-        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 담임선생님은 주인공의 메시지에 조금 당황하면서도 고마워하며 답장을 보낸 상태.",
+        context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 담임선생님은 주인공의 메시지에 조금 당황하면서도 고마워하며 답장을 보낸 상태. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화 마무리 시점에 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
         stats: { Teacher: { affinity: 3 } },
         next: "day2_final_scene"

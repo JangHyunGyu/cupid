@@ -153,7 +153,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Seoyeon",
         text: "\"Oh, come to think of it, we only introduced ourselves and haven't had a proper conversation yet! If you have any questions, feel free to ask!\"",
-        context: "A situation where she is having a light conversation with the transfer student protagonist while walking down the school hallway together.",
+        context: "A situation where she is having a light conversation with the transfer student protagonist while walking down the school hallway together. After the conversation, Seoyeon will guide you through the school facilities as you pass through the hallway. At the end of the conversation, please mention that it's time to move or that you'll start the guidance.",
         personality: "A kind, gentle, and responsible student council president. She has a crush on the transfer student protagonist.",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1_3"
@@ -330,7 +330,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Homeroom Teacher",
         text: "\"Now, everyone is very interested in you. You must be nervous, but they're all good kids, so don't worry too much. Do you have any questions for me before you introduce yourself?\"",
-        context: "Place: Inside Class 2-3, in front of the podium. Situation: A short waiting time just before the homeroom teacher introduces the transfer student protagonist to the students. Dozens of students are watching us. We are already in the middle of the classroom, definitely not in the hallway. We are having a conversation inside the classroom.",
+        context: "Place: Inside Class 2-3, in front of the podium. Situation: A short waiting time just before the homeroom teacher introduces the transfer student protagonist to the students. Dozens of students are watching us. We are already in the middle of the classroom, definitely not in the hallway. We are having a conversation inside the classroom. After the conversation, the teacher will formally introduce the protagonist to the students, and the protagonist will have to introduce themselves in front of the podium. At the end of the conversation, please induce actions such as telling the protagonist to get ready to greet the students or to straighten up.",
         personality: "A professional teacher with a clear distinction between public and private life, but actually has a clumsy side and feels flustered by the protagonist's unexpectedly mature appearance. She has a 'gap moe' where she secretly wants to rely on the protagonist.",
         character: "assets/images/characters/teacher.png",
         next: "classroom_2_3"

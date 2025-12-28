@@ -211,7 +211,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         name: "Teacher",
         text: "\"We still have some time before class starts. Is there anything you're curious about?\"",
-        context: "Meeting the homeroom teacher at the school gate and walking to the classroom together.",
+        context: "Meeting the homeroom teacher at the school gate and walking to the classroom together. After the conversation, the teacher will ask for the protagonist's contact information for the emergency contact list. At the end of the conversation, please find a timing to ask for the number or hint that there is official business to discuss.",
         personality: "A professional teacher who is strict about rules but has a soft spot for the protagonist.",
         character: "assets/images/characters/teacher.png",
         next: "day2_teacher_contact_ask"

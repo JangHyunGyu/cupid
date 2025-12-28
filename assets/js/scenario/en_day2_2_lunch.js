@@ -132,7 +132,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         name: "Yuna",
         text: "\"...Do you have any questions for me? Or do you want to know more about this school?\"",
-        context: "Quiet library annex backyard, having a private conversation with the mysterious Yuna.",
+        context: "Quiet library annex backyard, having a private conversation with the mysterious Yuna. After the conversation, Yuna will talk about the school's secrets and suggest that there is something she only wants to show the protagonist. At the end of the conversation, please create a mysterious atmosphere and stimulate the protagonist's curiosity.",
         personality: "Mysterious, cold, and full of secrets. She feels a strange interest in the protagonist.",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_talk_branch"
@@ -270,7 +270,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         name: "Dain",
         text: "\"Wow, it's really crowded! Right? Let's chat while we wait. Any questions for me?\"",
-        context: "In front of the crowded school store, standing in line with Dain to buy snacks.",
+        context: "In front of the crowded school store, standing in line with Dain to buy snacks. After the conversation, you will choose snacks at the store. At the end of the conversation, please naturally lead into the next situation by mentioning that it's almost our turn or by deciding what to eat.",
         personality: "Easygoing and cool-headed volleyball ace. She enjoys spending time with the protagonist.",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_dain_store_choices"
@@ -436,7 +436,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         name: "Nurse",
         text: "\"Hehe, you're not fully awake yet. Do you want to talk to me more before going home?\"",
-        context: "A situation where the protagonist who just woke up and the nurse are left alone in the nurse's office where the sunset is setting",
+        context: "A situation where the protagonist who just woke up and the nurse are left alone in the nurse's office where the sunset is setting. After the conversation, the nurse will give the protagonist her contact information or seduce him to contact her at night. At the end of the conversation, please create a lingering atmosphere by announcing that it's time to go home, or make a remark that induces personal contact.",
         personality: "A languid, sexy, yet kind nurse. A bold personality who feels a strange charm to the protagonist and openly seduces him.",
         extra_guideline: "As a mature adult, openly seduce the protagonist and create a risky atmosphere. Don't be flustered by the user's mature jokes or provocative remarks (sexual jokes, etc.) and respond leisurely, and show a bold and provocative reaction enough to make the protagonist even more flustered. Fully radiate mature charm and pull the romantic tension to the maximum.",
         character: "assets/images/characters/nurse.png",

@@ -175,7 +175,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Seoyeon",
         text: "\"Hehe, was I too serious all of a sudden? Let's talk more comfortably. What kind of style of person do you like?\"",
-        context: "Lunch time, a situation where they are having a conversation in a relaxed and romantic atmosphere after eating lunch boxes alone on the school rooftop.",
+        context: "Lunch time, a situation where they are having a conversation in a relaxed and romantic atmosphere after eating lunch boxes alone on the school rooftop. After the conversation, Seoyeon will ask about the protagonist's ideal type or preferred style. At the end of the conversation, please naturally ask the question by mentioning that you're curious about the protagonist's tastes.",
         personality: "A state where she has become a bit more bold and honest than usual. She wants to know deeply about the protagonist's tastes or thoughts.",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_choices"
@@ -291,7 +291,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Yuna",
         text: "\"...Do you have any questions for me? Or do you want to know about this school?\"",
-        context: "Quiet library annex, a situation where he first met Yuna, who has a mysterious and cold atmosphere.",
+        context: "Quiet library annex, a situation where he first met Yuna, who has a mysterious and cold atmosphere. After the conversation, Yuna will ask if you want to know more about her or the school's secrets. At the end of the conversation, please show an attitude of checking if the protagonist is ready to share deeper stories.",
         personality: "A mysterious, cold girl with many secrets. She feels a strange interest in the protagonist.",
         character: "assets/images/characters/yuna_nomal.png",
         next: "yuna_choices"
@@ -508,7 +508,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Nurse",
         text: "\"Don't be nervous. You can be comfortable here. Do you have anything you're curious about?\"",
-        context: "A situation where you talk to the nurse you met for the first time in the nurse's office. The teacher shows a provocative attitude, feeling a strange interest in the protagonist.",
+        context: "A situation where you talk to the nurse you met for the first time in the nurse's office. The teacher shows a provocative attitude, feeling a strange interest in the protagonist. After the conversation, lunch time ends and the situation transitions to after school. At the end of the conversation, please see the protagonist off, saying it's time to go to class.",
         personality: "Mature and seductive 'older sister' style. Enjoys teasing the protagonist with provocative words, but actually cares for and tries to protect the protagonist more than anyone else.",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"

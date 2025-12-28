@@ -119,7 +119,7 @@ Object.assign(SCENARIO[2], {
         text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name?}. Don't forget to have lunch together tomorrow! Good night.'",
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
-        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Seoyeon has sent a reply, happy with the protagonist's message.",
+        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Seoyeon has sent a reply, happy with the protagonist's message. After the conversation, the protagonist will fall asleep, looking forward to tomorrow. At the end of the conversation, please naturally end the conversation by saying good night since it's late, or by saying see you at school tomorrow.",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
         next: "day2_final_scene"
@@ -152,7 +152,7 @@ Object.assign(SCENARIO[2], {
         text: "(A reply arrives after a short wait.) '...Yeah. I knew you would understand. I'll be watching you in your dreams too, {name?}.'",
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
-        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Yuna has sent a short but deeply lingering reply to the protagonist's message.",
+        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Yuna has sent a short but deeply lingering reply to the protagonist's message. After the conversation, the protagonist will fall asleep, looking forward to tomorrow. At the end of the conversation, please naturally end the conversation by saying good night since it's late, or by saying see you at school tomorrow.",
         night: true,
         stats: { Yuna: { affinity: 3 } },
         next: "day2_final_scene"
@@ -205,7 +205,7 @@ Object.assign(SCENARIO[2], {
         text: "(A lively reply.) 'Of course! I'm going to win, so have your wallet ready! Haha, good night, {name?}!'",
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
-        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Dain has sent an energetic reply to the protagonist's message.",
+        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Dain has sent an energetic reply to the protagonist's message. After the conversation, the protagonist will fall asleep, looking forward to tomorrow. At the end of the conversation, please naturally end the conversation by saying good night since it's late, or by saying see you at school tomorrow.",
         night: true,
         stats: { Dain: { affinity: 3 } },
         next: "day2_final_scene"
@@ -238,7 +238,7 @@ Object.assign(SCENARIO[2], {
         text: "(An alluring reply.) 'Oh, are you thinking about me already? Hehe, rest well today and see you tomorrow. Good night, {name?}.'",
         character: "assets/images/characters/nurse.png",
         silhouette: true,
-        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Nurse has sent a playful and alluring reply to the protagonist's message.",
+        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Nurse has sent a playful and alluring reply to the protagonist's message. After the conversation, the protagonist will fall asleep, looking forward to tomorrow. At the end of the conversation, please naturally end the conversation by saying good night since it's late, or by saying see you at school tomorrow.",
         night: true,
         stats: { Nurse: { affinity: 3 } },
         next: "day2_final_scene"
@@ -257,7 +257,7 @@ Object.assign(SCENARIO[2], {
         text: "(A reply arrives a bit late.) 'Oh, {name?}. I'm a bit surprised to get a message at this hour. But thank you for your concern. Get some rest and don't be late tomorrow.'",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
-        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Teacher is a bit surprised but grateful for the protagonist's message.",
+        context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Teacher is a bit surprised but grateful for the protagonist's message. After the conversation, the protagonist will fall asleep, looking forward to tomorrow. At the end of the conversation, please naturally end the conversation by saying good night since it's late, or by saying see you at school tomorrow.",
         night: true,
         stats: { Teacher: { affinity: 3 } },
         next: "day2_final_scene"
