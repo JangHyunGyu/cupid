@@ -459,7 +459,6 @@ Object.assign(SCENARIO[2], {
         text: "(The teacher smiles softly and strokes my hair.) \"Hehe, so you came because you wanted to spend more time with me? Fine, I'll stay with you until late today, just for you.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
-        setFlag: "day2_met_nurse_after",
         next: "day2_nurse_night_talk_2"
     },
     "day2_nurse_night_talk_2": {
@@ -467,6 +466,7 @@ Object.assign(SCENARIO[2], {
         text: "(After spending some time chatting with the teacher in the nurse's office, it had already grown dark outside. I left the school, looking forward to seeing her again.)",
         background: "assets/images/background/nurse_room.jpg",
         night: true,
+        setFlag: "day2_met_nurse_after",
         next: "day2_nurse_contact_check"
     },
     "day2_nurse_contact_check": {

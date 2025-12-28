@@ -462,7 +462,6 @@ Object.assign(SCENARIO[2], {
         text: "(선생님이 부드러운 미소를 지으며 내 머리를 쓰다듬는다) \"후훗, 나랑 더 있고 싶어서 온 거구나? 좋아, 오늘은 특별히 늦게까지 같이 있어줄게.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
-        setFlag: "day2_met_nurse_after",
         next: "day2_nurse_night_talk_2"
     },
     "day2_nurse_night_talk_2": {
@@ -470,6 +469,7 @@ Object.assign(SCENARIO[2], {
         text: "(선생님과 함께 보건실에서 도란도란 이야기를 나누다 보니 어느새 밖이 캄캄해졌다. 아쉽지만 다음을 기약하며 학교를 나섰다.)",
         background: "assets/images/background/nurse_room.jpg",
         night: true,
+        setFlag: "day2_met_nurse_after",
         next: "day2_nurse_contact_check"
     },
     "day2_nurse_contact_check": {
