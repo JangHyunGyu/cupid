@@ -420,8 +420,31 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         choices: [
             { text: "Yes, please tell me!", next: "day2_nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { 
+                text: "Not the number... can I go to your house, teacher?", 
+                next: "day2_nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 70, next: "day2_nurse_contact_home_success" }
+                ]
+            },
             { text: "It's a bit overwhelming for now.", next: "day2_nurse_contact_fail", stats: { Nurse: { affinity: -5 } } }
         ]
+    },
+    "day2_nurse_contact_home_success": {
+        name: "Nurse",
+        text: "(The teacher's eyes widen, then she whispers in my ear with a seductive smile.) \"Oh... {name?}, you're much bolder than I thought? Okay, do you want to come to my house tonight? I'll give you the address. Instead... it's a secret from your parents?\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 30 } },
+        setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
+        next: "day2_end"
+    },
+    "day2_nurse_contact_home_fail": {
+        name: "Nurse",
+        text: "(The teacher bursts into laughter.) \"Oh my, {name?}! You're really cute. But I think it's a bit early for my house? Let's exchange numbers first.\"",
+        character: "assets/images/characters/nurse.png",
+        setFlags: ["has_number_nurse", "has_any_contact"],
+        next: "day2_end"
     },
     "day2_nurse_contact_success": {
         name: "Nurse",

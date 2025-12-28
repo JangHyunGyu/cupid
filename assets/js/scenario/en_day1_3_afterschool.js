@@ -592,7 +592,8 @@ Object.assign(SCENARIO[1], {
     "after_nurse_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_Nurse",`n        next: "nurse_free_talk_after_day1"
+        setFlag: "knowsName_Nurse",
+        next: "nurse_free_talk_after_day1"
     },
     "after_nurse_2": {
         name: "Nurse",

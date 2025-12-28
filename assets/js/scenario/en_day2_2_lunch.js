@@ -257,7 +257,8 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_nurse_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_Nurse",`n        next: "nurse_free_talk"
+        setFlag: "knowsName_Nurse",
+        next: "nurse_free_talk"
     },
     "nurse_free_talk": {
         type: "free_talk",
