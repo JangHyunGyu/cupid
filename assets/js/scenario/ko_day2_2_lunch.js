@@ -399,7 +399,17 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
-        next: "day2_afternoon_nurse_skip"
+        choices: [
+            { text: "네, 그럴게요.", next: "day2_afternoon_nurse_skip" },
+            { 
+                text: "번호 말고... 오늘 밤 선생님 집으로 가면 안 돼요?", 
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 70, next: "nurse_contact_home_success" }
+                ]
+            }
+        ]
     },
     "nurse_contact_ask": {
         name: "보건선생님",

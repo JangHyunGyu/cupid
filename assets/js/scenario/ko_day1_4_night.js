@@ -60,15 +60,43 @@ Object.assign(SCENARIO[1], {
         next: "night_home_check_contact"
     },
     "night_message_seyoun": {
+        branches: [
+            { next: "night_message_seyoun_lunch", condition: "ate_lunch_seoyeon" },
+            { next: "night_message_seyoun_after", condition: "helpedSeoyeon" },
+            { next: "night_message_seyoun_generic" }
+        ]
+    },
+    "night_message_seyoun_lunch": {
         name: "나",
         text: "(서연이에게 메시지를 보냈다. '오늘 점심 정말 맛있었어. 고마워.')",
         night: true,
         setFlag: "sent_msg_day1_seyoun",
-        next: "night_message_seyoun_reply"
+        next: "night_message_seyoun_reply_lunch"
     },
-    "night_message_seyoun_reply": {
+    "night_message_seyoun_after": {
+        name: "나",
+        text: "(서연이에게 메시지를 보냈다. '오늘 학생회 일 돕는 거 즐거웠어. 내일 봐!')",
+        night: true,
+        setFlag: "sent_msg_day1_seyoun",
+        next: "night_message_seyoun_reply_generic"
+    },
+    "night_message_seyoun_generic": {
+        name: "나",
+        text: "(서연이에게 메시지를 보냈다. '오늘 하루 잘 보냈어? 내일 학교에서 보자.')",
+        night: true,
+        setFlag: "sent_msg_day1_seyoun",
+        next: "night_message_seyoun_reply_generic"
+    },
+    "night_message_seyoun_reply_lunch": {
         name: "서연",
         text: "(징~ 즉각적인 답장.) '정말? 다행이다! 맛있게 먹어줘서 내가 더 고마워. 내일도 기대해줘! 잘 자 {name?}.'",
+        night: true,
+        stats: { Seoyeon: { affinity: 5 } },
+        next: "day1_end"
+    },
+    "night_message_seyoun_reply_generic": {
+        name: "서연",
+        text: "(징~ 즉각적인 답장.) '나도 정말 즐거웠어! {name?} 덕분에 든든해. 내일 학교에서 보자. 잘 자요.'",
         night: true,
         stats: { Seoyeon: { affinity: 5 } },
         next: "day1_end"
@@ -88,15 +116,35 @@ Object.assign(SCENARIO[1], {
         next: "day1_end"
     },
     "night_message_dain": {
+        branches: [
+            { next: "night_message_dain_date", condition: "datedDainDay1" },
+            { next: "night_message_dain_generic" }
+        ]
+    },
+    "night_message_dain_date": {
         name: "나",
         text: "(다인이에게 메시지를 보냈다. '오늘 떡볶이 맛있었어! 잘 자.')",
         night: true,
         setFlag: "sent_msg_day1_dain",
-        next: "night_message_dain_reply"
+        next: "night_message_dain_reply_date"
     },
-    "night_message_dain_reply": {
+    "night_message_dain_generic": {
+        name: "나",
+        text: "(다인이에게 메시지를 보냈다. '오늘 연습하는 거 멋있더라! 내일 봐.')",
+        night: true,
+        setFlag: "sent_msg_day1_dain",
+        next: "night_message_dain_reply_generic"
+    },
+    "night_message_dain_reply_date": {
         name: "다인",
         text: "(활기찬 답장.) '그치? 내가 맛집은 다 꿰고 있다니까! 푹 자고 내일 보자, {name?}! 굿나잇!'",
+        night: true,
+        stats: { Dain: { affinity: 5 } },
+        next: "day1_end"
+    },
+    "night_message_dain_reply_generic": {
+        name: "다인",
+        text: "(활기찬 답장.) '오~ 지켜보고 있었냐? 부끄럽게! 하하, 내일은 더 멋진 모습 보여줄게. 잘 자, {name?}!'",
         night: true,
         stats: { Dain: { affinity: 5 } },
         next: "day1_end"

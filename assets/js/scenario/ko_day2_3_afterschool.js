@@ -33,7 +33,8 @@ Object.assign(SCENARIO[2], {
             { text: "도서관 별관으로 쪽지를 남긴 사람을 찾아가 본다.", next: "day2_after_yuna", excludeCondition: "metYuna" },
             { text: "다인이의 배구 연습을 도와준다.", next: "day2_after_dain", condition: "metDain" },
             { text: "체육관에서 들리는 활기찬 소리를 따라가 본다.", next: "day2_after_dain", excludeCondition: "metDain" },
-            { text: "보건실에 있는 선생님을 찾아간다.", next: "day2_after_nurse_check" }
+            { text: "보건실에 있는 선생님과 좀 더 대화한다.", next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
+            { text: "보건실에 있는 선생님을 찾아간다.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" }
         ]
     },
     "day2_after_nurse_check": {
@@ -473,9 +474,45 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_contact_check": {
         branches: [
-            { next: "day2_end", condition: "has_number_nurse" },
+            { next: "day2_nurse_contact_already_have", condition: "has_number_nurse" },
             { next: "day2_nurse_contact_ask" }
         ]
+    },
+    "day2_nurse_contact_already_have": {
+        branches: [
+            { next: "day2_end", condition: "invited_nurse_home" },
+            { next: "day2_nurse_contact_already_have_talk" }
+        ]
+    },
+    "day2_nurse_contact_already_have_talk": {
+        name: "보건선생님",
+        text: "\"{name?}, 우리 이미 번호 교환했었지? 밤에 심심하면 꼭 연락해야 해? 기다릴 테니까.\"",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "네, 그럴게요.", next: "day2_end" },
+            { 
+                text: "번호 말고... 오늘 밤 선생님 집으로 가면 안 돼요?", 
+                next: "nurse_contact_home_fail_after",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 80, next: "nurse_contact_home_success_after" }
+                ]
+            }
+        ]
+    },
+    "nurse_contact_home_success_after": {
+        name: "보건선생님",
+        text: "(선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귓가에 속삭인다.) \"어머... {name?}, 생각보다 훨씬 대담하네? 좋아, 오늘 밤 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 30 } },
+        setFlags: ["invited_nurse_home"],
+        next: "day2_end"
+    },
+    "nurse_contact_home_fail_after": {
+        name: "보건선생님",
+        text: "(선생님이 꺄르르 웃음을 터뜨린다.) \"어머나 {name?}! 넌 정말 귀엽다. 하지만 우리 집은 아직 좀 이른 것 같네? 나중에 메시지나 해.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_end"
     },
     "day2_nurse_contact_ask": {
         name: "보건선생님",
