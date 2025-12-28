@@ -97,7 +97,7 @@ Object.assign(SCENARIO[1], {
                 next: "rooftop_talk_ah_fail",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
-                    { minAffinity: 25, next: "rooftop_talk_ah" }
+                    { minAffinity: 20, next: "rooftop_talk_ah" }
                 ],
                 stats: { Seoyeon: { affinity: 3 } }
             },

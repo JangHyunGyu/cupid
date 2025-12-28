@@ -94,12 +94,12 @@ Object.assign(SCENARIO[1], {
             { text: "Wow, it looks delicious! You're a great cook, Seoyeon.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 3 } } },
             { 
                 text: "Say 'Ah'... (Gathering courage!)", 
-                next: "rooftop_talk_ah_fail", 
+                next: "rooftop_talk_ah_fail",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
-                    { minAffinity: 25, next: "rooftop_talk_ah" }
+                    { minAffinity: 20, next: "rooftop_talk_ah" }
                 ],
-                stats: { Seoyeon: { affinity: 3 } } 
+                stats: { Seoyeon: { affinity: 3 } }
             },
             { text: "I've never had such a heartfelt lunch box. Thank you.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 5 } } },
             { text: "It doesn't look that good... I should've just gone to the snack bar.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -50 } } }

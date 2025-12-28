@@ -685,7 +685,7 @@ Object.assign(SCENARIO[1], {
                 next: "dain_contact_call_fail",
                 affinityChar: "Dain",
                 affinityBranches: [
-                    { minAffinity: 40, next: "dain_contact_call_success" }
+                    { minAffinity: 35, next: "dain_contact_call_success" }
                 ],
                 setFlags: ["has_number_dain", "has_any_contact"]
             },
