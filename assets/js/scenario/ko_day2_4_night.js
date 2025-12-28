@@ -74,6 +74,7 @@ Object.assign(SCENARIO[2], {
         text: "(선생님과 단둘이 남겨진 방... 심장 소리가 귓가에 울릴 정도로 크게 들려온다. 그녀의 향기가 코끝을 간지럽히고, 밤은 점점 깊어만 간다.)",
         background: "assets/images/background/nurse_house.png",
         night: true,
+        fade: true,
         next: "day2_final"
     },
     "day2_check_affinity": {
@@ -227,13 +228,14 @@ Object.assign(SCENARIO[2], {
         text: "(내일은 또 어떤 진실이 나를 기다리고 있을까... 무거운 눈꺼풀을 닫으며 잠에 빠져든다.)",
         background: "assets/images/background/room_my.png",
         night: true,
+        fade: true,
         next: "day2_final"
     },
     "day2_final": {
         name: "시스템",
         text: "(현재 개발된 시나리오는 여기까지입니다. 다음 업데이트를 기대해주세요!)",
-        background: "assets/images/background/room_my.png",
-        night: true,
+        background: null,
+        fade: true,
         next: "day2_final"
     }
 });
