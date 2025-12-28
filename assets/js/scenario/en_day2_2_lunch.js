@@ -173,7 +173,13 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "\"My name is {name}.\"",
         setFlag: "knowsName_Dain",
-        next: "day2_dain_lunch_talk"
+        next: "day2_dain_lunch_talk_new"
+    },
+    "day2_dain_lunch_talk_new": {
+        name: "Dain",
+        text: "\"Oh! {name}? That's a cool name! Great, to celebrate our meeting, lunch is on me today! Let's hit the snack bar!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_dain_store"
     },
     "day2_dain_lunch_talk": {
         name: "Dain",

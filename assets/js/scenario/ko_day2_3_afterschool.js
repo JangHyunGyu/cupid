@@ -96,7 +96,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_met": {
         name: "유나",
-        text: "\"봐, {name?}. 이 벽에 새겨진 문양들... 어제 도서관에서 봤던 책의 내용과 일치해.\"",
+        text: "\"봐, {name?}. 이 벽에 새겨진 문양들... 전에 도서관에서 봤던 책의 내용과 일치해.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_after_yuna_3"
     },

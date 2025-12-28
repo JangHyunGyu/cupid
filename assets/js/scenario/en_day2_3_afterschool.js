@@ -96,7 +96,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_met": {
         name: "Yuna",
-        text: "\"Look, {name?}. These patterns on the wall... they're identical to the ones in the book we found yesterday.\"",
+        text: "\"Look, {name?}. These patterns on the wall... they're identical to the ones in the book we found before.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_after_yuna_3"
     },

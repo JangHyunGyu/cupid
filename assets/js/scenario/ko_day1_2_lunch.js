@@ -325,13 +325,13 @@ Object.assign(SCENARIO[1], {
         next: "lunch_store_teacher"
     },
     "lunch_store_teacher": {
-        name: "담임 선생님",
+        name: "담임선생님",
         text: "\"어, 미안해! ...어라, {name} 아니니? 너도 매점에 빵 사러 온 거야?\"",
         character: "assets/images/characters/teacher.png",
         next: "lunch_store_teacher_2"
     },
     "lunch_store_teacher_2": {
-        name: "담임 선생님",
+        name: "담임선생님",
         text: "\"후훗, 그 빵 정말 맛있지. 나도 그거 사러 왔는데 한발 늦었네. 맛있게 먹으렴!\"",
         character: "assets/images/characters/teacher.png",
         stats: { Teacher: { affinity: 5 } },
@@ -436,7 +436,7 @@ Object.assign(SCENARIO[1], {
         next: "nurse_intro"
     },
     "nurse_intro": {
-        name: "보건 선생님",
+        name: "보건선생님",
         text: "\"나는 이곳의 보건 교사야. 애들은 그냥 '선생님'이라고 부르지만.. 너한테는 특별히 내 이름을 알려줄 수도 있는데?\"",
         character: "assets/images/characters/nurse.png",
         setFlag: "metNurse",
@@ -449,16 +449,16 @@ Object.assign(SCENARIO[1], {
         next: "nurse_name_share"
     },
     "nurse_name_share": {
-        name: "보건 선생님",
+        name: "보건선생님",
         text: "\"{name}... 후훗, 이름만큼이나 눈빛이 참 맑구나. 어디가 아파서 온 거니? 아니면.. 전학 첫날이라 긴장해서 들른 걸까?\"",
         character: "assets/images/characters/nurse.png",
         next: "nurse_free_talk_day1"
     },
     "nurse_free_talk_day1": {
         type: "free_talk",
-        name: "보건 선생님",
+        name: "보건선생님",
         text: "\"긴장하지 마. 여기서는 편하게 있어도 된단다. 나한테 궁금한 거라도 있니?\"",
-        context: "보건실에서 처음 만난 보건 선생님과 대화를 나누는 상황. 선생님은 주인공에게 묘한 흥미를 느끼며 도발적인 태도를 보임.",
+        context: "보건실에서 처음 만난 보건선생님과 대화를 나누는 상황. 선생님은 주인공에게 묘한 흥미를 느끼며 도발적인 태도를 보임.",
         personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만 사실 누구보다 주인공을 아끼고 보호하려 함.",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"

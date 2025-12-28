@@ -158,7 +158,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_dain_new": {
         name: "???",
-        text: "\"오! 처음 보는 얼굴인데? 너 오늘 전학 온 애 맞지? 나 배구부 다인이야!\"",
+        text: "\"오! 처음 보는 얼굴인데? 너 새로 전학 온 애 맞지? 나 배구부 다인이야!\"",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "metDain",
         next: "day2_lunch_dain_new_name_ask"
@@ -173,7 +173,13 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "\"내 이름은 {name}이야.\"",
         setFlag: "knowsName_Dain",
-        next: "day2_dain_lunch_talk"
+        next: "day2_dain_lunch_talk_new"
+    },
+    "day2_dain_lunch_talk_new": {
+        name: "다인",
+        text: "\"오! {name}? 멋진 이름이네! 좋아, 만난 기념으로 오늘 점심은 내가 쏜다! 매점으로 가자!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_dain_store"
     },
     "day2_dain_lunch_talk": {
         name: "다인",
@@ -236,7 +242,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_new": {
         name: "보건선생님",
-        text: "\"어머, 처음 보는 얼굴이네? 오늘 전학 온 학생이니? 나는 보건 선생님이야.\"",
+        text: "\"어머, 처음 보는 얼굴이네? 새로 전학 온 학생이니? 나는 보건 선생님이야.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         setFlag: "metNurse",

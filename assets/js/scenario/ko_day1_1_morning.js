@@ -102,7 +102,7 @@ Object.assign(SCENARIO[1], {
     },
     "path_blush_1_2": {
         name: "서연",
-        text: "\"에..? 아, 갑자기 무슨 소리를 하는 거야! 전학생은 다 너처럼... 능글맞니? 어서 따라오기나 해! 늦으면 담임 선생님께 혼난다고!\"",
+        text: "\"에..? 아, 갑자기 무슨 소리를 하는 거야! 전학생은 다 너처럼... 능글맞니? 어서 따라오기나 해! 늦으면 담임선생님께 혼난다고!\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },
@@ -310,7 +310,7 @@ Object.assign(SCENARIO[1], {
         next: "classroom_2"
     },
     "classroom_2": {
-        name: "담임 선생님",
+        name: "담임선생님",
         text: "(교탁 앞에 서자 수십 개의 시선이 일제히 나에게 꽂힌다. 호기심 어린 눈빛, 경계하는 눈빛... 서연이는 내 옆에서 든든하게 미소 지으며 나를 지켜봐 주고 있다.)",
         background: "assets/images/background/room_school.png",
         characters: {
@@ -321,14 +321,14 @@ Object.assign(SCENARIO[1], {
         next: "classroom_2_2"
     },
     "classroom_2_2": {
-        name: "담임 선생님",
+        name: "담임선생님",
         text: "(교실 안의 공기가 무겁게 느껴진다. 담임 선생님이 교탁을 탁탁 치며 주의를 집중시킨다.)",
         character: "assets/images/characters/teacher.png",
         next: "teacher_free_talk"
     },
     "teacher_free_talk": {
         type: "free_talk",
-        name: "담임 선생님",
+        name: "담임선생님",
         text: "\"자, 다들 전학생한테 관심이 아주 많네. 긴장되겠지만 다들 좋은 아이들이니까 너무 걱정하지 마. 자기소개 하기 전에 나한테 궁금한 거라도 있니?\"",
         context: "장소: 2학년 3반 교실 안 교탁 앞. 상황: 담임 선생님이 전학생인 주인공을 학생들에게 소개하기 직전의 짧은 대기 시간. 수십 명의 학생들이 우리를 지켜보고 있음. 우리는 이미 교실 한가운데 서 있는 상태이며, 절대 복도가 아님. 교실 안에서 대화를 나누는 중임.",
         personality: "공과 사가 뚜렷한 전문적인 교사지만 사실 허당기가 있고 주인공의 예상치 못한 어른스러운 모습에 가슴 설레어함. 은근히 주인공에게 기대고 싶어 하는 '갭모에'가 있음.",
@@ -336,7 +336,7 @@ Object.assign(SCENARIO[1], {
         next: "classroom_2_3"
     },
     "classroom_2_3": {
-        name: "담임 선생님",
+        name: "담임선생님",
         text: "\"자, 다들 주목! 오늘부터 우리와 함께하게 된 {name}이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
@@ -348,7 +348,7 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "teacher_name_share": {
-        name: "담임 선생님",
+        name: "담임선생님",
         text: "\"오, {name}(이)라고 하는구나. 이름이 참 예쁘네. 자, {name}. 친구들에게 자기소개 한마디 부탁할게.\"",
         character: "assets/images/characters/teacher.png",
         choices: [
