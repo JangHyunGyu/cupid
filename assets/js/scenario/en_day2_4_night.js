@@ -72,8 +72,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_4": {
         name: "Me",
         text: "(A room left alone with the teacher... My heart beats so loud I can hear it in my ears. Her scent tickles the tip of my nose, and the night grows deeper.)",
-        background: "assets/images/background/nurse_house.png",
-        night: true,
+        background: "assets/images/background/nurse_house.png",        character: null,        night: true,
         fade: true,
         next: "day2_final"
     },
@@ -117,6 +116,8 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "Seoyeon",
         text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name?}. Don't forget to have lunch together tomorrow! Good night.'",
+        character: "assets/images/characters/seyoun_nomal.png",
+        silhouette: true,
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Seoyeon has sent a reply, happy with the protagonist's message.",
         night: true,
         stats: { Seoyeon: { affinity: 5 } },
@@ -148,6 +149,8 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "Yuna",
         text: "(A reply arrives after a short wait.) '...Yeah. I knew you would understand. I'll be watching you in your dreams too, {name?}.'",
+        character: "assets/images/characters/yuna_nomal.png",
+        silhouette: true,
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Yuna has sent a short but deeply lingering reply to the protagonist's message.",
         night: true,
         stats: { Yuna: { affinity: 5 } },
@@ -199,6 +202,8 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "Dain",
         text: "(A lively reply.) 'Of course! I'm going to win, so have your wallet ready! Haha, good night, {name?}!'",
+        character: "assets/images/characters/dain_nomal.png",
+        silhouette: true,
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Dain has sent an energetic reply to the protagonist's message.",
         night: true,
         stats: { Dain: { affinity: 5 } },
@@ -230,6 +235,8 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "Nurse",
         text: "(An alluring reply.) 'Oh, are you thinking about me already? Hehe, rest well today and see you tomorrow. Good night, {name?}.'",
+        character: "assets/images/characters/nurse.png",
+        silhouette: true,
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Nurse has sent a playful and alluring reply to the protagonist's message.",
         night: true,
         stats: { Nurse: { affinity: 5 } },
@@ -239,6 +246,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(What kind of truth will be waiting for me tomorrow...? My heavy eyelids close as I drift into sleep.)",
         background: "assets/images/background/room_my.png",
+        character: null,
         night: true,
         fade: true,
         next: "day2_final"
@@ -247,6 +255,7 @@ Object.assign(SCENARIO[2], {
         name: "System",
         text: "(The scenario developed so far is up to here. Please look forward to the next update!)",
         background: null,
+        character: null,
         fade: true,
         choices: [
             { text: "Restart from the beginning", next: "index-en.html" }
