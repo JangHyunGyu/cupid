@@ -164,7 +164,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_yuna_follow"
     },
     "day2_after_yuna_new": {
-        name: "유나",
+        name: "???",
         text: "\"너... 내가 누군지 궁금해서 온 거지? 사실 이 학교에는 아주 깊은 비밀이 있어.\"",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
