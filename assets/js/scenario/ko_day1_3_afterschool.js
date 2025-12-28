@@ -246,8 +246,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
         choices: [
-            { 
-                text: "이 학교의 비밀에 대해 알려줘.", 
+            {
+                text: "이 학교의 비밀에 대해 알려줘.",
                 next: "after_yuna_secret",
                 affinityChar: "Yuna",
                 affinityBranches: [
@@ -613,8 +613,8 @@ Object.assign(SCENARIO[1], {
         night: true,
         choices: [
             { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
-            { 
-                text: "번호 따는 김에.. 지금 바로 전화해도 돼?", 
+            {
+                text: "번호 따는 김에.. 지금 바로 전화해도 돼?",
                 next: "dain_contact_call_fail",
                 affinityChar: "Dain",
                 affinityBranches: [
@@ -630,7 +630,7 @@ Object.assign(SCENARIO[1], {
         text: "(다인이는 얼굴을 붉히며 당황한 듯 웃는다.) \"뭐, 뭐야! 갑자기... 내 목소리 듣고 싶다니... 너무 설레게 하는 거 아냐? 나 내일 연습 일찍 가야 하니까 너무 오래 하진 마!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shy.png",
-        stats: { Dain: { affinity: 15 } },
+        stats: { Dain: { affinity: 25 } },
         next: "after_home"
     },
     "dain_contact_call_fail": {
@@ -638,7 +638,7 @@ Object.assign(SCENARIO[1], {
         text: "(다인이는 어이없다는 듯 웃음을 터뜨린다.) \"야, 너 진짜 웃긴다. 번호 받자마자 전화하니, 너무 서두르는 거 아냐? 일단 메시지부터 주고받으면서 친해지자고!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
-        stats: { Dain: { affinity: -5 } },
+        stats: { Dain: { affinity: -10 } },
         next: "after_home"
     },
     "dain_contact_success": {
@@ -647,7 +647,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
-        stats: { Dain: { affinity: 15 } },
+        stats: { Dain: { affinity: 20 } },
         next: "after_home"
     },
     "dain_contact_fail": {
@@ -656,6 +656,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
         night: true,
+        stats: { Dain: { affinity: -15 } },
         next: "after_home"
     },
     "after_nurse": {

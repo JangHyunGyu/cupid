@@ -33,7 +33,11 @@ const FLAG_MEMORIES = [
     { flag: "isDating_Teacher", char: "담임선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 애교 섞인 말투를 사용하세요.", en: "You are in a secret relationship with the user. When alone, act like a 'woman' rather than a 'teacher' and be cute." },
     { flag: "isDating_Nurse", char: "보건선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 더욱 다정하고 묘한 분위기를 풍기며, 가끔 '자기야'라고 부르며 친밀함을 표현하세요.", en: "You are in a secret relationship with the user. When alone, act more like a 'woman' than a 'teacher', being affectionate and creating an intimate atmosphere, occasionally calling them 'Honey'." },
     { flag: "personality_active", char: "담임선생님", ko: "주인공은 자신을 활발한 성격이라고 소개했습니다.", en: "The user introduced themselves as having an active personality." },
-    { flag: "personality_quiet", char: "담임선생님", ko: "주인공은 자신을 조용한 성격이라고 소개했습니다.", en: "The user introduced themselves as having a quiet personality." }
+    { flag: "personality_quiet", char: "담임선생님", ko: "주인공은 자신을 조용한 성격이라고 소개했습니다.", en: "The user introduced themselves as having a quiet personality." },
+    { flag: "day2_ate_lunch_seoyeon", char: "서연", ko: "당신은 오늘 주인공이 서연이 당신을 위해 직접 만든 샌드위치를 함께 먹으며 즐거운 시간을 보냈습니다.", en: "You had a great time today eating sandwiches you specially made for the user." },
+    { flag: "visitedWarehouseAtLunch", char: "유나", ko: "주인공은 오늘 당신과 함께 도서관 지하실의 숨겨진 장소를 방문했습니다.", en: "The user visited the hidden place in the library basement with you today." },
+    { flag: "day2_dain_bet", char: "다인", ko: "당신은 오늘 주인공과 떡볶이 내기를 했습니다. 당신은 승부욕에 불타오르고 있습니다.", en: "You made a tteokbokki bet with the user today. You are burning with competitive spirit." },
+    { flag: "invited_nurse_home", char: "보건선생님", ko: "당신은 오늘 밤 주인공을 당신의 집으로 초대했습니다. 당신은 주인공을 기다리며 묘한 기대감에 부풀어 있습니다.", en: "You invited the user to your home tonight. You are filled with a strange anticipation while waiting for them." }
 ];
 
 // 캐릭터별 표정 이미지 매핑
@@ -162,29 +166,29 @@ const modalCancelBtn = document.getElementById('modal-cancel-btn');
 // 시나리오 데이터 가져오기 헬퍼 함수
 function getScene(id) {
     if (!id) return null;
-    
+
     // 현재 날짜의 시나리오에서 먼저 검색
     if (SCENARIO[gameState.currentDay] && SCENARIO[gameState.currentDay][id]) {
         return SCENARIO[gameState.currentDay][id];
     }
-    
+
     // 모든 날짜를 순회하며 검색 (날짜 변경 시점의 유연성을 위해)
     for (const day in SCENARIO) {
         if (SCENARIO[day] && SCENARIO[day][id]) {
             return SCENARIO[day][id];
         }
     }
-    
+
     // 공통 시나리오(0)에서 검색
     if (SCENARIO[0] && SCENARIO[0][id]) {
         return SCENARIO[0][id];
     }
-    
+
     // 하위 호환성을 위해 루트 레벨에서도 검색 (기존 구조 대응)
     if (SCENARIO[id]) {
         return SCENARIO[id];
     }
-    
+
     return null;
 }
 
@@ -239,13 +243,13 @@ async function renderScene(sceneId) {
     }
 
     currentSceneId = sceneId;
-    
+
     // 날짜 변경 처리
     if (scene.changeDay) {
         gameState.currentDay = scene.changeDay;
         console.log(`Day changed to: ${gameState.currentDay}`);
     }
-    
+
     // 대화창 및 선택지 초기화
     dialogueBox.style.display = 'block';
     dialogueBox.style.pointerEvents = 'auto';
@@ -253,7 +257,7 @@ async function renderScene(sceneId) {
     chatContainer.style.display = 'none';
     nameInputContainer.style.display = 'none';
     isFreeTalking = false;
-    
+
     // 페이드 아웃 효과 적용
     if (scene.fade || (scene.text && scene.text.includes("페이드 아웃")) || (scene.text && scene.text.includes("어두워집니다"))) {
         fadeLayer.classList.add('active');
@@ -386,7 +390,7 @@ async function renderScene(sceneId) {
         } else {
             messageEl.textContent = "";
         }
-        
+
         // 선택지가 없거나, 선택지가 하나뿐이고 그 텍스트가 "다음" 또는 "Next"인 경우 지시계 표시
         let showNextIndicator = !scene.choices;
         if (scene.choices) {
@@ -412,13 +416,13 @@ const SEND_ICON = `<svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l
 function getGameContext(charName, isEn) {
     const memories = FLAG_MEMORIES.filter(m => {
         // 캐릭터 이름 매칭 (한글/영어 모두 고려)
-        const charMatch = m.char === charName || 
-                         (charName === "서연" && m.char === "Seoyeon") ||
-                         (charName === "Seoyeon" && m.char === "서연") ||
-                         (charName === "유나" && m.char === "Yuna") ||
-                         (charName === "Yuna" && m.char === "유나") ||
-                         (charName === "다인" && m.char === "Dain") ||
-                         (charName === "Dain" && m.char === "다인");
+        const charMatch = m.char === charName ||
+            (charName === "서연" && m.char === "Seoyeon") ||
+            (charName === "Seoyeon" && m.char === "서연") ||
+            (charName === "유나" && m.char === "Yuna") ||
+            (charName === "Yuna" && m.char === "유나") ||
+            (charName === "다인" && m.char === "Dain") ||
+            (charName === "Dain" && m.char === "다인");
         return charMatch && gameState[m.flag];
     });
 
@@ -472,17 +476,17 @@ function startFreeTalk(scene) {
     isFreeTalking = true;
     freeTalkTurns = 0;
     currentMaxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
-    
+
     const isEn = document.documentElement.lang === 'en';
     const gameContext = getGameContext(scene.name, isEn);
     const socialContext = getSocialContext(scene.name, isEn);
-    
+
     // 캐릭터별 대화 기록 불러오기
     if (!gameState.chatMemories[scene.name]) {
         gameState.chatMemories[scene.name] = [];
     }
     freeTalkHistory = [...gameState.chatMemories[scene.name]];
-    
+
     // 현재 배경 이미지 파일명에서 장소 유추
     let locationName = isEn ? "School" : "학교";
     const bgUrl = bgLayer.style.backgroundImage;
@@ -503,7 +507,7 @@ function startFreeTalk(scene) {
     };
     const charKey = charNameMap[scene.name] || scene.name;
     const knowsName = gameState[`knowsName_${charKey}`];
-    
+
     // 캐릭터 스탯 가져오기 (한글 이름 대응)
     const charStats = gameState.stats[charKey] || { affinity: 0 };
 
@@ -850,18 +854,18 @@ function startFreeTalk(scene) {
     // 사귀는 사이일 경우 호칭 가이드라인 추가
     let datingGuideline = "";
     const isDatingCurrent = gameState[`isDating_${charKey}`] || gameState[`isDating_${scene.name}`];
-    
+
     if (isDatingCurrent) {
-        datingGuideline = isEn ? 
+        datingGuideline = isEn ?
             `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.` :
             `\n- 특별 지침: 당신은 현재 사용자와 사귀는 사이입니다. 아래의 호감도 등급과 상관없이 매우 친밀하고 애정 어린 호칭(자기야, 내 사랑 등)을 사용하세요.`;
-            
+
         // 양다리(문어발) 감지 로직
         const otherDatingChars = Object.keys(charNameMap).filter(name => {
             const key = charNameMap[name];
             return key !== charKey && (gameState[`isDating_${key}`] || gameState[`isDating_${name}`]);
         });
-        
+
         if (otherDatingChars.length > 0) {
             const jealousyPrompt = isEn ?
                 `\n- JEALOUSY: You noticed the user is also dating other people (${otherDatingChars.join(", ")}). If the user acts unfaithfully or mentions them, react with intense jealousy, suspicion, or sadness according to your personality.` :
@@ -872,17 +876,17 @@ function startFreeTalk(scene) {
 
     // 통신 매체 판단 (대면 vs 원격)
     const remoteKeywords = ["연락", "메시지", "전화", "톡", "문자", "Contact", "Message", "Call", "Text", "전송"];
-    const isRemote = remoteKeywords.some(k => 
-        (scene.context && scene.context.includes(k)) || 
+    const isRemote = remoteKeywords.some(k =>
+        (scene.context && scene.context.includes(k)) ||
         (scene.buttonText && scene.buttonText.includes(k)) ||
         (scene.text && scene.text.includes(k))
     );
 
-    const mediumInstructionEn = isRemote ? 
+    const mediumInstructionEn = isRemote ?
         "\n- MEDIUM: You are communicating via PHONE/MESSENGER. Do not mention physical actions like 'looking at the user' or 'touching'. Use text-style expressions if appropriate." :
         "\n- MEDIUM: You are talking FACE-TO-FACE. You can mention eye contact, facial expressions, and physical proximity.";
-    
-    const mediumInstructionKo = isRemote ? 
+
+    const mediumInstructionKo = isRemote ?
         "\n- 매체 지침: 현재 '전화' 또는 '메시지'로 연락 중입니다. '눈을 마주친다'거나 '손을 잡는다'는 등의 물리적 접촉 묘사는 피하세요. 대신 텍스트 메시지나 통화 상황에 맞는 표현을 사용하세요." :
         "\n- 매체 지침: 현재 '대면'하여 대화 중입니다. 눈맞춤, 표정 변화, 물리적 거리감 등을 자유롭게 묘사할 수 있습니다.";
 
@@ -963,9 +967,9 @@ ${charAddressingGuideline}${datingGuideline}
 
     // 시스템 프롬프트를 맨 앞에 배치
     freeTalkHistory = [{ role: "system", content: systemPrompt }, ...freeTalkHistory.filter(m => m.role !== "system")];
-    
+
     chatContainer.style.display = 'block';
-    
+
     // 버튼 텍스트 또는 아이콘 설정 (말하기, 전송, 전송하기 등은 아이콘으로 표시)
     const iconButtons = ["말하기", "전송", "전송하기", "Send"];
     if (scene.buttonText && !iconButtons.includes(scene.buttonText)) {
@@ -979,10 +983,10 @@ ${charAddressingGuideline}${datingGuideline}
         chatSendBtn.style.width = "45px";
         chatSendBtn.style.padding = "0";
     }
-    
+
     turnCountEl.textContent = currentMaxTurns;
     if (chatSkipBtn) chatSkipBtn.disabled = false;
-    
+
     if (scene.text) {
         typeText(scene.text, scene.name);
         freeTalkHistory.push({ role: "assistant", content: scene.text });
@@ -996,7 +1000,7 @@ function typeText(text, charName) {
     }
     const isEn = document.documentElement.lang === 'en';
     const isPlayer = charName === "나" || charName === "Me" || charName === "시스템" || charName === "System";
-    
+
     // {name}은 항상 순수 이름으로 (자기소개 등에서 자연스럽게)
     // 한국어이고 화자가 주인공이 아닐 때만 '군'을 붙임
     let rawName = gameState.playerName;
@@ -1004,7 +1008,7 @@ function typeText(text, charName) {
         rawName += " 군";
     }
     let processedText = text.replace(/{name}/g, rawName);
-    
+
     // {name?} 처리: 이름을 알면 이름, 모르면 '전학생'
     const charNameMap = {
         "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
@@ -1014,27 +1018,27 @@ function typeText(text, charName) {
     const nameKnown = charKey && gameState[`knowsName_${charKey}`];
     const defaultTitle = isEn ? "Transfer Student" : "전학생";
     let nameToUse = nameKnown ? gameState.playerName : defaultTitle;
-    
+
     if (!isEn && !isPlayer && nameToUse) {
         nameToUse += " 군";
     }
-    
+
     processedText = processedText.replace(/{name\?}/g, nameToUse);
-    
+
     // 호감도 리스트 치환 {affinity_list}
     if (processedText.includes("{affinity_list}")) {
-        const charNames = isEn ? 
+        const charNames = isEn ?
             { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Teacher", Nurse: "Nurse" } :
             { Seoyeon: "서연", Yuna: "유나", Dain: "다인", Teacher: "담임선생님", Nurse: "보건선생님" };
-        
+
         let listStr = isEn ? "\n\n[Affinity Status]\n" : "\n\n[호감도 현황]\n";
         for (const [key, name] of Object.entries(charNames)) {
             // 만난 적이 있는 캐릭터만 표시
             if (!gameState["met" + key]) continue;
-            
+
             const affinity = gameState.stats[key].affinity;
             let bar = "";
-            
+
             if (affinity >= 0) {
                 // 양수일 때: 빨간 하트(❤️)와 하얀 하트(🤍)
                 const filled = Math.min(10, Math.floor(affinity / 10));
@@ -1044,12 +1048,12 @@ function typeText(text, charName) {
                 const broken = Math.min(10, Math.floor(Math.abs(affinity) / 10));
                 bar = "💔".repeat(broken) + "🤍".repeat(10 - broken);
             }
-            
+
             listStr += `${name}: ${bar} (${affinity}%)\n`;
         }
         processedText = processedText.replace(/{affinity_list}/g, listStr);
     }
-    
+
     return new Promise((resolve) => {
         isTyping = true;
         if (chatSkipBtn) chatSkipBtn.disabled = true;
@@ -1086,11 +1090,11 @@ function getFallbackReply(charName, isEn) {
     const charKey = charNameMap[charName] || charName;
     const affinity = gameState.stats[charKey]?.affinity || 0;
     const isDating = gameState[`isDating_${charKey}`] || gameState[`isDating_${charName}`];
-    
+
     const scene = getScene(currentSceneId);
     const remoteKeywords = ["연락", "메시지", "전화", "톡", "문자", "Contact", "Message", "Call", "Text", "전송"];
-    const isRemote = remoteKeywords.some(k => 
-        (scene.context && scene.context.includes(k)) || 
+    const isRemote = remoteKeywords.some(k =>
+        (scene.context && scene.context.includes(k)) ||
         (scene.buttonText && scene.buttonText.includes(k)) ||
         (scene.text && scene.text.includes(k))
     );
@@ -1156,7 +1160,7 @@ function showCustomModal(message, isAlert = false) {
     return new Promise((resolve) => {
         modalMessage.textContent = message;
         customModal.style.display = 'flex';
-        
+
         if (isAlert) {
             modalCancelBtn.style.display = 'none';
         } else {
@@ -1186,21 +1190,21 @@ function showCustomModal(message, isAlert = false) {
 
 async function skipFreeTalk() {
     if (isTyping || !isFreeTalking) return;
-    
+
     const isEn = document.documentElement.lang === 'en';
     const confirmMsg = isEn ? "Do you want to stop the conversation and proceed to the next scene?" : "대화를 중단하고 다음 장면으로 넘어가시겠습니까?";
-    
+
     const confirmed = await showCustomModal(confirmMsg);
-    
+
     if (confirmed) {
         freeTalkTurns = currentMaxTurns;
         gameState[`messaged_${currentSceneId}`] = true;
-        
+
         chatContainer.style.display = 'none';
         isFreeTalking = false;
-        
-        const endMsg = isEn ? 
-            "\n\n(Conversation ended. Click the screen to continue.)" : 
+
+        const endMsg = isEn ?
+            "\n\n(Conversation ended. Click the screen to continue.)" :
             "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
         messageEl.textContent += endMsg;
     }
@@ -1209,42 +1213,42 @@ async function skipFreeTalk() {
 async function sendChatMessage() {
     const text = chatInput.value.trim();
     if (!text || freeTalkTurns >= currentMaxTurns || isTyping) return;
-    
+
     chatInput.value = "";
     freeTalkTurns++;
     turnCountEl.textContent = currentMaxTurns - freeTalkTurns;
-    
+
     // 사용자 메시지 표시
     nameTagEl.textContent = "나";
     messageEl.textContent = text;
     freeTalkHistory.push({ role: "user", content: text });
-    
+
     // 로딩 표시
     chatSendBtn.disabled = true;
     if (chatSkipBtn) chatSkipBtn.disabled = true;
     chatInput.disabled = true;
     const originalBtnContent = chatSendBtn.innerHTML;
     chatSendBtn.innerHTML = `<span class="loading-dots">...</span>`;
-    
+
     try {
         const response = await fetch(API_ENDPOINT, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ messages: freeTalkHistory })
         });
-        
+
         if (!response.ok) {
             throw new Error(`API HTTP error! status: ${response.status}`);
         }
 
         const data = await response.json();
         let reply = data?.choices?.[0]?.message?.content?.trim();
-        
+
         if (reply) {
             // 표정 변화 파싱 [EXPRESSION: name] - 전역 검색(/g)으로 모든 태그 제거
             const exprRegex = /\[EXPRESSION:\s*(\w+)\]/gi;
             let exprMatch;
-            
+
             // 마지막으로 매칭된 표정을 적용
             while ((exprMatch = exprRegex.exec(reply)) !== null) {
                 const exprName = exprMatch[1].toLowerCase();
@@ -1268,7 +1272,7 @@ async function sendChatMessage() {
             // 스탯 변화 파싱 [STATS: affinity+X] - 전역 검색(/g)으로 모든 태그 제거
             const statsRegex = /\[STATS:\s*affinity\s*([+-]?\d+)\]/gi;
             let statMatch;
-            
+
             while ((statMatch = statsRegex.exec(reply)) !== null) {
                 const affinityChange = parseInt(statMatch[1]);
                 const scene = getScene(currentSceneId);
@@ -1277,7 +1281,7 @@ async function sendChatMessage() {
                     "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
                 };
                 const charKey = charNameMap[scene.name] || scene.name;
-                
+
                 if (gameState.stats[charKey]) {
                     gameState.stats[charKey].affinity = Math.max(-100, Math.min(100, gameState.stats[charKey].affinity + affinityChange));
                     console.log(`AI Stat Change (${charKey}): Affinity ${affinityChange} (Total: Aff ${gameState.stats[charKey].affinity})`);
@@ -1295,7 +1299,7 @@ async function sendChatMessage() {
             nameTagEl.textContent = scene.name;
             await typeText(reply, scene.name); // 타이핑이 끝날 때까지 기다립니다.
             freeTalkHistory.push({ role: "assistant", content: reply });
-            
+
             // 대화 기록 저장 (시스템 프롬프트 제외하고 최근 10개 정도만 유지하여 컨텍스트 최적화)
             const chatOnly = freeTalkHistory.filter(m => m.role !== "system");
             gameState.chatMemories[scene.name] = chatOnly.slice(-10);
@@ -1310,23 +1314,23 @@ async function sendChatMessage() {
         // 대화 종료 체크를 AI 응답 처리 이후로 이동 (응답 실패 시에도 종료 가능하도록)
         if (freeTalkTurns >= currentMaxTurns) {
             gameState[`messaged_${currentSceneId}`] = true;
-            
+
             setTimeout(() => {
                 chatContainer.style.display = 'none';
                 isFreeTalking = false;
-                const endMsg = document.documentElement.lang === 'en' ? 
-                    "\n\n(Conversation ended. Click the screen to continue.)" : 
+                const endMsg = document.documentElement.lang === 'en' ?
+                    "\n\n(Conversation ended. Click the screen to continue.)" :
                     "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
                 messageEl.textContent += endMsg;
             }, 500);
         }
     } catch (error) {
         console.error("AI Chat Error:", error);
-        
+
         const scene = getScene(currentSceneId);
         const isEn = document.documentElement.lang === 'en';
         const fallbackMsg = getFallbackReply(scene.name, isEn);
-        
+
         nameTagEl.textContent = scene.name;
         await typeText(fallbackMsg, scene.name);
         freeTalkHistory.push({ role: "assistant", content: fallbackMsg });
@@ -1334,12 +1338,12 @@ async function sendChatMessage() {
         // 에러 발생 시 즉시 대화 종료 처리
         freeTalkTurns = currentMaxTurns;
         gameState[`messaged_${currentSceneId}`] = true;
-        
+
         setTimeout(() => {
             chatContainer.style.display = 'none';
             isFreeTalking = false;
-            const endMsg = isEn ? 
-                "\n\n(Conversation ended. Click the screen to continue.)" : 
+            const endMsg = isEn ?
+                "\n\n(Conversation ended. Click the screen to continue.)" :
                 "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             messageEl.textContent += endMsg;
         }, 500);
@@ -1363,10 +1367,10 @@ chatInput.onkeydown = (e) => {
 
 nameConfirmBtn.onclick = async () => {
     const name = playerNameInput.value.trim();
-    
+
     // 유효성 검사: 1~4자, 숫자/특수문자 제외 (한글, 영문만 허용)
     const nameRegex = /^[a-zA-Z가-힣]{1,4}$/;
-    
+
     if (!nameRegex.test(name)) {
         const isEn = document.documentElement.lang === 'en';
         const msg = isEn ? "Please enter a name between 1-4 characters (Korean or English only)." : "이름은 한글 또는 영문 1~4자로 입력해주세요. (숫자, 특수문자 제외)";
@@ -1374,11 +1378,11 @@ nameConfirmBtn.onclick = async () => {
         playerNameInput.focus();
         return;
     }
-    
+
     gameState.playerName = name;
     nameInputContainer.style.display = 'none';
     dialogueBox.style.pointerEvents = 'auto';
-    
+
     const scene = getScene(currentSceneId);
     const nextId = resolveNextScene(scene);
     if (nextId) {
@@ -1390,7 +1394,7 @@ nameConfirmBtn.onclick = async () => {
 playerNameInput.onblur = (e) => {
     // 확인 버튼을 누르는 중이라면 포커스를 강제하지 않음
     if (e.relatedTarget === nameConfirmBtn) return;
-    
+
     if (nameInputContainer.style.display === 'block') {
         setTimeout(() => playerNameInput.focus(), 10);
     }
@@ -1447,7 +1451,7 @@ function checkChoices() {
     const scene = getScene(currentSceneId);
     if (scene.choices) {
         choiceContainer.innerHTML = "";
-        
+
         // 선택지 복사 및 필터링
         let availableChoices = scene.choices.filter(choice => {
             if (choice.condition && !gameState[choice.condition]) return false;
@@ -1474,10 +1478,10 @@ dialogueBox.onclick = async () => {
         skipTyping = true;
         return;
     }
-    
+
     const scene = getScene(currentSceneId);
     if (isFreeTalking || scene.type === 'input') return;
-    
+
     if (scene.choices) {
         // 선택지가 하나뿐이고 그 텍스트가 "다음" 또는 "Next"인 경우 자동 진행
         const availableChoices = scene.choices.filter(choice => {

@@ -120,7 +120,10 @@ Object.assign(SCENARIO[2], {
         text: "(유나가 내 손을 잡고 낡은 창고 쪽으로 이끈다. 손끝에서 전해지는 차가운 감촉에 몸이 떨렸다.)",
         character: "assets/images/characters/yuna_smile.png",
         setFlag: "visitedWarehouseAtLunch",
-        next: "day2_yuna_secret_2"
+        branches: [
+            { next: "day2_yuna_secret_2", condition: "visitedWarehouseAtLunch" }, // 이미 방문한 적이 있다면 (로직상 세분화 가능)
+            { next: "day2_yuna_secret_2" }
+        ]
     },
     "day2_yuna_secret_2": {
         name: "유나",
@@ -187,17 +190,17 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_laugh.png",
         next: "day2_lunch_dain_new_name_share"
     },
-    "day2_lunch_dain_new_name_share": {
-        name: "나",
-        text: "\"내 이름은 {name}이야.\"",
-        setFlag: "knowsName_Dain",
-        next: "day2_dain_lunch_talk_new"
-    },
     "day2_dain_lunch_talk_new": {
         name: "다인",
         text: "\"오! {name}? 멋진 이름이네! 좋아, 만난 기념으로 오늘 점심은 내가 쏜다! 매점으로 가자!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day2_dain_store"
+    },
+    "day2_lunch_dain_new_name_share": {
+        name: "나",
+        text: "\"내 이름은 {name}이야.\"",
+        setFlag: "knowsName_Dain",
+        next: "day2_dain_lunch_talk_new"
     },
     "day2_dain_lunch_talk": {
         name: "다인",
@@ -363,9 +366,15 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_sleep_end": {
         name: "나",
-        text: "(눈을 뜨니 창밖은 어느새 이글거리는 주황빛 노을로 가득하다. 점심시간에 잠들었는데 벌써 방과 후라니... 얼마나 깊게 잠들었던 걸까.)",
+        text: "(...어느새 주변이 조용해졌다. 서서히 의식이 돌아오며 눈을 뜬다.)",
         background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
+        character: null,
+        next: "day2_lunch_nurse_wake_1"
+    },
+    "day2_lunch_nurse_wake_1": {
+        name: "나",
+        text: "(창밖은 어느새 이글거리는 주황빛 노을로 가득하다. 점심시간에 잠들었는데 벌써 방과 후라니... 얼마나 깊게 잠들었던 걸까.)",
+        background: "assets/images/background/nurse_room.jpg",
         sunset: true,
         next: "day2_lunch_nurse_wake_2"
     },
@@ -401,8 +410,8 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "네, 그럴게요.", next: "day2_afternoon_nurse_skip" },
-            { 
-                text: "번호 말고... 오늘 밤 선생님 집으로 가면 안 돼요?", 
+            {
+                text: "번호 말고... 오늘 밤 선생님 집으로 가면 안 돼요?",
                 next: "nurse_contact_home_fail",
                 affinityChar: "Nurse",
                 affinityBranches: [
@@ -419,8 +428,8 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "네, 알고 싶어요.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
-            { 
-                text: "번호 말고... 선생님 집으로 가면 안 돼요?", 
+            {
+                text: "번호 말고... 선생님 집으로 가면 안 돼요?",
                 next: "nurse_contact_home_fail",
                 affinityChar: "Nurse",
                 affinityBranches: [

@@ -92,14 +92,14 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "와, 정말 맛있어 보여! 서연이는 요리 천재구나.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 5 } } },
-            { 
-                text: "아... 해줘. (용기 내어 본다!)", 
-                next: "rooftop_talk_ah_fail", 
+            {
+                text: "아... 해줘. (용기 내어 본다!)",
+                next: "rooftop_talk_ah_fail",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 40, next: "rooftop_talk_ah" }
                 ],
-                stats: { Seoyeon: { affinity: 5 } } 
+                stats: { Seoyeon: { affinity: 5 } }
             },
             { text: "이렇게 정성 가득한 도시락은 처음이야. 고마워.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 10 } } },
             { text: "별로 맛없어 보이는데... 매점 갈걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -30 } } }
@@ -478,7 +478,10 @@ Object.assign(SCENARIO[1], {
         text: "\"어머, 처음 보는 얼굴이네? 우리 학교에 이렇게 귀여운 학생이 있었나?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
-        next: "nurse_intro"
+        branches: [
+            { next: "nurse_intro", excludeCondition: "knowsName_Nurse" },
+            { next: "nurse_name_share_pre", condition: "knowsName_Nurse" }
+        ]
     },
     "nurse_intro": {
         name: "보건선생님",
