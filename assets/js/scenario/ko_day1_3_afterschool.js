@@ -251,6 +251,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"아... 응, 알았어! 내가 너무 갑자기 물어봤지? 미안해. 그럼 내일 학교에서 봐!\"",
         character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: -10 } },
         next: "after_home"
     },
     "after_seoyeon_worry": {
@@ -346,7 +347,7 @@ Object.assign(SCENARIO[1], {
         text: "(그녀가 내 이름을 나지막이 읊조린다.) \"...{name}. 기억해둘게. 하지만 이런 학교에선 이름 같은 건... 아무 의미가 없을지도 몰라.\"",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
-        next: "after_yuna_know"
+        next: "yuna_after_choices"
     },
     "after_yuna_know": {
         name: "유나",

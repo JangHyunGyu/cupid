@@ -251,6 +251,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"Oh... okay! I guess I was a bit sudden. Sorry about that. See you at school tomorrow!\"",
         character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: -10 } },
         next: "after_home"
     },
     "after_seoyeon_worry": {
@@ -346,7 +347,7 @@ Object.assign(SCENARIO[1], {
         text: "(She whispers my name, testing the sound of it.) \"...{name}. I'll remember that. Though names... they might not mean much in a place like this.\"",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
-        next: "after_yuna_know"
+        next: "yuna_after_choices"
     },
     "after_yuna_know": {
         name: "Yuna",
