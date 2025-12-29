@@ -305,7 +305,7 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_intro_name_share": {
         name: "나",
-        text: "\"난 {name}이야. 오늘 전학 왔어.\"",
+        text: "\"난 {name}(이)야. 오늘 전학 왔어.\"",
         setFlag: "knowsName_Yuna",
         next: "yuna_intro_2"
     },
@@ -480,7 +480,7 @@ Object.assign(SCENARIO[1], {
     },
     "dain_name_share": {
         name: "나",
-        text: "\"나? 난 {name}이야. 오늘 전학 왔어.\"",
+        text: "\"나? 난 {name}(이)야. 오늘 전학 왔어.\"",
         setFlag: "knowsName_Dain",
         next: "dain_name_share_2"
     },

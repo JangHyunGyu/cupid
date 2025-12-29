@@ -541,7 +541,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_new_name_share": {
         name: "나",
-        text: "\"나 {name}이고 2학년 3반이야. 잘 부탁해.\"",
+        text: "\"나 {name}(이)고 2학년 3반이야. 잘 부탁해.\"",
         setFlag: "knowsName_Dain",
         next: "after_dain_2"
     },
@@ -796,7 +796,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_new_name_share": {
         name: "나",
-        text: "\"제 이름은 {name}이에요.\"",
+        text: "\"제 이름은 {name}(이)에요.\"",
         setFlag: "knowsName_Nurse",
         next: "nurse_after_day1_contact"
     },

@@ -133,7 +133,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_name_share": {
         name: "나",
-        text: "\"응, 맞아. {name}이야. 아까는 정신이 없어서 제대로 인사를 못 했네. 잘 부탁해, 서연아.\"",
+        text: "\"응, 맞아. {name}(이)야. 아까는 정신이 없어서 제대로 인사를 못 했네. 잘 부탁해, 서연아.\"",
         setFlag: "knowsName_Seoyeon",
         next: "hallway_name_share_2"
     },

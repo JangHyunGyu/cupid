@@ -232,7 +232,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_new_name_share": {
         name: "나",
-        text: "\"내 이름은 {name}이야.\"",
+        text: "\"내 이름은 {name}(이)야.\"",
         setFlag: "knowsName_Yuna",
         next: "day2_yuna_secret"
     },
@@ -319,7 +319,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_dain_new_name_share": {
         name: "나",
-        text: "\"내 이름은 {name}이야.\"",
+        text: "\"내 이름은 {name}(이)야.\"",
         setFlag: "knowsName_Dain",
         next: "day2_dain_lunch_talk_new"
     },
@@ -446,7 +446,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_new_name_share": {
         name: "나",
-        text: "\"제 이름은 {name}이에요.\"",
+        text: "\"제 이름은 {name}(이)에요.\"",
         setFlag: "knowsName_Nurse",
         next: "day2_lunch_nurse_3"
     },
