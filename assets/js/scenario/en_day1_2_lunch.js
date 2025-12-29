@@ -177,8 +177,8 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Seoyeon",
         text: "\"Hehe, was I too serious all of a sudden? Let's talk more comfortably. Is there anything you're curious about?\"",
-        context: "Lunch time, a situation where they are having a conversation in a relaxed and romantic atmosphere after eating lunch boxes alone on the school rooftop. After the conversation, Seoyeon will ask about the protagonist's ideal type or preferred style. At the end of the conversation, please naturally ask the question by mentioning that you're curious about the protagonist's tastes.",
-        personality: "A state where she has become a bit more bold and honest than usual. She wants to know deeply about the protagonist's tastes or thoughts.",
+        context: "Lunch time, a situation where they are having a conversation in a relaxed and romantic atmosphere after eating lunch boxes alone on the school rooftop. After the conversation, Seoyeon will mention that she feels comfortable and good when she's with the protagonist, and ask why he thinks that is. At the end of the conversation, please naturally ask the question by mentioning this special feeling of comfort.",
+        personality: "A state where she has become a bit more bold and honest than usual. She wants to know why she feels so comfortable with the protagonist.",
         character: "assets/images/characters/seyoun_shy.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
@@ -190,7 +190,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_choices_high": {
         name: "Me",
-        text: "(As I talked with Seoyeon, the atmosphere became strange. She is staring at me intently and smiling softly. She asked me what kind of style of person I like.)",
+        text: "(As I talked with Seoyeon, the atmosphere became strange. She is staring at me intently and smiling softly. She told me she feels comfortable and good when she's with me, and asked why I think that is.)",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
             { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
@@ -200,7 +200,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_choices_low": {
         name: "Me",
-        text: "(Seoyeon's expression is dark. It seems the conversation didn't go well. She sighed as if disappointed, then changed the subject and asked about the style of person I like.)",
+        text: "(Seoyeon's expression is dark. It seems the conversation didn't go well. She sighed as if a bit confused, then asked why she feels comfortable and good with me despite the awkwardness.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
             { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
@@ -210,7 +210,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_choices": {
         name: "Me",
-        text: "(I finished the conversation with Seoyeon. She is looking at me with sparkling eyes, as if waiting for my answer. She asked me what kind of style of person I like.)",
+        text: "(I finished the conversation with Seoyeon. She is looking at me with sparkling eyes, as if waiting for my answer. She told me she feels comfortable and good when she's with me, and asked why I think that is.)",
         choices: [
             { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },

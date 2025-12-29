@@ -177,8 +177,8 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "서연",
         text: "\"후훗, 갑자기 너무 진지했나? 우리 좀 더 편하게 이야기하자. 나한테 궁금한 거 없어?\"",
-        context: "점심시간, 학교 옥상에서 단둘이 도시락을 먹고 난 뒤 평화롭고 로맨틱한 분위기에서 대화를 나누는 상황. 대화가 끝나면 서연이가 주인공의 이상형이나 좋아하는 스타일에 대해 물어보는 상황으로 이어집니다. 대화 마무리 시점에 주인공의 취향이 궁금하다는 언급을 하며 자연스럽게 질문을 던져주세요.",
-        personality: "평소보다 조금 더 대담하고 솔직해진 상태. 주인공의 취향이나 생각에 대해 깊이 알고 싶어 함.",
+        context: "점심시간, 학교 옥상에서 단둘이 도시락을 먹고 난 뒤 평화롭고 로맨틱한 분위기에서 대화를 나누는 상황. 대화가 끝나면 서연이가 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어보는 상황으로 이어집니다. 대화 마무리 시점에 우리 사이의 특별한 느낌이나 편안함에 대해 언급하며 자연스럽게 질문을 던져주세요.",
+        personality: "평소보다 조금 더 대담하고 솔직해진 상태. 주인공이 우리 관계를 어떻게 생각하는지, 왜 편안함을 느끼는지 알고 싶어 함.",
         character: "assets/images/characters/seyoun_shy.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
@@ -190,7 +190,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_choices_high": {
         name: "나",
-        text: "(서연이와 대화를 나누다 보니 분위기가 묘해졌다. 그녀는 내 눈을 빤히 바라보며 살며시 미소 짓고 있다. 그녀가 나에게 어떤 스타일의 사람을 좋아하는지 물어왔다.)",
+        text: "(서연이와 대화를 나누다 보니 분위기가 묘해졌다. 그녀는 내 눈을 빤히 바라보며 살며시 미소 짓고 있다. 그녀가 나에게 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어왔다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
             { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
@@ -200,7 +200,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_choices_low": {
         name: "나",
-        text: "(서연이의 표정이 어둡다. 대화가 잘 풀리지 않은 모양이다. 그녀는 실망한 듯 한숨을 내쉬더니, 화제를 돌려 내가 좋아하는 스타일에 대해 물었다.)",
+        text: "(서연이의 표정이 어둡다. 대화가 잘 풀리지 않은 모양이다. 그녀는 조금 혼란스러운 듯 한숨을 내쉬더니, 너랑 있으면 편하고 좋은데 왜 그런 것 같은지 물어왔다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
             { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
@@ -210,7 +210,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_choices": {
         name: "나",
-        text: "(서연이와 즐겁게 대화를 마쳤다. 그녀는 내 대답을 기다리는 듯 눈을 반짝이며 나를 바라보고 있다. 그녀가 나에게 어떤 스타일의 사람을 좋아하는지 물어왔다.)",
+        text: "(서연이와 즐겁게 대화를 마쳤다. 그녀는 내 대답을 기다리는 듯 눈을 반짝이며 나를 바라보고 있다. 그녀가 나에게 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어왔다.)",
         choices: [
             { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
