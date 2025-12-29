@@ -693,7 +693,7 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "(She takes a bite of the spicy tteokbokki, a look of pure joy on her face.)",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shirt.png",
+        character: "assets/images/characters/dain_laugh.png",
         night: true,
         next: "after_dain_tteokbokki_2"
     },
@@ -701,7 +701,7 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "\"Man, nothing beats tteokbokki after a workout! Thanks for coming with me. It tastes way better when I'm not eating alone!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shirt.png",
+        character: "assets/images/characters/dain_nomal.png",
         night: true,
         next: "after_dain_tteokbokki_3"
     },
@@ -709,7 +709,7 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "\"We should... I mean, we should do this more often! Promise?\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shirt.png",
+        character: "assets/images/characters/dain_nomal.png",
         night: true,
         branches: [
             { next: "after_home", condition: "has_number_dain" },
@@ -720,7 +720,7 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "(She wipes her mouth and playfully waves her phone.) \"Hey, {name?}! If we're gonna be food buddies, I'm gonna need your number. Hand it over!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shirt.png",
+        character: "assets/images/characters/dain_nomal.png",
         night: true,
         choices: [
             { text: "Sure! I'm always down for a food tour.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },

@@ -693,7 +693,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(김이 모락모락 나는 떡볶이를 크게 베어 물며 다인이는 행복한 미소를 짓는다.)",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shirt.png",
+        character: "assets/images/characters/dain_laugh.png",
         night: true,
         next: "after_dain_tteokbokki_2"
     },
@@ -701,7 +701,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "\"와, 역시 운동 끝나고 먹는 떡볶이가 최고라니까! 오늘 같이 와줘서 정말 고마워. 덕분에 평소보다 백 배는 더 맛있는 것 같아!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shirt.png",
+        character: "assets/images/characters/dain_nomal.png",
         night: true,
         next: "after_dain_tteokbokki_3"
     },
@@ -709,7 +709,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "\"우리 내일도.. 아니, 앞으로도 자주 같이 먹으러 오자! 약속이다?\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shirt.png",
+        character: "assets/images/characters/dain_nomal.png",
         night: true,
         branches: [
             { next: "after_home", condition: "has_number_dain" },
@@ -720,7 +720,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(다인이는 떡볶이 국물을 닦으며 장난스럽게 스마트폰을 흔들어 보인다.) \"야 {name?}! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처는 있어야겠지? 번호 찍어줘!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shirt.png",
+        character: "assets/images/characters/dain_nomal.png",
         night: true,
         choices: [
             { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
