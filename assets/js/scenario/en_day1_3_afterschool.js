@@ -569,7 +569,7 @@ Object.assign(SCENARIO[1], {
     "dain_free_talk": {
         type: "free_talk",
         name: "Dain",
-        text: "\"Whoa, {name?}! You're even cooler up close! Got any questions for me? Sports, school, anything!\"",
+        text: "\"Whoa, {name}! You're even cooler up close! Got any questions for me? Sports, school, anything!\"",
         context: "Talking to Dain in the gym at sunset after her practice. After the conversation, Dain will suggest finishing her last practice set and going to grab something delicious to eat together. At the end of the conversation, please naturally lead into the next situation by mentioning that you need to finish practice or that you're hungry.",
         personality: "The easygoing ace of the volleyball club. Loves sports, friendly, and high-energy.",
         character: "assets/images/characters/dain_nomal.png",
@@ -583,7 +583,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_3_high": {
         name: "Dain",
-        text: "\"Whoa, {name?}! I lost track of time talking to you! Let me finish this last set real quick and we'll go grab something to eat!\"",
+        text: "\"Whoa, {name}! I lost track of time talking to you! Let me finish this last set real quick and we'll go grab something to eat!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -595,7 +595,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_3_low": {
         name: "Dain",
-        text: "\"Hey, {name?}. Haven't you been a bit harsh since earlier? I'm already tired from practice, and you're just draining my energy... Sigh, whatever. I'm finishing this last set, so wait if you want.\"",
+        text: "\"Hey, {name}. Haven't you been a bit harsh since earlier? I'm already tired from practice, and you're just draining my energy... Sigh, whatever. I'm finishing this last set, so wait if you want.\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_angry.png",
         sunset: true,
@@ -607,7 +607,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_3": {
         name: "Dain",
-        text: "\"Hey, {name?}! Wait a second! Let me finish this last set and we'll go grab something to eat!\"",
+        text: "\"Hey, {name}! Wait a second! Let me finish this last set and we'll go grab something to eat!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -718,7 +718,7 @@ Object.assign(SCENARIO[1], {
     },
     "dain_contact_exchange": {
         name: "Dain",
-        text: "(She wipes her mouth and playfully waves her phone.) \"Hey, {name?}! If we're gonna be food buddies, I'm gonna need your number. Hand it over!\"",
+        text: "(She wipes her mouth and playfully waves her phone.) \"Hey, {name}! If we're gonna be food buddies, I'm gonna need your number. Hand it over!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
         night: true,
@@ -808,7 +808,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_2": {
         name: "Nurse",
-        text: "\"{name?}! Stopping by to say goodbye? What a sweet student you are.\"",
+        text: "\"{name}! Stopping by to say goodbye? What a sweet student you are.\"",
         character: "assets/images/characters/nurse.png",
         next: "nurse_after_day1_contact"
     },
@@ -865,7 +865,7 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_after_day1_contact_stay_2": {
         name: "Nurse",
-        text: "\"...Well, it's about time you head home. {name?}, just in case, do you want to save my number? Contact me anytime if you're sick or have something on your mind.\"",
+        text: "\"...Well, it's about time you head home. {name}, just in case, do you want to save my number? Contact me anytime if you're sick or have something on your mind.\"",
         character: "assets/images/characters/nurse.png",
         choices: [
             { text: "Yes, please tell me!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
@@ -874,7 +874,7 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_after_day1_contact_2": {
         name: "Nurse",
-        text: "\"Are you leaving already? That's a shame... {name?}, just in case, do you want to save my number? Contact me anytime if you're sick or have something on your mind.\"",
+        text: "\"Are you leaving already? That's a shame... {name}, just in case, do you want to save my number? Contact me anytime if you're sick or have something on your mind.\"",
         character: "assets/images/characters/nurse.png",
         choices: [
             { text: "Yes, please tell me!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
@@ -883,7 +883,7 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_after_day1_contact_success": {
         name: "Nurse",
-        text: "\"Hehe, how diligent. Then I'll contact you tonight, okay? Goodbye, {name?}.\"",
+        text: "\"Hehe, how diligent. Then I'll contact you tonight, okay? Goodbye, {name}.\"",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 10 } },
         next: "after_home"

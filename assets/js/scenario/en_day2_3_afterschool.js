@@ -64,7 +64,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_seoyeon_2": {
         name: "Seoyeon",
-        text: "\"Phew... Finally finished. {name?}, thank you so much for staying late. I wouldn't have finished this today without you.\"",
+        text: "\"Phew... Finally finished. {name}, thank you so much for staying late. I wouldn't have finished this today without you.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         night: true,
         next: "day2_after_seoyeon_3"
@@ -138,7 +138,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_massage": {
         name: "Seoyeon",
-        text: "\"Ah... {name?}! If you do that so suddenly... (She flinches for a moment, but then relaxes and closes her eyes) ...That feels good. Thank you.\"",
+        text: "\"Ah... {name}! If you do that so suddenly... (She flinches for a moment, but then relaxes and closes her eyes) ...That feels good. Thank you.\"",
         character: "assets/images/characters/seyoun_shy.png",
         night: true,
         next: "day2_seoyeon_night_talk"
@@ -153,7 +153,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_night_talk": {
         name: "Seoyeon",
-        text: "\"{name?}... Thank you so much for today. When I'm with you, all the stress just melts away. Would you... like to have lunch together tomorrow too?\"",
+        text: "\"{name}... Thank you so much for today. When I'm with you, all the stress just melts away. Would you... like to have lunch together tomorrow too?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         night: true,
         setFlag: "day2_met_seoyeon_after",
@@ -268,7 +268,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_3_pre_new": {
         name: "Yuna",
-        text: "\"Look, {name?}. These patterns on the wall... they match the secrets of this school I've been tracking.\"",
+        text: "\"Look, {name}. These patterns on the wall... they match the secrets of this school I've been tracking.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         next: "day2_after_yuna_3"
@@ -333,7 +333,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_night_talk": {
         name: "Yuna",
-        text: "\"This isn't just graffiti. It's tied to the very foundation of this school. {name?}, you've stepped onto a path from which there is no turning back.\"",
+        text: "\"This isn't just graffiti. It's tied to the very foundation of this school. {name}, you've stepped onto a path from which there is no turning back.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         setFlag: "day2_met_yuna_after",
@@ -380,7 +380,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain_met": {
         name: "Dain",
-        text: "\"Oh! {name?}! You're just in time. Can you help me with my practice?\"",
+        text: "\"Oh! {name}! You're just in time. Can you help me with my practice?\"",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "day2_after_dain_practice"
@@ -449,7 +449,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_night_talk": {
         name: "Dain",
-        text: "\"Wow! Your reflexes are insane. I almost want to recruit you for the team! Great work today, {name?}! Get home safe!\"",
+        text: "\"Wow! Your reflexes are insane. I almost want to recruit you for the team! Great work today, {name}! Get home safe!\"",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
         setFlag: "day2_met_dain_after",
@@ -460,7 +460,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_contact_ask": {
         name: "Dain",
-        text: "\"Hey {name?}! If we're going to keep going on food tours together, we'll need each other's numbers, right? Put yours in!\"",
+        text: "\"Hey {name}! If we're going to keep going on food tours together, we'll need each other's numbers, right? Put yours in!\"",
         character: "assets/images/characters/dain_nomal.png",
         night: true,
         choices: [
@@ -496,7 +496,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met": {
         name: "Nurse",
-        text: "\"Oh, {name?}. Back again? What's the matter today? Or... did you just come to see me?\"",
+        text: "\"Oh, {name}. Back again? What's the matter today? Or... did you just come to see me?\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         affinityChar: "Nurse",
@@ -509,7 +509,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met_high": {
         name: "Nurse",
-        text: "(She looks at me with a soft smile.) \"Hehe, {name?}. You visit so often, I'm starting to look forward to seeing you. Come on in.\"",
+        text: "(She looks at me with a soft smile.) \"Hehe, {name}. You visit so often, I'm starting to look forward to seeing you. Come on in.\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         stats: { Nurse: { affinity: 3 } },
@@ -520,7 +520,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met_check": {
         name: "Nurse",
-        text: "\"Oh, {name?}. Coming to the nurse's office after school... Is something wrong?\"",
+        text: "\"Oh, {name}. Coming to the nurse's office after school... Is something wrong?\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         branches: [
@@ -530,7 +530,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met_low": {
         name: "Nurse",
-        text: "(She looks at me uncertainly.) \"...{name?}, right? Are you feeling unwell?\"",
+        text: "(She looks at me uncertainly.) \"...{name}, right? Are you feeling unwell?\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         branches: [
@@ -540,7 +540,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_invited": {
         name: "Nurse",
-        text: "\"Hehe, {name?}. You haven't forgotten our plan to meet at my house tonight, have you? If you ran here because you missed me already, I'm truly touched.\"",
+        text: "\"Hehe, {name}. You haven't forgotten our plan to meet at my house tonight, have you? If you ran here because you missed me already, I'm truly touched.\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         next: "day2_after_nurse_3"
@@ -597,7 +597,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_miss_normal": {
         name: "Nurse",
-        text: "\"Hehe, that's quite honest of you... but saying that to a teacher could be misunderstood, {name?}. Still, I suppose it is rather charming.\"",
+        text: "\"Hehe, that's quite honest of you... but saying that to a teacher could be misunderstood, {name}. Still, I suppose it is rather charming.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         next: "day2_nurse_night_talk"
@@ -645,7 +645,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_contact_already_have_talk": {
         name: "Nurse",
-        text: "\"{name?}, we already exchanged numbers, didn't we? You must contact me if you're bored at night. I'll be waiting.\"",
+        text: "\"{name}, we already exchanged numbers, didn't we? You must contact me if you're bored at night. I'll be waiting.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         choices: [
@@ -662,7 +662,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_contact_ask": {
         name: "Nurse",
-        text: "\"{name?}, why don't you save my number just in case? Contact me anytime you're sick or have something on your mind.\"",
+        text: "\"{name}, why don't you save my number just in case? Contact me anytime you're sick or have something on your mind.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         choices: [
@@ -672,7 +672,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_success_after": {
         name: "Nurse",
-        text: "(The teacher's eyes widen, then she whispers in my ear with a seductive smile.) \"Oh... {name?}, you're much bolder than I thought? Okay, do you want to come to my house tonight? I'll give you the address. Instead... it's a secret from your parents?\"",
+        text: "(The teacher's eyes widen, then she whispers in my ear with a seductive smile.) \"Oh... {name}, you're much bolder than I thought? Okay, do you want to come to my house tonight? I'll give you the address. Instead... it's a secret from your parents?\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         stats: { Nurse: { affinity: 30 } },
@@ -681,14 +681,14 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_fail_after": {
         name: "Nurse",
-        text: "(The teacher bursts into laughter.) \"Oh my, {name?}! You're really cute. But I think it's a bit too early for my house, isn't it? Just message me later.\"",
+        text: "(The teacher bursts into laughter.) \"Oh my, {name}! You're really cute. But I think it's a bit too early for my house, isn't it? Just message me later.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         next: "day2_end"
     },
     "day2_nurse_contact_success": {
         name: "Nurse",
-        text: "\"Hehe, good boy. I'll message you tonight, okay? Good night, {name?}.\"",
+        text: "\"Hehe, good boy. I'll message you tonight, okay? Good night, {name}.\"",
         character: "assets/images/characters/nurse.png",        night: true,        stats: { Nurse: { affinity: 10 } },
         next: "day2_end"
     },
@@ -709,7 +709,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_2": {
         name: "Homeroom Teacher",
-        text: "\"Oh, {name?}? What brings you to the faculty room at this hour? Haven't you gone home yet?\"",
+        text: "\"Oh, {name}? What brings you to the faculty room at this hour? Haven't you gone home yet?\"",
         character: "assets/images/characters/teacher.png",
         sunset: true,
         next: "day2_after_teacher_3"
@@ -735,7 +735,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_work_2": {
         name: "Homeroom Teacher",
-        text: "\"Thank you, {name?}. You've been a huge help. I would have had to stay up all night if I did it alone.\"",
+        text: "\"Thank you, {name}. You've been a huge help. I would have had to stay up all night if I did it alone.\"",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day2_after_teacher_branch"
@@ -759,7 +759,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_special_2": {
         name: "Homeroom Teacher",
-        text: "\"{name?}, I think you're a very special student. It's only been two days since you transferred... why do I feel so comfortable, like we've known each other for a long time?\"",
+        text: "\"{name}, I think you're a very special student. It's only been two days since you transferred... why do I feel so comfortable, like we've known each other for a long time?\"",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day2_after_teacher_special_3"
@@ -789,7 +789,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_worry": {
         name: "Homeroom Teacher",
-        text: "\"Thank you for worrying about me. I'm fine! I feel so reassured because {name?} is such a kind student.\"",
+        text: "\"Thank you for worrying about me. I'm fine! I feel so reassured because {name} is such a kind student.\"",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day2_after_teacher_normal"

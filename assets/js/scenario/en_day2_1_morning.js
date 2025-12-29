@@ -71,7 +71,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_nurse": {
         name: "Nurse",
-        text: "\"Oh, {name?}! Good morning. You're looking lively today!\"",
+        text: "\"Oh, {name}! Good morning. You're looking lively today!\"",
         character: "assets/images/characters/nurse.png",
         next: "day2_nurse_talk"
     },
@@ -105,7 +105,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_seoyeon": {
         name: "Seoyeon",
-        text: "\"Morning, {name?}! Did you sleep well? You're early again!\"",
+        text: "\"Morning, {name}! Did you sleep well? You're early again!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_seoyeon_talk"
     },
@@ -154,7 +154,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_dain": {
         name: "Dain",
-        text: "\"Hey, {name?}! Good morning! You're early today!\"",
+        text: "\"Hey, {name}! Good morning! You're early today!\"",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_dain_talk"
     },
@@ -203,7 +203,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_teacher": {
         name: "Teacher",
-        text: "\"Oh, isn't it {name?}? It's only your second day, but you seem to have adapted to school already. It's good to see you arriving early.\"",
+        text: "\"Oh, isn't it {name}? It's only your second day, but you seem to have adapted to school already. It's good to see you arriving early.\"",
         character: "assets/images/characters/teacher.png",
         next: "day2_teacher_free_talk"
     },
@@ -224,7 +224,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_teacher_contact_ask_high": {
         name: "Teacher",
-        text: "\"Oh, talking with {name?} makes me feel so good from the morning! Oh, by the way, I needed your number for the emergency contact list... If you don't mind, could you give it to me now?\"",
+        text: "\"Oh, talking with {name} makes me feel so good from the morning! Oh, by the way, I needed your number for the emergency contact list... If you don't mind, could you give it to me now?\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
@@ -233,7 +233,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_teacher_contact_ask_low": {
         name: "Teacher",
-        text: "\"...{name?}. That kind of attitude from the morning is really disappointing. I want to help you too, but it's difficult if you're not cooperative. ...I need your number for the emergency contact list, so please give it to me now.\"",
+        text: "\"...{name}. That kind of attitude from the morning is really disappointing. I want to help you too, but it's difficult if you're not cooperative. ...I need your number for the emergency contact list, so please give it to me now.\"",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },

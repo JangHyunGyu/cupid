@@ -36,6 +36,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(누군가에게 메시지를 보내볼까...?)",
         background: "assets/images/background/room_my.png",
+        character: null,
         night: true,
         choices: [
             { text: "서연이에게 메시지를 보낸다.", next: "day2_night_message_seyoun", condition: "has_number_seyoun", excludeCondition: "sent_msg_day2_seyoun" },

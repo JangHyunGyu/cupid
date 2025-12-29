@@ -29,7 +29,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_teacher_2": {
         name: "Teacher",
-        text: "\"{name?}! Did you have a good lunch? I was just about to eat mine.\"",
+        text: "\"{name}! Did you have a good lunch? I was just about to eat mine.\"",
         character: "assets/images/characters/teacher.png",
         next: "day2_lunch_teacher_3"
     },
@@ -75,7 +75,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_talk": {
         name: "Seoyeon",
-        text: "\"{name?}! I was just hoping you'd stop by! Come, sit with me. I actually made some extra sandwiches today.\"",
+        text: "\"{name}! I was just hoping you'd stop by! Come, sit with me. I actually made some extra sandwiches today.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
             { text: "Wow, these look delicious! You're a cooking genius, Seoyeon.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 8 } } },
@@ -345,7 +345,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_store_choices_high": {
         name: "Dain",
-        text: "\"Whoa, {name?}! Standing in line isn't boring at all when I'm talking to you! Okay, it's our turn. What do you want? It's on me!\"",
+        text: "\"Whoa, {name}! Standing in line isn't boring at all when I'm talking to you! Okay, it's our turn. What do you want? It's on me!\"",
         character: "assets/images/characters/dain_laugh.png",
         choices: [
             { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
@@ -355,7 +355,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_store_choices_low": {
         name: "Dain",
-        text: "\"...{name?}. You've been a bit prickly since earlier? It's already hard enough standing in line, and you're just ruining the mood... Sigh, whatever. Just pick what you want to eat.\"",
+        text: "\"...{name}. You've been a bit prickly since earlier? It's already hard enough standing in line, and you're just ruining the mood... Sigh, whatever. Just pick what you want to eat.\"",
         character: "assets/images/characters/dain_angry.png",
         choices: [
             { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
@@ -430,7 +430,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_met_high": {
         name: "Nurse",
-        text: "(She looks at me with a subtle smile.) \"Hehe, {name?}. You're back again? You know... you're the only student who visits me this often.\"",
+        text: "(She looks at me with a subtle smile.) \"Hehe, {name}. You're back again? You know... you're the only student who visits me this often.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 5 } },
@@ -438,14 +438,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_met_normal": {
         name: "Nurse",
-        text: "\"Oh, {name?}. Coming to the nurse's office during lunch... Is something wrong?\"",
+        text: "\"Oh, {name}. Coming to the nurse's office during lunch... Is something wrong?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_met_low": {
         name: "Nurse",
-        text: "(She looks at me and tilts her head, as if trying to remember.) \"Ah... {name?}, right? What brings you here?\"",
+        text: "(She looks at me and tilts her head, as if trying to remember.) \"Ah... {name}, right? What brings you here?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_3"
@@ -490,7 +490,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_trap_2": {
         name: "Nurse",
-        text: "\"Oh... {name?}, I think I've been too easy on you. That kind of disrespect isn't a joke to an adult. Please leave. I'm not in the mood for this.\"",
+        text: "\"Oh... {name}, I think I've been too easy on you. That kind of disrespect isn't a joke to an adult. Please leave. I'm not in the mood for this.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_angry.png",
         next: "day2_afternoon_class"
@@ -507,7 +507,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_head_tease": {
         name: "Nurse",
-        text: "\"Oh my... {name?}, you're really something, aren't you? Fine, say 'Ah'. I should give a reward to a good student, right?\"",
+        text: "\"Oh my... {name}, you're really something, aren't you? Fine, say 'Ah'. I should give a reward to a good student, right?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_sleep"
@@ -585,7 +585,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_already_have_high": {
         name: "Nurse",
-        text: "(The teacher leans her body slightly and whispers in my ear.) \"{name?}, we already exchanged numbers, didn't we? Actually... I think I'll really want to hear your voice tonight. You must contact me, okay?\"",
+        text: "(The teacher leans her body slightly and whispers in my ear.) \"{name}, we already exchanged numbers, didn't we? Actually... I think I'll really want to hear your voice tonight. You must contact me, okay?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -603,7 +603,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_already_have_low": {
         name: "Nurse",
-        text: "(The teacher says with a cold smile.) \"{name?}, we already exchanged numbers, didn't we? But with that kind of rude attitude, it might be better not to contact me. Now, please leave.\"",
+        text: "(The teacher says with a cold smile.) \"{name}, we already exchanged numbers, didn't we? But with that kind of rude attitude, it might be better not to contact me. Now, please leave.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -621,7 +621,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_ask_high": {
         name: "Nurse",
-        text: "(The teacher gently holds my hand and whispers.) \"{name?}, I want to talk to you more... if you can't sleep at night, do you want to contact me? I'll give you my number.\"",
+        text: "(The teacher gently holds my hand and whispers.) \"{name}, I want to talk to you more... if you can't sleep at night, do you want to contact me? I'll give you my number.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -639,7 +639,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_ask_low": {
         name: "Nurse",
-        text: "(The teacher sighs and says.) \"{name?}. You're really a handful, aren't you? I'll give you my number for emergencies, but don't even think about playing around.\"",
+        text: "(The teacher sighs and says.) \"{name}. You're really a handful, aren't you? I'll give you my number for emergencies, but don't even think about playing around.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -665,7 +665,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_already_have": {
         name: "Nurse",
-        text: "(The teacher leans her body slightly and whispers.) \"{name?}, we already exchanged numbers, didn't we? You must contact me if you're bored at night. I'll be waiting.\"",
+        text: "(The teacher leans her body slightly and whispers.) \"{name}, we already exchanged numbers, didn't we? You must contact me if you're bored at night. I'll be waiting.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -683,7 +683,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_ask": {
         name: "Nurse",
-        text: "(The teacher leans her body slightly and whispers.) \"{name?}, if you can't sleep at night, do you want to contact me? I'll give you my number.\"",
+        text: "(The teacher leans her body slightly and whispers.) \"{name}, if you can't sleep at night, do you want to contact me? I'll give you my number.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -709,7 +709,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_success": {
         name: "Nurse",
-        text: "(The teacher's eyes widen, then she whispers in my ear with a seductive smile.) \"Oh... {name?}, you're much bolder than I thought? Okay, do you want to come to my house tonight? I'll give you the address. Instead... it's a secret from your parents?\"",
+        text: "(The teacher's eyes widen, then she whispers in my ear with a seductive smile.) \"Oh... {name}, you're much bolder than I thought? Okay, do you want to come to my house tonight? I'll give you the address. Instead... it's a secret from your parents?\"",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 15 } },
         setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
@@ -717,7 +717,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_fail": {
         name: "Nurse",
-        text: "(The teacher bursts into laughter.) \"Oh my, {name?}! You're really cute. But I think it's a bit early for my house? Let's exchange numbers first.\"",
+        text: "(The teacher bursts into laughter.) \"Oh my, {name}! You're really cute. But I think it's a bit early for my house? Let's exchange numbers first.\"",
         character: "assets/images/characters/nurse.png",
         setFlags: ["has_number_nurse", "has_any_contact"],
         next: "day2_afternoon_nurse_skip"
