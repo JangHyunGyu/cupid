@@ -134,24 +134,24 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun_reply_high": {
-        name: "Seoyeon",
-        text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name}. Actually... I was waiting for your message. Don't forget to have lunch together tomorrow! Good night, {name}.'",
+        name: "Me",
+        text: "(Seoyeon's warm reply makes me smile. Knowing she was waiting for my message makes my heart flutter. I'm already looking forward to having lunch with her tomorrow.)",
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun_reply_normal": {
-        name: "Seoyeon",
-        text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name}. Don't forget to have lunch together tomorrow! Good night.'",
+        name: "Me",
+        text: "(I finished the conversation with Seoyeon. I should make sure not to forget our lunch promise tomorrow.)",
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun_reply_low": {
-        name: "Seoyeon",
-        text: "(A reply arrives after a while.) '...Yeah. I'm a bit tired today, so I'll sleep now. See you tomorrow.'",
+        name: "Me",
+        text: "(Seoyeon's reply seems a bit distant. I hope I didn't say anything to upset her.)",
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
@@ -199,24 +199,24 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna_reply_high": {
-        name: "Yuna",
-        text: "(A reply arrives immediately.) '...I was waiting. I'm glad you contacted me first. I'll be watching you in your dreams too, {name}. Good night.'",
+        name: "Me",
+        text: "(Yuna's mysterious yet intense message lingers in my mind. The thought of her watching over me even in my dreams is both strange and strangely comforting.)",
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna_reply_normal": {
-        name: "Yuna",
-        text: "(A reply arrives after a short wait.) '...Yeah. I knew you would understand. I'll be watching you in your dreams too, {name}.'",
+        name: "Me",
+        text: "(I finished the conversation with Yuna. Her words always seem to have a deeper meaning.)",
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna_reply_low": {
-        name: "Yuna",
-        text: "(A reply arrives after a long time.) '...Why are you contacting me? I'm busy, so don't bother me. Good night.'",
+        name: "Me",
+        text: "(Yuna's reply is cold and dismissive. It seems I've bothered her at a bad time.)",
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,

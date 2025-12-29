@@ -136,24 +136,24 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun_reply_high": {
-        name: "서연",
-        text: "(징~ 즉각적인 답장.) '나도 정말 즐거웠어! {name} 덕분에 든든해. 사실... 네 메시지 기다리고 있었어. 내일 점심 같이 먹는 거 잊지 마! 잘 자, {name}.'",
+        name: "나",
+        text: "(서연이와의 대화는 언제나 즐겁다. 그녀의 따뜻한 마음이 전해지는 것 같아 기분이 좋다. 내일 점심이 벌써 기다려진다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun_reply_normal": {
-        name: "서연",
-        text: "(징~ 즉각적인 답장.) '나도 정말 즐거웠어! {name} 덕분에 든든해. 내일 점심 같이 먹는 거 잊지 마! 잘 자요.'",
+        name: "나",
+        text: "(서연이와 무난하게 대화를 마쳤다. 내일 점심 약속을 잊지 말아야겠다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun_reply_low": {
-        name: "서연",
-        text: "(잠시 후 답장이 온다.) '...응. 오늘 좀 피곤해서, 일단 잘게. 내일 봐.'",
+        name: "나",
+        text: "(서연이의 반응이 조금 차갑다. 내가 무언가 실수한 걸까? 마음이 무겁다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
@@ -201,24 +201,24 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna_reply_high": {
-        name: "유나",
-        text: "(바로 답장이 온다.) '...기다리고 있었어. 네가 먼저 연락해줘서 기뻐. 꿈속에서도 지켜보고 있을게, {name}. 잘 자.'",
+        name: "나",
+        text: "(유나의 신비로운 분위기에 점점 빠져드는 것 같다. 그녀가 말하는 운명이 정말 존재하는 걸까? 꿈속에서도 그녀를 만날 것만 같다.)",
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna_reply_normal": {
-        name: "유나",
-        text: "(잠시 후 도착한 답장.) '...응. 네가 이해해줄 줄 알았어. 꿈속에서도 지켜보고 있을게, {name}.'",
+        name: "나",
+        text: "(유나와의 대화는 여전히 난해하지만, 조금은 가까워진 기분이다. 그녀가 말한 비밀들이 머릿속을 맴돈다.)",
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna_reply_low": {
-        name: "유나",
-        text: "(한참 후에 답장이 온다.) '...왜 연락한 거야? 바쁘니까 귀찮게 하지 마. 잘 자.'",
+        name: "나",
+        text: "(유나의 태도가 너무 차갑다. 그녀의 세계에 발을 들이는 건 역시 쉽지 않은 일인 것 같다.)",
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,
@@ -288,24 +288,24 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_dain_reply_high": {
-        name: "다인",
-        text: "(활기찬 답장.) '당연하지! 내가 이길 거니까 지갑 준비해둬! 하하, 사실 나도 네 생각하고 있었어. 잘 자, {name}! 내일 보자!'",
+        name: "나",
+        text: "(다인이의 활기찬 에너지 덕분에 나까지 기운이 난다. 그녀가 나를 생각하고 있었다니, 왠지 가슴이 설렌다. 내일 떡볶이 내기는 꼭 이겨야지.)",
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_dain_reply_normal": {
-        name: "다인",
-        text: "(활기찬 답장.) '당연하지! 내가 이길 거니까 지갑 준비해둬! 하하, 잘 자, {name}!'",
+        name: "나",
+        text: "(다인이와 즐겁게 대화를 마쳤다. 내일 떡볶이 내기에서 지지 않도록 마음의 준비를 해야겠다.)",
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_dain_reply_low": {
-        name: "다인",
-        text: "(짧은 답장.) '...응. 피곤해서 일단 잘게. 내일 봐.'",
+        name: "나",
+        text: "(다인이의 반응이 평소보다 무미건조하다. 그녀의 기분을 상하게 한 건 아닐지 걱정된다.)",
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
@@ -353,24 +353,24 @@ Object.assign(SCENARIO[2], {
         next: "day2_final_scene"
     },
     "day2_night_message_nurse_reply_high": {
-        name: "보건선생님",
-        text: "(매혹적인 답장.) '어머, 벌써 내 생각 하는 거니? 사실 나도 네 생각하고 있었어. 후훗, 오늘 푹 자고 내일 또 얼굴 보자. 잘 자요, {name}.'",
+        name: "나",
+        text: "(선생님의 매혹적인 말투가 귓가에 맴도는 것 같다. 나를 특별하게 생각해주시는 것 같아 가슴이 두근거린다. 내일은 보건실에 꼭 들러야겠다.)",
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_nurse_reply_normal": {
-        name: "보건선생님",
-        text: "(매혹적인 답장.) '어머, 벌써 내 생각 하는 거니? 후훗, 오늘 푹 자고 내일 또 얼굴 보자. 잘 자요, {name}.'",
+        name: "나",
+        text: "(선생님과 무사히 연락을 마쳤다. 내일 학교에서 뵈면 반갑게 인사드려야겠다.)",
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_nurse_reply_low": {
-        name: "보건선생님",
-        text: "(차가운 답장.) '...늦었네. 이 시간에 메시지 보내지 마. 잘 자.'",
+        name: "나",
+        text: "(선생님의 답장이 조금 차갑다. 너무 늦은 시간에 연락해서 실례가 된 건 아닐까?)",
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
@@ -402,24 +402,24 @@ Object.assign(SCENARIO[2], {
         next: "day2_final_scene"
     },
     "day2_night_message_teacher_reply_high": {
-        name: "담임선생님",
-        text: "(바로 답장이 온다.) '어머, {name}. 나도 오늘 생각하고 있었어. 메시지 고마워. 푹 자고 내일 보자. 잘 자요.'",
+        name: "나",
+        text: "(선생님의 다정한 답장에 마음이 놓인다. 나를 생각해주고 계셨다니, 왠지 모르게 든든한 기분이 든다. 내일은 지각하지 말고 일찍 가야지.)",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_teacher_reply_normal": {
-        name: "담임선생님",
-        text: "(조금 늦게 도착한 답장.) '어머, {name}. 이 시간에 메시지라니 조금 놀랐네. 그래도 걱정해줘서 고마워. 너도 푹 자고 내일 지각하지 마렴.'",
+        name: "나",
+        text: "(선생님과 무사히 연락을 마쳤다. 내일은 지각하지 않도록 주의해야겠다.)",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher_reply_low": {
-        name: "담임선생님",
-        text: "(짧은 답장.) '...늦었어. 얼른 자렴. 내일 봐.'",
+        name: "나",
+        text: "(선생님의 답장이 짧고 단호하다. 너무 늦은 시간에 연락해서 꾸중을 들은 기분이다.)",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
