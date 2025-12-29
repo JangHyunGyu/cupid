@@ -20,7 +20,9 @@ Object.assign(SCENARIO[1], {
             { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon" },
             { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone" },
             { text: "체육관 쪽에서 들려오는 배구공 소리를 따라가 본다.", next: "lunch_dain" },
-            { text: "몸이 좀 안 좋은 것 같아 보건실로 간다.", next: "lunch_nurse" }
+            { text: "몸이 좀 안 좋은 것 같아 보건실로 간다.", next: "lunch_nurse" },
+            { text: "매점에 가서 빵을 사 먹는다.", next: "lunch_store" },
+            { text: "피곤하니까 교실에서 잠을 잔다.", next: "lunch_sleep" }
         ]
     },
     "lunch_seoyeon": {

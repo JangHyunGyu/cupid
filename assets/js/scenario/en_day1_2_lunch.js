@@ -20,7 +20,9 @@ Object.assign(SCENARIO[1], {
             { text: "Approach Seoyeon and suggest eating lunch together.", next: "lunch_seoyeon" },
             { text: "Look around the school alone and find a quiet place to eat.", next: "lunch_alone" },
             { text: "Follow the sound of a volleyball from the gym.", next: "lunch_dain" },
-            { text: "I don't feel well, so I go to the nurse's office.", next: "lunch_nurse" }
+            { text: "I don't feel well, so I go to the nurse's office.", next: "lunch_nurse" },
+            { text: "Go to the school store to buy some bread.", next: "lunch_store" },
+            { text: "Take a nap in the classroom since I'm tired.", next: "lunch_sleep" }
         ]
     },
     "lunch_seoyeon": {
