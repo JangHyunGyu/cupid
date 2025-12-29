@@ -376,9 +376,6 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_laugh.png",
         night: true,
         setFlag: "day2_met_dain_after",
-        next: "day2_dain_contact_check"
-    },
-    "day2_dain_contact_check": {
         branches: [
             { next: "day2_end", condition: "has_number_dain" },
             { next: "day2_dain_contact_ask" }

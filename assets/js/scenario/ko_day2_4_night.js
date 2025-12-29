@@ -128,21 +128,33 @@ Object.assign(SCENARIO[2], {
         stats: { Seoyeon: { affinity: 3 } },
         affinityChar: "Seoyeon",
         affinityBranches: [
-            { minAffinity: 30, next: "day2_night_message_seyoun_reply_high" },
-            { minAffinity: 0, next: "day2_final_scene" },
+            { minAffinity: 25, next: "day2_night_message_seyoun_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_seyoun_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_seyoun_reply_low" }
         ],
         next: "day2_final_scene"
     },
     "day2_night_message_seyoun_reply_high": {
         name: "서연",
-        text: "(징~ 메시지가 하나 더 왔다.) '사실... 아까 말 못 했는데, {name?}이랑 있으면 정말 행복해. 내일이 빨리 왔으면 좋겠다. 진짜 잘 자!'",
+        text: "(징~ 즉각적인 답장.) '나도 정말 즐거웠어! {name?} 덕분에 든든해. 사실... 네 메시지 기다리고 있었어. 내일 점심 같이 먹는 거 잊지 마! 잘 자, {name?}.'",
+        character: "assets/images/characters/seyoun_nomal.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_seyoun_reply_normal": {
+        name: "서연",
+        text: "(징~ 즉각적인 답장.) '나도 정말 즐거웠어! {name?} 덕분에 든든해. 내일 점심 같이 먹는 거 잊지 마! 잘 자요.'",
+        character: "assets/images/characters/seyoun_nomal.png",
+        silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_seyoun_reply_low": {
         name: "서연",
-        text: "(징~ 짧은 답장.) '응, 그래. 내일 봐.'",
+        text: "(잠시 후 답장이 온다.) '...응. 오늘 좀 피곤해서, 일단 잘게. 내일 봐.'",
+        character: "assets/images/characters/seyoun_nomal.png",
+        silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
@@ -182,20 +194,32 @@ Object.assign(SCENARIO[2], {
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_night_message_yuna_reply_high" },
-            { minAffinity: 0, next: "day2_final_scene" },
+            { minAffinity: 0, next: "day2_night_message_yuna_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_yuna_reply_low" }
         ],
         next: "day2_final_scene"
     },
     "day2_night_message_yuna_reply_high": {
         name: "유나",
-        text: "(징~ 메시지가 하나 더 왔다.) '사실... 너랑 더 얘기하고 싶어. 하지만 내일을 위해 참을게. 잘 자, 나의 {name?}.'",
+        text: "(바로 답장이 온다.) '...기다리고 있었어. 네가 먼저 연락해줘서 기뻐. 꿈속에서도 지켜보고 있을게, {name?}. 잘 자.'",
+        character: "assets/images/characters/yuna_nomal.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_yuna_reply_normal": {
+        name: "유나",
+        text: "(잠시 후 도착한 답장.) '...응. 네가 이해해줄 줄 알았어. 꿈속에서도 지켜보고 있을게, {name?}.'",
+        character: "assets/images/characters/yuna_nomal.png",
+        silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_yuna_reply_low": {
         name: "유나",
-        text: "(잠시 후 도착한 답장.) '...알았어. 내일 봐.'",
+        text: "(한참 후에 답장이 온다.) '...왜 연락한 거야? 바쁘니까 귀찮게 하지 마. 잘 자.'",
+        character: "assets/images/characters/yuna_nomal.png",
+        silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
@@ -256,21 +280,33 @@ Object.assign(SCENARIO[2], {
         stats: { Dain: { affinity: 3 } },
         affinityChar: "Dain",
         affinityBranches: [
-            { minAffinity: 30, next: "day2_night_message_dain_reply_high" },
-            { minAffinity: 0, next: "day2_final_scene" },
+            { minAffinity: 25, next: "day2_night_message_dain_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_dain_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_dain_reply_low" }
         ],
         next: "day2_final_scene"
     },
     "day2_night_message_dain_reply_high": {
         name: "다인",
-        text: "(징~ 메시지가 하나 더 왔다.) '사실... 오늘 너랑 같이 있어서 정말 든든했어. 내일도 같이 연습하자! 잘 자!'",
+        text: "(활기찬 답장.) '당연하지! 내가 이길 거니까 지갑 준비해둬! 하하, 사실 나도 네 생각하고 있었어. 잘 자, {name?}! 내일 보자!'",
+        character: "assets/images/characters/dain_nomal.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_dain_reply_normal": {
+        name: "다인",
+        text: "(활기찬 답장.) '당연하지! 내가 이길 거니까 지갑 준비해둬! 하하, 잘 자, {name?}!'",
+        character: "assets/images/characters/dain_nomal.png",
+        silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_dain_reply_low": {
         name: "다인",
-        text: "(활기찬 답장.) '응, 그래. 내일 봐.'",
+        text: "(짧은 답장.) '...응. 피곤해서 일단 잘게. 내일 봐.'",
+        character: "assets/images/characters/dain_nomal.png",
+        silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
@@ -309,21 +345,33 @@ Object.assign(SCENARIO[2], {
         stats: { Nurse: { affinity: 3 } },
         affinityChar: "Nurse",
         affinityBranches: [
-            { minAffinity: 35, next: "day2_night_message_nurse_reply_high" },
-            { minAffinity: 0, next: "day2_final_scene" },
+            { minAffinity: 40, next: "day2_night_message_nurse_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_nurse_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_nurse_reply_low" }
         ],
         next: "day2_final_scene"
     },
     "day2_night_message_nurse_reply_high": {
         name: "보건선생님",
-        text: "(징~ 메시지가 하나 더 왔다.) '사실... 오늘 너랑 더 얘기하고 싶어서 잠이 안 올 것 같네. 책임질 거니? 후훗, 농담이야. 진짜 잘 자.'",
+        text: "(매혹적인 답장.) '어머, 벌써 내 생각 하는 거니? 사실 나도 네 생각하고 있었어. 후훗, 오늘 푹 자고 내일 또 얼굴 보자. 잘 자요, {name?}.'",
+        character: "assets/images/characters/nurse.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_nurse_reply_normal": {
+        name: "보건선생님",
+        text: "(매혹적인 답장.) '어머, 벌써 내 생각 하는 거니? 후훗, 오늘 푹 자고 내일 또 얼굴 보자. 잘 자요, {name?}.'",
+        character: "assets/images/characters/nurse.png",
+        silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_nurse_reply_low": {
         name: "보건선생님",
-        text: "(매혹적인 답장.) '응, 그래. 내일 봐.'",
+        text: "(차가운 답장.) '...늦었네. 이 시간에 메시지 보내지 마. 잘 자.'",
+        character: "assets/images/characters/nurse.png",
+        silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
@@ -347,20 +395,32 @@ Object.assign(SCENARIO[2], {
         affinityChar: "Teacher",
         affinityBranches: [
             { minAffinity: 25, next: "day2_night_message_teacher_reply_high" },
-            { minAffinity: 0, next: "day2_final_scene" },
+            { minAffinity: 0, next: "day2_night_message_teacher_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_teacher_reply_low" }
         ],
         next: "day2_final_scene"
     },
     "day2_night_message_teacher_reply_high": {
         name: "담임선생님",
-        text: "(징~ 메시지가 하나 더 왔다.) '사실... 아까 학교에서 네가 도와준 거 정말 고마웠어. {name?} 학생은 참 든든한 사람인 것 같아. 내일 보자!'",
+        text: "(바로 답장이 온다.) '어머, {name?}. 나도 오늘 생각하고 있었어. 메시지 고마워. 푹 자고 내일 보자. 잘 자요.'",
+        character: "assets/images/characters/teacher.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_teacher_reply_normal": {
+        name: "담임선생님",
+        text: "(조금 늦게 도착한 답장.) '어머, {name?}. 이 시간에 메시지라니 조금 놀랐네. 그래도 걱정해줘서 고마워. 너도 푹 자고 내일 지각하지 마렴.'",
+        character: "assets/images/characters/teacher.png",
+        silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_teacher_reply_low": {
         name: "담임선생님",
-        text: "(조금 늦게 도착한 답장.) '응, 그래. 내일 봐.'",
+        text: "(짧은 답장.) '...늦었어. 얼른 자렴. 내일 봐.'",
+        character: "assets/images/characters/teacher.png",
+        silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
