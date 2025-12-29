@@ -67,12 +67,14 @@ const CHARACTER_EXPRESSIONS = {
     "유나": {
         "normal": "assets/images/characters/yuna_nomal.png",
         "smile": "assets/images/characters/yuna_smile.png",
+        "shy": "assets/images/characters/yuna_shy.png",
         "sadsmile": "assets/images/characters/yuna_sadsmile.png",
         "sad": "assets/images/characters/yuna_sad.png"
     },
     "Yuna": {
         "normal": "assets/images/characters/yuna_nomal.png",
         "smile": "assets/images/characters/yuna_smile.png",
+        "shy": "assets/images/characters/yuna_shy.png",
         "sadsmile": "assets/images/characters/yuna_sadsmile.png",
         "sad": "assets/images/characters/yuna_sad.png"
     },
