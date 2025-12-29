@@ -189,6 +189,7 @@ Object.assign(SCENARIO[1], {
         text: "\"Haah~ I feel alive again. Thank you so much for today, {name?}.\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         next: "after_seoyeon_cafe_3"
     },
     "after_seoyeon_cafe_3": {
@@ -196,6 +197,7 @@ Object.assign(SCENARIO[1], {
         text: "\"Thanks to you, I actually enjoyed finishing the student council work. Could we... walk home together tomorrow too?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         choices: [
             { text: "Of course. I'll be waiting for you.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Hmm, depends on my mood? (Tease)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 4 } } }
@@ -739,6 +741,7 @@ Object.assign(SCENARIO[1], {
         text: "(She blushes, looking genuinely surprised.) \"Wh-what! Right now? ...Well, if you really want to hear my voice. But don't keep me up too late! I've got early practice!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shy.png",
+        night: true,
         stats: { Dain: { affinity: 20 } },
         next: "after_home"
     },
@@ -747,6 +750,7 @@ Object.assign(SCENARIO[1], {
         text: "(She lets out a laugh, shaking her head.) \"Ha! You're bold, I'll give you that. Calling me already? Let's stick to texting for now, okay?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
+        night: true,
         stats: { Dain: { affinity: -20 } },
         next: "after_home"
     },

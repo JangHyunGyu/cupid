@@ -189,6 +189,7 @@ Object.assign(SCENARIO[1], {
         text: "\"하아~ 이제야 좀 살 것 같아. 오늘 정말 고마웠어, {name?}.\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         next: "after_seoyeon_cafe_3"
     },
     "after_seoyeon_cafe_3": {
@@ -196,6 +197,7 @@ Object.assign(SCENARIO[1], {
         text: "\"덕분에 학생회 일도 즐겁게 마무리할 수 있었어. 우리... 내일도 같이 학교에서 나갈래?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         choices: [
             { text: "물론이지. 내일을 기다릴게.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 5 } } },
             { text: "글쎄, 내일 기분 봐서? (장난)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 4 } } }
@@ -738,8 +740,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(다인이는 얼굴을 붉히며 당황한 듯 웃는다.) \"뭐, 뭐야! 갑자기... 내 목소리 듣고 싶다니... 너무 설레게 하는 거 아냐? 나 내일 연습 일찍 가야 하니까 너무 오래 하진 마!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shy.png",
-        stats: { Dain: { affinity: 20 } },
+        character: "assets/images/characters/dain_shy.png",        night: true,        stats: { Dain: { affinity: 20 } },
         next: "after_home"
     },
     "dain_contact_call_fail": {
@@ -747,6 +748,7 @@ Object.assign(SCENARIO[1], {
         text: "(다인이는 어이없다는 듯 웃음을 터뜨린다.) \"야, 너 진짜 웃긴다. 번호 받자마자 전화하니, 너무 서두르는 거 아냐? 일단 메시지부터 주고받으면서 친해지자고!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
+        night: true,
         stats: { Dain: { affinity: -20 } },
         next: "after_home"
     },

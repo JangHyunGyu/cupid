@@ -610,6 +610,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_teacher_branch": {
         name: "나",
         text: "(선생님이 나를 가만히 바라보며 생각에 잠긴 듯하다.)",
+        night: true,
         affinityChar: "Teacher",
         affinityBranches: [
             { minAffinity: 70, next: "day2_after_teacher_special" }
