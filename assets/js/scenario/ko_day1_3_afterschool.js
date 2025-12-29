@@ -46,7 +46,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_teacher_2": {
         name: "담임선생님",
-        text: "\"어머, {name?} 학생 아니니? 이 시간에 교무실엔 어쩐 일이야?\"",
+        text: "\"어머, {name?} 아니니? 이 시간에 교무실엔 어쩐 일이야?\"",
         character: "assets/images/characters/teacher.png",
         sunset: true,
         next: "after_teacher_3"
@@ -64,14 +64,14 @@ Object.assign(SCENARIO[1], {
     },
     "after_teacher_help": {
         name: "담임선생님",
-        text: "\"후훗, 마음만으로도 고마워. 하지만 이건 선생님이 해야 할 일인걸. {name?} 학생은 얼른 집에 가서 쉬렴.\"",
+        text: "\"후훗, 마음만으로도 고마워. 하지만 이건 선생님이 해야 할 일인걸. {name?}은 얼른 집에 가서 쉬렴.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact"
     },
     "after_teacher_miss": {
         name: "담임선생님",
-        text: "\"어머... {name?} 학생, 정말 못 말리겠네. 선생님을 그렇게 좋아해 주니 기쁘긴 하지만... 후훗.\"",
+        text: "\"어머... {name?}, 정말 못 말리겠네. 선생님을 그렇게 좋아해 주니 기쁘긴 하지만... 후훗.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact"
@@ -559,7 +559,37 @@ Object.assign(SCENARIO[1], {
         context: "방과 후 노을 지는 체육관, 연습을 마친 다인과 대화를 나누는 상황. 대화가 끝나면 다인이 마지막 연습 세트를 끝내고 같이 맛있는 것을 먹으러 가자고 제안하는 상황으로 이어집니다. 대화 마무리 시점에 연습을 마저 끝내야 한다는 언급을 하거나, 배가 고프다는 등의 이야기를 하며 자연스럽게 다음 상황으로 유도해 주세요.",
         personality: "털털하고 시원시원한 성격의 배구부 에이스. 운동을 사랑하며 주인공에게 호의적이고 에너지가 넘침.",
         character: "assets/images/characters/dain_nomal.png",
+        affinityChar: "Dain",
+        affinityBranches: [
+            { minAffinity: 20, next: "after_dain_3_high" },
+            { minAffinity: -10, next: "after_dain_3" },
+            { minAffinity: -100, next: "after_dain_3_low" }
+        ],
         next: "after_dain_3"
+    },
+    "after_dain_3_high": {
+        name: "다인",
+        text: "\"와, {name?}! 너랑 얘기하니까 시간 가는 줄 모르겠어! 나 마지막 세트만 후딱 끝내고 같이 맛있는 거 먹으러 가자!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        choices: [
+            { text: "좋아, 내가 응원할게! 파이팅!", next: "after_dain_cheer", stats: { Dain: { affinity: 5 } } },
+            { text: "나도 연습 도와줄게. 공 던져줘!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
+            { text: "오늘은 좀 피곤한데, 그냥 집에 가면 안 돼?", next: "after_dain_tired", stats: { Dain: { affinity: -20 } } }
+        ]
+    },
+    "after_dain_3_low": {
+        name: "다인",
+        text: "\"어이, {name?}. 너 아까부터 말이 좀 심한 거 아냐? 나도 연습하느라 힘든데 기운 빠지게... 하아, 됐다. 마지막 세트만 끝내고 갈 거니까 기다리든가 말든가.\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_angry.png",
+        sunset: true,
+        choices: [
+            { text: "좋아, 내가 응원할게! 파이팅!", next: "after_dain_cheer", stats: { Dain: { affinity: 5 } } },
+            { text: "나도 연습 도와줄게. 공 던져줘!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
+            { text: "오늘은 좀 피곤한데, 그냥 집에 가면 안 돼?", next: "after_dain_tired", stats: { Dain: { affinity: -20 } } }
+        ]
     },
     "after_dain_3": {
         name: "다인",

@@ -156,7 +156,35 @@ Object.assign(SCENARIO[1], {
         context: "A situation where she is having a light conversation with the transfer student protagonist while walking down the school hallway together. After the conversation, Seoyeon will guide you through the school facilities as you pass through the hallway. At the end of the conversation, please mention that it's time to move or that you'll start the guidance.",
         personality: "A kind, gentle, and responsible student council president. She has a crush on the transfer student protagonist.",
         character: "assets/images/characters/seyoun_nomal.png",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "hallway_1_3_high" },
+            { minAffinity: 0, next: "hallway_1_3" },
+            { minAffinity: -100, next: "hallway_1_3_low" }
+        ],
         next: "hallway_1_3"
+    },
+    "hallway_1_3_high": {
+        name: "Seoyeon",
+        text: "\"Wow, talking with {name} is really fun! I lost track of time. Now, I'll briefly explain the school facilities as we pass through the hallway.\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        choices: [
+            { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "The facilities are good, but it looks even better because of the person guiding me.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "(Quietly listening to her explanation while walking.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
+        ]
+    },
+    "hallway_1_3_low": {
+        name: "Seoyeon",
+        text: "\"...{name}. That kind of rude attitude on the first day of transfer is a bit disappointing. I'll guide you as the student council president, but I'm not in a good mood. Now, follow me.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        choices: [
+            { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "The facilities are good, but it looks even better because of the person guiding me.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "(Quietly listening to her explanation while walking.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
+        ]
     },
     "hallway_1_3": {
         name: "Seoyeon",
@@ -333,7 +361,37 @@ Object.assign(SCENARIO[1], {
         context: "Place: Inside Class 2-3, in front of the podium. Situation: A short waiting time just before the homeroom teacher introduces the transfer student protagonist to the students. Dozens of students are watching us. We are already in the middle of the classroom, definitely not in the hallway. We are having a conversation inside the classroom. After the conversation, the teacher will formally introduce the protagonist to the students, and the protagonist will have to introduce themselves in front of the podium. At the end of the conversation, please induce actions such as telling the protagonist to get ready to greet the students or to straighten up.",
         personality: "A professional teacher with a clear distinction between public and private life, but actually has a clumsy side and feels flustered by the protagonist's unexpectedly mature appearance. She has a 'gap moe' where she secretly wants to rely on the protagonist.",
         character: "assets/images/characters/teacher_smile.png",
+        affinityChar: "Teacher",
+        affinityBranches: [
+            { minAffinity: 10, next: "classroom_2_3_high" },
+            { minAffinity: -5, next: "classroom_2_3" },
+            { minAffinity: -100, next: "classroom_2_3_low" }
+        ],
         next: "classroom_2_3"
+    },
+    "classroom_2_3_high": {
+        name: "Homeroom Teacher",
+        text: "\"Oh my, talking to {name?} makes me feel good too! Now, everyone pay attention! This is {name}, who will be with us from today. Everyone, get along well. Now, shall we have a word of introduction?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        choices: [
+            { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
+            { text: "Waaaah! Nice to meet you guys! Let's get along well from today!", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
+            { text: "Hi! I like exercising and have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "Nice to meet you. I'm the type who likes reading books quietly.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "I came here to study. I hate being disturbed, so let's just get along moderately.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
+        ]
+    },
+    "classroom_2_3_low": {
+        name: "Homeroom Teacher",
+        text: "\"...{name?}. That kind of attitude is problematic from the first day of transfer. I don't really like students who lack manners. Now, everyone pay attention. This is {name}, who will be with us from today. ...At least introduce yourself properly.\"",
+        character: "assets/images/characters/teacher_angry.png",
+        choices: [
+            { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
+            { text: "Waaaah! Nice to meet you guys! Let's get along well from today!", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
+            { text: "Hi! I like exercising and have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "Nice to meet you. I'm the type who likes reading books quietly.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "I came here to study. I hate being disturbed, so let's just get along moderately.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
+        ]
     },
     "classroom_2_3": {
         name: "Homeroom Teacher",

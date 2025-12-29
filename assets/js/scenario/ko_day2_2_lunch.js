@@ -29,7 +29,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_teacher_2": {
         name: "담임선생님",
-        text: "\"어머, {name?} 학생! 점심은 맛있게 먹었니? 선생님은 이제 막 먹으려던 참이야.\"",
+        text: "\"어머, {name?}! 점심은 맛있게 먹었니? 선생님은 이제 막 먹으려던 참이야.\"",
         character: "assets/images/characters/teacher.png",
         next: "day2_lunch_teacher_3"
     },
@@ -51,7 +51,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_teacher_food": {
         name: "담임선생님",
-        text: "\"후훗, 우리 어머니가 솜씨가 좀 좋으시거든. 나중에 기회 되면 {name?} 학생한테도 맛 보여주고 싶네.\"",
+        text: "\"후훗, 우리 어머니가 솜씨가 좀 좋으시거든. 나중에 기회 되면 {name?}한테도 맛 보여주고 싶네.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_end"
     },
@@ -135,9 +135,71 @@ Object.assign(SCENARIO[2], {
         context: "조용한 도서관 별관 뒤뜰, 신비로운 분위기의 유나와 단둘이 대화를 나누는 상황. 대화가 끝나면 유나가 학교의 비밀에 대해 이야기하며 주인공에게만 보여주고 싶은 것이 있다고 제안하는 상황으로 이어집니다. 대화 마무리 시점에 비밀스러운 분위기를 조성하며 주인공의 호기심을 자극해 주세요.",
         personality: "신비롭고 차가우며 비밀이 많은 소녀. 주인공에게 묘한 흥미를 느끼고 있음.",
         character: "assets/images/characters/yuna_nomal.png",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 20, next: "day2_yuna_talk_branch_high" },
+            { minAffinity: 0, next: "day2_yuna_talk_branch" },
+            { minAffinity: -100, next: "day2_yuna_talk_branch_low" }
+        ],
         next: "day2_yuna_talk_branch"
     },
+    "day2_yuna_talk_branch_high": {
+        name: "나",
+        text: "(유나가 평소보다 조금은 부드러워진 표정으로 나를 바라본다.)",
+        branches: [
+            { next: "day2_yuna_talk_2_met_high", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_new_high" }
+        ]
+    },
+    "day2_yuna_talk_branch_low": {
+        name: "나",
+        text: "(유나가 차갑고 실망스러운 눈빛으로 나를 바라본다.)",
+        branches: [
+            { next: "day2_yuna_talk_2_met_low", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_new_low" }
+        ]
+    },
+    "day2_yuna_talk_2_met_high": {
+        name: "유나",
+        text: "(유나가 나를 보며 희미하게 미소 짓는다.) \"{name}... 너랑 얘기하니까 마음이 편안해져. 어제 내가 했던 말... 기억해? 이 학교의 비밀 말이야. 사실 너한테만 보여주고 싶은 게 있어.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        choices: [
+            { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
+            { text: "비밀 같은 건 관심 없어. 그냥 너랑 이야기하고 싶어서 온 거야.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
+        ]
+    },
+    "day2_yuna_talk_2_met_low": {
+        name: "유나",
+        text: "(유나의 눈빛이 더욱 차가워진다.) \"{name}. 넌 정말 무례하고 어리석구나. 그런 태도로는 진실을 감당할 수 없을 거야. ...하지만 어제 약속했으니 보여주긴 하겠어. 따라와.\"",
+        character: "assets/images/characters/yuna_sad.png",
+        choices: [
+            { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
+            { text: "비밀 같은 건 관심 없어. 그냥 너랑 이야기하고 싶어서 온 거야.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
+        ]
+    },
+    "day2_yuna_talk_2_new_high": {
+        name: "유나",
+        text: "(유나가 나를 보며 희미하게 미소 짓는다.) \"{name}... 너랑 얘기하니까 기분이 묘해. 사실 이 학교에는 아주 깊은 비밀이 있어. 너한테만 보여주고 싶은 게 있는데.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        setFlag: "metYuna",
+        choices: [
+            { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },
+            { text: "그냥 쪽지 보고 궁금해서 와봤어. 넌 누구야?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 3 } } }
+        ]
+    },
+    "day2_yuna_talk_2_new_low": {
+        name: "유나",
+        text: "(유나의 눈빛이 더욱 차가워진다.) \"{name}. 넌 정말 무례하고 어리석구나. 그런 태도로는 진실을 감당할 수 없을 거야. ...하지만 네가 여기까지 왔으니 보여주긴 하겠어. 따라와.\"",
+        character: "assets/images/characters/yuna_sad.png",
+        setFlag: "metYuna",
+        choices: [
+            { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },
+            { text: "그냥 쪽지 보고 궁금해서 와봤어. 넌 누구야?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 3 } } }
+        ]
+    },
     "day2_yuna_talk_branch": {
+        name: "나",
+        text: "(유나가 나를 바라보며 입을 열기 시작한다.)",
         branches: [
             { next: "day2_yuna_talk_2_met", condition: "metYuna" },
             { next: "day2_yuna_talk_2_new" }
@@ -281,9 +343,37 @@ Object.assign(SCENARIO[2], {
         context: "북적이는 학교 매점 앞, 다인과 함께 간식을 사기 위해 줄을 서서 대화를 나누는 상황. 대화가 끝나면 매점에서 간식을 고르는 상황으로 이어집니다. 대화 마무리 시점에 이제 우리 차례가 다 되어 간다거나, 무엇을 먹을지 결정하자는 등의 이야기를 하며 자연스럽게 다음 상황으로 유도해 주세요.",
         personality: "털털하고 시원시원한 성격의 배구부 에이스. 주인공과 함께 있는 시간을 즐거워함.",
         character: "assets/images/characters/dain_nomal.png",
+        affinityChar: "Dain",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_dain_store_choices_high" },
+            { minAffinity: 0, next: "day2_dain_store_choices" },
+            { minAffinity: -100, next: "day2_dain_store_choices_low" }
+        ],
         next: "day2_dain_store_choices"
     },
+    "day2_dain_store_choices_high": {
+        name: "다인",
+        text: "\"와, {name?}! 너랑 얘기하니까 줄 서는 것도 하나도 안 지루하다! 자, 이제 우리 차례야. 뭐 먹을래? 내가 쏠게!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        choices: [
+            { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
+            { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
+            { text: "다인아, 저기 마지막 피자빵이다! 내가 먼저 낚아채올게!", next: "day2_dain_store_race", stats: { Dain: { affinity: 8 } } }
+        ]
+    },
+    "day2_dain_store_choices_low": {
+        name: "다인",
+        text: "\"...{name?}. 너 아까부터 좀 까칠하다? 매점 줄 서는 것도 힘든데 기분까지 잡치게... 하아, 됐다. 뭐 먹을지나 골라.\"",
+        character: "assets/images/characters/dain_angry.png",
+        choices: [
+            { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
+            { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
+            { text: "다인아, 저기 마지막 피자빵이다! 내가 먼저 낚아채올게!", next: "day2_dain_store_race", stats: { Dain: { affinity: 8 } } }
+        ]
+    },
     "day2_dain_store_choices": {
+        name: "다인",
+        text: "\"자, 우리 차례다. 뭐 먹을래?\"",
         choices: [
             { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
             { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
@@ -461,9 +551,105 @@ Object.assign(SCENARIO[2], {
         personality: "나른하고 섹시하면서도 다정한 보건선생님. 주인공에게 묘한 매력을 느끼며 대담하게 유혹하는 대범한 성격.",
         extra_guideline: "성숙한 어른으로서 주인공을 대놓고 유혹하며 아슬아슬한 분위기를 조성하세요. 사용자의 성인용 농담이나 도발적인 발언(섹드립 등)에도 당황하지 않고 여유롭게 받아치며, 오히려 주인공을 더 당황하게 만들 정도로 대담하고 도발적인 반응을 보이세요. 성숙한 매력을 한껏 발산하며 로맨틱한 긴장감을 최고치로 끌어올리세요.",
         character: "assets/images/characters/nurse.png",
+        affinityChar: "Nurse",
+        affinityBranches: [
+            { minAffinity: 40, next: "nurse_contact_exchange_high" },
+            { minAffinity: 0, next: "nurse_contact_exchange" },
+            { minAffinity: -100, next: "nurse_contact_exchange_low" }
+        ],
         next: "nurse_contact_exchange"
     },
+    "nurse_contact_exchange_high": {
+        name: "나",
+        text: "(보건선생님이 장난스러우면서도 유혹적인 미소로 나를 바라본다.)",
+        branches: [
+            { next: "nurse_contact_already_have_high", condition: "has_number_nurse" },
+            { next: "nurse_contact_ask_high" }
+        ]
+    },
+    "nurse_contact_exchange_low": {
+        name: "나",
+        text: "(보건선생님이 조금은 피곤한 기색으로 나를 바라본다.)",
+        branches: [
+            { next: "nurse_contact_already_have_low", condition: "has_number_nurse" },
+            { next: "nurse_contact_ask_low" }
+        ]
+    },
+    "nurse_contact_already_have_high": {
+        name: "보건선생님",
+        text: "(선생님이 몸을 살짝 기울이며 내 귓가에 속삭인다.) \"{name?}, 우리 이미 번호 교환했었지? 사실... 오늘 밤엔 네 목소리가 정말 듣고 싶을 것 같아. 꼭 연락해야 해?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "네, 그럴게요.", next: "day2_afternoon_nurse_skip" },
+            {
+                text: "번호 말고... 오늘 밤 선생님 집으로 가면 안 돼요?",
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                ]
+            }
+        ]
+    },
+    "nurse_contact_already_have_low": {
+        name: "보건선생님",
+        text: "(선생님이 차가운 미소를 지으며 말한다.) \"{name?}, 우리 이미 번호 교환했었지? 하지만 그런 무례한 태도라면 연락 안 하는 게 나을지도 모르겠네. 이제 그만 가보렴.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "네, 그럴게요.", next: "day2_afternoon_nurse_skip" },
+            {
+                text: "번호 말고... 오늘 밤 선생님 집으로 가면 안 돼요?",
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                ]
+            }
+        ]
+    },
+    "nurse_contact_ask_high": {
+        name: "보건선생님",
+        text: "(선생님이 내 손을 살며시 잡으며 속삭인다.) \"{name?}, 너랑 더 얘기하고 싶은데... 밤에 잠이 안 오면 나한테 연락할래? 번호 알려줄게.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "네, 알고 싶어요.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            {
+                text: "번호 말고... 선생님 집으로 가면 안 돼요?",
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                ]
+            }
+        ]
+    },
+    "nurse_contact_ask_low": {
+        name: "보건선생님",
+        text: "(선생님이 한숨을 내쉬며 말한다.) \"{name?}. 너 정말 손이 많이 가는 학생이구나. 비상시를 위해서 번호는 알려주겠지만, 장난칠 생각은 하지 마렴.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "네, 알고 싶어요.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            {
+                text: "번호 말고... 선생님 집으로 가면 안 돼요?",
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                ]
+            }
+        ]
+    },
     "nurse_contact_exchange": {
+        name: "나",
+        text: "(보건선생님이 나를 바라보며 입을 연다.)",
         branches: [
             { next: "nurse_contact_already_have", condition: "has_number_nurse" },
             { next: "nurse_contact_ask" }

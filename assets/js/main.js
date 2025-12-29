@@ -198,6 +198,18 @@ function getScene(id) {
 function resolveNextScene(scene) {
     if (!scene) return null;
 
+    // 호감도에 따른 결과 분기 처리 (affinityBranches가 있는 경우)
+    if (scene.affinityBranches && scene.affinityChar && gameState.stats[scene.affinityChar]) {
+        const currentAff = gameState.stats[scene.affinityChar].affinity;
+        // 높은 문턱부터 체크하여 조건에 맞는 가장 높은 분기를 선택
+        const sortedBranches = [...scene.affinityBranches].sort((a, b) => b.minAffinity - a.minAffinity);
+        for (const branch of sortedBranches) {
+            if (currentAff >= branch.minAffinity) {
+                return branch.next;
+            }
+        }
+    }
+
     // branches가 있는 경우
     if (scene.branches && Array.isArray(scene.branches)) {
         // 호감도 비교 분기 처리 (selectByHighestAffinity: true 인 경우)
@@ -1009,7 +1021,12 @@ function typeText(text, charName) {
     // 한국어이고 화자가 주인공이 아닐 때만 '군'을 붙임
     let rawName = gameState.playerName;
     if (!isEn && !isPlayer && rawName) {
-        rawName += " 군";
+        // 뒤에 '학생'이나 '님' 등이 붙어있으면 '군'을 붙이지 않음
+        const nameIndex = text.indexOf("{name}");
+        const nextChar = text.charAt(nameIndex + 6);
+        if (nextChar !== ' ' && nextChar !== '학' && nextChar !== '님' && nextChar !== '이') {
+            rawName += " 군";
+        }
     }
     let processedText = text.replace(/{name}/g, rawName);
 
@@ -1024,7 +1041,12 @@ function typeText(text, charName) {
     let nameToUse = nameKnown ? gameState.playerName : defaultTitle;
 
     if (!isEn && !isPlayer && nameToUse) {
-        nameToUse += " 군";
+        // 이름을 알 때만 '군'을 붙이고, 뒤에 '학생' 등이 붙어있으면 붙이지 않음
+        const nameIndex = processedText.indexOf("{name?}");
+        const nextChar = processedText.charAt(nameIndex + 7);
+        if (nameKnown && nextChar !== ' ' && nextChar !== '학' && nextChar !== '님' && nextChar !== '이') {
+            nameToUse += " 군";
+        }
     }
 
     processedText = processedText.replace(/{name\?}/g, nameToUse);

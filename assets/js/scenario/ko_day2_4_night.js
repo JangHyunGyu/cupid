@@ -87,6 +87,8 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun": {
+        name: "나",
+        text: "(서연이에게 어떤 메시지를 보낼까?)",
         branches: [
             { next: "day2_night_message_seyoun_after", condition: "day2_met_seoyeon_after" },
             { next: "day2_night_message_seyoun_lunch", condition: "day2_ate_lunch_seoyeon" },
@@ -124,9 +126,29 @@ Object.assign(SCENARIO[2], {
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 서연이는 주인공의 메시지에 기뻐하며 답장을 보낸 상태. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화 마무리 시점에 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 30, next: "day2_night_message_seyoun_reply_high" },
+            { minAffinity: 0, next: "day2_final_scene" },
+            { minAffinity: -100, next: "day2_night_message_seyoun_reply_low" }
+        ],
+        next: "day2_final_scene"
+    },
+    "day2_night_message_seyoun_reply_high": {
+        name: "서연",
+        text: "(징~ 메시지가 하나 더 왔다.) '사실... 아까 말 못 했는데, {name?}이랑 있으면 정말 행복해. 내일이 빨리 왔으면 좋겠다. 진짜 잘 자!'",
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_seyoun_reply_low": {
+        name: "서연",
+        text: "(징~ 짧은 답장.) '응, 그래. 내일 봐.'",
+        night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_yuna": {
+        name: "나",
+        text: "(유나에게 어떤 메시지를 보낼까?)",
         branches: [
             { next: "day2_night_message_yuna_met", condition: "day2_met_yuna_after" },
             { next: "day2_night_message_yuna_met", condition: "day2_met_yuna_lunch" },
@@ -157,9 +179,29 @@ Object.assign(SCENARIO[2], {
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 유나는 주인공의 메시지에 짧지만 깊은 여운이 담긴 답장을 보낸 상태. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화 마무리 시점에 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
         stats: { Yuna: { affinity: 3 } },
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_night_message_yuna_reply_high" },
+            { minAffinity: 0, next: "day2_final_scene" },
+            { minAffinity: -100, next: "day2_night_message_yuna_reply_low" }
+        ],
+        next: "day2_final_scene"
+    },
+    "day2_night_message_yuna_reply_high": {
+        name: "유나",
+        text: "(징~ 메시지가 하나 더 왔다.) '사실... 너랑 더 얘기하고 싶어. 하지만 내일을 위해 참을게. 잘 자, 나의 {name?}.'",
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_yuna_reply_low": {
+        name: "유나",
+        text: "(잠시 후 도착한 답장.) '...알았어. 내일 봐.'",
+        night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_dain": {
+        name: "나",
+        text: "(다인이에게 어떤 메시지를 보낼까?)",
         branches: [
             { next: "day2_night_message_dain_after", condition: "day2_met_dain_after" },
             { next: "day2_night_message_dain_lunch", condition: "day2_met_dain_lunch" },
@@ -167,6 +209,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_night_message_dain_after": {
+        name: "나",
+        text: "(방과 후 연습 때 일이 생각난다. 어떤 메시지를 보낼까?)",
         branches: [
             { next: "day2_night_message_dain_bet", condition: "day2_dain_bet" },
             { next: "day2_night_message_dain_practice" }
@@ -210,9 +254,29 @@ Object.assign(SCENARIO[2], {
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 다인이는 주인공의 메시지에 활기차게 답장을 보낸 상태. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화 마무리 시점에 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
         stats: { Dain: { affinity: 3 } },
+        affinityChar: "Dain",
+        affinityBranches: [
+            { minAffinity: 30, next: "day2_night_message_dain_reply_high" },
+            { minAffinity: 0, next: "day2_final_scene" },
+            { minAffinity: -100, next: "day2_night_message_dain_reply_low" }
+        ],
+        next: "day2_final_scene"
+    },
+    "day2_night_message_dain_reply_high": {
+        name: "다인",
+        text: "(징~ 메시지가 하나 더 왔다.) '사실... 오늘 너랑 같이 있어서 정말 든든했어. 내일도 같이 연습하자! 잘 자!'",
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_dain_reply_low": {
+        name: "다인",
+        text: "(활기찬 답장.) '응, 그래. 내일 봐.'",
+        night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_nurse": {
+        name: "나",
+        text: "(보건선생님께 어떤 메시지를 보낼까?)",
         branches: [
             { next: "day2_night_message_nurse_rest", condition: "day2_met_nurse_after" },
             { next: "day2_night_message_nurse_rest", condition: "wokeUpInNurseRoom" },
@@ -243,6 +307,24 @@ Object.assign(SCENARIO[2], {
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 보건선생님은 주인공의 메시지에 장난스럽고 매혹적인 답장을 보낸 상태. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화 마무리 시점에 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
         stats: { Nurse: { affinity: 3 } },
+        affinityChar: "Nurse",
+        affinityBranches: [
+            { minAffinity: 35, next: "day2_night_message_nurse_reply_high" },
+            { minAffinity: 0, next: "day2_final_scene" },
+            { minAffinity: -100, next: "day2_night_message_nurse_reply_low" }
+        ],
+        next: "day2_final_scene"
+    },
+    "day2_night_message_nurse_reply_high": {
+        name: "보건선생님",
+        text: "(징~ 메시지가 하나 더 왔다.) '사실... 오늘 너랑 더 얘기하고 싶어서 잠이 안 올 것 같네. 책임질 거니? 후훗, 농담이야. 진짜 잘 자.'",
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_nurse_reply_low": {
+        name: "보건선생님",
+        text: "(매혹적인 답장.) '응, 그래. 내일 봐.'",
+        night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_teacher": {
@@ -256,12 +338,30 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "담임선생님",
-        text: "(조금 늦게 도착한 답장.) '어머, {name?} 학생. 이 시간에 메시지라니 조금 놀랐네. 그래도 걱정해줘서 고마워. 너도 푹 자고 내일 지각하지 마렴.'",
+        text: "(조금 늦게 도착한 답장.) '어머, {name?}. 이 시간에 메시지라니 조금 놀랐네. 그래도 걱정해줘서 고마워. 너도 푹 자고 내일 지각하지 마렴.'",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황. 담임선생님은 주인공의 메시지에 조금 당황하면서도 고마워하며 답장을 보낸 상태. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화 마무리 시점에 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
         stats: { Teacher: { affinity: 3 } },
+        affinityChar: "Teacher",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_night_message_teacher_reply_high" },
+            { minAffinity: 0, next: "day2_final_scene" },
+            { minAffinity: -100, next: "day2_night_message_teacher_reply_low" }
+        ],
+        next: "day2_final_scene"
+    },
+    "day2_night_message_teacher_reply_high": {
+        name: "담임선생님",
+        text: "(징~ 메시지가 하나 더 왔다.) '사실... 아까 학교에서 네가 도와준 거 정말 고마웠어. {name?} 학생은 참 든든한 사람인 것 같아. 내일 보자!'",
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_teacher_reply_low": {
+        name: "담임선생님",
+        text: "(조금 늦게 도착한 답장.) '응, 그래. 내일 봐.'",
+        night: true,
         next: "day2_final_scene"
     },
     "day2_final_scene": {

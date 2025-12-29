@@ -607,6 +607,8 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_teacher_branch"
     },
     "day2_after_teacher_branch": {
+        name: "나",
+        text: "(선생님이 나를 가만히 바라보며 생각에 잠긴 듯하다.)",
         affinityChar: "Teacher",
         affinityBranches: [
             { minAffinity: 70, next: "day2_after_teacher_special" }
@@ -652,7 +654,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_worry": {
         name: "담임선생님",
-        text: "\"걱정해줘서 고마워. 선생님은 괜찮아! 우리 {name?} 학생이 이렇게 착해서 선생님은 정말 든든한걸?\"",
+        text: "\"걱정해줘서 고마워. 선생님은 괜찮아! 우리 {name?}이 이렇게 착해서 선생님은 정말 든든한걸?\"",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day2_after_teacher_normal"

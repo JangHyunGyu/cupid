@@ -69,12 +69,14 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_teacher_reply": {
         name: "담임선생님",
-        text: "(다정한 답장.) '어머, {name?} 학생이구나? 전학 첫날이라 힘들었을 텐데 기특하네. 푹 쉬고 내일 보자!'",
+        text: "(다정한 답장.) '어머, {name?}이구나? 전학 첫날이라 힘들었을 텐데 기특하네. 푹 쉬고 내일 보자!'",
         night: true,
         stats: { Teacher: { affinity: 3 } },
         next: "day1_end"
     },
     "night_message_seyoun": {
+        name: "나",
+        text: "(서연이에게 어떤 메시지를 보낼까?)",
         branches: [
             { next: "night_message_seyoun_lunch", condition: "ate_lunch_seoyeon" },
             { next: "night_message_seyoun_after", condition: "helpedSeoyeon" },
@@ -131,6 +133,8 @@ Object.assign(SCENARIO[1], {
         next: "day1_end"
     },
     "night_message_dain": {
+        name: "나",
+        text: "(다인이에게 어떤 메시지를 보낼까?)",
         branches: [
             { next: "night_message_dain_date", condition: "datedDainDay1" },
             { next: "night_message_dain_generic" }

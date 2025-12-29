@@ -135,9 +135,71 @@ Object.assign(SCENARIO[2], {
         context: "Quiet library annex backyard, having a private conversation with the mysterious Yuna. After the conversation, Yuna will talk about the school's secrets and suggest that there is something she only wants to show the protagonist. At the end of the conversation, please create a mysterious atmosphere and stimulate the protagonist's curiosity.",
         personality: "Mysterious, cold, and full of secrets. She feels a strange interest in the protagonist.",
         character: "assets/images/characters/yuna_nomal.png",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 20, next: "day2_yuna_talk_branch_high" },
+            { minAffinity: 0, next: "day2_yuna_talk_branch" },
+            { minAffinity: -100, next: "day2_yuna_talk_branch_low" }
+        ],
         next: "day2_yuna_talk_branch"
     },
+    "day2_yuna_talk_branch_high": {
+        name: "Me",
+        text: "(Yuna looks at me with a slightly softer expression than usual.)",
+        branches: [
+            { next: "day2_yuna_talk_2_met_high", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_new_high" }
+        ]
+    },
+    "day2_yuna_talk_branch_low": {
+        name: "Me",
+        text: "(Yuna looks at me with a cold, disappointed gaze.)",
+        branches: [
+            { next: "day2_yuna_talk_2_met_low", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_new_low" }
+        ]
+    },
+    "day2_yuna_talk_2_met_high": {
+        name: "Yuna",
+        text: "(Yuna smiles faintly as she looks at me.) \"{name}... Talking with you makes me feel at peace. What I said yesterday... do you remember? About the secrets of this school. There's something I want to show you. Only you.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        choices: [
+            { text: "What is it? I want to know.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
+            { text: "I'm not here for secrets. I just wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
+        ]
+    },
+    "day2_yuna_talk_2_met_low": {
+        name: "Yuna",
+        text: "(Yuna's gaze becomes even colder.) \"{name}. You're really rude and foolish. With that attitude, you won't be able to handle the truth. ...But I promised yesterday, so I'll show you. Follow me.\"",
+        character: "assets/images/characters/yuna_sad.png",
+        choices: [
+            { text: "What is it? I want to know.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
+            { text: "I'm not here for secrets. I just wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
+        ]
+    },
+    "day2_yuna_talk_2_new_high": {
+        name: "Yuna",
+        text: "(Yuna smiles faintly as she looks at me.) \"{name}... Talking with you feels strange. This school hides a very deep secret. And I want to show it to you. Only you.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        setFlag: "metYuna",
+        choices: [
+            { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },
+            { text: "I just came because I was curious about the note. Who are you?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 3 } } }
+        ]
+    },
+    "day2_yuna_talk_2_new_low": {
+        name: "Yuna",
+        text: "(Yuna's gaze becomes even colder.) \"{name}. You're really rude and foolish. With that attitude, you won't be able to handle the truth. ...But since you've come this far, I'll show you. Follow me.\"",
+        character: "assets/images/characters/yuna_sad.png",
+        setFlag: "metYuna",
+        choices: [
+            { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },
+            { text: "I just came because I was curious about the note. Who are you?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 3 } } }
+        ]
+    },
     "day2_yuna_talk_branch": {
+        name: "Me",
+        text: "(Yuna looks at me and starts talking.)",
         branches: [
             { next: "day2_yuna_talk_2_met", condition: "metYuna" },
             { next: "day2_yuna_talk_2_new" }
@@ -273,9 +335,38 @@ Object.assign(SCENARIO[2], {
         context: "In front of the crowded school store, standing in line with Dain to buy snacks. After the conversation, you will choose snacks at the store. At the end of the conversation, please naturally lead into the next situation by mentioning that it's almost our turn or by deciding what to eat.",
         personality: "Easygoing and cool-headed volleyball ace. She enjoys spending time with the protagonist.",
         character: "assets/images/characters/dain_nomal.png",
+        affinityChar: "Dain",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_dain_store_choices_high" },
+            { minAffinity: 0, next: "day2_dain_store_choices" },
+            { minAffinity: -100, next: "day2_dain_store_choices_low" }
+        ],
         next: "day2_dain_store_choices"
     },
-    "day2_dain_store_choices": {        choices: [
+    "day2_dain_store_choices_high": {
+        name: "Dain",
+        text: "\"Whoa, {name?}! Standing in line isn't boring at all when I'm talking to you! Okay, it's our turn. What do you want? It's on me!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        choices: [
+            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
+            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
+            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race", stats: { Dain: { affinity: 8 } } }
+        ]
+    },
+    "day2_dain_store_choices_low": {
+        name: "Dain",
+        text: "\"...{name?}. You've been a bit prickly since earlier? It's already hard enough standing in line, and you're just ruining the mood... Sigh, whatever. Just pick what you want to eat.\"",
+        character: "assets/images/characters/dain_angry.png",
+        choices: [
+            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
+            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
+            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race", stats: { Dain: { affinity: 8 } } }
+        ]
+    },
+    "day2_dain_store_choices": {
+        name: "Dain",
+        text: "\"Okay, it's our turn. What do you want?\"",
+        choices: [
             { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
             { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
             { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race", stats: { Dain: { affinity: 8 } } }
@@ -440,9 +531,105 @@ Object.assign(SCENARIO[2], {
         personality: "A languid, sexy, yet kind nurse. A bold personality who feels a strange charm to the protagonist and openly seduces him.",
         extra_guideline: "As a mature adult, openly seduce the protagonist and create a risky atmosphere. Don't be flustered by the user's mature jokes or provocative remarks (sexual jokes, etc.) and respond leisurely, and show a bold and provocative reaction enough to make the protagonist even more flustered. Fully radiate mature charm and pull the romantic tension to the maximum.",
         character: "assets/images/characters/nurse.png",
+        affinityChar: "Nurse",
+        affinityBranches: [
+            { minAffinity: 40, next: "nurse_contact_exchange_high" },
+            { minAffinity: 0, next: "nurse_contact_exchange" },
+            { minAffinity: -100, next: "nurse_contact_exchange_low" }
+        ],
         next: "nurse_contact_exchange"
     },
+    "nurse_contact_exchange_high": {
+        name: "Me",
+        text: "(The nurse looks at me with a playful, seductive smile.)",
+        branches: [
+            { next: "nurse_contact_already_have_high", condition: "has_number_nurse" },
+            { next: "nurse_contact_ask_high" }
+        ]
+    },
+    "nurse_contact_exchange_low": {
+        name: "Me",
+        text: "(The nurse looks at me with a slightly tired expression.)",
+        branches: [
+            { next: "nurse_contact_already_have_low", condition: "has_number_nurse" },
+            { next: "nurse_contact_ask_low" }
+        ]
+    },
+    "nurse_contact_already_have_high": {
+        name: "Nurse",
+        text: "(The teacher leans her body slightly and whispers in my ear.) \"{name?}, we already exchanged numbers, didn't we? Actually... I think I'll really want to hear your voice tonight. You must contact me, okay?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "Yes, I will.", next: "day2_afternoon_nurse_skip" },
+            { 
+                text: "Not the number... can I go to your house tonight, teacher?", 
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                ]
+            }
+        ]
+    },
+    "nurse_contact_already_have_low": {
+        name: "Nurse",
+        text: "(The teacher says with a cold smile.) \"{name?}, we already exchanged numbers, didn't we? But with that kind of rude attitude, it might be better not to contact me. Now, please leave.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "Yes, I will.", next: "day2_afternoon_nurse_skip" },
+            { 
+                text: "Not the number... can I go to your house tonight, teacher?", 
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                ]
+            }
+        ]
+    },
+    "nurse_contact_ask_high": {
+        name: "Nurse",
+        text: "(The teacher gently holds my hand and whispers.) \"{name?}, I want to talk to you more... if you can't sleep at night, do you want to contact me? I'll give you my number.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "Yes, I want to know.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { 
+                text: "Not the number... can I go to your house, teacher?", 
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                ]
+            }
+        ]
+    },
+    "nurse_contact_ask_low": {
+        name: "Nurse",
+        text: "(The teacher sighs and says.) \"{name?}. You're really a handful, aren't you? I'll give you my number for emergencies, but don't even think about playing around.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        choices: [
+            { text: "Yes, I want to know.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { 
+                text: "Not the number... can I go to your house, teacher?", 
+                next: "nurse_contact_home_fail",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                ]
+            }
+        ]
+    },
     "nurse_contact_exchange": {
+        name: "Me",
+        text: "(The nurse looks at me and starts talking.)",
         branches: [
             { next: "nurse_contact_already_have", condition: "has_number_nurse" },
             { next: "nurse_contact_ask" }

@@ -559,7 +559,37 @@ Object.assign(SCENARIO[1], {
         context: "Talking to Dain in the gym at sunset after her practice. After the conversation, Dain will suggest finishing her last practice set and going to grab something delicious to eat together. At the end of the conversation, please naturally lead into the next situation by mentioning that you need to finish practice or that you're hungry.",
         personality: "The easygoing ace of the volleyball club. Loves sports, friendly, and high-energy.",
         character: "assets/images/characters/dain_nomal.png",
+        affinityChar: "Dain",
+        affinityBranches: [
+            { minAffinity: 20, next: "after_dain_3_high" },
+            { minAffinity: -10, next: "after_dain_3" },
+            { minAffinity: -100, next: "after_dain_3_low" }
+        ],
         next: "after_dain_3"
+    },
+    "after_dain_3_high": {
+        name: "Dain",
+        text: "\"Whoa, {name?}! I lost track of time talking to you! Let me finish this last set real quick and we'll go grab something to eat!\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        choices: [
+            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer", stats: { Dain: { affinity: 5 } } },
+            { text: "Need a hand? Toss me the ball!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
+            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired", stats: { Dain: { affinity: -20 } } }
+        ]
+    },
+    "after_dain_3_low": {
+        name: "Dain",
+        text: "\"Hey, {name?}. Haven't you been a bit harsh since earlier? I'm already tired from practice, and you're just draining my energy... Sigh, whatever. I'm finishing this last set, so wait if you want.\"",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_angry.png",
+        sunset: true,
+        choices: [
+            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer", stats: { Dain: { affinity: 5 } } },
+            { text: "Need a hand? Toss me the ball!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
+            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired", stats: { Dain: { affinity: -20 } } }
+        ]
     },
     "after_dain_3": {
         name: "Dain",

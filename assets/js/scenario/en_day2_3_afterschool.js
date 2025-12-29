@@ -608,6 +608,8 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_teacher_branch"
     },
     "day2_after_teacher_branch": {
+        name: "Me",
+        text: "(The teacher looks at me quietly, seemingly lost in thought.)",
         affinityChar: "Teacher",
         affinityBranches: [
             { minAffinity: 70, next: "day2_after_teacher_special" }

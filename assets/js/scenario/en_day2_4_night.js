@@ -85,6 +85,8 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun": {
+        name: "Me",
+        text: "(What message should I send to Seoyeon?)",
         branches: [
             { next: "day2_night_message_seyoun_after", condition: "day2_met_seoyeon_after" },
             { next: "day2_night_message_seyoun_lunch", condition: "day2_ate_lunch_seoyeon" },
@@ -122,9 +124,41 @@ Object.assign(SCENARIO[2], {
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Seoyeon has sent a reply, happy with the protagonist's message. After the conversation, the protagonist will fall asleep, looking forward to tomorrow. At the end of the conversation, please naturally end the conversation by saying good night since it's late, or by saying see you at school tomorrow.",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_night_message_seyoun_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_seyoun_reply_normal" },
+            { minAffinity: -100, next: "day2_night_message_seyoun_reply_low" }
+        ],
+        next: "day2_final_scene"
+    },
+    "day2_night_message_seyoun_reply_high": {
+        name: "Seoyeon",
+        text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name?}. Actually... I was waiting for your message. Don't forget to have lunch together tomorrow! Good night, {name?}.'",
+        character: "assets/images/characters/seyoun_nomal.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_seyoun_reply_normal": {
+        name: "Seoyeon",
+        text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name?}. Don't forget to have lunch together tomorrow! Good night.'",
+        character: "assets/images/characters/seyoun_nomal.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_seyoun_reply_low": {
+        name: "Seoyeon",
+        text: "(A reply arrives after a while.) '...Yeah. I'm a bit tired today, so I'll sleep now. See you tomorrow.'",
+        character: "assets/images/characters/seyoun_nomal.png",
+        silhouette: true,
+        night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_yuna": {
+        name: "Me",
+        text: "(What message should I send to Yuna?)",
         branches: [
             { next: "day2_night_message_yuna_met", condition: "day2_met_yuna_after" },
             { next: "day2_night_message_yuna_met", condition: "day2_met_yuna_lunch" },
@@ -155,9 +189,41 @@ Object.assign(SCENARIO[2], {
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Yuna has sent a short but deeply lingering reply to the protagonist's message. After the conversation, the protagonist will fall asleep, looking forward to tomorrow. At the end of the conversation, please naturally end the conversation by saying good night since it's late, or by saying see you at school tomorrow.",
         night: true,
         stats: { Yuna: { affinity: 3 } },
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_night_message_yuna_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_yuna_reply_normal" },
+            { minAffinity: -100, next: "day2_night_message_yuna_reply_low" }
+        ],
+        next: "day2_final_scene"
+    },
+    "day2_night_message_yuna_reply_high": {
+        name: "Yuna",
+        text: "(A reply arrives immediately.) '...I was waiting. I'm glad you contacted me first. I'll be watching you in your dreams too, {name?}. Good night.'",
+        character: "assets/images/characters/yuna_nomal.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_yuna_reply_normal": {
+        name: "Yuna",
+        text: "(A reply arrives after a short wait.) '...Yeah. I knew you would understand. I'll be watching you in your dreams too, {name?}.'",
+        character: "assets/images/characters/yuna_nomal.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_yuna_reply_low": {
+        name: "Yuna",
+        text: "(A reply arrives after a long time.) '...Why are you contacting me? I'm busy, so don't bother me. Good night.'",
+        character: "assets/images/characters/yuna_nomal.png",
+        silhouette: true,
+        night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_dain": {
+        name: "Me",
+        text: "(What message should I send to Dain?)",
         branches: [
             { next: "day2_night_message_dain_after", condition: "day2_met_dain_after" },
             { next: "day2_night_message_dain_lunch", condition: "day2_met_dain_lunch" },
@@ -165,6 +231,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_night_message_dain_after": {
+        name: "Me",
+        text: "(I remember what happened during practice. What message should I send?)",
         branches: [
             { next: "day2_night_message_dain_bet", condition: "day2_dain_bet" },
             { next: "day2_night_message_dain_practice" }
@@ -208,9 +276,41 @@ Object.assign(SCENARIO[2], {
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. Dain has sent an energetic reply to the protagonist's message. After the conversation, the protagonist will fall asleep, looking forward to tomorrow. At the end of the conversation, please naturally end the conversation by saying good night since it's late, or by saying see you at school tomorrow.",
         night: true,
         stats: { Dain: { affinity: 3 } },
+        affinityChar: "Dain",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_night_message_dain_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_dain_reply_normal" },
+            { minAffinity: -100, next: "day2_night_message_dain_reply_low" }
+        ],
+        next: "day2_final_scene"
+    },
+    "day2_night_message_dain_reply_high": {
+        name: "Dain",
+        text: "(A lively reply.) 'Of course! I'm going to win, so have your wallet ready! Haha, actually, I was thinking about you too. Good night, {name?}! See you tomorrow!'",
+        character: "assets/images/characters/dain_nomal.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_dain_reply_normal": {
+        name: "Dain",
+        text: "(A lively reply.) 'Of course! I'm going to win, so have your wallet ready! Haha, good night, {name?}!'",
+        character: "assets/images/characters/dain_nomal.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_dain_reply_low": {
+        name: "Dain",
+        text: "(A short reply.) '...Yeah. I'm tired, so I'm going to sleep. See you.'",
+        character: "assets/images/characters/dain_nomal.png",
+        silhouette: true,
+        night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_nurse": {
+        name: "Me",
+        text: "(What message should I send to the Nurse?)",
         branches: [
             { next: "day2_night_message_nurse_rest", condition: "day2_met_nurse_after" },
             { next: "day2_night_message_nurse_rest", condition: "wokeUpInNurseRoom" },
@@ -241,6 +341,36 @@ Object.assign(SCENARIO[2], {
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Nurse has sent a playful and alluring reply to the protagonist's message. After the conversation, the protagonist will fall asleep, looking forward to tomorrow. At the end of the conversation, please naturally end the conversation by saying good night since it's late, or by saying see you at school tomorrow.",
         night: true,
         stats: { Nurse: { affinity: 3 } },
+        affinityChar: "Nurse",
+        affinityBranches: [
+            { minAffinity: 40, next: "day2_night_message_nurse_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_nurse_reply_normal" },
+            { minAffinity: -100, next: "day2_night_message_nurse_reply_low" }
+        ],
+        next: "day2_final_scene"
+    },
+    "day2_night_message_nurse_reply_high": {
+        name: "Nurse",
+        text: "(An alluring reply.) 'Oh, are you thinking about me already? Actually, I was thinking about you too. Hehe, rest well today and see you tomorrow. Good night, {name?}.'",
+        character: "assets/images/characters/nurse.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_nurse_reply_normal": {
+        name: "Nurse",
+        text: "(An alluring reply.) 'Oh, are you thinking about me already? Hehe, rest well today and see you tomorrow. Good night, {name?}.'",
+        character: "assets/images/characters/nurse.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_nurse_reply_low": {
+        name: "Nurse",
+        text: "(A cold reply.) '...It's late. Don't send messages at this hour. Good night.'",
+        character: "assets/images/characters/nurse.png",
+        silhouette: true,
+        night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_teacher": {
@@ -260,6 +390,36 @@ Object.assign(SCENARIO[2], {
         context: "Night, a situation where you are exchanging smartphone messages from your respective homes. The Teacher is a bit surprised but grateful for the protagonist's message. After the conversation, the protagonist will fall asleep, looking forward to tomorrow. At the end of the conversation, please naturally end the conversation by saying good night since it's late, or by saying see you at school tomorrow.",
         night: true,
         stats: { Teacher: { affinity: 3 } },
+        affinityChar: "Teacher",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_night_message_teacher_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_teacher_reply_normal" },
+            { minAffinity: -100, next: "day2_night_message_teacher_reply_low" }
+        ],
+        next: "day2_final_scene"
+    },
+    "day2_night_message_teacher_reply_high": {
+        name: "Teacher",
+        text: "(A reply arrives immediately.) 'Oh, {name?}. I was just thinking about today too. Thank you for the message. Get some rest and see you tomorrow. Good night.'",
+        character: "assets/images/characters/teacher.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_teacher_reply_normal": {
+        name: "Teacher",
+        text: "(A reply arrives a bit late.) 'Oh, {name?}. I'm a bit surprised to get a message at this hour. But thank you for your concern. Get some rest and don't be late tomorrow.'",
+        character: "assets/images/characters/teacher.png",
+        silhouette: true,
+        night: true,
+        next: "day2_final_scene"
+    },
+    "day2_night_message_teacher_reply_low": {
+        name: "Teacher",
+        text: "(A short reply.) '...It's late. Go to sleep. See you tomorrow.'",
+        character: "assets/images/characters/teacher.png",
+        silhouette: true,
+        night: true,
         next: "day2_final_scene"
     },
     "day2_final_scene": {

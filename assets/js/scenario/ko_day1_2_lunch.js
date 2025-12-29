@@ -178,7 +178,33 @@ Object.assign(SCENARIO[1], {
         context: "점심시간, 학교 옥상에서 단둘이 도시락을 먹고 난 뒤 평화롭고 로맨틱한 분위기에서 대화를 나누는 상황. 대화가 끝나면 서연이가 주인공의 이상형이나 좋아하는 스타일에 대해 물어보는 상황으로 이어집니다. 대화 마무리 시점에 주인공의 취향이 궁금하다는 언급을 하며 자연스럽게 질문을 던져주세요.",
         personality: "평소보다 조금 더 대담하고 솔직해진 상태. 주인공의 취향이나 생각에 대해 깊이 알고 싶어 함.",
         character: "assets/images/characters/seyoun_shy.png",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "rooftop_choices_high" },
+            { minAffinity: 0, next: "rooftop_choices" },
+            { minAffinity: -100, next: "rooftop_choices_low" }
+        ],
         next: "rooftop_choices"
+    },
+    "rooftop_choices_high": {
+        name: "서연",
+        text: "(서연이가 내 눈을 빤히 바라보며 살며시 미소 짓는다.) \"{name}이랑 이렇게 있으니까 정말 꿈만 같아. 너는... 어떤 스타일의 사람을 좋아해? 나, 조금은 기대해도 될까?\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        choices: [
+            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "글쎄, 아직은 잘 모르겠어. 하지만 너랑 있으면 편안해.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
+        ]
+    },
+    "rooftop_choices_low": {
+        name: "서연",
+        text: "(서연이가 실망한 듯 한숨을 내쉰다.) \"{name}... 너랑은 대화가 잘 안 통하는 것 같네. 옥상까지 같이 오긴 했지만... 하아, 아냐. 너는 어떤 스타일의 사람을 좋아하니?\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        choices: [
+            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "글쎄, 아직은 잘 모르겠어. 하지만 너랑 있으면 편안해.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
+        ]
     },
     "rooftop_choices": {
         name: "서연",
@@ -296,7 +322,33 @@ Object.assign(SCENARIO[1], {
         context: "조용한 도서관 별관, 신비롭고 차가운 분위기의 유나와 처음 만난 상황. 대화가 끝나면 유나가 자신이나 학교의 비밀에 대해 더 알고 싶은지 물어보는 상황으로 이어집니다. 대화 마무리 시점에 더 깊은 이야기를 나눌 준비가 되었는지 확인하는 태도를 보여주세요.",
         personality: "신비롭고 차가우며 비밀이 많은 소녀. 주인공에게 묘한 흥미를 느끼고 있음.",
         character: "assets/images/characters/yuna_nomal.png",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 15, next: "yuna_choices_high" },
+            { minAffinity: 0, next: "yuna_choices" },
+            { minAffinity: -100, next: "yuna_choices_low" }
+        ],
         next: "yuna_choices"
+    },
+    "yuna_choices_high": {
+        name: "유나",
+        text: "(유나가 나를 빤히 바라보며 희미하게 미소 짓는다.) \"{name}... 너랑 얘기하니까 기분이 묘해. 마치 어둠 속에서 작은 빛을 발견한 것 같아. 나에 대해... 더 알고 싶니?\"",
+        character: "assets/images/characters/yuna_smile.png",
+        choices: [
+            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
+            { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
+            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
+        ]
+    },
+    "yuna_choices_low": {
+        name: "유나",
+        text: "(유나의 눈빛이 더욱 싸늘해진다.) \"{name}. 넌 정말 무례하고 어리석구나. 그런 태도로는 이 학교에서 살아남기 힘들 거야. ...진실을 감당할 준비조차 안 된 것 같네.\"",
+        character: "assets/images/characters/yuna_sad.png",
+        choices: [
+            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
+            { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
+            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
+        ]
     },
     "yuna_choices": {
         name: "유나",
@@ -517,6 +569,24 @@ Object.assign(SCENARIO[1], {
         text: "\"긴장하지 마. 여기서는 편하게 있어도 된단다. 나한테 궁금한 거라도 있니?\"",
         context: "보건실에서 처음 만난 보건선생님과 대화를 나누는 상황. 선생님은 주인공에게 묘한 흥미를 느끼며 도발적인 태도를 보임. 대화가 끝나면 점심시간이 종료되고 방과 후 상황으로 전환됩니다. 대화 마무리 시점에 이제 수업 들으러 가야 할 시간이라며 주인공을 배웅해 주세요.",
         personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만 사실 누구보다 주인공을 아끼고 보호하려 함.",
+        character: "assets/images/characters/nurse.png",
+        affinityChar: "Nurse",
+        affinityBranches: [
+            { minAffinity: 15, next: "nurse_day1_end_high" },
+            { minAffinity: 0, next: "after_school_start" },
+            { minAffinity: -100, next: "nurse_day1_end_low" }
+        ],
+        next: "after_school_start"
+    },
+    "nurse_day1_end_high": {
+        name: "보건선생님",
+        text: "\"어머, {name}. 너랑 얘기하니까 시간 가는 줄 모르겠네. 벌써 수업 종이 울리겠어. 아쉽지만 오늘은 이만 가보렴. 나중에 또 놀러 와야 해?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "after_school_start"
+    },
+    "nurse_day1_end_low": {
+        name: "보건선생님",
+        text: "\"...{name}. 농담이라도 그런 말은 좀 불쾌하네. 선생님을 우습게 보는 거니? 이제 수업 시간이야. 꾀병 부리지 말고 얼른 교실로 돌아가렴.\"",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"
     }

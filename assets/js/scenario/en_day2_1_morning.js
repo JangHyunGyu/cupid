@@ -214,7 +214,31 @@ Object.assign(SCENARIO[2], {
         context: "Meeting the homeroom teacher at the school gate and walking to the classroom together. After the conversation, the teacher will ask for the protagonist's contact information for the emergency contact list. At the end of the conversation, please find a timing to ask for the number or hint that there is official business to discuss.",
         personality: "A professional teacher who is strict about rules but has a soft spot for the protagonist.",
         character: "assets/images/characters/teacher.png",
+        affinityChar: "Teacher",
+        affinityBranches: [
+            { minAffinity: 20, next: "day2_teacher_contact_ask_high" },
+            { minAffinity: 0, next: "day2_teacher_contact_ask" },
+            { minAffinity: -100, next: "day2_teacher_contact_ask_low" }
+        ],
         next: "day2_teacher_contact_ask"
+    },
+    "day2_teacher_contact_ask_high": {
+        name: "Teacher",
+        text: "\"Oh, talking with {name?} makes me feel so good from the morning! Oh, by the way, I needed your number for the emergency contact list... If you don't mind, could you give it to me now?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        choices: [
+            { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "I'll stop by the office and let you know later.", next: "day2_classroom" }
+        ]
+    },
+    "day2_teacher_contact_ask_low": {
+        name: "Teacher",
+        text: "\"...{name?}. That kind of attitude from the morning is really disappointing. I want to help you too, but it's difficult if you're not cooperative. ...I need your number for the emergency contact list, so please give it to me now.\"",
+        character: "assets/images/characters/teacher_angry.png",
+        choices: [
+            { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "I'll stop by the office and let you know later.", next: "day2_classroom" }
+        ]
     },
     "day2_teacher_contact_ask": {
         name: "Teacher",

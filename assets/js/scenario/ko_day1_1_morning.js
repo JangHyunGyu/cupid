@@ -156,7 +156,35 @@ Object.assign(SCENARIO[1], {
         context: "학교 복도를 함께 걸으며 전학생인 주인공과 가벼운 대화를 나누는 상황. 대화가 끝나면 서연이가 복도를 지나며 학교 시설들을 안내해 주는 상황으로 이어집니다. 대화 마무리 시점에 이제 이동하자고 하거나 안내를 시작하겠다는 언급을 해주세요.",
         personality: "친절하고 상냥하며 책임감 강한 학생회장. 전학생인 주인공에게 호감을 느끼고 있음.",
         character: "assets/images/characters/seyoun_nomal.png",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "hallway_1_3_high" },
+            { minAffinity: 0, next: "hallway_1_3" },
+            { minAffinity: -100, next: "hallway_1_3_low" }
+        ],
         next: "hallway_1_3"
+    },
+    "hallway_1_3_high": {
+        name: "서연",
+        text: "\"와, {name}이랑 얘기하니까 정말 즐겁다! 시간 가는 줄 모르겠어. 자, 이제 복도를 지나면서 학교 시설들을 간단히 설명해줄게.\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        choices: [
+            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
+        ]
+    },
+    "hallway_1_3_low": {
+        name: "서연",
+        text: "\"...{name}. 전학 첫날부터 그런 무례한 태도는 좀 실망이야. 학생회장으로서 안내는 하겠지만, 기분이 좋지는 않네. 자, 따라와.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        choices: [
+            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
+        ]
     },
     "hallway_1_3": {
         name: "서연",
@@ -333,7 +361,37 @@ Object.assign(SCENARIO[1], {
         context: "장소: 2학년 3반 교실 안 교탁 앞. 상황: 담임선생님이 전학생인 주인공을 학생들에게 소개하기 직전의 짧은 대기 시간. 수십 명의 학생들이 우리를 지켜보고 있음. 우리는 이미 교실 한가운데 서 있는 상태이며, 절대 복도가 아님. 교실 안에서 대화를 나누는 중임. 대화가 끝나면 선생님이 학생들에게 주인공을 정식으로 소개하고, 주인공은 교탁 앞에서 자기소개를 해야 하는 상황으로 이어집니다. 대화 마무리 시점에 학생들에게 인사할 준비를 하라고 하거나 자리를 정돈하는 등의 행동을 유도해 주세요.",
         personality: "공과 사가 뚜렷한 전문적인 교사지만 사실 허당기가 있고 주인공의 예상치 못한 어른스러운 모습에 가슴 설레어함. 은근히 주인공에게 기대고 싶어 하는 '갭모에'가 있음.",
         character: "assets/images/characters/teacher_smile.png",
+        affinityChar: "Teacher",
+        affinityBranches: [
+            { minAffinity: 10, next: "classroom_2_3_high" },
+            { minAffinity: -5, next: "classroom_2_3" },
+            { minAffinity: -100, next: "classroom_2_3_low" }
+        ],
         next: "classroom_2_3"
+    },
+    "classroom_2_3_high": {
+        name: "담임선생님",
+        text: "\"어머, {name?}이랑 얘기하니까 선생님도 기분이 좋아지네! 자, 다들 주목! 오늘부터 우리와 함께하게 된 {name}이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        choices: [
+            { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
+            { text: "좋아! 반 친구들이랑 오늘부터 잘 지내보자.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
+            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "만나서 반가워. 조용히 지내는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "공부하러 왔어. 방해받는 건 질색이니까 적당히 지내자.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
+        ]
+    },
+    "classroom_2_3_low": {
+        name: "담임선생님",
+        text: "\"...{name?}. 전학 첫날부터 그런 태도는 곤란해. 선생님은 예의 없는 학생은 별로 좋아하지 않는단다. 자, 다들 주목. 오늘부터 우리 반에서 함께하게 된 {name}이다. ...자기소개라도 제대로 하렴.\"",
+        character: "assets/images/characters/teacher_angry.png",
+        choices: [
+            { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
+            { text: "좋아! 반 친구들이랑 오늘부터 잘 지내보자.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
+            { text: "안녕! 운동하는 걸 좋아하고 활발한 성격이야!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "만나서 반가워. 조용히 지내는 걸 좋아하는 편이야.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "공부하러 왔어. 방해받는 건 질색이니까 적당히 지내자.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
+        ]
     },
     "classroom_2_3": {
         name: "담임선생님",

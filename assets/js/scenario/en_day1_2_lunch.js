@@ -178,7 +178,33 @@ Object.assign(SCENARIO[1], {
         context: "Lunch time, a situation where they are having a conversation in a relaxed and romantic atmosphere after eating lunch boxes alone on the school rooftop. After the conversation, Seoyeon will ask about the protagonist's ideal type or preferred style. At the end of the conversation, please naturally ask the question by mentioning that you're curious about the protagonist's tastes.",
         personality: "A state where she has become a bit more bold and honest than usual. She wants to know deeply about the protagonist's tastes or thoughts.",
         character: "assets/images/characters/seyoun_shy.png",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "rooftop_choices_high" },
+            { minAffinity: 0, next: "rooftop_choices" },
+            { minAffinity: -100, next: "rooftop_choices_low" }
+        ],
         next: "rooftop_choices"
+    },
+    "rooftop_choices_high": {
+        name: "Seoyeon",
+        text: "(Seoyeon stares at me intently and smiles softly.) \"Being with {name} like this feels like a dream. What kind of style of person do you like? Can I... expect a little?\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        choices: [
+            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
+        ]
+    },
+    "rooftop_choices_low": {
+        name: "Seoyeon",
+        text: "(Seoyeon sighs as if disappointed.) \"{name}... I feel like we're not communicating well. We came to the rooftop together, but... sigh, never mind. What kind of style of person do you like?\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        choices: [
+            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
+        ]
     },
     "rooftop_choices": {
         name: "Seoyeon",
@@ -294,7 +320,33 @@ Object.assign(SCENARIO[1], {
         context: "Quiet library annex, a situation where he first met Yuna, who has a mysterious and cold atmosphere. After the conversation, Yuna will ask if you want to know more about her or the school's secrets. At the end of the conversation, please show an attitude of checking if the protagonist is ready to share deeper stories.",
         personality: "A mysterious, cold girl with many secrets. She feels a strange interest in the protagonist.",
         character: "assets/images/characters/yuna_nomal.png",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 15, next: "yuna_choices_high" },
+            { minAffinity: 0, next: "yuna_choices" },
+            { minAffinity: -100, next: "yuna_choices_low" }
+        ],
         next: "yuna_choices"
+    },
+    "yuna_choices_high": {
+        name: "Yuna",
+        text: "(Yuna stares at me intently and smiles faintly.) \"{name}... Talking with you feels strange. It's like finding a small light in the darkness. Do you want to know... more about me?\"",
+        character: "assets/images/characters/yuna_smile.png",
+        choices: [
+            { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
+            { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
+        ]
+    },
+    "yuna_choices_low": {
+        name: "Yuna",
+        text: "(Yuna's gaze becomes even colder.) \"{name}. You're really rude and foolish. With that attitude, it'll be hard to survive in this school. ...It seems you're not even ready to handle the truth.\"",
+        character: "assets/images/characters/yuna_sad.png",
+        choices: [
+            { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
+            { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
+        ]
     },
     "yuna_choices": {
         name: "Yuna",
@@ -510,6 +562,24 @@ Object.assign(SCENARIO[1], {
         text: "\"Don't be nervous. You can be comfortable here. Do you have anything you're curious about?\"",
         context: "A situation where you talk to the nurse you met for the first time in the nurse's office. The teacher shows a provocative attitude, feeling a strange interest in the protagonist. After the conversation, lunch time ends and the situation transitions to after school. At the end of the conversation, please see the protagonist off, saying it's time to go to class.",
         personality: "Mature and seductive 'older sister' style. Enjoys teasing the protagonist with provocative words, but actually cares for and tries to protect the protagonist more than anyone else.",
+        character: "assets/images/characters/nurse.png",
+        affinityChar: "Nurse",
+        affinityBranches: [
+            { minAffinity: 15, next: "nurse_day1_end_high" },
+            { minAffinity: 0, next: "after_school_start" },
+            { minAffinity: -100, next: "nurse_day1_end_low" }
+        ],
+        next: "after_school_start"
+    },
+    "nurse_day1_end_high": {
+        name: "Nurse",
+        text: "\"Oh, {name}. I lost track of time talking to you. The bell is about to ring. It's a shame, but you should go for today. You have to come visit again, okay?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "after_school_start"
+    },
+    "nurse_day1_end_low": {
+        name: "Nurse",
+        text: "\"...{name}. Even as a joke, those words are a bit unpleasant. Are you making fun of me? It's time for class now. Don't fake being sick and get back to your classroom.\"",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"
     }

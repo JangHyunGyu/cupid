@@ -214,7 +214,31 @@ Object.assign(SCENARIO[2], {
         context: "교문 앞에서 담임선생님과 마주쳐 교실로 함께 걸어가는 상황. 대화가 끝나면 선생님이 비상연락망을 위해 주인공의 연락처를 물어보는 상황으로 이어집니다. 대화 마무리 시점에 연락처를 물어볼 타이밍을 잡거나, 공적인 용무가 있다는 뉘앙스를 풍겨주세요.",
         personality: "공과 사가 뚜렷하지만 주인공에게는 은근히 약한 모습을 보이는 담임선생님.",
         character: "assets/images/characters/teacher.png",
+        affinityChar: "Teacher",
+        affinityBranches: [
+            { minAffinity: 20, next: "day2_teacher_contact_ask_high" },
+            { minAffinity: 0, next: "day2_teacher_contact_ask" },
+            { minAffinity: -100, next: "day2_teacher_contact_ask_low" }
+        ],
         next: "day2_teacher_contact_ask"
+    },
+    "day2_teacher_contact_ask_high": {
+        name: "담임선생님",
+        text: "\"어머, {name?} 학생이랑 얘기하니까 아침부터 기분이 참 좋네! 아, 그러고 보니 비상연락망 때문에 네 번호가 필요했는데... 괜찮다면 지금 알려줄래?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        choices: [
+            { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom" }
+        ]
+    },
+    "day2_teacher_contact_ask_low": {
+        name: "담임선생님",
+        text: "\"...{name?}. 아침부터 그런 태도는 정말 실망스럽구나. 선생님도 너를 돕고 싶지만, 네가 협조적이지 않으면 곤란해. ...비상연락망 때문에 번호가 필요하니 지금 알려주렴.\"",
+        character: "assets/images/characters/teacher_angry.png",
+        choices: [
+            { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom" }
+        ]
     },
     "day2_teacher_contact_ask": {
         name: "담임선생님",
