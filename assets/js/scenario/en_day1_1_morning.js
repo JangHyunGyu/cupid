@@ -165,8 +165,8 @@ Object.assign(SCENARIO[1], {
         next: "hallway_1_3"
     },
     "hallway_1_3_high": {
-        name: "Seoyeon",
-        text: "\"Wow, talking with {name} is really fun! I lost track of time. Now, I'll briefly explain the school facilities as we pass through the hallway.\"",
+        name: "Me",
+        text: "(As I talked with Seoyeon, the school facility guidance began before I knew it. I was so engrossed in our conversation that I lost track of time. Now, I decided to follow her and look around the school.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
             { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
@@ -176,8 +176,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "hallway_1_3_low": {
-        name: "Seoyeon",
-        text: "\"...{name}. That kind of rude attitude on the first day of transfer is a bit disappointing. I'll guide you as the student council president, but I'm not in a good mood. Now, follow me.\"",
+        name: "Me",
+        text: "(Seoyeon's expression isn't good. I must have made a mistake during our conversation. she began the school guidance with a cold attitude.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
             { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
@@ -187,8 +187,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "hallway_1_3": {
-        name: "Seoyeon",
-        text: "\"I'll briefly explain the school facilities as we pass through the hallway. That place you see over there is the library, which is our school's pride. And over there is...\"",
+        name: "Me",
+        text: "(I started walking down the hallway under Seoyeon's guidance. She began to kindly explain various parts of the school.)",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
@@ -357,8 +357,8 @@ Object.assign(SCENARIO[1], {
         next: "classroom_2_3"
     },
     "classroom_2_3_high": {
-        name: "Homeroom Teacher",
-        text: "\"Oh my, talking to {name} makes me feel good too! Now, everyone pay attention! This is {name}, who will be with us from today. Everyone, get along well. Now, shall we have a word of introduction?\"",
+        name: "Me",
+        text: "(I was able to relax while talking with the teacher. I'm glad she seems to have a good impression of me. Now it's time to introduce myself in front of the kids.)",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
@@ -369,8 +369,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "classroom_2_3_low": {
-        name: "Homeroom Teacher",
-        text: "\"...{name}. That kind of attitude is problematic from the first day of transfer. I don't really like students who lack manners. Now, everyone pay attention. This is {name}, who will be with us from today. ...At least introduce yourself properly.\"",
+        name: "Me",
+        text: "(The teacher's gaze is sharp. My heart feels heavy as if I've lost points from the first impression. I have to start my introduction in a cold atmosphere.)",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
@@ -381,8 +381,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "classroom_2_3": {
-        name: "Homeroom Teacher",
-        text: "\"Now, everyone pay attention! This is {name}, who will be with us from today. Everyone, get along well. Now, shall we have a word of introduction?\"",
+        name: "Me",
+        text: "(After the conversation with the teacher, the time has finally come to be formally introduced to the class. Numerous eyes are focused on me.)",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },

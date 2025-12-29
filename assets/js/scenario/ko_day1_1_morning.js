@@ -165,8 +165,8 @@ Object.assign(SCENARIO[1], {
         next: "hallway_1_3"
     },
     "hallway_1_3_high": {
-        name: "서연",
-        text: "\"와, {name}이랑 얘기하니까 정말 즐겁다! 시간 가는 줄 모르겠어. 자, 이제 복도를 지나면서 학교 시설들을 간단히 설명해줄게.\"",
+        name: "나",
+        text: "(서연이와 대화를 나누다 보니 어느새 학교 시설 안내가 시작되었다. 그녀와 대화하는 게 정말 즐거워서 시간 가는 줄 몰랐다. 이제 그녀를 따라 학교를 둘러보기로 했다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
             { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
@@ -176,8 +176,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "hallway_1_3_low": {
-        name: "서연",
-        text: "\"...{name}. 전학 첫날부터 그런 무례한 태도는 좀 실망이야. 학생회장으로서 안내는 하겠지만, 기분이 좋지는 않네. 자, 따라와.\"",
+        name: "나",
+        text: "(서연이의 표정이 좋지 않다. 대화 도중 내가 무언가 실수를 한 모양이다. 그녀는 차가운 태도로 학교 안내를 시작했다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
             { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
@@ -187,8 +187,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "hallway_1_3": {
-        name: "서연",
-        text: "\"복도를 지나면서 학교 시설들을 간단히 설명해줄게. 저기 보이는 곳이 우리 학교의 자랑인 도서관이야. 그리고 저쪽은...\"",
+        name: "나",
+        text: "(서연이의 안내를 받으며 복도를 걷기 시작했다. 그녀는 학교 곳곳을 친절하게 설명해주기 시작했다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
@@ -358,8 +358,8 @@ Object.assign(SCENARIO[1], {
         next: "classroom_2_3"
     },
     "classroom_2_3_high": {
-        name: "담임선생님",
-        text: "\"어머, {name}이랑 얘기하니까 선생님도 기분이 좋아지네! 자, 다들 주목! 오늘부터 우리와 함께하게 된 {name}이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
+        name: "나",
+        text: "(선생님과 대화를 나누며 긴장을 풀 수 있었다. 선생님도 나를 좋게 봐주신 것 같아 다행이다. 이제 아이들 앞에서 자기소개를 할 차례다.)",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
@@ -370,8 +370,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "classroom_2_3_low": {
-        name: "담임선생님",
-        text: "\"...{name}. 전학 첫날부터 그런 태도는 곤란해. 선생님은 예의 없는 학생은 별로 좋아하지 않는단다. 자, 다들 주목. 오늘부터 우리 반에서 함께하게 된 {name}이다. ...자기소개라도 제대로 하렴.\"",
+        name: "나",
+        text: "(선생님의 눈빛이 매섭다. 첫인상부터 점수를 깎인 것 같아 마음이 무겁다. 차가운 분위기 속에서 자기소개를 시작해야 한다.)",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
@@ -382,8 +382,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "classroom_2_3": {
-        name: "담임선생님",
-        text: "\"자, 다들 주목! 오늘부터 우리와 함께하게 된 {name}이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
+        name: "나",
+        text: "(선생님과의 대화가 끝나고, 드디어 정식으로 반 아이들에게 소개될 시간이 왔다. 수많은 시선이 나에게 집중된다.)",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },

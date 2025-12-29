@@ -223,8 +223,8 @@ Object.assign(SCENARIO[2], {
         next: "day2_teacher_contact_ask"
     },
     "day2_teacher_contact_ask_high": {
-        name: "담임선생님",
-        text: "\"어머, {name} 학생이랑 얘기하니까 아침부터 기분이 참 좋네! 아, 그러고 보니 비상연락망 때문에 네 번호가 필요했는데... 괜찮다면 지금 알려줄래?\"",
+        name: "나",
+        text: "(선생님과 즐겁게 대화를 나누며 교실로 향했다. 선생님은 아침부터 기분이 좋아 보인다며, 비상연락망 작성을 위해 내 연락처를 물어보셨다.)",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
@@ -232,8 +232,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_teacher_contact_ask_low": {
-        name: "담임선생님",
-        text: "\"...{name}. 아침부터 그런 태도는 정말 실망스럽구나. 선생님도 너를 돕고 싶지만, 네가 협조적이지 않으면 곤란해. ...비상연락망 때문에 번호가 필요하니 지금 알려주렴.\"",
+        name: "나",
+        text: "(선생님의 표정이 굳어졌다. 아침부터 내가 너무 무례하게 굴었나 보다. 선생님은 한숨을 내쉬며 비상연락망 작성을 위해 내 연락처를 알려달라고 하셨다.)",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
@@ -241,8 +241,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_teacher_contact_ask": {
-        name: "담임선생님",
-        text: "\"아, 그러고 보니 비상연락망 때문에 네 번호가 필요했는데... 괜찮다면 지금 알려줄래?\"",
+        name: "나",
+        text: "(선생님과 이런저런 이야기를 나누며 교실로 걸어갔다. 선생님은 비상연락망 작성을 위해 내 연락처가 필요하다며 번호를 물어보셨다.)",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },

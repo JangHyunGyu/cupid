@@ -189,8 +189,8 @@ Object.assign(SCENARIO[1], {
         next: "rooftop_choices"
     },
     "rooftop_choices_high": {
-        name: "Seoyeon",
-        text: "(Seoyeon stares at me intently and smiles softly.) \"Being with {name} like this feels like a dream. What kind of style of person do you like? Can I... expect a little?\"",
+        name: "Me",
+        text: "(As I talked with Seoyeon, the atmosphere became strange. She is staring at me intently and smiling softly. She asked me what kind of style of person I like.)",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
             { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
@@ -199,8 +199,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "rooftop_choices_low": {
-        name: "Seoyeon",
-        text: "(Seoyeon sighs as if disappointed.) \"{name}... I feel like we're not communicating well. We came to the rooftop together, but... sigh, never mind. What kind of style of person do you like?\"",
+        name: "Me",
+        text: "(Seoyeon's expression is dark. It seems the conversation didn't go well. She sighed as if disappointed, then changed the subject and asked about the style of person I like.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
             { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
@@ -209,8 +209,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "rooftop_choices": {
-        name: "Seoyeon",
-        text: "(She sparkles her eyes, waiting for my answer.)",
+        name: "Me",
+        text: "(I finished the conversation with Seoyeon. She is looking at me with sparkling eyes, as if waiting for my answer.)",
         choices: [
             { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
@@ -355,8 +355,8 @@ Object.assign(SCENARIO[1], {
         next: "yuna_choices"
     },
     "yuna_choices_high": {
-        name: "Yuna",
-        text: "(Yuna stares at me intently and smiles faintly.) \"{name}... Talking with you feels strange. It's like finding a small light in the darkness. Do you want to know... more about me?\"",
+        name: "Me",
+        text: "(As I talked with Yuna, I felt like I was gradually falling into her mysterious atmosphere. She stared at me intently and smiled faintly, then asked if I wanted to know more about her.)",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
             { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
@@ -365,8 +365,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "yuna_choices_low": {
-        name: "Yuna",
-        text: "(Yuna's gaze becomes even colder.) \"{name}. You're really rude and foolish. With that attitude, it'll be hard to survive in this school. ...It seems you're not even ready to handle the truth.\"",
+        name: "Me",
+        text: "(Yuna's gaze became even colder. It seems my attitude offended her. She spat out words as if warning me in a cold voice.)",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
@@ -375,8 +375,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "yuna_choices": {
-        name: "Yuna",
-        text: "(Her purple eyes seem to pierce through me.)",
+        name: "Me",
+        text: "(The conversation with Yuna has come to an end. Her purple eyes still maintain a gaze that seems to pierce through me.)",
         choices: [
             { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
             { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
@@ -601,14 +601,14 @@ Object.assign(SCENARIO[1], {
         next: "after_school_start"
     },
     "nurse_day1_end_high": {
-        name: "Nurse",
-        text: "\"Oh, {name}. I lost track of time talking to you. The bell is about to ring. It's a shame, but you should go for today. You have to come visit again, okay?\"",
+        name: "Me",
+        text: "(While talking with the teacher, it was already time for class. The teacher also seemed disappointed and told me to definitely visit again later. I should head back to the classroom now.)",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"
     },
     "nurse_day1_end_low": {
-        name: "Nurse",
-        text: "\"...{name}. Even as a joke, those words are a bit unpleasant. Are you making fun of me? It's time for class now. Don't fake being sick and get back to your classroom.\"",
+        name: "Me",
+        text: "(The teacher's expression hardened. It seems my joke went too far. The teacher showed her displeasure and told me to get back to the classroom quickly.)",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"
     }

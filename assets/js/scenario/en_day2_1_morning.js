@@ -223,8 +223,8 @@ Object.assign(SCENARIO[2], {
         next: "day2_teacher_contact_ask"
     },
     "day2_teacher_contact_ask_high": {
-        name: "Teacher",
-        text: "\"Oh, talking with {name} makes me feel so good from the morning! Oh, by the way, I needed your number for the emergency contact list... If you don't mind, could you give it to me now?\"",
+        name: "Me",
+        text: "(I walked to the classroom while having a pleasant conversation with the teacher. She said she felt great starting the morning with such a talk and asked for my number for the emergency contact list.)",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
@@ -232,8 +232,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_teacher_contact_ask_low": {
-        name: "Teacher",
-        text: "\"...{name}. That kind of attitude from the morning is really disappointing. I want to help you too, but it's difficult if you're not cooperative. ...I need your number for the emergency contact list, so please give it to me now.\"",
+        name: "Me",
+        text: "(The teacher's expression hardened. I must have been too rude this morning. She sighed and asked for my number, saying she needed it for the emergency contact list.)",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
@@ -241,8 +241,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_teacher_contact_ask": {
-        name: "Teacher",
-        text: "\"Oh, by the way, I needed your number for the emergency contact list... If you don't mind, could you give it to me now?\"",
+        name: "Me",
+        text: "(I walked to the classroom while chatting with the teacher about various things. She asked for my contact information, saying she needed it for the emergency contact list.)",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },

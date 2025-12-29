@@ -582,8 +582,8 @@ Object.assign(SCENARIO[1], {
         next: "after_dain_3"
     },
     "after_dain_3_high": {
-        name: "다인",
-        text: "\"와, {name}! 너랑 얘기하니까 시간 가는 줄 모르겠어! 나 마지막 세트만 후딱 끝내고 같이 맛있는 거 먹으러 가자!\"",
+        name: "나",
+        text: "(다인이와 대화를 나누다 보니 시간 가는 줄 몰랐다. 그녀의 밝은 에너지 덕분에 나까지 기분이 좋아진다. 다인이는 마지막 연습 세트를 끝내고 같이 맛있는 걸 먹으러 가자고 제안했다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -594,8 +594,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_dain_3_low": {
-        name: "다인",
-        text: "\"어이, {name}. 너 아까부터 말이 좀 심한 거 아냐? 나도 연습하느라 힘든데 기운 빠지게... 하아, 됐다. 마지막 세트만 끝내고 갈 거니까 기다리든가 말든가.\"",
+        name: "나",
+        text: "(다인이의 표정이 좋지 않다. 연습하느라 예민한 그녀에게 내가 실언을 한 모양이다. 그녀는 퉁명스럽게 마지막 세트만 끝내고 가겠다고 말했다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_angry.png",
         sunset: true,
@@ -606,8 +606,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_dain_3": {
-        name: "다인",
-        text: "\"어이, {name}! 잠깐만 기다려! 나 마지막 세트만 끝내고 같이 맛있는 거 먹으러 가자!\"",
+        name: "나",
+        text: "(다인이와 즐겁게 대화를 마쳤다. 그녀는 마지막 연습 세트를 마무리할 테니 잠시만 기다려 달라고 했다. 연습이 끝나면 같이 맛있는 걸 먹으러 가기로 했다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,

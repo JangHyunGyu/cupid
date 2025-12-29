@@ -582,8 +582,8 @@ Object.assign(SCENARIO[1], {
         next: "after_dain_3"
     },
     "after_dain_3_high": {
-        name: "Dain",
-        text: "\"Whoa, {name}! I lost track of time talking to you! Let me finish this last set real quick and we'll go grab something to eat!\"",
+        name: "Me",
+        text: "(I lost track of time talking to Dain. Her bright energy is infectious. She suggested finishing her last practice set and then going to grab something delicious to eat together.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -594,8 +594,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_dain_3_low": {
-        name: "Dain",
-        text: "\"Hey, {name}. Haven't you been a bit harsh since earlier? I'm already tired from practice, and you're just draining my energy... Sigh, whatever. I'm finishing this last set, so wait if you want.\"",
+        name: "Me",
+        text: "(Dain doesn't look happy. I must have said something insensitive while she was already exhausted from practice. She bluntly told me she's finishing her last set and that I can wait if I want.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_angry.png",
         sunset: true,
@@ -606,8 +606,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_dain_3": {
-        name: "Dain",
-        text: "\"Hey, {name}! Wait a second! Let me finish this last set and we'll go grab something to eat!\"",
+        name: "Me",
+        text: "(I had a pleasant conversation with Dain. She asked me to wait a moment while she finishes her last practice set. We decided to go grab something to eat once she's done.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,

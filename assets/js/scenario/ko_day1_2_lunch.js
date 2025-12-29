@@ -189,8 +189,8 @@ Object.assign(SCENARIO[1], {
         next: "rooftop_choices"
     },
     "rooftop_choices_high": {
-        name: "서연",
-        text: "(서연이가 내 눈을 빤히 바라보며 살며시 미소 짓는다.) \"{name}이랑 이렇게 있으니까 정말 꿈만 같아. 너는... 어떤 스타일의 사람을 좋아해? 나, 조금은 기대해도 될까?\"",
+        name: "나",
+        text: "(서연이와 대화를 나누다 보니 분위기가 묘해졌다. 그녀는 내 눈을 빤히 바라보며 살며시 미소 짓고 있다. 그녀가 나에게 어떤 스타일의 사람을 좋아하는지 물어왔다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
             { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
@@ -199,8 +199,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "rooftop_choices_low": {
-        name: "서연",
-        text: "(서연이가 실망한 듯 한숨을 내쉰다.) \"{name}... 너랑은 대화가 잘 안 통하는 것 같네. 옥상까지 같이 오긴 했지만... 하아, 아냐. 너는 어떤 스타일의 사람을 좋아하니?\"",
+        name: "나",
+        text: "(서연이의 표정이 어둡다. 대화가 잘 풀리지 않은 모양이다. 그녀는 실망한 듯 한숨을 내쉬더니, 화제를 돌려 내가 좋아하는 스타일에 대해 물었다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
             { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
@@ -209,8 +209,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "rooftop_choices": {
-        name: "서연",
-        text: "(그녀가 내 대답을 기다리며 눈을 반짝인다.)",
+        name: "나",
+        text: "(서연이와 즐겁게 대화를 마쳤다. 그녀는 내 대답을 기다리는 듯 눈을 반짝이며 나를 바라보고 있다.)",
         choices: [
             { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
@@ -395,8 +395,8 @@ Object.assign(SCENARIO[1], {
         next: "yuna_choices"
     },
     "yuna_choices_high": {
-        name: "유나",
-        text: "(유나가 나를 빤히 바라보며 희미하게 미소 짓는다.) \"{name}... 너랑 얘기하니까 기분이 묘해. 마치 어둠 속에서 작은 빛을 발견한 것 같아. 나에 대해... 더 알고 싶니?\"",
+        name: "나",
+        text: "(유나와 대화를 나누다 보니 그녀의 신비로운 분위기에 점점 빠져드는 기분이다. 그녀는 나를 빤히 바라보며 희미하게 미소 짓더니, 자신에 대해 더 알고 싶은지 물었다.)",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
             { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
@@ -405,8 +405,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "yuna_choices_low": {
-        name: "유나",
-        text: "(유나의 눈빛이 더욱 싸늘해진다.) \"{name}. 넌 정말 무례하고 어리석구나. 그런 태도로는 이 학교에서 살아남기 힘들 거야. ...진실을 감당할 준비조차 안 된 것 같네.\"",
+        name: "나",
+        text: "(유나의 눈빛이 더욱 싸늘해졌다. 내 태도가 그녀의 심기를 건드린 모양이다. 그녀는 차가운 목소리로 경고하듯 말을 내뱉었다.)",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
@@ -415,8 +415,8 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "yuna_choices": {
-        name: "유나",
-        text: "(그녀의 보랏빛 눈동자가 나를 꿰뚫어 보는 듯하다.)",
+        name: "나",
+        text: "(유나와의 대화가 일단락되었다. 그녀의 보랏빛 눈동자는 여전히 나를 꿰뚫어 보는 듯한 시선을 유지하고 있다.)",
         choices: [
             { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
             { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
@@ -643,14 +643,14 @@ Object.assign(SCENARIO[1], {
         next: "after_school_start"
     },
     "nurse_day1_end_high": {
-        name: "보건선생님",
-        text: "\"어머, {name}. 너랑 얘기하니까 시간 가는 줄 모르겠네. 벌써 수업 종이 울리겠어. 아쉽지만 오늘은 이만 가보렴. 나중에 또 놀러 와야 해?\"",
+        name: "나",
+        text: "(선생님과 대화하다 보니 어느새 수업 시간이 다 되었다. 선생님도 아쉬운 듯 나중에 꼭 다시 놀러 오라고 말씀하셨다. 이제 교실로 돌아가야겠다.)",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"
     },
     "nurse_day1_end_low": {
-        name: "보건선생님",
-        text: "\"...{name}. 농담이라도 그런 말은 좀 불쾌하네. 선생님을 우습게 보는 거니? 이제 수업 시간이야. 꾀병 부리지 말고 얼른 교실로 돌아가렴.\"",
+        name: "나",
+        text: "(선생님의 표정이 굳어졌다. 내 농담이 지나쳤던 모양이다. 선생님은 불쾌한 기색을 내비치며 얼른 교실로 돌아가라고 하셨다.)",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"
     }
