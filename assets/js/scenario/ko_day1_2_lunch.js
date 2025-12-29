@@ -193,7 +193,7 @@ Object.assign(SCENARIO[1], {
         text: "(서연이가 내 눈을 빤히 바라보며 살며시 미소 짓는다.) \"{name}이랑 이렇게 있으니까 정말 꿈만 같아. 너는... 어떤 스타일의 사람을 좋아해? 나, 조금은 기대해도 될까?\"",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
-            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
             { text: "글쎄, 아직은 잘 모르겠어. 하지만 너랑 있으면 편안해.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
@@ -203,7 +203,7 @@ Object.assign(SCENARIO[1], {
         text: "(서연이가 실망한 듯 한숨을 내쉰다.) \"{name}... 너랑은 대화가 잘 안 통하는 것 같네. 옥상까지 같이 오긴 했지만... 하아, 아냐. 너는 어떤 스타일의 사람을 좋아하니?\"",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
             { text: "글쎄, 아직은 잘 모르겠어. 하지만 너랑 있으면 편안해.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
@@ -217,6 +217,18 @@ Object.assign(SCENARIO[1], {
             { text: "글쎄, 아직은 잘 모르겠어. 하지만 너랑 있으면 편안해.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
+    "rooftop_destiny_high": {
+        name: "서연",
+        text: "(그녀가 얼굴을 붉히며 내 손을 꼭 잡는다. 손끝이 따뜻하게 맞닿는다.)",
+        character: "assets/images/characters/seyoun_shy2.png",
+        next: "rooftop_destiny_high_2"
+    },
+    "rooftop_destiny_high_2": {
+        name: "서연",
+        text: "\"운명... 나도 그렇게 느꼈어. 처음 봤을 때부터 왠지 특별한 인연일 것 같았거든. {name}, 앞으로도 계속... 내 곁에 있어줄래?\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_destiny": {
         name: "서연",
         text: "(그녀가 수줍게 웃으며 살며시 내 손 위에 자신의 손을 포갠다.)",
@@ -227,6 +239,18 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"운명... 후훗, 참 듣기 좋다. 우리, 앞으로도 즐거운 추억 많이 만들자. 약속이야?\"",
         character: "assets/images/characters/seyoun_shy.png",
+        next: "seyoun_contact_exchange"
+    },
+    "rooftop_destiny_low": {
+        name: "서연",
+        text: "(그녀가 황급히 손을 빼며 당황한 표정을 짓는다.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "rooftop_destiny_low_2"
+    },
+    "rooftop_destiny_low_2": {
+        name: "서연",
+        text: "\"운명이라니... 너무 성급한 거 아냐? 우리 아직 서로를 잘 모르잖아. 조금... 천천히 가자.\"",
+        character: "assets/images/characters/seyoun_pout.png",
         next: "seyoun_contact_exchange"
     },
     "rooftop_kind": {

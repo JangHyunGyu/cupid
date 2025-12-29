@@ -76,14 +76,41 @@ Object.assign(SCENARIO[2], {
         night: true,
         choices: [
             { text: "Seoyeon, why do you work so hard?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "Let's go now. I'll walk you home.", next: "day2_seoyeon_home", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "(Give her a shoulder massage)", next: "day2_seoyeon_massage", stats: { Seoyeon: { affinity: 10 } } }
+            { 
+                text: "Let's go now. I'll walk you home.", 
+                next: "day2_seoyeon_home",
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 25, next: "day2_seoyeon_home_high" },
+                    { minAffinity: 0, next: "day2_seoyeon_home" },
+                    { minAffinity: -100, next: "day2_seoyeon_home_low" }
+                ],
+                stats: { Seoyeon: { affinity: 8 } }
+            },
+            { 
+                text: "(Give her a shoulder massage)", 
+                next: "day2_seoyeon_massage",
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 25, next: "day2_seoyeon_massage_high" },
+                    { minAffinity: 0, next: "day2_seoyeon_massage" },
+                    { minAffinity: -100, next: "day2_seoyeon_massage_low" }
+                ],
+                stats: { Seoyeon: { affinity: 10 } }
+            }
         ]
     },
     "day2_seoyeon_why": {
         name: "Seoyeon",
         text: "\"Well... someone has to do it. And I like to think that if I do my best, the school might become a slightly better place.\"",
         character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day2_seoyeon_night_talk"
+    },
+    "day2_seoyeon_home_high": {
+        name: "Seoyeon",
+        text: "\"Really...? (Seoyeon smiles brightly and gently takes my arm) I actually wanted to walk with {name}. Tonight is so nice...\"",
+        character: "assets/images/characters/seyoun_shy2.png",
         night: true,
         next: "day2_seoyeon_night_talk"
     },
@@ -94,11 +121,34 @@ Object.assign(SCENARIO[2], {
         night: true,
         next: "day2_seoyeon_night_talk"
     },
+    "day2_seoyeon_home_low": {
+        name: "Seoyeon",
+        text: "\"I'm fine, I can go alone. Thanks for helping today though.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        night: true,
+        stats: { Seoyeon: { affinity: -8 } },
+        next: "day2_seoyeon_night_talk"
+    },
+    "day2_seoyeon_massage_high": {
+        name: "Seoyeon",
+        text: "\"Mmm... {name}... (Seoyeon happily closes her eyes and relaxes) That feels so good... I didn't know your hands were so warm. Just a little more...\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        next: "day2_seoyeon_night_talk"
+    },
     "day2_seoyeon_massage": {
         name: "Seoyeon",
         text: "\"Ah... {name?}! If you do that so suddenly... (She flinches for a moment, but then relaxes and closes her eyes) ...That feels good. Thank you.\"",
         character: "assets/images/characters/seyoun_shy.png",
         night: true,
+        next: "day2_seoyeon_night_talk"
+    },
+    "day2_seoyeon_massage_low": {
+        name: "Seoyeon",
+        text: "(Seoyeon quickly pulls away, looking uncomfortable) \"What are you doing... That's uncomfortable.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        night: true,
+        stats: { Seoyeon: { affinity: -10 } },
         next: "day2_seoyeon_night_talk"
     },
     "day2_seoyeon_night_talk": {
@@ -230,7 +280,17 @@ Object.assign(SCENARIO[2], {
         night: true,
         choices: [
             { text: "What does this even mean?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 4 } } },
-            { text: "(Taking Yuna's hand) This place is creepy. Let's get out of here.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 6 } } },
+            { 
+                text: "(Taking Yuna's hand) This place is creepy. Let's get out of here.", 
+                next: "day2_yuna_scary",
+                affinityChar: "Yuna",
+                affinityBranches: [
+                    { minAffinity: 20, next: "day2_yuna_scary_high" },
+                    { minAffinity: 0, next: "day2_yuna_scary" },
+                    { minAffinity: -100, next: "day2_yuna_scary_low" }
+                ],
+                stats: { Yuna: { affinity: 6 } }
+            },
             { text: "This eye... it feels like it's watching us.", next: "day2_yuna_eye", stats: { Yuna: { affinity: 8 } } }
         ]
     },
@@ -241,11 +301,27 @@ Object.assign(SCENARIO[2], {
         night: true,
         next: "day2_yuna_night_talk"
     },
+    "day2_yuna_scary_high": {
+        name: "Yuna",
+        text: "(Yuna gently holds my hand and smiles softly.) \"...Your hand is warm. It's been so long since I felt this kind of warmth. Okay, let's go. But... don't let go of my hand.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        night: true,
+        stats: { Yuna: { affinity: 5 } },
+        next: "day2_yuna_night_talk"
+    },
     "day2_yuna_scary": {
         name: "Yuna",
         text: "\"...Your hand is so warm. Okay, let's call it a day.\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
+        next: "day2_yuna_night_talk"
+    },
+    "day2_yuna_scary_low": {
+        name: "Yuna",
+        text: "(Yuna coldly pulls her hand away.) \"...Why are you grabbing my hand? Scared? How bold for a coward. If you want to leave, go alone.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        stats: { Yuna: { affinity: -10 } },
         next: "day2_yuna_night_talk"
     },
     "day2_yuna_eye": {

@@ -76,14 +76,41 @@ Object.assign(SCENARIO[2], {
         night: true,
         choices: [
             { text: "서연이는 왜 그렇게 열심히야?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "이제 그만 가자. 집까지 데려다줄게.", next: "day2_seoyeon_home", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "(어깨를 주물러준다)", next: "day2_seoyeon_massage", stats: { Seoyeon: { affinity: 10 } } }
+            { 
+                text: "이제 그만 가자. 집까지 데려다줄게.", 
+                next: "day2_seoyeon_home",
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 25, next: "day2_seoyeon_home_high" },
+                    { minAffinity: 0, next: "day2_seoyeon_home" },
+                    { minAffinity: -100, next: "day2_seoyeon_home_low" }
+                ],
+                stats: { Seoyeon: { affinity: 8 } }
+            },
+            { 
+                text: "(어깨를 주물러준다)", 
+                next: "day2_seoyeon_massage",
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 25, next: "day2_seoyeon_massage_high" },
+                    { minAffinity: 0, next: "day2_seoyeon_massage" },
+                    { minAffinity: -100, next: "day2_seoyeon_massage_low" }
+                ],
+                stats: { Seoyeon: { affinity: 10 } }
+            }
         ]
     },
     "day2_seoyeon_why": {
         name: "서연",
         text: "\"음... 그냥, 누군가는 해야 할 일이니까. 그리고 내가 최선을 다하면 학교가 조금이라도 좋아지지 않을까 싶어서.\"",
         character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day2_seoyeon_night_talk"
+    },
+    "day2_seoyeon_home_high": {
+        name: "서연",
+        text: "\"정말...? (서연이가 환하게 웃으며 내 팔을 살며시 잡는다) 사실 {name}이랑 같이 가고 싶었어. 오늘 밤 정말 좋다...\"",
+        character: "assets/images/characters/seyoun_shy2.png",
         night: true,
         next: "day2_seoyeon_night_talk"
     },
@@ -94,11 +121,34 @@ Object.assign(SCENARIO[2], {
         night: true,
         next: "day2_seoyeon_night_talk"
     },
+    "day2_seoyeon_home_low": {
+        name: "서연",
+        text: "\"아.. 괜찮아, 혼자 갈 수 있어. 오늘 도와줘서 고마웠어.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        night: true,
+        stats: { Seoyeon: { affinity: -8 } },
+        next: "day2_seoyeon_night_talk"
+    },
+    "day2_seoyeon_massage_high": {
+        name: "서연",
+        text: "\"으응... {name}... (서연이가 기분 좋게 눈을 감고 몸을 맡긴다) 정말 시원해... 네 손이 이렇게 따뜻한 줄 몰랐어. 조금만 더...\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        next: "day2_seoyeon_night_talk"
+    },
     "day2_seoyeon_massage": {
         name: "서연",
-        text: "\"앗... {name?}! 갑자기 이러면... (서연의 몸이 움찔하더니 이내 긴장을 풀고 눈을 감는다) ...시원하다. 고마워.\"",
+        text: "\"앗... {name}! 갑자기 이러면... (서연의 몸이 움찔하더니 이내 긴장을 풀고 눈을 감는다) ...시원하다. 고마워.\"",
         character: "assets/images/characters/seyoun_shy.png",
         night: true,
+        next: "day2_seoyeon_night_talk"
+    },
+    "day2_seoyeon_massage_low": {
+        name: "서연",
+        text: "(서연이가 황급히 몸을 빼며 불편한 표정을 짓는다) \"갑자기 뭐야... 좀 불편해.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        night: true,
+        stats: { Seoyeon: { affinity: -10 } },
         next: "day2_seoyeon_night_talk"
     },
     "day2_seoyeon_night_talk": {
@@ -230,7 +280,17 @@ Object.assign(SCENARIO[2], {
         night: true,
         choices: [
             { text: "이게 대체 뭘 의미하는 거야?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 4 } } },
-            { text: "(유나의 손을 잡으며) 무서우니까 이제 나가자.", next: "day2_yuna_scary", stats: { Yuna: { affinity: 6 } } },
+            { 
+                text: "(유나의 손을 잡으며) 무서우니까 이제 나가자.", 
+                next: "day2_yuna_scary",
+                affinityChar: "Yuna",
+                affinityBranches: [
+                    { minAffinity: 20, next: "day2_yuna_scary_high" },
+                    { minAffinity: 0, next: "day2_yuna_scary" },
+                    { minAffinity: -100, next: "day2_yuna_scary_low" }
+                ],
+                stats: { Yuna: { affinity: 6 } }
+            },
             { text: "이 눈... 꼭 우리를 지켜보고 있는 것 같아.", next: "day2_yuna_eye", stats: { Yuna: { affinity: 8 } } }
         ]
     },
@@ -241,11 +301,27 @@ Object.assign(SCENARIO[2], {
         night: true,
         next: "day2_yuna_night_talk"
     },
+    "day2_yuna_scary_high": {
+        name: "유나",
+        text: "(유나가 내 손을 꼭 잡으며 살며시 미소 짓는다.) \"...네 손, 따뜻해. 오랜만에 이런 온기를 느껴봐. 좋아, 나가자. 하지만... 손은 놓지 마.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        night: true,
+        stats: { Yuna: { affinity: 5 } },
+        next: "day2_yuna_night_talk"
+    },
     "day2_yuna_scary": {
         name: "유나",
         text: "\"...손이 따뜻하네. 알았어. 오늘은 이만 돌아가자.\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
+        next: "day2_yuna_night_talk"
+    },
+    "day2_yuna_scary_low": {
+        name: "유나",
+        text: "(유나가 차갑게 손을 뿌리친다.) \"...갑자기 손은 왜 잡아? 무섭다고? 겁쟁이치고는 대담하네. 나가고 싶으면 혼자 나가.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        night: true,
+        stats: { Yuna: { affinity: -10 } },
         next: "day2_yuna_night_talk"
     },
     "day2_yuna_eye": {

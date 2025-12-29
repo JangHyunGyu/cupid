@@ -193,7 +193,7 @@ Object.assign(SCENARIO[1], {
         text: "(Seoyeon stares at me intently and smiles softly.) \"Being with {name} like this feels like a dream. What kind of style of person do you like? Can I... expect a little?\"",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
-            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
             { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
@@ -203,7 +203,7 @@ Object.assign(SCENARIO[1], {
         text: "(Seoyeon sighs as if disappointed.) \"{name}... I feel like we're not communicating well. We came to the rooftop together, but... sigh, never mind. What kind of style of person do you like?\"",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
             { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
             { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
@@ -217,6 +217,18 @@ Object.assign(SCENARIO[1], {
             { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
+    "rooftop_destiny_high": {
+        name: "Seoyeon",
+        text: "(She blushes deeply and squeezes my hand. Our fingertips touch warmly.)",
+        character: "assets/images/characters/seyoun_shy2.png",
+        next: "rooftop_destiny_high_2"
+    },
+    "rooftop_destiny_high_2": {
+        name: "Seoyeon",
+        text: "\"Destiny... I felt the same way. Ever since I first saw you, I thought we might share a special bond. {name}, will you... stay by my side from now on?\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_destiny": {
         name: "Seoyeon",
         text: "(She shyly smiles and gently overlaps her hand on mine.)",
@@ -227,6 +239,18 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"Destiny... Hehe, I really like that word. Let's make many more pleasant memories from now on. Is it a promise?\"",
         character: "assets/images/characters/seyoun_shy.png",
+        next: "seyoun_contact_exchange"
+    },
+    "rooftop_destiny_low": {
+        name: "Seoyeon",
+        text: "(She quickly pulls her hand away, looking flustered.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "rooftop_destiny_low_2"
+    },
+    "rooftop_destiny_low_2": {
+        name: "Seoyeon",
+        text: "\"Destiny? Isn't that a bit too fast? We barely know each other yet. Let's... take it slow.\"",
+        character: "assets/images/characters/seyoun_pout.png",
         next: "seyoun_contact_exchange"
     },
     "rooftop_kind": {
