@@ -193,28 +193,28 @@ Object.assign(SCENARIO[1], {
         text: "(서연이와 대화를 나누다 보니 분위기가 묘해졌다. 그녀는 내 눈을 빤히 바라보며 살며시 미소 짓고 있다. 그녀가 나에게 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어왔다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
-            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "글쎄, 아직은 잘 모르겠어. 하지만 너랑 있으면 편안해.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
     "rooftop_choices_low": {
         name: "나",
-        text: "(서연이의 표정이 어둡다. 대화가 잘 풀리지 않은 모양이다. 그녀는 조금 혼란스러운 듯 한숨을 내쉬더니, 너랑 있으면 편하고 좋은데 왜 그런 것 같은지 물어왔다.)",
+        text: "(서연이의 표정이 어둡다. 대화가 잘 풀리지 않은 모양이다. 그녀는 조금 혼란스러운 듯 한숨을 내쉬더니, 그래도 나랑 있으면 편하고 좋은데 왜 그런 것 같은지 물어왔다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
+            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "글쎄, 아직은 잘 모르겠어. 하지만 너랑 있으면 편안해.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
     "rooftop_choices": {
         name: "나",
         text: "(서연이와 즐겁게 대화를 마쳤다. 그녀는 내 대답을 기다리는 듯 눈을 반짝이며 나를 바라보고 있다. 그녀가 나에게 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어왔다.)",
         choices: [
-            { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "운명 같은거 아닐까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "글쎄, 아직은 잘 모르겠어. 하지만 너랑 있으면 편안해.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
     "rooftop_destiny_high": {
