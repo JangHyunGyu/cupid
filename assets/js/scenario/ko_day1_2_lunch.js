@@ -343,7 +343,7 @@ Object.assign(SCENARIO[1], {
     "yuna_choices_low": {
         name: "유나",
         text: "(유나의 눈빛이 더욱 싸늘해진다.) \"{name}. 넌 정말 무례하고 어리석구나. 그런 태도로는 이 학교에서 살아남기 힘들 거야. ...진실을 감당할 준비조차 안 된 것 같네.\"",
-        character: "assets/images/characters/yuna_sad.png",
+        character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
             { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
@@ -544,7 +544,7 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_name_share_pre": {
         name: "나",
-        text: "\"제 이름은 '{name}'이에요.\"",
+        text: "\"제 이름은 '{name}'(이)에요.\"",
         setFlag: "knowsName_Nurse",
         branches: [
             { next: "nurse_name_share_study", condition: "personality_study" },

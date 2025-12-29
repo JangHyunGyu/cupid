@@ -107,18 +107,21 @@ Object.assign(SCENARIO[1], {
         text: "(학생회실 문을 열자, 서류 더미 속에서 고군분투하는 서연이가 보인다.)",
         background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         next: "after_seoyeon_2"
     },
     "after_seoyeon_2": {
         name: "서연",
         text: "(내가 들어서자 서연이가 깜짝 놀라며 고개를 든다. 펜을 내려놓고 기지개를 켜는 그녀.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         next: "after_seoyeon_3"
     },
     "after_seoyeon_3": {
         name: "서연",
         text: "\"어? {name?}! 이 시간에 어쩐 일이야? 설마... 나 기다린 거야?\"",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         choices: [
             { text: "응, 같이 가고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "그냥 얼굴 보고 싶어서. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 3 } } },
@@ -129,24 +132,28 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(서연이의 표정이 순식간에 굳어진다. 다시 서류로 시선을 돌리는 그녀.)",
         character: "assets/images/characters/seyoun_angry.png",
+        sunset: true,
         next: "after_seoyeon_rude_2"
     },
     "after_seoyeon_rude_2": {
         name: "서연",
         text: "\"아... 그래? 그럼 방해하지 말고 나가줄래? 나 좀 바쁘거든.\"",
         character: "assets/images/characters/seyoun_angry.png",
+        sunset: true,
         next: "after_home"
     },
     "after_seoyeon_help": {
         name: "서연",
         text: "(그녀가 감동한 듯 눈을 크게 뜬다. 이내 환하게 웃으며 옆자리를 내어준다.)",
         character: "assets/images/characters/seyoun_laugh.png",
+        sunset: true,
         next: "after_seoyeon_help_dialogue"
     },
     "after_seoyeon_help_dialogue": {
         name: "서연",
         text: "\"정말? 고마워! 네가 도와주면 금방 끝날 것 같아. 자, 이것 좀 정리해줄래?\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        sunset: true,
         next: "after_seoyeon_help_action"
     },
     "after_seoyeon_help_action": {
@@ -166,13 +173,15 @@ Object.assign(SCENARIO[1], {
         text: "(일을 마치고 우리는 학교 앞 작은 카페에 들렀다.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         next: "after_seoyeon_cafe_2"
     },
     "after_seoyeon_cafe_2": {
         name: "서연",
-        text: "(서연이는 생크림이 듬뿍 올라간 음료를 마시며 행복한 표정을 짓는다.)",
+        text: "(서연이는 생크림이 듬뿑 올라간 음료를 마시며 행복한 표정을 짓는다.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         next: "after_seoyeon_cafe_2_2"
     },
     "after_seoyeon_cafe_2_2": {
@@ -328,7 +337,7 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_name_share_pre": {
         name: "나",
-        text: "\"내 이름은 '{name}'이야. 너랑 친해지고 싶어.\"",
+        text: "\"내 이름은 '{name}'(이)야. 너랑 친해지고 싶어.\"",
         setFlag: "knowsName_Yuna",
         next: "yuna_name_share"
     },

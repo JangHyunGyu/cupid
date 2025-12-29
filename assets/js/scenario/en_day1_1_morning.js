@@ -79,13 +79,13 @@ Object.assign(SCENARIO[1], {
     "path_friendly_1_2": {
         name: "Seoyeon",
         text: "\"Hehe, I thought so. It's a bit complicated at first, right? I'll guide you perfectly. Come on!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_1"
     },
     "path_tease_1": {
         name: "Seoyeon",
         text: "(She smiles playfully and winks.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "path_tease_1_2"
     },
     "path_tease_1_2": {
@@ -200,7 +200,7 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_trap": {
         name: "Seoyeon",
         text: "(Seoyeon stops as if flustered and stares at me intently. Her eyes turn a bit cold.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_talk_trap_2"
     },
     "hallway_talk_trap_2": {
@@ -212,7 +212,7 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_club": {
         name: "Seoyeon",
         text: "(She looks at me as if glad.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_talk_club_2"
     },
     "hallway_talk_club_2": {
@@ -284,18 +284,6 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"E-every day...? There's so much work! But if you join... I might be a little happy too. I'll be looking forward to it?\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "classroom_1_1"
-    },
-    "path_club_flower": {
-        name: "Seoyeon",
-        text: "(She playfully taps my shoulder. I feel the distance between us has become much closer. I feel a pleasant warmth from her touch. She looks up at me with a playful expression.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "path_club_flower_2"
-    },
-    "path_club_flower_2": {
-        name: "Seoyeon",
-        text: "\"Hmph... Aren't you quite the player? I was worried because the gardening club has few members, but it'll get noisy if someone like you joins. You have to come, okay? It's a promise?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_1_1"
     },
     "path_normal_2": {

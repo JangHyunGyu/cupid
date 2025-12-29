@@ -107,18 +107,21 @@ Object.assign(SCENARIO[1], {
         text: "(When I open the student council room door, I see Seoyeon struggling amidst a mountain of documents.)",
         background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         next: "after_seoyeon_2"
     },
     "after_seoyeon_2": {
         name: "Seoyeon",
         text: "(As I enter, Seoyeon looks up in surprise. She puts down her pen and stretches.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         next: "after_seoyeon_3"
     },
     "after_seoyeon_3": {
         name: "Seoyeon",
         text: "\"Oh? {name?}! What brings you here at this time? Don't tell me... were you waiting for me?\"",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         choices: [
             { text: "Yeah, I wanted to go home together. Can I help?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "I just wanted to see your face. Aren't you overdoing it?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 3 } } },
@@ -129,24 +132,28 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(Seoyeon's expression hardens instantly. She turns her gaze back to the documents.)",
         character: "assets/images/characters/seyoun_angry.png",
+        sunset: true,
         next: "after_seoyeon_rude_2"
     },
     "after_seoyeon_rude_2": {
         name: "Seoyeon",
         text: "\"Ah... really? Then could you leave without disturbing me? I'm a bit busy right now.\"",
         character: "assets/images/characters/seyoun_angry.png",
+        sunset: true,
         next: "after_home"
     },
     "after_seoyeon_help": {
         name: "Seoyeon",
         text: "(She opens her eyes wide as if moved. Soon, she gives me a bright smile and offers me the seat next to her.)",
         character: "assets/images/characters/seyoun_laugh.png",
+        sunset: true,
         next: "after_seoyeon_help_dialogue"
     },
     "after_seoyeon_help_dialogue": {
         name: "Seoyeon",
         text: "\"Really? Thank you! If you help me, I think I can finish it quickly. Now, can you help me sort these documents?\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        sunset: true,
         next: "after_seoyeon_help_action"
     },
     "after_seoyeon_help_action": {
@@ -166,6 +173,7 @@ Object.assign(SCENARIO[1], {
         text: "(After finishing the work, we stopped by a small cafe in front of the school.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         next: "after_seoyeon_cafe_2"
     },
     "after_seoyeon_cafe_2": {
@@ -173,6 +181,7 @@ Object.assign(SCENARIO[1], {
         text: "(Seoyeon takes a sip of her drink topped with whipped cream, a look of pure bliss on her face.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
+        sunset: true,
         next: "after_seoyeon_cafe_2_2"
     },
     "after_seoyeon_cafe_2_2": {

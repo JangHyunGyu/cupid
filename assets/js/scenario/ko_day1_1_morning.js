@@ -79,13 +79,13 @@ Object.assign(SCENARIO[1], {
     "path_friendly_1_2": {
         name: "서연",
         text: "\"후훗, 역시 그랬구나? 처음 오면 좀 복잡하긴 하지. 내가 완벽하게 가이드해줄게. 자, 따라와!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_1"
     },
     "path_tease_1": {
         name: "서연",
         text: "(그녀가 장난스럽게 웃으며 윙크한다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "path_tease_1_2"
     },
     "path_tease_1_2": {
@@ -200,7 +200,7 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_trap": {
         name: "서연",
         text: "(서연이가 당황한 듯 멈춰 서서 나를 빤히 바라본다. 그녀의 눈빛이 조금 차가워진다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_talk_trap_2"
     },
     "hallway_talk_trap_2": {
@@ -212,7 +212,7 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_club": {
         name: "서연",
         text: "(그녀가 반가운 듯 나를 바라본다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_talk_club_2"
     },
     "hallway_talk_club_2": {
@@ -286,18 +286,7 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_shy.png",
         next: "classroom_1_1"
     },
-    "path_club_flower": {
-        name: "서연",
-        text: "(그녀가 장난스럽게 내 어깨를 살짝 친다. 거리감이 한층 가까워진 기분이다. 그녀의 손길에서 기분 좋은 온기가 느껴진다. 그녀가 장난기 가득한 표정으로 나를 올려다본다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "path_club_flower_2"
-    },
-    "path_club_flower_2": {
-        name: "서연",
-        text: "\"흥.. 너 정말 선수 아니니? 원예부에 부원이 적어서 걱정이었는데, 너 같은 사람이 들어오면 시끌벅적해지겠어. 꼭 와야 한다? 약속한 거다?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "classroom_1_1"
-    },
+
     "path_normal_2": {
         name: "서연",
         text: "(그녀가 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 걸.)",

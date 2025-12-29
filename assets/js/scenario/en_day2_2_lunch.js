@@ -171,7 +171,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_met_low": {
         name: "Yuna",
         text: "(Yuna's gaze becomes even colder.) \"{name}. You're really rude and foolish. With that attitude, you won't be able to handle the truth. ...But I promised yesterday, so I'll show you. Follow me.\"",
-        character: "assets/images/characters/yuna_sad.png",
+        character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "What is it? I want to know.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
             { text: "I'm not here for secrets. I just wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
@@ -190,7 +190,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_new_low": {
         name: "Yuna",
         text: "(Yuna's gaze becomes even colder.) \"{name}. You're really rude and foolish. With that attitude, you won't be able to handle the truth. ...But since you've come this far, I'll show you. Follow me.\"",
-        character: "assets/images/characters/yuna_sad.png",
+        character: "assets/images/characters/yuna_nomal.png",
         setFlag: "metYuna",
         choices: [
             { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },

@@ -341,7 +341,7 @@ Object.assign(SCENARIO[1], {
     "yuna_choices_low": {
         name: "Yuna",
         text: "(Yuna's gaze becomes even colder.) \"{name}. You're really rude and foolish. With that attitude, it'll be hard to survive in this school. ...It seems you're not even ready to handle the truth.\"",
-        character: "assets/images/characters/yuna_sad.png",
+        character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
             { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },

@@ -171,7 +171,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_met_low": {
         name: "유나",
         text: "(유나의 눈빛이 더욱 차가워진다.) \"{name}. 넌 정말 무례하고 어리석구나. 그런 태도로는 진실을 감당할 수 없을 거야. ...하지만 어제 약속했으니 보여주긴 하겠어. 따라와.\"",
-        character: "assets/images/characters/yuna_sad.png",
+        character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
             { text: "비밀 같은 건 관심 없어. 그냥 너랑 이야기하고 싶어서 온 거야.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
@@ -190,7 +190,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_new_low": {
         name: "유나",
         text: "(유나의 눈빛이 더욱 차가워진다.) \"{name}. 넌 정말 무례하고 어리석구나. 그런 태도로는 진실을 감당할 수 없을 거야. ...하지만 네가 여기까지 왔으니 보여주긴 하겠어. 따라와.\"",
-        character: "assets/images/characters/yuna_sad.png",
+        character: "assets/images/characters/yuna_nomal.png",
         setFlag: "metYuna",
         choices: [
             { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },
