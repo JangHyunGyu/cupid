@@ -1133,10 +1133,10 @@ function typeText(text, charName) {
             const elapsed = timestamp - startTime;
             const targetIndex = Math.min(Math.floor(elapsed / speed), processedText.length);
 
-            // 현재 인덱스부터 목표 인덱스까지 한 글자씩 추가 (순서 보장)
-            while (charIndex < targetIndex) {
-                messageEl.textContent += processedText[charIndex];
-                charIndex++;
+            // substring으로 처음부터 해당 위치까지 한 번에 설정 (순서 보장)
+            if (charIndex < targetIndex) {
+                messageEl.textContent = processedText.substring(0, targetIndex);
+                charIndex = targetIndex;
             }
 
             if (charIndex < processedText.length) {
