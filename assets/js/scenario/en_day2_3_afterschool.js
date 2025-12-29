@@ -582,7 +582,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_teacher_3": {
         name: "Homeroom Teacher",
         text: "\"I have a lot of documents to submit this week... Hehe, I'm showing you such a haggard side of me from the very first week of your transfer.\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         choices: [
             { text: "I'll help you. It'll be over soon if we do it together!", next: "day2_after_teacher_work", stats: { Teacher: { affinity: 10 } } },

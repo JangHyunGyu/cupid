@@ -24,7 +24,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(When I open the door to the teacher's office, the homeroom teacher, who was about to eat her lunch, smiles brightly when she sees me.)",
         background: "assets/images/background/teacher_room.png",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_2"
     },
     "day2_lunch_teacher_2": {

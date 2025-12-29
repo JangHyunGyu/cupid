@@ -583,8 +583,8 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_3": {
         name: "담임선생님",
-        text: "\"선생님은 이번 주에 제출할 서류가 좀 많아서... 후훗, 전학 첫 주부터 선생님의 이런 초췌한 모습만 보여주게 되네.\"",
-        character: "assets/images/characters/teacher.png",
+        text: "\"선생님은 이번 주에 제출할 서류가 좀 많아서... 후훈, 전학 첫 주부터 선생님의 이런 초욄한 모습만 보여주게 되네.\"",
+        character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         choices: [
             { text: "제가 도와드릴게요. 같이 하면 금방 끝날 거예요!", next: "day2_after_teacher_work", stats: { Teacher: { affinity: 10 } } },
