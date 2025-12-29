@@ -810,8 +810,59 @@ Object.assign(SCENARIO[1], {
         text: "\"Come, sit. I'll pour you some tea. Why don't we chat for a bit before you head home?\"",
         character: "assets/images/characters/nurse.png",
         branches: [
-            { next: "after_home", condition: "has_number_nurse" },
-            { next: "nurse_after_day1_contact_2" }
+            { next: "nurse_after_day1_contact_already", condition: "has_number_nurse" },
+            { next: "nurse_after_day1_contact_choice" }
+        ]
+    },
+    "nurse_after_day1_contact_already": {
+        name: "Me",
+        text: "(The warm scent of tea reaches my nose. What should I do?)",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "Sure, I'll rest for a bit.", next: "nurse_after_day1_contact_already_stay", stats: { Nurse: { affinity: 5 } } },
+            { text: "I'm a bit tired today...", next: "nurse_after_day1_contact_already_leave" }
+        ]
+    },
+    "nurse_after_day1_contact_already_stay": {
+        name: "Nurse",
+        text: "\"Hehe, how sweet. It must've been a long day, being your first day and all. Take a short break with me.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_after_day1_contact_already_stay_2"
+    },
+    "nurse_after_day1_contact_already_stay_2": {
+        name: "Nurse",
+        text: "\"...Well, it's about time you head home. Contact me anytime if you need anything, okay?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "after_home"
+    },
+    "nurse_after_day1_contact_already_leave": {
+        name: "Nurse",
+        text: "\"Alright, don't push yourself. Contact me anytime if you need anything, okay? Get home safe.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "after_home"
+    },
+    "nurse_after_day1_contact_choice": {
+        name: "Me",
+        text: "(The warm scent of tea reaches my nose. What should I do?)",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "Sure, I'll rest for a bit.", next: "nurse_after_day1_contact_stay", stats: { Nurse: { affinity: 5 } } },
+            { text: "I'm a bit tired today...", next: "nurse_after_day1_contact_2" }
+        ]
+    },
+    "nurse_after_day1_contact_stay": {
+        name: "Nurse",
+        text: "\"Hehe, how sweet. It must've been a long day, being your first day and all. Take a short break with me.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_after_day1_contact_stay_2"
+    },
+    "nurse_after_day1_contact_stay_2": {
+        name: "Nurse",
+        text: "\"...Well, it's about time you head home. {name?}, just in case, do you want to save my number? Contact me anytime if you're sick or have something on your mind.\"",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "Yes, please tell me!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { text: "It's a bit overwhelming for now.", next: "nurse_after_day1_contact_fail", stats: { Nurse: { affinity: -15 } } }
         ]
     },
     "nurse_after_day1_contact_2": {

@@ -811,8 +811,59 @@ Object.assign(SCENARIO[1], {
         text: "\"자, 여기 앉으렴. 따뜻한 차 한 잔 줄게. 나랑 좀 더 이야기하고 갈래?\"",
         character: "assets/images/characters/nurse.png",
         branches: [
-            { next: "after_home", condition: "has_number_nurse" },
-            { next: "nurse_after_day1_contact_2" }
+            { next: "nurse_after_day1_contact_already", condition: "has_number_nurse" },
+            { next: "nurse_after_day1_contact_choice" }
+        ]
+    },
+    "nurse_after_day1_contact_already": {
+        name: "나",
+        text: "(따뜻한 차 향기가 코끝을 스친다. 어떻게 할까?)",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "네, 잠깐 쉬었다 갈게요.", next: "nurse_after_day1_contact_already_stay", stats: { Nurse: { affinity: 5 } } },
+            { text: "오늘은 좀 피곤해서요...", next: "nurse_after_day1_contact_already_leave" }
+        ]
+    },
+    "nurse_after_day1_contact_already_stay": {
+        name: "보건선생님",
+        text: "\"후훗, 착하네. 전학 첫날이라 힘들었지? 선생님이랑 잠깐 쉬어가렴.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_after_day1_contact_already_stay_2"
+    },
+    "nurse_after_day1_contact_already_stay_2": {
+        name: "보건선생님",
+        text: "\"...그래, 이제 슬슬 가봐야겠다. 힘들면 언제든 연락해, 알지?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "after_home"
+    },
+    "nurse_after_day1_contact_already_leave": {
+        name: "보건선생님",
+        text: "\"그래, 무리하지 말고. 힘들면 언제든 연락해, 알지? 조심해서 들어가.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "after_home"
+    },
+    "nurse_after_day1_contact_choice": {
+        name: "나",
+        text: "(따뜻한 차 향기가 코끝을 스친다. 어떻게 할까?)",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "네, 잠깐 쉬었다 갈게요.", next: "nurse_after_day1_contact_stay", stats: { Nurse: { affinity: 5 } } },
+            { text: "오늘은 좀 피곤해서요...", next: "nurse_after_day1_contact_2" }
+        ]
+    },
+    "nurse_after_day1_contact_stay": {
+        name: "보건선생님",
+        text: "\"후훗, 착하네. 전학 첫날이라 힘들었지? 선생님이랑 잠깐 쉬어가렴.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "nurse_after_day1_contact_stay_2"
+    },
+    "nurse_after_day1_contact_stay_2": {
+        name: "보건선생님",
+        text: "\"...그래, 이제 슬슬 가봐야겠다. {name?}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "네, 알려주세요!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { text: "아직은 좀 부담스러워요.", next: "nurse_after_day1_contact_fail", stats: { Nurse: { affinity: -15 } } }
         ]
     },
     "nurse_after_day1_contact_2": {
