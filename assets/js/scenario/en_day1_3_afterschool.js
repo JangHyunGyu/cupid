@@ -477,7 +477,7 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "\"Shh... even walls have ears. Once you know the truth, you can never go back to your ordinary life. If you're still okay with that... take my hand.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "after_yuna_rooftop"
+        next: "after_yuna_know"
     },
     "after_yuna_secret_deep": {
         name: "Yuna",
@@ -497,6 +497,7 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "(Yuna sighs as if disappointed and turns her gaze back to her book.)",
         character: "assets/images/characters/yuna_nomal.png",
+        stats: { Yuna: { affinity: -10 } },
         next: "after_yuna_boring_2"
     },
     "after_yuna_boring_2": {
@@ -509,6 +510,7 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "(She closes her book and looks at me coldly. The air seems to freeze instantly.)",
         character: "assets/images/characters/yuna_nomal.png",
+        stats: { Yuna: { affinity: -15 } },
         next: "after_yuna_rude_2"
     },
     "after_yuna_rude_2": {

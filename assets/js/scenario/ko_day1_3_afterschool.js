@@ -477,7 +477,7 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "\"쉿... 벽에도 귀가 있는 법이야. 진실을 알게 되면 더 이상 평범한 일상으로 돌아갈 수 없어. 그래도 괜찮다면... 내 손을 잡아.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "after_yuna_rooftop"
+        next: "after_yuna_know"
     },
     "after_yuna_secret_deep": {
         name: "유나",
@@ -497,6 +497,7 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "(유나가 한심하다는 듯 한숨을 내쉬며 다시 책으로 시선을 돌린다.)",
         character: "assets/images/characters/yuna_nomal.png",
+        stats: { Yuna: { affinity: -10 } },
         next: "after_yuna_boring_2"
     },
     "after_yuna_boring_2": {
@@ -509,6 +510,7 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "(그녀가 책을 덮고 나를 차갑게 쳐다본다. 공기가 순식간에 얼어붙는 것 같다.)",
         character: "assets/images/characters/yuna_nomal.png",
+        stats: { Yuna: { affinity: -15 } },
         next: "after_yuna_rude_2"
     },
     "after_yuna_rude_2": {
