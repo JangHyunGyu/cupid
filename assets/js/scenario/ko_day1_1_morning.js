@@ -332,7 +332,7 @@ Object.assign(SCENARIO[1], {
         text: "\"자, 다들 전학생한테 관심이 아주 많네. 긴장되겠지만 다들 좋은 아이들이니까 너무 걱정하지 마. 자기소개 하기 전에 나한테 궁금한 거라도 있니?\"",
         context: "장소: 2학년 3반 교실 안 교탁 앞. 상황: 담임선생님이 전학생인 주인공을 학생들에게 소개하기 직전의 짧은 대기 시간. 수십 명의 학생들이 우리를 지켜보고 있음. 우리는 이미 교실 한가운데 서 있는 상태이며, 절대 복도가 아님. 교실 안에서 대화를 나누는 중임. 대화가 끝나면 선생님이 학생들에게 주인공을 정식으로 소개하고, 주인공은 교탁 앞에서 자기소개를 해야 하는 상황으로 이어집니다. 대화 마무리 시점에 학생들에게 인사할 준비를 하라고 하거나 자리를 정돈하는 등의 행동을 유도해 주세요.",
         personality: "공과 사가 뚜렷한 전문적인 교사지만 사실 허당기가 있고 주인공의 예상치 못한 어른스러운 모습에 가슴 설레어함. 은근히 주인공에게 기대고 싶어 하는 '갭모에'가 있음.",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_smile.png",
         next: "classroom_2_3"
     },
     "classroom_2_3": {
@@ -350,7 +350,7 @@ Object.assign(SCENARIO[1], {
     "teacher_name_share": {
         name: "담임선생님",
         text: "\"오, {name}... 이름 참 예쁘네. 자, {name}. 친구들에게 자기소개 한마디 부탁할게.\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "엄청나게 텐션 높게 인사한다!", next: "class_after_party", setFlag: "personality_active" },
             { text: "활발하게 인사한다.", next: "class_after_active", setFlag: "personality_active" },

@@ -79,7 +79,7 @@ Object.assign(SCENARIO[1], {
     "after_teacher_info": {
         name: "담임선생님",
         text: "\"그래, 우리 학교는 역사가 깊어서 숨겨진 곳이 많단다. 나중에 선생님이 천천히 안내해줄게.\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact"
     },

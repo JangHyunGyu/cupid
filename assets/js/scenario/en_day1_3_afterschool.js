@@ -79,7 +79,7 @@ Object.assign(SCENARIO[1], {
     "after_teacher_info": {
         name: "Homeroom Teacher",
         text: "\"Yes, our school has a long history, so there are many hidden places. I'll show you around slowly later.\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact"
     },

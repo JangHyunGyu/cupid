@@ -332,7 +332,7 @@ Object.assign(SCENARIO[1], {
         text: "\"Now, everyone is very interested in you. You must be nervous, but they're all good kids, so don't worry too much. Do you have any questions for me before you introduce yourself?\"",
         context: "Place: Inside Class 2-3, in front of the podium. Situation: A short waiting time just before the homeroom teacher introduces the transfer student protagonist to the students. Dozens of students are watching us. We are already in the middle of the classroom, definitely not in the hallway. We are having a conversation inside the classroom. After the conversation, the teacher will formally introduce the protagonist to the students, and the protagonist will have to introduce themselves in front of the podium. At the end of the conversation, please induce actions such as telling the protagonist to get ready to greet the students or to straighten up.",
         personality: "A professional teacher with a clear distinction between public and private life, but actually has a clumsy side and feels flustered by the protagonist's unexpectedly mature appearance. She has a 'gap moe' where she secretly wants to rely on the protagonist.",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_smile.png",
         next: "classroom_2_3"
     },
     "classroom_2_3": {
@@ -350,7 +350,7 @@ Object.assign(SCENARIO[1], {
     "teacher_name_share": {
         name: "Homeroom Teacher",
         text: "\"Oh, so your name is {name}. It's a very pretty name. Now, {name}. Can you give a word of introduction to your friends?\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "Greet with incredibly high tension!", next: "class_after_party", setFlag: "personality_active" },
             { text: "Greet actively.", next: "class_after_active", setFlag: "personality_active" },
