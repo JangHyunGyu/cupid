@@ -436,13 +436,13 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_sleep_seoyeon": {
         name: "Seoyeon",
-        text: "\"Ah, you're awake? Sorry... You were sleeping so soundly that I felt bad waking you up.\"",
+        text: "\"Hey... {name}? Wake up. Class is starting.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "lunch_sleep_seoyeon_2"
     },
     "lunch_sleep_seoyeon_2": {
         name: "Seoyeon",
-        text: "\"You look tired, so you can sleep more. I'll keep watch for you!\"",
+        text: "\"You were sleeping so soundly, I felt bad waking you... But you can't miss class! Hehe, see you after school!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "after_school_start"

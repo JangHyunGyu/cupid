@@ -438,13 +438,13 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_sleep_seoyeon": {
         name: "서연",
-        text: "\"아, 깼어? 미안... 너무 곤히 자길래 깨우기 미안해서.\"",
+        text: "\"저기... {name}? 일어나. 수업 시작이야.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "lunch_sleep_seoyeon_2"
     },
     "lunch_sleep_seoyeon_2": {
         name: "서연",
-        text: "\"피곤해 보이는데 좀 더 자도 돼. 내가 망 봐줄게!\"",
+        text: "\"너무 곤히 자길래 깨우기 미안했는데... 수업 놓치면 안 되잖아. 후훗, 이따 방과 후에 보자!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "after_school_start"
