@@ -178,7 +178,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_cafe_2": {
         name: "서연",
-        text: "(서연이는 생크림이 듬뿑 올라간 음료를 마시며 행복한 표정을 짓는다.)",
+        text: "(서연이는 생크림이 듬뿍 올라간 음료를 마시며 행복한 표정을 짓는다.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         sunset: true,
