@@ -1085,26 +1085,43 @@ function typeText(text, charName) {
         if (chatSkipBtn) chatSkipBtn.disabled = true;
         skipTyping = false;
         messageEl.textContent = "";
-        let i = 0;
-        const interval = setInterval(() => {
+        let charIndex = 0;
+        let startTime = null;
+        const speed = 15; // ms per char
+
+        function typeFrame(timestamp) {
+            if (!startTime) startTime = timestamp;
+
+            // 스킵 요청 시 즉시 전체 텍스트 표시
             if (skipTyping) {
                 messageEl.textContent = processedText;
-                clearInterval(interval);
                 isTyping = false;
                 if (chatSkipBtn) chatSkipBtn.disabled = false;
                 skipTyping = false;
                 resolve();
                 return;
             }
-            messageEl.textContent += processedText[i];
-            i++;
-            if (i >= processedText.length) {
-                clearInterval(interval);
+
+            // 경과 시간 기반으로 표시할 글자 수 계산
+            const elapsed = timestamp - startTime;
+            const targetIndex = Math.min(Math.floor(elapsed / speed), processedText.length);
+
+            // 현재 인덱스부터 목표 인덱스까지 한 글자씩 추가 (순서 보장)
+            while (charIndex < targetIndex) {
+                messageEl.textContent += processedText[charIndex];
+                charIndex++;
+            }
+
+            if (charIndex < processedText.length) {
+                requestAnimationFrame(typeFrame);
+            } else {
                 isTyping = false;
                 if (chatSkipBtn) chatSkipBtn.disabled = false;
                 resolve();
             }
-        }, 15);
+        }
+
+        requestAnimationFrame(typeFrame);
     });
 }
 
