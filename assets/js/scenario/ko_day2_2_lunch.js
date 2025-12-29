@@ -160,8 +160,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_talk_2_met_high": {
-        name: "유나",
-        text: "(유나가 나를 보며 희미하게 미소 짓는다.) \"{name}... 너랑 얘기하니까 마음이 편안해져. 어제 내가 했던 말... 기억해? 이 학교의 비밀 말이야. 사실 너한테만 보여주고 싶은 게 있어.\"",
+        name: "나",
+        text: "(유나는 나와 대화하며 마음이 편안해졌다고 말했다. 그리고 어제 말했던 학교의 비밀에 대해, 나에게만 보여주고 싶은 것이 있다며 제안해 왔다.)",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
             { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
@@ -169,8 +169,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_talk_2_met_low": {
-        name: "유나",
-        text: "(유나의 눈빛이 더욱 차가워진다.) \"{name}. 넌 정말 무례하고 어리석구나. 그런 태도로는 진실을 감당할 수 없을 거야. ...하지만 어제 약속했으니 보여주긴 하겠어. 따라와.\"",
+        name: "나",
+        text: "(유나의 눈빛이 더욱 차가워졌다. 내 무례한 태도 때문에 진실을 감당할 수 없을 거라며 독설을 내뱉었지만, 어제 약속했으니 일단 따라오라고 했다.)",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
@@ -178,8 +178,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_talk_2_new_high": {
-        name: "유나",
-        text: "(유나가 나를 보며 희미하게 미소 짓는다.) \"{name}... 너랑 얘기하니까 기분이 묘해. 사실 이 학교에는 아주 깊은 비밀이 있어. 너한테만 보여주고 싶은 게 있는데.\"",
+        name: "나",
+        text: "(유나는 나와 대화하며 기분이 묘하다고 말했다. 그리고 이 학교에는 아주 깊은 비밀이 있다며, 나에게만 보여주고 싶은 것이 있다고 제안했다.)",
         character: "assets/images/characters/yuna_smile.png",
         setFlag: "metYuna",
         choices: [
@@ -188,8 +188,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_talk_2_new_low": {
-        name: "유나",
-        text: "(유나의 눈빛이 더욱 차가워진다.) \"{name}. 넌 정말 무례하고 어리석구나. 그런 태도로는 진실을 감당할 수 없을 거야. ...하지만 네가 여기까지 왔으니 보여주긴 하겠어. 따라와.\"",
+        name: "나",
+        text: "(유나의 눈빛이 더욱 차가워졌다. 내 무례한 태도 때문에 진실을 감당할 수 없을 거라며 독설을 내뱉었지만, 여기까지 왔으니 일단 따라오라고 했다.)",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "metYuna",
         choices: [
@@ -206,8 +206,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_talk_2_met": {
-        name: "유나",
-        text: "\"어제 내가 했던 말... 기억해? 이 학교의 비밀 말이야. 사실 너한테만 보여주고 싶은 게 있어.\"",
+        name: "나",
+        text: "(유나는 어제 말했던 학교의 비밀에 대해 언급하며, 나에게만 보여주고 싶은 것이 있다고 말했다.)",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
             { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
@@ -215,8 +215,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_talk_2_new": {
-        name: "유나",
-        text: "\"너... 내가 누군지 궁금해서 온 거지? 사실 이 학교에는 아주 깊은 비밀이 있어. 너한테만 보여주고 싶은 게 있는데.\"",
+        name: "나",
+        text: "(유나는 내가 그녀의 정체를 궁금해할 거라며, 이 학교의 깊은 비밀을 나에게만 보여주겠다고 제안했다.)",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "metYuna",
         choices: [
@@ -352,8 +352,8 @@ Object.assign(SCENARIO[2], {
         next: "day2_dain_store_choices"
     },
     "day2_dain_store_choices_high": {
-        name: "다인",
-        text: "\"와, {name}! 너랑 얘기하니까 줄 서는 것도 하나도 안 지루하다! 자, 이제 우리 차례야. 뭐 먹을래? 내가 쏠게!\"",
+        name: "나",
+        text: "(다인이와 수다를 떨다 보니 줄 서는 게 전혀 지루하지 않았다. 어느덧 우리 차례가 되었고, 다인이는 기분이 좋은지 자기가 쏘겠다며 메뉴를 골라보라고 했다.)",
         character: "assets/images/characters/dain_laugh.png",
         choices: [
             { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
@@ -362,8 +362,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_dain_store_choices_low": {
-        name: "다인",
-        text: "\"...{name}. 너 아까부터 좀 까칠하다? 매점 줄 서는 것도 힘든데 기분까지 잡치게... 하아, 됐다. 뭐 먹을지나 골라.\"",
+        name: "나",
+        text: "(다인이의 기분이 상한 것 같다. 줄 서느라 피곤한 그녀에게 내가 너무 까칠하게 굴었나 보다. 그녀는 한숨을 내쉬며 얼른 뭐 먹을지나 고르라고 말했다.)",
         character: "assets/images/characters/dain_angry.png",
         choices: [
             { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
@@ -372,8 +372,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_dain_store_choices": {
-        name: "다인",
-        text: "\"자, 우리 차례다. 뭐 먹을래?\"",
+        name: "나",
+        text: "(다인이와 이야기를 나누는 사이 어느덧 우리 차례가 되었다. 다인이는 무엇을 먹을지 물어보았다.)",
         choices: [
             { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
             { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
@@ -604,8 +604,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "nurse_contact_already_have_high": {
-        name: "보건선생님",
-        text: "(선생님이 몸을 살짝 기울이며 내 귓가에 속삭인다.) \"{name}, 우리 이미 번호 교환했었지? 사실... 오늘 밤엔 네 목소리가 정말 듣고 싶을 것 같아. 꼭 연락해야 해?\"",
+        name: "나",
+        text: "(선생님은 이미 번호를 교환했다는 사실을 상기시키며 내 귓가에 속삭였다. 오늘 밤 내 목소리가 듣고 싶을 것 같다며, 꼭 연락하라는 당부를 남겼다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -622,8 +622,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "nurse_contact_already_have_low": {
-        name: "보건선생님",
-        text: "(선생님이 차가운 미소를 지으며 말한다.) \"{name}, 우리 이미 번호 교환했었지? 하지만 그런 무례한 태도라면 연락 안 하는 게 나을지도 모르겠네. 이제 그만 가보렴.\"",
+        name: "나",
+        text: "(선생님은 이미 번호를 교환했지만, 내 무례한 태도 때문에 연락하지 않는 게 나을지도 모르겠다며 차갑게 말했다. 그리고는 이제 그만 가보라며 나를 배웅했다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -640,8 +640,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "nurse_contact_ask_high": {
-        name: "보건선생님",
-        text: "(선생님이 내 손을 살며시 잡으며 속삭인다.) \"{name}, 너랑 더 얘기하고 싶은데... 밤에 잠이 안 오면 나한테 연락할래? 번호 알려줄게.\"",
+        name: "나",
+        text: "(선생님은 나와 더 이야기하고 싶다며 내 손을 살며시 잡았다. 밤에 잠이 안 오면 연락하라며 자신의 번호를 알려주겠다고 제안했다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -658,8 +658,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "nurse_contact_ask_low": {
-        name: "보건선생님",
-        text: "(선생님이 한숨을 내쉬며 말한다.) \"{name}. 너 정말 손이 많이 가는 학생이구나. 비상시를 위해서 번호는 알려주겠지만, 장난칠 생각은 하지 마렴.\"",
+        name: "나",
+        text: "(선생님은 내가 정말 손이 많이 가는 학생이라며 한숨을 내쉬었다. 비상시를 위해 번호는 알려주겠지만, 장난칠 생각은 하지 말라며 엄포를 놓았다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -684,8 +684,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "nurse_contact_already_have": {
-        name: "보건선생님",
-        text: "(선생님이 몸을 살짝 기울이며 속삭인다.) \"{name}, 우리 이미 번호 교환했었지? 밤에 심심하면 꼭 연락해야 해? 기다릴 테니까.\"",
+        name: "나",
+        text: "(선생님은 이미 번호를 교환했다는 사실을 상기시키며 몸을 살짝 기울여 속삭였다. 밤에 심심하면 꼭 연락하라며 기다리겠다고 말했다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,
@@ -702,8 +702,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "nurse_contact_ask": {
-        name: "보건선생님",
-        text: "(선생님이 몸을 살짝 기울이며 속삭인다.) \"{name}, 밤에 잠이 안 오면 나한테 연락할래? 번호 알려줄게.\"",
+        name: "나",
+        text: "(선생님은 몸을 살짝 기울여 속삭이며, 밤에 잠이 안 오면 연락하라며 자신의 번호를 알려주겠다고 제안했다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
         sunset: true,

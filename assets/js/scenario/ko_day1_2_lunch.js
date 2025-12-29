@@ -176,7 +176,7 @@ Object.assign(SCENARIO[1], {
     "rooftop_free_talk": {
         type: "free_talk",
         name: "서연",
-        text: "\"후훗, 갑자기 너무 진지했나? 우리 좀 더 편하게 이야기하자. 너는 어떤 스타일의 사람을 좋아해?\"",
+        text: "\"후훗, 갑자기 너무 진지했나? 우리 좀 더 편하게 이야기하자. 나한테 궁금한 거 없어?\"",
         context: "점심시간, 학교 옥상에서 단둘이 도시락을 먹고 난 뒤 평화롭고 로맨틱한 분위기에서 대화를 나누는 상황. 대화가 끝나면 서연이가 주인공의 이상형이나 좋아하는 스타일에 대해 물어보는 상황으로 이어집니다. 대화 마무리 시점에 주인공의 취향이 궁금하다는 언급을 하며 자연스럽게 질문을 던져주세요.",
         personality: "평소보다 조금 더 대담하고 솔직해진 상태. 주인공의 취향이나 생각에 대해 깊이 알고 싶어 함.",
         character: "assets/images/characters/seyoun_shy.png",
@@ -210,7 +210,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_choices": {
         name: "나",
-        text: "(서연이와 즐겁게 대화를 마쳤다. 그녀는 내 대답을 기다리는 듯 눈을 반짝이며 나를 바라보고 있다.)",
+        text: "(서연이와 즐겁게 대화를 마쳤다. 그녀는 내 대답을 기다리는 듯 눈을 반짝이며 나를 바라보고 있다. 그녀가 나에게 어떤 스타일의 사람을 좋아하는지 물어왔다.)",
         choices: [
             { text: "나도 그래. 왠지 운명 같은 느낌이랄까?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
