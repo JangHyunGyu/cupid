@@ -140,7 +140,7 @@ function showAffinityChange(amount, charName = null) {
     // 애니메이션 완료 후 제거
     setTimeout(() => {
         popup.remove();
-    }, 2500);
+    }, 5000);
 }
 
 let gameState = {
