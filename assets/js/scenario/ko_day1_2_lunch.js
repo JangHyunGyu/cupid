@@ -279,12 +279,50 @@ Object.assign(SCENARIO[1], {
     },
     "seyoun_contact_exchange": {
         name: "서연",
-        text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 수줍게 스마트폰을 내민다.) \"저기.. 혹시 괜찮다면, 연락처 알려줄 수 있을까? 앞으로 도시락 메뉴 정할 때 물어보고 싶어서..\"",
+        text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 스마트폰을 내민다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "seyoun_contact_exchange_high" },
+            { minAffinity: 0, next: "seyoun_contact_exchange_normal" },
+            { minAffinity: -100, next: "seyoun_contact_exchange_low" }
+        ],
+        next: "seyoun_contact_exchange_normal"
+    },
+    "seyoun_contact_exchange_high": {
+        name: "서연",
+        text: "(서연이가 수줍게 스마트폰을 내민다.) \"저기.. 혹시 괜찮다면, 연락처 알려줄 수 있을까? 앞으로 도시락 메뉴 정할 때 물어보고 싶어서..\"",
         character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
         choices: [
             { text: "물론이지! 나도 서연이랑 더 이야기하고 싶었어.", next: "seyoun_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
             { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -20 } } }
         ]
+    },
+    "seyoun_contact_exchange_normal": {
+        name: "서연",
+        text: "\"저기.. 혹시 연락처 교환해도 될까? 학생회 일로 연락할 일이 있을 수도 있어서..\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "물론이지! 나도 서연이랑 더 이야기하고 싶었어.", next: "seyoun_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
+            { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -20 } } }
+        ]
+    },
+    "seyoun_contact_exchange_low": {
+        name: "서연",
+        text: "(서연이가 내 눈치를 보며 말한다.) \"...저기, 혹시 학생회 일로 연락할 일 있을 수도 있는데, 번호 좀 알려줄 수 있어?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "응, 알겠어.", next: "seyoun_contact_success_cold", setFlags: ["has_number_seyoun", "has_any_contact"] },
+            { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -20 } } }
+        ]
+    },
+    "seyoun_contact_success_cold": {
+        name: "서연",
+        text: "(그녀가 번호를 저장한다.) \"고마워. 그럼... 필요할 때 연락할게.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: 2 } },
+        next: "after_school_start"
     },
     "seyoun_contact_success": {
         name: "서연",

@@ -359,7 +359,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3_high": {
         name: "담임선생님",
-        text: "\"어머, {name?}이랑 얘기하니까 선생님도 기분이 좋아지네! 자, 다들 주목! 오늘부터 우리와 함께하게 된 {name}이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
+        text: "\"어머, {name}이랑 얘기하니까 선생님도 기분이 좋아지네! 자, 다들 주목! 오늘부터 우리와 함께하게 된 {name}이다. 다들 사이좋게 지내도록. 자, 자기소개 한마디 할까?\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
@@ -371,7 +371,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3_low": {
         name: "담임선생님",
-        text: "\"...{name?}. 전학 첫날부터 그런 태도는 곤란해. 선생님은 예의 없는 학생은 별로 좋아하지 않는단다. 자, 다들 주목. 오늘부터 우리 반에서 함께하게 된 {name}이다. ...자기소개라도 제대로 하렴.\"",
+        text: "\"...{name}. 전학 첫날부터 그런 태도는 곤란해. 선생님은 예의 없는 학생은 별로 좋아하지 않는단다. 자, 다들 주목. 오늘부터 우리 반에서 함께하게 된 {name}이다. ...자기소개라도 제대로 하렴.\"",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },

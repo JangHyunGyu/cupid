@@ -64,7 +64,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_seoyeon_2": {
         name: "서연",
-        text: "\"휴... 드디어 끝났네. {name?}, 늦게까지 도와줘서 정말 고마워. 너 아니었으면 오늘 안에 다 못 끝냈을 거야.\"",
+        text: "\"휴... 드디어 끝났네. {name}, 늦게까지 도와줘서 정말 고마워. 너 아니었으면 오늘 안에 다 못 끝냈을 거야.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         night: true,
         next: "day2_after_seoyeon_3"
@@ -153,7 +153,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_night_talk": {
         name: "서연",
-        text: "\"{name?}... 오늘 정말 고마웠어. 너랑 있으면 힘든 일도 다 잊게 돼. 우리... 내일도 같이 점심 먹을래?\"",
+        text: "\"{name}... 오늘 정말 고마웠어. 너랑 있으면 힘든 일도 다 잊게 돼. 우리... 내일도 같이 점심 먹을래?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         night: true,
         setFlag: "day2_met_seoyeon_after",
@@ -268,7 +268,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_3_pre_new": {
         name: "유나",
-        text: "\"봐, {name?}. 이 벽에 새겨진 문양들... 내가 추적해온 이 학교의 비밀들과 일치해.\"",
+        text: "\"봐, {name}. 이 벽에 새겨진 문양들... 내가 추적해온 이 학교의 비밀들과 일치해.\"",
         character: "assets/images/characters/yuna_nomal.png",
         night: true,
         next: "day2_after_yuna_3"
@@ -333,7 +333,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_night_talk": {
         name: "유나",
-        text: "\"이건... 단순한 낙서가 아니야. 이 학교의 설립 목적과 관련이 있어. {name?}, 넌 이제 돌이킬 수 없는 길을 선택한 거야.\"",
+        text: "\"이건... 단순한 낙서가 아니야. 이 학교의 설립 목적과 관련이 있어. {name}, 넌 이제 돌이킬 수 없는 길을 선택한 거야.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         setFlag: "day2_met_yuna_after",
@@ -380,7 +380,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain_met": {
         name: "다인",
-        text: "\"오! {name?}! 마침 잘 왔다. 나 연습하는 것 좀 도와줄래?\"",
+        text: "\"오! {name}! 마침 잘 왔다. 나 연습하는 것 좀 도와줄래?\"",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         next: "day2_after_dain_practice"
@@ -449,7 +449,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_night_talk": {
         name: "다인",
-        text: "\"와! 너 운동 신경 진짜 대박이다. 우리 팀으로 영입하고 싶을 정도야! 오늘 고생했어, {name?}! 조심해서 들어가!\"",
+        text: "\"와! 너 운동 신경 진짜 대박이다. 우리 팀으로 영입하고 싶을 정도야! 오늘 고생했어, {name}! 조심해서 들어가!\"",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
         setFlag: "day2_met_dain_after",
@@ -460,7 +460,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_contact_ask": {
         name: "다인",
-        text: "\"야 {name?}! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처는 있어야겠지? 번호 찍어줘!\"",
+        text: "\"야 {name}! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처는 있어야겠지? 번호 찍어줘!\"",
         character: "assets/images/characters/dain_nomal.png",
         night: true,
         choices: [
@@ -496,7 +496,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met": {
         name: "보건선생님",
-        text: "\"어머, {name?}. 또 왔네? 오늘은 어디가 아파서 온 걸까? 아니면... 그냥 내 얼굴 보러 온 거야?\"",
+        text: "\"어머, {name}. 또 왔네? 오늘은 어디가 아파서 온 걸까? 아니면... 그냥 내 얼굴 보러 온 거야?\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         affinityChar: "Nurse",
@@ -509,7 +509,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met_high": {
         name: "보건선생님",
-        text: "(선생님이 내 얼굴을 보며 부드럽게 미소 짓는다.) \"후훗, {name?}. 이렇게 자주 오니까 선생님도 은근히 기대가 되네. 어서 들어와.\"",
+        text: "(선생님이 내 얼굴을 보며 부드럽게 미소 짓는다.) \"후훗, {name}. 이렇게 자주 오니까 선생님도 은근히 기대가 되네. 어서 들어와.\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         stats: { Nurse: { affinity: 3 } },
@@ -520,7 +520,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met_check": {
         name: "보건선생님",
-        text: "\"어머, {name?}. 방과 후에 보건실이라니... 어디 안 좋은 거야?\"",
+        text: "\"어머, {name}. 방과 후에 보건실이라니... 어디 안 좋은 거야?\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         branches: [
@@ -530,7 +530,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met_low": {
         name: "보건선생님",
-        text: "(선생님이 날 보며 잘 모르겠다는 듯 말한다.) \"...{name?}, 맞지? 어디 아픈 거야?\"",
+        text: "(선생님이 날 보며 잘 모르겠다는 듯 말한다.) \"...{name}, 맞지? 어디 아픈 거야?\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         branches: [
@@ -540,7 +540,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_invited": {
         name: "보건선생님",
-        text: "\"후훗, {name?}. 오늘 밤 우리 집에서 보기로 한 거... 잊지 않았지? 벌써부터 보고 싶어서 달려온 거라면 선생님 정말 감동인데?\"",
+        text: "\"후훗, {name}. 오늘 밤 우리 집에서 보기로 한 거... 잊지 않았지? 벌써부터 보고 싶어서 달려온 거라면 선생님 정말 감동인데?\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
         next: "day2_after_nurse_3"
@@ -597,7 +597,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_miss_normal": {
         name: "보건선생님",
-        text: "\"후훗, 솔직한 건 좋은데... 선생님한테 그런 말을 하면 오해받을 수 있어, {name?}. 그래도 귀엽긴 하네.\"",
+        text: "\"후훗, 솔직한 건 좋은데... 선생님한테 그런 말을 하면 오해받을 수 있어, {name}. 그래도 귀엽긴 하네.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         next: "day2_nurse_night_talk"
@@ -645,7 +645,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_contact_already_have_talk": {
         name: "보건선생님",
-        text: "\"{name?}, 우리 이미 번호 교환했었지? 밤에 심심하면 꼭 연락해야 해? 기다릴 테니까.\"",
+        text: "\"{name}, 우리 이미 번호 교환했었지? 밤에 심심하면 꼭 연락해야 해? 기다릴 테니까.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         choices: [
@@ -662,7 +662,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_success_after": {
         name: "보건선생님",
-        text: "(선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귓가에 속삭인다.) \"어머... {name?}, 생각보다 훨씬 대담하네? 좋아, 오늘 밤 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
+        text: "(선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귓가에 속삭인다.) \"어머... {name}, 생각보다 훨씬 대담하네? 좋아, 오늘 밤 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         stats: { Nurse: { affinity: 30 } },
@@ -671,14 +671,14 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_fail_after": {
         name: "보건선생님",
-        text: "(선생님이 꺄르르 웃음을 터뜨린다.) \"어머나 {name?}! 넌 정말 귀엽다. 하지만 우리 집은 아직 좀 이른 것 같네? 나중에 메시지나 해.\"",
+        text: "(선생님이 꺄르르 웃음을 터뜨린다.) \"어머나 {name}! 넌 정말 귀엽다. 하지만 우리 집은 아직 좀 이른 것 같네? 나중에 메시지나 해.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         next: "day2_end"
     },
     "day2_nurse_contact_ask": {
         name: "보건선생님",
-        text: "\"{name?}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
+        text: "\"{name}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         choices: [
@@ -688,7 +688,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_contact_success": {
         name: "보건선생님",
-        text: "\"후훗, 착하네. 그럼 나중에 밤에 연락할게? 잘 가, {name?}.\"",
+        text: "\"후훗, 착하네. 그럼 나중에 밤에 연락할게? 잘 가, {name}.\"",
         character: "assets/images/characters/nurse.png",
         night: true,
         stats: { Nurse: { affinity: 10 } },
@@ -711,14 +711,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_2": {
         name: "담임선생님",
-        text: "\"어머, {name?}? 이 시간에 교무실엔 어쩐 일이야? 아직 하교 안 했니?\"",
+        text: "\"어머, {name}? 이 시간에 교무실엔 어쩐 일이야? 아직 하교 안 했니?\"",
         character: "assets/images/characters/teacher.png",
         sunset: true,
         next: "day2_after_teacher_3"
     },
     "day2_after_teacher_3": {
         name: "담임선생님",
-        text: "\"선생님은 이번 주에 제출할 서류가 좀 많아서... 후훈, 전학 첫 주부터 선생님의 이런 초욄한 모습만 보여주게 되네.\"",
+        text: "\"선생님은 이번 주에 제출할 서류가 좀 많아서... 후훗, 전학 첫 주부터 선생님의 이런 초췌한 모습만 보여주게 되네.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         choices: [
@@ -737,7 +737,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_work_2": {
         name: "담임선생님",
-        text: "\"고마워, {name?}. 덕분에 정말 큰 도움이 됐어. 혼자 했으면 밤을 꼬박 새울 뻔했지 뭐야.\"",
+        text: "\"고마워, {name}. 덕분에 정말 큰 도움이 됐어. 혼자 했으면 밤을 꼬박 새울 뻔했지 뭐야.\"",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day2_after_teacher_branch"
@@ -761,7 +761,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_special_2": {
         name: "담임선생님",
-        text: "\"{name?}, 넌 참 특별한 학생인 것 같아. 전학 온 지 이틀밖에 안 됐는데... 왜 이렇게 오래 알고 지낸 사이처럼 편안할까?\"",
+        text: "\"{name}, 넌 참 특별한 학생인 것 같아. 전학 온 지 이틀밖에 안 됐는데... 왜 이렇게 오래 알고 지낸 사이처럼 편안할까?\"",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day2_after_teacher_special_3"
@@ -791,7 +791,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_worry": {
         name: "담임선생님",
-        text: "\"걱정해줘서 고마워. 선생님은 괜찮아! 우리 {name?}이 이렇게 착해서 선생님은 정말 든든한걸?\"",
+        text: "\"걱정해줘서 고마워. 선생님은 괜찮아! 우리 {name}이 이렇게 착해서 선생님은 정말 든든한걸?\"",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day2_after_teacher_normal"

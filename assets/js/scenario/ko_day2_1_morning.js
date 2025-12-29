@@ -71,7 +71,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_nurse": {
         name: "보건선생님",
-        text: "\"어머, {name?}! 좋은 아침이야. 오늘따라 기운이 넘쳐 보이네?\"",
+        text: "\"어머, {name}! 좋은 아침이야. 오늘따라 기운이 넘쳐 보이네?\"",
         character: "assets/images/characters/nurse.png",
         next: "day2_nurse_talk"
     },
@@ -105,7 +105,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_seoyeon": {
         name: "서연",
-        text: "\"안녕, {name?}! 잘 잤니? 오늘도 일찍 왔구나!\"",
+        text: "\"안녕, {name}! 잘 잤니? 오늘도 일찍 왔구나!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "day2_seoyeon_talk"
     },
@@ -154,7 +154,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_dain": {
         name: "다인",
-        text: "\"어어, {name?}! 좋은 아침! 오늘따라 일찍 왔네?\"",
+        text: "\"어어, {name}! 좋은 아침! 오늘따라 일찍 왔네?\"",
         character: "assets/images/characters/dain_nomal.png",
         next: "day2_dain_talk"
     },
@@ -203,7 +203,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_teacher": {
         name: "담임선생님",
-        text: "\"어라, {name?} 아니니? 전학 이틀째인데 벌써 학교에 적응한 모양이구나. 일찍 오는 모습이 보기 좋다.\"",
+        text: "\"어라, {name} 아니니? 전학 이틀째인데 벌써 학교에 적응한 모양이구나. 일찍 오는 모습이 보기 좋다.\"",
         character: "assets/images/characters/teacher.png",
         next: "day2_teacher_free_talk"
     },
@@ -224,7 +224,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_teacher_contact_ask_high": {
         name: "담임선생님",
-        text: "\"어머, {name?} 학생이랑 얘기하니까 아침부터 기분이 참 좋네! 아, 그러고 보니 비상연락망 때문에 네 번호가 필요했는데... 괜찮다면 지금 알려줄래?\"",
+        text: "\"어머, {name} 학생이랑 얘기하니까 아침부터 기분이 참 좋네! 아, 그러고 보니 비상연락망 때문에 네 번호가 필요했는데... 괜찮다면 지금 알려줄래?\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
@@ -233,7 +233,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_teacher_contact_ask_low": {
         name: "담임선생님",
-        text: "\"...{name?}. 아침부터 그런 태도는 정말 실망스럽구나. 선생님도 너를 돕고 싶지만, 네가 협조적이지 않으면 곤란해. ...비상연락망 때문에 번호가 필요하니 지금 알려주렴.\"",
+        text: "\"...{name}. 아침부터 그런 태도는 정말 실망스럽구나. 선생님도 너를 돕고 싶지만, 네가 협조적이지 않으면 곤란해. ...비상연락망 때문에 번호가 필요하니 지금 알려주렴.\"",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },

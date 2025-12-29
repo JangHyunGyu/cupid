@@ -46,7 +46,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_teacher_2": {
         name: "담임선생님",
-        text: "\"어머, {name?} 아니니? 이 시간에 교무실엔 어쩐 일이야?\"",
+        text: "\"어머, {name} 아니니? 이 시간에 교무실엔 어쩐 일이야?\"",
         character: "assets/images/characters/teacher.png",
         sunset: true,
         next: "after_teacher_3"
@@ -64,14 +64,14 @@ Object.assign(SCENARIO[1], {
     },
     "after_teacher_help": {
         name: "담임선생님",
-        text: "\"후훗, 마음만으로도 고마워. 하지만 이건 선생님이 해야 할 일인걸. {name?}은 얼른 집에 가서 쉬렴.\"",
+        text: "\"후훗, 마음만으로도 고마워. 하지만 이건 선생님이 해야 할 일인걸. {name}은 얼른 집에 가서 쉬렴.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact"
     },
     "after_teacher_miss": {
         name: "담임선생님",
-        text: "\"어머... {name?}, 정말 못 말리겠네. 선생님을 그렇게 좋아해 주니 기쁘긴 하지만... 후훗.\"",
+        text: "\"어머... {name}, 정말 못 말리겠네. 선생님을 그렇게 좋아해 주니 기쁘긴 하지만... 후훗.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact"
@@ -119,7 +119,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_3": {
         name: "서연",
-        text: "\"어? {name?}! 이 시간에 어쩐 일이야? 설마... 나 기다린 거야?\"",
+        text: "\"어? {name}! 이 시간에 어쩐 일이야? 설마... 나 기다린 거야?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         sunset: true,
         choices: [
@@ -186,7 +186,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_cafe_2_2": {
         name: "서연",
-        text: "\"하아~ 이제야 좀 살 것 같아. 오늘 정말 고마웠어, {name?}.\"",
+        text: "\"하아~ 이제야 좀 살 것 같아. 오늘 정말 고마웠어, {name}.\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         sunset: true,
@@ -211,7 +211,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_promise_2": {
         name: "서연",
-        text: "\"약속한 거다? 어기기 없기! 그럼 내일 봐 {name?}. 조심해서 들어가!\"",
+        text: "\"약속한 거다? 어기기 없기! 그럼 내일 봐 {name}. 조심해서 들어가!\"",
         character: "assets/images/characters/seyoun_shy.png",
         branches: [
             { next: "after_home", condition: "has_number_seyoun" },
@@ -314,7 +314,7 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_after_talk": {
         name: "유나",
-        text: "\"또 보네, {name?}. 여긴 여전히 조용하고... 여전히 무거워. 넌 그 무게가 느껴지지 않아?\"",
+        text: "\"또 보네, {name}. 여긴 여전히 조용하고... 여전히 무거워. 넌 그 무게가 느껴지지 않아?\"",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
         next: "yuna_after_choices"
@@ -569,7 +569,7 @@ Object.assign(SCENARIO[1], {
     "dain_free_talk": {
         type: "free_talk",
         name: "다인",
-        text: "\"와, {name?}! 가까이서 보니까 더 반가운데? 나한테 궁금한 거 있어? 운동이라든가, 학교생활이라든가!\"",
+        text: "\"와, {name}! 가까이서 보니까 더 반가운데? 나한테 궁금한 거 있어? 운동이라든가, 학교생활이라든가!\"",
         context: "방과 후 노을 지는 체육관, 연습을 마친 다인과 대화를 나누는 상황. 대화가 끝나면 다인이 마지막 연습 세트를 끝내고 같이 맛있는 것을 먹으러 가자고 제안하는 상황으로 이어집니다. 대화 마무리 시점에 연습을 마저 끝내야 한다는 언급을 하거나, 배가 고프다는 등의 이야기를 하며 자연스럽게 다음 상황으로 유도해 주세요.",
         personality: "털털하고 시원시원한 성격의 배구부 에이스. 운동을 사랑하며 주인공에게 호의적이고 에너지가 넘침.",
         character: "assets/images/characters/dain_nomal.png",
@@ -583,7 +583,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_3_high": {
         name: "다인",
-        text: "\"와, {name?}! 너랑 얘기하니까 시간 가는 줄 모르겠어! 나 마지막 세트만 후딱 끝내고 같이 맛있는 거 먹으러 가자!\"",
+        text: "\"와, {name}! 너랑 얘기하니까 시간 가는 줄 모르겠어! 나 마지막 세트만 후딱 끝내고 같이 맛있는 거 먹으러 가자!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -595,7 +595,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_3_low": {
         name: "다인",
-        text: "\"어이, {name?}. 너 아까부터 말이 좀 심한 거 아냐? 나도 연습하느라 힘든데 기운 빠지게... 하아, 됐다. 마지막 세트만 끝내고 갈 거니까 기다리든가 말든가.\"",
+        text: "\"어이, {name}. 너 아까부터 말이 좀 심한 거 아냐? 나도 연습하느라 힘든데 기운 빠지게... 하아, 됐다. 마지막 세트만 끝내고 갈 거니까 기다리든가 말든가.\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_angry.png",
         sunset: true,
@@ -607,7 +607,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_dain_3": {
         name: "다인",
-        text: "\"어이, {name?}! 잠깐만 기다려! 나 마지막 세트만 끝내고 같이 맛있는 거 먹으러 가자!\"",
+        text: "\"어이, {name}! 잠깐만 기다려! 나 마지막 세트만 끝내고 같이 맛있는 거 먹으러 가자!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
@@ -718,7 +718,7 @@ Object.assign(SCENARIO[1], {
     },
     "dain_contact_exchange": {
         name: "다인",
-        text: "(다인이는 떡볶이 국물을 닦으며 장난스럽게 스마트폰을 흔들어 보인다.) \"야 {name?}! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처는 있어야겠지? 번호 찍어줘!\"",
+        text: "(다인이는 떡볶이 국물을 닦으며 장난스럽게 스마트폰을 흔들어 보인다.) \"야 {name}! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처는 있어야겠지? 번호 찍어줘!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_nomal.png",
         night: true,
@@ -807,7 +807,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_2": {
         name: "보건선생님",
-        text: "\"{name?}! 집에 가기 전에 나 보러 온 거니? 정말 착한 학생이네.\"",
+        text: "\"{name}! 집에 가기 전에 나 보러 온 거니? 정말 착한 학생이네.\"",
         character: "assets/images/characters/nurse.png",
         next: "nurse_after_day1_contact"
     },
@@ -864,7 +864,7 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_after_day1_contact_stay_2": {
         name: "보건선생님",
-        text: "\"...그래, 이제 슬슬 가봐야겠다. {name?}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
+        text: "\"...그래, 이제 슬슬 가봐야겠다. {name}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
         character: "assets/images/characters/nurse.png",
         choices: [
             { text: "네, 알려주세요!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
@@ -873,7 +873,7 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_after_day1_contact_2": {
         name: "보건선생님",
-        text: "\"벌써 가려고? 아쉽네... {name?}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
+        text: "\"벌써 가려고? 아쉽네... {name}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
         character: "assets/images/characters/nurse.png",
         choices: [
             { text: "네, 알려주세요!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
@@ -882,7 +882,7 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_after_day1_contact_success": {
         name: "보건선생님",
-        text: "\"후훗, 착하네. 그럼 나중에 밤에 연락할게? 잘 가, {name?}.\"",
+        text: "\"후훗, 착하네. 그럼 나중에 밤에 연락할게? 잘 가, {name}.\"",
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 10 } },
         next: "after_home"

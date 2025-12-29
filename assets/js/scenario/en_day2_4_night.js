@@ -38,11 +38,11 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/room_my.png",
         night: true,
         choices: [
-            { text: "Send a message to Seoyeon.", next: "day2_night_message_seyoun", condition: "has_number_seyoun" },
-            { text: "Send a message to Yuna.", next: "day2_night_message_yuna", condition: "has_number_yuna" },
-            { text: "Send a message to Dain.", next: "day2_night_message_dain", condition: "has_number_dain" },
-            { text: "Send a message to the Nurse.", next: "day2_night_message_nurse", condition: "has_number_nurse" },
-            { text: "Send a message to the Teacher.", next: "day2_night_message_teacher", condition: "has_number_teacher" },
+            { text: "Send a message to Seoyeon.", next: "day2_night_message_seyoun", condition: "has_number_seyoun", excludeCondition: "sent_msg_day2_seyoun" },
+            { text: "Send a message to Yuna.", next: "day2_night_message_yuna", condition: "has_number_yuna", excludeCondition: "sent_msg_day2_yuna" },
+            { text: "Send a message to Dain.", next: "day2_night_message_dain", condition: "has_number_dain", excludeCondition: "sent_msg_day2_dain" },
+            { text: "Send a message to the Nurse.", next: "day2_night_message_nurse", condition: "has_number_nurse", excludeCondition: "sent_msg_day2_nurse" },
+            { text: "Send a message to the Teacher.", next: "day2_night_message_teacher", condition: "has_number_teacher", excludeCondition: "sent_msg_day2_teacher" },
             { text: "Go to the Nurse's house.", next: "day2_night_nurse_home", condition: "invited_nurse_home" },
             { text: "Check Affinity Status", next: "day2_check_affinity" },
             { text: "Just sleep.", next: "day2_final_scene" }
@@ -130,7 +130,7 @@ Object.assign(SCENARIO[2], {
             { minAffinity: 0, next: "day2_night_message_seyoun_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_seyoun_reply_low" }
         ],
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun_reply_high": {
         name: "Seoyeon",
@@ -138,7 +138,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun_reply_normal": {
         name: "Seoyeon",
@@ -146,7 +146,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun_reply_low": {
         name: "Seoyeon",
@@ -154,7 +154,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna": {
         name: "Me",
@@ -195,7 +195,7 @@ Object.assign(SCENARIO[2], {
             { minAffinity: 0, next: "day2_night_message_yuna_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_yuna_reply_low" }
         ],
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna_reply_high": {
         name: "Yuna",
@@ -203,7 +203,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna_reply_normal": {
         name: "Yuna",
@@ -211,7 +211,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna_reply_low": {
         name: "Yuna",
@@ -219,7 +219,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_dain": {
         name: "Me",
@@ -306,7 +306,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_nurse": {
         name: "Me",
@@ -363,7 +363,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_nurse_reply_low": {
         name: "Nurse",
@@ -371,7 +371,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher": {
         name: "Me",
@@ -396,7 +396,7 @@ Object.assign(SCENARIO[2], {
             { minAffinity: 0, next: "day2_night_message_teacher_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_teacher_reply_low" }
         ],
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher_reply_high": {
         name: "Teacher",
@@ -404,7 +404,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher_reply_normal": {
         name: "Teacher",
@@ -412,7 +412,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher_reply_low": {
         name: "Teacher",
@@ -420,7 +420,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_final_scene": {
         name: "Me",

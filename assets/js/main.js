@@ -503,16 +503,28 @@ function getSocialContext(currentCharName, isEn) {
         .filter(([name]) => name !== currentCharName)
         .map(([name, desc]) => {
             const charKey = charNameMap[name] || name;
+            const affinity = gameState.stats[charKey] ? gameState.stats[charKey].affinity : 0;
             let status = "";
+            
             if (gameState[`isDating_${charKey}`] || gameState[`isDating_${name}`]) {
                 status = isEn ? " (Currently DATING the user)" : " (현재 사용자와 사귀는 사이)";
+            } else if (affinity >= 70) {
+                status = isEn ? " (Convinced they are dating the user)" : " (사용자와 사귀는 사이라고 확신함)";
+            } else if (affinity >= 50) {
+                status = isEn ? " (Suspecting they are dating the user)" : " (사용자와 사귀는 사이인지 의심함)";
             }
-            return `- ${name}: ${desc}${status}`;
+            
+            const affinityText = isEn ? ` (Affinity: ${affinity})` : ` (호감도: ${affinity})`;
+            return `- ${name}: ${desc}${affinityText}${status}`;
         })
         .join("\n");
 
-    const header = isEn ? "\n\n[Other Characters in School]:\n" : "\n\n[학교의 다른 인물들]:\n";
-    return header + otherChars;
+    const header = isEn ? "\n\n[Other Characters in School & Your Awareness]:\n" : "\n\n[학교의 다른 인물들 및 당신의 인지 상태]:\n";
+    const jealousyInstruction = isEn ? 
+        "\nNote: You are aware of the user's relationship with others. If their affinity is high (50+), you may feel jealous, suspicious, or obsessive depending on your personality." :
+        "\n참고: 당신은 사용자와 다른 캐릭터들의 관계를 인지하고 있습니다. 다른 캐릭터의 호감도가 높을 경우(50 이상), 당신의 성격에 따라 질투, 의심, 또는 집착을 보일 수 있습니다.";
+
+    return header + otherChars + jealousyInstruction;
 }
 
 function startFreeTalk(scene) {
