@@ -286,24 +286,24 @@ Object.assign(SCENARIO[2], {
         next: "day2_final_scene"
     },
     "day2_night_message_dain_reply_high": {
-        name: "Dain",
-        text: "(A lively reply.) 'Of course! I'm going to win, so have your wallet ready! Haha, actually, I was thinking about you too. Good night, {name}! See you tomorrow!'",
+        name: "Me",
+        text: "(Dain's lively energy is contagious even through messages. Knowing she was thinking about me too makes my heart race. I definitely need to win that tteokbokki bet tomorrow.)",
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_dain_reply_normal": {
-        name: "Dain",
-        text: "(A lively reply.) 'Of course! I'm going to win, so have your wallet ready! Haha, good night, {name}!'",
+        name: "Me",
+        text: "(I finished the conversation with Dain. I should prepare myself so I don't lose the tteokbokki bet tomorrow.)",
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_dain_reply_low": {
-        name: "Dain",
-        text: "(A short reply.) '...Yeah. I'm tired, so I'm going to sleep. See you.'",
+        name: "Me",
+        text: "(Dain's response is unusually dry. I wonder if I did something to dampen her spirits.)",
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
@@ -351,24 +351,24 @@ Object.assign(SCENARIO[2], {
         next: "day2_final_scene"
     },
     "day2_night_message_nurse_reply_high": {
-        name: "Nurse",
-        text: "(An alluring reply.) 'Oh, are you thinking about me already? Actually, I was thinking about you too. Hehe, rest well today and see you tomorrow. Good night, {name}.'",
+        name: "Me",
+        text: "(The teacher's alluring words seem to echo in my ears. Knowing she was thinking about me too makes my heart pound. I should definitely stop by the infirmary tomorrow.)",
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
         next: "day2_final_scene"
     },
     "day2_night_message_nurse_reply_normal": {
-        name: "Nurse",
-        text: "(An alluring reply.) 'Oh, are you thinking about me already? Hehe, rest well today and see you tomorrow. Good night, {name}.'",
+        name: "Me",
+        text: "(I finished the conversation with the teacher. I should make sure to greet her warmly when I see her at school tomorrow.)",
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_nurse_reply_low": {
-        name: "Nurse",
-        text: "(A cold reply.) '...It's late. Don't send messages at this hour. Good night.'",
+        name: "Me",
+        text: "(The teacher's reply is a bit cold. Maybe it was rude of me to contact her so late at night?)",
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
@@ -400,24 +400,24 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher_reply_high": {
-        name: "Teacher",
-        text: "(A reply arrives immediately.) 'Oh, {name}. I was just thinking about today too. Thank you for the message. Get some rest and see you tomorrow. Good night.'",
+        name: "Me",
+        text: "(The teacher's kind reply puts my mind at ease. Knowing she was thinking about me too makes me feel strangely reassured. I should make sure not to be late tomorrow.)",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher_reply_normal": {
-        name: "Teacher",
-        text: "(A reply arrives a bit late.) 'Oh, {name}. I'm a bit surprised to get a message at this hour. But thank you for your concern. Get some rest and don't be late tomorrow.'",
+        name: "Me",
+        text: "(I finished the conversation with the teacher. I should be careful not to be late tomorrow.)",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher_reply_low": {
-        name: "Teacher",
-        text: "(A short reply.) '...It's late. Go to sleep. See you tomorrow.'",
+        name: "Me",
+        text: "(The teacher's reply is short and firm. I feel like I've been scolded for contacting her so late.)",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
