@@ -117,6 +117,32 @@ const CHARACTER_EXPRESSIONS = {
 let currentSceneId = "start";
 let isTyping = false;
 let skipTyping = false;
+
+// 호감도 변화 애니메이션 함수
+function showAffinityChange(amount, charName = null) {
+    if (amount === 0) return;
+    
+    const popup = document.createElement('div');
+    popup.className = `affinity-popup ${amount > 0 ? 'positive' : 'negative'}`;
+    
+    const emoji = document.createElement('span');
+    emoji.className = 'emoji';
+    emoji.textContent = amount > 0 ? '💕' : '💔';
+    
+    const value = document.createElement('span');
+    value.className = 'value';
+    value.textContent = amount > 0 ? `+${amount}` : `${amount}`;
+    
+    popup.appendChild(emoji);
+    popup.appendChild(value);
+    document.body.appendChild(popup);
+    
+    // 애니메이션 완료 후 제거
+    setTimeout(() => {
+        popup.remove();
+    }, 2500);
+}
+
 let gameState = {
     playerName: "주인공", // 기본 이름
     currentDay: 1, // 현재 진행 중인 날짜
@@ -322,6 +348,7 @@ async function renderScene(sceneId) {
                 if (stats.affinity) {
                     gameState.stats[charKey].affinity = Math.max(-100, Math.min(100, gameState.stats[charKey].affinity + stats.affinity));
                     console.log(`Scene Stat Change (${charKey}): Affinity ${stats.affinity} (Total: Aff ${gameState.stats[charKey].affinity})`);
+                    showAffinityChange(stats.affinity, charKey);
                 }
             }
         }
@@ -1328,6 +1355,7 @@ async function sendChatMessage() {
                 if (gameState.stats[charKey]) {
                     gameState.stats[charKey].affinity = Math.max(-100, Math.min(100, gameState.stats[charKey].affinity + affinityChange));
                     console.log(`AI Stat Change (${charKey}): Affinity ${affinityChange} (Total: Aff ${gameState.stats[charKey].affinity})`);
+                    showAffinityChange(affinityChange, charKey);
                 }
             }
             // 모든 스탯 태그 제거
@@ -1463,6 +1491,7 @@ function executeChoice(choice) {
             if (gameState.stats[char]) {
                 if (stats.affinity) {
                     gameState.stats[char].affinity = Math.max(-100, Math.min(100, gameState.stats[char].affinity + stats.affinity));
+                    showAffinityChange(stats.affinity, char);
                 }
             }
         }

@@ -539,3 +539,54 @@ body, html {
     color: #fff;
     transform: translateY(-2px);
 }
+
+/* 호감도 변화 애니메이션 */
+.affinity-popup {
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 9999;
+    animation: affinityFloat 2.5s ease-out forwards;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.affinity-popup.positive {
+    color: #ff6b9d;
+}
+
+.affinity-popup.negative {
+    color: #7799ff;
+}
+
+.affinity-popup .emoji {
+    font-size: 2.5rem;
+}
+
+.affinity-popup .value {
+    font-size: 1.8rem;
+}
+
+@keyframes affinityFloat {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px) scale(0.5);
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0) scale(1.2);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-80px) scale(0.8);
+    }
+}
