@@ -419,7 +419,35 @@ Object.assign(SCENARIO[2], {
         text: "\"Oh, if it isn't my favorite student. Is something hurting, or did you just come to see my pretty face?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
+        affinityChar: "Nurse",
+        affinityBranches: [
+            { minAffinity: 15, next: "day2_lunch_nurse_met_high" },
+            { minAffinity: 0, next: "day2_lunch_nurse_met_normal" },
+            { minAffinity: -100, next: "day2_lunch_nurse_met_low" }
+        ],
         stats: { Nurse: { affinity: 6 } },
+        next: "day2_lunch_nurse_3"
+    },
+    "day2_lunch_nurse_met_high": {
+        name: "Nurse",
+        text: "(She looks at me with a subtle smile.) \"Hehe, {name?}. You're back again? You know... you're the only student who visits me this often.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 5 } },
+        next: "day2_lunch_nurse_3"
+    },
+    "day2_lunch_nurse_met_normal": {
+        name: "Nurse",
+        text: "\"Oh, {name?}. Coming to the nurse's office during lunch... Is something wrong?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_3"
+    },
+    "day2_lunch_nurse_met_low": {
+        name: "Nurse",
+        text: "(She looks at me and tilts her head, as if trying to remember.) \"Ah... {name?}, right? What brings you here?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_new": {

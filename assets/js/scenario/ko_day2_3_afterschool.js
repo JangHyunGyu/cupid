@@ -499,6 +499,40 @@ Object.assign(SCENARIO[2], {
         text: "\"어머, {name?}. 또 왔네? 오늘은 어디가 아파서 온 걸까? 아니면... 그냥 내 얼굴 보러 온 거야?\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
+        affinityChar: "Nurse",
+        affinityBranches: [
+            { minAffinity: 20, next: "day2_after_nurse_met_high" },
+            { minAffinity: 0, next: "day2_after_nurse_met_check" },
+            { minAffinity: -100, next: "day2_after_nurse_met_low" }
+        ],
+        next: "day2_after_nurse_met_check"
+    },
+    "day2_after_nurse_met_high": {
+        name: "보건선생님",
+        text: "(선생님이 내 얼굴을 보며 부드럽게 미소 짓는다.) \"후훗, {name?}. 이렇게 자주 오니까 선생님도 은근히 기대가 되네. 어서 들어와.\"",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        stats: { Nurse: { affinity: 3 } },
+        branches: [
+            { next: "day2_after_nurse_invited", condition: "invited_nurse_home" },
+            { next: "day2_after_nurse_3" }
+        ]
+    },
+    "day2_after_nurse_met_check": {
+        name: "보건선생님",
+        text: "\"어머, {name?}. 방과 후에 보건실이라니... 어디 안 좋은 거야?\"",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        branches: [
+            { next: "day2_after_nurse_invited", condition: "invited_nurse_home" },
+            { next: "day2_after_nurse_3" }
+        ]
+    },
+    "day2_after_nurse_met_low": {
+        name: "보건선생님",
+        text: "(선생님이 날 보며 잘 모르겠다는 듯 말한다.) \"...{name?}, 맞지? 어디 아픈 거야?\"",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
         branches: [
             { next: "day2_after_nurse_invited", condition: "invited_nurse_home" },
             { next: "day2_after_nurse_3" }

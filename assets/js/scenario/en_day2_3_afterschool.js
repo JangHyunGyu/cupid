@@ -499,6 +499,40 @@ Object.assign(SCENARIO[2], {
         text: "\"Oh, {name?}. Back again? What's the matter today? Or... did you just come to see me?\"",
         character: "assets/images/characters/nurse.png",
         sunset: true,
+        affinityChar: "Nurse",
+        affinityBranches: [
+            { minAffinity: 20, next: "day2_after_nurse_met_high" },
+            { minAffinity: 0, next: "day2_after_nurse_met_check" },
+            { minAffinity: -100, next: "day2_after_nurse_met_low" }
+        ],
+        next: "day2_after_nurse_met_check"
+    },
+    "day2_after_nurse_met_high": {
+        name: "Nurse",
+        text: "(She looks at me with a soft smile.) \"Hehe, {name?}. You visit so often, I'm starting to look forward to seeing you. Come on in.\"",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        stats: { Nurse: { affinity: 3 } },
+        branches: [
+            { next: "day2_after_nurse_invited", condition: "invited_nurse_home" },
+            { next: "day2_after_nurse_3" }
+        ]
+    },
+    "day2_after_nurse_met_check": {
+        name: "Nurse",
+        text: "\"Oh, {name?}. Coming to the nurse's office after school... Is something wrong?\"",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
+        branches: [
+            { next: "day2_after_nurse_invited", condition: "invited_nurse_home" },
+            { next: "day2_after_nurse_3" }
+        ]
+    },
+    "day2_after_nurse_met_low": {
+        name: "Nurse",
+        text: "(She looks at me uncertainly.) \"...{name?}, right? Are you feeling unwell?\"",
+        character: "assets/images/characters/nurse.png",
+        sunset: true,
         branches: [
             { next: "day2_after_nurse_invited", condition: "invited_nurse_home" },
             { next: "day2_after_nurse_3" }

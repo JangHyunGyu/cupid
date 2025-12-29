@@ -427,7 +427,35 @@ Object.assign(SCENARIO[2], {
         text: "\"어머, 우리 {name?}이네? 어디가 아픈 걸까, 아니면 내 얼굴 보고 싶어서 설레는 걸까?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
+        affinityChar: "Nurse",
+        affinityBranches: [
+            { minAffinity: 15, next: "day2_lunch_nurse_met_high" },
+            { minAffinity: 0, next: "day2_lunch_nurse_met_normal" },
+            { minAffinity: -100, next: "day2_lunch_nurse_met_low" }
+        ],
         stats: { Nurse: { affinity: 6 } },
+        next: "day2_lunch_nurse_3"
+    },
+    "day2_lunch_nurse_met_high": {
+        name: "보건선생님",
+        text: "(선생님이 내 얼굴을 보며 은근히 미소 짓는다.) \"후훗, {name?}. 너 또 왔구나? 세상에... 선생님을 이렇게 자주 찾아오는 학생은 너밖에 없어.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 5 } },
+        next: "day2_lunch_nurse_3"
+    },
+    "day2_lunch_nurse_met_normal": {
+        name: "보건선생님",
+        text: "\"어머, {name?}. 점심시간에 보건실이라니... 어디 아픈 거야?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_3"
+    },
+    "day2_lunch_nurse_met_low": {
+        name: "보건선생님",
+        text: "(선생님이 날 보더니 잘 모르겠다는 듯 고개를 기울인다.) \"어... {name?}, 맞지? 어디 아픈 거야? 들어와.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse.png",
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_new": {
