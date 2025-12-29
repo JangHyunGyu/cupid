@@ -31,7 +31,7 @@ Object.assign(SCENARIO[1], {
     },
     "start_4": {
         name: "???",
-        text: "\"Hi? I haven't seen your face before. Standing here blankly... Are you the transfer student, {name?}?\"",
+        text: "\"Hi? I haven't seen your face before. Standing here blankly... Are you the transfer student, {name}?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "intro_1"
     },
@@ -241,7 +241,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_listen_2": {
         name: "Seoyeon",
-        text: "\"Thank you so much for listening to my explanation so well. {name?} seems like a very sincere person! With this attitude, you'll adapt to school life in no time.\"",
+        text: "\"Thank you so much for listening to my explanation so well. {name} seems like a very sincere person! With this attitude, you'll adapt to school life in no time.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
@@ -358,7 +358,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3_high": {
         name: "Homeroom Teacher",
-        text: "\"Oh my, talking to {name?} makes me feel good too! Now, everyone pay attention! This is {name}, who will be with us from today. Everyone, get along well. Now, shall we have a word of introduction?\"",
+        text: "\"Oh my, talking to {name} makes me feel good too! Now, everyone pay attention! This is {name}, who will be with us from today. Everyone, get along well. Now, shall we have a word of introduction?\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
@@ -370,7 +370,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3_low": {
         name: "Homeroom Teacher",
-        text: "\"...{name?}. That kind of attitude is problematic from the first day of transfer. I don't really like students who lack manners. Now, everyone pay attention. This is {name}, who will be with us from today. ...At least introduce yourself properly.\"",
+        text: "\"...{name}. That kind of attitude is problematic from the first day of transfer. I don't really like students who lack manners. Now, everyone pay attention. This is {name}, who will be with us from today. ...At least introduce yourself properly.\"",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
@@ -382,7 +382,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3": {
         name: "Homeroom Teacher",
-        text: "\"Now, everyone pay attention! This is {name?}, who will be with us from today. Everyone, get along well. Now, shall we have a word of introduction?\"",
+        text: "\"Now, everyone pay attention! This is {name}, who will be with us from today. Everyone, get along well. Now, shall we have a word of introduction?\"",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
@@ -453,7 +453,7 @@ Object.assign(SCENARIO[1], {
     },
     "class_after_party_3": {
         name: "Kids",
-        text: "\"Wow! {name?}'s personality is really great! Okay, let's have lunch together today! We'll show you all the best spots!\"",
+        text: "\"Wow! {name}'s personality is really great! Okay, let's have lunch together today! We'll show you all the best spots!\"",
         character: null,
         next: "lunch_time"
     },

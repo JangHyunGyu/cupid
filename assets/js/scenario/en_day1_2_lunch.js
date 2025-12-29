@@ -109,7 +109,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_talk_ah_fail": {
         name: "Seoyeon",
-        text: "(Seoyeon's face hardens instantly. She puts down her chopsticks, looking flustered.) \"Um... that's a bit... {name?}, we're not that close yet, are we? I think the joke went too far.\"",
+        text: "(Seoyeon's face hardens instantly. She puts down her chopsticks, looking flustered.) \"Um... that's a bit... {name}, we're not that close yet, are we? I think the joke went too far.\"",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -30 } },
         next: "rooftop_awkward"
@@ -133,7 +133,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_talk_food_2": {
         name: "Seoyeon",
-        text: "\"Really? I'm glad! Actually, I was worried if {name?} would like it, so I even lost sleep thinking about the menu yesterday. Eat a lot, there's still plenty left!\"",
+        text: "\"Really? I'm glad! Actually, I was worried if {name} would like it, so I even lost sleep thinking about the menu yesterday. Eat a lot, there's still plenty left!\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_2"
     },
@@ -169,7 +169,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_2_2": {
         name: "Seoyeon",
-        text: "\"Um, {name?}... Actually, since I first saw you, somehow... I felt like we've known each other for a long time. How about you?\"",
+        text: "\"Um, {name}... Actually, since I first saw you, somehow... I felt like we've known each other for a long time. How about you?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_free_talk"
     },
@@ -273,7 +273,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_comfortable_2": {
         name: "Seoyeon",
-        text: "\"I'm glad you feel comfortable. I also feel like I can put down the burden of being the student council president for a while when I'm with you. Thank you, {name?}.\"",
+        text: "\"I'm glad you feel comfortable. I also feel like I can put down the burden of being the student council president for a while when I'm with you. Thank you, {name}.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "seyoun_contact_exchange"
     },
@@ -432,7 +432,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_store_teacher": {
         name: "Homeroom Teacher",
-        text: "\"Oh, sorry! ...Wait, isn't that {name?}? Did you come to the store to buy bread too?\"",
+        text: "\"Oh, sorry! ...Wait, isn't that {name}? Did you come to the store to buy bread too?\"",
         character: "assets/images/characters/teacher.png",
         next: "lunch_store_teacher_2"
     },
@@ -517,7 +517,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_gym_2": {
         name: "Dain",
-        text: "\"Now, this is my territory! {name?}, are you ready? I won't go easy on you, so be prepared!\"",
+        text: "\"Now, this is my territory! {name}, are you ready? I won't go easy on you, so be prepared!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",

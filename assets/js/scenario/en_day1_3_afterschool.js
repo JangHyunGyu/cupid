@@ -46,7 +46,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_teacher_2": {
         name: "Homeroom Teacher",
-        text: "\"Oh, {name?}! What brings you to the faculty room at this hour?\"",
+        text: "\"Oh, {name}! What brings you to the faculty room at this hour?\"",
         character: "assets/images/characters/teacher.png",
         sunset: true,
         next: "after_teacher_3"
@@ -64,14 +64,14 @@ Object.assign(SCENARIO[1], {
     },
     "after_teacher_help": {
         name: "Homeroom Teacher",
-        text: "\"Hehe, thank you for the thought. But this is something I have to do. You should go home and rest, {name?}.\"",
+        text: "\"Hehe, thank you for the thought. But this is something I have to do. You should go home and rest, {name}.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact"
     },
     "after_teacher_miss": {
         name: "Homeroom Teacher",
-        text: "\"Oh my... {name?}, you really are something. I'm happy you like me that much... Hehe.\"",
+        text: "\"Oh my... {name}, you really are something. I'm happy you like me that much... Hehe.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact"
@@ -119,7 +119,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_3": {
         name: "Seoyeon",
-        text: "\"Oh? {name?}! What brings you here at this time? Don't tell me... were you waiting for me?\"",
+        text: "\"Oh? {name}! What brings you here at this time? Don't tell me... were you waiting for me?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         sunset: true,
         choices: [
@@ -186,7 +186,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_cafe_2_2": {
         name: "Seoyeon",
-        text: "\"Haah~ I feel alive again. Thank you so much for today, {name?}.\"",
+        text: "\"Haah~ I feel alive again. Thank you so much for today, {name}.\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         sunset: true,
@@ -211,7 +211,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_promise_2": {
         name: "Seoyeon",
-        text: "\"It's a promise! No breaking it! See you tomorrow, {name?}. Get home safe!\"",
+        text: "\"It's a promise! No breaking it! See you tomorrow, {name}. Get home safe!\"",
         character: "assets/images/characters/seyoun_shy.png",
         branches: [
             { next: "after_home", condition: "has_number_seyoun" },
@@ -314,7 +314,7 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_after_talk": {
         name: "Yuna",
-        text: "\"We meet again, {name?}. It's still quiet here... and still heavy. Don't you feel that weight?\"",
+        text: "\"We meet again, {name}. It's still quiet here... and still heavy. Don't you feel that weight?\"",
         character: "assets/images/characters/yuna_nomal.png",
         sunset: true,
         next: "yuna_after_choices"
