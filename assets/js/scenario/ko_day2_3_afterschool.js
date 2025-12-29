@@ -135,6 +135,7 @@ Object.assign(SCENARIO[2], {
         text: "\"아... 응, 알았어! 내가 너무 갑자기 물어봤지? 미안해. 그럼 내일 학교에서 봐!\"",
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
+        stats: { Seoyeon: { affinity: -10 } },
         next: "day2_end"
     },
     "day2_after_yuna": {
