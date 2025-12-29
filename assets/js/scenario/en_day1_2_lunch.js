@@ -528,7 +528,10 @@ Object.assign(SCENARIO[1], {
         text: "\"Oh, a new face? Was there such a cute student in our school?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
-        next: "nurse_intro"
+        branches: [
+            { next: "nurse_intro", excludeCondition: "knowsName_Nurse" },
+            { next: "nurse_name_share_pre", condition: "knowsName_Nurse" }
+        ]
     },
     "nurse_intro": {
         name: "Nurse",

@@ -1,5 +1,5 @@
 const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
-const ASSET_VERSION = "1.0.2"; // 에셋 캐시 방지를 위한 버전 번호
+const ASSET_VERSION = "1.0.3"; // 에셋 캐시 방지를 위한 버전 번호
 
 // 에셋 URL에 버전을 추가하는 헬퍼 함수
 function getAssetUrl(url) {
