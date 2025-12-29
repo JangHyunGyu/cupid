@@ -539,7 +539,17 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         night: true,
         choices: [
-            { text: "선생님이 보고 싶어서 왔어요.", next: "day2_nurse_miss", stats: { Nurse: { affinity: 8 } } },
+            { 
+                text: "선생님이 보고 싶어서 왔어요.", 
+                next: "day2_nurse_miss",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 15, next: "day2_nurse_miss" },
+                    { minAffinity: 0, next: "day2_nurse_miss_normal" },
+                    { minAffinity: -100, next: "day2_nurse_miss_low" }
+                ],
+                stats: { Nurse: { affinity: 8 } } 
+            },
             { text: "그냥 조용히 쉬고 싶어서요.", next: "day2_nurse_rest", stats: { Nurse: { affinity: 3 } } },
             { text: "이 방에서 나는 향기가 너무 좋아요.", next: "day2_nurse_aroma", stats: { Nurse: { affinity: 5 } } }
         ]
@@ -549,6 +559,21 @@ Object.assign(SCENARIO[2], {
         text: "\"후훗, 솔직해서 좋네. 그렇게 솔직한 우리 전학생에겐 상을 줘야겠지?\"",
         character: "assets/images/characters/nurse.png",
         night: true,
+        next: "day2_nurse_night_talk"
+    },
+    "day2_nurse_miss_normal": {
+        name: "보건선생님",
+        text: "\"후훗, 솔직한 건 좋은데... 선생님한테 그런 말을 하면 오해받을 수 있어, {name?}. 그래도 귀엽긴 하네.\"",
+        character: "assets/images/characters/nurse.png",
+        night: true,
+        next: "day2_nurse_night_talk"
+    },
+    "day2_nurse_miss_low": {
+        name: "보건선생님",
+        text: "(선생님이 안경 너머로 나를 차갑게 바라본다.) \"...아직 우린 그런 사이가 아닌 것 같은데? 학생, 농담도 적당히 해야지. 오늘은 그냥 쉬다 가렴.\"",
+        character: "assets/images/characters/nurse.png",
+        night: true,
+        stats: { Nurse: { affinity: -8 } },
         next: "day2_nurse_night_talk"
     },
     "day2_nurse_rest": {

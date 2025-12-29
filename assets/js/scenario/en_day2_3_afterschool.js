@@ -539,7 +539,17 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         night: true,
         choices: [
-            { text: "I missed you, teacher.", next: "day2_nurse_miss", stats: { Nurse: { affinity: 8 } } },
+            { 
+                text: "I missed you, teacher.", 
+                next: "day2_nurse_miss",
+                affinityChar: "Nurse",
+                affinityBranches: [
+                    { minAffinity: 15, next: "day2_nurse_miss" },
+                    { minAffinity: 0, next: "day2_nurse_miss_normal" },
+                    { minAffinity: -100, next: "day2_nurse_miss_low" }
+                ],
+                stats: { Nurse: { affinity: 8 } } 
+            },
             { text: "I just wanted some peace and quiet.", next: "day2_nurse_rest", stats: { Nurse: { affinity: 3 } } },
             { text: "The scent in this room is wonderful.", next: "day2_nurse_aroma", stats: { Nurse: { affinity: 5 } } }
         ]
@@ -549,6 +559,21 @@ Object.assign(SCENARIO[2], {
         text: "\"Hehe, I like an honest student. I suppose I should reward you for that, shouldn't I?\"",
         character: "assets/images/characters/nurse.png",
         night: true,
+        next: "day2_nurse_night_talk"
+    },
+    "day2_nurse_miss_normal": {
+        name: "Nurse",
+        text: "\"Hehe, that's quite honest of you... but saying that to a teacher could be misunderstood, {name?}. Still, I suppose it is rather charming.\"",
+        character: "assets/images/characters/nurse.png",
+        night: true,
+        next: "day2_nurse_night_talk"
+    },
+    "day2_nurse_miss_low": {
+        name: "Nurse",
+        text: "(She looks at me coldly over her glasses.) \"...I don't think we're quite that close yet, are we? Student, keep your jokes in check. Just rest here for today.\"",
+        character: "assets/images/characters/nurse.png",
+        night: true,
+        stats: { Nurse: { affinity: -8 } },
         next: "day2_nurse_night_talk"
     },
     "day2_nurse_rest": {
