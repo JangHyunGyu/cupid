@@ -2,6 +2,25 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <script>
+        (function() {
+            const CURRENT_VERSION = '1.0.0';
+            setTimeout(() => {
+                fetch('version.json?t=' + new Date().getTime())
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.version !== CURRENT_VERSION) {
+                            if ('serviceWorker' in navigator) {
+                                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                                    for(let registration of registrations) { registration.unregister(); }
+                                    window.location.reload(true);
+                                });
+                            } else { window.location.reload(true); }
+                        }
+                    }).catch(err => console.error('Version check failed:', err));
+            }, 3000);
+        })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
@@ -10,15 +29,15 @@
     <title>Cupid - 미연시 게임</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-05YM7K3VX9"></script>
-    <script src="assets/js/ga.js?v=1.0.11"></script>
+    <script src="assets/js/ga.js?v=1.0.0"></script>
     <!-- iOS 전용 설정 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="assets/images/icon.png">
     
-    <link rel="stylesheet" href="assets/css/style.css?v=1.0.11">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
-    <script src="assets/js/browser-check.js?v=1.0.11" defer></script>
+    <script src="assets/js/browser-check.js?v=1.0.0" defer></script>
 </head>
 <body>
     <div id="game-container">
