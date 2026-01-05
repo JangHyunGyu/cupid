@@ -1329,18 +1329,25 @@ async function sendChatMessage() {
         let reply = data?.choices?.[0]?.message?.content?.trim();
 
         // [Worker 호환성 패치] Worker가 JSON 응답을 강제하므로, 텍스트가 JSON으로 감싸져 있을 경우 파싱합니다.
-        if (reply && (reply.startsWith('{') || reply.startsWith('```json'))) {
+        if (reply && (reply.startsWith('{') || reply.startsWith('[') || reply.startsWith('```json'))) {
             try {
                 let jsonStr = reply;
                 if (jsonStr.startsWith('```')) {
                     jsonStr = jsonStr.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '');
                 }
                 const parsed = JSON.parse(jsonStr);
-                // Gemini가 주로 사용하는 필드명이나, 혹시 모를 필드명들을 순차적으로 확인
-                reply = parsed.text || parsed.response || parsed.message || parsed.content || reply;
                 
-                // 만약 파싱된 객체 안에 스탯/표정 정보가 별도 필드로 있다면 여기서 합쳐줄 수도 있겠지만,
-                // 현재 Cupid 프롬프트는 텍스트 내에 태그를 포함시키는 방식이므로 텍스트만 꺼내면 됩니다.
+                if (Array.isArray(parsed)) {
+                    // 배열인 경우 (예: [{ "text": "..." }])
+                    if (parsed.length > 0) {
+                        // 첫 번째 요소의 텍스트를 가져옵니다.
+                        const item = parsed[0];
+                        reply = item.text || item.content || item.message || item.response || reply;
+                    }
+                } else {
+                    // 객체인 경우 (예: { "text": "..." })
+                    reply = parsed.text || parsed.response || parsed.message || parsed.content || reply;
+                }
             } catch (e) {
                 console.warn("JSON parsing failed, using raw text:", e);
             }
