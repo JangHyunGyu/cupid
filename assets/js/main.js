@@ -1328,6 +1328,24 @@ async function sendChatMessage() {
         const data = await response.json();
         let reply = data?.choices?.[0]?.message?.content?.trim();
 
+        // [Worker 호환성 패치] Worker가 JSON 응답을 강제하므로, 텍스트가 JSON으로 감싸져 있을 경우 파싱합니다.
+        if (reply && (reply.startsWith('{') || reply.startsWith('```json'))) {
+            try {
+                let jsonStr = reply;
+                if (jsonStr.startsWith('```')) {
+                    jsonStr = jsonStr.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '');
+                }
+                const parsed = JSON.parse(jsonStr);
+                // Gemini가 주로 사용하는 필드명이나, 혹시 모를 필드명들을 순차적으로 확인
+                reply = parsed.text || parsed.response || parsed.message || parsed.content || reply;
+                
+                // 만약 파싱된 객체 안에 스탯/표정 정보가 별도 필드로 있다면 여기서 합쳐줄 수도 있겠지만,
+                // 현재 Cupid 프롬프트는 텍스트 내에 태그를 포함시키는 방식이므로 텍스트만 꺼내면 됩니다.
+            } catch (e) {
+                console.warn("JSON parsing failed, using raw text:", e);
+            }
+        }
+
         if (reply) {
             // 표정 변화 파싱 [EXPRESSION: name] - 전역 검색(/g)으로 모든 태그 제거
             const exprRegex = /\[EXPRESSION:\s*(\w+)\]/gi;
