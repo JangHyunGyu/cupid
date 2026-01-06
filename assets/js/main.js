@@ -429,18 +429,27 @@ async function renderScene(sceneId) {
 
             if (charKey && gameState.stats[charKey]) {
                 const affinity = gameState.stats[charKey].affinity || 0;
-                // 0~100 -> 0~5 하트 (20점 단위)
-                const fullHearts = Math.max(0, Math.min(5, Math.floor(affinity / 20)));
                 
                 const heartContainer = document.createElement('span');
                 heartContainer.className = 'affinity-hearts';
                 heartContainer.style.marginLeft = '8px';
                 heartContainer.style.fontSize = '0.8em';
-                heartContainer.style.color = '#ff69b4';
                 
                 let heartStr = "";
-                for (let i = 0; i < 5; i++) {
-                    heartStr += (i < fullHearts) ? "♥" : "♡";
+                if (affinity < 0) {
+                    heartContainer.style.color = '#6c757d'; // 회색 (냉담, 우울)
+                    // 음수인 경우: 절댓값 기준 20점당 깨진 하트(💔) 1개
+                    const brokenHearts = Math.max(0, Math.min(5, Math.floor(Math.abs(affinity) / 20)));
+                    for (let i = 0; i < 5; i++) {
+                        heartStr += (i < brokenHearts) ? "💔" : "♡";
+                    }
+                } else {
+                    heartContainer.style.color = '#ff69b4'; // 핑크 (설렘)
+                    // 양수인 경우: 20점당 채워진 하트(♥) 1개
+                    const fullHearts = Math.max(0, Math.min(5, Math.floor(affinity / 20)));
+                    for (let i = 0; i < 5; i++) {
+                        heartStr += (i < fullHearts) ? "♥" : "♡";
+                    }
                 }
                 heartContainer.textContent = heartStr;
                 nameTagEl.appendChild(heartContainer);
