@@ -437,14 +437,16 @@ async function renderScene(sceneId) {
                 
                 let heartStr = "";
                 if (affinity < 0) {
-                    heartContainer.style.color = '#333333'; // 진한 회색 (냉담, 핑크 배경과 대비)
+                    heartContainer.style.color = '#333333'; // 진한 회색
+                    heartContainer.style.textShadow = '1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff'; // 흰색 테두리
                     // 음수인 경우: 절댓값 기준 20점당 깨진 하트(💔) 1개
                     const brokenHearts = Math.max(0, Math.min(5, Math.floor(Math.abs(affinity) / 20)));
                     for (let i = 0; i < 5; i++) {
                         heartStr += (i < brokenHearts) ? "💔" : "♡";
                     }
                 } else {
-                    heartContainer.style.color = '#ffffff'; // 흰색 (설렘, 핑크 배경 위에서 잘 보임)
+                    heartContainer.style.color = '#ff0000'; // 빨간색 하트
+                    heartContainer.style.textShadow = '1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff'; // 흰색 테두리
                     // 양수인 경우: 20점당 채워진 하트(♥) 1개
                     const fullHearts = Math.max(0, Math.min(5, Math.floor(affinity / 20)));
                     for (let i = 0; i < 5; i++) {
