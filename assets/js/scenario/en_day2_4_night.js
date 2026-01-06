@@ -283,7 +283,7 @@ Object.assign(SCENARIO[2], {
             { minAffinity: 0, next: "day2_night_message_dain_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_dain_reply_low" }
         ],
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_dain_reply_high": {
         name: "Me",
@@ -291,7 +291,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_dain_reply_normal": {
         name: "Me",
@@ -299,7 +299,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_dain_reply_low": {
         name: "Me",
@@ -348,7 +348,7 @@ Object.assign(SCENARIO[2], {
             { minAffinity: 0, next: "day2_night_message_nurse_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_nurse_reply_low" }
         ],
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_nurse_reply_high": {
         name: "Me",
@@ -356,7 +356,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_nurse_reply_normal": {
         name: "Me",

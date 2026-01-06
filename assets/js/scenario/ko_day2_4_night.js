@@ -350,7 +350,7 @@ Object.assign(SCENARIO[2], {
             { minAffinity: 0, next: "day2_night_message_nurse_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_nurse_reply_low" }
         ],
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_nurse_reply_high": {
         name: "나",
@@ -358,7 +358,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_nurse_reply_normal": {
         name: "나",
@@ -399,7 +399,7 @@ Object.assign(SCENARIO[2], {
             { minAffinity: 0, next: "day2_night_message_teacher_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_teacher_reply_low" }
         ],
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher_reply_high": {
         name: "나",
@@ -407,7 +407,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
-        next: "day2_final_scene"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher_reply_normal": {
         name: "나",
