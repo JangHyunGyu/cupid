@@ -411,7 +411,42 @@ async function renderScene(sceneId) {
     }
 
     // 이름 태그
-    nameTagEl.textContent = scene.name || "";
+    nameTagEl.innerHTML = "";
+    if (scene.name) {
+        const nameSpan = document.createElement('span');
+        nameSpan.textContent = scene.name;
+        nameTagEl.appendChild(nameSpan);
+
+        // 호감도 하트 표시 (설정 확인, 기본값 true)
+        const showAffinity = localStorage.getItem('showAffinity') !== 'false';
+
+        if (showAffinity) {
+            const charNameMap = {
+                "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
+                "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
+            };
+            const charKey = charNameMap[scene.name];
+
+            if (charKey && gameState.stats[charKey]) {
+                const affinity = gameState.stats[charKey].affinity || 0;
+                // 0~100 -> 0~5 하트 (20점 단위)
+                const fullHearts = Math.max(0, Math.min(5, Math.floor(affinity / 20)));
+                
+                const heartContainer = document.createElement('span');
+                heartContainer.className = 'affinity-hearts';
+                heartContainer.style.marginLeft = '8px';
+                heartContainer.style.fontSize = '0.8em';
+                heartContainer.style.color = '#ff69b4';
+                
+                let heartStr = "";
+                for (let i = 0; i < 5; i++) {
+                    heartStr += (i < fullHearts) ? "♥" : "♡";
+                }
+                heartContainer.textContent = heartStr;
+                nameTagEl.appendChild(heartContainer);
+            }
+        }
+    }
     nameTagEl.style.display = scene.name ? 'block' : 'none';
 
     // 다음 지시계 초기화
