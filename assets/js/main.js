@@ -1,5 +1,5 @@
 const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
-const ASSET_VERSION = "1.0.11"; // 에셋 캐시 방지를 위한 버전 번호
+const ASSET_VERSION = "1.0.12"; // 에셋 캐시 방지를 위한 버전 번호
 
 // 에셋 URL에 버전을 추가하는 헬퍼 함수
 function getAssetUrl(url) {
@@ -1328,25 +1328,63 @@ async function sendChatMessage() {
         const data = await response.json();
         let reply = data?.choices?.[0]?.message?.content?.trim();
 
-        // [Worker 호환성 패치] Worker가 JSON 응답을 강제하므로, 텍스트가 JSON으로 감싸져 있을 경우 파싱합니다.
-        if (reply && (reply.startsWith('{') || reply.startsWith('[') || reply.startsWith('```json'))) {
+        // [Worker 호환성 패치] Worker가 JSON 응답을 강제하거나, AI가 JSON 형식으로 답변할 경우를 대비하여 파싱합니다.
+        const likelyJson = reply && (reply.includes('{') || reply.includes('[') || reply.includes('```json'));
+        if (likelyJson) {
             try {
                 let jsonStr = reply;
-                if (jsonStr.startsWith('```')) {
-                    jsonStr = jsonStr.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '');
+                // markdown 코드 블록 제거
+                if (jsonStr.includes('```')) {
+                    const match = jsonStr.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
+                    if (match) jsonStr = match[1];
                 }
+                
+                // 순수 JSON 부분만 추출 시도 (텍스트가 앞뒤로 섞여 있을 경우)
+                if (!jsonStr.trim().startsWith('{') && !jsonStr.trim().startsWith('[')) {
+                    const startExpr = jsonStr.indexOf('{');
+                    const startArray = jsonStr.indexOf('[');
+                    let start = -1;
+                    if (startExpr !== -1 && startArray !== -1) start = Math.min(startExpr, startArray);
+                    else start = Math.max(startExpr, startArray);
+                    
+                    if (start !== -1) {
+                        const lastExpr = jsonStr.lastIndexOf('}');
+                        const lastArray = jsonStr.lastIndexOf(']');
+                        const end = Math.max(lastExpr, lastArray);
+                        if (end > start) {
+                            jsonStr = jsonStr.substring(start, end + 1);
+                        }
+                    }
+                }
+
                 const parsed = JSON.parse(jsonStr);
+                const getTextFromObj = (obj) => {
+                    if (typeof obj === 'string') return obj;
+                    // 우선순위가 높은 키들
+                    let text = obj.text || obj.dialogue || obj.content || obj.message || obj.response || obj.msg || obj.result;
+                    
+                    // 만약 아직 텍스트를 못 찾았다면, 객체의 값 중 가장 긴 문자열을 찾아봅니다 (보통 대화가 가장 깁니다)
+                    if (!text) {
+                        let longestStr = "";
+                        for (const key in obj) {
+                            if (typeof obj[key] === 'string' && obj[key].length > longestStr.length) {
+                                longestStr = obj[key];
+                            }
+                        }
+                        if (longestStr.length > 5) text = longestStr;
+                    }
+                    return text;
+                };
                 
                 if (Array.isArray(parsed)) {
-                    // 배열인 경우 (예: [{ "text": "..." }])
                     if (parsed.length > 0) {
-                        // 첫 번째 요소의 텍스트를 가져옵니다.
                         const item = parsed[0];
-                        reply = item.text || item.content || item.message || item.response || reply;
+                        const extracted = getTextFromObj(item);
+                        if (extracted && typeof extracted === 'string') reply = extracted;
                     }
                 } else {
-                    // 객체인 경우 (예: { "text": "..." })
-                    reply = parsed.text || parsed.response || parsed.message || parsed.content || reply;
+                    const extracted = getTextFromObj(parsed);
+                    if (extracted && typeof extracted === 'string') reply = extracted;
                 }
             } catch (e) {
                 console.warn("JSON parsing failed, using raw text:", e);
