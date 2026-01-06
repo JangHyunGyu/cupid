@@ -283,7 +283,22 @@
             </div>
             <button onclick="saveSettings()" style="margin-top: 20px; background: #ff69b4; border: none; padding: 10px 30px; border-radius: 20px; color: white; cursor: pointer; font-size: 1rem;">저장</button>
         </div>
-    </di// Settings Modal Logic
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal-overlay" onclick="closeContactModal(event)">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <h3 class="modal-title">문의하기</h3>
+            <div class="contact-options">
+                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option">💬 카카오톡 오픈채팅</a>
+                <a href="mailto:hyungyu@archerlab.dev" class="contact-option">📧 이메일 보내기</a>
+            </div>
+            <button onclick="closeContactModal()" style="margin-top: 20px; background: none; border: none; color: #aaa; cursor: pointer;">닫기</button>
+        </div>
+    </div>
+
+    <script>
+        // Settings Modal Logic
         function openSettingsModal() {
             document.getElementById('settingsModal').classList.add('is-open');
             // Default to true if not set
@@ -303,23 +318,11 @@
             closeSettingsModal();
         }
 
-        document.getElementById('settings-btn').addEventListener('click', openSettingsModal);
+        window.addEventListener('DOMContentLoaded', () => {
+             const settingsBtn = document.getElementById('settings-btn');
+             if(settingsBtn) settingsBtn.addEventListener('click', openSettingsModal);
+        });
 
-        v>
-
-    <!-- Contact Modal -->
-    <div id="contactModal" class="modal-overlay" onclick="closeContactModal(event)">
-        <div class="modal-container" onclick="event.stopPropagation()">
-            <h3 class="modal-title">문의하기</h3>
-            <div class="contact-options">
-                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option">💬 카카오톡 오픈채팅</a>
-                <a href="mailto:hyungyu@archerlab.dev" class="contact-option">📧 이메일 보내기</a>
-            </div>
-            <button onclick="closeContactModal()" style="margin-top: 20px; background: none; border: none; color: #aaa; cursor: pointer;">닫기</button>
-        </div>
-    </div>
-
-    <script>
         function openContactModal() {
             document.getElementById('contactModal').classList.add('is-open');
         }
