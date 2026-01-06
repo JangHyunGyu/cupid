@@ -222,6 +222,64 @@ function getScene(id) {
     return null;
 }
 
+/**
+ * 이름 태그 및 호감도 하트 업데이트
+ * @param {string} name 캐릭터 이름
+ */
+function updateNameTag(name) {
+    nameTagEl.innerHTML = "";
+    if (!name) {
+        nameTagEl.style.display = 'none';
+        return;
+    }
+
+    const nameSpan = document.createElement('span');
+    nameSpan.textContent = name;
+    nameTagEl.appendChild(nameSpan);
+
+    // 호감도 하트 표시 (설정 확인, 기본값 true)
+    const showAffinity = localStorage.getItem('showAffinity') !== 'false';
+
+    if (showAffinity) {
+        const charNameMap = {
+            "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
+            "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
+        };
+        const charKey = charNameMap[name];
+
+        if (charKey && gameState.stats[charKey]) {
+            const affinity = gameState.stats[charKey].affinity || 0;
+            
+            const heartContainer = document.createElement('span');
+            heartContainer.className = 'affinity-hearts';
+            heartContainer.style.marginLeft = '8px';
+            heartContainer.style.fontSize = '0.8em';
+            
+            let heartStr = "";
+            if (affinity < 0) {
+                heartContainer.style.color = '#333333'; // 진한 회색
+                heartContainer.style.textShadow = '1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff'; // 흰색 테두리
+                // 음수인 경우: 절댓값 기준 10점당 깨진 하트(💔) 1개 (최대 10개)
+                const brokenHearts = Math.max(0, Math.min(10, Math.floor(Math.abs(affinity) / 10)));
+                for (let i = 0; i < 10; i++) {
+                    heartStr += (i < brokenHearts) ? "💔" : "♡";
+                }
+            } else {
+                heartContainer.style.color = '#ff0000'; // 빨간색 하트
+                heartContainer.style.textShadow = '1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff'; // 흰색 테두리
+                // 양수인 경우: 10점당 채워진 하트(♥) 1개 (최대 10개)
+                const fullHearts = Math.max(0, Math.min(10, Math.floor(affinity / 10)));
+                for (let i = 0; i < 10; i++) {
+                    heartStr += (i < fullHearts) ? "♥" : "♡";
+                }
+            }
+            heartContainer.textContent = heartStr;
+            nameTagEl.appendChild(heartContainer);
+        }
+    }
+    nameTagEl.style.display = 'block';
+}
+
 // 다음 장면 ID를 결정하는 헬퍼 함수 (분기 로직 처리)
 function resolveNextScene(scene) {
     if (!scene) return null;
@@ -410,55 +468,8 @@ async function renderScene(sceneId) {
         });
     }
 
-    // 이름 태그
-    nameTagEl.innerHTML = "";
-    if (scene.name) {
-        const nameSpan = document.createElement('span');
-        nameSpan.textContent = scene.name;
-        nameTagEl.appendChild(nameSpan);
-
-        // 호감도 하트 표시 (설정 확인, 기본값 true)
-        const showAffinity = localStorage.getItem('showAffinity') !== 'false';
-
-        if (showAffinity) {
-            const charNameMap = {
-                "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
-                "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Teacher": "Teacher", "Nurse": "Nurse"
-            };
-            const charKey = charNameMap[scene.name];
-
-            if (charKey && gameState.stats[charKey]) {
-                const affinity = gameState.stats[charKey].affinity || 0;
-                
-                const heartContainer = document.createElement('span');
-                heartContainer.className = 'affinity-hearts';
-                heartContainer.style.marginLeft = '8px';
-                heartContainer.style.fontSize = '0.8em';
-                
-                let heartStr = "";
-                if (affinity < 0) {
-                    heartContainer.style.color = '#333333'; // 진한 회색
-                    heartContainer.style.textShadow = '1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff'; // 흰색 테두리
-                    // 음수인 경우: 절댓값 기준 20점당 깨진 하트(💔) 1개
-                    const brokenHearts = Math.max(0, Math.min(5, Math.floor(Math.abs(affinity) / 20)));
-                    for (let i = 0; i < 5; i++) {
-                        heartStr += (i < brokenHearts) ? "💔" : "♡";
-                    }
-                } else {
-                    heartContainer.style.color = '#ff0000'; // 빨간색 하트
-                    heartContainer.style.textShadow = '1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff'; // 흰색 테두리
-                    // 양수인 경우: 20점당 채워진 하트(♥) 1개
-                    const fullHearts = Math.max(0, Math.min(5, Math.floor(affinity / 20)));
-                    for (let i = 0; i < 5; i++) {
-                        heartStr += (i < fullHearts) ? "♥" : "♡";
-                    }
-                }
-                heartContainer.textContent = heartStr;
-                nameTagEl.appendChild(heartContainer);
-            }
-        }
-    }
-    nameTagEl.style.display = scene.name ? 'block' : 'none';
+    // 이름 태그 업데이트
+    updateNameTag(scene.name);
 
     // 다음 지시계 초기화
     nextIndicator.style.display = 'none';
@@ -1349,7 +1360,7 @@ async function sendChatMessage() {
     turnCountEl.textContent = currentMaxTurns - freeTalkTurns;
 
     // 사용자 메시지 표시
-    nameTagEl.textContent = "나";
+    updateNameTag("나");
     messageEl.textContent = text;
     freeTalkHistory.push({ role: "user", content: text });
 
@@ -1490,7 +1501,7 @@ async function sendChatMessage() {
             }
 
             const scene = getScene(currentSceneId);
-            nameTagEl.textContent = scene.name;
+            updateNameTag(scene.name);
             await typeText(reply, scene.name); // 타이핑이 끝날 때까지 기다립니다.
             freeTalkHistory.push({ role: "assistant", content: reply });
 
@@ -1500,7 +1511,7 @@ async function sendChatMessage() {
         } else {
             // AI 응답이 비어있을 경우
             const scene = getScene(currentSceneId);
-            nameTagEl.textContent = scene.name;
+            updateNameTag(scene.name);
             const fallbackMsg = document.documentElement.lang === 'en' ? "..." : "...";
             await typeText(fallbackMsg, scene.name);
         }
@@ -1525,7 +1536,7 @@ async function sendChatMessage() {
         const isEn = document.documentElement.lang === 'en';
         const fallbackMsg = getFallbackReply(scene.name, isEn);
 
-        nameTagEl.textContent = scene.name;
+        updateNameTag(scene.name);
         await typeText(fallbackMsg, scene.name);
         freeTalkHistory.push({ role: "assistant", content: fallbackMsg });
 
