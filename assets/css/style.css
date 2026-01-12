@@ -49,13 +49,17 @@ body, html {
     width: 100%;
     height: 110%;
     pointer-events: none;
-    z-index: 1; /* UI보다 뒤에 위치하도록 설정 */
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* 영역을 벗어나는 이미지 방지 */
 }
 
 .char-slot {
     position: absolute;
     bottom: 0;
-    width: 60%; /* 슬롯 너비 조정 */
+    width: 100%; /* 슬롯 전체 너비 사용 (내부 정렬로 배치 제어) */
+    max-width: 800px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -64,24 +68,26 @@ body, html {
 }
 
 .char-slot img {
-    height: 90%; /* 모든 캐릭터의 높이를 동일하게 설정 */
+    height: 95%; /* 약간 더 크게 */
     width: auto;
+    max-width: 100%;
     object-fit: contain;
+    /* 모바일에서 이미지가 쪼개지는 현상 방지 */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 #char-left {
-    left: -10%; /* 왼쪽 캐릭터 위치 조정 */
+    transform: translateX(-35%); /* 왼쪽으로 치우치게 */
     z-index: 1;
 }
 
 #char-center {
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 2;
 }
 
 #char-right {
-    right: -10%; /* 오른쪽 캐릭터 위치 조정 */
+    transform: translateX(35%); /* 오른쪽으로 치우치게 */
     z-index: 1;
 }
 
@@ -293,12 +299,24 @@ body, html {
 /* 반응형 및 세로 모드 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 85%; /* 캐릭터 크기 최적화 */
+        height: 80%; /* 캐릭터 높이 소폭 축소 */
         bottom: 0;
     }
 
+    .char-slot {
+        max-width: 100%;
+    }
+
+    #char-left {
+        transform: translateX(-40%);
+    }
+
+    #char-right {
+        transform: translateX(40%);
+    }
+
     #dialogue-box {
-        min-height: 180px; /* 세로 모드에서 텍스트 가독성을 위해 높이 확보 */
+        min-height: 160px;
         padding: 25px 20px;
     }
 

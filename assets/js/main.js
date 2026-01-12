@@ -254,18 +254,20 @@ function updateNameTag(name) {
             const gaugeBox = document.createElement('span');
             gaugeBox.style.display = 'inline-flex';
             gaugeBox.style.alignItems = 'center';
-            gaugeBox.style.marginLeft = '10px';
+            gaugeBox.style.marginLeft = '15px'; // 마진 증가
+            gaugeBox.style.paddingLeft = '10px';
+            gaugeBox.style.borderLeft = '1px solid rgba(255, 255, 255, 0.3)';
             gaugeBox.style.verticalAlign = 'middle';
 
             // 숫자 표시
             const valText = document.createElement('span');
             valText.textContent = (affinity > 0 ? "+" : "") + affinity;
-            valText.style.fontSize = '0.75em';
-            valText.style.marginRight = '5px';
-            valText.style.minWidth = '25px';
+            valText.style.fontSize = '0.8rem';
+            valText.style.marginRight = '8px';
+            valText.style.minWidth = '30px';
             valText.style.textAlign = 'right';
-            valText.style.fontFamily = 'monospace';
-            valText.style.color = affinity >= 0 ? '#ff7675' : '#74b9ff';
+            valText.style.color = '#fff'; // 가독성을 위해 흰색으로 고정하거나 배경색에 맞춤
+            valText.style.textShadow = '1px 1px 2px rgba(0,0,0,0.5)';
 
             // 게이지 트랙
             const track = document.createElement('span');
@@ -458,10 +460,10 @@ async function renderScene(sceneId) {
     }
 
     // 캐릭터 업데이트
-    // 모든 슬롯 초기화 (scene.character가 null이거나 새로운 캐릭터 설정이 있을 때)
-    if (scene.character === null || scene.characters || scene.character) {
-        Object.values(charSlots).forEach(slot => slot.innerHTML = '');
-    }
+    // 항상 모든 슬롯을 먼저 비웁니다 (새 캐릭터 설정이 있든 없든)
+    Object.values(charSlots).forEach(slot => {
+        if (slot) slot.innerHTML = '';
+    });
 
     if (scene.characters) {
         // 여러 캐릭터 설정 (예: { left: "...", right: "..." })
@@ -473,6 +475,8 @@ async function renderScene(sceneId) {
                     img.onload = () => resolve({ pos, img });
                     img.onerror = () => resolve(null);
                     img.src = charUrl;
+                    img.style.maxWidth = '100%'; // 슬롯을 벗어나지 않도록
+                    img.style.objectFit = 'contain';
                     if (scene.silhouette) img.classList.add('silhouette');
                     if (scene.thinking) img.classList.add('thinking');
                 } else {
@@ -483,7 +487,7 @@ async function renderScene(sceneId) {
 
         const loadedChars = await Promise.all(charPromises);
         loadedChars.forEach(result => {
-            if (result) {
+            if (result && charSlots[result.pos]) {
                 charSlots[result.pos].appendChild(result.img);
             }
         });
@@ -493,7 +497,11 @@ async function renderScene(sceneId) {
             const img = document.createElement('img');
             const charUrl = getAssetUrl(scene.character);
             img.onload = () => {
-                charSlots.center.appendChild(img);
+                if (charSlots.center) {
+                    img.style.maxWidth = '100%';
+                    img.style.objectFit = 'contain';
+                    charSlots.center.appendChild(img);
+                }
                 resolve();
             };
             img.onerror = resolve;
