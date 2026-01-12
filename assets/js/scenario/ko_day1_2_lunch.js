@@ -500,7 +500,7 @@ Object.assign(SCENARIO[1], {
     "yuna_choices_low": {
         name: "나",
         text: "(유나의 눈빛이 더욱 싸늘해졌다. 내 태도가 그녀의 심기를 건드린 모양이다. 그녀는 차가운 목소리로 경고하듯 말을 내뱉었다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         choices: [
             { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret_low" },
             { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent_low" },
@@ -532,13 +532,13 @@ Object.assign(SCENARIO[1], {
     "yuna_secret_low": {
         name: "유나",
         text: "(그녀가 비웃는 듯한 표정으로 나를 밀쳐낸다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "yuna_secret_low_2"
     },
     "yuna_secret_low_2": {
         name: "유나",
         text: "\"비밀? 너 같은 애가 감당할 수 있는 수준이 아냐. 괜히 쓸데없는 곳에 머리 들이밀지 말고, 조용히 학교생활이나 해.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_secret_normal": {
@@ -580,13 +580,13 @@ Object.assign(SCENARIO[1], {
     "yuna_scent_low": {
         name: "유나",
         text: "(그녀가 코를 찡긋하며 불쾌한 내색을 비친다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "yuna_scent_low_2"
     },
     "yuna_scent_low_2": {
         name: "유나",
         text: "\"착각이었나 보네. 평범한 아이들과 다를 바 없는 불쾌한 냄새뿐이야. 나를 아는 척하지 마.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_scent_normal": {
@@ -628,13 +628,13 @@ Object.assign(SCENARIO[1], {
     "yuna_danger_low": {
         name: "유나",
         text: "(그녀가 싸늘한 눈빛으로 경고한다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "yuna_danger_low_2"
     },
     "yuna_danger_low_2": {
         name: "유나",
         text: "\"입 조심해. 죽음보다 더한 공포가 뭔지 알고 싶지 않으면. 나한테 서슴없이 다가오다간 뼈도 못 추릴 테니까.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_danger_normal": {

@@ -68,14 +68,16 @@ const CHARACTER_EXPRESSIONS = {
         "normal": "assets/images/characters/yuna_nomal.png",
         "smile": "assets/images/characters/yuna_smile.png",
         "shy": "assets/images/characters/yuna_shy.png",
-        "sadsmile": "assets/images/characters/yuna_sadsmile.png",
+        "laugh": "assets/images/characters/yuna_laugh.png",
+        "angry": "assets/images/characters/yuna_angry.png",
         "sad": "assets/images/characters/yuna_sad.png"
     },
     "Yuna": {
         "normal": "assets/images/characters/yuna_nomal.png",
         "smile": "assets/images/characters/yuna_smile.png",
         "shy": "assets/images/characters/yuna_shy.png",
-        "sadsmile": "assets/images/characters/yuna_sadsmile.png",
+        "laugh": "assets/images/characters/yuna_laugh.png",
+        "angry": "assets/images/characters/yuna_angry.png",
         "sad": "assets/images/characters/yuna_sad.png"
     },
     "다인": {

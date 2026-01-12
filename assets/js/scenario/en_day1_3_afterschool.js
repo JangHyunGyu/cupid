@@ -402,14 +402,14 @@ Object.assign(SCENARIO[1], {
     "after_yuna_rooftop_2_2": {
         name: "Yuna",
         text: "\"People see this school as perfect. But perfection is an illusion.\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_yuna_rooftop_3"
     },
     "after_yuna_rooftop_3": {
         name: "Yuna",
         text: "\"Beneath the surface, things are rotting. This heavy atmosphere... haven't you felt it? That something is... wrong?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         choices: [
             { text: "If I'm with you, I'm not afraid of anything.", next: "after_yuna_together" },
@@ -419,14 +419,14 @@ Object.assign(SCENARIO[1], {
     "after_yuna_together": {
         name: "Yuna",
         text: "(She squeezes my hand, a sad, knowing smile on her face.)",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_yuna_together_2"
     },
     "after_yuna_together_2": {
         name: "Yuna",
         text: "\"What a foolish thing to say... but I don't hate it. Then... shall we become partners in crime? Sharing each other's secrets?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "yuna_contact_exchange"
     },

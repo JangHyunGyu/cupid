@@ -402,14 +402,14 @@ Object.assign(SCENARIO[1], {
     "after_yuna_rooftop_2_2": {
         name: "유나",
         text: "\"사람들은 이 학교가 완벽하다고 생각하지. 하지만 완벽은 환상일 뿐이야.\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_yuna_rooftop_3"
     },
     "after_yuna_rooftop_3": {
         name: "유나",
         text: "\"겉으로는 드러나지 않는 문제들이 곪아가고 있을 뿐이지. 이 학교를 가득 채운 무거운 기운... 넌 그런 변화를 못 느꼈어?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         choices: [
             { text: "너와 함께라면 어디든 괜찮아.", next: "after_yuna_together" },
@@ -419,14 +419,14 @@ Object.assign(SCENARIO[1], {
     "after_yuna_together": {
         name: "유나",
         text: "(그녀가 내 손을 꽉 쥔다. 그녀의 눈을 보며 슬픈 미소를 짓는데...)",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_yuna_together_2"
     },
     "after_yuna_together_2": {
         name: "유나",
         text: "\"바보 같은 소리... 하지만 싫지 않아. 좋아, 그럼 우리... 서로의 비밀을 공유하는 사이가 되는 건 어때?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "yuna_contact_exchange"
     },

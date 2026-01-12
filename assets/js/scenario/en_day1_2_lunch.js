@@ -486,7 +486,7 @@ Object.assign(SCENARIO[1], {
     "yuna_choices_low": {
         name: "Me",
         text: "(Yuna's gaze became even colder. It seems my attitude offended her. She spat out words as if warning me in a cold voice.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         choices: [
             { text: "The school is different? What does that mean?", next: "yuna_secret_low" },
             { text: "Familiar... Have you seen me before?", next: "yuna_scent_low" },
@@ -518,14 +518,14 @@ Object.assign(SCENARIO[1], {
     "yuna_secret_low": {
         name: "Yuna",
         text: "(She pushes me away with a mocking expression.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         stats: { Yuna: { affinity: 2 } },
         next: "yuna_secret_low_2"
     },
     "yuna_secret_low_2": {
         name: "Yuna",
         text: "\"Secret? It's not a level someone like you can handle. Don't poke your head into useless places and just live a quiet school life.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_secret_normal": {
@@ -567,13 +567,13 @@ Object.assign(SCENARIO[1], {
     "yuna_scent_low": {
         name: "Yuna",
         text: "(She takes a step back and looks at me with an unpleasant expression.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "yuna_scent_low_2"
     },
     "yuna_scent_low_2": {
         name: "Yuna",
         text: "\"...Somehow, it's a very irritating scent. A light that's destined to go out soon anyway... It's better not to get too close.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_scent_normal": {
@@ -615,13 +615,13 @@ Object.assign(SCENARIO[1], {
     "yuna_danger_low": {
         name: "Yuna",
         text: "(She cold-heartedly releases my hand she was holding.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "yuna_danger_low_2"
     },
     "yuna_danger_low_2": {
         name: "Yuna",
         text: "\"Dangerous? Hehe, as if a coward like you could handle my danger. Just keep trembling in fear.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_danger_normal": {
