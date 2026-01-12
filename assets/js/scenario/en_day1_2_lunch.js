@@ -247,7 +247,12 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 7 } },
         next: "rooftop_destiny_high_2"
     },
-    // ...
+    "rooftop_destiny_high_2": {
+        name: "Seoyeon",
+        text: "\"I think so too... It feels like a dream to be like this with you, {name}. Do you think we can... continue to be together like this? Like destiny?\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_destiny": {
         name: "Seoyeon",
         text: "(She shyly smiles and gently overlaps her hand on mine.)",
@@ -255,7 +260,12 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 5 } },
         next: "rooftop_destiny_2"
     },
-    // ...
+    "rooftop_destiny_2": {
+        name: "Seoyeon",
+        text: "\"Destiny... Hehe, it's a bit of a ticklish word, but I don't dislike it. Because I sometimes feel that way when I'm with you too.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_destiny_low": {
         name: "Seoyeon",
         text: "(She quickly pulls her hand away, looking flustered.)",
@@ -276,7 +286,12 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 5 } },
         next: "rooftop_kind_high_2"
     },
-    // ...
+    "rooftop_kind_high_2": {
+        name: "Seoyeon",
+        text: "\"Thank you for saying I'm kind... Actually, I'm the one who's grateful. I felt really encouraged because you accepted my kindness so happily.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_kind_low": {
         name: "Seoyeon",
         text: "(She looks slightly disappointed, her expression stiffening.)",
@@ -284,7 +299,12 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 1 } },
         next: "rooftop_kind_low_2"
     },
-    // ...
+    "rooftop_kind_low_2": {
+        name: "Seoyeon",
+        text: "\"Comfortable because I was kind... Doesn't that mean you just take kindness for granted? That's a bit of a disappointing answer.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_kind": {
         name: "Seoyeon",
         text: "(She pouts her lips as if slightly sulky.)",
@@ -305,7 +325,12 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 6 } },
         next: "rooftop_comfortable_high_2"
     },
-    // ...
+    "rooftop_comfortable_high_2": {
+        name: "Seoyeon",
+        text: "\"Me too. I really feel at ease when I'm with you, {name}. Like we've known each other for a long time... Thank you for feeling the same way.\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_comfortable_low": {
         name: "Seoyeon",
         text: "(She forces a smile, but her eyes look a bit lonely.)",
@@ -313,7 +338,12 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 2 } },
         next: "rooftop_comfortable_low_2"
     },
-    // ...
+    "rooftop_comfortable_low_2": {
+        name: "Seoyeon",
+        text: "\"You're not sure... Is it still uncomfortable being with me? I guess I should try harder.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_comfortable": {
         name: "Seoyeon",
         text: "(She nods as if satisfied.)",
