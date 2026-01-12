@@ -17,7 +17,16 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(점심시간... 창밖 운동장에는 아이들이 뛰어놀고 있다. 나는 어떡할까?)",
         choices: [
-            { text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", next: "lunch_seoyeon" },
+            { 
+                text: "서연이에게 다가가 같이 점심 먹자고 제안한다.", 
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 40, next: "lunch_seoyeon_high" },
+                    { minAffinity: 0, next: "lunch_seoyeon_normal_branch" },
+                    { minAffinity: -100, next: "lunch_seoyeon_low" }
+                ],
+                next: "lunch_seoyeon_normal_branch" 
+            },
             { text: "혼자 학교를 둘러보며 조용한 곳에서 먹을 곳을 찾는다.", next: "lunch_alone" },
             { text: "체육관 쪽에서 들려오는 배구공 소리를 따라가 본다.", next: "lunch_dain" },
             { text: "몸이 좀 안 좋은 것 같아 보건실로 간다.", next: "lunch_nurse" },
@@ -25,7 +34,21 @@ Object.assign(SCENARIO[1], {
             { text: "피곤하니까 교실에서 잠을 잔다.", next: "lunch_sleep" }
         ]
     },
-    "lunch_seoyeon": {
+    "lunch_seoyeon_high": {
+        name: "서연",
+        text: "(서연이가 나를 발견하자마자 얼굴을 붉히며 달려온다. 그녀의 눈이 기쁨으로 반짝인다.) \"{name}! 어디 갔었어? 한참 찾았잖아. 우리 같이 점심 먹으러 가자. 아주 특별한 곳으로 안내해줄게!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        setFlag: "metSeoyeon",
+        next: "rooftop_1"
+    },
+    "lunch_seoyeon_low": {
+        name: "서연",
+        text: "(서연이가 나를 보자 조금 불편한 기색을 내비친다. 하지만 학생회장으로서의 책임감 때문인지 억지로 미소를 지어 보인다.) \"아, {name}... 마침 잘 됐네. 선생님이 전학생 챙겨주라고 하셔서. 괜찮으면 옥상에서 같이 점심 먹을래? 조용하고 이야기하기 좋을 거야.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        setFlag: "metSeoyeon",
+        next: "lunch_seoyeon_2_normal"
+    },
+    "lunch_seoyeon_normal_branch": {
         name: "서연",
         text: "(서연이에게 다가가자 그녀가 환하게 웃으며 나를 반긴다.)",
         character: "assets/images/characters/seyoun_nomal.png",

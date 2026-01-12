@@ -17,7 +17,16 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(Lunch time... Kids are playing on the field outside. What should I do?)",
         choices: [
-            { text: "Approach Seoyeon and suggest eating lunch together.", next: "lunch_seoyeon" },
+            { 
+                text: "Approach Seoyeon and suggest eating lunch together.", 
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 40, next: "lunch_seoyeon_high" },
+                    { minAffinity: 0, next: "lunch_seoyeon_normal_branch" },
+                    { minAffinity: -100, next: "lunch_seoyeon_low" }
+                ],
+                next: "lunch_seoyeon_normal_branch" 
+            },
             { text: "Look around the school alone and find a quiet place to eat.", next: "lunch_alone" },
             { text: "Follow the sound of a volleyball from the gym.", next: "lunch_dain" },
             { text: "I don't feel well, so I go to the nurse's office.", next: "lunch_nurse" },
@@ -25,7 +34,21 @@ Object.assign(SCENARIO[1], {
             { text: "Take a nap in the classroom since I'm tired.", next: "lunch_sleep" }
         ]
     },
-    "lunch_seoyeon": {
+    "lunch_seoyeon_high": {
+        name: "Seoyeon",
+        text: "(As soon as Seoyeon finds me, she runs towards me with a blush on her face. Her eyes are sparkling with joy.) \"{name}! Where were you? I've been looking for you for a long time. Let's go have lunch together. I'll take you to a very special place!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        setFlag: "metSeoyeon",
+        next: "rooftop_1"
+    },
+    "lunch_seoyeon_low": {
+        name: "Seoyeon",
+        text: "(Seoyeon shows a slightly uncomfortable expression when she sees me. However, perhaps because of her responsibility as student council president, she forces a smile.) \"Ah, {name}... Good timing. The teacher told me to take care of the transfer student. If it's okay, would you like to have lunch with me on the rooftop? It'll be quiet and good to talk.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        setFlag: "metSeoyeon",
+        next: "lunch_seoyeon_2_normal"
+    },
+    "lunch_seoyeon_normal_branch": {
         name: "Seoyeon",
         text: "(As I approach Seoyeon, she welcomes me with a bright smile.)",
         character: "assets/images/characters/seyoun_nomal.png",
@@ -803,10 +826,6 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_day1_end_low": {
         name: "Me",
-        text: "(The teacher's expression hardened. It seems my attitude was too much for our first meeting. She coldly asked me to leave as class was about to start. I should head back...)",
-        character: "assets/images/characters/nurse.png",
-        next: "after_school_start"
-    },
         text: "(The teacher's expression hardened. It seems my joke went too far. The teacher showed her displeasure and told me to get back to the classroom quickly.)",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"

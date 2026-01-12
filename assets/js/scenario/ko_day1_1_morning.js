@@ -169,10 +169,46 @@ Object.assign(SCENARIO[1], {
         text: "(서연이와 대화를 나누다 보니 어느새 학교 시설 안내가 시작되었다. 그녀와 대화하는 게 정말 즐거워서 시간 가는 줄 몰랐다. 이제 그녀를 따라 학교를 둘러보기로 했다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
-            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
+            { 
+                text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", 
+                stats: { Seoyeon: { affinity: 3 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_club_high" },
+                    { minAffinity: 0, next: "hallway_talk_club_normal" },
+                    { minAffinity: -999, next: "hallway_talk_club_low" }
+                ]
+            },
+            { 
+                text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", 
+                stats: { Seoyeon: { affinity: 5 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_flatter_high" },
+                    { minAffinity: 0, next: "hallway_talk_flatter_normal" },
+                    { minAffinity: -999, next: "hallway_talk_flatter_low" }
+                ]
+            },
+            { 
+                text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", 
+                stats: { Seoyeon: { affinity: -25 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_trap_high" },
+                    { minAffinity: 0, next: "hallway_talk_trap_normal" },
+                    { minAffinity: -999, next: "hallway_talk_trap_low" }
+                ]
+            },
+            { 
+                text: "(조용히 그녀의 설명을 경청하며 걷는다.)", 
+                stats: { Seoyeon: { affinity: 2 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_listen_high" },
+                    { minAffinity: 0, next: "hallway_talk_listen_normal" },
+                    { minAffinity: -999, next: "hallway_talk_listen_low" }
+                ]
+            }
         ]
     },
     "hallway_1_3_low": {
@@ -180,10 +216,46 @@ Object.assign(SCENARIO[1], {
         text: "(서연이의 표정이 좋지 않다. 대화 도중 내가 무언가 실수를 한 모양이다. 그녀는 차가운 태도로 학교 안내를 시작했다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
-            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
+            { 
+                text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", 
+                stats: { Seoyeon: { affinity: 3 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_club_high" },
+                    { minAffinity: 0, next: "hallway_talk_club_normal" },
+                    { minAffinity: -999, next: "hallway_talk_club_low" }
+                ]
+            },
+            { 
+                text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", 
+                stats: { Seoyeon: { affinity: 5 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_flatter_high" },
+                    { minAffinity: 0, next: "hallway_talk_flatter_normal" },
+                    { minAffinity: -999, next: "hallway_talk_flatter_low" }
+                ]
+            },
+            { 
+                text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", 
+                stats: { Seoyeon: { affinity: -25 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_trap_high" },
+                    { minAffinity: 0, next: "hallway_talk_trap_normal" },
+                    { minAffinity: -999, next: "hallway_talk_trap_low" }
+                ]
+            },
+            { 
+                text: "(조용히 그녀의 설명을 경청하며 걷는다.)", 
+                stats: { Seoyeon: { affinity: 2 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_listen_high" },
+                    { minAffinity: 0, next: "hallway_talk_listen_normal" },
+                    { minAffinity: -999, next: "hallway_talk_listen_low" }
+                ]
+            }
         ]
     },
     "hallway_1_3": {
@@ -191,10 +263,46 @@ Object.assign(SCENARIO[1], {
         text: "(서연이의 안내를 받으며 복도를 걷기 시작했다. 그녀는 학교 곳곳을 친절하게 설명해주기 시작했다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
-            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
+            { 
+                text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", 
+                stats: { Seoyeon: { affinity: 3 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_club_high" },
+                    { minAffinity: 0, next: "hallway_talk_club_normal" },
+                    { minAffinity: -999, next: "hallway_talk_club_low" }
+                ]
+            },
+            { 
+                text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", 
+                stats: { Seoyeon: { affinity: 5 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_flatter_high" },
+                    { minAffinity: 0, next: "hallway_talk_flatter_normal" },
+                    { minAffinity: -999, next: "hallway_talk_flatter_low" }
+                ]
+            },
+            { 
+                text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", 
+                stats: { Seoyeon: { affinity: -25 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_trap_high" },
+                    { minAffinity: 0, next: "hallway_talk_trap_normal" },
+                    { minAffinity: -999, next: "hallway_talk_trap_low" }
+                ]
+            },
+            { 
+                text: "(조용히 그녀의 설명을 경청하며 걷는다.)", 
+                stats: { Seoyeon: { affinity: 2 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_listen_high" },
+                    { minAffinity: 0, next: "hallway_talk_listen_normal" },
+                    { minAffinity: -999, next: "hallway_talk_listen_low" }
+                ]
+            }
         ]
     },
     "hallway_talk_trap_high": {
@@ -220,15 +328,6 @@ Object.assign(SCENARIO[1], {
         text: "\"그만해. 방금 그 말은 성희롱이나 다름없어. 전학 첫날부터 그런 식으로 행동하면 곤란해. 안내는 여기서 마칠 테니 혼자서 찾아가 봐.\"",
         character: "assets/images/characters/seyoun_angry.png",
         next: "hallway_2"
-    },
-    "hallway_talk_trap": {
-        type: "free_talk",
-        affinityChar: "Seoyeon",
-        affinityBranches: [
-            { minAffinity: 15, next: "hallway_talk_trap_high" },
-            { minAffinity: 0, next: "hallway_talk_trap_normal" },
-            { minAffinity: -999, next: "hallway_talk_trap_low" }
-        ]
     },
     "hallway_talk_trap_normal": {
         name: "서연",
@@ -266,15 +365,6 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
-    "hallway_talk_club": {
-        type: "free_talk",
-        affinityChar: "Seoyeon",
-        affinityBranches: [
-            { minAffinity: 15, next: "hallway_talk_club_high" },
-            { minAffinity: 0, next: "hallway_talk_club_normal" },
-            { minAffinity: -999, next: "hallway_talk_club_low" }
-        ]
-    },
     "hallway_talk_club_normal": {
         name: "서연",
         text: "(그녀가 반가운 듯 나를 바라본다.)",
@@ -311,15 +401,6 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_2"
     },
-    "hallway_talk_flatter": {
-        type: "free_talk",
-        affinityChar: "Seoyeon",
-        affinityBranches: [
-            { minAffinity: 15, next: "hallway_talk_flatter_high" },
-            { minAffinity: 0, next: "hallway_talk_flatter_normal" },
-            { minAffinity: -999, next: "hallway_talk_flatter_low" }
-        ]
-    },
     "hallway_talk_flatter_normal": {
         name: "서연",
         text: "(그녀가 쑥스러운 듯 뺨을 붉히며 대답한다.)",
@@ -355,15 +436,6 @@ Object.assign(SCENARIO[1], {
         text: "\"대충 알아들었니? 그럼 다음 장소로 이동할게. 멍하니 있지 말고 잘 따라와.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
-    },
-    "hallway_talk_listen": {
-        type: "free_talk",
-        affinityChar: "Seoyeon",
-        affinityBranches: [
-            { minAffinity: 15, next: "hallway_talk_listen_high" },
-            { minAffinity: 0, next: "hallway_talk_listen_normal" },
-            { minAffinity: -999, next: "hallway_talk_listen_low" }
-        ]
     },
     "hallway_talk_listen_normal": {
         name: "서연",
@@ -404,7 +476,13 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 실망한 기색을 감추지 못한다. 어깨가 조금 처진 것 같다.)",
         character: "assets/images/characters/seyoun_pout.png",
-        next: "classroom_1_1_branch"
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_1_1_high" },
+            { minAffinity: 0, next: "classroom_1_1" },
+            { minAffinity: -100, next: "classroom_1_1_low" }
+        ],
+        next: "classroom_1_1"
     },
     "path_flirt_2": {
         name: "서연",
@@ -416,7 +494,13 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"에, 매일이라니.. 업무가 얼마나 많은데! 그래도 네가 들어온다면.. 나도 조금은 즐거울지도 모르겠네. 기대하고 있을게?\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "classroom_1_1_branch"
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_1_1_high" },
+            { minAffinity: 0, next: "classroom_1_1" },
+            { minAffinity: -100, next: "classroom_1_1_low" }
+        ],
+        next: "classroom_1_1"
     },
 
     "path_normal_2": {
@@ -424,7 +508,13 @@ Object.assign(SCENARIO[1], {
         text: "(그녀가 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 걸.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_back.png",
-        next: "classroom_1_1_branch"
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_1_1_high" },
+            { minAffinity: 0, next: "classroom_1_1" },
+            { minAffinity: -100, next: "classroom_1_1_low" }
+        ],
+        next: "classroom_1_1"
     },
     "path_direct_2": {
         name: "서연",
@@ -436,10 +526,6 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"후훗, 너 정말 솔직하구나? 나에 대해서는.. 글쎄, 그건 네가 앞으로 어떻게 하느냐에 따라 알려줄 수도 있고, 아닐 수도 있어. 기대해볼게!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "classroom_1_1_branch"
-    },
-    "classroom_1_1_branch": {
-        type: "free_talk",
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 25, next: "classroom_1_1_high" },

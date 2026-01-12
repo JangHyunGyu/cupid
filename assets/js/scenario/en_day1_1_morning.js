@@ -169,10 +169,46 @@ Object.assign(SCENARIO[1], {
         text: "(As I talked with Seoyeon, the school facility guidance began before I knew it. I was so engrossed in our conversation that I lost track of time. Now, I decided to follow her and look around the school.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "The facilities are good, but it looks even better because of the person guiding me.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
-            { text: "(Quietly listening to her explanation while walking.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
+            { 
+                text: "The school is really lively. Seoyeon, do you also do club activities?", 
+                stats: { Seoyeon: { affinity: 3 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_club_high" },
+                    { minAffinity: 0, next: "hallway_talk_club_normal" },
+                    { minAffinity: -999, next: "hallway_talk_club_low" }
+                ]
+            },
+            { 
+                text: "The facilities are good, but it looks even better because of the person guiding me.", 
+                stats: { Seoyeon: { affinity: 5 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_flatter_high" },
+                    { minAffinity: 0, next: "hallway_talk_flatter_normal" },
+                    { minAffinity: -999, next: "hallway_talk_flatter_low" }
+                ]
+            },
+            { 
+                text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", 
+                stats: { Seoyeon: { affinity: -25 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_trap_high" },
+                    { minAffinity: 0, next: "hallway_talk_trap_normal" },
+                    { minAffinity: -999, next: "hallway_talk_trap_low" }
+                ]
+            },
+            { 
+                text: "(Quietly listening to her explanation while walking.)", 
+                stats: { Seoyeon: { affinity: 2 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_listen_high" },
+                    { minAffinity: 0, next: "hallway_talk_listen_normal" },
+                    { minAffinity: -999, next: "hallway_talk_listen_low" }
+                ]
+            }
         ]
     },
     "hallway_1_3_low": {
@@ -180,10 +216,46 @@ Object.assign(SCENARIO[1], {
         text: "(Seoyeon's expression isn't good. I must have made a mistake during our conversation. she began the school guidance with a cold attitude.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "The facilities are good, but it looks even better because of the person guiding me.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
-            { text: "(Quietly listening to her explanation while walking.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
+            { 
+                text: "The school is really lively. Seoyeon, do you also do club activities?", 
+                stats: { Seoyeon: { affinity: 3 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_club_high" },
+                    { minAffinity: 0, next: "hallway_talk_club_normal" },
+                    { minAffinity: -999, next: "hallway_talk_club_low" }
+                ]
+            },
+            { 
+                text: "The facilities are good, but it looks even better because of the person guiding me.", 
+                stats: { Seoyeon: { affinity: 5 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_flatter_high" },
+                    { minAffinity: 0, next: "hallway_talk_flatter_normal" },
+                    { minAffinity: -999, next: "hallway_talk_flatter_low" }
+                ]
+            },
+            { 
+                text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", 
+                stats: { Seoyeon: { affinity: -25 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_trap_high" },
+                    { minAffinity: 0, next: "hallway_talk_trap_normal" },
+                    { minAffinity: -999, next: "hallway_talk_trap_low" }
+                ]
+            },
+            { 
+                text: "(Quietly listening to her explanation while walking.)", 
+                stats: { Seoyeon: { affinity: 2 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_listen_high" },
+                    { minAffinity: 0, next: "hallway_talk_listen_normal" },
+                    { minAffinity: -999, next: "hallway_talk_listen_low" }
+                ]
+            }
         ]
     },
     "hallway_1_3": {
@@ -191,10 +263,46 @@ Object.assign(SCENARIO[1], {
         text: "(I started walking down the hallway under Seoyeon's guidance. She began to kindly explain various parts of the school.)",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
-            { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "The facilities are good, but it looks even better because of the person guiding me.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
-            { text: "(Quietly listening to her explanation while walking.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
+            { 
+                text: "The school is really lively. Seoyeon, do you also do club activities?", 
+                stats: { Seoyeon: { affinity: 3 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_club_high" },
+                    { minAffinity: 0, next: "hallway_talk_club_normal" },
+                    { minAffinity: -999, next: "hallway_talk_club_low" }
+                ]
+            },
+            { 
+                text: "The facilities are good, but it looks even better because of the person guiding me.", 
+                stats: { Seoyeon: { affinity: 5 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_flatter_high" },
+                    { minAffinity: 0, next: "hallway_talk_flatter_normal" },
+                    { minAffinity: -999, next: "hallway_talk_flatter_low" }
+                ]
+            },
+            { 
+                text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", 
+                stats: { Seoyeon: { affinity: -25 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_trap_high" },
+                    { minAffinity: 0, next: "hallway_talk_trap_normal" },
+                    { minAffinity: -999, next: "hallway_talk_trap_low" }
+                ]
+            },
+            { 
+                text: "(Quietly listening to her explanation while walking.)", 
+                stats: { Seoyeon: { affinity: 2 } },
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_listen_high" },
+                    { minAffinity: 0, next: "hallway_talk_listen_normal" },
+                    { minAffinity: -999, next: "hallway_talk_listen_low" }
+                ]
+            }
         ]
     },
     "hallway_talk_trap_high": {
@@ -221,15 +329,6 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_2"
     },
-    "hallway_talk_trap": {
-        type: "free_talk",
-        affinityChar: "Seoyeon",
-        affinityBranches: [
-            { minAffinity: 15, next: "hallway_talk_trap_high" },
-            { minAffinity: 0, next: "hallway_talk_trap_normal" },
-            { minAffinity: -999, next: "hallway_talk_trap_low" }
-        ]
-    },
     "hallway_talk_trap_normal": {
         name: "Seoyeon",
         text: "(Seoyeon stops as if flustered and stares at me intently. Her eyes turn a bit cold.)",
@@ -241,15 +340,6 @@ Object.assign(SCENARIO[1], {
         text: "\"Um... well, thanks, but... that's a bit burdensome. We haven't known each other for long, right? I think the joke is a bit too much.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
-    },
-    "hallway_talk_club": {
-        type: "free_talk",
-        affinityChar: "Seoyeon",
-        affinityBranches: [
-            { minAffinity: 15, next: "hallway_talk_club_high" },
-            { minAffinity: 0, next: "hallway_talk_club_normal" },
-            { minAffinity: -999, next: "hallway_talk_club_low" }
-        ]
     },
     "hallway_talk_club_normal": {
         name: "Seoyeon",
@@ -311,15 +401,6 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_2"
     },
-    "hallway_talk_flatter": {
-        type: "free_talk",
-        affinityChar: "Seoyeon",
-        affinityBranches: [
-            { minAffinity: 15, next: "hallway_talk_flatter_high" },
-            { minAffinity: 0, next: "hallway_talk_flatter_normal" },
-            { minAffinity: -999, next: "hallway_talk_flatter_low" }
-        ]
-    },
     "hallway_talk_flatter_normal": {
         name: "Seoyeon",
         text: "(She answers while blushing as if shy.)",
@@ -355,15 +436,6 @@ Object.assign(SCENARIO[1], {
         text: "\"...I'll continue the explanation. Please listen carefully so you don't get lost.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
-    },
-    "hallway_talk_listen": {
-        type: "free_talk",
-        affinityChar: "Seoyeon",
-        affinityBranches: [
-            { minAffinity: 15, next: "hallway_talk_listen_high" },
-            { minAffinity: 0, next: "hallway_talk_listen_normal" },
-            { minAffinity: -999, next: "hallway_talk_listen_low" }
-        ]
     },
     "hallway_talk_listen_normal": {
         name: "Seoyeon",
@@ -404,6 +476,12 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(She can't hide her disappointment. Her shoulders seem to drop a bit.)",
         character: "assets/images/characters/seyoun_pout.png",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_1_1_high" },
+            { minAffinity: 0, next: "classroom_1_1" },
+            { minAffinity: -100, next: "classroom_1_1_low" }
+        ],
         next: "classroom_1_1"
     },
     "path_flirt_2": {
@@ -416,6 +494,12 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"E-every day...? There's so much work! But if you join... I might be a little happy too. I'll be looking forward to it?\"",
         character: "assets/images/characters/seyoun_shy.png",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_1_1_high" },
+            { minAffinity: 0, next: "classroom_1_1" },
+            { minAffinity: -100, next: "classroom_1_1_low" }
+        ],
         next: "classroom_1_1"
     },
     "path_normal_2": {
@@ -423,6 +507,12 @@ Object.assign(SCENARIO[1], {
         text: "(She nods and starts walking ahead again. I feel a bit disappointed.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_back.png",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_1_1_high" },
+            { minAffinity: 0, next: "classroom_1_1" },
+            { minAffinity: -100, next: "classroom_1_1_low" }
+        ],
         next: "classroom_1_1"
     },
     "path_direct_2": {
@@ -435,7 +525,51 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"Hehe, you're really honest, aren't you? About me... Well, that depends on how you act from now on, I might tell you, or I might not. I'll look forward to it!\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_1_1_high" },
+            { minAffinity: 0, next: "classroom_1_1" },
+            { minAffinity: -100, next: "classroom_1_1_low" }
+        ],
         next: "classroom_1_1"
+    },
+    "classroom_1_1_high": {
+        name: "Seoyeon",
+        text: "(Upon arriving at the classroom door, Seoyeon gently holds my hand. My heart starts pounding at her soft touch.)",
+        background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "classroom_1_2_high"
+    },
+    "classroom_1_2_high": {
+        name: "Seoyeon",
+        text: "(Seoyeon bows her head slightly and whispers in my ear. Her sweet breath feels ticklish.) \"{name}, don't be too nervous. I'll always be by your side. You can do it.\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        next: "classroom_1_3_high"
+    },
+    "classroom_1_3_high": {
+        name: "Seoyeon",
+        text: "\"Now, this is our class. ...This is a secret, but I asked the teacher to leave the seat right next to me empty for you. You must come there, okay? It's a promise!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "classroom_2"
+    },
+    "classroom_1_1_low": {
+        name: "Seoyeon",
+        text: "(Upon arriving at the classroom door, Seoyeon walks ahead of me, keeping her distance. Her back feels somewhat cold.)",
+        background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/seyoun_back.png",
+        next: "classroom_1_2_low"
+    },
+    "classroom_1_2_low": {
+        name: "Seoyeon",
+        text: "(She silently points to the sign next to the door with her chin. Her attitude of not even looking at me makes a corner of my heart feel cold.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "classroom_1_3_low"
+    },
+    "classroom_1_3_low": {
+        name: "Seoyeon",
+        text: "\"This is Class 2-3. The teacher will be waiting inside. Don't get on her bad side by being late on your first day, and just go in.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "classroom_2"
     },
     "classroom_1_1": {
         name: "Seoyeon",
