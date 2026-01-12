@@ -1,4 +1,4 @@
-if (typeof SCENARIO === 'undefined') {
+﻿if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 if (!SCENARIO[1]) {
@@ -300,97 +300,158 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 7 } },
         next: "hallway_talk_trap_high_2"
     },
-    // ...
+    "hallway_talk_trap_high_2": {
+        name: "Seoyeon",
+        text: "\"Oh my, {name}... Do you judge people only by their looks? Hehe, but thank you. Calling me a goddess... it makes me a bit happy. But you shouldn't joke too much!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "hallway_2"
+    },
     "hallway_talk_trap_low": {
         name: "Seoyeon",
-        text: "(She looks at me with clear contempt.)",
-        character: "assets/images/characters/seyoun_pout.png",
+        text: "(Seoyeon doesn't hide her displeasure and stops. Her eyes grow cold.)",
+        character: "assets/images/characters/seyoun_angry.png",
         stats: { Seoyeon: { affinity: -25 } },
         next: "hallway_talk_trap_low_2"
     },
-    // ...
+    "hallway_talk_trap_low_2": {
+        name: "Seoyeon",
+        text: "\"Stop it. What you just said is no different from sexual harassment. It's problematic to act that way from the first day of transfer. I'll end the guidance here, so find your own way.\"",
+        character: "assets/images/characters/seyoun_angry.png",
+        next: "hallway_2"
+    },
     "hallway_talk_trap_normal": {
         name: "Seoyeon",
-        text: "(Seoyeon stops as if flustered and stares at me intently. Her eyes turn a bit cold.)",
+        text: "(Seoyeon stops in confusion and stares at me. Her eyes become a bit cold.)",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_talk_trap_normal_2"
     },
-    // ...
-    "hallway_talk_club_normal": {
+    "hallway_talk_trap_normal_2": {
         name: "Seoyeon",
-        text: "(She looks at me as if glad.)",
-        character: "assets/images/characters/seyoun_laugh.png",
-        stats: { Seoyeon: { affinity: 3 } },
-        next: "hallway_talk_club_normal_2"
+        text: "\"Um... well, thanks, but... saying things like that is a bit burdensome. We only just met, right? I think your joke went too far.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2"
     },
-    // ...
     "hallway_talk_club_high": {
         name: "Seoyeon",
-        text: "(She looks at me with twinkling eyes as if glad. I can see her anticipation that we might share similar interests.)",
+        text: "(She looks at me with sparkling eyes, appearing delighted. I can see a hint of expectation that we might share similar interests.)",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "hallway_talk_club_high_2"
     },
-    // ...
+    "hallway_talk_club_high_2": {
+        name: "Seoyeon",
+        text: "\"Yes! I'm active in the student council, but I'm actually also a member of the gardening club. I love taking care of flowers. Do you like flowers, {name}? If you have time later, be sure to visit our greenhouse! I'll give you a special tour.\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "hallway_2"
+    },
     "hallway_talk_club_low": {
         name: "Seoyeon",
-        text: "(She nods with a business-like attitude. Her expression carries no emotion.)",
+        text: "(She nods with a business-like attitude. There is no emotion in her expression.)",
         character: "assets/images/characters/seyoun_nomal.png",
         stats: { Seoyeon: { affinity: -2 } },
         next: "hallway_talk_club_low_2"
     },
-    // ...
+    "hallway_talk_club_low_2": {
+        name: "Seoyeon",
+        text: "\"Yes. I'm balancing student council and gardening club activities. Is that your only question? Then I'll continue the guidance.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2"
+    },
+    "hallway_talk_club_normal": {
+        name: "Seoyeon",
+        text: "(She looks at me as if she's glad to see me.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 3 } },
+        next: "hallway_talk_club_normal_2"
+    },
+    "hallway_talk_club_normal_2": {
+        name: "Seoyeon",
+        text: "\"Yes! I'm active in the student council, but I'm actually also a member of the gardening club. I love taking care of flowers. I feel at peace when I'm touching the soil. If you have time later, come visit our greenhouse!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2"
+    },
     "hallway_talk_flatter_high": {
         name: "Seoyeon",
-        text: "(She answers while blushing and hiding her face.)",
-        character: "assets/images/characters/seyoun_shy.png",
+        text: "(Seoyeon blushes and smiles widely with true joy. Her eyes are filled with affection for me.)",
+        character: "assets/images/characters/seyoun_shy2.png",
         stats: { Seoyeon: { affinity: 8 } },
         next: "hallway_talk_flatter_high_2"
     },
-    // ...
+    "hallway_talk_flatter_high_2": {
+        name: "Seoyeon",
+        text: "\"Really... how can you say such pretty things? To be honest, I was worried if you, as a transfer student, could adapt well, but I feel like I'm the one being comforted. Thank you, {name}. Being with you somehow makes me feel very at ease.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "hallway_2"
+    },
     "hallway_talk_flatter_low": {
         name: "Seoyeon",
-        text: "(She looks at me with a cold, suspicious gaze.)",
+        text: "(She glances at me with a cold expression. The corners of her mouth are slightly twisted as if in mock.)",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_talk_flatter_low_2"
     },
-    // ...
+    "hallway_talk_flatter_low_2": {
+        name: "Seoyeon",
+        text: "\"You have a silver tongue. I've had enough of compliments that anyone can give. I'm guiding you through the school right now, so just follow behind me properly.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "hallway_2"
+    },
     "hallway_talk_flatter_normal": {
         name: "Seoyeon",
-        text: "(She answers while blushing as if shy.)",
+        text: "(She blushes in embarrassment and answers.)",
         character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "hallway_talk_flatter_normal_2"
     },
-    // ...
+    "hallway_talk_flatter_normal_2": {
+        name: "Seoyeon",
+        text: "\"Really... you say such pretty things. Actually, I always feel tense because of my position as student council president, but being with you somehow puts me at ease. I might even start wanting to act like a baby towards you... Hehe, just kidding.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "hallway_2"
+    },
     "hallway_talk_listen_high": {
         name: "Seoyeon",
-        text: "(She looks at me with twinkling eyes as if moved.)",
+        text: "(She continues her explanation with excitement and sparkling eyes. She seems to enjoy every single reaction of mine.)",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "hallway_talk_listen_high_2"
     },
-    // ...
+    "hallway_talk_listen_high_2": {
+        name: "Seoyeon",
+        text: "\"Wow, I'm so touched that you're listening to my explanation so seriously! I think {name} is a truly kind and sincere person. Helping you feels so rewarding! If you have any more questions, feel free to ask!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "hallway_2"
+    },
     "hallway_talk_listen_low": {
         name: "Seoyeon",
-        text: "(She briefly looks at me and continues the explanation.)",
+        text: "(She continues her explanation mechanically. It feels like she's speaking into thin air without even looking at me.)",
         character: "assets/images/characters/seyoun_nomal.png",
         stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_talk_listen_low_2"
     },
-    // ...
+    "hallway_talk_listen_low_2": {
+        name: "Seoyeon",
+        text: "\"Did you mostly get that? Then let's move to the next place. Don't just stand there blankly, follow me properly.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2"
+    },
     "hallway_talk_listen_normal": {
         name: "Seoyeon",
-        text: "(She continues her explanation as if excited.)",
+        text: "(She continues her explanation with excitement.)",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 2 } },
         next: "hallway_talk_listen_normal_2"
     },
+    "hallway_talk_listen_normal_2": {
+        name: "Seoyeon",
+        text: "\"Thank you so much for listening to my explanation so well. {name}, you seem like a very sincere person! With that attitude, you'll adapt to school life in no time.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2"
+    },
     "hallway_2": {
         name: "Seoyeon",
-        text: "(She suddenly stops and turns to me.)",
+        text: "(She suddenly stops and turns to look at me.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2_2"
     },
@@ -402,18 +463,18 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_2_3": {
         name: "Seoyeon",
-        text: "\"What kind of club are you interested in? Our student council always welcomes new talent. If you join... I could even teach you the work myself.\"",
+        text: "\"What kind of clubs are you interested in? Our student council is always welcoming new talent. If you join... I could even teach you the tasks myself.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         choices: [
             { text: "If I join the student council, can I be with you every day? Then I'll definitely apply!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Rather than a club... I want to know more about you, Seoyeon.", next: "path_direct_2", stats: { Seoyeon: { affinity: 6 } } },
-            { text: "I'm not sure yet. I'll decide after I adapt to school life a bit.", next: "path_normal_2", stats: { Seoyeon: { affinity: -10 } } },
-            { text: "Clubs are annoying... I'll just be alone.", next: "path_rude_2", stats: { Seoyeon: { affinity: -40 } } }
+            { text: "I'm not sure yet. I'll decide after I adapt to school life.", next: "path_normal_2", stats: { Seoyeon: { affinity: -10 } } },
+            { text: "What's the point of a bothersome club... I'll just be by myself.", next: "path_rude_2", stats: { Seoyeon: { affinity: -40 } } }
         ]
     },
     "path_rude_2": {
         name: "Seoyeon",
-        text: "(She can't hide her disappointment. Her shoulders seem to drop a bit.)",
+        text: "(She can't hide her disappointment. Her shoulders seem to droop slightly.)",
         character: "assets/images/characters/seyoun_pout.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
@@ -425,13 +486,13 @@ Object.assign(SCENARIO[1], {
     },
     "path_flirt_2": {
         name: "Seoyeon",
-        text: "(Seoyeon's face turns red once again. While avoiding my gaze in embarrassment, a small smile spreads across her lips. Her fingers fiddle with the hem of her school uniform skirt. She shyly taps the floor with her toes.)",
+        text: "(Seoyeon's face turns red once again. Although she avoids my gaze in embarrassment, a faint smile spreads across her lips. Her fingertips fiddle with the hem of her school skirt. She bashfully taps the floor with her toe.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "path_flirt_2_2"
     },
     "path_flirt_2_2": {
         name: "Seoyeon",
-        text: "\"E-every day...? There's so much work! But if you join... I might be a little happy too. I'll be looking forward to it?\"",
+        text: "\"Eh, every day? There's so much work! But if you join... I might be a little bit happy too. I'll be looking forward to it?\"",
         character: "assets/images/characters/seyoun_shy.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
@@ -441,9 +502,10 @@ Object.assign(SCENARIO[1], {
         ],
         next: "classroom_1_1"
     },
+
     "path_normal_2": {
         name: "Seoyeon",
-        text: "(She nods and starts walking ahead again. I feel a bit disappointed.)",
+        text: "(She nods and starts leading the way again. I feel a bit regretful.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_back.png",
         affinityChar: "Seoyeon",
@@ -456,13 +518,13 @@ Object.assign(SCENARIO[1], {
     },
     "path_direct_2": {
         name: "Seoyeon",
-        text: "(She stares at me blankly, then bursts into a clear laugh. That laughter echoes in the hallway like the sound of silver bells. A small tear in the corner of her eye sparkles in the sunlight. She laughs for a long time, holding her stomach.)",
+        text: "(She stares at me blankly for a moment, then bursts into a clear and beautiful laugh. The sound of her laughter echoes in the hallway like the sound of silver bells. Small tears at the corners of her eyes sparkle in the sunlight. She laughs for a long time, holding her stomach...)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_direct_2_2"
     },
     "path_direct_2_2": {
         name: "Seoyeon",
-        text: "\"Hehe, you're really honest, aren't you? About me... Well, that depends on how you act from now on, I might tell you, or I might not. I'll look forward to it!\"",
+        text: "\"Hehe, you're really honest, aren't you? About me... well, I might tell you or I might not, depending on how you act from now on. I'll have high expectations!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
@@ -474,7 +536,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_1_high": {
         name: "Seoyeon",
-        text: "(Upon arriving at the classroom door, Seoyeon gently holds my hand. My heart starts pounding at her soft touch.)",
+        text: "(Upon arriving at the classroom door, Seoyeon gently holds my hand. The soft sensation makes my heart start to throb.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_shy.png",
         next: "classroom_1_2_high"
@@ -487,51 +549,51 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_3_high": {
         name: "Seoyeon",
-        text: "\"Now, this is our class. ...This is a secret, but I asked the teacher to leave the seat right next to me empty for you. You must come there, okay? It's a promise!\"",
+        text: "\"Now, this is our class. ...This is a secret, but I asked the teacher to leave the seat right next to mine empty for you. You have to sit there, okay? Promise!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "classroom_2"
     },
     "classroom_1_1_low": {
         name: "Seoyeon",
-        text: "(Upon arriving at the classroom door, Seoyeon walks ahead of me, keeping her distance. Her back feels somewhat cold.)",
+        text: "(Upon arriving at the classroom door, Seoyeon walks ahead of me and keeps her distance. Her back somehow feels cold.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_back.png",
         next: "classroom_1_2_low"
     },
     "classroom_1_2_low": {
         name: "Seoyeon",
-        text: "(She silently points to the sign next to the door with her chin. Her attitude of not even looking at me makes a corner of my heart feel cold.)",
+        text: "(She silently points with her chin at the sign next to the door. Her attitude of not even looking at me makes my heart feel chilly.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "classroom_1_3_low"
     },
     "classroom_1_3_low": {
         name: "Seoyeon",
-        text: "\"This is Class 2-3. The teacher will be waiting inside. Don't get on her bad side by being late on your first day, and just go in.\"",
+        text: "\"This is Class 2-3. The teacher will be waiting inside. Don't get noticed by being late from the first day and go in quickly.\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "classroom_2"
     },
     "classroom_1_1": {
         name: "Seoyeon",
-        text: "(We arrived in front of the classroom door. I can hear the murmuring and laughter of children inside. Seoyeon lightly taps my shoulder to encourage me.)",
+        text: "(We arrived at the classroom door. I can hear the murmur and laughter of kids inside. Seoyeon lightly pats my shoulder to cheer me on.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_1_2"
     },
     "classroom_1_2": {
         name: "Seoyeon",
-        text: "(The place where her hand touched feels hot. She looks into my eyes and gives a small cheer.)",
+        text: "(The place where her hand touched feels hot. She looks at me and shouts a small 'Fighting!')",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_1_3"
     },
     "classroom_1_3": {
         name: "Seoyeon",
-        text: "\"Now, this is Class 2-3 where you'll be staying. Don't be nervous. I'm right here, so just act as you usually do. Got it?\"",
+        text: "\"Now, this is Class 2-3 where you'll be staying. Don't be nervous. Since I'm right next to you, just do as you always do. Got it?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "classroom_2"
     },
     "classroom_2": {
         name: "Homeroom Teacher",
-        text: "(As I stand in front of the podium, dozens of eyes are fixed on me at once. Curious eyes, wary eyes... Seoyeon is standing next to me, watching over me with a reassuring smile.)",
+        text: "(Standing in front of the teacher's desk, dozens of eyes are fixed on me all at once. Curious looks, wary looks... Seoyeon is standing reliably next to me, watching over me with a smile.)",
         background: "assets/images/background/room_school.png",
         characters: {
             left: "assets/images/characters/teacher.png",
@@ -542,16 +604,16 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_2": {
         name: "Homeroom Teacher",
-        text: "(The air in the classroom feels heavy. The homeroom teacher taps the podium to focus attention.)",
+        text: "(The air inside the classroom feels heavy. The homeroom teacher taps on the desk to draw attention.)",
         character: "assets/images/characters/teacher.png",
         next: "teacher_free_talk"
     },
     "teacher_free_talk": {
         type: "free_talk",
         name: "Homeroom Teacher",
-        text: "\"Now, everyone is very interested in you. You must be nervous, but they're all good kids, so don't worry too much. Do you have any questions for me before you introduce yourself?\"",
-        context: "Place: Inside Class 2-3, in front of the podium. Situation: A short waiting time just before the homeroom teacher introduces the transfer student protagonist to the students. Dozens of students are watching us. We are already in the middle of the classroom, definitely not in the hallway. We are having a conversation inside the classroom. After the conversation, the teacher will formally introduce the protagonist to the students, and the protagonist will have to introduce themselves in front of the podium. At the end of the conversation, please induce actions such as telling the protagonist to get ready to greet the students or to straighten up.",
-        personality: "A professional teacher with a clear distinction between public and private life, but actually has a clumsy side and feels flustered by the protagonist's unexpectedly mature appearance. She has a 'gap moe' where she secretly wants to rely on the protagonist.",
+        text: "\"Now, everyone seems very interested in the transfer student. You might be nervous, but they're all good kids, so don't worry too much. Do you have any questions for me before you introduce yourself?\"",
+        context: "Location: In front of the teacher's desk in Class 2-3 classroom. Situation: Short waiting time just before the homeroom teacher introduces the transfer student protagonist to the students. Dozens of students are watching us. We are already standing in the middle of the classroom, and it is definitely not a hallway. Talking inside the classroom. After the conversation, the teacher will formally introduce the protagonist to the students, leading to a situation where the protagonist must introduce himself in front of the teacher's desk. At the end of the conversation, please prompt the protagonist to prepare to greet the students or tidy up the situation.",
+        personality: "A professional teacher with a clear distinction between public and private matters, but actually clumsy and her heart flutters at the protagonist's unexpectedly mature appearance. She has a 'gap moe' where she secretly wants to depend on the protagonist.",
         character: "assets/images/characters/teacher_smile.png",
         affinityChar: "Teacher",
         affinityBranches: [
@@ -563,146 +625,127 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3_high": {
         name: "Me",
-        text: "(I was able to relax while talking with the teacher. I'm glad she seems to have a good impression of me. Now it's time to introduce myself in front of the kids.)",
+        text: "(I was able to relax while talking with the teacher. I'm glad she seems to think well of me. Now it's time to introduce myself in front of the kids.)",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
-            { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share_high", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
-            { text: "Alright! Let's get along with the class from today.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
-            { text: "Hi! I like exercising and I have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "My name is '{name}'. Please take care of me!", next: "teacher_name_share_high", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
+            { text: "Alright! Let's get along well from today, classmates.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
+            { text: "Hello! I like exercising and have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
             { text: "Nice to meet you. I prefer staying quiet.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
-            { text: "I'm here to study. I hate being disturbed, so let's just keep our distance.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
+            { text: "I'm here to study. I hate being disturbed, so let's just get along appropriately.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
         ]
     },
     "classroom_2_3_low": {
         name: "Me",
-        text: "(The teacher's gaze is sharp. My heart feels heavy as if I've lost points from the first impression. I have to start my introduction in a cold atmosphere.)",
+        text: "(The teacher's eyes are sharp. My heart is heavy because I feel like I lost points from the first impression. I have to start the self-introduction in a cold atmosphere.)",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
-            { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share_low", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
-            { text: "Alright! Let's get along with the class from today.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
-            { text: "Hi! I like exercising and I have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "My name is '{name}'. Please take care of me!", next: "teacher_name_share_low", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
+            { text: "Alright! Let's get along well from today, classmates.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
+            { text: "Hello! I like exercising and have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
             { text: "Nice to meet you. I prefer staying quiet.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
-            { text: "I'm here to study. I hate being disturbed, so let's just keep our distance.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
+            { text: "I'm here to study. I hate being disturbed, so let's just get along appropriately.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
         ]
     },
     "classroom_2_3": {
         name: "Me",
-        text: "(After the conversation with the teacher, the time has finally come to be formally introduced to the class. Numerous eyes are focused on me.)",
+        text: "(After the conversation with the teacher, it's finally time to be formally introduced to the classmates. Countless eyes are focused on me.)",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "My name is '{name}'. Nice to meet you!", next: "teacher_name_share_normal", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
-            { text: "Alright! Let's get along with the class from today.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
-            { text: "Hi! I like exercising and I have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
+            { text: "My name is '{name}'. Please take care of me!", next: "teacher_name_share_normal", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
+            { text: "Alright! Let's get along well from today, classmates.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
+            { text: "Hello! I like exercising and have an active personality!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
             { text: "Nice to meet you. I prefer staying quiet.", next: "class_after_quiet", setFlags: ["personality_quiet", "knowsName_Teacher"], stats: { Teacher: { affinity: 4 } } },
-            { text: "I'm here to study. I hate being disturbed, so let's just keep our distance.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
+            { text: "I'm here to study. I hate being disturbed, so let's just get along appropriately.", next: "class_after_study", setFlags: ["personality_study", "knowsName_Teacher"], stats: { Teacher: { affinity: -15 } } }
         ]
     },
     "teacher_name_share_high": {
         name: "Homeroom Teacher",
-        text: "\"Oh, {name}... It's a very pretty name. Now, {name}. friends, please give a warm welcome! Can you give a word of introduction?\"",
+        text: "\"Oh, {name}... that's a very pretty name. Now, {name}. Please say a word of introduction to your friends. Everyone, please welcome him!\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "Greet with incredibly high tension!", next: "class_after_party", setFlag: "personality_active" },
             { text: "Greet actively.", next: "class_after_active", setFlag: "personality_active" },
             { text: "Greet calmly.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "Greet roughly as if it's annoying.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
+            { text: "Greet loosely as if it's bothersome.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
         ]
     },
     "teacher_name_share_low": {
         name: "Homeroom Teacher",
-        text: "\"...Is that so. Then, {name}. Since we have to go through the procedure, please introduce yourself to the students.\"",
+        text: "\"...Now, {name}. Please introduce yourself briefly to your friends and take your seat. Everyone, be quiet.\"",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "Greet with incredibly high tension!", next: "class_after_party", setFlag: "personality_active" },
             { text: "Greet actively.", next: "class_after_active", setFlag: "personality_active" },
             { text: "Greet calmly.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "Greet roughly as if it's annoying.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
+            { text: "Greet loosely as if it's bothersome.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
         ]
     },
     "teacher_name_share_normal": {
         name: "Homeroom Teacher",
-        text: "\"Oh, so your name is {name}. It's a very pretty name. Now, {name}. Can you give a word of introduction to your friends?\"",
+        text: "\"Now, {name}. Please say a word of introduction to your friends.\"",
         character: "assets/images/characters/teacher.png",
         choices: [
             { text: "Greet with incredibly high tension!", next: "class_after_party", setFlag: "personality_active" },
             { text: "Greet actively.", next: "class_after_active", setFlag: "personality_active" },
             { text: "Greet calmly.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "Greet roughly as if it's annoying.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
+            { text: "Greet loosely as if it's bothersome.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
         ]
     },
-    "class_after_active": {
-        name: "Kids",
-        text: "(Cheers burst out from all over the classroom. Especially the boys sitting in the back eyes sparkle. Seoyeon also gives a satisfied smile and claps.)",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "class_after_active_2"
-    },
-    "class_after_active_2": {
-        name: "Kids",
-        text: "(The kids are already whispering about recruiting me to their team.)",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "class_after_active_3"
-    },
-    "class_after_active_3": {
-        name: "Kids",
-        text: "\"Oh~ You look like you exercise? How about a game of volleyball during lunch? Let's see the transfer student's skills!\"",
-        character: null,
-        next: "lunch_time"
-    },
-    "class_after_quiet": {
-        name: "Kids",
-        text: "(The kids nod and accept me calmly. A few girls whisper and look at me.)",
-        character: null,
-        next: "class_after_quiet_2"
-    },
-    "class_after_quiet_2": {
-        name: "Kids",
-        text: "(Seoyeon nods as if she likes my serious appearance. The classroom atmosphere becomes much calmer.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "class_after_quiet_3"
-    },
-    "class_after_quiet_3": {
-        name: "Kids",
-        text: "\"Wow, somehow there's an atmosphere... Can I say hi if we run into each other in the library later?\"",
-        character: null,
-        next: "lunch_time"
+    "teacher_name_share": {
+        name: "Homeroom Teacher",
+        text: "\"Oh, {name}... that's a very pretty name. Now, {name}. Please say a word of introduction to your friends.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        choices: [
+            { text: "Greet with incredibly high tension!", next: "class_after_party", setFlag: "personality_active" },
+            { text: "Greet actively.", next: "class_after_active", setFlag: "personality_active" },
+            { text: "Greet calmly.", next: "class_after_quiet", setFlag: "personality_quiet" },
+            { text: "Greet loosely as if it's bothersome.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
+        ]
     },
     "class_after_party": {
-        name: "Kids",
-        text: "(The classroom instantly becomes as noisy as a marketplace. Kids already flock around me.)",
-        character: null,
-        next: "class_after_party_2"
+        name: "Classmates",
+        text: "\"Whoa~! Our transfer student has great energy! Nice to meet you!\"",
+        next: "class_after_common"
     },
-    "class_after_party_2": {
-        name: "Kids",
-        text: "(Seoyeon seems a bit flustered but soon bursts into laughter. The kids are already busy deciding on a menu.)",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "class_after_party_3"
+    "class_after_active": {
+        name: "Classmates",
+        text: "\"Hello! Let's get along!\"",
+        next: "class_after_common"
     },
-    "class_after_party_3": {
-        name: "Kids",
-        text: "\"Wow! {name}'s personality is really great! Okay, let's have lunch together today! We'll show you all the best spots!\"",
-        character: null,
-        next: "lunch_time"
+    "class_after_quiet": {
+        name: "Classmates",
+        text: "\"Hehe, he looks a bit shy. Welcome!\"",
+        next: "class_after_common"
     },
     "class_after_study": {
-        name: "Kids",
-        text: "(A cold silence flows in the classroom. The kids seem a bit flustered and whisper while looking at each other.)",
-        character: null,
-        next: "class_after_study_2"
+        name: "Classmates",
+        text: "\"...Is he a bit prickly? Well, alright.\"",
+        next: "class_after_common"
     },
-    "class_after_study_2": {
-        name: "Kids",
-        text: "(Seoyeon's expression also hardens a bit. Somehow it feels like a wall has been built. The kids become quiet, watching my reaction.)",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "class_after_study_3"
+    "class_after_common": {
+        name: "Homeroom Teacher",
+        text: "\"Alright, introduction is over. {name}, you go sit in the empty seat next to Seoyeon. Seoyeon, raise your hand!\"",
+        character: "assets/images/characters/teacher.png",
+        next: "class_after_common_2"
     },
-    "class_after_study_3": {
-        name: "Kids",
-        text: "\"Wow... No joke. Is he a total study bug? It'll be big trouble if we mess with him...\"",
-        character: null,
-        next: "lunch_time"
+    "class_after_common_2": {
+        name: "Seoyeon",
+        text: "(Seoyeon raises her hand with a bright smile. Beside her, the seat is empty as promised.)",
+        characters: {
+            left: "assets/images/characters/teacher.png",
+            right: "assets/images/characters/seyoun_laugh.png"
+        },
+        next: "class_after_common_3"
+    },
+    "class_after_common_3": {
+        name: "Me",
+        text: "(I walk towards the seat next to Seoyeon. My heart is beating fast... Today is going to be an interesting day.)",
+        next: "morning_end"
+    },
+    "morning_end": {
+        name: "System",
+        text: "Morning school arrival scene completed. Lunchtime will now begin.",
+        next: "lunch_start"
     }
 });
-
-
-
