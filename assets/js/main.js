@@ -119,6 +119,7 @@ const CHARACTER_EXPRESSIONS = {
 };
 
 let currentSceneId = "start";
+let lastBgUrl = ""; // 마지막으로 설정된 배경 이미지 URL
 let isTyping = false;
 let skipTyping = false;
 
@@ -413,11 +414,13 @@ async function renderScene(sceneId) {
     // 배경 업데이트
     if (scene.background) {
         // 배경 이미지가 로드될 때까지 대기하여 배경이 먼저 나오도록 함
+        const bgUrl = getAssetUrl(scene.background);
+        lastBgUrl = bgUrl;
+        
         await new Promise((resolve) => {
             const img = new Image();
-            const bgUrl = getAssetUrl(scene.background);
             img.onload = () => {
-                if (currentSceneId === sceneId) {
+                if (lastBgUrl === bgUrl) {
                     bgLayer.style.backgroundImage = `url(${bgUrl})`;
                 }
                 resolve();
