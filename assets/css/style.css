@@ -68,11 +68,10 @@ body, html {
 }
 
 .char-slot img {
-    height: 105%; /* 이미지를 슬롯보다 약간 더 크게 설정하여 하단 여백 제거 시도 */
+    height: 100%; /* 슬롯에 맞춤 */
     width: auto;
     max-width: none;
     object-fit: contain;
-    margin-bottom: -5%; /* 이미지 하단의 투명 공백이 있다면 상쇄 */
     /* 모바일에서 이미지가 쪼개지는 현상 방지 */
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -300,7 +299,7 @@ body, html {
 /* 반응형 및 세로 모드 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 100%;
+        height: 90%; /* 너무 커서 소폭 축소 */
         bottom: 0;
     }
 
