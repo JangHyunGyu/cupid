@@ -404,7 +404,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 실망한 기색을 감추지 못한다. 어깨가 조금 처진 것 같다.)",
         character: "assets/images/characters/seyoun_pout.png",
-        next: "classroom_1_1"
+        next: "classroom_1_1_branch"
     },
     "path_flirt_2": {
         name: "서연",
@@ -416,7 +416,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"에, 매일이라니.. 업무가 얼마나 많은데! 그래도 네가 들어온다면.. 나도 조금은 즐거울지도 모르겠네. 기대하고 있을게?\"",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "classroom_1_1"
+        next: "classroom_1_1_branch"
     },
 
     "path_normal_2": {
@@ -424,7 +424,7 @@ Object.assign(SCENARIO[1], {
         text: "(그녀가 고개를 끄덕이며 다시 앞장서 걷기 시작한다. 조금은 아쉬운 기분이 드는 걸.)",
         background: "assets/images/background/load_school.png",
         character: "assets/images/characters/seyoun_back.png",
-        next: "classroom_1_1"
+        next: "classroom_1_1_branch"
     },
     "path_direct_2": {
         name: "서연",
@@ -436,7 +436,55 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"후훗, 너 정말 솔직하구나? 나에 대해서는.. 글쎄, 그건 네가 앞으로 어떻게 하느냐에 따라 알려줄 수도 있고, 아닐 수도 있어. 기대해볼게!\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        next: "classroom_1_1_branch"
+    },
+    "classroom_1_1_branch": {
+        type: "free_talk",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_1_1_high" },
+            { minAffinity: 0, next: "classroom_1_1" },
+            { minAffinity: -100, next: "classroom_1_1_low" }
+        ],
         next: "classroom_1_1"
+    },
+    "classroom_1_1_high": {
+        name: "서연",
+        text: "(교실 문 앞에 도착하자 서연이가 내 손을 살포시 맞잡는다. 그녀의 부드러운 감촉에 심장이 쿵쾅거리기 시작한다.)",
+        background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "classroom_1_2_high"
+    },
+    "classroom_1_2_high": {
+        name: "서연",
+        text: "(서연이가 고개를 살짝 숙여 내 귓가에 속삭인다. 달콤한 숨결이 간지럽게 느껴진다.) \"{name}, 너무 긴장하지 마. 내가 항상 네 옆에 있을 거니까. 넌 잘할 수 있어.\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        next: "classroom_1_3_high"
+    },
+    "classroom_1_3_high": {
+        name: "서연",
+        text: "\"자, 우리 반이야. ...이건 비밀인데, 내가 선생님께 부탁해서 내 바로 옆자리를 네 자리로 비워뒀어. 꼭 거기로 와야 해? 약속이야!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "classroom_2"
+    },
+    "classroom_1_1_low": {
+        name: "서연",
+        text: "(교실 문 앞에 도착하자 서연이가 나보다 앞서가며 거리를 둔다. 그녀의 뒷모습이 어쩐지 차갑게만 느껴진다.)",
+        background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/seyoun_back.png",
+        next: "classroom_1_2_low"
+    },
+    "classroom_1_2_low": {
+        name: "서연",
+        text: "(그녀가 말없이 문 옆 표지판을 턱 끝으로 가리킨다. 나를 쳐다보지도 않는 태도에 마음 한구석이 서늘해진다.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "classroom_1_3_low"
+    },
+    "classroom_1_3_low": {
+        name: "서연",
+        text: "\"여기가 2학년 3반이야. 선생님이 안에서 기다리고 계실 거야. 전학 첫날부터 늦어서 찍히지 말고 어서 들어가 봐.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "classroom_2"
     },
     "classroom_1_1": {
         name: "서연",

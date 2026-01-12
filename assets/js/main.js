@@ -1208,13 +1208,14 @@ function typeText(text, charName) {
             const affinity = gameState.stats[key].affinity;
             let bar = "";
 
-            const filled = Math.min(10, Math.floor(Math.abs(affinity) / 10));
             if (affinity >= 0) {
-                // 양수일 때: 채워진 바
-                bar = "█".repeat(filled) + "░".repeat(10 - filled);
+                // 양수일 때: 빨간 하트(❤️)와 하얀 하트(🤍)
+                const filled = Math.min(10, Math.floor(affinity / 10));
+                bar = "❤️".repeat(filled) + "🤍".repeat(10 - filled);
             } else {
-                // 음수일 때: 빗금 바
-                bar = "▒".repeat(filled) + "░".repeat(10 - filled);
+                // 음수일 때: 깨진 하트(💔)와 하얀 하트(🤍)
+                const broken = Math.min(10, Math.floor(Math.abs(affinity) / 10));
+                bar = "💔".repeat(broken) + "🤍".repeat(10 - broken);
             }
 
             listStr += `${name}: ${bar} (${affinity}%)\n`;
