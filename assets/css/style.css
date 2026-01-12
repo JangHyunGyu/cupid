@@ -47,7 +47,7 @@ body, html {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 110%;
+    height: 97%; /* 위쪽 살짝 여백 유지 */
     pointer-events: none;
     z-index: 1;
     display: flex;
@@ -68,7 +68,7 @@ body, html {
 }
 
 .char-slot img {
-    height: 95%; /* 약간 더 크게 */
+    height: 100%; /* 여백 없이 꽉 채우기 */
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -299,7 +299,7 @@ body, html {
 /* 반응형 및 세로 모드 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 80%; /* 캐릭터 높이 소폭 축소 */
+        height: 97%; /* 위쪽 살짝 여백 유지하며 꽉 채우기 */
         bottom: 0;
     }
 
