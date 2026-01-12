@@ -47,18 +47,18 @@ body, html {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 97%; /* 위쪽 살짝 여백 유지 */
+    height: 100%; /* 전체 공간 사용 */
     pointer-events: none;
     z-index: 1;
     display: flex;
     justify-content: center;
-    overflow: hidden; /* 영역을 벗어나는 이미지 방지 */
+    overflow: hidden;
 }
 
 .char-slot {
     position: absolute;
     bottom: 0;
-    width: 100%; /* 슬롯 전체 너비 사용 (내부 정렬로 배치 제어) */
+    width: 100%;
     max-width: 800px;
     height: 100%;
     display: flex;
@@ -68,9 +68,9 @@ body, html {
 }
 
 .char-slot img {
-    height: 100%; /* 여백 없이 꽉 채우기 */
+    height: 96%; /* 상단에 약 4% 정도의 여백만 남기고 꽉 채움 */
     width: auto;
-    max-width: 100%;
+    max-width: none; /* 너비 때문에 높이가 줄어드는 것 방지 */
     object-fit: contain;
     /* 모바일에서 이미지가 쪼개지는 현상 방지 */
     backface-visibility: hidden;
@@ -299,7 +299,7 @@ body, html {
 /* 반응형 및 세로 모드 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 97%; /* 위쪽 살짝 여백 유지하며 꽉 채우기 */
+        height: 100%;
         bottom: 0;
     }
 
