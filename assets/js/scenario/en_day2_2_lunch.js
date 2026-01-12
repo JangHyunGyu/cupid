@@ -479,7 +479,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store_choices_low": {
         name: "Me",
         text: "(Dain seems to be in a bad mood. I must have been too prickly while she was already tired from standing in line. She sighed and told me to just pick what I wanted to eat.)",
-        character: "assets/images/characters/dain_angry.png",
+        character: "assets/images/characters/dain_sad.png",
         choices: [
             { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy_low", stats: { Dain: { affinity: 5 } } },
             { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop_low", stats: { Dain: { affinity: 3 } } },
@@ -546,8 +546,8 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_store_race_low": {
         name: "Dain",
-        text: "\"...You want to race? You're surprisingly competitive. Fine, but don't cry if you lose.\"",
-        character: "assets/images/characters/dain_nomal.png",
+        text: "\"...I'm really not in the mood for racing. Just be quiet and buy something.\"",
+        character: "assets/images/characters/dain_sad.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },

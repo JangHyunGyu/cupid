@@ -304,7 +304,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_dain_reply_low": {
         name: "Me",
         text: "(Dain's response is unusually dry. I wonder if I did something to dampen her spirits.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"

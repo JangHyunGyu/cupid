@@ -82,13 +82,15 @@ const CHARACTER_EXPRESSIONS = {
         "normal": "assets/images/characters/dain_nomal.png",
         "shy": "assets/images/characters/dain_shy.png",
         "angry": "assets/images/characters/dain_angry.png",
-        "laugh": "assets/images/characters/dain_laugh.png"
+        "laugh": "assets/images/characters/dain_laugh.png",
+        "sad": "assets/images/characters/dain_sad.png"
     },
     "Dain": {
         "normal": "assets/images/characters/dain_nomal.png",
         "shy": "assets/images/characters/dain_shy.png",
         "angry": "assets/images/characters/dain_angry.png",
-        "laugh": "assets/images/characters/dain_laugh.png"
+        "laugh": "assets/images/characters/dain_laugh.png",
+        "sad": "assets/images/characters/dain_sad.png"
     },
     "담임선생님": {
         "normal": "assets/images/characters/teacher.png",

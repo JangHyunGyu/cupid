@@ -517,7 +517,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store_choices_low": {
         name: "나",
         text: "(다인이의 기분이 상한 것 같다. 줄 서느라 피곤한 그녀에게 내가 너무 까칠하게 굴었나 보다. 그녀는 한숨을 내쉬며 얼른 뭐 먹을지나 고르라고 말했다.)",
-        character: "assets/images/characters/dain_angry.png",
+        character: "assets/images/characters/dain_sad.png",
         choices: [
             { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy_low", stats: { Dain: { affinity: 5 } } },
             { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop_low", stats: { Dain: { affinity: 3 } } },
@@ -599,7 +599,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store_race_low": {
         name: "다인",
         text: "\"나 지금 그럴 기분 아니거든... 시끄러우니까 조용히 좀 해.\"",
-        character: "assets/images/characters/dain_angry.png",
+        character: "assets/images/characters/dain_sad.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },

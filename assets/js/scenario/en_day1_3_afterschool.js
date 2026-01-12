@@ -644,25 +644,25 @@ Object.assign(SCENARIO[1], {
     "after_dain_tired_normal": {
         name: "Dain",
         text: "(She looks a bit disappointed, but quickly nods with a smile.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_dain_tired_normal_2"
     },
     "after_dain_tired_normal_2": {
         name: "Dain",
         text: "\"Oh... right. First day must be exhausting. Sorry, I got carried away. Let's call it a day. See you tomorrow!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_home"
     },
     "after_dain_tired": {
         name: "Dain",
         text: "(She looks a bit disappointed, but quickly nods with a smile.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_dain_tired_2"
     },
     "after_dain_tired_2": {
         name: "Dain",
         text: "\"Oh... right. First day must be exhausting. Sorry, I got carried away. Let's call it a day. See you tomorrow!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_home"
     },
     "after_dain_help_high": {
@@ -857,7 +857,7 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "(She lets out a laugh, shaking her head.) \"Ha! You're bold, I'll give you that. Calling me already? Let's stick to texting for now, okay?\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_shy.png",
         night: true,
         stats: { Dain: { affinity: -20 } },
         next: "after_home"

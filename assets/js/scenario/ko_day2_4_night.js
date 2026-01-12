@@ -306,7 +306,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_dain_reply_low": {
         name: "나",
         text: "(다인이의 반응이 평소보다 무미건조하다. 내가 보낸 메시지가 귀찮았던 건 아닐지, 핸드폰을 든 손이 어색해진다.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"

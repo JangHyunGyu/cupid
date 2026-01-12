@@ -644,25 +644,25 @@ Object.assign(SCENARIO[1], {
     "after_dain_tired_normal": {
         name: "다인",
         text: "(다인이는 살짝 아쉬운 표정을 짓더니 이내 고개를 끄덕인다.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_dain_tired_normal_2"
     },
     "after_dain_tired_normal_2": {
         name: "다인",
         text: "\"아... 맞다. 전학 첫날이라 피곤하겠구나. 미안, 내가 너무 신났나 봐. 그래, 오늘은 이만 들어가 봐. 내일 봐!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_home"
     },
     "after_dain_tired": {
         name: "다인",
         text: "(다인이는 살짝 아쉬운 표정을 짓더니 이내 고개를 끄덕인다.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_dain_tired_2"
     },
     "after_dain_tired_2": {
         name: "다인",
         text: "\"아... 맞다. 전학 첫날이라 피곤하겠구나. 미안, 내가 너무 신났나 봐. 그래, 오늘은 이만 들어가 봐. 내일 봐!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_home"
     },
     "after_dain_help_high": {
@@ -867,7 +867,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(다인이는 어이없다는 듯 웃음을 터뜨린다.) \"야, 너 진짜 웃긴다. 번호 받자마자 전화하니, 너무 서두르는 거 아냐? 일단 메시지부터 주고받으면서 친해지자고!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_shy.png",
         night: true,
         stats: { Dain: { affinity: -20 } },
         next: "after_home"
