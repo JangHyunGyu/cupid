@@ -465,7 +465,7 @@ Object.assign(SCENARIO[1], {
     "after_yuna_scared_2": {
         name: "Yuna",
         text: "\"Hehe, of course. It's a heavy burden for a normal student. Go home. Don't try to dig any deeper.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_home"
     },
@@ -491,7 +491,7 @@ Object.assign(SCENARIO[1], {
     "after_yuna_secret_fail": {
         name: "Yuna",
         text: "(Yuna gives a cold smile.) \"The truth... Hehe, you look too light to bear its weight. It's fine to be curious, but don't dig too deep. You might get hurt.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: -20 } },
         next: "after_home"
     },

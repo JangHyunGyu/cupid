@@ -469,6 +469,7 @@ Object.assign(SCENARIO[1], {
     "yuna_intro_2": {
         name: "유나",
         text: "\"{name}... 후훗, 좋은 이름이네. 이 학교... 겉보기와는 많이 다르거든. 너한테서도.. 왠지 낯익은 분위기가 느껴져.\"",
+        character: "assets/images/characters/yuna_smile.png",
         setFlag: "metYuna",
         next: "yuna_free_talk"
     },

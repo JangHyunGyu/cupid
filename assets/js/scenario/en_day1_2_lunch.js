@@ -455,6 +455,7 @@ Object.assign(SCENARIO[1], {
     "yuna_intro_2": {
         name: "Yuna",
         text: "\"{name}... Hehe, that's a nice name. This school... is very different from how it looks. From you... somehow I feel a familiar atmosphere.\"",
+        character: "assets/images/characters/yuna_smile.png",
         setFlag: "metYuna",
         next: "yuna_free_talk"
     },

@@ -465,7 +465,7 @@ Object.assign(SCENARIO[1], {
     "after_yuna_scared_2": {
         name: "유나",
         text: "\"후훗, 역시 그렇겠지. 평범한 학생에게는 너무 무거운 이야기니까. 오늘은 이만 돌아가. 더 이상 깊이 알려고 하지 마.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_home"
     },
@@ -491,7 +491,7 @@ Object.assign(SCENARIO[1], {
     "after_yuna_secret_fail": {
         name: "유나",
         text: "(유나가 차가운 미소를 짓는다.) \"진실이라... 후훗, 넌 아직 그 무게를 견디기엔 너무 가벼워 보여. 궁금해하는 건 자유지만, 너무 깊이 파고들진 마. 다칠 수도 있으니까.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: -20 } },
         next: "after_home"
     },
