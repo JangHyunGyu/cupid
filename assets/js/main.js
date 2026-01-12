@@ -223,7 +223,7 @@ function getScene(id) {
 }
 
 /**
- * 이름 태그 및 호감도 하트 업데이트
+ * 이름 태그 및 호감도 게이지 업데이트
  * @param {string} name 캐릭터 이름
  */
 function updateNameTag(name) {
@@ -237,7 +237,7 @@ function updateNameTag(name) {
     nameSpan.textContent = name;
     nameTagEl.appendChild(nameSpan);
 
-    // 호감도 하트 표시 (설정 확인, 기본값 true)
+    // 호감도 게이지 표시 (설정 확인, 기본값 true)
     const showAffinity = localStorage.getItem('showAffinity') !== 'false';
 
     if (showAffinity) {
@@ -250,31 +250,66 @@ function updateNameTag(name) {
         if (charKey && gameState.stats[charKey]) {
             const affinity = gameState.stats[charKey].affinity || 0;
             
-            const heartContainer = document.createElement('span');
-            heartContainer.className = 'affinity-hearts';
-            heartContainer.style.marginLeft = '8px';
-            heartContainer.style.fontSize = '0.8em';
+            // 게이지 컨테이너
+            const gaugeBox = document.createElement('span');
+            gaugeBox.style.display = 'inline-flex';
+            gaugeBox.style.alignItems = 'center';
+            gaugeBox.style.marginLeft = '10px';
+            gaugeBox.style.verticalAlign = 'middle';
+
+            // 숫자 표시
+            const valText = document.createElement('span');
+            valText.textContent = (affinity > 0 ? "+" : "") + affinity;
+            valText.style.fontSize = '0.75em';
+            valText.style.marginRight = '5px';
+            valText.style.minWidth = '25px';
+            valText.style.textAlign = 'right';
+            valText.style.fontFamily = 'monospace';
+            valText.style.color = affinity >= 0 ? '#ff7675' : '#74b9ff';
+
+            // 게이지 트랙
+            const track = document.createElement('span');
+            track.style.display = 'inline-block';
+            track.style.width = '80px';
+            track.style.height = '6px';
+            track.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+            track.style.borderRadius = '3px';
+            track.style.position = 'relative';
+            track.style.overflow = 'hidden';
+            track.style.border = '1px solid rgba(0, 0, 0, 0.4)';
+
+            // 게이지 바
+            const bar = document.createElement('span');
+            bar.style.position = 'absolute';
+            bar.style.height = '100%';
+            bar.style.top = '0';
             
-            let heartStr = "";
-            if (affinity < 0) {
-                heartContainer.style.color = '#333333'; // 진한 회색
-                heartContainer.style.textShadow = '1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff'; // 흰색 테두리
-                // 음수인 경우: 절댓값 기준 10점당 깨진 하트(💔) 1개 (최대 10개)
-                const brokenHearts = Math.max(0, Math.min(10, Math.floor(Math.abs(affinity) / 10)));
-                for (let i = 0; i < 10; i++) {
-                    heartStr += (i < brokenHearts) ? "💔" : "♡";
-                }
-            } else {
-                heartContainer.style.color = '#ff0000'; // 빨간색 하트
-                heartContainer.style.textShadow = '1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff'; // 흰색 테두리
-                // 양수인 경우: 10점당 채워진 하트(♥) 1개 (최대 10개)
-                const fullHearts = Math.max(0, Math.min(10, Math.floor(affinity / 10)));
-                for (let i = 0; i < 10; i++) {
-                    heartStr += (i < fullHearts) ? "♥" : "♡";
-                }
-            }
-            heartContainer.textContent = heartStr;
-            nameTagEl.appendChild(heartContainer);
+            // -100 (0%) ~ 100 (100%)
+            const percent = (affinity + 100) / 2;
+            bar.style.width = percent + '%';
+            bar.style.left = '0';
+            
+            // 색상 결정
+            if (affinity >= 70) bar.style.backgroundColor = '#ff7675'; // 호감
+            else if (affinity >= 0) bar.style.backgroundColor = '#fab1a0'; // 우호
+            else if (affinity > -40) bar.style.backgroundColor = '#81ecec'; // 불쾌
+            else bar.style.backgroundColor = '#74b9ff'; // 혐오
+
+            track.appendChild(bar);
+            
+            // 중앙선 (0점 기준선)
+            const mid = document.createElement('span');
+            mid.style.position = 'absolute';
+            mid.style.left = '50%';
+            mid.style.top = '0';
+            mid.style.width = '1px';
+            mid.style.height = '100%';
+            mid.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+            track.appendChild(mid);
+
+            gaugeBox.appendChild(valText);
+            gaugeBox.appendChild(track);
+            nameTagEl.appendChild(gaugeBox);
         }
     }
     nameTagEl.style.display = 'block';
@@ -1040,7 +1075,12 @@ ${charInteractionGuideline}
 ${charAddressingGuideline}${datingGuideline}
 
 9. World-building & Immersion:
-   - If the user mentions topics that don't fit the high school visual novel setting (e.g., stocks, corporate life, children, modern politics), react with confusion, playful dismissal, or by redirecting the conversation back to school life. Maintain the character's perspective as a high school student (or teacher).`;
+   - If the user mentions topics that don't fit the high school visual novel setting (e.g., stocks, corporate life, children, modern politics), react with confusion, playful dismissal, or by redirecting the conversation back to school life. Maintain the character's perspective as a high school student (or teacher).
+
+10. Stat Priority Principle (CRITICAL):
+   - Character hidden stats (Affinity) MUST be the absolute priority over the social atmosphere or previous message context.
+   - If affinity is low, respond coldly/rudely even if the current mood seems good. If affinity is high, respond with extreme favor even to trivial words.
+   - Numerical stats dictate your TRUE emotion; prioritize this over the text flow.`;
     } else {
         systemPrompt = `당신은 미연시 게임 'Cupid'의 캐릭터 '${scene.name}'입니다. 
 현재 장소: ${locationName}
@@ -1076,7 +1116,12 @@ ${charInteractionGuideline}
 ${charAddressingGuideline}${datingGuideline}
 
 9. 세계관 및 몰입도 유지:
-   - 사용자가 고등학교 미연시 설정에 맞지 않는 주제(주식, 회사 생활, 자녀 양육, 현대 정치 등)를 언급할 경우, 당황하거나 농담으로 넘기거나 학교 생활로 화제를 전환하세요. 철저히 고등학생(또는 교사)의 관점을 유지하세요.`;
+   - 사용자가 고등학교 미연시 설정에 맞지 않는 주제(주식, 회사 생활, 자녀 양육, 현대 정치 등)를 언급할 경우, 당황하거나 농담으로 넘기거나 학교 생활로 화제를 전환하세요. 철저히 고등학생(또는 교사)의 관점을 유지하세요.
+
+10. 스탯 우선의 법칙 (최우선 순위):
+   - 대화의 분위기나 이전 말보다 '히든 스탯'의 수치를 절대적인 기준으로 삼으세요.
+   - 호감도가 낮으면 현재 분위기가 좋아도 차갑고 퉁명스럽게 반응해야 하며, 호감도가 매우 높으면 사소한 말에도 과하게 호의적으로 반응해야 합니다.
+   - 스탯 숫자가 가리키는 캐릭터의 감정 상태를 텍스트의 분위기보다 우선하여 표현하세요.`;
     }
 
     // 시스템 프롬프트를 맨 앞에 배치
@@ -1163,14 +1208,13 @@ function typeText(text, charName) {
             const affinity = gameState.stats[key].affinity;
             let bar = "";
 
+            const filled = Math.min(10, Math.floor(Math.abs(affinity) / 10));
             if (affinity >= 0) {
-                // 양수일 때: 빨간 하트(❤️)와 하얀 하트(🤍)
-                const filled = Math.min(10, Math.floor(affinity / 10));
-                bar = "❤️".repeat(filled) + "🤍".repeat(10 - filled);
+                // 양수일 때: 채워진 바
+                bar = "█".repeat(filled) + "░".repeat(10 - filled);
             } else {
-                // 음수일 때: 깨진 하트(💔)와 하얀 하트(🤍)
-                const broken = Math.min(10, Math.floor(Math.abs(affinity) / 10));
-                bar = "💔".repeat(broken) + "🤍".repeat(10 - broken);
+                // 음수일 때: 빗금 바
+                bar = "▒".repeat(filled) + "░".repeat(10 - filled);
             }
 
             listStr += `${name}: ${bar} (${affinity}%)\n`;
