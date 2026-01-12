@@ -421,7 +421,7 @@ body, html {
 /* 이름 입력창 스타일 */
 #name-input-container {
     position: absolute;
-    bottom: 120px;
+    bottom: 240px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -475,7 +475,7 @@ body, html {
 
 @media (max-width: 768px) {
     #name-input-container {
-        bottom: 100px;
+        bottom: 220px;
         padding: 15px;
     }
 }
