@@ -280,27 +280,123 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_secret_read": {
+        type: "free_talk",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_yuna_secret_read_high" },
+            { minAffinity: 0, next: "day2_yuna_secret_read_normal" },
+            { minAffinity: -999, next: "day2_yuna_secret_read_low" }
+        ]
+    },
+    "day2_yuna_secret_read_high": {
+        name: "Yuna",
+        text: "\"Thank you, {name}. I'm not afraid anymore as long as I'm with you. Now, shall we open it together?\"",
+        character: "assets/images/characters/yuna_smile.png",
+        setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_secret_read_low": {
+        name: "Yuna",
+        text: "\"Are you really going to see it? Don't regret it. I won't care even if you cry and cling to me.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_secret_read_normal": {
         name: "Yuna",
         text: "\"Hehe, as expected, you're different from the other kids. Fine, but you should be prepared. Truth can sometimes be poison.\"",
         character: "assets/images/characters/yuna_smile.png",
+        setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_secret_stop": {
+        type: "free_talk",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_yuna_secret_stop_high" },
+            { minAffinity: 0, next: "day2_yuna_secret_stop_normal" },
+            { minAffinity: -999, next: "day2_yuna_secret_stop_low" }
+        ]
+    },
+    "day2_yuna_secret_stop_high": {
+        name: "Yuna",
+        text: "\"...Is that so? You must be quite scared. I understand. Instead, tell me again if you change your mind later.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_secret_stop_low": {
+        name: "Yuna",
+        text: "\"I knew it. You talk big but you're actually a coward who can't do anything. Don't show your face in front of me again.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_secret_stop_normal": {
         name: "Yuna",
         text: "\"...You're a coward. Well, I understand. For a normal kid, that's a natural reaction. You should leave for today.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_secret_why": {
+        type: "free_talk",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_yuna_secret_why_high" },
+            { minAffinity: 0, next: "day2_yuna_secret_why_normal" },
+            { minAffinity: -999, next: "day2_yuna_secret_why_low" }
+        ]
+    },
+    "day2_yuna_secret_why_high": {
+        name: "Yuna",
+        text: "\"Are you curious about that? Actually... I'm not sure myself. Ever since the day you transferred, I just had a feeling that you'd be the one to listen to my story. Funny, isn't it?\"",
+        character: "assets/images/characters/yuna_smile.png",
+        setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_secret_why_low": {
+        name: "Yuna",
+        text: "\"What what are you going to do with that? Don't you know the saying 'Curiosity killed the cat'? Just shut up and watch, or get out.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_secret_why_normal": {
         name: "Yuna",
         text: "\"Well... should I say it's to find lost memories? Or maybe I just need some excitement in this boring school life.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_normal": {
+        type: "free_talk",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_yuna_normal_high" },
+            { minAffinity: 0, next: "day2_yuna_normal_normal" },
+            { minAffinity: -999, next: "day2_yuna_normal_low" }
+        ]
+    },
+    "day2_yuna_normal_high": {
         name: "Yuna",
-        text: "\"...Is that so? You're a strange one. Most people are afraid. Fine, then let's just spend some time together like this.\"",
+        text: "\"You came here because you wanted to talk to me...? Fufu, you really say such lovely things. Fine, then would you stay with me a bit longer like this today?\"",
+        character: "assets/images/characters/yuna_smile.png",
+        setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_normal_low": {
+        name: "Yuna",
+        text: "\"You came all the way here just to chatter with me? Pathetic. Don't waste my time and get out of the way.\"",
         character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_normal_normal": {
+        name: "Yuna",
+        text: "\"...Is that so? You're a strange one. Most people are afraid. Fine, then let's just spend some time together like this today.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_lunch_end": {

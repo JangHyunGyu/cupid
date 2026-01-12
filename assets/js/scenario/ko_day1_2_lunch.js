@@ -362,6 +362,7 @@ Object.assign(SCENARIO[1], {
         next: "seyoun_contact_exchange"
     },
     "seyoun_contact_exchange": {
+        type: "free_talk",
         name: "서연",
         text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 스마트폰을 내민다.)",
         character: "assets/images/characters/seyoun_nomal.png",
@@ -369,7 +370,7 @@ Object.assign(SCENARIO[1], {
         affinityBranches: [
             { minAffinity: 15, next: "seyoun_contact_exchange_high" },
             { minAffinity: 0, next: "seyoun_contact_exchange_normal" },
-            { minAffinity: -100, next: "seyoun_contact_exchange_low" }
+            { minAffinity: -999, next: "seyoun_contact_exchange_low" }
         ],
         next: "seyoun_contact_exchange_normal"
     },

@@ -160,7 +160,7 @@ Object.assign(SCENARIO[1], {
         affinityBranches: [
             { minAffinity: 15, next: "hallway_1_3_high" },
             { minAffinity: 0, next: "hallway_1_3" },
-            { minAffinity: -100, next: "hallway_1_3_low" }
+            { minAffinity: -999, next: "hallway_1_3_low" }
         ],
         next: "hallway_1_3"
     },
@@ -169,10 +169,10 @@ Object.assign(SCENARIO[1], {
         text: "(As I talked with Seoyeon, the school facility guidance began before I knew it. I was so engrossed in our conversation that I lost track of time. Now, I decided to follow her and look around the school.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club_high", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "The facilities are good, but it looks even better because of the person guiding me.", next: "hallway_talk_flatter_high", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", next: "hallway_talk_trap_high", stats: { Seoyeon: { affinity: -25 } } },
-            { text: "(Quietly listening to her explanation while walking.)", next: "hallway_talk_listen_high", stats: { Seoyeon: { affinity: 2 } } }
+            { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "The facilities are good, but it looks even better because of the person guiding me.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "(Quietly listening to her explanation while walking.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
         ]
     },
     "hallway_1_3_low": {
@@ -180,10 +180,10 @@ Object.assign(SCENARIO[1], {
         text: "(Seoyeon's expression isn't good. I must have made a mistake during our conversation. she began the school guidance with a cold attitude.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club_low", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "The facilities are good, but it looks even better because of the person guiding me.", next: "hallway_talk_flatter_low", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", next: "hallway_talk_trap_low", stats: { Seoyeon: { affinity: -25 } } },
-            { text: "(Quietly listening to her explanation while walking.)", next: "hallway_talk_listen_low", stats: { Seoyeon: { affinity: 2 } } }
+            { text: "The school is really lively. Seoyeon, do you also do club activities?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "The facilities are good, but it looks even better because of the person guiding me.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "My god, Seoyeon... You're really like a goddess. Just hearing your voice makes me feel like I'm in heaven.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "(Quietly listening to her explanation while walking.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
         ]
     },
     "hallway_1_3": {
@@ -222,36 +222,68 @@ Object.assign(SCENARIO[1], {
         next: "hallway_2"
     },
     "hallway_talk_trap": {
+        type: "free_talk",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "hallway_talk_trap_high" },
+            { minAffinity: 0, next: "hallway_talk_trap_normal" },
+            { minAffinity: -999, next: "hallway_talk_trap_low" }
+        ]
+    },
+    "hallway_talk_trap_normal": {
         name: "Seoyeon",
         text: "(Seoyeon stops as if flustered and stares at me intently. Her eyes turn a bit cold.)",
         character: "assets/images/characters/seyoun_pout.png",
-        next: "hallway_talk_trap_2"
+        next: "hallway_talk_trap_normal_2"
     },
-    "hallway_talk_trap_2": {
+    "hallway_talk_trap_normal_2": {
         name: "Seoyeon",
         text: "\"Um... well, thanks, but... that's a bit burdensome. We haven't known each other for long, right? I think the joke is a bit too much.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
     "hallway_talk_club": {
+        type: "free_talk",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "hallway_talk_club_high" },
+            { minAffinity: 0, next: "hallway_talk_club_normal" },
+            { minAffinity: -999, next: "hallway_talk_club_low" }
+        ]
+    },
+    "hallway_talk_club_normal": {
         name: "Seoyeon",
         text: "(She looks at me as if glad.)",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "hallway_talk_club_2"
-    },    "hallway_talk_club_high": {
+        next: "hallway_talk_club_normal_2"
+    },
+    "hallway_talk_club_normal_2": {
         name: "Seoyeon",
-        text: "\"Of course! I'm in the student council, but I'm actually also in the gardening club. I love taking care of flowers. Touching the soil makes me feel at peace. It would be wonderful to go to the greenhouse with you!\"",
+        text: "\"Yeah! I'm in the student council, but I'm actually also in the gardening club. I like taking care of flowers. Touching the soil makes me feel at peace. Come visit our greenhouse later if you have time!\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2"
+    },
+    "hallway_talk_club_high": {
+        name: "Seoyeon",
+        text: "(She looks at me with twinkling eyes as if glad. I can see her anticipation that we might share similar interests.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "hallway_talk_club_high_2"
+    },
+    "hallway_talk_club_high_2": {
+        name: "Seoyeon",
+        text: "\"Of course! I'm in the student council, but I'm actually also in the gardening club. I love taking care of flowers. Do you like flowers too, {name}? Come visit our greenhouse later if you have time! I'll give you a special tour.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_2"
     },
     "hallway_talk_club_low": {
         name: "Seoyeon",
-        text: "\"...Club activities? I'm in the student council and the gardening club. But as I said, I'm busy. I'll just explain the facilities, so follow me.\"",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "hallway_2"
-    },    "hallway_talk_club_2": {
+        text: "(She nods with a business-like attitude. Her expression carries no emotion.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_talk_club_low_2"
+    },
+    "hallway_talk_club_low_2": {
         name: "Seoyeon",
-        text: "\"Yeah! I'm in the student council, but I'm actually also in the gardening club. I like taking care of flowers. Touching the soil makes me feel at peace. Come visit our greenhouse later if you have time!\"",
+        text: "\"Yes. I'm balancing student council and gardening club activities. Is that your only question? Then I'll continue the guidance.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_2"
     },
@@ -280,12 +312,21 @@ Object.assign(SCENARIO[1], {
         next: "hallway_2"
     },
     "hallway_talk_flatter": {
+        type: "free_talk",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "hallway_talk_flatter_high" },
+            { minAffinity: 0, next: "hallway_talk_flatter_normal" },
+            { minAffinity: -999, next: "hallway_talk_flatter_low" }
+        ]
+    },
+    "hallway_talk_flatter_normal": {
         name: "Seoyeon",
         text: "(She answers while blushing as if shy.)",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "hallway_talk_flatter_2"
+        next: "hallway_talk_flatter_normal_2"
     },
-    "hallway_talk_flatter_2": {
+    "hallway_talk_flatter_normal_2": {
         name: "Seoyeon",
         text: "\"Really... You speak so beautifully. Actually, I'm always nervous because of my position as the student council president, but I feel at ease when I'm with you. I might end up wanting to act spoiled without knowing... Hehe, just kidding.\"",
         character: "assets/images/characters/seyoun_shy.png",
@@ -316,15 +357,24 @@ Object.assign(SCENARIO[1], {
         next: "hallway_2"
     },
     "hallway_talk_listen": {
+        type: "free_talk",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "hallway_talk_listen_high" },
+            { minAffinity: 0, next: "hallway_talk_listen_normal" },
+            { minAffinity: -999, next: "hallway_talk_listen_low" }
+        ]
+    },
+    "hallway_talk_listen_normal": {
         name: "Seoyeon",
         text: "(She continues her explanation as if excited.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "hallway_talk_listen_2"
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "hallway_talk_listen_normal_2"
     },
-    "hallway_talk_listen_2": {
+    "hallway_talk_listen_normal_2": {
         name: "Seoyeon",
         text: "\"Thank you so much for listening to my explanation so well. {name} seems like a very sincere person! With this attitude, you'll adapt to school life in no time.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_2"
     },
     "hallway_2": {

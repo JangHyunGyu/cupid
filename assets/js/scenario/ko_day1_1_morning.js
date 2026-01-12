@@ -169,10 +169,10 @@ Object.assign(SCENARIO[1], {
         text: "(서연이와 대화를 나누다 보니 어느새 학교 시설 안내가 시작되었다. 그녀와 대화하는 게 정말 즐거워서 시간 가는 줄 몰랐다. 이제 그녀를 따라 학교를 둘러보기로 했다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club_high", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter_high", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap_high", stats: { Seoyeon: { affinity: -25 } } },
-            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen_high", stats: { Seoyeon: { affinity: 2 } } }
+            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
         ]
     },
     "hallway_1_3_low": {
@@ -180,10 +180,10 @@ Object.assign(SCENARIO[1], {
         text: "(서연이의 표정이 좋지 않다. 대화 도중 내가 무언가 실수를 한 모양이다. 그녀는 차가운 태도로 학교 안내를 시작했다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club_low", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter_low", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap_low", stats: { Seoyeon: { affinity: -25 } } },
-            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen_low", stats: { Seoyeon: { affinity: 2 } } }
+            { text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", next: "hallway_talk_club", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", next: "hallway_talk_flatter", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", next: "hallway_talk_trap", stats: { Seoyeon: { affinity: -25 } } },
+            { text: "(조용히 그녀의 설명을 경청하며 걷는다.)", next: "hallway_talk_listen", stats: { Seoyeon: { affinity: 2 } } }
         ]
     },
     "hallway_1_3": {
@@ -222,12 +222,21 @@ Object.assign(SCENARIO[1], {
         next: "hallway_2"
     },
     "hallway_talk_trap": {
+        type: "free_talk",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "hallway_talk_trap_high" },
+            { minAffinity: 0, next: "hallway_talk_trap_normal" },
+            { minAffinity: -999, next: "hallway_talk_trap_low" }
+        ]
+    },
+    "hallway_talk_trap_normal": {
         name: "서연",
         text: "(서연이가 당황한 듯 멈춰 서서 나를 빤히 바라본다. 그녀의 눈빛이 조금 차가워진다.)",
         character: "assets/images/characters/seyoun_pout.png",
-        next: "hallway_talk_trap_2"
+        next: "hallway_talk_trap_normal_2"
     },
-    "hallway_talk_trap_2": {
+    "hallway_talk_trap_normal_2": {
         name: "서연",
         text: "\"음.. 뭐, 고맙긴 한데... 그런 말은 좀 부담스럽네. 우리 아직 만난 지 얼마 안 됐잖아? 장난이 좀 과한 것 같아.\"",
         character: "assets/images/characters/seyoun_nomal.png",
@@ -258,12 +267,21 @@ Object.assign(SCENARIO[1], {
         next: "hallway_2"
     },
     "hallway_talk_club": {
+        type: "free_talk",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "hallway_talk_club_high" },
+            { minAffinity: 0, next: "hallway_talk_club_normal" },
+            { minAffinity: -999, next: "hallway_talk_club_low" }
+        ]
+    },
+    "hallway_talk_club_normal": {
         name: "서연",
         text: "(그녀가 반가운 듯 나를 바라본다.)",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "hallway_talk_club_2"
+        next: "hallway_talk_club_normal_2"
     },
-    "hallway_talk_club_2": {
+    "hallway_talk_club_normal_2": {
         name: "서연",
         text: "\"응! 나는 학생회 활동도 하지만 사실 원예부 소속이기도 해. 꽃을 가꾸는 걸 좋아하거든. 흙을 만지고 있으면 마음이 편안해지거든. 나중에 시간 되면 우리 온실에도 놀러 와!\"",
         character: "assets/images/characters/seyoun_nomal.png",
@@ -294,12 +312,21 @@ Object.assign(SCENARIO[1], {
         next: "hallway_2"
     },
     "hallway_talk_flatter": {
+        type: "free_talk",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "hallway_talk_flatter_high" },
+            { minAffinity: 0, next: "hallway_talk_flatter_normal" },
+            { minAffinity: -999, next: "hallway_talk_flatter_low" }
+        ]
+    },
+    "hallway_talk_flatter_normal": {
         name: "서연",
         text: "(그녀가 쑥스러운 듯 뺨을 붉히며 대답한다.)",
         character: "assets/images/characters/seyoun_shy.png",
-        next: "hallway_talk_flatter_2"
+        next: "hallway_talk_flatter_normal_2"
     },
-    "hallway_talk_flatter_2": {
+    "hallway_talk_flatter_normal_2": {
         name: "서연",
         text: "\"정말... 너는 말을 참 예쁘게 하는구나. 사실 학생회장이라는 자리 때문에 늘 긴장하고 있는데, 너랑 있으면 왠지 마음이 놓여. 나도 모르게 어리광 부리고 싶어질지도 몰라... 후훗, 농담이야.\"",
         character: "assets/images/characters/seyoun_shy.png",
@@ -330,12 +357,21 @@ Object.assign(SCENARIO[1], {
         next: "hallway_2"
     },
     "hallway_talk_listen": {
+        type: "free_talk",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "hallway_talk_listen_high" },
+            { minAffinity: 0, next: "hallway_talk_listen_normal" },
+            { minAffinity: -999, next: "hallway_talk_listen_low" }
+        ]
+    },
+    "hallway_talk_listen_normal": {
         name: "서연",
         text: "(그녀가 신이 나서 설명을 이어간다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "hallway_talk_listen_2"
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "hallway_talk_listen_normal_2"
     },
-    "hallway_talk_listen_2": {
+    "hallway_talk_listen_normal_2": {
         name: "서연",
         text: "\"내 설명을 이렇게 잘 들어주니 정말 고마워. {name}, 참 성실한 사람인 것 같네! 이런 태도라면 학교생활에 금방 적응할 거야.\"",
         character: "assets/images/characters/seyoun_nomal.png",

@@ -326,13 +326,52 @@ Object.assign(SCENARIO[1], {
         next: "seyoun_contact_exchange"
     },
     "seyoun_contact_exchange": {
+        type: "free_talk",
         name: "Seoyeon",
-        text: "(Seoyeon hesitates for a moment while packing her bag, then shyly holds out her smartphone.) \"Um... if it's okay, could you give me your contact information? I want to ask you when deciding on the lunch box menu from now on...\"",
+        text: "(Seoyeon hesitates for a moment while packing her bag, then holds out her smartphone.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 15, next: "seyoun_contact_exchange_high" },
+            { minAffinity: 0, next: "seyoun_contact_exchange_normal" },
+            { minAffinity: -999, next: "seyoun_contact_exchange_low" }
+        ],
+        next: "seyoun_contact_exchange_normal"
+    },
+    "seyoun_contact_exchange_high": {
+        name: "Seoyeon",
+        text: "(Seoyeon shyly holds out her smartphone.) \"Um... if it's okay, could you give me your contact information? I want to ask you when deciding on the lunch box menu from now on...\"",
         character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
         choices: [
             { text: "Of course! I wanted to talk more with Seoyeon too.", next: "seyoun_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
             { text: "Sorry, I think it's a bit early yet.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -20 } } }
         ]
+    },
+    "seyoun_contact_exchange_normal": {
+        name: "Seoyeon",
+        text: "\"Um... would it be okay to exchange contact information? There might be things to contact you about for student council work...\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "Of course! I wanted to talk more with Seoyeon too.", next: "seyoun_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
+            { text: "Sorry, I think it's a bit early yet.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -20 } } }
+        ]
+    },
+    "seyoun_contact_exchange_low": {
+        name: "Seoyeon",
+        text: "(Seoyeon speaks while watching my reaction.) \"...Um, there might be things to contact you about for student council work, could you give me your number?\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        choices: [
+            { text: "Sure, okay.", next: "seyoun_contact_success_cold", setFlags: ["has_number_seyoun", "has_any_contact"] },
+            { text: "Sorry, I think it's a bit early yet.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -20 } } }
+        ]
+    },
+    "seyoun_contact_success_cold": {
+        name: "Seoyeon",
+        text: "(She saves the number.) \"Thank you. Then... I'll contact you when necessary.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: 2 } },
+        next: "after_school_start"
     },
     "seyoun_contact_success": {
         name: "Seoyeon",

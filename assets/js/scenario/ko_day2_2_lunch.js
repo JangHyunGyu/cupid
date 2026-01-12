@@ -341,6 +341,44 @@ Object.assign(SCENARIO[2], {
             { text: "유나야, 넌 왜 이런 걸 조사하는 거야?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
         ]
     },
+    "day2_yuna_secret_read": {
+        type: "free_talk",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_yuna_secret_read_high" },
+            { minAffinity: -999, next: "day2_yuna_secret_read_low" }
+        ]
+    },
+    "day2_yuna_secret_stop": {
+        type: "free_talk",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_yuna_secret_stop_high" },
+            { minAffinity: -999, next: "day2_yuna_secret_stop_low" }
+        ]
+    },
+    "day2_yuna_secret_why": {
+        type: "free_talk",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_yuna_secret_why_high" },
+            { minAffinity: -999, next: "day2_yuna_secret_why_low" }
+        ]
+    },
+    "day2_yuna_secret_why_high": {
+        name: "유나",
+        text: "\"그게 궁금해? 사실... 나도 잘 모르겠어. 그냥 네가 전학 온 날부터, 왠지 너라면 내 이야기를 들어줄 것 같다는 예감이 들었거든. 우습지?\"",
+        character: "assets/images/characters/yuna_smile.png",
+        setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_secret_why_low": {
+        name: "유나",
+        text: "\"네가 알아서 뭐 하게? 호기심은 고양이를 죽인다는 말도 몰라? 그냥 입 닥치고 구경이나 하든가, 아니면 꺼져.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "day2_met_yuna_lunch",
+        next: "day2_yuna_lunch_end"
+    },
     "day2_yuna_secret_read_high": {
         name: "유나",
         text: "\"고마워, {name}. 너랑 함께라면 더 이상 두렵지 않아. 자, 그럼 같이 열어볼까?\"",
@@ -391,11 +429,13 @@ Object.assign(SCENARIO[2], {
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_normal": {
-        name: "유나",
-        text: "\"...그래? 넌 참 이상한 애야. 다른 애들은 다들 무서워하는데. 좋아, 그럼 오늘은 그냥 이렇게 같이 있자.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        setFlag: "day2_met_yuna_lunch",
-        next: "day2_yuna_lunch_end"
+        type: "free_talk",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_yuna_normal_high" },
+            { minAffinity: 0, next: "day2_yuna_normal_normal" },
+            { minAffinity: -999, next: "day2_yuna_normal_low" }
+        ]
     },
     "day2_yuna_lunch_end": {
         name: "나",
