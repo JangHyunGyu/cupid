@@ -1,5 +1,5 @@
 const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
-const ASSET_VERSION = "1.0.13"; // 에셋 캐시 방지를 위한 버전 번호
+const ASSET_VERSION = "1.0.14"; // 에셋 캐시 방지를 위한 버전 번호
 
 // 에셋 URL에 버전을 추가하는 헬퍼 함수
 function getAssetUrl(url) {
@@ -417,13 +417,18 @@ async function renderScene(sceneId) {
             const img = new Image();
             const bgUrl = getAssetUrl(scene.background);
             img.onload = () => {
-                bgLayer.style.backgroundImage = `url(${bgUrl})`;
+                if (currentSceneId === sceneId) {
+                    bgLayer.style.backgroundImage = `url(${bgUrl})`;
+                }
                 resolve();
             };
             img.onerror = resolve; // 에러 발생 시에도 다음 단계로 진행
             img.src = bgUrl;
         });
     }
+
+    // 레이스 컨디션 방지
+    if (currentSceneId !== sceneId) return;
 
     // 플래그 설정 (노드 진입 시 자동 설정)
     if (scene.setFlag) {
@@ -475,7 +480,7 @@ async function renderScene(sceneId) {
                 if (charSlots[targetPos] && src) {
                     const img = document.createElement('img');
                     const charUrl = getAssetUrl(src);
-                    img.onload = () => resolve({ pos: targetPos, img });
+                    img.onload = () => resolve({ pos: targetPos, img, sceneId });
                     img.onerror = () => {
                         console.error("캐릭터 이미지 로드 실패:", charUrl);
                         resolve(null);
@@ -493,6 +498,9 @@ async function renderScene(sceneId) {
         });
 
         const loadedChars = await Promise.all(charPromises);
+        // 레이스 컨디션 방지: 이미 다른 장면으로 넘어갔다면 렌더링 중단
+        if (currentSceneId !== sceneId) return;
+
         loadedChars.forEach(result => {
             if (result && charSlots[result.pos]) {
                 charSlots[result.pos].appendChild(result.img);
@@ -500,23 +508,27 @@ async function renderScene(sceneId) {
         });
     } else if (scene.character) {
         // 단일 캐릭터 설정 (기본 center)
-        await new Promise((resolve) => {
+        const result = await new Promise((resolve) => {
             const img = document.createElement('img');
             const charUrl = getAssetUrl(scene.character);
             img.onload = () => {
-                if (charSlots.center) {
-                    charSlots.center.appendChild(img);
-                }
-                resolve();
+                resolve({ pos: 'center', img, sceneId });
             };
             img.onerror = () => {
                 console.error("캐릭터 이미지 로드 실패:", charUrl);
-                resolve();
+                resolve(null);
             };
             img.src = charUrl;
             if (scene.silhouette) img.classList.add('silhouette');
             if (scene.thinking) img.classList.add('thinking');
         });
+
+        // 레이스 컨디션 방지
+        if (currentSceneId !== sceneId) return;
+
+        if (result && charSlots.center) {
+            charSlots.center.appendChild(result.img);
+        }
     }
 
     // 이름 태그 업데이트
@@ -530,7 +542,10 @@ async function renderScene(sceneId) {
         startFreeTalk(scene);
     } else if (scene.type === 'input') {
         dialogueBox.style.pointerEvents = 'none'; // 클릭이 입력창으로 전달되도록 설정
-        if (scene.text) await typeText(scene.text, scene.name);
+        if (scene.text) {
+            await typeText(scene.text, scene.name);
+            if (currentSceneId !== sceneId) return;
+        }
         nameInputContainer.style.display = 'block';
         playerNameInput.value = "";
         playerNameInput.focus();
@@ -538,6 +553,7 @@ async function renderScene(sceneId) {
         // 텍스트 타이핑 효과
         if (scene.text) {
             await typeText(scene.text, scene.name);
+            if (currentSceneId !== sceneId) return;
         } else {
             messageEl.textContent = "";
         }
