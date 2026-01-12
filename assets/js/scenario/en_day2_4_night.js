@@ -39,11 +39,11 @@ Object.assign(SCENARIO[2], {
         night: true,
         character: null,
         choices: [
-            { text: "Send a message to Seoyeon.", next: "day2_night_message_seyoun", condition: "has_number_seyoun", excludeCondition: "sent_msg_day2_seyoun" },
-            { text: "Send a message to Yuna.", next: "day2_night_message_yuna", condition: "has_number_yuna", excludeCondition: "sent_msg_day2_yuna" },
-            { text: "Send a message to Dain.", next: "day2_night_message_dain", condition: "has_number_dain", excludeCondition: "sent_msg_day2_dain" },
-            { text: "Send a message to the Nurse.", next: "day2_night_message_nurse", condition: "has_number_nurse", excludeCondition: "sent_msg_day2_nurse" },
-            { text: "Send a message to the Teacher.", next: "day2_night_message_teacher", condition: "has_number_teacher", excludeCondition: "sent_msg_day2_teacher" },
+            { text: "Send a message to Seoyeon.", next: "day2_night_message_seyoun", condition: "has_number_seyoun" },
+            { text: "Send a message to Yuna.", next: "day2_night_message_yuna", condition: "has_number_yuna" },
+            { text: "Send a message to Dain.", next: "day2_night_message_dain", condition: "has_number_dain" },
+            { text: "Send a message to the Nurse.", next: "day2_night_message_nurse", condition: "has_number_nurse" },
+            { text: "Send a message to the Teacher.", next: "day2_night_message_teacher", condition: "has_number_teacher" },
             { text: "Go to the Nurse's house.", next: "day2_night_nurse_home", condition: "invited_nurse_home" },
             { text: "Check Affinity Status", next: "day2_check_affinity" },
             { text: "Just sleep.", next: "day2_final_scene" }

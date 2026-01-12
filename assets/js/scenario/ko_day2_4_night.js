@@ -39,11 +39,11 @@ Object.assign(SCENARIO[2], {
         character: null,
         night: true,
         choices: [
-            { text: "서연이에게 메시지를 보낸다.", next: "day2_night_message_seyoun", condition: "has_number_seyoun", excludeCondition: "sent_msg_day2_seyoun" },
-            { text: "유나에게 메시지를 보낸다.", next: "day2_night_message_yuna", condition: "has_number_yuna", excludeCondition: "sent_msg_day2_yuna" },
-            { text: "다인이에게 메시지를 보낸다.", next: "day2_night_message_dain", condition: "has_number_dain", excludeCondition: "sent_msg_day2_dain" },
-            { text: "보건선생님께 메시지를 보낸다.", next: "day2_night_message_nurse", condition: "has_number_nurse", excludeCondition: "sent_msg_day2_nurse" },
-            { text: "담임선생님께 메시지를 보낸다.", next: "day2_night_message_teacher", condition: "has_number_teacher", excludeCondition: "sent_msg_day2_teacher" },
+            { text: "서연이에게 메시지를 보낸다.", next: "day2_night_message_seyoun", condition: "has_number_seyoun" },
+            { text: "유나에게 메시지를 보낸다.", next: "day2_night_message_yuna", condition: "has_number_yuna" },
+            { text: "다인이에게 메시지를 보낸다.", next: "day2_night_message_dain", condition: "has_number_dain" },
+            { text: "보건선생님께 메시지를 보낸다.", next: "day2_night_message_nurse", condition: "has_number_nurse" },
+            { text: "담임선생님께 메시지를 보낸다.", next: "day2_night_message_teacher", condition: "has_number_teacher" },
             { text: "보건선생님 댁으로 향한다.", next: "day2_night_nurse_home", condition: "invited_nurse_home" },
             { text: "호감도 확인하기", next: "day2_check_affinity" },
             { text: "그냥 잠을 청한다.", next: "day2_final_scene" }

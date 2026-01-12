@@ -44,11 +44,11 @@ Object.assign(SCENARIO[1], {
         text: "(오늘 연락처를 교환했던가...?)",
         night: true,
         choices: [
-            { text: "서연이에게 메시지를 보낸다.", next: "night_message_seyoun", condition: "has_number_seyoun", excludeCondition: "sent_msg_day1_seyoun" },
-            { text: "유나에게 메시지를 보낸다.", next: "night_message_yuna", condition: "has_number_yuna", excludeCondition: "sent_msg_day1_yuna" },
-            { text: "다인이에게 메시지를 보낸다.", next: "night_message_dain", condition: "has_number_dain", excludeCondition: "sent_msg_day1_dain" },
-            { text: "보건선생님께 메시지를 보낸다.", next: "night_message_nurse", condition: "has_number_nurse", excludeCondition: "sent_msg_day1_nurse" },
-            { text: "담임선생님께 메시지를 보낸다.", next: "night_message_teacher", condition: "has_number_teacher", excludeCondition: "sent_msg_day1_teacher" },
+            { text: "서연이에게 메시지를 보낸다.", next: "night_message_seyoun", condition: "has_number_seyoun" },
+            { text: "유나에게 메시지를 보낸다.", next: "night_message_yuna", condition: "has_number_yuna" },
+            { text: "다인이에게 메시지를 보낸다.", next: "night_message_dain", condition: "has_number_dain" },
+            { text: "보건선생님께 메시지를 보낸다.", next: "night_message_nurse", condition: "has_number_nurse" },
+            { text: "담임선생님께 메시지를 보낸다.", next: "night_message_teacher", condition: "has_number_teacher" },
             { text: "호감도 확인하기", next: "day1_check_affinity" },
             { text: "그냥 잠을 잔다.", next: "day1_end" }
         ]
