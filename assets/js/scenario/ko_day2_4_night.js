@@ -137,7 +137,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_reply_high": {
         name: "나",
-        text: "(서연이와의 대화는 언제나 즐겁다. 그녀의 따뜻한 마음이 전해지는 것 같아 기분이 좋다. 내일 점심이 벌써 기다려진다.)",
+        text: "(서연이와의 대화는 언제나 즐겁다. 그녀의 다정한 말투에서 진심이 느껴져 가방을 챙기는 손길이 가볍다. 내일 점심시간이 벌써부터 기다려진다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
@@ -153,7 +153,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_reply_low": {
         name: "나",
-        text: "(서연이의 반응이 조금 차갑다. 내가 무언가 실수한 걸까? 마음이 무겁다.)",
+        text: "(서연이의 반응이 평소보다 조금 사무적으로 느껴진다. 내가 무언가 실수한 걸까? 내일은 좀 더 조심스럽게 다가가야겠다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         silhouette: true,
         night: true,
@@ -202,7 +202,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply_high": {
         name: "나",
-        text: "(유나의 신비로운 분위기에 점점 빠져드는 것 같다. 그녀가 말하는 운명이 정말 존재하는 걸까? 꿈속에서도 그녀를 만날 것만 같다.)",
+        text: "(유나의 신비로운 분위기에 점점 빠져드는 것 같다. '꿈속에서도 지켜보겠다'는 그녀의 말이 무섭기보다는 묘하게 안심이 된다. 정말로 꿈에서 그녀를 만날 수 있을 것만 같다.)",
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,
@@ -218,7 +218,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply_low": {
         name: "나",
-        text: "(유나의 태도가 너무 차갑다. 그녀의 세계에 발을 들이는 건 역시 쉽지 않은 일인 것 같다.)",
+        text: "(유나의 태도가 너무나 차갑고 기괴하다. 그녀의 세계에 발을 들이는 것이 정말 옳은 선택인지, 한기가 느껴진다.)",
         character: "assets/images/characters/yuna_nomal.png",
         silhouette: true,
         night: true,
@@ -289,7 +289,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply_high": {
         name: "나",
-        text: "(다인이의 활기찬 에너지 덕분에 나까지 기운이 난다. 그녀가 나를 생각하고 있었다니, 왠지 가슴이 설렌다. 내일 떡볶이 내기는 꼭 이겨야지.)",
+        text: "(다인이의 활기찬 에너지 덕분에 나까지 기운이 난다. '지갑 준비해둬'라며 장난치는 모습이 눈앞에 선하다. 내일 떡볶이 내기는 그녀를 위해서라도 꼭 져줘야 할까?)",
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
@@ -305,7 +305,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply_low": {
         name: "나",
-        text: "(다인이의 반응이 평소보다 무미건조하다. 그녀의 기분을 상하게 한 건 아닐지 걱정된다.)",
+        text: "(다인이의 반응이 평소보다 무미건조하다. 내가 보낸 메시지가 귀찮았던 건 아닐지, 핸드폰을 든 손이 어색해진다.)",
         character: "assets/images/characters/dain_nomal.png",
         silhouette: true,
         night: true,
@@ -354,7 +354,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_reply_high": {
         name: "나",
-        text: "(선생님의 매혹적인 말투가 귓가에 맴도는 것 같다. 나를 특별하게 생각해주시는 것 같아 가슴이 두근거린다. 내일은 보건실에 꼭 들러야겠다.)",
+        text: "(선생님의 매혹적인 말투가 귓가에 맴도는 것 같다. 화면 너머로 그녀의 미소가 보이는 듯해 심장이 떨린다. 내일은 무슨 일이 있어도 보건실에 들러야겠다.)",
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
@@ -370,7 +370,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_reply_low": {
         name: "나",
-        text: "(선생님의 답장이 조금 차갑다. 너무 늦은 시간에 연락해서 실례가 된 건 아닐까?)",
+        text: "(선생님의 답장이 너무나 사무적이다. 단순히 학생 중 한 명으로만 대하시는 것 같아 씁쓸한 기분이 든다.)",
         character: "assets/images/characters/nurse.png",
         silhouette: true,
         night: true,
@@ -403,7 +403,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_teacher_reply_high": {
         name: "나",
-        text: "(선생님의 다정한 답장에 마음이 놓인다. 나를 생각해주고 계셨다니, 왠지 모르게 든든한 기분이 든다. 내일은 지각하지 말고 일찍 가야지.)",
+        text: "(선생님의 다정한 답장에 마음이 따뜻해진다. 학생으로서가 아니라, 조금은 한 명의 인격체로 존중받는 기분이 들어 내일 학교 가는 길이 기다려진다.)",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,
@@ -419,7 +419,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_teacher_reply_low": {
         name: "나",
-        text: "(선생님의 답장이 짧고 단호하다. 너무 늦은 시간에 연락해서 꾸중을 들은 기분이다.)",
+        text: "(선생님의 답장이 짧고 엄격하다. 사적인 시간에 연락한 것이 큰 실례였던 것 같아 후회가 밀려온다.)",
         character: "assets/images/characters/teacher.png",
         silhouette: true,
         night: true,

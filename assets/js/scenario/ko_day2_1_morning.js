@@ -227,7 +227,7 @@ Object.assign(SCENARIO[2], {
         text: "(선생님과 즐겁게 대화를 나누며 교실로 향했다. 선생님은 아침부터 기분이 좋아 보인다며, 비상연락망 작성을 위해 내 연락처를 물어보셨다.)",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
-            { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success_high", setFlags: ["has_number_teacher", "has_any_contact"] },
             { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom" }
         ]
     },
@@ -236,7 +236,7 @@ Object.assign(SCENARIO[2], {
         text: "(선생님의 표정이 굳어졌다. 아침부터 내가 너무 무례하게 굴었나 보다. 선생님은 한숨을 내쉬며 비상연락망 작성을 위해 내 연락처를 알려달라고 하셨다.)",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
-            { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success_low", setFlags: ["has_number_teacher", "has_any_contact"] },
             { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom" }
         ]
     },
@@ -245,9 +245,30 @@ Object.assign(SCENARIO[2], {
         text: "(선생님과 이런저런 이야기를 나누며 교실로 걸어갔다. 선생님은 비상연락망 작성을 위해 내 연락처가 필요하다며 번호를 물어보셨다.)",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success_normal", setFlags: ["has_number_teacher", "has_any_contact"] },
             { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom" }
         ]
+    },
+    "day2_teacher_contact_success_high": {
+        name: "담임선생님",
+        text: "\"{name}, 번호 고마워! 후훗, 비상연락망 핑계로 물어보긴 했지만... 실은 나도 너랑 좀 더 친해지고 싶었거든. 학교생활 힘들면 언제든지 이 번호로 연락해?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        stats: { Teacher: { affinity: 15 } },
+        next: "day2_classroom"
+    },
+    "day2_teacher_contact_success_low": {
+        name: "담임선생님",
+        text: "\"...그래, 고맙다. 연락처는 공적인 용도로만 사용할 테니 걱정하지 마. 수업 늦지 않게 어서 들어가 봐.\"",
+        character: "assets/images/characters/teacher_angry.png",
+        stats: { Teacher: { affinity: 2 } },
+        next: "day2_classroom"
+    },
+    "day2_teacher_contact_success_normal": {
+        name: "담임선생님",
+        text: "\"고마워. 그럼 무슨 일 있으면 연락할게. 자, 이제 교실로 가자.\"",
+        character: "assets/images/characters/teacher.png",
+        stats: { Teacher: { affinity: 10 } },
+        next: "day2_classroom"
     },
     "day2_teacher_contact_success": {
         name: "담임선생님",

@@ -227,7 +227,7 @@ Object.assign(SCENARIO[2], {
         text: "(I walked to the classroom while having a pleasant conversation with the teacher. She said she felt great starting the morning with such a talk and asked for my number for the emergency contact list.)",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
-            { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "Sure, here's my number.", next: "day2_teacher_contact_success_high", setFlags: ["has_number_teacher", "has_any_contact"] },
             { text: "I'll stop by the office and let you know later.", next: "day2_classroom" }
         ]
     },
@@ -236,7 +236,7 @@ Object.assign(SCENARIO[2], {
         text: "(The teacher's expression hardened. I must have been too rude this morning. She sighed and asked for my number, saying she needed it for the emergency contact list.)",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
-            { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "Sure, here's my number.", next: "day2_teacher_contact_success_low", setFlags: ["has_number_teacher", "has_any_contact"] },
             { text: "I'll stop by the office and let you know later.", next: "day2_classroom" }
         ]
     },
@@ -245,9 +245,30 @@ Object.assign(SCENARIO[2], {
         text: "(I walked to the classroom while chatting with the teacher about various things. She asked for my contact information, saying she needed it for the emergency contact list.)",
         character: "assets/images/characters/teacher.png",
         choices: [
-            { text: "Sure, here's my number.", next: "day2_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "Sure, here's my number.", next: "day2_teacher_contact_success_normal", setFlags: ["has_number_teacher", "has_any_contact"] },
             { text: "I'll stop by the office and let you know later.", next: "day2_classroom" }
         ]
+    },
+    "day2_teacher_contact_success_high": {
+        name: "Teacher",
+        text: "\"Thank you, {name}. Now I can contact you anytime. Hehe, just kidding! I'll contact you immediately if anything happens at school. Now, let's head to the classroom.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        stats: { Teacher: { affinity: 10 } },
+        next: "day2_classroom"
+    },
+    "day2_teacher_contact_success_low": {
+        name: "Teacher",
+        text: "\"...Thank you. I've saved it. Make sure you don't miss any official notices. Now, go into the classroom.\"",
+        character: "assets/images/characters/teacher_angry.png",
+        stats: { Teacher: { affinity: 0 } },
+        next: "day2_classroom"
+    },
+    "day2_teacher_contact_success_normal": {
+        name: "Teacher",
+        text: "\"Thank you. I'll contact you if anything comes up. Now, let's head to the classroom.\"",
+        character: "assets/images/characters/teacher.png",
+        stats: { Teacher: { affinity: 5 } },
+        next: "day2_classroom"
     },
     "day2_teacher_contact_success": {
         name: "Teacher",

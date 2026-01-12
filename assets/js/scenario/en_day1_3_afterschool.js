@@ -588,9 +588,9 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
         choices: [
-            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer", stats: { Dain: { affinity: 5 } } },
-            { text: "Need a hand? Toss me the ball!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
-            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired", stats: { Dain: { affinity: -20 } } }
+            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer_high", stats: { Dain: { affinity: 5 } } },
+            { text: "Need a hand? Toss me the ball!", next: "after_dain_help_high", stats: { Dain: { affinity: 15 } } },
+            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired_high", stats: { Dain: { affinity: -20 } } }
         ]
     },
     "after_dain_3_low": {
@@ -600,9 +600,9 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_angry.png",
         sunset: true,
         choices: [
-            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer", stats: { Dain: { affinity: 5 } } },
-            { text: "Need a hand? Toss me the ball!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
-            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired", stats: { Dain: { affinity: -20 } } }
+            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer_low", stats: { Dain: { affinity: 5 } } },
+            { text: "Need a hand? Toss me the ball!", next: "after_dain_help_low", stats: { Dain: { affinity: 5 } } },
+            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired_low", stats: { Dain: { affinity: -20 } } }
         ]
     },
     "after_dain_3": {
@@ -612,10 +612,46 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_nomal.png",
         sunset: true,
         choices: [
-            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer", stats: { Dain: { affinity: 5 } } },
-            { text: "Need a hand? Toss me the ball!", next: "after_dain_help", stats: { Dain: { affinity: 15 } } },
-            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired", stats: { Dain: { affinity: -20 } } }
+            { text: "Go for it! I'll be cheering you on!", next: "after_dain_cheer_normal", stats: { Dain: { affinity: 5 } } },
+            { text: "Need a hand? Toss me the ball!", next: "after_dain_help_normal", stats: { Dain: { affinity: 15 } } },
+            { text: "I'm pretty beat... can we go now?", next: "after_dain_tired_normal", stats: { Dain: { affinity: -20 } } }
         ]
+    },
+    "after_dain_tired_high": {
+        name: "Dain",
+        text: "(She can't hide her disappointment and briefly grabs my hand before letting go.)",
+        character: "assets/images/characters/dain_shy.png",
+        next: "after_dain_tired_high_2"
+    },
+    "after_dain_tired_high_2": {
+        name: "Dain",
+        text: "\"{name}, are you really going? I wanted to spend more time together... Ah, no! It's your first day, you must be exhausted. I'm sorry for holding you up. Go home and rest. Let's definitely eat something delicious tomorrow, okay?\"",
+        character: "assets/images/characters/dain_shy.png",
+        next: "after_home"
+    },
+    "after_dain_tired_low": {
+        name: "Dain",
+        text: "(She glares at me with cold eyes and picks up the ball again.)",
+        character: "assets/images/characters/dain_angry.png",
+        next: "after_dain_tired_low_2"
+    },
+    "after_dain_tired_low_2": {
+        name: "Dain",
+        text: "\"Fine, do whatever you want. I feel sorry for holding back a busy person. Go home or whatever.\"",
+        character: "assets/images/characters/dain_angry.png",
+        next: "after_home"
+    },
+    "after_dain_tired_normal": {
+        name: "Dain",
+        text: "(She looks a bit disappointed, but quickly nods with a smile.)",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "after_dain_tired_normal_2"
+    },
+    "after_dain_tired_normal_2": {
+        name: "Dain",
+        text: "\"Oh... right. First day must be exhausting. Sorry, I got carried away. Let's call it a day. See you tomorrow!\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "after_home"
     },
     "after_dain_tired": {
         name: "Dain",
@@ -629,6 +665,42 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_nomal.png",
         next: "after_home"
     },
+    "after_dain_help_high": {
+        name: "Dain",
+        text: "(Her face turns red as she looks at me with twinkling eyes.)",
+        character: "assets/images/characters/dain_shy.png",
+        next: "after_dain_help_high_2"
+    },
+    "after_dain_help_high_2": {
+        name: "Dain",
+        text: "\"R-really? You're going to help me? I'm so happy! Okay, toss it high to the net! I'll show you my best spike!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "after_dain_normal"
+    },
+    "after_dain_help_low": {
+        name: "Dain",
+        text: "(She looks at me with a skeptical expression.)",
+        character: "assets/images/characters/dain_angry.png",
+        next: "after_dain_help_low_2"
+    },
+    "after_dain_help_low_2": {
+        name: "Dain",
+        text: "\"You? Can you even catch the ball? Forget it, you'll just get hurt. Just stay there and watch.\"",
+        character: "assets/images/characters/dain_angry.png",
+        next: "after_dain_normal"
+    },
+    "after_dain_help_normal": {
+        name: "Dain",
+        text: "(Her eyes light up as she tosses me the ball.)",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "after_dain_help_normal_2"
+    },
+    "after_dain_help_normal_2": {
+        name: "Dain",
+        text: "\"Oh! You're in? Awesome! Toss it high to the net! Here I come!\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "after_dain_normal"
+    },
     "after_dain_help": {
         name: "Dain",
         text: "(Her eyes light up as she tosses me the ball.)",
@@ -639,6 +711,42 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "\"Oh! You're in? Awesome! Toss it high to the net! Here I come!\"",
         character: "assets/images/characters/dain_active.png",
+        next: "after_dain_normal"
+    },
+    "after_dain_cheer_high": {
+        name: "Dain",
+        text: "(She makes a big heart with her arms, grinning broadly.)",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "after_dain_cheer_high_2"
+    },
+    "after_dain_cheer_high_2": {
+        name: "Dain",
+        text: "\"Hehe, with your support, I feel like I can spike anything! Thanks, {name}! Wait a moment, I'll finish this in style!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "after_dain_normal"
+    },
+    "after_dain_cheer_low": {
+        name: "Dain",
+        text: "(She turns around to focus on the ball, ignoring my cheer.)",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "after_dain_cheer_low_2"
+    },
+    "after_dain_cheer_low_2": {
+        name: "Dain",
+        text: "\"...Cheering won't help if you don't mean it. Just stay quiet.\"",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "after_dain_normal"
+    },
+    "after_dain_cheer_normal": {
+        name: "Dain",
+        text: "(She looks a bit flustered, rubbing her nose with a shy grin.)",
+        character: "assets/images/characters/dain_nomal.png",
+        next: "after_dain_cheer_normal_2"
+    },
+    "after_dain_cheer_normal_2": {
+        name: "Dain",
+        text: "\"Hehe, thanks. It's a bit embarrassing but I feel energized. Wait a moment!\"",
+        character: "assets/images/characters/dain_nomal.png",
         next: "after_dain_normal"
     },
     "after_dain_cheer": {

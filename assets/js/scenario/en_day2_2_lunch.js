@@ -144,105 +144,132 @@ Object.assign(SCENARIO[2], {
         next: "day2_yuna_talk_branch"
     },
     "day2_yuna_talk_branch_high": {
-        name: "Me",
-        text: "(Yuna looks at me with a slightly softer expression than usual.)",
         branches: [
-            { next: "day2_yuna_talk_2_met_high", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_met_high", condition: "knowsName_Yuna" },
             { next: "day2_yuna_talk_2_new_high" }
         ]
     },
     "day2_yuna_talk_branch_low": {
-        name: "Me",
-        text: "(Yuna looks at me with a cold, disappointed gaze.)",
         branches: [
-            { next: "day2_yuna_talk_2_met_low", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_met_low", condition: "knowsName_Yuna" },
             { next: "day2_yuna_talk_2_new_low" }
         ]
     },
     "day2_yuna_talk_2_met_high": {
-        name: "Me",
-        text: "(Yuna said that talking with me makes her feel at peace. She mentioned the secrets of the school she spoke of yesterday and suggested there's something she wants to show only to me.)",
+        name: "Yuna",
+        text: "\"Hehe, {name}. It's good to see you again. My heart beats faster every time I see you... like I've found someone truly special.\"",
         character: "assets/images/characters/yuna_smile.png",
-        choices: [
-            { text: "What is it? I want to know.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
-            { text: "I'm not here for secrets. I just wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
-        ]
+        next: "day2_yuna_secret_high"
     },
     "day2_yuna_talk_2_met_low": {
-        name: "Me",
-        text: "(Yuna's gaze became even colder. She called me rude and foolish, saying I wouldn't be able to handle the truth with such an attitude, but since she promised yesterday, she told me to follow her.)",
+        name: "Yuna",
+        text: "\"...Oh, it's you, {name}. I was hoping to be alone... but I guess fate has a dark sense of humor.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        choices: [
-            { text: "What is it? I want to know.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
-            { text: "I'm not here for secrets. I just wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
-        ]
+        next: "day2_yuna_secret_low"
     },
     "day2_yuna_talk_2_new_high": {
-        name: "Me",
-        text: "(Yuna said that talking with me feels strange. She mentioned that this school hides a very deep secret and suggested there's something she wants to show only to me.)",
+        name: "Yuna",
+        text: "\"Oh? You actually found me. I was waiting for you... even if I didn't say it. My heart skipped a beat when I saw you.\"",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "metYuna",
-        choices: [
-            { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },
-            { text: "I just came because I was curious about the note. Who are you?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 3 } } }
-        ]
+        next: "day2_yuna_new_name_ask_normal"
     },
     "day2_yuna_talk_2_new_low": {
-        name: "Me",
-        text: "(Yuna's gaze became even colder. She called me rude and foolish, saying I wouldn't be able to handle the truth with such an attitude, but since I've come this far, she told me to follow her.)",
+        name: "Yuna",
+        text: "\"...What do you want? I don't feel like talking to anyone, especially not someone who radiates such chaotic energy.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        setFlag: "metYuna",
-        choices: [
-            { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },
-            { text: "I just came because I was curious about the note. Who are you?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 3 } } }
-        ]
+        next: "day2_yuna_new_name_ask_low"
     },
     "day2_yuna_talk_branch": {
-        name: "Me",
-        text: "(Yuna looks at me and starts talking.)",
         branches: [
-            { next: "day2_yuna_talk_2_met", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_met", condition: "knowsName_Yuna" },
             { next: "day2_yuna_talk_2_new" }
         ]
     },
     "day2_yuna_talk_2_met": {
-        name: "Me",
-        text: "(Yuna mentioned the secrets of the school she spoke of yesterday and suggested there's something she wants to show only to me.)",
+        name: "Yuna",
+        text: "\"Oh, {name}. You're here. Most people would have given up by now. You're persistent... I suppose that's a trait.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        choices: [
-            { text: "What is it? I want to know.", next: "day2_yuna_secret", stats: { Yuna: { affinity: 5 } } },
-            { text: "I'm not here for secrets. I just wanted to talk to you.", next: "day2_yuna_normal", stats: { Yuna: { affinity: 4 } } }
-        ]
+        next: "day2_yuna_secret_normal"
     },
     "day2_yuna_talk_2_new": {
-        name: "Me",
-        text: "(Yuna said I must be curious about her and suggested there's a deep secret in this school she wants to show only to me.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        setFlag: "metYuna",
-        choices: [
-            { text: "Are you the Yuna who left the note? What's the secret?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 5 } } },
-            { text: "I was just curious after seeing your note. Who are you?", next: "day2_yuna_new_name_ask", stats: { Yuna: { affinity: 3 } } }
-        ]
-    },
-    "day2_yuna_new_name_ask": {
         name: "Yuna",
-        text: "\"...By the way, what's your name? I only wrote my name on the note, but I don't know yours yet.\"",
+        text: "\"You're the transfer student everyone's talking about, right? Most kids are too loud. You... you're a bit different.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_new_name_share"
+        next: "day2_yuna_new_name_ask_normal"
     },
-    "day2_yuna_new_name_share": {
+    "day2_yuna_new_name_ask_low": {
+        name: "Yuna",
+        text: "(She asks coldly) \"...I should probably know your name, if only to know who to blame if this goes wrong. What should I call you?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_new_name_share_low"
+    },
+    "day2_yuna_new_name_share_low": {
         name: "Me",
         text: "\"My name is {name}.\"",
         setFlag: "knowsName_Yuna",
-        next: "day2_yuna_secret"
+        next: "day2_yuna_secret_low"
     },
-    "day2_yuna_secret": {
+    "day2_yuna_new_name_ask_normal": {
+        name: "Yuna",
+        text: "\"...By the way, what's your name? I only wrote my name on the note, but I didn't know yours yet.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_new_name_share_normal"
+    },
+    "day2_yuna_new_name_share_normal": {
+        name: "Me",
+        text: "\"My name is {name}.\"",
+        setFlag: "knowsName_Yuna",
+        next: "day2_yuna_secret_normal"
+    },
+    "day2_yuna_secret_high": {
+        name: "Yuna",
+        text: "(Yuna carefully interlocks her fingers with mine. I can feel the warmth and sincerity in her hand.)",
+        character: "assets/images/characters/yuna_smile.png",
+        setFlag: "visitedWarehouseAtLunch",
+        next: "day2_yuna_secret_2_high"
+    },
+    "day2_yuna_secret_2_high": {
+        name: "Yuna",
+        text: "\"I think... you're the one who can help me shoulder this heavy truth. {name}, can you trust me and follow me? The world beyond this door will never be the same.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        choices: [
+            { text: "Yes, I'll be with you. Let's see it together.", next: "day2_yuna_secret_read_high", stats: { Yuna: { affinity: 20 } } },
+            { text: "I'm sorry, I don't think I can handle this.", next: "day2_yuna_secret_stop_high", stats: { Yuna: { affinity: -10 } } }
+        ]
+    },
+    "day2_yuna_secret_read_high": {
+        name: "Yuna",
+        text: "\"Thank you. I knew I wasn't wrong about you. Let's go. The truth is waiting.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_secret_stop_high": {
+        name: "Yuna",
+        text: "\"...I see. I shouldn't have put such a burden on you. I'm sorry. You should forget about this for today.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_secret_low": {
+        name: "Yuna",
+        text: "(Yuna grabs my sleeve roughly and pulls me along.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        setFlag: "visitedWarehouseAtLunch",
+        next: "day2_yuna_secret_2_low"
+    },
+    "day2_yuna_secret_2_low": {
+        name: "Yuna",
+        text: "\"Just watch. Not like you'd understand much anyway... but since you're here, you might as well see. Just don't get in my way.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "day2_yuna_lunch_end"
+    },
+    "day2_yuna_secret_normal": {
         name: "Yuna",
         text: "(She takes my hand and leads me toward the old warehouse. A shiver runs down my spine at the coldness of her touch.)",
         character: "assets/images/characters/yuna_smile.png",
-        next: "day2_yuna_secret_2"
+        setFlag: "visitedWarehouseAtLunch",
+        next: "day2_yuna_secret_2_normal"
     },
-    "day2_yuna_secret_2": {
+    "day2_yuna_secret_2_normal": {
         name: "Yuna",
         text: "\"Inside here... are records the school has kept hidden for years. Once you see them... nothing will ever be the same.\"",
         character: "assets/images/characters/yuna_smile.png",
@@ -348,9 +375,9 @@ Object.assign(SCENARIO[2], {
         text: "(Standing in line wasn't boring at all while chatting with Dain. It was finally our turn, and Dain, seemingly in a good mood, said lunch was on her and told me to pick what I wanted.)",
         character: "assets/images/characters/dain_laugh.png",
         choices: [
-            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
-            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
-            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race", stats: { Dain: { affinity: 8 } } }
+            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy_high", stats: { Dain: { affinity: 5 } } },
+            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop_high", stats: { Dain: { affinity: 3 } } },
+            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race_high", stats: { Dain: { affinity: 8 } } }
         ]
     },
     "day2_dain_store_choices_low": {
@@ -358,35 +385,77 @@ Object.assign(SCENARIO[2], {
         text: "(Dain seems to be in a bad mood. I must have been too prickly while she was already tired from standing in line. She sighed and told me to just pick what I wanted to eat.)",
         character: "assets/images/characters/dain_angry.png",
         choices: [
-            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
-            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
-            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race", stats: { Dain: { affinity: 8 } } }
+            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy_low", stats: { Dain: { affinity: 5 } } },
+            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop_low", stats: { Dain: { affinity: 3 } } },
+            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race_low", stats: { Dain: { affinity: 8 } } }
         ]
     },
     "day2_dain_store_choices": {
         name: "Me",
         text: "(While we were talking, it finally became our turn. Dain asked me what I wanted to eat.)",
         choices: [
-            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy", stats: { Dain: { affinity: 5 } } },
-            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop", stats: { Dain: { affinity: 3 } } },
-            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race", stats: { Dain: { affinity: 8 } } }
+            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy_normal", stats: { Dain: { affinity: 5 } } },
+            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop_normal", stats: { Dain: { affinity: 3 } } },
+            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race_normal", stats: { Dain: { affinity: 8 } } }
         ]
     },
-    "day2_dain_store_buy": {
+    "day2_dain_store_buy_high": {
+        name: "Dain",
+        text: "\"Hey~ {name}! Why are you paying? I said it's on me! Hehe, but I appreciate the gesture. How about you buy today, and I'll buy you something even better tomorrow? Deal!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        setFlag: "day2_met_dain_lunch",
+        next: "day2_dain_lunch_end"
+    },
+    "day2_dain_store_buy_low": {
+        name: "Dain",
+        text: "\"...You're buying? Fine, do whatever you want. I'm not in the mood to argue. Just get me a milk too.\"",
+        character: "assets/images/characters/dain_angry.png",
+        setFlag: "day2_met_dain_lunch",
+        next: "day2_dain_lunch_end"
+    },
+    "day2_dain_store_buy_normal": {
         name: "Dain",
         text: "\"Hey~ I said it's on me! You're a transfer student, you shouldn't be spending money. I'll treat you today, so just enjoy!\"",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
-    "day2_dain_store_rooftop": {
+    "day2_dain_store_rooftop_high": {
+        name: "Dain",
+        text: "\"Rooftop? With you? That sounds amazing! It'll be like our little secret hideout. Let's hurry up and get some snacks!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        setFlag: "day2_met_dain_lunch",
+        next: "day2_dain_lunch_end"
+    },
+    "day2_dain_store_rooftop_low": {
+        name: "Dain",
+        text: "\"...The rooftop? Whatever, it's probably better than staying in this crowd. Let's just go.\"",
+        character: "assets/images/characters/dain_nomal.png",
+        setFlag: "day2_met_dain_lunch",
+        next: "day2_dain_lunch_end"
+    },
+    "day2_dain_store_rooftop_normal": {
         name: "Dain",
         text: "\"Rooftop? Oh, that sounds good too! It'll taste even better with the cool breeze. Okay, let's just buy the bread and head up!\"",
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
-    "day2_dain_store_race": {
+    "day2_dain_store_race_high": {
+        name: "Dain",
+        text: "\"Ooh! You're on! I'm not going to lose even to you, {name}! Let's see who's faster!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        setFlag: "day2_met_dain_lunch",
+        next: "day2_dain_lunch_end"
+    },
+    "day2_dain_store_race_low": {
+        name: "Dain",
+        text: "\"...You want to race? You're surprisingly competitive. Fine, but don't cry if you lose.\"",
+        character: "assets/images/characters/dain_nomal.png",
+        setFlag: "day2_met_dain_lunch",
+        next: "day2_dain_lunch_end"
+    },
+    "day2_dain_store_race_normal": {
         name: "Dain",
         text: "\"Ooh! That's my partner! Okay, let's see who gets it first! Loser buys drinks!\"",
         character: "assets/images/characters/dain_nomal.png",

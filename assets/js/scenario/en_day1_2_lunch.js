@@ -194,8 +194,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
             { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind_high", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable_high", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
     "rooftop_choices_low": {
@@ -204,8 +204,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
             { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
-            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind_low", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable_low", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
     "rooftop_choices": {
@@ -253,6 +253,30 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_pout.png",
         next: "seyoun_contact_exchange"
     },
+    "rooftop_kind_high": {
+        name: "Seoyeon",
+        text: "(Seoyeon bites her lip shyly and smiles.)",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "rooftop_kind_high_2"
+    },
+    "rooftop_kind_high_2": {
+        name: "Seoyeon",
+        text: "\"I'm happy to hear you say that. But you know, I'm not this kind to everyone. Maybe it's because it's you, {name}, that I'm especially concerned... Hehe.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "seyoun_contact_exchange"
+    },
+    "rooftop_kind_low": {
+        name: "Seoyeon",
+        text: "(She looks slightly disappointed, her expression stiffening.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "rooftop_kind_low_2"
+    },
+    "rooftop_kind_low_2": {
+        name: "Seoyeon",
+        text: "\"...I see. I was just acting as the student council president. I'm sorry if I gave you the wrong impression.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_kind": {
         name: "Seoyeon",
         text: "(She pouts her lips as if slightly sulky.)",
@@ -263,6 +287,30 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "\"Hmph... That's such a standard answer. But well, it's not wrong, so I'll let it slide. I'll look forward to a more honest answer from now on?\"",
         character: "assets/images/characters/seyoun_pout.png",
+        next: "seyoun_contact_exchange"
+    },
+    "rooftop_comfortable_high": {
+        name: "Seoyeon",
+        text: "(She nods happily with a bright smile.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "rooftop_comfortable_high_2"
+    },
+    "rooftop_comfortable_high_2": {
+        name: "Seoyeon",
+        text: "\"I'm so glad you feel that way! I also feel like all my stress disappears when I'm with you. Let's spend more time together like this, {name}.\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "seyoun_contact_exchange"
+    },
+    "rooftop_comfortable_low": {
+        name: "Seoyeon",
+        text: "(She forces a smile, but her eyes look a bit lonely.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "rooftop_comfortable_low_2"
+    },
+    "rooftop_comfortable_low_2": {
+        name: "Seoyeon",
+        text: "\"...Is that so. I'm glad if you feel at ease. I'll try to make sure you can continue to feel comfortable in school.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
         next: "seyoun_contact_exchange"
     },
     "rooftop_comfortable": {
@@ -359,9 +407,9 @@ Object.assign(SCENARIO[1], {
         text: "(As I talked with Yuna, I felt like I was gradually falling into her mysterious atmosphere. She stared at me intently and smiled faintly, then asked if I wanted to know more about her.)",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
-            { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
-            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
+            { text: "The school is different? What does that mean?", next: "yuna_secret_high", stats: { Yuna: { affinity: 4 } } },
+            { text: "Familiar... Have you seen me before?", next: "yuna_scent_high", stats: { Yuna: { affinity: 4 } } },
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger_high", stats: { Yuna: { affinity: 12 } } }
         ]
     },
     "yuna_choices_low": {
@@ -369,19 +417,55 @@ Object.assign(SCENARIO[1], {
         text: "(Yuna's gaze became even colder. It seems my attitude offended her. She spat out words as if warning me in a cold voice.)",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
-            { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
-            { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
-            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
+            { text: "The school is different? What does that mean?", next: "yuna_secret_low", stats: { Yuna: { affinity: 4 } } },
+            { text: "Familiar... Have you seen me before?", next: "yuna_scent_low", stats: { Yuna: { affinity: 4 } } },
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger_low", stats: { Yuna: { affinity: 12 } } }
         ]
     },
     "yuna_choices": {
         name: "Me",
         text: "(The conversation with Yuna has come to an end. Her purple eyes still maintain a gaze that seems to pierce through me.)",
         choices: [
-            { text: "The school is different? What does that mean?", next: "yuna_secret", stats: { Yuna: { affinity: 4 } } },
-            { text: "Familiar... Have you seen me before?", next: "yuna_scent", stats: { Yuna: { affinity: 4 } } },
-            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger", stats: { Yuna: { affinity: 12 } } }
+            { text: "The school is different? What does that mean?", next: "yuna_secret_normal", stats: { Yuna: { affinity: 4 } } },
+            { text: "Familiar... Have you seen me before?", next: "yuna_scent_normal", stats: { Yuna: { affinity: 4 } } },
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger_normal", stats: { Yuna: { affinity: 12 } } }
         ]
+    },
+    "yuna_secret_high": {
+        name: "Yuna",
+        text: "(She lightly tickles the back of my hand and gives a mysterious smile.)",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "yuna_secret_high_2"
+    },
+    "yuna_secret_high_2": {
+        name: "Yuna",
+        text: "\"That gaze... I really like it. What kind of expression will you make when you find out the huge truth hidden under this school? You'll find out soon. I'll teach you myself.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "after_school_start"
+    },
+    "yuna_secret_low": {
+        name: "Yuna",
+        text: "(She pushes me away with a mocking expression.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "yuna_secret_low_2"
+    },
+    "yuna_secret_low_2": {
+        name: "Yuna",
+        text: "\"Secret? It's not a level someone like you can handle. Don't poke your head into useless places and just live a quiet school life.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_school_start"
+    },
+    "yuna_secret_normal": {
+        name: "Yuna",
+        text: "(She closes the book with a strange smile on her lips. She brings her lips close to my ear and whispers.)",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "yuna_secret_normal_2"
+    },
+    "yuna_secret_normal_2": {
+        name: "Yuna",
+        text: "\"Hehe, are you curious? But secrets might be better left unknown. The stories the school wants to hide... knowing them might get you hurt.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "after_school_start"
     },
     "yuna_secret": {
         name: "Yuna",
@@ -395,6 +479,42 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
     },
+    "yuna_scent_high": {
+        name: "Yuna",
+        text: "(She lightly leans her head against my chest and takes a deep breath.)",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "yuna_scent_high_2"
+    },
+    "yuna_scent_high_2": {
+        name: "Yuna",
+        text: "\"No, it's my first time. But that 'light' inside you... it's making me crazy. It's different from the dying children in this school. I'll watch over you forever so that light doesn't go out. Hehe...\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "after_school_start"
+    },
+    "yuna_scent_low": {
+        name: "Yuna",
+        text: "(She takes a step back and looks at me with an unpleasant expression.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "yuna_scent_low_2"
+    },
+    "yuna_scent_low_2": {
+        name: "Yuna",
+        text: "\"...Somehow, it's a very irritating scent. A light that's destined to go out soon anyway... It's better not to get too close.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_school_start"
+    },
+    "yuna_scent_normal": {
+        name: "Yuna",
+        text: "(She takes a step closer and stares at me intently. She mutters with a bitter expression.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "yuna_scent_normal_2"
+    },
+    "yuna_scent_normal_2": {
+        name: "Yuna",
+        text: "\"No, it's my first time seeing you. But that 'light' in your eyes... I really covet it. It's different from the dead children in this school. Can I keep watching so that light doesn't go out?\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_school_start"
+    },
     "yuna_scent": {
         name: "Yuna",
         text: "(She takes a step closer and stares at me intently. She mutters with a bitter expression.)",
@@ -405,6 +525,42 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "\"No, it's my first time seeing you. But that 'light' in your eyes... I really covet it. It's different from the dead children in this school. Can I keep watching so that light doesn't go out?\"",
         character: "assets/images/characters/yuna_nomal.png",
+        next: "after_school_start"
+    },
+    "yuna_danger_high": {
+        name: "Yuna",
+        text: "(She strokes my neck with her cold fingers and gives a provocative smile.)",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "yuna_danger_high_2"
+    },
+    "yuna_danger_high_2": {
+        name: "Yuna",
+        text: "\"Look dangerous? Correct. But you're already caught in my trap. Until your special light burns out... you can't take a single step out of here. You must stay only by my side.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "after_school_start"
+    },
+    "yuna_danger_low": {
+        name: "Yuna",
+        text: "(She cold-heartedly releases my hand she was holding.)",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "yuna_danger_low_2"
+    },
+    "yuna_danger_low_2": {
+        name: "Yuna",
+        text: "\"Dangerous? Hehe, as if a coward like you could handle my danger. Just keep trembling in fear.\"",
+        character: "assets/images/characters/yuna_nomal.png",
+        next: "after_school_start"
+    },
+    "yuna_danger_normal": {
+        name: "Yuna",
+        text: "(She lightly brushes my cheek with her cold fingers. She stares intently into my eyes with a strange smile.)",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "yuna_danger_normal_2"
+    },
+    "yuna_danger_normal_2": {
+        name: "Yuna",
+        text: "\"I look dangerous... Hehe, correct. But I don't dislike people like you who approach even knowing it's dangerous. Until you lose that special light... I'll be by your side.\"",
+        character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
     },
     "yuna_danger": {
@@ -602,12 +758,16 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_day1_end_high": {
         name: "Me",
-        text: "(While talking with the teacher, it was already time for class. The teacher also seemed disappointed and told me to definitely visit again later. I should head back to the classroom now.)",
+        text: "(As I keep talking with the teacher, I lost track of time! It's already time for the next class. The teacher also seems disappointed and told me to definitely stay longer next time. I should head back to the classroom now.)",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"
     },
     "nurse_day1_end_low": {
         name: "Me",
+        text: "(The teacher's expression hardened. It seems my attitude was too much for our first meeting. She coldly asked me to leave as class was about to start. I should head back...)",
+        character: "assets/images/characters/nurse.png",
+        next: "after_school_start"
+    },
         text: "(The teacher's expression hardened. It seems my joke went too far. The teacher showed her displeasure and told me to get back to the classroom quickly.)",
         character: "assets/images/characters/nurse.png",
         next: "after_school_start"
