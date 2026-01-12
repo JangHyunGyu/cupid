@@ -216,9 +216,9 @@ Object.assign(SCENARIO[1], {
         text: "(As I talked with Seoyeon, the atmosphere became strange. She is staring at me intently and smiling softly. She told me she feels comfortable and good when she's with me, and asked why I think that is.)",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
-            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind_high", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable_high", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_high", affinityChar: "Seoyeon" },
+            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind_high" },
+            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable_high" }
         ]
     },
     "rooftop_choices_low": {
@@ -226,48 +226,41 @@ Object.assign(SCENARIO[1], {
         text: "(Seoyeon's expression is dark. It seems the conversation didn't go well. She sighed as if a bit confused, then asked why she feels comfortable and good with me despite the awkwardness.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
-            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind_low", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable_low", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_low", affinityChar: "Seoyeon" },
+            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind_low" },
+            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable_low" }
         ]
     },
     "rooftop_choices": {
         name: "Me",
         text: "(I finished the conversation with Seoyeon. She is looking at me with sparkling eyes, as if waiting for my answer. She told me she feels comfortable and good when she's with me, and asked why I think that is.)",
         choices: [
-            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny" },
+            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind" },
+            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable" }
         ]
     },
     "rooftop_destiny_high": {
         name: "Seoyeon",
         text: "(She blushes deeply and squeezes my hand. Our fingertips touch warmly.)",
         character: "assets/images/characters/seyoun_shy2.png",
+        stats: { Seoyeon: { affinity: 7 } },
         next: "rooftop_destiny_high_2"
     },
-    "rooftop_destiny_high_2": {
-        name: "Seoyeon",
-        text: "\"Destiny... I felt the same way. Ever since I first saw you, I thought we might share a special bond. {name}, will you... stay by my side from now on?\"",
-        character: "assets/images/characters/seyoun_shy2.png",
-        next: "seyoun_contact_exchange"
-    },
+    // ...
     "rooftop_destiny": {
         name: "Seoyeon",
         text: "(She shyly smiles and gently overlaps her hand on mine.)",
         character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 5 } },
         next: "rooftop_destiny_2"
     },
-    "rooftop_destiny_2": {
-        name: "Seoyeon",
-        text: "\"Destiny... Hehe, I really like that word. Let's make many more pleasant memories from now on. Is it a promise?\"",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "seyoun_contact_exchange"
-    },
+    // ...
     "rooftop_destiny_low": {
         name: "Seoyeon",
         text: "(She quickly pulls her hand away, looking flustered.)",
         character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: -5 } },
         next: "rooftop_destiny_low_2"
     },
     "rooftop_destiny_low_2": {
@@ -280,30 +273,23 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(Seoyeon bites her lip shyly and smiles.)",
         character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 5 } },
         next: "rooftop_kind_high_2"
     },
-    "rooftop_kind_high_2": {
-        name: "Seoyeon",
-        text: "\"I'm happy to hear you say that. But you know, I'm not this kind to everyone. Maybe it's because it's you, {name}, that I'm especially concerned... Hehe.\"",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "seyoun_contact_exchange"
-    },
+    // ...
     "rooftop_kind_low": {
         name: "Seoyeon",
         text: "(She looks slightly disappointed, her expression stiffening.)",
         character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: 1 } },
         next: "rooftop_kind_low_2"
     },
-    "rooftop_kind_low_2": {
-        name: "Seoyeon",
-        text: "\"...I see. I was just acting as the student council president. I'm sorry if I gave you the wrong impression.\"",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "seyoun_contact_exchange"
-    },
+    // ...
     "rooftop_kind": {
         name: "Seoyeon",
         text: "(She pouts her lips as if slightly sulky.)",
         character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "rooftop_kind_2"
     },
     "rooftop_kind_2": {
@@ -316,30 +302,23 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(She nods happily with a bright smile.)",
         character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 6 } },
         next: "rooftop_comfortable_high_2"
     },
-    "rooftop_comfortable_high_2": {
-        name: "Seoyeon",
-        text: "\"I'm so glad you feel that way! I also feel like all my stress disappears when I'm with you. Let's spend more time together like this, {name}.\"",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "seyoun_contact_exchange"
-    },
+    // ...
     "rooftop_comfortable_low": {
         name: "Seoyeon",
         text: "(She forces a smile, but her eyes look a bit lonely.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: 2 } },
         next: "rooftop_comfortable_low_2"
     },
-    "rooftop_comfortable_low_2": {
-        name: "Seoyeon",
-        text: "\"...Is that so. I'm glad if you feel at ease. I'll try to make sure you can continue to feel comfortable in school.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
-        next: "seyoun_contact_exchange"
-    },
+    // ...
     "rooftop_comfortable": {
         name: "Seoyeon",
         text: "(She nods as if satisfied.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: 4 } },
         next: "rooftop_comfortable_2"
     },
     "rooftop_comfortable_2": {
@@ -469,9 +448,9 @@ Object.assign(SCENARIO[1], {
         text: "(As I talked with Yuna, I felt like I was gradually falling into her mysterious atmosphere. She stared at me intently and smiled faintly, then asked if I wanted to know more about her.)",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "The school is different? What does that mean?", next: "yuna_secret_high", stats: { Yuna: { affinity: 4 } } },
-            { text: "Familiar... Have you seen me before?", next: "yuna_scent_high", stats: { Yuna: { affinity: 4 } } },
-            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger_high", stats: { Yuna: { affinity: 12 } } }
+            { text: "The school is different? What does that mean?", next: "yuna_secret_high" },
+            { text: "Familiar... Have you seen me before?", next: "yuna_scent_high" },
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger_high" }
         ]
     },
     "yuna_choices_low": {
@@ -479,24 +458,25 @@ Object.assign(SCENARIO[1], {
         text: "(Yuna's gaze became even colder. It seems my attitude offended her. She spat out words as if warning me in a cold voice.)",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
-            { text: "The school is different? What does that mean?", next: "yuna_secret_low", stats: { Yuna: { affinity: 4 } } },
-            { text: "Familiar... Have you seen me before?", next: "yuna_scent_low", stats: { Yuna: { affinity: 4 } } },
-            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger_low", stats: { Yuna: { affinity: 12 } } }
+            { text: "The school is different? What does that mean?", next: "yuna_secret_low" },
+            { text: "Familiar... Have you seen me before?", next: "yuna_scent_low" },
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger_low" }
         ]
     },
     "yuna_choices": {
         name: "Me",
         text: "(The conversation with Yuna has come to an end. Her purple eyes still maintain a gaze that seems to pierce through me.)",
         choices: [
-            { text: "The school is different? What does that mean?", next: "yuna_secret_normal", stats: { Yuna: { affinity: 4 } } },
-            { text: "Familiar... Have you seen me before?", next: "yuna_scent_normal", stats: { Yuna: { affinity: 4 } } },
-            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger_normal", stats: { Yuna: { affinity: 12 } } }
+            { text: "The school is different? What does that mean?", next: "yuna_secret_normal" },
+            { text: "Familiar... Have you seen me before?", next: "yuna_scent_normal" },
+            { text: "You look dangerous somehow. But I can't take my eyes off you.", next: "yuna_danger_normal" }
         ]
     },
     "yuna_secret_high": {
         name: "Yuna",
         text: "(She lightly tickles the back of my hand and gives a mysterious smile.)",
         character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 6 } },
         next: "yuna_secret_high_2"
     },
     "yuna_secret_high_2": {
@@ -509,6 +489,7 @@ Object.assign(SCENARIO[1], {
         name: "Yuna",
         text: "(She pushes me away with a mocking expression.)",
         character: "assets/images/characters/yuna_nomal.png",
+        stats: { Yuna: { affinity: 2 } },
         next: "yuna_secret_low_2"
     },
     "yuna_secret_low_2": {
@@ -740,20 +721,22 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
         choices: [
-            { text: "Alright, let's do this!", next: "lunch_dain_play", stats: { Dain: { affinity: 5 } } },
-            { text: "I'm not great at volleyball... can you teach me?", next: "lunch_dain_teach", stats: { Dain: { affinity: 15 } } }
+            { text: "Alright, let's do this!", next: "lunch_dain_play" },
+            { text: "I'm not great at volleyball... can you teach me?", next: "lunch_dain_teach" }
         ]
     },
     "lunch_dain_play": {
         name: "Dain",
         text: "\"Oh! That's the spirit! Here I come! (Dain sends a powerful serve. I barely manage to return it)\"",
         character: "assets/images/characters/dain_active.png",
+        stats: { Dain: { affinity: 5 } },
         next: "lunch_dain_end"
     },
     "lunch_dain_teach": {
         name: "Dain",
         text: "\"Hehe, don't worry! I, Dain, will teach you from the basics. Now, let's start with your posture!\"",
         character: "assets/images/characters/dain_laugh.png",
+        stats: { Dain: { affinity: 15 } },
         next: "lunch_dain_end"
     },
     "lunch_dain_end": {

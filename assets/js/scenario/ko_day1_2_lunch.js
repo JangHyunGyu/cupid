@@ -216,9 +216,9 @@ Object.assign(SCENARIO[1], {
         text: "(서연이와 대화를 나누다 보니 분위기가 묘해졌다. 그녀는 내 눈을 빤히 바라보며 살며시 미소 짓고 있다. 그녀가 나에게 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어왔다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
-            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_high", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_high", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_high", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_high", affinityChar: "Seoyeon" },
+            { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_high" },
+            { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_high" }
         ]
     },
     "rooftop_choices_low": {
@@ -226,78 +226,90 @@ Object.assign(SCENARIO[1], {
         text: "(서연이의 표정이 어둡다. 대화가 잘 풀리지 않은 모양이다. 그녀는 조금 혼란스러운 듯 한숨을 내쉬더니, 그래도 나랑 있으면 편하고 좋은데 왜 그런 것 같은지 물어왔다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_low", affinityChar: "Seoyeon", stats: { Seoyeon: { affinity: -5 } } },
-            { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_low", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_low", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_low", affinityChar: "Seoyeon" },
+            { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_low" },
+            { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_low" }
         ]
     },
     "rooftop_choices": {
         name: "나",
         text: "(서연이와 즐겁게 대화를 마쳤다. 그녀는 내 대답을 기다리는 듯 눈을 반짝이며 나를 바라보고 있다. 그녀가 나에게 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어왔다.)",
         choices: [
-            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_normal", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_normal", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_normal", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_normal" },
+            { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_normal" },
+            { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_normal" }
         ]
     },
     "rooftop_destiny_high": {
         name: "서연",
         text: "(그녀가 얼굴을 붉히며 내 손을 꼭 잡는다. 손끝이 따뜻하게 맞닿는다.)",
         character: "assets/images/characters/seyoun_shy2.png",
+        stats: { Seoyeon: { affinity: 7 } },
         next: "rooftop_destiny_high_2"
     },
-    "rooftop_destiny_high_2": {
-        name: "서연",
-        text: "\"운명... 나도 그렇게 느꼈어. 처음 봤을 때부터 왠지 특별한 인연일 것 같았거든. {name}, 앞으로도 계속... 내 곁에 있어줄래?\"",
-        character: "assets/images/characters/seyoun_shy2.png",
-        next: "seyoun_contact_exchange"
-    },
+    // ...
     "rooftop_destiny_normal": {
         name: "서연",
         text: "(그녀가 수줍게 웃으며 살며시 내 손 위에 자신의 손을 포갠다.)",
         character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 5 } },
         next: "rooftop_destiny_normal_2"
     },
-    "rooftop_destiny_normal_2": {
-        name: "서연",
-        text: "\"운명... 후훗, 참 듣기 좋다. 우리, 앞으로도 즐거운 추억 많이 만들자. 약속이야?\"",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "seyoun_contact_exchange"
-    },
-    "rooftop_destiny": {
-        name: "서연",
-        text: "(그녀가 수줍게 웃으며 살며시 내 손 위에 자신의 손을 포갠다.)",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "rooftop_destiny_2"
-    },
-    "rooftop_destiny_2": {
-        name: "서연",
-        text: "\"운명... 후훗, 참 듣기 좋다. 우리, 앞으로도 즐거운 추억 많이 만들자. 약속이야?\"",
-        character: "assets/images/characters/seyoun_shy.png",
-        next: "seyoun_contact_exchange"
-    },
+    // ...
     "rooftop_destiny_low": {
         name: "서연",
         text: "(그녀가 황급히 손을 빼며 당황한 표정을 짓는다.)",
         character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: -10 } },
         next: "rooftop_destiny_low_2"
-    },
-    "rooftop_destiny_low_2": {
-        name: "서연",
-        text: "\"운명이라니... 너무 성급한 거 아냐? 우리 아직 서로를 잘 모르잖아. 조금... 천천히 가자.\"",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "seyoun_contact_exchange"
     },
     "rooftop_kind_high": {
         name: "서연",
         text: "(그녀가 살짝 눈물을 글썽이며 고맙다고 말한다.)",
         character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 5 } },
         next: "rooftop_kind_high_2"
     },
-    "rooftop_kind_high_2": {
+    // ...
+    "rooftop_kind_low": {
         name: "서연",
-        text: "\"그렇게 말해주니 정말 기뻐. 실은 나, 너한테 잘 보이고 싶어서 오늘 아침부터 엄청 긴장했었거든. 그렇게 느껴줬다면 정말 다행이야.\"",
+        text: "(그녀가 조금 실망한 기색을 내비치며 고개를 끄덕인다.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: 1 } },
+        next: "rooftop_kind_low_2"
+    },
+    // ...
+    "rooftop_kind_normal": {
+        name: "서연",
+        text: "(그녀가 수줍게 웃으며 고개를 끄덕인다.)",
         character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
+        next: "rooftop_kind_normal_2"
+    },
+    // ...
+    "rooftop_comfortable_high": {
+        name: "서연",
+        text: "(서연이가 즐거운 듯 맑은 웃음소리를 낸다. 우리가 정말 잘 통한다는 사실에 기뻐하는 모양이다.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 6 } },
+        next: "rooftop_comfortable_high_2"
+    },
+    // ...
+    "rooftop_comfortable_low": {
+        name: "서연",
+        text: "(그녀가 조금 아쉬운 듯 쓴웃음을 짓는다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: 2 } },
+        next: "rooftop_comfortable_low_2"
+    },
+    // ...
+    "rooftop_comfortable_normal": {
+        name: "서연",
+        text: "(서연이가 부드럽게 미소 지으며 고개를 끄덕인다.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: 4 } },
+        next: "rooftop_comfortable_normal_2"
+    },
         next: "seyoun_contact_exchange"
     },
     "rooftop_kind_low": {
@@ -507,9 +519,9 @@ Object.assign(SCENARIO[1], {
         text: "(유나와 대화를 나누다 보니 그녀의 신비로운 분위기에 점점 빠져드는 기분이다. 그녀는 나를 빤히 바라보며 희미하게 미소 짓더니, 자신에 대해 더 알고 싶은지 물었다.)",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret_high", stats: { Yuna: { affinity: 4 } } },
-            { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent_high", stats: { Yuna: { affinity: 4 } } },
-            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger_high", stats: { Yuna: { affinity: 12 } } }
+            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret_high" },
+            { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent_high" },
+            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger_high" }
         ]
     },
     "yuna_choices_low": {
@@ -517,24 +529,25 @@ Object.assign(SCENARIO[1], {
         text: "(유나의 눈빛이 더욱 싸늘해졌다. 내 태도가 그녀의 심기를 건드린 모양이다. 그녀는 차가운 목소리로 경고하듯 말을 내뱉었다.)",
         character: "assets/images/characters/yuna_nomal.png",
         choices: [
-            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret_low", stats: { Yuna: { affinity: 4 } } },
-            { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent_low", stats: { Yuna: { affinity: 4 } } },
-            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger_low", stats: { Yuna: { affinity: 12 } } }
+            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret_low" },
+            { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent_low" },
+            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger_low" }
         ]
     },
     "yuna_choices": {
         name: "나",
         text: "(유나와의 대화가 일단락되었다. 그녀의 보랏빛 눈동자는 여전히 나를 꿰뚫어 보는 듯한 시선을 유지하고 있다.)",
         choices: [
-            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret_normal", stats: { Yuna: { affinity: 4 } } },
-            { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent_normal", stats: { Yuna: { affinity: 4 } } },
-            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger_normal", stats: { Yuna: { affinity: 12 } } }
+            { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret_normal" },
+            { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent_normal" },
+            { text: "넌 왠지 위험해 보여. 하지만 눈을 뗄 수가 없어.", next: "yuna_danger_normal" }
         ]
     },
     "yuna_secret_high": {
         name: "유나",
         text: "(그녀가 내 손등을 살짝 간질이며 신비스러운 미소를 짓는다.)",
         character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 6 } },
         next: "yuna_secret_high_2"
     },
     "yuna_secret_high_2": {
@@ -778,20 +791,22 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_nomal.png",
         setFlag: "metDain",
         choices: [
-            { text: "좋아, 어디 한번 해보자!", next: "lunch_dain_play", stats: { Dain: { affinity: 5 } } },
-            { text: "배구는 잘 못하는데... 가르쳐줄래?", next: "lunch_dain_teach", stats: { Dain: { affinity: 15 } } }
+            { text: "좋아, 어디 한번 해보자!", next: "lunch_dain_play" },
+            { text: "배구는 잘 못하는데... 가르쳐줄래?", next: "lunch_dain_teach" }
         ]
     },
     "lunch_dain_play": {
         name: "다인",
         text: "\"오! 그 기세야! 자, 간다! (다인이가 강력한 서브를 날린다. 나는 간신히 공을 받아냈다)\"",
         character: "assets/images/characters/dain_active.png",
+        stats: { Dain: { affinity: 5 } },
         next: "lunch_dain_end"
     },
     "lunch_dain_teach": {
         name: "다인",
         text: "\"에헤, 걱정 마! 이 다인 님이 기초부터 확실하게 가르쳐줄게. 자, 일단 자세부터 잡아볼까?\"",
         character: "assets/images/characters/dain_laugh.png",
+        stats: { Dain: { affinity: 15 } },
         next: "lunch_dain_end"
     },
     "lunch_dain_end": {

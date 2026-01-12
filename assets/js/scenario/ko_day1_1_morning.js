@@ -171,7 +171,6 @@ Object.assign(SCENARIO[1], {
         choices: [
             { 
                 text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", 
-                stats: { Seoyeon: { affinity: 3 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_club_high" },
@@ -181,7 +180,6 @@ Object.assign(SCENARIO[1], {
             },
             { 
                 text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", 
-                stats: { Seoyeon: { affinity: 5 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_flatter_high" },
@@ -191,7 +189,6 @@ Object.assign(SCENARIO[1], {
             },
             { 
                 text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", 
-                stats: { Seoyeon: { affinity: -25 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_trap_high" },
@@ -201,7 +198,6 @@ Object.assign(SCENARIO[1], {
             },
             { 
                 text: "(조용히 그녀의 설명을 경청하며 걷는다.)", 
-                stats: { Seoyeon: { affinity: 2 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
@@ -218,7 +214,6 @@ Object.assign(SCENARIO[1], {
         choices: [
             { 
                 text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", 
-                stats: { Seoyeon: { affinity: 3 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_club_high" },
@@ -228,7 +223,6 @@ Object.assign(SCENARIO[1], {
             },
             { 
                 text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", 
-                stats: { Seoyeon: { affinity: 5 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_flatter_high" },
@@ -238,7 +232,6 @@ Object.assign(SCENARIO[1], {
             },
             { 
                 text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", 
-                stats: { Seoyeon: { affinity: -25 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_trap_high" },
@@ -248,7 +241,6 @@ Object.assign(SCENARIO[1], {
             },
             { 
                 text: "(조용히 그녀의 설명을 경청하며 걷는다.)", 
-                stats: { Seoyeon: { affinity: 2 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
@@ -265,7 +257,6 @@ Object.assign(SCENARIO[1], {
         choices: [
             { 
                 text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", 
-                stats: { Seoyeon: { affinity: 3 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_club_high" },
@@ -275,7 +266,6 @@ Object.assign(SCENARIO[1], {
             },
             { 
                 text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", 
-                stats: { Seoyeon: { affinity: 5 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_flatter_high" },
@@ -285,7 +275,6 @@ Object.assign(SCENARIO[1], {
             },
             { 
                 text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", 
-                stats: { Seoyeon: { affinity: -25 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_trap_high" },
@@ -295,7 +284,6 @@ Object.assign(SCENARIO[1], {
             },
             { 
                 text: "(조용히 그녀의 설명을 경청하며 걷는다.)", 
-                stats: { Seoyeon: { affinity: 2 } },
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
@@ -309,6 +297,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(서연이가 당황한 듯 멈춰 서서 나를 빤히 바라본다. 그녀의 얼굴이 살짝 붉어지지만, 곧 장난기 섞인 미소를 짓는다.)",
         character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 7 } },
         next: "hallway_talk_trap_high_2"
     },
     "hallway_talk_trap_high_2": {
@@ -321,6 +310,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(서연이가 불쾌한 기색을 숨기지 않으며 걸음을 멈춘다. 그녀의 눈빛이 싸늘하게 식어있다.)",
         character: "assets/images/characters/seyoun_angry.png",
+        stats: { Seoyeon: { affinity: -25 } },
         next: "hallway_talk_trap_low_2"
     },
     "hallway_talk_trap_low_2": {
@@ -333,6 +323,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(서연이가 당황한 듯 멈춰 서서 나를 빤히 바라본다. 그녀의 눈빛이 조금 차가워진다.)",
         character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_talk_trap_normal_2"
     },
     "hallway_talk_trap_normal_2": {
@@ -345,6 +336,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 눈을 반짝이며 즐거운 듯 나를 바라본다. 우리가 비슷한 관심사를 가졌을지도 모른다는 기대감이 엿보인다.)",
         character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 5 } },
         next: "hallway_talk_club_high_2"
     },
     "hallway_talk_club_high_2": {
@@ -357,6 +349,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 사무적인 태도로 고개를 끄덕인다. 표정에는 아무런 감정도 실려있지 않다.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: -2 } },
         next: "hallway_talk_club_low_2"
     },
     "hallway_talk_club_low_2": {
@@ -369,6 +362,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 반가운 듯 나를 바라본다.)",
         character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "hallway_talk_club_normal_2"
     },
     "hallway_talk_club_normal_2": {
@@ -381,6 +375,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(서연이가 정말 기쁜 듯 뺨을 붉히며 배시시 웃는다. 그녀의 눈에 나를 향한 호감이 가득 담겨있다.)",
         character: "assets/images/characters/seyoun_shy2.png",
+        stats: { Seoyeon: { affinity: 8 } },
         next: "hallway_talk_flatter_high_2"
     },
     "hallway_talk_flatter_high_2": {
@@ -393,6 +388,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 싸늘한 표정으로 나를 슬쩍 훑어본다. 입가는 비웃는 듯 살짝 뒤틀려있다.)",
         character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_talk_flatter_low_2"
     },
     "hallway_talk_flatter_low_2": {
@@ -405,6 +401,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 쑥스러운 듯 뺨을 붉히며 대답한다.)",
         character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 5 } },
         next: "hallway_talk_flatter_normal_2"
     },
     "hallway_talk_flatter_normal_2": {
@@ -417,6 +414,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 신이 나서 눈을 반짝이며 설명을 이어간다. 내 반응 하나하나에 즐거워하는 모습이다.)",
         character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "hallway_talk_listen_high_2"
     },
     "hallway_talk_listen_high_2": {
@@ -429,6 +427,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 기계적으로 설명을 이어간다. 나를 쳐다보지도 않고 허공을 향해 말을 내뱉는 듯한 느낌이다.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_talk_listen_low_2"
     },
     "hallway_talk_listen_low_2": {
@@ -441,6 +440,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 신이 나서 설명을 이어간다.)",
         character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 2 } },
         next: "hallway_talk_listen_normal_2"
     },
     "hallway_talk_listen_normal_2": {
