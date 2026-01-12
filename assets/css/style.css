@@ -58,6 +58,8 @@ body, html {
 .char-slot {
     position: absolute;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     max-width: 800px;
     height: 100%;
@@ -78,16 +80,17 @@ body, html {
 }
 
 #char-left {
-    transform: translateX(-35%); /* 왼쪽으로 치우치게 */
+    transform: translateX(-85%); /* -50% - 35% */
     z-index: 1;
 }
 
 #char-center {
+    transform: translateX(-50%);
     z-index: 2;
 }
 
 #char-right {
-    transform: translateX(35%); /* 오른쪽으로 치우치게 */
+    transform: translateX(-15%); /* -50% + 35% */
     z-index: 1;
 }
 

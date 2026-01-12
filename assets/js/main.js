@@ -1,5 +1,5 @@
 const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
-const ASSET_VERSION = "1.0.12"; // 에셋 캐시 방지를 위한 버전 번호
+const ASSET_VERSION = "1.0.13"; // 에셋 캐시 방지를 위한 버전 번호
 
 // 에셋 URL에 버전을 추가하는 헬퍼 함수
 function getAssetUrl(url) {
@@ -471,15 +471,22 @@ async function renderScene(sceneId) {
         // 여러 캐릭터 설정 (예: { left: "...", right: "..." })
         const charPromises = Object.entries(scene.characters).map(([pos, src]) => {
             return new Promise((resolve) => {
-                if (charSlots[pos] && src) {
+                const targetPos = pos.toLowerCase();
+                if (charSlots[targetPos] && src) {
                     const img = document.createElement('img');
                     const charUrl = getAssetUrl(src);
-                    img.onload = () => resolve({ pos, img });
-                    img.onerror = () => resolve(null);
+                    img.onload = () => resolve({ pos: targetPos, img });
+                    img.onerror = () => {
+                        console.error("캐릭터 이미지 로드 실패:", charUrl);
+                        resolve(null);
+                    };
                     img.src = charUrl;
                     if (scene.silhouette) img.classList.add('silhouette');
                     if (scene.thinking) img.classList.add('thinking');
                 } else {
+                    if (!charSlots[targetPos] && src) {
+                        console.warn(`알 수 없는 캐릭터 위치: ${pos}. 'left', 'center', 'right' 중 하나를 사용하세요.`);
+                    }
                     resolve(null);
                 }
             });
@@ -502,7 +509,10 @@ async function renderScene(sceneId) {
                 }
                 resolve();
             };
-            img.onerror = resolve;
+            img.onerror = () => {
+                console.error("캐릭터 이미지 로드 실패:", charUrl);
+                resolve();
+            };
             img.src = charUrl;
             if (scene.silhouette) img.classList.add('silhouette');
             if (scene.thinking) img.classList.add('thinking');
