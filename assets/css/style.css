@@ -68,10 +68,11 @@ body, html {
 }
 
 .char-slot img {
-    height: 96%; /* 상단에 약 4% 정도의 여백만 남기고 꽉 채움 */
+    height: 105%; /* 이미지를 슬롯보다 약간 더 크게 설정하여 하단 여백 제거 시도 */
     width: auto;
-    max-width: none; /* 너비 때문에 높이가 줄어드는 것 방지 */
+    max-width: none;
     object-fit: contain;
+    margin-bottom: -5%; /* 이미지 하단의 투명 공백이 있다면 상쇄 */
     /* 모바일에서 이미지가 쪼개지는 현상 방지 */
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;

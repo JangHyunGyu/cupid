@@ -475,8 +475,6 @@ async function renderScene(sceneId) {
                     img.onload = () => resolve({ pos, img });
                     img.onerror = () => resolve(null);
                     img.src = charUrl;
-                    img.style.maxWidth = '100%'; // 슬롯을 벗어나지 않도록
-                    img.style.objectFit = 'contain';
                     if (scene.silhouette) img.classList.add('silhouette');
                     if (scene.thinking) img.classList.add('thinking');
                 } else {
@@ -498,8 +496,6 @@ async function renderScene(sceneId) {
             const charUrl = getAssetUrl(scene.character);
             img.onload = () => {
                 if (charSlots.center) {
-                    img.style.maxWidth = '100%';
-                    img.style.objectFit = 'contain';
                     charSlots.center.appendChild(img);
                 }
                 resolve();
