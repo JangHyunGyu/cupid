@@ -570,7 +570,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Dain",
         text: "\"Whoa, {name}! You're even cooler up close! Got any questions for me? Sports, school, anything!\"",
-        context: "Talking to Dain in the gym at sunset after her practice. After the conversation, Dain will suggest finishing her last practice set and going to grab something delicious to eat together. At the end of the conversation, please naturally lead into the next situation by mentioning that you need to finish practice or that you're hungry.",
+        context: "Talking to Dain in the gym at sunset after her practice. Keep the conversation going actively until it's finished. After all conversations are over, Dain will suggest finishing her last practice set and going to grab something delicious to eat together. ONLY at the final turn of the conversation, naturally lead into the next situation by mentioning that you need to finish practice or that you're hungry.",
         personality: "The easygoing ace of the volleyball club. Loves sports, friendly, and high-energy.",
         character: "assets/images/characters/dain_nomal.png",
         affinityChar: "Dain",

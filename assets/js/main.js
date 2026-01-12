@@ -1083,8 +1083,9 @@ ${charStyleGuideline}
 
 Instructions:
 1. Brevity: Keep your responses short and concise. Avoid long paragraphs or overly detailed explanations. Speak like a real person in a conversation, not an AI assistant.
+2. Character Integrity:
 ${charGeneralInstruction}
-3. The conversation is limited to ${currentMaxTurns} turns. Naturally wrap up the conversation as it nears the limit.
+3. Turn Management: The conversation is limited to ${currentMaxTurns} turns. Actively continue the conversation and explore various topics as long as turns remain. ONLY when the final 1-2 turns approach, naturally wrap up and transition to the next situation as described in the context.
 4. Addressing the User:
    - ${knowsName ? `The user's name is '${gameState.playerName}'. You MUST call them by their name.` : "You don't know the user's name yet. Call them 'Transfer Student'."}
 5. Interaction Level Guidelines for ${scene.name}:
@@ -1124,8 +1125,9 @@ ${charStyleGuideline}
 
 지침: 
 1. 단답형 대화: 모든 답변은 최대한 짧고 간결하게 하세요. 긴 설명이나 장황한 문장은 피하고, 실제 대화처럼 핵심만 말하세요. AI 어시스턴트처럼 정중하고 긴 답변은 절대 금지입니다.
+2. 캐릭터 몰입:
 ${charGeneralInstruction}
-3. 대화는 최대 ${currentMaxTurns}턴까지만 가능하며, 자연스럽게 대화를 마무리하는 느낌으로 답변하세요.
+3. 턴 관리: 대화는 최대 ${currentMaxTurns}턴까지만 가능합니다. 턴이 남아있을 때는 절대 대화를 마무리하지 말고 다양한 주제로 대화를 적극적으로 이어나가세요. 마지막 1~2턴이 남았을 때만 자연스럽게 대화를 갈무리하고 상황 설명(Context)에서 요청한 다음 단계로 유도하세요.
 4. 사용자 호칭 지침:
    - ${knowsName ? `사용자의 이름은 '${gameState.playerName}'입니다. 반드시 '${gameState.playerName}' 또는 '${gameState.playerName} 군' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '전학생 군'이라고 부르세요."}
 5. '${scene.name}' 캐릭터 전용 반응 수위 지침:
@@ -1435,6 +1437,19 @@ async function sendChatMessage() {
     chatInput.value = "";
     freeTalkTurns++;
     turnCountEl.textContent = currentMaxTurns - freeTalkTurns;
+
+    // 시스템 프롬프트의 턴 수 정보를 현재 진행 상황에 맞춰 업데이트
+    if (freeTalkHistory.length > 0 && freeTalkHistory[0].role === "system") {
+        const isEn = document.documentElement.lang === 'en';
+        const remaining = currentMaxTurns - freeTalkTurns;
+        const progressTag = isEn ? 
+            `\n[CURRENT_PROGRESS]: ${freeTalkTurns}/${currentMaxTurns} turns used. ${remaining} turns remaining. ${remaining > 1 ? "Continue the conversation actively." : "This is the FINAL turn. Wrap up now."}` :
+            `\n[현재 진행 상황]: 총 ${currentMaxTurns}턴 중 ${freeTalkTurns}턴 진행됨. ${remaining}턴 남음. ${remaining > 1 ? "대화를 적극적으로 이어가세요." : "지금이 마지막 턴입니다. 대화를 갈무리하세요."}`;
+        
+        // 이전 진행 상황 태그가 있으면 제거하고 새 태그 추가 (중복 방지)
+        const baseContent = freeTalkHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0];
+        freeTalkHistory[0].content = baseContent + progressTag;
+    }
 
     // 사용자 메시지 표시
     updateNameTag("나");
