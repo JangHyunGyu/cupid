@@ -247,7 +247,12 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 7 } },
         next: "rooftop_destiny_high_2"
     },
-    // ...
+    "rooftop_destiny_high_2": {
+        name: "서연",
+        text: "\"나도 그렇게 생각해... {name}(이)랑 이렇게 있는 거, 정말 꿈만 같아. 우리 앞으로도 계속 이렇게... 운명처럼 함께 할 수 있을까?\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_destiny_normal": {
         name: "서연",
         text: "(그녀가 수줍게 웃으며 살며시 내 손 위에 자신의 손을 포갠다.)",
@@ -255,13 +260,24 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 5 } },
         next: "rooftop_destiny_normal_2"
     },
-    // ...
+    "rooftop_destiny_normal_2": {
+        name: "서연",
+        text: "\"운명이라니... 후훗, 조금 간지러운 말이지만 나쁘지 않네. 나도 너랑 있으면 그런 기분이 들 때가 있거든.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "seyoun_contact_exchange"
+    },
     "rooftop_destiny_low": {
         name: "서연",
         text: "(그녀가 황급히 손을 빼며 당황한 표정을 짓는다.)",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -10 } },
         next: "rooftop_destiny_low_2"
+    },
+    "rooftop_destiny_low_2": {
+        name: "서연",
+        text: "\"운명? 전학 첫날부터 그런 말을... {name}, 장난이 좀 심한 것 같아. 아직 우리 그럴 사이는 아니잖아.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "seyoun_contact_exchange"
     },
     "rooftop_kind_high": {
         name: "서연",
@@ -270,52 +286,17 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 5 } },
         next: "rooftop_kind_high_2"
     },
-    // ...
-    "rooftop_kind_low": {
+    "rooftop_kind_high_2": {
         name: "서연",
-        text: "(그녀가 조금 실망한 기색을 내비치며 고개를 끄덕인다.)",
-        character: "assets/images/characters/seyoun_pout.png",
-        stats: { Seoyeon: { affinity: 1 } },
-        next: "rooftop_kind_low_2"
-    },
-    // ...
-    "rooftop_kind_normal": {
-        name: "서연",
-        text: "(그녀가 수줍게 웃으며 고개를 끄덕인다.)",
+        text: "\"친절하게 대해줘서 고맙다니... 오히려 내가 고마워. 네가 내 호의를 기쁘게 받아줘서, 나도 정말 큰 힘이 됐거든.\"",
         character: "assets/images/characters/seyoun_shy.png",
-        stats: { Seoyeon: { affinity: 3 } },
-        next: "rooftop_kind_normal_2"
-    },
-    // ...
-    "rooftop_comfortable_high": {
-        name: "서연",
-        text: "(서연이가 즐거운 듯 맑은 웃음소리를 낸다. 우리가 정말 잘 통한다는 사실에 기뻐하는 모양이다.)",
-        character: "assets/images/characters/seyoun_laugh.png",
-        stats: { Seoyeon: { affinity: 6 } },
-        next: "rooftop_comfortable_high_2"
-    },
-    // ...
-    "rooftop_comfortable_low": {
-        name: "서연",
-        text: "(그녀가 조금 아쉬운 듯 쓴웃음을 짓는다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        stats: { Seoyeon: { affinity: 2 } },
-        next: "rooftop_comfortable_low_2"
-    },
-    // ...
-    "rooftop_comfortable_normal": {
-        name: "서연",
-        text: "(서연이가 부드럽게 미소 지으며 고개를 끄덕인다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        stats: { Seoyeon: { affinity: 4 } },
-        next: "rooftop_comfortable_normal_2"
-    },
         next: "seyoun_contact_exchange"
     },
     "rooftop_kind_low": {
         name: "서연",
         text: "(그녀가 한숨을 내쉬며 차갑게 대꾸한다.)",
         character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: 1 } },
         next: "rooftop_kind_low_2"
     },
     "rooftop_kind_low_2": {
@@ -326,32 +307,22 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_kind_normal": {
         name: "서연",
-        text: "(그녀가 살짝 토라진 듯 입술을 내민다.)",
-        character: "assets/images/characters/seyoun_pout.png",
+        text: "(그녀가 수줍게 웃으며 고개를 끄덕인다.)",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "rooftop_kind_normal_2"
     },
     "rooftop_kind_normal_2": {
         name: "서연",
-        text: "\"흥.. 너무 정석적인 답변이잖아. 그래도 틀린 말은 아니니까 봐줄게. 앞으로는 좀 더 솔직한 대답 기대할게?\"",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "seyoun_contact_exchange"
-    },
-    "rooftop_kind": {
-        name: "서연",
-        text: "(그녀가 살짝 토라진 듯 입술을 내민다.)",
-        character: "assets/images/characters/seyoun_pout.png",
-        next: "rooftop_kind_2"
-    },
-    "rooftop_kind_2": {
-        name: "서연",
-        text: "\"흥.. 너무 정석적인 답변이잖아. 그래도 틀린 말은 아니니까 봐줄게. 앞으로는 좀 더 솔직한 대답 기대할게?\"",
-        character: "assets/images/characters/seyoun_pout.png",
+        text: "\"후훗, 모범생 같은 대답이네. 하지만 정답이야! 내가 널 편안하게 해 줄 수 있어서 다행이다.\"",
+        character: "assets/images/characters/seyoun_shy.png",
         next: "seyoun_contact_exchange"
     },
     "rooftop_comfortable_high": {
         name: "서연",
         text: "(그녀가 기쁜 듯 내 어깨에 살짝 머리를 기댄다.)",
         character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 6 } },
         next: "rooftop_comfortable_high_2"
     },
     "rooftop_comfortable_high_2": {
@@ -364,6 +335,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 씁쓸하게 웃으며 고개를 돌린다.)",
         character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: 2 } },
         next: "rooftop_comfortable_low_2"
     },
     "rooftop_comfortable_low_2": {
@@ -376,6 +348,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 만족스러운 듯 고개를 끄덕인다.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: 4 } },
         next: "rooftop_comfortable_normal_2"
     },
     "rooftop_comfortable_normal_2": {
