@@ -113,8 +113,22 @@ Object.assign(SCENARIO[1], {
         next: "night_home_check_contact"
     },
     "night_message_seyoun_reply_generic": {
+        night: true,
+        affinityBranches: [
+            { character: "Seoyeon", threshold: 15, next: "night_message_seyoun_reply_high" },
+            { next: "night_message_seyoun_reply_standard" }
+        ]
+    },
+    "night_message_seyoun_reply_standard": {
         name: "Seoyeon",
         text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name}. See you at school tomorrow. Good night.'",
+        night: true,
+        stats: { Seoyeon: { affinity: 3 } },
+        next: "night_home_check_contact"
+    },
+    "night_message_seyoun_reply_high": {
+        name: "Seoyeon",
+        text: "(Vibrate~ A reply with a heart emoticon.) 'I'll never forget the time I spent with you today. I hope to see you in my dreams... Good night, {name}.'",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
         next: "night_home_check_contact"
@@ -127,10 +141,24 @@ Object.assign(SCENARIO[1], {
         next: "night_message_yuna_reply"
     },
     "night_message_yuna_reply": {
+        night: true,
+        affinityBranches: [
+            { character: "Yuna", threshold: 10, next: "night_message_yuna_reply_high" },
+            { next: "night_message_yuna_reply_standard" }
+        ]
+    },
+    "night_message_yuna_reply_standard": {
         name: "Yuna",
         text: "(A reply arrives after a short wait.) '...Yeah. You too. See you at school tomorrow, {name}.'",
         night: true,
         stats: { Yuna: { affinity: 3 } },
+        next: "night_home_check_contact"
+    },
+    "night_message_yuna_reply_high": {
+        name: "Yuna",
+        text: "(A reply arrives after a short wait.) 'Today... yeah, thank you. I think I was able to smile a bit thanks to you. Good night.'",
+        night: true,
+        stats: { Yuna: { affinity: 5 } },
         next: "night_home_check_contact"
     },
     "night_message_dain": {
@@ -164,10 +192,24 @@ Object.assign(SCENARIO[1], {
         next: "night_home_check_contact"
     },
     "night_message_dain_reply_generic": {
+        night: true,
+        affinityBranches: [
+            { character: "Dain", threshold: 15, next: "night_message_dain_reply_high" },
+            { next: "night_message_dain_reply_standard" }
+        ]
+    },
+    "night_message_dain_reply_standard": {
         name: "Dain",
         text: "(A lively reply.) 'Yeah! You too! See you at school tomorrow, {name}! Good night!'",
         night: true,
         stats: { Dain: { affinity: 3 } },
+        next: "night_home_check_contact"
+    },
+    "night_message_dain_reply_high": {
+        name: "Dain",
+        text: "(A lively reply.) 'Are you already falling for my performance? Hehe, I'll make you fall for me even more tomorrow! Don't be surprised if I show up in your dreams~ Good night!'",
+        night: true,
+        stats: { Dain: { affinity: 5 } },
         next: "night_home_check_contact"
     },
     "night_message_nurse": {
@@ -178,10 +220,24 @@ Object.assign(SCENARIO[1], {
         next: "night_message_nurse_reply"
     },
     "night_message_nurse_reply": {
+        night: true,
+        affinityBranches: [
+            { character: "Nurse", threshold: 10, next: "night_message_nurse_reply_high" },
+            { next: "night_message_nurse_reply_standard" }
+        ]
+    },
+    "night_message_nurse_reply_standard": {
         name: "Nurse",
         text: "(An alluring reply.) 'Oh, you actually messaged me? Our transfer student is so polite. Have sweet dreams, {name}.'",
         night: true,
         stats: { Nurse: { affinity: 3 } },
+        next: "night_home_check_contact"
+    },
+    "night_message_nurse_reply_high": {
+        name: "Nurse",
+        text: "(An alluring reply.) 'Oh my... a message like this at night, are you trying to keep me awake? Just kidding. I really like your kind side. Good night.'",
+        night: true,
+        stats: { Nurse: { affinity: 5 } },
         next: "night_home_check_contact"
     },
     "day1_end": {
