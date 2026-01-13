@@ -675,18 +675,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_sad.png",
         next: "after_home"
     },
-    "after_dain_tired": {
-        name: "Dain",
-        text: "(She looks a bit disappointed, but quickly nods with a smile.)",
-        character: "assets/images/characters/dain_sad.png",
-        next: "after_dain_tired_2"
-    },
-    "after_dain_tired_2": {
-        name: "Dain",
-        text: "\"Oh... right. First day must be exhausting. Sorry, I got carried away. Let's call it a day. See you tomorrow!\"",
-        character: "assets/images/characters/dain_sad.png",
-        next: "after_home"
-    },
+
+
     "after_dain_help_high": {
         name: "Dain",
         text: "(Her face turns red as she looks at me with twinkling eyes.)",
@@ -723,18 +713,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_nomal.png",
         next: "after_dain_normal"
     },
-    "after_dain_help": {
-        name: "Dain",
-        text: "(Her eyes light up as she tosses me the ball.)",
-        character: "assets/images/characters/dain_laugh.png",
-        next: "after_dain_help_2"
-    },
-    "after_dain_help_2": {
-        name: "Dain",
-        text: "\"Oh! You're in? Awesome! Toss it high to the net! Here I come!\"",
-        character: "assets/images/characters/dain_active.png",
-        next: "after_dain_normal"
-    },
+
+
     "after_dain_cheer_high": {
         name: "Dain",
         text: "(She makes a big heart with her arms, grinning broadly.)",
@@ -771,22 +751,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_nomal.png",
         next: "after_dain_normal"
     },
-    "after_dain_cheer": {
-        name: "Dain",
-        text: "(She looks a bit flustered, rubbing her nose with a shy grin.)",
-        background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
-        sunset: true,
-        next: "after_dain_cheer_2"
-    },
-    "after_dain_cheer_2": {
-        name: "Dain",
-        text: "\"Wh-what's with the sudden praise? You're making me blush! It's not like I'm trying harder just because you're watching! ...But maybe I am, just a little.\"",
-        background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_shy.png",
-        sunset: true,
-        next: "after_dain_end"
-    },
+
+
     "after_dain_normal": {
         name: "Dain",
         text: "(Dain playfully taps my shoulder.)",

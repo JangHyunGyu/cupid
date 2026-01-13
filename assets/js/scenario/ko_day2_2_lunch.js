@@ -260,18 +260,8 @@ Object.assign(SCENARIO[2], {
         setFlag: "knowsName_Yuna",
         next: "day2_yuna_secret_normal"
     },
-    "day2_yuna_new_name_ask": {
-        name: "유나",
-        text: "\"...그러고 보니, 네 이름은 뭐야? 쪽지엔 내 이름만 적어두고 네 이름은 차마 못 적었거든.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_new_name_share"
-    },
-    "day2_yuna_new_name_share": {
-        name: "나",
-        text: "\"내 이름은 {name}(이)야.\"",
-        setFlag: "knowsName_Yuna",
-        next: "day2_yuna_secret"
-    },
+
+
     "day2_yuna_secret_high": {
         name: "유나",
         text: "(유나가 조심스럽게 내 손을 깍지 껴 잡는다. 온기가 전해지는 그녀의 손에서 진심이 느껴진다.)",
@@ -321,26 +311,8 @@ Object.assign(SCENARIO[2], {
             { text: "유나야, 넌 왜 이런 걸 조사하는 거야?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
         ]
     },
-    "day2_yuna_secret": {
-        name: "유나",
-        text: "(유나가 내 손을 잡고 낡은 창고 쪽으로 이끈다. 손끝에서 전해지는 차가운 감촉에 몸이 떨렸다.)",
-        character: "assets/images/characters/yuna_smile.png",
-        setFlag: "visitedWarehouseAtLunch",
-        branches: [
-            { next: "day2_yuna_secret_2", condition: "visitedWarehouseAtLunch" },
-            { next: "day2_yuna_secret_2" }
-        ]
-    },
-    "day2_yuna_secret_2": {
-        name: "유나",
-        text: "\"이 안에는... 학교가 오랫동안 숨겨온 기록들이 있어. 네가 이걸 보면... 모든 게 달라질 거야.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        choices: [
-            { text: "그 기록, 나도 같이 봐도 될까?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
-            { text: "위험한 거 아냐? 그냥 내버려 두는 게 좋겠어.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -20 } } },
-            { text: "유나야, 넌 왜 이런 걸 조사하는 거야?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
-        ]
-    },
+
+
     "day2_yuna_secret_read": {
         type: "free_talk",
         affinityChar: "Yuna",
@@ -428,15 +400,7 @@ Object.assign(SCENARIO[2], {
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
-    "day2_yuna_normal": {
-        type: "free_talk",
-        affinityChar: "Yuna",
-        affinityBranches: [
-            { minAffinity: 25, next: "day2_yuna_normal_high" },
-            { minAffinity: 0, next: "day2_yuna_normal_normal" },
-            { minAffinity: -999, next: "day2_yuna_normal_low" }
-        ]
-    },
+
     "day2_yuna_lunch_end": {
         name: "나",
         text: "(유나와 헤어져 교실로 돌아왔다. 그녀가 했던 기묘한 말들이 머릿속을 맴돌아 오후 수업에 집중하기가 힘들었다.)",
@@ -554,13 +518,7 @@ Object.assign(SCENARIO[2], {
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
-    "day2_dain_store_buy": {
-        name: "다인",
-        text: "\"에이~ 내가 쏜다니까! 전학생이 무슨 돈이 있다고 그래? 오늘은 내가 대접할 테니까 그냥 맛있게 먹기나 해!\"",
-        character: "assets/images/characters/dain_laugh.png",
-        setFlag: "day2_met_dain_lunch",
-        next: "day2_dain_lunch_end"
-    },
+
     "day2_dain_store_rooftop_high": {
         name: "다인",
         text: "\"오! 옥상 데이트?! 좋아 좋아! 단둘이 오붓하게 먹으면 더 꿀맛이겠는걸? 자, 얼른 사서 올라가자!\"",
@@ -582,13 +540,7 @@ Object.assign(SCENARIO[2], {
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
-    "day2_dain_store_rooftop": {
-        name: "다인",
-        text: "\"옥상? 오, 그것도 좋지! 시원한 바람 맞으면서 먹으면 더 맛있겠다. 좋아, 얼른 빵만 사서 올라가자!\"",
-        character: "assets/images/characters/dain_nomal.png",
-        setFlag: "day2_met_dain_lunch",
-        next: "day2_dain_lunch_end"
-    },
+
     "day2_dain_store_race_high": {
         name: "다인",
         text: "\"오호! 승부욕 발동인가? 좋아! {name}, 나도 안 봐준다? 지는 사람이 오늘 점심 다 내기! 하나, 둘, 셋!\"",
@@ -610,13 +562,7 @@ Object.assign(SCENARIO[2], {
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
-    "day2_dain_store_race": {
-        name: "다인",
-        text: "\"오호! 역시 내 파트너답다! 좋아, 누가 먼저 낚나 내기하자! 지는 사람이 음료수 쏘기!\"",
-        character: "assets/images/characters/dain_nomal.png",
-        setFlag: "day2_met_dain_lunch",
-        next: "day2_dain_lunch_end"
-    },
+
     "day2_dain_lunch_end": {
         name: "나",
         text: "(다인이와 시끌벅적하게 점심을 먹고 교실로 돌아왔다. 그녀의 밝은 에너지 덕분에 오후 수업도 힘낼 수 있을 것 같다.)",

@@ -554,18 +554,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
     },
-    "yuna_secret": {
-        name: "유나",
-        text: "(그녀가 입가에 묘한 미소를 띠며 책을 덮는다. 그녀의 입술이 내 귓가에 가까이 다가와 속삭인다.)",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "yuna_secret_2"
-    },
-    "yuna_secret_2": {
-        name: "유나",
-        text: "\"후훗, 궁금하니? 하지만 비밀은 모르는 게 약일 수도 있어. 학교가 숨기려 하는 이야기들은... 알면 다칠 수도 있거든.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "after_school_start"
-    },
+
+
     "yuna_scent_high": {
         name: "유나",
         text: "(그녀가 내 얼굴 가까이 다가와 깊게 숨을 들이마신다.)",
@@ -602,18 +592,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_school_start"
     },
-    "yuna_scent": {
-        name: "유나",
-        text: "(그녀가 한 걸음 다가와 나를 빤히 바라본다. 그녀가 쓸쓸한 표정으로 중얼거린다.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "yuna_scent_2"
-    },
-    "yuna_scent_2": {
-        name: "유나",
-        text: "\"아니, 처음 봐. 하지만 그 눈동자 속에 담긴 '빛'... 참 탐나네. 이 학교의 무기력한 아이들과는 조금 달라 보여. 네가 앞으로 어떻게 변해갈지, 내가 계속 지켜봐도 될까?\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_school_start"
-    },
+
+
     "yuna_danger_high": {
         name: "유나",
         text: "(그녀가 매혹적으로 웃으며 내 턱끝을 살짝 들어올린다.)",
@@ -650,18 +630,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
     },
-    "yuna_danger": {
-        name: "유나",
-        text: "(그녀가 차가운 손가락으로 내 뺨을 살짝 스친다. 그녀가 내 눈을 빤히 바라본다. 묘한 미소를 짓는다.)",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "yuna_danger_2"
-    },
-    "yuna_danger_2": {
-        name: "유나",
-        text: "\"위험해 보인다니... 후훗, 정답이야. 하지만 위험한 걸 알면서도 다가오는 너 같은 사람, 나쁘지 않아. 네가 그 특별한 빛을 잃을 때까지... 곁에 있어줄게.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "after_school_start"
-    },
+
+
     "lunch_store": {
         name: "나",
         text: "(매점에서 마지막 '초코 소라빵'을 쟁취했다! 승리자의 기분으로 빵을 크게 한입 베어 물자, 달콤함이 입안 가득 퍼진다.)",

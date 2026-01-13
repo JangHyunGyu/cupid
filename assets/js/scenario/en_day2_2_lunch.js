@@ -369,15 +369,7 @@ Object.assign(SCENARIO[2], {
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
-    "day2_yuna_normal": {
-        type: "free_talk",
-        affinityChar: "Yuna",
-        affinityBranches: [
-            { minAffinity: 25, next: "day2_yuna_normal_high" },
-            { minAffinity: 0, next: "day2_yuna_normal_normal" },
-            { minAffinity: -999, next: "day2_yuna_normal_low" }
-        ]
-    },
+
     "day2_yuna_normal_high": {
         name: "Yuna",
         text: "\"You came here because you wanted to talk to me...? Fufu, you really say such lovely things. Fine, then would you stay with me a bit longer like this today?\"",

@@ -541,18 +541,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
     },
-    "yuna_secret": {
-        name: "Yuna",
-        text: "(She closes the book with a strange smile on her lips. She brings her lips close to my ear and whispers.)",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "yuna_secret_2"
-    },
-    "yuna_secret_2": {
-        name: "Yuna",
-        text: "\"Hehe, are you curious? But secrets might be better left unknown. The stories the school wants to hide... knowing them might get you hurt.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "after_school_start"
-    },
+
+
     "yuna_scent_high": {
         name: "Yuna",
         text: "(She lightly leans her head against my chest and takes a deep breath.)",
@@ -589,18 +579,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_school_start"
     },
-    "yuna_scent": {
-        name: "Yuna",
-        text: "(She takes a step closer and stares at me intently. She mutters with a bitter expression.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "yuna_scent_2"
-    },
-    "yuna_scent_2": {
-        name: "Yuna",
-        text: "\"No, it's my first time seeing you. But that 'light' in your eyes... I really covet it. It's different from the dead children in this school. Can I keep watching so that light doesn't go out?\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "after_school_start"
-    },
+
+
     "yuna_danger_high": {
         name: "Yuna",
         text: "(She strokes my neck with her cold fingers and gives a provocative smile.)",
@@ -637,18 +617,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
     },
-    "yuna_danger": {
-        name: "Yuna",
-        text: "(She lightly brushes my cheek with her cold fingers. She stares intently into my eyes with a strange smile.)",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "yuna_danger_2"
-    },
-    "yuna_danger_2": {
-        name: "Yuna",
-        text: "\"I look dangerous... Hehe, correct. But I don't dislike people like you who approach even knowing it's dangerous. Until you lose that special light... I'll be by your side.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "after_school_start"
-    },
+
+
     "lunch_store": {
         name: "Me",
         text: "(I won the last 'chocolate conch bread' at the store! As I take a bite of the bread with a winner's feeling, sweetness spreads throughout my mouth.)",

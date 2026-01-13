@@ -675,18 +675,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_sad.png",
         next: "after_home"
     },
-    "after_dain_tired": {
-        name: "다인",
-        text: "(다인이는 살짝 아쉬운 표정을 짓더니 이내 고개를 끄덕인다.)",
-        character: "assets/images/characters/dain_sad.png",
-        next: "after_dain_tired_2"
-    },
-    "after_dain_tired_2": {
-        name: "다인",
-        text: "\"아... 맞다. 전학 첫날이라 피곤하겠구나. 미안, 내가 너무 신났나 봐. 그래, 오늘은 이만 들어가 봐. 내일 봐!\"",
-        character: "assets/images/characters/dain_sad.png",
-        next: "after_home"
-    },
+
+
     "after_dain_help_high": {
         name: "다인",
         text: "(그녀의 눈이 반짝이며 정말 기쁜 듯 나를 향해 달려온다.)",
@@ -723,18 +713,8 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/dain_active.png",
         next: "after_dain_normal"
     },
-    "after_dain_help": {
-        name: "다인",
-        text: "(그녀의 눈이 반짝이며 나에게 공을 건넨다.)",
-        character: "assets/images/characters/dain_laugh.png",
-        next: "after_dain_help_2"
-    },
-    "after_dain_help_2": {
-        name: "다인",
-        text: "\"오! 도와주겠다고? 좋아! 그럼 네트 쪽으로 높게 띄워줘! 간다!\"",
-        character: "assets/images/characters/dain_active.png",
-        next: "after_dain_normal"
-    },
+
+
     "after_dain_cheer_high": {
         name: "다인",
         text: "(다인이는 얼굴이 빨개져서 어쩔 줄 몰라 하며 활짝 웃는다.)",
@@ -783,22 +763,8 @@ Object.assign(SCENARIO[1], {
         sunset: true,
         next: "after_dain_end"
     },
-    "after_dain_cheer": {
-        name: "다인",
-        text: "(다인이는 쑥스러운 듯 코끝을 찡긋하며 웃는다.)",
-        background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
-        sunset: true,
-        next: "after_dain_cheer_2"
-    },
-    "after_dain_cheer_2": {
-        name: "다인",
-        text: "\"뭐, 뭐야... 갑자기 그렇게 칭찬하면 부끄럽잖아! 딱히 네가 보고 있다고 열심히 하는 건 아니니까 착각하지 마. 그래도... 네가 봐주니까 좀 더 힘이 나는 것 같기도 하고...\"",
-        background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_shy.png",
-        sunset: true,
-        next: "after_dain_end"
-    },
+
+
     "after_dain_normal": {
         name: "다인",
         text: "(다인이는 장난스럽게 내 어깨를 툭 친다.)",
