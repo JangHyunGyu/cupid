@@ -73,7 +73,8 @@ Object.assign(SCENARIO[2], {
         night: true,
         affinityBranches: [
             { character: "Nurse", threshold: 20, next: "day2_meet_nurse_high" },
-            { next: "day2_meet_nurse_standard" }
+            { character: "Nurse", threshold: -5, next: "day2_meet_nurse_standard" },
+            { next: "day2_meet_nurse_low" }
         ]
     },
     "day2_meet_nurse_standard": {
@@ -88,6 +89,12 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 5 } },
         next: "day2_nurse_talk"
+    },
+    "day2_meet_nurse_low": {
+        name: "보건선생님",
+        text: "(선생님이 나를 보자마자 한숨을 내쉬며 고개를 돌린다.) \"어머, 전학생... 아침부터 얼굴 보기가 참 힘드네. 볼일 없으면 교실로 가 줄래?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_classroom"
     },
     "day2_nurse_talk": {
         name: "보건선생님",
@@ -121,7 +128,8 @@ Object.assign(SCENARIO[2], {
         night: true,
         affinityBranches: [
             { character: "Seoyeon", threshold: 25, next: "day2_meet_seoyeon_high" },
-            { next: "day2_meet_seoyeon_standard" }
+            { character: "Seoyeon", threshold: -5, next: "day2_meet_seoyeon_standard" },
+            { next: "day2_meet_seoyeon_low" }
         ]
     },
     "day2_meet_seoyeon_standard": {
@@ -136,6 +144,12 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day2_seoyeon_talk"
+    },
+    "day2_meet_seoyeon_low": {
+        name: "서연",
+        text: "(서연이가 나를 발견하자마자 표정을 굳히며 고개를 돌린다.) \"...아, 왔니? 지각은 안 해서 다행이네. 그럼 수고해.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "day2_classroom"
     },
     "day2_seoyeon_talk": {
         name: "서연",

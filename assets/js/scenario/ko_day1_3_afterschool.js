@@ -114,7 +114,8 @@ Object.assign(SCENARIO[1], {
         night: true,
         affinityBranches: [
             { character: "Seoyeon", threshold: 15, next: "after_seoyeon_3_high" },
-            { next: "after_seoyeon_3_standard" }
+            { character: "Seoyeon", threshold: -5, next: "after_seoyeon_3_standard" },
+            { next: "after_seoyeon_3_low" }
         ]
     },
     "after_seoyeon_3_standard": {
@@ -137,6 +138,16 @@ Object.assign(SCENARIO[1], {
             { text: "응, 같이 가고 싶었어. 도와줄게.", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "나 생각해서 기다린 거야? 감동인데.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
             { text: "오늘따라 더 예뻐 보이네.", next: "after_seoyeon_help", stats: { Seoyeon: { affinity: 10 } } }
+        ]
+    },
+    "after_seoyeon_3_low": {
+        name: "서연",
+        text: "(서연이가 서류를 정리하며 힐끗 나를 쳐다본다. 그녀의 눈빛에는 귀찮음이 가득하다.) \"...{name}? 여긴 왜 온 거야? 나 지금 바쁘니까 볼일 없으면 나가줄래?\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        sunset: true,
+        choices: [
+            { text: "미안, 방해하려던 건 아니었어.", next: "after_home", stats: { Seoyeon: { affinity: -5 } } },
+            { text: "나도 바쁜 사람이야. 가라고 안 해도 갈 거야.", next: "after_home", stats: { Seoyeon: { affinity: -15 } } }
         ]
     },
     "after_seoyeon_rude": {

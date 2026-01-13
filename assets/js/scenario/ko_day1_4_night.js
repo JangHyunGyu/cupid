@@ -116,7 +116,8 @@ Object.assign(SCENARIO[1], {
         night: true,
         affinityBranches: [
             { character: "Seoyeon", threshold: 15, next: "night_message_seyoun_reply_high" },
-            { next: "night_message_seyoun_reply_standard" }
+            { character: "Seoyeon", threshold: 0, next: "night_message_seyoun_reply_standard" },
+            { next: "night_message_seyoun_reply_low" }
         ]
     },
     "night_message_seyoun_reply_standard": {
@@ -133,6 +134,13 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 3 } },
         next: "night_home_check_contact"
     },
+    "night_message_seyoun_reply_low": {
+        name: "서연",
+        text: "(잠시 후 도착한 답장.) '아... 응. 내일 학교에서 보자.'",
+        night: true,
+        stats: { Seoyeon: { affinity: -5 } },
+        next: "night_home_check_contact"
+    },
     "night_message_yuna": {
         name: "나",
         text: "(유나에게 메시지를 보냈다. '오늘 즐거웠어. 잘 자.')",
@@ -144,7 +152,8 @@ Object.assign(SCENARIO[1], {
         night: true,
         affinityBranches: [
             { character: "Yuna", threshold: 10, next: "night_message_yuna_reply_high" },
-            { next: "night_message_yuna_reply_standard" }
+            { character: "Yuna", threshold: 0, next: "night_message_yuna_reply_standard" },
+            { next: "night_message_yuna_reply_low" }
         ]
     },
     "night_message_yuna_reply_standard": {
@@ -159,6 +168,13 @@ Object.assign(SCENARIO[1], {
         text: "(잠시 후 도착한 답장.) '오늘... 응, 고마웠어. 덕분에 조금 웃을 수 있었던 것 같아. 잘 자.'",
         night: true,
         stats: { Yuna: { affinity: 5 } },
+        next: "night_home_check_contact"
+    },
+    "night_message_yuna_reply_low": {
+        name: "유나",
+        text: "(답장이 없다. 읽음 표시만 떠 있을 뿐이다.)",
+        night: true,
+        stats: { Yuna: { affinity: -5 } },
         next: "night_home_check_contact"
     },
     "night_message_dain": {

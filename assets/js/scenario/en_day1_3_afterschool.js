@@ -114,7 +114,8 @@ Object.assign(SCENARIO[1], {
         night: true,
         affinityBranches: [
             { character: "Seoyeon", threshold: 15, next: "after_seoyeon_3_high" },
-            { next: "after_seoyeon_3_standard" }
+            { character: "Seoyeon", threshold: -5, next: "after_seoyeon_3_standard" },
+            { next: "after_seoyeon_3_low" }
         ]
     },
     "after_seoyeon_3_standard": {
@@ -137,6 +138,16 @@ Object.assign(SCENARIO[1], {
             { text: "Yeah, I wanted to go home together. Let me help.", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "You were waiting for me? I'm touched.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
             { text: "You look even prettier than usual today.", next: "after_seoyeon_help", stats: { Seoyeon: { affinity: 10 } } }
+        ]
+    },
+    "after_seoyeon_3_low": {
+        name: "Seoyeon",
+        text: "(Seoyeon glaces at me while sorting papers. Her eyes are full of annoyance.) \"...{name}? Why are you here? I'm busy right now, so if you don't have any business, could you please leave?\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        sunset: true,
+        choices: [
+            { text: "Sorry, I didn't mean to disturb you.", next: "after_home", stats: { Seoyeon: { affinity: -5 } } },
+            { text: "I'm busy too. I'll leave even if you don't tell me to.", next: "after_home", stats: { Seoyeon: { affinity: -15 } } }
         ]
     },
     "after_seoyeon_rude": {

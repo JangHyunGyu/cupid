@@ -73,7 +73,8 @@ Object.assign(SCENARIO[2], {
         night: true,
         affinityBranches: [
             { character: "Nurse", threshold: 20, next: "day2_meet_nurse_high" },
-            { next: "day2_meet_nurse_standard" }
+            { character: "Nurse", threshold: -5, next: "day2_meet_nurse_standard" },
+            { next: "day2_meet_nurse_low" }
         ]
     },
     "day2_meet_nurse_standard": {
@@ -88,6 +89,12 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         stats: { Nurse: { affinity: 5 } },
         next: "day2_nurse_talk"
+    },
+    "day2_meet_nurse_low": {
+        name: "Nurse",
+        text: "(She sighs and looks away as soon as she sees me.) \"Oh, it's you... It's really hard to see your face first thing in the morning. Could you please head to class if you don't have any business?\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_classroom"
     },
     "day2_nurse_talk": {
         name: "Nurse",
@@ -121,7 +128,8 @@ Object.assign(SCENARIO[2], {
         night: true,
         affinityBranches: [
             { character: "Seoyeon", threshold: 25, next: "day2_meet_seoyeon_high" },
-            { next: "day2_meet_seoyeon_standard" }
+            { character: "Seoyeon", threshold: -5, next: "day2_meet_seoyeon_standard" },
+            { next: "day2_meet_seoyeon_low" }
         ]
     },
     "day2_meet_seoyeon_standard": {
@@ -136,6 +144,12 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day2_seoyeon_talk"
+    },
+    "day2_meet_seoyeon_low": {
+        name: "Seoyeon",
+        text: "(She stiffens and looks away as soon as she spots me.) \"...Oh, you're here. At least you're not late. Have a good day.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "day2_classroom"
     },
     "day2_seoyeon_talk": {
         name: "Seoyeon",
