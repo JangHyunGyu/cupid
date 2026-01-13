@@ -16,7 +16,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_end_2": {
         name: "나",
-        text: "(침대에 누워 오늘 있었던 일들을 되짚어본다. 유나가 말한 학교의 비밀, 그리고 그녀들과의 시간...)",
+        text: "(침대에 누워 오늘 있었던 일들을 되짚어본다. 유나가 말한 학교의 비밀, 그리고 그녀들과의 시간....)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_home"
