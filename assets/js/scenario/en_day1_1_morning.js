@@ -692,17 +692,7 @@ Object.assign(SCENARIO[1], {
             { text: "Greet loosely as if it's bothersome.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
         ]
     },
-    "teacher_name_share": {
-        name: "Homeroom Teacher",
-        text: "\"Oh, {name}... that's a very pretty name. Now, {name}. Please say a word of introduction to your friends.\"",
-        character: "assets/images/characters/teacher_smile.png",
-        choices: [
-            { text: "Greet with incredibly high tension!", next: "class_after_party", setFlag: "personality_active" },
-            { text: "Greet actively.", next: "class_after_active", setFlag: "personality_active" },
-            { text: "Greet calmly.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "Greet loosely as if it's bothersome.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
-        ]
-    },
+
     "class_after_party": {
         name: "Classmates",
         text: "\"Whoa~! Our transfer student has great energy! Nice to meet you!\"",

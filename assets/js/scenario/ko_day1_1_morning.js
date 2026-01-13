@@ -692,17 +692,7 @@ Object.assign(SCENARIO[1], {
             { text: "귀찮은 듯 대충 인사한다.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
         ]
     },
-    "teacher_name_share": {
-        name: "담임선생님",
-        text: "\"오, {name}... 이름 참 예쁘네. 자, {name}. 친구들에게 자기소개 한마디 부탁할게.\"",
-        character: "assets/images/characters/teacher_smile.png",
-        choices: [
-            { text: "엄청나게 텐션 높게 인사한다!", next: "class_after_party", setFlag: "personality_active" },
-            { text: "활발하게 인사한다.", next: "class_after_active", setFlag: "personality_active" },
-            { text: "차분하게 인사한다.", next: "class_after_quiet", setFlag: "personality_quiet" },
-            { text: "귀찮은 듯 대충 인사한다.", next: "class_after_study", setFlag: "personality_study", stats: { Teacher: { affinity: -20 } } }
-        ]
-    },
+
     "class_after_active": {
         name: "아이들",
         text: "(교실 여기저기서 환호성이 터져 나온다. 특히 뒷자리에 앉은 남학생들이 눈을 빛낸다. 서연이도 흐뭇한 미소를 지으며 박수를 쳐준다.)",

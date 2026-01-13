@@ -312,13 +312,7 @@ Object.assign(SCENARIO[2], {
         stats: { Teacher: { affinity: 5 } },
         next: "day2_classroom"
     },
-    "day2_teacher_contact_success": {
-        name: "Teacher",
-        text: "\"Thank you. I'll contact you if anything comes up. Now, let's head to the classroom.\"",
-        character: "assets/images/characters/teacher.png",
-        stats: { Teacher: { affinity: 10 } },
-        next: "day2_classroom"
-    },
+
     "day2_classroom": {
         name: "Me",
         text: "(I open the classroom door and feel a much warmer atmosphere than yesterday. Even the other students' glances seem friendlier.)",
