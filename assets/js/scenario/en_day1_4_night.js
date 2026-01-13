@@ -44,11 +44,11 @@ Object.assign(SCENARIO[1], {
         text: "(Did I exchange contact info with anyone today...?)",
         night: true,
         choices: [
-            { text: "Send a message to Seoyeon.", next: "night_message_seyoun", condition: "has_number_seyoun" },
-            { text: "Send a message to Yuna.", next: "night_message_yuna", condition: "has_number_yuna" },
-            { text: "Send a message to Dain.", next: "night_message_dain", condition: "has_number_dain" },
-            { text: "Send a message to the Nurse.", next: "night_message_nurse", condition: "has_number_nurse" },
-            { text: "Send a message to the Homeroom Teacher.", next: "night_message_teacher", condition: "has_number_teacher" },
+            { text: "Send a message to Seoyeon.", next: "night_message_seyoun", condition: "has_number_seyoun", excludeCondition: "sent_msg_day1_seyoun" },
+            { text: "Send a message to Yuna.", next: "night_message_yuna", condition: "has_number_yuna", excludeCondition: "sent_msg_day1_yuna" },
+            { text: "Send a message to Dain.", next: "night_message_dain", condition: "has_number_dain", excludeCondition: "sent_msg_day1_dain" },
+            { text: "Send a message to the Nurse.", next: "night_message_nurse", condition: "has_number_nurse", excludeCondition: "sent_msg_day1_nurse" },
+            { text: "Send a message to the Homeroom Teacher.", next: "night_message_teacher", condition: "has_number_teacher", excludeCondition: "sent_msg_day1_teacher" },
             { text: "Check Affinity Status", next: "day1_check_affinity" },
             { text: "Just sleep.", next: "day1_end" }
         ]
@@ -72,7 +72,7 @@ Object.assign(SCENARIO[1], {
         text: "(A kind reply.) 'Oh, it's {name}. You must have been tired on your first day, but you're so thoughtful. Rest well and see you tomorrow!'",
         night: true,
         stats: { Teacher: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_seyoun": {
         name: "Me",
@@ -110,14 +110,14 @@ Object.assign(SCENARIO[1], {
         text: "(Vibrate~ An immediate reply.) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name}.'",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_seyoun_reply_generic": {
         name: "Seoyeon",
         text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name}. See you at school tomorrow. Good night.'",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_yuna": {
         name: "Me",
@@ -131,7 +131,7 @@ Object.assign(SCENARIO[1], {
         text: "(A reply arrives after a short wait.) '...Yeah. You too. See you at school tomorrow, {name}.'",
         night: true,
         stats: { Yuna: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_dain": {
         name: "Me",
@@ -161,14 +161,14 @@ Object.assign(SCENARIO[1], {
         text: "(A lively reply.) 'Right? I told you I know all the best spots! Rest up and see you tomorrow, {name}! Good night!'",
         night: true,
         stats: { Dain: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_dain_reply_generic": {
         name: "Dain",
         text: "(A lively reply.) 'Yeah! You too! See you at school tomorrow, {name}! Good night!'",
         night: true,
         stats: { Dain: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_nurse": {
         name: "Me",
@@ -182,7 +182,7 @@ Object.assign(SCENARIO[1], {
         text: "(An alluring reply.) 'Oh, you actually messaged me? Our transfer student is so polite. Have sweet dreams, {name}.'",
         night: true,
         stats: { Nurse: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "day1_end": {
         name: "Me",

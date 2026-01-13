@@ -44,11 +44,11 @@ Object.assign(SCENARIO[1], {
         text: "(오늘 연락처를 교환했던가...?)",
         night: true,
         choices: [
-            { text: "서연이에게 메시지를 보낸다.", next: "night_message_seyoun", condition: "has_number_seyoun" },
-            { text: "유나에게 메시지를 보낸다.", next: "night_message_yuna", condition: "has_number_yuna" },
-            { text: "다인이에게 메시지를 보낸다.", next: "night_message_dain", condition: "has_number_dain" },
-            { text: "보건선생님께 메시지를 보낸다.", next: "night_message_nurse", condition: "has_number_nurse" },
-            { text: "담임선생님께 메시지를 보낸다.", next: "night_message_teacher", condition: "has_number_teacher" },
+            { text: "서연이에게 메시지를 보낸다.", next: "night_message_seyoun", condition: "has_number_seyoun", excludeCondition: "sent_msg_day1_seyoun" },
+            { text: "유나에게 메시지를 보낸다.", next: "night_message_yuna", condition: "has_number_yuna", excludeCondition: "sent_msg_day1_yuna" },
+            { text: "다인이에게 메시지를 보낸다.", next: "night_message_dain", condition: "has_number_dain", excludeCondition: "sent_msg_day1_dain" },
+            { text: "보건선생님께 메시지를 보낸다.", next: "night_message_nurse", condition: "has_number_nurse", excludeCondition: "sent_msg_day1_nurse" },
+            { text: "담임선생님께 메시지를 보낸다.", next: "night_message_teacher", condition: "has_number_teacher", excludeCondition: "sent_msg_day1_teacher" },
             { text: "호감도 확인하기", next: "day1_check_affinity" },
             { text: "그냥 잠을 잔다.", next: "day1_end" }
         ]
@@ -72,7 +72,7 @@ Object.assign(SCENARIO[1], {
         text: "(다정한 답장.) '어머, {name}이구나? 전학 첫날이라 힘들었을 텐데 기특하네. 푹 쉬고 내일 보자!'",
         night: true,
         stats: { Teacher: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_seyoun": {
         name: "나",
@@ -110,14 +110,14 @@ Object.assign(SCENARIO[1], {
         text: "(징~ 즉각적인 답장.) '정말? 다행이다! 맛있게 먹어줘서 내가 더 고마워. 내일도 기대해줘! 잘 자 {name}.'",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_seyoun_reply_generic": {
         name: "서연",
         text: "(징~ 즉각적인 답장.) '나도 정말 즐거웠어! {name} 덕분에 든든해. 내일 학교에서 보자. 잘 자요.'",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_yuna": {
         name: "나",
@@ -131,7 +131,7 @@ Object.assign(SCENARIO[1], {
         text: "(잠시 후 도착한 답장.) '...응. 너도 잘 자. 내일 학교에서 봐 {name}.'",
         night: true,
         stats: { Yuna: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_dain": {
         name: "나",
@@ -161,14 +161,14 @@ Object.assign(SCENARIO[1], {
         text: "(활기찬 답장.) '그치? 내가 맛집은 다 꿰고 있다니까! 푹 자고 내일 보자, {name}! 굿나잇!'",
         night: true,
         stats: { Dain: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_dain_reply_generic": {
         name: "다인",
         text: "(활기찬 답장.) '오~ 지켜보고 있었냐? 부끄럽게! 하하, 내일은 더 멋진 모습 보여줄게. 잘 자, {name}!'",
         night: true,
         stats: { Dain: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "night_message_nurse": {
         name: "나",
@@ -182,7 +182,7 @@ Object.assign(SCENARIO[1], {
         text: "(매혹적인 답장.) '어머, 정말로 연락했네? 우리 전학생, 정말 착하네. 좋은 꿈 꾸렴, {name}.'",
         night: true,
         stats: { Nurse: { affinity: 3 } },
-        next: "day1_end"
+        next: "night_home_check_contact"
     },
     "day1_end": {
         name: "나",
