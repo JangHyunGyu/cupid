@@ -388,7 +388,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_know_2_2": {
         name: "유나",
-        text: "\"나에 대해 알고 싶어...? 후훗, 용감한 건지 무모한 건지 모르겠네.\"",
+        text: "\"나에 대해 알고 싶니...? 풋, 용감한 건지 무모한 건지 모르겠네.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_yuna_know_3"
     },
@@ -447,7 +447,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_together_2": {
         name: "유나",
-        text: "\"바보 같은 소리... 하지만 싫지 않아. 좋아, 그럼 우리... 서로의 비밀을 공유하는 사이가 되는 건 어때?\"",
+        text: "\"바보 같은 소리... 하지만 싫지 않네. 좋아, 그럼 우리... 서로의 비밀을 공유하는 사이가 되는 건 어때?\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "yuna_contact_exchange"
@@ -486,7 +486,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_scared_2": {
         name: "유나",
-        text: "\"후훗, 역시 그렇겠지. 평범한 학생에게는 너무 무거운 이야기니까. 오늘은 이만 돌아가. 더 이상 깊이 알려고 하지 마.\"",
+        text: "\"흠, 역시 그렇겠지. 평범한 학생에게는 너무 무거운 이야기니까. 오늘은 이만 돌아가. 더 이상 깊이 알려고 하지 마.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_home"
@@ -512,7 +512,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_secret_fail": {
         name: "유나",
-        text: "(유나가 차가운 미소를 짓는다.) \"진실이라... 후훗, 넌 아직 그 무게를 견디기엔 너무 가벼워 보여. 궁금해하는 건 자유지만, 너무 깊이 파고들진 마. 다칠 수도 있으니까.\"",
+        text: "(유나가 차가운 미소를 짓는다.) \"진실이라... 넌 아직 그 무게를 견디기엔 너무 가벼워 보이는데. 궁금해하는 건 자유지만, 너무 깊이 파고들진 마. 다칠 수도 있으니까.\"",
         character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: -20 } },
         next: "after_home"
@@ -520,13 +520,13 @@ Object.assign(SCENARIO[1], {
     "after_yuna_boring": {
         name: "유나",
         text: "(유나가 한심하다는 듯 한숨을 내쉬며 다시 책으로 시선을 돌린다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_bored.png",
         stats: { Yuna: { affinity: -10 } },
         next: "after_yuna_boring_2"
     },
     "after_yuna_boring_2": {
         name: "유나",
-        text: "\"급식...? 그런 세속적인 이야기는 다른 애들이랑 해. 난 바쁘니까 방해하지 말고 나가줄래?\"",
+        text: "\"급식...? 그런 세속적인 이야기는 다른 애들이랑 해. 난 바쁘니까 방해하지 말고 나가줘.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_home"
     },
@@ -539,7 +539,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_rude_2": {
         name: "유나",
-        text: "\"아침부터라니...? 후훗, 넌 아직 아무것도 모르고 있구나. 이 학교를 감싸고 있는 이 기묘한 기운... 넌 느껴지지 않아? 무지함은 때로 죄가 되기도 해. 당장 내 앞에서 사라져.\"",
+        text: "\"아침부터라니...? 넌 아직 아무것도 모르고 있구나. 이 학교를 감싸고 있는 이 기묘한 기운... 넌 느껴지지 않아? 무지함은 때로 죄가 되기도 해. 당장 내 앞에서 사라져.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "after_home"
     },
