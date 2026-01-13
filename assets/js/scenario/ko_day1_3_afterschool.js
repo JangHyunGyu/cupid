@@ -111,13 +111,13 @@ Object.assign(SCENARIO[1], {
         next: "after_seoyeon_2"
     },
     "after_seoyeon_2": {
-        name: "서연",
-        text: "(내가 들어서자 서연이가 깜짝 놀라며 고개를 든다. 펜을 내려놓고 기지개를 켜는 그녀.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        sunset: true,
-        next: "after_seoyeon_3"
+        night: true,
+        affinityBranches: [
+            { character: "Seoyeon", threshold: 15, next: "after_seoyeon_3_high" },
+            { next: "after_seoyeon_3_standard" }
+        ]
     },
-    "after_seoyeon_3": {
+    "after_seoyeon_3_standard": {
         name: "서연",
         text: "\"어? {name}! 이 시간에 어쩐 일이야? 설마... 나 기다린 거야?\"",
         character: "assets/images/characters/seyoun_nomal.png",
@@ -126,6 +126,17 @@ Object.assign(SCENARIO[1], {
             { text: "응, 같이 가고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "그냥 얼굴 보고 싶어서. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 3 } } },
             { text: "착각하지 마. 그냥 길을 잘못 든 거야.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -30 } } }
+        ]
+    },
+    "after_seoyeon_3_high": {
+        name: "서연",
+        text: "(내가 들어서자 서연이가 환하게 웃으며 자리에서 일어난다.) \"{name}! 너 올 줄 알고 있었어. 아니, 기다리고 있었어. 우리... 같이 갈까?\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        sunset: true,
+        choices: [
+            { text: "응, 같이 가고 싶었어. 도와줄게.", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "나 생각해서 기다린 거야? 감동인데.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "오늘따라 더 예뻐 보이네.", next: "after_seoyeon_help", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "after_seoyeon_rude": {

@@ -111,13 +111,13 @@ Object.assign(SCENARIO[1], {
         next: "after_seoyeon_2"
     },
     "after_seoyeon_2": {
-        name: "Seoyeon",
-        text: "(As I enter, Seoyeon looks up in surprise. She puts down her pen and stretches.)",
-        character: "assets/images/characters/seyoun_nomal.png",
-        sunset: true,
-        next: "after_seoyeon_3"
+        night: true,
+        affinityBranches: [
+            { character: "Seoyeon", threshold: 15, next: "after_seoyeon_3_high" },
+            { next: "after_seoyeon_3_standard" }
+        ]
     },
-    "after_seoyeon_3": {
+    "after_seoyeon_3_standard": {
         name: "Seoyeon",
         text: "\"Oh? {name}! What brings you here at this time? Don't tell me... were you waiting for me?\"",
         character: "assets/images/characters/seyoun_nomal.png",
@@ -126,6 +126,17 @@ Object.assign(SCENARIO[1], {
             { text: "Yeah, I wanted to go home together. Can I help?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "I just wanted to see your face. Aren't you overdoing it?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 3 } } },
             { text: "Don't get me wrong. I just took a wrong turn.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -30 } } }
+        ]
+    },
+    "after_seoyeon_3_high": {
+        name: "Seoyeon",
+        text: "(When I enter, Seoyeon greets me with a bright smile.) \"{name}! I knew you would come. Actually, I was waiting for you. Shall we... walk home together?\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        sunset: true,
+        choices: [
+            { text: "Yeah, I wanted to go home together. Let me help.", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "You were waiting for me? I'm touched.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "You look even prettier than usual today.", next: "after_seoyeon_help", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "after_seoyeon_rude": {

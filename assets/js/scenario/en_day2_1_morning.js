@@ -70,9 +70,23 @@ Object.assign(SCENARIO[2], {
         next: "day2_classroom"
     },
     "day2_meet_nurse": {
+        night: true,
+        affinityBranches: [
+            { character: "Nurse", threshold: 20, next: "day2_meet_nurse_high" },
+            { next: "day2_meet_nurse_standard" }
+        ]
+    },
+    "day2_meet_nurse_standard": {
         name: "Nurse",
         text: "\"Oh, {name}! Good morning. You're looking lively today!\"",
         character: "assets/images/characters/nurse.png",
+        next: "day2_nurse_talk"
+    },
+    "day2_meet_nurse_high": {
+        name: "Nurse",
+        text: "(She approaches me and adjusts my clothes slightly.) \"My dear transfer student, what kind of dream did you have to be so radiant? I actually overslept a bit because I was thinking about you.\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 5 } },
         next: "day2_nurse_talk"
     },
     "day2_nurse_talk": {
@@ -104,9 +118,23 @@ Object.assign(SCENARIO[2], {
         next: "day2_classroom"
     },
     "day2_meet_seoyeon": {
+        night: true,
+        affinityBranches: [
+            { character: "Seoyeon", threshold: 25, next: "day2_meet_seoyeon_high" },
+            { next: "day2_meet_seoyeon_standard" }
+        ]
+    },
+    "day2_meet_seoyeon_standard": {
         name: "Seoyeon",
         text: "\"Morning, {name}! Did you sleep well? You're early again!\"",
         character: "assets/images/characters/seyoun_nomal.png",
+        next: "day2_seoyeon_talk"
+    },
+    "day2_meet_seoyeon_high": {
+        name: "Seoyeon",
+        text: "(When she spots me by the gate, she smiles brightly and runs toward me.) \"{name}! I was waiting for you! I couldn't sleep a wink thinking about whether you slept well last night.\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 5 } },
         next: "day2_seoyeon_talk"
     },
     "day2_seoyeon_talk": {
