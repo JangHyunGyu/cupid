@@ -402,14 +402,14 @@ Object.assign(SCENARIO[1], {
     "after_yuna_rooftop_2_2": {
         name: "Yuna",
         text: "\"People see this school as perfect. But perfection is an illusion.\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_yuna_rooftop_3"
     },
     "after_yuna_rooftop_3": {
         name: "Yuna",
         text: "\"Beneath the surface, things are rotting. This heavy atmosphere... haven't you felt it? That something is... wrong?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         choices: [
             { text: "If I'm with you, I'm not afraid of anything.", next: "after_yuna_together" },
@@ -419,14 +419,14 @@ Object.assign(SCENARIO[1], {
     "after_yuna_together": {
         name: "Yuna",
         text: "(She squeezes my hand, a sad, knowing smile on her face.)",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_yuna_together_2"
     },
     "after_yuna_together_2": {
         name: "Yuna",
         text: "\"What a foolish thing to say... but I don't hate it. Then... shall we become partners in crime? Sharing each other's secrets?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "yuna_contact_exchange"
     },
@@ -465,7 +465,7 @@ Object.assign(SCENARIO[1], {
     "after_yuna_scared_2": {
         name: "Yuna",
         text: "\"Hehe, of course. It's a heavy burden for a normal student. Go home. Don't try to dig any deeper.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_home"
     },
@@ -491,7 +491,7 @@ Object.assign(SCENARIO[1], {
     "after_yuna_secret_fail": {
         name: "Yuna",
         text: "(Yuna gives a cold smile.) \"The truth... Hehe, you look too light to bear its weight. It's fine to be curious, but don't dig too deep. You might get hurt.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: -20 } },
         next: "after_home"
     },
@@ -570,7 +570,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Dain",
         text: "\"Whoa, {name}! You're even cooler up close! Got any questions for me? Sports, school, anything!\"",
-        context: "Talking to Dain in the gym at sunset after her practice. After the conversation, Dain will suggest finishing her last practice set and going to grab something delicious to eat together. At the end of the conversation, please naturally lead into the next situation by mentioning that you need to finish practice or that you're hungry.",
+        context: "Talking to Dain in the gym at sunset after her practice. Keep the conversation going actively until it's finished. After all conversations are over, Dain will suggest finishing her last practice set and going to grab something delicious to eat together. ONLY at the final turn of the conversation, naturally lead into the next situation by mentioning that you need to finish practice or that you're hungry.",
         personality: "The easygoing ace of the volleyball club. Loves sports, friendly, and high-energy.",
         character: "assets/images/characters/dain_nomal.png",
         affinityChar: "Dain",
@@ -644,25 +644,25 @@ Object.assign(SCENARIO[1], {
     "after_dain_tired_normal": {
         name: "Dain",
         text: "(She looks a bit disappointed, but quickly nods with a smile.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_dain_tired_normal_2"
     },
     "after_dain_tired_normal_2": {
         name: "Dain",
         text: "\"Oh... right. First day must be exhausting. Sorry, I got carried away. Let's call it a day. See you tomorrow!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_home"
     },
     "after_dain_tired": {
         name: "Dain",
         text: "(She looks a bit disappointed, but quickly nods with a smile.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_dain_tired_2"
     },
     "after_dain_tired_2": {
         name: "Dain",
         text: "\"Oh... right. First day must be exhausting. Sorry, I got carried away. Let's call it a day. See you tomorrow!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_home"
     },
     "after_dain_help_high": {
@@ -857,7 +857,7 @@ Object.assign(SCENARIO[1], {
         name: "Dain",
         text: "(She lets out a laugh, shaking her head.) \"Ha! You're bold, I'll give you that. Calling me already? Let's stick to texting for now, okay?\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_shy.png",
         night: true,
         stats: { Dain: { affinity: -20 } },
         next: "after_home"

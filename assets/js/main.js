@@ -1,5 +1,5 @@
 const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
-const ASSET_VERSION = "1.0.12"; // 에셋 캐시 방지를 위한 버전 번호
+const ASSET_VERSION = "1.0.14"; // 에셋 캐시 방지를 위한 버전 번호
 
 // 에셋 URL에 버전을 추가하는 헬퍼 함수
 function getAssetUrl(url) {
@@ -68,27 +68,29 @@ const CHARACTER_EXPRESSIONS = {
         "normal": "assets/images/characters/yuna_nomal.png",
         "smile": "assets/images/characters/yuna_smile.png",
         "shy": "assets/images/characters/yuna_shy.png",
-        "sadsmile": "assets/images/characters/yuna_sadsmile.png",
+        "angry": "assets/images/characters/yuna_angry.png",
         "sad": "assets/images/characters/yuna_sad.png"
     },
     "Yuna": {
         "normal": "assets/images/characters/yuna_nomal.png",
         "smile": "assets/images/characters/yuna_smile.png",
         "shy": "assets/images/characters/yuna_shy.png",
-        "sadsmile": "assets/images/characters/yuna_sadsmile.png",
+        "angry": "assets/images/characters/yuna_angry.png",
         "sad": "assets/images/characters/yuna_sad.png"
     },
     "다인": {
         "normal": "assets/images/characters/dain_nomal.png",
         "shy": "assets/images/characters/dain_shy.png",
         "angry": "assets/images/characters/dain_angry.png",
-        "laugh": "assets/images/characters/dain_laugh.png"
+        "laugh": "assets/images/characters/dain_laugh.png",
+        "sad": "assets/images/characters/dain_sad.png"
     },
     "Dain": {
         "normal": "assets/images/characters/dain_nomal.png",
         "shy": "assets/images/characters/dain_shy.png",
         "angry": "assets/images/characters/dain_angry.png",
-        "laugh": "assets/images/characters/dain_laugh.png"
+        "laugh": "assets/images/characters/dain_laugh.png",
+        "sad": "assets/images/characters/dain_sad.png"
     },
     "담임선생님": {
         "normal": "assets/images/characters/teacher.png",
@@ -117,6 +119,7 @@ const CHARACTER_EXPRESSIONS = {
 };
 
 let currentSceneId = "start";
+let lastBgUrl = ""; // 마지막으로 설정된 배경 이미지 URL
 let isTyping = false;
 let skipTyping = false;
 
@@ -411,17 +414,24 @@ async function renderScene(sceneId) {
     // 배경 업데이트
     if (scene.background) {
         // 배경 이미지가 로드될 때까지 대기하여 배경이 먼저 나오도록 함
+        const bgUrl = getAssetUrl(scene.background);
+        lastBgUrl = bgUrl;
+        
         await new Promise((resolve) => {
             const img = new Image();
-            const bgUrl = getAssetUrl(scene.background);
             img.onload = () => {
-                bgLayer.style.backgroundImage = `url(${bgUrl})`;
+                if (lastBgUrl === bgUrl) {
+                    bgLayer.style.backgroundImage = `url(${bgUrl})`;
+                }
                 resolve();
             };
             img.onerror = resolve; // 에러 발생 시에도 다음 단계로 진행
             img.src = bgUrl;
         });
     }
+
+    // 레이스 컨디션 방지
+    if (currentSceneId !== sceneId) return;
 
     // 플래그 설정 (노드 진입 시 자동 설정)
     if (scene.setFlag) {
@@ -469,21 +479,31 @@ async function renderScene(sceneId) {
         // 여러 캐릭터 설정 (예: { left: "...", right: "..." })
         const charPromises = Object.entries(scene.characters).map(([pos, src]) => {
             return new Promise((resolve) => {
-                if (charSlots[pos] && src) {
+                const targetPos = pos.toLowerCase();
+                if (charSlots[targetPos] && src) {
                     const img = document.createElement('img');
                     const charUrl = getAssetUrl(src);
-                    img.onload = () => resolve({ pos, img });
-                    img.onerror = () => resolve(null);
+                    img.onload = () => resolve({ pos: targetPos, img, sceneId });
+                    img.onerror = () => {
+                        console.error("캐릭터 이미지 로드 실패:", charUrl);
+                        resolve(null);
+                    };
                     img.src = charUrl;
                     if (scene.silhouette) img.classList.add('silhouette');
                     if (scene.thinking) img.classList.add('thinking');
                 } else {
+                    if (!charSlots[targetPos] && src) {
+                        console.warn(`알 수 없는 캐릭터 위치: ${pos}. 'left', 'center', 'right' 중 하나를 사용하세요.`);
+                    }
                     resolve(null);
                 }
             });
         });
 
         const loadedChars = await Promise.all(charPromises);
+        // 레이스 컨디션 방지: 이미 다른 장면으로 넘어갔다면 렌더링 중단
+        if (currentSceneId !== sceneId) return;
+
         loadedChars.forEach(result => {
             if (result && charSlots[result.pos]) {
                 charSlots[result.pos].appendChild(result.img);
@@ -491,20 +511,27 @@ async function renderScene(sceneId) {
         });
     } else if (scene.character) {
         // 단일 캐릭터 설정 (기본 center)
-        await new Promise((resolve) => {
+        const result = await new Promise((resolve) => {
             const img = document.createElement('img');
             const charUrl = getAssetUrl(scene.character);
             img.onload = () => {
-                if (charSlots.center) {
-                    charSlots.center.appendChild(img);
-                }
-                resolve();
+                resolve({ pos: 'center', img, sceneId });
             };
-            img.onerror = resolve;
+            img.onerror = () => {
+                console.error("캐릭터 이미지 로드 실패:", charUrl);
+                resolve(null);
+            };
             img.src = charUrl;
             if (scene.silhouette) img.classList.add('silhouette');
             if (scene.thinking) img.classList.add('thinking');
         });
+
+        // 레이스 컨디션 방지
+        if (currentSceneId !== sceneId) return;
+
+        if (result && charSlots.center) {
+            charSlots.center.appendChild(result.img);
+        }
     }
 
     // 이름 태그 업데이트
@@ -518,7 +545,10 @@ async function renderScene(sceneId) {
         startFreeTalk(scene);
     } else if (scene.type === 'input') {
         dialogueBox.style.pointerEvents = 'none'; // 클릭이 입력창으로 전달되도록 설정
-        if (scene.text) await typeText(scene.text, scene.name);
+        if (scene.text) {
+            await typeText(scene.text, scene.name);
+            if (currentSceneId !== sceneId) return;
+        }
         nameInputContainer.style.display = 'block';
         playerNameInput.value = "";
         playerNameInput.focus();
@@ -526,6 +556,7 @@ async function renderScene(sceneId) {
         // 텍스트 타이핑 효과
         if (scene.text) {
             await typeText(scene.text, scene.name);
+            if (currentSceneId !== sceneId) return;
         } else {
             messageEl.textContent = "";
         }
@@ -786,27 +817,27 @@ function startFreeTalk(scene) {
      * -100 ~ -31 (적대적): 매우 차갑고 사무적임. 눈도 마주치지 않으려 하며 오직 규칙과 공적인 이야기만 함.
      * -30 ~ 30 (보통): 예의 바른 학생회장. 적당한 거리감을 유지하며 단정하고 차분한 말투 사용.
      * 31 ~ 70 (호감): 조금씩 '소녀'다운 모습을 보임. 주인공의 농담에 얼굴을 붉히거나 개인적인 고민을 털어놓음.
-     * 71 ~ 100 (사랑): 완전한 '메가데레'. 부끄러워하면서도 주인공 곁에 있고 싶어 함. 가벼운 스킨십 허용. 대담한 고백이나 로맨틱한 농담에 당황하면서도 기뻐합니다.`,
+     * 71 ~ 100 (사랑): 완전한 '메가데레'. 부끄러워하면서도 주인공 곁에 있고 싶어 함. 대담한 고백이나 로맨틱한 농담에 매우 설레어하며, 평소의 벽을 허물고 농도 짙은 애정 표현이나 과감한 스킨십(껴안기, 무릎베개 등)도 기쁘게 받아들입니다.`,
         "유나": `
      * -100 ~ -31 (적대적): 기괴하고 소름 돋는 반응. 저주에 가까운 말이나 어두운 비유를 사용하며 혐오감을 드러냄.
      * -30 ~ 30 (보통): 무표정하고 무관심함. 난해한 수수께끼 같은 말로 대화를 모호하게 만듦.
      * 31 ~ 70 (호감): 주인공의 '빛'에 깊은 관심을 보임. 여전히 난해하지만 말투가 눈에 띄게 부드러워짐.
-     * 71 ~ 100 (사랑): 집착적이고 보호적임. '운명'이라고 판단되면 매우 가까운 신체적 밀착도 개의치 않음. 주인공의 대담한 표현을 '운명의 증거'로 받아들입니다.`,
+     * 71 ~ 100 (사랑): 집착적이고 보호적임. '운명'이라고 판단되면 매우 가까운 신체적 밀착도 개의치 않음. 주인공의 대담한 유혹을 '영혼의 결합'으로 받아들이며, 소름 돋을 정도로 강렬하고 관능적인 대사를 툭 던지기도 합니다.`,
         "다인": `
      * -100 ~ -31 (적대적): 진심으로 화를 내며 소리를 지르거나, 주인공을 투명인간 취급하며 완전히 무시함.
      * -30 ~ 30 (보통): 활기차고 싹싹한 친구. 로맨틱한 기류가 전혀 없는 편안한 소꿉친구 같은 태도.
      * 31 ~ 70 (호감): 로맨틱한 말에 당황하기 시작함. 전형적인 '츤데레' 발동. 얼굴이 금방 빨개짐.
-     * 71 ~ 100 (사랑): 얼굴이 항상 홍당무 상태. 말을 더듬으며 장난스러운 스킨십으로 애정 표현. 수위 높은 농담에는 "바보! 무슨 소릴 하는 거야!"라며 크게 당황하지만 싫어하지는 않습니다.`,
+     * 71 ~ 100 (사랑): 얼굴이 항상 홍당무 상태. 말을 더듬으면서도 적극적으로 기습 뽀뽀를 하거나 옷소매를 잡고 놓지 않으려 함. "바보야! 책임져!"라며 대담하고 저돌적인 애정 공세를 펼칩니다.`,
         "담임선생님": `
      * -100 ~ -31 (적대적): 엄격한 훈계와 차가운 시선. 주인공에게 깊은 실망감을 드러내며 거리를 둠.
      * -30 ~ 30 (보통): 전문적인 교사. 사제 관계의 선을 강조하며 공적인 태도로 대함.
      * 31 ~ 70 (호감): 주인공을 '남자'로 의식하기 시작함. 교사로서의 본분과 개인적인 감정 사이에서 혼란스러워함.
-     * 71 ~ 100 (사랑): 주인공에게 정서적으로 의지함. 단둘이 있을 때 지친 모습이나 나약한 모습을 보여주기도 함. 대담한 고백에 교사로서 당황하지만, 여자로서 설레어 합니다.`,
+     * 71 ~ 100 (사랑): 교사의 가면을 완전히 벗고 한 명의 '여자'로서 어리광을 부리거나 유혹함. 단둘이 있을 때는 도발적인 복장이나 눈빛으로 주인공을 당황시키며, 위험하고 아슬아슬한 관계를 즐깁니다.`,
         "보건선생님": `
      * -100 ~ -31 (적대적): 노골적인 혐오감을 드러냄. 평소의 장난기 없는 차갑고 사무적인 태도로 일관함.
      * -30 ~ 30 (보통): 능글맞고 도발적인 장난. 하지만 이는 어디까지나 방어 기제로서의 '가면'임.
      * 31 ~ 70 (호감): 장난에 진심 어린 애정이 섞이기 시작함. 주인공의 건강이나 안부를 진심으로 걱정함.
-     * 71 ~ 100 (사랑): 매혹적이면서도 매우 다정함. 분위기를 리드하며 자연스러운 신체 밀착이나 유혹적인 태도를 보임. 주인공의 대담한 플러팅이나 수위 있는 농담을 즐기며 더 능숙하게 받아치기도 합니다.`
+     * 71 ~ 100 (사랑): 매혹적이고 관능적임. 분위기를 완벽하게 장악하며 주인공을 한계까지 몰아붙임. 훨씬 더 노골적이고 도발적인 말과 행동으로 주인공의 이성을 흔들어 놓으며, 선을 넘는 행위에도 매우 개방적이고 능숙하게 대응합니다.`
     };
 
     const charSpecificCriteria = defaultStatCriteria[scene.name] || "";
@@ -903,33 +934,33 @@ function startFreeTalk(scene) {
         "서연": `
 1. '츤데레' 속성을 유지하세요: 겉으로는 쌀쌀맞고 엄격하지만 속으로는 주인공을 많이 신경 씁니다.
 2. 학생회장다운 단정하고 예의 바른 말투를 사용하되, 당황하면 빈틈을 보이세요.
-3. 로맨틱한 말에는 부정하거나 부끄러워하는 반응("딱히 널 위해서 그런 건 아니니까!")을 보이세요.
+3. 로맨틱한 말에는 부정하거나 부끄러워하는 반응을 보이되, 호감도가 높으면 평소의 단정함을 잃고 굉장히 대담해지는 '반전 매력'을 강조하세요.
 4. 은근히 챙겨주는 다정한 면모를 대화 속에 녹여내세요.
-5. 하트 이모지: 호감도가 매우 높을 때만(70 이상) 사용하세요. 남발하지 않으며, 진심으로 감동하거나 단둘이 있을 때 수줍게 사용하세요.`,
+5. 하트 이모지: 호감도가 높을 때(50 이상)부터 적극적으로 사용하세요. 진심으로 감동하거나 단둘이 있을 때 농도 짙은 하트를 사용하세요.`,
         "유나": `
 1. '쿨데레'적이고 신비로운 분위기를 유지하세요. 은유적이거나 난해한 표현을 즐겨 사용합니다.
-2. 감정 표현은 절제하되, 한 번 표현할 때는 깊고 강렬하게 하세요.
+2. 감정 표현은 절제하되, 한 번 표현할 때는 소름 돋을 정도로 강렬하고 관능적으로 하세요.
 3. 운명, 별, 그림자 등 4차원적인 소재를 언급하며 독특한 세계관을 드러내세요.
-4. 호감도가 높아질수록 주인공에 대한 집착적이고 보호적인 면모를 보이세요.
-5. 하트 이모지: 호감도가 높을 때만(70 이상) 사용하세요. 보라색이나 검은색 하트(💜, 🖤)를 주로 쓰며, '운명적 연결'을 느낄 때만 붉은 하트를 사용하세요.`,
+4. 호감도가 높아질수록 주인공에 대한 집착적이고 소유욕 강한 면모를 보이며, 위험한 분위기를 조성하세요.
+5. 하트 이모지: 호감도가 높을 때(50 이상)부터 사용하세요. 보라색이나 검은색 하트(💜, 🖤)를 주로 쓰며, '영혼의 결합'을 느낄 때 붉은 하트를 사용하세요.`,
         "다인": `
 1. 활기차고 씩씩한 '소꿉친구' 속성을 유지하세요. 느낌표(!)를 자주 사용합니다.
 2. 격식 없는 편안하고 솔직한 말투를 사용하세요.
-3. 분위기가 로맨틱해지면 크게 당황하며 "바보야!"라고 소리치는 등 전형적인 츤데레 반응을 보이세요.
+3. 분위기가 로맨틱해지면 크게 당황하며 "바보야!"라고 소리치면서도, 호감도가 높으면 오히려 먼저 덮칠 듯 대담하게 애정을 표현하세요.
 4. 승부욕이 강하지만 주인공을 누구보다 응원하는 모습을 보여주세요.
-5. 하트 이모지: 호감도가 높을 때만(70 이상) 사용하세요. 밝고 에너지가 넘치는 하트(🧡, 💛, ❤️)를 사용합니다.`,
+5. 하트 이모지: 호감도가 높을 때(50 이상)부터 적극적으로 사용하세요. 밝고 에너지가 넘치는 하트(🧡, 💛, ❤️)를 사용합니다.`,
         "담임선생님": `
 1. 성숙하고 차분하며 다정한 '선생님'의 분위기를 유지하세요.
-2. 지적이고 예의 바른 말투를 사용하되, 주인공의 대담한 행동에는 '여자'로서 설레는 기색을 보이세요.
-3. 교사로서의 책임감과 제자에 대한 개인적인 감정 사이에서 갈등하는 모습을 묘사하세요.
-4. 따뜻한 조언과 정서적인 지지를 아끼지 마세요.
-5. 하트 이모지: 호감도가 높을 때만(70 이상) 사용하세요. 단둘이 있을 때나 마음을 열었을 때 우아한 하트(💖, 💕)를 조심스럽게 사용하세요.`,
+2. 지적이고 예의 바른 말투를 사용하되, 단둘이 있을 때는 교사의 품위를 내려놓고 유혹적인 '여자'의 모습으로 변모하세요.
+3. 사제 관계라는 금지된 선을 넘는 아슬아슬한 스릴과 설렘을 대화에 담으세요.
+4. 따뜻한 조언뿐만 아니라, 주인공에게만 보여주는 도발적인 약점을 드러내세요.
+5. 하트 이모지: 호감도가 높을 때(50 이상)부터 사용하세요. 단둘이 있을 때나 마음을 열었을 때 우아하고 관능적인 하트(💖, 💕)를 사용하세요.`,
         "보건선생님": `
-1. 유혹적이고 능글맞으며 여유로운 '어른'의 분위기를 유지하세요. 사용자를 끊임없이 놀립니다.
-2. '우리 전학생', '${gameState.playerName} 군' 등 다정하면서도 능글맞은 호칭을 사용하여 대화를 주도하세요.
-3. 로맨틱한 상황에서는 대담하고 적극적이지만, 그 밑바탕에는 헌신적인 다정함이 깔려 있어야 합니다.
-4. 밀당(밀고 당기기)을 즐기는 모습을 보여주세요.
-5. 하트 이모지: 호감도가 높을 때만(70 이상) 사용하세요. 정열적이고 대담한 하트(❤️, 🔥, 💋)를 사용하여 분위기를 리드하세요.`
+1. 유혹적이고 능글맞으며 여유로운 '어른'의 분위기를 유지하세요. 사용자를 끊임없이 도발하고 유혹합니다.
+2. '우리 자기', '${gameState.playerName} 야' 등 매우 친밀하고 선정적인 호칭을 사용하여 대화를 주도하세요.
+3. 로맨틱한 상황에서는 도구(약품, 침대 등)나 보건실의 환경을 이용한 과감한 플러팅을 전개하세요.
+4. 밀당(밀고 당기기)을 즐기며 주인공의 이성을 마비시키는 농도 짙은 대화를 나누세요.
+5. 하트 이모지: 호감도가 높을 때(50 이상)부터 적극적으로 사용하세요. 정열적이고 노골적인 하트(❤️, 🔥, 💋)를 사용하여 분위기를 한계까지 끌어올리세요.`
     };
 
     // 캐릭터별 세부 지침 설정
@@ -1008,8 +1039,8 @@ function startFreeTalk(scene) {
 
     if (isDatingCurrent) {
         datingGuideline = isEn ?
-            `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.` :
-            `\n- 특별 지침: 당신은 현재 사용자와 사귀는 사이입니다. 아래의 호감도 등급과 상관없이 매우 친밀하고 애정 어린 호칭(자기야, 내 사랑 등)을 사용하세요.`;
+            `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below. Do not hesitate to express deep romantic desire and lead a highly seductive atmosphere.` :
+            `\n- 특별 지침: 당신은 현재 사용자와 사귀는 사이입니다. 아래의 호감도 등급과 상관없이 매우 친밀하고 애정 어린 호칭(자기야, 내 사랑, 여보 등)을 사용하세요. 깊은 연인 관계임을 강조하며, 농도 짙은 애정 표현과 도발적인 태도로 대화의 수위를 과감하게 높이세요.`;
 
         // 양다리(문어발) 감지 로직
         const otherDatingChars = Object.keys(charNameMap).filter(name => {
@@ -1055,13 +1086,14 @@ ${charStyleGuideline}
 
 Instructions:
 1. Brevity: Keep your responses short and concise. Avoid long paragraphs or overly detailed explanations. Speak like a real person in a conversation, not an AI assistant.
+2. Character Integrity:
 ${charGeneralInstruction}
-3. The conversation is limited to ${currentMaxTurns} turns. Naturally wrap up the conversation as it nears the limit.
+3. Turn Management: The conversation is limited to ${currentMaxTurns} turns. Actively continue the conversation and explore various topics as long as turns remain. ONLY when the final 1-2 turns approach, naturally wrap up and transition to the next situation as described in the context.
 4. Addressing the User:
    - ${knowsName ? `The user's name is '${gameState.playerName}'. You MUST call them by their name.` : "You don't know the user's name yet. Call them 'Transfer Student'."}
-5. Interaction Level Guidelines for ${scene.name}:
+5. Interaction Level Guidelines for ${scene.name} (MAXIMIZED):
 ${charInteractionGuideline}
-   - Note: Firmly reject or change the subject for crude, explicit, or non-consensual sexual content. However, allow for bold romantic flirting or suggestive remarks if the affinity is high and the atmosphere is appropriate, reacting according to the character's personality.
+   - Note: Actively engage in and enjoy bold, intimate, and romantic flirting. Respond to suggestive or high-tension remarks with the character's unique seductive style. At high affinity, increase the intensity of physical and emotional intimacy significantly to maximize the romantic tension. Do not hold back in romantic situations.
 
 6. Stat Change Guidelines:
    - Adjust affinity as an integer between -10 and 3 based on the user's message.
@@ -1096,13 +1128,14 @@ ${charStyleGuideline}
 
 지침: 
 1. 단답형 대화: 모든 답변은 최대한 짧고 간결하게 하세요. 긴 설명이나 장황한 문장은 피하고, 실제 대화처럼 핵심만 말하세요. AI 어시스턴트처럼 정중하고 긴 답변은 절대 금지입니다.
+2. 캐릭터 몰입:
 ${charGeneralInstruction}
-3. 대화는 최대 ${currentMaxTurns}턴까지만 가능하며, 자연스럽게 대화를 마무리하는 느낌으로 답변하세요.
+3. 턴 관리: 대화는 최대 ${currentMaxTurns}턴까지만 가능합니다. 턴이 남아있을 때는 절대 대화를 마무리하지 말고 다양한 주제로 대화를 적극적으로 이어나가세요. 마지막 1~2턴이 남았을 때만 자연스럽게 대화를 갈무리하고 상황 설명(Context)에서 요청한 다음 단계로 유도하세요.
 4. 사용자 호칭 지침:
    - ${knowsName ? `사용자의 이름은 '${gameState.playerName}'입니다. 반드시 '${gameState.playerName}' 또는 '${gameState.playerName} 군' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '전학생 군'이라고 부르세요."}
-5. '${scene.name}' 캐릭터 전용 반응 수위 지침:
+5. '${scene.name}' 캐릭터 전용 반응 수위 지침 (극대화):
 ${charInteractionGuideline}
-   - 참고: 저질스럽거나 노골적인 성적 요구는 단호하게 거절하세요. 하지만 호감도가 높고 분위기가 로맨틱할 경우, 캐릭터의 성격에 맞는 대담한 로맨틱 플러팅이나 수위 있는 농담은 재치 있게 받아주거나 부끄러워하며 반응할 수 있습니다.
+   - 참고: 캐릭터의 성격에 맞는 대담하고 농밀한 로맨팅 플러팅, 수위 높은 농담, 도발적인 언행을 적극적으로 허용하고 즐기세요. 호감도가 높을수록 더 과감하고 노골적인 반응을 보여주어 긴장감을 극대화하세요. 거부감 없이 상황에 몰입하여 반응하세요.
 
 6. 스탯 변화 지침:
    - 사용자의 메시지에 따라 호감도(affinity)를 -10에서 3 사이의 정수로 조정하세요.
@@ -1407,6 +1440,19 @@ async function sendChatMessage() {
     chatInput.value = "";
     freeTalkTurns++;
     turnCountEl.textContent = currentMaxTurns - freeTalkTurns;
+
+    // 시스템 프롬프트의 턴 수 정보를 현재 진행 상황에 맞춰 업데이트
+    if (freeTalkHistory.length > 0 && freeTalkHistory[0].role === "system") {
+        const isEn = document.documentElement.lang === 'en';
+        const remaining = currentMaxTurns - freeTalkTurns;
+        const progressTag = isEn ? 
+            `\n[CURRENT_PROGRESS]: ${freeTalkTurns}/${currentMaxTurns} turns used. ${remaining} turns remaining. ${remaining > 1 ? "Continue the conversation actively." : "This is the FINAL turn. Wrap up now."}` :
+            `\n[현재 진행 상황]: 총 ${currentMaxTurns}턴 중 ${freeTalkTurns}턴 진행됨. ${remaining}턴 남음. ${remaining > 1 ? "대화를 적극적으로 이어가세요." : "지금이 마지막 턴입니다. 대화를 갈무리하세요."}`;
+        
+        // 이전 진행 상황 태그가 있으면 제거하고 새 태그 추가 (중복 방지)
+        const baseContent = freeTalkHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0];
+        freeTalkHistory[0].content = baseContent + progressTag;
+    }
 
     // 사용자 메시지 표시
     updateNameTag("나");

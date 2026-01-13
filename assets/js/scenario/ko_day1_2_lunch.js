@@ -200,7 +200,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "서연",
         text: "\"후훗, 갑자기 너무 진지했나? 우리 좀 더 편하게 이야기하자. 나한테 궁금한 거 없어?\"",
-        context: "점심시간, 학교 옥상에서 단둘이 도시락을 먹고 난 뒤 평화롭고 로맨틱한 분위기에서 대화를 나누는 상황. 대화가 끝나면 서연이가 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어보는 상황으로 이어집니다. 대화 마무리 시점에 우리 사이의 특별한 느낌이나 편안함에 대해 언급하며 자연스럽게 질문을 던져주세요.",
+        context: "점심시간, 학교 옥상에서 단둘이 도시락을 먹고 난 뒤 평화롭고 로맨틱한 분위기에서 대화를 나누는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 서연이가 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어보는 상황으로 이어집니다. 대화의 마지막 턴에만 우리 사이의 특별한 느낌이나 편안함에 대해 언급하며 자연스럽게 질문을 던져주세요.",
         personality: "평소보다 조금 더 대담하고 솔직해진 상태. 주인공이 우리 관계를 어떻게 생각하는지, 왜 편안함을 느끼는지 알고 싶어 함.",
         character: "assets/images/characters/seyoun_shy.png",
         affinityChar: "Seoyeon",
@@ -469,6 +469,7 @@ Object.assign(SCENARIO[1], {
     "yuna_intro_2": {
         name: "유나",
         text: "\"{name}... 후훗, 좋은 이름이네. 이 학교... 겉보기와는 많이 다르거든. 너한테서도.. 왠지 낯익은 분위기가 느껴져.\"",
+        character: "assets/images/characters/yuna_smile.png",
         setFlag: "metYuna",
         next: "yuna_free_talk"
     },
@@ -476,7 +477,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "유나",
         text: "\"...나한테 궁금한 거라도 있어? 아니면 이 학교에 대해 알고 싶은 거야?\"",
-        context: "조용한 도서관 별관, 신비롭고 차가운 분위기의 유나와 처음 만난 상황. 대화가 끝나면 유나가 자신이나 학교의 비밀에 대해 더 알고 싶은지 물어보는 상황으로 이어집니다. 대화 마무리 시점에 더 깊은 이야기를 나눌 준비가 되었는지 확인하는 태도를 보여주세요.",
+        context: "조용한 도서관 별관, 신비롭고 차가운 분위기의 유나와 처음 만난 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 유나가 자신이나 학교의 비밀에 대해 더 알고 싶은지 물어보는 상황으로 이어집니다. 대화의 마지막 턴에만 더 깊은 이야기를 나눌 준비가 되었는지 확인하는 태도를 보여주세요.",
         personality: "신비롭고 차가우며 비밀이 많은 소녀. 주인공에게 묘한 흥미를 느끼고 있음.",
         character: "assets/images/characters/yuna_nomal.png",
         affinityChar: "Yuna",
@@ -500,7 +501,7 @@ Object.assign(SCENARIO[1], {
     "yuna_choices_low": {
         name: "나",
         text: "(유나의 눈빛이 더욱 싸늘해졌다. 내 태도가 그녀의 심기를 건드린 모양이다. 그녀는 차가운 목소리로 경고하듯 말을 내뱉었다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         choices: [
             { text: "학교가 다르다니? 그게 무슨 소리야?", next: "yuna_secret_low" },
             { text: "낯익다니... 나를 본 적이 있어?", next: "yuna_scent_low" },
@@ -532,13 +533,13 @@ Object.assign(SCENARIO[1], {
     "yuna_secret_low": {
         name: "유나",
         text: "(그녀가 비웃는 듯한 표정으로 나를 밀쳐낸다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "yuna_secret_low_2"
     },
     "yuna_secret_low_2": {
         name: "유나",
         text: "\"비밀? 너 같은 애가 감당할 수 있는 수준이 아냐. 괜히 쓸데없는 곳에 머리 들이밀지 말고, 조용히 학교생활이나 해.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_secret_normal": {
@@ -580,13 +581,13 @@ Object.assign(SCENARIO[1], {
     "yuna_scent_low": {
         name: "유나",
         text: "(그녀가 코를 찡긋하며 불쾌한 내색을 비친다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "yuna_scent_low_2"
     },
     "yuna_scent_low_2": {
         name: "유나",
         text: "\"착각이었나 보네. 평범한 아이들과 다를 바 없는 불쾌한 냄새뿐이야. 나를 아는 척하지 마.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_scent_normal": {
@@ -628,13 +629,13 @@ Object.assign(SCENARIO[1], {
     "yuna_danger_low": {
         name: "유나",
         text: "(그녀가 싸늘한 눈빛으로 경고한다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "yuna_danger_low_2"
     },
     "yuna_danger_low_2": {
         name: "유나",
         text: "\"입 조심해. 죽음보다 더한 공포가 뭔지 알고 싶지 않으면. 나한테 서슴없이 다가오다간 뼈도 못 추릴 테니까.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_danger_normal": {
@@ -835,7 +836,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "보건선생님",
         text: "\"긴장하지 마. 여기서는 편하게 있어도 된단다. 나한테 궁금한 거라도 있니?\"",
-        context: "보건실에서 처음 만난 보건선생님과 대화를 나누는 상황. 선생님은 주인공에게 묘한 흥미를 느끼며 도발적인 태도를 보임. 대화가 끝나면 점심시간이 종료되고 방과 후 상황으로 전환됩니다. 대화 마무리 시점에 이제 수업 들으러 가야 할 시간이라며 주인공을 배웅해 주세요.",
+        context: "보건실에서 처음 만난 보건선생님과 대화를 나누는 상황입니다. 선생님은 주인공에게 묘한 흥미를 느끼며 도발적인 태도를 보입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 점심시간이 종료되고 방과 후 상황으로 전환됩니다. 대화의 마지막 턴에만 이제 수업 들으러 가야 할 시간이라며 주인공을 배웅해 주세요.",
         personality: "성숙하고 매혹적인 '누님' 스타일. 도발적인 말로 주인공을 놀리는 것을 즐기지만 사실 누구보다 주인공을 아끼고 보호하려 함.",
         character: "assets/images/characters/nurse.png",
         affinityChar: "Nurse",

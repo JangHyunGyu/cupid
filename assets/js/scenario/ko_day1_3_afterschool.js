@@ -402,14 +402,14 @@ Object.assign(SCENARIO[1], {
     "after_yuna_rooftop_2_2": {
         name: "유나",
         text: "\"사람들은 이 학교가 완벽하다고 생각하지. 하지만 완벽은 환상일 뿐이야.\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_yuna_rooftop_3"
     },
     "after_yuna_rooftop_3": {
         name: "유나",
         text: "\"겉으로는 드러나지 않는 문제들이 곪아가고 있을 뿐이지. 이 학교를 가득 채운 무거운 기운... 넌 그런 변화를 못 느꼈어?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         choices: [
             { text: "너와 함께라면 어디든 괜찮아.", next: "after_yuna_together" },
@@ -419,14 +419,14 @@ Object.assign(SCENARIO[1], {
     "after_yuna_together": {
         name: "유나",
         text: "(그녀가 내 손을 꽉 쥔다. 그녀의 눈을 보며 슬픈 미소를 짓는데...)",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_yuna_together_2"
     },
     "after_yuna_together_2": {
         name: "유나",
         text: "\"바보 같은 소리... 하지만 싫지 않아. 좋아, 그럼 우리... 서로의 비밀을 공유하는 사이가 되는 건 어때?\"",
-        character: "assets/images/characters/yuna_sadsmile.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "yuna_contact_exchange"
     },
@@ -465,7 +465,7 @@ Object.assign(SCENARIO[1], {
     "after_yuna_scared_2": {
         name: "유나",
         text: "\"후훗, 역시 그렇겠지. 평범한 학생에게는 너무 무거운 이야기니까. 오늘은 이만 돌아가. 더 이상 깊이 알려고 하지 마.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_smile.png",
         night: true,
         next: "after_home"
     },
@@ -491,7 +491,7 @@ Object.assign(SCENARIO[1], {
     "after_yuna_secret_fail": {
         name: "유나",
         text: "(유나가 차가운 미소를 짓는다.) \"진실이라... 후훗, 넌 아직 그 무게를 견디기엔 너무 가벼워 보여. 궁금해하는 건 자유지만, 너무 깊이 파고들진 마. 다칠 수도 있으니까.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: -20 } },
         next: "after_home"
     },
@@ -570,7 +570,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "다인",
         text: "\"와, {name}! 가까이서 보니까 더 반가운데? 나한테 궁금한 거 있어? 운동이라든가, 학교생활이라든가!\"",
-        context: "방과 후 노을 지는 체육관, 연습을 마친 다인과 대화를 나누는 상황. 대화가 끝나면 다인이 마지막 연습 세트를 끝내고 같이 맛있는 것을 먹으러 가자고 제안하는 상황으로 이어집니다. 대화 마무리 시점에 연습을 마저 끝내야 한다는 언급을 하거나, 배가 고프다는 등의 이야기를 하며 자연스럽게 다음 상황으로 유도해 주세요.",
+        context: "방과 후 노을 지는 체육관, 연습을 마친 다인과 즐겁게 대화를 나누는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 모두 끝나면 다인이 마지막 연습 세트를 끝내고 같이 맛있는 것을 먹으러 가자고 제안하는 상황으로 이어집니다. 대화의 마지막 턴에만 자연스럽게 연습을 마저 끝내야 한다거나 배가 고프다는 등의 이야기를 하며 다음 상황으로 유도해 주세요.",
         personality: "털털하고 시원시원한 성격의 배구부 에이스. 운동을 사랑하며 주인공에게 호의적이고 에너지가 넘침.",
         character: "assets/images/characters/dain_nomal.png",
         affinityChar: "Dain",
@@ -644,25 +644,25 @@ Object.assign(SCENARIO[1], {
     "after_dain_tired_normal": {
         name: "다인",
         text: "(다인이는 살짝 아쉬운 표정을 짓더니 이내 고개를 끄덕인다.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_dain_tired_normal_2"
     },
     "after_dain_tired_normal_2": {
         name: "다인",
         text: "\"아... 맞다. 전학 첫날이라 피곤하겠구나. 미안, 내가 너무 신났나 봐. 그래, 오늘은 이만 들어가 봐. 내일 봐!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_home"
     },
     "after_dain_tired": {
         name: "다인",
         text: "(다인이는 살짝 아쉬운 표정을 짓더니 이내 고개를 끄덕인다.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_dain_tired_2"
     },
     "after_dain_tired_2": {
         name: "다인",
         text: "\"아... 맞다. 전학 첫날이라 피곤하겠구나. 미안, 내가 너무 신났나 봐. 그래, 오늘은 이만 들어가 봐. 내일 봐!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_sad.png",
         next: "after_home"
     },
     "after_dain_help_high": {
@@ -867,7 +867,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(다인이는 어이없다는 듯 웃음을 터뜨린다.) \"야, 너 진짜 웃긴다. 번호 받자마자 전화하니, 너무 서두르는 거 아냐? 일단 메시지부터 주고받으면서 친해지자고!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_shy.png",
         night: true,
         stats: { Dain: { affinity: -20 } },
         next: "after_home"

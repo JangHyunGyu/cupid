@@ -200,7 +200,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Seoyeon",
         text: "\"Hehe, was I too serious all of a sudden? Let's talk more comfortably. Is there anything you're curious about?\"",
-        context: "Lunch time, a situation where they are having a conversation in a relaxed and romantic atmosphere after eating lunch boxes alone on the school rooftop. After the conversation, Seoyeon will mention that she feels comfortable and good when she's with the protagonist, and ask why he thinks that is. At the end of the conversation, please naturally ask the question by mentioning this special feeling of comfort.",
+        context: "Lunch time, a situation where they are having a conversation in a relaxed and romantic atmosphere after eating lunch boxes alone on the school rooftop. Keep the conversation going actively until it's finished. After the conversation, Seoyeon will mention that she feels comfortable and good when she's with the protagonist, and ask why he thinks that is. ONLY at the final turn of the conversation, please naturally ask the question by mentioning this special feeling of comfort.",
         personality: "A state where she has become a bit more bold and honest than usual. She wants to know why she feels so comfortable with the protagonist.",
         character: "assets/images/characters/seyoun_shy.png",
         affinityChar: "Seoyeon",
@@ -455,6 +455,7 @@ Object.assign(SCENARIO[1], {
     "yuna_intro_2": {
         name: "Yuna",
         text: "\"{name}... Hehe, that's a nice name. This school... is very different from how it looks. From you... somehow I feel a familiar atmosphere.\"",
+        character: "assets/images/characters/yuna_smile.png",
         setFlag: "metYuna",
         next: "yuna_free_talk"
     },
@@ -462,7 +463,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Yuna",
         text: "\"...Do you have any questions for me? Or do you want to know about this school?\"",
-        context: "Quiet library annex, a situation where he first met Yuna, who has a mysterious and cold atmosphere. After the conversation, Yuna will ask if you want to know more about her or the school's secrets. At the end of the conversation, please show an attitude of checking if the protagonist is ready to share deeper stories.",
+        context: "Quiet library annex, a situation where he first met Yuna, who has a mysterious and cold atmosphere. Keep the conversation going actively until it's finished. After the conversation, Yuna will ask if you want to know more about her or the school's secrets. ONLY at the final turn of the conversation, please show an attitude of checking if the protagonist is ready to share deeper stories.",
         personality: "A mysterious, cold girl with many secrets. She feels a strange interest in the protagonist.",
         character: "assets/images/characters/yuna_nomal.png",
         affinityChar: "Yuna",
@@ -486,7 +487,7 @@ Object.assign(SCENARIO[1], {
     "yuna_choices_low": {
         name: "Me",
         text: "(Yuna's gaze became even colder. It seems my attitude offended her. She spat out words as if warning me in a cold voice.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         choices: [
             { text: "The school is different? What does that mean?", next: "yuna_secret_low" },
             { text: "Familiar... Have you seen me before?", next: "yuna_scent_low" },
@@ -518,14 +519,14 @@ Object.assign(SCENARIO[1], {
     "yuna_secret_low": {
         name: "Yuna",
         text: "(She pushes me away with a mocking expression.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         stats: { Yuna: { affinity: 2 } },
         next: "yuna_secret_low_2"
     },
     "yuna_secret_low_2": {
         name: "Yuna",
         text: "\"Secret? It's not a level someone like you can handle. Don't poke your head into useless places and just live a quiet school life.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_secret_normal": {
@@ -567,13 +568,13 @@ Object.assign(SCENARIO[1], {
     "yuna_scent_low": {
         name: "Yuna",
         text: "(She takes a step back and looks at me with an unpleasant expression.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "yuna_scent_low_2"
     },
     "yuna_scent_low_2": {
         name: "Yuna",
         text: "\"...Somehow, it's a very irritating scent. A light that's destined to go out soon anyway... It's better not to get too close.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_scent_normal": {
@@ -615,13 +616,13 @@ Object.assign(SCENARIO[1], {
     "yuna_danger_low": {
         name: "Yuna",
         text: "(She cold-heartedly releases my hand she was holding.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "yuna_danger_low_2"
     },
     "yuna_danger_low_2": {
         name: "Yuna",
         text: "\"Dangerous? Hehe, as if a coward like you could handle my danger. Just keep trembling in fear.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_angry.png",
         next: "after_school_start"
     },
     "yuna_danger_normal": {
@@ -820,7 +821,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Nurse",
         text: "\"Don't be nervous. You can be comfortable here. Do you have anything you're curious about?\"",
-        context: "A situation where you talk to the nurse you met for the first time in the nurse's office. The teacher shows a provocative attitude, feeling a strange interest in the protagonist. After the conversation, lunch time ends and the situation transitions to after school. At the end of the conversation, please see the protagonist off, saying it's time to go to class.",
+        context: "A situation where you talk to the nurse you met for the first time in the nurse's office. The teacher shows a provocative attitude, feeling a strange interest in the protagonist. Keep the conversation going actively until it's finished. After the conversation, lunch time ends and the situation transitions to after school. ONLY at the final turn of the conversation, please see the protagonist off, saying it's time to go to class.",
         personality: "Mature and seductive 'older sister' style. Enjoys teasing the protagonist with provocative words, but actually cares for and tries to protect the protagonist more than anyone else.",
         character: "assets/images/characters/nurse.png",
         affinityChar: "Nurse",
