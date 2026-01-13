@@ -184,7 +184,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_happy": {
         name: "서연",
-        text: "\"정말? 후훗, 그럼 오늘부터는 사소한 거라도 다 공유하기다? 자, 같이 교실로 가자!\"",
+        text: "\"정말? 그럼 오늘부터는 사소한 거라도 다 공유하기다? 자, 같이 교실로 가자!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_classroom"
     },
