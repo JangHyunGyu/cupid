@@ -63,14 +63,16 @@ window.CHARACTER_EXPRESSIONS = {
         "smile": "assets/images/characters/yuna_smile.png",
         "shy": "assets/images/characters/yuna_shy.png",
         "angry": "assets/images/characters/yuna_angry.png",
-        "sad": "assets/images/characters/yuna_sad.png"
+        "sad": "assets/images/characters/yuna_sad.png",
+        "bored": "assets/images/characters/yuna_bored.png"
     },
     "Yuna": {
         "normal": "assets/images/characters/yuna_nomal.png",
         "smile": "assets/images/characters/yuna_smile.png",
         "shy": "assets/images/characters/yuna_shy.png",
         "angry": "assets/images/characters/yuna_angry.png",
-        "sad": "assets/images/characters/yuna_sad.png"
+        "sad": "assets/images/characters/yuna_sad.png",
+        "bored": "assets/images/characters/yuna_bored.png"
     },
     "다인": {
         "normal": "assets/images/characters/dain_nomal.png",
