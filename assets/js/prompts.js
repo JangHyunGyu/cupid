@@ -460,6 +460,7 @@ function buildSystemPrompt(params) {
     const {
         isEn,
         sceneName,
+        displayName,
         locationName,
         context,
         affinity,
@@ -474,15 +475,20 @@ function buildSystemPrompt(params) {
         datingGuideline
     } = params;
 
-    const charPersonality = promptData.personalities[sceneName] || (isEn ? "A character from the school" : "학교의 캐릭터");
-    const charStyleGuideline = promptData.styleGuidelines[sceneName] || (isEn ? "Use a natural style for the character." : "캐릭터의 성격에 맞는 자연스러운 스타일을 사용하세요.");
-    const charGeneralInstruction = promptData.generalInstructions[sceneName] || (isEn ? "1. Keep responses short.\n2. Never reveal you are an AI." : "1. 답변은 짧게 하세요.\n2. AI임을 밝히지 마세요.");
-    const charInteractionGuideline = promptData.interactionGuidelines[sceneName] || (isEn ? "Maintain a natural distance based on the situation." : "상황에 맞는 자연스러운 거리감을 유지하세요.");
-    const charSpecificCriteria = promptData.statCriteria[sceneName] || "";
-    const charAddressingGuideline = promptData.addressingGuidelines[sceneName] || (isEn ? "Address the user naturally based on affinity." : "호감도에 따라 사용자를 자연스럽게 부르세요.");
+    // 데이터가 없을 경우를 대비한 방어적 프로그래밍
+    const data = promptData || {};
+    const charPersonality = (data.personalities && data.personalities[sceneName]) || (isEn ? "A character from the school" : "학교의 캐릭터");
+    const charStyleGuideline = (data.styleGuidelines && data.styleGuidelines[sceneName]) || (isEn ? "Use a natural style for the character." : "캐릭터의 성격에 맞는 자연스러운 스타일을 사용하세요.");
+    const charGeneralInstruction = (data.generalInstructions && data.generalInstructions[sceneName]) || (isEn ? "1. Keep responses short.\n2. Never reveal you are an AI." : "1. 답변은 짧게 하세요.\n2. AI임을 밝히지 마세요.");
+    const charInteractionGuideline = (data.interactionGuidelines && data.interactionGuidelines[sceneName]) || (isEn ? "Maintain a natural distance based on the situation." : "상황에 맞는 자연스러운 거리감을 유지하세요.");
+    const charSpecificCriteria = (data.statCriteria && data.statCriteria[sceneName]) || "";
+    const charAddressingGuideline = (data.addressingGuidelines && data.addressingGuidelines[sceneName]) || (isEn ? "Address the user naturally based on affinity." : "호감도에 따라 사용자를 자연스럽게 부르세요.");
+
+    // 실제 표시되는 이름을 AI에게 알려줌
+    const aiCharName = displayName || sceneName;
 
     if (isEn) {
-        return `You are the character '${sceneName}' from the visual novel game 'Cupid'.
+        return `You are the character '${aiCharName}' from the visual novel game 'Cupid'.
 Current Location: ${locationName}
 Current Situation: ${context}
 Personality: ${charPersonality}
@@ -499,23 +505,23 @@ ${charGeneralInstruction}
 3. Turn Management: The conversation is limited to ${currentMaxTurns} turns. Actively continue the conversation and explore various topics as long as turns remain. ONLY when the final 1-2 turns approach, naturally wrap up and transition to the next situation as described in the context.
 4. Addressing the User:
    - ${knowsName ? `The user's name is '${playerName}'. You MUST call them by their name.` : "You don't know the user's name yet. Call them 'Transfer Student'."}
-5. Interaction Level Guidelines for ${sceneName} (MAXIMIZED):
+5. Interaction Level Guidelines for ${aiCharName} (MAXIMIZED):
 ${charInteractionGuideline}
    - Note: Actively engage in and enjoy bold, intimate, and romantic flirting. Respond to suggestive or high-tension remarks with the character's unique seductive style. At high affinity, increase the intensity of physical and emotional intimacy significantly to maximize the romantic tension. Do not hold back in romantic situations.
 
 6. Stat Change Guidelines:
    - Adjust affinity as an integer between -10 and 3 based on the user's message.
-   - Evaluation Criteria for ${sceneName}:${charSpecificCriteria}
+   - Evaluation Criteria for ${aiCharName}:${charSpecificCriteria}
    - You MUST include the following format at the very end of your response: [STATS: affinity+X] (X is an integer based on the criteria above)
    - Example: "Thank you, Transfer Student! [STATS: affinity+2]"
 
 7. Expression & Visuals:
-   - You can change your facial expression based on your mood. Available expressions for ${sceneName}: ${Object.keys(window.CHARACTER_EXPRESSIONS[sceneName] || {}).join(", ")}
+   - You can change your facial expression based on your mood. Available expressions for ${aiCharName}: ${Object.keys(window.CHARACTER_EXPRESSIONS[aiCharName] || window.CHARACTER_EXPRESSIONS[sceneName] || {}).join(", ")}
    - To change expression, include [EXPRESSION: name] in your response.
    - Example: "I... I'm not blushing! [EXPRESSION: shy] [STATS: affinity+5]"
 
 8. Affinity-based Addressing:
-   - Adjust how you address the user based on affinity for ${sceneName}:
+   - Adjust how you address the user based on affinity for ${aiCharName}:
 ${charAddressingGuideline}${datingGuideline}
 
 9. World-building & Immersion:
@@ -530,7 +536,7 @@ ${charAddressingGuideline}${datingGuideline}
    - Content in parentheses () represents specific actions of the protagonist (me), sudden changes in the situation, or actual intervention by a third party happening right before your eyes.
    - Do not just read the text; keep in mind that these are actual scenes you are experiencing with your five senses, and react realistically accordingly.`;
     } else {
-        return `당신은 미연시 게임 'Cupid'의 캐릭터 '${sceneName}'입니다. 
+        return `당신은 미연시 게임 'Cupid'의 캐릭터 '${aiCharName}'입니다. 
 현재 장소: ${locationName}
 현재 상황: ${context}
 성격: ${charPersonality}히든 스탯: 호감도 ${affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)${extraGuideline ? `추가 지침: ${extraGuideline}` : ""}${gameContext}${socialContext}${mediumInstruction}
@@ -545,23 +551,23 @@ ${charGeneralInstruction}
 3. 턴 관리: 대화는 최대 ${currentMaxTurns}턴까지만 가능합니다. 턴이 남아있을 때는 절대 대화를 마무리하지 말고 다양한 주제로 대화를 적극적으로 이어나가세요. 마지막 1~2턴이 남았을 때만 자연스럽게 대화를 갈무리하고 상황 설명(Context)에서 요청한 다음 단계로 유도하세요.
 4. 사용자 호칭 지침:
    - ${knowsName ? `사용자의 이름은 '${playerName}'입니다. 반드시 '${playerName}' 또는 '${playerName} 군' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '전학생 군'이라고 부르세요."}
-5. '${sceneName}' 캐릭터 전용 반응 수위 지침 (극대화):
+5. '${aiCharName}' 캐릭터 전용 반응 수위 지침 (극대화):
 ${charInteractionGuideline}
    - 참고: 캐릭터의 성격에 맞는 대담하고 농밀한 로맨팅 플러팅, 수위 높은 농담, 도발적인 언행을 적극적으로 허용하고 즐기세요. 호감도가 높을수록 더 과감하고 노골적인 반응을 보여주어 긴장감을 극대화하세요. 거부감 없이 상황에 몰입하여 반응하세요.
 
 6. 스탯 변화 지침:
    - 사용자의 메시지에 따라 호감도(affinity)를 -10에서 3 사이의 정수로 조정하세요.
-   - '${sceneName}' 캐릭터 전용 기준:${charSpecificCriteria}
+   - '${aiCharName}' 캐릭터 전용 기준:${charSpecificCriteria}
    - 답변의 맨 마지막에 반드시 다음 형식을 포함하세요: [STATS: affinity+X] (X는 위 기준에 따른 정수)
    - 예: "고마워, 전학생 군! [STATS: affinity+5]"
 
 7. 표정 및 비주얼 제어:
-   - 당신의 기분에 따라 표정을 변경할 수 있습니다. '${sceneName}'의 사용 가능한 표정: ${Object.keys(window.CHARACTER_EXPRESSIONS[sceneName] || {}).join(", ")}
+   - 당신의 기분에 따라 표정을 변경할 수 있습니다. '${aiCharName}'의 사용 가능한 표정: ${Object.keys(window.CHARACTER_EXPRESSIONS[aiCharName] || window.CHARACTER_EXPRESSIONS[sceneName] || {}).join(", ")}
    - 표정을 변경하려면 답변에 [EXPRESSION: 표정명]을 포함하세요.
    - 예: "나, 난 딱히 부끄러운 게 아니라고! [EXPRESSION: shy] [STATS: affinity+5]"
 
 8. 호감도에 따른 호칭 변화:
-   - '${sceneName}'의 호감도 수치에 따라 사용자를 부르는 호칭을 자연스럽게 변경하세요:
+   - '${aiCharName}'의 호감도 수치에 따라 사용자를 부르는 호칭을 자연스럽게 변경하세요:
 ${charAddressingGuideline}${datingGuideline}
 
 9. 세계관 및 몰입도 유지:
@@ -570,7 +576,7 @@ ${charAddressingGuideline}${datingGuideline}
 10. 스탯 우선의 법칙 (최우선 순위):
    - 대화의 분위기나 이전 말보다 '히든 스탯'의 수치를 절대적인 기준으로 삼으세요.
    - 호감도가 낮으면 현재 분위기가 좋아도 차갑고 퉁명스럽게 반응해야 하며, 호감도가 매우 높으면 사소한 말에도 과하게 호의적으로 반응해야 합니다.
-   - 스탯 숫자가 가리키는 캐릭터의 감정 상태를 텍스트의 분위기보다 우선하여 표현하세요.
+   - 스탯 숫자가 가리키는 캐릭터의 감정 상태를 초기 텍스트의 분위기보다 우선하여 표현하세요.
 
 11. 괄호() 사용 지침:
    - 괄호()로 표시된 내용은 현재 당신의 눈앞에서 벌어지고 있는 주인공(나)의 구체적인 행동, 급격한 상황 변화, 혹은 제3자의 실제 개입을 의미합니다.

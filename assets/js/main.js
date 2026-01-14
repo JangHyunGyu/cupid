@@ -1,5 +1,5 @@
 const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
-const ASSET_VERSION = "1.0.14"; // 에셋 캐시 방지를 위한 버전 번호
+const ASSET_VERSION = "1.0.15"; // 에셋 캐시 방지를 위한 버전 번호
 
 // 에셋 URL에 버전을 추가하는 헬퍼 함수
 function getAssetUrl(url) {
@@ -53,8 +53,8 @@ let gameState = {
 
 // 프리토킹 관련 변수
 let freeTalkTurns = 0;
-let currentMaxTurns = 5;
-const DEFAULT_MAX_FREE_TALK_TURNS = 5;
+let currentMaxTurns = 3;
+const DEFAULT_MAX_FREE_TALK_TURNS = 3;
 let freeTalkHistory = [];
 let isFreeTalking = false;
 
@@ -624,7 +624,8 @@ async function startFreeTalk(scene) {
     // 시스템 프롬프트 생성
     const systemPrompt = window.buildSystemPrompt({
         isEn,
-        sceneName: scene.name,
+        sceneName: charKey,
+        displayName: scene.name,
         locationName,
         context: scene.context || (isEn ? "Talking with the user." : "사용자와 대화 중입니다."),
         affinity: charStats.affinity,
