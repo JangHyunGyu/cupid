@@ -57,6 +57,15 @@
                 <div id="name-tag"></div>
                 <div id="message"></div>
                 <div id="next-indicator">▼</div>
+
+                <!-- Name Input -->
+                <div id="name-input-container" style="display: none;">
+                    <div id="name-input-wrapper">
+                        <input type="text" id="player-name-input" placeholder="Enter your name (1-4 chars)" maxlength="4">
+                        <button id="name-confirm-btn">Confirm</button>
+                    </div>
+                    <div id="name-input-guide">1-4 characters (Letters only)</div>
+                </div>
             </div>
             
             <div id="choice-container" style="display: none;">
@@ -79,15 +88,6 @@
                     </button>
                 </div>
                 <div id="chat-turn-indicator">Turns left: <span id="turn-count">3</span></div>
-            </div>
-
-            <!-- Name Input -->
-            <div id="name-input-container" style="display: none;">
-                <div id="name-input-wrapper">
-                    <input type="text" id="player-name-input" placeholder="Enter your name (1-4 chars)" maxlength="4">
-                    <button id="name-confirm-btn">Decide</button>
-                </div>
-                <div id="name-input-guide">1-4 characters (No numbers or special characters)</div>
             </div>
         </div>
 

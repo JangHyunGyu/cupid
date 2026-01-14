@@ -434,7 +434,7 @@ async function renderScene(sceneId) {
     if (scene.type === 'free_talk') {
         startFreeTalk(scene);
     } else if (scene.type === 'input') {
-        dialogueBox.style.pointerEvents = 'none'; // 클릭이 입력창으로 전달되도록 설정
+        dialogueBox.style.pointerEvents = 'auto'; // 입력창이 대화창 안에 있으므로 auto 유지
         if (scene.text) {
             await typeText(scene.text, scene.name);
             if (currentSceneId !== sceneId) return;
