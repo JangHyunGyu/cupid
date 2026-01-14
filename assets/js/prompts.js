@@ -441,14 +441,17 @@ function getPromptData(isEn, playerName) {
     };
 
     return {
-        defaultPersonalities,
-        defaultStatCriteria,
-        defaultInteractionGuidelines,
-        defaultAddressingGuidelines,
-        defaultStyleGuidelines,
-        defaultGeneralInstructions
+        personalities: defaultPersonalities,
+        statCriteria: defaultStatCriteria,
+        interactionGuidelines: defaultInteractionGuidelines,
+        addressingGuidelines: defaultAddressingGuidelines,
+        styleGuidelines: defaultStyleGuidelines,
+        generalInstructions: defaultGeneralInstructions
     };
 }
+
+// 전역 함수로 노출
+window.getPromptData = getPromptData;
 
 /**
  * 시스템 프롬프트 생성 함수
@@ -575,6 +578,9 @@ ${charAddressingGuideline}${datingGuideline}
     }
 }
 
+// 전역 함수로 노출
+window.buildSystemPrompt = buildSystemPrompt;
+
 /**
  * AI 응답 실패 시 사용할 캐릭터별 기본 대답을 반환합니다.
  */
@@ -635,3 +641,6 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
         return "미안, 지금은 좀 바빠서 나중에 이야기하자!";
     }
 }
+
+// 전역 함수로 노출
+window.getFallbackReply = getFallbackReply;
