@@ -432,7 +432,7 @@ async function renderScene(sceneId) {
 
     // 프리토킹 모드 확인
     if (scene.type === 'free_talk') {
-        startFreeTalk(scene);
+        await startFreeTalk(scene);
     } else if (scene.type === 'input') {
         dialogueBox.style.pointerEvents = 'auto'; // 입력창이 대화창 안에 있으므로 auto 유지
         if (scene.text) {
@@ -544,7 +544,7 @@ function getSocialContext(currentCharName, isEn) {
     return header + otherChars + jealousyInstruction;
 }
 
-function startFreeTalk(scene) {
+async function startFreeTalk(scene) {
     isFreeTalking = true;
     freeTalkTurns = 0;
     currentMaxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
@@ -584,7 +584,7 @@ function startFreeTalk(scene) {
     const charStats = gameState.stats[charKey] || { affinity: 0 };
 
     // 프롬프트 데이터 가져오기 (분리된 파일)
-    const promptData = getPromptData(isEn, gameState.playerName);
+    const promptData = window.getPromptData(isEn, gameState.playerName);
 
     // 사귀는 사이일 경우 호칭 가이드라인 추가
     let datingGuideline = "";
@@ -622,7 +622,7 @@ function startFreeTalk(scene) {
         (isRemote ? "\n- 매체 지침: 현재 '전화' 또는 '메시지'로 연락 중입니다. '눈을 마주친다'거나 '손을 잡는다'는 등의 물리적 접촉 묘사는 피하세요. 대신 텍스트 메시지나 통화 상황에 맞는 표현을 사용하세요." : "\n- 매체 지침: 현재 '대면'하여 대화 중입니다. 눈맞춤, 표정 변화, 물리적 거리감 등을 자유롭게 묘사할 수 있습니다.");
 
     // 시스템 프롬프트 생성
-    const systemPrompt = buildSystemPrompt({
+    const systemPrompt = window.buildSystemPrompt({
         isEn,
         sceneName: scene.name,
         locationName,
@@ -662,7 +662,7 @@ function startFreeTalk(scene) {
     if (chatSkipBtn) chatSkipBtn.disabled = false;
 
     if (scene.text) {
-        typeText(scene.text, scene.name);
+        await typeText(scene.text, scene.name);
         freeTalkHistory.push({ role: "assistant", content: scene.text });
     }
 }
