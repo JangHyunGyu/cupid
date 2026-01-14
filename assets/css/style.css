@@ -423,44 +423,44 @@ body, html {
 
 /* 이름 입력창 스타일 */
 #name-input-container {
-    position: absolute;
-    bottom: 240px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 400px;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    z-index: 50;
+    margin-top: 15px;
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    z-index: 150;
     text-align: center;
     pointer-events: auto;
 }
 
 #name-input-wrapper {
     display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 8px;
+    margin-bottom: 8px;
+    justify-content: center;
 }
 
 #player-name-input {
     flex: 1;
-    padding: 12px 15px;
+    max-width: 250px;
+    padding: 8px 12px;
     border: 2px solid #ff69b4;
-    border-radius: 12px;
-    font-size: 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
     outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
 }
 
 #name-confirm-btn {
-    padding: 0 20px;
+    padding: 0 15px;
     background: #ff69b4;
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     cursor: pointer;
     transition: background 0.2s;
     white-space: nowrap;
@@ -472,14 +472,13 @@ body, html {
 }
 
 #name-input-guide {
-    font-size: 0.8rem;
-    color: #666;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 768px) {
     #name-input-container {
-        bottom: 220px;
-        padding: 15px;
+        margin-top: 10px;
     }
 }
 
