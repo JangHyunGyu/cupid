@@ -255,9 +255,9 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(I finished the conversation with Seoyeon. She is looking at me with sparkling eyes, as if waiting for my answer. She told me she feels comfortable and good when she's with me, and asked why I think that is.)",
         choices: [
-            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny" },
-            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind" },
-            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable" }
+            { text: "Me too. Somehow it feels like destiny?", next: "rooftop_destiny_normal" },
+            { text: "Maybe it's because Seoyeon treated me so kindly?", next: "rooftop_kind_normal" },
+            { text: "Well, I'm not sure yet. But I feel comfortable with you.", next: "rooftop_comfortable_normal" }
         ]
     },
     "rooftop_destiny_high": {
@@ -273,14 +273,14 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_shy2.png",
         next: "seyoun_contact_exchange"
     },
-    "rooftop_destiny": {
+    "rooftop_destiny_normal": {
         name: "Seoyeon",
         text: "(She shyly smiles and gently overlaps her hand on mine.)",
         character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 5 } },
-        next: "rooftop_destiny_2"
+        next: "rooftop_destiny_normal_2"
     },
-    "rooftop_destiny_2": {
+    "rooftop_destiny_normal_2": {
         name: "Seoyeon",
         text: "\"Destiny... Hehe, it's a bit of a ticklish word, but I don't dislike it. Because I sometimes feel that way when I'm with you too.\"",
         character: "assets/images/characters/seyoun_shy.png",
@@ -325,14 +325,14 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_pout.png",
         next: "seyoun_contact_exchange"
     },
-    "rooftop_kind": {
+    "rooftop_kind_normal": {
         name: "Seoyeon",
         text: "(She pouts her lips as if slightly sulky.)",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: 3 } },
-        next: "rooftop_kind_2"
+        next: "rooftop_kind_normal_2"
     },
-    "rooftop_kind_2": {
+    "rooftop_kind_normal_2": {
         name: "Seoyeon",
         text: "\"Hmph... That's such a standard answer. But well, it's not wrong, so I'll let it slide. I'll look forward to a more honest answer from now on?\"",
         character: "assets/images/characters/seyoun_pout.png",
@@ -361,6 +361,19 @@ Object.assign(SCENARIO[1], {
     "rooftop_comfortable_low_2": {
         name: "Seoyeon",
         text: "\"You're not sure... Is it still uncomfortable being with me? I guess I should try harder.\"",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "seyoun_contact_exchange"
+    },
+    "rooftop_comfortable_normal": {
+        name: "Seoyeon",
+        text: "(She nods as if satisfied.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        stats: { Seoyeon: { affinity: 4 } },
+        next: "rooftop_comfortable_normal_2"
+    },
+    "rooftop_comfortable_normal_2": {
+        name: "Seoyeon",
+        text: "\"I'm glad you feel comfortable. I also feel like I can put down the burden of being the student council president for a while when I'm with you. Thank you, {name}.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "seyoun_contact_exchange"
     },

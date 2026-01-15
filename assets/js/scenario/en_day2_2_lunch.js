@@ -150,52 +150,68 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_talk_branch_low": {
+        name: "Me",
+        text: "(Yuna looks at me with cold and disappointed eyes.)",
         branches: [
-            { next: "day2_yuna_talk_2_met_low", condition: "knowsName_Yuna" },
+            { next: "day2_yuna_talk_2_met_low", condition: "metYuna" },
             { next: "day2_yuna_talk_2_new_low" }
         ]
     },
     "day2_yuna_talk_2_met_high": {
-        name: "Yuna",
-        text: "\"Hehe, {name}. It's good to see you again. My heart beats faster every time I see you... like I've found someone truly special.\"",
+        name: "Me",
+        text: "(Yuna mentions the school secrets she talked about yesterday and says there's something she wants to show only to me because she trusts me.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "day2_yuna_secret_high"
     },
     "day2_yuna_talk_2_met_low": {
-        name: "Yuna",
-        text: "\"...Oh, it's you, {name}. I was hoping to be alone... but I guess fate has a dark sense of humor.\"",
+        name: "Me",
+        text: "(Yuna mentions the school secrets she talked about yesterday, but says she's reconsidering showing them to me since my attitude is disappointing.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_secret_low"
     },
     "day2_yuna_talk_2_new_high": {
-        name: "Yuna",
-        text: "\"Oh? You actually found me. I was waiting for you... even if I didn't say it. My heart skipped a beat when I saw you.\"",
+        name: "Me",
+        text: "(Yuna looks at me and blushes very slightly. She welcomes me with a shy smile as if she knew I would come here in advance.)",
         character: "assets/images/characters/yuna_smile.png",
-        next: "day2_yuna_new_name_ask_normal"
+        next: "day2_yuna_new_name_ask_high"
     },
     "day2_yuna_talk_2_new_low": {
-        name: "Yuna",
-        text: "\"...What do you want? I don't feel like talking to anyone, especially not someone who radiates such chaotic energy.\"",
+        name: "Me",
+        text: "(Yuna looks at me with an annoyed expression. She seems to regret that I found this place.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_new_name_ask_low"
     },
     "day2_yuna_talk_branch": {
+        name: "Me",
+        text: "(Yuna looks at me and starts to speak.)",
         branches: [
-            { next: "day2_yuna_talk_2_met", condition: "knowsName_Yuna" },
-            { next: "day2_yuna_talk_2_new" }
+            { next: "day2_yuna_talk_2_met_normal", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_new_normal" }
         ]
     },
-    "day2_yuna_talk_2_met": {
-        name: "Yuna",
-        text: "\"Oh, {name}. You're here. Most people would have given up by now. You're persistent... I suppose that's a trait.\"",
+    "day2_yuna_talk_2_met_normal": {
+        name: "Me",
+        text: "(Yuna mentions the secrets of the school she talked about yesterday and said there was something she wanted to show only to me.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_secret_normal"
     },
-    "day2_yuna_talk_2_new": {
-        name: "Yuna",
-        text: "\"You're the transfer student everyone's talking about, right? Most kids are too loud. You... you're a bit different.\"",
+    "day2_yuna_talk_2_new_normal": {
+        name: "Me",
+        text: "(Yuna looks at me with curious eyes. She seems to have a strange interest in me, the transfer student.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_new_name_ask_normal"
+    },
+    "day2_yuna_new_name_ask_high": {
+        name: "Yuna",
+        text: "\"...I want to know your name. I feel like it'll be a special name to me.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day2_yuna_new_name_share_high"
+    },
+    "day2_yuna_new_name_share_high": {
+        name: "Me",
+        text: "\"My name is {name}.\"",
+        setFlag: "knowsName_Yuna",
+        next: "day2_yuna_secret_high"
     },
     "day2_yuna_new_name_ask_low": {
         name: "Yuna",
@@ -284,7 +300,6 @@ Object.assign(SCENARIO[2], {
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_yuna_secret_read_high" },
-            { minAffinity: 0, next: "day2_yuna_secret_read_normal" },
             { minAffinity: -999, next: "day2_yuna_secret_read_low" }
         ]
     },
@@ -302,19 +317,11 @@ Object.assign(SCENARIO[2], {
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
-    "day2_yuna_secret_read_normal": {
-        name: "Yuna",
-        text: "\"Hehe, as expected, you're different from the other kids. Fine, but you should be prepared. Truth can sometimes be poison.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        setFlag: "day2_met_yuna_lunch",
-        next: "day2_yuna_lunch_end"
-    },
     "day2_yuna_secret_stop": {
         type: "free_talk",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_yuna_secret_stop_high" },
-            { minAffinity: 0, next: "day2_yuna_secret_stop_normal" },
             { minAffinity: -999, next: "day2_yuna_secret_stop_low" }
         ]
     },
@@ -332,19 +339,11 @@ Object.assign(SCENARIO[2], {
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
-    "day2_yuna_secret_stop_normal": {
-        name: "Yuna",
-        text: "\"...You're a coward. Well, I understand. For a normal kid, that's a natural reaction. You should leave for today.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        setFlag: "day2_met_yuna_lunch",
-        next: "day2_yuna_lunch_end"
-    },
     "day2_yuna_secret_why": {
         type: "free_talk",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_yuna_secret_why_high" },
-            { minAffinity: 0, next: "day2_yuna_secret_why_normal" },
             { minAffinity: -999, next: "day2_yuna_secret_why_low" }
         ]
     },
@@ -362,14 +361,6 @@ Object.assign(SCENARIO[2], {
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
-    "day2_yuna_secret_why_normal": {
-        name: "Yuna",
-        text: "\"Well... should I say it's to find lost memories? Or maybe I just need some excitement in this boring school life.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        setFlag: "day2_met_yuna_lunch",
-        next: "day2_yuna_lunch_end"
-    },
-
     "day2_yuna_normal_high": {
         name: "Yuna",
         text: "\"You came here because you wanted to talk to me...? Fufu, you really say such lovely things. Fine, then would you stay with me a bit longer like this today?\"",
@@ -632,6 +623,12 @@ Object.assign(SCENARIO[2], {
         text: "(She leads me to a bed with a gentle smile. The air is filled with the soothing scent of herbs.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_4"
+    },
+    "day2_lunch_nurse_4": {
+        name: "Nurse",
+        text: "\"Now, lie down comfortably. Let me see what's bothering you.\"",
+        character: "assets/images/characters/nurse.png",
         choices: [
             { text: "My head hurts a bit.", next: "day2_lunch_nurse_head", stats: { Nurse: { affinity: 3 } } },
             { text: "I just need some rest.", next: "day2_lunch_nurse_rest", stats: { Nurse: { affinity: 3 } } },
@@ -694,9 +691,15 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_sleep_end": {
         name: "Me",
-        text: "(I wake to find the room bathed in the orange glow of the sunset. I slept through the entire afternoon... I must have been more tired than I thought.)",
+        text: "(...Before long, the surroundings become quiet. Consciousness gradually returns as I open my eyes.)",
         background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
+        character: null,
+        next: "day2_lunch_nurse_wake_1"
+    },
+    "day2_lunch_nurse_wake_1": {
+        name: "Me",
+        text: "(The view outside the window is suddenly filled with a glowing orange sunset. I fell asleep at lunchtime and it's already after school... how deeply did I sleep?)",
+        background: "assets/images/background/nurse_room.jpg",
         sunset: true,
         next: "day2_lunch_nurse_wake_2"
     },
@@ -750,10 +753,10 @@ Object.assign(SCENARIO[2], {
             { text: "Yes, I will.", next: "day2_afternoon_nurse_skip" },
             { 
                 text: "Not the number... can I go to your house tonight, teacher?", 
-                next: "nurse_contact_home_fail",
+                next: "nurse_contact_home_fail_high",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                    { minAffinity: 50, next: "nurse_contact_home_success_high" }
                 ]
             }
         ]
@@ -768,10 +771,10 @@ Object.assign(SCENARIO[2], {
             { text: "Yes, I will.", next: "day2_afternoon_nurse_skip" },
             { 
                 text: "Not the number... can I go to your house tonight, teacher?", 
-                next: "nurse_contact_home_fail",
+                next: "nurse_contact_home_fail_low",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                    { minAffinity: 50, next: "nurse_contact_home_success_low" }
                 ]
             }
         ]
@@ -783,13 +786,13 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         sunset: true,
         choices: [
-            { text: "Yes, I want to know.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { text: "Yes, I want to know.", next: "nurse_contact_success_high", setFlags: ["has_number_nurse", "has_any_contact"] },
             { 
                 text: "Not the number... can I go to your house, teacher?", 
-                next: "nurse_contact_home_fail",
+                next: "nurse_contact_home_fail_high",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                    { minAffinity: 50, next: "nurse_contact_home_success_high" }
                 ]
             }
         ]
@@ -801,16 +804,60 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse.png",
         sunset: true,
         choices: [
-            { text: "Yes, I want to know.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
+            { text: "Yes, I want to know.", next: "nurse_contact_success_low", setFlags: ["has_number_nurse", "has_any_contact"] },
             { 
                 text: "Not the number... can I go to your house, teacher?", 
-                next: "nurse_contact_home_fail",
+                next: "nurse_contact_home_fail_low",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                    { minAffinity: 50, next: "nurse_contact_home_success_low" }
                 ]
             }
         ]
+    },
+    "nurse_contact_success_high": {
+        name: "Nurse",
+        text: "(She writes her number on the back of my hand and winks.) \"Hehe, here... don't lose this number? I'm already looking forward to what kind of message you'll send tonight.\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 25 } },
+        next: "day2_afternoon_nurse_skip"
+    },
+    "nurse_contact_success_low": {
+        name: "Nurse",
+        text: "\"...Here. Use it only for emergencies. If you send nonsense at dawn, you'll be blocked immediately, so be careful.\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 5 } },
+        next: "day2_afternoon_nurse_skip"
+    },
+    "nurse_contact_home_success_high": {
+        name: "Nurse",
+        text: "(Her eyes sparkle as she whispers in my ear.) \"Oh my... {name}, you're much bolder than you look? Fine, should I tell you where I live? But... it's a secret from everyone else?\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 20 } },
+        setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
+        next: "day2_afternoon_nurse_skip"
+    },
+    "nurse_contact_home_success_low": {
+        name: "Nurse",
+        text: "\"...You're persistent. Fine, I'll give you the address, but don't even think about coming unless it's really important. Got it?\"",
+        character: "assets/images/characters/nurse.png",
+        stats: { Nurse: { affinity: 10 } },
+        setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
+        next: "day2_afternoon_nurse_skip"
+    },
+    "nurse_contact_home_fail_high": {
+        name: "Nurse",
+        text: "(She laughs softly and pokes my forehead.) \"Fufu, {name}. You're too fast! Let's start with exchanging numbers. We might have a chance later if you're a good boy?\"",
+        character: "assets/images/characters/nurse.png",
+        setFlags: ["has_number_nurse", "has_any_contact"],
+        next: "day2_afternoon_nurse_skip"
+    },
+    "nurse_contact_home_fail_low": {
+        name: "Nurse",
+        text: "(She looks at me with a pathetic gaze.) \"Are you out of your mind? My house? In your dreams. Just take the number and leave.\"",
+        character: "assets/images/characters/nurse.png",
+        setFlags: ["has_number_nurse", "has_any_contact"],
+        next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_exchange": {
         name: "Me",
