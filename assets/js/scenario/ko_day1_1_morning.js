@@ -631,7 +631,7 @@ Object.assign(SCENARIO[1], {
         name: "담임선생님",
         text: "(교탁 앞에 서자 수십 개의 시선이 일제히 나에게 꽂힌다. 호기심 어린 눈빛, 경계하는 눈빛... 서연이는 내 옆에서 미소 지으며 나를 지켜보고 있다.)",
         background: "assets/images/background/room_school.png",
-        bgm: null,
+        bgm: "daily.mp3",
         characters: {
             left: "assets/images/characters/teacher.png",
             right: "assets/images/characters/seyoun_nomal.png"
@@ -643,7 +643,7 @@ Object.assign(SCENARIO[1], {
         name: "담임선생님",
         text: "(교탁 앞에 서자 수십 개의 시선이 꽂힌다. 서연이는 내 옆에서 든든하게 미소 지으며 나를 응원해주고 있다.)",
         background: "assets/images/background/room_school.png",
-        bgm: null,
+        bgm: "daily.mp3",
         characters: {
             left: "assets/images/characters/teacher.png",
             right: "assets/images/characters/seyoun_laugh.png"
@@ -655,7 +655,7 @@ Object.assign(SCENARIO[1], {
         name: "담임선생님",
         text: "(교탁 앞에 서자 수십 개의 시선이 꽂힌다. 서연이는 나에게서 조금 떨어진 곳에 차가운 표정으로 서 있다.)",
         background: "assets/images/background/room_school.png",
-        bgm: null,
+        bgm: "daily.mp3",
         characters: {
             left: "assets/images/characters/teacher.png",
             right: "assets/images/characters/seyoun_pout.png"

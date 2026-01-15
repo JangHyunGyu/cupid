@@ -629,7 +629,7 @@ Object.assign(SCENARIO[1], {
         name: "Homeroom Teacher",
         text: "(Standing in front of the teacher's desk, dozens of eyes are fixed on me all at once. Seoyeon is standing next to me, watching over me with a smile.)",
         background: "assets/images/background/room_school.png",
-        bgm: null,
+        bgm: "daily.mp3",
         characters: {
             left: "assets/images/characters/teacher.png",
             right: "assets/images/characters/seyoun_nomal.png"
@@ -641,7 +641,7 @@ Object.assign(SCENARIO[1], {
         name: "Homeroom Teacher",
         text: "(Standing in front of the teacher's desk, dozens of eyes are fixed on me. Seoyeon is standing next to me with a reassuring smile, cheering me on.)",
         background: "assets/images/background/room_school.png",
-        bgm: null,
+        bgm: "daily.mp3",
         characters: {
             left: "assets/images/characters/teacher.png",
             right: "assets/images/characters/seyoun_laugh.png"
@@ -653,7 +653,7 @@ Object.assign(SCENARIO[1], {
         name: "Homeroom Teacher",
         text: "(Standing in front of the teacher's desk, dozens of eyes are fixed on me. Seoyeon is standing slightly away with a cold expression.)",
         background: "assets/images/background/room_school.png",
-        bgm: null,
+        bgm: "daily.mp3",
         characters: {
             left: "assets/images/characters/teacher.png",
             right: "assets/images/characters/seyoun_pout.png"
