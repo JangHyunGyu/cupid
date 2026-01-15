@@ -103,7 +103,7 @@ Object.assign(SCENARIO[1], {
     },
     "path_blush_1_2": {
         name: "서연",
-        text: "\"에..? 아, 갑자기 무슨 소리를 하는 거야! 전학생은 다 너처럼... 능글맞니? 어서 따라오기나 해! 늦으면 담임선생님께 혼난다고!\"",
+        text: "\"에..? 너, 너... 학생회장을 놀리면 벌점이야! ...다, 다음엔 봐줄 테니까 어서 따라오기나 해! 늦으면 담임선생님께 혼난다구!\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },
@@ -576,7 +576,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_3_high": {
         name: "서연",
-        text: "\"자, 우리 반이야. ...이건 비밀인데, 내가 선생님께 부탁해서 내 바로 옆자리를 네 자리로 비워뒀어. 꼭 거기로 와야 해? 약속이야!\"",
+        text: "\"자, 우리 반이야. ...이건 비밀인데, 선생님께 부탁해서 내 옆자리로 옮겨뒀어. 조금이라도 빨리, 너랑 친해지고 싶어서.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "classroom_2"
     },
