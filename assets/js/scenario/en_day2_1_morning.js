@@ -70,11 +70,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_classroom"
     },
     "day2_meet_nurse": {
-        night: true,
+        affinityChar: "Nurse",
         affinityBranches: [
-            { character: "Nurse", threshold: 20, next: "day2_meet_nurse_high" },
-            { character: "Nurse", threshold: -5, next: "day2_meet_nurse_standard" },
-            { next: "day2_meet_nurse_low" }
+            { minAffinity: 20, next: "day2_meet_nurse_high" },
+            { minAffinity: -5, next: "day2_meet_nurse_standard" },
+            { minAffinity: -100, next: "day2_meet_nurse_low" }
         ]
     },
     "day2_meet_nurse_standard": {
@@ -125,11 +125,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_classroom"
     },
     "day2_meet_seoyeon": {
-        night: true,
+        affinityChar: "Seoyeon",
         affinityBranches: [
-            { character: "Seoyeon", threshold: 25, next: "day2_meet_seoyeon_high" },
-            { character: "Seoyeon", threshold: -5, next: "day2_meet_seoyeon_standard" },
-            { next: "day2_meet_seoyeon_low" }
+            { minAffinity: 25, next: "day2_meet_seoyeon_high" },
+            { minAffinity: -5, next: "day2_meet_seoyeon_standard" },
+            { minAffinity: -100, next: "day2_meet_seoyeon_low" }
         ]
     },
     "day2_meet_seoyeon_standard": {

@@ -113,10 +113,11 @@ Object.assign(SCENARIO[1], {
         next: "night_home_check_contact"
     },
     "night_message_seyoun_reply_generic": {
+        affinityChar: "Seoyeon",
         night: true,
         affinityBranches: [
-            { character: "Seoyeon", threshold: 15, next: "night_message_seyoun_reply_high" },
-            { next: "night_message_seyoun_reply_standard" }
+            { minAffinity: 15, next: "night_message_seyoun_reply_high" },
+            { minAffinity: -100, next: "night_message_seyoun_reply_standard" }
         ]
     },
     "night_message_seyoun_reply_standard": {
@@ -141,10 +142,11 @@ Object.assign(SCENARIO[1], {
         next: "night_message_yuna_reply"
     },
     "night_message_yuna_reply": {
+        affinityChar: "Yuna",
         night: true,
         affinityBranches: [
-            { character: "Yuna", threshold: 10, next: "night_message_yuna_reply_high" },
-            { next: "night_message_yuna_reply_standard" }
+            { minAffinity: 10, next: "night_message_yuna_reply_high" },
+            { minAffinity: -100, next: "night_message_yuna_reply_standard" }
         ]
     },
     "night_message_yuna_reply_standard": {
@@ -192,10 +194,11 @@ Object.assign(SCENARIO[1], {
         next: "night_home_check_contact"
     },
     "night_message_dain_reply_generic": {
+        affinityChar: "Dain",
         night: true,
         affinityBranches: [
-            { character: "Dain", threshold: 15, next: "night_message_dain_reply_high" },
-            { next: "night_message_dain_reply_standard" }
+            { minAffinity: 15, next: "night_message_dain_reply_high" },
+            { minAffinity: -100, next: "night_message_dain_reply_standard" }
         ]
     },
     "night_message_dain_reply_standard": {
@@ -220,10 +223,11 @@ Object.assign(SCENARIO[1], {
         next: "night_message_nurse_reply"
     },
     "night_message_nurse_reply": {
+        affinityChar: "Nurse",
         night: true,
         affinityBranches: [
-            { character: "Nurse", threshold: 10, next: "night_message_nurse_reply_high" },
-            { next: "night_message_nurse_reply_standard" }
+            { minAffinity: 10, next: "night_message_nurse_reply_high" },
+            { minAffinity: -100, next: "night_message_nurse_reply_standard" }
         ]
     },
     "night_message_nurse_reply_standard": {

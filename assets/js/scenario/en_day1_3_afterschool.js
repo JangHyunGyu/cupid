@@ -111,11 +111,11 @@ Object.assign(SCENARIO[1], {
         next: "after_seoyeon_2"
     },
     "after_seoyeon_2": {
-        night: true,
+        affinityChar: "Seoyeon",
         affinityBranches: [
-            { character: "Seoyeon", threshold: 15, next: "after_seoyeon_3_high" },
-            { character: "Seoyeon", threshold: -5, next: "after_seoyeon_3_standard" },
-            { next: "after_seoyeon_3_low" }
+            { minAffinity: 15, next: "after_seoyeon_3_high" },
+            { minAffinity: -5, next: "after_seoyeon_3_standard" },
+            { minAffinity: -100, next: "after_seoyeon_3_low" }
         ]
     },
     "after_seoyeon_3_standard": {

@@ -185,10 +185,30 @@ Object.assign(SCENARIO[1], {
         next: "rooftop_2"
     },
     "rooftop_2": {
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 0, next: "rooftop_2_normal" },
+            { minAffinity: -100, next: "rooftop_2_low" }
+        ],
+        next: "rooftop_2_normal"
+    },
+    "rooftop_2_normal": {
         name: "Seoyeon",
         text: "(After finishing the meal, we sit side by side and look at the distant sky. Seoyeon carefully opens her mouth.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_2_2"
+    },
+    "rooftop_2_low": {
+        name: "Seoyeon",
+        text: "(After finishing the meal, Seoyeon opens her mouth after a heavy silence.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "rooftop_2_2_low"
+    },
+    "rooftop_2_2_low": {
+        name: "Seoyeon",
+        text: "\"Um, {name}... Actually, I wanted to get to know you better today, but it seems more difficult than I thought. Still, thanks for eating lunch with me.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "rooftop_free_talk"
     },
     "rooftop_2_2": {
         name: "Seoyeon",
