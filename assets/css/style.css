@@ -1,27 +1,39 @@
+/* ==========================================================================
+   Cupid Global Styles (공통 스타일 및 초기화)
+   ========================================================================== */
+
+/* 전체 요소 초기화 */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
 }
 
+/* 기본 문서 구조 설정 */
 body, html {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden; /* 스크롤 방지 */
     background-color: #000;
-    font-family: 'Pretendard', sans-serif;
+    font-family: 'Pretendard', sans-serif; /* 가독성 좋은 프리텐다드 서체 사용 */
 }
 
+/* ==========================================================================
+   Layout Containers (레이아웃 컨테이너)
+   ========================================================================== */
+
+/* 게임 전체 화면을 감싸는 컨테이너 */
 #game-container {
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 1280px; /* 16:9 비율 권장 */
-    margin: 0 auto;
+    max-width: 1280px; /* 고해상도 모니터에서도 16:9 비율 유지 권장 */
+    margin: 0 auto;    /* 중앙 정렬 */
     background-color: #222;
     overflow: hidden;
 }
 
+/* 배경 이미지 레이어 */
 #background-layer {
     position: absolute;
     top: 0;
@@ -29,32 +41,39 @@ body, html {
     width: 100%;
     height: 100%;
     background-color: #333;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 0.5s ease-in-out, filter 1s ease-in-out;
+    background-size: cover;     /* 화면에 꽉 차게 */
+    background-position: center; /* 가운데 정렬 */
+    transition: background-image 0.5s ease-in-out, filter 1s ease-in-out; /* 배경 전환 효과 */
 }
 
+/* 배경 시간대별 필터 효과 */
 #background-layer.night {
-    filter: brightness(0.3) sepia(0.3) hue-rotate(210deg) saturate(0.8);
+    filter: brightness(0.3) sepia(0.3) hue-rotate(210deg) saturate(0.8); /* 밤: 어둡고 푸른 톤 */
 }
 
 #background-layer.sunset {
-    filter: brightness(0.65) sepia(0.6) hue-rotate(-25deg) saturate(1.4);
+    filter: brightness(0.65) sepia(0.6) hue-rotate(-25deg) saturate(1.4); /* 노을: 따뜻한 오렌지 톤 */
 }
 
+/* ==========================================================================
+   Character System (캐릭터 표시 시스템)
+   ========================================================================== */
+
+/* 캐릭터를 배치하는 레이어 */
 #character-layer {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* 전체 공간 사용 */
-    pointer-events: none;
+    height: 100%; /* 화면 전체 높이를 기준으로 밑단 정렬 */
+    pointer-events: none; /* 캐릭터 이미지가 클릭을 방해하지 않도록 설정 */
     z-index: 1;
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
 
+/* 캐릭터 슬롯 (왼쪽, 중앙, 오른쪽 공통) */
 .char-slot {
     position: absolute;
     bottom: 0;
@@ -65,35 +84,42 @@ body, html {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-end; /* 캐릭터 발밑을 바닥에 고정 */
     transition: all 0.3s ease-in-out;
 }
 
+/* 캐릭터 이미지 설정 */
 .char-slot img {
-    height: 100%; /* 슬롯에 맞춤 */
+    height: 100%; /* 슬롯 높이에 꽉 차게 (비율 유지) */
     width: auto;
     max-width: none;
     object-fit: contain;
-    /* 모바일에서 이미지가 쪼개지는 현상 방지 */
+    /* 모바일 기기 하드웨어 가속 및 잔상 방지 */
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
 
+/* 슬롯별 위치 오프셋 (1280px 기준 상대 위치) */
 #char-left {
-    transform: translateX(-85%); /* -50% - 35% */
+    transform: translateX(-85%); /* 중앙에서 왼쪽으로 이동 */
     z-index: 1;
 }
 
 #char-center {
-    transform: translateX(-50%);
-    z-index: 2;
+    transform: translateX(-50%); /* 정확히 중앙 */
+    z-index: 2; /* 중앙 캐릭터를 가장 앞으로 */
 }
 
 #char-right {
-    transform: translateX(-15%); /* -50% + 35% */
+    transform: translateX(-15%); /* 중앙에서 오른쪽으로 이동 */
     z-index: 1;
 }
 
+/* ==========================================================================
+   UI Layer: Conversation & Choice (UI 레이어: 대화창 및 선택지)
+   ========================================================================== */
+
+/* 대화창과 버튼들이 담기는 최상위 UI 레이어 */
 #ui-layer {
     position: absolute;
     bottom: 0;
@@ -104,67 +130,75 @@ body, html {
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px;
-    padding-bottom: calc(20px + env(safe-area-inset-bottom));
-    pointer-events: none;
-    z-index: 110; /* 페이드 레이어(100)보다 위에 위치 */
+    padding-bottom: calc(20px + env(safe-area-inset-bottom)); /* 아이폰 노치 디자인 대응 */
+    pointer-events: none; /* UI 빈 공간 클릭 시 투과되도록 설정 */
+    z-index: 110; 
 }
 
+/* 대화 텍스트 박스 */
 #dialogue-box {
     position: relative;
     width: 100%;
     min-height: 150px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid #ff69b4;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 검정 */
+    border: 2px solid #ff69b4;      /* 시그니처 핑크 테두리 */
     border-radius: 10px;
     padding: 20px;
     color: #fff;
     cursor: pointer;
-    pointer-events: auto;
+    pointer-events: auto; /* 박스 내부는 클릭 가능 */
     margin-bottom: 10px;
 }
 
+/* 캐릭터 이름 태그 */
 #name-tag {
     position: absolute;
-    top: -25px;
+    top: -25px; /* 대화창 위로 걸치게 배치 */
     left: 20px;
     background: #ff69b4;
     padding: 5px 15px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
+/* 실제 대화 내용 */
 #message {
     font-size: 1.2rem;
     line-height: 1.6;
-    word-break: keep-all;
-    white-space: pre-wrap;
+    word-break: keep-all; /* 단어 단위 줄바꿈으로 가독성 향상 */
+    white-space: pre-wrap; /* 줄바꿈 기호 유지 */
 }
 
+/* 다음 장면 표시 화살표 */
 #next-indicator {
     position: absolute;
     bottom: 10px;
     right: 20px;
-    animation: bounce 1s infinite;
+    animation: bounce 1s infinite; /* 통통 튀는 애니메이션 */
 }
 
+/* 다음 표시 애니메이션 정의 */
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(5px); }
 }
 
+/* 선택지 버튼 컨테이너 */
 #choice-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 8px; /* 버튼들 사이의 간격 */
     pointer-events: auto;
     z-index: 10;
-    margin-bottom: 20px; /* 하단 여백 확보 */
+    margin-bottom: 20px;
 }
 
+/* 개별 선택지 버튼 */
 .choice-btn {
-    background: rgba(0, 0, 0, 0.5); /* 투명도를 높여 캐릭터 가림 최소화 */
+    background: rgba(0, 0, 0, 0.5);
     border: 2px solid #ff69b4;
     color: #fff;
     padding: 12px 20px;
@@ -176,12 +210,17 @@ body, html {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* 선택지 버튼 호버/반응 효과 */
 .choice-btn:hover {
     background: #ff69b4;
-    transform: scale(1.02);
+    transform: scale(1.02); /* 살짝 커지는 효과 */
 }
 
-/* 프리토킹 스타일 */
+/* ==========================================================================
+   Free-Talking System (프리토킹 채팅 시스템)
+   ========================================================================== */
+
+/* 자유 대화 입력 컨테이너 */
 #chat-container {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -193,12 +232,14 @@ body, html {
     margin-bottom: 10px;
 }
 
+/* 채팅 입력창 및 버튼 감싸기 */
 #chat-input-wrapper {
     display: flex;
     gap: 8px;
     margin-bottom: 8px;
 }
 
+/* 채팅 입력란 */
 #chat-input {
     flex: 1;
     background: rgba(255, 255, 255, 0.1);
@@ -208,9 +249,10 @@ body, html {
     color: #fff;
     font-size: 0.95rem;
     outline: none;
-    min-width: 0; /* flex item overflow 방지 */
+    min-width: 0;
 }
 
+/* 채팅 전송 버튼 */
 #chat-send {
     background: #ff69b4;
     border: none;
@@ -228,11 +270,12 @@ body, html {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+/* 전송 아이콘(SVG) */
 #chat-send svg {
     width: 20px;
     height: 20px;
     fill: currentColor;
-    margin-left: 2px; /* 비행기 아이콘 중심 맞추기 */
+    margin-left: 2px;
 }
 
 #chat-send:hover {
@@ -245,6 +288,7 @@ body, html {
     cursor: not-allowed;
 }
 
+/* 채팅 스킵(그만하기) 버튼 */
 #chat-skip-btn {
     background: #888;
     border: none;
@@ -269,7 +313,7 @@ body, html {
 }
 
 #chat-skip-btn:hover {
-    background: #ff5e5e; /* 중단 의미를 담아 호버 시 붉은색 계열로 변경 */
+    background: #ff5e5e; /* 경고의 의미로 붉은 계열 호버 효과 */
     transform: scale(1.05);
 }
 
@@ -278,6 +322,7 @@ body, html {
     cursor: not-allowed;
 }
 
+/* AI 응답 대기 로딩 효과 */
 .loading-dots {
     font-size: 1.5rem;
     line-height: 1;
@@ -292,6 +337,7 @@ body, html {
     100% { opacity: .2; }
 }
 
+/* 남은 대화 횟수 표시 */
 #chat-turn-indicator {
     color: #ff69b4;
     font-size: 0.85rem;
@@ -299,8 +345,13 @@ body, html {
     font-weight: bold;
 }
 
-/* 설정 버튼 스타일 */
-#settings-btn {
+
+/* ==========================================================================
+   Settings UI (설정 메뉴)
+   ========================================================================== */
+
+/* 설정 버튼 스타일 (게임 화면 내 톱니바퀴) */
+#game-container #settings-btn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -319,12 +370,16 @@ body, html {
     transition: all 0.2s;
 }
 
-#settings-btn:hover {
+#game-container #settings-btn:hover {
     background: rgba(255, 105, 180, 0.3);
-    transform: rotate(30deg);
+    transform: rotate(30deg); /* 호버 시 살짝 회전하는 연출 */
 }
 
-/* 공통 모달 스타일 */
+/* ==========================================================================
+   Modals & Overlays (모달 및 오버레이 공통)
+   ========================================================================== */
+
+/* 공통 모달 배경(오버레이) */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -332,12 +387,18 @@ body, html {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.85);
-    display: flex;
+    display: none; /* 기본 숨김 */
     justify-content: center;
     align-items: center;
     z-index: 2000;
 }
 
+/* 모달 활성화 상태 */
+.modal-overlay.active {
+    display: flex;
+}
+
+/* 모달 컨텐츠 박스 */
 .modal-container {
     background: #1a1a1a;
     padding: 30px;
@@ -356,10 +417,14 @@ body, html {
     font-size: 1.5rem;
 }
 
-/* 반응형 및 세로 모드 최적화 */
+/* ==========================================================================
+   Responsive Design & Media Queries (반응형 최적화)
+   ========================================================================== */
+
+/* 세로 모드 (Portrait) 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 90%; /* 너무 커서 소폭 축소 */
+        height: 90%; /* 세로 화면에서 캐릭터가 너무 크지 않게 소폭 축소 */
         bottom: 0;
     }
 
@@ -381,7 +446,7 @@ body, html {
     }
 
     #message {
-        font-size: 1.1rem; /* 작은 화면 대응 */
+        font-size: 1.1rem; /* 모바일 가독성 대응 */
     }
 
     .choice-btn {
@@ -390,11 +455,11 @@ body, html {
     }
 }
 
-/* 모바일 가로 모드 최적화 (화면 높이가 작을 때) */
+/* 모바일 가로 모드 (Landscape) 최적화: 화면 높이가 작을 때 */
 @media (max-height: 500px) and (orientation: landscape) {
     #character-layer {
         height: 100%;
-        bottom: -10%; /* 캐릭터를 조금 더 아래로 내려서 얼굴 확보 */
+        bottom: -10%; /* 캐릭터를 조금 더 아래로 내려서 상체 위주로 노출 */
     }
 
     #dialogue-box {
@@ -419,7 +484,7 @@ body, html {
         gap: 8px;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr; /* 2열 배치로 높이 절약 */
+        grid-template-columns: 1fr 1fr; /* 2열로 배치하여 세로 공간 절약 */
         margin-bottom: 5px;
     }
 
@@ -430,6 +495,11 @@ body, html {
     }
 }
 
+/* ==========================================================================
+   Game Effects & Transitions (게임 연출 및 배경 시스템)
+   ========================================================================== */
+
+/* 장면 전환 시 사용하는 페이드 검정 레이어 */
 #fade-layer {
     position: absolute;
     top: 0;
@@ -440,7 +510,7 @@ body, html {
     opacity: 0;
     pointer-events: none;
     z-index: 100;
-    transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out; /* 천천히 암전/명전 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -451,6 +521,7 @@ body, html {
     opacity: 1;
 }
 
+/* To Be Continued... 텍스트 디자인 */
 #tbc-text {
     color: #fff;
     font-size: 3rem;
@@ -467,18 +538,24 @@ body, html {
     transform: translateY(0);
 }
 
+/* 캐릭터 실루엣 효과 (어두운 연출용) */
 .silhouette {
     filter: blur(2px) brightness(0.9);
     opacity: 0.5;
 }
 
+/* 생각 중인 연출 (캐릭터가 흐려짐) */
 .thinking {
     opacity: 0.6;
     filter: blur(2px);
     transition: all 0.5s ease-in-out;
 }
 
-/* 이름 입력창 스타일 */
+/* ==========================================================================
+   Player Interface (사용자 입력 UI)
+   ========================================================================== */
+
+/* 이름 입력창 컨테이너 */
 #name-input-container {
     margin-top: 15px;
     width: 100%;
@@ -528,6 +605,7 @@ body, html {
     background: #ff1493;
 }
 
+/* 입력 안내 가이드 텍스트 */
 #name-input-guide {
     font-size: 0.75rem;
     color: rgba(255, 255, 255, 0.8);
@@ -539,12 +617,11 @@ body, html {
     }
 }
 
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(5px); }
-}
+/* ==========================================================================
+   Custom Confirmation Modals (커스텀 알림/확인창)
+   ========================================================================== */
 
-/* 커스텀 모달 스타일 */
+/* 커스텀 모달 오버레이 */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -559,6 +636,7 @@ body, html {
     backdrop-filter: blur(3px);
 }
 
+/* 모달 박스 내용 */
 .modal-content {
     background: #222;
     border: 2px solid #ff69b4;
@@ -621,7 +699,11 @@ body, html {
     transform: translateY(-2px);
 }
 
-/* 호감도 변화 애니메이션 */
+/* ==========================================================================
+   Mechanics: Affinity System (게임 시스템: 호감도)
+   ========================================================================== */
+
+/* 호감도 변화 시 화면 중앙에 나타나는 팝업 */
 .affinity-popup {
     position: fixed;
     left: 50%;
@@ -638,14 +720,17 @@ body, html {
     gap: 0.3rem;
 }
 
+/* 긍정적 변화 (+) */
 .affinity-popup.positive {
     color: #ff6b9d;
 }
 
+/* 부정적 변화 (-) */
 .affinity-popup.negative {
     color: #7799ff;
 }
 
+/* 부정적일 때 이모지 색상 변경 */
 .affinity-popup.negative .emoji {
     filter: hue-rotate(200deg) saturate(1.5);
 }
@@ -658,6 +743,7 @@ body, html {
     font-size: 1.8rem;
 }
 
+/* 호감도 팝업 애니메이션 */
 @keyframes affinityFloat {
     0% {
         opacity: 0;
@@ -675,3 +761,4 @@ body, html {
         transform: translateX(-50%) translateY(-80px) scale(0.8);
     }
 }
+
