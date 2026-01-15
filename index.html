@@ -57,6 +57,7 @@
     <script src="assets/js/ga.js?v=1.0.11"></script>
     <link rel="stylesheet" href="assets/css/style.css?v=1.0.11">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+    <script src="assets/js/sound.js?v=1.0.0"></script>
     <style>
         body, html {
             margin: 0;
@@ -279,7 +280,23 @@
                     <span>❤️ 호감도 하트 표시</span>
                     <input type="checkbox" id="affinityToggle" checked style="transform: scale(1.5);">
                 </label>
-                <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px;">게임 내 캐릭터 이름 옆에 호감도를 하트로 표시합니다.</p>
+                <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">게임 내 캐릭터 이름 옆에 호감도를 하트로 표시합니다.</p>
+                
+                <div style="margin-top: 20px;">
+                    <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
+                        <span>🎵 배경음악 (BGM)</span>
+                        <span id="bgmVolumeVal">50%</span>
+                    </div>
+                    <input type="range" id="bgmVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
+                </div>
+                
+                <div style="margin-top: 15px;">
+                    <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
+                        <span>🔊 효과음 (SFX)</span>
+                        <span id="sfxVolumeVal">50%</span>
+                    </div>
+                    <input type="range" id="sfxVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
+                </div>
             </div>
             <button onclick="saveSettings()" style="margin-top: 20px; background: #ff69b4; border: none; padding: 10px 30px; border-radius: 20px; color: white; cursor: pointer; font-size: 1rem;">저장</button>
         </div>
@@ -298,14 +315,42 @@
     </div>
 
     <script>
+        // Initialize Sound and Play Intro BGM
+        window.addEventListener('DOMContentLoaded', () => {
+            soundManager.init();
+            // 인트로 BGM 재생 (사용자 상호작용 후 자동 재생됨)
+            soundManager.playBgm('assets/audio/bgm/intro.mp3');
+        });
+
         // Settings Modal Logic
         function openSettingsModal() {
             document.getElementById('settingsModal').classList.add('is-open');
-            // Default to true if not set
+            
             const savedSetting = localStorage.getItem('showAffinity');
             const showAffinity = savedSetting === null ? true : savedSetting === 'true';
             document.getElementById('affinityToggle').checked = showAffinity;
+
+            const bgmVol = localStorage.getItem('bgmVolume') || 0.5;
+            const sfxVol = localStorage.getItem('sfxVolume') || 0.5;
+            
+            document.getElementById('bgmVolume').value = bgmVol * 100;
+            document.getElementById('sfxVolume').value = sfxVol * 100;
+            document.getElementById('bgmVolumeVal').textContent = Math.round(bgmVol * 100) + '%';
+            document.getElementById('sfxVolumeVal').textContent = Math.round(sfxVol * 100) + '%';
         }
+
+        // 볼륨 변경 실시간 반영
+        window.addEventListener('input', (e) => {
+            if (e.target.id === 'bgmVolume') {
+                const vol = e.target.value / 100;
+                document.getElementById('bgmVolumeVal').textContent = e.target.value + '%';
+                if (window.soundManager) soundManager.setBgmVolume(vol);
+            } else if (e.target.id === 'sfxVolume') {
+                const vol = e.target.value / 100;
+                document.getElementById('sfxVolumeVal').textContent = e.target.value + '%';
+                if (window.soundManager) soundManager.setSfxVolume(vol);
+            }
+        });
 
         function closeSettingsModal(e) {
             if (e && e.target !== e.currentTarget && e.target.id !== 'settingsModal') return;
@@ -315,6 +360,15 @@
         function saveSettings() {
             const showAffinity = document.getElementById('affinityToggle').checked;
             localStorage.setItem('showAffinity', showAffinity);
+            
+            const bgmVol = document.getElementById('bgmVolume').value / 100;
+            const sfxVol = document.getElementById('sfxVolume').value / 100;
+            
+            if (window.soundManager) {
+                soundManager.setBgmVolume(bgmVol);
+                soundManager.setSfxVolume(sfxVol);
+            }
+            
             closeSettingsModal();
         }
 

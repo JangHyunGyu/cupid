@@ -10,6 +10,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(따스한 햇살... 전학 첫날의 긴장감이 온몸을 감싼다.)",
         background: "assets/images/background/school.png",
+        bgm: "intro.mp3",
         character: null,
         next: "start_2"
     },

@@ -299,6 +299,63 @@ body, html {
     font-weight: bold;
 }
 
+/* 설정 버튼 스타일 */
+#settings-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 105, 180, 0.5);
+    color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 150;
+    transition: all 0.2s;
+}
+
+#settings-btn:hover {
+    background: rgba(255, 105, 180, 0.3);
+    transform: rotate(30deg);
+}
+
+/* 공통 모달 스타일 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-container {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid #ff69b4;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #ff69b4;
+    font-size: 1.5rem;
+}
+
 /* 반응형 및 세로 모드 최적화 */
 @media (orientation: portrait) {
     #character-layer {
