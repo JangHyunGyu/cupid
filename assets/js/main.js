@@ -428,67 +428,71 @@ async function renderScene(sceneId) {
     }
 
     // 캐릭터 업데이트
-    // 항상 모든 슬롯을 먼저 비웁니다 (새 캐릭터 설정이 있든 없든)
-    Object.values(charSlots).forEach(slot => {
-        if (slot) slot.innerHTML = '';
-    });
+    // 장면 데이터에 캐릭터 정보(character 또는 characters)가 명시되어 있을 때만 업데이트합니다.
+    // 정보가 없으면 이전 장면의 캐릭터 상태를 그대로 유지하여 대화 중 이미지가 사라지는 현상을 방지합니다.
+    if (scene.hasOwnProperty('characters') || scene.hasOwnProperty('character')) {
+        // 새 캐릭터 데이터가 있으므로 기존 슬롯을 비웁니다.
+        Object.values(charSlots).forEach(slot => {
+            if (slot) slot.innerHTML = '';
+        });
 
-    if (scene.characters) {
-        // 여러 캐릭터 설정 (예: { left: "...", right: "..." })
-        const charPromises = Object.entries(scene.characters).map(([pos, src]) => {
-            return new Promise((resolve) => {
-                const targetPos = pos.toLowerCase();
-                if (charSlots[targetPos] && src) {
-                    const img = document.createElement('img');
-                    const charUrl = getAssetUrl(src);
-                    img.onload = () => resolve({ pos: targetPos, img, sceneId });
-                    img.onerror = () => {
-                        console.error("캐릭터 이미지 로드 실패:", charUrl);
+        if (scene.characters) {
+            // 여러 캐릭터 설정 (예: { left: "...", right: "..." })
+            const charPromises = Object.entries(scene.characters).map(([pos, src]) => {
+                return new Promise((resolve) => {
+                    const targetPos = pos.toLowerCase();
+                    if (charSlots[targetPos] && src) {
+                        const img = document.createElement('img');
+                        const charUrl = getAssetUrl(src);
+                        img.onload = () => resolve({ pos: targetPos, img, sceneId });
+                        img.onerror = () => {
+                            console.error("캐릭터 이미지 로드 실패:", charUrl);
+                            resolve(null);
+                        };
+                        img.src = charUrl;
+                        if (scene.silhouette) img.classList.add('silhouette');
+                        if (scene.thinking) img.classList.add('thinking');
+                    } else {
+                        if (!charSlots[targetPos] && src) {
+                            console.warn(`알 수 없는 캐릭터 위치: ${pos}. 'left', 'center', 'right' 중 하나를 사용하세요.`);
+                        }
                         resolve(null);
-                    };
-                    img.src = charUrl;
-                    if (scene.silhouette) img.classList.add('silhouette');
-                    if (scene.thinking) img.classList.add('thinking');
-                } else {
-                    if (!charSlots[targetPos] && src) {
-                        console.warn(`알 수 없는 캐릭터 위치: ${pos}. 'left', 'center', 'right' 중 하나를 사용하세요.`);
                     }
-                    resolve(null);
+                });
+            });
+
+            const loadedChars = await Promise.all(charPromises);
+            // 레이스 컨디션 방지: 이미 다른 장면으로 넘어갔다면 렌더링 중단
+            if (currentSceneId !== sceneId) return;
+
+            loadedChars.forEach(result => {
+                if (result && charSlots[result.pos]) {
+                    charSlots[result.pos].appendChild(result.img);
                 }
             });
-        });
+        } else if (scene.character) {
+            // 단일 캐릭터 설정 (기본 center)
+            const result = await new Promise((resolve) => {
+                const img = document.createElement('img');
+                const charUrl = getAssetUrl(scene.character);
+                img.onload = () => {
+                    resolve({ pos: 'center', img, sceneId });
+                };
+                img.onerror = () => {
+                    console.error("캐릭터 이미지 로드 실패:", charUrl);
+                    resolve(null);
+                };
+                img.src = charUrl;
+                if (scene.silhouette) img.classList.add('silhouette');
+                if (scene.thinking) img.classList.add('thinking');
+            });
 
-        const loadedChars = await Promise.all(charPromises);
-        // 레이스 컨디션 방지: 이미 다른 장면으로 넘어갔다면 렌더링 중단
-        if (currentSceneId !== sceneId) return;
+            // 레이스 컨디션 방지
+            if (currentSceneId !== sceneId) return;
 
-        loadedChars.forEach(result => {
-            if (result && charSlots[result.pos]) {
-                charSlots[result.pos].appendChild(result.img);
+            if (result && charSlots.center) {
+                charSlots.center.appendChild(result.img);
             }
-        });
-    } else if (scene.character) {
-        // 단일 캐릭터 설정 (기본 center)
-        const result = await new Promise((resolve) => {
-            const img = document.createElement('img');
-            const charUrl = getAssetUrl(scene.character);
-            img.onload = () => {
-                resolve({ pos: 'center', img, sceneId });
-            };
-            img.onerror = () => {
-                console.error("캐릭터 이미지 로드 실패:", charUrl);
-                resolve(null);
-            };
-            img.src = charUrl;
-            if (scene.silhouette) img.classList.add('silhouette');
-            if (scene.thinking) img.classList.add('thinking');
-        });
-
-        // 레이스 컨디션 방지
-        if (currentSceneId !== sceneId) return;
-
-        if (result && charSlots.center) {
-            charSlots.center.appendChild(result.img);
         }
     }
 
