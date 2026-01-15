@@ -90,12 +90,13 @@ class SoundManager {
      * 배경음악을 재생합니다. (페이드 인/아웃 효과 적용)
      * @param {string} path 오디오 파일 경로 (예: 'assets/audio/bgm/intro.mp3')
      * @param {boolean} loop 반복 재생 여부 (기본값 true)
+     * @param {boolean} force 같은 곡이라도 강제로 다시 페이드하며 재생할지 여부
      */
-    playBgm(path, loop = true) {
-        // [최적화] 이미 같은 곡이 재생 중이라면 아무것도 하지 않음 (중복 방지)
-        if (this.currentBgmPath === path && this.bgm && !this.bgm.paused) return;
+    playBgm(path, loop = true, force = false) {
+        // [최적화] 이미 같은 곡이 재생 중이라면 무시 (단, force가 true면 다시 페이드하며 재생)
+        if (!force && this.currentBgmPath === path && this.bgm && !this.bgm.paused) return;
         
-        console.log("SoundManager: BGM 교체 요청 ->", path);
+        console.log("SoundManager: BGM 재생 요청 ->", path);
         
         // 1. 기존 음악이 있다면 페이드 아웃 후 정지
         if (this.bgm) {
@@ -106,7 +107,16 @@ class SoundManager {
         
         // 2. 새로운 오디오 객체 생성
         this.bgm = new Audio(path);
-        this.bgm.loop = loop;
+        
+        // [변경] 브라우저 기본 loop 대신 onended 이벤트를 활용해 반복 시에도 페이드 효과 적용
+        this.bgm.loop = false;
+        if (loop) {
+            this.bgm.onended = () => {
+                console.log("SoundManager: BGM 트랙 종료, 페이드 효과와 함께 반복 진행");
+                this.playBgm(path, true, true);
+            };
+        }
+        
         this.bgm.volume = 0; // 0에서 시작하여 페이드 인
         
         // 3. 파일 로드 에러 처리
@@ -162,9 +172,11 @@ class SoundManager {
     _fadeOut(audio) {
         if (!audio) return;
         
+        // 이미 멈춰있거나 볼륨이 0인 경우 처리
         const startVolume = audio.volume;
-        if (startVolume <= 0) {
+        if (audio.paused || startVolume <= 0) {
             audio.pause();
+            audio.volume = 0;
             return;
         }
 
