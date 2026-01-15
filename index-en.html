@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+Ôªø<!DOCTYPE html>
 <html lang="en">
 <head>
     <script>
@@ -58,7 +58,7 @@
     <script src="assets/js/ga.js?v=1.1.2"></script>
     <link rel="stylesheet" href="assets/css/style.css?v=1.1.2">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
-    <script src="assets/js/sound.js?v=1.1.2"></script>
+    <script src="assets/js/sound.js?v=1.1.9"></script>
     <style>
         body, html {
             margin: 0;
@@ -151,35 +151,15 @@
         .contact-link:hover {
             background: rgba(255, 255, 255, 0.4);
         }
-        /* Mobile Landscape Optimization */
+        /* Mobile Portrait & Landscape Tweaks */
         @media (max-height: 500px) and (orientation: landscape) {
-            h1 {
-                font-size: 2rem;
-                margin-bottom: 0.2rem;
-            }
-            p {
-                font-size: 1rem;
-                margin-bottom: 1rem;
-            }
-            .start-btn {
-                padding: 8px 25px;
-                font-size: 1.1rem;
-            }
-            .footer {
-                bottom: 5px;
-                gap: 2px;
-            }
-            .contact-links {
-                gap: 10px;
-            }
-            .contact-link {
-                padding: 4px 12px;
-                font-size: 0.75rem;
-            }
-            .footer p {
-                font-size: 0.7rem !important;
-                margin-bottom: 2px !important;
-            }
+            h1 { font-size: 2rem; margin-bottom: 0.2rem; }
+            p { font-size: 1rem; margin-bottom: 1rem; }
+            .start-btn { padding: 8px 25px; font-size: 1.1rem; }
+            .footer { bottom: 5px; gap: 2px; }
+            .contact-links { gap: 10px; }
+            .contact-link { padding: 4px 12px; font-size: 0.75rem; }
+            .footer p { font-size: 0.7rem !important; margin-bottom: 2px !important; }
         }
         /* Modal Styles */
         .modal-overlay {
@@ -206,10 +186,7 @@
             text-align: center;
             border: 1px solid #ff69b4;
         }
-        .modal-title {
-            margin-top: 0;
-            color: #ff69b4;
-        }
+        .modal-title { margin-top: 0; color: #ff69b4; }
         .contact-options {
             display: flex;
             flex-direction: column;
@@ -224,9 +201,7 @@
             border-radius: 10px;
             transition: background 0.2s;
         }
-        .contact-option:hover {
-            background: #444;
-        }
+        .contact-option:hover { background: #444; }
         .lang-switch {
             position: absolute;
             top: 20px;
@@ -245,31 +220,28 @@
             font-size: 0.8rem;
             transition: all 0.2s;
         }
-        .lang-btn:hover {
-            background: rgba(255, 255, 255, 0.4);
-        }
+        .lang-btn:hover { background: rgba(255, 255, 255, 0.4); }
     </style>
 </head>
 <body>
     <div class="lang-switch">
-        <button id="landing-settings-btn" class="lang-btn" style="margin-right: 10px; cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);">?ôÔ∏è Settings</button>
-        <a href="index.html" class="lang-btn">?úÍµ≠??/a>
+        <button id="landing-settings-btn" class="lang-btn" style="margin-right: 10px; cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);"> Settings</button>
+        <a href="index.html" class="lang-btn">ÌïúÍµ≠Ïñ¥</a>
     </div>
-
     <div id="landing-container">
         <div class="content">
             <h1>CUPID</h1>
-            <p>A story of your first day at school that will decide your fate</p>
+            <p>A story of your first day at a new school</p>
             <button onclick="startGame()" class="start-btn" style="border:none; cursor:pointer;">Start Game</button>
         </div>
 
         <div class="footer">
             <div class="contact-links">
-                <button class="contact-link" onclick="openContactModal()">?ìû Contact Us</button>
-                <button class="contact-link" onclick="installApp()">‚¨áÔ∏è Install App</button>
+                <button class="contact-link" onclick="openContactModal()"> Contact Us</button>
+                <button class="contact-link" onclick="installApp()"> Install App</button>
             </div>
-            <p style="font-size: 0.85rem; margin-bottom: 5px; color: #ffb6c1;">Advisor: Pro Yujin Kim, Pro Sanghoon Lee</p>
-            <p style="font-size: 0.8rem; opacity: 0.7;">¬© 2025 ArcherLab. All rights reserved. (v1.1.9)</p>
+            <p style="font-size: 0.85rem; margin-bottom: 5px; color: #ffb6c1;">Advisor: Yujin Kim, Sanghun Lee</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;"> 2025 ArcherLab. All rights reserved. (v1.1.9)</p>
         </div>
     </div>
 
@@ -290,7 +262,7 @@
             <div id="dialogue-box">
                 <div id="name-tag"></div>
                 <div id="message"></div>
-                <div id="next-indicator">??/div>
+                <div id="next-indicator"></div>
 
                 <!-- Name Input -->
                 <div id="name-input-container" style="display: none;">
@@ -298,7 +270,7 @@
                         <input type="text" id="player-name-input" placeholder="Enter name (1-4 chars)" maxlength="4">
                         <button id="name-confirm-btn">Confirm</button>
                     </div>
-                    <div id="name-input-guide">1-4 characters (Korean/English only)</div>
+                    <div id="name-input-guide">1-4 characters (No numbers/special)</div>
                 </div>
             </div>
             
@@ -306,27 +278,27 @@
                 <!-- Choice buttons generated here -->
             </div>
 
-            <!-- Free Talk -->
+            <!-- Free Talk Input -->
             <div id="chat-container" style="display: none;">
                 <div id="chat-guide"></div>
                 <div id="chat-input-wrapper">
-                    <input type="text" id="chat-input" placeholder="Type a message..." maxlength="100">
+                    <input type="text" id="chat-input" placeholder="Enter message..." maxlength="100">
                     <button id="chat-send" title="Send">
                         <svg viewBox="0 0 24 24">
                             <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
                         </svg>
                     </button>
-                    <button id="chat-skip-btn" title="Stop conversation">
+                    <button id="chat-skip-btn" title="End Talk">
                         <svg viewBox="0 0 24 24">
                             <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </button>
                 </div>
-                <div id="chat-turn-indicator">Remaining <span id="turn-count">3</span> turns</div>
+                <div id="chat-turn-indicator">Remaining <span id="turn-count">3</span></div>
             </div>
 
-            <!-- Game Settings Button -->
-            <button id="settings-btn" onclick="openSettingsModal()" title="Settings">
+            <!-- Settings Gear -->
+            <button id="settings-btn" class="settings-gear" onclick="openSettingsModal()" title="Settings">
                 <svg viewBox="0 0 24 24" width="24" height="24">
                     <path fill="currentColor" d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87a.49.49 0 0 0 .12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.49.49 0 0 0-.12-.61l-2.03-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
                 </svg>
@@ -343,26 +315,27 @@
             <div class="modal-content">
                 <p id="modal-message"></p>
                 <div class="modal-buttons">
-                    <button id="modal-confirm-btn">Confirm</button>
+                    <button id="modal-confirm-btn">OK</button>
                     <button id="modal-cancel-btn">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Settings Modal -->
     <div id="settingsModal" class="modal-overlay" onclick="closeSettingsModal(event)">
         <div class="modal-container" onclick="event.stopPropagation()">
             <h3 class="modal-title">Settings</h3>
             <div class="contact-options" style="text-align: left; padding: 0 20px;">
                 <label style="display: flex; align-items: center; justify-content: space-between; color: white; cursor: pointer;">
-                    <span>?ìä Show Affinity Gauge</span>
+                    <span> Show Affinity Gauge</span>
                     <input type="checkbox" id="affinityToggle" checked style="transform: scale(1.5);">
                 </label>
-                <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">Displays character affinity as a gauge next to their names.</p>
+                <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">Displays affection levels next to character names.</p>
                 
                 <div style="margin-top: 20px;">
                     <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
-                        <span>?éµ BGM Volume</span>
+                        <span> BGM Volume</span>
                         <span id="bgmVolumeVal">50%</span>
                     </div>
                     <input type="range" id="bgmVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
@@ -370,7 +343,7 @@
                 
                 <div style="margin-top: 15px;">
                     <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
-                        <span>?îä SFX Volume</span>
+                        <span> SFX Volume</span>
                         <span id="sfxVolumeVal">50%</span>
                     </div>
                     <input type="range" id="sfxVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
@@ -385,96 +358,44 @@
         <div class="modal-container" onclick="event.stopPropagation()">
             <h3 class="modal-title">Contact Us</h3>
             <div class="contact-options">
-                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option">?í¨ KakaoTalk Open Chat</a>
-                <a href="mailto:hyungyu@archerlab.dev" class="contact-option">?ìß Send Email</a>
+                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option"> KakaoTalk Open Chat</a>
+                <a href="mailto:hyungyu@archerlab.dev" class="contact-option"> Send Email</a>
             </div>
             <button onclick="closeContactModal()" style="margin-top: 20px; background: none; border: none; color: #aaa; cursor: pointer;">Close</button>
         </div>
     </div>
 
+    <script>window.preventAutoStart = true;</script>
+    
+    <!-- Scripts -->
+    <script src="assets/js/scenario/en_day1_1_morning.js?v=1.1.9"></script>
+    <script src="assets/js/scenario/en_day1_2_lunch.js?v=1.1.9"></script>
+    <script src="assets/js/scenario/en_day1_3_afterschool.js?v=1.1.9"></script>
+    <script src="assets/js/scenario/en_day1_4_night.js?v=1.1.9"></script>
+    <script src="assets/js/scenario/en_day2_1_morning.js?v=1.1.9"></script>
+    <script src="assets/js/scenario/en_day2_2_lunch.js?v=1.1.9"></script>
+    <script src="assets/js/scenario/en_day2_3_afterschool.js?v=1.1.9"></script>
+    <script src="assets/js/scenario/en_day2_4_night.js?v=1.1.9"></script>
+    <script src="assets/js/prompts.js?v=1.1.9"></script>
+    <script src="assets/js/main.js?v=1.1.9"></script>
+
     <script>
-        // Set preventAutoStart to true to initialize game manually via startGame()
-        window.preventAutoStart = true;
+        window.addEventListener('DOMContentLoaded', () => { soundManager.init(); });
 
-        function openContactModal() {
-            document.getElementById('contactModal').classList.add('is-open');
-        }
-        function closeContactModal(e) {
-            document.getElementById('contactModal').classList.remove('is-open');
-        }
-
-        // Settings Modal for Landing Page
-        document.getElementById('landing-settings-btn').onclick = function() {
-            openSettingsModal();
-        };
-
-        let deferredPrompt;
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-        });
-
-        function installApp() {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                deferredPrompt.userChoice.then((choiceResult) => {
-                    deferredPrompt = null;
-                });
-            } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                alert('On iPhone/iPad, tap the [Share] button and select [Add to Home Screen].');
-            } else {
-                alert('Already installed or browser not supported.');
-            }
-        }
-
-        function startGame() {
-            // Unlock Audio Context and play BGM
-            if (window.soundManager) {
-                window.soundManager.unlock();
-                window.soundManager.playBgm('intro.mp3');
-            }
-            
-            // Hide landing and show game
+        async function startGame() {
+            soundManager.playBgm('assets/audio/bgm/intro.mp3');
             document.getElementById('landing-container').style.display = 'none';
             document.querySelector('.lang-switch').style.display = 'none';
             document.getElementById('game-container').style.display = 'block';
-
-            // Initialize Game Engine
-            if (typeof initGame === 'function') {
-                initGame();
-            }
+            if (window.initGame) await window.initGame();
         }
-    </script>
-    <!-- English Scenarios -->
-    <script src="assets/js/scenario/en_day1_1_morning.js?v=1.1.2"></script>
-    <script src="assets/js/scenario/en_day1_2_lunch.js?v=1.1.2"></script>
-    <script src="assets/js/scenario/en_day1_3_afterschool.js?v=1.1.2"></script>
-    <script src="assets/js/scenario/en_day1_4_night.js?v=1.1.2"></script>
-    <script src="assets/js/scenario/en_day2_1_morning.js?v=1.1.2"></script>
-    <script src="assets/js/scenario/en_day2_2_lunch.js?v=1.1.2"></script>
-    <script src="assets/js/scenario/en_day2_3_afterschool.js?v=1.1.2"></script>
-    <script src="assets/js/scenario/en_day2_4_night.js?v=1.1.2"></script>
-    <script src="assets/js/prompts.js?v=1.1.2"></script>
-    
-    <!-- Main Game Engine -->
-    <script src="assets/js/main.js?v=1.1.2"></script>
-    <script>
-        // Initialize SoundManager (BGM starts after user enters game.html)
-        window.addEventListener('DOMContentLoaded', () => {
-            soundManager.init();
-        });
 
-        // Settings Modal Logic
         function openSettingsModal() {
             document.getElementById('settingsModal').classList.add('is-open');
-            
             const savedSetting = localStorage.getItem('showAffinity');
-            const showAffinity = savedSetting === null ? true : savedSetting === 'true';
-            document.getElementById('affinityToggle').checked = showAffinity;
-
+            document.getElementById('affinityToggle').checked = savedSetting === null ? true : savedSetting === 'true';
             const bgmVol = localStorage.getItem('bgmVolume') || 0.5;
             const sfxVol = localStorage.getItem('sfxVolume') || 0.5;
-            
             document.getElementById('bgmVolume').value = bgmVol * 100;
             document.getElementById('sfxVolume').value = sfxVol * 100;
             document.getElementById('bgmVolumeVal').textContent = Math.round(bgmVol * 100) + '%';
@@ -499,39 +420,34 @@
         }
 
         function saveSettings() {
-            const showAffinity = document.getElementById('affinityToggle').checked;
-            localStorage.setItem('showAffinity', showAffinity);
-            
-            const bgmVol = document.getElementById('bgmVolume').value / 100;
-            const sfxVol = document.getElementById('sfxVolume').value / 100;
-            
+            localStorage.setItem('showAffinity', document.getElementById('affinityToggle').checked);
             if (window.soundManager) {
-                soundManager.setBgmVolume(bgmVol);
-                soundManager.setSfxVolume(sfxVol);
+                soundManager.setBgmVolume(document.getElementById('bgmVolume').value / 100);
+                soundManager.setSfxVolume(document.getElementById('sfxVolume').value / 100);
             }
-            
             closeSettingsModal();
         }
 
         window.addEventListener('DOMContentLoaded', () => {
-             const settingsBtn = document.getElementById('settings-btn');
+             const settingsBtn = document.getElementById('landing-settings-btn');
              if(settingsBtn) settingsBtn.addEventListener('click', openSettingsModal);
         });
-    </script>
-    <script>
-        window.addEventListener('load', function() {
-            var wcs_script = document.createElement('script');
-            wcs_script.src = 'https://wcs.pstatic.net/wcslog.js';
-            wcs_script.async = true;
-            wcs_script.onload = function() {
-                if (!window.wcs_add) window.wcs_add = {};
-                window.wcs_add["wa"] = "229fd882959ab4";
-                if (window.wcs) {
-                    wcs_do();
-                }
-            };
-            document.head.appendChild(wcs_script);
-        });
+
+        function openContactModal() { document.getElementById('contactModal').classList.add('is-open'); }
+        function closeContactModal() { document.getElementById('contactModal').classList.remove('is-open'); }
+
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; });
+        function installApp() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then(() => { deferredPrompt = null; });
+            } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                alert('On iOS, tap [Share] and [Add to Home Screen].');
+            } else {
+                alert('Already installed or browser not supported.');
+            }
+        }
     </script>
 </body>
 </html>
