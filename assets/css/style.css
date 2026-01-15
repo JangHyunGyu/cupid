@@ -232,6 +232,17 @@ body, html {
     margin-bottom: 10px;
 }
 
+/* 채팅 가이드 라벨 */
+#chat-guide {
+    font-size: 0.8rem;
+    color: #ffb6c1;
+    margin-bottom: 8px;
+    padding-left: 8px;
+    border-left: 2px solid #ff69b4;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
 /* 채팅 입력창 및 버튼 감싸기 */
 #chat-input-wrapper {
     display: flex;

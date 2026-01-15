@@ -3,7 +3,7 @@
 <head>
     <script>
         (function() {
-            const CURRENT_VERSION = '1.1.6';
+            const CURRENT_VERSION = '1.1.9';
             setTimeout(() => {
                 fetch('version.json?t=' + new Date().getTime())
                     .then(response => response.json())
@@ -25,7 +25,7 @@
             }, 3000);
         })();
     </script>
-    <script src="assets/js/browser-check.js?v=1.1.6" defer></script>
+    <script src="assets/js/browser-check.js?v=1.1.9" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -252,8 +252,8 @@
 </head>
 <body>
     <div class="lang-switch">
-        <button id="landing-settings-btn" class="lang-btn" style="margin-right: 10px; cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);">âš™ï¸ Settings</button>
-        <a href="index.html" class="lang-btn">í•œêµ­ì–´</a>
+        <button id="landing-settings-btn" class="lang-btn" style="margin-right: 10px; cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);">?™ï¸ Settings</button>
+        <a href="index.html" class="lang-btn">?œêµ­??/a>
     </div>
 
     <div id="landing-container">
@@ -265,11 +265,11 @@
 
         <div class="footer">
             <div class="contact-links">
-                <button class="contact-link" onclick="openContactModal()">ğŸ“ Contact Us</button>
+                <button class="contact-link" onclick="openContactModal()">?“ Contact Us</button>
                 <button class="contact-link" onclick="installApp()">â¬‡ï¸ Install App</button>
             </div>
             <p style="font-size: 0.85rem; margin-bottom: 5px; color: #ffb6c1;">Advisor: Pro Yujin Kim, Pro Sanghoon Lee</p>
-            <p style="font-size: 0.8rem; opacity: 0.7;">Â© 2025 ArcherLab. All rights reserved. (v1.1.2)</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;">Â© 2025 ArcherLab. All rights reserved. (v1.1.9)</p>
         </div>
     </div>
 
@@ -290,7 +290,7 @@
             <div id="dialogue-box">
                 <div id="name-tag"></div>
                 <div id="message"></div>
-                <div id="next-indicator">â–¼</div>
+                <div id="next-indicator">??/div>
 
                 <!-- Name Input -->
                 <div id="name-input-container" style="display: none;">
@@ -308,6 +308,7 @@
 
             <!-- Free Talk -->
             <div id="chat-container" style="display: none;">
+                <div id="chat-guide"></div>
                 <div id="chat-input-wrapper">
                     <input type="text" id="chat-input" placeholder="Type a message..." maxlength="100">
                     <button id="chat-send" title="Send">
@@ -354,14 +355,14 @@
             <h3 class="modal-title">Settings</h3>
             <div class="contact-options" style="text-align: left; padding: 0 20px;">
                 <label style="display: flex; align-items: center; justify-content: space-between; color: white; cursor: pointer;">
-                    <span>ğŸ“Š Show Affinity Gauge</span>
+                    <span>?“Š Show Affinity Gauge</span>
                     <input type="checkbox" id="affinityToggle" checked style="transform: scale(1.5);">
                 </label>
                 <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">Displays character affinity as a gauge next to their names.</p>
                 
                 <div style="margin-top: 20px;">
                     <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
-                        <span>ğŸµ BGM Volume</span>
+                        <span>?µ BGM Volume</span>
                         <span id="bgmVolumeVal">50%</span>
                     </div>
                     <input type="range" id="bgmVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
@@ -369,7 +370,7 @@
                 
                 <div style="margin-top: 15px;">
                     <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
-                        <span>ğŸ”Š SFX Volume</span>
+                        <span>?”Š SFX Volume</span>
                         <span id="sfxVolumeVal">50%</span>
                     </div>
                     <input type="range" id="sfxVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
@@ -384,8 +385,8 @@
         <div class="modal-container" onclick="event.stopPropagation()">
             <h3 class="modal-title">Contact Us</h3>
             <div class="contact-options">
-                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option">ğŸ’¬ KakaoTalk Open Chat</a>
-                <a href="mailto:hyungyu@archerlab.dev" class="contact-option">ğŸ“§ Send Email</a>
+                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option">?’¬ KakaoTalk Open Chat</a>
+                <a href="mailto:hyungyu@archerlab.dev" class="contact-option">?“§ Send Email</a>
             </div>
             <button onclick="closeContactModal()" style="margin-top: 20px; background: none; border: none; color: #aaa; cursor: pointer;">Close</button>
         </div>
