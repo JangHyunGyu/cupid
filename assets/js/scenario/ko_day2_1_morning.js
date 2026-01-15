@@ -28,7 +28,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(교문 앞에 도착하자 어제보다 훨씬 익숙한 풍경이 나를 반긴다.)",
         background: "assets/images/background/school.png",
-        bgm: "daily.mp3",
+        bgm: "daily2.mp3",
         next: "day2_school_gate_2"
     },
     "day2_school_gate_2": {

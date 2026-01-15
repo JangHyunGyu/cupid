@@ -10,7 +10,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(어느새 해가 지고 어둠이 깔린 거리를 지나 집으로 돌아왔다. 전학 첫날... 참 긴 하루였다.)",
         background: "assets/images/background/room_my.png",
-        bgm: null,
+        bgm: "night1.mp3",
         character: null,
         night: true,
         next: "after_home_2"
