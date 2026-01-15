@@ -86,6 +86,62 @@ const modalMessage = document.getElementById('modal-message');
 const modalConfirmBtn = document.getElementById('modal-confirm-btn');
 const modalCancelBtn = document.getElementById('modal-cancel-btn');
 
+// 설정 모달 관련 함수
+function openSettingsModal() {
+    const settingsModal = document.getElementById('settingsModal');
+    if (!settingsModal) return;
+    
+    settingsModal.style.display = 'flex';
+    
+    const savedSetting = localStorage.getItem('showAffinity');
+    const showAffinity = savedSetting === null ? true : savedSetting === 'true';
+    document.getElementById('affinityToggle').checked = showAffinity;
+
+    const bgmVol = localStorage.getItem('bgmVolume') || 0.5;
+    const sfxVol = localStorage.getItem('sfxVolume') || 0.5;
+    
+    document.getElementById('bgmVolume').value = bgmVol * 100;
+    document.getElementById('sfxVolume').value = sfxVol * 100;
+    document.getElementById('bgmVolumeVal').textContent = Math.round(bgmVol * 100) + '%';
+    document.getElementById('sfxVolumeVal').textContent = Math.round(sfxVol * 100) + '%';
+}
+
+function closeSettingsModal(e) {
+    if (e && e.target !== e.currentTarget && e.target.id !== 'settingsModal') return;
+    document.getElementById('settingsModal').style.display = 'none';
+}
+
+function saveSettings() {
+    const showAffinity = document.getElementById('affinityToggle').checked;
+    localStorage.setItem('showAffinity', showAffinity);
+    
+    const bgmVol = document.getElementById('bgmVolume').value / 100;
+    const sfxVol = document.getElementById('sfxVolume').value / 100;
+    
+    if (window.soundManager) {
+        soundManager.setBgmVolume(bgmVol);
+        soundManager.setSfxVolume(sfxVol);
+    }
+    
+    closeSettingsModal();
+    // 호감도 표시 설정 변경 시 즉시 반영을 위해 현재 씬 다시 렌더링하거나 태그 업데이트
+    const scene = getScene(currentSceneId);
+    if (scene) updateNameTag(scene.name);
+}
+
+// 볼륨 변경 실시간 반영
+window.addEventListener('input', (e) => {
+    if (e.target.id === 'bgmVolume') {
+        const vol = e.target.value / 100;
+        document.getElementById('bgmVolumeVal').textContent = e.target.value + '%';
+        if (window.soundManager) soundManager.setBgmVolume(vol);
+    } else if (e.target.id === 'sfxVolume') {
+        const vol = e.target.value / 100;
+        document.getElementById('sfxVolumeVal').textContent = e.target.value + '%';
+        if (window.soundManager) soundManager.setSfxVolume(vol);
+    }
+});
+
 // 시나리오 데이터 가져오기 헬퍼 함수
 function getScene(id) {
     if (!id) return null;
@@ -273,6 +329,18 @@ async function renderScene(sceneId) {
     }
 
     currentSceneId = sceneId;
+
+    // BGM 업데이트
+    if (scene.bgm) {
+        soundManager.playBgm(`assets/audio/bgm/${scene.bgm}`);
+    } else if (scene.bgm === null) {
+        soundManager.stopBgm();
+    }
+
+    // SFX 재생
+    if (scene.sfx) {
+        soundManager.playSfx(`assets/audio/sfx/${scene.sfx}`);
+    }
 
     // 날짜 변경 처리
     if (scene.changeDay) {
@@ -1237,5 +1305,6 @@ dialogueBox.onclick = async () => {
 
 // 초기 실행
 window.onload = async () => {
+    soundManager.init();
     await renderScene("start");
 };

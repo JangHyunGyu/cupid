@@ -37,6 +37,7 @@
     
     <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+    <script src="assets/js/sound.js?v=1.0.0"></script>
     <script src="assets/js/browser-check.js?v=1.0.0" defer></script>
 </head>
 <body>
@@ -89,11 +90,49 @@
                 </div>
                 <div id="chat-turn-indicator">Turns left: <span id="turn-count">3</span></div>
             </div>
+
+            <!-- Settings Button -->
+            <button id="settings-btn" onclick="openSettingsModal()" title="Settings">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87a.49.49 0 0 0 .12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.49.49 0 0 0-.12-.61l-2.03-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
+                </svg>
+            </button>
         </div>
 
         <!-- Fade Layer -->
         <div id="fade-layer">
             <div id="tbc-text">To Be Continued</div>
+        </div>
+
+        <!-- Settings Modal -->
+        <div id="settingsModal" class="modal-overlay" onclick="closeSettingsModal(event)">
+            <div class="modal-container" onclick="event.stopPropagation()">
+                <h3 class="modal-title">Settings</h3>
+                <div class="settings-options" style="text-align: left; padding: 0 20px;">
+                    <label style="display: flex; align-items: center; justify-content: space-between; color: white; cursor: pointer;">
+                        <span>❤️ Show Affinity Hearts</span>
+                        <input type="checkbox" id="affinityToggle" checked style="transform: scale(1.5);">
+                    </label>
+                    <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">Displays character affinity next to their names.</p>
+                    
+                    <div style="margin-top: 20px;">
+                        <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
+                            <span>🎵 BGM Volume</span>
+                            <span id="bgmVolumeVal">50%</span>
+                        </div>
+                        <input type="range" id="bgmVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
+                    </div>
+                    
+                    <div style="margin-top: 15px;">
+                        <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
+                            <span>🔊 SFX Volume</span>
+                            <span id="sfxVolumeVal">50%</span>
+                        </div>
+                        <input type="range" id="sfxVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
+                    </div>
+                </div>
+                <button onclick="saveSettings()" style="margin-top: 20px; background: #ff69b4; border: none; padding: 10px 30px; border-radius: 20px; color: white; cursor: pointer; font-size: 1rem;">Save</button>
+            </div>
         </div>
 
         <!-- Custom Modal -->

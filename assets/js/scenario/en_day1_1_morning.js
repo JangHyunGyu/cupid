@@ -9,8 +9,7 @@ Object.assign(SCENARIO[1], {
     "start": {
         name: "Me",
         text: "(Warm sunlight... The tension of the first day as a transfer student fills my body.)",
-        background: "assets/images/background/school.png",
-        character: null,
+        background: "assets/images/background/school.png",        bgm: "intro.mp3",        character: null,
         next: "start_2"
     },
     "start_2": {
