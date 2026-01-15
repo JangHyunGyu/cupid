@@ -721,6 +721,20 @@ async function startFreeTalk(scene) {
 
     chatContainer.style.display = 'block';
 
+    // 채팅 가이드 업데이트
+    const chatGuideEl = document.getElementById('chat-guide');
+    if (chatGuideEl) {
+        if (isEn) {
+            chatGuideEl.innerHTML = isRemote 
+                ? "<b>Tip:</b> Describe tone in brackets, e.g., <i>(smiling) Hey...</i>"
+                : "<b>Tip:</b> Describe scene or actions, e.g., <i>(holds hand) Let's go.</i> or <i>(it's pouring rain) Take out the umbrella.</i>";
+        } else {
+            chatGuideEl.innerHTML = isRemote 
+                ? "<b>Tip:</b> <i>(웃으며) 자?</i> 처럼 메신저에서도 어조나 상황을 표현해보세요."
+                : "<b>Tip:</b> <i>(손을 잡으며) 같이 가자.</i> 또는 <i>(비가 쏟아진다) 비온다 우산 좀 꺼내줘.</i> 처럼 말해보세요.";
+        }
+    }
+
     // 버튼 텍스트 또는 아이콘 설정 (말하기, 전송, 전송하기 등은 아이콘으로 표시)
     const iconButtons = ["말하기", "전송", "전송하기", "Send"];
     if (scene.buttonText && !iconButtons.includes(scene.buttonText)) {

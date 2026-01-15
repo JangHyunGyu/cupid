@@ -3,7 +3,7 @@
 <head>
     <script>
         (function() {
-            const CURRENT_VERSION = '1.1.6';
+            const CURRENT_VERSION = '1.1.9';
             setTimeout(() => {
                 fetch('version.json?t=' + new Date().getTime())
                     .then(response => response.json())
@@ -25,15 +25,15 @@
             }, 3000);
         })();
     </script>
-    <script src="assets/js/browser-check.js?v=1.1.6" defer></script>
+    <script src="assets/js/browser-check.js?v=1.1.9" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Cupid: 무료 웹 미연시 - 브라우저 미소녀 연애 시뮬레이션</title>
-    <meta name="description" content="설치 없이 즐기는 무료 웹 미연시 게임 Cupid. 학원 로맨스 비주얼 노벨의 주인공이 되어 서연, 유나와 함께 설레는 학교 생활을 시작하세요.">
-    <meta name="keywords" content="미연시, 무료 미연시, 웹 미연시, 브라우저 게임, 비주얼 노벨, 미소녀 연애 시뮬레이션, 학원 로맨스, Cupid">
+    <title>Cupid: 무료 ??미연??- 브라?��? 미소?� ?�애 ?��??�이??/title>
+    <meta name="description" content="?�치 ?�이 즐기??무료 ??미연??게임 Cupid. ?�원 로맨??비주???�벨??주인공이 ?�어 ?�연, ?�나?� ?�께 ?�레???�교 ?�활???�작?�세??">
+    <meta name="keywords" content="미연?? 무료 미연?? ??미연?? 브라?��? 게임, 비주???�벨, 미소?� ?�애 ?��??�이?? ?�원 로맨?? Cupid">
     <meta name="naver-site-verification" content="d1b1d31619e3752f70e28ef54cb08b49698ccf66" />
     <link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/" />
     <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en.html" />
@@ -42,15 +42,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cupid.archerlab.dev/">
-    <meta property="og:title" content="Cupid: 무료 웹 미연시 - 브라우저 미소녀 연애 시뮬레이션">
-    <meta property="og:description" content="설치 없이 즐기는 무료 웹 미연시 게임 Cupid. 학원 로맨스 비주얼 노벨의 주인공이 되어 서연, 유나와 함께 설레는 학교 생활을 시작하세요.">
+    <meta property="og:title" content="Cupid: 무료 ??미연??- 브라?��? 미소?� ?�애 ?��??�이??>
+    <meta property="og:description" content="?�치 ?�이 즐기??무료 ??미연??게임 Cupid. ?�원 로맨??비주???�벨??주인공이 ?�어 ?�연, ?�나?� ?�께 ?�레???�교 ?�활???�작?�세??">
     <meta property="og:image" content="https://cupid.archerlab.dev/assets/images/background/school.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://cupid.archerlab.dev/">
-    <meta property="twitter:title" content="Cupid: 무료 웹 미연시 - 브라우저 미소녀 연애 시뮬레이션">
-    <meta property="twitter:description" content="설치 없이 즐기는 무료 웹 미연시 게임 Cupid. 학원 로맨스 비주얼 노벨의 주인공이 되어 서연, 유나와 함께 설레는 학교 생활을 시작하세요.">
+    <meta property="twitter:title" content="Cupid: 무료 ??미연??- 브라?��? 미소?� ?�애 ?��??�이??>
+    <meta property="twitter:description" content="?�치 ?�이 즐기??무료 ??미연??게임 Cupid. ?�원 로맨??비주???�벨??주인공이 ?�어 ?�연, ?�나?� ?�께 ?�레???�교 ?�활???�작?�세??">
     <meta property="twitter:image" content="https://cupid.archerlab.dev/assets/images/background/school.png">
 
     <!-- Google tag (gtag.js) -->
@@ -151,7 +151,7 @@
         .contact-link:hover {
             background: rgba(255, 255, 255, 0.4);
         }
-        /* 모바일 가로 모드 최적화 */
+        /* 모바??가�?모드 최적??*/
         @media (max-height: 500px) and (orientation: landscape) {
             h1 {
                 font-size: 2rem;
@@ -252,96 +252,97 @@
 </head>
 <body>
     <div class="lang-switch">
-        <button id="landing-settings-btn" class="lang-btn" style="margin-right: 10px; cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);">⚙️ 설정</button>
+        <button id="landing-settings-btn" class="lang-btn" style="margin-right: 10px; cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);">?�️ ?�정</button>
         <a href="index-en.html" class="lang-btn">English</a>
     </div>
     <div id="landing-container">
         <div class="content">
             <h1>CUPID</h1>
-            <p>당신의 운명을 결정할 전학 첫날의 이야기</p>
-            <button onclick="startGame()" class="start-btn" style="border:none; cursor:pointer;">게임 시작</button>
+            <p>?�신???�명??결정???�학 첫날???�야�?/p>
+            <button onclick="startGame()" class="start-btn" style="border:none; cursor:pointer;">게임 ?�작</button>
         </div>
 
         <div class="footer">
             <div class="contact-links">
-                <button class="contact-link" onclick="openContactModal()">📞 문의하기</button>
-                <button class="contact-link" onclick="installApp()">⬇️ 앱 설치</button>
+                <button class="contact-link" onclick="openContactModal()">?�� 문의?�기</button>
+                <button class="contact-link" onclick="installApp()">⬇️ ???�치</button>
             </div>
-            <p style="font-size: 0.85rem; margin-bottom: 5px; color: #ffb6c1;">Advisor: 김유진 프로, 이상훈 프로</p>
-            <p style="font-size: 0.8rem; opacity: 0.7;">© 2025 ArcherLab. All rights reserved. (v1.1.2)</p>
+            <p style="font-size: 0.85rem; margin-bottom: 5px; color: #ffb6c1;">Advisor: 김?�진 ?�로, ?�상???�로</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;">© 2025 ArcherLab. All rights reserved. (v1.1.9)</p>
         </div>
     </div>
 
-    <!-- 게임 컨테이너 (초기에는 숨김) -->
+    <!-- 게임 컨테?�너 (초기?�는 ?��?) -->
     <div id="game-container" style="display: none;">
-        <!-- 배경 이미지 -->
+        <!-- 배경 ?��?지 -->
         <div id="background-layer"></div>
         
-        <!-- 캐릭터 레이어 -->
+        <!-- 캐릭???�이??-->
         <div id="character-layer">
             <div id="char-left" class="char-slot"></div>
             <div id="char-center" class="char-slot"></div>
             <div id="char-right" class="char-slot"></div>
         </div>
 
-        <!-- UI 레이어 -->
+        <!-- UI ?�이??-->
         <div id="ui-layer">
             <div id="dialogue-box">
                 <div id="name-tag"></div>
                 <div id="message"></div>
-                <div id="next-indicator">▼</div>
+                <div id="next-indicator">??/div>
 
-                <!-- 이름 입력창 -->
+                <!-- ?�름 ?�력�?-->
                 <div id="name-input-container" style="display: none;">
                     <div id="name-input-wrapper">
-                        <input type="text" id="player-name-input" placeholder="이름을 입력하세요 (1~4자)" maxlength="4">
+                        <input type="text" id="player-name-input" placeholder="?�름???�력?�세??(1~4??" maxlength="4">
                         <button id="name-confirm-btn">결정</button>
                     </div>
-                    <div id="name-input-guide">한글/영문 1~4자 (숫자, 특수문자 제외)</div>
+                    <div id="name-input-guide">?��?/?�문 1~4??(?�자, ?�수문자 ?�외)</div>
                 </div>
             </div>
             
             <div id="choice-container" style="display: none;">
-                <!-- 선택지 버튼들이 여기에 생성됨 -->
+                <!-- ?�택지 버튼?�이 ?�기???�성??-->
             </div>
 
-            <!-- 프리토킹 입력창 -->
+            <!-- ?�리?�킹 ?�력�?-->
             <div id="chat-container" style="display: none;">
+                <div id="chat-guide"></div>
                 <div id="chat-input-wrapper">
-                    <input type="text" id="chat-input" placeholder="메시지를 입력하세요..." maxlength="100">
-                    <button id="chat-send" title="전송">
+                    <input type="text" id="chat-input" placeholder="메시지�??�력?�세??.." maxlength="100">
+                    <button id="chat-send" title="?�송">
                         <svg viewBox="0 0 24 24">
                             <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
                         </svg>
                     </button>
-                    <button id="chat-skip-btn" title="대화 중단">
+                    <button id="chat-skip-btn" title="?�??중단">
                         <svg viewBox="0 0 24 24">
                             <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </button>
                 </div>
-                <div id="chat-turn-indicator">남은 대화 <span id="turn-count">3</span>회</div>
+                <div id="chat-turn-indicator">?��? ?�??<span id="turn-count">3</span>??/div>
             </div>
 
-            <!-- 게임 내 설정 버튼 -->
-            <button id="settings-btn" class="settings-gear" onclick="openSettingsModal()" title="설정">
+            <!-- 게임 ???�정 버튼 -->
+            <button id="settings-btn" class="settings-gear" onclick="openSettingsModal()" title="?�정">
                 <svg viewBox="0 0 24 24" width="24" height="24">
                     <path fill="currentColor" d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87a.49.49 0 0 0 .12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.49.49 0 0 0-.12-.61l-2.03-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
                 </svg>
             </button>
         </div>
 
-        <!-- 페이드 레이어 -->
+        <!-- ?�이???�이??-->
         <div id="fade-layer">
             <div id="tbc-text">To Be Continued</div>
         </div>
 
-        <!-- 커스텀 모달 (확인을 위해 추가) -->
+        <!-- 커스?� 모달 (?�인???�해 추�?) -->
         <div id="custom-modal" class="modal-overlay" style="display: none;">
             <div class="modal-content">
                 <p id="modal-message"></p>
                 <div class="modal-buttons">
-                    <button id="modal-confirm-btn">확인</button>
+                    <button id="modal-confirm-btn">?�인</button>
                     <button id="modal-cancel-btn">취소</button>
                 </div>
             </div>
@@ -351,17 +352,17 @@
     <!-- Settings Modal -->
     <div id="settingsModal" class="modal-overlay" onclick="closeSettingsModal(event)">
         <div class="modal-container" onclick="event.stopPropagation()">
-            <h3 class="modal-title">설정</h3>
+            <h3 class="modal-title">?�정</h3>
             <div class="contact-options" style="text-align: left; padding: 0 20px;">
                 <label style="display: flex; align-items: center; justify-content: space-between; color: white; cursor: pointer;">
-                    <span>📊 호감도 게이지 표시</span>
+                    <span>?�� ?�감??게이지 ?�시</span>
                     <input type="checkbox" id="affinityToggle" checked style="transform: scale(1.5);">
                 </label>
-                <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">게임 내 캐릭터 이름 옆에 호감도를 게이지로 표시합니다.</p>
+                <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">게임 ??캐릭???�름 ?�에 ?�감?��? 게이지�??�시?�니??</p>
                 
                 <div style="margin-top: 20px;">
                     <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
-                        <span>🎵 배경음악 (BGM)</span>
+                        <span>?�� 배경?�악 (BGM)</span>
                         <span id="bgmVolumeVal">50%</span>
                     </div>
                     <input type="range" id="bgmVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
@@ -369,34 +370,34 @@
                 
                 <div style="margin-top: 15px;">
                     <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
-                        <span>🔊 효과음 (SFX)</span>
+                        <span>?�� ?�과??(SFX)</span>
                         <span id="sfxVolumeVal">50%</span>
                     </div>
                     <input type="range" id="sfxVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
                 </div>
             </div>
-            <button onclick="saveSettings()" style="margin-top: 20px; background: #ff69b4; border: none; padding: 10px 30px; border-radius: 20px; color: white; cursor: pointer; font-size: 1rem;">저장</button>
+            <button onclick="saveSettings()" style="margin-top: 20px; background: #ff69b4; border: none; padding: 10px 30px; border-radius: 20px; color: white; cursor: pointer; font-size: 1rem;">?�??/button>
         </div>
     </div>
 
     <!-- Contact Modal -->
     <div id="contactModal" class="modal-overlay" onclick="closeContactModal(event)">
         <div class="modal-container" onclick="event.stopPropagation()">
-            <h3 class="modal-title">문의하기</h3>
+            <h3 class="modal-title">문의?�기</h3>
             <div class="contact-options">
-                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option">💬 카카오톡 오픈채팅</a>
-                <a href="mailto:hyungyu@archerlab.dev" class="contact-option">📧 이메일 보내기</a>
+                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option">?�� 카카?�톡 ?�픈채팅</a>
+                <a href="mailto:hyungyu@archerlab.dev" class="contact-option">?�� ?�메??보내�?/a>
             </div>
-            <button onclick="closeContactModal()" style="margin-top: 20px; background: none; border: none; color: #aaa; cursor: pointer;">닫기</button>
+            <button onclick="closeContactModal()" style="margin-top: 20px; background: none; border: none; color: #aaa; cursor: pointer;">?�기</button>
         </div>
     </div>
 
     <script>
-        // 전역 변수로 자동 시작 방지 설정
+        // ?�역 변?�로 ?�동 ?�작 방�? ?�정
         window.preventAutoStart = true;
     </script>
     
-    <!-- 게임 시나리오 및 엔진 로드 -->
+    <!-- 게임 ?�나리오 �??�진 로드 -->
     <script src="assets/js/scenario/ko_day1_1_morning.js?v=1.1.2"></script>
     <script src="assets/js/scenario/ko_day1_2_lunch.js?v=1.1.2"></script>
     <script src="assets/js/scenario/ko_day1_3_afterschool.js?v=1.1.2"></script>
@@ -414,17 +415,17 @@
             soundManager.init();
         });
 
-        // 게임 시작 함수
+        // 게임 ?�작 ?�수
         async function startGame() {
-            // 1. 사운드 재생 (이 버튼 클릭이 상호작용으로 인정됨)
+            // 1. ?�운???�생 (??버튼 ?�릭???�호?�용?�로 ?�정??
             soundManager.playBgm('assets/audio/bgm/intro.mp3');
             
-            // 2. UI 전환
+            // 2. UI ?�환
             document.getElementById('landing-container').style.display = 'none';
             document.querySelector('.lang-switch').style.display = 'none';
             document.getElementById('game-container').style.display = 'block';
             
-            // 3. 게임 엔진 구동
+            // 3. 게임 ?�진 구동
             if (window.initGame) {
                 await window.initGame();
             }
@@ -447,7 +448,7 @@
             document.getElementById('sfxVolumeVal').textContent = Math.round(sfxVol * 100) + '%';
         }
 
-        // 볼륨 변경 실시간 반영
+        // 볼륨 변�??�시�?반영
         window.addEventListener('input', (e) => {
             if (e.target.id === 'bgmVolume') {
                 const vol = e.target.value / 100;
@@ -505,9 +506,9 @@
                     deferredPrompt = null;
                 });
             } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                alert('아이폰/아이패드에서는 [공유] 버튼을 누르고 [홈 화면에 추가]를 선택해주세요.');
+                alert('?�이???�이?�드?�서??[공유] 버튼???�르�?[???�면??추�?]�??�택?�주?�요.');
             } else {
-                alert('이미 설치되어 있거나 지원하지 않는 브라우저입니다.');
+                alert('?��? ?�치?�어 ?�거??지?�하지 ?�는 브라?��??�니??');
             }
         }
     </script>
