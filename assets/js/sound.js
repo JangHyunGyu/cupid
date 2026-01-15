@@ -25,9 +25,9 @@ class SoundManager {
         // 현재 재생 시도 중인 배경음악 파일 경로 (중복 재생 방지용)
         this.currentBgmPath = '';
 
-        // 페이드 효과 관련 설정
-        this.fadeInDuration = 1000;  // 페이드 인 지속 시간 (ms)
-        this.fadeOutDuration = 1500; // 페이드 아웃 지속 시간 (ms)
+        // 페이드 효과 관련 설정 (크로스페이드 효과를 위해 시간을 늘림)
+        this.fadeInDuration = 2000;  // 페이드 인 지속 시간 (2초)
+        this.fadeOutDuration = 2000; // 페이드 아웃 지속 시간 (2초)
     }
 
     /**
