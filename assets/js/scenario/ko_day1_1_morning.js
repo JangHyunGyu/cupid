@@ -160,7 +160,7 @@ Object.assign(SCENARIO[1], {
         affinityBranches: [
             { minAffinity: 15, next: "hallway_1_3_high" },
             { minAffinity: 0, next: "hallway_1_3" },
-            { minAffinity: -100, next: "hallway_1_3_low" }
+            { minAffinity: -999, next: "hallway_1_3_low" }
         ],
         next: "hallway_1_3"
     },
