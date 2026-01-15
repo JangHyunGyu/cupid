@@ -788,11 +788,6 @@ Object.assign(SCENARIO[1], {
     "class_after_common_3": {
         name: "Me",
         text: "(I walk towards the seat next to Seoyeon. My heart is beating fast... Today is going to be an interesting day.)",
-        next: "morning_end"
-    },
-    "morning_end": {
-        name: "System",
-        text: "Morning school arrival scene completed. Lunchtime will now begin.",
-        next: "lunch_start"
+        next: "lunch_time"
     }
 });
