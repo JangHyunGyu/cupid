@@ -10,6 +10,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(수업 끝! 방과 후를 알리는 종소리가 울려 퍼진다.)",
         background: "assets/images/background/room_school.png",
+        bgm: "sunset1.mp3",
         character: null,
         sunset: true,
         next: "after_school_start_2"
