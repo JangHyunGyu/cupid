@@ -117,7 +117,8 @@ Object.assign(SCENARIO[1], {
         night: true,
         affinityBranches: [
             { minAffinity: 15, next: "night_message_seyoun_reply_high" },
-            { minAffinity: -100, next: "night_message_seyoun_reply_standard" }
+            { minAffinity: 0, next: "night_message_seyoun_reply_standard" },
+            { minAffinity: -100, next: "night_message_seyoun_reply_low" }
         ]
     },
     "night_message_seyoun_reply_standard": {
@@ -134,6 +135,13 @@ Object.assign(SCENARIO[1], {
         stats: { Seoyeon: { affinity: 3 } },
         next: "night_home_check_contact"
     },
+    "night_message_seyoun_reply_low": {
+        name: "Seoyeon",
+        text: "(A reply arrives after a short wait.) 'Ah... yeah. See you at school tomorrow.'",
+        night: true,
+        stats: { Seoyeon: { affinity: -5 } },
+        next: "night_home_check_contact"
+    },
     "night_message_yuna": {
         name: "Me",
         text: "(I send a message to Yuna. 'I had fun today. Good night.')",
@@ -146,7 +154,8 @@ Object.assign(SCENARIO[1], {
         night: true,
         affinityBranches: [
             { minAffinity: 10, next: "night_message_yuna_reply_high" },
-            { minAffinity: -100, next: "night_message_yuna_reply_standard" }
+            { minAffinity: 0, next: "night_message_yuna_reply_standard" },
+            { minAffinity: -100, next: "night_message_yuna_reply_low" }
         ]
     },
     "night_message_yuna_reply_standard": {
@@ -161,6 +170,13 @@ Object.assign(SCENARIO[1], {
         text: "(A reply arrives after a short wait.) 'Today... yeah, thank you. I think I was able to smile a bit thanks to you. Good night.'",
         night: true,
         stats: { Yuna: { affinity: 5 } },
+        next: "night_home_check_contact"
+    },
+    "night_message_yuna_reply_low": {
+        name: "Yuna",
+        text: "(No reply arrives. Only the read mark is displayed.)",
+        night: true,
+        stats: { Yuna: { affinity: -5 } },
         next: "night_home_check_contact"
     },
     "night_message_dain": {

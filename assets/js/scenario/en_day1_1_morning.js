@@ -750,44 +750,76 @@ Object.assign(SCENARIO[1], {
         ]
     },
 
-    "class_after_party": {
-        name: "Classmates",
-        text: "\"Whoa~! Our transfer student has great energy! Nice to meet you!\"",
-        next: "class_after_common"
-    },
     "class_after_active": {
         name: "Classmates",
-        text: "\"Hello! Let's get along!\"",
-        next: "class_after_common"
+        text: "(Cheers erupt from all over the classroom. Especially the boys sitting in the back have sparkling eyes. Seoyeon also claps with a satisfied smile.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "class_after_active_2"
+    },
+    "class_after_active_2": {
+        name: "Classmates",
+        text: "(The kids are already whispering about recruiting me to their team.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "class_after_active_3"
+    },
+    "class_after_active_3": {
+        name: "Classmates",
+        text: "\"Oh~ looks like you're good at sports! How about a game of volleyball during lunch? Let's see what the transfer student's got!\"",
+        character: null,
+        next: "lunch_time"
     },
     "class_after_quiet": {
         name: "Classmates",
-        text: "\"Hehe, he looks a bit shy. Welcome!\"",
-        next: "class_after_common"
+        text: "(The kids nod and accept me calmly. A few girls whisper while looking at me.)",
+        character: null,
+        next: "class_after_quiet_2"
+    },
+    "class_after_quiet_2": {
+        name: "Classmates",
+        text: "(Seoyeon nods as if she likes my serious appearance. The classroom atmosphere becomes much calmer.)",
+        character: "assets/images/characters/seyoun_nomal.png",
+        next: "class_after_quiet_3"
+    },
+    "class_after_quiet_3": {
+        name: "Classmates",
+        text: "\"Wow, he's got a certain vibe... Can I say hi if we run into each other at the library later?\"",
+        character: null,
+        next: "lunch_time"
+    },
+    "class_after_party": {
+        name: "Classmates",
+        text: "(The classroom instantly becomes noisy like a marketplace. Kids already start crowding around.)",
+        character: null,
+        next: "class_after_party_2"
+    },
+    "class_after_party_2": {
+        name: "Classmates",
+        text: "(Seoyeon seems a bit flustered but soon bursts into laughter. The kids are already busy deciding on a menu.)",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "class_after_party_3"
+    },
+    "class_after_party_3": {
+        name: "Classmates",
+        text: "\"Wow! {name}'s personality is seriously awesome. Let's eat lunch with us today! We'll show you lots of tasty stuff!\"",
+        character: null,
+        next: "lunch_time"
     },
     "class_after_study": {
         name: "Classmates",
-        text: "\"...Is he a bit prickly? Well, alright.\"",
-        next: "class_after_common"
+        text: "(A cold silence flows through the classroom. The kids look flustered, glancing at each other and whispering.)",
+        character: null,
+        next: "class_after_study_2"
     },
-    "class_after_common": {
-        name: "Homeroom Teacher",
-        text: "\"Alright, introduction is over. {name}, you go sit in the empty seat next to Seoyeon. Seoyeon, raise your hand!\"",
-        character: "assets/images/characters/teacher.png",
-        next: "class_after_common_2"
+    "class_after_study_2": {
+        name: "Classmates",
+        text: "(Seoyeon's expression also hardens slightly. It feels like an invisible wall has been created. The kids become quiet, sensing my mood.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "class_after_study_3"
     },
-    "class_after_common_2": {
-        name: "Seoyeon",
-        text: "(Seoyeon raises her hand with a bright smile. Beside her, the seat is empty as promised.)",
-        characters: {
-            left: "assets/images/characters/teacher.png",
-            right: "assets/images/characters/seyoun_laugh.png"
-        },
-        next: "class_after_common_3"
-    },
-    "class_after_common_3": {
-        name: "Me",
-        text: "(I walk towards the seat next to Seoyeon. My heart is beating fast... Today is going to be an interesting day.)",
+    "class_after_study_3": {
+        name: "Classmates",
+        text: "\"Wow... he's no joke. He looks like a total study bug. It'll be big trouble if we mess with him...\"",
+        character: null,
         next: "lunch_time"
     }
 });
