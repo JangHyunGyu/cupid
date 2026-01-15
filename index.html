@@ -315,11 +315,9 @@
     </div>
 
     <script>
-        // Initialize Sound and Play Intro BGM
+        // Initialize SoundManager (BGM starts after user enters game.html)
         window.addEventListener('DOMContentLoaded', () => {
             soundManager.init();
-            // 인트로 BGM 재생 (사용자 상호작용 후 자동 재생됨)
-            soundManager.playBgm('assets/audio/bgm/intro.mp3');
         });
 
         // Settings Modal Logic
