@@ -10,6 +10,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Beep beep! The alarm pulls me from a deep sleep. It's the morning of my second day here.)",
         background: "assets/images/background/room_my.png",
+        bgm: "intro.mp3",
         character: null,
         next: "day2_start_2"
     },
@@ -27,6 +28,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(The school gate comes into view. It feels a little more familiar than it did yesterday.)",
         background: "assets/images/background/school.png",
+        bgm: "daily.mp3",
         next: "day2_school_gate_2"
     },
     "day2_school_gate_2": {

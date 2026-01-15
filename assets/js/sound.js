@@ -24,6 +24,9 @@ class SoundManager {
         
         // 현재 재생 시도 중인 배경음악 파일 경로 (중복 재생 방지용)
         this.currentBgmPath = '';
+
+        // 페이드 효과 관련 설정
+        this.fadeDuration = 1000; // 페이드 인/아웃 지속 시간 (ms)
     }
 
     /**
@@ -45,7 +48,11 @@ class SoundManager {
                 // 이미 생성된 배경음악 객체가 정지 상태라면 재생 시도
                 if (this.bgm.paused && this.currentBgmPath) {
                     this.bgm.play()
-                        .then(() => console.log("SoundManager: 잠금 해제 후 BGM 재생 성공"))
+                        .then(() => {
+                            console.log("SoundManager: 잠금 해제 후 BGM 재생 성공");
+                            // 잠금 해제와 동시에 페이드 인 처리
+                            this._fadeIn(this.bgm, this.muted ? 0 : this.bgmVolume);
+                        })
                         .catch(e => console.error("SoundManager: BGM 재생 실패:", e));
                 }
             } else if (this.currentBgmPath) {
@@ -65,9 +72,21 @@ class SoundManager {
         window.addEventListener('click', unlock);
         window.addEventListener('touchstart', unlock);
     }
+    
+    /**
+     * 오디오 잠금을 강제로 해제합니다. (SPA 시작 시 호출 가능)
+     */
+    unlock() {
+        const unlockHandler = () => {
+            // 빈 소리로 오디오 컨텍스트 활성화
+            const dummy = new Audio();
+            dummy.play().catch(() => {});
+        };
+        unlockHandler();
+    }
 
     /**
-     * 배경음악을 재생합니다.
+     * 배경음악을 재생합니다. (페이드 인/아웃 효과 적용)
      * @param {string} path 오디오 파일 경로 (예: 'assets/audio/bgm/intro.mp3')
      * @param {boolean} loop 반복 재생 여부 (기본값 true)
      */
@@ -75,47 +94,89 @@ class SoundManager {
         // [최적화] 이미 같은 곡이 재생 중이라면 아무것도 하지 않음 (중복 방지)
         if (this.currentBgmPath === path && this.bgm && !this.bgm.paused) return;
         
-        console.log("SoundManager: BGM 재생 요청 ->", path);
+        console.log("SoundManager: BGM 교체 요청 ->", path);
         
-        // 기존 음악이 있다면 일단 정지 및 초기화
+        // 1. 기존 음악이 있다면 페이드 아웃 후 정지
         if (this.bgm) {
-            this.bgm.pause();
-            this.bgm = null;
+            this._fadeOut(this.bgm);
         }
 
         this.currentBgmPath = path;
         
-        // 새로운 오디오 객체 생성
+        // 2. 새로운 오디오 객체 생성
         this.bgm = new Audio(path);
-        this.bgm.loop = loop; // 무한 반복 설정
-        this.bgm.volume = this.muted ? 0 : this.bgmVolume; // 현재 볼륨 설정 적용
+        this.bgm.loop = loop;
+        this.bgm.volume = 0; // 0에서 시작하여 페이드 인
         
-        // 파일 로드 에러 처리
+        // 3. 파일 로드 에러 처리
         this.bgm.onerror = (e) => {
             console.error("SoundManager: 오디오 파일 로드 실패 ->", path, e);
         };
 
-        // 재생 시도
-        const playPromise = this.bgm.play();
-        if (playPromise !== undefined) {
-            playPromise.then(() => {
-                console.log("SoundManager: BGM 재생 시작 성공");
-            }).catch(e => {
-                // 자동 재생 차단된 경우 (일반적인 초기 상태)
-                console.warn("SoundManager: 자동 재생 차단됨. 사용자가 화면을 클릭하면 재생됩니다.");
-            });
+        // 4. 페이드 인 재생 시도
+        this._fadeIn(this.bgm, this.muted ? 0 : this.bgmVolume);
+    }
+
+    /**
+     * 현재 재생 중인 배경음악을 서서히 멈춥니다.
+     */
+    stopBgm() {
+        if (this.bgm) {
+            console.log("SoundManager: BGM 페이드 아웃 정지");
+            this._fadeOut(this.bgm);
+            this.bgm = null;
+            this.currentBgmPath = ''; 
         }
     }
 
     /**
-     * 현재 재생 중인 배경음악을 즉시 멈춥니다.
+     * 배경음악 볼륨을 서서히 올리는 내부 함수
      */
-    stopBgm() {
-        if (this.bgm) {
-            this.bgm.pause();
-            this.currentBgmPath = ''; // 경로 초기화
-            console.log("SoundManager: BGM 정지");
+    _fadeIn(audio, targetVolume) {
+        if (!audio || targetVolume <= 0) {
+            if (audio) audio.volume = 0;
+            audio.play().catch(() => {});
+            return;
         }
+
+        audio.volume = 0;
+        audio.play().catch(e => {
+            console.warn("SoundManager: 자동 재생 차단으로 페이드 인 대기 중");
+        });
+
+        const step = targetVolume / (this.fadeDuration / 50);
+        const timer = setInterval(() => {
+            if (audio.volume + step < targetVolume) {
+                audio.volume += step;
+            } else {
+                audio.volume = targetVolume;
+                clearInterval(timer);
+            }
+        }, 50);
+    }
+
+    /**
+     * 배경음악 볼륨을 서서히 낮추고 끄는 내부 함수
+     */
+    _fadeOut(audio) {
+        if (!audio) return;
+        
+        const startVolume = audio.volume;
+        if (startVolume <= 0) {
+            audio.pause();
+            return;
+        }
+
+        const step = startVolume / (this.fadeDuration / 50);
+        const timer = setInterval(() => {
+            if (audio.volume > step) {
+                audio.volume -= step;
+            } else {
+                audio.volume = 0;
+                audio.pause();
+                clearInterval(timer);
+            }
+        }, 50);
     }
 
     /**

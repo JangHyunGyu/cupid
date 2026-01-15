@@ -10,6 +10,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(따르릉! 알람 소리에 무거운 눈꺼풀을 들어 올렸다. 전학 이틀째의 아침이다.)",
         background: "assets/images/background/room_my.png",
+        bgm: "intro.mp3",
         character: null,
         next: "day2_start_2"
     },
@@ -27,6 +28,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(교문 앞에 도착하자 어제보다 훨씬 익숙한 풍경이 나를 반긴다.)",
         background: "assets/images/background/school.png",
+        bgm: "daily.mp3",
         next: "day2_school_gate_2"
     },
     "day2_school_gate_2": {
