@@ -535,6 +535,14 @@ async function renderScene(sceneId) {
         if (showNextIndicator) {
             nextIndicator.style.display = 'block';
         }
+
+        // 자동 진행 로직: 대사도 없고 선택지도 없는 라우팅 전용 노드 처리
+        if (!scene.text && (!scene.choices || scene.choices.length === 0)) {
+            const nextId = resolveNextScene(scene);
+            if (nextId && nextId !== sceneId) {
+                setTimeout(() => renderScene(nextId), 0);
+            }
+        }
     }
 }
 
