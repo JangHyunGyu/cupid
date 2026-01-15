@@ -450,9 +450,35 @@ Object.assign(SCENARIO[1], {
         next: "hallway_2"
     },
     "hallway_2": {
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 0, next: "hallway_2_normal" },
+            { minAffinity: -100, next: "hallway_2_low" }
+        ],
+        next: "hallway_2_normal"
+    },
+    "hallway_2_normal": {
         name: "Seoyeon",
-        text: "(She suddenly stops and turns to look at me.)",
+        text: "(She suddenly stops and turns around to look at me.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2_2"
+    },
+    "hallway_2_low": {
+        name: "Seoyeon",
+        text: "(Seoyeon stops and turns around with a cold look in her eyes.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "hallway_2_2_low"
+    },
+    "hallway_2_2_low": {
+        name: "Seoyeon",
+        text: "(There's a noticeable distance in her gaze.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "hallway_2_3_low"
+    },
+    "hallway_2_3_low": {
+        name: "Seoyeon",
+        text: "\"That kind of behavior is unacceptable. I'd appreciate it if you'd show some basic respect.\"",
+        character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_2_2"
     },
     "hallway_2_2": {
@@ -592,12 +618,43 @@ Object.assign(SCENARIO[1], {
         next: "classroom_2"
     },
     "classroom_2": {
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_2_high" },
+            { minAffinity: 0, next: "classroom_2_normal" },
+            { minAffinity: -100, next: "classroom_2_low" }
+        ],
+        next: "classroom_2_normal"
+    },
+    "classroom_2_normal": {
         name: "Homeroom Teacher",
-        text: "(Standing in front of the teacher's desk, dozens of eyes are fixed on me all at once. Curious looks, wary looks... Seoyeon is standing reliably next to me, watching over me with a smile.)",
+        text: "(Standing in front of the teacher's desk, dozens of eyes are fixed on me all at once. Seoyeon is standing next to me, watching over me with a smile.)",
+        background: "assets/images/background/room_school.png",
+        characters: {
+            left: "assets/images/characters/teacher.png",
+            right: "assets/images/characters/seyoun_nomal.png"
+        },
+        setFlag: "metTeacher",
+        next: "classroom_2_2"
+    },
+    "classroom_2_high": {
+        name: "Homeroom Teacher",
+        text: "(Standing in front of the teacher's desk, dozens of eyes are fixed on me. Seoyeon is standing next to me with a reassuring smile, cheering me on.)",
         background: "assets/images/background/room_school.png",
         characters: {
             left: "assets/images/characters/teacher.png",
             right: "assets/images/characters/seyoun_laugh.png"
+        },
+        setFlag: "metTeacher",
+        next: "classroom_2_2"
+    },
+    "classroom_2_low": {
+        name: "Homeroom Teacher",
+        text: "(Standing in front of the teacher's desk, dozens of eyes are fixed on me. Seoyeon is standing slightly away with a cold expression.)",
+        background: "assets/images/background/room_school.png",
+        characters: {
+            left: "assets/images/characters/teacher.png",
+            right: "assets/images/characters/seyoun_pout.png"
         },
         setFlag: "metTeacher",
         next: "classroom_2_2"

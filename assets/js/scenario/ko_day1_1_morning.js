@@ -450,9 +450,35 @@ Object.assign(SCENARIO[1], {
         next: "hallway_2"
     },
     "hallway_2": {
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 0, next: "hallway_2_normal" },
+            { minAffinity: -100, next: "hallway_2_low" }
+        ],
+        next: "hallway_2_normal"
+    },
+    "hallway_2_normal": {
         name: "서연",
         text: "(그녀가 갑자기 멈춰 서서 나를 돌아본다.)",
         character: "assets/images/characters/seyoun_nomal.png",
+        next: "hallway_2_2"
+    },
+    "hallway_2_low": {
+        name: "서연",
+        text: "(서연이가 앞서 걷다가 갑자기 멈춰 서더니, 차가운 눈빛으로 나를 돌아본다.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "hallway_2_2_low"
+    },
+    "hallway_2_2_low": {
+        name: "서연",
+        text: "(그녀의 시선에서 거리감이 느껴진다.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "hallway_2_3_low"
+    },
+    "hallway_2_3_low": {
+        name: "서연",
+        text: "\"전학 첫날부터 그런 식이면 곤란해. 최소한의 예의는 지켜줬으면 좋겠어.\"",
+        character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_2_2"
     },
     "hallway_2_2": {
@@ -592,12 +618,43 @@ Object.assign(SCENARIO[1], {
         next: "classroom_2"
     },
     "classroom_2": {
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_2_high" },
+            { minAffinity: 0, next: "classroom_2_normal" },
+            { minAffinity: -100, next: "classroom_2_low" }
+        ],
+        next: "classroom_2_normal"
+    },
+    "classroom_2_normal": {
         name: "담임선생님",
-        text: "(교탁 앞에 서자 수십 개의 시선이 일제히 나에게 꽂힌다. 호기심 어린 눈빛, 경계하는 눈빛... 서연이는 내 옆에서 든든하게 미소 지으며 나를 지켜봐 주고 있다.)",
+        text: "(교탁 앞에 서자 수십 개의 시선이 일제히 나에게 꽂힌다. 호기심 어린 눈빛, 경계하는 눈빛... 서연이는 내 옆에서 미소 지으며 나를 지켜보고 있다.)",
+        background: "assets/images/background/room_school.png",
+        characters: {
+            left: "assets/images/characters/teacher.png",
+            right: "assets/images/characters/seyoun_nomal.png"
+        },
+        setFlag: "metTeacher",
+        next: "classroom_2_2"
+    },
+    "classroom_2_high": {
+        name: "담임선생님",
+        text: "(교탁 앞에 서자 수십 개의 시선이 꽂힌다. 서연이는 내 옆에서 든든하게 미소 지으며 나를 응원해주고 있다.)",
         background: "assets/images/background/room_school.png",
         characters: {
             left: "assets/images/characters/teacher.png",
             right: "assets/images/characters/seyoun_laugh.png"
+        },
+        setFlag: "metTeacher",
+        next: "classroom_2_2"
+    },
+    "classroom_2_low": {
+        name: "담임선생님",
+        text: "(교탁 앞에 서자 수십 개의 시선이 꽂힌다. 서연이는 나에게서 조금 떨어진 곳에 차가운 표정으로 서 있다.)",
+        background: "assets/images/background/room_school.png",
+        characters: {
+            left: "assets/images/characters/teacher.png",
+            right: "assets/images/characters/seyoun_pout.png"
         },
         setFlag: "metTeacher",
         next: "classroom_2_2"

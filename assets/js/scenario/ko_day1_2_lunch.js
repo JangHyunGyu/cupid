@@ -185,10 +185,30 @@ Object.assign(SCENARIO[1], {
         next: "rooftop_2"
     },
     "rooftop_2": {
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 0, next: "rooftop_2_normal" },
+            { minAffinity: -100, next: "rooftop_2_low" }
+        ],
+        next: "rooftop_2_normal"
+    },
+    "rooftop_2_normal": {
         name: "서연",
         text: "(식사를 마치고 나란히 앉아 먼 하늘을 바라본다. 서연이가 조심스럽게 입을 연다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_2_2"
+    },
+    "rooftop_2_low": {
+        name: "서연",
+        text: "(식사를 마친 후, 서연이가 무거운 침묵 끝에 입을 연다. 그녀의 목소리에는 서먹함이 서려 있다.)",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "rooftop_2_2_low"
+    },
+    "rooftop_2_2_low": {
+        name: "서연",
+        text: "\"저기, {name}... 사실 나 오늘 너를 좀 더 알고 싶었는데, 생각보다 대화가 어렵네. 그래도 점심 같이 먹어줘서 고마워.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        next: "rooftop_free_talk"
     },
     "rooftop_2_2": {
         name: "서연",
