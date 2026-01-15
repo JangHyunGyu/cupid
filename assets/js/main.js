@@ -1303,8 +1303,9 @@ dialogueBox.onclick = async () => {
     }
 };
 
-// 초기 실행
-window.onload = async () => {
+// 초기 실행 (DOMContentLoaded로 변경하여 더 빠르게 실행)
+window.addEventListener('DOMContentLoaded', async () => {
+    // 사운드 매니저 초기화 및 첫 장면 렌더링
     soundManager.init();
     await renderScene("start");
-};
+});
