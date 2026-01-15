@@ -10,7 +10,7 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(The sun has set, and I've returned home through the dark streets. My first day at the new school... it's been a long one.)",
         background: "assets/images/background/room_my.png",
-        bgm: null,
+        bgm: "night1.mp3",
         character: null,
         night: true,
         next: "after_home_2"

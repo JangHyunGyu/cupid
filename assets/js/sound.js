@@ -26,7 +26,8 @@ class SoundManager {
         this.currentBgmPath = '';
 
         // 페이드 효과 관련 설정
-        this.fadeDuration = 1000; // 페이드 인/아웃 지속 시간 (ms)
+        this.fadeInDuration = 1000;  // 페이드 인 지속 시간 (ms)
+        this.fadeOutDuration = 1500; // 페이드 아웃 지속 시간 (ms)
     }
 
     /**
@@ -144,7 +145,7 @@ class SoundManager {
             console.warn("SoundManager: 자동 재생 차단으로 페이드 인 대기 중");
         });
 
-        const step = targetVolume / (this.fadeDuration / 50);
+        const step = targetVolume / (this.fadeInDuration / 50);
         const timer = setInterval(() => {
             if (audio.volume + step < targetVolume) {
                 audio.volume += step;
@@ -167,7 +168,7 @@ class SoundManager {
             return;
         }
 
-        const step = startVolume / (this.fadeDuration / 50);
+        const step = startVolume / (this.fadeOutDuration / 50);
         const timer = setInterval(() => {
             if (audio.volume > step) {
                 audio.volume -= step;
