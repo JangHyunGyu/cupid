@@ -1303,9 +1303,16 @@ dialogueBox.onclick = async () => {
     }
 };
 
-// 초기 실행 (DOMContentLoaded로 변경하여 더 빠르게 실행)
-window.addEventListener('DOMContentLoaded', async () => {
-    // 사운드 매니저 초기화 및 첫 장면 렌더링
+// 초기 실행 제어 (index.html에서 startGame 호출 시 실행되도록 변경 가능)
+if (!window.preventAutoStart) {
+    window.addEventListener('DOMContentLoaded', async () => {
+        soundManager.init();
+        await renderScene("start");
+    });
+}
+
+// 명시적 게임 시작 함수
+window.initGame = async () => {
     soundManager.init();
     await renderScene("start");
-});
+};
