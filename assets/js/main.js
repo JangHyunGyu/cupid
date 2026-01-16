@@ -986,6 +986,11 @@ async function sendChatMessage() {
     const originalBtnContent = chatSendBtn.innerHTML;
     chatSendBtn.innerHTML = `<span class="loading-dots">...</span>`;
 
+    // 캐릭터 및 대화창에 '생각중' 상태 적용
+    const allChars = document.querySelectorAll('.char-slot img');
+    allChars.forEach(img => img.classList.add('thinking'));
+    dialogueBox.classList.add('thinking-box');
+
     try {
         const response = await fetch(API_ENDPOINT, {
             method: "POST",
@@ -1117,6 +1122,12 @@ async function sendChatMessage() {
 
             const scene = getScene(currentSceneId);
             updateNameTag(scene.name);
+
+            // 답변 출력 전 생각중 상태 해제
+            const allChars = document.querySelectorAll('.char-slot img');
+            allChars.forEach(img => img.classList.remove('thinking'));
+            dialogueBox.classList.remove('thinking-box');
+
             await typeText(reply, scene.name); // 타이핑이 끝날 때까지 기다립니다.
             freeTalkHistory.push({ role: "assistant", content: reply });
 
@@ -1172,6 +1183,12 @@ async function sendChatMessage() {
         if (chatSkipBtn) chatSkipBtn.disabled = false;
         chatInput.disabled = false;
         chatSendBtn.innerHTML = originalBtnContent;
+
+        // 모든 생각중 상태 해제
+        const allChars = document.querySelectorAll('.char-slot img');
+        allChars.forEach(img => img.classList.remove('thinking'));
+        dialogueBox.classList.remove('thinking-box');
+        
         chatInput.focus();
     }
 }
