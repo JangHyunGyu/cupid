@@ -335,17 +335,28 @@ body, html {
 
 /* AI 응답 대기 로딩 효과 */
 .loading-dots {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1;
-    margin-bottom: 8px;
     display: inline-block;
-    animation: loading-blink 1.4s infinite both;
+    animation: loading-blink 1s infinite both;
+    vertical-align: middle;
 }
 
 @keyframes loading-blink {
-    0% { opacity: .2; }
-    20% { opacity: 1; }
-    100% { opacity: .2; }
+    0%, 100% { opacity: .3; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.1); }
+}
+
+/* 대화창 생각중 상태 (테두리 반짝임) */
+#dialogue-box.thinking-box {
+    border-color: #ffb6c1;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.6);
+    animation: box-glow 2s infinite ease-in-out;
+}
+
+@keyframes box-glow {
+    0%, 100% { border-color: #ff69b4; box-shadow: 0 0 10px rgba(255, 105, 180, 0.4); }
+    50% { border-color: #fff; box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); }
 }
 
 /* 남은 대화 횟수 표시 */
@@ -555,11 +566,25 @@ body, html {
     opacity: 0.5;
 }
 
-/* 생각 중인 연출 (캐릭터가 흐려짐) */
+/* 생각 중인 연출 (캐릭터가 흐려지며 숨쉬는 듯한 효과) */
 .thinking {
-    opacity: 0.6;
-    filter: blur(2px);
+    opacity: 0.7;
+    filter: blur(1.5px) grayscale(0.2);
     transition: all 0.5s ease-in-out;
+    animation: thinking-breath 2s infinite ease-in-out;
+}
+
+@keyframes thinking-breath {
+    0%, 100% { 
+        opacity: 0.5;
+        transform: scale(1);
+        filter: blur(2px) grayscale(0.3);
+    }
+    50% { 
+        opacity: 0.8;
+        transform: scale(1.02);
+        filter: blur(1px) grayscale(0.1);
+    }
 }
 
 /* ==========================================================================
