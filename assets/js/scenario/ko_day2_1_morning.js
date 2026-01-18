@@ -332,6 +332,7 @@ Object.assign(SCENARIO[2], {
     "day2_check_note": {
         name: "나",
         text: "(조심스레 쪽지를 펼친다. 정갈하면서도 어딘가 차가운 글씨체가 눈에 띈다.)",
+        character: "assets/images/characters/teacher.png",
         next: "day2_note_content"
     },
     "day2_note_content": {
