@@ -73,19 +73,18 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_nurse_home_4"
     },
     "day2_night_nurse_home_4": {
-        name: "나",
-        text: "(선생님과 단둘이 남겨진 방... 심장 소리가 귓가에 울릴 정도로 크게 들려온다. 그녀의 향기가 코끝을 간지럽히고, 밤은 점점 깊어만 간다.)",
-        background: "assets/images/background/nurse_house.png",
-        character: null,
-        night: true,
-        fade: true,
-        next: "day2_night_nurse_cg_event"
-    },
-    "day2_night_nurse_event": {
         name: "보건선생님",
         text: "\"오늘 밤은... 조금 더 같이 있어줄래?\"",
         // 배경을 서비스 컷으로
-        background: "assets/images/event/nurse_home_event1.png", 
+        background: "assets/images/event/nurse_home_event1.png",
+        character: null,
+        night: true,
+        next: "day2_night_nurse_home_5"
+    },
+    "day2_night_nurse_home_5": {
+        name: "나",
+        text: "(선생님과 단둘이 남겨진 방... 심장 소리가 귓가에 울릴 정도로 크게 들려온다. 그녀의 향기가 코끝을 간지럽히고, 밤은 점점 깊어만 간다.)",
+        background: "assets/images/background/nurse_house.png",
         character: null,
         night: true,
         fade: true,
