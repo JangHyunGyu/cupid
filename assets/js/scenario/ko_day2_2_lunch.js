@@ -8,16 +8,16 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_lunch_time": {
         name: "나",
-        text: "(딩동댕동~ 기다리고 기다리던 점심시간! 교실 안은 순식간에 활기로 가득 찼다.)",
+        text: "(딩동댕동! 드디어 기다리던 점심시간이다. 교실 안은 활기로 가득 차고, 내 심장도 조금씩 빠르게 뛰기 시작한다.)",
         character: null,
         choices: [
-            { text: "서연이에게 가서 같이 점심 먹자고 한다.", next: "day2_lunch_seoyeon" },
-            { text: "유나와의 약속대로 도서관 별관 뒤뜰로 향한다.", next: "day2_lunch_yuna", condition: "metYuna" },
-            { text: "유나는 대체 누구인지 확인하러 뒤뜰로 간다.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
-            { text: "다인을 보러 체육관으로 간다.", next: "day2_lunch_dain", condition: "metDain" },
-            { text: "활기찬 소리가 들리는 체육관 쪽으로 가본다.", next: "day2_lunch_dain", excludeCondition: "metDain" },
-            { text: "몸이 좀 안 좋은 것 같아 보건실로 간다.", next: "day2_lunch_nurse" },
-            { text: "교무실에 계신 담임선생님을 찾아간다.", next: "day2_lunch_teacher" }
+            { text: "화사한 미소가 생각나는 서연이에게 간다.", next: "day2_lunch_seoyeon" },
+            { text: "유나와의 약속, 도서관 별관 뒤뜰로 향한다.", next: "day2_lunch_yuna", condition: "metYuna" },
+            { text: "비밀스러운 쪽지를 남긴 유나를 확인하러 간다.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
+            { text: "활기가 넘치는 체육관, 다인을 확인하러 간다.", next: "day2_lunch_dain", condition: "metDain" },
+            { text: "시끌벅적한 체육관 쪽으로 발길을 옮긴다.", next: "day2_lunch_dain", excludeCondition: "metDain" },
+            { text: "조금 휴식이 필요한 것 같아 보건실로 간다.", next: "day2_lunch_nurse" },
+            { text: "다정한 담임선생님이 계신 교무실로 향한다.", next: "day2_lunch_teacher" }
         ]
     },
     "day2_lunch_teacher": {
@@ -38,9 +38,9 @@ Object.assign(SCENARIO[2], {
         text: "\"혹시 선생님이랑 같이 점심 먹고 싶어서 온 거니? 후훗, 농담이야.\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
-            { text: "네, 선생님이랑 같이 먹고 싶어요! (옆에 앉는다)", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 15 } } },
-            { text: "선생님 도시락이 너무 맛있어 보여서요.", next: "day2_lunch_teacher_food", stats: { Teacher: { affinity: 5 } } },
-            { text: "아니요, 그냥 지나가다가 들렀어요.", next: "day2_lunch_teacher_pass", stats: { Teacher: { affinity: 3 } } }
+            { text: "네, 선생님이랑 같이 먹으려고 왔어요. 옆에 앉아도 될까요?", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 15 } } },
+            { text: "선생님 도시락이 멀리서 봐도 너무 맛있어 보여서요.", next: "day2_lunch_teacher_food", stats: { Teacher: { affinity: 5 } } },
+            { text: "아니요, 그냥 지나가다가 선생님 생각나서 들렀어요.", next: "day2_lunch_teacher_pass", stats: { Teacher: { affinity: 3 } } }
         ]
     },
     "day2_lunch_teacher_eat": {
@@ -79,8 +79,8 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
             { text: "와, 정말 맛있어 보여! 서연이는 요리 천재구나.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "학생회 일 때문에 피곤하진 않아? 너무 무리하는 거 아냐?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "(서연이 볼에 묻은 빵가루를 떼어준다.)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 10 } } }
+            { text: "학생회 일 때문에 피곤하진 않아? 너무 무리하지 않았으면 좋겠어.", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "입가에 빵가루 묻었어. 자, 가만히 있어 봐.", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "day2_seoyeon_lunch_praise": {

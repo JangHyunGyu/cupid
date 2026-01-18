@@ -8,7 +8,7 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "after_home": {
         name: "나",
-        text: "(어느새 해가 지고 어둠이 깔린 거리를 지나 집으로 돌아왔다. 전학 첫날... 참 긴 하루였다.)",
+        text: "(어둠이 깔린 거리를 지나 방으로 돌아왔어. 오늘 만났던 그녀들의 얼굴이 자꾸만 떠올라.)",
         background: "assets/images/background/room_my.png",
         bgm: "night1.mp3",
         character: null,
@@ -17,14 +17,14 @@ Object.assign(SCENARIO[1], {
     },
     "after_home_2": {
         name: "나",
-        text: "(침대에 몸을 던진다. 천장을 바라보며 오늘 있었던 일들을 되짚어본다. 낯선 학교, 그리고 새로운 만남들...)",
+        text: "(침대에 털썩 눕는다. 낯선 천장이 오늘따라 포근하게 느껴지는 건, 기분 탓일까...)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "after_home_3"
     },
     "after_home_3": {
         name: "나",
-        text: "(내일은 또 어떤 일들이 기다리고 있을까? 묘한 설렘과 함께 무거운 눈꺼풀이 내려앉는다.)",
+        text: "(내일은 어떤 일들이 기다리고 있을까? 묘한 설렘에 쉽게 잠이 올 것 같지 않아.)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "night_home"
@@ -131,7 +131,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_seyoun_reply_high": {
         name: "서연",
-        text: "(징~ 하트 이모티콘과 함께 온 답장.) '오늘 너랑 보낸 시간, 정말 잊지 못할 거야. 꿈에서도 보고 싶다... 잘 자, {name}.'",
+        text: "(하트 이모티콘과 함께 온 답장.) '있잖아... 오늘 너랑 같이 보낸 시간, 자꾸 생각나서 큰일이야. 꿈에서라도 보고 싶어. 잘 자야 해, {name}.'",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
         next: "night_home_check_contact"

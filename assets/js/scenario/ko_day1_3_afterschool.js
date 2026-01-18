@@ -8,7 +8,7 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "after_school_start": {
         name: "나",
-        text: "(수업 끝! 방과 후를 알리는 종소리가 울려 퍼진다.)",
+        text: "(수업 끝. 붉게 물든 노을이 창가로 스며든다. 오늘은 좀 특별한 하루였어.)",
         background: "assets/images/background/room_school.png",
         bgm: "sunset1.mp3",
         character: null,
@@ -17,24 +17,24 @@ Object.assign(SCENARIO[1], {
     },
     "after_school_start_2": {
         name: "나",
-        text: "(가방을 챙겨 교실을 나선다. 복도에는 아이들의 활기찬 발소리로 가득하다.)",
+        text: "(가방을 챙기는데 왠지 아쉬움이 남는다. 누군가를 더 보고 싶기도 하고...)",
         sunset: true,
         next: "after_school_start_3"
     },
     "after_school_start_3": {
         name: "나",
-        text: "(오늘 하루도 길었네. 바로 집에 갈까... 아니면 아까 만났던 애들을 찾아가 볼까?)",
+        text: "(이제 어떡할까? 이대로 집에 가기엔 날씨가 너무 좋잖아.)",
         sunset: true,
         choices: [
-            { text: "서연이가 있는 학생회실을 들러본다.", next: "after_seoyeon" },
-            { text: "유나가 있던 도서관 별관 쪽으로 향한다.", next: "after_yuna", condition: "metYuna" },
-            { text: "학교의 조용한 곳을 좀 더 둘러본다.", next: "after_yuna_new", excludeCondition: "metYuna" },
-            { text: "체육관에서 연습 중인 다인을 보러 간다.", next: "after_dain", condition: "metDain" },
-            { text: "활기찬 소리가 들리는 체육관으로 향한다.", next: "after_dain_new", excludeCondition: "metDain" },
-            { text: "보건실에 들러 선생님께 인사하고 간다.", next: "after_nurse", condition: "metNurse" },
-            { text: "보건실 쪽을 가본다.", next: "after_nurse_new", excludeCondition: "metNurse" },
-            { text: "교무실에 계신 담임선생님을 찾아간다.", next: "after_teacher" },
-            { text: "오늘은 피곤하니 바로 집으로 돌아간다.", next: "after_home" }
+            { text: "은은한 복도 끝, 학생회실의 서연이를 찾아간다.", next: "after_seoyeon" },
+            { text: "책 냄새 가득한 도서실, 유나를 만나러 간다.", next: "after_yuna", condition: "metYuna" },
+            { text: "도서관 별관 쪽을 한번 둘러본다.", next: "after_yuna_new", excludeCondition: "metYuna" },
+            { text: "활기가 넘치는 체육관, 다인을 확인한다.", next: "after_dain", condition: "metDain" },
+            { text: "시끌벅적한 체육관 쪽으로 가본다.", next: "after_dain_new", excludeCondition: "metDain" },
+            { text: "코끝을 찌르는 소독약 냄새, 보건실로 향한다.", next: "after_nurse", condition: "metNurse" },
+            { text: "보건실 쪽이 왠지 궁금해진다.", next: "after_nurse_new", excludeCondition: "metNurse" },
+            { text: "인자한 담임선생님이 계신 교무실로 간다.", next: "after_teacher" },
+            { text: "오늘은 이만, 집으로 발길을 옮긴다.", next: "after_home" }
         ]
     },
     "after_teacher": {
@@ -58,9 +58,9 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/teacher.png",
         sunset: true,
         choices: [
-            { text: "선생님은 퇴근 안 하세요? 제가 도와드릴까요?", next: "after_teacher_help", stats: { Teacher: { affinity: 5 } } },
-            { text: "그냥 선생님 얼굴 한 번 더 보고 싶어서요.", next: "after_teacher_miss", stats: { Teacher: { affinity: 15 } } },
-            { text: "학교 시설에 대해 좀 더 알고 싶어요.", next: "after_teacher_info", stats: { Teacher: { affinity: 3 } } }
+            { text: "선생님은 언제 퇴근하세요? 혼자 계시면 적적하실 텐데 제가 도와드릴까요?", next: "after_teacher_help", stats: { Teacher: { affinity: 5 } } },
+            { text: "일하시는 모습이 너무 멋져서... 한 번 더 뵙고 싶었어요.", next: "after_teacher_miss", stats: { Teacher: { affinity: 15 } } },
+            { text: "학교 시설에 대해 궁금해서요. 선생님만의 비밀 장소가 있을까요?", next: "after_teacher_info", stats: { Teacher: { affinity: 3 } } }
         ]
     },
     "after_teacher_help": {
@@ -121,24 +121,24 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_3_standard": {
         name: "서연",
-        text: "\"어? {name}! 이 시간에 어쩐 일이야? 설마... 나 기다린 거야?\"",
+        text: "\"어? {name}! 이 시간에 어쩐 일이야? 설마... 나 기다린 거야? (장난기 섞인 미소)\"",
         character: "assets/images/characters/seyoun_nomal.png",
         sunset: true,
         choices: [
             { text: "응, 같이 가고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "그냥 얼굴 보고 싶어서. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "착각하지 마. 그냥 길을 잘못 든 거야.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -30 } } }
+            { text: "얼굴 보고 싶어서 왔지. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "착각이야. 그냥 길을 잘못 든 것뿐이야.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -30 } } }
         ]
     },
     "after_seoyeon_3_high": {
         name: "서연",
-        text: "(내가 들어서자 서연이가 환하게 웃으며 자리에서 일어난다.) \"{name}! 너 올 줄 알고 있었어. 아니, 기다리고 있었어. 우리... 같이 갈까?\"",
+        text: "(내가 들어서자 서연이가 서류를 내려놓고 환하게 웃는다.) \"{name}! 올 줄 알았어. 아니... 사실 간절히 기다리고 있었어. 우리, 같이 갈까?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         sunset: true,
         choices: [
-            { text: "응, 같이 가고 싶었어. 도와줄게.", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "나 생각해서 기다린 거야? 감동인데.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "오늘따라 더 예뻐 보이네.", next: "after_seoyeon_help", stats: { Seoyeon: { affinity: 10 } } }
+            { text: "응, 나도 너랑 같이 가고 싶었어. 도와줄게.", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "날 기다려준 거야? 감동인데. 정말 기뻐.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "노을 아래서 보니까 평소보다 훨씬 예쁘네.", next: "after_seoyeon_help", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "after_seoyeon_3_low": {
@@ -217,13 +217,13 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_cafe_3": {
         name: "서연",
-        text: "\"덕분에 학생회 일도 즐겁게 마무리할 수 있었어. 우리... 내일도 같이 학교에서 나갈래?\"",
+        text: "\"덕분에 오늘 하루가 정말 특별해졌어. 있잖아... 우리 내일도 같이 하교할 수 있을까?\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/seyoun_nomal.png",
         sunset: true,
         choices: [
-            { text: "물론이지. 내일을 기다릴게.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "글쎄, 내일 기분 봐서? (장난)", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 4 } } }
+            { text: "당연하지. 내일이 벌써 기다려져.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "글쎄, 하는 거 봐서? 농담이야. 꼭 같이 가자.", next: "after_seoyeon_tease", stats: { Seoyeon: { affinity: 4 } } }
         ]
     },
     "after_seoyeon_promise": {
@@ -258,11 +258,11 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_contact_ask": {
         name: "서연",
-        text: "\"아, 맞다! 우리 아직 연락처 교환 안 했지? 괜찮다면... 번호 알려줄 수 있어? 나중에 메시지 하고 싶어서.\"",
+        text: "\"아, 맞다! 아직 번호를 못 물어봤네. 전하고 싶은 말이 생길 것 같아서... 괜찮으면 번호 알려줄래?\"",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
-            { text: "응, 좋아. 여기 내 번호야.", next: "after_seoyeon_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
-            { text: "미안, 번호는 좀... 나중에 알려줄게.", next: "after_seoyeon_contact_fail" }
+            { text: "응, 언제든 연락해. 여기 내 번호야.", next: "after_seoyeon_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
+            { text: "미안하지만 번호는 조금 더 친해지면 알려줄게.", next: "after_seoyeon_contact_fail" }
         ]
     },
     "after_seoyeon_contact_success": {

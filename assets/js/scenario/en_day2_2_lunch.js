@@ -8,132 +8,132 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_lunch_time": {
         name: "Me",
-        text: "(Ding-dong-dang-dong~ The long-awaited lunch bell! The classroom is instantly filled with energy.)",
+        text: "(Ding-dong-dang-dong! Finally, lunch break. The classroom is buzzing with energy, and my heart starts to race.)",
         character: null,
         choices: [
-            { text: "Go to Seoyeon and suggest eating lunch together.", next: "day2_lunch_seoyeon" },
-            { text: "Head to the library annex backyard as promised with Yuna.", next: "day2_lunch_yuna", condition: "metYuna" },
-            { text: "Go to the backyard to see who this Yuna is.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
+            { text: "Go to see Seoyeon and her radiant smile.", next: "day2_lunch_seoyeon" },
+            { text: "Head to the library annex backyard as promised.", next: "day2_lunch_yuna", condition: "metYuna" },
+            { text: "Find out who left that mysterious note.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
             { text: "Go to the gym to see Dain.", next: "day2_lunch_dain", condition: "metDain" },
-            { text: "Go to the gym where lively sounds are heard.", next: "day2_lunch_dain", excludeCondition: "metDain" },
-            { text: "I feel a bit unwell, so I'll go to the nurse's office.", next: "day2_lunch_nurse" },
-            { text: "Go to the teacher's office to see the homeroom teacher.", next: "day2_lunch_teacher" }
+            { text: "Follow the lively sounds from the gymnasium.", next: "day2_lunch_dain", excludeCondition: "metDain" },
+            { text: "I need some rest. Heading to the nurse's office.", next: "day2_lunch_nurse" },
+            { text: "Go to the faculty room to see the teacher.", next: "day2_lunch_teacher" }
         ]
     },
     "day2_lunch_teacher": {
         name: "Me",
-        text: "(When I open the door to the teacher's office, the homeroom teacher, who was about to eat her lunch, smiles brightly when she sees me.)",
+        text: "(I open the faculty room door. My teacher, who was about to eat, smiles warmly when she sees me.)",
         background: "assets/images/background/teacher_room.png",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_2"
     },
     "day2_lunch_teacher_2": {
         name: "Teacher",
-        text: "\"{name}! Did you have a good lunch? I was just about to eat mine.\"",
+        text: "\"Oh, {name}! Did you have a good lunch? I was just about to start mine.\"",
         character: "assets/images/characters/teacher.png",
         next: "day2_lunch_teacher_3"
     },
     "day2_lunch_teacher_3": {
         name: "Teacher",
-        text: "\"Did you come here because you wanted to eat lunch with me? Hehe, just kidding.\"",
+        text: "\"Did you come all this way just to eat with me? Hehe, just kidding.\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
-            { text: "Yes, I want to eat with you! (Sits next to her)", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 15 } } },
-            { text: "Your lunch looks so delicious.", next: "day2_lunch_teacher_food", stats: { Teacher: { affinity: 5 } } },
-            { text: "No, I was just passing by.", next: "day2_lunch_teacher_pass", stats: { Teacher: { affinity: 3 } } }
+            { text: "Actually, yes. Can I sit next to you?", next: "day2_lunch_teacher_eat", stats: { Teacher: { affinity: 15 } } },
+            { text: "Your lunch looks so good, I couldn't resist.", next: "day2_lunch_teacher_food", stats: { Teacher: { affinity: 5 } } },
+            { text: "I was just passing by and thought of you.", next: "day2_lunch_teacher_pass", stats: { Teacher: { affinity: 3 } } }
         ]
     },
     "day2_lunch_teacher_eat": {
         name: "Teacher",
-        text: "\"Oh my... you're a very bold student, aren't you? Okay, I'll share some of my side dishes. Here, say 'Ah'.\"",
+        text: "\"My, my... you're a bold student, aren't you? Fine, I'll share some. Here, say 'Ah~'.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_food": {
         name: "Teacher",
-        text: "\"Hehe, my mother is quite a good cook. I'd like to let you taste it too if I have a chance later.\"",
+        text: "\"Hehe, my mother is quite the cook. I'd love to let you taste her cooking properly sometime.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_pass": {
         name: "Teacher",
-        text: "\"Is that so? Still, thank you for stopping by. Have a pleasant lunch break!\"",
+        text: "\"Is that so? Well, thank you for stopping by. Have a great lunch break!\"",
         character: "assets/images/characters/teacher.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_end": {
         name: "Me",
-        text: "(I returned to the classroom after a short but pleasant conversation with the teacher. Her kind smile keeps coming to mind.)",
+        text: "(After a brief but sweet chat, I head back. Her gentle smile stays with me.)",
         next: "day2_afternoon_class"
     },
     "day2_lunch_seoyeon": {
         name: "Seoyeon",
-        text: "(I open the student council room door to find Seoyeon eating her lunch. She looks up, her eyes widening in a bright welcome.)",
+        text: "(I open the student council room. Seoyeon, eating her lunch, blinks in surprise and then beams.)",
         background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_seoyeon_lunch_talk"
     },
     "day2_seoyeon_lunch_talk": {
         name: "Seoyeon",
-        text: "\"{name}! I was just hoping you'd stop by! Come, sit with me. I actually made some extra sandwiches today.\"",
+        text: "\"{name}! I was just hoping you'd come. Sit here. I made some extra sandwiches today.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { text: "Wow, these look delicious! You're a cooking genius, Seoyeon.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "Aren't you tired from all the student council work?", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "(Wipe a crumb off her cheek)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 10 } } }
+            { text: "They look amazing! You're a natural, Seoyeon.", next: "day2_seoyeon_lunch_praise", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "Aren't you tired from all the work? Don't overdo it.", next: "day2_seoyeon_lunch_worry", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "You've got a crumb... hold still. (Wipe it off)", next: "day2_seoyeon_lunch_touch", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "day2_seoyeon_lunch_praise": {
         name: "Seoyeon",
-        text: "\"Really? I'm glad you like them. I was a bit worried about your taste... Eat as much as you want!\"",
+        text: "\"Really? I was worried they might not be to your taste. Eat up!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         setFlag: "day2_ate_lunch_seoyeon",
         next: "day2_seoyeon_lunch_end"
     },
     "day2_seoyeon_lunch_worry": {
         name: "Seoyeon",
-        text: "\"It's okay. Seeing you enjoy the food makes all the tiredness go away. Really.\"",
+        text: "\"I'm okay. Seeing you enjoy the food makes all the fatigue disappear. Truly.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         setFlag: "day2_ate_lunch_seoyeon",
         next: "day2_seoyeon_lunch_end"
     },
     "day2_seoyeon_lunch_touch": {
         name: "Seoyeon",
-        text: "\"Ah... T-thank you. I must have been eating too fast... (She blushes slightly and looks down)\"",
+        text: "\"Ah... T-thank you. I must have been eating too greedily... (She blushes slightly)\"",
         character: "assets/images/characters/seyoun_shy.png",
         setFlag: "day2_ate_lunch_seoyeon",
         next: "day2_seoyeon_lunch_end"
     },
     "day2_seoyeon_lunch_end": {
         name: "Me",
-        text: "(I returned to the classroom after a pleasant lunch with Seoyeon. The taste of the sandwiches she made lingers pleasantly in my mouth.)",
+        text: "(After a lovely lunch with her, I return. The taste of her sandwiches is still lingering sweet.)",
         next: "day2_afternoon_class"
     },
     "day2_lunch_yuna": {
         name: "Me",
-        text: "(The library annex backyard. Yuna stands beneath the shadow of a large tree, looking like a part of the scenery itself.)",
+        text: "(The library annex backyard. Under the deep shadows, Yuna stands like part of the scenery.)",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_talk"
     },
     "day2_yuna_talk": {
         name: "Yuna",
-        text: "\"...You came. I wasn't sure if you'd actually show up after reading my note.\"",
+        text: "\"...You came. I didn't think you'd actually show up for a note.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_talk_2"
     },
     "day2_yuna_talk_2": {
         name: "Yuna",
-        text: "(She stares at me with an unreadable expression, her eyes searching mine.)",
+        text: "(She gazes at me with an unreadable expression.)",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_free_talk"
     },
     "day2_yuna_free_talk": {
         type: "free_talk",
         name: "Yuna",
-        text: "\"...Do you have any questions for me? Or do you want to know more about this school?\"",
-        context: "Quiet library annex backyard, having a private conversation with the mysterious Yuna. Keep the conversation going actively until it's finished. After the conversation, Yuna will talk about the school's secrets and suggest that there is something she only wants to show the protagonist. ONLY at the final turn of the conversation, please create a mysterious atmosphere and stimulate the protagonist's curiosity.",
-        personality: "Mysterious, cold, and full of secrets. She feels a strange interest in the protagonist.",
+        text: "\"...Do you have questions for me? Or do you want to know more about this school?\"",
+        context: "Quiet library annex backyard, private conversation with the mysterious Yuna. Keep the conversation going actively until it's finished. After the conversation, Yuna will talk about the school's secrets and suggest that there is something she only wants to show the protagonist. ONLY at the final turn of the conversation, please create a mysterious atmosphere and stimulate the protagonist's curiosity.",
+        personality: "Mysterious, cold, and secretive. She feels a strange interest in the protagonist.",
         character: "assets/images/characters/yuna_nomal.png",
         affinityChar: "Yuna",
         affinityBranches: [
@@ -144,14 +144,16 @@ Object.assign(SCENARIO[2], {
         next: "day2_yuna_talk_branch"
     },
     "day2_yuna_talk_branch_high": {
+        name: "Me",
+        text: "(Yuna's expression softens as she looks at me.)",
         branches: [
-            { next: "day2_yuna_talk_2_met_high", condition: "knowsName_Yuna" },
+            { next: "day2_yuna_talk_2_met_high", condition: "metYuna" },
             { next: "day2_yuna_talk_2_new_high" }
         ]
     },
     "day2_yuna_talk_branch_low": {
         name: "Me",
-        text: "(Yuna looks at me with cold and disappointed eyes.)",
+        text: "(Yuna gazes at me with cold, disappointed eyes.)",
         branches: [
             { next: "day2_yuna_talk_2_met_low", condition: "metYuna" },
             { next: "day2_yuna_talk_2_new_low" }
@@ -159,31 +161,45 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_talk_2_met_high": {
         name: "Me",
-        text: "(Yuna mentions the school secrets she talked about yesterday and says there's something she wants to show only to me because she trusts me.)",
+        text: "(Yuna says she feels at ease talking to me. She mentions the 'secret' and says there's something she only wants to show me.)",
         character: "assets/images/characters/yuna_smile.png",
-        next: "day2_yuna_secret_high"
+        choices: [
+            { text: "What is it? I'm curious.", next: "day2_yuna_secret_high", stats: { Yuna: { affinity: 5 } } },
+            { text: "I'm more interested in talking to you.", next: "day2_yuna_normal_high", stats: { Yuna: { affinity: 4 } } }
+        ]
     },
     "day2_yuna_talk_2_met_low": {
         name: "Me",
-        text: "(Yuna mentions the school secrets she talked about yesterday, but says she's reconsidering showing them to me since my attitude is disappointing.)",
+        text: "(Yuna's gaze is icy. She says I might not handle the truth, but tells me to follow her anyway since we promised.)",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_secret_low"
+        choices: [
+            { text: "Show me. I can handle it.", next: "day2_yuna_secret_low", stats: { Yuna: { affinity: 5 } } },
+            { text: "I'm not interested in secrets. I'll pass.", next: "day2_yuna_normal_low", stats: { Yuna: { affinity: 4 } } }
+        ]
     },
     "day2_yuna_talk_2_new_high": {
         name: "Me",
-        text: "(Yuna looks at me and blushes very slightly. She welcomes me with a shy smile as if she knew I would come here in advance.)",
+        text: "(Yuna says she feels a strange pull toward me. She mentions a deep secret in this school and wants to show me.)",
         character: "assets/images/characters/yuna_smile.png",
-        next: "day2_yuna_new_name_ask_high"
+        setFlag: "metYuna",
+        choices: [
+            { text: "Are you the Yuna from the note? What secret?", next: "day2_yuna_new_name_ask_high", stats: { Yuna: { affinity: 5 } } },
+            { text: "I just came because of the note. Who are you?", next: "day2_yuna_new_name_ask_high", stats: { Yuna: { affinity: 3 } } }
+        ]
     },
     "day2_yuna_talk_2_new_low": {
         name: "Me",
-        text: "(Yuna looks at me with an annoyed expression. She seems to regret that I found this place.)",
+        text: "(Yuna's eyes are cold. She says I don't look like I can handle the truth, but tells me to follow her since I'm here.)",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_new_name_ask_low"
+        setFlag: "metYuna",
+        choices: [
+            { text: "What's the secret? Show me.", next: "day2_yuna_new_name_ask_low", stats: { Yuna: { affinity: 5 } } },
+            { text: "I'm leaving. This feels weird.", next: "day2_yuna_new_name_ask_low", stats: { Yuna: { affinity: 3 } } }
+        ]
     },
     "day2_yuna_talk_branch": {
         name: "Me",
-        text: "(Yuna looks at me and starts to speak.)",
+        text: "(Yuna looks at me and begins to speak.)",
         branches: [
             { next: "day2_yuna_talk_2_met_normal", condition: "metYuna" },
             { next: "day2_yuna_talk_2_new_normal" }
@@ -191,19 +207,25 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_talk_2_met_normal": {
         name: "Me",
-        text: "(Yuna mentions the secrets of the school she talked about yesterday and said there was something she wanted to show only to me.)",
+        text: "(Yuna mentions the secret she told me yesterday and says she has something to show me.)",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_secret_normal"
+        choices: [
+            { text: "What is it? I want to see.", next: "day2_yuna_secret_normal", stats: { Yuna: { affinity: 5 } } },
+            { text: "I just wanted to talk to you.", next: "day2_yuna_normal_normal", stats: { Yuna: { affinity: 4 } } }
+        ]
     },
     "day2_yuna_talk_2_new_normal": {
         name: "Me",
-        text: "(Yuna looks at me with curious eyes. She seems to have a strange interest in me, the transfer student.)",
+        text: "(Yuna says I must be curious about her. She offers to show me a deep secret of the school.)",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_new_name_ask_normal"
+        setFlag: "metYuna",
+        choices: [
+            { text: "Who are you? And what secret?", next: "day2_yuna_new_name_ask_normal", stats: { Yuna: { affinity: 5 } } }
+        ]
     },
     "day2_yuna_new_name_ask_high": {
         name: "Yuna",
-        text: "\"...I want to know your name. I feel like it'll be a special name to me.\"",
+        text: "(She bows her head shyly.) \"...By the way, what's your name? I felt drawn to you enough to share this secret. I want to know you.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "day2_yuna_new_name_share_high"
     },
@@ -215,7 +237,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_new_name_ask_low": {
         name: "Yuna",
-        text: "(She asks coldly) \"...I should probably know your name, if only to know who to blame if this goes wrong. What should I call you?\"",
+        text: "(She asks coldly.) \"...I should probably know your name before we go further. What is it?\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_new_name_share_low"
     },
@@ -227,7 +249,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_new_name_ask_normal": {
         name: "Yuna",
-        text: "\"...By the way, what's your name? I only wrote my name on the note, but I didn't know yours yet.\"",
+        text: "\"...I forgot to ask your name. I only wrote mine on the note.\"",
         character: "assets/images/characters/yuna_nomal.png",
         next: "day2_yuna_new_name_share_normal"
     },
@@ -239,60 +261,51 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_secret_high": {
         name: "Yuna",
-        text: "(Yuna carefully interlocks her fingers with mine. I can feel the warmth and sincerity in her hand.)",
+        text: "(Yuna gently interlocks her fingers with mine. I can feel her heart through her warm hand.)",
         character: "assets/images/characters/yuna_smile.png",
         setFlag: "visitedWarehouseAtLunch",
         next: "day2_yuna_secret_2_high"
     },
     "day2_yuna_secret_2_high": {
         name: "Yuna",
-        text: "\"I think... you're the one who can help me shoulder this heavy truth. {name}, can you trust me and follow me? The world beyond this door will never be the same.\"",
+        text: "\"I think... you're the one who can share this burden with me. {name}, will you follow me? The world ahead is different from what you know.\"",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "Yes, I'll be with you. Let's see it together.", next: "day2_yuna_secret_read_high", stats: { Yuna: { affinity: 20 } } },
-            { text: "I'm sorry, I don't think I can handle this.", next: "day2_yuna_secret_stop_high", stats: { Yuna: { affinity: -10 } } }
+            { text: "I'll be with you. Let's see it together.", next: "day2_yuna_secret_read_high", stats: { Yuna: { affinity: 20 } } },
+            { text: "I'm sorry, I can't handle this yet.", next: "day2_yuna_secret_stop_high", stats: { Yuna: { affinity: -10 } } }
         ]
-    },
-    "day2_yuna_secret_read_high": {
-        name: "Yuna",
-        text: "\"Thank you. I knew I wasn't wrong about you. Let's go. The truth is waiting.\"",
-        character: "assets/images/characters/yuna_smile.png",
-        next: "day2_yuna_lunch_end"
-    },
-    "day2_yuna_secret_stop_high": {
-        name: "Yuna",
-        text: "\"...I see. I shouldn't have put such a burden on you. I'm sorry. You should forget about this for today.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_lunch_end"
     },
     "day2_yuna_secret_low": {
         name: "Yuna",
-        text: "(Yuna grabs my sleeve roughly and pulls me along.)",
+        text: "(Yuna grabs my sleeve and pulls me forward.)",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "visitedWarehouseAtLunch",
         next: "day2_yuna_secret_2_low"
     },
     "day2_yuna_secret_2_low": {
         name: "Yuna",
-        text: "\"Just watch. Not like you'd understand much anyway... but since you're here, you might as well see. Just don't get in my way.\"",
+        text: "\"Just watch. Not like you'll understand, but you're here already. Don't get in my way.\"",
         character: "assets/images/characters/yuna_nomal.png",
-        next: "day2_yuna_lunch_end"
+        choices: [
+            { text: "Show me. what is it?", next: "day2_yuna_secret_read_low", stats: { Yuna: { affinity: 5 } } },
+            { text: "I'm out. This is too dangerous.", next: "day2_yuna_secret_stop_low", stats: { Yuna: { affinity: -20 } } }
+        ]
     },
     "day2_yuna_secret_normal": {
         name: "Yuna",
-        text: "(She takes my hand and leads me toward the old warehouse. A shiver runs down my spine at the coldness of her touch.)",
+        text: "(Yuna leads me toward the old warehouse. Her cold touch makes me shiver.)",
         character: "assets/images/characters/yuna_smile.png",
         setFlag: "visitedWarehouseAtLunch",
         next: "day2_yuna_secret_2_normal"
     },
     "day2_yuna_secret_2_normal": {
         name: "Yuna",
-        text: "\"Inside here... are records the school has kept hidden for years. Once you see them... nothing will ever be the same.\"",
+        text: "\"Inside are records the school has hidden for a long time. Once you see them... everything will change.\"",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "Can I see those records too?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
-            { text: "Isn't it dangerous? It's better to just leave it alone.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -20 } } },
-            { text: "Yuna, why are you investigating this?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
+            { text: "Can I see them too?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
+            { text: "Is it safe? Maybe we should leave it.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -20 } } },
+            { text: "Why are you doing this, Yuna?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
         ]
     },
     "day2_yuna_secret_read": {
@@ -305,92 +318,75 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_secret_read_high": {
         name: "Yuna",
-        text: "\"Thank you, {name}. I'm not afraid anymore as long as I'm with you. Now, shall we open it together?\"",
+        text: "\"Thank you, {name}. With you, I'm not afraid. Shall we?\"",
         character: "assets/images/characters/yuna_smile.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_secret_read_low": {
         name: "Yuna",
-        text: "\"Are you really going to see it? Don't regret it. I won't care even if you cry and cling to me.\"",
+        text: "\"You really want to see? Don't regret it. I won't help you if you start crying.\"",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
-    "day2_yuna_secret_stop": {
-        type: "free_talk",
-        affinityChar: "Yuna",
-        affinityBranches: [
-            { minAffinity: 25, next: "day2_yuna_secret_stop_high" },
-            { minAffinity: -999, next: "day2_yuna_secret_stop_low" }
-        ]
-    },
     "day2_yuna_secret_stop_high": {
         name: "Yuna",
-        text: "\"...Is that so? You must be quite scared. I understand. Instead, tell me again if you change your mind later.\"",
+        text: "\"...I see. You must be scared. I understand. Tell me if you change your mind later.\"",
         character: "assets/images/characters/yuna_smile.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_secret_stop_low": {
         name: "Yuna",
-        text: "\"I knew it. You talk big but you're actually a coward who can't do anything. Don't show your face in front of me again.\"",
+        text: "\"I knew it. You're a coward. Don't show your face again.\"",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
-    "day2_yuna_secret_why": {
-        type: "free_talk",
-        affinityChar: "Yuna",
-        affinityBranches: [
-            { minAffinity: 25, next: "day2_yuna_secret_why_high" },
-            { minAffinity: -999, next: "day2_yuna_secret_why_low" }
-        ]
-    },
     "day2_yuna_secret_why_high": {
         name: "Yuna",
-        text: "\"Are you curious about that? Actually... I'm not sure myself. Ever since the day you transferred, I just had a feeling that you'd be the one to listen to my story. Funny, isn't it?\"",
+        text: "\"Curious? Honestly... I'm not sure. But since the day you transferred, I had a feeling you'd be the one. Funny, right?\"",
         character: "assets/images/characters/yuna_smile.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_secret_why_low": {
         name: "Yuna",
-        text: "\"What what are you going to do with that? Don't you know the saying 'Curiosity killed the cat'? Just shut up and watch, or get out.\"",
+        text: "\"What's it to you? Just watch or leave. No need to poke your nose into my business.\"",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_normal_high": {
         name: "Yuna",
-        text: "\"You came here because you wanted to talk to me...? Fufu, you really say such lovely things. Fine, then would you stay with me a bit longer like this today?\"",
+        text: "\"You came just to talk to me...? Hehe, you really say sweet things. Fine, stay with me a little longer then.\"",
         character: "assets/images/characters/yuna_smile.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_normal_low": {
         name: "Yuna",
-        text: "\"You came all the way here just to chatter with me? Pathetic. Don't waste my time and get out of the way.\"",
+        text: "\"To talk? Pathetic. Don't waste my time and get lost.\"",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_normal_normal": {
         name: "Yuna",
-        text: "\"...Is that so? You're a strange one. Most people are afraid. Fine, then let's just spend some time together like this today.\"",
+        text: "\"...Is that so? You're a strange one. Most people are afraid. Fine, let's just stay like this for today.\"",
         character: "assets/images/characters/yuna_nomal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_lunch_end": {
         name: "Me",
-        text: "(I left Yuna and returned to the classroom. Her mysterious words kept echoing in my mind, making it hard to focus on the afternoon classes.)",
-        setFlag: "day2_met_yuna_lunch",
+        text: "(I head back. Her mysterious words haunt me, making it hard to focus on class.)",
         next: "day2_afternoon_class"
     },
     "day2_lunch_dain": {
         name: "Me",
-        text: "(I open the gym door to find a girl mid-practice, sweat glistening on her skin. She spots me and runs over with a grin.)",
+        text: "(I open the gym. Dain, practicing hard, runs over with a wide grin.)",
         character: "assets/images/characters/dain_laugh.png",
         branches: [
             { next: "day2_dain_lunch_talk", condition: "metDain" },
@@ -399,14 +395,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_dain_new": {
         name: "???",
-        text: "\"Oh! A new face! You're the transfer student everyone's talking about, right? I'm Dain from the volleyball club!\"",
+        text: "\"Oh! A new face! You're the transfer student, right? I'm Dain from the volleyball club!\"",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "metDain",
         next: "day2_lunch_dain_new_name_ask"
     },
     "day2_lunch_dain_new_name_ask": {
         name: "Dain",
-        text: "\"By the way, what's your name? I feel like I'm the only one who hasn't introduced myself!\"",
+        text: "\"By the way, what's your name? I'm the only one who didn't introduce myself properly!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day2_lunch_dain_new_name_share"
     },
@@ -418,28 +414,29 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_lunch_talk_new": {
         name: "Dain",
-        text: "\"Oh! {name}? That's a cool name! Great, to celebrate our meeting, lunch is on me today! Let's hit the snack bar!\"",
+        text: "\"Oh! {name}? Cool name! Great, to celebrate, lunch is on me! Let's go to the snack bar!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day2_dain_store"
     },
     "day2_dain_lunch_talk": {
         name: "Dain",
-        text: "\"Oh! You really came! Great, lunch is on me today! Let's hit the snack bar!\"",
+        text: "\"Oh! You really came! Great, lunch is on me today! Let's go to the snack bar!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day2_dain_store"
     },
     "day2_dain_store": {
         name: "Me",
-        text: "(I headed to the snack bar with Dain. Since it's break time, the front of the store is crowded with kids.)",
+        text: "(We head to the snack bar. It's packed with students.)",
         background: "assets/images/background/store.png",
-        character: "assets/images/characters/dain_nomal.png",        next: "day2_dain_free_talk"
+        character: "assets/images/characters/dain_nomal.png",
+        next: "day2_dain_free_talk"
     },
     "day2_dain_free_talk": {
         type: "free_talk",
         name: "Dain",
-        text: "\"Wow, it's really crowded! Right? Let's chat while we wait. Any questions for me?\"",
+        text: "\"Wow, it's crowded! Right? Let's chat while we wait. Anything you want to know?\"",
         context: "In front of the crowded school store, standing in line with Dain to buy snacks. Keep the conversation going actively until it's finished. After the conversation, you will choose snacks at the store. ONLY at the final turn of the conversation, please naturally lead into the next situation by mentioning that it's almost our turn or by deciding what to eat.",
-        personality: "Easygoing and cool-headed volleyball ace. She enjoys spending time with the protagonist.",
+        personality: "Easygoing and energetic volleyball ace. She enjoys spending time with the protagonist.",
         character: "assets/images/characters/dain_nomal.png",
         affinityChar: "Dain",
         affinityBranches: [
@@ -451,488 +448,138 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_store_choices_high": {
         name: "Me",
-        text: "(Standing in line wasn't boring at all while chatting with Dain. It was finally our turn, and Dain, seemingly in a good mood, said lunch was on her and told me to pick what I wanted.)",
+        text: "(Waiting wasn't boring at all with Dain. It was finally our turn, and she told me to pick whatever I wanted.)",
         character: "assets/images/characters/dain_laugh.png",
         choices: [
             { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy_high", stats: { Dain: { affinity: 5 } } },
-            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop_high", stats: { Dain: { affinity: 3 } } },
-            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race_high", stats: { Dain: { affinity: 8 } } }
+            { text: "It's so crowded... Let's just go to the rooftop.", next: "day2_dain_store_rooftop_high", stats: { Dain: { affinity: 3 } } },
+            { text: "Dain, look! Last pizza bread! I'll get it!", next: "day2_dain_store_race_high", stats: { Dain: { affinity: 8 } } }
         ]
     },
     "day2_dain_store_choices_low": {
         name: "Me",
-        text: "(Dain seems to be in a bad mood. I must have been too prickly while she was already tired from standing in line. She sighed and told me to just pick what I wanted to eat.)",
+        text: "(Dain seems grumpy. I must have been too prickly. She sighs and tells me to just pick something fast.)",
         character: "assets/images/characters/dain_sad.png",
         choices: [
-            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy_low", stats: { Dain: { affinity: 5 } } },
-            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop_low", stats: { Dain: { affinity: 3 } } },
-            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race_low", stats: { Dain: { affinity: 8 } } }
+            { text: "I'll buy yours. What do you want?", next: "day2_dain_store_buy_low", stats: { Dain: { affinity: 5 } } },
+            { text: "Too crowded. Rooftop?", next: "day2_dain_store_rooftop_low", stats: { Dain: { affinity: 3 } } },
+            { text: "I'll grab that bread over there!", next: "day2_dain_store_race_low", stats: { Dain: { affinity: 8 } } }
         ]
     },
     "day2_dain_store_choices": {
         name: "Me",
-        text: "(While we were talking, it finally became our turn. Dain asked me what I wanted to eat.)",
+        text: "(Our turn came. Dain asks what I want to eat.)",
         choices: [
-            { text: "I'll buy yours too. What do you want?", next: "day2_dain_store_buy_normal", stats: { Dain: { affinity: 5 } } },
-            { text: "It's so crowded... Should we just go to the rooftop?", next: "day2_dain_store_rooftop_normal", stats: { Dain: { affinity: 3 } } },
-            { text: "Dain, look! The last pizza bread! I'll go grab it!", next: "day2_dain_store_race_normal", stats: { Dain: { affinity: 8 } } }
+            { text: "I'll buy yours. What do you want?", next: "day2_dain_store_buy_normal", stats: { Dain: { affinity: 5 } } },
+            { text: "It's crowded. Let's go to the rooftop.", next: "day2_dain_store_rooftop_normal", stats: { Dain: { affinity: 3 } } },
+            { text: "I'll get the pizza bread!", next: "day2_dain_store_race_normal", stats: { Dain: { affinity: 8 } } }
         ]
     },
     "day2_dain_store_buy_high": {
         name: "Dain",
-        text: "\"Hey~ {name}! Why are you paying? I said it's on me! Hehe, but I appreciate the gesture. How about you buy today, and I'll buy you something even better tomorrow? Deal!\"",
+        text: "\"Hey~ {name}! I said it's on me! Hehe, but thanks. How about you buy today, and I'll buy something even better tomorrow? Deal!\"",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
     "day2_dain_store_buy_low": {
         name: "Dain",
-        text: "\"...You're buying? Fine, do whatever you want. I'm not in the mood to argue. Just get me a milk too.\"",
+        text: "\"...You're buying? Fine, whatever. Just get me a milk too.\"",
         character: "assets/images/characters/dain_angry.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
     "day2_dain_store_buy_normal": {
         name: "Dain",
-        text: "\"Hey~ I said it's on me! You're a transfer student, you shouldn't be spending money. I'll treat you today, so just enjoy!\"",
+        text: "\"Hey, I said it's on me! Just enjoy it today, okay?\"",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
     "day2_dain_store_rooftop_high": {
         name: "Dain",
-        text: "\"Rooftop? With you? That sounds amazing! It'll be like our little secret hideout. Let's hurry up and get some snacks!\"",
+        text: "\"Rooftop? Great idea! It'll be more private too. Let's go!\"",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
     "day2_dain_store_rooftop_low": {
         name: "Dain",
-        text: "\"...The rooftop? Whatever, it's probably better than staying in this crowd. Let's just go.\"",
-        character: "assets/images/characters/dain_nomal.png",
+        text: "\"...Fine. Let's just go. It's too noisy here anyway.\"",
+        character: "assets/images/characters/dain_sad.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
     "day2_dain_store_rooftop_normal": {
         name: "Dain",
-        text: "\"Rooftop? Oh, that sounds good too! It'll taste even better with the cool breeze. Okay, let's just buy the bread and head up!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        text: "\"Good thinking. Let's get out of this crowd and head up!\"",
+        character: "assets/images/characters/dain_laugh.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
     "day2_dain_store_race_high": {
         name: "Dain",
-        text: "\"Ooh! You're on! I'm not going to lose even to you, {name}! Let's see who's faster!\"",
+        text: "\"Haha! Look at you go! Okay, I'll get the drinks then! Meet you at the table!\"",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
     "day2_dain_store_race_low": {
         name: "Dain",
-        text: "\"...I'm really not in the mood for racing. Just be quiet and buy something.\"",
+        text: "\"...Suit yourself. Don't trip.\"",
         character: "assets/images/characters/dain_sad.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
     "day2_dain_store_race_normal": {
         name: "Dain",
-        text: "\"Ooh! That's my partner! Okay, let's see who gets it first! Loser buys drinks!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        text: "\"Oh! Then I'll get the milk! Good luck!\"",
+        character: "assets/images/characters/dain_laugh.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
     "day2_dain_lunch_end": {
         name: "Me",
-        text: "(I returned to the classroom after a lively lunch with Dain. Thanks to her bright energy, I feel like I can power through the afternoon classes.)",
+        text: "(After a quick lunch with Dain, I head back. Her energy is contagious.)",
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {
         name: "Me",
-        text: "(Maybe it's the stress, but my head is throbbing. I find myself walking toward the quiet of the nurse's office.)",
+        text: "(I visit the nurse's office. She greeted me with a seductive smile.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse.png",
-        next: "day2_lunch_nurse_talk"
+        next: "day2_lunch_nurse_2"
+    },
+    "day2_lunch_nurse_2": {
+        name: "Nurse",
+        text: "\"{name}! Tired already? You can rest here as long as you want.\"",
+        character: "assets/images/characters/nurse.png",
+        choices: [
+            { text: "Can I take a short nap here?", next: "day2_lunch_nurse_sleep", stats: { Nurse: { affinity: 10 } } },
+            { text: "I just wanted to see you for a moment.", next: "day2_lunch_nurse_talk", stats: { Nurse: { affinity: 5 } } }
+        ]
+    },
+    "day2_lunch_nurse_sleep": {
+        name: "Nurse",
+        text: "\"Of course. Lie down. I'll make sure no one disturbs your sleep.\"",
+        character: "assets/images/characters/nurse.png",
+        next: "day2_lunch_nurse_end"
     },
     "day2_lunch_nurse_talk": {
         name: "Nurse",
-        text: "\"Oh, hello there. What brings you to the nurse's office during lunch? Are you feeling unwell?\"",
+        text: "\"Hehe, you're so sweet. Want to talk to me instead of resting? That's fine too.\"",
         character: "assets/images/characters/nurse.png",
-        branches: [
-            { next: "day2_lunch_nurse_met", condition: "metNurse" },
-            { next: "day2_lunch_nurse_new" }
-        ]
+        next: "day2_lunch_nurse_end"
     },
-    "day2_lunch_nurse_met": {
-        name: "Nurse",
-        text: "\"Oh, if it isn't my favorite student. Is something hurting, or did you just come to see my pretty face?\"",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        affinityChar: "Nurse",
-        affinityBranches: [
-            { minAffinity: 15, next: "day2_lunch_nurse_met_high" },
-            { minAffinity: 0, next: "day2_lunch_nurse_met_normal" },
-            { minAffinity: -100, next: "day2_lunch_nurse_met_low" }
-        ],
-        stats: { Nurse: { affinity: 6 } },
-        next: "day2_lunch_nurse_3"
-    },
-    "day2_lunch_nurse_met_high": {
-        name: "Nurse",
-        text: "(She looks at me with a subtle smile.) \"Hehe, {name}. You're back again? You know... you're the only student who visits me this often.\"",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 5 } },
-        next: "day2_lunch_nurse_3"
-    },
-    "day2_lunch_nurse_met_normal": {
-        name: "Nurse",
-        text: "\"Oh, {name}. Coming to the nurse's office during lunch... Is something wrong?\"",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        next: "day2_lunch_nurse_3"
-    },
-    "day2_lunch_nurse_met_low": {
-        name: "Nurse",
-        text: "(She looks at me and tilts her head, as if trying to remember.) \"Ah... {name}, right? What brings you here?\"",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        next: "day2_lunch_nurse_3"
-    },
-    "day2_lunch_nurse_new": {
-        name: "Nurse",
-        text: "\"Oh, I haven't seen you before. Are you the new transfer student? I'm the school nurse.\"",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        setFlag: "metNurse",
-        next: "day2_lunch_nurse_new_name_ask"
-    },
-    "day2_lunch_nurse_new_name_ask": {
-        name: "Nurse",
-        text: "\"By the way, what's your name? Won't you tell me? Just between us.\"",
-        character: "assets/images/characters/nurse.png",
-        next: "day2_lunch_nurse_new_name_share"
-    },
-    "day2_lunch_nurse_new_name_share": {
+    "day2_lunch_nurse_end": {
         name: "Me",
-        text: "\"My name is {name}.\"",
-        setFlag: "knowsName_Nurse",
-        next: "day2_lunch_nurse_3"
-    },
-    "day2_lunch_nurse_3": {
-        name: "Nurse",
-        text: "(She leads me to a bed with a gentle smile. The air is filled with the soothing scent of herbs.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        next: "day2_lunch_nurse_4"
-    },
-    "day2_lunch_nurse_4": {
-        name: "Nurse",
-        text: "\"Now, lie down comfortably. Let me see what's bothering you.\"",
-        character: "assets/images/characters/nurse.png",
-        choices: [
-            { text: "My head hurts a bit.", next: "day2_lunch_nurse_head", stats: { Nurse: { affinity: 3 } } },
-            { text: "I just need some rest.", next: "day2_lunch_nurse_rest", stats: { Nurse: { affinity: 3 } } },
-            { text: "Is seducing students your hobby or something?", next: "day2_lunch_nurse_trap", stats: { Nurse: { affinity: -50 } } }
-        ]
-    },
-    "day2_lunch_nurse_trap": {
-        name: "Nurse",
-        text: "(Her smile vanishes instantly. The air in the room grows heavy and cold.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse_angry.png",
-        next: "day2_lunch_nurse_trap_2"
-    },
-    "day2_lunch_nurse_trap_2": {
-        name: "Nurse",
-        text: "\"Oh... {name}, I think I've been too easy on you. That kind of disrespect isn't a joke to an adult. Please leave. I'm not in the mood for this.\"",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse_angry.png",
+        text: "(After a peaceful time in the nurse's office, I head back. I feel much more relaxed.)",
         next: "day2_afternoon_class"
     },
-    "day2_lunch_nurse_head": {
-        name: "Nurse",
-        text: "\"Sounds like a tension headache. Take this and get some sleep. You'll feel much better when you wake up.\"",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        choices: [
-            { text: "Can't you feed it to me yourself, teacher?", next: "day2_lunch_nurse_head_tease", stats: { Nurse: { affinity: 5 } } },
-            { text: "Thank you. (Take the medicine)", next: "day2_lunch_nurse_sleep", stats: { Nurse: { affinity: 3 } } }
-        ]
-    },
-    "day2_lunch_nurse_head_tease": {
-        name: "Nurse",
-        text: "\"Oh my... {name}, you're really something, aren't you? Fine, say 'Ah'. I should give a reward to a good student, right?\"",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        next: "day2_lunch_nurse_sleep"
-    },
-    "day2_lunch_nurse_rest": {
-        name: "Nurse",
-        text: "\"Hehe, we all have those days. Close the curtain and make yourself comfortable. You know... you have such a strong presence. Just being near you makes me feel... warm.\"",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        choices: [
-            { text: "Next", next: "day2_lunch_nurse_rest_yuna", condition: "metYuna" },
-            { text: "Next", next: "day2_lunch_nurse_sleep", excludeCondition: "metYuna" }
-        ]
-    },
-    "day2_lunch_nurse_rest_yuna": {
+    "day2_afternoon_class": {
         name: "Me",
-        text: "\"(A strong presence...? Yuna's words flash through my mind. Is there really something strange about this school?)\"",
-        background: "assets/images/background/nurse_room.jpg",
-        next: "day2_lunch_nurse_sleep"
-    },
-    "day2_lunch_nurse_sleep": {
-        name: "Me",
-        text: "(The warmth of the blanket she tucked around me pulls me into a deep, dreamless sleep. The exhaustion of the past two days finally catches up.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: null,
-        next: "day2_lunch_nurse_sleep_end"
-    },
-    "day2_lunch_nurse_sleep_end": {
-        name: "Me",
-        text: "(...Before long, the surroundings become quiet. Consciousness gradually returns as I open my eyes.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: null,
-        next: "day2_lunch_nurse_wake_1"
-    },
-    "day2_lunch_nurse_wake_1": {
-        name: "Me",
-        text: "(The view outside the window is suddenly filled with a glowing orange sunset. I fell asleep at lunchtime and it's already after school... how deeply did I sleep?)",
-        background: "assets/images/background/nurse_room.jpg",
-        sunset: true,
-        next: "day2_lunch_nurse_wake_2"
-    },
-    "day2_lunch_nurse_wake_2": {
-        name: "Nurse",
-        text: "\"Oh, are you awake now? You slept really sweetly. It's almost time to go home. How is your body?\"",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        next: "nurse_wake_free_talk"
-    },
-    "nurse_wake_free_talk": {
-        type: "free_talk",
-        name: "Nurse",
-        text: "\"Hehe, you're not fully awake yet. Do you want to talk to me more before going home?\"",
-        context: "A situation where the protagonist who just woke up and the nurse are left alone in the nurse's office where the sunset is setting. Keep the conversation going actively until it's finished. After the conversation, the nurse will give the protagonist her contact information or seduce him to contact her at night. ONLY at the final turn of the conversation, please create a lingering atmosphere by announcing that it's time to go home, or make a remark that induces personal contact.",
-        personality: "A languid, sexy, yet kind nurse. A bold personality who feels a strange charm to the protagonist and openly seduces him.",
-        extra_guideline: "As a mature adult, openly seduce the protagonist and create a risky atmosphere. Don't be flustered by the user's mature jokes or provocative remarks (sexual jokes, etc.) and respond leisurely, and show a bold and provocative reaction enough to make the protagonist even more flustered. Fully radiate mature charm and pull the romantic tension to the maximum.",
-        character: "assets/images/characters/nurse.png",
-        affinityChar: "Nurse",
-        affinityBranches: [
-            { minAffinity: 40, next: "nurse_contact_exchange_high" },
-            { minAffinity: 0, next: "nurse_contact_exchange" },
-            { minAffinity: -100, next: "nurse_contact_exchange_low" }
-        ],
-        next: "nurse_contact_exchange"
-    },
-    "nurse_contact_exchange_high": {
-        name: "Me",
-        text: "(The nurse looks at me with a playful, seductive smile.)",
-        branches: [
-            { next: "nurse_contact_already_have_high", condition: "has_number_nurse" },
-            { next: "nurse_contact_ask_high" }
-        ]
-    },
-    "nurse_contact_exchange_low": {
-        name: "Me",
-        text: "(The nurse looks at me with a slightly tired expression.)",
-        branches: [
-            { next: "nurse_contact_already_have_low", condition: "has_number_nurse" },
-            { next: "nurse_contact_ask_low" }
-        ]
-    },
-    "nurse_contact_already_have_high": {
-        name: "Me",
-        text: "(The teacher reminded me that we had already exchanged numbers and whispered in my ear. She said she'd really want to hear my voice tonight and told me I must contact her.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        choices: [
-            { text: "Yes, I will.", next: "day2_afternoon_nurse_skip" },
-            { 
-                text: "Not the number... can I go to your house tonight, teacher?", 
-                next: "nurse_contact_home_fail_high",
-                affinityChar: "Nurse",
-                affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success_high" }
-                ]
-            }
-        ]
-    },
-    "nurse_contact_already_have_low": {
-        name: "Me",
-        text: "(The teacher reminded me that we had already exchanged numbers but said with a cold smile that it might be better not to contact her with such a rude attitude. She then told me to leave.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        choices: [
-            { text: "Yes, I will.", next: "day2_afternoon_nurse_skip" },
-            { 
-                text: "Not the number... can I go to your house tonight, teacher?", 
-                next: "nurse_contact_home_fail_low",
-                affinityChar: "Nurse",
-                affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success_low" }
-                ]
-            }
-        ]
-    },
-    "nurse_contact_ask_high": {
-        name: "Me",
-        text: "(The teacher gently held my hand and whispered that she wanted to talk to me more. She suggested I contact her if I couldn't sleep at night and offered to give me her number.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        choices: [
-            { text: "Yes, I want to know.", next: "nurse_contact_success_high", setFlags: ["has_number_nurse", "has_any_contact"] },
-            { 
-                text: "Not the number... can I go to your house, teacher?", 
-                next: "nurse_contact_home_fail_high",
-                affinityChar: "Nurse",
-                affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success_high" }
-                ]
-            }
-        ]
-    },
-    "nurse_contact_ask_low": {
-        name: "Me",
-        text: "(The teacher sighed and said I was quite a handful. She said she'd give me her number for emergencies but warned me not to play around.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        choices: [
-            { text: "Yes, I want to know.", next: "nurse_contact_success_low", setFlags: ["has_number_nurse", "has_any_contact"] },
-            { 
-                text: "Not the number... can I go to your house, teacher?", 
-                next: "nurse_contact_home_fail_low",
-                affinityChar: "Nurse",
-                affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success_low" }
-                ]
-            }
-        ]
-    },
-    "nurse_contact_success_high": {
-        name: "Nurse",
-        text: "(She writes her number on the back of my hand and winks.) \"Hehe, here... don't lose this number? I'm already looking forward to what kind of message you'll send tonight.\"",
-        character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 25 } },
-        next: "day2_afternoon_nurse_skip"
-    },
-    "nurse_contact_success_low": {
-        name: "Nurse",
-        text: "\"...Here. Use it only for emergencies. If you send nonsense at dawn, you'll be blocked immediately, so be careful.\"",
-        character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 5 } },
-        next: "day2_afternoon_nurse_skip"
-    },
-    "nurse_contact_home_success_high": {
-        name: "Nurse",
-        text: "(Her eyes sparkle as she whispers in my ear.) \"Oh my... {name}, you're much bolder than you look? Fine, should I tell you where I live? But... it's a secret from everyone else?\"",
-        character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 20 } },
-        setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
-        next: "day2_afternoon_nurse_skip"
-    },
-    "nurse_contact_home_success_low": {
-        name: "Nurse",
-        text: "\"...You're persistent. Fine, I'll give you the address, but don't even think about coming unless it's really important. Got it?\"",
-        character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 10 } },
-        setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
-        next: "day2_afternoon_nurse_skip"
-    },
-    "nurse_contact_home_fail_high": {
-        name: "Nurse",
-        text: "(She laughs softly and pokes my forehead.) \"Fufu, {name}. You're too fast! Let's start with exchanging numbers. We might have a chance later if you're a good boy?\"",
-        character: "assets/images/characters/nurse.png",
-        setFlags: ["has_number_nurse", "has_any_contact"],
-        next: "day2_afternoon_nurse_skip"
-    },
-    "nurse_contact_home_fail_low": {
-        name: "Nurse",
-        text: "(She looks at me with a pathetic gaze.) \"Are you out of your mind? My house? In your dreams. Just take the number and leave.\"",
-        character: "assets/images/characters/nurse.png",
-        setFlags: ["has_number_nurse", "has_any_contact"],
-        next: "day2_afternoon_nurse_skip"
-    },
-    "nurse_contact_exchange": {
-        name: "Me",
-        text: "(The nurse looks at me and starts talking.)",
-        branches: [
-            { next: "nurse_contact_already_have", condition: "has_number_nurse" },
-            { next: "nurse_contact_ask" }
-        ]
-    },
-    "nurse_contact_already_have": {
-        name: "Me",
-        text: "(The teacher reminded me that we had already exchanged numbers and whispered that I should contact her if I was bored at night, saying she'd be waiting.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        choices: [
-            { text: "Yes, I will.", next: "day2_afternoon_nurse_skip" },
-            { 
-                text: "Not the number... can I go to your house tonight, teacher?", 
-                next: "nurse_contact_home_fail",
-                affinityChar: "Nurse",
-                affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success" }
-                ]
-            }
-        ]
-    },
-    "nurse_contact_ask": {
-        name: "Me",
-        text: "(The teacher leaned in and whispered, suggesting I contact her if I couldn't sleep at night and offering to give me her number.)",
-        background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
-        sunset: true,
-        choices: [
-            { text: "Yes, I want to know.", next: "nurse_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
-            { 
-                text: "Not the number... can I go to your house, teacher?", 
-                next: "nurse_contact_home_fail",
-                affinityChar: "Nurse",
-                affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success" }
-                ]
-            },
-            { text: "Oh, it's okay.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -20 } } }
-        ]
-    },
-    "nurse_contact_success": {
-        name: "Nurse",
-        text: "(She smiles seductively and saves my number.) \"Hehe, then I'll be waiting tonight? I might get sulky if you reply late.\"",
-        character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 18 } },
-        next: "day2_afternoon_nurse_skip"
-    },
-    "nurse_contact_home_success": {
-        name: "Nurse",
-        text: "(The teacher's eyes widen, then she whispers in my ear with a seductive smile.) \"Oh... {name}, you're much bolder than I thought? Okay, do you want to come to my house tonight? I'll give you the address. Instead... it's a secret from your parents?\"",
-        character: "assets/images/characters/nurse.png",
-        stats: { Nurse: { affinity: 15 } },
-        setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
-        next: "day2_afternoon_nurse_skip"
-    },
-    "nurse_contact_home_fail": {
-        name: "Nurse",
-        text: "(The teacher bursts into laughter.) \"Oh my, {name}! You're really cute. But I think it's a bit early for my house? Let's exchange numbers first.\"",
-        character: "assets/images/characters/nurse.png",
-        setFlags: ["has_number_nurse", "has_any_contact"],
-        next: "day2_afternoon_nurse_skip"
-    },
-    "nurse_contact_fail": {
-        name: "Nurse",
-        text: "(The teacher pouts her lips as if a bit disappointed.) \"Tsk... are you playing hard to get? Okay. Tell me if you change your mind later.\"",
-        character: "assets/images/characters/nurse.png",
-        next: "day2_afternoon_nurse_skip"
+        text: "(The afternoon classes drag on, but I can't stop thinking about what happened earlier.)",
+        background: "assets/images/background/room_school.png",
+        next: "day2_afterschool_start"
     }
 });
-
-
-

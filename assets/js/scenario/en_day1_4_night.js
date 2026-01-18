@@ -8,7 +8,7 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "after_home": {
         name: "Me",
-        text: "(The sun has set, and I've returned home through the dark streets. My first day at the new school... it's been a long one.)",
+        text: "(I returned to my room as darkness settled over the streets. The faces of the girls I met today keep flickering in my mind.)",
         background: "assets/images/background/room_my.png",
         bgm: "night1.mp3",
         character: null,
@@ -17,21 +17,21 @@ Object.assign(SCENARIO[1], {
     },
     "after_home_2": {
         name: "Me",
-        text: "(I throw myself onto the bed. Staring at the ceiling, I retrace the day's events. The unfamiliar school, and the new faces...)",
+        text: "(I flop onto the bed. Is it just my imagination, or does the unfamiliar ceiling feel especially cozy today...?)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "after_home_3"
     },
     "after_home_3": {
         name: "Me",
-        text: "(What kind of things are waiting for me tomorrow? With a strange sense of anticipation, I close my heavy eyelids.)",
+        text: "(What kind of things are waiting for me tomorrow? I'm so excited that I don't think I'll be able to sleep easily.)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "night_home"
     },
     "night_home": {
         name: "Me",
-        text: "(Before falling asleep, I check my phone out of habit.)",
+        text: "(Before falling asleep, I habitually check my smartphone.)",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -42,14 +42,14 @@ Object.assign(SCENARIO[1], {
     },
     "night_home_check_contact": {
         name: "Me",
-        text: "(Did I exchange contact info with anyone today...?)",
+        text: "(Did I exchange contact info today...?)",
         night: true,
         choices: [
             { text: "Send a message to Seoyeon.", next: "night_message_seyoun", condition: "has_number_seyoun", excludeCondition: "sent_msg_day1_seyoun" },
             { text: "Send a message to Yuna.", next: "night_message_yuna", condition: "has_number_yuna", excludeCondition: "sent_msg_day1_yuna" },
             { text: "Send a message to Dain.", next: "night_message_dain", condition: "has_number_dain", excludeCondition: "sent_msg_day1_dain" },
             { text: "Send a message to the Nurse.", next: "night_message_nurse", condition: "has_number_nurse", excludeCondition: "sent_msg_day1_nurse" },
-            { text: "Send a message to the Homeroom Teacher.", next: "night_message_teacher", condition: "has_number_teacher", excludeCondition: "sent_msg_day1_teacher" },
+            { text: "Send a message to the Teacher.", next: "night_message_teacher", condition: "has_number_teacher", excludeCondition: "sent_msg_day1_teacher" },
             { text: "Check Affinity Status", next: "day1_check_affinity" },
             { text: "Just sleep.", next: "day1_end" }
         ]
@@ -63,14 +63,14 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_teacher": {
         name: "Me",
-        text: "(I send a message to the Homeroom Teacher. 'Teacher, thank you for taking care of me today. See you tomorrow!')",
+        text: "(I sent a message to the teacher. 'Teacher, thank you for looking out for me today. See you tomorrow!')",
         night: true,
         setFlag: "sent_msg_day1_teacher",
         next: "night_message_teacher_reply"
     },
     "night_message_teacher_reply": {
-        name: "Homeroom Teacher",
-        text: "(A kind reply.) 'Oh, it's {name}. You must have been tired on your first day, but you're so thoughtful. Rest well and see you tomorrow!'",
+        name: "Teacher",
+        text: "(A warm reply.) '{name}, is that you? You must've been tired on your first day, but you're so thoughtful. Rest well and see you tomorrow!'",
         night: true,
         stats: { Teacher: { affinity: 3 } },
         next: "night_home_check_contact"
@@ -87,28 +87,28 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_seyoun_lunch": {
         name: "Me",
-        text: "(I send a message to Seoyeon. 'The lunch was really delicious today. Thank you!')",
+        text: "(I sent a message to Seoyeon. 'The lunch was really delicious today. Thank you.')",
         night: true,
         setFlag: "sent_msg_day1_seyoun",
         next: "night_message_seyoun_reply_lunch"
     },
     "night_message_seyoun_after": {
         name: "Me",
-        text: "(I send a message to Seoyeon. 'I enjoyed helping with the student council work today. See you tomorrow!')",
+        text: "(I sent a message to Seoyeon. 'I enjoyed helping with student council work today. See you tomorrow!')",
         night: true,
         setFlag: "sent_msg_day1_seyoun",
         next: "night_message_seyoun_reply_generic"
     },
     "night_message_seyoun_generic": {
         name: "Me",
-        text: "(I send a message to Seoyeon. 'Did you have a good day? See you at school tomorrow.')",
+        text: "(I sent a message to Seoyeon. 'Did you have a good day? See you at school tomorrow.')",
         night: true,
         setFlag: "sent_msg_day1_seyoun",
         next: "night_message_seyoun_reply_generic"
     },
     "night_message_seyoun_reply_lunch": {
         name: "Seoyeon",
-        text: "(Vibrate~ An immediate reply.) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name}.'",
+        text: "(Buzz~ An instant reply.) 'Really? I'm so glad! Thank you for enjoying it. Look forward to tomorrow too! Good night, {name}.'",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
         next: "night_home_check_contact"
@@ -124,28 +124,28 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_seyoun_reply_standard": {
         name: "Seoyeon",
-        text: "(Vibrate~ An immediate reply.) 'I had a great time too! I feel so reassured thanks to {name}. See you at school tomorrow. Good night.'",
+        text: "(Buzz~ An instant reply.) 'I had a great time too! I feel so reassured thanks to {name}. See you at school tomorrow. Good night.'",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
         next: "night_home_check_contact"
     },
     "night_message_seyoun_reply_high": {
         name: "Seoyeon",
-        text: "(Vibrate~ A reply with a heart emoticon.) 'I'll never forget the time I spent with you today. I hope to see you in my dreams... Good night, {name}.'",
+        text: "(A reply with a heart emoticon.) 'You know... I can't stop thinking about the time we spent together today. I want to see you even in my dreams. Sleep well, {name}.'",
         night: true,
         stats: { Seoyeon: { affinity: 3 } },
         next: "night_home_check_contact"
     },
     "night_message_seyoun_reply_low": {
         name: "Seoyeon",
-        text: "(A reply arrives after a short wait.) 'Ah... yeah. See you at school tomorrow.'",
+        text: "(A reply arrives a moment later.) 'Ah... yeah. See you at school tomorrow.'",
         night: true,
         stats: { Seoyeon: { affinity: -5 } },
         next: "night_home_check_contact"
     },
     "night_message_yuna": {
         name: "Me",
-        text: "(I send a message to Yuna. 'I had fun today. Good night.')",
+        text: "(I sent a message to Yuna. 'I had fun today. Good night.')",
         night: true,
         setFlag: "sent_msg_day1_yuna",
         next: "night_message_yuna_reply"
