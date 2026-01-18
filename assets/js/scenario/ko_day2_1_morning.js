@@ -8,7 +8,7 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_start": {
         name: "나",
-        text: "(따르릉! 알람 소리에 무거운 눈꺼풀을 들어 올렸다. 전학 이틀째의 아침이다.)",
+        text: "(눈을 뜨자마자 어제 만난 얼굴들이 스쳐 지나간다. 전학 이틀째의 아침, 설렘 때문인지 알람이 울리기도 전에 잠에서 깨버렸다.)",
         background: "assets/images/background/room_my.png",
         bgm: "intro.mp3",
         character: null,
@@ -16,17 +16,17 @@ Object.assign(SCENARIO[2], {
     },
     "day2_start_2": {
         name: "나",
-        text: "(어제의 일들이 마치 꿈처럼 느껴지지만... 책상 위에 놓인 교복이 이곳이 현실임을 말해준다.)",
+        text: "(어제의 일들이 마치 꿈처럼 달콤하게 느껴지지만... 책상 위에 놓인 교복이 이곳이 현실임을 말해준다. 오늘도 좋은 일이 생길 것 같아.)",
         next: "day2_start_3"
     },
     "day2_start_3": {
         name: "나",
-        text: "(오늘은 또 어떤 만남이 기다리고 있을까? 설레는 마음을 안고 학교로 향했다.)",
+        text: "(자, 가보자. 오늘은 또 어떤 떨림이 나를 기다리고 있을까?)",
         next: "day2_school_gate"
     },
     "day2_school_gate": {
         name: "나",
-        text: "(교문 앞에 도착하자 어제보다 훨씬 익숙한 풍경이 나를 반긴다.)",
+        text: "(교문 앞에 도착하자 어제보다 훨씬 다정하게 느껴지는 풍경이 나를 반긴다. 왠지 모르게 발걸음이 가볍다.)",
         background: "assets/images/background/school.png",
         bgm: "daily2.mp3",
         next: "day2_school_gate_2"
@@ -171,11 +171,11 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_talk_has_number": {
         name: "서연",
-        text: "\"어제 잘 들어갔어? 연락처 교환하고 나서 메시지 보낼까 말까 고민하다가... 너무 늦은 것 같아서 참았어.\"",
+        text: "\"어제 잘 들어갔어? 연락처 교환하고 나서 메시지 보낼까 말까 수백 번은 고민했는데... 너무 방해될까 봐 꾹 참았어.\"",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
-            { text: "나도 서연이 메시지 기다렸는데! 지금이라도 보내줘.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "아, 그랬구나. 나도 피곤해서 바로 잠들었어.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 1 } } }
+            { text: "나도 서연이 메시지 엄청 기다렸는데! 지금이라도 보내줘요.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "아, 그랬구나. 사실 나도 피곤해서 눕자마자 잠들었어.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 1 } } }
         ]
     },
     "day2_seoyeon_talk_no_number": {

@@ -8,7 +8,7 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "start": {
         name: "나",
-        text: "(따스한 햇살... 전학 첫날의 긴장감이 온몸을 감싼다.)",
+        text: "(따스한 햇살... 오늘부터 이 학교구나. 조금 긴장되는걸.)",
         background: "assets/images/background/school.png",
         bgm: "intro.mp3",
         character: null,
@@ -16,106 +16,106 @@ Object.assign(SCENARIO[1], {
     },
     "start_2": {
         name: "나",
-        text: "(낯선 교복, 낯선 풍경. 모든 게 어색하다.)",
+        text: "(낯선 교복, 낯선 풍경... 하지만 왠지 좋은 일이 생길 것만 같아.)",
         next: "start_3"
     },
     "start_3": {
         name: "나",
-        text: "(후우... 심호흡 한 번. 자, 가보자.)",
+        text: "(자, 가보자. 새로운 시작이야.)",
         next: "name_input_scene"
     },
     "name_input_scene": {
         type: "input",
         name: "시스템",
-        text: "당신의 이름을 입력해주세요.",
+        text: "전학생, 당신의 이름은?",
         next: "start_4"
     },
     "start_4": {
         name: "???",
-        text: "\"안녕? 처음 보는 얼굴이네. 혹시 오늘 전학 온다던.. {name}?\"",
+        text: "\"안녕? 못 보던 얼굴이네. 혹시 오늘 온다는... {name}?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "intro_1"
     },
     "intro_1": {
         name: "나",
-        text: "(그녀가 방긋 웃으며 다가온다. 기분 좋은 향기가 난다.)",
+        text: "(방긋 웃으며 말을 걸어오는 소녀. 은은한 샴푸 향기가 코끝을 스친다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "intro_2"
     },
     "intro_2": {
         name: "나",
-        text: "(맑은 눈동자로 나를 빤히 바라본다. 조금... 부끄러운걸.)",
+        text: "(눈이 마주치자 나도 모르게 심장이 덜컥한다. 너무 예쁘잖아...)",
         next: "intro_3"
     },
     "intro_3": {
         name: "서연",
-        text: "\"나는 학생회장 서연이야. 선생님 부탁으로 마중 나왔어. 잘 부탁해!\"",
+        text: "\"학생회장 서연이야. 선생님 부탁으로 마중 나왔지. 잘 부탁해!\"",
         setFlags: ["metSeoyeon", "knowsName_Seoyeon"],
         choices: [
-            { text: "응, 잘 부탁해. 학교가 커서 좀 헤매고 있었어.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "정말 예쁘다 (나도 모르게 본심이..!)", next: "path_blush_1", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "학생회장이 이렇게 예뻐도 되는 거야? 나 좀 특별하게 챙겨줘!", next: "path_tease_1", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "(너무 예뻐서 멍하니 바라본다.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 3 } } },
-            { text: "아, 그래? 근데 좀 비켜줄래? 바쁘거든.", next: "path_rude_1", stats: { Seoyeon: { affinity: -30 } } }
+            { text: "응, 잘 부탁해! 학교가 엄청 예쁘네.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "와... 진짜 예쁘다.", next: "path_blush_1", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "학생회장이 이렇게 예뻐도 돼? 반칙 아냐?", next: "path_tease_1", stats: { Seoyeon: { affinity: 7 } } },
+            { text: "(눈이 부셔서 한동안 멍하니 바라본다.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "아, 그래? 근데 좀 비켜줄래?", next: "path_rude_1", stats: { Seoyeon: { affinity: -30 } } }
         ]
     },
     "path_rude_1": {
         name: "서연",
-        text: "(서연이의 표정이 순식간에 굳어진다. 당황한 듯 입술을 깨문다.)",
+        text: "(서연의 눈이 커지더니, 이내 아랫입술을 꾹 깨문다.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "path_rude_1_2"
     },
     "path_rude_1_2": {
         name: "서연",
-        text: "\"아.. 미안. 방해됐나 보네. 그래도 교무실까지는 안내해야 하니까.. 따라와.\"",
+        text: "\"아... 미안. 방해했나 보네. 그래도 안내는 내 일이니까... 따라와.\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_1"
     },
     "path_friendly_1": {
         name: "서연",
-        text: "(그녀가 밝게 웃으며 앞장선다. 긴장이 조금 풀리는 기분이다.)",
+        text: "(그녀가 화사하게 웃자 주위가 밝아지는 느낌이다. 긴장이 조금 풀린다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_friendly_1_2"
     },
     "path_friendly_1_2": {
         name: "서연",
-        text: "\"후훗, 역시 그랬구나? 처음 오면 좀 복잡하긴 하지. 내가 완벽하게 가이드해줄게. 자, 따라와!\"",
+        text: "\"후훗, 역시? 처음엔 좀 복잡하지. 내가 완벽하게 가이드해줄게. 자, 따라와!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_1"
     },
     "path_tease_1": {
         name: "서연",
-        text: "(그녀가 장난스럽게 웃으며 윙크한다.)",
+        text: "(그녀가 눈을 동그랗게 뜨더니 곧 장난스럽게 윙크한다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_tease_1_2"
     },
     "path_tease_1_2": {
         name: "서연",
-        text: "\"어머, 자신감이 넘치네? 특별 대우라기보다는... 학생회장의 책임감일까? 그래도 네가 원한다면, 특별히 신경 써줄게!\"",
+        text: "\"어머, 첫날부터 작업이야? 합격점 줄게. 그럼 우리 '특별한' 전학생 소년, 따라와 보실까?\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1"
     },
     "path_blush_1": {
         name: "서연",
-        text: "(서연이의 얼굴이 빨개진다. 당황하며 부끄러운 듯 고개를 숙인다.)",
+        text: "(서연의 얼굴이 순식간에 붉게 달아오른다. 시선을 피하며 머리칼을 만진다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "path_blush_1_2"
     },
     "path_blush_1_2": {
         name: "서연",
-        text: "\"에..? 너, 너... 학생회장을 놀리면 벌점이야! ...다, 다음엔 봐줄 테니까 어서 따라오기나 해! 늦으면 담임선생님께 혼난다구!\"",
+        text: "\"그, 그렇게 갑자기... 반칙이야. 하여튼 전학생들은... 됐으니까 얼른 따라와!\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },
     "path_silent_1": {
         name: "서연",
-        text: "(그녀가 내 눈앞에서 손을 흔들더니, 내 이마에 손을 얹어 열을 확인한다.)",
+        text: "(그녀가 고개를 갸웃하며 내 얼굴 가까이 다가온다. 숨결이 느껴질 것만 같다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "path_silent_1_2"
     },
     "path_silent_1_2": {
         name: "서연",
-        text: "\"음.. 괜찮아? 어디 아픈 건 아니지? 얼굴이 좀 빨간 것 같은데.. 일단 보건실보다는 교무실부터 가는 게 좋겠어. 내가 부축해줄까?\"",
+        text: "\"응? 왜 그래? 얼굴이 엄청 빨간데... 설마 벌써 나한테 반한 거야? 후훗.\"",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "hallway_1"
     },
@@ -167,20 +167,11 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3_high": {
         name: "나",
-        text: "(서연이와 대화를 나누다 보니 어느새 학교 시설 안내가 시작되었다. 그녀와 대화하는 게 정말 즐거워서 시간 가는 줄 몰랐다. 이제 그녀를 따라 학교를 둘러보기로 했다.)",
+        text: "(서연과 수다를 떨다 보니 학교 안내가 시작됐다. 시간이 벌써 이렇게... 그녀와 있으면 즐거워.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
             { 
-                text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", 
-                affinityChar: "Seoyeon",
-                affinityBranches: [
-                    { minAffinity: 15, next: "hallway_talk_club_high" },
-                    { minAffinity: 0, next: "hallway_talk_club_normal" },
-                    { minAffinity: -999, next: "hallway_talk_club_low" }
-                ]
-            },
-            { 
-                text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", 
+                text: "학교도 멋지지만, 안내해주는 사람이 좋아서 더 멋져 보여.", 
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_flatter_high" },
@@ -189,7 +180,7 @@ Object.assign(SCENARIO[1], {
                 ]
             },
             { 
-                text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", 
+                text: "서연아... 넌 정말 여신 같아. 목소리만 들어도 힐링 된다니까.", 
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_trap_high" },
@@ -198,7 +189,7 @@ Object.assign(SCENARIO[1], {
                 ]
             },
             { 
-                text: "(조용히 그녀의 설명을 경청하며 걷는다.)", 
+                text: "(설명을 듣는 척하며 그녀의 옆모습을 살짝 훔쳐본다.)", 
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },

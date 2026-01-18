@@ -8,7 +8,7 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_afternoon_class": {
         name: "나",
-        text: "(지루한 오후 수업이 끝나고 교실에는 노을빛이 스며든다. 드디어 방과 후다.)",
+        text: "(지루한 오후 수업 끝. 창가로 스며드는 붉은 노을이 교실을 감성적으로 물들인다. 이제 자유시간인가...)",
         background: "assets/images/background/room_school.png",
         bgm: "sunset2.mp3",
         character: null,
@@ -17,7 +17,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_afternoon_nurse_skip": {
         name: "나",
-        text: "(보건실에서 한참 자고 일어났더니 벌써 방과 후다. 수업은 통째로 빼먹었지만 몸은 한결 가볍다.)",
+        text: "(보건실 침대에서 눈을 뜨니 어느덧 노을이 지고 있다. 수업은 다 빠졌지만, 선생님 옆에서 푹 자고 일어났더니 몸이 가볍다.)",
         background: "assets/images/background/nurse_room.jpg",
         bgm: "sunset2.mp3",
         character: null,
@@ -27,17 +27,17 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_school": {
         name: "나",
-        text: "(오늘은 어제보다 더 특별한 일이 생길 것 같은 예감이 든다. 어디로 가볼까?)",
+        text: "(어제보다 훨씬 익숙해진 복도. 오늘은 어떤 떨림이 나를 기다리고 있을까? 발길 닿는 대로 가보자.)",
         sunset: true,
         choices: [
-            { text: "서연이와 함께 학생회 일을 돕는다.", next: "day2_after_seoyeon" },
-            { text: "유나와 함께 학교의 비밀을 파헤친다.", next: "day2_after_yuna", condition: "metYuna" },
-            { text: "도서관 별관으로 쪽지를 남긴 사람을 찾아가 본다.", next: "day2_after_yuna", excludeCondition: "metYuna" },
-            { text: "다인이의 배구 연습을 도와준다.", next: "day2_after_dain", condition: "metDain" },
-            { text: "체육관에서 들리는 활기찬 소리를 따라가 본다.", next: "day2_after_dain", excludeCondition: "metDain" },
-            { text: "보건실에 있는 선생님과 좀 더 대화한다.", next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
-            { text: "보건실에 있는 선생님을 찾아간다.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" },
-            { text: "교무실에 계신 담임선생님을 찾아간다.", next: "day2_after_teacher" }
+            { text: "함께 노을을 보고 싶은 서연이를 찾아가 본다.", next: "day2_after_seoyeon" },
+            { text: "유나와 함께 학교의 깊은 비밀 속으로 들어간다.", next: "day2_after_yuna", condition: "metYuna" },
+            { text: "비밀스러운 쪽지를 남긴 그녀, 유나를 찾아본다.", next: "day2_after_yuna", excludeCondition: "metYuna" },
+            { text: "땀방울이 아름다운 다인이의 연습을 도우러 간다.", next: "day2_after_dain", condition: "metDain" },
+            { text: "활기가 넘치는 체육관, 다인의 목소리를 찾아간다.", next: "day2_after_dain", excludeCondition: "metDain" },
+            { text: "나를 간호해준 선생님과 좀 더 대화를 나눈다.", next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
+            { text: "은은한 약 냄새가 나는 보건실, 선생님을 보러 간다.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" },
+            { text: "인자한 담임선생님이 계신 교무실로 발길을 옮긴다.", next: "day2_after_teacher" }
         ]
     },
     "day2_after_nurse_stay": {
@@ -73,13 +73,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_seoyeon_3": {
         name: "나",
-        text: "(서연이가 기지개를 켜며 살짝 웃는다. 피곤해 보이지만 눈빛은 맑다.)",
+        text: "(서연이가 기지개를 켜며 살짝 웃는다. 피곤해 보이지만 눈빛은 어느 때보다 맑고 예쁘다.)",
         character: "assets/images/characters/seyoun_nomal.png",
         night: true,
         choices: [
-            { text: "서연이는 왜 그렇게 열심히야?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "서연이는 왜 그렇게 매사에 진심이고 열심히야?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 3 } } },
             { 
-                text: "이제 그만 가자. 집까지 데려다줄게.", 
+                text: "이젠 그만 쉬자. 집까지 내가 꼭 데려다줄게.", 
                 next: "day2_seoyeon_home",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
@@ -90,7 +90,7 @@ Object.assign(SCENARIO[2], {
                 stats: { Seoyeon: { affinity: 8 } }
             },
             { 
-                text: "(어깨를 주물러준다)", 
+                text: "많이 뭉쳤네. 자, 잠깐만 가만히 있어 봐.", 
                 next: "day2_seoyeon_massage",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
@@ -166,12 +166,12 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_contact_ask": {
         name: "서연",
-        text: "\"아, 맞다! 우리 아직 연락처 교환 안 했지? 괜찮다면... 번호 알려줄 수 있어? 나중에 메시지 하고 싶어서.\"",
+        text: "\"아, 맞다! 아직 연락처를 못 물어봤네. 전하고 싶은 말이 계속 생길 것 같아서... 괜찮다면 번호 알려줄래?\"",
         character: "assets/images/characters/seyoun_shy.png",
         night: true,
         choices: [
-            { text: "응, 좋아. 여기 내 번호야.", next: "day2_seoyeon_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
-            { text: "미안, 번호는 좀... 나중에 알려줄게.", next: "day2_seoyeon_contact_fail" }
+            { text: "응, 언제든 연락해. 여기 내 번호야.", next: "day2_seoyeon_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
+            { text: "미안하지만 번호는 조금 더 친해지면 알려줄게.", next: "day2_seoyeon_contact_fail" }
         ]
     },
     "day2_seoyeon_contact_success": {

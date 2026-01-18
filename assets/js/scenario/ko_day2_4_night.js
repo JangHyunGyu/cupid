@@ -8,7 +8,7 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_end": {
         name: "나",
-        text: "(두 번째 밤이 깊어간다. 창밖의 어둠이 어제보다 더 짙게 느껴지는 건 기분 탓일까...?)",
+        text: "(학교에서의 두 번째 밤. 창밖의 어둠이 어제보다 훨씬 깊고 비밀스럽게 느껴진다. 가습기 돌아가는 소리만이 정막을 채운다.)",
         background: "assets/images/background/room_my.png",
         bgm: "night2.mp3",
         character: null,
@@ -17,7 +17,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_end_2": {
         name: "나",
-        text: "(침대에 누워 오늘 있었던 일들을 되짚어본다. 유나가 말한 학교의 비밀, 그리고 그녀들과의 시간...)",
+        text: "(침대에 가만히 누워 오늘 있었던 일들을 천천히 되짚어본다. 유나가 속삭인 비밀, 그리고 가슴 뛰던 만남들...)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_home"
@@ -99,7 +99,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_after": {
         name: "나",
-        text: "(서연이에게 메시지를 보냈다. '오늘 학생회 일 돕는 거 즐거웠어. 내일 봐!')",
+        text: "(서연이에게 메시지를 보냈다. '오늘 밤 노을부터 야근(?)까지, 너랑 함께해서 정말 행복했어. 내일 봐!')",
         night: true,
         setFlag: "sent_msg_day2_seyoun",
         next: "day2_night_message_seyoun_reply"
