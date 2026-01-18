@@ -175,6 +175,61 @@ function getScene(id) {
  * 이름 태그 및 호감도 게이지 업데이트
  * @param {string} name 캐릭터 이름
  */
+/**
+ * [캐릭터 움직임 관리] 현재 말하고 있는 캐릭터를 찾아 들썩거리는 효과를 줌
+ * @param {string} charName - 지금 대사를 하고 있는 캐릭터 이름
+ * @param {boolean} isStarting - 움직임을 시작할지(true), 멈출지(false) 결정
+ */
+function updateTalkingAnimation(charName, isStarting) {
+    // [설정] 주인공("나")이 말하거나 시스템 메시지가 나올 때는 캐릭터 움직임을 멈춤
+    if (!charName || charName === "나" || charName === "Me" || charName === "시스템" || charName === "System") {
+        // 모든 캐릭터 칸(slot)을 하나씩 확인
+        Object.values(charSlots).forEach(slot => {
+            if (!slot) return;
+            // 칸 안에 들어있는 캐릭터 이미지(img)를 모두 찾음
+            const imgs = slot.querySelectorAll('img');
+            // 'char-talking'(말하는 중) 클래스를 제거하여 움직임을 멈춤
+            imgs.forEach(img => img.classList.remove('char-talking'));
+        });
+        return; // 함수 종료
+    }
+    
+    // [매칭 서비스] 화면 이름과 실제 이미지 파일 이름을 연결하는 사전
+    // 새로운 캐릭터 추가 시 여기에 "이름": "파일이름" 형식으로 추가하면 됨
+    const charNameMap = {
+        "서연": "seyoun", "유나": "yuna", "다인": "dain", 
+        "담임선생님": "teacher", "보건선생님": "nurse",
+        "Seoyeon": "seyoun", "Yuna": "yuna", "Dain": "dain",
+        "???": "seyoun" // 이름이 '???'일 때도 서연이 이미지가 움직이게 설정
+    };
+    
+    // 현재 화자 이름을 파일 이름 키워드(예: seyoun)로 변환
+    const targetKey = charNameMap[charName] || charName.toLowerCase();
+    
+    // 화면상의 모든 캐릭터를 하나씩 검사
+    Object.values(charSlots).forEach(slot => {
+        if (!slot) return;
+        const imgs = slot.querySelectorAll('img');
+        imgs.forEach(img => {
+            const src = img.src.toLowerCase(); // 이미지 파일 경로 획득
+            
+            // 이미지 파일 이름에 현재 화자 이름(예: seyoun)이 있는지 확인
+            if (src.includes(targetKey)) {
+                if (isStarting) {
+                    // 말하기 시작 시 'char-talking' 클래스 추가하여 들썩이게 함
+                    img.classList.add('char-talking');
+                } else {
+                    // 말이 끝나면 클래스 제거하여 정지시킴
+                    img.classList.remove('char-talking');
+                }
+            } else {
+                // 현재 화자가 아닌 캐릭터들은 전부 움직임을 멈춤
+                img.classList.remove('char-talking');
+            }
+        });
+    });
+}
+
 function updateNameTag(name) {
     nameTagEl.innerHTML = "";
     if (!name) {
@@ -429,22 +484,45 @@ async function renderScene(sceneId) {
 
     // 캐릭터 업데이트
     // 장면 데이터에 캐릭터 정보(character 또는 characters)가 명시되어 있을 때만 업데이트합니다.
-    // 정보가 없으면 이전 장면의 캐릭터 상태를 그대로 유지하여 대화 중 이미지가 사라지는 현상을 방지합니다.
     if (scene.hasOwnProperty('characters') || scene.hasOwnProperty('character')) {
-        // 새 캐릭터 데이터가 있으므로 기존 슬롯을 비웁니다.
-        Object.values(charSlots).forEach(slot => {
-            if (slot) slot.innerHTML = '';
+        const newCharMap = {}; // 슬롯별로 표시되어야 할 이미지 URL 맵
+        if (scene.characters) {
+            Object.entries(scene.characters).forEach(([pos, src]) => {
+                newCharMap[pos.toLowerCase()] = getAssetUrl(src);
+            });
+        } else if (scene.character) {
+            newCharMap['center'] = getAssetUrl(scene.character);
+        }
+
+        // 바뀌어야 할 슬롯 확인
+        const changedSlots = [];
+        Object.entries(charSlots).forEach(([pos, slot]) => {
+            if (!slot) return;
+            const existingImg = slot.querySelector('img');
+            const newUrl = newCharMap[pos];
+
+            if (existingImg) {
+                // 기존 이미지가 있는데 새로운 데이터가 없거나, 경로가 바뀐 경우
+                if (!newUrl || existingImg.dataset.rawSrc !== newUrl) {
+                    changedSlots.push(pos);
+                }
+            } else {
+                // 기존 이미지가 없는데 새로운 데이터가 있는 경우
+                if (newUrl) changedSlots.push(pos);
+            }
         });
 
-        if (scene.characters) {
-            // 여러 캐릭터 설정 (예: { left: "...", right: "..." })
-            const charPromises = Object.entries(scene.characters).map(([pos, src]) => {
-                return new Promise((resolve) => {
-                    const targetPos = pos.toLowerCase();
-                    if (charSlots[targetPos] && src) {
+        // 변경 사항이 있는 경우에만 처리
+        if (changedSlots.length > 0) {
+            const charPromises = Object.entries(newCharMap)
+                .filter(([pos]) => changedSlots.includes(pos))
+                .map(([pos, charUrl]) => {
+                    return new Promise((resolve) => {
                         const img = document.createElement('img');
-                        const charUrl = getAssetUrl(src);
-                        img.onload = () => resolve({ pos: targetPos, img, sceneId });
+                        img.onload = () => {
+                            img.dataset.rawSrc = charUrl;
+                            resolve({ pos, img, sceneId });
+                        };
                         img.onerror = () => {
                             console.error("캐릭터 이미지 로드 실패:", charUrl);
                             resolve(null);
@@ -452,47 +530,29 @@ async function renderScene(sceneId) {
                         img.src = charUrl;
                         if (scene.silhouette) img.classList.add('silhouette');
                         if (scene.thinking) img.classList.add('thinking');
-                    } else {
-                        if (!charSlots[targetPos] && src) {
-                            console.warn(`알 수 없는 캐릭터 위치: ${pos}. 'left', 'center', 'right' 중 하나를 사용하세요.`);
-                        }
-                        resolve(null);
-                    }
+                        img.classList.add('char-breathing');
+                    });
                 });
-            });
 
             const loadedChars = await Promise.all(charPromises);
-            // 레이스 컨디션 방지: 이미 다른 장면으로 넘어갔다면 렌더링 중단
-            if (currentSceneId !== sceneId) return;
-
-            loadedChars.forEach(result => {
-                if (result && charSlots[result.pos]) {
-                    charSlots[result.pos].appendChild(result.img);
-                }
-            });
-        } else if (scene.character) {
-            // 단일 캐릭터 설정 (기본 center)
-            const result = await new Promise((resolve) => {
-                const img = document.createElement('img');
-                const charUrl = getAssetUrl(scene.character);
-                img.onload = () => {
-                    resolve({ pos: 'center', img, sceneId });
-                };
-                img.onerror = () => {
-                    console.error("캐릭터 이미지 로드 실패:", charUrl);
-                    resolve(null);
-                };
-                img.src = charUrl;
-                if (scene.silhouette) img.classList.add('silhouette');
-                if (scene.thinking) img.classList.add('thinking');
-            });
-
+            
             // 레이스 컨디션 방지
             if (currentSceneId !== sceneId) return;
 
-            if (result && charSlots.center) {
-                charSlots.center.appendChild(result.img);
-            }
+            // 바뀐 슬롯의 주체만 즉시 교체
+            loadedChars.forEach(result => {
+                if (result && charSlots[result.pos]) {
+                    charSlots[result.pos].innerHTML = ''; // 즉시 교체 (페이드 없음)
+                    charSlots[result.pos].appendChild(result.img);
+                }
+            });
+
+            // 퇴장하는 슬롯 처리
+            Object.keys(charSlots).forEach(pos => {
+                if (!newCharMap[pos] && changedSlots.includes(pos)) {
+                    if (charSlots[pos]) charSlots[pos].innerHTML = '';
+                }
+            });
         }
     }
 
@@ -833,47 +893,60 @@ function typeText(text, charName) {
         processedText = processedText.replace(/{affinity_list}/g, listStr);
     }
 
+    // [연출 시작] 글자가 한 글자씩 찍히기 시작하면 캐릭터를 들썩거리게 함
+    updateTalkingAnimation(charName, true);
+
+    // [약속] 글자가 다 써질 때까지 게임이 멈추지 않고 기다리게 만드는 장치
     return new Promise((resolve) => {
-        isTyping = true;
-        if (chatSkipBtn) chatSkipBtn.disabled = true;
-        skipTyping = false;
-        messageEl.textContent = "";
-        let charIndex = 0;
-        let startTime = null;
-        const speed = 15; // ms per char
+        isTyping = true; // "글자 쓰는 중" 상태 표시
+        if (chatSkipBtn) chatSkipBtn.disabled = true; // 출력 중 전송 버튼 비활성화
+        skipTyping = false; // 스킵 요청 초기화
+        messageEl.textContent = ""; // 대화창 비움
+        
+        let charIndex = 0; // 현재 출력된 글자 인덱스
+        let startTime = null; // 출력 시작 시각
+        
+        // [수정 가능] 글자 나오는 속도. 숫자가 작을수록(예: 5) 빨라지고, 클수록(예: 50) 느려짐
+        const speed = 15; 
 
+        // 한 글자씩 화면에 그려주는 핵심 함수
         function typeFrame(timestamp) {
-            if (!startTime) startTime = timestamp;
+            if (!startTime) startTime = timestamp; // 시작 시간 기록
 
-            // 스킵 요청 시 즉시 전체 텍스트 표시
+            // 유저가 화면 클릭하여 스킵 요청한 경우
             if (skipTyping) {
-                messageEl.textContent = processedText;
-                isTyping = false;
-                if (chatSkipBtn) chatSkipBtn.disabled = false;
-                skipTyping = false;
-                resolve();
+                messageEl.textContent = processedText; // 전체 문장 즉시 노출
+                isTyping = false; // 출력 종료
+                if (chatSkipBtn) chatSkipBtn.disabled = false; // 버튼 활성화
+                skipTyping = false; // 스킵 요청 처리 완료
+                updateTalkingAnimation(charName, false); // 캐릭터 움직임 정지
+                resolve(); // 작업 완료 보고
                 return;
             }
 
-            // 경과 시간 기반으로 표시할 글자 수 계산
+            // 경과 시간 계산하여 현재 프레임에 보여줄 글자 수 결정
             const elapsed = timestamp - startTime;
             const targetIndex = Math.min(Math.floor(elapsed / speed), processedText.length);
 
-            // substring으로 처음부터 해당 위치까지 한 번에 설정 (순서 보장)
+            // 아직 출력할 글자가 있다면 화면에 추가
             if (charIndex < targetIndex) {
                 messageEl.textContent = processedText.substring(0, targetIndex);
                 charIndex = targetIndex;
             }
 
+            // 출력할 글자가 남았다면 다음 프레임 요청
             if (charIndex < processedText.length) {
                 requestAnimationFrame(typeFrame);
             } else {
+                // 출력 완료 시 마무리 작업
                 isTyping = false;
                 if (chatSkipBtn) chatSkipBtn.disabled = false;
-                resolve();
+                updateTalkingAnimation(charName, false); // 캐릭터 움직임 정지
+                resolve(); // 다음 대사 진행 허용
             }
         }
 
+        // 애니메이션 루프 시작
         requestAnimationFrame(typeFrame);
     });
 }
