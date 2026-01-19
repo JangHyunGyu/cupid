@@ -604,7 +604,24 @@ async function renderScene(sceneId) {
         if (!scene.text && (!scene.choices || scene.choices.length === 0)) {
             const nextId = resolveNextScene(scene);
             if (nextId && nextId !== sceneId) {
-                setTimeout(() => renderScene(nextId), 0);
+                // 서비스신(이미지)만 보여주기
+                if (scene.background || scene.character || scene.characters) {
+                    // 대화창은 숨기고 지시계는 보이게
+                    dialogueBox.style.display = 'none';
+                    nextIndicator.style.display = 'block';
+                    // 클릭 이벤트 리스너를 한 번만 작동하게 등록
+                    const proceedToNext = () => {
+                        window.removeEventListener('click', proceedToNext);
+                        window.removeEventListener('touchstart', proceedToNext);
+                        renderScene(nextId);
+                    };
+                    setTimeout(() => {
+                        window.addEventListener('click', proceedToNext);
+                        window.addEventListener('touchstart', proceedToNext);
+                    }, 100);
+                } else {
+                    setTimeout(() => renderScene(nextId), 0);
+                }
             }
         }
     }
