@@ -561,6 +561,7 @@ async function renderScene(sceneId) {
 
     // 다음 지시계 초기화
     nextIndicator.style.display = 'none';
+    nextIndicator.classList.remove('fade-in'); // 애니메이션 클래스 제거
 
     // 프리토킹 모드 확인
     if (scene.type === 'free_talk') {
@@ -597,7 +598,17 @@ async function renderScene(sceneId) {
         }
 
         if (showNextIndicator) {
-            nextIndicator.style.display = 'block';
+            // 시네마틱 모드 (텍스트 없는 장면) 등에서는 지시계 등장을 늦춤
+            if (!scene.text && (!scene.choices || scene.choices.length === 0)) {
+                setTimeout(() => {
+                    if (currentSceneId === sceneId) {
+                        nextIndicator.style.display = 'block';
+                        nextIndicator.classList.add('fade-in');
+                    }
+                }, 1500);
+            } else {
+                nextIndicator.style.display = 'block';
+            }
         }
 
         // 자동 진행 로직: 대사도 없고 선택지도 없는 라우팅 전용 노드 처리
@@ -618,7 +629,7 @@ async function renderScene(sceneId) {
                     setTimeout(() => {
                         window.addEventListener('click', proceedToNext);
                         window.addEventListener('touchstart', proceedToNext);
-                    }, 100);
+                    }, 1500); // 지시계가 나타나는 시점인 1.5초 후에만 클릭 가능하도록 변경
                 } else {
                     setTimeout(() => renderScene(nextId), 0);
                 }
@@ -924,7 +935,7 @@ function typeText(text, charName) {
         let startTime = null; // 출력 시작 시각
         
         // [수정 가능] 글자 나오는 속도. 숫자가 작을수록(예: 5) 빨라지고, 클수록(예: 50) 느려짐
-        const speed = 15; 
+        const speed = 30; 
 
         // 한 글자씩 화면에 그려주는 핵심 함수
         function typeFrame(timestamp) {
@@ -1402,6 +1413,7 @@ function checkChoices() {
 }
 
 dialogueBox.onclick = async () => {
+    // 타이핑 중에는 타이핑 스킵
     if (isTyping) {
         skipTyping = true;
         return;
@@ -1409,6 +1421,11 @@ dialogueBox.onclick = async () => {
 
     const scene = getScene(currentSceneId);
     if (isFreeTalking || scene.type === 'input') return;
+
+    // 시네마틱 모드 (텍스트 없는 라우팅 노드)에서는 일반 클릭 방지 (자동 진행 로직에서 1.5초 후 window 리스너로 처리)
+    if (!scene.text && (!scene.choices || scene.choices.length === 0)) {
+        return;
+    }
 
     if (scene.choices) {
         // 선택지가 하나뿐이고 그 텍스트가 "다음" 또는 "Next"인 경우 자동 진행
