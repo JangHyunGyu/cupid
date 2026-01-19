@@ -75,7 +75,8 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_4": {
         name: "보건선생님",
         text: "\"오늘 밤은... 조금 더 같이 있어줄래?\"",
-        character: "assets/images/event/nurse_home_event1.png",
+        background: "assets/images/background/nurse_home_event1.png",
+        character: null,
         night: true,
         next: "day2_night_nurse_home_5"
     },
