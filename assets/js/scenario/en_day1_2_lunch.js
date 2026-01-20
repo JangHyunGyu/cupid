@@ -374,7 +374,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "Secrets? What do you mean by that?", next: "yuna_secret_low" },
             { text: "Who exactly are you?", next: "yuna_scent_low" },
-            { text: "I'm not interested, I'm leaving.", next: "after_school_start" }
+            { text: "You somehow look dangerous. But I can't take my eyes off you.", next: "yuna_danger_low" }
         ]
     },
     "yuna_choices": {

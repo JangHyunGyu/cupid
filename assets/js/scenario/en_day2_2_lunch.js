@@ -308,6 +308,22 @@ Object.assign(SCENARIO[2], {
             { text: "Why are you doing this, Yuna?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
         ]
     },
+    "day2_yuna_secret_stop": {
+        type: "free_talk",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_yuna_secret_stop_high" },
+            { minAffinity: -999, next: "day2_yuna_secret_stop_low" }
+        ]
+    },
+    "day2_yuna_secret_why": {
+        type: "free_talk",
+        affinityChar: "Yuna",
+        affinityBranches: [
+            { minAffinity: 25, next: "day2_yuna_secret_why_high" },
+            { minAffinity: -999, next: "day2_yuna_secret_why_low" }
+        ]
+    },
     "day2_yuna_secret_read": {
         type: "free_talk",
         affinityChar: "Yuna",
@@ -574,12 +590,12 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_nurse_end": {
         name: "Me",
         text: "(After a peaceful time in the nurse's office, I head back. I feel much more relaxed.)",
-        next: "day2_afternoon_class"
+        next: "day2_afternoon_nurse_skip"
     },
     "day2_afternoon_class": {
         name: "Me",
         text: "(The afternoon classes drag on, but I can't stop thinking about what happened earlier.)",
         background: "assets/images/background/room_school.png",
-        next: "day2_afterschool_start"
+        next: "day2_afternoon_class"
     }
 });
