@@ -444,7 +444,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_food": {
         name: "다인",
-        text: "\"와! 너 좀 뭘 아는구나? 떡볶이에 튀김까지 곁들이면... 크, 생각만 해도 행복하다!\"",
+        text: "\"그치! 너 좀 뭘 아는구나? 떡볶이에 튀김까지 곁들이면... 크, 생각만 해도 행복하다!\"",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
         next: "day2_dain_night_talk"
@@ -462,17 +462,17 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_contact_ask": {
         name: "다인",
-        text: "\"야 {name}! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처는 있어야겠지? 번호 찍어줘!\"",
+        text: "\"아, {name}! 우리 앞으로도 계속 보려면 연락처는 있어야겠지? 여기 번호 찍어!\"",
         character: "assets/images/characters/dain_nomal.png",
         night: true,
         choices: [
-            { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "day2_dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
-            { text: "음.. 나중에 기회 되면 알려줄게.", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -20 } } }
+            { text: "응, 당연하지! 여기 내 번호야.", next: "day2_dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
+            { text: "우리 어차피 내일 학교에서 볼 거잖아?", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -20 } } }
         ]
     },
     "day2_dain_contact_success": {
         name: "다인",
-        text: "\"연락처 전송 완료! 내가 맛있는 곳 찾으면 바로 메시지 보낼 테니까 대기하고 있어!\"",
+        text: "\"오케이, 저장 완료! 이제 심심할 때마다 너한테 연락한다? 각오하고 있어!!\"",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
         stats: { Dain: { affinity: 8 } },
@@ -480,8 +480,8 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_contact_fail": {
         name: "다인",
-        text: "\"뭐야~ 튕기는 거야? 알았어, 알았어. 내가 더 노력해서 네 번호 따고 만다!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        text: "\"참 나, 비싸게 구네? 알았어! 내일 체육관 오기만 해봐, 번호 줄 때까지 안 보내줄 거니까!\"",
+        character: "assets/images/characters/dain_pout.png",
         night: true,
         next: "day2_end"
     },
