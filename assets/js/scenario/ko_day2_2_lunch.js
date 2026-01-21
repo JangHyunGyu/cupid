@@ -778,7 +778,7 @@ Object.assign(SCENARIO[2], {
                 next: "nurse_contact_home_fail_high",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success_high" }
+                    { minAffinity: 40, next: "nurse_contact_home_success_high" }
                 ]
             }
         ]
@@ -796,7 +796,7 @@ Object.assign(SCENARIO[2], {
                 next: "nurse_contact_home_fail_low",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success_low" }
+                    { minAffinity: 40, next: "nurse_contact_home_success_low" }
                 ]
             }
         ]
@@ -814,7 +814,7 @@ Object.assign(SCENARIO[2], {
                 next: "nurse_contact_home_fail_high",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success_high" }
+                    { minAffinity: 40, next: "nurse_contact_home_success_high" }
                 ]
             }
         ]
@@ -832,7 +832,7 @@ Object.assign(SCENARIO[2], {
                 next: "nurse_contact_home_fail_low",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success_low" }
+                    { minAffinity: 40, next: "nurse_contact_home_success_low" }
                 ]
             }
         ]
@@ -858,7 +858,7 @@ Object.assign(SCENARIO[2], {
                 next: "nurse_contact_home_fail",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                    { minAffinity: 40, next: "nurse_contact_home_success" }
                 ]
             }
         ]
@@ -876,7 +876,7 @@ Object.assign(SCENARIO[2], {
                 next: "nurse_contact_home_fail",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 50, next: "nurse_contact_home_success" }
+                    { minAffinity: 40, next: "nurse_contact_home_success" }
                 ]
             },
             { text: "아, 괜찮아요.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -20 } } }
@@ -886,7 +886,7 @@ Object.assign(SCENARIO[2], {
         name: "보건선생님",
         text: "(그녀가 내 손등에 자신의 번호를 적어주며 윙크한다.) \"후훗, 자 이 번호... 잃어버리면 안 돼? 오늘 밤, 네가 어떤 메시지를 보낼지 벌써부터 기대되네.\"",
         character: "assets/images/characters/nurse_normal.png",
-        stats: { Nurse: { affinity: 25 } },
+        stats: { Nurse: { affinity: 15 } },
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_success_low": {
@@ -907,7 +907,7 @@ Object.assign(SCENARIO[2], {
         name: "보건선생님",
         text: "(그녀가 내 목을 감싸 안으며 귓가에 뜨거운 숨결을 내뱉는다.) \"어머... {name}. 정말 참을성이 없구나? 좋아, 오늘 밤... 선생님 비밀의 방으로 널 초대할게. 단둘이서... 아주 깊은 이야기를 나눠보자.\"",
         character: "assets/images/characters/nurse_normal.png",
-        stats: { Nurse: { affinity: 30 } },
+        stats: { Nurse: { affinity: 20 } },
         setFlags: ["has_number_nurse", "has_any_contact", "invited_nurse_home"],
         next: "day2_afternoon_nurse_skip"
     },
