@@ -30,7 +30,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_teacher_2": {
         name: "Teacher",
         text: "\"Oh, {name}! Did you have a good lunch? I was just about to start mine.\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         next: "day2_lunch_teacher_3"
     },
     "day2_lunch_teacher_3": {
@@ -58,7 +58,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_teacher_pass": {
         name: "Teacher",
         text: "\"Is that so? Well, thank you for stopping by. Have a great lunch break!\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_end": {
@@ -563,13 +563,13 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(I visit the nurse's office. She greeted me with a seductive smile.)",
         background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_2"
     },
     "day2_lunch_nurse_2": {
         name: "Nurse",
         text: "\"{name}! Tired already? You can rest here as long as you want.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         choices: [
             { text: "Can I take a short nap here?", next: "day2_lunch_nurse_sleep", stats: { Nurse: { affinity: 10 } } },
             { text: "I just wanted to see you for a moment.", next: "day2_lunch_nurse_talk", stats: { Nurse: { affinity: 5 } } }
@@ -578,13 +578,13 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_nurse_sleep": {
         name: "Nurse",
         text: "\"Of course. Lie down. I'll make sure no one disturbs your sleep.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_end"
     },
     "day2_lunch_nurse_talk": {
         name: "Nurse",
         text: "\"Hehe, you're so sweet. Want to talk to me instead of resting? That's fine too.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_end"
     },
     "day2_lunch_nurse_end": {

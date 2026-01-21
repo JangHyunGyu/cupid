@@ -82,26 +82,26 @@ Object.assign(SCENARIO[2], {
     "day2_meet_nurse_standard": {
         name: "보건선생님",
         text: "\"어머, {name}! 좋은 아침이야. 오늘따라 기운이 넘쳐 보이네?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_nurse_talk"
     },
     "day2_meet_nurse_high": {
         name: "보건선생님",
         text: "(선생님이 나를 보자마자 다가와 옷매무새를 다듬어준다.) \"우리 전학생, 밤새 무슨 꿈을 꿨길래 이렇게 반짝거릴까? 선생님은 네 생각 하느라 조금 늦잠 잤는데 말이야.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 5 } },
         next: "day2_nurse_talk"
     },
     "day2_meet_nurse_low": {
         name: "보건선생님",
         text: "(선생님이 나를 보자마자 한숨을 내쉬며 고개를 돌린다.) \"어머, 전학생... 아침부터 얼굴 보기가 참 힘드네. 볼일 없으면 교실로 가 줄래?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk": {
         name: "보건선생님",
         text: "(선생님이 나에게 다가와 살짝 윙크를 한다.)",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "day2_nurse_talk_msg", condition: "sent_msg_day1_nurse" },
             { next: "day2_nurse_talk_has_number", condition: "has_number_nurse" },
@@ -111,19 +111,19 @@ Object.assign(SCENARIO[2], {
     "day2_nurse_talk_msg": {
         name: "보건선생님",
         text: "\"어젯밤에 메시지 보내준 거, 정말 귀엽더라. 덕분에 선생님도 기분 좋게 잠들었어. 오늘도 아프면 언제든 보건실로 오렴.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk_has_number": {
         name: "보건선생님",
         text: "\"어젯밤에 내 생각 하느라 잠 못 이룬 건 아니지? 후훗, 농담이야. 오늘도 아프면 언제든 보건실로 오렴.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk_no_number": {
         name: "보건선생님",
         text: "\"전학 이틀째인데 벌써 학교에 익숙해진 모양이네. 오늘도 무리하지 말고, 힘들면 보건실로 놀러 오렴.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_meet_seoyeon": {
@@ -248,7 +248,7 @@ Object.assign(SCENARIO[2], {
     "day2_meet_teacher": {
         name: "담임선생님",
         text: "\"어라, {name} 아니니? 전학 이틀째인데 벌써 학교에 적응한 모양이구나. 일찍 오는 모습이 보기 좋다.\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         next: "day2_teacher_free_talk"
     },
     "day2_teacher_free_talk": {
@@ -257,7 +257,7 @@ Object.assign(SCENARIO[2], {
         text: "\"수업 시작 전까지 시간이 좀 남았네. 나한테 궁금한 거라도 있니?\"",
         context: "교문 앞에서 담임선생님과 마주쳐 교실로 함께 걸어가는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 선생님이 비상연락망을 위해 주인공의 연락처를 물어보는 상황으로 이어집니다. 대화의 마지막 턴에만 연락처를 물어볼 타이밍을 잡거나, 공적인 용무가 있다는 뉘앙스를 풍겨주세요.",
         personality: "공과 사가 뚜렷하지만 주인공에게는 은근히 약한 모습을 보이는 담임선생님.",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         affinityChar: "Teacher",
         affinityBranches: [
             { minAffinity: 20, next: "day2_teacher_contact_ask_high" },
@@ -287,7 +287,7 @@ Object.assign(SCENARIO[2], {
     "day2_teacher_contact_ask": {
         name: "나",
         text: "(선생님과 이런저런 이야기를 나누며 교실로 걸어갔다. 선생님은 비상연락망 작성을 위해 내 연락처가 필요하다며 번호를 물어보셨다.)",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         choices: [
             { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success_normal", setFlags: ["has_number_teacher", "has_any_contact"] },
             { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom" }
@@ -310,7 +310,7 @@ Object.assign(SCENARIO[2], {
     "day2_teacher_contact_success_normal": {
         name: "담임선생님",
         text: "\"고마워. 그럼 무슨 일 있으면 연락할게. 자, 이제 교실로 가자.\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         stats: { Teacher: { affinity: 10 } },
         next: "day2_classroom"
     },

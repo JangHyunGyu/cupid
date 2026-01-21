@@ -494,14 +494,14 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(Feeling a bit of a headache, I headed to the nurse's office. When I opened the door, a teacher of mature aura greeted me along with the faint scent of aroma.)",
         background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         setFlag: "metNurse",
         next: "nurse_intro"
     },
     "nurse_intro": {
         name: "Nurse",
         text: "\"Oh my, a cute transfer student? Are you here because you're hurt, or... are you here to see me?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "nurse_name_share"
     },
     "nurse_name_share": {
@@ -516,7 +516,7 @@ Object.assign(SCENARIO[1], {
         text: "\"Big sis... I mean, teacher will make you all better. If you're curious about anything else, feel free to ask.\"",
         context: "Conversing with the nurse whom you just met in the nurse's office. She treats you very attractively and playfully. At the end of the conversation, have her see you off, saying it's time for class.",
         personality: "Mature and relaxed 'big sis' style. Provocative yet kind.",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "after_school_start"
     },
     "lunch_store": {
@@ -528,7 +528,7 @@ Object.assign(SCENARIO[1], {
     "lunch_store_teacher": {
         name: "Homeroom Teacher",
         text: "\"Oh, sorry! ...Wait, isn't that {name}? You like that bread too? Hehe, enjoy!\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         stats: { Teacher: { affinity: 5 } },
         next: "after_school_start"
     },

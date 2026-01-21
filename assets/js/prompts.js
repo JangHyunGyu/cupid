@@ -91,26 +91,26 @@ window.CHARACTER_EXPRESSIONS = {
         "pout": "assets/images/characters/dain_pout.png"
     },
     "담임선생님": {
-        "normal": "assets/images/characters/teacher.png",
+        "normal": "assets/images/characters/teacher_normal.png",
         "angry": "assets/images/characters/teacher_angry.png",
         "shy": "assets/images/characters/teacher_shy.png",
         "sad": "assets/images/characters/teacher_sad.png",
         "smile": "assets/images/characters/teacher_smile.png"
     },
     "Teacher": {
-        "normal": "assets/images/characters/teacher.png",
+        "normal": "assets/images/characters/teacher_normal.png",
         "angry": "assets/images/characters/teacher_angry.png",
         "shy": "assets/images/characters/teacher_shy.png",
         "sad": "assets/images/characters/teacher_sad.png",
         "smile": "assets/images/characters/teacher_smile.png"
     },
     "보건선생님": {
-        "normal": "assets/images/characters/nurse.png",
+        "normal": "assets/images/characters/nurse_normal.png",
         "angry": "assets/images/characters/nurse_angry.png",
         "shy": "assets/images/characters/nurse_shy.png"
     },
     "Nurse": {
-        "normal": "assets/images/characters/nurse.png",
+        "normal": "assets/images/characters/nurse_normal.png",
         "angry": "assets/images/characters/nurse_angry.png",
         "shy": "assets/images/characters/nurse_shy.png"
     }

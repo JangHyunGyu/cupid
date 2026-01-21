@@ -61,14 +61,14 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_2": {
         name: "보건선생님",
         text: "\"어머, 정말로 왔네? 어서 들어오렴. 밖이 많이 춥지?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day2_night_nurse_home_3"
     },
     "day2_night_nurse_home_3": {
         name: "보건선생님",
         text: "\"자, 여기 앉으렴. 따뜻한 차 한 잔 줄게. 우리 전학생이랑 단둘이 있으니까... 왠지 기분이 묘하네?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day2_night_nurse_home_4"
     },
@@ -347,7 +347,7 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "보건선생님",
         text: "(매혹적인 답장.) '어머, 벌써 내 생각 하는 거니? 후훗, 오늘 푹 자고 내일 또 얼굴 보자. 잘 자요, {name}.'",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황입니다. 보건선생님은 주인공의 메시지에 장난스럽고 매혹적인 답장을 보낸 상태입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화의 마지막 턴에만 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
@@ -363,7 +363,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_nurse_reply_high": {
         name: "나",
         text: "(선생님의 매혹적인 말투가 귓가에 맴도는 것 같다. 화면 너머로 그녀의 미소가 보이는 듯해 심장이 떨린다. 내일은 무슨 일이 있어도 보건실에 들러야겠다.)",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -371,7 +371,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_nurse_reply_normal": {
         name: "나",
         text: "(선생님과 무사히 연락을 마쳤다. 내일 학교에서 뵈면 반갑게 인사드려야겠다.)",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -379,7 +379,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_nurse_reply_low": {
         name: "나",
         text: "(선생님의 답장이 너무나 사무적이다. 단순히 학생 중 한 명으로만 대하시는 것 같아 씁쓸한 기분이 든다.)",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -396,7 +396,7 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "담임선생님",
         text: "(조금 늦게 도착한 답장.) '어머, {name}. 이 시간에 메시지라니 조금 놀랐네. 그래도 걱정해줘서 고마워. 너도 푹 자고 내일 지각하지 마렴.'",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황입니다. 담임선생님은 주인공의 메시지에 조금 당황하면서도 고마워하며 답장을 보낸 상태입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화의 마지막 턴에만 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
@@ -412,7 +412,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_teacher_reply_high": {
         name: "나",
         text: "(선생님의 다정한 답장에 마음이 따뜻해진다. 학생으로서가 아니라, 조금은 한 명의 인격체로 존중받는 기분이 들어 내일 학교 가는 길이 기다려진다.)",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -420,7 +420,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_teacher_reply_normal": {
         name: "나",
         text: "(선생님과 무사히 연락을 마쳤다. 내일은 지각하지 않도록 주의해야겠다.)",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -428,7 +428,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_teacher_reply_low": {
         name: "나",
         text: "(선생님의 답장이 짧고 엄격하다. 사적인 시간에 연락한 것이 큰 실례였던 것 같아 후회가 밀려온다.)",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
