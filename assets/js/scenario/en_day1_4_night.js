@@ -1,4 +1,4 @@
-if (typeof SCENARIO === 'undefined') {
+﻿if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 if (!SCENARIO[1]) {

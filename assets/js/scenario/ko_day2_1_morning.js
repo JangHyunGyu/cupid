@@ -1,4 +1,4 @@
-if (typeof SCENARIO === 'undefined') {
+﻿if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 if (!SCENARIO[2]) {
@@ -53,7 +53,7 @@ Object.assign(SCENARIO[2], {
     "day2_meet_yuna": {
         name: "나",
         text: "(교문 옆 커다란 느티나무 아래, 유나가 무심한 표정으로 서 있는 것이 보인다. 그녀는 책을 덮고 나를 가만히 바라본다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         branches: [
             { next: "day2_yuna_talk_msg", condition: "sent_msg_day1_yuna" },
             { next: "day2_yuna_talk" }
@@ -68,7 +68,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk": {
         name: "유나",
         text: "\"...안녕. 오늘도 그 '빛'은 여전하네. 다행이야. 이따가... 쪽지 확인해봐.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_classroom"
     },
     "day2_meet_nurse": {
@@ -137,7 +137,7 @@ Object.assign(SCENARIO[2], {
     "day2_meet_seoyeon_standard": {
         name: "서연",
         text: "\"안녕, {name}! 잘 잤니? 오늘도 일찍 왔구나!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "day2_seoyeon_talk"
     },
     "day2_meet_seoyeon_high": {
@@ -156,7 +156,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_talk": {
         name: "서연",
         text: "(서연이는 나와 눈을 맞추며 살짝 미소 짓는다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         branches: [
             { next: "day2_seoyeon_talk_msg", condition: "sent_msg_day1_seyoun" },
             { next: "day2_seoyeon_talk_has_number", condition: "has_number_seyoun" },
@@ -193,13 +193,13 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_normal": {
         name: "서연",
         text: "\"그렇지? 전학 첫날이라 많이 피곤했을 거야. 자, 오늘도 힘내서 학교생활 해보자!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "day2_classroom"
     },
     "day2_meet_dain": {
         name: "다인",
         text: "\"어어, {name}! 좋은 아침! 오늘따라 일찍 왔네?\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         next: "day2_dain_talk"
     },
     "day2_dain_talk": {
@@ -242,7 +242,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_normal": {
         name: "다인",
         text: "\"에이~ 엄살은! 학교생활 적응하려면 체력이 국력이라구! 자, 어서 교실로 가자!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         next: "day2_classroom"
     },
     "day2_meet_teacher": {

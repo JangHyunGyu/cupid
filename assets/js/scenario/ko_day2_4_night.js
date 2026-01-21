@@ -1,4 +1,4 @@
-if (typeof SCENARIO === 'undefined') {
+﻿if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 if (!SCENARIO[2]) {
@@ -130,7 +130,7 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "서연",
         text: "(징~ 즉각적인 답장.) '나도 정말 즐거웠어! {name} 덕분에 든든해. 내일 점심 같이 먹는 거 잊지 마! 잘 자요.'",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황입니다. 서연이는 주인공의 메시지에 기뻐하며 답장을 보낸 상태입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화의 마지막 턴에만 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
@@ -146,7 +146,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_seyoun_reply_high": {
         name: "나",
         text: "(서연이와의 대화는 언제나 즐겁다. 그녀의 다정한 말투에서 진심이 느껴져 가방을 챙기는 손길이 가볍다. 내일 점심시간이 벌써부터 기다려진다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -154,7 +154,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_seyoun_reply_normal": {
         name: "나",
         text: "(서연이와 무난하게 대화를 마쳤다. 내일 점심 약속을 잊지 말아야겠다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -162,7 +162,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_seyoun_reply_low": {
         name: "나",
         text: "(서연이의 반응이 평소보다 조금 사무적으로 느껴진다. 내가 무언가 실수한 걸까? 내일은 좀 더 조심스럽게 다가가야겠다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -195,7 +195,7 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "유나",
         text: "(잠시 후 도착한 답장.) '...응. 네가 이해해줄 줄 알았어. 꿈속에서도 지켜보고 있을게, {name}.'",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황입니다. 유나는 주인공의 메시지에 짧지만 깊은 여운이 담긴 답장을 보낸 상태입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화의 마지막 턴에만 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
@@ -211,7 +211,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_yuna_reply_high": {
         name: "나",
         text: "(유나의 신비로운 분위기에 점점 빠져드는 것 같다. '꿈속에서도 지켜보겠다'는 그녀의 말이 무섭기보다는 묘하게 안심이 된다. 정말로 꿈에서 그녀를 만날 수 있을 것만 같다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -219,7 +219,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_yuna_reply_normal": {
         name: "나",
         text: "(유나와의 대화는 여전히 난해하지만, 조금은 가까워진 기분이다. 그녀가 말한 비밀들이 머릿속을 맴돈다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -227,7 +227,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_yuna_reply_low": {
         name: "나",
         text: "(유나의 태도가 너무나 차갑고 기괴하다. 그녀의 세계에 발을 들이는 것이 정말 옳은 선택인지, 한기가 느껴진다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -282,7 +282,7 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "다인",
         text: "(활기찬 답장.) '당연하지! 내가 이길 거니까 지갑 준비해둬! 하하, 잘 자, {name}!'",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         silhouette: true,
         context: "밤, 각자의 집에서 스마트폰 메시지로 대화를 나누는 상황입니다. 다인이는 주인공의 메시지에 활기차게 답장을 보낸 상태입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 주인공이 내일을 기약하며 잠에 드는 상황으로 이어집니다. 대화의 마지막 턴에만 이제 늦었으니 잘 자라는 인사를 하거나, 내일 학교에서 보자고 하며 자연스럽게 대화를 종료해 주세요.",
         night: true,
@@ -298,7 +298,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_dain_reply_high": {
         name: "나",
         text: "(다인이의 활기찬 에너지 덕분에 나까지 기운이 난다. '지갑 준비해둬'라며 장난치는 모습이 눈앞에 선하다. 내일 떡볶이 내기는 그녀를 위해서라도 꼭 져줘야 할까?)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"
@@ -306,7 +306,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_dain_reply_normal": {
         name: "나",
         text: "(다인이와 즐겁게 대화를 마쳤다. 내일 떡볶이 내기에서 지지 않도록 마음의 준비를 해야겠다.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         silhouette: true,
         night: true,
         next: "day2_night_home_check_contact"

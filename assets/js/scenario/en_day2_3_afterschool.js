@@ -52,7 +52,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Student Council Room. I started helping Seoyeon organize documents. She kindly explains the work to me, a newcomer.)",
         background: "assets/images/background/student_room.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         next: "day2_after_seoyeon_work"
     },
@@ -60,7 +60,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Lost in work with Seoyeon, the world outside has turned dark. The room is filled only with our breathing and the sound of paper.)",
         background: "assets/images/background/student_room.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         night: true,
         next: "day2_after_seoyeon_2"
     },
@@ -74,7 +74,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_seoyeon_3": {
         name: "Me",
         text: "(Seoyeon stretches with a soft smile. She looks tired, but her eyes are clearer and more beautiful than ever.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         night: true,
         choices: [
             { text: "Seoyeon, why are you always so sincere and hardworking?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 3 } } },
@@ -126,7 +126,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_home_low": {
         name: "Seoyeon",
         text: "\"Oh.. it's okay, I can go alone. Thanks for helping today though.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         night: true,
         stats: { Seoyeon: { affinity: -8 } },
         next: "day2_seoyeon_night_talk"
@@ -185,7 +185,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_contact_fail": {
         name: "Seoyeon",
         text: "\"Oh... right! I asked too suddenly, didn't I? Sorry. See you at school tomorrow!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         night: true,
         stats: { Seoyeon: { affinity: -10 } },
         next: "day2_end"
@@ -194,7 +194,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Library Annex. As I enter the old building, a cool draft of air surrounds me.)",
         background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_met", condition: "metYuna" },
@@ -204,7 +204,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_met": {
         name: "Yuna",
         text: "\"You're here. Come, follow me. I have something to show you.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
@@ -214,7 +214,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_new": {
         name: "???",
         text: "\"You... you came because you're curious about me, right? This school hides a very deep secret.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         setFlag: "metYuna",
         next: "day2_after_yuna_new_name_ask"
@@ -222,7 +222,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_new_name_ask": {
         name: "Yuna",
         text: "\"I'm Yuna. What's your name?\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "day2_after_yuna_new_name_share"
     },
@@ -264,14 +264,14 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_3_pre_again": {
         name: "Yuna",
         text: "\"Those symbols we saw earlier... what do you think now? Don't they look even more eerie at night?\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         night: true,
         next: "day2_after_yuna_3"
     },
     "day2_after_yuna_3_pre_new": {
         name: "Yuna",
         text: "\"Look, {name}. These patterns on the wall... they match the secrets of this school I've been tracking.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         night: true,
         next: "day2_after_yuna_3"
     },
@@ -299,7 +299,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_meaning": {
         name: "Yuna",
         text: "\"Surveillance... or protection. I still don't know who it's for.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         night: true,
         next: "day2_yuna_night_talk"
     },
@@ -321,7 +321,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_scary_low": {
         name: "Yuna",
         text: "(Yuna coldly pulls her hand away.) \"...Why are you grabbing my hand? Scared? You're quite bold for a coward. Leave alone if you want.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         night: true,
         stats: { Yuna: { affinity: -10 } },
         next: "day2_yuna_night_talk"
@@ -347,7 +347,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_contact_ask": {
         name: "Yuna",
         text: "\"If we're sharing secrets... we need a way to reach each other. Leave your number here.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         night: true,
         choices: [
             { text: "Sure. I want to know everything about you.", next: "day2_yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
@@ -365,7 +365,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_contact_fail": {
         name: "Yuna",
         text: "\"...Fine. I won't force you. But remember, opportunities are rare.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         night: true,
         next: "day2_end"
     },
@@ -373,7 +373,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Opening the gym door, the energetic shouts and the sound of volleyballs bouncing greet me.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         sunset: true,
         branches: [
             { next: "day2_after_dain_met", condition: "metDain" },
@@ -383,7 +383,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_dain_met": {
         name: "Dain",
         text: "\"Oh! {name}! Perfect timing. Can you help me with practice?\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         sunset: true,
         next: "day2_after_dain_practice"
     },
@@ -405,7 +405,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_dain_new_name_ask": {
         name: "???",
         text: "\"I'm Dain Jung from Class 2-3! What's your name?\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         sunset: true,
         next: "day2_after_dain_new_name_share"
     },
@@ -419,7 +419,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_dain_3": {
         name: "Me",
         text: "(Dain wipes her sweat with a towel and hands me a cold drink.)",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         night: true,
         choices: [
             { text: "It's because you gave me such great tosses.", next: "day2_dain_praise", stats: { Dain: { affinity: 5 } } },
@@ -463,7 +463,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_contact_ask": {
         name: "Dain",
         text: "\"Hey, {name}! If we're going on food tours, we'll need each other's numbers, right? Punch it in!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         night: true,
         choices: [
             { text: "Sure! It'll be fun to explore food places with you.", next: "day2_dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
@@ -481,7 +481,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_contact_fail": {
         name: "Dain",
         text: "\"What? Playing coy? Fine, fine. I'll work harder until I get your number!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         night: true,
         next: "day2_end"
     },

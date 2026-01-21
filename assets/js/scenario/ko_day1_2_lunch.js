@@ -51,7 +51,7 @@ Object.assign(SCENARIO[1], {
     "lunch_seoyeon_normal_branch": {
         name: "서연",
         text: "(서연에게 다가가자 그녀가 생긋 웃으며 고개를 끄덕인다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         setFlag: "metSeoyeon",
         branches: [
             { next: "lunch_seoyeon_2_study", condition: "personality_study" },
@@ -62,7 +62,7 @@ Object.assign(SCENARIO[1], {
     "lunch_seoyeon_2_study": {
         name: "서연",
         text: "\"전학생, 조금은 친해진 기분이네? 마침 너를 찾으려던 참이었어. 우리 옥상에서 같이 먹을래?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "웅! 서연이랑 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "미안, 오늘은 혼자 있고 싶네.", next: "lunch_alone", stats: { Seoyeon: { affinity: -10 } } },
@@ -82,7 +82,7 @@ Object.assign(SCENARIO[1], {
     "lunch_seoyeon_2_normal": {
         name: "서연",
         text: "\"마침 너를 찾으려던 참이었어! 우리 옥상 비밀 장소에서 같이 먹을래?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "웅! 서연이랑 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "미안, 오늘은 혼자 있고 싶네.", next: "lunch_alone", stats: { Seoyeon: { affinity: -10 } } },
@@ -121,21 +121,21 @@ Object.assign(SCENARIO[1], {
     "rooftop_talk_main": {
         text: "(함께 도시락을 먹으며 대화를 나눈다. 그녀가 수줍게 웃는데, 가슴이 두근거린다.)",
         background: "assets/images/background/top_school.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_1_2_2"
     },
     "rooftop_1_2_2": {
         name: "서연",
         text: "\"맛있게 먹어줘서 기뻐! 아, 그리고 이것도 먹어봐. 이건 특별히 신경 써서 준비한 거야.\"",
         background: "assets/images/background/top_school.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_1_2_3"
     },
     "rooftop_1_2_3": {
         name: "서연",
         text: "\"특히 이 문어 소시지는 내 야심작이야! 너 하나 먹어볼래?\"",
         background: "assets/images/background/top_school.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "와, 정말 맛있어 보여! 서연이는 요리 천재구나.", next: "rooftop_talk_food", stats: { Seoyeon: { affinity: 3 } } },
             {
@@ -196,13 +196,13 @@ Object.assign(SCENARIO[1], {
     "rooftop_talk_thanks": {
         name: "서연",
         text: "(그녀가 미소를 지으며 내 입가에 묻은 소스를 닦아준다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_talk_thanks_2"
     },
     "rooftop_talk_thanks_2": {
         name: "서연",
         text: "\"고맙긴.. 나야말로 같이 먹어줘서 고마워. 혼자 먹는 것보다 훨씬 맛있는 것 같아. 앞으로도 종종 이렇게 같이 먹어줄래?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_2"
     },
     "rooftop_2": {
@@ -216,7 +216,7 @@ Object.assign(SCENARIO[1], {
     "rooftop_2_normal": {
         name: "서연",
         text: "(식사를 마치고 나란히 앉아 먼 하늘을 바라본다. 서연이가 조심스럽게 입을 연다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_2_2"
     },
     "rooftop_2_low": {
@@ -234,7 +234,7 @@ Object.assign(SCENARIO[1], {
     "rooftop_2_2": {
         name: "서연",
         text: "\"저기, {name}... 사실 나 오늘 너 처음 봤는데도 왠지 모르게 이야기를 참 편하게 하는 것 같아서 기뻐. 너는 어때?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_free_talk"
     },
     "rooftop_free_talk": {
@@ -337,7 +337,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(그녀가 한숨을 내쉬며 차갑게 대꾸한다.)",
         character: "assets/images/characters/seyoun_pout.png",
-        stats: { Seoyeon: { affinity: 1 } },
+        stats: { Seoyeon: { affinity: -5 } },
         next: "rooftop_kind_low_2"
     },
     "rooftop_kind_low_2": {
@@ -388,33 +388,33 @@ Object.assign(SCENARIO[1], {
     "rooftop_comfortable_normal": {
         name: "서연",
         text: "(그녀가 만족스러운 듯 고개를 끄덕인다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         stats: { Seoyeon: { affinity: 4 } },
         next: "rooftop_comfortable_normal_2"
     },
     "rooftop_comfortable_normal_2": {
         name: "서연",
         text: "\"편안하다니 다행이야. 나도 너랑 있으면 학생회장이라는 짐을 잠시 내려놓을 수 있는 것 같아. 고마워, {name}.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "seyoun_contact_exchange"
     },
     "rooftop_comfortable": {
         name: "서연",
         text: "(그녀가 만족스러운 듯 고개를 끄덕인다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_comfortable_2"
     },
     "rooftop_comfortable_2": {
         name: "서연",
         text: "\"편안하다니 다행이야. 나도 너랑 있으면 학생회장이라는 짐을 잠시 내려놓을 수 있는 것 같아. 고마워, {name}.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "seyoun_contact_exchange"
     },
     "seyoun_contact_exchange": {
         type: "free_talk",
         name: "서연",
         text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 스마트폰을 내민다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 15, next: "seyoun_contact_exchange_high" },
@@ -436,7 +436,7 @@ Object.assign(SCENARIO[1], {
     "seyoun_contact_exchange_normal": {
         name: "서연",
         text: "\"저기.. 혹시 연락처 교환해도 될까? 학생회 일로 연락할 일이 있을 수도 있어서..\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "물론이지! 나도 서연이랑 더 이야기하고 싶었어.", next: "seyoun_contact_success", setFlags: ["has_number_seyoun", "has_any_contact"] },
             { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -20 } } }
@@ -445,7 +445,7 @@ Object.assign(SCENARIO[1], {
     "seyoun_contact_exchange_low": {
         name: "서연",
         text: "(서연이가 내 눈치를 보며 말한다.) \"...저기, 혹시 학생회 일로 연락할 일 있을 수도 있는데, 번호 좀 알려줄 수 있어?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "응, 알겠어.", next: "seyoun_contact_success_cold", setFlags: ["has_number_seyoun", "has_any_contact"] },
             { text: "미안, 아직은 좀 이른 것 같아.", next: "seyoun_contact_fail", stats: { Seoyeon: { affinity: -20 } } }
@@ -454,7 +454,7 @@ Object.assign(SCENARIO[1], {
     "seyoun_contact_success_cold": {
         name: "서연",
         text: "(그녀가 번호를 저장한다.) \"고마워. 그럼... 필요할 때 연락할게.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         stats: { Seoyeon: { affinity: 2 } },
         next: "after_school_start"
     },
@@ -468,7 +468,7 @@ Object.assign(SCENARIO[1], {
     "seyoun_contact_fail": {
         name: "서연",
         text: "(그녀가 조금 시무룩한 표정을 짓더니 이내 애써 미소 지으며 고개를 끄덕인다.) \"아.. 응, 미안! 내가 너무 조급했나 봐. 천천히 친해지면 되지, 그치?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "after_school_start"
     },
     "lunch_alone": {
@@ -481,13 +481,13 @@ Object.assign(SCENARIO[1], {
     "alone_2": {
         name: "???",
         text: "(그녀가 읽고 있던 책에서 시선을 떼어 나를 빤히 바라본다. 그녀가 나지막한 목소리로 말을 건넨다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "alone_2_2"
     },
     "alone_2_2": {
         name: "???",
         text: "\"...길을 잃었니? 여긴 학생들이 잘 안 오는 곳인데. 용케 여기까지 찾아왔네.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "yuna_intro"
     },
     "yuna_intro": {
@@ -498,7 +498,7 @@ Object.assign(SCENARIO[1], {
     "yuna_intro_name_ask": {
         name: "???",
         text: "\"난 '유나'라고 해. 너는... 이름이 뭐야?\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "yuna_intro_name_share"
     },
     "yuna_intro_name_share": {
@@ -520,7 +520,7 @@ Object.assign(SCENARIO[1], {
         text: "\"...나한테 궁금한 거라도 있어? 아니면 이 학교에 대해 알고 싶은 거야?\"",
         context: "조용한 도서관 별관, 신비롭고 차가운 분위기의 유나와 처음 만난 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 유나가 자신이나 학교의 비밀에 대해 더 알고 싶은지 물어보는 상황으로 이어집니다. 대화의 마지막 턴에만 더 깊은 이야기를 나눌 준비가 되었는지 확인하는 태도를 보여주세요.",
         personality: "신비롭고 차가우며 비밀이 많은 소녀. 주인공에게 묘한 흥미를 느끼고 있음.",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 15, next: "yuna_choices_high" },
@@ -624,13 +624,13 @@ Object.assign(SCENARIO[1], {
     "yuna_scent_normal": {
         name: "유나",
         text: "(그녀가 한 걸음 다가와 나를 빤히 바라본다. 그녀가 쓸쓸한 표정으로 중얼거린다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "yuna_scent_normal_2"
     },
     "yuna_scent_normal_2": {
         name: "유나",
         text: "\"아니, 처음 봐. 하지만 그 눈동자 속에 담긴 '빛'... 참 탐나네. 이 학교의 무기력한 아이들과는 조금 달라 보여. 네가 앞으로 어떻게 변해갈지, 내가 계속 지켜봐도 될까?\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "after_school_start"
     },
 
@@ -735,7 +735,7 @@ Object.assign(SCENARIO[1], {
         name: "???",
         text: "(체육관 문을 열자, 한 소녀가 배구 연습을 하고 있었다. 그녀가 나를 발견하고는 환하게 웃으며 손을 흔든다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         setFlag: "metDain",
         branches: [
             { next: "lunch_dain_3_active", condition: "personality_active" },
@@ -746,14 +746,14 @@ Object.assign(SCENARIO[1], {
         name: "???",
         text: "\"에이, 거기 너! 아까 자기소개 때 봤어. 완전 텐션 높던데? 거기서 구경만 하지 말고 이리 와서 한판 붙자! 너 운동 좀 하게 생겼는데?\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         next: "dain_name_share"
     },
     "lunch_dain_3_normal": {
         name: "???",
         text: "\"에이, 거기 너! 거기서 구경만 하지 말고 이리 와서 한판 붙자! 너 운동 좀 하게 생겼는데?\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         next: "dain_name_share"
     },
     "dain_name_share": {
@@ -766,14 +766,14 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "\"{name}? 멋진 이름이네! 난 배구부 다인이야. 우리 학교에서 나보다 점프력 좋은 사람은 없으니까 긴장하라고!\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         next: "lunch_dain_gym_2"
     },
     "lunch_dain_gym_2": {
         name: "다인",
         text: "\"자, 여기가 내 구역이야! {name}, 준비됐어? 봐주지 않을 거니까 각오하라고!\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         setFlag: "metDain",
         choices: [
             { text: "좋아, 어디 한번 해보자!", next: "lunch_dain_play" },

@@ -93,7 +93,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_lunch_worry": {
         name: "서연",
         text: "\"괜찮아. 네가 맛있게 먹어주는 모습 보니까 피곤함이 싹 가시는 것 같아. 정말로.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         setFlag: "day2_ate_lunch_seoyeon",
         next: "day2_seoyeon_lunch_end"
     },
@@ -113,19 +113,19 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(도서관 별관 뒤뜰. 울창한 나무 그림자 아래, 유나가 마치 풍경의 일부처럼 서 있다.)",
         background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_talk"
     },
     "day2_yuna_talk": {
         name: "유나",
         text: "\"...왔구나. 쪽지 보고 진짜 올 줄은 몰랐는데.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_talk_2"
     },
     "day2_yuna_talk_2": {
         name: "유나",
         text: "(유나가 무표정한 얼굴로 나를 빤히 바라본다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_free_talk"
     },
     "day2_yuna_free_talk": {
@@ -134,7 +134,7 @@ Object.assign(SCENARIO[2], {
         text: "\"...나한테 궁금한 거라도 있어? 아니면 이 학교에 대해 더 알고 싶은 거야?\"",
         context: "조용한 도서관 별관 뒤뜰, 신비로운 분위기의 유나와 단둘이 대화를 나누는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 유나가 학교의 비밀에 대해 이야기하며 주인공에게만 보여주고 싶은 것이 있다고 제안하는 상황으로 이어집니다. 대화의 마지막 턴에만 비밀스러운 분위기를 조성하며 주인공의 호기심을 자극해 주세요.",
         personality: "신비롭고 차가우며 비밀이 많은 소녀. 주인공에게 묘한 흥미를 느끼고 있음.",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 20, next: "day2_yuna_talk_branch_high" },
@@ -171,7 +171,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_met_low": {
         name: "나",
         text: "(유나의 눈빛이 더욱 차가워졌다. 내 무례한 태도 때문에 진실을 감당할 수 없을 거라며 독설을 내뱉었지만, 어제 약속했으니 일단 따라오라고 했다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         choices: [
             { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret_low", stats: { Yuna: { affinity: 5 } } },
             { text: "비밀 같은 건 관심 없어. 그냥 너랑 이야기하고 싶어서 온 거야.", next: "day2_yuna_normal_low", stats: { Yuna: { affinity: 4 } } }
@@ -190,7 +190,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_new_low": {
         name: "나",
         text: "(유나의 눈빛이 더욱 차가워졌다. 내 무례한 태도 때문에 진실을 감당할 수 없을 거라며 독설을 내뱉었지만, 여기까지 왔으니 일단 따라오라고 했다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "metYuna",
         choices: [
             { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask_low", stats: { Yuna: { affinity: 5 } } },
@@ -208,7 +208,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_met_normal": {
         name: "나",
         text: "(유나는 어제 말했던 학교의 비밀에 대해 언급하며, 나에게만 보여주고 싶은 것이 있다고 말했다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         choices: [
             { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret_normal", stats: { Yuna: { affinity: 5 } } },
             { text: "비밀 같은 건 관심 없어. 그냥 너랑 이야기하고 싶어서 온 거야.", next: "day2_yuna_normal_normal", stats: { Yuna: { affinity: 4 } } }
@@ -217,7 +217,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_new_normal": {
         name: "나",
         text: "(유나는 내가 그녀의 정체를 궁금해할 거라며, 이 학교의 깊은 비밀을 나에게만 보여주겠다고 제안했다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "metYuna",
         choices: [
             { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask_normal", stats: { Yuna: { affinity: 5 } } },
@@ -239,7 +239,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_ask_low": {
         name: "유나",
         text: "(그녀가 쌀쌀맞게 묻는다.) \"...이름이라도 알아야 나중에 원망을 듣든 말든 할 거 아냐. 네 이름, 뭐라고 불러야 해?\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_new_name_share_low"
     },
     "day2_yuna_new_name_share_low": {
@@ -251,7 +251,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_ask_normal": {
         name: "유나",
         text: "\"...그러고 보니, 네 이름은 뭐야? 쪽지엔 내 이름만 적어두고 네 이름은 차마 못 적었거든.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_new_name_share_normal"
     },
     "day2_yuna_new_name_share_normal": {
@@ -281,14 +281,14 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_secret_low": {
         name: "유나",
         text: "(유나가 내 소매를 거칠게 잡아 끈다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "visitedWarehouseAtLunch",
         next: "day2_yuna_secret_2_low"
     },
     "day2_yuna_secret_2_low": {
         name: "유나",
         text: "\"그냥 구경이나 해. 네가 뭘 알겠냐마는... 여기까지 왔으니까 어쩔 수 없지. 방해만 하지 마.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         choices: [
             { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret_read_low", stats: { Yuna: { affinity: 5 } } },
             { text: "그만둘래. 너무 위험해 보여.", next: "day2_yuna_secret_stop_low", stats: { Yuna: { affinity: -20 } } }
@@ -347,7 +347,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_secret_why_low": {
         name: "유나",
         text: "\"네가 알아서 뭐 하게? 호기심은 고양이를 죽인다는 말도 몰라? 그냥 입 닥치고 구경이나 하든가, 아니면 꺼져.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
@@ -361,7 +361,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_secret_read_low": {
         name: "유나",
         text: "\"진짜 볼 거야? 후회하지 마. 네가 울고불고 매달려도 난 모르는 일이니까.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
@@ -375,7 +375,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_secret_stop_low": {
         name: "유나",
         text: "\"그럴 줄 알았어. 입만 살았지 실제론 아무것도 못 하는 겁쟁이. 다시는 내 앞에 나타나지 마.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
@@ -389,14 +389,14 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_normal_low": {
         name: "유나",
         text: "\"나랑 떠들러 여기까지 왔다고? 한심하네. 내 시간 낭비하지 말고 저리 비켜.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_normal_normal": {
         name: "유나",
         text: "\"...그래? 넌 참 이상한 애야. 다른 애들은 다들 무서워하는데. 좋아, 그럼 오늘은 그냥 이렇게 같이 있자.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
@@ -450,7 +450,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(다인이와 함께 매점으로 향했다. 쉬는 시간이라 그런지 매점 앞은 아이들로 북적거린다.)",
         background: "assets/images/background/store.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         next: "day2_dain_free_talk"
     },
     "day2_dain_free_talk": {
@@ -459,7 +459,7 @@ Object.assign(SCENARIO[2], {
         text: "\"와, 사람 진짜 많다! 그치? 기다리는 동안 나랑 수다나 떨자. 나한테 궁금한 거 없어?\"",
         context: "점심시간, 학생들로 북적이는 학교 매점 앞, 다인과 함께 간식을 사기 위해 줄을 서서 대화를 나누는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 매점에서 간식을 고르는 상황으로 이어집니다. 대화의 마지막 턴에만 이제 우리 차례가 다 되어 간다거나, 무엇을 먹을지 결정하자는 등의 이야기를 하며 자연스럽게 다음 상황으로 유도해 주세요.",
         personality: "털털하고 시원시원한 성격의 배구부 에이스. 주인공과 함께 있는 시간을 즐거워함.",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         affinityChar: "Dain",
         affinityBranches: [
             { minAffinity: 25, next: "day2_dain_store_choices_high" },
@@ -536,7 +536,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store_rooftop_normal": {
         name: "다인",
         text: "\"옥상? 오, 그것도 좋지! 시원한 바람 맞으면서 먹으면 더 맛있겠다. 좋아, 얼른 빵만 사서 올라가자!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },
@@ -558,7 +558,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store_race_normal": {
         name: "다인",
         text: "\"오호! 역시 내 파트너답다! 좋아, 누가 먼저 낚나 내기하자! 지는 사람이 음료수 쏘기!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         setFlag: "day2_met_dain_lunch",
         next: "day2_dain_lunch_end"
     },

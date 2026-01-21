@@ -107,7 +107,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(I open the student council room door. Seoyeon is buried in paperwork.)",
         background: "assets/images/background/student_room.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         next: "after_seoyeon_2"
     },
@@ -122,7 +122,7 @@ Object.assign(SCENARIO[1], {
     "after_seoyeon_3_standard": {
         name: "Seoyeon",
         text: "\"Oh? {name}! You're still here? Were you... waiting for me?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         choices: [
             { text: "I wanted to go home together. Need help?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
@@ -162,7 +162,7 @@ Object.assign(SCENARIO[1], {
     "after_seoyeon_worry": {
         name: "Seoyeon",
         text: "\"Hehe, thanks for worrying. I'm almost done, so wait a bit. We'll leave together!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         next: "after_seoyeon_finish"
     },
@@ -196,7 +196,7 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(I explore the library annex and see Yuna reading. She seems even more ethereal under the sunset.)",
         background: "assets/images/background/lib_room.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         setFlag: "metYuna",
         next: "after_yuna_2"
@@ -205,14 +205,14 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(I find Yuna in the library. The setting sun casts a long shadow over her book.)",
         background: "assets/images/background/lib_room.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "after_yuna_2"
     },
     "after_yuna_2": {
         name: "Me",
         text: "(What should I do? I don't want to disturb her focus.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         choices: [
             { text: "Sit quietly and read next to her.", next: "after_yuna_quiet", stats: { Yuna: { affinity: 10 } } },

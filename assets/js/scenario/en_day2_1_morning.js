@@ -53,7 +53,7 @@ Object.assign(SCENARIO[2], {
     "day2_meet_yuna": {
         name: "Me",
         text: "(Yuna is standing under the large zelkova tree, her expression as calm as ever. She closes her book and Gazes at me.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         branches: [
             { next: "day2_yuna_talk_msg", condition: "sent_msg_day1_yuna" },
             { next: "day2_yuna_talk" }
@@ -68,7 +68,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk": {
         name: "Yuna",
         text: "\"...Hi. That 'light' around you is still there today. I'm glad. Later... check the note on your desk.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_classroom"
     },
     "day2_meet_nurse": {
@@ -137,7 +137,7 @@ Object.assign(SCENARIO[2], {
     "day2_meet_seoyeon_standard": {
         name: "Seoyeon",
         text: "\"Morning, {name}! Did you sleep well? You're early again!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "day2_seoyeon_talk"
     },
     "day2_meet_seoyeon_high": {
@@ -156,7 +156,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_talk": {
         name: "Seoyeon",
         text: "(She catches my eye and offers a warm, shy smile.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         branches: [
             { next: "day2_seoyeon_talk_msg", condition: "sent_msg_day1_seyoun" },
             { next: "day2_seoyeon_talk_has_number", condition: "has_number_seyoun" },
@@ -193,13 +193,13 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_normal": {
         name: "Seoyeon",
         text: "\"I bet. You must have been exhausted. Well, let's make today even better than yesterday!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "day2_classroom"
     },
     "day2_meet_dain": {
         name: "Dain",
         text: "\"Yo, {name}! Good morning! You're surprisingly early today!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         next: "day2_dain_talk"
     },
     "day2_dain_talk": {
@@ -242,7 +242,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_normal": {
         name: "Dain",
         text: "\"Aw, come on! You need stamina to survive this school! Now, let's get to class!\"",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         next: "day2_classroom"
     },
     "day2_meet_teacher": {

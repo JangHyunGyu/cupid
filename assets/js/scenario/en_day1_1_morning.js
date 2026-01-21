@@ -33,13 +33,13 @@ Object.assign(SCENARIO[1], {
     "start_4": {
         name: "???",
         text: "\"Hello? I haven't seen you before. Are you the new student joining us today?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "intro_1"
     },
     "intro_1": {
         name: "Me",
         text: "(A girl with a bright smile approached me. A sweet scent of shampoo drifted by.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "intro_2"
     },
     "intro_2": {
@@ -79,7 +79,7 @@ Object.assign(SCENARIO[1], {
     "path_silent_1": {
         name: "Seoyeon",
         text: "(She leaned in close, her eyes sparkling.) \"Hmm? What's wrong? Fallen for me already? Hehe.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_1"
     },
     "hallway_1": {
@@ -92,13 +92,13 @@ Object.assign(SCENARIO[1], {
     "hallway_2": {
         name: "Seoyeon",
         text: "\"This is the hallway leading to the classrooms. It's usually quiet during classes, but very lively during breaks.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_talk_choice"
     },
     "hallway_talk_choice": {
         name: "Seoyeon",
         text: "\"Any questions so far? I'm here to help, so don't be shy.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "I'm curious about you, Seoyeon.", next: "hallway_talk_about_seoyeon", stats: { Seoyeon: { affinity: 10 } } },
             { text: "Tell me more about the school rules.", next: "hallway_talk_rules", stats: { Seoyeon: { affinity: 5 } } },
@@ -115,7 +115,7 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_rules": {
         name: "Seoyeon",
         text: "\"Rules? Well, just don't be late and be nice to everyone. You'll do fine!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_finish"
     },
     "hallway_talk_quick": {
@@ -127,7 +127,7 @@ Object.assign(SCENARIO[1], {
     "hallway_finish": {
         name: "Seoyeon",
         text: "\"Alright, we're almost there. The teacher's office is just around the corner.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "teacher_office_start"
     },
     "teacher_office_start": {
@@ -136,7 +136,7 @@ Object.assign(SCENARIO[1], {
         text: "\"Oh, we've shared names but haven't really talked. Anything you're curious about? Ask me anything!\"",
         context: "Walking down the school hallway with the transfer student protagonist. Keep the conversation light. Continue until finished. At the final turn, suggest moving on with the tour.",
         personality: "Kind, friendly, and responsible student council president. Developing a crush on the protagonist.",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 15, next: "hallway_1_3_high" },
@@ -168,7 +168,7 @@ Object.assign(SCENARIO[1], {
     "hallway_1_3": {
         name: "Me",
         text: "(I started walking down the hallway with Seoyeon. She began to kindly explain various parts of the school.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "The school is lively. Do you do any club activities?", next: "hallway_talk_club_normal", stats: { Seoyeon: { affinity: 3 } } },
             { text: "The facilities are good, but it looks even better because of you.", next: "hallway_talk_flatter_normal", stats: { Seoyeon: { affinity: 5 } } },
@@ -207,7 +207,7 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_club_low": {
         name: "Seoyeon",
         text: "(She nods mechanically.) \"Yes. I'm in the student council and gardening club. Was that all? Let's move on.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         stats: { Seoyeon: { affinity: -2 } },
         next: "hallway_2"
     },
@@ -249,7 +249,7 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_listen_low": {
         name: "Seoyeon",
         text: "\"Did you get all that? Then let's move on. Don't just stand there dazed, follow me.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_2"
     },
@@ -271,7 +271,7 @@ Object.assign(SCENARIO[1], {
     "hallway_2_normal": {
         name: "Seoyeon",
         text: "(She stops and turns to face me, looking intently into my eyes.) \"Any clubs you're interested in? The student council is always open. If you join... I could even show you the ropes myself.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "If I join, can I see you every day? Then I'm in!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Actually... I'm more interested in getting to know YOU, Seoyeon.", next: "path_direct_2", stats: { Seoyeon: { affinity: 6 } } },
@@ -333,7 +333,7 @@ Object.assign(SCENARIO[1], {
     "classroom_1_1_normal": {
         name: "Seoyeon",
         text: "(She gives me an encouraging tap on the shoulder.) \"This is Class 2-3. Don't be nervous. I'm right here with you, so just be yourself. Okay?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_2"
     },
     "classroom_2": {
@@ -402,7 +402,7 @@ Object.assign(SCENARIO[1], {
     "class_after_quiet": {
         name: "Classmates",
         text: "(The class nods calmly. Seoyeon looks pleased by my serious vibe.) \"Wow, he's got a nice vibe... I'll say hi later.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "lunch_time"
     },
     "class_after_party": {
