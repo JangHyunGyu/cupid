@@ -119,19 +119,19 @@ Object.assign(SCENARIO[1], {
         next: "rooftop_talk_main"
     },
     "rooftop_talk_main": {
-        text: "(그녀가 젓가락을 건네며 수줍게 웃는데, 가슴이 두근거린다.)",
+        text: "(함께 도시락을 먹으며 대화를 나눈다. 그녀가 수줍게 웃는데, 가슴이 두근거린다.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
         next: "rooftop_1_2_2"
     },
     "rooftop_1_2_2": {
         name: "서연",
-        text: "\"자, 이건 내가 오늘 좀 넉넉하게 준비한 도시락이야. 전학 첫날이라 급식이 입에 맞을지 모를 것 같아서.. 네 입맛에 맞을지 모르겠네.\"",
+        text: "\"맛있게 먹어줘서 기뻐! 아, 그리고 이것도 먹어봐. 이건 특별히 신경 써서 준비한 거야.\"",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_nomal.png",
-        next: "rooftop_1_3"
+        next: "rooftop_1_2_3"
     },
-    "rooftop_1_3": {
+    "rooftop_1_2_3": {
         name: "서연",
         text: "\"특히 이 문어 소시지는 내 야심작이야! 너 하나 먹어볼래?\"",
         background: "assets/images/background/top_school.png",
