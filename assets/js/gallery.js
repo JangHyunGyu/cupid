@@ -51,7 +51,7 @@ const GALLERY_CHARACTERS = {
             bust: '34-22-35 65E',
             hobby: '음악 감상, 독서',
             personality: '메가데레, 수줍음',
-            expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back']
+            expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
         },
         // 유나 - 신비로운 쿨데레
         yuna: {
@@ -67,7 +67,7 @@ const GALLERY_CHARACTERS = {
             bust: '33-21-34 65E',
             hobby: '별 보기, 시 쓰기',
             personality: '쿨데레, 신비',
-            expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored']
+            expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
         },
         // 다인 - 햇살 같은 소꿉친구 (현모양처형 츤데레)
         dain: {
@@ -115,7 +115,7 @@ const GALLERY_CHARACTERS = {
             bust: '40-24-40 70H',
             hobby: '원예, 명상',
             personality: '장난기, 성숙',
-            expressions: ['normal', 'shy', 'angry']
+            expressions: ['normal', 'shy', 'angry', 'bikini']
         }
     },
     // ===== 영어 데이터 (English Data) =====
@@ -135,7 +135,7 @@ const GALLERY_CHARACTERS = {
             bust: '34-22-35 65E',
             hobby: 'Music, Reading',
             personality: 'Megadere, Shy',
-            expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back']
+            expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
         },
         // Yuna - 신비로운 쿨데레 (Kuudere)
         yuna: {
@@ -151,7 +151,7 @@ const GALLERY_CHARACTERS = {
             bust: '33-21-34 65E',
             hobby: 'Stargazing, Poetry',
             personality: 'Kuudere, Mysterious',
-            expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored']
+            expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
         },
         // Dain - 햇살 같은 소꿉친구 (Tsundere)
         dain: {
@@ -199,7 +199,7 @@ const GALLERY_CHARACTERS = {
             bust: '40-24-40 70H',
             hobby: 'Gardening, Meditation',
             personality: 'Playful, Mature',
-            expressions: ['normal', 'shy', 'angry']
+            expressions: ['normal', 'shy', 'angry', 'bikini']
         }
     }
 };
@@ -226,7 +226,8 @@ const EXPRESSION_NAMES = {
         smile: '미소',       // 미소짓는 표정
         bored: '지루함',     // 지루해하는 표정
         active: '활발',      // 활발한 표정
-        sweat: '땀흘림'      // 땀에 젖은 표정
+        sweat: '땀흘림',     // 땀에 젖은 표정
+        bikini: '비키니'      // 특별 표정 (호감도 100 + 프리토킹 100회)
     },
     // 영어 표정 이름
     en: {
@@ -243,7 +244,8 @@ const EXPRESSION_NAMES = {
         smile: 'Smile',
         bored: 'Bored',
         active: 'Active',
-        sweat: 'Nervous'
+        sweat: 'Nervous',
+        bikini: 'Bikini'         // Special expression (Affinity 100 + 100 Free Talks)
     }
 };
 
@@ -497,35 +499,16 @@ function isMet(charId) {
 }
 
 /**
- * 현재 호감도 가져오기 (게임 상태에서)
+ * 현재 호감도 가져오기 (최고점 기준)
  * 
- * 호감도는 두 가지 방법으로 가져옴:
- * 1. game.html에서 열렸을 때: gameState에서 실시간 호감도
- * 2. gallery.html에서 열렸을 때: localStorage에 저장된 최대 호감도
+ * 항상 localStorage에 저장된 최대 호감도(maxAffinity)를 사용
+ * 한 번 달성한 호감도는 떨어지지 않으므로 영구 해금 방식
  * 
  * @param {string} charId - 캐릭터 ID (seyoun, yuna, dain, teacher, nurse)
- * @returns {number} 현재 호감도 (0 ~ 100)
+ * @returns {number} 최대 호감도 (0 ~ 100)
  */
 function getCurrentAffinity(charId) {
-    // 캐릭터 ID를 gameState에서 사용하는 키로 변환
-    // gallery.js는 소문자(seyoun), gameState는 대문자(Seoyeon) 사용
-    const charKeyMap = {
-        'seyoun': 'Seoyeon',
-        'yuna': 'Yuna',
-        'dain': 'Dain',
-        'teacher': 'Teacher',
-        'nurse': 'Nurse'
-    };
-    const charKey = charKeyMap[charId];
-    
-    // gameState가 있으면 (game.html에서 열렸을 때)
-    // 실시간 게임 상태에서 호감도를 가져옴
-    if (typeof gameState !== 'undefined' && gameState.stats && gameState.stats[charKey]) {
-        return gameState.stats[charKey].affinity || 0;
-    }
-    
-    // 게임 상태가 없으면 (갤러리 페이지에서 직접 열었을 때)
-    // localStorage에 저장된 최대 호감도를 사용
+    // localStorage에 저장된 최대 호감도를 사용 (영구 해금)
     const progress = getProgress();
     return progress.characters?.[charId]?.maxAffinity || 0;
 }
@@ -553,15 +536,40 @@ function getExpressionUnlockRequirement(expressionIndex, totalExpressions) {
 
 /**
  * 특정 표정이 해금되었는지 확인
+ * 
+ * 일반 표정: 호감도 기준 균등 분배
+ * 특별 표정 (bikini): 호감도 100 + 프리토킹 100회 필요
+ * 
  * @param {string} charId - 캐릭터 ID
  * @param {number} expressionIndex - 표정 인덱스
  * @param {number} totalExpressions - 전체 표정 개수
+ * @param {string} expressionName - 표정 코드명 (선택적)
  * @returns {boolean} 해금 여부
  */
-function isExpressionUnlocked(charId, expressionIndex, totalExpressions) {
+function isExpressionUnlocked(charId, expressionIndex, totalExpressions, expressionName = null) {
+    // 특별 표정 체크 (bikini)
+    if (expressionName === 'bikini') {
+        const affinity = getCurrentAffinity(charId);
+        const freeTalkCount = getFreeTalkCount(charId);
+        return affinity >= 100 && freeTalkCount >= 100;
+    }
+    
+    // 일반 표정: 호감도 기준
     const requiredAffinity = getExpressionUnlockRequirement(expressionIndex, totalExpressions);
     const currentAffinity = getCurrentAffinity(charId);
     return currentAffinity >= requiredAffinity;
+}
+
+/**
+ * 프리토킹 횟수 가져오기
+ * localStorage에 저장된 프리토킹 횟수 반환
+ * 
+ * @param {string} charId - 캐릭터 ID
+ * @returns {number} 프리토킹 횟수
+ */
+function getFreeTalkCount(charId) {
+    const progress = getProgress();
+    return progress.characters?.[charId]?.freeTalkCount || 0;
 }
 
 // ==========================================================================
@@ -725,6 +733,25 @@ function showExpressionLockPopup(charName, exprName, requiredAffinity) {
 }
 
 /**
+ * 비키니 특별 표정 잠금 팝업 표시
+ * 호감도 100 + 프리토킹 100회 조건
+ * 
+ * @param {string} charName - 캐릭터 이름
+ */
+function showBikiniLockPopup(charName) {
+    const currentAffinity = getCurrentAffinity(currentCharacter);
+    const freeTalkCount = getFreeTalkCount(currentCharacter);
+    
+    showUnlockConditionPopup({
+        title: currentLang === 'ko' ? '💎 특별 표정' : '💎 Special Expression',
+        message: currentLang === 'ko' 
+            ? `${charName}의 특별한 모습을 보려면\n두 가지 조건을 모두 달성해야 합니다!\n\n💕 호감도: ${currentAffinity}/100 ${currentAffinity >= 100 ? '✅' : '❌'}\n💬 프리토킹: ${freeTalkCount}/100회 ${freeTalkCount >= 100 ? '✅' : '❌'}`
+            : `To see ${charName}'s special look,\nyou need to achieve both conditions!\n\n💕 Affinity: ${currentAffinity}/100 ${currentAffinity >= 100 ? '✅' : '❌'}\n💬 Free Talks: ${freeTalkCount}/100 ${freeTalkCount >= 100 ? '✅' : '❌'}`,
+        icon: '👙'
+    });
+}
+
+/**
  * 소개 더보기 잠금 팝업 표시
  * 호감도 80 미만일 때 "소개 더 보기" 버튼 클릭 시 호출
  * 전체 소개를 보려면 호감도 80이 필요함을 안내
@@ -870,8 +897,8 @@ function renderExpressionButtons(char) {
     let html = '';
     // 캐릭터가 가진 각 표정에 대해 버튼 생성
     char.expressions.forEach((expr, index) => {
-        const unlocked = isExpressionUnlocked(char.id, index, totalExpressions);
-        const requiredAffinity = getExpressionUnlockRequirement(index, totalExpressions);
+        // 특별 표정(bikini)은 expressionName 전달
+        const unlocked = isExpressionUnlocked(char.id, index, totalExpressions, expr);
         
         if (unlocked) {
             // 해금된 표정: 정상 버튼
@@ -882,13 +909,23 @@ function renderExpressionButtons(char) {
                 </button>
             `;
         } else {
-            // 미해금 표정: 잠긴 버튼
-            html += `
-                <button class="expression-btn locked"
-                        onclick="showExpressionLockPopup('${char.name}', '${names[expr] || expr}', ${requiredAffinity})">
-                    🔒 ${names[expr] || expr}
-                </button>
-            `;
+            // 미해금 표정: 잠긴 버튼 (특별 표정은 별도 팝업)
+            if (expr === 'bikini') {
+                html += `
+                    <button class="expression-btn locked special"
+                            onclick="showBikiniLockPopup('${char.name}')">
+                        💎 ${names[expr] || expr}
+                    </button>
+                `;
+            } else {
+                const requiredAffinity = getExpressionUnlockRequirement(index, totalExpressions);
+                html += `
+                    <button class="expression-btn locked"
+                            onclick="showExpressionLockPopup('${char.name}', '${names[expr] || expr}', ${requiredAffinity})">
+                        🔒 ${names[expr] || expr}
+                    </button>
+                `;
+            }
         }
     });
     
