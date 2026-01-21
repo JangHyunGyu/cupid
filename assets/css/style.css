@@ -407,6 +407,32 @@ body, html {
    Settings UI (설정 메뉴)
    ========================================================================== */
 
+/* 홈 버튼 스타일 (게임 화면 상단 중앙) */
+#game-container #home-btn {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 105, 180, 0.5);
+    color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 150;
+    transition: all 0.2s;
+}
+
+#game-container #home-btn:hover {
+    background: rgba(255, 105, 180, 0.3);
+    transform: translateX(-50%) scale(1.1);
+}
+
 /* 설정 버튼 스타일 (게임 화면 내 톱니바퀴) */
 #game-container #settings-btn {
     position: absolute;
