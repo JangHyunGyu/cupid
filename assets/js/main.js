@@ -1043,6 +1043,68 @@ async function startFreeTalk(scene) {
     }
 }
 
+
+function hasBatchim(str) {
+    if (!str || str.length === 0) return false;
+    const lastChar = str[str.length - 1];
+    const code = lastChar.charCodeAt(0);
+   
+    // 받침 계산: (유니코드 - 0xAC00) % 28
+    return (code - 0xAC00) % 28 !== 0;
+}
+
+function getProperParticle(name, nextChars) {
+    const batchim = hasBatchim(name);
+   
+    if (nextChars.startsWith('이가') || nextChars.startsWith('가')) {
+        return batchim ? '이' : '가';
+    } else if (nextChars.startsWith('을를') || nextChars.startsWith('를')) {
+        return batchim ? '을' : '를';
+    } else if (nextChars.startsWith('은는') || nextChars.startsWith('는')) {
+        return batchim ? '은' : '는';
+    } else if (nextChars.startsWith('이다') || nextChars.startsWith('다')) {
+        return batchim ? '이다' : '다';
+    } else if (nextChars.startsWith('으로') || nextChars.startsWith('로')) {
+        return batchim ? '으로' : '로';
+    } else if (nextChars.startsWith('와') || nextChars.startsWith('과')) {
+        return batchim ? '과' : '와';
+    } else if (nextChars.startsWith('이랑') || nextChars.startsWith('랑')) {
+        return batchim ? '이랑' : '랑';
+    } else if (nextChars.startsWith('이나') || nextChars.startsWith('나')) {
+        return batchim ? '이나' : '나';
+    } else if (nextChars.startsWith('야') || nextChars.startsWith('아')) {
+        return batchim ? '아' : '야';
+    }
+    // 받침에 상관없는 조사
+    else if (nextChars.startsWith('의') || 
+             nextChars.startsWith('에') ||
+             nextChars.startsWith('에서') ||
+             nextChars.startsWith('에게') ||
+             nextChars.startsWith('한테') ||
+             nextChars.startsWith('에게서') ||
+             nextChars.startsWith('한테서') ||
+             nextChars.startsWith('하고') ||
+             nextChars.startsWith('도') ||
+             nextChars.startsWith('만') ||
+             nextChars.startsWith('까지') ||
+             nextChars.startsWith('부터') ||
+             nextChars.startsWith('조차') ||
+             nextChars.startsWith('마저') ||
+             nextChars.startsWith('뿐') ||
+             nextChars.startsWith('이나마') ||
+             nextChars.startsWith('밖에') ||
+             nextChars.startsWith('처럼') ||
+             nextChars.startsWith('같이') ||
+             nextChars.startsWith('보다') ||
+             nextChars.startsWith('마다') ||
+             nextChars.startsWith('씩') ||
+             nextChars.startsWith('대로')) {
+        return '';
+    }
+    
+    return '';
+}
+
 function typeText(text, charName) {
     if (text === undefined || text === null) {
         console.warn("typeText called with null/undefined text");
