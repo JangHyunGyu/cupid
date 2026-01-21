@@ -1,4 +1,4 @@
-if (typeof SCENARIO === 'undefined') {
+﻿if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 if (!SCENARIO[1]) {
@@ -33,13 +33,13 @@ Object.assign(SCENARIO[1], {
     "start_4": {
         name: "???",
         text: "\"안녕? 못 보던 얼굴이네. 혹시 오늘 온다는... {name}?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "intro_1"
     },
     "intro_1": {
         name: "나",
         text: "(방긋 웃으며 말을 걸어오는 소녀. 은은한 샴푸 향기가 코끝을 스친다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "intro_2"
     },
     "intro_2": {
@@ -92,7 +92,7 @@ Object.assign(SCENARIO[1], {
     "path_tease_1_2": {
         name: "서연",
         text: "\"어머, 첫날부터 작업이야? 합격점 줄게. 그럼 우리 '특별한' 전학생 소년, 따라와 보실까?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_1"
     },
     "path_blush_1": {
@@ -110,13 +110,13 @@ Object.assign(SCENARIO[1], {
     "path_silent_1": {
         name: "서연",
         text: "(그녀가 고개를 갸웃하며 내 얼굴 가까이 다가온다. 숨결이 느껴질 것만 같다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "path_silent_1_2"
     },
     "path_silent_1_2": {
         name: "서연",
         text: "\"응? 왜 그래? 얼굴이 엄청 빨간데... 설마 벌써 나한테 반한 거야? 후훗.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_1"
     },
     "hallway_1": {
@@ -129,7 +129,7 @@ Object.assign(SCENARIO[1], {
     "hallway_name_ask": {
         name: "서연",
         text: "(서연이가 갑자기 멈춰 서더니 나를 돌아본다.) \"아, 그러고 보니 아까 내가 네 이름을 먼저 말해버렸네. {name}, 맞지? 다시 한번 정식으로 인사할게!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_name_share"
     },
     "hallway_name_share": {
@@ -156,7 +156,7 @@ Object.assign(SCENARIO[1], {
         text: "\"아, 그러고 보니 우리 통성명만 하고 제대로 대화는 못 했네? 궁금한 게 있으면 뭐든 물어봐!\"",
         context: "학교 복도를 함께 걸으며 전학생인 주인공과 가벼운 대화를 나누는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 서연이가 복도를 지나며 학교 시설들을 안내해 주는 상황으로 이어집니다. 대화의 마지막 턴에만 이제 이동하자고 하거나 안내를 시작하겠다는 언급을 해주세요.",
         personality: "친절하고 상냥하며 책임감 강한 학생회장. 전학생인 주인공에게 호감을 느끼고 있음.",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 15, next: "hallway_1_3_high" },
@@ -245,7 +245,7 @@ Object.assign(SCENARIO[1], {
     "hallway_1_3": {
         name: "나",
         text: "(서연이의 안내를 받으며 복도를 걷기 시작했다. 그녀는 학교 곳곳을 친절하게 설명해주기 시작했다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { 
                 text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", 
@@ -321,7 +321,7 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_trap_normal_2": {
         name: "서연",
         text: "\"음.. 뭐, 고맙긴 한데... 그런 말은 좀 부담스럽네. 우리 아직 만난 지 얼마 안 됐잖아? 장난이 좀 과한 것 같아.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_2"
     },
     "hallway_talk_club_high": {
@@ -340,14 +340,14 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_club_low": {
         name: "서연",
         text: "(그녀가 사무적인 태도로 고개를 끄덕인다. 표정에는 아무런 감정도 실려있지 않다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         stats: { Seoyeon: { affinity: -2 } },
         next: "hallway_talk_club_low_2"
     },
     "hallway_talk_club_low_2": {
         name: "서연",
         text: "\"응. 학생회랑 원예부 활동을 병행하고 있어. 질문은 그것뿐이니? 그럼 계속 안내할게.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_2"
     },
     "hallway_talk_club_normal": {
@@ -360,7 +360,7 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_club_normal_2": {
         name: "서연",
         text: "\"응! 나는 학생회 활동도 하지만 사실 원예부 소속이기도 해. 꽃을 가꾸는 걸 좋아하거든. 흙을 만지고 있으면 마음이 편안해지거든. 나중에 시간 되면 우리 온실에도 놀러 와!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_2"
     },
     "hallway_talk_flatter_high": {
@@ -418,14 +418,14 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_listen_low": {
         name: "서연",
         text: "(그녀가 기계적으로 설명을 이어간다. 나를 쳐다보지도 않고 허공을 향해 말을 내뱉는 듯한 느낌이다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_talk_listen_low_2"
     },
     "hallway_talk_listen_low_2": {
         name: "서연",
         text: "\"대충 알아들었니? 그럼 다음 장소로 이동할게. 멍하니 있지 말고 잘 따라와.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_2"
     },
     "hallway_talk_listen_normal": {
@@ -438,7 +438,7 @@ Object.assign(SCENARIO[1], {
     "hallway_talk_listen_normal_2": {
         name: "서연",
         text: "\"내 설명을 이렇게 잘 들어주니 정말 고마워. {name}, 참 성실한 사람인 것 같네! 이런 태도라면 학교생활에 금방 적응할 거야.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_2"
     },
     "hallway_2": {
@@ -452,7 +452,7 @@ Object.assign(SCENARIO[1], {
     "hallway_2_normal": {
         name: "서연",
         text: "(그녀가 갑자기 멈춰 서서 나를 돌아본다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_2_2"
     },
     "hallway_2_low": {
@@ -476,13 +476,13 @@ Object.assign(SCENARIO[1], {
     "hallway_2_2": {
         name: "서연",
         text: "(그녀가 내 눈을 뚫어지게 쳐다본다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_2_3"
     },
     "hallway_2_3": {
         name: "서연",
         text: "\"너는 어떤 동아리에 관심 있어? 우리 학생회도 항상 새로운 인재를 환영하고 있거든. 만약 네가 들어온다면.. 내가 직접 업무를 가르쳐줄 수도 있어.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 5 } } },
             { text: "동아리보다는... 서연이 너에 대해 더 알고 싶은데?", next: "path_direct_2", stats: { Seoyeon: { affinity: 6 } } },
@@ -594,19 +594,19 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(교실 문 앞에 도착했다. 안쪽에서 아이들의 웅성거리는 소리와 웃음소리가 들려온다. 서연이가 내 어깨를 가볍게 두드리며 응원해준다.)",
         background: "assets/images/background/load_school.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_1_2"
     },
     "classroom_1_2": {
         name: "서연",
         text: "(그녀의 손길이 닿은 곳이 화끈거린다. 그녀가 내 눈을 보며 작게 파이팅을 외친다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_1_3"
     },
     "classroom_1_3": {
         name: "서연",
         text: "\"자, 여기가 네가 머물게 될 2학년 3반이야. 긴장하지 마. 내가 바로 옆에 있으니까, 넌 그냥 평소대로 하면 돼. 알았지?\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_2"
     },
     "classroom_2": {
@@ -625,7 +625,7 @@ Object.assign(SCENARIO[1], {
         bgm: "daily.mp3",
         characters: {
             left: "assets/images/characters/teacher.png",
-            right: "assets/images/characters/seyoun_nomal.png"
+            right: "assets/images/characters/seyoun_normal.png"
         },
         setFlag: "metTeacher",
         next: "classroom_2_2"
@@ -772,7 +772,7 @@ Object.assign(SCENARIO[1], {
     "class_after_quiet_2": {
         name: "아이들",
         text: "(서연이는 내 진지한 모습이 마음에 드는지 고개를 끄덕인다. 교실 분위기가 한결 차분해진다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "class_after_quiet_3"
     },
     "class_after_quiet_3": {

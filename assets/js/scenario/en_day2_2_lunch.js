@@ -93,7 +93,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_lunch_worry": {
         name: "Seoyeon",
         text: "\"I'm okay. Seeing you enjoy the food makes all the fatigue disappear. Truly.\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         setFlag: "day2_ate_lunch_seoyeon",
         next: "day2_seoyeon_lunch_end"
     },
@@ -113,19 +113,19 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(The library annex backyard. Under the deep shadows, Yuna stands like part of the scenery.)",
         background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_talk"
     },
     "day2_yuna_talk": {
         name: "Yuna",
         text: "\"...You came. I didn't think you'd actually show up for a note.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_talk_2"
     },
     "day2_yuna_talk_2": {
         name: "Yuna",
         text: "(She gazes at me with an unreadable expression.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_free_talk"
     },
     "day2_yuna_free_talk": {
@@ -134,7 +134,7 @@ Object.assign(SCENARIO[2], {
         text: "\"...Do you have questions for me? Or do you want to know more about this school?\"",
         context: "Quiet library annex backyard, private conversation with the mysterious Yuna. Keep the conversation going actively until it's finished. After the conversation, Yuna will talk about the school's secrets and suggest that there is something she only wants to show the protagonist. ONLY at the final turn of the conversation, please create a mysterious atmosphere and stimulate the protagonist's curiosity.",
         personality: "Mysterious, cold, and secretive. She feels a strange interest in the protagonist.",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 20, next: "day2_yuna_talk_branch_high" },
@@ -171,7 +171,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_met_low": {
         name: "Me",
         text: "(Yuna's gaze is icy. She says I might not handle the truth, but tells me to follow her anyway since we promised.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         choices: [
             { text: "Show me. I can handle it.", next: "day2_yuna_secret_low", stats: { Yuna: { affinity: 5 } } },
             { text: "I'm not interested in secrets. I'll pass.", next: "day2_yuna_normal_low", stats: { Yuna: { affinity: 4 } } }
@@ -190,7 +190,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_new_low": {
         name: "Me",
         text: "(Yuna's eyes are cold. She says I don't look like I can handle the truth, but tells me to follow her since I'm here.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "metYuna",
         choices: [
             { text: "What's the secret? Show me.", next: "day2_yuna_new_name_ask_low", stats: { Yuna: { affinity: 5 } } },
@@ -208,7 +208,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_met_normal": {
         name: "Me",
         text: "(Yuna mentions the secret she told me yesterday and says she has something to show me.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         choices: [
             { text: "What is it? I want to see.", next: "day2_yuna_secret_normal", stats: { Yuna: { affinity: 5 } } },
             { text: "I just wanted to talk to you.", next: "day2_yuna_normal_normal", stats: { Yuna: { affinity: 4 } } }
@@ -217,7 +217,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_2_new_normal": {
         name: "Me",
         text: "(Yuna says I must be curious about her. She offers to show me a deep secret of the school.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "metYuna",
         choices: [
             { text: "Who are you? And what secret?", next: "day2_yuna_new_name_ask_normal", stats: { Yuna: { affinity: 5 } } }
@@ -238,7 +238,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_ask_low": {
         name: "Yuna",
         text: "(She asks coldly.) \"...I should probably know your name before we go further. What is it?\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_new_name_share_low"
     },
     "day2_yuna_new_name_share_low": {
@@ -250,7 +250,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_ask_normal": {
         name: "Yuna",
         text: "\"...I forgot to ask your name. I only wrote mine on the note.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_new_name_share_normal"
     },
     "day2_yuna_new_name_share_normal": {
@@ -278,14 +278,14 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_secret_low": {
         name: "Yuna",
         text: "(Yuna grabs my sleeve and pulls me forward.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "visitedWarehouseAtLunch",
         next: "day2_yuna_secret_2_low"
     },
     "day2_yuna_secret_2_low": {
         name: "Yuna",
         text: "\"Just watch. Not like you'll understand, but you're here already. Don't get in my way.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         choices: [
             { text: "Show me. what is it?", next: "day2_yuna_secret_read_low", stats: { Yuna: { affinity: 5 } } },
             { text: "I'm out. This is too dangerous.", next: "day2_yuna_secret_stop_low", stats: { Yuna: { affinity: -20 } } }
@@ -342,7 +342,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_secret_read_low": {
         name: "Yuna",
         text: "\"You really want to see? Don't regret it. I won't help you if you start crying.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
@@ -356,7 +356,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_secret_stop_low": {
         name: "Yuna",
         text: "\"I knew it. You're a coward. Don't show your face again.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
@@ -370,7 +370,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_secret_why_low": {
         name: "Yuna",
         text: "\"What's it to you? Just watch or leave. No need to poke your nose into my business.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
@@ -384,14 +384,14 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_normal_low": {
         name: "Yuna",
         text: "\"To talk? Pathetic. Don't waste my time and get lost.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
     "day2_yuna_normal_normal": {
         name: "Yuna",
         text: "\"...Is that so? You're a strange one. Most people are afraid. Fine, let's just stay like this for today.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "day2_met_yuna_lunch",
         next: "day2_yuna_lunch_end"
     },
@@ -444,7 +444,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(We head to the snack bar. It's packed with students.)",
         background: "assets/images/background/store.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         next: "day2_dain_free_talk"
     },
     "day2_dain_free_talk": {
@@ -453,7 +453,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Wow, it's crowded! Right? Let's chat while we wait. Anything you want to know?\"",
         context: "In front of the crowded school store, standing in line with Dain to buy snacks. Keep the conversation going actively until it's finished. After the conversation, you will choose snacks at the store. ONLY at the final turn of the conversation, please naturally lead into the next situation by mentioning that it's almost our turn or by deciding what to eat.",
         personality: "Easygoing and energetic volleyball ace. She enjoys spending time with the protagonist.",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         affinityChar: "Dain",
         affinityBranches: [
             { minAffinity: 25, next: "day2_dain_store_choices_high" },

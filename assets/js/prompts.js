@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Cupid - 캐릭터별 기억(플래그) 정의 및 프롬프트 템플릿
  */
 
@@ -37,7 +37,7 @@ window.FLAG_MEMORIES = [
 // 캐릭터별 표정 이미지 매핑
 window.CHARACTER_EXPRESSIONS = {
     "서연": {
-        "normal": "assets/images/characters/seyoun_nomal.png",
+        "normal": "assets/images/characters/seyoun_normal.png",
         "shy": "assets/images/characters/seyoun_shy.png",
         "shy2": "assets/images/characters/seyoun_shy2.png",
         "pout": "assets/images/characters/seyoun_pout.png",
@@ -48,7 +48,7 @@ window.CHARACTER_EXPRESSIONS = {
         "sad": "assets/images/characters/seyoun_sad.png"
     },
     "Seoyeon": {
-        "normal": "assets/images/characters/seyoun_nomal.png",
+        "normal": "assets/images/characters/seyoun_normal.png",
         "shy": "assets/images/characters/seyoun_shy.png",
         "shy2": "assets/images/characters/seyoun_shy2.png",
         "pout": "assets/images/characters/seyoun_pout.png",
@@ -59,7 +59,7 @@ window.CHARACTER_EXPRESSIONS = {
         "sad": "assets/images/characters/seyoun_sad.png"
     },
     "유나": {
-        "normal": "assets/images/characters/yuna_nomal.png",
+        "normal": "assets/images/characters/yuna_normal.png",
         "smile": "assets/images/characters/yuna_smile.png",
         "shy": "assets/images/characters/yuna_shy.png",
         "angry": "assets/images/characters/yuna_angry.png",
@@ -67,7 +67,7 @@ window.CHARACTER_EXPRESSIONS = {
         "bored": "assets/images/characters/yuna_bored.png"
     },
     "Yuna": {
-        "normal": "assets/images/characters/yuna_nomal.png",
+        "normal": "assets/images/characters/yuna_normal.png",
         "smile": "assets/images/characters/yuna_smile.png",
         "shy": "assets/images/characters/yuna_shy.png",
         "angry": "assets/images/characters/yuna_angry.png",
@@ -75,7 +75,7 @@ window.CHARACTER_EXPRESSIONS = {
         "bored": "assets/images/characters/yuna_bored.png"
     },
     "다인": {
-        "normal": "assets/images/characters/dain_nomal.png",
+        "normal": "assets/images/characters/dain_normal.png",
         "shy": "assets/images/characters/dain_shy.png",
         "angry": "assets/images/characters/dain_angry.png",
         "laugh": "assets/images/characters/dain_laugh.png",
@@ -83,7 +83,7 @@ window.CHARACTER_EXPRESSIONS = {
         "pout": "assets/images/characters/dain_pout.png"
     },
     "Dain": {
-        "normal": "assets/images/characters/dain_nomal.png",
+        "normal": "assets/images/characters/dain_normal.png",
         "shy": "assets/images/characters/dain_shy.png",
         "angry": "assets/images/characters/dain_angry.png",
         "laugh": "assets/images/characters/dain_laugh.png",

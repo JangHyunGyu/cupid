@@ -41,21 +41,21 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(교무실 문을 열자, 서류를 정리하고 계신 담임선생님이 보인다.)",
         background: "assets/images/background/teacher_room.png",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "after_teacher_2"
     },
     "after_teacher_2": {
         name: "담임선생님",
         text: "\"어머, {name} 아니니? 이 시간에 교무실엔 어쩐 일이야?\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "after_teacher_3"
     },
     "after_teacher_3": {
         name: "담임선생님",
         text: "\"전학 첫날이라 궁금한 게 많은 모양이구나. 선생님이 도와줄 수 있는 게 있을까?\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         choices: [
             { text: "선생님은 언제 퇴근하세요? 혼자 계시면 적적하실 텐데 제가 도와드릴까요?", next: "after_teacher_help", stats: { Teacher: { affinity: 5 } } },
@@ -107,7 +107,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(학생회실 문을 열자, 서류 더미 속에서 고군분투하는 서연이가 보인다.)",
         background: "assets/images/background/student_room.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         next: "after_seoyeon_2"
     },
@@ -122,7 +122,7 @@ Object.assign(SCENARIO[1], {
     "after_seoyeon_3_standard": {
         name: "서연",
         text: "\"어? {name}! 이 시간에 어쩐 일이야? 설마... 나 기다린 거야? (장난기 섞인 미소)\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         choices: [
             { text: "응, 같이 가고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
@@ -182,7 +182,7 @@ Object.assign(SCENARIO[1], {
     "after_seoyeon_help_action": {
         name: "서연",
         text: "(말없이 서류를 정리하며 느껴지는 묘한 유대감. 창밖은 어느새 노을빛이다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "after_seoyeon_help_3"
     },
     "after_seoyeon_help_3": {
@@ -195,7 +195,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(일을 마치고 우리는 학교 앞 작은 카페에 들렀다.)",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         next: "after_seoyeon_cafe_2"
     },
@@ -203,7 +203,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(서연이는 생크림이 듬뿍 올라간 음료를 마시며 행복한 표정을 짓는다.)",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         next: "after_seoyeon_cafe_2_2"
     },
@@ -211,7 +211,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"하아~ 이제야 좀 살 것 같아. 오늘 정말 고마웠어, {name}.\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         next: "after_seoyeon_cafe_3"
     },
@@ -219,7 +219,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "\"덕분에 오늘 하루가 정말 특별해졌어. 있잖아... 우리 내일도 같이 하교할 수 있을까?\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         choices: [
             { text: "당연하지. 내일이 벌써 기다려져.", next: "after_seoyeon_promise", stats: { Seoyeon: { affinity: 5 } } },
@@ -275,27 +275,27 @@ Object.assign(SCENARIO[1], {
     "after_seoyeon_contact_fail": {
         name: "서연",
         text: "\"아... 응, 알았어! 내가 너무 갑자기 물어봤지? 미안해. 그럼 내일 학교에서 봐!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         stats: { Seoyeon: { affinity: -10 } },
         next: "after_home"
     },
     "after_seoyeon_worry": {
         name: "서연",
         text: "(그녀가 쑥스러운 듯 머리를 긁적이며 웃는다.)",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "after_seoyeon_worry_2"
     },
     "after_seoyeon_worry_2": {
         name: "서연",
         text: "\"헤헤, 들켰네. 학생회장이라는 게 생각보다 할 일이 많거든. 그래도 네가 이렇게 걱정해주니까 힘이 불끈 나는걸? 조금만 기다려줘, 금방 끝내고 같이 가자!\"",
-        character: "assets/images/characters/seyoun_nomal.png",
+        character: "assets/images/characters/seyoun_normal.png",
         next: "after_seoyeon_cafe"
     },
     "after_yuna_new": {
         name: "나",
         text: "(학교의 조용한 곳을 찾아 걷다 보니, 어느새 도서관 별관에 도착했다. 노을빛이 스며드는 그곳에는 한 소녀가 창가에 앉아 있다.)",
         background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "after_yuna_new_2"
     },
@@ -303,7 +303,7 @@ Object.assign(SCENARIO[1], {
         name: "???",
         text: "\"어? 이 시간에 여기까지 오다니... 너도 참 특이하네. 나는 유나라고 해.\"",
         background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         setFlag: "metYuna",
         next: "after_yuna_3"
@@ -312,7 +312,7 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "(도서관 별관은 아까보다 더 어둡고 고요하다. 그곳에는 한 소녀가 창가에 앉아 노을을 바라보고 있다.)",
         background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "after_yuna_2"
     },
@@ -320,7 +320,7 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "(그녀는 내가 온 것을 알면서도 한참 동안 창밖만 바라본다.)",
         background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "after_yuna_3"
     },
@@ -328,7 +328,7 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "\"아, 안녕... 방과 후의 도서관은 참 고요해서 좋아. 넌 무슨 일로 온 거야?\"",
         background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         branches: [
             { next: "yuna_after_talk", condition: "knowsName_Yuna" },
@@ -338,14 +338,14 @@ Object.assign(SCENARIO[1], {
     "yuna_after_talk": {
         name: "유나",
         text: "\"또 보네, {name}. 여긴 여전히 조용하고... 여전히 무거워. 넌 그 무게가 느껴지지 않아?\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "yuna_after_choices"
     },
     "yuna_after_choices": {
         name: "유나",
         text: "\"나한테 궁금한 거라도 있는 거야? 아니면... 그냥 내가 신기해서 온 거야?\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         choices: [
             {
@@ -370,7 +370,7 @@ Object.assign(SCENARIO[1], {
     "yuna_name_share": {
         name: "유나",
         text: "(그녀가 내 이름을 나지막이 읊조린다.) \"...{name}. 기억해둘게. 하지만 이런 학교에선 이름 같은 건... 아무 의미가 없을지도 몰라.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "yuna_after_choices"
     },
@@ -395,45 +395,46 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_know_3": {
         name: "유나",
-        text: "\"좋아. 오늘 밤은 기니까 조금씩... 아주 조금씩 알려줄게. 따라와.\"",
+        text: "\"좋아. 노을이 지기 전에 조금씩... 아주 조금씩 알려줄게. 따라와.\"",
         character: "assets/images/characters/yuna_smile.png",
+        sunset: true,
         next: "after_yuna_move_rooftop"
     },
     "after_yuna_move_rooftop": {
         name: "나",
-        text: "(그녀를 따라 삐걱거리는 계단을 올라갔다. 어느새 차가운 밤공기가 느껴지는 옥상에 도착했다.)",
+        text: "(그녀를 따라 삐걱거리는 계단을 올라갔다. 붉게 물든 노을빛이 창문을 통해 스며들고, 옥상에 도착하자 서늘한 바람이 불어온다.)",
         background: "assets/images/background/top_school.png",
         character: null,
-        night: true,
+        sunset: true,
         next: "after_yuna_rooftop"
     },
     "after_yuna_rooftop": {
         name: "유나",
-        text: "(별관 옥상에서 내려다보는 학교는 아까와는 전혀 다른 모습이다.)",
+        text: "(별관 옥상에서 내려다보는 학교는 노을에 물들어 신비로운 분위기를 풍긴다.)",
         background: "assets/images/background/top_school.png",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
+        character: "assets/images/characters/yuna_normal.png",
+        sunset: true,
         next: "after_yuna_rooftop_2"
     },
     "after_yuna_rooftop_2": {
         name: "유나",
         text: "(유나는 난간에 기대 나를 빤히 바라본다.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
+        character: "assets/images/characters/yuna_normal.png",
+        sunset: true,
         next: "after_yuna_rooftop_2_2"
     },
     "after_yuna_rooftop_2_2": {
         name: "유나",
         text: "\"사람들은 이 학교가 완벽하다고 생각하지. 하지만 완벽은 환상일 뿐이야.\"",
         character: "assets/images/characters/yuna_smile.png",
-        night: true,
+        sunset: true,
         next: "after_yuna_rooftop_3"
     },
     "after_yuna_rooftop_3": {
         name: "유나",
         text: "\"겉으로는 드러나지 않는 문제들이 곪아가고 있을 뿐이지. 이 학교를 가득 채운 무거운 기운... 넌 그런 변화를 못 느꼈어?\"",
         character: "assets/images/characters/yuna_smile.png",
-        night: true,
+        sunset: true,
         choices: [
             { text: "너와 함께라면 어디든 괜찮아.", next: "after_yuna_together" },
             { text: "어둠이라니... 좀 무서운데.", next: "after_yuna_scared" }
@@ -443,21 +444,21 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "(그녀가 내 손을 꽉 쥔다. 그녀의 눈을 보며 슬픈 미소를 짓는데...)",
         character: "assets/images/characters/yuna_smile.png",
-        night: true,
+        sunset: true,
         next: "after_yuna_together_2"
     },
     "after_yuna_together_2": {
         name: "유나",
         text: "\"바보 같은 소리... 하지만 싫지 않네. 좋아, 그럼 우리... 서로의 비밀을 공유하는 사이가 되는 건 어때?\"",
         character: "assets/images/characters/yuna_smile.png",
-        night: true,
+        sunset: true,
         next: "yuna_contact_exchange"
     },
     "yuna_contact_exchange": {
         name: "유나",
         text: "(유나가 난간 쪽에서 몸을 떼며 무심하게 스마트폰을 내민다.) \"비밀을 공유하려면... 연락할 수단은 있어야겠지. 네 번호, 여기에 남겨줘.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
+        character: "assets/images/characters/yuna_normal.png",
+        sunset: true,
         choices: [
             { text: "응, 좋아. 너에 대해 모든 걸 알고 싶어.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
             { text: "미안, 아직은 좀 조심스러워.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -25 } } }
@@ -467,41 +468,41 @@ Object.assign(SCENARIO[1], {
         name: "유나",
         text: "(유나가 내 번호를 저장하고는 희미하게 미소 짓는다.) \"...됐어. 이제 우린 연결된 거야. 내가 부르면... 언제든 와줘야 해.\"",
         character: "assets/images/characters/yuna_smile.png",
-        night: true,
+        sunset: true,
         stats: { Yuna: { affinity: 15 } },
         next: "after_home"
     },
     "yuna_contact_fail": {
         name: "유나",
         text: "(유나가 차가운 눈빛으로 나를 바라보더니 스마트폰을 집어넣는다.) \"...그래. 억지로 강요하진 않아. 하지만 기회는 자주 오지 않는다는 걸 명심해.\"",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
+        character: "assets/images/characters/yuna_normal.png",
+        sunset: true,
         next: "after_home"
     },
     "after_yuna_scared": {
         name: "유나",
         text: "(그녀가 차갑게 웃으며 내 손을 놓는다. 그녀는 다시 창밖으로 시선을 돌리며 나를 밀어낸다.)",
-        character: "assets/images/characters/yuna_nomal.png",
-        night: true,
+        character: "assets/images/characters/yuna_normal.png",
+        sunset: true,
         next: "after_yuna_scared_2"
     },
     "after_yuna_scared_2": {
         name: "유나",
         text: "\"흠, 역시 그렇겠지. 평범한 학생에게는 너무 무거운 이야기니까. 오늘은 이만 돌아가. 더 이상 깊이 알려고 하지 마.\"",
         character: "assets/images/characters/yuna_smile.png",
-        night: true,
+        sunset: true,
         next: "after_home"
     },
     "after_yuna_secret": {
         name: "유나",
         text: "(그녀가 검지 손가락을 입술에 갖다 대며 조용히 하라는 신호를 보낸다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "after_yuna_secret_2"
     },
     "after_yuna_secret_2": {
         name: "유나",
         text: "\"쉿... 벽에도 귀가 있는 법이야. 진실을 알게 되면 더 이상 평범한 일상으로 돌아갈 수 없어. 그래도 괜찮다면... 내 손을 잡아.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "after_yuna_know"
     },
     "after_yuna_secret_deep": {
@@ -528,20 +529,20 @@ Object.assign(SCENARIO[1], {
     "after_yuna_boring_2": {
         name: "유나",
         text: "\"급식...? 그런 세속적인 이야기는 다른 애들이랑 해. 난 바쁘니까 방해하지 말고 나가줘.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "after_home"
     },
     "after_yuna_rude": {
         name: "유나",
         text: "(그녀가 책을 덮고 나를 차갑게 쳐다본다. 공기가 순식간에 얼어붙는 것 같다.)",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         stats: { Yuna: { affinity: -15 } },
         next: "after_yuna_rude_2"
     },
     "after_yuna_rude_2": {
         name: "유나",
         text: "\"아침부터라니...? 넌 아직 아무것도 모르고 있구나. 이 학교를 감싸고 있는 이 기묘한 기운... 넌 느껴지지 않아? 무지함은 때로 죄가 되기도 해. 당장 내 앞에서 사라져.\"",
-        character: "assets/images/characters/yuna_nomal.png",
+        character: "assets/images/characters/yuna_normal.png",
         next: "after_home"
     },
     "after_dain_new": {
@@ -595,7 +596,7 @@ Object.assign(SCENARIO[1], {
         text: "\"와, {name}! 가까이서 보니까 더 반가운데? 나한테 궁금한 거 있어? 운동이라든가, 학교생활이라든가!\"",
         context: "방과 후 노을 지는 체육관, 연습을 마친 다인과 즐겁게 대화를 나누는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 모두 끝나면 다인이 마지막 연습 세트를 끝내고 같이 맛있는 것을 먹으러 가자고 제안하는 상황으로 이어집니다. 대화의 마지막 턴에만 자연스럽게 연습을 마저 끝내야 한다거나 배가 고프다는 등의 이야기를 하며 다음 상황으로 유도해 주세요.",
         personality: "털털하고 시원시원한 성격의 배구부 에이스. 운동을 사랑하며 주인공에게 호의적이고 에너지가 넘침.",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         affinityChar: "Dain",
         affinityBranches: [
             { minAffinity: 20, next: "after_dain_3_high" },
@@ -632,7 +633,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(다인이와 즐겁게 대화를 마쳤다. 그녀는 마지막 연습 세트를 마무리할 테니 잠시만 기다려 달라고 했다. 연습이 끝나면 같이 맛있는 걸 먹으러 가기로 했다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         sunset: true,
         choices: [
             { text: "좋아, 내가 응원할게! 파이팅!", next: "after_dain_cheer_normal", stats: { Dain: { affinity: 5 } } },
@@ -752,7 +753,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(다인이는 쑥스러운 듯 코끝을 찡긋하며 웃는다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         sunset: true,
         next: "after_dain_cheer_normal_2"
     },
@@ -770,7 +771,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(다인이는 장난스럽게 내 어깨를 툭 친다.)",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         sunset: true,
         next: "after_dain_normal_2"
     },
@@ -778,7 +779,7 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "\"에이~ 아직은 잘 못하나 보네. 좋아. 이왕 김에 우리 연습 끝날 때까지 좀 기다려줄래? 같이 떡볶이라도 먹으러 가자!\"",
         background: "assets/images/background/gym.png",
-        character: "assets/images/characters/dain_nomal.png",
+        character: "assets/images/characters/dain_normal.png",
         sunset: true,
         next: "after_dain_end"
     },
@@ -803,23 +804,23 @@ Object.assign(SCENARIO[1], {
         text: "(김이 모락모락 나는 떡볶이를 크게 베어 물며 다인이는 행복한 미소를 짓는다.)",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_laugh.png",
-        night: true,
+        sunset: true,
         next: "after_dain_tteokbokki_2"
     },
     "after_dain_tteokbokki_2": {
         name: "다인",
         text: "\"와, 역시 운동 끝나고 먹는 떡볶이가 최고라니까! 오늘 같이 와줘서 정말 고마워. 덕분에 평소보다 백 배는 더 맛있는 것 같아!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_nomal.png",
-        night: true,
+        character: "assets/images/characters/dain_normal.png",
+        sunset: true,
         next: "after_dain_tteokbokki_3"
     },
     "after_dain_tteokbokki_3": {
         name: "다인",
         text: "\"우리 내일도.. 아니, 앞으로도 자주 같이 먹으러 오자! 약속이다?\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_nomal.png",
-        night: true,
+        character: "assets/images/characters/dain_normal.png",
+        sunset: true,
         branches: [
             { next: "after_home", condition: "has_number_dain" },
             { next: "dain_contact_exchange" }
@@ -829,8 +830,8 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(다인이는 떡볶이 국물을 닦으며 장난스럽게 스마트폰을 흔들어 보인다.) \"야 {name}! 우리 앞으로도 같이 맛있는 거 먹으러 다니려면 연락처는 있어야겠지? 번호 찍어줘!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_nomal.png",
-        night: true,
+        character: "assets/images/characters/dain_normal.png",
+        sunset: true,
         choices: [
             { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
             {
@@ -849,16 +850,17 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(다인이는 얼굴을 붉히며 당황한 듯 웃는다.) \"뭐, 뭐야! 갑자기... 내 목소리 듣고 싶다니... 너무 설레게 하는 거 아냐? 나 내일 연습 일찍 가야 하니까 너무 오래 하진 마!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shy.png",        night: true,        stats: { Dain: { affinity: 20 } },
+        character: "assets/images/characters/dain_shy.png",        sunset: true,
+        stats: { Dain: { affinity: 20 } },
         next: "after_home"
     },
     "dain_contact_call_fail": {
         name: "다인",
         text: "(다인이는 어이없다는 듯 웃음을 터뜨린다.) \"야, 너 진짜 웃긴다. 번호 받자마자 전화하니, 너무 서두르는 거 아냐? 일단 메시지부터 주고받으면서 친해지자고!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_shy.png",
-        night: true,
-        stats: { Dain: { affinity: -20 } },
+        character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        stats: { Dain: { affinity: -5 } },
         next: "after_home"
     },
     "dain_contact_success": {
@@ -866,7 +868,7 @@ Object.assign(SCENARIO[1], {
         text: "(다인이는 시원하게 웃으며 번호를 저장한다.) \"연락처 전송 완료! 내가 맛있는 곳 찾으면 바로 메시지 보낼 테니까 대기하고 있어!\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_laugh.png",
-        night: true,
+        sunset: true,
         stats: { Dain: { affinity: 15 } },
         next: "after_home"
     },
@@ -874,8 +876,8 @@ Object.assign(SCENARIO[1], {
         name: "다인",
         text: "(다인이는 조금 의외라는 듯 입술을 삐죽이게 하더니 이내 씩씩하게 웃어넘긴다.) \"뭐야~ 튕기는 거야? 알았어, 알았어. 내가 더 노력해서 네 번호 따고 만다!\"",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/dain_nomal.png",
-        night: true,
+        character: "assets/images/characters/dain_normal.png",
+        sunset: true,
         stats: { Dain: { affinity: -30 } },
         next: "after_home"
     },
