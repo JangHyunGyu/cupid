@@ -245,7 +245,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_follow_again": {
         name: "나",
-        text: "(유나를 따라 다시 지하실 창고로 내려갔다. 아까보다 공기가 더 차갑게 느껴진다. 노을빛이 창문을 통해 스며들지만 지하실은 여전히 어둡컍캽하다.)",
+        text: "(유나를 따라 다시 지하실 창고로 내려갔다. 아까보다 공기가 더 차갑게 느껴진다. 노을빛이 창문을 통해 스며들지만 지하실은 여전히 어두컴컴하다.)",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
@@ -254,7 +254,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_follow_new": {
         name: "나",
-        text: "(유나를 따라 지하실의 먼지 쌍인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다. 창문으로 노을빛이 희미하게 스며든다.)",
+        text: "(유나를 따라 지하실의 먼지 쌓인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다. 창문으로 노을빛이 희미하게 스며든다.)",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
