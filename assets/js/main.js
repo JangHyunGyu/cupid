@@ -177,6 +177,27 @@ function checkAffinityUnlock(charKey) {
     }
 }
 
+// 캐릭터별 프리토킹 횟수 증가
+function incrementFreeTalkCount(charKey) {
+    const progress = getGalleryProgress();
+    const charIdMap = {
+        'Seoyeon': 'seyoun',
+        'Yuna': 'yuna',
+        'Dain': 'dain',
+        'Teacher': 'teacher',
+        'Nurse': 'nurse'
+    };
+    const charId = charIdMap[charKey];
+    if (charId) {
+        if (!progress.characters[charId]) {
+            progress.characters[charId] = {};
+        }
+        progress.characters[charId].freeTalkCount = (progress.characters[charId].freeTalkCount || 0) + 1;
+        saveGalleryProgress(progress);
+        console.log(`[Gallery] FreeTalk count for ${charId}: ${progress.characters[charId].freeTalkCount}`);
+    }
+}
+
 // 프리토킹 관련 변수
 let freeTalkTurns = 0;
 let currentMaxTurns = 3;
@@ -1183,6 +1204,8 @@ async function skipFreeTalk() {
         freeTalkTurns = currentMaxTurns;
         gameState[`messaged_${currentSceneId}`] = true;
 
+        // 스킵 시에는 프리토킹 횟수 증가하지 않음
+
         chatContainer.style.display = 'none';
         isFreeTalking = false;
 
@@ -1200,6 +1223,15 @@ async function sendChatMessage() {
     chatInput.value = "";
     freeTalkTurns++;
     turnCountEl.textContent = currentMaxTurns - freeTalkTurns;
+
+    // 프리토킹 횟수 증가 (매 턴마다 1회)
+    const scene = getScene(currentSceneId);
+    const charNameMap = {
+        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
+        "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Homeroom Teacher": "Teacher", "Nurse": "Nurse"
+    };
+    const charKey = charNameMap[scene.name] || scene.name;
+    incrementFreeTalkCount(charKey);
 
     // 시스템 프롬프트의 턴 수 정보를 현재 진행 상황에 맞춰 업데이트
     if (freeTalkHistory.length > 0 && freeTalkHistory[0].role === "system") {
@@ -1409,6 +1441,8 @@ async function sendChatMessage() {
         // 에러 발생 시 즉시 대화 종료 처리
         freeTalkTurns = currentMaxTurns;
         gameState[`messaged_${currentSceneId}`] = true;
+
+        // 에러 시에는 프리토킹 횟수 증가하지 않음
 
         setTimeout(() => {
             chatContainer.style.display = 'none';
