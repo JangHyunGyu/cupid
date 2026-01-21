@@ -337,12 +337,54 @@ Object.assign(SCENARIO[1], {
         next: "classroom_2"
     },
     "classroom_2": {
-        name: "Homeroom Teacher",
-        text: "(Dozens of eyes turn toward me. The teacher taps on the desk to quiet the room.)",
+        affinityChar: "Seoyeon",
+        affinityBranches: [
+            { minAffinity: 25, next: "classroom_2_high" },
+            { minAffinity: 0, next: "classroom_2_normal" },
+            { minAffinity: -100, next: "classroom_2_low" }
+        ],
+        next: "classroom_2_normal"
+    },
+    "classroom_2_normal": {
+        name: "Me",
+        text: "(Dozens of eyes turn toward me as I stand before the class. Curious gazes, wary glances... Seoyeon smiles warmly beside me, watching over me.)",
         background: "assets/images/background/room_school.png",
         bgm: "daily.mp3",
-        character: "assets/images/characters/teacher_normal.png",
+        characters: {
+            left: "assets/images/characters/teacher_normal.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
         setFlag: "metTeacher",
+        next: "classroom_2_2"
+    },
+    "classroom_2_high": {
+        name: "Me",
+        text: "(Dozens of eyes turn toward me. Seoyeon stands beside me with a reassuring smile, cheering me on.)",
+        background: "assets/images/background/room_school.png",
+        bgm: "daily.mp3",
+        characters: {
+            left: "assets/images/characters/teacher_normal.png",
+            right: "assets/images/characters/seyoun_laugh.png"
+        },
+        setFlag: "metTeacher",
+        next: "classroom_2_2"
+    },
+    "classroom_2_low": {
+        name: "Me",
+        text: "(Dozens of eyes turn toward me. Seoyeon stands apart from me with a cold expression.)",
+        background: "assets/images/background/room_school.png",
+        bgm: "daily.mp3",
+        characters: {
+            left: "assets/images/characters/teacher_normal.png",
+            right: "assets/images/characters/seyoun_pout.png"
+        },
+        setFlag: "metTeacher",
+        next: "classroom_2_2"
+    },
+    "classroom_2_2": {
+        name: "Homeroom Teacher",
+        text: "(The air in the classroom feels heavy. The teacher taps on the desk to get everyone's attention.)",
+        character: "assets/images/characters/teacher_normal.png",
         next: "teacher_free_talk"
     },
     "teacher_free_talk": {

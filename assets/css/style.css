@@ -490,11 +490,11 @@ body, html {
     }
 
     #char-left {
-        transform: translateX(-40%);
+        transform: translateX(-70%);
     }
 
     #char-right {
-        transform: translateX(40%);
+        transform: translateX(-30%);
     }
 
     #dialogue-box {
