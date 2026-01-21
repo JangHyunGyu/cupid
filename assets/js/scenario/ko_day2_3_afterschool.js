@@ -657,7 +657,7 @@ Object.assign(SCENARIO[2], {
                 next: "nurse_contact_home_fail_after",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 65, next: "nurse_contact_home_success_after" }
+                    { minAffinity: 55, next: "nurse_contact_home_success_after" }
                 ]
             }
         ]
@@ -667,7 +667,7 @@ Object.assign(SCENARIO[2], {
         text: "(선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귃가에 속삭인다.) \"어머... {name}, 생각보다 훨씬 대담하네? 좋아, 오늘 저녁 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
-        stats: { Nurse: { affinity: 15 } },
+        stats: { Nurse: { affinity: 8 } },
         setFlags: ["invited_nurse_home"],
         next: "day2_end"
     },
