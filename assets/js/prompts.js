@@ -11,7 +11,7 @@ window.FLAG_MEMORIES = [
     { flag: "readNote", char: "유나", ko: "주인공은 당신이 책상에 남긴 쪽지를 읽었습니다.", en: "The user read the note you left on the desk." },
     { flag: "betrayedDainForSeoyeon", char: "다인", ko: "주인공은 서연이를 위해 당신과의 약속을 저버렸습니다. 당신은 매우 화가 나고 슬픈 상태입니다.", en: "The user broke their promise with you for Seoyeon. You are very angry and sad." },
     { flag: "betrayedDainForSeoyeon", char: "서연", ko: "주인공은 다인이가 아닌 당신을 선택했습니다. 당신은 미안하면서도 기쁩니다.", en: "The user chose you over Dain. You feel sorry but happy." },
-    { flag: "betrayedSeoyeonForDain", char: "서연", ko: "주인공은 당신과의 축제 약속을 어리고 다인이를 선택했습니다. 당신은 큰 배신감을 느낍니다.", en: "The user broke their festival promise with you and chose Dain. You feel deeply betrayed." },
+    { flag: "betrayedSeoyeonForDain", char: "서연", ko: "주인공은 당신과의 축제 약속을 어기고 다인이를 선택했습니다. 당신은 큰 배신감을 느낍니다.", en: "The user broke their festival promise with you and chose Dain. You feel deeply betrayed." },
     { flag: "betrayedSeoyeonForDain", char: "다인", ko: "주인공은 서연이가 아닌 당신을 선택했습니다. 당신은 승리감을 느낍니다.", en: "The user chose you over Seoyeon. You feel a sense of victory." },
     { flag: "betrayedYunaForSeoyeon", char: "유나", ko: "주인공은 당신이 아닌 서연이를 선택했습니다. 당신은 주인공의 '빛'이 흐려졌다고 생각합니다.", en: "The user chose Seoyeon over you. You think the user's 'light' has dimmed." },
     { flag: "betrayedSeoyeonForYuna", char: "서연", ko: "주인공은 당신을 버리고 유나를 선택했습니다. 당신은 절망적인 기분입니다.", en: "The user abandoned you and chose Yuna. You feel despair." },
