@@ -82,26 +82,26 @@ Object.assign(SCENARIO[2], {
     "day2_meet_nurse_standard": {
         name: "Nurse",
         text: "\"Oh, {name}! Good morning. You're looking quite lively today!\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_nurse_talk"
     },
     "day2_meet_nurse_high": {
         name: "Nurse",
         text: "(She walks up and tidies my uniform with a gentle touch.) \"My dear transfer student, what kind of dream did you have to be so radiant? I actually overslept a bit because I was thinking about you.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 5 } },
         next: "day2_nurse_talk"
     },
     "day2_meet_nurse_low": {
         name: "Nurse",
         text: "(She sighs and looks away as soon as she sees me.) \"Oh... it's you. It's a bit exhausting to see your face first thing in the morning. Head to class if you're done here.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk": {
         name: "Nurse",
         text: "(She leans in and gives me a playful wink.)",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "day2_nurse_talk_msg", condition: "sent_msg_day1_nurse" },
             { next: "day2_nurse_talk_has_number", condition: "has_number_nurse" },
@@ -111,19 +111,19 @@ Object.assign(SCENARIO[2], {
     "day2_nurse_talk_msg": {
         name: "Nurse",
         text: "\"The message you sent last night was so sweet. It helped me sleep with a smile. If you feel tired today, you know where to find me.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk_has_number": {
         name: "Nurse",
         text: "\"You weren't up all night thinking about me, were you? Hehe, just kidding. If you need a break, the nurse's office is always open.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk_no_number": {
         name: "Nurse",
         text: "\"Only your second day and you're already settling in. Don't push yourself too hard. Come visit me if you feel stressed.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_meet_seoyeon": {
@@ -248,7 +248,7 @@ Object.assign(SCENARIO[2], {
     "day2_meet_teacher": {
         name: "Teacher",
         text: "\"Oh, {name}. Already settling in, I see. It's good to see you arriving early on your second day.\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         next: "day2_teacher_free_talk"
     },
     "day2_teacher_free_talk": {
@@ -257,7 +257,7 @@ Object.assign(SCENARIO[2], {
         text: "\"We still have some time before the bell. Anything on your mind?\"",
         context: "Meeting the homeroom teacher at the school gate and walking to the classroom together. Keep the conversation going actively until it's finished. After the conversation, the teacher will ask for the protagonist's contact information for the emergency contact list. ONLY at the final turn of the conversation, please find a timing to ask for the number or hint that there is official business to discuss.",
         personality: "A professional teacher who is strict about rules but has a soft spot for the protagonist.",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         affinityChar: "Teacher",
         affinityBranches: [
             { minAffinity: 20, next: "day2_teacher_contact_ask_high" },
@@ -287,7 +287,7 @@ Object.assign(SCENARIO[2], {
     "day2_teacher_contact_ask": {
         name: "Me",
         text: "(I walked to class discussing various things with the teacher. She eventually asks for my number for the emergency contact list.)",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success_normal", setFlags: ["has_number_teacher", "has_any_contact"] },
             { text: "I'll let you know later in the faculty room.", next: "day2_classroom" }
@@ -310,7 +310,7 @@ Object.assign(SCENARIO[2], {
     "day2_teacher_contact_success_normal": {
         name: "Teacher",
         text: "\"Thank you. I'll reach out if anything comes up. Now, let's head in.\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         stats: { Teacher: { affinity: 10 } },
         next: "day2_classroom"
     },

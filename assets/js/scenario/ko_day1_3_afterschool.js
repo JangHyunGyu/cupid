@@ -885,7 +885,7 @@ Object.assign(SCENARIO[1], {
         name: "보건선생님",
         text: "(보건실 문을 열자, 선생님이 창가에서 차를 마시고 있다가 나를 보고 미소 짓는다.)",
         background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         next: "after_nurse_2"
     },
@@ -893,21 +893,21 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(나도 모르게 몸이 나른해져 보건실 쪽으로 발걸음을 옮겼다. 문을 열자 은은한 약초 향기와 함께 성숙한 분위기의 선생님이 나를 맞이한다.)",
         background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         next: "after_nurse_new_2"
     },
     "after_nurse_new_2": {
         name: "보건선생님",
         text: "\"어머, 처음 보는 얼굴이네? 오늘 전학 온 학생이니? 나는 보건선생님이야. 어디가 아파서 온 걸까?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         setFlag: "metNurse",
         next: "after_nurse_new_name_ask"
     },
     "after_nurse_new_name_ask": {
         name: "보건선생님",
         text: "\"그러고 보니 이름이 뭐야? 선생님한테만 살짝 알려줄래?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "after_nurse_new_name_share"
     },
     "after_nurse_new_name_share": {
@@ -919,13 +919,13 @@ Object.assign(SCENARIO[1], {
     "after_nurse_2": {
         name: "보건선생님",
         text: "\"{name}! 집에 가기 전에 나 보러 온 거니? 정말 착한 학생이네.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "nurse_after_day1_contact"
     },
     "nurse_after_day1_contact": {
         name: "보건선생님",
         text: "\"자, 여기 앉으렴. 따뜻한 차 한 잔 줄게. 나랑 좀 더 이야기하고 갈래?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "nurse_after_day1_contact_already", condition: "has_number_nurse" },
             { next: "nurse_after_day1_contact_choice" }
@@ -934,7 +934,7 @@ Object.assign(SCENARIO[1], {
     "nurse_after_day1_contact_already": {
         name: "나",
         text: "(따뜻한 차 향기가 코끝을 스친다. 어떻게 할까?)",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         choices: [
             { text: "네, 잠깐 쉬었다 갈게요.", next: "nurse_after_day1_contact_already_stay", stats: { Nurse: { affinity: 5 } } },
             { text: "오늘은 좀 피곤해서요...", next: "nurse_after_day1_contact_already_leave" }
@@ -943,25 +943,25 @@ Object.assign(SCENARIO[1], {
     "nurse_after_day1_contact_already_stay": {
         name: "보건선생님",
         text: "\"후훗, 착하네. 전학 첫날이라 힘들었지? 선생님이랑 잠깐 쉬어가렴.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "nurse_after_day1_contact_already_stay_2"
     },
     "nurse_after_day1_contact_already_stay_2": {
         name: "보건선생님",
         text: "\"...그래, 이제 슬슬 가봐야겠다. 힘들면 언제든 연락해, 알지?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "after_home"
     },
     "nurse_after_day1_contact_already_leave": {
         name: "보건선생님",
         text: "\"그래, 무리하지 말고. 힘들면 언제든 연락해, 알지? 조심해서 들어가.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "after_home"
     },
     "nurse_after_day1_contact_choice": {
         name: "나",
         text: "(따뜻한 차 향기가 코끝을 스친다. 어떻게 할까?)",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         choices: [
             { text: "네, 잠깐 쉬었다 갈게요.", next: "nurse_after_day1_contact_stay", stats: { Nurse: { affinity: 5 } } },
             { text: "오늘은 좀 피곤해서요...", next: "nurse_after_day1_contact_2" }
@@ -970,13 +970,13 @@ Object.assign(SCENARIO[1], {
     "nurse_after_day1_contact_stay": {
         name: "보건선생님",
         text: "\"후훗, 착하네. 전학 첫날이라 힘들었지? 선생님이랑 잠깐 쉬어가렴.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "nurse_after_day1_contact_stay_2"
     },
     "nurse_after_day1_contact_stay_2": {
         name: "보건선생님",
         text: "\"...그래, 이제 슬슬 가봐야겠다. {name}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         choices: [
             { text: "네, 알려주세요!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
             { text: "아직은 좀 부담스러워요.", next: "nurse_after_day1_contact_fail", stats: { Nurse: { affinity: -15 } } }
@@ -985,7 +985,7 @@ Object.assign(SCENARIO[1], {
     "nurse_after_day1_contact_2": {
         name: "보건선생님",
         text: "\"벌써 가려고? 아쉽네... {name}, 혹시 모르니까 내 번호 저장해둘래? 아프거나 고민 있으면 언제든 연락해.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         choices: [
             { text: "네, 알려주세요!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
             { text: "아직은 좀 부담스러워요.", next: "nurse_after_day1_contact_fail", stats: { Nurse: { affinity: -15 } } }
@@ -994,14 +994,14 @@ Object.assign(SCENARIO[1], {
     "nurse_after_day1_contact_success": {
         name: "보건선생님",
         text: "\"후훗, 착하네. 그럼 나중에 밤에 연락할게? 잘 가, {name}.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 10 } },
         next: "after_home"
     },
     "nurse_after_day1_contact_fail": {
         name: "보건선생님",
         text: "\"어머, 튕기는 거야? 알았어. 나중에 마음 바뀌면 말해줘. 조심해서 들어가!\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "after_home"
     }
 });

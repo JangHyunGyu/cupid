@@ -41,21 +41,21 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(I open the faculty room door. My teacher is organizing documents alone.)",
         background: "assets/images/background/teacher_room.png",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "after_teacher_2"
     },
     "after_teacher_2": {
         name: "Teacher",
         text: "\"Oh, {name}! What brings you here so late?\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "after_teacher_3"
     },
     "after_teacher_3": {
         name: "Teacher",
         text: "\"You must have many questions since it's your first day. Is there anything on your mind?\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         choices: [
             { text: "When are you leaving? I'd love to help.", next: "after_teacher_help", stats: { Teacher: { affinity: 5 } } },
@@ -334,7 +334,7 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(I visit the nurse's office. A mature woman greeted me with a seductive smile.)",
         background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         setFlag: "metNurse",
         next: "after_nurse_new_2"
@@ -342,14 +342,14 @@ Object.assign(SCENARIO[1], {
     "after_nurse_new_2": {
         name: "Nurse",
         text: "\"Oh? A new face. You must be the transfer student. I'm the school nurse. What brings you here? Not feeling well?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         setFlag: "metNurse",
         next: "after_nurse_new_name_ask"
     },
     "after_nurse_new_name_ask": {
         name: "Nurse",
         text: "\"By the way, what's your name? Won't you tell me?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "after_nurse_new_name_share"
     },
     "after_nurse_new_name_share": {
@@ -362,20 +362,20 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         text: "(I head to the nurse's office. The evening sun makes the room feel warm and private.)",
         background: "assets/images/background/nurse_room.jpg",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         next: "after_nurse_2"
     },
     "after_nurse_2": {
         name: "Nurse",
         text: "\"{name}! Stopping by to say goodbye? What a sweet student you are.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "nurse_after_day1_contact"
     },
     "nurse_after_day1_contact": {
         name: "Nurse",
         text: "\"Come, sit. Why don't we chat for a bit before you head home? I'll pour you some tea.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "nurse_after_day1_contact_already", condition: "has_number_nurse" },
             { next: "nurse_after_day1_contact_choice" }
@@ -384,7 +384,7 @@ Object.assign(SCENARIO[1], {
     "nurse_after_day1_contact_already": {
         name: "Me",
         text: "(The warm scent of tea fills the air. It's so peaceful here.)",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         choices: [
             { text: "Sure, I'll rest for a bit.", next: "nurse_after_day1_contact_already_stay", stats: { Nurse: { affinity: 5 } } },
             { text: "I'm a bit tired today...", next: "after_home" }
@@ -393,19 +393,19 @@ Object.assign(SCENARIO[1], {
     "nurse_after_day1_contact_already_stay": {
         name: "Nurse",
         text: "\"Hehe, how sweet. Take a short break with me. I've been waiting for someone to talk to.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "nurse_after_day1_contact_already_stay_2"
     },
     "nurse_after_day1_contact_already_stay_2": {
         name: "Nurse",
         text: "\"...Well, it's about time you head home. Contact me anytime if you double-think anything, okay?\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "after_home"
     },
     "nurse_after_day1_contact_choice": {
         name: "Me",
         text: "(The warm tea is tempting. What should I do?)",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         choices: [
             { text: "Sure, I'll rest for a bit.", next: "nurse_after_day1_contact_stay", stats: { Nurse: { affinity: 5 } } },
             { text: "I'm a bit tired today...", next: "after_home" }
@@ -414,13 +414,13 @@ Object.assign(SCENARIO[1], {
     "nurse_after_day1_contact_stay": {
         name: "Nurse",
         text: "\"Hehe, how sweet. Being a transfer student must be exhausting. Relax here for a while.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         next: "nurse_after_day1_contact_stay_2"
     },
     "nurse_after_day1_contact_stay_2": {
         name: "Nurse",
         text: "\"...It's time you head home. {name}, just in case, save my number. You can call me even if you're not sick.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         choices: [
             { text: "Yes, please tell me!", next: "nurse_after_day1_contact_success", setFlags: ["has_number_nurse", "has_any_contact"] },
             { text: "It's a bit overwhelming for now.", next: "after_home", stats: { Nurse: { affinity: -10 } } }
@@ -429,7 +429,7 @@ Object.assign(SCENARIO[1], {
     "nurse_after_day1_contact_success": {
         name: "Nurse",
         text: "\"Hehe, such a diligent student. Then I'll contact you tonight, okay? Goodbye, {name}.\"",
-        character: "assets/images/characters/nurse.png",
+        character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 10 } },
         next: "after_home"
     },

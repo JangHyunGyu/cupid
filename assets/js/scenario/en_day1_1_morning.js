@@ -341,7 +341,7 @@ Object.assign(SCENARIO[1], {
         text: "(Dozens of eyes turn toward me. The teacher taps on the desk to quiet the room.)",
         background: "assets/images/background/room_school.png",
         bgm: "daily.mp3",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         setFlag: "metTeacher",
         next: "teacher_free_talk"
     },
@@ -385,7 +385,7 @@ Object.assign(SCENARIO[1], {
     "classroom_2_3": {
         name: "Me",
         text: "(The talk with the teacher is over. Time for my official introduction. All eyes are on me.)",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you all!", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 10 } } },
             { text: "Hi! I love sports, let's get along!", next: "class_after_active", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 3 } } },

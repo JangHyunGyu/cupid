@@ -624,7 +624,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/room_school.png",
         bgm: "daily.mp3",
         characters: {
-            left: "assets/images/characters/teacher.png",
+            left: "assets/images/characters/teacher_normal.png",
             right: "assets/images/characters/seyoun_normal.png"
         },
         setFlag: "metTeacher",
@@ -636,7 +636,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/room_school.png",
         bgm: "daily.mp3",
         characters: {
-            left: "assets/images/characters/teacher.png",
+            left: "assets/images/characters/teacher_normal.png",
             right: "assets/images/characters/seyoun_laugh.png"
         },
         setFlag: "metTeacher",
@@ -648,7 +648,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/room_school.png",
         bgm: "daily.mp3",
         characters: {
-            left: "assets/images/characters/teacher.png",
+            left: "assets/images/characters/teacher_normal.png",
             right: "assets/images/characters/seyoun_pout.png"
         },
         setFlag: "metTeacher",
@@ -657,7 +657,7 @@ Object.assign(SCENARIO[1], {
     "classroom_2_2": {
         name: "담임선생님",
         text: "(교실 안의 공기가 무겁게 느껴진다. 담임선생님이 교탁을 탁탁 치며 주의를 집중시킨다.)",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         next: "teacher_free_talk"
     },
     "teacher_free_talk": {
@@ -702,7 +702,7 @@ Object.assign(SCENARIO[1], {
     "classroom_2_3": {
         name: "나",
         text: "(선생님과의 대화가 끝나고, 드디어 정식으로 반 아이들에게 소개될 시간이 왔다. 수많은 시선이 나에게 집중된다.)",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share_normal", setFlag: "knowsName_Teacher", stats: { Teacher: { affinity: 15 } } },
             { text: "좋아! 반 친구들이랑 오늘부터 잘 지내보자.", next: "class_after_party", setFlags: ["personality_active", "knowsName_Teacher"], stats: { Teacher: { affinity: 5 } } },
@@ -736,7 +736,7 @@ Object.assign(SCENARIO[1], {
     "teacher_name_share_normal": {
         name: "담임선생님",
         text: "\"자, {name}. 친구들에게 자기소개 한마디 부탁할게.\"",
-        character: "assets/images/characters/teacher.png",
+        character: "assets/images/characters/teacher_normal.png",
         choices: [
             { text: "엄청나게 텐션 높게 인사한다!", next: "class_after_party", setFlag: "personality_active" },
             { text: "활발하게 인사한다.", next: "class_after_active", setFlag: "personality_active" },
