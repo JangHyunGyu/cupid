@@ -726,8 +726,8 @@ function showExpressionLockPopup(charName, exprName, requiredAffinity) {
     showUnlockConditionPopup({
         title: currentLang === 'ko' ? '표정 미해금' : 'Expression Locked',
         message: currentLang === 'ko' 
-            ? `"${exprName}" 표정을 해금하려면\n호감도 ${requiredAffinity}이(가) 필요합니다.\n\n💕 현재 호감도: ${currentAffinity}\n🎯 필요 호감도: ${requiredAffinity}`
-            : `To unlock "${exprName}" expression,\nyou need ${requiredAffinity} affinity.\n\n💕 Current: ${currentAffinity}\n🎯 Required: ${requiredAffinity}`,
+            ? `"${exprName}" 표정을 해금하려면\n호감도 ${requiredAffinity}이(가) 필요합니다.\n\n💕 최대 호감도: ${currentAffinity}\n🎯 필요 호감도: ${requiredAffinity}`
+            : `To unlock "${exprName}" expression,\nyou need ${requiredAffinity} affinity.\n\n💕 Max Affinity: ${currentAffinity}\n🎯 Required: ${requiredAffinity}`,
         icon: '🔒'
     });
 }
@@ -745,8 +745,8 @@ function showBikiniLockPopup(charName) {
     showUnlockConditionPopup({
         title: currentLang === 'ko' ? '💎 특별 표정' : '💎 Special Expression',
         message: currentLang === 'ko' 
-            ? `${charName}의 특별한 모습을 보려면\n두 가지 조건을 모두 달성해야 합니다!\n\n💕 호감도: ${currentAffinity}/100 ${currentAffinity >= 100 ? '✅' : '❌'}\n💬 프리토킹: ${freeTalkCount}/100회 ${freeTalkCount >= 100 ? '✅' : '❌'}`
-            : `To see ${charName}'s special look,\nyou need to achieve both conditions!\n\n💕 Affinity: ${currentAffinity}/100 ${currentAffinity >= 100 ? '✅' : '❌'}\n💬 Free Talks: ${freeTalkCount}/100 ${freeTalkCount >= 100 ? '✅' : '❌'}`,
+            ? `${charName}의 특별한 모습을 보려면\n두 가지 조건을 모두 달성해야 합니다!\n\n💕 최대 호감도: ${currentAffinity}/100 ${currentAffinity >= 100 ? '✅' : '❌'}\n💬 프리토킹: ${freeTalkCount}/100회 ${freeTalkCount >= 100 ? '✅' : '❌'}`
+            : `To see ${charName}'s special look,\nyou need to achieve both conditions!\n\n💕 Max Affinity: ${currentAffinity}/100 ${currentAffinity >= 100 ? '✅' : '❌'}\n💬 Free Talks: ${freeTalkCount}/100 ${freeTalkCount >= 100 ? '✅' : '❌'}`,
         icon: '👙'
     });
 }
@@ -765,8 +765,8 @@ function showDescriptionLockPopup(charId) {
     showUnlockConditionPopup({
         title: currentLang === 'ko' ? '소개 미해금' : 'Description Locked',
         message: currentLang === 'ko' 
-            ? `${char.name}의 전체 소개를 보려면\n호감도 80이 필요합니다.\n\n💕 현재 호감도: ${currentAffinity}\n🎯 필요 호감도: 80`
-            : `To view ${char.name}'s full description,\nyou need 80 affinity.\n\n💕 Current: ${currentAffinity}\n🎯 Required: 80`,
+            ? `${char.name}의 전체 소개를 보려면\n호감도 80이 필요합니다.\n\n💕 최대 호감도: ${currentAffinity}\n🎯 필요 호감도: 80`
+            : `To view ${char.name}'s full description,\nyou need 80 affinity.\n\n💕 Max Affinity: ${currentAffinity}\n🎯 Required: 80`,
         icon: '📖'
     });
 }
@@ -789,16 +789,16 @@ function showStatLockPopup(statType, charName) {
         showUnlockConditionPopup({
             title: currentLang === 'ko' ? '몸무게 미해금' : 'Weight Locked',
             message: currentLang === 'ko' 
-                ? `${charName}의 몸무게를 보려면\n호감도 80이 필요합니다.\n\n💕 현재 호감도: ${currentAffinity}\n🎯 필요 호감도: 80`
-                : `To view ${charName}'s weight,\nyou need 80 affinity.\n\n💕 Current: ${currentAffinity}\n🎯 Required: 80`,
+                ? `${charName}의 몸무게를 보려면\n호감도 80이 필요합니다.\n\n💕 최대 호감도: ${currentAffinity}\n🎯 필요 호감도: 80`
+                : `To view ${charName}'s weight,\nyou need 80 affinity.\n\n💕 Max Affinity: ${currentAffinity}\n🎯 Required: 80`,
             icon: '⚖️'
         });
     } else if (statType === 'bust') {
         showUnlockConditionPopup({
             title: currentLang === 'ko' ? '신체사이즈 미해금' : 'Body Size Locked',
             message: currentLang === 'ko' 
-                ? `${charName}의 신체사이즈를 보려면\n호감도 100이 필요합니다.\n\n💕 현재 호감도: ${currentAffinity}\n🎯 필요 호감도: 100`
-                : `To view ${charName}'s body size,\nyou need 100 affinity.\n\n💕 Current: ${currentAffinity}\n🎯 Required: 100`,
+                ? `${charName}의 신체사이즈를 보려면\n호감도 100이 필요합니다.\n\n💕 최대 호감도: ${currentAffinity}\n🎯 필요 호감도: 100`
+                : `To view ${charName}'s body size,\nyou need 100 affinity.\n\n💕 Max Affinity: ${currentAffinity}\n🎯 Required: 100`,
             icon: '💝'
         });
     }
