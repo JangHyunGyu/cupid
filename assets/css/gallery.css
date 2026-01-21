@@ -1,0 +1,1225 @@
+/* ============================================================================
+   Cupid Gallery Styles (갤러리 스타일시트)
+   ============================================================================
+   
+   이 파일은 Cupid 게임 갤러리 페이지의 모든 스타일을 정의합니다.
+   
+   구조:
+   1. 기본 설정 (Reset & Base)
+   2. 헤더 (Header)
+   3. 탭 네비게이션 (Tab Navigation)
+   4. 캐릭터 도감 (Character Gallery)
+   5. 캐릭터 상세 모달 (Character Modal)
+   6. CG 갤러리 (CG Gallery)
+   7. 음악실 (Music Room)
+   8. 빈 상태 (Empty State)
+   9. 푸터 (Footer)
+   10. 반응형 디자인 (Responsive Design)
+   
+   ============================================================================ */
+
+/* ============================================================================
+   1. 기본 설정 (Reset & Base)
+   ============================================================================ */
+
+/* 
+ * CSS Reset (초기화)
+ * 브라우저마다 다른 기본 스타일을 통일시킴
+ */
+* {
+    margin: 0;                    /* 모든 요소의 기본 마진 제거 */
+    padding: 0;                   /* 모든 요소의 기본 패딩 제거 */
+    box-sizing: border-box;       /* 박스 크기 계산에 padding, border 포함 */
+}
+
+/* 
+ * 기본 바디/html 스타일
+ * 페이지 전체에 적용되는 기본 스타일
+ */
+body, html {
+    width: 100%;
+    height: 100%;
+    /* 그라데이션 배경: 어두운 네이비 계열 */
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+    font-family: 'Pretendard', sans-serif;   /* 한글 웹폰트 */
+    color: #fff;                              /* 기본 텍스트 색상: 흰색 */
+    overflow-x: hidden;                       /* 가로 스크롤 방지 */
+}
+
+/* ============================================================================
+   2. 헤더 (Header)
+   ============================================================================ */
+
+/*
+ * 갤러리 헤더
+ * 페이지 상단에 고정되어 항상 보임 (fixed)
+ */
+.gallery-header {
+    position: fixed;                /* 스크롤해도 고정 위치 유지 */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgba(26, 26, 46, 0.95);       /* 반투명 배경 */
+    backdrop-filter: blur(10px);               /* 배경 블러 효과 (글래스모피즘) */
+    display: flex;                             /* 플렉스박스로 정렬 */
+    align-items: center;                       /* 세로 중앙 정렬 */
+    justify-content: space-between;            /* 양쪽 끝 정렬 */
+    padding: 0 20px;
+    z-index: 100;                              /* 다른 요소 위에 표시 */
+    border-bottom: 1px solid rgba(255, 105, 180, 0.3);  /* 핑크색 하단 테두리 */
+}
+
+/* 헤더 제목 스타일 */
+.gallery-header h1 {
+    font-size: 1.5rem;
+    color: #ff69b4;              /* 핫핑크 색상 */
+    font-weight: 700;
+}
+
+/* 헤더 우측 버튼 컨테이너 */
+.header-actions {
+    display: flex;
+    gap: 10px;                   /* 버튼 사이 간격 */
+}
+
+/* 
+ * 돌아가기 버튼 & 언어 전환 버튼
+ * 둘 다 같은 스타일 사용
+ */
+.back-btn, .lang-btn {
+    background: rgba(255, 255, 255, 0.1);     /* 반투명 흰색 배경 */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;                       /* 둥근 모서리 (필 버튼 스타일) */
+    text-decoration: none;                     /* 링크 밑줄 제거 */
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;                      /* 부드러운 전환 효과 */
+}
+
+/* 버튼 호버 효과 */
+.back-btn:hover, .lang-btn:hover {
+    background: rgba(255, 105, 180, 0.3);     /* 핑크색 배경으로 변경 */
+    border-color: #ff69b4;
+}
+
+/* ============================================================================
+   3. 메인 컨테이너 & 탭 네비게이션 (Tab Navigation)
+   ============================================================================ */
+
+/* 메인 컨테이너 */
+.gallery-container {
+    margin-top: 60px;            /* 헤더 높이만큼 상단 마진 */
+    padding: 20px;
+    min-height: calc(100vh - 60px);   /* 최소 높이: 화면 높이 - 헤더 */
+}
+
+/* 탭 네비게이션 컨테이너 */
+.tab-nav {
+    display: flex;
+    justify-content: center;      /* 가운데 정렬 */
+    gap: 10px;                    /* 탭 버튼 사이 간격 */
+    margin-bottom: 30px;
+    flex-wrap: wrap;              /* 화면이 좁으면 줄바꿈 */
+}
+
+/* 탭 버튼 기본 스타일 */
+.tab-btn {
+    background: rgba(255, 255, 255, 0.05);
+    color: #aaa;                  /* 비활성 상태: 회색 텍스트 */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 24px;
+    border-radius: 25px;          /* 둥근 필 버튼 */
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* 탭 버튼 호버 효과 */
+.tab-btn:hover {
+    background: rgba(255, 105, 180, 0.2);
+    color: #fff;
+}
+
+/* 탭 버튼 활성 상태 */
+.tab-btn.active {
+    /* 핑크 그라데이션 배경 */
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: #fff;
+    border-color: transparent;
+    /* 핑크 그림자 효과 */
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+}
+
+/* ============================================================================
+   4. 탭 콘텐츠 (Tab Content)
+   ============================================================================ */
+
+/* 탭 콘텐츠 기본 (숨김 상태) */
+.tab-content {
+    display: none;                /* 기본적으로 숨김 */
+    animation: fadeIn 0.3s ease;  /* 나타날 때 페이드인 애니메이션 */
+}
+
+/* 탭 콘텐츠 활성 상태 */
+.tab-content.active {
+    display: block;               /* 활성 탭만 표시 */
+}
+
+/* 페이드인 애니메이션 정의 */
+@keyframes fadeIn {
+    from { 
+        opacity: 0;               /* 투명 → 불투명 */
+        transform: translateY(10px);   /* 아래에서 위로 슬라이드 */
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* ============================================================================
+   5. 캐릭터 도감 (Character Gallery)
+   ============================================================================ */
+
+/* 
+ * 캐릭터 그리드
+ * CSS Grid를 사용한 반응형 레이아웃
+ */
+.character-grid {
+    display: grid;
+    /* 
+     * auto-fill: 가능한 많은 열 생성
+     * minmax(280px, 1fr): 최소 280px, 최대 1fr (균등 분배)
+     */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;                    /* 카드 사이 간격 */
+    max-width: 1200px;            /* 최대 너비 제한 */
+    margin: 0 auto;               /* 가운데 정렬 */
+}
+
+/* 캐릭터 카드 */
+.character-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;          /* 둥근 모서리 */
+    overflow: hidden;             /* 내용이 넘치면 숨김 */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/* 카드 호버 효과 */
+.character-card:hover {
+    transform: translateY(-5px);  /* 위로 살짝 떠오름 */
+    border-color: rgba(255, 105, 180, 0.5);
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);  /* 핑크 그림자 */
+}
+
+/* 
+ * 잠긴 카드 스타일
+ * 해금되지 않은 캐릭터에 적용
+ */
+.character-card.locked {
+    filter: grayscale(1) brightness(0.5);   /* 흑백 + 어둡게 */
+    cursor: not-allowed;                     /* 클릭 금지 커서 */
+}
+
+/* 잠긴 카드는 호버 효과 제거 */
+.character-card.locked:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* 카드 이미지 영역 */
+.card-image {
+    position: relative;
+    height: 300px;
+    /* 그라데이션 배경 (이미지 로드 전 표시) */
+    background: linear-gradient(180deg, #2a2a4a 0%, #1a1a2e 100%);
+    display: flex;
+    align-items: flex-end;        /* 이미지를 하단에 배치 */
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* 카드 내 이미지 */
+.card-image img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;          /* 비율 유지하며 맞춤 */
+    transition: transform 0.3s;
+}
+
+/* 카드 호버 시 이미지 확대 효과 */
+.character-card:hover .card-image img {
+    transform: scale(1.05);       /* 5% 확대 */
+}
+
+/* 
+ * 잠금 오버레이
+ * 잠긴 카드 위에 자물쇠 아이콘 표시
+ */
+.lock-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);   /* 어두운 오버레이 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;                   /* 큰 자물쇠 이모지 */
+}
+
+/* 카드 정보 영역 */
+.card-info {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/* 캐릭터 이름 */
+.card-info h3 {
+    font-size: 1.2rem;
+    color: #ff69b4;               /* 핑크색 */
+    margin-bottom: 5px;
+}
+
+/* 캐릭터 타이틀 */
+.card-info p {
+    font-size: 0.85rem;
+    color: #aaa;                  /* 회색 */
+}
+
+/* 표정 개수 배지 */
+.expression-count {
+    display: inline-block;
+    background: rgba(255, 105, 180, 0.2);
+    color: #ff69b4;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    margin-top: 8px;
+}
+
+/* ============================================================================
+   6. 캐릭터 상세 모달 (Character Detail Modal)
+   ============================================================================ */
+
+/* 
+ * 모달 오버레이
+ * 전체 화면을 덮는 어두운 배경
+ */
+.modal-overlay {
+    display: none;                /* 기본적으로 숨김 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);   /* 90% 불투명 검정 */
+    z-index: 200;                      /* 헤더보다 위에 표시 */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 모달 활성 상태 */
+.modal-overlay.active {
+    display: flex;                /* 플렉스로 중앙 정렬 */
+}
+
+/* 모달 콘텐츠 박스 */
+.modal-content {
+    background: #1a1a2e;
+    border-radius: 20px;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;             /* 내용이 넘치면 스크롤 */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 105, 180, 0.3);
+}
+
+/* 모달 헤더 */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 모달 헤더 제목 */
+.modal-header h2 {
+    color: #ff69b4;
+    font-size: 1.5rem;
+}
+
+/* 모달 닫기 버튼 */
+.modal-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    color: #ff69b4;
+}
+
+/* 
+ * 모달 본문
+ * 캐릭터 이미지와 상세 정보를 나란히 배치
+ */
+.modal-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* 캐릭터 미리보기 영역 (왼쪽) */
+.character-preview {
+    flex: 1;                      /* 50% 너비 */
+    background: linear-gradient(180deg, #2a2a4a 0%, #1a1a2e 100%);
+    display: flex;
+    align-items: flex-start;      /* 이미지를 상단에서 시작 */
+    justify-content: center;
+    min-height: 400px;
+    position: relative;
+    padding-top: 20px;            /* 상단 여백 */
+}
+
+/* 캐릭터 미리보기 이미지 */
+.character-preview img {
+    height: auto;
+    max-height: 500px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* 캐릭터 상세 정보 영역 (오른쪽) */
+.character-details {
+    flex: 1;                      /* 50% 너비 */
+    padding: 20px;
+    overflow-y: auto;             /* 내용 많으면 스크롤 */
+}
+
+/* 상세 정보 섹션 (소개, 표정, 프로필) */
+.detail-section {
+    margin-bottom: 25px;
+}
+
+/* 섹션 제목 */
+.detail-section h4 {
+    color: #ff69b4;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;    /* 대문자로 표시 */
+    letter-spacing: 1px;          /* 자간 조정 */
+}
+
+/* 섹션 본문 */
+.detail-section p {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ============================================================================
+   7. 표정 선택기 (Expression Selector)
+   ============================================================================ */
+
+/* 표정 버튼 그리드 */
+.expression-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4열 */
+    gap: 8px;
+}
+
+/* 표정 버튼 */
+.expression-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    padding: 10px 5px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+/* 표정 버튼 호버 */
+.expression-btn:hover {
+    background: rgba(255, 105, 180, 0.2);
+    color: #fff;
+}
+
+/* 표정 버튼 활성 상태 */
+.expression-btn.active {
+    background: #ff69b4;
+    color: #fff;
+    border-color: transparent;
+}
+
+/* 표정 버튼 잠금 상태 */
+.expression-btn.locked {
+    background: rgba(50, 50, 50, 0.5);
+    color: #666;
+    cursor: pointer;
+    border-color: rgba(100, 100, 100, 0.3);
+}
+
+.expression-btn.locked:hover {
+    background: rgba(80, 80, 80, 0.5);
+    color: #888;
+}
+
+/* ============================================================================
+   8. 프로필 정보 표시 (Stats Display)
+   ============================================================================ */
+
+/* 프로필 그리드 (2열) */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* 개별 프로필 항목 */
+.stat-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* 프로필 항목 라벨 (나이, 생일 등) */
+.stat-label {
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+/* 프로필 항목 값 */
+.stat-value {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* 
+ * 잠긴 프로필 스탯
+ * 클릭하면 해금 조건 팝업 표시
+ */
+.locked-stat {
+    cursor: pointer;
+    padding: 2px 8px;
+    background: rgba(255, 105, 180, 0.2);
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.locked-stat:hover {
+    background: rgba(255, 105, 180, 0.4);
+}
+
+/* 
+ * 소개 더보기 버튼
+ * 호감도 80 이상일 때 전체 소개 표시
+ */
+.desc-more-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: #fff;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: all 0.2s;
+}
+
+.desc-more-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(255, 105, 180, 0.4);
+}
+
+/* ============================================================================
+   9. CG 갤러리 (CG Gallery)
+   ============================================================================ */
+
+/* CG 그리드 */
+.cg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* CG 카드 */
+.cg-card {
+    background: linear-gradient(145deg, rgba(40, 30, 60, 0.8), rgba(20, 15, 35, 0.9));
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid rgba(255, 105, 180, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* CG 카드 호버 효과 */
+.cg-card:hover:not(.locked) {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #ff69b4;
+    box-shadow: 0 20px 50px rgba(255, 105, 180, 0.4),
+                0 0 30px rgba(255, 105, 180, 0.2);
+}
+
+/* 잠긴 CG 카드 */
+.cg-card.locked {
+    cursor: pointer;
+    border-color: rgba(150, 100, 200, 0.3);
+}
+
+.cg-card.locked:hover {
+    transform: translateY(-5px);
+    border-color: rgba(200, 150, 255, 0.5);
+    box-shadow: 0 15px 40px rgba(150, 100, 200, 0.3);
+}
+
+/* CG 카드 이미지 영역 */
+.cg-card .card-image {
+    position: relative;
+    aspect-ratio: 16/9;           /* 16:9 비율 유지 */
+    overflow: hidden;
+}
+
+/* CG 카드 이미지 */
+.cg-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;            /* 영역을 채우도록 자름 */
+}
+
+/* 잠긴 CG 카드 배경 - 화려한 그라데이션 */
+.cg-card.locked .card-image {
+    background: linear-gradient(135deg, 
+        #1a1a2e 0%, 
+        #3d2a5f 20%, 
+        #2a1a4a 40%,
+        #4a2a6a 60%,
+        #2d1f4d 80%,
+        #1a1a2e 100%);
+    background-size: 400% 400%;
+    animation: gradientFlow 8s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* 배경 별빛 효과 */
+.cg-card.locked .card-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.3), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255,200,255,0.3), transparent),
+        radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.4), transparent),
+        radial-gradient(2px 2px at 130px 80px, rgba(200,200,255,0.3), transparent),
+        radial-gradient(1px 1px at 160px 30px, rgba(255,255,255,0.3), transparent);
+    animation: twinkle 4s ease-in-out infinite;
+}
+
+@keyframes gradientFlow {
+    0%, 100% { background-position: 0% 50%; }
+    25% { background-position: 100% 50%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0% 100%; }
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* 잠긴 CG 자물쇠 오버레이 개선 */
+.cg-card.locked .lock-overlay {
+    font-size: 3rem;
+    text-shadow: 0 0 20px rgba(255, 105, 180, 0.6),
+                 0 0 40px rgba(200, 100, 255, 0.4);
+    animation: lockPulse 2s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes lockPulse {
+    0%, 100% { 
+        transform: scale(1); 
+        filter: brightness(1);
+    }
+    50% { 
+        transform: scale(1.1); 
+        filter: brightness(1.3);
+    }
+}
+
+/* CG 카드 정보 */
+.cg-card .card-info {
+    padding: 15px 18px;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+}
+
+.cg-card .card-info h4 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 6px;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.cg-card .card-info p {
+    font-size: 0.8rem;
+    color: rgba(255, 200, 255, 0.8);
+    font-style: italic;
+}
+
+/* 
+ * CG 아이템 (대체 스타일)
+ * 이전 버전 호환용
+ */
+.cg-item {
+    position: relative;
+    aspect-ratio: 16/9;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.cg-item:hover {
+    transform: scale(1.02);
+    border-color: #ff69b4;
+}
+
+.cg-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cg-item.locked {
+    filter: brightness(0.3);
+    cursor: not-allowed;
+}
+
+/* 잠긴 CG 자물쇠 아이콘 */
+.cg-item.locked::after {
+    content: '🔒';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+/* CG 제목 오버레이 */
+.cg-item .cg-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* 아래에서 위로 그라데이션 (가독성 향상) */
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 30px 15px 15px;
+    font-size: 0.85rem;
+}
+
+/* ============================================================================
+   10. CG 모달 (CG Modal)
+   ============================================================================ */
+
+/* CG 모달 콘텐츠 */
+.cg-modal-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    text-align: center;
+}
+
+/* CG 뷰어 */
+.cg-viewer {
+    max-height: 70vh;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* CG 이미지 */
+.cg-viewer img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+/* CG 정보 */
+.cg-info h3 {
+    font-size: 1.2rem;
+    color: #ff69b4;
+    margin-bottom: 8px;
+}
+
+.cg-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+/* ============================================================================
+   11. 음악실 (Music Room)
+   ============================================================================ */
+
+/* 음악 목록 컨테이너 */
+.music-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* 음악 항목 */
+.music-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: linear-gradient(135deg, rgba(40, 30, 60, 0.6), rgba(25, 20, 40, 0.8));
+    padding: 18px 24px;
+    border-radius: 18px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 105, 180, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 음악 항목 호버 */
+.music-item:hover {
+    background: linear-gradient(135deg, rgba(60, 40, 90, 0.7), rgba(40, 25, 60, 0.9));
+    border-color: rgba(255, 105, 180, 0.5);
+    transform: translateX(5px);
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.15);
+}
+
+/* 재생 중인 음악 항목 */
+.music-item.playing {
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.25), rgba(200, 50, 150, 0.2));
+    border-color: #ff69b4;
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.3);
+    animation: musicGlow 2s ease-in-out infinite;
+}
+
+@keyframes musicGlow {
+    0%, 100% { box-shadow: 0 0 25px rgba(255, 105, 180, 0.3); }
+    50% { box-shadow: 0 0 35px rgba(255, 105, 180, 0.5); }
+}
+
+/* 잠긴 음악 항목 */
+.music-item.locked {
+    opacity: 0.7;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgba(50, 45, 70, 0.5), rgba(30, 25, 45, 0.6));
+    border-color: rgba(150, 100, 200, 0.2);
+}
+
+.music-item.locked:hover {
+    background: linear-gradient(135deg, rgba(60, 50, 80, 0.6), rgba(40, 30, 55, 0.7));
+    border-color: rgba(200, 150, 255, 0.4);
+    transform: translateX(3px);
+}
+
+/* 잠긴 음악 아이콘 */
+.music-item.locked .music-icon {
+    background: linear-gradient(135deg, #4a3a6a, #3a2a5a);
+    box-shadow: 0 0 15px rgba(150, 100, 200, 0.3);
+}
+
+/* 음악 아이콘 (재생/정지/잠금) */
+.music-icon {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+    transition: all 0.3s;
+}
+
+.music-item:hover .music-icon {
+    transform: scale(1.05);
+}
+
+.music-item.playing .music-icon {
+    animation: iconPulse 1s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* 음악 정보 */
+.music-info {
+    flex: 1;
+}
+
+.music-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.music-info p {
+    font-size: 0.85rem;
+    color: rgba(255, 200, 255, 0.7);
+    font-style: italic;
+}
+
+/* 음악 재생 시간 */
+.music-duration {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+/* ============================================================================
+   12. 빈 상태 (Empty State)
+   ============================================================================ */
+
+/* 
+ * 빈 상태 메시지
+ * CG가 없거나 모두 잠겨있을 때 표시
+ */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+/* 빈 상태 아이콘 */
+.empty-state .icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+/* 빈 상태 제목 */
+.empty-state h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #888;
+}
+
+/* 빈 상태 설명 */
+.empty-state p {
+    font-size: 0.9rem;
+}
+
+/* ============================================================================
+   13. 푸터 (Footer)
+   ============================================================================ */
+
+.gallery-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* ============================================================================
+   14. 반응형 디자인 (Responsive Design)
+   ============================================================================
+   
+   미디어 쿼리를 사용하여 다양한 화면 크기에 대응
+   - 768px 이하: 태블릿/모바일 가로
+   - 480px 이하: 모바일 세로
+   
+   ============================================================================ */
+
+/* 태블릿/모바일 가로 (768px 이하) */
+@media (max-width: 768px) {
+    /* 헤더 제목 크기 축소 */
+    .gallery-header h1 {
+        font-size: 1.2rem;
+    }
+    
+    /* 캐릭터 그리드: 더 작은 카드 */
+    .character-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 12px;
+    }
+    
+    /* 카드 이미지 높이 축소 */
+    .card-image {
+        height: 200px;
+    }
+    
+    /* 카드 정보 패딩 조정 */
+    .card-info {
+        padding: 12px 15px;
+    }
+    
+    .card-info h3 {
+        font-size: 1rem;
+    }
+    
+    /* 
+     * 모달 본문: 세로 배치로 변경
+     * 이미지 위, 정보 아래
+     */
+    .modal-body {
+        flex-direction: column;
+        overflow: visible;
+    }
+    
+    /* 캐릭터 미리보기 높이 조정 */
+    .character-preview {
+        min-height: 350px;
+        max-height: 60vh;
+        overflow: hidden;
+    }
+    
+    /* 표정 버튼 3열로 변경 */
+    .expression-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* 탭 버튼 크기 축소 */
+    .tab-btn {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+}
+
+/* 모바일 세로 (480px 이하) */
+@media (max-width: 480px) {
+    /* 헤더 패딩 축소 */
+    .gallery-header {
+        padding: 0 15px;
+    }
+    
+    /* 헤더 버튼 간격 축소 */
+    .header-actions {
+        gap: 5px;
+    }
+    
+    /* 버튼 크기 축소 */
+    .back-btn, .lang-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    /* 캐릭터 그리드: 2열 고정 */
+    .character-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    /* 카드 이미지 더 작게 */
+    .card-image {
+        height: 180px;
+    }
+}
+
+/* ============================================================================
+   15. 해금 조건 팝업 (Unlock Condition Popup)
+   ============================================================================ */
+
+/* 팝업 오버레이 */
+.unlock-popup-overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 300;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.unlock-popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 팝업 콘텐츠 */
+.unlock-popup-content {
+    background: linear-gradient(135deg, #2a2a4a 0%, #1a1a2e 100%);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(255, 105, 180, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9) translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.unlock-popup-overlay.active .unlock-popup-content {
+    transform: scale(1) translateY(0);
+}
+
+/* 팝업 아이콘 */
+.unlock-popup-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* 팝업 제목 */
+.unlock-popup-title {
+    font-size: 1.3rem;
+    color: #ff69b4;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* 팝업 메시지 */
+.unlock-popup-message {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* 팝업 버튼 */
+.unlock-popup-btn {
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+}
+
+.unlock-popup-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.5);
+}
+
+.unlock-popup-btn:active {
+    transform: translateY(0);
+}
+
+/* ============================================================================
+   16. 캐릭터 카드 상태 (Character Card States)
+   ============================================================================
+   
+   캐릭터의 해금 상태에 따른 스타일 정의
+   - not-met: 아직 만나지 않은 캐릭터 (실루엿 표시)
+   - locked: 만났지만 해금되지 않음
+   - unlocked: 완전히 해금된 캐릭터
+   
+   ============================================================================ */
+
+/* 아직 만나지 않은 캐릭터 카드 */
+.character-card.not-met {
+    cursor: pointer;
+}
+
+.character-card.not-met:hover {
+    transform: translateY(-3px);
+}
+
+/* 
+ * 실루엣 이미지 효과
+ * 만나지 않은 캐릭터를 검은 그림자로 표시
+ * brightness(0): 완전히 검게 만듦
+ * contrast(1.2): 외곽선 강조
+ */
+.card-image img.silhouette {
+    filter: brightness(0) contrast(1.2);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+/* 미만남 카드 호버 시 실루엣 밝아짐 */
+.character-card.not-met:hover .silhouette {
+    opacity: 0.85;
+}
+
+/* 
+ * 미만남 카드의 자물쇠 아이콘
+ * 카드 중앙에 자물쇠 표시
+ */
+.character-card.not-met .lock-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    z-index: 2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 
+ * 만났지만 아직 해금되지 않은 카드
+ * 클릭 가능하며 미세한 호버 효과 적용
+ */
+.character-card.locked:not(.not-met) {
+    cursor: pointer;
+}
+
+.character-card.locked:not(.not-met):hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 
+ * 완전히 해금된 캐릭터 카드
+ * 모든 콘텐츠 열람 가능
+ */
+.character-card.unlocked {
+    cursor: pointer;
+}
+

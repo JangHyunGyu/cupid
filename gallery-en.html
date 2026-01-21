@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Gallery - Cupid</title>
+    <meta name="description" content="Cupid character profiles, event CGs, and music room. Revisit the characters and special moments from the game.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gallery - Cupid">
+    <meta property="og:description" content="Explore Cupid character profiles and event CGs.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/gallery.css?v=1.0.0">
+</head>
+<body>
+    <!-- Header -->
+    <header class="gallery-header">
+        <h1>📖 Gallery</h1>
+        <div class="header-actions">
+            <a href="index-en.html" class="back-btn">← Back</a>
+            <a href="gallery.html" class="lang-btn">한국어</a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="gallery-container">
+        <!-- Tab Navigation -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="characters">👤 Characters</button>
+            <button class="tab-btn" data-tab="cg">🖼️ Event CG</button>
+            <button class="tab-btn" data-tab="music">🎵 Music Room</button>
+        </nav>
+
+        <!-- Tab Contents -->
+        <section id="tab-characters" class="tab-content active">
+            <div id="character-grid" class="character-grid">
+                <!-- Characters will be rendered here -->
+            </div>
+        </section>
+
+        <section id="tab-cg" class="tab-content">
+            <div id="cg-grid" class="cg-grid">
+                <!-- CG items will be rendered here -->
+            </div>
+        </section>
+
+        <section id="tab-music" class="tab-content">
+            <div id="music-list" class="music-list">
+                <!-- Music items will be rendered here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Character Detail Modal -->
+    <div id="character-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 id="modal-char-name">Character Name</h2>
+                    <p id="modal-char-title" style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Title</p>
+                </div>
+                <button class="modal-close" onclick="closeCharacterModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="character-preview">
+                    <img id="modal-char-image" src="" alt="Character">
+                </div>
+                <div class="character-details">
+                    <div class="detail-section">
+                        <h4>Introduction</h4>
+                        <p id="modal-char-desc">Character description</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Expressions</h4>
+                        <div id="expression-buttons" class="expression-grid">
+                            <!-- Expression buttons -->
+                        </div>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Profile</h4>
+                        <div id="char-stats" class="stats-grid">
+                            <!-- Stats -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="gallery-footer">
+        <p>© 2025 ArcherLab. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/gallery.js?v=1.0.0"></script>
+</body>
+</html>

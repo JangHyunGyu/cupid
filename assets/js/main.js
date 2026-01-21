@@ -51,6 +51,132 @@ let gameState = {
     chatMemories: {} // 캐릭터별 대화 기록 저장
 };
 
+// ==========================================================================
+// 갤러리 해금 시스템 (Gallery Unlock System)
+// ==========================================================================
+
+// 갤러리 진행 상황 저장 키
+const GALLERY_STORAGE_KEY = 'cupid_gallery';
+
+// 갤러리 진행 상황 초기화/로드
+function getGalleryProgress() {
+    const saved = localStorage.getItem(GALLERY_STORAGE_KEY);
+    if (!saved) {
+        return {
+            characters: {},
+            cg: {},
+            bgm: { intro: { unlocked: true } } // intro BGM은 기본 해금
+        };
+    }
+    return JSON.parse(saved);
+}
+
+// 갤러리 진행 상황 저장
+function saveGalleryProgress(progress) {
+    localStorage.setItem(GALLERY_STORAGE_KEY, JSON.stringify(progress));
+}
+
+// 최대 호감도 업데이트 (표정 해금용)
+function updateMaxAffinity(charKey, currentAffinity) {
+    const progress = getGalleryProgress();
+    const charIdMap = {
+        'Seoyeon': 'seyoun',
+        'Yuna': 'yuna',
+        'Dain': 'dain',
+        'Teacher': 'teacher',
+        'Nurse': 'nurse'
+    };
+    const charId = charIdMap[charKey];
+    if (charId) {
+        if (!progress.characters[charId]) {
+            progress.characters[charId] = {};
+        }
+        const currentMax = progress.characters[charId].maxAffinity || 0;
+        if (currentAffinity > currentMax) {
+            progress.characters[charId].maxAffinity = currentAffinity;
+            saveGalleryProgress(progress);
+            console.log(`[Gallery] Max affinity updated for ${charId}: ${currentAffinity}`);
+        }
+    }
+}
+
+// 캐릭터 해금 (호감도 100 달성 시)
+function unlockCharacterGallery(charKey) {
+    const progress = getGalleryProgress();
+    const charIdMap = {
+        'Seoyeon': 'seyoun',
+        'Yuna': 'yuna',
+        'Dain': 'dain',
+        'Teacher': 'teacher',
+        'Nurse': 'nurse'
+    };
+    const charId = charIdMap[charKey];
+    if (charId && !progress.characters[charId]?.unlocked) {
+        if (!progress.characters[charId]) {
+            progress.characters[charId] = { met: true };
+        }
+        progress.characters[charId].unlocked = true;
+        progress.characters[charId].unlockedAt = Date.now();
+        saveGalleryProgress(progress);
+        console.log(`[Gallery] Character unlocked: ${charId}`);
+    }
+}
+
+// 캐릭터를 만났을 때 기록 (갤러리 카드 표시용)
+function markCharacterMet(charKey) {
+    const progress = getGalleryProgress();
+    const charIdMap = {
+        'Seoyeon': 'seyoun',
+        'Yuna': 'yuna',
+        'Dain': 'dain',
+        'Teacher': 'teacher',
+        'Nurse': 'nurse',
+        '서연': 'seyoun',
+        '유나': 'yuna',
+        '다인': 'dain',
+        '담임선생님': 'teacher',
+        '보건선생님': 'nurse'
+    };
+    const charId = charIdMap[charKey];
+    if (charId && !progress.characters[charId]?.met) {
+        if (!progress.characters[charId]) {
+            progress.characters[charId] = {};
+        }
+        progress.characters[charId].met = true;
+        progress.characters[charId].metAt = Date.now();
+        saveGalleryProgress(progress);
+        console.log(`[Gallery] Character met: ${charId}`);
+    }
+}
+
+// CG 해금
+function unlockCG(cgId) {
+    const progress = getGalleryProgress();
+    if (!progress.cg[cgId]?.unlocked) {
+        progress.cg[cgId] = { unlocked: true, unlockedAt: Date.now() };
+        saveGalleryProgress(progress);
+        console.log(`[Gallery] CG unlocked: ${cgId}`);
+    }
+}
+
+// BGM 해금
+function unlockBGM(bgmId) {
+    const progress = getGalleryProgress();
+    if (!progress.bgm[bgmId]?.unlocked) {
+        progress.bgm[bgmId] = { unlocked: true, unlockedAt: Date.now() };
+        saveGalleryProgress(progress);
+        console.log(`[Gallery] BGM unlocked: ${bgmId}`);
+    }
+}
+
+// 호감도 체크 및 캐릭터 해금
+function checkAffinityUnlock(charKey) {
+    const affinity = gameState.stats[charKey]?.affinity || 0;
+    if (affinity >= 100) {
+        unlockCharacterGallery(charKey);
+    }
+}
+
 // 프리토킹 관련 변수
 let freeTalkTurns = 0;
 let currentMaxTurns = 3;
@@ -241,6 +367,9 @@ function updateNameTag(name) {
     nameSpan.textContent = name;
     nameTagEl.appendChild(nameSpan);
 
+    // 캐릭터를 만났음을 기록 (갤러리용)
+    markCharacterMet(name);
+
     // 호감도 게이지 표시 (설정 확인, 기본값 true)
     const showAffinity = localStorage.getItem('showAffinity') !== 'false';
 
@@ -430,6 +559,12 @@ async function renderScene(sceneId) {
         const bgUrl = getAssetUrl(scene.background);
         lastBgUrl = bgUrl;
         
+        // CG 이미지인 경우 갤러리에 자동 해금
+        if (scene.background.includes('/cg/')) {
+            const cgFileName = scene.background.split('/').pop().replace('.png', '').replace('.jpg', '');
+            unlockCG(cgFileName);
+        }
+        
         await new Promise((resolve) => {
             const img = new Image();
             img.onload = () => {
@@ -469,6 +604,10 @@ async function renderScene(sceneId) {
                     gameState.stats[charKey].affinity = Math.max(-100, Math.min(100, gameState.stats[charKey].affinity + stats.affinity));
                     console.log(`Scene Stat Change (${charKey}): Affinity ${stats.affinity} (Total: Aff ${gameState.stats[charKey].affinity})`);
                     showAffinityChange(stats.affinity, charKey);
+                    // 최대 호감도 업데이트 (표정 해금용)
+                    updateMaxAffinity(charKey, gameState.stats[charKey].affinity);
+                    // 호감도 100 달성 시 갤러리 캐릭터 해금
+                    checkAffinityUnlock(charKey);
                 }
             }
         }
