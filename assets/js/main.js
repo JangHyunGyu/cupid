@@ -240,6 +240,32 @@ const modalMessage = document.getElementById('modal-message');
 const modalConfirmBtn = document.getElementById('modal-confirm-btn');
 const modalCancelBtn = document.getElementById('modal-cancel-btn');
 
+// 홈 버튼 관련 함수
+function showHomeConfirm() {
+    const homeModal = document.getElementById('homeConfirmModal');
+    if (homeModal) {
+        homeModal.style.display = 'flex';
+    }
+}
+
+function closeHomeConfirm(e) {
+    if (e && e.target !== e.currentTarget && e.target.id !== 'homeConfirmModal') return;
+    const homeModal = document.getElementById('homeConfirmModal');
+    if (homeModal) {
+        homeModal.style.display = 'none';
+    }
+}
+
+function goToHome() {
+    // BGM 정지
+    if (window.soundManager) {
+        soundManager.stopBgm();
+    }
+    // 시작 화면으로 이동
+    const isEn = document.documentElement.lang === 'en';
+    window.location.href = isEn ? 'index-en.html' : 'index.html';
+}
+
 // 설정 모달 관련 함수
 function openSettingsModal() {
     const settingsModal = document.getElementById('settingsModal');
