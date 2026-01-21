@@ -1382,6 +1382,10 @@ async function sendChatMessage() {
                     gameState.stats[charKey].affinity = Math.max(-100, Math.min(100, gameState.stats[charKey].affinity + affinityChange));
                     console.log(`AI Stat Change (${charKey}): Affinity ${affinityChange} (Total: Aff ${gameState.stats[charKey].affinity})`);
                     showAffinityChange(affinityChange, charKey);
+                    // 최대 호감도 업데이트 (갤러리 표정 해금용)
+                    updateMaxAffinity(charKey, gameState.stats[charKey].affinity);
+                    // 호감도 100 달성 시 갤러리 캐릭터 해금
+                    checkAffinityUnlock(charKey);
                 }
             }
             // 모든 스탯 태그 제거
