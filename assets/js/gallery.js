@@ -300,15 +300,21 @@ const GALLERY_CG = {
 const GALLERY_BGM = {
     ko: [
         { id: 'intro', name: '메인 테마', artist: 'Cupid OST', duration: '2:30', file: 'assets/audio/bgm/intro.mp3' },
-        { id: 'school', name: '학교 일상', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/school.mp3' },
-        { id: 'romantic', name: '설레는 순간', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/romantic.mp3' },
-        { id: 'tension', name: '긴장의 순간', artist: 'Cupid OST', duration: '2:00', file: 'assets/audio/bgm/tension.mp3' }
+        { id: 'daily', name: '학교 일상', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
+        { id: 'daily2', name: '평화로운 오후', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
+        { id: 'sunset1', name: '노을 지는 하교길', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
+        { id: 'sunset2', name: '설레는 순간', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+        { id: 'night1', name: '고요한 밤', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
+        { id: 'night2', name: '비밀스러운 밤', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' }
     ],
     en: [
         { id: 'intro', name: 'Main Theme', artist: 'Cupid OST', duration: '2:30', file: 'assets/audio/bgm/intro.mp3' },
-        { id: 'school', name: 'School Days', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/school.mp3' },
-        { id: 'romantic', name: 'Romantic Moment', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/romantic.mp3' },
-        { id: 'tension', name: 'Tense Moment', artist: 'Cupid OST', duration: '2:00', file: 'assets/audio/bgm/tension.mp3' }
+        { id: 'daily', name: 'School Days', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
+        { id: 'daily2', name: 'Peaceful Afternoon', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
+        { id: 'sunset1', name: 'Sunset Walk Home', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
+        { id: 'sunset2', name: 'Romantic Moment', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+        { id: 'night1', name: 'Quiet Night', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
+        { id: 'night2', name: 'Secret Night', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' }
     ]
 };
 
