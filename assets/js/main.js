@@ -57,18 +57,25 @@ let gameState = {
 
 // 갤러리 진행 상황 저장 키
 const GALLERY_STORAGE_KEY = 'cupid_gallery';
+const GALLERY_DATA_VERSION = 2;
 
 // 갤러리 진행 상황 초기화/로드
 function getGalleryProgress() {
     const saved = localStorage.getItem(GALLERY_STORAGE_KEY);
     if (!saved) {
         return {
+            version: GALLERY_DATA_VERSION,
             characters: {},
             cg: {},
             bgm: { intro: { unlocked: true } } // intro BGM은 기본 해금
         };
     }
-    return JSON.parse(saved);
+    const data = JSON.parse(saved);
+    // 버전이 없으면 추가
+    if (!data.version) {
+        data.version = GALLERY_DATA_VERSION;
+    }
+    return data;
 }
 
 // 갤러리 진행 상황 저장
