@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- ========================================================================
+         META 태그 설정
+         - charset: 문자 인코딩 (한글 지원을 위해 UTF-8 사용)
+         - viewport: 모바일 반응형을 위한 뷰포트 설정
+           * width=device-width: 디바이스 너비에 맞춤
+           * maximum-scale=1.0: 최대 확대 비율 제한
+           * user-scalable=no: 사용자 확대/축소 비활성화 (게임 UX를 위해)
+         - Cache-Control: 브라우저 캐시 비활성화 (개발/테스트용)
+         ======================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    
+    <!-- 파비콘 (브라우저 탭에 표시되는 아이콘) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- 페이지 제목 (브라우저 탭에 표시) -->
+    <title>갤러리 - Cupid</title>
+    
+    <!-- SEO 메타 태그 -->
+    <meta name="description" content="Cupid 캐릭터 도감, 이벤트 CG, 음악실. 게임에서 만난 캐릭터들과 특별한 순간들을 다시 감상하세요.">
+    <!-- 검색 엔진 크롤링 방지 (갤러리 페이지는 스포일러 포함) -->
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- ========================================================================
+         Open Graph 태그 (소셜 미디어 공유용)
+         - SNS에서 링크 공유 시 표시되는 정보 설정
+         ======================================================================== -->
+    <meta property="og:title" content="갤러리 - Cupid">
+    <meta property="og:description" content="Cupid 캐릭터 도감과 이벤트 CG를 감상하세요.">
+    <meta property="og:type" content="website">
+    
+    <!-- ========================================================================
+         폰트 및 스타일시트
+         - Pretendard: 한글 지원이 우수한 무료 폰트
+         - gallery.css: 갤러리 전용 스타일
+         - ?v=1.0.0: 캐시 버스팅용 버전 쿼리
+         ======================================================================== -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css?v=1.0.0">
+</head>
+<body>
+    <!-- ========================================================================
+         헤더 (Header)
+         - 고정 위치로 항상 상단에 표시
+         - 페이지 제목과 네비게이션 버튼 포함
+         ======================================================================== -->
+    <header class="gallery-header">
+        <!-- 페이지 제목 (이모지 + 텍스트) -->
+        <h1>📖 갤러리</h1>
+        
+        <!-- 헤더 우측 버튼들 -->
+        <div class="header-actions">
+            <!-- 메인 페이지로 돌아가기 버튼 -->
+            <a href="index.html" class="back-btn">← 돌아가기</a>
+            <!-- 영어 버전으로 전환 버튼 -->
+            <a href="gallery-en.html" class="lang-btn">English</a>
+        </div>
+    </header>
+
+    <!-- ========================================================================
+         메인 컨테이너 (Main Container)
+         - 실제 갤러리 콘텐츠가 표시되는 영역
+         - 탭 네비게이션 + 탭 콘텐츠로 구성
+         ======================================================================== -->
+    <main class="gallery-container">
+        
+        <!-- ====================================================================
+             탭 네비게이션 (Tab Navigation)
+             - 3개의 탭: 캐릭터 도감, 이벤트 CG, 음악실
+             - data-tab 속성: JavaScript에서 탭 식별에 사용
+             - active 클래스: 현재 선택된 탭 표시
+             ==================================================================== -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="characters">👤 캐릭터 도감</button>
+            <button class="tab-btn" data-tab="cg">🖼️ 이벤트 CG</button>
+            <button class="tab-btn" data-tab="music">🎵 음악실</button>
+        </nav>
+
+        <!-- ====================================================================
+             탭 콘텐츠 영역들 (Tab Contents)
+             - 각 탭에 해당하는 콘텐츠 섹션
+             - id="tab-xxx" 형식으로 JavaScript에서 제어
+             - active 클래스가 있는 섹션만 표시됨
+             ==================================================================== -->
+        
+        <!-- 캐릭터 도감 탭 -->
+        <section id="tab-characters" class="tab-content active">
+            <!-- JavaScript에서 동적으로 캐릭터 카드들이 렌더링됨 -->
+            <div id="character-grid" class="character-grid">
+                <!-- Characters will be rendered here by gallery.js -->
+            </div>
+        </section>
+
+        <!-- 이벤트 CG 탭 -->
+        <section id="tab-cg" class="tab-content">
+            <!-- JavaScript에서 동적으로 CG 카드들이 렌더링됨 -->
+            <div id="cg-grid" class="cg-grid">
+                <!-- CG items will be rendered here by gallery.js -->
+            </div>
+        </section>
+
+        <!-- 음악실 탭 -->
+        <section id="tab-music" class="tab-content">
+            <!-- JavaScript에서 동적으로 BGM 목록이 렌더링됨 -->
+            <div id="music-list" class="music-list">
+                <!-- Music items will be rendered here by gallery.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================================================
+         캐릭터 상세 모달 (Character Detail Modal)
+         - 캐릭터 카드 클릭 시 표시되는 팝업
+         - modal-overlay: 배경을 어둡게 하는 오버레이
+         - modal-content: 실제 모달 콘텐츠
+         ======================================================================== -->
+    <div id="character-modal" class="modal-overlay">
+        <div class="modal-content">
+            
+            <!-- 모달 헤더: 캐릭터 이름 + 닫기 버튼 -->
+            <div class="modal-header">
+                <div>
+                    <!-- 캐릭터 이름 (JavaScript에서 동적 설정) -->
+                    <h2 id="modal-char-name">캐릭터 이름</h2>
+                    <!-- 캐릭터 타이틀/별명 -->
+                    <p id="modal-char-title" style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">타이틀</p>
+                </div>
+                <!-- 모달 닫기 버튼 (X) -->
+                <button class="modal-close" onclick="closeCharacterModal()">✕</button>
+            </div>
+            
+            <!-- 모달 본문: 캐릭터 이미지 + 상세 정보 -->
+            <div class="modal-body">
+                
+                <!-- 왼쪽: 캐릭터 이미지 미리보기 -->
+                <div class="character-preview">
+                    <!-- 현재 선택된 표정의 캐릭터 이미지 -->
+                    <img id="modal-char-image" src="" alt="Character">
+                </div>
+                
+                <!-- 오른쪽: 캐릭터 상세 정보 -->
+                <div class="character-details">
+                    
+                    <!-- 캐릭터 소개 섹션 -->
+                    <div class="detail-section">
+                        <h4>소개</h4>
+                        <p id="modal-char-desc">캐릭터 설명</p>
+                    </div>
+                    
+                    <!-- 표정 변경 버튼 섹션 -->
+                    <div class="detail-section">
+                        <h4>표정 변화</h4>
+                        <!-- JavaScript에서 동적으로 표정 버튼들이 생성됨 -->
+                        <div id="expression-buttons" class="expression-grid">
+                            <!-- Expression buttons will be rendered here -->
+                        </div>
+                    </div>
+                    
+                    <!-- 캐릭터 프로필 정보 섹션 -->
+                    <div class="detail-section">
+                        <h4>프로필</h4>
+                        <!-- 나이, 생일, 키, 취미 등의 정보 표시 -->
+                        <div id="char-stats" class="stats-grid">
+                            <!-- Stats will be rendered here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================
+         푸터 (Footer)
+         - 저작권 정보 표시
+         ======================================================================== -->
+    <footer class="gallery-footer">
+        <p>© 2025 ArcherLab. All rights reserved.</p>
+    </footer>
+
+    <!-- ========================================================================
+         스크립트 (Scripts)
+         - gallery.js: 갤러리의 모든 기능을 담당하는 JavaScript
+         - ?v=1.0.0: 캐시 버스팅용 버전 쿼리
+         ======================================================================== -->
+    <script src="assets/js/gallery.js?v=1.0.0"></script>
+</body>
+</html>

@@ -98,6 +98,12 @@ class SoundManager {
         
         console.log("SoundManager: BGM 재생 요청 ->", path);
         
+        // BGM 갤러리 해금 (파일명에서 ID 추출)
+        const bgmId = path.split('/').pop().replace('.mp3', '').replace('.ogg', '');
+        if (typeof unlockBGM === 'function') {
+            unlockBGM(bgmId);
+        }
+        
         // 1. 기존 음악이 있다면 페이드 아웃 후 정지
         if (this.bgm) {
             this._fadeOut(this.bgm);
