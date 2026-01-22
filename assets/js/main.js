@@ -51,6 +51,160 @@ let gameState = {
     chatMemories: {} // 캐릭터별 대화 기록 저장
 };
 
+// ==========================================================================
+// 갤러리 해금 시스템 (Gallery Unlock System)
+// ==========================================================================
+
+// 갤러리 진행 상황 저장 키
+const GALLERY_STORAGE_KEY = 'cupid_gallery';
+const GALLERY_DATA_VERSION = 2;
+
+// 갤러리 진행 상황 초기화/로드
+function getGalleryProgress() {
+    const saved = localStorage.getItem(GALLERY_STORAGE_KEY);
+    if (!saved) {
+        return {
+            version: GALLERY_DATA_VERSION,
+            characters: {},
+            cg: {},
+            bgm: { intro: { unlocked: true } } // intro BGM은 기본 해금
+        };
+    }
+    const data = JSON.parse(saved);
+    // 버전이 없으면 추가
+    if (!data.version) {
+        data.version = GALLERY_DATA_VERSION;
+    }
+    return data;
+}
+
+// 갤러리 진행 상황 저장
+function saveGalleryProgress(progress) {
+    localStorage.setItem(GALLERY_STORAGE_KEY, JSON.stringify(progress));
+}
+
+// 최대 호감도 업데이트 (표정 해금용)
+function updateMaxAffinity(charKey, currentAffinity) {
+    const progress = getGalleryProgress();
+    const charIdMap = {
+        'Seoyeon': 'seyoun',
+        'Yuna': 'yuna',
+        'Dain': 'dain',
+        'Teacher': 'teacher',
+        'Nurse': 'nurse'
+    };
+    const charId = charIdMap[charKey];
+    if (charId) {
+        if (!progress.characters[charId]) {
+            progress.characters[charId] = {};
+        }
+        const currentMax = progress.characters[charId].maxAffinity || 0;
+        if (currentAffinity > currentMax) {
+            progress.characters[charId].maxAffinity = currentAffinity;
+            saveGalleryProgress(progress);
+            console.log(`[Gallery] Max affinity updated for ${charId}: ${currentAffinity}`);
+        }
+    }
+}
+
+// 캐릭터 해금 (호감도 100 달성 시)
+function unlockCharacterGallery(charKey) {
+    const progress = getGalleryProgress();
+    const charIdMap = {
+        'Seoyeon': 'seyoun',
+        'Yuna': 'yuna',
+        'Dain': 'dain',
+        'Teacher': 'teacher',
+        'Nurse': 'nurse'
+    };
+    const charId = charIdMap[charKey];
+    if (charId && !progress.characters[charId]?.unlocked) {
+        if (!progress.characters[charId]) {
+            progress.characters[charId] = { met: true };
+        }
+        progress.characters[charId].unlocked = true;
+        progress.characters[charId].unlockedAt = Date.now();
+        saveGalleryProgress(progress);
+        console.log(`[Gallery] Character unlocked: ${charId}`);
+    }
+}
+
+// 캐릭터를 만났을 때 기록 (갤러리 카드 표시용)
+function markCharacterMet(charKey) {
+    const progress = getGalleryProgress();
+    const charIdMap = {
+        'Seoyeon': 'seyoun',
+        'Yuna': 'yuna',
+        'Dain': 'dain',
+        'Teacher': 'teacher',
+        'Nurse': 'nurse',
+        '서연': 'seyoun',
+        '유나': 'yuna',
+        '다인': 'dain',
+        '담임선생님': 'teacher',
+        '보건선생님': 'nurse'
+    };
+    const charId = charIdMap[charKey];
+    if (charId && !progress.characters[charId]?.met) {
+        if (!progress.characters[charId]) {
+            progress.characters[charId] = {};
+        }
+        progress.characters[charId].met = true;
+        progress.characters[charId].metAt = Date.now();
+        saveGalleryProgress(progress);
+        console.log(`[Gallery] Character met: ${charId}`);
+    }
+}
+
+// CG 해금
+function unlockCG(cgId) {
+    const progress = getGalleryProgress();
+    if (!progress.cg[cgId]?.unlocked) {
+        progress.cg[cgId] = { unlocked: true, unlockedAt: Date.now() };
+        saveGalleryProgress(progress);
+        console.log(`[Gallery] CG unlocked: ${cgId}`);
+    }
+}
+
+// BGM 해금
+function unlockBGM(bgmId) {
+    const progress = getGalleryProgress();
+    if (!progress.bgm[bgmId]?.unlocked) {
+        progress.bgm[bgmId] = { unlocked: true, unlockedAt: Date.now() };
+        saveGalleryProgress(progress);
+        console.log(`[Gallery] BGM unlocked: ${bgmId}`);
+    }
+}
+
+// 호감도 체크 및 캐릭터 해금
+function checkAffinityUnlock(charKey) {
+    const affinity = gameState.stats[charKey]?.affinity || 0;
+    if (affinity >= 100) {
+        unlockCharacterGallery(charKey);
+    }
+}
+
+// 캐릭터별 프리토킹 횟수 증가
+function incrementFreeTalkCount(charKey) {
+    const progress = getGalleryProgress();
+    const charIdMap = {
+        'Seoyeon': 'seyoun',
+        'Yuna': 'yuna',
+        'Dain': 'dain',
+        'Teacher': 'teacher',
+        'Nurse': 'nurse'
+    };
+    const charId = charIdMap[charKey];
+    if (charId) {
+        if (!progress.characters[charId]) {
+            progress.characters[charId] = {};
+        }
+        progress.characters[charId].freeTalkCount = (progress.characters[charId].freeTalkCount || 0) + 1;
+        saveGalleryProgress(progress);
+        console.log(`[Gallery] FreeTalk count for ${charId}: ${progress.characters[charId].freeTalkCount}`);
+    }
+}
+
 // 프리토킹 관련 변수
 let freeTalkTurns = 0;
 let currentMaxTurns = 3;
@@ -85,6 +239,32 @@ const customModal = document.getElementById('custom-modal');
 const modalMessage = document.getElementById('modal-message');
 const modalConfirmBtn = document.getElementById('modal-confirm-btn');
 const modalCancelBtn = document.getElementById('modal-cancel-btn');
+
+// 홈 버튼 관련 함수
+function showHomeConfirm() {
+    const homeModal = document.getElementById('homeConfirmModal');
+    if (homeModal) {
+        homeModal.style.display = 'flex';
+    }
+}
+
+function closeHomeConfirm(e) {
+    if (e && e.target !== e.currentTarget && e.target.id !== 'homeConfirmModal') return;
+    const homeModal = document.getElementById('homeConfirmModal');
+    if (homeModal) {
+        homeModal.style.display = 'none';
+    }
+}
+
+function goToHome() {
+    // BGM 정지
+    if (window.soundManager) {
+        soundManager.stopBgm();
+    }
+    // 시작 화면으로 이동
+    const isEn = document.documentElement.lang === 'en';
+    window.location.href = isEn ? 'index-en.html' : 'index.html';
+}
 
 // 설정 모달 관련 함수
 function openSettingsModal() {
@@ -240,6 +420,9 @@ function updateNameTag(name) {
     const nameSpan = document.createElement('span');
     nameSpan.textContent = name;
     nameTagEl.appendChild(nameSpan);
+
+    // 캐릭터를 만났음을 기록 (갤러리용)
+    markCharacterMet(name);
 
     // 호감도 게이지 표시 (설정 확인, 기본값 true)
     const showAffinity = localStorage.getItem('showAffinity') !== 'false';
@@ -430,6 +613,12 @@ async function renderScene(sceneId) {
         const bgUrl = getAssetUrl(scene.background);
         lastBgUrl = bgUrl;
         
+        // CG 이미지인 경우 갤러리에 자동 해금
+        if (scene.background.includes('/cg/')) {
+            const cgFileName = scene.background.split('/').pop().replace('.png', '').replace('.jpg', '');
+            unlockCG(cgFileName);
+        }
+        
         await new Promise((resolve) => {
             const img = new Image();
             img.onload = () => {
@@ -441,14 +630,6 @@ async function renderScene(sceneId) {
             img.onerror = resolve; // 에러 발생 시에도 다음 단계로 진행
             img.src = bgUrl;
         });
-        
-        // CG 이벤트 해금 체크 (갤러리에 등록된 CG 배경이면 해금)
-        if (typeof getCGIdFromPath === 'function') {
-            const cgId = getCGIdFromPath(scene.background);
-            if (cgId && typeof unlockCG === 'function') {
-                unlockCG(cgId);
-            }
-        }
     }
 
     // 레이스 컨디션 방지
@@ -477,6 +658,10 @@ async function renderScene(sceneId) {
                     gameState.stats[charKey].affinity = Math.max(-100, Math.min(100, gameState.stats[charKey].affinity + stats.affinity));
                     console.log(`Scene Stat Change (${charKey}): Affinity ${stats.affinity} (Total: Aff ${gameState.stats[charKey].affinity})`);
                     showAffinityChange(stats.affinity, charKey);
+                    // 최대 호감도 업데이트 (표정 해금용)
+                    updateMaxAffinity(charKey, gameState.stats[charKey].affinity);
+                    // 호감도 100 달성 시 갤러리 캐릭터 해금
+                    checkAffinityUnlock(charKey);
                 }
             }
         }
@@ -858,6 +1043,68 @@ async function startFreeTalk(scene) {
     }
 }
 
+
+function hasBatchim(str) {
+    if (!str || str.length === 0) return false;
+    const lastChar = str[str.length - 1];
+    const code = lastChar.charCodeAt(0);
+   
+    // 받침 계산: (유니코드 - 0xAC00) % 28
+    return (code - 0xAC00) % 28 !== 0;
+}
+
+function getProperParticle(name, nextChars) {
+    const batchim = hasBatchim(name);
+   
+    if (nextChars.startsWith('이가') || nextChars.startsWith('가')) {
+        return batchim ? '이' : '가';
+    } else if (nextChars.startsWith('을를') || nextChars.startsWith('를')) {
+        return batchim ? '을' : '를';
+    } else if (nextChars.startsWith('은는') || nextChars.startsWith('는')) {
+        return batchim ? '은' : '는';
+    } else if (nextChars.startsWith('이다') || nextChars.startsWith('다')) {
+        return batchim ? '이다' : '다';
+    } else if (nextChars.startsWith('으로') || nextChars.startsWith('로')) {
+        return batchim ? '으로' : '로';
+    } else if (nextChars.startsWith('와') || nextChars.startsWith('과')) {
+        return batchim ? '과' : '와';
+    } else if (nextChars.startsWith('이랑') || nextChars.startsWith('랑')) {
+        return batchim ? '이랑' : '랑';
+    } else if (nextChars.startsWith('이나') || nextChars.startsWith('나')) {
+        return batchim ? '이나' : '나';
+    } else if (nextChars.startsWith('야') || nextChars.startsWith('아')) {
+        return batchim ? '아' : '야';
+    }
+    // 받침에 상관없는 조사
+    else if (nextChars.startsWith('의') || 
+             nextChars.startsWith('에') ||
+             nextChars.startsWith('에서') ||
+             nextChars.startsWith('에게') ||
+             nextChars.startsWith('한테') ||
+             nextChars.startsWith('에게서') ||
+             nextChars.startsWith('한테서') ||
+             nextChars.startsWith('하고') ||
+             nextChars.startsWith('도') ||
+             nextChars.startsWith('만') ||
+             nextChars.startsWith('까지') ||
+             nextChars.startsWith('부터') ||
+             nextChars.startsWith('조차') ||
+             nextChars.startsWith('마저') ||
+             nextChars.startsWith('뿐') ||
+             nextChars.startsWith('이나마') ||
+             nextChars.startsWith('밖에') ||
+             nextChars.startsWith('처럼') ||
+             nextChars.startsWith('같이') ||
+             nextChars.startsWith('보다') ||
+             nextChars.startsWith('마다') ||
+             nextChars.startsWith('씩') ||
+             nextChars.startsWith('대로')) {
+        return '';
+    }
+    
+    return '';
+}
+
 function typeText(text, charName) {
     if (text === undefined || text === null) {
         console.warn("typeText called with null/undefined text");
@@ -1052,6 +1299,8 @@ async function skipFreeTalk() {
         freeTalkTurns = currentMaxTurns;
         gameState[`messaged_${currentSceneId}`] = true;
 
+        // 스킵 시에는 프리토킹 횟수 증가하지 않음
+
         chatContainer.style.display = 'none';
         isFreeTalking = false;
 
@@ -1069,6 +1318,15 @@ async function sendChatMessage() {
     chatInput.value = "";
     freeTalkTurns++;
     turnCountEl.textContent = currentMaxTurns - freeTalkTurns;
+
+    // 프리토킹 횟수 증가 (매 턴마다 1회)
+    const scene = getScene(currentSceneId);
+    const charNameMap = {
+        "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
+        "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Homeroom Teacher": "Teacher", "Nurse": "Nurse"
+    };
+    const charKey = charNameMap[scene.name] || scene.name;
+    incrementFreeTalkCount(charKey);
 
     // 시스템 프롬프트의 턴 수 정보를 현재 진행 상황에 맞춰 업데이트
     if (freeTalkHistory.length > 0 && freeTalkHistory[0].role === "system") {
@@ -1219,6 +1477,10 @@ async function sendChatMessage() {
                     gameState.stats[charKey].affinity = Math.max(-100, Math.min(100, gameState.stats[charKey].affinity + affinityChange));
                     console.log(`AI Stat Change (${charKey}): Affinity ${affinityChange} (Total: Aff ${gameState.stats[charKey].affinity})`);
                     showAffinityChange(affinityChange, charKey);
+                    // 최대 호감도 업데이트 (갤러리 표정 해금용)
+                    updateMaxAffinity(charKey, gameState.stats[charKey].affinity);
+                    // 호감도 100 달성 시 갤러리 캐릭터 해금
+                    checkAffinityUnlock(charKey);
                 }
             }
             // 모든 스탯 태그 제거
@@ -1278,6 +1540,8 @@ async function sendChatMessage() {
         // 에러 발생 시 즉시 대화 종료 처리
         freeTalkTurns = currentMaxTurns;
         gameState[`messaged_${currentSceneId}`] = true;
+
+        // 에러 시에는 프리토킹 횟수 증가하지 않음
 
         setTimeout(() => {
             chatContainer.style.display = 'none';
