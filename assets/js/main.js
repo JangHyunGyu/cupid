@@ -61,9 +61,24 @@ const SAVE_STORAGE_KEY = 'cupid_save';
  * 현재 게임 상태를 localStorage에 저장
  */
 function saveGameState() {
+    // 현재 표시된 캐릭터 정보 수집
+    const charSlots = {
+        left: document.getElementById('char-left'),
+        center: document.getElementById('char-center'),
+        right: document.getElementById('char-right')
+    };
+    const currentCharacters = {};
+    for (const [slot, el] of Object.entries(charSlots)) {
+        const img = el?.querySelector('img');
+        if (img && img.src) {
+            currentCharacters[slot] = img.src;
+        }
+    }
+    
     const saveData = {
         currentSceneId: currentSceneId,
         lastBgUrl: lastBgUrl,
+        currentCharacters: currentCharacters,
         gameState: JSON.parse(JSON.stringify(gameState)), // deep copy
         savedAt: Date.now()
     };
@@ -1826,6 +1841,28 @@ window.initGameFromSave = async (saveData) => {
     // 마지막 배경 URL 복원
     if (saveData.lastBgUrl) {
         lastBgUrl = saveData.lastBgUrl;
+    }
+    
+    // 배경 이미지 직접 설정 (renderScene 전에 미리 설정)
+    if (saveData.lastBgUrl) {
+        const bgLayer = document.getElementById('background-layer');
+        if (bgLayer) {
+            bgLayer.style.backgroundImage = `url(${saveData.lastBgUrl})`;
+        }
+    }
+    
+    // 캐릭터 이미지 복원
+    if (saveData.currentCharacters) {
+        const charSlots = {
+            left: document.getElementById('char-left'),
+            center: document.getElementById('char-center'),
+            right: document.getElementById('char-right')
+        };
+        for (const [slot, src] of Object.entries(saveData.currentCharacters)) {
+            if (charSlots[slot] && src) {
+                charSlots[slot].innerHTML = `<img src="${src}" alt="character">`;
+            }
+        }
     }
     
     console.log('[Load] 게임 상태 복원 완료:', currentSceneId, gameState);
