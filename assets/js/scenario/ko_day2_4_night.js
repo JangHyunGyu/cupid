@@ -324,7 +324,7 @@ Object.assign(SCENARIO[2], {
         text: "(보건선생님께 어떤 메시지를 보낼까?)",
         branches: [
             { next: "day2_night_message_nurse_rest", condition: "day2_met_nurse_after" },
-            { next: "day2_night_message_nurse_rest", condition: "wokeUpInNurseRoom" },
+            { next: "day2_night_message_nurse_rest", condition: "woke_up_in_nurse_room" },
             { next: "day2_night_message_nurse_generic" }
         ]
     },

@@ -12,10 +12,10 @@ Object.assign(SCENARIO[2], {
         character: null,
         choices: [
             { text: "Go to see Seoyeon and her radiant smile.", next: "day2_lunch_seoyeon" },
-            { text: "Head to the library annex backyard as promised.", next: "day2_lunch_yuna", condition: "metYuna" },
-            { text: "Find out who left that mysterious note.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
-            { text: "Go to the gym to see Dain.", next: "day2_lunch_dain", condition: "metDain" },
-            { text: "Follow the lively sounds from the gymnasium.", next: "day2_lunch_dain", excludeCondition: "metDain" },
+            { text: "Head to the library annex backyard as promised.", next: "day2_lunch_yuna", condition: "met_yuna" },
+            { text: "Find out who left that mysterious note.", next: "day2_lunch_yuna", excludeCondition: "met_yuna" },
+            { text: "Go to the gym to see Dain.", next: "day2_lunch_dain", condition: "met_dain" },
+            { text: "Follow the lively sounds from the gymnasium.", next: "day2_lunch_dain", excludeCondition: "met_dain" },
             { text: "I need some rest. Heading to the nurse's office.", next: "day2_lunch_nurse" },
             { text: "Go to the faculty room to see the teacher.", next: "day2_lunch_teacher" }
         ]
@@ -147,7 +147,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Yuna's expression softens as she looks at me.)",
         branches: [
-            { next: "day2_yuna_talk_2_met_high", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_met_high", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_high" }
         ]
     },
@@ -155,7 +155,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Yuna gazes at me with cold, disappointed eyes.)",
         branches: [
-            { next: "day2_yuna_talk_2_met_low", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_met_low", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_low" }
         ]
     },
@@ -181,7 +181,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Yuna says she feels a strange pull toward me. She mentions a deep secret in this school and wants to show me.)",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         choices: [
             { text: "Are you the Yuna from the note? What secret?", next: "day2_yuna_new_name_ask_high", stats: { Yuna: { affinity: 5 } } },
             { text: "I just came because of the note. Who are you?", next: "day2_yuna_new_name_ask_high", stats: { Yuna: { affinity: 3 } } }
@@ -191,7 +191,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Yuna's eyes are cold. She says I don't look like I can handle the truth, but tells me to follow her since I'm here.)",
         character: "assets/images/characters/yuna_normal.png",
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         choices: [
             { text: "What's the secret? Show me.", next: "day2_yuna_new_name_ask_low", stats: { Yuna: { affinity: 5 } } },
             { text: "I'm leaving. This feels weird.", next: "day2_yuna_new_name_ask_low", stats: { Yuna: { affinity: 3 } } }
@@ -201,7 +201,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Yuna looks at me and begins to speak.)",
         branches: [
-            { next: "day2_yuna_talk_2_met_normal", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_met_normal", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_normal" }
         ]
     },
@@ -218,7 +218,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(Yuna says I must be curious about her. She offers to show me a deep secret of the school.)",
         character: "assets/images/characters/yuna_normal.png",
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         choices: [
             { text: "Who are you? And what secret?", next: "day2_yuna_new_name_ask_normal", stats: { Yuna: { affinity: 5 } } }
         ]
@@ -232,7 +232,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_high": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_high"
     },
     "day2_yuna_new_name_ask_low": {
@@ -244,7 +244,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_low": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_low"
     },
     "day2_yuna_new_name_ask_normal": {
@@ -256,14 +256,14 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_normal": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_normal"
     },
     "day2_yuna_secret_high": {
         name: "Yuna",
         text: "(Yuna gently interlocks her fingers with mine. I can feel her heart through her warm hand.)",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "visitedWarehouseAtLunch",
+        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_high"
     },
     "day2_yuna_secret_2_high": {
@@ -279,7 +279,7 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "(Yuna grabs my sleeve and pulls me forward.)",
         character: "assets/images/characters/yuna_normal.png",
-        setFlag: "visitedWarehouseAtLunch",
+        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_low"
     },
     "day2_yuna_secret_2_low": {
@@ -295,7 +295,7 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "(Yuna leads me toward the old warehouse. Her cold touch makes me shiver.)",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "visitedWarehouseAtLunch",
+        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_normal"
     },
     "day2_yuna_secret_2_normal": {
@@ -405,7 +405,7 @@ Object.assign(SCENARIO[2], {
         text: "(I open the gym. Dain, practicing hard, runs over with a wide grin.)",
         character: "assets/images/characters/dain_laugh.png",
         branches: [
-            { next: "day2_dain_lunch_talk", condition: "metDain" },
+            { next: "day2_dain_lunch_talk", condition: "met_dain" },
             { next: "day2_lunch_dain_new" }
         ]
     },
@@ -413,7 +413,7 @@ Object.assign(SCENARIO[2], {
         name: "???",
         text: "\"Oh! A new face! You're the transfer student, right? I'm Dain from the volleyball club!\"",
         character: "assets/images/characters/dain_laugh.png",
-        setFlag: "metDain",
+        setFlag: "met_dain",
         next: "day2_lunch_dain_new_name_ask"
     },
     "day2_lunch_dain_new_name_ask": {
@@ -425,7 +425,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_dain_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_Dain",
+        setFlag: "knows_name_dain",
         next: "day2_dain_lunch_talk_new"
     },
     "day2_dain_lunch_talk_new": {

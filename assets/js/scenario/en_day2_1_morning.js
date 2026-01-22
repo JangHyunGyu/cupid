@@ -42,10 +42,10 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(I turn around to see...)",
         branches: [
-            { next: "day2_meet_yuna", character: "Yuna", condition: "metYuna" },
-            { next: "day2_meet_nurse", character: "Nurse", condition: "metNurse" },
-            { next: "day2_meet_dain", character: "Dain", condition: "metDain" },
-            { next: "day2_meet_seoyeon", character: "Seoyeon", condition: "metSeoyeon" },
+            { next: "day2_meet_yuna", character: "Yuna", condition: "met_yuna" },
+            { next: "day2_meet_nurse", character: "Nurse", condition: "met_nurse" },
+            { next: "day2_meet_dain", character: "Dain", condition: "met_dain" },
+            { next: "day2_meet_seoyeon", character: "Seoyeon", condition: "met_seoyeon" },
             { next: "day2_meet_teacher" }
         ],
         selectByHighestAffinity: true
@@ -208,7 +208,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_laugh.png",
         branches: [
             { next: "day2_dain_talk_msg", condition: "sent_msg_day1_dain" },
-            { next: "day2_dain_talk_dated", condition: "datedDainDay1" },
+            { next: "day2_dain_talk_dated", condition: "dated_dain_day1" },
             { next: "day2_dain_talk_not_dated" }
         ]
     },
@@ -344,7 +344,7 @@ Object.assign(SCENARIO[2], {
         text: "(Yuna's note lingers in my mind all through class. What could it be?)",
         branches: [
             { next: "day2_morning_class_yuna_msg", condition: "sent_msg_day1_yuna" },
-            { next: "day2_morning_class_yuna_met", condition: "metYuna" },
+            { next: "day2_morning_class_yuna_met", condition: "met_yuna" },
             { next: "day2_morning_class_yuna_new" }
         ]
     },

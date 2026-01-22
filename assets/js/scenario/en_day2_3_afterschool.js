@@ -22,7 +22,7 @@ Object.assign(SCENARIO[2], {
         bgm: "sunset2.mp3",
         character: null,
         sunset: true,
-        setFlag: "wokeUpInNurseRoom",
+        setFlag: "woke_up_in_nurse_room",
         next: "day2_after_school"
     },
     "day2_after_school": {
@@ -31,12 +31,12 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "Go find Seoyeon to watch the sunset together.", next: "day2_after_seoyeon" },
-            { text: "Dive into the school's deep secrets with Yuna.", next: "day2_after_yuna", condition: "metYuna" },
-            { text: "Search for Yuna, the mysterious girl who left the note.", next: "day2_after_yuna", excludeCondition: "metYuna" },
-            { text: "Go help Dain practice, her sweat beads looking beautiful.", next: "day2_after_dain", condition: "metDain" },
-            { text: "Head to the lively gym, searching for Dain's voice.", next: "day2_after_dain", excludeCondition: "metDain" },
-            { text: "Talk more with the teacher who took care of me.", next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
-            { text: "Go to the infirmary, scented with faint medicine, to see the teacher.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" },
+            { text: "Dive into the school's deep secrets with Yuna.", next: "day2_after_yuna", condition: "met_yuna" },
+            { text: "Search for Yuna, the mysterious girl who left the note.", next: "day2_after_yuna", excludeCondition: "met_yuna" },
+            { text: "Go help Dain practice, her sweat beads looking beautiful.", next: "day2_after_dain", condition: "met_dain" },
+            { text: "Head to the lively gym, searching for Dain's voice.", next: "day2_after_dain", excludeCondition: "met_dain" },
+            { text: "Talk more with the teacher who took care of me.", next: "day2_after_nurse_stay", condition: "woke_up_in_nurse_room" },
+            { text: "Go to the infirmary, scented with faint medicine, to see the teacher.", next: "day2_after_nurse", excludeCondition: "woke_up_in_nurse_room" },
             { text: "Head to the faculty room to see my kind homeroom teacher.", next: "day2_after_teacher" }
         ]
     },
@@ -197,7 +197,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         branches: [
-            { next: "day2_after_yuna_met", condition: "metYuna" },
+            { next: "day2_after_yuna_met", condition: "met_yuna" },
             { next: "day2_after_yuna_new" }
         ]
     },
@@ -207,7 +207,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         branches: [
-            { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_follow_again", condition: "visited_warehouse_at_lunch" },
             { next: "day2_after_yuna_follow_new" }
         ]
     },
@@ -216,7 +216,7 @@ Object.assign(SCENARIO[2], {
         text: "\"You... you came because you're curious about me, right? This school hides a very deep secret.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         next: "day2_after_yuna_new_name_ask"
     },
     "day2_after_yuna_new_name_ask": {
@@ -230,7 +230,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "\"My name is {name}.\"",
         sunset: true,
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "day2_after_yuna_new_follow"
     },
     "day2_after_yuna_new_follow": {
@@ -239,7 +239,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
         branches: [
-            { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_follow_again", condition: "visited_warehouse_at_lunch" },
             { next: "day2_after_yuna_follow_new" }
         ]
     },
@@ -248,7 +248,7 @@ Object.assign(SCENARIO[2], {
         text: "(I follow Yuna back down to the basement warehouse. The air feels even colder than before. The sunset glow fades as we descend into the shadows.)",
         sunset: true,
         branches: [
-            { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },
             { next: "day2_after_yuna_3_pre_new" }
         ]
     },
@@ -257,7 +257,7 @@ Object.assign(SCENARIO[2], {
         text: "(I follow Yuna down to a dusty warehouse in the basement. A strange chill hangs in the air. The sunset light barely reaches this deep.)",
         sunset: true,
         branches: [
-            { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },
             { next: "day2_after_yuna_3_pre_new" }
         ]
     },
@@ -376,7 +376,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_normal.png",
         sunset: true,
         branches: [
-            { next: "day2_after_dain_met", condition: "metDain" },
+            { next: "day2_after_dain_met", condition: "met_dain" },
             { next: "day2_after_dain_new" }
         ]
     },
@@ -399,7 +399,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Haa, haa... Your reflexes are insane! We're perfectly in sync for our first time!\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
-        setFlag: "metDain",
+        setFlag: "met_dain",
         next: "day2_after_dain_new_name_ask"
     },
     "day2_after_dain_new_name_ask": {
@@ -413,7 +413,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "\"I'm {name}. I'm in Class 2-3, too.\"",
         sunset: true,
-        setFlag: "knowsName_Dain",
+        setFlag: "knows_name_dain",
         next: "day2_after_dain_3"
     },
     "day2_after_dain_3": {
@@ -492,7 +492,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         branches: [
-            { next: "day2_after_nurse_met", condition: "metNurse" },
+            { next: "day2_after_nurse_met", condition: "met_nurse" },
             { next: "day2_after_nurse_new" }
         ]
     },
@@ -552,7 +552,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Oh, a new face? Are you the transfer student? I'm the school nurse.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
-        setFlag: "metNurse",
+        setFlag: "met_nurse",
         next: "day2_after_nurse_new_name_ask"
     },
     "day2_after_nurse_new_name_ask": {
@@ -566,7 +566,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "\"My name is {name}.\"",
         sunset: true,
-        setFlag: "knowsName_Nurse",
+        setFlag: "knows_name_nurse",
         next: "day2_after_nurse_3"
     },
     "day2_after_nurse_3": {

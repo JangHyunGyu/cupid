@@ -22,7 +22,7 @@ Object.assign(SCENARIO[2], {
         bgm: "sunset2.mp3",
         character: null,
         sunset: true,
-        setFlag: "wokeUpInNurseRoom",
+        setFlag: "woke_up_in_nurse_room",
         next: "day2_after_school"
     },
     "day2_after_school": {
@@ -31,12 +31,12 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "함께 노을을 보고 싶은 서연이를 찾아가 본다.", next: "day2_after_seoyeon" },
-            { text: "유나와 함께 학교의 깊은 비밀 속으로 들어간다.", next: "day2_after_yuna", condition: "metYuna" },
-            { text: "비밀스러운 쪽지를 남긴 그녀, 유나를 찾아본다.", next: "day2_after_yuna", excludeCondition: "metYuna" },
-            { text: "땀방울이 아름다운 다인이의 연습을 도우러 간다.", next: "day2_after_dain", condition: "metDain" },
-            { text: "활기가 넘치는 체육관, 다인의 목소리를 찾아간다.", next: "day2_after_dain", excludeCondition: "metDain" },
-            { text: "나를 간호해준 선생님과 좀 더 대화를 나눈다.", next: "day2_after_nurse_stay", condition: "wokeUpInNurseRoom" },
-            { text: "은은한 약 냄새가 나는 보건실, 선생님을 보러 간다.", next: "day2_after_nurse", excludeCondition: "wokeUpInNurseRoom" },
+            { text: "유나와 함께 학교의 깊은 비밀 속으로 들어간다.", next: "day2_after_yuna", condition: "met_yuna" },
+            { text: "비밀스러운 쪽지를 남긴 그녀, 유나를 찾아본다.", next: "day2_after_yuna", excludeCondition: "met_yuna" },
+            { text: "땀방울이 아름다운 다인이의 연습을 도우러 간다.", next: "day2_after_dain", condition: "met_dain" },
+            { text: "활기가 넘치는 체육관, 다인의 목소리를 찾아간다.", next: "day2_after_dain", excludeCondition: "met_dain" },
+            { text: "나를 간호해준 선생님과 좀 더 대화를 나눈다.", next: "day2_after_nurse_stay", condition: "woke_up_in_nurse_room" },
+            { text: "은은한 약 냄새가 나는 보건실, 선생님을 보러 간다.", next: "day2_after_nurse", excludeCondition: "woke_up_in_nurse_room" },
             { text: "인자한 담임선생님이 계신 교무실로 발길을 옮긴다.", next: "day2_after_teacher" }
         ]
     },
@@ -197,7 +197,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         branches: [
-            { next: "day2_after_yuna_met", condition: "metYuna" },
+            { next: "day2_after_yuna_met", condition: "met_yuna" },
             { next: "day2_after_yuna_new" }
         ]
     },
@@ -207,7 +207,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         branches: [
-            { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_follow_again", condition: "visited_warehouse_at_lunch" },
             { next: "day2_after_yuna_follow_new" }
         ]
     },
@@ -216,7 +216,7 @@ Object.assign(SCENARIO[2], {
         text: "\"너... 내가 누군지 궁금해서 온 거지? 사실 이 학교에는 아주 깊은 비밀이 있어.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         next: "day2_after_yuna_new_name_ask"
     },
     "day2_after_yuna_new_name_ask": {
@@ -230,7 +230,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
         sunset: true,
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "day2_after_yuna_new_follow"
     },
     "day2_after_yuna_new_follow": {
@@ -239,7 +239,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
         branches: [
-            { next: "day2_after_yuna_follow_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_follow_again", condition: "visited_warehouse_at_lunch" },
             { next: "day2_after_yuna_follow_new" }
         ]
     },
@@ -248,7 +248,7 @@ Object.assign(SCENARIO[2], {
         text: "(유나를 따라 다시 지하실 창고로 내려갔다. 아까보다 공기가 더 차갑게 느껴진다. 노을빛이 창문을 통해 스며들지만 지하실은 여전히 어두컴컴하다.)",
         sunset: true,
         branches: [
-            { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },
             { next: "day2_after_yuna_3_pre_new" }
         ]
     },
@@ -257,7 +257,7 @@ Object.assign(SCENARIO[2], {
         text: "(유나를 따라 지하실의 먼지 쌓인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다. 창문으로 노을빛이 희미하게 스며든다.)",
         sunset: true,
         branches: [
-            { next: "day2_after_yuna_3_pre_again", condition: "visitedWarehouseAtLunch" },
+            { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },
             { next: "day2_after_yuna_3_pre_new" }
         ]
     },
@@ -376,7 +376,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_normal.png",
         sunset: true,
         branches: [
-            { next: "day2_after_dain_met", condition: "metDain" },
+            { next: "day2_after_dain_met", condition: "met_dain" },
             { next: "day2_after_dain_new" }
         ]
     },
@@ -399,7 +399,7 @@ Object.assign(SCENARIO[2], {
         text: "\"하아, 하아... 너 운동 신경 진짜 대박이다! 처음 보는데 호흡이 척척 맞네!\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
-        setFlag: "metDain",
+        setFlag: "met_dain",
         next: "day2_after_dain_new_name_ask"
     },
     "day2_after_dain_new_name_ask": {
@@ -413,7 +413,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "\"난 {name}(이)고 나도 2학년 3반이야.\"",
         sunset: true,
-        setFlag: "knowsName_Dain",
+        setFlag: "knows_name_dain",
         next: "day2_after_dain_3"
     },
     "day2_after_dain_3": {
@@ -492,7 +492,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         branches: [
-            { next: "day2_after_nurse_met", condition: "metNurse" },
+            { next: "day2_after_nurse_met", condition: "met_nurse" },
             { next: "day2_after_nurse_new" }
         ]
     },
@@ -552,7 +552,7 @@ Object.assign(SCENARIO[2], {
         text: "\"어머, 처음 보는 얼굴이네? 이번에 전학 온 학생이니? 나는 보건선생님이야.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
-        setFlag: "metNurse",
+        setFlag: "met_nurse",
         next: "day2_after_nurse_new_name_ask"
     },
     "day2_after_nurse_new_name_ask": {
@@ -566,7 +566,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "\"제 이름은 {name}(이)에요.\"",
         sunset: true,
-        setFlag: "knowsName_Nurse",
+        setFlag: "knows_name_nurse",
         next: "day2_after_nurse_3"
     },
     "day2_after_nurse_3": {

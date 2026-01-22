@@ -38,21 +38,21 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(나를 발견하자마자 환하게 웃으며 달려온다. 반가움이 눈에 가득하다.) \"{name}! 한참 찾았잖아. 우리 같이 점심 먹으러 가자. 아주 특별한 곳으로 안내할게!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        setFlag: "metSeoyeon",
+        setFlag: "met_seoyeon",
         next: "rooftop_1"
     },
     "lunch_seoyeon_low": {
         name: "서연",
         text: "(나를 보더니 살짝 어색한 미소를 짓는다.) \"아, {name}... 마침 잘 됐네. 선생님이 챙겨주라고 하셔서. 괜찮으면 옥상에서 먹을래? 조용하고 좋아.\"",
         character: "assets/images/characters/seyoun_pout.png",
-        setFlag: "metSeoyeon",
+        setFlag: "met_seoyeon",
         next: "lunch_seoyeon_2_normal"
     },
     "lunch_seoyeon_normal_branch": {
         name: "서연",
         text: "(서연에게 다가가자 그녀가 생긋 웃으며 고개를 끄덕인다.)",
         character: "assets/images/characters/seyoun_normal.png",
-        setFlag: "metSeoyeon",
+        setFlag: "met_seoyeon",
         branches: [
             { next: "lunch_seoyeon_2_study", condition: "personality_study" },
             { next: "lunch_seoyeon_2_party", condition: "personality_active" },
@@ -504,14 +504,14 @@ Object.assign(SCENARIO[1], {
     "yuna_intro_name_share": {
         name: "나",
         text: "\"난 {name}(이)야. 오늘 전학 왔어.\"",
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "yuna_intro_2"
     },
     "yuna_intro_2": {
         name: "유나",
         text: "\"{name}... 후훗, 좋은 이름이네. 이 학교... 겉보기와는 많이 다르거든. 너한테서도.. 왠지 낯익은 분위기가 느껴져.\"",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         next: "yuna_free_talk"
     },
     "yuna_free_talk": {
@@ -736,7 +736,7 @@ Object.assign(SCENARIO[1], {
         text: "(체육관 문을 열자, 한 소녀가 배구 연습을 하고 있었다. 그녀가 나를 발견하고는 환하게 웃으며 손을 흔든다.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_normal.png",
-        setFlag: "metDain",
+        setFlag: "met_dain",
         branches: [
             { next: "lunch_dain_3_active", condition: "personality_active" },
             { next: "lunch_dain_3_normal" }
@@ -759,7 +759,7 @@ Object.assign(SCENARIO[1], {
     "dain_name_share": {
         name: "나",
         text: "\"나? 난 {name}(이)야. 오늘 전학 왔어.\"",
-        setFlag: "knowsName_Dain",
+        setFlag: "knows_name_dain",
         next: "dain_name_share_2"
     },
     "dain_name_share_2": {
@@ -774,7 +774,7 @@ Object.assign(SCENARIO[1], {
         text: "\"자, 여기가 내 구역이야! {name}, 준비됐어? 봐주지 않을 거니까 각오하라고!\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_normal.png",
-        setFlag: "metDain",
+        setFlag: "met_dain",
         choices: [
             { text: "좋아, 어디 한번 해보자!", next: "lunch_dain_play" },
             { text: "배구는 잘 못하는데... 가르쳐줄래?", next: "lunch_dain_teach" }
@@ -811,21 +811,21 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         branches: [
-            { next: "nurse_intro", excludeCondition: "knowsName_Nurse" },
-            { next: "nurse_name_share_pre", condition: "knowsName_Nurse" }
+            { next: "nurse_intro", excludeCondition: "knows_name_nurse" },
+            { next: "nurse_name_share_pre", condition: "knows_name_nurse" }
         ]
     },
     "nurse_intro": {
         name: "보건선생님",
         text: "\"나는 이곳의 보건 교사야. 애들은 그냥 '선생님'이라고 부르지만.. 너한테는 특별히 내 이름을 알려줄 수도 있는데?\"",
         character: "assets/images/characters/nurse_normal.png",
-        setFlag: "metNurse",
+        setFlag: "met_nurse",
         next: "nurse_name_share_pre"
     },
     "nurse_name_share_pre": {
         name: "나",
         text: "\"제 이름은 '{name}'(이)에요.\"",
-        setFlag: "knowsName_Nurse",
+        setFlag: "knows_name_nurse",
         branches: [
             { next: "nurse_name_share_study", condition: "personality_study" },
             { next: "nurse_name_share_normal" }
