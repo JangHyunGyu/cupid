@@ -315,7 +315,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_high": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
-        character: null,
+        character: "assets/images/characters/yuna_smile.png",
         setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_high"
     },
@@ -328,7 +328,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_low": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
-        character: null,
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_low"
     },
@@ -341,7 +341,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_normal": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
-        character: null,
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_normal"
     },
@@ -523,7 +523,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_dain_new_name_share": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
-        character: null,
+        character: "assets/images/characters/dain_laugh.png",
         setFlag: "knows_name_dain",
         next: "day2_dain_lunch_talk_new"
     },
@@ -809,6 +809,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_lunch_end": {
         name: "나",
         text: "(다인이와 시끌벅적하게 점심을 먹고 교실로 돌아왔다. 그녀의 밝은 에너지 덕분에 오후 수업도 힘낼 수 있을 것 같다.)",
+        character: null,
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {
@@ -880,7 +881,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_nurse_new_name_share": {
         name: "나",
         text: "\"제 이름은 {name}(이)에요.\"",
-        character: null,
+        character: "assets/images/characters/nurse_normal.png",
         setFlag: "knows_name_nurse",
         next: "day2_lunch_nurse_3"
     },

@@ -64,6 +64,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_teacher_end": {
         name: "Me",
         text: "(After a brief but sweet chat, I head back. Her gentle smile stays with me.)",
+        character: null,
         next: "day2_afternoon_class"
     },
     "day2_lunch_seoyeon": {
@@ -143,6 +144,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_dain_yes": {
         name: "Me",
         text: "(I wonder how to answer Seoyeon's question.)",
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "Yeah, we met yesterday. She's bright and fun.", next: "day2_seoyeon_dain_honest", stats: { Seoyeon: { affinity: -3 }, Dain: { affinity: 2 } } },
             { text: "Just acquaintances. You're more important to me, Seoyeon.", next: "day2_seoyeon_dain_deny", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
@@ -152,6 +154,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_dain_no": {
         name: "Me",
         text: "\"(Dain Jung... I'll remember that.) No, first time seeing her. Why?\"",
+        character: "assets/images/characters/seyoun_normal.png",
         setFlag: "knows_name_dain",
         next: "day2_seoyeon_dain_no_react"
     },
@@ -182,6 +185,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_lunch_end": {
         name: "Me",
         text: "(After a lovely lunch with her, I return. The taste of her sandwiches is still lingering sweet.)",
+        character: null,
         next: "day2_afternoon_class"
     },
     "day2_lunch_yuna": {
@@ -221,6 +225,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_branch_high": {
         name: "Me",
         text: "(Yuna's expression softens as she looks at me.)",
+        character: "assets/images/characters/yuna_smile.png",
         branches: [
             { next: "day2_yuna_talk_2_met_high", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_high" }
@@ -229,6 +234,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_branch_low": {
         name: "Me",
         text: "(Yuna gazes at me with cold, disappointed eyes.)",
+        character: "assets/images/characters/yuna_normal.png",
         branches: [
             { next: "day2_yuna_talk_2_met_low", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_low" }
@@ -275,6 +281,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_branch": {
         name: "Me",
         text: "(Yuna looks at me and begins to speak.)",
+        character: "assets/images/characters/yuna_normal.png",
         branches: [
             { next: "day2_yuna_talk_2_met_normal", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_normal" }
@@ -308,6 +315,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_high": {
         name: "Me",
         text: "\"My name is {name}.\"",
+        character: "assets/images/characters/yuna_smile.png",
         setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_high"
     },
@@ -320,6 +328,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_low": {
         name: "Me",
         text: "\"My name is {name}.\"",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_low"
     },
@@ -332,6 +341,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_normal": {
         name: "Me",
         text: "\"My name is {name}.\"",
+        character: "assets/images/characters/yuna_normal.png",
         setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_normal"
     },
@@ -474,6 +484,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_lunch_end": {
         name: "Me",
         text: "(I head back. Her mysterious words haunt me, making it hard to focus on class.)",
+        character: null,
         next: "day2_afternoon_class"
     },
     "day2_lunch_dain": {
@@ -507,6 +518,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_dain_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
+        character: "assets/images/characters/dain_laugh.png",
         setFlag: "knows_name_dain",
         next: "day2_dain_lunch_talk_new"
     },
@@ -719,6 +731,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store_choices": {
         name: "Me",
         text: "(Our turn came. Dain asks what I want to eat.)",
+        character: "assets/images/characters/dain_normal.png",
         choices: [
             { text: "I'll buy yours. What do you want?", next: "day2_dain_store_buy_normal", stats: { Dain: { affinity: 5 } } },
             { text: "It's crowded. Let's go to the rooftop.", next: "day2_dain_store_rooftop_normal", stats: { Dain: { affinity: 3 } } },
@@ -791,6 +804,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_lunch_end": {
         name: "Me",
         text: "(After a quick lunch with Dain, I head back. Her energy is contagious.)",
+        character: null,
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse": {
@@ -862,6 +876,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_nurse_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
+        character: "assets/images/characters/nurse_normal.png",
         setFlag: "knows_name_nurse",
         next: "day2_lunch_nurse_3"
     },
@@ -927,6 +942,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "\"(Vibrant energy...? Yuna's words come to mind. Is there really something about this school?)\"",
         background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_sleep": {
@@ -1004,6 +1020,7 @@ Object.assign(SCENARIO[2], {
     "nurse_contact_exchange_high": {
         name: "Me",
         text: "(The nurse looks at me with a playful yet seductive smile.)",
+        character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "nurse_contact_already_have_high", condition: "has_number_nurse" },
             { next: "nurse_contact_ask_high" }
@@ -1012,6 +1029,7 @@ Object.assign(SCENARIO[2], {
     "nurse_contact_exchange_low": {
         name: "Me",
         text: "(The nurse looks at me with a somewhat tired expression.)",
+        character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "nurse_contact_already_have_low", condition: "has_number_nurse" },
             { next: "nurse_contact_ask_low" }
@@ -1092,6 +1110,7 @@ Object.assign(SCENARIO[2], {
     "nurse_contact_exchange": {
         name: "Me",
         text: "(The nurse looks at me and opens her mouth.)",
+        character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "nurse_contact_already_have", condition: "has_number_nurse" },
             { next: "nurse_contact_ask" }
