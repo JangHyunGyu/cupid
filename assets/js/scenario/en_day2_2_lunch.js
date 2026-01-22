@@ -697,7 +697,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_sleep": {
-        name: "Nurse",
+        name: "Me",
         text: "(The warmth of the blanket she covers me with makes my consciousness fade. The exhaustion from the past two days of transfer hits me all at once.)",
         background: "assets/images/background/nurse_room.jpg",
         character: null,

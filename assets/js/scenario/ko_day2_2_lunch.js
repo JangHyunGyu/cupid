@@ -705,7 +705,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_sleep": {
-        name: "보건선생님",
+        name: "나",
         text: "(선생님이 덮어준 이불의 온기에 나도 모르게 의식이 흐려진다. 전학 이틀간의 피로가 한꺼번에 밀려오는 기분이다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: null,
