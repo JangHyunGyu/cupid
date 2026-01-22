@@ -151,7 +151,7 @@ body, html {
 }
 
 #char-right {
-    transform: translateX(-15%); /* 중앙에서 오른쪽으로 이동 */
+    transform: translateX(-25%); /* 중앙에서 오른쪽으로 이동 */
     z-index: 3; /* 오른쪽 캐릭터를 가장 앞으로 */
 }
 
@@ -527,7 +527,7 @@ body, html {
     }
 
     #char-left {
-        transform: translateX(-90%);
+        transform: translateX(-70%);
     }
 
     #char-left img {
