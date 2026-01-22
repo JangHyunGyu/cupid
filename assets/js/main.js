@@ -156,8 +156,17 @@ function markCharacterMet(charKey) {
     }
 }
 
-// CG 해금
+// CG 해금 (갤러리에 등록된 CG만 해금)
+// 등록된 CG 목록 (gallery.js의 GALLERY_CG와 동기화 필요)
+const REGISTERED_CG_IDS = new Set([
+    'nurse_home_event1'
+    // 새 CG 추가 시 여기에도 ID 추가
+]);
+
 function unlockCG(cgId) {
+    // 등록된 CG가 아니면 무시
+    if (!REGISTERED_CG_IDS.has(cgId)) return;
+    
     const progress = getGalleryProgress();
     if (!progress.cg[cgId]?.unlocked) {
         progress.cg[cgId] = { unlocked: true, unlockedAt: Date.now() };
@@ -613,11 +622,10 @@ async function renderScene(sceneId) {
         const bgUrl = getAssetUrl(scene.background);
         lastBgUrl = bgUrl;
         
-        // CG 이미지인 경우 갤러리에 자동 해금
-        if (scene.background.includes('/cg/')) {
-            const cgFileName = scene.background.split('/').pop().replace('.png', '').replace('.jpg', '');
-            unlockCG(cgFileName);
-        }
+        // CG 이벤트 해금 체크 (갤러리에 등록된 CG 배경이면 해금)
+        // 경로에 관계없이 파일명이 GALLERY_CG에 등록된 ID와 일치하면 해금
+        const cgFileName = scene.background.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
+        unlockCG(cgFileName);
         
         await new Promise((resolve) => {
             const img = new Image();
@@ -630,14 +638,6 @@ async function renderScene(sceneId) {
             img.onerror = resolve; // 에러 발생 시에도 다음 단계로 진행
             img.src = bgUrl;
         });
-
-        // CG 이벤트 해금 체크 (갤러리에 등록된 CG 배경이면 해금)
-        if (typeof getCGIdFromPath === 'function') {
-            const cgId = getCGIdFromPath(scene.background);
-            if (cgId && typeof unlockCG === 'function') {
-                unlockCG(cgId);
-            }
-        }
     }
 
     // 레이스 컨디션 방지
