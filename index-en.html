@@ -270,6 +270,7 @@
             <h1>CUPID</h1>
             <p>A story of your first day at a new school</p>
             <button onclick="startGame()" class="start-btn" style="border:none; cursor:pointer;">Start Game</button>
+            <button id="continue-btn" onclick="continueGame()" class="start-btn" style="border:none; cursor:pointer; margin-top: 10px; background: linear-gradient(135deg, #6b5b95, #4a4070); opacity: 0.5;" disabled>Continue</button>
         </div>
 
         <div class="footer">
@@ -470,11 +471,50 @@
         }
 
         function goToHome() {
+            // Save current game state
+            if (window.saveGameState) {
+                window.saveGameState();
+            }
             if (window.soundManager) {
                 soundManager.stopBgm();
             }
             window.location.reload();
         }
+
+        // Continue game function
+        async function continueGame() {
+            const saveData = window.loadGameState ? window.loadGameState() : null;
+            if (!saveData) {
+                alert('No saved game found.');
+                return;
+            }
+            
+            soundManager.playBgm('assets/audio/bgm/intro.mp3');
+            document.getElementById('landing-container').style.display = 'none';
+            document.querySelector('.lang-switch').style.display = 'none';
+            document.getElementById('game-container').style.display = 'block';
+            
+            if (window.initGameFromSave) {
+                await window.initGameFromSave(saveData);
+            }
+            
+            const homeBtn = document.getElementById('home-btn');
+            if (homeBtn) {
+                homeBtn.style.display = 'flex';
+            }
+        }
+
+        // Check for saved game on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const continueBtn = document.getElementById('continue-btn');
+                if (continueBtn && window.hasSavedGame && window.hasSavedGame()) {
+                    continueBtn.disabled = false;
+                    continueBtn.style.opacity = '1';
+                    continueBtn.style.cursor = 'pointer';
+                }
+            }, 100);
+        });
 
         function openSettingsModal() {
             document.getElementById('settingsModal').classList.add('is-open');

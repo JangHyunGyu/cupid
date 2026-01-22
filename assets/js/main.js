@@ -52,6 +52,63 @@ let gameState = {
 };
 
 // ==========================================================================
+// 게임 저장/로드 시스템 (Game Save/Load System)
+// ==========================================================================
+
+const SAVE_STORAGE_KEY = 'cupid_save';
+
+/**
+ * 현재 게임 상태를 localStorage에 저장
+ */
+function saveGameState() {
+    const saveData = {
+        currentSceneId: currentSceneId,
+        lastBgUrl: lastBgUrl,
+        gameState: JSON.parse(JSON.stringify(gameState)), // deep copy
+        savedAt: Date.now()
+    };
+    localStorage.setItem(SAVE_STORAGE_KEY, JSON.stringify(saveData));
+    console.log('[Save] 게임 상태 저장 완료:', currentSceneId);
+}
+
+/**
+ * 저장된 게임 상태 로드
+ * @returns {Object|null} 저장된 데이터 또는 null
+ */
+function loadGameState() {
+    const saved = localStorage.getItem(SAVE_STORAGE_KEY);
+    if (!saved) return null;
+    try {
+        return JSON.parse(saved);
+    } catch (e) {
+        console.error('[Load] 저장 데이터 파싱 오류:', e);
+        return null;
+    }
+}
+
+/**
+ * 저장된 게임이 있는지 확인
+ * @returns {boolean}
+ */
+function hasSavedGame() {
+    return localStorage.getItem(SAVE_STORAGE_KEY) !== null;
+}
+
+/**
+ * 저장된 게임 삭제
+ */
+function clearSavedGame() {
+    localStorage.removeItem(SAVE_STORAGE_KEY);
+    console.log('[Save] 저장 데이터 삭제됨');
+}
+
+// 전역 노출
+window.saveGameState = saveGameState;
+window.loadGameState = loadGameState;
+window.hasSavedGame = hasSavedGame;
+window.clearSavedGame = clearSavedGame;
+
+// ==========================================================================
 // 갤러리 해금 시스템 (Gallery Unlock System)
 // ==========================================================================
 
@@ -1744,5 +1801,35 @@ if (!window.preventAutoStart) {
 // 명시적 게임 시작 함수
 window.initGame = async () => {
     soundManager.init();
+    // 새 게임 시작 시 저장 데이터 삭제
+    if (window.clearSavedGame) {
+        window.clearSavedGame();
+    }
     await renderScene("start");
+};
+
+// 저장된 게임에서 시작하는 함수
+window.initGameFromSave = async (saveData) => {
+    soundManager.init();
+    
+    // 저장된 상태 복원
+    if (saveData.gameState) {
+        // gameState 복원
+        Object.assign(gameState, saveData.gameState);
+    }
+    
+    // 현재 씬 ID 복원
+    if (saveData.currentSceneId) {
+        currentSceneId = saveData.currentSceneId;
+    }
+    
+    // 마지막 배경 URL 복원
+    if (saveData.lastBgUrl) {
+        lastBgUrl = saveData.lastBgUrl;
+    }
+    
+    console.log('[Load] 게임 상태 복원 완료:', currentSceneId, gameState);
+    
+    // 저장된 씬부터 렌더링
+    await renderScene(currentSceneId);
 };
