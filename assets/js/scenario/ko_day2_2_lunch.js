@@ -64,6 +64,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_teacher_end": {
         name: "나",
         text: "(선생님과 짧지만 즐거운 대화를 나누고 교실로 돌아왔다. 선생님의 다정한 미소가 계속 생각난다.)",
+        character: null,
         next: "day2_afternoon_class"
     },
     "day2_lunch_seoyeon": {
@@ -143,6 +144,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_dain_yes": {
         name: "나",
         text: "(서연이의 질문에 어떻게 대답할까 고민된다.)",
+        character: null,
         choices: [
             { text: "응, 어제 만났어. 밝고 재밌는 애더라.", next: "day2_seoyeon_dain_honest", stats: { Seoyeon: { affinity: -3 }, Dain: { affinity: 2 } } },
             { text: "그냥 아는 사이야. 서연이가 더 중요해.", next: "day2_seoyeon_dain_deny", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
@@ -152,6 +154,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_dain_no": {
         name: "나",
         text: "\"(정다인... 기억해두자.) 아니, 처음 보는 애야. 왜?\"",
+        character: null,
         setFlag: "knows_name_dain",
         next: "day2_seoyeon_dain_no_react"
     },
@@ -182,6 +185,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_lunch_end": {
         name: "나",
         text: "(서연이와 즐거운 점심시간을 보내고 교실로 돌아왔다. 그녀가 직접 만든 샌드위치의 여운이 입안에 기분 좋게 남아있다.)",
+        character: null,
         next: "day2_afternoon_class"
     },
     "day2_lunch_yuna": {
@@ -221,6 +225,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_branch_high": {
         name: "나",
         text: "(유나가 평소보다 조금은 부드러워진 표정으로 나를 바라본다.)",
+        character: null,
         branches: [
             { next: "day2_yuna_talk_2_met_high", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_high" }
@@ -275,6 +280,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_branch": {
         name: "나",
         text: "(유나가 나를 바라보며 입을 열기 시작한다.)",
+        character: null,
         branches: [
             { next: "day2_yuna_talk_2_met_normal", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_normal" }
@@ -308,6 +314,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_high": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
+        character: null,
         setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_high"
     },
@@ -320,6 +327,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_low": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
+        character: null,
         setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_low"
     },
@@ -332,6 +340,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_normal": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
+        character: null,
         setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_normal"
     },
@@ -479,6 +488,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_lunch_end": {
         name: "나",
         text: "(유나와 헤어져 교실로 돌아왔다. 그녀가 했던 기묘한 말들이 머릿속을 맴돌아 오후 수업에 집중하기가 힘들었다.)",
+        character: null,
         next: "day2_afternoon_class"
     },
     "day2_lunch_dain": {
@@ -512,6 +522,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_dain_new_name_share": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
+        character: null,
         setFlag: "knows_name_dain",
         next: "day2_dain_lunch_talk_new"
     },
@@ -721,6 +732,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store_choices": {
         name: "나",
         text: "(다인이와 이야기를 나누는 사이 어느덧 우리 차례가 되었다. 다인이는 무엇을 먹을지 물어보았다.)",
+        character: null,
         choices: [
             { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy_normal", stats: { Dain: { affinity: 5 } } },
             { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop_normal", stats: { Dain: { affinity: 3 } } },
@@ -867,6 +879,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_nurse_new_name_share": {
         name: "나",
         text: "\"제 이름은 {name}(이)에요.\"",
+        character: null,
         setFlag: "knows_name_nurse",
         next: "day2_lunch_nurse_3"
     },
@@ -979,6 +992,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(창밖은 어느새 이글거리는 주황빛 노을로 가득하다. 점심시간에 잠들었는데 벌써 방과 후라니... 얼마나 깊게 잠들었던 걸까.)",
         background: "assets/images/background/nurse_room.jpg",
+        character: null,
         sunset: true,
         next: "day2_lunch_nurse_wake_2"
     },
@@ -1009,6 +1023,7 @@ Object.assign(SCENARIO[2], {
     "nurse_contact_exchange_high": {
         name: "나",
         text: "(보건선생님이 장난스러우면서도 유혹적인 미소로 나를 바라본다.)",
+        character: null,
         branches: [
             { next: "nurse_contact_already_have_high", condition: "has_number_nurse" },
             { next: "nurse_contact_ask_high" }
@@ -1017,6 +1032,7 @@ Object.assign(SCENARIO[2], {
     "nurse_contact_exchange_low": {
         name: "나",
         text: "(보건선생님이 조금은 피곤한 기색으로 나를 바라본다.)",
+        character: null,
         branches: [
             { next: "nurse_contact_already_have_low", condition: "has_number_nurse" },
             { next: "nurse_contact_ask_low" }
@@ -1097,6 +1113,7 @@ Object.assign(SCENARIO[2], {
     "nurse_contact_exchange": {
         name: "나",
         text: "(보건선생님이 나를 바라보며 입을 연다.)",
+        character: null,
         branches: [
             { next: "nurse_contact_already_have", condition: "has_number_nurse" },
             { next: "nurse_contact_ask" }
