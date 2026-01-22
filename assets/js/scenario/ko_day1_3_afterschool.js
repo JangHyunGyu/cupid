@@ -27,12 +27,12 @@ Object.assign(SCENARIO[1], {
         sunset: true,
         choices: [
             { text: "은은한 복도 끝, 학생회실의 서연이를 찾아간다.", next: "after_seoyeon" },
-            { text: "책 냄새 가득한 도서실, 유나를 만나러 간다.", next: "after_yuna", condition: "metYuna" },
-            { text: "도서관 별관 쪽을 한번 둘러본다.", next: "after_yuna_new", excludeCondition: "metYuna" },
-            { text: "활기가 넘치는 체육관, 다인을 확인한다.", next: "after_dain", condition: "metDain" },
-            { text: "시끌벅적한 체육관 쪽으로 가본다.", next: "after_dain_new", excludeCondition: "metDain" },
-            { text: "코끝을 찌르는 소독약 냄새, 보건실로 향한다.", next: "after_nurse", condition: "metNurse" },
-            { text: "보건실 쪽이 왠지 궁금해진다.", next: "after_nurse_new", excludeCondition: "metNurse" },
+            { text: "책 냄새 가득한 도서실, 유나를 만나러 간다.", next: "after_yuna", condition: "met_yuna" },
+            { text: "도서관 별관 쪽을 한번 둘러본다.", next: "after_yuna_new", excludeCondition: "met_yuna" },
+            { text: "활기가 넘치는 체육관, 다인을 확인한다.", next: "after_dain", condition: "met_dain" },
+            { text: "시끌벅적한 체육관 쪽으로 가본다.", next: "after_dain_new", excludeCondition: "met_dain" },
+            { text: "코끝을 찌르는 소독약 냄새, 보건실로 향한다.", next: "after_nurse", condition: "met_nurse" },
+            { text: "보건실 쪽이 왠지 궁금해진다.", next: "after_nurse_new", excludeCondition: "met_nurse" },
             { text: "인자한 담임선생님이 계신 교무실로 간다.", next: "after_teacher" },
             { text: "오늘은 이만, 집으로 발길을 옮긴다.", next: "after_home" }
         ]
@@ -125,7 +125,7 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         choices: [
-            { text: "응, 같이 가고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "응, 같이 가고 싶어서. 도와줄까?", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "얼굴 보고 싶어서 왔지. 너무 무리하는 거 아냐?", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 3 } } },
             { text: "착각이야. 그냥 길을 잘못 든 것뿐이야.", next: "after_seoyeon_rude", stats: { Seoyeon: { affinity: -30 } } }
         ]
@@ -136,7 +136,7 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_laugh.png",
         sunset: true,
         choices: [
-            { text: "응, 나도 너랑 같이 가고 싶었어. 도와줄게.", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "응, 나도 너랑 같이 가고 싶었어. 도와줄게.", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "날 기다려준 거야? 감동인데. 정말 기뻐.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
             { text: "노을 아래서 보니까 평소보다 훨씬 예쁘네.", next: "after_seoyeon_help", stats: { Seoyeon: { affinity: 10 } } }
         ]
@@ -305,7 +305,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         next: "after_yuna_3"
     },
     "after_yuna": {
@@ -331,7 +331,7 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         branches: [
-            { next: "yuna_after_talk", condition: "knowsName_Yuna" },
+            { next: "yuna_after_talk", condition: "knows_name_yuna" },
             { next: "yuna_name_share_pre" }
         ]
     },
@@ -364,7 +364,7 @@ Object.assign(SCENARIO[1], {
     "yuna_name_share_pre": {
         name: "나",
         text: "\"내 이름은 '{name}'(이)야. 너랑 친해지고 싶어.\"",
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "yuna_name_share"
     },
     "yuna_name_share": {
@@ -559,7 +559,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
-        setFlag: "metDain",
+        setFlag: "met_dain",
         next: "after_dain_new_name_ask"
     },
     "after_dain_new_name_ask": {
@@ -571,7 +571,7 @@ Object.assign(SCENARIO[1], {
     "after_dain_new_name_share": {
         name: "나",
         text: "\"나 {name}(이)고 2학년 3반이야. 잘 부탁해.\"",
-        setFlag: "knowsName_Dain",
+        setFlag: "knows_name_dain",
         next: "after_dain_2"
     },
     "after_dain": {
@@ -796,7 +796,7 @@ Object.assign(SCENARIO[1], {
         text: "(연습을 마친 다인이는 거친 숨을 몰아쉬며 나에게 달려온다.) \"후아... 후아... 기다리게 해서 미안! 자, 약속했던 떡볶이 먹으러 가자!\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
-        setFlag: "datedDainDay1",
+        setFlag: "dated_dain_day1",
         next: "after_dain_tteokbokki"
     },
     "after_dain_tteokbokki": {
@@ -901,7 +901,7 @@ Object.assign(SCENARIO[1], {
         name: "보건선생님",
         text: "\"어머, 처음 보는 얼굴이네? 오늘 전학 온 학생이니? 나는 보건선생님이야. 어디가 아파서 온 걸까?\"",
         character: "assets/images/characters/nurse_normal.png",
-        setFlag: "metNurse",
+        setFlag: "met_nurse",
         next: "after_nurse_new_name_ask"
     },
     "after_nurse_new_name_ask": {
@@ -913,7 +913,7 @@ Object.assign(SCENARIO[1], {
     "after_nurse_new_name_share": {
         name: "나",
         text: "\"제 이름은 {name}(이)에요.\"",
-        setFlag: "knowsName_Nurse",
+        setFlag: "knows_name_nurse",
         next: "nurse_after_day1_contact"
     },
     "after_nurse_2": {

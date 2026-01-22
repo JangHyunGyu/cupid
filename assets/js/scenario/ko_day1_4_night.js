@@ -81,7 +81,7 @@ Object.assign(SCENARIO[1], {
         night: true,
         branches: [
             { next: "night_message_seyoun_lunch", condition: "ate_lunch_seoyeon" },
-            { next: "night_message_seyoun_after", condition: "helpedSeoyeon" },
+            { next: "night_message_seyoun_after", condition: "helped_seoyeon" },
             { next: "night_message_seyoun_generic" }
         ]
     },
@@ -185,7 +185,7 @@ Object.assign(SCENARIO[1], {
         text: "(다인이에게 어떤 메시지를 보낼까?)",
         night: true,
         branches: [
-            { next: "night_message_dain_date", condition: "datedDainDay1" },
+            { next: "night_message_dain_date", condition: "dated_dain_day1" },
             { next: "night_message_dain_generic" }
         ]
     },

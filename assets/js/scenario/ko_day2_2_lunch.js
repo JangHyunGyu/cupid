@@ -12,10 +12,10 @@ Object.assign(SCENARIO[2], {
         character: null,
         choices: [
             { text: "화사한 미소가 생각나는 서연이에게 간다.", next: "day2_lunch_seoyeon" },
-            { text: "유나와의 약속, 도서관 별관 뒤뜰로 향한다.", next: "day2_lunch_yuna", condition: "metYuna" },
-            { text: "비밀스러운 쪽지를 남긴 유나를 확인하러 간다.", next: "day2_lunch_yuna", excludeCondition: "metYuna" },
-            { text: "활기가 넘치는 체육관, 다인을 확인하러 간다.", next: "day2_lunch_dain", condition: "metDain" },
-            { text: "시끌벅적한 체육관 쪽으로 발길을 옮긴다.", next: "day2_lunch_dain", excludeCondition: "metDain" },
+            { text: "유나와의 약속, 도서관 별관 뒤뜰로 향한다.", next: "day2_lunch_yuna", condition: "met_yuna" },
+            { text: "비밀스러운 쪽지를 남긴 유나를 확인하러 간다.", next: "day2_lunch_yuna", excludeCondition: "met_yuna" },
+            { text: "활기가 넘치는 체육관, 다인을 확인하러 간다.", next: "day2_lunch_dain", condition: "met_dain" },
+            { text: "시끌벅적한 체육관 쪽으로 발길을 옮긴다.", next: "day2_lunch_dain", excludeCondition: "met_dain" },
             { text: "조금 휴식이 필요한 것 같아 보건실로 간다.", next: "day2_lunch_nurse" },
             { text: "다정한 담임선생님이 계신 교무실로 향한다.", next: "day2_lunch_teacher" }
         ]
@@ -147,7 +147,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(유나가 평소보다 조금은 부드러워진 표정으로 나를 바라본다.)",
         branches: [
-            { next: "day2_yuna_talk_2_met_high", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_met_high", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_high" }
         ]
     },
@@ -155,7 +155,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(유나가 차갑고 실망스러운 눈빛으로 나를 바라본다.)",
         branches: [
-            { next: "day2_yuna_talk_2_met_low", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_met_low", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_low" }
         ]
     },
@@ -181,7 +181,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(유나는 나와 대화하며 기분이 묘하다고 말했다. 그리고 이 학교에는 아주 깊은 비밀이 있다며, 나에게만 보여주고 싶은 것이 있다고 제안했다.)",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         choices: [
             { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask_high", stats: { Yuna: { affinity: 5 } } },
             { text: "그냥 쪽지 보고 궁금해서 와봤어. 넌 누구야?", next: "day2_yuna_new_name_ask_high", stats: { Yuna: { affinity: 3 } } }
@@ -191,7 +191,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(유나의 눈빛이 더욱 차가워졌다. 내 무례한 태도 때문에 진실을 감당할 수 없을 거라며 독설을 내뱉었지만, 여기까지 왔으니 일단 따라오라고 했다.)",
         character: "assets/images/characters/yuna_normal.png",
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         choices: [
             { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask_low", stats: { Yuna: { affinity: 5 } } },
             { text: "그냥 쪽지 보고 궁금해서 와봤어. 넌 누구야?", next: "day2_yuna_new_name_ask_low", stats: { Yuna: { affinity: 3 } } }
@@ -201,7 +201,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(유나가 나를 바라보며 입을 열기 시작한다.)",
         branches: [
-            { next: "day2_yuna_talk_2_met_normal", condition: "metYuna" },
+            { next: "day2_yuna_talk_2_met_normal", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_normal" }
         ]
     },
@@ -218,7 +218,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "(유나는 내가 그녀의 정체를 궁금해할 거라며, 이 학교의 깊은 비밀을 나에게만 보여주겠다고 제안했다.)",
         character: "assets/images/characters/yuna_normal.png",
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         choices: [
             { text: "네가 쪽지를 남긴 유나야? 비밀이 뭔데?", next: "day2_yuna_new_name_ask_normal", stats: { Yuna: { affinity: 5 } } },
             { text: "그냥 쪽지 보고 궁금해서 와봤어. 넌 누구야?", next: "day2_yuna_new_name_ask_normal", stats: { Yuna: { affinity: 3 } } }
@@ -233,7 +233,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_high": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_high"
     },
     "day2_yuna_new_name_ask_low": {
@@ -245,7 +245,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_low": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_low"
     },
     "day2_yuna_new_name_ask_normal": {
@@ -257,7 +257,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_new_name_share_normal": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "day2_yuna_secret_normal"
     },
 
@@ -266,7 +266,7 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "(유나가 조심스럽게 내 손을 깍지 껴 잡는다. 온기가 전해지는 그녀의 손에서 진심이 느껴진다.)",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "visitedWarehouseAtLunch",
+        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_high"
     },
     "day2_yuna_secret_2_high": {
@@ -282,7 +282,7 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "(유나가 내 소매를 거칠게 잡아 끈다.)",
         character: "assets/images/characters/yuna_normal.png",
-        setFlag: "visitedWarehouseAtLunch",
+        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_low"
     },
     "day2_yuna_secret_2_low": {
@@ -298,7 +298,7 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "(유나가 내 손을 잡고 낡은 창고 쪽으로 이끈다. 손끝에서 전해지는 차가운 감촉에 몸이 떨렸다.)",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "visitedWarehouseAtLunch",
+        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_normal"
     },
     "day2_yuna_secret_2_normal": {
@@ -411,7 +411,7 @@ Object.assign(SCENARIO[2], {
         text: "(체육관 문을 열자, 땀방울을 휘날리며 연습하던 한 여학생이 나를 발견하고 달려온다.)",
         character: "assets/images/characters/dain_laugh.png",
         branches: [
-            { next: "day2_dain_lunch_talk", condition: "metDain" },
+            { next: "day2_dain_lunch_talk", condition: "met_dain" },
             { next: "day2_lunch_dain_new" }
         ]
     },
@@ -419,7 +419,7 @@ Object.assign(SCENARIO[2], {
         name: "???",
         text: "\"오! 처음 보는 얼굴인데? 너 새로 전학 온 애 맞지? 나 배구부 다인이야!\"",
         character: "assets/images/characters/dain_laugh.png",
-        setFlag: "metDain",
+        setFlag: "met_dain",
         next: "day2_lunch_dain_new_name_ask"
     },
     "day2_lunch_dain_new_name_ask": {
@@ -437,7 +437,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_dain_new_name_share": {
         name: "나",
         text: "\"내 이름은 {name}(이)야.\"",
-        setFlag: "knowsName_Dain",
+        setFlag: "knows_name_dain",
         next: "day2_dain_lunch_talk_new"
     },
     "day2_dain_lunch_talk": {
@@ -580,7 +580,7 @@ Object.assign(SCENARIO[2], {
         text: "\"어머, 안녕? 점심시간에 보건실이라니, 어디가 아픈 거니?\"",
         character: "assets/images/characters/nurse_normal.png",
         branches: [
-            { next: "day2_lunch_nurse_met", condition: "metNurse" },
+            { next: "day2_lunch_nurse_met", condition: "met_nurse" },
             { next: "day2_lunch_nurse_new" }
         ]
     },
@@ -625,7 +625,7 @@ Object.assign(SCENARIO[2], {
         text: "\"어머, 처음 보는 얼굴이네? 새로 전학 온 학생이니? 나는 보건선생님이야.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
-        setFlag: "metNurse",
+        setFlag: "met_nurse",
         next: "day2_lunch_nurse_new_name_ask"
     },
     "day2_lunch_nurse_new_name_ask": {
@@ -637,7 +637,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_nurse_new_name_share": {
         name: "나",
         text: "\"제 이름은 {name}(이)에요.\"",
-        setFlag: "knowsName_Nurse",
+        setFlag: "knows_name_nurse",
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_3": {
@@ -694,8 +694,8 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         choices: [
-            { text: "다음", next: "day2_lunch_nurse_rest_yuna", condition: "metYuna" },
-            { text: "다음", next: "day2_lunch_nurse_sleep", excludeCondition: "metYuna" }
+            { text: "다음", next: "day2_lunch_nurse_rest_yuna", condition: "met_yuna" },
+            { text: "다음", next: "day2_lunch_nurse_sleep", excludeCondition: "met_yuna" }
         ]
     },
     "day2_lunch_nurse_rest_yuna": {

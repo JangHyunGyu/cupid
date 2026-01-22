@@ -27,12 +27,12 @@ Object.assign(SCENARIO[1], {
         sunset: true,
         choices: [
             { text: "Go to the student council room to see Seoyeon.", next: "after_seoyeon" },
-            { text: "Go to the library to see Yuna.", next: "after_yuna", condition: "metYuna" },
-            { text: "Take a look around the library annex.", next: "after_yuna_new", excludeCondition: "metYuna" },
-            { text: "Go to the gym to check on Dain.", next: "after_dain", condition: "metDain" },
-            { text: "Head towards the noisy gymnasium.", next: "after_dain_new", excludeCondition: "metDain" },
-            { text: "Go to the nurse's office.", next: "after_nurse", condition: "metNurse" },
-            { text: "Explore the nurse's office.", next: "after_nurse_new", excludeCondition: "metNurse" },
+            { text: "Go to the library to see Yuna.", next: "after_yuna", condition: "met_yuna" },
+            { text: "Take a look around the library annex.", next: "after_yuna_new", excludeCondition: "met_yuna" },
+            { text: "Go to the gym to check on Dain.", next: "after_dain", condition: "met_dain" },
+            { text: "Head towards the noisy gymnasium.", next: "after_dain_new", excludeCondition: "met_dain" },
+            { text: "Go to the nurse's office.", next: "after_nurse", condition: "met_nurse" },
+            { text: "Explore the nurse's office.", next: "after_nurse_new", excludeCondition: "met_nurse" },
             { text: "Go to the faculty room to see the teacher.", next: "after_teacher" },
             { text: "That's it for today, I'm heading home.", next: "after_home" }
         ]
@@ -125,7 +125,7 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         choices: [
-            { text: "I wanted to go home together. Need help?", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "I wanted to go home together. Need help?", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "I just wanted to see you. Don't push yourself too hard.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 3 } } },
             { text: "I just took a wrong turn.", next: "after_home", stats: { Seoyeon: { affinity: -10 } } }
         ]
@@ -136,7 +136,7 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_laugh.png",
         sunset: true,
         choices: [
-            { text: "I'll help you finish so we can leave together.", next: "after_seoyeon_help", setFlag: "helpedSeoyeon", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "I'll help you finish so we can leave together.", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Were you waiting for me? I'm so happy.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
             { text: "You look even prettier under the sunset.", next: "after_seoyeon_help", stats: { Seoyeon: { affinity: 10 } } }
         ]
@@ -198,7 +198,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/lib_room.png",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         next: "after_yuna_2"
     },
     "after_yuna": {
@@ -267,7 +267,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_active.png",
         sunset: true,
-        setFlag: "metDain",
+        setFlag: "met_dain",
         next: "after_dain_2"
     },
     "after_dain": {
@@ -336,14 +336,14 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
-        setFlag: "metNurse",
+        setFlag: "met_nurse",
         next: "after_nurse_new_2"
     },
     "after_nurse_new_2": {
         name: "Nurse",
         text: "\"Oh? A new face. You must be the transfer student. I'm the school nurse. What brings you here? Not feeling well?\"",
         character: "assets/images/characters/nurse_normal.png",
-        setFlag: "metNurse",
+        setFlag: "met_nurse",
         next: "after_nurse_new_name_ask"
     },
     "after_nurse_new_name_ask": {
@@ -355,7 +355,7 @@ Object.assign(SCENARIO[1], {
     "after_nurse_new_name_share": {
         name: "Me",
         text: "\"My name is {name}.\"",
-        setFlag: "knowsName_Nurse",
+        setFlag: "knows_name_nurse",
         next: "nurse_after_day1_contact"
     },
     "after_nurse": {

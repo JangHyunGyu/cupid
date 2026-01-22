@@ -38,21 +38,21 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(She runs to me with a bright smile as soon as she sees me. Her eyes sparkle with anticipation.) \"{name}! I've been looking for you. Let's have lunch together. I'll take you somewhere special!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        setFlag: "metSeoyeon",
+        setFlag: "met_seoyeon",
         next: "rooftop_1"
     },
     "lunch_seoyeon_low": {
         name: "Seoyeon",
         text: "\"{name}... just in time. The teacher asked me to look after you... if you don't mind, want to have lunch on the rooftop?\"",
         character: "assets/images/characters/seyoun_pout.png",
-        setFlag: "metSeoyeon",
+        setFlag: "met_seoyeon",
         next: "lunch_seoyeon_2_normal"
     },
     "lunch_seoyeon_normal_branch": {
         name: "Seoyeon",
         text: "(When I approach her, she gives me a sweet smile as if she were waiting.)",
         character: "assets/images/characters/seyoun_normal.png",
-        setFlag: "metSeoyeon",
+        setFlag: "met_seoyeon",
         branches: [
             { next: "lunch_seoyeon_2_study", condition: "personality_study" },
             { next: "lunch_seoyeon_2_party", condition: "personality_active" },
@@ -332,14 +332,14 @@ Object.assign(SCENARIO[1], {
     "yuna_intro_name_share": {
         name: "Me",
         text: "\"I'm {name}. I just transferred today.\"",
-        setFlag: "knowsName_Yuna",
+        setFlag: "knows_name_yuna",
         next: "yuna_intro_2"
     },
     "yuna_intro_2": {
         name: "Yuna",
         text: "\"{name}... hehe, that's a nice name. But be careful... this school is much more dangerous and mysterious than you think.\"",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "metYuna",
+        setFlag: "met_yuna",
         next: "yuna_free_talk"
     },
     "yuna_free_talk": {
@@ -454,7 +454,7 @@ Object.assign(SCENARIO[1], {
         text: "(When I open the gym door, I hear energetic shouts and the sound of a volleyball bouncing. A girl was sweating and focused on her practice.)",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_normal.png",
-        setFlag: "metDain",
+        setFlag: "met_dain",
         next: "dain_intro"
     },
     "dain_intro": {
@@ -466,7 +466,7 @@ Object.assign(SCENARIO[1], {
     "dain_name_share": {
         name: "Me",
         text: "\"Me? I'm {name}. It's my first time playing volleyball...\"",
-        setFlag: "knowsName_Dain",
+        setFlag: "knows_name_dain",
         next: "dain_name_share_2"
     },
     "dain_name_share_2": {
@@ -495,7 +495,7 @@ Object.assign(SCENARIO[1], {
         text: "(Feeling a bit of a headache, I headed to the nurse's office. When I opened the door, a teacher of mature aura greeted me along with the faint scent of aroma.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
-        setFlag: "metNurse",
+        setFlag: "met_nurse",
         next: "nurse_intro"
     },
     "nurse_intro": {
@@ -507,7 +507,7 @@ Object.assign(SCENARIO[1], {
     "nurse_name_share": {
         name: "Me",
         text: "\"My name is {name}. I have a headache, maybe because I'm nervous.\"",
-        setFlag: "knowsName_Nurse",
+        setFlag: "knows_name_nurse",
         next: "nurse_free_talk_day1"
     },
     "nurse_free_talk_day1": {
