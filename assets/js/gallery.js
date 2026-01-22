@@ -1179,12 +1179,22 @@ function openCGModal(cgId) {
     const modal = document.getElementById('cg-modal') || createCGModal();
     
     // 모달 내용 업데이트
-    document.getElementById('cg-modal-image').src = cg.file;
+    const cgImage = document.getElementById('cg-modal-image');
+    cgImage.src = cg.file;
+    cgImage.classList.remove('cg-image-loaded');
+    
     document.getElementById('cg-modal-title').textContent = cg.name;
     document.getElementById('cg-modal-desc').textContent = cg.description;
     
-    // 모달 표시
+    // 모달 표시 (애니메이션 트리거)
     modal.classList.add('active');
+    
+    // 이미지 로드 완료 시 효과 시작
+    cgImage.onload = () => {
+        requestAnimationFrame(() => {
+            cgImage.classList.add('cg-image-loaded');
+        });
+    };
 }
 
 /**
@@ -1206,17 +1216,19 @@ function closeCGModal() {
 function createCGModal() {
     const modal = document.createElement('div');
     modal.id = 'cg-modal';
-    modal.className = 'modal-overlay';
+    modal.className = 'modal-overlay cg-modal-overlay';
     
     // 모달 외부 클릭 시 닫기
     modal.onclick = (e) => { 
         if (e.target === modal) closeCGModal(); 
     };
     
-    // 모달 내용 HTML
+    // 모달 내용 HTML (파티클 효과 포함)
     modal.innerHTML = `
+        <div class="cg-particles"></div>
+        <div class="cg-glow-effect"></div>
         <div class="modal-content cg-modal-content">
-            <button class="modal-close" onclick="closeCGModal()">×</button>
+            <button class="modal-close cg-close-btn" onclick="closeCGModal()">×</button>
             <div class="cg-viewer">
                 <img id="cg-modal-image" src="" alt="CG">
             </div>
@@ -1229,6 +1241,10 @@ function createCGModal() {
     
     // body에 추가
     document.body.appendChild(modal);
+    
+    // 파티클 생성
+    createCGParticles(modal.querySelector('.cg-particles'));
+    
     return modal;
 }
 
@@ -1349,6 +1365,34 @@ function toggleBgm(id, file) {
     
     // UI 업데이트 (재생 상태 반영)
     renderMusic();
+}
+
+// ==========================================================================
+// CG 모달 특수 효과 (CG Modal Special Effects)
+// ==========================================================================
+
+/**
+ * CG 모달 파티클 생성
+ * 반짝이는 별/하트 파티클을 배경에 생성
+ * 
+ * @param {HTMLElement} container - 파티클을 넣을 컨테이너
+ */
+function createCGParticles(container) {
+    if (!container) return;
+    
+    const particles = ['✨', '💕', '💖', '⭐', '🌟', '💗'];
+    const particleCount = 20;
+    
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('span');
+        particle.className = 'cg-particle';
+        particle.textContent = particles[Math.floor(Math.random() * particles.length)];
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 3 + 's';
+        particle.style.animationDuration = (3 + Math.random() * 4) + 's';
+        particle.style.fontSize = (0.8 + Math.random() * 1.2) + 'rem';
+        container.appendChild(particle);
+    }
 }
 
 // ==========================================================================
