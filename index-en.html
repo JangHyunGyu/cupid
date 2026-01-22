@@ -186,6 +186,44 @@
             border: 1px solid #ff69b4;
         }
         .modal-title { margin-top: 0; color: #ff69b4; }
+        .confirm-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        .modal-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 100px;
+        }
+        .modal-btn.cancel {
+            background: #3a3a3a;
+            color: #aaa;
+            border: 1px solid #555;
+        }
+        .modal-btn.cancel:hover {
+            background: #4a4a4a;
+            color: #fff;
+            border-color: #666;
+        }
+        .modal-btn.confirm {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+        }
+        .modal-btn.confirm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 157, 0.6);
+        }
+        .modal-btn:active {
+            transform: scale(0.95);
+        }
         .contact-options {
             display: flex;
             flex-direction: column;
@@ -322,9 +360,9 @@
             <div class="modal-container" onclick="event.stopPropagation()">
                 <h3 class="modal-title">Return to Title</h3>
                 <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">Are you sure you want to return to the title screen?<br><span style="color: #ff6b9d; font-size: 0.9em;">(Current game progress will not be saved)</span></p>
-                <div style="display: flex; gap: 10px; justify-content: center;">
-                    <button class="modal-btn" onclick="closeHomeConfirm(event)" style="background: #444;">Cancel</button>
-                    <button class="modal-btn" onclick="goToHome()" style="background: linear-gradient(135deg, #ff6b9d, #c44569);">Confirm</button>
+                <div class="confirm-buttons">
+                    <button class="modal-btn cancel" onclick="closeHomeConfirm(event)">Cancel</button>
+                    <button class="modal-btn confirm" onclick="goToHome()">Confirm</button>
                 </div>
             </div>
         </div>
