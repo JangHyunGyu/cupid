@@ -630,6 +630,14 @@ async function renderScene(sceneId) {
             img.onerror = resolve; // 에러 발생 시에도 다음 단계로 진행
             img.src = bgUrl;
         });
+
+        // CG 이벤트 해금 체크 (갤러리에 등록된 CG 배경이면 해금)
+        if (typeof getCGIdFromPath === 'function') {
+            const cgId = getCGIdFromPath(scene.background);
+            if (cgId && typeof unlockCG === 'function') {
+                unlockCG(cgId);
+            }
+        }
     }
 
     // 레이스 컨디션 방지
