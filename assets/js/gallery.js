@@ -269,8 +269,8 @@ const GALLERY_CG = {
             name: '보건선생님과의 특별한 만남', 
             character: '보건선생님',
             description: '보건선생님의 집에서 일어난 특별한 이벤트',
-            file: 'assets/images/cg/nurse_home_event1.png',
-            thumbnail: 'assets/images/cg/nurse_home_event1_thumb.png'
+            file: 'assets/images/background/nurse_home_event1.png',
+            thumbnail: 'assets/images/background/nurse_home_event1.png'
         }
         // 새 CG를 추가하려면 여기에 같은 형식으로 객체 추가
     ],
@@ -280,8 +280,8 @@ const GALLERY_CG = {
             name: 'Special Moment with the Nurse', 
             character: 'School Nurse',
             description: 'A special event at the nurse\'s home',
-            file: 'assets/images/cg/nurse_home_event1.png',
-            thumbnail: 'assets/images/cg/nurse_home_event1_thumb.png'
+            file: 'assets/images/background/nurse_home_event1.png',
+            thumbnail: 'assets/images/background/nurse_home_event1.png'
         }
     ]
 };
