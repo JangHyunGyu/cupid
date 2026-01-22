@@ -185,9 +185,9 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_trap_low": {
         name: "Seoyeon",
-        text: "(She stops, her eyes cold as ice.) \"Stop. That's inappropriate. I find it problematic on your first day. Find the rest of the way yourself.\"",
-        character: "assets/images/characters/seyoun_angry.png",
-        stats: { Seoyeon: { affinity: -25 } },
+        text: "(She stops and looks at me with a slightly puzzled expression.) \"Um... I get that it's a compliment, but isn't that a bit much? We just met. Please tone down the jokes a little.\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: -10 } },
         next: "hallway_2"
     },
     "hallway_talk_trap_normal": {
