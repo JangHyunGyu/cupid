@@ -1788,6 +1788,18 @@ dialogueBox.onclick = async () => {
     }
 
     const scene = getScene(currentSceneId);
+    console.log('[DialogueBox Click] currentSceneId:', currentSceneId, 'scene.type:', scene?.type, 'isFreeTalking:', isFreeTalking);
+    
+    // 프리톡 종료 후 클릭 시 다음 장면으로 진행 (프리톡 타입이지만 isFreeTalking이 false인 경우)
+    if (scene?.type === 'free_talk' && !isFreeTalking) {
+        const nextId = resolveNextScene(scene);
+        console.log('[FreeTalk Ended] Proceeding to next scene:', nextId);
+        if (nextId) {
+            await renderScene(nextId);
+        }
+        return;
+    }
+    
     if (isFreeTalking || scene.type === 'input') return;
 
     // 시네마틱 모드 (텍스트 없는 라우팅 노드)에서는 일반 클릭 방지 (자동 진행 로직에서 1.5초 후 window 리스너로 처리)
