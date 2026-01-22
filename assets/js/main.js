@@ -758,13 +758,24 @@ async function renderScene(sceneId) {
     // 캐릭터 업데이트
     // 장면 데이터에 캐릭터 정보(character 또는 characters)가 명시되어 있을 때만 업데이트합니다.
     if (scene.hasOwnProperty('characters') || scene.hasOwnProperty('character')) {
-        const newCharMap = {}; // 슬롯별로 표시되어야 할 이미지 URL 맵
+        const newCharMap = {}; // 슬롯별로 표시되어야 할 이미지 URL과 옵션 맵
+        const charOptions = {}; // 슬롯별 옵션 (opacity 등)
         if (scene.characters) {
-            Object.entries(scene.characters).forEach(([pos, src]) => {
-                newCharMap[pos.toLowerCase()] = getAssetUrl(src);
+            Object.entries(scene.characters).forEach(([pos, value]) => {
+                const posKey = pos.toLowerCase();
+                // value가 객체인 경우 { src, opacity } 형태
+                if (typeof value === 'object' && value !== null && value.src) {
+                    newCharMap[posKey] = getAssetUrl(value.src);
+                    charOptions[posKey] = { opacity: value.opacity ?? 1 };
+                } else {
+                    // 단순 문자열인 경우 이미지 경로
+                    newCharMap[posKey] = getAssetUrl(value);
+                    charOptions[posKey] = { opacity: 1 };
+                }
             });
         } else if (scene.character) {
             newCharMap['center'] = getAssetUrl(scene.character);
+            charOptions['center'] = { opacity: 1 };
         }
 
         // 바뀌어야 할 슬롯 확인
@@ -794,6 +805,11 @@ async function renderScene(sceneId) {
                         const img = document.createElement('img');
                         img.onload = () => {
                             img.dataset.rawSrc = charUrl;
+                            // 캐릭터별 opacity 적용
+                            const options = charOptions[pos] || { opacity: 1 };
+                            if (options.opacity !== 1) {
+                                img.style.opacity = options.opacity;
+                            }
                             resolve({ pos, img, sceneId });
                         };
                         img.onerror = () => {

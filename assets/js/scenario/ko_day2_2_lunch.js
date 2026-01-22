@@ -945,21 +945,27 @@ Object.assign(SCENARIO[2], {
         name: "보건선생님",
         text: "(희미하게 선생님의 목소리가 들린다.) \"... 네, 담임 선생님. {name} 학생이 상태가 좋지 않아서 오후 수업은 좀 쉬게 했어요.\"",
         background: "assets/images/background/nurse_room.jpg",
-        character: null,
+        characters: {
+            left: "assets/images/characters/nurse_normal.png",
+            right: { src: "assets/images/characters/teacher_normal.png", opacity: 0.4 }
+        },
         next: "day2_lunch_nurse_sleep_teacher_2"
     },
     "day2_lunch_nurse_sleep_teacher_2": {
         name: "보건선생님",
         text: "(목소리가 살짝 낮아진다.) \"...네? 직접 데리러 오시겠다고요? 후훗, 괜찮아요. 여기는 제 영역이니까요. 제가 책임지고 잘 돌봐드릴게요.\"",
         background: "assets/images/background/nurse_room.jpg",
-        character: null,
+        characters: {
+            left: "assets/images/characters/nurse_normal.png",
+            right: { src: "assets/images/characters/teacher_normal.png", opacity: 0.4 }
+        },
         next: "day2_lunch_nurse_sleep_teacher_3"
     },
     "day2_lunch_nurse_sleep_teacher_3": {
         name: "보건선생님",
         text: "(전화를 끊는 소리가 들린다.) \"...후훗, 담임 선생님도 참. 자기 학생이라고 신경 쓰시는 건 좋은데... 보건실에서는 내가 법이야.\"",
         background: "assets/images/background/nurse_room.jpg",
-        character: null,
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_sleep_end"
     },
     "day2_lunch_nurse_sleep_end": {
