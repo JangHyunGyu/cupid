@@ -940,21 +940,27 @@ Object.assign(SCENARIO[2], {
         name: "Nurse",
         text: "(I faintly hear her voice.) \"...Yes, homeroom teacher. {name} isn't feeling well, so I let them rest for the afternoon classes.\"",
         background: "assets/images/background/nurse_room.jpg",
-        character: null,
+        characters: {
+            left: "assets/images/characters/nurse_normal.png",
+            right: { src: "assets/images/characters/teacher_normal.png", opacity: 0.4 }
+        },
         next: "day2_lunch_nurse_sleep_teacher_2"
     },
     "day2_lunch_nurse_sleep_teacher_2": {
         name: "Nurse",
         text: "(Her voice lowers slightly.) \"...Hmm? You want to come check yourself? Hehe, that's okay. This is my domain. I'll take good care of them.\"",
         background: "assets/images/background/nurse_room.jpg",
-        character: null,
+        characters: {
+            left: "assets/images/characters/nurse_normal.png",
+            right: { src: "assets/images/characters/teacher_normal.png", opacity: 0.4 }
+        },
         next: "day2_lunch_nurse_sleep_teacher_3"
     },
     "day2_lunch_nurse_sleep_teacher_3": {
         name: "Nurse",
         text: "(I hear her hang up.) \"...Hehe, the homeroom teacher is so caring about her students... but in the nurse's office, I'm the boss.\"",
         background: "assets/images/background/nurse_room.jpg",
-        character: null,
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_sleep_end"
     },
     "day2_lunch_nurse_sleep_end": {
