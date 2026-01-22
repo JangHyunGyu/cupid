@@ -88,20 +88,95 @@ Object.assign(SCENARIO[2], {
         text: "\"Really? I was worried they might not be to your taste. Eat up!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         setFlag: "day2_ate_lunch_seoyeon",
-        next: "day2_seoyeon_lunch_end"
+        next: "day2_seoyeon_lunch_dain_event"
     },
     "day2_seoyeon_lunch_worry": {
         name: "Seoyeon",
         text: "\"I'm okay. Seeing you enjoy the food makes all the fatigue disappear. Truly.\"",
         character: "assets/images/characters/seyoun_normal.png",
         setFlag: "day2_ate_lunch_seoyeon",
-        next: "day2_seoyeon_lunch_end"
+        next: "day2_seoyeon_lunch_dain_event"
     },
     "day2_seoyeon_lunch_touch": {
         name: "Seoyeon",
         text: "\"Ah... T-thank you. I must have been eating too greedily... (She blushes slightly)\"",
         character: "assets/images/characters/seyoun_shy.png",
         setFlag: "day2_ate_lunch_seoyeon",
+        next: "day2_seoyeon_lunch_dain_event"
+    },
+    "day2_seoyeon_lunch_dain_event": {
+        name: "Me",
+        text: "(Just then, someone passing by the student council room window waves at us.)",
+        character: "assets/images/characters/seyoun_normal.png",
+        branches: [
+            { next: "day2_seoyeon_lunch_dain_known", condition: "met_dain" },
+            { next: "day2_seoyeon_lunch_dain_unknown" }
+        ]
+    },
+    "day2_seoyeon_lunch_dain_known": {
+        name: "Dain",
+        text: "\"Oh? {name}! Hey~! See you later!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_seoyeon_lunch_dain_react"
+    },
+    "day2_seoyeon_lunch_dain_unknown": {
+        name: "???",
+        text: "\"Huh? Who's that? A boy in the student council room... Anyway, hi~!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_seoyeon_lunch_dain_react"
+    },
+    "day2_seoyeon_lunch_dain_react": {
+        name: "Me",
+        text: "(When I look at Seoyeon, she has a subtle expression different from before.)",
+        character: "assets/images/characters/seyoun_normal.png",
+        next: "day2_seoyeon_lunch_dain_ask"
+    },
+    "day2_seoyeon_lunch_dain_ask": {
+        name: "Seoyeon",
+        text: "\"...That's Dain from the volleyball club. {name}, are you close with her?\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        branches: [
+            { next: "day2_seoyeon_dain_yes", condition: "met_dain" },
+            { next: "day2_seoyeon_dain_no" }
+        ]
+    },
+    "day2_seoyeon_dain_yes": {
+        name: "Me",
+        text: "(I wonder how to answer Seoyeon's question.)",
+        choices: [
+            { text: "Yeah, we met yesterday. She's bright and fun.", next: "day2_seoyeon_dain_honest", stats: { Seoyeon: { affinity: -3 }, Dain: { affinity: 2 } } },
+            { text: "Just acquaintances. You're more important to me, Seoyeon.", next: "day2_seoyeon_dain_deny", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
+            { text: "Why? Are you jealous?", next: "day2_seoyeon_dain_tease", stats: { Seoyeon: { affinity: 3 } } }
+        ]
+    },
+    "day2_seoyeon_dain_no": {
+        name: "Me",
+        text: "\"(Dain Jung... I'll remember that.) No, first time seeing her. Why?\"",
+        setFlag: "knows_name_dain",
+        next: "day2_seoyeon_dain_no_react"
+    },
+    "day2_seoyeon_dain_no_react": {
+        name: "Seoyeon",
+        text: "\"Oh, nothing. Just curious. (Seoyeon smiles with relief) ...Let's keep eating!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_seoyeon_lunch_end"
+    },
+    "day2_seoyeon_dain_honest": {
+        name: "Seoyeon",
+        text: "\"...I see. (Seoyeon looks out the window for a moment, then smiles) It's good to have many friends. I should... try harder too.\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        next: "day2_seoyeon_lunch_end"
+    },
+    "day2_seoyeon_dain_deny": {
+        name: "Seoyeon",
+        text: "\"(Seoyeon's expression brightens slightly) ...Really? Hehe, hearing that makes me happy. Thanks, {name}.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "day2_seoyeon_lunch_end"
+    },
+    "day2_seoyeon_dain_tease": {
+        name: "Seoyeon",
+        text: "\"J-jealous?! No way! I was just... curious! (Seoyeon turns her head away, blushing)\"",
+        character: "assets/images/characters/seyoun_shy.png",
         next: "day2_seoyeon_lunch_end"
     },
     "day2_seoyeon_lunch_end": {
@@ -446,6 +521,164 @@ Object.assign(SCENARIO[2], {
         text: "(We head to the snack bar. It's packed with students.)",
         background: "assets/images/background/store.png",
         character: "assets/images/characters/dain_normal.png",
+        next: "day2_dain_store_seoyeon"
+    },
+    "day2_dain_store_seoyeon": {
+        name: "Me",
+        text: "(Just then, I spot a familiar face across the store. Seoyeon is buying a drink.)",
+        character: "assets/images/characters/dain_normal.png",
+        next: "day2_dain_store_seoyeon_2"
+    },
+    "day2_dain_store_seoyeon_2": {
+        name: "Dain",
+        text: "\"Oh? That girl... Isn't she the student council president? She has this unapproachable aura. {name}, do you know her?\"",
+        character: "assets/images/characters/dain_normal.png",
+        next: "day2_dain_store_seoyeon_approach"
+    },
+    "day2_dain_store_seoyeon_approach": {
+        name: "Me",
+        text: "(Just then, Seoyeon notices us and walks over.)",
+        character: "assets/images/characters/seyoun_normal.png",
+        branches: [
+            { next: "day2_dain_seoyeon_both_met", condition: "day2_ate_lunch_seoyeon" },
+            { next: "day2_dain_seoyeon_both_new" }
+        ]
+    },
+    "day2_dain_seoyeon_both_met": {
+        name: "Seoyeon",
+        text: "\"Oh? {name}! Fancy seeing you here. Did you enjoy lunch earlier? (Glances at Dain) ...?\"",
+        characters: {
+            left: "assets/images/characters/dain_normal.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_tension"
+    },
+    "day2_dain_seoyeon_both_new": {
+        name: "Seoyeon",
+        text: "\"Oh my, the transfer student? Nice to see you here. I'm Seoyeon. (Glances at Dain) ...?\"",
+        characters: {
+            left: "assets/images/characters/dain_normal.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_tension"
+    },
+    "day2_dain_seoyeon_tension": {
+        name: "Dain",
+        text: "\"(Dain looks slightly on guard) Oh, hi Miss President. We're just finishing up lunch here...\"",
+        characters: {
+            left: "assets/images/characters/dain_normal.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_tension_2"
+    },
+    "day2_dain_seoyeon_tension_2": {
+        name: "Seoyeon",
+        text: "\"(Seoyeon smiles brightly) Heh, is that so? Enjoy yourselves. {name}, come visit the student council room later, okay?\"",
+        characters: {
+            left: "assets/images/characters/dain_normal.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_choice"
+    },
+    "day2_dain_seoyeon_choice": {
+        name: "Me",
+        text: "(Seoyeon and Dain seem to be having some kind of subtle standoff over me. What should I say?)",
+        characters: {
+            left: "assets/images/characters/dain_normal.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        choices: [
+            { text: "Sure, Seoyeon! I'll definitely come by later.", next: "day2_dain_seoyeon_favor_seoyeon", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -5 } } },
+            { text: "I've got plans with Dain today... Maybe next time!", next: "day2_dain_seoyeon_favor_dain", stats: { Dain: { affinity: 5 }, Seoyeon: { affinity: -3 } } },
+            { text: "(Smile vaguely) Would be nice to hang with both of you.", next: "day2_dain_seoyeon_favor_both", stats: { Seoyeon: { affinity: -5 }, Dain: { affinity: -5 } } }
+        ]
+    },
+    "day2_dain_seoyeon_favor_seoyeon": {
+        name: "Dain",
+        text: "\"(Dain looks a bit dejected) ...Huh, really? Already making other plans while you're with me?\"",
+        characters: {
+            left: "assets/images/characters/dain_pout.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_favor_seoyeon_2"
+    },
+    "day2_dain_seoyeon_favor_seoyeon_2": {
+        name: "Seoyeon",
+        text: "\"(Seoyeon smiles satisfied) Hehe, thanks {name}. See you later then.\"",
+        characters: {
+            left: "assets/images/characters/dain_pout.png",
+            right: "assets/images/characters/seyoun_laugh.png"
+        },
+        next: "day2_dain_seoyeon_end"
+    },
+    "day2_dain_seoyeon_favor_dain": {
+        name: "Dain",
+        text: "\"(Dain beams and grabs my arm) Hear that? {name}'s all mine today!\"",
+        characters: {
+            left: "assets/images/characters/dain_laugh.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_favor_dain_2"
+    },
+    "day2_dain_seoyeon_favor_dain_2": {
+        name: "Seoyeon",
+        text: "\"(Seoyeon's expression stiffens slightly) ...I see. Have fun then. See you later, {name}.\"",
+        characters: {
+            left: "assets/images/characters/dain_laugh.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_end"
+    },
+    "day2_dain_seoyeon_favor_both": {
+        name: "Me",
+        text: "(Both their expressions freeze at the same time.)",
+        characters: {
+            left: "assets/images/characters/dain_normal.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_favor_both_2"
+    },
+    "day2_dain_seoyeon_favor_both_2": {
+        name: "Dain",
+        text: "\"...Both of us? Ha, the popular type, huh?\"",
+        characters: {
+            left: "assets/images/characters/dain_pout.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_favor_both_3"
+    },
+    "day2_dain_seoyeon_favor_both_3": {
+        name: "Seoyeon",
+        text: "\"(Seoyeon smiles coldly) Heh... Being nice to everyone might mean you end up losing both.\"",
+        characters: {
+            left: "assets/images/characters/dain_pout.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_favor_both_4"
+    },
+    "day2_dain_seoyeon_favor_both_4": {
+        name: "Dain",
+        text: "\"(Dain looks at Seoyeon in surprise) Whoa, Miss President's pretty blunt, huh? But I actually agree.\"",
+        characters: {
+            left: "assets/images/characters/dain_normal.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_favor_both_5"
+    },
+    "day2_dain_seoyeon_favor_both_5": {
+        name: "Me",
+        text: "(The two of them exchange glances while staring at me. Things just got really awkward...)",
+        characters: {
+            left: "assets/images/characters/dain_normal.png",
+            right: "assets/images/characters/seyoun_normal.png"
+        },
+        next: "day2_dain_seoyeon_end"
+    },
+    "day2_dain_seoyeon_end": {
+        name: "Me",
+        text: "(Seoyeon waves and walks away. Dain watches me intently for a moment, then smiles again.)",
+        character: "assets/images/characters/dain_normal.png",
+        setFlag: "day2_met_dain_lunch",
         next: "day2_dain_free_talk"
     },
     "day2_dain_free_talk": {
@@ -705,7 +938,21 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_sleep_teacher": {
         name: "Nurse",
-        text: "(I faintly hear her voice.) \"...Yes, homeroom teacher. {name} isn't feeling well, so I let them rest for the afternoon classes. Yes, I'll take care of them. Don't worry.\"",
+        text: "(I faintly hear her voice.) \"...Yes, homeroom teacher. {name} isn't feeling well, so I let them rest for the afternoon classes.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: null,
+        next: "day2_lunch_nurse_sleep_teacher_2"
+    },
+    "day2_lunch_nurse_sleep_teacher_2": {
+        name: "Nurse",
+        text: "(Her voice lowers slightly.) \"...Hmm? You want to come check yourself? Hehe, that's okay. This is my domain. I'll take good care of them.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: null,
+        next: "day2_lunch_nurse_sleep_teacher_3"
+    },
+    "day2_lunch_nurse_sleep_teacher_3": {
+        name: "Nurse",
+        text: "(I hear her hang up.) \"...Hehe, the homeroom teacher is so caring about her students... but in the nurse's office, I'm the boss.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: null,
         next: "day2_lunch_nurse_sleep_end"

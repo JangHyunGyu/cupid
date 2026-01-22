@@ -159,6 +159,137 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_laugh.png",
         sunset: true,
         setFlag: "day2_met_seoyeon_after",
+        next: "day2_seoyeon_dain_encounter"
+    },
+    "day2_seoyeon_dain_encounter": {
+        name: "Me",
+        text: "(As we leave the student council room together, we bump into someone in the corridor.)",
+        character: "assets/images/characters/seyoun_normal.png",
+        sunset: true,
+        branches: [
+            { next: "day2_seoyeon_dain_met", condition: "day2_met_dain_lunch" },
+            { next: "day2_seoyeon_dain_new" }
+        ]
+    },
+    "day2_seoyeon_dain_met": {
+        name: "Dain",
+        text: "\"Oh? You're the one from the snack bar earlier! {name}! Wow, hanging out with the student council president?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_laugh.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_react"
+    },
+    "day2_seoyeon_dain_new": {
+        name: "???",
+        text: "\"Huh? Are you the transfer student? Whoa, already friends with the council president?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_laugh.png"
+        },
+        sunset: true,
+        setFlag: "knows_name_dain",
+        next: "day2_seoyeon_dain_react"
+    },
+    "day2_seoyeon_dain_react": {
+        name: "Seoyeon",
+        text: "\"(Seoyeon looks slightly flustered) ...Dain, right? Hi. We just finished work, so we were heading out.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_laugh.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_choice"
+    },
+    "day2_seoyeon_dain_choice": {
+        name: "Dain",
+        text: "\"Oh, really? I just finished practice! {name}, hang out with me next time too~!\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_laugh.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "Sure, definitely!", next: "day2_seoyeon_dain_yes", stats: { Dain: { affinity: 3 }, Seoyeon: { affinity: -2 } } },
+            { text: "I have plans with Seoyeon today, so...", next: "day2_seoyeon_dain_no", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
+            { text: "(Smile vaguely) It'd be nice to hang out with both of you.", next: "day2_seoyeon_dain_both", stats: { Seoyeon: { affinity: -5 }, Dain: { affinity: -5 } } }
+        ]
+    },
+    "day2_seoyeon_dain_yes": {
+        name: "Dain",
+        text: "\"It's a promise! See you tomorrow, {name}!\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_laugh.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_end"
+    },
+    "day2_seoyeon_dain_no": {
+        name: "Dain",
+        text: "\"Aww~ That's disappointing. But promise me next time!\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_normal.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_end"
+    },
+    "day2_seoyeon_dain_both": {
+        name: "Me",
+        text: "(Both Seoyeon's and Dain's expressions freeze at the same time. Did I say something wrong...?)",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_normal.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_both_2"
+    },
+    "day2_seoyeon_dain_both_2": {
+        name: "Dain",
+        text: "\"...What? Both of us? What's that supposed to mean?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_pout.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_both_3"
+    },
+    "day2_seoyeon_dain_both_3": {
+        name: "Seoyeon",
+        text: "\"(Seoyeon smiles coldly) Heh... {name} sure is popular, huh? The type who says yes to everyone, I guess.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_pout.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_both_4"
+    },
+    "day2_seoyeon_dain_both_4": {
+        name: "Dain",
+        text: "\"Oh come on, Miss President. But she's got a point though? {name}, you might end up losing both of us like that.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_normal.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_both_5"
+    },
+    "day2_seoyeon_dain_both_5": {
+        name: "Me",
+        text: "(The two of them exchange glances while staring at me. The atmosphere just got really awkward...)",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_normal.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_end"
+    },
+    "day2_seoyeon_dain_end": {
+        name: "Me",
+        text: "(Dain waves and walks away. Seoyeon's expression seems slightly stiff for some reason.)",
+        sunset: true,
         branches: [
             { next: "day2_end", condition: "has_number_seyoun" },
             { next: "day2_seoyeon_contact_ask" }
@@ -339,6 +470,97 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
         setFlag: "day2_met_yuna_after",
+        next: "day2_yuna_nurse_encounter"
+    },
+    "day2_yuna_nurse_encounter": {
+        name: "Me",
+        text: "(As we leave the warehouse with Yuna, we bump into someone in the corridor.)",
+        sunset: true,
+        branches: [
+            { next: "day2_yuna_nurse_met", condition: "met_nurse" },
+            { next: "day2_yuna_nurse_new" }
+        ]
+    },
+    "day2_yuna_nurse_met": {
+        name: "Nurse",
+        text: "\"Oh my, {name}? What are you doing here at this hour? ...And who is this student?\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        next: "day2_yuna_nurse_react"
+    },
+    "day2_yuna_nurse_new": {
+        name: "???",
+        text: "\"Hmm? Students at this hour, here? This old warehouse is dangerous...\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        setFlag: "met_nurse",
+        next: "day2_yuna_nurse_react"
+    },
+    "day2_yuna_nurse_react": {
+        name: "Yuna",
+        text: "\"(Yuna speaks coldly) ...We were just passing by. Don't mind us.\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        next: "day2_yuna_nurse_choice"
+    },
+    "day2_yuna_nurse_choice": {
+        name: "Nurse",
+        text: "\"(The nurse looks at Yuna suspiciously) ...Is that so? Hehe, be careful. Dangerous things hide in dark places.\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "(Hold Yuna's hand) Yes, we'll be careful.", next: "day2_yuna_nurse_protect", stats: { Yuna: { affinity: 5 }, Nurse: { affinity: -2 } } },
+            { text: "Ma'am, we were just taking a walk.", next: "day2_yuna_nurse_excuse", stats: { Nurse: { affinity: 3 } } },
+            { text: "(Just bow silently)", next: "day2_yuna_nurse_silent", stats: { Yuna: { affinity: 2 } } }
+        ]
+    },
+    "day2_yuna_nurse_protect": {
+        name: "Yuna",
+        text: "\"(Yuna squeezes my hand slightly) ...Thanks.\"",
+        characters: {
+            left: "assets/images/characters/yuna_shy.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        next: "day2_yuna_nurse_end"
+    },
+    "day2_yuna_nurse_excuse": {
+        name: "Nurse",
+        text: "\"Is that so? Hehe, try walking somewhere brighter next time. I worry, you know.\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        next: "day2_yuna_nurse_end"
+    },
+    "day2_yuna_nurse_silent": {
+        name: "Nurse",
+        text: "\"(The nurse watches us with a suspicious look, then walks away)\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        next: "day2_yuna_nurse_end"
+    },
+    "day2_yuna_nurse_end": {
+        name: "Yuna",
+        text: "\"...That person feels strange. She's not just a normal school nurse. {name}, be careful.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        sunset: true,
         branches: [
             { next: "day2_end", condition: "has_number_yuna" },
             { next: "day2_yuna_contact_ask" }
@@ -455,6 +677,55 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
         setFlag: "day2_met_dain_after",
+        next: "day2_dain_yuna_encounter"
+    },
+    "day2_dain_yuna_encounter": {
+        name: "Me",
+        text: "(Just then, I notice someone passing by the gym window. A pale-skinned girl walks quietly down the corridor.)",
+        sunset: true,
+        next: "day2_dain_yuna_spot"
+    },
+    "day2_dain_yuna_spot": {
+        name: "Dain",
+        text: "\"(Dain looks out the window and shivers slightly) That girl... isn't she kind of creepy? She's always wandering around alone like that...\"",
+        character: "assets/images/characters/dain_normal.png",
+        sunset: true,
+        next: "day2_dain_yuna_choice"
+    },
+    "day2_dain_yuna_choice": {
+        name: "Me",
+        text: "(Dain seems uneasy looking at Yuna.)",
+        choices: [
+            { text: "Yuna? She's just quiet, that's all.", next: "day2_dain_yuna_know", condition: "met_yuna", stats: { Dain: { affinity: 2 }, Yuna: { affinity: 2 } } },
+            { text: "Dunno, first time seeing her.", next: "day2_dain_yuna_unknown", excludeCondition: "met_yuna", stats: { Dain: { affinity: 3 } } },
+            { text: "You're way brighter and better, Dain!", next: "day2_dain_yuna_compliment", stats: { Dain: { affinity: 5 } } }
+        ]
+    },
+    "day2_dain_yuna_know": {
+        name: "Dain",
+        text: "\"Huh? You know her? Wow, {name}, you're friends with everyone. But I'm your best friend, right? Right?\"",
+        character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        next: "day2_dain_yuna_end"
+    },
+    "day2_dain_yuna_unknown": {
+        name: "Dain",
+        text: "\"Right? She has this different vibe... Anyway, when you're with me, focus only on me!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        next: "day2_dain_yuna_end"
+    },
+    "day2_dain_yuna_compliment": {
+        name: "Dain",
+        text: "\"H-hey, what's with that suddenly~! (Dain blushes and playfully hits my shoulder) But thanks! {name}'s the best!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        next: "day2_dain_yuna_end"
+    },
+    "day2_dain_yuna_end": {
+        name: "Me",
+        text: "(Yuna disappears into the distance. Dain still seems bothered but quickly returns to her bright expression.)",
+        sunset: true,
         branches: [
             { next: "day2_end", condition: "has_number_dain" },
             { next: "day2_dain_contact_ask" }

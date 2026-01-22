@@ -159,6 +159,137 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_laugh.png",
         sunset: true,
         setFlag: "day2_met_seoyeon_after",
+        next: "day2_seoyeon_dain_encounter"
+    },
+    "day2_seoyeon_dain_encounter": {
+        name: "나",
+        text: "(서연이와 함께 학생회실을 나서는데, 복도에서 누군가와 마주쳤다.)",
+        character: "assets/images/characters/seyoun_normal.png",
+        sunset: true,
+        branches: [
+            { next: "day2_seoyeon_dain_met", condition: "day2_met_dain_lunch" },
+            { next: "day2_seoyeon_dain_new" }
+        ]
+    },
+    "day2_seoyeon_dain_met": {
+        name: "다인",
+        text: "\"오? 아까 매점에서 본 애! {name} 아니야! 와, 학생회장이랑 같이 있네?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_laugh.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_react"
+    },
+    "day2_seoyeon_dain_new": {
+        name: "???",
+        text: "\"어? 너 혹시 전학생? 우와, 학생회장님이랑 벌써 친해진 거야?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_laugh.png"
+        },
+        sunset: true,
+        setFlag: "knows_name_dain",
+        next: "day2_seoyeon_dain_react"
+    },
+    "day2_seoyeon_dain_react": {
+        name: "서연",
+        text: "\"(서연이가 살짝 당황한 표정을 짓는다) ...정다인 학생? 어, 안녕. 우리 그냥 일 끝났으니까 가려던 참이야.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_laugh.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_choice"
+    },
+    "day2_seoyeon_dain_choice": {
+        name: "다인",
+        text: "\"아, 그래? 난 연습 끝나고 가는 길이야! {name}, 다음엔 나랑도 놀아줘~!\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_laugh.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "응, 다음에 꼭!", next: "day2_seoyeon_dain_yes", stats: { Dain: { affinity: 3 }, Seoyeon: { affinity: -2 } } },
+            { text: "오늘은 서연이랑 약속이 있어서...", next: "day2_seoyeon_dain_no", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
+            { text: "(애매하게 웃으며) 둘 다 만나면 좋겠는데.", next: "day2_seoyeon_dain_both", stats: { Seoyeon: { affinity: -5 }, Dain: { affinity: -5 } } }
+        ]
+    },
+    "day2_seoyeon_dain_yes": {
+        name: "다인",
+        text: "\"약속이다! 그럼 내일 보자, {name}!\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_laugh.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_end"
+    },
+    "day2_seoyeon_dain_no": {
+        name: "다인",
+        text: "\"에이~ 섭섭하네. 그래도 다음엔 꼭 놀아줘!\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_normal.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_end"
+    },
+    "day2_seoyeon_dain_both": {
+        name: "나",
+        text: "(순간 서연이와 다인이의 표정이 동시에 굳는다. 뭔가 잘못 말한 건가...?)",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_normal.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_both_2"
+    },
+    "day2_seoyeon_dain_both_2": {
+        name: "다인",
+        text: "\"...뭐야, 둘 다? 그게 무슨 말이야?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_pout.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_both_3"
+    },
+    "day2_seoyeon_dain_both_3": {
+        name: "서연",
+        text: "\"(서연이가 차갑게 웃는다) 후훗... {name}은 참 인기가 많구나? 여기저기 다 좋다고 하고 다니는 타입인가 봐.\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_pout.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_both_4"
+    },
+    "day2_seoyeon_dain_both_4": {
+        name: "다인",
+        text: "\"에이, 학생회장님도. 근데 맞는 말이긴 하네? {name}, 너 그러다 둘 다 놓친다?\"",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_normal.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_both_5"
+    },
+    "day2_seoyeon_dain_both_5": {
+        name: "나",
+        text: "(두 사람이 묘하게 서로를 의식하며 나를 바라본다. 분위기가 싸해졌다...)",
+        characters: {
+            left: "assets/images/characters/seyoun_normal.png",
+            right: "assets/images/characters/dain_normal.png"
+        },
+        sunset: true,
+        next: "day2_seoyeon_dain_end"
+    },
+    "day2_seoyeon_dain_end": {
+        name: "나",
+        text: "(다인이가 손을 흔들며 멀어졌다. 서연이의 표정이 왜인지 살짝 굳어 있는 것 같다.)",
+        sunset: true,
         branches: [
             { next: "day2_end", condition: "has_number_seyoun" },
             { next: "day2_seoyeon_contact_ask" }
@@ -339,6 +470,97 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
         setFlag: "day2_met_yuna_after",
+        next: "day2_yuna_nurse_encounter"
+    },
+    "day2_yuna_nurse_encounter": {
+        name: "나",
+        text: "(유나와 함께 창고를 나서는데, 복도에서 누군가와 마주쳤다.)",
+        sunset: true,
+        branches: [
+            { next: "day2_yuna_nurse_met", condition: "met_nurse" },
+            { next: "day2_yuna_nurse_new" }
+        ]
+    },
+    "day2_yuna_nurse_met": {
+        name: "보건선생님",
+        text: "\"어머, {name}? 이 시간에 여긴 웬일이야? ...그리고 이 학생은...\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        next: "day2_yuna_nurse_react"
+    },
+    "day2_yuna_nurse_new": {
+        name: "???",
+        text: "\"어머? 학생들이 이 시간에 여긴 웬일이야? 여기는 오래된 창고라 위험한데...\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        setFlag: "met_nurse",
+        next: "day2_yuna_nurse_react"
+    },
+    "day2_yuna_nurse_react": {
+        name: "유나",
+        text: "\"(유나가 차갑게 말한다) ...그냥 지나가는 길이에요. 신경 쓸 것 없어요.\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        next: "day2_yuna_nurse_choice"
+    },
+    "day2_yuna_nurse_choice": {
+        name: "보건선생님",
+        text: "\"(보건선생님이 유나를 의미심장하게 바라본다) ...그래? 후훗, 조심해서 가렴. 어두운 곳에는 위험한 것들이 숨어 있으니까.\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        choices: [
+            { text: "(유나의 손을 잡고) 네, 조심할게요.", next: "day2_yuna_nurse_protect", stats: { Yuna: { affinity: 5 }, Nurse: { affinity: -2 } } },
+            { text: "선생님, 저희 그냥 산책하던 거예요.", next: "day2_yuna_nurse_excuse", stats: { Nurse: { affinity: 3 } } },
+            { text: "(아무 말 없이 목례만 한다)", next: "day2_yuna_nurse_silent", stats: { Yuna: { affinity: 2 } } }
+        ]
+    },
+    "day2_yuna_nurse_protect": {
+        name: "유나",
+        text: "\"(유나가 내 손을 살짝 꼭 쥐다) ...고마워.\"",
+        characters: {
+            left: "assets/images/characters/yuna_shy.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        next: "day2_yuna_nurse_end"
+    },
+    "day2_yuna_nurse_excuse": {
+        name: "보건선생님",
+        text: "\"그래? 후훗, 다음부터는 좀 더 밝은 곳으로 산책하렴. 선생님이 걱정되니까.\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        next: "day2_yuna_nurse_end"
+    },
+    "day2_yuna_nurse_silent": {
+        name: "보건선생님",
+        text: "\"(보건선생님이 의미심장한 눈빛으로 우리를 바라보다가 지나간다)\"",
+        characters: {
+            left: "assets/images/characters/yuna_normal.png",
+            right: "assets/images/characters/nurse_normal.png"
+        },
+        sunset: true,
+        next: "day2_yuna_nurse_end"
+    },
+    "day2_yuna_nurse_end": {
+        name: "유나",
+        text: "\"...저 사람, 뭔가 이상해. 단순한 보건선생님이 아닌 것 같아. {name}, 조심해.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        sunset: true,
         branches: [
             { next: "day2_end", condition: "has_number_yuna" },
             { next: "day2_yuna_contact_ask" }
@@ -455,6 +677,55 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
         setFlag: "day2_met_dain_after",
+        next: "day2_dain_yuna_encounter"
+    },
+    "day2_dain_yuna_encounter": {
+        name: "나",
+        text: "(그때, 체육관 창문 너머로 누군가 지나가는 게 보인다. 창백한 피부의 여학생이 조용히 복도를 걷고 있다.)",
+        sunset: true,
+        next: "day2_dain_yuna_spot"
+    },
+    "day2_dain_yuna_spot": {
+        name: "다인",
+        text: "\"(다인이가 창밖을 보며 살짝 몸을 떨다) 저, 저 애... 좀 으스스하지 않아? 맨날 혼자 저렇게 돌아다니는데...\"",
+        character: "assets/images/characters/dain_normal.png",
+        sunset: true,
+        next: "day2_dain_yuna_choice"
+    },
+    "day2_dain_yuna_choice": {
+        name: "나",
+        text: "(다인이가 유나를 보며 불안해하는 것 같다.)",
+        choices: [
+            { text: "유나? 아, 그냥 조용한 애야.", next: "day2_dain_yuna_know", condition: "met_yuna", stats: { Dain: { affinity: 2 }, Yuna: { affinity: 2 } } },
+            { text: "글쌸, 나도 처음 봐.", next: "day2_dain_yuna_unknown", excludeCondition: "met_yuna", stats: { Dain: { affinity: 3 } } },
+            { text: "다인이 더 밝고 좋아!", next: "day2_dain_yuna_compliment", stats: { Dain: { affinity: 5 } } }
+        ]
+    },
+    "day2_dain_yuna_know": {
+        name: "다인",
+        text: "\"어? 알아? 와, {name} 넌 여러 애들이랑 친하구나. 근데 나랑 제일 친한 거지? 그치?\"",
+        character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        next: "day2_dain_yuna_end"
+    },
+    "day2_dain_yuna_unknown": {
+        name: "다인",
+        text: "\"그치? 뭔가 분위기가 달라... 아무튼 나랑 있을 땐 저런 생각 하지 말고 나한테만 집중해!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        next: "day2_dain_yuna_end"
+    },
+    "day2_dain_yuna_compliment": {
+        name: "다인",
+        text: "\"에이, 갑자기 무슨 말이야~! (다인이가 얼굴을 붉히며 어깨를 친다) 아무튼 고마워! 역시 {name}이 최고야!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        next: "day2_dain_yuna_end"
+    },
+    "day2_dain_yuna_end": {
+        name: "나",
+        text: "(유나가 멀리 사라진다. 다인이는 여전히 신경 쓰이는 듯하지만, 이내 다시 밝은 표정을 짓는다.)",
+        sunset: true,
         branches: [
             { next: "day2_end", condition: "has_number_dain" },
             { next: "day2_dain_contact_ask" }
