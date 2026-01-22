@@ -951,11 +951,5 @@ Object.assign(SCENARIO[2], {
         text: "(She pouts slightly, looking disappointed.) \"Tch... playing hard to get? Fine. Let me know if you change your mind.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_afternoon_nurse_skip"
-    },
-    "day2_afternoon_class": {
-        name: "Me",
-        text: "(The afternoon classes drag on, but I can't stop thinking about what happened earlier.)",
-        background: "assets/images/background/room_school.png",
-        next: "day2_afternoon_class"
     }
 });
