@@ -489,6 +489,72 @@ function isUnlocked(type, id) {
 }
 
 /**
+ * CG 해금 (게임에서 CG 배경 도달 시 호출)
+ * 배경 이미지 경로에서 CG ID를 추출하여 해금 상태를 저장
+ * main.js에서 배경 설정 시 호출됨
+ * 
+ * @param {string} cgId - CG 고유 식별자 (예: 'nurse_home_event1')
+ * @returns {boolean} 새로 해금되었으면 true, 이미 해금되어 있었으면 false
+ */
+function unlockCG(cgId) {
+    const progress = getProgress();
+    
+    // CG 객체가 없으면 생성
+    if (!progress.cg) {
+        progress.cg = {};
+    }
+    
+    // 이미 해금된 경우 false 반환
+    if (progress.cg[cgId]?.unlocked) {
+        return false;
+    }
+    
+    // CG 해금
+    progress.cg[cgId] = { unlocked: true, unlockedAt: Date.now() };
+    localStorage.setItem('cupid_gallery', JSON.stringify(progress));
+    console.log(`[Gallery] CG 해금: ${cgId}`);
+    return true;
+}
+
+/**
+ * 배경 이미지 경로에서 CG ID 추출
+ * CG 이미지 경로가 'assets/images/cg/' 또는 'assets/images/background/'에 있고
+ * GALLERY_CG에 등록된 ID와 매칭되면 해당 ID를 반환
+ * 
+ * @param {string} bgPath - 배경 이미지 경로
+ * @returns {string|null} CG ID 또는 null
+ */
+function getCGIdFromPath(bgPath) {
+    if (!bgPath) return null;
+    
+    // 파일명 추출 (확장자 제외)
+    const filename = bgPath.split('/').pop().replace(/\.[^.]+$/, '');
+    
+    // GALLERY_CG에서 해당 ID가 존재하는지 확인 (ko/en 모두 체크)
+    const allCGIds = new Set([
+        ...GALLERY_CG.ko.map(cg => cg.id),
+        ...GALLERY_CG.en.map(cg => cg.id)
+    ]);
+    
+    // 파일명이 CG ID와 일치하면 반환
+    if (allCGIds.has(filename)) {
+        return filename;
+    }
+    
+    // '_thumb' 접미사 제거 후 다시 확인
+    const baseFilename = filename.replace(/_thumb$/, '');
+    if (allCGIds.has(baseFilename)) {
+        return baseFilename;
+    }
+    
+    return null;
+}
+
+// main.js에서 사용할 수 있도록 전역으로 노출
+window.unlockCG = unlockCG;
+window.getCGIdFromPath = getCGIdFromPath;
+
+/**
  * 캐릭터를 만난 적이 있는지 확인
  * @param {string} charId - 캐릭터 ID
  * @returns {boolean} 만난 적 있으면 true
