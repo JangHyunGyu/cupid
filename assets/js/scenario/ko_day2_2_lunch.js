@@ -144,7 +144,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_dain_yes": {
         name: "나",
         text: "(서연이의 질문에 어떻게 대답할까 고민된다.)",
-        character: null,
+        character: "assets/images/characters/seyoun_normal.png",
         choices: [
             { text: "응, 어제 만났어. 밝고 재밌는 애더라.", next: "day2_seoyeon_dain_honest", stats: { Seoyeon: { affinity: -3 }, Dain: { affinity: 2 } } },
             { text: "그냥 아는 사이야. 서연이가 더 중요해.", next: "day2_seoyeon_dain_deny", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
@@ -154,7 +154,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_dain_no": {
         name: "나",
         text: "\"(정다인... 기억해두자.) 아니, 처음 보는 애야. 왜?\"",
-        character: null,
+        character: "assets/images/characters/seyoun_normal.png",
         setFlag: "knows_name_dain",
         next: "day2_seoyeon_dain_no_react"
     },
@@ -225,7 +225,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_branch_high": {
         name: "나",
         text: "(유나가 평소보다 조금은 부드러워진 표정으로 나를 바라본다.)",
-        character: null,
+        character: "assets/images/characters/yuna_smile.png",
         branches: [
             { next: "day2_yuna_talk_2_met_high", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_high" }
@@ -234,6 +234,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_branch_low": {
         name: "나",
         text: "(유나가 차갑고 실망스러운 눈빛으로 나를 바라본다.)",
+        character: "assets/images/characters/yuna_normal.png",
         branches: [
             { next: "day2_yuna_talk_2_met_low", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_low" }
@@ -280,7 +281,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_talk_branch": {
         name: "나",
         text: "(유나가 나를 바라보며 입을 열기 시작한다.)",
-        character: null,
+        character: "assets/images/characters/yuna_normal.png",
         branches: [
             { next: "day2_yuna_talk_2_met_normal", condition: "met_yuna" },
             { next: "day2_yuna_talk_2_new_normal" }
@@ -732,7 +733,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_store_choices": {
         name: "나",
         text: "(다인이와 이야기를 나누는 사이 어느덧 우리 차례가 되었다. 다인이는 무엇을 먹을지 물어보았다.)",
-        character: null,
+        character: "assets/images/characters/dain_normal.png",
         choices: [
             { text: "내가 다인이 몫까지 살게. 뭐 먹을래?", next: "day2_dain_store_buy_normal", stats: { Dain: { affinity: 5 } } },
             { text: "사람 진짜 많다... 우리 그냥 옥상 갈까?", next: "day2_dain_store_rooftop_normal", stats: { Dain: { affinity: 3 } } },
@@ -945,6 +946,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         text: "\"(기운이 넘친다니...? 유나가 했던 말들이 떠오른다. 이 학교, 정말 뭔가가 있는 걸까?)\"",
         background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_sleep": {
@@ -1023,7 +1025,7 @@ Object.assign(SCENARIO[2], {
     "nurse_contact_exchange_high": {
         name: "나",
         text: "(보건선생님이 장난스러우면서도 유혹적인 미소로 나를 바라본다.)",
-        character: null,
+        character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "nurse_contact_already_have_high", condition: "has_number_nurse" },
             { next: "nurse_contact_ask_high" }
@@ -1032,7 +1034,7 @@ Object.assign(SCENARIO[2], {
     "nurse_contact_exchange_low": {
         name: "나",
         text: "(보건선생님이 조금은 피곤한 기색으로 나를 바라본다.)",
-        character: null,
+        character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "nurse_contact_already_have_low", condition: "has_number_nurse" },
             { next: "nurse_contact_ask_low" }
@@ -1113,7 +1115,7 @@ Object.assign(SCENARIO[2], {
     "nurse_contact_exchange": {
         name: "나",
         text: "(보건선생님이 나를 바라보며 입을 연다.)",
-        character: null,
+        character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "nurse_contact_already_have", condition: "has_number_nurse" },
             { next: "nurse_contact_ask" }
