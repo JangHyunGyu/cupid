@@ -1170,6 +1170,9 @@ function getProperParticle(name, nextChars) {
     }
     
     const particles = [
+		{ pattern: '이라고', with: '이라고', without: '라고' },
+        { pattern: '라고', with: '이라고', without: '라고' },
+        { pattern: '이라', with: '이라', without: '라' },
         { pattern: '은는', with: '은', without: '는' },
         { pattern: '이가', with: '이', without: '가' },
         { pattern: '을를', with: '을', without: '를' },
