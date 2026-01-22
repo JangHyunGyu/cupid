@@ -705,8 +705,15 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_sleep": {
-        name: "나",
+        name: "보건선생님",
         text: "(선생님이 덮어준 이불의 온기에 나도 모르게 의식이 흐려진다. 전학 이틀간의 피로가 한꺼번에 밀려오는 기분이다.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: null,
+        next: "day2_lunch_nurse_sleep_teacher"
+    },
+    "day2_lunch_nurse_sleep_teacher": {
+        name: "보건선생님",
+        text: "(희미하게 선생님의 목소리가 들린다.) \"... 네, 담임 선생님. {name} 학생이 상태가 좋지 않아서 오후 수업은 좀 쉬게 했어요. 네, 제가 돌봐드릴게요. 걱정 마세요.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: null,
         next: "day2_lunch_nurse_sleep_end"
@@ -727,7 +734,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_wake_2": {
         name: "보건선생님",
-        text: "\"어머, 이제 일어났니? 정말 달게 자더구나. 이제 곧 하교 시간이야. 몸은 좀 어때?\"",
+        text: "\"(선생님이 부드러운 미소를 띤다.) 어머, 이제 일어났니? 정말 달게 자더구나. 오후 수업은 담임 선생님한테 미리 말씀드려뒀으니까 걱정 마. 이제 곧 하교 시간이야. 몸은 좀 어때?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,

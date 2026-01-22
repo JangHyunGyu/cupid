@@ -125,7 +125,7 @@ Object.assign(SCENARIO[1], {
                 next: "rooftop_talk_ah_fail",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
-                    { minAffinity: 20, next: "rooftop_talk_ah" }
+                    { minAffinity: 30, next: "rooftop_talk_ah" }
                 ],
                 stats: { Seoyeon: { affinity: 8 } }
             },
@@ -136,7 +136,7 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(Her expression hardens instantly.) \"Um... that's a bit... {name}, we aren't that close yet. That joke went too far...\"",
         character: "assets/images/characters/seyoun_pout.png",
-        stats: { Seoyeon: { affinity: -30 } },
+        stats: { Seoyeon: { affinity: -15 } },
         next: "rooftop_awkward"
     },
     "rooftop_awkward": {

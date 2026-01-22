@@ -302,13 +302,13 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(서연이가 불쾌한 기색을 숨기지 않으며 걸음을 멈춘다. 그녀의 눈빛이 싸늘하게 식어있다.)",
         character: "assets/images/characters/seyoun_angry.png",
-        stats: { Seoyeon: { affinity: -25 } },
+        stats: { Seoyeon: { affinity: -10 } },
         next: "hallway_talk_trap_low_2"
     },
     "hallway_talk_trap_low_2": {
         name: "서연",
-        text: "\"그만해. 방금 그 말은 성희롱이나 다름없어. 전학 첫날부터 그런 식으로 행동하면 곤란해. 안내는 여기서 마칠 테니 혼자서 찾아가 봐.\"",
-        character: "assets/images/characters/seyoun_angry.png",
+        text: "\"음... 뭐, 칭찬인 건 알겠는데... 조금 과하지 않니? 우리 아직 처음 만났잖아. 장난은 좀 적당히 해줘.\"",
+        character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_2"
     },
     "hallway_talk_trap_normal": {

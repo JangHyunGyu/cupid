@@ -143,19 +143,19 @@ Object.assign(SCENARIO[1], {
                 next: "rooftop_talk_ah_fail",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
-                    { minAffinity: 20, next: "rooftop_talk_ah" }
+                    { minAffinity: 30, next: "rooftop_talk_ah" }
                 ],
                 stats: { Seoyeon: { affinity: 3 } }
             },
             { text: "이렇게 정성 가득한 도시락은 처음이야. 고마워.", next: "rooftop_talk_thanks", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "별로 맛없어 보이는데... 매점 갈걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -50 } } }
+            { text: "별로 맛없어 보이는데... 매점 갈걸.", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "rooftop_talk_ah_fail": {
         name: "서연",
         text: "(서연이의 표정이 순식간에 굳어진다. 당황한 듯 젓가락을 내려놓는다.) \"음.. 그건 좀... {name}, 우리 아직 그 정도로 친한 건 아니잖아. 장난이 과해.\"",
         character: "assets/images/characters/seyoun_pout.png",
-        stats: { Seoyeon: { affinity: -30 } },
+        stats: { Seoyeon: { affinity: -15 } },
         next: "rooftop_awkward"
     },
     "rooftop_awkward": {

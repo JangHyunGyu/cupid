@@ -579,6 +579,35 @@ Object.assign(SCENARIO[2], {
         name: "Nurse",
         text: "\"Of course. Lie down. I'll make sure no one disturbs your sleep.\"",
         character: "assets/images/characters/nurse_normal.png",
+        next: "day2_lunch_nurse_sleep_2"
+    },
+    "day2_lunch_nurse_sleep_2": {
+        name: "Me",
+        text: "(The warmth of the blanket she covers me with makes my consciousness fade. The exhaustion from the past two days of transfer hits me all at once.)",
+        background: "assets/images/background/nurse_room.jpg",
+        character: null,
+        next: "day2_lunch_nurse_sleep_teacher"
+    },
+    "day2_lunch_nurse_sleep_teacher": {
+        name: "Nurse",
+        text: "(I faintly hear her voice.) \"...Yes, homeroom teacher. {name} isn't feeling well, so I let them rest for the afternoon classes. Yes, I'll take care of them. Don't worry.\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: null,
+        next: "day2_lunch_nurse_wake"
+    },
+    "day2_lunch_nurse_wake": {
+        name: "Me",
+        text: "(...Everything became quiet. I slowly regain consciousness and open my eyes. The window is filled with orange sunset light. I slept through the afternoon?)",
+        background: "assets/images/background/nurse_room.jpg",
+        sunset: true,
+        next: "day2_lunch_nurse_wake_2"
+    },
+    "day2_lunch_nurse_wake_2": {
+        name: "Nurse",
+        text: "\"(She smiles softly.) Oh, you're awake? You slept so soundly. I already told your homeroom teacher about the afternoon classes, so don't worry. It's almost time to go home. How do you feel?\"",
+        background: "assets/images/background/nurse_room.jpg",
+        character: "assets/images/characters/nurse_normal.png",
+        sunset: true,
         next: "day2_lunch_nurse_end"
     },
     "day2_lunch_nurse_talk": {
