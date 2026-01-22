@@ -1381,15 +1381,15 @@ function createCGParticles(container) {
     if (!container) return;
     
     const particles = ['✨', '💕', '💖', '⭐', '🌟', '💗'];
-    const particleCount = 20;
+    const particleCount = 15;  // 파티클 개수 줄임
     
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('span');
         particle.className = 'cg-particle';
         particle.textContent = particles[Math.floor(Math.random() * particles.length)];
         particle.style.left = Math.random() * 100 + '%';
-        particle.style.animationDelay = Math.random() * 3 + 's';
-        particle.style.animationDuration = (3 + Math.random() * 4) + 's';
+        particle.style.animationDelay = Math.random() * 8 + 's';  // 딜레이 증가
+        particle.style.animationDuration = (10 + Math.random() * 8) + 's';  // 10~18초로 느리게
         particle.style.fontSize = (0.8 + Math.random() * 1.2) + 'rem';
         container.appendChild(particle);
     }
