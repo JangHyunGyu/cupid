@@ -1140,65 +1140,97 @@ async function startFreeTalk(scene) {
 }
 
 
-function hasBatchim(str) {
-    if (!str || str.length === 0) return false;
+function getBatchimInfo(str) {
+    if (!str || str.length === 0) return { hasBatchim: false, isRieul: false };
+    
     const lastChar = str[str.length - 1];
     const code = lastChar.charCodeAt(0);
-   
-    // 받침 계산: (유니코드 - 0xAC00) % 28
-    return (code - 0xAC00) % 28 !== 0;
+
+    if (code < 0xAC00 || code > 0xD7A3) {
+        return { hasBatchim: false, isRieul: false };
+    }
+	
+	// 받침 계산: (유니코드 - 0xAC00) % 28
+    const batchimIndex = (code - 0xAC00) % 28;
+    return {
+        hasBatchim: batchimIndex !== 0,
+        isRieul: batchimIndex === 8
+    };
 }
 
 function getProperParticle(name, nextChars) {
-    const batchim = hasBatchim(name);
-   
-    if (nextChars.startsWith('이가') || nextChars.startsWith('가')) {
-        return batchim ? '이' : '가';
-    } else if (nextChars.startsWith('을를') || nextChars.startsWith('를')) {
-        return batchim ? '을' : '를';
-    } else if (nextChars.startsWith('은는') || nextChars.startsWith('는')) {
-        return batchim ? '은' : '는';
-    } else if (nextChars.startsWith('이다') || nextChars.startsWith('다')) {
-        return batchim ? '이다' : '다';
-    } else if (nextChars.startsWith('으로') || nextChars.startsWith('로')) {
-        return batchim ? '으로' : '로';
-    } else if (nextChars.startsWith('와') || nextChars.startsWith('과')) {
-        return batchim ? '과' : '와';
-    } else if (nextChars.startsWith('이랑') || nextChars.startsWith('랑')) {
-        return batchim ? '이랑' : '랑';
-    } else if (nextChars.startsWith('이나') || nextChars.startsWith('나')) {
-        return batchim ? '이나' : '나';
-    } else if (nextChars.startsWith('야') || nextChars.startsWith('아')) {
-        return batchim ? '아' : '야';
+    const { hasBatchim, isRieul } = getBatchimInfo(name);
+    
+    // ㄹ + 으로/로 예외 처리
+    if (nextChars.startsWith('으로')) {
+        return { correct: (hasBatchim && !isRieul) ? '으로' : '로', removeLength: 2 };
     }
-    // 받침에 상관없는 조사
-    else if (nextChars.startsWith('의') || 
-             nextChars.startsWith('에') ||
-             nextChars.startsWith('에서') ||
-             nextChars.startsWith('에게') ||
-             nextChars.startsWith('한테') ||
-             nextChars.startsWith('에게서') ||
-             nextChars.startsWith('한테서') ||
-             nextChars.startsWith('하고') ||
-             nextChars.startsWith('도') ||
-             nextChars.startsWith('만') ||
-             nextChars.startsWith('까지') ||
-             nextChars.startsWith('부터') ||
-             nextChars.startsWith('조차') ||
-             nextChars.startsWith('마저') ||
-             nextChars.startsWith('뿐') ||
-             nextChars.startsWith('이나마') ||
-             nextChars.startsWith('밖에') ||
-             nextChars.startsWith('처럼') ||
-             nextChars.startsWith('같이') ||
-             nextChars.startsWith('보다') ||
-             nextChars.startsWith('마다') ||
-             nextChars.startsWith('씩') ||
-             nextChars.startsWith('대로')) {
-        return '';
+    if (nextChars.startsWith('로')) {
+        return { correct: (hasBatchim && !isRieul) ? '으로' : '로', removeLength: 1 };
     }
     
-    return '';
+    const particles = [
+        { pattern: '은는', with: '은', without: '는' },
+        { pattern: '이가', with: '이', without: '가' },
+        { pattern: '을를', with: '을', without: '를' },
+        { pattern: '이랑', with: '이랑', without: '랑' },
+        { pattern: '이나', with: '이나', without: '나' },
+        { pattern: '이다', with: '이다', without: '다' },
+        { pattern: '랑', with: '이랑', without: '랑' },
+        { pattern: '나', with: '이나', without: '나' },
+        { pattern: '다', with: '이다', without: '다' },
+        { pattern: '은', with: '은', without: '는' },
+        { pattern: '는', with: '은', without: '는' },
+        { pattern: '이', with: '이', without: '가' },
+        { pattern: '가', with: '이', without: '가' },
+        { pattern: '을', with: '을', without: '를' },
+        { pattern: '를', with: '을', without: '를' },
+        { pattern: '과', with: '과', without: '와' },
+        { pattern: '와', with: '과', without: '와' },
+        { pattern: '아', with: '아', without: '야' },
+        { pattern: '야', with: '아', without: '야' }
+    ];
+    
+    for (const p of particles) {
+        if (nextChars.startsWith(p.pattern)) {
+            const correct = hasBatchim ? p.with : p.without;
+            return { correct, removeLength: p.pattern.length };
+        }
+    }
+    
+    return null;
+}
+
+function processKoreanName(text, nameToUse, patternStr = "{name(\\?)?}") {
+    let result = '';
+    let lastIndex = 0;
+    
+    const namePattern = new RegExp(patternStr, 'g');
+    let match;
+    
+    while ((match = namePattern.exec(text)) !== null) {
+        result += text.substring(lastIndex, match.index);        
+        
+        const afterMatch = text.substring(match.index + match[0].length);
+        if (afterMatch.startsWith('님') || afterMatch.startsWith('학생')) {
+            result += nameToUse;
+            lastIndex = match.index + match[0].length;
+            continue;
+        }
+        
+        // 조사 처리
+        const particleResult = getProperParticle(nameToUse, afterMatch);
+        if (particleResult) {
+            result += nameToUse + particleResult.correct;
+            lastIndex = match.index + match[0].length + particleResult.removeLength;
+        } else {
+            result += nameToUse;
+            lastIndex = match.index + match[0].length;
+        }
+    }
+    
+    result += text.substring(lastIndex);
+    return result;
 }
 
 function typeText(text, charName) {
@@ -1206,23 +1238,10 @@ function typeText(text, charName) {
         console.warn("typeText called with null/undefined text");
         return Promise.resolve();
     }
+
     const isEn = document.documentElement.lang === 'en';
     const isPlayer = charName === "나" || charName === "Me" || charName === "시스템" || charName === "System";
 
-    // {name}은 항상 순수 이름으로 (자기소개 등에서 자연스럽게)
-    // 한국어이고 화자가 주인공이 아닐 때만 '군'을 붙임
-    let rawName = gameState.playerName;
-    if (!isEn && !isPlayer && rawName) {
-        // 뒤에 '학생'이나 '님' 등이 붙어있으면 '군'을 붙이지 않음
-        const nameIndex = text.indexOf("{name}");
-        const nextChar = text.charAt(nameIndex + 6);
-        if (nextChar !== ' ' && nextChar !== '학' && nextChar !== '님' && nextChar !== '이') {
-            rawName += " 군";
-        }
-    }
-    let processedText = text.replace(/{name}/g, rawName);
-
-    // {name?} 처리: 이름을 알면 이름, 모르면 '전학생'
     const charNameMap = {
         "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain", "담임선생님": "Teacher", "보건선생님": "Nurse",
         "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain", "Homeroom Teacher": "Teacher", "Nurse": "Nurse"
@@ -1230,18 +1249,24 @@ function typeText(text, charName) {
     const charKey = charName && (charNameMap[charName] || charName);
     const nameKnown = charKey && gameState[`knowsName_${charKey}`];
     const defaultTitle = isEn ? "Transfer Student" : "전학생";
-    let nameToUse = nameKnown ? gameState.playerName : defaultTitle;
-
-    if (!isEn && !isPlayer && nameToUse) {
-        // 이름을 알 때만 '군'을 붙이고, 뒤에 '학생' 등이 붙어있으면 붙이지 않음
-        const nameIndex = processedText.indexOf("{name?}");
-        const nextChar = processedText.charAt(nameIndex + 7);
-        if (nameKnown && nextChar !== ' ' && nextChar !== '학' && nextChar !== '님' && nextChar !== '이') {
-            nameToUse += " 군";
-        }
+    
+    let processedText = text;
+    
+    // {name}은 항상 순수 이름으로 (자기소개 등에서 자연스럽게)
+    // 한국어이고 화자가 주인공이 아닐 때
+if (!isEn && !isPlayer) {
+        const nameToUseForQuestion = nameKnown ? gameState.playerName : defaultTitle;
+        
+        // {name?} 패턴 처리 (이름 모를 땐 '전학생', 알 땐 '주인공 이름')
+        processedText = processKoreanName(text, nameToUseForQuestion, "{name\\?}");
+        
+        // {name} 패턴 처리 (언제나 '주인공 이름')
+        processedText = processKoreanName(processedText, gameState.playerName, "{name}");
+    } else {
+        // 영어이거나 본인 대사면 단순 치환
+        const nameToUse = nameKnown ? gameState.playerName : defaultTitle;
+        processedText = text.replace(/{name\?}/g, nameToUse).replace(/{name}/g, gameState.playerName);
     }
-
-    processedText = processedText.replace(/{name\?}/g, nameToUse);
 
     // 호감도 리스트 치환 {affinity_list}
     if (processedText.includes("{affinity_list}")) {
@@ -1251,12 +1276,11 @@ function typeText(text, charName) {
 
         let listStr = isEn ? "\n\n[Affinity Status]\n" : "\n\n[호감도 현황]\n";
         for (const [key, name] of Object.entries(charNames)) {
-            // 만난 적이 있는 캐릭터만 표시
+            // 만난 적이 있는 캐릭터만 표시 
             if (!gameState["met" + key]) continue;
-
             const affinity = gameState.stats[key].affinity;
             let bar = "";
-
+            
             if (affinity >= 0) {
                 // 양수일 때: 빨간 하트(❤️)와 하얀 하트(🤍)
                 const filled = Math.min(10, Math.floor(affinity / 10));
@@ -1266,7 +1290,7 @@ function typeText(text, charName) {
                 const broken = Math.min(10, Math.floor(Math.abs(affinity) / 10));
                 bar = "💔".repeat(broken) + "🤍".repeat(10 - broken);
             }
-
+            
             listStr += `${name}: ${bar} (${affinity}%)\n`;
         }
         processedText = processedText.replace(/{affinity_list}/g, listStr);
