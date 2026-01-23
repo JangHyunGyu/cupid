@@ -83,7 +83,7 @@ const GALLERY_CHARACTERS = {
             bust: '35-23-36 65F',
             hobby: '요리, 운동',
             personality: '츤데레, 활발',
-            expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat']
+            expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
         },
         // 담임선생님 - 갭 모에
         teacher: {
@@ -167,7 +167,7 @@ const GALLERY_CHARACTERS = {
             bust: '35-23-36 65F',
             hobby: 'Cooking, Sports',
             personality: 'Tsundere, Cheerful',
-            expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat']
+            expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
         },
         // Teacher (Ms. Kim) - 의외의 허당 선생님 (Gap Moe)
         teacher: {
