@@ -99,7 +99,7 @@ const GALLERY_CHARACTERS = {
             bust: '38-24-38 70G',
             hobby: '독서, 영화 감상',
             personality: '전문적, 허당',
-            expressions: ['normal', 'smile', 'shy', 'angry', 'sad']
+            expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
         },
         // 보건선생님 - 장난꾸러기 누나
         nurse: {
@@ -183,7 +183,7 @@ const GALLERY_CHARACTERS = {
             bust: '38-24-38 70G',
             hobby: 'Reading, Movies',
             personality: 'Professional, Clumsy',
-            expressions: ['normal', 'smile', 'shy', 'angry', 'sad']
+            expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
         },
         // Nurse (School Nurse) - 장난꾸러기 보건교사 (Playful)
         nurse: {
