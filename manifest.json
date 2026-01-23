@@ -1,0 +1,19 @@
+{
+    "name": "Cupid: 무료 웹 미연시",
+    "short_name": "Cupid",
+    "description": "설치 없이 즐기는 무료 웹 미연시 게임. 학원 로맨스 비주얼 노벨의 주인공이 되어보세요.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1a1a2e",
+    "theme_color": "#e94560",
+    "orientation": "portrait",
+    "lang": "ko",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        }
+    ],
+    "categories": ["games", "entertainment"]
+}
