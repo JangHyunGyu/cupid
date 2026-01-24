@@ -1646,7 +1646,11 @@ class FreeTalkSystem {
                 (charName === "유나" && m.char === "Yuna") ||
                 (charName === "Yuna" && m.char === "유나") ||
                 (charName === "다인" && m.char === "Dain") ||
-                (charName === "Dain" && m.char === "다인");
+                (charName === "Dain" && m.char === "다인") ||
+                (charName === "담임선생님" && m.char === "Homeroom Teacher") ||
+                (charName === "Homeroom Teacher" && m.char === "담임선생님") ||
+                (charName === "보건선생님" && m.char === "Nurse") ||
+                (charName === "Nurse" && m.char === "보건선생님");
             // 플래그가 true인 기억만 포함
             return charMatch && this.stateManager.getFlag(m.flag);
         });
