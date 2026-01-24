@@ -821,7 +821,10 @@ class GalleryManager {
         // 이미 해금됐으면 무시
         if (progress.characters[charId]?.unlocked) return;
         
-        if (!progress.characters[charId]) progress.characters[charId] = { met: true };
+        // 캐릭터 데이터가 없으면 초기화
+        if (!progress.characters[charId]) {
+            progress.characters[charId] = { met: true, metAt: Date.now() };
+        }
         progress.characters[charId].unlocked = true;
         progress.characters[charId].unlockedAt = Date.now();
         
@@ -1331,6 +1334,8 @@ class DialogueSystem {
             "서연": "seyoun", "유나": "yuna", "다인": "dain",
             "담임선생님": "teacher", "보건선생님": "nurse",
             "Seoyeon": "seyoun", "Yuna": "yuna", "Dain": "dain",
+            "Teacher": "teacher", "Nurse": "nurse",
+            "Homeroom Teacher": "teacher", "School Nurse": "nurse",
             "???": "seyoun"
         };
     }
@@ -2308,7 +2313,8 @@ class SceneRenderer {
             "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain",
             "담임선생님": "Teacher", "보건선생님": "Nurse",
             "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
-            "Teacher": "Teacher", "Nurse": "Nurse"
+            "Teacher": "Teacher", "Nurse": "Nurse",
+            "Homeroom Teacher": "Teacher", "School Nurse": "Nurse"
         };
     }
 
@@ -3313,10 +3319,6 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 깜빡이는 삼각형 표시 숨김 (나중에 필요시 다시 표시)
         this.uiManager.showNextIndicator(false);
-
-        // ─────────────────────────────────────────────────────────
-        // 📌 10단계: 씬 타입별 분기 처리
-        // ─────────────────────────────────────────────────────────
 
         // ─────────────────────────────────────────────────────────
         // 📌 10단계: 씬 타입별 분기 처리
