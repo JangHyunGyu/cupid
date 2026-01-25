@@ -3081,7 +3081,7 @@ class GameEngine {
      * 
      * @param {Object} choice - 실행할 선택지 객체
      */
-    executeChoice(choice) {
+    async executeChoice(choice) {
         // ─────────────────────────────────────────────────────────
         // 📌 1단계: 플래그 설정
         // 플래그는 게임 진행 상황을 기록하는 true/false 값
@@ -3153,7 +3153,7 @@ class GameEngine {
             location.href = 'index.html';
         } else {
             // 다음 씬 렌더링
-            this.renderScene(nextScene);
+            await this.renderScene(nextScene);
         }
     }
 
@@ -3221,7 +3221,7 @@ class GameEngine {
         // 📌 현재 씬의 다음 씬으로 진행
         const scene = this.sceneRenderer.getScene(this.sceneRenderer.currentSceneId);
         const nextId = this.sceneRenderer.resolveNextScene(scene);
-        if (nextId) this.renderScene(nextId);
+        if (nextId) await this.renderScene(nextId);
     }
 
     /**
