@@ -1611,6 +1611,9 @@ class FreeTalkSystem {
         /** 현재 프리토킹 진행 중 여부 */
         this.isFreeTalking = false;
         
+        /** 현재 채팅 처리 중 여부 (중복 호출 방지) */
+        this.isProcessingChat = false;
+        
         /** 현재까지 진행한 턴 수 */
         this.freeTalkTurns = 0;
         
@@ -1758,6 +1761,9 @@ class FreeTalkSystem {
      * @param {string} sceneId - 씬 ID
      */
     async startFreeTalk(scene, sceneId) {
+        // 이미 프리토킹 중이면 무시 (중복 호출 방지)
+        if (this.isFreeTalking) return;
+        
         this.isFreeTalking = true;
         this.freeTalkTurns = 0;
         this.currentMaxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
@@ -1866,19 +1872,38 @@ class FreeTalkSystem {
             }
         }
 
-        // 버튼 설정
+        // ─────────────────────────────────────────────────────────────
+        // 전송 버튼 스타일 설정
+        // ─────────────────────────────────────────────────────────────
+        // 기본 버튼 텍스트 목록 (이 텍스트들은 아이콘 버튼으로 표시)
         const iconButtons = ["말하기", "전송", "전송하기", "Send"];
+        
         if (scene.buttonText && !iconButtons.includes(scene.buttonText)) {
+            // 커스텀 버튼 텍스트가 있는 경우 (예: "고백하기", "대답하기")
+            // → 텍스트 버튼으로 표시 (직사각형, 가변 너비)
             this.uiManager.chatSendBtn.textContent = scene.buttonText;
             this.uiManager.chatSendBtn.style.cssText = 'border-radius:8px;width:auto;padding:0 20px;';
         } else {
+            // 기본 버튼인 경우
+            // → 아이콘 버튼으로 표시 (원형, 고정 크기)
             this.uiManager.chatSendBtn.innerHTML = SEND_ICON;
             this.uiManager.chatSendBtn.style.cssText = 'border-radius:50%;width:45px;padding:0;';
         }
 
-        this.uiManager.turnCountEl.textContent = this.currentMaxTurns;
+        // ─────────────────────────────────────────────────────────────
+        // UI 상태 초기화
+        // ─────────────────────────────────────────────────────────────
+        // 남은 대화 턴 수 표시 (요소가 있는 경우에만)
+        if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns;
+        
+        // 스킵 버튼 활성화 (대화 중단 가능하도록)
         if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
 
+        // ─────────────────────────────────────────────────────────────
+        // 초기 대사 표시 (씬에 text가 있는 경우)
+        // ─────────────────────────────────────────────────────────────
+        // 캐릭터가 먼저 말을 거는 상황 (예: "안녕! 무슨 일이야?")
+        // → 타이핑 효과로 표시하고, AI 대화 기록에도 추가
         if (scene.text) {
             await this.dialogueSystem.typeText(scene.text, scene.name);
             this.freeTalkHistory.push({ role: "assistant", content: scene.text });
@@ -1929,12 +1954,17 @@ class FreeTalkSystem {
 
     /** 채팅 메시지 전송 */
     async sendChatMessage(getSceneFn) {
+        // 이미 처리 중이면 무시 (중복 호출 방지)
+        if (this.isProcessingChat) return;
+        
         const text = this.uiManager.chatInput.value.trim();
         if (!text || this.freeTalkTurns >= this.currentMaxTurns || this.dialogueSystem.isCurrentlyTyping()) return;
 
+        this.isProcessingChat = true;
+
         this.uiManager.chatInput.value = "";
         this.freeTalkTurns++;
-        this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
+        if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
 
         // 프리토킹 횟수 증가
         const scene = getSceneFn(this.currentSceneId);
@@ -2060,6 +2090,7 @@ class FreeTalkSystem {
             this.freeTalkTurns = this.currentMaxTurns;
             this.endFreeTalk();
         } finally {
+            this.isProcessingChat = false;  // 처리 완료 플래그 해제
             this.uiManager.chatSendBtn.disabled = false;
             if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
             this.uiManager.chatInput.disabled = false;
@@ -2177,8 +2208,9 @@ class FreeTalkSystem {
             console.warn("JSON parsing failed:", e);
         }
         
-        // 📌 파싱 실패하거나 텍스트 추출 실패 시 원본 반환
-        return reply;
+        // 📌 파싱 실패하거나 텍스트 추출 실패 시 fallback 메시지 반환
+        const isEn = document.documentElement.lang === 'en';
+        return isEn ? "I couldn't understand the response. Let me try again." : "응답을 이해할 수 없습니다. 다시 시도하겠습니다.";
     }
 
     /**
@@ -2442,7 +2474,7 @@ class SceneRenderer {
         }
 
         // 분기 없으면 단순히 next 반환
-        return scene.next;
+        return scene.next || "error";  // next가 없으면 error 씬으로 fallback
     }
 
     /** 
@@ -2914,13 +2946,26 @@ class GameEngine {
 
         // 현재 보고 있는 씬 데이터 가져오기
         const scene = this.sceneRenderer.getScene(this.sceneRenderer.currentSceneId);
-        if (!scene) return;  // 씬 데이터 없으면 아무것도 안 함
+        if (!scene) {
+            // 씬 데이터 없으면 오류 메시지 표시
+            const isEn = document.documentElement.lang === 'en';
+            const errorMsg = isEn ? "Scene not found. Please check the scenario data." : "씬을 찾을 수 없습니다. 시나리오 데이터를 확인하세요.";
+            await this.uiManager.showModal(errorMsg, true);
+            return;
+        }
 
         // ✅ 케이스 1: 프리토킹이 방금 끝났을 때
         // - 프리토킹 종료 후 대화창을 클릭하면 다음 씬으로 넘어감
         if (scene.type === 'free_talk' && !this.freeTalkSystem.isFreeTalking) {
             const nextId = this.sceneRenderer.resolveNextScene(scene);
-            if (nextId) await this.renderScene(nextId);
+            if (nextId) {
+                await this.renderScene(nextId);
+            } else {
+                // 다음 씬이 없으면 오류 메시지
+                const isEn = document.documentElement.lang === 'en';
+                const errorMsg = isEn ? "Next scene not defined. Please check the scenario data." : "다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
+                await this.uiManager.showModal(errorMsg, true);
+            }
             return;
         }
 
@@ -2941,7 +2986,14 @@ class GameEngine {
             // � 선택지가 모두 조건을 충족하지 못하면 다음 씬으로
             if (availableChoices.length === 0) {
                 const nextId = this.sceneRenderer.resolveNextScene(scene);
-                if (nextId) await this.renderScene(nextId);
+                if (nextId) {
+                    await this.renderScene(nextId);
+                } else {
+                    // 다음 씬이 없으면 오류 메시지
+                    const isEn = document.documentElement.lang === 'en';
+                    const errorMsg = isEn ? "No available choices and next scene not defined. Please check the scenario data." : "선택지가 없고 다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
+                    await this.uiManager.showModal(errorMsg, true);
+                }
                 return;
             }
             
@@ -2958,7 +3010,14 @@ class GameEngine {
         } else {
             // 선택지 없으면 바로 다음 씬으로
             const nextId = this.sceneRenderer.resolveNextScene(scene);
-            if (nextId) await this.renderScene(nextId);
+            if (nextId) {
+                await this.renderScene(nextId);
+            } else {
+                // 다음 씬이 없으면 오류 메시지
+                const isEn = document.documentElement.lang === 'en';
+                const errorMsg = isEn ? "Next scene not defined. Please check the scenario data." : "다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
+                await this.uiManager.showModal(errorMsg, true);
+            }
         }
     }
 
@@ -3710,9 +3769,13 @@ window.loadGameState = () => {
  */
 if (!window.preventAutoStart) {
     window.addEventListener('DOMContentLoaded', async () => {
-        gameEngine = new GameEngine();  // 게임 엔진 생성
-        soundManager.init();             // 사운드 매니저 초기화
-        await gameEngine.renderScene("start");  // 첫 씬 렌더링
+        try {
+            gameEngine = new GameEngine();  // 게임 엔진 생성
+            soundManager.init();             // 사운드 매니저 초기화
+            await gameEngine.renderScene("start");  // 첫 씬 렌더링
+        } catch (e) {
+            console.error('[Cupid Engine] 초기화 오류:', e);
+        }
     });
 }
 
