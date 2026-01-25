@@ -2224,6 +2224,10 @@ class FreeTalkSystem {
                 // 해당 표정이 정의되어 있으면 이미지 변경
                 if (charExprs && charExprs[exprName]) {
                     const centerSlot = this.uiManager.charSlots.center;  // 중앙 캐릭터 슬롯
+                    
+                    // 🔧 centerSlot이 없으면 표정 변경 스킵
+                    if (!centerSlot) continue;
+                    
                     const exprUrl = getAssetUrl(charExprs[exprName]);    // 버전 쿼리 추가
                     
                     // 이미 이미지가 있으면 src만 변경, 없으면 새로 생성
@@ -2934,11 +2938,18 @@ class GameEngine {
             // 조건을 만족하는 선택지만 필터링
             const availableChoices = this.getAvailableChoices(scene.choices);
             
+            // � 선택지가 모두 조건을 충족하지 못하면 다음 씬으로
+            if (availableChoices.length === 0) {
+                const nextId = this.sceneRenderer.resolveNextScene(scene);
+                if (nextId) await this.renderScene(nextId);
+                return;
+            }
+            
             // 🔄 "다음" 버튼 하나만 있으면 자동으로 실행
             // - UX 개선: 의미없는 "다음" 클릭을 생략
             if (availableChoices.length === 1 && 
                 (availableChoices[0].text === "다음" || availableChoices[0].text === "Next")) {
-                this.executeChoice(availableChoices[0]);
+                await this.executeChoice(availableChoices[0]);
                 return;
             }
             
@@ -3038,8 +3049,14 @@ class GameEngine {
             // 예: "{name}(와)과 데이트하기" → "유진(와)과 데이트하기"
             btn.textContent = choice.text.replace(/{name}/g, this.stateManager.playerName);
             
-            // 클릭하면 해당 선택지 실행
-            btn.onclick = () => this.executeChoice(choice);
+            // 클릭하면 해당 선택지 실행 (async 함수이므로 에러 처리 포함)
+            btn.onclick = async () => {
+                try {
+                    await this.executeChoice(choice);
+                } catch (e) {
+                    console.error('[GameEngine] executeChoice 오류:', e);
+                }
+            };
             
             this.uiManager.choiceContainer.appendChild(btn);
         });
