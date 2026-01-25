@@ -3100,17 +3100,19 @@ class GameEngine {
         if (choice.stats) {
             // stats: { Seoyeon: { affinity: 10 }, Dain: { affinity: -5 } }
             for (const [char, stats] of Object.entries(choice.stats)) {
-                if (stats.affinity && this.stateManager.stats[char]) {
+                // 🔧 charNameMap을 통해 캐릭터 키 정규화 (한/영 호환)
+                const charKey = this.sceneRenderer.charNameMap[char] || char;
+                if (stats.affinity && this.stateManager.stats[charKey]) {
                     // 호감도 수치 변경
-                    const newValue = this.stateManager.changeAffinity(char, stats.affinity);
+                    const newValue = this.stateManager.changeAffinity(charKey, stats.affinity);
                     
                     // 💕 화면에 호감도 변화 애니메이션 표시
                     // 예: "+10 ♥" 또는 "-5 💔"
-                    this.uiManager.showAffinityChange(stats.affinity, char);
+                    this.uiManager.showAffinityChange(stats.affinity, charKey);
                     
                     // 📊 갤러리 통계 업데이트 (최대 호감도, 해금 체크)
-                    this.galleryManager.updateMaxAffinity(char, newValue);
-                    this.galleryManager.checkAffinityUnlock(char, newValue);
+                    this.galleryManager.updateMaxAffinity(charKey, newValue);
+                    this.galleryManager.checkAffinityUnlock(charKey, newValue);
                 }
             }
         }
@@ -3439,15 +3441,22 @@ class GameEngine {
                         this.uiManager.dialogueBox.style.display = 'none';
                         this.uiManager.showNextIndicator(true);
 
+                        // 🔧 Race condition 방지: 이 시점의 sceneId를 기억
+                        const originalSceneId = sceneId;
+
                         // 클릭/터치 시 다음 씬으로 진행하는 핸들러
                         const proceedToNext = () => {
                             window.removeEventListener('click', proceedToNext);
                             window.removeEventListener('touchstart', proceedToNext);
+                            // 씬이 이미 바뀌었으면 무시
+                            if (this.sceneRenderer.currentSceneId !== originalSceneId) return;
                             this.renderScene(nextId);
                         };
                         
                         // 1.5초 후부터 클릭 대기 (연출을 볼 시간 확보)
                         setTimeout(() => {
+                            // 🔧 타임아웃 동안 씬이 바뀌었으면 이벤트 등록하지 않음
+                            if (this.sceneRenderer.currentSceneId !== originalSceneId) return;
                             window.addEventListener('click', proceedToNext);
                             window.addEventListener('touchstart', proceedToNext);
                         }, 1500);
