@@ -538,7 +538,7 @@ class StateManager {
     importState(data) {
         // 📌 각 필드가 존재하는지 확인 후 복원 (방어적 프로그래밍)
         if (data.playerName) this.playerName = data.playerName;   // 플레이어 이름 복원
-        if (data.currentDay) this.currentDay = data.currentDay;   // 게임 날짜 복원
+        if (data.currentDay !== undefined) this.currentDay = data.currentDay;   // 게임 날짜 복원 (0도 유효한 값)
         if (data.stats) this.stats = data.stats;                  // 호감도 데이터 복원
         if (data.chatMemories) this.chatMemories = data.chatMemories;  // AI 대화 기록 복원
         if (data.flags) this.flags = data.flags;                  // 이벤트 플래그 복원
@@ -968,7 +968,7 @@ class UIManager {
             "담임선생님": "Teacher", "보건선생님": "Nurse",
             "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
             "Teacher": "Teacher", "Nurse": "Nurse",
-            "Homeroom Teacher": "Teacher"
+            "Homeroom Teacher": "Teacher", "School Nurse": "Nurse"
         };
 
         // 설정 관련 이벤트 초기화
@@ -1326,7 +1326,7 @@ class DialogueSystem {
             "담임선생님": "Teacher", "보건선생님": "Nurse",
             "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
             "Teacher": "Teacher", "Nurse": "Nurse",
-            "Homeroom Teacher": "Teacher"
+            "Homeroom Teacher": "Teacher", "School Nurse": "Nurse"
         };
 
         /** 캐릭터 이름 → 이미지 파일명 매핑 (말하기 애니메이션용) */
@@ -1618,7 +1618,7 @@ class FreeTalkSystem {
             "담임선생님": "Teacher", "보건선생님": "Nurse",
             "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
             "Teacher": "Teacher", "Nurse": "Nurse",
-            "Homeroom Teacher": "Teacher"
+            "Homeroom Teacher": "Teacher", "School Nurse": "Nurse"
         };
     }
 
@@ -1649,10 +1649,14 @@ class FreeTalkSystem {
                 (charName === "Yuna" && m.char === "유나") ||
                 (charName === "다인" && m.char === "Dain") ||
                 (charName === "Dain" && m.char === "다인") ||
+                (charName === "담임선생님" && m.char === "Teacher") ||
+                (charName === "Teacher" && m.char === "담임선생님") ||
                 (charName === "담임선생님" && m.char === "Homeroom Teacher") ||
                 (charName === "Homeroom Teacher" && m.char === "담임선생님") ||
                 (charName === "보건선생님" && m.char === "Nurse") ||
-                (charName === "Nurse" && m.char === "보건선생님");
+                (charName === "Nurse" && m.char === "보건선생님") ||
+                (charName === "보건선생님" && m.char === "School Nurse") ||
+                (charName === "School Nurse" && m.char === "보건선생님");
             // 플래그가 true인 기억만 포함
             return charMatch && this.stateManager.getFlag(m.flag);
         });
@@ -2377,7 +2381,10 @@ class SceneRenderer {
         if (scene.affinityBranches && scene.affinityChar) {
             const currentAff = this.stateManager.getAffinity(scene.affinityChar);
             // 높은 기준부터 검사 (minAffinity 내림차순 정렬)
-            const sortedBranches = [...scene.affinityBranches].sort((a, b) => b.minAffinity - a.minAffinity);
+            // 동일한 minAffinity일 때는 배열 원래 순서 유지 (안정 정렬)
+            const sortedBranches = [...scene.affinityBranches]
+                .map((branch, index) => ({ ...branch, _originalIndex: index }))
+                .sort((a, b) => b.minAffinity - a.minAffinity || a._originalIndex - b._originalIndex);
             for (const branch of sortedBranches) {
                 if (currentAff >= branch.minAffinity) return branch.next;
             }
@@ -3104,7 +3111,10 @@ class GameEngine {
             
             // 호감도 높은 순으로 정렬 (내림차순)
             // → 가장 높은 조건부터 체크해서 첫 번째로 만족하는 것 선택
-            const sortedBranches = [...choice.affinityBranches].sort((a, b) => b.minAffinity - a.minAffinity);
+            // 동일한 minAffinity일 때는 배열 원래 순서 유지 (안정 정렬)
+            const sortedBranches = [...choice.affinityBranches]
+                .map((branch, index) => ({ ...branch, _originalIndex: index }))
+                .sort((a, b) => b.minAffinity - a.minAffinity || a._originalIndex - b._originalIndex);
             
             for (const branch of sortedBranches) {
                 // 현재 호감도가 최소 조건 이상이면 해당 분기로
