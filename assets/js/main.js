@@ -3084,15 +3084,19 @@ class GameEngine {
         // 선택에 따라 캐릭터별 호감도를 증가/감소
         // ─────────────────────────────────────────────────────────
         if (choice.stats) {
-            // stats: { soyeon: { affinity: 10 }, dain: { affinity: -5 } }
+            // stats: { Seoyeon: { affinity: 10 }, Dain: { affinity: -5 } }
             for (const [char, stats] of Object.entries(choice.stats)) {
                 if (stats.affinity && this.stateManager.stats[char]) {
                     // 호감도 수치 변경
-                    this.stateManager.changeAffinity(char, stats.affinity);
+                    const newValue = this.stateManager.changeAffinity(char, stats.affinity);
                     
                     // 💕 화면에 호감도 변화 애니메이션 표시
                     // 예: "+10 ♥" 또는 "-5 💔"
                     this.uiManager.showAffinityChange(stats.affinity, char);
+                    
+                    // 📊 갤러리 통계 업데이트 (최대 호감도, 해금 체크)
+                    this.galleryManager.updateMaxAffinity(char, newValue);
+                    this.galleryManager.checkAffinityUnlock(char, newValue);
                 }
             }
         }
