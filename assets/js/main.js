@@ -425,7 +425,9 @@ class StateManager {
      * @returns {number} 호감도 값 (없으면 0)
      */
     getAffinity(charKey) { 
-        return this.stats[charKey]?.affinity || 0; 
+        // 🔧 || 0 대신 ?? 0 사용: 음수 호감도(-50 등)도 올바르게 반환
+        // || 0은 falsy 값(-50, 0 등)을 모두 0으로 처리하는 버그 발생
+        return this.stats[charKey]?.affinity ?? 0; 
     }
 
     /** 
@@ -748,12 +750,24 @@ class GalleryManager {
             };
         }
         
-        const data = JSON.parse(saved);
-        
-        // 구버전 데이터면 버전 정보 추가
-        if (!data.version) data.version = this.dataVersion;
-        
-        return data;
+        // 🔧 JSON.parse 에러 핸들링 추가 (데이터 손상 대비)
+        try {
+            const data = JSON.parse(saved);
+            
+            // 구버전 데이터면 버전 정보 추가
+            if (!data.version) data.version = this.dataVersion;
+            
+            return data;
+        } catch (e) {
+            console.error('[GalleryManager] 갤러리 데이터 파싱 오류:', e);
+            // 손상된 데이터는 무시하고 기본 구조 반환
+            return {
+                version: this.dataVersion,
+                characters: {},
+                cg: {},
+                bgm: { intro: { unlocked: true } }
+            };
+        }
     }
 
     /** 
@@ -3273,8 +3287,14 @@ class GameEngine {
         // 🎵 2단계: BGM/SFX 처리
         // ─────────────────────────────────────────────────────────
         // bgm: "파일명" → 재생, bgm: null → 정지
-        if (scene.bgm) soundManager.playBgm(`assets/audio/bgm/${scene.bgm}`);
-        else if (scene.bgm === null) soundManager.stopBgm();
+        if (scene.bgm) {
+            soundManager.playBgm(`assets/audio/bgm/${scene.bgm}`);
+            // 🔧 갤러리에 BGM 해금 (파일명에서 확장자 제거)
+            const bgmId = scene.bgm.replace(/\.(mp3|ogg|wav)$/i, '');
+            this.galleryManager.unlockBGM(bgmId);
+        } else if (scene.bgm === null) {
+            soundManager.stopBgm();
+        }
         
         // sfx: 효과음 1회 재생
         if (scene.sfx) soundManager.playSfx(`assets/audio/sfx/${scene.sfx}`);
