@@ -1640,6 +1640,8 @@ class FreeTalkSystem {
         // 이 캐릭터와 관련된 기억 중 플래그가 true인 것만 필터링
         const memories = FLAG_MEMORIES.filter(m => {
             // 캐릭터 매칭 (한/영 모두 체크)
+            // 다국어 지원: 한국어↔영어 모드 전환 시에도 플래그 기억이 정상 로드되도록
+            // 캐릭터 이름을 양방향으로 매칭
             const charMatch = m.char === charName ||
                 (charName === "서연" && m.char === "Seoyeon") ||
                 (charName === "Seoyeon" && m.char === "서연") ||
