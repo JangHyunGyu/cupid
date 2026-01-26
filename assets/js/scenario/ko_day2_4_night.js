@@ -440,16 +440,6 @@ Object.assign(SCENARIO[2], {
         character: null,
         night: true,
         fade: true,
-        next: "day2_final"
-    },
-    "day2_final": {
-        name: "시스템",
-        text: "(현재 개발된 시나리오는 여기까지입니다. 다음 업데이트를 기대해주세요!)",
-        background: null,
-        character: null,
-        fade: true,
-        choices: [
-            { text: "처음부터 다시 시작하기", next: "index.html" }
-        ]
+        next: "day3_start"
     }
 });
