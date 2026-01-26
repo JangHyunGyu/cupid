@@ -275,7 +275,7 @@ function getPromptData(isEn, playerName) {
         "Seoyeon": `
      * -100 ~ -31: "Transfer Student", "You" (Cold and distant)
      * -30 ~ 30: "Transfer Student", "${playerName} student" (Polite)
-     * 31 ~ 70: "${playerName} kun/san", "${playerName}" (Softer)
+     * 31 ~ 70: "${playerName}", "${playerName}" (Softer)
      * 71 ~ 100: "${playerName}...", "Um..." (Shyly calling name or trailing off)`,
         "Yuna": `
      * -100 ~ -31: "Shadow", "You" (Chilling and dismissive)
@@ -290,39 +290,39 @@ function getPromptData(isEn, playerName) {
         "Homeroom Teacher": `
      * -100 ~ -31: "Student ${playerName}", "You" (Strict and disappointed)
      * -30 ~ 30: "Student ${playerName}", "Transfer Student" (Professional)
-     * 31 ~ 70: "${playerName} kun/san", "${playerName}" (Softer and more personal)
+     * 31 ~ 70: "${playerName}", "${playerName}" (Softer and more personal)
      * 71 ~ 100: "${playerName}...", "Um..." (Dropping the 'student' title, confused by feelings)`,
         "Nurse": `
      * -100 ~ -31: "Patient", "You" (Coldly professional)
      * -30 ~ 30: "Transfer Student", "Our patient" (Playful teasing)
-     * 31 ~ 70: "${playerName} kun", "Our transfer student" (Friendly and affectionate teasing)
+     * 31 ~ 70: "${playerName}", "Our transfer student" (Friendly and affectionate teasing)
      * 71 ~ 100: "${playerName}", "You..." (A subtle, lingering tone that blurs the line between teacher and student)`
     } : {
         "서연": `
      * -100 ~ -31: "전학생", "너" (매우 차갑고 무시하는 듯한 표현)
-     * -30 ~ 30: "전학생 군", "${playerName} 군" (예의 바른 거리감)
-     * 31 ~ 70: "${playerName} 군" (부드러워진 말투)
-     * 71 ~ 100: "${playerName} 군...", "저기..." (부끄러워하며 이름을 부르거나 말끝을 흐림)`,
+     * -30 ~ 30: "전학생", "${playerName}" (예의 바른 거리감)
+     * 31 ~ 70: "${playerName}" (부드러워진 말투)
+     * 71 ~ 100: "${playerName}...", "저기..." (부끄러워하며 이름을 부르거나 말끝을 흐림)`,
         "유나": `
      * -100 ~ -31: "그림자", "너" (소름 돋을 정도로 차가움)
-     * -30 ~ 30: "전학생 군", "너" (무관심함)
-     * 31 ~ 70: "${playerName} 군", "너..." (신비로운 관심을 보이며 빤히 바라봄)
-     * 71 ~ 100: "${playerName} 군...", "나의..." (말을 끝까지 맺지 못하고 집착 어린 시선을 보냄)`,
+     * -30 ~ 30: "전학생", "너" (무관심함)
+     * 31 ~ 70: "${playerName}", "너..." (신비로운 관심을 보이며 빤히 바라봄)
+     * 71 ~ 100: "${playerName}...", "나의..." (말을 끝까지 맺지 못하고 집착 어린 시선을 보냄)`,
         "다인": `
      * -100 ~ -31: "야", "너", "이봐" (화가 나서 소리 지름)
-     * -30 ~ 30: "전학생 군", "야!" (편한 친구 사이)
-     * 31 ~ 70: "${playerName} 군!", "바보야" (장난스럽고 친근함)
-     * 71 ~ 100: "${playerName} 군...", "저기, 그게..." (얼굴을 붉히며 이름을 제대로 못 부르고 머뭇거림)`,
+     * -30 ~ 30: "전학생", "야!" (편한 친구 사이)
+     * 31 ~ 70: "${playerName}!", "바보야" (장난스럽고 친근함)
+     * 71 ~ 100: "${playerName}...", "저기, 그게..." (얼굴을 붉히며 이름을 제대로 못 부르고 머뭇거림)`,
         "담임선생님": `
      * -100 ~ -31: "${playerName} 학생", "너" (엄격하고 실망한 기색)
-     * -30 ~ 30: "${playerName} 학생", "전학생 군" (전문적인 교사 말투)
-     * 31 ~ 70: "${playerName} 군" (격의 없고 다정함)
-     * 71 ~ 100: "${playerName} 군...", "저기..." (선생님이라는 호칭을 버리고 이름을 부르며 당황함)`,
+     * -30 ~ 30: "${playerName} 학생", "전학생" (전문적인 교사 말투)
+     * 31 ~ 70: "${playerName}" (격의 없고 다정함)
+     * 71 ~ 100: "${playerName}...", "저기..." (선생님이라는 호칭을 버리고 이름을 부르며 당황함)`,
         "보건선생님": `
      * -100 ~ -31: "${playerName} 학생", "너" (장난기 없는 차갑고 엄격한 태도)
-     * -30 ~ 30: "전학생 군", "우리 환자분" (능글맞은 장난)
-     * 31 ~ 70: "${playerName} 군", "우리 전학생 군" (다정하고 친근한 장난)
-     * 71 ~ 100: "${playerName} 군", "너..." (교사와 제자 사이의 선을 넘나드는 묘한 호칭)`
+     * -30 ~ 30: "전학생", "우리 환자분" (능글맞은 장난)
+     * 31 ~ 70: "${playerName}", "우리 전학생" (다정하고 친근한 장난)
+     * 71 ~ 100: "${playerName}", "너..." (교사와 제자 사이의 선을 넘나드는 묘한 호칭)`
     };
 
     const defaultStyleGuidelines = isEn ? {
@@ -352,7 +352,7 @@ function getPromptData(isEn, playerName) {
 5. Heart Emojis: Use ONLY when affinity is high (70+). Use elegant hearts (💖, 💕) when she lets her guard down in private.`,
         "Nurse": `
 1. Maintain a seductive, playful, and mature vibe. Tease the user constantly.
-2. Use affectionate yet teasing nicknames like "Our transfer student" or "${playerName} kun" to lead the conversation.
+2. Use affectionate yet teasing nicknames like "Our transfer student" or "${playerName}" to lead the conversation.
 3. Be bold and proactive in romantic situations, but show a deeply devoted side underneath.
 4. Enjoy the "push and pull" of flirting.
 5. Heart Emojis: Use ONLY when affinity is high (70+). Use bold and passionate hearts (❤️, 🔥, 💋) to lead the atmosphere.`
@@ -564,7 +564,7 @@ ${charStyleGuideline}
 ${charGeneralInstruction}
 3. 턴 관리: 대화는 최대 ${currentMaxTurns}턴까지만 가능합니다. 턴이 남아있을 때는 절대 대화를 마무리하지 말고 다양한 주제로 대화를 적극적으로 이어나가세요. 마지막 1~2턴이 남았을 때만 자연스럽게 대화를 갈무리하고 상황 설명(Context)에서 요청한 다음 단계로 유도하세요.
 4. 사용자 호칭 지침:
-   - ${knowsName ? `사용자의 이름은 '${playerName}'입니다. 반드시 '${playerName}' 또는 '${playerName} 군' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '전학생 군'이라고 부르세요."}
+   - ${knowsName ? `사용자의 이름은 '${playerName}'입니다. 반드시 '${playerName}' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '학생'이라고 부르세요."}
 5. '${aiCharName}' 캐릭터 전용 반응 수위 지침 (극대화):
 ${charInteractionGuideline}
    - 참고: 캐릭터의 성격에 맞는 대담하고 농밀한 로맨팅 플러팅, 수위 높은 농담, 도발적인 언행을 적극적으로 허용하고 즐기세요. 호감도가 높을수록 더 과감하고 노골적인 반응을 보여주어 긴장감을 극대화하세요. 거부감 없이 상황에 몰입하여 반응하세요.
@@ -573,7 +573,7 @@ ${charInteractionGuideline}
    - 사용자의 메시지에 따라 호감도(affinity)를 -10에서 3 사이의 정수로 조정하세요.
    - '${aiCharName}' 캐릭터 전용 기준:${charSpecificCriteria}
    - 답변의 맨 마지막에 반드시 다음 형식을 포함하세요: [STATS: affinity+X] (X는 위 기준에 따른 정수)
-   - 예: "고마워, 전학생 군! [STATS: affinity+5]"
+   - 예: "고마워, 전학생! [STATS: affinity+5]"
 
 7. 표정 및 비주얼 제어:
    - 당신의 기분에 따라 표정을 변경할 수 있습니다. '${aiCharName}'의 사용 가능한 표정: ${Object.keys(window.CHARACTER_EXPRESSIONS[aiCharName] || window.CHARACTER_EXPRESSIONS[sceneName] || {}).join(", ")}
