@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Gallery - Cupid</title>
-    <meta name="description" content="Cupid character profiles, event CGs, and music room. Revisit the characters and special moments from the game.">
+    <meta name="description"
+        content="Cupid character profiles, event CGs, and music room. Revisit the characters and special moments from the game.">
     <meta name="robots" content="noindex, nofollow">
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="Gallery - Cupid">
     <meta property="og:description" content="Explore Cupid character profiles and event CGs.">
     <meta property="og:type" content="website">
-    
+
     <!-- Fonts -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
-    
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/gallery.css?v=1.0.0">
 </head>
+
 <body>
     <!-- Header -->
     <header class="gallery-header">
@@ -100,7 +104,11 @@
         <p>© 2025 ArcherLab. All rights reserved.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/gallery.js?v=1.0.0"></script>
+    <!-- Scripts (OOP Modules - Load order matters: data → progress → ui → main) -->
+    <script src="assets/js/gallery-data.js?v=2.0.0"></script>
+    <script src="assets/js/gallery-progress.js?v=2.0.0"></script>
+    <script src="assets/js/gallery-ui.js?v=2.0.0"></script>
+    <script src="assets/js/gallery.js?v=2.0.0"></script>
 </body>
+
 </html>
