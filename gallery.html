@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <!-- ========================================================================
          META 태그 설정
@@ -13,18 +14,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    
+
     <!-- 파비콘 (브라우저 탭에 표시되는 아이콘) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
+
     <!-- 페이지 제목 (브라우저 탭에 표시) -->
     <title>갤러리 - Cupid</title>
-    
+
     <!-- SEO 메타 태그 -->
     <meta name="description" content="Cupid 캐릭터 도감, 이벤트 CG, 음악실. 게임에서 만난 캐릭터들과 특별한 순간들을 다시 감상하세요.">
     <!-- 검색 엔진 크롤링 방지 (갤러리 페이지는 스포일러 포함) -->
     <meta name="robots" content="noindex, nofollow">
-    
+
     <!-- ========================================================================
          Open Graph 태그 (소셜 미디어 공유용)
          - SNS에서 링크 공유 시 표시되는 정보 설정
@@ -32,16 +33,18 @@
     <meta property="og:title" content="갤러리 - Cupid">
     <meta property="og:description" content="Cupid 캐릭터 도감과 이벤트 CG를 감상하세요.">
     <meta property="og:type" content="website">
-    
+
     <!-- ========================================================================
          폰트 및 스타일시트
          - Pretendard: 한글 지원이 우수한 무료 폰트
          - gallery.css: 갤러리 전용 스타일
          - ?v=1.0.0: 캐시 버스팅용 버전 쿼리
          ======================================================================== -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
     <link rel="stylesheet" href="assets/css/gallery.css?v=1.0.0">
 </head>
+
 <body>
     <!-- ========================================================================
          헤더 (Header)
@@ -51,7 +54,7 @@
     <header class="gallery-header">
         <!-- 페이지 제목 (이모지 + 텍스트) -->
         <h1>📖 갤러리</h1>
-        
+
         <!-- 헤더 우측 버튼들 -->
         <div class="header-actions">
             <!-- 메인 페이지로 돌아가기 버튼 -->
@@ -67,7 +70,7 @@
          - 탭 네비게이션 + 탭 콘텐츠로 구성
          ======================================================================== -->
     <main class="gallery-container">
-        
+
         <!-- ====================================================================
              탭 네비게이션 (Tab Navigation)
              - 3개의 탭: 캐릭터 도감, 이벤트 CG, 음악실
@@ -86,7 +89,7 @@
              - id="tab-xxx" 형식으로 JavaScript에서 제어
              - active 클래스가 있는 섹션만 표시됨
              ==================================================================== -->
-        
+
         <!-- 캐릭터 도감 탭 -->
         <section id="tab-characters" class="tab-content active">
             <!-- JavaScript에서 동적으로 캐릭터 카드들이 렌더링됨 -->
@@ -120,7 +123,7 @@
          ======================================================================== -->
     <div id="character-modal" class="modal-overlay">
         <div class="modal-content">
-            
+
             <!-- 모달 헤더: 캐릭터 이름 + 닫기 버튼 -->
             <div class="modal-header">
                 <div>
@@ -132,25 +135,25 @@
                 <!-- 모달 닫기 버튼 (X) -->
                 <button class="modal-close" onclick="closeCharacterModal()">✕</button>
             </div>
-            
+
             <!-- 모달 본문: 캐릭터 이미지 + 상세 정보 -->
             <div class="modal-body">
-                
+
                 <!-- 왼쪽: 캐릭터 이미지 미리보기 -->
                 <div class="character-preview">
                     <!-- 현재 선택된 표정의 캐릭터 이미지 -->
                     <img id="modal-char-image" src="" alt="Character">
                 </div>
-                
+
                 <!-- 오른쪽: 캐릭터 상세 정보 -->
                 <div class="character-details">
-                    
+
                     <!-- 캐릭터 소개 섹션 -->
                     <div class="detail-section">
                         <h4>소개</h4>
                         <p id="modal-char-desc">캐릭터 설명</p>
                     </div>
-                    
+
                     <!-- 표정 변경 버튼 섹션 -->
                     <div class="detail-section">
                         <h4>표정 변화</h4>
@@ -159,7 +162,7 @@
                             <!-- Expression buttons will be rendered here -->
                         </div>
                     </div>
-                    
+
                     <!-- 캐릭터 프로필 정보 섹션 -->
                     <div class="detail-section">
                         <h4>프로필</h4>
@@ -183,9 +186,14 @@
 
     <!-- ========================================================================
          스크립트 (Scripts)
-         - gallery.js: 갤러리의 모든 기능을 담당하는 JavaScript
-         - ?v=1.0.0: 캐시 버스팅용 버전 쿼리
+         갤러리 기능을 담당하는 OOP 기반 JavaScript 모듈들
+         로드 순서가 중요: data → progress → ui → main
+         - ?v=2.0.0: 캐시 버스팅용 버전 쿼리 (OOP 리팩토링)
          ======================================================================== -->
-    <script src="assets/js/gallery.js?v=1.0.0"></script>
+    <script src="assets/js/gallery-data.js?v=2.0.0"></script>
+    <script src="assets/js/gallery-progress.js?v=2.0.0"></script>
+    <script src="assets/js/gallery-ui.js?v=2.0.0"></script>
+    <script src="assets/js/gallery.js?v=2.0.0"></script>
 </body>
+
 </html>

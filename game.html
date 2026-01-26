@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <script>
-        (function() {
+        (function () {
             const CURRENT_VERSION = '1.2.0';
             setTimeout(() => {
                 fetch('version.json?t=' + new Date().getTime())
@@ -11,8 +12,8 @@
                     .then(data => {
                         if (data.version !== CURRENT_VERSION) {
                             if ('serviceWorker' in navigator) {
-                                navigator.serviceWorker.getRegistrations().then(function(registrations) {
-                                    for(let registration of registrations) { registration.unregister(); }
+                                navigator.serviceWorker.getRegistrations().then(function (registrations) {
+                                    for (let registration of registrations) { registration.unregister(); }
                                     window.location.reload(true);
                                 });
                             } else { window.location.reload(true); }
@@ -21,7 +22,8 @@
             }, 3000);
         })();
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -35,17 +37,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="assets/images/icon.png">
-    
+
     <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
     <script src="assets/js/sound.js?v=1.0.0"></script>
     <script src="assets/js/browser-check.js?v=1.0.0" defer></script>
 </head>
+
 <body>
     <div id="game-container">
         <!-- 배경 이미지 -->
         <div id="background-layer"></div>
-        
+
         <!-- 캐릭터 레이어 -->
         <div id="character-layer">
             <div id="char-left" class="char-slot"></div>
@@ -69,7 +73,7 @@
                     <div id="name-input-guide">한글/영문 1~4자 (숫자, 특수문자 제외)</div>
                 </div>
             </div>
-            
+
             <div id="choice-container" style="display: none;">
                 <!-- 선택지 버튼들이 여기에 생성됨 -->
             </div>
@@ -85,7 +89,8 @@
                     </button>
                     <button id="chat-skip-btn" title="대화 중단">
                         <svg viewBox="0 0 24 24">
-                            <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
                         </svg>
                     </button>
                 </div>
@@ -104,7 +109,9 @@
         <!-- 설정 버튼 -->
         <button id="settings-btn" onclick="openSettingsModal()" title="설정">
             <svg viewBox="0 0 24 24" width="24" height="24">
-                <path fill="currentColor" d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87a.49.49 0 0 0 .12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.49.49 0 0 0-.12-.61l-2.03-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
+                <path fill="currentColor"
+                    d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87a.49.49 0 0 0 .12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.49.49 0 0 0-.12-.61l-2.03-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z">
+                </path>
             </svg>
         </button>
 
@@ -117,10 +124,12 @@
         <div id="homeConfirmModal" class="modal-overlay" style="display: none;" onclick="closeHomeConfirm(event)">
             <div class="modal-container" onclick="event.stopPropagation()">
                 <h3 class="modal-title">홈으로 돌아가기</h3>
-                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">정말 시작 화면으로 돌아가시겠습니까?<br><span style="color: #ff6b9d; font-size: 0.9em;">(현재 게임 진행 상황은 저장되지 않습니다)</span></p>
+                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">정말 시작 화면으로 돌아가시겠습니까?<br><span
+                        style="color: #ff6b9d; font-size: 0.9em;">(현재 게임 진행 상황은 저장되지 않습니다)</span></p>
                 <div style="display: flex; gap: 10px; justify-content: center;">
                     <button class="modal-btn" onclick="closeHomeConfirm(event)" style="background: #444;">취소</button>
-                    <button class="modal-btn" onclick="goToHome()" style="background: linear-gradient(135deg, #ff6b9d, #c44569);">확인</button>
+                    <button class="modal-btn" onclick="goToHome()"
+                        style="background: linear-gradient(135deg, #ff6b9d, #c44569);">확인</button>
                 </div>
             </div>
         </div>
@@ -130,29 +139,34 @@
             <div class="modal-container" onclick="event.stopPropagation()">
                 <h3 class="modal-title">설정</h3>
                 <div class="settings-options" style="text-align: left; padding: 0 20px;">
-                    <label style="display: flex; align-items: center; justify-content: space-between; color: white; cursor: pointer;">
+                    <label
+                        style="display: flex; align-items: center; justify-content: space-between; color: white; cursor: pointer;">
                         <span>📊 호감도 게이지 표시</span>
                         <input type="checkbox" id="affinityToggle" checked style="transform: scale(1.5);">
                     </label>
-                    <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">게임 내 캐릭터 이름 옆에 호감도를 게이지로 표시합니다.</p>
-                    
+                    <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">게임 내 캐릭터 이름 옆에
+                        호감도를 게이지로 표시합니다.</p>
+
                     <div style="margin-top: 20px;">
                         <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
                             <span>🎵 배경음악 (BGM)</span>
                             <span id="bgmVolumeVal">50%</span>
                         </div>
-                        <input type="range" id="bgmVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
+                        <input type="range" id="bgmVolume" min="0" max="100" value="50"
+                            style="width: 100%; accent-color: #ff69b4;">
                     </div>
-                    
+
                     <div style="margin-top: 15px;">
                         <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
                             <span>🔊 효과음 (SFX)</span>
                             <span id="sfxVolumeVal">50%</span>
                         </div>
-                        <input type="range" id="sfxVolume" min="0" max="100" value="50" style="width: 100%; accent-color: #ff69b4;">
+                        <input type="range" id="sfxVolume" min="0" max="100" value="50"
+                            style="width: 100%; accent-color: #ff69b4;">
                     </div>
                 </div>
-                <button onclick="saveSettings()" style="margin-top: 20px; background: #ff69b4; border: none; padding: 10px 30px; border-radius: 20px; color: white; cursor: pointer; font-size: 1rem;">저장</button>
+                <button onclick="saveSettings()"
+                    style="margin-top: 20px; background: #ff69b4; border: none; padding: 10px 30px; border-radius: 20px; color: white; cursor: pointer; font-size: 1rem;">저장</button>
             </div>
         </div>
 
@@ -173,7 +187,7 @@
     <script src="assets/js/scenario/ko_day1_2_lunch.js?v=1.0.12"></script>
     <script src="assets/js/scenario/ko_day1_3_afterschool.js?v=1.0.12"></script>
     <script src="assets/js/scenario/ko_day1_4_night.js?v=1.0.12"></script>
-    
+
     <!-- Day 2 Scenario -->
     <script src="assets/js/scenario/ko_day2_1_morning.js?v=1.0.12"></script>
     <script src="assets/js/scenario/ko_day2_2_lunch.js?v=1.0.12"></script>
@@ -181,14 +195,18 @@
     <script src="assets/js/scenario/ko_day2_4_night.js?v=1.0.12"></script>
 
     <script src="assets/js/prompts.js?v=1.0.12"></script>
-    <script src="assets/js/gallery.js?v=1.0.12"></script>
+    <!-- Gallery OOP Modules -->
+    <script src="assets/js/gallery-data.js?v=2.0.0"></script>
+    <script src="assets/js/gallery-progress.js?v=2.0.0"></script>
+    <script src="assets/js/gallery-ui.js?v=2.0.0"></script>
+    <script src="assets/js/gallery.js?v=2.0.0"></script>
     <script src="assets/js/main.js?v=2.0.0"></script>
     <script>
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             var wcs_script = document.createElement('script');
             wcs_script.src = 'https://wcs.pstatic.net/wcslog.js';
             wcs_script.async = true;
-            wcs_script.onload = function() {
+            wcs_script.onload = function () {
                 if (!window.wcs_add) window.wcs_add = {};
                 window.wcs_add["wa"] = "229fd882959ab4";
                 if (window.wcs) {
@@ -199,9 +217,5 @@
         });
     </script>
 </body>
+
 </html>
-
-
-
-
-
