@@ -1,82 +1,257 @@
-/**
+﻿/**
  * ============================================================================
- * Cupid - 게임 로더
+ * Cupid - 게임 로더 (Game Loader)
  * ============================================================================
  * 
- * index.html, index-en.html, game.html, game-en.html에서 사용
- * 게임에 필요한 모든 스크립트를 순서대로 로드
+ * 설명:
+ *   게임에 필요한 모든 JavaScript 파일을 순서대로 동적 로드하는 스크립트.
+ *   HTML 파일에서 여러 개의 script 태그를 작성할 필요 없이,
+ *   이 파일 하나만 포함하면 모든 의존성이 자동으로 로드됩니다.
+ * 
+ * 사용되는 페이지:
+ *   - index.html     (한국어 메인 페이지)
+ *   - index-en.html  (영문 메인 페이지)
+ *   - game.html      (한국어 게임 페이지)
+ *   - game-en.html   (영문 게임 페이지)
  * 
  * 사용법:
+ *   HTML의 body 하단에 아래 한 줄만 추가:
  *   <script src="assets/js/loaders/game-loader.js"></script>
  * 
  * 로드 순서:
- *   1. 공통: ga.js, sound.js
- *   2. 시나리오: 한국어/영문 시나리오 파일들
+ *   1. 공통 스크립트: ga.js (Google Analytics), sound.js (사운드 관리)
+ *   2. 시나리오: 현재 언어에 맞는 시나리오 파일들 (ko_* 또는 en_*)
  *   3. 게임 엔진: prompts.js, gallery 모듈들, main.js
+ * 
+ * 버전 관리:
+ *   version 변수만 수정하면 모든 스크립트에 ?v= 쿼리가 자동 적용되어
+ *   브라우저 캐시 문제를 해결할 수 있습니다.
+ * 
+ * ============================================================================
  */
 
 (function () {
+    // =========================================================================
+    // 설정 (Configuration)
+    // =========================================================================
+
+    /**
+     * basePath: 모든 스크립트 파일의 기본 경로
+     * HTML 파일 위치 기준 상대 경로
+     */
     const basePath = 'assets/js/';
+
+    /**
+     * version: 캐시 버스팅용 버전 번호
+     * 
+     * 스크립트 수정 후 배포 시 이 값을 증가시키면
+     * 브라우저가 캐시된 파일 대신 새 파일을 다운로드합니다.
+     * 
+     * 예: 2.2.0 → 2.2.1 또는 2.3.0
+     */
     const version = '2.2.0';
 
-    // 언어 감지
+    // =========================================================================
+    // 언어 감지 (Language Detection)
+    // =========================================================================
+
+    /**
+     * 현재 페이지 URL을 분석하여 언어를 감지합니다.
+     * 
+     * 판단 기준:
+     *   - URL에 '-en'이 포함되면 영문 (예: index-en.html, game-en.html)
+     *   - 그 외에는 한국어 (예: index.html, game.html)
+     * 
+     * isEnglish: true면 영문, false면 한국어
+     * lang: 'en' 또는 'ko' 문자열 (다른 곳에서 참조용)
+     */
     const isEnglish = window.location.pathname.includes('-en');
     const lang = isEnglish ? 'en' : 'ko';
 
-    // 공통 스크립트
+    // =========================================================================
+    // 공통 스크립트 (Common Scripts)
+    // =========================================================================
+
+    /**
+     * 모든 페이지에서 공통으로 필요한 스크립트
+     * 
+     * ga.js    : Google Analytics 초기화 및 이벤트 추적
+     * sound.js : 배경음악(BGM) 및 효과음(SE) 재생 관리
+     */
     const commonScripts = [
         'ga.js',
         'sound.js'
     ];
 
-    // 시나리오 스크립트 (한국어)
+    // =========================================================================
+    // 시나리오 스크립트 목록 (한국어 버전)
+    // =========================================================================
+
+    /**
+     * 한국어 시나리오 파일 목록
+     * 
+     * 파일명 규칙: ko_day{일차}_{순서}_{시간대}.js
+     *   - ko       : 한국어 (Korean)
+     *   - day1~3   : 게임 진행 일차 (Day 1, Day 2, Day 3...)
+     *   - 1~4      : 하루 중 순서 (1=아침, 2=점심, 3=방과후, 4=밤)
+     *   - morning  : 아침 시나리오
+     *   - lunch    : 점심 시나리오
+     *   - afterschool : 방과후 시나리오
+     *   - night    : 밤 시나리오
+     * 
+     * 예시: ko_day1_1_morning.js = 한국어 1일차 첫번째(아침) 시나리오
+     * 
+     * [!] 새 시나리오 추가 시:
+     *     1. 이 배열에 파일 경로 추가
+     *     2. enScenarioScripts에도 동일한 순서로 영문 버전 추가
+     */
     const koScenarioScripts = [
-        'scenario/ko_day1_1_morning.js',
-        'scenario/ko_day1_2_lunch.js',
-        'scenario/ko_day1_3_afterschool.js',
-        'scenario/ko_day1_4_night.js',
-        'scenario/ko_day2_1_morning.js',
-        'scenario/ko_day2_2_lunch.js',
-        'scenario/ko_day2_3_afterschool.js',
-        'scenario/ko_day2_4_night.js',
-        'scenario/ko_day3_1_morning.js'
+        // -----------------------------------------------------------------
+        // Day 1 (1일차) - 전학 첫날
+        // 주인공이 새 학교에 전학 오는 날
+        // -----------------------------------------------------------------
+        'scenario/ko_day1_1_morning.js',      // 아침: 기상, 등교, 첫 인상
+        'scenario/ko_day1_2_lunch.js',        // 점심: 급식실, 캐릭터들과 첫 만남
+        'scenario/ko_day1_3_afterschool.js',  // 방과후: 동아리 탐색, 선택
+        'scenario/ko_day1_4_night.js',        // 밤: 귀가, 하루 회상
+
+        // -----------------------------------------------------------------
+        // Day 2 (2일차) - 적응기
+        // 학교 생활에 적응하며 캐릭터들과 친해지는 날
+        // -----------------------------------------------------------------
+        'scenario/ko_day2_1_morning.js',      // 아침: 등교, 우연한 만남
+        'scenario/ko_day2_2_lunch.js',        // 점심: 캐릭터별 이벤트 분기
+        'scenario/ko_day2_3_afterschool.js',  // 방과후: 심화 대화, 호감도 증가
+        'scenario/ko_day2_4_night.js',        // 밤: 호감도 체크, 특별 이벤트
+
+        // -----------------------------------------------------------------
+        // Day 3 (3일차) - 주말 약속
+        // 주말 데이트 약속을 잡는 날
+        // -----------------------------------------------------------------
+        'scenario/ko_day3_1_morning.js'       // 아침: 메시지 확인, 주말 약속 수락/거절
     ];
 
-    // 시나리오 스크립트 (영문)
+    // =========================================================================
+    // 시나리오 스크립트 목록 (영문 버전)
+    // =========================================================================
+
+    /**
+     * 영문 시나리오 파일 목록
+     * 
+     * 파일명 규칙: en_day{일차}_{순서}_{시간대}.js
+     *   - en: 영문 (English)
+     *   - 나머지 구조는 한국어 버전과 동일
+     * 
+     * [!] 중요:
+     *     - 한국어 시나리오 추가 시 반드시 영문 버전도 함께 추가
+     *     - 두 배열의 순서와 개수가 반드시 일치해야 함
+     *     - 순서가 다르면 게임 진행에 오류 발생
+     */
     const enScenarioScripts = [
-        'scenario/en_day1_1_morning.js',
-        'scenario/en_day1_2_lunch.js',
-        'scenario/en_day1_3_afterschool.js',
-        'scenario/en_day1_4_night.js',
-        'scenario/en_day2_1_morning.js',
-        'scenario/en_day2_2_lunch.js',
-        'scenario/en_day2_3_afterschool.js',
-        'scenario/en_day2_4_night.js'
+        // -----------------------------------------------------------------
+        // Day 1 (1일차) - 전학 첫날
+        // 주인공이 새 학교에 전학 오는 날
+        // -----------------------------------------------------------------
+        'scenario/en_day1_1_morning.js',      // 아침: 기상, 등교
+        'scenario/en_day1_2_lunch.js',        // 점심: 급식실, 첫 만남
+        'scenario/en_day1_3_afterschool.js',  // 방과후: 동아리 탐색
+        'scenario/en_day1_4_night.js',        // 밤: 귀가, 회상
+
+        // -----------------------------------------------------------------
+        // Day 2 (2일차) - 적응기
+        // 학교 생활에 적응하며 캐릭터들과 친해지는 날
+        // -----------------------------------------------------------------
+        'scenario/en_day2_1_morning.js',      // 아침: 등교
+        'scenario/en_day2_2_lunch.js',        // 점심: 캐릭터별 이벤트
+        'scenario/en_day2_3_afterschool.js',  // 방과후: 심화 대화
+        'scenario/en_day2_4_night.js',        // 밤: 호감도 체크
+
+        // -----------------------------------------------------------------
+        // Day 3 (3일차) - 주말 약속
+        // 주말 데이트 약속을 잡는 날
+        // -----------------------------------------------------------------
+        'scenario/en_day3_1_morning.js'       // 아침: 메시지 확인, 주말 약속
     ];
 
+    /**
+     * 현재 언어에 맞는 시나리오 배열 선택
+     * 
+     * URL에 '-en'이 포함되어 있으면 → enScenarioScripts (영문)
+     * 그 외 → koScenarioScripts (한국어)
+     */
     const scenarioScripts = isEnglish ? enScenarioScripts : koScenarioScripts;
 
-    // 게임 엔진 스크립트
+    // =========================================================================
+    // 게임 엔진 스크립트 (Game Engine Scripts)
+    // =========================================================================
+
+    /**
+     * 게임 실행에 필요한 핵심 엔진 스크립트
+     * 
+     * 로드 순서가 중요합니다!
+     * 의존성이 있는 파일은 의존하는 파일보다 먼저 로드되어야 합니다.
+     * 
+     * 1. prompts.js         : 게임 내 프롬프트 및 대화 시스템
+     * 2. gallery-data.js    : 갤러리 데이터 (캐릭터, CG, 음악 정보)
+     * 3. gallery-progress.js: 진행도 저장/불러오기 (localStorage 사용)
+     * 4. gallery-ui-*.js    : 갤러리 UI 컴포넌트들
+     * 5. gallery.js         : 갤러리 메인 논리
+     * 6. main.js            : 메인 게임 엔진 (가장 마지막에 로드)
+     */
     const engineScripts = [
-        'prompts.js',
-        // 갤러리 모듈 (게임에서 진행도 저장에 사용)
-        'gallery-data.js',
-        'gallery-progress.js',
-        'gallery-ui-core.js',
-        'gallery-ui-character.js',
-        'gallery-ui-cg.js',
-        'gallery-ui-music.js',
-        'gallery.js',
-        // 메인 게임 엔진
-        'main.js'
+        // 게임 시스템
+        'prompts.js',                // 프롬프트/대화 시스템
+
+        // 갤러리 모듈 (게임에서 진행도 저장에도 사용됨)
+        'gallery-data.js',           // 갤러리 데이터 정의
+        'gallery-progress.js',       // 진행도 관리 (localStorage)
+        'gallery-ui-core.js',        // UI 코어: 팝업, 기본 기능
+        'gallery-ui-character.js',   // UI: 캐릭터 도감
+        'gallery-ui-cg.js',          // UI: CG 갤러리
+        'gallery-ui-music.js',       // UI: 음악실
+        'gallery.js',                // 갤러리 초기화 및 이벤트
+
+        // 메인 게임 엔진 (항상 마지막)
+        'main.js'                    // 게임 로직, 시나리오 실행
     ];
 
-    // 모든 스크립트 로드
+    // =========================================================================
+    // 스크립트 로드 함수 (Script Loading Function)
+    // =========================================================================
+
+    /**
+     * 스크립트를 동적으로 로드하는 함수
+     * 
+     * document.write()를 사용하여 페이지 파싱 중에 동기적으로 스크립트를 삽입.
+     * 이 방식은 스크립트가 순서대로 실행되는 것을 보장합니다.
+     * 
+     * 주의: document.write()는 페이지 로드 완료 후에는 사용하면 안 됩니다.
+     *       이 스크립트는 반드시 페이지 로드 중에 실행되어야 합니다.
+     * 
+     * @param {string} src - 로드할 스크립트 파일 경로 (basePath 기준 상대 경로)
+     */
     function loadScript(src) {
+        // basePath + 파일경로 + ?v=버전 형태로 스크립트 태그 생성
         document.write('<script src="' + basePath + src + '?v=' + version + '"><\/script>');
     }
 
-    commonScripts.forEach(loadScript);
-    scenarioScripts.forEach(loadScript);
-    engineScripts.forEach(loadScript);
+    // =========================================================================
+    // 스크립트 로드 실행 (Execute Script Loading)
+    // =========================================================================
+
+    /**
+     * 모든 스크립트를 순서대로 로드
+     * 
+     * 실행 순서:
+     *   1. commonScripts   - 공통 스크립트 (ga.js, sound.js)
+     *   2. scenarioScripts - 현재 언어의 시나리오 파일들
+     *   3. engineScripts   - 게임 엔진 스크립트들
+     * 
+     * forEach()는 배열의 각 요소에 대해 loadScript() 함수를 호출합니다.
+     */
+    commonScripts.forEach(loadScript);    // 1. 공통 스크립트 로드
+    scenarioScripts.forEach(loadScript);  // 2. 시나리오 스크립트 로드
+    engineScripts.forEach(loadScript);    // 3. 게임 엔진 스크립트 로드
+
 })();
+// 즉시 실행 함수(IIFE)로 감싸서 전역 변수 오염 방지
