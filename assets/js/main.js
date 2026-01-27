@@ -1026,7 +1026,25 @@ class UIManager {
      * 이미지 업로드 관련 이벤트 바인딩
      */
     bindImageUploadEvents() {
-        if (!this.imageUploadBtn || !this.imageUploadInput) return;
+        // 만약 요소가 아직 DOM에 추가되지 않았다면 MutationObserver로 대기
+        if (!this.imageUploadBtn || !this.imageUploadInput) {
+            const observer = new MutationObserver((mutations, obs) => {
+                this.imageUploadBtn = document.getElementById('upload-image-btn');
+                this.imageUploadInput = document.getElementById('upload-image-input');
+                this.imagePreviewContainer = document.getElementById('image-preview-container');
+                this.imagePreview = document.getElementById('image-preview');
+                this.removeImageBtn = document.getElementById('remove-image-btn');
+
+                if (this.imageUploadBtn && this.imageUploadInput) {
+                    obs.disconnect();
+                    // 요소가 생겼으면 실제 바인딩 로직을 다시 실행
+                    this.bindImageUploadEvents();
+                }
+            });
+
+            observer.observe(document.body, { childList: true, subtree: true });
+            return;
+        }
 
         // 업로드 버튼 클릭 시 파일 선택창 열기
         this.imageUploadBtn.addEventListener('click', () => {
