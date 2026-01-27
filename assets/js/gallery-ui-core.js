@@ -125,8 +125,8 @@ class GalleryUI {
         this.showUnlockPopup({
             title: this.lang === 'ko' ? '표정 미해금' : 'Expression Locked',
             message: this.lang === 'ko'
-                ? `"${exprName}" 표정을 해금하려면\n호감도 ${requiredAffinity}이(가) 필요합니다.\n\n💕 최대 호감도: ${currentAffinity}\n🎯 필요 호감도: ${requiredAffinity}`
-                : `To unlock "${exprName}" expression,\nyou need ${requiredAffinity} affinity.\n\n💕 Max Affinity: ${currentAffinity}\n🎯 Required: ${requiredAffinity}`,
+                ? `"${exprName}" 표정을 해금하려면<br>호감도 ${requiredAffinity}이(가) 필요합니다.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}</span><span class="condition-line">🎯 필요 호감도: ${requiredAffinity}</span>`
+                : `To unlock "${exprName}" expression,<br>you need ${requiredAffinity} affinity.<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: ${requiredAffinity}</span>`,
             icon: '🔒'
         });
     }
@@ -140,11 +140,14 @@ class GalleryUI {
         const currentAffinity = this.progress.getAffinity(this.currentCharacter);
         const freeTalkCount = this.progress.getFreeTalkCount(this.currentCharacter);
 
+        const affinityStatus = currentAffinity >= 100 ? '✅' : '❌';
+        const talkStatus = freeTalkCount >= 100 ? '✅' : '❌';
+
         this.showUnlockPopup({
             title: this.lang === 'ko' ? '💎 특별 표정' : '💎 Special Expression',
             message: this.lang === 'ko'
-                ? `${charName}의 특별한 모습을 보려면\n두 가지 조건을 모두 달성해야 합니다!\n\n💕 최대 호감도: ${currentAffinity}/100 ${currentAffinity >= 100 ? '✅' : '❌'}\n💬 프리토킹: ${freeTalkCount}/100회 ${freeTalkCount >= 100 ? '✅' : '❌'}`
-                : `To see ${charName}'s special look,\nyou need to achieve both conditions!\n\n💕 Max Affinity: ${currentAffinity}/100 ${currentAffinity >= 100 ? '✅' : '❌'}\n💬 Free Talks: ${freeTalkCount}/100 ${freeTalkCount >= 100 ? '✅' : '❌'}`,
+                ? `${charName}의 특별한 모습을 보려면<br>두 가지 조건을 모두 달성해야 합니다!<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 프리토킹: ${freeTalkCount}/100회 ${talkStatus}</span>`
+                : `To see ${charName}'s special look,<br>you need to achieve both conditions!<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Free Talks: ${freeTalkCount}/100 ${talkStatus}</span>`,
             icon: '👙'
         });
     }
@@ -161,8 +164,8 @@ class GalleryUI {
         this.showUnlockPopup({
             title: this.lang === 'ko' ? '소개 미해금' : 'Description Locked',
             message: this.lang === 'ko'
-                ? `${char.name}의 전체 소개를 보려면\n호감도 80이 필요합니다.\n\n💕 최대 호감도: ${currentAffinity}\n🎯 필요 호감도: 80`
-                : `To view ${char.name}'s full description,\nyou need 80 affinity.\n\n💕 Max Affinity: ${currentAffinity}\n🎯 Required: 80`,
+                ? `${char.name}의 전체 소개를 보려면<br>호감도 80이 필요합니다.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}</span><span class="condition-line">🎯 필요 호감도: 80</span>`
+                : `To view ${char.name}'s full description,<br>you need 80 affinity.<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: 80</span>`,
             icon: '📖'
         });
     }
@@ -180,16 +183,16 @@ class GalleryUI {
             this.showUnlockPopup({
                 title: this.lang === 'ko' ? '몸무게 미해금' : 'Weight Locked',
                 message: this.lang === 'ko'
-                    ? `${charName}의 몸무게를 보려면\n호감도 80이 필요합니다.\n\n💕 최대 호감도: ${currentAffinity}\n🎯 필요 호감도: 80`
-                    : `To view ${charName}'s weight,\nyou need 80 affinity.\n\n💕 Max Affinity: ${currentAffinity}\n🎯 Required: 80`,
+                    ? `${charName}의 몸무게를 보려면<br>호감도 80이 필요합니다.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}</span><span class="condition-line">🎯 필요 호감도: 80</span>`
+                    : `To view ${charName}'s weight,<br>you need 80 affinity.<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: 80</span>`,
                 icon: '⚖️'
             });
         } else if (statType === 'bust') {
             this.showUnlockPopup({
                 title: this.lang === 'ko' ? '신체사이즈 미해금' : 'Body Size Locked',
                 message: this.lang === 'ko'
-                    ? `${charName}의 신체사이즈를 보려면\n호감도 100이 필요합니다.\n\n💕 최대 호감도: ${currentAffinity}\n🎯 필요 호감도: 100`
-                    : `To view ${charName}'s body size,\nyou need 100 affinity.\n\n💕 Max Affinity: ${currentAffinity}\n🎯 Required: 100`,
+                    ? `${charName}의 신체사이즈를 보려면<br>호감도 100이 필요합니다.<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}</span><span class="condition-line">🎯 필요 호감도: 100</span>`
+                    : `To view ${charName}'s body size,<br>you need 100 affinity.<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: 100</span>`,
                 icon: '💝'
             });
         }

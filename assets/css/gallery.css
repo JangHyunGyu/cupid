@@ -27,23 +27,30 @@
  * 브라우저마다 다른 기본 스타일을 통일시킴
  */
 * {
-    margin: 0;                    /* 모든 요소의 기본 마진 제거 */
-    padding: 0;                   /* 모든 요소의 기본 패딩 제거 */
-    box-sizing: border-box;       /* 박스 크기 계산에 padding, border 포함 */
+    margin: 0;
+    /* 모든 요소의 기본 마진 제거 */
+    padding: 0;
+    /* 모든 요소의 기본 패딩 제거 */
+    box-sizing: border-box;
+    /* 박스 크기 계산에 padding, border 포함 */
 }
 
 /* 
  * 기본 바디/html 스타일
  * 페이지 전체에 적용되는 기본 스타일
  */
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
     /* 그라데이션 배경: 어두운 네이비 계열 */
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
-    font-family: 'Pretendard', sans-serif;   /* 한글 웹폰트 */
-    color: #fff;                              /* 기본 텍스트 색상: 흰색 */
-    overflow-x: hidden;                       /* 가로 스크롤 방지 */
+    font-family: 'Pretendard', sans-serif;
+    /* 한글 웹폰트 */
+    color: #fff;
+    /* 기본 텍스트 색상: 흰색 */
+    overflow-x: hidden;
+    /* 가로 스크롤 방지 */
 }
 
 /* ============================================================================
@@ -55,53 +62,70 @@ body, html {
  * 페이지 상단에 고정되어 항상 보임 (fixed)
  */
 .gallery-header {
-    position: fixed;                /* 스크롤해도 고정 위치 유지 */
+    position: fixed;
+    /* 스크롤해도 고정 위치 유지 */
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
-    background: rgba(26, 26, 46, 0.95);       /* 반투명 배경 */
-    backdrop-filter: blur(10px);               /* 배경 블러 효과 (글래스모피즘) */
-    display: flex;                             /* 플렉스박스로 정렬 */
-    align-items: center;                       /* 세로 중앙 정렬 */
-    justify-content: space-between;            /* 양쪽 끝 정렬 */
+    background: rgba(26, 26, 46, 0.95);
+    /* 반투명 배경 */
+    backdrop-filter: blur(10px);
+    /* 배경 블러 효과 (글래스모피즘) */
+    display: flex;
+    /* 플렉스박스로 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    justify-content: space-between;
+    /* 양쪽 끝 정렬 */
     padding: 0 20px;
-    z-index: 100;                              /* 다른 요소 위에 표시 */
-    border-bottom: 1px solid rgba(255, 105, 180, 0.3);  /* 핑크색 하단 테두리 */
+    z-index: 100;
+    /* 다른 요소 위에 표시 */
+    border-bottom: 1px solid rgba(255, 105, 180, 0.3);
+    /* 핑크색 하단 테두리 */
 }
 
 /* 헤더 제목 스타일 */
 .gallery-header h1 {
     font-size: 1.5rem;
-    color: #ff69b4;              /* 핫핑크 색상 */
+    color: #ff69b4;
+    /* 핫핑크 색상 */
     font-weight: 700;
 }
 
 /* 헤더 우측 버튼 컨테이너 */
 .header-actions {
     display: flex;
-    gap: 10px;                   /* 버튼 사이 간격 */
+    gap: 10px;
+    /* 버튼 사이 간격 */
 }
 
 /* 
  * 돌아가기 버튼 & 언어 전환 버튼
  * 둘 다 같은 스타일 사용
  */
-.back-btn, .lang-btn {
-    background: rgba(255, 255, 255, 0.1);     /* 반투명 흰색 배경 */
+.back-btn,
+.lang-btn {
+    background: rgba(255, 255, 255, 0.1);
+    /* 반투명 흰색 배경 */
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 8px 16px;
-    border-radius: 20px;                       /* 둥근 모서리 (필 버튼 스타일) */
-    text-decoration: none;                     /* 링크 밑줄 제거 */
+    border-radius: 20px;
+    /* 둥근 모서리 (필 버튼 스타일) */
+    text-decoration: none;
+    /* 링크 밑줄 제거 */
     font-size: 0.85rem;
     cursor: pointer;
-    transition: all 0.2s;                      /* 부드러운 전환 효과 */
+    transition: all 0.2s;
+    /* 부드러운 전환 효과 */
 }
 
 /* 버튼 호버 효과 */
-.back-btn:hover, .lang-btn:hover {
-    background: rgba(255, 105, 180, 0.3);     /* 핑크색 배경으로 변경 */
+.back-btn:hover,
+.lang-btn:hover {
+    background: rgba(255, 105, 180, 0.3);
+    /* 핑크색 배경으로 변경 */
     border-color: #ff69b4;
 }
 
@@ -111,27 +135,34 @@ body, html {
 
 /* 메인 컨테이너 */
 .gallery-container {
-    margin-top: 60px;            /* 헤더 높이만큼 상단 마진 */
+    margin-top: 60px;
+    /* 헤더 높이만큼 상단 마진 */
     padding: 20px;
-    min-height: calc(100vh - 60px);   /* 최소 높이: 화면 높이 - 헤더 */
+    min-height: calc(100vh - 60px);
+    /* 최소 높이: 화면 높이 - 헤더 */
 }
 
 /* 탭 네비게이션 컨테이너 */
 .tab-nav {
     display: flex;
-    justify-content: center;      /* 가운데 정렬 */
-    gap: 10px;                    /* 탭 버튼 사이 간격 */
+    justify-content: center;
+    /* 가운데 정렬 */
+    gap: 10px;
+    /* 탭 버튼 사이 간격 */
     margin-bottom: 30px;
-    flex-wrap: wrap;              /* 화면이 좁으면 줄바꿈 */
+    flex-wrap: wrap;
+    /* 화면이 좁으면 줄바꿈 */
 }
 
 /* 탭 버튼 기본 스타일 */
 .tab-btn {
     background: rgba(255, 255, 255, 0.05);
-    color: #aaa;                  /* 비활성 상태: 회색 텍스트 */
+    color: #aaa;
+    /* 비활성 상태: 회색 텍스트 */
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 12px 24px;
-    border-radius: 25px;          /* 둥근 필 버튼 */
+    border-radius: 25px;
+    /* 둥근 필 버튼 */
     font-size: 0.95rem;
     cursor: pointer;
     transition: all 0.3s;
@@ -159,24 +190,30 @@ body, html {
 
 /* 탭 콘텐츠 기본 (숨김 상태) */
 .tab-content {
-    display: none;                /* 기본적으로 숨김 */
-    animation: fadeIn 0.3s ease;  /* 나타날 때 페이드인 애니메이션 */
+    display: none;
+    /* 기본적으로 숨김 */
+    animation: fadeIn 0.3s ease;
+    /* 나타날 때 페이드인 애니메이션 */
 }
 
 /* 탭 콘텐츠 활성 상태 */
 .tab-content.active {
-    display: block;               /* 활성 탭만 표시 */
+    display: block;
+    /* 활성 탭만 표시 */
 }
 
 /* 페이드인 애니메이션 정의 */
 @keyframes fadeIn {
-    from { 
-        opacity: 0;               /* 투명 → 불투명 */
-        transform: translateY(10px);   /* 아래에서 위로 슬라이드 */
+    from {
+        opacity: 0;
+        /* 투명 → 불투명 */
+        transform: translateY(10px);
+        /* 아래에서 위로 슬라이드 */
     }
-    to { 
-        opacity: 1; 
-        transform: translateY(0); 
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -195,16 +232,21 @@ body, html {
      * minmax(280px, 1fr): 최소 280px, 최대 1fr (균등 분배)
      */
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;                    /* 카드 사이 간격 */
-    max-width: 1200px;            /* 최대 너비 제한 */
-    margin: 0 auto;               /* 가운데 정렬 */
+    gap: 20px;
+    /* 카드 사이 간격 */
+    max-width: 1200px;
+    /* 최대 너비 제한 */
+    margin: 0 auto;
+    /* 가운데 정렬 */
 }
 
 /* 캐릭터 카드 */
 .character-card {
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;          /* 둥근 모서리 */
-    overflow: hidden;             /* 내용이 넘치면 숨김 */
+    border-radius: 20px;
+    /* 둥근 모서리 */
+    overflow: hidden;
+    /* 내용이 넘치면 숨김 */
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s;
     cursor: pointer;
@@ -212,9 +254,11 @@ body, html {
 
 /* 카드 호버 효과 */
 .character-card:hover {
-    transform: translateY(-5px);  /* 위로 살짝 떠오름 */
+    transform: translateY(-5px);
+    /* 위로 살짝 떠오름 */
     border-color: rgba(255, 105, 180, 0.5);
-    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);  /* 핑크 그림자 */
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+    /* 핑크 그림자 */
 }
 
 /* 
@@ -222,8 +266,10 @@ body, html {
  * 해금되지 않은 캐릭터에 적용
  */
 .character-card.locked {
-    filter: grayscale(1) brightness(0.5);   /* 흑백 + 어둡게 */
-    cursor: not-allowed;                     /* 클릭 금지 커서 */
+    filter: grayscale(1) brightness(0.5);
+    /* 흑백 + 어둡게 */
+    cursor: not-allowed;
+    /* 클릭 금지 커서 */
 }
 
 /* 잠긴 카드는 호버 효과 제거 */
@@ -239,7 +285,8 @@ body, html {
     /* 그라데이션 배경 (이미지 로드 전 표시) */
     background: linear-gradient(180deg, #2a2a4a 0%, #1a1a2e 100%);
     display: flex;
-    align-items: flex-end;        /* 이미지를 하단에 배치 */
+    align-items: flex-end;
+    /* 이미지를 하단에 배치 */
     justify-content: center;
     overflow: hidden;
 }
@@ -248,13 +295,15 @@ body, html {
 .card-image img {
     height: 100%;
     width: auto;
-    object-fit: contain;          /* 비율 유지하며 맞춤 */
+    object-fit: contain;
+    /* 비율 유지하며 맞춤 */
     transition: transform 0.3s;
 }
 
 /* 카드 호버 시 이미지 확대 효과 */
 .character-card:hover .card-image img {
-    transform: scale(1.05);       /* 5% 확대 */
+    transform: scale(1.05);
+    /* 5% 확대 */
 }
 
 /* 
@@ -267,11 +316,13 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);   /* 어두운 오버레이 */
+    background: rgba(0, 0, 0, 0.7);
+    /* 어두운 오버레이 */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;                   /* 큰 자물쇠 이모지 */
+    font-size: 3rem;
+    /* 큰 자물쇠 이모지 */
 }
 
 /* 카드 정보 영역 */
@@ -283,14 +334,16 @@ body, html {
 /* 캐릭터 이름 */
 .card-info h3 {
     font-size: 1.2rem;
-    color: #ff69b4;               /* 핑크색 */
+    color: #ff69b4;
+    /* 핑크색 */
     margin-bottom: 5px;
 }
 
 /* 캐릭터 타이틀 */
 .card-info p {
     font-size: 0.85rem;
-    color: #aaa;                  /* 회색 */
+    color: #aaa;
+    /* 회색 */
 }
 
 /* 표정 개수 배지 */
@@ -313,14 +366,17 @@ body, html {
  * 전체 화면을 덮는 어두운 배경
  */
 .modal-overlay {
-    display: none;                /* 기본적으로 숨김 */
+    display: none;
+    /* 기본적으로 숨김 */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.9);   /* 90% 불투명 검정 */
-    z-index: 200;                      /* 헤더보다 위에 표시 */
+    background: rgba(0, 0, 0, 0.9);
+    /* 90% 불투명 검정 */
+    z-index: 200;
+    /* 헤더보다 위에 표시 */
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -328,7 +384,8 @@ body, html {
 
 /* 모달 활성 상태 */
 .modal-overlay.active {
-    display: flex;                /* 플렉스로 중앙 정렬 */
+    display: flex;
+    /* 플렉스로 중앙 정렬 */
 }
 
 /* 모달 콘텐츠 박스 */
@@ -338,7 +395,8 @@ body, html {
     max-width: 900px;
     width: 100%;
     max-height: 90vh;
-    overflow-y: auto;             /* 내용이 넘치면 스크롤 */
+    overflow-y: auto;
+    /* 내용이 넘치면 스크롤 */
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(255, 105, 180, 0.3);
@@ -386,14 +444,17 @@ body, html {
 
 /* 캐릭터 미리보기 영역 (왼쪽) */
 .character-preview {
-    flex: 1;                      /* 50% 너비 */
+    flex: 1;
+    /* 50% 너비 */
     background: linear-gradient(180deg, #2a2a4a 0%, #1a1a2e 100%);
     display: flex;
-    align-items: flex-start;      /* 이미지를 상단에서 시작 */
+    align-items: flex-start;
+    /* 이미지를 상단에서 시작 */
     justify-content: center;
     min-height: 400px;
     position: relative;
-    padding-top: 20px;            /* 상단 여백 */
+    padding-top: 20px;
+    /* 상단 여백 */
 }
 
 /* 캐릭터 미리보기 이미지 */
@@ -407,9 +468,11 @@ body, html {
 
 /* 캐릭터 상세 정보 영역 (오른쪽) */
 .character-details {
-    flex: 1;                      /* 50% 너비 */
+    flex: 1;
+    /* 50% 너비 */
     padding: 20px;
-    overflow-y: auto;             /* 내용 많으면 스크롤 */
+    overflow-y: auto;
+    /* 내용 많으면 스크롤 */
 }
 
 /* 상세 정보 섹션 (소개, 표정, 프로필) */
@@ -422,8 +485,10 @@ body, html {
     color: #ff69b4;
     font-size: 0.9rem;
     margin-bottom: 10px;
-    text-transform: uppercase;    /* 대문자로 표시 */
-    letter-spacing: 1px;          /* 자간 조정 */
+    text-transform: uppercase;
+    /* 대문자로 표시 */
+    letter-spacing: 1px;
+    /* 자간 조정 */
 }
 
 /* 섹션 본문 */
@@ -440,7 +505,8 @@ body, html {
 /* 표정 버튼 그리드 */
 .expression-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);  /* 4열 */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4열 */
     gap: 8px;
 }
 
@@ -586,7 +652,7 @@ body, html {
     transform: translateY(-8px) scale(1.02);
     border-color: #ff69b4;
     box-shadow: 0 20px 50px rgba(255, 105, 180, 0.4),
-                0 0 30px rgba(255, 105, 180, 0.2);
+        0 0 30px rgba(255, 105, 180, 0.2);
 }
 
 /* 잠긴 CG 카드 */
@@ -604,7 +670,8 @@ body, html {
 /* CG 카드 이미지 영역 */
 .cg-card .card-image {
     position: relative;
-    aspect-ratio: 16/9;           /* 16:9 비율 유지 */
+    aspect-ratio: 16/9;
+    /* 16:9 비율 유지 */
     overflow: hidden;
 }
 
@@ -612,18 +679,19 @@ body, html {
 .cg-card .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;            /* 영역을 채우도록 자름 */
+    object-fit: cover;
+    /* 영역을 채우도록 자름 */
 }
 
 /* 잠긴 CG 카드 배경 - 화려한 그라데이션 */
 .cg-card.locked .card-image {
-    background: linear-gradient(135deg, 
-        #1a1a2e 0%, 
-        #3d2a5f 20%, 
-        #2a1a4a 40%,
-        #4a2a6a 60%,
-        #2d1f4d 80%,
-        #1a1a2e 100%);
+    background: linear-gradient(135deg,
+            #1a1a2e 0%,
+            #3d2a5f 20%,
+            #2a1a4a 40%,
+            #4a2a6a 60%,
+            #2d1f4d 80%,
+            #1a1a2e 100%);
     background-size: 400% 400%;
     animation: gradientFlow 8s ease infinite;
     display: flex;
@@ -640,43 +708,66 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.3), transparent),
-        radial-gradient(2px 2px at 40px 70px, rgba(255,200,255,0.3), transparent),
-        radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.4), transparent),
-        radial-gradient(2px 2px at 130px 80px, rgba(200,200,255,0.3), transparent),
-        radial-gradient(1px 1px at 160px 30px, rgba(255,255,255,0.3), transparent);
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.3), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255, 200, 255, 0.3), transparent),
+        radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.4), transparent),
+        radial-gradient(2px 2px at 130px 80px, rgba(200, 200, 255, 0.3), transparent),
+        radial-gradient(1px 1px at 160px 30px, rgba(255, 255, 255, 0.3), transparent);
     animation: twinkle 4s ease-in-out infinite;
 }
 
 @keyframes gradientFlow {
-    0%, 100% { background-position: 0% 50%; }
-    25% { background-position: 100% 50%; }
-    50% { background-position: 100% 100%; }
-    75% { background-position: 0% 100%; }
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0% 100%;
+    }
 }
 
 @keyframes twinkle {
-    0%, 100% { opacity: 0.5; }
-    50% { opacity: 1; }
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
 
 /* 잠긴 CG 자물쇠 오버레이 개선 */
 .cg-card.locked .lock-overlay {
     font-size: 3rem;
     text-shadow: 0 0 20px rgba(255, 105, 180, 0.6),
-                 0 0 40px rgba(200, 100, 255, 0.4);
+        0 0 40px rgba(200, 100, 255, 0.4);
     animation: lockPulse 2s ease-in-out infinite;
     z-index: 1;
 }
 
 @keyframes lockPulse {
-    0%, 100% { 
-        transform: scale(1); 
+
+    0%,
+    100% {
+        transform: scale(1);
         filter: brightness(1);
     }
-    50% { 
-        transform: scale(1.1); 
+
+    50% {
+        transform: scale(1.1);
         filter: brightness(1.3);
     }
 }
@@ -685,7 +776,7 @@ body, html {
 .cg-card .card-info {
     padding: 15px 18px;
     text-align: center;
-    background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
 }
 
 .cg-card .card-info h4 {
@@ -693,7 +784,7 @@ body, html {
     color: #fff;
     margin-bottom: 6px;
     font-weight: 600;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .cg-card .card-info p {
@@ -749,7 +840,7 @@ body, html {
     left: 0;
     right: 0;
     /* 아래에서 위로 그라데이션 (가독성 향상) */
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
     padding: 30px 15px 15px;
     font-size: 0.85rem;
 }
@@ -794,12 +885,15 @@ body, html {
         opacity: 0;
         transform: translateY(0) rotate(0deg) scale(0.5);
     }
+
     10% {
         opacity: 0.8;
     }
+
     90% {
         opacity: 0.8;
     }
+
     100% {
         opacity: 0;
         transform: translateY(-100vh) rotate(360deg) scale(1);
@@ -814,12 +908,10 @@ body, html {
     width: 120%;
     height: 120%;
     transform: translate(-50%, -50%);
-    background: radial-gradient(
-        circle at center,
-        rgba(255, 105, 180, 0.15) 0%,
-        rgba(255, 105, 180, 0.05) 40%,
-        transparent 70%
-    );
+    background: radial-gradient(circle at center,
+            rgba(255, 105, 180, 0.15) 0%,
+            rgba(255, 105, 180, 0.05) 40%,
+            transparent 70%);
     pointer-events: none;
     z-index: 0;
     opacity: 0;
@@ -832,10 +924,13 @@ body, html {
 }
 
 @keyframes glowPulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(-50%, -50%) scale(1);
         opacity: 0.6;
     }
+
     50% {
         transform: translate(-50%, -50%) scale(1.1);
         opacity: 1;
@@ -980,8 +1075,15 @@ body, html {
 }
 
 @keyframes musicGlow {
-    0%, 100% { box-shadow: 0 0 25px rgba(255, 105, 180, 0.3); }
-    50% { box-shadow: 0 0 35px rgba(255, 105, 180, 0.5); }
+
+    0%,
+    100% {
+        box-shadow: 0 0 25px rgba(255, 105, 180, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 35px rgba(255, 105, 180, 0.5);
+    }
 }
 
 /* 잠긴 음악 항목 */
@@ -1028,8 +1130,15 @@ body, html {
 }
 
 @keyframes iconPulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 /* 음악 정보 */
@@ -1116,31 +1225,32 @@ body, html {
 
 /* 태블릿/모바일 가로 (768px 이하) */
 @media (max-width: 768px) {
+
     /* 헤더 제목 크기 축소 */
     .gallery-header h1 {
         font-size: 1.2rem;
     }
-    
+
     /* 캐릭터 그리드: 더 작은 카드 */
     .character-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         gap: 12px;
     }
-    
+
     /* 카드 이미지 높이 축소 */
     .card-image {
         height: 200px;
     }
-    
+
     /* 카드 정보 패딩 조정 */
     .card-info {
         padding: 12px 15px;
     }
-    
+
     .card-info h3 {
         font-size: 1rem;
     }
-    
+
     /* 
      * 모달 본문: 세로 배치로 변경
      * 이미지 위, 정보 아래
@@ -1149,19 +1259,19 @@ body, html {
         flex-direction: column;
         overflow: visible;
     }
-    
+
     /* 캐릭터 미리보기 높이 조정 */
     .character-preview {
         min-height: 350px;
         max-height: 60vh;
         overflow: hidden;
     }
-    
+
     /* 표정 버튼 3열로 변경 */
     .expression-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     /* 탭 버튼 크기 축소 */
     .tab-btn {
         padding: 10px 16px;
@@ -1171,28 +1281,30 @@ body, html {
 
 /* 모바일 세로 (480px 이하) */
 @media (max-width: 480px) {
+
     /* 헤더 패딩 축소 */
     .gallery-header {
         padding: 0 15px;
     }
-    
+
     /* 헤더 버튼 간격 축소 */
     .header-actions {
         gap: 5px;
     }
-    
+
     /* 버튼 크기 축소 */
-    .back-btn, .lang-btn {
+    .back-btn,
+    .lang-btn {
         padding: 6px 12px;
         font-size: 0.8rem;
     }
-    
+
     /* 캐릭터 그리드: 2열 고정 */
     .character-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-    
+
     /* 카드 이미지 더 작게 */
     .card-image {
         height: 180px;
@@ -1252,8 +1364,15 @@ body, html {
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 /* 팝업 제목 */
@@ -1264,12 +1383,40 @@ body, html {
     font-weight: 700;
 }
 
-/* 팝업 메시지 */
+/*
+ * 팝업 메시지 컨테이너
+ * 
+ * 해금 조건을 보여주는 메시지 영역
+ * - line-height: 2 - 줄 간격을 넓게 하여 가독성 향상
+ * - text-align: center - 모든 텍스트 중앙 정렬
+ */
 .unlock-popup-message {
     font-size: 0.95rem;
     color: #ccc;
-    line-height: 1.8;
+    line-height: 2;
+    /* 줄 간격 넓게 (기존 1.8 → 2) */
     margin-bottom: 25px;
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+}
+
+/*
+ * 조건 항목 개별 줄 스타일
+ * 
+ * 해금 조건을 각각 별도 줄로 표시하여 가독성 향상
+ * 예: "💕 최대 호감도: 50/100"와 "💬 프리토킹: 10/100"를 
+ *     각각 다른 줄에 표시
+ * 
+ * 사용법 (JS에서):
+ *   `<span class="condition-line">💕 최대 호감도: ${value}</span>`
+ */
+.unlock-popup-message .condition-line {
+    display: block;
+    /* 인라인 span을 블록으로 변경 (줄바꿈 효과) */
+    margin: 8px 0;
+    /* 위아래 여백으로 조건 간 간격 확보 */
+    font-size: 0.9rem;
+    /* 본문보다 약간 작은 글자 크기 */
 }
 
 /* 팝업 버튼 */
@@ -1367,4 +1514,3 @@ body, html {
 .character-card.unlocked {
     cursor: pointer;
 }
-
