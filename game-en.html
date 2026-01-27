@@ -38,7 +38,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="assets/images/icon.png">
 
-    <link rel="stylesheet" href="assets/css/style.css?v=2.2.1">
+    <link rel="stylesheet" href="assets/css/style.css?v=2.2.2">
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
     <script src="assets/js/browser-check.js?v=2.2.0" defer></script>
@@ -86,7 +86,6 @@
                     <button id="remove-image-btn" title="Remove Image">×</button>
                 </div>
                 <div id="chat-input-wrapper">
-                    <input type="text" id="chat-input" placeholder="Type a message..." maxlength="100">
                     <button id="upload-image-btn" title="Upload Image">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -95,6 +94,7 @@
                             <polyline points="21 15 16 10 5 21"></polyline>
                         </svg>
                     </button>
+                    <input type="text" id="chat-input" placeholder="Enter message..." maxlength="100">
                     <input type="file" id="upload-image-input" accept="image/*" style="display: none;">
                     <button id="chat-send" title="Send">
                         <svg viewBox="0 0 24 24">
