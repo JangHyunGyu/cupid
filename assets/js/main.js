@@ -2243,7 +2243,8 @@ class FreeTalkSystem {
             ? (text ? `${text}\n\ndata:image/${stagedImage.split('data:image/')[1]}` : stagedImage)
             : text;
 
-        this.uiManager.messageEl.textContent = text || (document.documentElement.lang === 'en' ? "(Image)" : "(이미지)");
+        // 텍스트가 없고 이미지가 있더라도 텍스트 표시를 남기지 않음
+        this.uiManager.messageEl.textContent = text || '';
         if (stagedImage) {
             const img = document.createElement('img');
             img.src = stagedImage;
