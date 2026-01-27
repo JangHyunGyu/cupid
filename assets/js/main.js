@@ -1072,6 +1072,35 @@ class UIManager {
                             container.appendChild(btn);
                             this.imageUploadBtn = btn;
                         }
+
+                        // 미리보기 컨테이너가 없으면 생성 (img + 제거 버튼 포함)
+                        if (!document.getElementById('image-preview-container')) {
+                            const previewDiv = document.createElement('div');
+                            previewDiv.id = 'image-preview-container';
+                            previewDiv.style.display = 'none';
+                            previewDiv.style.alignItems = 'center';
+                            previewDiv.style.justifyContent = 'center';
+                            previewDiv.style.flexDirection = 'column';
+
+                            const img = document.createElement('img');
+                            img.id = 'image-preview';
+                            img.src = '';
+                            img.alt = '';
+                            previewDiv.appendChild(img);
+
+                            const remBtn = document.createElement('button');
+                            remBtn.id = 'remove-image-btn';
+                            remBtn.type = 'button';
+                            remBtn.title = document.documentElement.lang === 'en' ? 'Remove image' : '미리보기 제거';
+                            remBtn.textContent = '×';
+                            previewDiv.appendChild(remBtn);
+
+                            container.appendChild(previewDiv);
+
+                            this.imagePreviewContainer = previewDiv;
+                            this.imagePreview = img;
+                            this.removeImageBtn = remBtn;
+                        }
                     }
                 }
             }, 1500);
