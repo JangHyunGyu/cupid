@@ -952,6 +952,14 @@ class UIManager {
         this.chatSkipBtn = document.getElementById('chat-skip-btn');     // 스킵 버튼
         this.turnCountEl = document.getElementById('turn-count');        // 남은 턴 수 표시
 
+        // 🖼️ 이미지 업로드 관련
+        this.imageUploadBtn = document.getElementById('upload-image-btn');
+        this.imageUploadInput = document.getElementById('upload-image-input');
+        this.imagePreviewContainer = document.getElementById('image-preview-container');
+        this.imagePreview = document.getElementById('image-preview');
+        this.removeImageBtn = document.getElementById('remove-image-btn');
+        this.stagedImage = null; // 현재 업로드 준비된 이미지 (Base64)
+
         // ✏️ 이름 입력 관련
         this.nameInputContainer = document.getElementById('name-input-container');
         this.playerNameInput = document.getElementById('player-name-input');
@@ -987,6 +995,9 @@ class UIManager {
 
         // 설정 관련 이벤트 초기화
         this.bindSettingsEvents();
+
+        // 이미지 업로드 관련 이벤트 초기화
+        this.bindImageUploadEvents();
     }
 
     /** 
@@ -1009,6 +1020,102 @@ class UIManager {
                 if (window.soundManager) soundManager.setSfxVolume(vol);
             }
         });
+    }
+
+    /**
+     * 이미지 업로드 관련 이벤트 바인딩
+     */
+    bindImageUploadEvents() {
+        if (!this.imageUploadBtn || !this.imageUploadInput) return;
+
+        // 업로드 버튼 클릭 시 파일 선택창 열기
+        this.imageUploadBtn.addEventListener('click', () => {
+            if (this.chatInput && this.chatInput.disabled) return;
+            this.imageUploadInput.click();
+        });
+
+        // 파일 선택 시 처리
+        this.imageUploadInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) this.handleImageUpload(file);
+        });
+
+        // 미리보기 제거 버튼 클릭 시
+        if (this.removeImageBtn) {
+            this.removeImageBtn.addEventListener('click', () => {
+                this.removeStagedImage();
+            });
+        }
+    }
+
+    /**
+     * 이미지 파일을 읽어서 Base64로 변환 및 리사이징
+     * @param {File} file - 선택된 파일 객체
+     */
+    handleImageUpload(file) {
+        if (!file.type.startsWith('image/')) {
+            alert(document.documentElement.lang === 'en' ? 'Only image files can be uploaded.' : '이미지 파일만 업로드 가능합니다.');
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const img = new Image();
+            img.onload = () => {
+                // 이미지 리사이징 (최대 1024px)
+                const canvas = document.createElement('canvas');
+                let width = img.width;
+                let height = img.height;
+                const max_size = 1024;
+
+                if (width > height) {
+                    if (width > max_size) {
+                        height *= max_size / width;
+                        width = max_size;
+                    }
+                } else {
+                    if (height > max_size) {
+                        width *= max_size / height;
+                        height = max_size;
+                    }
+                }
+
+                canvas.width = width;
+                canvas.height = height;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, width, height);
+
+                // JPEG 품질 0.8로 압축
+                const base64 = canvas.toDataURL('image/jpeg', 0.8);
+                this.updateImagePreview(base64);
+            };
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+
+    /**
+     * 이미지 미리보기 영역 업데이트
+     * @param {string|null} base64Data - 이미지 데이터 (null이면 제거)
+     */
+    updateImagePreview(base64Data) {
+        if (base64Data) {
+            this.stagedImage = base64Data;
+            if (this.imagePreview) this.imagePreview.src = base64Data;
+            if (this.imagePreviewContainer) this.imagePreviewContainer.style.display = 'inline-flex';
+        } else {
+            this.stagedImage = null;
+            if (this.imagePreview) this.imagePreview.src = '';
+            if (this.imagePreviewContainer) this.imagePreviewContainer.style.display = 'none';
+        }
+    }
+
+    /**
+     * 업로드 대기 중인 이미지 제거
+     */
+    removeStagedImage() {
+        this.updateImagePreview(null);
+        if (this.imageUploadInput) this.imageUploadInput.value = '';
     }
 
     /** 
@@ -1515,6 +1622,22 @@ class DialogueSystem {
             // 대사창 초기화
             this.uiManager.messageEl.textContent = "";
 
+            // 이미지 포함 여부 확인 (Base64 데이터가 있으면 이미지)
+            const hasImage = processedText.includes('data:image/');
+            let textPart = processedText;
+            let imagePart = "";
+
+            if (hasImage) {
+                if (processedText.includes('\n\ndata:image/')) {
+                    const parts = processedText.split('\n\ndata:image/');
+                    textPart = parts[0];
+                    imagePart = 'data:image/' + parts[1];
+                } else if (processedText.startsWith('data:image/')) {
+                    textPart = "";
+                    imagePart = processedText;
+                }
+            }
+
             let charIndex = 0;      // 현재까지 표시한 글자 수
             let startTime = null;   // 타이핑 시작 시각
 
@@ -1537,16 +1660,28 @@ class DialogueSystem {
                 const targetIndex = Math.min(Math.floor(elapsed / this.typingSpeed), processedText.length);
 
                 if (charIndex < targetIndex) {
-                    this.uiManager.messageEl.textContent = processedText.substring(0, targetIndex);
+                    this.uiManager.messageEl.textContent = textPart.substring(0, targetIndex);
                     charIndex = targetIndex;
                 }
 
-                if (charIndex < processedText.length) {
+                if (charIndex < textPart.length) {
                     requestAnimationFrame(typeFrame);
                 } else {
                     this.isTyping = false;
                     if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
                     this.updateTalkingAnimation(charName, false);
+
+                    // 이미지가 있으면 추가
+                    if (imagePart) {
+                        const img = document.createElement('img');
+                        img.src = imagePart;
+                        img.className = 'chat-image';
+                        img.onclick = () => {
+                            if (window.openImageModal) window.openImageModal(imagePart);
+                        };
+                        this.uiManager.messageEl.appendChild(img);
+                    }
+
                     resolve();
                 }
             };
@@ -1985,8 +2120,25 @@ class FreeTalkSystem {
 
         // 사용자 메시지 표시
         this.uiManager.updateNameTag("나");
-        this.uiManager.messageEl.textContent = text;
-        this.freeTalkHistory.push({ role: "user", content: text });
+
+        // 이미지와 메시지 결합 처리
+        const stagedImage = this.uiManager.stagedImage;
+        const finalContent = stagedImage
+            ? (text ? `${text}\n\ndata:image/${stagedImage.split('data:image/')[1]}` : stagedImage)
+            : text;
+
+        this.uiManager.messageEl.textContent = text || (document.documentElement.lang === 'en' ? "(Image)" : "(이미지)");
+        if (stagedImage) {
+            const img = document.createElement('img');
+            img.src = stagedImage;
+            img.className = 'chat-image';
+            this.uiManager.messageEl.appendChild(img);
+        }
+
+        this.freeTalkHistory.push({ role: "user", content: finalContent });
+
+        // 이미지 미리보기 제거
+        this.uiManager.removeStagedImage();
 
         // 로딩 상태
         this.uiManager.chatSendBtn.disabled = true;
@@ -3789,3 +3941,16 @@ if (!window.preventAutoStart) {
 
 // 🎉 로드 완료 메시지 (개발자 도구 콘솔에서 확인 가능)
 console.log('[Cupid Engine] 객체지향 버전 v2.0.0 로드 완료');
+
+/**
+ * 이미지 확대 모달 열기
+ * @param {string} src - 이미지 소스 URL
+ */
+window.openImageModal = (src) => {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('image-modal-img');
+    if (modal && modalImg) {
+        modalImg.src = src;
+        modal.style.display = 'flex';
+    }
+};
