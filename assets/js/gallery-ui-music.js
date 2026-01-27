@@ -1,105 +1,182 @@
 /**
  * ============================================================================
- * GalleryUI - 음악실 확장
+ * MusicRenderer - 음악실 렌더러
  * ============================================================================
  * 
  * 음악 목록 렌더링 및 BGM 재생 제어를 담당합니다.
- * GalleryUI 클래스의 prototype에 메서드를 추가하는 방식으로 확장합니다.
- */
-
-// =========================================================================
-// 음악실 렌더링
-// =========================================================================
-
-/**
- * 음악 목록 렌더링
+ * GalleryUI에서 Composition으로 주입받아 사용합니다.
  * 
- * 표시 정보:
- * - 해금된 BGM: 제목, 아티스트, 재생시간 표시
- * - 잠긴 BGM: ??? 표시, 클릭 시 해금 조건 팝업
- * - 재생 중인 BGM: playing 클래스 추가로 강조 표시
+ * 의존성:
+ *   - GalleryData: BGM 데이터 조회
+ *   - GalleryProgress: 해금 상태 확인
+ *   - GalleryUI (parent): 팝업 표시 기능
  */
-GalleryUI.prototype.renderMusic = function () {
-    const list = document.getElementById('music-list');
-    if (!list) return;
+class MusicRenderer {
+    /**
+     * MusicRenderer 생성자
+     * 
+     * @param {GalleryUI} ui - 부모 GalleryUI 인스턴스
+     */
+    constructor(ui) {
+        /** @type {GalleryUI} 부모 UI 인스턴스 */
+        this.ui = ui;
 
-    const bgmList = GalleryData.getBGMList(this.lang);
-    let html = '';
+        /** @type {HTMLElement|null} 음악 목록 컨테이너 */
+        this.listEl = null;
 
-    bgmList.forEach(bgm => {
-        const unlocked = this.progress.isUnlocked('bgm', bgm.id);
-        const isPlaying = this.currentBgm === bgm.id;
+        /** @type {Audio|null} 현재 재생 중인 오디오 객체 */
+        this.audio = null;
 
-        html += `
-            <div class="music-item ${unlocked ? '' : 'locked'} ${isPlaying ? 'playing' : ''}"
-                 onclick="${unlocked ? `gallery.ui.toggleBgm('${bgm.id}', '${bgm.file}')` : `gallery.ui.showMusicLockPopup('${bgm.id}')`}">
-                
-                <div class="music-icon">
-                    ${isPlaying ? '⏸️' : (unlocked ? '▶️' : '🔒')}
-                </div>
-                
-                <div class="music-info">
-                    <h4>${unlocked ? bgm.name : '???'}</h4>
-                    <p>${unlocked ? bgm.artist : (this.lang === 'ko' ? '미해금' : 'Locked')}</p>
-                </div>
-                
-                <div class="music-duration">
-                    ${unlocked ? bgm.duration : '--:--'}
-                </div>
-            </div>
-        `;
-    });
-
-    list.innerHTML = html;
-};
-
-/**
- * 음악 잠금 팝업 표시
- * 
- * @param {string} bgmId - BGM ID
- */
-GalleryUI.prototype.showMusicLockPopup = function (bgmId) {
-    this.showUnlockPopup({
-        title: this.lang === 'ko' ? '음악 미해금' : 'Music Locked',
-        message: this.lang === 'ko'
-            ? '이 배경음악은 아직 해금되지 않았습니다.\n\n🎵 해금 조건: 게임에서 해당 음악이 재생되면 자동 해금됩니다!'
-            : 'This BGM is not yet unlocked.\n\n🎵 Condition: Will unlock automatically when played in game!',
-        icon: '🎵'
-    });
-};
-
-/**
- * BGM 재생/정지 토글
- * 
- * 동작 설명:
- * 1. 현재 재생 중인 곡을 클릭한 경우: 재생 정지
- * 2. 다른 곡을 클릭한 경우: 기존 곡 정지 후 새 곡 재생
- * 
- * @param {string} id - BGM ID
- * @param {string} file - 오디오 파일 경로
- */
-GalleryUI.prototype.toggleBgm = function (id, file) {
-    if (this.currentBgm === id) {
-        // 현재 재생 중인 곡을 클릭한 경우: 정지
-        if (this.bgmAudio) {
-            this.bgmAudio.pause();
-            this.bgmAudio = null;
-        }
-        this.currentBgm = null;
-    } else {
-        // 다른 곡을 클릭한 경우: 재생
-        if (this.bgmAudio) {
-            this.bgmAudio.pause();
-        }
-
-        this.bgmAudio = new Audio(file);
-        this.bgmAudio.volume = parseFloat(localStorage.getItem('bgmVolume') || 0.5);
-        this.bgmAudio.loop = true;
-        this.bgmAudio.play().catch(e => console.log('Audio play failed:', e));
-
-        this.currentBgm = id;
+        /** @type {string|null} 현재 재생 중인 BGM ID */
+        this.currentBgmId = null;
     }
 
-    // UI 업데이트
-    this.renderMusic();
-};
+    /**
+     * 초기화 - DOM 요소 캐싱 및 이벤트 위임 설정
+     */
+    init() {
+        this.listEl = document.getElementById('music-list');
+
+        // 이벤트 위임: 목록 전체에 한 번만 이벤트 등록
+        if (this.listEl) {
+            this.listEl.addEventListener('click', (e) => this._handleListClick(e));
+        }
+    }
+
+    /**
+     * 목록 클릭 이벤트 핸들러 (이벤트 위임)
+     * @private
+     * @param {Event} e - 클릭 이벤트
+     */
+    _handleListClick(e) {
+        const item = e.target.closest('.music-item');
+        if (!item) return;
+
+        const bgmId = item.dataset.bgmId;
+        const bgmFile = item.dataset.bgmFile;
+        if (!bgmId) return;
+
+        const isLocked = item.classList.contains('locked');
+
+        if (isLocked) {
+            this.showLockPopup(bgmId);
+        } else {
+            this.toggle(bgmId, bgmFile);
+        }
+    }
+
+    /**
+     * 음악 목록 렌더링
+     */
+    render() {
+        if (!this.listEl) {
+            this.listEl = document.getElementById('music-list');
+            if (!this.listEl) return;
+
+            // 첫 렌더링 시 이벤트 위임 설정
+            this.listEl.addEventListener('click', (e) => this._handleListClick(e));
+        }
+
+        const bgmList = GalleryData.getBGMList(this.ui.lang);
+        let html = '';
+
+        bgmList.forEach(bgm => {
+            const unlocked = this.ui.progress.isUnlocked('bgm', bgm.id);
+            const isPlaying = this.currentBgmId === bgm.id;
+
+            // data 속성으로 ID와 파일 경로 전달 (인라인 onclick 제거)
+            html += `
+                <div class="music-item ${unlocked ? '' : 'locked'} ${isPlaying ? 'playing' : ''}"
+                     data-bgm-id="${bgm.id}" data-bgm-file="${bgm.file}">
+                    
+                    <div class="music-icon">
+                        ${isPlaying ? '⏸️' : (unlocked ? '▶️' : '🔒')}
+                    </div>
+                    
+                    <div class="music-info">
+                        <h4>${unlocked ? bgm.name : '???'}</h4>
+                        <p>${unlocked ? bgm.artist : (this.ui.lang === 'ko' ? '미해금' : 'Locked')}</p>
+                    </div>
+                    
+                    <div class="music-duration">
+                        ${unlocked ? bgm.duration : '--:--'}
+                    </div>
+                </div>
+            `;
+        });
+
+        this.listEl.innerHTML = html;
+    }
+
+    /**
+     * 음악 잠금 팝업 표시
+     * @param {string} bgmId - BGM ID
+     */
+    showLockPopup(bgmId) {
+        this.ui.showUnlockPopup({
+            title: this.ui.lang === 'ko' ? '음악 미해금' : 'Music Locked',
+            message: this.ui.lang === 'ko'
+                ? '이 배경음악은 아직 해금되지 않았습니다.<br><br><span class="condition-line">🎵 해금 조건: 게임에서 해당 음악이 재생되면 자동 해금됩니다!</span>'
+                : 'This BGM is not yet unlocked.<br><br><span class="condition-line">🎵 Condition: Will unlock automatically when played in game!</span>',
+            icon: '🎵'
+        });
+    }
+
+    /**
+     * BGM 재생/정지 토글
+     * 
+     * @param {string} id - BGM ID
+     * @param {string} file - 오디오 파일 경로
+     */
+    toggle(id, file) {
+        if (this.currentBgmId === id) {
+            // 현재 재생 중인 곡을 클릭한 경우: 정지
+            this.stop();
+        } else {
+            // 다른 곡을 클릭한 경우: 재생
+            this.play(id, file);
+        }
+
+        // UI 업데이트
+        this.render();
+    }
+
+    /**
+     * BGM 재생
+     * @param {string} id - BGM ID
+     * @param {string} file - 오디오 파일 경로
+     */
+    play(id, file) {
+        // 기존 재생 중지
+        this.stop();
+
+        // 새 오디오 재생
+        this.audio = new Audio(file);
+        this.audio.volume = parseFloat(localStorage.getItem('bgmVolume') || 0.5);
+        this.audio.loop = true;
+        this.audio.play().catch(e => console.log('Audio play failed:', e));
+
+        this.currentBgmId = id;
+    }
+
+    /**
+     * BGM 정지
+     */
+    stop() {
+        if (this.audio) {
+            this.audio.pause();
+            this.audio = null;
+        }
+        this.currentBgmId = null;
+    }
+
+    /**
+     * 리소스 정리 (페이지 떠나기 전 호출)
+     */
+    cleanup() {
+        this.stop();
+    }
+}
+
+// 전역 접근을 위해 window에 노출
+window.MusicRenderer = MusicRenderer;
