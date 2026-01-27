@@ -1,10 +1,73 @@
-﻿if (typeof SCENARIO === 'undefined') {
+﻿/**
+ * ============================================================================
+ * CUPID - Day 2 After School Scenario (Korean Version)
+ * ============================================================================
+ * 
+ *  파일 정보
+ * ----------------------------------------------------------------------------
+ * 파일명: ko_day2_3_afterschool.js
+ * 언어: 한국어 (Korean)
+ * 일차: Day 2 (2일차)
+ * 시간대: After School (방과 후)
+ * 
+ *  시나리오 개요
+ * ----------------------------------------------------------------------------
+ * 노을 지는 방과 후의 학교를 배경으로 히로인들과의 깊이 있는 이벤트를 다룹니다.
+ * 봉사활동, 비밀 조사, 운동 연습 등 각 캐릭터의 개성이 드러나는 활동을 함께하며 
+ * 연락처를 확보하거나 특별한 약속(홈 데이트, 차로 배웅 등)을 잡을 수 있습니다.
+ * 
+ *  주요 이벤트
+ * ----------------------------------------------------------------------------
+ * 1. 학생회 업무 보조 (서연) - 기지개 및 안마 이벤트, 집까지 배웅, 연락처 확보, 다인과 조우
+ * 2. 지하실 비밀 조사 (유나) - 기묘한 문양 확인, 공포 분위기 속 유대감 형성, 연락처 확보, 보건샘과 조우
+ * 3. 체육관 배구 연습 (다인) - 스파이크 연습 보조, 활발한 교류, 떡볶이 내기, 연락처 확보, 유나와 조우
+ * 4. 보건실 연장 휴식 (보건샘) - 낮잠 후 노을 아래 대화, 대담한 유혹, 홈 데이트 초대(invited_nurse_home)
+ * 5. 교무실 야근 보조 (선생님) - 서류 정리 돕기, 사제 간의 특별한 유대, 차로 배웅 제안(day2_teacher_date)
+ * 
+ *  조건 플래그 설명 (Condition Flags)
+ * ----------------------------------------------------------------------------
+ * woke_up_in_nurse_room : 점심시간 보건실에서 잠들었다가 방과 후에 깨어났는지 확인
+ * met_*                : 해당 히로인과 구면인지 확인 (초면일 경우 자기소개 씬 연결)
+ * visited_warehouse_at_lunch : 점심에 유나와 창고를 방문했었는지 확인 (대사 분기)
+ * day2_met_dain_lunch  : 점심에 다인을 만났었는지 확인 (서연 루트에서 조우 시 분기)
+ * has_number_*         : 이미 연락처를 가지고 있는지 확인 (연락처 확인 대사 분기)
+ * invited_nurse_home   : 이미 보건샘의 홈 데이트 발동 조건을 갖췄는지 확인
+ * 
+ *  설정 플래그 설명 (Set Flags)
+ * ----------------------------------------------------------------------------
+ * day2_met_*_after     : 방과 후에 해당 히로인을 만났음을 기록
+ * knows_name_*         : 히로인의 이름을 알게 됨
+ * day2_dain_bet        : 다인과 떡볶이 내기를 함
+ * day2_teacher_date    : 담임 선생님의 차로 배웅을 받기로 함
+ * invited_nurse_home   : 보건샘의 홈 데이트 초대 수락 (Day 2 Night 핵심 분기)
+ * has_number_*         : 각 히로인의 연락처 획득 시 설정
+ * has_any_contact      : 연락처 획득 시 설정
+ * 
+ *  호감도 변화 (Stats Changes)
+ * ----------------------------------------------------------------------------
+ * 각 루트별 선택지에 따라 호감도 대폭 상승/하락. 특히 갈등 상황(2인 씬) 선택 중요.
+ * 
+ *  특이 사항
+ * ----------------------------------------------------------------------------
+ * - sunset: true - 모든 장면에 노을 연출 적용
+ * - Double Character: 서연-다인, 유나-보건샘, 다인-유나 등 히로인 간 조우 연출 다수
+ * 
+ * ============================================================================
+ */
+
+// SCENARIO 전역 객체 초기화
+if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
+
+// Day 2 시나리오 그룹 초기화
 if (!SCENARIO[2]) {
     SCENARIO[2] = {};
 }
 
+/**
+ * [Day 2 - After School] 씬 데이터 정의
+ */
 Object.assign(SCENARIO[2], {
     "day2_afternoon_class": {
         name: "나",
@@ -78,8 +141,8 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "서연이는 왜 그렇게 매사에 진심이고 열심히야?", next: "day2_seoyeon_why", stats: { Seoyeon: { affinity: 3 } } },
-            { 
-                text: "이젠 그만 쉬자. 집까지 내가 꼭 데려다줄게.", 
+            {
+                text: "이젠 그만 쉬자. 집까지 내가 꼭 데려다줄게.",
                 next: "day2_seoyeon_home",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
@@ -89,8 +152,8 @@ Object.assign(SCENARIO[2], {
                 ],
                 stats: { Seoyeon: { affinity: 8 } }
             },
-            { 
-                text: "많이 뭉쳤네. 자, 잠깐만 가만히 있어 봐.", 
+            {
+                text: "많이 뭉쳤네. 자, 잠깐만 가만히 있어 봐.",
                 next: "day2_seoyeon_massage",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
@@ -413,8 +476,8 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "이게 대체 뭘 의미하는 거야?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 4 } } },
-            { 
-                text: "(유나의 손을 잡으며) 무서우니까 이제 나가자.", 
+            {
+                text: "(유나의 손을 잡으며) 무서우니까 이제 나가자.",
                 next: "day2_yuna_scary",
                 affinityChar: "Yuna",
                 affinityBranches: [
@@ -846,8 +909,8 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         choices: [
-            { 
-                text: "선생님이 보고 싶어서 왔어요.", 
+            {
+                text: "선생님이 보고 싶어서 왔어요.",
                 next: "day2_nurse_miss",
                 affinityChar: "Nurse",
                 affinityBranches: [
@@ -855,7 +918,7 @@ Object.assign(SCENARIO[2], {
                     { minAffinity: 0, next: "day2_nurse_miss_normal" },
                     { minAffinity: -100, next: "day2_nurse_miss_low" }
                 ],
-                stats: { Nurse: { affinity: 8 } } 
+                stats: { Nurse: { affinity: 8 } }
             },
             { text: "그냥 조용히 쉬고 싶어서요.", next: "day2_nurse_rest", stats: { Nurse: { affinity: 3 } } },
             { text: "이 방에서 나는 향기가 너무 좋아요.", next: "day2_nurse_aroma", stats: { Nurse: { affinity: 5 } } }
@@ -923,8 +986,8 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "네, 그럴게요.", next: "day2_end" },
-            { 
-                text: "번호 말고... 오늘 저녁 선생님 집으로 가면 안 돼요?", 
+            {
+                text: "번호 말고... 오늘 저녁 선생님 집으로 가면 안 돼요?",
                 next: "nurse_contact_home_fail_after",
                 affinityChar: "Nurse",
                 affinityBranches: [
