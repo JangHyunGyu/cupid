@@ -3,17 +3,18 @@
  * GalleryUI - 갤러리 UI 코어 클래스
  * ============================================================================
  * 
- * 이 클래스는 갤러리 UI의 기본 기능과 팝업 관리를 담당합니다.
+ * 갤러리 UI의 기본 기능과 팝업 관리를 담당합니다.
+ * Composition 패턴으로 서브 렌더러들을 통합합니다.
  * 
- * 파일 구조:
- * - gallery-ui-core.js      : 코어 클래스, 생성자, 팝업 (이 파일)
- * - gallery-ui-character.js : 캐릭터 렌더링 및 모달
- * - gallery-ui-cg.js        : CG 렌더링 및 모달
- * - gallery-ui-music.js     : 음악실 렌더링
+ * 모듈 구조:
+ *   GalleryUI (이 파일)
+ *     ├── CharacterRenderer (gallery-ui-character.js)
+ *     ├── CGRenderer (gallery-ui-cg.js)
+ *     └── MusicRenderer (gallery-ui-music.js)
  * 
  * 사용 예시:
  *   const ui = new GalleryUI(progress, 'ko');
- *   ui.renderCharacters();
+ *   ui.renderCharacters();  // 내부적으로 this.character.render() 호출
  */
 
 class GalleryUI {
@@ -24,6 +25,8 @@ class GalleryUI {
     /**
      * GalleryUI 생성자
      * 
+     * Composition 패턴: 서브 렌더러들을 생성하고 주입받습니다.
+     * 
      * @param {GalleryProgress} progress - 진행도 관리 인스턴스
      * @param {string} lang - 현재 언어 ('ko' 또는 'en')
      */
@@ -33,6 +36,24 @@ class GalleryUI {
 
         /** @type {string} 현재 언어 */
         this.lang = lang;
+
+        // ─────────────────────────────────────────────────────────────────────
+        // Composition: 서브 렌더러 인스턴스 생성
+        // 각 렌더러는 this(GalleryUI)를 부모로 받아 공통 기능 사용
+        // ─────────────────────────────────────────────────────────────────────
+
+        /** @type {CharacterRenderer} 캐릭터 갤러리 렌더러 */
+        this.character = new CharacterRenderer(this);
+
+        /** @type {CGRenderer} CG 갤러리 렌더러 */
+        this.cg = new CGRenderer(this);
+
+        /** @type {MusicRenderer} 음악실 렌더러 */
+        this.music = new MusicRenderer(this);
+
+        // ─────────────────────────────────────────────────────────────────────
+        // 하위 호환성: 기존 코드에서 사용하던 속성들 유지
+        // ─────────────────────────────────────────────────────────────────────
 
         /** @type {string|null} 현재 모달에서 보고 있는 캐릭터 ID */
         this.currentCharacter = null;
@@ -56,6 +77,81 @@ class GalleryUI {
     }
 
     // =========================================================================
+    // 렌더링 래퍼 메서드 (하위 호환성)
+    // =========================================================================
+    // 기존 코드에서 ui.renderCharacters() 형태로 호출하던 것을 유지
+
+    /**
+     * 캐릭터 그리드 렌더링
+     * 내부적으로 CharacterRenderer.render() 호출
+     */
+    renderCharacters() {
+        this.character.render();
+    }
+
+    /**
+     * CG 그리드 렌더링
+     * 내부적으로 CGRenderer.render() 호출
+     */
+    renderCG() {
+        this.cg.render();
+    }
+
+    /**
+     * 음악 목록 렌더링
+     * 내부적으로 MusicRenderer.render() 호출
+     */
+    renderMusic() {
+        this.music.render();
+    }
+
+    // =========================================================================
+    // 모달/팝업 래퍼 메서드 (하위 호환성)
+    // =========================================================================
+
+    /**
+     * 캐릭터 모달 열기
+     * @param {string} charId - 캐릭터 ID
+     */
+    openCharacterModal(charId) {
+        this.currentCharacter = charId;
+        this.character.openModal(charId);
+    }
+
+    /**
+     * 캐릭터 모달 닫기
+     */
+    closeCharacterModal() {
+        this.character.closeModal();
+        this.currentCharacter = null;
+    }
+
+    /**
+     * CG 모달 열기
+     * @param {string} cgId - CG ID
+     */
+    openCGModal(cgId) {
+        this.cg.openModal(cgId);
+    }
+
+    /**
+     * CG 모달 닫기
+     */
+    closeCGModal() {
+        this.cg.closeModal();
+    }
+
+    /**
+     * BGM 토글
+     * @param {string} id - BGM ID
+     * @param {string} file - 파일 경로
+     */
+    toggleBgm(id, file) {
+        this.music.toggle(id, file);
+        this.currentBgm = this.music.currentBgmId;
+    }
+
+    // =========================================================================
     // 팝업 관련 메서드
     // =========================================================================
 
@@ -64,7 +160,7 @@ class GalleryUI {
      * 
      * @param {Object} options - 팝업 옵션
      * @param {string} options.title - 팝업 제목
-     * @param {string} options.message - 해금 조건 설명 (개행문자 \n 지원)
+     * @param {string} options.message - 해금 조건 설명 (HTML 지원)
      * @param {string} options.icon - 팝업 상단에 표시되는 이모지
      */
     showUnlockPopup(options) {
@@ -76,9 +172,11 @@ class GalleryUI {
         const popup = document.createElement('div');
         popup.id = 'unlock-condition-popup';
         popup.className = 'unlock-popup-overlay';
-        popup.onclick = (e) => {
+
+        // 배경 클릭 시 닫기
+        popup.addEventListener('click', (e) => {
             if (e.target === popup) this.closeUnlockPopup();
-        };
+        });
 
         const okText = this.lang === 'ko' ? '확인' : 'OK';
 
@@ -87,11 +185,14 @@ class GalleryUI {
                 <div class="unlock-popup-icon">${options.icon}</div>
                 <h3 class="unlock-popup-title">${options.title}</h3>
                 <p class="unlock-popup-message">${options.message.replace(/\\n/g, '<br>')}</p>
-                <button class="unlock-popup-btn" onclick="gallery.ui.closeUnlockPopup()">
+                <button class="unlock-popup-btn" id="unlock-popup-ok-btn">
                     ${okText}
                 </button>
             </div>
         `;
+
+        // 확인 버튼 이벤트
+        popup.querySelector('#unlock-popup-ok-btn').addEventListener('click', () => this.closeUnlockPopup());
 
         document.body.appendChild(popup);
 
@@ -120,7 +221,8 @@ class GalleryUI {
      * @param {number} requiredAffinity - 해금에 필요한 호감도
      */
     showExpressionLockPopup(charName, exprName, requiredAffinity) {
-        const currentAffinity = this.progress.getAffinity(this.currentCharacter);
+        const charId = this.currentCharacter || this.character.currentCharacter;
+        const currentAffinity = this.progress.getAffinity(charId);
 
         this.showUnlockPopup({
             title: this.lang === 'ko' ? '표정 미해금' : 'Expression Locked',
@@ -137,8 +239,9 @@ class GalleryUI {
      * @param {string} charName - 캐릭터 이름
      */
     showBikiniLockPopup(charName) {
-        const currentAffinity = this.progress.getAffinity(this.currentCharacter);
-        const freeTalkCount = this.progress.getFreeTalkCount(this.currentCharacter);
+        const charId = this.currentCharacter || this.character.currentCharacter;
+        const currentAffinity = this.progress.getAffinity(charId);
+        const freeTalkCount = this.progress.getFreeTalkCount(charId);
 
         const affinityStatus = currentAffinity >= 100 ? '✅' : '❌';
         const talkStatus = freeTalkCount >= 100 ? '✅' : '❌';
@@ -177,7 +280,8 @@ class GalleryUI {
      * @param {string} charName - 캐릭터 이름
      */
     showStatLockPopup(statType, charName) {
-        const currentAffinity = this.progress.getAffinity(this.currentCharacter);
+        const charId = this.currentCharacter || this.character.currentCharacter;
+        const currentAffinity = this.progress.getAffinity(charId);
 
         if (statType === 'weight') {
             this.showUnlockPopup({
@@ -198,10 +302,20 @@ class GalleryUI {
         }
     }
 
+    // =========================================================================
+    // 리소스 정리
+    // =========================================================================
+
     /**
      * 오디오 정리 (페이지 떠나기 전 호출)
      */
     cleanup() {
+        // 음악 렌더러 정리
+        if (this.music) {
+            this.music.cleanup();
+        }
+
+        // 하위 호환성: 기존 속성 정리
         if (this.bgmAudio) {
             this.bgmAudio.pause();
             this.bgmAudio = null;

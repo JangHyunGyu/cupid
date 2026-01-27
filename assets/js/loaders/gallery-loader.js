@@ -26,12 +26,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const version = '2.2.0';
 
     const scripts = [
+        // 1. 데이터 및 진행도 (의존성 없음)
         'gallery-data.js',
         'gallery-progress.js',
-        'gallery-ui-core.js',
+
+        // 2. 서브 렌더러 (GalleryUI에서 사용)
         'gallery-ui-character.js',
         'gallery-ui-cg.js',
         'gallery-ui-music.js',
+
+        // 3. UI 코어 (서브 렌더러 의존)
+        'gallery-ui-core.js',
+
+        // 4. 메인 컨트롤러 (UI 의존)
         'gallery.js'
     ];
 

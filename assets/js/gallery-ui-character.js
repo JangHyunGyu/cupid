@@ -1,235 +1,356 @@
 /**
  * ============================================================================
- * GalleryUI - 캐릭터 갤러리 확장
+ * CharacterRenderer - 캐릭터 갤러리 렌더러
  * ============================================================================
  * 
  * 캐릭터 그리드 렌더링 및 캐릭터 상세 모달 기능을 담당합니다.
- * GalleryUI 클래스의 prototype에 메서드를 추가하는 방식으로 확장합니다.
- */
-
-// =========================================================================
-// 캐릭터 갤러리 렌더링
-// =========================================================================
-
-/**
- * 캐릭터 그리드 렌더링
+ * GalleryUI에서 Composition으로 주입받아 사용합니다.
  * 
- * 해금 단계:
- * 1. met (만남): 게임에서 캐릭터를 만난 적 있으면 카드 표시
- * 2. 표정 해금: 호감도에 따라 개별 표정 해금
- * 3. 소개/몸무게: 호감도 80 이상에서 해금
- * 4. 신체사이즈: 호감도 100에서 해금
+ * 의존성:
+ *   - GalleryData: 캐릭터 데이터 조회
+ *   - GalleryProgress: 해금 상태 확인
+ *   - GalleryUI (parent): 팝업 표시 기능
  */
-GalleryUI.prototype.renderCharacters = function () {
-    const grid = document.getElementById('character-grid');
-    if (!grid) return;
+class CharacterRenderer {
+    /**
+     * CharacterRenderer 생성자
+     * 
+     * @param {GalleryUI} ui - 부모 GalleryUI 인스턴스
+     */
+    constructor(ui) {
+        /** @type {GalleryUI} 부모 UI 인스턴스 */
+        this.ui = ui;
 
-    const characters = GalleryData.getAllCharacters(this.lang);
-    let html = '';
+        /** @type {HTMLElement|null} 캐릭터 그리드 컨테이너 */
+        this.gridEl = null;
 
-    Object.values(characters).forEach(char => {
-        const met = this.progress.isMet(char.id);
-        const expressionCount = char.expressions.length;
+        /** @type {HTMLElement|null} 캐릭터 모달 요소 */
+        this.modalEl = null;
 
-        html += `
-            <div class="character-card ${met ? '' : 'not-met'}" 
-                 onclick="gallery.ui.handleCharacterClick('${char.id}')">
-                
-                <div class="card-image">
-                    <img src="assets/images/characters/${char.id}_normal.png" alt="${met ? char.name : '???'}" class="${met ? '' : 'silhouette'}">
-                </div>
-                
-                <div class="card-info">
-                    <h3>${met ? char.name : '???'}</h3>
-                    <p>${met ? char.title : (this.lang === 'ko' ? '아직 만나지 못함' : 'Not yet met')}</p>
-                    ${met ? `<span class="expression-count">${this.lang === 'ko' ? '표정' : 'Expressions'} ${expressionCount}</span>` : ''}
-                </div>
-            </div>
-        `;
-    });
+        /** @type {string|null} 현재 선택된 캐릭터 ID */
+        this.currentCharacter = null;
 
-    grid.innerHTML = html;
-};
-
-/**
- * 캐릭터 카드 클릭 핸들러
- * 
- * @param {string} charId - 클릭한 캐릭터 ID
- */
-GalleryUI.prototype.handleCharacterClick = function (charId) {
-    const met = this.progress.isMet(charId);
-
-    if (!met) {
-        this.showUnlockPopup({
-            title: this.lang === 'ko' ? '캐릭터 미발견' : 'Character Not Found',
-            message: this.lang === 'ko'
-                ? '아직 이 캐릭터를 만나지 못했습니다.\n게임을 진행하여 캐릭터를 만나보세요!'
-                : 'You haven\'t met this character yet.\nPlay the game to meet them!',
-            icon: '❓'
-        });
-    } else {
-        this.openCharacterModal(charId);
-    }
-};
-
-// =========================================================================
-// 캐릭터 상세 모달
-// =========================================================================
-
-/**
- * 캐릭터 상세 모달 열기
- * 
- * @param {string} charId - 표시할 캐릭터 ID
- */
-GalleryUI.prototype.openCharacterModal = function (charId) {
-    this.currentCharacter = charId;
-    this.currentExpression = 'normal';
-
-    const char = GalleryData.getCharacter(this.lang, charId);
-    const modal = document.getElementById('character-modal');
-    const affinity = this.progress.getAffinity(charId);
-
-    document.getElementById('modal-char-name').textContent = char.name;
-    document.getElementById('modal-char-title').textContent = char.title;
-
-    // 소개 표시
-    const descContainer = document.getElementById('modal-char-desc');
-    if (affinity >= 80) {
-        descContainer.innerHTML = char.description;
-    } else {
-        const moreBtn = this.lang === 'ko' ? '소개 더 보기' : 'Read More';
-        descContainer.innerHTML = `${char.shortDescription} <button class="desc-more-btn" onclick="gallery.ui.showDescriptionLockPopup('${charId}')">${moreBtn}</button>`;
+        /** @type {string} 현재 선택된 표정 */
+        this.currentExpression = 'normal';
     }
 
-    this._updateCharacterImage();
-    this._renderExpressionButtons(char);
-    this._renderCharacterStats(char);
+    /**
+     * 초기화 - DOM 요소 캐싱 및 이벤트 위임 설정
+     */
+    init() {
+        this.gridEl = document.getElementById('character-grid');
+        this.modalEl = document.getElementById('character-modal');
 
-    modal.classList.add('active');
-};
+        // 그리드 이벤트 위임
+        if (this.gridEl) {
+            this.gridEl.addEventListener('click', (e) => this._handleGridClick(e));
+        }
 
-/**
- * 캐릭터 상세 모달 닫기
- */
-GalleryUI.prototype.closeCharacterModal = function () {
-    document.getElementById('character-modal').classList.remove('active');
-    this.currentCharacter = null;
-};
+        // 모달 내부 이벤트 위임
+        if (this.modalEl) {
+            this.modalEl.addEventListener('click', (e) => this._handleModalClick(e));
+        }
+    }
 
-/**
- * 캐릭터 이미지 업데이트 (내부 메서드)
- * @private
- */
-GalleryUI.prototype._updateCharacterImage = function () {
-    const img = document.getElementById('modal-char-image');
-    img.src = `assets/images/characters/${this.currentCharacter}_${this.currentExpression}.png`;
-};
+    /**
+     * 그리드 클릭 이벤트 핸들러
+     * @private
+     */
+    _handleGridClick(e) {
+        const card = e.target.closest('.character-card');
+        if (!card) return;
 
-/**
- * 표정 변경
- * 
- * @param {string} expr - 변경할 표정 코드
- */
-GalleryUI.prototype.changeExpression = function (expr) {
-    this.currentExpression = expr;
-    this._updateCharacterImage();
+        const charId = card.dataset.charId;
+        if (!charId) return;
 
-    document.querySelectorAll('.expression-btn').forEach(btn => {
-        const btnText = btn.textContent.trim();
-        const exprName = GalleryData.getExpressionName(this.lang, expr);
-        btn.classList.toggle('active', btnText === exprName);
-    });
-};
+        this._handleCharacterClick(charId);
+    }
 
-/**
- * 표정 선택 버튼 렌더링 (내부 메서드)
- * @private
- * @param {Object} char - 캐릭터 데이터 객체
- */
-GalleryUI.prototype._renderExpressionButtons = function (char) {
-    const container = document.getElementById('expression-buttons');
-    const totalExpressions = char.expressions.length;
-    let html = '';
+    /**
+     * 모달 내부 클릭 이벤트 핸들러
+     * @private
+     */
+    _handleModalClick(e) {
+        const target = e.target;
 
-    char.expressions.forEach((expr, index) => {
-        const unlocked = this.progress.isExpressionUnlocked(char.id, index, totalExpressions, expr);
-        const exprName = GalleryData.getExpressionName(this.lang, expr);
+        // 표정 버튼 클릭
+        const exprBtn = target.closest('.expression-btn');
+        if (exprBtn) {
+            const expr = exprBtn.dataset.expr;
+            const isLocked = exprBtn.classList.contains('locked');
 
-        if (unlocked) {
+            if (isLocked) {
+                const isBikini = exprBtn.classList.contains('special');
+                const charName = exprBtn.dataset.charName;
+                const exprName = exprBtn.dataset.exprName;
+                const requiredAffinity = parseInt(exprBtn.dataset.requiredAffinity) || 0;
+
+                if (isBikini) {
+                    this.ui.showBikiniLockPopup(charName);
+                } else {
+                    this.ui.showExpressionLockPopup(charName, exprName, requiredAffinity);
+                }
+            } else if (expr) {
+                this.changeExpression(expr);
+            }
+            return;
+        }
+
+        // 더보기 버튼 클릭
+        const descBtn = target.closest('.desc-more-btn');
+        if (descBtn) {
+            const charId = descBtn.dataset.charId;
+            if (charId) this.ui.showDescriptionLockPopup(charId);
+            return;
+        }
+
+        // 잠긴 스탯 클릭
+        const lockedStat = target.closest('.locked-stat');
+        if (lockedStat) {
+            const statType = lockedStat.dataset.statType;
+            const charName = lockedStat.dataset.charName;
+            if (statType && charName) this.ui.showStatLockPopup(statType, charName);
+            return;
+        }
+
+        // 닫기 버튼 클릭
+        if (target.closest('.modal-close')) {
+            this.closeModal();
+            return;
+        }
+
+        // 모달 배경 클릭 시 닫기
+        if (target === this.modalEl) {
+            this.closeModal();
+        }
+    }
+
+    /**
+     * 캐릭터 그리드 렌더링
+     */
+    render() {
+        if (!this.gridEl) {
+            this.gridEl = document.getElementById('character-grid');
+            if (!this.gridEl) return;
+            this.gridEl.addEventListener('click', (e) => this._handleGridClick(e));
+        }
+
+        const characters = GalleryData.getAllCharacters(this.ui.lang);
+        let html = '';
+
+        Object.values(characters).forEach(char => {
+            const met = this.ui.progress.isMet(char.id);
+            const expressionCount = char.expressions.length;
+
+            // data 속성으로 ID 전달 (인라인 onclick 제거)
             html += `
-                <button class="expression-btn ${expr === this.currentExpression ? 'active' : ''}"
-                        onclick="gallery.ui.changeExpression('${expr}')">
-                    ${exprName}
-                </button>
+                <div class="character-card ${met ? '' : 'not-met'}" data-char-id="${char.id}">
+                    <div class="card-image">
+                        <img src="assets/images/characters/${char.id}_normal.png" 
+                             alt="${met ? char.name : '???'}" 
+                             class="${met ? '' : 'silhouette'}">
+                    </div>
+                    <div class="card-info">
+                        <h3>${met ? char.name : '???'}</h3>
+                        <p>${met ? char.title : (this.ui.lang === 'ko' ? '아직 만나지 못함' : 'Not yet met')}</p>
+                        ${met ? `<span class="expression-count">${this.ui.lang === 'ko' ? '표정' : 'Expressions'} ${expressionCount}</span>` : ''}
+                    </div>
+                </div>
             `;
+        });
+
+        this.gridEl.innerHTML = html;
+    }
+
+    /**
+     * 캐릭터 카드 클릭 핸들러
+     * @private
+     * @param {string} charId - 캐릭터 ID
+     */
+    _handleCharacterClick(charId) {
+        const met = this.ui.progress.isMet(charId);
+
+        if (!met) {
+            this.ui.showUnlockPopup({
+                title: this.ui.lang === 'ko' ? '캐릭터 미발견' : 'Character Not Found',
+                message: this.ui.lang === 'ko'
+                    ? '아직 이 캐릭터를 만나지 못했습니다.<br>게임을 진행하여 캐릭터를 만나보세요!'
+                    : 'You haven\'t met this character yet.<br>Play the game to meet them!',
+                icon: '❓'
+            });
         } else {
-            if (expr === 'bikini') {
+            this.openModal(charId);
+        }
+    }
+
+    /**
+     * 캐릭터 상세 모달 열기
+     * @param {string} charId - 캐릭터 ID
+     */
+    openModal(charId) {
+        this.currentCharacter = charId;
+        this.currentExpression = 'normal';
+
+        if (!this.modalEl) {
+            this.modalEl = document.getElementById('character-modal');
+            if (this.modalEl) {
+                this.modalEl.addEventListener('click', (e) => this._handleModalClick(e));
+            }
+        }
+
+        const char = GalleryData.getCharacter(this.ui.lang, charId);
+        if (!char || !this.modalEl) return;
+
+        const affinity = this.ui.progress.getAffinity(charId);
+
+        document.getElementById('modal-char-name').textContent = char.name;
+        document.getElementById('modal-char-title').textContent = char.title;
+
+        // 소개 표시
+        const descContainer = document.getElementById('modal-char-desc');
+        if (affinity >= 80) {
+            descContainer.innerHTML = char.description;
+        } else {
+            const moreBtn = this.ui.lang === 'ko' ? '소개 더 보기' : 'Read More';
+            descContainer.innerHTML = `${char.shortDescription} <button class="desc-more-btn" data-char-id="${charId}">${moreBtn}</button>`;
+        }
+
+        this._updateImage();
+        this._renderExpressionButtons(char);
+        this._renderStats(char);
+
+        this.modalEl.classList.add('active');
+    }
+
+    /**
+     * 캐릭터 모달 닫기
+     */
+    closeModal() {
+        if (this.modalEl) {
+            this.modalEl.classList.remove('active');
+        }
+        this.currentCharacter = null;
+    }
+
+    /**
+     * 캐릭터 이미지 업데이트
+     * @private
+     */
+    _updateImage() {
+        const img = document.getElementById('modal-char-image');
+        if (img && this.currentCharacter) {
+            img.src = `assets/images/characters/${this.currentCharacter}_${this.currentExpression}.png`;
+        }
+    }
+
+    /**
+     * 표정 변경
+     * @param {string} expr - 표정 코드
+     */
+    changeExpression(expr) {
+        this.currentExpression = expr;
+        this._updateImage();
+
+        // 활성 버튼 업데이트
+        if (this.modalEl) {
+            this.modalEl.querySelectorAll('.expression-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.expr === expr);
+            });
+        }
+    }
+
+    /**
+     * 표정 버튼 렌더링
+     * @private
+     * @param {Object} char - 캐릭터 데이터
+     */
+    _renderExpressionButtons(char) {
+        const container = document.getElementById('expression-buttons');
+        if (!container) return;
+
+        const totalExpressions = char.expressions.length;
+        let html = '';
+
+        char.expressions.forEach((expr, index) => {
+            const unlocked = this.ui.progress.isExpressionUnlocked(char.id, index, totalExpressions, expr);
+            const exprName = GalleryData.getExpressionName(this.ui.lang, expr);
+
+            if (unlocked) {
                 html += `
-                    <button class="expression-btn locked special"
-                            onclick="gallery.ui.showBikiniLockPopup('${char.name}')">
-                        💎 ${exprName}
+                    <button class="expression-btn ${expr === this.currentExpression ? 'active' : ''}"
+                            data-expr="${expr}">
+                        ${exprName}
                     </button>
                 `;
             } else {
-                const requiredAffinity = this.progress.getExpressionRequirement(index, totalExpressions);
+                const isBikini = expr === 'bikini';
+                const requiredAffinity = this.ui.progress.getExpressionRequirement(index, totalExpressions);
+
                 html += `
-                    <button class="expression-btn locked"
-                            onclick="gallery.ui.showExpressionLockPopup('${char.name}', '${exprName}', ${requiredAffinity})">
-                        🔒 ${exprName}
+                    <button class="expression-btn locked ${isBikini ? 'special' : ''}"
+                            data-char-name="${char.name}"
+                            data-expr-name="${exprName}"
+                            data-required-affinity="${requiredAffinity}">
+                        ${isBikini ? '💎' : '🔒'} ${exprName}
                     </button>
                 `;
             }
-        }
-    });
+        });
 
-    container.innerHTML = html;
-};
+        container.innerHTML = html;
+    }
 
-/**
- * 캐릭터 프로필 정보 렌더링 (내부 메서드)
- * @private
- * @param {Object} char - 캐릭터 데이터 객체
- */
-GalleryUI.prototype._renderCharacterStats = function (char) {
-    const container = document.getElementById('char-stats');
-    const affinity = this.progress.getAffinity(char.id);
+    /**
+     * 캐릭터 프로필 정보 렌더링
+     * @private
+     * @param {Object} char - 캐릭터 데이터
+     */
+    _renderStats(char) {
+        const container = document.getElementById('char-stats');
+        if (!container) return;
 
-    const labels = this.lang === 'ko' ?
-        { age: '나이', birthday: '생일', height: '키', weight: '몸무게', bust: '신체사이즈', hobby: '취미' } :
-        { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Body Size', hobby: 'Hobby' };
+        const affinity = this.ui.progress.getAffinity(char.id);
 
-    const lockText = '🔒';
+        const labels = this.ui.lang === 'ko' ?
+            { age: '나이', birthday: '생일', height: '키', weight: '몸무게', bust: '신체사이즈', hobby: '취미' } :
+            { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Body Size', hobby: 'Hobby' };
 
-    const weightValue = affinity >= 80 ? char.weight :
-        `<span class="locked-stat" onclick="gallery.ui.showStatLockPopup('weight', '${char.name}')">${lockText}</span>`;
+        const lockText = '🔒';
 
-    const bustValue = affinity >= 100 ? char.bust :
-        `<span class="locked-stat" onclick="gallery.ui.showStatLockPopup('bust', '${char.name}')">${lockText}</span>`;
+        const weightValue = affinity >= 80 ? char.weight :
+            `<span class="locked-stat" data-stat-type="weight" data-char-name="${char.name}">${lockText}</span>`;
 
-    container.innerHTML = `
-        <div class="stat-item">
-            <div class="stat-label">${labels.age}</div>
-            <div class="stat-value">${char.age}</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-label">${labels.birthday}</div>
-            <div class="stat-value">${char.birthday}</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-label">${labels.height}</div>
-            <div class="stat-value">${char.height}</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-label">${labels.weight}</div>
-            <div class="stat-value">${weightValue}</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-label">${labels.bust}</div>
-            <div class="stat-value">${bustValue}</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-label">${labels.hobby}</div>
-            <div class="stat-value">${char.hobby}</div>
-        </div>
-    `;
-};
+        const bustValue = affinity >= 100 ? char.bust :
+            `<span class="locked-stat" data-stat-type="bust" data-char-name="${char.name}">${lockText}</span>`;
+
+        container.innerHTML = `
+            <div class="stat-item">
+                <div class="stat-label">${labels.age}</div>
+                <div class="stat-value">${char.age}</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">${labels.birthday}</div>
+                <div class="stat-value">${char.birthday}</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">${labels.height}</div>
+                <div class="stat-value">${char.height}</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">${labels.weight}</div>
+                <div class="stat-value">${weightValue}</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">${labels.bust}</div>
+                <div class="stat-value">${bustValue}</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">${labels.hobby}</div>
+                <div class="stat-value">${char.hobby}</div>
+            </div>
+        `;
+    }
+}
+
+// 전역 접근을 위해 window에 노출
+window.CharacterRenderer = CharacterRenderer;
