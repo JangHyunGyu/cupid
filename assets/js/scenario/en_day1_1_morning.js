@@ -1,10 +1,71 @@
-﻿if (typeof SCENARIO === 'undefined') {
+﻿/**
+ * ============================================================================
+ * CUPID - Day 1 Morning Scenario (English Version)
+ * ============================================================================
+ * 
+ *  파일 정보
+ * ----------------------------------------------------------------------------
+ * 파일명: en_day1_1_morning.js
+ * 언어: 영어 (English)
+ * 일차: Day 1 (1일차)
+ * 시간대: Morning (오전)
+ * 
+ *  시나리오 개요
+ * ----------------------------------------------------------------------------
+ * 전학 첫날의 설레는 등교 상황을 다룹니다. 교문 앞에서 만난 전교 회장 서연과의 
+ * 첫 만남, 주인공의 이름 입력, 복도에서의 자유 대화(Free Talk), 그리고 담임 선생님과의 
+ * 만남 및 학급에서의 공식 인사 과정을 영어로 제공합니다.
+ * 
+ *  주요 이벤트
+ * ----------------------------------------------------------------------------
+ * 1. 교문 도착 및 이름 입력 - 플레이어의 이름을 시스템에 저장
+ * 2. 서연과의 첫 만남 (Entrance) - 학생회장으로서 전학생을 안내하는 서연과의 조우
+ * 3. 복도 대화 (Free Talk) - 서연과 복도를 걸으며 나누는 일상 대화 및 호감도 형성
+ * 4. 교실 입장 및 교사 조우 - 담임 선생님과의 첫 대화 및 학급 소개 전 대기
+ * 5. 공식 자기소개 - 학급 친구들 앞에서 성격(personality) 플래그를 결정하는 선언
+ * 
+ *  조건 플래그 설명 (Condition Flags)
+ * ----------------------------------------------------------------------------
+ * met_seoyeon          : 서연과 이미 구면인지 확인
+ * knows_name_seoyeon   : 서연의 이름을 알고 있는지 확인
+ * met_teacher          : 담임 선생님과 이미 구면인지 확인 (교실 씬 연출)
+ * knows_name_teacher   : 담임 선생님의 이름을 알고 있는지 확인
+ * 
+ *  설정 플래그 설명 (Set Flags)
+ * ----------------------------------------------------------------------------
+ * met_seoyeon          : 서연과 만났음을 기록
+ * knows_name_seoyeon   : 서연의 이름을 알게 됨
+ * met_teacher          : 담임 선생님과 만났음을 기록
+ * knows_name_teacher   : 담임 선생님의 이름을 알게 됨
+ * personality_active   : 활달한 성격으로 자기소개함
+ * personality_quiet    : 차분한 성격으로 자기소개함
+ * personality_study    : 공부에 집중하는 성격으로 자기소개함
+ * 
+ *  호감도 변화 (Stats Changes)
+ * ----------------------------------------------------------------------------
+ * 서연(Seoyeon)과 담임 선생님(Teacher)의 호감도가 선택지에 따라 크게 변동
+ * 
+ *  특이 사항
+ * ----------------------------------------------------------------------------
+ * - type: "input": 플레이어의 이름 입력을 위한 특수 씬 타입 활용
+ * - type: "free_talk": 서연/선생님과의 유연한 대담을 위한 AI 모듈 활용
+ * 
+ * ============================================================================
+ */
+
+// SCENARIO 전역 객체 초기화
+if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
+
+// Day 1 시나리오 그룹 초기화
 if (!SCENARIO[1]) {
     SCENARIO[1] = {};
 }
 
+/**
+ * [Day 1 - Morning] 씬 데이터 정의
+ */
 Object.assign(SCENARIO[1], {
     "start": {
         name: "Me",
@@ -170,8 +231,8 @@ Object.assign(SCENARIO[1], {
         text: "(Before I knew it, chatting with Seoyeon has led us to the school tour. Time flies so fast... It's fun being with her.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { 
-                text: "The school is nice, but it looks even better because of the person showing me around.", 
+            {
+                text: "The school is nice, but it looks even better because of the person showing me around.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_flatter_high" },
@@ -179,8 +240,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_flatter_low" }
                 ]
             },
-            { 
-                text: "Seoyeon... You're like a goddess. Just hearing your voice heals me.", 
+            {
+                text: "Seoyeon... You're like a goddess. Just hearing your voice heals me.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_trap_high" },
@@ -188,8 +249,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_trap_low" }
                 ]
             },
-            { 
-                text: "(Pretend to listen to her explanation while sneaking glances at her profile.)", 
+            {
+                text: "(Pretend to listen to her explanation while sneaking glances at her profile.)",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
@@ -204,8 +265,8 @@ Object.assign(SCENARIO[1], {
         text: "(Seoyeon's expression doesn't look good. I must have made some mistake during our conversation. She started the school tour with a cold attitude.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { 
-                text: "The school is really lively. Do you do any club activities, Seoyeon?", 
+            {
+                text: "The school is really lively. Do you do any club activities, Seoyeon?",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_club_high" },
@@ -213,8 +274,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_club_low" }
                 ]
             },
-            { 
-                text: "The facilities are nice, but it looks even better because of the person showing me around.", 
+            {
+                text: "The facilities are nice, but it looks even better because of the person showing me around.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_flatter_high" },
@@ -222,8 +283,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_flatter_low" }
                 ]
             },
-            { 
-                text: "Oh my, Seoyeon... You're like a goddess. Just hearing your voice makes me feel like I'm in heaven.", 
+            {
+                text: "Oh my, Seoyeon... You're like a goddess. Just hearing your voice makes me feel like I'm in heaven.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_trap_high" },
@@ -231,8 +292,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_trap_low" }
                 ]
             },
-            { 
-                text: "(Quietly listen to her explanation while walking.)", 
+            {
+                text: "(Quietly listen to her explanation while walking.)",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
@@ -247,8 +308,8 @@ Object.assign(SCENARIO[1], {
         text: "(I started walking down the hallway with Seoyeon's guidance. She kindly began explaining various parts of the school.)",
         character: "assets/images/characters/seyoun_normal.png",
         choices: [
-            { 
-                text: "The school is really lively. Do you do any club activities, Seoyeon?", 
+            {
+                text: "The school is really lively. Do you do any club activities, Seoyeon?",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_club_high" },
@@ -256,8 +317,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_club_low" }
                 ]
             },
-            { 
-                text: "The facilities are nice, but it looks even better because of the person showing me around.", 
+            {
+                text: "The facilities are nice, but it looks even better because of the person showing me around.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_flatter_high" },
@@ -265,8 +326,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_flatter_low" }
                 ]
             },
-            { 
-                text: "Oh my, Seoyeon... You're like a goddess. Just hearing your voice makes me feel like I'm in heaven.", 
+            {
+                text: "Oh my, Seoyeon... You're like a goddess. Just hearing your voice makes me feel like I'm in heaven.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_trap_high" },
@@ -274,8 +335,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_trap_low" }
                 ]
             },
-            { 
-                text: "(Quietly listen to her explanation while walking.)", 
+            {
+                text: "(Quietly listen to her explanation while walking.)",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },

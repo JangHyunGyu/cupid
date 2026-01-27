@@ -1,10 +1,63 @@
-﻿if (typeof SCENARIO === 'undefined') {
+﻿/**
+ * ============================================================================
+ * CUPID - Day 1 Morning Scenario (Korean Version)
+ * ============================================================================
+ * 
+ *  파일 정보
+ * ----------------------------------------------------------------------------
+ * 파일명: ko_day1_1_morning.js
+ * 언어: 한국어 (Korean)
+ * 일차: Day 1 (1일차)
+ * 시간대: Morning (아침)
+ * 
+ *  시나리오 개요
+ * ----------------------------------------------------------------------------
+ * 주인공이 전학 온 첫날 아침의 풍경을 다룹니다.
+ * 학교 정문에서의 첫 만남(서연), 이름 입력, 그리고 교실에서의 자기소개와
+ * 담임 선생님과의 첫 대면이 포함되어 있습니다.
+ * 
+ *  주요 이벤트
+ * ----------------------------------------------------------------------------
+ * 1. 등교 및 이름 입력 - 플레이어의 이름을 결정하는 단계
+ * 2. 서연과의 만남 - 첫 번째 메인 히로인과의 조우 및 첫인상 선택
+ * 3. 복도 대화 (Free Talk) - 서연과의 첫 자유 대화 및 호감도 분기
+ * 4. 교실 입장 및 자기소개 - 담임 선생님과의 대화 및 학급 분위기 결정
+ * 
+ *  조건 플래그 설명 (Condition Flags)
+ * ----------------------------------------------------------------------------
+ * (없음 - 1일차 아침은 모든 플레이어에게 공통적으로 시작됨)
+ * 
+ *  설정 플래그 설명 (Set Flags)
+ * ----------------------------------------------------------------------------
+ * met_seoyeon          : 서연과 처음 만났을 때 설정
+ * knows_name_seoyeon   : 서연의 이름을 알게 되었을 때 설정
+ * met_teacher          : 담임 선생님과 처음 만났을 때 설정
+ * knows_name_teacher    : 담임 선생님의 이름을 알게 되었을 때 설정
+ * personality_active   : 자기소개 시 활발한 성격 선택
+ * personality_quiet    : 자기소개 시 조용한 성격 선택
+ * personality_study    : 자기소개 시 공부 위주 성격 선택
+ * 
+ *  호감도 변화 (Stats Changes)
+ * ----------------------------------------------------------------------------
+ * 서연 (Seoyeon)        : 첫인상 선택지에 따라 +10 ~ -30 변화
+ * 담임 (Teacher)        : 자유 대화 및 자기소개 답변에 따라 변화
+ * 
+ * ============================================================================
+ */
+
+// SCENARIO 전역 객체 초기화
+if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
+
+// Day 1 시나리오 그룹 초기화
 if (!SCENARIO[1]) {
     SCENARIO[1] = {};
 }
 
+/**
+ * [Day 1 - Morning] 씬 데이터 정의
+ */
 Object.assign(SCENARIO[1], {
     "start": {
         name: "나",
@@ -170,8 +223,8 @@ Object.assign(SCENARIO[1], {
         text: "(서연과 수다를 떨다 보니 학교 안내가 시작됐다. 시간이 벌써 이렇게... 그녀와 있으면 즐거워.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
-            { 
-                text: "학교도 멋지지만, 안내해주는 사람이 좋아서 더 멋져 보여.", 
+            {
+                text: "학교도 멋지지만, 안내해주는 사람이 좋아서 더 멋져 보여.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_flatter_high" },
@@ -179,8 +232,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_flatter_low" }
                 ]
             },
-            { 
-                text: "서연아... 넌 정말 여신 같아. 목소리만 들어도 힐링 된다니까.", 
+            {
+                text: "서연아... 넌 정말 여신 같아. 목소리만 들어도 힐링 된다니까.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_trap_high" },
@@ -188,8 +241,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_trap_low" }
                 ]
             },
-            { 
-                text: "(설명을 듣는 척하며 그녀의 옆모습을 살짝 훔쳐본다.)", 
+            {
+                text: "(설명을 듣는 척하며 그녀의 옆모습을 살짝 훔쳐본다.)",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
@@ -204,8 +257,8 @@ Object.assign(SCENARIO[1], {
         text: "(서연이의 표정이 좋지 않다. 대화 도중 내가 무언가 실수를 한 모양이다. 그녀는 차가운 태도로 학교 안내를 시작했다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { 
-                text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", 
+            {
+                text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_club_high" },
@@ -213,8 +266,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_club_low" }
                 ]
             },
-            { 
-                text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", 
+            {
+                text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_flatter_high" },
@@ -222,8 +275,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_flatter_low" }
                 ]
             },
-            { 
-                text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", 
+            {
+                text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_trap_high" },
@@ -231,8 +284,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_trap_low" }
                 ]
             },
-            { 
-                text: "(조용히 그녀의 설명을 경청하며 걷는다.)", 
+            {
+                text: "(조용히 그녀의 설명을 경청하며 걷는다.)",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
@@ -247,8 +300,8 @@ Object.assign(SCENARIO[1], {
         text: "(서연이의 안내를 받으며 복도를 걷기 시작했다. 그녀는 학교 곳곳을 친절하게 설명해주기 시작했다.)",
         character: "assets/images/characters/seyoun_normal.png",
         choices: [
-            { 
-                text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?", 
+            {
+                text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_club_high" },
@@ -256,8 +309,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_club_low" }
                 ]
             },
-            { 
-                text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.", 
+            {
+                text: "시설도 좋지만 안내해주는 사람이 좋아서 더 멋져 보여.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_flatter_high" },
@@ -265,8 +318,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_flatter_low" }
                 ]
             },
-            { 
-                text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.", 
+            {
+                text: "세상에, 서연아... 넌 정말 여신 같아. 네 목소리만 들어도 천국에 온 것 같아.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_trap_high" },
@@ -274,8 +327,8 @@ Object.assign(SCENARIO[1], {
                     { minAffinity: -999, next: "hallway_talk_trap_low" }
                 ]
             },
-            { 
-                text: "(조용히 그녀의 설명을 경청하며 걷는다.)", 
+            {
+                text: "(조용히 그녀의 설명을 경청하며 걷는다.)",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
