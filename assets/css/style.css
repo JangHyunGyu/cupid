@@ -347,19 +347,20 @@ html {
 
 /* 이미지 업로드 버튼 */
 #upload-image-btn {
-    background: transparent;
-    border: 1px solid #ff69b4;
+    background: #ff69b4 !important;
+    border: none;
     border-radius: 50%;
     width: 38px;
     height: 38px;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
-    color: #ff69b4;
+    color: white !important;
     cursor: pointer;
     transition: all 0.2s;
     padding: 0;
     flex-shrink: 0;
+    z-index: 10;
 }
 
 #upload-image-btn svg {
