@@ -32,17 +32,16 @@
     <title>Cupid - 미연시 게임</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-05YM7K3VX9"></script>
-    <script src="assets/js/ga.js?v=1.0.0"></script>
+    <!-- ga.js, sound.js loaded by game-loader.js -->
     <!-- iOS 전용 설정 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="assets/images/icon.png">
 
-    <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=2.2.0">
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
-    <script src="assets/js/sound.js?v=1.0.0"></script>
-    <script src="assets/js/browser-check.js?v=1.0.0" defer></script>
+    <script src="assets/js/browser-check.js?v=2.2.0" defer></script>
 </head>
 
 <body>
@@ -182,28 +181,8 @@
         </div>
     </div>
 
-    <!-- Day 1 Scenario -->
-    <script src="assets/js/scenario/ko_day1_1_morning.js?v=1.0.12"></script>
-    <script src="assets/js/scenario/ko_day1_2_lunch.js?v=1.0.12"></script>
-    <script src="assets/js/scenario/ko_day1_3_afterschool.js?v=1.0.12"></script>
-    <script src="assets/js/scenario/ko_day1_4_night.js?v=1.0.12"></script>
-
-    <!-- Day 2 Scenario -->
-    <script src="assets/js/scenario/ko_day2_1_morning.js?v=1.0.12"></script>
-    <script src="assets/js/scenario/ko_day2_2_lunch.js?v=1.0.12"></script>
-    <script src="assets/js/scenario/ko_day2_3_afterschool.js?v=1.0.12"></script>
-    <script src="assets/js/scenario/ko_day2_4_night.js?v=1.0.12"></script>
-    
-    <!-- Day 3 Scenario -->
-    <script src="assets/js/scenario/ko_day3_1_morning.js?v=1.0.12"></script>
-
-    <script src="assets/js/prompts.js?v=1.0.12"></script>
-    <!-- Gallery OOP Modules -->
-    <script src="assets/js/gallery-data.js?v=2.0.0"></script>
-    <script src="assets/js/gallery-progress.js?v=2.0.0"></script>
-    <script src="assets/js/gallery-ui.js?v=2.0.0"></script>
-    <script src="assets/js/gallery.js?v=2.0.0"></script>
-    <script src="assets/js/main.js?v=2.0.0"></script>
+    <!-- 게임 스크립트 (동적 로더) -->
+    <script src="assets/js/loaders/game-loader.js"></script>
     <script>
         window.addEventListener('load', function () {
             var wcs_script = document.createElement('script');
