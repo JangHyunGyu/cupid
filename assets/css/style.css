@@ -368,6 +368,12 @@ html {
     height: 20px;
 }
 
+/* 카메라 이모지 버튼 폰트 크기 조정 */
+#upload-image-btn {
+    font-size: 18px;
+    line-height: 1;
+}
+
 #upload-image-btn:hover {
     background: rgba(255, 105, 180, 0.1);
     transform: scale(1.05);
