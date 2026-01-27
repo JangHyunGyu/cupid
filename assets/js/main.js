@@ -1037,6 +1037,8 @@ class UIManager {
 
                 if (this.imageUploadBtn && this.imageUploadInput) {
                     obs.disconnect();
+                    // 버튼 아이콘을 카메라 이모지로 맞춤
+                    try { this.imageUploadBtn.innerHTML = '<span aria-hidden="true">📸</span>'; } catch (e) {}
                     // 요소가 생겼으면 실제 바인딩 로직을 다시 실행
                     this.bindImageUploadEvents();
                 }
@@ -1066,7 +1068,7 @@ class UIManager {
                             btn.type = 'button';
                             btn.id = 'upload-image-btn';
                             btn.title = document.documentElement.lang === 'en' ? 'Upload image' : '이미지 업로드';
-                            btn.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" fill="none" stroke="currentColor" stroke-width="2"></path><polyline points="7 10 12 5 17 10" fill="none" stroke="currentColor" stroke-width="2"></polyline><line x1="12" y1="5" x2="12" y2="15" stroke="currentColor" stroke-width="2"></line></svg>';
+                            btn.innerHTML = '<span aria-hidden="true">📸</span>';
                             container.appendChild(btn);
                             this.imageUploadBtn = btn;
                         }
@@ -1083,6 +1085,9 @@ class UIManager {
         if (chatInputWrapper && this.imageUploadBtn && this.imageUploadBtn.parentElement !== chatInputWrapper) {
             chatInputWrapper.insertBefore(this.imageUploadBtn, chatInputWrapper.firstChild);
         }
+
+        // 버튼 안의 아이콘을 카메라 이모지로 통일
+        try { this.imageUploadBtn.innerHTML = '<span aria-hidden="true">📸</span>'; } catch (e) {}
 
         this.imageUploadBtn.addEventListener('click', () => {
             if (this.chatInput && this.chatInput.disabled) return;
@@ -2152,8 +2157,10 @@ class FreeTalkSystem {
         // 이미 처리 중이면 무시 (중복 호출 방지)
         if (this.isProcessingChat) return;
 
+        const stagedImageEarly = this.uiManager.stagedImage;
         const text = this.uiManager.chatInput.value.trim();
-        if (!text || this.freeTalkTurns >= this.currentMaxTurns || this.dialogueSystem.isCurrentlyTyping()) return;
+        // 텍스트가 없고 이미지도 없으면 전송하지 않음
+        if ((!text && !stagedImageEarly) || this.freeTalkTurns >= this.currentMaxTurns || this.dialogueSystem.isCurrentlyTyping()) return;
 
         this.isProcessingChat = true;
 
