@@ -6,16 +6,20 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+    box-sizing: border-box;
+    /* 패딩과 테두리를 너비에 포함 */
 }
 
 /* 기본 문서 구조 설정 */
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
-    overflow: hidden; /* 스크롤 방지 */
+    overflow: hidden;
+    /* 스크롤 방지 */
     background-color: #000;
-    font-family: 'Pretendard', sans-serif; /* 가독성 좋은 프리텐다드 서체 사용 */
+    font-family: 'Pretendard', sans-serif;
+    /* 가독성 좋은 프리텐다드 서체 사용 */
 }
 
 /* ==========================================================================
@@ -27,8 +31,10 @@ body, html {
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 1280px; /* 고해상도 모니터에서도 16:9 비율 유지 권장 */
-    margin: 0 auto;    /* 중앙 정렬 */
+    max-width: 1280px;
+    /* 고해상도 모니터에서도 16:9 비율 유지 권장 */
+    margin: 0 auto;
+    /* 중앙 정렬 */
     background-color: #222;
     overflow: hidden;
 }
@@ -41,18 +47,23 @@ body, html {
     width: 100%;
     height: 100%;
     background-color: #333;
-    background-size: cover;     /* 화면에 꽉 차게 */
-    background-position: center; /* 가운데 정렬 */
-    transition: background-image 0.5s ease-in-out, filter 1s ease-in-out; /* 배경 전환 효과 */
+    background-size: cover;
+    /* 화면에 꽉 차게 */
+    background-position: center;
+    /* 가운데 정렬 */
+    transition: background-image 0.5s ease-in-out, filter 1s ease-in-out;
+    /* 배경 전환 효과 */
 }
 
 /* 배경 시간대별 필터 효과 */
 #background-layer.night {
-    filter: brightness(0.3) sepia(0.3) hue-rotate(210deg) saturate(0.8); /* 밤: 어둡고 푸른 톤 */
+    filter: brightness(0.3) sepia(0.3) hue-rotate(210deg) saturate(0.8);
+    /* 밤: 어둡고 푸른 톤 */
 }
 
 #background-layer.sunset {
-    filter: brightness(0.65) sepia(0.6) hue-rotate(-25deg) saturate(1.4); /* 노을: 따뜻한 오렌지 톤 */
+    filter: brightness(0.65) sepia(0.6) hue-rotate(-25deg) saturate(1.4);
+    /* 노을: 따뜻한 오렌지 톤 */
 }
 
 /* ==========================================================================
@@ -65,8 +76,10 @@ body, html {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* 화면 전체 높이를 기준으로 밑단 정렬 */
-    pointer-events: none; /* 캐릭터 이미지가 클릭을 방해하지 않도록 설정 */
+    height: 100%;
+    /* 화면 전체 높이를 기준으로 밑단 정렬 */
+    pointer-events: none;
+    /* 캐릭터 이미지가 클릭을 방해하지 않도록 설정 */
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -84,13 +97,15 @@ body, html {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* 캐릭터 발밑을 바닥에 고정 */
+    align-items: flex-end;
+    /* 캐릭터 발밑을 바닥에 고정 */
     transition: all 0.3s ease-in-out;
 }
 
 /* 캐릭터 이미지 설정 */
 .char-slot img {
-    height: 100%; /* 슬롯 높이에 꽉 차게 (비율 유지) */
+    height: 100%;
+    /* 슬롯 높이에 꽉 차게 (비율 유지) */
     width: auto;
     max-width: none;
     object-fit: contain;
@@ -111,13 +126,21 @@ body, html {
    - scale(1.005): 아주 미세하게 커지는 효과 (가슴 부푸는 연출)
 */
 @keyframes breathing {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-2px) scale(1.005); } 
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-2px) scale(1.005);
+    }
 }
 
 .char-breathing {
     animation: breathing 4s ease-in-out infinite;
-    transform-origin: bottom center; /* 캐릭터 발바닥 기준으로 애니메이션 발생 */
+    transform-origin: bottom center;
+    /* 캐릭터 발바닥 기준으로 애니메이션 발생 */
 }
 
 /* [가상 Live2D: 말하기]
@@ -126,39 +149,54 @@ body, html {
    - !important를 사용하여 기본 상태보다 우선적으로 움직임 부여
 */
 @keyframes talking-bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-2px); } 
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
 }
 
 .char-talking {
-    animation: talking-bounce 4s ease-in-out infinite !important; 
+    animation: talking-bounce 4s ease-in-out infinite !important;
 }
 
 /* 슬롯별 위치 오프셋 (1280px 기준 상대 위치) */
 #char-left {
-    transform: translateX(-80%); /* 중앙에서 왼쪽으로 이동 */
+    transform: translateX(-80%);
+    /* 중앙에서 왼쪽으로 이동 */
     z-index: 1;
 }
 
 #char-left img {
-    transform: scale(0.9); /* 좌측 캐릭터 크기 */
+    transform: scale(0.9);
+    /* 좌측 캐릭터 크기 */
     transform-origin: bottom center;
 }
 
 #char-center {
-    transform: translateX(-50%); /* 정확히 중앙 */
-    z-index: 2; /* 중앙 캐릭터를 가장 앞으로 */
+    transform: translateX(-50%);
+    /* 정확히 중앙 */
+    z-index: 2;
+    /* 중앙 캐릭터를 가장 앞으로 */
 }
 
 #char-right {
-    transform: translateX(-25%); /* 중앙에서 오른쪽으로 이동 */
-    z-index: 3; /* 오른쪽 캐릭터를 가장 앞으로 */
+    transform: translateX(-25%);
+    /* 중앙에서 오른쪽으로 이동 */
+    z-index: 3;
+    /* 오른쪽 캐릭터를 가장 앞으로 */
 }
 
 #char-right img {
-    transform: scale(0.9); /* 우측 캐릭터 크기 */
+    transform: scale(0.9);
+    /* 우측 캐릭터 크기 */
     transform-origin: bottom center;
-    mix-blend-mode: lighten; /* 겹치는 부분에서 밝은 색이 보임 */
+    mix-blend-mode: lighten;
+    /* 겹치는 부분에서 밝은 색이 보임 */
 }
 
 /* ==========================================================================
@@ -176,9 +214,11 @@ body, html {
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px;
-    padding-bottom: calc(20px + env(safe-area-inset-bottom)); /* 아이폰 노치 디자인 대응 */
-    pointer-events: none; /* UI 빈 공간 클릭 시 투과되도록 설정 */
-    z-index: 110; 
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
+    /* 아이폰 노치 디자인 대응 */
+    pointer-events: none;
+    /* UI 빈 공간 클릭 시 투과되도록 설정 */
+    z-index: 110;
 }
 
 /* 대화 텍스트 박스 */
@@ -186,35 +226,41 @@ body, html {
     position: relative;
     width: 100%;
     min-height: 150px;
-    background: rgba(0, 0, 0, 0.5); /* 반투명 검정 */
-    border: 2px solid #ff69b4;      /* 시그니처 핑크 테두리 */
+    background: rgba(0, 0, 0, 0.5);
+    /* 반투명 검정 */
+    border: 2px solid #ff69b4;
+    /* 시그니처 핑크 테두리 */
     border-radius: 10px;
     padding: 20px;
     color: #fff;
     cursor: pointer;
-    pointer-events: auto; /* 박스 내부는 클릭 가능 */
+    pointer-events: auto;
+    /* 박스 내부는 클릭 가능 */
     margin-bottom: 10px;
 }
 
 /* 캐릭터 이름 태그 */
 #name-tag {
     position: absolute;
-    top: -25px; /* 대화창 위로 걸치게 배치 */
+    top: -25px;
+    /* 대화창 위로 걸치게 배치 */
     left: 20px;
     background: #ff69b4;
     padding: 5px 15px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 1.1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* 실제 대화 내용 */
 #message {
     font-size: 1.2rem;
     line-height: 1.6;
-    word-break: keep-all; /* 단어 단위 줄바꿈으로 가독성 향상 */
-    white-space: pre-wrap; /* 줄바꿈 기호 유지 */
+    word-break: keep-all;
+    /* 단어 단위 줄바꿈으로 가독성 향상 */
+    white-space: pre-wrap;
+    /* 줄바꿈 기호 유지 */
 }
 
 /* 다음 장면 표시 화살표 */
@@ -222,13 +268,21 @@ body, html {
     position: absolute;
     bottom: 10px;
     right: 20px;
-    animation: bounce 1s infinite; /* 통통 튀는 애니메이션 */
+    animation: bounce 1s infinite;
+    /* 통통 튀는 애니메이션 */
 }
 
 /* 다음 표시 애니메이션 정의 */
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(5px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
 }
 
 /* 선택지 버튼 컨테이너 */
@@ -236,7 +290,8 @@ body, html {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 8px; /* 버튼들 사이의 간격 */
+    gap: 8px;
+    /* 버튼들 사이의 간격 */
     pointer-events: auto;
     z-index: 10;
     margin-bottom: 20px;
@@ -259,7 +314,8 @@ body, html {
 /* 선택지 버튼 호버/반응 효과 */
 .choice-btn:hover {
     background: #ff69b4;
-    transform: scale(1.02); /* 살짝 커지는 효과 */
+    transform: scale(1.02);
+    /* 살짝 커지는 효과 */
 }
 
 /* ==========================================================================
@@ -289,11 +345,79 @@ body, html {
     opacity: 0.9;
 }
 
+/* 이미지 업로드 버튼 */
+#upload-image-btn {
+    background: transparent;
+    border: 1px solid #ff69b4;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff69b4;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+#upload-image-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+#upload-image-btn:hover {
+    background: rgba(255, 105, 180, 0.1);
+    transform: scale(1.05);
+}
+
+/* 이미지 미리보기 컨테이너 */
+#image-preview-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 1px dashed #ff69b4;
+    width: auto;
+    max-width: fit-content;
+}
+
+#image-preview {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+#remove-image-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 /* 채팅 입력창 및 버튼 감싸기 */
 #chat-input-wrapper {
     display: flex;
     gap: 8px;
     margin-bottom: 8px;
+    align-items: center;
 }
 
 /* 채팅 입력란 */
@@ -324,7 +448,7 @@ body, html {
     transition: all 0.2s;
     padding: 0;
     flex-shrink: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* 전송 아이콘(SVG) */
@@ -360,7 +484,7 @@ body, html {
     transition: all 0.2s;
     padding: 0;
     flex-shrink: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #chat-skip-btn svg {
@@ -370,7 +494,8 @@ body, html {
 }
 
 #chat-skip-btn:hover {
-    background: #ff5e5e; /* 경고의 의미로 붉은 계열 호버 효과 */
+    background: #ff5e5e;
+    /* 경고의 의미로 붉은 계열 호버 효과 */
     transform: scale(1.05);
 }
 
@@ -389,8 +514,17 @@ body, html {
 }
 
 @keyframes loading-blink {
-    0%, 100% { opacity: .3; transform: scale(0.8); }
-    50% { opacity: 1; transform: scale(1.1); }
+
+    0%,
+    100% {
+        opacity: .3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
 }
 
 /* 대화창 생각중 상태 (테두리 반짝임) */
@@ -401,8 +535,17 @@ body, html {
 }
 
 @keyframes box-glow {
-    0%, 100% { border-color: #ff69b4; box-shadow: 0 0 10px rgba(255, 105, 180, 0.4); }
-    50% { border-color: #fff; box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); }
+
+    0%,
+    100% {
+        border-color: #ff69b4;
+        box-shadow: 0 0 10px rgba(255, 105, 180, 0.4);
+    }
+
+    50% {
+        border-color: #fff;
+        box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+    }
 }
 
 /* 남은 대화 횟수 표시 */
@@ -411,6 +554,22 @@ body, html {
     font-size: 0.85rem;
     text-align: right;
     font-weight: bold;
+}
+
+/* 채팅 메시지 내 이미지 스타일 */
+.chat-image {
+    display: block;
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 2px solid rgba(255, 105, 180, 0.3);
+    transition: transform 0.2s;
+}
+
+.chat-image:hover {
+    transform: scale(1.02);
 }
 
 
@@ -466,7 +625,8 @@ body, html {
 
 #game-container #settings-btn:hover {
     background: rgba(255, 105, 180, 0.3);
-    transform: rotate(30deg); /* 호버 시 살짝 회전하는 연출 */
+    transform: rotate(30deg);
+    /* 호버 시 살짝 회전하는 연출 */
 }
 
 /* ==========================================================================
@@ -481,7 +641,8 @@ body, html {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.85);
-    display: none; /* 기본 숨김 */
+    display: none;
+    /* 기본 숨김 */
     justify-content: center;
     align-items: center;
     z-index: 2000;
@@ -518,7 +679,8 @@ body, html {
 /* 세로 모드 (Portrait) 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 90%; /* 세로 화면에서 캐릭터가 너무 크지 않게 소폭 축소 */
+        height: 90%;
+        /* 세로 화면에서 캐릭터가 너무 크지 않게 소폭 축소 */
         bottom: 0;
     }
 
@@ -531,7 +693,8 @@ body, html {
     }
 
     #char-left img {
-        transform: scale(0.8); /* 모바일에서 더 작게 */
+        transform: scale(0.8);
+        /* 모바일에서 더 작게 */
     }
 
     #char-right {
@@ -539,7 +702,8 @@ body, html {
     }
 
     #char-right img {
-        transform: scale(0.8); /* 모바일에서 더 작게 */
+        transform: scale(0.8);
+        /* 모바일에서 더 작게 */
         mix-blend-mode: lighten;
     }
 
@@ -549,7 +713,8 @@ body, html {
     }
 
     #message {
-        font-size: 1.1rem; /* 모바일 가독성 대응 */
+        font-size: 1.1rem;
+        /* 모바일 가독성 대응 */
     }
 
     .choice-btn {
@@ -562,7 +727,8 @@ body, html {
 @media (max-height: 500px) and (orientation: landscape) {
     #character-layer {
         height: 100%;
-        bottom: -10%; /* 캐릭터를 조금 더 아래로 내려서 상체 위주로 노출 */
+        bottom: -10%;
+        /* 캐릭터를 조금 더 아래로 내려서 상체 위주로 노출 */
     }
 
     #dialogue-box {
@@ -587,7 +753,8 @@ body, html {
         gap: 8px;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr; /* 2열로 배치하여 세로 공간 절약 */
+        grid-template-columns: 1fr 1fr;
+        /* 2열로 배치하여 세로 공간 절약 */
         margin-bottom: 5px;
     }
 
@@ -613,7 +780,8 @@ body, html {
     opacity: 0;
     pointer-events: none;
     z-index: 100;
-    transition: opacity 3s ease-in-out; /* 천천히 암전/명전 */
+    transition: opacity 3s ease-in-out;
+    /* 천천히 암전/명전 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -658,20 +826,23 @@ body, html {
     opacity: 0.9;
     filter: blur(1px);
     transition: all 0.5s ease-in-out;
-    animation: thinking-breath 4s infinite ease-in-out; 
+    animation: thinking-breath 4s infinite ease-in-out;
 }
 
 /* 프리토킹 시 사용하는 깊은 호흡 리듬
    - 일반 호흡보다 투명도 변화(0.85 ~ 1)를 추가하여 '고민 중' 시각화
 */
 @keyframes thinking-breath {
-    0%, 100% { 
+
+    0%,
+    100% {
         opacity: 0.85;
         transform: scale(1);
     }
-    50% { 
+
+    50% {
         opacity: 1;
-        transform: scale(1.005); 
+        transform: scale(1.005);
     }
 }
 
@@ -774,8 +945,15 @@ body, html {
 }
 
 @keyframes modal-appear {
-    from { transform: scale(0.9); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .modal-content p {
@@ -873,16 +1051,18 @@ body, html {
         opacity: 0;
         transform: translateX(-50%) translateY(20px) scale(0.5);
     }
+
     20% {
         opacity: 1;
         transform: translateX(-50%) translateY(0) scale(1.2);
     }
+
     40% {
         transform: translateX(-50%) translateY(-10px) scale(1);
     }
+
     100% {
         opacity: 0;
         transform: translateX(-50%) translateY(-80px) scale(0.8);
     }
 }
-
