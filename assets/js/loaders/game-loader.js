@@ -39,7 +39,7 @@
         'scenario/ko_day2_2_lunch.js',
         'scenario/ko_day2_3_afterschool.js',
         'scenario/ko_day2_4_night.js',
-        'scenario/ko_day3_1_mornigs.js'
+        'scenario/ko_day3_1_morning.js'
     ];
 
     // 시나리오 스크립트 (영문)
