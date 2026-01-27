@@ -106,7 +106,7 @@ const REGISTERED_CG_IDS = new Set([
 function getAssetUrl(url) {
     // URL이 없으면 그대로 반환
     if (!url) return url;
-    
+
     // URL에 이미 ?가 있으면 &로 연결, 없으면 ?로 연결
     const separator = url.includes('?') ? '&' : '?';
     return `${url}${separator}v=${ASSET_VERSION}`;
@@ -153,7 +153,7 @@ class KoreanProcessor {
             { pattern: '이라고', with: '이라고', without: '라고' },   // "~이라고 했다" / "~라고 했다"
             { pattern: '라고', with: '이라고', without: '라고' },
             { pattern: '이라', with: '이라', without: '라' },          // "~이라는" / "~라는"
-            
+
             // 기본 조사
             { pattern: '은는', with: '은', without: '는' },            // 주격 보조사
             { pattern: '이가', with: '이', without: '가' },            // 주격 조사
@@ -161,7 +161,7 @@ class KoreanProcessor {
             { pattern: '이랑', with: '이랑', without: '랑' },          // "~이랑 같이" / "~랑 같이"
             { pattern: '이나', with: '이나', without: '나' },          // "~이나 마찬가지" / "~나 마찬가지"
             { pattern: '이다', with: '이다', without: '다' },          // "~이다" / "~다"
-            
+
             // 단일 글자 조사
             { pattern: '랑', with: '이랑', without: '랑' },
             { pattern: '나', with: '이나', without: '나' },
@@ -193,7 +193,7 @@ class KoreanProcessor {
     getBatchimInfo(str) {
         // 빈 문자열이면 받침 없음으로 처리
         if (!str || str.length === 0) return { hasBatchim: false, isRieul: false };
-        
+
         const lastChar = str[str.length - 1];   // 마지막 글자
         const code = lastChar.charCodeAt(0);    // 유니코드 값
 
@@ -206,7 +206,7 @@ class KoreanProcessor {
         // 받침(종성) 인덱스 계산: (유니코드 - 0xAC00) % 28
         // 0=없음, 1=ㄱ, 2=ㄲ, 3=ㄳ, 4=ㄴ, ..., 8=ㄹ, ...
         const batchimIndex = (code - 0xAC00) % 28;
-        
+
         return {
             hasBatchim: batchimIndex !== 0,  // 0이면 받침 없음
             isRieul: batchimIndex === 8       // 8이면 'ㄹ' 받침 (으로/로 처리용)
@@ -238,13 +238,13 @@ class KoreanProcessor {
         // 일반 조사 처리 - 테이블에서 매칭되는 패턴 찾기
         for (const p of this.particles) {
             if (nextChars.startsWith(p.pattern)) {
-                return { 
-                    correct: hasBatchim ? p.with : p.without, 
-                    removeLength: p.pattern.length 
+                return {
+                    correct: hasBatchim ? p.with : p.without,
+                    removeLength: p.pattern.length
                 };
             }
         }
-        
+
         // 매칭되는 조사 패턴 없음
         return null;
     }
@@ -282,7 +282,7 @@ class KoreanProcessor {
         while ((match = namePattern.exec(text)) !== null) {
             // 패턴 앞부분 복사
             result += text.substring(lastIndex, match.index);
-            
+
             // 패턴 뒤에 오는 문자들
             const afterMatch = text.substring(match.index + match[0].length);
 
@@ -344,14 +344,14 @@ class StateManager {
          * - 시나리오의 {name} 패턴이 이 값으로 치환됨
          */
         this.playerName = "주인공";
-        
+
         /** 
          * 현재 게임 내 날짜 
          * - 시나리오에서 changeDay로 변경 가능
          * - SCENARIO[currentDay]에서 해당 날짜의 씬을 검색
          */
         this.currentDay = 1;
-        
+
         /** 
          * 캐릭터별 호감도 데이터
          * - affinity: 호감도 수치 (-100 ~ 100)
@@ -366,14 +366,14 @@ class StateManager {
             Teacher: { affinity: 0 },    // 담임선생님
             Nurse: { affinity: 0 }       // 보건선생님
         };
-        
+
         /** 
          * 캐릭터별 AI 대화 기록
          * - 프리토킹에서 주고받은 대화를 저장
          * - 같은 캐릭터와 다시 대화할 때 이전 맥락을 AI에게 전달
          */
         this.chatMemories = {};
-        
+
         /** 
          * 게임 플래그들 (이벤트 발생 여부 기록)
          * - 예: { metSeoyeon: true, knowsName_Seoyeon: true, ... }
@@ -386,16 +386,16 @@ class StateManager {
      * 플레이어 이름 설정
      * @param {string} name - 새로운 이름 (1~4글자)
      */
-    setPlayerName(name) { 
-        this.playerName = name; 
+    setPlayerName(name) {
+        this.playerName = name;
     }
 
     /** 
      * 게임 내 날짜 변경
      * @param {number} day - 변경할 날짜 (1, 2, 3...)
      */
-    setDay(day) { 
-        this.currentDay = day; 
+    setDay(day) {
+        this.currentDay = day;
         console.log(`[StateManager] 날짜 변경: ${day}일차`);
     }
 
@@ -410,11 +410,11 @@ class StateManager {
      */
     changeAffinity(charKey, amount) {
         if (!this.stats[charKey]) return 0;
-        
+
         // 범위 제한: -100 ~ 100
         let newValue = Math.max(-100, Math.min(100, this.stats[charKey].affinity + amount));
         this.stats[charKey].affinity = newValue;
-        
+
         console.log(`[StateManager] ${charKey} 호감도: ${amount > 0 ? '+' : ''}${amount} → 총 ${newValue}`);
         return newValue;
     }
@@ -424,10 +424,10 @@ class StateManager {
      * @param {string} charKey - 캐릭터 키
      * @returns {number} 호감도 값 (없으면 0)
      */
-    getAffinity(charKey) { 
+    getAffinity(charKey) {
         // 🔧 || 0 대신 ?? 0 사용: 음수 호감도(-50 등)도 올바르게 반환
         // || 0은 falsy 값(-50, 0 등)을 모두 0으로 처리하는 버그 발생
-        return this.stats[charKey]?.affinity ?? 0; 
+        return this.stats[charKey]?.affinity ?? 0;
     }
 
     /** 
@@ -435,8 +435,8 @@ class StateManager {
      * @param {string} flagName - 플래그 이름 (예: "metSeoyeon")
      * @param {boolean} value - 값 (기본: true)
      */
-    setFlag(flagName, value = true) { 
-        this.flags[flagName] = value; 
+    setFlag(flagName, value = true) {
+        this.flags[flagName] = value;
         console.log(`[StateManager] 플래그: ${flagName} = ${value}`);
     }
 
@@ -445,8 +445,8 @@ class StateManager {
      * @param {string} flagName - 플래그 이름
      * @returns {boolean} 플래그 값 (없으면 false)
      */
-    getFlag(flagName) { 
-        return this.flags[flagName] || false; 
+    getFlag(flagName) {
+        return this.flags[flagName] || false;
     }
 
     /** 
@@ -544,7 +544,7 @@ class StateManager {
         if (data.stats) this.stats = data.stats;                  // 호감도 데이터 복원
         if (data.chatMemories) this.chatMemories = data.chatMemories;  // AI 대화 기록 복원
         if (data.flags) this.flags = data.flags;                  // 이벤트 플래그 복원
-        
+
         // 디버깅용 로그 - 개발자 도구 콘솔에서 확인 가능
         console.log('[StateManager] 상태 복원 완료');
     }
@@ -637,7 +637,7 @@ class SaveManager {
             gameState: gameStateData,          // 전체 게임 상태
             savedAt: Date.now()                // 저장 시각
         };
-        
+
         // JSON 문자열로 변환해서 저장
         localStorage.setItem(this.storageKey, JSON.stringify(saveData));
         console.log('[SaveManager] 저장 완료:', sceneId);
@@ -650,10 +650,10 @@ class SaveManager {
      */
     load() {
         const saved = localStorage.getItem(this.storageKey);
-        
+
         // 저장된 데이터가 없으면 null 반환
         if (!saved) return null;
-        
+
         try {
             // JSON 문자열을 객체로 변환
             return JSON.parse(saved);
@@ -668,15 +668,15 @@ class SaveManager {
      * 저장 데이터 존재 여부 확인
      * @returns {boolean} 저장된 게임이 있으면 true
      */
-    hasSave() { 
-        return localStorage.getItem(this.storageKey) !== null; 
+    hasSave() {
+        return localStorage.getItem(this.storageKey) !== null;
     }
 
     /** 
      * 저장 데이터 삭제 (새 게임 시작 시 호출)
      */
-    clear() { 
-        localStorage.removeItem(this.storageKey); 
+    clear() {
+        localStorage.removeItem(this.storageKey);
         console.log('[SaveManager] 저장 데이터 삭제됨');
     }
 }
@@ -707,12 +707,12 @@ class GalleryManager {
      */
     constructor(storageKey = 'cupid_gallery') {
         this.storageKey = storageKey;
-        
+
         /**
          * 데이터 버전 (구조 변경 시 마이그레이션용)
          */
         this.dataVersion = 2;
-        
+
         /** 
          * 캐릭터 이름 → 내부 ID 매핑 테이블
          * - 한국어/영어 이름 모두 같은 캐릭터로 인식하기 위함
@@ -739,7 +739,7 @@ class GalleryManager {
      */
     getProgress() {
         const saved = localStorage.getItem(this.storageKey);
-        
+
         // 저장된 데이터가 없으면 기본 구조 반환
         if (!saved) {
             return {
@@ -749,14 +749,14 @@ class GalleryManager {
                 bgm: { intro: { unlocked: true } }  // 인트로 BGM은 기본 해금
             };
         }
-        
+
         // 🔧 JSON.parse 에러 핸들링 추가 (데이터 손상 대비)
         try {
             const data = JSON.parse(saved);
-            
+
             // 구버전 데이터면 버전 정보 추가
             if (!data.version) data.version = this.dataVersion;
-            
+
             return data;
         } catch (e) {
             console.error('[GalleryManager] 갤러리 데이터 파싱 오류:', e);
@@ -786,17 +786,17 @@ class GalleryManager {
         // 이름을 내부 ID로 변환 (예: '서연' → 'seyoun')
         const charId = this.charIdMap[charName];
         if (!charId) return;  // 등록되지 않은 캐릭터는 무시
-        
+
         const progress = this.getProgress();
-        
+
         // 이미 만난 캐릭터면 무시
         if (progress.characters[charId]?.met) return;
-        
+
         // 캐릭터 데이터 초기화 및 만남 기록
         if (!progress.characters[charId]) progress.characters[charId] = {};
         progress.characters[charId].met = true;
         progress.characters[charId].metAt = Date.now();
-        
+
         this.saveProgress(progress);
         console.log(`[GalleryManager] 캐릭터 만남: ${charId}`);
     }
@@ -809,10 +809,10 @@ class GalleryManager {
     updateMaxAffinity(charKey, currentAffinity) {
         const charId = this.charIdMap[charKey];
         if (!charId) return;
-        
+
         const progress = this.getProgress();
         if (!progress.characters[charId]) progress.characters[charId] = {};
-        
+
         // 현재 기록된 최대 호감도보다 높을 때만 갱신
         const currentMax = progress.characters[charId].maxAffinity || 0;
         if (currentAffinity > currentMax) {
@@ -829,19 +829,19 @@ class GalleryManager {
     unlockCharacter(charKey) {
         const charId = this.charIdMap[charKey];
         if (!charId) return;
-        
+
         const progress = this.getProgress();
-        
+
         // 이미 해금됐으면 무시
         if (progress.characters[charId]?.unlocked) return;
-        
+
         // 캐릭터 데이터가 없으면 초기화
         if (!progress.characters[charId]) {
             progress.characters[charId] = { met: true, metAt: Date.now() };
         }
         progress.characters[charId].unlocked = true;
         progress.characters[charId].unlockedAt = Date.now();
-        
+
         this.saveProgress(progress);
         console.log(`[GalleryManager] 캐릭터 해금: ${charId}`);
     }
@@ -855,12 +855,12 @@ class GalleryManager {
     unlockCG(cgId) {
         // 등록된 CG인지 확인
         if (!REGISTERED_CG_IDS.has(cgId)) return;
-        
+
         const progress = this.getProgress();
-        
+
         // 이미 해금됐으면 무시
         if (progress.cg[cgId]?.unlocked) return;
-        
+
         progress.cg[cgId] = { unlocked: true, unlockedAt: Date.now() };
         this.saveProgress(progress);
         console.log(`[GalleryManager] CG 해금: ${cgId}`);
@@ -872,10 +872,10 @@ class GalleryManager {
      */
     unlockBGM(bgmId) {
         const progress = this.getProgress();
-        
+
         // 이미 해금됐으면 무시
         if (progress.bgm[bgmId]?.unlocked) return;
-        
+
         progress.bgm[bgmId] = { unlocked: true, unlockedAt: Date.now() };
         this.saveProgress(progress);
         console.log(`[GalleryManager] BGM 해금: ${bgmId}`);
@@ -885,14 +885,14 @@ class GalleryManager {
     incrementFreeTalkCount(charKey) {
         const charId = this.charIdMap[charKey];
         if (!charId) return;
-        
+
         const progress = this.getProgress();
         if (!progress.characters[charId]) progress.characters[charId] = {};
-        
+
         // 프리토킹 횟수 +1
         const newCount = (progress.characters[charId].freeTalkCount || 0) + 1;
         progress.characters[charId].freeTalkCount = newCount;
-        
+
         this.saveProgress(progress);
         console.log(`[GalleryManager] 프리토킹: ${charId} = ${newCount}회`);
     }
@@ -938,25 +938,25 @@ class UIManager {
         this.galleryManager = galleryManager;
 
         // ====== DOM 요소 캐싱 (자주 사용하는 요소들) ======
-        
+
         // 📜 대화 관련
         this.messageEl = document.getElementById('message');           // 대사 텍스트가 표시되는 영역
         this.nameTagEl = document.getElementById('name-tag');         // 캐릭터 이름 + 호감도 게이지
         this.dialogueBox = document.getElementById('dialogue-box');   // 대화창 전체 박스
         this.choiceContainer = document.getElementById('choice-container');  // 선택지 버튼들의 컨테이너
-        
+
         // 💬 채팅(프리토킹) 관련
         this.chatContainer = document.getElementById('chat-container');  // 채팅 UI 전체
         this.chatInput = document.getElementById('chat-input');          // 채팅 입력 필드
         this.chatSendBtn = document.getElementById('chat-send');         // 전송 버튼
         this.chatSkipBtn = document.getElementById('chat-skip-btn');     // 스킵 버튼
         this.turnCountEl = document.getElementById('turn-count');        // 남은 턴 수 표시
-        
+
         // ✏️ 이름 입력 관련
         this.nameInputContainer = document.getElementById('name-input-container');
         this.playerNameInput = document.getElementById('player-name-input');
         this.nameConfirmBtn = document.getElementById('name-confirm-btn');
-        
+
         // 🖼️ 배경/효과 관련
         this.bgLayer = document.getElementById('background-layer');      // 배경 이미지 레이어
         this.fadeLayer = document.getElementById('fade-layer');          // 페이드 효과 레이어
@@ -1022,7 +1022,7 @@ class UIManager {
     updateNameTag(name) {
         // 기존 내용 초기화
         this.nameTagEl.innerHTML = "";
-        
+
         // 이름이 없으면 태그 숨기고 종료
         if (!name) {
             this.nameTagEl.style.display = 'none';
@@ -1082,11 +1082,11 @@ class UIManager {
         // 게이지 바 (채워지는 부분)
         const bar = document.createElement('span');
         bar.style.cssText = 'position:absolute;height:100%;top:0;left:0;';
-        
+
         // -100~100 → 0%~100%로 변환 (0이 50% 지점)
         const percent = (affinity + 100) / 2;
         bar.style.width = percent + '%';
-        
+
         // 🎨 호감도별 색상 지정
         if (affinity >= 70) bar.style.backgroundColor = '#ff7675';      // 분홍색 💗
         else if (affinity >= 0) bar.style.backgroundColor = '#fab1a0'; // 연분홍 💕
@@ -1155,7 +1155,7 @@ class UIManager {
         return new Promise((resolve) => {
             this.modalMessage.textContent = message;
             this.customModal.style.display = 'flex';
-            
+
             // alert 모드면 취소 버튼 숨김
             this.modalCancelBtn.style.display = isAlert ? 'none' : 'inline-block';
 
@@ -1242,9 +1242,9 @@ class UIManager {
     openSettingsModal() {
         const modal = document.getElementById('settingsModal');
         if (!modal) return;
-        
+
         modal.style.display = 'flex';
-        
+
         // 호감도 표시 설정 불러오기
         const savedSetting = localStorage.getItem('showAffinity');
         document.getElementById('affinityToggle').checked = savedSetting === null ? true : savedSetting === 'true';
@@ -1252,7 +1252,7 @@ class UIManager {
         // 볼륨 설정 불러오기
         const bgmVol = localStorage.getItem('bgmVolume') || 0.5;
         const sfxVol = localStorage.getItem('sfxVolume') || 0.5;
-        
+
         document.getElementById('bgmVolume').value = bgmVol * 100;
         document.getElementById('sfxVolume').value = sfxVol * 100;
         document.getElementById('bgmVolumeVal').textContent = Math.round(bgmVol * 100) + '%';
@@ -1274,18 +1274,18 @@ class UIManager {
         // 호감도 표시 설정 저장
         const showAffinity = document.getElementById('affinityToggle').checked;
         localStorage.setItem('showAffinity', showAffinity);
-        
+
         // 볼륨 설정 저장 및 적용
         const bgmVol = document.getElementById('bgmVolume').value / 100;
         const sfxVol = document.getElementById('sfxVolume').value / 100;
-        
+
         if (window.soundManager) {
             soundManager.setBgmVolume(bgmVol);
             soundManager.setSfxVolume(sfxVol);
         }
-        
+
         this.closeSettingsModal();
-        
+
         // 호감도 표시 설정이 바뀌었을 수 있으니 이름 태그 갱신
         const scene = getSceneFn(currentSceneId);
         if (scene) this.updateNameTag(scene.name);
@@ -1323,10 +1323,10 @@ class DialogueSystem {
 
         /** 현재 타이핑 진행 중 여부 */
         this.isTyping = false;
-        
+
         /** 타이핑 스킵 요청 플래그 */
         this.skipTyping = false;
-        
+
         /** 
          * 타이핑 속도 (밀리초 단위)
          * - 30 = 한 글자당 30ms = 초당 약 33글자
@@ -1364,7 +1364,7 @@ class DialogueSystem {
      */
     updateTalkingAnimation(charName, isStarting) {
         const charSlots = this.uiManager.charSlots;
-        
+
         // 주인공이나 시스템 메시지는 애니메이션 없음
         if (!charName || charName === "나" || charName === "Me" || charName === "시스템" || charName === "System") {
             // 모든 캐릭터의 말하기 애니메이션 제거
@@ -1409,11 +1409,11 @@ class DialogueSystem {
      */
     processPlaceholders(text, charName) {
         const isEn = document.documentElement.lang === 'en';
-        
+
         // 주인공/시스템 메시지인지 확인
         const isPlayer = charName === "나" || charName === "Me" || charName === "시스템" || charName === "System";
         const charKey = charName && (this.charNameMap[charName] || charName);
-        
+
         // 이 캐릭터가 플레이어 이름을 알고 있는지 확인
         const nameKnown = charKey && this.stateManager.getFlag(`knowsName_${charKey}`);
         const defaultTitle = isEn ? "Transfer Student" : "전학생";
@@ -1459,10 +1459,10 @@ class DialogueSystem {
         for (const [key, name] of Object.entries(charNames)) {
             // 만난 적 없는 캐릭터는 건너뛰기
             if (!this.stateManager.getFlag("met" + key)) continue;
-            
+
             const affinity = this.stateManager.getAffinity(key);
             let bar = "";
-            
+
             // 호감도에 따라 하트 게이지 생성
             if (affinity >= 0) {
                 const filled = Math.min(10, Math.floor(affinity / 10));
@@ -1471,7 +1471,7 @@ class DialogueSystem {
                 const broken = Math.min(10, Math.floor(Math.abs(affinity) / 10));
                 bar = "💔".repeat(broken) + "🤍".repeat(10 - broken);
             }
-            
+
             listStr += `${name}: ${bar} (${affinity}%)\n`;
         }
 
@@ -1501,17 +1501,17 @@ class DialogueSystem {
 
         // 플레이스홀더 처리
         const processedText = this.processPlaceholders(text, charName);
-        
+
         // 말하기 애니메이션 시작
         this.updateTalkingAnimation(charName, true);
 
         return new Promise((resolve) => {
             this.isTyping = true;
             this.skipTyping = false;
-            
+
             // 스킵 버튼 비활성화 (타이핑 중 프리토킹 스킵 방지)
             if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = true;
-            
+
             // 대사창 초기화
             this.uiManager.messageEl.textContent = "";
 
@@ -1560,16 +1560,16 @@ class DialogueSystem {
      * - 대화창 클릭 시 호출됨
      * - 타이핑 중이면 즉시 완료 플래그 설정
      */
-    requestSkip() { 
-        if (this.isTyping) this.skipTyping = true; 
+    requestSkip() {
+        if (this.isTyping) this.skipTyping = true;
     }
-    
+
     /** 
      * 현재 타이핑 중인지 확인
      * @returns {boolean} 타이핑 중이면 true
      */
-    isCurrentlyTyping() { 
-        return this.isTyping; 
+    isCurrentlyTyping() {
+        return this.isTyping;
     }
 }
 
@@ -1610,22 +1610,22 @@ class FreeTalkSystem {
 
         /** 현재 프리토킹 진행 중 여부 */
         this.isFreeTalking = false;
-        
+
         /** 현재 채팅 처리 중 여부 (중복 호출 방지) */
         this.isProcessingChat = false;
-        
+
         /** 현재까지 진행한 턴 수 */
         this.freeTalkTurns = 0;
-        
+
         /** 이 대화의 최대 턴 수 */
         this.currentMaxTurns = DEFAULT_MAX_FREE_TALK_TURNS;
-        
+
         /** 
          * 대화 기록 배열
          * - OpenAI API 형식: [{role: "system", content: "..."}, {role: "user", content: "..."}, ...]
          */
         this.freeTalkHistory = [];
-        
+
         /** 현재 프리토킹 씬의 ID */
         this.currentSceneId = null;
 
@@ -1653,7 +1653,7 @@ class FreeTalkSystem {
     getGameContext(charName, isEn) {
         // FLAG_MEMORIES가 없으면 빈 문자열 반환
         if (!window.FLAG_MEMORIES) return "";
-        
+
         // 이 캐릭터와 관련된 기억 중 플래그가 true인 것만 필터링
         const memories = FLAG_MEMORIES.filter(m => {
             // 캐릭터 매칭 (한/영 모두 체크)
@@ -1721,7 +1721,7 @@ class FreeTalkSystem {
             .map(([name, desc]) => {
                 const charKey = this.charNameMap[name] || name;
                 const affinity = this.stateManager.getAffinity(charKey);
-                
+
                 // 관계 상태 텍스트 생성
                 let status = "";
                 if (this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${name}`)) {
@@ -1731,16 +1731,16 @@ class FreeTalkSystem {
                 } else if (affinity >= 50) {
                     status = isEn ? " (Suspecting they are dating the user)" : " (사용자와 사귀는 사이인지 의심함)";
                 }
-                
+
                 const affinityText = isEn ? ` (Affinity: ${affinity})` : ` (호감도: ${affinity})`;
                 return `- ${name}: ${desc}${affinityText}${status}`;
             })
             .join("\n");
 
         const header = isEn ? "\n\n[Other Characters in School & Your Awareness]:\n" : "\n\n[학교의 다른 인물들 및 당신의 인지 상태]:\n";
-        
+
         // 질투 반응 지침
-        const jealousyInstruction = isEn ? 
+        const jealousyInstruction = isEn ?
             "\nNote: You are aware of the user's relationship with others. If their affinity is high (50+), you may feel jealous, suspicious, or obsessive depending on your personality." :
             "\n참고: 당신은 사용자와 다른 캐릭터들의 관계를 인지하고 있습니다. 다른 캐릭터의 호감도가 높을 경우(50 이상), 당신의 성격에 따라 질투, 의심, 또는 집착을 보일 수 있습니다.";
 
@@ -1763,17 +1763,17 @@ class FreeTalkSystem {
     async startFreeTalk(scene, sceneId) {
         // 이미 프리토킹 중이면 무시 (중복 호출 방지)
         if (this.isFreeTalking) return;
-        
+
         this.isFreeTalking = true;
         this.freeTalkTurns = 0;
         this.currentMaxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
         this.currentSceneId = sceneId;
 
         const isEn = document.documentElement.lang === 'en';
-        
+
         // 게임 내 이벤트 기억 수집
         const gameContext = this.getGameContext(scene.name, isEn);
-        
+
         // 다른 캐릭터들과의 관계 정보
         const socialContext = this.getSocialContext(scene.name, isEn);
 
@@ -1862,11 +1862,11 @@ class FreeTalkSystem {
         const chatGuideEl = document.getElementById('chat-guide');
         if (chatGuideEl) {
             if (isEn) {
-                chatGuideEl.innerHTML = isRemote 
+                chatGuideEl.innerHTML = isRemote
                     ? "<b>Tip:</b> Describe tone in brackets, e.g., <i>(smiling) Hey...</i>"
                     : "<b>Tip:</b> Describe scene or actions, e.g., <i>(holds hand) Let's go.</i>";
             } else {
-                chatGuideEl.innerHTML = isRemote 
+                chatGuideEl.innerHTML = isRemote
                     ? "<b>Tip:</b> <i>(웃으며) 자?</i> 처럼 어조나 상황을 표현해보세요."
                     : "<b>Tip:</b> <i>(손을 잡으며) 같이 가자.</i> 처럼 말해보세요.";
             }
@@ -1877,7 +1877,7 @@ class FreeTalkSystem {
         // ─────────────────────────────────────────────────────────────
         // 기본 버튼 텍스트 목록 (이 텍스트들은 아이콘 버튼으로 표시)
         const iconButtons = ["말하기", "전송", "전송하기", "Send"];
-        
+
         if (scene.buttonText && !iconButtons.includes(scene.buttonText)) {
             // 커스텀 버튼 텍스트가 있는 경우 (예: "고백하기", "대답하기")
             // → 텍스트 버튼으로 표시 (직사각형, 가변 너비)
@@ -1895,7 +1895,7 @@ class FreeTalkSystem {
         // ─────────────────────────────────────────────────────────────
         // 남은 대화 턴 수 표시 (요소가 있는 경우에만)
         if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns;
-        
+
         // 스킵 버튼 활성화 (대화 중단 가능하도록)
         if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
 
@@ -1956,7 +1956,7 @@ class FreeTalkSystem {
     async sendChatMessage(getSceneFn) {
         // 이미 처리 중이면 무시 (중복 호출 방지)
         if (this.isProcessingChat) return;
-        
+
         const text = this.uiManager.chatInput.value.trim();
         if (!text || this.freeTalkTurns >= this.currentMaxTurns || this.dialogueSystem.isCurrentlyTyping()) return;
 
@@ -1975,10 +1975,10 @@ class FreeTalkSystem {
         if (this.freeTalkHistory.length > 0 && this.freeTalkHistory[0].role === "system") {
             const isEn = document.documentElement.lang === 'en';
             const remaining = this.currentMaxTurns - this.freeTalkTurns;
-            const progressTag = isEn ? 
+            const progressTag = isEn ?
                 `\n[CURRENT_PROGRESS]: ${this.freeTalkTurns}/${this.currentMaxTurns} turns. ${remaining} remaining.` :
                 `\n[현재 진행 상황]: ${this.freeTalkTurns}/${this.currentMaxTurns}턴. ${remaining}턴 남음.`;
-            
+
             const baseContent = this.freeTalkHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0];
             this.freeTalkHistory[0].content = baseContent + progressTag;
         }
@@ -2027,7 +2027,7 @@ class FreeTalkSystem {
 
             // JSON 파싱
             const data = await response.json();
-            
+
             // OpenAI API 응답 구조에서 대답 텍스트 추출
             // 구조: { choices: [{ message: { content: "대답 내용" } }] }
             let reply = data?.choices?.[0]?.message?.content?.trim();
@@ -2038,7 +2038,7 @@ class FreeTalkSystem {
             if (reply) {
                 // 표정 변화 처리
                 reply = this.processExpressionTags(reply, scene);
-                
+
                 // 스탯 변화 처리
                 reply = this.processStatsTags(reply, scene);
 
@@ -2064,20 +2064,20 @@ class FreeTalkSystem {
             if (this.freeTalkTurns >= this.currentMaxTurns) {
                 this.endFreeTalk();
             }
-        // ─────────────────────────────────────────────────────────────
-        // ❌ 오류 발생 시: 폴백 메시지로 대체
-        // ─────────────────────────────────────────────────────────────
-        // 폴백 메시지: AI 연결 실패 시 미리 정의된 대답을 보여줌
-        // 사용자가 오류 화면을 보지 않고 게임을 계속할 수 있음
-        // ─────────────────────────────────────────────────────────────
+            // ─────────────────────────────────────────────────────────────
+            // ❌ 오류 발생 시: 폴백 메시지로 대체
+            // ─────────────────────────────────────────────────────────────
+            // 폴백 메시지: AI 연결 실패 시 미리 정의된 대답을 보여줌
+            // 사용자가 오류 화면을 보지 않고 게임을 계속할 수 있음
+            // ─────────────────────────────────────────────────────────────
         } catch (error) {
             // 🔍 오류 내용을 콘솔에 기록 (디버깅용)
             // F12 → Console 탭에서 확인 가능
             console.error("AI Chat Error:", error);
-            
+
             // 현재 언어 확인 (한국어/영어)
             const isEn = document.documentElement.lang === 'en';
-            
+
             // 폴백 메시지 가져오기 (prompts.js에서 정의)
             const fallbackMsg = this.getFallbackReply(scene.name, isEn, getSceneFn);
 
@@ -2098,7 +2098,7 @@ class FreeTalkSystem {
 
             document.querySelectorAll('.char-slot img').forEach(img => img.classList.remove('thinking'));
             this.uiManager.dialogueBox.classList.remove('thinking-box');
-            
+
             this.uiManager.chatInput.focus();
         }
     }
@@ -2137,28 +2137,28 @@ class FreeTalkSystem {
     parseJsonResponse(reply) {
         // 📌 빈 응답이면 그대로 반환
         if (!reply) return reply;
-        
+
         // 📌 JSON일 가능성 체크 (중괄호, 대괄호, 또는 코드블록 포함 여부)
         const likelyJson = reply.includes('{') || reply.includes('[') || reply.includes('```json');
         if (!likelyJson) return reply;  // JSON 아니면 원본 반환
 
         try {
             let jsonStr = reply;
-            
+
             // 📌 케이스 1: ```json ... ``` 코드 블록에서 JSON 추출
             if (jsonStr.includes('```')) {
                 const match = jsonStr.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
                 if (match) jsonStr = match[1];  // 코드 블록 내용만 추출
             }
-            
+
             // 📌 케이스 2: JSON 시작점 찾기 (텍스트 중간에 JSON이 있는 경우)
             if (!jsonStr.trim().startsWith('{') && !jsonStr.trim().startsWith('[')) {
                 const startExpr = jsonStr.indexOf('{');   // { 위치 찾기
                 const startArray = jsonStr.indexOf('[');  // [ 위치 찾기
-                
+
                 // 둘 중 더 앞에 있는 것 선택 (둘 다 없으면 -1)
                 let start = startExpr !== -1 && startArray !== -1 ? Math.min(startExpr, startArray) : Math.max(startExpr, startArray);
-                
+
                 if (start !== -1) {
                     // JSON 끝 위치 찾기
                     const end = Math.max(jsonStr.lastIndexOf('}'), jsonStr.lastIndexOf(']'));
@@ -2168,7 +2168,7 @@ class FreeTalkSystem {
 
             // 📌 JSON 파싱 시도
             const parsed = JSON.parse(jsonStr);
-            
+
             /**
              * 📌 객체에서 텍스트 추출하는 내부 함수
              * 여러 가능한 키 이름을 순서대로 시도
@@ -2176,10 +2176,10 @@ class FreeTalkSystem {
             const getTextFromObj = (obj) => {
                 // 문자열이면 그대로 반환
                 if (typeof obj === 'string') return obj;
-                
+
                 // 알려진 텍스트 키들 확인 (우선순위순)
                 let text = obj.text || obj.dialogue || obj.content || obj.message || obj.response || obj.msg || obj.result;
-                
+
                 // 위 키들이 없으면 가장 긴 문자열 값 찾기
                 if (!text) {
                     let longestStr = "";
@@ -2193,7 +2193,7 @@ class FreeTalkSystem {
                 }
                 return text;
             };
-            
+
             // 📌 배열인 경우 첫 번째 요소에서 추출
             if (Array.isArray(parsed) && parsed.length > 0) {
                 const extracted = getTextFromObj(parsed[0]);
@@ -2207,7 +2207,7 @@ class FreeTalkSystem {
             // 📌 JSON 파싱 실패 시 경고 로그 (원본 반환됨)
             console.warn("JSON parsing failed:", e);
         }
-        
+
         // 📌 파싱 실패하거나 텍스트 추출 실패 시 fallback 메시지 반환
         const isEn = document.documentElement.lang === 'en';
         return isEn ? "I couldn't understand the response. Let me try again." : "응답을 이해할 수 없습니다. 다시 시도하겠습니다.";
@@ -2247,21 +2247,21 @@ class FreeTalkSystem {
         // 📌 모든 표정 태그를 찾아서 처리
         while ((exprMatch = exprRegex.exec(reply)) !== null) {
             const exprName = exprMatch[1].toLowerCase();  // 표정 이름 (소문자로 변환)
-            
+
             // CHARACTER_EXPRESSIONS 객체가 있는지 확인
             if (window.CHARACTER_EXPRESSIONS) {
                 // 현재 캐릭터의 표정 목록 가져오기
                 const charExprs = CHARACTER_EXPRESSIONS[scene.name];
-                
+
                 // 해당 표정이 정의되어 있으면 이미지 변경
                 if (charExprs && charExprs[exprName]) {
                     const centerSlot = this.uiManager.charSlots.center;  // 중앙 캐릭터 슬롯
-                    
+
                     // 🔧 centerSlot이 없으면 표정 변경 스킵
                     if (!centerSlot) continue;
-                    
+
                     const exprUrl = getAssetUrl(charExprs[exprName]);    // 버전 쿼리 추가
-                    
+
                     // 이미 이미지가 있으면 src만 변경, 없으면 새로 생성
                     if (centerSlot.firstChild) {
                         centerSlot.firstChild.src = exprUrl;
@@ -2273,7 +2273,7 @@ class FreeTalkSystem {
                 }
             }
         }
-        
+
         // 📌 태그를 텍스트에서 제거하고 반환
         return reply.replace(exprRegex, "").trim();
     }
@@ -2305,7 +2305,7 @@ class FreeTalkSystem {
                 this.galleryManager.checkAffinityUnlock(charKey, newValue);
             }
         }
-        
+
         // 태그 제거 후 반환
         return reply.replace(statsRegex, "").trim();
     }
@@ -2323,7 +2323,7 @@ class FreeTalkSystem {
         setTimeout(() => {
             this.uiManager.chatContainer.style.display = 'none';
             this.isFreeTalking = false;
-            
+
             // 종료 안내 메시지
             const isEn = document.documentElement.lang === 'en';
             const endMsg = isEn ?
@@ -2364,7 +2364,7 @@ class SceneRenderer {
 
         /** 현재 표시 중인 씬 ID */
         this.currentSceneId = "start";
-        
+
         /** 마지막으로 설정한 배경 URL (중복 로딩 방지용) */
         this.lastBgUrl = "";
 
@@ -2660,7 +2660,7 @@ class SceneRenderer {
             const img = el?.querySelector('img');
             if (img && img.src) currentCharacters[slot] = img.src;
         }
-        
+
         return {
             sceneId: this.currentSceneId,
             bgUrl: this.lastBgUrl,
@@ -2746,43 +2746,43 @@ class GameEngine {
         // ════════════════════════════════════════════════════════════════
         // 📌 하위 시스템 인스턴스 생성 (의존성 순서대로!)
         // ════════════════════════════════════════════════════════════════
-        
+
         /** 
          * 게임 상태 관리자 - 이름, 호감도, 플래그 등
          * 🔧 디버깅: gameEngine.stateManager.exportState()로 전체 상태 확인
          */
         this.stateManager = new StateManager();
-        
+
         /** 
          * 저장 관리자 - localStorage 저장/불러오기
          * 🔧 디버깅: localStorage.getItem('cupid_save')로 저장 데이터 확인
          */
         this.saveManager = new SaveManager('cupid_save');
-        
+
         /** 
          * 갤러리 관리자 - CG, 캐릭터 해금
          * 🔧 디버깅: localStorage.getItem('cupid_gallery')로 해금 현황 확인
          */
         this.galleryManager = new GalleryManager('cupid_gallery');
-        
+
         /** 
          * UI 관리자 - DOM 요소 제어
          * 🔧 디버깅: 요소가 null이면 HTML에서 해당 ID 확인
          */
         this.uiManager = new UIManager(this.stateManager, this.galleryManager);
-        
+
         /** 
          * 씬 렌더러 - 배경, 캐릭터 렌더링
          * 🔧 디버깅: gameEngine.sceneRenderer.currentSceneId로 현재 씬 확인
          */
         this.sceneRenderer = new SceneRenderer(this.stateManager, this.galleryManager, this.uiManager);
-        
+
         /** 
          * 대화 시스템 - 타이핑 효과
          * 🔧 디버깅: gameEngine.dialogueSystem.isTyping으로 타이핑 상태 확인
          */
         this.dialogueSystem = new DialogueSystem(this.stateManager, this.uiManager);
-        
+
         /** 
          * 프리토킹 시스템 - AI 대화
          * 🔧 디버깅: gameEngine.freeTalkSystem.isFreeTalking으로 프리토킹 상태 확인
@@ -2824,7 +2824,7 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────────
         // 전송 버튼 클릭 → AI에게 메시지 전송
         this.uiManager.chatSendBtn.onclick = () => this.freeTalkSystem.sendChatMessage(id => this.sceneRenderer.getScene(id));
-        
+
         // 스킵 버튼 클릭 → 대화 중단 (버튼이 있는 경우에만)
         if (this.uiManager.chatSkipBtn) {
             this.uiManager.chatSkipBtn.onclick = () => this.freeTalkSystem.skipFreeTalk();
@@ -2843,12 +2843,12 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────────
         // 확인 버튼 클릭 → 이름 저장 후 다음 씬
         this.uiManager.nameConfirmBtn.onclick = () => this.handleNameConfirm();
-        
+
         // Enter 키로도 확인 가능
         this.uiManager.playerNameInput.onkeypress = (e) => {
             if (e.key === 'Enter') this.handleNameConfirm();
         };
-        
+
         // 포커스가 빠져나가면 다시 잡아주기 (사용자 편의)
         // 단, 확인 버튼 클릭으로 포커스 이동한 경우는 제외
         this.uiManager.playerNameInput.onblur = (e) => {
@@ -2887,7 +2887,7 @@ class GameEngine {
         window.openSettingsModal = () => this.uiManager.openSettingsModal(); // 설정 모달 열기
         window.closeSettingsModal = (e) => this.uiManager.closeSettingsModal(e); // 설정 모달 닫기
         window.saveSettings = () => this.uiManager.saveSettings(
-            this.sceneRenderer.currentSceneId, 
+            this.sceneRenderer.currentSceneId,
             id => this.sceneRenderer.getScene(id)
         );
 
@@ -2982,7 +2982,7 @@ class GameEngine {
         if (scene.choices) {
             // 조건을 만족하는 선택지만 필터링
             const availableChoices = this.getAvailableChoices(scene.choices);
-            
+
             // � 선택지가 모두 조건을 충족하지 못하면 다음 씬으로
             if (availableChoices.length === 0) {
                 const nextId = this.sceneRenderer.resolveNextScene(scene);
@@ -2996,15 +2996,15 @@ class GameEngine {
                 }
                 return;
             }
-            
+
             // 🔄 "다음" 버튼 하나만 있으면 자동으로 실행
             // - UX 개선: 의미없는 "다음" 클릭을 생략
-            if (availableChoices.length === 1 && 
+            if (availableChoices.length === 1 &&
                 (availableChoices[0].text === "다음" || availableChoices[0].text === "Next")) {
                 await this.executeChoice(availableChoices[0]);
                 return;
             }
-            
+
             // 여러 선택지가 있으면 버튼으로 표시
             this.showChoices(availableChoices);
         } else {
@@ -3053,10 +3053,10 @@ class GameEngine {
         return choices.filter(choice => {
             // 📌 condition 체크: 필수 조건 플래그가 없으면 제외
             if (choice.condition && !this.stateManager.getFlag(choice.condition)) return false;
-            
+
             // 📌 excludeCondition 체크: 제외 조건 플래그가 있으면 제외
             if (choice.excludeCondition && this.stateManager.getFlag(choice.excludeCondition)) return false;
-            
+
             // 두 조건 모두 통과하면 선택지 표시
             return true;
         });
@@ -3103,11 +3103,11 @@ class GameEngine {
         choices.forEach(choice => {
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
-            
+
             // {name} 플레이스홀더를 실제 플레이어 이름으로 치환
             // 예: "{name}(와)과 데이트하기" → "유진(와)과 데이트하기"
             btn.textContent = choice.text.replace(/{name}/g, this.stateManager.playerName);
-            
+
             // 클릭하면 해당 선택지 실행 (async 함수이므로 에러 처리 포함)
             btn.onclick = async () => {
                 try {
@@ -3116,7 +3116,7 @@ class GameEngine {
                     console.error('[GameEngine] executeChoice 오류:', e);
                 }
             };
-            
+
             this.uiManager.choiceContainer.appendChild(btn);
         });
 
@@ -3162,10 +3162,10 @@ class GameEngine {
         // 📌 1단계: 플래그 설정
         // 플래그는 게임 진행 상황을 기록하는 true/false 값
         // ─────────────────────────────────────────────────────────
-        
+
         // 단일 플래그 설정 (setFlag: "flagName")
         if (choice.setFlag) this.stateManager.setFlag(choice.setFlag);
-        
+
         // 복수 플래그 설정 (setFlags: ["flag1", "flag2"])
         if (choice.setFlags?.length) choice.setFlags.forEach(flag => this.stateManager.setFlag(flag));
 
@@ -3181,11 +3181,11 @@ class GameEngine {
                 if (stats.affinity && this.stateManager.stats[charKey]) {
                     // 호감도 수치 변경
                     const newValue = this.stateManager.changeAffinity(charKey, stats.affinity);
-                    
+
                     // 💕 화면에 호감도 변화 애니메이션 표시
                     // 예: "+10 ♥" 또는 "-5 💔"
                     this.uiManager.showAffinityChange(stats.affinity, charKey);
-                    
+
                     // 📊 갤러리 통계 업데이트 (최대 호감도, 해금 체크)
                     this.galleryManager.updateMaxAffinity(charKey, newValue);
                     this.galleryManager.checkAffinityUnlock(charKey, newValue);
@@ -3204,14 +3204,14 @@ class GameEngine {
         if (choice.affinityBranches && choice.affinityChar) {
             // 기준 캐릭터의 현재 호감도 가져오기
             const currentAff = this.stateManager.getAffinity(choice.affinityChar);
-            
+
             // 호감도 높은 순으로 정렬 (내림차순)
             // → 가장 높은 조건부터 체크해서 첫 번째로 만족하는 것 선택
             // 동일한 minAffinity일 때는 배열 원래 순서 유지 (안정 정렬)
             const sortedBranches = [...choice.affinityBranches]
                 .map((branch, index) => ({ ...branch, _originalIndex: index }))
                 .sort((a, b) => b.minAffinity - a.minAffinity || a._originalIndex - b._originalIndex);
-            
+
             for (const branch of sortedBranches) {
                 // 현재 호감도가 최소 조건 이상이면 해당 분기로
                 if (currentAff >= branch.minAffinity) {
@@ -3264,7 +3264,7 @@ class GameEngine {
     async handleNameConfirm() {
         // 📌 입력값 가져와서 앞뒤 공백 제거
         const name = this.uiManager.playerNameInput.value.trim();
-        
+
         // 📌 이름 유효성 검사 정규식
         const nameRegex = /^[a-zA-Z가-힣]{1,4}$/;
 
@@ -3275,10 +3275,10 @@ class GameEngine {
             const msg = isEn ?
                 "Please enter a name between 1-4 characters (Korean or English only)." :
                 "이름은 한글 또는 영문 1~4자로 입력해주세요.";
-            
+
             // 모달로 오류 메시지 표시 (확인 버튼만)
             await this.uiManager.showModal(msg, true);
-            
+
             // 다시 입력받을 수 있도록 포커스
             this.uiManager.playerNameInput.focus();
             return;
@@ -3287,10 +3287,10 @@ class GameEngine {
         // ✅ 유효한 이름인 경우
         // 📌 플레이어 이름 저장 (전체 게임에서 사용)
         this.stateManager.setPlayerName(name);
-        
+
         // 📌 이름 입력 UI 숨기기
         this.uiManager.nameInputContainer.style.display = 'none';
-        
+
         // 📌 대화창 클릭 다시 활성화
         this.uiManager.dialogueBox.style.pointerEvents = 'auto';
 
@@ -3351,7 +3351,7 @@ class GameEngine {
         // 📌 1단계: 씬 데이터 로드
         // ─────────────────────────────────────────────────────────
         const scene = this.sceneRenderer.getScene(sceneId);
-        
+
         // 씬이 없으면 HTML 페이지 이동인지 확인
         if (!scene) {
             if (sceneId?.endsWith('.html')) window.location.href = sceneId;
@@ -3373,7 +3373,7 @@ class GameEngine {
         } else if (scene.bgm === null) {
             soundManager.stopBgm();
         }
-        
+
         // sfx: 효과음 1회 재생
         if (scene.sfx) soundManager.playSfx(`assets/audio/sfx/${scene.sfx}`);
 
@@ -3398,7 +3398,7 @@ class GameEngine {
         // 🖼️ 5단계: 배경 이미지 설정
         // ─────────────────────────────────────────────────────────
         if (scene.background) await this.sceneRenderer.setBackground(scene.background);
-        
+
         // ⚠️ 비동기 작업 중 씬이 바뀌었으면 중단 (Race Condition 방지)
         // 예: 빠르게 클릭해서 다른 씬으로 넘어간 경우
         if (this.sceneRenderer.currentSceneId !== sceneId) return;
@@ -3422,7 +3422,7 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // character 또는 characters 속성에 따라 캐릭터 표시
         await this.sceneRenderer.updateCharacters(scene, sceneId);
-        
+
         // ⚠️ 다시 한번 Race Condition 체크
         if (this.sceneRenderer.currentSceneId !== sceneId) return;
 
@@ -3441,35 +3441,35 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 📌 10단계: 씬 타입별 분기 처리
         // ─────────────────────────────────────────────────────────
-        
+
         // ═══════════════════════════════════════════════════════
         // 🗣️ 타입 A: 프리토킹 (AI와 자유 대화)
         // ═══════════════════════════════════════════════════════
         if (scene.type === 'free_talk') {
             // AI 채팅 모드 시작 - 플레이어가 자유롭게 대화 가능
             await this.freeTalkSystem.startFreeTalk(scene, sceneId);
-            
-        // ═══════════════════════════════════════════════════════
-        // ✏️ 타입 B: 이름 입력
-        // ═══════════════════════════════════════════════════════
+
+            // ═══════════════════════════════════════════════════════
+            // ✏️ 타입 B: 이름 입력
+            // ═══════════════════════════════════════════════════════
         } else if (scene.type === 'input') {
             // 대화창 클릭 가능하게 유지
             this.uiManager.dialogueBox.style.pointerEvents = 'auto';
-            
+
             // 안내 텍스트가 있으면 먼저 표시
             if (scene.text) {
                 await this.dialogueSystem.typeText(scene.text, scene.name);
                 if (this.sceneRenderer.currentSceneId !== sceneId) return;
             }
-            
+
             // 이름 입력 UI 표시
             this.uiManager.nameInputContainer.style.display = 'block';
             this.uiManager.playerNameInput.value = "";
             this.uiManager.playerNameInput.focus();
-            
-        // ═══════════════════════════════════════════════════════
-        // 💬 타입 C: 일반 대화/시네마틱/선택지
-        // ═══════════════════════════════════════════════════════
+
+            // ═══════════════════════════════════════════════════════
+            // 💬 타입 C: 일반 대화/시네마틱/선택지
+            // ═══════════════════════════════════════════════════════
         } else {
             // 📜 대사가 있으면 타이핑 효과로 출력
             if (scene.text) {
@@ -3485,11 +3485,11 @@ class GameEngine {
             // ─────────────────────────────────────────────────────
             // 기본: 선택지가 없으면 표시
             let showNext = !scene.choices;
-            
+
             // 예외: "다음" 선택지 하나만 있으면 표시 (자동 진행되니까)
             if (scene.choices) {
                 const availableChoices = this.getAvailableChoices(scene.choices);
-                if (availableChoices.length === 1 && 
+                if (availableChoices.length === 1 &&
                     (availableChoices[0].text === "다음" || availableChoices[0].text === "Next")) {
                     showNext = true;
                 }
@@ -3508,7 +3508,7 @@ class GameEngine {
             // 배경/캐릭터 변경만 하고 자동으로 다음으로 넘어감
             if (!scene.text && (!scene.choices || scene.choices.length === 0)) {
                 const nextId = this.sceneRenderer.resolveNextScene(scene);
-                
+
                 // 무한 루프 방지 (자기 자신으로 돌아가지 않도록)
                 if (nextId && nextId !== sceneId) {
                     // 배경이나 캐릭터 변경이 있으면 잠깐 보여주고 진행
@@ -3528,7 +3528,7 @@ class GameEngine {
                             if (this.sceneRenderer.currentSceneId !== originalSceneId) return;
                             this.renderScene(nextId);
                         };
-                        
+
                         // 1.5초 후부터 클릭 대기 (연출을 볼 시간 확보)
                         setTimeout(() => {
                             // 🔧 타임아웃 동안 씬이 바뀌었으면 이벤트 등록하지 않음
@@ -3573,7 +3573,7 @@ class GameEngine {
     saveGame() {
         // SceneRenderer에서 현재 렌더링 상태 내보내기
         const renderState = this.sceneRenderer.exportRenderState();
-        
+
         // SaveManager를 통해 localStorage에 저장
         this.saveManager.save(
             renderState.sceneId,      // 현재 씬 ID
@@ -3601,10 +3601,10 @@ class GameEngine {
         // 🔊 사운드 매니저 초기화
         // 브라우저 정책상 사용자 클릭 후에만 오디오 재생 가능
         soundManager.init();
-        
+
         // 🗑️ 기존 저장 데이터 모두 삭제
         this.saveManager.clear();
-        
+
         // 🎬 "start" 씬부터 게임 시작
         await this.renderScene("start");
     }
@@ -3632,7 +3632,7 @@ class GameEngine {
     async continueGame() {
         // 🔊 사운드 매니저 초기화
         soundManager.init();
-        
+
         // 💾 저장 데이터 로드
         const saveData = this.saveManager.load();
 
@@ -3640,19 +3640,19 @@ class GameEngine {
             // ═══════════════════════════════════════════════════
             // 📌 저장 데이터가 있는 경우: 상태 복원
             // ═══════════════════════════════════════════════════
-            
+
             // 🎮 게임 상태 복원 (플레이어 이름, 플래그, 호감도, 채팅 기록)
             if (saveData.gameState) this.stateManager.importState(saveData.gameState);
-            
+
             // 🎬 현재 씬 ID 복원
             if (saveData.currentSceneId) this.sceneRenderer.currentSceneId = saveData.currentSceneId;
-            
+
             // 🖼️ 배경 이미지 즉시 표시 (로딩 화면 없이)
             if (saveData.lastBgUrl) {
                 this.sceneRenderer.lastBgUrl = saveData.lastBgUrl;
                 this.uiManager.bgLayer.style.backgroundImage = `url(${saveData.lastBgUrl})`;
             }
-            
+
             // 👤 캐릭터 이미지 즉시 표시
             if (saveData.currentCharacters) {
                 for (const [slot, src] of Object.entries(saveData.currentCharacters)) {
@@ -3662,10 +3662,10 @@ class GameEngine {
                     }
                 }
             }
-            
+
             // 🎬 저장된 씬부터 렌더링 재개
             await this.renderScene(this.sceneRenderer.currentSceneId);
-            
+
         } else {
             // ═══════════════════════════════════════════════════
             // 📌 저장 데이터가 없는 경우: 새 게임 시작
@@ -3698,8 +3698,13 @@ class GameEngine {
  * 게임 엔진 전역 인스턴스
  * - 모든 곳에서 접근 가능하도록 전역 변수로 선언
  * - 초기값 null, 게임 시작 시 생성됨
+ * - window.gameEngine으로도 접근 가능 (개발자 도구용)
  */
 let gameEngine = null;
+
+// 개발자 도구에서 접근 가능하도록 window에 노출
+// 사용법: gameEngine.renderScene('씬ID')
+window.gameEngine = null;
 
 /**
  * 🆕 새 게임 시작 (index.html에서 호출)
@@ -3709,6 +3714,7 @@ let gameEngine = null;
  */
 window.initGame = async () => {
     gameEngine = new GameEngine();  // 게임 엔진 인스턴스 생성
+    window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
     await gameEngine.startNewGame();  // 처음부터 시작
 };
 
@@ -3720,6 +3726,7 @@ window.initGame = async () => {
  */
 window.initGameFromSave = async (saveData) => {
     gameEngine = new GameEngine();  // 게임 엔진 인스턴스 생성
+    window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
     await gameEngine.continueGame();  // 저장 지점부터 재개
 };
 
@@ -3771,6 +3778,7 @@ if (!window.preventAutoStart) {
     window.addEventListener('DOMContentLoaded', async () => {
         try {
             gameEngine = new GameEngine();  // 게임 엔진 생성
+            window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
             soundManager.init();             // 사운드 매니저 초기화
             await gameEngine.renderScene("start");  // 첫 씬 렌더링
         } catch (e) {
