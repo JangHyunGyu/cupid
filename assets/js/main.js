@@ -1078,10 +1078,21 @@ class UIManager {
         }
 
         // 업로드 버튼 클릭 시 파일 선택창 열기
+        // 버튼이 채팅 입력 래퍼 안에 있는지 확인 — 그렇지 않으면 적절한 위치로 이동
+        const chatInputWrapper = document.getElementById('chat-input-wrapper');
+        if (chatInputWrapper && this.imageUploadBtn && this.imageUploadBtn.parentElement !== chatInputWrapper) {
+            chatInputWrapper.insertBefore(this.imageUploadBtn, chatInputWrapper.firstChild);
+        }
+
         this.imageUploadBtn.addEventListener('click', () => {
             if (this.chatInput && this.chatInput.disabled) return;
             this.imageUploadInput.click();
         });
+
+        // input 역시 채팅 입력 래퍼 안으로 이동
+        if (chatInputWrapper && this.imageUploadInput && this.imageUploadInput.parentElement !== chatInputWrapper) {
+            chatInputWrapper.appendChild(this.imageUploadInput);
+        }
 
         // 파일 선택 시 처리
         this.imageUploadInput.addEventListener('change', (e) => {
