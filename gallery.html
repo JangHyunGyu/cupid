@@ -184,16 +184,8 @@
         <p>© 2025 ArcherLab. All rights reserved.</p>
     </footer>
 
-    <!-- ========================================================================
-         스크립트 (Scripts)
-         갤러리 기능을 담당하는 OOP 기반 JavaScript 모듈들
-         로드 순서가 중요: data → progress → ui → main
-         - ?v=2.0.0: 캐시 버스팅용 버전 쿼리 (OOP 리팩토링)
-         ======================================================================== -->
-    <script src="assets/js/gallery-data.js?v=2.0.0"></script>
-    <script src="assets/js/gallery-progress.js?v=2.0.0"></script>
-    <script src="assets/js/gallery-ui.js?v=2.0.0"></script>
-    <script src="assets/js/gallery.js?v=2.0.0"></script>
+    <!-- 갤러리 스크립트 (동적 로더) -->
+    <script src="assets/js/loaders/gallery-loader.js"></script>
 </body>
 
 </html>
