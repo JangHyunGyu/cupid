@@ -1152,6 +1152,7 @@ class UIManager {
 
                 // JPEG 품질 0.8로 압축
                 const base64 = canvas.toDataURL('image/jpeg', 0.8);
+                console.debug('[UIManager] handleImageUpload: prepared base64, size=', base64.length);
                 this.updateImagePreview(base64);
             };
             img.src = e.target.result;
@@ -1164,14 +1165,33 @@ class UIManager {
      * @param {string|null} base64Data - 이미지 데이터 (null이면 제거)
      */
     updateImagePreview(base64Data) {
+        console.debug('[UIManager] updateImagePreview called. hasData=', !!base64Data);
         if (base64Data) {
             this.stagedImage = base64Data;
-            if (this.imagePreview) this.imagePreview.src = base64Data;
-            if (this.imagePreviewContainer) this.imagePreviewContainer.style.display = 'inline-flex';
+            if (this.imagePreview) {
+                this.imagePreview.src = base64Data;
+                this.imagePreview.alt = 'Selected image';
+            }
+            if (this.imagePreviewContainer) {
+                this.imagePreviewContainer.style.display = 'inline-flex';
+                this.imagePreviewContainer.style.visibility = 'visible';
+            }
+
+            // Ensure remove button is bound
+            if (this.removeImageBtn && !this.removeImageBtn.dataset.bound) {
+                this.removeImageBtn.addEventListener('click', () => {
+                    console.debug('[UIManager] removeImageBtn clicked');
+                    this.removeStagedImage();
+                });
+                this.removeImageBtn.dataset.bound = '1';
+            }
         } else {
             this.stagedImage = null;
             if (this.imagePreview) this.imagePreview.src = '';
-            if (this.imagePreviewContainer) this.imagePreviewContainer.style.display = 'none';
+            if (this.imagePreviewContainer) {
+                this.imagePreviewContainer.style.display = 'none';
+                this.imagePreviewContainer.style.visibility = 'hidden';
+            }
         }
     }
 
