@@ -1043,6 +1043,37 @@ class UIManager {
             });
 
             observer.observe(document.body, { childList: true, subtree: true });
+            // 폴백: 일정 시간(1.5s) 후에도 요소가 없으면 자동으로 생성하여 바인딩
+            setTimeout(() => {
+                this.imageUploadBtn = document.getElementById('upload-image-btn');
+                this.imageUploadInput = document.getElementById('upload-image-input');
+                if (!this.imageUploadBtn || !this.imageUploadInput) {
+                    const container = document.getElementById('chat-container') || document.getElementById('chat-input-wrapper');
+                    if (container) {
+                        // input 생성
+                        if (!document.getElementById('upload-image-input')) {
+                            const input = document.createElement('input');
+                            input.type = 'file';
+                            input.id = 'upload-image-input';
+                            input.accept = 'image/*';
+                            input.style.display = 'none';
+                            container.appendChild(input);
+                            this.imageUploadInput = input;
+                        }
+                        // 버튼 생성
+                        if (!document.getElementById('upload-image-btn')) {
+                            const btn = document.createElement('button');
+                            btn.type = 'button';
+                            btn.id = 'upload-image-btn';
+                            btn.title = document.documentElement.lang === 'en' ? 'Upload image' : '이미지 업로드';
+                            btn.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" fill="none" stroke="currentColor" stroke-width="2"></path><polyline points="7 10 12 5 17 10" fill="none" stroke="currentColor" stroke-width="2"></polyline><line x1="12" y1="5" x2="12" y2="15" stroke="currentColor" stroke-width="2"></line></svg>';
+                            container.appendChild(btn);
+                            this.imageUploadBtn = btn;
+                        }
+                    }
+                }
+            }, 1500);
+
             return;
         }
 
