@@ -960,12 +960,6 @@ class UIManager {
         this.removeImageBtn = document.getElementById('remove-image-btn');
         this.stagedImage = null; // 현재 업로드 준비된 이미지 (Base64)
 
-        console.log("UIManager Initialized. Image upload elements:", {
-            btn: this.imageUploadBtn,
-            input: this.imageUploadInput,
-            preview: this.imagePreviewContainer
-        });
-
         // ✏️ 이름 입력 관련
         this.nameInputContainer = document.getElementById('name-input-container');
         this.playerNameInput = document.getElementById('player-name-input');
@@ -1032,7 +1026,6 @@ class UIManager {
      * 이미지 업로드 관련 이벤트 바인딩
      */
     bindImageUploadEvents() {
-        console.log("Binding image upload events. Btn found:", !!this.imageUploadBtn);
         if (!this.imageUploadBtn || !this.imageUploadInput) return;
 
         // 업로드 버튼 클릭 시 파일 선택창 열기
