@@ -2240,10 +2240,10 @@ class FreeTalkSystem {
         // 이미지와 메시지 결합 처리
         const stagedImage = this.uiManager.stagedImage;
         const finalContent = stagedImage
-            ? (text ? `${text}\n\ndata:image/${stagedImage.split('data:image/')[1]}` : stagedImage)
+            ? (text ? `${text}\n\n${stagedImage}` : stagedImage)
             : text;
 
-        // 텍스트가 없고 이미지가 있더라도 텍스트 표시를 남기지 않음
+        // 텍스트 표시
         this.uiManager.messageEl.textContent = text || '';
         if (stagedImage) {
             const img = document.createElement('img');
