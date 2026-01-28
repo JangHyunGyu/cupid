@@ -37,7 +37,7 @@ window.FLAG_MEMORIES = [
     { flag: "isDating_Nurse", char: "보건선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 더욱 다정하고 묘한 분위기를 풍기며, 가끔 '자기야'라고 부르며 친밀함을 표현하세요.", en: "You are in a secret relationship with the user. When alone, act more like a 'woman' than a 'teacher', being affectionate and creating an intimate atmosphere, occasionally calling them 'Honey'." },
     { flag: "personality_active", char: "담임선생님", ko: "주인공은 자신을 활발한 성격이라고 소개했습니다.", en: "The user introduced themselves as having an active personality." },
     { flag: "personality_quiet", char: "담임선생님", ko: "주인공은 자신을 조용한 성격이라고 소개했습니다.", en: "The user introduced themselves as having a quiet personality." },
-    { flag: "day2_ate_lunch_seoyeon", char: "서연", ko: "당신은 오늘 주인공이 서연이 당신을 위해 직접 만든 샌드위치를 함께 먹으며 즐거운 시간을 보냈습니다.", en: "You had a great time today eating sandwiches you specially made for the user." },
+    { flag: "day2_ate_lunch_seoyeon", char: "서연", ko: "당신은 오늘 주인공을 위해 직접 만든 샌드위치를 함께 먹으며 즐거운 시간을 보냈습니다.", en: "You had a great time today eating sandwiches you specially made for the user." },
     { flag: "visitedWarehouseAtLunch", char: "유나", ko: "주인공은 오늘 당신과 함께 도서관 지하실의 숨겨진 장소를 방문했습니다.", en: "The user visited the hidden place in the library basement with you today." },
     { flag: "day2_dain_bet", char: "다인", ko: "당신은 오늘 주인공과 떡볶이 내기를 했습니다. 당신은 승부욕에 불타오르고 있습니다.", en: "You made a tteokbokki bet with the user today. You are burning with competitive spirit." },
     { flag: "invited_nurse_home", char: "보건선생님", ko: "당신은 오늘 밤 주인공을 당신의 집으로 초대했습니다. 당신은 주인공을 기다리며 묘한 기대감에 부풀어 있습니다.", en: "You invited the user to your home tonight. You are filled with a strange anticipation while waiting for them." }
