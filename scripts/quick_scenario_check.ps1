@@ -12,44 +12,63 @@ Write-Host "Checking: $Pattern`n" -ForegroundColor Gray
 
 $files = Get-ChildItem -Path $scenarioPath -Filter $Pattern
 
+# 1단계: 모든 파일의 노드 ID를 먼저 수집 (크로스 파일 참조 검증용)
+Write-Host "Building global node index..." -ForegroundColor Gray
+$globalNodeIds = @()
+foreach ($file in $files) {
+    $content = Get-Content $file.FullName -Raw -Encoding UTF8
+    $nodeIds = [regex]::Matches($content, '"([^"]+)":\s*\{') | ForEach-Object { $_.Groups[1].Value }
+    $globalNodeIds += $nodeIds
+}
+Write-Host "Total global nodes: $($globalNodeIds.Count)`n" -ForegroundColor Green
+
+# 특수 참조 (게임 엔진이 별도로 처리하는 값들)
+$specialReferences = @('index.html', 'index-en.html')
+
 foreach ($file in $files) {
     Write-Host "`n[$($file.Name)]" -ForegroundColor Yellow
     
     $content = Get-Content $file.FullName -Raw -Encoding UTF8
     
-    # 모든 노드 ID 추출
+    # 모든 노드 ID 추출 (현재 파일)
     $nodeIds = [regex]::Matches($content, '"([^"]+)":\s*\{') | ForEach-Object { $_.Groups[1].Value }
     
     # next로 참조되는 노드 추출
     $nextNodes = [regex]::Matches($content, 'next:\s*"([^"]+)"') | ForEach-Object { $_.Groups[1].Value }
     
-    Write-Host "  Total Nodes: $($nodeIds.Count)" -ForegroundColor White
-    Write-Host "  Referenced Nodes: $($nextNodes.Count)" -ForegroundColor White
+    # 모든 참조 수집 (choices와 affinityBranches 포함)
+    $allReferences = @()
+    $allReferences += $nextNodes
+    $allReferences += [regex]::Matches($content, 'next:\s*"([^"]+)"') | ForEach-Object { $_.Groups[1].Value }
     
-    # 유령 노드 찾기 (참조되지 않는 노드)
+    Write-Host "  Total Nodes: $($nodeIds.Count)" -ForegroundColor White
+    Write-Host "  Referenced Nodes: $($allReferences.Count)" -ForegroundColor White
+    
+    # 유령 노드 찾기 (전역에서 참조되지 않는 노드)
     $unreferenced = $nodeIds | Where-Object { 
         $node = $_
         ($node -ne "start") -and 
-        ($nextNodes -notcontains $node) -and
+        ($allReferences -notcontains $node) -and
         ($node -notmatch '(lunch_time|after_school|end|day\d+_)')
     }
     
     if ($unreferenced) {
-        Write-Host "`n  Ghost Nodes (unreferenced):" -ForegroundColor Magenta
+        Write-Host "`n  Ghost Nodes (unreferenced in current file):" -ForegroundColor Magenta
         $unreferenced | ForEach-Object {
             Write-Host "    - $_" -ForegroundColor Red
         }
     }
     
-    # 깨진 참조 찾기 (존재하지 않는 노드 참조)
+    # 깨진 참조 찾기 (전역 노드 목록에도 없고 특수 참조도 아닌 것)
     $broken = $nextNodes | Where-Object {
         $next = $_
-        ($nodeIds -notcontains $next) -and
+        ($globalNodeIds -notcontains $next) -and
+        ($specialReferences -notcontains $next) -and
         ($next -notmatch '(lunch_time|after_school|night_|day\d+_)')
     } | Select-Object -Unique
     
     if ($broken) {
-        Write-Host "`n  Broken References:" -ForegroundColor Red
+        Write-Host "`n  Broken References (not found globally):" -ForegroundColor Red
         $broken | ForEach-Object {
             Write-Host "    - $_" -ForegroundColor Red
         }

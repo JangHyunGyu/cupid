@@ -151,8 +151,6 @@ rooftop_comfortable_low
 rooftop_comfortable_low_2
 rooftop_comfortable_normal
 rooftop_comfortable_normal_2
-rooftop_comfortable
-rooftop_comfortable_2
 seyoun_contact_exchange
 seyoun_contact_exchange_high
 seyoun_contact_exchange_normal
