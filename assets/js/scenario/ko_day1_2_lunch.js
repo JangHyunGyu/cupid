@@ -450,18 +450,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_comfortable_normal_2": {
         name: "서연",
-        text: "\"편안하다니 다행이야. 나도 너랑 있으면 학생회장이라는 짐을 잠시 내려놓을 수 있는 것 같아. 고마워, {name}.\"",
-        character: "assets/images/characters/seyoun_normal.png",
-        next: "seyoun_contact_exchange"
-    },
-    "rooftop_comfortable": {
-        name: "서연",
-        text: "(그녀가 만족스러운 듯 고개를 끄덕인다.)",
-        character: "assets/images/characters/seyoun_normal.png",
-        next: "rooftop_comfortable_2"
-    },
-    "rooftop_comfortable_2": {
-        name: "서연",
+
         text: "\"편안하다니 다행이야. 나도 너랑 있으면 학생회장이라는 짐을 잠시 내려놓을 수 있는 것 같아. 고마워, {name}.\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "seyoun_contact_exchange"

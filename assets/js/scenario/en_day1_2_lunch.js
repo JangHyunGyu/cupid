@@ -455,18 +455,6 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_normal.png",
         next: "seyoun_contact_exchange"
     },
-    "rooftop_comfortable": {
-        name: "Seoyeon",
-        text: "(She nods with satisfaction.)",
-        character: "assets/images/characters/seyoun_normal.png",
-        next: "rooftop_comfortable_2"
-    },
-    "rooftop_comfortable_2": {
-        name: "Seoyeon",
-        text: "\"I'm glad you feel comfortable. When I'm with you, I feel like I can set down the burden of being student council president for a while. Thank you, {name}.\"",
-        character: "assets/images/characters/seyoun_normal.png",
-        next: "seyoun_contact_exchange"
-    },
     "seyoun_contact_exchange": {
         type: "free_talk",
         name: "Seoyeon",
