@@ -1022,7 +1022,7 @@ html {
     font-weight: bold;
     pointer-events: none;
     z-index: 9999;
-    animation: affinityFloat 8s ease-out forwards;
+    animation: affinityFloat 4s ease-out forwards;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 2px 2px 8px rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
