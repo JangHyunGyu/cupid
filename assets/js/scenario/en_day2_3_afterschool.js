@@ -989,7 +989,7 @@ Object.assign(SCENARIO[2], {
                 next: "nurse_contact_home_fail_after",
                 affinityChar: "Nurse",
                 affinityBranches: [
-                    { minAffinity: 65, next: "nurse_contact_home_success_after" }
+                    { minAffinity: 55, next: "nurse_contact_home_success_after" }
                 ]
             }
         ]

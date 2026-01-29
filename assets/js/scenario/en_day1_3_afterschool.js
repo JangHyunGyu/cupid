@@ -97,39 +97,6 @@ Object.assign(SCENARIO[1], {
             { text: "That's it for today, I'm heading home.", next: "after_home" }
         ]
     },
-    "after_home": {
-        name: "Me",
-        text: "(The evening sun has set, and the sky is turning to dusk. Time to go home.)",
-        background: "assets/images/background/room_school.png",
-        character: null,
-        sunset: true,
-        next: "after_home_2"
-    },
-    "after_home_2": {
-        name: "Me",
-        text: "(As I leave the school gate, I feel a sudden melancholy. A lot happened on my first day.)",
-        next: "after_home_3"
-    },
-    "after_home_3": {
-        name: "Me",
-        text: "(What should I do? It feels like the night is just beginning.)",
-        choices: [
-            { text: "Go straight home and rest.", next: "day1_end" },
-            { text: "Stop by the convenience store on my way.", next: "after_conv" }
-        ]
-    },
-    "after_conv": {
-        name: "Me",
-        text: "(I stop by the convenience store near the school. The warm light from inside catches my eye.)",
-        background: "assets/images/background/conv.png",
-        character: null,
-        next: "after_conv_2"
-    },
-    "after_conv_2": {
-        name: "Me",
-        text: "(I bought some snacks and ramen. It makes me feel better for some reason.)",
-        next: "day1_end"
-    },
     "after_teacher": {
         name: "Me",
         text: "(I open the faculty room door. My teacher is organizing documents alone.)",
@@ -177,45 +144,23 @@ Object.assign(SCENARIO[1], {
         sunset: true,
         next: "after_teacher_contact_ask"
     },
-    "after_teacher_contact_ask": {
+    "after_teacher_contact": {
         name: "Teacher",
-        text: "\"By the way, {name}... (She takes out her phone with a slightly flushed face.) What do you think about exchanging numbers? In case of emergencies...\"",
+        text: "\"Oh, by the way. Contact me if anything urgent comes up. Let me give you my number.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         branches: [
-            { next: "after_teacher_contact_already", condition: "has_number_teacher" },
-            { next: "after_teacher_contact_choice" }
+            { next: "after_home", condition: "has_number_teacher" },
+            { next: "after_teacher_contact_ask" }
         ]
     },
-    "after_teacher_contact_choice": {
-        name: "Me",
-        text: "(The teacher is shyly waiting for my answer. What should I do?)",
+    "after_teacher_contact_ask": {
+        name: "Teacher",
+        text: "\"Here's my number. Make sure to save it.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
-        choices: [
-            { text: "Of course! It'd be reassuring to have your number, Teacher.", next: "after_teacher_contact_success", setFlags: ["has_number_teacher", "has_any_contact"], stats: { Teacher: { affinity: 10 } } },
-            { text: "Sorry, I think it's a bit too early.", next: "after_teacher_contact_fail", stats: { Teacher: { affinity: -15 } } }
-        ]
-    },
-    "after_teacher_contact_already": {
-        name: "Teacher",
-        text: "\"Oh wait, we already exchanged numbers earlier. Hehe, I forgot. Then I'll head back to work. See you tomorrow!\"",
-        character: "assets/images/characters/teacher_smile.png",
-        sunset: true,
-        next: "after_home"
-    },
-    "after_teacher_contact_success": {
-        name: "Teacher",
-        text: "(The teacher enters my number happily.) \"Thank you, {name}! Feel free to contact me anytime. I'll always answer!\"",
-        character: "assets/images/characters/teacher_smile.png",
-        sunset: true,
-        next: "after_home"
-    },
-    "after_teacher_contact_fail": {
-        name: "Teacher",
-        text: "(The teacher looks a bit disappointed but forces a smile.) \"Oh, I see... Sorry, was I being too hasty? Let's take our time getting to know each other. See you tomorrow.\"",
-        character: "assets/images/characters/teacher_normal.png",
-        sunset: true,
+        setFlags: ["has_number_teacher", "has_any_contact"],
+        stats: { Teacher: { affinity: 5 } },
         next: "after_home"
     },
     "after_seoyeon": {
