@@ -619,24 +619,6 @@ Object.assign(SCENARIO[1], {
     },
     "after_yuna_rude_2": {
         name: "Yuna",
-        text: "\"You sound like someone monitoring me... Don't you have anything better to do? The energy around you doesn't feel good either. I don't want to open up to someone like you. Leave.\"",
-        character: "assets/images/characters/yuna_normal.png",
-        next: "after_home"
-    },
-        name: "Yuna",
-        text: "\"Cafeteria food...? Talk about such mundane things with others. I'm busy, so don't bother me and leave.\"",
-        character: "assets/images/characters/yuna_normal.png",
-        next: "after_home"
-    },
-    "after_yuna_rude": {
-        name: "Yuna",
-        text: "(She closes her book and stares at me coldly. The air seems to freeze instantly.)",
-        character: "assets/images/characters/yuna_normal.png",
-        stats: { Yuna: { affinity: -15 } },
-        next: "after_yuna_rude_2"
-    },
-    "after_yuna_rude_2": {
-        name: "Yuna",
         text: "\"Since this morning...? You still know nothing. This strange aura surrounding the school... can't you feel it? Ignorance can sometimes be a sin. Disappear from my sight.\"",
         character: "assets/images/characters/yuna_normal.png",
         next: "after_home"
