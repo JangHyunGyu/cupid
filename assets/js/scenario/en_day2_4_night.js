@@ -135,6 +135,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_nurse_home_4": {
         name: "Me",
+        text: null,
+        background: "assets/images/background/nurse_home_event1.png",
+        character: null,
+        next: "day2_night_nurse_home_5"
+    },
+    "day2_night_nurse_home_5": {
+        name: "Me",
         text: "(A room left alone with the teacher... my heartbeat sounds loud enough to ring in my ears. Her scent tickles the tip of my nose, and the night grows deeper.)",
         background: "assets/images/background/nurse_house.png",
         character: null,
@@ -187,8 +194,8 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         affinityChar: "Seoyeon",
         affinityBranches: [
-            { minAffinity: 60, next: "day2_night_message_seyoun_reply_high" },
-            { minAffinity: 20, next: "day2_night_message_seyoun_reply_normal" },
+            { minAffinity: 25, next: "day2_night_message_seyoun_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_seyoun_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_seyoun_reply_low" }
         ],
         next: "day2_night_message_seyoun_reply_normal"
@@ -221,6 +228,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(What message should I send to Yuna?)",
         branches: [
+            { next: "day2_night_message_yuna_met", condition: "day2_met_yuna_after" },
             { next: "day2_night_message_yuna_met", condition: "day2_met_yuna_lunch" },
             { next: "day2_night_message_yuna_generic" }
         ]
@@ -248,8 +256,8 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         affinityChar: "Yuna",
         affinityBranches: [
-            { minAffinity: 40, next: "day2_night_message_yuna_reply_high" },
-            { minAffinity: 10, next: "day2_night_message_yuna_reply_normal" },
+            { minAffinity: 25, next: "day2_night_message_yuna_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_yuna_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_yuna_reply_low" }
         ],
         next: "day2_night_message_yuna_reply_normal"
@@ -282,9 +290,17 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(What message should I send to Dain?)",
         branches: [
-            { next: "day2_night_message_dain_bet", condition: "day2_dain_bet" },
-            { next: "day2_night_message_dain_practice", condition: "day2_met_dain_lunch" },
+            { next: "day2_night_message_dain_after", condition: "day2_met_dain_after" },
+            { next: "day2_night_message_dain_lunch", condition: "day2_met_dain_lunch" },
             { next: "day2_night_message_dain_generic" }
+        ]
+    },
+    "day2_night_message_dain_after": {
+        name: "Me",
+        text: "(I remember the practice session after school. What message should I send?)",
+        branches: [
+            { next: "day2_night_message_dain_bet", condition: "day2_dain_bet" },
+            { next: "day2_night_message_dain_practice" }
         ]
     },
     "day2_night_message_dain_bet": {
@@ -296,6 +312,12 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_dain_practice": {
         name: "Me",
         text: "Good job practicing today! It was fun thanks to you. See you tomorrow!",
+        setFlag: "sent_msg_day2_dain",
+        next: "day2_night_message_dain_reply"
+    },
+    "day2_night_message_dain_lunch": {
+        name: "Me",
+        text: "It was fun seeing you at the store today! Let's get tteokbokki tomorrow.",
         setFlag: "sent_msg_day2_dain",
         next: "day2_night_message_dain_reply"
     },
@@ -316,8 +338,8 @@ Object.assign(SCENARIO[2], {
         silhouette: true,
         affinityChar: "Dain",
         affinityBranches: [
-            { minAffinity: 50, next: "day2_night_message_dain_reply_high" },
-            { minAffinity: 15, next: "day2_night_message_dain_reply_normal" },
+            { minAffinity: 25, next: "day2_night_message_dain_reply_high" },
+            { minAffinity: 0, next: "day2_night_message_dain_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_dain_reply_low" }
         ],
         next: "day2_night_message_dain_reply_normal"
