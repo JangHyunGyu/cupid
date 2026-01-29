@@ -1340,6 +1340,14 @@ class UIManager {
         // 변화량이 0이면 표시 안 함
         if (amount === 0) return;
 
+        // 효과음 재생 (soundManager가 존재하는 경우에만)
+        if (typeof soundManager !== 'undefined') {
+            const sfxPath = amount > 0 
+                ? 'assets/audio/sfx/affinity_up.mp3'
+                : 'assets/audio/sfx/affinity_down.mp3';
+            soundManager.playSfx(sfxPath);
+        }
+
         // 팝업 요소 생성
         const popup = document.createElement('div');
         popup.className = `affinity-popup ${amount > 0 ? 'positive' : 'negative'}`;
@@ -1358,8 +1366,8 @@ class UIManager {
         popup.appendChild(value);
         document.body.appendChild(popup);
 
-        // 5초 후 자동 제거
-        setTimeout(() => popup.remove(), 5000);
+        // 8초 후 자동 제거 (더 오래 유지)
+        setTimeout(() => popup.remove(), 8000);
     }
 
     /** 
