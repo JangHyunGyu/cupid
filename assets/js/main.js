@@ -3336,48 +3336,6 @@ class GameEngine {
             }
         }
     }
-    
-    // ============================================================================================
-    // 📊 applyStatsCharacter - 선택지 스탯 처리
-    // ============================================================================================
-    // 📌 시나리오의 stats 정의를 실제 게임 상태에 반영합니다.
-    // 예:
-    // stats: { "#{current_character}": { affinity: 3 } }
-    applyStatsCharacter(stats) {
-        for (const key in stats) {
-            let targetKey = key;
-    
-            // ─────────────────────────────────────────────────────────
-            // 🔄 동적 타겟 처리
-            // ─────────────────────────────────────────────────────────
-            // "#{current_character}" → 실제 캐릭터 키로 변환
-            if (key === "#{current_character}") {
-                targetKey = this.stateManager.getCurrentCharacter();
-            }
-    
-            // 타겟이 없거나 스탯이 정의되지 않은 경우 스킵
-            if (!targetKey || !this.stateManager.stats[targetKey]) continue;
-    
-            const changes = stats[key];
-    
-            // 스탯 반영
-            for (const stat in changes) {
-                const amount = changes[stat];
-                this.stateManager.stats[targetKey][stat] += amount;
-    
-                // ─────────────────────────────────────────────────────
-                // 💕 호감도 변화 UI 표시
-                // ─────────────────────────────────────────────────────
-                if (stat === 'affinity') {
-                    this.uiManager.showAffinityChange(amount);
-                    this.galleryManager.checkAffinityUnlock(
-                        targetKey,
-                        this.stateManager.stats[targetKey][stat]
-                    );
-                }
-            }
-        }
-    }
 
     /**
      * ═══════════════════════════════════════════════════════════════
@@ -3492,25 +3450,27 @@ class GameEngine {
      * 선택에 따른 플래그 설정, 호감도 변화, 분기 처리를 담당합니다.
      * 
      * ▶ 처리 순서:
-     * 1. 플래그 설정 (setFlag, setFlags)
-     * 2. 스탯/호감도 변경 (stats)
-     * 3. 호감도 기반 분기 처리 (affinityBranches)
-     * 4. 다음 씬으로 이동 (next)
+     * 1. 플래그 설정 (setFlag, setFlags) - 게임 진행 상태 기록
+     * 2. 스탯/호감도 변경 (stats) - 캐릭터별 호감도 증감 및 UI 반영
+     * 3. 호감도 기반 분기 처리 (affinityBranches) - 조건에 따라 다음 씬 결정
+     * 4. 다음 씬으로 이동 (next) - 결정된 씬 렌더링
      * 
      * ▶ 선택지 데이터 구조 예시:
      * {
      *   text: "꽃을 선물한다",
-     *   setFlag: "gaveFlower",           // 단일 플래그
-     *   setFlags: ["romantic", "kind"],  // 복수 플래그
+     *   setFlag: "gaveFlower",                        // 단일 플래그 설정
+     *   setFlags: ["romantic", "kind"],               // 복수 플래그 설정
      *   stats: {
-     *     soyeon: { affinity: 10 }        // 소연 호감도 +10
+     *     Seoyeon: { affinity: 10 },                  // 서연 호감도 +10
+     *     Dain: { affinity: -5 },                     // 다인 호감도 -5 (질투)
+     *     "#{current_character}": { affinity: 3 }     // 현재 대화중인 캐릭터 +3
      *   },
-     *   affinityBranches: [               // 호감도 분기
-     *     { minAffinity: 50, next: "good_ending" },
-     *     { minAffinity: 20, next: "normal_ending" }
+     *   affinityBranches: [                           // 호감도 기반 분기
+     *     { minAffinity: 50, next: "good_ending" },   // 50 이상 → 굿엔딩
+     *     { minAffinity: 20, next: "normal_ending" }  // 20 이상 → 노말엔딩
      *   ],
-     *   affinityChar: "soyeon",          // 분기 기준 캐릭터
-     *   next: "bad_ending"                // 기본 다음 씬
+     *   affinityChar: "Seoyeon",                      // 분기 기준 캐릭터
+     *   next: "bad_ending"                            // 기본 다음 씬 (조건 미달 시)
      * }
      * 
      * @param {Object} choice - 실행할 선택지 객체
@@ -3518,36 +3478,104 @@ class GameEngine {
     async executeChoice(choice) {
         // ─────────────────────────────────────────────────────────
         // 📌 1단계: 플래그 설정
-        // 플래그는 게임 진행 상황을 기록하는 true/false 값
         // ─────────────────────────────────────────────────────────
+        // 플래그는 게임 진행 상황을 기록하는 true/false 값입니다.
+        // 예: "gaveFlower" 플래그 → 이후 시나리오에서 "꽃을 줬는지" 확인 가능
+        // 조건 분기: if (flag.gaveFlower) { "꽃 선물 받았던 장면이 기억나네요" }
 
         // 단일 플래그 설정 (setFlag: "flagName")
         if (choice.setFlag) this.stateManager.setFlag(choice.setFlag);
 
         // 복수 플래그 설정 (setFlags: ["flag1", "flag2"])
+        // 하나의 선택으로 여러 플래그를 동시에 설정할 때 사용
         if (choice.setFlags?.length) choice.setFlags.forEach(flag => this.stateManager.setFlag(flag));
 
         // ─────────────────────────────────────────────────────────
         // 📌 2단계: 스탯(호감도) 변경
-        // 선택에 따라 캐릭터별 호감도를 증가/감소
         // ─────────────────────────────────────────────────────────
+        // 선택지에 따라 한 명 또는 여러 명의 호감도를 동시에 변경합니다.
+        // 
+        // 처리 케이스:
+        // 1. 일반 캐릭터: "Seoyeon", "Dain" 등 직접 지정
+        // 2. 동적 캐릭터: "#{current_character}" → 현재 대화 중인 캐릭터로 자동 변환
+        // 3. 복수 캐릭터: 한 선택지로 여러 캐릭터 호감도 동시 변경 가능
+        //
+        // 예시 상황:
+        // - "서연을 칭찬한다" → Seoyeon +10, Dain -5 (질투)
+        // - "선생님께 인사한다" → Teacher +5
+        // - "현재 대화중인 캐릭터 선물" → #{current_character} +10
+        
         if (choice.stats) {
-            // 현재 선택된 캐릭터 호출
-            this.applyStatsCharacter(choice.stats);
-            // stats: { Seoyeon: { affinity: 10 }, Dain: { affinity: -5 } }
+            // stats 객체의 각 캐릭터별로 순회
+            // 예: { Seoyeon: { affinity: 10 }, "#{current_character}": { affinity: 5 } }
             for (const [char, stats] of Object.entries(choice.stats)) {
-                // 🔧 charNameMap을 통해 캐릭터 키 정규화 (한/영 호환)
-                const charKey = this.sceneRenderer.charNameMap[char] || char;
+                let charKey = char;
+                
+                // ───────────────────────────────────────────────────
+                // 🔄 캐릭터 키 변환 처리
+                // ───────────────────────────────────────────────────
+                // char 값에 따라 두 가지 방식으로 처리:
+                // 1. 동적 키인 경우: "#{current_character}" → 실제 캐릭터로 변환
+                // 2. 일반 키인 경우: "Seoyeon", "소연" 등 → 정규화된 키로 변환
+                
+                if (char === "#{current_character}") {
+                    // ═══════════════════════════════════════════════
+                    // IF: 동적 키 처리 (런타임에 캐릭터 결정)
+                    // ═══════════════════════════════════════════════
+                    // "#{current_character}"는 현재 대화 중인 캐릭터를 가리키는 특수 키
+                    // 예: 서연과 대화 중 → "Seoyeon"으로 변환
+                    //     다인과 대화 중 → "Dain"으로 변환
+                    //     유나와 대화 중 → "Yuna"로 변환
+                    charKey = this.stateManager.getCurrentCharacter();
+                    
+                    // 현재 대화중인 캐릭터가 없으면 스킵 (안전장치)
+                    // 예: 내레이션 씬, 주인공 독백 등
+                    if (!charKey) continue;
+                    
+                } else {
+                    // ═══════════════════════════════════════════════
+                    // ELSE: 일반 키 처리 (고정된 캐릭터)
+                    // ═══════════════════════════════════════════════
+                    // 시나리오에 직접 지정된 캐릭터 이름을 정규화된 키로 변환
+                    // 
+                    // charNameMap 예시:
+                    // {
+                    //   "소연": "Seoyeon",
+                    //   "서연": "Seoyeon",  // 오타 허용
+                    //   "Seoyeon": "Seoyeon", // 이미 정규화된 키
+                    //   "다인": "Dain",
+                    //   "Dain": "Dain"
+                    // }
+                    //
+                    // 변환 예시:
+                    // - "소연" 입력 → "Seoyeon" 반환
+                    // - "Seoyeon" 입력 → "Seoyeon" 그대로 반환
+                    // - 없는 키 입력 → 원본 그대로 반환 (|| char)
+                    charKey = this.sceneRenderer.charNameMap[char] || char;
+                }
+                
+                // ─────────────────────────────────────────────────
+                // 💕 호감도 변경 및 UI 업데이트
+                // ─────────────────────────────────────────────────
+                // stats.affinity가 있고, 해당 캐릭터가 존재하는 경우만 처리
                 if (stats.affinity && this.stateManager.stats[charKey]) {
-                    // 호감도 수치 변경
+                    // 1️⃣ 호감도 수치 변경
+                    // changeAffinity(캐릭터, 변화량) → 새로운 호감도 반환
+                    // 예: 현재 30 + 변화량 10 = 새 값 40
                     const newValue = this.stateManager.changeAffinity(charKey, stats.affinity);
 
-                    // 💕 화면에 호감도 변화 애니메이션 표시
-                    // 예: "+10 ♥" 또는 "-5 💔"
+                    // 2️⃣ 화면에 호감도 변화 애니메이션 표시
+                    // +10이면 "♥ +10" 빨간색으로 띄움
+                    // -5면 "💔 -5" 회색으로 띄움
                     this.uiManager.showAffinityChange(stats.affinity, charKey);
 
-                    // 📊 갤러리 통계 업데이트 (최대 호감도, 해금 체크)
+                    // 3️⃣ 갤러리 통계 업데이트
+                    // 해당 캐릭터의 역대 최대 호감도 기록 업데이트
                     this.galleryManager.updateMaxAffinity(charKey, newValue);
+                    
+                    // 4️⃣ 갤러리 해금 체크
+                    // 호감도가 일정 수치 도달 시 갤러리 이미지 해금
+                    // 예: 호감도 30 이상 → CG 1번 해금, 50 이상 → CG 2번 해금
                     this.galleryManager.checkAffinityUnlock(charKey, newValue);
                 }
             }
