@@ -217,6 +217,66 @@
         }
 
         /* Mobile Portrait & Landscape Tweaks */
+        /* Mobile portrait mode */
+        @media (max-width: 768px) and (orientation: portrait) {
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .start-btn {
+                padding: 12px 40px;
+                font-size: 1.2rem;
+            }
+
+            .footer {
+                bottom: 20px;
+            }
+        }
+
+        /* Small mobile screens */
+        @media (max-width: 480px) and (orientation: portrait) {
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 0.3rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .start-btn {
+                padding: 10px 35px;
+                font-size: 1.1rem;
+            }
+
+            .footer {
+                bottom: 15px;
+                gap: 8px;
+            }
+
+            .contact-links {
+                gap: 12px;
+            }
+
+            .contact-link {
+                padding: 6px 15px;
+                font-size: 0.8rem;
+            }
+
+            .footer p {
+                font-size: 0.75rem !important;
+                margin-bottom: 3px !important;
+            }
+        }
+
+        /* Mobile landscape mode */
         @media (max-height: 500px) and (orientation: landscape) {
             h1 {
                 font-size: 2rem;
