@@ -2908,6 +2908,32 @@ class SceneRenderer {
             }
         });
     }
+    // ============================================================================================
+    // 🚩 연락처 합성 플래그 계산
+    // ============================================================================================
+    // 📌 여러 개의 기본 플래그를 조합해서
+    //    시나리오에서 쓰기 좋은 단일 플래그를 생성합니다.
+    //    예: has_any_contact = 서연/유나/다인/선생님 중 누구라도 연락처가 있음
+    updateCompositeFlags() {
+        const contactFlags = [
+            "has_number_seyoun",
+            "has_number_yuna",
+            "has_number_dain",
+            "has_number_nurse",
+            "has_number_teacher"
+        ];
+    
+        // 하나라도 true면 has_any_contact = true
+        const hasAnyContact = contactFlags.some(
+            flag => this.stateManager.getFlag(flag)
+        );
+    
+        if (hasAnyContact) {
+            this.stateManager.setFlag("has_any_contact");
+        } else {
+            this.stateManager.clearFlag("has_any_contact");
+        }
+    }
 
     /** 
      * 씬의 플래그/날짜 변경 처리
@@ -3746,6 +3772,7 @@ class GameEngine {
         // 씬에 정의된 setFlag, checkFlag, stats 등 처리
         this.sceneRenderer.processSceneFlags(scene);
         this.sceneRenderer.processSceneStats(scene);
+        this.sceneRenderer.updateCompositeFlags();
 
         // ─────────────────────────────────────────────────────────
         // 🌅 7단계: 시간대 필터 적용
