@@ -6,478 +6,629 @@
  *  파일 정보
  * ----------------------------------------------------------------------------
  * 파일명: en_day3_1_morning.js
- * 언어: 영문 (English)
+ * 언어: 영어 (English)
  * 일차: Day 3 (3일차)
  * 시간대: Morning (아침)
  * 
  *  시나리오 개요
  * ----------------------------------------------------------------------------
- * 플레이어가 전학 온 지 3일째 되는 날 아침입니다.
- * 스마트폰에 각 캐릭터들로부터 주말 약속 메시지가 도착해 있습니다.
- * 플레이어의 선택에 따라 주말 데이트가 확정됩니다.
+ * 전학 3일차이자 금요일 아침의 상황을 다룹니다.
+ * 히로인들로부터 주말 데이트 제안 메시지를 받게 되며, 여러 명의 제안을 동시에
+ * 수락할 경우 발생할 수 있는 '갈등(Date Conflict)'의 서막이 열리는 시점입니다.
  * 
  *  주요 이벤트
  * ----------------------------------------------------------------------------
- * 1. 아침 기상 - 알람에 일어나 하루를 시작
- * 2. 메시지 확인 - 각 캐릭터별 주말 약속 초대 메시지
- * 3. 약속 수락/거절 - 호감도 +5 (수락) 또는 +2 (나중에)
- * 4. 등교 - 복합 약속 시 갈등 가능성 암시
+ * 1. 아침 기상 및 일상 - 전학 사흘째의 익숙함과 금요일 아침의 환기
+ * 2. 메시지 확인 (Weekend Invites) - 호감도가 있는 캐릭터들로부터의 주말 약속 제안
+ * 3. 답장 및 약속 확정 - 각 캐릭터별 제안 수락/보류 선택 (호감도 변화)
+ * 4. 등교 및 갈등 체크 - 주말 약속 중복 여부에 따른 교문 앞 연출 차별화
  * 
- *  조건 플래그 설명
+ *  조건 플래그 설명 (Condition Flags)
  * ----------------------------------------------------------------------------
- * has_any_contact     : 연락처가 있는 캐릭터가 1명 이상 있는지
- * has_number_seyoun   : 서연 연락처 보유 여부
- * has_number_yuna     : 유나 연락처 보유 여부
- * has_number_dain     : 다인 연락처 보유 여부
- * has_number_nurse    : 보건선생님 연락처 보유 여부
- * has_number_teacher  : 담임선생님 연락처 보유 여부
+ * has_any_contact      : 한 명이라도 연락처가 있는지 확인 (메시지 체크 진입 조건)
+ * has_number_*         : 특정 히로인의 연락처가 있는지 확인 (개별 메시지 수신 조건)
+ * day3_has_multiple_dates : 두 명 이상의 주말 약속을 확정했는지 체크 (갈등 연출 조건)
  * 
- *  설정 플래그 설명
+ *  설정 플래그 설명 (Set Flags)
  * ----------------------------------------------------------------------------
- * day3_*_weekend_invite   : 해당 캐릭터에게 주말 초대 메시지를 받음
- * day3_*_date_confirmed   : 해당 캐릭터와 주말 약속이 확정됨
- * day3_has_multiple_dates : 여러 캐릭터와 약속이 겹침 (갈등 트리거)
+ * day3_*_weekend_invite : 주말 약속 제안을 받았음을 기록
+ * day3_*_date_confirmed : 주말 데이트 약속이 확정되었음을 기록
  * 
- *  호감도 변화
+ *  호감도 변화 (Stats Changes)
  * ----------------------------------------------------------------------------
- * 약속 수락 시: +5
- * 나중에 답장 시: +2
- * 답장 안함: 변화 없음
+ * 제안 수락(+5) 또는 보류(+2) 선택에 따라 각 히로인의 호감도 소폭 상승
+ * 
+ *  특이 사항
+ * ----------------------------------------------------------------------------
+ * - silhouette: true - 메시지 대화 연출 시 신비로운 분위기 유지
+ * - day3_has_multiple_dates: 향후 '배신' 또는 '수라장' 루트 진입을 위한 엔진 체크용 플래그
  * 
  * ============================================================================
  */
 
 // SCENARIO 전역 객체 초기화
-// 다른 시나리오 파일과 충돌하지 않도록 존재 여부 확인 후 생성
 if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 
 // Day 3 시나리오 그룹 초기화
-// SCENARIO[3]은 3일차 모든 시나리오를 담는 객체
 if (!SCENARIO[3]) {
     SCENARIO[3] = {};
 }
 
-// Day 3 아침 시나리오 데이터 추가
+/**
+ * [Day 3 - Morning] 씬 데이터 정의
+ */
 Object.assign(SCENARIO[3], {
-
-    // =========================================================================
-    //  아침 기상 시퀀스 (Wake Up Sequence)
-    // =========================================================================
-    // 플레이어가 알람 소리에 일어나는 장면
-    // 전학 온 지 3일째, 점점 적응하고 있는 느낌
-
     "day3_start": {
-        name: "Me",                              // 화자: 플레이어 (나)
-        text: "(I wake up to the alarm. It's already my third day since transferring... I think I'm getting used to waking up in the morning.)",
-        background: "assets/images/background/room_my.png",  // 배경: 내 방
-        bgm: "intro.mp3",                        // 배경음악: 인트로
-        character: null,                         // 캐릭터 이미지 없음 (독백)
-        next: "day3_start_2"                     // 다음 씬으로 이동
+        name: "Me",
+        text: "(I wake up to the sound of my alarm. It's already been three days since I transferred... I'm starting to get used to waking up in the morning.)",
+        background: "assets/images/background/room_my.png",
+        bgm: "intro.mp3",
+        character: null,
+        next: "day3_start_2"
     },
-
     "day3_start_2": {
         name: "Me",
-        text: "(Looking outside, the weather is really nice today. It's already Friday... what should I do this weekend?)",
+        text: "(Looking outside, the weather is really nice today. It's already Friday... What should I do this weekend?)",
         next: "day3_start_3"
     },
-
     "day3_start_3": {
         name: "Me",
-        text: "(I check my smartphone and there are several unread messages. I wonder who they're from?)",
-        // branches: 조건에 따라 다른 경로로 분기
-        // 첫 번째 조건이 참이면 해당 next로, 아니면 다음 조건 검사
+        text: "(I check my smartphone and see there are unread messages. Who could it be?)",
         branches: [
-            {
-                next: "day3_morning_message_check",
-                condition: "has_any_contact"     // 연락처가 있으면 메시지 확인
-            },
-            {
-                next: "day3_school_gate"          // 없으면 바로 등교
-            }
+            { next: "day3_morning_message_check", condition: "has_any_contact" },
+            { next: "day3_prepare_school_no_contact" }
         ]
     },
-
-    // =========================================================================
-    //  메시지 확인 선택지 (Message Selection)
-    // =========================================================================
-    // 플레이어가 어떤 캐릭터의 메시지를 먼저 확인할지 선택
-    // condition: 해당 캐릭터 연락처가 있어야 선택지 표시
-
+    
     "day3_morning_message_check": {
         name: "Me",
         text: "(Let me check the messages.)",
-        // choices: 플레이어 선택지 (선택에 따라 다른 경로)
         choices: [
-            {
-                text: "Check Seoyeon's message",       // 선택지 텍스트
-                next: "day3_morning_msg_seoyeon",     // 선택 시 이동할 씬
-                condition: "has_number_seyoun"        // 서연 연락처 필요
-            },
-            {
-                text: "Check Yuna's message",
-                next: "day3_morning_msg_yuna",
-                condition: "has_number_yuna"
-            },
-            {
-                text: "Check Dain's message",
-                next: "day3_morning_msg_dain",
-                condition: "has_number_dain"
-            },
-            {
-                text: "Check the nurse's message",
-                next: "day3_morning_msg_nurse",
-                condition: "has_number_nurse"
-            },
-            {
-                text: "Check the teacher's message",
-                next: "day3_morning_msg_teacher",
-                condition: "has_number_teacher"
-            },
-            {
-                text: "Check later and head to school",
-                next: "day3_school_gate"              // 조건 없음 (항상 표시)
-            }
+            { text: "Check Seoyeon's message", next: "day3_show_message", condition: "has_number_seyoun", setFlags: ["viewing_seoyeon", "first_check"] },
+            { text: "Check Yuna's message", next: "day3_show_message", condition: "has_number_yuna", setFlags: ["viewing_yuna", "first_check"] },
+            { text: "Check Dain's message", next: "day3_show_message", condition: "has_number_dain", setFlags: ["viewing_dain", "first_check"] },
+            { text: "Check Nurse's message", next: "day3_show_message", condition: "has_number_nurse", setFlags: ["viewing_nurse", "first_check"] },
+            { text: "Check Homeroom Teacher's message", next: "day3_show_message", condition: "has_number_teacher", setFlags: ["viewing_teacher", "first_check"] }
         ]
     },
-
-    // =========================================================================
-    //  서연 메시지 시퀀스 (Seoyeon's Message)
-    // =========================================================================
-    // 서연: 밝고 활발한 성격, 카페 데이트 제안
-    // 메시지 시간: 새벽 6시 (아침형 인간)
-
-    "day3_morning_msg_seoyeon": {
-        name: "Seoyeon",
-        text: "(Message from 6 AM) 'Good morning! {name}, fighting today! Oh, and... do you have time this weekend? Want to go to a café together? ☕'",
-        character: "assets/images/characters/seyoun_normal.png",
-        silhouette: true,                        // 실루엣으로 표시 (미해금 시)
-        setFlag: "day3_seoyeon_weekend_invite",  // 플래그 설정: 서연 초대 받음
-        next: "day3_morning_msg_seoyeon_choice"
-    },
-
-    "day3_morning_msg_seoyeon_choice": {
-        name: "Me",
-        text: "(A weekend date... how should I reply?)",
-        choices: [
-            {
-                text: "Sure! When and where?",
-                next: "day3_morning_msg_seoyeon_yes",
-                stats: { Seoyeon: { affinity: 5 } }  // 호감도 +5
-            },
-            {
-                text: "Let me think about it. I'll tell you at school!",
-                next: "day3_morning_msg_seoyeon_later",
-                stats: { Seoyeon: { affinity: 2 } }  // 호감도 +2
-            },
-            {
-                text: "Don't reply and head to school",
-                next: "day3_school_gate"             // 호감도 변화 없음
-            }
+    "day3_show_message": {
+        branches: [
+            { next: "day3_msg_seoyeon", condition: "viewing_seoyeon" },
+            { next: "day3_msg_yuna", condition: "viewing_yuna" },
+            { next: "day3_msg_dain", condition: "viewing_dain" },
+            { next: "day3_msg_nurse", condition: "viewing_nurse" },
+            { next: "day3_msg_teacher", condition: "viewing_teacher" }
         ]
     },
-
-    "day3_morning_msg_seoyeon_yes": {
+    "day3_msg_seoyeon": {
         name: "Seoyeon",
-        text: "(Instant reply) 'Really?! Yay~ How about the café in front of school at 2 PM on Saturday? I'm so excited! '",
-        character: "assets/images/characters/seyoun_laugh.png",  // 웃는 표정
-        silhouette: true,
-        setFlag: "day3_seoyeon_date_confirmed",  // 플래그: 약속 확정!
-        next: "day3_school_gate"
-    },
-
-    "day3_morning_msg_seoyeon_later": {
-        name: "Seoyeon",
-        text: "'Okay! Let's talk at school. See you at lunch!'",
+        text: "(Message sent at 6 AM) 'Good morning! {name}, fighting for today too! Oh, and would you like to walk to school together? I'll wait for you in front of your house!'",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
-        next: "day3_school_gate"
-    },
-
-    // =========================================================================
-    //  유나 메시지 시퀀스 (Yuna's Message)
-    // =========================================================================
-    // 유나: 미스터리한 성격, 비밀 장소 제안
-    // 메시지 시간: 새벽 3시 (밤형 인간, 수면 장애 암시)
-
-    "day3_morning_msg_yuna": {
-        name: "Yuna",
-        text: "(Message from 3 AM) '...{name}. There's a place I want to show only you this weekend. Meet me at the school back gate at noon. You have to come.'",
-        character: "assets/images/characters/yuna_normal.png",
-        silhouette: true,
-        setFlag: "day3_yuna_weekend_invite",
-        next: "day3_morning_msg_yuna_choice"
-    },
-
-    "day3_morning_msg_yuna_choice": {
-        name: "Me",
-        text: "(A message at 3 AM... Does Yuna not sleep? How should I reply?)",
-        choices: [
-            {
-                text: "Okay, I'll definitely be there.",
-                next: "day3_morning_msg_yuna_yes",
-                stats: { Yuna: { affinity: 5 } }
-            },
-            {
-                text: "Let's talk about it at school.",
-                next: "day3_morning_msg_yuna_later",
-                stats: { Yuna: { affinity: 2 } }
-            },
-            {
-                text: "Don't reply and head to school",
-                next: "day3_school_gate"
-            }
+        branches: [
+            { next: "day3_msg_response_first", condition: "first_check" },
+            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
         ]
     },
-
-    "day3_morning_msg_yuna_yes": {
+    "day3_msg_yuna": {
         name: "Yuna",
-        text: "(Reply after a while) '...Thank you. I'll be waiting.'",
-        character: "assets/images/characters/yuna_smile.png",    // 희미한 미소
-        silhouette: true,
-        setFlag: "day3_yuna_date_confirmed",
-        next: "day3_school_gate"
-    },
-
-    "day3_morning_msg_yuna_later": {
-        name: "Yuna",
-        text: "'...Okay. See you at school.'",
+        text: "(Message sent at 3 AM) '...{name}. I'll wait for you at the back gate this morning. Let's go together.'",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
-        next: "day3_school_gate"
-    },
-
-    // =========================================================================
-    //  다인 메시지 시퀀스 (Dain's Message)
-    // =========================================================================
-    // 다인: 스포츠 소녀, 배구 연습 응원 요청
-    // 메시지 시간: 아침 7시 (건강한 아침형)
-
-    "day3_morning_msg_dain": {
-        name: "Dain",
-        text: "(Message from 7 AM) 'Hey! {name}! We have sports day practice today! Can you come to the gym at lunch? Also, we have volleyball practice at 9 AM on Saturday. Want to come cheer? 😆'",
-        character: "assets/images/characters/dain_laugh.png",
-        silhouette: true,
-        setFlag: "day3_dain_weekend_invite",
-        next: "day3_morning_msg_dain_choice"
-    },
-
-    "day3_morning_msg_dain_choice": {
-        name: "Me",
-        text: "(9 AM on Saturday... That's early. How should I reply?)",
-        choices: [
-            {
-                text: "Sure! I'll definitely be there. I'll cheer my best!",
-                next: "day3_morning_msg_dain_yes",
-                stats: { Dain: { affinity: 5 } }
-            },
-            {
-                text: "Let me think about it. I'll tell you at school!",
-                next: "day3_morning_msg_dain_later",
-                stats: { Dain: { affinity: 2 } }
-            },
-            {
-                text: "Don't reply and head to school",
-                next: "day3_school_gate"
-            }
+        branches: [
+            { next: "day3_msg_response_first", condition: "first_check" },
+            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
         ]
     },
-
-    "day3_morning_msg_dain_yes": {
+    "day3_msg_dain": {
         name: "Dain",
-        text: "'Really?! Awesome! See you at the gym at 9 on Saturday! Let's grab lunch after practice! '",
+        text: "(Message sent at 7 AM) 'Yay! {name}! Let's go to school together! Where do you live? I'll come find you! ><'",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
-        setFlag: "day3_dain_date_confirmed",
-        next: "day3_school_gate"
+        branches: [
+            { next: "day3_msg_response_first", condition: "first_check" },
+            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
+        ]
     },
-
-    "day3_morning_msg_dain_later": {
+    "day3_msg_nurse": {
+        name: "School Nurse",
+        text: "(Message sent last night at 11 PM) 'Hehe, {name}. How about walking to school together this morning? Just the two of us... 😉'",
+        character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
+        branches: [
+            { next: "day3_msg_response_first_teachers", condition: "first_check" },
+            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
+        ]
+    },
+    "day3_msg_teacher": {
+        name: "Homeroom Teacher",
+        text: "(Message sent last night at 10 PM) '{name}, are you going to school early tomorrow morning? I'm going early too, would you like to walk together?'",
+        character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
+        branches: [
+            { next: "day3_msg_response_first_teachers", condition: "first_check" },
+            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
+        ]
+    },
+    "day3_msg_response_first": {
+        name: "Me",
+        text: "(How should I reply?)",
+        choices: [
+            { text: "Sure! Let's go together", next: "day3_accept_walk", stats: { "#{current_character}": { affinity: 3 } } },
+            { text: "Sorry, I'll go alone today", next: "day3_reject_walk", stats: { "#{current_character}": { affinity: -5 } } },
+            { text: "Check other messages", next: "day3_check_more_messages" }
+        ]
+    },
+    "day3_msg_response_first_teachers": {
+        name: "Me",
+        text: "(How should I reply?)",
+        choices: [
+            { text: "Yes! Let's go together", next: "day3_accept_walk", stats: { "#{current_character}": { affinity: 3 } } },
+            { text: "Sorry, I'll go alone today", next: "day3_reject_walk", stats: { "#{current_character}": { affinity: -5 } } },
+            { text: "Check other messages", next: "day3_check_more_messages" }
+        ]
+    },    
+    "day3_msg_response_after_check": {
+        name: "Me",
+        text: "(I already saw this message...)",
+        next: "day3_return_to_choice"
+    },
+    "day3_accept_walk": {
+        branches: [
+            { next: "day3_walk_with_seoyeon", condition: "viewing_seoyeon" },
+            { next: "day3_walk_with_yuna", condition: "viewing_yuna" },
+            { next: "day3_walk_with_dain", condition: "viewing_dain" },
+            { next: "day3_walk_with_nurse", condition: "viewing_nurse" },
+            { next: "day3_walk_with_teacher", condition: "viewing_teacher" }
+        ]
+    },
+    "day3_reject_walk": {
+        branches: [
+            { next: "day3_reject_msg_seoyeon", condition: "viewing_seoyeon", setFlags: ["rejected_seoyeon"] },
+            { next: "day3_reject_msg_yuna", condition: "viewing_yuna", setFlags: ["rejected_yuna"] },
+            { next: "day3_reject_msg_dain", condition: "viewing_dain", setFlags: ["rejected_dain"] },
+            { next: "day3_reject_msg_nurse", condition: "viewing_nurse", setFlags: ["rejected_nurse"] },
+            { next: "day3_reject_msg_teacher", condition: "viewing_teacher", setFlags: ["rejected_teacher"] }
+        ]
+    },
+    "day3_reject_msg_seoyeon": {
+        name: "Seoyeon",
+        text: "(Reply) 'Oh... I see. It's okay! See you at school then!'",
+        character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
+        next: "day3_after_reject"
+    },
+    "day3_reject_msg_yuna": {
+        name: "Yuna",
+        text: "(Reply) '...Alright. Sometimes it's more comfortable to go alone.'",
+        character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
+        next: "day3_after_reject"
+    },
+    "day3_reject_msg_dain": {
         name: "Dain",
-        text: "'Okay! See you at school! Are you coming to the gym at lunch?'",
+        text: "(Reply) 'Aw~ That's too bad! But see you at school!'",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
-        next: "day3_school_gate"
+        next: "day3_after_reject"
     },
-
-    // =========================================================================
-    //  보건선생님 메시지 시퀀스 (Nurse's Message)
-    // =========================================================================
-    // 보건선생님: 성숙한 매력, 비밀 브런치 제안
-    // 메시지 시간: 밤 11시 (금지된 관계 암시)
-
-    "day3_morning_msg_nurse": {
-        name: "Nurse",
-        text: "(Message from 11 PM last night) 'Hehe, {name}. Do you have time this weekend? How about brunch with me? Let's eat something delicious and chat. Of course... it has to be a secret. 😉'",
+    "day3_reject_msg_nurse": {
+        name: "School Nurse",
+        text: "(Reply) 'Oh my, really? That's a shame. See you at school then.'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
-        setFlag: "day3_nurse_weekend_invite",
-        next: "day3_morning_msg_nurse_choice"
+        next: "day3_after_reject"
     },
-
-    "day3_morning_msg_nurse_choice": {
-        name: "Me",
-        text: "(Brunch alone with the teacher... My heart is racing. How should I reply?)",
-        choices: [
-            {
-                text: "Yes! When and where shall we meet?",
-                next: "day3_morning_msg_nurse_yes",
-                stats: { Nurse: { affinity: 5 } }
-            },
-            {
-                text: "I'll think about it and tell you at school.",
-                next: "day3_morning_msg_nurse_later",
-                stats: { Nurse: { affinity: 2 } }
-            },
-            {
-                text: "Don't reply and head to school",
-                next: "day3_school_gate"
-            }
-        ]
-    },
-
-    "day3_morning_msg_nurse_yes": {
-        name: "Nurse",
-        text: "'Oh my, really? Then come to the café by the river at 11 on Sunday? I'll send you the address. I'll be looking forward to it. '",
-        character: "assets/images/characters/nurse_normal.png",
-        silhouette: true,
-        setFlag: "day3_nurse_date_confirmed",
-        next: "day3_school_gate"
-    },
-
-    "day3_morning_msg_nurse_later": {
-        name: "Nurse",
-        text: "'Alright. Come visit the nurse's office. I'll be waiting.'",
-        character: "assets/images/characters/nurse_normal.png",
-        silhouette: true,
-        next: "day3_school_gate"
-    },
-
-    // =========================================================================
-    //  담임선생님 메시지 시퀀스 (Teacher's Message)
-    // =========================================================================
-    // 담임선생님: 지적인 매력, 박물관 데이트 제안
-    // 메시지 시간: 밤 10시 (사려 깊은 시간대)
-
-    "day3_morning_msg_teacher": {
-        name: "Teacher",
-        text: "(Message from 10 PM last night) '{name}, do you have time this weekend? I got two tickets to a museum exhibition... Would you like to go together if you're interested?'",
+    "day3_reject_msg_teacher": {
+        name: "Homeroom Teacher",
+        text: "(Reply) 'Okay, understood. See you at school!'",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
-        setFlag: "day3_teacher_weekend_invite",
-        next: "day3_morning_msg_teacher_choice"
+        next: "day3_after_reject"
     },
-
-    "day3_morning_msg_teacher_choice": {
+    
+    // 거절 후
+    "day3_after_reject": {
         name: "Me",
-        text: "(A museum with the teacher... It sounds like a unique experience. How should I reply?)",
+        text: "(Should I check other messages?)",
         choices: [
-            {
-                text: "Yes! I'd love to go. When?",
-                next: "day3_morning_msg_teacher_yes",
-                stats: { Teacher: { affinity: 5 } }
-            },
-            {
-                text: "I'll think about it and tell you at school.",
-                next: "day3_morning_msg_teacher_later",
-                stats: { Teacher: { affinity: 2 } }
-            },
-            {
-                text: "Don't reply and head to school",
-                next: "day3_school_gate"
-            }
+            { text: "Check other messages", next: "day3_check_more_after_reject" },
+            { text: "Just go to school alone", next: "day3_prepare_school" }
         ]
     },
-
-    "day3_morning_msg_teacher_yes": {
-        name: "Teacher",
-        text: "'Really? Then let's meet in front of the museum at 3 PM on Saturday. I'm looking forward to it!'",
+    "day3_check_more_messages": {
+        name: "Me",
+        text: "(Let me check other messages.)",
+        choices: [
+            { text: "Check Seoyeon's message", next: "day3_show_message", condition: "has_number_seyoun", excludeCondition: "viewing_seoyeon", setFlags: ["viewing_seoyeon"] },
+            { text: "Check Yuna's message", next: "day3_show_message", condition: "has_number_yuna", excludeCondition: "viewing_yuna", setFlags: ["viewing_yuna"] },
+            { text: "Check Dain's message", next: "day3_show_message", condition: "has_number_dain", excludeCondition: "viewing_dain", setFlags: ["viewing_dain"] },
+            { text: "Check Nurse's message", next: "day3_show_message", condition: "has_number_nurse", excludeCondition: "viewing_nurse", setFlags: ["viewing_nurse"] },
+            { text: "Check Teacher's message", next: "day3_show_message", condition: "has_number_teacher", excludeCondition: "viewing_teacher", setFlags: ["viewing_teacher"] },
+            { text: "Go with Seoyeon", next: "day3_walk_with_seoyeon", condition: "viewing_seoyeon", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "Go with Yuna", next: "day3_walk_with_yuna", condition: "viewing_yuna", stats: { Yuna: { affinity: 3 } } },
+            { text: "Go with Dain", next: "day3_walk_with_dain", condition: "viewing_dain", stats: { Dain: { affinity: 3 } } },
+            { text: "Go with Nurse", next: "day3_walk_with_nurse", condition: "viewing_nurse", stats: { Nurse: { affinity: 3 } } },
+            { text: "Go with Teacher", next: "day3_walk_with_teacher", condition: "viewing_teacher", stats: { Teacher: { affinity: 3 } } },
+            { text: "Go alone", next: "day3_walk_alone" }
+        ]
+    },
+    "day3_check_more_after_reject": {
+        name: "Me",
+        text: "(Let me check other messages.)",
+        choices: [
+            { text: "Check Seoyeon's message", next: "day3_show_message_after_reject", condition: "has_number_seyoun", excludeCondition: "rejected_seoyeon", setFlags: ["viewing_seoyeon"] },
+            { text: "Check Yuna's message", next: "day3_show_message_after_reject", condition: "has_number_yuna", excludeCondition: "rejected_yuna", setFlags: ["viewing_yuna"] },
+            { text: "Check Dain's message", next: "day3_show_message_after_reject", condition: "has_number_dain", excludeCondition: "rejected_dain", setFlags: ["viewing_dain"] },
+            { text: "Check Nurse's message", next: "day3_show_message_after_reject", condition: "has_number_nurse", excludeCondition: "rejected_nurse", setFlags: ["viewing_nurse"] },
+            { text: "Check Teacher's message", next: "day3_show_message_after_reject", condition: "has_number_teacher", excludeCondition: "rejected_teacher", setFlags: ["viewing_teacher"] },
+            { text: "Just go to school alone", next: "day3_prepare_school" }
+        ]
+    },
+    "day3_show_message_after_reject": {
+        branches: [
+            { next: "day3_msg_seoyeon_after_reject", condition: "viewing_seoyeon" },
+            { next: "day3_msg_yuna_after_reject", condition: "viewing_yuna" },
+            { next: "day3_msg_dain_after_reject", condition: "viewing_dain" },
+            { next: "day3_msg_nurse_after_reject", condition: "viewing_nurse" },
+            { next: "day3_msg_teacher_after_reject", condition: "viewing_teacher" }
+        ]
+    },
+    "day3_msg_seoyeon_after_reject": {
+        name: "Seoyeon",
+        text: "(Message sent at 6 AM) 'Good morning! {name}, fighting for today too! Oh, and would you like to walk to school together? I'll wait for you in front of your house!'",
+        character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
+        choices: [
+            { text: "Go with Seoyeon (I rejected her earlier...)", next: "day3_change_mind", stats: { Seoyeon: { affinity: 1 } } },
+            { text: "Check other messages", next: "day3_check_more_after_reject" },
+            { text: "Just go alone", next: "day3_prepare_school" }
+        ]
+    },
+    "day3_msg_yuna_after_reject": {
+        name: "Yuna",
+        text: "(Message sent at 3 AM) '...{name}. I'll wait for you at the back gate this morning. Let's go together.'",
+        character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
+        choices: [
+            { text: "Go with Yuna (I rejected her earlier...)", next: "day3_change_mind", stats: { Yuna: { affinity: 1 } } },
+            { text: "Check other messages", next: "day3_check_more_after_reject" },
+            { text: "Just go alone", next: "day3_prepare_school" }
+        ]
+    },
+    "day3_msg_dain_after_reject": {
+        name: "Dain",
+        text: "(Message sent at 7 AM) 'Yay! {name}! Let's go to school together! Where do you live? I'll come find you! ><'",
+        character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
+        choices: [
+            { text: "Go with Dain (I rejected her earlier...)", next: "day3_change_mind", stats: { Dain: { affinity: 1 } } },
+            { text: "Check other messages", next: "day3_check_more_after_reject" },
+            { text: "Just go alone", next: "day3_prepare_school" }
+        ]
+    },
+    "day3_msg_nurse_after_reject": {
+        name: "School Nurse",
+        text: "(Message sent last night at 11 PM) 'Hehe, {name}. How about walking to school together this morning? Just the two of us... 😉'",
+        character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
+        choices: [
+            { text: "Go with Nurse (I rejected her earlier...)", next: "day3_change_mind_teachers", stats: { Nurse: { affinity: 1 } } },
+            { text: "Check other messages", next: "day3_check_more_after_reject" },
+            { text: "Just go alone", next: "day3_prepare_school" }
+        ]
+    },
+    "day3_msg_teacher_after_reject": {
+        name: "Homeroom Teacher",
+        text: "(Message sent last night at 10 PM) '{name}, are you going to school early tomorrow morning? I'm going early too, would you like to walk together?'",
+        character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
+        choices: [
+            { text: "Go with Teacher (I rejected her earlier...)", next: "day3_change_mind_teachers", stats: { Teacher: { affinity: 1 } } },
+            { text: "Check other messages", next: "day3_check_more_after_reject" },
+            { text: "Just go alone", next: "day3_prepare_school" }
+        ]
+    },
+    "day3_change_mind": {
+        name: "Me",
+        text: "(I sent another message. 'Sorry, I just checked other messages. I actually want to go together!')",
+        next: "day3_change_mind_reply"
+    },
+    "day3_change_mind_teachers": {
+        name: "Me",
+        text: "(I sent another message. 'Sorry, I actually want to go together!')",
+        next: "day3_change_mind_reply"
+    },    
+    "day3_change_mind_reply": {
+        branches: [
+            { next: "day3_change_mind_seoyeon", condition: "viewing_seoyeon" },
+            { next: "day3_change_mind_yuna", condition: "viewing_yuna" },
+            { next: "day3_change_mind_dain", condition: "viewing_dain" },
+            { next: "day3_change_mind_nurse", condition: "viewing_nurse" },
+            { next: "day3_change_mind_teacher", condition: "viewing_teacher" }
+        ]
+    },
+    "day3_change_mind_seoyeon": {
+        name: "Seoyeon",
+        text: "(Immediate reply) 'Really?! Great! Then hurry up and come out! I'll wait!'",
+        character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
+        next: "day3_walk_with_seoyeon"
+    },
+    "day3_change_mind_yuna": {
+        name: "Yuna",
+        text: "(Reply after a moment) '...Okay. I'll wait.'",
+        character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
+        next: "day3_walk_with_yuna"
+    },
+    "day3_change_mind_dain": {
+        name: "Dain",
+        text: "(Immediate reply) 'Okay! I'm leaving now! Wait for me!'",
+        character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
+        next: "day3_walk_with_dain"
+    },
+    "day3_change_mind_nurse": {
+        name: "School Nurse",
+        text: "(Reply) 'Hehe, changed your mind? Good, come out quickly.'",
+        character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
+        next: "day3_walk_with_nurse"
+    },
+    "day3_change_mind_teacher": {
+        name: "Homeroom Teacher",
+        text: "(Reply) 'Really? That's fine! Get ready quickly.'",
+        character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
+        next: "day3_walk_with_teacher"
+    },
+    "day3_return_to_choice": {
+        name: "Me",
+        text: "(Hmm... who should I go with?)",
+        choices: [
+            { text: "Go with Seoyeon", next: "day3_walk_with_seoyeon", condition: "has_number_seyoun", stats: { Seoyeon: { affinity: 3 } } },
+            { text: "Go with Yuna", next: "day3_walk_with_yuna", condition: "has_number_yuna", stats: { Yuna: { affinity: 3 } } },
+            { text: "Go with Dain", next: "day3_walk_with_dain", condition: "has_number_dain", stats: { Dain: { affinity: 3 } } },
+            { text: "Go with Nurse", next: "day3_walk_with_nurse", condition: "has_number_nurse", stats: { Nurse: { affinity: 3 } } },
+            { text: "Go with Teacher", next: "day3_walk_with_teacher", condition: "has_number_teacher", stats: { Teacher: { affinity: 3 } } },
+            { text: "Go alone", next: "day3_walk_alone" }
+        ]
+    },
+    "day3_walk_with_seoyeon": {
+        name: "Me",
+        text: "(I headed to the front of Seoyeon's house.)",
+        next: "day3_walk_with_seoyeon_2"
+    },
+    "day3_walk_with_seoyeon_2": {
+        name: "Seoyeon",
+        text: "\"Wow! You really came! Thank you!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day3_arrive_school"
+    },
+    
+    "day3_walk_with_yuna": {
+        name: "Me",
+        text: "(I headed toward the alley on the way to school. Yuna is standing under the shade of a tree.)",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_walk_yuna_greet"
+                
+    },
+    "day3_walk_yuna_greet": {
+        name: "Yuna",
+        text: "\"...You came. (Walking quietly) The weather is nice today. But... things that look peaceful are often the most dangerous.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_walk_yuna_talk"
+    },
+    "day3_walk_yuna_talk": {
+        name: "Yuna",
+        text: "(Walking down the quiet path, Yuna suddenly speaks) \"{name}, this weekend... there's a place I want to show only you.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        choices: [
+            { text: "What kind of place?", next: "day3_yuna_weekend_ask", stats: { Yuna: { affinity: 3 } } },
+            { text: "Another secret?", next: "day3_yuna_weekend_curious", stats: { Yuna: { affinity: 1 } } },
+            { text: "...Okay, when?", next: "day3_yuna_weekend_direct", stats: { Yuna: { affinity: 5 } } }
+        ]
+    },
+    "day3_yuna_weekend_ask": {
+        name: "Yuna",
+        text: "\"...A place where you can see the real face of this school. Saturday evening at 8 PM, at the school's back gate. Don't be late. There are things that can only be seen in the darkness.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_yuna_weekend_choice"
+    },
+    "day3_yuna_weekend_curious": {
+        name: "Yuna",
+        text: "(Yuna smiles coldly) \"It's closer to the truth than a secret. Saturday evening at 8 PM. Everything changes after the sun sets. You'll come, right?\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day3_yuna_weekend_choice"
+    },
+    "day3_yuna_weekend_direct": {
+        name: "Yuna",
+        text: "(Yuna looks at me in surprise, then smiles) \"...That's so like you. Saturday evening at 8 PM, school back gate. There are things that can only be seen when darkness falls. You must come.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day3_yuna_weekend_choice"
+    },
+    "day3_yuna_weekend_choice": {
+        name: "Me",
+        text: "(Yuna's serious gaze pierces through me. 8 PM in the evening... Something feels ominous.)",
+        character: "assets/images/characters/yuna_normal.png",
+        choices: [
+            { text: "Okay, I'll definitely come", next: "day3_yuna_weekend_yes", stats: { Yuna: { affinity: 8 } }, setFlag: "day3_yuna_date_confirmed" },
+            { text: "Let me think about it and reply", next: "day3_yuna_weekend_later", stats: { Yuna: { affinity: -5 } } },
+            { text: "Sorry, I have other plans", next: "day3_yuna_weekend_no", stats: { Yuna: { affinity: -30 } } }
+        ]
+    },
+    "day3_yuna_weekend_yes": {
+        name: "Yuna",
+        text: "(Yuna briefly holds my hand then lets go) \"...Thank you. You won't regret it. Saturday night, be ready to face the truth.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        next: "day3_school_gate"
+    },
+    "day3_yuna_weekend_later": {
+        name: "Yuna",
+        text: "(Yuna looks disappointed and turns her head away) \"...I see. But there's only one chance. Think carefully. There's a door that only opens at night.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_school_gate"
+    },
+    "day3_yuna_weekend_no": {
+        name: "Yuna",
+        text: "(Yuna's gaze turns cold) \"......\"",
+        character: "assets/images/characters/yuna_bored.png",
+        next: "day3_school_gate"
+    },
+    "day3_walk_with_dain": {
+        name: "Me",
+        text: "(On the way to the meeting spot. From a distance, Dain is waving her hand widely and running toward me.)",
+        background: "assets/images/background/school.png",
+        bgm: "daily2.mp3",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day3_walk_dain_greet"
+    },
+    "day3_walk_dain_greet": {
+        name: "Dain",
+        text: "\"{name}! Yay~! (Out of breath) Finally found you! Let's go to school together! The weather is perfect for exercise today!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day3_walk_dain_talk"
+    },
+    "day3_walk_dain_talk": {
+        name: "Dain",
+        text: "(Walking excitedly) \"Oh! By the way {name}! Tomorrow at 9 AM, our team has a practice match at the gym. Come cheer for me!\"",
+        character: "assets/images/characters/dain_normal.png",
+        choices: [
+            { text: "Sounds fun! Of course I'll go!", next: "day3_dain_weekend_ask", stats: { Dain: { affinity: 3 } } },
+            { text: "9 AM? That's pretty early", next: "day3_dain_weekend_early", stats: { Dain: { affinity: 1 } } },
+            { text: "That sounds troublesome...", next: "day3_dain_weekend_hesitate", stats: { Dain: { affinity: -2 } } }
+        ]
+    },
+    "day3_dain_weekend_ask": {
+        name: "Dain",
+        text: "(Dain jumps excitedly) \"Really?! Awesome! Then after practice, let's eat together! Let's go get tteokbokki!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day3_dain_weekend_choice"
+    },
+    "day3_dain_weekend_early": {
+        name: "Dain",
+        text: "(Dain smiles) \"Right? It's hard for me to wake up early too, but it would really give me energy if you came!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day3_dain_weekend_choice"
+    },
+    "day3_dain_weekend_hesitate": {
+        name: "Dain",
+        text: "(Dain puts her arm around my shoulder) \"It's okay! Just come and cheer! I'll show you my awesome spike!\"",
+        character: "assets/images/characters/dain_normal.png",
+        next: "day3_dain_weekend_choice"
+    },
+    "day3_dain_weekend_choice": {
+        name: "Me",
+        text: "(Dain looks at me with hopeful eyes.)",
+        character: "assets/images/characters/dain_normal.png",
+        choices: [
+            { text: "Okay! See you Saturday at 9 at the gym", next: "day3_dain_weekend_yes", stats: { Dain: { affinity: 8 } }, setFlag: "day3_dain_date_confirmed" },
+            { text: "Let me think about it and contact you", next: "day3_dain_weekend_later", stats: { Dain: { affinity: -3 } } },
+            { text: "Good luck, I have other plans this weekend...", next: "day3_dain_weekend_no", stats: { Dain: { affinity: -20 } } }
+        ]
+    },
+    "day3_dain_weekend_yes": {
+        name: "Dain",
+        text: "(Dain grabs my hand and shakes it) \"Wow! You're the best {name}! Then see you on Saturday! Don't be late!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day3_school_gate"
+    },
+    "day3_dain_weekend_later": {
+        name: "Dain",
+        text: "(Dain looks a bit down) \"Aw... But you have to come, okay? Promise?\"",
+        character: "assets/images/characters/dain_normal.png",
+        next: "day3_school_gate"
+    },
+    "day3_dain_weekend_no": {
+        name: "Dain",
+        text: "(Dain makes a disappointed face) \"Oh... I see. But if you have time later, make sure to visit!\"",
+        character: "assets/images/characters/dain_sad.png",
+        next: "day3_school_gate"
+    },
+    "day3_walk_with_nurse": {
+        name: "Me",
+        text: "(I headed to the meeting spot with the teacher. The school nurse is waiting.)",
+        background: "assets/images/background/school.png",
+        bgm: "daily2.mp3",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_walk_nurse_greet"
+    },
+    "day3_walk_nurse_greet": {
+        name: "School Nurse",
+        text: "\"Oh my, {name}. You came? Hehe, our transfer student is so nice. Come on, let's walk together.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_school_gate"
+    },
+    "day3_walk_with_teacher": {
+        name: "Me",
+        text: "(I headed to the meeting spot. The homeroom teacher is waving from the car.)",
+        background: "assets/images/background/school.png",
+        bgm: "daily2.mp3",
+        character: "assets/images/characters/teacher_normal.png",
+        next: "day3_walk_teacher_greet"
+    },
+    "day3_walk_teacher_greet": {
+        name: "Homeroom Teacher",
+        text: "\"{name}! Good morning! It's nice to commute together by car. Now, put on your seatbelt.\"",
         character: "assets/images/characters/teacher_smile.png",
-        silhouette: true,
-        setFlag: "day3_teacher_date_confirmed",
         next: "day3_school_gate"
     },
-
-    "day3_morning_msg_teacher_later": {
-        name: "Teacher",
-        text: "'Okay. Let's talk at school. Don't be late today!'",
-        character: "assets/images/characters/teacher_normal.png",
-        silhouette: true,
-        next: "day3_school_gate"
+	"day3_prepare_school_no_contact": {
+        name: "Me",
+        text: "(I check my messages...)",
+        next: "day3_prepare_school_ads"
     },
-
-    // =========================================================================
-    //  등교 시퀀스 (Going to School)
-    // =========================================================================
-    // 메시지 확인 후 학교로 향하는 장면
-    // 여러 약속이 잡혀 있으면 갈등 상황 발생
-
+    "day3_prepare_school_ads": {
+        name: "Me",
+        text: "('Limited time sale! Order now...', 'Congratulations on winning the event...') ...They're all spam messages. Looks like I'm going to school alone today.",
+        next: "day3_walk_alone"
+    },   
+    "day3_walk_alone": {
+        name: "Me",
+        text: "(I headed to school alone. The morning air is refreshing.)",
+        next: "day3_arrive_school"
+    },
+    "day3_prepare_school": {
+        name: "Me",
+        text: "(I headed to school alone. The morning air is refreshing.)",
+        next: "day3_arrive_school"
+    },    
     "day3_school_gate": {
         name: "Me",
-        text: "(I arrive at the school gate. It's already Friday... This week really flew by.)",
-        background: "assets/images/background/school.png",  // 배경: 학교 정문
-        bgm: "daily2.mp3",                                  // 배경음악: 일상
-        next: "day3_school_gate_2"
+        text: "(We arrived at the school gate together.)",
+        background: "assets/images/background/school.png",
+        character: null,
+        next: "day3_arrive_school"
     },
-
-    "day3_school_gate_2": {
+    "day3_arrive_school": {
         name: "Me",
-        text: "(Just as I'm about to enter through the gate, I hear a familiar voice.)",
-        branches: [
-            {
-                next: "day3_morning_encounter_multi",
-                condition: "day3_has_multiple_dates"  // 여러 명과 약속 시
-            },
-            {
-                next: "day3_morning_encounter_single" // 한 명 또는 없음
-            }
-        ]
+        text: "(Before I knew it, I arrived at the school gate. Another lively day begins.)",
+        background: "assets/images/background/school.png",
+        character: null,
+        next: "day3_classroom"
     },
-
-    // =========================================================================
-    //  복합 약속 갈등 시퀀스 (Multiple Dates Conflict)
-    // =========================================================================
-    // 여러 캐릭터와 주말 약속을 잡았을 때 발생하는 갈등
-    // 추후 시나리오에서 선택 강요 또는 수라장 전개
-
-    "day3_morning_encounter_multi": {
+    "day3_classroom": {
         name: "Me",
-        text: "(Huh... It looks like several people are waiting for me over there...?)",
-        next: "day3_morning_conflict_start"
+        text: "(As I enter the classroom, the kids are buzzing. I wonder what's happening today?)",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        next: "day3_morning_end"
     },
-
-    "day3_morning_conflict_start": {
-        name: "Me",
-        text: "(Making weekend plans with multiple people... this could be a problem...)",
-        next: "day3_1_morning_end"
-    },
-
-    "day3_morning_encounter_single": {
-        name: "Me",
-        text: "(It's a peaceful morning. I feel like today will be a good day.)",
-        next: "day3_1_morning_end"
-    },
-
-    // =========================================================================
-    //  시나리오 종료 (End of Scenario)
-    // =========================================================================
-    // Day 3 아침 시나리오 종료
-    // 개발 중인 콘텐츠이므로 메인 화면으로 돌아감
-
-    "day3_1_morning_end": {
+    "day3_morning_end": {
         name: "System",
-        text: "(Day 3 morning scenario ends here. Development continues...)",
-        fade: true,                              // 페이드 아웃 효과
-        next: "index-en.html"                    // 영문 메인 페이지로 이동
+        text: "(Day 3 morning scenario ends here.)",
+        fade: true,
+        next: "day3_lunch_time"
+    },
+    "day3_lunch_time": {
+        name: "System",
+        text: "(Lunch time scenario in development...)",
+        next: "index.html"
     }
 });
 
-// ============================================================================
-// TODO: 개발 예정 사항
-// ============================================================================
-// - betrayed 플래그 기반 분기 추가 (배신 루트)
-// - 각 캐릭터별 질투/갈등 이벤트
-// - 주말 데이트 시나리오 (day3_2_saturday.js 예정)
-// - 호감도에 따른 특별 대화 추가
+// 프롬프트 betrayed flag참고해서 수정예정
 
