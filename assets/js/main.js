@@ -2930,8 +2930,6 @@ class SceneRenderer {
     
         if (hasAnyContact) {
             this.stateManager.setFlag("has_any_contact");
-        } else {
-            this.stateManager.clearFlag("has_any_contact");
         }
     }
 
