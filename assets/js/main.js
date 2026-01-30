@@ -367,6 +367,11 @@ class StateManager {
             Nurse: { affinity: 0 }       // 보건선생님
         };
 
+        /**
+         * 분기별 선택지에서 선택된 캐릭터를 사용
+         */
+        this.currentCharacter = null;
+
         /** 
          * 캐릭터별 AI 대화 기록
          * - 프리토킹에서 주고받은 대화를 저장
@@ -448,6 +453,16 @@ class StateManager {
     getFlag(flagName) {
         return this.flags[flagName] || false;
     }
+    
+    /** 현재 캐릭터 설정 */
+    setCurrentCharacter(charKey) {
+        this.currentCharacter = charKey;
+    }
+
+    /** 현재 캐릭터 조회 */
+    getCurrentCharacter() {
+        return this.currentCharacter;
+    }    
 
     /** 
      * AI 대화 기록 저장 
@@ -3297,6 +3312,48 @@ class GameEngine {
             }
         }
     }
+    
+    // ============================================================================================
+    // 📊 applyStatsCharacter - 선택지 스탯 처리
+    // ============================================================================================
+    // 📌 시나리오의 stats 정의를 실제 게임 상태에 반영합니다.
+    // 예:
+    // stats: { "#{current_character}": { affinity: 3 } }
+    applyStatsCharacter(stats) {
+        for (const key in stats) {
+            let targetKey = key;
+    
+            // ─────────────────────────────────────────────────────────
+            // 🔄 동적 타겟 처리
+            // ─────────────────────────────────────────────────────────
+            // "#{current_character}" → 실제 캐릭터 키로 변환
+            if (key === "#{current_character}") {
+                targetKey = this.stateManager.getCurrentCharacter();
+            }
+    
+            // 타겟이 없거나 스탯이 정의되지 않은 경우 스킵
+            if (!targetKey || !this.stateManager.stats[targetKey]) continue;
+    
+            const changes = stats[key];
+    
+            // 스탯 반영
+            for (const stat in changes) {
+                const amount = changes[stat];
+                this.stateManager.stats[targetKey][stat] += amount;
+    
+                // ─────────────────────────────────────────────────────
+                // 💕 호감도 변화 UI 표시
+                // ─────────────────────────────────────────────────────
+                if (stat === 'affinity') {
+                    this.uiManager.showAffinityChange(amount);
+                    this.galleryManager.checkAffinityUnlock(
+                        targetKey,
+                        this.stateManager.stats[targetKey][stat]
+                    );
+                }
+            }
+        }
+    }
 
     /**
      * ═══════════════════════════════════════════════════════════════
@@ -3451,6 +3508,8 @@ class GameEngine {
         // 선택에 따라 캐릭터별 호감도를 증가/감소
         // ─────────────────────────────────────────────────────────
         if (choice.stats) {
+            // 현재 선택된 캐릭터 호출
+            this.applyStatsCharacter(choice.stats);
             // stats: { Seoyeon: { affinity: 10 }, Dain: { affinity: -5 } }
             for (const [char, stats] of Object.entries(choice.stats)) {
                 // 🔧 charNameMap을 통해 캐릭터 키 정규화 (한/영 호환)
@@ -3616,10 +3675,11 @@ class GameEngine {
      * 5. 배경 이미지 설정
      * 6. 플래그/스탯 처리
      * 7. 시간대 필터 적용
-     * 8. 캐릭터 이미지 업데이트
-     * 9. 이름 태그 설정
-     * 10. 씬 타입별 분기 처리
-     * 11. 게임 자동 저장
+     * 8. 현재 캐릭터 호출
+     * 9. 캐릭터 이미지 업데이트
+     * 10. 이름 태그 설정
+     * 11. 씬 타입별 분기 처리
+     * 12. 게임 자동 저장
      * 
      * @param {string} sceneId - 렌더링할 씬의 고유 ID
      */
@@ -3694,8 +3754,18 @@ class GameEngine {
         // sunset: true → 주황색 노을 필터
         this.sceneRenderer.setTimeFilter(scene.night, scene.sunset);
 
+        // ─────────────────────────────────────────────────────────────
+        // 📌 8단계: 현재 씬의 캐릭터를 "현재 캐릭터"로 설정
+        // ─────────────────────────────────────────────────────────────
+        if (scene.name) {
+            const charKey = this.uiManager.charNameMap[scene.name];
+            if (charKey) {
+                this.stateManager.setCurrentCharacter(charKey);
+            }
+        }
+
         // ─────────────────────────────────────────────────────────
-        // 👤 8단계: 캐릭터 이미지 업데이트
+        // 👤 9단계: 캐릭터 이미지 업데이트
         // ─────────────────────────────────────────────────────────
         // character 또는 characters 속성에 따라 캐릭터 표시
         await this.sceneRenderer.updateCharacters(scene, sceneId);
@@ -3704,7 +3774,7 @@ class GameEngine {
         if (this.sceneRenderer.currentSceneId !== sceneId) return;
 
         // ─────────────────────────────────────────────────────────
-        // 🏷️ 9단계: 이름 태그 설정
+        // 🏷️ 10단계: 이름 태그 설정
         // ─────────────────────────────────────────────────────────
         // 대화창 위에 표시되는 캐릭터 이름 (예: "소연", "다인")
         this.uiManager.updateNameTag(scene.name);
@@ -3716,7 +3786,7 @@ class GameEngine {
         this.uiManager.showNextIndicator(false);
 
         // ─────────────────────────────────────────────────────────
-        // 📌 10단계: 씬 타입별 분기 처리
+        // 📌 11단계: 씬 타입별 분기 처리
         // ─────────────────────────────────────────────────────────
 
         // ═══════════════════════════════════════════════════════
