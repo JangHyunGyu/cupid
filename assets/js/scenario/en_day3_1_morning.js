@@ -464,19 +464,19 @@ Object.assign(SCENARIO[3], {
         name: "Yuna",
         text: "(Yuna briefly holds my hand then lets go) \"...Thank you. You won't regret it. Saturday night, be ready to face the truth.\"",
         character: "assets/images/characters/yuna_shy.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_yuna_weekend_later": {
         name: "Yuna",
         text: "(Yuna looks disappointed and turns her head away) \"...I see. But there's only one chance. Think carefully. There's a door that only opens at night.\"",
         character: "assets/images/characters/yuna_normal.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_yuna_weekend_no": {
         name: "Yuna",
         text: "(Yuna's gaze turns cold) \"......\"",
         character: "assets/images/characters/yuna_bored.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_walk_with_dain": {
         name: "Me",
@@ -534,19 +534,19 @@ Object.assign(SCENARIO[3], {
         name: "Dain",
         text: "(Dain grabs my hand and shakes it) \"Wow! You're the best {name}! Then see you on Saturday! Don't be late!\"",
         character: "assets/images/characters/dain_laugh.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_dain_weekend_later": {
         name: "Dain",
         text: "(Dain looks a bit down) \"Aw... But you have to come, okay? Promise?\"",
         character: "assets/images/characters/dain_normal.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_dain_weekend_no": {
         name: "Dain",
         text: "(Dain makes a disappointed face) \"Oh... I see. But if you have time later, make sure to visit!\"",
         character: "assets/images/characters/dain_sad.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_walk_with_nurse": {
         name: "Me",
@@ -560,7 +560,7 @@ Object.assign(SCENARIO[3], {
         name: "School Nurse",
         text: "\"Oh my, {name}. You came? Hehe, our transfer student is so nice. Come on, let's walk together.\"",
         character: "assets/images/characters/nurse_normal.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_walk_with_teacher": {
         name: "Me",
@@ -574,7 +574,7 @@ Object.assign(SCENARIO[3], {
         name: "Homeroom Teacher",
         text: "\"{name}! Good morning! It's nice to commute together by car. Now, put on your seatbelt.\"",
         character: "assets/images/characters/teacher_smile.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
 	"day3_prepare_school_no_contact": {
         name: "Me",
@@ -590,19 +590,7 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(I headed to school alone. The morning air is refreshing.)",
         next: "day3_arrive_school"
-    },
-    "day3_prepare_school": {
-        name: "Me",
-        text: "(I headed to school alone. The morning air is refreshing.)",
-        next: "day3_arrive_school"
-    },    
-    "day3_school_gate": {
-        name: "Me",
-        text: "(We arrived at the school gate together.)",
-        background: "assets/images/background/school.png",
-        character: null,
-        next: "day3_arrive_school"
-    },
+    },     
     "day3_arrive_school": {
         name: "Me",
         text: "(Before I knew it, I arrived at the school gate. Another lively day begins.)",
