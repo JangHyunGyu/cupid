@@ -464,19 +464,19 @@ Object.assign(SCENARIO[3], {
         name: "유나",
         text: "(유나가 내 손을 살짝 잡았다가 놓는다) \"...고마워. 후회하지 않을 거야. 토요일 밤, 진실을 마주할 준비를 해둬.\"",
         character: "assets/images/characters/yuna_shy.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_yuna_weekend_later": {
         name: "유나",
         text: "(유나가 실망한 듯 고개를 돌린다) \"...그래. 하지만 기회는 한 번뿐이야. 잘 생각해. 밤에만 열리는 문이 있거든.\"",
         character: "assets/images/characters/yuna_normal.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_yuna_weekend_no": {
         name: "유나",
         text: "(유나의 눈빛이 차갑게 식는다) \"......\"",
         character: "assets/images/characters/yuna_bored.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_walk_with_dain": {
         name: "나",
@@ -534,19 +534,19 @@ Object.assign(SCENARIO[3], {
         name: "다인",
         text: "(다인이가 내 손을 잡고 흔든다) \"와! 최고야 {name}! 그럼 토요일에 꼭 보자! 늦지 마!\"",
         character: "assets/images/characters/dain_laugh.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_dain_weekend_later": {
         name: "다인",
         text: "(다인이가 조금 풀이 죽는다) \"에이... 그래도 꼭 와야 돼? 약속이다?\"",
         character: "assets/images/characters/dain_normal.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_dain_weekend_no": {
         name: "다인",
         text: "(다인이가 실망한 표정을 짓는다) \"아... 그렇구나. 그래도 나중에 시간 나면 꼭 놀러 와!\"",
         character: "assets/images/characters/dain_sad.png",
-        next: "day3_school_gate"
+        next: "day3_arrive_school"
     },
     "day3_walk_with_nurse": {
         name: "나",
@@ -560,8 +560,64 @@ Object.assign(SCENARIO[3], {
         name: "보건선생님",
         text: "\"어머, {name}. 왔네? 후훗, 우리 전학생 참 착하네. 자, 같이 걸어가자.\"",
         character: "assets/images/characters/nurse_normal.png",
-        next: "day3_school_gate"
-    },
+	    next: "day3_walk_nurse_talk"
+	},
+	"day3_walk_nurse_talk": {
+		name: "보건선생님",
+		text: "(학교로 걸어가며 선생님이 은근히 내 팔에 손을 올린다) \"저기, {name}야. 혹시 이번 주말에 시간 있니?\"",
+		character: "assets/images/characters/nurse_normal.png",
+		choices: [
+			{ text: "네, 왜요? 무슨 일 있으세요?", next: "day3_nurse_weekend_ask", stats: { Nurse: { affinity: 3 } } },
+			{ text: "글쎄요... 주말에 뭐 하실 건데요?", next: "day3_nurse_weekend_curious", stats: { Nurse: { affinity: 1 } } },
+			{ text: "아직 계획 없는데요?", next: "day3_nurse_weekend_none", stats: { Nurse: { affinity: 2 } } }
+		]
+	},
+	"day3_nurse_weekend_ask": {
+		name: "보건선생님",
+		text: "(선생님이 의미심장하게 웃는다) \"후훗, 사실... 일요일 저녁에 맛있는 레스토랑 예약해뒀거든. 혼자 가기 아까워서... 우리 같이 갈래? 일요일 저녁 7시 어때?\"",
+		character: "assets/images/characters/nurse_normal.png",
+		next: "day3_nurse_weekend_choice"
+	},
+	"day3_nurse_weekend_curious": {
+		name: "보건선생님",
+		text: "(선생님이 장난스럽게 윙크한다) \"음... 괜찮은 레스토랑 예약해뒀는데 같이 가고 싶어서. 괜찮으면... 일요일 저녁 7시에?\"",
+		character: "assets/images/characters/nurse_normal.png",
+		next: "day3_nurse_weekend_choice"
+	},
+	"day3_nurse_weekend_none": {
+		name: "보건선생님",
+		text: "(선생님이 만족스럽게 미소 짓는다) \"정말? 그럼 우리 일요일 저녁에 같이 저녁 먹자! 7시에 만날까? 주소 보낼게.\"",
+		character: "assets/images/characters/nurse_normal.png",
+		next: "day3_nurse_weekend_choice"
+	},
+	"day3_nurse_weekend_choice": {
+		name: "나",
+		text: "(선생님이 매혹적인 눈빛으로 나를 바라본다. 심장이 두근거린다...)",
+		character: "assets/images/characters/nurse_normal.png",
+		choices: [
+			{ text: "좋아요! 일요일에 꼭 갈게요", next: "day3_nurse_weekend_yes", stats: { Nurse: { affinity: 8 } }, setFlag: "day3_nurse_date_confirmed" },
+			{ text: "생각해보고 나중에 답할게요", next: "day3_nurse_weekend_later", stats: { Nurse: { affinity: -3 } } },
+			{ text: "미안해요, 주말에 다른 약속이...", next: "day3_nurse_weekend_no", stats: { Nurse: { affinity: -10 } } }
+		]
+	},
+	"day3_nurse_weekend_yes": {
+		name: "보건선생님",
+		text: "(선생님이 내 손을 살짝 쥐었다가 놓는다) \"후훗, 정말? 그럼 일요일 저녁 7시, 기대하고 있을게. 멋지게 입고 와야 해?\"",
+		character: "assets/images/characters/nurse_normal.png",
+		next: "day3_arrive_school"
+	},
+	"day3_nurse_weekend_later": {
+		name: "보건선생님",
+		text: "(선생님이 조금 아쉬운 표정을 짓는다) \"아... 그래? 그럼 점심시간에 보건실로 놀러 와. 다시 이야기하자.\"",
+		character: "assets/images/characters/nurse_normal.png",
+		next: "day3_arrive_school"
+	},
+	"day3_nurse_weekend_no": {
+		name: "보건선생님",
+		text: "(선생님의 미소가 살짝 굳어진다) \"...그렇구나. 괜찮아. 다음 기회에 보자.\"",
+		character: "assets/images/characters/nurse_normal.png",
+		next: "day3_arrive_school"
+	},
     "day3_walk_with_teacher": {
         name: "나",
         text: "(약속 장소로 향했다. 담임선생님이 차에서 손을 흔들고 계신다.)",
@@ -574,8 +630,70 @@ Object.assign(SCENARIO[3], {
         name: "담임선생님",
         text: "\"{name}! 좋은 아침! 같이 차로 출근하니까 좋네. 자, 안전벨트 매렴.\"",
         character: "assets/images/characters/teacher_smile.png",
-        next: "day3_school_gate"
-    },
+	    next: "day3_walk_teacher_car"
+	},
+	"day3_walk_teacher_car": {
+		name: "나",
+		text: "(선생님의 차에 탔다. 은은한 향수 냄새와 잔잔한 음악이 흐른다. 뭔가 어색하면서도 설레는 기분이다.)",
+		character: "assets/images/characters/teacher_normal.png",
+		next: "day3_walk_teacher_talk"
+	},
+	"day3_walk_teacher_talk": {
+		name: "담임선생님",
+		text: "(운전하며 선생님이 조심스럽게 말을 꺼낸다) \"저기, {name}야. 혹시 이번 주말에 시간 있니?\"",
+		character: "assets/images/characters/teacher_normal.png",
+		choices: [
+			{ text: "네, 왜요? 무슨 일 있으세요?", next: "day3_teacher_weekend_ask", stats: { Teacher: { affinity: 3 } } },
+			{ text: "글쎄요... 주말에 뭐 하실 건데요?", next: "day3_teacher_weekend_curious", stats: { Teacher: { affinity: 1 } } },
+			{ text: "아직 계획 없는데요?", next: "day3_teacher_weekend_none", stats: { Teacher: { affinity: 2 } } }
+		]
+	},
+	"day3_teacher_weekend_ask": {
+		name: "담임선생님",
+		text: "(선생님이 잠깐 나를 쳐다보며 미소 짓는다) \"사실... 박물관 전시회 티켓이 두 장 생겼거든. 혼자 가기 아까워서... 우리 같이 갈래? 일요일 오후 2시 어때?\"",
+		character: "assets/images/characters/teacher_smile.png",
+		next: "day3_teacher_weekend_choice"
+	},
+	"day3_teacher_weekend_curious": {
+		name: "담임선생님",
+		text: "\"음... 박물관 전시회 티켓이 있는데 같이 가고 싶어서. 괜찮으면... 일요일 오후 2시에?\"",
+		character: "assets/images/characters/teacher_normal.png",
+		next: "day3_teacher_weekend_choice"
+	},
+	"day3_teacher_weekend_none": {
+		name: "담임선생님",
+		text: "(선생님이 반색하며) \"정말? 그럼 우리 일요일 오후에 박물관 전시회 보러 가자! 2시에 박물관 앞에서 만날까?\"",
+		character: "assets/images/characters/teacher_smile.png",
+		next: "day3_teacher_weekend_choice"
+	},
+	"day3_teacher_weekend_choice": {
+		name: "나",
+		text: "(선생님이 기대에 찬 눈빛으로 잠깐 나를 본다. 차 안의 공기가 묘하게 따뜻하다...)",
+		character: "assets/images/characters/teacher_normal.png",
+		choices: [
+			{ text: "좋아요! 일요일에 꼭 갈게요", next: "day3_teacher_weekend_yes", stats: { Teacher: { affinity: 8 } }, setFlag: "day3_teacher_date_confirmed" },
+			{ text: "생각해보고 나중에 답할게요", next: "day3_teacher_weekend_later", stats: { Teacher: { affinity: -3 } } },
+			{ text: "박물관 노잼인데.", next: "day3_teacher_weekend_no", stats: { Teacher: { affinity: -10 } } }
+		]
+	},
+	"day3_teacher_weekend_yes": {
+		name: "담임선생님",
+		text: "(선생님이 환하게 웃으며) \"정말? 그럼 일요일 오후 2시, 꼭 보자. 재미있을 거야!\"",
+		character: "assets/images/characters/teacher_smile.png",
+		next: "day3_arrive_school"
+	},
+	"day3_teacher_weekend_later": {
+		name: "담임선생님",
+		text: "(선생님이 조금 아쉬운 표정을 짓는다) \"아... 그래? 그럼 점심시간에 다시 이야기하자.\"",
+		character: "assets/images/characters/teacher_normal.png",
+		next: "day3_arrive_school"
+	},
+	"day3_teacher_weekend_no": {
+		name: "담임선생님",
+		text: "(선생님의 표정이 순간 굳어진다) \"...실망이구나. 선생님은 너한테 거는 기대가 컸는데.\"",
+		character: "assets/images/characters/teacher_normal.png",
+		next: "day3_arrive_school"
+	},
 	"day3_prepare_school_no_contact": {
         name: "나",
         text: "(메시지를 확인해보니...)",
@@ -593,7 +711,7 @@ Object.assign(SCENARIO[3], {
     },     
     "day3_arrive_school": {
         name: "나",
-        text: "(어느덧 학교 정문에 도착했다. 오늘도 활기찬 하루가 시작된다.)",
+        text: "(어느덧 학교 정문에 도착했다. 오늘도 이 학교에서의 하루가 시작된다.)",
         background: "assets/images/background/school.png",
         character: null,
         next: "day3_classroom"
@@ -613,9 +731,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_time": {
         name: "시스템",
-        text: "(점심 시간 시나리오 개발 예정...)",
+        text: "(홈으로 돌아갑니다...)",
         next: "index.html"
     }
 });
-
-// 프롬프트 betrayed flag참고해서 수정예정
