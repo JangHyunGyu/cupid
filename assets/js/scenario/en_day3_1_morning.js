@@ -68,6 +68,167 @@ Object.assign(SCENARIO[3], {
         character: null,
         next: "day3_start_2"
     },
+
+    // =========================================================================
+    // After spending the night at the nurse's place
+    // =========================================================================
+    "day3_nurse_home_morning": {
+        name: "Me",
+        text: "(I open my eyes... Where am I? An unfamiliar ceiling.)",
+        background: "assets/images/background/nurse_house.png",
+        character: null,
+        next: "day3_nurse_home_morning_2"
+    },
+    "day3_nurse_home_morning_2": {
+        name: "Me",
+        text: "(Memories of last night flash through my mind. Her scent, her soft touch, and...)",
+        next: "day3_nurse_home_morning_3"
+    },
+    "day3_nurse_home_morning_3": {
+        name: "School Nurse",
+        text: "\"Oh my, you're awake? Hehe, did you sleep well last night?\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_nurse_home_morning_4"
+    },
+    "day3_nurse_home_morning_4": {
+        name: "Me",
+        text: "(She hands me a cup of coffee with a knowing smile. My face feels hot.)",
+        choices: [
+            { text: "\"Thank you, teacher...\"", next: "day3_nurse_home_morning_thanks", stats: { Nurse: { affinity: 3 } } },
+            { text: "\"Last night... was amazing\"", next: "day3_nurse_home_morning_bold", stats: { Nurse: { affinity: 8 } } },
+            { text: "(Too embarrassed to speak)", next: "day3_nurse_home_morning_shy", stats: { Nurse: { affinity: 5 } } }
+        ]
+    },
+    "day3_nurse_home_morning_thanks": {
+        name: "School Nurse",
+        text: "\"Hehe, don't be so stiff~ Not after what we shared.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_nurse_home_morning_leave"
+    },
+    "day3_nurse_home_morning_bold": {
+        name: "School Nurse",
+        text: "\"Oh my... Bold thing to say in the morning. Hehe, teacher enjoyed it too.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_nurse_home_morning_leave"
+    },
+    "day3_nurse_home_morning_shy": {
+        name: "School Nurse",
+        text: "\"Hehe, so cute. Your shy face is adorable too.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_nurse_home_morning_leave"
+    },
+    "day3_nurse_home_morning_leave": {
+        name: "School Nurse",
+        text: "\"Now, hurry up and get ready. You need to go to school, right? When we see each other at school... pretend nothing happened, okay?\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_nurse_home_morning_leave_2"
+    },
+    "day3_nurse_home_morning_leave_2": {
+        name: "Me",
+        text: "(My heart races at her wink. I quickly gather my things and leave her place.)",
+        background: "assets/images/background/school.png",
+        setFlag: "day3_came_from_nurse_home",
+        next: "day3_nurse_home_school_arrival"
+    },
+
+    // Arriving at school - Heroines' suspicion
+    "day3_nurse_home_school_arrival": {
+        name: "Me",
+        text: "(I arrived at school. The morning air feels especially refreshing today.)",
+        next: "day3_nurse_home_suspicion"
+    },
+    "day3_nurse_home_suspicion": {
+        name: "Seoyeon",
+        text: "\"{name}! Good morning... Huh? Where did you come from today? It seems like you came from a different direction than usual...\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        next: "day3_nurse_home_suspicion_2"
+    },
+    "day3_nurse_home_suspicion_2": {
+        name: "Me",
+        text: "(I'm flustered by Seoyeon's sharp question.)",
+        choices: [
+            { text: "\"Just took a walk...\"", next: "day3_nurse_home_lie", stats: { Seoyeon: { affinity: -3 } } },
+            { text: "\"Stayed at a relative's house\"", next: "day3_nurse_home_half_lie" },
+            { text: "(Stammer nervously)", next: "day3_nurse_home_stutter" }
+        ]
+    },
+    "day3_nurse_home_lie": {
+        name: "Seoyeon",
+        text: "\"...A walk? At this hour? Hmm...\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        setFlag: "day3_seoyeon_suspicious",
+        next: "day3_nurse_home_yuna_appears"
+    },
+    "day3_nurse_home_half_lie": {
+        name: "Seoyeon",
+        text: "\"...A relative? A female relative?\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        setFlag: "day3_seoyeon_jealous",
+        next: "day3_nurse_home_yuna_appears"
+    },
+    "day3_nurse_home_stutter": {
+        name: "Seoyeon",
+        text: "\"...Why can't you answer? Are you hiding something?\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        setFlag: "day3_seoyeon_very_suspicious",
+        stats: { Seoyeon: { affinity: -5 } },
+        next: "day3_nurse_home_yuna_appears"
+    },
+    "day3_nurse_home_yuna_appears": {
+        name: "Yuna",
+        text: "\"...{name}. You smell different today.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_nurse_home_yuna_appears_2"
+    },
+    "day3_nurse_home_yuna_appears_2": {
+        name: "Me",
+        text: "(Yuna stares at my face. Her eyes are... piercing.)",
+        next: "day3_nurse_home_yuna_appears_3"
+    },
+    "day3_nurse_home_yuna_appears_3": {
+        name: "Yuna",
+        text: "\"...An adult's perfume. A woman's perfume.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        setFlag: "day3_yuna_knows_secret",
+        next: "day3_nurse_home_tension"
+    },
+    "day3_nurse_home_tension": {
+        name: "Seoyeon",
+        text: "\"...What?!\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        next: "day3_nurse_home_tension_2"
+    },
+    "day3_nurse_home_tension_2": {
+        name: "Me",
+        text: "(The atmosphere became tense. I need to get out of this situation somehow.)",
+        choices: [
+            { text: "\"I'll be late for class, gotta go!\"", next: "day3_nurse_home_escape" },
+            { text: "\"It's a misunderstanding, I was at my parents' friend's place...\"", next: "day3_nurse_home_excuse" }
+        ]
+    },
+    "day3_nurse_home_escape": {
+        name: "Me",
+        text: "(I hurry to the classroom. The gazes from behind feel burning hot...)",
+        background: "assets/images/background/room_school.png",
+        next: "day3_morning_end"
+    },
+    "day3_nurse_home_excuse": {
+        name: "Seoyeon",
+        text: "\"...Your parents' friend? Then why did you act like you were hiding something?\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -3 } },
+        next: "day3_nurse_home_excuse_2"
+    },
+    "day3_nurse_home_excuse_2": {
+        name: "Me",
+        text: "(Seoyeon looks upset. Let's just head to the classroom for now.)",
+        background: "assets/images/background/room_school.png",
+        next: "day3_morning_end"
+    },
+
+    // =========================================================================
+    // Normal morning flow
+    // =========================================================================
     "day3_start_2": {
         name: "Me",
         text: "(Looking outside, the weather is really nice today. It's already Friday... What should I do this weekend?)",
