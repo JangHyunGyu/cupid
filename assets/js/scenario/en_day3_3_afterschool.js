@@ -47,7 +47,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_confrontation": {
         name: "Me",
         text: "(Seoyeon takes me to the hallway. Her expression looks serious.)",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/load_school.png",
         next: "day3_afternoon_confrontation_2"
     },
     "day3_afternoon_confrontation_2": {
@@ -177,7 +177,7 @@ Object.assign(SCENARIO[3], {
         name: "Yuna",
         text: "\"...{name}.\"",
         character: "assets/images/characters/yuna_normal.png",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/load_school.png",
         next: "day3_afternoon_yuna_talk"
     },
     "day3_afternoon_yuna_talk": {
@@ -339,7 +339,7 @@ Object.assign(SCENARIO[3], {
         name: "Seoyeon",
         text: "\"Sure! Let's go!\"",
         character: "assets/images/characters/seyoun_happy.png",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         next: "day3_afternoon_seoyeon_walk_others"
     },
     "day3_afternoon_seoyeon_walk_others": {
@@ -433,7 +433,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_talk_walk": {
         name: "Me",
         text: "(Walking with Yuna. She doesn't say much, but the atmosphere is comfortable.)",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         next: "day3_afternoon_yuna_talk_walk_2"
     },
     "day3_afternoon_yuna_talk_walk_2": {
@@ -487,7 +487,7 @@ Object.assign(SCENARIO[3], {
         text: "\"Yay! Let's go!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Seoyeon: { affinity: -5 } },
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         next: "day3_afternoon_dain_talk_walk"
     },
     "day3_afternoon_dain_talk_walk": {
@@ -535,7 +535,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_alone_walk": {
         name: "Me",
         text: "(I head home alone. I wonder what tomorrow will bring...)",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         fade: true,
         next: "day3_night_start"
     },
@@ -582,9 +582,9 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_teacher_ride": {
         name: "Homeroom Teacher",
-        text: "\"You haven't forgotten our museum date on Sunday, right? I'm looking forward to it.\"",
+        text: "\"You haven't forgotten our museum date on Saturday, right? I'm looking forward to it.\"",
         character: "assets/images/characters/teacher_smile.png",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         fade: true,
         next: "day3_night_start"
     },
@@ -601,7 +601,7 @@ Object.assign(SCENARIO[3], {
         name: "School Nurse",
         text: "\"Don't forget Sunday 7 PM, okay? I'll be waiting for you.\"",
         character: "assets/images/characters/nurse_normal.png",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         fade: true,
         next: "day3_night_start"
     }

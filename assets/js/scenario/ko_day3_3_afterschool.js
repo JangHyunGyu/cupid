@@ -85,7 +85,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_confrontation": {
         name: "나",
         text: "(서연이가 복도로 나를 데리고 나왔다. 표정이 심상치 않다.)",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/load_school.png",
         next: "day3_afternoon_confrontation_2"
     },
     "day3_afternoon_confrontation_2": {
@@ -218,7 +218,7 @@ Object.assign(SCENARIO[3], {
         name: "유나",
         text: "\"...{name}.\"",
         character: "assets/images/characters/yuna_normal.png",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/load_school.png",
         next: "day3_afternoon_yuna_talk"
     },
     "day3_afternoon_yuna_talk": {
@@ -392,7 +392,7 @@ Object.assign(SCENARIO[3], {
         name: "서연",
         text: "\"응! 가자!\"",
         character: "assets/images/characters/seyoun_happy.png",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         next: "day3_afternoon_seoyeon_walk_others"
     },
     "day3_afternoon_seoyeon_walk_others": {
@@ -489,7 +489,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_talk_walk": {
         name: "나",
         text: "(유나와 함께 걷는다. 그녀는 말이 없지만, 분위기가 편안하다.)",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         next: "day3_afternoon_yuna_talk_walk_2"
     },
     "day3_afternoon_yuna_talk_walk_2": {
@@ -546,7 +546,7 @@ Object.assign(SCENARIO[3], {
         text: "\"야호! 가자가자!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Seoyeon: { affinity: -5 } },
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         next: "day3_afternoon_dain_talk_walk"
     },
     "day3_afternoon_dain_talk_walk": {
@@ -597,7 +597,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_alone_walk": {
         name: "나",
         text: "(혼자 집으로 향한다. 내일은 어떤 하루가 될까...)",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         fade: true,
         next: "day3_night_start"
     },
@@ -650,9 +650,9 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_teacher_ride": {
         name: "담임선생님",
-        text: "\"내일 일요일에 박물관 약속 잊지 않았지? 기대하고 있을게.\"",
+        text: "\"내일 토요일에 박물관 약속 잊지 않았지? 기대하고 있을게.\"",
         character: "assets/images/characters/teacher_smile.png",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         fade: true,
         next: "day3_night_start"
     },
@@ -669,7 +669,7 @@ Object.assign(SCENARIO[3], {
         name: "보건선생님",
         text: "\"일요일 저녁 7시, 잊으면 안 돼요? 선생님 기다리고 있을 테니까.\"",
         character: "assets/images/characters/nurse_normal.png",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/school.png",
         fade: true,
         next: "day3_night_start"
     }
