@@ -576,6 +576,11 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/teacher_smile.png",
         next: "day3_arrive_school"
     },
+	"day3_prepare_school": {
+        name: "Me",
+        text: "(I hurried to get ready for school.)",
+        next: "day3_walk_alone"
+    },
 	"day3_prepare_school_no_contact": {
         name: "Me",
         text: "(I check my messages...)",
@@ -607,16 +612,9 @@ Object.assign(SCENARIO[3], {
     },
     "day3_morning_end": {
         name: "System",
-        text: "(Day 3 morning scenario ends here.)",
+        text: "(Classes began... and before I knew it, it was lunchtime.)",
         fade: true,
-        next: "day3_lunch_time"
-    },
-    "day3_lunch_time": {
-        name: "System",
-        text: "(Lunch time scenario in development...)",
-        next: "index.html"
+        next: "day3_lunch_start"
     }
 });
-
-// 프롬프트 betrayed flag참고해서 수정예정
 

@@ -694,6 +694,11 @@ Object.assign(SCENARIO[3], {
 		character: "assets/images/characters/teacher_normal.png",
 		next: "day3_arrive_school"
 	},
+	"day3_prepare_school": {
+        name: "나",
+        text: "(학교 갈 준비를 서둘러 마쳤다.)",
+        next: "day3_walk_alone"
+    },
 	"day3_prepare_school_no_contact": {
         name: "나",
         text: "(메시지를 확인해보니...)",
@@ -724,14 +729,9 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_end"
     },
     "day3_morning_end": {
-        name: "시스템",
-        text: "(Day 3 아침 시나리오는 여기까지입니다.)",
+        name: "나",
+        text: "(수업이 시작되고... 시간이 흘러 어느덧 점심시간이 되었다.)",
         fade: true,
-        next: "day3_lunch_time"
-    },
-    "day3_lunch_time": {
-        name: "시스템",
-        text: "(홈으로 돌아갑니다...)",
-        next: "index.html"
+        next: "day3_lunch_start"
     }
 });
