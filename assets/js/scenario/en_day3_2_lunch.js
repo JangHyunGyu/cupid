@@ -78,9 +78,9 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(This doesn't look good... What should I do?)",
         choices: [
-            { text: "Have lunch with Seoyeon", next: "day3_lunch_choose_seoyeon", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "Have lunch with Yuna", next: "day3_lunch_choose_yuna", condition: "day3_yuna_date_confirmed", stats: { Yuna: { affinity: 5 } } },
-            { text: "Have lunch with Dain", next: "day3_lunch_choose_dain", condition: "day3_dain_date_confirmed", stats: { Dain: { affinity: 5 } } },
+            { text: "Have lunch with Seoyeon", next: "day3_lunch_choose_seoyeon" },
+            { text: "Have lunch with Yuna", next: "day3_lunch_choose_yuna", condition: "day3_yuna_date_confirmed" },
+            { text: "Have lunch with Dain", next: "day3_lunch_choose_dain", condition: "day3_dain_date_confirmed" },
             { text: "Suggest eating together", next: "day3_lunch_together_propose" },
             { text: "Run away to eat alone", next: "day3_lunch_escape", stats: { Seoyeon: { affinity: -3 }, Yuna: { affinity: -3 }, Dain: { affinity: -3 } } }
         ]
@@ -89,6 +89,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_choose_seoyeon": {
         name: "Me",
         text: "\"Seoyeon, let's go together. We had plans from yesterday, remember?\"",
+        stats: { Seoyeon: { affinity: 5 } },
         setFlag: "day3_lunch_with_seoyeon",
         next: "day3_lunch_seoyeon_others_react"
     },
@@ -119,7 +120,7 @@ Object.assign(SCENARIO[3], {
         name: "Dain",
         text: "\"What, you're not including me? Hmph, fine!\"",
         character: "assets/images/characters/dain_sad.png",
-        stats: { Dain: { affinity: -3 } },
+        stats: { Dain: { affinity: -5 } },
         setFlag: "day3_jealousy_dain",
         next: "day3_lunch_dain_jealous_2"
     },
@@ -140,27 +141,30 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(There's an unusual edge in Seoyeon's voice.)",
         choices: [
-            { text: "\"You're the most important to me\"", next: "day3_lunch_seoyeon_reassure", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "\"They're just friends\"", next: "day3_lunch_seoyeon_deny", stats: { Seoyeon: { affinity: 2 } } },
-            { text: "\"Why, are you jealous?\"", next: "day3_lunch_seoyeon_tease", stats: { Seoyeon: { affinity: 3 } } }
+            { text: "\"You're the most important to me\"", next: "day3_lunch_seoyeon_reassure" },
+            { text: "\"They're just friends\"", next: "day3_lunch_seoyeon_deny" },
+            { text: "\"Why, are you jealous?\"", next: "day3_lunch_seoyeon_tease" }
         ]
     },
     "day3_lunch_seoyeon_reassure": {
         name: "Seoyeon",
         text: "\"...Really? I'll remember that.\"",
         character: "assets/images/characters/seyoun_happy.png",
+        stats: { Seoyeon: { affinity: 8 } },
         next: "day3_lunch_seoyeon_weekend"
     },
     "day3_lunch_seoyeon_deny": {
         name: "Seoyeon",
         text: "\"...Right, I guess so. Sorry, I said something weird.\"",
         character: "assets/images/characters/seyoun_normal.png",
+        stats: { Seoyeon: { affinity: 2 } },
         next: "day3_lunch_seoyeon_weekend"
     },
     "day3_lunch_seoyeon_tease": {
         name: "Seoyeon",
         text: "\"W-what! Who said I'm jealous! ...Maybe a little.\"",
         character: "assets/images/characters/seyoun_blush.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day3_lunch_seoyeon_weekend"
     },
     "day3_lunch_seoyeon_weekend": {
@@ -176,8 +180,8 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(Wait, I already have other plans... What should I do?)",
         choices: [
-            { text: "\"How about Sunday?\" (Lie)", next: "day3_lunch_seoyeon_lie", stats: { Seoyeon: { affinity: 3 } }, setFlag: "day3_seoyeon_sunday_promise" },
-            { text: "Be honest", next: "day3_lunch_seoyeon_honest", stats: { Seoyeon: { affinity: -5 } } },
+            { text: "\"How about Sunday?\" (Lie)", next: "day3_lunch_seoyeon_lie", setFlag: "day3_seoyeon_sunday_promise" },
+            { text: "Be honest", next: "day3_lunch_seoyeon_honest" },
             { text: "Dodge the question", next: "day3_lunch_seoyeon_dodge" }
         ]
     },
@@ -185,12 +189,14 @@ Object.assign(SCENARIO[3], {
         name: "Seoyeon",
         text: "\"Really?! Then let's meet on Sunday! Can I pick where to go?\"",
         character: "assets/images/characters/seyoun_happy.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day3_lunch_seoyeon_end"
     },
     "day3_lunch_seoyeon_honest": {
         name: "Seoyeon",
         text: "\"...What? You have other plans? With who?\"",
         character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -5 } },
         next: "day3_lunch_seoyeon_honest_2"
     },
     "day3_lunch_seoyeon_honest_2": {
@@ -222,6 +228,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_choose_yuna": {
         name: "Me",
         text: "\"Yuna, let's go together.\"",
+        stats: { Yuna: { affinity: 5 } },
         setFlag: "day3_lunch_with_yuna",
         next: "day3_lunch_yuna_others_react"
     },
@@ -255,8 +262,8 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(There's thorns in Yuna's words.)",
         choices: [
-            { text: "\"You're special to me\"", next: "day3_lunch_yuna_special", stats: { Yuna: { affinity: 10 } } },
-            { text: "\"I try to be nice to everyone\"", next: "day3_lunch_yuna_everyone", stats: { Yuna: { affinity: -3 } } },
+            { text: "\"You're special to me\"", next: "day3_lunch_yuna_special" },
+            { text: "\"I try to be nice to everyone\"", next: "day3_lunch_yuna_everyone" },
             { text: "\"Why do you say that?\"", next: "day3_lunch_yuna_question" }
         ]
     },
@@ -264,12 +271,14 @@ Object.assign(SCENARIO[3], {
         name: "Yuna",
         text: "\"...Really? Prove it. Tomorrow night.\"",
         character: "assets/images/characters/yuna_happy.png",
+        stats: { Yuna: { affinity: 10 } },
         next: "day3_lunch_yuna_warning"
     },
     "day3_lunch_yuna_everyone": {
         name: "Yuna",
         text: "\"...I see. So I'm just one of 'everyone'.\"",
         character: "assets/images/characters/yuna_sad.png",
+        stats: { Yuna: { affinity: -3 } },
         next: "day3_lunch_yuna_warning"
     },
     "day3_lunch_yuna_question": {
@@ -294,6 +303,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_choose_dain": {
         name: "Me",
         text: "\"Dain, let's go eat together.\"",
+        stats: { Dain: { affinity: 5 } },
         setFlag: "day3_lunch_with_dain",
         next: "day3_lunch_dain_others_react"
     },
@@ -328,27 +338,30 @@ Object.assign(SCENARIO[3], {
         text: "\"Hey, be honest with me. Are you dating Seoyeon? Or Yuna? I know they're both interested in you.\"",
         character: "assets/images/characters/dain_normal.png",
         choices: [
-            { text: "\"No, I like you\"", next: "day3_lunch_dain_confess", stats: { Dain: { affinity: 10 } } },
-            { text: "\"We're just friends\"", next: "day3_lunch_dain_friends", stats: { Dain: { affinity: 2 } } },
-            { text: "\"Why, are you jealous too?\"", next: "day3_lunch_dain_jealous_tease", stats: { Dain: { affinity: 5 } } }
+            { text: "\"No, I like you\"", next: "day3_lunch_dain_confess" },
+            { text: "\"We're just friends\"", next: "day3_lunch_dain_friends" },
+            { text: "\"Why, are you jealous too?\"", next: "day3_lunch_dain_jealous_tease" }
         ]
     },
     "day3_lunch_dain_confess": {
         name: "Dain",
         text: "\"W-what?! Saying that out of nowhere... Geez!\"",
         character: "assets/images/characters/dain_blush.png",
+        stats: { Dain: { affinity: 10 } },
         next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_friends": {
         name: "Dain",
         text: "\"Hmm~ Really? Their faces say otherwise though... Well, whatever!\"",
         character: "assets/images/characters/dain_normal.png",
+        stats: { Dain: { affinity: 2 } },
         next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_jealous_tease": {
         name: "Dain",
         text: "\"Huh?! Who's jealous! I'm just curious! ...Maybe a little bothered though!\"",
         character: "assets/images/characters/dain_blush.png",
+        stats: { Dain: { affinity: 5 } },
         next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_end": {
@@ -364,14 +377,15 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(Tomorrow... I have other plans too...)",
         choices: [
-            { text: "\"Of course!\"", next: "day3_lunch_dain_promise", stats: { Dain: { affinity: 5 } } },
-            { text: "\"If I have time...\"", next: "day3_lunch_dain_maybe", stats: { Dain: { affinity: -3 } } }
+            { text: "\"Of course!\"", next: "day3_lunch_dain_promise" },
+            { text: "\"If I have time...\"", next: "day3_lunch_dain_maybe" }
         ]
     },
     "day3_lunch_dain_promise": {
         name: "Dain",
         text: "\"Great! Look forward to it! I'll show you my amazing spike!\"",
         character: "assets/images/characters/dain_laugh.png",
+        stats: { Dain: { affinity: 5 } },
         fade: true,
         next: "day3_afternoon_start"
     },
@@ -379,6 +393,7 @@ Object.assign(SCENARIO[3], {
         name: "Dain",
         text: "\"...What, if you have time? Do you have other plans?\"",
         character: "assets/images/characters/dain_sad.png",
+        stats: { Dain: { affinity: -3 } },
         next: "day3_lunch_dain_suspicious"
     },
     "day3_lunch_dain_suspicious": {
@@ -444,9 +459,9 @@ Object.assign(SCENARIO[3], {
         text: "\"Wait... {name}, did you make promises with all of us?\"",
         character: "assets/images/characters/seyoun_sad.png",
         choices: [
-            { text: "Apologize honestly", next: "day3_lunch_apologize", stats: { Seoyeon: { affinity: 3 }, Dain: { affinity: 3 } } },
-            { text: "Make excuses about different times", next: "day3_lunch_excuse" },
-            { text: "Run away", next: "day3_lunch_run", stats: { Seoyeon: { affinity: -10 }, Yuna: { affinity: -10 }, Dain: { affinity: -10 } } }
+            { text: "Apologize honestly", next: "day3_lunch_apologize", stats: { Seoyeon: { affinity: -8 }, Yuna: { affinity: -8 }, Dain: { affinity: -8 } } },
+            { text: "Make excuses about different times", next: "day3_lunch_excuse", stats: { Seoyeon: { affinity: -15 }, Yuna: { affinity: -15 }, Dain: { affinity: -15 } } },
+            { text: "Run away", next: "day3_lunch_run", stats: { Seoyeon: { affinity: -20 }, Yuna: { affinity: -20 }, Dain: { affinity: -20 } } }
         ]
     },
     "day3_lunch_apologize": {

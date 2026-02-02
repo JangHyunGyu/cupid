@@ -98,9 +98,9 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(어떻게 대답해야 할까...)",
         choices: [
-            { text: "솔직하게 인정한다", next: "day3_afternoon_admit", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "솔직하게 인정한다", next: "day3_afternoon_admit" },
             { text: "시간대가 다르니까 괜찮다고 한다", next: "day3_afternoon_justify" },
-            { text: "서연이만 진심이라고 한다", next: "day3_afternoon_lie_seoyeon", stats: { Seoyeon: { affinity: 10 } } }
+            { text: "서연이만 진심이라고 한다", next: "day3_afternoon_lie_seoyeon" }
         ]
     },
     "day3_afternoon_admit": {
@@ -112,6 +112,7 @@ Object.assign(SCENARIO[3], {
         name: "서연",
         text: "\"...솔직한 건 고마워. 근데 나, 그런 거 싫어.\"",
         character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: 5 } },
         next: "day3_afternoon_admit_react_2"
     },
     "day3_afternoon_admit_react_2": {
@@ -148,6 +149,7 @@ Object.assign(SCENARIO[3], {
         name: "서연",
         text: "\"...정말? 그 말... 믿어도 돼?\"",
         character: "assets/images/characters/seyoun_happy.png",
+        stats: { Seoyeon: { affinity: 3 } },
         setFlag: "day3_promised_seoyeon_only",
         next: "day3_afternoon_lie_warning"
     },
@@ -191,27 +193,30 @@ Object.assign(SCENARIO[3], {
         text: "\"근데 솔직히... 너 유나나 다인이랑 친한 거 보면 마음이 좀 그래.\"",
         character: "assets/images/characters/seyoun_normal.png",
         choices: [
-            { text: "\"서연이가 제일 좋아\"", next: "day3_afternoon_seoyeon_comfort", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "\"다들 소중한 친구야\"", next: "day3_afternoon_seoyeon_friend", stats: { Seoyeon: { affinity: -3 } } },
-            { text: "\"질투하는 거야?\"", next: "day3_afternoon_seoyeon_tease", stats: { Seoyeon: { affinity: 3 } } }
+            { text: "\"서연이가 제일 좋아\"", next: "day3_afternoon_seoyeon_comfort" },
+            { text: "\"다들 소중한 친구야\"", next: "day3_afternoon_seoyeon_friend" },
+            { text: "\"질투하는 거야?\"", next: "day3_afternoon_seoyeon_tease" }
         ]
     },
     "day3_afternoon_seoyeon_comfort": {
         name: "서연",
         text: "\"...진짜? 그 말 들으니까... 좀 안심이 돼.\"",
         character: "assets/images/characters/seyoun_happy.png",
+        stats: { Seoyeon: { affinity: 8 } },
         next: "day3_afternoon_transition"
     },
     "day3_afternoon_seoyeon_friend": {
         name: "서연",
         text: "\"...그래. 친구구나. 알았어.\"",
         character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -3 } },
         next: "day3_afternoon_transition"
     },
     "day3_afternoon_seoyeon_tease": {
         name: "서연",
         text: "\"뭐, 뭐야! 그게 아니라... 아, 몰라!\"",
         character: "assets/images/characters/seyoun_blush.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day3_afternoon_transition"
     },
     "day3_afternoon_yuna_approach": {
@@ -231,21 +236,23 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(유나의 눈빛이 평소보다 더 차갑다.)",
         choices: [
-            { text: "\"미안해, 유나\"", next: "day3_afternoon_yuna_apologize", stats: { Yuna: { affinity: 5 } } },
-            { text: "\"내일은 유나랑 있을게\"", next: "day3_afternoon_yuna_promise", stats: { Yuna: { affinity: 8 } } },
-            { text: "\"왜, 화났어?\"", next: "day3_afternoon_yuna_question", stats: { Yuna: { affinity: -3 } } }
+            { text: "\"미안해, 유나\"", next: "day3_afternoon_yuna_apologize" },
+            { text: "\"내일은 유나랑 있을게\"", next: "day3_afternoon_yuna_promise" },
+            { text: "\"왜, 화났어?\"", next: "day3_afternoon_yuna_question" }
         ]
     },
     "day3_afternoon_yuna_apologize": {
         name: "유나",
         text: "\"...괜찮아. 내일이 있으니까.\"",
         character: "assets/images/characters/yuna_normal.png",
+        stats: { Yuna: { affinity: 5 } },
         next: "day3_afternoon_yuna_warning"
     },
     "day3_afternoon_yuna_promise": {
         name: "유나",
         text: "\"...그 말, 잊지 않을게.\"",
         character: "assets/images/characters/yuna_happy.png",
+        stats: { Yuna: { affinity: 8 } },
         setFlag: "day3_yuna_priority_promise",
         next: "day3_afternoon_yuna_warning"
     },
@@ -253,6 +260,7 @@ Object.assign(SCENARIO[3], {
         name: "유나",
         text: "\"...화? 아니. 그냥... 확인하고 싶었어.\"",
         character: "assets/images/characters/yuna_normal.png",
+        stats: { Yuna: { affinity: -3 } },
         next: "day3_afternoon_yuna_warning"
     },
     "day3_afternoon_yuna_warning": {
@@ -277,27 +285,30 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(다인이가 볼을 부풀리며 항의한다.)",
         choices: [
-            { text: "\"미안, 다음엔 같이 먹자\"", next: "day3_afternoon_dain_sorry", stats: { Dain: { affinity: 5 } } },
-            { text: "\"내일 연습 보러 갈게\"", next: "day3_afternoon_dain_promise", stats: { Dain: { affinity: 8 } } },
-            { text: "\"귀엽네, 화난 거야?\"", next: "day3_afternoon_dain_tease", stats: { Dain: { affinity: 5 } } }
+            { text: "\"미안, 다음엔 같이 먹자\"", next: "day3_afternoon_dain_sorry" },
+            { text: "\"내일 연습 보러 갈게\"", next: "day3_afternoon_dain_promise" },
+            { text: "\"귀엽네, 화난 거야?\"", next: "day3_afternoon_dain_tease" }
         ]
     },
     "day3_afternoon_dain_sorry": {
         name: "다인",
         text: "\"흥, 꼭 그래야 해! 약속이다!\"",
         character: "assets/images/characters/dain_normal.png",
+        stats: { Dain: { affinity: 5 } },
         next: "day3_afternoon_transition"
     },
     "day3_afternoon_dain_promise": {
         name: "다인",
         text: "\"진짜?! 그럼 용서해줄게! 내 스파이크 기대해!\"",
         character: "assets/images/characters/dain_laugh.png",
+        stats: { Dain: { affinity: 8 } },
         next: "day3_afternoon_transition"
     },
     "day3_afternoon_dain_tease": {
         name: "다인",
         text: "\"뭐, 뭐야! 귀엽긴 뭐가 귀여워! 바보!\"",
         character: "assets/images/characters/dain_blush.png",
+        stats: { Dain: { affinity: 5 } },
         next: "day3_afternoon_transition"
     },
 
@@ -372,9 +383,9 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(누구와 함께 갈까...?)",
         choices: [
-            { text: "서연이와 간다", next: "day3_afternoon_seoyeon_walk", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "유나와 간다", next: "day3_afternoon_yuna_walk", condition: "day3_yuna_date_confirmed", stats: { Yuna: { affinity: 5 } } },
-            { text: "다인이와 간다", next: "day3_afternoon_dain_walk", condition: "day3_dain_date_confirmed", stats: { Dain: { affinity: 5 } } },
+            { text: "서연이와 간다", next: "day3_afternoon_seoyeon_walk" },
+            { text: "유나와 간다", next: "day3_afternoon_yuna_walk", condition: "day3_yuna_date_confirmed" },
+            { text: "다인이와 간다", next: "day3_afternoon_dain_walk", condition: "day3_dain_date_confirmed" },
             { text: "혼자 간다", next: "day3_afternoon_reject_all", stats: { Seoyeon: { affinity: -5 }, Yuna: { affinity: -5 }, Dain: { affinity: -5 } } }
         ]
     },
@@ -385,6 +396,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_seoyeon_walk": {
         name: "나",
         text: "\"서연아, 같이 가자.\"",
+        stats: { Seoyeon: { affinity: 5 } },
         setFlag: "day3_walked_with_seoyeon",
         next: "day3_afternoon_seoyeon_walk_2"
     },
@@ -469,6 +481,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_walk": {
         name: "나",
         text: "\"유나야, 같이 가자.\"",
+        stats: { Yuna: { affinity: 5 } },
         setFlag: "day3_walked_with_yuna",
         next: "day3_afternoon_yuna_walk_2"
     },
@@ -538,6 +551,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_dain_walk": {
         name: "나",
         text: "\"다인아, 같이 가자.\"",
+        stats: { Dain: { affinity: 5 } },
         setFlag: "day3_walked_with_dain",
         next: "day3_afternoon_dain_walk_2"
     },
@@ -545,7 +559,7 @@ Object.assign(SCENARIO[3], {
         name: "다인",
         text: "\"야호! 가자가자!\"",
         character: "assets/images/characters/dain_laugh.png",
-        stats: { Seoyeon: { affinity: -5 } },
+        stats: { Seoyeon: { affinity: -5 }, Yuna: { affinity: -5 } },
         background: "assets/images/background/school.png",
         next: "day3_afternoon_dain_talk_walk"
     },
@@ -650,7 +664,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_teacher_ride": {
         name: "담임선생님",
-        text: "\"내일 토요일에 박물관 약속 잊지 않았지? 기대하고 있을게.\"",
+        text: "\"모레 일요일에 박물관 약속 잊지 않았지? 기대하고 있을게.\"",
         character: "assets/images/characters/teacher_smile.png",
         background: "assets/images/background/school.png",
         fade: true,

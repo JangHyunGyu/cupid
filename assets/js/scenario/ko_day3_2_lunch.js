@@ -128,9 +128,9 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(분위기가 심상치 않다... 어떡하지?)",
         choices: [
-            { text: "서연이와 점심을 먹는다", next: "day3_lunch_choose_seoyeon", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "유나와 점심을 먹는다", next: "day3_lunch_choose_yuna", condition: "day3_yuna_date_confirmed", stats: { Yuna: { affinity: 5 } } },
-            { text: "다인이와 점심을 먹는다", next: "day3_lunch_choose_dain", condition: "day3_dain_date_confirmed", stats: { Dain: { affinity: 5 } } },
+            { text: "서연이와 점심을 먹는다", next: "day3_lunch_choose_seoyeon" },
+            { text: "유나와 점심을 먹는다", next: "day3_lunch_choose_yuna", condition: "day3_yuna_date_confirmed" },
+            { text: "다인이와 점심을 먹는다", next: "day3_lunch_choose_dain", condition: "day3_dain_date_confirmed" },
             { text: "다 같이 먹자고 제안한다", next: "day3_lunch_together_propose" },
             { text: "혼자 먹겠다고 도망친다", next: "day3_lunch_escape", stats: { Seoyeon: { affinity: -3 }, Yuna: { affinity: -3 }, Dain: { affinity: -3 } } }
         ]
@@ -142,6 +142,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_choose_seoyeon": {
         name: "나",
         text: "\"서연아, 같이 가자. 어제 약속한 거 있잖아.\"",
+        stats: { Seoyeon: { affinity: 5 } },
         setFlag: "day3_lunch_with_seoyeon",
         next: "day3_lunch_seoyeon_others_react"
     },
@@ -172,7 +173,7 @@ Object.assign(SCENARIO[3], {
         name: "다인",
         text: "\"뭐야, 난 안 끼워줘? 흥, 알았어!\"",
         character: "assets/images/characters/dain_sad.png",
-        stats: { Dain: { affinity: -3 } },
+        stats: { Dain: { affinity: -5 } },
         setFlag: "day3_jealousy_dain",
         next: "day3_lunch_dain_jealous_2"
     },
@@ -193,27 +194,30 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(서연이의 목소리에 평소와 다른 날이 서 있다.)",
         choices: [
-            { text: "\"서연이가 제일 소중해\"", next: "day3_lunch_seoyeon_reassure", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "\"그냥 친구들이야\"", next: "day3_lunch_seoyeon_deny", stats: { Seoyeon: { affinity: 2 } } },
-            { text: "\"왜, 질투해?\"", next: "day3_lunch_seoyeon_tease", stats: { Seoyeon: { affinity: 3 } } }
+            { text: "\"서연이가 제일 소중해\"", next: "day3_lunch_seoyeon_reassure" },
+            { text: "\"그냥 친구들이야\"", next: "day3_lunch_seoyeon_deny" },
+            { text: "\"왜, 질투해?\"", next: "day3_lunch_seoyeon_tease" }
         ]
     },
     "day3_lunch_seoyeon_reassure": {
         name: "서연",
         text: "\"...정말? 그 말... 기억할게.\"",
         character: "assets/images/characters/seyoun_happy.png",
+        stats: { Seoyeon: { affinity: 8 } },
         next: "day3_lunch_seoyeon_weekend"
     },
     "day3_lunch_seoyeon_deny": {
         name: "서연",
         text: "\"...그래, 그렇겠지. 미안, 이상한 말 했어.\"",
         character: "assets/images/characters/seyoun_normal.png",
+        stats: { Seoyeon: { affinity: 2 } },
         next: "day3_lunch_seoyeon_weekend"
     },
     "day3_lunch_seoyeon_tease": {
         name: "서연",
         text: "\"뭐, 뭐야! 누가 질투래! ...조금.\"",
         character: "assets/images/characters/seyoun_blush.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day3_lunch_seoyeon_weekend"
     },
     "day3_lunch_seoyeon_weekend": {
@@ -229,8 +233,8 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(잠깐, 나 이미 다른 약속이... 어떡하지?)",
         choices: [
-            { text: "\"일요일은 어때?\" (거짓말)", next: "day3_lunch_seoyeon_lie", stats: { Seoyeon: { affinity: 3 } }, setFlag: "day3_seoyeon_sunday_promise" },
-            { text: "솔직하게 말한다", next: "day3_lunch_seoyeon_honest", stats: { Seoyeon: { affinity: -5 } } },
+            { text: "\"일요일은 어때?\" (거짓말)", next: "day3_lunch_seoyeon_lie", setFlag: "day3_seoyeon_sunday_promise" },
+            { text: "솔직하게 말한다", next: "day3_lunch_seoyeon_honest" },
             { text: "얼버무린다", next: "day3_lunch_seoyeon_dodge" }
         ]
     },
@@ -238,12 +242,14 @@ Object.assign(SCENARIO[3], {
         name: "서연",
         text: "\"진짜?! 그럼 일요일에 만나자! 어디 갈지 내가 정해도 돼?\"",
         character: "assets/images/characters/seyoun_happy.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day3_lunch_seoyeon_end"
     },
     "day3_lunch_seoyeon_honest": {
         name: "서연",
         text: "\"...뭐? 다른 약속이 있어? 누구랑?\"",
         character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -5 } },
         next: "day3_lunch_seoyeon_honest_2"
     },
     "day3_lunch_seoyeon_honest_2": {
@@ -278,6 +284,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_choose_yuna": {
         name: "나",
         text: "\"유나야, 같이 가자.\"",
+        stats: { Yuna: { affinity: 5 } },
         setFlag: "day3_lunch_with_yuna",
         next: "day3_lunch_yuna_others_react"
     },
@@ -311,8 +318,8 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(유나의 말에 가시가 돋쳐 있다.)",
         choices: [
-            { text: "\"유나가 특별해\"", next: "day3_lunch_yuna_special", stats: { Yuna: { affinity: 10 } } },
-            { text: "\"모두에게 잘해주려고 해\"", next: "day3_lunch_yuna_everyone", stats: { Yuna: { affinity: -3 } } },
+            { text: "\"유나가 특별해\"", next: "day3_lunch_yuna_special" },
+            { text: "\"모두에게 잘해주려고 해\"", next: "day3_lunch_yuna_everyone" },
             { text: "\"왜 그런 말을 해?\"", next: "day3_lunch_yuna_question" }
         ]
     },
@@ -320,12 +327,14 @@ Object.assign(SCENARIO[3], {
         name: "유나",
         text: "\"...정말? 그 말... 증명해줘. 내일 밤.\"",
         character: "assets/images/characters/yuna_happy.png",
+        stats: { Yuna: { affinity: 10 } },
         next: "day3_lunch_yuna_warning"
     },
     "day3_lunch_yuna_everyone": {
         name: "유나",
         text: "\"...그래. 역시 그렇구나. 난 그냥 '모두' 중 하나야.\"",
         character: "assets/images/characters/yuna_sad.png",
+        stats: { Yuna: { affinity: -3 } },
         next: "day3_lunch_yuna_warning"
     },
     "day3_lunch_yuna_question": {
@@ -353,6 +362,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_choose_dain": {
         name: "나",
         text: "\"다인아, 같이 밥 먹으러 가자.\"",
+        stats: { Dain: { affinity: 5 } },
         setFlag: "day3_lunch_with_dain",
         next: "day3_lunch_dain_others_react"
     },
@@ -387,27 +397,28 @@ Object.assign(SCENARIO[3], {
         text: "\"야, 솔직히 말해봐. 너 서연이랑 사귀어? 아님 유나? 걔네 둘 다 너한테 관심 있는 거 다 알아.\"",
         character: "assets/images/characters/dain_normal.png",
         choices: [
-            { text: "\"아니, 다인이가 좋아\"", next: "day3_lunch_dain_confess", stats: { Dain: { affinity: 10 } } },
-            { text: "\"그냥 친구야\"", next: "day3_lunch_dain_friends", stats: { Dain: { affinity: 2 } } },
-            { text: "\"왜, 다인이도 질투해?\"", next: "day3_lunch_dain_jealous_tease", stats: { Dain: { affinity: 5 } } }
+            { text: "\"아니, 다인이가 좋아\"", next: "day3_lunch_dain_confess" },
+            { text: "\"그냥 친구야\"", next: "day3_lunch_dain_friends" },
+            { text: "\"왜, 다인이도 질투해?\"", next: "day3_lunch_dain_jealous_tease" }
         ]
     },
     "day3_lunch_dain_confess": {
         name: "다인",
         text: "\"뭐, 뭐라고?! 갑자기 그런 말 하면... 아, 진짜!\"",
         character: "assets/images/characters/dain_blush.png",
+        stats: { Dain: { affinity: 10 } },
         next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_friends": {
         name: "다인",
         text: "\"흠~ 정말? 근데 걔네 표정은 그게 아닌데... 뭐, 상관없지만!\"",
-        character: "assets/images/characters/dain_normal.png",
-        next: "day3_lunch_dain_end"
+        character: "assets/images/characters/dain_normal.png",        stats: { Dain: { affinity: 2 } },        next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_jealous_tease": {
         name: "다인",
         text: "\"하?! 누가 질투래! 난 그냥 궁금한 거야! ...조금 신경 쓰이긴 하지만!\"",
         character: "assets/images/characters/dain_blush.png",
+        stats: { Dain: { affinity: 5 } },
         next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_end": {
@@ -423,14 +434,15 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(내일... 다른 약속도 있는데...)",
         choices: [
-            { text: "\"당연하지!\"", next: "day3_lunch_dain_promise", stats: { Dain: { affinity: 5 } } },
-            { text: "\"시간이 되면...\"", next: "day3_lunch_dain_maybe", stats: { Dain: { affinity: -3 } } }
+            { text: "\"당연하지!\"", next: "day3_lunch_dain_promise" },
+            { text: "\"시간이 되면...\"", next: "day3_lunch_dain_maybe" }
         ]
     },
     "day3_lunch_dain_promise": {
         name: "다인",
         text: "\"좋아! 기대할게! 내 멋진 스파이크 보여줄 테니까!\"",
         character: "assets/images/characters/dain_laugh.png",
+        stats: { Dain: { affinity: 5 } },
         fade: true,
         next: "day3_afternoon_start"
     },
@@ -438,6 +450,7 @@ Object.assign(SCENARIO[3], {
         name: "다인",
         text: "\"...뭐야, 시간이 되면? 다른 약속 있어?\"",
         character: "assets/images/characters/dain_sad.png",
+        stats: { Dain: { affinity: -3 } },
         next: "day3_lunch_dain_suspicious"
     },
     "day3_lunch_dain_suspicious": {
@@ -506,9 +519,9 @@ Object.assign(SCENARIO[3], {
         text: "\"잠깐... {name}, 너 우리한테 다 약속한 거야?\"",
         character: "assets/images/characters/seyoun_sad.png",
         choices: [
-            { text: "솔직하게 사과한다", next: "day3_lunch_apologize", stats: { Seoyeon: { affinity: 3 }, Dain: { affinity: 3 } } },
-            { text: "시간대가 다르다고 변명한다", next: "day3_lunch_excuse" },
-            { text: "도망친다", next: "day3_lunch_run", stats: { Seoyeon: { affinity: -10 }, Yuna: { affinity: -10 }, Dain: { affinity: -10 } } }
+            { text: "솔직하게 사과한다", next: "day3_lunch_apologize", stats: { Seoyeon: { affinity: -8 }, Yuna: { affinity: -8 }, Dain: { affinity: -8 } } },
+            { text: "시간대가 다르다고 변명한다", next: "day3_lunch_excuse", stats: { Seoyeon: { affinity: -15 }, Yuna: { affinity: -15 }, Dain: { affinity: -15 } } },
+            { text: "도망친다", next: "day3_lunch_run", stats: { Seoyeon: { affinity: -20 }, Yuna: { affinity: -20 }, Dain: { affinity: -20 } } }
         ]
     },
     "day3_lunch_apologize": {
