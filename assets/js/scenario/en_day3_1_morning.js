@@ -94,27 +94,30 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(She hands me a cup of coffee with a knowing smile. My face feels hot.)",
         choices: [
-            { text: "\"Thank you, teacher...\"", next: "day3_nurse_home_morning_thanks", stats: { Nurse: { affinity: 3 } } },
-            { text: "\"Last night... was amazing\"", next: "day3_nurse_home_morning_bold", stats: { Nurse: { affinity: 8 } } },
-            { text: "(Too embarrassed to speak)", next: "day3_nurse_home_morning_shy", stats: { Nurse: { affinity: 5 } } }
+            { text: "\"Thank you, teacher...\"", next: "day3_nurse_home_morning_thanks" },
+            { text: "\"Last night... was amazing\"", next: "day3_nurse_home_morning_bold" },
+            { text: "(Too embarrassed to speak)", next: "day3_nurse_home_morning_shy" }
         ]
     },
     "day3_nurse_home_morning_thanks": {
         name: "School Nurse",
         text: "\"Hehe, don't be so stiff~ Not after what we shared.\"",
         character: "assets/images/characters/nurse_normal.png",
+        stats: { Nurse: { affinity: 3 } },
         next: "day3_nurse_home_morning_leave"
     },
     "day3_nurse_home_morning_bold": {
         name: "School Nurse",
         text: "\"Oh my... Bold thing to say in the morning. Hehe, teacher enjoyed it too.\"",
         character: "assets/images/characters/nurse_normal.png",
+        stats: { Nurse: { affinity: 8 } },
         next: "day3_nurse_home_morning_leave"
     },
     "day3_nurse_home_morning_shy": {
         name: "School Nurse",
         text: "\"Hehe, so cute. Your shy face is adorable too.\"",
         character: "assets/images/characters/nurse_normal.png",
+        stats: { Nurse: { affinity: 5 } },
         next: "day3_nurse_home_morning_leave"
     },
     "day3_nurse_home_morning_leave": {
@@ -147,7 +150,7 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(I'm flustered by Seoyeon's sharp question.)",
         choices: [
-            { text: "\"Just took a walk...\"", next: "day3_nurse_home_lie", stats: { Seoyeon: { affinity: -3 } } },
+            { text: "\"Just took a walk...\"", next: "day3_nurse_home_lie" },
             { text: "\"Stayed at a relative's house\"", next: "day3_nurse_home_half_lie" },
             { text: "(Stammer nervously)", next: "day3_nurse_home_stutter" }
         ]
@@ -157,6 +160,7 @@ Object.assign(SCENARIO[3], {
         text: "\"...A walk? At this hour? Hmm...\"",
         character: "assets/images/characters/seyoun_normal.png",
         setFlag: "day3_seoyeon_suspicious",
+        stats: { Seoyeon: { affinity: -3 } },
         next: "day3_nurse_home_yuna_appears"
     },
     "day3_nurse_home_half_lie": {
@@ -588,27 +592,30 @@ Object.assign(SCENARIO[3], {
         text: "(Walking down the quiet path, Yuna suddenly speaks) \"{name}, this weekend... there's a place I want to show only you.\"",
         character: "assets/images/characters/yuna_normal.png",
         choices: [
-            { text: "What kind of place?", next: "day3_yuna_weekend_ask", stats: { Yuna: { affinity: 3 } } },
-            { text: "Another secret?", next: "day3_yuna_weekend_curious", stats: { Yuna: { affinity: 1 } } },
-            { text: "...Okay, when?", next: "day3_yuna_weekend_direct", stats: { Yuna: { affinity: 5 } } }
+            { text: "What kind of place?", next: "day3_yuna_weekend_ask" },
+            { text: "Another secret?", next: "day3_yuna_weekend_curious" },
+            { text: "...Okay, when?", next: "day3_yuna_weekend_direct" }
         ]
     },
     "day3_yuna_weekend_ask": {
         name: "Yuna",
         text: "\"...A place where you can see the real face of this school. Saturday evening at 8 PM, at the school's back gate. Don't be late. There are things that can only be seen in the darkness.\"",
         character: "assets/images/characters/yuna_normal.png",
+        stats: { Yuna: { affinity: 3 } },
         next: "day3_yuna_weekend_choice"
     },
     "day3_yuna_weekend_curious": {
         name: "Yuna",
         text: "(Yuna smiles coldly) \"It's closer to the truth than a secret. Saturday evening at 8 PM. Everything changes after the sun sets. You'll come, right?\"",
         character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 1 } },
         next: "day3_yuna_weekend_choice"
     },
     "day3_yuna_weekend_direct": {
         name: "Yuna",
         text: "(Yuna looks at me in surprise, then smiles) \"...That's so like you. Saturday evening at 8 PM, school back gate. There are things that can only be seen when darkness falls. You must come.\"",
         character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 5 } },
         next: "day3_yuna_weekend_choice"
     },
     "day3_yuna_weekend_choice": {
@@ -616,27 +623,30 @@ Object.assign(SCENARIO[3], {
         text: "(Yuna's serious gaze pierces through me. 8 PM in the evening... Something feels ominous.)",
         character: "assets/images/characters/yuna_normal.png",
         choices: [
-            { text: "Okay, I'll definitely come", next: "day3_yuna_weekend_yes", stats: { Yuna: { affinity: 8 } }, setFlag: "day3_yuna_date_confirmed" },
-            { text: "Let me think about it and reply", next: "day3_yuna_weekend_later", stats: { Yuna: { affinity: -5 } } },
-            { text: "Sorry, I have other plans", next: "day3_yuna_weekend_no", stats: { Yuna: { affinity: -30 } } }
+            { text: "Okay, I'll definitely come", next: "day3_yuna_weekend_yes", setFlag: "day3_yuna_date_confirmed" },
+            { text: "Let me think about it and reply", next: "day3_yuna_weekend_later" },
+            { text: "Sorry, I have other plans", next: "day3_yuna_weekend_no" }
         ]
     },
     "day3_yuna_weekend_yes": {
         name: "Yuna",
         text: "(Yuna briefly holds my hand then lets go) \"...Thank you. You won't regret it. Saturday night, be ready to face the truth.\"",
         character: "assets/images/characters/yuna_shy.png",
+        stats: { Yuna: { affinity: 8 } },
         next: "day3_arrive_school"
     },
     "day3_yuna_weekend_later": {
         name: "Yuna",
         text: "(Yuna looks disappointed and turns her head away) \"...I see. But there's only one chance. Think carefully. There's a door that only opens at night.\"",
         character: "assets/images/characters/yuna_normal.png",
+        stats: { Yuna: { affinity: -5 } },
         next: "day3_arrive_school"
     },
     "day3_yuna_weekend_no": {
         name: "Yuna",
         text: "(Yuna's gaze turns cold) \"......\"",
         character: "assets/images/characters/yuna_bored.png",
+        stats: { Yuna: { affinity: -30 } },
         next: "day3_arrive_school"
     },
     "day3_walk_with_dain": {
@@ -658,27 +668,30 @@ Object.assign(SCENARIO[3], {
         text: "(Walking excitedly) \"Oh! By the way {name}! Tomorrow at 9 AM, our team has a practice match at the gym. Come cheer for me!\"",
         character: "assets/images/characters/dain_normal.png",
         choices: [
-            { text: "Sounds fun! Of course I'll go!", next: "day3_dain_weekend_ask", stats: { Dain: { affinity: 3 } } },
-            { text: "9 AM? That's pretty early", next: "day3_dain_weekend_early", stats: { Dain: { affinity: 1 } } },
-            { text: "That sounds troublesome...", next: "day3_dain_weekend_hesitate", stats: { Dain: { affinity: -2 } } }
+            { text: "Sounds fun! Of course I'll go!", next: "day3_dain_weekend_ask" },
+            { text: "9 AM? That's pretty early", next: "day3_dain_weekend_early" },
+            { text: "That sounds troublesome...", next: "day3_dain_weekend_hesitate" }
         ]
     },
     "day3_dain_weekend_ask": {
         name: "Dain",
         text: "(Dain jumps excitedly) \"Really?! Awesome! Then after practice, let's eat together! Let's go get tteokbokki!\"",
         character: "assets/images/characters/dain_laugh.png",
+        stats: { Dain: { affinity: 3 } },
         next: "day3_dain_weekend_choice"
     },
     "day3_dain_weekend_early": {
         name: "Dain",
         text: "(Dain smiles) \"Right? It's hard for me to wake up early too, but it would really give me energy if you came!\"",
         character: "assets/images/characters/dain_laugh.png",
+        stats: { Dain: { affinity: 1 } },
         next: "day3_dain_weekend_choice"
     },
     "day3_dain_weekend_hesitate": {
         name: "Dain",
         text: "(Dain puts her arm around my shoulder) \"It's okay! Just come and cheer! I'll show you my awesome spike!\"",
         character: "assets/images/characters/dain_normal.png",
+        stats: { Dain: { affinity: -2 } },
         next: "day3_dain_weekend_choice"
     },
     "day3_dain_weekend_choice": {
@@ -686,27 +699,30 @@ Object.assign(SCENARIO[3], {
         text: "(Dain looks at me with hopeful eyes.)",
         character: "assets/images/characters/dain_normal.png",
         choices: [
-            { text: "Okay! See you Saturday at 9 at the gym", next: "day3_dain_weekend_yes", stats: { Dain: { affinity: 8 } }, setFlag: "day3_dain_date_confirmed" },
-            { text: "Let me think about it and contact you", next: "day3_dain_weekend_later", stats: { Dain: { affinity: -3 } } },
-            { text: "Good luck, I have other plans this weekend...", next: "day3_dain_weekend_no", stats: { Dain: { affinity: -20 } } }
+            { text: "Okay! See you Saturday at 9 at the gym", next: "day3_dain_weekend_yes", setFlag: "day3_dain_date_confirmed" },
+            { text: "Let me think about it and contact you", next: "day3_dain_weekend_later" },
+            { text: "Good luck, I have other plans this weekend...", next: "day3_dain_weekend_no" }
         ]
     },
     "day3_dain_weekend_yes": {
         name: "Dain",
         text: "(Dain grabs my hand and shakes it) \"Wow! You're the best {name}! Then see you on Saturday! Don't be late!\"",
         character: "assets/images/characters/dain_laugh.png",
+        stats: { Dain: { affinity: 8 } },
         next: "day3_arrive_school"
     },
     "day3_dain_weekend_later": {
         name: "Dain",
         text: "(Dain looks a bit down) \"Aw... But you have to come, okay? Promise?\"",
         character: "assets/images/characters/dain_normal.png",
+        stats: { Dain: { affinity: -3 } },
         next: "day3_arrive_school"
     },
     "day3_dain_weekend_no": {
         name: "Dain",
         text: "(Dain makes a disappointed face) \"Oh... I see. But if you have time later, make sure to visit!\"",
         character: "assets/images/characters/dain_sad.png",
+        stats: { Dain: { affinity: -20 } },
         next: "day3_arrive_school"
     },
     "day3_walk_with_nurse": {
