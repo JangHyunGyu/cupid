@@ -209,8 +209,8 @@ Object.assign(SCENARIO[3], {
     "day3_nurse_home_escape": {
         name: "Me",
         text: "(I hurry to the classroom. The gazes from behind feel burning hot...)",
-        background: "assets/images/background/room_school.png",
-        next: "day3_morning_end"
+        background: "assets/images/background/school.png",
+        next: "day3_classroom"
     },
     "day3_nurse_home_excuse": {
         name: "Seoyeon",
@@ -222,8 +222,8 @@ Object.assign(SCENARIO[3], {
     "day3_nurse_home_excuse_2": {
         name: "Me",
         text: "(Seoyeon looks upset. Let's just head to the classroom for now.)",
-        background: "assets/images/background/room_school.png",
-        next: "day3_morning_end"
+        background: "assets/images/background/school.png",
+        next: "day3_classroom"
     },
 
     // =========================================================================
