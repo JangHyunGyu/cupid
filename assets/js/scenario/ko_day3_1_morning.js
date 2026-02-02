@@ -213,8 +213,8 @@ Object.assign(SCENARIO[3], {
     "day3_nurse_home_escape": {
         name: "나",
         text: "(서둘러 교실로 향한다. 뒤에서 느껴지는 시선이 따갑다...)",
-        background: "assets/images/background/room_school.png",
-        next: "day3_morning_end"
+        background: "assets/images/background/school.png",
+        next: "day3_classroom"
     },
     "day3_nurse_home_excuse": {
         name: "서연",
@@ -226,8 +226,8 @@ Object.assign(SCENARIO[3], {
     "day3_nurse_home_excuse_2": {
         name: "나",
         text: "(서연이의 눈빛이 사나워 보인다. 일단 교실로 향하자.)",
-        background: "assets/images/background/room_school.png",
-        next: "day3_morning_end"
+        background: "assets/images/background/school.png",
+        next: "day3_classroom"
     },
 
     // =========================================================================
