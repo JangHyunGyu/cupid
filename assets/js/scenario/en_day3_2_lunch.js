@@ -133,7 +133,7 @@ Object.assign(SCENARIO[3], {
         name: "Seoyeon",
         text: "\"Phew... Finally just the two of us. Honestly, {name}, don't you think too many people are interested in you lately?\"",
         character: "assets/images/characters/seyoun_normal.png",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         next: "day3_lunch_seoyeon_jealous_talk"
     },
     "day3_lunch_seoyeon_jealous_talk": {
@@ -242,7 +242,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_yuna_rooftop": {
         name: "Me",
         text: "(I followed Yuna to the rooftop. Are we eating here?)",
-        background: "assets/images/background/school_rooftop.png",
+        background: "assets/images/background/top_school.png",
         next: "day3_lunch_yuna_talk_1"
     },
     "day3_lunch_yuna_talk_1": {
@@ -309,7 +309,7 @@ Object.assign(SCENARIO[3], {
         name: "Dain",
         text: "\"Yay! {name} is the best! Let's go, today's lunch is chicken!\"",
         character: "assets/images/characters/dain_laugh.png",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         next: "day3_lunch_dain_talk_1"
     },
     "day3_lunch_dain_talk_1": {
@@ -408,7 +408,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_together_2": {
         name: "Me",
         text: "(Lunch in the cafeteria. The atmosphere is strangely tense.)",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         next: "day3_lunch_together_3"
     },
     "day3_lunch_together_3": {
@@ -513,7 +513,7 @@ Object.assign(SCENARIO[3], {
         name: "Seoyeon",
         text: "\"{name}! Let's eat together!\"",
         character: "assets/images/characters/seyoun_happy.png",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         stats: { Seoyeon: { affinity: 3 } },
         setFlag: "day3_lunch_with_seoyeon",
         next: "day3_lunch_seoyeon_weekend"
@@ -530,7 +530,7 @@ Object.assign(SCENARIO[3], {
         name: "Dain",
         text: "\"Let's go eat! Today's chicken day!\"",
         character: "assets/images/characters/dain_laugh.png",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         stats: { Dain: { affinity: 3 } },
         setFlag: "day3_lunch_with_dain",
         next: "day3_lunch_dain_talk_1"
@@ -539,7 +539,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_normal": {
         name: "Me",
         text: "(No special plans... I'll just have a normal lunch today.)",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         next: "day3_lunch_normal_2"
     },
     "day3_lunch_normal_2": {

@@ -186,7 +186,7 @@ Object.assign(SCENARIO[3], {
         name: "서연",
         text: "\"후... 드디어 둘이네. 솔직히 말할게, {name}. 요즘 너한테 관심 있는 애들 너무 많은 거 아니야?\"",
         character: "assets/images/characters/seyoun_normal.png",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         next: "day3_lunch_seoyeon_jealous_talk"
     },
     "day3_lunch_seoyeon_jealous_talk": {
@@ -298,7 +298,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_yuna_rooftop": {
         name: "나",
         text: "(유나를 따라 옥상으로 올라왔다. 여기서 먹는 건가?)",
-        background: "assets/images/background/school_rooftop.png",
+        background: "assets/images/background/top_school.png",
         next: "day3_lunch_yuna_talk_1"
     },
     "day3_lunch_yuna_talk_1": {
@@ -368,7 +368,7 @@ Object.assign(SCENARIO[3], {
         name: "다인",
         text: "\"야호! 역시 {name}이 최고야! 빨리 가자, 오늘 급식 치킨이래!\"",
         character: "assets/images/characters/dain_laugh.png",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         next: "day3_lunch_dain_talk_1"
     },
     "day3_lunch_dain_talk_1": {
@@ -470,7 +470,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_together_2": {
         name: "나",
         text: "(급식실에서의 점심. 분위기가 묘하게 살벌하다.)",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         next: "day3_lunch_together_3"
     },
     "day3_lunch_together_3": {
@@ -581,7 +581,7 @@ Object.assign(SCENARIO[3], {
         name: "서연",
         text: "\"{name}! 같이 밥 먹자!\"",
         character: "assets/images/characters/seyoun_happy.png",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         stats: { Seoyeon: { affinity: 3 } },
         setFlag: "day3_lunch_with_seoyeon",
         next: "day3_lunch_seoyeon_weekend"
@@ -598,7 +598,7 @@ Object.assign(SCENARIO[3], {
         name: "다인",
         text: "\"밥 먹으러 가자! 오늘 치킨이래!\"",
         character: "assets/images/characters/dain_laugh.png",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         stats: { Dain: { affinity: 3 } },
         setFlag: "day3_lunch_with_dain",
         next: "day3_lunch_dain_talk_1"
@@ -610,7 +610,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_normal": {
         name: "나",
         text: "(특별한 약속도 없고... 오늘은 평범하게 점심을 먹어야겠다.)",
-        background: "assets/images/background/room_cafeteria.png",
+        background: "assets/images/background/store.png",
         next: "day3_lunch_normal_2"
     },
     "day3_lunch_normal_2": {
