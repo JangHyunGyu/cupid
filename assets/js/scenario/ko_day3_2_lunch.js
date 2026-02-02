@@ -202,7 +202,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_seoyeon_reassure": {
         name: "서연",
         text: "\"...정말? 그 말... 기억할게.\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 8 } },
         next: "day3_lunch_seoyeon_weekend"
     },
@@ -216,7 +216,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_seoyeon_tease": {
         name: "서연",
         text: "\"뭐, 뭐야! 누가 질투래! ...조금.\"",
-        character: "assets/images/characters/seyoun_blush.png",
+        character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day3_lunch_seoyeon_weekend"
     },
@@ -241,7 +241,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_seoyeon_lie": {
         name: "서연",
         text: "\"진짜?! 그럼 일요일에 만나자! 어디 갈지 내가 정해도 돼?\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day3_lunch_seoyeon_end"
     },
@@ -326,7 +326,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_yuna_special": {
         name: "유나",
         text: "\"...정말? 그 말... 증명해줘. 내일 밤.\"",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: 10 } },
         next: "day3_lunch_yuna_warning"
     },
@@ -405,7 +405,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_dain_confess": {
         name: "다인",
         text: "\"뭐, 뭐라고?! 갑자기 그런 말 하면... 아, 진짜!\"",
-        character: "assets/images/characters/dain_blush.png",
+        character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 10 } },
         next: "day3_lunch_dain_end"
     },
@@ -417,7 +417,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_dain_jealous_tease": {
         name: "다인",
         text: "\"하?! 누가 질투래! 난 그냥 궁금한 거야! ...조금 신경 쓰이긴 하지만!\"",
-        character: "assets/images/characters/dain_blush.png",
+        character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 5 } },
         next: "day3_lunch_dain_end"
     },
@@ -593,7 +593,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_seoyeon_only": {
         name: "서연",
         text: "\"{name}! 같이 밥 먹자!\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         background: "assets/images/background/store.png",
         stats: { Seoyeon: { affinity: 3 } },
         setFlag: "day3_lunch_with_seoyeon",

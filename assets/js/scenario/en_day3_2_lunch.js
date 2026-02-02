@@ -149,7 +149,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_seoyeon_reassure": {
         name: "Seoyeon",
         text: "\"...Really? I'll remember that.\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 8 } },
         next: "day3_lunch_seoyeon_weekend"
     },
@@ -163,7 +163,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_seoyeon_tease": {
         name: "Seoyeon",
         text: "\"W-what! Who said I'm jealous! ...Maybe a little.\"",
-        character: "assets/images/characters/seyoun_blush.png",
+        character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day3_lunch_seoyeon_weekend"
     },
@@ -188,7 +188,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_seoyeon_lie": {
         name: "Seoyeon",
         text: "\"Really?! Then let's meet on Sunday! Can I pick where to go?\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day3_lunch_seoyeon_end"
     },
@@ -270,7 +270,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_yuna_special": {
         name: "Yuna",
         text: "\"...Really? Prove it. Tomorrow night.\"",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: 10 } },
         next: "day3_lunch_yuna_warning"
     },
@@ -346,7 +346,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_dain_confess": {
         name: "Dain",
         text: "\"W-what?! Saying that out of nowhere... Geez!\"",
-        character: "assets/images/characters/dain_blush.png",
+        character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 10 } },
         next: "day3_lunch_dain_end"
     },
@@ -360,7 +360,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_dain_jealous_tease": {
         name: "Dain",
         text: "\"Huh?! Who's jealous! I'm just curious! ...Maybe a little bothered though!\"",
-        character: "assets/images/characters/dain_blush.png",
+        character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 5 } },
         next: "day3_lunch_dain_end"
     },
@@ -527,7 +527,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_seoyeon_only": {
         name: "Seoyeon",
         text: "\"{name}! Let's eat together!\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         background: "assets/images/background/store.png",
         stats: { Seoyeon: { affinity: 3 } },
         setFlag: "day3_lunch_with_seoyeon",
