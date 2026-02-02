@@ -92,6 +92,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_seoyeon_msg",
         branches: [
             { next: "day3_night_seoyeon_suspicious", condition: "day3_seoyeon_knows_others" },
             { next: "day3_night_seoyeon_jealous", condition: "day3_caught_multiple_dates" },
@@ -112,8 +113,8 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seoyeon_lie": {
         name: "Seoyeon",
-        text: "'Really? I trust you! See you tomorrow! üíï'",
-        character: "assets/images/characters/seyoun_happy.png",
+        text: "'Really? I trust you! See you tomorrow! ?íï'",
+        character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
         night: true,
         next: "day3_night_back_to_messages"
@@ -165,7 +166,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_seoyeon_reassure": {
         name: "Seoyeon",
         text: "'...Really? I'll remember that. Prove it tomorrow.'",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
         night: true,
         setFlag: "day3_seoyeon_expects_priority",
@@ -173,8 +174,8 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seoyeon_normal": {
         name: "Seoyeon",
-        text: "'Have you decided where to go tomorrow? You can leave it to me! Good night! üòä'",
-        character: "assets/images/characters/seyoun_happy.png",
+        text: "'Have you decided where to go tomorrow? You can leave it to me! Good night! ?òä'",
+        character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
         night: true,
         choices: [
@@ -191,10 +192,11 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_msg_yuna": {
         name: "Yuna",
-        text: "(Message: 11:59 PM) '...{name}. Tomorrow night. Don't forget.'",
+        text: "(Message: 11 PM) '...{name}. Tomorrow night. Don't forget.'",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_yuna_msg",
         branches: [
             { next: "day3_night_yuna_witnessed", condition: "day3_yuna_witnessed_seoyeon" },
             { next: "day3_night_yuna_knows", condition: "day3_caught_multiple_dates" },
@@ -224,15 +226,15 @@ Object.assign(SCENARIO[3], {
     "day3_night_yuna_reassure": {
         name: "Yuna",
         text: "'...Really? I'll believe that. But if you betray me...'",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
         next: "day3_night_yuna_threat"
     },
     "day3_night_yuna_threat": {
         name: "Yuna",
-        text: "'...You know, right? üòä'",
-        character: "assets/images/characters/yuna_happy.png",
+        text: "'...You know, right? ?òä'",
+        character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
         setFlag: "day3_yuna_threatened",
@@ -266,7 +268,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_yuna_knows_2": {
         name: "Yuna",
         text: "'It's okay. You'll come to me in the end.'",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
         setFlag: "day3_yuna_confident",
@@ -286,7 +288,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_yuna_dream": {
         name: "Yuna",
         text: "'...Secret. I'll tell you tomorrow night.'",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
         next: "day3_night_back_to_messages"
@@ -300,10 +302,11 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_msg_dain": {
         name: "Dain",
-        text: "(Message: 9 PM) 'Hey!! 9 AM at the gym tomorrow!! Don't be late!!! üò§'",
+        text: "(Message: 9 PM) 'Hey!! 9 AM at the gym tomorrow!! Don't be late!!! ?ò§'",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_dain_msg",
         branches: [
             { next: "day3_night_dain_suspicious", condition: "day3_caught_multiple_dates" },
             { next: "day3_night_dain_normal" }
@@ -348,7 +351,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_dain_normal": {
         name: "Dain",
-        text: "(Additional message) 'Let's go get tteokbokki after practice! My treat! üçú'",
+        text: "(Additional message) 'Let's go get tteokbokki after practice! My treat! ?çú'",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
         night: true,
@@ -370,11 +373,12 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_nurse_msg",
         next: "day3_night_nurse_2"
     },
     "day3_night_nurse_2": {
         name: "School Nurse",
-        text: "'You haven't forgotten Sunday evening, right? I'll prepare something special. üòâ'",
+        text: "'You haven't forgotten Sunday evening, right? I'll prepare something special. ?òâ'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
@@ -385,7 +389,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nurse_excited": {
         name: "School Nurse",
-        text: "'You can look forward to it. Sleep well and see you Sunday, {name}. üíã'",
+        text: "'You can look forward to it. Sleep well and see you Sunday, {name}. ?íã'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
@@ -402,10 +406,11 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_msg_teacher": {
         name: "Homeroom Teacher",
-        text: "(Message: 10 PM) '{name}, you haven't forgotten about the museum tomorrow, have you?'",
+        text: "(Message: 10 PM) '{name}, you haven't forgotten about the museum on Sunday, have you?'",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_teacher_msg",
         next: "day3_night_teacher_2"
     },
     "day3_night_teacher_2": {
@@ -513,19 +518,13 @@ Object.assign(SCENARIO[3], {
     },
     
     "day4_start": {
-        name: "Me",
-        text: "(I open my eyes. Morning sunlight fills the room... It's finally Saturday morning.)",
-        background: "assets/images/background/room_my.png",
-        bgm: "intro.mp3",
+        name: "System",
+        text: "(This is the end of the currently developed scenario. Please look forward to Day 4 (Saturday) scenario!)",
+        background: null,
         character: null,
         fade: true,
-        next: "day4_placeholder"
-    },
-    "day4_placeholder": {
-        name: "Me",
-        text: "(What kind of day will today be... I'm excited yet anxious.)",
         choices: [
-            { text: "[To be continued...]", next: "index.html" }
+            { text: "Start over from the beginning", next: "index.html" }
         ]
     }
 });

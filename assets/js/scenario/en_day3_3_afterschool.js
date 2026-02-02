@@ -110,7 +110,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_lie_seoyeon_react": {
         name: "Seoyeon",
         text: "\"...Really? Can I trust that?\"",
-        character: "assets/images/characters/seyoun_happy.png",        stats: { Seoyeon: { affinity: 3 } },        setFlag: "day3_promised_seoyeon_only",
+        character: "assets/images/characters/seyoun_laugh.png",        stats: { Seoyeon: { affinity: 3 } },        setFlag: "day3_promised_seoyeon_only",
         next: "day3_afternoon_lie_warning"
     },
     "day3_afternoon_lie_warning": {
@@ -158,7 +158,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_seoyeon_comfort": {
         name: "Seoyeon",
         text: "\"...Really? Hearing that... I feel a bit relieved.\"",
-        character: "assets/images/characters/seyoun_happy.png",        stats: { Seoyeon: { affinity: 8 } },        next: "day3_afternoon_transition"
+        character: "assets/images/characters/seyoun_laugh.png",        stats: { Seoyeon: { affinity: 8 } },        next: "day3_afternoon_transition"
     },
     "day3_afternoon_seoyeon_friend": {
         name: "Seoyeon",
@@ -169,7 +169,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_seoyeon_tease": {
         name: "Seoyeon",
         text: "\"W-what! That's not... Ugh, forget it!\"",
-        character: "assets/images/characters/seyoun_blush.png",        stats: { Seoyeon: { affinity: 3 } },        next: "day3_afternoon_transition"
+        character: "assets/images/characters/seyoun_shy.png",        stats: { Seoyeon: { affinity: 3 } },        next: "day3_afternoon_transition"
     },
     "day3_afternoon_yuna_approach": {
         name: "Yuna",
@@ -201,7 +201,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_promise": {
         name: "Yuna",
         text: "\"...I won't forget those words.\"",
-        character: "assets/images/characters/yuna_happy.png",        stats: { Yuna: { affinity: 8 } },        setFlag: "day3_yuna_priority_promise",
+        character: "assets/images/characters/yuna_smile.png",        stats: { Yuna: { affinity: 8 } },        setFlag: "day3_yuna_priority_promise",
         next: "day3_afternoon_yuna_warning"
     },
     "day3_afternoon_yuna_question": {
@@ -251,7 +251,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_dain_tease": {
         name: "Dain",
         text: "\"W-what! Cute my foot! Dummy!\"",
-        character: "assets/images/characters/dain_blush.png",        stats: { Dain: { affinity: 5 } },        next: "day3_afternoon_transition"
+        character: "assets/images/characters/dain_shy.png",        stats: { Dain: { affinity: 5 } },        next: "day3_afternoon_transition"
     },
 
     "day3_afternoon_normal": {
@@ -333,7 +333,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_seoyeon_walk_2": {
         name: "Seoyeon",
         text: "\"Sure! Let's go!\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         background: "assets/images/background/school.png",
         next: "day3_afternoon_seoyeon_walk_others"
     },
@@ -363,13 +363,13 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_seoyeon_talk_walk": {
         name: "Seoyeon",
         text: "\"You know, {name}. I'm really looking forward to tomorrow.\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         next: "day3_afternoon_seoyeon_talk_walk_2"
     },
     "day3_afternoon_seoyeon_talk_walk_2": {
         name: "Seoyeon",
         text: "\"It's our time together, just the two of us. Right?\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         branches: [
             { next: "day3_afternoon_seoyeon_guilt", condition: "day3_has_multiple_dates" },
             { next: "day3_afternoon_seoyeon_happy" }
@@ -386,7 +386,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_seoyeon_happy": {
         name: "Seoyeon",
         text: "\"Hehe, me too! See you tomorrow then! Sleep well!\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         fade: true,
         next: "day3_night_start"
     },
@@ -413,7 +413,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_walk_2": {
         name: "Yuna",
         text: "\"...Okay.\"",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         next: "day3_afternoon_yuna_walk_others"
     },
     "day3_afternoon_yuna_walk_others": {
@@ -453,7 +453,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_promise_keep": {
         name: "Yuna",
         text: "\"...Good. I'll trust you.\"",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         fade: true,
         next: "day3_night_start"
     },
@@ -492,7 +492,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_dain_talk_walk_2": {
         name: "Dain",
         text: "\"I want to show you my cool side!\"",
-        character: "assets/images/characters/dain_blush.png",
+        character: "assets/images/characters/dain_shy.png",
         choices: [
             { text: "\"Looking forward to it!\"", next: "day3_afternoon_dain_excited", stats: { Dain: { affinity: 5 } } },
             { text: "\"I'll cheer for you\"", next: "day3_afternoon_dain_cheer", stats: { Dain: { affinity: 8 } } }
@@ -508,7 +508,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_dain_cheer": {
         name: "Dain",
         text: "\"Hehe... Hearing that makes me want to work even harder!\"",
-        character: "assets/images/characters/dain_happy.png",
+        character: "assets/images/characters/dain_laugh.png",
         fade: true,
         next: "day3_night_start"
     },
@@ -545,7 +545,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_seoyeon_solo": {
         name: "Seoyeon",
         text: "\"{name}! Let's walk together!\"",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day3_afternoon_seoyeon_walk_2"
     },

@@ -160,7 +160,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_seoyeon_lie": {
         name: "서연",
         text: "'진짜? 믿을게! 그럼 내일 봐! 💕'",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
         night: true,
         next: "day3_night_back_to_messages"
@@ -212,7 +212,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_seoyeon_reassure": {
         name: "서연",
         text: "'...정말? 그 말, 기억할게. 내일 꼭 증명해줘.'",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
         night: true,
         setFlag: "day3_seoyeon_expects_priority",
@@ -221,7 +221,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_seoyeon_normal": {
         name: "서연",
         text: "'내일 어디로 갈지 정했어? 나한테 맡겨도 돼! 잘 자! 😊'",
-        character: "assets/images/characters/seyoun_happy.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
         night: true,
         choices: [
@@ -274,7 +274,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_yuna_reassure": {
         name: "유나",
         text: "'...정말? 그 말... 믿을게. 하지만 배신하면...'",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
         next: "day3_night_yuna_threat"
@@ -282,7 +282,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_yuna_threat": {
         name: "유나",
         text: "'...알지? 😊'",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
         setFlag: "day3_yuna_threatened",
@@ -316,7 +316,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_yuna_knows_2": {
         name: "유나",
         text: "'괜찮아. 결국 넌 나한테 올 테니까.'",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
         setFlag: "day3_yuna_confident",
@@ -336,7 +336,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_yuna_dream": {
         name: "유나",
         text: "'...비밀. 내일 밤 알려줄게.'",
-        character: "assets/images/characters/yuna_happy.png",
+        character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
         next: "day3_night_back_to_messages"
