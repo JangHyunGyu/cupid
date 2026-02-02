@@ -147,7 +147,9 @@ Object.assign(SCENARIO[2], {
         character: null,
         night: true,
         fade: true,
-        next: "day2_final"
+        setFlag: "spent_night_at_nurse_home",
+        stats: { Nurse: { affinity: 15 } },
+        next: "day3_nurse_home_morning"
     },
     "day2_check_affinity": {
         name: "System",
@@ -490,16 +492,6 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/room_my.png",
         night: true,
         fade: true,
-        next: "day2_final"
-    },
-    "day2_final": {
-        name: "System",
-        text: "(This is the end of the currently developed scenario. Please look forward to the next update!)",
-        background: null,
-        character: null,
-        fade: true,
-        choices: [
-            { text: "Start again from the beginning", next: "index.html" }
-        ]
+        next: "day3_start"
     }
 });

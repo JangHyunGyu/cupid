@@ -68,6 +68,171 @@ Object.assign(SCENARIO[3], {
         character: null,
         next: "day3_start_2"
     },
+
+    // =========================================================================
+    // 보건선생님 집에서 간 밤 후
+    // =========================================================================
+    "day3_nurse_home_morning": {
+        name: "나",
+        text: "(눈을 뜬다... 여기가 어디지? 낯선 천장이 보인다.)",
+        background: "assets/images/background/nurse_house.png",
+        character: null,
+        next: "day3_nurse_home_morning_2"
+    },
+    "day3_nurse_home_morning_2": {
+        name: "나",
+        text: "(순간 어젯밤의 기억이 머릿속을 스치고 지나간다. 선생님의 향기, 부드러운 손길, 그리고...)",
+        next: "day3_nurse_home_morning_3"
+    },
+    "day3_nurse_home_morning_3": {
+        name: "보건선생님",
+        text: "\"어머, 일어났네? 후후후, 어젯밤엔 잘 자더라?\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_nurse_home_morning_4"
+    },
+    "day3_nurse_home_morning_4": {
+        name: "나",
+        text: "(선생님이 커피 한 잔을 건네며 은은하게 웃는다. 얼굴이 뜨거워진다.)",
+        choices: [
+            { text: "\"감사합니다, 선생님...\"", next: "day3_nurse_home_morning_thanks", stats: { Nurse: { affinity: 3 } } },
+            { text: "\"어젯밤... 정말 좋았어요\"", next: "day3_nurse_home_morning_bold", stats: { Nurse: { affinity: 8 } } },
+            { text: "(부끄러워서 말을 못한다)", next: "day3_nurse_home_morning_shy", stats: { Nurse: { affinity: 5 } } }
+        ]
+    },
+    "day3_nurse_home_morning_thanks": {
+        name: "보건선생님",
+        text: "\"후후, 너무 딱딱하게 굴지 말려무나~ 우리 사이에.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_nurse_home_morning_leave"
+    },
+    "day3_nurse_home_morning_bold": {
+        name: "보건선생님",
+        text: "\"어머... 아침부터 대담하네? 후후, 선생님도 좋았어.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_nurse_home_morning_leave"
+    },
+    "day3_nurse_home_morning_shy": {
+        name: "보건선생님",
+        text: "\"후후, 귀여워라. 부끄러워하는 모습도 너무 사랑스럽다?\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_nurse_home_morning_leave"
+    },
+    "day3_nurse_home_morning_leave": {
+        name: "보건선생님",
+        text: "\"자, 어서 준비해. 학교 가야지? 오늘 학교에서 보면... 모른 척 해야 해, 알지?\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_nurse_home_morning_leave_2"
+    },
+    "day3_nurse_home_morning_leave_2": {
+        name: "나",
+        text: "(선생님의 윙크에 심장이 또 뛴다. 서둘러 옷을 챙기고 선생님 집을 나섰다.)",
+        setFlag: "day3_came_from_nurse_home",
+        next: "day3_nurse_home_school_arrival"
+    },
+
+    // 학교 도착 - 히로인들의 의심
+    "day3_nurse_home_school_arrival": {
+        name: "나",
+        text: "(학교에 도착했다. 오늘따라 아침 공기가 상쾌하다.)",
+        background: "assets/images/background/school.png",
+        next: "day3_nurse_home_suspicion"
+    },
+    "day3_nurse_home_suspicion": {
+        name: "서연",
+        text: "\"{name}! 좋은 아침... 어? 오늘 어디서 온 거야? 평소랑 다른 방향에서 온 것 같은데...\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        next: "day3_nurse_home_suspicion_2"
+    },
+    "day3_nurse_home_suspicion_2": {
+        name: "나",
+        text: "(서연이의 날카로운 질문에 당황한다.)",
+        choices: [
+            { text: "\"그냥 산책하다가...\"", next: "day3_nurse_home_lie", stats: { Seoyeon: { affinity: -3 } } },
+            { text: "\"친척 집에서 자고 왔어\"", next: "day3_nurse_home_half_lie" },
+            { text: "(말을 얼버무린다)", next: "day3_nurse_home_stutter" }
+        ]
+    },
+    "day3_nurse_home_lie": {
+        name: "서연",
+        text: "\"...산책? 이 시간에? 글쎄...\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        setFlag: "day3_seoyeon_suspicious",
+        stats: { Seoyeon: { affinity: -8 } },
+        next: "day3_nurse_home_yuna_appears"
+    },
+    "day3_nurse_home_half_lie": {
+        name: "서연",
+        text: "\"...친척? 여자 친척?\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        setFlag: "day3_seoyeon_jealous",
+        stats: { Seoyeon: { affinity: -5 } },
+        next: "day3_nurse_home_yuna_appears"
+    },
+    "day3_nurse_home_stutter": {
+        name: "서연",
+        text: "\"...왜 말을 못 해? 숨기는 거 있지?\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        setFlag: "day3_seoyeon_very_suspicious",
+        stats: { Seoyeon: { affinity: -12 } },
+        next: "day3_nurse_home_yuna_appears"
+    },
+    "day3_nurse_home_yuna_appears": {
+        name: "유나",
+        text: "\"...{name}. 오늘 향수 냄새가 다르네.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_nurse_home_yuna_appears_2"
+    },
+    "day3_nurse_home_yuna_appears_2": {
+        name: "나",
+        text: "(유나가 내 얼굴을 봤다. 그 눈빛이... 날카롭다.)",
+        next: "day3_nurse_home_yuna_appears_3"
+    },
+    "day3_nurse_home_yuna_appears_3": {
+        name: "유나",
+        text: "\"...어른의 향수. 여자 향수.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        setFlag: "day3_yuna_knows_secret",
+        stats: { Yuna: { affinity: -20 } },
+        next: "day3_nurse_home_tension"
+    },
+    "day3_nurse_home_tension": {
+        name: "서연",
+        text: "\"...뭣?!\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -8 } },
+        next: "day3_nurse_home_tension_2"
+    },
+    "day3_nurse_home_tension_2": {
+        name: "나",
+        text: "(분위기가 싸늘해졌다. 어떻게든 이 자리를 벗어나야 한다.)",
+        choices: [
+            { text: "\"수업 늦겠다, 먼저 간다!\"", next: "day3_nurse_home_escape" },
+            { text: "\"오해야, 어제 부모님 친구 집에...\"", next: "day3_nurse_home_excuse" }
+        ]
+    },
+    "day3_nurse_home_escape": {
+        name: "나",
+        text: "(서둘러 교실로 향한다. 뒤에서 느껴지는 시선이 따갑다...)",
+        background: "assets/images/background/room_school.png",
+        next: "day3_morning_end"
+    },
+    "day3_nurse_home_excuse": {
+        name: "서연",
+        text: "\"...부모님 친구? 그럼 왜 몰래 숨기는 것처럼 굴었어?\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -10 } },
+        next: "day3_nurse_home_excuse_2"
+    },
+    "day3_nurse_home_excuse_2": {
+        name: "나",
+        text: "(서연이의 눈빛이 사나워 보인다. 일단 교실로 향하자.)",
+        background: "assets/images/background/room_school.png",
+        next: "day3_morning_end"
+    },
+
+    // =========================================================================
+    // 일반 아침 흐름
+    // =========================================================================
     "day3_start_2": {
         name: "나",
         text: "(창밖을 보니 오늘은 날씨가 참 좋다. 벌써 금요일이라니... 주말에는 뭘 하지?)",
