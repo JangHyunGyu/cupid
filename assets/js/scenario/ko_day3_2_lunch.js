@@ -537,14 +537,27 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_excuse": {
         name: "나",
-        text: "\"아, 시간대가 다 달라서... 다인이는 오전, 다른 약속은 저녁...\"",
+        text: "\"아, 시간대가 다 달라서... 다인이는 아침, 다른 약속은 오후니까...\"",
         next: "day3_lunch_excuse_react"
     },
     "day3_lunch_excuse_react": {
+        name: "서연",
+        text: "\"그게 문제가 아니라... 아, 몰라. 나도 헷갈려.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        next: "day3_lunch_excuse_react_2"
+    },
+    "day3_lunch_excuse_react_2": {
+        name: "다인",
+        text: "\"음... 시간 관리를 잘하면 되는 거 아냐? 나는 괜찮은데.\"",
+        character: "assets/images/characters/dain_normal.png",
+        next: "day3_lunch_excuse_react_3"
+    },
+    "day3_lunch_excuse_react_3": {
         name: "유나",
-        text: "\"...그래서 우리 모두랑 만나겠다고?\"",
-        character: "assets/images/characters/yuna_normal.png",
+        text: "\"...너같은 애는 그래도 되겠지. 하지만 나는...(일어선다) 먼저 갈게.\"",
+        character: "assets/images/characters/yuna_sad.png",
         stats: { Yuna: { affinity: -5 } },
+        setFlag: "day3_yuna_hurt",
         next: "day3_lunch_together_end"
     },
     "day3_lunch_run": {
