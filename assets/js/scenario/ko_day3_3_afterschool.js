@@ -78,7 +78,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_tension_2": {
         name: "서연",
-        text: "\"...{name}, 잠깐 얘기 좀 하자.\"",
+        text: "\"...{name}아, 잠깐 얘기 좀 하자.\"",
         character: "assets/images/characters/seyoun_sad.png",
         next: "day3_afternoon_confrontation"
     },
@@ -271,7 +271,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_approach": {
         name: "다인",
-        text: "\"야, {name}!\"",
+        text: "\"야, {name}아!\"",
         character: "assets/images/characters/dain_normal.png",
         next: "day3_afternoon_dain_talk"
     },
