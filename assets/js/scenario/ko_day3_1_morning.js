@@ -292,7 +292,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_msg_dain": {
         name: "다인",
-        text: "(아침 7시에 온 메시지) '야호! {name}! 같이 학교 가자! 집 어디야? 내가 찾아갈게! ><'",
+        text: "(아침 7시에 온 메시지) '야호! {name}야! 같이 학교 가자! 집 어디야? 내가 찾아갈게! ><'",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
         branches: [
@@ -312,7 +312,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_msg_teacher": {
         name: "담임선생님",
-        text: "(어젯밤 10시에 온 메시지) '{name}, 혹시 내일 아침 일찍 등교하니? 선생님도 일찍 가는데 같이 걸어갈래?'",
+        text: "(어젯밤 10시에 온 메시지) '{name}야, 혹시 내일 아침 일찍 등교하니? 선생님도 일찍 가는데 같이 걸어갈래?'",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         branches: [
@@ -468,7 +468,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_msg_dain_after_reject": {
         name: "다인",
-        text: "(아침 7시에 온 메시지) '야호! {name}! 같이 학교 가자! 집 어디야? 내가 찾아갈게! ><'",
+        text: "(아침 7시에 온 메시지) '야호! {name}야! 같이 학교 가자! 집 어디야? 내가 찾아갈게! ><'",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
         choices: [
@@ -479,7 +479,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_msg_nurse_after_reject": {
         name: "보건선생님",
-        text: "(어젯밤 11시에 온 메시지) '후훗, {name}. 오늘 아침에 같이 등교할까? 선생님이랑 단둘이... 😉'",
+        text: "(어젯밤 11시에 온 메시지) '후훗, {name}야. 오늘 아침에 같이 등교할까? 선생님이랑 단둘이... 😉'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         choices: [
@@ -490,7 +490,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_msg_teacher_after_reject": {
         name: "담임선생님",
-        text: "(어젯밤 10시에 온 메시지) '{name}, 혹시 내일 아침 일찍 등교하니? 선생님도 일찍 가는데 같이 걸어갈래?'",
+        text: "(어젯밤 10시에 온 메시지) '{name}야, 혹시 내일 아침 일찍 등교하니? 선생님도 일찍 가는데 같이 걸어갈래?'",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         choices: [
