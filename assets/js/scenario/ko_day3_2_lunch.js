@@ -273,7 +273,53 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_seoyeon_end": {
         name: "나",
-        text: "(점심시간이 끝나간다. 서연이와의 시간은 달콤하면서도 어딘가 불안하다.)",
+        text: "(점심을 다 먹고 서연이와 학교 뒤편 벤치에 앉았다. 바람이 살랑살랑 분다.)",
+        background: "assets/images/background/store.png",
+        next: "day3_lunch_seoyeon_bench"
+    },
+    "day3_lunch_seoyeon_bench": {
+        name: "서연",
+        text: "(조용히 내 어깨에 머리를 기대며) \"...{name}아. 나 요즘 이상해. 매일 네 생각만 해.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
+        next: "day3_lunch_seoyeon_bench_2"
+    },
+    "day3_lunch_seoyeon_bench_2": {
+        name: "나",
+        text: "(서연이의 머리카락에서 샴푸 향이 난다. 심장이 두근거린다.)",
+        choices: [
+            { text: "(서연이의 머리를 쓰다듬는다)", next: "day3_lunch_seoyeon_pat", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "\"나도 똑같아\"", next: "day3_lunch_seoyeon_same", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "(가만히 있는다)", next: "day3_lunch_seoyeon_silent", stats: { Seoyeon: { affinity: 3 } } }
+        ]
+    },
+    "day3_lunch_seoyeon_pat": {
+        name: "서연",
+        text: "(머리를 쓰다듬자 서연이가 얼굴을 묻는다) \"바, 바보... 이런 데서 그러면 어떡해...\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "day3_lunch_seoyeon_freetalk"
+    },
+    "day3_lunch_seoyeon_same": {
+        name: "서연",
+        text: "(서연이가 고개를 들어 나를 바라본다) \"...진짜? 그 말... 기억해둘 거야.\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day3_lunch_seoyeon_freetalk"
+    },
+    "day3_lunch_seoyeon_silent": {
+        name: "서연",
+        text: "(서연이가 조용히 내 손을 잡는다) \"...이렇게 있으니까 좋다.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "day3_lunch_seoyeon_freetalk"
+    },
+    "day3_lunch_seoyeon_freetalk": {
+        name: "나",
+        text: "(학교 뒤편 벤치에서 서연이와 나란히 앉아 이야기를 나눈다.)",
+        freeTalk: { turns: 4, context: "서연이와 학교 뒤편 벤치에서 둘이 나란히 앉아있다. 서연이가 어깨에 머리를 기대고 '매일 네 생각만 해'라고 고백한 후. 달콤한 분위기." },
+        next: "day3_lunch_seoyeon_bell"
+    },
+    "day3_lunch_seoyeon_bell": {
+        name: "나",
+        text: "(수업 종이 울린다. 서연이와의 시간이 마법처럼 짧게 느껴졌다.)",
         fade: true,
         next: "day3_afternoon_start"
     },
@@ -304,8 +350,78 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_yuna_rooftop": {
         name: "나",
-        text: "(유나를 따라 옥상으로 올라왔다. 여기서 먹는 건가?)",
+        text: "(유나를 따라 옥상으로 올라왔다. 유나가 바닥에 돗자리를 깔고 가방에서 도시락을 꺼낸다.)",
         background: "assets/images/background/top_school.png",
+        next: "day3_lunch_yuna_bento"
+    },
+    "day3_lunch_yuna_bento": {
+        name: "유나",
+        text: "\"...만들어왔어. 두 명분.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_lunch_yuna_bento_2"
+    },
+    "day3_lunch_yuna_bento_2": {
+        name: "나",
+        text: "(도시락 두 칸이 나란히 놓여있다. 하나는 검은색, 하나는 분홍색 뚜껑. 유나가 직접 만든 건가?)",
+        choices: [
+            { text: "\"유나가 직접 만든 거야?\"", next: "day3_lunch_yuna_bento_ask", stats: { Yuna: { affinity: 5 } } },
+            { text: "(조용히 맛본다)", next: "day3_lunch_yuna_bento_taste", stats: { Yuna: { affinity: 3 } } }
+        ]
+    },
+    "day3_lunch_yuna_bento_ask": {
+        name: "유나",
+        text: "(다른 곳을 보며) \"...눈치 빠르네. 맛없으면 버려도 돼.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        next: "day3_lunch_yuna_bento_eat"
+    },
+    "day3_lunch_yuna_bento_taste": {
+        name: "나",
+        text: "(한 입 먹어본다. 의외로... 정말 맛있다!)",
+        next: "day3_lunch_yuna_bento_eat"
+    },
+    "day3_lunch_yuna_bento_eat": {
+        name: "유나",
+        text: "(내가 먹는 모습을 지켜보다가 미세하게 미소 짓는다) \"...맛있어?\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day3_lunch_yuna_lap"
+    },
+    "day3_lunch_yuna_lap": {
+        name: "나",
+        text: "(도시락을 다 먹고 나니 나른한 바람에 졸음이 온다. 유나가 갑자기 내 어깨를 누른다.)",
+        next: "day3_lunch_yuna_lap_2"
+    },
+    "day3_lunch_yuna_lap_2": {
+        name: "유나",
+        text: "\"...누워. 내 무릎에.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        choices: [
+            { text: "(유나의 무릎에 눕는다)", next: "day3_lunch_yuna_lap_yes", stats: { Yuna: { affinity: 10 } } },
+            { text: "\"괜찮아, 아직...\"", next: "day3_lunch_yuna_lap_no", stats: { Yuna: { affinity: -2 } } }
+        ]
+    },
+    "day3_lunch_yuna_lap_yes": {
+        name: "유나",
+        text: "(내가 눕자 유나가 내 머리카락을 쓰다듬는다) \"...5분만.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        next: "day3_lunch_yuna_lap_talk"
+    },
+    "day3_lunch_yuna_lap_no": {
+        name: "유나",
+        text: "\"...그래.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_lunch_yuna_talk_1"
+    },
+    "day3_lunch_yuna_lap_talk": {
+        name: "유나",
+        text: "(조용히 내 머리를 쓰다듬으며) \"...이러고 있으면 니가 내 것 같은 기분이 들어.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        stats: { Yuna: { affinity: 3 } },
+        next: "day3_lunch_yuna_freetalk"
+    },
+    "day3_lunch_yuna_freetalk": {
+        name: "나",
+        text: "(유나의 무릎에 누워 옥상 위의 하늘을 바라보며 이야기를 나눈다.)",
+        freeTalk: { turns: 4, context: "유나의 무릎에 누워서 옥상에서 대화 중. 유나가 도시락을 만들어와서 함께 먹었고, 유나가 머리를 쓰다듬어주고 있다. 조용하고 평화로운 분위기." },
         next: "day3_lunch_yuna_talk_1"
     },
     "day3_lunch_yuna_talk_1": {
@@ -412,13 +528,60 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_dain_friends": {
         name: "다인",
         text: "\"흠~ 정말? 근데 걔네 표정은 그게 아닌데... 뭐, 상관없지만!\"",
-        character: "assets/images/characters/dain_normal.png",        stats: { Dain: { affinity: 2 } },        next: "day3_lunch_dain_end"
+        character: "assets/images/characters/dain_normal.png",
+        stats: { Dain: { affinity: 2 } },
+        next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_jealous_tease": {
         name: "다인",
         text: "\"하?! 누가 질투래! 난 그냥 궁금한 거야! ...조금 신경 쓰이긴 하지만!\"",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 5 } },
+        next: "day3_lunch_dain_serious"
+    },
+    "day3_lunch_dain_serious": {
+        name: "다인",
+        text: "(갑자기 젓가락을 멈추고 조용히) \"...{name}. 나 진지하게 물어볼게.\"",
+        character: "assets/images/characters/dain_normal.png",
+        next: "day3_lunch_dain_serious_2"
+    },
+    "day3_lunch_dain_serious_2": {
+        name: "다인",
+        text: "\"...나를 어떻게 생각해? 그냥 친구? 아니면... 다른 뭔가?\"",
+        character: "assets/images/characters/dain_shy.png",
+        next: "day3_lunch_dain_serious_choice"
+    },
+    "day3_lunch_dain_serious_choice": {
+        name: "나",
+        text: "(다인이의 눈이 평소와 다르다. 진지하다.)",
+        choices: [
+            { text: "\"다인이는 특별해\"", next: "day3_lunch_dain_special", stats: { Dain: { affinity: 10 } } },
+            { text: "\"아직 모르겠어\"", next: "day3_lunch_dain_unsure", stats: { Dain: { affinity: 2 } } },
+            { text: "\"소중한 친구\"", next: "day3_lunch_dain_friend", stats: { Dain: { affinity: -5 } } }
+        ]
+    },
+    "day3_lunch_dain_special": {
+        name: "다인",
+        text: "(얼굴이 새빨개지며 주먹으로 때린다) \"아, 아아! 진짜?! 야, 나 심장 터지는 줄 알았잖아!\"",
+        character: "assets/images/characters/dain_shy.png",
+        next: "day3_lunch_dain_freetalk"
+    },
+    "day3_lunch_dain_unsure": {
+        name: "다인",
+        text: "(살짝 실망한 표정을 짓다가 바로 밝아진다) \"...그래! 그럼 내가 특별해지는 거 보여줄게! 두고 봐!\"",
+        character: "assets/images/characters/dain_normal.png",
+        next: "day3_lunch_dain_freetalk"
+    },
+    "day3_lunch_dain_friend": {
+        name: "다인",
+        text: "(순간 다인이의 표정이 굳어졌다가 억지로 웃는다) \"...아하, 그래? 친구. 그래, 친구지. 하하!\"",
+        character: "assets/images/characters/dain_sad.png",
+        next: "day3_lunch_dain_end"
+    },
+    "day3_lunch_dain_freetalk": {
+        name: "나",
+        text: "(다인이와 급식실 한쪽에 나란히 앉아 이야기를 나눈다. 다인이가 평소보다 수줍어하다.)",
+        freeTalk: { turns: 3, context: "다인이와 점심 대화 중. 다인이가 '나를 어떻게 생각해?'라고 진지하게 물어봄. 평소의 활발함 대신 수줍어하는 모습." },
         next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_end": {
@@ -512,6 +675,38 @@ Object.assign(SCENARIO[3], {
         text: "(공기가 급속도로 얼어붙는다. 모두의 시선이 나에게 쏠린다.)",
         stats: { Seoyeon: { affinity: -5 }, Yuna: { affinity: -5 }, Dain: { affinity: -5 } },
         setFlag: "day3_caught_multiple_dates",
+        next: "day3_lunch_together_silence"
+    },
+    "day3_lunch_together_silence": {
+        name: "나",
+        text: "(답답한 정적이 흐른다. 서연이의 손이 떨리고, 유나의 눈이 어두워지고, 다인이의 표정이 굳어졌다.)",
+        next: "day3_lunch_together_seoyeon_react"
+    },
+    "day3_lunch_together_seoyeon_react": {
+        name: "서연",
+        text: "(천천히 숟가락을 내려놓으며) \"...그러니까. 나만 특별한 게 아니었네?\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -3 } },
+        next: "day3_lunch_together_yuna_lie"
+    },
+    "day3_lunch_together_yuna_lie": {
+        name: "유나",
+        text: "(자리에서 일어서며) \"...나는 알고 있었어. {name}이 나한테만 약속한 게 아니라는 거.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_lunch_together_yuna_lie_2"
+    },
+    "day3_lunch_together_yuna_lie_2": {
+        name: "다인",
+        text: "\"에? 진짜? 그럼 왜 알면서 왔어?!\"",
+        character: "assets/images/characters/dain_normal.png",
+        next: "day3_lunch_together_yuna_lie_3"
+    },
+    "day3_lunch_together_yuna_lie_3": {
+        name: "유나",
+        text: "(나를 차갑게 바라보며) \"...거짓말이야. 나도 몰랐어. 그냥... 다른 애들 앞에서 울고 싶지 않았을 뿐이야.\"",
+        character: "assets/images/characters/yuna_sad.png",
+        stats: { Yuna: { affinity: -3 } },
+        setFlag: "day3_yuna_lied",
         next: "day3_lunch_together_confront"
     },
     "day3_lunch_together_confront": {
@@ -554,7 +749,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_excuse_react_3": {
         name: "유나",
-        text: "\"...너같은 애는 그래도 되겠지. 하지만 나는...(일어선다) 먼저 갈게.\"",
+        text: "\"...너 같은 애는 그래도 되겠지. 하지만 나는...(일어선다) 먼저 갈게.\"",
         character: "assets/images/characters/yuna_sad.png",
         stats: { Yuna: { affinity: -5 } },
         setFlag: "day3_yuna_hurt",
@@ -600,8 +795,80 @@ Object.assign(SCENARIO[3], {
             { text: "서연이와 먹는다", next: "day3_lunch_seoyeon_only", condition: "has_number_seyoun" },
             { text: "유나와 먹는다", next: "day3_lunch_yuna_only", condition: "has_number_yuna" },
             { text: "다인이와 먹는다", next: "day3_lunch_dain_only", condition: "has_number_dain" },
+            { text: "보건실에 간다", next: "day3_lunch_nurse", condition: "day3_nurse_date_confirmed" },
+            { text: "담임선생님을 찾는다", next: "day3_lunch_teacher", condition: "day3_teacher_date_confirmed" },
             { text: "혼자 먹는다", next: "day3_lunch_alone" }
         ]
+    },
+    "day3_lunch_nurse": {
+        name: "나",
+        text: "(점심시간을 맞아 보건실로 향했다. 선생님이 자리에서 샌드위치를 먹고 계신다.)",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/nurse_normal.png",
+        setFlag: "day3_lunch_with_nurse",
+        next: "day3_lunch_nurse_2"
+    },
+    "day3_lunch_nurse_2": {
+        name: "보건선생님",
+        text: "(나를 보고 만면에 미소 짓는다) \"어머, 우리 {name} 왔네? 밥 먹었어? 선생님이랑 같이 먹을래?\"",
+        character: "assets/images/characters/nurse_normal.png",
+        stats: { Nurse: { affinity: 5 } },
+        next: "day3_lunch_nurse_3"
+    },
+    "day3_lunch_nurse_3": {
+        name: "보건선생님",
+        text: "(문을 잠그고) \"사실... 둘만의 시간을 좀 가지고 싶었어. 애들 눈치 보는 것도 지치잖아.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_lunch_nurse_freetalk"
+    },
+    "day3_lunch_nurse_freetalk": {
+        name: "나",
+        text: "(보건실에서 선생님과 둘이 점심을 먹는다. 비밀스러운 분위기에 심장이 뛰었다.)",
+        freeTalk: { turns: 3, context: "보건실에서 보건선생님과 단둘이 점심 먹는 중. 선생님이 문을 잠갔다. 비밀 데이트 같은 분위기. 금지된 사랑의 설렘." },
+        next: "day3_lunch_nurse_4"
+    },
+    "day3_lunch_nurse_4": {
+        name: "보건선생님",
+        text: "(시계를 보며 한숨) \"...시간 다 됐네. 수업 들어가. 일요일에 보자.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        stats: { Nurse: { affinity: 3 } },
+        fade: true,
+        next: "day3_afternoon_start"
+    },
+    "day3_lunch_teacher": {
+        name: "나",
+        text: "(점심시간에 담임선생님을 찾아 교무실에 갔다. 선생님이 혼자 커피를 마시고 계신다.)",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_normal.png",
+        setFlag: "day3_lunch_with_teacher",
+        next: "day3_lunch_teacher_2"
+    },
+    "day3_lunch_teacher_2": {
+        name: "담임선생님",
+        text: "(나를 보고 당황하다가 밝아진다) \"…{name}? 어쩐 일이야? 선생님 점심시간인데...\"",
+        character: "assets/images/characters/teacher_shy.png",
+        stats: { Teacher: { affinity: 5 } },
+        next: "day3_lunch_teacher_3"
+    },
+    "day3_lunch_teacher_3": {
+        name: "담임선생님",
+        text: "(볼을 붉히며) \"...들어와. 문 닫고.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        next: "day3_lunch_teacher_freetalk"
+    },
+    "day3_lunch_teacher_freetalk": {
+        name: "나",
+        text: "(교무실에서 담임선생님과 둘이 점심을 먹는다.)",
+        freeTalk: { turns: 3, context: "교무실에서 담임선생님과 단둘이 점심 먹는 중. 선생님이 수줍어하며 문을 닫았다. 비밀 데이트 분위기." },
+        next: "day3_lunch_teacher_4"
+    },
+    "day3_lunch_teacher_4": {
+        name: "담임선생님",
+        text: "(커피잔을 내려놓으며) \"...이러면 안 되는데. 학생이 선생님 점심시간에 찾아오고, 선생님은 그게 좋고. 이게 말이 돼?\"",
+        character: "assets/images/characters/teacher_shy.png",
+        stats: { Teacher: { affinity: 3 } },
+        fade: true,
+        next: "day3_afternoon_start"
     },
     "day3_lunch_seoyeon_only": {
         name: "서연",
