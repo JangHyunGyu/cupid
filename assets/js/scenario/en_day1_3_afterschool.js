@@ -414,7 +414,8 @@ Object.assign(SCENARIO[1], {
                 affinityChar: "Yuna",
                 affinityBranches: [
                     { minAffinity: 30, next: "after_yuna_secret_deep" },
-                    { maxAffinity: 10, next: "after_yuna_secret_fail" }
+                    { minAffinity: 11, next: "after_yuna_secret" },
+                    { minAffinity: -999, next: "after_yuna_secret_fail" }
                 ]
             },
             { text: "Today's cafeteria food was delicious, right?", next: "after_yuna_boring" },
