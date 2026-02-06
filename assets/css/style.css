@@ -37,6 +37,11 @@ html {
     /* 중앙 정렬 */
     background-color: #222;
     overflow: hidden;
+    /* 빠른 클릭 시 텍스트 블럭 선택 방지 */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* 배경 이미지 레이어 */
@@ -332,6 +337,11 @@ html {
     pointer-events: auto;
     z-index: 120;
     margin-bottom: 10px;
+    /* 채팅 입력은 텍스트 선택 허용 */
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 /* 채팅 가이드 라벨 */
