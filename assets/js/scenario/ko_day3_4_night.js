@@ -547,7 +547,102 @@ Object.assign(SCENARIO[3], {
     // =========================================================================
     "day3_night_sleep": {
         name: "나",
-        text: "(눈이 감긴다. 내일은 토요일... 어떤 하루가 될까.)",
+        text: "(눈이 감기려는 순간… 스마트폰이 울린다. 전화다.)",
+        night: true,
+        branches: [
+            { next: "day3_night_phone_seoyeon", condition: "day3_walked_with_seoyeon" },
+            { next: "day3_night_phone_yuna", condition: "day3_walked_with_yuna" },
+            { next: "day3_night_phone_dain", condition: "day3_walked_with_dain" },
+            { next: "day3_night_phone_nurse", condition: "day3_nurse_date_confirmed" },
+            { next: "day3_night_phone_teacher", condition: "day3_teacher_date_confirmed" },
+            { next: "day3_night_sleep_2" }
+        ]
+    },
+    "day3_night_phone_seoyeon": {
+        name: "서연",
+        text: "(전화를 받으니 서연이의 목소리가 들린다) \"…{name}야? 잘 시간인 거 알아. 근데… 목소리가 듣고 싶었어.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_phone_seoyeon_freetalk"
+    },
+    "day3_night_phone_seoyeon_freetalk": {
+        name: "나",
+        text: "(서연이와 심야 전화를 한다. 어두운 방에서 듣는 서연이의 목소리가 평소보다 부드럽다.)",
+        freeTalk: { turns: 3, context: "심야 전화. 서연이가 잘 시간에 '목소리가 듣고 싶었어'라며 전화함. 달콤한 심야 통화. 서연이가 잘다가 갑자기 전화한 것." },
+        night: true,
+        next: "day3_night_phone_end"
+    },
+    "day3_night_phone_yuna": {
+        name: "유나",
+        text: "(전화를 받으니 유나의 목소리가 들린다) \"…잘 시간인 거 알아. 근데… 잠이 안 와.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_phone_yuna_freetalk"
+    },
+    "day3_night_phone_yuna_freetalk": {
+        name: "나",
+        text: "(유나와 심야 전화를 한다. 유나의 작은 숨소리가 귀에 닿는다.)",
+        freeTalk: { turns: 2, context: "심야 전화. 유나가 '잠이 안 와'라며 전화함. 조용하고 친밀한 심야 통화. 유나의 작은 숨소리가 가까이 들릴 듯한 분위기." },
+        night: true,
+        next: "day3_night_phone_end"
+    },
+    "day3_night_phone_dain": {
+        name: "다인",
+        text: "(전화를 받으니 다인이의 목소리가 들린다) \"…야, 잘 시간인 거 알아. 근데 내일 생각하니까 잠이 안 와!\"",
+        character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_phone_dain_freetalk"
+    },
+    "day3_night_phone_dain_freetalk": {
+        name: "나",
+        text: "(다인이와 심야 전화를 한다. 평소의 에너지 대신 조용한 다인이의 목소리가 새롭다.)",
+        freeTalk: { turns: 3, context: "심야 전화. 다인이가 '내일 생각하니까 잠이 안 와'라며 전화함. 평소와 달리 조용한 다인이. 심야의 부드러운 분위기." },
+        night: true,
+        next: "day3_night_phone_end"
+    },
+    "day3_night_phone_nurse": {
+        name: "보건선생님",
+        text: "(전화를 받으니 선생님 목소리가 들린다) \"…{name}? 아직 안 자? 선생님도 잠이 안 와서.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_phone_nurse_freetalk"
+    },
+    "day3_night_phone_nurse_freetalk": {
+        name: "나",
+        text: "(보건선생님과 심야 전화를 한다. 선생님의 나직한 목소리가 귀에 닿는다.)",
+        freeTalk: { turns: 2, context: "심야 전화. 보건선생님이 '잠이 안 와서' 전화함. 선생님의 나직한 목소리. 금지된 사랑의 심야 통화." },
+        night: true,
+        next: "day3_night_phone_end"
+    },
+    "day3_night_phone_teacher": {
+        name: "담임선생님",
+        text: "(전화를 받으니 선생님 목소리가 들린다) \"…{name}? 아직 안 자? 선생님이 잘 시간인 거 알면서도…\"",
+        character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_phone_teacher_freetalk"
+    },
+    "day3_night_phone_teacher_freetalk": {
+        name: "나",
+        text: "(담임선생님과 심야 전화를 한다. 선생님의 조용한 목소리가 가까이 들린다.)",
+        freeTalk: { turns: 2, context: "심야 전화. 담임선생님이 '잘 시간인 거 알면서도' 전화함. 선생님의 조용한 목소리. 금지된 사랑의 심야 통화." },
+        night: true,
+        next: "day3_night_phone_end"
+    },
+    "day3_night_phone_end": {
+        name: "나",
+        text: "(전화를 끊고 스마트폰을 내려놓았다. 귀에 남은 목소리의 여운이… 심장을 뛴다.)",
+        night: true,
+        fade: true,
+        next: "day3_night_sleep_2"
+    },
+    "day3_night_sleep_2": {
+        name: "나",
+        text: "(눈이 감긴다. 내일은 토요일… 어떤 하루가 될까.)",
         night: true,
         fade: true,
         next: "day3_night_sleep_final"
@@ -563,7 +658,54 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare": {
         name: "나",
-        text: "(불안한 꿈을 꾸었다. 누군가 울고 있고, 누군가 화를 내고... 그리고 누군가 차갑게 웃고 있었다.)",
+        text: "(…꿈을 꿈다. 어두운 공간에서 목소리가 들린다.)",
+        night: true,
+        next: "day3_night_nightmare_voice1"
+    },
+    "day3_night_nightmare_voice1": {
+        name: "???",
+        text: "(서연이의 목소리가 울려퍼진다) \"…나만 볼 거지? 약속했잖아. 새끼손가락 걸었잖아…\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_nightmare_voice2"
+    },
+    "day3_night_nightmare_voice2": {
+        name: "???",
+        text: "(유나의 목소리가 차갑게 속삭인다) \"…배신하면 후회할 거라고 했지? 기억하지?\"",
+        character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_nightmare_voice3"
+    },
+    "day3_night_nightmare_voice3": {
+        name: "???",
+        text: "(다인이의 목소리가 떨린다) \"…바보! 온다고! 바람 맞추는 거 아니라며서…\"",
+        character: "assets/images/characters/dain_sad.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_nightmare_choice"
+    },
+    "day3_night_nightmare_choice": {
+        name: "나",
+        text: "(세 목소리가 동시에 울린다. 어두운 공간에서 손이 뻗어져 나온다. 누구의 손을 잡을 것인가…)",
+        night: true,
+        choices: [
+            { text: "(서연이의 손을 잡는다)", next: "day3_night_nightmare_end" },
+            { text: "(유나의 손을 잡는다)", next: "day3_night_nightmare_end" },
+            { text: "(다인이의 손을 잡는다)", next: "day3_night_nightmare_end" },
+            { text: "(아무도 잡지 않는다)", next: "day3_night_nightmare_end" }
+        ]
+    },
+    "day3_night_nightmare_end": {
+        name: "나",
+        text: "(손을 뻗었지만… 잡힌 것은 없었다. 모두가 사라지고, 남은 것은 어둠과 후회뿐이었다.)",
+        night: true,
+        next: "day3_night_nightmare_wake"
+    },
+    "day3_night_nightmare_wake": {
+        name: "나",
+        text: "(…땅으로. 심장이 미친 듯이 뛴다. 꿈이었다. 하지만… 내일은 어떻게 될까?)",
         night: true,
         fade: true,
         next: "day3_final_scene"
@@ -572,6 +714,57 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(편안한 밤이다. 내일이 기대된다.)",
         night: true,
+        branches: [
+            { next: "day3_night_loyalty_seoyeon", condition: "day3_seoyeon_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
+            { next: "day3_night_loyalty_yuna", condition: "day3_yuna_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
+            { next: "day3_night_loyalty_dain", condition: "day3_dain_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
+            { next: "day3_night_loyalty_nurse", condition: "day3_nurse_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
+            { next: "day3_night_loyalty_teacher", condition: "day3_teacher_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
+            { next: "day3_final_scene" }
+        ]
+    },
+    "day3_night_loyalty_seoyeon": {
+        name: "나",
+        text: "(…서연이만 생각하면 자연스레 웃음이 나온다. 내일은 서연이와 둘이만의 시간이다. 후회 없이 진심을 전해야지.)",
+        night: true,
+        stats: { Seoyeon: { affinity: 10 } },
+        setFlag: "day3_loyalty_bonus",
+        fade: true,
+        next: "day3_final_scene"
+    },
+    "day3_night_loyalty_yuna": {
+        name: "나",
+        text: "(…유나만 생각하면 심장이 뛴다. 내일 밤, 유나와 둘이만의 시간. 유나의 진짜 모습을 볼 수 있을까.)",
+        night: true,
+        stats: { Yuna: { affinity: 10 } },
+        setFlag: "day3_loyalty_bonus",
+        fade: true,
+        next: "day3_final_scene"
+    },
+    "day3_night_loyalty_dain": {
+        name: "나",
+        text: "(…다인이의 웃음을 떠올리면 나도 웃게 된다. 내일 연습을 보러 가면 다인이가 얼마나 기뻐할까.)",
+        night: true,
+        stats: { Dain: { affinity: 10 } },
+        setFlag: "day3_loyalty_bonus",
+        fade: true,
+        next: "day3_final_scene"
+    },
+    "day3_night_loyalty_nurse": {
+        name: "나",
+        text: "(…보건선생님의 얼굴이 떠오른다. 금지된 사랑이지만… 이 감정을 숨길 수 없다.)",
+        night: true,
+        stats: { Nurse: { affinity: 10 } },
+        setFlag: "day3_loyalty_bonus",
+        fade: true,
+        next: "day3_final_scene"
+    },
+    "day3_night_loyalty_teacher": {
+        name: "나",
+        text: "(…담임선생님의 웃는 얼굴이 떠오른다. 선생님과 학생이지만… 내 맘은 진짜니까.)",
+        night: true,
+        stats: { Teacher: { affinity: 10 } },
+        setFlag: "day3_loyalty_bonus",
         fade: true,
         next: "day3_final_scene"
     },
