@@ -1357,8 +1357,259 @@ Object.assign(SCENARIO[3], {
     "day3_classroom_nurse_leave": {
         name: "나",
         text: "(보건선생님이 교실을 나간다. 주변 애들은 아무것도 모른다.)",
+        next: "day3_break_time"
+    },
+
+    // =========================================================================
+    // 쉬는 시간 - 주말 약속 메시지
+    // =========================================================================
+    // 아침에 동행하지 않은 히로인들이 주말 데이트를 제안하는 메시지를 보낸다.
+    // 여러 명의 제안을 수락하면 day3_has_multiple_dates 플래그가 설정된다.
+    // =========================================================================
+    "day3_break_time": {
+        name: "나",
+        text: "(쉬는 시간. 핸드폰을 꺼내보니 주말 관련 메시지들이 와있다.)",
+        branches: [
+            { next: "day3_weekend_check_seoyeon", condition: "has_any_contact" },
+            { next: "day3_morning_end" }
+        ]
+    },
+
+    // --- 서연 주말 초대 체크 ---
+    "day3_weekend_check_seoyeon": {
+        name: "시스템",
+        text: "",
+        branches: [
+            { next: "day3_weekend_invite_seoyeon", condition: "has_number_seyoun", excludeCondition: "day3_morning_with_seoyeon" },
+            { next: "day3_weekend_check_yuna" }
+        ]
+    },
+    "day3_weekend_invite_seoyeon": {
+        name: "서연",
+        text: "(메시지) '있잖아 {name}! 이번 주 토요일에 새로 생긴 카페 같이 갈래? 너랑 꼭 가보고 싶어서! ☕'",
+        character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
+        choices: [
+            { text: "좋아! 같이 가자", next: "day3_weekend_yes_seoyeon", setFlag: "day3_seoyeon_date_confirmed", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "미안, 주말에 좀 바빠서", next: "day3_weekend_no_seoyeon", stats: { Seoyeon: { affinity: -3 } } }
+        ]
+    },
+    "day3_weekend_yes_seoyeon": {
+        name: "서연",
+        text: "(답장이 바로 온다) '진짜?! 그럼 토요일에 보자! 기대해도 좋아! ♡'",
+        character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
+        next: "day3_weekend_check_yuna"
+    },
+    "day3_weekend_no_seoyeon": {
+        name: "서연",
+        text: "(한참 뒤에 답장이 온다) '...그래, 괜찮아! 다음에 가면 되지!'",
+        character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
+        next: "day3_weekend_check_yuna"
+    },
+
+    // --- 유나 주말 초대 체크 ---
+    "day3_weekend_check_yuna": {
+        name: "시스템",
+        text: "",
+        branches: [
+            { next: "day3_weekend_invite_yuna", condition: "has_number_yuna", excludeCondition: "day3_morning_with_yuna" },
+            { next: "day3_weekend_check_dain" }
+        ]
+    },
+    "day3_weekend_invite_yuna": {
+        name: "유나",
+        text: "(메시지) '...토요일 밤 8시. 학교 뒤 창고. 진실을 알고 싶다면 와. 혼자서.'",
+        character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
+        choices: [
+            { text: "알았어, 꼭 갈게", next: "day3_weekend_yes_yuna", setFlag: "day3_yuna_date_confirmed", stats: { Yuna: { affinity: 8 } } },
+            { text: "무섭잖아, 안 갈래", next: "day3_weekend_no_yuna", stats: { Yuna: { affinity: -3 } } }
+        ]
+    },
+    "day3_weekend_yes_yuna": {
+        name: "유나",
+        text: "(답장) '...고마워. 후회하지 않을 거야.'",
+        character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
+        next: "day3_weekend_check_dain"
+    },
+    "day3_weekend_no_yuna": {
+        name: "유나",
+        text: "(읽음 표시만 뜨고 답장이 없다.)",
+        character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
+        next: "day3_weekend_check_dain"
+    },
+
+    // --- 다인 주말 초대 체크 ---
+    "day3_weekend_check_dain": {
+        name: "시스템",
+        text: "",
+        branches: [
+            { next: "day3_weekend_invite_dain", condition: "has_number_dain", excludeCondition: "day3_morning_with_dain" },
+            { next: "day3_weekend_check_nurse" }
+        ]
+    },
+    "day3_weekend_invite_dain": {
+        name: "다인",
+        text: "(메시지) '{name}아!!! 토요일에 체육관에서 나랑 운동할래?! 9시에 보자!! 💪🔥'",
+        character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
+        choices: [
+            { text: "좋아! 토요일에 보자", next: "day3_weekend_yes_dain", setFlag: "day3_dain_date_confirmed", stats: { Dain: { affinity: 8 } } },
+            { text: "운동은 좀...", next: "day3_weekend_no_dain", stats: { Dain: { affinity: -3 } } }
+        ]
+    },
+    "day3_weekend_yes_dain": {
+        name: "다인",
+        text: "(답장이 0.5초 만에 온다) '와!! 최고!! 운동복 꼭 챙겨와!! 🏃‍♂️'",
+        character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
+        next: "day3_weekend_check_nurse"
+    },
+    "day3_weekend_no_dain": {
+        name: "다인",
+        text: "(답장) '에이~ 아쉽다! 그래도 다음엔 꼭 같이 하자!'",
+        character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
+        next: "day3_weekend_check_nurse"
+    },
+
+    // --- 보건선생님 주말 초대 체크 ---
+    "day3_weekend_check_nurse": {
+        name: "시스템",
+        text: "",
+        branches: [
+            { next: "day3_weekend_invite_nurse", condition: "has_number_nurse", excludeCondition: "day3_morning_with_nurse" },
+            { next: "day3_weekend_check_teacher" }
+        ]
+    },
+    "day3_weekend_invite_nurse": {
+        name: "보건선생님",
+        text: "(메시지) '혹시 이번 일요일 저녁에 시간 있어? 선생님이 맛집 하나 알려줄까 해서... 😉'",
+        character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
+        choices: [
+            { text: "좋아요! 꼭 갈게요", next: "day3_weekend_yes_nurse", setFlag: "day3_nurse_date_confirmed", stats: { Nurse: { affinity: 8 } } },
+            { text: "죄송해요, 일요일에 약속이...", next: "day3_weekend_no_nurse", stats: { Nurse: { affinity: -3 } } }
+        ]
+    },
+    "day3_weekend_yes_nurse": {
+        name: "보건선생님",
+        text: "(답장) '후훗, 기대하고 있을게. 일요일 저녁 7시에 만나자 💋'",
+        character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
+        next: "day3_weekend_check_teacher"
+    },
+    "day3_weekend_no_nurse": {
+        name: "보건선생님",
+        text: "(답장) '아쉽네... 다음에 꼭 같이 가자.'",
+        character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
+        next: "day3_weekend_check_teacher"
+    },
+
+    // --- 담임선생님 주말 초대 체크 ---
+    "day3_weekend_check_teacher": {
+        name: "시스템",
+        text: "",
+        branches: [
+            { next: "day3_weekend_invite_teacher", condition: "has_number_teacher", excludeCondition: "day3_morning_with_teacher" },
+            { next: "day3_check_multiple_dates" }
+        ]
+    },
+    "day3_weekend_invite_teacher": {
+        name: "담임선생님",
+        text: "(메시지) '{name}아, 이번 일요일에 시립 박물관에서 특별전 한다는데 같이 갈래? 수행평가 가산점도 줄게 ㅋ'",
+        character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
+        choices: [
+            { text: "좋아요! 꼭 갈게요", next: "day3_weekend_yes_teacher", setFlag: "day3_teacher_date_confirmed", stats: { Teacher: { affinity: 8 } } },
+            { text: "박물관은 좀...", next: "day3_weekend_no_teacher", stats: { Teacher: { affinity: -3 } } }
+        ]
+    },
+    "day3_weekend_yes_teacher": {
+        name: "담임선생님",
+        text: "(답장) '좋아! 일요일 오후 2시에 만나자. 재미있을 거야!'",
+        character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
+        next: "day3_check_multiple_dates"
+    },
+    "day3_weekend_no_teacher": {
+        name: "담임선생님",
+        text: "(답장) '그래, 알겠어. 다음 기회에 보자.'",
+        character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
+        next: "day3_check_multiple_dates"
+    },
+
+    // =========================================================================
+    // 복수 데이트 체크
+    // =========================================================================
+    // 캐스케이드 분기로 2명 이상 약속 확정 여부를 감지한다.
+    // 첫 번째 확정된 캐릭터를 찾고 → 두 번째가 있으면 day3_has_multiple_dates 설정.
+    // =========================================================================
+    "day3_check_multiple_dates": {
+        name: "시스템",
+        text: "",
+        branches: [
+            { next: "day3_multi_from_seoyeon", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day3_multi_from_yuna", condition: "day3_yuna_date_confirmed" },
+            { next: "day3_multi_from_dain", condition: "day3_dain_date_confirmed" },
+            { next: "day3_multi_from_nurse", condition: "day3_nurse_date_confirmed" },
+            { next: "day3_morning_end" }
+        ]
+    },
+    "day3_multi_from_seoyeon": {
+        name: "시스템",
+        text: "",
+        branches: [
+            { next: "day3_set_multiple_dates", condition: "day3_yuna_date_confirmed" },
+            { next: "day3_set_multiple_dates", condition: "day3_dain_date_confirmed" },
+            { next: "day3_set_multiple_dates", condition: "day3_nurse_date_confirmed" },
+            { next: "day3_set_multiple_dates", condition: "day3_teacher_date_confirmed" },
+            { next: "day3_morning_end" }
+        ]
+    },
+    "day3_multi_from_yuna": {
+        name: "시스템",
+        text: "",
+        branches: [
+            { next: "day3_set_multiple_dates", condition: "day3_dain_date_confirmed" },
+            { next: "day3_set_multiple_dates", condition: "day3_nurse_date_confirmed" },
+            { next: "day3_set_multiple_dates", condition: "day3_teacher_date_confirmed" },
+            { next: "day3_morning_end" }
+        ]
+    },
+    "day3_multi_from_dain": {
+        name: "시스템",
+        text: "",
+        branches: [
+            { next: "day3_set_multiple_dates", condition: "day3_nurse_date_confirmed" },
+            { next: "day3_set_multiple_dates", condition: "day3_teacher_date_confirmed" },
+            { next: "day3_morning_end" }
+        ]
+    },
+    "day3_multi_from_nurse": {
+        name: "시스템",
+        text: "",
+        branches: [
+            { next: "day3_set_multiple_dates", condition: "day3_teacher_date_confirmed" },
+            { next: "day3_morning_end" }
+        ]
+    },
+    "day3_set_multiple_dates": {
+        name: "나",
+        text: "(......잠깐. 나 혹시 주말 약속을 여러 개 잡아버린 건 아닌가? 괜히 불안해진다.)",
+        setFlag: "day3_has_multiple_dates",
         next: "day3_morning_end"
     },
+
+    // =========================================================================
+    // 아침 종료
+    // =========================================================================
     "day3_morning_end": {
         name: "나",
         text: "(수업이 계속되고... 시간이 흘러 어느덧 점심시간이 되었다.)",
