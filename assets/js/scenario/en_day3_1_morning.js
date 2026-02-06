@@ -568,6 +568,7 @@ Object.assign(SCENARIO[3], {
     "day3_walk_with_seoyeon": {
         name: "Me",
         text: "(I headed to the front of Seoyeon's house.)",
+        setFlag: "day3_morning_with_seoyeon",
         next: "day3_walk_with_seoyeon_2"
     },
     "day3_walk_with_seoyeon_2": {
@@ -648,6 +649,7 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(I headed toward the alley on the way to school. Yuna is standing under the shade of a tree.)",
         character: "assets/images/characters/yuna_normal.png",
+        setFlag: "day3_morning_with_yuna",
         next: "day3_walk_yuna_greet"
                 
     },
@@ -725,6 +727,7 @@ Object.assign(SCENARIO[3], {
         background: "assets/images/background/school.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/dain_laugh.png",
+        setFlag: "day3_morning_with_dain",
         next: "day3_walk_dain_greet"
     },
     "day3_walk_dain_greet": {
@@ -798,6 +801,7 @@ Object.assign(SCENARIO[3], {
     "day3_walk_with_nurse": {
         name: "Me",
         text: "(I headed to the meeting spot with the teacher. The school nurse is waiting.)",
+        setFlag: "day3_morning_with_nurse",
         background: "assets/images/background/school.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/nurse_normal.png",
@@ -877,6 +881,7 @@ Object.assign(SCENARIO[3], {
         background: "assets/images/background/school.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/teacher_normal.png",
+        setFlag: "day3_morning_with_teacher",
         next: "day3_walk_teacher_greet"
     },
     "day3_walk_teacher_greet": {

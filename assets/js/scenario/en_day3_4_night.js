@@ -503,6 +503,59 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(A peaceful night. I'm looking forward to tomorrow.)",
         night: true,
+        branches: [
+            { next: "day3_night_loyalty_seoyeon", condition: "day3_seoyeon_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
+            { next: "day3_night_loyalty_yuna", condition: "day3_yuna_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
+            { next: "day3_night_loyalty_dain", condition: "day3_dain_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
+            { next: "day3_night_loyalty_nurse", condition: "day3_nurse_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
+            { next: "day3_night_loyalty_teacher", condition: "day3_teacher_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
+            { next: "day3_final_scene" }
+        ]
+    },
+
+    // --- 일편단심 보너스 ---
+    "day3_night_loyalty_seoyeon": {
+        name: "Me",
+        text: "(...Just thinking about Seoyeon makes me smile. Tomorrow is our time together. I'll make sure to tell her how I truly feel.)",
+        night: true,
+        stats: { Seoyeon: { affinity: 10 } },
+        setFlag: "day3_loyalty_bonus",
+        fade: true,
+        next: "day3_final_scene"
+    },
+    "day3_night_loyalty_yuna": {
+        name: "Me",
+        text: "(...Just thinking about Yuna makes my heart race. Tomorrow night, just the two of us. Will I finally see the real Yuna?)",
+        night: true,
+        stats: { Yuna: { affinity: 10 } },
+        setFlag: "day3_loyalty_bonus",
+        fade: true,
+        next: "day3_final_scene"
+    },
+    "day3_night_loyalty_dain": {
+        name: "Me",
+        text: "(...Thinking of Dain's smile makes me smile too. I wonder how happy she'll be when I show up to watch her practice tomorrow.)",
+        night: true,
+        stats: { Dain: { affinity: 10 } },
+        setFlag: "day3_loyalty_bonus",
+        fade: true,
+        next: "day3_final_scene"
+    },
+    "day3_night_loyalty_nurse": {
+        name: "Me",
+        text: "(...The school nurse's face comes to mind. It's a forbidden relationship, but... I can't hide these feelings.)",
+        night: true,
+        stats: { Nurse: { affinity: 10 } },
+        setFlag: "day3_loyalty_bonus",
+        fade: true,
+        next: "day3_final_scene"
+    },
+    "day3_night_loyalty_teacher": {
+        name: "Me",
+        text: "(...The homeroom teacher's smile comes to mind. We're teacher and student, but... my feelings are real.)",
+        night: true,
+        stats: { Teacher: { affinity: 10 } },
+        setFlag: "day3_loyalty_bonus",
         fade: true,
         next: "day3_final_scene"
     },
