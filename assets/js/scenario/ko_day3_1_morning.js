@@ -963,6 +963,7 @@ Object.assign(SCENARIO[3], {
         background: "assets/images/background/school.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/nurse_normal.png",
+        setFlag: "day3_morning_with_nurse",
         next: "day3_walk_nurse_greet"
     },
     "day3_walk_nurse_greet": {
@@ -1101,6 +1102,7 @@ Object.assign(SCENARIO[3], {
         background: "assets/images/background/school.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/teacher_normal.png",
+        setFlag: "day3_morning_with_teacher",
         next: "day3_walk_teacher_greet"
     },
     "day3_walk_teacher_greet": {
