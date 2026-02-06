@@ -1,4 +1,4 @@
-/**
+Ôªø/**
  * ============================================================================
  * CUPID - Day 3 Night Scenario (English Version)
  * ============================================================================
@@ -92,7 +92,6 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
         night: true,
-        setFlag: "checked_seoyeon_msg",
         branches: [
             { next: "day3_night_seoyeon_suspicious", condition: "day3_seoyeon_knows_others" },
             { next: "day3_night_seoyeon_jealous", condition: "day3_caught_multiple_dates" },
@@ -113,7 +112,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seoyeon_lie": {
         name: "Seoyeon",
-        text: "'Really? I trust you! See you tomorrow! ?íï'",
+        text: "'Really? I trust you! See you tomorrow! üíï'",
         character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
         night: true,
@@ -174,7 +173,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seoyeon_normal": {
         name: "Seoyeon",
-        text: "'Have you decided where to go tomorrow? You can leave it to me! Good night! ?òä'",
+        text: "'Have you decided where to go tomorrow? You can leave it to me! Good night! üòä'",
         character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
         night: true,
@@ -192,11 +191,10 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_msg_yuna": {
         name: "Yuna",
-        text: "(Message: 11 PM) '...{name}. Tomorrow night. Don't forget.'",
+        text: "(Message: 11:59 PM) '...{name}. Tomorrow night. Don't forget.'",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
-        setFlag: "checked_yuna_msg",
         branches: [
             { next: "day3_night_yuna_witnessed", condition: "day3_yuna_witnessed_seoyeon" },
             { next: "day3_night_yuna_knows", condition: "day3_caught_multiple_dates" },
@@ -233,7 +231,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_yuna_threat": {
         name: "Yuna",
-        text: "'...You know, right? ?òä'",
+        text: "'...You know, right? üòä'",
         character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
@@ -302,11 +300,10 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_msg_dain": {
         name: "Dain",
-        text: "(Message: 9 PM) 'Hey!! 9 AM at the gym tomorrow!! Don't be late!!! ?ò§'",
+        text: "(Message: 9 PM) 'Hey!! 9 AM at the gym tomorrow!! Don't be late!!! üò§'",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
         night: true,
-        setFlag: "checked_dain_msg",
         branches: [
             { next: "day3_night_dain_suspicious", condition: "day3_caught_multiple_dates" },
             { next: "day3_night_dain_normal" }
@@ -351,7 +348,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_dain_normal": {
         name: "Dain",
-        text: "(Additional message) 'Let's go get tteokbokki after practice! My treat! ?çú'",
+        text: "(Additional message) 'Let's go get tteokbokki after practice! My treat! üçú'",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
         night: true,
@@ -373,12 +370,11 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
-        setFlag: "checked_nurse_msg",
         next: "day3_night_nurse_2"
     },
     "day3_night_nurse_2": {
         name: "School Nurse",
-        text: "'You haven't forgotten Sunday evening, right? I'll prepare something special. ?òâ'",
+        text: "'You haven't forgotten Sunday evening, right? I'll prepare something special. üòâ'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
@@ -389,7 +385,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nurse_excited": {
         name: "School Nurse",
-        text: "'You can look forward to it. Sleep well and see you Sunday, {name}. ?íã'",
+        text: "'You can look forward to it. Sleep well and see you Sunday, {name}. üíã'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
@@ -410,7 +406,6 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         night: true,
-        setFlag: "checked_teacher_msg",
         next: "day3_night_teacher_2"
     },
     "day3_night_teacher_2": {

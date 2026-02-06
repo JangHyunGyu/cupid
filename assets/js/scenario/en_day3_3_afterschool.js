@@ -60,9 +60,9 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(How should I answer...)",
         choices: [
-            { text: "Admit honestly", next: "day3_afternoon_admit", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Admit honestly", next: "day3_afternoon_admit" },
             { text: "Say different times make it okay", next: "day3_afternoon_justify" },
-            { text: "Say only Seoyeon is sincere", next: "day3_afternoon_lie_seoyeon", stats: { Seoyeon: { affinity: 3 } } }
+            { text: "Say only Seoyeon is sincere", next: "day3_afternoon_lie_seoyeon" }
         ]
     },
     "day3_afternoon_admit": {
@@ -110,7 +110,9 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_lie_seoyeon_react": {
         name: "Seoyeon",
         text: "\"...Really? Can I trust that?\"",
-        character: "assets/images/characters/seyoun_laugh.png",        stats: { Seoyeon: { affinity: 3 } },        setFlag: "day3_promised_seoyeon_only",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 3 } },
+        setFlag: "day3_promised_seoyeon_only",
         next: "day3_afternoon_lie_warning"
     },
     "day3_afternoon_lie_warning": {
@@ -158,18 +160,23 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_seoyeon_comfort": {
         name: "Seoyeon",
         text: "\"...Really? Hearing that... I feel a bit relieved.\"",
-        character: "assets/images/characters/seyoun_laugh.png",        stats: { Seoyeon: { affinity: 8 } },        next: "day3_afternoon_transition"
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 8 } },
+        next: "day3_afternoon_transition"
     },
     "day3_afternoon_seoyeon_friend": {
         name: "Seoyeon",
         text: "\"...Right. Friends. Got it.\"",
         character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -3 } },
         next: "day3_afternoon_transition"
     },
     "day3_afternoon_seoyeon_tease": {
         name: "Seoyeon",
         text: "\"W-what! That's not... Ugh, forget it!\"",
-        character: "assets/images/characters/seyoun_shy.png",        stats: { Seoyeon: { affinity: 3 } },        next: "day3_afternoon_transition"
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
+        next: "day3_afternoon_transition"
     },
     "day3_afternoon_yuna_approach": {
         name: "Yuna",
@@ -196,18 +203,24 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_apologize": {
         name: "Yuna",
         text: "\"...It's okay. We have tomorrow.\"",
-        character: "assets/images/characters/yuna_normal.png",        stats: { Yuna: { affinity: 5 } },        next: "day3_afternoon_yuna_warning"
+        character: "assets/images/characters/yuna_normal.png",
+        stats: { Yuna: { affinity: 5 } },
+        next: "day3_afternoon_yuna_warning"
     },
     "day3_afternoon_yuna_promise": {
         name: "Yuna",
         text: "\"...I won't forget those words.\"",
-        character: "assets/images/characters/yuna_smile.png",        stats: { Yuna: { affinity: 8 } },        setFlag: "day3_yuna_priority_promise",
+        character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 8 } },
+        setFlag: "day3_yuna_priority_promise",
         next: "day3_afternoon_yuna_warning"
     },
     "day3_afternoon_yuna_question": {
         name: "Yuna",
         text: "\"...Upset? No. I just... wanted to confirm.\"",
-        character: "assets/images/characters/yuna_normal.png",        stats: { Yuna: { affinity: -3 } },        next: "day3_afternoon_yuna_warning"
+        character: "assets/images/characters/yuna_normal.png",
+        stats: { Yuna: { affinity: -3 } },
+        next: "day3_afternoon_yuna_warning"
     },
     "day3_afternoon_yuna_warning": {
         name: "Yuna",
@@ -231,9 +244,9 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(Dain pouts and complains.)",
         choices: [
-            { text: "\"Sorry, let's eat together next time\"", next: "day3_afternoon_dain_sorry", stats: { Dain: { affinity: 5 } } },
-            { text: "\"I'll come to your practice tomorrow\"", next: "day3_afternoon_dain_promise", stats: { Dain: { affinity: 8 } } },
-            { text: "\"Cute, are you angry?\"", next: "day3_afternoon_dain_tease", stats: { Dain: { affinity: 5 } } }
+            { text: "\"Sorry, let's eat together next time\"", next: "day3_afternoon_dain_sorry" },
+            { text: "\"I'll come to your practice tomorrow\"", next: "day3_afternoon_dain_promise" },
+            { text: "\"Cute, are you angry?\"", next: "day3_afternoon_dain_tease" }
         ]
     },
     "day3_afternoon_dain_sorry": {
@@ -246,12 +259,16 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_dain_promise": {
         name: "Dain",
         text: "\"Really?! Then I forgive you! Look forward to my spike!\"",
-        character: "assets/images/characters/dain_laugh.png",        stats: { Dain: { affinity: 8 } },        next: "day3_afternoon_transition"
+        character: "assets/images/characters/dain_laugh.png",
+        stats: { Dain: { affinity: 8 } },
+        next: "day3_afternoon_transition"
     },
     "day3_afternoon_dain_tease": {
         name: "Dain",
         text: "\"W-what! Cute my foot! Dummy!\"",
-        character: "assets/images/characters/dain_shy.png",        stats: { Dain: { affinity: 5 } },        next: "day3_afternoon_transition"
+        character: "assets/images/characters/dain_shy.png",
+        stats: { Dain: { affinity: 5 } },
+        next: "day3_afternoon_transition"
     },
 
     "day3_afternoon_normal": {
@@ -407,7 +424,9 @@ Object.assign(SCENARIO[3], {
 
     "day3_afternoon_yuna_walk": {
         name: "Me",
-        text: "\"Yuna, let's walk together.\"",        stats: { Yuna: { affinity: 5 } },        setFlag: "day3_walked_with_yuna",
+        text: "\"Yuna, let's walk together.\"",
+        stats: { Yuna: { affinity: 5 } },
+        setFlag: "day3_walked_with_yuna",
         next: "day3_afternoon_yuna_walk_2"
     },
     "day3_afternoon_yuna_walk_2": {
@@ -472,7 +491,9 @@ Object.assign(SCENARIO[3], {
 
     "day3_afternoon_dain_walk": {
         name: "Me",
-        text: "\"Dain, let's walk together.\"",        stats: { Dain: { affinity: 5 } },        setFlag: "day3_walked_with_dain",
+        text: "\"Dain, let's walk together.\"",
+        stats: { Dain: { affinity: 5 } },
+        setFlag: "day3_walked_with_dain",
         next: "day3_afternoon_dain_walk_2"
     },
     "day3_afternoon_dain_walk_2": {

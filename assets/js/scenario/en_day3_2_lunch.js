@@ -481,10 +481,23 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_excuse_react"
     },
     "day3_lunch_excuse_react": {
+        name: "Seoyeon",
+        text: "\"That's not the problem... Ugh, I don't know. I'm confused too.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        next: "day3_lunch_excuse_react_2"
+    },
+    "day3_lunch_excuse_react_2": {
+        name: "Dain",
+        text: "\"Hmm... can't you just manage your time well? I'm fine with it.\"",
+        character: "assets/images/characters/dain_normal.png",
+        next: "day3_lunch_excuse_react_3"
+    },
+    "day3_lunch_excuse_react_3": {
         name: "Yuna",
-        text: "\"...So you're planning to meet all of us?\"",
-        character: "assets/images/characters/yuna_normal.png",
+        text: "\"...Someone like you might be fine with that. But I... (stands up) I'm leaving first.\"",
+        character: "assets/images/characters/yuna_sad.png",
         stats: { Yuna: { affinity: -5 } },
+        setFlag: "day3_yuna_hurt",
         next: "day3_lunch_together_end"
     },
     "day3_lunch_run": {
