@@ -92,6 +92,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_seoyeon_msg",
         branches: [
             { next: "day3_night_seoyeon_suspicious", condition: "day3_seoyeon_knows_others" },
             { next: "day3_night_seoyeon_jealous", condition: "day3_caught_multiple_dates" },
@@ -195,6 +196,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_yuna_msg",
         branches: [
             { next: "day3_night_yuna_witnessed", condition: "day3_yuna_witnessed_seoyeon" },
             { next: "day3_night_yuna_knows", condition: "day3_caught_multiple_dates" },
@@ -304,6 +306,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_dain_msg",
         branches: [
             { next: "day3_night_dain_suspicious", condition: "day3_caught_multiple_dates" },
             { next: "day3_night_dain_normal" }
@@ -370,6 +373,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_nurse_msg",
         next: "day3_night_nurse_2"
     },
     "day3_night_nurse_2": {
@@ -406,6 +410,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_teacher_msg",
         next: "day3_night_teacher_2"
     },
     "day3_night_teacher_2": {
@@ -450,8 +455,8 @@ Object.assign(SCENARIO[3], {
             { next: "day3_night_seoyeon_normal", condition: "day3_seoyeon_date_confirmed" },
             { next: "day3_night_yuna_normal", condition: "day3_yuna_date_confirmed" },
             { next: "day3_night_dain_normal", condition: "day3_dain_date_confirmed" },
-            { next: "day3_night_nurse_2", condition: "day3_nurse_date_confirmed" },
-            { next: "day3_night_teacher_2", condition: "day3_teacher_date_confirmed" }
+            { next: "day3_night_msg_nurse", condition: "day3_nurse_date_confirmed" },
+            { next: "day3_night_msg_teacher", condition: "day3_teacher_date_confirmed" }
         ]
     },
 
@@ -509,17 +514,7 @@ Object.assign(SCENARIO[3], {
         character: null,
         night: true,
         fade: true,
+        changeDay: 4,
         next: "day4_start"
-    },
-    
-    "day4_start": {
-        name: "System",
-        text: "(This is the end of the currently developed scenario. Please look forward to Day 4 (Saturday) scenario!)",
-        background: null,
-        character: null,
-        fade: true,
-        choices: [
-            { text: "Start over from the beginning", next: "index.html" }
-        ]
     }
 });

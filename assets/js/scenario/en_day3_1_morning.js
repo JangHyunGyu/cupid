@@ -574,6 +574,73 @@ Object.assign(SCENARIO[3], {
         name: "Seoyeon",
         text: "\"Wow! You really came! Thank you!\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        next: "day3_walk_seoyeon_freetalk"
+    },
+    "day3_walk_seoyeon_freetalk": {
+        name: "Me",
+        text: "(We walk to school together, chatting about this and that.)",
+        next: "day3_seoyeon_weekend_talk"
+    },
+    "day3_seoyeon_weekend_talk": {
+        name: "Seoyeon",
+        text: "(As the school gate comes into view, Seoyeon stutters as if trying to say something difficult) \"Um... {name}. Are you free this weekend? There's a café I've been wanting to visit...\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        choices: [
+            { text: "What kind of café?", next: "day3_seoyeon_weekend_ask" },
+            { text: "Just the two of us?", next: "day3_seoyeon_weekend_tease" },
+            { text: "Sure, when should we go?", next: "day3_seoyeon_weekend_direct" }
+        ]
+    },
+    "day3_seoyeon_weekend_ask": {
+        name: "Seoyeon",
+        text: "\"I saw it on social media, and it has a really pretty vibe. It's awkward going alone though... Let's meet at the park fountain at 2 PM on Saturday!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 3 } },
+        next: "day3_seoyeon_weekend_choice"
+    },
+    "day3_seoyeon_weekend_tease": {
+        name: "Seoyeon",
+        text: "(Seoyeon's face turns bright red) \"W-what?! It's just friends hanging out! ...But I didn't invite anyone else. Saturday at 2 PM, at the park fountain.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 5 } },
+        next: "day3_seoyeon_weekend_choice"
+    },
+    "day3_seoyeon_weekend_direct": {
+        name: "Seoyeon",
+        text: "(Seoyeon beams) \"Really?! Saturday at 2 PM, at the park fountain! You better not be late!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 5 } },
+        next: "day3_seoyeon_weekend_choice"
+    },
+    "day3_seoyeon_weekend_choice": {
+        name: "Me",
+        text: "(Seoyeon looks at me with eyes full of anticipation.)",
+        character: "assets/images/characters/seyoun_normal.png",
+        choices: [
+            { text: "Sure, I'll definitely be there", next: "day3_seoyeon_weekend_yes", setFlag: "day3_seoyeon_date_confirmed" },
+            { text: "Let me think about it", next: "day3_seoyeon_weekend_later" },
+            { text: "Sorry, I'm busy this weekend", next: "day3_seoyeon_weekend_no" }
+        ]
+    },
+    "day3_seoyeon_weekend_yes": {
+        name: "Seoyeon",
+        text: "(Seoyeon nearly shouts but quickly covers her mouth) \"...Ahem! O-okay. See you Saturday then. You can look forward to it!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 8 } },
+        next: "day3_arrive_school"
+    },
+    "day3_seoyeon_weekend_later": {
+        name: "Seoyeon",
+        text: "(Seoyeon's expression dims slightly) \"...Okay, I see. Let me know later then.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -5 } },
+        next: "day3_arrive_school"
+    },
+    "day3_seoyeon_weekend_no": {
+        name: "Seoyeon",
+        text: "(Seoyeon forces a smile) \"...Oh, is that so? It's fine! We can go some other time!\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -30 } },
         next: "day3_arrive_school"
     },
     

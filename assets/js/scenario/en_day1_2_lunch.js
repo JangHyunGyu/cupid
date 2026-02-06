@@ -176,6 +176,7 @@ Object.assign(SCENARIO[1], {
         next: "rooftop_talk_main"
     },
     "rooftop_talk_main": {
+        name: "Me",
         text: "(We chat while eating the lunch box together. My heart flutters as she smiles shyly.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_normal.png",

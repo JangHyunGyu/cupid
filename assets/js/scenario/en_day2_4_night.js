@@ -492,6 +492,7 @@ Object.assign(SCENARIO[2], {
         background: "assets/images/background/room_my.png",
         night: true,
         fade: true,
+        changeDay: 3,
         next: "day3_start"
     }
 });
