@@ -925,7 +925,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_nurse_arrive": {
         name: "보건선생님",
-        text: "\"일요일 저녁 7시, 잊으면 안 돼요? 선생님 기다리고 있을 테니까.\"",
+        text: "\"일요일 저녁 7시, 잊으면 안 돼? 선생님 기다리고 있을 테니까.\"",
         character: "assets/images/characters/nurse_normal.png",
         fade: true,
         next: "day3_night_start"

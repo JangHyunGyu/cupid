@@ -130,6 +130,8 @@ Object.assign(SCENARIO[2], {
         next: "day2_classroom"
     },
     "day2_meet_nurse": {
+        name: "시스템",
+        text: "",
         affinityChar: "Nurse",
         affinityBranches: [
             { minAffinity: 20, next: "day2_meet_nurse_high" },
@@ -185,6 +187,8 @@ Object.assign(SCENARIO[2], {
         next: "day2_classroom"
     },
     "day2_meet_seoyeon": {
+        name: "시스템",
+        text: "",
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 25, next: "day2_meet_seoyeon_high" },

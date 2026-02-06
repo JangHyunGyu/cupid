@@ -629,6 +629,68 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(학교까지 가는 길, 서연이와 이런저런 이야기를 나눈다.)",
         freeTalk: { turns: 4, context: "서연이와 아침 등교길에 나란히 걸으며 대화하는 중. 횡단보도에서 손이 닿아 둘 다 살짝 의식하고 있는 상태. 금요일 아침이라 주말 이야기가 나올 수 있다." },
+        next: "day3_seoyeon_weekend_talk"
+    },
+    "day3_seoyeon_weekend_talk": {
+        name: "서연",
+        text: "(학교 정문이 보일 즈음, 서연이가 뭔가 꺼내기 어려운 듯 말을 더듬는다) \"저기… {name}아. 이번 주말에 혹시 시간 있어? 가보고 싶은 카페가 있거든…\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        choices: [
+            { text: "어떤 카페인데?", next: "day3_seoyeon_weekend_ask" },
+            { text: "나랑 단둘이?", next: "day3_seoyeon_weekend_tease" },
+            { text: "좋아, 언제 갈까?", next: "day3_seoyeon_weekend_direct" }
+        ]
+    },
+    "day3_seoyeon_weekend_ask": {
+        name: "서연",
+        text: "\"SNS에서 본 건데, 분위기가 진짜 예쁜 곳이야. 혼자 가긴 좀 그래서… 토요일 오후 2시, 공원 분수대 앞에서 만나자!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 3 } },
+        next: "day3_seoyeon_weekend_choice"
+    },
+    "day3_seoyeon_weekend_tease": {
+        name: "서연",
+        text: "(서연이 얼굴이 새빨개진다) \"뭐, 뭐야! 그냥 친구끼리 가는 거지! …근데 다른 사람은 안 불렀어. 토요일 오후 2시, 공원 분수대 앞이야.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 5 } },
+        next: "day3_seoyeon_weekend_choice"
+    },
+    "day3_seoyeon_weekend_direct": {
+        name: "서연",
+        text: "(서연이가 환하게 웃는다) \"진짜?! 토요일 오후 2시, 공원 분수대 앞에서 만나! 절대 늦으면 안 돼!\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        stats: { Seoyeon: { affinity: 5 } },
+        next: "day3_seoyeon_weekend_choice"
+    },
+    "day3_seoyeon_weekend_choice": {
+        name: "나",
+        text: "(서연이가 기대에 찬 눈으로 나를 바라본다.)",
+        character: "assets/images/characters/seyoun_normal.png",
+        choices: [
+            { text: "알았어, 꼭 갈게", next: "day3_seoyeon_weekend_yes", setFlag: "day3_seoyeon_date_confirmed" },
+            { text: "생각해보고 답해줄게", next: "day3_seoyeon_weekend_later" },
+            { text: "미안, 주말에 좀 바빠서", next: "day3_seoyeon_weekend_no" }
+        ]
+    },
+    "day3_seoyeon_weekend_yes": {
+        name: "서연",
+        text: "(서연이가 소리를 지르다 급하게 입을 막는다) \"…헴! 그, 그래. 그럼 토요일에 봐. 기대해도 좋아!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 8 } },
+        next: "day3_arrive_school"
+    },
+    "day3_seoyeon_weekend_later": {
+        name: "서연",
+        text: "(서연이의 표정이 살짝 어두워진다) \"…응, 알겠어. 그럼 나중에 연락해줘.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -5 } },
+        next: "day3_arrive_school"
+    },
+    "day3_seoyeon_weekend_no": {
+        name: "서연",
+        text: "(서연이가 억지로 웃는다) \"…아, 그래? 괜찮아! 뭐, 다음에 가면 되지!\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        stats: { Seoyeon: { affinity: -30 } },
         next: "day3_arrive_school"
     },
     

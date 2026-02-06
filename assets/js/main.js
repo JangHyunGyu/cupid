@@ -3348,9 +3348,9 @@ class GameEngine {
             return;
         }
 
-        // ✅ 케이스 2: 프리토킹 중이거나 이름 입력 모드일 때
+        // ✅ 케이스 2: 프리토킹 중이거나 이름 입력/크레딧 모드일 때
         // - 별도의 입력 UI를 사용하므로 클릭 무시
-        if (this.freeTalkSystem.isFreeTalking || scene.type === 'input') return;
+        if (this.freeTalkSystem.isFreeTalking || scene.type === 'input' || scene.type === 'credits') return;
 
         // ✅ 케이스 3: 시네마틱(연출) 장면일 때
         // - 텍스트도 없고 선택지도 없는 순수 연출 장면
@@ -3931,7 +3931,50 @@ class GameEngine {
             this.uiManager.playerNameInput.focus();
 
             // ═══════════════════════════════════════════════════════
-            // 💬 타입 C: 일반 대화/시네마틱/선택지
+            // 🎬 타입 C: 엔딩 크레딧
+            // ═══════════════════════════════════════════════════════
+        } else if (scene.type === 'credits') {
+            // 대화창 숨김
+            this.uiManager.dialogueBox.style.display = 'none';
+            this.uiManager.choicesContainer.style.display = 'none';
+
+            // 크레딧 레이어 표시
+            const creditsLayer = document.getElementById('credits-layer');
+            if (creditsLayer) {
+                creditsLayer.classList.add('active');
+
+                // 스킵 버튼 생성 (없으면)
+                let skipBtn = document.getElementById('credits-skip-btn');
+                if (!skipBtn) {
+                    skipBtn = document.createElement('button');
+                    skipBtn.id = 'credits-skip-btn';
+                    skipBtn.textContent = 'SKIP ▶';
+                    creditsLayer.appendChild(skipBtn);
+                }
+
+                // 스킵 버튼 또는 크레딧 끝나면 다음 씬으로
+                const endCredits = () => {
+                    creditsLayer.classList.remove('active');
+                    // 크레딧 스크롤 애니메이션 리셋
+                    const content = document.getElementById('credits-content');
+                    if (content) {
+                        content.style.animation = 'none';
+                        content.offsetHeight; // reflow
+                        content.style.animation = '';
+                    }
+                    if (scene.next) {
+                        this.showScene(scene.next);
+                    }
+                };
+
+                skipBtn.onclick = endCredits;
+
+                // 크레딧 애니메이션 종료 시 자동 전환 (25초)
+                setTimeout(endCredits, 26000);
+            }
+
+            // ═══════════════════════════════════════════════════════
+            // 💬 타입 D: 일반 대화/시네마틱/선택지
             // ═══════════════════════════════════════════════════════
         } else {
             // 📜 대사가 있으면 타이핑 효과로 출력

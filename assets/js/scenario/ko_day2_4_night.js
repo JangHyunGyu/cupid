@@ -505,6 +505,7 @@ Object.assign(SCENARIO[2], {
         character: null,
         night: true,
         fade: true,
+        changeDay: 3,
         next: "day3_start"
     }
 });

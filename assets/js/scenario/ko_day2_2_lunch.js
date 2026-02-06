@@ -87,7 +87,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_teacher": {
         name: "나",
         text: "(교무실 문을 열자, 도시락을 드시려던 담임선생님이 나를 보고 반갑게 웃으신다.)",
-        background: "assets/images/background/teacher_room.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_2"
     },

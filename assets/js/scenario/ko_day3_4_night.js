@@ -139,6 +139,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_seoyeon_msg",
         branches: [
             { next: "day3_night_seoyeon_suspicious", condition: "day3_seoyeon_knows_others" },
             { next: "day3_night_seoyeon_jealous", condition: "day3_caught_multiple_dates" },
@@ -245,6 +246,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_yuna_msg",
         branches: [
             { next: "day3_night_yuna_witnessed", condition: "day3_yuna_witnessed_seoyeon" },
             { next: "day3_night_yuna_knows", condition: "day3_caught_multiple_dates" },
@@ -357,6 +359,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_dain_msg",
         branches: [
             { next: "day3_night_dain_suspicious", condition: "day3_caught_multiple_dates" },
             { next: "day3_night_dain_normal" }
@@ -426,6 +429,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_nurse_msg",
         next: "day3_night_nurse_2"
     },
     "day3_night_nurse_2": {
@@ -441,7 +445,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nurse_excited": {
         name: "보건선생님",
-        text: "'기대해도 좋아. 그럼 푹 자고 일요일에 봐요, {name}. 💋'",
+        text: "'기대해도 좋아. 그럼 푹 자고 일요일에 보자, {name}. 💋'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
@@ -449,7 +453,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nurse_curious": {
         name: "보건선생님",
-        text: "'비밀~ 일요일에 알게 될 거야. 기대해도 좋아요.'",
+        text: "'비밀~ 일요일에 알게 될 거야. 기대해도 좋아.'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
@@ -465,6 +469,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_teacher_msg",
         next: "day3_night_teacher_2"
     },
     "day3_night_teacher_2": {
@@ -515,8 +520,8 @@ Object.assign(SCENARIO[3], {
             { next: "day3_night_seoyeon_normal", condition: "day3_seoyeon_date_confirmed" },
             { next: "day3_night_yuna_normal", condition: "day3_yuna_date_confirmed" },
             { next: "day3_night_dain_normal", condition: "day3_dain_date_confirmed" },
-            { next: "day3_night_nurse_2", condition: "day3_nurse_date_confirmed" },
-            { next: "day3_night_teacher_2", condition: "day3_teacher_date_confirmed" }
+            { next: "day3_night_msg_nurse", condition: "day3_nurse_date_confirmed" },
+            { next: "day3_night_msg_teacher", condition: "day3_teacher_date_confirmed" }
         ]
     },
 
@@ -779,18 +784,9 @@ Object.assign(SCENARIO[3], {
         character: null,
         night: true,
         fade: true,
+        changeDay: 4,
         next: "day4_start"
     },
     
-    // Day 4 진입점 (아직 미구현)
-    "day4_start": {
-        name: "시스템",
-        text: "(현재 개발된 시나리오는 여기까지입니다. Day 4(토요일) 시나리오를 기대해주세요!)",
-        background: null,
-        character: null,
-        fade: true,
-        choices: [
-            { text: "처음부터 다시 시작하기", next: "index.html" }
-        ]
-    }
+    // Day 4 진입점 → ko_day4_1_morning.js의 day4_start로 연결됨
 });

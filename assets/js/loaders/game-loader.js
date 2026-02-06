@@ -131,7 +131,25 @@
         'scenario/ko_day3_1_morning.js',      // 아침: 메시지 확인, 주말 약속 수락/거절
         'scenario/ko_day3_2_lunch.js',        // 점심: 히로인들 간 경쟁 시작
         'scenario/ko_day3_3_afterschool.js',  // 방과후: 갈등 심화, 귀가 동행 선택
-        'scenario/ko_day3_4_night.js'         // 밤: 갈등 메시지, Day 4 전환
+        'scenario/ko_day3_4_night.js',        // 밤: 갈등 메시지, Day 4 전환
+
+        // -----------------------------------------------------------------
+        // Day 4 (4일차) - 토요일 데이트
+        // 히로인과의 데이트, 고백
+        // -----------------------------------------------------------------
+        'scenario/ko_day4_1_morning.js',      // 아침: 데이트 준비, 설렘
+        'scenario/ko_day4_2_lunch.js',        // 점심: 데이트 시작, 함께하는 시간
+        'scenario/ko_day4_3_afterschool.js',  // 오후: 석양, 고백
+        'scenario/ko_day4_4_night.js',        // 밤: 고백 후, Day 5 전환
+
+        // -----------------------------------------------------------------
+        // Day 5 (5일차) - 일요일 에필로그
+        // 마지막 날, 에필로그, 엔딩 크레딧
+        // -----------------------------------------------------------------
+        'scenario/ko_day5_1_morning.js',      // 아침: 마지막 날의 시작
+        'scenario/ko_day5_2_lunch.js',        // 점심: 학교에서 재회, 추억
+        'scenario/ko_day5_3_afterschool.js',  // 오후: 옥상 에필로그
+        'scenario/ko_day5_4_night.js'         // 밤: 엔딩 나레이션, 크레딧
     ];
 
     // =========================================================================
@@ -176,7 +194,25 @@
         'scenario/en_day3_1_morning.js',      // 아침: 메시지 확인, 주말 약속
         'scenario/en_day3_2_lunch.js',        // 점심: 히로인 경쟁 시작
         'scenario/en_day3_3_afterschool.js',  // 방과후: 갈등 심화
-        'scenario/en_day3_4_night.js'         // 밤: 갈등 메시지, Day 4 전환
+        'scenario/en_day3_4_night.js',        // 밤: 갈등 메시지, Day 4 전환
+
+        // -----------------------------------------------------------------
+        // Day 4 (4일차) - Saturday Date
+        // Date with heroine, confession
+        // -----------------------------------------------------------------
+        'scenario/en_day4_1_morning.js',      // Morning: Date preparation
+        'scenario/en_day4_2_lunch.js',        // Lunch: Date begins
+        'scenario/en_day4_3_afterschool.js',  // Afternoon: Sunset, confession
+        'scenario/en_day4_4_night.js',        // Night: After confession, Day 5
+
+        // -----------------------------------------------------------------
+        // Day 5 (5일차) - Sunday Epilogue
+        // Final day, epilogue, ending credits
+        // -----------------------------------------------------------------
+        'scenario/en_day5_1_morning.js',      // Morning: Last day begins
+        'scenario/en_day5_2_lunch.js',        // Lunch: Reunion at school
+        'scenario/en_day5_3_afterschool.js',  // Afternoon: Rooftop epilogue
+        'scenario/en_day5_4_night.js'         // Night: Ending narration, credits
     ];
 
     /**

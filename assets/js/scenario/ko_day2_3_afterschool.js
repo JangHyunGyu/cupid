@@ -1040,7 +1040,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_teacher": {
         name: "나",
         text: "(교무실 문을 열자, 텅 빈 사무실 안에서 홀로 스탠드를 켜고 서류를 검토 중인 담임선생님이 보인다.)",
-        background: "assets/images/background/teacher_room.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "day2_after_teacher_2"
@@ -1066,14 +1066,14 @@ Object.assign(SCENARIO[2], {
     "day2_after_teacher_work": {
         name: "나",
         text: "(선생님의 옆자리에 앉아 서류 정리를 돕기 시작했다. 조용한 교무실 안에 종이 넘기는 소리만 규칙적으로 들려온다.)",
-        background: "assets/images/background/teacher_room.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "day2_after_teacher_work_2"
     },
     "day2_after_teacher_work_2": {
         name: "담임선생님",
-        text: "\"고마워, {name}. 덕분에 정말 큰 도움이 됐어. 혼자 했으면 많이 고생할 뿐했지 뽐야.\"",
+        text: "\"고마워, {name}. 덕분에 정말 큰 도움이 됐어. 혼자 했으면 많이 고생할 뻔했어.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "day2_after_teacher_branch"

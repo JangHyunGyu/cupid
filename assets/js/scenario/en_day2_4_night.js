@@ -122,14 +122,14 @@ Object.assign(SCENARIO[2], {
         name: "Nurse",
         text: "\"Oh my, you actually came? Come in quickly. It's quite cold outside, isn't it?\"",
         background: "assets/images/background/nurse_house.png",
-        character: "assets/images/characters/nurse_home_event1.png",
+        character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day2_night_nurse_home_3"
     },
     "day2_night_nurse_home_3": {
         name: "Nurse",
         text: "\"Sit here. I'll get you a cup of warm tea. Being alone with our transfer student... I feel somewhat strange?\"",
-        character: "assets/images/characters/nurse_home_event1.png",
+        character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day2_night_nurse_home_4"
     },

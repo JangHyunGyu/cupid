@@ -100,7 +100,7 @@ Object.assign(SCENARIO[1], {
     "after_teacher": {
         name: "Me",
         text: "(I open the faculty room door. My teacher is organizing documents alone.)",
-        background: "assets/images/background/teacher_room.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "after_teacher_2"
