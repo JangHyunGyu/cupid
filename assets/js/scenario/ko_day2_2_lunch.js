@@ -201,46 +201,46 @@ Object.assign(SCENARIO[2], {
         text: "\"...저 애, 배구부 정다인이야. {name}, 혹시 친해?\"",
         character: "assets/images/characters/seyoun_normal.png",
         branches: [
-            { next: "day2_seoyeon_dain_yes", condition: "met_dain" },
-            { next: "day2_seoyeon_dain_no" }
+            { next: "day2_seoyeon_lunch_dain_yes", condition: "met_dain" },
+            { next: "day2_seoyeon_lunch_dain_no" }
         ]
     },
-    "day2_seoyeon_dain_yes": {
+    "day2_seoyeon_lunch_dain_yes": {
         name: "나",
         text: "(서연이의 질문에 어떻게 대답할까 고민된다.)",
         character: "assets/images/characters/seyoun_normal.png",
         choices: [
-            { text: "응, 어제 만났어. 밝고 재밌는 애더라.", next: "day2_seoyeon_dain_honest", stats: { Seoyeon: { affinity: -3 }, Dain: { affinity: 2 } } },
-            { text: "그냥 아는 사이야. 서연이가 더 중요해.", next: "day2_seoyeon_dain_deny", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
-            { text: "왜? 혹시 질투하는 거야?", next: "day2_seoyeon_dain_tease", stats: { Seoyeon: { affinity: 3 } } }
+            { text: "응, 어제 만났어. 밝고 재밌는 애더라.", next: "day2_seoyeon_lunch_dain_honest", stats: { Seoyeon: { affinity: -3 }, Dain: { affinity: 2 } } },
+            { text: "그냥 아는 사이야. 서연이가 더 중요해.", next: "day2_seoyeon_lunch_dain_deny", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
+            { text: "왜? 혹시 질투하는 거야?", next: "day2_seoyeon_lunch_dain_tease", stats: { Seoyeon: { affinity: 3 } } }
         ]
     },
-    "day2_seoyeon_dain_no": {
+    "day2_seoyeon_lunch_dain_no": {
         name: "나",
         text: "\"(정다인... 기억해두자.) 아니, 처음 보는 애야. 왜?\"",
         character: "assets/images/characters/seyoun_normal.png",
         setFlag: "knows_name_dain",
-        next: "day2_seoyeon_dain_no_react"
+        next: "day2_seoyeon_lunch_dain_no_react"
     },
-    "day2_seoyeon_dain_no_react": {
+    "day2_seoyeon_lunch_dain_no_react": {
         name: "서연",
         text: "\"아, 아니야. 그냥 물어본 거야. (서연이가 안도하는 듯 미소 짓는다) ...그럼, 우리 밥 계속 먹자!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_seoyeon_lunch_end"
     },
-    "day2_seoyeon_dain_honest": {
+    "day2_seoyeon_lunch_dain_honest": {
         name: "서연",
         text: "\"...그렇구나. (서연이가 잠시 창밖을 바라보다가 미소를 짓는다) 좋은 친구가 많으면 좋지. 나도... 더 노력해야겠네.\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "day2_seoyeon_lunch_end"
     },
-    "day2_seoyeon_dain_deny": {
+    "day2_seoyeon_lunch_dain_deny": {
         name: "서연",
         text: "\"(서연이의 표정이 살짝 밝아진다) ...그래? 후훗, 그런 말 들으니까 기분이 좋네. 고마워, {name}.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_seoyeon_lunch_end"
     },
-    "day2_seoyeon_dain_tease": {
+    "day2_seoyeon_lunch_dain_tease": {
         name: "서연",
         text: "\"지, 질투?! 아니거든! 그냥... 궁금해서 물어본 거야! (서연이가 얼굴을 붉히며 고개를 돌린다)\"",
         character: "assets/images/characters/seyoun_shy.png",

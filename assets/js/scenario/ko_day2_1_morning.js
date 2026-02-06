@@ -114,7 +114,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_normal.png",
         branches: [
             { next: "day2_yuna_talk_msg", condition: "sent_msg_day1_yuna" },
-            { next: "day2_yuna_talk" }
+            { next: "day2_yuna_morning_talk" }
         ]
     },
     "day2_yuna_talk_msg": {
@@ -123,7 +123,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_smile.png",
         next: "day2_classroom"
     },
-    "day2_yuna_talk": {
+    "day2_yuna_morning_talk": {
         name: "유나",
         text: "\"...안녕. 오늘도 그 '빛'은 여전하네. 다행이야. 이따가... 쪽지 확인해봐.\"",
         character: "assets/images/characters/yuna_normal.png",
