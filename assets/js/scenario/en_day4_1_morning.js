@@ -59,11 +59,11 @@ Object.assign(SCENARIO[4], {
         name: "System",
         text: "",
         branches: [
-            { next: "day4_morning_date_route", condition: "day3_date_seoyeon" },
-            { next: "day4_morning_date_route", condition: "day3_date_yuna" },
-            { next: "day4_morning_date_route", condition: "day3_date_dain" },
-            { next: "day4_morning_date_route", condition: "day3_date_nurse" },
-            { next: "day4_morning_date_route", condition: "day3_date_teacher" },
+            { next: "day4_morning_date_route", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day4_morning_date_route", condition: "day3_yuna_date_confirmed" },
+            { next: "day4_morning_date_route", condition: "day3_dain_date_confirmed" },
+            { next: "day4_morning_date_route", condition: "day3_nurse_date_confirmed" },
+            { next: "day4_morning_date_route", condition: "day3_teacher_date_confirmed" },
             { next: "day4_no_date_start" }
         ]
     },

@@ -1,65 +1,65 @@
-ï»¿/**
+/**
  * ============================================================================
  * CUPID - Day 2 Morning Scenario (English Version)
  * ============================================================================
  * 
- *  íŒŒì¼ ì •ë³´
+ *  ÆÄÀÏ Á¤º¸
  * ----------------------------------------------------------------------------
- * íŒŒì¼ëª…: en_day2_1_morning.js
- * ì–¸ì–´: ì˜ì–´ (English)
- * ì¼ì°¨: Day 2 (2ì¼ì°¨)
- * ì‹œê°„ëŒ€: Morning (ì˜¤ì „)
+ * ÆÄÀÏ¸í: en_day2_1_morning.js
+ * ¾ğ¾î: ¿µ¾î (English)
+ * ÀÏÂ÷: Day 2 (2ÀÏÂ÷)
+ * ½Ã°£´ë: Morning (¿ÀÀü)
  * 
- *  ì‹œë‚˜ë¦¬ì˜¤ ê°œìš”
+ *  ½Ã³ª¸®¿À °³¿ä
  * ----------------------------------------------------------------------------
- * ì „í•™ 2ì¼ì°¨ ì•„ì¹¨ì˜ ë“±êµ ë° êµì‹¤ ìƒí™©ì„ ë‹¤ë£¹ë‹ˆë‹¤. êµë¬¸ ì•ì—ì„œ í˜¸ê°ë„ê°€ ê°€ì¥ ë†’ì€ 
- * íˆë¡œì¸ê³¼ ì¡°ìš°í•˜ì—¬ ëŒ€í™”ë¥¼ ë‚˜ëˆ„ë©°, ì–´ì ¯ë°¤ ë³´ë‚¸ ë©”ì‹œì§€ì— ëŒ€í•œ ë°˜ì‘ì„ í™•ì¸í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤. 
- * êµì‹¤ì—ì„œëŠ” ìœ ë‚˜ê°€ ë‚¨ê¸´ ì‹ ë¹„ë¡œìš´ ìª½ì§€ë¥¼ ë°œê²¬í•˜ë©° ì ì‹¬ì‹œê°„ì˜ ì´ë²¤íŠ¸ë¥¼ ì˜ˆê³ í•©ë‹ˆë‹¤.
+ * ÀüÇĞ 2ÀÏÂ÷ ¾ÆÄ§ÀÇ µî±³ ¹× ±³½Ç »óÈ²À» ´Ù·ì´Ï´Ù. ±³¹® ¾Õ¿¡¼­ È£°¨µµ°¡ °¡Àå ³ôÀº 
+ * È÷·ÎÀÎ°ú Á¶¿ìÇÏ¿© ´ëÈ­¸¦ ³ª´©¸ç, ¾îÁ¬¹ã º¸³½ ¸Ş½ÃÁö¿¡ ´ëÇÑ ¹İÀÀÀ» È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù. 
+ * ±³½Ç¿¡¼­´Â À¯³ª°¡ ³²±ä ½Åºñ·Î¿î ÂÊÁö¸¦ ¹ß°ßÇÏ¸ç Á¡½É½Ã°£ÀÇ ÀÌº¥Æ®¸¦ ¿¹°íÇÕ´Ï´Ù.
  * 
- *  ì£¼ìš” ì´ë²¤íŠ¸
+ *  ÁÖ¿ä ÀÌº¥Æ®
  * ----------------------------------------------------------------------------
- * 1. ê¸°ìƒ ë° ë“±êµ - 2ì¼ì°¨ ì•„ì¹¨ì˜ ìƒì¾Œí•œ ê°ìƒê³¼ ë“±êµ
- * 2. ìºë¦­í„° ì¡°ìš° (Gate Encounter) - í˜¸ê°ë„ê°€ ê°€ì¥ ë†’ì€ íˆë¡œì¸ê³¼ ëŒ€ë©´ (ì„ íƒì  ë¶„ê¸°)
- * 3. ë©”ì‹œì§€ í”¼ë“œë°± - ì–´ì ¯ë°¤ ì£¼ê³ ë°›ì€ ë©”ì‹œì§€ì— ëŒ€í•œ ìºë¦­í„°ë“¤ì˜ ì‹¤ì œ ë°˜ì‘ ë° ëŒ€í™”
- * 4. ì„ ìƒë‹˜ê³¼ì˜ ë“±êµ£ê¸¸ (Free Talk) - ë‹´ì„ ì„ ìƒë‹˜ê³¼ì˜ ëŒ€í™” ë° ì—°ë½ì²˜ êµí™˜ ê¸°íšŒ
- * 5. ìœ ë‚˜ì˜ ìª½ì§€ ë°œê²¬ - ì ì‹¬ì‹œê°„ ë„ì„œê´€ ë’·ë§ˆë‹¹ìœ¼ë¡œì˜ ì´ˆëŒ€ í™•ì¸
+ * 1. ±â»ó ¹× µî±³ - 2ÀÏÂ÷ ¾ÆÄ§ÀÇ »óÄèÇÑ °¨»ó°ú µî±³
+ * 2. Ä³¸¯ÅÍ Á¶¿ì (Gate Encounter) - È£°¨µµ°¡ °¡Àå ³ôÀº È÷·ÎÀÎ°ú ´ë¸é (¼±ÅÃÀû ºĞ±â)
+ * 3. ¸Ş½ÃÁö ÇÇµå¹é - ¾îÁ¬¹ã ÁÖ°í¹ŞÀº ¸Ş½ÃÁö¿¡ ´ëÇÑ Ä³¸¯ÅÍµéÀÇ ½ÇÁ¦ ¹İÀÀ ¹× ´ëÈ­
+ * 4. ¼±»ı´Ô°úÀÇ µî±·±æ (Free Talk) - ´ãÀÓ ¼±»ı´Ô°úÀÇ ´ëÈ­ ¹× ¿¬¶ôÃ³ ±³È¯ ±âÈ¸
+ * 5. À¯³ªÀÇ ÂÊÁö ¹ß°ß - Á¡½É½Ã°£ µµ¼­°ü µŞ¸¶´çÀ¸·ÎÀÇ ÃÊ´ë È®ÀÎ
  * 
- *  ì¡°ê±´ í”Œë˜ê·¸ ì„¤ëª… (Condition Flags)
+ *  Á¶°Ç ÇÃ·¡±× ¼³¸í (Condition Flags)
  * ----------------------------------------------------------------------------
- * selectByHighestAffinity : í˜¸ê°ë„ê°€ ê°€ì¥ ë†’ì€ ìºë¦­í„°ë¥¼ ìë™ìœ¼ë¡œ ì„ íƒí•˜ëŠ” ì—”ì§„ ë¡œì§
- * sent_msg_day1_*      : 1ì¼ì°¨ ë°¤ì— ë©”ì‹œì§€ë¥¼ ë³´ëƒˆëŠ”ì§€ í™•ì¸ (ëŒ€ì‚¬ ë¶„ê¸°)
- * has_number_*         : ì—°ë½ì²˜ ë³´ìœ  ì—¬ë¶€ì— ë”°ë¥¸ ëŒ€í™” ì°¨ë³„í™”
- * dated_dain_day1      : 1ì¼ì°¨ ë°©ê³¼ í›„ ë‹¤ì¸ê³¼ ë°ì´íŠ¸í–ˆëŠ”ì§€ í™•ì¸
+ * selectByHighestAffinity : È£°¨µµ°¡ °¡Àå ³ôÀº Ä³¸¯ÅÍ¸¦ ÀÚµ¿À¸·Î ¼±ÅÃÇÏ´Â ¿£Áø ·ÎÁ÷
+ * sent_msg_day1_*      : 1ÀÏÂ÷ ¹ã¿¡ ¸Ş½ÃÁö¸¦ º¸³Â´ÂÁö È®ÀÎ (´ë»ç ºĞ±â)
+ * has_number_*         : ¿¬¶ôÃ³ º¸À¯ ¿©ºÎ¿¡ µû¸¥ ´ëÈ­ Â÷º°È­
+ * dated_dain_day1      : 1ÀÏÂ÷ ¹æ°ú ÈÄ ´ÙÀÎ°ú µ¥ÀÌÆ®Çß´ÂÁö È®ÀÎ
  * 
- *  ì„¤ì • í”Œë˜ê·¸ ì„¤ëª… (Set Flags)
+ *  ¼³Á¤ ÇÃ·¡±× ¼³¸í (Set Flags)
  * ----------------------------------------------------------------------------
- * has_number_teacher   : ë‹´ì„ ì„ ìƒë‹˜ì˜ ì—°ë½ì²˜ë¥¼ íšë“í•¨
- * has_any_contact      : ìµœì†Œ í•œ ëª… ì´ìƒì˜ ì—°ë½ì²˜ë¥¼ í™•ë³´í•¨
+ * has_number_teacher   : ´ãÀÓ ¼±»ı´ÔÀÇ ¿¬¶ôÃ³¸¦ È¹µæÇÔ
+ * has_any_contact      : ÃÖ¼Ò ÇÑ ¸í ÀÌ»óÀÇ ¿¬¶ôÃ³¸¦ È®º¸ÇÔ
  * 
- *  í˜¸ê°ë„ ë³€í™” (Stats Changes)
+ *  È£°¨µµ º¯È­ (Stats Changes)
  * ----------------------------------------------------------------------------
- * ì¡°ìš°í•œ íˆë¡œì¸ê³¼ì˜ ëŒ€í™” ì„ íƒì§€ì— ë”°ë¼ í˜¸ê°ë„ ìƒìŠ¹/í•˜ë½
+ * Á¶¿ìÇÑ È÷·ÎÀÎ°úÀÇ ´ëÈ­ ¼±ÅÃÁö¿¡ µû¶ó È£°¨µµ »ó½Â/ÇÏ¶ô
  * 
- *  íŠ¹ì´ ì‚¬í•­
+ *  Æ¯ÀÌ »çÇ×
  * ----------------------------------------------------------------------------
- * - selectByHighestAffinity: true - ë©€í‹° íˆë¡œì¸ ì‹œìŠ¤í…œì˜ í•µì‹¬ ì—”ì§„ ê¸°ëŠ¥ í™œìš©
- * - day2_check_note: ìœ ë‚˜ ë£¨íŠ¸ ì§„ì…ì„ ìœ„í•œ í•µì‹¬ ìŠ¤í† ë¦¬ íŠ¸ë¦¬ê±° ì´ë²¤íŠ¸
+ * - selectByHighestAffinity: true - ¸ÖÆ¼ È÷·ÎÀÎ ½Ã½ºÅÛÀÇ ÇÙ½É ¿£Áø ±â´É È°¿ë
+ * - day2_check_note: À¯³ª ·çÆ® ÁøÀÔÀ» À§ÇÑ ÇÙ½É ½ºÅä¸® Æ®¸®°Å ÀÌº¥Æ®
  * 
  * ============================================================================
  */
 
-// SCENARIO ì „ì—­ ê°ì²´ ì´ˆê¸°í™”
+// SCENARIO Àü¿ª °´Ã¼ ÃÊ±âÈ­
 if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 
-// Day 2 ì‹œë‚˜ë¦¬ì˜¤ ê·¸ë£¹ ì´ˆê¸°í™”
+// Day 2 ½Ã³ª¸®¿À ±×·ì ÃÊ±âÈ­
 if (!SCENARIO[2]) {
     SCENARIO[2] = {};
 }
 
 /**
- * [Day 2 - Morning] ì”¬ ë°ì´í„° ì •ì˜
+ * [Day 2 - Morning] ¾À µ¥ÀÌÅÍ Á¤ÀÇ
  */
 Object.assign(SCENARIO[2], {
     "day2_start": {
@@ -138,26 +138,26 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_meet_nurse_standard": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Oh, {name}! Good morning. You're looking quite lively today!\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_nurse_talk"
     },
     "day2_meet_nurse_high": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(She walks up and tidies my uniform with a gentle touch.) \"My dear transfer student, what kind of dream did you have to be so radiant? I actually overslept a bit because I was thinking about you.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 5 } },
         next: "day2_nurse_talk"
     },
     "day2_meet_nurse_low": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(She sighs and looks away as soon as she sees me.) \"Oh... it's you. It's a bit exhausting to see your face first thing in the morning. Head to class if you're done here.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(She leans in and gives me a playful wink.)",
         character: "assets/images/characters/nurse_normal.png",
         branches: [
@@ -167,19 +167,19 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_nurse_talk_msg": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"The message you sent last night was so sweet. It helped me sleep with a smile. If you feel tired today, you know where to find me.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk_has_number": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"You weren't up all night thinking about me, were you? Hehe, just kidding. If you need a break, the nurse's office is always open.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk_no_number": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Only your second day and you're already settling in. Don't push yourself too hard. Come visit me if you feel stressed.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
@@ -306,14 +306,14 @@ Object.assign(SCENARIO[2], {
         next: "day2_classroom"
     },
     "day2_meet_teacher": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Oh, {name}. Already settling in, I see. It's good to see you arriving early on your second day.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_teacher_free_talk"
     },
     "day2_teacher_free_talk": {
         type: "free_talk",
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"We still have some time before the bell. Anything on your mind?\"",
         context: "Meeting the homeroom teacher at the school gate and walking to the classroom together. Keep the conversation going actively until it's finished. After the conversation, the teacher will ask for the protagonist's contact information for the emergency contact list. ONLY at the final turn of the conversation, please find a timing to ask for the number or hint that there is official business to discuss.",
         personality: "A professional teacher who is strict about rules but has a soft spot for the protagonist.",
@@ -354,21 +354,21 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_teacher_contact_success_high": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Thanks, {name}! I used the emergency list as an excuse, but... I actually just wanted to be closer to you. Contact me if school gets tough, okay?\"",
         character: "assets/images/characters/teacher_smile.png",
         stats: { Teacher: { affinity: 15 } },
         next: "day2_classroom"
     },
     "day2_teacher_contact_success_low": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"...I see. Thank you. This is for official use only, so don't worry. Now, get to class before you're late.\"",
         character: "assets/images/characters/teacher_angry.png",
         stats: { Teacher: { affinity: 2 } },
         next: "day2_classroom"
     },
     "day2_teacher_contact_success_normal": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Thank you. I'll reach out if anything comes up. Now, let's head in.\"",
         character: "assets/images/characters/teacher_normal.png",
         stats: { Teacher: { affinity: 10 } },

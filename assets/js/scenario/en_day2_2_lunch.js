@@ -1,68 +1,68 @@
-ï»¿/**
+/**
  * ============================================================================
  * CUPID - Day 2 Lunch Scenario (English Version)
  * ============================================================================
  * 
- *  íŒŒì¼ ì •ë³´
+ *  ÆÄÀÏ Á¤º¸
  * ----------------------------------------------------------------------------
- * íŒŒì¼ëª…: en_day2_2_lunch.js
- * ì–¸ì–´: ì˜ì–´ (English)
- * ì¼ì°¨: Day 2 (2ì¼ì°¨)
- * ì‹œê°„ëŒ€: Lunch (ì ì‹¬)
+ * ÆÄÀÏ¸í: en_day2_2_lunch.js
+ * ¾ğ¾î: ¿µ¾î (English)
+ * ÀÏÂ÷: Day 2 (2ÀÏÂ÷)
+ * ½Ã°£´ë: Lunch (Á¡½É)
  * 
- *  ì‹œë‚˜ë¦¬ì˜¤ ê°œìš”
+ *  ½Ã³ª¸®¿À °³¿ä
  * ----------------------------------------------------------------------------
- * ì „í•™ 2ì¼ì°¨ ì ì‹¬ì‹œê°„ì˜ ë‹¤ì–‘í•œ í™œë™ì„ ë‹¤ë£¹ë‹ˆë‹¤. ë³¸ê²©ì ìœ¼ë¡œ ìºë¦­í„° ê°„ì˜ ê°ˆë“±
- * (ì„œì—° vs ë‹¤ì¸)ì´ ë°œìƒí•˜ë©°, ìœ ë‚˜ ë£¨íŠ¸ë¥¼ í†µí•´ í•™êµì˜ ë¹„ë°€ì— í•œ ê±¸ìŒ ë‹¤ê°€ê°€ëŠ” 
- * ì¤‘ìš”í•œ ë¶„ê¸°ì ì…ë‹ˆë‹¤. ë³´ê±´ì‹¤ ë£¨íŠ¸ì—ì„œëŠ” ê¸´ ìˆ˜ë©´ì„ í†µí•´ ë°©ê³¼ í›„ ì‹œê°„ëŒ€ë¡œ ì§ì ‘ 
- * ì´ë™í•˜ëŠ” íŠ¹ìˆ˜ ì—°ì¶œì´ í¬í•¨ë˜ì–´ ìˆìŠµë‹ˆë‹¤.
+ * ÀüÇĞ 2ÀÏÂ÷ Á¡½É½Ã°£ÀÇ ´Ù¾çÇÑ È°µ¿À» ´Ù·ì´Ï´Ù. º»°İÀûÀ¸·Î Ä³¸¯ÅÍ °£ÀÇ °¥µî
+ * (¼­¿¬ vs ´ÙÀÎ)ÀÌ ¹ß»ıÇÏ¸ç, À¯³ª ·çÆ®¸¦ ÅëÇØ ÇĞ±³ÀÇ ºñ¹Ğ¿¡ ÇÑ °ÉÀ½ ´Ù°¡°¡´Â 
+ * Áß¿äÇÑ ºĞ±âÁ¡ÀÔ´Ï´Ù. º¸°Ç½Ç ·çÆ®¿¡¼­´Â ±ä ¼ö¸éÀ» ÅëÇØ ¹æ°ú ÈÄ ½Ã°£´ë·Î Á÷Á¢ 
+ * ÀÌµ¿ÇÏ´Â Æ¯¼ö ¿¬ÃâÀÌ Æ÷ÇÔµÇ¾î ÀÖ½À´Ï´Ù.
  * 
- *  ì£¼ìš” ì´ë²¤íŠ¸
+ *  ÁÖ¿ä ÀÌº¥Æ®
  * ----------------------------------------------------------------------------
- * 1. ì ì‹¬ ì¥ì†Œ ì„ íƒ - ì„œì—°(í•™ìƒíšŒì‹¤), ìœ ë‚˜(ë„ì„œê´€ ë’·ë§ˆë‹¹), ë‹¤ì¸(ì²´ìœ¡ê´€/ë§¤ì ), ë³´ê±´ì‹¤, êµë¬´ì‹¤
- * 2. ì„œì—° ë£¨íŠ¸ - ì§ì ‘ ë§Œë“  ìƒŒë“œìœ„ì¹˜ ì‹œì‹, ì°½ë°–ì˜ ë‹¤ì¸ê³¼ ì¡°ìš°í•˜ë©° ë°œìƒí•˜ëŠ” ë¬˜í•œ ì§ˆíˆ¬ì‹¬
- * 3. ìœ ë‚˜ ë£¨íŠ¸ - ìª½ì§€ ì•½ì† ì´í–‰, í•™êµì˜ ë¹„ë°€ ì–¸ê¸‰, êµ¬ê´€ ì°½ê³  ë°©ë¬¸ ë° í˜¸ê°ë„ ë¶„ê¸°
- * 4. ë‹¤ì¸ ë£¨íŠ¸ - ë§¤ì ì—ì„œì˜ ê°„ì‹ ìŸíƒˆì „, ì„œì—°ê³¼ì˜ ìš°ì—°í•œ ë§Œë‚¨ ë° ì£¼ì¸ê³µì„ ë‘˜ëŸ¬ì‹¼ ê¸°ì‹¸ì›€
- * 5. ë³´ê±´ì‹¤ ë£¨íŠ¸ - ë‘í†µìœ¼ë¡œ ì¸í•œ íœ´ì‹, ì˜¤í›„ ìˆ˜ì—… ìŠ¤í‚µ, ë…¸ì„ ì§ˆ ë•Œê¹Œì§€ì˜ ê¸´ ìˆ˜ë©´, ë³´ê±´ìƒ˜ì˜ ëŒ€ë‹´í•œ ìœ í˜¹
+ * 1. Á¡½É Àå¼Ò ¼±ÅÃ - ¼­¿¬(ÇĞ»ıÈ¸½Ç), À¯³ª(µµ¼­°ü µŞ¸¶´ç), ´ÙÀÎ(Ã¼À°°ü/¸ÅÁ¡), º¸°Ç½Ç, ±³¹«½Ç
+ * 2. ¼­¿¬ ·çÆ® - Á÷Á¢ ¸¸µç »÷µåÀ§Ä¡ ½Ã½Ä, Ã¢¹ÛÀÇ ´ÙÀÎ°ú Á¶¿ìÇÏ¸ç ¹ß»ıÇÏ´Â ¹¦ÇÑ ÁúÅõ½É
+ * 3. À¯³ª ·çÆ® - ÂÊÁö ¾à¼Ó ÀÌÇà, ÇĞ±³ÀÇ ºñ¹Ğ ¾ğ±Ş, ±¸°ü Ã¢°í ¹æ¹® ¹× È£°¨µµ ºĞ±â
+ * 4. ´ÙÀÎ ·çÆ® - ¸ÅÁ¡¿¡¼­ÀÇ °£½Ä ÀïÅ»Àü, ¼­¿¬°úÀÇ ¿ì¿¬ÇÑ ¸¸³² ¹× ÁÖÀÎ°øÀ» µÑ·¯½Ñ ±â½Î¿ò
+ * 5. º¸°Ç½Ç ·çÆ® - µÎÅëÀ¸·Î ÀÎÇÑ ÈŞ½Ä, ¿ÀÈÄ ¼ö¾÷ ½ºÅµ, ³ëÀ» Áú ¶§±îÁöÀÇ ±ä ¼ö¸é, º¸°Ç»ùÀÇ ´ë´ãÇÑ À¯È¤
  * 
- *  ì¡°ê±´ í”Œë˜ê·¸ ì„¤ëª… (Condition Flags)
+ *  Á¶°Ç ÇÃ·¡±× ¼³¸í (Condition Flags)
  * ----------------------------------------------------------------------------
- * met_*                : í•´ë‹¹ íˆë¡œì¸ì„ ì´ë¯¸ ë§Œë‚¬ëŠ”ì§€ ì—¬ë¶€ (ì´ˆë©´/êµ¬ë©´ ëŒ€ì‚¬ ë¶„ê¸°)
- * day2_ate_lunch_seoyeon: ì„œì—°ê³¼ ë°©ê¸ˆ ì ì‹¬ì„ ë¨¹ì—ˆëŠ”ì§€ í™•ì¸ (ë§¤ì ì—ì„œ ì„œì—° ì¡°ìš° ì‹œ í™œìš©)
- * has_number_*         : ì—°ë½ì²˜ ë³´ìœ  ì—¬ë¶€ì— ë”°ë¥¸ ì—°ë½ì²˜ êµí™˜ ì œì•ˆ ë¶„ê¸°
+ * met_*                : ÇØ´ç È÷·ÎÀÎÀ» ÀÌ¹Ì ¸¸³µ´ÂÁö ¿©ºÎ (ÃÊ¸é/±¸¸é ´ë»ç ºĞ±â)
+ * day2_ate_lunch_seoyeon: ¼­¿¬°ú ¹æ±İ Á¡½ÉÀ» ¸Ô¾ú´ÂÁö È®ÀÎ (¸ÅÁ¡¿¡¼­ ¼­¿¬ Á¶¿ì ½Ã È°¿ë)
+ * has_number_*         : ¿¬¶ôÃ³ º¸À¯ ¿©ºÎ¿¡ µû¸¥ ¿¬¶ôÃ³ ±³È¯ Á¦¾È ºĞ±â
  * 
- *  ì„¤ì • í”Œë˜ê·¸ ì„¤ëª… (Set Flags)
+ *  ¼³Á¤ ÇÃ·¡±× ¼³¸í (Set Flags)
  * ----------------------------------------------------------------------------
- * met_* / knows_name_* : íˆë¡œì¸ê³¼ì˜ ì²« ë§Œë‚¨ ë° ì´ë¦„ íšë“ ê¸°ë¡
- * day2_ate_lunch_seoyeon: ì„œì—°ê³¼ ì ì‹¬ì„ ë¨¹ì—ˆìŒì„ ê¸°ë¡
- * visited_warehouse_at_lunch: ìœ ë‚˜ì™€ ì°½ê³ ë¥¼ ë°©ë¬¸í–ˆìŒì„ ê¸°ë¡
- * day2_met_*_lunch     : ì ì‹¬ì‹œê°„ì— íŠ¹ì • íˆë¡œì¸ê³¼ ì‹œê°„ì„ ë³´ëƒˆìŒì„ ê¸°ë¡
- * invited_nurse_home   : ë³´ê±´ ì„ ìƒë‹˜ì—ê²Œ ì§‘ìœ¼ë¡œ ì´ˆëŒ€ë°›ì•˜ìŒì„ ê¸°ë¡ (íŠ¹ìˆ˜ ì´ë²¤íŠ¸)
+ * met_* / knows_name_* : È÷·ÎÀÎ°úÀÇ Ã¹ ¸¸³² ¹× ÀÌ¸§ È¹µæ ±â·Ï
+ * day2_ate_lunch_seoyeon: ¼­¿¬°ú Á¡½ÉÀ» ¸Ô¾úÀ½À» ±â·Ï
+ * visited_warehouse_at_lunch: À¯³ª¿Í Ã¢°í¸¦ ¹æ¹®ÇßÀ½À» ±â·Ï
+ * day2_met_*_lunch     : Á¡½É½Ã°£¿¡ Æ¯Á¤ È÷·ÎÀÎ°ú ½Ã°£À» º¸³ÂÀ½À» ±â·Ï
+ * invited_nurse_home   : º¸°Ç ¼±»ı´Ô¿¡°Ô ÁıÀ¸·Î ÃÊ´ë¹Ş¾ÒÀ½À» ±â·Ï (Æ¯¼ö ÀÌº¥Æ®)
  * 
- *  í˜¸ê°ë„ ë³€í™” (Stats Changes)
+ *  È£°¨µµ º¯È­ (Stats Changes)
  * ----------------------------------------------------------------------------
- * ì„ íƒì§€ì— ë”°ë¼ ê° íˆë¡œì¸ê³¼ì˜ í˜¸ê°ë„ê°€ í¬ê²Œ ë³€ë™ (íŠ¹íˆ ì‚¼ìëŒ€ë©´ ìƒí™© ì£¼ì˜)
+ * ¼±ÅÃÁö¿¡ µû¶ó °¢ È÷·ÎÀÎ°úÀÇ È£°¨µµ°¡ Å©°Ô º¯µ¿ (Æ¯È÷ »ïÀÚ´ë¸é »óÈ² ÁÖÀÇ)
  * 
- *  íŠ¹ì´ ì‚¬í•­
+ *  Æ¯ÀÌ »çÇ×
  * ----------------------------------------------------------------------------
- * - ë³´ê±´ì‹¤ ë£¨íŠ¸: `sunset: true` ì†ì„±ì„ í†µí•´ ì ì‹¬ì‹œê°„ì—ì„œ ë°”ë¡œ ë°©ê³¼ í›„(ë…¸ì„)ë¡œ ì‹œê°„ëŒ€ ì „í™˜
- * - type: "free_talk": ìœ ë‚˜, ë‹¤ì¸, ë³´ê±´ ì„ ìƒë‹˜ê³¼ì˜ ì‹¬ë„ ê¹Šì€ ëŒ€í™”ë¥¼ ìœ„í•œ AI ëª¨ë“ˆ í™œìš©
+ * - º¸°Ç½Ç ·çÆ®: `sunset: true` ¼Ó¼ºÀ» ÅëÇØ Á¡½É½Ã°£¿¡¼­ ¹Ù·Î ¹æ°ú ÈÄ(³ëÀ»)·Î ½Ã°£´ë ÀüÈ¯
+ * - type: "free_talk": À¯³ª, ´ÙÀÎ, º¸°Ç ¼±»ı´Ô°úÀÇ ½Éµµ ±íÀº ´ëÈ­¸¦ À§ÇÑ AI ¸ğµâ È°¿ë
  * 
  * ============================================================================
  */
 
-// SCENARIO ì „ì—­ ê°ì²´ ì´ˆê¸°í™”
+// SCENARIO Àü¿ª °´Ã¼ ÃÊ±âÈ­
 if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 
-// Day 2 ì‹œë‚˜ë¦¬ì˜¤ ê·¸ë£¹ ì´ˆê¸°í™”
+// Day 2 ½Ã³ª¸®¿À ±×·ì ÃÊ±âÈ­
 if (!SCENARIO[2]) {
     SCENARIO[2] = {};
 }
 
 /**
- * [Day 2 - Lunch] ì”¬ ë°ì´í„° ì •ì˜
+ * [Day 2 - Lunch] ¾À µ¥ÀÌÅÍ Á¤ÀÇ
  */
 Object.assign(SCENARIO[2], {
     "day2_lunch_time": {
@@ -87,13 +87,13 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_teacher_2"
     },
     "day2_lunch_teacher_2": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Oh, {name}! Did you have a good lunch? I was just about to start mine.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_lunch_teacher_3"
     },
     "day2_lunch_teacher_3": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Did you come all this way just to eat with me? Hehe, just kidding.\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
@@ -103,19 +103,19 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_lunch_teacher_eat": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"My, my... you're a bold student, aren't you? Fine, I'll share some. Here, say 'Ah~'.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_food": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Hehe, my mother is quite the cook. I'd love to let you taste her cooking properly sometime.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_pass": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Is that so? Well, thank you for stopping by. Have a great lunch break!\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_lunch_teacher_end"
@@ -874,7 +874,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_talk"
     },
     "day2_lunch_nurse_talk": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Oh my, hello? Coming to the nurse's office during lunch, are you not feeling well?\"",
         character: "assets/images/characters/nurse_normal.png",
         branches: [
@@ -883,7 +883,7 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_lunch_nurse_met": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Oh my, isn't this our {name}? Are you feeling sick, or is your heart racing from wanting to see me?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
@@ -897,7 +897,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_met_high": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(The teacher smiles subtly looking at my face.) \"Hehe, {name}. You're here again? Goodness... you're the only student who visits me this often.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
@@ -905,21 +905,21 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_met_normal": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Oh my, {name}. The nurse's office during lunch... are you not feeling well?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_met_low": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(The teacher looks at me and tilts her head as if unsure.) \"Uh... {name}, right? Are you sick? Come in.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_new": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Oh my, a face I haven't seen before? Are you the new transfer student? I'm the school nurse.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
@@ -927,7 +927,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_new_name_ask"
     },
     "day2_lunch_nurse_new_name_ask": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"By the way, what's your name? Will you tell just me?\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_new_name_share"
@@ -940,14 +940,14 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_3"
     },
     "day2_lunch_nurse_3": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(The teacher guides me to the bed with a soft smile. The gentle herbal scent soothes my nerves.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_4"
     },
     "day2_lunch_nurse_4": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Here, lie down comfortably. Let me see what's bothering you.\"",
         character: "assets/images/characters/nurse_normal.png",
         choices: [
@@ -957,21 +957,21 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_lunch_nurse_trap": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(The smile instantly vanishes from the teacher's face. The air in the nurse's office turns heavy and cold.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_angry.png",
         next: "day2_lunch_nurse_trap_2"
     },
     "day2_lunch_nurse_trap_2": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"My... {name}, I must have been too lenient with you. Such rude comments to an adult don't sound like a joke. Would you please leave today? I'm in a terrible mood now.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_angry.png",
         next: "day2_afternoon_class"
     },
     "day2_lunch_nurse_head": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Sounds like tension headache. Take this and get some good sleep, you'll feel better.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
@@ -981,14 +981,14 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_lunch_nurse_head_tease": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"My... {name}, you're really something, aren't you? Alright, say 'ah'. Good students deserve rewards, right?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_rest": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Hehe, sometimes you have days like that. Lie down comfortably here with the curtain drawn. By the way... {name}, you have such strong energy. Just looking at you makes my body feel hot.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
@@ -1012,7 +1012,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_sleep_teacher"
     },
     "day2_lunch_nurse_sleep_teacher": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(I faintly hear the teacher's voice.) \"...Yes, homeroom teacher. The student {name} isn't feeling well so I let them skip afternoon classes.\"",
         background: "assets/images/background/nurse_room.jpg",
         characters: {
@@ -1022,7 +1022,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_sleep_teacher_2"
     },
     "day2_lunch_nurse_sleep_teacher_2": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(The voice gets a bit lower.) \"...What? You want to come pick them up yourself? Hehe, it's fine. This is my domain. I'll take good care of them, I promise.\"",
         background: "assets/images/background/nurse_room.jpg",
         characters: {
@@ -1032,7 +1032,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_sleep_teacher_3"
     },
     "day2_lunch_nurse_sleep_teacher_3": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(Sound of hanging up the phone.) \"...Hehe, the homeroom teacher too. It's nice that she cares about her students... but in the nurse's office, I'm the law.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
@@ -1054,7 +1054,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_nurse_wake_2"
     },
     "day2_lunch_nurse_wake_2": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"(The teacher smiles softly.) Oh my, you're awake? You slept so soundly. I already notified your homeroom teacher about the afternoon classes, so don't worry. It's almost time to go home. How are you feeling?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
@@ -1063,7 +1063,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_wake_free_talk": {
         type: "free_talk",
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Hehe, you still look sleepy. Want to chat with me a bit before going home?\"",
         context: "In the nurse's office at sunset, the protagonist just woke up and is alone with the nurse. Keep the conversation going actively until it's finished. After the conversation, the nurse will offer her number and tease about contacting her at night. ONLY at the final turn, hint that it's time to go home or suggest private contact.",
         personality: "Languid and seductive yet caring school nurse. Feels a peculiar attraction to the protagonist and boldly flirts with daring confidence.",
@@ -1214,28 +1214,28 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "nurse_contact_success_high": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(She writes her number on the back of my hand and winks.) \"Hehe, this number... don't lose it, okay? I'm already looking forward to what message you'll send tonight.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 15 } },
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_success_low": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"...Here. Only for emergencies. If you send nonsense at dawn, I'll block you immediately, so be careful.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 5 } },
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_success": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(She smiles seductively and saves the number.) \"Hehe, then I'll be waiting for you at night? If you're slow to reply, I might get upset.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 18 } },
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_success_high": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(She wraps her arms around my neck and breathes hotly in my ear.) \"My... {name}. You really have no patience, do you? Alright, tonight... I'll invite you to my secret room. Just the two of us... let's have a very deep conversation.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 20 } },
@@ -1243,7 +1243,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_success_low": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"...Are you in your right mind? How dare you make such a joke to a teacher... Write a reflection today. I'll give you my number, but don't even think about coming near my house.\"",
         character: "assets/images/characters/nurse_angry.png",
         stats: { Nurse: { affinity: -10 } },
@@ -1251,7 +1251,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_success": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(The teacher's eyes widen, then she gives a seductive smile and whispers in my ear.) \"My... {name}, you're much bolder than I thought? Alright, want to come to my house tonight? I'll give you the address. But... it's our secret from your parents?\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 15 } },
@@ -1259,27 +1259,27 @@ Object.assign(SCENARIO[2], {
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_fail_high": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(The teacher lightly pinches my cheek and laughs.) \"Hehe, you're really forward! But the teacher needs some preparation today too... Let's settle for the number for now?\"",
         character: "assets/images/characters/nurse_normal.png",
         setFlags: ["has_number_nurse", "has_any_contact"],
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_fail_low": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Watch your mouth. Say that one more time and I'll ban you from the nurse's office.\"",
         character: "assets/images/characters/nurse_angry.png",
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_fail": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(The teacher bursts into giggles.) \"My goodness {name}! You're so cute. But my house is a bit early, don't you think? Let's exchange numbers first.\"",
         character: "assets/images/characters/nurse_normal.png",
         setFlags: ["has_number_nurse", "has_any_contact"],
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_fail": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(The teacher pouts a bit.) \"Tch... Playing hard to get? Alright. Tell me if you change your mind.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_afternoon_nurse_skip"
