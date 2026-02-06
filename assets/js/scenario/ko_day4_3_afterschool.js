@@ -152,7 +152,7 @@ Object.assign(SCENARIO[4], {
         character: "assets/images/characters/seyoun_shy.png",
         sunset: true,
         stats: { Seoyeon: { affinity: 20 } },
-        setFlag: "day4_confession_accepted",
+        setFlags: ["day4_confession_accepted", "isDating_Seoyeon"],
         next: "day4_after_confess"
     },
 
@@ -163,7 +163,7 @@ Object.assign(SCENARIO[4], {
         character: "assets/images/characters/yuna_shy.png",
         sunset: true,
         stats: { Yuna: { affinity: 20 } },
-        setFlag: "day4_confession_accepted",
+        setFlags: ["day4_confession_accepted", "isDating_Yuna"],
         next: "day4_after_confess"
     },
 
@@ -174,7 +174,7 @@ Object.assign(SCENARIO[4], {
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
         stats: { Dain: { affinity: 20 } },
-        setFlag: "day4_confession_accepted",
+        setFlags: ["day4_confession_accepted", "isDating_Dain"],
         next: "day4_after_confess"
     },
 
@@ -185,7 +185,7 @@ Object.assign(SCENARIO[4], {
         character: "assets/images/characters/nurse_shy.png",
         sunset: true,
         stats: { Nurse: { affinity: 20 } },
-        setFlag: "day4_confession_accepted",
+        setFlags: ["day4_confession_accepted", "isDating_Nurse"],
         next: "day4_after_confess"
     },
 
@@ -196,7 +196,7 @@ Object.assign(SCENARIO[4], {
         character: "assets/images/characters/teacher_shy.png",
         sunset: true,
         stats: { Teacher: { affinity: 20 } },
-        setFlag: "day4_confession_accepted",
+        setFlags: ["day4_confession_accepted", "isDating_Teacher"],
         next: "day4_after_confess"
     },
 

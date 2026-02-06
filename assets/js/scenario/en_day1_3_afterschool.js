@@ -3,67 +3,67 @@
  * CUPID - Day 1 After School Scenario (English Version)
  * ============================================================================
  * 
- *  파일 정보
+ *  ?�일 ?�보
  * ----------------------------------------------------------------------------
- * 파일명: en_day1_3_afterschool.js
- * 언어: 영어 (English)
- * 일차: Day 1 (1일차)
- * 시간대: After School (방과 후)
+ * ?�일�? en_day1_3_afterschool.js
+ * ?�어: ?�어 (English)
+ * ?�차: Day 1 (1?�차)
+ * ?�간?�: After School (방과 ??
  * 
- *  시나리오 개요
+ *  ?�나리오 개요
  * ----------------------------------------------------------------------------
- * 전학 첫날 일과가 끝난 후의 활동을 다룹니다. 학교 곳곳을 자유롭게 탐색하며
- * 히로인들의 방과 후 활동에 참여하거나, 담임 선생님과의 상담, 혹은 바로 귀가하는 
- * 경로를 선택할 수 있습니다. 각 장소에서의 활동은 호감도와 향후 연락처 확인 
- * 이벤트에 큰 영향을 미칩니다.
+ * ?�학 첫날 ?�과가 ?�난 ?�의 ?�동???�룹?�다. ?�교 곳곳???�유�?�� ?�색?�며
+ * ?�로?�들??방과 ???�동??참여?�거?? ?�임 ?�생?�과???�담, ?��? 바로 귀가?�는 
+ * 경로�??�택?????�습?�다. �??�소?�서???�동?� ?�감?��? ?�후 ?�락�??�인 
+ * ?�벤?�에 ???�향??미칩?�다.
  * 
- *  주요 이벤트
+ *  주요 ?�벤??
  * ----------------------------------------------------------------------------
- * 1. 장소 선택 - 학생회실(서연), 도서관(유나), 체육관(다인), 보건실(보건샘), 교무실(담임샘), 귀가
- * 2. 서연의 학생회 업무 - 서류 정리 돕기, 카페 데이트 제안, 연락처 교환
- * 3. 유나의 도서관 별관 - 학교의 진실에 대한 경고, 유나와의 정서적 교감, 연락처 교환
- * 4. 다인의 배구부 연습 - 응원 또는 연습 돕기(체력 중시), 떡볶이 데이트, 연락처 교환
- * 5. 보건 선생님/담임 선생님 - 상담 및 사적인 대화, 연락처 교환 기회
- * 6. 하교 및 편의점 - 일과 마무리 및 내일을 위한 휴식
+ * 1. ?�소 ?�택 - ?�생?�실(?�연), ?�서관(?�나), 체육관(?�인), 보건??보건??, 교무???�임??, 귀가
+ * 2. ?�연???�생???�무 - ?�류 ?�리 ?�기, 카페 ?�이???�안, ?�락�?교환
+ * 3. ?�나???�서관 별�? - ?�교??진실???�??경고, ?�나?�???�서??교감, ?�락�?교환
+ * 4. ?�인??배구부 ?�습 - ?�원 ?�는 ?�습 ?�기(체력 중시), ?�볶???�이?? ?�락�?교환
+ * 5. 보건 ?�생???�임 ?�생??- ?�담 �??�적???�?? ?�락�?교환 기회
+ * 6. ?�교 �??�의??- ?�과 마무�?�??�일???�한 ?�식
  * 
- *  조건 플래그 설명 (Condition Flags)
+ *  조건 ?�래�??�명 (Condition Flags)
  * ----------------------------------------------------------------------------
- * met_*                : 점심시간에 해당 히로인을 만났는지 확인 (구면/초면 대사 분기)
- * has_number_*         : 이미 연락처를 가지고 있는지 확인 (중복 교환 방지)
+ * met_*                : ?�심?�간???�당 ?�로?�을 만났?��? ?�인 (구면/초면 ?�??분기)
+ * has_number_*         : ?��? ?�락처�? 가지�??�는지 ?�인 (중복 교환 방�?)
  * 
- *  설정 플래그 설명 (Set Flags)
+ *  ?�정 ?�래�??�명 (Set Flags)
  * ----------------------------------------------------------------------------
- * met_*                : (초면인 경우) 히로인과 처음 만났음을 기록
- * knows_name_*         : 히로인의 이름을 알게 됨
- * helped_seoyeon       : 서연의 업무를 도와주었음을 기록
- * dated_*_day1         : 방과 후 특정 히로인과 데이트(카페 등)를 했음을 기록
- * has_number_*         : 특정 히로인의 연락처를 획득함
- * has_any_contact      : 최소 한 명 이상의 연락처를 확보함
+ * met_*                : (초면??경우) ?�로?�과 처음 만났?�을 기록
+ * knows_name_*         : ?�로?�의 ?�름???�게 ??
+ * helped_seoyeon       : ?�연???�무�??��?주었?�을 기록
+ * dated_*_day1         : 방과 ???�정 ?�로?�과 ?�이??카페 ??�??�음??기록
+ * has_number_*         : ?�정 ?�로?�의 ?�락처�? ?�득??
+ * has_any_contact      : 최소 ??�??�상???�락처�? ?�보??
  * 
- *  호감도 변화 (Stats Changes)
+ *  ?�감??변??(Stats Changes)
  * ----------------------------------------------------------------------------
- * 모든 히로인들에 대해 선택지에 따라 호감도 상승/하락 가능
+ * 모든 ?�로?�들???�???�택지???�라 ?�감???�승/?�락 가??
  * 
- *  특이 사항
+ *  ?�이 ?�항
  * ----------------------------------------------------------------------------
- * - sunset: true - 방과 후 노을 분위기 연출을 위한 전역 배경 속성
- * - excludeCondition: 특정 조건을 만족하지 않을 때만 실행되는 분기 활용
+ * - sunset: true - 방과 ???�을 분위�??�출???�한 ?�역 배경 ?�성
+ * - excludeCondition: ?�정 조건??만족?��? ?�을 ?�만 ?�행?�는 분기 ?�용
  * 
  * ============================================================================
  */
 
-// SCENARIO 전역 객체 초기화
+// SCENARIO ?�역 객체 초기??
 if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 
-// Day 1 시나리오 그룹 초기화
+// Day 1 ?�나리오 그룹 초기??
 if (!SCENARIO[1]) {
     SCENARIO[1] = {};
 }
 
 /**
- * [Day 1 - After School] 씬 데이터 정의
+ * [Day 1 - After School] ???�이???�의
  */
 Object.assign(SCENARIO[1], {
     "after_school_start": {
@@ -106,14 +106,14 @@ Object.assign(SCENARIO[1], {
         next: "after_teacher_2"
     },
     "after_teacher_2": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Oh, {name}! What brings you here so late?\"",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "after_teacher_3"
     },
     "after_teacher_3": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"You must have many questions since it's your first day. Is there anything on your mind?\"",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
@@ -124,28 +124,28 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_teacher_help": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Hehe, that's sweet of you. But this is my job. You should go home and rest, {name}.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact_ask"
     },
     "after_teacher_miss": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Oh my... you're really something. It's a bit embarrassing, but I'm glad you came... Hehe.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact_ask"
     },
     "after_teacher_info": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"This school has a long history. There are many hidden places. I'll show you around sometime.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "after_teacher_contact_ask"
     },
     "after_teacher_contact": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Oh, by the way. Contact me if anything urgent comes up. Let me give you my number.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
@@ -155,7 +155,7 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_teacher_contact_ask": {
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "\"Here's my number. Make sure to save it.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
@@ -966,7 +966,7 @@ Object.assign(SCENARIO[1], {
         next: "after_home"
     },
     "after_nurse": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "(Opening the nurse's office door, the teacher is drinking tea by the window and smiles when she sees me.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
@@ -982,14 +982,14 @@ Object.assign(SCENARIO[1], {
         next: "after_nurse_new_2"
     },
     "after_nurse_new_2": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"My, a face I haven't seen before? Are you the new transfer student? I'm the school nurse. Are you here because something hurts?\"",
         character: "assets/images/characters/nurse_normal.png",
         setFlag: "met_nurse",
         next: "after_nurse_new_name_ask"
     },
     "after_nurse_new_name_ask": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"By the way, what's your name? Will you tell just me?\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "after_nurse_new_name_share"
@@ -1001,13 +1001,13 @@ Object.assign(SCENARIO[1], {
         next: "nurse_after_day1_contact"
     },
     "after_nurse_2": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"{name}! Came to see me before going home? What a sweet student.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "nurse_after_day1_contact"
     },
     "nurse_after_day1_contact": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Here, have a seat. Let me pour you some warm tea. Want to chat with me a bit more?\"",
         character: "assets/images/characters/nurse_normal.png",
         branches: [
@@ -1025,19 +1025,19 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "nurse_after_day1_contact_already_stay": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Hehe, good student. It must have been tiring being your first day. Rest here with me for a bit.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "nurse_after_day1_contact_already_stay_2"
     },
     "nurse_after_day1_contact_already_stay_2": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"...Alright, time to head out soon. Contact me anytime if you need anything, okay?\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "after_home"
     },
     "nurse_after_day1_contact_already_leave": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Okay, don't push yourself. Contact me anytime if you need anything, okay? Get home safely.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "after_home"
@@ -1052,13 +1052,13 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "nurse_after_day1_contact_stay": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Hehe, good student. It must have been tiring being your first day. Rest here with me for a bit.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "nurse_after_day1_contact_stay_2"
     },
     "nurse_after_day1_contact_stay_2": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"...Alright, time to head out soon. {name}, just in case, save my number? Contact me anytime if you're sick or have worries.\"",
         character: "assets/images/characters/nurse_normal.png",
         choices: [
@@ -1067,7 +1067,7 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "nurse_after_day1_contact_2": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Leaving already? Too bad... {name}, just in case, save my number? Contact me anytime if you're sick or have worries.\"",
         character: "assets/images/characters/nurse_normal.png",
         choices: [
@@ -1076,14 +1076,14 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "nurse_after_day1_contact_success": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Hehe, good student. Then I'll text you tonight? Take care, {name}.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 10 } },
         next: "after_home"
     },
     "nurse_after_day1_contact_fail": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Oh my, playing hard to get? Alright. Tell me if you change your mind. Get home safely!\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "after_home"

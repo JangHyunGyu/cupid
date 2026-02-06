@@ -1,69 +1,69 @@
-ï»¿/**
+/**
  * ============================================================================
  * CUPID - Day 2 Night Scenario (English Version)
  * ============================================================================
  * 
- *  íŒŒì¼ ì •ë³´
+ *  ÆÄÀÏ Á¤º¸
  * ----------------------------------------------------------------------------
- * íŒŒì¼ëª…: en_day2_4_night.js
- * ì–¸ì–´: ì˜ì–´ (English)
- * ì¼ì°¨: Day 2 (2ì¼ì°¨)
- * ì‹œê°„ëŒ€: Night (ë°¤)
+ * ÆÄÀÏ¸í: en_day2_4_night.js
+ * ¾ğ¾î: ¿µ¾î (English)
+ * ÀÏÂ÷: Day 2 (2ÀÏÂ÷)
+ * ½Ã°£´ë: Night (¹ã)
  * 
- *  ì‹œë‚˜ë¦¬ì˜¤ ê°œìš”
+ *  ½Ã³ª¸®¿À °³¿ä
  * ----------------------------------------------------------------------------
- * ì „í•™ 2ì¼ì°¨ ë°¤ì˜ ì¼ê³¼ì™€ ë©”ì‹œì§€ ì‹œìŠ¤í…œì„ ë‹¤ë£¹ë‹ˆë‹¤. ë‚® ë™ì•ˆ íšë“í•œ ì—°ë½ì²˜ë¥¼ í†µí•´ 
- * íˆë¡œì¸ë“¤ê³¼ ì‹¬ë„ ê¹Šì€ ë°¤ì˜ ëŒ€í™”ë¥¼ ë‚˜ëˆŒ ìˆ˜ ìˆìœ¼ë©°, ë³´ê±´ ì„ ìƒë‹˜ì˜ íŠ¹ë³„í•œ ì´ˆëŒ€ë¥¼ 
- * ë°›ì•˜ì„ ê²½ìš° ì§‘ìœ¼ë¡œ ë°©ë¬¸í•˜ëŠ” ì´ë²¤íŠ¸ê°€ ë°œìƒí•©ë‹ˆë‹¤. í˜„ì¬ ê°œë°œëœ ì˜ì–´ ì‹œë‚˜ë¦¬ì˜¤ì˜ 
- * ë§ˆì§€ë§‰ êµ¬ê°„ìœ¼ë¡œ, 2ì¼ê¹Œì§€ì˜ ì—¬ì •ì„ ë§ˆë¬´ë¦¬í•˜ëŠ” ê²°ë§ë¶€ê°€ í¬í•¨ë˜ì–´ ìˆìŠµë‹ˆë‹¤.
+ * ÀüÇĞ 2ÀÏÂ÷ ¹ãÀÇ ÀÏ°ú¿Í ¸Ş½ÃÁö ½Ã½ºÅÛÀ» ´Ù·ì´Ï´Ù. ³· µ¿¾È È¹µæÇÑ ¿¬¶ôÃ³¸¦ ÅëÇØ 
+ * È÷·ÎÀÎµé°ú ½Éµµ ±íÀº ¹ãÀÇ ´ëÈ­¸¦ ³ª´­ ¼ö ÀÖÀ¸¸ç, º¸°Ç ¼±»ı´ÔÀÇ Æ¯º°ÇÑ ÃÊ´ë¸¦ 
+ * ¹Ş¾ÒÀ» °æ¿ì ÁıÀ¸·Î ¹æ¹®ÇÏ´Â ÀÌº¥Æ®°¡ ¹ß»ıÇÕ´Ï´Ù. ÇöÀç °³¹ßµÈ ¿µ¾î ½Ã³ª¸®¿ÀÀÇ 
+ * ¸¶Áö¸· ±¸°£À¸·Î, 2ÀÏ±îÁöÀÇ ¿©Á¤À» ¸¶¹«¸®ÇÏ´Â °á¸»ºÎ°¡ Æ÷ÇÔµÇ¾î ÀÖ½À´Ï´Ù.
  * 
- *  ì£¼ìš” ì´ë²¤íŠ¸
+ *  ÁÖ¿ä ÀÌº¥Æ®
  * ----------------------------------------------------------------------------
- * 1. í•˜ë£¨ì˜ íšŒìƒ - 2ì¼ì°¨ í•™êµìƒí™œì— ëŒ€í•œ ì£¼ì¸ê³µì˜ ì†ŒíšŒ
- * 2. ë°¤ì˜ ë©”ì‹œì§€ (Messenger) - 5ëª…ì˜ íˆë¡œì¸ ì¤‘ ì—°ë½ì²˜ê°€ ìˆëŠ” ìƒëŒ€ì—ê²Œ ë©”ì‹œì§€ ë°œì†¡ (AI ëŒ€í™”)
- * 3. ë³´ê±´ ì„ ìƒë‹˜ ìíƒ ë°©ë¬¸ - `invited_nurse_home` í”Œë˜ê·¸ í™œì„± ì‹œ ë°œìƒí•˜ëŠ” íŠ¹ë³„ ì™¸ì¶œ ì´ë²¤íŠ¸
- * 4. í˜¸ê°ë„ í™•ì¸ ì‹œìŠ¤í…œ - í˜„ì¬ê¹Œì§€ ìŒ“ì¸ ìºë¦­í„°ë³„ í˜¸ê°ë„ ë¦¬ìŠ¤íŠ¸ ì²´í¬
- * 5. ì‹œë‚˜ë¦¬ì˜¤ ê²°ë§ (Development End) - í˜„ì¬ ë¹Œë“œì—ì„œì˜ ì‹œìŠ¤í…œ ì¢…ë£Œ ë° ë‹¤ì‹œ ì‹œì‘ ì œì•ˆ
+ * 1. ÇÏ·çÀÇ È¸»ó - 2ÀÏÂ÷ ÇĞ±³»ıÈ°¿¡ ´ëÇÑ ÁÖÀÎ°øÀÇ ¼ÒÈ¸
+ * 2. ¹ãÀÇ ¸Ş½ÃÁö (Messenger) - 5¸íÀÇ È÷·ÎÀÎ Áß ¿¬¶ôÃ³°¡ ÀÖ´Â »ó´ë¿¡°Ô ¸Ş½ÃÁö ¹ß¼Û (AI ´ëÈ­)
+ * 3. º¸°Ç ¼±»ı´Ô ÀÚÅÃ ¹æ¹® - `invited_nurse_home` ÇÃ·¡±× È°¼º ½Ã ¹ß»ıÇÏ´Â Æ¯º° ¿ÜÃâ ÀÌº¥Æ®
+ * 4. È£°¨µµ È®ÀÎ ½Ã½ºÅÛ - ÇöÀç±îÁö ½×ÀÎ Ä³¸¯ÅÍº° È£°¨µµ ¸®½ºÆ® Ã¼Å©
+ * 5. ½Ã³ª¸®¿À °á¸» (Development End) - ÇöÀç ºôµå¿¡¼­ÀÇ ½Ã½ºÅÛ Á¾·á ¹× ´Ù½Ã ½ÃÀÛ Á¦¾È
  * 
- *  ì¡°ê±´ í”Œë˜ê·¸ ì„¤ëª… (Condition Flags)
+ *  Á¶°Ç ÇÃ·¡±× ¼³¸í (Condition Flags)
  * ----------------------------------------------------------------------------
- * has_any_contact      : ì—°ë½ì²˜ê°€ í•˜ë‚˜ë¼ë„ ìˆëŠ”ì§€ í™•ì¸ (ë©”ì‹œì§€ ë©”ë‰´ í™œì„±í™”)
- * has_number_*         : íŠ¹ì • íˆë¡œì¸ì˜ ì—°ë½ì²˜ ë³´ìœ  ì—¬ë¶€
- * sent_msg_day2_*      : ì¤‘ë³µ ë©”ì‹œì§€ ë°œì†¡ ë°©ì§€
- * invited_nurse_home   : ë°©ê³¼ í›„ ë˜ëŠ” ì ì‹¬ì‹œê°„ì— íšë“í•œ ë³´ê±´ ì„ ìƒë‹˜ì˜ ì´ˆëŒ€ì¥ í™•ì¸
+ * has_any_contact      : ¿¬¶ôÃ³°¡ ÇÏ³ª¶óµµ ÀÖ´ÂÁö È®ÀÎ (¸Ş½ÃÁö ¸Ş´º È°¼ºÈ­)
+ * has_number_*         : Æ¯Á¤ È÷·ÎÀÎÀÇ ¿¬¶ôÃ³ º¸À¯ ¿©ºÎ
+ * sent_msg_day2_*      : Áßº¹ ¸Ş½ÃÁö ¹ß¼Û ¹æÁö
+ * invited_nurse_home   : ¹æ°ú ÈÄ ¶Ç´Â Á¡½É½Ã°£¿¡ È¹µæÇÑ º¸°Ç ¼±»ı´ÔÀÇ ÃÊ´ëÀå È®ÀÎ
  * day2_met_* / day2_ate_lunch_seoyeon / day2_dain_bet / woke_up_in_nurse_room:
- *   ë‚® ë™ì•ˆì˜ í–‰ì ì— ë”°ë¥¸ ë©”ì‹œì§€ ë‚´ìš© ë¶„ê¸° ì²˜ë¦¬ìš©
+ *   ³· µ¿¾ÈÀÇ ÇàÀû¿¡ µû¸¥ ¸Ş½ÃÁö ³»¿ë ºĞ±â Ã³¸®¿ë
  * 
- *  ì„¤ì • í”Œë˜ê·¸ ì„¤ëª… (Set Flags)
+ *  ¼³Á¤ ÇÃ·¡±× ¼³¸í (Set Flags)
  * ----------------------------------------------------------------------------
- * sent_msg_day2_*      : ì˜¤ëŠ˜ ë°¤ íŠ¹ì • ìºë¦­í„°ì—ê²Œ ë©”ì‹œì§€ë¥¼ ë³´ëƒˆìŒì„ ê¸°ë¡
- * invited_nurse_home   : ìíƒ ë°©ë¬¸ ì¤‘ ì¶”ê°€ì ì¸ ê´€ê³„ ì§„ì „ ê¸°ë¡ (ì„ íƒì )
+ * sent_msg_day2_*      : ¿À´Ã ¹ã Æ¯Á¤ Ä³¸¯ÅÍ¿¡°Ô ¸Ş½ÃÁö¸¦ º¸³ÂÀ½À» ±â·Ï
+ * invited_nurse_home   : ÀÚÅÃ ¹æ¹® Áß Ãß°¡ÀûÀÎ °ü°è ÁøÀü ±â·Ï (¼±ÅÃÀû)
  * 
- *  í˜¸ê°ë„ ë³€í™” (Stats Changes)
+ *  È£°¨µµ º¯È­ (Stats Changes)
  * ----------------------------------------------------------------------------
- * ë°¤ì˜ AI ëŒ€í™”(Free Talk) ê²°ê³¼ì— ë”°ë¼ ì†Œí­ì˜ í˜¸ê°ë„ ë³€í™” ë°œìƒ
+ * ¹ãÀÇ AI ´ëÈ­(Free Talk) °á°ú¿¡ µû¶ó ¼ÒÆøÀÇ È£°¨µµ º¯È­ ¹ß»ı
  * 
- *  íŠ¹ì´ ì‚¬í•­
+ *  Æ¯ÀÌ »çÇ×
  * ----------------------------------------------------------------------------
- * - night: true - ë°¤ ì‹œê°„ëŒ€ ì „ìš© UI ë° ë°°ê²½ ì—°ì¶œ
- * - silhouette: true - ë©”ì‹œì§€ ëŒ€í™” ì°½ì—ì„œ ìºë¦­í„°ë¥¼ ì‹¤ë£¨ì—£ìœ¼ë¡œ ì²˜ë¦¬í•˜ì—¬ ì‹ ë¹„ê° ì¡°ì„±
- * - day2_final: í˜„ì¬ ì¤€ë¹„ëœ ì‹œë‚˜ë¦¬ì˜¤ì˜ ëìë½ì„ì„ ì•Œë¦¬ëŠ” ì‹œìŠ¤í…œ ë©”ì‹œì§€ 
+ * - night: true - ¹ã ½Ã°£´ë Àü¿ë UI ¹× ¹è°æ ¿¬Ãâ
+ * - silhouette: true - ¸Ş½ÃÁö ´ëÈ­ Ã¢¿¡¼­ Ä³¸¯ÅÍ¸¦ ½Ç·ç¿§À¸·Î Ã³¸®ÇÏ¿© ½Åºñ°¨ Á¶¼º
+ * - day2_final: ÇöÀç ÁØºñµÈ ½Ã³ª¸®¿ÀÀÇ ³¡ÀÚ¶ôÀÓÀ» ¾Ë¸®´Â ½Ã½ºÅÛ ¸Ş½ÃÁö 
  * 
  * ============================================================================
  */
 
-// SCENARIO ì „ì—­ ê°ì²´ ì´ˆê¸°í™”
+// SCENARIO Àü¿ª °´Ã¼ ÃÊ±âÈ­
 if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 
-// Day 2 ì‹œë‚˜ë¦¬ì˜¤ ê·¸ë£¹ ì´ˆê¸°í™”
+// Day 2 ½Ã³ª¸®¿À ±×·ì ÃÊ±âÈ­
 if (!SCENARIO[2]) {
     SCENARIO[2] = {};
 }
 
 /**
- * [Day 2 - Night] ì”¬ ë°ì´í„° ì •ì˜
+ * [Day 2 - Night] ¾À µ¥ÀÌÅÍ Á¤ÀÇ
  */
 Object.assign(SCENARIO[2], {
     "day2_end": {
@@ -119,7 +119,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_nurse_home_2"
     },
     "day2_night_nurse_home_2": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Oh my, you actually came? Come in quickly. It's quite cold outside, isn't it?\"",
         background: "assets/images/background/nurse_house.png",
         character: "assets/images/characters/nurse_normal.png",
@@ -127,7 +127,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_nurse_home_3"
     },
     "day2_night_nurse_home_3": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Sit here. I'll get you a cup of warm tea. Being alone with our transfer student... I feel somewhat strange?\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -396,7 +396,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_nurse_reply": {
         type: "free_talk",
         maxTurns: 10,
-        name: "Nurse",
+        name: "School Nurse",
         text: "(A seductive reply.) 'Oh my, already thinking of me? Hehe, sleep well tonight and let's see each other again tomorrow. Good night, {name}.'",
         context: "Late night smartphone messaging with the nurse from your own rooms. The nurse sent a playful and seductive reply. Keep the conversation going naturally until it concludes. After the conversation ends, the protagonist will fall asleep looking forward to tomorrow. Only in the final turn, naturally end with goodnight or suggesting to meet at school tomorrow.",
         personality: "Languid and seductive yet caring school nurse. Boldly flirts with the protagonist. As a mature adult, not flustered by provocative comments.",
@@ -446,7 +446,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_teacher_reply": {
         type: "free_talk",
         maxTurns: 10,
-        name: "Teacher",
+        name: "Homeroom Teacher",
         text: "(A slightly delayed reply.) 'Oh, {name}. A message at this hour... I'm a bit surprised. But thank you for caring. Get some good rest and don't be late tomorrow.'",
         context: "Late night smartphone messaging with the homeroom teacher from your own rooms. The teacher is a bit flustered but grateful for your message. Keep the conversation going naturally until it concludes. After the conversation ends, the protagonist will fall asleep looking forward to tomorrow. Only in the final turn, naturally end with goodnight or reminding not to be late tomorrow.",
         personality: "A kind and responsible homeroom teacher. Shows appropriate care for students but maintains professional boundaries. Gets a bit flustered with personal messages from students.",

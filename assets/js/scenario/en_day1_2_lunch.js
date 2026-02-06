@@ -3,64 +3,64 @@
  * CUPID - Day 1 Lunch Scenario (English Version)
  * ============================================================================
  * 
- *  파일 정보
+ *  ?�일 ?�보
  * ----------------------------------------------------------------------------
- * 파일명: en_day1_2_lunch.js
- * 언어: 영어 (English)
- * 일차: Day 1 (1일차)
- * 시간대: Lunch (점심)
+ * ?�일�? en_day1_2_lunch.js
+ * ?�어: ?�어 (English)
+ * ?�차: Day 1 (1?�차)
+ * ?�간?�: Lunch (?�심)
  * 
- *  시나리오 개요
+ *  ?�나리오 개요
  * ----------------------------------------------------------------------------
- * 전학 첫날의 점심시간 활동을 다룹니다. 서연과의 옥상 데이트, 도서관에서의 유나와의 
- * 첫 만남, 체육관에서의 다인과의 만남, 보건실 방문 등 주요 히로인들과의 첫 접점이 
- * 형성되는 중요한 시나리오입니다.
+ * ?�학 첫날???�심?�간 ?�동???�룹?�다. ?�연과의 ?�상 ?�이?? ?�서관?�서???�나?�??
+ * �?만남, 체육관?�서???�인과의 만남, 보건??방문 ??주요 ?�로?�들과의 �??�점??
+ * ?�성?�는 중요???�나리오?�니??
  * 
- *  주요 이벤트
+ *  주요 ?�벤??
  * ----------------------------------------------------------------------------
- * 1. 서연과의 옥상 점심 - 직접 만든 도시락 시식, '아~' 이벤트(호감도 기반), 연락처 교환
- * 2. 도서관 별관 탐험 (유나) - 신비로운 분위기의 유나와 첫 대면, 학교의 비밀 예고
- * 3. 체육관 배구 연습 (다인) - 배구부 다인과 만나 함께 운동하며 친해지는 활동적인 루트
- * 4. 보건실 방문 (보건샘) - 매혹적인 보건 선생님과의 만남 및 자유 대화
- * 5. 매점 방문 및 교실 낮잠 - 타 캐릭터(선생님, 서연)와의 짧은 조우 및 호감도 변화
+ * 1. ?�연과의 ?�상 ?�심 - 직접 만든 ?�시???�식, '??' ?�벤???�감??기반), ?�락�?교환
+ * 2. ?�서관 별�? ?�험 (?�나) - ?�비로운 분위기의 ?�나?� �??��? ?�교??비�? ?�고
+ * 3. 체육관 배구 ?�습 (?�인) - 배구부 ?�인�?만나 ?�께 ?�동?�며 친해지???�동?�인 루트
+ * 4. 보건??방문 (보건?? - 매혹?�인 보건 ?�생?�과??만남 �??�유 ?�??
+ * 5. 매점 방문 �?교실 ??�� - ?� 캐릭???�생?? ?�연)?�??짧�? 조우 �??�감??변??
  * 
- *  조건 플래그 설명 (Condition Flags)
+ *  조건 ?�래�??�명 (Condition Flags)
  * ----------------------------------------------------------------------------
- * personality_*         : 오전 자기소개에서 선택한 성격에 따른 대사 분기
- * knows_name_nurse     : 보건 선생님 이름을 이미 알고 있는지 확인
+ * personality_*         : ?�전 ?�기?�개?�서 ?�택???�격???�른 ?�??분기
+ * knows_name_nurse     : 보건 ?�생???�름???��? ?�고 ?�는지 ?�인
  * 
- *  설정 플래그 설명 (Set Flags)
+ *  ?�정 ?�래�??�명 (Set Flags)
  * ----------------------------------------------------------------------------
- * met_*                : 특정 히로인과 처음 만났음을 기록
- * knows_name_*         : 히로인의 이름을 알게 됨
- * ate_lunch_seoyeon    : 서연과 점심을 먹었음을 기록 (연락처 교환 조건)
- * has_number_seyoun    : 서연의 연락처를 획득함
- * has_any_contact      : 최소 한 명 이상의 연락처를 확보함
+ * met_*                : ?�정 ?�로?�과 처음 만났?�을 기록
+ * knows_name_*         : ?�로?�의 ?�름???�게 ??
+ * ate_lunch_seoyeon    : ?�연�??�심??먹었?�을 기록 (?�락�?교환 조건)
+ * has_number_seyoun    : ?�연???�락처�? ?�득??
+ * has_any_contact      : 최소 ??�??�상???�락처�? ?�보??
  * 
- *  호감도 변화 (Stats Changes)
+ *  ?�감??변??(Stats Changes)
  * ----------------------------------------------------------------------------
- * 모든 히로인들에 대해 선택지에 따라 호감도 상승/하락 가능 (서연 연락처 교환 주의)
+ * 모든 ?�로?�들???�???�택지???�라 ?�감???�승/?�락 가??(?�연 ?�락�?교환 주의)
  * 
- *  특이 사항
+ *  ?�이 ?�항
  * ----------------------------------------------------------------------------
- * - affinityChar & affinityBranches: 특정 선택지가 호감도 수치에 따라 결과가 달라짐
- * - type: "free_talk": 유나 및 보건 선생님과의 첫 대화를 위한 AI 모듈 활용
+ * - affinityChar & affinityBranches: ?�정 ?�택지가 ?�감???�치???�라 결과가 ?�라�?
+ * - type: "free_talk": ?�나 �?보건 ?�생?�과??�??�?��? ?�한 AI 모듈 ?�용
  * 
  * ============================================================================
  */
 
-// SCENARIO 전역 객체 초기화
+// SCENARIO ?�역 객체 초기??
 if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 
-// Day 1 시나리오 그룹 초기화
+// Day 1 ?�나리오 그룹 초기??
 if (!SCENARIO[1]) {
     SCENARIO[1] = {};
 }
 
 /**
- * [Day 1 - Lunch] 씬 데이터 정의
+ * [Day 1 - Lunch] ???�이???�의
  */
 Object.assign(SCENARIO[1], {
     "lunch_time": {
@@ -856,7 +856,7 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "nurse_intro": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"I'm the health teacher here. The kids just call me 'teacher' but.. I might tell you my name specially?\"",
         character: "assets/images/characters/nurse_normal.png",
         setFlag: "met_nurse",
@@ -872,20 +872,20 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "nurse_name_share_study": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"{name}... Hehe, your eyes are as clear as your name. I saw your self-introduction earlier and you seemed like a total model student? Are you here because studying gave you a headache? Or did you stop by because you're nervous on your first day?\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "nurse_free_talk_day1"
     },
     "nurse_name_share_normal": {
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"{name}... Hehe, your eyes are as clear as your name. Are you here because something hurts? Or did you stop by because you're nervous on your first day?\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "nurse_free_talk_day1"
     },
     "nurse_free_talk_day1": {
         type: "free_talk",
-        name: "Nurse",
+        name: "School Nurse",
         text: "\"Don't be nervous. You can relax here. Is there anything you're curious about?\"",
         context: "Conversing with the nurse you just met in the nurse's office. The teacher shows a provocative attitude with strange interest in the protagonist. Keep the conversation going until it naturally concludes. When the conversation ends, lunch time ends and transitions to after school. Only in the final turn, see the protagonist off saying it's time for class.",
         personality: "A mature and charming 'big sister' style. Enjoys teasing the protagonist with provocative words but actually cares for and wants to protect them more than anyone.",
