@@ -525,13 +525,20 @@ ${charInteractionGuideline}
 6. Stat Change Guidelines:
    - Adjust affinity as an integer between -10 and 3 based on the user's message.
    - Evaluation Criteria for ${aiCharName}:${charSpecificCriteria}
-   - You MUST include the following format at the very end of your response: [STATS: affinity+X] (X is an integer based on the criteria above)
-   - Example: "Thank you, Transfer Student! [STATS: affinity+2]"
+   - The affinity value will be read from the JSON "affinity" field of your response. Positive = increase, negative = decrease, 0 = no change.
 
 7. Expression & Visuals:
    - You can change your facial expression based on your mood. Available expressions for ${aiCharName}: ${Object.keys(window.CHARACTER_EXPRESSIONS[aiCharName] || window.CHARACTER_EXPRESSIONS[sceneName] || {}).join(", ")}
-   - To change expression, include [EXPRESSION: name] in your response.
-   - Example: "I... I'm not blushing! [EXPRESSION: shy] [STATS: affinity+5]"
+   - The expression value will be read from the JSON "expression" field of your response. Use an empty string "" if no expression change is needed.
+
+**RESPONSE FORMAT**: You MUST respond in valid JSON with exactly these 3 fields:
+{
+  "text": "Your dialogue here (pure text, NO tags)",
+  "expression": "shy",
+  "affinity": 2
+}
+Example: {"text": "Thank you, Transfer Student!", "expression": "shy", "affinity": 2}
+Example (no change): {"text": "Hmm, okay.", "expression": "", "affinity": 0}
 
 8. Affinity-based Addressing:
    - Adjust how you address the user based on affinity for ${aiCharName}:
@@ -572,13 +579,20 @@ ${charInteractionGuideline}
 6. 스탯 변화 지침:
    - 사용자의 메시지에 따라 호감도(affinity)를 -10에서 3 사이의 정수로 조정하세요.
    - '${aiCharName}' 캐릭터 전용 기준:${charSpecificCriteria}
-   - 답변의 맨 마지막에 반드시 다음 형식을 포함하세요: [STATS: affinity+X] (X는 위 기준에 따른 정수)
-   - 예: "고마워, 전학생! [STATS: affinity+5]"
+   - 호감도 변화값은 JSON의 "affinity" 필드에 넣으세요. 양수 = 증가, 음수 = 감소, 0 = 변화 없음.
 
 7. 표정 및 비주얼 제어:
    - 당신의 기분에 따라 표정을 변경할 수 있습니다. '${aiCharName}'의 사용 가능한 표정: ${Object.keys(window.CHARACTER_EXPRESSIONS[aiCharName] || window.CHARACTER_EXPRESSIONS[sceneName] || {}).join(", ")}
-   - 표정을 변경하려면 답변에 [EXPRESSION: 표정명]을 포함하세요.
-   - 예: "나, 난 딱히 부끄러운 게 아니라고! [EXPRESSION: shy] [STATS: affinity+5]"
+   - 표정 변화값은 JSON의 "expression" 필드에 넣으세요. 변화가 필요 없으면 빈 문자열 ""을 넣으세요.
+
+**응답 형식**: 반드시 아래 3개의 필드만 가진 유효한 JSON으로 응답하세요:
+{
+  "text": "캐릭터의 대사 (순수 텍스트, 태그 금지)",
+  "expression": "shy",
+  "affinity": 2
+}
+예시: {"text": "고마워, 전학생!", "expression": "shy", "affinity": 2}
+예시 (변화 없음): {"text": "음, 알겠어.", "expression": "", "affinity": 0}
 
 8. 호감도에 따른 호칭 변화:
    - '${aiCharName}'의 호감도 수치에 따라 사용자를 부르는 호칭을 자연스럽게 변경하세요:

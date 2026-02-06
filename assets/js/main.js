@@ -2309,7 +2309,7 @@ class FreeTalkSystem {
             // - messages: 대화 기록 전체 (시스템 프롬프트 + 대화 내용)
             const response = await fetch(API_ENDPOINT, {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: { "Content-Type": "application/json", "x-app-type": "cupid" },
                 body: JSON.stringify({ messages: this.freeTalkHistory })
             });
 
@@ -2324,14 +2324,23 @@ class FreeTalkSystem {
             // 구조: { choices: [{ message: { content: "대답 내용" } }] }
             let reply = data?.choices?.[0]?.message?.content?.trim();
 
-            // JSON 응답 파싱
-            reply = this.parseJsonResponse(reply);
+            // JSON 응답 파싱 → {text, expression, affinity} 구조체 반환
+            const parsed = this.parseJsonResponse(reply);
 
-            if (reply) {
-                // 표정 변화 처리
+            if (parsed) {
+                // JSON 필드에서 표정 변화 처리
+                if (parsed.expression) {
+                    this.applyExpression(parsed.expression, scene);
+                }
+                // JSON 필드에서 호감도 변화 처리
+                if (parsed.affinity !== 0) {
+                    this.applyAffinity(parsed.affinity, scene);
+                }
+
+                reply = parsed.text || "...";
+
+                // 레거시 폴백: 인라인 태그가 텍스트에 남아있을 경우 처리
                 reply = this.processExpressionTags(reply, scene);
-
-                // 스탯 변화 처리
                 reply = this.processStatsTags(reply, scene);
 
                 if (!reply) reply = "...";
@@ -2427,12 +2436,12 @@ class FreeTalkSystem {
      * @returns {string} 추출된 텍스트 또는 원본 그대로
      */
     parseJsonResponse(reply) {
-        // 📌 빈 응답이면 그대로 반환
-        if (!reply) return reply;
+        // 📌 빈 응답이면 기본 구조체 반환
+        if (!reply) return { text: "", expression: "", affinity: 0 };
 
         // 📌 JSON일 가능성 체크 (중괄호, 대괄호, 또는 코드블록 포함 여부)
         const likelyJson = reply.includes('{') || reply.includes('[') || reply.includes('```json');
-        if (!likelyJson) return reply;  // JSON 아니면 원본 반환
+        if (!likelyJson) return { text: reply, expression: "", affinity: 0 };  // 순수 텍스트면 그대로
 
         try {
             let jsonStr = reply;
@@ -2461,8 +2470,17 @@ class FreeTalkSystem {
             // 📌 JSON 파싱 시도
             const parsed = JSON.parse(jsonStr);
 
+            // 📌 cupid 스키마 형식 {text, expression, affinity} 인지 확인
+            if (parsed && typeof parsed === 'object' && !Array.isArray(parsed) && typeof parsed.text === 'string') {
+                return {
+                    text: parsed.text || "",
+                    expression: (parsed.expression || "").toLowerCase(),
+                    affinity: parseInt(parsed.affinity) || 0,
+                };
+            }
+
             /**
-             * 📌 객체에서 텍스트 추출하는 내부 함수
+             * 📌 레거시: 객체에서 텍스트 추출 (구 형식 호환)
              * 여러 가능한 키 이름을 순서대로 시도
              */
             const getTextFromObj = (obj) => {
@@ -2487,13 +2505,14 @@ class FreeTalkSystem {
             };
 
             // 📌 배열인 경우 첫 번째 요소에서 추출
+            let fallbackText;
             if (Array.isArray(parsed) && parsed.length > 0) {
-                const extracted = getTextFromObj(parsed[0]);
-                if (extracted && typeof extracted === 'string') return extracted;
+                fallbackText = getTextFromObj(parsed[0]);
             } else {
-                // 📌 객체인 경우 직접 추출
-                const extracted = getTextFromObj(parsed);
-                if (extracted && typeof extracted === 'string') return extracted;
+                fallbackText = getTextFromObj(parsed);
+            }
+            if (fallbackText && typeof fallbackText === 'string') {
+                return { text: fallbackText, expression: "", affinity: 0 };
             }
         } catch (e) {
             // 📌 JSON 파싱 실패 시 경고 로그 (원본 반환됨)
@@ -2502,7 +2521,51 @@ class FreeTalkSystem {
 
         // 📌 파싱 실패하거나 텍스트 추출 실패 시 fallback 메시지 반환
         const isEn = document.documentElement.lang === 'en';
-        return isEn ? "I couldn't understand the response. Let me try again." : "응답을 이해할 수 없습니다. 다시 시도하겠습니다.";
+        return {
+            text: isEn ? "I couldn't understand the response. Let me try again." : "응답을 이해할 수 없습니다. 다시 시도하겠습니다.",
+            expression: "",
+            affinity: 0,
+        };
+    }
+
+    /**
+     * 😊 applyExpression - JSON 필드에서 받은 표정을 캐릭터 이미지에 적용
+     * @param {string} exprName - 표정 이름 (예: shy, angry, laugh)
+     * @param {Object} scene - 현재 씬 데이터
+     */
+    applyExpression(exprName, scene) {
+        if (!exprName || !window.CHARACTER_EXPRESSIONS) return;
+        const name = exprName.toLowerCase();
+        const charExprs = CHARACTER_EXPRESSIONS[scene.name];
+        if (!charExprs || !charExprs[name]) return;
+
+        const centerSlot = this.uiManager.charSlots.center;
+        if (!centerSlot) return;
+
+        const exprUrl = getAssetUrl(charExprs[name]);
+        if (centerSlot.firstChild) {
+            centerSlot.firstChild.src = exprUrl;
+        } else {
+            const img = document.createElement('img');
+            img.src = exprUrl;
+            centerSlot.appendChild(img);
+        }
+    }
+
+    /**
+     * 📊 applyAffinity - JSON 필드에서 받은 호감도 변화량 적용
+     * @param {number} change - 호감도 변화량 (정수)
+     * @param {Object} scene - 현재 씬 데이터
+     */
+    applyAffinity(change, scene) {
+        if (!change || change === 0) return;
+        const charKey = this.charNameMap[scene.name] || scene.name;
+        if (this.stateManager.stats[charKey]) {
+            const newValue = this.stateManager.changeAffinity(charKey, change);
+            this.uiManager.showAffinityChange(change, charKey);
+            this.galleryManager.updateMaxAffinity(charKey, newValue);
+            this.galleryManager.checkAffinityUnlock(charKey, newValue);
+        }
     }
 
     /**
