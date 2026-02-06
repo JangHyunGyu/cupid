@@ -102,7 +102,7 @@ Object.assign(SCENARIO[1], {
     "after_teacher": {
         name: "나",
         text: "(교무실 문을 열자, 서류를 정리하고 계신 담임선생님이 보인다.)",
-        background: "assets/images/background/teacher_room.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "after_teacher_2"
@@ -416,7 +416,8 @@ Object.assign(SCENARIO[1], {
                 affinityChar: "Yuna",
                 affinityBranches: [
                     { minAffinity: 30, next: "after_yuna_secret_deep" },
-                    { maxAffinity: 10, next: "after_yuna_secret_fail" }
+                    { minAffinity: 11, next: "after_yuna_secret" },
+                    { minAffinity: -999, next: "after_yuna_secret_fail" }
                 ]
             },
             { text: "오늘 급식 맛있었지?", next: "after_yuna_boring" },

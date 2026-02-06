@@ -1038,7 +1038,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_teacher": {
         name: "Me",
         text: "(Opening the faculty room door, I see the homeroom teacher working alone under a desk lamp in the empty office.)",
-        background: "assets/images/background/teacher_room.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "day2_after_teacher_2"
@@ -1064,7 +1064,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_teacher_work": {
         name: "Me",
         text: "(I sat next to the teacher and started helping her sort the papers. Only the rhythmic sound of turning pages fills the quiet office.)",
-        background: "assets/images/background/teacher_room.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "day2_after_teacher_work_2"

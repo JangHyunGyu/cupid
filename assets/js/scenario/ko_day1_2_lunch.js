@@ -175,6 +175,7 @@ Object.assign(SCENARIO[1], {
         next: "rooftop_talk_main"
     },
     "rooftop_talk_main": {
+        name: "나",
         text: "(함께 도시락을 먹으며 대화를 나눈다. 그녀가 수줍게 웃는데, 가슴이 두근거린다.)",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/seyoun_normal.png",
