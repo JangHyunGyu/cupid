@@ -66,6 +66,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         text: "(오전 수업 끝! 드디어 기다리던 점심시간이다. 아이들이 급식실로 달려간다.)",
         background: "assets/images/background/room_school.png",
+        bgm: "daily.mp3",
         character: null,
         next: "lunch_time_2"
     },

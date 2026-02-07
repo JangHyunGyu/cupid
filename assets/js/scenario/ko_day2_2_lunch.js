@@ -73,6 +73,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_time": {
         name: "나",
         text: "(딩동댕동! 드디어 기다리던 점심시간이다. 교실 안은 활기로 가득 차고, 내 심장도 조금씩 빠르게 뛰기 시작한다.)",
+        bgm: "daily.mp3",
         character: null,
         choices: [
             { text: "화사한 미소가 생각나는 서연이에게 간다.", next: "day2_lunch_seoyeon" },

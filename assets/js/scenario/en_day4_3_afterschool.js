@@ -41,6 +41,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         text: "(After lunch, we took a leisurely walk. The spring breeze was refreshing.)",
         background: "assets/images/background/street.png",
+        bgm: "sunset2.mp3",
         next: "day4_afternoon_walk"
     },
     "day4_afternoon_walk": {

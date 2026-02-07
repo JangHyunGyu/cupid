@@ -59,6 +59,7 @@ Object.assign(SCENARIO[5], {
         name: "나",
         text: "(어느새 오후가 되었다. 옥상에서 보는 하늘이 주황빛으로 물들기 시작한다.)",
         background: "assets/images/background/top_school.png",
+        bgm: "sunset1.mp3",
         sunset: true,
         next: "day5_afternoon_branch"
     },
