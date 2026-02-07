@@ -255,8 +255,9 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_yuna": {
         name: "나",
-        text: "(도서관 별관 뒤뜰. 울창한 나무 그림자 아래, 유나가 마치 풍경의 일부처럼 서 있다.)",
+        text: "(도서관 안. 먼지가 떠다니는 고요한 공간에, 유나가 마치 풍경의 일부처럼 서 있다.)",
         background: "assets/images/background/library_old.png",
+        bgm: "mystery.mp3",
         character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_talk"
     },
