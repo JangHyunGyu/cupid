@@ -80,6 +80,7 @@ Object.assign(SCENARIO[4], {
     "day4_afternoon_sunset": {
         name: "나",
         text: "(석양빛이 그 사람의 얼굴을 비추고 있다. 이상하게 말이 나오질 않는다.)",
+        bgm: "confession.mp3",
         sunset: true,
         next: "day4_afternoon_silence"
     },

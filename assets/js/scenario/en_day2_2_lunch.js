@@ -250,8 +250,9 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_yuna": {
         name: "Me",
-        text: "(The library annex backyard. Under the deep shadows, Yuna stands like part of the scenery.)",
+        text: "(Inside the old library. In the quiet, dust-filled space, Yuna stands like part of the scenery.)",
         background: "assets/images/background/library_old.png",
+        bgm: "mystery.mp3",
         character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_talk"
     },

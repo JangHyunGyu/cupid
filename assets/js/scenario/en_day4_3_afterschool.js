@@ -115,6 +115,7 @@ Object.assign(SCENARIO[4], {
     "day4_sunset": {
         name: "Me",
         text: "(Before we knew it, the sun started to set. The sky was painted in shades of orange.)",
+        bgm: "confession.mp3",
         sunset: true,
         next: "day4_sunset_bench"
     },
