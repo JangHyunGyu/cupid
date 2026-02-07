@@ -52,6 +52,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         text: "(카페를 나와 함께 거리를 걸었다. 어느새 오후가 되었다.)",
         background: "assets/images/background/street.png",
+        bgm: "sunset2.mp3",
         sunset: true,
         next: "day4_afternoon_walk"
     },

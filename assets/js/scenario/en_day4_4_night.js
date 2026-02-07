@@ -40,7 +40,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         text: "(I'm back in my room. Today was... an unforgettable day.)",
         background: "assets/images/background/room_my.png",
-        bgm: "night.mp3",
+        bgm: "night2.mp3",
         night: true,
         next: "day4_night_branch"
     },

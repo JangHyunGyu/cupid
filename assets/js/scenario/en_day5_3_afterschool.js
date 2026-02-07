@@ -59,6 +59,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         text: "(Before I knew it, afternoon arrived. The sky seen from the rooftop is beginning to turn orange.)",
         background: "assets/images/background/top_school.png",
+        bgm: "sunset1.mp3",
         sunset: true,
         next: "day5_afternoon_branch"
     },
