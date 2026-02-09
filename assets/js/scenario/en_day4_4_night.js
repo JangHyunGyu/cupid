@@ -63,6 +63,8 @@ Object.assign(SCENARIO[4], {
         text: "",
         branches: [
             { next: "day4_night_yuna_sneak", condition: "isDating_Yuna" },
+            { next: "day4_night_seoyeon_call", condition: "isDating_Seoyeon" },
+            { next: "day4_night_dain_gym", condition: "isDating_Dain" },
             { next: "day4_night_happy", condition: "day4_confession_accepted" },
             { next: "day4_night_regret", condition: "day4_waited" },
             { next: "day4_night_reflect" }
@@ -590,6 +592,792 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_home_2": {
         name: "Me",
         text: "(The weight Yuna carried alone for a whole year. Now it's my turn to help bear it.)",
+        night: true,
+        fade: true,
+        next: "day4_final"
+    },
+
+    // =========================================================================
+    // Seoyeon Route — The Price of Perfection, Seoyeon's True Self
+    // =========================================================================
+    "day4_night_seoyeon_call": {
+        name: "Me",
+        text: "(9 PM. A call from Seoyeon.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        bgm: "night1.mp3",
+        next: "day4_night_seoyeon_call_2"
+    },
+    "day4_night_seoyeon_call_2": {
+        name: "Seoyeon",
+        text: "\"...Hey, it's me. If you're not busy... could you come out for a bit?\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_call_3"
+    },
+    "day4_night_seoyeon_call_3": {
+        name: "Me",
+        text: "(Seoyeon's voice sounds different from usual. No warmth, and it seems like she's trembling.)",
+        night: true,
+        next: "day4_night_seoyeon_call_4"
+    },
+    "day4_night_seoyeon_call_4": {
+        name: "Seoyeon",
+        text: "\"...You know the park near my house, right? I'll wait there.\"",
+        night: true,
+        next: "day4_night_seoyeon_park"
+    },
+    "day4_night_seoyeon_park": {
+        name: "Me",
+        text: "(I arrived at the park. Seoyeon was sitting alone on a bench. Instead of her usual neat uniform, she wore casual clothes.)",
+        background: "assets/images/background/park.png",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_park_2"
+    },
+    "day4_night_seoyeon_park_2": {
+        name: "Seoyeon",
+        text: "\"...You came. Sorry for calling you out so suddenly.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_park_3"
+    },
+    "day4_night_seoyeon_park_3": {
+        name: "Me",
+        text: "(Seoyeon's eyes are red. ...Was she crying?)",
+        night: true,
+        choices: [
+            {
+                text: "\"What happened? Are you okay?\"",
+                next: "day4_night_seoyeon_concern",
+                stats: { Seoyeon: { affinity: 5 } }
+            },
+            {
+                text: "Sit next to her without saying anything",
+                next: "day4_night_seoyeon_silent_sit",
+                stats: { Seoyeon: { affinity: 8 } }
+            }
+        ]
+    },
+    "day4_night_seoyeon_concern": {
+        name: "Seoyeon",
+        text: "\"...If I said I was fine, that would be a lie.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_open"
+    },
+    "day4_night_seoyeon_silent_sit": {
+        name: "Seoyeon",
+        text: "\"...Thank you. Just sitting next to me... that's the best thing.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_open"
+    },
+
+    // =========================================================================
+    // Seoyeon's Confession — The Prison of Perfection
+    // =========================================================================
+    "day4_night_seoyeon_open": {
+        name: "Seoyeon",
+        text: "\"...Mom called today. She and Dad had another fight.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_open_2"
+    },
+    "day4_night_seoyeon_open_2": {
+        name: "Seoyeon",
+        text: "\"Our house... looks perfect from the outside, right? Big house, nice car, student council president daughter.\"",
+        night: true,
+        next: "day4_night_seoyeon_open_3"
+    },
+    "day4_night_seoyeon_open_3": {
+        name: "Seoyeon",
+        text: "\"But actually... Mom and Dad haven't lived under the same roof for a year now. They just haven't filed for divorce yet.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_open_4"
+    },
+    "day4_night_seoyeon_open_4": {
+        name: "Me",
+        text: "\"...Seoyeon.\"",
+        night: true,
+        next: "day4_night_seoyeon_open_5"
+    },
+    "day4_night_seoyeon_open_5": {
+        name: "Seoyeon",
+        text: "\"Mom said, 'At least you need to be perfect for this family to hold together.' So... student council, grades, I couldn't let go of any of it.\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_open_6"
+    },
+    "day4_night_seoyeon_open_6": {
+        name: "Seoyeon",
+        text: "\"I had to smile for everyone. 'Seoyeon is always so bright,' 'Seoyeon is good at everything.' Those words... started to feel like a prison.\"",
+        night: true,
+        next: "day4_night_seoyeon_open_7"
+    },
+    "day4_night_seoyeon_open_7": {
+        name: "Seoyeon",
+        text: "\"I wasn't smiling—I was 'performing' a smile. Every single day.\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_tear"
+    },
+    "day4_night_seoyeon_tear": {
+        name: "Me",
+        text: "(Tears spilled from Seoyeon's eyes. Glistening under the streetlight. It was the first time I'd ever seen her cry.)",
+        night: true,
+        next: "day4_night_seoyeon_tear_choice"
+    },
+    "day4_night_seoyeon_tear_choice": {
+        name: "Me",
+        text: "(Seoyeon is crying. I've never seen this side of her.)",
+        night: true,
+        choices: [
+            {
+                text: "Hug Seoyeon",
+                next: "day4_night_seoyeon_hug",
+                stats: { Seoyeon: { affinity: 15 } },
+                setFlag: "day4_hugged_seoyeon"
+            },
+            {
+                text: "Offer a pinky promise",
+                next: "day4_night_seoyeon_pinky",
+                stats: { Seoyeon: { affinity: 20 } },
+                setFlag: "day4_pinky_seoyeon"
+            }
+        ]
+    },
+    "day4_night_seoyeon_hug": {
+        name: "Seoyeon",
+        text: "\"...... !\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_hug_2"
+    },
+    "day4_night_seoyeon_hug_2": {
+        name: "Me",
+        text: "(Seoyeon buried her face in my chest. Her small shoulders were trembling.)",
+        night: true,
+        next: "day4_night_seoyeon_hug_3"
+    },
+    "day4_night_seoyeon_hug_3": {
+        name: "Seoyeon",
+        text: "\"...It's been so long since I cried like this. Crying in front of someone... this is the first time.\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_real"
+    },
+    "day4_night_seoyeon_pinky": {
+        name: "Me",
+        text: "\"I promise. Whenever you want to cry, you can cry with me.\"",
+        night: true,
+        next: "day4_night_seoyeon_pinky_2"
+    },
+    "day4_night_seoyeon_pinky_2": {
+        name: "Seoyeon",
+        text: "\"...A pinky promise?\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_pinky_3"
+    },
+    "day4_night_seoyeon_pinky_3": {
+        name: "Me",
+        text: "(Seoyeon locked her trembling pinky with mine. And then the tears she'd been holding back poured out.)",
+        night: true,
+        next: "day4_night_seoyeon_pinky_4"
+    },
+    "day4_night_seoyeon_pinky_4": {
+        name: "Seoyeon",
+        text: "\"...You fool, why are you... so kind to me...\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_real"
+    },
+
+    // =========================================================================
+    // Seoyeon's True Self
+    // =========================================================================
+    "day4_night_seoyeon_real": {
+        name: "Seoyeon",
+        text: "\"...Even during our date today, I was scared. Am I allowed to be this happy? Will this happiness crumble too?\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_real_2"
+    },
+    "day4_night_seoyeon_real_2": {
+        name: "Seoyeon",
+        text: "\"Are you... okay with a me that's not perfect?\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_real_choice"
+    },
+    "day4_night_seoyeon_real_choice": {
+        name: "Me",
+        text: "(Seoyeon is looking up at me with trembling eyes.)",
+        night: true,
+        choices: [
+            {
+                text: "\"I like the Seoyeon right now more than the perfect one.\"",
+                next: "day4_night_seoyeon_accept",
+                stats: { Seoyeon: { affinity: 20 } }
+            },
+            {
+                text: "\"Not the class president Seoyeon—just Seoyeon is my girlfriend.\"",
+                next: "day4_night_seoyeon_gf",
+                stats: { Seoyeon: { affinity: 15 } }
+            },
+            {
+                text: "\"Honestly, I always thought you were perfect. But... thank you for showing me this side too.\"",
+                next: "day4_night_seoyeon_honest",
+                stats: { Seoyeon: { affinity: 10 } }
+            }
+        ]
+    },
+    "day4_night_seoyeon_accept": {
+        name: "Seoyeon",
+        text: "\"...Really?\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_accept_2"
+    },
+    "day4_night_seoyeon_accept_2": {
+        name: "Seoyeon",
+        text: "\"...I'll never forget those words. If I do... we made a pinky promise, after all.\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        next: "day4_night_seoyeon_resolve"
+    },
+    "day4_night_seoyeon_gf": {
+        name: "Seoyeon",
+        text: "\"G-girlfriend......\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        next: "day4_night_seoyeon_gf_2"
+    },
+    "day4_night_seoyeon_gf_2": {
+        name: "Seoyeon",
+        text: "\"...Ah, my heart is pounding so hard I might die. You can't just say things like that...\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        next: "day4_night_seoyeon_resolve"
+    },
+    "day4_night_seoyeon_honest": {
+        name: "Seoyeon",
+        text: "\"...Thank you. Do you mean it?\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_honest_2"
+    },
+    "day4_night_seoyeon_honest_2": {
+        name: "Seoyeon",
+        text: "\"From now on... I won't act in front of you. I promise.\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        night: true,
+        next: "day4_night_seoyeon_resolve"
+    },
+
+    // =========================================================================
+    // Seoyeon's Resolve — Finding Herself
+    // =========================================================================
+    "day4_night_seoyeon_resolve": {
+        name: "Seoyeon",
+        text: "\"...You know what? I've made up my mind.\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        night: true,
+        next: "day4_night_seoyeon_resolve_2"
+    },
+    "day4_night_seoyeon_resolve_2": {
+        name: "Seoyeon",
+        text: "\"I'm going to tell Mom. That I want to be myself before being 'the perfect daughter.'\"",
+        night: true,
+        next: "day4_night_seoyeon_resolve_3"
+    },
+    "day4_night_seoyeon_resolve_3": {
+        name: "Seoyeon",
+        text: "\"I'm scared, but... I'm not alone anymore.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_resolve_4"
+    },
+    "day4_night_seoyeon_resolve_4": {
+        name: "Me",
+        text: "\"Let's go together. Anywhere.\"",
+        night: true,
+        next: "day4_night_seoyeon_resolve_end"
+    },
+    "day4_night_seoyeon_resolve_end": {
+        name: "Seoyeon",
+        text: "\"...Yeah.\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        setFlag: "day4_seoyeon_real_self",
+        next: "day4_night_seoyeon_farewell"
+    },
+
+    // =========================================================================
+    // Farewell with Seoyeon — Night Walk
+    // =========================================================================
+    "day4_night_seoyeon_farewell": {
+        name: "Me",
+        text: "(We left the park and walked together to her house. Seoyeon gently leaned on my arm as we walked.)",
+        background: "assets/images/background/street.png",
+        night: true,
+        next: "day4_night_seoyeon_farewell_2"
+    },
+    "day4_night_seoyeon_farewell_2": {
+        name: "Seoyeon",
+        text: "\"...I showed you such an embarrassing side of me, but you didn't run away.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_farewell_3"
+    },
+    "day4_night_seoyeon_farewell_3": {
+        name: "Me",
+        text: "\"Run away? I actually like you more now.\"",
+        night: true,
+        next: "day4_night_seoyeon_farewell_4"
+    },
+    "day4_night_seoyeon_farewell_4": {
+        name: "Seoyeon",
+        text: "\"...You really are unfair.\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        next: "day4_night_seoyeon_farewell_5"
+    },
+    "day4_night_seoyeon_farewell_5": {
+        name: "Me",
+        text: "(As Seoyeon turned to leave, she said in a small voice.)",
+        night: true,
+        next: "day4_night_seoyeon_farewell_6"
+    },
+    "day4_night_seoyeon_farewell_6": {
+        name: "Seoyeon",
+        text: "\"...Today, for the first time, I felt like 'being myself is okay.' Thank you.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_home"
+    },
+    "day4_night_seoyeon_home": {
+        name: "Me",
+        text: "(Back home. Seoyeon's tears keep coming back to me. The real face behind the perfect student council president... I want to share that heavy burden.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        next: "day4_night_seoyeon_home_2"
+    },
+    "day4_night_seoyeon_home_2": {
+        name: "Me",
+        text: "(Tomorrow... I want her smile to come from the heart, not from acting.)",
+        night: true,
+        fade: true,
+        next: "day4_final"
+    },
+
+    // =========================================================================
+    // Dain Route — Price of a Dream, Secret of the Knee
+    // =========================================================================
+    "day4_night_dain_gym": {
+        name: "Me",
+        text: "(9:30 PM. A message from Dain. 'Hey, you free rn?? lol Can you come to school??')",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        bgm: "night1.mp3",
+        next: "day4_night_dain_gym_2"
+    },
+    "day4_night_dain_gym_2": {
+        name: "Me",
+        text: "(Another message right away. 'Nvm just come lol! Gym back door is open!')",
+        night: true,
+        next: "day4_night_dain_gym_3"
+    },
+    "day4_night_dain_gym_3": {
+        name: "Me",
+        text: "(Dain at the school gym at this hour? Something feels off... Let's go check.)",
+        night: true,
+        next: "day4_night_dain_arrive"
+    },
+    "day4_night_dain_arrive": {
+        name: "Me",
+        text: "(I entered the gym. In the darkness lit only by emergency lights, Dain was alone, bumping a volleyball.)",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_normal.png",
+        night: true,
+        next: "day4_night_dain_arrive_2"
+    },
+    "day4_night_dain_arrive_2": {
+        name: "Dain",
+        text: "\"Oh! You actually came?! Hehe, that's my boyfriend!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "day4_night_dain_arrive_3"
+    },
+    "day4_night_dain_arrive_3": {
+        name: "Me",
+        text: "(But... something's off. Dain seems to be smiling harder than usual.)",
+        night: true,
+        next: "day4_night_dain_spike"
+    },
+    "day4_night_dain_spike": {
+        name: "Dain",
+        text: "\"Toss for me! Just once! I'll show you my spike!!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "day4_night_dain_spike_2"
+    },
+    "day4_night_dain_spike_2": {
+        name: "Me",
+        text: "(I tossed the ball to Dain. She jumped high and slammed the spike down.)",
+        night: true,
+        next: "day4_night_dain_spike_3"
+    },
+    "day4_night_dain_spike_3": {
+        name: "Me",
+        text: "(The moment she landed—Dain grabbed her right knee and crumpled to the floor.)",
+        night: true,
+        next: "day4_night_dain_hurt"
+    },
+    "day4_night_dain_hurt": {
+        name: "Dain",
+        text: "\"...... !!\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_hurt_2"
+    },
+    "day4_night_dain_hurt_2": {
+        name: "Me",
+        text: "\"Dain!!\"",
+        night: true,
+        next: "day4_night_dain_hurt_3"
+    },
+    "day4_night_dain_hurt_3": {
+        name: "Dain",
+        text: "\"Ow ow!! I'm fine!! Just tweaked it a little haha, no biggie...\"",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "day4_night_dain_hurt_4"
+    },
+    "day4_night_dain_hurt_4": {
+        name: "Me",
+        text: "(Dain is smiling, but her hand gripping her knee has gone white.)",
+        night: true,
+        choices: [
+            {
+                text: "\"Don't lie. Let me see.\"",
+                next: "day4_night_dain_check",
+                stats: { Dain: { affinity: 8 } }
+            },
+            {
+                text: "\"Dain. You're not okay.\"",
+                next: "day4_night_dain_serious",
+                stats: { Dain: { affinity: 10 } }
+            }
+        ]
+    },
+
+    // =========================================================================
+    // Dain's Secret — Knee Injury
+    // =========================================================================
+    "day4_night_dain_check": {
+        name: "Me",
+        text: "(When I tried to look at Dain's knee, she flinched and pulled away.)",
+        night: true,
+        next: "day4_night_dain_secret"
+    },
+    "day4_night_dain_serious": {
+        name: "Dain",
+        text: "\"......\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_secret"
+    },
+    "day4_night_dain_secret": {
+        name: "Dain",
+        text: "\"...Fine. I was trying to hide it.\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_secret_2"
+    },
+    "day4_night_dain_secret_2": {
+        name: "Me",
+        text: "(Dain rolled up her knee brace. Her knee was badly swollen.)",
+        night: true,
+        next: "day4_night_dain_secret_3"
+    },
+    "day4_night_dain_secret_3": {
+        name: "Dain",
+        text: "\"...Torn ACL. I injured it last year. Had surgery but... it never fully healed.\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_secret_4"
+    },
+    "day4_night_dain_secret_4": {
+        name: "Me",
+        text: "\"...Last year?\"",
+        night: true,
+        next: "day4_night_dain_secret_5"
+    },
+    "day4_night_dain_secret_5": {
+        name: "Dain",
+        text: "\"The doctor said, 'Daily life is fine, but playing like before is too much.'\"",
+        night: true,
+        next: "day4_night_dain_secret_6"
+    },
+    "day4_night_dain_secret_6": {
+        name: "Dain",
+        text: "\"Athletic scholarship, going pro... All gone. Just like that.\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_dream"
+    },
+
+    // =========================================================================
+    // Dain's Dream and Frustration
+    // =========================================================================
+    "day4_night_dain_dream": {
+        name: "Me",
+        text: "(...For Dain, who lived for volleyball, that must have been a death sentence.)",
+        night: true,
+        next: "day4_night_dain_dream_2"
+    },
+    "day4_night_dain_dream_2": {
+        name: "Dain",
+        text: "\"...You know how I always smile? Nobody knows it's an act.\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_dream_3"
+    },
+    "day4_night_dain_dream_3": {
+        name: "Dain",
+        text: "\"'Dain is always so energetic!' Every time I hear that... I laugh for real. But inside, my knee burns every single day.\"",
+        night: true,
+        next: "day4_night_dain_dream_4"
+    },
+    "day4_night_dain_dream_4": {
+        name: "Dain",
+        text: "\"Even on our date today, when we were running around... it actually hurt. But I didn't want to show it.\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_dream_5"
+    },
+    "day4_night_dain_dream_5": {
+        name: "Dain",
+        text: "\"I know I need to let go. But... I just wanted to jump one more time. On this court.\"",
+        night: true,
+        next: "day4_night_dain_cry"
+    },
+    "day4_night_dain_cry": {
+        name: "Me",
+        text: "(Dain hugged the volleyball tight and lowered her head. Her shoulders were shaking. The girl who was always bright and cheerful... was crying.)",
+        night: true,
+        next: "day4_night_dain_cry_choice"
+    },
+    "day4_night_dain_cry_choice": {
+        name: "Me",
+        text: "(...What do I say?)",
+        night: true,
+        choices: [
+            {
+                text: "\"Your dream isn't just volleyball. Let's find a new dream together.\"",
+                next: "day4_night_dain_future",
+                stats: { Dain: { affinity: 15 } }
+            },
+            {
+                text: "\"You can cry. You don't have to pretend to be okay. Not with me.\"",
+                next: "day4_night_dain_tears_ok",
+                stats: { Dain: { affinity: 20 } },
+                setFlag: "day4_dain_tears"
+            },
+            {
+                text: "\"...Want me to toss one more? One last time.\"",
+                next: "day4_night_dain_last_spike",
+                stats: { Dain: { affinity: 12 } }
+            }
+        ]
+    },
+    "day4_night_dain_future": {
+        name: "Dain",
+        text: "\"...A new dream?\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_future_2"
+    },
+    "day4_night_dain_future_2": {
+        name: "Dain",
+        text: "\"...I've thought about it. Coaching, training... I do love teaching people.\"",
+        character: "assets/images/characters/dain_normal.png",
+        night: true,
+        next: "day4_night_dain_future_3"
+    },
+    "day4_night_dain_future_3": {
+        name: "Me",
+        text: "\"You'd be the most passionate coach in the world.\"",
+        night: true,
+        next: "day4_night_dain_future_4"
+    },
+    "day4_night_dain_future_4": {
+        name: "Dain",
+        text: "\"...Dummy, if you say things like that I'll cry again...\"",
+        character: "assets/images/characters/dain_shy.png",
+        night: true,
+        next: "day4_night_dain_resolve"
+    },
+    "day4_night_dain_tears_ok": {
+        name: "Dain",
+        text: "\"......\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_tears_ok_2"
+    },
+    "day4_night_dain_tears_ok_2": {
+        name: "Dain",
+        text: "\"...You dummy... if you say that... I'll actually cry...!!\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_tears_ok_3"
+    },
+    "day4_night_dain_tears_ok_3": {
+        name: "Me",
+        text: "(Dain buried her face in my chest and started sobbing. Her cries echoed through the empty gym.)",
+        night: true,
+        next: "day4_night_dain_tears_ok_4"
+    },
+    "day4_night_dain_tears_ok_4": {
+        name: "Dain",
+        text: "\"...I couldn't tell anyone... every day, alone... I was so scared...\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_resolve"
+    },
+    "day4_night_dain_last_spike": {
+        name: "Dain",
+        text: "\"...One last time?\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_last_spike_2"
+    },
+    "day4_night_dain_last_spike_2": {
+        name: "Me",
+        text: "\"Not 'last'—it's 'the last one before a new beginning.'\"",
+        night: true,
+        next: "day4_night_dain_last_spike_3"
+    },
+    "day4_night_dain_last_spike_3": {
+        name: "Me",
+        text: "(I tossed the ball. Dain gritted her teeth and jumped, slamming down the best spike I'd ever seen. She grabbed her knee on landing... but she was smiling.)",
+        night: true,
+        next: "day4_night_dain_last_spike_4"
+    },
+    "day4_night_dain_last_spike_4": {
+        name: "Dain",
+        text: "\"...Haha. It hurts. But... it felt amazing.\"",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "day4_night_dain_last_spike_5"
+    },
+    "day4_night_dain_last_spike_5": {
+        name: "Dain",
+        text: "\"...Thank you. I think I can really let go now.\"",
+        character: "assets/images/characters/dain_shy.png",
+        night: true,
+        next: "day4_night_dain_resolve"
+    },
+
+    // =========================================================================
+    // Dain's Resolve — A New Path
+    // =========================================================================
+    "day4_night_dain_resolve": {
+        name: "Dain",
+        text: "\"...Hey.\"",
+        character: "assets/images/characters/dain_normal.png",
+        night: true,
+        next: "day4_night_dain_resolve_2"
+    },
+    "day4_night_dain_resolve_2": {
+        name: "Dain",
+        text: "\"I've decided. I'm going to talk to my doctor properly and focus on rehabilitation.\"",
+        night: true,
+        next: "day4_night_dain_resolve_3"
+    },
+    "day4_night_dain_resolve_3": {
+        name: "Dain",
+        text: "\"Even if I can't play... this court is still my place.\"",
+        character: "assets/images/characters/dain_normal.png",
+        night: true,
+        next: "day4_night_dain_resolve_4"
+    },
+    "day4_night_dain_resolve_4": {
+        name: "Me",
+        text: "\"On or off the court, Dain is still Dain.\"",
+        night: true,
+        next: "day4_night_dain_resolve_end"
+    },
+    "day4_night_dain_resolve_end": {
+        name: "Dain",
+        text: "\"...Okay, I'll admit it. You really are boyfriend material.\"",
+        character: "assets/images/characters/dain_shy.png",
+        night: true,
+        setFlag: "day4_dain_truth_revealed",
+        next: "day4_night_dain_farewell"
+    },
+
+    // =========================================================================
+    // Farewell with Dain — Outside the Gym
+    // =========================================================================
+    "day4_night_dain_farewell": {
+        name: "Me",
+        text: "(We left the gym. The night air was cold, but Dain hooked her arm through mine as we walked.)",
+        background: "assets/images/background/street.png",
+        night: true,
+        next: "day4_night_dain_farewell_2"
+    },
+    "day4_night_dain_farewell_2": {
+        name: "Dain",
+        text: "\"...Hey. I totally lost my cool today. Crying and making a mess of myself.\"",
+        character: "assets/images/characters/dain_pout.png",
+        night: true,
+        next: "day4_night_dain_farewell_3"
+    },
+    "day4_night_dain_farewell_3": {
+        name: "Me",
+        text: "\"I liked that side of you too.\"",
+        night: true,
+        next: "day4_night_dain_farewell_4"
+    },
+    "day4_night_dain_farewell_4": {
+        name: "Dain",
+        text: "\"...Huh? Who says 'I liked it' about their crying girlfriend? Weirdo.\"",
+        character: "assets/images/characters/dain_pout.png",
+        night: true,
+        next: "day4_night_dain_farewell_5"
+    },
+    "day4_night_dain_farewell_5": {
+        name: "Dain",
+        text: "\"...But thanks. Really. Without you, I would've kept carrying this alone forever.\"",
+        character: "assets/images/characters/dain_shy.png",
+        night: true,
+        next: "day4_night_dain_farewell_6"
+    },
+    "day4_night_dain_farewell_6": {
+        name: "Dain",
+        text: "\"...Starting tomorrow, I'll smile for real. Not fake—for real.\"",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "day4_night_dain_home"
+    },
+    "day4_night_dain_home": {
+        name: "Me",
+        text: "(Back home. Dain's tears from the gym keep flashing before my eyes. The pain she hid behind her constant brightness... it weighs heavy on my heart.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        next: "day4_night_dain_home_2"
+    },
+    "day4_night_dain_home_2": {
+        name: "Me",
+        text: "(Tomorrow... I want it to be a day where Dain can smile from the heart. I'll be right there beside her.)",
         night: true,
         fade: true,
         next: "day4_final"
