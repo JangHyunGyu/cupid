@@ -63,6 +63,8 @@ Object.assign(SCENARIO[4], {
         text: "",
         branches: [
             { next: "day4_night_yuna_sneak", condition: "isDating_Yuna" },
+            { next: "day4_night_seoyeon_call", condition: "isDating_Seoyeon" },
+            { next: "day4_night_dain_gym", condition: "isDating_Dain" },
             { next: "day4_night_happy", condition: "day4_confession_accepted" },
             { next: "day4_night_regret", condition: "day4_waited" },
             { next: "day4_night_reflect" }
@@ -590,6 +592,792 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_home_2": {
         name: "나",
         text: "(유나가 1년 동안 혼자 짊어져 온 무게. 이제는 내가 함께 들어야 할 차례다.)",
+        night: true,
+        fade: true,
+        next: "day4_final"
+    },
+
+    // =========================================================================
+    // 서연 루트 — 완벽함의 무게, 서연의 진짜 모습
+    // =========================================================================
+    "day4_night_seoyeon_call": {
+        name: "나",
+        text: "(밤 9시. 서연에게서 전화가 왔다.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        bgm: "night1.mp3",
+        next: "day4_night_seoyeon_call_2"
+    },
+    "day4_night_seoyeon_call_2": {
+        name: "서연",
+        text: "\"…저기, 나인데. 바쁘지 않으면… 잠깐 나올 수 있어?\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_call_3"
+    },
+    "day4_night_seoyeon_call_3": {
+        name: "나",
+        text: "(서연의 목소리가 평소와 다르다. 웃음기가 없고, 어딘가 떨리는 것 같다.)",
+        night: true,
+        next: "day4_night_seoyeon_call_4"
+    },
+    "day4_night_seoyeon_call_4": {
+        name: "서연",
+        text: "\"…우리 집 앞 공원 알지? 거기서 기다릴게.\"",
+        night: true,
+        next: "day4_night_seoyeon_park"
+    },
+    "day4_night_seoyeon_park": {
+        name: "나",
+        text: "(공원에 도착했다. 벤치에 서연이 혼자 앉아 있었다. 평소의 단정한 교복 대신 편한 옷차림이다.)",
+        background: "assets/images/background/park.png",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_park_2"
+    },
+    "day4_night_seoyeon_park_2": {
+        name: "서연",
+        text: "\"…왔구나. 갑자기 불러서 미안해.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_park_3"
+    },
+    "day4_night_seoyeon_park_3": {
+        name: "나",
+        text: "(서연의 눈이 빨갛다. …울었던 건가?)",
+        night: true,
+        choices: [
+            {
+                text: "\"무슨 일이야? 괜찮아?\"",
+                next: "day4_night_seoyeon_concern",
+                stats: { Seoyeon: { affinity: 5 } }
+            },
+            {
+                text: "아무 말 없이 옆에 앉는다",
+                next: "day4_night_seoyeon_silent_sit",
+                stats: { Seoyeon: { affinity: 8 } }
+            }
+        ]
+    },
+    "day4_night_seoyeon_concern": {
+        name: "서연",
+        text: "\"……괜찮다고 하면 거짓말이겠지.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_open"
+    },
+    "day4_night_seoyeon_silent_sit": {
+        name: "서연",
+        text: "\"…… 고마워. 그냥 옆에 있어 주는 거, 제일 좋아.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_open"
+    },
+
+    // =========================================================================
+    // 서연의 고백 — 완벽함의 감옥
+    // =========================================================================
+    "day4_night_seoyeon_open": {
+        name: "서연",
+        text: "\"…오늘 엄마한테 전화가 왔어. 아빠랑 또 싸웠대.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_open_2"
+    },
+    "day4_night_seoyeon_open_2": {
+        name: "서연",
+        text: "\"우리 집… 겉으로는 멀쩡해 보이지? 넓은 집, 좋은 차, 학생회장 딸.\"",
+        night: true,
+        next: "day4_night_seoyeon_open_3"
+    },
+    "day4_night_seoyeon_open_3": {
+        name: "서연",
+        text: "\"근데 사실… 엄마 아빠는 1년째 같은 지붕 아래서 남남이야. 이혼 서류만 안 냈을 뿐.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_open_4"
+    },
+    "day4_night_seoyeon_open_4": {
+        name: "나",
+        text: "\"……서연.\"",
+        night: true,
+        next: "day4_night_seoyeon_open_5"
+    },
+    "day4_night_seoyeon_open_5": {
+        name: "서연",
+        text: "\"엄마가 말했어. '너라도 완벽해야 이 집이 유지된다'고. 그래서… 학생회장도, 성적도, 전부 놓을 수가 없었어.\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_open_6"
+    },
+    "day4_night_seoyeon_open_6": {
+        name: "서연",
+        text: "\"모두한테 웃어야 했어. '서연이는 항상 밝구나', '서연이는 뭐든 잘하네'. 그 말이… 점점 감옥 같았어.\"",
+        night: true,
+        next: "day4_night_seoyeon_open_7"
+    },
+    "day4_night_seoyeon_open_7": {
+        name: "서연",
+        text: "\"웃는 게 아니라 웃음을 '하고' 있었어. 매일.\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_tear"
+    },
+    "day4_night_seoyeon_tear": {
+        name: "나",
+        text: "(서연의 눈에서 눈물이 흘러내렸다. 가로등 불빛에 반짝이는 눈물을 보는 건 처음이다.)",
+        night: true,
+        next: "day4_night_seoyeon_tear_choice"
+    },
+    "day4_night_seoyeon_tear_choice": {
+        name: "나",
+        text: "(서연이 울고 있다. 처음 보는 모습이다.)",
+        night: true,
+        choices: [
+            {
+                text: "서연을 안아준다",
+                next: "day4_night_seoyeon_hug",
+                stats: { Seoyeon: { affinity: 15 } },
+                setFlag: "day4_hugged_seoyeon"
+            },
+            {
+                text: "새끼손가락을 내민다",
+                next: "day4_night_seoyeon_pinky",
+                stats: { Seoyeon: { affinity: 20 } },
+                setFlag: "day4_pinky_seoyeon"
+            }
+        ]
+    },
+    "day4_night_seoyeon_hug": {
+        name: "서연",
+        text: "\"…… ッ\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_hug_2"
+    },
+    "day4_night_seoyeon_hug_2": {
+        name: "나",
+        text: "(서연이 내 가슴에 얼굴을 묻었다. 작은 어깨가 떨리고 있었다.)",
+        night: true,
+        next: "day4_night_seoyeon_hug_3"
+    },
+    "day4_night_seoyeon_hug_3": {
+        name: "서연",
+        text: "\"…이렇게 울어본 거, 정말 오랜만이야. 누구 앞에서 우는 건… 처음이고.\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_real"
+    },
+    "day4_night_seoyeon_pinky": {
+        name: "나",
+        text: "\"약속할게. 서연이 울고 싶을 때, 나한테 울어도 돼.\"",
+        night: true,
+        next: "day4_night_seoyeon_pinky_2"
+    },
+    "day4_night_seoyeon_pinky_2": {
+        name: "서연",
+        text: "\"…… 새끼손가락?\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_pinky_3"
+    },
+    "day4_night_seoyeon_pinky_3": {
+        name: "나",
+        text: "(서연이 떨리는 손으로 새끼손가락을 걸었다. 그리고 참았던 울음이 터져 나왔다.)",
+        night: true,
+        next: "day4_night_seoyeon_pinky_4"
+    },
+    "day4_night_seoyeon_pinky_4": {
+        name: "서연",
+        text: "\"…바보야, 왜 이렇게… 나한테 잘해주는 건데……\"",
+        character: "assets/images/characters/seyoun_cry.png",
+        night: true,
+        next: "day4_night_seoyeon_real"
+    },
+
+    // =========================================================================
+    // 서연의 진짜 모습
+    // =========================================================================
+    "day4_night_seoyeon_real": {
+        name: "서연",
+        text: "\"…사실 오늘 데이트하면서도 무서웠어. 내가 이렇게 행복해도 되나. 이 행복도 곧 무너지는 거 아닌가.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_real_2"
+    },
+    "day4_night_seoyeon_real_2": {
+        name: "서연",
+        text: "\"넌… 완벽하지 않은 나도 괜찮아?\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        night: true,
+        next: "day4_night_seoyeon_real_choice"
+    },
+    "day4_night_seoyeon_real_choice": {
+        name: "나",
+        text: "(서연이 떨리는 눈으로 나를 올려다보고 있다.)",
+        night: true,
+        choices: [
+            {
+                text: "\"완벽한 서연보다, 지금 이 서연이 더 좋아.\"",
+                next: "day4_night_seoyeon_accept",
+                stats: { Seoyeon: { affinity: 20 } }
+            },
+            {
+                text: "\"학생회장 서연이 아니라, 그냥 서연이가 내 여자친구야.\"",
+                next: "day4_night_seoyeon_gf",
+                stats: { Seoyeon: { affinity: 15 } }
+            },
+            {
+                text: "\"솔직히 완벽한 줄만 알았어. 하지만… 이런 모습도 보여줘서 고마워.\"",
+                next: "day4_night_seoyeon_honest",
+                stats: { Seoyeon: { affinity: 10 } }
+            }
+        ]
+    },
+    "day4_night_seoyeon_accept": {
+        name: "서연",
+        text: "\"……정말?\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_accept_2"
+    },
+    "day4_night_seoyeon_accept_2": {
+        name: "서연",
+        text: "\"…그 말, 평생 잊지 않을 거야. 잊으면… 새끼손가락 걸었으니까.\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        next: "day4_night_seoyeon_resolve"
+    },
+    "day4_night_seoyeon_gf": {
+        name: "서연",
+        text: "\"여, 여자친구……\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        next: "day4_night_seoyeon_gf_2"
+    },
+    "day4_night_seoyeon_gf_2": {
+        name: "서연",
+        text: "\"…아, 심장이 두근거려서 죽을 것 같아. 그런 말 갑자기 하면 어떡해……\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        next: "day4_night_seoyeon_resolve"
+    },
+    "day4_night_seoyeon_honest": {
+        name: "서연",
+        text: "\"…… 고마워. 진심이지?\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_honest_2"
+    },
+    "day4_night_seoyeon_honest_2": {
+        name: "서연",
+        text: "\"앞으로는… 너한테만은 연기 안 할게. 약속해.\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        night: true,
+        next: "day4_night_seoyeon_resolve"
+    },
+
+    // =========================================================================
+    // 서연의 결의 — 자기 자신을 되찾겠다는 결심
+    // =========================================================================
+    "day4_night_seoyeon_resolve": {
+        name: "서연",
+        text: "\"…있잖아. 나 결심했어.\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        night: true,
+        next: "day4_night_seoyeon_resolve_2"
+    },
+    "day4_night_seoyeon_resolve_2": {
+        name: "서연",
+        text: "\"엄마한테 말할 거야. 나는 '완벽한 딸'이기 전에 나 자신이고 싶다고.\"",
+        night: true,
+        next: "day4_night_seoyeon_resolve_3"
+    },
+    "day4_night_seoyeon_resolve_3": {
+        name: "서연",
+        text: "\"무섭지만… 이제 혼자가 아니니까.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_resolve_4"
+    },
+    "day4_night_seoyeon_resolve_4": {
+        name: "나",
+        text: "\"같이 가자. 어디든.\"",
+        night: true,
+        next: "day4_night_seoyeon_resolve_end"
+    },
+    "day4_night_seoyeon_resolve_end": {
+        name: "서연",
+        text: "\"……응.\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        setFlag: "day4_seoyeon_real_self",
+        next: "day4_night_seoyeon_farewell"
+    },
+
+    // =========================================================================
+    // 서연과의 이별 — 밤 산책
+    // =========================================================================
+    "day4_night_seoyeon_farewell": {
+        name: "나",
+        text: "(공원을 나와 집 앞까지 함께 걸었다. 서연이 내 팔에 살짝 기대어 걸었다.)",
+        background: "assets/images/background/street.png",
+        night: true,
+        next: "day4_night_seoyeon_farewell_2"
+    },
+    "day4_night_seoyeon_farewell_2": {
+        name: "서연",
+        text: "\"…오늘 못난 모습 보여줬는데, 도망 안 갔네.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_farewell_3"
+    },
+    "day4_night_seoyeon_farewell_3": {
+        name: "나",
+        text: "\"도망은. 오히려 더 좋아졌는데?\"",
+        night: true,
+        next: "day4_night_seoyeon_farewell_4"
+    },
+    "day4_night_seoyeon_farewell_4": {
+        name: "서연",
+        text: "\"……반칙이야, 진짜.\"",
+        character: "assets/images/characters/seyoun_shy2.png",
+        night: true,
+        next: "day4_night_seoyeon_farewell_5"
+    },
+    "day4_night_seoyeon_farewell_5": {
+        name: "나",
+        text: "(서연이 돌아서면서 작은 목소리로 말했다.)",
+        night: true,
+        next: "day4_night_seoyeon_farewell_6"
+    },
+    "day4_night_seoyeon_farewell_6": {
+        name: "서연",
+        text: "\"…오늘, 처음으로 '내가 나여도 괜찮다'고 느꼈어. 고마워.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        night: true,
+        next: "day4_night_seoyeon_home"
+    },
+    "day4_night_seoyeon_home": {
+        name: "나",
+        text: "(집에 돌아왔다. 서연의 눈물이 자꾸 떠오른다. 완벽했던 학생회장의 진짜 모습… 그 무거운 짐을 나눠 들고 싶다.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        next: "day4_night_seoyeon_home_2"
+    },
+    "day4_night_seoyeon_home_2": {
+        name: "나",
+        text: "(내일은… 서연이 웃는 이유가 '연기'가 아니라 '진심'이 되도록 해주고 싶다.)",
+        night: true,
+        fade: true,
+        next: "day4_final"
+    },
+
+    // =========================================================================
+    // 다인 루트 — 꿈의 대가, 무릎의 비밀
+    // =========================================================================
+    "day4_night_dain_gym": {
+        name: "나",
+        text: "(밤 9시 반. 다인에게서 메시지가 왔다. '야 지금 시간 돼?ㅋㅋ 학교 오면 안 되지??')",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        bgm: "night1.mp3",
+        next: "day4_night_dain_gym_2"
+    },
+    "day4_night_dain_gym_2": {
+        name: "나",
+        text: "(곧바로 또 메시지가 왔다. '아 그냥 와ㅋㅋ 체육관 뒷문 열어놨음!')",
+        night: true,
+        next: "day4_night_dain_gym_3"
+    },
+    "day4_night_dain_gym_3": {
+        name: "나",
+        text: "(다인이 이 시간에 학교 체육관이라니. 뭔가 이상한데… 가보자.)",
+        night: true,
+        next: "day4_night_dain_arrive"
+    },
+    "day4_night_dain_arrive": {
+        name: "나",
+        text: "(체육관에 들어서자, 비상등만 켜진 어두운 코트 위에 다인이 혼자 배구공을 튀기고 있었다.)",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_normal.png",
+        night: true,
+        next: "day4_night_dain_arrive_2"
+    },
+    "day4_night_dain_arrive_2": {
+        name: "다인",
+        text: "\"오! 진짜 왔어?! 헤헤, 역시 내 남자친구!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "day4_night_dain_arrive_3"
+    },
+    "day4_night_dain_arrive_3": {
+        name: "나",
+        text: "(그런데… 뭔가 이상하다. 다인이 평소보다 더 힘껏 웃고 있는 것 같다.)",
+        night: true,
+        next: "day4_night_dain_spike"
+    },
+    "day4_night_dain_spike": {
+        name: "다인",
+        text: "\"토스 올려줘! 한 번만! 내 스파이크 보여줄게!!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "day4_night_dain_spike_2"
+    },
+    "day4_night_dain_spike_2": {
+        name: "나",
+        text: "(다인에게 토스를 올려줬다. 다인이 높이 뛰어올라 스파이크를 내리찍는다.)",
+        night: true,
+        next: "day4_night_dain_spike_3"
+    },
+    "day4_night_dain_spike_3": {
+        name: "나",
+        text: "(착지하는 순간— 다인이 오른쪽 무릎을 움켜잡고 쪼그려 앉았다.)",
+        night: true,
+        next: "day4_night_dain_hurt"
+    },
+    "day4_night_dain_hurt": {
+        name: "다인",
+        text: "\"…… ッ!!\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_hurt_2"
+    },
+    "day4_night_dain_hurt_2": {
+        name: "나",
+        text: "\"다인!!\"",
+        night: true,
+        next: "day4_night_dain_hurt_3"
+    },
+    "day4_night_dain_hurt_3": {
+        name: "다인",
+        text: "\"아, 아냐!! 괜찮아!! 그냥 삐끗한 거야 ㅋㅋ 별거 아…\"",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "day4_night_dain_hurt_4"
+    },
+    "day4_night_dain_hurt_4": {
+        name: "나",
+        text: "(다인이 웃고 있지만, 무릎을 잡은 손이 하얗게 질려 있다.)",
+        night: true,
+        choices: [
+            {
+                text: "\"거짓말하지 마. 어디 봐.\"",
+                next: "day4_night_dain_check",
+                stats: { Dain: { affinity: 8 } }
+            },
+            {
+                text: "\"다인. 괜찮지 않잖아.\"",
+                next: "day4_night_dain_serious",
+                stats: { Dain: { affinity: 10 } }
+            }
+        ]
+    },
+
+    // =========================================================================
+    // 다인의 비밀 — 무릎 부상
+    // =========================================================================
+    "day4_night_dain_check": {
+        name: "나",
+        text: "(다인의 무릎을 보려 하자, 다인이 화들짝 뒤로 물러났다.)",
+        night: true,
+        next: "day4_night_dain_secret"
+    },
+    "day4_night_dain_serious": {
+        name: "다인",
+        text: "\"……\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_secret"
+    },
+    "day4_night_dain_secret": {
+        name: "다인",
+        text: "\"…… 알았어. 숨기려 했는데.\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_secret_2"
+    },
+    "day4_night_dain_secret_2": {
+        name: "나",
+        text: "(다인이 무릎 보호대를 걷어 올렸다. 무릎이 심하게 부어 있었다.)",
+        night: true,
+        next: "day4_night_dain_secret_3"
+    },
+    "day4_night_dain_secret_3": {
+        name: "다인",
+        text: "\"…전방 십자인대. 작년에 다쳤어. 수술했는데… 완치가 안 됐어.\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_secret_4"
+    },
+    "day4_night_dain_secret_4": {
+        name: "나",
+        text: "\"……작년에?\"",
+        night: true,
+        next: "day4_night_dain_secret_5"
+    },
+    "day4_night_dain_secret_5": {
+        name: "다인",
+        text: "\"의사 선생님이 그랬어. '일상생활은 괜찮지만, 이전처럼 뛰는 건 무리'라고.\"",
+        night: true,
+        next: "day4_night_dain_secret_6"
+    },
+    "day4_night_dain_secret_6": {
+        name: "다인",
+        text: "\"체육대 진학도, 프로 선수도… 다 물 건너갔어.\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_dream"
+    },
+
+    // =========================================================================
+    // 다인의 꿈과 좌절
+    // =========================================================================
+    "day4_night_dain_dream": {
+        name: "나",
+        text: "(…배구가 전부였던 다인에게, 그건 사형선고나 마찬가지였을 거다.)",
+        night: true,
+        next: "day4_night_dain_dream_2"
+    },
+    "day4_night_dain_dream_2": {
+        name: "다인",
+        text: "\"…맨날 밝은 척 웃은 거, 알아? 아무도 모르게.\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_dream_3"
+    },
+    "day4_night_dain_dream_3": {
+        name: "다인",
+        text: "\"'다인이는 항상 에너지 넘치네!' 그 말 들을 때마다… 진짜 웃긴다. 속으론 매일 무릎이 불타는 것 같은데.\"",
+        night: true,
+        next: "day4_night_dain_dream_4"
+    },
+    "day4_night_dain_dream_4": {
+        name: "다인",
+        text: "\"오늘 너랑 데이트하면서 뛰어다닐 때도… 사실 아팠어. 근데 티 내고 싶지 않았어.\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_dream_5"
+    },
+    "day4_night_dain_dream_5": {
+        name: "다인",
+        text: "\"포기해야 하는 건 알아. 근데… 그냥 한 번만 더 뛰고 싶었어. 이 코트에서.\"",
+        night: true,
+        next: "day4_night_dain_cry"
+    },
+    "day4_night_dain_cry": {
+        name: "나",
+        text: "(다인이 배구공을 꼭 안고 고개를 숙였다. 어깨가 떨리고 있었다. 항상 밝기만 했던 다인이… 울고 있다.)",
+        night: true,
+        next: "day4_night_dain_cry_choice"
+    },
+    "day4_night_dain_cry_choice": {
+        name: "나",
+        text: "(……뭐라고 해야 하지.)",
+        night: true,
+        choices: [
+            {
+                text: "\"다인의 꿈이 배구만은 아닐 거야. 새로운 꿈 같이 찾자.\"",
+                next: "day4_night_dain_future",
+                stats: { Dain: { affinity: 15 } }
+            },
+            {
+                text: "\"울어도 돼. 밝은 척 안 해도 돼. 나한테는.\"",
+                next: "day4_night_dain_tears_ok",
+                stats: { Dain: { affinity: 20 } },
+                setFlag: "day4_dain_tears"
+            },
+            {
+                text: "\"…한 번 더 토스 올려줄까? 마지막으로.\"",
+                next: "day4_night_dain_last_spike",
+                stats: { Dain: { affinity: 12 } }
+            }
+        ]
+    },
+    "day4_night_dain_future": {
+        name: "다인",
+        text: "\"…새로운 꿈?\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_future_2"
+    },
+    "day4_night_dain_future_2": {
+        name: "다인",
+        text: "\"…코치라든가, 트레이너라든가… 그런 거 생각해 본 적은 있어. 가르치는 건 좋아하니까.\"",
+        character: "assets/images/characters/dain_normal.png",
+        night: true,
+        next: "day4_night_dain_future_3"
+    },
+    "day4_night_dain_future_3": {
+        name: "나",
+        text: "\"다인이면 세상에서 제일 열정적인 코치 될 거야.\"",
+        night: true,
+        next: "day4_night_dain_future_4"
+    },
+    "day4_night_dain_future_4": {
+        name: "다인",
+        text: "\"…바보, 갑자기 그런 말 하면 울잖아……\"",
+        character: "assets/images/characters/dain_shy.png",
+        night: true,
+        next: "day4_night_dain_resolve"
+    },
+    "day4_night_dain_tears_ok": {
+        name: "다인",
+        text: "\"……\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_tears_ok_2"
+    },
+    "day4_night_dain_tears_ok_2": {
+        name: "다인",
+        text: "\"…… 이 바보야…… 그런 말 하면…… 진짜 울잖아……!!\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_tears_ok_3"
+    },
+    "day4_night_dain_tears_ok_3": {
+        name: "나",
+        text: "(다인이 내 가슴팍에 얼굴을 파묻고 엉엉 울기 시작했다. 체육관에 울음소리가 울려 퍼졌다.)",
+        night: true,
+        next: "day4_night_dain_tears_ok_4"
+    },
+    "day4_night_dain_tears_ok_4": {
+        name: "다인",
+        text: "\"…아무한테도 말 못 했어…… 혼자서 매일…… 무서웠단 말이야……\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_resolve"
+    },
+    "day4_night_dain_last_spike": {
+        name: "다인",
+        text: "\"…… 마지막?\"",
+        character: "assets/images/characters/dain_sad.png",
+        night: true,
+        next: "day4_night_dain_last_spike_2"
+    },
+    "day4_night_dain_last_spike_2": {
+        name: "나",
+        text: "\"마지막이 아니라, '새로운 시작 전의 마지막 한 발'이야.\"",
+        night: true,
+        next: "day4_night_dain_last_spike_3"
+    },
+    "day4_night_dain_last_spike_3": {
+        name: "나",
+        text: "(토스를 올려줬다. 다인이 이를 악물고 뛰어올라 최고의 스파이크를 내리찍었다. 착지와 함께 무릎을 잡았지만… 웃고 있었다.)",
+        night: true,
+        next: "day4_night_dain_last_spike_4"
+    },
+    "day4_night_dain_last_spike_4": {
+        name: "다인",
+        text: "\"…ㅋㅋ 아프다. 근데… 시원하다.\"",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "day4_night_dain_last_spike_5"
+    },
+    "day4_night_dain_last_spike_5": {
+        name: "다인",
+        text: "\"…고마워. 이걸로 진짜 보내줄 수 있을 것 같아.\"",
+        character: "assets/images/characters/dain_shy.png",
+        night: true,
+        next: "day4_night_dain_resolve"
+    },
+
+    // =========================================================================
+    // 다인의 결의 — 새로운 길
+    // =========================================================================
+    "day4_night_dain_resolve": {
+        name: "다인",
+        text: "\"…야.\"",
+        character: "assets/images/characters/dain_normal.png",
+        night: true,
+        next: "day4_night_dain_resolve_2"
+    },
+    "day4_night_dain_resolve_2": {
+        name: "다인",
+        text: "\"나 결심했어. 주치의 선생님한테 제대로 이야기하고, 재활에 집중할 거야.\"",
+        night: true,
+        next: "day4_night_dain_resolve_3"
+    },
+    "day4_night_dain_resolve_3": {
+        name: "다인",
+        text: "\"뛸 수 없어도… 이 코트가 내 자리인 건 변하지 않으니까.\"",
+        character: "assets/images/characters/dain_normal.png",
+        night: true,
+        next: "day4_night_dain_resolve_4"
+    },
+    "day4_night_dain_resolve_4": {
+        name: "나",
+        text: "\"코트 밖에서도 다인은 다인이야.\"",
+        night: true,
+        next: "day4_night_dain_resolve_end"
+    },
+    "day4_night_dain_resolve_end": {
+        name: "다인",
+        text: "\"…… 너 진짜 남자친구 맞다, 인정.\"",
+        character: "assets/images/characters/dain_shy.png",
+        night: true,
+        setFlag: "day4_dain_truth_revealed",
+        next: "day4_night_dain_farewell"
+    },
+
+    // =========================================================================
+    // 다인과의 이별 — 체육관 앞
+    // =========================================================================
+    "day4_night_dain_farewell": {
+        name: "나",
+        text: "(체육관을 나왔다. 밤 공기가 차갑지만, 다인이 내 팔짱을 끼고 걸었다.)",
+        background: "assets/images/background/street.png",
+        night: true,
+        next: "day4_night_dain_farewell_2"
+    },
+    "day4_night_dain_farewell_2": {
+        name: "다인",
+        text: "\"…야. 나 오늘 완전 폼 구겼다. 울고불고 난리법석.\"",
+        character: "assets/images/characters/dain_pout.png",
+        night: true,
+        next: "day4_night_dain_farewell_3"
+    },
+    "day4_night_dain_farewell_3": {
+        name: "나",
+        text: "\"그 모습도 좋았는데?\"",
+        night: true,
+        next: "day4_night_dain_farewell_4"
+    },
+    "day4_night_dain_farewell_4": {
+        name: "다인",
+        text: "\"…ㅎ, 변태 아냐? 우는 여자친구 보면서 '좋았다'니.\"",
+        character: "assets/images/characters/dain_pout.png",
+        night: true,
+        next: "day4_night_dain_farewell_5"
+    },
+    "day4_night_dain_farewell_5": {
+        name: "다인",
+        text: "\"…근데, 고마워. 진짜로. 네가 아니었으면 영영 혼자 안고 갔을 거야.\"",
+        character: "assets/images/characters/dain_shy.png",
+        night: true,
+        next: "day4_night_dain_farewell_6"
+    },
+    "day4_night_dain_farewell_6": {
+        name: "다인",
+        text: "\"…내일부터는 진짜로 웃을게. 가짜 말고, 진짜로.\"",
+        character: "assets/images/characters/dain_laugh.png",
+        night: true,
+        next: "day4_night_dain_home"
+    },
+    "day4_night_dain_home": {
+        name: "나",
+        text: "(집에 돌아왔다. 체육관에서의 다인의 눈물이 떠오른다. 항상 밝기만 했던 다인이 감추고 있던 아픔… 그 무게가 가슴에 남아 있다.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        next: "day4_night_dain_home_2"
+    },
+    "day4_night_dain_home_2": {
+        name: "나",
+        text: "(내일은 다인이 진심으로 웃을 수 있는 하루가 되길. 옆에서 지켜봐 줘야지.)",
         night: true,
         fade: true,
         next: "day4_final"
