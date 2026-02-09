@@ -65,6 +65,8 @@ Object.assign(SCENARIO[4], {
             { next: "day4_night_yuna_sneak", condition: "isDating_Yuna" },
             { next: "day4_night_seoyeon_call", condition: "isDating_Seoyeon" },
             { next: "day4_night_dain_gym", condition: "isDating_Dain" },
+            { next: "day4_night_teacher_call", condition: "isDating_Teacher" },
+            { next: "day4_night_nurse_msg", condition: "isDating_Nurse" },
             { next: "day4_night_happy", condition: "day4_confession_accepted" },
             { next: "day4_night_regret", condition: "day4_waited" },
             { next: "day4_night_reflect" }
@@ -1378,6 +1380,862 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_home_2": {
         name: "나",
         text: "(내일은 다인이 진심으로 웃을 수 있는 하루가 되길. 옆에서 지켜봐 줘야지.)",
+        night: true,
+        fade: true,
+        next: "day4_final"
+    },
+
+    // =========================================================================
+    // 담임선생님 루트 — 비밀의 무게, 선생님이 아닌 여자로서
+    // =========================================================================
+    "day4_night_teacher_call": {
+        name: "나",
+        text: "(밤 9시. 선생님한테 전화가 왔다.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        bgm: "night1.mp3",
+        next: "day4_night_teacher_call_2"
+    },
+    "day4_night_teacher_call_2": {
+        name: "담임선생님",
+        text: "\"…여보세요? 나야. 지금… 시간 괜찮아?\"",
+        character: "assets/images/characters/teacher_normal.png",
+        night: true,
+        next: "day4_night_teacher_call_3"
+    },
+    "day4_night_teacher_call_3": {
+        name: "나",
+        text: "(선생님 목소리가 평소와 다르다. 교실에서의 당당한 목소리가 아니라… 어딘가 지쳐 있는 느낌.)",
+        night: true,
+        next: "day4_night_teacher_call_4"
+    },
+    "day4_night_teacher_call_4": {
+        name: "담임선생님",
+        text: "\"…학교 근처 카페 알지? 거기서 잠깐 볼 수 있을까.\"",
+        night: true,
+        next: "day4_night_teacher_cafe"
+    },
+    "day4_night_teacher_cafe": {
+        name: "나",
+        text: "(카페에 도착했다. 구석 자리에 선생님이 앉아 있었다. 평소 정장 차림이 아니라 캐주얼한 옷을 입고 있었다.)",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_cafe_2"
+    },
+    "day4_night_teacher_cafe_2": {
+        name: "담임선생님",
+        text: "\"…와줘서 고마워. 갑자기 불러서 미안해.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_cafe_3"
+    },
+    "day4_night_teacher_cafe_3": {
+        name: "나",
+        text: "(선생님 눈이 붉다. …울었던 건가?)",
+        night: true,
+        choices: [
+            {
+                text: "\"무슨 일 있었어요?\"",
+                next: "day4_night_teacher_concern",
+                stats: { Teacher: { affinity: 5 } }
+            },
+            {
+                text: "커피를 건네며 조용히 기다린다",
+                next: "day4_night_teacher_wait",
+                stats: { Teacher: { affinity: 8 } }
+            }
+        ]
+    },
+    "day4_night_teacher_concern": {
+        name: "담임선생님",
+        text: "\"…일이라기보다는, 오늘 좀 많이 생각을 했어.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_open"
+    },
+    "day4_night_teacher_wait": {
+        name: "담임선생님",
+        text: "\"…고마워. 이렇게 아무 말 없이 옆에 있어주는 거… 네가 참 좋아.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_open"
+    },
+
+    // =========================================================================
+    // 담임선생님의 고백 — 비밀의 무게
+    // =========================================================================
+    "day4_night_teacher_open": {
+        name: "담임선생님",
+        text: "\"…오늘 교무회의에서 교감 선생님이 그러시더라. '학생과 개인적으로 친하게 지내는 건 조심해야 한다'고.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_open_2"
+    },
+    "day4_night_teacher_open_2": {
+        name: "담임선생님",
+        text: "\"직접적으로 우리 얘기를 한 건 아닐 수도 있어. 하지만… 심장이 멈추는 줄 알았어.\"",
+        night: true,
+        next: "day4_night_teacher_open_3"
+    },
+    "day4_night_teacher_open_3": {
+        name: "담임선생님",
+        text: "\"나… 선생이잖아. 너의 담임이잖아. 이러면 안 되는 거 알아.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_open_4"
+    },
+    "day4_night_teacher_open_4": {
+        name: "나",
+        text: "\"……선생님.\"",
+        night: true,
+        next: "day4_night_teacher_open_5"
+    },
+    "day4_night_teacher_open_5": {
+        name: "담임선생님",
+        text: "\"근데 돌아가는 길에 자꾸 네 생각이 나는 거야. '지금 뭐 하고 있을까', '밥은 먹었을까'…\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_open_6"
+    },
+    "day4_night_teacher_open_6": {
+        name: "담임선생님",
+        text: "\"교사로서 자격이 없는 걸까. 아니면… 이 마음이 진짜라서 이러는 걸까.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_tear"
+    },
+    "day4_night_teacher_tear": {
+        name: "나",
+        text: "(선생님이 커피잔을 꼭 쥐고 고개를 숙였다. 어깨가 미세하게 떨리고 있었다.)",
+        night: true,
+        next: "day4_night_teacher_tear_2"
+    },
+    "day4_night_teacher_tear_2": {
+        name: "담임선생님",
+        text: "\"…하하, 미안. 선생이 학생 앞에서 이러면 안 되는데.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_tear_choice"
+    },
+    "day4_night_teacher_tear_choice": {
+        name: "나",
+        text: "(선생님의 눈가에 눈물이 맺혀 있다.)",
+        night: true,
+        choices: [
+            {
+                text: "손을 잡는다",
+                next: "day4_night_teacher_hold",
+                stats: { Teacher: { affinity: 15 } },
+                setFlag: "day4_held_teacher_hand"
+            },
+            {
+                text: "\"지금은 선생님이 아니라, 한 사람의 여자로 봐도 돼요\"",
+                next: "day4_night_teacher_woman",
+                stats: { Teacher: { affinity: 20 } },
+                setFlag: "day4_teacher_as_woman"
+            }
+        ]
+    },
+    "day4_night_teacher_hold": {
+        name: "담임선생님",
+        text: "\"…… !\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_hold_2"
+    },
+    "day4_night_teacher_hold_2": {
+        name: "나",
+        text: "(테이블 밑으로 선생님의 손을 잡았다. 차가웠던 손이 점점 따뜻해졌다.)",
+        night: true,
+        next: "day4_night_teacher_hold_3"
+    },
+    "day4_night_teacher_hold_3": {
+        name: "담임선생님",
+        text: "\"…여기서 이러면 안 되는데. 누가 볼 수도 있잖아.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_hold_4"
+    },
+    "day4_night_teacher_hold_4": {
+        name: "담임선생님",
+        text: "\"…근데 놓기 싫다.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_real"
+    },
+    "day4_night_teacher_woman": {
+        name: "담임선생님",
+        text: "\"…뭐?\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_woman_2"
+    },
+    "day4_night_teacher_woman_2": {
+        name: "나",
+        text: "\"선생님이기 전에, 한 명의 사람이잖아요. 울고 싶을 때 울어도 되는 거예요.\"",
+        night: true,
+        next: "day4_night_teacher_woman_3"
+    },
+    "day4_night_teacher_woman_3": {
+        name: "담임선생님",
+        text: "\"……너, 진짜.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_woman_4"
+    },
+    "day4_night_teacher_woman_4": {
+        name: "담임선생님",
+        text: "\"…그런 말 하면 진짜 울어버린다, 바보야.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_real"
+    },
+
+    // =========================================================================
+    // 담임선생님의 진심 — 교사와 여자 사이
+    // =========================================================================
+    "day4_night_teacher_real": {
+        name: "담임선생님",
+        text: "\"…있잖아. 나 처음 교사 됐을 때, '절대 학생한테 감정 갖지 말자' 그렇게 다짐했었어.\"",
+        character: "assets/images/characters/teacher_normal.png",
+        night: true,
+        next: "day4_night_teacher_real_2"
+    },
+    "day4_night_teacher_real_2": {
+        name: "담임선생님",
+        text: "\"근데 너는… 어느 순간부터 그 다짐을 무너뜨리더라.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_real_3"
+    },
+    "day4_night_teacher_real_3": {
+        name: "담임선생님",
+        text: "\"지각해서 혼냈는데 오히려 웃으면서 '선생님 오늘 좀 피곤해 보여요, 괜찮아요?' 그러잖아.\"",
+        night: true,
+        next: "day4_night_teacher_real_4"
+    },
+    "day4_night_teacher_real_4": {
+        name: "담임선생님",
+        text: "\"그때부터… 자꾸 신경 쓰이기 시작했어.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_real_choice"
+    },
+    "day4_night_teacher_real_choice": {
+        name: "나",
+        text: "(선생님이 떨리는 목소리로 진심을 말하고 있다.)",
+        night: true,
+        choices: [
+            {
+                text: "\"졸업하면 당당하게 옆에 있을게요\"",
+                next: "day4_night_teacher_graduate",
+                stats: { Teacher: { affinity: 20 } }
+            },
+            {
+                text: "\"지금 이 순간이 소중해요. 그걸로 충분해요\"",
+                next: "day4_night_teacher_present",
+                stats: { Teacher: { affinity: 15 } }
+            },
+            {
+                text: "\"선생님이 힘들면 그만둬도 괜찮아요\"",
+                next: "day4_night_teacher_give_up",
+                stats: { Teacher: { affinity: 5 } }
+            }
+        ]
+    },
+    "day4_night_teacher_graduate": {
+        name: "담임선생님",
+        text: "\"…졸업하면?\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_graduate_2"
+    },
+    "day4_night_teacher_graduate_2": {
+        name: "담임선생님",
+        text: "\"…그때까지 기다려 줄 거야?\"",
+        night: true,
+        next: "day4_night_teacher_graduate_3"
+    },
+    "day4_night_teacher_graduate_3": {
+        name: "나",
+        text: "\"기다리는 게 아니라, 그때까지 더 멋진 사람이 돼서 올게요.\"",
+        night: true,
+        next: "day4_night_teacher_graduate_4"
+    },
+    "day4_night_teacher_graduate_4": {
+        name: "담임선생님",
+        text: "\"…하, 진짜. 나보다 훨씬 어른스러운 거 아니야.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day4_night_teacher_resolve"
+    },
+    "day4_night_teacher_present": {
+        name: "담임선생님",
+        text: "\"…지금 이 순간?\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_present_2"
+    },
+    "day4_night_teacher_present_2": {
+        name: "나",
+        text: "\"내일 걱정은 내일 해요. 지금은 그냥 같이 있고 싶어요.\"",
+        night: true,
+        next: "day4_night_teacher_present_3"
+    },
+    "day4_night_teacher_present_3": {
+        name: "담임선생님",
+        text: "\"…그래, 맞아. 지금 이 시간이 소중한 거지.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day4_night_teacher_resolve"
+    },
+    "day4_night_teacher_give_up": {
+        name: "담임선생님",
+        text: "\"…그만두라고?\"",
+        character: "assets/images/characters/teacher_angry.png",
+        night: true,
+        next: "day4_night_teacher_give_up_2"
+    },
+    "day4_night_teacher_give_up_2": {
+        name: "담임선생님",
+        text: "\"…바보. 그만두고 싶어서 고민하는 게 아니야.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_give_up_3"
+    },
+    "day4_night_teacher_give_up_3": {
+        name: "담임선생님",
+        text: "\"너를 좋아하는 마음이 진짜라서… 그래서 무서운 거야.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_resolve"
+    },
+
+    // =========================================================================
+    // 담임선생님의 다짐
+    // =========================================================================
+    "day4_night_teacher_resolve": {
+        name: "담임선생님",
+        text: "\"…있잖아.\"",
+        character: "assets/images/characters/teacher_normal.png",
+        night: true,
+        next: "day4_night_teacher_resolve_2"
+    },
+    "day4_night_teacher_resolve_2": {
+        name: "담임선생님",
+        text: "\"나 결심했어. 이 마음을 부끄러워하지 않기로.\"",
+        night: true,
+        next: "day4_night_teacher_resolve_3"
+    },
+    "day4_night_teacher_resolve_3": {
+        name: "담임선생님",
+        text: "\"교실에서는 너의 선생님이지만… 이 시간만큼은 그냥 '나'로 있을게.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day4_night_teacher_resolve_4"
+    },
+    "day4_night_teacher_resolve_4": {
+        name: "나",
+        text: "\"그 모습이 더 좋아요.\"",
+        night: true,
+        next: "day4_night_teacher_resolve_end"
+    },
+    "day4_night_teacher_resolve_end": {
+        name: "담임선생님",
+        text: "\"…고마워. 진짜 고마워.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        setFlag: "day4_teacher_secret_shared",
+        next: "day4_night_teacher_farewell"
+    },
+
+    // =========================================================================
+    // 담임선생님과의 헤어짐 — 밤거리
+    // =========================================================================
+    "day4_night_teacher_farewell": {
+        name: "나",
+        text: "(카페를 나왔다. 밤거리를 나란히 걸었다. 학교 밖에서 이렇게 걷는 건 처음이다.)",
+        background: "assets/images/background/street.png",
+        night: true,
+        next: "day4_night_teacher_farewell_2"
+    },
+    "day4_night_teacher_farewell_2": {
+        name: "담임선생님",
+        text: "\"…신기하다. 학교 밖에서 같이 걸으니까 진짜 연인 같아.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_farewell_3"
+    },
+    "day4_night_teacher_farewell_3": {
+        name: "나",
+        text: "\"연인 맞잖아요.\"",
+        night: true,
+        next: "day4_night_teacher_farewell_4"
+    },
+    "day4_night_teacher_farewell_4": {
+        name: "담임선생님",
+        text: "\"…!! 그, 그런 말 갑자기 하면 심장에 안 좋다고.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_farewell_5"
+    },
+    "day4_night_teacher_farewell_5": {
+        name: "담임선생님",
+        text: "\"…내일 학교에서 보면 또 '선생님' 모드로 돌아갈게. 미리 사과할게, 쌀쌀맞아도 이해해줘.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day4_night_teacher_farewell_6"
+    },
+    "day4_night_teacher_farewell_6": {
+        name: "담임선생님",
+        text: "\"…근데 마음만은 항상 너한테 있을 거야. 알지?\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_home"
+    },
+    "day4_night_teacher_home": {
+        name: "나",
+        text: "(집에 돌아왔다. 카페에서의 선생님 모습이 떠오른다. 항상 당당하고 완벽했던 선생님이… 한 명의 여자로서 보여준 눈물과 떨림.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        next: "day4_night_teacher_home_2"
+    },
+    "day4_night_teacher_home_2": {
+        name: "나",
+        text: "(이 비밀은 무겁지만… 그만큼 소중하다. 선생님의 그 마음을 절대 가볍게 여기지 않을 거다.)",
+        night: true,
+        fade: true,
+        next: "day4_final"
+    },
+
+    // =========================================================================
+    // 보건선생님 루트 — 가면 뒤의 외로움, 진짜 따뜻함
+    // =========================================================================
+    "day4_night_nurse_msg": {
+        name: "나",
+        text: "(밤 10시. 보건선생님한테 메시지가 왔다. '자기야~ 아직 안 잤지? ㅎㅎ 심심한데 나올래~?')",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        bgm: "night1.mp3",
+        next: "day4_night_nurse_msg_2"
+    },
+    "day4_night_nurse_msg_2": {
+        name: "나",
+        text: "(…평소처럼 장난스러운 메시지인데, 왜 이 시간에? 뭔가 이상하다.)",
+        night: true,
+        next: "day4_night_nurse_msg_3"
+    },
+    "day4_night_nurse_msg_3": {
+        name: "나",
+        text: "(곧바로 답장했다. '어디로 가면 돼요?')",
+        night: true,
+        next: "day4_night_nurse_msg_4"
+    },
+    "day4_night_nurse_msg_4": {
+        name: "나",
+        text: "('우리 학교 보건실 ㅋㅋ 뒷문 열어놨어~' …보건실에서?)",
+        night: true,
+        next: "day4_night_nurse_arrive"
+    },
+    "day4_night_nurse_arrive": {
+        name: "나",
+        text: "(학교에 도착했다. 보건실 문을 열자, 작은 스탠드 하나만 켜진 어두운 방 안에 선생님이 있었다.)",
+        background: "assets/images/background/school.png",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_arrive_2"
+    },
+    "day4_night_nurse_arrive_2": {
+        name: "보건선생님",
+        text: "\"어머~ 진짜 왔네? 착한 남자친구~\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_arrive_3"
+    },
+    "day4_night_nurse_arrive_3": {
+        name: "나",
+        text: "(평소처럼 장난스럽게 웃고 있는데… 눈 밑에 다크서클이 짙다. 그리고 책상 위에 빈 커피캔이 여러 개.)",
+        night: true,
+        choices: [
+            {
+                text: "\"선생님, 많이 피곤해 보여요\"",
+                next: "day4_night_nurse_tired",
+                stats: { Nurse: { affinity: 8 } }
+            },
+            {
+                text: "\"진짜 이유가 뭐예요?\"",
+                next: "day4_night_nurse_real_reason",
+                stats: { Nurse: { affinity: 5 } }
+            }
+        ]
+    },
+    "day4_night_nurse_tired": {
+        name: "보건선생님",
+        text: "\"에? 그래~? 아하하, 요즘 좀 바빠서~ 괜찮아 괜찮아~\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_mask"
+    },
+    "day4_night_nurse_real_reason": {
+        name: "보건선생님",
+        text: "\"…진짜 이유? 그냥 보고 싶었으니까~\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_mask"
+    },
+
+    // =========================================================================
+    // 보건선생님의 가면 — 장난 뒤의 외로움
+    // =========================================================================
+    "day4_night_nurse_mask": {
+        name: "나",
+        text: "(선생님이 웃고 있지만, 어딘가 무리하고 있다는 느낌이 든다.)",
+        night: true,
+        next: "day4_night_nurse_mask_2"
+    },
+    "day4_night_nurse_mask_2": {
+        name: "보건선생님",
+        text: "\"…있잖아, 오늘 학교에서 좀 힘든 일이 있었어.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_mask_3"
+    },
+    "day4_night_nurse_mask_3": {
+        name: "보건선생님",
+        text: "\"다른 선생님들이 그러더라. '보건 선생님은 항상 밝아서 좋겠다, 고민 없어 보인다'고.\"",
+        night: true,
+        next: "day4_night_nurse_mask_4"
+    },
+    "day4_night_nurse_mask_4": {
+        name: "보건선생님",
+        text: "\"…고민 없어 보인다. 하하. 그 말이 제일 아팠어.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_mask_5"
+    },
+    "day4_night_nurse_mask_5": {
+        name: "보건선생님",
+        text: "\"나도 힘든데… 아무도 안 물어보더라. '괜찮아?' 한마디.\"",
+        night: true,
+        next: "day4_night_nurse_mask_6"
+    },
+    "day4_night_nurse_mask_6": {
+        name: "보건선생님",
+        text: "\"보건실에 아이들이 올 때마다 웃어주고, 다독여주고. 근데… 나는 누가 다독여주지?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_lonely"
+    },
+    "day4_night_nurse_lonely": {
+        name: "보건선생님",
+        text: "\"…집에 가면 아무도 없어. 혼자 사니까.\"",
+        night: true,
+        next: "day4_night_nurse_lonely_2"
+    },
+    "day4_night_nurse_lonely_2": {
+        name: "보건선생님",
+        text: "\"그래서… 자꾸 학교에 늦게까지 남게 되더라. 이 보건실이라도 있으면 외롭지 않으니까.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_lonely_3"
+    },
+    "day4_night_nurse_lonely_3": {
+        name: "나",
+        text: "(선생님이 웃음을 멈췄다. 처음으로 장난기 없는, 진짜 얼굴을 보여주고 있다.)",
+        night: true,
+        next: "day4_night_nurse_lonely_choice"
+    },
+    "day4_night_nurse_lonely_choice": {
+        name: "나",
+        text: "(선생님의 진짜 모습이 보인다. 뭐라고 해야 할까.)",
+        night: true,
+        choices: [
+            {
+                text: "옆에 앉아서 안아준다",
+                next: "day4_night_nurse_hug",
+                stats: { Nurse: { affinity: 20 } },
+                setFlag: "day4_hugged_nurse"
+            },
+            {
+                text: "\"이제는 제가 선생님을 돌봐드릴게요\"",
+                next: "day4_night_nurse_care",
+                stats: { Nurse: { affinity: 15 } },
+                setFlag: "day4_nurse_cared"
+            }
+        ]
+    },
+    "day4_night_nurse_hug": {
+        name: "보건선생님",
+        text: "\"……!!\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_hug_2"
+    },
+    "day4_night_nurse_hug_2": {
+        name: "보건선생님",
+        text: "\"…야, 갑자기… 뭐야…\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_hug_3"
+    },
+    "day4_night_nurse_hug_3": {
+        name: "나",
+        text: "(선생님이 처음에는 당황했지만… 곧 내 옷을 꼭 쥐었다.)",
+        night: true,
+        next: "day4_night_nurse_hug_4"
+    },
+    "day4_night_nurse_hug_4": {
+        name: "보건선생님",
+        text: "\"…이상해. 내가 남한테 안기고 싶었던 적이 있었나.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_hug_5"
+    },
+    "day4_night_nurse_hug_5": {
+        name: "보건선생님",
+        text: "\"…조금만 이러고 있자. 조금만.\"",
+        night: true,
+        next: "day4_night_nurse_truth"
+    },
+    "day4_night_nurse_care": {
+        name: "보건선생님",
+        text: "\"…뭐? 네가 나를?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_care_2"
+    },
+    "day4_night_nurse_care_2": {
+        name: "나",
+        text: "\"선생님은 항상 다른 사람을 돌보잖아요. 이제는 돌봄 받을 차례예요.\"",
+        night: true,
+        next: "day4_night_nurse_care_3"
+    },
+    "day4_night_nurse_care_3": {
+        name: "보건선생님",
+        text: "\"…하하. 어쩜 이렇게 정곡을 찌르니.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_care_4"
+    },
+    "day4_night_nurse_care_4": {
+        name: "보건선생님",
+        text: "\"…진짜 그래줄 거야?\"",
+        night: true,
+        next: "day4_night_nurse_truth"
+    },
+
+    // =========================================================================
+    // 보건선생님의 진심 — 가면을 벗다
+    // =========================================================================
+    "day4_night_nurse_truth": {
+        name: "보건선생님",
+        text: "\"…사실 나, 보건 교사가 된 이유가 있어.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_truth_2"
+    },
+    "day4_night_nurse_truth_2": {
+        name: "보건선생님",
+        text: "\"고등학교 때, 친한 친구가 아파서 오래 결석했거든. 그때 보건실 선생님이 정말 잘 챙겨줬어.\"",
+        night: true,
+        next: "day4_night_nurse_truth_3"
+    },
+    "day4_night_nurse_truth_3": {
+        name: "보건선생님",
+        text: "\"나도 그런 사람이 되고 싶었어. 아픈 아이들의 편이 되어주는 사람.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_truth_4"
+    },
+    "day4_night_nurse_truth_4": {
+        name: "보건선생님",
+        text: "\"근데 막상 되고 보니까… '보건 선생님은 장난이나 치는 사람' 취급이더라.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_truth_5"
+    },
+    "day4_night_nurse_truth_5": {
+        name: "보건선생님",
+        text: "\"진지하게 굴면 분위기 망친다고 하니까… 자연스럽게 웃음으로 감추게 됐어.\"",
+        night: true,
+        next: "day4_night_nurse_truth_6"
+    },
+    "day4_night_nurse_truth_6": {
+        name: "보건선생님",
+        text: "\"…너한테도 그랬어. 장난치면서 다가갔지. 진심을 보여주는 게… 무서웠으니까.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_truth_choice"
+    },
+    "day4_night_nurse_truth_choice": {
+        name: "나",
+        text: "(선생님의 목소리가 떨리고 있다.)",
+        night: true,
+        choices: [
+            {
+                text: "\"장난치는 선생님도, 지금의 선생님도 다 좋아요\"",
+                next: "day4_night_nurse_accept_all",
+                stats: { Nurse: { affinity: 20 } }
+            },
+            {
+                text: "\"진심을 보여줘서 고마워요\"",
+                next: "day4_night_nurse_thanks",
+                stats: { Nurse: { affinity: 15 } }
+            },
+            {
+                text: "\"이제 안 무서워해도 돼요. 제가 있으니까\"",
+                next: "day4_night_nurse_safe",
+                stats: { Nurse: { affinity: 18 } }
+            }
+        ]
+    },
+    "day4_night_nurse_accept_all": {
+        name: "보건선생님",
+        text: "\"…다 좋다고?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_accept_all_2"
+    },
+    "day4_night_nurse_accept_all_2": {
+        name: "보건선생님",
+        text: "\"…야, 그런 말 하면 진짜 반하잖아.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_accept_all_3"
+    },
+    "day4_night_nurse_accept_all_3": {
+        name: "보건선생님",
+        text: "\"…아, 이미 반했구나. 하하.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_resolve"
+    },
+    "day4_night_nurse_thanks": {
+        name: "보건선생님",
+        text: "\"…고맙다고? 내가?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_thanks_2"
+    },
+    "day4_night_nurse_thanks_2": {
+        name: "보건선생님",
+        text: "\"…너한테 진심을 보여주는 게 이렇게 편할 줄 몰랐어.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_resolve"
+    },
+    "day4_night_nurse_safe": {
+        name: "보건선생님",
+        text: "\"…안 무서워해도 된다고?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_safe_2"
+    },
+    "day4_night_nurse_safe_2": {
+        name: "보건선생님",
+        text: "\"…너 진짜 반칙이다. 나이만 어리지, 완전 어른이잖아.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_resolve"
+    },
+
+    // =========================================================================
+    // 보건선생님의 다짐 — 진짜 웃음
+    // =========================================================================
+    "day4_night_nurse_resolve": {
+        name: "보건선생님",
+        text: "\"…있잖아.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_resolve_2"
+    },
+    "day4_night_nurse_resolve_2": {
+        name: "보건선생님",
+        text: "\"이제부터 너한테는 가면 안 쓸게. 웃을 때 진짜로 웃고, 슬플 때 슬프다고 말할게.\"",
+        night: true,
+        next: "day4_night_nurse_resolve_3"
+    },
+    "day4_night_nurse_resolve_3": {
+        name: "보건선생님",
+        text: "\"너라면… 진짜 나를 받아줄 수 있을 것 같아.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_resolve_4"
+    },
+    "day4_night_nurse_resolve_4": {
+        name: "나",
+        text: "\"당연하죠. 그 모습이 제일 예뻐요.\"",
+        night: true,
+        next: "day4_night_nurse_resolve_end"
+    },
+    "day4_night_nurse_resolve_end": {
+        name: "보건선생님",
+        text: "\"……!! 야, 진짜 심장 터지겠다.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        setFlag: "day4_nurse_mask_off",
+        next: "day4_night_nurse_farewell"
+    },
+
+    // =========================================================================
+    // 보건선생님과의 헤어짐 — 학교 밖
+    // =========================================================================
+    "day4_night_nurse_farewell": {
+        name: "나",
+        text: "(보건실을 나와서 학교 밖으로 걸었다. 선생님이 내 팔짱을 끼었다.)",
+        background: "assets/images/background/street.png",
+        night: true,
+        next: "day4_night_nurse_farewell_2"
+    },
+    "day4_night_nurse_farewell_2": {
+        name: "보건선생님",
+        text: "\"…오늘 나 많이 찌질했지? 맨날 장난만 치던 사람이 갑자기 울보가 됐으니까.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_farewell_3"
+    },
+    "day4_night_nurse_farewell_3": {
+        name: "나",
+        text: "\"찌질한 게 아니라 솔직한 거예요.\"",
+        night: true,
+        next: "day4_night_nurse_farewell_4"
+    },
+    "day4_night_nurse_farewell_4": {
+        name: "보건선생님",
+        text: "\"…하. 진짜 너 때문에 미치겠다. 이런 애한테 반하다니.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_farewell_5"
+    },
+    "day4_night_nurse_farewell_5": {
+        name: "보건선생님",
+        text: "\"…내일 보건실 오면 특별 서비스 해줄게. 뭐냐고? 비밀~\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_farewell_6"
+    },
+    "day4_night_nurse_farewell_6": {
+        name: "보건선생님",
+        text: "\"…농담이야. 그냥… 내일도 보고 싶을 거야. 그것만 알아줘.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_home"
+    },
+    "day4_night_nurse_home": {
+        name: "나",
+        text: "(집에 돌아왔다. 보건실에서 본 선생님의 진짜 얼굴이 떠오른다. 항상 장난치며 웃던 사람이… 사실은 가장 외로웠던 사람.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        next: "day4_night_nurse_home_2"
+    },
+    "day4_night_nurse_home_2": {
+        name: "나",
+        text: "(이제는 선생님이 혼자가 아니다. 내가 옆에 있으니까. 내일은 진짜 웃음을 볼 수 있겠지.)",
         night: true,
         fade: true,
         next: "day4_final"
