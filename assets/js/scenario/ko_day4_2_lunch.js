@@ -79,7 +79,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_seoyeon_react": {
         name: "나",
-        text: "(서연이가 웃으며 다가온다. 원피스를 입고 온 서연이가… 평소와 다르게 보인다.)",
+        text: "(서연이가 웃으며 다가온다. 학교 밖에서 만나니… 평소와 다르게 보인다.)",
         next: "day4_seoyeon_compliment"
     },
     "day4_seoyeon_compliment": {
@@ -92,7 +92,7 @@ Object.assign(SCENARIO[4], {
                 stats: { Seoyeon: { affinity: 10 } }
             },
             {
-                text: "\"원피스 잘 어울린다!\"",
+                text: "\"오늘 되게 밝아 보인다!\"",
                 next: "day4_seoyeon_happy",
                 stats: { Seoyeon: { affinity: 5 } }
             }
@@ -121,7 +121,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_yuna_react": {
         name: "나",
-        text: "(유나가 카페 앞에 서 있었다. 평소 교복 차림과 달리 검은 원피스를 입고 있다. 분위기가 달라.)",
+        text: "(유나가 카페 앞에 서 있었다. 학교 밖에서 보니 분위기가 달라.)",
         next: "day4_yuna_compliment"
     },
     "day4_yuna_compliment": {
@@ -162,7 +162,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_dain_react": {
         name: "나",
-        text: "(다인이가 손을 흔들며 뛰어온다. 연습복이 아니라 밝은 색 옷을 입고 있으니 분위기가 또 다르다.)",
+        text: "(다인이가 손을 흔들며 뛰어온다. 학교 밖에서 만나니 분위기가 또 다르다.)",
         next: "day4_dain_compliment"
     },
     "day4_dain_compliment": {
@@ -244,7 +244,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_teacher_react": {
         name: "나",
-        text: "(담임선생님이 카페 앞에서 웃고 있다. 캐주얼한 옷차림이 평소와 달라서 순간 누구인지 못 알아볼 뻔했다.)",
+        text: "(담임선생님이 카페 앞에서 웃고 있다. 학교 밖에서 만나니 느낌이 달라서 순간 누구인지 못 알아볼 뻔했다.)",
         next: "day4_teacher_compliment"
     },
     "day4_teacher_compliment": {
@@ -252,7 +252,7 @@ Object.assign(SCENARIO[4], {
         text: "(뭐라고 해야 하지?)",
         choices: [
             {
-                text: "\"선생님 사복이 되게 잘 어울리세요.\"",
+                text: "\"선생님 오늘 되게 예쁘세요.\"",
                 next: "day4_teacher_blush",
                 stats: { Teacher: { affinity: 10 } }
             },
