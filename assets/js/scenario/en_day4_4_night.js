@@ -65,6 +65,8 @@ Object.assign(SCENARIO[4], {
             { next: "day4_night_yuna_sneak", condition: "isDating_Yuna" },
             { next: "day4_night_seoyeon_call", condition: "isDating_Seoyeon" },
             { next: "day4_night_dain_gym", condition: "isDating_Dain" },
+            { next: "day4_night_teacher_call", condition: "isDating_Teacher" },
+            { next: "day4_night_nurse_msg", condition: "isDating_Nurse" },
             { next: "day4_night_happy", condition: "day4_confession_accepted" },
             { next: "day4_night_regret", condition: "day4_waited" },
             { next: "day4_night_reflect" }
@@ -1378,6 +1380,862 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_home_2": {
         name: "Me",
         text: "(Tomorrow... I want it to be a day where Dain can smile from the heart. I'll be right there beside her.)",
+        night: true,
+        fade: true,
+        next: "day4_final"
+    },
+
+    // =========================================================================
+    // Homeroom Teacher Route — The Weight of a Secret, A Woman Behind the Teacher
+    // =========================================================================
+    "day4_night_teacher_call": {
+        name: "Me",
+        text: "(9 PM. A call from the teacher.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        bgm: "night1.mp3",
+        next: "day4_night_teacher_call_2"
+    },
+    "day4_night_teacher_call_2": {
+        name: "Homeroom Teacher",
+        text: "\"...Hello? It's me. Are you... free right now?\"",
+        character: "assets/images/characters/teacher_normal.png",
+        night: true,
+        next: "day4_night_teacher_call_3"
+    },
+    "day4_night_teacher_call_3": {
+        name: "Me",
+        text: "(Her voice sounds different from usual. Not the confident voice from the classroom... it sounds like she's about to break.)",
+        night: true,
+        next: "day4_night_teacher_call_4"
+    },
+    "day4_night_teacher_call_4": {
+        name: "Homeroom Teacher",
+        text: "\"...There's a café near the school. Can we meet there?\"",
+        night: true,
+        next: "day4_night_teacher_cafe"
+    },
+    "day4_night_teacher_cafe": {
+        name: "Me",
+        text: "(I arrived at the café. She was sitting in a corner booth. Instead of her usual neat outfit, she was in casual clothes.)",
+        background: "assets/images/background/cafe.png",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_cafe_2"
+    },
+    "day4_night_teacher_cafe_2": {
+        name: "Homeroom Teacher",
+        text: "\"...Thanks for coming. Sorry for calling you out so suddenly.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_cafe_3"
+    },
+    "day4_night_teacher_cafe_3": {
+        name: "Me",
+        text: "(Her eyes are red. ...Was she crying?)",
+        night: true,
+        choices: [
+            {
+                text: "\"Did something happen?\"",
+                next: "day4_night_teacher_concern",
+                stats: { Teacher: { affinity: 5 } }
+            },
+            {
+                text: "Offer her coffee and wait quietly",
+                next: "day4_night_teacher_wait",
+                stats: { Teacher: { affinity: 8 } }
+            }
+        ]
+    },
+    "day4_night_teacher_concern": {
+        name: "Homeroom Teacher",
+        text: "\"...It's not so much that something happened. I just... thought a lot today.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_open"
+    },
+    "day4_night_teacher_wait": {
+        name: "Homeroom Teacher",
+        text: "\"...Thank you. Just sitting next to me without saying anything... I really like that about you.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_open"
+    },
+
+    // =========================================================================
+    // Teacher's Confession — The Weight of a Secret
+    // =========================================================================
+    "day4_night_teacher_open": {
+        name: "Homeroom Teacher",
+        text: "\"...At the faculty meeting today, the vice principal said, 'Be careful about getting too personally close to students.'\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_open_2"
+    },
+    "day4_night_teacher_open_2": {
+        name: "Homeroom Teacher",
+        text: "\"Maybe it wasn't about us directly. But... my heart nearly stopped.\"",
+        night: true,
+        next: "day4_night_teacher_open_3"
+    },
+    "day4_night_teacher_open_3": {
+        name: "Homeroom Teacher",
+        text: "\"I'm... a teacher. Your homeroom teacher. I know this isn't right.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_open_4"
+    },
+    "day4_night_teacher_open_4": {
+        name: "Me",
+        text: "\"......\"",
+        night: true,
+        next: "day4_night_teacher_open_5"
+    },
+    "day4_night_teacher_open_5": {
+        name: "Homeroom Teacher",
+        text: "\"But on the way home, I kept thinking about you. 'What is he doing right now?' 'Did he eat?'...\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_open_6"
+    },
+    "day4_night_teacher_open_6": {
+        name: "Homeroom Teacher",
+        text: "\"Am I not qualified to be a teacher? Or... is it because these feelings are real that I feel this way?\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_tear"
+    },
+    "day4_night_teacher_tear": {
+        name: "Me",
+        text: "(She gripped her coffee cup tightly and lowered her head. Her shoulders were trembling ever so slightly.)",
+        night: true,
+        next: "day4_night_teacher_tear_2"
+    },
+    "day4_night_teacher_tear_2": {
+        name: "Homeroom Teacher",
+        text: "\"...Ha, sorry. A teacher shouldn't be like this in front of a student.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_tear_choice"
+    },
+    "day4_night_teacher_tear_choice": {
+        name: "Me",
+        text: "(There are tears glistening at the corner of her eyes.)",
+        night: true,
+        choices: [
+            {
+                text: "Hold her hand",
+                next: "day4_night_teacher_hold",
+                stats: { Teacher: { affinity: 15 } },
+                setFlag: "day4_held_teacher_hand"
+            },
+            {
+                text: "\"Right now, you're not my teacher—you're a woman I care about\"",
+                next: "day4_night_teacher_woman",
+                stats: { Teacher: { affinity: 20 } },
+                setFlag: "day4_teacher_as_woman"
+            }
+        ]
+    },
+    "day4_night_teacher_hold": {
+        name: "Homeroom Teacher",
+        text: "\"......!\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_hold_2"
+    },
+    "day4_night_teacher_hold_2": {
+        name: "Me",
+        text: "(I reached under the table and held her hand. Her cold fingers slowly grew warm.)",
+        night: true,
+        next: "day4_night_teacher_hold_3"
+    },
+    "day4_night_teacher_hold_3": {
+        name: "Homeroom Teacher",
+        text: "\"...We shouldn't do this here. Someone might see.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_hold_4"
+    },
+    "day4_night_teacher_hold_4": {
+        name: "Homeroom Teacher",
+        text: "\"...But I don't want to let go.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_real"
+    },
+    "day4_night_teacher_woman": {
+        name: "Homeroom Teacher",
+        text: "\"...What?\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_woman_2"
+    },
+    "day4_night_teacher_woman_2": {
+        name: "Me",
+        text: "\"Before you're a teacher, you're a person. It's okay to cry when you want to cry.\"",
+        night: true,
+        next: "day4_night_teacher_woman_3"
+    },
+    "day4_night_teacher_woman_3": {
+        name: "Homeroom Teacher",
+        text: "\"...You, honestly.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_woman_4"
+    },
+    "day4_night_teacher_woman_4": {
+        name: "Homeroom Teacher",
+        text: "\"...If you say things like that, I'll really start crying, you dummy.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_real"
+    },
+
+    // =========================================================================
+    // Teacher's True Feelings — Between Teacher and Woman
+    // =========================================================================
+    "day4_night_teacher_real": {
+        name: "Homeroom Teacher",
+        text: "\"...You know, when I first became a teacher, I promised myself I'd never catch feelings for a student.\"",
+        character: "assets/images/characters/teacher_normal.png",
+        night: true,
+        next: "day4_night_teacher_real_2"
+    },
+    "day4_night_teacher_real_2": {
+        name: "Homeroom Teacher",
+        text: "\"But then you came along... and broke that promise before I even noticed.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_real_3"
+    },
+    "day4_night_teacher_real_3": {
+        name: "Homeroom Teacher",
+        text: "\"When I scolded you for being late, you just smiled and said, 'You look tired today, are you okay?' instead of making excuses.\"",
+        night: true,
+        next: "day4_night_teacher_real_4"
+    },
+    "day4_night_teacher_real_4": {
+        name: "Homeroom Teacher",
+        text: "\"That's when... I started noticing you.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_real_choice"
+    },
+    "day4_night_teacher_real_choice": {
+        name: "Me",
+        text: "(She's speaking her heart with a trembling voice.)",
+        night: true,
+        choices: [
+            {
+                text: "\"After I graduate, I'll stand proudly by your side\"",
+                next: "day4_night_teacher_graduate",
+                stats: { Teacher: { affinity: 20 } }
+            },
+            {
+                text: "\"This moment right now is precious. That's enough for me\"",
+                next: "day4_night_teacher_present",
+                stats: { Teacher: { affinity: 15 } }
+            },
+            {
+                text: "\"If it's too hard for you, we can stop\"",
+                next: "day4_night_teacher_give_up",
+                stats: { Teacher: { affinity: 5 } }
+            }
+        ]
+    },
+    "day4_night_teacher_graduate": {
+        name: "Homeroom Teacher",
+        text: "\"...After you graduate?\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_graduate_2"
+    },
+    "day4_night_teacher_graduate_2": {
+        name: "Homeroom Teacher",
+        text: "\"...Will you wait until then?\"",
+        night: true,
+        next: "day4_night_teacher_graduate_3"
+    },
+    "day4_night_teacher_graduate_3": {
+        name: "Me",
+        text: "\"I'm not waiting—I'm going to become someone even better by then.\"",
+        night: true,
+        next: "day4_night_teacher_graduate_4"
+    },
+    "day4_night_teacher_graduate_4": {
+        name: "Homeroom Teacher",
+        text: "\"...God, seriously. You're way more mature than I am.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day4_night_teacher_resolve"
+    },
+    "day4_night_teacher_present": {
+        name: "Homeroom Teacher",
+        text: "\"...This moment right now?\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_present_2"
+    },
+    "day4_night_teacher_present_2": {
+        name: "Me",
+        text: "\"We can worry about tomorrow when it comes. Right now, I just want to be here with you.\"",
+        night: true,
+        next: "day4_night_teacher_present_3"
+    },
+    "day4_night_teacher_present_3": {
+        name: "Homeroom Teacher",
+        text: "\"...You're right. Right now... this time together is what matters.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day4_night_teacher_resolve"
+    },
+    "day4_night_teacher_give_up": {
+        name: "Homeroom Teacher",
+        text: "\"...Stop?\"",
+        character: "assets/images/characters/teacher_angry.png",
+        night: true,
+        next: "day4_night_teacher_give_up_2"
+    },
+    "day4_night_teacher_give_up_2": {
+        name: "Homeroom Teacher",
+        text: "\"...You dummy. I'm not struggling because I want to stop.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_give_up_3"
+    },
+    "day4_night_teacher_give_up_3": {
+        name: "Homeroom Teacher",
+        text: "\"It's because my feelings are real... that's what scares me.\"",
+        character: "assets/images/characters/teacher_sad.png",
+        night: true,
+        next: "day4_night_teacher_resolve"
+    },
+
+    // =========================================================================
+    // Teacher's Resolve
+    // =========================================================================
+    "day4_night_teacher_resolve": {
+        name: "Homeroom Teacher",
+        text: "\"...You know what?\"",
+        character: "assets/images/characters/teacher_normal.png",
+        night: true,
+        next: "day4_night_teacher_resolve_2"
+    },
+    "day4_night_teacher_resolve_2": {
+        name: "Homeroom Teacher",
+        text: "\"I've made up my mind. I'm not going to be ashamed of these feelings anymore.\"",
+        night: true,
+        next: "day4_night_teacher_resolve_3"
+    },
+    "day4_night_teacher_resolve_3": {
+        name: "Homeroom Teacher",
+        text: "\"In the classroom, I'm your teacher. But in moments like this... I'll just be me.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day4_night_teacher_resolve_4"
+    },
+    "day4_night_teacher_resolve_4": {
+        name: "Me",
+        text: "\"I like that version of you even more.\"",
+        night: true,
+        next: "day4_night_teacher_resolve_end"
+    },
+    "day4_night_teacher_resolve_end": {
+        name: "Homeroom Teacher",
+        text: "\"...Thank you. Really, thank you.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        setFlag: "day4_teacher_secret_shared",
+        next: "day4_night_teacher_farewell"
+    },
+
+    // =========================================================================
+    // Farewell with Teacher — Night Street
+    // =========================================================================
+    "day4_night_teacher_farewell": {
+        name: "Me",
+        text: "(We left the café. Walking side by side down the night street. It's the first time we've walked together outside of school.)",
+        background: "assets/images/background/street.png",
+        night: true,
+        next: "day4_night_teacher_farewell_2"
+    },
+    "day4_night_teacher_farewell_2": {
+        name: "Homeroom Teacher",
+        text: "\"...It feels strange. Walking together outside of school... it actually feels like we're a real couple.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_farewell_3"
+    },
+    "day4_night_teacher_farewell_3": {
+        name: "Me",
+        text: "\"We are a real couple.\"",
+        night: true,
+        next: "day4_night_teacher_farewell_4"
+    },
+    "day4_night_teacher_farewell_4": {
+        name: "Homeroom Teacher",
+        text: "\"...!! D-Don't just say things like that out of nowhere, it's bad for my heart.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_farewell_5"
+    },
+    "day4_night_teacher_farewell_5": {
+        name: "Homeroom Teacher",
+        text: "\"...At school tomorrow, I'll be back in 'teacher mode.' I apologize in advance if I seem cold—please understand.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        night: true,
+        next: "day4_night_teacher_farewell_6"
+    },
+    "day4_night_teacher_farewell_6": {
+        name: "Homeroom Teacher",
+        text: "\"...But my heart will always be with you. Don't forget that.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        night: true,
+        next: "day4_night_teacher_home"
+    },
+    "day4_night_teacher_home": {
+        name: "Me",
+        text: "(Back home. The image of her at the café keeps coming back to me. The always confident, perfect teacher... showing her tears and vulnerability as just a woman.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        next: "day4_night_teacher_home_2"
+    },
+    "day4_night_teacher_home_2": {
+        name: "Me",
+        text: "(This secret is daunting... but it's precious. I'll never take her feelings lightly.)",
+        night: true,
+        fade: true,
+        next: "day4_final"
+    },
+
+    // =========================================================================
+    // School Nurse Route — Loneliness Behind the Mask, Real Warmth
+    // =========================================================================
+    "day4_night_nurse_msg": {
+        name: "Me",
+        text: "(10 PM. A message from the nurse. 'Hey babe~ still up? lol I'm bored, come hang out~')",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        bgm: "night1.mp3",
+        next: "day4_night_nurse_msg_2"
+    },
+    "day4_night_nurse_msg_2": {
+        name: "Me",
+        text: "(...Her usual playful message, but why this late? Something feels off.)",
+        night: true,
+        next: "day4_night_nurse_msg_3"
+    },
+    "day4_night_nurse_msg_3": {
+        name: "Me",
+        text: "(I replied right away. 'Where should I go?')",
+        night: true,
+        next: "day4_night_nurse_msg_4"
+    },
+    "day4_night_nurse_msg_4": {
+        name: "Me",
+        text: "('The nurse's office at school lol~ back door's open~' ...The nurse's office?)",
+        night: true,
+        next: "day4_night_nurse_arrive"
+    },
+    "day4_night_nurse_arrive": {
+        name: "Me",
+        text: "(I arrived at the school. When I opened the nurse's office door, the room was dark with only a small lamp on. She was there.)",
+        background: "assets/images/background/school.png",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_arrive_2"
+    },
+    "day4_night_nurse_arrive_2": {
+        name: "School Nurse",
+        text: "\"Oh my~ you actually came? What a good boyfriend~\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_arrive_3"
+    },
+    "day4_night_nurse_arrive_3": {
+        name: "Me",
+        text: "(She's smiling as usual, but... there are dark circles under her eyes. And several empty coffee cans on the desk.)",
+        night: true,
+        choices: [
+            {
+                text: "\"You look really tired\"",
+                next: "day4_night_nurse_tired",
+                stats: { Nurse: { affinity: 8 } }
+            },
+            {
+                text: "\"What's the real reason you called me here?\"",
+                next: "day4_night_nurse_real_reason",
+                stats: { Nurse: { affinity: 5 } }
+            }
+        ]
+    },
+    "day4_night_nurse_tired": {
+        name: "School Nurse",
+        text: "\"Hm? Do I? Ahaha, just been a little busy~ I'm fine, I'm fine~\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_mask"
+    },
+    "day4_night_nurse_real_reason": {
+        name: "School Nurse",
+        text: "\"...The real reason? I just wanted to see you~\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_mask"
+    },
+
+    // =========================================================================
+    // Nurse's Mask — Loneliness Behind the Jokes
+    // =========================================================================
+    "day4_night_nurse_mask": {
+        name: "Me",
+        text: "(She's smiling, but something feels forced. Like she's pushing too hard.)",
+        night: true,
+        next: "day4_night_nurse_mask_2"
+    },
+    "day4_night_nurse_mask_2": {
+        name: "School Nurse",
+        text: "\"...Actually, something kind of tough happened at school today.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_mask_3"
+    },
+    "day4_night_nurse_mask_3": {
+        name: "School Nurse",
+        text: "\"The other teachers said, 'The nurse is always so cheerful—must be nice having no worries.'\"",
+        night: true,
+        next: "day4_night_nurse_mask_4"
+    },
+    "day4_night_nurse_mask_4": {
+        name: "School Nurse",
+        text: "\"...'No worries.' Haha. That one... actually stung the most.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_mask_5"
+    },
+    "day4_night_nurse_mask_5": {
+        name: "School Nurse",
+        text: "\"I was struggling too... but nobody asked. Not even once. Not a single 'are you okay?'\"",
+        night: true,
+        next: "day4_night_nurse_mask_6"
+    },
+    "day4_night_nurse_mask_6": {
+        name: "School Nurse",
+        text: "\"In the nurse's office, kids come in and I smile for them, take care of them. But... who takes care of me?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_lonely"
+    },
+    "day4_night_nurse_lonely": {
+        name: "School Nurse",
+        text: "\"...When I go home, there's nobody. I live alone.\"",
+        night: true,
+        next: "day4_night_nurse_lonely_2"
+    },
+    "day4_night_nurse_lonely_2": {
+        name: "School Nurse",
+        text: "\"So... I started staying late at school. At least in this nurse's office, I don't feel so alone.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_lonely_3"
+    },
+    "day4_night_nurse_lonely_3": {
+        name: "Me",
+        text: "(Her smile faded. For the first time, she's showing me her real face—without the jokes, without the teasing.)",
+        night: true,
+        next: "day4_night_nurse_lonely_choice"
+    },
+    "day4_night_nurse_lonely_choice": {
+        name: "Me",
+        text: "(I can see the real her now. What do I say?)",
+        night: true,
+        choices: [
+            {
+                text: "Sit beside her and hold her",
+                next: "day4_night_nurse_hug",
+                stats: { Nurse: { affinity: 20 } },
+                setFlag: "day4_hugged_nurse"
+            },
+            {
+                text: "\"From now on, I'll be the one to take care of you\"",
+                next: "day4_night_nurse_care",
+                stats: { Nurse: { affinity: 15 } },
+                setFlag: "day4_nurse_cared"
+            }
+        ]
+    },
+    "day4_night_nurse_hug": {
+        name: "School Nurse",
+        text: "\"......!!\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_hug_2"
+    },
+    "day4_night_nurse_hug_2": {
+        name: "School Nurse",
+        text: "\"...Hey, all of a sudden... what are you...\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_hug_3"
+    },
+    "day4_night_nurse_hug_3": {
+        name: "Me",
+        text: "(She was startled at first... but soon her hands gripped my clothes tightly.)",
+        night: true,
+        next: "day4_night_nurse_hug_4"
+    },
+    "day4_night_nurse_hug_4": {
+        name: "School Nurse",
+        text: "\"...This is weird. Have I ever wanted someone to hold me like this before?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_hug_5"
+    },
+    "day4_night_nurse_hug_5": {
+        name: "School Nurse",
+        text: "\"...Let's just stay like this. Just a little while.\"",
+        night: true,
+        next: "day4_night_nurse_truth"
+    },
+    "day4_night_nurse_care": {
+        name: "School Nurse",
+        text: "\"...What? You'll take care of me?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_care_2"
+    },
+    "day4_night_nurse_care_2": {
+        name: "Me",
+        text: "\"You always take care of everyone else. It's your turn to be taken care of.\"",
+        night: true,
+        next: "day4_night_nurse_care_3"
+    },
+    "day4_night_nurse_care_3": {
+        name: "School Nurse",
+        text: "\"...Ha. How do you always hit me right where it hurts?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_care_4"
+    },
+    "day4_night_nurse_care_4": {
+        name: "School Nurse",
+        text: "\"...Do you really mean that?\"",
+        night: true,
+        next: "day4_night_nurse_truth"
+    },
+
+    // =========================================================================
+    // Nurse's Truth — Behind the Mask
+    // =========================================================================
+    "day4_night_nurse_truth": {
+        name: "School Nurse",
+        text: "\"...Actually, there's a reason I became a school nurse.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_truth_2"
+    },
+    "day4_night_nurse_truth_2": {
+        name: "School Nurse",
+        text: "\"In high school, a close friend of mine got sick and was absent for a long time. The school nurse back then really took care of her.\"",
+        night: true,
+        next: "day4_night_nurse_truth_3"
+    },
+    "day4_night_nurse_truth_3": {
+        name: "School Nurse",
+        text: "\"I wanted to be someone like that too. Someone who's there for kids when they're hurting.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_truth_4"
+    },
+    "day4_night_nurse_truth_4": {
+        name: "School Nurse",
+        text: "\"But in reality... they just saw me as 'the nurse who jokes around.' Not a real teacher.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_truth_5"
+    },
+    "day4_night_nurse_truth_5": {
+        name: "School Nurse",
+        text: "\"They said being serious would ruin the vibe, so... I naturally started hiding behind laughs.\"",
+        night: true,
+        next: "day4_night_nurse_truth_6"
+    },
+    "day4_night_nurse_truth_6": {
+        name: "School Nurse",
+        text: "\"...I did the same with you. Approaching you with jokes and teasing. Because showing my real feelings... was terrifying.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_truth_choice"
+    },
+    "day4_night_nurse_truth_choice": {
+        name: "Me",
+        text: "(Her voice is trembling.)",
+        night: true,
+        choices: [
+            {
+                text: "\"I love the playful you and the real you—all of it\"",
+                next: "day4_night_nurse_accept_all",
+                stats: { Nurse: { affinity: 20 } }
+            },
+            {
+                text: "\"Thank you for showing me the real you\"",
+                next: "day4_night_nurse_thanks",
+                stats: { Nurse: { affinity: 15 } }
+            },
+            {
+                text: "\"You don't have to be scared anymore. I'm here\"",
+                next: "day4_night_nurse_safe",
+                stats: { Nurse: { affinity: 18 } }
+            }
+        ]
+    },
+    "day4_night_nurse_accept_all": {
+        name: "School Nurse",
+        text: "\"...All of it?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_accept_all_2"
+    },
+    "day4_night_nurse_accept_all_2": {
+        name: "School Nurse",
+        text: "\"...Hey, if you say things like that, I'll really fall for you.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_accept_all_3"
+    },
+    "day4_night_nurse_accept_all_3": {
+        name: "School Nurse",
+        text: "\"...Oh wait, I already have. Haha.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_resolve"
+    },
+    "day4_night_nurse_thanks": {
+        name: "School Nurse",
+        text: "\"...Thankful? To me?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_thanks_2"
+    },
+    "day4_night_nurse_thanks_2": {
+        name: "School Nurse",
+        text: "\"...I didn't know being honest with you could feel this comfortable.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_resolve"
+    },
+    "day4_night_nurse_safe": {
+        name: "School Nurse",
+        text: "\"...I don't have to be scared?\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_safe_2"
+    },
+    "day4_night_nurse_safe_2": {
+        name: "School Nurse",
+        text: "\"...You little rascal. So young, but so grown up.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_resolve"
+    },
+
+    // =========================================================================
+    // Nurse's Resolve — A Real Smile
+    // =========================================================================
+    "day4_night_nurse_resolve": {
+        name: "School Nurse",
+        text: "\"...You know what?\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_resolve_2"
+    },
+    "day4_night_nurse_resolve_2": {
+        name: "School Nurse",
+        text: "\"From now on, I won't wear a mask around you. When I'm happy, I'll really smile. When I'm sad, I'll say so.\"",
+        night: true,
+        next: "day4_night_nurse_resolve_3"
+    },
+    "day4_night_nurse_resolve_3": {
+        name: "School Nurse",
+        text: "\"With you... I think I can show the real me.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_resolve_4"
+    },
+    "day4_night_nurse_resolve_4": {
+        name: "Me",
+        text: "\"Of course. That's the version of you I like the most.\"",
+        night: true,
+        next: "day4_night_nurse_resolve_end"
+    },
+    "day4_night_nurse_resolve_end": {
+        name: "School Nurse",
+        text: "\"......!! Seriously, my heart is going to explode.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        setFlag: "day4_nurse_mask_off",
+        next: "day4_night_nurse_farewell"
+    },
+
+    // =========================================================================
+    // Farewell with Nurse — Outside School
+    // =========================================================================
+    "day4_night_nurse_farewell": {
+        name: "Me",
+        text: "(We left the nurse's office and walked outside the school. She hooked her arm through mine.)",
+        background: "assets/images/background/street.png",
+        night: true,
+        next: "day4_night_nurse_farewell_2"
+    },
+    "day4_night_nurse_farewell_2": {
+        name: "School Nurse",
+        text: "\"...I was so uncool today, wasn't I? The girl who's always joking around suddenly got all emotional.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_farewell_3"
+    },
+    "day4_night_nurse_farewell_3": {
+        name: "Me",
+        text: "\"That wasn't uncool—that was honest.\"",
+        night: true,
+        next: "day4_night_nurse_farewell_4"
+    },
+    "day4_night_nurse_farewell_4": {
+        name: "School Nurse",
+        text: "\"...God. Falling for a kid like you, I must be crazy.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_farewell_5"
+    },
+    "day4_night_nurse_farewell_5": {
+        name: "School Nurse",
+        text: "\"...Come by the nurse's office tomorrow. I'll give you special treatment. What kind? It's a secret~\"",
+        character: "assets/images/characters/nurse_normal.png",
+        night: true,
+        next: "day4_night_nurse_farewell_6"
+    },
+    "day4_night_nurse_farewell_6": {
+        name: "School Nurse",
+        text: "\"...Just kidding. I just... want to see you again tomorrow. That's all.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        night: true,
+        next: "day4_night_nurse_home"
+    },
+    "day4_night_nurse_home": {
+        name: "Me",
+        text: "(Back home. The real face she showed me in the nurse's office keeps replaying. The person who was always joking and laughing... was actually the loneliest one of all.)",
+        background: "assets/images/background/room_my.png",
+        character: null,
+        night: true,
+        next: "day4_night_nurse_home_2"
+    },
+    "day4_night_nurse_home_2": {
+        name: "Me",
+        text: "(She's not alone anymore. I'm here. Tomorrow, I want to see her real smile.)",
         night: true,
         fade: true,
         next: "day4_final"
