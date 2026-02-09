@@ -1738,7 +1738,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_teacher_resolve_4": {
         name: "나",
-        text: "\"그 모습이 더 좋아요.\"",
+        text: "\"처음부터 그 모습이 보고 싶었어요.\"",
         night: true,
         next: "day4_night_teacher_resolve_end"
     },
@@ -1776,7 +1776,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_teacher_farewell_4": {
         name: "담임선생님",
-        text: "\"…!! 그, 그런 말 갑자기 하면 심장에 안 좋다고.\"",
+        text: "\"…그렇게 당연하다는 듯이 말하면… 나 어쩌라고.\"",
         character: "assets/images/characters/teacher_shy.png",
         night: true,
         next: "day4_night_teacher_farewell_5"
@@ -1816,7 +1816,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_nurse_msg": {
         name: "나",
-        text: "(밤 10시. 보건선생님한테 메시지가 왔다. '자기야~ 아직 안 잤지? ㅎㅎ 심심한데 나올래~?')",
+        text: "(밤 10시. 보건선생님한테 메시지가 왔다. '아직 안 잤지? 시간 되면 잠깐 나올 수 있어?')",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1837,7 +1837,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_msg_4": {
         name: "나",
-        text: "('우리 학교 보건실 ㅋㅋ 뒷문 열어놨어~' …보건실에서?)",
+        text: "('학교 보건실. 뒷문 열어둘게.' …보건실에서?)",
         night: true,
         next: "day4_night_nurse_arrive"
     },
@@ -1851,7 +1851,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_arrive_2": {
         name: "보건선생님",
-        text: "\"어머~ 진짜 왔네? 착한 남자친구~\"",
+        text: "\"와, 진짜 나왔네. 한밤중에 불러내도 와주는 거야?\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_arrive_3"
@@ -1875,14 +1875,14 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_tired": {
         name: "보건선생님",
-        text: "\"에? 그래~? 아하하, 요즘 좀 바빠서~ 괜찮아 괜찮아~\"",
+        text: "\"그래? 요즘 좀 정신없었나 봐. 괜찮아, 별거 아니야.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_mask"
     },
     "day4_night_nurse_real_reason": {
         name: "보건선생님",
-        text: "\"…진짜 이유? 그냥 보고 싶었으니까~\"",
+        text: "\"…진짜 이유? …보고 싶었으니까.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_mask"
@@ -2102,15 +2102,15 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_accept_all_2": {
         name: "보건선생님",
-        text: "\"…야, 그런 말 하면 진짜 반하잖아.\"",
+        text: "\"…그렇게 말해주는 사람은 네가 처음이야.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_accept_all_3"
     },
     "day4_night_nurse_accept_all_3": {
         name: "보건선생님",
-        text: "\"…아, 이미 반했구나. 하하.\"",
-        character: "assets/images/characters/nurse_normal.png",
+        text: "\"…처음이라서 어떻게 반응해야 할지 모르겠네.\"",
+        character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_resolve"
     },
@@ -2137,7 +2137,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_safe_2": {
         name: "보건선생님",
-        text: "\"…너 진짜 반칙이다. 나이만 어리지, 완전 어른이잖아.\"",
+        text: "\"…어쩌면 너한테가 제일 편한 건지 모르겠다. 이상하게.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_resolve"
@@ -2168,13 +2168,13 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_resolve_4": {
         name: "나",
-        text: "\"당연하죠. 그 모습이 제일 예뻐요.\"",
+        text: "\"기다리고 있었어요, 그 모습.\"",
         night: true,
         next: "day4_night_nurse_resolve_end"
     },
     "day4_night_nurse_resolve_end": {
         name: "보건선생님",
-        text: "\"……!! 야, 진짜 심장 터지겠다.\"",
+        text: "\"……너 진짜… 이러면 나 돌아갈 수 없어.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         setFlag: "day4_nurse_mask_off",
@@ -2193,7 +2193,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_farewell_2": {
         name: "보건선생님",
-        text: "\"…오늘 나 많이 찌질했지? 맨날 장난만 치던 사람이 갑자기 울보가 됐으니까.\"",
+        text: "\"…오늘 나 꽤 민망했지? 평소에 그렇게 웃고 다니던 사람이 갑자기 이러니까.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_farewell_3"
@@ -2206,21 +2206,21 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_farewell_4": {
         name: "보건선생님",
-        text: "\"…하. 진짜 너 때문에 미치겠다. 이런 애한테 반하다니.\"",
+        text: "\"…하. 너 앞에서는 자꾸 솔직해지는 게 신기해. 나답지 않게.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_farewell_5"
     },
     "day4_night_nurse_farewell_5": {
         name: "보건선생님",
-        text: "\"…내일 보건실 오면 특별 서비스 해줄게. 뭐냐고? 비밀~\"",
-        character: "assets/images/characters/nurse_normal.png",
+        text: "\"…내일 학교에서 보면 또 평소처럼 굴 거야. 근데 눈은 속이지 못할걸.\"",
+        character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_farewell_6"
     },
     "day4_night_nurse_farewell_6": {
         name: "보건선생님",
-        text: "\"…농담이야. 그냥… 내일도 보고 싶을 거야. 그것만 알아줘.\"",
+        text: "\"…그러니까 잘 봐. 보건실 앞을 지나갈 때… 한 번쯤은.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_home"

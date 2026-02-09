@@ -1738,7 +1738,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_teacher_resolve_4": {
         name: "Me",
-        text: "\"I like that version of you even more.\"",
+        text: "\"That's the version of you I've always wanted to see.\"",
         night: true,
         next: "day4_night_teacher_resolve_end"
     },
@@ -1776,7 +1776,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_teacher_farewell_4": {
         name: "Homeroom Teacher",
-        text: "\"...!! D-Don't just say things like that out of nowhere, it's bad for my heart.\"",
+        text: "\"...If you say that like it's the most obvious thing in the world... what am I supposed to do.\"",
         character: "assets/images/characters/teacher_shy.png",
         night: true,
         next: "day4_night_teacher_farewell_5"
@@ -1816,7 +1816,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_nurse_msg": {
         name: "Me",
-        text: "(10 PM. A message from the nurse. 'Hey babe~ still up? lol I'm bored, come hang out~')",
+        text: "(10 PM. A message from the nurse. 'Still up? Can you come out for a bit if you have time?')",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1837,7 +1837,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_msg_4": {
         name: "Me",
-        text: "('The nurse's office at school lol~ back door's open~' ...The nurse's office?)",
+        text: "('The nurse's office at school. I'll leave the back door open.' ...The nurse's office?)",
         night: true,
         next: "day4_night_nurse_arrive"
     },
@@ -1851,7 +1851,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_arrive_2": {
         name: "School Nurse",
-        text: "\"Oh my~ you actually came? What a good boyfriend~\"",
+        text: "\"Wow, you actually came. Even though I called you out this late?\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_arrive_3"
@@ -1875,14 +1875,14 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_tired": {
         name: "School Nurse",
-        text: "\"Hm? Do I? Ahaha, just been a little busy~ I'm fine, I'm fine~\"",
+        text: "\"Think so? It's been a hectic week. I'm fine though, really.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_mask"
     },
     "day4_night_nurse_real_reason": {
         name: "School Nurse",
-        text: "\"...The real reason? I just wanted to see you~\"",
+        text: "\"...The real reason? ...I wanted to see you.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_mask"
@@ -2102,15 +2102,15 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_accept_all_2": {
         name: "School Nurse",
-        text: "\"...Hey, if you say things like that, I'll really fall for you.\"",
+        text: "\"...You're the first person who's ever said that to me.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_accept_all_3"
     },
     "day4_night_nurse_accept_all_3": {
         name: "School Nurse",
-        text: "\"...Oh wait, I already have. Haha.\"",
-        character: "assets/images/characters/nurse_normal.png",
+        text: "\"...I don't even know how to react. This is a first.\"",
+        character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_resolve"
     },
@@ -2137,7 +2137,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_safe_2": {
         name: "School Nurse",
-        text: "\"...You little rascal. So young, but so grown up.\"",
+        text: "\"...Maybe you're the person I feel most at ease with. Funny how that works.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_resolve"
@@ -2168,13 +2168,13 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_resolve_4": {
         name: "Me",
-        text: "\"Of course. That's the version of you I like the most.\"",
+        text: "\"I've been waiting for that. The real you.\"",
         night: true,
         next: "day4_night_nurse_resolve_end"
     },
     "day4_night_nurse_resolve_end": {
         name: "School Nurse",
-        text: "\"......!! Seriously, my heart is going to explode.\"",
+        text: "\"...... You really... if you keep this up, there's no going back for me.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         setFlag: "day4_nurse_mask_off",
@@ -2193,7 +2193,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_farewell_2": {
         name: "School Nurse",
-        text: "\"...I was so uncool today, wasn't I? The girl who's always joking around suddenly got all emotional.\"",
+        text: "\"...Tonight was pretty embarrassing, wasn't it? Someone who's always laughing, suddenly falling apart like that.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_farewell_3"
@@ -2206,21 +2206,21 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_farewell_4": {
         name: "School Nurse",
-        text: "\"...God. Falling for a kid like you, I must be crazy.\"",
+        text: "\"...It's strange. Around you, I keep getting honest. That's not like me at all.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_farewell_5"
     },
     "day4_night_nurse_farewell_5": {
         name: "School Nurse",
-        text: "\"...Come by the nurse's office tomorrow. I'll give you special treatment. What kind? It's a secret~\"",
-        character: "assets/images/characters/nurse_normal.png",
+        text: "\"...At school tomorrow, I'll act normal again. But my eyes won't be able to hide it.\"",
+        character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_farewell_6"
     },
     "day4_night_nurse_farewell_6": {
         name: "School Nurse",
-        text: "\"...Just kidding. I just... want to see you again tomorrow. That's all.\"",
+        text: "\"...So pay attention. When you walk past the nurse's office... just once.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_home"
