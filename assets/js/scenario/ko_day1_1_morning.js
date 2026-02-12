@@ -766,7 +766,7 @@ Object.assign(SCENARIO[1], {
     },
     "teacher_name_share_high": {
         name: "담임선생님",
-        text: "\"(선생님이 흘족한 미소로 나를 바라본다.) 오, {name}... 이름 참 예쁘네. 자, 친구들에게 자기소개 한마디 부탁할게. 다들 환영해줘!\"",
+        text: "\"(선생님이 흐뭇한 미소로 나를 바라본다.) 오, {name}... 이름 참 예쁘네. 자, 친구들에게 자기소개 한마디 부탁할게. 다들 환영해줘!\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "class_after_party"
     },

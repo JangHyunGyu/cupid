@@ -632,7 +632,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_3": {
         name: "Seoyeon",
-        text: "\"Oh, {player_name}! I was just about to come up to the rooftop too~\"",
+        text: "\"Oh, {name}! I was just about to come up to the rooftop too~\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day5_mayhem_4"
     },
@@ -655,7 +655,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_7": {
         name: "Seoyeon",
-        text: "\"By the way {player_name}, you remember our plans for this weekend, right?\"",
+        text: "\"By the way {name}, you remember our plans for this weekend, right?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "day5_mayhem_8"
     },
@@ -679,7 +679,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_11": {
         name: "Seoyeon",
-        text: "\"...{player_name}. Care to explain?\"",
+        text: "\"...{name}. Care to explain?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "day5_mayhem_12"
     },
@@ -737,7 +737,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_run_2": {
         name: "Seoyeon",
-        text: "\"Wait, {player_name}!! Where are you going?!\"",
+        text: "\"Wait, {name}!! Where are you going?!\"",
         next: "day5_mayhem_run_3"
     },
     "day5_mayhem_run_3": {
