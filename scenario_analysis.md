@@ -1,23 +1,23 @@
-﻿# 📊 Cupid 시나리오 분석 리포트
+﻿# Cupid Scenario Analysis Report
 
-생성 시간: 2026-02-12 10:20:43
+Generated: 2026-02-12 10:31:41
 
-## 📈 요약
+## Summary
 
-- 총 파일: 40
-- 총 노드: 1861
+- Files: 40
+- Nodes: 1861
 - Broken References: 0
 - Ghost Nodes: 0
 - Dead Ends: 0
 
-## 🔗 Broken References
+## Broken References
 
 OK - No issues found
 
-## 👻 Ghost Nodes
+## Ghost Nodes
 
 OK - No issues found
 
-## 🔚 Dead Ends
+## Dead Ends
 
 OK - No issues found
