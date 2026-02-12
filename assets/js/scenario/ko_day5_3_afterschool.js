@@ -632,7 +632,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_3": {
         name: "서연",
-        text: "\"어머, {player_name}(이)야! 나도 방금 옥상에 오려던 참이었어~\"",
+        text: "\"어머, {name}(이)야! 나도 방금 옥상에 오려던 참이었어~\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day5_mayhem_4"
     },
@@ -655,7 +655,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_7": {
         name: "서연",
-        text: "\"그나저나 {player_name}(아/야), 이번 주말에 나랑 약속했던 거 기억하지?\"",
+        text: "\"그나저나 {name}(아/야), 이번 주말에 나랑 약속했던 거 기억하지?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "day5_mayhem_8"
     },
@@ -679,7 +679,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_11": {
         name: "서연",
-        text: "\"…{player_name}. 설명 좀 해줄래?\"",
+        text: "\"…{name}. 설명 좀 해줄래?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "day5_mayhem_12"
     },
@@ -691,10 +691,12 @@ Object.assign(SCENARIO[5], {
                 text: "\"다, 다들 좋아하면 안 되나…?\"",
                 next: "day5_mayhem_honest"
             },
-            {                text: "\"진심으로 말할게.\"",
+            {
+                text: "\"진심으로 말할게.\"",
                 next: "day5_mayhem_confess"
             },
-            {                text: "\"(전력으로 도망친다)\"",
+            {
+                text: "\"(전력으로 도망친다)\"",
                 next: "day5_mayhem_run"
             }
         ]
@@ -735,7 +737,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_run_2": {
         name: "서연",
-        text: "\"잠깐, {player_name}!! 어딜 가는 거야?!\"",
+        text: "\"잠깐, {name}!! 어딜 가는 거야?!\"",
         next: "day5_mayhem_run_3"
     },
     "day5_mayhem_run_3": {

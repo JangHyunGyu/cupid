@@ -876,7 +876,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_invited": {
         name: "보건선생님",
-        text: "\"후훃, {name}. 오늘 저녁 우리 집에서 보기로 한 거... 잊지 않았지? 벌써부터 보고 싶어서 달려온 거라면 선생님 정말 감동인데?\"",
+        text: "\"후훗, {name}. 오늘 저녁 우리 집에서 보기로 한 거... 잊지 않았지? 벌써부터 보고 싶어서 달려온 거라면 선생님 정말 감동인데?\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         next: "day2_after_nurse_3"
@@ -962,7 +962,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_night_talk": {
         name: "보건선생님",
-        text: "(선생님이 부드러운 미소를 지으며 내 머리를 쓰다듬는다) \"후훃, 나랑 더 있고 싶어서 온 거구나? 좋아, 오늘은 특별히 조금 더 같이 있어줄게.\"",
+        text: "(선생님이 부드러운 미소를 지으며 내 머리를 쓰다듬는다) \"후훗, 나랑 더 있고 싶어서 온 거구나? 좋아, 오늘은 특별히 조금 더 같이 있어줄게.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         next: "day2_nurse_night_talk_2"
@@ -998,7 +998,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_success_after": {
         name: "보건선생님",
-        text: "(선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귃가에 속삭인다.) \"어머... {name}, 생각보다 훨씬 대담하네? 좋아, 오늘 저녁 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
+        text: "(선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귓가에 속삭인다.) \"어머... {name}, 생각보다 훨씬 대담하네? 좋아, 오늘 저녁 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         stats: { Nurse: { affinity: 8 } },
@@ -1024,7 +1024,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_contact_success": {
         name: "보건선생님",
-        text: "\"후훃, 착하네. 그럼 나중에 연락할게? 잘 가, {name}.\"",
+        text: "\"후훗, 착하네. 그럼 나중에 연락할게? 잘 가, {name}.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         stats: { Nurse: { affinity: 10 } },
