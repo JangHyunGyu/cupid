@@ -39,6 +39,7 @@ $colors = @{
 }
 
 $nl = [System.Environment]::NewLine
+$fence = ([char]96).ToString() * 3
 
 function Write-ColorOutput {
     param([string]$Message, [string]$Type = "Info")
@@ -157,7 +158,7 @@ function Get-ScenarioObjectBlock {
     return $Content.Substring($openBraceIdx + 1, $closeBraceIdx - $openBraceIdx - 1)
 }
 
-function Extract-TopLevelNodes {
+function Get-TopLevelScenarioNodes {
     param([string]$ScenarioBlock)
 
     $nodes = @{}
@@ -282,14 +283,14 @@ function Get-NextRefs {
     return ([regex]::Matches($NodeObjectText, 'next\s*:\s*"([^"]+)"') | ForEach-Object { $_.Groups[1].Value })
 }
 
-function Is-SpecialReference {
+function Test-SpecialReference {
     param([string]$Target)
 
     if (-not $Target) { return $true }
     return ($specialReferences -contains $Target)
 }
 
-function Is-EndishNode {
+function Test-EndishNode {
     param(
         [string]$NodeId,
         [string]$NodeObjectText
@@ -300,7 +301,7 @@ function Is-EndishNode {
     return $false
 }
 
-function Generate-MermaidGraph {
+function New-MermaidGraph {
     param(
         [hashtable]$NodesByFile,
         [string]$FileName
@@ -313,7 +314,7 @@ function Generate-MermaidGraph {
     $fileNodes = $NodesByFile[$FileName]
 
     $lines = New-Object System.Collections.Generic.List[string]
-    $lines.Add('```mermaid')
+    $lines.Add($fence + 'mermaid')
     $lines.Add('flowchart TD')
 
     foreach ($nodeId in ($fileNodes.Keys | Sort-Object)) {
@@ -321,9 +322,9 @@ function Generate-MermaidGraph {
         $label = $nodeId
 
         if ($nodeId -eq 'start') {
-            $lines.Add("    $nodeId([🎬 $label])")
-        } elseif (Is-EndishNode -NodeId $nodeId -NodeObjectText $nodeText) {
-            $lines.Add("    $nodeId([🏁 $label])")
+            $lines.Add("    $nodeId([START $label])")
+        } elseif (Test-EndishNode -NodeId $nodeId -NodeObjectText $nodeText) {
+            $lines.Add("    $nodeId([END $label])")
         } else {
             $lines.Add("    $nodeId[$label]")
         }
@@ -337,19 +338,19 @@ function Generate-MermaidGraph {
         }
     }
 
-    $lines.Add('```')
+    $lines.Add($fence)
     return ($lines -join $nl)
 }
 
 $scenarioFullPath = Join-Path $PSScriptRoot $ScenarioPath
-$files = Get-ChildItem -Path $scenarioFullPath -Filter "*.js" | Where-Object { $_.Name -match '^(ko|en)_day\d+_' }
+$files = Get-ChildItem -Path $scenarioFullPath -Filter '*.js' | Where-Object { $_.Name -match '^(ko|en)_day\d+_' }
 
 Write-ColorOutput "╔════════════════════════════════════════════════════════════╗" -Type Header
-Write-ColorOutput "║   🎯 Cupid 시나리오 분석기                                  ║" -Type Header
-Write-ColorOutput "║   노드 구조 검증 및 리포트/그래프 생성                       ║" -Type Header
+Write-ColorOutput "║   Cupid Scenario Analyzer                                   ║" -Type Header
+Write-ColorOutput "║   Link checks + report/graph output                          ║" -Type Header
 Write-ColorOutput "╚════════════════════════════════════════════════════════════╝" -Type Header
 
-Write-ColorOutput ($nl + "🔍 시나리오 파일 스캔 중...") -Type Info
+Write-ColorOutput ($nl + "Scanning scenario files...") -Type Info
 Write-ColorOutput "Path: $scenarioFullPath" -Type Info
 
 $nodesByFile = @{}
@@ -359,11 +360,11 @@ foreach ($file in $files) {
     $content = Read-TextFileAuto -Path $file.FullName
     $block = Get-ScenarioObjectBlock -Content $content
     if (-not $block) {
-        Write-ColorOutput "  ⚠️  Object.assign 블록을 찾지 못함: $($file.Name)" -Type Warning
+        Write-ColorOutput "  WARN: Object.assign block not found: $($file.Name)" -Type Warning
         continue
     }
 
-    $nodes = Extract-TopLevelNodes -ScenarioBlock $block
+    $nodes = Get-TopLevelScenarioNodes -ScenarioBlock $block
     $nodesByFile[$file.Name] = $nodes
 
     foreach ($nodeId in $nodes.Keys) {
@@ -387,7 +388,7 @@ foreach ($fileName in $nodesByFile.Keys) {
         $nextRefs = @(Get-NextRefs -NodeObjectText $nodeText)
 
         foreach ($t in $nextRefs) {
-            if (Is-SpecialReference -Target $t) { continue }
+            if (Test-SpecialReference -Target $t) { continue }
 
             if ($globalNodeToFiles.ContainsKey($t)) {
                 if (-not $inboundCount.ContainsKey($t)) { $inboundCount[$t] = 0 }
@@ -397,7 +398,7 @@ foreach ($fileName in $nodesByFile.Keys) {
             }
         }
 
-        if ($nextRefs.Count -eq 0 -and -not (Is-EndishNode -NodeId $nodeId -NodeObjectText $nodeText)) {
+        if ($nextRefs.Count -eq 0 -and -not (Test-EndishNode -NodeId $nodeId -NodeObjectText $nodeText)) {
             $deadEnds += [pscustomobject]@{ File = $fileName; Node = $nodeId }
         }
     }
@@ -418,36 +419,36 @@ foreach ($nodeId in $globalNodeIds) {
 }
 
 Write-ColorOutput ($nl + "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━") -Type Header
-Write-ColorOutput "📊 분석 결과" -Type Header
+Write-ColorOutput "RESULT" -Type Header
 Write-ColorOutput "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" -Type Header
 
-Write-Host ("총 파일: {0}" -f $nodesByFile.Keys.Count)
-Write-Host ("총 노드: {0}" -f $globalNodeIds.Count)
+Write-Host ("Files: {0}" -f $nodesByFile.Keys.Count)
+Write-Host ("Nodes: {0}" -f $globalNodeIds.Count)
 
 $brokenColor = if ($brokenRefs.Count -gt 0) { 'Red' } else { 'Green' }
 $ghostColor = if ($ghostNodes.Count -gt 0) { 'Yellow' } else { 'Green' }
 $deadEndColor = if ($deadEnds.Count -gt 0) { 'Yellow' } else { 'Green' }
 
-Write-Host "🔗 깨진 참조 (Broken References): " -NoNewline
+Write-Host "Broken References: " -NoNewline
 Write-Host $brokenRefs.Count -ForegroundColor $brokenColor
 
-Write-Host "👻 유령 노드 (Ghost Nodes): " -NoNewline
+Write-Host "Ghost Nodes: " -NoNewline
 Write-Host $ghostNodes.Count -ForegroundColor $ghostColor
 
-Write-Host "🔚 끊긴 노드 (Dead Ends): " -NoNewline
+Write-Host "Dead Ends: " -NoNewline
 Write-Host $deadEnds.Count -ForegroundColor $deadEndColor
 
 if ($ShowDetails) {
     if ($brokenRefs.Count -gt 0) {
-        Write-ColorOutput ($nl + "🔗 Broken References 상세") -Type Error
+        Write-ColorOutput ($nl + "Broken References (details)") -Type Error
         $brokenRefs | Sort-Object File, From, To | Format-Table -AutoSize
     }
     if ($ghostNodes.Count -gt 0) {
-        Write-ColorOutput ($nl + "👻 Ghost Nodes 상세") -Type Warning
+        Write-ColorOutput ($nl + "Ghost Nodes (details)") -Type Warning
         $ghostNodes | Sort-Object File, Node | Format-Table -AutoSize
     }
     if ($deadEnds.Count -gt 0) {
-        Write-ColorOutput ($nl + "🔚 Dead Ends 상세") -Type Warning
+        Write-ColorOutput ($nl + "Dead Ends (details)") -Type Warning
         $deadEnds | Sort-Object File, Node | Format-Table -AutoSize
     }
 }
@@ -456,25 +457,25 @@ if ($ShowDetails) {
 $reportPath = Join-Path (Split-Path $PSScriptRoot) $OutputFile
 
 $mdLines = New-Object System.Collections.Generic.List[string]
-$mdLines.Add('# 📊 Cupid 시나리오 분석 리포트')
+$mdLines.Add('# Cupid Scenario Analysis Report')
 $mdLines.Add('')
-$mdLines.Add(("생성 시간: {0}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')))
+$mdLines.Add(("Generated: {0}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')))
 $mdLines.Add('')
-$mdLines.Add('## 📈 요약')
+$mdLines.Add('## Summary')
 $mdLines.Add('')
-$mdLines.Add(("- 총 파일: {0}" -f $nodesByFile.Keys.Count))
-$mdLines.Add(("- 총 노드: {0}" -f $globalNodeIds.Count))
+$mdLines.Add(("- Files: {0}" -f $nodesByFile.Keys.Count))
+$mdLines.Add(("- Nodes: {0}" -f $globalNodeIds.Count))
 $mdLines.Add(("- Broken References: {0}" -f $brokenRefs.Count))
 $mdLines.Add(("- Ghost Nodes: {0}" -f $ghostNodes.Count))
 $mdLines.Add(("- Dead Ends: {0}" -f $deadEnds.Count))
 
 $mdLines.Add('')
-$mdLines.Add('## 🔗 Broken References')
+$mdLines.Add('## Broken References')
 $mdLines.Add('')
 if ($brokenRefs.Count -eq 0) {
     $mdLines.Add('OK - No issues found')
 } else {
-    $mdLines.Add('| 파일 | From | To |')
+    $mdLines.Add('| File | From | To |')
     $mdLines.Add('|---|---|---|')
     foreach ($b in ($brokenRefs | Sort-Object File, From, To)) {
         $mdLines.Add(("| {0} | {1} | {2} |" -f $b.File, $b.From, $b.To))
@@ -482,12 +483,12 @@ if ($brokenRefs.Count -eq 0) {
 }
 
 $mdLines.Add('')
-$mdLines.Add('## 👻 Ghost Nodes')
+$mdLines.Add('## Ghost Nodes')
 $mdLines.Add('')
 if ($ghostNodes.Count -eq 0) {
     $mdLines.Add('OK - No issues found')
 } else {
-    $mdLines.Add('| 파일 | Node |')
+    $mdLines.Add('| File | Node |')
     $mdLines.Add('|---|---|')
     foreach ($g in ($ghostNodes | Sort-Object File, Node)) {
         $mdLines.Add(("| {0} | {1} |" -f $g.File, $g.Node))
@@ -495,12 +496,12 @@ if ($ghostNodes.Count -eq 0) {
 }
 
 $mdLines.Add('')
-$mdLines.Add('## 🔚 Dead Ends')
+$mdLines.Add('## Dead Ends')
 $mdLines.Add('')
 if ($deadEnds.Count -eq 0) {
     $mdLines.Add('OK - No issues found')
 } else {
-    $mdLines.Add('| 파일 | Node |')
+    $mdLines.Add('| File | Node |')
     $mdLines.Add('|---|---|')
     foreach ($d in ($deadEnds | Sort-Object File, Node)) {
         $mdLines.Add(("| {0} | {1} |" -f $d.File, $d.Node))
@@ -509,18 +510,18 @@ if ($deadEnds.Count -eq 0) {
 
 if ($GenerateGraph) {
     $mdLines.Add('')
-    $mdLines.Add('## 🗺️ Mermaid Graphs')
+    $mdLines.Add('## Mermaid Graphs')
     foreach ($fileName in ($nodesByFile.Keys | Sort-Object)) {
         $mdLines.Add('')
         $mdLines.Add(("### {0}" -f $fileName))
         $mdLines.Add('')
-        $mdLines.Add((Generate-MermaidGraph -NodesByFile $nodesByFile -FileName $fileName))
+        $mdLines.Add((New-MermaidGraph -NodesByFile $nodesByFile -FileName $fileName))
     }
 }
 
 ($mdLines -join $nl) | Out-File -FilePath $reportPath -Encoding UTF8
-Write-ColorOutput ($nl + "✅ 리포트 저장됨: $reportPath") -Type Success
+Write-ColorOutput ($nl + "Report saved: $reportPath") -Type Success
 
-Write-ColorOutput ($nl + "✨ 분석 완료!") -Type Success
+Write-ColorOutput ($nl + "Done.") -Type Success
 
 
