@@ -379,8 +379,54 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_seoyeon_talk_walk": {
         name: "Seoyeon",
-        text: "\"You know, {name}. I'm really looking forward to tomorrow.\"",
+        text: "\"...Hey, {name}. Let's take the riverside path back. The sunset is beautiful today.\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        next: "day3_afternoon_seoyeon_sunset"
+    },
+    "day3_afternoon_seoyeon_sunset": {
+        name: "Me",
+        text: "(The sunset reflects off the river, sparkling. Seoyeon's face glows with an orange tint — she looks radiant.)",
+        background: "assets/images/background/school.png",
+        next: "day3_afternoon_seoyeon_sunset_2"
+    },
+    "day3_afternoon_seoyeon_sunset_2": {
+        name: "Seoyeon",
+        text: "(She suddenly stops and stands in front of me) \"...{name}. Can I ask you something?\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        next: "day3_afternoon_seoyeon_sunset_3"
+    },
+    "day3_afternoon_seoyeon_sunset_3": {
+        name: "Seoyeon",
+        text: "(Against the sunset backdrop, Seoyeon's eyes shine) \"Tomorrow... you'll only meet me, right?\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        choices: [
+            { text: "\"Of course\"", next: "day3_afternoon_seoyeon_pinky", stats: { Seoyeon: { affinity: 8 } } },
+            { text: "(Take Seoyeon's hand)", next: "day3_afternoon_seoyeon_hand", stats: { Seoyeon: { affinity: 10 } } },
+            { text: "\"...I'll try\"", next: "day3_afternoon_seoyeon_try", stats: { Seoyeon: { affinity: 3 } } }
+        ]
+    },
+    "day3_afternoon_seoyeon_pinky": {
+        name: "Seoyeon",
+        text: "(Seoyeon holds out her pinky finger) \"Then let's pinky promise. If you break it... you swallow ten thousand needles?\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day3_afternoon_seoyeon_freetalk"
+    },
+    "day3_afternoon_seoyeon_hand": {
+        name: "Seoyeon",
+        text: "(Seoyeon's hand trembles before she grips mine tight) \"...Dummy. What if someone sees us holding hands here.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        next: "day3_afternoon_seoyeon_freetalk"
+    },
+    "day3_afternoon_seoyeon_try": {
+        name: "Seoyeon",
+        text: "(Looking slightly disappointed, she forces a smile) \"...Okay. You'll try, right?\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        next: "day3_afternoon_seoyeon_freetalk"
+    },
+    "day3_afternoon_seoyeon_freetalk": {
+        name: "Me",
+        text: "(Walking alongside Seoyeon down the riverside path as the sunset deepens.)",
+        freeTalk: { turns: 4, context: "Walking with Seoyeon along the sunset riverside. She asked 'Will you only meet me tomorrow?' and they had a pinky promise/hand-holding moment. Sweet and romantic atmosphere." },
         next: "day3_afternoon_seoyeon_talk_walk_2"
     },
     "day3_afternoon_seoyeon_talk_walk_2": {
@@ -445,8 +491,58 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_talk_walk": {
         name: "Me",
-        text: "(Walking with Yuna. She doesn't say much, but the atmosphere is comfortable.)",
+        text: "(Walking with Yuna down a quiet path. She doesn't say much, but the atmosphere is comfortable.)",
         background: "assets/images/background/school.png",
+        next: "day3_afternoon_yuna_cat"
+    },
+    "day3_afternoon_yuna_cat": {
+        name: "Me",
+        text: "(A small cat is curled up by the roadside. Yuna suddenly stops.)",
+        next: "day3_afternoon_yuna_cat_2"
+    },
+    "day3_afternoon_yuna_cat_2": {
+        name: "Yuna",
+        text: "(Quietly kneeling down to pet the cat) \"...I'm glad you're with me.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day3_afternoon_yuna_cat_3"
+    },
+    "day3_afternoon_yuna_cat_3": {
+        name: "Me",
+        text: "(The way Yuna pets the cat... she looks so gentle.)",
+        choices: [
+            { text: "(Pet the cat too)", next: "day3_afternoon_yuna_cat_pat", stats: { Yuna: { affinity: 3 } } },
+            { text: "(Pat Yuna's head)", next: "day3_afternoon_yuna_head_pat", stats: { Yuna: { affinity: 10 } } },
+            { text: "(Watch quietly)", next: "day3_afternoon_yuna_cat_watch", stats: { Yuna: { affinity: 5 } } }
+        ]
+    },
+    "day3_afternoon_yuna_cat_pat": {
+        name: "Yuna",
+        text: "(Our hands meet on top of the cat) \"...Warm.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        next: "day3_afternoon_yuna_freetalk"
+    },
+    "day3_afternoon_yuna_head_pat": {
+        name: "Yuna",
+        text: "(She freezes when I pat her head) \"...You're petting me?\"",
+        character: "assets/images/characters/yuna_shy.png",
+        next: "day3_afternoon_yuna_head_pat_2"
+    },
+    "day3_afternoon_yuna_head_pat_2": {
+        name: "Yuna",
+        text: "(Closing her eyes) \"...Don't stop. Just a little more.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        next: "day3_afternoon_yuna_freetalk"
+    },
+    "day3_afternoon_yuna_cat_watch": {
+        name: "Yuna",
+        text: "(Holding the cat up) \"...This one looks like you, {name}. Warm and... clueless.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        next: "day3_afternoon_yuna_freetalk"
+    },
+    "day3_afternoon_yuna_freetalk": {
+        name: "Me",
+        text: "(Walking side by side with Yuna. Her expression is softer than usual.)",
+        freeTalk: { turns: 4, context: "Walking home with Yuna after petting a cat together. Yuna's expression is softer than usual. Quiet and comfortable atmosphere." },
         next: "day3_afternoon_yuna_talk_walk_2"
     },
     "day3_afternoon_yuna_talk_walk_2": {
@@ -506,9 +602,82 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_talk_walk": {
         name: "Dain",
-        text: "\"You're really coming tomorrow, right? 9 AM, gym! Don't forget!\"",
+        text: "\"Hey, {name}! See that convenience store? I'm thirsty!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day3_afternoon_dain_store"
+    },
+    "day3_afternoon_dain_store": {
+        name: "Me",
+        text: "(Dain dashes to the convenience store. I follow and find her stopped at the ice cream section.)",
+        next: "day3_afternoon_dain_store_2"
+    },
+    "day3_afternoon_dain_store_2": {
+        name: "Dain",
+        text: "\"You pick for me! If I pick, I'll want to buy everything...\"",
+        character: "assets/images/characters/dain_shy.png",
+        choices: [
+            { text: "(Pick one for her)", next: "day3_afternoon_dain_ice_one", stats: { Dain: { affinity: 3 } } },
+            { text: "(Buy two and share one)", next: "day3_afternoon_dain_ice_share", stats: { Dain: { affinity: 8 } } }
+        ]
+    },
+    "day3_afternoon_dain_ice_one": {
+        name: "Dain",
+        text: "(Taking the ice cream) \"...Thanks. {name} is the best!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day3_afternoon_dain_park"
+    },
+    "day3_afternoon_dain_ice_share": {
+        name: "Dain",
+        text: "(Her face turns red at the idea of sharing) \"Th-that's sharing?! That's an indirect kiss! N-no! It's just sharing!\"",
+        character: "assets/images/characters/dain_shy.png",
+        next: "day3_afternoon_dain_park"
+    },
+    "day3_afternoon_dain_park": {
+        name: "Me",
+        text: "(Dain and I sit side by side on a park bench nearby. We eat ice cream while watching the sunset.)",
+        next: "day3_afternoon_dain_park_2"
+    },
+    "day3_afternoon_dain_park_2": {
+        name: "Dain",
+        text: "(Suddenly getting quiet) \"...{name}. Actually, I couldn't sleep last night.\"",
         character: "assets/images/characters/dain_normal.png",
+        next: "day3_afternoon_dain_park_3"
+    },
+    "day3_afternoon_dain_park_3": {
+        name: "Dain",
+        text: "\"...You said you'd come to my practice tomorrow... You'll really come, right? You're not gonna stand me up?\"",
+        character: "assets/images/characters/dain_sad.png",
+        choices: [
+            { text: "\"I would never stand you up\"", next: "day3_afternoon_dain_promise_firm", stats: { Dain: { affinity: 8 } } },
+            { text: "(Pat Dain's head)", next: "day3_afternoon_dain_pat", stats: { Dain: { affinity: 10 } } }
+        ]
+    },
+    "day3_afternoon_dain_promise_firm": {
+        name: "Dain",
+        text: "(Her eyes light up) \"...Really? Promise!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day3_afternoon_dain_freetalk"
+    },
+    "day3_afternoon_dain_pat": {
+        name: "Dain",
+        text: "(Patting her head makes Dain's face turn red) \"Hey, I'm not a kid! ...But don't stop.\"",
+        character: "assets/images/characters/dain_shy.png",
+        next: "day3_afternoon_dain_freetalk"
+    },
+    "day3_afternoon_dain_freetalk": {
+        name: "Me",
+        text: "(Eating ice cream and chatting with Dain on a park bench.)",
+        freeTalk: { turns: 4, context: "Sharing ice cream with Dain on a park bench. She said 'I couldn't sleep last night' showing a serious side. She's being shy instead of her usual energetic self." },
         next: "day3_afternoon_dain_talk_walk_2"
+    },
+    "day3_afternoon_dain_talk_walk_2": {
+        name: "Dain",
+        text: "\"I want to show you my cool side!\"",
+        character: "assets/images/characters/dain_shy.png",
+        choices: [
+            { text: "\"Looking forward to it!\"", next: "day3_afternoon_dain_excited", stats: { Dain: { affinity: 5 } } },
+            { text: "\"I'll cheer for you\"", next: "day3_afternoon_dain_cheer", stats: { Dain: { affinity: 8 } } }
+        ]
     },
     "day3_afternoon_dain_talk_walk_2": {
         name: "Dain",
@@ -595,10 +764,55 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "day3_afternoon_teacher_ride": {
-        name: "Homeroom Teacher",
-        text: "\"You haven't forgotten our museum date on Sunday, right? I'm looking forward to it.\"",
-        character: "assets/images/characters/teacher_smile.png",
+        name: "Me",
+        text: "(I got in the teacher's car. The road home is bathed in sunset.)",
+        character: "assets/images/characters/teacher_normal.png",
         background: "assets/images/background/school.png",
+        next: "day3_afternoon_teacher_ride_2"
+    },
+    "day3_afternoon_teacher_ride_2": {
+        name: "Homeroom Teacher",
+        text: "(Driving quietly) \"...{name}. Being alone together like this... feels a bit strange.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        next: "day3_afternoon_teacher_ride_3"
+    },
+    "day3_afternoon_teacher_ride_3": {
+        name: "Me",
+        text: "(We stop at a red light. The teacher quietly touches the back of my hand.)",
+        choices: [
+            { text: "(Hold her hand)", next: "day3_afternoon_teacher_hold", stats: { Teacher: { affinity: 10 } } },
+            { text: "\"Teacher, we shouldn't\"", next: "day3_afternoon_teacher_stop", stats: { Teacher: { affinity: -3 } } },
+            { text: "(Quietly lean my head on her shoulder)", next: "day3_afternoon_teacher_lean", stats: { Teacher: { affinity: 8 } } }
+        ]
+    },
+    "day3_afternoon_teacher_hold": {
+        name: "Homeroom Teacher",
+        text: "(The teacher holds her breath) \"...When the light changes, I'm letting go. Promise.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        next: "day3_afternoon_teacher_freetalk"
+    },
+    "day3_afternoon_teacher_stop": {
+        name: "Homeroom Teacher",
+        text: "(The teacher smiles wistfully) \"...You're right. Teacher needs to come to her senses.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day3_afternoon_teacher_freetalk"
+    },
+    "day3_afternoon_teacher_lean": {
+        name: "Homeroom Teacher",
+        text: "(Startled at first... then quietly strokes my hair) \"...The light hasn't changed yet.\"",
+        character: "assets/images/characters/teacher_shy.png",
+        next: "day3_afternoon_teacher_freetalk"
+    },
+    "day3_afternoon_teacher_freetalk": {
+        name: "Me",
+        text: "(Riding in the teacher's car on the way home.)",
+        freeTalk: { turns: 3, context: "In the homeroom teacher's car heading home. After hand-holding or leaning on her shoulder in the sunset. The sweetness and guilt of a forbidden love." },
+        next: "day3_afternoon_teacher_arrive"
+    },
+    "day3_afternoon_teacher_arrive": {
+        name: "Homeroom Teacher",
+        text: "(Arriving at my house) \"...You haven't forgotten our museum date on Sunday, right? I'll be looking forward to it.\"",
+        character: "assets/images/characters/teacher_smile.png",
         fade: true,
         next: "day3_night_start"
     },
@@ -612,10 +826,48 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "day3_afternoon_nurse_walk": {
+        name: "Me",
+        text: "(Walking side by side with the nurse. She glances at the back of my hand.)",
+        character: "assets/images/characters/nurse_normal.png",
+        background: "assets/images/background/school.png",
+        next: "day3_afternoon_nurse_band"
+    },
+    "day3_afternoon_nurse_band": {
+        name: "School Nurse",
+        text: "(She suddenly takes my hand and puts a band-aid on it) \"...There's a scratch here? You didn't notice.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_afternoon_nurse_band_2"
+    },
+    "day3_afternoon_nurse_band_2": {
+        name: "Me",
+        text: "(There's no scratch... Did she just want to hold my hand?)",
+        choices: [
+            { text: "\"There's no scratch though?\"", next: "day3_afternoon_nurse_caught", stats: { Nurse: { affinity: 5 } } },
+            { text: "(Just hold her hand)", next: "day3_afternoon_nurse_hold", stats: { Nurse: { affinity: 10 } } }
+        ]
+    },
+    "day3_afternoon_nurse_caught": {
+        name: "School Nurse",
+        text: "(Her face turns red as if caught) \"...Hmm, sharp eyes? It's just... teacher's mark.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        next: "day3_afternoon_nurse_freetalk"
+    },
+    "day3_afternoon_nurse_hold": {
+        name: "School Nurse",
+        text: "(Surprised, she stops... then holds on tight) \"...Dangerous boy. Let's stay like this for ten seconds.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        next: "day3_afternoon_nurse_freetalk"
+    },
+    "day3_afternoon_nurse_freetalk": {
+        name: "Me",
+        text: "(Walking home alongside the school nurse.)",
+        freeTalk: { turns: 3, context: "Walking home with the school nurse. She used a band-aid as an excuse to hold my hand. The thrill and tension of a forbidden love." },
+        next: "day3_afternoon_nurse_arrive"
+    },
+    "day3_afternoon_nurse_arrive": {
         name: "School Nurse",
         text: "\"Don't forget Sunday 7 PM, okay? I'll be waiting for you.\"",
         character: "assets/images/characters/nurse_normal.png",
-        background: "assets/images/background/school.png",
         fade: true,
         next: "day3_night_start"
     }

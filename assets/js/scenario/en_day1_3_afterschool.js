@@ -435,23 +435,6 @@ Object.assign(SCENARIO[1], {
         sunset: true,
         next: "yuna_after_choices"
     },
-    "after_yuna": {
-        name: "Yuna",
-        text: "(The library annex is darker and quieter than before. There, a girl sits by the window, gazing at the sunset.)",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_normal.png",
-        sunset: true,
-        next: "after_yuna_2"
-    },
-    "after_yuna_2": {
-        name: "Yuna",
-        text: "(She knows I've arrived but stares outside for a long time.)",
-        background: "assets/images/background/library_old.png",
-        character: "assets/images/characters/yuna_normal.png",
-        sunset: true,
-        next: "after_yuna_3"
-    },
-
     "after_yuna_know": {
         name: "Yuna",
         text: "(She slowly turns her head to look at me. A faint smile spreads across her lips.)",
@@ -623,16 +606,6 @@ Object.assign(SCENARIO[1], {
         text: "\"Since this morning...? You still know nothing. This strange aura surrounding the school... can't you feel it? Ignorance can sometimes be a sin. Disappear from my sight.\"",
         character: "assets/images/characters/yuna_normal.png",
         next: "after_home"
-    },
-    "yuna_contact_exchange": {
-        name: "Yuna",
-        text: "(Yuna steps away from the railing and casually holds out her smartphone.) \"To share secrets... we need a way to contact each other. Leave your number here.\"",
-        character: "assets/images/characters/yuna_normal.png",
-        sunset: true,
-        choices: [
-            { text: "Yeah, sure. I want to know everything about you.", next: "yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
-            { text: "Sorry, I'm still a bit cautious.", next: "yuna_contact_fail", stats: { Yuna: { affinity: -25 } } }
-        ]
     },
     "after_dain_new": {
         name: "Me",

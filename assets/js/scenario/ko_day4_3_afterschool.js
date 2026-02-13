@@ -220,16 +220,64 @@ Object.assign(SCENARIO[4], {
         name: "나",
         text: "\"…이 풍경, 진짜 예쁘다.\"",
         sunset: true,
+        next: "day4_wait_talk"
+    },
+    "day4_wait_talk": {
+        name: "나",
+        text: "\"…오늘 진짜 재밌었어. 고마워.\"",
         next: "day4_wait_response"
     },
     "day4_wait_response": {
-        name: "나",
-        text: "(상대방이 조용히 웃었다. \"…그러게.\" 나란히 석양을 바라보며, 말없이 서 있었다.)",
-        next: "day4_wait_feeling"
+        name: "시스템",
+        text: "",
+        selectByHighestAffinity: true,
+        branches: [
+            { next: "day4_wait_seoyeon", character: "Seoyeon" },
+            { next: "day4_wait_yuna", character: "Yuna" },
+            { next: "day4_wait_dain", character: "Dain" },
+            { next: "day4_wait_nurse", character: "Nurse" },
+            { next: "day4_wait_teacher", character: "Teacher" }
+        ]
     },
-    "day4_wait_feeling": {
+    "day4_wait_seoyeon": {
+        name: "서연",
+        text: "\"나도! 또 만나자… 그치?\"",
+        character: "assets/images/characters/seyoun_laugh.png",
+        sunset: true,
+        next: "day4_wait_end"
+    },
+    "day4_wait_yuna": {
+        name: "유나",
+        text: "\"…응. 나쁘지 않았어. …다음에 또 하자.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        sunset: true,
+        next: "day4_wait_end"
+    },
+    "day4_wait_dain": {
+        name: "다인",
+        text: "\"당연 재밌었지!! 다음에 또 가자!!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        next: "day4_wait_end"
+    },
+    "day4_wait_nurse": {
+        name: "보건선생님",
+        text: "\"즐거운 시간이었어. …다음에 또 만날까?\"",
+        character: "assets/images/characters/nurse_normal.png",
+        sunset: true,
+        next: "day4_wait_end"
+    },
+    "day4_wait_teacher": {
+        name: "담임선생님",
+        text: "\"…뛰, 나쁘지 않았네. 다음에 또 불러줘. 나가줄게.\"",
+        character: "assets/images/characters/teacher_normal.png",
+        sunset: true,
+        next: "day4_wait_end"
+    },
+    "day4_wait_end": {
         name: "나",
-        text: "(아직은… 아니야. 좀 더 이 시간을 즐기고 싶다. 내일 꼭 말하자.)",
+        text: "(인사를 나누고 헤어졌다. 마음속에는… 하지 못한 말이 맴돌았다.)",
+        sunset: true,
         fade: true,
         next: "day4_night_start"
     }

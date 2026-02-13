@@ -478,6 +478,101 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_sleep": {
         name: "Me",
+        text: "(Just as my eyes are closing... my phone rings. A call.)",
+        night: true,
+        branches: [
+            { next: "day3_night_phone_seoyeon", condition: "day3_walked_with_seoyeon" },
+            { next: "day3_night_phone_yuna", condition: "day3_walked_with_yuna" },
+            { next: "day3_night_phone_dain", condition: "day3_walked_with_dain" },
+            { next: "day3_night_phone_nurse", condition: "day3_nurse_date_confirmed" },
+            { next: "day3_night_phone_teacher", condition: "day3_teacher_date_confirmed" },
+            { next: "day3_night_sleep_2" }
+        ]
+    },
+    "day3_night_phone_seoyeon": {
+        name: "Seoyeon",
+        text: "(I answer the phone to hear Seoyeon's voice) \"...{name}? I know it's time to sleep. But... I wanted to hear your voice.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_phone_seoyeon_freetalk"
+    },
+    "day3_night_phone_seoyeon_freetalk": {
+        name: "Me",
+        text: "(Having a late-night call with Seoyeon. Her voice sounds softer than usual in the dark room.)",
+        freeTalk: { turns: 3, context: "Late-night phone call. Seoyeon called saying 'I wanted to hear your voice.' A sweet late-night conversation. Seoyeon suddenly called before bed." },
+        night: true,
+        next: "day3_night_phone_end"
+    },
+    "day3_night_phone_yuna": {
+        name: "Yuna",
+        text: "(I answer the phone to hear Yuna's voice) \"...I know it's time to sleep. But... I can't fall asleep.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_phone_yuna_freetalk"
+    },
+    "day3_night_phone_yuna_freetalk": {
+        name: "Me",
+        text: "(Having a late-night call with Yuna. Her quiet breathing reaches my ear.)",
+        freeTalk: { turns: 2, context: "Late-night phone call. Yuna called saying 'I can't fall asleep.' A quiet and intimate late-night conversation. Her soft breathing feels close." },
+        night: true,
+        next: "day3_night_phone_end"
+    },
+    "day3_night_phone_dain": {
+        name: "Dain",
+        text: "(I answer the phone to hear Dain's voice) \"...Hey, I know it's late. But thinking about tomorrow, I can't sleep!\"",
+        character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_phone_dain_freetalk"
+    },
+    "day3_night_phone_dain_freetalk": {
+        name: "Me",
+        text: "(Having a late-night call with Dain. Instead of her usual energy, her quiet voice feels new.)",
+        freeTalk: { turns: 3, context: "Late-night phone call. Dain called saying 'Thinking about tomorrow, I can't sleep!' Unusually quiet Dain. A soft late-night atmosphere." },
+        night: true,
+        next: "day3_night_phone_end"
+    },
+    "day3_night_phone_nurse": {
+        name: "School Nurse",
+        text: "(I answer the phone to hear the nurse's voice) \"...{name}? Still awake? I couldn't sleep either.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_phone_nurse_freetalk"
+    },
+    "day3_night_phone_nurse_freetalk": {
+        name: "Me",
+        text: "(Having a late-night call with the school nurse. Her low voice reaches my ear.)",
+        freeTalk: { turns: 2, context: "Late-night phone call. The school nurse called saying 'I couldn't sleep.' Her low, gentle voice. A forbidden love's late-night call." },
+        night: true,
+        next: "day3_night_phone_end"
+    },
+    "day3_night_phone_teacher": {
+        name: "Homeroom Teacher",
+        text: "(I answer the phone to hear the teacher's voice) \"...{name}? Still awake? I know it's bedtime, but...\"",
+        character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_phone_teacher_freetalk"
+    },
+    "day3_night_phone_teacher_freetalk": {
+        name: "Me",
+        text: "(Having a late-night call with the homeroom teacher. Her quiet voice sounds close.)",
+        freeTalk: { turns: 2, context: "Late-night phone call. The homeroom teacher called saying 'I know it's bedtime, but...' Her quiet voice. A forbidden love's late-night call." },
+        night: true,
+        next: "day3_night_phone_end"
+    },
+    "day3_night_phone_end": {
+        name: "Me",
+        text: "(I hang up and put down my phone. The lingering echo of her voice... makes my heart race.)",
+        night: true,
+        fade: true,
+        next: "day3_night_sleep_2"
+    },
+    "day3_night_sleep_2": {
+        name: "Me",
         text: "(My eyes are closing. Tomorrow is Saturday... What kind of day will it be.)",
         night: true,
         fade: true,
@@ -494,7 +589,54 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare": {
         name: "Me",
-        text: "(I had an uneasy dream. Someone was crying, someone was angry... and someone was smiling coldly.)",
+        text: "(...I dream. Voices echo from a dark space.)",
+        night: true,
+        next: "day3_night_nightmare_voice1"
+    },
+    "day3_night_nightmare_voice1": {
+        name: "???",
+        text: "(Seoyeon's voice echoes) \"...You'll only see me, right? You promised. We pinky swore...\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_nightmare_voice2"
+    },
+    "day3_night_nightmare_voice2": {
+        name: "???",
+        text: "(Yuna's voice whispers coldly) \"...I said you'd regret it if you betray me, remember?\"",
+        character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_nightmare_voice3"
+    },
+    "day3_night_nightmare_voice3": {
+        name: "???",
+        text: "(Dain's voice trembles) \"...Idiot! You said you'd come! You said you wouldn't stand me up...\"",
+        character: "assets/images/characters/dain_sad.png",
+        silhouette: true,
+        night: true,
+        next: "day3_night_nightmare_choice"
+    },
+    "day3_night_nightmare_choice": {
+        name: "Me",
+        text: "(All three voices ring out at once. Hands reach out from the darkness. Whose hand will I take...)",
+        night: true,
+        choices: [
+            { text: "(Take Seoyeon's hand)", next: "day3_night_nightmare_end" },
+            { text: "(Take Yuna's hand)", next: "day3_night_nightmare_end" },
+            { text: "(Take Dain's hand)", next: "day3_night_nightmare_end" },
+            { text: "(Don't take anyone's hand)", next: "day3_night_nightmare_end" }
+        ]
+    },
+    "day3_night_nightmare_end": {
+        name: "Me",
+        text: "(I reached out, but... there was nothing to hold. Everyone vanished, leaving only darkness and regret.)",
+        night: true,
+        next: "day3_night_nightmare_wake"
+    },
+    "day3_night_nightmare_wake": {
+        name: "Me",
+        text: "(...I snap awake. My heart is pounding like crazy. It was a dream. But... what will tomorrow bring?)",
         night: true,
         fade: true,
         next: "day3_final_scene"

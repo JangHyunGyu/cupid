@@ -197,11 +197,11 @@ Object.assign(SCENARIO[2], {
         text: "\"...That's Dain from the volleyball club. {name}, are you close with her?\"",
         character: "assets/images/characters/seyoun_normal.png",
         branches: [
-            { next: "day2_seoyeon_dain_yes", condition: "met_dain" },
-            { next: "day2_seoyeon_dain_no" }
+            { next: "day2_seoyeon_lunch_dain_yes", condition: "met_dain" },
+            { next: "day2_seoyeon_lunch_dain_no" }
         ]
     },
-    "day2_seoyeon_dain_yes": {
+    "day2_seoyeon_lunch_dain_yes": {
         name: "Me",
         text: "(I wonder how to answer Seoyeon's question.)",
         character: "assets/images/characters/seyoun_normal.png",
@@ -211,7 +211,7 @@ Object.assign(SCENARIO[2], {
             { text: "Why? Are you jealous?", next: "day2_seoyeon_dain_tease", stats: { Seoyeon: { affinity: 3 } } }
         ]
     },
-    "day2_seoyeon_dain_no": {
+    "day2_seoyeon_lunch_dain_no": {
         name: "Me",
         text: "\"(Dain Jung... I'll remember that.) No, first time seeing her. Why?\"",
         character: "assets/images/characters/seyoun_normal.png",

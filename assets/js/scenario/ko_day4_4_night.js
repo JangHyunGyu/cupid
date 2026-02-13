@@ -2324,6 +2324,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         night: true,
         fade: true,
+        changeDay: 5,
         next: "day5_start"
     }
 });

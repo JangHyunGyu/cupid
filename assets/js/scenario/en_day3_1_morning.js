@@ -575,11 +575,60 @@ Object.assign(SCENARIO[3], {
         name: "Seoyeon",
         text: "\"Wow! You really came! Thank you!\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        next: "day3_walk_seoyeon_dream"
+    },
+    "day3_walk_seoyeon_dream": {
+        name: "Seoyeon",
+        text: "(Walking side by side) \"Hey, {name}. Do you know what I dreamed about last night?\"",
+        character: "assets/images/characters/seyoun_normal.png",
+        next: "day3_walk_seoyeon_dream_choice"
+    },
+    "day3_walk_seoyeon_dream_choice": {
+        name: "Me",
+        text: "(Seoyeon suddenly brings up a dream.)",
+        choices: [
+            { text: "What kind of dream?", next: "day3_walk_seoyeon_dream_ask" },
+            { text: "Was I in it?", next: "day3_walk_seoyeon_dream_me" },
+            { text: "A nightmare?", next: "day3_walk_seoyeon_dream_bad" }
+        ]
+    },
+    "day3_walk_seoyeon_dream_ask": {
+        name: "Seoyeon",
+        text: "(Seoyeon's face turns red) \"I-it's a secret! It was nothing! Why are you asking?!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
+        next: "day3_walk_seoyeon_crosswalk"
+    },
+    "day3_walk_seoyeon_dream_me": {
+        name: "Seoyeon",
+        text: "(Seoyeon freezes) \"W-what?! Why would you think that! ...Okay, maybe, but that's not the point!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 5 } },
+        next: "day3_walk_seoyeon_crosswalk"
+    },
+    "day3_walk_seoyeon_dream_bad": {
+        name: "Seoyeon",
+        text: "(Seoyeon sighs) \"Ugh, you totally killed the mood. It was a good dream, you know!\"",
+        character: "assets/images/characters/seyoun_pout.png",
+        stats: { Seoyeon: { affinity: -2 } },
+        next: "day3_walk_seoyeon_crosswalk"
+    },
+    "day3_walk_seoyeon_crosswalk": {
+        name: "Me",
+        text: "(We wait for the light at the crosswalk. Standing still, Seoyeon's hand is tantalizingly close to mine.)",
+        next: "day3_walk_seoyeon_crosswalk_2"
+    },
+    "day3_walk_seoyeon_crosswalk_2": {
+        name: "Me",
+        text: "(Seoyeon lightly brushes my hand with her pinky finger. Our eyes meet, and we both look away at the same time.)",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day3_walk_seoyeon_freetalk"
     },
     "day3_walk_seoyeon_freetalk": {
         name: "Me",
-        text: "(We walk to school together, chatting about this and that.)",
+        text: "(We chat about various things on the way to school.)",
+        freeTalk: { turns: 4, context: "Walking to school with Seoyeon side by side. Our hands touched at the crosswalk, so there's a slightly self-conscious atmosphere. It's Friday morning, so weekend plans might come up." },
         next: "day3_seoyeon_weekend_talk"
     },
     "day3_seoyeon_weekend_talk": {
@@ -657,6 +706,58 @@ Object.assign(SCENARIO[3], {
         name: "Yuna",
         text: "\"...You came. (Walking quietly) The weather is nice today. But... things that look peaceful are often the most dangerous.\"",
         character: "assets/images/characters/yuna_normal.png",
+        next: "day3_walk_yuna_leaf"
+    },
+    "day3_walk_yuna_leaf": {
+        name: "Me",
+        text: "(A leaf blown by the wind lands on my head. Yuna quietly reaches out and picks it off.)",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_walk_yuna_leaf_2"
+    },
+    "day3_walk_yuna_leaf_2": {
+        name: "Yuna",
+        text: "\"...Prettier than a flower.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_walk_yuna_leaf_3"
+    },
+    "day3_walk_yuna_leaf_3": {
+        name: "Me",
+        text: "(My heart skips at Yuna's deadpan remark. Before I can respond, Yuna suddenly stops walking.)",
+        next: "day3_walk_yuna_necktie"
+    },
+    "day3_walk_yuna_necktie": {
+        name: "Yuna",
+        text: "\"...Hey. Stay still.\"",
+        character: "assets/images/characters/yuna_normal.png",
+        next: "day3_walk_yuna_necktie_2"
+    },
+    "day3_walk_yuna_necktie_2": {
+        name: "Me",
+        text: "(Yuna starts fixing my necktie. Her face is barely 10 centimeters away from mine.)",
+        character: "assets/images/characters/yuna_normal.png",
+        choices: [
+            { text: "(Stay still)", next: "day3_walk_yuna_necktie_still" },
+            { text: "Your hands are cold, Yuna", next: "day3_walk_yuna_necktie_cold" }
+        ]
+    },
+    "day3_walk_yuna_necktie_still": {
+        name: "Yuna",
+        text: "\"...Dummy. How can you walk around with it this loose.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        stats: { Yuna: { affinity: 5 } },
+        next: "day3_walk_yuna_freetalk"
+    },
+    "day3_walk_yuna_necktie_cold": {
+        name: "Yuna",
+        text: "(Yuna's hands pause. After a moment of silence) \"...Want me to warm them up?\"",
+        character: "assets/images/characters/yuna_shy.png",
+        stats: { Yuna: { affinity: 8 } },
+        next: "day3_walk_yuna_freetalk"
+    },
+    "day3_walk_yuna_freetalk": {
+        name: "Me",
+        text: "(I walk alongside Yuna toward school. A quiet but comfortable silence fills the air.)",
+        freeTalk: { turns: 3, context: "Walking to school with Yuna in the morning. She just fixed my necktie, creating an oddly intimate atmosphere. It's quiet but the distance between us feels close." },
         next: "day3_walk_yuna_talk"
     },
     "day3_walk_yuna_talk": {
@@ -728,12 +829,71 @@ Object.assign(SCENARIO[3], {
         bgm: "daily2.mp3",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "day3_morning_with_dain",
+        next: "day3_walk_dain_bump"
+    },
+    "day3_walk_dain_bump": {
+        name: "Dain",
+        text: "\"{name}!! Yay~!\"",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day3_walk_dain_bump_2"
+    },
+    "day3_walk_dain_bump_2": {
+        name: "Me",
+        text: "(Dain charges at me full speed with no brakes. There's no time to dodge— CRASH!)",
+        next: "day3_walk_dain_bump_3"
+    },
+    "day3_walk_dain_bump_3": {
+        name: "Dain",
+        text: "\"Ow! S-sorry! I couldn't stop!\"",
+        character: "assets/images/characters/dain_shy.png",
+        next: "day3_walk_dain_bump_4"
+    },
+    "day3_walk_dain_bump_4": {
+        name: "Me",
+        text: "(Dain fell on top of me. Our faces are barely 10 centimeters apart... I can feel her breath.)",
+        choices: [
+            { text: "\"Are you okay?\" (Help her up)", next: "day3_walk_dain_help" },
+            { text: "\"Should we stay like this?\"", next: "day3_walk_dain_bold" },
+            { text: "(Can't say anything)", next: "day3_walk_dain_freeze" }
+        ]
+    },
+    "day3_walk_dain_help": {
+        name: "Dain",
+        text: "(As I take her hand and help her up, Dain's face turns beet red) \"Th-thanks... My heart almost exploded! I mean from the crash! Not for any other reason!\"",
+        character: "assets/images/characters/dain_shy.png",
+        stats: { Dain: { affinity: 5 } },
+        next: "day3_walk_dain_greet"
+    },
+    "day3_walk_dain_bold": {
+        name: "Dain",
+        text: "\"Huh?! Y-you idiot! Get up now! People are watching!\"",
+        character: "assets/images/characters/dain_shy.png",
+        stats: { Dain: { affinity: 8 } },
+        next: "day3_walk_dain_greet_shy"
+    },
+    "day3_walk_dain_freeze": {
+        name: "Dain",
+        text: "\"Hey, what's wrong?! Who's blushing here?! ...Am I blushing too? Ugh, whatever!\"",
+        character: "assets/images/characters/dain_shy.png",
+        stats: { Dain: { affinity: 3 } },
+        next: "day3_walk_dain_greet"
+    },
+    "day3_walk_dain_greet_shy": {
+        name: "Dain",
+        text: "(Jumping up and dusting herself off) \"...Dummy. What are you doing first thing in the morning.\"",
+        character: "assets/images/characters/dain_shy.png",
         next: "day3_walk_dain_greet"
     },
     "day3_walk_dain_greet": {
         name: "Dain",
-        text: "\"{name}! Yay~! (Out of breath) Finally found you! Let's go to school together! The weather is perfect for exercise today!\"",
+        text: "(Composing herself) \"A-anyway! Let's walk to school together! The weather is perfect for exercise today!\"",
         character: "assets/images/characters/dain_laugh.png",
+        next: "day3_walk_dain_freetalk"
+    },
+    "day3_walk_dain_freetalk": {
+        name: "Me",
+        text: "(I walk alongside Dain toward school. Perhaps because of the earlier collision, she's keeping a bit more distance than usual.)",
+        freeTalk: { turns: 4, context: "Walking to school with Dain. There was a bumping incident earlier so Dain is a bit shy. She's energetic but blushes occasionally." },
         next: "day3_walk_dain_talk"
     },
     "day3_walk_dain_talk": {
@@ -811,7 +971,69 @@ Object.assign(SCENARIO[3], {
         name: "School Nurse",
         text: "\"Oh my, {name}. You came? Hehe, our transfer student is so nice. Come on, let's walk together.\"",
         character: "assets/images/characters/nurse_normal.png",
-	    next: "day3_walk_nurse_talk"
+	    next: "day3_walk_nurse_arm"
+	},
+	"day3_walk_nurse_arm": {
+		name: "Me",
+		text: "(The teacher subtly places her hand on my arm as we walk side by side. What would people think if they saw us...)",
+		character: "assets/images/characters/nurse_normal.png",
+		choices: [
+			{ text: "(Just enjoy it)", next: "day3_walk_nurse_enjoy" },
+			{ text: "\"Teacher, people might see us...\"", next: "day3_walk_nurse_worry" }
+		]
+	},
+	"day3_walk_nurse_enjoy": {
+		name: "School Nurse",
+		text: "(The teacher smiles with satisfaction) \"Hehe, this is nice. Walking together like this.\"",
+		character: "assets/images/characters/nurse_shy.png",
+		stats: { Nurse: { affinity: 5 } },
+		next: "day3_walk_nurse_conflict"
+	},
+	"day3_walk_nurse_worry": {
+		name: "School Nurse",
+		text: "(The teacher sighs softly and removes her hand) \"You're right... We can't let anyone find out about us.\"",
+		character: "assets/images/characters/nurse_normal.png",
+		stats: { Nurse: { affinity: 2 } },
+		next: "day3_walk_nurse_conflict"
+	},
+	"day3_walk_nurse_conflict": {
+		name: "School Nurse",
+		text: "(Looking lost in thought, she says quietly) \"...{name}, I know a teacher shouldn't be doing this with a student... but my heart won't listen.\"",
+		character: "assets/images/characters/nurse_normal.png",
+		next: "day3_walk_nurse_conflict_2"
+	},
+	"day3_walk_nurse_conflict_2": {
+		name: "Me",
+		text: "(There's an unusual seriousness in her voice. Is she struggling with this too?)",
+		choices: [
+			{ text: "\"I like you too, teacher\"", next: "day3_walk_nurse_confess", stats: { Nurse: { affinity: 8 } } },
+			{ text: "(Quietly take her hand)", next: "day3_walk_nurse_hand", stats: { Nurse: { affinity: 10 } } },
+			{ text: "\"But you're still a teacher\"", next: "day3_walk_nurse_boundary", stats: { Nurse: { affinity: -5 } } }
+		]
+	},
+	"day3_walk_nurse_confess": {
+		name: "School Nurse",
+		text: "(Her eyes go wide) \"...You're really dangerous, you know? Making a teacher's heart waver like this.\"",
+		character: "assets/images/characters/nurse_shy.png",
+		next: "day3_walk_nurse_freetalk"
+	},
+	"day3_walk_nurse_hand": {
+		name: "School Nurse",
+		text: "(She looks down at our hands in surprise... then holds on tight) \"...Just five seconds. Let's stay like this for just five seconds.\"",
+		character: "assets/images/characters/nurse_shy.png",
+		next: "day3_walk_nurse_freetalk"
+	},
+	"day3_walk_nurse_boundary": {
+		name: "School Nurse",
+		text: "(Her expression freezes for a moment before she forces a smile) \"...Right. A teacher is a teacher, after all.\"",
+		character: "assets/images/characters/nurse_normal.png",
+		next: "day3_walk_nurse_freetalk"
+	},
+	"day3_walk_nurse_freetalk": {
+		name: "Me",
+		text: "(I walk toward school with the nurse. A strange mix of tension and excitement fills the air.)",
+		freeTalk: { turns: 3, context: "Walking to school with the school nurse. She confessed that she shouldn't feel this way about a student. The tension of a forbidden love hangs in the air." },
+		next: "day3_walk_nurse_talk"
 	},
 	"day3_walk_nurse_talk": {
 		name: "School Nurse",
@@ -894,6 +1116,51 @@ Object.assign(SCENARIO[3], {
 		name: "Me",
 		text: "(I got into the teacher's car. A subtle perfume scent and soft music fills the air. It feels awkward yet exciting.)",
 		character: "assets/images/characters/teacher_normal.png",
+		next: "day3_walk_teacher_hair"
+	},
+	"day3_walk_teacher_hair": {
+		name: "Homeroom Teacher",
+		text: "(While stopped at a red light, the teacher suddenly reaches out to fix my hair) \"...Hold on. This part was messy.\"",
+		character: "assets/images/characters/teacher_normal.png",
+		next: "day3_walk_teacher_hair_2"
+	},
+	"day3_walk_teacher_hair_2": {
+		name: "Homeroom Teacher",
+		text: "(She pauses, whispering) \"...I shouldn't be doing this to a student.\"",
+		character: "assets/images/characters/teacher_shy.png",
+		next: "day3_walk_teacher_conflict"
+	},
+	"day3_walk_teacher_conflict": {
+		name: "Me",
+		text: "(Her touch is warm. The air inside the car shifts to something strange.)",
+		choices: [
+			{ text: "\"Your hands are warm, teacher\"", next: "day3_walk_teacher_warm", stats: { Teacher: { affinity: 5 } } },
+			{ text: "(Quietly hold her hand)", next: "day3_walk_teacher_hold", stats: { Teacher: { affinity: 8 } } },
+			{ text: "\"It's okay, teacher\"", next: "day3_walk_teacher_calm", stats: { Teacher: { affinity: 2 } } }
+		]
+	},
+	"day3_walk_teacher_warm": {
+		name: "Homeroom Teacher",
+		text: "(The teacher pulls her hand back, flustered) \"Oh my, this kid... Surprising a teacher like that.\"",
+		character: "assets/images/characters/teacher_shy.png",
+		next: "day3_walk_teacher_freetalk"
+	},
+	"day3_walk_teacher_hold": {
+		name: "Homeroom Teacher",
+		text: "(She looks at our hands in surprise... but doesn't pull away) \"...When the light changes, I'm letting go. Promise.\"",
+		character: "assets/images/characters/teacher_shy.png",
+		next: "day3_walk_teacher_freetalk"
+	},
+	"day3_walk_teacher_calm": {
+		name: "Homeroom Teacher",
+		text: "(The teacher smiles wistfully) \"...Thank you. Was teacher being a bit strange?\"",
+		character: "assets/images/characters/teacher_smile.png",
+		next: "day3_walk_teacher_freetalk"
+	},
+	"day3_walk_teacher_freetalk": {
+		name: "Me",
+		text: "(Riding in the homeroom teacher's car on the way to school.)",
+		freeTalk: { turns: 3, context: "In the homeroom teacher's car on the way to school. She fixed my hair and said 'I shouldn't be doing this to a student.' The tension of a forbidden love hangs in the air." },
 		next: "day3_walk_teacher_talk"
 	},
 	"day3_walk_teacher_talk": {
@@ -987,9 +1254,112 @@ Object.assign(SCENARIO[3], {
     },
     "day3_classroom": {
         name: "Me",
-        text: "(As I enter the classroom, the kids are buzzing. I wonder what's happening today?)",
+        text: "(As I enter the classroom, the kids are buzzing. I sit down at my desk and notice... something is on it.)",
         background: "assets/images/background/room_school.png",
         character: null,
+        branches: [
+            { next: "day3_classroom_note_seoyeon", condition: "day3_morning_with_seoyeon" },
+            { next: "day3_classroom_note_yuna", condition: "day3_morning_with_yuna" },
+            { next: "day3_classroom_note_dain", condition: "day3_morning_with_dain" },
+            { next: "day3_classroom_empty" }
+        ]
+    },
+    "day3_classroom_note_seoyeon": {
+        name: "Me",
+        text: "(There's a small note. 'Let's eat lunch together ♡ - Seoyeon' ... We were literally just together, and she left a note in advance?)",
+        stats: { Seoyeon: { affinity: 2 } },
+        next: "day3_classroom_class_start"
+    },
+    "day3_classroom_note_yuna": {
+        name: "Me",
+        text: "(There's an origami crow. I unfold its wings to find writing inside. '...Tomorrow night' — Looks like Yuna left it.)",
+        stats: { Yuna: { affinity: 2 } },
+        next: "day3_classroom_class_start"
+    },
+    "day3_classroom_note_dain": {
+        name: "Me",
+        text: "(There's an energy bar and a sticky note. 'If you don't exercise, at least eat this! - Dain' ... She must have left it earlier.)",
+        stats: { Dain: { affinity: 2 } },
+        next: "day3_classroom_class_start"
+    },
+    "day3_classroom_empty": {
+        name: "Me",
+        text: "(Nothing on my desk. Just an ordinary Friday morning.)",
+        next: "day3_classroom_class_start"
+    },
+    "day3_classroom_class_start": {
+        name: "Me",
+        text: "(Class begins. The homeroom teacher starts writing problems on the board.)",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_normal.png",
+        next: "day3_classroom_teacher_event"
+    },
+    "day3_classroom_teacher_event": {
+        name: "Me",
+        text: "(When the teacher raises her arm to write on the board, a subtle whiff of perfume drifts over. No one else seems to notice... only me.)",
+        branches: [
+            { next: "day3_classroom_teacher_wink", condition: "isDating_Teacher" },
+            { next: "day3_classroom_teacher_glance", condition: "day3_teacher_date_confirmed" },
+            { next: "day3_classroom_nurse_visit" }
+        ]
+    },
+    "day3_classroom_teacher_wink": {
+        name: "Homeroom Teacher",
+        text: "(While asking a question, her eyes meet mine... she gives a subtle wink) \"...{name}, your answer?\"",
+        character: "assets/images/characters/teacher_shy.png",
+        stats: { Teacher: { affinity: 3 } },
+        next: "day3_classroom_nurse_visit"
+    },
+    "day3_classroom_teacher_glance": {
+        name: "Me",
+        text: "(The teacher glances my way and smiles faintly. Is she thinking about our Sunday plans?)",
+        character: "assets/images/characters/teacher_smile.png",
+        stats: { Teacher: { affinity: 2 } },
+        next: "day3_classroom_nurse_visit"
+    },
+    "day3_classroom_nurse_visit": {
+        name: "Me",
+        text: "(Mid-class, the classroom door opens and the school nurse walks in.)",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_classroom_nurse_visit_2"
+    },
+    "day3_classroom_nurse_visit_2": {
+        name: "School Nurse",
+        text: "\"Sorry to interrupt, teacher. I'm here to hand out health surveys.\"",
+        character: "assets/images/characters/nurse_normal.png",
+        next: "day3_classroom_nurse_visit_3"
+    },
+    "day3_classroom_nurse_visit_3": {
+        name: "Me",
+        text: "(The nurse pauses in front of me while handing out surveys. Her fingers lightly brush against my hand.)",
+        branches: [
+            { next: "day3_classroom_nurse_secret", condition: "isDating_Nurse" },
+            { next: "day3_classroom_nurse_band", condition: "day3_nurse_date_confirmed" },
+            { next: "day3_classroom_nurse_pass" }
+        ]
+    },
+    "day3_classroom_nurse_secret": {
+        name: "School Nurse",
+        text: "(Without anyone noticing, she slips a small note between the survey pages. 'Come to the nurse's office at lunch. I've prepared something special 💋')",
+        character: "assets/images/characters/nurse_shy.png",
+        stats: { Nurse: { affinity: 5 } },
+        next: "day3_classroom_nurse_leave"
+    },
+    "day3_classroom_nurse_band": {
+        name: "School Nurse",
+        text: "(She hands me the survey and places a band-aid on the back of my hand) \"...You don't have a wound? Well... it's teacher's mark.\"",
+        character: "assets/images/characters/nurse_shy.png",
+        stats: { Nurse: { affinity: 3 } },
+        next: "day3_classroom_nurse_leave"
+    },
+    "day3_classroom_nurse_pass": {
+        name: "Me",
+        text: "(The nurse smiles gently as she hands me the survey and moves on.)",
+        next: "day3_classroom_nurse_leave"
+    },
+    "day3_classroom_nurse_leave": {
+        name: "Me",
+        text: "(The nurse leaves the classroom. None of the other students noticed a thing.)",
         next: "day3_break_time"
     },
 
