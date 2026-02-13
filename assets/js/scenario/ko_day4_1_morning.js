@@ -69,7 +69,6 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         character: null,
         bgm: "morning.mp3",
-        changeDay: 4,
         fade: true,
         next: "day4_morning_wake"
     },
