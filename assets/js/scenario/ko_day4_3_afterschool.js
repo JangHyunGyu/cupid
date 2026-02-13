@@ -269,7 +269,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_wait_teacher": {
         name: "담임선생님",
-        text: "\"…뛰, 나쁘지 않았네. 다음에 또 불러줘. 나가줄게.\"",
+        text: "\"…뭐, 나쁘지 않았네. 다음에 또 불러줘. 나가줄게.\"",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "day4_wait_end"
