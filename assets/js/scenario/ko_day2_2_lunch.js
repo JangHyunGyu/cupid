@@ -678,7 +678,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_seoyeon_favor_seoyeon": {
         name: "다인",
-        text: "\"(다인이 살짝 생무룩한 표정으로) ....흥, 그래? 나랑 있으면서 벌써 다른 약속?\"",
+        text: "\"(다인이 살짝 시무룩한 표정으로) ....흥, 그래? 나랑 있으면서 벌써 다른 약속?\"",
         character: "assets/images/characters/dain_pout.png",
         next: "day2_dain_seoyeon_favor_seoyeon_2"
     },

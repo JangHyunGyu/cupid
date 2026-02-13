@@ -71,7 +71,7 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_end": {
         name: "나",
-        text: "(학교에서의 두 번째 밤. 창밖의 어둠이 어제보다 훨씬 깊고 비밀스럽게 느껴진다. 가습기 돌아가는 소리만이 정막을 채운다.)",
+        text: "(학교에서의 두 번째 밤. 창밖의 어둠이 어제보다 훨씬 깊고 비밀스럽게 느껴진다. 가습기 돌아가는 소리만이 적막을 채운다.)",
         background: "assets/images/background/room_my.png",
         bgm: "night2.mp3",
         character: null,

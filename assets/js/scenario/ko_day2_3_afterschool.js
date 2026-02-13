@@ -760,7 +760,7 @@ Object.assign(SCENARIO[2], {
         text: "(다인이가 유나를 보며 불안해하는 것 같다.)",
         choices: [
             { text: "유나? 아, 그냥 조용한 애야.", next: "day2_dain_yuna_know", condition: "met_yuna", stats: { Dain: { affinity: 2 }, Yuna: { affinity: 2 } } },
-            { text: "글쌸, 나도 처음 봐.", next: "day2_dain_yuna_unknown", excludeCondition: "met_yuna", stats: { Dain: { affinity: 3 } } },
+            { text: "글쎄, 나도 처음 봐.", next: "day2_dain_yuna_unknown", excludeCondition: "met_yuna", stats: { Dain: { affinity: 3 } } },
             { text: "다인이 더 밝고 좋아!", next: "day2_dain_yuna_compliment", stats: { Dain: { affinity: 5 } } }
         ]
     },
