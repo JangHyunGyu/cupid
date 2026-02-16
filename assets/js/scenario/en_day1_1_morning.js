@@ -77,40 +77,49 @@ Object.assign(SCENARIO[1], {
     },
     "start_2": {
         name: "Me",
+        background: "assets/images/background/school.png",
         text: "(An unfamiliar uniform, an unfamiliar scenery... But somehow I feel like something good is going to happen.)",
         next: "start_3"
     },
     "start_3": {
         name: "Me",
+        background: "assets/images/background/school.png",
         text: "(Alright, let's go. It's a new beginning.)",
         next: "name_input_scene"
     },
     "name_input_scene": {
         type: "input",
         name: "System",
+        background: "assets/images/background/school.png",
         text: "Transfer student, what's your name?",
         next: "start_4"
     },
     "start_4": {
         name: "???",
+        background: "assets/images/background/school.png",
         text: "\"Hello? I haven't seen you before. Are you... {name}, the new transfer student?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "intro_1"
     },
     "intro_1": {
         name: "Me",
+        background: "assets/images/background/school.png",
         text: "(A girl approaches me with a bright smile. A subtle scent of shampoo tickles my nose.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "intro_2"
     },
     "intro_2": {
         name: "Me",
+        background: "assets/images/background/school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(When our eyes meet, my heart skips a beat. She's so pretty...)",
         next: "intro_3"
     },
     "intro_3": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "\"I'm Seoyeon, the student council president. The teacher asked me to come greet you. Nice to meet you!\"",
+        character: "assets/images/characters/seyoun_normal.png",
         setFlags: ["met_seoyeon", "knows_name_seoyeon"],
         choices: [
             { text: "Nice to meet you too! This school is really beautiful.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 3 } } },
@@ -122,60 +131,70 @@ Object.assign(SCENARIO[1], {
     },
     "path_rude_1": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "(Seoyeon's eyes widen, and she bites her lower lip.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "path_rude_1_2"
     },
     "path_rude_1_2": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "\"Oh... Sorry. I must have been in your way. But guiding you is my job, so... follow me.\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_1"
     },
     "path_friendly_1": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "(When she smiles brightly, the whole area seems to light up. My tension eases a bit.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_friendly_1_2"
     },
     "path_friendly_1_2": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "\"Hehe, right? It can be a bit confusing at first. I'll be your perfect guide. Come on, follow me!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_1"
     },
     "path_tease_1": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "(Her eyes widen, then she playfully winks at me.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_tease_1_2"
     },
     "path_tease_1_2": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "\"Oh my, flirting on the first day? I'll give you a passing grade. So, shall our 'special' transfer student follow me?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_1"
     },
     "path_blush_1": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "(Seoyeon's face instantly turns red. She avoids my gaze and plays with her hair.)",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "path_blush_1_2"
     },
     "path_blush_1_2": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "\"Th-that was so sudden... That's cheating. Anyway, transfer students these days... Just follow me!\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },
     "path_silent_1": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "(She tilts her head and leans closer to my face. I can almost feel her breath.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "path_silent_1_2"
     },
     "path_silent_1_2": {
         name: "Seoyeon",
+        background: "assets/images/background/school.png",
         text: "\"Hmm? What's wrong? Your face is really red... Did you already fall for me? Hehe.\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_1"
@@ -189,24 +208,29 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_name_ask": {
         name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
         text: "(Seoyeon suddenly stops and turns to me.) \"Oh, come to think of it, I said your name first earlier. It's {name}, right? Let me introduce myself properly this time!\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_name_share"
     },
     "hallway_name_share": {
         name: "Me",
+        background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "\"Yeah, that's right. I'm {name}. I was so distracted earlier that I couldn't introduce myself properly. Nice to meet you, Seoyeon.\"",
         setFlag: "knows_name_seoyeon",
         next: "hallway_name_share_2"
     },
     "hallway_name_share_2": {
         name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
         text: "\"{name}... Hehe, that's a nice name! I'll call you {name} from now on. Nice to meet you too, {name}!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_1_2"
     },
     "hallway_1_2": {
         name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
         text: "(I walk down the hallway, watching her from behind.)",
         character: "assets/images/characters/seyoun_back.png",
         next: "hallway_free_talk"
@@ -214,6 +238,7 @@ Object.assign(SCENARIO[1], {
     "hallway_free_talk": {
         type: "free_talk",
         name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
         text: "\"Oh, come to think of it, we only exchanged names and didn't really talk! If you have any questions, feel free to ask!\"",
         context: "Walking through the school hallway together with the transfer student protagonist, having a light conversation. Keep the conversation going until it naturally concludes. When the conversation ends, Seoyeon will start showing the protagonist around the school facilities. In the final turn only, mention that you'll start moving or begin the tour.",
         personality: "Kind, caring, and responsible student council president. She's developing feelings for the protagonist.",
@@ -305,6 +330,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3": {
         name: "Me",
+        background: "assets/images/background/load_school.png",
         text: "(I started walking down the hallway with Seoyeon's guidance. She kindly began explaining various parts of the school.)",
         character: "assets/images/characters/seyoun_normal.png",
         choices: [
@@ -621,12 +647,14 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_2_high": {
         name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
         text: "(Seoyeon lowers her head slightly and whispers in my ear. Her sweet breath tickles me.) \"{name}, don't be too nervous. I'll always be by your side. You can do it.\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "classroom_1_3_high"
     },
     "classroom_1_3_high": {
         name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
         text: "\"Here's our classroom. ...This is a secret, but I asked the teacher to move you to the seat next to mine. I wanted to get close to you as soon as possible.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "classroom_2"
@@ -640,12 +668,14 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_2_low": {
         name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
         text: "(She silently points at the sign next to the door with her chin. Her attitude of not even looking at me makes my heart feel cold.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "classroom_1_3_low"
     },
     "classroom_1_3_low": {
         name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
         text: "\"This is Class 2-3. The teacher is waiting inside. Don't be late on your first day of transfer and get on their bad side. Go on in.\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "classroom_2"
@@ -659,17 +689,20 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_2": {
         name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
         text: "(Where her hand touched feels warm. She looks into my eyes and quietly cheers me on.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_1_3"
     },
     "classroom_1_3": {
         name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
         text: "\"Here's Class 2-3, where you'll be staying. Don't be nervous. I'm right next to you, so just be yourself. Got it?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_2"
     },
     "classroom_2": {
+        background: "assets/images/background/load_school.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 25, next: "classroom_2_high" },
@@ -716,6 +749,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_2": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/room_school.png",
         text: "(The atmosphere in the classroom feels heavy. The homeroom teacher taps the podium to get everyone's attention.)",
         character: "assets/images/characters/teacher_normal.png",
         next: "teacher_free_talk"
@@ -723,6 +757,7 @@ Object.assign(SCENARIO[1], {
     "teacher_free_talk": {
         type: "free_talk",
         name: "Homeroom Teacher",
+        background: "assets/images/background/room_school.png",
         text: "\"Well, everyone seems very interested in the new transfer student. You must be nervous, but everyone here is nice, so don't worry too much. Before you introduce yourself, do you have any questions for me?\"",
         context: "Location: In front of the podium in Class 2-3. Situation: A brief waiting period before the homeroom teacher introduces the transfer student protagonist to the class. Dozens of students are watching us, but this conversation should only be between the protagonist and the homeroom teacher. The protagonist's introduction to all the students is an official event that happens AFTER this conversation, so do NOT have the protagonist greet or introduce themselves to the students yet. Talk only about personal questions to the teacher, advice about school life, first impressions, etc. Keep the conversation going until it naturally concludes. In the final turn only, mention that you'll now officially introduce them to the class.",
         personality: "A professional teacher with clear boundaries between work and personal life, but actually has a clumsy side and gets flustered by the protagonist's unexpectedly mature demeanor. Has a hidden desire to lean on the protagonist - a 'gap moe' characteristic.",
@@ -761,6 +796,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
         text: "(The conversation with the teacher is over. Now it's time to officially introduce myself to the class. All eyes are on me.)",
         character: "assets/images/characters/teacher_normal.png",
         choices: [
@@ -785,78 +821,91 @@ Object.assign(SCENARIO[1], {
     },
     "teacher_name_share_normal": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/room_school.png",
         text: "\"Alright, {name}. Please say a few words to introduce yourself to the class.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "class_after_active"
     },
     "class_after_active": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "(Cheers erupt from all over the classroom. The boys in the back seats are especially excited. Seoyeon claps with a pleased smile.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_2"
     },
     "class_after_active_2": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "(The students are already whispering about recruiting me to their teams.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_3"
     },
     "class_after_active_3": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "\"Oh~ You seem athletic! How about a game of volleyball at lunch? Let's see what the transfer student's got!\"",
         character: null,
         next: "lunch_time"
     },
     "class_after_quiet": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "(The students nod and calmly accept me. Some girls whisper while looking at me.)",
         character: null,
         next: "class_after_quiet_2"
     },
     "class_after_quiet_2": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "(Seoyeon seems pleased with my serious demeanor and nods. The classroom atmosphere becomes more calm.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "class_after_quiet_3"
     },
     "class_after_quiet_3": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "\"Wow, they have a cool vibe... Would it be okay to say hi if we meet in the library?\"",
         character: null,
         next: "lunch_time"
     },
     "class_after_party": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "(The classroom instantly becomes as noisy as a marketplace. Students are already crowding around me.)",
         character: null,
         next: "class_after_party_2"
     },
     "class_after_party_2": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "(Seoyeon seems a bit flustered but soon bursts out laughing. The students are already busy deciding where to eat.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_party_3"
     },
     "class_after_party_3": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "\"Wow! {name}, you have such a great personality! Let's eat lunch together today! We'll show you all the good food spots!\"",
         character: null,
         next: "lunch_time"
     },
     "class_after_study": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "(A cold silence fills the classroom. The students look a bit taken aback and glance at each other while whispering.)",
         character: null,
         next: "class_after_study_2"
     },
     "class_after_study_2": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "(Seoyeon's expression stiffens a bit too. It feels like some kind of wall has formed. The students quiet down while watching me.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "class_after_study_3"
     },
     "class_after_study_3": {
         name: "Classmates",
+        background: "assets/images/background/room_school.png",
         text: "\"Wow... That's intense. Must be a total study bug. We should probably not bother them...\"",
         character: null,
         next: "lunch_time"

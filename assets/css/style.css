@@ -450,6 +450,11 @@ html {
     min-width: 0;
 }
 
+#chat-input:focus-visible {
+    border-color: #fff;
+    box-shadow: 0 0 0 2px rgba(255, 105, 180, 0.5);
+}
+
 /* 채팅 전송 버튼 */
 #chat-send {
     background: #ff69b4;
@@ -899,6 +904,11 @@ html {
     color: #333;
 }
 
+#player-name-input:focus-visible {
+    border-color: #e91e63;
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.3);
+}
+
 #name-confirm-btn {
     padding: 0 15px;
     background: #ff69b4;
@@ -1142,13 +1152,14 @@ html {
     pointer-events: auto;
 }
 
-/* 크레딧 컨텐츠 - 아래에서 위로 스크롤 */
+/* 크레딧 컨텐츠 - 아래에서 위로 스크롤 (GPU 가속) */
 #credits-content {
     position: absolute;
     width: 100%;
     text-align: center;
     color: #fff;
-    top: 100%;
+    top: 0;
+    transform: translateY(100vh);
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -1159,10 +1170,10 @@ html {
 
 @keyframes creditsScroll {
     0% {
-        top: 100%;
+        transform: translateY(100vh);
     }
     100% {
-        top: -200%;
+        transform: translateY(-200%);
     }
 }
 
@@ -1270,5 +1281,21 @@ html {
     }
     100% {
         transform: rotate(360deg) scale(1);
+    }
+}
+
+/* ===== 모션 감소 설정 (접근성) ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    #credits-layer.active #credits-content {
+        animation: none;
+        transform: translateY(0);
     }
 }

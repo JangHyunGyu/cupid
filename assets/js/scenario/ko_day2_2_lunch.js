@@ -94,12 +94,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_teacher_2": {
         name: "담임선생님",
+        background: "assets/images/background/teacher_office.png",
         text: "\"어머, {name}! 점심은 맛있게 먹었니? 선생님은 이제 막 먹으려던 참이야.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_lunch_teacher_3"
     },
     "day2_lunch_teacher_3": {
         name: "담임선생님",
+        background: "assets/images/background/teacher_office.png",
         text: "\"혹시 선생님이랑 같이 점심 먹고 싶어서 온 거니? 후훗, 농담이야.\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
@@ -110,24 +112,28 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_teacher_eat": {
         name: "담임선생님",
+        background: "assets/images/background/teacher_office.png",
         text: "\"어머나... 정말 대담한 학생이네? 좋아, 선생님 도시락 반찬 좀 나눠줄게. 자, 아~ 해보렴.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_food": {
         name: "담임선생님",
+        background: "assets/images/background/teacher_office.png",
         text: "\"후훗, 우리 어머니가 솜씨가 좀 좋으시거든. 나중에 기회 되면 {name}한테도 맛 보여주고 싶네.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_pass": {
         name: "담임선생님",
+        background: "assets/images/background/teacher_office.png",
         text: "\"그래? 그래도 이렇게 들러주니 고맙네. 남은 점심시간 즐겁게 보내렴!\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_end": {
         name: "나",
+        background: "assets/images/background/teacher_office.png",
         text: "(선생님과 짧지만 즐거운 대화를 나누고 교실로 돌아왔다. 선생님의 다정한 미소가 계속 생각난다.)",
         character: null,
         next: "day2_afternoon_class"
@@ -141,6 +147,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_talk": {
         name: "서연",
+        background: "assets/images/background/student_room.png",
         text: "\"{name}! 마침 오길 기다리고 있었어. 우리 여기 앉아. 오늘 샌드위치를 좀 넉넉하게 만들었거든.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
@@ -151,6 +158,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_praise": {
         name: "서연",
+        background: "assets/images/background/student_room.png",
         text: "\"정말? 입맛에 맞을지 걱정했는데 다행이다. 자, 사양 말고 많이 먹어!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         setFlag: "day2_ate_lunch_seoyeon",
@@ -158,6 +166,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_worry": {
         name: "서연",
+        background: "assets/images/background/student_room.png",
         text: "\"괜찮아. 네가 맛있게 먹어주는 모습 보니까 피곤함이 싹 가시는 것 같아. 정말로.\"",
         character: "assets/images/characters/seyoun_normal.png",
         setFlag: "day2_ate_lunch_seoyeon",
@@ -165,6 +174,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_touch": {
         name: "서연",
+        background: "assets/images/background/student_room.png",
         text: "\"아... 고, 고마워. 내가 너무 급하게 먹었나 보네... (서연이의 얼굴이 살짝 붉어진다)\"",
         character: "assets/images/characters/seyoun_shy.png",
         setFlag: "day2_ate_lunch_seoyeon",
@@ -172,6 +182,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_dain_event": {
         name: "나",
+        background: "assets/images/background/student_room.png",
         text: "(그때, 학생회실 창문 너머로 누군가 지나가며 손을 흔든다.)",
         character: "assets/images/characters/seyoun_normal.png",
         branches: [
@@ -263,12 +274,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_talk": {
         name: "유나",
+        background: "assets/images/background/library_old.png",
         text: "\"...왔구나. 쪽지 보고 진짜 올 줄은 몰랐는데.\"",
         character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_talk_2"
     },
     "day2_yuna_talk_2": {
         name: "유나",
+        background: "assets/images/background/library_old.png",
         text: "(유나가 무표정한 얼굴로 나를 빤히 바라본다.)",
         character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_free_talk"
@@ -276,6 +289,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_free_talk": {
         type: "free_talk",
         name: "유나",
+        background: "assets/images/background/library_old.png",
         text: "\"...나한테 궁금한 거라도 있어? 아니면 이 학교에 대해 더 알고 싶은 거야?\"",
         context: "조용한 도서관 별관 뒤뜰, 신비로운 분위기의 유나와 단둘이 대화를 나누는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 유나가 학교의 비밀에 대해 이야기하며 주인공에게만 보여주고 싶은 것이 있다고 제안하는 상황으로 이어집니다. 대화의 마지막 턴에만 비밀스러운 분위기를 조성하며 주인공의 호기심을 자극해 주세요.",
         personality: "신비롭고 차가우며 비밀이 많은 소녀. 주인공에게 묘한 흥미를 느끼고 있음.",
@@ -346,6 +360,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_talk_branch": {
         name: "나",
+        background: "assets/images/background/library_old.png",
         text: "(유나가 나를 바라보며 입을 열기 시작한다.)",
         character: "assets/images/characters/yuna_normal.png",
         branches: [
@@ -608,18 +623,21 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_store_seoyeon": {
         name: "나",
+        background: "assets/images/background/store.png",
         text: "(그때, 매점 반대편에서 익숙한 얼굴이 보인다. 서연이가 음료수를 사고 있다.)",
         character: "assets/images/characters/dain_normal.png",
         next: "day2_dain_store_seoyeon_2"
     },
     "day2_dain_store_seoyeon_2": {
         name: "다인",
+        background: "assets/images/background/store.png",
         text: "\"오? 저 애... 학생회장 아니야? 뭔가 범접 불가의 아우라가 느껴지는데. {name}, 혹시 아는 사이야?\"",
         character: "assets/images/characters/dain_normal.png",
         next: "day2_dain_store_seoyeon_approach"
     },
     "day2_dain_store_seoyeon_approach": {
         name: "나",
+        background: "assets/images/background/store.png",
         text: "(그때, 서연이가 우리를 발견하고 다가온다.)",
         character: "assets/images/characters/seyoun_normal.png",
         branches: [
@@ -887,6 +905,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_talk": {
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"어머, 안녕? 점심시간에 보건실이라니, 어디가 아픈 거니?\"",
         character: "assets/images/characters/nurse_normal.png",
         branches: [
@@ -940,12 +959,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_new_name_ask": {
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"그러고 보니 이름이 뭐야? 선생님한테만 살짝 알려줄래?\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_new_name_share"
     },
     "day2_lunch_nurse_new_name_share": {
         name: "나",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"제 이름은 {name}(이)에요.\"",
         character: "assets/images/characters/nurse_normal.png",
         setFlag: "knows_name_nurse",
@@ -960,6 +981,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_4": {
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"자, 여기 편하게 누우렴. 선생님이 어디가 불편한지 봐줄게.\"",
         character: "assets/images/characters/nurse_normal.png",
         choices: [
@@ -1076,6 +1098,7 @@ Object.assign(SCENARIO[2], {
     "nurse_wake_free_talk": {
         type: "free_talk",
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"후훗, 아직 잠이 덜 깼네. 집에 가기 전에 나랑 좀 더 이야기할래?\"",
         context: "노을이 지는 보건실, 방금 잠에서 깨어난 주인공과 보건선생님이 단둘이 남겨진 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 보건선생님이 주인공에게 연락처를 알려주거나 밤에 연락하라고 유혹하는 상황으로 이어집니다. 대화의 마지막 턴에만 하교 시간이 다 되었음을 알리며 아쉬운 분위기를 연출하거나, 개인적인 연락을 유도하는 발언을 해주세요.",
         personality: "나른하고 섹시하면서도 다정한 보건선생님. 주인공에게 묘한 매력을 느끼며 대담하게 유혹하는 대범한 성격.",
@@ -1181,6 +1204,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_exchange": {
         name: "나",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(보건선생님이 나를 바라보며 입을 연다.)",
         character: "assets/images/characters/nurse_normal.png",
         branches: [
@@ -1227,6 +1251,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_success_high": {
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(그녀가 내 손등에 자신의 번호를 적어주며 윙크한다.) \"후훗, 자 이 번호... 잃어버리면 안 돼? 오늘 밤, 네가 어떤 메시지를 보낼지 벌써부터 기대되네.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 15 } },
@@ -1234,6 +1259,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_success_low": {
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...자 여기. 비상시에만 써. 새벽에 헛소리 보냈다간 바로 차단할 테니까 조심하고.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 5 } },
@@ -1241,6 +1267,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_success": {
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(그녀가 요염하게 웃으며 번호를 저장한다.) \"후훗, 그럼 나중에 밤에 기다릴게? 답장 늦게 하면 삐질지도 몰라.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 18 } },
@@ -1272,6 +1299,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_fail_high": {
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(선생님이 내 뺨을 살짝 꼬집으며 웃는다.) \"후훗, 정말 적극적이네! 하지만 오늘은 선생님도 준비가 좀 필요해서... 일단 번호로 아쉬움을 달래보자?\"",
         character: "assets/images/characters/nurse_normal.png",
         setFlags: ["has_number_nurse", "has_any_contact"],
@@ -1279,12 +1307,14 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_fail_low": {
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"말조심해. 한 번만 더 그런 소리 하면 보건실 근처에도 못 오게 할 거야.\"",
         character: "assets/images/characters/nurse_angry.png",
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_fail": {
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(선생님이 꺄르르 웃음을 터뜨린다.) \"어머나 {name}! 넌 정말 귀엽다. 하지만 우리 집은 아직 좀 이른 것 같네? 일단 번호부터 교환하자.\"",
         character: "assets/images/characters/nurse_normal.png",
         setFlags: ["has_number_nurse", "has_any_contact"],
@@ -1292,6 +1322,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_fail": {
         name: "보건선생님",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(선생님이 조금 아쉬운 듯 입술을 삐죽인다.) \"쳇... 튕기는 거야? 알았어. 나중에 마음 바뀌면 말해줘.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_afternoon_nurse_skip"

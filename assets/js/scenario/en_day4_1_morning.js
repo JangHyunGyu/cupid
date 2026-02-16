@@ -91,36 +91,42 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_dream": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Last night, I had a strange dream. Everything that happened at school flashed by like a panorama.)",
         next: "day4_morning_wake"
     },
 
     "day4_morning_wake": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Today is... finally the day. I could barely sleep last night.)",
         next: "day4_morning_calendar"
     },
 
     "day4_morning_calendar": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I check the calendar on my phone. 'Saturday' — the red letters stand out more than usual.)",
         next: "day4_morning_excitement"
     },
 
     "day4_morning_excitement": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(It's only been four days since I transferred here. I never expected such an exciting weekend. My heart is pounding.)",
         next: "day4_morning_stretch"
     },
 
     "day4_morning_stretch": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I stretch wide and kick off the blankets. Today, I'm going to live without any regrets.)",
         next: "day4_morning_mirror"
     },
 
     "day4_morning_mirror": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Standing in front of the mirror, I see my nervous face. I wish I could look a little cooler...)",
         next: "day4_morning_window"
     },
@@ -131,18 +137,21 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_window": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I pull back the curtains and bright sunlight pours in. It's so bright outside.)",
         next: "day4_morning_weather"
     },
 
     "day4_morning_weather": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(The sky is endlessly clear. Cherry blossom petals drift in the breeze, and birds are singing. A perfect Saturday morning.)",
         next: "day4_morning_weather2"
     },
 
     "day4_morning_weather2": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Through the window, I can see the neighborhood streets. People out for walks, couples heading into cafés... I'll be out there too, soon.)",
         next: "day4_morning_kitchen"
     },
@@ -153,12 +162,14 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_kitchen": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I head to the kitchen. Let me check what's in the fridge.)",
         next: "day4_morning_breakfast_choice"
     },
 
     "day4_morning_breakfast_choice": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I have plenty of time, but... what should I do about breakfast?)",
         choices: [
             {
@@ -174,30 +185,35 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_breakfast_eat": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I spread jam on a slice of toast and take a bite. The crispy texture shakes off the drowsiness. Nothing beats a good breakfast.)",
         next: "day4_morning_breakfast_done"
     },
 
     "day4_morning_breakfast_skip": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I'm hungry, but I'm too nervous to taste anything anyway. I'll grab something on the way.)",
         next: "day4_morning_breakfast_done"
     },
 
     "day4_morning_breakfast_done": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Alright, time to wash up and get ready. I've got plenty of time.)",
         next: "day4_morning_groom"
     },
 
     "day4_morning_groom": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I wash my face and fix my hair. I styled it more carefully than usual. Maybe... just a little cologne too.)",
         next: "day4_morning_nervous"
     },
 
     "day4_morning_nervous": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I check my reflection in the mirror one more time. Not bad. ...But why am I shaking so much?)",
         next: "day4_morning_closet"
     },
@@ -208,12 +224,14 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_closet": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I open the closet. Besides my school uniform, I don't have that many options. What should I wear?)",
         next: "day4_morning_outfit"
     },
 
     "day4_morning_outfit": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(What should I go with? First impressions matter, so I need to choose carefully.)",
         choices: [
             {
@@ -231,30 +249,35 @@ Object.assign(SCENARIO[4], {
 
     "day4_outfit_casual": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Comfort is king. Dressing naturally is my style.)",
         next: "day4_casual_mirror"
     },
 
     "day4_casual_mirror": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I do a spin in front of the mirror. White shirt and jeans... clean and effortless. Looks good.)",
         next: "day4_morning_outfit_done"
     },
 
     "day4_outfit_stylish": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Today is special, after all. This should be fine, right?)",
         next: "day4_stylish_mirror"
     },
 
     "day4_stylish_mirror": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(The jacket fits just right, and the slacks make my legs look longer. I look different from usual, which feels a bit unfamiliar... but not bad.)",
         next: "day4_morning_outfit_done"
     },
 
     "day4_morning_outfit_done": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Good, outfit decided. Now I just need to check my phone and head out.)",
         next: "day4_morning_phone"
     },
@@ -265,12 +288,14 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_phone": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I check my phone. There's a message waiting.)",
         next: "day4_morning_message_branch"
     },
 
     "day4_morning_message_branch": {
         name: "System",
+        background: "assets/images/background/room_my.png",
         text: "",
         branches: [
             // 약속이 하나라도 있으면 → 최고 호감도 히로인 데이트
@@ -311,6 +336,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_reply_seoyeon": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(A message from Seoyeon. That smiley emoji is cute. What should I reply...)",
         next: "day4_msg_seoyeon_2"
     },
@@ -323,6 +349,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_reply_seoyeon_2": {
         name: "Me",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(She keeps sending messages back to back. She must be excited too. I should hurry up and get ready.)",
         next: "day4_seoyeon_ready"
     },
@@ -343,6 +370,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_reply_yuna": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(Short and to the point — so typical of Yuna. But that's part of her charm. I type back, 'Got it, I won't be late!')",
         next: "day4_msg_yuna_2"
     },
@@ -355,6 +383,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_reply_yuna_2": {
         name: "Me",
+        character: "assets/images/characters/yuna_shy.png",
         text: "(...That's Yuna-speak for 'I want to go together,' right? A smile spreads across my face.)",
         next: "day4_yuna_ready"
     },
@@ -375,6 +404,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_reply_dain": {
         name: "Me",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(So many exclamation marks... Dain's energy comes through even in her texts. Better send a reply.)",
         next: "day4_msg_dain_2"
     },
@@ -387,6 +417,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_reply_dain_2": {
         name: "Me",
+        character: "assets/images/characters/dain_normal.png",
         text: "(She's even making me look up restaurants... Then again, eating with Dain doesn't sound bad. No — I'm actually looking forward to it.)",
         next: "day4_dain_ready"
     },
@@ -407,6 +438,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_reply_nurse": {
         name: "Me",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(The art museum with the school nurse... My heart is fluttering. I replied, 'Yes, I'll definitely be there!')",
         next: "day4_msg_nurse_2"
     },
@@ -419,6 +451,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_reply_nurse_2": {
         name: "Me",
+        character: "assets/images/characters/nurse_shy.png",
         text: "(Don't call her 'ma'am'...? I thought my heart was going to stop. Today is going to be a truly special day.)",
         next: "day4_nurse_ready"
     },
@@ -439,6 +472,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_reply_teacher": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(Meeting the homeroom teacher outside of school... I'm nervous. I sent a reply right away.)",
         next: "day4_msg_teacher_2"
     },
@@ -451,6 +485,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_reply_teacher_2": {
         name: "Me",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(The homeroom teacher cracking jokes? That's a side I've never seen before — it feels refreshing. I wonder what she looks like in casual clothes.)",
         next: "day4_teacher_ready"
     },
@@ -467,24 +502,28 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_lastcheck": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(One last look in the mirror. ...I look fine. No — I actually look pretty good. Let's be confident.)",
         next: "day4_morning_wallet"
     },
 
     "day4_morning_wallet": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(Wallet, phone, keys. I put each one in my pockets. Better bring a handkerchief too, just in case.)",
         next: "day4_morning_lock"
     },
 
     "day4_morning_lock": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(I step out the front door and lock it behind me. Click — like the sound of a brand new day beginning.)",
         next: "day4_morning_outside"
     },
 
     "day4_morning_outside": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(A warm breeze greets me outside. The scent of cherry blossoms brushes past. The streets are full of life.)",
         background: "assets/images/background/street.png",
         next: "day4_morning_depart"
@@ -492,6 +531,8 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_depart": {
         name: "Me",
+        background: "assets/images/background/street.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(Alright, all set. Let's go!)",
         fade: true,
         next: "day4_arrive"
@@ -542,6 +583,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_no_date_park_weather": {
         name: "Me",
+        background: "assets/images/background/park.png",
         text: "(Cherry blossom petals blown by the wind land on my shoulder. It's a beautiful scene... but sitting here alone, it feels a little lonely.)",
         next: "day4_no_date_lonely"
     },
@@ -569,6 +611,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_no_date_cafe_sit": {
         name: "Me",
+        background: "assets/images/background/cafe.png",
         text: "(I watch couples passing by on the street, sipping my coffee. The bitterness feels particularly strong today.)",
         next: "day4_no_date_lonely"
     },
@@ -576,6 +619,7 @@ Object.assign(SCENARIO[4], {
     // --- 합류 지점: 외로움 → 밖으로 나감 ---
     "day4_no_date_lonely": {
         name: "Me",
+        background: "assets/images/background/park.png",
         text: "(...Spending Saturday all alone like this. But I can't just sit still. Let me take a walk.)",
         next: "day4_no_date_wander"
     },
@@ -590,6 +634,7 @@ Object.assign(SCENARIO[4], {
     // --- 우연한 만남 - 호감도 분기 ---
     "day4_no_date_encounter": {
         name: "System",
+        background: "assets/images/background/street.png",
         text: "",
         selectByHighestAffinity: true,
         branches: [
@@ -679,18 +724,21 @@ Object.assign(SCENARIO[4], {
     // --- 만남 이후 공통 루트 ---
     "day4_no_date_after_encounter": {
         name: "Me",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(We walked together for a while, chatting about this and that. I never imagined my weekend would turn out like this.)",
         next: "day4_no_date_reflect"
     },
 
     "day4_no_date_reflect": {
         name: "Me",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(It started as a day with no plans... but just this one chance encounter made today feel special.)",
         next: "day4_no_date_sunset"
     },
 
     "day4_no_date_sunset": {
         name: "Me",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(Before I know it, the sunset is starting to spread. The sky turns orange. It wasn't a bad day after all.)",
         background: "assets/images/background/street.png",
         next: "day4_no_date_evening"
@@ -698,6 +746,8 @@ Object.assign(SCENARIO[4], {
 
     "day4_no_date_evening": {
         name: "Me",
+        background: "assets/images/background/street.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(On the way home. Thinking back on today, a smile naturally forms on my face. I'm already looking forward to Monday.)",
         fade: true,
         next: "day4_night_start"

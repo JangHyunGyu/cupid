@@ -84,24 +84,28 @@ Object.assign(SCENARIO[4], {
 
     "day4_walk_together": {
         name: "나",
+        background: "assets/images/background/street.png",
         text: "(나란히 걸으며 주변을 둘러본다. 주말이라 거리에 사람이 꽤 많다. 웃음소리, 음악 소리, 달콤한 냄새가 뒤섞인다.)",
         next: "day4_walk_street"
     },
 
     "day4_walk_street": {
         name: "나",
+        background: "assets/images/background/street.png",
         text: "(쇼윈도에 비친 우리 모습이 보인다. 마치 진짜 커플처럼… 심장이 뜀박질한다.)",
         next: "day4_walk_market"
     },
 
     "day4_walk_market": {
         name: "나",
+        background: "assets/images/background/street.png",
         text: "(골목 안쪽에 작은 시장이 보인다. 맛있는 냄새가 바람에 실려온다. 군침이 돈다.)",
         next: "day4_walk_food_choice"
     },
 
     "day4_walk_food_choice": {
         name: "나",
+        background: "assets/images/background/street.png",
         text: "(길거리 음식 노점이 눈에 들어온다. 어떻게 할까?)",
         choices: [
             {
@@ -117,18 +121,21 @@ Object.assign(SCENARIO[4], {
 
     "day4_walk_food_share": {
         name: "나",
+        background: "assets/images/background/street.png",
         text: "(붕어빵을 하나 사서 반으로 나눴다. 따끈한 김이 모락모락 올라온다. \"자, 반.\" 건네는 손이 살짝 떨렸다.)",
         next: "day4_walk_close"
     },
 
     "day4_walk_food_look": {
         name: "나",
+        background: "assets/images/background/street.png",
         text: "(노점 앞에서 이것저것 구경하다가 어깨가 스쳤다. 심장이 덜컹한다. 모른 척했지만, 귀까지 빨개진 것 같다.)",
         next: "day4_walk_close"
     },
 
     "day4_walk_close": {
         name: "나",
+        background: "assets/images/background/street.png",
         text: "(나란히 걸으며 다시 큰길로 나왔다. 어느새 거리가 좀 한산해졌다. 석양빛이 건물 사이로 길게 드리워진다.)",
         sunset: true,
         next: "day4_walk_feelings"
@@ -136,12 +143,14 @@ Object.assign(SCENARIO[4], {
 
     "day4_walk_feelings": {
         name: "나",
+        background: "assets/images/background/street.png",
         text: "(이렇게 같이 걷는 것만으로도 이렇게 행복하다니. 옆에 있는 사람의 얼굴을 몰래 훔쳐본다. 뭔가… 말로 표현할 수 없는 감정이 차오른다.)",
         next: "day4_afternoon_walk"
     },
 
     "day4_afternoon_walk": {
         name: "나",
+        background: "assets/images/background/street.png",
         text: "(나란히 걷는 게 이렇게 좋은 거였나. 손끝이 스칠 때마다 심장이 쿵쾅거린다.)",
         next: "day4_special_notice"
     },
@@ -152,12 +161,14 @@ Object.assign(SCENARIO[4], {
 
     "day4_special_notice": {
         name: "나",
+        background: "assets/images/background/street.png",
         text: "(걷다 보니 골목 안쪽에 분위기 있는 가게들이 눈에 들어왔다. 상대방이 한 곳을 가리켰다.)",
         next: "day4_special_visit"
     },
 
     "day4_special_visit": {
         name: "시스템",
+        background: "assets/images/background/street.png",
         text: "",
         selectByHighestAffinity: true,
         branches: [
@@ -302,6 +313,7 @@ Object.assign(SCENARIO[4], {
     // --- 공통 합류 ---
     "day4_afternoon_special": {
         name: "나",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(특별한 시간이었다. \"저기, 강변 공원 가볼래?\" 상대방이 먼저 제안했다.)",
         background: "assets/images/background/park.png",
         sunset: true,
@@ -314,12 +326,16 @@ Object.assign(SCENARIO[4], {
 
     "day4_afternoon_park": {
         name: "나",
+        background: "assets/images/background/park.png",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(강변 공원에 도착하니 석양이 물 위에 반짝이고 있었다. 마치 영화 속 한 장면 같았다.)",
         next: "day4_sunset_approach"
     },
 
     "day4_sunset_approach": {
         name: "나",
+        background: "assets/images/background/park.png",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(강변을 따라 천천히 걷는다. 수면 위로 석양빛이 일렁이며 금빛 물결을 만든다. 시간이 점점 느려지는 것 같다.)",
         sunset: true,
         next: "day4_sunset_colors"
@@ -327,6 +343,8 @@ Object.assign(SCENARIO[4], {
 
     "day4_sunset_colors": {
         name: "나",
+        background: "assets/images/background/park.png",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(하늘이 주황에서 분홍으로, 다시 보라빛으로 물들어 간다. 이런 하늘을 본 건 태어나서 처음인 것 같다.)",
         sunset: true,
         next: "day4_sunset_wind"
@@ -334,6 +352,8 @@ Object.assign(SCENARIO[4], {
 
     "day4_sunset_wind": {
         name: "나",
+        background: "assets/images/background/park.png",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(따뜻한 바람이 스친다. 강가에서 불어오는 바람에 실려 풀냄새와 물냄새가 섞인다. 잔잔한 물소리가 배경음악처럼 흐른다.)",
         sunset: true,
         next: "day4_sunset_stare"
@@ -341,6 +361,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_sunset_stare": {
         name: "시스템",
+        background: "assets/images/background/park.png",
         text: "",
         selectByHighestAffinity: true,
         branches: [
@@ -398,6 +419,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_afternoon_sunset": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(석양빛이 그 사람의 얼굴을 비추고 있다. 이상하게 말이 나오질 않는다.)",
         bgm: "confession.mp3",
         sunset: true,
@@ -406,6 +428,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_afternoon_silence": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(……)",
         sunset: true,
         next: "day4_afternoon_feeling"
@@ -413,6 +436,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_afternoon_feeling": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(이 감정이 뭔지 이제는 확실히 알 것 같다. 전학 온 첫날부터 지금까지… 쭉 느끼고 있었던 거다.)",
         sunset: true,
         next: "day4_confession_choice"
@@ -424,6 +448,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confession_choice": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(지금 이 순간… 마음을 전할까?)",
         sunset: true,
         choices: [
@@ -446,6 +471,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "\"사실… 전학 오고 나서 매일 네 생각뿐이었어.\"",
         sunset: true,
         next: "day4_confess_heartbeat"
@@ -453,6 +479,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_heartbeat": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(심장이 미친 듯이 뛴다. 쿵, 쿵, 쿵. 이 소리가 상대방에게도 들리는 건 아닐까.)",
         sunset: true,
         next: "day4_confess_2"
@@ -460,6 +487,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_2": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "\"처음엔 그냥 좋은 사람이라고 생각했는데… 이제는 확실해.\"",
         sunset: true,
         next: "day4_confess_breathe"
@@ -467,6 +495,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_breathe": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(숨을 깊이 들이마셨다. 손을 꽉 쥐었다. 지금 아니면… 평생 후회할 것 같다.)",
         sunset: true,
         next: "day4_confess_3"
@@ -474,6 +503,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_3": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "\"나… 너를 좋아해.\"",
         sunset: true,
         next: "day4_confess_silence"
@@ -481,6 +511,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_silence": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(말이 끝나자 정적이 흘렀다. 석양빛에 물든 세상이 멈춘 것처럼 느껴졌다. 1초가 1시간처럼 길게 느껴진다.)",
         sunset: true,
         next: "day4_confess_response"
@@ -686,6 +717,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_after_confess": {
         name: "나",
+        character: "assets/images/characters/seyoun_shy2.png",
         text: "(석양 아래, 두 사람의 그림자가 하나로 겹쳐진다. 세상에서 가장 행복한 순간이었다.)",
         sunset: true,
         fade: true,
@@ -698,6 +730,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "\"…이 풍경, 진짜 예쁘다.\"",
         sunset: true,
         next: "day4_wait_conflict"
@@ -705,6 +738,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_conflict": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(하고 싶은 말이 목 끝까지 올라왔는데… 결국 삼켰다. 아직… 아직은 때가 아니야.)",
         sunset: true,
         next: "day4_wait_walk"
@@ -712,6 +746,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_walk": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(나란히 강변길을 걸었다. 아무 말도 하지 않았지만, 이상하게 불편하지 않은 침묵이었다.)",
         sunset: true,
         next: "day4_wait_talk"
@@ -719,6 +754,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_talk": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "\"…오늘 진짜 재밌었어. 고마워.\"",
         sunset: true,
         next: "day4_wait_linger"
@@ -726,6 +762,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_linger": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(저기 보이는 건널목에서 헤어져야 한다. 한 발짝을 내딛기가 이렇게 어려울 줄이야.)",
         sunset: true,
         next: "day4_wait_feelings"
@@ -733,6 +770,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_feelings": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(아까 삼킨 말이 다시 올라왔다. '좋아해.' 세 글자가 심장 안에서 벽을 두드리고 있다.)",
         sunset: true,
         next: "day4_wait_response"
@@ -798,6 +836,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_goodbye": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(인사를 나누고 발걸음을 돌렸다. 뒤를 돌아보고 싶었지만… 참았다.)",
         sunset: true,
         next: "day4_wait_regret"
@@ -805,6 +844,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_regret": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(도저히 참을 수가 없어서 뒤를 돌아봤다. 상대방도 뒤를 돌아보고 있었다. 눈이 마주친 순간, 서로 황급히 고개를 돌렸다.)",
         sunset: true,
         next: "day4_wait_home"
@@ -812,6 +852,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_home": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(집으로 돌아가는 길. 오늘 하지 못한 말이 가슴 한구석에 무겁게 남아있다. '다음에는 꼭… 꼭 말하자.')",
         sunset: true,
         next: "day4_wait_end"
@@ -819,6 +860,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_end": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(마음속에는… 하지 못한 말이 맴돌았다.)",
         sunset: true,
         fade: true,

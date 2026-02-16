@@ -305,6 +305,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_nurse_home_entrance": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(초인종을 누르자 안에서 부스럭거리는 소리가 들린다. '잠깐만~'이라는 목소리와 함께 발걸음 소리가 가까워진다.)",
         background: "assets/images/background/nurse_house.png",
         night: true,
@@ -328,6 +329,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_nurse_home_tea": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(안으로 들어서자 아늑한 원룸이 눈에 들어온다. 은은한 간접조명, 작은 화분들, 따뜻한 색감의 인테리어. 선생님이 부엌에서 주전자를 올린다.)",
         background: "assets/images/background/nurse_house.png",
         night: true,
@@ -360,6 +362,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_nurse_home_decision": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(시계를 보니 벌써 밤 11시가 넘었다. 찻잔은 비었고, 밤은 깊어졌다. 이대로 더 머무를까, 아니면 돌아갈까...)",
         background: "assets/images/background/nurse_house.png",
         night: true,
@@ -394,6 +397,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_message_seyoun": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(서연이에게 어떤 메시지를 보낼까?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -481,6 +485,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_message_yuna": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(유나에게 어떤 메시지를 보낼까?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -560,6 +565,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_message_dain": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(다인이에게 어떤 메시지를 보낼까?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -665,6 +671,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_message_nurse": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(보건선생님께 어떤 메시지를 보낼까?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -744,6 +751,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_message_teacher": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(담임선생님께 메시지를 보냈다. '선생님, 오늘 하루 수고하셨습니다. 안녕히 주무세요.')",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -804,6 +812,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_goodnight_start": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(스마트폰을 내려놓고 창가로 다가갔다. 잠들기 전에 잠깐, 이 밤을 느껴보고 싶었다.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -811,6 +820,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_goodnight_stars": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(창문을 열자 차가운 밤공기가 밀려든다. 하늘 위로 별들이 수놓아져 있다. 어제보다 더 선명하게 보이는 것 같아... 유나가 말했던 '세 번째 별'이 문득 떠오른다.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -818,6 +828,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_goodnight_sounds": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(벌레 소리가 끊임없이 이어진다. 먼 곳에서 자동차 경적 소리가 한 번 울리고 다시 고요해진다. 이 동네의 밤은... 참 조용하다.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -825,6 +836,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_goodnight_tomorrow": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(내일이면 벌써 전학 온 지 3일째. 서연이, 유나, 다인이, 선생님들... 그들과의 관계는 어떻게 변해갈까. 기대와 불안이 뒤섞인 묘한 설렘이 가슴을 채운다.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -832,6 +844,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_goodnight_close": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(창문을 닫고 커튼을 쳤다. 이불 속으로 파고들어 눈을 감았다. 오늘도 고생 많았어, 나...)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -844,6 +857,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_dream_start": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(의식이 아스라하게 흐려진다... 꿈인지 현실인지 모를 공간에 서 있다. 학교 옥상인 것 같기도 하고, 어딘지 모를 정원 같기도 한 곳.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -858,6 +872,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_dream_end": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(손을 뻗었지만 아무것도 잡히지 않는다. 목소리는 서서히 멀어지고... 의식이 깊고 깊은 잠 속으로 가라앉는다.)",
         background: "assets/images/background/room_my.png",
         night: true,

@@ -94,12 +94,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_teacher_2": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"Oh, {name}! Did you have a good lunch? I was just about to start mine.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_lunch_teacher_3"
     },
     "day2_lunch_teacher_3": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"Did you come all this way just to eat with me? Hehe, just kidding.\"",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
@@ -110,24 +112,28 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_teacher_eat": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"My, my... you're a bold student, aren't you? Fine, I'll share some. Here, say 'Ah~'.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_food": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"Hehe, my mother is quite the cook. I'd love to let you taste her cooking properly sometime.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_pass": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"Is that so? Well, thank you for stopping by. Have a great lunch break!\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_lunch_teacher_end"
     },
     "day2_lunch_teacher_end": {
         name: "Me",
+        background: "assets/images/background/teacher_office.png",
         text: "(After a brief but sweet chat, I head back. Her gentle smile stays with me.)",
         character: null,
         next: "day2_afternoon_class"
@@ -141,6 +147,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_talk": {
         name: "Seoyeon",
+        background: "assets/images/background/student_room.png",
         text: "\"{name}! I was just hoping you'd come. Sit here. I made some extra sandwiches today.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
@@ -151,6 +158,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_praise": {
         name: "Seoyeon",
+        background: "assets/images/background/student_room.png",
         text: "\"Really? I was worried they might not be to your taste. Eat up!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         setFlag: "day2_ate_lunch_seoyeon",
@@ -158,6 +166,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_worry": {
         name: "Seoyeon",
+        background: "assets/images/background/student_room.png",
         text: "\"I'm okay. Seeing you enjoy the food makes all the fatigue disappear. Truly.\"",
         character: "assets/images/characters/seyoun_normal.png",
         setFlag: "day2_ate_lunch_seoyeon",
@@ -165,6 +174,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_touch": {
         name: "Seoyeon",
+        background: "assets/images/background/student_room.png",
         text: "\"Ah... T-thank you. I must have been eating too greedily... (She blushes slightly)\"",
         character: "assets/images/characters/seyoun_shy.png",
         setFlag: "day2_ate_lunch_seoyeon",
@@ -172,6 +182,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_dain_event": {
         name: "Me",
+        background: "assets/images/background/student_room.png",
         text: "(Just then, someone passing by the student council room window waves at us.)",
         character: "assets/images/characters/seyoun_normal.png",
         branches: [
@@ -263,12 +274,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_talk": {
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "\"...You came. I didn't think you'd actually show up for a note.\"",
         character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_talk_2"
     },
     "day2_yuna_talk_2": {
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "(She gazes at me with an unreadable expression.)",
         character: "assets/images/characters/yuna_normal.png",
         next: "day2_yuna_free_talk"
@@ -276,6 +289,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_free_talk": {
         type: "free_talk",
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "\"...Do you have questions for me? Or do you want to know more about this school?\"",
         context: "Quiet library annex backyard, private conversation with the mysterious Yuna. Keep the conversation going actively until it's finished. After the conversation, Yuna will talk about the school's secrets and suggest that there is something she only wants to show the protagonist. ONLY at the final turn of the conversation, please create a mysterious atmosphere and stimulate the protagonist's curiosity.",
         personality: "Mysterious, cold, and secretive. She feels a strange interest in the protagonist.",
@@ -346,6 +360,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_talk_branch": {
         name: "Me",
+        background: "assets/images/background/library_old.png",
         text: "(Yuna looks at me and begins to speak.)",
         character: "assets/images/characters/yuna_normal.png",
         branches: [
@@ -603,18 +618,21 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_store_seoyeon": {
         name: "Me",
+        background: "assets/images/background/store.png",
         text: "(Just then, I spot a familiar face across the store. Seoyeon is buying a drink.)",
         character: "assets/images/characters/dain_normal.png",
         next: "day2_dain_store_seoyeon_2"
     },
     "day2_dain_store_seoyeon_2": {
         name: "Dain",
+        background: "assets/images/background/store.png",
         text: "\"Oh? That girl... Isn't she the student council president? She has this unapproachable aura. {name}, do you know her?\"",
         character: "assets/images/characters/dain_normal.png",
         next: "day2_dain_store_seoyeon_approach"
     },
     "day2_dain_store_seoyeon_approach": {
         name: "Me",
+        background: "assets/images/background/store.png",
         text: "(Just then, Seoyeon notices us and walks over.)",
         character: "assets/images/characters/seyoun_normal.png",
         branches: [
@@ -879,6 +897,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_talk": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"Oh my, hello? Coming to the nurse's office during lunch, are you not feeling well?\"",
         character: "assets/images/characters/nurse_normal.png",
         branches: [
@@ -932,12 +951,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_new_name_ask": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"By the way, what's your name? Will you tell just me?\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_new_name_share"
     },
     "day2_lunch_nurse_new_name_share": {
         name: "Me",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"My name is {name}.\"",
         character: "assets/images/characters/nurse_normal.png",
         setFlag: "knows_name_nurse",
@@ -952,6 +973,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_4": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"Here, lie down comfortably. Let me see what's bothering you.\"",
         character: "assets/images/characters/nurse_normal.png",
         choices: [
@@ -1068,6 +1090,7 @@ Object.assign(SCENARIO[2], {
     "nurse_wake_free_talk": {
         type: "free_talk",
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"Hehe, you still look sleepy. Want to chat with me a bit before going home?\"",
         context: "In the nurse's office at sunset, the protagonist just woke up and is alone with the nurse. Keep the conversation going actively until it's finished. After the conversation, the nurse will offer her number and tease about contacting her at night. ONLY at the final turn, hint that it's time to go home or suggest private contact.",
         personality: "Languid and seductive yet caring school nurse. Feels a peculiar attraction to the protagonist and boldly flirts with daring confidence.",
@@ -1173,6 +1196,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_exchange": {
         name: "Me",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(The nurse looks at me and speaks.)",
         character: "assets/images/characters/nurse_normal.png",
         branches: [
@@ -1219,6 +1243,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_success_high": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(She writes her number on the back of my hand and winks.) \"Hehe, this number... don't lose it, okay? I'm already looking forward to what message you'll send tonight.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 15 } },
@@ -1226,6 +1251,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_success_low": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...Here. Only for emergencies. If you send nonsense at dawn, I'll block you immediately, so be careful.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 5 } },
@@ -1233,6 +1259,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_success": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(She smiles seductively and saves the number.) \"Hehe, then I'll be waiting for you at night? If you're slow to reply, I might get upset.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 18 } },
@@ -1264,6 +1291,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_fail_high": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(The teacher lightly pinches my cheek and laughs.) \"Hehe, you're really forward! But the teacher needs some preparation today too... Let's settle for the number for now?\"",
         character: "assets/images/characters/nurse_normal.png",
         setFlags: ["has_number_nurse", "has_any_contact"],
@@ -1271,12 +1299,14 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_fail_low": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"Watch your mouth. Say that one more time and I'll ban you from the nurse's office.\"",
         character: "assets/images/characters/nurse_angry.png",
         next: "day2_afternoon_nurse_skip"
     },
     "nurse_contact_home_fail": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(The teacher bursts into giggles.) \"My goodness {name}! You're so cute. But my house is a bit early, don't you think? Let's exchange numbers first.\"",
         character: "assets/images/characters/nurse_normal.png",
         setFlags: ["has_number_nurse", "has_any_contact"],
@@ -1284,6 +1314,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_fail": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(The teacher pouts a bit.) \"Tch... Playing hard to get? Alright. Tell me if you change your mind.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_afternoon_nurse_skip"

@@ -73,26 +73,31 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_wake": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I opened my eyes. It's been a while since I woke up on my own without an alarm. The clock reads 8 AM.)",
         next: "day5_morning_stretch"
     },
     "day5_morning_stretch": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I stretch and stare at the ceiling. It doesn't feel real that today is Sunday.)",
         next: "day5_morning_think"
     },
     "day5_morning_think": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(It's only been five days since I transferred to this school. It feels like it's been at least a month.)",
         next: "day5_morning_mirror"
     },
     "day5_morning_mirror": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I washed my face and stood in front of the mirror. The face staring back at me looks... different from before I transferred.)",
         next: "day5_morning_mirror2"
     },
     "day5_morning_mirror2": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(So much happened over the past four days. A new class, new people... and some very special encounters.)",
         next: "day5_morning_phone_check"
     },
@@ -102,11 +107,13 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_morning_phone_check": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I picked up the phone from my bed. There are notifications on the screen.)",
         next: "day5_morning_msg_branch"
     },
     "day5_morning_msg_branch": {
         name: "System",
+        background: "assets/images/background/room_my.png",
         text: "",
         branches: [
             { next: "day5_couple_msg_branch", condition: "day4_confession_accepted" },
@@ -140,12 +147,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_seoyeon": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(Reading Seoyeon's message makes me smile without even trying. Talking about flowers first thing in the morning—that's so like her.)",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day5_couple_reply_seoyeon"
     },
     "day5_couple_reply_seoyeon": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(I replied, \"Sounds great! Let's meet at the school front gate. There's a place I want to show you too 😊\")",
         next: "day5_morning_ready"
     },
@@ -159,12 +168,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_yuna": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(Short and sweet, just like Yuna... But if you look closely, there's a hint of excitement in the words \"I'll go too.\")",
         stats: { Yuna: { affinity: 3 } },
         next: "day5_couple_reply_yuna"
     },
     "day5_couple_reply_yuna": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(\"Yeah, I'll be there. Wait for me.\" I replied calmly, but my heart is racing.)",
         next: "day5_morning_ready"
     },
@@ -178,12 +189,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_dain": {
         name: "Me",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(...So many exclamation marks. Dain's overflowing with energy from the crack of dawn. But somehow, messages like this give me energy too.)",
         stats: { Dain: { affinity: 3 } },
         next: "day5_couple_reply_dain"
     },
     "day5_couple_reply_dain": {
         name: "Me",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(I texted back, \"Haha, got it! I won't be late. Don't run—be careful on your way!\")",
         next: "day5_morning_ready"
     },
@@ -197,12 +210,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_nurse": {
         name: "Me",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(My face turned red at the heart emoji she sent. Meeting outside of school definitely feels different.)",
         stats: { Nurse: { affinity: 3 } },
         next: "day5_couple_reply_nurse"
     },
     "day5_couple_reply_nurse": {
         name: "Me",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(\"Yes, I'm looking forward to it. Let's meet at the front gate at 10!\" I started writing formally but... it felt a bit awkward.)",
         next: "day5_morning_ready"
     },
@@ -216,12 +231,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_teacher": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(\"Something to see me about,\" she says. Playing it cool, but she's the one who reached out first. I like that about her.)",
         stats: { Teacher: { affinity: 3 } },
         next: "day5_couple_reply_teacher"
     },
     "day5_couple_reply_teacher": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(I texted back, \"I won't be late. I'll definitely be there!\" and let out a small smile.)",
         next: "day5_morning_ready"
     },
@@ -251,11 +268,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_pending_react_seoyeon": {
         name: "Me",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(Seoyeon's asking me to come. She says \"no pressure,\" but... I know I want to go.)",
         next: "day5_pending_reply_seoyeon"
     },
     "day5_pending_reply_seoyeon": {
         name: "Me",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(Today, I have to tell her how I feel. I replied, \"I'll be there! Let's meet at the front gate.\")",
         next: "day5_morning_ready"
     },
@@ -269,11 +288,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_pending_react_yuna": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(\"I have something to tell you.\" My heart skipped a beat. Could Yuna also feel the same way about me...?)",
         next: "day5_pending_reply_yuna"
     },
     "day5_pending_reply_yuna": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(I have something to say too. \"Yeah, I'll be there.\" I replied briefly and set my phone down.)",
         next: "day5_morning_ready"
     },
@@ -287,11 +308,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_pending_react_dain": {
         name: "Me",
+        character: "assets/images/characters/dain_normal.png",
         text: "(She said \"it's important.\" Dain being serious is rare. I wonder what it could be.)",
         next: "day5_pending_reply_dain"
     },
     "day5_pending_reply_dain": {
         name: "Me",
+        character: "assets/images/characters/dain_normal.png",
         text: "(And I have something I need to say today too. I replied, \"I'll be there!! Wait for me!\")",
         next: "day5_morning_ready"
     },
@@ -305,11 +328,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_pending_react_nurse": {
         name: "Me",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(Organizing the nurse's office on a weekend... It sounds like an excuse, but if it means I can see her, the reason doesn't matter.)",
         next: "day5_pending_reply_nurse"
     },
     "day5_pending_reply_nurse": {
         name: "Me",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(Today, I have to tell her how I feel. I replied, \"I'll be there! Let's meet at the front gate.\")",
         next: "day5_morning_ready"
     },
@@ -323,11 +348,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_pending_react_teacher": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(\"No hidden meaning\"—somehow that makes it feel even more meaningful. Could she be feeling the same way?)",
         next: "day5_pending_reply_teacher"
     },
     "day5_pending_reply_teacher": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(If today passes, I might never get another chance. I texted back, \"I'll be there!\")",
         next: "day5_morning_ready"
     },
@@ -371,16 +398,19 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_morning_ready": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(Time to get ready. I stood in front of my closet.)",
         next: "day5_morning_closet"
     },
     "day5_morning_closet": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(It's Sunday, so I don't have to wear the school uniform... but what should I wear?)",
         next: "day5_outfit_choice"
     },
     "day5_outfit_choice": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(What should I wear today?)",
         choices: [
             {
@@ -397,26 +427,31 @@ Object.assign(SCENARIO[5], {
     },
     "day5_outfit_casual": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(A crisp shirt and jeans. Comfortable yet neat. Yeah, keeping it natural is more my style.)",
         next: "day5_breakfast"
     },
     "day5_outfit_special": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(I picked my outfit more carefully than usual. One last check in the mirror. ...Looks good, I think.)",
         next: "day5_breakfast"
     },
     "day5_breakfast": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(I made some quick toast and ate. A quiet kitchen on a Sunday morning. I can hear birds singing outside.)",
         next: "day5_outfit_check"
     },
     "day5_outfit_check": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(One final look at myself in the mirror. My eyes are definitely different from the first day I transferred.)",
         next: "day5_morning_items"
     },
     "day5_morning_items": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(Wallet, phone, keys. All set. I stood at the front door.)",
         next: "day5_morning_depart"
     },
@@ -426,6 +461,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_morning_depart": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(I opened the door and stepped outside. A pleasant spring breeze greeted me.)",
         background: "assets/images/background/street.png",
         fade: true,
@@ -433,6 +469,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_route_branch": {
         name: "System",
+        background: "assets/images/background/street.png",
         text: "",
         branches: [
             { next: "day5_walk_couple_branch", condition: "day4_confession_accepted" },
@@ -466,6 +503,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_seoyeon_2": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(Seoyeon was already there at our meeting spot. Standing in the sunlight, she looked radiant.)",
         next: "day5_walk_seoyeon_talk"
     },
@@ -477,6 +515,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_seoyeon_react": {
         name: "Me",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(I walked side by side with Seoyeon. Without saying a word, our steps naturally fell in sync.)",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day5_walk_couple_common"
@@ -497,11 +536,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_yuna_talk": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(Yuna pulled out one earbud and held it out to me. No words needed—she wanted me to listen along.)",
         next: "day5_walk_yuna_react"
     },
     "day5_walk_yuna_react": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(We shared the earbuds and walked side by side. No words, but this silence isn't uncomfortable. If anything, it's nice.)",
         stats: { Yuna: { affinity: 5 } },
         next: "day5_walk_couple_common"
@@ -516,6 +557,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_dain_2": {
         name: "Me",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(Dain was waving both arms from way over there. Where does she get all that energy this early in the morning?)",
         next: "day5_walk_dain_talk"
     },
@@ -527,6 +569,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_dain_react": {
         name: "Me",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(I walked along, pulled by Dain's hand. Before I knew it, I was smiling too. Her energy must be contagious.)",
         stats: { Dain: { affinity: 5 } },
         next: "day5_walk_couple_common"
@@ -553,6 +596,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_nurse_react": {
         name: "Me",
+        character: "assets/images/characters/nurse_shy.png",
         text: "(The slightly shy look on her face was something new. Just walking side by side was enough to make my heart race.)",
         stats: { Nurse: { affinity: 5 } },
         next: "day5_walk_couple_common"
@@ -579,6 +623,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_teacher_react": {
         name: "Me",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(\"Just a person.\" Those words made my chest feel warm. I've never seen her this honest before.)",
         stats: { Teacher: { affinity: 5 } },
         next: "day5_walk_couple_common"
@@ -587,11 +632,13 @@ Object.assign(SCENARIO[5], {
     // --- Couple Common ---
     "day5_walk_couple_common": {
         name: "Me",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(Walking side by side, we talked about everything that happened the past few days. How we first met, the funny moments, the times our hearts raced.)",
         next: "day5_walk_couple_common2"
     },
     "day5_walk_couple_common2": {
         name: "Me",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(Before I knew it, the school came into view. I thought I'd dread saying goodbye, but today marks the beginning of a day we're spending together.)",
         next: "day5_arrive_start"
     },
@@ -674,22 +721,29 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_arrive_start": {
         name: "Me",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(I stood in front of the school gate.)",
         background: "assets/images/background/school.png",
         next: "day5_arrive_nostalgia"
     },
     "day5_arrive_nostalgia": {
         name: "Me",
+        background: "assets/images/background/school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(This gate... Five days ago, when I first came to this school, I stood in this exact spot.)",
         next: "day5_arrive_firstday"
     },
     "day5_arrive_firstday": {
         name: "Me",
+        background: "assets/images/background/school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(Back then, everything was unfamiliar. A new school, a new classroom, faces I didn't recognize. I was so nervous my feet wouldn't move.)",
         next: "day5_arrive_now"
     },
     "day5_arrive_now": {
         name: "Me",
+        background: "assets/images/background/school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(Now it's different. There are people I know here, and a place I can come back to. I walked past the gate and headed inside.)",
         fade: true,
         next: "day5_school_arrive"

@@ -73,6 +73,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_time_2": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
         text: "(Lunch time... Students are playing on the field outside the window. What should I do?)",
         choices: [
             {
@@ -108,6 +109,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seoyeon_normal_branch": {
         name: "Seoyeon",
+        background: "assets/images/background/room_school.png",
         text: "(When I approach Seoyeon, she nods with a sweet smile.)",
         character: "assets/images/characters/seyoun_normal.png",
         setFlag: "met_seoyeon",
@@ -151,27 +153,34 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         text: "(The rooftop with a cool breeze. Seoyeon takes out a lunch box she carefully prepared.)",
         background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         setFlag: "ate_lunch_seoyeon",
         next: "rooftop_1_2"
     },
     "rooftop_1_2": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "\"Ta-da! I made this lunch box myself. Actually... {name}, I was a bit worried if it would suit your taste.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_1_3"
     },
     "rooftop_1_3": {
         name: "Me",
+        background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(I take a bite of the lunch box. It has a warm taste full of care.)",
         next: "rooftop_1_4"
     },
     "rooftop_1_4": {
         name: "Me",
+        background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "\"It's really delicious! You made this yourself? That's amazing...\"",
         next: "rooftop_1_5"
     },
     "rooftop_1_5": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(Seoyeon smiles happily at my compliment.) \"Hehe, I'm so relieved! I'm glad you like it.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "rooftop_talk_main"
@@ -212,6 +221,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_talk_ah_fail": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(Seoyeon's expression freezes instantly. She puts down her chopsticks, flustered.) \"Um... that's a bit... {name}, we're not that close yet. The joke went too far.\"",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -15 } },
@@ -219,23 +229,28 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_awkward": {
         name: "Me",
+        background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/seyoun_pout.png",
         text: "(The atmosphere became awkward instantly. We ate in silence for a while.)",
         next: "rooftop_2"
     },
     "rooftop_talk_rude": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(Seoyeon's hand trembles slightly. She tries to force a smile but her eyes grow moist.)",
         character: "assets/images/characters/seyoun_sad.png",
         next: "rooftop_2"
     },
     "rooftop_talk_food": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(Her cheeks flush with joy.)",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_talk_food_2"
     },
     "rooftop_talk_food_2": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "\"Really? I'm so relieved! Actually, this is the first time I've served my cooking to someone, so I was a bit nervous. Eat up, there's still plenty left!\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_2"
@@ -254,17 +269,20 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_talk_thanks": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(She smiles and wipes the sauce from the corner of my mouth.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_talk_thanks_2"
     },
     "rooftop_talk_thanks_2": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "\"Thank you?.. I should be the one thanking you for eating with me. It tastes so much better than eating alone. Will you eat with me like this again?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_2"
     },
     "rooftop_2": {
+        background: "assets/images/background/top_school.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 0, next: "rooftop_2_normal" },
@@ -274,6 +292,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_2_normal": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(After finishing the meal, we sit side by side and gaze at the distant sky. Seoyeon speaks carefully.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_2_2"
@@ -292,6 +311,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_2_2": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "\"Hey, {name}... Actually, even though I just met you today, I feel like I can talk to you so easily, and that makes me happy. How about you?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "rooftop_free_talk"
@@ -299,6 +319,7 @@ Object.assign(SCENARIO[1], {
     "rooftop_free_talk": {
         type: "free_talk",
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "\"Hehe, was that too serious all of a sudden? Let's talk more comfortably. Aren't you curious about anything about me?\"",
         context: "A peaceful and romantic atmosphere after having lunch alone with Seoyeon on the school rooftop. Keep the conversation going until it naturally concludes. When the conversation ends, Seoyeon will mention that being with you feels comfortable and good, and ask why that might be. Only in the final turn, mention the special feeling or comfort between us and naturally ask the question.",
         personality: "A bit more bold and honest than usual. Wants to know how the protagonist thinks about their relationship and why they feel comfortable.",
@@ -333,6 +354,8 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_choices": {
         name: "Me",
+        background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(I finished a pleasant conversation with Seoyeon. She's looking at me with sparkling eyes, waiting for my answer. She asked why being with me feels comfortable and good.)",
         choices: [
             { text: "Maybe it's something like fate?", next: "rooftop_destiny_normal" },
@@ -355,6 +378,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_destiny_normal": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(She smiles shyly and gently places her hand over mine.)",
         character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 5 } },
@@ -362,6 +386,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_destiny_normal_2": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "\"Fate... Hehe, that's a bit cheesy but I don't mind it. I feel that way sometimes when I'm with you too.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "seyoun_contact_exchange"
@@ -407,6 +432,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_kind_normal": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(She nods shyly with a smile.)",
         character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 3 } },
@@ -414,6 +440,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_kind_normal_2": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "\"Hehe, that's such a model answer. But it's correct! I'm glad I could make you comfortable.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "seyoun_contact_exchange"
@@ -446,6 +473,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_comfortable_normal": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(She nods with satisfaction.)",
         character: "assets/images/characters/seyoun_normal.png",
         stats: { Seoyeon: { affinity: 4 } },
@@ -453,6 +481,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_comfortable_normal_2": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "\"I'm glad you feel comfortable. When I'm with you, I feel like I can set down the burden of being student council president for a while. Thank you, {name}.\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "seyoun_contact_exchange"
@@ -460,6 +489,7 @@ Object.assign(SCENARIO[1], {
     "seyoun_contact_exchange": {
         type: "free_talk",
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(Seoyeon pauses while packing her bag, then hesitantly holds out her smartphone.)",
         character: "assets/images/characters/seyoun_normal.png",
         affinityChar: "Seoyeon",
@@ -482,6 +512,7 @@ Object.assign(SCENARIO[1], {
     },
     "seyoun_contact_exchange_normal": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "\"Um... would it be okay to exchange contact info? There might be student council matters to discuss...\"",
         character: "assets/images/characters/seyoun_normal.png",
         choices: [
@@ -507,6 +538,7 @@ Object.assign(SCENARIO[1], {
     },
     "seyoun_contact_success": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(She smiles brightly and saves the number. Her fingers move excitedly.) \"Thank you! Then... I'll message you later. You have to reply, okay?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 8 } },
@@ -514,6 +546,7 @@ Object.assign(SCENARIO[1], {
     },
     "seyoun_contact_fail": {
         name: "Seoyeon",
+        background: "assets/images/background/top_school.png",
         text: "(She looks a bit dejected but then forces a smile and nods.) \"Oh.. okay, sorry! Was I too hasty? We can get closer slowly, right?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "after_school_start"
@@ -527,35 +560,42 @@ Object.assign(SCENARIO[1], {
     },
     "alone_2": {
         name: "???",
+        background: "assets/images/background/library_old.png",
         text: "(She looks up from her book and stares at me. In a low voice, she speaks.)",
         character: "assets/images/characters/yuna_normal.png",
         next: "alone_2_2"
     },
     "alone_2_2": {
         name: "???",
+        background: "assets/images/background/library_old.png",
         text: "\"...Are you lost? Students don't usually come here. You found your way here somehow.\"",
         character: "assets/images/characters/yuna_normal.png",
         next: "yuna_intro"
     },
     "yuna_intro": {
         name: "???",
+        background: "assets/images/background/library_old.png",
         text: "(Her deep, mysterious purple eyes quietly observe me. It's as if she's trying to see through my soul.)",
         next: "yuna_intro_name_ask"
     },
     "yuna_intro_name_ask": {
         name: "???",
+        background: "assets/images/background/library_old.png",
         text: "\"I'm 'Yuna'. What's... your name?\"",
         character: "assets/images/characters/yuna_normal.png",
         next: "yuna_intro_name_share"
     },
     "yuna_intro_name_share": {
         name: "Me",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_normal.png",
         text: "\"I'm {name}. I just transferred today.\"",
         setFlag: "knows_name_yuna",
         next: "yuna_intro_2"
     },
     "yuna_intro_2": {
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "\"{name}... Hehe, that's a nice name. This school... is very different from what it looks like. From you too.. I feel a strangely familiar aura.\"",
         character: "assets/images/characters/yuna_smile.png",
         setFlag: "met_yuna",
@@ -564,6 +604,7 @@ Object.assign(SCENARIO[1], {
     "yuna_free_talk": {
         type: "free_talk",
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "\"...Is there something you're curious about? Or do you want to know about this school?\"",
         context: "In the quiet Library Annex, first meeting with Yuna who has a mysterious and cold atmosphere. Keep the conversation going until it naturally concludes. When the conversation ends, Yuna will ask if you want to know more about her or the school's secrets. Only in the final turn, show an attitude of checking if you're ready for deeper conversation.",
         personality: "A mysterious and cold girl with many secrets. She feels a strange interest in the protagonist.",
@@ -598,6 +639,8 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_choices": {
         name: "Me",
+        background: "assets/images/background/library_old.png",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(The conversation with Yuna has concluded for now. Her purple eyes still maintain a gaze as if seeing through me.)",
         choices: [
             { text: "The school is different? What do you mean by that?", next: "yuna_secret_normal" },
@@ -632,12 +675,14 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_secret_normal": {
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "(She closes her book with a mysterious smile on her lips. Her lips draw close to my ear and whisper.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "yuna_secret_normal_2"
     },
     "yuna_secret_normal_2": {
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "\"Hehe, curious? But sometimes not knowing secrets is better. The stories this school is trying to hide... you could get hurt if you know.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
@@ -668,12 +713,14 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_scent_normal": {
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "(She takes a step closer and stares at me. She murmurs with a lonely expression.)",
         character: "assets/images/characters/yuna_normal.png",
         next: "yuna_scent_normal_2"
     },
     "yuna_scent_normal_2": {
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "\"No, it's the first time I've seen you. But the 'light' in your eyes... it's quite appealing. You seem different from the listless kids in this school. May I keep watching how you change?\"",
         character: "assets/images/characters/yuna_normal.png",
         next: "after_school_start"
@@ -704,12 +751,14 @@ Object.assign(SCENARIO[1], {
     },
     "yuna_danger_normal": {
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "(She brushes my cheek lightly with cold fingers. She stares into my eyes. A strange smile appears.)",
         character: "assets/images/characters/yuna_smile.png",
         next: "yuna_danger_normal_2"
     },
     "yuna_danger_normal_2": {
         name: "Yuna",
+        background: "assets/images/background/library_old.png",
         text: "\"Dangerous, you say... Hehe, correct. But people like you who approach knowing it's dangerous, I don't dislike. Until you lose that special light... I'll stay by your side.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "after_school_start"
@@ -722,17 +771,20 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_store_2": {
         name: "Me",
+        background: "assets/images/background/store.png",
         text: "(Happily eating the bread and heading back, I bumped into someone.)",
         next: "lunch_store_teacher"
     },
     "lunch_store_teacher": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/store.png",
         text: "\"Oh, sorry! ...Wait, isn't that {name}? Did you come to buy bread at the store too?\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "lunch_store_teacher_2"
     },
     "lunch_store_teacher_2": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/store.png",
         text: "\"Hehe, that bread is really good. I came to buy it too but I was a step too late. Enjoy it!\"",
         character: "assets/images/characters/teacher_normal.png",
         stats: { Teacher: { affinity: 3 } },
@@ -740,27 +792,32 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_sleep": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
         text: "(I lay my head on the desk to nap. The sunlight through the window warms my back.)",
         next: "lunch_sleep_2"
     },
     "lunch_sleep_2": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
         text: "(In my dream, I heard someone calling my name. A very longing and sad voice...)",
         next: "lunch_sleep_3"
     },
     "lunch_sleep_3": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
         text: "(When I opened my eyes, someone was staring down at my face.)",
         next: "lunch_sleep_seoyeon"
     },
     "lunch_sleep_seoyeon": {
         name: "Seoyeon",
+        background: "assets/images/background/room_school.png",
         text: "\"Hey... {name}? Wake up. Class is starting.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "lunch_sleep_seoyeon_2"
     },
     "lunch_sleep_seoyeon_2": {
         name: "Seoyeon",
+        background: "assets/images/background/room_school.png",
         text: "\"You were sleeping so soundly I felt bad waking you... But you can't miss class. Hehe, see you after school!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 3 } },
@@ -799,6 +856,8 @@ Object.assign(SCENARIO[1], {
     },
     "dain_name_share": {
         name: "Me",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_normal.png",
         text: "\"Me? I'm {name}. I transferred today.\"",
         setFlag: "knows_name_dain",
         next: "dain_name_share_2"
@@ -823,6 +882,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_play": {
         name: "Dain",
+        background: "assets/images/background/gym.png",
         text: "\"Oh! That's the spirit! Here I go! (Dain delivers a powerful serve. I barely managed to receive it)\"",
         character: "assets/images/characters/dain_active.png",
         stats: { Dain: { affinity: 5 } },
@@ -830,6 +890,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_teach": {
         name: "Dain",
+        background: "assets/images/background/gym.png",
         text: "\"Ehe, don't worry! The great Dain will teach you from the basics. Now, let's start with the posture!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 15 } },
@@ -837,6 +898,8 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_end": {
         name: "Me",
+        background: "assets/images/background/gym.png",
+        character: "assets/images/characters/dain_active.png",
         text: "(After that, I sweated with Dain until lunch time was over. I didn't expect my first day of transfer to be this active... Before I knew it, afternoon classes were all done too.)",
         next: "after_school_start"
     },
@@ -865,6 +928,7 @@ Object.assign(SCENARIO[1], {
     },
     "nurse_name_share_pre": {
         name: "Me",
+        character: "assets/images/characters/nurse_normal.png",
         text: "\"My name is '{name}'.\"",
         setFlag: "knows_name_nurse",
         branches: [

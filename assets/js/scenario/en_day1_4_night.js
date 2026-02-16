@@ -226,6 +226,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_home_check_contact": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(The people I exchanged numbers with today... who should I message first?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -253,6 +254,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_teacher": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(I sent a message to the Homeroom Teacher. 'Thank you for looking after me today, Teacher. I think I adjusted well on my first day thanks to you!')",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -278,6 +280,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_teacher_extra_2": {
         name: "Me",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(Uh oh... she noticed? I type a reply. 'Oh, that was... the classroom was so different from my old school, I was just fascinated!')",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -293,6 +296,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_teacher_extra_4": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(What a warm person... I'm glad to have a homeroom teacher like her. I set my phone down with a small smile.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -305,6 +309,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_seyoun": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(What should I write to Seoyeon?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -348,6 +353,7 @@ Object.assign(SCENARIO[1], {
         next: "night_message_seyoun_followup"
     },
     "night_message_seyoun_reply_generic": {
+        background: "assets/images/background/room_my.png",
         affinityChar: "Seoyeon",
         night: true,
         affinityBranches: [
@@ -385,6 +391,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_seyoun_followup": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(I stared at Seoyeon's reply for a long time. I want to say something more...)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -414,6 +421,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_seyoun_followup_end": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(I can't believe how natural it feels talking with Seoyeon. Making a friend like this on the very first day... it makes me happy.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -426,6 +434,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_yuna": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(I sent a message to Yuna. 'I had a nice time today. Sleep well.')",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -433,6 +442,7 @@ Object.assign(SCENARIO[1], {
         next: "night_message_yuna_reply"
     },
     "night_message_yuna_reply": {
+        background: "assets/images/background/room_my.png",
         affinityChar: "Yuna",
         night: true,
         affinityBranches: [
@@ -477,6 +487,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_yuna_cryptic_react": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(The third star...? What does she mean? Yuna says these riddle-like things sometimes.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -484,6 +495,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_yuna_cryptic_choice": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(What should I reply?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -494,6 +506,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_yuna_cryptic_reply": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(I replied 'Got it. I'll make sure to look.' ...I actually glance out the window, and a few stars are visible. The third star is... that one?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -523,6 +536,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_dain": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(What should I write to Dain?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -557,6 +571,7 @@ Object.assign(SCENARIO[1], {
         next: "night_message_dain_selfie"
     },
     "night_message_dain_reply_generic": {
+        background: "assets/images/background/room_my.png",
         affinityChar: "Dain",
         night: true,
         affinityBranches: [
@@ -592,6 +607,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_dain_selfie_react": {
         name: "Me",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(Dain's selfie... her energy practically radiates from the photo. I couldn't help but smile.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -607,6 +623,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_dain_challenge_choice": {
         name: "Me",
+        character: "assets/images/characters/dain_normal.png",
         text: "(A challenge from Dain. What should I do?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -640,6 +657,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_nurse": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(I sent a message to the School Nurse. 'Thank you for today, Teacher. I was able to rest comfortably.')",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -647,6 +665,7 @@ Object.assign(SCENARIO[1], {
         next: "night_message_nurse_reply"
     },
     "night_message_nurse_reply": {
+        background: "assets/images/background/room_my.png",
         affinityChar: "Nurse",
         night: true,
         affinityBranches: [
@@ -682,6 +701,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_nurse_extra_2": {
         name: "Me",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(I replied 'Yes, thank you! Please get a good rest too, Teacher.' ...It's really warm how she quietly looks out for me.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -697,6 +717,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_message_nurse_extra_4": {
         name: "Me",
+        character: "assets/images/characters/nurse_shy.png",
         text: "(Her saying 'I'll wish you sweet dreams' lingers in my mind. She's a teacher, but... why is my heart racing like this?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -709,6 +730,7 @@ Object.assign(SCENARIO[1], {
 
     "night_goodnight_start": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(I set my phone down and sit up in bed. Maybe I'll open the window for a moment before I sleep.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -716,6 +738,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_window": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(I open the window, and a cool night breeze brushes my face. A few stars are scattered across the night sky. You can see the stars so much better here than in the city.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -723,6 +746,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_sounds": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(I can hear crickets chirping. A faint train whistle in the distance... this quiet night feels somehow peaceful.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -730,6 +754,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_think": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(Tomorrow... Seoyeon, Yuna, Dain, and the teachers. I'll get to see them again. I wonder what stories are waiting for me.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -737,6 +762,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_close": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(I close the window and crawl under the covers. If I close my eyes... sleep should come soon.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -749,6 +775,7 @@ Object.assign(SCENARIO[1], {
 
     "night_surprise_check": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(Just as I'm about to close my eyes — ding! My phone buzzes with a notification. Who could it be at this hour...?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -779,6 +806,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_surprise_seyoun_react": {
         name: "Me",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(I replied 'Sure! I'll see you at the front gate tomorrow.' ...Seoyeon reached out first. That somehow makes me feel really happy.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -795,6 +823,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_surprise_yuna_react": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(I replied 'I was just looking at the stars too.' ...The thought that we're looking at the same sky feels strangely exciting.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -811,6 +840,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_surprise_dain_react": {
         name: "Me",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(I replied 'Don't worry, I'm ready!' Dain's energy really never fades, even at night.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -827,6 +857,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_surprise_nurse_react": {
         name: "Me",
+        character: "assets/images/characters/nurse_shy.png",
         text: "(I replied 'I'm going to sleep now! Thank you, Teacher.' ...She's playful, but she's genuinely worried about me, isn't she?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -843,6 +874,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_surprise_teacher_react": {
         name: "Me",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(I replied 'Thank you, Teacher! Good night~' She's so attentive and thoughtful. What a kind person.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -851,6 +883,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_surprise_react": {
         name: "Me",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(That surprised me, but... it made me happy. I flip my phone face-down and pull up the covers. Today was truly a wonderful day.)",
         background: "assets/images/background/room_my.png",
         night: true,

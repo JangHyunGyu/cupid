@@ -69,40 +69,49 @@ Object.assign(SCENARIO[1], {
     },
     "start_2": {
         name: "나",
+        background: "assets/images/background/school.png",
         text: "(낯선 교복, 낯선 풍경... 하지만 왠지 좋은 일이 생길 것만 같아.)",
         next: "start_3"
     },
     "start_3": {
         name: "나",
+        background: "assets/images/background/school.png",
         text: "(자, 가보자. 새로운 시작이야.)",
         next: "name_input_scene"
     },
     "name_input_scene": {
         type: "input",
         name: "시스템",
+        background: "assets/images/background/school.png",
         text: "전학생, 당신의 이름은?",
         next: "start_4"
     },
     "start_4": {
         name: "???",
+        background: "assets/images/background/school.png",
         text: "\"안녕? 못 보던 얼굴이네. 혹시 오늘 온다는... {name}?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "intro_1"
     },
     "intro_1": {
         name: "나",
+        background: "assets/images/background/school.png",
         text: "(방긋 웃으며 말을 걸어오는 소녀. 은은한 샴푸 향기가 코끝을 스친다.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "intro_2"
     },
     "intro_2": {
         name: "나",
+        background: "assets/images/background/school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(눈이 마주치자 나도 모르게 심장이 덜컥한다. 너무 예쁘잖아...)",
         next: "intro_3"
     },
     "intro_3": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "\"학생회장 서연이야. 선생님 부탁으로 마중 나왔지. 잘 부탁해!\"",
+        character: "assets/images/characters/seyoun_normal.png",
         setFlags: ["met_seoyeon", "knows_name_seoyeon"],
         choices: [
             { text: "응, 잘 부탁해! 학교가 엄청 예쁘네.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 3 } } },
@@ -114,60 +123,70 @@ Object.assign(SCENARIO[1], {
     },
     "path_rude_1": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "(서연의 눈이 커지더니, 이내 아랫입술을 꾹 깨문다.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "path_rude_1_2"
     },
     "path_rude_1_2": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "\"아... 미안. 방해했나 보네. 그래도 안내는 내 일이니까... 따라와.\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_1"
     },
     "path_friendly_1": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "(그녀가 화사하게 웃자 주위가 밝아지는 느낌이다. 긴장이 조금 풀린다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_friendly_1_2"
     },
     "path_friendly_1_2": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "\"후훗, 역시? 처음엔 좀 복잡하지. 내가 완벽하게 가이드해줄게. 자, 따라와!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_1"
     },
     "path_tease_1": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "(그녀가 눈을 동그랗게 뜨더니 곧 장난스럽게 윙크한다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_tease_1_2"
     },
     "path_tease_1_2": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "\"어머, 첫날부터 작업이야? 합격점 줄게. 그럼 우리 '특별한' 전학생 소년, 따라와 보실까?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_1"
     },
     "path_blush_1": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "(서연의 얼굴이 순식간에 붉게 달아오른다. 시선을 피하며 머리칼을 만진다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "path_blush_1_2"
     },
     "path_blush_1_2": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "\"그, 그렇게 갑자기... 반칙이야. 하여튼 전학생들은... 됐으니까 얼른 따라와!\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },
     "path_silent_1": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "(그녀가 고개를 갸웃하며 내 얼굴 가까이 다가온다. 숨결이 느껴질 것만 같다.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "path_silent_1_2"
     },
     "path_silent_1_2": {
         name: "서연",
+        background: "assets/images/background/school.png",
         text: "\"응? 왜 그래? 얼굴이 엄청 빨간데... 설마 벌써 나한테 반한 거야? 후훗.\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_1"
@@ -181,24 +200,29 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_name_ask": {
         name: "서연",
+        background: "assets/images/background/load_school.png",
         text: "(서연이가 갑자기 멈춰 서더니 나를 돌아본다.) \"아, 그러고 보니 아까 내가 네 이름을 먼저 말해버렸네. {name}, 맞지? 다시 한번 정식으로 인사할게!\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_name_share"
     },
     "hallway_name_share": {
         name: "나",
+        background: "assets/images/background/load_school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "\"응, 맞아. {name}(이)야. 아까는 정신이 없어서 제대로 인사를 못 했네. 잘 부탁해, 서연아.\"",
         setFlag: "knows_name_seoyeon",
         next: "hallway_name_share_2"
     },
     "hallway_name_share_2": {
         name: "서연",
+        background: "assets/images/background/load_school.png",
         text: "\"{name}... 후훗, 좋은 이름이다! 그럼 이제부터 {name}이라고 부를게. 잘 부탁해, {name}!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_1_2"
     },
     "hallway_1_2": {
         name: "서연",
+        background: "assets/images/background/load_school.png",
         text: "(그녀의 뒷모습을 보며 복도를 걷는다.)",
         character: "assets/images/characters/seyoun_back.png",
         next: "hallway_free_talk"
@@ -206,6 +230,7 @@ Object.assign(SCENARIO[1], {
     "hallway_free_talk": {
         type: "free_talk",
         name: "서연",
+        background: "assets/images/background/load_school.png",
         text: "\"아, 그러고 보니 우리 통성명만 하고 제대로 대화는 못 했네? 궁금한 게 있으면 뭐든 물어봐!\"",
         context: "학교 복도를 함께 걸으며 전학생인 주인공과 가벼운 대화를 나누는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 서연이가 복도를 지나며 학교 시설들을 안내해 주는 상황으로 이어집니다. 대화의 마지막 턴에만 이제 이동하자고 하거나 안내를 시작하겠다는 언급을 해주세요.",
         personality: "친절하고 상냥하며 책임감 강한 학생회장. 전학생인 주인공에게 호감을 느끼고 있음.",
@@ -297,6 +322,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3": {
         name: "나",
+        background: "assets/images/background/load_school.png",
         text: "(서연이의 안내를 받으며 복도를 걷기 시작했다. 그녀는 학교 곳곳을 친절하게 설명해주기 시작했다.)",
         character: "assets/images/characters/seyoun_normal.png",
         choices: [
@@ -614,12 +640,14 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_2_high": {
         name: "서연",
+        background: "assets/images/background/load_school.png",
         text: "(서연이가 고개를 살짝 숙여 내 귓가에 속삭인다. 달콤한 숨결이 간지럽게 느껴진다.) \"{name}, 너무 긴장하지 마. 내가 항상 네 옆에 있을 거니까. 넌 잘할 수 있어.\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "classroom_1_3_high"
     },
     "classroom_1_3_high": {
         name: "서연",
+        background: "assets/images/background/load_school.png",
         text: "\"자, 우리 반이야. ...이건 비밀인데, 선생님께 부탁해서 내 옆자리로 옮겨뒀어. 조금이라도 빨리, 너랑 친해지고 싶어서.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "classroom_2"
@@ -633,12 +661,14 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_2_low": {
         name: "서연",
+        background: "assets/images/background/load_school.png",
         text: "(그녀가 말없이 문 옆 표지판을 턱 끝으로 가리킨다. 나를 쳐다보지도 않는 태도에 마음 한구석이 서늘해진다.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "classroom_1_3_low"
     },
     "classroom_1_3_low": {
         name: "서연",
+        background: "assets/images/background/load_school.png",
         text: "\"여기가 2학년 3반이야. 선생님이 안에서 기다리고 계실 거야. 전학 첫날부터 늦어서 찍히지 말고 어서 들어가 봐.\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "classroom_2"
@@ -652,17 +682,20 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_2": {
         name: "서연",
+        background: "assets/images/background/load_school.png",
         text: "(그녀의 손길이 닿은 곳이 화끈거린다. 그녀가 내 눈을 보며 작게 파이팅을 외친다.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_1_3"
     },
     "classroom_1_3": {
         name: "서연",
+        background: "assets/images/background/load_school.png",
         text: "\"자, 여기가 네가 머물게 될 2학년 3반이야. 긴장하지 마. 내가 바로 옆에 있으니까, 넌 그냥 평소대로 하면 돼. 알았지?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_2"
     },
     "classroom_2": {
+        background: "assets/images/background/load_school.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 25, next: "classroom_2_high" },
@@ -709,6 +742,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_2": {
         name: "담임선생님",
+        background: "assets/images/background/room_school.png",
         text: "(교실 안의 공기가 무겁게 느껴진다. 담임선생님이 교탁을 탁탁 치며 주의를 집중시킨다.)",
         character: "assets/images/characters/teacher_normal.png",
         next: "teacher_free_talk"
@@ -716,6 +750,7 @@ Object.assign(SCENARIO[1], {
     "teacher_free_talk": {
         type: "free_talk",
         name: "담임선생님",
+        background: "assets/images/background/room_school.png",
         text: "\"자, 다들 전학생한테 관심이 아주 많네. 긴장되겠지만 다들 좋은 아이들이니까 너무 걱정하지 마. 자기소개 하기 전에 나한테 궁금한 거라도 있니?\"",
         context: "장소: 2학년 3반 교실 안 교탁 앞. 상황: 담임선생님이 전학생인 주인공을 학생들에게 소개하기 직전의 짧은 대기 시간. 수십 명의 학생들이 우리를 지켜보고 있지만, 이 대화는 오직 주인공과 담임선생님 사이의 대화여야 합니다. 주인공이 학생들 전체에게 인사나 자기소개를 하는 것은 이 대화가 끝난 '이후'의 정식 이벤트이므로, 지금은 절대로 학생들에게 인사를 시키거나 자기소개를 하도록 유도하지 마세요. 오직 선생님과 주인공 사이의 개인적인 질문이나 학교생활 조언, 첫인상 등에 대해서만 이야기하세요. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화의 마지막 턴에만 이제 학생들에게 정식으로 소개해주겠다고 말하며 대화를 마무리해 주세요.",
         personality: "공과 사가 뚜렷한 전문적인 교사지만 사실 허당기가 있고 주인공의 예상치 못한 어른스러운 모습에 가슴 설레어함. 은근히 주인공에게 기대고 싶어 하는 '갭모에'가 있음.",
@@ -754,6 +789,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3": {
         name: "나",
+        background: "assets/images/background/room_school.png",
         text: "(선생님과의 대화가 끝나고, 드디어 정식으로 반 아이들에게 소개될 시간이 왔다. 수많은 시선이 나에게 집중된다.)",
         character: "assets/images/characters/teacher_normal.png",
         choices: [
@@ -778,6 +814,7 @@ Object.assign(SCENARIO[1], {
     },
     "teacher_name_share_normal": {
         name: "담임선생님",
+        background: "assets/images/background/room_school.png",
         text: "\"자, {name}. 친구들에게 자기소개 한마디 부탁할게.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "class_after_active"
@@ -785,72 +822,84 @@ Object.assign(SCENARIO[1], {
 
     "class_after_active": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "(교실 여기저기서 환호성이 터져 나온다. 특히 뒷자리에 앉은 남학생들이 눈을 빛낸다. 서연이도 흐뭇한 미소를 지으며 박수를 쳐준다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_2"
     },
     "class_after_active_2": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "(아이들은 벌써부터 나를 자기 팀에 영입하려고 수군거린다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_3"
     },
     "class_after_active_3": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "\"오~ 운동 좀 하나 본데? 점심시간에 배구 한판 어때? 전학생 실력 좀 보자고!\"",
         character: null,
         next: "lunch_time"
     },
     "class_after_quiet": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "(아이들이 고개를 끄덕이며 차분하게 나를 받아들인다. 몇몇 여학생들이 소곤거리며 나를 쳐다본다.)",
         character: null,
         next: "class_after_quiet_2"
     },
     "class_after_quiet_2": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "(서연이는 내 진지한 모습이 마음에 드는지 고개를 끄덕인다. 교실 분위기가 한결 차분해진다.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "class_after_quiet_3"
     },
     "class_after_quiet_3": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "\"와, 왠지 분위기 있다... 나중에 도서관에서 마주치면 인사해도 될까?\"",
         character: null,
         next: "lunch_time"
     },
     "class_after_party": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "(교실이 순식간에 시장통처럼 시끌벅적해진다. 벌써부터 주변으로 아이들이 몰려든다.)",
         character: null,
         next: "class_after_party_2"
     },
     "class_after_party_2": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "(서연이는 조금 당황한 듯하지만 이내 웃음을 터뜨린다. 아이들은 벌써 메뉴 정하느라 바쁘다.)",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_party_3"
     },
     "class_after_party_3": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "\"와! {name} 성격 진짜 대박 좋아, 오늘 점심은 우리랑 같이 먹자! 맛있는 거 많이 알려줄게!\"",
         character: null,
         next: "lunch_time"
     },
     "class_after_study": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "(교실에 차가운 정적이 흐른다. 아이들이 조금 당황한 듯 서로 눈치를 보며 수군거린다.)",
         character: null,
         next: "class_after_study_2"
     },
     "class_after_study_2": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "(서연이의 표정도 조금 굳어진다. 왠지 모를 벽이 생긴 기분이다. 아이들은 내 눈치를 보며 조용해진다.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "class_after_study_3"
     },
     "class_after_study_3": {
         name: "아이들",
+        background: "assets/images/background/room_school.png",
         text: "\"와.. 장난 아니네. 완전 공부 벌레인가 봐. 건드리면 큰일 나겠는데...\"",
         character: null,
         next: "lunch_time"
