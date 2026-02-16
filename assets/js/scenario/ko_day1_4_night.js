@@ -133,7 +133,7 @@ Object.assign(SCENARIO[1], {
     },
 
     // =========================================================================
-    // 2. 하루 되돌아보기 — 만났던 인물 회상 (5 노드)
+    // 2. 하루 되돌아보기 — 만났던 인물만 회상 (조건 분기)
     // =========================================================================
 
     "night_reflect_start": {
@@ -141,32 +141,71 @@ Object.assign(SCENARIO[1], {
         text: "(천장을 바라보며 오늘 하루를 떠올린다. 전학 첫날치고는... 정말 많은 일이 있었어.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "night_reflect_seoyeon"
+        branches: [
+            { next: "night_reflect_seoyeon", condition: "met_seoyeon" },
+            { next: "night_reflect_yuna", condition: "met_yuna" },
+            { next: "night_reflect_dain", condition: "met_dain" },
+            { next: "night_reflect_nurse", condition: "met_nurse" },
+            { next: "night_reflect_teacher", condition: "met_teacher" },
+            { next: "night_reflect_end" }
+        ]
     },
     "night_reflect_seoyeon": {
         name: "나",
         text: "(서연이... 밝고 다정한 아이였어. 처음 보는 나한테도 스스럼없이 다가와줬지. 같은 반이라 앞으로도 많이 볼 텐데, 왠지 기대가 돼.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "night_reflect_yuna"
+        branches: [
+            { next: "night_reflect_yuna", condition: "met_yuna" },
+            { next: "night_reflect_dain", condition: "met_dain" },
+            { next: "night_reflect_nurse", condition: "met_nurse" },
+            { next: "night_reflect_teacher", condition: "met_teacher" },
+            { next: "night_reflect_end" }
+        ]
     },
     "night_reflect_yuna": {
         name: "나",
         text: "(유나... 신비로운 분위기의 소녀. 말 수는 적었지만, 그 눈빛이 자꾸 떠올라. 무슨 생각을 하고 있었을까... 왠지 더 알고 싶어.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "night_reflect_dain"
+        branches: [
+            { next: "night_reflect_dain", condition: "met_dain" },
+            { next: "night_reflect_nurse", condition: "met_nurse" },
+            { next: "night_reflect_teacher", condition: "met_teacher" },
+            { next: "night_reflect_end" }
+        ]
     },
     "night_reflect_dain": {
         name: "나",
         text: "(다인이... 에너지가 넘치는 아이. 같이 있으면 절대 심심하지 않을 것 같아. 배구하는 모습이 정말 멋있었어.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "night_reflect_adults"
+        branches: [
+            { next: "night_reflect_nurse", condition: "met_nurse" },
+            { next: "night_reflect_teacher", condition: "met_teacher" },
+            { next: "night_reflect_end" }
+        ]
     },
-    "night_reflect_adults": {
+    "night_reflect_nurse": {
         name: "나",
-        text: "(보건실 선생님은... 뭐랄까, 묘한 매력이 있었어. 그리고 담임선생님은 은근히 챙겨주셔서 좋았어. 이 학교, 생각보다 나쁘지 않아.)",
+        text: "(보건실 선생님은... 뭐랄까, 묘한 매력이 있었어. 괜히 한 번 더 들러보고 싶은 곳이 됐네.)",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        branches: [
+            { next: "night_reflect_teacher", condition: "met_teacher" },
+            { next: "night_reflect_end" }
+        ]
+    },
+    "night_reflect_teacher": {
+        name: "나",
+        text: "(담임선생님은 은근히 챙겨주셔서 좋았어. 이런 분이 담임이라 다행이야.)",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        next: "night_reflect_end"
+    },
+    "night_reflect_end": {
+        name: "나",
+        text: "(이 학교, 생각보다 나쁘지 않아. 내일은 어떤 일이 생길까...)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "night_diary_choice"
