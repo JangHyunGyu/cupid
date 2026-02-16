@@ -432,7 +432,6 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "(유나가 조심스럽게 내 손을 깍지 껴 잡는다. 온기가 전해지는 그녀의 손에서 진심이 느껴진다.)",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_high"
     },
     "day2_yuna_secret_2_high": {
@@ -440,7 +439,7 @@ Object.assign(SCENARIO[2], {
         text: "\"너라면... 이 무거운 진실을 함께 짊어져 줄 수 있을 것 같아. {name}, 나를 믿고 따라와 줄 수 있어? 이 뒤의 세상은 이전과 전혀 다를 거야.\"",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "응, 내가 함께할게. 같이 보자.", next: "day2_yuna_secret_read_high", stats: { Yuna: { affinity: 20 } } },
+            { text: "응, 내가 함께할게. 같이 보자.", next: "day2_yuna_secret_read_high", stats: { Yuna: { affinity: 20 } }, setFlag: "visited_warehouse_at_lunch" },
             { text: "미안, 이건 좀 무리인 것 같아.", next: "day2_yuna_secret_stop_high", stats: { Yuna: { affinity: -10 } } }
         ]
     },
@@ -448,7 +447,6 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "(유나가 내 소매를 거칠게 잡아 끈다.)",
         character: "assets/images/characters/yuna_normal.png",
-        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_low"
     },
     "day2_yuna_secret_2_low": {
@@ -456,7 +454,7 @@ Object.assign(SCENARIO[2], {
         text: "\"그냥 구경이나 해. 네가 뭘 알겠냐마는... 여기까지 왔으니까 어쩔 수 없지. 방해만 하지 마.\"",
         character: "assets/images/characters/yuna_normal.png",
         choices: [
-            { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret_read_low", stats: { Yuna: { affinity: 5 } } },
+            { text: "그게 뭔데? 나도 궁금해.", next: "day2_yuna_secret_read_low", stats: { Yuna: { affinity: 5 } }, setFlag: "visited_warehouse_at_lunch" },
             { text: "그만둘래. 너무 위험해 보여.", next: "day2_yuna_secret_stop_low", stats: { Yuna: { affinity: -20 } } }
         ]
     },
@@ -464,7 +462,6 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         text: "(유나가 내 손을 잡고 낡은 창고 쪽으로 이끈다. 손끝에서 전해지는 차가운 감촉에 몸이 떨렸다.)",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_normal"
     },
     "day2_yuna_secret_2_normal": {
@@ -472,7 +469,7 @@ Object.assign(SCENARIO[2], {
         text: "\"이 안에는... 학교가 오랫동안 숨겨온 기록들이 있어. 네가 이걸 보면... 모든 게 달라질 거야.\"",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "그 기록, 나도 같이 봐도 될까?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
+            { text: "그 기록, 나도 같이 봐도 될까?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } }, setFlag: "visited_warehouse_at_lunch" },
             { text: "위험한 거 아냐? 그냥 내버려 두는 게 좋겠어.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -20 } } },
             { text: "유나야, 넌 왜 이런 걸 조사하는 거야?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
         ]
@@ -1246,7 +1243,7 @@ Object.assign(SCENARIO[2], {
                     { minAffinity: 40, next: "nurse_contact_home_success" }
                 ]
             },
-            { text: "아, 괜찮아요.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -20 } } }
+            { text: "아, 괜찮아요.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -15 } } }
         ]
     },
     "nurse_contact_success_high": {

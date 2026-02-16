@@ -390,7 +390,7 @@ Object.assign(SCENARIO[3], {
     // =========================================================================
     "day3_afternoon_transition": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(교문을 나서려는데...)",
         background: "assets/images/background/school.png",
         sunset: true,
@@ -472,7 +472,7 @@ Object.assign(SCENARIO[3], {
     // =========================================================================
     "day3_afternoon_seoyeon_walk": {
         name: "나",
-        character: "assets/images/characters/yuna_normal.png",
+        character: null,
         text: "\"서연아, 같이 가자.\"",
         sunset: true,
         stats: { Seoyeon: { affinity: 5 } },
@@ -658,7 +658,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_talk_walk": {
         name: "나",
-        character: "assets/images/characters/seyoun_sad.png",
+        character: null,
         text: "(유나와 함께 조용한 길을 걷는다. 그녀는 말이 없지만, 분위기가 편안하다.)",
         background: "assets/images/background/school.png",
         sunset: true,
@@ -667,7 +667,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_cat": {
         name: "나",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/seyoun_sad.png",
+        character: null,
         text: "(길가에 작은 고양이 한 마리가 웅크리고 있다. 유나가 갑자기 멈춘다.)",
         sunset: true,
         next: "day3_afternoon_yuna_cat_2"
@@ -792,7 +792,7 @@ Object.assign(SCENARIO[3], {
     // =========================================================================
     "day3_afternoon_dain_walk": {
         name: "나",
-        character: "assets/images/characters/yuna_normal.png",
+        character: null,
         text: "\"다인아, 같이 가자.\"",
         sunset: true,
         stats: { Dain: { affinity: 5 } },
@@ -954,7 +954,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_alone_walk": {
         name: "나",
-        character: "assets/images/characters/teacher_smile.png",
+        character: null,
         text: "(혼자 집으로 향한다. 내일은 어떤 하루가 될까...)",
         background: "assets/images/background/school.png",
         sunset: true,

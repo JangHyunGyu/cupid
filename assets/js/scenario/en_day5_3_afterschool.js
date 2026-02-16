@@ -159,28 +159,28 @@ Object.assign(SCENARIO[5], {
     // ─── 키스씬 (간접 연출) ───
     "day5_true_kiss_buildup": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(The wind blows. Their face, bathed in the sunset glow, feels unusually close.)",
         sunset: true,
         next: "day5_true_kiss_2"
     },
     "day5_true_kiss_2": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(We look into each other's eyes. No words are needed.)",
         sunset: true,
         next: "day5_true_kiss_3"
     },
     "day5_true_kiss_3": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(Naturally... our faces draw closer.)",
         sunset: true,
         next: "day5_true_kiss_4"
     },
     "day5_true_kiss_4": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(...I closed my eyes.)",
         sunset: true,
         fade: true,
@@ -188,7 +188,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_true_kiss_5": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(A soft warmth. Time seemed to stop.)",
         sunset: true,
         fade: true,
@@ -196,7 +196,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_true_kiss_6": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(......)",
         sunset: true,
         fade: true,
@@ -204,7 +204,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_true_kiss_after": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(When I opened my eyes, they were smiling in the sunset light. The most beautiful smile in the world.)",
         sunset: true,
         next: "day5_true_evening_branch"
@@ -531,8 +531,8 @@ Object.assign(SCENARIO[5], {
     // ─── 공통: 암전 → 아침 ───
     "day5_bed_common_1": {
         name: "Me",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(Each other's warmth. Silently, naturally— the distance between us vanished.)",
         night: true,
         fade: true,
@@ -540,8 +540,8 @@ Object.assign(SCENARIO[5], {
     },
     "day5_bed_common_2": {
         name: "Me",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(......)",
         night: true,
         fade: true,
@@ -549,8 +549,8 @@ Object.assign(SCENARIO[5], {
     },
     "day5_bed_common_3": {
         name: "Me",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(..................)",
         night: true,
         fade: true,
@@ -560,32 +560,32 @@ Object.assign(SCENARIO[5], {
     // ─── 다음날 아침 ───
     "day5_true_morning": {
         name: "Me",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(I opened my eyes. Morning sunlight was streaming through the window.)",
         fade: true,
         next: "day5_true_morning_2"
     },
     "day5_true_morning_2": {
         name: "Me",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(A face sleeping quietly next to me. Last night... wasn't a dream.)",
         fade: true,
         next: "day5_true_morning_3"
     },
     "day5_true_morning_3": {
         name: "Me",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(I gently pulled the blanket up over them. I thought— I want to see this sleeping face for the rest of my life.)",
         fade: true,
         next: "day5_true_final"
     },
     "day5_true_final": {
         name: "Me",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(This moment, this feeling, this warmth— I will never forget it.)",
         fade: true,
         next: "day5_ending_true"
@@ -665,7 +665,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_good_final": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(We held hands side by side, watching the sunset. It wasn't perfect... but this is our beginning.)",
         sunset: true,
         fade: true,
@@ -710,6 +710,39 @@ Object.assign(SCENARIO[5], {
         name: "Dain",
         text: "\"Hey!! I'm here too!! Wait, why is everyone here?!\"",
         character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        next: "day5_mayhem_5b"
+    },
+    "day5_mayhem_5b": {
+        name: "System",
+        text: "",
+        sunset: true,
+        branches: [
+            { next: "day5_mayhem_teacher_watch", condition: "day3_teacher_date_confirmed" },
+            { next: "day5_mayhem_nurse_watch", condition: "day3_nurse_date_confirmed" },
+            { next: "day5_mayhem_6" }
+        ]
+    },
+    "day5_mayhem_teacher_watch": {
+        name: "Me",
+        text: "(In the distance, the homeroom teacher is watching us. Her expression looks complicated.)",
+        character: "assets/images/characters/teacher_normal.png",
+        sunset: true,
+        next: "day5_mayhem_nurse_check"
+    },
+    "day5_mayhem_nurse_check": {
+        name: "System",
+        text: "",
+        sunset: true,
+        branches: [
+            { next: "day5_mayhem_nurse_watch", condition: "day3_nurse_date_confirmed" },
+            { next: "day5_mayhem_6" }
+        ]
+    },
+    "day5_mayhem_nurse_watch": {
+        name: "Me",
+        text: "(The school nurse is also watching the situation through a window.)",
+        character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         next: "day5_mayhem_6"
     },
@@ -1008,7 +1041,7 @@ Object.assign(SCENARIO[5], {
         sunset: true,
         stats: { Seoyeon: { affinity: 15 } },
         setFlag: "ending_good",
-        next: "day5_good_final"
+        next: "day5_late_accept_transition1"
     },
     "day5_late_accept_yuna": {
         name: "Yuna",
@@ -1017,7 +1050,7 @@ Object.assign(SCENARIO[5], {
         sunset: true,
         stats: { Yuna: { affinity: 15 } },
         setFlag: "ending_good",
-        next: "day5_good_final"
+        next: "day5_late_accept_transition1"
     },
     "day5_late_accept_dain": {
         name: "Dain",
@@ -1026,7 +1059,7 @@ Object.assign(SCENARIO[5], {
         sunset: true,
         stats: { Dain: { affinity: 15 } },
         setFlag: "ending_good",
-        next: "day5_good_final"
+        next: "day5_late_accept_transition1"
     },
     "day5_late_accept_nurse": {
         name: "School Nurse",
@@ -1035,7 +1068,7 @@ Object.assign(SCENARIO[5], {
         sunset: true,
         stats: { Nurse: { affinity: 15 } },
         setFlag: "ending_good",
-        next: "day5_good_final"
+        next: "day5_late_accept_transition1"
     },
     "day5_late_accept_teacher": {
         name: "Homeroom Teacher",
@@ -1044,6 +1077,20 @@ Object.assign(SCENARIO[5], {
         sunset: true,
         stats: { Teacher: { affinity: 15 } },
         setFlag: "ending_good",
+        next: "day5_late_accept_transition1"
+    },
+
+    // --- Late Confession Transition Nodes ---
+    "day5_late_accept_transition1": {
+        name: "Me",
+        text: "(After staring at each other for a while, we burst into laughter.)",
+        sunset: true,
+        next: "day5_late_accept_transition2"
+    },
+    "day5_late_accept_transition2": {
+        name: "Me",
+        text: "(Something so simple... why did it take so long?)",
+        sunset: true,
         next: "day5_good_final"
     },
 
@@ -1111,7 +1158,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_friend_final": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(Was this the right choice? ...I don't know. But this too is an ending.)",
         sunset: true,
         fade: true,

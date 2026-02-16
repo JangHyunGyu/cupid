@@ -304,50 +304,35 @@ Object.assign(SCENARIO[3], {
         text: "(새벽 6시에 온 메시지) '좋은 아침! {name}아, 오늘도 화이팅! 아, 그리고 혹시 같이 등교할래? 집 앞에서 기다릴게!'",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
-        branches: [
-            { next: "day3_msg_response_first", condition: "first_check" },
-            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
-        ]
+        next: "day3_msg_response_first"
     },
     "day3_msg_yuna": {
         name: "유나",
         text: "(새벽 3시에 온 메시지) '...{name}. 오늘 아침 학교 뒷문에서 기다릴게. 같이 가자.'",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
-        branches: [
-            { next: "day3_msg_response_first", condition: "first_check" },
-            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
-        ]
+        next: "day3_msg_response_first"
     },
     "day3_msg_dain": {
         name: "다인",
         text: "(아침 7시에 온 메시지) '야호! {name}야! 같이 학교 가자! 집 어디야? 내가 찾아갈게! ><'",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
-        branches: [
-            { next: "day3_msg_response_first", condition: "first_check" },
-            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
-        ]
+        next: "day3_msg_response_first"
     },
     "day3_msg_nurse": {
         name: "보건선생님",
         text: "(어젯밤 11시에 온 메시지) '후훗, {name}. 오늘 아침에 같이 등교할까? 선생님이랑 단둘이... 😉'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
-        branches: [
-            { next: "day3_msg_response_first_teachers", condition: "first_check" },
-            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
-        ]
+        next: "day3_msg_response_first_teachers"
     },
     "day3_msg_teacher": {
         name: "담임선생님",
         text: "(어젯밤 10시에 온 메시지) '{name}야, 혹시 내일 아침 일찍 등교하니? 선생님도 일찍 가는데 같이 걸어갈래?'",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
-        branches: [
-            { next: "day3_msg_response_first_teachers", condition: "first_check" },
-            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
-        ]
+        next: "day3_msg_response_first_teachers"
     },
     "day3_msg_response_first": {
         name: "나",
@@ -429,7 +414,7 @@ Object.assign(SCENARIO[3], {
     // 거절 후
     "day3_after_reject": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(다른 메시지도 확인해볼까?)",
         choices: [
             { text: "다른 메시지 확인", next: "day3_check_more_after_reject" },
@@ -727,7 +712,7 @@ Object.assign(SCENARIO[3], {
         name: "서연",
         text: "(서연이가 억지로 웃는다) \"…아, 그래? 괜찮아! 뭐, 다음에 가면 되지!\"",
         character: "assets/images/characters/seyoun_sad.png",
-        stats: { Seoyeon: { affinity: -30 } },
+        stats: { Seoyeon: { affinity: -15 } },
         next: "day3_arrive_school"
     },
     
@@ -857,7 +842,7 @@ Object.assign(SCENARIO[3], {
         name: "유나",
         text: "(유나의 눈빛이 차갑게 식는다) \"......\"",
         character: "assets/images/characters/yuna_bored.png",
-        stats: { Yuna: { affinity: -30 } },
+        stats: { Yuna: { affinity: -15 } },
         next: "day3_arrive_school"
     },
     "day3_walk_with_dain": {
@@ -1014,7 +999,7 @@ Object.assign(SCENARIO[3], {
         background: "assets/images/background/school.png",
         text: "(다인이가 실망한 표정을 짓는다) \"아... 그렇구나. 그래도 나중에 시간 나면 꼭 놀러 와!\"",
         character: "assets/images/characters/dain_sad.png",
-        stats: { Dain: { affinity: -20 } },
+        stats: { Dain: { affinity: -10 } },
         next: "day3_arrive_school"
     },
     "day3_walk_with_nurse": {

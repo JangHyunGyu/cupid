@@ -31,6 +31,8 @@ Object.assign(SCENARIO[3], {
             { next: "day3_lunch_single_approach", condition: "day3_seoyeon_date_confirmed" },
             { next: "day3_lunch_single_approach", condition: "day3_yuna_date_confirmed" },
             { next: "day3_lunch_single_approach", condition: "day3_dain_date_confirmed" },
+            { next: "day3_lunch_single_approach", condition: "day3_teacher_date_confirmed" },
+            { next: "day3_lunch_single_approach", condition: "day3_nurse_date_confirmed" },
             { next: "day3_lunch_normal" }
         ]
     },
@@ -295,7 +297,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_lunch_choose_yuna": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "\"Yuna, let's go together.\"",
         stats: { Yuna: { affinity: 5 } },
         setFlag: "day3_lunch_with_yuna",
@@ -466,7 +468,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_lunch_choose_dain": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "\"Dain, let's go eat together.\"",
         stats: { Dain: { affinity: 5 } },
         setFlag: "day3_lunch_with_dain",

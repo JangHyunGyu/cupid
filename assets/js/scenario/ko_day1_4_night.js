@@ -83,7 +83,7 @@ Object.assign(SCENARIO[1], {
     "after_home": {
         name: "나",
         text: "(어둠이 깔린 거리를 걷는다. 가로등 불빛이 길 위에 길게 그림자를 만들어낸다.)",
-        background: "assets/images/background/room_my.png",
+        background: "assets/images/background/street.png",
         bgm: "night1.mp3",
         character: null,
         night: true,
@@ -92,14 +92,14 @@ Object.assign(SCENARIO[1], {
     "after_home_walk": {
         name: "나",
         text: "(이 동네도 어느새 조금은 익숙해진 것 같아. 편의점 옆 골목을 지나면 우리 집이고... 저 자판기도 아까 본 적 있어.)",
-        background: "assets/images/background/room_my.png",
+        background: "assets/images/background/street.png",
         night: true,
         next: "after_home_neighborhood"
     },
     "after_home_neighborhood": {
         name: "나",
         text: "(조용한 주택가. 어딘가에서 저녁 반찬 냄새가 풍겨온다. 낯선 동네인데... 왜 이렇게 편안한 기분이 들지?)",
-        background: "assets/images/background/room_my.png",
+        background: "assets/images/background/street.png",
         night: true,
         next: "after_home_arrive"
     },
@@ -234,7 +234,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_diary_write_2": {
         name: "나",
-        text: "('같은 반 서연이가 많이 챙겨줬고, 신비로운 분위기의 유나, 활발한 다인이도 만났다. 선생님들도 좋은 분들이었다.')",
+        text: "(일기를 썼다. 전학 온 첫날... 새로운 학교에서 여러 사람을 만났다. 어떤 인연이 될지 아직 모르겠지만, 나쁘지 않은 하루였다.)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "night_diary_write_3"
@@ -265,7 +265,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_home_check_contact": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(오늘 연락처를 교환했던 사람들... 누구에게 먼저 메시지를 보내볼까?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -348,7 +348,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_seyoun": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(서연이에게 어떤 메시지를 보낼까?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -473,7 +473,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_yuna": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(유나에게 메시지를 보냈다. '오늘 즐거웠어. 잘 자.')",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -575,7 +575,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_dain": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(다인이에게 어떤 메시지를 보낼까?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -696,7 +696,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_nurse": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(보건선생님께 메시지를 보냈다. '선생님, 오늘 감사했어요. 편하게 쉴 수 있었어요.')",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -769,7 +769,7 @@ Object.assign(SCENARIO[1], {
 
     "night_goodnight_start": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(스마트폰을 내려놓고 침대에서 일어났다. 잠들기 전에 잠깐 창문을 열어볼까.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -777,7 +777,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_window": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(창문을 열자 서늘한 밤바람이 얼굴을 스친다. 밤하늘에 별이 몇 개 보인다. 이 동네는 도시보다 별이 잘 보이네.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -785,7 +785,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_sounds": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(귀뚜라미 소리가 들려온다. 멀리서 기차 소리도 희미하게... 이 조용한 밤이, 어쩐지 좋다.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -793,7 +793,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_think": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(내일은... 서연이, 유나, 다인이, 선생님들. 다시 만날 수 있겠지. 어떤 이야기가 기다리고 있을까.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -801,7 +801,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_close": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(창문을 닫고 이불 속으로 들어갔다. 눈을 감으면... 잠이 올 것 같아.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -922,7 +922,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_surprise_react": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(깜짝 놀랐지만... 기분이 좋아졌다. 스마트폰을 뒤집어 놓고 이불을 덮었다. 오늘은 진짜 좋은 하루였어.)",
         background: "assets/images/background/room_my.png",
         night: true,

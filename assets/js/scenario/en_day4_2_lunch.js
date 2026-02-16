@@ -409,7 +409,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_date_walk": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(We walked side by side, chatting about all sorts of things. A relaxed atmosphere, different from school.)",
         background: "assets/images/background/street.png",
         next: "day4_date_talk_1"
@@ -418,7 +418,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_talk_1": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(Things we could never talk about at school... favorite music, childhood dreams, little hobbies.)",
         next: "day4_date_talk_2"
     },
@@ -426,7 +426,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_talk_2": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(The more we talk, the closer I feel. I wish this moment could last forever.)",
         next: "day4_date_weather"
     },
@@ -438,7 +438,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_weather": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(A gentle breeze blows. Cotton candy clouds drift slowly across the sky.)",
         next: "day4_date_surroundings"
     },
@@ -446,7 +446,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_surroundings": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(I see other couples around, just like us. I suddenly wonder, 'Do we look like that too?')",
         next: "day4_date_time_pass"
     },
@@ -454,7 +454,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_time_pass": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(I have no idea how time flew by so fast. I check my phone and realize an hour has already passed.)",
         next: "day4_date_sunshine"
     },
@@ -462,7 +462,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_sunshine": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(Sunlight pours through the leaves. The light falling on the face of the person walking beside me is... beautiful.)",
         next: "day4_date_activity_branch"
     },
@@ -671,7 +671,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_activity_converge": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(Time flew by so fast. Before I knew it, it was already lunchtime.)",
         background: "assets/images/background/street.png",
         next: "day4_date_lunch"
@@ -683,7 +683,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_date_lunch": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(We went into a cute café nearby. Sitting across from each other by the window — is it just me, or does this feel even more exciting?)",
         background: "assets/images/background/cafe.png",
         next: "day4_lunch_menu"
@@ -692,7 +692,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_menu": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(I look at the menu. Pasta, sandwiches, brunch set... What should I order?)",
         next: "day4_lunch_order"
     },
@@ -700,7 +700,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_order": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "\"I'll go with the pasta. What about you?\"",
         next: "day4_lunch_order_react"
     },
@@ -708,7 +708,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_order_react": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(They picked something too. After ordering, there's a brief awkward silence.)",
         next: "day4_lunch_awkward"
     },
@@ -716,7 +716,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_awkward": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(I feel like I should say something... What would be natural to talk about at a time like this?)",
         next: "day4_lunch_funny"
     },
@@ -724,7 +724,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_funny": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(The food arrived. The pasta I ordered is way bigger than I expected. They can't hold back their laughter at the sight.)",
         next: "day4_lunch_funny_react"
     },
@@ -732,7 +732,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_funny_react": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "\"Why are you laughing! I can totally handle this much!\"",
         next: "day4_lunch_share"
     },
@@ -740,7 +740,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_share": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(We ended up sharing each other's food. Every time our forks bump on the same plate, we can't help but laugh.)",
         next: "day4_date_lunch_talk"
     },
@@ -748,7 +748,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_lunch_talk": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(The conversation blossomed. Laughing together, thinking together... So this is what happiness feels like.)",
         next: "day4_lunch_learn"
     },
@@ -756,7 +756,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_learn": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(The more we talk, the more I learn about sides of them I never knew. Favorite season, food they dislike, childhood nicknames... These little things feel so precious.)",
         next: "day4_date_lunch_choice"
     },
@@ -768,7 +768,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_lunch_choice": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(Should I bring up something more personal?)",
         choices: [
             {
@@ -786,7 +786,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_honest": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "\"The new environment scared me... but thanks to you, now I look forward to every day.\"",
         next: "day4_date_honest_react"
     },
@@ -794,7 +794,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_honest_react": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(They listened quietly to my story. Did my sincerity get through? They nod with warm eyes.)",
         stats: { Seoyeon: { affinity: 3 }, Yuna: { affinity: 3 }, Dain: { affinity: 3 }, Nurse: { affinity: 3 }, Teacher: { affinity: 3 } },
         next: "day4_date_response"
@@ -803,7 +803,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_grateful": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "\"Especially... right now, this moment is the best.\"",
         next: "day4_date_grateful_react"
     },
@@ -811,7 +811,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_grateful_react": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(They look away slightly, smiling. They're definitely happy about what I said.)",
         next: "day4_date_response"
     },
@@ -823,14 +823,14 @@ Object.assign(SCENARIO[4], {
     "day4_date_response": {
         name: "Me",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(Their eyes softened. It feels like something connected between us.)",
         next: "day4_date_cafe_exit"
     },
 
     "day4_date_cafe_exit": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(As we step out of the café, warm afternoon sunlight pours down. It feels like the distance between us has gotten smaller.)",
         background: "assets/images/background/street.png",
         next: "day4_date_photo_moment"
@@ -839,7 +839,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_photo_moment": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(I suddenly want to capture this moment.)",
         choices: [
             {
@@ -858,7 +858,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_photo_yes": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(We stood side by side and took a selfie. Two people smiling together on the screen. I want to keep this photo forever.)",
         next: "day4_date_ending_moment"
     },
@@ -866,7 +866,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_photo_no": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(More vivid than any photo, I engrave this moment into my memory. The scent of the breeze, the warmth of the sun, the smile of the person beside me.)",
         next: "day4_date_ending_moment"
     },
@@ -878,7 +878,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_ending_moment": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(Walking side by side, a brief silence falls. It's not awkward — it's a comfortable silence. It feels like we've become the kind of people who are okay without saying a word.)",
         next: "day4_date_ending_feel"
     },
@@ -886,7 +886,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_ending_feel": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(Today feels like a dream. I never imagined such a wonderful day would come after transferring here... truly.)",
         next: "day4_date_transition"
     },
@@ -894,7 +894,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_transition": {
         name: "Me",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(The afternoon still awaits. This date... isn't over yet.)",
         fade: true,
         next: "day4_afternoon_start"

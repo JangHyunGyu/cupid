@@ -344,7 +344,7 @@ Object.assign(SCENARIO[4], {
         name: "서연",
         text: "\"아 참, 오늘 날씨 진짜 좋다! 산책하기 딱이야~ 선크림 바르고 와!\"",
         character: "assets/images/characters/seyoun_normal.png",
-        stats: { Seoyeon: 3 },
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day4_reply_seoyeon_2"
     },
     "day4_reply_seoyeon_2": {
@@ -378,7 +378,7 @@ Object.assign(SCENARIO[4], {
         name: "유나",
         text: "\"…별거 아닌데. 그냥 커피 마시고 싶었을 뿐이야. …혼자는 좀 그래서.\"",
         character: "assets/images/characters/yuna_shy.png",
-        stats: { Yuna: 3 },
+        stats: { Yuna: { affinity: 3 } },
         next: "day4_reply_yuna_2"
     },
     "day4_reply_yuna_2": {
@@ -412,7 +412,7 @@ Object.assign(SCENARIO[4], {
         name: "다인",
         text: "\"아 맞다!! 오늘 연습 끝나면 배 엄청 고플 거야!! 맛집 알아봐 줘!! 고기 먹고 싶어!!!\"",
         character: "assets/images/characters/dain_normal.png",
-        stats: { Dain: 3 },
+        stats: { Dain: { affinity: 3 } },
         next: "day4_reply_dain_2"
     },
     "day4_reply_dain_2": {
@@ -446,7 +446,7 @@ Object.assign(SCENARIO[4], {
         name: "보건선생님",
         text: "\"기대하고 있을게. 아, 그리고… 오늘은 선생님이라고 부르지 마. 그냥 편하게 만나는 거야.\"",
         character: "assets/images/characters/nurse_shy.png",
-        stats: { Nurse: 3 },
+        stats: { Nurse: { affinity: 3 } },
         next: "day4_reply_nurse_2"
     },
     "day4_reply_nurse_2": {
@@ -480,7 +480,7 @@ Object.assign(SCENARIO[4], {
         name: "담임선생님",
         text: "\"사복으로 갈 테니까 못 알아봐도 놀라지 마. …농담이야. 아마 알아볼 거야.\"",
         character: "assets/images/characters/teacher_smile.png",
-        stats: { Teacher: 3 },
+        stats: { Teacher: { affinity: 3 } },
         next: "day4_reply_teacher_2"
     },
     "day4_reply_teacher_2": {
@@ -502,28 +502,28 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_lastcheck": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(마지막으로 거울을 본다. …괜찮다. 아니, 꽤 괜찮아 보인다. 자신감을 갖자.)",
         next: "day4_morning_wallet"
     },
 
     "day4_morning_wallet": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(지갑, 핸드폰, 열쇠. 하나씩 주머니에 넣는다. 혹시 모르니까 손수건도 챙기자.)",
         next: "day4_morning_lock"
     },
 
     "day4_morning_lock": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(현관문을 나서며 열쇠로 문을 잠근다. 딸깍 — 마치 새로운 하루의 시작을 알리는 소리 같다.)",
         next: "day4_morning_outside"
     },
 
     "day4_morning_outside": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(밖으로 나오자 따사로운 바람이 불어온다. 벚꽃 향기가 코끝을 스친다. 거리에는 활기가 넘친다.)",
         background: "assets/images/background/street.png",
         next: "day4_morning_depart"
@@ -532,7 +532,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_depart": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(좋아, 준비 완료. 가자!)",
         fade: true,
         next: "day4_arrive"
@@ -651,7 +651,7 @@ Object.assign(SCENARIO[4], {
         name: "서연",
         text: "\"어? 너 여기 웬일이야? 나도 산책 나왔거든! 같이 걸을래?\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        stats: { Seoyeon: 5 },
+        stats: { Seoyeon: { affinity: 5 } },
         next: "day4_no_date_chat_seoyeon"
     },
     "day4_no_date_chat_seoyeon": {
@@ -666,7 +666,7 @@ Object.assign(SCENARIO[4], {
         name: "유나",
         text: "\"…어. 너도 혼자야? …나도.\"",
         character: "assets/images/characters/yuna_normal.png",
-        stats: { Yuna: 5 },
+        stats: { Yuna: { affinity: 5 } },
         next: "day4_no_date_chat_yuna"
     },
     "day4_no_date_chat_yuna": {
@@ -681,7 +681,7 @@ Object.assign(SCENARIO[4], {
         name: "다인",
         text: "\"엥?! 여기서 만나다니!! 나 연습 끝나고 음료수 사러 왔거든!! 같이 뭐 할래?!\"",
         character: "assets/images/characters/dain_laugh.png",
-        stats: { Dain: 5 },
+        stats: { Dain: { affinity: 5 } },
         next: "day4_no_date_chat_dain"
     },
     "day4_no_date_chat_dain": {
@@ -696,7 +696,7 @@ Object.assign(SCENARIO[4], {
         name: "보건선생님",
         text: "\"어머, 이런 데서 만나네. 나도 잠깐 산책 나온 거야. 같이 걸을까?\"",
         character: "assets/images/characters/nurse_normal.png",
-        stats: { Nurse: 5 },
+        stats: { Nurse: { affinity: 5 } },
         next: "day4_no_date_chat_nurse"
     },
     "day4_no_date_chat_nurse": {
@@ -711,7 +711,7 @@ Object.assign(SCENARIO[4], {
         name: "담임선생님",
         text: "\"…너 여기서 뭐 해? 하, 선생도 주말은 있거든. 뭐, 잠깐 차라도 마실래?\"",
         character: "assets/images/characters/teacher_normal.png",
-        stats: { Teacher: 5 },
+        stats: { Teacher: { affinity: 5 } },
         next: "day4_no_date_chat_teacher"
     },
     "day4_no_date_chat_teacher": {
@@ -724,21 +724,21 @@ Object.assign(SCENARIO[4], {
     // --- 만남 이후 공통 루트 ---
     "day4_no_date_after_encounter": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(잠시 같이 걸으며 이런저런 얘기를 나눴다. 주말이 이렇게 바뀔 줄이야.)",
         next: "day4_no_date_reflect"
     },
 
     "day4_no_date_reflect": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(약속도 없이 시작한 하루였는데… 이 우연 하나만으로도 오늘이 특별해진 기분이다.)",
         next: "day4_no_date_sunset"
     },
 
     "day4_no_date_sunset": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(어느새 노을이 번지기 시작한다. 하늘이 주황빛으로 물든다. 나쁘지 않은 하루였어.)",
         background: "assets/images/background/street.png",
         next: "day4_no_date_evening"
@@ -747,7 +747,7 @@ Object.assign(SCENARIO[4], {
     "day4_no_date_evening": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(집으로 돌아가는 길. 오늘을 떠올리면 자연스럽게 미소가 지어진다. 월요일이 기대된다.)",
         fade: true,
         next: "day4_night_start"

@@ -348,7 +348,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_2": {
         name: "나",
-        text: "(세 명의 여자친구. 말도 안 되는 현실이 눈앞에 펼쳐졌다.)",
+        text: "(여러 명의 연인. 말도 안 되는 현실이 눈앞에 펼쳐졌다.)",
         night: true,
         fade: true,
         bgm: "ending.mp3",

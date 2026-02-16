@@ -159,28 +159,28 @@ Object.assign(SCENARIO[5], {
     // ─── 키스씬 (간접 연출) ───
     "day5_true_kiss_buildup": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(바람이 분다. 석양빛에 물든 그 사람의 얼굴이, 유독 가까이 느껴진다.)",
         sunset: true,
         next: "day5_true_kiss_2"
     },
     "day5_true_kiss_2": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(서로의 눈을 바라본다. 말은 필요 없었다.)",
         sunset: true,
         next: "day5_true_kiss_3"
     },
     "day5_true_kiss_3": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(자연스럽게… 얼굴이 가까워진다.)",
         sunset: true,
         next: "day5_true_kiss_4"
     },
     "day5_true_kiss_4": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(…눈을 감았다.)",
         sunset: true,
         fade: true,
@@ -188,7 +188,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_true_kiss_5": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(부드러운 온기가 느껴졌다. 시간이 멈춘 것 같았다.)",
         sunset: true,
         fade: true,
@@ -196,7 +196,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_true_kiss_6": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(……)",
         sunset: true,
         fade: true,
@@ -204,7 +204,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_true_kiss_after": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(눈을 떴을 때, 석양빛 속에서 그 사람이 웃고 있었다. 세상에서 가장 아름다운 미소였다.)",
         sunset: true,
         next: "day5_true_evening_branch"
@@ -531,8 +531,8 @@ Object.assign(SCENARIO[5], {
     // ─── 공통: 암전 → 아침 ───
     "day5_bed_common_1": {
         name: "나",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(서로의 체온이 느껴졌다. 말없이, 자연스럽게— 거리가 사라졌다.)",
         night: true,
         fade: true,
@@ -540,8 +540,8 @@ Object.assign(SCENARIO[5], {
     },
     "day5_bed_common_2": {
         name: "나",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(……)",
         night: true,
         fade: true,
@@ -549,8 +549,8 @@ Object.assign(SCENARIO[5], {
     },
     "day5_bed_common_3": {
         name: "나",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(………………)",
         night: true,
         fade: true,
@@ -560,32 +560,32 @@ Object.assign(SCENARIO[5], {
     // ─── 다음날 아침 ───
     "day5_true_morning": {
         name: "나",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(눈을 떴다. 창문 사이로 아침 햇살이 들어오고 있었다.)",
         fade: true,
         next: "day5_true_morning_2"
     },
     "day5_true_morning_2": {
         name: "나",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(옆에서 조용히 잠든 얼굴이 보인다. 어젯밤이… 꿈이 아니었다.)",
         fade: true,
         next: "day5_true_morning_3"
     },
     "day5_true_morning_3": {
         name: "나",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(살며시 이불을 올려 덮어줬다. 이 사람의 잠든 모습을, 평생 보고 싶다고 생각했다.)",
         fade: true,
         next: "day5_true_final"
     },
     "day5_true_final": {
         name: "나",
-        background: "assets/images/background/seyoun_room.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        background: null,
+        character: null,
         text: "(이 순간을, 이 감정을, 이 온기를— 영원히 잊지 않을 거야.)",
         fade: true,
         next: "day5_ending_true"
@@ -665,7 +665,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_good_final": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(나란히 석양을 바라보며 손을 잡았다. 완벽하진 않았지만… 이게 우리의 시작이다.)",
         sunset: true,
         fade: true,
@@ -710,6 +710,39 @@ Object.assign(SCENARIO[5], {
         name: "다인",
         text: "\"야!! 나도 왔어!! 엇, 다들 왜 여기 있어?!\"",
         character: "assets/images/characters/dain_laugh.png",
+        sunset: true,
+        next: "day5_mayhem_5b"
+    },
+    "day5_mayhem_5b": {
+        name: "시스템",
+        text: "",
+        sunset: true,
+        branches: [
+            { next: "day5_mayhem_teacher_watch", condition: "day3_teacher_date_confirmed" },
+            { next: "day5_mayhem_nurse_watch", condition: "day3_nurse_date_confirmed" },
+            { next: "day5_mayhem_6" }
+        ]
+    },
+    "day5_mayhem_teacher_watch": {
+        name: "나",
+        text: "(저 멀리서 담임선생님이 이쪽을 바라보고 계신다. 표정이 복잡해 보인다.)",
+        character: "assets/images/characters/teacher_normal.png",
+        sunset: true,
+        next: "day5_mayhem_nurse_check"
+    },
+    "day5_mayhem_nurse_check": {
+        name: "시스템",
+        text: "",
+        sunset: true,
+        branches: [
+            { next: "day5_mayhem_nurse_watch", condition: "day3_nurse_date_confirmed" },
+            { next: "day5_mayhem_6" }
+        ]
+    },
+    "day5_mayhem_nurse_watch": {
+        name: "나",
+        text: "(보건선생님도 창문 너머로 이 상황을 지켜보고 있다.)",
+        character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         next: "day5_mayhem_6"
     },
@@ -1008,7 +1041,7 @@ Object.assign(SCENARIO[5], {
         sunset: true,
         stats: { Seoyeon: { affinity: 15 } },
         setFlag: "ending_good",
-        next: "day5_good_final"
+        next: "day5_late_accept_transition1"
     },
     "day5_late_accept_yuna": {
         name: "유나",
@@ -1017,7 +1050,7 @@ Object.assign(SCENARIO[5], {
         sunset: true,
         stats: { Yuna: { affinity: 15 } },
         setFlag: "ending_good",
-        next: "day5_good_final"
+        next: "day5_late_accept_transition1"
     },
     "day5_late_accept_dain": {
         name: "다인",
@@ -1026,7 +1059,7 @@ Object.assign(SCENARIO[5], {
         sunset: true,
         stats: { Dain: { affinity: 15 } },
         setFlag: "ending_good",
-        next: "day5_good_final"
+        next: "day5_late_accept_transition1"
     },
     "day5_late_accept_nurse": {
         name: "보건선생님",
@@ -1035,7 +1068,7 @@ Object.assign(SCENARIO[5], {
         sunset: true,
         stats: { Nurse: { affinity: 15 } },
         setFlag: "ending_good",
-        next: "day5_good_final"
+        next: "day5_late_accept_transition1"
     },
     "day5_late_accept_teacher": {
         name: "담임선생님",
@@ -1044,6 +1077,20 @@ Object.assign(SCENARIO[5], {
         sunset: true,
         stats: { Teacher: { affinity: 15 } },
         setFlag: "ending_good",
+        next: "day5_late_accept_transition1"
+    },
+
+    // --- 늦은 고백 전환 노드 ---
+    "day5_late_accept_transition1": {
+        name: "나",
+        text: "(한참을 서로 바라보다, 웃음이 터진다.)",
+        sunset: true,
+        next: "day5_late_accept_transition2"
+    },
+    "day5_late_accept_transition2": {
+        name: "나",
+        text: "(이렇게 간단한 건데, 왜 그렇게 오래 걸렸을까.)",
+        sunset: true,
         next: "day5_good_final"
     },
 
@@ -1111,7 +1158,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_friend_final": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(이게 맞는 선택이었을까? …모르겠다. 하지만 이것도 하나의 결말이니까.)",
         sunset: true,
         fade: true,

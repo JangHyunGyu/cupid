@@ -83,7 +83,7 @@ Object.assign(SCENARIO[1], {
     "after_home": {
         name: "Me",
         text: "(I walk through the darkened streets. The streetlights cast long shadows across the road.)",
-        background: "assets/images/background/room_my.png",
+        background: "assets/images/background/street.png",
         bgm: "night1.mp3",
         character: null,
         night: true,
@@ -92,14 +92,14 @@ Object.assign(SCENARIO[1], {
     "after_home_walk": {
         name: "Me",
         text: "(This neighborhood is starting to feel a little familiar already. Past the alley by the convenience store is my house... and I noticed that vending machine earlier too.)",
-        background: "assets/images/background/room_my.png",
+        background: "assets/images/background/street.png",
         night: true,
         next: "after_home_neighborhood"
     },
     "after_home_neighborhood": {
         name: "Me",
         text: "(A quiet residential area. The smell of dinner drifts from somewhere nearby. It's an unfamiliar neighborhood... so why does it feel so comfortable?)",
-        background: "assets/images/background/room_my.png",
+        background: "assets/images/background/street.png",
         night: true,
         next: "after_home_arrive"
     },
@@ -234,7 +234,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_diary_write_2": {
         name: "Me",
-        text: "('Seoyeon, my classmate, really looked after me. I also met the mysterious Yuna and the lively Dain. The teachers were all nice too.')",
+        text: "(Wrote in the diary. First day at the new school... Met various people. Don't know what kind of connections they'll turn into yet, but it wasn't a bad day.)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "night_diary_write_3"
@@ -265,7 +265,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_home_check_contact": {
         name: "Me",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(The people I exchanged numbers with today... who should I message first?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -348,7 +348,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_seyoun": {
         name: "Me",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(What should I write to Seoyeon?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -473,7 +473,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_yuna": {
         name: "Me",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(I sent a message to Yuna. 'I had a nice time today. Sleep well.')",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -575,7 +575,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_dain": {
         name: "Me",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(What should I write to Dain?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -696,7 +696,7 @@ Object.assign(SCENARIO[1], {
 
     "night_message_nurse": {
         name: "Me",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(I sent a message to the School Nurse. 'Thank you for today, Teacher. I was able to rest comfortably.')",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -769,7 +769,7 @@ Object.assign(SCENARIO[1], {
 
     "night_goodnight_start": {
         name: "Me",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(I set my phone down and sit up in bed. Maybe I'll open the window for a moment before I sleep.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -777,7 +777,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_window": {
         name: "Me",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(I open the window, and a cool night breeze brushes my face. A few stars are scattered across the night sky. You can see the stars so much better here than in the city.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -785,7 +785,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_sounds": {
         name: "Me",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(I can hear crickets chirping. A faint train whistle in the distance... this quiet night feels somehow peaceful.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -793,7 +793,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_think": {
         name: "Me",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(Tomorrow... Seoyeon, Yuna, Dain, and the teachers. I'll get to see them again. I wonder what stories are waiting for me.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -801,7 +801,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_goodnight_close": {
         name: "Me",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(I close the window and crawl under the covers. If I close my eyes... sleep should come soon.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -922,7 +922,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_surprise_react": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(That surprised me, but... it made me happy. I flip my phone face-down and pull up the covers. Today was truly a wonderful day.)",
         background: "assets/images/background/room_my.png",
         night: true,

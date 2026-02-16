@@ -68,7 +68,6 @@ Object.assign(SCENARIO[4], {
             { next: "day4_night_dain_gym", condition: "isDating_Dain" },
             { next: "day4_night_teacher_call", condition: "isDating_Teacher" },
             { next: "day4_night_nurse_msg", condition: "isDating_Nurse" },
-            { next: "day4_night_happy", condition: "day4_confession_accepted" },
             { next: "day4_night_regret", condition: "day4_waited" },
             { next: "day4_night_reflect" }
         ]
@@ -1699,7 +1698,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_open": {
         name: "담임선생님",
         background: "assets/images/background/cafe.png",
-        text: "\"…오늘 교무회의에서 교감 선생님이 그러시더라. '학생과 개인적으로 친하게 지내는 건 조심해야 한다'고.\"",
+        text: "\"…어제 교무회의에서 교감 선생님이 그러시더라. '학생과 개인적으로 친하게 지내는 건 조심해야 한다'고.\"",
         character: "assets/images/characters/teacher_sad.png",
         night: true,
         next: "day4_night_teacher_open_2"
@@ -2069,7 +2068,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_farewell_5": {
         name: "담임선생님",
         background: "assets/images/background/street.png",
-        text: "\"…내일 학교에서 보면 또 '선생님' 모드로 돌아갈게. 미리 사과할게, 쌀쌀맞아도 이해해줘.\"",
+        text: "\"…다음에 학교에서 보면 또 '선생님' 모드로 돌아갈게. 미리 사과할게, 쌀쌀맞아도 이해해줘.\"",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day4_night_teacher_farewell_6"
@@ -2569,7 +2568,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_farewell_5": {
         name: "보건선생님",
         background: "assets/images/background/street.png",
-        text: "\"…내일 학교에서 보면 또 평소처럼 굴 거야. 근데 눈은 속이지 못할걸.\"",
+        text: "\"…다음에 학교에서 보면 또 평소처럼 굴 거야. 근데 눈은 속이지 못할걸.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_farewell_6"
@@ -2602,34 +2601,6 @@ Object.assign(SCENARIO[4], {
 
     // =========================================================================
     // 고백 성공 루트
-    // =========================================================================
-    "day4_night_happy": {
-        name: "나",
-        text: "(…아직도 믿기지 않는다. 나한테도 이런 날이 올 줄이야.)",
-        night: true,
-        next: "day4_night_happy_2"
-    },
-    "day4_night_happy_2": {
-        name: "나",
-        text: "(손을 잡았을 때의 온기, 웃어주던 얼굴, \"나도 좋아해\"라는 말… 전부 꿈만 같다.)",
-        night: true,
-        next: "day4_night_happy_msg"
-    },
-    "day4_night_happy_msg": {
-        name: "나",
-        text: "(핸드폰에 메시지가 왔다. \"오늘 정말 행복했어. 내일도 만나자. 🌙\")",
-        night: true,
-        next: "day4_night_happy_reply"
-    },
-    "day4_night_happy_reply": {
-        name: "나",
-        text: "(\"나도. 내일 꼭 만나자.\" 라고 답장을 보냈다. 심장이 아직도 뛰고 있다.)",
-        night: true,
-        next: "day4_night_sleep"
-    },
-
-    // =========================================================================
-    // 고백 보류 루트
     // =========================================================================
     "day4_night_regret": {
         name: "나",

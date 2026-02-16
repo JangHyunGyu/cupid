@@ -646,7 +646,7 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "응, 좋아. 너에 대해 모든 걸 알고 싶어.", next: "day2_yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
-            { text: "미안, 아직은 좀 조심스러워.", next: "day2_yuna_contact_fail", stats: { Yuna: { affinity: -30 } } }
+            { text: "미안, 아직은 좀 조심스러워.", next: "day2_yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
         ]
     },
     "day2_yuna_contact_success": {
@@ -815,7 +815,7 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "응, 당연하지! 여기 내 번호야.", next: "day2_dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
-            { text: "우리 어차피 내일 학교에서 볼 거잖아?", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -20 } } }
+            { text: "우리 어차피 내일 학교에서 볼 거잖아?", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -15 } } }
         ]
     },
     "day2_dain_contact_success": {

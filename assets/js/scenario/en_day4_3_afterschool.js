@@ -313,7 +313,7 @@ Object.assign(SCENARIO[4], {
     // --- Common Merge ---
     "day4_afternoon_special": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(It was a special time together. \"Hey, want to head to the riverside park?\" My companion suggested it first.)",
         background: "assets/images/background/park.png",
         sunset: true,
@@ -327,7 +327,7 @@ Object.assign(SCENARIO[4], {
     "day4_afternoon_park": {
         name: "Me",
         background: "assets/images/background/park.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(We arrived at the riverside park. The sunset was sparkling on the water. It looked like a scene straight out of a movie.)",
         next: "day4_sunset_approach"
     },
@@ -335,7 +335,7 @@ Object.assign(SCENARIO[4], {
     "day4_sunset_approach": {
         name: "Me",
         background: "assets/images/background/park.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(We walked slowly along the riverbank. The sunset light shimmered across the water, painting golden ripples. Time seemed to slow down.)",
         sunset: true,
         next: "day4_sunset_colors"
@@ -344,7 +344,7 @@ Object.assign(SCENARIO[4], {
     "day4_sunset_colors": {
         name: "Me",
         background: "assets/images/background/park.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(The sky shifted from orange to pink, and then to violet. I don't think I've ever seen a sky this beautiful in my entire life.)",
         sunset: true,
         next: "day4_sunset_wind"
@@ -353,7 +353,7 @@ Object.assign(SCENARIO[4], {
     "day4_sunset_wind": {
         name: "Me",
         background: "assets/images/background/park.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(A warm breeze brushed past us. The wind from the river carried the scent of grass and water. The gentle sound of flowing water played like background music.)",
         sunset: true,
         next: "day4_sunset_stare"
@@ -419,7 +419,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_afternoon_sunset": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(The sunset was illuminating their face. Strangely, I couldn't find any words to say.)",
         bgm: "confession.mp3",
         sunset: true,
@@ -428,7 +428,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_afternoon_silence": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(……)",
         sunset: true,
         next: "day4_afternoon_feeling"
@@ -436,7 +436,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_afternoon_feeling": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(I think I finally know what this feeling is. From the very first day I transferred here until now… I've been feeling it all along.)",
         sunset: true,
         next: "day4_confession_choice"
@@ -448,7 +448,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confession_choice": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(Right now, in this moment… should I tell them how I feel?)",
         sunset: true,
         choices: [
@@ -471,7 +471,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "\"The truth is… ever since I transferred here, all I've thought about every day is you.\"",
         sunset: true,
         next: "day4_confess_heartbeat"
@@ -479,7 +479,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_heartbeat": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(My heart was pounding like crazy. Thump, thump, thump. Can they hear it too?)",
         sunset: true,
         next: "day4_confess_2"
@@ -487,7 +487,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_2": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "\"At first, I just thought you were a good person… but now I'm sure.\"",
         sunset: true,
         next: "day4_confess_breathe"
@@ -495,7 +495,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_breathe": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(I took a deep breath. I clenched my fists. If not now… I'll regret it for the rest of my life.)",
         sunset: true,
         next: "day4_confess_3"
@@ -503,7 +503,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_3": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "\"I… I like you.\"",
         sunset: true,
         next: "day4_confess_silence"
@@ -511,7 +511,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_silence": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(As soon as the words left my mouth, silence fell. The world bathed in the sunset's glow seemed to stop. Every second felt like an hour.)",
         sunset: true,
         next: "day4_confess_response"
@@ -717,7 +717,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_after_confess": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy2.png",
+        character: null,
         text: "(Beneath the sunset, our two shadows merged into one. It was the happiest moment in the world.)",
         sunset: true,
         fade: true,
@@ -730,7 +730,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "\"…This view is really beautiful.\"",
         sunset: true,
         next: "day4_wait_conflict"
@@ -738,7 +738,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_conflict": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(The words I wanted to say rose all the way to the tip of my tongue… but I swallowed them back down. Not yet… it's not the right time yet.)",
         sunset: true,
         next: "day4_wait_walk"
@@ -746,7 +746,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_walk": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(We walked side by side along the riverbank. Neither of us said a word, but strangely, the silence wasn't uncomfortable at all.)",
         sunset: true,
         next: "day4_wait_talk"
@@ -754,7 +754,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_talk": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "\"…Today was really fun. Thank you.\"",
         sunset: true,
         next: "day4_wait_linger"
@@ -762,7 +762,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_linger": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(We'd have to part ways at the crosswalk up ahead. I never knew taking a single step could be this hard.)",
         sunset: true,
         next: "day4_wait_feelings"
@@ -770,7 +770,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_feelings": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(The words I swallowed earlier came surging back up. 'I like you.' Those three words were pounding against the walls of my heart.)",
         sunset: true,
         next: "day4_wait_response"
@@ -836,7 +836,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_goodbye": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(We said our goodbyes and I turned to walk away. I wanted to look back… but I held myself back.)",
         sunset: true,
         next: "day4_wait_regret"
@@ -844,7 +844,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_regret": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(I couldn't help it anymore and looked back. They had turned around too. The moment our eyes met, we both quickly looked away.)",
         sunset: true,
         next: "day4_wait_home"
@@ -852,7 +852,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_home": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(On the way home. The words I couldn't say today sat heavy in a corner of my chest. 'Next time… I'll definitely say it. I have to.')",
         sunset: true,
         next: "day4_wait_end"
@@ -860,7 +860,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_wait_end": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(In my heart… the unspoken words lingered.)",
         sunset: true,
         fade: true,

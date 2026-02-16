@@ -398,19 +398,19 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_morning_ready": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(이제 준비를 해야 한다. 옷장 앞에 섰다.)",
         next: "day5_morning_closet"
     },
     "day5_morning_closet": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(일요일이니까 교복은 안 입어도 되는데… 뭘 입을까.)",
         next: "day5_outfit_choice"
     },
     "day5_outfit_choice": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(오늘 뭘 입고 나갈까?)",
         choices: [
             {
@@ -427,31 +427,31 @@ Object.assign(SCENARIO[5], {
     },
     "day5_outfit_casual": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(깨끗한 셔츠에 청바지. 편하면서도 단정한 느낌이다. 역시 자연스러운 게 나답지.)",
         next: "day5_breakfast"
     },
     "day5_outfit_special": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(평소보다 좀 더 신경 써서 골랐다. 거울 앞에서 한 번 더 확인한다. …괜찮은 것 같다.)",
         next: "day5_breakfast"
     },
     "day5_breakfast": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(간단하게 토스트를 구워 먹었다. 일요일 아침, 조용한 부엌. 밖에서 새소리가 들린다.)",
         next: "day5_outfit_check"
     },
     "day5_outfit_check": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(거울 속 내 모습을 마지막으로 확인한다. 전학 첫날과는 확실히 다른 눈빛이다.)",
         next: "day5_morning_items"
     },
     "day5_morning_items": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(지갑, 핸드폰, 열쇠. 준비 완료. 현관문 앞에 섰다.)",
         next: "day5_morning_depart"
     },
@@ -461,7 +461,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_morning_depart": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(문을 열고 밖으로 나섰다. 봄바람이 기분 좋게 불어온다.)",
         background: "assets/images/background/street.png",
         fade: true,
@@ -632,13 +632,13 @@ Object.assign(SCENARIO[5], {
     // --- 커플 공통 ---
     "day5_walk_couple_common": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(나란히 걸으며 지난 며칠간의 이야기를 나누었다. 처음 만났을 때 이야기, 웃겼던 일들, 가슴 뛰었던 순간들.)",
         next: "day5_walk_couple_common2"
     },
     "day5_walk_couple_common2": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(어느새 학교가 보이기 시작했다. 작별이 아쉬울 줄 알았는데, 오늘은 함께하는 하루의 시작이다.)",
         next: "day5_arrive_start"
     },
@@ -721,7 +721,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_arrive_start": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(학교 정문 앞에 섰다.)",
         background: "assets/images/background/school.png",
         next: "day5_arrive_nostalgia"
@@ -729,21 +729,21 @@ Object.assign(SCENARIO[5], {
     "day5_arrive_nostalgia": {
         name: "나",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(이 정문… 5일 전, 처음 이 학교에 왔을 때도 이 자리에 섰었다.)",
         next: "day5_arrive_firstday"
     },
     "day5_arrive_firstday": {
         name: "나",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(그때는 모든 게 낯설었다. 새로운 학교, 새로운 교실, 모르는 얼굴들. 긴장으로 발이 떨어지지 않았는데.)",
         next: "day5_arrive_now"
     },
     "day5_arrive_now": {
         name: "나",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(지금은 다르다. 이곳에 내가 아는 사람들이 있고, 내가 돌아올 곳이 있다. 정문을 지나 안으로 들어갔다.)",
         fade: true,
         next: "day5_school_arrive"
