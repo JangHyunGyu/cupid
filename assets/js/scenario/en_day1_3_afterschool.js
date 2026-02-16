@@ -1012,7 +1012,7 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_normal.png",
         sunset: true,
-        stats: { Dain: { affinity: -30 } },
+        stats: { Dain: { affinity: -5 } },
         next: "after_home"
     },
     "after_nurse": {

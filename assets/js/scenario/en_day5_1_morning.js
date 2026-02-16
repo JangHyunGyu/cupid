@@ -398,19 +398,19 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_morning_ready": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(Time to get ready. I stood in front of my closet.)",
         next: "day5_morning_closet"
     },
     "day5_morning_closet": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(It's Sunday, so I don't have to wear the school uniform... but what should I wear?)",
         next: "day5_outfit_choice"
     },
     "day5_outfit_choice": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(What should I wear today?)",
         choices: [
             {
@@ -427,31 +427,31 @@ Object.assign(SCENARIO[5], {
     },
     "day5_outfit_casual": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(A crisp shirt and jeans. Comfortable yet neat. Yeah, keeping it natural is more my style.)",
         next: "day5_breakfast"
     },
     "day5_outfit_special": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(I picked my outfit more carefully than usual. One last check in the mirror. ...Looks good, I think.)",
         next: "day5_breakfast"
     },
     "day5_breakfast": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(I made some quick toast and ate. A quiet kitchen on a Sunday morning. I can hear birds singing outside.)",
         next: "day5_outfit_check"
     },
     "day5_outfit_check": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(One final look at myself in the mirror. My eyes are definitely different from the first day I transferred.)",
         next: "day5_morning_items"
     },
     "day5_morning_items": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(Wallet, phone, keys. All set. I stood at the front door.)",
         next: "day5_morning_depart"
     },
@@ -461,7 +461,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_morning_depart": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(I opened the door and stepped outside. A pleasant spring breeze greeted me.)",
         background: "assets/images/background/street.png",
         fade: true,
@@ -632,13 +632,13 @@ Object.assign(SCENARIO[5], {
     // --- Couple Common ---
     "day5_walk_couple_common": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(Walking side by side, we talked about everything that happened the past few days. How we first met, the funny moments, the times our hearts raced.)",
         next: "day5_walk_couple_common2"
     },
     "day5_walk_couple_common2": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(Before I knew it, the school came into view. I thought I'd dread saying goodbye, but today marks the beginning of a day we're spending together.)",
         next: "day5_arrive_start"
     },
@@ -721,7 +721,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_arrive_start": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(I stood in front of the school gate.)",
         background: "assets/images/background/school.png",
         next: "day5_arrive_nostalgia"
@@ -729,21 +729,21 @@ Object.assign(SCENARIO[5], {
     "day5_arrive_nostalgia": {
         name: "Me",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(This gate... Five days ago, when I first came to this school, I stood in this exact spot.)",
         next: "day5_arrive_firstday"
     },
     "day5_arrive_firstday": {
         name: "Me",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(Back then, everything was unfamiliar. A new school, a new classroom, faces I didn't recognize. I was so nervous my feet wouldn't move.)",
         next: "day5_arrive_now"
     },
     "day5_arrive_now": {
         name: "Me",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(Now it's different. There are people I know here, and a place I can come back to. I walked past the gate and headed inside.)",
         fade: true,
         next: "day5_school_arrive"

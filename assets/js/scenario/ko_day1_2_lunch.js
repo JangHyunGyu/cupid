@@ -157,7 +157,7 @@ Object.assign(SCENARIO[1], {
     "rooftop_1_2": {
         name: "서연",
         background: "assets/images/background/top_school.png",
-        text: "\"짜잔! 직접 만든 도시락이야. 사실... {name}, 네 입맛에 맞을지 몰라서 좀 걱정했어.\"",
+        text: "\"직접 만든 도시락인데 양이 좀 많아서... 같이 먹을래? 전학 온 첫날이라 학교 매점도 잘 모를 테니까.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_1_3"
     },
@@ -918,10 +918,7 @@ Object.assign(SCENARIO[1], {
         text: "\"어머, 처음 보는 얼굴이네? 우리 학교에 이렇게 귀여운 학생이 있었나?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
-        branches: [
-            { next: "nurse_intro", excludeCondition: "knows_name_nurse" },
-            { next: "nurse_name_share_pre", condition: "knows_name_nurse" }
-        ]
+        next: "nurse_intro"
     },
     "nurse_intro": {
         name: "보건선생님",

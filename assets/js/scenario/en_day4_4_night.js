@@ -68,7 +68,6 @@ Object.assign(SCENARIO[4], {
             { next: "day4_night_dain_gym", condition: "isDating_Dain" },
             { next: "day4_night_teacher_call", condition: "isDating_Teacher" },
             { next: "day4_night_nurse_msg", condition: "isDating_Nurse" },
-            { next: "day4_night_happy", condition: "day4_confession_accepted" },
             { next: "day4_night_regret", condition: "day4_waited" },
             { next: "day4_night_reflect" }
         ]
@@ -1699,7 +1698,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_open": {
         name: "Homeroom Teacher",
         background: "assets/images/background/cafe.png",
-        text: "\"...At the faculty meeting today, the vice principal said, 'Be careful about getting too personally close to students.'\"",
+        text: "\"...At the faculty meeting yesterday, the vice principal said, 'Be careful about getting too personally close to students.'\"",
         character: "assets/images/characters/teacher_sad.png",
         night: true,
         next: "day4_night_teacher_open_2"
@@ -2069,7 +2068,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_farewell_5": {
         name: "Homeroom Teacher",
         background: "assets/images/background/street.png",
-        text: "\"...At school tomorrow, I'll be back in 'teacher mode.' I apologize in advance if I seem cold—please understand.\"",
+        text: "\"...When we see each other at school again, I'll be back in 'teacher mode.' I apologize in advance if I seem cold—please understand.\"",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day4_night_teacher_farewell_6"
@@ -2569,7 +2568,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_farewell_5": {
         name: "School Nurse",
         background: "assets/images/background/street.png",
-        text: "\"...At school tomorrow, I'll act normal again. But my eyes won't be able to hide it.\"",
+        text: "\"...When we see each other at school again, I'll act normal. But my eyes won't be able to hide it.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_farewell_6"
@@ -2602,34 +2601,6 @@ Object.assign(SCENARIO[4], {
 
     // =========================================================================
     // 고백 성공 루트
-    // =========================================================================
-    "day4_night_happy": {
-        name: "Me",
-        text: "(...I still can't believe it. I never thought a day like this would come for me.)",
-        night: true,
-        next: "day4_night_happy_2"
-    },
-    "day4_night_happy_2": {
-        name: "Me",
-        text: "(The warmth of holding hands, the smiling face, the words 'I like you too'... It all feels like a dream.)",
-        night: true,
-        next: "day4_night_happy_msg"
-    },
-    "day4_night_happy_msg": {
-        name: "Me",
-        text: "(A message came on my phone. \"I was so happy today. Let's meet again tomorrow. 🌙\")",
-        night: true,
-        next: "day4_night_happy_reply"
-    },
-    "day4_night_happy_reply": {
-        name: "Me",
-        text: "(I replied \"Me too. Let's definitely meet tomorrow.\" My heart is still racing.)",
-        night: true,
-        next: "day4_night_sleep"
-    },
-
-    // =========================================================================
-    // 고백 보류 루트
     // =========================================================================
     "day4_night_regret": {
         name: "Me",

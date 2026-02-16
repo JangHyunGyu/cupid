@@ -160,7 +160,7 @@ Object.assign(SCENARIO[1], {
     "rooftop_1_2": {
         name: "Seoyeon",
         background: "assets/images/background/top_school.png",
-        text: "\"Ta-da! I made this lunch box myself. Actually... {name}, I was a bit worried if it would suit your taste.\"",
+        text: "\"I made a bento but there's too much... Want to share? Since it's your first day, you probably don't know the cafeteria well.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "rooftop_1_3"
     },
@@ -914,10 +914,7 @@ Object.assign(SCENARIO[1], {
         text: "\"Oh my, a face I haven't seen before? Was there such a cute student in our school?\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
-        branches: [
-            { next: "nurse_intro", excludeCondition: "knows_name_nurse" },
-            { next: "nurse_name_share_pre", condition: "knows_name_nurse" }
-        ]
+        next: "nurse_intro"
     },
     "nurse_intro": {
         name: "School Nurse",

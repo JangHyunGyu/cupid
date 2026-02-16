@@ -646,7 +646,7 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "Sure. I want to know everything about you.", next: "day2_yuna_contact_success", setFlags: ["has_number_yuna", "has_any_contact"] },
-            { text: "Sorry, I'm still a bit cautious.", next: "day2_yuna_contact_fail", stats: { Yuna: { affinity: -30 } } }
+            { text: "Sorry, I'm still a bit cautious.", next: "day2_yuna_contact_fail", stats: { Yuna: { affinity: -15 } } }
         ]
     },
     "day2_yuna_contact_success": {
@@ -815,7 +815,7 @@ Object.assign(SCENARIO[2], {
         sunset: true,
         choices: [
             { text: "Sure! It'll be fun to explore food places with you.", next: "day2_dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
-            { text: "Hmm.. maybe next time.", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -20 } } }
+            { text: "Hmm.. maybe next time.", next: "day2_dain_contact_fail", stats: { Dain: { affinity: -15 } } }
         ]
     },
     "day2_dain_contact_success": {

@@ -1698,7 +1698,7 @@ class DialogueSystem {
         const charKey = charName && (this.charNameMap[charName] || charName);
 
         // 이 캐릭터가 플레이어 이름을 알고 있는지 확인
-        const nameKnown = charKey && this.stateManager.getFlag(`knowsName_${charKey}`);
+        const nameKnown = charKey && this.stateManager.getFlag(`knows_name_${charKey.toLowerCase()}`);
         const defaultTitle = isEn ? "Transfer Student" : "전학생";
 
         let processedText = text;
@@ -1741,7 +1741,7 @@ class DialogueSystem {
 
         for (const [key, name] of Object.entries(charNames)) {
             // 만난 적 없는 캐릭터는 건너뛰기
-            if (!this.stateManager.getFlag("met" + key)) continue;
+            if (!this.stateManager.getFlag("met_" + key.toLowerCase())) continue;
 
             const affinity = this.stateManager.getAffinity(key);
             let bar = "";
@@ -2100,7 +2100,7 @@ class FreeTalkSystem {
 
         // 캐릭터 정보 수집
         const charKey = this.charNameMap[scene.name] || scene.name;
-        const knowsName = this.stateManager.getFlag(`knowsName_${charKey}`);
+        const knowsName = this.stateManager.getFlag(`knows_name_${charKey.toLowerCase()}`);
         const charStats = this.stateManager.stats[charKey] || { affinity: 0 };
 
         // 🔧 프롬프트 데이터 가져오기 (prompts.js에서)
@@ -2860,7 +2860,7 @@ class SceneRenderer {
                 let metAnyone = false;
 
                 for (const branch of scene.branches) {
-                    const metFlag = "met" + branch.character;
+                    const metFlag = "met_" + (branch.character || "").toLowerCase();
                     // 만난 적 있는 캐릭터만 후보에 포함
                     if (this.stateManager.getFlag(metFlag) && branch.character) {
                         metAnyone = true;
@@ -3072,12 +3072,14 @@ class SceneRenderer {
     processSceneStats(scene) {
         if (!scene.stats) return;
 
-        // { Seoyeon: { affinity: 10 }, ... } 형태
+        // { Seoyeon: { affinity: 10 }, ... } 또는 { Seoyeon: 10, ... } 형태 모두 지원
         for (const [char, stats] of Object.entries(scene.stats)) {
             const charKey = this.charNameMap[char] || char;
-            if (stats.affinity && this.stateManager.stats[charKey]) {
-                const newValue = this.stateManager.changeAffinity(charKey, stats.affinity);
-                this.uiManager.showAffinityChange(stats.affinity, charKey);
+            // 숫자 직접 지정(예: { Seoyeon: 3 }) 또는 객체 지정(예: { Seoyeon: { affinity: 3 } }) 모두 처리
+            const affinityChange = typeof stats === 'number' ? stats : stats?.affinity;
+            if (affinityChange && this.stateManager.stats[charKey]) {
+                const newValue = this.stateManager.changeAffinity(charKey, affinityChange);
+                this.uiManager.showAffinityChange(affinityChange, charKey);
                 this.galleryManager.updateMaxAffinity(charKey, newValue);
                 this.galleryManager.checkAffinityUnlock(charKey, newValue);
             }

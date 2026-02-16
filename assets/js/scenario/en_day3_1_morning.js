@@ -304,50 +304,35 @@ Object.assign(SCENARIO[3], {
         text: "(Message sent at 6 AM) 'Good morning! {name}, fighting for today too! Oh, and would you like to walk to school together? I'll wait for you in front of your house!'",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
-        branches: [
-            { next: "day3_msg_response_first", condition: "first_check" },
-            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
-        ]
+        next: "day3_msg_response_first"
     },
     "day3_msg_yuna": {
         name: "Yuna",
         text: "(Message sent at 3 AM) '...{name}. I'll wait for you at the back gate this morning. Let's go together.'",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
-        branches: [
-            { next: "day3_msg_response_first", condition: "first_check" },
-            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
-        ]
+        next: "day3_msg_response_first"
     },
     "day3_msg_dain": {
         name: "Dain",
         text: "(Message sent at 7 AM) 'Yay! {name}! Let's go to school together! Where do you live? I'll come find you! ><'",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
-        branches: [
-            { next: "day3_msg_response_first", condition: "first_check" },
-            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
-        ]
+        next: "day3_msg_response_first"
     },
     "day3_msg_nurse": {
         name: "School Nurse",
         text: "(Message sent last night at 11 PM) 'Hehe, {name}. How about walking to school together this morning? Just the two of us... 😉'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
-        branches: [
-            { next: "day3_msg_response_first_teachers", condition: "first_check" },
-            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
-        ]
+        next: "day3_msg_response_first_teachers"
     },
     "day3_msg_teacher": {
         name: "Homeroom Teacher",
         text: "(Message sent last night at 10 PM) '{name}, are you going to school early tomorrow morning? I'm going early too, would you like to walk together?'",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
-        branches: [
-            { next: "day3_msg_response_first_teachers", condition: "first_check" },
-            { next: "day3_msg_response_after_check", excludeCondition: "first_check" }
-        ]
+        next: "day3_msg_response_first_teachers"
     },
     "day3_msg_response_first": {
         name: "Me",
@@ -429,7 +414,7 @@ Object.assign(SCENARIO[3], {
     // 거절 후
     "day3_after_reject": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(Should I check other messages?)",
         choices: [
             { text: "Check other messages", next: "day3_check_more_after_reject" },
@@ -727,7 +712,7 @@ Object.assign(SCENARIO[3], {
         name: "Seoyeon",
         text: "(Seoyeon forces a smile) \"...Oh, is that so? It's fine! We can go some other time!\"",
         character: "assets/images/characters/seyoun_sad.png",
-        stats: { Seoyeon: { affinity: -30 } },
+        stats: { Seoyeon: { affinity: -15 } },
         next: "day3_arrive_school"
     },
     
@@ -858,7 +843,7 @@ Object.assign(SCENARIO[3], {
         name: "Yuna",
         text: "(Yuna's gaze turns cold) \"......\"",
         character: "assets/images/characters/yuna_bored.png",
-        stats: { Yuna: { affinity: -30 } },
+        stats: { Yuna: { affinity: -15 } },
         next: "day3_arrive_school"
     },
     "day3_walk_with_dain": {
@@ -1015,7 +1000,7 @@ Object.assign(SCENARIO[3], {
         background: "assets/images/background/school.png",
         text: "(Dain makes a disappointed face) \"Oh... I see. But if you have time later, make sure to visit!\"",
         character: "assets/images/characters/dain_sad.png",
-        stats: { Dain: { affinity: -20 } },
+        stats: { Dain: { affinity: -10 } },
         next: "day3_arrive_school"
     },
     "day3_walk_with_nurse": {

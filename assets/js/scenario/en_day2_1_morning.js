@@ -505,7 +505,7 @@ Object.assign(SCENARIO[2], {
     "day2_classroom_greet_2": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "(A few classmates greet me casually. Yesterday they looked at me with pure curiosity, but today their smiles are relaxed. I feel like I'm gradually becoming part of this school.)",
         next: "day2_classroom_settle"
     },
@@ -519,21 +519,21 @@ Object.assign(SCENARIO[2], {
     "day2_classroom_settle_2": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "\"Oh, haha... Everyone's been so nice to me.\"",
         next: "day2_classroom_settle_3"
     },
     "day2_classroom_settle_3": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "(I give a vague answer and sit down. Opening my bag to take out my textbooks... something feels off.)",
         next: "day2_classroom_2"
     },
     "day2_classroom_2": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "(As I'm settling in at my desk, I notice a small note tucked in the corner.)",
         choices: [
             { text: "Check the note.", next: "day2_check_note" }
@@ -547,7 +547,7 @@ Object.assign(SCENARIO[2], {
     "day2_check_note": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "(I carefully unfold the note. The handwriting is neat yet somehow cold.)",
         next: "day2_note_content"
     },
@@ -560,35 +560,35 @@ Object.assign(SCENARIO[2], {
     "day2_note_reaction": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "(Yuna...? I read the note again. 'The courtyard behind the library annex'... that's a secluded spot at school. Summoning me with a note like this — it feels secretive.)",
         next: "day2_note_speculation"
     },
     "day2_note_speculation": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "(What could she possibly want to say that she'd leave a note like this? If I had her number, I could just ask her directly... but a note — that somehow feels very like her.)",
         next: "day2_note_speculation_2"
     },
     "day2_note_speculation_2": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "(Is there anyone who might know about Yuna? I discreetly glance around. But I don't think I should mention the note to just anyone.)",
         next: "day2_note_speculation_3"
     },
     "day2_note_speculation_3": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "(I carefully fold the note and slip it into my pocket. I can't wait for lunch already... or maybe 'nervous' is more accurate.)",
         next: "day2_note_ask_around"
     },
     "day2_note_ask_around": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "(I casually ask the person sitting next to me.) \"Hey, do you know anyone named Yuna?\"",
         next: "day2_note_ask_around_2"
     },
@@ -602,7 +602,7 @@ Object.assign(SCENARIO[2], {
     "day2_note_ask_around_3": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        character: "assets/images/characters/yuna_smile.png",
+        character: null,
         text: "(As expected, nobody knows. Just the name 'Yuna' isn't enough to go on. I'll just have to go there myself at lunch.)",
         next: "day2_homeroom_start"
     },

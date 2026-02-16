@@ -348,7 +348,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_2": {
         name: "Me",
-        text: "(Three girlfriends. An impossible reality unfolded before my eyes.)",
+        text: "(Multiple lovers. An impossible reality unfolded before my eyes.)",
         night: true,
         fade: true,
         bgm: "ending.mp3",

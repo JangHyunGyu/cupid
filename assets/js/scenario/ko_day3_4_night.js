@@ -502,7 +502,7 @@ Object.assign(SCENARIO[3], {
     // =========================================================================
     "day3_night_back_to_messages": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(다른 메시지도 확인할까?)",
         night: true,
         choices: [
@@ -558,7 +558,7 @@ Object.assign(SCENARIO[3], {
     // =========================================================================
     "day3_night_sleep": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(눈이 감기려는 순간… 스마트폰이 울린다. 전화다.)",
         night: true,
         branches: [
@@ -652,7 +652,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_end": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(전화를 끊고 스마트폰을 내려놓았다. 귀에 남은 목소리의 여운이… 심장을 뛴다.)",
         night: true,
         fade: true,
@@ -660,7 +660,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_sleep_2": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(눈이 감긴다. 내일은 토요일… 어떤 하루가 될까.)",
         night: true,
         fade: true,
@@ -668,7 +668,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_sleep_final": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(여러 약속들이 머릿속을 맴돈다. 모두를 만족시킬 수 있을까...?)",
         night: true,
         branches: [

@@ -440,7 +440,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_back_to_messages": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(Should I check other messages?)",
         night: true,
         choices: [
@@ -484,7 +484,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_sleep": {
         name: "Me",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(Just as my eyes are closing... my phone rings. A call.)",
         night: true,
         branches: [
@@ -578,7 +578,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_end": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(I hang up and put down my phone. The lingering echo of her voice... makes my heart race.)",
         night: true,
         fade: true,
@@ -586,7 +586,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_sleep_2": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(My eyes are closing. Tomorrow is Saturday... What kind of day will it be.)",
         night: true,
         fade: true,
@@ -594,7 +594,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_sleep_final": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(Multiple plans swirl through my mind. Can I satisfy everyone...?)",
         night: true,
         branches: [

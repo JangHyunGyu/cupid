@@ -430,7 +430,6 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "(Yuna gently interlocks her fingers with mine. I can feel her heart through her warm hand.)",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_high"
     },
     "day2_yuna_secret_2_high": {
@@ -438,7 +437,7 @@ Object.assign(SCENARIO[2], {
         text: "\"I think... you're the one who can share this burden with me. {name}, will you follow me? The world ahead is different from what you know.\"",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "I'll be with you. Let's see it together.", next: "day2_yuna_secret_read_high", stats: { Yuna: { affinity: 20 } } },
+            { text: "I'll be with you. Let's see it together.", next: "day2_yuna_secret_read_high", stats: { Yuna: { affinity: 20 } }, setFlag: "visited_warehouse_at_lunch" },
             { text: "I'm sorry, I can't handle this yet.", next: "day2_yuna_secret_stop_high", stats: { Yuna: { affinity: -10 } } }
         ]
     },
@@ -446,7 +445,6 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "(Yuna grabs my sleeve and pulls me forward.)",
         character: "assets/images/characters/yuna_normal.png",
-        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_low"
     },
     "day2_yuna_secret_2_low": {
@@ -454,7 +452,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Just watch. Not like you'll understand, but you're here already. Don't get in my way.\"",
         character: "assets/images/characters/yuna_normal.png",
         choices: [
-            { text: "Show me. What is it?", next: "day2_yuna_secret_read_low", stats: { Yuna: { affinity: 5 } } },
+            { text: "Show me. What is it?", next: "day2_yuna_secret_read_low", stats: { Yuna: { affinity: 5 } }, setFlag: "visited_warehouse_at_lunch" },
             { text: "I'm out. This is too dangerous.", next: "day2_yuna_secret_stop_low", stats: { Yuna: { affinity: -20 } } }
         ]
     },
@@ -462,7 +460,6 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "(Yuna leads me toward the old warehouse. Her cold touch makes me shiver.)",
         character: "assets/images/characters/yuna_smile.png",
-        setFlag: "visited_warehouse_at_lunch",
         next: "day2_yuna_secret_2_normal"
     },
     "day2_yuna_secret_2_normal": {
@@ -470,7 +467,7 @@ Object.assign(SCENARIO[2], {
         text: "\"Inside are records the school has hidden for a long time. Once you see them... everything will change.\"",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
-            { text: "Can I see them too?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } } },
+            { text: "Can I see them too?", next: "day2_yuna_secret_read", stats: { Yuna: { affinity: 15 } }, setFlag: "visited_warehouse_at_lunch" },
             { text: "Is it safe? Maybe we should leave it.", next: "day2_yuna_secret_stop", stats: { Yuna: { affinity: -20 } } },
             { text: "Why are you doing this, Yuna?", next: "day2_yuna_secret_why", stats: { Yuna: { affinity: 3 } } }
         ]
@@ -1238,7 +1235,7 @@ Object.assign(SCENARIO[2], {
                     { minAffinity: 40, next: "nurse_contact_home_success" }
                 ]
             },
-            { text: "Ah, I'm okay.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -20 } } }
+            { text: "Ah, I'm okay.", next: "nurse_contact_fail", stats: { Nurse: { affinity: -15 } } }
         ]
     },
     "nurse_contact_success_high": {

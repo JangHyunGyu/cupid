@@ -397,7 +397,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_message_seyoun": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(What should I text Seoyeon?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -485,7 +485,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_message_yuna": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(What should I text Yuna?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -565,7 +565,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_message_dain": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(What should I text Dain?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -671,7 +671,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_message_nurse": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(What should I text the School Nurse?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -751,7 +751,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_message_teacher": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(I sent the Homeroom Teacher a message. 'Thank you for your hard work today, ma'am. Good night.')",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -812,7 +812,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_goodnight_start": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(I set my phone down and walk over to the window. Before falling asleep, I just want to take in this night for a moment.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -820,7 +820,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_goodnight_stars": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(Opening the window, cold night air rushes in. Stars are scattered across the sky above. They seem even brighter than yesterday... Yuna's mention of 'the third star' crosses my mind.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -828,7 +828,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_goodnight_sounds": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(The chirping of insects continues endlessly. A car horn sounds once from somewhere far away, then silence returns. The nights in this neighborhood... are really quiet.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -836,7 +836,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_goodnight_tomorrow": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(Tomorrow will already be my third day since transferring. Seoyeon, Yuna, Dain, the teachers... How will my relationships with them change? A strange flutter of anticipation and anxiety fills my chest.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -844,7 +844,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_goodnight_close": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(I close the window and draw the curtains. I burrow into my blanket and shut my eyes. Good job today, me...)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -857,7 +857,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_dream_start": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(My consciousness fades into a haze... I'm standing in a space where I can't tell if it's a dream or reality. It looks like the school rooftop, or maybe some unknown garden.)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -872,7 +872,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_dream_end": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(I reach out my hand, but nothing is there. The voice slowly fades away... and my consciousness sinks into a deep, deep sleep.)",
         background: "assets/images/background/room_my.png",
         night: true,

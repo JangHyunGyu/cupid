@@ -343,7 +343,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_afternoon_transition": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         text: "(As I'm about to leave through the school gate...)",
         background: "assets/images/background/school.png",
         sunset: true,
@@ -419,7 +419,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_afternoon_seoyeon_walk": {
         name: "Me",
-        character: "assets/images/characters/yuna_normal.png",
+        character: null,
         text: "\"Seoyeon, let's go together.\"",
         sunset: true,
         stats: { Seoyeon: { affinity: 5 } },
@@ -602,7 +602,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_talk_walk": {
         name: "Me",
-        character: "assets/images/characters/seyoun_sad.png",
+        character: null,
         text: "(Walking with Yuna down a quiet path. She doesn't say much, but the atmosphere is comfortable.)",
         background: "assets/images/background/school.png",
         sunset: true,
@@ -611,7 +611,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_cat": {
         name: "Me",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/seyoun_sad.png",
+        character: null,
         text: "(A small cat is curled up by the roadside. Yuna suddenly stops.)",
         sunset: true,
         next: "day3_afternoon_yuna_cat_2"
@@ -733,7 +733,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_afternoon_dain_walk": {
         name: "Me",
-        character: "assets/images/characters/yuna_normal.png",
+        character: null,
         text: "\"Dain, let's walk together.\"",
         sunset: true,
         stats: { Dain: { affinity: 5 } },
@@ -892,7 +892,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_alone_walk": {
         name: "Me",
-        character: "assets/images/characters/teacher_smile.png",
+        character: null,
         text: "(I head home alone. I wonder what tomorrow will bring...)",
         background: "assets/images/background/school.png",
         sunset: true,

@@ -409,7 +409,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_date_walk": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(나란히 걸으며 이런저런 이야기를 나눴다. 학교에서와는 다른, 편안한 분위기.)",
         background: "assets/images/background/street.png",
         next: "day4_date_talk_1"
@@ -418,7 +418,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_talk_1": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(평소에는 할 수 없었던 이야기들… 좋아하는 음악, 어릴 때 꿈, 사소한 취미.)",
         next: "day4_date_talk_2"
     },
@@ -426,7 +426,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_talk_2": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(이야기를 나눌수록 마음이 가까워지는 게 느껴진다. 이 시간이 영원했으면 좋겠다.)",
         next: "day4_date_weather"
     },
@@ -438,7 +438,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_weather": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(바람이 살랑살랑 분다. 하늘에는 솜사탕 같은 구름이 천천히 흘러간다.)",
         next: "day4_date_surroundings"
     },
@@ -446,7 +446,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_surroundings": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(거리에는 우리 같은 커플들이 여기저기 보인다. 문득 '우리도 저렇게 보일까?' 하는 생각이 든다.)",
         next: "day4_date_time_pass"
     },
@@ -454,7 +454,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_time_pass": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(시간이 어떻게 흘러가는지 모르겠다. 핸드폰을 꺼내 시간을 확인하니 벌써 한 시간이 지나 있었다.)",
         next: "day4_date_sunshine"
     },
@@ -462,7 +462,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_sunshine": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: null,
         text: "(햇살이 나뭇잎 사이로 쏟아져 내린다. 옆에 걷는 사람의 얼굴에 빛이 내려앉는 게… 예쁘다.)",
         next: "day4_date_activity_branch"
     },
@@ -671,7 +671,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_activity_converge": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(시간이 정말 빠르게 흘렀다. 어느새 점심시간이 다 됐다.)",
         background: "assets/images/background/street.png",
         next: "day4_date_lunch"
@@ -683,7 +683,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_date_lunch": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(근처 예쁜 카페에 들어갔다. 창가 자리에 마주 앉으니 더 설레는 건 기분 탓일까.)",
         background: "assets/images/background/cafe.png",
         next: "day4_lunch_menu"
@@ -692,7 +692,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_menu": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(메뉴판을 들여다본다. 파스타, 샌드위치, 브런치 세트… 뭘 시킬까.)",
         next: "day4_lunch_order"
     },
@@ -700,7 +700,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_order": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "\"나는 파스타로 할게. 너는?\"",
         next: "day4_lunch_order_react"
     },
@@ -708,7 +708,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_order_react": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(상대방도 메뉴를 골랐다. 주문을 하고 나니 어색한 침묵이 잠깐 흐른다.)",
         next: "day4_lunch_awkward"
     },
@@ -716,7 +716,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_awkward": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(뭔가 이야기를 꺼내야 할 것 같은데… 이럴 때 뭘 얘기해야 자연스러울까.)",
         next: "day4_lunch_funny"
     },
@@ -724,7 +724,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_funny": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(음식이 나왔다. 내가 시킨 파스타가 생각보다 양이 엄청 많다. 상대방이 그걸 보고 웃음을 참지 못한다.)",
         next: "day4_lunch_funny_react"
     },
@@ -732,7 +732,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_funny_react": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "\"왜 웃어! 이 정도는 거뜬하다고!\"",
         next: "day4_lunch_share"
     },
@@ -740,7 +740,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_share": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(결국 서로 음식을 나눠 먹게 됐다. 같은 접시에서 포크가 부딪힐 때마다 괜히 웃음이 난다.)",
         next: "day4_date_lunch_talk"
     },
@@ -748,7 +748,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_lunch_talk": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(이야기꽃이 피었다. 같이 웃고, 같이 고민하고… 이런 게 행복이구나.)",
         next: "day4_lunch_learn"
     },
@@ -756,7 +756,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_learn": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(대화를 하면 할수록 몰랐던 면을 알게 된다. 좋아하는 계절, 싫어하는 음식, 어릴 때 별명… 사소한 것들이 소중하게 느껴진다.)",
         next: "day4_date_lunch_choice"
     },
@@ -768,7 +768,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_lunch_choice": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(뭔가 더 특별한 이야기를 꺼내볼까?)",
         choices: [
             {
@@ -786,7 +786,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_honest": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "\"새로운 환경이 무서웠는데… 덕분에 이젠 매일이 기대돼.\"",
         next: "day4_date_honest_react"
     },
@@ -794,7 +794,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_honest_react": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(상대방이 조용히 내 이야기를 들어주었다. 진심이 통한 걸까, 따뜻한 눈빛으로 고개를 끄덕인다.)",
         stats: { Seoyeon: { affinity: 3 }, Yuna: { affinity: 3 }, Dain: { affinity: 3 }, Nurse: { affinity: 3 }, Teacher: { affinity: 3 } },
         next: "day4_date_response"
@@ -803,7 +803,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_grateful": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "\"특히… 지금 이 순간이 가장 좋아.\"",
         next: "day4_date_grateful_react"
     },
@@ -811,7 +811,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_grateful_react": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(상대방이 살짝 눈을 피하며 미소를 짓는다. 분명 기뻐하는 것 같다.)",
         next: "day4_date_response"
     },
@@ -823,14 +823,14 @@ Object.assign(SCENARIO[4], {
     "day4_date_response": {
         name: "나",
         background: "assets/images/background/cafe.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(상대방의 눈이 부드러워졌다. 뭔가 통한 것 같은 느낌이 든다.)",
         next: "day4_date_cafe_exit"
     },
 
     "day4_date_cafe_exit": {
         name: "나",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(카페를 나서자 따사로운 오후 햇살이 내리쬔다. 아까보다 거리가 더 가까워진 것 같다.)",
         background: "assets/images/background/street.png",
         next: "day4_date_photo_moment"
@@ -839,7 +839,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_photo_moment": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(문득 이 순간을 남기고 싶다는 생각이 든다.)",
         choices: [
             {
@@ -858,7 +858,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_photo_yes": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(나란히 서서 셀카를 찍었다. 화면 속에 나란히 웃고 있는 두 사람. 이 사진, 오래오래 간직하고 싶다.)",
         next: "day4_date_ending_moment"
     },
@@ -866,7 +866,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_photo_no": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(사진보다 더 선명하게, 이 순간을 기억에 새긴다. 바람 냄새, 햇살의 온도, 옆에 있는 사람의 미소.)",
         next: "day4_date_ending_moment"
     },
@@ -878,7 +878,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_ending_moment": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(나란히 걸으며 잠깐 침묵이 흐른다. 어색한 게 아니라, 편안한 침묵이다. 서로 말 안 해도 괜찮은 그런 사이가 된 것 같다.)",
         next: "day4_date_ending_feel"
     },
@@ -886,7 +886,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_ending_feel": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(오늘의 시간이 꿈처럼 느껴진다. 전학 와서 이렇게 좋은 날이 올 줄은… 진짜 몰랐어.)",
         next: "day4_date_transition"
     },
@@ -894,7 +894,7 @@ Object.assign(SCENARIO[4], {
     "day4_date_transition": {
         name: "나",
         background: "assets/images/background/street.png",
-        character: "assets/images/characters/seyoun_laugh.png",
+        character: null,
         text: "(아직 오후가 남았다. 이 데이트는… 아직 끝나지 않았다.)",
         fade: true,
         next: "day4_afternoon_start"
