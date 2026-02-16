@@ -679,15 +679,6 @@ Object.assign(SCENARIO[3], {
             { text: "\"I'll cheer for you\"", next: "day3_afternoon_dain_cheer", stats: { Dain: { affinity: 8 } } }
         ]
     },
-    "day3_afternoon_dain_talk_walk_2": {
-        name: "Dain",
-        text: "\"I want to show you my cool side!\"",
-        character: "assets/images/characters/dain_shy.png",
-        choices: [
-            { text: "\"Looking forward to it!\"", next: "day3_afternoon_dain_excited", stats: { Dain: { affinity: 5 } } },
-            { text: "\"I'll cheer for you\"", next: "day3_afternoon_dain_cheer", stats: { Dain: { affinity: 8 } } }
-        ]
-    },
     "day3_afternoon_dain_excited": {
         name: "Dain",
         text: "\"Great! Be prepared!\"",
