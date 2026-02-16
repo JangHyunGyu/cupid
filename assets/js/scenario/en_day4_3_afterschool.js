@@ -42,91 +42,45 @@ Object.assign(SCENARIO[4], {
         text: "(After lunch, we took a leisurely walk. The spring breeze was refreshing.)",
         background: "assets/images/background/street.png",
         bgm: "sunset2.mp3",
+        sunset: true,
         next: "day4_afternoon_walk"
     },
     "day4_afternoon_walk": {
         name: "Me",
         text: "(We strolled through a quiet park. Cherry blossoms were fluttering in the wind.)",
+        next: "day4_afternoon_special"
+    },
+    "day4_afternoon_special": {
+        name: "Me",
+        text: "(\"Hey, want to go to the riverside park?\" They suggested first.)",
         background: "assets/images/background/park.png",
-        next: "day4_afternoon_talk"
+        sunset: true,
+        next: "day4_afternoon_park"
     },
-    "day4_afternoon_talk": {
-        name: "System",
-        text: "",
-        selectByHighestAffinity: true,
-        branches: [
-            { next: "day4_walk_seoyeon", character: "Seoyeon" },
-            { next: "day4_walk_yuna", character: "Yuna" },
-            { next: "day4_walk_dain", character: "Dain" },
-            { next: "day4_walk_nurse", character: "Nurse" },
-            { next: "day4_walk_teacher", character: "Teacher" }
-        ]
-    },
-
-    // --- 오후 대화 ---
-    "day4_walk_seoyeon": {
-        name: "Seoyeon",
-        text: "\"Look, the cherry blossoms! ...It's like a scene from a movie, isn't it?\"",
-        character: "assets/images/characters/seyoun_laugh.png",
-        next: "day4_afternoon_highlight"
-    },
-    "day4_walk_yuna": {
-        name: "Yuna",
-        text: "\"...The petals are falling. It's beautiful. ...Like a book I once read.\"",
-        character: "assets/images/characters/yuna_normal.png",
-        next: "day4_afternoon_highlight"
-    },
-    "day4_walk_dain": {
-        name: "Dain",
-        text: "\"Wow!! Cherry blossom shower!! Catch them, catch them!!\"",
-        character: "assets/images/characters/dain_laugh.png",
-        next: "day4_afternoon_highlight"
-    },
-    "day4_walk_nurse": {
-        name: "School Nurse",
-        text: "\"Cherry blossoms... They bloom so beautifully, but fall so quickly. Just like youth.\"",
-        character: "assets/images/characters/nurse_normal.png",
-        next: "day4_afternoon_highlight"
-    },
-    "day4_walk_teacher": {
-        name: "Homeroom Teacher",
-        text: "\"...Sigh, I feel like a character in a drama. Walking through cherry blossoms with a student...\"",
-        character: "assets/images/characters/teacher_normal.png",
-        next: "day4_afternoon_highlight"
+    "day4_afternoon_park": {
+        name: "Me",
+        text: "(When we arrived at the riverside park, the sunset was sparkling on the water. It was like a scene from a movie.)",
+        next: "day4_afternoon_sunset"
     },
 
     // =========================================================================
-    // 오후 하이라이트
+    // 석양 씬 - 감정 최고조
     // =========================================================================
-    "day4_afternoon_highlight": {
+    "day4_afternoon_sunset": {
         name: "Me",
-        text: "(A cherry blossom petal landed on their hair. I gently brushed it off.)",
-        next: "day4_afternoon_highlight_2"
-    },
-    "day4_afternoon_highlight_2": {
-        name: "Me",
-        text: "(Our eyes met. In that moment— time seemed to stop.)",
-        next: "day4_sunset"
-    },
-
-    // =========================================================================
-    // 석양
-    // =========================================================================
-    "day4_sunset": {
-        name: "Me",
-        text: "(Before we knew it, the sun started to set. The sky was painted in shades of orange.)",
+        text: "(The sunset light was illuminating their face. Strangely, I couldn't find the words.)",
         bgm: "confession.mp3",
         sunset: true,
-        next: "day4_sunset_bench"
+        next: "day4_afternoon_silence"
     },
-    "day4_sunset_bench": {
+    "day4_afternoon_silence": {
         name: "Me",
-        text: "(We sat side by side on a park bench, watching the sunset.)",
-        next: "day4_sunset_feeling"
+        text: "(......)",
+        next: "day4_afternoon_feeling"
     },
-    "day4_sunset_feeling": {
+    "day4_afternoon_feeling": {
         name: "Me",
-        text: "(My heart is pounding. Today was so much fun. And this person next to me...)",
+        text: "(I think I know what this feeling is now. From the first day I transferred here until now... I've been feeling it all along.)",
         next: "day4_confession_choice"
     },
 
@@ -135,16 +89,16 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_confession_choice": {
         name: "Me",
-        text: "(The words I've been holding back keep rising to my lips. Should I say it now...?)",
+        text: "(Right now, in this moment... should I tell them how I feel?)",
         choices: [
             {
                 text: "\"I have something to tell you...\" (Confess)",
-                next: "day4_confess_start",
+                next: "day4_confess",
                 setFlag: "day4_confessed"
             },
             {
-                text: "\"...Not yet.\" (Wait)",
-                next: "day4_wait_start",
+                text: "\"...This scenery is really beautiful.\" (Not yet)",
+                next: "day4_wait",
                 setFlag: "day4_waited"
             }
         ]
@@ -153,16 +107,20 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     // 고백 루트
     // =========================================================================
-    "day4_confess_start": {
+    "day4_confess": {
         name: "Me",
-        text: "\"I've been thinking about this since yesterday... No, maybe since we first met.\"",
+        text: "\"Actually... ever since I transferred here, all I could think about was you.\"",
         sunset: true,
-        next: "day4_confess_words"
+        next: "day4_confess_2"
     },
-    "day4_confess_words": {
+    "day4_confess_2": {
         name: "Me",
-        text: "\"I like you. Not as a friend, not as a classmate... I really like you.\"",
-        sunset: true,
+        text: "\"At first I thought you were just a good person... but now I'm sure.\"",
+        next: "day4_confess_3"
+    },
+    "day4_confess_3": {
+        name: "Me",
+        text: "\"I... like you.\"",
         next: "day4_confess_response"
     },
     "day4_confess_response": {
@@ -228,13 +186,7 @@ Object.assign(SCENARIO[4], {
     // --- 고백 후 ---
     "day4_after_confess": {
         name: "Me",
-        text: "(My heart is about to explode. They accepted... They really accepted my feelings.)",
-        sunset: true,
-        next: "day4_after_confess_2"
-    },
-    "day4_after_confess_2": {
-        name: "Me",
-        text: "(Under the sunset, we held hands. Their hand was warm and trembling slightly.)",
+        text: "(Under the sunset, our shadows merge into one. It was the happiest moment in the world.)",
         sunset: true,
         fade: true,
         next: "day4_night_start"
@@ -243,9 +195,9 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     // 보류 루트
     // =========================================================================
-    "day4_wait_start": {
+    "day4_wait": {
         name: "Me",
-        text: "(Not yet... I need a little more time to sort out my feelings.)",
+        text: "\"...This scenery is really beautiful.\"",
         sunset: true,
         next: "day4_wait_talk"
     },
