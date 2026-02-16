@@ -73,26 +73,31 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_wake": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(눈을 떴다. 알람 없이 저절로 깬 건 오랜만이다. 시계를 보니 아침 8시.)",
         next: "day5_morning_stretch"
     },
     "day5_morning_stretch": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(기지개를 켜며 천장을 바라본다. 오늘이 일요일이라는 게 실감이 안 난다.)",
         next: "day5_morning_think"
     },
     "day5_morning_think": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(이 학교에 전학 온 게 겨우 5일 전이라니. 마치 한 달은 된 것 같은데.)",
         next: "day5_morning_mirror"
     },
     "day5_morning_mirror": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(세수를 하고 거울 앞에 섰다. 거울 속의 나는… 전학 오기 전과는 뭔가 다른 얼굴을 하고 있다.)",
         next: "day5_morning_mirror2"
     },
     "day5_morning_mirror2": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(4일 동안 참 많은 일이 있었다. 새로운 반, 새로운 사람들… 그리고 특별한 만남들.)",
         next: "day5_morning_phone_check"
     },
@@ -102,11 +107,13 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_morning_phone_check": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(침대 위에 놓인 핸드폰을 집어 들었다. 화면에 알림이 떠 있다.)",
         next: "day5_morning_msg_branch"
     },
     "day5_morning_msg_branch": {
         name: "시스템",
+        background: "assets/images/background/room_my.png",
         text: "",
         branches: [
             { next: "day5_couple_msg_branch", condition: "day4_confession_accepted" },
@@ -140,12 +147,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_seoyeon": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(서연이 메시지를 보니 저절로 웃음이 나온다. 아침부터 꽃 이야기라니, 서연이답다.)",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day5_couple_reply_seoyeon"
     },
     "day5_couple_reply_seoyeon": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(\"좋아! 학교 정문 앞에서 만나자. 보여주고 싶은 곳도 있어 😊\" 라고 답했다.)",
         next: "day5_morning_ready"
     },
@@ -159,12 +168,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_yuna": {
         name: "나",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(유나답게 짧지만… 자세히 보면 \"나도 갈게\"라는 말에 설렘이 담겨 있다.)",
         stats: { Yuna: { affinity: 3 } },
         next: "day5_couple_reply_yuna"
     },
     "day5_couple_reply_yuna": {
         name: "나",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(\"응, 갈게. 기다리고 있어.\" 담담하게 답했지만, 심장이 빨리 뛴다.)",
         next: "day5_morning_ready"
     },
@@ -178,12 +189,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_dain": {
         name: "나",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(…느낌표가 잔뜩. 아침부터 에너지가 넘치는 다인이. 그런데 이런 메시지를 보면 나까지 기운이 나네.)",
         stats: { Dain: { affinity: 3 } },
         next: "day5_couple_reply_dain"
     },
     "day5_couple_reply_dain": {
         name: "나",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(\"ㅋㅋ 알겠어! 안 늦을게. 뛰지 말고 조심해서 와!\" 라고 답장을 보냈다.)",
         next: "day5_morning_ready"
     },
@@ -197,12 +210,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_nurse": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(선생님이 보낸 하트 이모티콘에 얼굴이 빨개졌다. 학교 밖에서 만나는 건 확실히 다른 느낌이다.)",
         stats: { Nurse: { affinity: 3 } },
         next: "day5_couple_reply_nurse"
     },
     "day5_couple_reply_nurse": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(\"네, 기대돼요. 정문 앞에서 10시에 만나요!\" 존댓말로 쓰다가… 뭔가 어색하다.)",
         next: "day5_morning_ready"
     },
@@ -216,12 +231,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_teacher": {
         name: "나",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(\"볼 일이 있어서\"라니. 쿨한 척 하지만 만나자고 먼저 연락한 건 선생님인데. 그런 선생님이 좋다.)",
         stats: { Teacher: { affinity: 3 } },
         next: "day5_couple_reply_teacher"
     },
     "day5_couple_reply_teacher": {
         name: "나",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(\"안 늦을게요. 꼭 갈게요!\" 라고 답장을 보내며 살짝 웃었다.)",
         next: "day5_morning_ready"
     },
@@ -251,11 +268,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_pending_react_seoyeon": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(서연이가 나를 부른다. \"강제는 아니야\"라면서도… 가고 싶다는 마음은 확실하다.)",
         next: "day5_pending_reply_seoyeon"
     },
     "day5_pending_reply_seoyeon": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(오늘은 꼭 내 마음을 전해야 해. \"갈게! 정문 앞에서 만나자.\" 라고 답했다.)",
         next: "day5_morning_ready"
     },
@@ -269,11 +288,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_pending_react_yuna": {
         name: "나",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(\"할 말이 있어\"라니. 심장이 쿵 뛰었다. 혹시 유나도 나한테…?)",
         next: "day5_pending_reply_yuna"
     },
     "day5_pending_reply_yuna": {
         name: "나",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(나도 할 말이 있다. \"응, 갈게.\" 간결하게 답하고 핸드폰을 내려놓았다.)",
         next: "day5_morning_ready"
     },
@@ -287,11 +308,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_pending_react_dain": {
         name: "나",
+        character: "assets/images/characters/dain_normal.png",
         text: "(\"중요한 거\"라고 했다. 다인이가 진지하게 말하는 건 드문 일인데. 무슨 일일까.)",
         next: "day5_pending_reply_dain"
     },
     "day5_pending_reply_dain": {
         name: "나",
+        character: "assets/images/characters/dain_normal.png",
         text: "(그리고 나도… 오늘 꼭 하고 싶은 말이 있다. \"갈게!! 기다려!\" 라고 답했다.)",
         next: "day5_morning_ready"
     },
@@ -305,11 +328,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_pending_react_nurse": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(주말에 보건실 정리라… 핑계 같기도 하지만, 만날 수 있다면 이유는 상관없다.)",
         next: "day5_pending_reply_nurse"
     },
     "day5_pending_reply_nurse": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(오늘, 꼭 마음을 전하자. \"갈게요! 정문 앞에서 만나요.\" 라고 답했다.)",
         next: "day5_morning_ready"
     },
@@ -323,11 +348,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_pending_react_teacher": {
         name: "나",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(\"다른 뜻은 없다\"는 말이 오히려 의미심장하게 느껴진다. 선생님도 마찬가지인 걸까.)",
         next: "day5_pending_reply_teacher"
     },
     "day5_pending_reply_teacher": {
         name: "나",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(오늘이 지나면 기회가 없을지도 모른다. \"갈게요!\" 라고 답장을 보냈다.)",
         next: "day5_morning_ready"
     },
@@ -371,16 +398,19 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_morning_ready": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(이제 준비를 해야 한다. 옷장 앞에 섰다.)",
         next: "day5_morning_closet"
     },
     "day5_morning_closet": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(일요일이니까 교복은 안 입어도 되는데… 뭘 입을까.)",
         next: "day5_outfit_choice"
     },
     "day5_outfit_choice": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(오늘 뭘 입고 나갈까?)",
         choices: [
             {
@@ -397,26 +427,31 @@ Object.assign(SCENARIO[5], {
     },
     "day5_outfit_casual": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(깨끗한 셔츠에 청바지. 편하면서도 단정한 느낌이다. 역시 자연스러운 게 나답지.)",
         next: "day5_breakfast"
     },
     "day5_outfit_special": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(평소보다 좀 더 신경 써서 골랐다. 거울 앞에서 한 번 더 확인한다. …괜찮은 것 같다.)",
         next: "day5_breakfast"
     },
     "day5_breakfast": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(간단하게 토스트를 구워 먹었다. 일요일 아침, 조용한 부엌. 밖에서 새소리가 들린다.)",
         next: "day5_outfit_check"
     },
     "day5_outfit_check": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(거울 속 내 모습을 마지막으로 확인한다. 전학 첫날과는 확실히 다른 눈빛이다.)",
         next: "day5_morning_items"
     },
     "day5_morning_items": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(지갑, 핸드폰, 열쇠. 준비 완료. 현관문 앞에 섰다.)",
         next: "day5_morning_depart"
     },
@@ -426,6 +461,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_morning_depart": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(문을 열고 밖으로 나섰다. 봄바람이 기분 좋게 불어온다.)",
         background: "assets/images/background/street.png",
         fade: true,
@@ -433,6 +469,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_route_branch": {
         name: "시스템",
+        background: "assets/images/background/street.png",
         text: "",
         branches: [
             { next: "day5_walk_couple_branch", condition: "day4_confession_accepted" },
@@ -466,6 +503,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_seoyeon_2": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(약속 장소에 서연이가 이미 와 있었다. 햇살 아래 서 있는 서연이가 눈부시다.)",
         next: "day5_walk_seoyeon_talk"
     },
@@ -477,6 +515,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_seoyeon_react": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(서연이와 나란히 걷는다. 따로 말하지 않아도 자연스럽게 보폭이 맞춰진다.)",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day5_walk_couple_common"
@@ -497,11 +536,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_yuna_talk": {
         name: "나",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(유나가 이어폰 한쪽을 빼서 내게 내밀었다. 아무 말 없이 같이 들으라는 뜻이다.)",
         next: "day5_walk_yuna_react"
     },
     "day5_walk_yuna_react": {
         name: "나",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(이어폰을 나눠 끼고 나란히 걸었다. 말은 없지만, 이 침묵이 불편하지 않다. 오히려 좋다.)",
         stats: { Yuna: { affinity: 5 } },
         next: "day5_walk_couple_common"
@@ -516,6 +557,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_dain_2": {
         name: "나",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(다인이가 저 멀리서 두 팔을 흔들고 있다. 아침부터 저 에너지는 대체 어디서 나오는 걸까.)",
         next: "day5_walk_dain_talk"
     },
@@ -527,6 +569,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_dain_react": {
         name: "나",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(다인이의 손에 이끌려 걸었다. 어느새 나까지 웃고 있었다. 이 에너지는 전염되나 보다.)",
         stats: { Dain: { affinity: 5 } },
         next: "day5_walk_couple_common"
@@ -553,6 +596,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_nurse_react": {
         name: "나",
+        character: "assets/images/characters/nurse_shy.png",
         text: "(살짝 수줍어하는 선생님의 표정이 새롭다. 나란히 걷는 것만으로도 심장이 뛴다.)",
         stats: { Nurse: { affinity: 5 } },
         next: "day5_walk_couple_common"
@@ -579,6 +623,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_teacher_react": {
         name: "나",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(\"그냥 한 사람\"이라. 그 말에 가슴이 뜨거워졌다. 이렇게 솔직한 선생님은 처음 본다.)",
         stats: { Teacher: { affinity: 5 } },
         next: "day5_walk_couple_common"
@@ -587,11 +632,13 @@ Object.assign(SCENARIO[5], {
     // --- 커플 공통 ---
     "day5_walk_couple_common": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(나란히 걸으며 지난 며칠간의 이야기를 나누었다. 처음 만났을 때 이야기, 웃겼던 일들, 가슴 뛰었던 순간들.)",
         next: "day5_walk_couple_common2"
     },
     "day5_walk_couple_common2": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(어느새 학교가 보이기 시작했다. 작별이 아쉬울 줄 알았는데, 오늘은 함께하는 하루의 시작이다.)",
         next: "day5_arrive_start"
     },
@@ -674,22 +721,29 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_arrive_start": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(학교 정문 앞에 섰다.)",
         background: "assets/images/background/school.png",
         next: "day5_arrive_nostalgia"
     },
     "day5_arrive_nostalgia": {
         name: "나",
+        background: "assets/images/background/school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(이 정문… 5일 전, 처음 이 학교에 왔을 때도 이 자리에 섰었다.)",
         next: "day5_arrive_firstday"
     },
     "day5_arrive_firstday": {
         name: "나",
+        background: "assets/images/background/school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(그때는 모든 게 낯설었다. 새로운 학교, 새로운 교실, 모르는 얼굴들. 긴장으로 발이 떨어지지 않았는데.)",
         next: "day5_arrive_now"
     },
     "day5_arrive_now": {
         name: "나",
+        background: "assets/images/background/school.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(지금은 다르다. 이곳에 내가 아는 사람들이 있고, 내가 돌아올 곳이 있다. 정문을 지나 안으로 들어갔다.)",
         fade: true,
         next: "day5_school_arrive"

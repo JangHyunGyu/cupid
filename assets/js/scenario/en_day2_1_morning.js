@@ -79,6 +79,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_start_2": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Yesterday feels as sweet as a dream... but the school uniform on my desk reminds me this is reality. I have a feeling something good will happen today too.)",
         next: "day2_morning_phone"
     },
@@ -86,11 +87,13 @@ Object.assign(SCENARIO[2], {
     // --- 아침 스마트폰 확인 ---
     "day2_morning_phone": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I pick up the smartphone beside my bed. Maybe someone sent me a message overnight... I check the screen.)",
         next: "day2_morning_phone_2"
     },
     "day2_morning_phone_2": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(No messages. Was I hoping for nothing...? But I'll see everyone at school today anyway. I get out of bed, filled with anticipation.)",
         next: "day2_morning_routine"
     },
@@ -98,11 +101,13 @@ Object.assign(SCENARIO[2], {
     // --- 아침 준비 ---
     "day2_morning_routine": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I wash my face and stand in front of the mirror. I think I look a bit better than yesterday. I change into my uniform and fix my hair.)",
         next: "day2_morning_routine_2"
     },
     "day2_morning_routine_2": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(My reflection in the uniform looks a little more familiar now. I retie my necktie and straighten my collar.)",
         next: "day2_breakfast"
     },
@@ -110,17 +115,20 @@ Object.assign(SCENARIO[2], {
     // --- 아침식사 ---
     "day2_breakfast": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I come down to the kitchen and find rice and a fried egg on the table. Mom must have already left for work. Eating alone, but somehow I don't feel lonely today.)",
         next: "day2_breakfast_2"
     },
     "day2_breakfast_2": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(I scarf down breakfast and grab my bag. Checking the clock, I have plenty of time. I can take a leisurely walk to school.)",
         next: "day2_start_3"
     },
 
     "day2_start_3": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Alright, let's go. I wonder what kind of excitement awaits me today?)",
         next: "day2_road_to_school"
     },
@@ -134,11 +142,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_road_to_school_2": {
         name: "Me",
+        background: "assets/images/background/load_school.png",
         text: "(Students in the same uniform walk toward school in small groups. Yesterday it all felt so unfamiliar, but today it somehow feels welcoming.)",
         next: "day2_road_to_school_3"
     },
     "day2_road_to_school_3": {
         name: "Me",
+        background: "assets/images/background/load_school.png",
         text: "(Across the street, a few students from our school glance my way and whisper. I can hear 'Oh, it's the transfer student!' carried by the wind. Looks like I'm still the hot topic.)",
         next: "day2_school_gate"
     },
@@ -156,6 +166,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_school_gate_2": {
         name: "Me",
+        background: "assets/images/background/school.png",
         text: "(As I'm about to pass through the gate, someone taps me on the shoulder.)",
         choices: [
             { text: "Turn around.", next: "day2_meet_someone" }
@@ -168,6 +179,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_meet_someone": {
         name: "Me",
+        background: "assets/images/background/school.png",
         text: "(I turn around and there stands...)",
         branches: [
             { next: "day2_meet_yuna", character: "Yuna", condition: "met_yuna" },
@@ -485,33 +497,43 @@ Object.assign(SCENARIO[2], {
     },
     "day2_classroom_greet": {
         name: "Classmate",
+        background: "assets/images/background/room_school.png",
         text: "\"Hey, transfer student! Good morning! Did you settle in okay yesterday? Our class is pretty chill, right?\"",
         character: null,
         next: "day2_classroom_greet_2"
     },
     "day2_classroom_greet_2": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(A few classmates greet me casually. Yesterday they looked at me with pure curiosity, but today their smiles are relaxed. I feel like I'm gradually becoming part of this school.)",
         next: "day2_classroom_settle"
     },
     "day2_classroom_settle": {
         name: "Classmate",
+        background: "assets/images/background/room_school.png",
         text: "(The girl in the front row turns around and says,) \"I saw you hanging out with Seoyeon yesterday. You two seem close! Already made a friend, huh?\"",
         character: null,
         next: "day2_classroom_settle_2"
     },
     "day2_classroom_settle_2": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "\"Oh, haha... Everyone's been so nice to me.\"",
         next: "day2_classroom_settle_3"
     },
     "day2_classroom_settle_3": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(I give a vague answer and sit down. Opening my bag to take out my textbooks... something feels off.)",
         next: "day2_classroom_2"
     },
     "day2_classroom_2": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(As I'm settling in at my desk, I notice a small note tucked in the corner.)",
         choices: [
             { text: "Check the note.", next: "day2_check_note" }
@@ -524,47 +546,63 @@ Object.assign(SCENARIO[2], {
 
     "day2_check_note": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(I carefully unfold the note. The handwriting is neat yet somehow cold.)",
         next: "day2_note_content"
     },
     "day2_note_content": {
         name: "System",
+        background: "assets/images/background/room_school.png",
         text: "\"'Come to the courtyard behind the library annex at lunch. I have something to tell you.' - Yuna\"",
         next: "day2_note_reaction"
     },
     "day2_note_reaction": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(Yuna...? I read the note again. 'The courtyard behind the library annex'... that's a secluded spot at school. Summoning me with a note like this — it feels secretive.)",
         next: "day2_note_speculation"
     },
     "day2_note_speculation": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(What could she possibly want to say that she'd leave a note like this? If I had her number, I could just ask her directly... but a note — that somehow feels very like her.)",
         next: "day2_note_speculation_2"
     },
     "day2_note_speculation_2": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(Is there anyone who might know about Yuna? I discreetly glance around. But I don't think I should mention the note to just anyone.)",
         next: "day2_note_speculation_3"
     },
     "day2_note_speculation_3": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(I carefully fold the note and slip it into my pocket. I can't wait for lunch already... or maybe 'nervous' is more accurate.)",
         next: "day2_note_ask_around"
     },
     "day2_note_ask_around": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(I casually ask the person sitting next to me.) \"Hey, do you know anyone named Yuna?\"",
         next: "day2_note_ask_around_2"
     },
     "day2_note_ask_around_2": {
         name: "Classmate",
+        background: "assets/images/background/room_school.png",
         text: "\"Yuna? Hmm... she's not in our class. Maybe another class? Or an upperclassman?\"",
         character: null,
         next: "day2_note_ask_around_3"
     },
     "day2_note_ask_around_3": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(As expected, nobody knows. Just the name 'Yuna' isn't enough to go on. I'll just have to go there myself at lunch.)",
         next: "day2_homeroom_start"
     },
@@ -575,52 +613,64 @@ Object.assign(SCENARIO[2], {
 
     "day2_homeroom_start": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/room_school.png",
         text: "\"Alright, everyone take your seats. Homeroom is starting.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_homeroom_rollcall"
     },
     "day2_homeroom_rollcall": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/room_school.png",
         text: "(The teacher opens the attendance book and starts calling names one by one.) \"...{name}? Transfer student, you're here, right?\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_homeroom_rollcall_2"
     },
     "day2_homeroom_rollcall_2": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_normal.png",
         text: "\"Yes, I'm here.\"",
         next: "day2_homeroom_rollcall_3"
     },
     "day2_homeroom_rollcall_3": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/room_school.png",
         text: "\"Good. It's only your second day, but you look brighter than yesterday. Seems like you're adjusting well.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_homeroom_notice"
     },
     "day2_homeroom_notice": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/room_school.png",
         text: "\"One announcement. There will be a school festival planning meeting this Friday, so anyone interested should stay after school.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_homeroom_notice_2"
     },
     "day2_homeroom_notice_2": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(A school festival... I just transferred and there's already a festival coming up. I'm getting more and more excited about this school.)",
         next: "day2_homeroom_event"
     },
     "day2_homeroom_event": {
         name: "Classmate",
+        background: "assets/images/background/room_school.png",
         text: "\"Teacher, question! Will there be a class talent show at the festival?\"",
         character: null,
         next: "day2_homeroom_event_2"
     },
     "day2_homeroom_event_2": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/room_school.png",
         text: "\"Well, nothing's decided yet, but... if our class enters, we'd obviously win first place, right?\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_homeroom_event_3"
     },
     "day2_homeroom_event_3": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(The classroom fills with chuckles. The teacher actually has a pretty good sense of humor.)",
         next: "day2_morning_class"
     },
@@ -631,6 +681,8 @@ Object.assign(SCENARIO[2], {
 
     "day2_morning_class": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(Throughout the entire class, Yuna's note won't leave my mind. What on earth does she want to tell me?)",
         branches: [
             { next: "day2_morning_class_yuna_msg", condition: "sent_msg_day1_yuna" },

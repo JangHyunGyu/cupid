@@ -24,6 +24,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_reflect": {
         name: "Me",
+        background: "assets/images/background/room_my.png",
         text: "(Lying on the bed, I reflect on today. What happened at lunch... what happened after school...)",
         night: true,
         branches: [
@@ -138,6 +139,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seoyeon_ignore": {
         name: "Me",
+        character: "assets/images/characters/seyoun_sad.png",
         text: "(I didn't reply. Seoyeon will probably be disappointed...)",
         night: true,
         setFlag: "day3_ignored_seoyeon",
@@ -185,6 +187,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seoyeon_good": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(Finished chatting with Seoyeon.)",
         night: true,
         next: "day3_night_back_to_messages"
@@ -295,6 +298,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_yuna_sleep": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(Finished chatting with Yuna.)",
         night: true,
         next: "day3_night_back_to_messages"
@@ -362,6 +366,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_dain_good": {
         name: "Me",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(Finished chatting with Dain.)",
         night: true,
         next: "day3_night_back_to_messages"
@@ -435,6 +440,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_back_to_messages": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(Should I check other messages?)",
         night: true,
         choices: [
@@ -478,6 +484,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_sleep": {
         name: "Me",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(Just as my eyes are closing... my phone rings. A call.)",
         night: true,
         branches: [
@@ -499,6 +506,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_seoyeon_freetalk": {
         name: "Me",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(Having a late-night call with Seoyeon. Her voice sounds softer than usual in the dark room.)",
         freeTalk: { turns: 3, context: "Late-night phone call. Seoyeon called saying 'I wanted to hear your voice.' A sweet late-night conversation. Seoyeon suddenly called before bed." },
         night: true,
@@ -514,6 +522,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_yuna_freetalk": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(Having a late-night call with Yuna. Her quiet breathing reaches my ear.)",
         freeTalk: { turns: 2, context: "Late-night phone call. Yuna called saying 'I can't fall asleep.' A quiet and intimate late-night conversation. Her soft breathing feels close." },
         night: true,
@@ -529,6 +538,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_dain_freetalk": {
         name: "Me",
+        character: "assets/images/characters/dain_normal.png",
         text: "(Having a late-night call with Dain. Instead of her usual energy, her quiet voice feels new.)",
         freeTalk: { turns: 3, context: "Late-night phone call. Dain called saying 'Thinking about tomorrow, I can't sleep!' Unusually quiet Dain. A soft late-night atmosphere." },
         night: true,
@@ -544,6 +554,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_nurse_freetalk": {
         name: "Me",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(Having a late-night call with the school nurse. Her low voice reaches my ear.)",
         freeTalk: { turns: 2, context: "Late-night phone call. The school nurse called saying 'I couldn't sleep.' Her low, gentle voice. A forbidden love's late-night call." },
         night: true,
@@ -559,6 +570,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_teacher_freetalk": {
         name: "Me",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(Having a late-night call with the homeroom teacher. Her quiet voice sounds close.)",
         freeTalk: { turns: 2, context: "Late-night phone call. The homeroom teacher called saying 'I know it's bedtime, but...' Her quiet voice. A forbidden love's late-night call." },
         night: true,
@@ -566,6 +578,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_end": {
         name: "Me",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(I hang up and put down my phone. The lingering echo of her voice... makes my heart race.)",
         night: true,
         fade: true,
@@ -573,6 +586,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_sleep_2": {
         name: "Me",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(My eyes are closing. Tomorrow is Saturday... What kind of day will it be.)",
         night: true,
         fade: true,
@@ -580,6 +594,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_sleep_final": {
         name: "Me",
+        character: "assets/images/characters/seyoun_shy.png",
         text: "(Multiple plans swirl through my mind. Can I satisfy everyone...?)",
         night: true,
         branches: [
@@ -619,6 +634,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare_choice": {
         name: "Me",
+        character: "assets/images/characters/dain_sad.png",
         text: "(All three voices ring out at once. Hands reach out from the darkness. Whose hand will I take...)",
         night: true,
         choices: [
@@ -630,12 +646,14 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare_end": {
         name: "Me",
+        character: "assets/images/characters/dain_sad.png",
         text: "(I reached out, but... there was nothing to hold. Everyone vanished, leaving only darkness and regret.)",
         night: true,
         next: "day3_night_nightmare_wake"
     },
     "day3_night_nightmare_wake": {
         name: "Me",
+        character: "assets/images/characters/dain_sad.png",
         text: "(...I snap awake. My heart is pounding like crazy. It was a dream. But... what will tomorrow bring?)",
         night: true,
         fade: true,

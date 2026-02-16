@@ -79,6 +79,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_start_2": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(어제의 일들이 마치 꿈처럼 달콤하게 느껴지지만... 책상 위에 놓인 교복이 이곳이 현실임을 말해준다. 오늘도 좋은 일이 생길 것 같아.)",
         next: "day2_morning_phone"
     },
@@ -86,11 +87,13 @@ Object.assign(SCENARIO[2], {
     // --- 아침 스마트폰 확인 ---
     "day2_morning_phone": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(침대 옆 스마트폰을 집어 든다. 혹시 어젯밤 사이에 누가 메시지를 보내지 않았을까... 화면을 확인해본다.)",
         next: "day2_morning_phone_2"
     },
     "day2_morning_phone_2": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(특별한 메시지는 없다. 괜히 기대한 건가... 하지만 오늘 학교에서 직접 만나면 되니까. 기대감을 안고 침대에서 일어난다.)",
         next: "day2_morning_routine"
     },
@@ -98,11 +101,13 @@ Object.assign(SCENARIO[2], {
     // --- 아침 준비 ---
     "day2_morning_routine": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(세수를 하고 거울 앞에 선다. 어제보다 조금은 나아진 얼굴인 것 같다. 교복으로 갈아입고 머리를 정돈한다.)",
         next: "day2_morning_routine_2"
     },
     "day2_morning_routine_2": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(거울 속 교복 차림의 내 모습이 이제는 조금 익숙하다. 넥타이 매듭을 한 번 고쳐 매고, 흐트러진 옷깃을 바로잡는다.)",
         next: "day2_breakfast"
     },
@@ -110,17 +115,20 @@ Object.assign(SCENARIO[2], {
     // --- 아침식사 ---
     "day2_breakfast": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(부엌에 내려오니 식탁 위에 밥과 계란후라이가 놓여 있다. 엄마는 벌써 출근한 모양이다. 혼자 먹는 아침이지만, 왠지 오늘은 외롭지 않다.)",
         next: "day2_breakfast_2"
     },
     "day2_breakfast_2": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(후다닥 아침을 해치우고 가방을 챙긴다. 시계를 보니 여유 있는 시간이다. 느긋하게 등교할 수 있겠어.)",
         next: "day2_start_3"
     },
 
     "day2_start_3": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(자, 가보자. 오늘은 또 어떤 떨림이 나를 기다리고 있을까?)",
         next: "day2_road_to_school"
     },
@@ -134,11 +142,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_road_to_school_2": {
         name: "나",
+        background: "assets/images/background/load_school.png",
         text: "(같은 교복을 입은 학생들이 삼삼오오 짝을 지어 학교 쪽으로 걸어간다. 어제는 낯설기만 하던 풍경인데, 오늘은 어딘가 반갑게 느껴진다.)",
         next: "day2_road_to_school_3"
     },
     "day2_road_to_school_3": {
         name: "나",
+        background: "assets/images/background/load_school.png",
         text: "(길 건너편에서 우리 학교 학생 몇 명이 내 쪽을 보며 수군거린다. '아, 전학생이다!' 하는 소리가 바람에 실려 들려온다. 아직 학교의 핫이슈인 모양이다.)",
         next: "day2_school_gate"
     },
@@ -156,6 +166,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_school_gate_2": {
         name: "나",
+        background: "assets/images/background/school.png",
         text: "(교문을 통과하려는데, 누군가 내 어깨를 툭 친다.)",
         choices: [
             { text: "뒤를 돌아본다.", next: "day2_meet_someone" }
@@ -168,6 +179,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_meet_someone": {
         name: "나",
+        background: "assets/images/background/school.png",
         text: "(뒤를 돌아보자 그곳에는...)",
         branches: [
             { next: "day2_meet_yuna", character: "Yuna", condition: "met_yuna" },
@@ -485,33 +497,43 @@ Object.assign(SCENARIO[2], {
     },
     "day2_classroom_greet": {
         name: "반 친구",
+        background: "assets/images/background/room_school.png",
         text: "\"오, 전학생! 좋은 아침! 어제 잘 적응했어? 우리 반 분위기 괜찮지?\"",
         character: null,
         next: "day2_classroom_greet_2"
     },
     "day2_classroom_greet_2": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(몇몇 아이들이 가볍게 인사를 건네준다. 어제는 호기심 가득한 눈빛이었는데, 오늘은 편안한 미소가 섞여 있다. 이 학교에 조금씩 스며들고 있는 느낌이다.)",
         next: "day2_classroom_settle"
     },
     "day2_classroom_settle": {
         name: "반 친구",
+        background: "assets/images/background/room_school.png",
         text: "(앞자리 여학생이 돌아보며 말한다.) \"어제 서연이랑 같이 다니는 거 봤는데, 너희 사이 좋더라? 벌써 친구 만든 거야?\"",
         character: null,
         next: "day2_classroom_settle_2"
     },
     "day2_classroom_settle_2": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "\"아, 하하... 다들 친절하게 대해줘서요.\"",
         next: "day2_classroom_settle_3"
     },
     "day2_classroom_settle_3": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(적당히 둘러대고 자리에 앉는다. 가방을 풀고 교과서를 꺼내려는데... 뭔가 이상하다.)",
         next: "day2_classroom_2"
     },
     "day2_classroom_2": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(자리에 앉아 가방을 정리하려는데, 책상 구석에 놓인 작은 쪽지가 눈에 들어온다.)",
         choices: [
             { text: "쪽지를 확인한다.", next: "day2_check_note" }
@@ -524,47 +546,63 @@ Object.assign(SCENARIO[2], {
 
     "day2_check_note": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(조심스레 쪽지를 펼친다. 정갈하면서도 어딘가 차가운 글씨체가 눈에 띈다.)",
         next: "day2_note_content"
     },
     "day2_note_content": {
         name: "시스템",
+        background: "assets/images/background/room_school.png",
         text: "\"'점심시간에 도서관 별관 뒤뜰로 와. 할 말이 있어.' - 유나\"",
         next: "day2_note_reaction"
     },
     "day2_note_reaction": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(유나...? 쪽지를 다시 한 번 읽어본다. '도서관 별관 뒤뜰'이라... 학교 구석진 곳이잖아. 이런 방식으로 호출한다니, 뭔가 비밀스러운 느낌이 든다.)",
         next: "day2_note_speculation"
     },
     "day2_note_speculation": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(대체 무슨 말을 하려고 이런 쪽지를 남긴 걸까? 연락처라도 있다면 직접 물어볼 텐데... 쪽지라니, 어딘가 그녀답다는 생각이 든다.)",
         next: "day2_note_speculation_2"
     },
     "day2_note_speculation_2": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(혹시 유나에 대해 아는 사람이 있을까? 주변을 슬쩍 둘러본다. 하지만 쪽지 내용을 함부로 말할 순 없을 것 같다.)",
         next: "day2_note_speculation_3"
     },
     "day2_note_speculation_3": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(쪽지를 조심스럽게 접어 주머니에 넣는다. 점심시간이 벌써부터 기다려진다... 아니, 긴장된다는 표현이 더 맞으려나.)",
         next: "day2_note_ask_around"
     },
     "day2_note_ask_around": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(옆자리 친구에게 슬쩍 물어본다.) \"혹시... 유나라는 애 알아?\"",
         next: "day2_note_ask_around_2"
     },
     "day2_note_ask_around_2": {
         name: "반 친구",
+        background: "assets/images/background/room_school.png",
         text: "\"유나? 음... 우리 반은 아닌데? 다른 반인가? 아니면 선배?\"",
         character: null,
         next: "day2_note_ask_around_3"
     },
     "day2_note_ask_around_3": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(역시 아는 사람이 없다. 유나라는 이름만으로는 정보가 부족하다. 점심시간에 직접 가보는 수밖에 없겠어.)",
         next: "day2_homeroom_start"
     },
@@ -575,52 +613,64 @@ Object.assign(SCENARIO[2], {
 
     "day2_homeroom_start": {
         name: "담임선생님",
+        background: "assets/images/background/room_school.png",
         text: "\"자, 다들 자리에 앉아라. 조회 시작한다.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_homeroom_rollcall"
     },
     "day2_homeroom_rollcall": {
         name: "담임선생님",
+        background: "assets/images/background/room_school.png",
         text: "(선생님이 출석부를 펼치며 이름을 하나하나 부르기 시작한다.) \"...{name}? 전학생, 여기 있지?\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_homeroom_rollcall_2"
     },
     "day2_homeroom_rollcall_2": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_normal.png",
         text: "\"네, 있습니다.\"",
         next: "day2_homeroom_rollcall_3"
     },
     "day2_homeroom_rollcall_3": {
         name: "담임선생님",
+        background: "assets/images/background/room_school.png",
         text: "\"좋아. 전학 이틀째인데, 어제보다 표정이 밝아졌구나. 잘 적응하고 있나 보다.\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_homeroom_notice"
     },
     "day2_homeroom_notice": {
         name: "담임선생님",
+        background: "assets/images/background/room_school.png",
         text: "\"공지사항 하나 전달한다. 이번 주 금요일에 학교 축제 준비 회의가 있을 예정이니까, 관심 있는 학생들은 방과 후에 남아 줘.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_homeroom_notice_2"
     },
     "day2_homeroom_notice_2": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(학교 축제라... 전학 온 지 얼마 안 됐는데 축제까지 있다니. 이 학교 생활이 점점 더 기대된다.)",
         next: "day2_homeroom_event"
     },
     "day2_homeroom_event": {
         name: "반 친구",
+        background: "assets/images/background/room_school.png",
         text: "\"선생님, 질문요! 축제 때 반 대항 장기자랑도 하나요?\"",
         character: null,
         next: "day2_homeroom_event_2"
     },
     "day2_homeroom_event_2": {
         name: "담임선생님",
+        background: "assets/images/background/room_school.png",
         text: "\"글쎄, 아직 결정된 건 없지만... 우리 반이 나가면 당연히 1등이겠지?\"",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_homeroom_event_3"
     },
     "day2_homeroom_event_3": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(교실이 킥킥대는 웃음으로 가득 찬다. 선생님도 은근히 유머가 있으시다.)",
         next: "day2_morning_class"
     },
@@ -631,6 +681,8 @@ Object.assign(SCENARIO[2], {
 
     "day2_morning_class": {
         name: "나",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(수업 시간 내내 유나의 쪽지가 머릿속을 떠나지 않는다. 대체 무슨 할 말이 있는 걸까?)",
         branches: [
             { next: "day2_morning_class_yuna_msg", condition: "sent_msg_day1_yuna" },

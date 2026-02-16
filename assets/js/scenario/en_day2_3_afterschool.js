@@ -90,6 +90,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_school": {
         name: "Me",
+        background: "assets/images/background/room_school.png",
         text: "(The hallway feels much more familiar than yesterday. What kind of heart-pounding moments are waiting for me today? Let's go where my heart leads.)",
         sunset: true,
         choices: [
@@ -129,6 +130,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_seoyeon_2": {
         name: "Seoyeon",
+        background: "assets/images/background/student_room.png",
         text: "\"Phew... finished at last. {name}, thank you so much for helping this much. I wouldn't have finished this today without you.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         sunset: true,
@@ -136,6 +138,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_seoyeon_3": {
         name: "Me",
+        background: "assets/images/background/student_room.png",
         text: "(Seoyeon stretches with a soft smile. She looks tired, but her eyes are clearer and more beautiful than ever.)",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
@@ -167,6 +170,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_why": {
         name: "Seoyeon",
+        background: "assets/images/background/student_room.png",
         text: "\"Well... it's just something that needs to be done. And I hope that if I do my best, the school might improve, even if just a little.\"",
         character: "assets/images/characters/seyoun_shy.png",
         sunset: true,
@@ -181,6 +185,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_home": {
         name: "Seoyeon",
+        background: "assets/images/background/student_room.png",
         text: "\"Oh...? Walk me home? Ah... well, I'd be very grateful if you did...\"",
         character: "assets/images/characters/seyoun_shy.png",
         sunset: true,
@@ -203,6 +208,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_massage": {
         name: "Seoyeon",
+        background: "assets/images/background/student_room.png",
         text: "\"Ah... {name}! So suddenly... (She flinches for a moment, but soon relaxes and closes her eyes) ...That feels great. Thank you.\"",
         character: "assets/images/characters/seyoun_shy.png",
         sunset: true,
@@ -218,6 +224,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_night_talk": {
         name: "Seoyeon",
+        background: "assets/images/background/student_room.png",
         text: "\"{name}... thank you so much for today. When I'm with you, all my tired thoughts vanish. Should we... have lunch together tomorrow too?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         sunset: true,
@@ -226,6 +233,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_dain_encounter": {
         name: "Me",
+        background: "assets/images/background/student_room.png",
         text: "(As we leave the student council room together, we bump into someone in the corridor.)",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
@@ -422,6 +430,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_new_name_share": {
         name: "Me",
+        character: "assets/images/characters/yuna_normal.png",
         text: "\"My name is {name}.\"",
         sunset: true,
         setFlag: "knows_name_yuna",
@@ -537,6 +546,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_nurse_encounter": {
         name: "Me",
+        character: "assets/images/characters/yuna_smile.png",
         text: "(As we leave the warehouse with Yuna, we bump into someone in the corridor.)",
         sunset: true,
         branches: [
@@ -696,6 +706,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain_new_name_share": {
         name: "Me",
+        character: "assets/images/characters/dain_normal.png",
         text: "\"I'm {name}. I'm in Class 2-3, too.\"",
         sunset: true,
         setFlag: "knows_name_dain",
@@ -744,6 +755,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_yuna_encounter": {
         name: "Me",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(Just then, I notice someone passing by the gym window. A pale-skinned girl walks quietly down the corridor.)",
         sunset: true,
         next: "day2_dain_yuna_spot"
@@ -757,6 +769,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_yuna_choice": {
         name: "Me",
+        character: "assets/images/characters/dain_normal.png",
         text: "(Dain seems uneasy looking at Yuna.)",
         choices: [
             { text: "Yuna? She's just quiet, that's all.", next: "day2_dain_yuna_know", condition: "met_yuna", stats: { Dain: { affinity: 2 }, Yuna: { affinity: 2 } } },
@@ -787,6 +800,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_yuna_end": {
         name: "Me",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(Yuna disappears into the distance. Dain still seems bothered but quickly returns to her bright expression.)",
         sunset: true,
         branches: [
@@ -898,6 +912,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_new_name_share": {
         name: "Me",
+        character: "assets/images/characters/nurse_normal.png",
         text: "\"My name is {name}.\"",
         sunset: true,
         setFlag: "knows_name_nurse",
@@ -905,6 +920,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_3": {
         name: "Me",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(The teacher adjusts her glasses and stares at me intently.)",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
@@ -926,6 +942,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_miss": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"Hehe, I like how honest you are. I should give such an honest transfer student a reward, shouldn't I?\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
@@ -948,6 +965,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_rest": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"Is that so? Then go ahead and lie down on that bed. I won't disturb you.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
@@ -955,6 +973,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_aroma": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"Oh, you have sharp senses. This is an aroma oil I blended myself. It's meant to put the mind at ease.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
@@ -962,6 +981,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_night_talk": {
         name: "School Nurse",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(The teacher smiles softly and strokes my hair.) \"Hehe, you came because you wanted more time with me, didn't you? Fine, I'll stay with you a bit longer today, just for you.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
@@ -969,6 +989,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_night_talk_2": {
         name: "Me",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(Chatting with the teacher in the infirmary, the sunset has deepened into dusk. Regretfully, I leave the school, promising to see her again.)",
         background: "assets/images/background/nurse_room.jpg",
         sunset: true,
@@ -1047,6 +1068,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_2": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"Oh, {name}? What brings you here at this hour? Haven't you gone home yet?\"",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
@@ -1054,6 +1076,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_3": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"I have quite a few documents to submit this week... Hehe, I'm showing you such a haggard side of me since your first week.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
@@ -1073,6 +1096,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_work_2": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"Thank you, {name}. You've been a huge help. I would've been here much longer if I were alone.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
@@ -1080,6 +1104,8 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_branch": {
         name: "Me",
+        background: "assets/images/background/teacher_office.png",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(The teacher looks at me quietly, seemingly lost in thought.)",
         sunset: true,
         affinityChar: "Teacher",
@@ -1113,6 +1139,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_normal": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"Well, it's late, so you should head home. I'll finish up and leave, too. You did a great job today!\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
@@ -1120,6 +1147,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_coffee": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"Oh, coffee? Hehe, thank you for the thought. But I can't have a student prepare it for me. I'll give you a delicious candy instead!\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
@@ -1127,6 +1155,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_worry": {
         name: "Homeroom Teacher",
+        background: "assets/images/background/teacher_office.png",
         text: "\"Thank you for worrying about me. I'm okay! I feel so reassured because {name} is such a kind student.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,

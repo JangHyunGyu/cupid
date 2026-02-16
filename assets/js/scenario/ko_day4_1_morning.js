@@ -91,36 +91,42 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_dream": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(어젯밤, 이상한 꿈을 꿨다. 학교에서 있었던 일들이 파노라마처럼 스쳐 지나갔어.)",
         next: "day4_morning_wake"
     },
 
     "day4_morning_wake": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(오늘은… 드디어 그날이다. 어제 밤엔 잠도 제대로 못 잤어.)",
         next: "day4_morning_calendar"
     },
 
     "day4_morning_calendar": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(핸드폰 달력을 확인한다. '토요일' — 빨간 글씨가 유난히 눈에 띈다.)",
         next: "day4_morning_excitement"
     },
 
     "day4_morning_excitement": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(전학 온 지 나흘째. 이렇게 설레는 주말이 올 줄은 몰랐어. 가슴이 쿵쾅거린다.)",
         next: "day4_morning_stretch"
     },
 
     "day4_morning_stretch": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(크게 기지개를 켜고 이불을 걷어찬다. 오늘 하루, 절대 후회 없이 보내야지.)",
         next: "day4_morning_mirror"
     },
 
     "day4_morning_mirror": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(거울 앞에 서니 긴장된 내 얼굴이 보인다. 좀 더 멋있어 보이고 싶은데…)",
         next: "day4_morning_window"
     },
@@ -131,18 +137,21 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_window": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(커튼을 젖히자 눈부신 햇살이 쏟아진다. 밖이 환하다.)",
         next: "day4_morning_weather"
     },
 
     "day4_morning_weather": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(하늘이 끝없이 맑다. 벚꽃 잎이 바람에 날리고, 새들이 지저귄다. 완벽한 토요일 아침이야.)",
         next: "day4_morning_weather2"
     },
 
     "day4_morning_weather2": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(창 너머로 동네 거리가 보인다. 산책하는 사람들, 카페에 들어서는 커플… 나도 곧 저기 있겠지.)",
         next: "day4_morning_kitchen"
     },
@@ -153,12 +162,14 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_kitchen": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(부엌으로 향한다. 냉장고에 뭐가 있나 확인해 볼까.)",
         next: "day4_morning_breakfast_choice"
     },
 
     "day4_morning_breakfast_choice": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(시간이 넉넉하긴 한데… 아침은 어떡하지?)",
         choices: [
             {
@@ -174,30 +185,35 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_breakfast_eat": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(토스트에 잼을 발라 한 입 베어 문다. 바삭한 식감이 잠을 확 깨운다. 역시 먹어야 힘이 나지.)",
         next: "day4_morning_breakfast_done"
     },
 
     "day4_morning_breakfast_skip": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(배가 고프긴 한데, 긴장돼서 뭘 먹어도 맛을 모르겠다. 나가서 뭔가 사 먹자.)",
         next: "day4_morning_breakfast_done"
     },
 
     "day4_morning_breakfast_done": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(좋아, 이제 씻고 준비하자. 시간은 충분해.)",
         next: "day4_morning_groom"
     },
 
     "day4_morning_groom": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(세수하고, 머리를 정리한다. 평소보다 신경 써서 스타일링했다. 향수도… 살짝만 뿌릴까.)",
         next: "day4_morning_nervous"
     },
 
     "day4_morning_nervous": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(거울에 비친 내 모습을 한 번 더 확인한다. 괜찮아, 나쁘지 않아. …그래도 왜 이렇게 떨리지.)",
         next: "day4_morning_closet"
     },
@@ -208,12 +224,14 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_closet": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(옷장을 열었다. 교복 말고 입을 옷이… 생각보다 많지 않다. 뭘 입어야 할까.)",
         next: "day4_morning_outfit"
     },
 
     "day4_morning_outfit": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(뭘 입고 나가지? 첫인상이 중요하니까 신중하게 골라야 해.)",
         choices: [
             {
@@ -231,30 +249,35 @@ Object.assign(SCENARIO[4], {
 
     "day4_outfit_casual": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(역시 편한 게 최고지. 자연스럽게 입는 게 내 스타일이야.)",
         next: "day4_casual_mirror"
     },
 
     "day4_casual_mirror": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(거울 앞에서 한 바퀴 돌아본다. 흰 셔츠에 청바지… 깔끔하고 부담 없어 보인다. 괜찮아.)",
         next: "day4_morning_outfit_done"
     },
 
     "day4_outfit_stylish": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(오늘은 좀 특별하니까. 이 정도면 괜찮겠지?)",
         next: "day4_stylish_mirror"
     },
 
     "day4_stylish_mirror": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(자켓 기장도 맞고, 슬랙스도 다리가 길어 보인다. 평소와 다른 내 모습이 낯설지만… 나쁘지 않다.)",
         next: "day4_morning_outfit_done"
     },
 
     "day4_morning_outfit_done": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(좋아, 옷은 결정했다. 이제 핸드폰 확인하고 나가면 돼.)",
         next: "day4_morning_phone"
     },
@@ -265,12 +288,14 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_phone": {
         name: "나",
+        background: "assets/images/background/room_my.png",
         text: "(핸드폰을 확인하니 메시지가 와 있다.)",
         next: "day4_morning_message_branch"
     },
 
     "day4_morning_message_branch": {
         name: "시스템",
+        background: "assets/images/background/room_my.png",
         text: "",
         branches: [
             // 약속이 하나라도 있으면 → 최고 호감도 히로인 데이트
@@ -311,6 +336,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_reply_seoyeon": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(서연이한테서 메시지가 왔다. 웃는 이모티콘이 귀엽네. 뭐라고 답장하지…)",
         next: "day4_msg_seoyeon_2"
     },
@@ -323,6 +349,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_reply_seoyeon_2": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(연달아 메시지가 온다. 서연이도 기대하고 있나 보다. 나도 빨리 준비해서 나가야지.)",
         next: "day4_seoyeon_ready"
     },
@@ -343,6 +370,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_reply_yuna": {
         name: "나",
+        character: "assets/images/characters/yuna_normal.png",
         text: "(유나답게 짧고 간결하다. 근데 이런 게 유나의 매력이지. '알겠어, 안 늦을게!' 라고 보내자.)",
         next: "day4_msg_yuna_2"
     },
@@ -355,6 +383,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_reply_yuna_2": {
         name: "나",
+        character: "assets/images/characters/yuna_shy.png",
         text: "(…이게 유나식 '같이 가고 싶다'인 거지? 입가에 미소가 번진다.)",
         next: "day4_yuna_ready"
     },
@@ -375,6 +404,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_reply_dain": {
         name: "나",
+        character: "assets/images/characters/dain_laugh.png",
         text: "(느낌표가 엄청 많네… 다인이의 에너지가 메시지에서도 느껴진다. 답장을 보내야지.)",
         next: "day4_msg_dain_2"
     },
@@ -387,6 +417,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_reply_dain_2": {
         name: "나",
+        character: "assets/images/characters/dain_normal.png",
         text: "(맛집 검색까지 시키는 건가… 하긴, 다인이랑 밥 먹는 것도 나쁘지 않다. 아니, 기대된다.)",
         next: "day4_dain_ready"
     },
@@ -407,6 +438,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_reply_nurse": {
         name: "나",
+        character: "assets/images/characters/nurse_normal.png",
         text: "(보건선생님과 미술관이라… 왠지 두근거린다. '네, 꼭 갈게요!'라고 보냈다.)",
         next: "day4_msg_nurse_2"
     },
@@ -419,6 +451,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_reply_nurse_2": {
         name: "나",
+        character: "assets/images/characters/nurse_shy.png",
         text: "(선생님이라고 부르지 말라니… 심장이 멈추는 줄 알았다. 오늘은 정말 특별한 날이 될 것 같다.)",
         next: "day4_nurse_ready"
     },
@@ -439,6 +472,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_reply_teacher": {
         name: "나",
+        character: "assets/images/characters/teacher_normal.png",
         text: "(담임선생님이랑 학교 밖에서 만나다니… 긴장된다. 바로 답장을 보냈다.)",
         next: "day4_msg_teacher_2"
     },
@@ -451,6 +485,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_reply_teacher_2": {
         name: "나",
+        character: "assets/images/characters/teacher_smile.png",
         text: "(담임선생님이 농담을 하다니. 평소에 보여주지 않던 모습이라 더 신선하다. 사복 모습은 어떨까.)",
         next: "day4_teacher_ready"
     },
@@ -467,24 +502,28 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_lastcheck": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(마지막으로 거울을 본다. …괜찮다. 아니, 꽤 괜찮아 보인다. 자신감을 갖자.)",
         next: "day4_morning_wallet"
     },
 
     "day4_morning_wallet": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(지갑, 핸드폰, 열쇠. 하나씩 주머니에 넣는다. 혹시 모르니까 손수건도 챙기자.)",
         next: "day4_morning_lock"
     },
 
     "day4_morning_lock": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(현관문을 나서며 열쇠로 문을 잠근다. 딸깍 — 마치 새로운 하루의 시작을 알리는 소리 같다.)",
         next: "day4_morning_outside"
     },
 
     "day4_morning_outside": {
         name: "나",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(밖으로 나오자 따사로운 바람이 불어온다. 벚꽃 향기가 코끝을 스친다. 거리에는 활기가 넘친다.)",
         background: "assets/images/background/street.png",
         next: "day4_morning_depart"
@@ -492,6 +531,8 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_depart": {
         name: "나",
+        background: "assets/images/background/street.png",
+        character: "assets/images/characters/seyoun_laugh.png",
         text: "(좋아, 준비 완료. 가자!)",
         fade: true,
         next: "day4_arrive"
@@ -542,6 +583,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_no_date_park_weather": {
         name: "나",
+        background: "assets/images/background/park.png",
         text: "(벚꽃 잎이 바람에 날려 어깨 위에 내려앉는다. 아름다운 풍경인데… 혼자 보니까 좀 쓸쓸하다.)",
         next: "day4_no_date_lonely"
     },
@@ -569,6 +611,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_no_date_cafe_sit": {
         name: "나",
+        background: "assets/images/background/cafe.png",
         text: "(커플들이 지나가는 거리를 바라보며 커피를 홀짝인다. 쓴맛이 유독 진하게 느껴진다.)",
         next: "day4_no_date_lonely"
     },
@@ -576,6 +619,7 @@ Object.assign(SCENARIO[4], {
     // --- 합류 지점: 외로움 → 밖으로 나감 ---
     "day4_no_date_lonely": {
         name: "나",
+        background: "assets/images/background/park.png",
         text: "(…이렇게 혼자 토요일을 보내다니. 그래도 가만히만 있을 수는 없어. 좀 걸어 보자.)",
         next: "day4_no_date_wander"
     },
@@ -590,6 +634,7 @@ Object.assign(SCENARIO[4], {
     // --- 우연한 만남 - 호감도 분기 ---
     "day4_no_date_encounter": {
         name: "시스템",
+        background: "assets/images/background/street.png",
         text: "",
         selectByHighestAffinity: true,
         branches: [
@@ -679,18 +724,21 @@ Object.assign(SCENARIO[4], {
     // --- 만남 이후 공통 루트 ---
     "day4_no_date_after_encounter": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(잠시 같이 걸으며 이런저런 얘기를 나눴다. 주말이 이렇게 바뀔 줄이야.)",
         next: "day4_no_date_reflect"
     },
 
     "day4_no_date_reflect": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(약속도 없이 시작한 하루였는데… 이 우연 하나만으로도 오늘이 특별해진 기분이다.)",
         next: "day4_no_date_sunset"
     },
 
     "day4_no_date_sunset": {
         name: "나",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(어느새 노을이 번지기 시작한다. 하늘이 주황빛으로 물든다. 나쁘지 않은 하루였어.)",
         background: "assets/images/background/street.png",
         next: "day4_no_date_evening"
@@ -698,6 +746,8 @@ Object.assign(SCENARIO[4], {
 
     "day4_no_date_evening": {
         name: "나",
+        background: "assets/images/background/street.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(집으로 돌아가는 길. 오늘을 떠올리면 자연스럽게 미소가 지어진다. 월요일이 기대된다.)",
         fade: true,
         next: "day4_night_start"

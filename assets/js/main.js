@@ -82,6 +82,20 @@ const REGISTERED_CG_IDS = new Set([
     // 🔧 새 CG 추가 시 여기에 ID 추가 (예: 'seoyeon_rooftop_cg')
 ]);
 
+/**
+ * 캐릭터 표시 이름 → 내부 키 매핑 (공통 상수)
+ * - 한국어/영어 이름 모두 내부 키로 변환
+ * - UIManager, DialogueSystem, FreeTalkSystem, SceneRenderer 등에서 공유
+ * - 캐릭터 추가/변경 시 여기만 수정하면 전체 반영
+ */
+const CHAR_NAME_MAP = Object.freeze({
+    "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain",
+    "담임선생님": "Teacher", "보건선생님": "Nurse",
+    "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
+    "Teacher": "Teacher", "Nurse": "Nurse",
+    "Homeroom Teacher": "Teacher", "School Nurse": "Nurse"
+});
+
 
 // ============================================================================================
 // 유틸리티 함수 (Utility Functions)
@@ -654,8 +668,12 @@ class SaveManager {
         };
 
         // JSON 문자열로 변환해서 저장
-        localStorage.setItem(this.storageKey, JSON.stringify(saveData));
-        console.log('[SaveManager] 저장 완료:', sceneId);
+        try {
+            localStorage.setItem(this.storageKey, JSON.stringify(saveData));
+            console.log('[SaveManager] 저장 완료:', sceneId);
+        } catch (e) {
+            console.error('[SaveManager] 저장 실패:', e);
+        }
     }
 
     /** 
@@ -684,15 +702,23 @@ class SaveManager {
      * @returns {boolean} 저장된 게임이 있으면 true
      */
     hasSave() {
-        return localStorage.getItem(this.storageKey) !== null;
+        try {
+            return localStorage.getItem(this.storageKey) !== null;
+        } catch (e) {
+            return false;
+        }
     }
 
     /** 
      * 저장 데이터 삭제 (새 게임 시작 시 호출)
      */
     clear() {
-        localStorage.removeItem(this.storageKey);
-        console.log('[SaveManager] 저장 데이터 삭제됨');
+        try {
+            localStorage.removeItem(this.storageKey);
+            console.log('[SaveManager] 저장 데이터 삭제됨');
+        } catch (e) {
+            console.error('[SaveManager] 삭제 실패:', e);
+        }
     }
 }
 
@@ -790,7 +816,11 @@ class GalleryManager {
      * @param {Object} progress - 저장할 갤러리 데이터
      */
     saveProgress(progress) {
-        localStorage.setItem(this.storageKey, JSON.stringify(progress));
+        try {
+            localStorage.setItem(this.storageKey, JSON.stringify(progress));
+        } catch (e) {
+            console.error('[GalleryManager] 갤러리 데이터 저장 실패:', e);
+        }
     }
 
     /** 
@@ -999,14 +1029,8 @@ class UIManager {
         this.modalConfirmBtn = document.getElementById('modal-confirm-btn');
         this.modalCancelBtn = document.getElementById('modal-cancel-btn');
 
-        // 캐릭터 표시 이름 → 내부 키 매핑 (호감도 조회 등에 사용)
-        this.charNameMap = {
-            "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain",
-            "담임선생님": "Teacher", "보건선생님": "Nurse",
-            "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
-            "Teacher": "Teacher", "Nurse": "Nurse",
-            "Homeroom Teacher": "Teacher", "School Nurse": "Nurse"
-        };
+        // 캐릭터 표시 이름 → 내부 키 매핑 (공통 상수 참조)
+        this.charNameMap = CHAR_NAME_MAP;
 
         // 설정 관련 이벤트 초기화
         this.bindSettingsEvents();
@@ -1490,17 +1514,26 @@ class UIManager {
         modal.style.display = 'flex';
 
         // 호감도 표시 설정 불러오기
-        const savedSetting = localStorage.getItem('showAffinity');
-        document.getElementById('affinityToggle').checked = savedSetting === null ? true : savedSetting === 'true';
+        try {
+            const savedSetting = localStorage.getItem('showAffinity');
+            document.getElementById('affinityToggle').checked = savedSetting === null ? true : savedSetting === 'true';
 
-        // 볼륨 설정 불러오기
-        const bgmVol = localStorage.getItem('bgmVolume') || 0.5;
-        const sfxVol = localStorage.getItem('sfxVolume') || 0.5;
+            // 볼륨 설정 불러오기
+            const bgmVol = localStorage.getItem('bgmVolume') || 0.5;
+            const sfxVol = localStorage.getItem('sfxVolume') || 0.5;
 
-        document.getElementById('bgmVolume').value = bgmVol * 100;
-        document.getElementById('sfxVolume').value = sfxVol * 100;
-        document.getElementById('bgmVolumeVal').textContent = Math.round(bgmVol * 100) + '%';
-        document.getElementById('sfxVolumeVal').textContent = Math.round(sfxVol * 100) + '%';
+            document.getElementById('bgmVolume').value = bgmVol * 100;
+            document.getElementById('sfxVolume').value = sfxVol * 100;
+            document.getElementById('bgmVolumeVal').textContent = Math.round(bgmVol * 100) + '%';
+            document.getElementById('sfxVolumeVal').textContent = Math.round(sfxVol * 100) + '%';
+        } catch (e) {
+            // 프라이빗 브라우징 등에서 localStorage 사용 불가 시 기본값 사용
+            document.getElementById('affinityToggle').checked = true;
+            document.getElementById('bgmVolume').value = 50;
+            document.getElementById('sfxVolume').value = 50;
+            document.getElementById('bgmVolumeVal').textContent = '50%';
+            document.getElementById('sfxVolumeVal').textContent = '50%';
+        }
     }
 
     /** 설정 모달 닫기 */
@@ -1517,7 +1550,11 @@ class UIManager {
     saveSettings(currentSceneId, getSceneFn) {
         // 호감도 표시 설정 저장
         const showAffinity = document.getElementById('affinityToggle').checked;
-        localStorage.setItem('showAffinity', showAffinity);
+        try {
+            localStorage.setItem('showAffinity', showAffinity);
+        } catch (e) {
+            // 프라이빗 브라우징 등에서 localStorage 사용 불가 시 무시
+        }
 
         // 볼륨 설정 저장 및 적용
         const bgmVol = document.getElementById('bgmVolume').value / 100;
@@ -1526,6 +1563,14 @@ class UIManager {
         if (window.soundManager) {
             soundManager.setBgmVolume(bgmVol);
             soundManager.setSfxVolume(sfxVol);
+        }
+
+        // 볼륨 설정도 localStorage에 저장 (새로고침 후에도 유지)
+        try {
+            localStorage.setItem('bgmVolume', bgmVol);
+            localStorage.setItem('sfxVolume', sfxVol);
+        } catch (e) {
+            // 프라이빗 브라우징 등에서 localStorage 사용 불가 시 무시
         }
 
         this.closeSettingsModal();
@@ -1578,14 +1623,8 @@ class DialogueSystem {
          */
         this.typingSpeed = 30;
 
-        /** 캐릭터 표시 이름 → 내부 키 매핑 */
-        this.charNameMap = {
-            "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain",
-            "담임선생님": "Teacher", "보건선생님": "Nurse",
-            "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
-            "Teacher": "Teacher", "Nurse": "Nurse",
-            "Homeroom Teacher": "Teacher", "School Nurse": "Nurse"
-        };
+        /** 캐릭터 표시 이름 → 내부 키 매핑 (공통 상수 참조) */
+        this.charNameMap = CHAR_NAME_MAP;
 
         /** 캐릭터 이름 → 이미지 파일명 매핑 (말하기 애니메이션용) */
         this.charFileMap = {
@@ -1901,14 +1940,8 @@ class FreeTalkSystem {
         /** 현재 프리토킹 씬의 ID */
         this.currentSceneId = null;
 
-        /** 캐릭터 이름 매핑 */
-        this.charNameMap = {
-            "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain",
-            "담임선생님": "Teacher", "보건선생님": "Nurse",
-            "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
-            "Teacher": "Teacher", "Nurse": "Nurse",
-            "Homeroom Teacher": "Teacher", "School Nurse": "Nurse"
-        };
+        /** 캐릭터 이름 매핑 (공통 상수 참조) */
+        this.charNameMap = CHAR_NAME_MAP;
     }
 
     /** 
@@ -2752,14 +2785,8 @@ class SceneRenderer {
         /** 마지막으로 설정한 배경 URL (중복 로딩 방지용) */
         this.lastBgUrl = "";
 
-        /** 캐릭터 이름 매핑 */
-        this.charNameMap = {
-            "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain",
-            "담임선생님": "Teacher", "보건선생님": "Nurse",
-            "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
-            "Teacher": "Teacher", "Nurse": "Nurse",
-            "Homeroom Teacher": "Teacher", "School Nurse": "Nurse"
-        };
+        /** 캐릭터 이름 매핑 (공통 상수 참조) */
+        this.charNameMap = CHAR_NAME_MAP;
     }
 
     /** 
@@ -3744,17 +3771,37 @@ class GameEngine {
         // 📌 입력값 가져와서 앞뒤 공백 제거
         const name = this.uiManager.playerNameInput.value.trim();
 
-        // 📌 이름 유효성 검사 정규식 (한글 1~6자 또는 영문 1~12자)
-        const isKorean = /[가-힣]/.test(name);
-        const nameRegex = isKorean ? /^[가-힣]{1,6}$/ : /^[a-zA-Z]{1,12}$/;
+        // 📌 이름 유효성 검사 (한글 1~6자 또는 영문 1~12자)
+        const isEn = document.documentElement.lang === 'en';
+        const hasKorean = /[가-힣]/.test(name);
+        const hasJamo = /[ㄱ-ㅎㅏ-ㅣ]/.test(name);
+        const hasEnglish = /[a-zA-Z]/.test(name);
+        const hasMixed = (hasKorean || hasJamo) && hasEnglish;
+
+        let msg = '';
+
+        if (hasMixed) {
+            // 한영 혼합 입력
+            msg = isEn
+                ? "Please use only Korean or only English. Mixing is not allowed."
+                : "한글과 영문을 섞어서 사용할 수 없습니다.";
+        } else if (hasJamo) {
+            // 한글 자모만 입력 (ㄱ, ㅏ 등)
+            msg = isEn
+                ? "Please enter complete Korean characters (e.g., 가, not ㄱ)."
+                : "완성된 한글을 입력해주세요. (예: ㄱ → 가)";
+        } else {
+            // 일반 유효성 검사
+            const nameRegex = hasKorean ? /^[가-힣]{1,6}$/ : /^[a-zA-Z]{1,12}$/;
+            if (!nameRegex.test(name)) {
+                msg = isEn
+                    ? "Please enter a name: 1-12 English letters or 1-6 Korean characters."
+                    : "이름은 한글 1~6자 또는 영문 1~12자로 입력해주세요.";
+            }
+        }
 
         // ❌ 유효하지 않은 이름인 경우
-        if (!nameRegex.test(name)) {
-            // 현재 언어 감지하여 적절한 메시지 표시
-            const isEn = document.documentElement.lang === 'en';
-            const msg = isEn ?
-                "Please enter a name: 1-12 English letters or 1-6 Korean characters." :
-                "이름은 한글 1~6자 또는 영문 1~12자로 입력해주세요.";
+        if (msg) {
 
             // 모달로 오류 메시지 표시 (확인 버튼만)
             await this.uiManager.showModal(msg, true);
@@ -3965,7 +4012,7 @@ class GameEngine {
         } else if (scene.type === 'credits') {
             // 대화창 숨김
             this.uiManager.dialogueBox.style.display = 'none';
-            this.uiManager.choicesContainer.style.display = 'none';
+            this.uiManager.choiceContainer.style.display = 'none';
 
             // 크레딧 레이어 표시
             const creditsLayer = document.getElementById('credits-layer');
@@ -3982,7 +4029,11 @@ class GameEngine {
                 }
 
                 // 스킵 버튼 또는 크레딧 끝나면 다음 씬으로
+                let creditsEnded = false;
                 const endCredits = () => {
+                    if (creditsEnded) return; // 중복 실행 방지
+                    creditsEnded = true;
+                    clearTimeout(creditsTimer);
                     creditsLayer.classList.remove('active');
                     // 크레딧 스크롤 애니메이션 리셋
                     const content = document.getElementById('credits-content');
@@ -3992,14 +4043,14 @@ class GameEngine {
                         content.style.animation = '';
                     }
                     if (scene.next) {
-                        this.showScene(scene.next);
+                        this.renderScene(scene.next);
                     }
                 };
 
                 skipBtn.onclick = endCredits;
 
                 // 크레딧 애니메이션 종료 시 자동 전환 (25초)
-                setTimeout(endCredits, 26000);
+                const creditsTimer = setTimeout(endCredits, 26000);
             }
 
             // ═══════════════════════════════════════════════════════
@@ -4192,8 +4243,12 @@ class GameEngine {
             if (saveData.currentCharacters) {
                 for (const [slot, src] of Object.entries(saveData.currentCharacters)) {
                     if (this.uiManager.charSlots[slot] && src) {
-                        // 저장된 이미지 URL로 캐릭터 표시
-                        this.uiManager.charSlots[slot].innerHTML = `<img src="${src}" alt="character">`;
+                        // 저장된 이미지 URL로 캐릭터 표시 (XSS 방지)
+                        const img = document.createElement('img');
+                        img.src = src;
+                        img.alt = 'character';
+                        this.uiManager.charSlots[slot].innerHTML = '';
+                        this.uiManager.charSlots[slot].appendChild(img);
                     }
                 }
             }
