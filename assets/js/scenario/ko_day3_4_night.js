@@ -663,7 +663,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare": {
         name: "나",
-        text: "(…꿈을 꿈다. 어두운 공간에서 목소리가 들린다.)",
+        text: "(…꿈을 꾼다. 어두운 공간에서 목소리가 들린다.)",
         night: true,
         next: "day3_night_nightmare_voice1"
     },
