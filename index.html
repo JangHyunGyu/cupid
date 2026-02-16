@@ -391,21 +391,91 @@
         .contact-options {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
             margin-top: 20px;
         }
 
         .contact-option {
-            padding: 15px;
-            background: #333;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #2a2a2a, #333);
             color: white;
             text-decoration: none;
-            border-radius: 10px;
-            transition: background 0.2s;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.25s ease;
+            font-size: 0.95rem;
+            font-weight: 500;
         }
 
         .contact-option:hover {
-            background: #444;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 105, 180, 0.3);
+        }
+
+        .contact-option.kakao {
+            background: linear-gradient(135deg, #3A1D1D, #5C3A2E);
+            border-color: rgba(254, 229, 0, 0.15);
+        }
+
+        .contact-option.kakao:hover {
+            background: linear-gradient(135deg, #4A2D2D, #6C4A3E);
+            border-color: rgba(254, 229, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(254, 229, 0, 0.1);
+        }
+
+        .contact-option.email {
+            background: linear-gradient(135deg, #1a2a3a, #2a3a4a);
+            border-color: rgba(100, 180, 255, 0.15);
+        }
+
+        .contact-option.email:hover {
+            background: linear-gradient(135deg, #2a3a4a, #3a4a5a);
+            border-color: rgba(100, 180, 255, 0.4);
+            box-shadow: 0 6px 20px rgba(100, 180, 255, 0.1);
+        }
+
+        .contact-option-icon {
+            font-size: 1.5rem;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .contact-option-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .contact-option-label {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .contact-option-desc {
+            font-size: 0.75rem;
+            color: #999;
+        }
+
+        .contact-close-btn {
+            margin-top: 20px;
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #aaa;
+            cursor: pointer;
+            padding: 8px 28px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .contact-close-btn:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.3);
         }
 
         .lang-switch {
@@ -419,9 +489,11 @@
         }
 
         .archerlab-link {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
             color: white;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.25);
             padding: 4px 10px;
             border-radius: 15px;
             text-decoration: none;
@@ -434,22 +506,135 @@
         }
 
         .archerlab-link:hover {
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(0, 0, 0, 0.6);
         }
 
         .lang-btn {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
             color: white;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.25);
             padding: 5px 15px;
             border-radius: 15px;
             text-decoration: none;
             font-size: 0.8rem;
+            font-weight: 500;
             transition: all 0.2s;
+            cursor: pointer;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
         }
 
         .lang-btn:hover {
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Custom Language Combo Box */
+        .lang-combo {
+            position: relative;
+        }
+
+        .lang-combo-selected {
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 5px 28px 5px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            user-select: none;
+            font-family: 'Pretendard', sans-serif;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .lang-combo-selected::after {
+            content: '';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 5px solid white;
+            transition: transform 0.2s;
+        }
+
+        .lang-combo.open .lang-combo-selected::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .lang-combo-selected:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .lang-combo-dropdown {
+            display: none;
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: rgba(30, 30, 30, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            min-width: 140px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            z-index: 100;
+        }
+
+        .lang-combo.open .lang-combo-dropdown {
+            display: block;
+            animation: dropdownFadeIn 0.15s ease-out;
+        }
+
+        @keyframes dropdownFadeIn {
+            from { opacity: 0; transform: translateY(-6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .lang-combo-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            color: white;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background 0.15s;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .lang-combo-option:hover {
+            background: rgba(255, 105, 180, 0.3);
+        }
+
+        .lang-combo-option.active {
+            background: rgba(255, 105, 180, 0.15);
+            color: #ff69b4;
+        }
+
+        .lang-combo-option .lang-flag {
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        /* Mobile: archerlab link top-left */
+        @media (max-width: 768px) {
+            .archerlab-link {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 11;
+            }
         }
     </style>
 </head>
@@ -493,9 +678,21 @@
     <div class="lang-switch">
         <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab 홈" title="ArcherLab">🏹</a>
         <button id="landing-settings-btn" class="lang-btn"
-            style="cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);">
+            style="border: none;">
             설정</button>
-        <a href="index-en.html" class="lang-btn">English</a>
+        <div class="lang-combo" id="langCombo">
+            <div class="lang-combo-selected" onclick="toggleLangCombo()">
+                <span class="lang-flag">🇰🇷</span> 한국어
+            </div>
+            <div class="lang-combo-dropdown">
+                <div class="lang-combo-option active">
+                    <span class="lang-flag">🇰🇷</span> 한국어
+                </div>
+                <a href="index-en.html" class="lang-combo-option">
+                    <span class="lang-flag">🇺🇸</span> English
+                </a>
+            </div>
+        </div>
     </div>
     <div id="landing-container">
         <div class="content">
@@ -659,13 +856,26 @@
     <!-- Contact Modal -->
     <div id="contactModal" class="modal-overlay" onclick="closeContactModal(event)">
         <div class="modal-container" onclick="event.stopPropagation()">
+            <div style="font-size: 2.5rem; margin-bottom: 5px;">💌</div>
             <h3 class="modal-title">문의하기</h3>
+            <p style="color: #999; font-size: 0.85rem; margin: 0 0 5px;">궁금한 점이나 피드백을 보내주세요!</p>
             <div class="contact-options">
-                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option"> 카카오톡 오픈채팅</a>
-                <a href="mailto:hyungyu@archerlab.dev" class="contact-option"> 이메일 보내기</a>
+                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option kakao">
+                    <span class="contact-option-icon">💬</span>
+                    <span class="contact-option-text">
+                        <span class="contact-option-label">카카오톡 오픈채팅</span>
+                        <span class="contact-option-desc">실시간으로 대화하기</span>
+                    </span>
+                </a>
+                <a href="mailto:hyungyu@archerlab.dev" class="contact-option email">
+                    <span class="contact-option-icon">📧</span>
+                    <span class="contact-option-text">
+                        <span class="contact-option-label">이메일 보내기</span>
+                        <span class="contact-option-desc">hyungyu@archerlab.dev</span>
+                    </span>
+                </a>
             </div>
-            <button onclick="closeContactModal()"
-                style="margin-top: 20px; background: none; border: none; color: #aaa; cursor: pointer;">닫기</button>
+            <button onclick="closeContactModal()" class="contact-close-btn">닫기</button>
         </div>
     </div>
 
@@ -854,6 +1064,17 @@
                 alert('이미 설치되어 있거나 지원하지 않는 브라우저입니다.');
             }
         }
+
+        // Language combo box
+        function toggleLangCombo() {
+            document.getElementById('langCombo').classList.toggle('open');
+        }
+        document.addEventListener('click', function(e) {
+            const combo = document.getElementById('langCombo');
+            if (combo && !combo.contains(e.target)) {
+                combo.classList.remove('open');
+            }
+        });
     </script>
     <script>
         window.addEventListener('load', function () {
