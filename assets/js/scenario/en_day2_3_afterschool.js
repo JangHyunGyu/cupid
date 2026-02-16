@@ -1001,7 +1001,7 @@ Object.assign(SCENARIO[2], {
         text: "(The teacher's eyes widen, then she whispers in my ear with a seductive smile.) \"Oh... {name}, you're much bolder than I thought. Fine, want to come to my house this evening? I'll send you the address. But... it's a secret from your parents, okay?\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
-        stats: { Nurse: { affinity: 30 } },
+        stats: { Nurse: { affinity: 8 } },
         setFlags: ["invited_nurse_home"],
         next: "day2_end"
     },
