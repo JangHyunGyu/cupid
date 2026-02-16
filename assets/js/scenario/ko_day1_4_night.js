@@ -814,7 +814,7 @@ Object.assign(SCENARIO[1], {
 
     "night_surprise_check": {
         name: "나",
-        character: "assets/images/characters/teacher_normal.png",
+        character: null,
         text: "(눈을 감으려는 순간 — 징! 스마트폰에 알림이 울렸다. 이 시간에 누구지...?)",
         background: "assets/images/background/room_my.png",
         night: true,
@@ -826,7 +826,7 @@ Object.assign(SCENARIO[1], {
     "night_surprise_msg": {
         selectByHighestAffinity: true,
         night: true,
-        affinityBranches: [
+        branches: [
             { character: "Seoyeon", next: "night_surprise_seyoun", condition: "has_number_seyoun" },
             { character: "Yuna", next: "night_surprise_yuna", condition: "has_number_yuna" },
             { character: "Dain", next: "night_surprise_dain", condition: "has_number_dain" },
