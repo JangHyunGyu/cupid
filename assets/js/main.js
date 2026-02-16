@@ -389,7 +389,7 @@ class StateManager {
 
     /** 
      * 플레이어 이름 설정
-     * @param {string} name - 새로운 이름 (1~4글자)
+     * @param {string} name - 새로운 이름 (한글 1~6글자 / 영문 1~12글자)
      */
     setPlayerName(name) {
         this.playerName = name;
@@ -3723,16 +3723,15 @@ class GameEngine {
      * 유효한 경우 저장한 뒤 다음 씬으로 진행합니다.
      * 
      * ▶ 이름 규칙:
-     * - 길이: 1~4자
+     * - 길이: 한글 1~6자, 영문 1~12자
      * - 허용 문자: 한글(가-힣), 영문(a-zA-Z)만
      * - 특수문자, 숫자, 공백 불가
      * 
      * ▶ 정규식 설명:
-     * /^[a-zA-Z가-힣]{1,4}$/
+     * /^[가-힣]{1,6}$/ 또는 /^[a-zA-Z]{1,12}$/
      *   ^          : 문자열 시작
-     *   [a-zA-Z]   : 영문 대소문자
-     *   [가-힣]    : 한글 완성형 (가~힣)
-     *   {1,4}      : 1개 이상 4개 이하
+     *   [a-zA-Z]   : 영문 대소문자 (1~12자)
+     *   [가-힣]    : 한글 완성형 (1~6자)
      *   $          : 문자열 끝
      * 
      * ▶ 처리 흐름:
@@ -3745,16 +3744,17 @@ class GameEngine {
         // 📌 입력값 가져와서 앞뒤 공백 제거
         const name = this.uiManager.playerNameInput.value.trim();
 
-        // 📌 이름 유효성 검사 정규식
-        const nameRegex = /^[a-zA-Z가-힣]{1,4}$/;
+        // 📌 이름 유효성 검사 정규식 (한글 1~6자 또는 영문 1~12자)
+        const isKorean = /[가-힣]/.test(name);
+        const nameRegex = isKorean ? /^[가-힣]{1,6}$/ : /^[a-zA-Z]{1,12}$/;
 
         // ❌ 유효하지 않은 이름인 경우
         if (!nameRegex.test(name)) {
             // 현재 언어 감지하여 적절한 메시지 표시
             const isEn = document.documentElement.lang === 'en';
             const msg = isEn ?
-                "Please enter a name between 1-4 characters (Korean or English only)." :
-                "이름은 한글 또는 영문 1~4자로 입력해주세요.";
+                "Please enter a name: 1-12 English letters or 1-6 Korean characters." :
+                "이름은 한글 1~6자 또는 영문 1~12자로 입력해주세요.";
 
             // 모달로 오류 메시지 표시 (확인 버튼만)
             await this.uiManager.showModal(msg, true);
