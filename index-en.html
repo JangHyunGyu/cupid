@@ -711,7 +711,7 @@
             <h1>CUPID</h1>
             <p>A story of your first day at a new school</p>
             <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
-                <button onclick="startGame()" class="start-btn" style="border:none; cursor:pointer;">Start Game</button>
+                <button onclick="startGame()" class="start-btn" style="border:none; cursor:pointer;">New Game</button>
                 <button id="continue-btn" onclick="continueGame()" class="start-btn"
                     style="border:none; cursor:pointer; background: linear-gradient(135deg, #6b5b95, #4a4070); opacity: 0.5;"
                     disabled>Continue</button>
@@ -900,6 +900,13 @@
         window.addEventListener('DOMContentLoaded', () => { soundManager.init(); });
 
         async function startGame() {
+            // Show confirmation if saved game exists (continue button is enabled)
+            const continueBtn = document.getElementById('continue-btn');
+            if (continueBtn && !continueBtn.disabled) {
+                const confirmed = confirm('Your saved game data will be lost.\nDo you still want to start a new game?');
+                if (!confirmed) return;
+            }
+
             soundManager.playBgm('assets/audio/bgm/intro.mp3');
             document.getElementById('landing-container').style.display = 'none';
             document.querySelector('.lang-switch').style.display = 'none';
