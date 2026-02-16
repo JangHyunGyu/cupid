@@ -41,7 +41,7 @@ Object.assign(SCENARIO[5], {
     // █████████████████████████████████████████████████████████████████████████
     "day5_ending_true": {
         name: "Me",
-        text: "(And so, my transfer story comes to a close.)",
+        text: "(And so, my transfer student story comes to an end.)",
         background: null,
         character: null,
         night: true,
@@ -51,7 +51,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_2": {
         name: "Me",
-        text: "(One person I met at a new school.)",
+        text: "(That one person I met at my new school.)",
         night: true,
         fade: true,
         bgm: "ending.mp3",
@@ -59,40 +59,75 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_3": {
         name: "Me",
-        text: "(From the moment we first met to this very moment— my heart never wavered. Not once.)",
+        text: "(From the very first moment we met, until this very moment— my heart never once wavered.)",
         night: true,
         fade: true,
         next: "day5_ending_true_4"
     },
     "day5_ending_true_4": {
         name: "Me",
-        text: "(Like the warmth still lingering on my lips, this feeling will never fade.)",
+        text: "(I remember it. That moment our eyes first met in the hallway. It felt like time had stopped.)",
         night: true,
         fade: true,
         next: "day5_ending_true_5"
     },
     "day5_ending_true_5": {
         name: "Me",
-        text: "(Some would say even feelings like these have an expiration date.)",
+        text: "(I didn't know back then. That one brief glance would change the course of my entire life.)",
         night: true,
         fade: true,
         next: "day5_ending_true_6"
     },
     "day5_ending_true_6": {
         name: "Me",
-        text: "(But I know. This doesn't cool down— it seeps in deeper.)",
+        text: "(I can't pinpoint the exact moment I fell in love. I just— one day, I couldn't imagine a tomorrow without them.)",
         night: true,
         fade: true,
         next: "day5_ending_true_7"
     },
     "day5_ending_true_7": {
         name: "Me",
-        text: "(To love someone completely— is to hold one certainty amidst all the uncertainties of the world.)",
+        text: "(Like warmth that still lingers on my lips, this feeling will never fade.)",
         night: true,
         fade: true,
         next: "day5_ending_true_8"
     },
     "day5_ending_true_8": {
+        name: "Me",
+        text: "(Some would say even feelings like this have an expiration date.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_true_9"
+    },
+    "day5_ending_true_9": {
+        name: "Me",
+        text: "(But I know the truth. This isn't something that cools— it's something that seeps deeper.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_true_10"
+    },
+    "day5_ending_true_10": {
+        name: "Me",
+        text: "(Tomorrow, the day after, even a year from now— I can see myself walking beside this person.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_true_11"
+    },
+    "day5_ending_true_11": {
+        name: "Me",
+        text: "(Let's make a promise. No matter what season comes, our story doesn't end here.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_true_12"
+    },
+    "day5_ending_true_12": {
+        name: "Me",
+        text: "(To love someone completely— is to hold one single certainty amid all the uncertainty in the world.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_true_13"
+    },
+    "day5_ending_true_13": {
         name: "System",
         text: "─── TRUE LOVE END ───",
         night: true,
@@ -105,7 +140,7 @@ Object.assign(SCENARIO[5], {
     // █████████████████████████████████████████████████████████████████████████
     "day5_ending_good": {
         name: "Me",
-        text: "(And so, my transfer story comes to a close.)",
+        text: "(And so, my transfer student story comes to an end.)",
         background: null,
         character: null,
         night: true,
@@ -115,7 +150,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_good_2": {
         name: "Me",
-        text: "(My heart wavered, and I made mistakes.)",
+        text: "(My heart swayed at times, and I made mistakes.)",
         night: true,
         fade: true,
         bgm: "ending.mp3",
@@ -123,40 +158,75 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_good_3": {
         name: "Me",
-        text: "(But in the end— I found where my heart truly belongs.)",
+        text: "(But in the end— I found where my true feelings belonged.)",
         night: true,
         fade: true,
         next: "day5_ending_good_4"
     },
     "day5_ending_good_4": {
         name: "Me",
-        text: "(It doesn't have to be perfect. This is our beginning.)",
+        text: "(Looking back, there were times I was careless with someone else's heart.)",
         night: true,
         fade: true,
         next: "day5_ending_good_5"
     },
     "day5_ending_good_5": {
         name: "Me",
-        text: "(I wasn't lost. It just took a little longer to arrive.)",
+        text: "(I may have given someone hope only to take it away. I'm sorry for that.)",
         night: true,
         fade: true,
         next: "day5_ending_good_6"
     },
     "day5_ending_good_6": {
         name: "Me",
-        text: "(Without the hesitation, there would be no certainty now.)",
+        text: "(But it was because of that wavering that I came to understand what true feelings really are.)",
         night: true,
         fade: true,
         next: "day5_ending_good_7"
     },
     "day5_ending_good_7": {
         name: "Me",
-        text: "(So it's okay. An answer that took this long won't change easily.)",
+        text: "(It doesn't have to be perfect. Because this is our beginning.)",
         night: true,
         fade: true,
         next: "day5_ending_good_8"
     },
     "day5_ending_good_8": {
+        name: "Me",
+        text: "(I wasn't lost. It just took a little longer to arrive.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_9"
+    },
+    "day5_ending_good_9": {
+        name: "Me",
+        text: "(If there had been no hesitation, there would be no conviction now.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_10"
+    },
+    "day5_ending_good_10": {
+        name: "Me",
+        text: "(Imperfect love is still love. No— perhaps it's more precious because it's imperfect.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_11"
+    },
+    "day5_ending_good_11": {
+        name: "Me",
+        text: "(I'll make mistakes again. We'll clash. But with this person, we can fall together and rise together.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_12"
+    },
+    "day5_ending_good_12": {
+        name: "Me",
+        text: "(So it's okay. This answer took a long time to find— that's exactly why it won't easily change.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_13"
+    },
+    "day5_ending_good_13": {
         name: "System",
         text: "─── GOOD END ───",
         night: true,
@@ -169,7 +239,7 @@ Object.assign(SCENARIO[5], {
     // █████████████████████████████████████████████████████████████████████████
     "day5_ending_mayhem": {
         name: "Me",
-        text: "(And so, my transfer story... is it over?)",
+        text: "(And so, my transfer student story… is it really over?)",
         background: null,
         character: null,
         night: true,
@@ -187,40 +257,75 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_mayhem_3": {
         name: "Me",
-        text: "(...Not that excuses will stop me from being chased.)",
+        text: "(…not that excuses like that will stop them from chasing me.)",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_4"
     },
     "day5_ending_mayhem_4": {
         name: "Me",
-        text: "(This chaotic daily life... honestly, it's not bad. I wonder what mayhem tomorrow will bring.)",
+        text: "(One day, three lunch boxes appeared behind the classroom at the same time. That day, I genuinely thought I was done for.)",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_5"
     },
     "day5_ending_mayhem_5": {
         name: "Me",
-        text: "(Maybe it's greedy. Wanting to cherish everyone.)",
+        text: "(\"Is she your girlfriend?\" \"No, I am!\" \"What are you talking about, it's me!\" …The hallway became a battlefield that day.)",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_6"
     },
     "day5_ending_mayhem_6": {
         name: "Me",
-        text: "(But the wind doesn't blow in just one direction, and the stars don't shine alone.)",
+        text: "(I took the chance to sneak away to the rooftop. I'd never run that fast in my entire life.)",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_7"
     },
     "day5_ending_mayhem_7": {
         name: "Me",
-        text: "(There's no conclusion. But hey... this chaotic everyday life is my story.)",
+        text: "(…But someone was already waiting for me on the rooftop. There really was no escape.)",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_8"
     },
     "day5_ending_mayhem_8": {
+        name: "Me",
+        text: "(Maybe it's selfish. Wanting to cherish everyone.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_mayhem_9"
+    },
+    "day5_ending_mayhem_9": {
+        name: "Me",
+        text: "(But the wind never blows in just one direction, and more than one star shines in the sky.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_mayhem_10"
+    },
+    "day5_ending_mayhem_10": {
+        name: "Me",
+        text: "(This chaotic everyday life… honestly, it's not bad. I wonder what kind of mayhem tomorrow will bring.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_mayhem_11"
+    },
+    "day5_ending_mayhem_11": {
+        name: "Me",
+        text: "(Would I make the same choices if I were born again? …I won't answer that. But this smile is real.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_mayhem_12"
+    },
+    "day5_ending_mayhem_12": {
+        name: "Me",
+        text: "(There's no conclusion. But well… this chaotic everyday life is my story.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_mayhem_13"
+    },
+    "day5_ending_mayhem_13": {
         name: "System",
         text: "─── MAYHEM END ───",
         night: true,
@@ -233,7 +338,7 @@ Object.assign(SCENARIO[5], {
     // █████████████████████████████████████████████████████████████████████████
     "day5_ending_harem": {
         name: "Me",
-        text: "(And so, my transfer story— didn't end.)",
+        text: "(And so, my transfer student story— hasn't ended.)",
         background: null,
         character: null,
         night: true,
@@ -243,7 +348,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_2": {
         name: "Me",
-        text: "(Three girlfriends. An absurd reality unfolded before me.)",
+        text: "(Three girlfriends. An impossible reality unfolded before my eyes.)",
         night: true,
         fade: true,
         bgm: "ending.mp3",
@@ -251,40 +356,75 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_3": {
         name: "Me",
-        text: "(Every day is a battlefield. A daily war over who gets treated the best.)",
+        text: "(Every day is a war. Battles break out daily over who gets treated the best.)",
         night: true,
         fade: true,
         next: "day5_ending_harem_4"
     },
     "day5_ending_harem_4": {
         name: "Me",
-        text: "(But strangely... all three of them are smiling. And so am I.)",
+        text: "(Monday is the walking-to-school order, Tuesday is lunch boxes, Wednesday is the walk home… the weekly schedule is a diplomatic war.)",
         night: true,
         fade: true,
         next: "day5_ending_harem_5"
     },
     "day5_ending_harem_5": {
         name: "Me",
-        text: "(Call it greed if you want. As long as these feelings are genuine.)",
+        text: "(One of them watches over me with a quiet smile, another confidently links her arm with mine, and the last one secretly holds my hand from behind.)",
         night: true,
         fade: true,
         next: "day5_ending_harem_6"
     },
     "day5_ending_harem_6": {
         name: "Me",
-        text: "(No regrets. Reflection... I'll leave that to tomorrow's me.)",
+        text: "(Each of their charms is so different. That's why I can't compare them, and that's why I can't give any of them up.)",
         night: true,
         fade: true,
         next: "day5_ending_harem_7"
     },
     "day5_ending_harem_7": {
         name: "Me",
-        text: "(Tomorrow will be busy. The day after, even busier. But— I love these dazzling days.)",
+        text: "(But strangely enough… all three of them are smiling. And so am I.)",
         night: true,
         fade: true,
         next: "day5_ending_harem_8"
     },
     "day5_ending_harem_8": {
+        name: "Me",
+        text: "(Call it greed if you want. As long as there's no lie in this heart.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_harem_9"
+    },
+    "day5_ending_harem_9": {
+        name: "Me",
+        text: "(No regrets. As for reflection… I'll leave that to tomorrow's me.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_harem_10"
+    },
+    "day5_ending_harem_10": {
+        name: "Me",
+        text: "(Of course, no one knows how long this balance will last. There was another subtle standoff today.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_harem_11"
+    },
+    "day5_ending_harem_11": {
+        name: "Me",
+        text: "(But the fact that I even enjoy the tension— maybe I'm already past the point of no return.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_harem_12"
+    },
+    "day5_ending_harem_12": {
+        name: "Me",
+        text: "(Tomorrow will be busy. The day after, even more so. But— these dazzling days, I love them.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_harem_13"
+    },
+    "day5_ending_harem_13": {
         name: "System",
         text: "─── HAREM END ───",
         night: true,
@@ -297,7 +437,7 @@ Object.assign(SCENARIO[5], {
     // █████████████████████████████████████████████████████████████████████████
     "day5_ending_friend": {
         name: "Me",
-        text: "(And so, my transfer story comes to a close.)",
+        text: "(And so, my transfer student story comes to an end.)",
         background: null,
         character: null,
         night: true,
@@ -307,7 +447,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_friend_2": {
         name: "Me",
-        text: "(I couldn't tell them how I felt. No— I chose not to.)",
+        text: "(I couldn't say what I felt. No— I chose not to.)",
         night: true,
         fade: true,
         bgm: "ending.mp3",
@@ -315,40 +455,75 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_friend_3": {
         name: "Me",
-        text: "(The feelings hidden behind the word \"friend\" might surface on some nights.)",
+        text: "(The feelings I hid behind the word \"friend\" might surface on some quiet nights.)",
         night: true,
         fade: true,
         next: "day5_ending_friend_4"
     },
     "day5_ending_friend_4": {
         name: "Me",
-        text: "(Still... I don't regret it. Someday, another chance to be brave will come.)",
+        text: "(I remember. That day on the rooftop, the way the wind swept their hair, and the fingertips that brushed it aside.)",
         night: true,
         fade: true,
         next: "day5_ending_friend_5"
     },
     "day5_ending_friend_5": {
         name: "Me",
-        text: "(Unspoken feelings don't disappear. They just glow quietly, deep in the heart.)",
+        text: "(If I had said \"I like you\" back then, would tonight be any different?)",
         night: true,
         fade: true,
         next: "day5_ending_friend_6"
     },
     "day5_ending_friend_6": {
         name: "Me",
-        text: "(Sometimes the closest distance is also the farthest. The distance called \"friend.\")",
+        text: "(Unspoken feelings don't disappear. They simply glow quietly, deep within the heart.)",
         night: true,
         fade: true,
         next: "day5_ending_friend_7"
     },
     "day5_ending_friend_7": {
         name: "Me",
-        text: "(Some stories linger longer because they never found an ending. This season will be remembered that way.)",
+        text: "(Sometimes the closest distance is also the farthest. The distance called \"friends.\")",
         night: true,
         fade: true,
         next: "day5_ending_friend_8"
     },
     "day5_ending_friend_8": {
+        name: "Me",
+        text: "(Still, it's not all bad. I can see their smile right beside me. That alone is enough to get through the day.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_friend_9"
+    },
+    "day5_ending_friend_9": {
+        name: "Me",
+        text: "(Maybe this isn't cowardice, but a quiet kind of courage. Staying by their side while holding love inside.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_friend_10"
+    },
+    "day5_ending_friend_10": {
+        name: "Me",
+        text: "(Still… I don't regret it. Someday, another chance to be brave will come.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_friend_11"
+    },
+    "day5_ending_friend_11": {
+        name: "Me",
+        text: "(Someday— when the day comes that I can speak this heart, I won't hesitate.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_friend_12"
+    },
+    "day5_ending_friend_12": {
+        name: "Me",
+        text: "(Some stories linger longer precisely because they're left unfinished. This season will be remembered that way.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_friend_13"
+    },
+    "day5_ending_friend_13": {
         name: "System",
         text: "─── FRIEND END ───",
         night: true,
@@ -361,7 +536,7 @@ Object.assign(SCENARIO[5], {
     // █████████████████████████████████████████████████████████████████████████
     "day5_ending_alone": {
         name: "Me",
-        text: "(And so, my transfer story comes to a close.)",
+        text: "(And so, my transfer student story comes to an end.)",
         background: null,
         character: null,
         night: true,
@@ -371,7 +546,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_alone_2": {
         name: "Me",
-        text: "(I didn't find anyone special. But the time I spent at this school was precious.)",
+        text: "(No one special came along. But the time I spent at this school was precious.)",
         night: true,
         fade: true,
         bgm: "ending.mp3",
@@ -379,40 +554,75 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_alone_3": {
         name: "Me",
-        text: "(I've changed from who I was before I transferred— someone who couldn't do anything.)",
+        text: "(I'm different now from who I was before I transferred— back when I felt like I couldn't do anything.)",
         night: true,
         fade: true,
         next: "day5_ending_alone_4"
     },
     "day5_ending_alone_4": {
         name: "Me",
-        text: "(Next time... I'll be a little braver. Another chance will come.)",
+        text: "(What I learned at this school wasn't about romance. It was about facing myself.)",
         night: true,
         fade: true,
         next: "day5_ending_alone_5"
     },
     "day5_ending_alone_5": {
         name: "Me",
-        text: "(Solitude isn't a punishment. It's time spent facing yourself.)",
+        text: "(The laughter in the classroom, the chatter between classes, the sunlight during P.E.— all those ordinary things mattered.)",
         night: true,
         fade: true,
         next: "day5_ending_alone_6"
     },
     "day5_ending_alone_6": {
         name: "Me",
-        text: "(Before loving someone else, I learned that I must first understand myself.)",
+        text: "(Solitude is not a punishment. It's time spent face to face with yourself.)",
         night: true,
         fade: true,
         next: "day5_ending_alone_7"
     },
     "day5_ending_alone_7": {
         name: "Me",
-        text: "(Walking alone on a night road isn't so bad.)",
+        text: "(I learned that before you can love someone else, you must first understand yourself.)",
         night: true,
         fade: true,
         next: "day5_ending_alone_8"
     },
     "day5_ending_alone_8": {
+        name: "Me",
+        text: "(Being alone doesn't mean being lonely. There are things you can only hear when you're on your own.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_alone_9"
+    },
+    "day5_ending_alone_9": {
+        name: "Me",
+        text: "(The sound of the wind, my footsteps, my own heartbeat. Within that quiet rhythm, I was growing.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_alone_10"
+    },
+    "day5_ending_alone_10": {
+        name: "Me",
+        text: "(Next time… I'll be a little braver. I'm sure another chance will come.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_alone_11"
+    },
+    "day5_ending_alone_11": {
+        name: "Me",
+        text: "(There's no need to rush. I can walk at my own pace, on my own path.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_alone_12"
+    },
+    "day5_ending_alone_12": {
+        name: "Me",
+        text: "(Walking alone on a night road isn't so bad. The stars shine brightest, after all, because of the darkness.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_alone_13"
+    },
+    "day5_ending_alone_13": {
         name: "System",
         text: "─── ALONE END ───",
         night: true,

@@ -6,7 +6,7 @@
  *  파일 정보
  * ----------------------------------------------------------------------------
  * 파일명: en_day2_1_morning.js
- * 언어: 영어 (English)
+ * 언어: English
  * 일차: Day 2 (2일차)
  * 시간대: Morning (아침)
  * 
@@ -64,9 +64,14 @@ if (!SCENARIO[2]) {
  * [Day 2 - Morning] 씬 데이터 정의
  */
 Object.assign(SCENARIO[2], {
+
+    // =========================================================================
+    // 아침 기상 시퀀스 (Wake-up Sequence) - day2_start ~ day2_school_gate
+    // =========================================================================
+
     "day2_start": {
         name: "Me",
-        text: "(The moment I open my eyes, the faces I met yesterday flash through my mind. It's the morning of my second day.)",
+        text: "(The moment I open my eyes, the faces I met yesterday flash through my mind. The morning of my second day at the new school — I woke up before the alarm, probably because of the excitement.)",
         background: "assets/images/background/room_my.png",
         bgm: "intro.mp3",
         character: null,
@@ -74,31 +79,96 @@ Object.assign(SCENARIO[2], {
     },
     "day2_start_2": {
         name: "Me",
-        text: "(Yesterday felt as sweet as a dream. But the uniform on my desk tells me this is reality. I have a feeling today will be even better.)",
+        text: "(Yesterday feels as sweet as a dream... but the school uniform on my desk reminds me this is reality. I have a feeling something good will happen today too.)",
+        next: "day2_morning_phone"
+    },
+
+    // --- 아침 스마트폰 확인 ---
+    "day2_morning_phone": {
+        name: "Me",
+        text: "(I pick up the smartphone beside my bed. Maybe someone sent me a message overnight... I check the screen.)",
+        next: "day2_morning_phone_2"
+    },
+    "day2_morning_phone_2": {
+        name: "Me",
+        text: "(No messages. Was I hoping for nothing...? But I'll see everyone at school today anyway. I get out of bed, filled with anticipation.)",
+        next: "day2_morning_routine"
+    },
+
+    // --- 아침 준비 ---
+    "day2_morning_routine": {
+        name: "Me",
+        text: "(I wash my face and stand in front of the mirror. I think I look a bit better than yesterday. I change into my uniform and fix my hair.)",
+        next: "day2_morning_routine_2"
+    },
+    "day2_morning_routine_2": {
+        name: "Me",
+        text: "(My reflection in the uniform looks a little more familiar now. I retie my necktie and straighten my collar.)",
+        next: "day2_breakfast"
+    },
+
+    // --- 아침식사 ---
+    "day2_breakfast": {
+        name: "Me",
+        text: "(I come down to the kitchen and find rice and a fried egg on the table. Mom must have already left for work. Eating alone, but somehow I don't feel lonely today.)",
+        next: "day2_breakfast_2"
+    },
+    "day2_breakfast_2": {
+        name: "Me",
+        text: "(I scarf down breakfast and grab my bag. Checking the clock, I have plenty of time. I can take a leisurely walk to school.)",
         next: "day2_start_3"
     },
+
     "day2_start_3": {
         name: "Me",
-        text: "(Let's go. I wonder what kind of heart-fluttering moments are waiting for me today?)",
+        text: "(Alright, let's go. I wonder what kind of excitement awaits me today?)",
+        next: "day2_road_to_school"
+    },
+
+    // --- 등굣길 풍경 ---
+    "day2_road_to_school": {
+        name: "Me",
+        text: "(Stepping outside, the fresh morning air fills my lungs. A softer breeze than yesterday blows by. It smells like spring.)",
+        background: "assets/images/background/load_school.png",
+        next: "day2_road_to_school_2"
+    },
+    "day2_road_to_school_2": {
+        name: "Me",
+        text: "(Students in the same uniform walk toward school in small groups. Yesterday it all felt so unfamiliar, but today it somehow feels welcoming.)",
+        next: "day2_road_to_school_3"
+    },
+    "day2_road_to_school_3": {
+        name: "Me",
+        text: "(Across the street, a few students from our school glance my way and whisper. I can hear 'Oh, it's the transfer student!' carried by the wind. Looks like I'm still the hot topic.)",
         next: "day2_school_gate"
     },
+
+    // =========================================================================
+    // 교문 앞 (School Gate)
+    // =========================================================================
+
     "day2_school_gate": {
         name: "Me",
-        text: "(The school entrance feels much more welcoming today. My steps are naturally light.)",
+        text: "(Arriving at the school gate, the scenery greets me far more warmly than yesterday. My steps feel light for some reason.)",
         background: "assets/images/background/school.png",
         bgm: "daily2.mp3",
         next: "day2_school_gate_2"
     },
     "day2_school_gate_2": {
         name: "Me",
-        text: "(As I pass through the gate, someone taps me on the shoulder.)",
+        text: "(As I'm about to pass through the gate, someone taps me on the shoulder.)",
         choices: [
             { text: "Turn around.", next: "day2_meet_someone" }
         ]
     },
+
+    // =========================================================================
+    // 히로인 조우 분기 (Heroine Encounter Branch)
+    // =========================================================================
+
     "day2_meet_someone": {
         name: "Me",
-        text: "(I turn around to see...)",
+        text: "(I turn around and there stands...)",
         branches: [
             { next: "day2_meet_yuna", character: "Yuna", condition: "met_yuna" },
             { next: "day2_meet_nurse", character: "Nurse", condition: "met_nurse" },
@@ -108,9 +178,14 @@ Object.assign(SCENARIO[2], {
         ],
         selectByHighestAffinity: true
     },
+
+    // =========================================================================
+    // 유나 루트 (Yuna Route)
+    // =========================================================================
+
     "day2_meet_yuna": {
         name: "Me",
-        text: "(Yuna is standing under the large zelkova tree, her expression as calm as ever. She closes her book and Gazes at me.)",
+        text: "(Under the large zelkova tree beside the school gate, I spot Yuna standing with an indifferent expression. She closes her book and gazes at me quietly.)",
         character: "assets/images/characters/yuna_normal.png",
         branches: [
             { next: "day2_yuna_talk_msg", condition: "sent_msg_day1_yuna" },
@@ -119,16 +194,21 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_talk_msg": {
         name: "Yuna",
-        text: "\"...Hi. Thanks for the message last night. It made my night a little warmer. Later... check the note on your desk.\"",
+        text: "\"...Hi. Thanks for the message last night. It made the night a little warmer. Later... check the note on your desk.\"",
         character: "assets/images/characters/yuna_smile.png",
         next: "day2_classroom"
     },
     "day2_yuna_morning_talk": {
         name: "Yuna",
-        text: "\"...Hi. That 'light' around you is still there today. I'm glad. Later... check the note on your desk.\"",
+        text: "\"...Hi. That 'light' of yours is still the same today. Good. Later... check the note on your desk.\"",
         character: "assets/images/characters/yuna_normal.png",
         next: "day2_classroom"
     },
+
+    // =========================================================================
+    // 보건선생님 루트 (Nurse Route)
+    // =========================================================================
+
     "day2_meet_nurse": {
         name: "System",
         text: "",
@@ -141,26 +221,26 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_nurse_standard": {
         name: "School Nurse",
-        text: "\"Oh, {name}! Good morning. You're looking quite lively today!\"",
+        text: "\"Oh my, {name}! Good morning. You look extra energetic today, don't you?\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_nurse_talk"
     },
     "day2_meet_nurse_high": {
         name: "School Nurse",
-        text: "(She walks up and tidies my uniform with a gentle touch.) \"My dear transfer student, what kind of dream did you have to be so radiant? I actually overslept a bit because I was thinking about you.\"",
+        text: "(She walks up to me and straightens my clothes.) \"My dear transfer student, what did you dream about to be glowing like this? I overslept a little because I was up thinking about you.\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 5 } },
         next: "day2_nurse_talk"
     },
     "day2_meet_nurse_low": {
         name: "School Nurse",
-        text: "(She sighs and looks away as soon as she sees me.) \"Oh... it's you. It's a bit exhausting to see your face first thing in the morning. Head to class if you're done here.\"",
+        text: "(She sighs and turns her head as soon as she sees me.) \"Oh, transfer student... It's hard enough seeing your face this early in the morning. If you don't have any business, please head to class.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk": {
         name: "School Nurse",
-        text: "(She leans in and gives me a playful wink.)",
+        text: "(She walks up to me and gives a little wink.)",
         character: "assets/images/characters/nurse_normal.png",
         branches: [
             { next: "day2_nurse_talk_msg", condition: "sent_msg_day1_nurse" },
@@ -170,22 +250,27 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_talk_msg": {
         name: "School Nurse",
-        text: "\"The message you sent last night was so sweet. It helped me sleep with a smile. If you feel tired today, you know where to find me.\"",
+        text: "\"That message you sent last night was really cute. Thanks to you, I fell asleep in a good mood. If you're not feeling well today, come visit the nurse's office anytime.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk_has_number": {
         name: "School Nurse",
-        text: "\"You weren't up all night thinking about me, were you? Hehe, just kidding. If you need a break, the nurse's office is always open.\"",
+        text: "\"You didn't lose sleep thinking about me last night, did you? Hehe, just kidding. If you're not feeling well today, come visit the nurse's office anytime.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
     "day2_nurse_talk_no_number": {
         name: "School Nurse",
-        text: "\"Only your second day and you're already settling in. Don't push yourself too hard. Come visit me if you feel stressed.\"",
+        text: "\"It's only your second day, but you already look right at home. Don't push yourself too hard, and come hang out at the nurse's office if you need a break.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
+
+    // =========================================================================
+    // 서연 루트 (Seoyeon Route)
+    // =========================================================================
+
     "day2_meet_seoyeon": {
         name: "System",
         text: "",
@@ -198,26 +283,26 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_seoyeon_standard": {
         name: "Seoyeon",
-        text: "\"Morning, {name}! Did you sleep well? You're early again!\"",
+        text: "\"Hi, {name}! Did you sleep well? You're here early again today!\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "day2_seoyeon_talk"
     },
     "day2_meet_seoyeon_high": {
         name: "Seoyeon",
-        text: "(She spots me and runs over with a bright beam.) \"{name}! I was waiting for you! I couldn't sleep much because I was so curious if you were resting well.\"",
+        text: "(Seoyeon was lingering by the school gate, and the moment she spots me, she beams and runs over.) \"{name}! I was waiting for you! I couldn't sleep a wink because I was wondering if you slept well last night!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day2_seoyeon_talk"
     },
     "day2_meet_seoyeon_low": {
         name: "Seoyeon",
-        text: "(She stiffens and looks away as soon as she spots me.) \"...Oh, you're here. At least you're not late. Have a good day.\"",
+        text: "(Seoyeon's expression hardens as soon as she spots me, and she turns her head away.) \"...Oh, you're here? At least you're not late. Well, take care.\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "day2_classroom"
     },
     "day2_seoyeon_talk": {
         name: "Seoyeon",
-        text: "(She catches my eye and offers a warm, shy smile.)",
+        text: "(Seoyeon meets my eyes and smiles softly.)",
         character: "assets/images/characters/seyoun_normal.png",
         branches: [
             { next: "day2_seoyeon_talk_msg", condition: "sent_msg_day1_seyoun" },
@@ -227,46 +312,51 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_talk_msg": {
         name: "Seoyeon",
-        text: "\"Thanks for the message last night! It really cheered me up. Let's do our best today too!\"",
+        text: "\"Thank you so much for the message yesterday! I think I slept well because of it. Let's do our best today too!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_classroom"
     },
     "day2_seoyeon_talk_has_number": {
         name: "Seoyeon",
-        text: "\"Did you get home okay? I wanted to text you last night, but I was so worried I might be bothering you that I just... held it in.\"",
+        text: "\"Did you get home okay yesterday? After we exchanged numbers, I must have debated a hundred times whether to text you... but I held back because I didn't want to bother you.\"",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
-            { text: "I was actually waiting for your text! Please send one next time.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 5 } } },
-            { text: "Ah, I see. I was so tired I passed out immediately.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 1 } } }
+            { text: "I was waiting for your message too! Go ahead and send one now.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "Oh, I see. Honestly, I was so tired I fell asleep the moment I lay down.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 1 } } }
         ]
     },
     "day2_seoyeon_talk_no_number": {
         name: "Seoyeon",
-        text: "\"Did you get home well yesterday? I was a bit worried since it was your first day, but I'm relieved to see you. Let's have a great day!\"",
+        text: "\"Did you get home okay yesterday? I was really worried since it was your first day, but seeing you today puts me at ease. Let's do our best today too!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_classroom"
     },
     "day2_seoyeon_happy": {
         name: "Seoyeon",
-        text: "\"Really? Then from now on, let's share every little thing. Deal? Now, let's head to class together!\"",
+        text: "\"Really? Then starting today, we share everything, even the little things, deal? Come on, let's head to class together!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_classroom"
     },
     "day2_seoyeon_normal": {
         name: "Seoyeon",
-        text: "\"I bet. You must have been exhausted. Well, let's make today even better than yesterday!\"",
+        text: "\"Right? Your first day at a new school must have been exhausting. Come on, let's have another great day!\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "day2_classroom"
     },
+
+    // =========================================================================
+    // 다인 루트 (Dain Route)
+    // =========================================================================
+
     "day2_meet_dain": {
         name: "Dain",
-        text: "\"Yo, {name}! Good morning! You're surprisingly early today!\"",
+        text: "\"Hey, {name}! Good morning! You're here early today!\"",
         character: "assets/images/characters/dain_normal.png",
         next: "day2_dain_talk"
     },
     "day2_dain_talk": {
         name: "Dain",
-        text: "(She gives me an energetic tap on the shoulder.)",
+        text: "(Dain cheerfully bumps my shoulder.)",
         character: "assets/images/characters/dain_laugh.png",
         branches: [
             { next: "day2_dain_talk_msg", condition: "sent_msg_day1_dain" },
@@ -276,49 +366,54 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_talk_msg": {
         name: "Dain",
-        text: "\"I got your message! You're surprisingly sweet, you know? Thanks to you, I slept like a baby. Let's keep this energy up all day!\"",
+        text: "\"Got your message yesterday! You're surprisingly sweet, you know that? Thanks to you, I slept great. Let's make today awesome too!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day2_classroom"
     },
     "day2_dain_talk_dated": {
         name: "Dain",
-        text: "\"Thanks to that tteokbokki yesterday, I'm feeling top-notch today! You too, right?\"",
+        text: "\"Thanks to the tteokbokki yesterday, I'm in top shape today! Same for you, right?\"",
         character: "assets/images/characters/dain_laugh.png",
         choices: [
-            { text: "Yeah! I slept well thanks to you.", next: "day2_dain_happy", stats: { Dain: { affinity: 5 } } },
-            { text: "I'm still a bit tired... You have crazy stamina.", next: "day2_dain_normal", stats: { Dain: { affinity: 1 } } }
+            { text: "Yeah! I slept well thanks to you, Dain.", next: "day2_dain_happy", stats: { Dain: { affinity: 5 } } },
+            { text: "I'm a bit tired actually... Dain, you really have amazing stamina.", next: "day2_dain_normal", stats: { Dain: { affinity: 1 } } }
         ]
     },
     "day2_dain_talk_not_dated": {
         name: "Dain",
-        text: "\"Did you get home okay? I hope you're starting to like it here! Let's have an awesome day!\"",
+        text: "\"Did you get home okay yesterday? It was your first day, so I hope you got to explore the school a bit! Let's make today awesome too!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day2_classroom"
     },
     "day2_dain_happy": {
         name: "Dain",
-        text: "\"Haha! I do have a bit too much energy, don't I? Alright, see you at the gym during lunch! Don't be late!\"",
+        text: "\"Haha! I guess my energy is a bit over the top, huh? Alright, come to the gym at lunch today too! I'll be waiting!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day2_classroom"
     },
     "day2_dain_normal": {
         name: "Dain",
-        text: "\"Aw, come on! You need stamina to survive this school! Now, let's get to class!\"",
+        text: "\"Oh come on, don't be a wimp! Stamina is everything when you're adjusting to school life! Now let's get to class!\"",
         character: "assets/images/characters/dain_normal.png",
         next: "day2_classroom"
     },
+
+    // =========================================================================
+    // 담임선생님 루트 (Teacher Route)
+    // =========================================================================
+
     "day2_meet_teacher": {
         name: "Homeroom Teacher",
-        text: "\"Oh, {name}. Already settling in, I see. It's good to see you arriving early on your second day.\"",
+        text: "\"Oh, isn't that {name}? Only your second day and you're already fitting right in. It's nice to see you here early.\"",
         character: "assets/images/characters/teacher_normal.png",
         next: "day2_teacher_free_talk"
     },
     "day2_teacher_free_talk": {
         type: "free_talk",
         name: "Homeroom Teacher",
-        text: "\"We still have some time before the bell. Anything on your mind?\"",
-        context: "Meeting the homeroom teacher at the school gate and walking to the classroom together. Keep the conversation going actively until it's finished. After the conversation, the teacher will ask for the protagonist's contact information for the emergency contact list. ONLY at the final turn of the conversation, please find a timing to ask for the number or hint that there is official business to discuss.",
-        personality: "A professional teacher who is strict about rules but has a soft spot for the protagonist.",
+        text: "\"We still have some time before class starts. Is there anything you'd like to ask me?\"",
+        context: "You've run into the homeroom teacher at the school gate and are walking to the classroom together. Keep the conversation going until it naturally wraps up. At the very end of the conversation, the teacher will ask for the protagonist's contact info for the emergency contact list. Only on the final turn should you hint at needing to ask about contact information or suggest there's some official business.",
+        personality: "A homeroom teacher who strictly separates work from personal matters, but has a secret soft spot for the protagonist.",
         character: "assets/images/characters/teacher_normal.png",
         affinityChar: "Teacher",
         affinityBranches: [
@@ -330,80 +425,213 @@ Object.assign(SCENARIO[2], {
     },
     "day2_teacher_contact_ask_high": {
         name: "Me",
-        text: "(I walked to class chatting pleasantly with the teacher. She seems to be in a great mood and asks for my number for the emergency contact list.)",
+        text: "(I had a nice chat with the teacher on the way to class. She said I looked like I was in a great mood this morning and asked for my phone number for the emergency contact list.)",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success_high", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "I'll let you know later in the faculty room.", next: "day2_classroom" }
+            { text: "I'll stop by the teacher's office later to give it to you.", next: "day2_classroom" }
         ]
     },
     "day2_teacher_contact_ask_low": {
         name: "Me",
-        text: "(The teacher's expression is stern. I might have been too reckless this morning. She sighs and asks for my number for official records.)",
+        text: "(The teacher's expression hardened. I must have been too rude this early in the morning. She sighed and asked me to provide my phone number for the emergency contact list.)",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
-            { text: "Yes, here it is.", next: "day2_teacher_contact_success_low", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "I'll let you know later in the faculty room.", next: "day2_classroom" }
+            { text: "Sure, here's my number.", next: "day2_teacher_contact_success_low", setFlags: ["has_number_teacher", "has_any_contact"] },
+            { text: "I'll stop by the teacher's office later to give it to you.", next: "day2_classroom" }
         ]
     },
     "day2_teacher_contact_ask": {
         name: "Me",
-        text: "(I walked to class discussing various things with the teacher. She eventually asks for my number for the emergency contact list.)",
+        text: "(I chatted with the teacher about various things on the walk to class. She said she needed my phone number for the emergency contact list.)",
         character: "assets/images/characters/teacher_normal.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success_normal", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "I'll let you know later in the faculty room.", next: "day2_classroom" }
+            { text: "I'll stop by the teacher's office later to give it to you.", next: "day2_classroom" }
         ]
     },
     "day2_teacher_contact_success_high": {
         name: "Homeroom Teacher",
-        text: "\"Thanks, {name}! I used the emergency list as an excuse, but... I actually just wanted to be closer to you. Contact me if school gets tough, okay?\"",
+        text: "\"{name}, thanks for the number! Hehe, I used the emergency contact list as an excuse, but... truth is, I wanted to get closer to you too. If school life gets tough, don't hesitate to call me anytime, okay?\"",
         character: "assets/images/characters/teacher_smile.png",
         stats: { Teacher: { affinity: 15 } },
         next: "day2_classroom"
     },
     "day2_teacher_contact_success_low": {
         name: "Homeroom Teacher",
-        text: "\"...I see. Thank you. This is for official use only, so don't worry. Now, get to class before you're late.\"",
+        text: "\"...Alright, thank you. I'll only use your contact info for official purposes, so don't worry. Now hurry up and get to class before you're late.\"",
         character: "assets/images/characters/teacher_angry.png",
         stats: { Teacher: { affinity: 2 } },
         next: "day2_classroom"
     },
     "day2_teacher_contact_success_normal": {
         name: "Homeroom Teacher",
-        text: "\"Thank you. I'll reach out if anything comes up. Now, let's head in.\"",
+        text: "\"Thank you. I'll reach out if anything comes up. Now, let's head to class.\"",
         character: "assets/images/characters/teacher_normal.png",
         stats: { Teacher: { affinity: 10 } },
         next: "day2_classroom"
     },
 
+    // =========================================================================
+    // 교실 입장 & 반 친구들 (Classroom Arrival)
+    // =========================================================================
+
     "day2_classroom": {
         name: "Me",
-        text: "(I open the classroom door and the air feels much softer than yesterday. Even the other students seem more friendly.)",
+        text: "(Opening the classroom door, a much softer atmosphere than yesterday wraps around me. Even the students' gazes carry a hint of friendliness.)",
         background: "assets/images/background/room_school.png",
         character: null,
+        next: "day2_classroom_greet"
+    },
+    "day2_classroom_greet": {
+        name: "Classmate",
+        text: "\"Hey, transfer student! Good morning! Did you settle in okay yesterday? Our class is pretty chill, right?\"",
+        character: null,
+        next: "day2_classroom_greet_2"
+    },
+    "day2_classroom_greet_2": {
+        name: "Me",
+        text: "(A few classmates greet me casually. Yesterday they looked at me with pure curiosity, but today their smiles are relaxed. I feel like I'm gradually becoming part of this school.)",
+        next: "day2_classroom_settle"
+    },
+    "day2_classroom_settle": {
+        name: "Classmate",
+        text: "(The girl in the front row turns around and says,) \"I saw you hanging out with Seoyeon yesterday. You two seem close! Already made a friend, huh?\"",
+        character: null,
+        next: "day2_classroom_settle_2"
+    },
+    "day2_classroom_settle_2": {
+        name: "Me",
+        text: "\"Oh, haha... Everyone's been so nice to me.\"",
+        next: "day2_classroom_settle_3"
+    },
+    "day2_classroom_settle_3": {
+        name: "Me",
+        text: "(I give a vague answer and sit down. Opening my bag to take out my textbooks... something feels off.)",
         next: "day2_classroom_2"
     },
     "day2_classroom_2": {
         name: "Me",
-        text: "(As I'm about to unpack my bag, I notice a small note tucked into the corner of my desk.)",
+        text: "(As I'm settling in at my desk, I notice a small note tucked in the corner.)",
         choices: [
             { text: "Check the note.", next: "day2_check_note" }
         ]
     },
+
+    // =========================================================================
+    // 쪽지 발견 & 유나 추측 (Note Discovery & Speculation)
+    // =========================================================================
+
     "day2_check_note": {
         name: "Me",
-        text: "(I carefully unfold it. The handwriting is elegant, yet carries a certain coolness.)",
+        text: "(I carefully unfold the note. The handwriting is neat yet somehow cold.)",
         next: "day2_note_content"
     },
     "day2_note_content": {
         name: "System",
-        text: "\"'Come to the library annex backyard during lunch. I have something to tell you.' - Yuna\"",
+        text: "\"'Come to the courtyard behind the library annex at lunch. I have something to tell you.' - Yuna\"",
+        next: "day2_note_reaction"
+    },
+    "day2_note_reaction": {
+        name: "Me",
+        text: "(Yuna...? I read the note again. 'The courtyard behind the library annex'... that's a secluded spot at school. Summoning me with a note like this — it feels secretive.)",
+        next: "day2_note_speculation"
+    },
+    "day2_note_speculation": {
+        name: "Me",
+        text: "(What could she possibly want to say that she'd leave a note like this? If I had her number, I could just ask her directly... but a note — that somehow feels very like her.)",
+        next: "day2_note_speculation_2"
+    },
+    "day2_note_speculation_2": {
+        name: "Me",
+        text: "(Is there anyone who might know about Yuna? I discreetly glance around. But I don't think I should mention the note to just anyone.)",
+        next: "day2_note_speculation_3"
+    },
+    "day2_note_speculation_3": {
+        name: "Me",
+        text: "(I carefully fold the note and slip it into my pocket. I can't wait for lunch already... or maybe 'nervous' is more accurate.)",
+        next: "day2_note_ask_around"
+    },
+    "day2_note_ask_around": {
+        name: "Me",
+        text: "(I casually ask the person sitting next to me.) \"Hey, do you know anyone named Yuna?\"",
+        next: "day2_note_ask_around_2"
+    },
+    "day2_note_ask_around_2": {
+        name: "Classmate",
+        text: "\"Yuna? Hmm... she's not in our class. Maybe another class? Or an upperclassman?\"",
+        character: null,
+        next: "day2_note_ask_around_3"
+    },
+    "day2_note_ask_around_3": {
+        name: "Me",
+        text: "(As expected, nobody knows. Just the name 'Yuna' isn't enough to go on. I'll just have to go there myself at lunch.)",
+        next: "day2_homeroom_start"
+    },
+
+    // =========================================================================
+    // 조회 & 오전 수업 (Homeroom & Morning Classes)
+    // =========================================================================
+
+    "day2_homeroom_start": {
+        name: "Homeroom Teacher",
+        text: "\"Alright, everyone take your seats. Homeroom is starting.\"",
+        character: "assets/images/characters/teacher_normal.png",
+        next: "day2_homeroom_rollcall"
+    },
+    "day2_homeroom_rollcall": {
+        name: "Homeroom Teacher",
+        text: "(The teacher opens the attendance book and starts calling names one by one.) \"...{name}? Transfer student, you're here, right?\"",
+        character: "assets/images/characters/teacher_normal.png",
+        next: "day2_homeroom_rollcall_2"
+    },
+    "day2_homeroom_rollcall_2": {
+        name: "Me",
+        text: "\"Yes, I'm here.\"",
+        next: "day2_homeroom_rollcall_3"
+    },
+    "day2_homeroom_rollcall_3": {
+        name: "Homeroom Teacher",
+        text: "\"Good. It's only your second day, but you look brighter than yesterday. Seems like you're adjusting well.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day2_homeroom_notice"
+    },
+    "day2_homeroom_notice": {
+        name: "Homeroom Teacher",
+        text: "\"One announcement. There will be a school festival planning meeting this Friday, so anyone interested should stay after school.\"",
+        character: "assets/images/characters/teacher_normal.png",
+        next: "day2_homeroom_notice_2"
+    },
+    "day2_homeroom_notice_2": {
+        name: "Me",
+        text: "(A school festival... I just transferred and there's already a festival coming up. I'm getting more and more excited about this school.)",
+        next: "day2_homeroom_event"
+    },
+    "day2_homeroom_event": {
+        name: "Classmate",
+        text: "\"Teacher, question! Will there be a class talent show at the festival?\"",
+        character: null,
+        next: "day2_homeroom_event_2"
+    },
+    "day2_homeroom_event_2": {
+        name: "Homeroom Teacher",
+        text: "\"Well, nothing's decided yet, but... if our class enters, we'd obviously win first place, right?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day2_homeroom_event_3"
+    },
+    "day2_homeroom_event_3": {
+        name: "Me",
+        text: "(The classroom fills with chuckles. The teacher actually has a pretty good sense of humor.)",
         next: "day2_morning_class"
     },
+
+    // =========================================================================
+    // 오전 수업 & 유나 쪽지 독백 (Morning Class & Inner Monologue)
+    // =========================================================================
+
     "day2_morning_class": {
         name: "Me",
-        text: "(Yuna's note lingers in my mind all through class. What could it be?)",
+        text: "(Throughout the entire class, Yuna's note won't leave my mind. What on earth does she want to tell me?)",
         branches: [
             { next: "day2_morning_class_yuna_msg", condition: "sent_msg_day1_yuna" },
             { next: "day2_morning_class_yuna_met", condition: "met_yuna" },
@@ -412,17 +640,127 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_class_yuna_msg": {
         name: "Me",
-        text: "(Yuna... we just texted last night. Why leave a note instead of calling? I chuckle, finding it very much like her.)",
-        next: "day2_lunch_time"
+        text: "(Yuna, who I exchanged messages with last night... She has my number, so why leave a note? The thought that this is so very her makes me chuckle.)",
+        next: "day2_morning_class_focus"
     },
     "day2_morning_class_yuna_met": {
         name: "Me",
-        text: "(Yuna... the girl from yesterday. Why would she leave a note like this? I'm getting more and more curious.)",
-        next: "day2_lunch_time"
+        text: "(Yuna, who I met yesterday... Did she really leave this note for me? A secret... I can't help but wonder what it could be.)",
+        next: "day2_morning_class_focus"
     },
     "day2_morning_class_yuna_new": {
         name: "Me",
-        text: "(Yuna...? I haven't heard that name yet. Who could she be, and why is she looking for me?)",
+        text: "(Yuna...? That's a name I didn't hear yesterday. Who is she, and why would she leave a note like this for me?)",
+        next: "day2_morning_class_focus"
+    },
+
+    // --- 수업 중 집중과 산만함 ---
+    "day2_morning_class_focus": {
+        name: "Me",
+        text: "(The math formulas on the blackboard aren't registering at all. The words 'courtyard behind the library annex' just keep echoing in my head.)",
+        next: "day2_morning_class_quiz"
+    },
+    "day2_morning_class_quiz": {
+        name: "Math Teacher",
+        text: "\"Alright, who wants to try this problem? ...Transfer student, how about you?\"",
+        character: null,
+        next: "day2_morning_class_quiz_2"
+    },
+    "day2_morning_class_quiz_2": {
+        name: "Me",
+        text: "(Oh no, I was completely zoned out. I hastily look at the blackboard, but the formulas won't register at all.)",
+        choices: [
+            { text: "Boldly walk up and give it a shot.", next: "day2_quiz_try" },
+            { text: "Honestly say I don't know.", next: "day2_quiz_pass" }
+        ]
+    },
+    "day2_quiz_try": {
+        name: "Me",
+        text: "(Standing at the blackboard, I fumble through the formula. Luckily, it's something I previewed yesterday, so it vaguely comes back to me.)",
+        next: "day2_quiz_try_2"
+    },
+    "day2_quiz_try_2": {
+        name: "Math Teacher",
+        text: "\"Oh, not bad, transfer student! That's correct. Well done — go back to your seat.\"",
+        character: null,
+        next: "day2_quiz_result"
+    },
+    "day2_quiz_pass": {
+        name: "Me",
+        text: "\"I'm sorry, I haven't quite caught up with the material yet...\"",
+        next: "day2_quiz_pass_2"
+    },
+    "day2_quiz_pass_2": {
+        name: "Math Teacher",
+        text: "\"That's alright, you just transferred. Try to preview the material next time.\"",
+        character: null,
+        next: "day2_quiz_result"
+    },
+    "day2_quiz_result": {
+        name: "Me",
+        text: "(The class moves on, one way or another. I can't help being distracted by the note, but class is class.)",
+        next: "day2_second_class"
+    },
+
+    // --- 2교시 ---
+    "day2_second_class": {
+        name: "Me",
+        text: "(Without a break, the second period starts — Korean language class. The teacher tells us to take out the handout from yesterday.)",
+        next: "day2_second_class_2"
+    },
+    "day2_second_class_2": {
+        name: "Me",
+        text: "(Rummaging through the handouts, my fingertips brush against the note in my pocket. My heart skips a beat.)",
+        next: "day2_second_class_3"
+    },
+    "day2_second_class_3": {
+        name: "Me",
+        text: "(There are still two hours until lunch. Why is time crawling so slowly...)",
+        next: "day2_last_class_before_lunch"
+    },
+
+    // =========================================================================
+    // 점심 직전 수업 & 전환 (Pre-Lunch Transition)
+    // =========================================================================
+
+    "day2_last_class_before_lunch": {
+        name: "Me",
+        text: "(Third period, English class. The teacher's pronunciation reaches my ears, but my mind is consumed with thoughts of lunchtime.)",
+        next: "day2_last_class_before_lunch_2"
+    },
+    "day2_last_class_before_lunch_2": {
+        name: "Me",
+        text: "(The courtyard behind the library annex... I've never even been there. Why would Yuna pick such a secluded place?)",
+        next: "day2_last_class_before_lunch_3"
+    },
+    "day2_last_class_before_lunch_3": {
+        name: "Me",
+        text: "(It's not dangerous or anything, right...? No, it's just a note from a fellow student. But still, my heart is pounding.)",
+        next: "day2_last_class_before_lunch_4"
+    },
+    "day2_last_class_before_lunch_4": {
+        name: "Me",
+        text: "(I sneak a glance at the clock. 11:40... twenty minutes until lunch. Come on, time, move faster.)",
+        next: "day2_class_end_bell"
+    },
+    "day2_class_end_bell": {
+        name: "System",
+        text: "- Ding dong dang dong -",
+        next: "day2_class_end"
+    },
+    "day2_class_end": {
+        name: "Me",
+        text: "(The lunch bell finally rings! The classroom instantly erupts into commotion. Students rush out toward the cafeteria.)",
+        next: "day2_packing_up"
+    },
+    "day2_packing_up": {
+        name: "Me",
+        text: "(I hurriedly pack my textbooks into my bag. I check the note in my pocket one more time. 'The courtyard behind the library annex'... Alright, let's go.)",
+        next: "day2_lunch_decision"
+    },
+    "day2_lunch_decision": {
+        name: "Me",
+        text: "(Should I eat first and then go, or head straight to the library annex...? Yuna comes first. I can always eat later.)",
         next: "day2_lunch_time"
     }
 });

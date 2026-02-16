@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ============================================================================
  * CUPID - Day 2 Morning Scenario (Korean Version)
  * ============================================================================
@@ -64,6 +64,11 @@ if (!SCENARIO[2]) {
  * [Day 2 - Morning] 씬 데이터 정의
  */
 Object.assign(SCENARIO[2], {
+
+    // =========================================================================
+    // 아침 기상 시퀀스 (Wake-up Sequence) - day2_start ~ day2_school_gate
+    // =========================================================================
+
     "day2_start": {
         name: "나",
         text: "(눈을 뜨자마자 어제 만난 얼굴들이 스쳐 지나간다. 전학 이틀째의 아침, 설렘 때문인지 알람이 울리기도 전에 잠에서 깨버렸다.)",
@@ -75,13 +80,73 @@ Object.assign(SCENARIO[2], {
     "day2_start_2": {
         name: "나",
         text: "(어제의 일들이 마치 꿈처럼 달콤하게 느껴지지만... 책상 위에 놓인 교복이 이곳이 현실임을 말해준다. 오늘도 좋은 일이 생길 것 같아.)",
+        next: "day2_morning_phone"
+    },
+
+    // --- 아침 스마트폰 확인 ---
+    "day2_morning_phone": {
+        name: "나",
+        text: "(침대 옆 스마트폰을 집어 든다. 혹시 어젯밤 사이에 누가 메시지를 보내지 않았을까... 화면을 확인해본다.)",
+        next: "day2_morning_phone_2"
+    },
+    "day2_morning_phone_2": {
+        name: "나",
+        text: "(특별한 메시지는 없다. 괜히 기대한 건가... 하지만 오늘 학교에서 직접 만나면 되니까. 기대감을 안고 침대에서 일어난다.)",
+        next: "day2_morning_routine"
+    },
+
+    // --- 아침 준비 ---
+    "day2_morning_routine": {
+        name: "나",
+        text: "(세수를 하고 거울 앞에 선다. 어제보다 조금은 나아진 얼굴인 것 같다. 교복으로 갈아입고 머리를 정돈한다.)",
+        next: "day2_morning_routine_2"
+    },
+    "day2_morning_routine_2": {
+        name: "나",
+        text: "(거울 속 교복 차림의 내 모습이 이제는 조금 익숙하다. 넥타이 매듭을 한 번 고쳐 매고, 흐트러진 옷깃을 바로잡는다.)",
+        next: "day2_breakfast"
+    },
+
+    // --- 아침식사 ---
+    "day2_breakfast": {
+        name: "나",
+        text: "(부엌에 내려오니 식탁 위에 밥과 계란후라이가 놓여 있다. 엄마는 벌써 출근한 모양이다. 혼자 먹는 아침이지만, 왠지 오늘은 외롭지 않다.)",
+        next: "day2_breakfast_2"
+    },
+    "day2_breakfast_2": {
+        name: "나",
+        text: "(후다닥 아침을 해치우고 가방을 챙긴다. 시계를 보니 여유 있는 시간이다. 느긋하게 등교할 수 있겠어.)",
         next: "day2_start_3"
     },
+
     "day2_start_3": {
         name: "나",
         text: "(자, 가보자. 오늘은 또 어떤 떨림이 나를 기다리고 있을까?)",
+        next: "day2_road_to_school"
+    },
+
+    // --- 등굣길 풍경 ---
+    "day2_road_to_school": {
+        name: "나",
+        text: "(집을 나서자 아침 공기가 상쾌하게 폐를 채운다. 어제보다 부드러운 바람이 불어온다. 봄 냄새가 난다.)",
+        background: "assets/images/background/load_school.png",
+        next: "day2_road_to_school_2"
+    },
+    "day2_road_to_school_2": {
+        name: "나",
+        text: "(같은 교복을 입은 학생들이 삼삼오오 짝을 지어 학교 쪽으로 걸어간다. 어제는 낯설기만 하던 풍경인데, 오늘은 어딘가 반갑게 느껴진다.)",
+        next: "day2_road_to_school_3"
+    },
+    "day2_road_to_school_3": {
+        name: "나",
+        text: "(길 건너편에서 우리 학교 학생 몇 명이 내 쪽을 보며 수군거린다. '아, 전학생이다!' 하는 소리가 바람에 실려 들려온다. 아직 학교의 핫이슈인 모양이다.)",
         next: "day2_school_gate"
     },
+
+    // =========================================================================
+    // 교문 앞 (School Gate)
+    // =========================================================================
+
     "day2_school_gate": {
         name: "나",
         text: "(교문 앞에 도착하자 어제보다 훨씬 다정하게 느껴지는 풍경이 나를 반긴다. 왠지 모르게 발걸음이 가볍다.)",
@@ -96,6 +161,11 @@ Object.assign(SCENARIO[2], {
             { text: "뒤를 돌아본다.", next: "day2_meet_someone" }
         ]
     },
+
+    // =========================================================================
+    // 히로인 조우 분기 (Heroine Encounter Branch)
+    // =========================================================================
+
     "day2_meet_someone": {
         name: "나",
         text: "(뒤를 돌아보자 그곳에는...)",
@@ -108,6 +178,11 @@ Object.assign(SCENARIO[2], {
         ],
         selectByHighestAffinity: true
     },
+
+    // =========================================================================
+    // 유나 루트 (Yuna Route)
+    // =========================================================================
+
     "day2_meet_yuna": {
         name: "나",
         text: "(교문 옆 커다란 느티나무 아래, 유나가 무심한 표정으로 서 있는 것이 보인다. 그녀는 책을 덮고 나를 가만히 바라본다.)",
@@ -129,6 +204,11 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/yuna_normal.png",
         next: "day2_classroom"
     },
+
+    // =========================================================================
+    // 보건선생님 루트 (Nurse Route)
+    // =========================================================================
+
     "day2_meet_nurse": {
         name: "시스템",
         text: "",
@@ -186,6 +266,11 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
+
+    // =========================================================================
+    // 서연 루트 (Seoyeon Route)
+    // =========================================================================
+
     "day2_meet_seoyeon": {
         name: "시스템",
         text: "",
@@ -258,6 +343,11 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/seyoun_normal.png",
         next: "day2_classroom"
     },
+
+    // =========================================================================
+    // 다인 루트 (Dain Route)
+    // =========================================================================
+
     "day2_meet_dain": {
         name: "다인",
         text: "\"어어, {name}! 좋은 아침! 오늘따라 일찍 왔네?\"",
@@ -307,6 +397,11 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/dain_normal.png",
         next: "day2_classroom"
     },
+
+    // =========================================================================
+    // 담임선생님 루트 (Teacher Route)
+    // =========================================================================
+
     "day2_meet_teacher": {
         name: "담임선생님",
         text: "\"어라, {name} 아니니? 전학 이틀째인데 벌써 학교에 적응한 모양이구나. 일찍 오는 모습이 보기 좋다.\"",
@@ -377,11 +472,42 @@ Object.assign(SCENARIO[2], {
         next: "day2_classroom"
     },
 
+    // =========================================================================
+    // 교실 입장 & 반 친구들 (Classroom Arrival)
+    // =========================================================================
+
     "day2_classroom": {
         name: "나",
         text: "(교실 문을 열자, 어제보다 훨씬 부드러운 공기가 나를 감싼다. 아이들의 시선에도 호의가 섞여 있다.)",
         background: "assets/images/background/room_school.png",
         character: null,
+        next: "day2_classroom_greet"
+    },
+    "day2_classroom_greet": {
+        name: "반 친구",
+        text: "\"오, 전학생! 좋은 아침! 어제 잘 적응했어? 우리 반 분위기 괜찮지?\"",
+        character: null,
+        next: "day2_classroom_greet_2"
+    },
+    "day2_classroom_greet_2": {
+        name: "나",
+        text: "(몇몇 아이들이 가볍게 인사를 건네준다. 어제는 호기심 가득한 눈빛이었는데, 오늘은 편안한 미소가 섞여 있다. 이 학교에 조금씩 스며들고 있는 느낌이다.)",
+        next: "day2_classroom_settle"
+    },
+    "day2_classroom_settle": {
+        name: "반 친구",
+        text: "(앞자리 여학생이 돌아보며 말한다.) \"어제 서연이랑 같이 다니는 거 봤는데, 너희 사이 좋더라? 벌써 친구 만든 거야?\"",
+        character: null,
+        next: "day2_classroom_settle_2"
+    },
+    "day2_classroom_settle_2": {
+        name: "나",
+        text: "\"아, 하하... 다들 친절하게 대해줘서요.\"",
+        next: "day2_classroom_settle_3"
+    },
+    "day2_classroom_settle_3": {
+        name: "나",
+        text: "(적당히 둘러대고 자리에 앉는다. 가방을 풀고 교과서를 꺼내려는데... 뭔가 이상하다.)",
         next: "day2_classroom_2"
     },
     "day2_classroom_2": {
@@ -391,6 +517,11 @@ Object.assign(SCENARIO[2], {
             { text: "쪽지를 확인한다.", next: "day2_check_note" }
         ]
     },
+
+    // =========================================================================
+    // 쪽지 발견 & 유나 추측 (Note Discovery & Speculation)
+    // =========================================================================
+
     "day2_check_note": {
         name: "나",
         text: "(조심스레 쪽지를 펼친다. 정갈하면서도 어딘가 차가운 글씨체가 눈에 띈다.)",
@@ -399,8 +530,105 @@ Object.assign(SCENARIO[2], {
     "day2_note_content": {
         name: "시스템",
         text: "\"'점심시간에 도서관 별관 뒤뜰로 와. 할 말이 있어.' - 유나\"",
+        next: "day2_note_reaction"
+    },
+    "day2_note_reaction": {
+        name: "나",
+        text: "(유나...? 쪽지를 다시 한 번 읽어본다. '도서관 별관 뒤뜰'이라... 학교 구석진 곳이잖아. 이런 방식으로 호출한다니, 뭔가 비밀스러운 느낌이 든다.)",
+        next: "day2_note_speculation"
+    },
+    "day2_note_speculation": {
+        name: "나",
+        text: "(대체 무슨 말을 하려고 이런 쪽지를 남긴 걸까? 연락처라도 있다면 직접 물어볼 텐데... 쪽지라니, 어딘가 그녀답다는 생각이 든다.)",
+        next: "day2_note_speculation_2"
+    },
+    "day2_note_speculation_2": {
+        name: "나",
+        text: "(혹시 유나에 대해 아는 사람이 있을까? 주변을 슬쩍 둘러본다. 하지만 쪽지 내용을 함부로 말할 순 없을 것 같다.)",
+        next: "day2_note_speculation_3"
+    },
+    "day2_note_speculation_3": {
+        name: "나",
+        text: "(쪽지를 조심스럽게 접어 주머니에 넣는다. 점심시간이 벌써부터 기다려진다... 아니, 긴장된다는 표현이 더 맞으려나.)",
+        next: "day2_note_ask_around"
+    },
+    "day2_note_ask_around": {
+        name: "나",
+        text: "(옆자리 친구에게 슬쩍 물어본다.) \"혹시... 유나라는 애 알아?\"",
+        next: "day2_note_ask_around_2"
+    },
+    "day2_note_ask_around_2": {
+        name: "반 친구",
+        text: "\"유나? 음... 우리 반은 아닌데? 다른 반인가? 아니면 선배?\"",
+        character: null,
+        next: "day2_note_ask_around_3"
+    },
+    "day2_note_ask_around_3": {
+        name: "나",
+        text: "(역시 아는 사람이 없다. 유나라는 이름만으로는 정보가 부족하다. 점심시간에 직접 가보는 수밖에 없겠어.)",
+        next: "day2_homeroom_start"
+    },
+
+    // =========================================================================
+    // 조회 & 오전 수업 (Homeroom & Morning Classes)
+    // =========================================================================
+
+    "day2_homeroom_start": {
+        name: "담임선생님",
+        text: "\"자, 다들 자리에 앉아라. 조회 시작한다.\"",
+        character: "assets/images/characters/teacher_normal.png",
+        next: "day2_homeroom_rollcall"
+    },
+    "day2_homeroom_rollcall": {
+        name: "담임선생님",
+        text: "(선생님이 출석부를 펼치며 이름을 하나하나 부르기 시작한다.) \"...{name}? 전학생, 여기 있지?\"",
+        character: "assets/images/characters/teacher_normal.png",
+        next: "day2_homeroom_rollcall_2"
+    },
+    "day2_homeroom_rollcall_2": {
+        name: "나",
+        text: "\"네, 있습니다.\"",
+        next: "day2_homeroom_rollcall_3"
+    },
+    "day2_homeroom_rollcall_3": {
+        name: "담임선생님",
+        text: "\"좋아. 전학 이틀째인데, 어제보다 표정이 밝아졌구나. 잘 적응하고 있나 보다.\"",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day2_homeroom_notice"
+    },
+    "day2_homeroom_notice": {
+        name: "담임선생님",
+        text: "\"공지사항 하나 전달한다. 이번 주 금요일에 학교 축제 준비 회의가 있을 예정이니까, 관심 있는 학생들은 방과 후에 남아 줘.\"",
+        character: "assets/images/characters/teacher_normal.png",
+        next: "day2_homeroom_notice_2"
+    },
+    "day2_homeroom_notice_2": {
+        name: "나",
+        text: "(학교 축제라... 전학 온 지 얼마 안 됐는데 축제까지 있다니. 이 학교 생활이 점점 더 기대된다.)",
+        next: "day2_homeroom_event"
+    },
+    "day2_homeroom_event": {
+        name: "반 친구",
+        text: "\"선생님, 질문요! 축제 때 반 대항 장기자랑도 하나요?\"",
+        character: null,
+        next: "day2_homeroom_event_2"
+    },
+    "day2_homeroom_event_2": {
+        name: "담임선생님",
+        text: "\"글쎄, 아직 결정된 건 없지만... 우리 반이 나가면 당연히 1등이겠지?\"",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day2_homeroom_event_3"
+    },
+    "day2_homeroom_event_3": {
+        name: "나",
+        text: "(교실이 킥킥대는 웃음으로 가득 찬다. 선생님도 은근히 유머가 있으시다.)",
         next: "day2_morning_class"
     },
+
+    // =========================================================================
+    // 오전 수업 & 유나 쪽지 독백 (Morning Class & Inner Monologue)
+    // =========================================================================
+
     "day2_morning_class": {
         name: "나",
         text: "(수업 시간 내내 유나의 쪽지가 머릿속을 떠나지 않는다. 대체 무슨 할 말이 있는 걸까?)",
@@ -413,16 +641,126 @@ Object.assign(SCENARIO[2], {
     "day2_morning_class_yuna_msg": {
         name: "나",
         text: "(어젯밤 메시지를 주고받았던 유나... 번호도 있는데 왜 굳이 쪽지를 남긴 걸까? 그녀다운 방식이라는 생각에 피식 웃음이 난다.)",
-        next: "day2_lunch_time"
+        next: "day2_morning_class_focus"
     },
     "day2_morning_class_yuna_met": {
         name: "나",
         text: "(어제 만났던 유나... 그녀가 나에게 이런 쪽지를 남긴 걸까? 비밀이라니... 대체 무엇인지 궁금해진다.)",
-        next: "day2_lunch_time"
+        next: "day2_morning_class_focus"
     },
     "day2_morning_class_yuna_new": {
         name: "나",
         text: "(유나...? 어제는 들어보지 못한 이름이다. 대체 누구길래 나에게 이런 쪽지를 남긴 걸까?)",
+        next: "day2_morning_class_focus"
+    },
+
+    // --- 수업 중 집중과 산만함 ---
+    "day2_morning_class_focus": {
+        name: "나",
+        text: "(칠판에 적히는 수학 공식이 눈에 들어오지 않는다. '도서관 별관 뒤뜰'이라는 단어만 머릿속을 맴돈다.)",
+        next: "day2_morning_class_quiz"
+    },
+    "day2_morning_class_quiz": {
+        name: "수학선생님",
+        text: "\"자, 이 문제 풀어볼 사람? ...전학생, 한 번 해볼래?\"",
+        character: null,
+        next: "day2_morning_class_quiz_2"
+    },
+    "day2_morning_class_quiz_2": {
+        name: "나",
+        text: "(아뿔싸, 딴생각에 빠져 있었다. 황급히 칠판을 바라보지만, 공식이 도무지 머리에 들어오지 않는다.)",
+        choices: [
+            { text: "당당하게 나가서 도전해본다.", next: "day2_quiz_try" },
+            { text: "솔직하게 모르겠다고 한다.", next: "day2_quiz_pass" }
+        ]
+    },
+    "day2_quiz_try": {
+        name: "나",
+        text: "(칠판 앞에 서서 공식을 더듬더듬 써나간다. 다행히 어제 예습했던 부분이라 어렴풋이 기억이 난다.)",
+        next: "day2_quiz_try_2"
+    },
+    "day2_quiz_try_2": {
+        name: "수학선생님",
+        text: "\"오, 전학생 실력이 꽤 되는데? 맞았어. 잘 했어, 자리로 돌아가.\"",
+        character: null,
+        next: "day2_quiz_result"
+    },
+    "day2_quiz_pass": {
+        name: "나",
+        text: "\"죄송합니다, 아직 수업 진도를 다 따라잡지 못해서...\"",
+        next: "day2_quiz_pass_2"
+    },
+    "day2_quiz_pass_2": {
+        name: "수학선생님",
+        text: "\"괜찮아, 전학 온 지 얼마 안 됐으니까. 다음엔 예습해오렴.\"",
+        character: null,
+        next: "day2_quiz_result"
+    },
+    "day2_quiz_result": {
+        name: "나",
+        text: "(어찌저찌 수업이 넘어간다. 쪽지 때문에 집중이 안 되는 건 어쩔 수 없지만, 그래도 수업은 수업이니까.)",
+        next: "day2_second_class"
+    },
+
+    // --- 2교시 ---
+    "day2_second_class": {
+        name: "나",
+        text: "(쉬는 시간 없이 바로 2교시 국어 수업이 시작된다. 선생님이 어제 나눠준 유인물을 꺼내라고 한다.)",
+        next: "day2_second_class_2"
+    },
+    "day2_second_class_2": {
+        name: "나",
+        text: "(유인물을 뒤적이다가, 아까 주머니에 넣은 쪽지가 손끝에 닿는다. 심장이 쿵 하고 뛴다.)",
+        next: "day2_second_class_3"
+    },
+    "day2_second_class_3": {
+        name: "나",
+        text: "(점심시간까지 아직 두 시간이나 남았다. 이 시간이 왜 이렇게 안 가는 건지...)",
+        next: "day2_last_class_before_lunch"
+    },
+
+    // =========================================================================
+    // 점심 직전 수업 & 전환 (Pre-Lunch Transition)
+    // =========================================================================
+
+    "day2_last_class_before_lunch": {
+        name: "나",
+        text: "(3교시 영어 수업이 시작된다. 선생님의 발음이 귀에 들리긴 하는데, 머릿속은 온통 점심시간 생각뿐이다.)",
+        next: "day2_last_class_before_lunch_2"
+    },
+    "day2_last_class_before_lunch_2": {
+        name: "나",
+        text: "(도서관 별관 뒤뜰... 가본 적도 없는 곳이다. 유나는 도대체 왜 그런 구석진 곳을 골랐을까?)",
+        next: "day2_last_class_before_lunch_3"
+    },
+    "day2_last_class_before_lunch_3": {
+        name: "나",
+        text: "(혹시 위험한 건 아니겠지...? 아니, 같은 학교 학생이 보낸 쪽지인데 뭐가 위험해. 그래도 왠지 두근거린다.)",
+        next: "day2_last_class_before_lunch_4"
+    },
+    "day2_last_class_before_lunch_4": {
+        name: "나",
+        text: "(시계를 슬쩍 본다. 11시 40분... 점심시간까지 20분 남았다. 아, 시간아 좀 빨리 가라.)",
+        next: "day2_class_end_bell"
+    },
+    "day2_class_end_bell": {
+        name: "시스템",
+        text: "- 띵동 댕동 -",
+        next: "day2_class_end"
+    },
+    "day2_class_end": {
+        name: "나",
+        text: "(드디어 점심 종이 울린다! 교실이 순식간에 소란스러워진다. 아이들이 급식실로 우르르 몰려나간다.)",
+        next: "day2_packing_up"
+    },
+    "day2_packing_up": {
+        name: "나",
+        text: "(나도 서둘러 교과서를 가방에 넣는다. 주머니 속 쪽지를 한 번 더 확인한다. '도서관 별관 뒤뜰'... 좋아, 가보자.)",
+        next: "day2_lunch_decision"
+    },
+    "day2_lunch_decision": {
+        name: "나",
+        text: "(먼저 밥을 먹고 갈까, 아니면 바로 도서관 별관으로 갈까... 일단 유나가 먼저겠지. 밥은 나중에도 먹을 수 있으니까.)",
         next: "day2_lunch_time"
     }
 });
