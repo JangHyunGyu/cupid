@@ -216,6 +216,7 @@ Object.assign(SCENARIO[4], {
     "day4_yuna_cool": {
         name: "유나",
         text: "\"…방금 왔어. 들어가자.\"",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day4_date_walk"
     },
 
@@ -264,6 +265,7 @@ Object.assign(SCENARIO[4], {
     "day4_dain_energy": {
         name: "다인",
         text: "\"완전 완벽했지!! 오늘 컨디션 최고야!! 자, 빨리 가자!!\"",
+        character: "assets/images/characters/dain_laugh.png",
         next: "day4_date_walk"
     },
 
@@ -312,6 +314,7 @@ Object.assign(SCENARIO[4], {
     "day4_nurse_smile": {
         name: "보건선생님",
         text: "\"맞아, 나도 좀 긴장돼. 오늘은 선생님이 아니라 그냥 나야.\"",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day4_date_walk"
     },
 
@@ -360,6 +363,7 @@ Object.assign(SCENARIO[4], {
     "day4_teacher_casual": {
         name: "담임선생님",
         text: "\"그치? 여기 커피가 맛있어. 자, 들어가자.\"",
+        character: "assets/images/characters/teacher_normal.png",
         next: "day4_date_walk"
     },
 

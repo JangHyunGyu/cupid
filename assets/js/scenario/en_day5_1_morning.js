@@ -492,6 +492,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_yuna_2": {
         name: "Yuna",
         text: "\"...You came.\"",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day5_walk_yuna_talk"
     },
     "day5_walk_yuna_talk": {
@@ -541,6 +542,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_nurse_2": {
         name: "School Nurse",
         text: "\"You made it. Seeing you on the weekend feels different. You've only ever seen me in my lab coat, after all.\"",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day5_walk_nurse_talk"
     },
     "day5_walk_nurse_talk": {
@@ -566,6 +568,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_teacher_2": {
         name: "Homeroom Teacher",
         text: "\"I thought you'd be late, but you're right on time. ...That's a compliment, by the way.\"",
+        character: "assets/images/characters/teacher_normal.png",
         next: "day5_walk_teacher_talk"
     },
     "day5_walk_teacher_talk": {
