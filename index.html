@@ -415,6 +415,26 @@
             z-index: 10;
             display: flex;
             align-items: center;
+            gap: 8px;
+        }
+
+        .archerlab-link {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 4px 10px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            transition: all 0.2s;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .archerlab-link:hover {
+            background: rgba(255, 255, 255, 0.4);
         }
 
         .lang-btn {
@@ -471,8 +491,9 @@
             AI story game, otome game, 큐피드, CUPID game</p>
     </div>
     <div class="lang-switch">
+        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab 홈" title="ArcherLab">🏹</a>
         <button id="landing-settings-btn" class="lang-btn"
-            style="margin-right: 10px; cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);">
+            style="cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);">
             설정</button>
         <a href="index-en.html" class="lang-btn">English</a>
     </div>
