@@ -178,7 +178,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_dain": {
         name: "Me",
-        text: "(...Seven exclamation marks. Dain's overflowing with energy from the crack of dawn. But somehow, messages like this give me energy too.)",
+        text: "(...So many exclamation marks. Dain's overflowing with energy from the crack of dawn. But somehow, messages like this give me energy too.)",
         stats: { Dain: { affinity: 3 } },
         next: "day5_couple_reply_dain"
     },

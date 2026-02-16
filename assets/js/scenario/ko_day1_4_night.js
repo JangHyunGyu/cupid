@@ -787,7 +787,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_surprise_yuna": {
         name: "유나",
-        text: "(유나의 메시지.) '...아직 깨어 있어? 별이 예쁘고 있어서. 그것만 말하고 싶었어.'",
+        text: "(유나의 메시지.) '...아직 깨어 있어? 별이 예뻐서. 그것만 말하고 싶었어.'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_normal.png",
         night: true,

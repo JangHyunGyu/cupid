@@ -304,7 +304,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_nurse_blush": {
         name: "School Nurse",
-        text: "\"Fufu... Thank you. Can I see you as just a man today, not a student?\"",
+        text: "\"Hehe... Thank you. Can I see you as just a man today, not a student?\"",
         character: "assets/images/characters/nurse_shy.png",
         next: "day4_date_walk"
     },

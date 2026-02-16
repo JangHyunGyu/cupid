@@ -262,7 +262,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_classroom_seoyeon": {
         name: "Seoyeon",
-        text: "\"Yeah. When you first introduced yourself, I already thought 'This person seems nice.' Call it the class president's intuition.\"",
+        text: "\"Yeah. When you first introduced yourself, I already thought 'This person seems nice.' Call it the student council president's intuition.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day5_memory_spot_suggest"
     },

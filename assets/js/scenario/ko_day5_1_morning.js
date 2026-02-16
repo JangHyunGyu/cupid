@@ -178,7 +178,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_couple_react_dain": {
         name: "나",
-        text: "(…느낌표가 7개. 아침부터 에너지가 넘치는 다인이. 그런데 이런 메시지를 보면 나까지 기운이 나네.)",
+        text: "(…느낌표가 잔뜩. 아침부터 에너지가 넘치는 다인이. 그런데 이런 메시지를 보면 나까지 기운이 나네.)",
         stats: { Dain: { affinity: 3 } },
         next: "day5_couple_reply_dain"
     },
