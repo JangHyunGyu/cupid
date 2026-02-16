@@ -111,6 +111,23 @@ self.addEventListener('fetch', (event) => {
     // API/분석 요청은 네트워크 전용
     if (NO_CACHE_DOMAINS.some(domain => url.hostname === domain)) return;
 
+    // 네비게이션 요청: Network First (리다이렉트 안전 처리)
+    if (event.request.mode === 'navigate') {
+        event.respondWith(
+            fetch(event.request)
+                .then((response) => {
+                    // 정상 응답만 캐시
+                    if (response.ok && !response.redirected && response.status !== 206) {
+                        const responseClone = response.clone();
+                        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
+                    }
+                    return response;
+                })
+                .catch(() => caches.match(event.request).then((cached) => cached || caches.match('/index.html')))
+        );
+        return;
+    }
+
     // 외부 CDN (폰트 등): Stale While Revalidate
     if (url.origin !== self.location.origin) {
         event.respondWith(staleWhileRevalidate(event.request));
@@ -141,9 +158,18 @@ async function cacheFirst(request) {
 
     try {
         const response = await fetch(request);
-        if (response.ok) {
+        // 206 Partial Response는 캐시 불가, 리다이렉트 응답도 캐시 제외
+        if (response.ok && response.status !== 206 && !response.redirected) {
             const cache = await caches.open(CACHE_NAME);
             cache.put(request, response.clone());
+        }
+        // 리다이렉트 응답은 새 Response로 감싸서 반환 (redirect mode 충돌 방지)
+        if (response.redirected) {
+            return new Response(response.body, {
+                status: response.status,
+                statusText: response.statusText,
+                headers: response.headers
+            });
         }
         return response;
     } catch (err) {
@@ -159,9 +185,17 @@ async function cacheFirst(request) {
 async function networkFirst(request) {
     try {
         const response = await fetch(request);
-        if (response.ok) {
+        // 206 Partial Response는 캐시 불가, 리다이렉트 응답도 캐시 제외
+        if (response.ok && response.status !== 206 && !response.redirected) {
             const cache = await caches.open(CACHE_NAME);
             cache.put(request, response.clone());
+        }
+        if (response.redirected) {
+            return new Response(response.body, {
+                status: response.status,
+                statusText: response.statusText,
+                headers: response.headers
+            });
         }
         return response;
     } catch (err) {
@@ -180,7 +214,8 @@ async function staleWhileRevalidate(request) {
 
     const fetchPromise = fetch(request)
         .then((response) => {
-            if (response.ok) {
+            // 206 Partial Response는 캐시 불가, 리다이렉트 응답도 캐시 제외
+            if (response.ok && response.status !== 206 && !response.redirected) {
                 cache.put(request, response.clone());
             }
             return response;
