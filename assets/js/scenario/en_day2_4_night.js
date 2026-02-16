@@ -3,67 +3,67 @@
  * CUPID - Day 2 Night Scenario (English Version)
  * ============================================================================
  * 
- *  ÆÄÀÏ Á¤º¸
+ *  ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * ----------------------------------------------------------------------------
- * ÆÄÀÏ¸í: en_day2_4_night.js
- * ¾ð¾î: ¿µ¾î (English)
- * ÀÏÂ÷: Day 2 (2ÀÏÂ÷)
- * ½Ã°£´ë: Night (¹ã)
+ * ï¿½ï¿½ï¿½Ï¸ï¿½: en_day2_4_night.js
+ * ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ (English)
+ * ï¿½ï¿½ï¿½ï¿½: Day 2 (2ï¿½ï¿½ï¿½ï¿½)
+ * ï¿½Ã°ï¿½ï¿½ï¿½: Night (ï¿½ï¿½)
  * 
- *  ½Ã³ª¸®¿À °³¿ä
+ *  ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * ----------------------------------------------------------------------------
- * ÀüÇÐ 2ÀÏÂ÷ ¹ãÀÇ ÀÏ°ú¿Í ¸Þ½ÃÁö ½Ã½ºÅÛÀ» ´Ù·ì´Ï´Ù. ³· µ¿¾È È¹µæÇÑ ¿¬¶ôÃ³¸¦ ÅëÇØ 
- * È÷·ÎÀÎµé°ú ½Éµµ ±íÀº ¹ãÀÇ ´ëÈ­¸¦ ³ª´­ ¼ö ÀÖÀ¸¸ç, º¸°Ç ¼±»ý´ÔÀÇ Æ¯º°ÇÑ ÃÊ´ë¸¦ 
- * ¹Þ¾ÒÀ» °æ¿ì ÁýÀ¸·Î ¹æ¹®ÇÏ´Â ÀÌº¥Æ®°¡ ¹ß»ýÇÕ´Ï´Ù. ÇöÀç °³¹ßµÈ ¿µ¾î ½Ã³ª¸®¿ÀÀÇ 
- * ¸¶Áö¸· ±¸°£À¸·Î, 2ÀÏ±îÁöÀÇ ¿©Á¤À» ¸¶¹«¸®ÇÏ´Â °á¸»ºÎ°¡ Æ÷ÇÔµÇ¾î ÀÖ½À´Ï´Ù.
+ * ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï°ï¿½ï¿½ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù·ï¿½Ï´ï¿½. ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È¹ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ ï¿½Éµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´ë¸¦ 
+ * ï¿½Þ¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½æ¹®ï¿½Ï´ï¿½ ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Õ´Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ßµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, 2ï¿½Ï±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½á¸»ï¿½Î°ï¿½ ï¿½ï¿½ï¿½ÔµÇ¾ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.
  * 
- *  ÁÖ¿ä ÀÌº¥Æ®
+ *  ï¿½Ö¿ï¿½ ï¿½Ìºï¿½Æ®
  * ----------------------------------------------------------------------------
- * 1. ÇÏ·çÀÇ È¸»ó - 2ÀÏÂ÷ ÇÐ±³»ýÈ°¿¡ ´ëÇÑ ÁÖÀÎ°øÀÇ ¼ÒÈ¸
- * 2. ¹ãÀÇ ¸Þ½ÃÁö (Messenger) - 5¸íÀÇ È÷·ÎÀÎ Áß ¿¬¶ôÃ³°¡ ÀÖ´Â »ó´ë¿¡°Ô ¸Þ½ÃÁö ¹ß¼Û (AI ´ëÈ­)
- * 3. º¸°Ç ¼±»ý´Ô ÀÚÅÃ ¹æ¹® - `invited_nurse_home` ÇÃ·¡±× È°¼º ½Ã ¹ß»ýÇÏ´Â Æ¯º° ¿ÜÃâ ÀÌº¥Æ®
- * 4. È£°¨µµ È®ÀÎ ½Ã½ºÅÛ - ÇöÀç±îÁö ½×ÀÎ Ä³¸¯ÅÍº° È£°¨µµ ¸®½ºÆ® Ã¼Å©
- * 5. ½Ã³ª¸®¿À °á¸» (Development End) - ÇöÀç ºôµå¿¡¼­ÀÇ ½Ã½ºÅÛ Á¾·á ¹× ´Ù½Ã ½ÃÀÛ Á¦¾È
+ * 1. ï¿½Ï·ï¿½ï¿½ï¿½ È¸ï¿½ï¿½ - 2ï¿½ï¿½ï¿½ï¿½ ï¿½Ð±ï¿½ï¿½ï¿½È°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î°ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
+ * 2. ï¿½ï¿½ï¿½ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ (Messenger) - 5ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ë¿¡ï¿½ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ ï¿½ß¼ï¿½ (AI ï¿½ï¿½È­)
+ * 3. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½æ¹® - `invited_nurse_home` ï¿½Ã·ï¿½ï¿½ï¿½ È°ï¿½ï¿½ ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Ï´ï¿½ Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ®
+ * 4. È£ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½Íºï¿½ È£ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® Ã¼Å©
+ * 5. ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½á¸» (Development End) - ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- *  Á¶°Ç ÇÃ·¡±× ¼³¸í (Condition Flags)
+ *  ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (Condition Flags)
  * ----------------------------------------------------------------------------
- * has_any_contact      : ¿¬¶ôÃ³°¡ ÇÏ³ª¶óµµ ÀÖ´ÂÁö È®ÀÎ (¸Þ½ÃÁö ¸Þ´º È°¼ºÈ­)
- * has_number_*         : Æ¯Á¤ È÷·ÎÀÎÀÇ ¿¬¶ôÃ³ º¸À¯ ¿©ºÎ
- * sent_msg_day2_*      : Áßº¹ ¸Þ½ÃÁö ¹ß¼Û ¹æÁö
- * invited_nurse_home   : ¹æ°ú ÈÄ ¶Ç´Â Á¡½É½Ã°£¿¡ È¹µæÇÑ º¸°Ç ¼±»ý´ÔÀÇ ÃÊ´ëÀå È®ÀÎ
+ * has_any_contact      : ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ È®ï¿½ï¿½ (ï¿½Þ½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ È°ï¿½ï¿½È­)
+ * has_number_*         : Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã³ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+ * sent_msg_day2_*      : ï¿½ßºï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ ï¿½ß¼ï¿½ ï¿½ï¿½ï¿½ï¿½
+ * invited_nurse_home   : ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ç´ï¿½ ï¿½ï¿½ï¿½É½Ã°ï¿½ï¿½ï¿½ È¹ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´ï¿½ï¿½ï¿½ È®ï¿½ï¿½
  * day2_met_* / day2_ate_lunch_seoyeon / day2_dain_bet / woke_up_in_nurse_room:
- *   ³· µ¿¾ÈÀÇ ÇàÀû¿¡ µû¸¥ ¸Þ½ÃÁö ³»¿ë ºÐ±â Ã³¸®¿ë
+ *   ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ð±ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½
  * 
- *  ¼³Á¤ ÇÃ·¡±× ¼³¸í (Set Flags)
+ *  ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (Set Flags)
  * ----------------------------------------------------------------------------
- * sent_msg_day2_*      : ¿À´Ã ¹ã Æ¯Á¤ Ä³¸¯ÅÍ¿¡°Ô ¸Þ½ÃÁö¸¦ º¸³ÂÀ½À» ±â·Ï
- * invited_nurse_home   : ÀÚÅÃ ¹æ¹® Áß Ãß°¡ÀûÀÎ °ü°è ÁøÀü ±â·Ï (¼±ÅÃÀû)
+ * sent_msg_day2_*      : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Æ¯ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+ * invited_nurse_home   : ï¿½ï¿½ï¿½ï¿½ ï¿½æ¹® ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
  * 
- *  È£°¨µµ º¯È­ (Stats Changes)
+ *  È£ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ (Stats Changes)
  * ----------------------------------------------------------------------------
- * ¹ãÀÇ AI ´ëÈ­(Free Talk) °á°ú¿¡ µû¶ó ¼ÒÆøÀÇ È£°¨µµ º¯È­ ¹ß»ý
+ * ï¿½ï¿½ï¿½ï¿½ AI ï¿½ï¿½È­(Free Talk) ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ ï¿½ß»ï¿½
  * 
- *  Æ¯ÀÌ »çÇ×
+ *  Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * ----------------------------------------------------------------------------
- * - night: true - ¹ã ½Ã°£´ë Àü¿ë UI ¹× ¹è°æ ¿¬Ãâ
- * - silhouette: true - ¸Þ½ÃÁö ´ëÈ­ Ã¢¿¡¼­ Ä³¸¯ÅÍ¸¦ ½Ç·ç¿§À¸·Î Ã³¸®ÇÏ¿© ½Åºñ°¨ Á¶¼º
- * - day2_final: ÇöÀç ÁØºñµÈ ½Ã³ª¸®¿ÀÀÇ ³¡ÀÚ¶ôÀÓÀ» ¾Ë¸®´Â ½Ã½ºÅÛ ¸Þ½ÃÁö 
+ * - night: true - ï¿½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ UI ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+ * - silhouette: true - ï¿½Þ½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ Ã¢ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½Ç·ç¿§ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½Åºï¿½ ï¿½ï¿½ï¿½ï¿½
+ * - day2_final: ï¿½ï¿½ï¿½ï¿½ ï¿½Øºï¿½ï¿½ ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¸ï¿½ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ 
  * 
  * ============================================================================
  */
 
-// SCENARIO Àü¿ª °´Ã¼ ÃÊ±âÈ­
+// SCENARIO ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½Ê±ï¿½È­
 if (typeof SCENARIO === 'undefined') {
     var SCENARIO = {};
 }
 
-// Day 2 ½Ã³ª¸®¿À ±×·ì ÃÊ±âÈ­
+// Day 2 ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×·ï¿½ ï¿½Ê±ï¿½È­
 if (!SCENARIO[2]) {
     SCENARIO[2] = {};
 }
 
 /**
- * [Day 2 - Night] ¾À µ¥ÀÌÅÍ Á¤ÀÇ
+ * [Day 2 - Night] ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  */
 Object.assign(SCENARIO[2], {
     "day2_end": {
@@ -121,7 +121,6 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_2": {
         name: "School Nurse",
         text: "\"Oh my, you actually came? Come in quickly. It's quite cold outside, isn't it?\"",
-        background: "assets/images/background/nurse_house.png",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day2_night_nurse_home_3"
@@ -170,18 +169,21 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_seyoun_after": {
         name: "Me",
         text: "I was really happy to be with you today, from the sunset to the work we did. See you tomorrow!",
+        night: true,
         setFlag: "sent_msg_day2_seyoun",
         next: "day2_night_message_seyoun_reply"
     },
     "day2_night_message_seyoun_lunch": {
         name: "Me",
         text: "The lunch today was really delicious! Thanks. See you tomorrow.",
+        night: true,
         setFlag: "sent_msg_day2_seyoun",
         next: "day2_night_message_seyoun_reply"
     },
     "day2_night_message_seyoun_generic": {
         name: "Me",
         text: "Did you have a good day today? See you at school tomorrow.",
+        night: true,
         setFlag: "sent_msg_day2_seyoun",
         next: "day2_night_message_seyoun_reply"
     },
@@ -190,17 +192,18 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "Seoyeon",
         text: "(A message arrived from Seoyeon.) \"I had a great time too! I feel reassured thanks to {name}. Is there anything else you want to say?\"",
-        context: "Late night smartphone messaging with Seoyeon. Seoyeon is blushing because it's her first time messaging like this with the protagonist. Keep the conversation going naturally until it concludes. Only in the final turn, naturally end with saying goodnight or suggesting it's late.",
-        personality: "Usually calm and responsible as student council president, but becomes shy and stutters when alone with the protagonist. Shows a cute side different from usual.",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
+        context: "Late night smartphone messaging with Seoyeon. Seoyeon is blushing because it's her first time messaging like this with the protagonist. Keep the conversation going naturally until it concludes. Only in the final turn, naturally end with saying goodnight or suggesting it's late.",
+        night: true,
+        stats: { Seoyeon: { affinity: 3 } },
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 25, next: "day2_night_message_seyoun_reply_high" },
             { minAffinity: 0, next: "day2_night_message_seyoun_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_seyoun_reply_low" }
         ],
-        next: "day2_night_message_seyoun_reply_normal"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_seyoun_reply_high": {
         name: "Me",
@@ -238,12 +241,14 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_yuna_met": {
         name: "Me",
         text: "What you showed me today... I won't forget it. Good night.",
+        night: true,
         setFlag: "sent_msg_day2_yuna",
         next: "day2_night_message_yuna_reply"
     },
     "day2_night_message_yuna_generic": {
         name: "Me",
         text: "How was your day? See you at school tomorrow.",
+        night: true,
         setFlag: "sent_msg_day2_yuna",
         next: "day2_night_message_yuna_reply"
     },
@@ -252,17 +257,18 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "Yuna",
         text: "(A short message arrived from Yuna.) \"...So you want to talk with me at night too. Interesting.\"",
-        context: "Late night smartphone messaging with the mysterious Yuna. Yuna speaks in riddles and says cryptic things like 'secrets of this school', 'the other side', etc. Keep the conversation going naturally until it concludes. Only in the final turn, end mysteriously by saying she'll enter your dreams.",
-        personality: "Mysterious, cold, and speaks as if knowing secrets. Drops cryptic hints. Occasionally shows unexpected warmth only to the protagonist.",
-        character: "assets/images/characters/yuna_smile.png",
+        character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
+        context: "Late night smartphone messaging with the mysterious Yuna. Yuna speaks in riddles and says cryptic things like 'secrets of this school', 'the other side', etc. Keep the conversation going naturally until it concludes. Only in the final turn, end mysteriously by saying she'll enter your dreams.",
+        night: true,
+        stats: { Yuna: { affinity: 3 } },
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_night_message_yuna_reply_high" },
             { minAffinity: 0, next: "day2_night_message_yuna_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_yuna_reply_low" }
         ],
-        next: "day2_night_message_yuna_reply_normal"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_yuna_reply_high": {
         name: "Me",
@@ -308,24 +314,28 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_dain_bet": {
         name: "Me",
         text: "Good job practicing today! Don't forget our tteokbokki bet tomorrow.",
+        night: true,
         setFlag: "sent_msg_day2_dain",
         next: "day2_night_message_dain_reply"
     },
     "day2_night_message_dain_practice": {
         name: "Me",
         text: "Good job practicing today! It was fun thanks to you. See you tomorrow!",
+        night: true,
         setFlag: "sent_msg_day2_dain",
         next: "day2_night_message_dain_reply"
     },
     "day2_night_message_dain_lunch": {
         name: "Me",
         text: "It was fun seeing you at the store today! Let's get tteokbokki tomorrow.",
+        night: true,
         setFlag: "sent_msg_day2_dain",
         next: "day2_night_message_dain_reply"
     },
     "day2_night_message_dain_generic": {
         name: "Me",
         text: "Are you resting well? See you at school tomorrow.",
+        night: true,
         setFlag: "sent_msg_day2_dain",
         next: "day2_night_message_dain_reply"
     },
@@ -334,17 +344,18 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "Dain",
         text: "(An energetic message from Dain.) \"Oh! You messaged first! Hehe, were you thinking about me?\"",
-        context: "Late night smartphone messaging with Dain. Dain is energetic, talks about sports and practice, and loves teasing. Keep the conversation going naturally until it concludes. Only in the final turn, naturally end by saying she needs to sleep early for tomorrow's practice.",
-        personality: "Bright, energetic, sporty. Loves teasing the protagonist but sometimes shows an unexpectedly shy and cute side.",
-        character: "assets/images/characters/dain_laugh.png",
+        character: "assets/images/characters/dain_normal.png",
         silhouette: true,
+        context: "Late night smartphone messaging with Dain. Dain is energetic, talks about sports and practice, and loves teasing. Keep the conversation going naturally until it concludes. Only in the final turn, naturally end by saying she needs to sleep early for tomorrow's practice.",
+        night: true,
+        stats: { Dain: { affinity: 3 } },
         affinityChar: "Dain",
         affinityBranches: [
             { minAffinity: 25, next: "day2_night_message_dain_reply_high" },
             { minAffinity: 0, next: "day2_night_message_dain_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_dain_reply_low" }
         ],
-        next: "day2_night_message_dain_reply_normal"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_dain_reply_high": {
         name: "Me",
@@ -398,10 +409,9 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "School Nurse",
         text: "(A seductive reply.) 'Oh my, already thinking of me? Hehe, sleep well tonight and let's see each other again tomorrow. Good night, {name}.'",
-        context: "Late night smartphone messaging with the nurse from your own rooms. The nurse sent a playful and seductive reply. Keep the conversation going naturally until it concludes. After the conversation ends, the protagonist will fall asleep looking forward to tomorrow. Only in the final turn, naturally end with goodnight or suggesting to meet at school tomorrow.",
-        personality: "Languid and seductive yet caring school nurse. Boldly flirts with the protagonist. As a mature adult, not flustered by provocative comments.",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
+        context: "Late night smartphone messaging with the nurse from your own rooms. The nurse sent a playful and seductive reply. Keep the conversation going naturally until it concludes. After the conversation ends, the protagonist will fall asleep looking forward to tomorrow. Only in the final turn, naturally end with goodnight or suggesting to meet at school tomorrow.",
         night: true,
         stats: { Nurse: { affinity: 3 } },
         affinityChar: "Nurse",
@@ -410,7 +420,7 @@ Object.assign(SCENARIO[2], {
             { minAffinity: 0, next: "day2_night_message_nurse_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_nurse_reply_low" }
         ],
-        next: "day2_night_message_nurse_reply_normal"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_nurse_reply_high": {
         name: "Me",
@@ -448,10 +458,9 @@ Object.assign(SCENARIO[2], {
         maxTurns: 10,
         name: "Homeroom Teacher",
         text: "(A slightly delayed reply.) 'Oh, {name}. A message at this hour... I'm a bit surprised. But thank you for caring. Get some good rest and don't be late tomorrow.'",
-        context: "Late night smartphone messaging with the homeroom teacher from your own rooms. The teacher is a bit flustered but grateful for your message. Keep the conversation going naturally until it concludes. After the conversation ends, the protagonist will fall asleep looking forward to tomorrow. Only in the final turn, naturally end with goodnight or reminding not to be late tomorrow.",
-        personality: "A kind and responsible homeroom teacher. Shows appropriate care for students but maintains professional boundaries. Gets a bit flustered with personal messages from students.",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
+        context: "Late night smartphone messaging with the homeroom teacher from your own rooms. The teacher is a bit flustered but grateful for your message. Keep the conversation going naturally until it concludes. After the conversation ends, the protagonist will fall asleep looking forward to tomorrow. Only in the final turn, naturally end with goodnight or reminding not to be late tomorrow.",
         night: true,
         stats: { Teacher: { affinity: 3 } },
         affinityChar: "Teacher",
@@ -460,7 +469,7 @@ Object.assign(SCENARIO[2], {
             { minAffinity: 0, next: "day2_night_message_teacher_reply_normal" },
             { minAffinity: -100, next: "day2_night_message_teacher_reply_low" }
         ],
-        next: "day2_night_message_teacher_reply_normal"
+        next: "day2_night_home_check_contact"
     },
     "day2_night_message_teacher_reply_high": {
         name: "Me",
@@ -490,6 +499,7 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         text: "(What truth awaits me tomorrow... I fall into a deep sleep, closing my heavy eyelids.)",
         background: "assets/images/background/room_my.png",
+        character: null,
         night: true,
         fade: true,
         changeDay: 3,

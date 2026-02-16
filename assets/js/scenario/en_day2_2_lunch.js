@@ -206,9 +206,9 @@ Object.assign(SCENARIO[2], {
         text: "(I wonder how to answer Seoyeon's question.)",
         character: "assets/images/characters/seyoun_normal.png",
         choices: [
-            { text: "Yeah, we met yesterday. She's bright and fun.", next: "day2_seoyeon_dain_honest", stats: { Seoyeon: { affinity: -3 }, Dain: { affinity: 2 } } },
-            { text: "Just acquaintances. You're more important to me, Seoyeon.", next: "day2_seoyeon_dain_deny", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
-            { text: "Why? Are you jealous?", next: "day2_seoyeon_dain_tease", stats: { Seoyeon: { affinity: 3 } } }
+            { text: "Yeah, we met yesterday. She's bright and fun.", next: "day2_seoyeon_lunch_dain_honest", stats: { Seoyeon: { affinity: -3 }, Dain: { affinity: 2 } } },
+            { text: "Just acquaintances. You're more important to me, Seoyeon.", next: "day2_seoyeon_lunch_dain_deny", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
+            { text: "Why? Are you jealous?", next: "day2_seoyeon_lunch_dain_tease", stats: { Seoyeon: { affinity: 3 } } }
         ]
     },
     "day2_seoyeon_lunch_dain_no": {
@@ -216,27 +216,27 @@ Object.assign(SCENARIO[2], {
         text: "\"(Dain Jung... I'll remember that.) No, first time seeing her. Why?\"",
         character: "assets/images/characters/seyoun_normal.png",
         setFlag: "knows_name_dain",
-        next: "day2_seoyeon_dain_no_react"
+        next: "day2_seoyeon_lunch_dain_no_react"
     },
-    "day2_seoyeon_dain_no_react": {
+    "day2_seoyeon_lunch_dain_no_react": {
         name: "Seoyeon",
         text: "\"Oh, nothing. Just curious. (Seoyeon smiles with relief) ...Let's keep eating!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_seoyeon_lunch_end"
     },
-    "day2_seoyeon_dain_honest": {
+    "day2_seoyeon_lunch_dain_honest": {
         name: "Seoyeon",
         text: "\"...I see. (Seoyeon looks out the window for a moment, then smiles) It's good to have many friends. I should... try harder too.\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "day2_seoyeon_lunch_end"
     },
-    "day2_seoyeon_dain_deny": {
+    "day2_seoyeon_lunch_dain_deny": {
         name: "Seoyeon",
         text: "\"(Seoyeon's expression brightens slightly) ...Really? Hehe, hearing that makes me happy. Thanks, {name}.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_seoyeon_lunch_end"
     },
-    "day2_seoyeon_dain_tease": {
+    "day2_seoyeon_lunch_dain_tease": {
         name: "Seoyeon",
         text: "\"J-jealous?! No way! I was just... curious! (Seoyeon turns her head away, blushing)\"",
         character: "assets/images/characters/seyoun_shy.png",
@@ -669,10 +669,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_seoyeon_favor_seoyeon": {
         name: "Dain",
         text: "\"(Dain looks a bit dejected) ...Huh, really? Already making other plans while you're with me?\"",
-        characters: {
-            left: "assets/images/characters/dain_pout.png",
-            right: "assets/images/characters/seyoun_normal.png"
-        },
+        character: "assets/images/characters/dain_pout.png",
         next: "day2_dain_seoyeon_favor_seoyeon_2"
     },
     "day2_dain_seoyeon_favor_seoyeon_2": {
