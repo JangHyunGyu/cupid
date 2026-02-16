@@ -492,6 +492,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_yuna_2": {
         name: "유나",
         text: "\"…왔어.\"",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day5_walk_yuna_talk"
     },
     "day5_walk_yuna_talk": {
@@ -541,6 +542,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_nurse_2": {
         name: "보건선생님",
         text: "\"왔구나. 주말에 보니까 또 새롭네. 평소 가운 입은 나만 봤으니까.\"",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day5_walk_nurse_talk"
     },
     "day5_walk_nurse_talk": {
@@ -566,6 +568,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_teacher_2": {
         name: "담임선생님",
         text: "\"늦을 줄 알았는데 시간 딱 맞게 왔네. …칭찬이야, 일단.\"",
+        character: "assets/images/characters/teacher_normal.png",
         next: "day5_walk_teacher_talk"
     },
     "day5_walk_teacher_talk": {

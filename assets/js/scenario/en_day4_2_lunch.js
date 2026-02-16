@@ -216,6 +216,7 @@ Object.assign(SCENARIO[4], {
     "day4_yuna_cool": {
         name: "Yuna",
         text: "\"...I just got here. Let's go in.\"",
+        character: "assets/images/characters/yuna_normal.png",
         next: "day4_date_walk"
     },
 
@@ -264,6 +265,7 @@ Object.assign(SCENARIO[4], {
     "day4_dain_energy": {
         name: "Dain",
         text: "\"It was totally perfect!! I'm in top shape today!! Come on, let's go!!\"",
+        character: "assets/images/characters/dain_laugh.png",
         next: "day4_date_walk"
     },
 
@@ -312,6 +314,7 @@ Object.assign(SCENARIO[4], {
     "day4_nurse_smile": {
         name: "School Nurse",
         text: "\"Right, I'm a bit nervous too. Today, I'm not a teacher — just me.\"",
+        character: "assets/images/characters/nurse_normal.png",
         next: "day4_date_walk"
     },
 
@@ -360,6 +363,7 @@ Object.assign(SCENARIO[4], {
     "day4_teacher_casual": {
         name: "Homeroom Teacher",
         text: "\"Right? The coffee here is great. Come on, let's go in.\"",
+        character: "assets/images/characters/teacher_normal.png",
         next: "day4_date_walk"
     },
 

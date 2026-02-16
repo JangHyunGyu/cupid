@@ -652,6 +652,7 @@ Object.assign(SCENARIO[5], {
         text: "",
         background: null,
         character: null,
+        night: true,
         fade: true,
         choices: [
             { text: "Start Over from the Beginning", next: "index.html" }

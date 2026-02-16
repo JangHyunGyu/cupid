@@ -652,6 +652,7 @@ Object.assign(SCENARIO[5], {
         text: "",
         background: null,
         character: null,
+        night: true,
         fade: true,
         choices: [
             { text: "처음부터 다시 시작하기", next: "index.html" }
