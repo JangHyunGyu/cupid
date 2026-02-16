@@ -5,9 +5,9 @@
     <script>
         (function () {
             const CURRENT_VERSION = '1.2.1';
-            // Register Service Worker
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/service-worker.js')
+            // Register Service Worker (skip on local dev)
+            if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
+                navigator.serviceWorker.register('service-worker.js')
                     .then(reg => console.log('[SW] Registered:', reg.scope))
                     .catch(err => console.log('[SW] Registration failed:', err));
             }
