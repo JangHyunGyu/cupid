@@ -59,8 +59,20 @@
         <div class="header-actions">
             <!-- 메인 페이지로 돌아가기 버튼 -->
             <a href="index.html" class="back-btn">← 돌아가기</a>
-            <!-- 영어 버전으로 전환 버튼 -->
-            <a href="gallery-en.html" class="lang-btn">English</a>
+            <!-- 언어 선택 콤보박스 -->
+            <div class="lang-combo" id="langCombo">
+                <div class="lang-combo-selected" onclick="toggleLangCombo()">
+                    <span class="lang-flag">🇰🇷</span> 한국어
+                </div>
+                <div class="lang-combo-dropdown">
+                    <div class="lang-combo-option active">
+                        <span class="lang-flag">🇰🇷</span> 한국어
+                    </div>
+                    <a href="gallery-en.html" class="lang-combo-option">
+                        <span class="lang-flag">🇺🇸</span> English
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -186,6 +198,17 @@
 
     <!-- 갤러리 스크립트 (동적 로더) -->
     <script src="assets/js/loaders/gallery-loader.js"></script>
+    <script>
+        function toggleLangCombo() {
+            document.getElementById('langCombo').classList.toggle('open');
+        }
+        document.addEventListener('click', function(e) {
+            const combo = document.getElementById('langCombo');
+            if (combo && !combo.contains(e.target)) {
+                combo.classList.remove('open');
+            }
+        });
+    </script>
 </body>
 
 </html>

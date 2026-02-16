@@ -30,7 +30,19 @@
         <h1>📖 Gallery</h1>
         <div class="header-actions">
             <a href="index-en.html" class="back-btn">← Back</a>
-            <a href="gallery.html" class="lang-btn">한국어</a>
+            <div class="lang-combo" id="langCombo">
+                <div class="lang-combo-selected" onclick="toggleLangCombo()">
+                    <span class="lang-flag">🇺🇸</span> English
+                </div>
+                <div class="lang-combo-dropdown">
+                    <a href="gallery.html" class="lang-combo-option">
+                        <span class="lang-flag">🇰🇷</span> 한국어
+                    </a>
+                    <div class="lang-combo-option active">
+                        <span class="lang-flag">🇺🇸</span> English
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -106,6 +118,17 @@
 
     <!-- Gallery Scripts (Dynamic Loader) -->
     <script src="assets/js/loaders/gallery-loader.js"></script>
+    <script>
+        function toggleLangCombo() {
+            document.getElementById('langCombo').classList.toggle('open');
+        }
+        document.addEventListener('click', function(e) {
+            const combo = document.getElementById('langCombo');
+            if (combo && !combo.contains(e.target)) {
+                combo.classList.remove('open');
+            }
+        });
+    </script>
 </body>
 
 </html>
