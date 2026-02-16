@@ -133,7 +133,7 @@ Object.assign(SCENARIO[1], {
     },
 
     // =========================================================================
-    // 2. 하루 되돌아보기 — 만났던 인물 회상 (5 노드)
+    // 2. 하루 되돌아보기 — 만났던 인물만 회상 (조건 분기)
     // =========================================================================
 
     "night_reflect_start": {
@@ -141,32 +141,71 @@ Object.assign(SCENARIO[1], {
         text: "(I stare at the ceiling, thinking back on the day. For a first day at a new school... a lot really happened.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "night_reflect_seoyeon"
+        branches: [
+            { next: "night_reflect_seoyeon", condition: "met_seoyeon" },
+            { next: "night_reflect_yuna", condition: "met_yuna" },
+            { next: "night_reflect_dain", condition: "met_dain" },
+            { next: "night_reflect_nurse", condition: "met_nurse" },
+            { next: "night_reflect_teacher", condition: "met_teacher" },
+            { next: "night_reflect_end" }
+        ]
     },
     "night_reflect_seoyeon": {
         name: "Me",
         text: "(Seoyeon... she was bright and kind. She came up to me without hesitation, even though I was a complete stranger. We're in the same class, so I'll be seeing her a lot. I'm looking forward to it.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "night_reflect_yuna"
+        branches: [
+            { next: "night_reflect_yuna", condition: "met_yuna" },
+            { next: "night_reflect_dain", condition: "met_dain" },
+            { next: "night_reflect_nurse", condition: "met_nurse" },
+            { next: "night_reflect_teacher", condition: "met_teacher" },
+            { next: "night_reflect_end" }
+        ]
     },
     "night_reflect_yuna": {
         name: "Me",
         text: "(Yuna... a girl with a mysterious aura. She didn't say much, but I keep thinking about those eyes. What was she thinking...? I want to know more about her.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "night_reflect_dain"
+        branches: [
+            { next: "night_reflect_dain", condition: "met_dain" },
+            { next: "night_reflect_nurse", condition: "met_nurse" },
+            { next: "night_reflect_teacher", condition: "met_teacher" },
+            { next: "night_reflect_end" }
+        ]
     },
     "night_reflect_dain": {
         name: "Me",
         text: "(Dain... so full of energy. I don't think I'd ever be bored around her. She looked really cool playing volleyball.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "night_reflect_adults"
+        branches: [
+            { next: "night_reflect_nurse", condition: "met_nurse" },
+            { next: "night_reflect_teacher", condition: "met_teacher" },
+            { next: "night_reflect_end" }
+        ]
     },
-    "night_reflect_adults": {
+    "night_reflect_nurse": {
         name: "Me",
-        text: "(The school nurse had... how do I put it, a certain charm. And the homeroom teacher was surprisingly caring. This school might not be so bad after all.)",
+        text: "(The school nurse had... how do I put it, a certain charm. I kind of want to visit again.)",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        branches: [
+            { next: "night_reflect_teacher", condition: "met_teacher" },
+            { next: "night_reflect_end" }
+        ]
+    },
+    "night_reflect_teacher": {
+        name: "Me",
+        text: "(The homeroom teacher was surprisingly caring. I'm glad to have someone like her as my teacher.)",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        next: "night_reflect_end"
+    },
+    "night_reflect_end": {
+        name: "Me",
+        text: "(This school might not be so bad after all. I wonder what tomorrow will bring...)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "night_diary_choice"
