@@ -509,7 +509,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_no_date_2": {
         name: "나",
-        text: "(주말인데 약속이 없다니. 전학 와서 벌써 일주일이 지났는데… 뭘 한 걸까.)",
+        text: "(주말인데 약속이 없다니. 전학 와서 벌써 나흘이 지났는데… 뭘 한 걸까.)",
         next: "day4_no_date_3"
     },
 

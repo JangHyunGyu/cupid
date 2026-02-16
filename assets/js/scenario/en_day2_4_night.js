@@ -205,7 +205,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_snack_ramen": {
         name: "Me",
-        text: "(I put water in the pot and start boiling the ramen. The bubbling sound fills the quiet kitchen. Watching the steam rise curling up makes me feel at ease.)",
+        text: "(I put water in the pot and start boiling the ramen. The bubbling sound fills the quiet kitchen. Watching the steam curl up makes me feel at ease.)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_snack_think"
