@@ -418,6 +418,26 @@
             z-index: 10;
             display: flex;
             align-items: center;
+            gap: 8px;
+        }
+
+        .archerlab-link {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 4px 10px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            transition: all 0.2s;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .archerlab-link:hover {
+            background: rgba(255, 255, 255, 0.4);
         }
 
         .lang-btn {
@@ -477,8 +497,9 @@
             game, interactive fiction, choice-based game, CUPID game, free dating game, browser game</p>
     </div>
     <div class="lang-switch">
+        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab Home" title="ArcherLab">🏹</a>
         <button id="landing-settings-btn" class="lang-btn"
-            style="margin-right: 10px; cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);">
+            style="cursor: pointer; border: none; background: rgba(255, 255, 255, 0.2);">
             Settings</button>
         <a href="index.html" class="lang-btn">한국어</a>
     </div>
