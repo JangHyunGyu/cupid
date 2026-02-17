@@ -470,7 +470,7 @@ Object.assign(SCENARIO[3], {
     // =========================================================================
     "day3_night_msg_teacher": {
         name: "담임선생님",
-        text: "(메시지: 밤 10시) '{name}, 내일 박물관 약속 잊지 않았지?'",
+        text: "(메시지: 밤 10시) '{name}, 일요일 박물관 약속 잊지 않았지?'",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         night: true,
@@ -723,26 +723,26 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare_choice": {
         name: "나",
-        character: "assets/images/characters/dain_sad.png",
-        text: "(세 목소리가 동시에 울린다. 어두운 공간에서 손이 뻗어져 나온다. 누구의 손을 잡을 것인가…)",
+        character: null,
+        text: "(어두운 공간에서 손이 뻗어져 나온다. 누구의 손을 잡을 것인가…)",
         night: true,
         choices: [
-            { text: "(서연이의 손을 잡는다)", next: "day3_night_nightmare_end" },
-            { text: "(유나의 손을 잡는다)", next: "day3_night_nightmare_end" },
-            { text: "(다인이의 손을 잡는다)", next: "day3_night_nightmare_end" },
+            { text: "(서연이의 손을 잡는다)", next: "day3_night_nightmare_end", condition: "day3_seoyeon_date_confirmed" },
+            { text: "(유나의 손을 잡는다)", next: "day3_night_nightmare_end", condition: "day3_yuna_date_confirmed" },
+            { text: "(다인이의 손을 잡는다)", next: "day3_night_nightmare_end", condition: "day3_dain_date_confirmed" },
             { text: "(아무도 잡지 않는다)", next: "day3_night_nightmare_end" }
         ]
     },
     "day3_night_nightmare_end": {
         name: "나",
-        character: "assets/images/characters/dain_sad.png",
+        character: null,
         text: "(손을 뻗었지만… 잡힌 것은 없었다. 모두가 사라지고, 남은 것은 어둠과 후회뿐이었다.)",
         night: true,
         next: "day3_night_nightmare_wake"
     },
     "day3_night_nightmare_wake": {
         name: "나",
-        character: "assets/images/characters/dain_sad.png",
+        character: null,
         text: "(…땀으로. 심장이 미친 듯이 뛴다. 꿈이었다. 하지만… 내일은 어떻게 될까?)",
         night: true,
         fade: true,

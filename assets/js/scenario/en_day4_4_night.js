@@ -159,13 +159,13 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         character: "assets/images/characters/yuna_smile.png",
         text: "(Yuna opened the back gate lock with practiced ease. As if she'd done this many times before.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         night: true,
         next: "day4_night_yuna_corridor_2"
     },
     "day4_night_yuna_corridor_2": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/yuna_smile.png",
         text: "(The empty school hallway. Only the dim emergency lights were on. The place that was so noisy during the day now felt like even a breath would echo.)",
         night: true,
@@ -173,7 +173,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_corridor_3": {
         name: "Yuna",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"...The underground archives. A section the school sealed off. Everything's in here.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -1600,7 +1600,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_home_2": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        character: "assets/images/characters/dain_laugh.png",
+        character: "assets/images/characters/dain_shy.png",
         text: "(Tomorrow... I want it to be a day where Dain can smile from the heart. I'll be right there beside her.)",
         night: true,
         fade: true,
@@ -2606,7 +2606,7 @@ Object.assign(SCENARIO[4], {
     },
 
     // =========================================================================
-    // 고백 성공 루트
+    // 고백 보류 루트
     // =========================================================================
     "day4_night_regret": {
         name: "Me",

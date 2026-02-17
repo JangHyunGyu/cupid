@@ -638,7 +638,7 @@ Object.assign(SCENARIO[5], {
     "day5_good_yuna": {
         name: "Yuna",
         text: "\"...I know you wavered. But you came to me in the end. ...That's enough.\"",
-        character: "assets/images/characters/yuna_normal.png",
+        character: "assets/images/characters/yuna_smile.png",
         sunset: true,
         next: "day5_good_final"
     },
@@ -775,7 +775,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_10": {
         name: "Me",
-        text: "(Three pairs of eyes turn toward me simultaneously. ...I'm done for.)",
+        text: "(Everyone's eyes turn toward me simultaneously. ...I'm done for.)",
         character: null,
         sunset: true,
         next: "day5_mayhem_11"
@@ -832,7 +832,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_honest_4": {
         name: "Yuna",
         text: "\"...The worst.\"",
-        character: "assets/images/characters/yuna_normal.png",
+        character: "assets/images/characters/yuna_sad.png",
         sunset: true,
         next: "day5_mayhem_honest_5"
     },
@@ -876,7 +876,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_run_5": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(Three people chase me down the stairs. Why is everyone so fast?!)",
+        text: "(Everyone chases me down the stairs. Why is everyone so fast?!)",
         sunset: true,
         next: "day5_mayhem_final"
     },
@@ -926,7 +926,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_confess_silence": {
         name: "Me",
         character: "assets/images/characters/dain_normal.png",
-        text: "(The three of them exchange glances. A strange silence hangs in the air.)",
+        text: "(They all exchange glances. A strange silence hangs in the air.)",
         sunset: true,
         next: "day5_mayhem_confess_seoyeon_2"
     },
@@ -954,7 +954,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_confess_react": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(...All three of them glare at me at once. Their eyes are terrifying.)",
+        text: "(...They all glare at me at once. Their eyes are terrifying.)",
         sunset: true,
         next: "day5_mayhem_confess_final"
     },
@@ -978,7 +978,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_final_2": {
         name: "Me",
-        character: "assets/images/characters/dain_sad.png",
+        character: null,
         text: "(...But why don't I feel so bad? This chaotic everyday life... is kind of its own happiness.)",
         sunset: true,
         fade: true,

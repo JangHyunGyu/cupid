@@ -159,13 +159,13 @@ Object.assign(SCENARIO[4], {
         name: "나",
         character: "assets/images/characters/yuna_smile.png",
         text: "(유나가 후문 자물쇠를 익숙하게 열었다. 마치 이미 여러 번 해 본 것처럼.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         night: true,
         next: "day4_night_yuna_corridor_2"
     },
     "day4_night_yuna_corridor_2": {
         name: "나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/yuna_smile.png",
         text: "(텅 빈 학교 복도. 비상등만 희미하게 켜져 있다. 낮에는 시끄러웠던 곳이 지금은 숨소리마저 울릴 것 같다.)",
         night: true,
@@ -173,7 +173,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_corridor_3": {
         name: "유나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"…지하 자료실이야. 학교가 봉인한 구역. 여기에 전부 있어.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -1600,7 +1600,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_home_2": {
         name: "나",
         background: "assets/images/background/room_my.png",
-        character: "assets/images/characters/dain_laugh.png",
+        character: "assets/images/characters/dain_shy.png",
         text: "(내일은 다인이 진심으로 웃을 수 있는 하루가 되길. 옆에서 지켜봐 줘야지.)",
         night: true,
         fade: true,
@@ -2606,7 +2606,7 @@ Object.assign(SCENARIO[4], {
     },
 
     // =========================================================================
-    // 고백 성공 루트
+    // 고백 보류 루트
     // =========================================================================
     "day4_night_regret": {
         name: "나",

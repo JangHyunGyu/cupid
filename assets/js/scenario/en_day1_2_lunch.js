@@ -236,7 +236,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_refuse_rooftop": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(Seoyeon's face falls. She tries to hide her disappointment but her shoulders droop slightly.) \"...Okay, I understand. Then I'll go by myself.\"",
         character: "assets/images/characters/seyoun_sad.png",
         next: "lunch_alone"

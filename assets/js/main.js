@@ -2089,7 +2089,7 @@ class FreeTalkSystem {
         let locationName = isEn ? "School" : "학교";
         const bgUrl = this.uiManager.bgLayer.style.backgroundImage;
         if (bgUrl.includes('room_school')) locationName = isEn ? "Classroom" : "교실";
-        else if (bgUrl.includes('load_school')) locationName = isEn ? "Hallway" : "복도";
+        else if (bgUrl.includes('school_hallway')) locationName = isEn ? "Hallway" : "복도";
         else if (bgUrl.includes('school.png')) locationName = isEn ? "School Gate" : "교문 앞";
         else if (bgUrl.includes('top_school')) locationName = isEn ? "Rooftop" : "학교 옥상";
         else if (bgUrl.includes('playground')) locationName = isEn ? "Playground" : "운동장";

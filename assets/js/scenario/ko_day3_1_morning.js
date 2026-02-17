@@ -146,7 +146,7 @@ Object.assign(SCENARIO[3], {
     // 학교 도착 - 히로인들의 의심
     "day3_nurse_home_school_arrival": {
         name: "나",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(학교에 도착했다. 오늘따라 아침 공기가 상쾌하다.)",
         background: "assets/images/background/school.png",
         next: "day3_nurse_home_suspicion"
@@ -440,7 +440,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_check_more_after_reject": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         silhouette: true,
         text: "(다른 메시지도 확인해본다.)",
         choices: [
@@ -518,14 +518,14 @@ Object.assign(SCENARIO[3], {
     },
     "day3_change_mind": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         silhouette: true,
         text: "(다시 메시지를 보냈다. '미안, 방금 다른 메시지 확인하고 왔어. 역시 같이 가고 싶어!')",
         next: "day3_change_mind_reply"
     },
     "day3_change_mind_teachers": {
         name: "나",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         silhouette: true,
         text: "(다시 메시지를 보냈다. '죄송해요, 역시 같이 가고 싶어요!')",
         next: "day3_change_mind_reply"
@@ -640,7 +640,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_seoyeon_crosswalk": {
         name: "나",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(횡단보도에서 신호를 기다린다. 가만히 서 있으니 서연이의 손이 내 손에 닿을 듯 말 듯 가깝다.)",
         next: "day3_walk_seoyeon_crosswalk_2"
     },

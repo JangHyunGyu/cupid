@@ -831,7 +831,7 @@ Object.assign(SCENARIO[1], {
     "night_goodnight_think": {
         name: "Me",
         character: null,
-        text: "(Tomorrow... Seoyeon, Yuna, Dain, and the teachers. I'll get to see them again. I wonder what stories are waiting for me.)",
+        text: "(What will tomorrow bring... I'm looking forward to it.)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "night_goodnight_close"
@@ -982,7 +982,7 @@ Object.assign(SCENARIO[1], {
 
     "day1_end": {
         name: "Me",
-        text: "(As I close my eyes, the faces of the girls I met today drift through my mind one by one. Seoyeon's smile, Yuna's gaze, Dain's laughter... will I grow closer to them tomorrow...?)",
+        text: "(I look back on today. New encounters, unfamiliar feelings... What kind of day will tomorrow be?)",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,

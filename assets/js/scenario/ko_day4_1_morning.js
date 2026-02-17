@@ -377,6 +377,7 @@ Object.assign(SCENARIO[4], {
         name: "서연",
         text: "\"그럼 이따 봐~!! 😆\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         next: "day4_morning_loyalty_check"
     },
 
@@ -415,6 +416,7 @@ Object.assign(SCENARIO[4], {
         name: "유나",
         text: "\"…빨리 와.\"",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         next: "day4_morning_loyalty_check"
     },
 
@@ -453,6 +455,7 @@ Object.assign(SCENARIO[4], {
         name: "다인",
         text: "\"그럼 이따 보자!! 기대해!!! 💪\"",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         next: "day4_morning_loyalty_check"
     },
 
@@ -491,6 +494,7 @@ Object.assign(SCENARIO[4], {
         name: "보건선생님",
         text: "\"그럼 이따 봐 😊\"",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         next: "day4_morning_loyalty_check"
     },
 
@@ -529,6 +533,7 @@ Object.assign(SCENARIO[4], {
         name: "담임선생님",
         text: "\"늦지 마라. 기다리는 건 싫어하니까.\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         next: "day4_morning_loyalty_check"
     },
 

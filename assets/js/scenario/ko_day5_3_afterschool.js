@@ -638,7 +638,7 @@ Object.assign(SCENARIO[5], {
     "day5_good_yuna": {
         name: "유나",
         text: "\"…흔들렸다는 거 알아. 근데 결국 나한테 온 거잖아. …그것만으로 됐어.\"",
-        character: "assets/images/characters/yuna_normal.png",
+        character: "assets/images/characters/yuna_smile.png",
         sunset: true,
         next: "day5_good_final"
     },
@@ -775,7 +775,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_10": {
         name: "나",
-        text: "(세 사람의 시선이 동시에 나를 향한다. …끝났다.)",
+        text: "(모두의 시선이 동시에 나를 향한다. …끝났다.)",
         character: null,
         sunset: true,
         next: "day5_mayhem_11"
@@ -832,7 +832,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_honest_4": {
         name: "유나",
         text: "\"…최악이야.\"",
-        character: "assets/images/characters/yuna_normal.png",
+        character: "assets/images/characters/yuna_sad.png",
         sunset: true,
         next: "day5_mayhem_honest_5"
     },
@@ -876,7 +876,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_run_5": {
         name: "나",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(계단을 뛰어내려가는 나를 세 사람이 쫓아온다. 왜 다들 이렇게 빠른 거야?!)",
+        text: "(계단을 뛰어내려가는 나를 모두가 쫓아온다. 왜 다들 이렇게 빠른 거야?!)",
         sunset: true,
         next: "day5_mayhem_final"
     },
@@ -926,7 +926,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_confess_silence": {
         name: "나",
         character: "assets/images/characters/dain_normal.png",
-        text: "(세 사람이 서로 눈치를 본다. 기묘한 침묵이 흐른다.)",
+        text: "(모두가 서로 눈치를 본다. 기묘한 침묵이 흐른다.)",
         sunset: true,
         next: "day5_mayhem_confess_seoyeon_2"
     },
@@ -954,7 +954,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_confess_react": {
         name: "나",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(…세 사람이 동시에 나를 노려본다. 눈빛이 무섭다.)",
+        text: "(…모두가 동시에 나를 노려본다. 눈빛이 무섭다.)",
         sunset: true,
         next: "day5_mayhem_confess_final"
     },
@@ -978,7 +978,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_final_2": {
         name: "나",
-        character: "assets/images/characters/dain_sad.png",
+        character: null,
         text: "(…근데 나쁘지 않은 기분은 뭐지? 이런 소란스러운 일상도… 나름 행복한 것 같다.)",
         sunset: true,
         fade: true,

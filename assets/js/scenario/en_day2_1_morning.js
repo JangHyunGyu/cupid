@@ -812,7 +812,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_decision": {
         name: "Me",
-        text: "(Should I eat first and then go, or head straight to the library annex...? Yuna comes first. I can always eat later.)",
+        text: "(It's lunch time. Who should I spend it with...)",
         next: "day2_lunch_time"
     }
 });

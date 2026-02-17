@@ -621,7 +621,12 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(...I dream. Voices echo from a dark space.)",
         night: true,
-        next: "day3_night_nightmare_voice1"
+        branches: [
+            { next: "day3_night_nightmare_voice1", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day3_night_nightmare_voice2", condition: "day3_yuna_date_confirmed" },
+            { next: "day3_night_nightmare_voice3", condition: "day3_dain_date_confirmed" },
+            { next: "day3_night_nightmare_choice" }
+        ]
     },
     "day3_night_nightmare_voice1": {
         name: "???",
@@ -629,7 +634,11 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/seyoun_sad.png",
         silhouette: true,
         night: true,
-        next: "day3_night_nightmare_voice2"
+        branches: [
+            { next: "day3_night_nightmare_voice2", condition: "day3_yuna_date_confirmed" },
+            { next: "day3_night_nightmare_voice3", condition: "day3_dain_date_confirmed" },
+            { next: "day3_night_nightmare_choice" }
+        ]
     },
     "day3_night_nightmare_voice2": {
         name: "???",
@@ -637,7 +646,10 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
-        next: "day3_night_nightmare_voice3"
+        branches: [
+            { next: "day3_night_nightmare_voice3", condition: "day3_dain_date_confirmed" },
+            { next: "day3_night_nightmare_choice" }
+        ]
     },
     "day3_night_nightmare_voice3": {
         name: "???",
@@ -649,26 +661,26 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare_choice": {
         name: "Me",
-        character: "assets/images/characters/dain_sad.png",
-        text: "(All three voices ring out at once. Hands reach out from the darkness. Whose hand will I take...)",
+        character: null,
+        text: "(Hands reach out from the darkness. Whose hand will I take...)",
         night: true,
         choices: [
-            { text: "(Take Seoyeon's hand)", next: "day3_night_nightmare_end" },
-            { text: "(Take Yuna's hand)", next: "day3_night_nightmare_end" },
-            { text: "(Take Dain's hand)", next: "day3_night_nightmare_end" },
+            { text: "(Take Seoyeon's hand)", next: "day3_night_nightmare_end", condition: "day3_seoyeon_date_confirmed" },
+            { text: "(Take Yuna's hand)", next: "day3_night_nightmare_end", condition: "day3_yuna_date_confirmed" },
+            { text: "(Take Dain's hand)", next: "day3_night_nightmare_end", condition: "day3_dain_date_confirmed" },
             { text: "(Don't take anyone's hand)", next: "day3_night_nightmare_end" }
         ]
     },
     "day3_night_nightmare_end": {
         name: "Me",
-        character: "assets/images/characters/dain_sad.png",
+        character: null,
         text: "(I reached out, but... there was nothing to hold. Everyone vanished, leaving only darkness and regret.)",
         night: true,
         next: "day3_night_nightmare_wake"
     },
     "day3_night_nightmare_wake": {
         name: "Me",
-        character: "assets/images/characters/dain_sad.png",
+        character: null,
         text: "(...I snap awake. My heart is pounding like crazy. It was a dream. But... what will tomorrow bring?)",
         night: true,
         fade: true,

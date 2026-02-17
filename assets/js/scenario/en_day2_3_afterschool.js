@@ -66,7 +66,7 @@ if (!SCENARIO[2]) {
 }
 
 /**
- * [Day 2 - After School] �� ������ ����
+ * [Day 2 - After School] 씬 데이터 정의
  */
 Object.assign(SCENARIO[2], {
     "day2_afternoon_class": {

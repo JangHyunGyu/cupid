@@ -146,7 +146,46 @@ Object.assign(SCENARIO[5], {
         night: true,
         bgm: null,
         fade: true,
-        next: "day5_ending_good_2"
+        next: "day5_ending_good_route"
+    },
+    "day5_ending_good_route": {
+        name: "System",
+        text: "",
+        night: true,
+        branches: [
+            { next: "day5_ending_good_faithful_2", condition: "day5_confessed" },
+            { next: "day5_ending_good_2" }
+        ]
+    },
+    // --- Late Confession (Faithful) Route Good Ending Narration ---
+    "day5_ending_good_faithful_2": {
+        name: "Me",
+        text: "(It took me a long time to find the courage. But because I waited, this feeling is certain.)",
+        night: true,
+        fade: true,
+        bgm: "ending.mp3",
+        next: "day5_ending_good_faithful_3"
+    },
+    "day5_ending_good_faithful_3": {
+        name: "Me",
+        text: "(My heart was set from the beginning. It just took time to put it into words.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_faithful_4"
+    },
+    "day5_ending_good_faithful_4": {
+        name: "Me",
+        text: "(I hesitated because I was afraid of the answer. Afraid of rejection, afraid of ruining what we had.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_faithful_5"
+    },
+    "day5_ending_good_faithful_5": {
+        name: "Me",
+        text: "(But I finally said it. And the answer\u2014 was worth the wait.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_7"
     },
     "day5_ending_good_2": {
         name: "Me",
@@ -384,7 +423,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_7": {
         name: "Me",
-        text: "(But strangely enough… all three of them are smiling. And so am I.)",
+        text: "(But strangely enough… all of them are smiling. And so am I.)",
         night: true,
         fade: true,
         next: "day5_ending_harem_8"
