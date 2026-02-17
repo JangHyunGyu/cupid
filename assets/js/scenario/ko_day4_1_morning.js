@@ -113,8 +113,23 @@ Object.assign(SCENARIO[4], {
     "day4_morning_excitement": {
         name: "나",
         background: "assets/images/background/room_my.png",
-        text: "(전학 온 지 나흘째. 이렇게 설레는 주말이 올 줄은 몰랐어. 가슴이 쿵쾅거린다.)",
-        next: "day4_morning_stretch"
+        text: "(전학 온 지 나흘째. 이렇게 설레는 주말이 올 줄은 몰랐어. 가슴이 쿵쾅거린다.)",        next: "day4_morning_guilt_check"
+    },
+
+    "day4_morning_guilt_check": {
+        name: "시스템",
+        text: "",
+        background: "assets/images/background/room_my.png",
+        branches: [
+            { next: "day4_morning_guilt", condition: "day3_has_multiple_dates" },
+            { next: "day4_morning_stretch" }
+        ]
+    },
+
+    "day4_morning_guilt": {
+        name: "나",
+        background: "assets/images/background/room_my.png",
+        text: "(…잘깜. 여러 명에게 약속한 게 마음에 걸린다. 다들 나를 믿고 약속한 건데... 결국 한 사람밖에 만나지 못할 텐데.)",        next: "day4_morning_stretch"
     },
 
     "day4_morning_stretch": {
@@ -362,7 +377,7 @@ Object.assign(SCENARIO[4], {
         name: "서연",
         text: "\"그럼 이따 봐~!! 😆\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "day4_morning_lastcheck"
+        next: "day4_morning_loyalty_check"
     },
 
     // --- 유나 메시지 ---
@@ -400,7 +415,7 @@ Object.assign(SCENARIO[4], {
         name: "유나",
         text: "\"…빨리 와.\"",
         character: "assets/images/characters/yuna_normal.png",
-        next: "day4_morning_lastcheck"
+        next: "day4_morning_loyalty_check"
     },
 
     // --- 다인 메시지 ---
@@ -438,7 +453,7 @@ Object.assign(SCENARIO[4], {
         name: "다인",
         text: "\"그럼 이따 보자!! 기대해!!! 💪\"",
         character: "assets/images/characters/dain_laugh.png",
-        next: "day4_morning_lastcheck"
+        next: "day4_morning_loyalty_check"
     },
 
     // --- 보건선생님 메시지 ---
@@ -476,7 +491,7 @@ Object.assign(SCENARIO[4], {
         name: "보건선생님",
         text: "\"그럼 이따 봐 😊\"",
         character: "assets/images/characters/nurse_normal.png",
-        next: "day4_morning_lastcheck"
+        next: "day4_morning_loyalty_check"
     },
 
     // --- 담임선생님 메시지 ---
@@ -514,6 +529,28 @@ Object.assign(SCENARIO[4], {
         name: "담임선생님",
         text: "\"늦지 마라. 기다리는 건 싫어하니까.\"",
         character: "assets/images/characters/teacher_normal.png",
+        next: "day4_morning_loyalty_check"
+    },
+
+    // =========================================================================
+    // 6C. 일편단심 보너스 체크 (2 노드)
+    // =========================================================================
+
+    "day4_morning_loyalty_check": {
+        name: "시스템",
+        text: "",
+        background: "assets/images/background/room_my.png",
+        branches: [
+            { next: "day4_morning_loyalty_boost", condition: "day3_loyalty_bonus" },
+            { next: "day4_morning_lastcheck" }
+        ]
+    },
+
+    "day4_morning_loyalty_boost": {
+        name: "나",
+        background: "assets/images/background/room_my.png",
+        text: "(한 사람만을 위해 준비하고 있다는 사실이… 오히려 마음을 단단하게 해준다. 오늘은 오직 그 사람만 생각하자.)",
+        stats: { Seoyeon: { affinity: 3 }, Yuna: { affinity: 3 }, Dain: { affinity: 3 }, Teacher: { affinity: 3 }, Nurse: { affinity: 3 } },
         next: "day4_morning_lastcheck"
     },
 
