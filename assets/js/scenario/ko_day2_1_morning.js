@@ -167,9 +167,9 @@ Object.assign(SCENARIO[2], {
     "day2_school_gate_2": {
         name: "나",
         background: "assets/images/background/school.png",
-        text: "(교문을 통과하려는데, 누군가 내 어깨를 툭 친다.)",
+        text: "(교문을 통과하려는데, 문득 익숙한 기운이 느껴진다.)",
         choices: [
-            { text: "뒤를 돌아본다.", next: "day2_meet_someone" }
+            { text: "주위를 둘러본다.", next: "day2_meet_someone" }
         ]
     },
 
@@ -180,7 +180,7 @@ Object.assign(SCENARIO[2], {
     "day2_meet_someone": {
         name: "나",
         background: "assets/images/background/school.png",
-        text: "(뒤를 돌아보자 그곳에는...)",
+        text: "(주위를 둘러보자 그곳에는...)",
         branches: [
             { next: "day2_meet_yuna", character: "Yuna", condition: "met_yuna" },
             { next: "day2_meet_nurse", character: "Nurse", condition: "met_nurse" },
@@ -246,7 +246,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_nurse_low": {
         name: "보건선생님",
-        text: "(선생님이 나를 보자마자 한숨을 내쉬며 고개를 돌린다.) \"어머, 전학생... 아침부터 얼굴 보기가 참 힘드네. 볼일 없으면 교실로 가 줄래?\"",
+        text: "(선생님이 나를 힐끗 보더니 무심하게 시선을 돌린다.) \"어머, 전학생... 안색이 안 좋아 보이네. 특별히 볼일 없으면 교실로 가서 쉬는 게 좋겠어.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_classroom"
     },
@@ -308,7 +308,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_seoyeon_low": {
         name: "서연",
-        text: "(서연이가 나를 발견하자마자 표정을 굳히며 고개를 돌린다.) \"...아, 왔니? 지각은 안 해서 다행이네. 그럼 수고해.\"",
+        text: "(서연이가 나를 발견하자마자 표정을 굳히며 고개를 돌린다.) \"...아, 왔어? 지각은 안 해서 다행이네. 난 먼저 갈게.\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "day2_classroom"
     },
@@ -333,7 +333,7 @@ Object.assign(SCENARIO[2], {
         text: "\"어제 잘 들어갔어? 연락처 교환하고 나서 메시지 보낼까 말까 수백 번은 고민했는데... 너무 방해될까 봐 꾹 참았어.\"",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
-            { text: "나도 서연이 메시지 엄청 기다렸는데! 지금이라도 보내줘요.", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "나도 서연이 메시지 엄청 기다렸는데! 지금이라도 보내줘!", next: "day2_seoyeon_happy", stats: { Seoyeon: { affinity: 5 } } },
             { text: "아, 그랬구나. 사실 나도 피곤해서 눕자마자 잠들었어.", next: "day2_seoyeon_normal", stats: { Seoyeon: { affinity: 1 } } }
         ]
     },
@@ -512,7 +512,7 @@ Object.assign(SCENARIO[2], {
     "day2_classroom_settle": {
         name: "반 친구",
         background: "assets/images/background/room_school.png",
-        text: "(앞자리 여학생이 돌아보며 말한다.) \"어제 서연이랑 같이 다니는 거 봤는데, 너희 사이 좋더라? 벌써 친구 만든 거야?\"",
+        text: "(앞자리 여학생이 돌아보며 말한다.) \"어제 여기저기 돌아다니는 거 봤는데, 벌써 학교 적응 다 한 거야?\"",
         character: null,
         next: "day2_classroom_settle_2"
     },
@@ -520,7 +520,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         background: "assets/images/background/room_school.png",
         character: null,
-        text: "\"아, 하하... 다들 친절하게 대해줘서요.\"",
+        text: "\"아, 하하... 다들 잘 해줘서 금방 적응했어.\"",
         next: "day2_classroom_settle_3"
     },
     "day2_classroom_settle_3": {
@@ -589,7 +589,24 @@ Object.assign(SCENARIO[2], {
         name: "나",
         background: "assets/images/background/room_school.png",
         character: null,
-        text: "(옆자리 친구에게 슬쩍 물어본다.) \"혹시... 유나라는 애 알아?\"",
+        text: "(옆자리 친구에게 슬쩍 물어본다.)",
+        branches: [
+            { next: "day2_note_ask_around_met", condition: "met_yuna" },
+            { next: "day2_note_ask_around_new" }
+        ]
+    },
+    "day2_note_ask_around_met": {
+        name: "나",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"혹시 유나라는 애에 대해 뭐 좀 아는 거 있어? 다른 반인 것 같은데...\"",
+        next: "day2_note_ask_around_2"
+    },
+    "day2_note_ask_around_new": {
+        name: "나",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"혹시... 유나라는 애 알아?\"",
         next: "day2_note_ask_around_2"
     },
     "day2_note_ask_around_2": {
