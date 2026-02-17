@@ -361,7 +361,7 @@ Object.assign(SCENARIO[3], {
             { next: "day3_afternoon_single_wait", condition: "day3_dain_date_confirmed" },
             { next: "day3_afternoon_teacher_wait", condition: "day3_teacher_date_confirmed" },
             { next: "day3_afternoon_nurse_wait", condition: "day3_nurse_date_confirmed" },
-            { next: "day3_afternoon_alone_walk" }
+            { next: "day3_afternoon_nobody_waiting" }
         ]
     },
 
@@ -894,6 +894,13 @@ Object.assign(SCENARIO[3], {
         sunset: true,
         fade: true,
         next: "day3_night_start"
+    },
+    "day3_afternoon_nobody_waiting": {
+        name: "Me",
+        background: "assets/images/background/school.png",
+        text: "(...No one's here. Must've been my imagination. Silly me for getting my hopes up.)",
+        sunset: true,
+        next: "day3_afternoon_alone_walk"
     },
     "day3_afternoon_alone_walk": {
         name: "Me",

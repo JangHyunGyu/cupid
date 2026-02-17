@@ -408,7 +408,7 @@ Object.assign(SCENARIO[3], {
             { next: "day3_afternoon_single_wait", condition: "day3_dain_date_confirmed" },
             { next: "day3_afternoon_teacher_wait", condition: "day3_teacher_date_confirmed" },
             { next: "day3_afternoon_nurse_wait", condition: "day3_nurse_date_confirmed" },
-            { next: "day3_afternoon_alone_walk" }
+            { next: "day3_afternoon_nobody_waiting" }
         ]
     },
 
@@ -956,6 +956,13 @@ Object.assign(SCENARIO[3], {
         sunset: true,
         fade: true,
         next: "day3_night_start"
+    },
+    "day3_afternoon_nobody_waiting": {
+        name: "나",
+        background: "assets/images/background/school.png",
+        text: "(...아무도 없다. 착각이었나. 괜히 기대한 내가 바보지.)",
+        sunset: true,
+        next: "day3_afternoon_alone_walk"
     },
     "day3_afternoon_alone_walk": {
         name: "나",
