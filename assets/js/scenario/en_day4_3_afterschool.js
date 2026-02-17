@@ -210,6 +210,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_yuna": {
         name: "Yuna",
         text: "\"…There's a used bookstore over there. Would it be okay if we stopped in?\"",
+        background: "assets/images/background/bookstore.png",
         character: "assets/images/characters/yuna_normal.png",
         next: "day4_special_yuna_react"
     },
@@ -217,6 +218,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_yuna_react": {
         name: "Me",
         text: "(Yuna carefully pulled a book from the old shelves. \"This book… I wanted to read it together with you.\" Her eyes shimmered softly.)",
+        background: "assets/images/background/bookstore.png",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
             {

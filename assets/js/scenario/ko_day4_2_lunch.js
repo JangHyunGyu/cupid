@@ -526,14 +526,14 @@ Object.assign(SCENARIO[4], {
     "day4_activity_yuna_1": {
         name: "유나",
         text: "\"…저기, 서점 들러도 돼? 읽고 싶은 책이 있어서.\"",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/bookstore.png",
         character: "assets/images/characters/yuna_normal.png",
         next: "day4_activity_yuna_2"
     },
 
     "day4_activity_yuna_2": {
         name: "나",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/bookstore.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(서점 안에서 유나와 나란히 책장을 넘겼다. 유나는 책을 고를 때 정말 진지한 표정이 된다.)",
         next: "day4_activity_yuna_3"
@@ -541,7 +541,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_activity_yuna_3": {
         name: "유나",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/bookstore.png",
         text: "\"…이 노래 좋아해? 한쪽 들어볼래.\"",
         character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: 3 } },
@@ -550,7 +550,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_activity_yuna_4": {
         name: "나",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/bookstore.png",
         text: "(유나가 이어폰 한쪽을 건네줬다. 가까이 붙어 앉아 같은 음악을 듣는다. 유나의 어깨가 내 어깨에 살짝 닿았다.)",
         character: "assets/images/characters/yuna_shy.png",
         stats: { Yuna: { affinity: 5 } },
@@ -562,14 +562,14 @@ Object.assign(SCENARIO[4], {
     "day4_activity_dain_1": {
         name: "다인",
         text: "\"야야야, 저기 오락실이다!! 가자가자가자!!\"",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/arcade.png",
         character: "assets/images/characters/dain_laugh.png",
         next: "day4_activity_dain_2"
     },
 
     "day4_activity_dain_2": {
         name: "나",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/arcade.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(다인이가 눈을 반짝이며 오락실 안으로 뛰어간다. 리듬게임 앞에 서더니 도전적으로 날 쳐다본다.)",
         next: "day4_activity_dain_3"
@@ -577,7 +577,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_activity_dain_3": {
         name: "다인",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/arcade.png",
         text: "\"대결이다!! 지는 사람이 아이스크림 사기!! 절대 안 져!!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 3 } },
@@ -586,7 +586,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_activity_dain_4": {
         name: "나",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/arcade.png",
         text: "(결국 내가 졌다. 다인이가 양 주먹을 불끈 쥐며 환호한다. 지긴 했지만… 저렇게 좋아하는 모습은 보기 좋다.)",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 5 } },

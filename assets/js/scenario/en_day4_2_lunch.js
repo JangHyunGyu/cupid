@@ -526,14 +526,14 @@ Object.assign(SCENARIO[4], {
     "day4_activity_yuna_1": {
         name: "Yuna",
         text: "\"...Can we stop by the bookstore? There's a book I want to read.\"",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/bookstore.png",
         character: "assets/images/characters/yuna_normal.png",
         next: "day4_activity_yuna_2"
     },
 
     "day4_activity_yuna_2": {
         name: "Me",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/bookstore.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(We flipped through books side by side in the bookstore. Yuna gets really serious when she's picking out a book.)",
         next: "day4_activity_yuna_3"
@@ -541,7 +541,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_activity_yuna_3": {
         name: "Yuna",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/bookstore.png",
         text: "\"...Do you like this song? Want to listen with one earbud?\"",
         character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: 3 } },
@@ -550,7 +550,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_activity_yuna_4": {
         name: "Me",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/bookstore.png",
         text: "(Yuna handed me one of her earbuds. We sat close together, listening to the same music. Her shoulder gently touched mine.)",
         character: "assets/images/characters/yuna_shy.png",
         stats: { Yuna: { affinity: 5 } },
@@ -562,14 +562,14 @@ Object.assign(SCENARIO[4], {
     "day4_activity_dain_1": {
         name: "Dain",
         text: "\"Hey hey hey, there's an arcade over there!! Let's go let's go let's go!!\"",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/arcade.png",
         character: "assets/images/characters/dain_laugh.png",
         next: "day4_activity_dain_2"
     },
 
     "day4_activity_dain_2": {
         name: "Me",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/arcade.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(Dain's eyes light up as she dashes into the arcade. She stops in front of a rhythm game and gives me a challenging look.)",
         next: "day4_activity_dain_3"
@@ -577,7 +577,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_activity_dain_3": {
         name: "Dain",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/arcade.png",
         text: "\"It's a showdown!! Loser buys ice cream!! I'm NOT losing!!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 3 } },
@@ -586,7 +586,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_activity_dain_4": {
         name: "Me",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/arcade.png",
         text: "(I ended up losing. Dain pumps both fists in the air and cheers. I lost, but... seeing her that happy is a pretty good sight.)",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 5 } },
