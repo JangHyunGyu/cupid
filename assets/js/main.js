@@ -4019,7 +4019,30 @@ class GameEngine {
             // 크레딧 레이어 표시
             const creditsLayer = document.getElementById('credits-layer');
             if (creditsLayer) {
+                // 이전 크레딧 상태 완전 초기화 (재진입 시 애니메이션 재시작 보장)
+                creditsLayer.classList.remove('active');
+                const content = document.getElementById('credits-content');
+                if (content) {
+                    content.style.animation = 'none';
+                    content.style.transform = '';
+                }
+
+                // 이전 이벤트 리스너 제거 (누적 방지)
+                const oldHandler = creditsLayer._creditsClickHandler;
+                if (oldHandler) creditsLayer.removeEventListener('click', oldHandler);
+
+                // 이전 타이머 제거
+                if (creditsLayer._creditsTimer) clearTimeout(creditsLayer._creditsTimer);
+
+                // reflow 강제 — 위의 초기화가 브라우저에 반영된 후 active 추가
+                creditsLayer.offsetHeight;
+                if (content) {
+                    content.style.animation = '';
+                    content.style.transform = '';
+                }
                 creditsLayer.classList.add('active');
+
+                console.log('[GameEngine] 크레딧 레이어 활성화됨');
 
                 // 스킵 버튼 생성 (없으면)
                 let skipBtn = document.getElementById('credits-skip-btn');
@@ -4036,20 +4059,22 @@ class GameEngine {
                     if (creditsEnded) return; // 중복 실행 방지
                     creditsEnded = true;
                     clearTimeout(creditsTimer);
+                    creditsLayer._creditsTimer = null;
                     creditsLayer.classList.remove('active');
                     // 크레딧 스크롤 애니메이션 리셋
-                    const content = document.getElementById('credits-content');
                     if (content) {
                         content.style.animation = 'none';
                         content.offsetHeight; // reflow
                         content.style.animation = '';
                     }
+                    // 이벤트 리스너 정리
+                    creditsLayer.removeEventListener('click', clickHandler);
+                    creditsLayer._creditsClickHandler = null;
                     if (scene.next) {
                         try {
                             await this.renderScene(scene.next);
                         } catch (e) {
                             console.error('[GameEngine] 크레딧 후 씬 전환 오류:', e);
-                            // 오류 시에도 대화창 복원하여 게임 멈춤 방지
                             this.uiManager.dialogueBox.style.display = '';
                         }
                     }
@@ -4060,12 +4085,15 @@ class GameEngine {
                 // 크레딧 레이어 클릭으로도 스킵 가능 (5초 후)
                 let layerClickable = false;
                 setTimeout(() => { layerClickable = true; }, 5000);
-                creditsLayer.addEventListener('click', (e) => {
+                const clickHandler = (e) => {
                     if (layerClickable && e.target !== skipBtn) endCredits();
-                });
+                };
+                creditsLayer.addEventListener('click', clickHandler);
+                creditsLayer._creditsClickHandler = clickHandler;
 
                 // 크레딧 애니메이션 종료 시 자동 전환 (25초)
                 const creditsTimer = setTimeout(endCredits, 26000);
+                creditsLayer._creditsTimer = creditsTimer;
             } else {
                 // credits-layer 요소를 찾을 수 없는 경우 → 크레딧 생략하고 다음 씬으로
                 console.warn('[GameEngine] credits-layer 요소를 찾을 수 없습니다. 크레딧을 건너뜁니다.');
