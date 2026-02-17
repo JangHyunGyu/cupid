@@ -4032,7 +4032,7 @@ class GameEngine {
 
                 // 스킵 버튼 또는 크레딧 끝나면 다음 씬으로
                 let creditsEnded = false;
-                const endCredits = () => {
+                const endCredits = async () => {
                     if (creditsEnded) return; // 중복 실행 방지
                     creditsEnded = true;
                     clearTimeout(creditsTimer);
@@ -4045,7 +4045,13 @@ class GameEngine {
                         content.style.animation = '';
                     }
                     if (scene.next) {
-                        this.renderScene(scene.next);
+                        try {
+                            await this.renderScene(scene.next);
+                        } catch (e) {
+                            console.error('[GameEngine] 크레딧 후 씬 전환 오류:', e);
+                            // 오류 시에도 대화창 복원하여 게임 멈춤 방지
+                            this.uiManager.dialogueBox.style.display = '';
+                        }
                     }
                 };
 
@@ -4060,6 +4066,13 @@ class GameEngine {
 
                 // 크레딧 애니메이션 종료 시 자동 전환 (25초)
                 const creditsTimer = setTimeout(endCredits, 26000);
+            } else {
+                // credits-layer 요소를 찾을 수 없는 경우 → 크레딧 생략하고 다음 씬으로
+                console.warn('[GameEngine] credits-layer 요소를 찾을 수 없습니다. 크레딧을 건너뜁니다.');
+                this.uiManager.dialogueBox.style.display = '';
+                if (scene.next) {
+                    await this.renderScene(scene.next);
+                }
             }
 
             // ═══════════════════════════════════════════════════════
