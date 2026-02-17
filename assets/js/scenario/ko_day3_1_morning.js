@@ -1327,7 +1327,6 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_prepare_school": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
         text: "(학교 갈 준비를 서둘러 마쳤다.)",
         next: "day3_walk_alone"
     },

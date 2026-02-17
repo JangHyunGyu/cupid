@@ -636,7 +636,7 @@ Object.assign(SCENARIO[2], {
         text: "(그때, 서연이가 우리를 발견하고 다가온다.)",
         character: "assets/images/characters/seyoun_normal.png",
         branches: [
-            { next: "day2_dain_seoyeon_both_met", condition: "day2_ate_lunch_seoyeon" },
+            { next: "day2_dain_seoyeon_both_met", condition: "met_seoyeon" },
             { next: "day2_dain_seoyeon_both_new" }
         ]
     },

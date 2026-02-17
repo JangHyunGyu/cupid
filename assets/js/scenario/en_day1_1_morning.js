@@ -257,6 +257,15 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
             {
+                text: "The school is really lively. Do you do any club activities, Seoyeon?",
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_club_high" },
+                    { minAffinity: 0, next: "hallway_talk_club_normal" },
+                    { minAffinity: -999, next: "hallway_talk_club_low" }
+                ]
+            },
+            {
                 text: "The school is nice, but it looks even better because of the person showing me around.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [

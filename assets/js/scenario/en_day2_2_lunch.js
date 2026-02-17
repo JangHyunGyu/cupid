@@ -631,7 +631,7 @@ Object.assign(SCENARIO[2], {
         text: "(Just then, Seoyeon notices us and walks over.)",
         character: "assets/images/characters/seyoun_normal.png",
         branches: [
-            { next: "day2_dain_seoyeon_both_met", condition: "day2_ate_lunch_seoyeon" },
+            { next: "day2_dain_seoyeon_both_met", condition: "met_seoyeon" },
             { next: "day2_dain_seoyeon_both_new" }
         ]
     },

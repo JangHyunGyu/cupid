@@ -352,7 +352,6 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_gate": {
         name: "Me",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/seyoun_normal.png",
         text: "(Someone seems to be waiting.)",
         sunset: true,
         branches: [
@@ -522,12 +521,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_afternoon_seoyeon_freetalk"
     },
     "day3_afternoon_seoyeon_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/seyoun_laugh.png",
         text: "(Walking alongside Seoyeon down the riverside path as the sunset deepens.)",
         sunset: true,
-        freeTalk: { turns: 4, context: "Walking with Seoyeon along the sunset riverside. She asked 'Will you only meet me tomorrow?' and they had a pinky promise/hand-holding moment. Sweet and romantic atmosphere." },
+        context: "Walking with Seoyeon along the sunset riverside. She asked 'Will you only meet me tomorrow?' and they had a pinky promise/hand-holding moment. Sweet and romantic atmosphere.",
+        maxTurns: 4,
         next: "day3_afternoon_seoyeon_talk_walk_2"
     },
     "day3_afternoon_seoyeon_talk_walk_2": {
@@ -669,12 +670,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_afternoon_yuna_freetalk"
     },
     "day3_afternoon_yuna_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_shy.png",
         text: "(Walking side by side with Yuna. Her expression is softer than usual.)",
         sunset: true,
-        freeTalk: { turns: 4, context: "Walking home with Yuna after petting a cat together. Yuna's expression is softer than usual. Quiet and comfortable atmosphere." },
+        context: "Walking home with Yuna after petting a cat together. Yuna's expression is softer than usual. Quiet and comfortable atmosphere.",
+        maxTurns: 4,
         next: "day3_afternoon_yuna_talk_walk_2"
     },
     "day3_afternoon_yuna_talk_walk_2": {
@@ -836,12 +839,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_afternoon_dain_freetalk"
     },
     "day3_afternoon_dain_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(Eating ice cream and chatting with Dain on a park bench.)",
         sunset: true,
-        freeTalk: { turns: 4, context: "Sharing ice cream with Dain on a park bench. She said 'I couldn't sleep last night' showing a serious side. She's being shy instead of her usual energetic self." },
+        context: "Sharing ice cream with Dain on a park bench. She said 'I couldn't sleep last night' showing a serious side. She's being shy instead of her usual energetic self.",
+        maxTurns: 4,
         next: "day3_afternoon_dain_talk_walk_2"
     },
     "day3_afternoon_dain_talk_walk_2": {
@@ -998,12 +1003,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_afternoon_teacher_freetalk"
     },
     "day3_afternoon_teacher_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
         text: "(Riding in the teacher's car on the way home.)",
         sunset: true,
-        freeTalk: { turns: 3, context: "In the homeroom teacher's car heading home. After hand-holding or leaning on her shoulder in the sunset. The sweetness and guilt of a forbidden love." },
+        context: "In the homeroom teacher's car heading home. After hand-holding or leaning on her shoulder in the sunset. The sweetness and guilt of a forbidden love.",
+        maxTurns: 3,
         next: "day3_afternoon_teacher_arrive"
     },
     "day3_afternoon_teacher_arrive": {
@@ -1069,12 +1076,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_afternoon_nurse_freetalk"
     },
     "day3_afternoon_nurse_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/nurse_shy.png",
         text: "(Walking home alongside the school nurse.)",
         sunset: true,
-        freeTalk: { turns: 3, context: "Walking home with the school nurse. She used a band-aid as an excuse to hold my hand. The thrill and tension of a forbidden love." },
+        context: "Walking home with the school nurse. She used a band-aid as an excuse to hold my hand. The thrill and tension of a forbidden love.",
+        maxTurns: 3,
         next: "day3_afternoon_nurse_arrive"
     },
     "day3_afternoon_nurse_arrive": {

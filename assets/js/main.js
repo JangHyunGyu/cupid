@@ -2855,11 +2855,16 @@ class SceneRenderer {
         if (scene.branches && Array.isArray(scene.branches)) {
             // 최고 호감도 캐릭터 선택 분기
             if (scene.selectByHighestAffinity) {
+                // condition 플래그 필터링: condition이 있으면 해당 플래그가 true여야 후보에 포함
+                const eligibleBranches = scene.branches.filter(branch =>
+                    !branch.condition || this.stateManager.getFlag(branch.condition)
+                );
+
                 let winnerNext = null;
                 let maxAffinity = -999;
                 let metAnyone = false;
 
-                for (const branch of scene.branches) {
+                for (const branch of eligibleBranches) {
                     const metFlag = "met_" + (branch.character || "").toLowerCase();
                     // 만난 적 있는 캐릭터만 후보에 포함
                     if (this.stateManager.getFlag(metFlag) && branch.character) {

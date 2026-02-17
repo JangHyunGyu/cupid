@@ -373,7 +373,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_worry_2": {
         name: "서연",
-        text: "\"헤헤, 들켰네. 학생회장이라는 게 생각보다 할 일이 많거든. 그래도 네가 이렇게 걱정해주니까 힘이 불끈 나는걸? 조금만 기다려줘, 금방 끝내고 같이 가자!\"",
+        text: "\"헤헤, 들켰네. 학생회장이라는 게 생각보다 할 일이 많거든. 그래도 네가 이렇게 내 마음을 알아주니까 힘이 불끈 나는걸? 조금만 기다려줘, 금방 끝내고 같이 가자!\"",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         next: "after_seoyeon_cafe"
@@ -440,7 +440,7 @@ Object.assign(SCENARIO[1], {
                 next: "after_yuna_secret",
                 affinityChar: "Yuna",
                 affinityBranches: [
-                    { minAffinity: 30, next: "after_yuna_secret_deep" },
+                    { minAffinity: 5, next: "after_yuna_secret_deep" },
                     { minAffinity: 11, next: "after_yuna_secret" },
                     { minAffinity: -999, next: "after_yuna_secret_fail" }
                 ]

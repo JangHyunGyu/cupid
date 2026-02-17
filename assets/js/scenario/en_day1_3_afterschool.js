@@ -272,7 +272,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_worry_2": {
         name: "Seoyeon",
-        text: "\"Hehe, you caught me. Being student council president is more work than expected. But now that you're worried about me, I feel energized! Wait just a bit, I'll finish soon and we can go together!\"",
+        text: "\"Hehe, you caught me. Being student council president is more work than expected. But knowing you understand how I feel gives me energy! Wait just a bit, I'll finish soon and we can go together!\"",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         next: "after_seoyeon_cafe"
@@ -438,7 +438,7 @@ Object.assign(SCENARIO[1], {
                 next: "after_yuna_secret",
                 affinityChar: "Yuna",
                 affinityBranches: [
-                    { minAffinity: 30, next: "after_yuna_secret_deep" },
+                    { minAffinity: 5, next: "after_yuna_secret_deep" },
                     { minAffinity: 11, next: "after_yuna_secret" },
                     { minAffinity: -999, next: "after_yuna_secret_fail" }
                 ]

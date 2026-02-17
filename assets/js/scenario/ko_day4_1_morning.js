@@ -272,6 +272,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/room_my.png",
         text: "(자켓 기장도 맞고, 슬랙스도 다리가 길어 보인다. 평소와 다른 내 모습이 낯설지만… 나쁘지 않다.)",
+        stats: { Seoyeon: { affinity: 1 }, Yuna: { affinity: 1 }, Dain: { affinity: 1 }, Teacher: { affinity: 1 }, Nurse: { affinity: 1 } },
         next: "day4_morning_outfit_done"
     },
 
@@ -318,11 +319,11 @@ Object.assign(SCENARIO[4], {
         text: "",
         selectByHighestAffinity: true,
         branches: [
-            { next: "day4_msg_seoyeon", character: "Seoyeon" },
-            { next: "day4_msg_yuna", character: "Yuna" },
-            { next: "day4_msg_dain", character: "Dain" },
-            { next: "day4_msg_nurse", character: "Nurse" },
-            { next: "day4_msg_teacher", character: "Teacher" }
+            { next: "day4_msg_seoyeon", character: "Seoyeon", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day4_msg_yuna", character: "Yuna", condition: "day3_yuna_date_confirmed" },
+            { next: "day4_msg_dain", character: "Dain", condition: "day3_dain_date_confirmed" },
+            { next: "day4_msg_nurse", character: "Nurse", condition: "day3_nurse_date_confirmed" },
+            { next: "day4_msg_teacher", character: "Teacher", condition: "day3_teacher_date_confirmed" }
         ]
     },
 

@@ -249,6 +249,15 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
             {
+                text: "학교가 정말 활기차네. 서연이 너도 동아리 활동 하니?",
+                affinityChar: "Seoyeon",
+                affinityBranches: [
+                    { minAffinity: 15, next: "hallway_talk_club_high" },
+                    { minAffinity: 0, next: "hallway_talk_club_normal" },
+                    { minAffinity: -999, next: "hallway_talk_club_low" }
+                ]
+            },
+            {
                 text: "학교도 멋지지만, 안내해주는 사람이 좋아서 더 멋져 보여.",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
