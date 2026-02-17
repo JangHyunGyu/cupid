@@ -208,13 +208,13 @@ Object.assign(SCENARIO[2], {
         name: "Yuna",
         text: "\"...Hi. Thanks for the message last night. It made the night a little warmer. Later... check the note on your desk.\"",
         character: "assets/images/characters/yuna_smile.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_yuna"
     },
     "day2_yuna_morning_talk": {
         name: "Yuna",
         text: "\"...Hi. That 'light' of yours is still the same today. Good. Later... check the note on your desk.\"",
         character: "assets/images/characters/yuna_normal.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_yuna"
     },
 
     // =========================================================================
@@ -264,19 +264,19 @@ Object.assign(SCENARIO[2], {
         name: "School Nurse",
         text: "\"That message you sent last night was really cute. Thanks to you, I fell asleep in a good mood. If you're not feeling well today, come visit the nurse's office anytime.\"",
         character: "assets/images/characters/nurse_normal.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_nurse"
     },
     "day2_nurse_talk_has_number": {
         name: "School Nurse",
         text: "\"You didn't lose sleep thinking about me last night, did you? Hehe, just kidding. If you're not feeling well today, come visit the nurse's office anytime.\"",
         character: "assets/images/characters/nurse_normal.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_nurse"
     },
     "day2_nurse_talk_no_number": {
         name: "School Nurse",
         text: "\"It's only your second day, but you already look right at home. Don't push yourself too hard, and come hang out at the nurse's office if you need a break.\"",
         character: "assets/images/characters/nurse_normal.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_nurse"
     },
 
     // =========================================================================
@@ -326,7 +326,7 @@ Object.assign(SCENARIO[2], {
         name: "Seoyeon",
         text: "\"Thank you so much for the message yesterday! I think I slept well because of it. Let's do our best today too!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_seoyeon"
     },
     "day2_seoyeon_talk_has_number": {
         name: "Seoyeon",
@@ -341,19 +341,19 @@ Object.assign(SCENARIO[2], {
         name: "Seoyeon",
         text: "\"Did you get home okay yesterday? I was really worried since it was your first day, but seeing you today puts me at ease. Let's do our best today too!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_seoyeon"
     },
     "day2_seoyeon_happy": {
         name: "Seoyeon",
         text: "\"Really? Then starting today, we share everything, even the little things, deal? Come on, let's head to class together!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_seoyeon"
     },
     "day2_seoyeon_normal": {
         name: "Seoyeon",
         text: "\"Right? Your first day at a new school must have been exhausting. Come on, let's have another great day!\"",
         character: "assets/images/characters/seyoun_normal.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_seoyeon"
     },
 
     // =========================================================================
@@ -380,7 +380,7 @@ Object.assign(SCENARIO[2], {
         name: "Dain",
         text: "\"Got your message yesterday! You're surprisingly sweet, you know that? Thanks to you, I slept great. Let's make today awesome too!\"",
         character: "assets/images/characters/dain_laugh.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_dain"
     },
     "day2_dain_talk_dated": {
         name: "Dain",
@@ -395,19 +395,19 @@ Object.assign(SCENARIO[2], {
         name: "Dain",
         text: "\"Did you get home okay yesterday? It was your first day, so I hope you got to explore the school a bit! Let's make today awesome too!\"",
         character: "assets/images/characters/dain_laugh.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_dain"
     },
     "day2_dain_happy": {
         name: "Dain",
         text: "\"Haha! I guess my energy is a bit over the top, huh? Alright, come to the gym at lunch today too! I'll be waiting!\"",
         character: "assets/images/characters/dain_laugh.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_dain"
     },
     "day2_dain_normal": {
         name: "Dain",
         text: "\"Oh come on, don't be a wimp! Stamina is everything when you're adjusting to school life! Now let's get to class!\"",
         character: "assets/images/characters/dain_normal.png",
-        next: "day2_classroom"
+        next: "day2_classroom_from_dain"
     },
 
     // =========================================================================
@@ -539,7 +539,223 @@ Object.assign(SCENARIO[2], {
     },
 
     // =========================================================================
-    // Classroom Arrival (General Routes)
+    // Classroom Arrival - Seoyeon Route
+    // =========================================================================
+
+    "day2_classroom_from_seoyeon": {
+        name: "Seoyeon",
+        text: "\"Here we are! Let's have another great day, {name}!\"",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/seyoun_laugh.png",
+        next: "day2_classroom_from_seoyeon_2"
+    },
+    "day2_classroom_from_seoyeon_2": {
+        name: "Me",
+        text: "(Walking into the classroom side by side with Seoyeon, all eyes turn to us immediately. With Seoyeon standing so naturally beside me, we probably look like old friends.)",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        next: "day2_classroom_greet_from_seoyeon"
+    },
+    "day2_classroom_greet_from_seoyeon": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "\"Hey, transfer student! Good morning! You came with Seoyeon? You two are totally besties already!\"",
+        character: null,
+        next: "day2_classroom_greet_from_seoyeon_2"
+    },
+    "day2_classroom_greet_from_seoyeon_2": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "(The students glance between Seoyeon and me with knowing smiles. Seoyeon casually heads to her seat like it's no big deal.)",
+        next: "day2_classroom_settle_from_seoyeon"
+    },
+    "day2_classroom_settle_from_seoyeon": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "(The girl in the front row turns around and whispers,) \"Hey, you're already walking to school with Seoyeon? Are you two dating?\"",
+        character: null,
+        next: "day2_classroom_settle_from_seoyeon_2"
+    },
+    "day2_classroom_settle_from_seoyeon_2": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"No, we just happened to meet at the school gate and walked in together. I'm just grateful that Seoyeon's been looking out for me.\"",
+        next: "day2_classroom_settle_from_seoyeon_3"
+    },
+    "day2_classroom_settle_from_seoyeon_3": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "(I brush it off and take my seat. Seoyeon gives me a little wave from her desk. It puts me in a good mood as I start unpacking my bag to get my textbooks out when... something seems off.)",
+        next: "day2_classroom_2"
+    },
+
+    // =========================================================================
+    // Classroom Arrival - Dain Route
+    // =========================================================================
+
+    "day2_classroom_from_dain": {
+        name: "Dain",
+        text: "\"We're here! Let's crush it today, {name}!\"",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/dain_laugh.png",
+        next: "day2_classroom_from_dain_2"
+    },
+    "day2_classroom_from_dain_2": {
+        name: "Me",
+        text: "(Dain bursts through the classroom door with her usual energy, and the whole room seems to brighten up. Her energy is truly contagious.)",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        next: "day2_classroom_greet_from_dain"
+    },
+    "day2_classroom_greet_from_dain": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "\"Hey, transfer student! Good morning! You came with Dain? Already best friends, huh?\"",
+        character: null,
+        next: "day2_classroom_greet_from_dain_2"
+    },
+    "day2_classroom_greet_from_dain_2": {
+        name: "Dain",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/dain_laugh.png",
+        text: "\"Of course! {name}'s one of us now! Alright, {name}! See you at lunch!\"",
+        next: "day2_classroom_settle_from_dain"
+    },
+    "day2_classroom_settle_from_dain": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "(The girl in the front row turns around with a giggle.) \"Once Dain gets a hold of you, there's no escape~ Watch out if your stamina can't keep up!\"",
+        character: null,
+        next: "day2_classroom_settle_from_dain_2"
+    },
+    "day2_classroom_settle_from_dain_2": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"Oh, haha... I think I'll need to work on my fitness to keep up with Dain's energy.\"",
+        next: "day2_classroom_settle_from_dain_3"
+    },
+    "day2_classroom_settle_from_dain_3": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "(I brush it off and take my seat. Dain gives me a thumbs up from her desk. Feeling energized, I start unpacking my bag to get my textbooks out when... something seems off.)",
+        next: "day2_classroom_2"
+    },
+
+    // =========================================================================
+    // Classroom Arrival - Nurse Route
+    // =========================================================================
+
+    "day2_classroom_from_nurse": {
+        name: "Me",
+        text: "(I part ways with the school nurse and head toward the classroom. Her perfume still seems to linger at the tip of my nose.)",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        next: "day2_classroom_from_nurse_2"
+    },
+    "day2_classroom_from_nurse_2": {
+        name: "Me",
+        text: "(Opening the classroom door, a much softer atmosphere than yesterday wraps around me. Even the students' gazes carry a hint of friendliness.)",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        next: "day2_classroom_greet_from_nurse"
+    },
+    "day2_classroom_greet_from_nurse": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "\"Hey, transfer student! Good morning! Wait, did you just come from the nurse's office? Are you feeling sick?\"",
+        character: null,
+        next: "day2_classroom_greet_from_nurse_2"
+    },
+    "day2_classroom_greet_from_nurse_2": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"No, I'm fine. I just bumped into the school nurse on the way in.\"",
+        next: "day2_classroom_settle_from_nurse"
+    },
+    "day2_classroom_settle_from_nurse": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "(The girl in the front row turns around and says,) \"I saw you chatting with the school nurse earlier. You two looked pretty close. A regular visitor to the nurse's office?\"",
+        character: null,
+        next: "day2_classroom_settle_from_nurse_2"
+    },
+    "day2_classroom_settle_from_nurse_2": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"No, she was just checking on me since I'm the new transfer student. She even went out of her way to make sure I was doing okay...\"",
+        next: "day2_classroom_settle_from_nurse_3"
+    },
+    "day2_classroom_settle_from_nurse_3": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "(I brush it off and take my seat. The nurse's warm smile keeps lingering in my mind. I start unpacking my bag to get my textbooks out when... something seems off.)",
+        next: "day2_classroom_2"
+    },
+
+    // =========================================================================
+    // Classroom Arrival - Yuna Route
+    // =========================================================================
+
+    "day2_classroom_from_yuna": {
+        name: "Me",
+        text: "(I part ways with Yuna, pass through the school gate, and head to the classroom. Her words keep echoing in my head. 'Check the note on your desk'... What note?)",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        next: "day2_classroom_from_yuna_2"
+    },
+    "day2_classroom_from_yuna_2": {
+        name: "Me",
+        text: "(Opening the classroom door, I step into the familiar bustle. But I can't fully focus with Yuna's words weighing on my mind.)",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        next: "day2_classroom_greet_from_yuna"
+    },
+    "day2_classroom_greet_from_yuna": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "\"Hey, transfer student! Good morning! You look like you've got something on your mind. Everything okay?\"",
+        character: null,
+        next: "day2_classroom_greet_from_yuna_2"
+    },
+    "day2_classroom_greet_from_yuna_2": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"Oh... it's nothing, really.\"",
+        next: "day2_classroom_settle_from_yuna"
+    },
+    "day2_classroom_settle_from_yuna": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "(The girl in the front row turns around and says,) \"I saw you talking to some girl at the gate earlier... Is she from another class? She looked kind of mysterious.\"",
+        character: null,
+        next: "day2_classroom_settle_from_yuna_2"
+    },
+    "day2_classroom_settle_from_yuna_2": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"Oh... she's just another student here. I don't really know her well yet.\"",
+        next: "day2_classroom_settle_from_yuna_3"
+    },
+    "day2_classroom_settle_from_yuna_3": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "(I brush it off and take my seat. I can't stop thinking about the 'note' Yuna mentioned. I start unpacking my bag to get my textbooks out when... something seems off.)",
+        next: "day2_classroom_2"
+    },
+
+    // =========================================================================
+    // Classroom Arrival - Default/Low Affinity
     // =========================================================================
 
     "day2_classroom": {
@@ -560,93 +776,24 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         background: "assets/images/background/room_school.png",
         character: null,
-        text: "(A few classmates greet me casually. Yesterday they looked at me with pure curiosity, but today their smiles are relaxed. I feel like I'm gradually becoming part of this school.)",
-        next: "day2_classroom_settle"
+        text: "(A few classmates greet me casually. Yesterday they looked at me with pure curiosity, but today their smiles are relaxed.)",
+        next: "day2_classroom_settle_alone"
     },
-    "day2_classroom_settle": {
-        name: "System",
-        background: "assets/images/background/room_school.png",
-        text: "",
-        branches: [
-            { next: "day2_classroom_settle_seoyeon", character: "Seoyeon", condition: "met_seoyeon" },
-            { next: "day2_classroom_settle_dain", character: "Dain", condition: "met_dain" },
-            { next: "day2_classroom_settle_nurse", character: "Nurse", condition: "met_nurse" },
-            { next: "day2_classroom_settle_yuna", character: "Yuna", condition: "met_yuna" },
-            { next: "day2_classroom_settle_default" }
-        ],
-        selectByHighestAffinity: true
-    },
-    "day2_classroom_settle_seoyeon": {
-        name: "Classmate",
-        background: "assets/images/background/room_school.png",
-        text: "(The girl in the front row turns around and says,) \"I saw you coming in with Seoyeon earlier! Are you two already that close?\"",
-        character: null,
-        next: "day2_classroom_settle_2_seoyeon"
-    },
-    "day2_classroom_settle_2_seoyeon": {
-        name: "Me",
-        background: "assets/images/background/room_school.png",
-        character: null,
-        text: "\"Oh, haha... Seoyeon's been really looking out for me, so I settled in pretty quickly.\"",
-        next: "day2_classroom_settle_3"
-    },
-    "day2_classroom_settle_dain": {
-        name: "Classmate",
-        background: "assets/images/background/room_school.png",
-        text: "(The girl in the front row turns around and says,) \"I saw you walking in with Dain earlier! Are you two already best friends?\"",
-        character: null,
-        next: "day2_classroom_settle_2_dain"
-    },
-    "day2_classroom_settle_2_dain": {
-        name: "Me",
-        background: "assets/images/background/room_school.png",
-        character: null,
-        text: "\"Oh, haha... Dain's so energetic, we just naturally hit it off.\"",
-        next: "day2_classroom_settle_3"
-    },
-    "day2_classroom_settle_nurse": {
-        name: "Classmate",
-        background: "assets/images/background/room_school.png",
-        text: "(The girl in the front row turns around and says,) \"I saw you talking with the school nurse earlier. Are you feeling sick or something?\"",
-        character: null,
-        next: "day2_classroom_settle_2_nurse"
-    },
-    "day2_classroom_settle_2_nurse": {
-        name: "Me",
-        background: "assets/images/background/room_school.png",
-        character: null,
-        text: "\"No, I'm fine. She was just checking if I'm settling in okay.\"",
-        next: "day2_classroom_settle_3"
-    },
-    "day2_classroom_settle_yuna": {
-        name: "Classmate",
-        background: "assets/images/background/room_school.png",
-        text: "(The girl in the front row turns around and says,) \"I saw you talking to some girl at the gate earlier... Do you know her?\"",
-        character: null,
-        next: "day2_classroom_settle_2_yuna"
-    },
-    "day2_classroom_settle_2_yuna": {
-        name: "Me",
-        background: "assets/images/background/room_school.png",
-        character: null,
-        text: "\"Oh... she's just another student here. I don't really know her well yet.\"",
-        next: "day2_classroom_settle_3"
-    },
-    "day2_classroom_settle_default": {
+    "day2_classroom_settle_alone": {
         name: "Classmate",
         background: "assets/images/background/room_school.png",
         text: "(The girl in the front row turns around and says,) \"Only your second day and you've already settled in? That's impressive!\"",
         character: null,
-        next: "day2_classroom_settle_2_default"
+        next: "day2_classroom_settle_alone_2"
     },
-    "day2_classroom_settle_2_default": {
+    "day2_classroom_settle_alone_2": {
         name: "Me",
         background: "assets/images/background/room_school.png",
         character: null,
         text: "\"Oh, haha... Everyone's been so nice, it was easy to adjust.\"",
-        next: "day2_classroom_settle_3"
+        next: "day2_classroom_settle_alone_3"
     },
-    "day2_classroom_settle_3": {
+    "day2_classroom_settle_alone_3": {
         name: "Me",
         background: "assets/images/background/room_school.png",
         character: null,
