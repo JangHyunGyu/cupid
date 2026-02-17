@@ -2096,6 +2096,8 @@ class FreeTalkSystem {
         else if (bgUrl.includes('gym')) locationName = isEn ? "Gym" : "체육관";
         else if (bgUrl.includes('nurse_room')) locationName = isEn ? "Nurse's Office" : "보건실";
         else if (bgUrl.includes('library')) locationName = isEn ? "Library" : "도서관";
+        else if (bgUrl.includes('arcade')) locationName = isEn ? "Arcade" : "오락실";
+        else if (bgUrl.includes('bookstore')) locationName = isEn ? "Bookstore" : "서점";
         else if (bgUrl.includes('home_room')) locationName = isEn ? "My Room" : "주인공의 방";
 
         // 캐릭터 정보 수집

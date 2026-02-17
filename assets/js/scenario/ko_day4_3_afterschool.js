@@ -210,6 +210,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_yuna": {
         name: "유나",
         text: "\"…저기, 헌책방이다. 잠깐 들어가도 돼?\"",
+        background: "assets/images/background/bookstore.png",
         character: "assets/images/characters/yuna_normal.png",
         next: "day4_special_yuna_react"
     },
@@ -217,6 +218,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_yuna_react": {
         name: "나",
         text: "(유나가 낡은 책장 사이에서 한 권의 책을 조심스럽게 꺼냈다. \"이 책… 같이 읽고 싶었어.\" 유나의 눈이 부드럽게 빛났다.)",
+        background: "assets/images/background/bookstore.png",
         character: "assets/images/characters/yuna_smile.png",
         choices: [
             {
