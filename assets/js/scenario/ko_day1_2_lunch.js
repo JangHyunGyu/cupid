@@ -125,7 +125,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "웅! 서연이랑 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "미안, 오늘은 혼자 있고 싶네.", next: "lunch_alone", stats: { Seoyeon: { affinity: -10 } } },
-            { text: "옥상? 귀찮게 왜 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -20 } } }
+            { text: "옥상? 귀찮게 왜 거기까지 가야 해?", next: "lunch_refuse_rooftop", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "lunch_seoyeon_2_party": {
@@ -135,7 +135,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "웅! 서연이랑 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "미안, 오늘은 혼자 있고 싶네.", next: "lunch_alone", stats: { Seoyeon: { affinity: -10 } } },
-            { text: "옥상? 귀찮게 왜 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -20 } } }
+            { text: "옥상? 귀찮게 왜 거기까지 가야 해?", next: "lunch_refuse_rooftop", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "lunch_seoyeon_2_normal": {
@@ -145,7 +145,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "웅! 서연이랑 먹고 싶었어.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "미안, 오늘은 혼자 있고 싶네.", next: "lunch_alone", stats: { Seoyeon: { affinity: -10 } } },
-            { text: "옥상? 귀찮게 왜 거기까지 가야 해?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -20 } } }
+            { text: "옥상? 귀찮게 왜 거기까지 가야 해?", next: "lunch_refuse_rooftop", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "rooftop_1": {
@@ -230,6 +230,13 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_pout.png",
         text: "(분위기가 순식간에 어색해졌다. 우리는 한동안 말없이 도시락만 먹었다.)",
         next: "rooftop_2"
+    },
+    "lunch_refuse_rooftop": {
+        name: "서연",
+        background: "assets/images/background/load_school.png",
+        text: "(서연이의 표정이 순간 굳는다. 억지로 웃어 보이지만, 실망한 기색이 역력하다.) \"...그래, 알겠어. 그럼 나 혼자 갈게.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        next: "lunch_alone"
     },
     "rooftop_talk_rude": {
         name: "서연",
@@ -488,7 +495,9 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "서연",
         background: "assets/images/background/top_school.png",
-        text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 스마트폰을 내민다.)",
+        text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 스마트폰을 내밀다.)",
+        context: "옥상에서 함께 도시락을 먹은 후, 서연이가 연락처를 교환하자고 먹저 말을 걸려는 순간입니다. 서연은 조금 수줍어하면서도 기대하는 모습이에요. 가벼운 잡담을 나누며 연락처 교환으로 자연스럽게 이어지는 대화입니다.",
+        personality: "친절하고 상냥하며 책임감 강한 학생회장. 전학생인 주인공에게 호감을 느끼고 있으며, 연락처를 교환하고 싶어하지만 직접적으로 말하기는 부끄러워하는 모습.",
         character: "assets/images/characters/seyoun_normal.png",
         affinityChar: "Seoyeon",
         affinityBranches: [

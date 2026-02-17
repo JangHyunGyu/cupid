@@ -575,12 +575,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_afternoon_seoyeon_freetalk"
     },
     "day3_afternoon_seoyeon_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/seyoun_laugh.png",
         text: "(석양 지는 강변길을 서연이와 나란히 걷는다. 주황빛이 점점 더 깊어진다.)",
         sunset: true,
-        freeTalk: { turns: 4, context: "서연이와 석양 강변길을 걷는 중. 서연이가 '내일 나만 만나줘'라고 하며 새끼손가락/손잡기 스킨십 후. 달콤하고 로맨틱한 분위기." },
+        context: "서연이와 석양 강변길을 걷는 중. 서연이가 '내일 나만 만나줘'라고 하며 새끼손가락/손잡기 스킨십 후. 달콤하고 로맨틱한 분위기.",
+        maxTurns: 4,
         next: "day3_afternoon_seoyeon_talk_walk_2"
     },
     "day3_afternoon_seoyeon_talk_walk_2": {
@@ -725,12 +727,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_afternoon_yuna_freetalk"
     },
     "day3_afternoon_yuna_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_shy.png",
         text: "(유나와 나란히 길을 걷는다. 평소보다 유나의 표정이 부드럽다.)",
         sunset: true,
-        freeTalk: { turns: 4, context: "유나와 귀가길에 고양이를 함께 쓰다듬은 후. 유나가 평소보다 부드러운 표정. 조용하고 편안한 분위기." },
+        context: "유나와 귀가길에 고양이를 함께 쓰다듬은 후. 유나가 평소보다 부드러운 표정. 조용하고 편안한 분위기.",
+        maxTurns: 4,
         next: "day3_afternoon_yuna_talk_walk_2"
     },
     "day3_afternoon_yuna_talk_walk_2": {
@@ -895,12 +899,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_afternoon_dain_freetalk"
     },
     "day3_afternoon_dain_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(공원 벤치에서 다인이와 아이스크림을 먹으며 이야기를 나눈다.)",
         sunset: true,
-        freeTalk: { turns: 4, context: "다인이와 공원 벤치에서 아이스크림 나눠먹기 후. 다인이가 '잘 못 잤다'라며 진지한 모습. 평소의 활발함 대신 수줍어하는 분위기." },
+        context: "다인이와 공원 벤치에서 아이스크림 나눠먹기 후. 다인이가 '잘 못 잤다'라며 진지한 모습. 평소의 활발함 대신 수줍어하는 분위기.",
+        maxTurns: 4,
         next: "day3_afternoon_dain_talk_walk_2"
     },
     "day3_afternoon_dain_talk_walk_2": {
@@ -1066,12 +1072,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_afternoon_teacher_freetalk"
     },
     "day3_afternoon_teacher_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
         text: "(담임선생님의 차 안에서 함께 집으로 향한다.)",
         sunset: true,
-        freeTalk: { turns: 3, context: "담임선생님의 차 안에서 귀가 중. 석양 속에서 손을 잡거나 어깨에 기대는 스킨십 후. 금지된 사랑의 달콤함과 죄책감." },
+        context: "담임선생님의 차 안에서 귀가 중. 석양 속에서 손을 잡거나 어깨에 기대는 스킨십 후. 금지된 사랑의 달콤함과 죄책감.",
+        maxTurns: 3,
         next: "day3_afternoon_teacher_arrive"
     },
     "day3_afternoon_teacher_arrive": {
@@ -1137,12 +1145,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_afternoon_nurse_freetalk"
     },
     "day3_afternoon_nurse_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/nurse_shy.png",
         text: "(보건선생님과 나란히 퇴근길을 걷는다.)",
         sunset: true,
-        freeTalk: { turns: 3, context: "보건선생님과 퇴근길. 선생님이 밴드를 구실로 손을 잡았다. 금지된 사랑의 설렘과 긴장감." },
+        context: "보건선생님과 퇴근길. 선생님이 밴드를 구실로 손을 잡았다. 금지된 사랑의 설렘과 긴장감.",
+        maxTurns: 3,
         next: "day3_afternoon_nurse_arrive"
     },
     "day3_afternoon_nurse_arrive": {

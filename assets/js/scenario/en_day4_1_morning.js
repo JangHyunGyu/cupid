@@ -331,12 +331,14 @@ Object.assign(SCENARIO[4], {
         name: "Seoyeon",
         text: "\"You didn't forget about today, right? 😊 Meet me at the park fountain at 10! I can't wait~\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         setFlag: "day4_date_target_set",
         next: "day4_morning_reply_seoyeon"
     },
     "day4_morning_reply_seoyeon": {
         name: "Me",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         text: "(A message from Seoyeon. That smiley emoji is cute. What should I reply...)",
         next: "day4_msg_seoyeon_2"
     },
@@ -344,12 +346,14 @@ Object.assign(SCENARIO[4], {
         name: "Seoyeon",
         text: "\"Oh, and the weather's so nice today! Perfect for a walk~ Don't forget sunscreen!\"",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         stats: { Seoyeon: { affinity: 3 } },
         next: "day4_reply_seoyeon_2"
     },
     "day4_reply_seoyeon_2": {
         name: "Me",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         text: "(She keeps sending messages back to back. She must be excited too. I should hurry up and get ready.)",
         next: "day4_seoyeon_ready"
     },
@@ -365,12 +369,14 @@ Object.assign(SCENARIO[4], {
         name: "Yuna",
         text: "\"...10 o'clock. Café by the station. Don't be late.\"",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         setFlag: "day4_date_target_set",
         next: "day4_morning_reply_yuna"
     },
     "day4_morning_reply_yuna": {
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         text: "(Short and to the point — so typical of Yuna. But that's part of her charm. I type back, 'Got it, I won't be late!')",
         next: "day4_msg_yuna_2"
     },
@@ -378,12 +384,14 @@ Object.assign(SCENARIO[4], {
         name: "Yuna",
         text: "\"...It's nothing special. I just wanted some coffee. ...It's just weird going alone.\"",
         character: "assets/images/characters/yuna_shy.png",
+        silhouette: true,
         stats: { Yuna: { affinity: 3 } },
         next: "day4_reply_yuna_2"
     },
     "day4_reply_yuna_2": {
         name: "Me",
         character: "assets/images/characters/yuna_shy.png",
+        silhouette: true,
         text: "(...That's Yuna-speak for 'I want to go together,' right? A smile spreads across my face.)",
         next: "day4_yuna_ready"
     },
@@ -399,12 +407,14 @@ Object.assign(SCENARIO[4], {
         name: "Dain",
         text: "\"HEY!! Let's meet up after practice today!! In front of the gym at 11!! Don't be late!!!! 🏐\"",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         setFlag: "day4_date_target_set",
         next: "day4_morning_reply_dain"
     },
     "day4_morning_reply_dain": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         text: "(So many exclamation marks... Dain's energy comes through even in her texts. Better send a reply.)",
         next: "day4_msg_dain_2"
     },
@@ -412,12 +422,14 @@ Object.assign(SCENARIO[4], {
         name: "Dain",
         text: "\"Oh right!! I'm gonna be STARVING after practice!! Find us a good restaurant!! I want meat!!!\"",
         character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
         stats: { Dain: { affinity: 3 } },
         next: "day4_reply_dain_2"
     },
     "day4_reply_dain_2": {
         name: "Me",
         character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
         text: "(She's even making me look up restaurants... Then again, eating with Dain doesn't sound bad. No — I'm actually looking forward to it.)",
         next: "day4_dain_ready"
     },
@@ -433,12 +445,14 @@ Object.assign(SCENARIO[4], {
         name: "School Nurse",
         text: "\"If you're free today... how about the art museum downtown? There's an exhibition I'd like to see. Let's meet in front of the museum at 11.\"",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         setFlag: "day4_date_target_set",
         next: "day4_morning_reply_nurse"
     },
     "day4_morning_reply_nurse": {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(The art museum with the school nurse... My heart is fluttering. I replied, 'Yes, I'll definitely be there!')",
         next: "day4_msg_nurse_2"
     },
@@ -446,12 +460,14 @@ Object.assign(SCENARIO[4], {
         name: "School Nurse",
         text: "\"I'll be looking forward to it. Oh, and... don't call me 'ma'am' today. Let's just meet casually.\"",
         character: "assets/images/characters/nurse_shy.png",
+        silhouette: true,
         stats: { Nurse: { affinity: 3 } },
         next: "day4_reply_nurse_2"
     },
     "day4_reply_nurse_2": {
         name: "Me",
         character: "assets/images/characters/nurse_shy.png",
+        silhouette: true,
         text: "(Don't call her 'ma'am'...? I thought my heart was going to stop. Today is going to be a truly special day.)",
         next: "day4_nurse_ready"
     },
@@ -467,12 +483,14 @@ Object.assign(SCENARIO[4], {
         name: "Homeroom Teacher",
         text: "\"Want to meet at the café near school around lunch? There's something I'd like to talk about. Let's meet at 12.\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         setFlag: "day4_date_target_set",
         next: "day4_morning_reply_teacher"
     },
     "day4_morning_reply_teacher": {
         name: "Me",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(Meeting the homeroom teacher outside of school... I'm nervous. I sent a reply right away.)",
         next: "day4_msg_teacher_2"
     },
@@ -480,12 +498,14 @@ Object.assign(SCENARIO[4], {
         name: "Homeroom Teacher",
         text: "\"I'll be in casual clothes, so don't be surprised if you don't recognize me. ...Just kidding. You probably will.\"",
         character: "assets/images/characters/teacher_smile.png",
+        silhouette: true,
         stats: { Teacher: { affinity: 3 } },
         next: "day4_reply_teacher_2"
     },
     "day4_reply_teacher_2": {
         name: "Me",
         character: "assets/images/characters/teacher_smile.png",
+        silhouette: true,
         text: "(The homeroom teacher cracking jokes? That's a side I've never seen before — it feels refreshing. I wonder what she looks like in casual clothes.)",
         next: "day4_teacher_ready"
     },

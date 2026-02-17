@@ -332,11 +332,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_seoyeon_freetalk"
     },
     "day3_lunch_seoyeon_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/store.png",
         character: "assets/images/characters/seyoun_shy.png",
         text: "(학교 뒤편 벤치에서 서연이와 나란히 앉아 이야기를 나눈다.)",
-        freeTalk: { turns: 4, context: "서연이와 학교 뒤편 벤치에서 둘이 나란히 앉아있다. 서연이가 어깨에 머리를 기대고 '매일 네 생각만 해'라고 고백한 후. 달콤한 분위기." },
+        context: "서연이와 학교 뒤편 벤치에서 둘이 나란히 앉아있다. 서연이가 어깨에 머리를 기대고 '매일 네 생각만 해'라고 고백한 후. 달콤한 분위기.",
+        maxTurns: 4,
         next: "day3_lunch_seoyeon_bell"
     },
     "day3_lunch_seoyeon_bell": {
@@ -458,11 +460,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_yuna_freetalk"
     },
     "day3_lunch_yuna_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/yuna_shy.png",
         text: "(유나의 무릎에 누워 옥상 위의 하늘을 바라보며 이야기를 나눈다.)",
-        freeTalk: { turns: 4, context: "유나의 무릎에 누워서 옥상에서 대화 중. 유나가 도시락을 만들어와서 함께 먹었고, 유나가 머리를 쓰다듬어주고 있다. 조용하고 평화로운 분위기." },
+        context: "유나의 무릎에 누워서 옥상에서 대화 중. 유나가 도시락을 만들어와서 함께 먹었고, 유나가 머리를 쓰다듬어주고 있다. 조용하고 평화로운 분위기.",
+        maxTurns: 4,
         next: "day3_lunch_yuna_talk_1"
     },
     "day3_lunch_yuna_talk_1": {
@@ -644,11 +648,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/store.png",
         character: "assets/images/characters/dain_shy.png",
         text: "(다인이와 급식실 한쪽에 나란히 앉아 이야기를 나눈다. 다인이가 평소보다 수줍어하다.)",
-        freeTalk: { turns: 3, context: "다인이와 점심 대화 중. 다인이가 '나를 어떻게 생각해?'라고 진지하게 물어봄. 평소의 활발함 대신 수줍어하는 모습." },
+        context: "다인이와 점심 대화 중. 다인이가 '나를 어떻게 생각해?'라고 진지하게 물어봄. 평소의 활발함 대신 수줍어하는 모습.",
+        maxTurns: 3,
         next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_end": {
@@ -905,11 +911,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_nurse_freetalk"
     },
     "day3_lunch_nurse_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/room_school.png",
         character: "assets/images/characters/nurse_normal.png",
         text: "(보건실에서 선생님과 둘이 점심을 먹는다. 비밀스러운 분위기에 심장이 뛰었다.)",
-        freeTalk: { turns: 3, context: "보건실에서 보건선생님과 단둘이 점심 먹는 중. 선생님이 문을 잠갔다. 비밀 데이트 같은 분위기. 금지된 사랑의 설렘." },
+        context: "보건실에서 보건선생님과 단둘이 점심 먹는 중. 선생님이 문을 잠갔다. 비밀 데이트 같은 분위기. 금지된 사랑의 설렘.",
+        maxTurns: 3,
         next: "day3_lunch_nurse_4"
     },
     "day3_lunch_nurse_4": {
@@ -945,11 +953,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_teacher_freetalk"
     },
     "day3_lunch_teacher_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/room_school.png",
         character: "assets/images/characters/teacher_shy.png",
         text: "(교무실에서 담임선생님과 둘이 점심을 먹는다.)",
-        freeTalk: { turns: 3, context: "교무실에서 담임선생님과 단둘이 점심 먹는 중. 선생님이 수줍어하며 문을 닫았다. 비밀 데이트 분위기." },
+        context: "교무실에서 담임선생님과 단둘이 점심 먹는 중. 선생님이 수줍어하며 문을 닫았다. 비밀 데이트 분위기.",
+        maxTurns: 3,
         next: "day3_lunch_teacher_4"
     },
     "day3_lunch_teacher_4": {

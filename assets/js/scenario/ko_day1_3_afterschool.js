@@ -210,7 +210,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "응, 나도 너랑 같이 가고 싶었어. 도와줄게.", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "날 기다려준 거야? 감동인데. 정말 기뻐.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "노을 아래서 보니까 평소보다 훨씬 예쁘네.", next: "after_seoyeon_help", stats: { Seoyeon: { affinity: 10 } } }
+            { text: "노을 아래서 보니까 평소보다 훨씬 예쁘네.", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "after_seoyeon_3_low": {

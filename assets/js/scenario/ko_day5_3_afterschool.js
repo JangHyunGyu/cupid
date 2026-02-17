@@ -682,7 +682,6 @@ Object.assign(SCENARIO[5], {
         name: "나",
         text: "(옥상에 올라왔는데… 어라?)",
         sunset: true,
-        setFlag: "ending_mayhem",
         next: "day5_mayhem_2"
     },
     "day5_mayhem_2": {
@@ -983,6 +982,7 @@ Object.assign(SCENARIO[5], {
         text: "(…근데 나쁘지 않은 기분은 뭐지? 이런 소란스러운 일상도… 나름 행복한 것 같다.)",
         sunset: true,
         fade: true,
+        setFlag: "ending_mayhem",
         next: "day5_ending_mayhem"
     },
 

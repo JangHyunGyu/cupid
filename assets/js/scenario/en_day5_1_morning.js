@@ -143,11 +143,13 @@ Object.assign(SCENARIO[5], {
         name: "Seoyeon",
         text: "\"Good morning ☀️ The weather's amazing today! I bet the flowers in the school garden are blooming. Wanna go see them together?\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         next: "day5_couple_react_seoyeon"
     },
     "day5_couple_react_seoyeon": {
         name: "Me",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         text: "(Reading Seoyeon's message makes me smile without even trying. Talking about flowers first thing in the morning—that's so like her.)",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day5_couple_reply_seoyeon"
@@ -155,6 +157,7 @@ Object.assign(SCENARIO[5], {
     "day5_couple_reply_seoyeon": {
         name: "Me",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         text: "(I replied, \"Sounds great! Let's meet at the school front gate. There's a place I want to show you too 😊\")",
         next: "day5_morning_ready"
     },
@@ -164,11 +167,13 @@ Object.assign(SCENARIO[5], {
         name: "Yuna",
         text: "\"...You up? You're going to school today, right? ...I'll go too. Front gate. 10 o'clock.\"",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         next: "day5_couple_react_yuna"
     },
     "day5_couple_react_yuna": {
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         text: "(Short and sweet, just like Yuna... But if you look closely, there's a hint of excitement in the words \"I'll go too.\")",
         stats: { Yuna: { affinity: 3 } },
         next: "day5_couple_reply_yuna"
@@ -176,6 +181,7 @@ Object.assign(SCENARIO[5], {
     "day5_couple_reply_yuna": {
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         text: "(\"Yeah, I'll be there. Wait for me.\" I replied calmly, but my heart is racing.)",
         next: "day5_morning_ready"
     },
@@ -185,11 +191,13 @@ Object.assign(SCENARIO[5], {
         name: "Dain",
         text: "\"Good morning!! ☀️🏐 Let's go to school today!! Meet me at the front gate!! I'll run over!! Don't you DARE be late!!!\"",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         next: "day5_couple_react_dain"
     },
     "day5_couple_react_dain": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         text: "(...So many exclamation marks. Dain's overflowing with energy from the crack of dawn. But somehow, messages like this give me energy too.)",
         stats: { Dain: { affinity: 3 } },
         next: "day5_couple_reply_dain"
@@ -197,6 +205,7 @@ Object.assign(SCENARIO[5], {
     "day5_couple_reply_dain": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         text: "(I texted back, \"Haha, got it! I won't be late. Don't run—be careful on your way!\")",
         next: "day5_morning_ready"
     },
@@ -206,11 +215,13 @@ Object.assign(SCENARIO[5], {
         name: "School Nurse",
         text: "\"Did you sleep well? The weather's so nice today, I'm feeling a little giddy. Want to meet in front of the school? ...Meeting on a weekend feels different, doesn't it? 💕\"",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         next: "day5_couple_react_nurse"
     },
     "day5_couple_react_nurse": {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(My face turned red at the heart emoji she sent. Meeting outside of school definitely feels different.)",
         stats: { Nurse: { affinity: 3 } },
         next: "day5_couple_reply_nurse"
@@ -218,6 +229,7 @@ Object.assign(SCENARIO[5], {
     "day5_couple_reply_nurse": {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(\"Yes, I'm looking forward to it. Let's meet at the front gate at 10!\" I started writing formally but... it felt a bit awkward.)",
         next: "day5_morning_ready"
     },
@@ -227,11 +239,13 @@ Object.assign(SCENARIO[5], {
         name: "Homeroom Teacher",
         text: "\"Are you coming to school today? It's the weekend, but... I have something to see you about. Front gate, 10 o'clock. You'll be in trouble if you're late.\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         next: "day5_couple_react_teacher"
     },
     "day5_couple_react_teacher": {
         name: "Me",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(\"Something to see me about,\" she says. Playing it cool, but she's the one who reached out first. I like that about her.)",
         stats: { Teacher: { affinity: 3 } },
         next: "day5_couple_reply_teacher"
@@ -239,6 +253,7 @@ Object.assign(SCENARIO[5], {
     "day5_couple_reply_teacher": {
         name: "Me",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(I texted back, \"I won't be late. I'll definitely be there!\" and let out a small smile.)",
         next: "day5_morning_ready"
     },
@@ -264,17 +279,20 @@ Object.assign(SCENARIO[5], {
         name: "Seoyeon",
         text: "\"Are you free today? I need someone to help with the garden... Oh, no pressure though! 😅\"",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         next: "day5_pending_react_seoyeon"
     },
     "day5_pending_react_seoyeon": {
         name: "Me",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         text: "(Seoyeon's asking me to come. She says \"no pressure,\" but... I know I want to go.)",
         next: "day5_pending_reply_seoyeon"
     },
     "day5_pending_reply_seoyeon": {
         name: "Me",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         text: "(Today, I have to tell her how I feel. I replied, \"I'll be there! Let's meet at the front gate.\")",
         next: "day5_morning_ready"
     },
@@ -284,17 +302,20 @@ Object.assign(SCENARIO[5], {
         name: "Yuna",
         text: "\"...School. Today. Can you come? ...I have something to tell you.\"",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         next: "day5_pending_react_yuna"
     },
     "day5_pending_react_yuna": {
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         text: "(\"I have something to tell you.\" My heart skipped a beat. Could Yuna also feel the same way about me...?)",
         next: "day5_pending_reply_yuna"
     },
     "day5_pending_reply_yuna": {
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         text: "(I have something to say too. \"Yeah, I'll be there.\" I replied briefly and set my phone down.)",
         next: "day5_morning_ready"
     },
@@ -304,17 +325,20 @@ Object.assign(SCENARIO[5], {
         name: "Dain",
         text: "\"Hey! Wanna come to school today?! Do you have a sec after practice? It's important!!\"",
         character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
         next: "day5_pending_react_dain"
     },
     "day5_pending_react_dain": {
         name: "Me",
         character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
         text: "(She said \"it's important.\" Dain being serious is rare. I wonder what it could be.)",
         next: "day5_pending_reply_dain"
     },
     "day5_pending_reply_dain": {
         name: "Me",
         character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
         text: "(And I have something I need to say today too. I replied, \"I'll be there!! Wait for me!\")",
         next: "day5_morning_ready"
     },
@@ -324,17 +348,20 @@ Object.assign(SCENARIO[5], {
         name: "School Nurse",
         text: "\"Are you coming to school today by any chance? I need to organize the nurse's office... It'd be nice if you could come help.\"",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         next: "day5_pending_react_nurse"
     },
     "day5_pending_react_nurse": {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(Organizing the nurse's office on a weekend... It sounds like an excuse, but if it means I can see her, the reason doesn't matter.)",
         next: "day5_pending_reply_nurse"
     },
     "day5_pending_reply_nurse": {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(Today, I have to tell her how I feel. I replied, \"I'll be there! Let's meet at the front gate.\")",
         next: "day5_morning_ready"
     },
@@ -344,17 +371,20 @@ Object.assign(SCENARIO[5], {
         name: "Homeroom Teacher",
         text: "\"Can you come by school today? I could use help organizing some paperwork. ...Don't get any ideas, there's no hidden meaning.\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         next: "day5_pending_react_teacher"
     },
     "day5_pending_react_teacher": {
         name: "Me",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(\"No hidden meaning\"—somehow that makes it feel even more meaningful. Could she be feeling the same way?)",
         next: "day5_pending_reply_teacher"
     },
     "day5_pending_reply_teacher": {
         name: "Me",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(If today passes, I might never get another chance. I texted back, \"I'll be there!\")",
         next: "day5_morning_ready"
     },

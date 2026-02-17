@@ -701,6 +701,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         text: "\"…저기, 나인데. 바쁘지 않으면… 잠깐 나올 수 있어?\"",
         character: "assets/images/characters/seyoun_shy.png",
+        silhouette: true,
         night: true,
         next: "day4_night_seoyeon_call_3"
     },
@@ -708,6 +709,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_shy.png",
+        silhouette: true,
         text: "(서연의 목소리가 평소와 다르다. 웃음기가 없고, 어딘가 떨리는 것 같다.)",
         night: true,
         next: "day4_night_seoyeon_call_4"
@@ -717,6 +719,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         text: "\"…우리 집 앞 공원 알지? 거기서 기다릴게.\"",
         character: "assets/images/characters/seyoun_shy.png",
+        silhouette: true,
         night: true,
         next: "day4_night_seoyeon_park"
     },
@@ -1621,6 +1624,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         text: "\"…여보세요? 나야. 지금… 시간 괜찮아?\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         night: true,
         next: "day4_night_teacher_call_3"
     },
@@ -1628,6 +1632,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(선생님 목소리가 평소와 다르다. 교실에서의 당당한 목소리가 아니라… 어딘가 지쳐 있는 느낌.)",
         night: true,
         next: "day4_night_teacher_call_4"
@@ -1637,6 +1642,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         text: "\"…학교 근처 카페 알지? 거기서 잠깐 볼 수 있을까.\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         night: true,
         next: "day4_night_teacher_cafe"
     },
@@ -2239,7 +2245,7 @@ Object.assign(SCENARIO[4], {
         name: "보건선생님",
         background: "assets/images/background/school.png",
         text: "\"…집에 가면 아무도 없어. 혼자 사니까.\"",
-        character: "assets/images/characters/nurse_sad.png",
+        character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_lonely_2"
     },
