@@ -331,12 +331,14 @@ Object.assign(SCENARIO[4], {
         name: "서연",
         text: "\"오늘 약속 잊지 않았지? 😊 공원 분수대 앞에서 10시에 만나! 기대된다~\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         setFlag: "day4_date_target_set",
         next: "day4_morning_reply_seoyeon"
     },
     "day4_morning_reply_seoyeon": {
         name: "나",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         text: "(서연이한테서 메시지가 왔다. 웃는 이모티콘이 귀엽네. 뭐라고 답장하지…)",
         next: "day4_msg_seoyeon_2"
     },
@@ -344,12 +346,14 @@ Object.assign(SCENARIO[4], {
         name: "서연",
         text: "\"아 참, 오늘 날씨 진짜 좋다! 산책하기 딱이야~ 선크림 바르고 와!\"",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         stats: { Seoyeon: { affinity: 3 } },
         next: "day4_reply_seoyeon_2"
     },
     "day4_reply_seoyeon_2": {
         name: "나",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         text: "(연달아 메시지가 온다. 서연이도 기대하고 있나 보다. 나도 빨리 준비해서 나가야지.)",
         next: "day4_seoyeon_ready"
     },
@@ -365,12 +369,14 @@ Object.assign(SCENARIO[4], {
         name: "유나",
         text: "\"…10시. 역 앞 카페. 늦으면 모른다.\"",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         setFlag: "day4_date_target_set",
         next: "day4_morning_reply_yuna"
     },
     "day4_morning_reply_yuna": {
         name: "나",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         text: "(유나답게 짧고 간결하다. 근데 이런 게 유나의 매력이지. '알겠어, 안 늦을게!' 라고 보내자.)",
         next: "day4_msg_yuna_2"
     },
@@ -378,12 +384,14 @@ Object.assign(SCENARIO[4], {
         name: "유나",
         text: "\"…별거 아닌데. 그냥 커피 마시고 싶었을 뿐이야. …혼자는 좀 그래서.\"",
         character: "assets/images/characters/yuna_shy.png",
+        silhouette: true,
         stats: { Yuna: { affinity: 3 } },
         next: "day4_reply_yuna_2"
     },
     "day4_reply_yuna_2": {
         name: "나",
         character: "assets/images/characters/yuna_shy.png",
+        silhouette: true,
         text: "(…이게 유나식 '같이 가고 싶다'인 거지? 입가에 미소가 번진다.)",
         next: "day4_yuna_ready"
     },
@@ -399,12 +407,14 @@ Object.assign(SCENARIO[4], {
         name: "다인",
         text: "\"야!! 오늘 연습 끝나고 만나자!! 체육관 앞에서 11시!! 늦지 마!!!! 🏐\"",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         setFlag: "day4_date_target_set",
         next: "day4_morning_reply_dain"
     },
     "day4_morning_reply_dain": {
         name: "나",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         text: "(느낌표가 엄청 많네… 다인이의 에너지가 메시지에서도 느껴진다. 답장을 보내야지.)",
         next: "day4_msg_dain_2"
     },
@@ -412,12 +422,14 @@ Object.assign(SCENARIO[4], {
         name: "다인",
         text: "\"아 맞다!! 오늘 연습 끝나면 배 엄청 고플 거야!! 맛집 알아봐 줘!! 고기 먹고 싶어!!!\"",
         character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
         stats: { Dain: { affinity: 3 } },
         next: "day4_reply_dain_2"
     },
     "day4_reply_dain_2": {
         name: "나",
         character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
         text: "(맛집 검색까지 시키는 건가… 하긴, 다인이랑 밥 먹는 것도 나쁘지 않다. 아니, 기대된다.)",
         next: "day4_dain_ready"
     },
@@ -433,12 +445,14 @@ Object.assign(SCENARIO[4], {
         name: "보건선생님",
         text: "\"오늘 괜찮으면… 시내 미술관은 어때? 보고 싶은 전시가 있거든. 11시에 미술관 앞에서 만나자.\"",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         setFlag: "day4_date_target_set",
         next: "day4_morning_reply_nurse"
     },
     "day4_morning_reply_nurse": {
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(보건선생님과 미술관이라… 왠지 두근거린다. '네, 꼭 갈게요!'라고 보냈다.)",
         next: "day4_msg_nurse_2"
     },
@@ -446,12 +460,14 @@ Object.assign(SCENARIO[4], {
         name: "보건선생님",
         text: "\"기대하고 있을게. 아, 그리고… 오늘은 선생님이라고 부르지 마. 그냥 편하게 만나는 거야.\"",
         character: "assets/images/characters/nurse_shy.png",
+        silhouette: true,
         stats: { Nurse: { affinity: 3 } },
         next: "day4_reply_nurse_2"
     },
     "day4_reply_nurse_2": {
         name: "나",
         character: "assets/images/characters/nurse_shy.png",
+        silhouette: true,
         text: "(선생님이라고 부르지 말라니… 심장이 멈추는 줄 알았다. 오늘은 정말 특별한 날이 될 것 같다.)",
         next: "day4_nurse_ready"
     },
@@ -467,12 +483,14 @@ Object.assign(SCENARIO[4], {
         name: "담임선생님",
         text: "\"오늘 점심쯤에 학교 근처 카페에서 볼까? 할 얘기가 있어서. 12시에 만나자.\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         setFlag: "day4_date_target_set",
         next: "day4_morning_reply_teacher"
     },
     "day4_morning_reply_teacher": {
         name: "나",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(담임선생님이랑 학교 밖에서 만나다니… 긴장된다. 바로 답장을 보냈다.)",
         next: "day4_msg_teacher_2"
     },
@@ -480,12 +498,14 @@ Object.assign(SCENARIO[4], {
         name: "담임선생님",
         text: "\"사복으로 갈 테니까 못 알아봐도 놀라지 마. …농담이야. 아마 알아볼 거야.\"",
         character: "assets/images/characters/teacher_smile.png",
+        silhouette: true,
         stats: { Teacher: { affinity: 3 } },
         next: "day4_reply_teacher_2"
     },
     "day4_reply_teacher_2": {
         name: "나",
         character: "assets/images/characters/teacher_smile.png",
+        silhouette: true,
         text: "(담임선생님이 농담을 하다니. 평소에 보여주지 않던 모습이라 더 신선하다. 사복 모습은 어떨까.)",
         next: "day4_teacher_ready"
     },

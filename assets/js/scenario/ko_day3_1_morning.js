@@ -425,11 +425,11 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(다른 메시지도 확인해본다.)",
         choices: [
-            { text: "서연이의 메시지 확인", next: "day3_show_message", condition: "has_number_seyoun", excludeCondition: "viewing_seoyeon", setFlags: ["viewing_seoyeon"] },
-            { text: "유나의 메시지 확인", next: "day3_show_message", condition: "has_number_yuna", excludeCondition: "viewing_yuna", setFlags: ["viewing_yuna"] },
-            { text: "다인이의 메시지 확인", next: "day3_show_message", condition: "has_number_dain", excludeCondition: "viewing_dain", setFlags: ["viewing_dain"] },
-            { text: "보건선생님의 메시지 확인", next: "day3_show_message", condition: "has_number_nurse", excludeCondition: "viewing_nurse", setFlags: ["viewing_nurse"] },
-            { text: "담임선생님의 메시지 확인", next: "day3_show_message", condition: "has_number_teacher", excludeCondition: "viewing_teacher", setFlags: ["viewing_teacher"] },
+            { text: "서연이의 메시지 확인", next: "day3_msg_seoyeon", condition: "has_number_seyoun", excludeCondition: "viewing_seoyeon", clearFlags: ["viewing_yuna", "viewing_dain", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_seoyeon"] },
+            { text: "유나의 메시지 확인", next: "day3_msg_yuna", condition: "has_number_yuna", excludeCondition: "viewing_yuna", clearFlags: ["viewing_seoyeon", "viewing_dain", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_yuna"] },
+            { text: "다인이의 메시지 확인", next: "day3_msg_dain", condition: "has_number_dain", excludeCondition: "viewing_dain", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_dain"] },
+            { text: "보건선생님의 메시지 확인", next: "day3_msg_nurse", condition: "has_number_nurse", excludeCondition: "viewing_nurse", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_dain", "viewing_teacher"], setFlags: ["viewing_nurse"] },
+            { text: "담임선생님의 메시지 확인", next: "day3_msg_teacher", condition: "has_number_teacher", excludeCondition: "viewing_teacher", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_dain", "viewing_nurse"], setFlags: ["viewing_teacher"] },
             { text: "서연이와 같이 간다", next: "day3_walk_with_seoyeon", condition: "viewing_seoyeon", stats: { Seoyeon: { affinity: 3 } } },
             { text: "유나와 같이 간다", next: "day3_walk_with_yuna", condition: "viewing_yuna", stats: { Yuna: { affinity: 3 } } },
             { text: "다인이와 같이 간다", next: "day3_walk_with_dain", condition: "viewing_dain", stats: { Dain: { affinity: 3 } } },
@@ -441,13 +441,14 @@ Object.assign(SCENARIO[3], {
     "day3_check_more_after_reject": {
         name: "나",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         text: "(다른 메시지도 확인해본다.)",
         choices: [
-            { text: "서연이의 메시지 확인", next: "day3_show_message_after_reject", condition: "has_number_seyoun", excludeCondition: "rejected_seoyeon", setFlags: ["viewing_seoyeon"] },
-            { text: "유나의 메시지 확인", next: "day3_show_message_after_reject", condition: "has_number_yuna", excludeCondition: "rejected_yuna", setFlags: ["viewing_yuna"] },
-            { text: "다인이의 메시지 확인", next: "day3_show_message_after_reject", condition: "has_number_dain", excludeCondition: "rejected_dain", setFlags: ["viewing_dain"] },
-            { text: "보건선생님의 메시지 확인", next: "day3_show_message_after_reject", condition: "has_number_nurse", excludeCondition: "rejected_nurse", setFlags: ["viewing_nurse"] },
-            { text: "담임선생님의 메시지 확인", next: "day3_show_message_after_reject", condition: "has_number_teacher", excludeCondition: "rejected_teacher", setFlags: ["viewing_teacher"] },
+            { text: "서연이의 메시지 확인", next: "day3_msg_seoyeon_after_reject", condition: "has_number_seyoun", excludeCondition: "rejected_seoyeon", clearFlags: ["viewing_yuna", "viewing_dain", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_seoyeon"] },
+            { text: "유나의 메시지 확인", next: "day3_msg_yuna_after_reject", condition: "has_number_yuna", excludeCondition: "rejected_yuna", clearFlags: ["viewing_seoyeon", "viewing_dain", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_yuna"] },
+            { text: "다인이의 메시지 확인", next: "day3_msg_dain_after_reject", condition: "has_number_dain", excludeCondition: "rejected_dain", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_dain"] },
+            { text: "보건선생님의 메시지 확인", next: "day3_msg_nurse_after_reject", condition: "has_number_nurse", excludeCondition: "rejected_nurse", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_dain", "viewing_teacher"], setFlags: ["viewing_nurse"] },
+            { text: "담임선생님의 메시지 확인", next: "day3_msg_teacher_after_reject", condition: "has_number_teacher", excludeCondition: "rejected_teacher", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_dain", "viewing_nurse"], setFlags: ["viewing_teacher"] },
             { text: "그냥 혼자 등교한다", next: "day3_prepare_school" }
         ]
     },
@@ -518,12 +519,14 @@ Object.assign(SCENARIO[3], {
     "day3_change_mind": {
         name: "나",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         text: "(다시 메시지를 보냈다. '미안, 방금 다른 메시지 확인하고 왔어. 역시 같이 가고 싶어!')",
         next: "day3_change_mind_reply"
     },
     "day3_change_mind_teachers": {
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(다시 메시지를 보냈다. '죄송해요, 역시 같이 가고 싶어요!')",
         next: "day3_change_mind_reply"
     },    
@@ -649,10 +652,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_walk_seoyeon_freetalk"
     },
     "day3_walk_seoyeon_freetalk": {
+        type: "free_talk",
         name: "나",
         character: "assets/images/characters/seyoun_shy.png",
         text: "(학교까지 가는 길, 서연이와 이런저런 이야기를 나눈다.)",
-        freeTalk: { turns: 4, context: "서연이와 아침 등교길에 나란히 걸으며 대화하는 중. 횡단보도에서 손이 닿아 둘 다 살짝 의식하고 있는 상태. 금요일 아침이라 주말 이야기가 나올 수 있다." },
+        context: "서연이와 아침 등교길에 나란히 걸으며 대화하는 중. 횡단보도에서 손이 닿아 둘 다 살짝 의식하고 있는 상태. 금요일 아침이라 주말 이야기가 나올 수 있다.",
+        maxTurns: 4,
         next: "day3_seoyeon_weekend_talk"
     },
     "day3_seoyeon_weekend_talk": {
@@ -781,10 +786,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_walk_yuna_freetalk"
     },
     "day3_walk_yuna_freetalk": {
+        type: "free_talk",
         name: "나",
         character: "assets/images/characters/yuna_shy.png",
         text: "(유나와 나란히 학교를 향해 걷는다. 조용하지만 불편하지 않은 침묵이 흐른다.)",
-        freeTalk: { turns: 3, context: "유나와 아침 등교길. 유나가 넥타이를 고쳐준 직후라 묘한 분위기. 조용하지만 가까운 거리감이 느껴지는 상태." },
+        context: "유나와 아침 등교길. 유나가 넥타이를 고쳐준 직후라 묘한 분위기. 조용하지만 가까운 거리감이 느껴지는 상태.",
+        maxTurns: 3,
         next: "day3_walk_yuna_talk"
     },
     "day3_walk_yuna_talk": {
@@ -929,11 +936,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_walk_dain_freetalk"
     },
     "day3_walk_dain_freetalk": {
+        type: "free_talk",
         name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(다인이와 나란히 학교로 향한다. 아까 부딪힌 일 때문인지 다인이가 평소보다 살짝 거리를 유지한다.)",
-        freeTalk: { turns: 4, context: "다인이와 등교길. 아까 부딪혀 넘어지는 해프닝이 있어서 다인이가 약간 수줍어하고 있다. 에너지 넘치지만 가끔 얼굴을 붉힌다." },
+        context: "다인이와 등교길. 아까 부딪혀 넘어지는 해프닝이 있어서 다인이가 약간 수줍어하고 있다. 에너지 넘치지만 가끔 얼굴을 붉힌다.",
+        maxTurns: 4,
         next: "day3_walk_dain_talk"
     },
     "day3_walk_dain_talk": {
@@ -1088,11 +1097,13 @@ Object.assign(SCENARIO[3], {
 		next: "day3_walk_nurse_freetalk"
 	},
 	"day3_walk_nurse_freetalk": {
+		type: "free_talk",
 		name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/nurse_shy.png",
 		text: "(보건선생님과 함께 학교로 향한다. 묘한 긴장감과 설렘이 동시에 느껴진다.)",
-		freeTalk: { turns: 3, context: "보건선생님과 등교길. 선생님이 '학생한테 이러면 안 되는데'라며 갈등을 내비쳤다. 금지된 사랑의 묘한 긴장감." },
+		context: "보건선생님과 등교길. 선생님이 '학생한테 이러면 안 되는데'라며 갈등을 내비쳤다. 금지된 사랑의 묘한 긴장감.",
+		maxTurns: 3,
 		next: "day3_walk_nurse_talk"
 	},
 	"day3_walk_nurse_talk": {
@@ -1235,11 +1246,13 @@ Object.assign(SCENARIO[3], {
 		next: "day3_walk_teacher_freetalk"
 	},
 	"day3_walk_teacher_freetalk": {
+		type: "free_talk",
 		name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
 		text: "(담임선생님의 차 안에서 학교까지 함께 향한다.)",
-		freeTalk: { turns: 3, context: "담임선생님의 차 안에서 등교 중. 선생님이 머리를 정리해주며 '학생한테 이러면 안 되는데'라고 했다. 금지된 사랑의 묘한 분위기." },
+		context: "담임선생님의 차 안에서 등교 중. 선생님이 머리를 정리해주며 '학생한테 이러면 안 되는데'라고 했다. 금지된 사랑의 묘한 분위기.",
+		maxTurns: 3,
 		next: "day3_walk_teacher_talk"
 	},
 	"day3_walk_teacher_talk": {
@@ -1467,6 +1480,7 @@ Object.assign(SCENARIO[3], {
     "day3_break_time": {
         name: "나",
         character: "assets/images/characters/nurse_shy.png",
+        silhouette: true,
         text: "(쉬는 시간. 핸드폰을 꺼내보니 주말 관련 메시지들이 와있다.)",
         branches: [
             { next: "day3_weekend_check_seoyeon", condition: "has_any_contact" },

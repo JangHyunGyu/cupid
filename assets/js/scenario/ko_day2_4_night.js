@@ -372,8 +372,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_night_nurse_home_4": {
-        name: "보건선생님",
-        text: null,
+        name: "나",
+        text: "(선생님의 방... 은은한 조명 아래 둘만의 시간이 흐른다.)",
         background: "assets/images/background/nurse_home_event1.png",
         character: null,
         night: true,

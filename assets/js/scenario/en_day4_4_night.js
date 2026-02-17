@@ -701,6 +701,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         text: "\"...Hey, it's me. If you're not busy... could you come out for a bit?\"",
         character: "assets/images/characters/seyoun_shy.png",
+        silhouette: true,
         night: true,
         next: "day4_night_seoyeon_call_3"
     },
@@ -708,6 +709,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_shy.png",
+        silhouette: true,
         text: "(Seoyeon's voice sounds different from usual. No warmth, and it seems like she's trembling.)",
         night: true,
         next: "day4_night_seoyeon_call_4"
@@ -717,6 +719,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         text: "\"...You know the park near my house, right? I'll wait there.\"",
         character: "assets/images/characters/seyoun_shy.png",
+        silhouette: true,
         night: true,
         next: "day4_night_seoyeon_park"
     },
@@ -1621,6 +1624,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         text: "\"...Hello? It's me. Are you... free right now?\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         night: true,
         next: "day4_night_teacher_call_3"
     },
@@ -1628,6 +1632,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(Her voice sounds different from usual. Not the confident voice from the classroom... it sounds like she's about to break.)",
         night: true,
         next: "day4_night_teacher_call_4"
@@ -1637,6 +1642,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         text: "\"...There's a café near the school. Can we meet there?\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         night: true,
         next: "day4_night_teacher_cafe"
     },

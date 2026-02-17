@@ -579,10 +579,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_phone_seoyeon_freetalk"
     },
     "day3_night_phone_seoyeon_freetalk": {
+        type: "free_talk",
         name: "나",
         character: "assets/images/characters/seyoun_shy.png",
         text: "(서연이와 심야 전화를 한다. 어두운 방에서 듣는 서연이의 목소리가 평소보다 부드럽다.)",
-        freeTalk: { turns: 3, context: "심야 전화. 서연이가 잘 시간에 '목소리가 듣고 싶었어'라며 전화함. 달콤한 심야 통화. 서연이가 잘다가 갑자기 전화한 것." },
+        context: "심야 전화. 서연이가 잘 시간에 '목소리가 듣고 싶었어'라며 전화함. 달콤한 심야 통화. 서연이가 잘다가 갑자기 전화한 것.",
+        maxTurns: 3,
         silhouette: true,
         night: true,
         next: "day3_night_phone_end"
@@ -596,10 +598,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_phone_yuna_freetalk"
     },
     "day3_night_phone_yuna_freetalk": {
+        type: "free_talk",
         name: "나",
         character: "assets/images/characters/yuna_normal.png",
         text: "(유나와 심야 전화를 한다. 유나의 작은 숨소리가 귀에 닿는다.)",
-        freeTalk: { turns: 2, context: "심야 전화. 유나가 '잠이 안 와'라며 전화함. 조용하고 친밀한 심야 통화. 유나의 작은 숨소리가 가까이 들릴 듯한 분위기." },
+        context: "심야 전화. 유나가 '잠이 안 와'라며 전화함. 조용하고 친밀한 심야 통화. 유나의 작은 숨소리가 가까이 들릴 듯한 분위기.",
+        maxTurns: 2,
         silhouette: true,
         night: true,
         next: "day3_night_phone_end"
@@ -613,10 +617,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_phone_dain_freetalk"
     },
     "day3_night_phone_dain_freetalk": {
+        type: "free_talk",
         name: "나",
         character: "assets/images/characters/dain_normal.png",
         text: "(다인이와 심야 전화를 한다. 평소의 에너지 대신 조용한 다인이의 목소리가 새롭다.)",
-        freeTalk: { turns: 3, context: "심야 전화. 다인이가 '내일 생각하니까 잠이 안 와'라며 전화함. 평소와 달리 조용한 다인이. 심야의 부드러운 분위기." },
+        context: "심야 전화. 다인이가 '내일 생각하니까 잠이 안 와'라며 전화함. 평소와 달리 조용한 다인이. 심야의 부드러운 분위기.",
+        maxTurns: 3,
         silhouette: true,
         night: true,
         next: "day3_night_phone_end"
@@ -630,10 +636,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_phone_nurse_freetalk"
     },
     "day3_night_phone_nurse_freetalk": {
+        type: "free_talk",
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
         text: "(보건선생님과 심야 전화를 한다. 선생님의 나직한 목소리가 귀에 닿는다.)",
-        freeTalk: { turns: 2, context: "심야 전화. 보건선생님이 '잠이 안 와서' 전화함. 선생님의 나직한 목소리. 금지된 사랑의 심야 통화." },
+        context: "심야 전화. 보건선생님이 '잠이 안 와서' 전화함. 선생님의 나직한 목소리. 금지된 사랑의 심야 통화.",
+        maxTurns: 2,
         silhouette: true,
         night: true,
         next: "day3_night_phone_end"
@@ -647,10 +655,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_phone_teacher_freetalk"
     },
     "day3_night_phone_teacher_freetalk": {
+        type: "free_talk",
         name: "나",
         character: "assets/images/characters/teacher_normal.png",
         text: "(담임선생님과 심야 전화를 한다. 선생님의 조용한 목소리가 가까이 들린다.)",
-        freeTalk: { turns: 2, context: "심야 전화. 담임선생님이 '잘 시간인 거 알면서도' 전화함. 선생님의 조용한 목소리. 금지된 사랑의 심야 통화." },
+        context: "심야 전화. 담임선생님이 '잘 시간인 거 알면서도' 전화함. 선생님의 조용한 목소리. 금지된 사랑의 심야 통화.",
+        maxTurns: 2,
         silhouette: true,
         night: true,
         next: "day3_night_phone_end"
@@ -733,7 +743,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_nightmare_wake": {
         name: "나",
         character: "assets/images/characters/dain_sad.png",
-        text: "(…땅으로. 심장이 미친 듯이 뛴다. 꿈이었다. 하지만… 내일은 어떻게 될까?)",
+        text: "(…땀으로. 심장이 미친 듯이 뛴다. 꿈이었다. 하지만… 내일은 어떻게 될까?)",
         night: true,
         fade: true,
         next: "day3_final_scene"

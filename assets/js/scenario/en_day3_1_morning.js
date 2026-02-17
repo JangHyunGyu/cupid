@@ -441,6 +441,7 @@ Object.assign(SCENARIO[3], {
     "day3_check_more_after_reject": {
         name: "Me",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         text: "(Let me check other messages.)",
         choices: [
             { text: "Check Seoyeon's message", next: "day3_show_message_after_reject", condition: "has_number_seyoun", excludeCondition: "rejected_seoyeon", setFlags: ["viewing_seoyeon"] },
@@ -518,12 +519,14 @@ Object.assign(SCENARIO[3], {
     "day3_change_mind": {
         name: "Me",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         text: "(I sent another message. 'Sorry, I just checked other messages. I actually want to go together!')",
         next: "day3_change_mind_reply"
     },
     "day3_change_mind_teachers": {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(I sent another message. 'Sorry, I actually want to go together!')",
         next: "day3_change_mind_reply"
     },    
@@ -1468,6 +1471,7 @@ Object.assign(SCENARIO[3], {
     "day3_break_time": {
         name: "Me",
         character: "assets/images/characters/nurse_shy.png",
+        silhouette: true,
         text: "(Break time. I check my phone — there are messages about weekend plans.)",
         branches: [
             { next: "day3_weekend_check_seoyeon", condition: "has_any_contact" },

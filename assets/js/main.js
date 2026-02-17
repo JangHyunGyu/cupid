@@ -3069,6 +3069,8 @@ class SceneRenderer {
      * @param {Object} scene - 씬 데이터
      */
     processSceneFlags(scene) {
+        // 플래그 초기화 (false로 설정)
+        if (scene.clearFlags?.length) scene.clearFlags.forEach(flag => this.stateManager.setFlag(flag, false));
         // 단일 플래그 설정
         if (scene.setFlag) this.stateManager.setFlag(scene.setFlag);
         // 복수 플래그 설정
@@ -3618,6 +3620,9 @@ class GameEngine {
 
         // 단일 플래그 설정 (setFlag: "flagName")
         if (choice.setFlag) this.stateManager.setFlag(choice.setFlag);
+
+        // 플래그 초기화 (clearFlags: ["flag1", "flag2"])
+        if (choice.clearFlags?.length) choice.clearFlags.forEach(flag => this.stateManager.setFlag(flag, false));
 
         // 복수 플래그 설정 (setFlags: ["flag1", "flag2"])
         // 하나의 선택으로 여러 플래그를 동시에 설정할 때 사용

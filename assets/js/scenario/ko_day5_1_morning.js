@@ -143,11 +143,13 @@ Object.assign(SCENARIO[5], {
         name: "서연",
         text: "\"좋은 아침 ☀️ 오늘 날씨 진짜 좋다! 학교 정원에 꽃이 피었을 것 같아. 같이 보러 갈래?\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         next: "day5_couple_react_seoyeon"
     },
     "day5_couple_react_seoyeon": {
         name: "나",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         text: "(서연이 메시지를 보니 저절로 웃음이 나온다. 아침부터 꽃 이야기라니, 서연이답다.)",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day5_couple_reply_seoyeon"
@@ -155,6 +157,7 @@ Object.assign(SCENARIO[5], {
     "day5_couple_reply_seoyeon": {
         name: "나",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         text: "(\"좋아! 학교 정문 앞에서 만나자. 보여주고 싶은 곳도 있어 😊\" 라고 답했다.)",
         next: "day5_morning_ready"
     },
@@ -164,11 +167,13 @@ Object.assign(SCENARIO[5], {
         name: "유나",
         text: "\"…일어났어? 오늘 학교 갈 거지? …나도 갈게. 정문 앞. 10시.\"",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         next: "day5_couple_react_yuna"
     },
     "day5_couple_react_yuna": {
         name: "나",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         text: "(유나답게 짧지만… 자세히 보면 \"나도 갈게\"라는 말에 설렘이 담겨 있다.)",
         stats: { Yuna: { affinity: 3 } },
         next: "day5_couple_reply_yuna"
@@ -176,6 +181,7 @@ Object.assign(SCENARIO[5], {
     "day5_couple_reply_yuna": {
         name: "나",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         text: "(\"응, 갈게. 기다리고 있어.\" 담담하게 답했지만, 심장이 빨리 뛴다.)",
         next: "day5_morning_ready"
     },
@@ -185,11 +191,13 @@ Object.assign(SCENARIO[5], {
         name: "다인",
         text: "\"좋은 아침!! ☀️🏐 오늘 학교 가자!! 정문 앞에서 만나!! 뛰어올게!! 절대 늦지 마!!!\"",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         next: "day5_couple_react_dain"
     },
     "day5_couple_react_dain": {
         name: "나",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         text: "(…느낌표가 잔뜩. 아침부터 에너지가 넘치는 다인이. 그런데 이런 메시지를 보면 나까지 기운이 나네.)",
         stats: { Dain: { affinity: 3 } },
         next: "day5_couple_reply_dain"
@@ -197,6 +205,7 @@ Object.assign(SCENARIO[5], {
     "day5_couple_reply_dain": {
         name: "나",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         text: "(\"ㅋㅋ 알겠어! 안 늦을게. 뛰지 말고 조심해서 와!\" 라고 답장을 보냈다.)",
         next: "day5_morning_ready"
     },
@@ -206,11 +215,13 @@ Object.assign(SCENARIO[5], {
         name: "보건선생님",
         text: "\"잘 잤어? 오늘 날씨가 좋아서 기분이 설레네. 학교 앞에서 볼까? …주말에 만나는 건 또 다른 느낌이지? 💕\"",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         next: "day5_couple_react_nurse"
     },
     "day5_couple_react_nurse": {
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(선생님이 보낸 하트 이모티콘에 얼굴이 빨개졌다. 학교 밖에서 만나는 건 확실히 다른 느낌이다.)",
         stats: { Nurse: { affinity: 3 } },
         next: "day5_couple_reply_nurse"
@@ -218,6 +229,7 @@ Object.assign(SCENARIO[5], {
     "day5_couple_reply_nurse": {
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(\"네, 기대돼요. 정문 앞에서 10시에 만나요!\" 존댓말로 쓰다가… 뭔가 어색하다.)",
         next: "day5_morning_ready"
     },
@@ -227,11 +239,13 @@ Object.assign(SCENARIO[5], {
         name: "담임선생님",
         text: "\"오늘 학교 올 거지? 주말인데 뭐… 잠깐 볼 일이 있어서. 정문 앞에서 10시. 늦으면 혼난다.\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         next: "day5_couple_react_teacher"
     },
     "day5_couple_react_teacher": {
         name: "나",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(\"볼 일이 있어서\"라니. 쿨한 척 하지만 만나자고 먼저 연락한 건 선생님인데. 그런 선생님이 좋다.)",
         stats: { Teacher: { affinity: 3 } },
         next: "day5_couple_reply_teacher"
@@ -239,6 +253,7 @@ Object.assign(SCENARIO[5], {
     "day5_couple_reply_teacher": {
         name: "나",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(\"안 늦을게요. 꼭 갈게요!\" 라고 답장을 보내며 살짝 웃었다.)",
         next: "day5_morning_ready"
     },
@@ -264,17 +279,20 @@ Object.assign(SCENARIO[5], {
         name: "서연",
         text: "\"오늘 시간 있어? 정원 손질 도와줄 사람이 필요한데… 아, 물론 강제는 아니야! 😅\"",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         next: "day5_pending_react_seoyeon"
     },
     "day5_pending_react_seoyeon": {
         name: "나",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         text: "(서연이가 나를 부른다. \"강제는 아니야\"라면서도… 가고 싶다는 마음은 확실하다.)",
         next: "day5_pending_reply_seoyeon"
     },
     "day5_pending_reply_seoyeon": {
         name: "나",
         character: "assets/images/characters/seyoun_normal.png",
+        silhouette: true,
         text: "(오늘은 꼭 내 마음을 전해야 해. \"갈게! 정문 앞에서 만나자.\" 라고 답했다.)",
         next: "day5_morning_ready"
     },
@@ -284,17 +302,20 @@ Object.assign(SCENARIO[5], {
         name: "유나",
         text: "\"…오늘 학교. 올 수 있어? …할 말이 있어.\"",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         next: "day5_pending_react_yuna"
     },
     "day5_pending_react_yuna": {
         name: "나",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         text: "(\"할 말이 있어\"라니. 심장이 쿵 뛰었다. 혹시 유나도 나한테…?)",
         next: "day5_pending_reply_yuna"
     },
     "day5_pending_reply_yuna": {
         name: "나",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         text: "(나도 할 말이 있다. \"응, 갈게.\" 간결하게 답하고 핸드폰을 내려놓았다.)",
         next: "day5_morning_ready"
     },
@@ -304,17 +325,20 @@ Object.assign(SCENARIO[5], {
         name: "다인",
         text: "\"야! 오늘 학교 올래?! 연습 끝나고 잠깐만 시간 돼? 중요한 거야!!\"",
         character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
         next: "day5_pending_react_dain"
     },
     "day5_pending_react_dain": {
         name: "나",
         character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
         text: "(\"중요한 거\"라고 했다. 다인이가 진지하게 말하는 건 드문 일인데. 무슨 일일까.)",
         next: "day5_pending_reply_dain"
     },
     "day5_pending_reply_dain": {
         name: "나",
         character: "assets/images/characters/dain_normal.png",
+        silhouette: true,
         text: "(그리고 나도… 오늘 꼭 하고 싶은 말이 있다. \"갈게!! 기다려!\" 라고 답했다.)",
         next: "day5_morning_ready"
     },
@@ -324,17 +348,20 @@ Object.assign(SCENARIO[5], {
         name: "보건선생님",
         text: "\"오늘 혹시 학교에 올 일 있어? 보건실 정리 좀 해야 하는데… 같이 와주면 좋겠다.\"",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         next: "day5_pending_react_nurse"
     },
     "day5_pending_react_nurse": {
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(주말에 보건실 정리라… 핑계 같기도 하지만, 만날 수 있다면 이유는 상관없다.)",
         next: "day5_pending_reply_nurse"
     },
     "day5_pending_reply_nurse": {
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         text: "(오늘, 꼭 마음을 전하자. \"갈게요! 정문 앞에서 만나요.\" 라고 답했다.)",
         next: "day5_morning_ready"
     },
@@ -344,17 +371,20 @@ Object.assign(SCENARIO[5], {
         name: "담임선생님",
         text: "\"오늘 학교에 잠깐 올 수 있어? 서류 정리 좀 도와줄래. …다른 뜻은 없으니까 이상한 생각 하지 마.\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         next: "day5_pending_react_teacher"
     },
     "day5_pending_react_teacher": {
         name: "나",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(\"다른 뜻은 없다\"는 말이 오히려 의미심장하게 느껴진다. 선생님도 마찬가지인 걸까.)",
         next: "day5_pending_reply_teacher"
     },
     "day5_pending_reply_teacher": {
         name: "나",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         text: "(오늘이 지나면 기회가 없을지도 모른다. \"갈게요!\" 라고 답장을 보냈다.)",
         next: "day5_morning_ready"
     },
