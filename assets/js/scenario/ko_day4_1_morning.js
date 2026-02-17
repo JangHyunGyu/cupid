@@ -129,7 +129,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_guilt": {
         name: "나",
         background: "assets/images/background/room_my.png",
-        text: "(…잘깜. 여러 명에게 약속한 게 마음에 걸린다. 다들 나를 믿고 약속한 건데... 결국 한 사람밖에 만나지 못할 텐데.)",        next: "day4_morning_stretch"
+        text: "(…잠깐. 여러 명에게 약속한 게 마음에 걸린다. 다들 나를 믿고 약속한 건데... 결국 한 사람밖에 만나지 못할 텐데.)",        next: "day4_morning_stretch"
     },
 
     "day4_morning_stretch": {

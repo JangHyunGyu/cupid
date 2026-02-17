@@ -768,7 +768,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_9": {
         name: "다인",
-        text: "\"엥?! 야! 나한테도 시간 된다고 했잠아!!\"",
+        text: "\"엥?! 야! 나한테도 시간 된다고 했잖아!!\"",
         character: "assets/images/characters/dain_normal.png",
         sunset: true,
         next: "day5_mayhem_10"
