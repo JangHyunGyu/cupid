@@ -682,7 +682,6 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         text: "(I came up to the rooftop... Wait, huh?)",
         sunset: true,
-        setFlag: "ending_mayhem",
         next: "day5_mayhem_2"
     },
     "day5_mayhem_2": {
@@ -983,6 +982,7 @@ Object.assign(SCENARIO[5], {
         text: "(...But why don't I feel so bad? This chaotic everyday life... is kind of its own happiness.)",
         sunset: true,
         fade: true,
+        setFlag: "ending_mayhem",
         next: "day5_ending_mayhem"
     },
 

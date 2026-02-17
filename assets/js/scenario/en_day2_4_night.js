@@ -372,8 +372,8 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_night_nurse_home_4": {
-        name: "School Nurse",
-        text: null,
+        name: "Me",
+        text: "(Her room... a quiet moment for just the two of us, under the dim lighting.)",
         background: "assets/images/background/nurse_home_event1.png",
         character: null,
         night: true,

@@ -425,11 +425,11 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(Let me check other messages.)",
         choices: [
-            { text: "Check Seoyeon's message", next: "day3_show_message", condition: "has_number_seyoun", excludeCondition: "viewing_seoyeon", setFlags: ["viewing_seoyeon"] },
-            { text: "Check Yuna's message", next: "day3_show_message", condition: "has_number_yuna", excludeCondition: "viewing_yuna", setFlags: ["viewing_yuna"] },
-            { text: "Check Dain's message", next: "day3_show_message", condition: "has_number_dain", excludeCondition: "viewing_dain", setFlags: ["viewing_dain"] },
-            { text: "Check Nurse's message", next: "day3_show_message", condition: "has_number_nurse", excludeCondition: "viewing_nurse", setFlags: ["viewing_nurse"] },
-            { text: "Check Teacher's message", next: "day3_show_message", condition: "has_number_teacher", excludeCondition: "viewing_teacher", setFlags: ["viewing_teacher"] },
+            { text: "Check Seoyeon's message", next: "day3_msg_seoyeon", condition: "has_number_seyoun", excludeCondition: "viewing_seoyeon", clearFlags: ["viewing_yuna", "viewing_dain", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_seoyeon"] },
+            { text: "Check Yuna's message", next: "day3_msg_yuna", condition: "has_number_yuna", excludeCondition: "viewing_yuna", clearFlags: ["viewing_seoyeon", "viewing_dain", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_yuna"] },
+            { text: "Check Dain's message", next: "day3_msg_dain", condition: "has_number_dain", excludeCondition: "viewing_dain", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_dain"] },
+            { text: "Check Nurse's message", next: "day3_msg_nurse", condition: "has_number_nurse", excludeCondition: "viewing_nurse", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_dain", "viewing_teacher"], setFlags: ["viewing_nurse"] },
+            { text: "Check Teacher's message", next: "day3_msg_teacher", condition: "has_number_teacher", excludeCondition: "viewing_teacher", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_dain", "viewing_nurse"], setFlags: ["viewing_teacher"] },
             { text: "Go with Seoyeon", next: "day3_walk_with_seoyeon", condition: "viewing_seoyeon", stats: { Seoyeon: { affinity: 3 } } },
             { text: "Go with Yuna", next: "day3_walk_with_yuna", condition: "viewing_yuna", stats: { Yuna: { affinity: 3 } } },
             { text: "Go with Dain", next: "day3_walk_with_dain", condition: "viewing_dain", stats: { Dain: { affinity: 3 } } },
@@ -444,11 +444,11 @@ Object.assign(SCENARIO[3], {
         silhouette: true,
         text: "(Let me check other messages.)",
         choices: [
-            { text: "Check Seoyeon's message", next: "day3_show_message_after_reject", condition: "has_number_seyoun", excludeCondition: "rejected_seoyeon", setFlags: ["viewing_seoyeon"] },
-            { text: "Check Yuna's message", next: "day3_show_message_after_reject", condition: "has_number_yuna", excludeCondition: "rejected_yuna", setFlags: ["viewing_yuna"] },
-            { text: "Check Dain's message", next: "day3_show_message_after_reject", condition: "has_number_dain", excludeCondition: "rejected_dain", setFlags: ["viewing_dain"] },
-            { text: "Check Nurse's message", next: "day3_show_message_after_reject", condition: "has_number_nurse", excludeCondition: "rejected_nurse", setFlags: ["viewing_nurse"] },
-            { text: "Check Teacher's message", next: "day3_show_message_after_reject", condition: "has_number_teacher", excludeCondition: "rejected_teacher", setFlags: ["viewing_teacher"] },
+            { text: "Check Seoyeon's message", next: "day3_msg_seoyeon_after_reject", condition: "has_number_seyoun", excludeCondition: "rejected_seoyeon", clearFlags: ["viewing_yuna", "viewing_dain", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_seoyeon"] },
+            { text: "Check Yuna's message", next: "day3_msg_yuna_after_reject", condition: "has_number_yuna", excludeCondition: "rejected_yuna", clearFlags: ["viewing_seoyeon", "viewing_dain", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_yuna"] },
+            { text: "Check Dain's message", next: "day3_msg_dain_after_reject", condition: "has_number_dain", excludeCondition: "rejected_dain", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_nurse", "viewing_teacher"], setFlags: ["viewing_dain"] },
+            { text: "Check Nurse's message", next: "day3_msg_nurse_after_reject", condition: "has_number_nurse", excludeCondition: "rejected_nurse", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_dain", "viewing_teacher"], setFlags: ["viewing_nurse"] },
+            { text: "Check Teacher's message", next: "day3_msg_teacher_after_reject", condition: "has_number_teacher", excludeCondition: "rejected_teacher", clearFlags: ["viewing_seoyeon", "viewing_yuna", "viewing_dain", "viewing_nurse"], setFlags: ["viewing_teacher"] },
             { text: "Just go to school alone", next: "day3_prepare_school" }
         ]
     },

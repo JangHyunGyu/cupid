@@ -473,7 +473,6 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_secret_read": {
-        type: "free_talk",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_yuna_secret_read_high" },
@@ -481,7 +480,6 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_secret_stop": {
-        type: "free_talk",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_yuna_secret_stop_high" },
@@ -489,7 +487,6 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_secret_why": {
-        type: "free_talk",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_yuna_secret_why_high" },
@@ -568,6 +565,7 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_dain": {
         name: "Me",
         text: "(I open the gym. Dain, practicing hard, runs over with a wide grin.)",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
         branches: [
             { next: "day2_dain_lunch_talk", condition: "met_dain" },

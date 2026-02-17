@@ -2245,7 +2245,7 @@ Object.assign(SCENARIO[4], {
         name: "School Nurse",
         background: "assets/images/background/school.png",
         text: "\"...When I go home, there's nobody. I live alone.\"",
-        character: "assets/images/characters/nurse_sad.png",
+        character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_lonely_2"
     },

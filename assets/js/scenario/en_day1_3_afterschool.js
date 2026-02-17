@@ -208,7 +208,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "Yeah, I wanted to go with you too. I'll help.", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "You waited for me? I'm touched. I'm really happy.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "You look much prettier under the sunset.", next: "after_seoyeon_help", stats: { Seoyeon: { affinity: 10 } } }
+            { text: "You look much prettier under the sunset.", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "after_seoyeon_3_low": {
