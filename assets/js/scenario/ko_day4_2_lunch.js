@@ -701,7 +701,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/cafe.png",
         character: null,
-        text: "\"나는 파스타로 할게. 뭐 드실 거예요?\"",
+        text: "\"나는 파스타로 할게. 뭐 먹을래?\"",
         next: "day4_lunch_order_react"
     },
 

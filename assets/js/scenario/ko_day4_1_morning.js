@@ -811,7 +811,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/street.png",
         character: null,
-        text: "(집으로 돌아가는 길. 오늘을 떠올리면 자연스럽게 미소가 지어진다. 월요일이 기대된다.)",
+        text: "(집으로 돌아가는 길. 오늘을 떠올리면 자연스럽게 미소가 지어진다. 내일이 기대된다.)",
         fade: true,
         next: "day4_night_start"
     }

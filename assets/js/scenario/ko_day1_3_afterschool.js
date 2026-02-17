@@ -394,12 +394,12 @@ Object.assign(SCENARIO[1], {
         next: "after_yuna_new_2"
     },
     "after_yuna_new_2": {
-        name: "???",
+        name: "유나",
         text: "\"어? 이 시간에 여기까지 오다니... 너도 참 특이하네. 나는 유나라고 해.\"",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
-        setFlag: "met_yuna",
+        setFlags: ["met_yuna", "knows_name_yuna"],
         next: "after_yuna_3"
     },
     "after_yuna": {
@@ -670,7 +670,7 @@ Object.assign(SCENARIO[1], {
         next: "after_dain_new_intro"
     },
     "after_dain_new_intro": {
-        name: "???",
+        name: "다인",
         text: "\"안녕! 나 배구부 다인이야. 너 오늘 전학 온 애 맞지?\"",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sweat.png",
@@ -983,7 +983,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "좋아! 다인이랑 맛집 탐방 다니면 재밌겠다.", next: "dain_contact_success", setFlags: ["has_number_dain", "has_any_contact"] },
             {
-                text: "번호 따는 김에.. 지금 바로 전화해도 돼?",
+                text: "번호 따는 김에... 지금 바로 전화해도 돼?",
                 next: "dain_contact_call_fail",
                 affinityChar: "Dain",
                 affinityBranches: [

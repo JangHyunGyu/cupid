@@ -210,7 +210,6 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_normal.png",
         text: "\"응, 맞아. {name}(이)야. 아까는 정신이 없어서 제대로 인사를 못 했네. 잘 부탁해, 서연아.\"",
-        setFlag: "knows_name_seoyeon",
         next: "hallway_name_share_2"
     },
     "hallway_name_share_2": {
@@ -410,7 +409,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_trap_normal_2": {
         name: "서연",
-        text: "\"음.. 뭐, 고맙긴 한데... 그런 말은 좀 부담스럽네. 우리 아직 만난 지 얼마 안 됐잖아? 장난이 좀 과한 것 같아.\"",
+        text: "\"음... 뭐, 고맙긴 한데... 그런 말은 좀 부담스럽네. 우리 아직 만난 지 얼마 안 됐잖아? 장난이 좀 과한 것 같아.\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_2"
     },
@@ -576,7 +575,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "학생회에 들어가면 너랑 매일 같이 있을 수 있는 거야? 그럼 무조건 신청할게!", next: "path_flirt_2", stats: { Seoyeon: { affinity: 5 } } },
             { text: "동아리보다는... 서연이 너에 대해 더 알고 싶은데?", next: "path_direct_2", stats: { Seoyeon: { affinity: 6 } } },
-            { text: "아직은 잘 모르겠어. 학교생활에 좀 적응하고 나서 결정할게.", next: "path_normal_2", stats: { Seoyeon: { affinity: -10 } } },
+            { text: "아직은 잘 모르겠어. 학교생활에 좀 적응하고 나서 결정할게.", next: "path_normal_2", stats: { Seoyeon: { affinity: -3 } } },
             { text: "귀찮게 동아리는 무슨... 그냥 혼자 있을래.", next: "path_rude_2", stats: { Seoyeon: { affinity: -40 } } }
         ]
     },

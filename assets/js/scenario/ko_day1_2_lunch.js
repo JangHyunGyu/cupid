@@ -96,14 +96,12 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         text: "(나를 발견하자마자 환하게 웃으며 달려온다. 반가움이 눈에 가득하다.) \"{name}! 한참 찾았잖아. 우리 같이 점심 먹으러 가자. 아주 특별한 곳으로 안내할게!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        setFlag: "met_seoyeon",
         next: "rooftop_1"
     },
     "lunch_seoyeon_low": {
         name: "서연",
         text: "(나를 보더니 살짝 어색한 미소를 짓는다.) \"아, {name}... 마침 잘 됐네. 선생님이 챙겨주라고 하셔서. 괜찮으면 옥상에서 먹을래? 조용하고 좋아.\"",
         character: "assets/images/characters/seyoun_pout.png",
-        setFlag: "met_seoyeon",
         next: "lunch_seoyeon_2_normal"
     },
     "lunch_seoyeon_normal_branch": {
@@ -111,7 +109,6 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/room_school.png",
         text: "(서연에게 다가가자 그녀가 생긋 웃으며 고개를 끄덕인다.)",
         character: "assets/images/characters/seyoun_normal.png",
-        setFlag: "met_seoyeon",
         branches: [
             { next: "lunch_seoyeon_2_study", condition: "personality_study" },
             { next: "lunch_seoyeon_2_party", condition: "personality_active" },
@@ -219,7 +216,7 @@ Object.assign(SCENARIO[1], {
     "rooftop_talk_ah_fail": {
         name: "서연",
         background: "assets/images/background/top_school.png",
-        text: "(서연이의 표정이 순식간에 굳어진다. 당황한 듯 젓가락을 내려놓는다.) \"음.. 그건 좀... {name}, 우리 아직 그 정도로 친한 건 아니잖아. 장난이 과해.\"",
+        text: "(서연이의 표정이 순식간에 굳어진다. 당황한 듯 젓가락을 내려놓는다.) \"음... 그건 좀... {name}, 우리 아직 그 정도로 친한 건 아니잖아. 장난이 과해.\"",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -15 } },
         next: "rooftop_awkward"
@@ -341,7 +338,7 @@ Object.assign(SCENARIO[1], {
         text: "(서연이와 대화를 나누다 보니 분위기가 묘해졌다. 그녀는 내 눈을 빤히 바라보며 살며시 미소 짓고 있다. 그녀가 나에게 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어왔다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
-            { text: "운명 같은 거 아닐까?", next: "rooftop_destiny_high", affinityChar: "Seoyeon" },
+            { text: "운명 같은 거 아닐까?", next: "rooftop_destiny_high" },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_high" },
             { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_high" }
         ]
@@ -351,7 +348,7 @@ Object.assign(SCENARIO[1], {
         text: "(서연이의 표정이 어둡다. 대화가 잘 풀리지 않은 모양이다. 그녀는 조금 혼란스러운 듯 한숨을 내쉬더니, 그래도 나랑 있으면 편하고 좋은데 왜 그런 것 같은지 물어왔다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "운명 같은 거 아닐까?", next: "rooftop_destiny_low", affinityChar: "Seoyeon" },
+            { text: "운명 같은 거 아닐까?", next: "rooftop_destiny_low" },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_low" },
             { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_low" }
         ]
@@ -586,7 +583,7 @@ Object.assign(SCENARIO[1], {
         next: "yuna_intro_name_ask"
     },
     "yuna_intro_name_ask": {
-        name: "???",
+        name: "유나",
         background: "assets/images/background/library_old.png",
         text: "\"난 '유나'라고 해. 너는... 이름이 뭐야?\"",
         character: "assets/images/characters/yuna_normal.png",
