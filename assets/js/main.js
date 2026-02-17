@@ -4051,6 +4051,13 @@ class GameEngine {
 
                 skipBtn.onclick = endCredits;
 
+                // 크레딧 레이어 클릭으로도 스킵 가능 (5초 후)
+                let layerClickable = false;
+                setTimeout(() => { layerClickable = true; }, 5000);
+                creditsLayer.addEventListener('click', (e) => {
+                    if (layerClickable && e.target !== skipBtn) endCredits();
+                });
+
                 // 크레딧 애니메이션 종료 시 자동 전환 (25초)
                 const creditsTimer = setTimeout(endCredits, 26000);
             }
@@ -4090,7 +4097,18 @@ class GameEngine {
             }
 
             // ─────────────────────────────────────────────────────
-            // 🎬 자동 진행 노드 (시네마틱)
+            // � 텍스트 없이 선택지만 있는 씬 → 바로 선택지 표시
+            // ─────────────────────────────────────────────────────
+            // 예: 엔딩 크레딧 후 "처음부터 다시 시작하기" 버튼만 보여야 하는 경우
+            if (!scene.text && scene.choices && scene.choices.length > 0) {
+                const availableChoices = this.getAvailableChoices(scene.choices);
+                if (availableChoices.length > 0) {
+                    this.showChoices(availableChoices);
+                }
+            }
+
+            // ─────────────────────────────────────────────────────
+            // �🎬 자동 진행 노드 (시네마틱)
             // ─────────────────────────────────────────────────────
             // 대사도 없고 선택지도 없는 순수 연출용 씬
             // 배경/캐릭터 변경만 하고 자동으로 다음으로 넘어감
