@@ -187,13 +187,13 @@ Object.assign(SCENARIO[4], {
         name: "나",
         character: "assets/images/characters/yuna_normal.png",
         text: "(지하로 내려가자 공기가 차갑게 바뀌었다. 먼지 냄새와 함께 오래된 서류 냄새가 코끝을 찔렀다.)",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         night: true,
         next: "day4_night_yuna_basement_2"
     },
     "day4_night_yuna_basement_2": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"이 학교 재단… '성진학원'. 겉으로는 교육 명문을 자처하지만, 10년 전부터 조직적으로 비자금을 운영해 왔어.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -201,7 +201,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_basement_3": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "\"…비자금?\"",
         night: true,
@@ -209,7 +209,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_basement_4": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"학생 복지 기금 횡령, 시설 보수비 허위 청구, 기부금 유용… 여기 다 있어.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -217,7 +217,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_documents": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(유나가 선반에서 낡은 서류 파일을 꺼냈다. 빼곡한 숫자들과 도장들. 이건… 진짜 장부다.)",
         night: true,
@@ -225,7 +225,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_documents_2": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"특히 이 건물… 본관 동쪽 계단. 3년 전 보수 공사를 했다고 되어 있는데, 실제로는 한 푼도 쓰지 않았어.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -233,7 +233,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_documents_3": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…그리고 그 계단에서, 1년 전에 사고가 일어났어.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -241,7 +241,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_truth_choice": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
         text: "(유나의 목소리가 떨리고 있다.)",
         night: true,
@@ -264,7 +264,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_yuna_senpai_concern": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"……괜찮냐고 묻는 사람은, 네가 처음이야.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -272,7 +272,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_reveal": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…이준호 선배. 당시 학생회장이었어. 재단 비리를 알게 되고, 증거를 모으고 있었지.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -280,7 +280,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_2": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"선배는… 정의감이 강한 사람이었어. 바보같을 정도로. 누군가 피해를 보고 있으면 절대 그냥 못 넘어가는.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -288,7 +288,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_3": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"그러다 어느 날… 그 동쪽 계단에서 추락했어. 학교는 '실족사'로 처리했고.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -296,7 +296,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_4": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
         text: "\"……실족사? 비리를 조사하던 사람이?\"",
         night: true,
@@ -304,7 +304,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_5": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…보수도 안 한 낡은 계단 난간이 부러졌대. 재단이 공사비를 횡령하지 않았다면 일어나지 않았을 사고야.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -312,7 +312,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_6": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"증거를 들고 교육청에 가려던 전날이었어. 우연인지, 아닌지… 아직도 모르겠어.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -320,7 +320,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_death": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"선배는… 며칠 뒤 병원에서 눈을 감았어. 끝내 깨어나지 못했지.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -328,7 +328,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_silence": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
         text: "(유나의 손이 떨리고 있었다. 서류를 쥔 손가락 끝이 하얗게 질려 있다.)",
         night: true,
@@ -336,7 +336,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_silence_choice": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
         text: "(……)",
         night: true,
@@ -360,7 +360,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_yuna_hand": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…… ッ\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -368,7 +368,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_hand_2": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_shy.png",
         text: "(유나의 손이 차가웠다. 하지만 내 손을 뿌리치지 않았다.)",
         night: true,
@@ -376,7 +376,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_listen": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"……고마워.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -384,7 +384,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…사실, 너한테 말해야 할 게 하나 더 있어.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -392,7 +392,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_2": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"처음 네가 전학 왔을 때… 나 숨이 멎을 뻔했어.\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -400,7 +400,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_3": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_shy.png",
         text: "\"…왜?\"",
         night: true,
@@ -408,7 +408,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_4": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"너… 준호 선배랑 닮았거든. 눈빛이, 분위기가. 불의를 보면 가만히 못 있는 그런 느낌까지.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -416,7 +416,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_5": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…그래서 처음엔 무서웠어. 또 같은 일이 반복될까 봐. 너까지 위험해질까 봐.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -424,7 +424,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_6": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"그런데 동시에… 네가 옆에 있으면, 선배가 못 다 한 일을 끝낼 수 있을 것 같았어.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -432,7 +432,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_7": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(그래서였구나. 유나가 처음부터 나에게 관심을 보인 이유. '특별한 빛'이라고 했던 것도… 선배의 그림자였던 걸까.)",
         night: true,
@@ -440,7 +440,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_critical_choice": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(……뭐라고 해야 하지.)",
         night: true,
@@ -470,7 +470,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_yuna_moved": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…… 알아. 너는 너야. 처음엔 선배의 그림자를 쫓았을지도 몰라. 그런데 지금은……\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -478,7 +478,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_moved_2": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"……지금은 네가 보여. 너만.\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -486,7 +486,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_touched": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"바보… 그런 말 하면 어떡해.\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -494,7 +494,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_touched_2": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"대역 같은 거 아니야. 너는… 이미 너 자신으로 충분해.\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -502,7 +502,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_confronted": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"……\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -510,7 +510,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_confronted_2": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…부정 안 할게. 처음엔 그랬어. 그런데… 함께 시간을 보내면서 바뀌었어. 이건 진심이야.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -518,7 +518,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_confronted_3": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…믿어주지 않아도, 증명해 볼게.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -531,7 +531,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_yuna_resolve": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…이 서류들, 사본을 떠 놨어. 원본은 여기 그대로 두고.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -539,7 +539,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resolve_2": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"선배가 못 다 한 일… 이번엔 끝내고 싶어. 교육청에 제보할 거야.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -547,7 +547,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resolve_3": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(유나의 눈에 결의가 서려 있다. 이건 단순한 호기심이 아니었다. 1년간 혼자 진실을 파헤쳐 온 거다.)",
         night: true,
@@ -555,7 +555,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resolve_4": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"…근데 위험할 수 있어. 재단이 가만히 있진 않을 거야.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -563,7 +563,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resolve_5": {
         name: "나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "\"…같이 하자. 혼자 짊어지지 마.\"",
         night: true,
@@ -571,7 +571,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resolve_end": {
         name: "유나",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"……응.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,

@@ -506,14 +506,14 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_memory_common": {
         name: "나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school.png",
         character: null,
         text: "(이곳에서의 기억이 가슴 깊은 곳에서 올라온다. 처음엔 아무것도 몰랐는데, 하루하루가 쌓여서 지금의 나를 만들었다.)",
         next: "day5_memory_common2"
     },
     "day5_memory_common2": {
         name: "나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school.png",
         character: null,
         text: "(모든 장소에 추억이 있고, 그 추억에는 언제나 이 사람이 있었다. 그게 뭘 의미하는지, 나는 이제 안다.)",
         next: "day5_rooftop_suggest"

@@ -508,14 +508,14 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_memory_common": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school.png",
         character: null,
         text: "(Memories of this place well up from deep within my heart. I knew nothing at first, but each passing day built up to who I am now.)",
         next: "day5_memory_common2"
     },
     "day5_memory_common2": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school.png",
         character: null,
         text: "(Every place holds a memory, and in every memory, this person was always there. I know what that means now.)",
         next: "day5_rooftop_suggest"

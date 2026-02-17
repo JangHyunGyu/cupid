@@ -253,7 +253,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3_high": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(Before I knew it, chatting with Seoyeon has led us to the school tour. Time flies so fast... It's fun being with her.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
@@ -297,7 +297,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3_low": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(Seoyeon's expression doesn't look good. I must have made some mistake during our conversation. She started the school tour with a cold attitude.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
