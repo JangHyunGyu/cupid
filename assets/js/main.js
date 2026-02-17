@@ -2987,7 +2987,19 @@ class SceneRenderer {
             }
         });
 
-        if (changedSlots.length === 0) return;
+        if (changedSlots.length === 0) {
+            // 이미지 변경 없어도 silhouette/thinking 상태는 업데이트
+            Object.entries(this.uiManager.charSlots).forEach(([pos, slot]) => {
+                if (!slot) return;
+                const img = slot.querySelector('img');
+                if (!img) return;
+                if (scene.silhouette) img.classList.add('silhouette');
+                else img.classList.remove('silhouette');
+                if (scene.thinking) img.classList.add('thinking');
+                else img.classList.remove('thinking');
+            });
+            return;
+        }
 
         // 이미지 프리로드
         const charPromises = Object.entries(newCharMap)
@@ -4191,44 +4203,18 @@ class GameEngine {
             }
 
             // ─────────────────────────────────────────────────────
-            // �🎬 자동 진행 노드 (시네마틱)
+            // 🎬 자동 진행 노드 (라우팅/시네마틱)
             // ─────────────────────────────────────────────────────
-            // 대사도 없고 선택지도 없는 순수 연출용 씬
-            // 배경/캐릭터 변경만 하고 자동으로 다음으로 넘어감
+            // 대사도 없고 선택지도 없는 순수 라우팅/연출용 씬
+            // 호감도 분기 등 라우팅 로직만 처리하고 즉시 다음 씬으로 진행
+            // (배경/캐릭터 속성이 있어도 다음 씬에서 덮어쓰므로 클릭 대기 불필요)
             if (!scene.text && (!scene.choices || scene.choices.length === 0)) {
                 const nextId = this.sceneRenderer.resolveNextScene(scene);
 
                 // 무한 루프 방지 (자기 자신으로 돌아가지 않도록)
                 if (nextId && nextId !== sceneId) {
-                    // 배경이나 캐릭터 변경이 있으면 잠깐 보여주고 진행
-                    if (scene.background || scene.character || scene.characters) {
-                        // 대화창 숨기고 다음 표시
-                        this.uiManager.dialogueBox.style.display = 'none';
-                        this.uiManager.showNextIndicator(true);
-
-                        // 🔧 Race condition 방지: 이 시점의 sceneId를 기억
-                        const originalSceneId = sceneId;
-
-                        // 클릭/터치 시 다음 씬으로 진행하는 핸들러
-                        const proceedToNext = () => {
-                            window.removeEventListener('click', proceedToNext);
-                            window.removeEventListener('touchstart', proceedToNext);
-                            // 씬이 이미 바뀌었으면 무시
-                            if (this.sceneRenderer.currentSceneId !== originalSceneId) return;
-                            this.renderScene(nextId);
-                        };
-
-                        // 1.5초 후부터 클릭 대기 (연출을 볼 시간 확보)
-                        setTimeout(() => {
-                            // 🔧 타임아웃 동안 씬이 바뀌었으면 이벤트 등록하지 않음
-                            if (this.sceneRenderer.currentSceneId !== originalSceneId) return;
-                            window.addEventListener('click', proceedToNext);
-                            window.addEventListener('touchstart', proceedToNext);
-                        }, 1500);
-                    } else {
-                        // 연출 없으면 즉시 다음 씬으로
-                        setTimeout(() => this.renderScene(nextId), 0);
-                    }
+                    // 즉시 다음 씬으로 진행
+                    setTimeout(() => this.renderScene(nextId), 0);
                 }
             }
         }
