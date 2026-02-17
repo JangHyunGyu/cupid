@@ -857,6 +857,12 @@
             </div>
         </div>
 
+        <!-- 이미지 확대 모달 -->
+        <div id="image-modal" class="modal-overlay" style="display: none;" onclick="this.style.display='none'">
+            <img id="image-modal-img" src="" alt="확대 이미지"
+                style="max-width: 90%; max-height: 90%; border-radius: 10px; box-shadow: 0 0 30px rgba(0,0,0,0.5);">
+        </div>
+
         <!-- 홈 확인 모달 -->
         <div id="homeConfirmModal" class="modal-overlay" style="display: none;" onclick="closeHomeConfirm(event)">
             <div class="modal-container" onclick="event.stopPropagation()">

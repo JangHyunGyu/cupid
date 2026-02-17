@@ -863,6 +863,12 @@
             </div>
         </div>
 
+        <!-- Image Zoom Modal -->
+        <div id="image-modal" class="modal-overlay" style="display: none;" onclick="this.style.display='none'">
+            <img id="image-modal-img" src="" alt="Zoomed image"
+                style="max-width: 90%; max-height: 90%; border-radius: 10px; box-shadow: 0 0 30px rgba(0,0,0,0.5);">
+        </div>
+
         <!-- Home Confirm Modal -->
         <div id="homeConfirmModal" class="modal-overlay" style="display: none;" onclick="closeHomeConfirm(event)">
             <div class="modal-container" onclick="event.stopPropagation()">
