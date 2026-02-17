@@ -207,7 +207,8 @@ Object.assign(SCENARIO[5], {
     "day5_react_dain": {
         name: "나",
         character: "assets/images/characters/dain_normal.png",
-        text: "(배구공에 맞은 건 아팠지만… 그 덕분에 다인이를 만났다면, 감사해야 하나.)",        next: "day5_dain_d4_check"
+        text: "(배구공에 맞은 건 아팠지만… 그 덕분에 다인이를 만났다면, 감사해야 하나.)",
+        next: "day5_dain_d4_check"
     },
     "day5_dain_d4_check": {
         name: "시스템",
@@ -222,7 +223,8 @@ Object.assign(SCENARIO[5], {
         name: "다인",
         text: "\"…어제 운 거 비밀이야!! 근데… 네 앞에서 울 수 있어서, 다행이었어.\"",
         character: "assets/images/characters/dain_shy.png",
-        stats: { Dain: { affinity: 3 } },        next: "day5_outfit_reaction_check"
+        stats: { Dain: { affinity: 3 } },
+        next: "day5_outfit_reaction_check"
     },
 
     // --- 보건선생님 등장 ---

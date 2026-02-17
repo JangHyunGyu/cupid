@@ -66,7 +66,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_4": {
         name: "나",
-        text: "(기억나. 복도에서 처음 눈이 마주쳤던 그 순간. 시간이 멈춘 것 같았다.)",
+        text: "(기억나. 처음 눈이 마주쳤던 그 순간. 시간이 멈춘 것 같았다.)",
         night: true,
         fade: true,
         next: "day5_ending_true_5"

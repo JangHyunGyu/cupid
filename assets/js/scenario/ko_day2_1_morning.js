@@ -441,7 +441,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success_high", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom" }
+            { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom_from_teacher" }
         ]
     },
     "day2_teacher_contact_ask_low": {
@@ -450,7 +450,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success_low", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom" }
+            { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom_from_teacher" }
         ]
     },
     "day2_teacher_contact_ask": {
@@ -459,7 +459,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/teacher_normal.png",
         choices: [
             { text: "네, 여기 제 번호예요.", next: "day2_teacher_contact_success_normal", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom" }
+            { text: "나중에 교무실 가서 알려드릴게요.", next: "day2_classroom_from_teacher" }
         ]
     },
     "day2_teacher_contact_success_high": {
@@ -467,21 +467,75 @@ Object.assign(SCENARIO[2], {
         text: "\"{name}, 번호 고마워! 후훗, 비상연락망 핑계로 물어보긴 했지만... 실은 나도 너랑 좀 더 친해지고 싶었거든. 학교생활 힘들면 언제든지 이 번호로 연락해?\"",
         character: "assets/images/characters/teacher_smile.png",
         stats: { Teacher: { affinity: 15 } },
-        next: "day2_classroom"
+        next: "day2_classroom_from_teacher"
     },
     "day2_teacher_contact_success_low": {
         name: "담임선생님",
         text: "\"...그래, 고맙다. 연락처는 공적인 용도로만 사용할 테니 걱정하지 마. 수업 늦지 않게 어서 들어가 봐.\"",
         character: "assets/images/characters/teacher_angry.png",
         stats: { Teacher: { affinity: 2 } },
-        next: "day2_classroom"
+        next: "day2_classroom_from_teacher"
     },
     "day2_teacher_contact_success_normal": {
         name: "담임선생님",
         text: "\"고마워. 그럼 무슨 일 있으면 연락할게. 자, 이제 교실로 가자.\"",
         character: "assets/images/characters/teacher_normal.png",
         stats: { Teacher: { affinity: 10 } },
-        next: "day2_classroom"
+        next: "day2_classroom_from_teacher"
+    },
+
+    // =========================================================================
+    // 담임선생님과 함께 교실 입장 (Classroom Arrival - Teacher Route)
+    // =========================================================================
+
+    "day2_classroom_from_teacher": {
+        name: "담임선생님",
+        text: "\"자, 다 왔다. 오늘도 열심히 해보자.\"",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day2_classroom_from_teacher_2"
+    },
+    "day2_classroom_from_teacher_2": {
+        name: "나",
+        text: "(선생님과 나란히 교실에 들어서자 아이들의 시선이 일제히 쏠린다. 선생님과 같이 온 게 꽤 눈에 띄었나 보다.)",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        next: "day2_classroom_greet_teacher"
+    },
+    "day2_classroom_greet_teacher": {
+        name: "반 친구",
+        background: "assets/images/background/room_school.png",
+        text: "\"오, 전학생! 좋은 아침! 헐, 담임 선생님이랑 같이 왔어? 벌써 특별 대우 받는 거야?\"",
+        character: null,
+        next: "day2_classroom_greet_teacher_2"
+    },
+    "day2_classroom_greet_teacher_2": {
+        name: "나",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "(몇몇 아이들이 킥킥대며 장난스러운 눈빛을 보낸다. 다행히 악의는 없어 보인다.)",
+        next: "day2_classroom_settle_teacher"
+    },
+    "day2_classroom_settle_teacher": {
+        name: "반 친구",
+        background: "assets/images/background/room_school.png",
+        text: "(옆자리 친구가 팔꿈치로 슬쩍 찌른다.) \"야, 너 담임 선생님이랑 무슨 사이야? 아침부터 같이 등교라니!\"",
+        character: null,
+        next: "day2_classroom_settle_teacher_2"
+    },
+    "day2_classroom_settle_teacher_2": {
+        name: "나",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"아니야, 교문 앞에서 우연히 마주쳐서 같이 걸어왔을 뿐이야.\"",
+        next: "day2_classroom_settle_teacher_3"
+    },
+    "day2_classroom_settle_teacher_3": {
+        name: "나",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "(적당히 둘러대고 자리에 앉는다. 선생님과 함께 들어왔다는 게 좀 민망하면서도... 나쁘지 않은 기분이다. 가방을 풀고 교과서를 꺼내려는데... 뭔가 이상하다.)",
+        next: "day2_classroom_2"
     },
 
     // =========================================================================
@@ -510,13 +564,82 @@ Object.assign(SCENARIO[2], {
         next: "day2_classroom_settle"
     },
     "day2_classroom_settle": {
+        name: "시스템",
+        background: "assets/images/background/room_school.png",
+        text: "",
+        branches: [
+            { next: "day2_classroom_settle_seoyeon", character: "Seoyeon", condition: "met_seoyeon" },
+            { next: "day2_classroom_settle_dain", character: "Dain", condition: "met_dain" },
+            { next: "day2_classroom_settle_nurse", character: "Nurse", condition: "met_nurse" },
+            { next: "day2_classroom_settle_yuna", character: "Yuna", condition: "met_yuna" },
+            { next: "day2_classroom_settle_default" }
+        ],
+        selectByHighestAffinity: true
+    },
+    "day2_classroom_settle_seoyeon": {
         name: "반 친구",
         background: "assets/images/background/room_school.png",
-        text: "(앞자리 여학생이 돌아보며 말한다.) \"어제 여기저기 돌아다니는 거 봤는데, 벌써 학교 적응 다 한 거야?\"",
+        text: "(앞자리 여학생이 돌아보며 말한다.) \"아까 서연이랑 같이 오는 거 봤어! 벌써 둘이 되게 친해진 거야?\"",
         character: null,
-        next: "day2_classroom_settle_2"
+        next: "day2_classroom_settle_2_seoyeon"
     },
-    "day2_classroom_settle_2": {
+    "day2_classroom_settle_2_seoyeon": {
+        name: "나",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"아, 하하... 서연이가 많이 챙겨줘서 금방 적응했어.\"",
+        next: "day2_classroom_settle_3"
+    },
+    "day2_classroom_settle_dain": {
+        name: "반 친구",
+        background: "assets/images/background/room_school.png",
+        text: "(앞자리 여학생이 돌아보며 말한다.) \"아까 다인이랑 같이 들어오더라? 너네 벌써 절친이야?\"",
+        character: null,
+        next: "day2_classroom_settle_2_dain"
+    },
+    "day2_classroom_settle_2_dain": {
+        name: "나",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"아, 하하... 다인이가 워낙 활발해서 어느새 친해졌어.\"",
+        next: "day2_classroom_settle_3"
+    },
+    "day2_classroom_settle_nurse": {
+        name: "반 친구",
+        background: "assets/images/background/room_school.png",
+        text: "(앞자리 여학생이 돌아보며 말한다.) \"아까 보건 선생님이랑 이야기하고 있었지? 어디 아픈 거야?\"",
+        character: null,
+        next: "day2_classroom_settle_2_nurse"
+    },
+    "day2_classroom_settle_2_nurse": {
+        name: "나",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"아니, 아프진 않아. 선생님이 잘 적응하고 있는지 확인해주신 거야.\"",
+        next: "day2_classroom_settle_3"
+    },
+    "day2_classroom_settle_yuna": {
+        name: "반 친구",
+        background: "assets/images/background/room_school.png",
+        text: "(앞자리 여학생이 돌아보며 말한다.) \"아까 교문 앞에서 누구랑 이야기하는 거 봤는데... 혹시 아는 사이야?\"",
+        character: null,
+        next: "day2_classroom_settle_2_yuna"
+    },
+    "day2_classroom_settle_2_yuna": {
+        name: "나",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"아... 그냥 같은 학교 학생이야. 아직 잘은 모르지만.\"",
+        next: "day2_classroom_settle_3"
+    },
+    "day2_classroom_settle_default": {
+        name: "반 친구",
+        background: "assets/images/background/room_school.png",
+        text: "(앞자리 여학생이 돌아보며 말한다.) \"전학 이틀째인데 벌써 적응한 거야? 대단하다!\"",
+        character: null,
+        next: "day2_classroom_settle_2_default"
+    },
+    "day2_classroom_settle_2_default": {
         name: "나",
         background: "assets/images/background/room_school.png",
         character: null,

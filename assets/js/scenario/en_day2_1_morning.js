@@ -441,7 +441,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success_high", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "I'll stop by the teacher's office later to give it to you.", next: "day2_classroom" }
+            { text: "I'll stop by the teacher's office later to give it to you.", next: "day2_classroom_from_teacher" }
         ]
     },
     "day2_teacher_contact_ask_low": {
@@ -450,7 +450,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success_low", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "I'll stop by the teacher's office later to give it to you.", next: "day2_classroom" }
+            { text: "I'll stop by the teacher's office later to give it to you.", next: "day2_classroom_from_teacher" }
         ]
     },
     "day2_teacher_contact_ask": {
@@ -459,7 +459,7 @@ Object.assign(SCENARIO[2], {
         character: "assets/images/characters/teacher_normal.png",
         choices: [
             { text: "Sure, here's my number.", next: "day2_teacher_contact_success_normal", setFlags: ["has_number_teacher", "has_any_contact"] },
-            { text: "I'll stop by the teacher's office later to give it to you.", next: "day2_classroom" }
+            { text: "I'll stop by the teacher's office later to give it to you.", next: "day2_classroom_from_teacher" }
         ]
     },
     "day2_teacher_contact_success_high": {
@@ -467,25 +467,79 @@ Object.assign(SCENARIO[2], {
         text: "\"{name}, thanks for the number! Hehe, I used the emergency contact list as an excuse, but... truth is, I wanted to get closer to you too. If school life gets tough, don't hesitate to call me anytime, okay?\"",
         character: "assets/images/characters/teacher_smile.png",
         stats: { Teacher: { affinity: 15 } },
-        next: "day2_classroom"
+        next: "day2_classroom_from_teacher"
     },
     "day2_teacher_contact_success_low": {
         name: "Homeroom Teacher",
         text: "\"...Alright, thank you. I'll only use your contact info for official purposes, so don't worry. Now hurry up and get to class before you're late.\"",
         character: "assets/images/characters/teacher_angry.png",
         stats: { Teacher: { affinity: 2 } },
-        next: "day2_classroom"
+        next: "day2_classroom_from_teacher"
     },
     "day2_teacher_contact_success_normal": {
         name: "Homeroom Teacher",
         text: "\"Thank you. I'll reach out if anything comes up. Now, let's head to class.\"",
         character: "assets/images/characters/teacher_normal.png",
         stats: { Teacher: { affinity: 10 } },
-        next: "day2_classroom"
+        next: "day2_classroom_from_teacher"
     },
 
     // =========================================================================
-    // 교실 입장 & 반 친구들 (Classroom Arrival)
+    // Classroom Arrival - Teacher Route
+    // =========================================================================
+
+    "day2_classroom_from_teacher": {
+        name: "Homeroom Teacher",
+        text: "\"Alright, we're here. Let's have another great day.\"",
+        background: "assets/images/background/room_school.png",
+        character: "assets/images/characters/teacher_smile.png",
+        next: "day2_classroom_from_teacher_2"
+    },
+    "day2_classroom_from_teacher_2": {
+        name: "Me",
+        text: "(Walking into the classroom alongside the teacher, all eyes turn to us. Walking in with the homeroom teacher definitely drew some attention.)",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        next: "day2_classroom_greet_teacher"
+    },
+    "day2_classroom_greet_teacher": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "\"Hey, transfer student! Good morning! Whoa, you came with the homeroom teacher? Getting special treatment already?\"",
+        character: null,
+        next: "day2_classroom_greet_teacher_2"
+    },
+    "day2_classroom_greet_teacher_2": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "(A few students snicker with playful looks. At least there's no malice behind it.)",
+        next: "day2_classroom_settle_teacher"
+    },
+    "day2_classroom_settle_teacher": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "(The student next to me nudges my elbow.) \"Dude, what's the deal with you and the homeroom teacher? Walking to school together first thing in the morning!\"",
+        character: null,
+        next: "day2_classroom_settle_teacher_2"
+    },
+    "day2_classroom_settle_teacher_2": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"It's nothing, we just happened to run into each other at the school gate and walked in together.\"",
+        next: "day2_classroom_settle_teacher_3"
+    },
+    "day2_classroom_settle_teacher_3": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "(I brush it off and take my seat. Walking in with the teacher was a bit embarrassing, but... it didn't feel bad. I start unpacking my bag to get my textbooks out when... something seems off.)",
+        next: "day2_classroom_2"
+    },
+
+    // =========================================================================
+    // Classroom Arrival (General Routes)
     // =========================================================================
 
     "day2_classroom": {
@@ -510,17 +564,86 @@ Object.assign(SCENARIO[2], {
         next: "day2_classroom_settle"
     },
     "day2_classroom_settle": {
+        name: "System",
+        background: "assets/images/background/room_school.png",
+        text: "",
+        branches: [
+            { next: "day2_classroom_settle_seoyeon", character: "Seoyeon", condition: "met_seoyeon" },
+            { next: "day2_classroom_settle_dain", character: "Dain", condition: "met_dain" },
+            { next: "day2_classroom_settle_nurse", character: "Nurse", condition: "met_nurse" },
+            { next: "day2_classroom_settle_yuna", character: "Yuna", condition: "met_yuna" },
+            { next: "day2_classroom_settle_default" }
+        ],
+        selectByHighestAffinity: true
+    },
+    "day2_classroom_settle_seoyeon": {
         name: "Classmate",
         background: "assets/images/background/room_school.png",
-        text: "(The girl in the front row turns around and says,) \"I saw you hanging out with Seoyeon yesterday. You two seem close! Already made a friend, huh?\"",
+        text: "(The girl in the front row turns around and says,) \"I saw you coming in with Seoyeon earlier! Are you two already that close?\"",
         character: null,
-        next: "day2_classroom_settle_2"
+        next: "day2_classroom_settle_2_seoyeon"
     },
-    "day2_classroom_settle_2": {
+    "day2_classroom_settle_2_seoyeon": {
         name: "Me",
         background: "assets/images/background/room_school.png",
         character: null,
-        text: "\"Oh, haha... Everyone's been so nice to me.\"",
+        text: "\"Oh, haha... Seoyeon's been really looking out for me, so I settled in pretty quickly.\"",
+        next: "day2_classroom_settle_3"
+    },
+    "day2_classroom_settle_dain": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "(The girl in the front row turns around and says,) \"I saw you walking in with Dain earlier! Are you two already best friends?\"",
+        character: null,
+        next: "day2_classroom_settle_2_dain"
+    },
+    "day2_classroom_settle_2_dain": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"Oh, haha... Dain's so energetic, we just naturally hit it off.\"",
+        next: "day2_classroom_settle_3"
+    },
+    "day2_classroom_settle_nurse": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "(The girl in the front row turns around and says,) \"I saw you talking with the school nurse earlier. Are you feeling sick or something?\"",
+        character: null,
+        next: "day2_classroom_settle_2_nurse"
+    },
+    "day2_classroom_settle_2_nurse": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"No, I'm fine. She was just checking if I'm settling in okay.\"",
+        next: "day2_classroom_settle_3"
+    },
+    "day2_classroom_settle_yuna": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "(The girl in the front row turns around and says,) \"I saw you talking to some girl at the gate earlier... Do you know her?\"",
+        character: null,
+        next: "day2_classroom_settle_2_yuna"
+    },
+    "day2_classroom_settle_2_yuna": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"Oh... she's just another student here. I don't really know her well yet.\"",
+        next: "day2_classroom_settle_3"
+    },
+    "day2_classroom_settle_default": {
+        name: "Classmate",
+        background: "assets/images/background/room_school.png",
+        text: "(The girl in the front row turns around and says,) \"Only your second day and you've already settled in? That's impressive!\"",
+        character: null,
+        next: "day2_classroom_settle_2_default"
+    },
+    "day2_classroom_settle_2_default": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"Oh, haha... Everyone's been so nice, it was easy to adjust.\"",
         next: "day2_classroom_settle_3"
     },
     "day2_classroom_settle_3": {
