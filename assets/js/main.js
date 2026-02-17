@@ -4029,19 +4029,19 @@ class GameEngine {
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
                             <div class="credits-role">${isEn ? 'Planning · Scenario' : '기획 · 시나리오'}</div>
-                            <div class="credits-name">장현규 · 김유진 · 이상훈</div>
+                            <div class="credits-name">${isEn ? 'Hyungyu Jang · Yujin Kim · Sanghun Lee' : '장현규 · 김유진 · 이상훈'}</div>
                         </div>
                         <div class="credits-section">
                             <div class="credits-role">${isEn ? 'Programming · Direction' : '프로그래밍 · 연출'}</div>
-                            <div class="credits-name">장현규 · 김유진</div>
+                            <div class="credits-name">${isEn ? 'Hyungyu Jang · Yujin Kim' : '장현규 · 김유진'}</div>
                         </div>
                         <div class="credits-section">
                             <div class="credits-role">${isEn ? 'Art · Design' : '아트 · 디자인'}</div>
-                            <div class="credits-name">장현규 · 김유진</div>
+                            <div class="credits-name">${isEn ? 'Hyungyu Jang · Yujin Kim' : '장현규 · 김유진'}</div>
                         </div>
                         <div class="credits-section">
                             <div class="credits-role">${isEn ? 'Music · Sound' : '음악 · 사운드'}</div>
-                            <div class="credits-name">장현규</div>
+                            <div class="credits-name">${isEn ? 'Hyungyu Jang' : '장현규'}</div>
                         </div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
@@ -4052,7 +4052,7 @@ class GameEngine {
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
                             <div class="credits-role">${isEn ? 'Production' : '제작'}</div>
-                            <div class="credits-name">장현규 · 김유진</div>
+                            <div class="credits-name">${isEn ? 'Hyungyu Jang · Yujin Kim' : '장현규 · 김유진'}</div>
                         </div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
