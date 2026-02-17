@@ -695,7 +695,12 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(…꿈을 꾼다. 어두운 공간에서 목소리가 들린다.)",
         night: true,
-        next: "day3_night_nightmare_voice1"
+        branches: [
+            { next: "day3_night_nightmare_voice1", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day3_night_nightmare_voice2", condition: "day3_yuna_date_confirmed" },
+            { next: "day3_night_nightmare_voice3", condition: "day3_dain_date_confirmed" },
+            { next: "day3_night_nightmare_choice" }
+        ]
     },
     "day3_night_nightmare_voice1": {
         name: "???",
@@ -703,7 +708,11 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/seyoun_sad.png",
         silhouette: true,
         night: true,
-        next: "day3_night_nightmare_voice2"
+        branches: [
+            { next: "day3_night_nightmare_voice2", condition: "day3_yuna_date_confirmed" },
+            { next: "day3_night_nightmare_voice3", condition: "day3_dain_date_confirmed" },
+            { next: "day3_night_nightmare_choice" }
+        ]
     },
     "day3_night_nightmare_voice2": {
         name: "???",
@@ -711,7 +720,10 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
-        next: "day3_night_nightmare_voice3"
+        branches: [
+            { next: "day3_night_nightmare_voice3", condition: "day3_dain_date_confirmed" },
+            { next: "day3_night_nightmare_choice" }
+        ]
     },
     "day3_night_nightmare_voice3": {
         name: "???",

@@ -497,7 +497,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "Seoyeon",
         background: "assets/images/background/top_school.png",
-        text: "(Seoyeon pauses while packing her bag, then hesitantly holds out her smartphone.)",
+        text: "(Seoyeon pauses while packing her bag, then hesitantly looks at me.)",
         context: "After sharing lunch on the rooftop together, Seoyeon is about to suggest exchanging contact info. She's a little shy but expectant. It's a casual conversation that naturally leads to exchanging numbers.",
         personality: "A kind, caring, and responsible student council president. She has a crush on the transfer student protagonist and wants to exchange numbers, but is too shy to ask directly.",
         character: "assets/images/characters/seyoun_normal.png",
@@ -835,7 +835,7 @@ Object.assign(SCENARIO[1], {
     "lunch_dain": {
         name: "Me",
         text: "(I hear the sound of volleyballs bouncing from the gym. I followed the sound and headed to the gym.)",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         next: "lunch_dain_2"
     },
     "lunch_dain_2": {

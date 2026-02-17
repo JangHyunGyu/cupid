@@ -62,7 +62,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_school_arrive": {
         name: "Me",
-        text: "(I arrived at the school gate. It's Sunday, so the gate is open, but there's nobody around.)",
+        text: "(I walk through the school gate. The school is quiet on a Sunday.)",
         background: "assets/images/background/school.png",
         bgm: "date.mp3",
         next: "day5_school_arrive2"
@@ -70,7 +70,7 @@ Object.assign(SCENARIO[5], {
     "day5_school_arrive2": {
         name: "Me",
         background: "assets/images/background/school.png",
-        text: "(This gate... This is where I first looked up at this school on my first day as a transfer student. Everything felt so unfamiliar back then.)",
+        text: "(This week went by so fast. I can't believe it's already the last day... The trees in the schoolyard sway gently in the breeze.)",
         next: "day5_school_arrive3"
     },
     "day5_school_arrive3": {
@@ -283,7 +283,6 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         text: "(They look me up and down, eyes widening. \"Why do you look so nice today?\" The small compliment makes my heart flutter.)",
         background: "assets/images/background/school.png",
-        stats: { Seoyeon: { affinity: 2 }, Yuna: { affinity: 2 }, Dain: { affinity: 2 }, Nurse: { affinity: 2 }, Teacher: { affinity: 2 } },
         next: "day5_walk_together"
     },
 
@@ -509,14 +508,14 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_memory_common": {
         name: "Me",
-        background: "assets/images/background/park.png",
+        background: "assets/images/background/load_school.png",
         character: null,
         text: "(Memories of this place well up from deep within my heart. I knew nothing at first, but each passing day built up to who I am now.)",
         next: "day5_memory_common2"
     },
     "day5_memory_common2": {
         name: "Me",
-        background: "assets/images/background/park.png",
+        background: "assets/images/background/load_school.png",
         character: null,
         text: "(Every place holds a memory, and in every memory, this person was always there. I know what that means now.)",
         next: "day5_rooftop_suggest"
@@ -527,21 +526,21 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_rooftop_suggest": {
         name: "Me",
-        background: "assets/images/background/park.png",
+        background: "assets/images/background/room_school.png",
         character: null,
         text: "\"Hey... want to go up to the rooftop? The weather's nice today, and the view from up there should be great.\"",
         next: "day5_rooftop_stairs1"
     },
     "day5_rooftop_stairs1": {
         name: "Me",
-        background: "assets/images/background/park.png",
+        background: "assets/images/background/room_school.png",
         character: null,
         text: "(We climb the stairs. Two sets of footsteps echo through the empty stairwell. One floor, two floors.)",
         next: "day5_rooftop_stairs2"
     },
     "day5_rooftop_stairs2": {
         name: "Me",
-        background: "assets/images/background/park.png",
+        background: "assets/images/background/room_school.png",
         character: null,
         text: "(We reached the top of the last staircase and stood before the rooftop door. A breeze slips through the gap in the door.)",
         next: "day5_rooftop_door"

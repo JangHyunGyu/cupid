@@ -62,7 +62,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_school_arrive": {
         name: "나",
-        text: "(학교 정문에 도착했다. 일요일이라 교문은 열려 있지만, 주변엔 아무도 없다.)",
+        text: "(교문으로 들어선다. 일요일 학교는 조용하다.)",
         background: "assets/images/background/school.png",
         bgm: "date.mp3",
         next: "day5_school_arrive2"
@@ -70,7 +70,7 @@ Object.assign(SCENARIO[5], {
     "day5_school_arrive2": {
         name: "나",
         background: "assets/images/background/school.png",
-        text: "(이 정문… 전학 온 첫날, 처음으로 이 학교를 올려다본 곳이다. 그때는 모든 게 낯설었는데.)",
+        text: "(이번 주가 정말 빨리 지나갔다. 벌써 마지막 날이라니... 교정의 나무들이 바람에 살랑인다.)",
         next: "day5_school_arrive3"
     },
     "day5_school_arrive3": {
@@ -281,7 +281,6 @@ Object.assign(SCENARIO[5], {
         name: "나",
         text: "(상대가 내 옷차림을 보더니 눈을 동그랗게 떴다. \"오늘 왜 이렇게 멋져?\" 라는 말에 괜히 뿌듯해진다.)",
         background: "assets/images/background/school.png",
-        stats: { Seoyeon: { affinity: 2 }, Yuna: { affinity: 2 }, Dain: { affinity: 2 }, Nurse: { affinity: 2 }, Teacher: { affinity: 2 } },
         next: "day5_walk_together"
     },
 
@@ -507,14 +506,14 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_memory_common": {
         name: "나",
-        background: "assets/images/background/park.png",
+        background: "assets/images/background/load_school.png",
         character: null,
         text: "(이곳에서의 기억이 가슴 깊은 곳에서 올라온다. 처음엔 아무것도 몰랐는데, 하루하루가 쌓여서 지금의 나를 만들었다.)",
         next: "day5_memory_common2"
     },
     "day5_memory_common2": {
         name: "나",
-        background: "assets/images/background/park.png",
+        background: "assets/images/background/load_school.png",
         character: null,
         text: "(모든 장소에 추억이 있고, 그 추억에는 언제나 이 사람이 있었다. 그게 뭘 의미하는지, 나는 이제 안다.)",
         next: "day5_rooftop_suggest"
@@ -525,21 +524,21 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_rooftop_suggest": {
         name: "나",
-        background: "assets/images/background/park.png",
+        background: "assets/images/background/room_school.png",
         character: null,
         text: "\"저기… 옥상 한번 가볼래? 오늘 날씨도 좋고, 위에서 보면 경치가 좋을 것 같아.\"",
         next: "day5_rooftop_stairs1"
     },
     "day5_rooftop_stairs1": {
         name: "나",
-        background: "assets/images/background/park.png",
+        background: "assets/images/background/room_school.png",
         character: null,
         text: "(계단을 올라간다. 발소리 두 개가 텅 빈 계단통에 울려 퍼진다. 한 층, 두 층.)",
         next: "day5_rooftop_stairs2"
     },
     "day5_rooftop_stairs2": {
         name: "나",
-        background: "assets/images/background/park.png",
+        background: "assets/images/background/room_school.png",
         character: null,
         text: "(마지막 계단을 올라 옥상 문 앞에 섰다. 문 틈 사이로 바람이 새어 들어온다.)",
         next: "day5_rooftop_door"
