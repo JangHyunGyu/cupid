@@ -227,6 +227,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_seoyeon_msg",
         choices: [
             { text: "'맡길게! 잘 자!'", next: "day3_night_seoyeon_good", stats: { Seoyeon: { affinity: 3 } } },
             { text: "'고마워, 내일 봐!'", next: "day3_night_seoyeon_good", stats: { Seoyeon: { affinity: 2 } } }
@@ -333,6 +334,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_yuna_msg",
         choices: [
             { text: "'응, 잘 자'", next: "day3_night_yuna_sleep", stats: { Yuna: { affinity: 3 } } },
             { text: "'무슨 꿈?'", next: "day3_night_yuna_dream", stats: { Yuna: { affinity: 5 } } }
@@ -412,6 +414,7 @@ Object.assign(SCENARIO[3], {
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
         night: true,
+        setFlag: "checked_dain_msg",
         choices: [
             { text: "'좋아! 기대할게!'", next: "day3_night_dain_good", stats: { Dain: { affinity: 5 } } },
             { text: "'ㅋㅋ 알았어!'", next: "day3_night_dain_good", stats: { Dain: { affinity: 3 } } }
@@ -755,7 +758,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_nightmare_wake": {
         name: "나",
         character: null,
-        text: "(…땀으로. 심장이 미친 듯이 뛴다. 꿈이었다. 하지만… 내일은 어떻게 될까?)",
+        text: "(…온몸이 땀에 젖어 있다. 심장이 미친 듯이 뛴다. 꿈이었다. 하지만… 내일은 어떻게 될까?)",
         night: true,
         fade: true,
         next: "day3_final_scene"

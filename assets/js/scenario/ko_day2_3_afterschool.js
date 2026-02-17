@@ -260,7 +260,6 @@ Object.assign(SCENARIO[2], {
             right: "assets/images/characters/dain_laugh.png"
         },
         sunset: true,
-        setFlag: "knows_name_dain",
         next: "day2_seoyeon_dain_react"
     },
     "day2_seoyeon_dain_react": {
@@ -271,6 +270,7 @@ Object.assign(SCENARIO[2], {
             right: "assets/images/characters/dain_laugh.png"
         },
         sunset: true,
+        setFlag: "knows_name_dain",
         next: "day2_seoyeon_dain_choice"
     },
     "day2_seoyeon_dain_choice": {
@@ -510,7 +510,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_scary_high": {
         name: "유나",
-        text: "(유나가 내 손을 꼭 잡으며 살며시 미소 짓는다.) \"...네 손, 따뜻해. 오랜만에 이런 온기를 느껴봐. 좋아, 나가자. 하지만... 손은 놓지 마.\"",
+        text: "(유나가 내 손을 꼭 잡으며 살며시 미소 짓는다.) \"...네 손, 따뜻해. 오랜만에 이런 온기를 느껴보네. 좋아, 나가자. 하지만... 손은 놓지 마.\"",
         character: "assets/images/characters/yuna_shy.png",
         sunset: true,
         stats: { Yuna: { affinity: 5 } },
@@ -568,13 +568,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_nurse_new": {
         name: "???",
-        text: "\"어머? 학생들이 이 시간에 여긴 웬일이야? 여기는 오래된 창고라 위험한데...\"",
+        text: "\"어머? 학생들이 이 시간에 여긴 웬일이야? 여기는 오래된 창고라 위험한데... 아, 난 보건선생님이야.\"",
         characters: {
             left: "assets/images/characters/yuna_normal.png",
             right: "assets/images/characters/nurse_normal.png"
         },
         sunset: true,
-        setFlag: "met_nurse",
+        setFlags: ["met_nurse", "knows_name_nurse"],
         next: "day2_yuna_nurse_react"
     },
     "day2_yuna_nurse_react": {
@@ -882,7 +882,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met_low": {
         name: "보건선생님",
-        text: "(선생님이 날 보며 잘 모르겠다는 듯 말한다.) \"...{name}, 맞지? 어디 아픈 거야?\"",
+        text: "(선생님이 날 보며 무심하게 말한다.) \"...{name}, 또 왔어? 오늘은 무슨 일이야?\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         branches: [

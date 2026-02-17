@@ -382,6 +382,15 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_yuna_others_react"
     },
     "day3_lunch_yuna_others_react": {
+        name: "나",
+        text: "(유나와 함께 가기로 했다.)",
+        character: null,
+        branches: [
+            { next: "day3_lunch_yuna_seoyeon_jealous", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day3_lunch_with_yuna_start" }
+        ]
+    },
+    "day3_lunch_yuna_seoyeon_jealous": {
         name: "서연",
         text: "\"...그래? 알았어.\"",
         character: "assets/images/characters/seyoun_sad.png",
@@ -572,6 +581,15 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_dain_others_react"
     },
     "day3_lunch_dain_others_react": {
+        name: "나",
+        text: "(다인이와 함께 가기로 했다.)",
+        character: null,
+        branches: [
+            { next: "day3_lunch_dain_seoyeon_jealous", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day3_lunch_with_dain_start" }
+        ]
+    },
+    "day3_lunch_dain_seoyeon_jealous": {
         name: "서연",
         text: "\"...알았어. 나중에 봐.\"",
         character: "assets/images/characters/seyoun_sad.png",

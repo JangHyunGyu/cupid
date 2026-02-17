@@ -184,6 +184,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_seoyeon": {
         name: "서연",
         text: "\"저기 봐, 꽃집이다! 잠깐 들어가 보자!\"",
+        background: "assets/images/background/store.png",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day4_special_seoyeon_react"
     },
@@ -191,6 +192,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_seoyeon_react": {
         name: "나",
         text: "(서연이가 꽃들 사이에서 환하게 웃으며 작은 꽃 한 송이를 골라 내 앞에 내밀었다. \"이거, 너 줄게. 꽃말이… 비밀이야.\")",
+        background: "assets/images/background/store.png",
         character: "assets/images/characters/seyoun_shy.png",
         choices: [
             {
@@ -238,6 +240,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_dain": {
         name: "다인",
         text: "\"오! 스포츠용품점이다!! 잠깐만, 나 봐야 할 거 있어!\"",
+        background: "assets/images/background/store.png",
         character: "assets/images/characters/dain_laugh.png",
         next: "day4_special_dain_react"
     },
@@ -245,6 +248,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_dain_react": {
         name: "나",
         text: "(다인이가 커플 손목밴드를 들고 신나게 뛰어왔다. \"이거 봐, 커플 밴드! 우리 하나씩 하자!\" 얼굴이 살짝 붉어져 있다.)",
+        background: "assets/images/background/store.png",
         character: "assets/images/characters/dain_shy.png",
         choices: [
             {
@@ -264,6 +268,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_nurse": {
         name: "보건선생님",
         text: "\"어머, 저기 앤티크 숍이네. 같이 구경해 볼까?\"",
+        background: "assets/images/background/store.png",
         character: "assets/images/characters/nurse_normal.png",
         next: "day4_special_nurse_react"
     },
@@ -271,6 +276,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_nurse_react": {
         name: "나",
         text: "(선생님이 빈티지 브로치를 들어 햇빛에 비춰보며 미소 지었다. \"이거 예쁘지 않아? 왠지… 오래 간직하고 싶은 느낌.\")",
+        background: "assets/images/background/store.png",
         character: "assets/images/characters/nurse_shy.png",
         choices: [
             {
@@ -290,6 +296,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_teacher": {
         name: "담임선생님",
         text: "\"잠깐, 저기 문구점 좀 들러도 될까? 펜이 하나 필요한데.\"",
+        background: "assets/images/background/store.png",
         character: "assets/images/characters/teacher_normal.png",
         next: "day4_special_teacher_react"
     },
@@ -297,6 +304,7 @@ Object.assign(SCENARIO[4], {
     "day4_special_teacher_react": {
         name: "나",
         text: "(선생님이 펜을 고르더니 잠시 멈칫하며 하나를 더 집었다. \"…이건 네 거. 수업 시간에 열심히 필기해. …선물이야.\" 고개를 돌렸지만 귀끝이 붉었다.)",
+        background: "assets/images/background/store.png",
         character: "assets/images/characters/teacher_shy.png",
         choices: [
             {

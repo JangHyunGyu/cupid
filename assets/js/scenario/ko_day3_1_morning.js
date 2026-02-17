@@ -175,7 +175,7 @@ Object.assign(SCENARIO[3], {
         text: "\"...산책? 이 시간에? 글쎄...\"",
         character: "assets/images/characters/seyoun_normal.png",
         setFlag: "day3_seoyeon_suspicious",
-        stats: { Seoyeon: { affinity: -11 } },
+        stats: { Seoyeon: { affinity: -10 } },
         next: "day3_nurse_home_yuna_appears"
     },
     "day3_nurse_home_half_lie": {
@@ -496,7 +496,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_msg_nurse_after_reject": {
         name: "보건선생님",
-        text: "(어젯밤 11시에 온 메시지) '후훗, {name}야. 오늘 아침에 같이 등교할까? 선생님이랑 단둘이... 😉'",
+        text: "(어젯밤 11시에 온 메시지) '후훗, {name}. 오늘 아침에 같이 등교할까? 선생님이랑 단둘이... 😉'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         choices: [

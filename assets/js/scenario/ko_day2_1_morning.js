@@ -167,7 +167,7 @@ Object.assign(SCENARIO[2], {
     "day2_school_gate_2": {
         name: "나",
         background: "assets/images/background/school.png",
-        text: "(교문을 통과하려는데, 문득 익숙한 기운이 느껴진다.)",
+        text: "(학교 정문 앞에서 익숙한 얼굴이 눈에 띈다.)",
         choices: [
             { text: "주위를 둘러본다.", next: "day2_meet_someone" }
         ]
@@ -677,14 +677,14 @@ Object.assign(SCENARIO[2], {
     "day2_note_content": {
         name: "시스템",
         background: "assets/images/background/room_school.png",
-        text: "\"'점심시간에 도서관 별관 뒤뜰로 와. 할 말이 있어.' - 유나\"",
+        text: "\"'점심시간에 도서관 별관으로 와. 할 말이 있어.' - 유나\"",
         next: "day2_note_reaction"
     },
     "day2_note_reaction": {
         name: "나",
         background: "assets/images/background/room_school.png",
         character: null,
-        text: "(유나...? 쪽지를 다시 한 번 읽어본다. '도서관 별관 뒤뜰'이라... 학교 구석진 곳이잖아. 이런 방식으로 호출한다니, 뭔가 비밀스러운 느낌이 든다.)",
+        text: "(유나...? 쪽지를 다시 한 번 읽어본다. '도서관 별관'이라... 학교 구석진 곳이잖아. 이런 방식으로 호출한다니, 뭔가 비밀스러운 느낌이 든다.)",
         next: "day2_note_speculation"
     },
     "day2_note_speculation": {
@@ -937,7 +937,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_class_end_bell": {
         name: "시스템",
-        text: "- 띵동 댕동 -",
+        text: "- 딩동댕동 -",
         next: "day2_class_end"
     },
     "day2_class_end": {
@@ -947,7 +947,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_packing_up": {
         name: "나",
-        text: "(나도 서둘러 교과서를 가방에 넣는다. 주머니 속 쪽지를 한 번 더 확인한다. '도서관 별관 뒤뜰'... 좋아, 가보자.)",
+        text: "(나도 서둘러 교과서를 가방에 넣는다. 주머니 속 쪽지를 한 번 더 확인한다. '도서관 별관'... 좋아, 가보자.)",
         next: "day2_lunch_decision"
     },
     "day2_lunch_decision": {

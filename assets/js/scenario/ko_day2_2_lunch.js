@@ -291,7 +291,7 @@ Object.assign(SCENARIO[2], {
         name: "유나",
         background: "assets/images/background/library_old.png",
         text: "\"...나한테 궁금한 거라도 있어? 아니면 이 학교에 대해 더 알고 싶은 거야?\"",
-        context: "조용한 도서관 별관 뒤뜰, 신비로운 분위기의 유나와 단둘이 대화를 나누는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 유나가 학교의 비밀에 대해 이야기하며 주인공에게만 보여주고 싶은 것이 있다고 제안하는 상황으로 이어집니다. 대화의 마지막 턴에만 비밀스러운 분위기를 조성하며 주인공의 호기심을 자극해 주세요.",
+        context: "조용한 도서관 별관, 신비로운 분위기의 유나와 단둘이 대화를 나누는 상황입니다. 대화가 완전히 마무리되기 전까지는 대화를 계속 이어나가세요. 대화가 끝나면 유나가 학교의 비밀에 대해 이야기하며 주인공에게만 보여주고 싶은 것이 있다고 제안하는 상황으로 이어집니다. 대화의 마지막 턴에만 비밀스러운 분위기를 조성하며 주인공의 호기심을 자극해 주세요.",
         personality: "신비롭고 차가우며 비밀이 많은 소녀. 주인공에게 묘한 흥미를 느끼고 있음.",
         character: "assets/images/characters/yuna_normal.png",
         affinityChar: "Yuna",
@@ -942,7 +942,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_met_low": {
         name: "보건선생님",
-        text: "(선생님이 날 보더니 잘 모르겠다는 듯 고개를 기울인다.) \"어... {name}, 맞지? 어디 아픈 거야? 들어와.\"",
+        text: "(선생님이 날 보며 시큰둥하게 말한다.) \"...{name}, 오늘은 무슨 일이야? 들어와.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_3"
