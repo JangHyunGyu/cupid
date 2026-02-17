@@ -192,7 +192,7 @@ Object.assign(SCENARIO[1], {
         next: "hallway_1"
     },
     "hallway_1": {
-        name: "서연",
+        name: "나",
         text: "(서연이의 뒤를 따라 복도를 걷는다. 창밖으로 아이들의 활기찬 목소리가 들린다.)",
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_back.png",
@@ -221,7 +221,7 @@ Object.assign(SCENARIO[1], {
         next: "hallway_1_2"
     },
     "hallway_1_2": {
-        name: "서연",
+        name: "나",
         background: "assets/images/background/school_hallway.png",
         text: "(그녀의 뒷모습을 보며 복도를 걷는다.)",
         character: "assets/images/characters/seyoun_back.png",
@@ -245,6 +245,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3_high": {
         name: "나",
+        background: "assets/images/background/load_school.png",
         text: "(서연과 수다를 떨다 보니 학교 안내가 시작됐다. 시간이 벌써 이렇게... 그녀와 있으면 즐거워.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
@@ -288,6 +289,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3_low": {
         name: "나",
+        background: "assets/images/background/load_school.png",
         text: "(서연이의 표정이 좋지 않다. 대화 도중 내가 무언가 실수를 한 모양이다. 그녀는 차가운 태도로 학교 안내를 시작했다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
@@ -812,7 +814,7 @@ Object.assign(SCENARIO[1], {
         name: "담임선생님",
         text: "\"(선생님이 흐뭇한 미소로 나를 바라본다.) 오, {name}... 이름 참 예쁘네. 자, 친구들에게 자기소개 한마디 부탁할게. 다들 환영해줘!\"",
         character: "assets/images/characters/teacher_smile.png",
-        next: "class_after_party"
+        next: "class_after_name"
     },
     "teacher_name_share_low": {
         name: "담임선생님",
@@ -825,6 +827,19 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/room_school.png",
         text: "\"자, {name}. 친구들에게 자기소개 한마디 부탁할게.\"",
         character: "assets/images/characters/teacher_normal.png",
+        next: "class_after_name"
+    },
+    "class_after_name": {
+        name: "담임선생님",
+        background: "assets/images/background/room_school.png",
+        text: "\"{name}... 좋은 이름이네. 자, 다들 환영해줘.\"",
+        character: "assets/images/characters/teacher_normal.png",
+        affinityChar: "Teacher",
+        affinityBranches: [
+            { minAffinity: 15, next: "class_after_party" },
+            { minAffinity: 0, next: "class_after_active" },
+            { minAffinity: -999, next: "class_after_quiet" }
+        ],
         next: "class_after_active"
     },
 

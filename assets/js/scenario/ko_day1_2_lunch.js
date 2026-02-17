@@ -495,7 +495,7 @@ Object.assign(SCENARIO[1], {
         type: "free_talk",
         name: "서연",
         background: "assets/images/background/top_school.png",
-        text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 스마트폰을 내밀다.)",
+        text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 나를 바라본다.)",
         context: "옥상에서 함께 도시락을 먹은 후, 서연이가 연락처를 교환하자고 먼저 말을 걸려는 순간입니다. 서연은 조금 수줍어하면서도 기대하는 모습이에요. 가벼운 잡담을 나누며 연락처 교환으로 자연스럽게 이어지는 대화입니다.",
         personality: "친절하고 상냥하며 책임감 강한 학생회장. 전학생인 주인공에게 호감을 느끼고 있으며, 연락처를 교환하고 싶어하지만 직접적으로 말하기는 부끄러워하는 모습.",
         character: "assets/images/characters/seyoun_normal.png",
@@ -839,7 +839,7 @@ Object.assign(SCENARIO[1], {
     "lunch_dain": {
         name: "나",
         text: "(체육관 쪽에서 배구공 튀기는 소리가 들려온다. 나는 소리를 따라 체육관으로 향했다.)",
-        background: "assets/images/background/playground.png",
+        background: "assets/images/background/gym.png",
         next: "lunch_dain_2"
     },
     "lunch_dain_2": {

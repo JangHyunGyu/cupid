@@ -90,7 +90,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_school": {
         name: "나",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/load_school.png",
         text: "(어제보다 훨씬 익숙해진 복도. 오늘은 어떤 떨림이 나를 기다리고 있을까? 발길 닿는 대로 가보자.)",
         sunset: true,
         choices: [
@@ -106,7 +106,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_stay": {
         name: "나",
-        text: "(보건실 침대에서 일어나 기지개를 켰다. 선생님은 여전히 책을 읽고 계신다.)",
+        text: "(다시 보건실로 발걸음을 옮겼다. 선생님은 여전히 자리에 앉아 계신다.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
@@ -449,6 +449,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_follow_again": {
         name: "나",
         text: "(유나를 따라 다시 지하실 창고로 내려갔다. 아까보다 공기가 더 차갑게 느껴진다. 노을빛이 창문을 통해 스며들지만 지하실은 여전히 어두컴컴하다.)",
+        background: "assets/images/background/room_school.png",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },
@@ -458,6 +459,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_follow_new": {
         name: "나",
         text: "(유나를 따라 지하실의 먼지 쌓인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다. 창문으로 노을빛이 희미하게 스며든다.)",
+        background: "assets/images/background/room_school.png",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },
@@ -481,7 +483,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_3": {
         name: "나",
         text: "(유나가 손가락으로 벽의 틈새를 가리킨다. 그곳에는 붉은색으로 기묘한 눈 모양이 그려져 있다.)",
-        character: "assets/images/characters/yuna_smile.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         choices: [
             { text: "이게 대체 뭘 의미하는 거야?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 4 } } },
@@ -691,7 +693,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain_new": {
         name: "???",
-        text: "\"하아, 하아... 너 운동 신경 진짜 대박이다! 처음 보는데 호흡이 척척 맞네!\"",
+        text: "\"하아, 하아... 너 에너지가 넘치는구나! 처음 보는데 호흡이 척척 맞네!\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "met_dain",
@@ -747,7 +749,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_night_talk": {
         name: "다인",
-        text: "\"와! 너 운동 신경 진짜 대박이다. 우리 팀으로 영입하고 싶을 정도야! 오늘 고생했어, {name}! 조심해서 들어가!\"",
+        text: "\"와! 너 정말 열정적이다. 우리 팀으로 영입하고 싶을 정도야! 오늘 고생했어, {name}! 조심해서 들어가!\"",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
         setFlag: "day2_met_dain_after",

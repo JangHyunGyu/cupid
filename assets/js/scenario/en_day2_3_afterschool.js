@@ -90,7 +90,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_school": {
         name: "Me",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/load_school.png",
         text: "(The hallway feels much more familiar than yesterday. What kind of heart-pounding moments are waiting for me today? Let's go where my heart leads.)",
         sunset: true,
         choices: [
@@ -106,7 +106,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_stay": {
         name: "Me",
-        text: "(I got up from the infirmary bed and stretched. The teacher is still absorbed in her book.)",
+        text: "(I headed back to the infirmary. The nurse is still sitting in her seat.)",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
@@ -449,6 +449,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_follow_again": {
         name: "Me",
         text: "(I follow Yuna back down to the basement warehouse. The air feels even colder than before. The sunset glow fades as we descend into the shadows.)",
+        background: "assets/images/background/room_school.png",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },
@@ -458,6 +459,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_follow_new": {
         name: "Me",
         text: "(I follow Yuna down to a dusty warehouse in the basement. A strange chill hangs in the air. The sunset light barely reaches this deep.)",
+        background: "assets/images/background/room_school.png",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },
@@ -481,7 +483,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_3": {
         name: "Me",
         text: "(Yuna points to a crack in the wall. A strange, eye-like symbol is drawn there in reddish ink.)",
-        character: "assets/images/characters/yuna_smile.png",
+        character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         choices: [
             { text: "What does this even mean?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 4 } } },
@@ -691,7 +693,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain_new": {
         name: "???",
-        text: "\"Haa, haa... Your reflexes are insane! We're perfectly in sync for our first time!\"",
+        text: "\"Haa, haa... You're so full of energy! We're perfectly in sync for our first time!\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "met_dain",
@@ -747,7 +749,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_dain_night_talk": {
         name: "Dain",
-        text: "\"Wow! Your reflexes are no joke. I almost want to recruit you for the team! Great job today, {name}! Get home safe!\"",
+        text: "\"Wow! You're really passionate about this. I almost want to recruit you for the team! Great job today, {name}! Get home safe!\"",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
         setFlag: "day2_met_dain_after",

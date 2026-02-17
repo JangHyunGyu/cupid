@@ -369,7 +369,16 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(Uh... why is everyone at the gate...?)",
         sunset: true,
-        next: "day3_afternoon_multiple_scene"
+        branches: [
+            { next: "day3_afternoon_multiple_scene", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day3_afternoon_multiple_no_seoyeon" }
+        ]
+    },
+    "day3_afternoon_multiple_no_seoyeon": {
+        name: "Me",
+        text: "(Several people are standing at the school gate. Are they all waiting for me...?)",
+        sunset: true,
+        next: "day3_afternoon_choose_walk"
     },
     "day3_afternoon_multiple_scene": {
         name: "Seoyeon",

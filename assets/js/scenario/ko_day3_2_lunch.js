@@ -694,7 +694,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_dain_end": {
         name: "다인",
         background: "assets/images/background/store.png",
-        text: "\"어쨌든! 내일 연습 보러 올 거지? 약속했잖아!\"",
+        text: "\"어쨌든! 내일 연습 보러 올 거지? 꼭 와야 해!\"",
         character: "assets/images/characters/dain_laugh.png",
         branches: [
             { next: "day3_lunch_dain_conflict", condition: "day3_has_multiple_dates" },

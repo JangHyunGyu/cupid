@@ -200,7 +200,7 @@ Object.assign(SCENARIO[1], {
         next: "hallway_1"
     },
     "hallway_1": {
-        name: "Seoyeon",
+        name: "Me",
         text: "(I follow Seoyeon down the hallway. The lively voices of students can be heard through the windows.)",
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_back.png",
@@ -229,7 +229,7 @@ Object.assign(SCENARIO[1], {
         next: "hallway_1_2"
     },
     "hallway_1_2": {
-        name: "Seoyeon",
+        name: "Me",
         background: "assets/images/background/school_hallway.png",
         text: "(I walk down the hallway, watching her from behind.)",
         character: "assets/images/characters/seyoun_back.png",
@@ -253,6 +253,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3_high": {
         name: "Me",
+        background: "assets/images/background/load_school.png",
         text: "(Before I knew it, chatting with Seoyeon has led us to the school tour. Time flies so fast... It's fun being with her.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
@@ -296,6 +297,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3_low": {
         name: "Me",
+        background: "assets/images/background/load_school.png",
         text: "(Seoyeon's expression doesn't look good. I must have made some mistake during our conversation. She started the school tour with a cold attitude.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
@@ -820,7 +822,7 @@ Object.assign(SCENARIO[1], {
         name: "Homeroom Teacher",
         text: "\"(The teacher looks at me with a satisfied smile.) Oh, {name}... What a lovely name. Now, please say a few words to introduce yourself to the class. Everyone, please welcome them!\"",
         character: "assets/images/characters/teacher_smile.png",
-        next: "class_after_party"
+        next: "class_after_name"
     },
     "teacher_name_share_low": {
         name: "Homeroom Teacher",
@@ -833,6 +835,19 @@ Object.assign(SCENARIO[1], {
         background: "assets/images/background/room_school.png",
         text: "\"Alright, {name}. Please say a few words to introduce yourself to the class.\"",
         character: "assets/images/characters/teacher_normal.png",
+        next: "class_after_name"
+    },
+    "class_after_name": {
+        name: "Homeroom Teacher",
+        background: "assets/images/background/room_school.png",
+        text: "\"{name}... That's a nice name. Alright everyone, please welcome them.\"",
+        character: "assets/images/characters/teacher_normal.png",
+        affinityChar: "Teacher",
+        affinityBranches: [
+            { minAffinity: 15, next: "class_after_party" },
+            { minAffinity: 0, next: "class_after_active" },
+            { minAffinity: -999, next: "class_after_quiet" }
+        ],
         next: "class_after_active"
     },
     "class_after_active": {

@@ -419,7 +419,16 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(어... 왜 다들 교문 앞에...?)",
         sunset: true,
-        next: "day3_afternoon_multiple_scene"
+        branches: [
+            { next: "day3_afternoon_multiple_scene", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day3_afternoon_multiple_no_seoyeon" }
+        ]
+    },
+    "day3_afternoon_multiple_no_seoyeon": {
+        name: "나",
+        text: "(교문 앞에 여러 명이 서 있다. 다들 나를 기다리는 건가...?)",
+        sunset: true,
+        next: "day3_afternoon_choose_walk"
     },
     "day3_afternoon_multiple_scene": {
         name: "서연",
