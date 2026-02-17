@@ -245,7 +245,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3_high": {
         name: "나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(서연과 수다를 떨다 보니 학교 안내가 시작됐다. 시간이 벌써 이렇게... 그녀와 있으면 즐거워.)",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
@@ -289,7 +289,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3_low": {
         name: "나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(서연이의 표정이 좋지 않다. 대화 도중 내가 무언가 실수를 한 모양이다. 그녀는 차가운 태도로 학교 안내를 시작했다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [

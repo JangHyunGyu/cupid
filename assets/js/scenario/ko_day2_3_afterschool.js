@@ -90,7 +90,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_school": {
         name: "나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(어제보다 훨씬 익숙해진 복도. 오늘은 어떤 떨림이 나를 기다리고 있을까? 발길 닿는 대로 가보자.)",
         sunset: true,
         choices: [
@@ -449,7 +449,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_follow_again": {
         name: "나",
         text: "(유나를 따라 다시 지하실 창고로 내려갔다. 아까보다 공기가 더 차갑게 느껴진다. 노을빛이 창문을 통해 스며들지만 지하실은 여전히 어두컴컴하다.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/school_basement.png",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },
@@ -459,7 +459,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_follow_new": {
         name: "나",
         text: "(유나를 따라 지하실의 먼지 쌓인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다. 창문으로 노을빛이 희미하게 스며든다.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/school_basement.png",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },

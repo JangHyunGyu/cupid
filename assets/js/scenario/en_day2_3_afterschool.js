@@ -90,7 +90,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_school": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(The hallway feels much more familiar than yesterday. What kind of heart-pounding moments are waiting for me today? Let's go where my heart leads.)",
         sunset: true,
         choices: [
@@ -449,7 +449,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_follow_again": {
         name: "Me",
         text: "(I follow Yuna back down to the basement warehouse. The air feels even colder than before. The sunset glow fades as we descend into the shadows.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/school_basement.png",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },
@@ -459,7 +459,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_yuna_follow_new": {
         name: "Me",
         text: "(I follow Yuna down to a dusty warehouse in the basement. A strange chill hangs in the air. The sunset light barely reaches this deep.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/school_basement.png",
         sunset: true,
         branches: [
             { next: "day2_after_yuna_3_pre_again", condition: "visited_warehouse_at_lunch" },

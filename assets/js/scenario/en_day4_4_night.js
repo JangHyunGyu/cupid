@@ -187,13 +187,13 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
         text: "(As we descended underground, the air turned cold. The smell of dust and old documents stung my nose.)",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         night: true,
         next: "day4_night_yuna_basement_2"
     },
     "day4_night_yuna_basement_2": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"This school's foundation... 'Sungjin Academy.' They claim to be an elite educational institution, but they've been operating a slush fund systematically for the past ten years.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -201,7 +201,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_basement_3": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "\"...A slush fund?\"",
         night: true,
@@ -209,7 +209,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_basement_4": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"Embezzling student welfare funds, false claims for facility repair costs, misappropriation of donations... It's all here.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -217,7 +217,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_documents": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(Yuna pulled out a worn file from the shelf. Dense numbers and stamps filled the pages. This is... a real ledger.)",
         night: true,
@@ -225,7 +225,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_documents_2": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"Especially this building... the east staircase of the main hall. Records say it was renovated three years ago, but in reality, not a single penny was spent.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -233,7 +233,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_documents_3": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...And on those stairs, an accident happened one year ago.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -241,7 +241,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_truth_choice": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
         text: "(Yuna's voice is trembling.)",
         night: true,
@@ -264,7 +264,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_yuna_senpai_concern": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...You're the first person to ask me that.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -272,7 +272,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_reveal": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...Lee Junho, a senior. He was the student council president at the time. He found out about the foundation's corruption and was gathering evidence.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -280,7 +280,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_2": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"He was... a person with a strong sense of justice. Almost foolishly so. He could never look away when someone was being wronged.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -288,7 +288,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_3": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"Then one day... he fell from that east staircase. The school ruled it an 'accidental fall.'\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -296,7 +296,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_4": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
         text: "\"...An accidental fall? The person who was investigating the corruption?\"",
         night: true,
@@ -304,7 +304,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_5": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...The old staircase railing that was never repaired broke. If the foundation hadn't embezzled the repair funds, that accident would never have happened.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -312,7 +312,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_6": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"It was the day before he planned to take the evidence to the Board of Education. Whether it was coincidence or not... I still don't know.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -320,7 +320,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_senpai_death": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"He... passed away in the hospital a few days later. He never woke up.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -328,7 +328,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_silence": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
         text: "(Yuna's hands were shaking. Her fingertips, gripping the documents, had turned white.)",
         night: true,
@@ -336,7 +336,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_silence_choice": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
         text: "(...)",
         night: true,
@@ -360,7 +360,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_yuna_hand": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...!\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -368,7 +368,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_hand_2": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_shy.png",
         text: "(Yuna's hand was cold. But she didn't pull away.)",
         night: true,
@@ -376,7 +376,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_listen": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...Thank you.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -384,7 +384,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...Actually, there's one more thing I need to tell you.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -392,7 +392,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_2": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"When you first transferred here... I almost stopped breathing.\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -400,7 +400,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_3": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_shy.png",
         text: "\"...Why?\"",
         night: true,
@@ -408,7 +408,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_4": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"You... look like Junho. Your eyes, your aura. Even that feeling of never being able to stand by when something's wrong.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -416,7 +416,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_5": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...So at first, I was scared. Afraid the same thing would happen again. Afraid you'd be in danger too.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -424,7 +424,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_6": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"But at the same time... with you by my side, I felt like I could finish what he couldn't.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -432,7 +432,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resemblance_7": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(So that's why. The reason Yuna showed interest in me from the start. When she called me a 'special light'... was I just the senior's shadow?)",
         night: true,
@@ -440,7 +440,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_critical_choice": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(...What should I say?)",
         night: true,
@@ -470,7 +470,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_yuna_moved": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...I know. You are you. Maybe at first I was chasing the senior's shadow. But now...\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -478,7 +478,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_moved_2": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...Now I see you. Only you.\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -486,7 +486,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_touched": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"Idiot... you can't just say things like that.\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -494,7 +494,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_touched_2": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"You're not a stand-in. You... are already more than enough, just as yourself.\"",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
@@ -502,7 +502,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_confronted": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -510,7 +510,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_confronted_2": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...I won't deny it. At first, that's how it was. But... as we spent time together, that changed. This is real.\"",
         character: "assets/images/characters/yuna_sad.png",
         night: true,
@@ -518,7 +518,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_confronted_3": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...Even if you don't believe me, I'll prove it.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -531,7 +531,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_yuna_resolve": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...I made copies of these documents. The originals stay here.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -539,7 +539,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resolve_2": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"What the senior couldn't finish... I want to see it through this time. I'm reporting it to the Board of Education.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -547,7 +547,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resolve_3": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(Determination filled Yuna's eyes. This wasn't mere curiosity. She'd been uncovering the truth alone for an entire year.)",
         night: true,
@@ -555,7 +555,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resolve_4": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...But it could be dangerous. The foundation won't sit still.\"",
         character: "assets/images/characters/yuna_normal.png",
         night: true,
@@ -563,7 +563,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resolve_5": {
         name: "Me",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "\"...Let's do this together. Don't carry it all alone.\"",
         night: true,
@@ -571,7 +571,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_yuna_resolve_end": {
         name: "Yuna",
-        background: "assets/images/background/library_old.png",
+        background: "assets/images/background/school_basement.png",
         text: "\"...Okay.\"",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
