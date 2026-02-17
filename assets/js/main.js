@@ -4016,92 +4016,134 @@ class GameEngine {
             this.uiManager.dialogueBox.style.display = 'none';
             this.uiManager.choiceContainer.style.display = 'none';
 
-            // 크레딧 레이어 표시
-            const creditsLayer = document.getElementById('credits-layer');
-            if (creditsLayer) {
-                // 이전 크레딧 상태 완전 초기화 (재진입 시 애니메이션 재시작 보장)
+            // 크레딧 레이어 표시 (없으면 동적 생성 — 캐시된 구 HTML 대응)
+            let creditsLayer = document.getElementById('credits-layer');
+            if (!creditsLayer) {
+                const isEn = document.documentElement.lang === 'en';
+                creditsLayer = document.createElement('div');
+                creditsLayer.id = 'credits-layer';
+                creditsLayer.innerHTML = `
+                    <div id="credits-content">
+                        <div class="credits-title">CUPID</div>
+                        <div class="credits-subtitle">${isEn ? 'Where Cupid\'s Arrow Lands' : '사랑의 화살이 닿는 곳'}</div>
+                        <div class="credits-divider">─ ─ ─</div>
+                        <div class="credits-section">
+                            <div class="credits-role">${isEn ? 'Planning · Scenario' : '기획 · 시나리오'}</div>
+                            <div class="credits-name">장현규 · 김유진 · 이상훈</div>
+                        </div>
+                        <div class="credits-section">
+                            <div class="credits-role">${isEn ? 'Programming · Direction' : '프로그래밍 · 연출'}</div>
+                            <div class="credits-name">장현규 · 김유진</div>
+                        </div>
+                        <div class="credits-section">
+                            <div class="credits-role">${isEn ? 'Art · Design' : '아트 · 디자인'}</div>
+                            <div class="credits-name">장현규 · 김유진</div>
+                        </div>
+                        <div class="credits-section">
+                            <div class="credits-role">${isEn ? 'Music · Sound' : '음악 · 사운드'}</div>
+                            <div class="credits-name">장현규</div>
+                        </div>
+                        <div class="credits-divider">─ ─ ─</div>
+                        <div class="credits-section">
+                            <div class="credits-role">${isEn ? 'Characters' : '등장인물'}</div>
+                            <div class="credits-name">${isEn ? 'Seoyeon · Yuna · Dain' : '서연 · 유나 · 다인'}</div>
+                            <div class="credits-name">${isEn ? 'School Nurse · Homeroom Teacher' : '보건선생님 · 담임선생님'}</div>
+                        </div>
+                        <div class="credits-divider">─ ─ ─</div>
+                        <div class="credits-section">
+                            <div class="credits-role">${isEn ? 'Production' : '제작'}</div>
+                            <div class="credits-name">장현규 · 김유진</div>
+                        </div>
+                        <div class="credits-divider">─ ─ ─</div>
+                        <div class="credits-section">
+                            <div class="credits-role">Special Thanks</div>
+                            <div class="credits-name">${isEn ? 'Thank you for playing!' : '플레이해 주신 여러분께'}</div>
+                            <div class="credits-name">${isEn ? 'We sincerely appreciate it.' : '진심으로 감사드립니다'}</div>
+                        </div>
+                        <div class="credits-spacer"></div>
+                        <div class="credits-final">Cupid © 2026 ArcherLab</div>
+                        <div class="credits-final">Thank you for playing</div>
+                        <div class="credits-spacer"></div>
+                    </div>`;
+                document.getElementById('game-container').appendChild(creditsLayer);
+                console.log('[GameEngine] credits-layer를 동적으로 생성했습니다.');
+            }
+
+            // 이전 크레딧 상태 완전 초기화 (재진입 시 애니메이션 재시작 보장)
+            creditsLayer.classList.remove('active');
+            const content = document.getElementById('credits-content');
+            if (content) {
+                content.style.animation = 'none';
+                content.style.transform = '';
+            }
+
+            // 이전 이벤트 리스너 제거 (누적 방지)
+            const oldHandler = creditsLayer._creditsClickHandler;
+            if (oldHandler) creditsLayer.removeEventListener('click', oldHandler);
+
+            // 이전 타이머 제거
+            if (creditsLayer._creditsTimer) clearTimeout(creditsLayer._creditsTimer);
+
+            // reflow 강제 — 위의 초기화가 브라우저에 반영된 후 active 추가
+            creditsLayer.offsetHeight;
+            if (content) {
+                content.style.animation = '';
+                content.style.transform = '';
+            }
+            creditsLayer.classList.add('active');
+
+            console.log('[GameEngine] 크레딧 레이어 활성화됨');
+
+            // 스킵 버튼 생성 (없으면)
+            let skipBtn = document.getElementById('credits-skip-btn');
+            if (!skipBtn) {
+                skipBtn = document.createElement('button');
+                skipBtn.id = 'credits-skip-btn';
+                skipBtn.textContent = 'SKIP ▶';
+                creditsLayer.appendChild(skipBtn);
+            }
+
+            // 스킵 버튼 또는 크레딧 끝나면 다음 씬으로
+            let creditsEnded = false;
+            const endCredits = async () => {
+                if (creditsEnded) return; // 중복 실행 방지
+                creditsEnded = true;
+                clearTimeout(creditsTimer);
+                creditsLayer._creditsTimer = null;
                 creditsLayer.classList.remove('active');
-                const content = document.getElementById('credits-content');
+                // 크레딧 스크롤 애니메이션 리셋
                 if (content) {
                     content.style.animation = 'none';
-                    content.style.transform = '';
-                }
-
-                // 이전 이벤트 리스너 제거 (누적 방지)
-                const oldHandler = creditsLayer._creditsClickHandler;
-                if (oldHandler) creditsLayer.removeEventListener('click', oldHandler);
-
-                // 이전 타이머 제거
-                if (creditsLayer._creditsTimer) clearTimeout(creditsLayer._creditsTimer);
-
-                // reflow 강제 — 위의 초기화가 브라우저에 반영된 후 active 추가
-                creditsLayer.offsetHeight;
-                if (content) {
+                    content.offsetHeight; // reflow
                     content.style.animation = '';
-                    content.style.transform = '';
                 }
-                creditsLayer.classList.add('active');
-
-                console.log('[GameEngine] 크레딧 레이어 활성화됨');
-
-                // 스킵 버튼 생성 (없으면)
-                let skipBtn = document.getElementById('credits-skip-btn');
-                if (!skipBtn) {
-                    skipBtn = document.createElement('button');
-                    skipBtn.id = 'credits-skip-btn';
-                    skipBtn.textContent = 'SKIP ▶';
-                    creditsLayer.appendChild(skipBtn);
-                }
-
-                // 스킵 버튼 또는 크레딧 끝나면 다음 씬으로
-                let creditsEnded = false;
-                const endCredits = async () => {
-                    if (creditsEnded) return; // 중복 실행 방지
-                    creditsEnded = true;
-                    clearTimeout(creditsTimer);
-                    creditsLayer._creditsTimer = null;
-                    creditsLayer.classList.remove('active');
-                    // 크레딧 스크롤 애니메이션 리셋
-                    if (content) {
-                        content.style.animation = 'none';
-                        content.offsetHeight; // reflow
-                        content.style.animation = '';
-                    }
-                    // 이벤트 리스너 정리
-                    creditsLayer.removeEventListener('click', clickHandler);
-                    creditsLayer._creditsClickHandler = null;
-                    if (scene.next) {
-                        try {
-                            await this.renderScene(scene.next);
-                        } catch (e) {
-                            console.error('[GameEngine] 크레딧 후 씬 전환 오류:', e);
-                            this.uiManager.dialogueBox.style.display = '';
-                        }
-                    }
-                };
-
-                skipBtn.onclick = endCredits;
-
-                // 크레딧 레이어 클릭으로도 스킵 가능 (5초 후)
-                let layerClickable = false;
-                setTimeout(() => { layerClickable = true; }, 5000);
-                const clickHandler = (e) => {
-                    if (layerClickable && e.target !== skipBtn) endCredits();
-                };
-                creditsLayer.addEventListener('click', clickHandler);
-                creditsLayer._creditsClickHandler = clickHandler;
-
-                // 크레딧 애니메이션 종료 시 자동 전환 (25초)
-                const creditsTimer = setTimeout(endCredits, 26000);
-                creditsLayer._creditsTimer = creditsTimer;
-            } else {
-                // credits-layer 요소를 찾을 수 없는 경우 → 크레딧 생략하고 다음 씬으로
-                console.warn('[GameEngine] credits-layer 요소를 찾을 수 없습니다. 크레딧을 건너뜁니다.');
-                this.uiManager.dialogueBox.style.display = '';
+                // 이벤트 리스너 정리
+                creditsLayer.removeEventListener('click', clickHandler);
+                creditsLayer._creditsClickHandler = null;
                 if (scene.next) {
-                    await this.renderScene(scene.next);
+                    try {
+                        await this.renderScene(scene.next);
+                    } catch (e) {
+                        console.error('[GameEngine] 크레딧 후 씬 전환 오류:', e);
+                        this.uiManager.dialogueBox.style.display = '';
+                    }
                 }
-            }
+            };
+
+            skipBtn.onclick = endCredits;
+
+            // 크레딧 레이어 클릭으로도 스킵 가능 (5초 후)
+            let layerClickable = false;
+            setTimeout(() => { layerClickable = true; }, 5000);
+            const clickHandler = (e) => {
+                if (layerClickable && e.target !== skipBtn) endCredits();
+            };
+            creditsLayer.addEventListener('click', clickHandler);
+            creditsLayer._creditsClickHandler = clickHandler;
+
+            // 크레딧 애니메이션 종료 시 자동 전환 (25초)
+            const creditsTimer = setTimeout(endCredits, 26000);
+            creditsLayer._creditsTimer = creditsTimer;
 
             // ═══════════════════════════════════════════════════════
             // 💬 타입 D: 일반 대화/시네마틱/선택지
