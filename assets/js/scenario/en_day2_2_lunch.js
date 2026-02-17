@@ -473,6 +473,7 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_secret_read": {
+        name: "Me",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_yuna_secret_read_high" },
@@ -480,6 +481,7 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_secret_stop": {
+        name: "Me",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_yuna_secret_stop_high" },
@@ -487,6 +489,7 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_yuna_secret_why": {
+        name: "Me",
         affinityChar: "Yuna",
         affinityBranches: [
             { minAffinity: 25, next: "day2_yuna_secret_why_high" },

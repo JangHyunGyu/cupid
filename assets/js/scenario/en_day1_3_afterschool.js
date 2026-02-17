@@ -208,7 +208,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "Yeah, I wanted to go with you too. I'll help.", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "You waited for me? I'm touched. I'm really happy.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "You look much prettier under the sunset.", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 10 } } }
+            { text: "You look much prettier under the sunset.", next: "after_seoyeon_compliment", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "after_seoyeon_3_low": {
@@ -234,6 +234,13 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_angry.png",
         sunset: true,
         next: "after_home"
+    },
+    "after_seoyeon_compliment": {
+        name: "Seoyeon",
+        text: "(Seoyeon's face turns red in an instant. She hides behind her documents, pouting.) \"Wh-what's that all of a sudden... Are you teasing me? ...A-anyway, we need to finish quickly so help me with this!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        sunset: true,
+        next: "after_seoyeon_help_action"
     },
     "after_seoyeon_help": {
         name: "Seoyeon",
@@ -438,8 +445,8 @@ Object.assign(SCENARIO[1], {
                 next: "after_yuna_secret",
                 affinityChar: "Yuna",
                 affinityBranches: [
-                    { minAffinity: 5, next: "after_yuna_secret_deep" },
-                    { minAffinity: 11, next: "after_yuna_secret" },
+                    { minAffinity: 11, next: "after_yuna_secret_deep" },
+                    { minAffinity: 5, next: "after_yuna_secret" },
                     { minAffinity: -999, next: "after_yuna_secret_fail" }
                 ]
             },
@@ -579,7 +586,7 @@ Object.assign(SCENARIO[1], {
     "after_yuna_scared": {
         name: "Yuna",
         background: "assets/images/background/top_school.png",
-        text: "(She laughs coldly and lets go of my hand. She turns her gaze back outside and pushes me away.)",
+        text: "(She laughs coldly and takes a step back. She turns her gaze back to the window.)",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "after_yuna_scared_2"
@@ -926,7 +933,7 @@ Object.assign(SCENARIO[1], {
     "after_dain_end_2": {
         name: "Dain",
         background: "assets/images/background/gym.png",
-        text: "(After practice, Dain runs over to me, breathing heavily.) \"Phew... phew... Sorry for making you wait! Come on, let's go get that tteokbokki!\"",
+        text: "(After practice, Dain runs over to me, breathing heavily.) \"Phew... phew... Sorry for making you wait! Come on, let's go get some tteokbokki!\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "dated_dain_day1",

@@ -812,7 +812,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_decision": {
         name: "나",
-        text: "(먼저 밥을 먹고 갈까, 아니면 바로 도서관 별관으로 갈까... 일단 유나가 먼저겠지. 밥은 나중에도 먹을 수 있으니까.)",
+        text: "(점심시간이다. 누구와 함께할까...)",
         next: "day2_lunch_time"
     }
 });

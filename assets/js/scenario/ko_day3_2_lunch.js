@@ -91,7 +91,27 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(어... 잠깐, 왜 다들 이쪽으로...?)",
         character: null,
-        next: "day3_lunch_collision"
+        branches: [
+            { next: "day3_lunch_collision", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day3_lunch_collision_no_seoyeon" }
+        ]
+    },
+    "day3_lunch_collision_no_seoyeon": {
+        name: "나",
+        text: "(약속한 애들이 동시에 나에게 다가온다. 분위기가 심상치 않다...)",
+        character: null,
+        next: "day3_lunch_collision_no_seoyeon_choose"
+    },
+    "day3_lunch_collision_no_seoyeon_choose": {
+        name: "나",
+        character: null,
+        text: "(누구와 함께 먹을까...?)",
+        choices: [
+            { text: "유나와 점심을 먹는다", next: "day3_lunch_choose_yuna", condition: "day3_yuna_date_confirmed" },
+            { text: "다인이와 점심을 먹는다", next: "day3_lunch_choose_dain", condition: "day3_dain_date_confirmed" },
+            { text: "다 같이 먹자고 제안한다", next: "day3_lunch_together_propose" },
+            { text: "혼자 먹겠다고 도망친다", next: "day3_lunch_escape", stats: { Yuna: { affinity: -3 }, Dain: { affinity: -3 } } }
+        ]
     },
     "day3_lunch_collision": {
         name: "서연",
@@ -288,12 +308,12 @@ Object.assign(SCENARIO[3], {
         name: "나",
         character: "assets/images/characters/seyoun_laugh.png",
         text: "(점심을 다 먹고 서연이와 학교 뒤편 벤치에 앉았다. 바람이 살랑살랑 분다.)",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/school.png",
         next: "day3_lunch_seoyeon_bench"
     },
     "day3_lunch_seoyeon_bench": {
         name: "서연",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/school.png",
         text: "(조용히 내 어깨에 머리를 기대며) \"...{name}아. 나 요즘 이상해. 매일 네 생각만 해.\"",
         character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 3 } },
@@ -301,7 +321,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_seoyeon_bench_2": {
         name: "나",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/school.png",
         character: "assets/images/characters/seyoun_shy.png",
         text: "(서연이의 머리카락에서 샴푸 향이 난다. 심장이 두근거린다.)",
         choices: [
@@ -312,21 +332,21 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_seoyeon_pat": {
         name: "서연",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/school.png",
         text: "(머리를 쓰다듬자 서연이가 얼굴을 묻는다) \"바, 바보... 이런 데서 그러면 어떡해...\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day3_lunch_seoyeon_freetalk"
     },
     "day3_lunch_seoyeon_same": {
         name: "서연",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/school.png",
         text: "(서연이가 고개를 들어 나를 바라본다) \"...진짜? 그 말... 기억해둘 거야.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day3_lunch_seoyeon_freetalk"
     },
     "day3_lunch_seoyeon_silent": {
         name: "서연",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/school.png",
         text: "(서연이가 조용히 내 손을 잡는다) \"...이렇게 있으니까 좋다.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day3_lunch_seoyeon_freetalk"
@@ -334,7 +354,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_seoyeon_freetalk": {
         type: "free_talk",
         name: "나",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/school.png",
         character: "assets/images/characters/seyoun_shy.png",
         text: "(학교 뒤편 벤치에서 서연이와 나란히 앉아 이야기를 나눈다.)",
         context: "서연이와 학교 뒤편 벤치에서 둘이 나란히 앉아있다. 서연이가 어깨에 머리를 기대고 '매일 네 생각만 해'라고 고백한 후. 달콤한 분위기.",
@@ -343,7 +363,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_seoyeon_bell": {
         name: "나",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/school.png",
         character: "assets/images/characters/seyoun_shy.png",
         text: "(수업 종이 울린다. 서연이와의 시간이 마법처럼 짧게 느껴졌다.)",
         fade: true,
@@ -470,11 +490,25 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_yuna_talk_1"
     },
     "day3_lunch_yuna_talk_1": {
+        branches: [
+            { next: "day3_lunch_yuna_talk_1_jealous", condition: "day3_has_multiple_dates" },
+            { next: "day3_lunch_yuna_single_end" }
+        ]
+    },
+    "day3_lunch_yuna_talk_1_jealous": {
         name: "유나",
         background: "assets/images/background/top_school.png",
         text: "\"...{name}. 넌 나한테만 잘해주는 줄 알았어.\"",
         character: "assets/images/characters/yuna_normal.png",
         next: "day3_lunch_yuna_talk_2"
+    },
+    "day3_lunch_yuna_single_end": {
+        name: "나",
+        background: "assets/images/background/top_school.png",
+        character: "assets/images/characters/yuna_normal.png",
+        text: "(유나와 함께 평화로운 점심시간을 보냈다.)",
+        fade: true,
+        next: "day3_afternoon_start"
     },
     "day3_lunch_yuna_talk_2": {
         name: "나",
@@ -549,7 +583,7 @@ Object.assign(SCENARIO[3], {
         name: "다인",
         text: "\"야호! 역시 {name}이 최고야! 빨리 가자, 오늘 급식 치킨이래!\"",
         character: "assets/images/characters/dain_laugh.png",
-        background: "assets/images/background/store.png",
+        background: "assets/images/background/room_school.png",
         next: "day3_lunch_dain_talk_1"
     },
     "day3_lunch_dain_talk_1": {

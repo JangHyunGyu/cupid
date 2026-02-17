@@ -146,7 +146,46 @@ Object.assign(SCENARIO[5], {
         night: true,
         bgm: null,
         fade: true,
-        next: "day5_ending_good_2"
+        next: "day5_ending_good_route"
+    },
+    "day5_ending_good_route": {
+        name: "시스템",
+        text: "",
+        night: true,
+        branches: [
+            { next: "day5_ending_good_faithful_2", condition: "day5_confessed" },
+            { next: "day5_ending_good_2" }
+        ]
+    },
+    // --- 늦은 고백 (일편단심) 루트 굿 엔딩 나레이션 ---
+    "day5_ending_good_faithful_2": {
+        name: "나",
+        text: "(용기를 내기까지 오래 걸렸다. 하지만 기다린 만큼, 이 마음은 확실하다.)",
+        night: true,
+        fade: true,
+        bgm: "ending.mp3",
+        next: "day5_ending_good_faithful_3"
+    },
+    "day5_ending_good_faithful_3": {
+        name: "나",
+        text: "(처음부터 마음은 하나였다. 다만 전하는 데 시간이 걸렸을 뿐.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_faithful_4"
+    },
+    "day5_ending_good_faithful_4": {
+        name: "나",
+        text: "(망설인 건 상대의 마음이 두려웠기 때문이다. 거절당할까 봐, 이 관계가 깨질까 봐.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_faithful_5"
+    },
+    "day5_ending_good_faithful_5": {
+        name: "나",
+        text: "(하지만 결국 말했다. 그리고 그 대답은— 기다린 보람이 있었다.)",
+        night: true,
+        fade: true,
+        next: "day5_ending_good_7"
     },
     "day5_ending_good_2": {
         name: "나",
@@ -384,7 +423,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_7": {
         name: "나",
-        text: "(하지만 이상하게도… 세 사람 다 웃고 있다. 나도 웃고 있다.)",
+        text: "(하지만 이상하게도… 모두가 웃고 있다. 나도 웃고 있다.)",
         night: true,
         fade: true,
         next: "day5_ending_harem_8"

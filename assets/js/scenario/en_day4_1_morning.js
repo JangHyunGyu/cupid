@@ -379,6 +379,7 @@ Object.assign(SCENARIO[4], {
         name: "Seoyeon",
         text: "\"See you soon~!! 😆\"",
         character: "assets/images/characters/seyoun_laugh.png",
+        silhouette: true,
         next: "day4_morning_loyalty_check"
     },
 
@@ -417,6 +418,7 @@ Object.assign(SCENARIO[4], {
         name: "Yuna",
         text: "\"...Hurry up.\"",
         character: "assets/images/characters/yuna_normal.png",
+        silhouette: true,
         next: "day4_morning_loyalty_check"
     },
 
@@ -455,6 +457,7 @@ Object.assign(SCENARIO[4], {
         name: "Dain",
         text: "\"See you later!! Get excited!!! 💪\"",
         character: "assets/images/characters/dain_laugh.png",
+        silhouette: true,
         next: "day4_morning_loyalty_check"
     },
 
@@ -493,6 +496,7 @@ Object.assign(SCENARIO[4], {
         name: "School Nurse",
         text: "\"See you later then 😊\"",
         character: "assets/images/characters/nurse_normal.png",
+        silhouette: true,
         next: "day4_morning_loyalty_check"
     },
 
@@ -531,6 +535,7 @@ Object.assign(SCENARIO[4], {
         name: "Homeroom Teacher",
         text: "\"Don't be late. I hate waiting.\"",
         character: "assets/images/characters/teacher_normal.png",
+        silhouette: true,
         next: "day4_morning_loyalty_check"
     },
 

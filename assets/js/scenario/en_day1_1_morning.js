@@ -202,20 +202,20 @@ Object.assign(SCENARIO[1], {
     "hallway_1": {
         name: "Seoyeon",
         text: "(I follow Seoyeon down the hallway. The lively voices of students can be heard through the windows.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_back.png",
         next: "hallway_name_ask"
     },
     "hallway_name_ask": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(Seoyeon suddenly stops and turns to me.) \"Oh, come to think of it, I said your name first earlier. It's {name}, right? Let me introduce myself properly this time!\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_name_share"
     },
     "hallway_name_share": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_normal.png",
         text: "\"Yeah, that's right. I'm {name}. I was so distracted earlier that I couldn't introduce myself properly. Nice to meet you, Seoyeon.\"",
         setFlag: "knows_name_seoyeon",
@@ -223,14 +223,14 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_name_share_2": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"{name}... Hehe, that's a nice name! I'll call you {name} from now on. Nice to meet you too, {name}!\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "hallway_1_2"
     },
     "hallway_1_2": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(I walk down the hallway, watching her from behind.)",
         character: "assets/images/characters/seyoun_back.png",
         next: "hallway_free_talk"
@@ -238,7 +238,7 @@ Object.assign(SCENARIO[1], {
     "hallway_free_talk": {
         type: "free_talk",
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"Oh, come to think of it, we only exchanged names and didn't really talk! If you have any questions, feel free to ask!\"",
         context: "Walking through the school hallway together with the transfer student protagonist, having a light conversation. Keep the conversation going until it naturally concludes. When the conversation ends, Seoyeon will start showing the protagonist around the school facilities. In the final turn only, mention that you'll start moving or begin the tour.",
         personality: "Kind, caring, and responsible student council president. She's developing feelings for the protagonist.",
@@ -339,7 +339,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1_3": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(I started walking down the hallway with Seoyeon's guidance. She kindly began explaining various parts of the school.)",
         character: "assets/images/characters/seyoun_normal.png",
         choices: [
@@ -619,7 +619,7 @@ Object.assign(SCENARIO[1], {
     "path_normal_2": {
         name: "Seoyeon",
         text: "(She nods and starts walking ahead again. I feel a bit of regret.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_back.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
@@ -650,20 +650,20 @@ Object.assign(SCENARIO[1], {
     "classroom_1_1_high": {
         name: "Seoyeon",
         text: "(When we arrive at the classroom door, Seoyeon gently takes my hand. My heart starts pounding at her soft touch.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_shy.png",
         next: "classroom_1_2_high"
     },
     "classroom_1_2_high": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(Seoyeon lowers her head slightly and whispers in my ear. Her sweet breath tickles me.) \"{name}, don't be too nervous. I'll always be by your side. You can do it.\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "classroom_1_3_high"
     },
     "classroom_1_3_high": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"Here's our classroom. ...This is a secret, but I asked the teacher to move you to the seat next to mine. I wanted to get close to you as soon as possible.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "classroom_2"
@@ -671,20 +671,20 @@ Object.assign(SCENARIO[1], {
     "classroom_1_1_low": {
         name: "Seoyeon",
         text: "(When we arrive at the classroom door, Seoyeon walks ahead of me, keeping her distance. Her back somehow feels cold.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_back.png",
         next: "classroom_1_2_low"
     },
     "classroom_1_2_low": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(She silently points at the sign next to the door with her chin. Her attitude of not even looking at me makes my heart feel cold.)",
         character: "assets/images/characters/seyoun_pout.png",
         next: "classroom_1_3_low"
     },
     "classroom_1_3_low": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"This is Class 2-3. The teacher is waiting inside. Don't be late on your first day of transfer and get on their bad side. Go on in.\"",
         character: "assets/images/characters/seyoun_pout.png",
         next: "classroom_2"
@@ -692,26 +692,26 @@ Object.assign(SCENARIO[1], {
     "classroom_1_1": {
         name: "Seoyeon",
         text: "(We arrived at the classroom door. The chattering and laughter of students can be heard from inside. Seoyeon lightly pats my shoulder to encourage me.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_1_2"
     },
     "classroom_1_2": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(Where her hand touched feels warm. She looks into my eyes and quietly cheers me on.)",
         character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_1_3"
     },
     "classroom_1_3": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"Here's Class 2-3, where you'll be staying. Don't be nervous. I'm right next to you, so just be yourself. Got it?\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_2"
     },
     "classroom_2": {
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 25, next: "classroom_2_high" },

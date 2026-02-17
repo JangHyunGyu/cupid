@@ -53,13 +53,13 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         character: "assets/images/characters/seyoun_sad.png",
         text: "(Seoyeon takes me to the hallway. Her expression looks serious.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         sunset: true,
         next: "day3_afternoon_confrontation_2"
     },
     "day3_afternoon_confrontation_2": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"About lunch... Did you really make weekend plans with all of us?\"",
         character: "assets/images/characters/seyoun_sad.png",
         sunset: true,
@@ -67,7 +67,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_confrontation_3": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_sad.png",
         text: "(How should I answer...)",
         sunset: true,
@@ -79,7 +79,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_admit": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_sad.png",
         text: "\"...Yes. Sorry. I couldn't turn anyone down...\"",
         sunset: true,
@@ -87,7 +87,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_admit_react": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"...Thanks for being honest. But I don't like that.\"",
         character: "assets/images/characters/seyoun_sad.png",
         sunset: true,
@@ -96,7 +96,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_admit_react_2": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"If I'm really special to you... only meet me. Otherwise, I have options too.\"",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
@@ -105,7 +105,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_justify": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_sad.png",
         text: "\"The times are all different... so I thought I could meet everyone...\"",
         sunset: true,
@@ -113,7 +113,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_justify_react": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"...Don't you see that's the problem?\"",
         character: "assets/images/characters/seyoun_sad.png",
         sunset: true,
@@ -122,7 +122,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_justify_react_2": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"...Fine. We'll see this weekend.\"",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
@@ -130,7 +130,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_lie_seoyeon": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_sad.png",
         text: "\"Seoyeon, you're the only one I'm sincere about. The others are just friends...\"",
         sunset: true,
@@ -138,7 +138,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_lie_seoyeon_react": {
         name: "Seoyeon",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"...Really? Can I trust that?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         sunset: true,
@@ -148,7 +148,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_lie_warning": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_laugh.png",
         text: "(Seoyeon smiles. But... is this right? What should I tell the others?)",
         sunset: true,
@@ -224,13 +224,13 @@ Object.assign(SCENARIO[3], {
         name: "Yuna",
         text: "\"...{name}.\"",
         character: "assets/images/characters/yuna_normal.png",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         sunset: true,
         next: "day3_afternoon_yuna_talk"
     },
     "day3_afternoon_yuna_talk": {
         name: "Yuna",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"At lunch... you chose Seoyeon.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
@@ -238,7 +238,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_talk_2": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(Yuna's eyes are colder than usual.)",
         sunset: true,
@@ -250,7 +250,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_apologize": {
         name: "Yuna",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"...It's okay. We have tomorrow.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
@@ -259,7 +259,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_promise": {
         name: "Yuna",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"...I won't forget those words.\"",
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
@@ -269,7 +269,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_question": {
         name: "Yuna",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"...Upset? No. I just... wanted to confirm.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
@@ -278,7 +278,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_warning": {
         name: "Yuna",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"Remember, {name}. If you lie to me... you know, right?\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,

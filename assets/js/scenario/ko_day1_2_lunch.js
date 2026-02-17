@@ -233,7 +233,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_refuse_rooftop": {
         name: "서연",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "(서연이의 표정이 순간 굳는다. 억지로 웃어 보이지만, 실망한 기색이 역력하다.) \"...그래, 알겠어. 그럼 나 혼자 갈게.\"",
         character: "assets/images/characters/seyoun_sad.png",
         next: "lunch_alone"

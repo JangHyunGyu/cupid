@@ -298,19 +298,19 @@ Object.assign(SCENARIO[5], {
         name: "나",
         character: null,
         text: "(나란히 학교 안으로 들어섰다. 일요일 학교는 텅 비어 있어서 우리 발소리만 울린다.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         next: "day5_corridor1"
     },
     "day5_corridor1": {
         name: "나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: null,
         text: "(이 복도… 전학 온 첫날, 교실을 찾지 못해서 헤맸던 곳이다. 어디로 가야 할지 몰라 발이 떨어지지 않았었지.)",
         next: "day5_corridor2"
     },
     "day5_corridor2": {
         name: "나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: null,
         text: "(그때 이 복도에서 누군가가 말을 걸어줬다. 그 작은 친절이 지금까지 이어진 거다.)",
         next: "day5_classroom_enter"
@@ -439,12 +439,12 @@ Object.assign(SCENARIO[5], {
         name: "유나",
         text: "\"…잠깐. 저기 가볼래. 도서관.\"",
         character: "assets/images/characters/yuna_normal.png",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         next: "day5_memory_yuna2"
     },
     "day5_memory_yuna2": {
         name: "유나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"…여기서 처음으로 옆자리에 앉았었지. 네가 책 제목 물어봤을 때… 놀랐어. 아무도 말 건 적 없었으니까.\"",
         character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: 3 } },
@@ -473,12 +473,12 @@ Object.assign(SCENARIO[5], {
         name: "보건선생님",
         text: "\"보건실 한번 들러볼까? 네가 처음 온 날 기억이 새롭네.\"",
         character: "assets/images/characters/nurse_normal.png",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         next: "day5_memory_nurse2"
     },
     "day5_memory_nurse2": {
         name: "보건선생님",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"전학 첫날 긴장해서 머리 아프다고 왔었잖아. 그때 네 이마에 손 올려줬는데… 네 얼굴이 새빨갛더라, 후후.\"",
         character: "assets/images/characters/nurse_shy.png",
         stats: { Nurse: { affinity: 3 } },

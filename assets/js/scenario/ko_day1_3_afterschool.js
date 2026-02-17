@@ -210,7 +210,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "응, 나도 너랑 같이 가고 싶었어. 도와줄게.", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 5 } } },
             { text: "날 기다려준 거야? 감동인데. 정말 기뻐.", next: "after_seoyeon_worry", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "노을 아래서 보니까 평소보다 훨씬 예쁘네.", next: "after_seoyeon_help", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 10 } } }
+            { text: "노을 아래서 보니까 평소보다 훨씬 예쁘네.", next: "after_seoyeon_compliment", setFlag: "helped_seoyeon", stats: { Seoyeon: { affinity: 10 } } }
         ]
     },
     "after_seoyeon_3_low": {
@@ -236,6 +236,13 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_angry.png",
         sunset: true,
         next: "after_home"
+    },
+    "after_seoyeon_compliment": {
+        name: "서연",
+        text: "(서연이가 순간 얼굴이 빨개진다. 서류로 얼굴을 가리며 입을 삐죽거린다.) \"뭐, 뭐야 갑자기... 놀리는 거야? ...어, 어차피 빨리 끝내야 하니까 이것 좀 도와줘!\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        sunset: true,
+        next: "after_seoyeon_help_action"
     },
     "after_seoyeon_help": {
         name: "서연",
@@ -440,8 +447,8 @@ Object.assign(SCENARIO[1], {
                 next: "after_yuna_secret",
                 affinityChar: "Yuna",
                 affinityBranches: [
-                    { minAffinity: 5, next: "after_yuna_secret_deep" },
-                    { minAffinity: 11, next: "after_yuna_secret" },
+                    { minAffinity: 11, next: "after_yuna_secret_deep" },
+                    { minAffinity: 5, next: "after_yuna_secret" },
                     { minAffinity: -999, next: "after_yuna_secret_fail" }
                 ]
             },
@@ -581,7 +588,7 @@ Object.assign(SCENARIO[1], {
     "after_yuna_scared": {
         name: "유나",
         background: "assets/images/background/top_school.png",
-        text: "(그녀가 차갑게 웃으며 내 손을 놓는다. 그녀는 다시 창밖으로 시선을 돌리며 나를 밀어낸다.)",
+        text: "(그녀가 차갑게 웃으며 한 발 뒤로 물러선다. 그녀는 다시 창밖으로 시선을 돌린다.)",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "after_yuna_scared_2"
@@ -934,7 +941,7 @@ Object.assign(SCENARIO[1], {
     "after_dain_end_2": {
         name: "다인",
         background: "assets/images/background/gym.png",
-        text: "(연습을 마친 다인이는 거친 숨을 몰아쉬며 나에게 달려온다.) \"후아... 후아... 기다리게 해서 미안! 자, 약속했던 떡볶이 먹으러 가자!\"",
+        text: "(연습을 마친 다인이는 거친 숨을 몰아쉬며 나에게 달려온다.) \"후아... 후아... 기다리게 해서 미안! 자, 떡볶이 먹으러 가자!\"",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         setFlag: "dated_dain_day1",

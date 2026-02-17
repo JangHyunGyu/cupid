@@ -146,7 +146,7 @@ Object.assign(SCENARIO[3], {
     // Arriving at school - Heroines' suspicion
     "day3_nurse_home_school_arrival": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         text: "(I arrived at school. The morning air feels especially refreshing today.)",
         background: "assets/images/background/school.png",
         next: "day3_nurse_home_suspicion"
@@ -440,7 +440,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_check_more_after_reject": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         silhouette: true,
         text: "(Let me check other messages.)",
         choices: [
@@ -518,14 +518,14 @@ Object.assign(SCENARIO[3], {
     },
     "day3_change_mind": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        character: null,
         silhouette: true,
         text: "(I sent another message. 'Sorry, I just checked other messages. I actually want to go together!')",
         next: "day3_change_mind_reply"
     },
     "day3_change_mind_teachers": {
         name: "Me",
-        character: "assets/images/characters/nurse_normal.png",
+        character: null,
         silhouette: true,
         text: "(I sent another message. 'Sorry, I actually want to go together!')",
         next: "day3_change_mind_reply"
@@ -640,7 +640,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_seoyeon_crosswalk": {
         name: "Me",
-        character: "assets/images/characters/seyoun_shy.png",
+        character: "assets/images/characters/seyoun_normal.png",
         text: "(We wait for the light at the crosswalk. Standing still, Seoyeon's hand is tantalizingly close to mine.)",
         next: "day3_walk_seoyeon_crosswalk_2"
     },

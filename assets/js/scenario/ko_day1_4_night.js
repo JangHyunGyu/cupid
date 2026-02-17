@@ -831,7 +831,7 @@ Object.assign(SCENARIO[1], {
     "night_goodnight_think": {
         name: "나",
         character: null,
-        text: "(내일은... 서연이, 유나, 다인이, 선생님들. 다시 만날 수 있겠지. 어떤 이야기가 기다리고 있을까.)",
+        text: "(내일은 또 어떤 일이 기다리고 있을까... 기대된다.)",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "night_goodnight_close"
@@ -982,7 +982,7 @@ Object.assign(SCENARIO[1], {
 
     "day1_end": {
         name: "나",
-        text: "(눈을 감자 오늘 만난 소녀들의 얼굴이 하나둘씩 스쳐 지나간다. 서연이의 미소, 유나의 눈빛, 다인이의 웃음소리... 내일은 그녀들과 더 가까워질 수 있을까...)",
+        text: "(오늘 하루를 되돌아본다. 새로운 만남들, 낯선 감정들... 내일은 어떤 하루가 될까.)",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,

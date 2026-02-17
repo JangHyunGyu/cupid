@@ -300,19 +300,19 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         character: null,
         text: "(We walked into the school side by side. The school is empty on a Sunday, so only our footsteps echo through the halls.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         next: "day5_corridor1"
     },
     "day5_corridor1": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: null,
         text: "(This hallway... On my first day as a transfer student, I wandered here trying to find my classroom. I couldn't bring myself to move, not knowing where to go.)",
         next: "day5_corridor2"
     },
     "day5_corridor2": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: null,
         text: "(Someone spoke to me in this hallway back then. That small act of kindness led to everything that followed.)",
         next: "day5_classroom_enter"
@@ -441,12 +441,12 @@ Object.assign(SCENARIO[5], {
         name: "Yuna",
         text: "\"...Wait. Can we go over there? The library.\"",
         character: "assets/images/characters/yuna_normal.png",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         next: "day5_memory_yuna2"
     },
     "day5_memory_yuna2": {
         name: "Yuna",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"...This is where you first sat next to me. When you asked me about the book title... I was surprised. Nobody had ever talked to me before.\"",
         character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: 3 } },
@@ -475,12 +475,12 @@ Object.assign(SCENARIO[5], {
         name: "School Nurse",
         text: "\"Shall we stop by the nurse's office? I vividly remember the day you first came.\"",
         character: "assets/images/characters/nurse_normal.png",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         next: "day5_memory_nurse2"
     },
     "day5_memory_nurse2": {
         name: "School Nurse",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/school_hallway.png",
         text: "\"On your first day, you came in saying you had a headache because you were so nervous. When I put my hand on your forehead... your face turned bright red, hehe.\"",
         character: "assets/images/characters/nurse_shy.png",
         stats: { Nurse: { affinity: 3 } },
