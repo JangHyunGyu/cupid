@@ -86,7 +86,7 @@ Object.assign(SCENARIO[5], {
     "day5_morning_think": {
         name: "나",
         background: "assets/images/background/room_my.png",
-        text: "(이 학교에 전학 온 게 겨우 5일 전이라니. 마치 한 달은 된 것 같은데.)",
+        text: "(이 학교에 전학 온 게 겨우 나흘 전이라니. 마치 한 달은 된 것 같은데.)",
         next: "day5_morning_mirror"
     },
     "day5_morning_mirror": {
