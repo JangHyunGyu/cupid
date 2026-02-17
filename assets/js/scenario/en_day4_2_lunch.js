@@ -252,7 +252,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_dain_react": {
         name: "Me",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(Dain waves and runs over. Meeting outside of school, the vibe is totally different.)",
         next: "day4_dain_compliment"

@@ -440,12 +440,12 @@ Object.assign(SCENARIO[5], {
         name: "Yuna",
         text: "\"...Wait. Can we go over there? The library.\"",
         character: "assets/images/characters/yuna_normal.png",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/library_old.png",
         next: "day5_memory_yuna2"
     },
     "day5_memory_yuna2": {
         name: "Yuna",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/library_old.png",
         text: "\"...This is where you first sat next to me. When you asked me about the book title... I was surprised. Nobody had ever talked to me before.\"",
         character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: 3 } },
@@ -474,12 +474,12 @@ Object.assign(SCENARIO[5], {
         name: "School Nurse",
         text: "\"Shall we stop by the nurse's office? I vividly remember the day you first came.\"",
         character: "assets/images/characters/nurse_normal.png",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/nurse_room.jpg",
         next: "day5_memory_nurse2"
     },
     "day5_memory_nurse2": {
         name: "School Nurse",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"On your first day, you came in saying you had a headache because you were so nervous. When I put my hand on your forehead... your face turned bright red, hehe.\"",
         character: "assets/images/characters/nurse_shy.png",
         stats: { Nurse: { affinity: 3 } },
@@ -533,14 +533,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_rooftop_stairs1": {
         name: "Me",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: null,
         text: "(We climb the stairs. Two sets of footsteps echo through the empty stairwell. One floor, two floors.)",
         next: "day5_rooftop_stairs2"
     },
     "day5_rooftop_stairs2": {
         name: "Me",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: null,
         text: "(We reached the top of the last staircase and stood before the rooftop door. A breeze slips through the gap in the door.)",
         next: "day5_rooftop_door"

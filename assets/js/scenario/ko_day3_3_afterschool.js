@@ -865,7 +865,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_park": {
         name: "나",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(다인이와 근처 공원 벤치에 나란히 앉았다. 아이스크림을 먹으며 석양을 바라본다.)",
         sunset: true,
@@ -873,7 +873,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_park_2": {
         name: "다인",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         text: "(갑자기 조용해지며) \"…{name}. 나, 사실 어제 잠 못 잤어.\"",
         character: "assets/images/characters/dain_normal.png",
         sunset: true,
@@ -881,7 +881,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_park_3": {
         name: "다인",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         text: "\"…내일 연습 보러 와준다면서… 정말 올 거지? 바람 맞추는 거 아니지?\"",
         character: "assets/images/characters/dain_sad.png",
         sunset: true,
@@ -892,7 +892,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_promise_firm": {
         name: "다인",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         text: "(눈이 반짝이며) \"…진짜? 약속!\"",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -900,7 +900,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_pat": {
         name: "다인",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         text: "(머리를 쓰다듬으면 다인이가 얼굴을 붉힌다) \"야, 나 애기 아니거든! …근데 멈추지 마.\"",
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
@@ -909,7 +909,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_dain_freetalk": {
         type: "free_talk",
         name: "나",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(공원 벤치에서 다인이와 아이스크림을 먹으며 이야기를 나눈다.)",
         sunset: true,

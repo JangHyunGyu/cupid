@@ -252,7 +252,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_dain_react": {
         name: "나",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(다인이가 손을 흔들며 뛰어온다. 학교 밖에서 만나니 분위기가 또 다르다.)",
         next: "day4_dain_compliment"
