@@ -859,7 +859,24 @@ Object.assign(SCENARIO[2], {
         name: "Me",
         background: "assets/images/background/room_school.png",
         character: null,
-        text: "(I casually ask the person sitting next to me.) \"Hey, do you know anyone named Yuna?\"",
+        text: "(I casually ask the person sitting next to me.)",
+        branches: [
+            { next: "day2_note_ask_around_met", condition: "met_yuna" },
+            { next: "day2_note_ask_around_new" }
+        ]
+    },
+    "day2_note_ask_around_met": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"Hey, do you know anything about someone named Yuna? I think she's in a different class...\"",
+        next: "day2_note_ask_around_2"
+    },
+    "day2_note_ask_around_new": {
+        name: "Me",
+        background: "assets/images/background/room_school.png",
+        character: null,
+        text: "\"Hey... do you know anyone named Yuna?\"",
         next: "day2_note_ask_around_2"
     },
     "day2_note_ask_around_2": {

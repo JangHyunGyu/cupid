@@ -260,7 +260,6 @@ Object.assign(SCENARIO[2], {
             right: "assets/images/characters/dain_laugh.png"
         },
         sunset: true,
-        setFlag: "knows_name_dain",
         next: "day2_seoyeon_dain_react"
     },
     "day2_seoyeon_dain_react": {
@@ -271,6 +270,7 @@ Object.assign(SCENARIO[2], {
             right: "assets/images/characters/dain_laugh.png"
         },
         sunset: true,
+        setFlag: "knows_name_dain",
         next: "day2_seoyeon_dain_choice"
     },
     "day2_seoyeon_dain_choice": {
@@ -568,13 +568,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_nurse_new": {
         name: "???",
-        text: "\"Hmm? Students at this hour, here? This old warehouse is dangerous...\"",
+        text: "\"Hmm? Students at this hour, here? This old warehouse is dangerous... Oh, I'm the school nurse.\"",
         characters: {
             left: "assets/images/characters/yuna_normal.png",
             right: "assets/images/characters/nurse_normal.png"
         },
         sunset: true,
-        setFlag: "met_nurse",
+        setFlags: ["met_nurse", "knows_name_nurse"],
         next: "day2_yuna_nurse_react"
     },
     "day2_yuna_nurse_react": {
