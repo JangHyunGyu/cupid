@@ -483,13 +483,13 @@ Object.assign(SCENARIO[3], {
         name: "서연",
         text: "\"응! 가자!\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         sunset: true,
         next: "day3_afternoon_seoyeon_walk_others"
     },
     "day3_afternoon_seoyeon_walk_others": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/seyoun_laugh.png",
         text: "(뒤에서 시선이 느껴지지만... 서연이와 걷는 지금이 좋다.)",
         sunset: true,
@@ -526,13 +526,13 @@ Object.assign(SCENARIO[3], {
         name: "나",
         character: "assets/images/characters/seyoun_laugh.png",
         text: "(석양이 강물에 반사되어 반짝인다. 서연이의 얼굴이 주황빛으로 물들어 눈부시다.)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         sunset: true,
         next: "day3_afternoon_seoyeon_sunset_2"
     },
     "day3_afternoon_seoyeon_sunset_2": {
         name: "서연",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(갑자기 발을 멈추고 내 앞에 서며) \"…{name}아. 나 한 가지 물어봐도 돼?\"",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
@@ -540,7 +540,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_seoyeon_sunset_3": {
         name: "서연",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(석양을 배경으로 서연이의 눈이 빛난다) \"내일… 나만 만나줄 거지?\"",
         character: "assets/images/characters/seyoun_shy.png",
         sunset: true,
@@ -552,7 +552,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_seoyeon_pinky": {
         name: "서연",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(서연이가 새끼손가락을 내밀며) \"그럼 새끼손가락 걸자. 약속 어기면… 바늘 만 개 삼키는 거다?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         sunset: true,
@@ -560,7 +560,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_seoyeon_hand": {
         name: "서연",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(서연이의 손이 떨리다가 내 손을 꼭 잡는다) \"…바보. 이런 데서 손 잡으면 어떡해.\"",
         character: "assets/images/characters/seyoun_shy.png",
         sunset: true,
@@ -568,7 +568,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_seoyeon_try": {
         name: "서연",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(살짝 실망한 표정을 짓다가 억지로 웃는다) \"…그래. 노력하는 거다?\"",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
@@ -576,7 +576,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_seoyeon_freetalk": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/seyoun_laugh.png",
         text: "(석양 지는 강변길을 서연이와 나란히 걷는다. 주황빛이 점점 더 깊어진다.)",
         sunset: true,
@@ -585,7 +585,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_seoyeon_talk_walk_2": {
         name: "서연",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"우리 둘만의 시간이잖아. 그치?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         sunset: true,
@@ -660,13 +660,13 @@ Object.assign(SCENARIO[3], {
         name: "나",
         character: null,
         text: "(유나와 함께 조용한 길을 걷는다. 그녀는 말이 없지만, 분위기가 편안하다.)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         sunset: true,
         next: "day3_afternoon_yuna_cat"
     },
     "day3_afternoon_yuna_cat": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: null,
         text: "(길가에 작은 고양이 한 마리가 웅크리고 있다. 유나가 갑자기 멈춘다.)",
         sunset: true,
@@ -674,7 +674,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_cat_2": {
         name: "유나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(조용히 무릎을 꿇고 고양이를 쓰다듬는다) \"…같이 있어줘서 다행이다.\"",
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
@@ -682,7 +682,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_cat_3": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_smile.png",
         text: "(유나가 고양이를 쓰다듬는 모습이… 너무 부드럽다.)",
         sunset: true,
@@ -694,7 +694,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_cat_pat": {
         name: "유나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(두 사람의 손이 고양이 위에서 맞닿는다) \"…따뜻하네.\"",
         character: "assets/images/characters/yuna_shy.png",
         sunset: true,
@@ -702,7 +702,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_head_pat": {
         name: "유나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(머리를 쓰다듬는 내 손에 멈춰선다) \"…나를 쓰다듬는 거야?\"",
         character: "assets/images/characters/yuna_shy.png",
         sunset: true,
@@ -710,7 +710,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_head_pat_2": {
         name: "유나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(눈을 감으며) \"…멈추지 마. 조금만 더.\"",
         character: "assets/images/characters/yuna_shy.png",
         sunset: true,
@@ -718,7 +718,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_cat_watch": {
         name: "유나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(고양이를 안아들며) \"…이 아이, {name}을 닮았어. 따뜻하고… 모자라.\"",
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
@@ -726,7 +726,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_freetalk": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_shy.png",
         text: "(유나와 나란히 길을 걷는다. 평소보다 유나의 표정이 부드럽다.)",
         sunset: true,
@@ -735,7 +735,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_talk_walk_2": {
         name: "유나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"...{name}. 내일 밤, 잊지 마.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
@@ -743,7 +743,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_talk_walk_3": {
         name: "유나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"학교 후문. 8시. 늦으면... 안 돼.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
@@ -751,7 +751,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_warning_walk": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(유나의 목소리에 묘한 압박감이 느껴진다.)",
         sunset: true,
@@ -762,7 +762,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_promise_keep": {
         name: "유나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"...좋아. 믿을게.\"",
         character: "assets/images/characters/yuna_smile.png",
         sunset: true,
@@ -771,7 +771,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_late_question": {
         name: "유나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"...그럼 안 돼. 절대로.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
@@ -779,7 +779,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_yuna_late_warning": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_normal.png",
         text: "(유나의 눈동자가 순간 이상하게 빛난 것 같았다... 착각이겠지?)",
         sunset: true,
@@ -804,13 +804,13 @@ Object.assign(SCENARIO[3], {
         text: "\"야호! 가자 가자!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Seoyeon: { affinity: -5 }, Yuna: { affinity: -5 } },
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         sunset: true,
         next: "day3_afternoon_dain_talk_walk"
     },
     "day3_afternoon_dain_talk_walk": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"야, {name}! 저기 편의점 보이지? 목마르다!\"",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -818,7 +818,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_store": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(다인이가 편의점으로 달려간다. 따라가보니 아이스크림 코너 앞에 멈춰선다.)",
         sunset: true,
@@ -826,7 +826,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_store_2": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"니가 골라줘! 나 골라달라면 다 사고 싶어져서…\"",
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
@@ -837,7 +837,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_ice_one": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(아이스크림을 받아들며) \"…고마워. 역시 {name}이 최고!\"",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -845,7 +845,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_ice_share": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(나눠먹기를 받아들며 얼굴이 빨개진다) \"…이, 이게 나눠먹기?! 간접키스잖아! 아, 아니다! 그냥 나눠먹는 거야!\"",
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
@@ -853,7 +853,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_park": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(다인이와 근처 공원 벤치에 나란히 앉았다. 아이스크림을 먹으며 석양을 바라본다.)",
         sunset: true,
@@ -861,7 +861,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_park_2": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(갑자기 조용해지며) \"…{name}. 나, 사실 어제 잠 못 잤어.\"",
         character: "assets/images/characters/dain_normal.png",
         sunset: true,
@@ -869,7 +869,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_park_3": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"…내일 연습 보러 와준다면서… 정말 올 거지? 바람 맞추는 거 아니지?\"",
         character: "assets/images/characters/dain_sad.png",
         sunset: true,
@@ -880,7 +880,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_promise_firm": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(눈이 반짝이며) \"…진짜? 약속!\"",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -888,7 +888,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_pat": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(머리를 쓰다듬으면 다인이가 얼굴을 붉힌다) \"야, 나 애기 아니거든! …근데 멈추지 마.\"",
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
@@ -896,7 +896,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_freetalk": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(공원 벤치에서 다인이와 아이스크림을 먹으며 이야기를 나눈다.)",
         sunset: true,
@@ -905,7 +905,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_talk_walk_2": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"나 {name}한테 멋진 모습 보여주고 싶거든!\"",
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
@@ -916,7 +916,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_excited": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"좋아! 각오해!\"",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -925,7 +925,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_cheer": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"헤헤... 그 말 듣고 나니까 더 열심히 해야겠다!\"",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -956,7 +956,7 @@ Object.assign(SCENARIO[3], {
         name: "나",
         character: null,
         text: "(혼자 집으로 향한다. 내일은 어떤 하루가 될까...)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         sunset: true,
         fade: true,
         next: "day3_night_start"
@@ -1017,13 +1017,13 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(선생님의 차에 탔다. 퇴근길 도로가 석양으로 물든다.)",
         character: "assets/images/characters/teacher_normal.png",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         sunset: true,
         next: "day3_afternoon_teacher_ride_2"
     },
     "day3_afternoon_teacher_ride_2": {
         name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(운전하며 조용히) \"…{name}야. 우리 이렇게 둘이만 있으니까… 뭔가 이상한 기분이야.\"",
         character: "assets/images/characters/teacher_shy.png",
         sunset: true,
@@ -1031,7 +1031,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_teacher_ride_3": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
         text: "(신호에 멈춘다. 선생님이 조용히 내 손등을 건드린다.)",
         sunset: true,
@@ -1043,7 +1043,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_teacher_hold": {
         name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(선생님이 숨을 멈춘다) \"…신호 바뀌면 놓을 거야. 약속.\"",
         character: "assets/images/characters/teacher_shy.png",
         sunset: true,
@@ -1051,7 +1051,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_teacher_stop": {
         name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(선생님이 쓸쓸하게 웃는다) \"…그래, 맞아. 선생님이 정신 차려야지.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
@@ -1059,7 +1059,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_teacher_lean": {
         name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(놀라서 멈칫하더니… 조용히 내 머리를 쓰다듬는다) \"…아직 신호 안 바뀌었다.\"",
         character: "assets/images/characters/teacher_shy.png",
         sunset: true,
@@ -1067,7 +1067,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_teacher_freetalk": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
         text: "(담임선생님의 차 안에서 함께 집으로 향한다.)",
         sunset: true,
@@ -1076,7 +1076,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_teacher_arrive": {
         name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(집 앞에 도착하며) \"…모레 일요일에 박물관 약속 잊지 않았지? 기대하고 있을게.\"",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
@@ -1097,13 +1097,13 @@ Object.assign(SCENARIO[3], {
         name: "나",
         text: "(보건선생님과 나란히 걷는다. 선생님이 내 손등을 본다.)",
         character: "assets/images/characters/nurse_normal.png",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         sunset: true,
         next: "day3_afternoon_nurse_band"
     },
     "day3_afternoon_nurse_band": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(갑자기 내 손을 잡고 밴드를 붙여준다) \"…여기 긁혔는데? 못 봤어.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
@@ -1111,7 +1111,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_nurse_band_2": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/nurse_normal.png",
         text: "(상처가 없는데… 선생님이 손을 잡고 싶었던 걸까?)",
         sunset: true,
@@ -1122,7 +1122,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_nurse_caught": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(들켰다는 듯 얼굴이 빨개진다) \"…훔, 눈치 빠르네? 그냥… 선생님 마크야.\"",
         character: "assets/images/characters/nurse_shy.png",
         sunset: true,
@@ -1130,7 +1130,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_nurse_hold": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(놀라서 멈춰서다가… 꼭 잡아온다) \"…위험한 애. 10초만 이러고 있자.\"",
         character: "assets/images/characters/nurse_shy.png",
         sunset: true,
@@ -1138,7 +1138,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_nurse_freetalk": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/nurse_shy.png",
         text: "(보건선생님과 나란히 퇴근길을 걷는다.)",
         sunset: true,
@@ -1147,7 +1147,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_nurse_arrive": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"일요일 저녁 7시, 잊으면 안 돼? 선생님 기다리고 있을 테니까.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,

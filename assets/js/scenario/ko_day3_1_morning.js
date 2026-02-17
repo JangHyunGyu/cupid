@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ============================================================================
  * CUPID - Day 3 Morning Scenario (Korean Version)
  * ============================================================================
@@ -585,6 +585,8 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_with_seoyeon": {
         name: "나",
+        background: "assets/images/background/street.png",
+        bgm: "daily2.mp3",
         character: "assets/images/characters/seyoun_laugh.png",
         text: "(서연이의 집 앞으로 향했다.)",
         setFlag: "day3_morning_with_seoyeon",
@@ -718,6 +720,8 @@ Object.assign(SCENARIO[3], {
     
     "day3_walk_with_yuna": {
         name: "나",
+        background: "assets/images/background/street.png",
+        bgm: "daily2.mp3",
         text: "(학교 가는 길 골목 쪽으로 향했다. 나무 그늘 아래 유나가 서 있다.)",
         character: "assets/images/characters/yuna_normal.png",
         setFlag: "day3_morning_with_yuna",
@@ -848,7 +852,7 @@ Object.assign(SCENARIO[3], {
     "day3_walk_with_dain": {
         name: "나",
         text: "(약속 장소로 가는 길. 멀리서 다인이가 손을 크게 흔들며 전속력으로 달려온다.)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "day3_morning_with_dain",
@@ -856,28 +860,28 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_bump": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"{name}!! 야호─!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day3_walk_dain_bump_2"
     },
     "day3_walk_dain_bump_2": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(다인이가 브레이크 없이 돌진해온다. 피할 틈도 없이─ 쿵!)",
         next: "day3_walk_dain_bump_3"
     },
     "day3_walk_dain_bump_3": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"아악! 미, 미안! 브레이크가 안 걸렸어!\"",
         character: "assets/images/characters/dain_shy.png",
         next: "day3_walk_dain_bump_4"
     },
     "day3_walk_dain_bump_4": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_shy.png",
         text: "(다인이가 내 위에 엎어졌다. 서로의 얼굴이 10cm 거리... 다인이의 숨소리가 느껴진다.)",
         choices: [
@@ -888,7 +892,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_help": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(손을 잡아 일으켜주자 다인이의 얼굴이 새빨개진다) \"고, 고마워... 심장 터질 뻔했잖아! 아, 부딪혀서 심장이 뛴 거야! 다른 이유 아니거든!\"",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 5 } },
@@ -896,7 +900,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_bold": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"하?! 바, 바보! 당장 일어나! 사람들 보잖아!\"",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 8 } },
@@ -904,7 +908,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_freeze": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"야, 왜 그래?! 얼굴 빨개진 거 누구야! ...나도 빨개? 아 몰라!\"",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 3 } },
@@ -912,21 +916,21 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_greet_shy": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(벌떡 일어나서 먼지를 털며) \"...바보. 아침부터 무슨 짓이야.\"",
         character: "assets/images/characters/dain_shy.png",
         next: "day3_walk_dain_greet"
     },
     "day3_walk_dain_greet": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(기분을 가다듬으며) \"어, 어쨌든! 같이 학교 가자! 오늘 날씨 완전 운동하기 좋은데?\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day3_walk_dain_freetalk"
     },
     "day3_walk_dain_freetalk": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(다인이와 나란히 학교로 향한다. 아까 부딪힌 일 때문인지 다인이가 평소보다 살짝 거리를 유지한다.)",
         freeTalk: { turns: 4, context: "다인이와 등교길. 아까 부딪혀 넘어지는 해프닝이 있어서 다인이가 약간 수줍어하고 있다. 에너지 넘치지만 가끔 얼굴을 붉힌다." },
@@ -934,7 +938,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_talk": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(신나게 걸으며) \"아! 맞다 {name}! 내일 아침 9시에 체육관에서 우리 팀 연습 경기 있거든? 와서 응원해주라!\"",
         character: "assets/images/characters/dain_normal.png",
         choices: [
@@ -945,7 +949,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_ask": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(다인이가 신나서 점프한다) \"진짜?! 와 대박! 그럼 연습 끝나고 같이 밥도 먹자! 떡볶이 먹으러 가자!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 3 } },
@@ -953,7 +957,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_early": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(다인이가 웃으며) \"그치? 나도 일찍 일어나는 거 힘들긴 한데, 그래도 와주면 진짜 힘날 것 같아!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 1 } },
@@ -961,7 +965,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_hesitate": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(다인이가 어깨동무를 하며) \"괜찮아! 그냥 와서 응원만 해주면 돼! 내 멋진 스파이크 보여줄게!\"",
         character: "assets/images/characters/dain_normal.png",
         stats: { Dain: { affinity: -2 } },
@@ -969,7 +973,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_choice": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(다인이가 기대에 찬 눈빛으로 나를 바라본다.)",
         character: "assets/images/characters/dain_normal.png",
         choices: [
@@ -980,7 +984,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_yes": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(다인이가 내 손을 잡고 흔든다) \"와! 최고야 {name}! 그럼 토요일에 꼭 보자! 늦지 마!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 8 } },
@@ -988,7 +992,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_later": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(다인이가 조금 풀이 죽는다) \"에이... 그래도 꼭 와야 돼? 약속이다?\"",
         character: "assets/images/characters/dain_normal.png",
         stats: { Dain: { affinity: -3 } },
@@ -996,7 +1000,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_no": {
         name: "다인",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(다인이가 실망한 표정을 짓는다) \"아... 그렇구나. 그래도 나중에 시간 나면 꼭 놀러 와!\"",
         character: "assets/images/characters/dain_sad.png",
         stats: { Dain: { affinity: -10 } },
@@ -1005,7 +1009,7 @@ Object.assign(SCENARIO[3], {
     "day3_walk_with_nurse": {
         name: "나",
         text: "(선생님과 만나기로 한 장소 앞으로 향했다. 보건선생님이 기다리고 계신다.)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/nurse_normal.png",
         setFlag: "day3_morning_with_nurse",
@@ -1013,14 +1017,14 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_nurse_greet": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"어머, {name}. 왔네? 후훗, 우리 전학생 참 착하네. 자, 같이 걸어가자.\"",
         character: "assets/images/characters/nurse_normal.png",
 	    next: "day3_walk_nurse_arm"
 	},
 	"day3_walk_nurse_arm": {
 		name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 은근히 내 팔에 손을 올리며 나란히 걷는다. 다른 사람이 보면 뭐라고 생각할까...)",
 		character: "assets/images/characters/nurse_normal.png",
 		choices: [
@@ -1030,7 +1034,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_nurse_enjoy": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 만족스럽게 웃는다) \"후훗, 좋아. 이렇게 같이 걸으니까.\"",
 		character: "assets/images/characters/nurse_shy.png",
 		stats: { Nurse: { affinity: 5 } },
@@ -1038,7 +1042,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_nurse_worry": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 짧은 한숨을 쉬며 손을 뗀다) \"그래... 우리 사이가 들키면 안 되니까.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: 2 } },
@@ -1046,14 +1050,14 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_nurse_conflict": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(뭔가 생각에 잠긴 듯 조용히) \"...{name}야, 선생님이 학생한테 이러면 안 되는 건데... 내 맘이 말을 안 들어.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		next: "day3_walk_nurse_conflict_2"
 	},
 	"day3_walk_nurse_conflict_2": {
 		name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/nurse_normal.png",
 		text: "(선생님의 목소리에 평소에 없는 진지함이 느껴진다. 선생님도 갈등하고 있는 걸까.)",
 		choices: [
@@ -1064,28 +1068,28 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_nurse_confess": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님의 눈이 휘둥그레진다) \"...너, 진짜 위험하다? 선생님을 이렇게 흔들리게 하면 어떡해.\"",
 		character: "assets/images/characters/nurse_shy.png",
 		next: "day3_walk_nurse_freetalk"
 	},
 	"day3_walk_nurse_hand": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 놀란 듯 내 손을 보다가... 꼭 잡아온다) \"...5초만. 5초만 이러고 있자.\"",
 		character: "assets/images/characters/nurse_shy.png",
 		next: "day3_walk_nurse_freetalk"
 	},
 	"day3_walk_nurse_boundary": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님의 표정이 순간 굳어졌다가 억지 미소를 짓는다) \"...그래, 맞아. 선생님은 선생님이니까.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		next: "day3_walk_nurse_freetalk"
 	},
 	"day3_walk_nurse_freetalk": {
 		name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/nurse_shy.png",
 		text: "(보건선생님과 함께 학교로 향한다. 묘한 긴장감과 설렘이 동시에 느껴진다.)",
 		freeTalk: { turns: 3, context: "보건선생님과 등교길. 선생님이 '학생한테 이러면 안 되는데'라며 갈등을 내비쳤다. 금지된 사랑의 묘한 긴장감." },
@@ -1093,7 +1097,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_nurse_talk": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(학교 정문이 보이자 선생님이 다시 밝은 표정을 짓는다) \"저기, {name}야. 혹시 이번 주말에 시간 있니?\"",
 		character: "assets/images/characters/nurse_normal.png",
 		choices: [
@@ -1104,7 +1108,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_ask": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 의미심장하게 웃는다) \"후훗, 사실... 일요일 저녁에 맛있는 레스토랑 예약해뒀거든. 혼자 가기 아까워서... 우리 같이 갈래? 일요일 저녁 7시 어때?\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: 3 } },
@@ -1112,7 +1116,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_curious": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 장난스럽게 윙크한다) \"음... 괜찮은 레스토랑 예약해뒀는데 같이 가고 싶어서. 괜찮으면... 일요일 저녁 7시에?\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: 1 } },
@@ -1120,7 +1124,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_none": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 만족스럽게 미소 짓는다) \"정말? 그럼 우리 일요일 저녁에 같이 저녁 먹자! 7시에 만날까? 주소 보낼게.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: 2 } },
@@ -1128,7 +1132,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_choice": {
 		name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 매혹적인 눈빛으로 나를 바라본다. 심장이 두근거린다...)",
 		character: "assets/images/characters/nurse_normal.png",
 		choices: [
@@ -1139,7 +1143,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_yes": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 내 손을 살짝 쥐었다가 놓는다) \"후훗, 정말? 그럼 일요일 저녁 7시, 기대하고 있을게. 멋지게 입고 와야 해?\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: 8 } },
@@ -1147,7 +1151,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_later": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 조금 아쉬운 표정을 짓는다) \"아... 그래? 그럼 점심시간에 보건실로 놀러 와. 다시 이야기하자.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: -3 } },
@@ -1155,7 +1159,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_no": {
 		name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님의 미소가 살짝 굳어진다) \"...그렇구나. 괜찮아. 다음 기회에 보자.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: -10 } },
@@ -1164,7 +1168,7 @@ Object.assign(SCENARIO[3], {
     "day3_walk_with_teacher": {
         name: "나",
         text: "(약속 장소로 향했다. 담임선생님이 차에서 손을 흔들고 계신다.)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/teacher_normal.png",
         setFlag: "day3_morning_with_teacher",
@@ -1172,35 +1176,35 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_teacher_greet": {
         name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"{name}! 좋은 아침! 같이 차로 출근하니까 좋네. 자, 안전벨트 매렴.\"",
         character: "assets/images/characters/teacher_smile.png",
 	    next: "day3_walk_teacher_car"
 	},
 	"day3_walk_teacher_car": {
 		name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님의 차에 탔다. 은은한 향수 냄새와 잔잔한 음악이 흐른다. 뭔가 어색하면서도 설레는 기분이다.)",
 		character: "assets/images/characters/teacher_normal.png",
 		next: "day3_walk_teacher_hair"
 	},
 	"day3_walk_teacher_hair": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(신호대기 중, 선생님이 갑자기 손을 뻗어 내 머리카락을 정리해준다) \"...잠깐만. 여기 헝클어져 있었어.\"",
 		character: "assets/images/characters/teacher_normal.png",
 		next: "day3_walk_teacher_hair_2"
 	},
 	"day3_walk_teacher_hair_2": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(손을 멈추며 작은 목소리로) \"...학생한테 이러면 안 되는데.\"",
 		character: "assets/images/characters/teacher_shy.png",
 		next: "day3_walk_teacher_conflict"
 	},
 	"day3_walk_teacher_conflict": {
 		name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
 		text: "(선생님의 손길이 따뜻하다. 차 안의 공기가 묘하게 변한다.)",
 		choices: [
@@ -1211,28 +1215,28 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_teacher_warm": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 당황하며 손을 거둔다) \"어마, 이 애가... 선생님을 놀라게 하네.\"",
 		character: "assets/images/characters/teacher_shy.png",
 		next: "day3_walk_teacher_freetalk"
 	},
 	"day3_walk_teacher_hold": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 놀란 듯 내 손을 보다가... 뿌리치지 않는다) \"...신호 바뀌면 놓을 거야. 약속해.\"",
 		character: "assets/images/characters/teacher_shy.png",
 		next: "day3_walk_teacher_freetalk"
 	},
 	"day3_walk_teacher_calm": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 쓸쓸하게 웃는다) \"...고마워. 선생님이 조금 이상했지?\"",
 		character: "assets/images/characters/teacher_smile.png",
 		next: "day3_walk_teacher_freetalk"
 	},
 	"day3_walk_teacher_freetalk": {
 		name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
 		text: "(담임선생님의 차 안에서 학교까지 함께 향한다.)",
 		freeTalk: { turns: 3, context: "담임선생님의 차 안에서 등교 중. 선생님이 머리를 정리해주며 '학생한테 이러면 안 되는데'라고 했다. 금지된 사랑의 묘한 분위기." },
@@ -1240,7 +1244,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_teacher_talk": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(운전하며 선생님이 조심스럽게 말을 꺼낸다) \"저기, {name}야. 혹시 이번 주말에 시간 있니?\"",
 		character: "assets/images/characters/teacher_normal.png",
 		choices: [
@@ -1251,7 +1255,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_ask": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 잠깐 나를 쳐다보며 미소 짓는다) \"사실... 박물관 전시회 티켓이 두 장 생겼거든. 혼자 가기 아까워서... 우리 같이 갈래? 일요일 오후 2시 어때?\"",
 		character: "assets/images/characters/teacher_smile.png",
 		stats: { Teacher: { affinity: 3 } },
@@ -1259,7 +1263,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_curious": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "\"음... 박물관 전시회 티켓이 있는데 같이 가고 싶어서. 괜찮으면... 일요일 오후 2시에?\"",
 		character: "assets/images/characters/teacher_normal.png",
 		stats: { Teacher: { affinity: 1 } },
@@ -1267,7 +1271,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_none": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 반색하며) \"정말? 그럼 우리 일요일 오후에 박물관 전시회 보러 가자! 2시에 박물관 앞에서 만날까?\"",
 		character: "assets/images/characters/teacher_smile.png",
 		stats: { Teacher: { affinity: 2 } },
@@ -1275,7 +1279,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_choice": {
 		name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 기대에 찬 눈빛으로 잠깐 나를 본다. 차 안의 공기가 묘하게 따뜻하다...)",
 		character: "assets/images/characters/teacher_normal.png",
 		choices: [
@@ -1286,7 +1290,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_yes": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 환하게 웃으며) \"정말? 그럼 일요일 오후 2시, 꼭 보자. 재미있을 거야!\"",
 		character: "assets/images/characters/teacher_smile.png",
 		stats: { Teacher: { affinity: 8 } },
@@ -1294,7 +1298,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_later": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님이 조금 아쉬운 표정을 짓는다) \"아... 그래? 그럼 점심시간에 다시 이야기하자.\"",
 		character: "assets/images/characters/teacher_normal.png",
 		stats: { Teacher: { affinity: -3 } },
@@ -1302,7 +1306,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_no": {
 		name: "담임선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(선생님의 표정이 순간 굳어진다) \"...실망이구나. 선생님은 너한테 거는 기대가 컸는데.\"",
 		character: "assets/images/characters/teacher_normal.png",
 		stats: { Teacher: { affinity: -10 } },
@@ -1326,7 +1330,9 @@ Object.assign(SCENARIO[3], {
     },   
     "day3_walk_alone": {
         name: "나",
-        character: "assets/images/characters/seyoun_normal.png",
+        background: "assets/images/background/street.png",
+        bgm: "daily2.mp3",
+        character: null,
         text: "(혼자 학교로 향했다. 아침 공기가 상쾌하다.)",
         next: "day3_arrive_school"
     },     

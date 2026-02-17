@@ -585,6 +585,8 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_with_seoyeon": {
         name: "Me",
+        background: "assets/images/background/street.png",
+        bgm: "daily2.mp3",
         character: "assets/images/characters/seyoun_laugh.png",
         text: "(I headed to the front of Seoyeon's house.)",
         setFlag: "day3_morning_with_seoyeon",
@@ -718,6 +720,8 @@ Object.assign(SCENARIO[3], {
     
     "day3_walk_with_yuna": {
         name: "Me",
+        background: "assets/images/background/street.png",
+        bgm: "daily2.mp3",
         text: "(I headed toward the alley on the way to school. Yuna is standing under the shade of a tree.)",
         character: "assets/images/characters/yuna_normal.png",
         setFlag: "day3_morning_with_yuna",
@@ -849,7 +853,7 @@ Object.assign(SCENARIO[3], {
     "day3_walk_with_dain": {
         name: "Me",
         text: "(On the way to the meeting spot. From a distance, Dain is waving her hand widely and running toward me.)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/dain_laugh.png",
         setFlag: "day3_morning_with_dain",
@@ -857,28 +861,28 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_bump": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"{name}!! Yay~!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day3_walk_dain_bump_2"
     },
     "day3_walk_dain_bump_2": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(Dain charges at me full speed with no brakes. There's no time to dodge— CRASH!)",
         next: "day3_walk_dain_bump_3"
     },
     "day3_walk_dain_bump_3": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"Ow! S-sorry! I couldn't stop!\"",
         character: "assets/images/characters/dain_shy.png",
         next: "day3_walk_dain_bump_4"
     },
     "day3_walk_dain_bump_4": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_shy.png",
         text: "(Dain fell on top of me. Our faces are barely 10 centimeters apart... I can feel her breath.)",
         choices: [
@@ -889,7 +893,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_help": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(As I take her hand and help her up, Dain's face turns beet red) \"Th-thanks... My heart almost exploded! I mean from the crash! Not for any other reason!\"",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 5 } },
@@ -897,7 +901,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_bold": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"Huh?! Y-you idiot! Get up now! People are watching!\"",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 8 } },
@@ -905,7 +909,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_freeze": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"Hey, what's wrong?! Who's blushing here?! ...Am I blushing too? Ugh, whatever!\"",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 3 } },
@@ -913,21 +917,21 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_greet_shy": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(Jumping up and dusting herself off) \"...Dummy. What are you doing first thing in the morning.\"",
         character: "assets/images/characters/dain_shy.png",
         next: "day3_walk_dain_greet"
     },
     "day3_walk_dain_greet": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(Composing herself) \"A-anyway! Let's walk to school together! The weather is perfect for exercise today!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day3_walk_dain_freetalk"
     },
     "day3_walk_dain_freetalk": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(I walk alongside Dain toward school. Perhaps because of the earlier collision, she's keeping a bit more distance than usual.)",
         freeTalk: { turns: 4, context: "Walking to school with Dain. There was a bumping incident earlier so Dain is a bit shy. She's energetic but blushes occasionally." },
@@ -935,7 +939,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_dain_talk": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(Walking excitedly) \"Oh! By the way {name}! Tomorrow at 9 AM, our team has a practice match at the gym. Come cheer for me!\"",
         character: "assets/images/characters/dain_normal.png",
         choices: [
@@ -946,7 +950,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_ask": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(Dain jumps excitedly) \"Really?! Awesome! Then after practice, let's eat together! Let's go get tteokbokki!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 3 } },
@@ -954,7 +958,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_early": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(Dain smiles) \"Right? It's hard for me to wake up early too, but it would really give me energy if you came!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 1 } },
@@ -962,7 +966,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_hesitate": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(Dain puts her arm around my shoulder) \"It's okay! Just come and cheer! I'll show you my awesome spike!\"",
         character: "assets/images/characters/dain_normal.png",
         stats: { Dain: { affinity: -2 } },
@@ -970,7 +974,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_choice": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(Dain looks at me with hopeful eyes.)",
         character: "assets/images/characters/dain_normal.png",
         choices: [
@@ -981,7 +985,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_yes": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(Dain grabs my hand and shakes it) \"Wow! You're the best {name}! Then see you on Saturday! Don't be late!\"",
         character: "assets/images/characters/dain_laugh.png",
         stats: { Dain: { affinity: 8 } },
@@ -989,7 +993,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_later": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(Dain looks a bit down) \"Aw... But you have to come, okay? Promise?\"",
         character: "assets/images/characters/dain_normal.png",
         stats: { Dain: { affinity: -3 } },
@@ -997,7 +1001,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_dain_weekend_no": {
         name: "Dain",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "(Dain makes a disappointed face) \"Oh... I see. But if you have time later, make sure to visit!\"",
         character: "assets/images/characters/dain_sad.png",
         stats: { Dain: { affinity: -10 } },
@@ -1007,21 +1011,21 @@ Object.assign(SCENARIO[3], {
         name: "Me",
         text: "(I headed to the meeting spot with the teacher. The school nurse is waiting.)",
         setFlag: "day3_morning_with_nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/nurse_normal.png",
         next: "day3_walk_nurse_greet"
     },
     "day3_walk_nurse_greet": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"Oh my, {name}. You came? Hehe, our transfer student is so nice. Come on, let's walk together.\"",
         character: "assets/images/characters/nurse_normal.png",
 	    next: "day3_walk_nurse_arm"
 	},
 	"day3_walk_nurse_arm": {
 		name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher subtly places her hand on my arm as we walk side by side. What would people think if they saw us...)",
 		character: "assets/images/characters/nurse_normal.png",
 		choices: [
@@ -1031,7 +1035,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_nurse_enjoy": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher smiles with satisfaction) \"Hehe, this is nice. Walking together like this.\"",
 		character: "assets/images/characters/nurse_shy.png",
 		stats: { Nurse: { affinity: 5 } },
@@ -1039,7 +1043,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_nurse_worry": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher sighs softly and removes her hand) \"You're right... We can't let anyone find out about us.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: 2 } },
@@ -1047,14 +1051,14 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_nurse_conflict": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(Looking lost in thought, she says quietly) \"...{name}, I know a teacher shouldn't be doing this with a student... but my heart won't listen.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		next: "day3_walk_nurse_conflict_2"
 	},
 	"day3_walk_nurse_conflict_2": {
 		name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/nurse_normal.png",
 		text: "(There's an unusual seriousness in her voice. Is she struggling with this too?)",
 		choices: [
@@ -1065,28 +1069,28 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_nurse_confess": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(Her eyes go wide) \"...You're really dangerous, you know? Making a teacher's heart waver like this.\"",
 		character: "assets/images/characters/nurse_shy.png",
 		next: "day3_walk_nurse_freetalk"
 	},
 	"day3_walk_nurse_hand": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(She looks down at our hands in surprise... then holds on tight) \"...Just five seconds. Let's stay like this for just five seconds.\"",
 		character: "assets/images/characters/nurse_shy.png",
 		next: "day3_walk_nurse_freetalk"
 	},
 	"day3_walk_nurse_boundary": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(Her expression freezes for a moment before she forces a smile) \"...Right. A teacher is a teacher, after all.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		next: "day3_walk_nurse_freetalk"
 	},
 	"day3_walk_nurse_freetalk": {
 		name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/nurse_shy.png",
 		text: "(I walk toward school with the nurse. A strange mix of tension and excitement fills the air.)",
 		freeTalk: { turns: 3, context: "Walking to school with the school nurse. She confessed that she shouldn't feel this way about a student. The tension of a forbidden love hangs in the air." },
@@ -1094,7 +1098,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_nurse_talk": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(Walking to school, the teacher subtly places her hand on my arm) \"Say, {name}. Do you have time this weekend?\"",
 		character: "assets/images/characters/nurse_normal.png",
 		choices: [
@@ -1105,7 +1109,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_ask": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher smiles meaningfully) \"Hehe, actually... I reserved a nice restaurant for Sunday evening. It'd be a shame to go alone... Want to come with me? How about Sunday evening at 7?\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: 3 } },
@@ -1113,7 +1117,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_curious": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher winks playfully) \"Hmm... I have a nice restaurant reserved and I wanted to go together. If you're okay with it... Sunday evening at 7?\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: 1 } },
@@ -1121,7 +1125,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_none": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher smiles with satisfaction) \"Really? Then let's have dinner together on Sunday evening! How about meeting at 7? I'll send you the address.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: 2 } },
@@ -1129,7 +1133,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_choice": {
 		name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher gazes at me with captivating eyes. My heart is racing...)",
 		character: "assets/images/characters/nurse_normal.png",
 		choices: [
@@ -1140,7 +1144,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_yes": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher gently squeezes my hand then lets go) \"Hehe, really? Then Sunday evening at 7, I'll be looking forward to it. Dress up nice, okay?\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: 8 } },
@@ -1148,7 +1152,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_later": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher makes a slightly disappointed face) \"Oh... really? Then come visit the nurse's office at lunchtime. Let's talk again.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: -3 } },
@@ -1156,7 +1160,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_nurse_weekend_no": {
 		name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher's smile stiffens slightly) \"...I see. That's okay. Maybe next time.\"",
 		character: "assets/images/characters/nurse_normal.png",
 		stats: { Nurse: { affinity: -10 } },
@@ -1165,7 +1169,7 @@ Object.assign(SCENARIO[3], {
     "day3_walk_with_teacher": {
         name: "Me",
         text: "(I headed to the meeting spot. The homeroom teacher is waving from the car.)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         bgm: "daily2.mp3",
         character: "assets/images/characters/teacher_normal.png",
         setFlag: "day3_morning_with_teacher",
@@ -1173,35 +1177,35 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_teacher_greet": {
         name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         text: "\"{name}! Good morning! It's nice to commute together by car. Now, put on your seatbelt.\"",
         character: "assets/images/characters/teacher_smile.png",
 	    next: "day3_walk_teacher_car"
 	},
 	"day3_walk_teacher_car": {
 		name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(I got into the teacher's car. A subtle perfume scent and soft music fills the air. It feels awkward yet exciting.)",
 		character: "assets/images/characters/teacher_normal.png",
 		next: "day3_walk_teacher_hair"
 	},
 	"day3_walk_teacher_hair": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(While stopped at a red light, the teacher suddenly reaches out to fix my hair) \"...Hold on. This part was messy.\"",
 		character: "assets/images/characters/teacher_normal.png",
 		next: "day3_walk_teacher_hair_2"
 	},
 	"day3_walk_teacher_hair_2": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(She pauses, whispering) \"...I shouldn't be doing this to a student.\"",
 		character: "assets/images/characters/teacher_shy.png",
 		next: "day3_walk_teacher_conflict"
 	},
 	"day3_walk_teacher_conflict": {
 		name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
 		text: "(Her touch is warm. The air inside the car shifts to something strange.)",
 		choices: [
@@ -1212,28 +1216,28 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_teacher_warm": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher pulls her hand back, flustered) \"Oh my, this kid... Surprising a teacher like that.\"",
 		character: "assets/images/characters/teacher_shy.png",
 		next: "day3_walk_teacher_freetalk"
 	},
 	"day3_walk_teacher_hold": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(She looks at our hands in surprise... but doesn't pull away) \"...When the light changes, I'm letting go. Promise.\"",
 		character: "assets/images/characters/teacher_shy.png",
 		next: "day3_walk_teacher_freetalk"
 	},
 	"day3_walk_teacher_calm": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher smiles wistfully) \"...Thank you. Was teacher being a bit strange?\"",
 		character: "assets/images/characters/teacher_smile.png",
 		next: "day3_walk_teacher_freetalk"
 	},
 	"day3_walk_teacher_freetalk": {
 		name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
 		text: "(Riding in the homeroom teacher's car on the way to school.)",
 		freeTalk: { turns: 3, context: "In the homeroom teacher's car on the way to school. She fixed my hair and said 'I shouldn't be doing this to a student.' The tension of a forbidden love hangs in the air." },
@@ -1241,7 +1245,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_walk_teacher_talk": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(While driving, the teacher carefully brings up a topic) \"Say, {name}. Do you have time this weekend?\"",
 		character: "assets/images/characters/teacher_normal.png",
 		choices: [
@@ -1252,7 +1256,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_ask": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher glances at me and smiles) \"Actually... I got two tickets for a museum exhibition. It'd be a shame to go alone... Want to come with me? How about Sunday afternoon at 2?\"",
 		character: "assets/images/characters/teacher_smile.png",
 		stats: { Teacher: { affinity: 3 } },
@@ -1260,7 +1264,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_curious": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "\"Hmm... I have museum exhibition tickets and I wanted to go together. If you're okay with it... Sunday afternoon at 2?\"",
 		character: "assets/images/characters/teacher_normal.png",
 		stats: { Teacher: { affinity: 1 } },
@@ -1268,7 +1272,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_none": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher's face lights up) \"Really? Then let's go see the museum exhibition on Sunday afternoon! How about meeting at the museum at 2?\"",
 		character: "assets/images/characters/teacher_smile.png",
 		stats: { Teacher: { affinity: 2 } },
@@ -1276,7 +1280,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_choice": {
 		name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher glances at me with hopeful eyes. The air in the car feels strangely warm...)",
 		character: "assets/images/characters/teacher_normal.png",
 		choices: [
@@ -1287,7 +1291,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_yes": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher smiles brightly) \"Really? Then Sunday at 2 PM, it's a date. It'll be fun!\"",
 		character: "assets/images/characters/teacher_smile.png",
 		stats: { Teacher: { affinity: 8 } },
@@ -1295,7 +1299,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_later": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher makes a slightly disappointed face) \"Oh... really? Then let's talk again at lunchtime.\"",
 		character: "assets/images/characters/teacher_normal.png",
 		stats: { Teacher: { affinity: -3 } },
@@ -1303,7 +1307,7 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_teacher_weekend_no": {
 		name: "Homeroom Teacher",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/street.png",
 		text: "(The teacher's expression stiffens for a moment) \"...That's disappointing. I had high expectations for you.\"",
 		character: "assets/images/characters/teacher_normal.png",
 		stats: { Teacher: { affinity: -10 } },
@@ -1327,7 +1331,9 @@ Object.assign(SCENARIO[3], {
     },   
     "day3_walk_alone": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
+        background: "assets/images/background/street.png",
+        bgm: "daily2.mp3",
+        character: null,
         text: "(I headed to school alone. The morning air is refreshing.)",
         next: "day3_arrive_school"
     },     
