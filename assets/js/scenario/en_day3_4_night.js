@@ -505,10 +505,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_phone_seoyeon_freetalk"
     },
     "day3_night_phone_seoyeon_freetalk": {
+        type: "free_talk",
         name: "Me",
         character: "assets/images/characters/seyoun_shy.png",
         text: "(Having a late-night call with Seoyeon. Her voice sounds softer than usual in the dark room.)",
-        freeTalk: { turns: 3, context: "Late-night phone call. Seoyeon called saying 'I wanted to hear your voice.' A sweet late-night conversation. Seoyeon suddenly called before bed." },
+        context: "Late-night phone call. Seoyeon called saying 'I wanted to hear your voice.' A sweet late-night conversation. Seoyeon suddenly called before bed.",
+        maxTurns: 3,
         silhouette: true,
         night: true,
         next: "day3_night_phone_end"
@@ -522,10 +524,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_phone_yuna_freetalk"
     },
     "day3_night_phone_yuna_freetalk": {
+        type: "free_talk",
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
         text: "(Having a late-night call with Yuna. Her quiet breathing reaches my ear.)",
-        freeTalk: { turns: 2, context: "Late-night phone call. Yuna called saying 'I can't fall asleep.' A quiet and intimate late-night conversation. Her soft breathing feels close." },
+        context: "Late-night phone call. Yuna called saying 'I can't fall asleep.' A quiet and intimate late-night conversation. Her soft breathing feels close.",
+        maxTurns: 2,
         silhouette: true,
         night: true,
         next: "day3_night_phone_end"
@@ -539,10 +543,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_phone_dain_freetalk"
     },
     "day3_night_phone_dain_freetalk": {
+        type: "free_talk",
         name: "Me",
         character: "assets/images/characters/dain_normal.png",
         text: "(Having a late-night call with Dain. Instead of her usual energy, her quiet voice feels new.)",
-        freeTalk: { turns: 3, context: "Late-night phone call. Dain called saying 'Thinking about tomorrow, I can't sleep!' Unusually quiet Dain. A soft late-night atmosphere." },
+        context: "Late-night phone call. Dain called saying 'Thinking about tomorrow, I can't sleep!' Unusually quiet Dain. A soft late-night atmosphere.",
+        maxTurns: 3,
         silhouette: true,
         night: true,
         next: "day3_night_phone_end"
@@ -556,10 +562,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_phone_nurse_freetalk"
     },
     "day3_night_phone_nurse_freetalk": {
+        type: "free_talk",
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
         text: "(Having a late-night call with the school nurse. Her low voice reaches my ear.)",
-        freeTalk: { turns: 2, context: "Late-night phone call. The school nurse called saying 'I couldn't sleep.' Her low, gentle voice. A forbidden love's late-night call." },
+        context: "Late-night phone call. The school nurse called saying 'I couldn't sleep.' Her low, gentle voice. A forbidden love's late-night call.",
+        maxTurns: 2,
         silhouette: true,
         night: true,
         next: "day3_night_phone_end"
@@ -573,10 +581,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_phone_teacher_freetalk"
     },
     "day3_night_phone_teacher_freetalk": {
+        type: "free_talk",
         name: "Me",
         character: "assets/images/characters/teacher_normal.png",
         text: "(Having a late-night call with the homeroom teacher. Her quiet voice sounds close.)",
-        freeTalk: { turns: 2, context: "Late-night phone call. The homeroom teacher called saying 'I know it's bedtime, but...' Her quiet voice. A forbidden love's late-night call." },
+        context: "Late-night phone call. The homeroom teacher called saying 'I know it's bedtime, but...' Her quiet voice. A forbidden love's late-night call.",
+        maxTurns: 2,
         silhouette: true,
         night: true,
         next: "day3_night_phone_end"

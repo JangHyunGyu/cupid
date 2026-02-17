@@ -399,7 +399,6 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_gate": {
         name: "나",
         background: "assets/images/background/school.png",
-        character: "assets/images/characters/seyoun_normal.png",
         text: "(누군가 기다리고 있는 것 같다.)",
         sunset: true,
         branches: [

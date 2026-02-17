@@ -652,10 +652,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_walk_seoyeon_freetalk"
     },
     "day3_walk_seoyeon_freetalk": {
+        type: "free_talk",
         name: "Me",
         character: "assets/images/characters/seyoun_shy.png",
         text: "(We chat about various things on the way to school.)",
-        freeTalk: { turns: 4, context: "Walking to school with Seoyeon side by side. Our hands touched at the crosswalk, so there's a slightly self-conscious atmosphere. It's Friday morning, so weekend plans might come up." },
+        context: "Walking to school with Seoyeon side by side. Our hands touched at the crosswalk, so there's a slightly self-conscious atmosphere. It's Friday morning, so weekend plans might come up.",
+        maxTurns: 4,
         next: "day3_seoyeon_weekend_talk"
     },
     "day3_seoyeon_weekend_talk": {
@@ -785,10 +787,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_walk_yuna_freetalk"
     },
     "day3_walk_yuna_freetalk": {
+        type: "free_talk",
         name: "Me",
         character: "assets/images/characters/yuna_shy.png",
         text: "(I walk alongside Yuna toward school. A quiet but comfortable silence fills the air.)",
-        freeTalk: { turns: 3, context: "Walking to school with Yuna in the morning. She just fixed my necktie, creating an oddly intimate atmosphere. It's quiet but the distance between us feels close." },
+        context: "Walking to school with Yuna in the morning. She just fixed my necktie, creating an oddly intimate atmosphere. It's quiet but the distance between us feels close.",
+        maxTurns: 3,
         next: "day3_walk_yuna_talk"
     },
     "day3_walk_yuna_talk": {
@@ -933,11 +937,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_walk_dain_freetalk"
     },
     "day3_walk_dain_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(I walk alongside Dain toward school. Perhaps because of the earlier collision, she's keeping a bit more distance than usual.)",
-        freeTalk: { turns: 4, context: "Walking to school with Dain. There was a bumping incident earlier so Dain is a bit shy. She's energetic but blushes occasionally." },
+        context: "Walking to school with Dain. There was a bumping incident earlier so Dain is a bit shy. She's energetic but blushes occasionally.",
+        maxTurns: 4,
         next: "day3_walk_dain_talk"
     },
     "day3_walk_dain_talk": {
@@ -1092,11 +1098,13 @@ Object.assign(SCENARIO[3], {
 		next: "day3_walk_nurse_freetalk"
 	},
 	"day3_walk_nurse_freetalk": {
+		type: "free_talk",
 		name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/nurse_shy.png",
 		text: "(I walk toward school with the nurse. A strange mix of tension and excitement fills the air.)",
-		freeTalk: { turns: 3, context: "Walking to school with the school nurse. She confessed that she shouldn't feel this way about a student. The tension of a forbidden love hangs in the air." },
+		context: "Walking to school with the school nurse. She confessed that she shouldn't feel this way about a student. The tension of a forbidden love hangs in the air.",
+		maxTurns: 3,
 		next: "day3_walk_nurse_talk"
 	},
 	"day3_walk_nurse_talk": {
@@ -1239,11 +1247,13 @@ Object.assign(SCENARIO[3], {
 		next: "day3_walk_teacher_freetalk"
 	},
 	"day3_walk_teacher_freetalk": {
+		type: "free_talk",
 		name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
 		text: "(Riding in the homeroom teacher's car on the way to school.)",
-		freeTalk: { turns: 3, context: "In the homeroom teacher's car on the way to school. She fixed my hair and said 'I shouldn't be doing this to a student.' The tension of a forbidden love hangs in the air." },
+		context: "In the homeroom teacher's car on the way to school. She fixed my hair and said 'I shouldn't be doing this to a student.' The tension of a forbidden love hangs in the air.",
+		maxTurns: 3,
 		next: "day3_walk_teacher_talk"
 	},
 	"day3_walk_teacher_talk": {
@@ -1318,7 +1328,6 @@ Object.assign(SCENARIO[3], {
 	},
 	"day3_prepare_school": {
         name: "Me",
-        character: "assets/images/characters/seyoun_normal.png",
         text: "(I hurried to get ready for school.)",
         next: "day3_walk_alone"
     },

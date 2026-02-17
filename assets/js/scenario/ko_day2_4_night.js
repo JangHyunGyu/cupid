@@ -154,21 +154,51 @@ Object.assign(SCENARIO[2], {
         text: "(눈을 감으면 오늘 있었던 장면들이 파노라마처럼 스쳐 지나간다. 이틀째인데... 이미 이 학교가 내 일상의 일부가 된 것 같아.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "day2_night_reflect_yuna_secret"
+        next: "day2_night_reflect_yuna_check"
+    },
+    "day2_night_reflect_yuna_check": {
+        name: "시스템",
+        text: "",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        branches: [
+            { next: "day2_night_reflect_yuna_secret", condition: "met_yuna" },
+            { next: "day2_night_reflect_seoyeon_check" }
+        ]
     },
     "day2_night_reflect_yuna_secret": {
         name: "나",
         text: "(유나가 속삭였던 비밀... 아직도 머릿속을 떠나지 않는다. 그 아이는 왜 나한테만 그런 이야기를 한 걸까? 저 신비로운 눈동자 속에 어떤 세계가 펼쳐져 있는 건지...)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "day2_night_reflect_seoyeon"
+        next: "day2_night_reflect_seoyeon_check"
+    },
+    "day2_night_reflect_seoyeon_check": {
+        name: "시스템",
+        text: "",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        branches: [
+            { next: "day2_night_reflect_seoyeon", condition: "met_seoyeon" },
+            { next: "day2_night_reflect_dain_check" }
+        ]
     },
     "day2_night_reflect_seoyeon": {
         name: "나",
         text: "(서연이는 오늘도 변함없이 밝았어. 학생회 일로 바쁘면서도 나를 챙겨주려고 애쓰는 모습이... 사실 좀 미안하기도 하고, 고맙기도 하고.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "day2_night_reflect_dain"
+        next: "day2_night_reflect_dain_check"
+    },
+    "day2_night_reflect_dain_check": {
+        name: "시스템",
+        text: "",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        branches: [
+            { next: "day2_night_reflect_dain", condition: "met_dain" },
+            { next: "day2_night_reflect_adults" }
+        ]
     },
     "day2_night_reflect_dain": {
         name: "나",

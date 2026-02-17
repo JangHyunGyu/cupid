@@ -154,21 +154,51 @@ Object.assign(SCENARIO[2], {
         text: "(When I close my eyes, the scenes from today flash by like a panorama. It's only been two days... but this school already feels like part of my everyday life.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "day2_night_reflect_yuna_secret"
+        next: "day2_night_reflect_yuna_check"
+    },
+    "day2_night_reflect_yuna_check": {
+        name: "System",
+        text: "",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        branches: [
+            { next: "day2_night_reflect_yuna_secret", condition: "met_yuna" },
+            { next: "day2_night_reflect_seoyeon_check" }
+        ]
     },
     "day2_night_reflect_yuna_secret": {
         name: "Me",
         text: "(The secret Yuna whispered to me... it still lingers in my mind. Why did she tell only me something like that? What kind of world lies behind those mysterious eyes of hers...)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "day2_night_reflect_seoyeon"
+        next: "day2_night_reflect_seoyeon_check"
+    },
+    "day2_night_reflect_seoyeon_check": {
+        name: "System",
+        text: "",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        branches: [
+            { next: "day2_night_reflect_seoyeon", condition: "met_seoyeon" },
+            { next: "day2_night_reflect_dain_check" }
+        ]
     },
     "day2_night_reflect_seoyeon": {
         name: "Me",
         text: "(Seoyeon was her usual cheerful self today. Even though she's busy with student council work, she tries so hard to look after me... I feel a bit guilty, but also grateful.)",
         background: "assets/images/background/room_my.png",
         night: true,
-        next: "day2_night_reflect_dain"
+        next: "day2_night_reflect_dain_check"
+    },
+    "day2_night_reflect_dain_check": {
+        name: "System",
+        text: "",
+        background: "assets/images/background/room_my.png",
+        night: true,
+        branches: [
+            { next: "day2_night_reflect_dain", condition: "met_dain" },
+            { next: "day2_night_reflect_adults" }
+        ]
     },
     "day2_night_reflect_dain": {
         name: "Me",

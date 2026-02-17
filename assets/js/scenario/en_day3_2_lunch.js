@@ -279,11 +279,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_seoyeon_freetalk"
     },
     "day3_lunch_seoyeon_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/store.png",
         character: "assets/images/characters/seyoun_shy.png",
         text: "(Sitting side by side with Seoyeon on the bench behind the school, chatting.)",
-        freeTalk: { turns: 4, context: "Sitting with Seoyeon on a bench behind school. She leaned her head on my shoulder and confessed she thinks about me every day. Sweet atmosphere." },
+        context: "Sitting with Seoyeon on a bench behind school. She leaned her head on my shoulder and confessed she thinks about me every day. Sweet atmosphere.",
+        maxTurns: 4,
         next: "day3_lunch_seoyeon_bell"
     },
     "day3_lunch_seoyeon_bell": {
@@ -402,11 +404,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_yuna_freetalk"
     },
     "day3_lunch_yuna_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/top_school.png",
         character: "assets/images/characters/yuna_shy.png",
         text: "(Lying on Yuna's lap, looking up at the sky from the rooftop, chatting.)",
-        freeTalk: { turns: 4, context: "Lying on Yuna's lap on the rooftop. Yuna made a homemade lunchbox and is stroking my hair. Quiet, peaceful atmosphere." },
+        context: "Lying on Yuna's lap on the rooftop. Yuna made a homemade lunchbox and is stroking my hair. Quiet, peaceful atmosphere.",
+        maxTurns: 4,
         next: "day3_lunch_yuna_talk_1"
     },
     "day3_lunch_yuna_talk_1": {
@@ -585,11 +589,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/store.png",
         character: "assets/images/characters/dain_shy.png",
         text: "(Sitting side by side with Dain in the cafeteria, chatting. She's shier than usual.)",
-        freeTalk: { turns: 3, context: "Having lunch with Dain. She asked 'What am I to you?' seriously. She's being shy instead of her usual energetic self." },
+        context: "Having lunch with Dain. She asked 'What am I to you?' seriously. She's being shy instead of her usual energetic self.",
+        maxTurns: 3,
         next: "day3_lunch_dain_end"
     },
     "day3_lunch_dain_end": {
@@ -837,11 +843,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_nurse_freetalk"
     },
     "day3_lunch_nurse_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/room_school.png",
         character: "assets/images/characters/nurse_normal.png",
         text: "(Having lunch together in the nurse's office. My heart races at the secretive atmosphere.)",
-        freeTalk: { turns: 3, context: "Having lunch alone with the school nurse in her office. She locked the door. It feels like a secret date. The thrill of a forbidden love." },
+        context: "Having lunch alone with the school nurse in her office. She locked the door. It feels like a secret date. The thrill of a forbidden love.",
+        maxTurns: 3,
         next: "day3_lunch_nurse_4"
     },
     "day3_lunch_nurse_4": {
@@ -877,11 +885,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_teacher_freetalk"
     },
     "day3_lunch_teacher_freetalk": {
+        type: "free_talk",
         name: "Me",
         background: "assets/images/background/room_school.png",
         character: "assets/images/characters/teacher_shy.png",
         text: "(Having lunch with the homeroom teacher in the teachers' office.)",
-        freeTalk: { turns: 3, context: "Having lunch alone with the homeroom teacher in her office. She shyly closed the door. Secret date atmosphere." },
+        context: "Having lunch alone with the homeroom teacher in her office. She shyly closed the door. Secret date atmosphere.",
+        maxTurns: 3,
         next: "day3_lunch_teacher_4"
     },
     "day3_lunch_teacher_4": {
