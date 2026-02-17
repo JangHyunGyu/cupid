@@ -341,7 +341,7 @@ Object.assign(SCENARIO[1], {
         text: "(서연이와 대화를 나누다 보니 분위기가 묘해졌다. 그녀는 내 눈을 빤히 바라보며 살며시 미소 짓고 있다. 그녀가 나에게 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어왔다.)",
         character: "assets/images/characters/seyoun_shy2.png",
         choices: [
-            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_high", affinityChar: "Seoyeon" },
+            { text: "운명 같은 거 아닐까?", next: "rooftop_destiny_high", affinityChar: "Seoyeon" },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_high" },
             { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_high" }
         ]
@@ -351,7 +351,7 @@ Object.assign(SCENARIO[1], {
         text: "(서연이의 표정이 어둡다. 대화가 잘 풀리지 않은 모양이다. 그녀는 조금 혼란스러운 듯 한숨을 내쉬더니, 그래도 나랑 있으면 편하고 좋은데 왜 그런 것 같은지 물어왔다.)",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
-            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_low", affinityChar: "Seoyeon" },
+            { text: "운명 같은 거 아닐까?", next: "rooftop_destiny_low", affinityChar: "Seoyeon" },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_low" },
             { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_low" }
         ]
@@ -362,7 +362,7 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_shy.png",
         text: "(서연이와 즐겁게 대화를 마쳤다. 그녀는 내 대답을 기다리는 듯 눈을 반짝이며 나를 바라보고 있다. 그녀가 나에게 너랑 있으면 왠지 편하고 좋다며, 왜 그런 것 같은지 물어왔다.)",
         choices: [
-            { text: "운명 같은거 아닐까?", next: "rooftop_destiny_normal" },
+            { text: "운명 같은 거 아닐까?", next: "rooftop_destiny_normal" },
             { text: "아마 서연이가 너무 친절하게 대해줘서 그런 게 아닐까?", next: "rooftop_kind_normal" },
             { text: "글쎄, 아직은 잘 모르겠어.", next: "rooftop_comfortable_normal" }
         ]
@@ -496,7 +496,7 @@ Object.assign(SCENARIO[1], {
         name: "서연",
         background: "assets/images/background/top_school.png",
         text: "(서연이가 가방을 챙기다 말고 잠시 머뭇거리더니, 스마트폰을 내밀다.)",
-        context: "옥상에서 함께 도시락을 먹은 후, 서연이가 연락처를 교환하자고 먹저 말을 걸려는 순간입니다. 서연은 조금 수줍어하면서도 기대하는 모습이에요. 가벼운 잡담을 나누며 연락처 교환으로 자연스럽게 이어지는 대화입니다.",
+        context: "옥상에서 함께 도시락을 먹은 후, 서연이가 연락처를 교환하자고 먼저 말을 걸려는 순간입니다. 서연은 조금 수줍어하면서도 기대하는 모습이에요. 가벼운 잡담을 나누며 연락처 교환으로 자연스럽게 이어지는 대화입니다.",
         personality: "친절하고 상냥하며 책임감 강한 학생회장. 전학생인 주인공에게 호감을 느끼고 있으며, 연락처를 교환하고 싶어하지만 직접적으로 말하기는 부끄러워하는 모습.",
         character: "assets/images/characters/seyoun_normal.png",
         affinityChar: "Seoyeon",

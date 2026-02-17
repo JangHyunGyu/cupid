@@ -404,7 +404,7 @@ Object.assign(SCENARIO[5], {
     "day5_bed_dain_7": {
         name: "Dain",
         background: "assets/images/background/gym.png",
-        text: "\"...Dummy, why are you looking at me like that. It's embarrassing...\"",
+        text: "\"...Dummy, why are you looking at me like that? It's embarrassing...\"",
         character: "assets/images/characters/dain_shy.png",
         night: true,
         fade: true,

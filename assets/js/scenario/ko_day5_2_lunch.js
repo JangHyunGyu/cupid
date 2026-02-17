@@ -279,7 +279,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_outfit_compliment": {
         name: "나",
-        text: "(상대가 내 옷차림을 보더니 눈을 동그랑게 뗴다. \"오늘 왜 이렇게 멋져?\" 라는 말에 괴히 뿌듯해진다.)",
+        text: "(상대가 내 옷차림을 보더니 눈을 동그랗게 떴다. \"오늘 왜 이렇게 멋져?\" 라는 말에 괜히 뿌듯해진다.)",
         background: "assets/images/background/school.png",
         stats: { Seoyeon: { affinity: 2 }, Yuna: { affinity: 2 }, Dain: { affinity: 2 }, Nurse: { affinity: 2 }, Teacher: { affinity: 2 } },
         next: "day5_walk_together"

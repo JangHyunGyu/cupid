@@ -715,7 +715,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare_voice3": {
         name: "???",
-        text: "(다인이의 목소리가 떨린다) \"…바보! 온다고! 바람 맞추는 거 아니라며서…\"",
+        text: "(다인이의 목소리가 떨린다) \"…바보! 온다고! 바람 맞추는 거 아니라면서…\"",
         character: "assets/images/characters/dain_sad.png",
         silhouette: true,
         night: true,

@@ -785,7 +785,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3_low": {
         name: "나",
-        text: "(선생님의 눈빛이 매섭다. 첫인상부터 점수를 깎인 것 같아 마음이 무겁다. 차가운 분위기 속에서 자기소개를 시작해야 한다.)",
+        text: "(선생님의 눈빛이 매섭다. 첫인상부터 점수가 깎인 것 같아 마음이 무겁다. 차가운 분위기 속에서 자기소개를 시작해야 한다.)",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "제 이름은 '{name}'입니다. 잘 부탁드려요!", next: "teacher_name_share_low", setFlag: "knows_name_teacher", stats: { Teacher: { affinity: 15 } } },

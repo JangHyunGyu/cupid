@@ -198,7 +198,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_dain_unknown": {
         name: "???",
-        text: "\"어? 저 애 누구지? 학생회실에 왠 남학생이... 아무튼 안녕~!\"",
+        text: "\"어? 저 애 누구지? 학생회실에 웬 남학생이... 아무튼 안녕~!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day2_seoyeon_lunch_dain_react"
     },

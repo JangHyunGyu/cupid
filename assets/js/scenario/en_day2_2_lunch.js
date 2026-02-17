@@ -993,7 +993,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_head": {
         name: "School Nurse",
-        text: "\"Sounds like tension headache. Take this and get some good sleep, you'll feel better.\"",
+        text: "\"Sounds like a tension headache. Take this and get some good sleep, you'll feel better.\"",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         choices: [
