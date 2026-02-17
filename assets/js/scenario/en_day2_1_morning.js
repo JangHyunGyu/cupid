@@ -137,18 +137,18 @@ Object.assign(SCENARIO[2], {
     "day2_road_to_school": {
         name: "Me",
         text: "(Stepping outside, the fresh morning air fills my lungs. A softer breeze than yesterday blows by. It smells like spring.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/street.png",
         next: "day2_road_to_school_2"
     },
     "day2_road_to_school_2": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/street.png",
         text: "(Students in the same uniform walk toward school in small groups. Yesterday it all felt so unfamiliar, but today it somehow feels welcoming.)",
         next: "day2_road_to_school_3"
     },
     "day2_road_to_school_3": {
         name: "Me",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/street.png",
         text: "(Across the street, a few students from our school glance my way and whisper. I can hear 'Oh, it's the transfer student!' carried by the wind. Looks like I'm still the hot topic.)",
         next: "day2_school_gate"
     },

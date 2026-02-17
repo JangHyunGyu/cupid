@@ -137,18 +137,18 @@ Object.assign(SCENARIO[2], {
     "day2_road_to_school": {
         name: "나",
         text: "(집을 나서자 아침 공기가 상쾌하게 폐를 채운다. 어제보다 부드러운 바람이 불어온다. 봄 냄새가 난다.)",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/street.png",
         next: "day2_road_to_school_2"
     },
     "day2_road_to_school_2": {
         name: "나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/street.png",
         text: "(같은 교복을 입은 학생들이 삼삼오오 짝을 지어 학교 쪽으로 걸어간다. 어제는 낯설기만 하던 풍경인데, 오늘은 어딘가 반갑게 느껴진다.)",
         next: "day2_road_to_school_3"
     },
     "day2_road_to_school_3": {
         name: "나",
-        background: "assets/images/background/load_school.png",
+        background: "assets/images/background/street.png",
         text: "(길 건너편에서 우리 학교 학생 몇 명이 내 쪽을 보며 수군거린다. '아, 전학생이다!' 하는 소리가 바람에 실려 들려온다. 아직 학교의 핫이슈인 모양이다.)",
         next: "day2_school_gate"
     },
