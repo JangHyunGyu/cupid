@@ -2141,14 +2141,14 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_arrive": {
         name: "Me",
         text: "(I arrived at the school. When I opened the nurse's office door, the room was dark with only a small lamp on. She was there.)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_arrive_2"
     },
     "day4_night_nurse_arrive_2": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"Wow, you actually came. Even though I called you out this late?\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2156,7 +2156,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_arrive_3": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         text: "(She's smiling as usual, but... there are dark circles under her eyes. And several empty coffee cans on the desk.)",
         night: true,
@@ -2175,7 +2175,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_tired": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"Think so? It's been a hectic week. I'm fine though, really.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2183,7 +2183,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_real_reason": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...The real reason? ...I wanted to see you.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2195,7 +2195,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_nurse_mask": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         text: "(She's smiling, but something feels forced. Like she's pushing too hard.)",
         night: true,
@@ -2203,7 +2203,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_mask_2": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...Actually, something kind of tough happened at school today.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2211,7 +2211,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_mask_3": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"The other teachers said, 'The nurse is always so cheerful—must be nice having no worries.'\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2219,7 +2219,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_mask_4": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...'No worries.' Haha. That one... actually stung the most.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2227,7 +2227,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_mask_5": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"I was struggling too... but nobody asked. Not even once. Not a single 'are you okay?'\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2235,7 +2235,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_mask_6": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"In the nurse's office, kids come in and I smile for them, take care of them. But... who takes care of me?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2243,7 +2243,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_lonely": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...When I go home, there's nobody. I live alone.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2251,7 +2251,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_lonely_2": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"So... I started staying late at school. At least in this nurse's office, I don't feel so alone.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2259,7 +2259,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_lonely_3": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "(Her smile faded. For the first time, she's showing me her real face—without the jokes, without the teasing.)",
         night: true,
@@ -2267,7 +2267,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_lonely_choice": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "(I can see the real her now. What do I say?)",
         night: true,
@@ -2288,7 +2288,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_hug": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"......!!\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2296,7 +2296,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_hug_2": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...Hey, all of a sudden... what are you...\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2304,7 +2304,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_hug_3": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "(She was startled at first... but soon her hands gripped my clothes tightly.)",
         night: true,
@@ -2312,7 +2312,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_hug_4": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...This is weird. Have I ever wanted someone to hold me like this before?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2320,7 +2320,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_hug_5": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...Let's just stay like this. Just a little while.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2328,7 +2328,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_care": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...What? You'll take care of me?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2336,7 +2336,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_care_2": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "\"You always take care of everyone else. It's your turn to be taken care of.\"",
         night: true,
@@ -2344,7 +2344,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_care_3": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...Ha. How do you always hit me right where it hurts?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2352,7 +2352,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_care_4": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...Do you really mean that?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2364,7 +2364,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_nurse_truth": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...Actually, there's a reason I became a school nurse.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2372,7 +2372,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_2": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"In high school, a close friend of mine got sick and was absent for a long time. The school nurse back then really took care of her.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2380,7 +2380,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_3": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"I wanted to be someone like that too. Someone who's there for kids when they're hurting.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2388,7 +2388,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_4": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"But in reality... they just saw me as 'the nurse who jokes around.' Not a real teacher.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2396,7 +2396,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_5": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"They said being serious would ruin the vibe, so... I naturally started hiding behind laughs.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2404,7 +2404,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_6": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...I did the same with you. Approaching you with jokes and teasing. Because showing my real feelings... was terrifying.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2412,7 +2412,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_choice": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "(Her voice is trembling.)",
         night: true,
@@ -2436,7 +2436,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_accept_all": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...All of it?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2444,7 +2444,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_accept_all_2": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...You're the first person who's ever said that to me.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2452,7 +2452,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_accept_all_3": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...I don't even know how to react. This is a first.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2460,7 +2460,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_thanks": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...Thankful? To me?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2468,7 +2468,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_thanks_2": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...I didn't know being honest with you could feel this comfortable.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2476,7 +2476,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_safe": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...I don't have to be scared?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2484,7 +2484,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_safe_2": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...Maybe you're the person I feel most at ease with. Funny how that works.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2496,7 +2496,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_nurse_resolve": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...You know what?\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2504,7 +2504,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_resolve_2": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"From now on, I won't wear a mask around you. When I'm happy, I'll really smile. When I'm sad, I'll say so.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2512,7 +2512,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_resolve_3": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"With you... I think I can show the real me.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2520,7 +2520,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_resolve_4": {
         name: "Me",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "\"I've been waiting for that. The real you.\"",
         night: true,
@@ -2528,7 +2528,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_resolve_end": {
         name: "School Nurse",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"...... You really... if you keep this up, there's no going back for me.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,

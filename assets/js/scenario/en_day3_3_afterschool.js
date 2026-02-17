@@ -806,7 +806,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_park": {
         name: "Me",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(Dain and I sit side by side on a park bench nearby. We eat ice cream while watching the sunset.)",
         sunset: true,
@@ -814,7 +814,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_park_2": {
         name: "Dain",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         text: "(Suddenly getting quiet) \"...{name}. Actually, I couldn't sleep last night.\"",
         character: "assets/images/characters/dain_normal.png",
         sunset: true,
@@ -822,7 +822,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_park_3": {
         name: "Dain",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         text: "\"...You said you'd come to my practice tomorrow... You'll really come, right? You're not gonna stand me up?\"",
         character: "assets/images/characters/dain_sad.png",
         sunset: true,
@@ -833,7 +833,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_promise_firm": {
         name: "Dain",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         text: "(Her eyes light up) \"...Really? Promise!\"",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
@@ -841,7 +841,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_dain_pat": {
         name: "Dain",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         text: "(Patting her head makes Dain's face turn red) \"Hey, I'm not a kid! ...But don't stop.\"",
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
@@ -850,7 +850,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_dain_freetalk": {
         type: "free_talk",
         name: "Me",
-        background: "assets/images/background/street.png",
+        background: "assets/images/background/park.png",
         character: "assets/images/characters/dain_laugh.png",
         text: "(Eating ice cream and chatting with Dain on a park bench.)",
         sunset: true,

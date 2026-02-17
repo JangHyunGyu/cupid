@@ -2141,14 +2141,14 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_arrive": {
         name: "나",
         text: "(학교에 도착했다. 보건실 문을 열자, 작은 스탠드 하나만 켜진 어두운 방 안에 선생님이 있었다.)",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_arrive_2"
     },
     "day4_night_nurse_arrive_2": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"와, 진짜 나왔네. 한밤중에 불러내도 와주는 거야?\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2156,7 +2156,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_arrive_3": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         text: "(평소처럼 장난스럽게 웃고 있는데… 눈 밑에 다크서클이 짙다. 그리고 책상 위에 빈 커피캔이 여러 개.)",
         night: true,
@@ -2175,7 +2175,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_tired": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"그래? 요즘 좀 정신없었나 봐. 괜찮아, 별거 아니야.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2183,7 +2183,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_real_reason": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…진짜 이유? …보고 싶었으니까.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2195,7 +2195,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_nurse_mask": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         text: "(선생님이 웃고 있지만, 어딘가 무리하고 있다는 느낌이 든다.)",
         night: true,
@@ -2203,7 +2203,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_mask_2": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…있잖아, 오늘 학교에서 좀 힘든 일이 있었어.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2211,7 +2211,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_mask_3": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"다른 선생님들이 그러더라. '보건 선생님은 항상 밝아서 좋겠다, 고민 없어 보인다'고.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2219,7 +2219,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_mask_4": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…고민 없어 보인다. 하하. 그 말이 제일 아팠어.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2227,7 +2227,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_mask_5": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"나도 힘든데… 아무도 안 물어보더라. '괜찮아?' 한마디.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2235,7 +2235,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_mask_6": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"보건실에 아이들이 올 때마다 웃어주고, 다독여주고. 근데… 나는 누가 다독여주지?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2243,7 +2243,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_lonely": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…집에 가면 아무도 없어. 혼자 사니까.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2251,7 +2251,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_lonely_2": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"그래서… 자꾸 학교에 늦게까지 남게 되더라. 이 보건실이라도 있으면 외롭지 않으니까.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2259,7 +2259,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_lonely_3": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "(선생님이 웃음을 멈췄다. 처음으로 장난기 없는, 진짜 얼굴을 보여주고 있다.)",
         night: true,
@@ -2267,7 +2267,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_lonely_choice": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "(선생님의 진짜 모습이 보인다. 뭐라고 해야 할까.)",
         night: true,
@@ -2288,7 +2288,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_hug": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"……!!\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2296,7 +2296,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_hug_2": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…야, 갑자기… 뭐야…\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2304,7 +2304,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_hug_3": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "(선생님이 처음에는 당황했지만… 곧 내 옷을 꼭 쥐었다.)",
         night: true,
@@ -2312,7 +2312,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_hug_4": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…이상해. 내가 남한테 안기고 싶었던 적이 있었나.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2320,7 +2320,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_hug_5": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…조금만 이러고 있자. 조금만.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2328,7 +2328,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_care": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…뭐? 네가 나를?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2336,7 +2336,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_care_2": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "\"선생님은 항상 다른 사람을 돌보잖아요. 이제는 돌봄 받을 차례예요.\"",
         night: true,
@@ -2344,7 +2344,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_care_3": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…하하. 어쩜 이렇게 정곡을 찌르니.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2352,7 +2352,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_care_4": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…진짜 그래줄 거야?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2364,7 +2364,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_nurse_truth": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…사실 나, 보건 교사가 된 이유가 있어.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2372,7 +2372,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_2": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"고등학교 때, 친한 친구가 아파서 오래 결석했거든. 그때 보건실 선생님이 정말 잘 챙겨줬어.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2380,7 +2380,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_3": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"나도 그런 사람이 되고 싶었어. 아픈 아이들의 편이 되어주는 사람.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2388,7 +2388,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_4": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"근데 막상 되고 보니까… '보건 선생님은 장난이나 치는 사람' 취급이더라.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2396,7 +2396,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_5": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"진지하게 굴면 분위기 망친다고 하니까… 자연스럽게 웃음으로 감추게 됐어.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2404,7 +2404,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_6": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…너한테도 그랬어. 장난치면서 다가갔지. 진심을 보여주는 게… 무서웠으니까.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2412,7 +2412,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_truth_choice": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "(선생님의 목소리가 떨리고 있다.)",
         night: true,
@@ -2436,7 +2436,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_accept_all": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…다 좋다고?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2444,7 +2444,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_accept_all_2": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…그렇게 말해주는 사람은 네가 처음이야.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2452,7 +2452,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_accept_all_3": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…처음이라서 어떻게 반응해야 할지 모르겠네.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2460,7 +2460,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_thanks": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…고맙다고? 내가?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2468,7 +2468,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_thanks_2": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…너한테 진심을 보여주는 게 이렇게 편할 줄 몰랐어.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2476,7 +2476,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_safe": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…안 무서워해도 된다고?\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2484,7 +2484,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_safe_2": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…어쩌면 너한테가 제일 편한 건지 모르겠다. 이상하게.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2496,7 +2496,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_nurse_resolve": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"…있잖아.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2504,7 +2504,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_resolve_2": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"이제부터 너한테는 가면 안 쓸게. 웃을 때 진짜로 웃고, 슬플 때 슬프다고 말할게.\"",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2512,7 +2512,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_resolve_3": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"너라면… 진짜 나를 받아줄 수 있을 것 같아.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
@@ -2520,7 +2520,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_resolve_4": {
         name: "나",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
         text: "\"기다리고 있었어요, 그 모습.\"",
         night: true,
@@ -2528,7 +2528,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_resolve_end": {
         name: "보건선생님",
-        background: "assets/images/background/school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"……너 진짜… 이러면 나 돌아갈 수 없어.\"",
         character: "assets/images/characters/nurse_shy.png",
         night: true,

@@ -856,14 +856,14 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_nurse": {
         name: "Me",
         text: "(I headed to the nurse's office during lunch. The teacher is eating a sandwich at her desk.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         setFlag: "day3_lunch_with_nurse",
         next: "day3_lunch_nurse_2"
     },
     "day3_lunch_nurse_2": {
         name: "School Nurse",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(Beaming when she sees me) \"Oh my, {name}! Have you eaten? Want to eat with teacher?\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 5 } },
@@ -871,7 +871,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_nurse_3": {
         name: "School Nurse",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(Locking the door) \"Actually... I wanted some time alone with you. Watching out for the kids is exhausting.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day3_lunch_nurse_freetalk"
@@ -879,7 +879,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_nurse_freetalk": {
         type: "free_talk",
         name: "Me",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         text: "(Having lunch together in the nurse's office. My heart races at the secretive atmosphere.)",
         context: "Having lunch alone with the school nurse in her office. She locked the door. It feels like a secret date. The thrill of a forbidden love.",
@@ -888,7 +888,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_nurse_4": {
         name: "School Nurse",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(Glancing at the clock with a sigh) \"...Time's up. Get to class. See you Sunday.\"",
         character: "assets/images/characters/nurse_shy.png",
         stats: { Nurse: { affinity: 3 } },
@@ -898,14 +898,14 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_teacher": {
         name: "Me",
         text: "(I visited the teachers' office during lunch. The teacher is having coffee alone.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_normal.png",
         setFlag: "day3_lunch_with_teacher",
         next: "day3_lunch_teacher_2"
     },
     "day3_lunch_teacher_2": {
         name: "Homeroom Teacher",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_office.png",
         text: "(Surprised to see me, then brightening up) \"...{name}? What brings you here? It's my lunch break...\"",
         character: "assets/images/characters/teacher_shy.png",
         stats: { Teacher: { affinity: 5 } },
@@ -913,7 +913,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_teacher_3": {
         name: "Homeroom Teacher",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_office.png",
         text: "(Blushing) \"...Come in. Close the door.\"",
         character: "assets/images/characters/teacher_shy.png",
         next: "day3_lunch_teacher_freetalk"
@@ -921,7 +921,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_teacher_freetalk": {
         type: "free_talk",
         name: "Me",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_shy.png",
         text: "(Having lunch with the homeroom teacher in the teachers' office.)",
         context: "Having lunch alone with the homeroom teacher in her office. She shyly closed the door. Secret date atmosphere.",
@@ -930,7 +930,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_teacher_4": {
         name: "Homeroom Teacher",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_office.png",
         text: "(Putting down her coffee cup) \"...This shouldn't be happening. A student coming to spend lunch with a teacher, and the teacher enjoying it. Does that even make sense?\"",
         character: "assets/images/characters/teacher_shy.png",
         stats: { Teacher: { affinity: 3 } },

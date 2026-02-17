@@ -924,14 +924,14 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_nurse": {
         name: "나",
         text: "(점심시간을 맞아 보건실로 향했다. 선생님이 자리에서 샌드위치를 먹고 계신다.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         setFlag: "day3_lunch_with_nurse",
         next: "day3_lunch_nurse_2"
     },
     "day3_lunch_nurse_2": {
         name: "보건선생님",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(나를 보고 만면에 미소 짓는다) \"어머, 우리 {name} 왔네? 밥 먹었어? 선생님이랑 같이 먹을래?\"",
         character: "assets/images/characters/nurse_normal.png",
         stats: { Nurse: { affinity: 5 } },
@@ -939,7 +939,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_nurse_3": {
         name: "보건선생님",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(문을 잠그고) \"사실... 둘만의 시간을 좀 가지고 싶었어. 애들 눈치 보는 것도 지치잖아.\"",
         character: "assets/images/characters/nurse_normal.png",
         next: "day3_lunch_nurse_freetalk"
@@ -947,7 +947,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_nurse_freetalk": {
         type: "free_talk",
         name: "나",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         text: "(보건실에서 선생님과 둘이 점심을 먹는다. 비밀스러운 분위기에 심장이 뛰었다.)",
         context: "보건실에서 보건선생님과 단둘이 점심 먹는 중. 선생님이 문을 잠갔다. 비밀 데이트 같은 분위기. 금지된 사랑의 설렘.",
@@ -956,7 +956,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_nurse_4": {
         name: "보건선생님",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "(시계를 보며 한숨) \"...시간 다 됐네. 수업 들어가. 일요일에 보자.\"",
         character: "assets/images/characters/nurse_shy.png",
         stats: { Nurse: { affinity: 3 } },
@@ -966,14 +966,14 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_teacher": {
         name: "나",
         text: "(점심시간에 담임선생님을 찾아 교무실에 갔다. 선생님이 혼자 커피를 마시고 계신다.)",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_normal.png",
         setFlag: "day3_lunch_with_teacher",
         next: "day3_lunch_teacher_2"
     },
     "day3_lunch_teacher_2": {
         name: "담임선생님",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_office.png",
         text: "(나를 보고 당황하다가 밝아진다) \"…{name}? 어쩐 일이야? 선생님 점심시간인데...\"",
         character: "assets/images/characters/teacher_shy.png",
         stats: { Teacher: { affinity: 5 } },
@@ -981,7 +981,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_teacher_3": {
         name: "담임선생님",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_office.png",
         text: "(볼을 붉히며) \"...들어와. 문 닫고.\"",
         character: "assets/images/characters/teacher_shy.png",
         next: "day3_lunch_teacher_freetalk"
@@ -989,7 +989,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_teacher_freetalk": {
         type: "free_talk",
         name: "나",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_shy.png",
         text: "(교무실에서 담임선생님과 둘이 점심을 먹는다.)",
         context: "교무실에서 담임선생님과 단둘이 점심 먹는 중. 선생님이 수줍어하며 문을 닫았다. 비밀 데이트 분위기.",
@@ -998,7 +998,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_teacher_4": {
         name: "담임선생님",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/teacher_office.png",
         text: "(커피잔을 내려놓으며) \"...이러면 안 되는데. 학생이 선생님 점심시간에 찾아오고, 선생님은 그게 좋고. 이게 말이 돼?\"",
         character: "assets/images/characters/teacher_shy.png",
         stats: { Teacher: { affinity: 3 } },

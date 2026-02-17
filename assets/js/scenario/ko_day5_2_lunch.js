@@ -438,12 +438,12 @@ Object.assign(SCENARIO[5], {
         name: "유나",
         text: "\"…잠깐. 저기 가볼래. 도서관.\"",
         character: "assets/images/characters/yuna_normal.png",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/library_old.png",
         next: "day5_memory_yuna2"
     },
     "day5_memory_yuna2": {
         name: "유나",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/library_old.png",
         text: "\"…여기서 처음으로 옆자리에 앉았었지. 네가 책 제목 물어봤을 때… 놀랐어. 아무도 말 건 적 없었으니까.\"",
         character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: 3 } },
@@ -472,12 +472,12 @@ Object.assign(SCENARIO[5], {
         name: "보건선생님",
         text: "\"보건실 한번 들러볼까? 네가 처음 온 날 기억이 새롭네.\"",
         character: "assets/images/characters/nurse_normal.png",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/nurse_room.jpg",
         next: "day5_memory_nurse2"
     },
     "day5_memory_nurse2": {
         name: "보건선생님",
-        background: "assets/images/background/school_hallway.png",
+        background: "assets/images/background/nurse_room.jpg",
         text: "\"전학 첫날 긴장해서 머리 아프다고 왔었잖아. 그때 네 이마에 손 올려줬는데… 네 얼굴이 새빨갛더라, 후후.\"",
         character: "assets/images/characters/nurse_shy.png",
         stats: { Nurse: { affinity: 3 } },
@@ -531,14 +531,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_rooftop_stairs1": {
         name: "나",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: null,
         text: "(계단을 올라간다. 발소리 두 개가 텅 빈 계단통에 울려 퍼진다. 한 층, 두 층.)",
         next: "day5_rooftop_stairs2"
     },
     "day5_rooftop_stairs2": {
         name: "나",
-        background: "assets/images/background/room_school.png",
+        background: "assets/images/background/school_hallway.png",
         character: null,
         text: "(마지막 계단을 올라 옥상 문 앞에 섰다. 문 틈 사이로 바람이 새어 들어온다.)",
         next: "day5_rooftop_door"
