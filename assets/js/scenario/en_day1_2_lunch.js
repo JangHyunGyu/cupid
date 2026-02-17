@@ -126,7 +126,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Sorry, I want to be alone today.", next: "lunch_alone", stats: { Seoyeon: { affinity: -10 } } },
-            { text: "The rooftop? Why go all the way up there?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -20 } } }
+            { text: "The rooftop? Why go all the way up there?", next: "lunch_refuse_rooftop", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "lunch_seoyeon_2_party": {
@@ -136,7 +136,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Sorry, I want to be alone today.", next: "lunch_alone", stats: { Seoyeon: { affinity: -10 } } },
-            { text: "The rooftop? Why go all the way up there?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -20 } } }
+            { text: "The rooftop? Why go all the way up there?", next: "lunch_refuse_rooftop", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "lunch_seoyeon_2_normal": {
@@ -146,7 +146,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "Yeah! I wanted to eat with you, Seoyeon.", next: "rooftop_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Sorry, I want to be alone today.", next: "lunch_alone", stats: { Seoyeon: { affinity: -10 } } },
-            { text: "The rooftop? Why go all the way up there?", next: "rooftop_talk_rude", stats: { Seoyeon: { affinity: -20 } } }
+            { text: "The rooftop? Why go all the way up there?", next: "lunch_refuse_rooftop", stats: { Seoyeon: { affinity: -20 } } }
         ]
     },
     "rooftop_1": {
@@ -233,6 +233,13 @@ Object.assign(SCENARIO[1], {
         character: "assets/images/characters/seyoun_pout.png",
         text: "(The atmosphere became awkward instantly. We ate in silence for a while.)",
         next: "rooftop_2"
+    },
+    "lunch_refuse_rooftop": {
+        name: "Seoyeon",
+        background: "assets/images/background/load_school.png",
+        text: "(Seoyeon's face falls. She tries to hide her disappointment but her shoulders droop slightly.) \"...Okay, I understand. Then I'll go by myself.\"",
+        character: "assets/images/characters/seyoun_sad.png",
+        next: "lunch_alone"
     },
     "rooftop_talk_rude": {
         name: "Seoyeon",
@@ -491,6 +498,8 @@ Object.assign(SCENARIO[1], {
         name: "Seoyeon",
         background: "assets/images/background/top_school.png",
         text: "(Seoyeon pauses while packing her bag, then hesitantly holds out her smartphone.)",
+        context: "After sharing lunch on the rooftop together, Seoyeon is about to suggest exchanging contact info. She's a little shy but expectant. It's a casual conversation that naturally leads to exchanging numbers.",
+        personality: "A kind, caring, and responsible student council president. She has a crush on the transfer student protagonist and wants to exchange numbers, but is too shy to ask directly.",
         character: "assets/images/characters/seyoun_normal.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
