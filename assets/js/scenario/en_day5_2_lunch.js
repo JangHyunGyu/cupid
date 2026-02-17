@@ -120,6 +120,30 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         character: "assets/images/characters/seyoun_normal.png",
         text: "(Seeing Seoyeon's smiling face makes my heart feel warm. She was the first person to reach out to me at this school.)",
+        next: "day5_seoyeon_d4_check"
+    },
+    "day5_seoyeon_d4_check": {
+        name: "System",
+        text: "",
+        background: "assets/images/background/school.png",
+        branches: [
+            { next: "day5_seoyeon_d4_warmth", condition: "day4_hugged_seoyeon" },
+            { next: "day5_seoyeon_d4_warmth_pinky", condition: "day4_pinky_seoyeon" },
+            { next: "day5_outfit_reaction_check" }
+        ]
+    },
+    "day5_seoyeon_d4_warmth": {
+        name: "Seoyeon",
+        text: "\"...You know, when you hugged me last night... I was really grateful. It gave me courage.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
+        next: "day5_outfit_reaction_check"
+    },
+    "day5_seoyeon_d4_warmth_pinky": {
+        name: "Seoyeon",
+        text: "\"The pinky promise from last night... my fingertip still feels warm. Please keep your promise, okay?\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day5_outfit_reaction_check"
     },
 
@@ -140,6 +164,30 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         character: "assets/images/characters/yuna_smile.png",
         text: "(This is the first time Yuna has said so much. Does that mean today is a special day for her too?)",
+        next: "day5_yuna_d4_check"
+    },
+    "day5_yuna_d4_check": {
+        name: "System",
+        text: "",
+        background: "assets/images/background/school.png",
+        branches: [
+            { next: "day5_yuna_d4_warmth", condition: "day4_held_yuna_hand" },
+            { next: "day5_yuna_d4_warmth_ally", condition: "day4_yuna_ally" },
+            { next: "day5_outfit_reaction_check" }
+        ]
+    },
+    "day5_yuna_d4_warmth": {
+        name: "Yuna",
+        text: "\"...Thank you for holding my hand last night. ...It was warm.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        stats: { Yuna: { affinity: 3 } },
+        next: "day5_outfit_reaction_check"
+    },
+    "day5_yuna_d4_warmth_ally": {
+        name: "Yuna",
+        text: "\"...For taking my side yesterday. ...I won't forget it.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 3 } },
         next: "day5_outfit_reaction_check"
     },
 
@@ -160,6 +208,22 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         character: "assets/images/characters/dain_normal.png",
         text: "(Getting hit by that volleyball did hurt... but if it's how I met Dain, maybe I should be grateful.)",
+        next: "day5_dain_d4_check"
+    },
+    "day5_dain_d4_check": {
+        name: "System",
+        text: "",
+        background: "assets/images/background/school.png",
+        branches: [
+            { next: "day5_dain_d4_warmth", condition: "day4_dain_tears" },
+            { next: "day5_outfit_reaction_check" }
+        ]
+    },
+    "day5_dain_d4_warmth": {
+        name: "Dain",
+        text: "\"...Me crying yesterday is a SECRET!! But... I'm glad I could cry in front of you.\"",
+        character: "assets/images/characters/dain_shy.png",
+        stats: { Dain: { affinity: 3 } },
         next: "day5_outfit_reaction_check"
     },
 

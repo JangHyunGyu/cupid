@@ -114,6 +114,23 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/room_my.png",
         text: "(It's only been four days since I transferred here. I never expected such an exciting weekend. My heart is pounding.)",
+        next: "day4_morning_guilt_check"
+    },
+
+    "day4_morning_guilt_check": {
+        name: "System",
+        text: "",
+        background: "assets/images/background/room_my.png",
+        branches: [
+            { next: "day4_morning_guilt", condition: "day3_has_multiple_dates" },
+            { next: "day4_morning_stretch" }
+        ]
+    },
+
+    "day4_morning_guilt": {
+        name: "Me",
+        background: "assets/images/background/room_my.png",
+        text: "(...Wait. I feel uneasy about having promised multiple people. They all trusted me when they made plans... but in the end, I can only meet one of them.)",
         next: "day4_morning_stretch"
     },
 
@@ -362,7 +379,7 @@ Object.assign(SCENARIO[4], {
         name: "Seoyeon",
         text: "\"See you soon~!! 😆\"",
         character: "assets/images/characters/seyoun_laugh.png",
-        next: "day4_morning_lastcheck"
+        next: "day4_morning_loyalty_check"
     },
 
     // --- 유나 메시지 ---
@@ -400,7 +417,7 @@ Object.assign(SCENARIO[4], {
         name: "Yuna",
         text: "\"...Hurry up.\"",
         character: "assets/images/characters/yuna_normal.png",
-        next: "day4_morning_lastcheck"
+        next: "day4_morning_loyalty_check"
     },
 
     // --- 다인 메시지 ---
@@ -438,7 +455,7 @@ Object.assign(SCENARIO[4], {
         name: "Dain",
         text: "\"See you later!! Get excited!!! 💪\"",
         character: "assets/images/characters/dain_laugh.png",
-        next: "day4_morning_lastcheck"
+        next: "day4_morning_loyalty_check"
     },
 
     // --- 보건선생님 메시지 ---
@@ -476,7 +493,7 @@ Object.assign(SCENARIO[4], {
         name: "School Nurse",
         text: "\"See you later then 😊\"",
         character: "assets/images/characters/nurse_normal.png",
-        next: "day4_morning_lastcheck"
+        next: "day4_morning_loyalty_check"
     },
 
     // --- 담임선생님 메시지 ---
@@ -514,6 +531,28 @@ Object.assign(SCENARIO[4], {
         name: "Homeroom Teacher",
         text: "\"Don't be late. I hate waiting.\"",
         character: "assets/images/characters/teacher_normal.png",
+        next: "day4_morning_loyalty_check"
+    },
+
+    // =========================================================================
+    // 6C. Loyalty Bonus Check (2 nodes)
+    // =========================================================================
+
+    "day4_morning_loyalty_check": {
+        name: "System",
+        text: "",
+        background: "assets/images/background/room_my.png",
+        branches: [
+            { next: "day4_morning_loyalty_boost", condition: "day3_loyalty_bonus" },
+            { next: "day4_morning_lastcheck" }
+        ]
+    },
+
+    "day4_morning_loyalty_boost": {
+        name: "Me",
+        background: "assets/images/background/room_my.png",
+        text: "(The fact that I'm getting ready for just one person... somehow makes me feel more certain. Today, I'll think only of them.)",
+        stats: { Seoyeon: { affinity: 3 }, Yuna: { affinity: 3 }, Dain: { affinity: 3 }, Teacher: { affinity: 3 }, Nurse: { affinity: 3 } },
         next: "day4_morning_lastcheck"
     },
 

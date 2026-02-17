@@ -120,6 +120,30 @@ Object.assign(SCENARIO[5], {
         name: "나",
         character: "assets/images/characters/seyoun_normal.png",
         text: "(서연이의 웃는 얼굴을 보니 가슴이 따뜻해진다. 이 학교에서 가장 처음 다가와준 사람이었지.)",
+        next: "day5_seoyeon_d4_check"
+    },
+    "day5_seoyeon_d4_check": {
+        name: "시스템",
+        text: "",
+        background: "assets/images/background/school.png",
+        branches: [
+            { next: "day5_seoyeon_d4_warmth", condition: "day4_hugged_seoyeon" },
+            { next: "day5_seoyeon_d4_warmth_pinky", condition: "day4_pinky_seoyeon" },
+            { next: "day5_outfit_reaction_check" }
+        ]
+    },
+    "day5_seoyeon_d4_warmth": {
+        name: "서연",
+        text: "\"…있잖아. 어젯밤에 안아줬을 때… 정말 고마웠어. 덕분에 용기가 났거든.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
+        next: "day5_outfit_reaction_check"
+    },
+    "day5_seoyeon_d4_warmth_pinky": {
+        name: "서연",
+        text: "\"어젯밤 새끼손가락 걸었던 거… 아직도 손끝이 따뜻해. 약속, 꼭 지켜줘.\"",
+        character: "assets/images/characters/seyoun_shy.png",
+        stats: { Seoyeon: { affinity: 3 } },
         next: "day5_outfit_reaction_check"
     },
 
@@ -140,6 +164,30 @@ Object.assign(SCENARIO[5], {
         name: "나",
         character: "assets/images/characters/yuna_smile.png",
         text: "(유나가 이렇게 많은 말을 한 건 처음이다. 그만큼 오늘이 특별한 날이라는 뜻일까.)",
+        next: "day5_yuna_d4_check"
+    },
+    "day5_yuna_d4_check": {
+        name: "시스템",
+        text: "",
+        background: "assets/images/background/school.png",
+        branches: [
+            { next: "day5_yuna_d4_warmth", condition: "day4_held_yuna_hand" },
+            { next: "day5_yuna_d4_warmth_ally", condition: "day4_yuna_ally" },
+            { next: "day5_outfit_reaction_check" }
+        ]
+    },
+    "day5_yuna_d4_warmth": {
+        name: "유나",
+        text: "\"…어젯밤에 손 잡아줘서 고마웠어. …따뜻했어.\"",
+        character: "assets/images/characters/yuna_shy.png",
+        stats: { Yuna: { affinity: 3 } },
+        next: "day5_outfit_reaction_check"
+    },
+    "day5_yuna_d4_warmth_ally": {
+        name: "유나",
+        text: "\"…어제 내 편이 되어줘서. …잊지 않을게.\"",
+        character: "assets/images/characters/yuna_smile.png",
+        stats: { Yuna: { affinity: 3 } },
         next: "day5_outfit_reaction_check"
     },
 
@@ -159,8 +207,22 @@ Object.assign(SCENARIO[5], {
     "day5_react_dain": {
         name: "나",
         character: "assets/images/characters/dain_normal.png",
-        text: "(배구공에 맞은 건 아팠지만… 그 덕분에 다인이를 만났다면, 감사해야 하나.)",
-        next: "day5_outfit_reaction_check"
+        text: "(배구공에 맞은 건 아팠지만… 그 덕분에 다인이를 만났다면, 감사해야 하나.)",        next: "day5_dain_d4_check"
+    },
+    "day5_dain_d4_check": {
+        name: "시스템",
+        text: "",
+        background: "assets/images/background/school.png",
+        branches: [
+            { next: "day5_dain_d4_warmth", condition: "day4_dain_tears" },
+            { next: "day5_outfit_reaction_check" }
+        ]
+    },
+    "day5_dain_d4_warmth": {
+        name: "다인",
+        text: "\"…어제 운 거 비밀이야!! 근데… 네 앞에서 울 수 있어서, 다행이었어.\"",
+        character: "assets/images/characters/dain_shy.png",
+        stats: { Dain: { affinity: 3 } },        next: "day5_outfit_reaction_check"
     },
 
     // --- 보건선생님 등장 ---
