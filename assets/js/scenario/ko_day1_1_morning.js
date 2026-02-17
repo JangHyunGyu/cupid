@@ -695,7 +695,6 @@ Object.assign(SCENARIO[1], {
         next: "classroom_2"
     },
     "classroom_2": {
-        background: "assets/images/background/load_school.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
             { minAffinity: 25, next: "classroom_2_high" },
