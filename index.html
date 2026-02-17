@@ -4,7 +4,7 @@
 <head>
     <script>
         (function () {
-            const CURRENT_VERSION = '1.2.1';
+            const CURRENT_VERSION = '1.2.2';
             // 서비스 워커 등록 (로컬 개발 환경에서는 스킵)
             if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
                 navigator.serviceWorker.register('service-worker.js')
@@ -32,7 +32,7 @@
             }, 3000);
         })();
     </script>
-    <script src="assets/js/browser-check.js?v=2.2.0" defer></script>
+    <script src="assets/js/browser-check.js?v=2.2.3" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
@@ -112,7 +112,7 @@
     <!-- Google tag (gtag.js) - 외부 CDN은 head에서 로드 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-05YM7K3VX9"></script>
     <!-- ga.js, sound.js는 game-loader.js에서 로드됨 -->
-    <link rel="stylesheet" href="assets/css/style.css?v=2.2.2">
+    <link rel="stylesheet" href="assets/css/style.css?v=2.2.3">
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
     <style>
@@ -809,6 +809,52 @@
         <!-- 페이드 레이어 -->
         <div id="fade-layer">
             <div id="tbc-text">To Be Continued</div>
+        </div>
+
+        <!-- 엔딩 크레딧 레이어 -->
+        <div id="credits-layer">
+            <div id="credits-content">
+                <div class="credits-title">CUPID</div>
+                <div class="credits-subtitle">사랑의 화살이 닿는 곳</div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">기획 · 시나리오</div>
+                    <div class="credits-name">장현규 · 김유진 · 이상훈</div>
+                </div>
+                <div class="credits-section">
+                    <div class="credits-role">프로그래밍 · 연출</div>
+                    <div class="credits-name">장현규 · 김유진</div>
+                </div>
+                <div class="credits-section">
+                    <div class="credits-role">아트 · 디자인</div>
+                    <div class="credits-name">장현규 · 김유진</div>
+                </div>
+                <div class="credits-section">
+                    <div class="credits-role">음악 · 사운드</div>
+                    <div class="credits-name">장현규</div>
+                </div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">등장인물</div>
+                    <div class="credits-name">서연 · 유나 · 다인</div>
+                    <div class="credits-name">보건선생님 · 담임선생님</div>
+                </div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">제작</div>
+                    <div class="credits-name">장현규 · 김유진</div>
+                </div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">Special Thanks</div>
+                    <div class="credits-name">플레이해 주신 여러분께</div>
+                    <div class="credits-name">진심으로 감사드립니다</div>
+                </div>
+                <div class="credits-spacer"></div>
+                <div class="credits-final">Cupid © 2026 ArcherLab</div>
+                <div class="credits-final">Thank you for playing</div>
+                <div class="credits-spacer"></div>
+            </div>
         </div>
 
         <!-- 홈 확인 모달 -->
