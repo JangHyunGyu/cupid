@@ -414,7 +414,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_afternoon_choose_walk": {
         name: "Me",
-        character: "assets/images/characters/yuna_normal.png",
+        character: null,
         text: "(Who should I walk with...?)",
         sunset: true,
         choices: [
