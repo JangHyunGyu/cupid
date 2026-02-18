@@ -4485,11 +4485,12 @@ console.log('[Cupid Engine] 객체지향 버전 v2.0.0 로드 완료');
  * 이미지 확대 모달 열기
  * @param {string} src - 이미지 소스 URL
  */
-window.openImageModal = (src) => {
+window.openImageModal = (src, alt) => {
     const modal = document.getElementById('image-modal');
     const modalImg = document.getElementById('image-modal-img');
     if (modal && modalImg) {
         modalImg.src = src;
+        if (alt) modalImg.alt = alt;
         modal.style.display = 'flex';
     }
 };
