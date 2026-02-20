@@ -206,7 +206,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seoyeon_apologize": {
         name: "서연",
-        text: "'...솔직한 건 고마워. 근데 나, 다른 애들이랑 공유하는 건 싫어.'",
+        text: "'...솔직한 건 고마워. 하지만 나, 널 다른 애들이랑 공유할 생각 추호도 없어. 넌 내 거잖아, 그치?'",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
         night: true,
@@ -214,7 +214,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seoyeon_reassure": {
         name: "서연",
-        text: "'...정말? 그 말, 기억할게. 내일 꼭 증명해줘.'",
+        text: "'...정말? 그 말, 절대 잊지 마. 내일 나 말고 다른 사람한테 웃어주면... 나 진짜 무슨 짓을 할지 몰라.'",
         character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
         night: true,
@@ -287,7 +287,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_yuna_threat": {
         name: "유나",
-        text: "'...알지? 😊' *화면에 뜬 웃는 이모티콘이 왠지 모르게 등골을 서늘하게 만든다.*",
+        text: "'...도망칠 생각 마. 네가 어딜 가든, 누구랑 있든 다 지켜보고 있을 거니까. 😊' *화면에 뜬 웃는 이모티콘이 등골을 서늘하게 만든다.*",
         character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
@@ -321,7 +321,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_yuna_knows_2": {
         name: "유나",
-        text: "'괜찮아. 결국 넌 나한테 올 테니까.'",
+        text: "'괜찮아. 발버둥 쳐봐야 결국 내 손바닥 안이니까. 얌전히 내일 밤을 기다려.'",
         character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
@@ -350,7 +350,6 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_yuna_sleep": {
         name: "나",
-        character: "assets/images/characters/yuna_normal.png",
         text: "*유나와의 대화를 마쳤다.*",
         night: true,
         next: "day3_night_back_to_messages"
@@ -394,7 +393,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_dain_honest": {
         name: "다인",
-        text: "'...그래? 흥, 뭐 어쩔 수 없지. 근데 내 연습은 꼭 와야 해!'",
+        text: "'...그래? 흥, 상관없어! 내가 다른 애들보다 백 배, 천 배는 더 재밌게 해줄 거니까! 내일 보면 알게 될걸?!'",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
         night: true,

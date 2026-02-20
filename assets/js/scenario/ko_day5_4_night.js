@@ -310,7 +310,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_mayhem_5": {
         name: "나",
-        text: "(\"저 사람이 네 여자친구야?\" \"아니, 내가!\" \"무슨 소리, 나인데?\" … 그날 복도는 전쟁터가 됐다.)",
+        text: "*(\"어제 쟤랑 같이 있었지?\" 서연이의 가위질 소리, 유나의 서늘한 눈빛, 다인이의 으르렁거리는 목소리... 매일매일이 생존 게임이다.)*",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_6"
@@ -324,7 +324,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_mayhem_7": {
         name: "나",
-        text: "*…근데 옥상에도 한 명이 나를 기다리고 있었다. 역시, 도망칠 곳은 없었다.*",
+        text: "*누구 하나를 선택하는 순간, 남은 이들의 집착이 나를 갈기갈기 찢어놓을지도 모른다. 도망칠 곳은, 애초에 없었다.*",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_8"
@@ -409,7 +409,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_5": {
         name: "나",
-        text: "*그중 한 명은 조용히 웃으며 날 지켜보고, 한 명은 당당하게 팔짱을 끼고, 한 명은 뒤에서 몰래 손을 잡는다.*",
+        text: "*그녀들은 서로를 맹렬히 견제하면서도, 나를 온전히 독점할 수 없다면 차라리 공유하겠다는 기묘하고도 위험한 타협을 이뤘다.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_6"
@@ -451,7 +451,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_11": {
         name: "나",
-        text: "*하지만 그 긴장감마저 즐기는 나는, 어쩌면 이미 돌이킬 수 없는 사람인지도.*",
+        text: "*달콤한 지옥. 이 배덕감과 아찔한 쾌락 속에서, 나는 영원히 빠져나갈 수 없을 것이다. 아니, 빠져나가고 싶지 않다.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_12"
