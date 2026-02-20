@@ -589,7 +589,7 @@ Object.assign(SCENARIO[4], {
     // --- 서연 수락 ---
     "day4_accept_seoyeon": {
         name: "서연",
-        text: "\"...바보. 내가 얼마나 기다렸는지 알아? 네가 그 말을 해주지 않으면, 내가 먼저 해버릴 참이었어.\"",
+        text: "\"...바보. 이제야 말해주네. 기억해? 이제 넌 온전히 내 거야. 다른 사람 쳐다보면... 진짜 안 참을 거야.\"",
         character: "assets/images/characters/seyoun_shy.png",
         sunset: true,
         stats: { Seoyeon: { affinity: 20 } },
@@ -607,7 +607,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_accept_seoyeon_close": {
         name: "서연",
-        text: "\"…손, 잡아도 돼?\"  (서연이가 조심스럽게 내 손을 감싸 쥐었다. 따뜻하고, 조금 떨리고 있었다.)",
+        text: "\"…이제 절대 안 놔줄 거야.\"  *서연이가 내 손에 깍지를 끼며 강하게 옭아맸다. 달콤하면서도 숨 막히는 구속감이 밀려온다.*",
         character: "assets/images/characters/seyoun_shy2.png",
         sunset: true,
         next: "day4_after_confess"
@@ -616,7 +616,7 @@ Object.assign(SCENARIO[4], {
     // --- 유나 수락 ---
     "day4_accept_yuna": {
         name: "유나",
-        text: "\"...네가 내 선을 넘어왔을 때부터, 이미 내 세상은 너로 가득 차 있었어. 책임져, 평생.\"",
+        text: "\"...네가 먼저 선을 넘은 거야. 이제 도망치고 싶어도 못 도망쳐. 넌 내 거니까. 평생, 내 옆에서 숨 쉬어.\"",
         character: "assets/images/characters/yuna_shy.png",
         sunset: true,
         stats: { Yuna: { affinity: 20 } },
@@ -634,7 +634,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_accept_yuna_close": {
         name: "유나",
-        text: "\"…가만히 있어.\"  (유나가 내 옆에 바짝 붙어 섰다. 어깨가 닿는다. 작은 온기가 전해져 온다.)",
+        text: "\"…가만히 있어.\"  *유나가 내 옷깃을 꽉 쥐며 품에 파고들었다. 서늘하지만 뜨거운 숨결이 목덜미를 간지럽힌다.*",
         character: "assets/images/characters/yuna_shy.png",
         sunset: true,
         next: "day4_after_confess"
@@ -688,7 +688,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_accept_nurse_close": {
         name: "보건선생님",
-        text: "\"비밀이야, 우리만의.\"  (선생님이 내 손을 살며시 잡았다. 부드럽고 따뜻한 손이… 떨리고 있었다.)",
+        text: "\"학교에선 비밀이야... 우리만의, 위험한 장난.\"  *선생님이 내 귓가에 다가와 달콤하고 아찔한 숨결을 속삭였다.*",
         character: "assets/images/characters/nurse_shy.png",
         sunset: true,
         next: "day4_after_confess"
@@ -697,7 +697,7 @@ Object.assign(SCENARIO[4], {
     // --- 담임선생님 수락 ---
     "day4_accept_teacher": {
         name: "담임선생님",
-        text: "\"…하, 진짜 너는. 학생이 선생한테 이런 말 하면 안 되는 거 알지? …근데 나도 같은 마음이야, 바보.\"",
+        text: "\"…하아, 진짜 미치겠네. 내가 학생한테 흔들릴 줄이야. 선을 넘은 건 너야. 앞으로 무슨 일이 생겨도... 후회하지 마.\"",
         character: "assets/images/characters/teacher_shy.png",
         sunset: true,
         stats: { Teacher: { affinity: 20 } },
@@ -715,7 +715,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_accept_teacher_close": {
         name: "담임선생님",
-        text: "\"…이것만.\"  (선생님이 내 새끼손가락에 자신의 새끼손가락을 걸었다. \"학교에서는… 비밀이야.\")",
+        text: "\"…각오해.\"  *선생님이 넥타이를 살짝 풀며, 평소의 엄격함이 무너진 짙고 농염한 눈빛으로 나를 옭아맸다.*",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "day4_after_confess"
