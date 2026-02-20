@@ -57,7 +57,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_afternoon_start": {
         name: "Me",
-        text: "(Before I knew it, afternoon arrived. The sky seen from the rooftop is beginning to turn orange.)",
+        text: "*Before I knew it, afternoon arrived. The sky seen from the rooftop is beginning to turn orange.*",
         background: "assets/images/background/top_school.png",
         bgm: "sunset1.mp3",
         sunset: true,
@@ -89,7 +89,7 @@ Object.assign(SCENARIO[5], {
 
     "day5_true_love_start": {
         name: "Me",
-        text: "(Standing side by side under the sunset. I wish this moment could last forever.)",
+        text: "*Standing side by side under the sunset. I wish this moment could last forever.*",
         sunset: true,
         setFlag: "ending_true_love",
         next: "day5_true_talk_1"
@@ -160,28 +160,28 @@ Object.assign(SCENARIO[5], {
     "day5_true_kiss_buildup": {
         name: "Me",
         character: null,
-        text: "(The wind blows. Their face, bathed in the sunset glow, feels unusually close.)",
+        text: "*The wind blows. Their face, bathed in the sunset glow, feels unusually close.*",
         sunset: true,
         next: "day5_true_kiss_2"
     },
     "day5_true_kiss_2": {
         name: "Me",
         character: null,
-        text: "(We look into each other's eyes. No words are needed.)",
+        text: "*We look into each other's eyes. No words are needed.*",
         sunset: true,
         next: "day5_true_kiss_3"
     },
     "day5_true_kiss_3": {
         name: "Me",
         character: null,
-        text: "(Naturally... our faces draw closer.)",
+        text: "*Naturally... our faces draw closer.*",
         sunset: true,
         next: "day5_true_kiss_4"
     },
     "day5_true_kiss_4": {
         name: "Me",
         character: null,
-        text: "(...I closed my eyes.)",
+        text: "*...I closed my eyes.*",
         sunset: true,
         fade: true,
         next: "day5_true_kiss_5"
@@ -189,7 +189,7 @@ Object.assign(SCENARIO[5], {
     "day5_true_kiss_5": {
         name: "Me",
         character: null,
-        text: "(A soft warmth. Time seemed to stop.)",
+        text: "*A soft warmth. Time seemed to stop.*",
         sunset: true,
         fade: true,
         next: "day5_true_kiss_6"
@@ -197,7 +197,7 @@ Object.assign(SCENARIO[5], {
     "day5_true_kiss_6": {
         name: "Me",
         character: null,
-        text: "(......)",
+        text: "*......*",
         sunset: true,
         fade: true,
         next: "day5_true_kiss_after"
@@ -205,7 +205,7 @@ Object.assign(SCENARIO[5], {
     "day5_true_kiss_after": {
         name: "Me",
         character: null,
-        text: "(When I opened my eyes, they were smiling in the sunset light. The most beautiful smile in the world.)",
+        text: "*When I opened my eyes, they were smiling in the sunset light. The most beautiful smile in the world.*",
         sunset: true,
         next: "day5_true_evening_branch"
     },
@@ -227,7 +227,7 @@ Object.assign(SCENARIO[5], {
     // ─── 서연: 부모님 부재, 서연의 방 ───
     "day5_bed_seoyeon_1": {
         name: "Me",
-        text: "(The sun has set. I was going to walk her home... but Seoyeon grabbed my sleeve.)",
+        text: "*The sun has set. I was going to walk her home... but Seoyeon grabbed my sleeve.*",
         night: true,
         next: "day5_bed_seoyeon_2"
     },
@@ -241,7 +241,7 @@ Object.assign(SCENARIO[5], {
     "day5_bed_seoyeon_3": {
         name: "Me",
         character: "assets/images/characters/seyoun_shy.png",
-        text: "(A quiet residential street. Seoyeon opened the front door. Past the spacious living room, up to her room on the second floor.)",
+        text: "*A quiet residential street. Seoyeon opened the front door. Past the spacious living room, up to her room on the second floor.*",
         night: true,
         fade: true,
         next: "day5_bed_seoyeon_4"
@@ -249,7 +249,7 @@ Object.assign(SCENARIO[5], {
     "day5_bed_seoyeon_4": {
         name: "Me",
         character: "assets/images/characters/seyoun_shy.png",
-        text: "(A neatly organized room. A bookshelf full of books, student council papers on the desk. Soft ambient lighting. The room was filled with Seoyeon's scent.)",
+        text: "*A neatly organized room. A bookshelf full of books, student council papers on the desk. Soft ambient lighting. The room was filled with Seoyeon's scent.*",
         background: "assets/images/background/seyoun_room.png",
         night: true,
         fade: true,
@@ -268,7 +268,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: "assets/images/background/seyoun_room.png",
         character: "assets/images/characters/seyoun_shy.png",
-        text: "(We sat side by side on the edge of the bed. Seoyeon's hands were trembling.)",
+        text: "*We sat side by side on the edge of the bed. Seoyeon's hands were trembling.*",
         night: true,
         fade: true,
         next: "day5_bed_seoyeon_6"
@@ -286,7 +286,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: "assets/images/background/seyoun_room.png",
         character: "assets/images/characters/seyoun_shy.png",
-        text: "(Seoyeon rested her head on my shoulder. My heart felt like it would burst.)",
+        text: "*Seoyeon rested her head on my shoulder. My heart felt like it would burst.*",
         night: true,
         fade: true,
         next: "day5_bed_common_1"
@@ -295,7 +295,7 @@ Object.assign(SCENARIO[5], {
     // ─── 유나: 도서관 별관 비밀 다락방 ───
     "day5_bed_yuna_1": {
         name: "Me",
-        text: "(The sun has set. I was about to leave... but Yuna held my hand.)",
+        text: "*The sun has set. I was about to leave... but Yuna held my hand.*",
         night: true,
         next: "day5_bed_yuna_2"
     },
@@ -309,7 +309,7 @@ Object.assign(SCENARIO[5], {
     "day5_bed_yuna_3": {
         name: "Me",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(Yuna led me to the top of the library annex, a secret attic that no one knows about.)",
+        text: "*Yuna led me to the top of the library annex, a secret attic that no one knows about.*",
         night: true,
         fade: true,
         next: "day5_bed_yuna_4"
@@ -317,7 +317,7 @@ Object.assign(SCENARIO[5], {
     "day5_bed_yuna_4": {
         name: "Me",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(An old sofa, a single blanket, and stars visible through a small window. Yuna's secret space.)",
+        text: "*An old sofa, a single blanket, and stars visible through a small window. Yuna's secret space.*",
         background: "assets/images/background/yuna_hideout.png",
         night: true,
         fade: true,
@@ -336,7 +336,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: "assets/images/background/yuna_hideout.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(Yuna spread out the blanket. Sitting side by side on the narrow sofa, our shoulders touched.)",
+        text: "*Yuna spread out the blanket. Sitting side by side on the narrow sofa, our shoulders touched.*",
         night: true,
         fade: true,
         next: "day5_bed_yuna_7"
@@ -354,7 +354,7 @@ Object.assign(SCENARIO[5], {
     // ─── 다인: 빈 체육관 매트 위 ───
     "day5_bed_dain_1": {
         name: "Me",
-        text: "(The sun has set. Dain waved a key around with a grin.)",
+        text: "*The sun has set. Dain waved a key around with a grin.*",
         night: true,
         next: "day5_bed_dain_2"
     },
@@ -368,7 +368,7 @@ Object.assign(SCENARIO[5], {
     "day5_bed_dain_3": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(The gym at night, empty. Dain laid out mats and opened the skylight in the ceiling.)",
+        text: "*The gym at night, empty. Dain laid out mats and opened the skylight in the ceiling.*",
         background: "assets/images/background/gym.png",
         night: true,
         fade: true,
@@ -378,7 +378,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(We lay side by side on the mats, looking up at the stars. I could hear Dain breathing close by.)",
+        text: "*We lay side by side on the mats, looking up at the stars. I could hear Dain breathing close by.*",
         night: true,
         fade: true,
         next: "day5_bed_dain_5"
@@ -396,7 +396,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_shy.png",
-        text: "(Dain placed my hand over her chest. It really was... beating fast.)",
+        text: "*Dain placed my hand over her chest. It really was... beating fast.*",
         night: true,
         fade: true,
         next: "day5_bed_dain_7"
@@ -414,7 +414,7 @@ Object.assign(SCENARIO[5], {
     // ─── 보건선생님: 보건실, 문 잠금 ───
     "day5_bed_nurse_1": {
         name: "Me",
-        text: "(The sun has set. The school nurse smiled meaningfully.)",
+        text: "*The sun has set. The school nurse smiled meaningfully.*",
         night: true,
         next: "day5_bed_nurse_2"
     },
@@ -428,7 +428,7 @@ Object.assign(SCENARIO[5], {
     "day5_bed_nurse_3": {
         name: "Me",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(Click. I heard the infirmary door lock.)",
+        text: "*Click. I heard the infirmary door lock.*",
         night: true,
         fade: true,
         next: "day5_bed_nurse_4"
@@ -436,7 +436,7 @@ Object.assign(SCENARIO[5], {
     "day5_bed_nurse_4": {
         name: "Me",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(The curtained bed area. Instead of disinfectant, a faint perfume scent lingered.)",
+        text: "*The curtained bed area. Instead of disinfectant, a faint perfume scent lingered.*",
         background: "assets/images/background/nurse_room.jpg",
         night: true,
         fade: true,
@@ -455,7 +455,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(We sat side by side on the edge of the bed. Her hand rested on top of mine.)",
+        text: "*We sat side by side on the edge of the bed. Her hand rested on top of mine.*",
         night: true,
         fade: true,
         next: "day5_bed_nurse_7"
@@ -473,7 +473,7 @@ Object.assign(SCENARIO[5], {
     // ─── 담임선생님: 선생님의 차 안 → 선생님 자취방 ───
     "day5_bed_teacher_1": {
         name: "Me",
-        text: "(The sun has set. The teacher took out her car keys and jingled them.)",
+        text: "*The sun has set. The teacher took out her car keys and jingled them.*",
         night: true,
         next: "day5_bed_teacher_2"
     },
@@ -487,7 +487,7 @@ Object.assign(SCENARIO[5], {
     "day5_bed_teacher_3": {
         name: "Me",
         character: "assets/images/characters/teacher_shy.png",
-        text: "(The car stopped... not at my house. It was in front of the teacher's apartment.)",
+        text: "*The car stopped... not at my house. It was in front of the teacher's apartment.*",
         night: true,
         fade: true,
         next: "day5_bed_teacher_4"
@@ -503,7 +503,7 @@ Object.assign(SCENARIO[5], {
     "day5_bed_teacher_5": {
         name: "Me",
         character: "assets/images/characters/teacher_shy.png",
-        text: "(A small but tidy apartment. Ungraded exam papers piled on the desk. We sat side by side on the sofa.)",
+        text: "*A small but tidy apartment. Ungraded exam papers piled on the desk. We sat side by side on the sofa.*",
         background: "assets/images/background/teacher_room.png",
         night: true,
         fade: true,
@@ -522,7 +522,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: "assets/images/background/teacher_room.png",
         character: "assets/images/characters/teacher_shy.png",
-        text: "(The teacher let down her hair and smiled wearily. The coffee... ended up going cold.)",
+        text: "*The teacher let down her hair and smiled wearily. The coffee... ended up going cold.*",
         night: true,
         fade: true,
         next: "day5_bed_common_1"
@@ -533,7 +533,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: null,
         character: null,
-        text: "(Each other's warmth. Silently, naturally— the distance between us vanished.)",
+        text: "*Each other's warmth. Silently, naturally— the distance between us vanished.*",
         night: true,
         fade: true,
         next: "day5_bed_common_2"
@@ -542,7 +542,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: null,
         character: null,
-        text: "(......)",
+        text: "*......*",
         night: true,
         fade: true,
         next: "day5_bed_common_3"
@@ -551,7 +551,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: null,
         character: null,
-        text: "(..................)",
+        text: "*..................*",
         night: true,
         fade: true,
         next: "day5_true_morning"
@@ -562,7 +562,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: null,
         character: null,
-        text: "(I opened my eyes. Morning sunlight was streaming through the window.)",
+        text: "*I opened my eyes. Morning sunlight was streaming through the window.*",
         fade: true,
         next: "day5_true_morning_2"
     },
@@ -570,7 +570,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: null,
         character: null,
-        text: "(A face sleeping quietly next to me. Last night... wasn't a dream.)",
+        text: "*A face sleeping quietly next to me. Last night... wasn't a dream.*",
         fade: true,
         next: "day5_true_morning_3"
     },
@@ -578,7 +578,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: null,
         character: null,
-        text: "(I gently pulled the blanket up over them. I thought— I want to see this sleeping face for the rest of my life.)",
+        text: "*I gently pulled the blanket up over them. I thought— I want to see this sleeping face for the rest of my life.*",
         fade: true,
         next: "day5_true_final"
     },
@@ -586,7 +586,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: null,
         character: null,
-        text: "(This moment, this feeling, this warmth— I will never forget it.)",
+        text: "*This moment, this feeling, this warmth— I will never forget it.*",
         fade: true,
         next: "day5_ending_true"
     },
@@ -599,7 +599,7 @@ Object.assign(SCENARIO[5], {
 
     "day5_good_start": {
         name: "Me",
-        text: "(Standing side by side under the sunset. There were complications along the way... but in the end, I'm here with this person.)",
+        text: "*Standing side by side under the sunset. There were complications along the way... but in the end, I'm here with this person.*",
         sunset: true,
         setFlag: "ending_good",
         next: "day5_good_talk_1"
@@ -666,7 +666,7 @@ Object.assign(SCENARIO[5], {
     "day5_good_final": {
         name: "Me",
         character: null,
-        text: "(We held hands side by side, watching the sunset. It wasn't perfect... but this is our beginning.)",
+        text: "*We held hands side by side, watching the sunset. It wasn't perfect... but this is our beginning.*",
         sunset: true,
         fade: true,
         next: "day5_ending_good"
@@ -680,13 +680,13 @@ Object.assign(SCENARIO[5], {
 
     "day5_mayhem_start": {
         name: "Me",
-        text: "(I came up to the rooftop... Wait, huh?)",
+        text: "*I came up to the rooftop... Wait, huh?*",
         sunset: true,
         next: "day5_mayhem_2"
     },
     "day5_mayhem_2": {
         name: "Me",
-        text: "(Why... why is everyone here?!)",
+        text: "*Why... why is everyone here?!*",
         character: null,
         sunset: true,
         next: "day5_mayhem_3"
@@ -724,7 +724,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_teacher_watch": {
         name: "Me",
-        text: "(In the distance, the homeroom teacher is watching us. Her expression looks complicated.)",
+        text: "*In the distance, the homeroom teacher is watching us. Her expression looks complicated.*",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
         next: "day5_mayhem_nurse_check"
@@ -740,7 +740,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_nurse_watch": {
         name: "Me",
-        text: "(The school nurse is also watching the situation through a window.)",
+        text: "*The school nurse is also watching the situation through a window.*",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         next: "day5_mayhem_6"
@@ -748,7 +748,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_6": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(I have a feeling... this is going to be absolute chaos...)",
+        text: "*I have a feeling... this is going to be absolute chaos...*",
         sunset: true,
         next: "day5_mayhem_7"
     },
@@ -775,7 +775,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_10": {
         name: "Me",
-        text: "(Everyone's eyes turn toward me simultaneously. ...I'm done for.)",
+        text: "*Everyone's eyes turn toward me simultaneously. ...I'm done for.*",
         character: null,
         sunset: true,
         next: "day5_mayhem_11"
@@ -790,7 +790,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_12": {
         name: "Me",
         character: "assets/images/characters/seyoun_normal.png",
-        text: "(What do I say?!)",
+        text: "*What do I say?!*",
         sunset: true,
         choices: [
             {
@@ -818,7 +818,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_honest_2": {
         name: "System",
-        text: "(Silence fills the air.)",
+        text: "*Silence fills the air.*",
         sunset: true,
         next: "day5_mayhem_honest_3"
     },
@@ -848,7 +848,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_run": {
         name: "Me",
         character: "assets/images/characters/seyoun_normal.png",
-        text: "(I sprint toward the rooftop door without looking back!!)",
+        text: "*I sprint toward the rooftop door without looking back!!*",
         sunset: true,
         next: "day5_mayhem_run_2"
     },
@@ -876,7 +876,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_run_5": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(Everyone chases me down the stairs. Why is everyone so fast?!)",
+        text: "*Everyone chases me down the stairs. Why is everyone so fast?!*",
         sunset: true,
         next: "day5_mayhem_final"
     },
@@ -898,7 +898,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_mayhem_confess_3": {
         name: "System",
-        text: "(A long silence follows.)",
+        text: "*A long silence follows.*",
         sunset: true,
         next: "day5_mayhem_confess_seoyeon"
     },
@@ -926,7 +926,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_confess_silence": {
         name: "Me",
         character: "assets/images/characters/dain_normal.png",
-        text: "(They all exchange glances. A strange silence hangs in the air.)",
+        text: "*They all exchange glances. A strange silence hangs in the air.*",
         sunset: true,
         next: "day5_mayhem_confess_seoyeon_2"
     },
@@ -954,14 +954,14 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_confess_react": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(...They all glare at me at once. Their eyes are terrifying.)",
+        text: "*...They all glare at me at once. Their eyes are terrifying.*",
         sunset: true,
         next: "day5_mayhem_confess_final"
     },
     "day5_mayhem_confess_final": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(...This might be the beginning of hell. But in this moment— I'm the happiest man in the world.)",
+        text: "*...This might be the beginning of hell. But in this moment— I'm the happiest man in the world.*",
         sunset: true,
         fade: true,
         setFlag: "ending_harem",
@@ -971,7 +971,7 @@ Object.assign(SCENARIO[5], {
     // --- 수라장 엔딩 마무리 ---
     "day5_mayhem_final": {
         name: "Me",
-        text: "(The sunset fades. Is this how a peaceful Sunday afternoon ends...?)",
+        text: "*The sunset fades. Is this how a peaceful Sunday afternoon ends...?*",
         sunset: true,
         character: null,
         next: "day5_mayhem_final_2"
@@ -979,7 +979,7 @@ Object.assign(SCENARIO[5], {
     "day5_mayhem_final_2": {
         name: "Me",
         character: null,
-        text: "(...But why don't I feel so bad? This chaotic everyday life... is kind of its own happiness.)",
+        text: "*...But why don't I feel so bad? This chaotic everyday life... is kind of its own happiness.*",
         sunset: true,
         fade: true,
         setFlag: "ending_mayhem",
@@ -994,13 +994,13 @@ Object.assign(SCENARIO[5], {
 
     "day5_friend_start": {
         name: "Me",
-        text: "(The sunset paints the rooftop. I look at the face of the person beside me.)",
+        text: "*The sunset paints the rooftop. I look at the face of the person beside me.*",
         sunset: true,
         next: "day5_friend_choice"
     },
     "day5_friend_choice": {
         name: "Me",
-        text: "(This is my last chance to tell them how I feel... What should I do?)",
+        text: "*This is my last chance to tell them how I feel... What should I do?*",
         sunset: true,
         choices: [
             {
@@ -1083,13 +1083,13 @@ Object.assign(SCENARIO[5], {
     // --- Late Confession Transition Nodes ---
     "day5_late_accept_transition1": {
         name: "Me",
-        text: "(After staring at each other for a while, we burst into laughter.)",
+        text: "*After staring at each other for a while, we burst into laughter.*",
         sunset: true,
         next: "day5_late_accept_transition2"
     },
     "day5_late_accept_transition2": {
         name: "Me",
-        text: "(Something so simple... why did it take so long?)",
+        text: "*Something so simple... why did it take so long?*",
         sunset: true,
         next: "day5_good_final"
     },
@@ -1151,7 +1151,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_friend_bitter": {
         name: "Me",
-        text: "(...Somehow, their smile looked a little sad. A corner of my heart ached too.)",
+        text: "*...Somehow, their smile looked a little sad. A corner of my heart ached too.*",
         sunset: true,
         character: null,
         next: "day5_friend_final"
@@ -1159,7 +1159,7 @@ Object.assign(SCENARIO[5], {
     "day5_friend_final": {
         name: "Me",
         character: null,
-        text: "(Was this the right choice? ...I don't know. But this too is an ending.)",
+        text: "*Was this the right choice? ...I don't know. But this too is an ending.*",
         sunset: true,
         fade: true,
         next: "day5_ending_friend"
@@ -1173,38 +1173,38 @@ Object.assign(SCENARIO[5], {
 
     "day5_alone_start": {
         name: "Me",
-        text: "(I watch the sunset alone on the rooftop. Memories of my time at this school flash by.)",
+        text: "*I watch the sunset alone on the rooftop. Memories of my time at this school flash by.*",
         sunset: true,
         setFlag: "ending_alone",
         next: "day5_alone_2"
     },
     "day5_alone_2": {
         name: "Me",
-        text: "(Seoyeon, Yuna, Dain, the teachers... There were so many wonderful people.)",
+        text: "*Seoyeon, Yuna, Dain, the teachers... There were so many wonderful people.*",
         sunset: true,
         next: "day5_alone_3"
     },
     "day5_alone_3": {
         name: "Me",
-        text: "(Should I have told one of them how I felt? ...Probably.)",
+        text: "*Should I have told one of them how I felt? ...Probably.*",
         sunset: true,
         next: "day5_alone_4"
     },
     "day5_alone_4": {
         name: "Me",
-        text: "(But I don't regret it. The time I spent here is precious in itself.)",
+        text: "*But I don't regret it. The time I spent here is precious in itself.*",
         sunset: true,
         next: "day5_alone_5"
     },
     "day5_alone_5": {
         name: "Me",
-        text: "(I'm alone, but I'm not lonely. I've definitely changed from who I was before I transferred.)",
+        text: "*I'm alone, but I'm not lonely. I've definitely changed from who I was before I transferred.*",
         sunset: true,
         next: "day5_alone_6"
     },
     "day5_alone_6": {
         name: "Me",
-        text: "(Tomorrow is a fresh start. This time... I'll be a little braver.)",
+        text: "*Tomorrow is a fresh start. This time... I'll be a little braver.*",
         sunset: true,
         fade: true,
         next: "day5_ending_alone"

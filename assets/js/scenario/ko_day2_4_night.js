@@ -95,7 +95,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_end": {
         name: "나",
-        text: "(교문을 나서자 저녁 공기가 얼굴을 감싼다. 어느새 하늘은 짙은 남색으로 물들어 가고 있다.)",
+        text: "*교문을 나서자 저녁 공기가 얼굴을 감싼다. 어느새 하늘은 짙은 남색으로 물들어 가고 있다.*",
         background: "assets/images/background/street.png",
         bgm: "night2.mp3",
         character: null,
@@ -104,42 +104,42 @@ Object.assign(SCENARIO[2], {
     },
     "day2_end_walk_home": {
         name: "나",
-        text: "(가로등이 하나둘씩 켜지기 시작한다. 이 거리도 어느새 낯이 익어서, 어디서 꺾어야 하는지 생각하지 않아도 발이 알아서 움직인다.)",
+        text: "*가로등이 하나둘씩 켜지기 시작한다. 이 거리도 어느새 낯이 익어서, 어디서 꺾어야 하는지 생각하지 않아도 발이 알아서 움직인다.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day2_end_evening_air"
     },
     "day2_end_evening_air": {
         name: "나",
-        text: "(어딘가에서 저녁밥 짓는 냄새가 바람에 실려온다. 이웃집 창문 너머로 따뜻한 불빛이 새어나오고... 이런 평범한 풍경이 묘하게 마음을 편안하게 해준다.)",
+        text: "*어딘가에서 저녁밥 짓는 냄새가 바람에 실려온다. 이웃집 창문 너머로 따뜻한 불빛이 새어나오고... 이런 평범한 풍경이 묘하게 마음을 편안하게 해준다.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day2_end_arrive_home"
     },
     "day2_end_arrive_home": {
         name: "나",
-        text: "(현관문을 열고 들어섰다. 신발을 벗으며 '다녀왔습니다'라고 중얼거렸지만, 대답은 없다. 부모님은 아직 안 오신 모양이다.)",
+        text: "*현관문을 열고 들어섰다. 신발을 벗으며 '다녀왔습니다'라고 중얼거렸지만, 대답은 없다. 부모님은 아직 안 오신 모양이다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_end_change_clothes"
     },
     "day2_end_change_clothes": {
         name: "나",
-        text: "(교복을 벗고 편한 옷으로 갈아입었다. 넥타이를 빼는 순간, 하루의 긴장이 한꺼번에 풀리는 기분이다.)",
+        text: "*교복을 벗고 편한 옷으로 갈아입었다. 넥타이를 빼는 순간, 하루의 긴장이 한꺼번에 풀리는 기분이다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_end_settle"
     },
     "day2_end_settle": {
         name: "나",
-        text: "(가방을 내려놓고 책상 앞에 앉았다. 오늘 받은 프린트물을 파일에 꽂고, 물 한 잔을 마신다. 조용한 방 안에 시계 소리만 똑딱거린다.)",
+        text: "*가방을 내려놓고 책상 앞에 앉았다. 오늘 받은 프린트물을 파일에 꽂고, 물 한 잔을 마신다. 조용한 방 안에 시계 소리만 똑딱거린다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_end_2"
     },
     "day2_end_2": {
         name: "나",
-        text: "(침대에 기대앉아 천장을 올려다본다. 오늘은... 정말 많은 일이 있었어. 어제보다 훨씬 깊고 복잡한 하루였다.)",
+        text: "*침대에 기대앉아 천장을 올려다본다. 오늘은... 정말 많은 일이 있었어. 어제보다 훨씬 깊고 복잡한 하루였다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_reflect_start"
@@ -151,7 +151,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_reflect_start": {
         name: "나",
-        text: "(눈을 감으면 오늘 있었던 장면들이 파노라마처럼 스쳐 지나간다. 이틀째인데... 이미 이 학교가 내 일상의 일부가 된 것 같아.)",
+        text: "*눈을 감으면 오늘 있었던 장면들이 파노라마처럼 스쳐 지나간다. 이틀째인데... 이미 이 학교가 내 일상의 일부가 된 것 같아.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_reflect_yuna_check"
@@ -168,7 +168,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_reflect_yuna_secret": {
         name: "나",
-        text: "(유나가 속삭였던 비밀... 아직도 머릿속을 떠나지 않는다. 그 아이는 왜 나한테만 그런 이야기를 한 걸까? 저 신비로운 눈동자 속에 어떤 세계가 펼쳐져 있는 건지...)",
+        text: "*유나가 속삭였던 비밀... 아직도 머릿속을 떠나지 않는다. 그 아이는 왜 나한테만 그런 이야기를 한 걸까? 저 신비로운 눈동자 속에 어떤 세계가 펼쳐져 있는 건지...*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_reflect_seoyeon_check"
@@ -185,7 +185,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_reflect_seoyeon": {
         name: "나",
-        text: "(서연이는 오늘도 변함없이 밝았어. 학생회 일로 바쁘면서도 나를 챙겨주려고 애쓰는 모습이... 사실 좀 미안하기도 하고, 고맙기도 하고.)",
+        text: "*서연이는 오늘도 변함없이 밝았어. 학생회 일로 바쁘면서도 나를 챙겨주려고 애쓰는 모습이... 사실 좀 미안하기도 하고, 고맙기도 하고.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_reflect_dain_check"
@@ -202,14 +202,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_reflect_dain": {
         name: "나",
-        text: "(다인이는... 아, 그 에너지. 같이 있으면 지칠 틈이 없어. 운동하는 모습이 정말 멋있었고, 장난치는 것도 즐거웠어. 내일은 또 무슨 도전을 걸어올까.)",
+        text: "*다인이는... 아, 그 에너지. 같이 있으면 지칠 틈이 없어. 운동하는 모습이 정말 멋있었고, 장난치는 것도 즐거웠어. 내일은 또 무슨 도전을 걸어올까.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_reflect_adults"
     },
     "day2_night_reflect_adults": {
         name: "나",
-        text: "(보건선생님은 오늘도 묘한 분위기를 풍기셨고, 담임선생님은 장난스러우면서도 은근히 나를 신경 쓰셨어. 어른이라서 더 복잡한 걸까, 아니면... 내가 너무 의식하는 걸까.)",
+        text: "*보건선생님은 오늘도 묘한 분위기를 풍기셨고, 담임선생님은 장난스러우면서도 은근히 나를 신경 쓰셨어. 어른이라서 더 복잡한 걸까, 아니면... 내가 너무 의식하는 걸까.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_snack_start"
@@ -221,28 +221,28 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_snack_start": {
         name: "나",
-        text: "(생각에 잠겨 있었더니 어느새 배가 고파졌다. 저녁은 간단하게 때웠으니... 부엌에서 뭐라도 찾아볼까.)",
+        text: "*생각에 잠겨 있었더니 어느새 배가 고파졌다. 저녁은 간단하게 때웠으니... 부엌에서 뭐라도 찾아볼까.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_snack_kitchen"
     },
     "day2_night_snack_kitchen": {
         name: "나",
-        text: "(냉장고를 열어보니 엄마가 남겨둔 반찬 몇 가지와 라면이 보인다. 오늘은 라면 기분이야.)",
+        text: "*냉장고를 열어보니 엄마가 남겨둔 반찬 몇 가지와 라면이 보인다. 오늘은 라면 기분이야.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_snack_ramen"
     },
     "day2_night_snack_ramen": {
         name: "나",
-        text: "(냄비에 물을 올리고 라면을 끓이기 시작한다. 보글보글 끓는 소리가 조용한 부엌을 채운다. 김이 모락모락 올라오는 걸 보고 있자니 마음이 편안해진다.)",
+        text: "*냄비에 물을 올리고 라면을 끓이기 시작한다. 보글보글 끓는 소리가 조용한 부엌을 채운다. 김이 모락모락 올라오는 걸 보고 있자니 마음이 편안해진다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_snack_think"
     },
     "day2_night_snack_think": {
         name: "나",
-        text: "(라면을 후루룩 먹으며 생각한다. 오늘 연락처를 교환했던 사람들... 메시지를 보내볼까? 아니면 그냥 자버릴까. 설거지를 마치고 방으로 돌아왔다.)",
+        text: "*라면을 후루룩 먹으며 생각한다. 오늘 연락처를 교환했던 사람들... 메시지를 보내볼까? 아니면 그냥 자버릴까. 설거지를 마치고 방으로 돌아왔다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_home"
@@ -254,7 +254,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_home": {
         name: "나",
-        text: "(침대에 누워 습관적으로 스마트폰을 들었다.)",
+        text: "*침대에 누워 습관적으로 스마트폰을 들었다.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -265,28 +265,28 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_social_media": {
         name: "나",
-        text: "(메시지를 보내기 전에 SNS를 잠깐 훑어본다. 타임라인에 학교 친구들의 글이 올라와 있다.)",
+        text: "*메시지를 보내기 전에 SNS를 잠깐 훑어본다. 타임라인에 학교 친구들의 글이 올라와 있다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_social_media_scroll"
     },
     "day2_night_social_media_scroll": {
         name: "나",
-        text: "(누군가가 올린 급식 사진, 체육 시간에 몰래 찍은 사진, 학교 운동장 석양 사진... 다들 나름의 하루를 보내고 있구나.)",
+        text: "*누군가가 올린 급식 사진, 체육 시간에 몰래 찍은 사진, 학교 운동장 석양 사진... 다들 나름의 하루를 보내고 있구나.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_social_media_post"
     },
     "day2_night_social_media_post": {
         name: "나",
-        text: "(서연이가 올린 학생회 활동 인증샷에 좋아요가 잔뜩 눌려 있다. 다인이의 배구 연습 영상에는 '멋있다!'라는 댓글이 줄줄이 달려 있고...)",
+        text: "*서연이가 올린 학생회 활동 인증샷에 좋아요가 잔뜩 눌려 있다. 다인이의 배구 연습 영상에는 '멋있다!'라는 댓글이 줄줄이 달려 있고...*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_social_media_react"
     },
     "day2_night_social_media_react": {
         name: "나",
-        text: "(나도 모르게 미소가 지어진다. 좋아요를 몇 개 누르고 타임라인을 닫았다. ...이제 직접 메시지를 보내볼까.)",
+        text: "*나도 모르게 미소가 지어진다. 좋아요를 몇 개 누르고 타임라인을 닫았다. ...이제 직접 메시지를 보내볼까.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_home_check_contact"
@@ -298,7 +298,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_home_check_contact": {
         name: "나",
-        text: "(누군가에게 메시지를 보내볼까...?)",
+        text: "*누군가에게 메시지를 보내볼까...?*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -327,7 +327,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_nurse_home": {
         name: "나",
-        text: "(선생님이 알려준 주소로 향했다. 학교 근처의 조용한 오피스텔이다. 엘리베이터를 타고 올라가며 심장이 빨라지는 것을 느낀다.)",
+        text: "*선생님이 알려준 주소로 향했다. 학교 근처의 조용한 오피스텔이다. 엘리베이터를 타고 올라가며 심장이 빨라지는 것을 느낀다.*",
         background: "assets/images/background/nurse_house.png",
         character: null,
         night: true,
@@ -336,14 +336,14 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_entrance": {
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(초인종을 누르자 안에서 부스럭거리는 소리가 들린다. '잠깐만~'이라는 목소리와 함께 발걸음 소리가 가까워진다.)",
+        text: "*초인종을 누르자 안에서 부스럭거리는 소리가 들린다. '잠깐만~'이라는 목소리와 함께 발걸음 소리가 가까워진다.*",
         background: "assets/images/background/nurse_house.png",
         night: true,
         next: "day2_night_nurse_home_casual"
     },
     "day2_night_nurse_home_casual": {
         name: "나",
-        text: "(문 너머로 모습을 드러낸 선생님은... 학교에서와 전혀 다른 인상이었다. 흰 가운 대신 편한 니트와 긴 치마 차림. 살짝 젖은 머리카락에서 샴푸 향이 은은하게 풍겨온다.)",
+        text: "*문 너머로 모습을 드러낸 선생님은... 학교에서와 전혀 다른 인상이었다. 흰 가운 대신 편한 니트와 긴 치마 차림. 살짝 젖은 머리카락에서 샴푸 향이 은은하게 풍겨온다.*",
         background: "assets/images/background/nurse_house.png",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -360,7 +360,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_tea": {
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(안으로 들어서자 아늑한 원룸이 눈에 들어온다. 은은한 간접조명, 작은 화분들, 따뜻한 색감의 인테리어. 선생님이 부엌에서 주전자를 올린다.)",
+        text: "*안으로 들어서자 아늑한 원룸이 눈에 들어온다. 은은한 간접조명, 작은 화분들, 따뜻한 색감의 인테리어. 선생님이 부엌에서 주전자를 올린다.*",
         background: "assets/images/background/nurse_house.png",
         night: true,
         next: "day2_night_nurse_home_3"
@@ -393,7 +393,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_decision": {
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(시계를 보니 벌써 밤 11시가 넘었다. 찻잔은 비었고, 밤은 깊어졌다. 이대로 더 머무를까, 아니면 돌아갈까...)",
+        text: "*시계를 보니 벌써 밤 11시가 넘었다. 찻잔은 비었고, 밤은 깊어졌다. 이대로 더 머무를까, 아니면 돌아갈까...*",
         background: "assets/images/background/nurse_house.png",
         night: true,
         choices: [
@@ -403,7 +403,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_nurse_home_4": {
         name: "나",
-        text: "(선생님의 방... 은은한 조명 아래 둘만의 시간이 흐른다.)",
+        text: "*선생님의 방... 은은한 조명 아래 둘만의 시간이 흐른다.*",
         background: "assets/images/background/nurse_home_event1.png",
         character: null,
         night: true,
@@ -411,7 +411,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_nurse_home_5": {
         name: "나",
-        text: "(선생님과 단둘이 남겨진 방... 심장 소리가 귓가에 울릴 정도로 크게 들려온다. 그녀의 향기가 코끝을 간지럽히고, 밤은 점점 깊어만 간다.)",
+        text: "*선생님과 단둘이 남겨진 방... 심장 소리가 귓가에 울릴 정도로 크게 들려온다. 그녀의 향기가 코끝을 간지럽히고, 밤은 점점 깊어만 간다.*",
         background: "assets/images/background/nurse_house.png",
         character: null,
         night: true,
@@ -427,7 +427,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_seyoun": {
         name: "나",
         character: null,
-        text: "(서연이에게 어떤 메시지를 보낼까?)",
+        text: "*서연이에게 어떤 메시지를 보낼까?*",
         background: "assets/images/background/room_my.png",
         night: true,
         branches: [
@@ -438,7 +438,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_after": {
         name: "나",
-        text: "(서연이에게 메시지를 보냈다. '오늘 노을부터 야근(?)까지, 너랑 함께해서 정말 행복했어. 내일 봐!')",
+        text: "*서연이에게 메시지를 보냈다. '오늘 노을부터 야근(?)까지, 너랑 함께해서 정말 행복했어. 내일 봐!'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_seyoun",
@@ -446,7 +446,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_lunch": {
         name: "나",
-        text: "(서연이에게 메시지를 보냈다. '오늘 점심 샌드위치 정말 맛있었어! 내일 봐.')",
+        text: "*서연이에게 메시지를 보냈다. '오늘 점심 샌드위치 정말 맛있었어! 내일 봐.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_seyoun",
@@ -454,7 +454,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_generic": {
         name: "나",
-        text: "(서연이에게 메시지를 보냈다. '오늘 하루 잘 보냈어? 내일 학교에서 보자.')",
+        text: "*서연이에게 메시지를 보냈다. '오늘 하루 잘 보냈어? 내일 학교에서 보자.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_seyoun",
@@ -464,7 +464,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "서연",
-        text: "(잠시 후, 답장이 왔다.) '...혹시 아직 안 잤어? 내일 학교에서 보자, {name}.'",
+        text: "*잠시 후, 답장이 왔다.* '...혹시 아직 안 잤어? 내일 학교에서 보자, {name}.'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
@@ -482,7 +482,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_reply_high": {
         name: "나",
-        text: "(서연이와의 대화는 언제나 즐겁다. 그녀의 다정한 말투에서 진심이 느껴져 가방을 챙기는 손길이 가볍다. 내일 점심시간이 벌써부터 기다려진다.)",
+        text: "*서연이와의 대화는 언제나 즐겁다. 그녀의 다정한 말투에서 진심이 느껴져 가방을 챙기는 손길이 가볍다. 내일 점심시간이 벌써부터 기다려진다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
@@ -491,7 +491,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_reply_normal": {
         name: "나",
-        text: "(서연이와 무난하게 대화를 마쳤다. 내일 점심 약속을 잊지 말아야겠다.)",
+        text: "*서연이와 무난하게 대화를 마쳤다. 내일 점심 약속을 잊지 말아야겠다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
@@ -500,7 +500,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_reply_low": {
         name: "나",
-        text: "(서연이의 반응이 평소보다 조금 사무적으로 느껴진다. 내가 무언가 실수한 걸까? 내일은 좀 더 조심스럽게 다가가야겠다.)",
+        text: "*서연이의 반응이 평소보다 조금 사무적으로 느껴진다. 내가 무언가 실수한 걸까? 내일은 좀 더 조심스럽게 다가가야겠다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
@@ -515,7 +515,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_yuna": {
         name: "나",
         character: null,
-        text: "(유나에게 어떤 메시지를 보낼까?)",
+        text: "*유나에게 어떤 메시지를 보낼까?*",
         background: "assets/images/background/room_my.png",
         night: true,
         branches: [
@@ -526,7 +526,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_met": {
         name: "나",
-        text: "(유나에게 메시지를 보냈다. '오늘 보여준 거... 잊지 않을게. 잘 자.')",
+        text: "*유나에게 메시지를 보냈다. '오늘 보여준 거... 잊지 않을게. 잘 자.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_yuna",
@@ -534,7 +534,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_generic": {
         name: "나",
-        text: "(유나에게 메시지를 보냈다. '오늘 하루는 어땠어? 내일 학교에서 보자.')",
+        text: "*유나에게 메시지를 보냈다. '오늘 하루는 어땠어? 내일 학교에서 보자.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_yuna",
@@ -544,7 +544,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "유나",
-        text: "(잠시 후 도착한 답장.) '...응. 네가 이해해줄 줄 알았어. 꿈속에서도 지켜보고 있을게, {name}.'",
+        text: "*잠시 후 도착한 답장.* '...응. 네가 이해해줄 줄 알았어. 꿈속에서도 지켜보고 있을게, {name}.'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
@@ -562,7 +562,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply_high": {
         name: "나",
-        text: "(유나의 신비로운 분위기에 점점 빠져드는 것 같다. '꿈속에서도 지켜보겠다'는 그녀의 말이 무섭기보다는 묘하게 안심이 된다. 정말로 꿈에서 그녀를 만날 수 있을 것만 같다.)",
+        text: "*유나의 신비로운 분위기에 점점 빠져드는 것 같다. '꿈속에서도 지켜보겠다'는 그녀의 말이 무섭기보다는 묘하게 안심이 된다. 정말로 꿈에서 그녀를 만날 수 있을 것만 같다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
@@ -571,7 +571,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply_normal": {
         name: "나",
-        text: "(유나와의 대화는 여전히 난해하지만, 조금은 가까워진 기분이다. 그녀가 말한 비밀들이 머릿속을 맴돈다.)",
+        text: "*유나와의 대화는 여전히 난해하지만, 조금은 가까워진 기분이다. 그녀가 말한 비밀들이 머릿속을 맴돈다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
@@ -580,7 +580,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply_low": {
         name: "나",
-        text: "(유나의 태도가 너무나 차갑고 기괴하다. 그녀의 세계에 발을 들이는 것이 정말 옳은 선택인지, 한기가 느껴진다.)",
+        text: "*유나의 태도가 너무나 차갑고 기괴하다. 그녀의 세계에 발을 들이는 것이 정말 옳은 선택인지, 한기가 느껴진다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
@@ -595,7 +595,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_dain": {
         name: "나",
         character: null,
-        text: "(다인이에게 어떤 메시지를 보낼까?)",
+        text: "*다인이에게 어떤 메시지를 보낼까?*",
         background: "assets/images/background/room_my.png",
         night: true,
         branches: [
@@ -606,7 +606,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_after": {
         name: "나",
-        text: "(방과 후 연습 때 일이 생각난다. 어떤 메시지를 보낼까?)",
+        text: "*방과 후 연습 때 일이 생각난다. 어떤 메시지를 보낼까?*",
         background: "assets/images/background/room_my.png",
         night: true,
         branches: [
@@ -616,7 +616,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_bet": {
         name: "나",
-        text: "(다인이에게 메시지를 보냈다. '오늘 연습 수고했어! 내일 떡볶이 내기 잊지 마.')",
+        text: "*다인이에게 메시지를 보냈다. '오늘 연습 수고했어! 내일 떡볶이 내기 잊지 마.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_dain",
@@ -624,7 +624,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_practice": {
         name: "나",
-        text: "(다인이에게 메시지를 보냈다. '오늘 연습 수고했어! 덕분에 즐거웠어. 내일 봐!')",
+        text: "*다인이에게 메시지를 보냈다. '오늘 연습 수고했어! 덕분에 즐거웠어. 내일 봐!'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_dain",
@@ -632,7 +632,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_lunch": {
         name: "나",
-        text: "(다인이에게 메시지를 보냈다. '오늘 매점에서 본 거 재밌었어! 내일 떡볶이 먹으러 가자.')",
+        text: "*다인이에게 메시지를 보냈다. '오늘 매점에서 본 거 재밌었어! 내일 떡볶이 먹으러 가자.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_dain",
@@ -640,7 +640,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_generic": {
         name: "나",
-        text: "(다인이에게 메시지를 보냈다. '다인아, 오늘 하루 수고했어! 내일 보자.')",
+        text: "*다인이에게 메시지를 보냈다. '다인아, 오늘 하루 수고했어! 내일 보자.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_dain",
@@ -650,7 +650,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "다인",
-        text: "(활기찬 답장.) '당연하지! 내가 이길 거니까 지갑 준비해둬! 하하, 잘 자, {name}!'",
+        text: "*활기찬 답장.* '당연하지! 내가 이길 거니까 지갑 준비해둬! 하하, 잘 자, {name}!'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
@@ -668,7 +668,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply_high": {
         name: "나",
-        text: "(다인이의 활기찬 에너지 덕분에 나까지 기운이 난다. '지갑 준비해둬'라며 장난치는 모습이 눈앞에 선하다. 내일 떡볶이 내기는 그녀를 위해서라도 꼭 져줘야 할까?)",
+        text: "*다인이의 활기찬 에너지 덕분에 나까지 기운이 난다. '지갑 준비해둬'라며 장난치는 모습이 눈앞에 선하다. 내일 떡볶이 내기는 그녀를 위해서라도 꼭 져줘야 할까?*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
@@ -677,7 +677,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply_normal": {
         name: "나",
-        text: "(다인이와 즐겁게 대화를 마쳤다. 내일 떡볶이 내기에서 지지 않도록 마음의 준비를 해야겠다.)",
+        text: "*다인이와 즐겁게 대화를 마쳤다. 내일 떡볶이 내기에서 지지 않도록 마음의 준비를 해야겠다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
@@ -686,7 +686,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply_low": {
         name: "나",
-        text: "(다인이의 반응이 평소보다 무미건조하다. 내가 보낸 메시지가 귀찮았던 건 아닐지, 핸드폰을 든 손이 어색해진다.)",
+        text: "*다인이의 반응이 평소보다 무미건조하다. 내가 보낸 메시지가 귀찮았던 건 아닐지, 핸드폰을 든 손이 어색해진다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/dain_sad.png",
         silhouette: true,
@@ -701,7 +701,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_nurse": {
         name: "나",
         character: null,
-        text: "(보건선생님께 어떤 메시지를 보낼까?)",
+        text: "*보건선생님께 어떤 메시지를 보낼까?*",
         background: "assets/images/background/room_my.png",
         night: true,
         branches: [
@@ -712,7 +712,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_rest": {
         name: "나",
-        text: "(보건선생님께 메시지를 보냈다. '선생님, 오늘 감사했어요. 덕분에 잘 쉬었어요.')",
+        text: "*보건선생님께 메시지를 보냈다. '선생님, 오늘 감사했어요. 덕분에 잘 쉬었어요.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_nurse",
@@ -720,7 +720,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_generic": {
         name: "나",
-        text: "(보건선생님께 메시지를 보냈다. '선생님, 오늘 하루 수고하셨어요. 안녕히 주무세요.')",
+        text: "*보건선생님께 메시지를 보냈다. '선생님, 오늘 하루 수고하셨어요. 안녕히 주무세요.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_nurse",
@@ -730,7 +730,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "보건선생님",
-        text: "(잠시 후, 답장이 왔다.) '응, 읽었어. 무리하지 말고 푹 쉬어. 내일 봐, {name}.'",
+        text: "*잠시 후, 답장이 왔다.* '응, 읽었어. 무리하지 말고 푹 쉬어. 내일 봐, {name}.'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
@@ -748,7 +748,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_reply_high": {
         name: "나",
-        text: "(선생님의 매혹적인 말투가 귓가에 맴도는 것 같다. 화면 너머로 그녀의 미소가 보이는 듯해 심장이 떨린다. 내일은 무슨 일이 있어도 보건실에 들러야겠다.)",
+        text: "*선생님의 매혹적인 말투가 귓가에 맴도는 것 같다. 화면 너머로 그녀의 미소가 보이는 듯해 심장이 떨린다. 내일은 무슨 일이 있어도 보건실에 들러야겠다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
@@ -757,7 +757,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_reply_normal": {
         name: "나",
-        text: "(선생님과 무사히 연락을 마쳤다. 내일 학교에서 뵈면 반갑게 인사드려야겠다.)",
+        text: "*선생님과 무사히 연락을 마쳤다. 내일 학교에서 뵈면 반갑게 인사드려야겠다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
@@ -766,7 +766,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_reply_low": {
         name: "나",
-        text: "(선생님의 답장이 너무나 사무적이다. 단순히 학생 중 한 명으로만 대하시는 것 같아 씁쓸한 기분이 든다.)",
+        text: "*선생님의 답장이 너무나 사무적이다. 단순히 학생 중 한 명으로만 대하시는 것 같아 씁쓸한 기분이 든다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
@@ -781,7 +781,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_teacher": {
         name: "나",
         character: null,
-        text: "(담임선생님께 메시지를 보냈다. '선생님, 오늘 하루 수고하셨습니다. 안녕히 주무세요.')",
+        text: "*담임선생님께 메시지를 보냈다. '선생님, 오늘 하루 수고하셨습니다. 안녕히 주무세요.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_teacher",
@@ -791,7 +791,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "담임선생님",
-        text: "(조금 늦게 도착한 답장.) '어머, {name}. 이 시간에 메시지라니 조금 놀랐네. 그래도 걱정해줘서 고마워. 너도 푹 자고 내일 지각하지 마렴.'",
+        text: "*조금 늦게 도착한 답장.* '어머, {name}. 이 시간에 메시지라니 조금 놀랐네. 그래도 걱정해줘서 고마워. 너도 푹 자고 내일 지각하지 마렴.'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
@@ -809,7 +809,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_teacher_reply_high": {
         name: "나",
-        text: "(선생님의 다정한 답장에 마음이 따뜻해진다. 학생으로서가 아니라, 조금은 한 명의 인격체로 존중받는 기분이 들어 내일 학교 가는 길이 기다려진다.)",
+        text: "*선생님의 다정한 답장에 마음이 따뜻해진다. 학생으로서가 아니라, 조금은 한 명의 인격체로 존중받는 기분이 들어 내일 학교 가는 길이 기다려진다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
@@ -818,7 +818,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_teacher_reply_normal": {
         name: "나",
-        text: "(선생님과 무사히 연락을 마쳤다. 내일은 지각하지 않도록 주의해야겠다.)",
+        text: "*선생님과 무사히 연락을 마쳤다. 내일은 지각하지 않도록 주의해야겠다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
@@ -827,7 +827,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_teacher_reply_low": {
         name: "나",
-        text: "(선생님의 답장이 짧고 엄격하다. 사적인 시간에 연락한 것이 큰 실례였던 것 같아 후회가 밀려온다.)",
+        text: "*선생님의 답장이 짧고 엄격하다. 사적인 시간에 연락한 것이 큰 실례였던 것 같아 후회가 밀려온다.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
@@ -842,7 +842,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_goodnight_start": {
         name: "나",
         character: null,
-        text: "(스마트폰을 내려놓고 창가로 다가갔다. 잠들기 전에 잠깐, 이 밤을 느껴보고 싶었다.)",
+        text: "*스마트폰을 내려놓고 창가로 다가갔다. 잠들기 전에 잠깐, 이 밤을 느껴보고 싶었다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_goodnight_stars"
@@ -850,7 +850,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_goodnight_stars": {
         name: "나",
         character: null,
-        text: "(창문을 열자 차가운 밤공기가 밀려든다. 하늘 위로 별들이 수놓아져 있다. 어제보다 더 선명하게 보이는 것 같아... 유나가 말했던 '세 번째 별'이 문득 떠오른다.)",
+        text: "*창문을 열자 차가운 밤공기가 밀려든다. 하늘 위로 별들이 수놓아져 있다. 어제보다 더 선명하게 보이는 것 같아... 유나가 말했던 '세 번째 별'이 문득 떠오른다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_goodnight_sounds"
@@ -858,7 +858,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_goodnight_sounds": {
         name: "나",
         character: null,
-        text: "(벌레 소리가 끊임없이 이어진다. 먼 곳에서 자동차 경적 소리가 한 번 울리고 다시 고요해진다. 이 동네의 밤은... 참 조용하다.)",
+        text: "*벌레 소리가 끊임없이 이어진다. 먼 곳에서 자동차 경적 소리가 한 번 울리고 다시 고요해진다. 이 동네의 밤은... 참 조용하다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_goodnight_tomorrow"
@@ -866,7 +866,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_goodnight_tomorrow": {
         name: "나",
         character: null,
-        text: "(내일이면 벌써 전학 온 지 3일째. 서연이, 유나, 다인이, 선생님들... 그들과의 관계는 어떻게 변해갈까. 기대와 불안이 뒤섞인 묘한 설렘이 가슴을 채운다.)",
+        text: "*내일이면 벌써 전학 온 지 3일째. 서연이, 유나, 다인이, 선생님들... 그들과의 관계는 어떻게 변해갈까. 기대와 불안이 뒤섞인 묘한 설렘이 가슴을 채운다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_goodnight_close"
@@ -874,7 +874,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_goodnight_close": {
         name: "나",
         character: null,
-        text: "(창문을 닫고 커튼을 쳤다. 이불 속으로 파고들어 눈을 감았다. 오늘도 고생 많았어, 나...)",
+        text: "*창문을 닫고 커튼을 쳤다. 이불 속으로 파고들어 눈을 감았다. 오늘도 고생 많았어, 나...*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_dream_start"
@@ -887,14 +887,14 @@ Object.assign(SCENARIO[2], {
     "day2_night_dream_start": {
         name: "나",
         character: null,
-        text: "(의식이 아스라하게 흐려진다... 꿈인지 현실인지 모를 공간에 서 있다. 학교 옥상인 것 같기도 하고, 어딘지 모를 정원 같기도 한 곳.)",
+        text: "*의식이 아스라하게 흐려진다... 꿈인지 현실인지 모를 공간에 서 있다. 학교 옥상인 것 같기도 하고, 어딘지 모를 정원 같기도 한 곳.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_dream_vision"
     },
     "day2_night_dream_vision": {
         name: "???",
-        text: "(누군가의 목소리가 바람에 실려 온다. '내일... 너에게 보여주고 싶은 것이 있어.' 목소리의 주인공은 알 수 없지만, 따뜻하면서도 간절한 울림이 귓가에 맴돈다.)",
+        text: "*누군가의 목소리가 바람에 실려 온다. '내일... 너에게 보여주고 싶은 것이 있어.' 목소리의 주인공은 알 수 없지만, 따뜻하면서도 간절한 울림이 귓가에 맴돈다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_dream_end"
@@ -902,7 +902,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_dream_end": {
         name: "나",
         character: null,
-        text: "(손을 뻗었지만 아무것도 잡히지 않는다. 목소리는 서서히 멀어지고... 의식이 깊고 깊은 잠 속으로 가라앉는다.)",
+        text: "*손을 뻗었지만 아무것도 잡히지 않는다. 목소리는 서서히 멀어지고... 의식이 깊고 깊은 잠 속으로 가라앉는다.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_final_scene"
@@ -914,7 +914,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_final_scene": {
         name: "나",
-        text: "(어둠 속에서 희미한 빛이 번진다. 내일은 또 어떤 진실이 나를 기다리고 있을까... 무거운 눈꺼풀을 닫으며 깊은 잠에 빠져든다.)",
+        text: "*어둠 속에서 희미한 빛이 번진다. 내일은 또 어떤 진실이 나를 기다리고 있을까... 무거운 눈꺼풀을 닫으며 깊은 잠에 빠져든다.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,

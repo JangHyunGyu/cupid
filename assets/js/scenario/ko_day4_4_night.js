@@ -51,7 +51,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_start": {
         name: "나",
-        text: "(집에 돌아왔다. 방에 누우니 오늘의 기억이 필름처럼 스쳐 지나간다.)",
+        text: "*집에 돌아왔다. 방에 누우니 오늘의 기억이 필름처럼 스쳐 지나간다.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -78,7 +78,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_yuna_sneak": {
         name: "나",
-        text: "(밤 10시. 유나에게서 메시지가 왔다. '학교 후문. 지금 와.')",
+        text: "*밤 10시. 유나에게서 메시지가 왔다. '학교 후문. 지금 와.'*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -88,7 +88,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_sneak_2": {
         name: "나",
         background: "assets/images/background/room_my.png",
-        text: "(심장이 두근거린다. 유나가 말했던 '진실'… 드디어 알게 되는 건가.)",
+        text: "*심장이 두근거린다. 유나가 말했던 '진실'… 드디어 알게 되는 건가.*",
         night: true,
         next: "day4_night_yuna_arrive"
     },
@@ -104,7 +104,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(학교 후문. 유나가 가로등 불빛 아래 서 있었다. 표정이 평소보다 더 단단해 보인다.)",
+        text: "*학교 후문. 유나가 가로등 불빛 아래 서 있었다. 표정이 평소보다 더 단단해 보인다.*",
         night: true,
         next: "day4_night_yuna_arrive_3"
     },
@@ -120,7 +120,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(유나의 눈빛이 심상치 않다.)",
+        text: "*유나의 눈빛이 심상치 않다.*",
         night: true,
         choices: [
             {
@@ -158,7 +158,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_corridor": {
         name: "나",
         character: "assets/images/characters/yuna_smile.png",
-        text: "(유나가 후문 자물쇠를 익숙하게 열었다. 마치 이미 여러 번 해 본 것처럼.)",
+        text: "*유나가 후문 자물쇠를 익숙하게 열었다. 마치 이미 여러 번 해 본 것처럼.*",
         background: "assets/images/background/school_hallway.png",
         night: true,
         next: "day4_night_yuna_corridor_2"
@@ -167,7 +167,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/yuna_smile.png",
-        text: "(텅 빈 학교 복도. 비상등만 희미하게 켜져 있다. 낮에는 시끄러웠던 곳이 지금은 숨소리마저 울릴 것 같다.)",
+        text: "*텅 빈 학교 복도. 비상등만 희미하게 켜져 있다. 낮에는 시끄러웠던 곳이 지금은 숨소리마저 울릴 것 같다.*",
         night: true,
         next: "day4_night_yuna_corridor_3"
     },
@@ -186,7 +186,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_basement": {
         name: "나",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(지하로 내려가자 공기가 차갑게 바뀌었다. 먼지 냄새와 함께 오래된 서류 냄새가 코끝을 찔렀다.)",
+        text: "*지하로 내려가자 공기가 차갑게 바뀌었다. 먼지 냄새와 함께 오래된 서류 냄새가 코끝을 찔렀다.*",
         background: "assets/images/background/school_basement.png",
         night: true,
         next: "day4_night_yuna_basement_2"
@@ -219,7 +219,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(유나가 선반에서 낡은 서류 파일을 꺼냈다. 빼곡한 숫자들과 도장들. 이건… 진짜 장부다.)",
+        text: "*유나가 선반에서 낡은 서류 파일을 꺼냈다. 빼곡한 숫자들과 도장들. 이건… 진짜 장부다.*",
         night: true,
         next: "day4_night_yuna_documents_2"
     },
@@ -243,7 +243,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
-        text: "(유나의 목소리가 떨리고 있다.)",
+        text: "*유나의 목소리가 떨리고 있다.*",
         night: true,
         choices: [
             {
@@ -330,7 +330,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
-        text: "(유나의 손이 떨리고 있었다. 서류를 쥔 손가락 끝이 하얗게 질려 있다.)",
+        text: "*유나의 손이 떨리고 있었다. 서류를 쥔 손가락 끝이 하얗게 질려 있다.*",
         night: true,
         next: "day4_night_yuna_silence_choice"
     },
@@ -338,7 +338,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
-        text: "(……)",
+        text: "*……*",
         night: true,
         choices: [
             {
@@ -370,7 +370,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(유나의 손이 차가웠다. 하지만 내 손을 뿌리치지 않았다.)",
+        text: "*유나의 손이 차가웠다. 하지만 내 손을 뿌리치지 않았다.*",
         night: true,
         next: "day4_night_yuna_resemblance"
     },
@@ -434,7 +434,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(그래서였구나. 유나가 처음부터 나에게 관심을 보인 이유. '특별한 빛'이라고 했던 것도… 선배의 그림자였던 걸까.)",
+        text: "*그래서였구나. 유나가 처음부터 나에게 관심을 보인 이유. '특별한 빛'이라고 했던 것도… 선배의 그림자였던 걸까.*",
         night: true,
         next: "day4_night_yuna_critical_choice"
     },
@@ -442,7 +442,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(……뭐라고 해야 하지.)",
+        text: "*……뭐라고 해야 하지.*",
         night: true,
         choices: [
             {
@@ -549,7 +549,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(유나의 눈에 결의가 서려 있다. 이건 단순한 호기심이 아니었다. 1년간 혼자 진실을 파헤쳐 온 거다.)",
+        text: "*유나의 눈에 결의가 서려 있다. 이건 단순한 호기심이 아니었다. 1년간 혼자 진실을 파헤쳐 온 거다.*",
         night: true,
         next: "day4_night_yuna_resolve_4"
     },
@@ -585,7 +585,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_exit": {
         name: "나",
         character: "assets/images/characters/yuna_smile.png",
-        text: "(학교를 빠져나왔다. 찬 밤바람이 불었지만, 옆에 유나가 있어서 덜 추웠다.)",
+        text: "*학교를 빠져나왔다. 찬 밤바람이 불었지만, 옆에 유나가 있어서 덜 추웠다.*",
         background: "assets/images/background/street.png",
         night: true,
         bgm: "night1.mp3",
@@ -611,7 +611,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_smile.png",
-        text: "(밤하늘 아래 유나가 어색하게 웃고 있다.)",
+        text: "*밤하늘 아래 유나가 어색하게 웃고 있다.*",
         night: true,
         choices: [
             {
@@ -646,7 +646,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(유나가 돌아서려다 멈칫했다. 그리고 아주 작은 목소리로 말했다.)",
+        text: "*유나가 돌아서려다 멈칫했다. 그리고 아주 작은 목소리로 말했다.*",
         night: true,
         next: "day4_night_yuna_farewell_2"
     },
@@ -662,13 +662,13 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(밤바람에 유나의 머리카락이 흔들렸다. 이 순간을 오래 기억하고 싶다고 생각했다.)",
+        text: "*밤바람에 유나의 머리카락이 흔들렸다. 이 순간을 오래 기억하고 싶다고 생각했다.*",
         night: true,
         next: "day4_night_yuna_home"
     },
     "day4_night_yuna_home": {
         name: "나",
-        text: "(집에 돌아왔다. 오늘 알게 된 것들이 머릿속을 맴돈다. 재단 비리, 선배의 죽음, 그리고 유나의 눈물…)",
+        text: "*집에 돌아왔다. 오늘 알게 된 것들이 머릿속을 맴돈다. 재단 비리, 선배의 죽음, 그리고 유나의 눈물…*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -678,7 +678,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(유나가 1년 동안 혼자 짊어져 온 무게. 이제는 내가 함께 들어야 할 차례다.)",
+        text: "*유나가 1년 동안 혼자 짊어져 온 무게. 이제는 내가 함께 들어야 할 차례다.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -689,7 +689,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_seoyeon_call": {
         name: "나",
-        text: "(밤 9시. 서연에게서 전화가 왔다.)",
+        text: "*밤 9시. 서연에게서 전화가 왔다.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -710,7 +710,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_shy.png",
         silhouette: true,
-        text: "(서연의 목소리가 평소와 다르다. 웃음기가 없고, 어딘가 떨리는 것 같다.)",
+        text: "*서연의 목소리가 평소와 다르다. 웃음기가 없고, 어딘가 떨리는 것 같다.*",
         night: true,
         next: "day4_night_seoyeon_call_4"
     },
@@ -725,7 +725,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_seoyeon_park": {
         name: "나",
-        text: "(공원에 도착했다. 벤치에 서연이 혼자 앉아 있었다. 평소의 단정한 교복 대신 편한 옷차림이다.)",
+        text: "*공원에 도착했다. 벤치에 서연이 혼자 앉아 있었다. 평소의 단정한 교복 대신 편한 옷차림이다.*",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_sad.png",
         night: true,
@@ -743,7 +743,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_sad.png",
-        text: "(서연의 눈이 빨갛다. …울었던 건가?)",
+        text: "*서연의 눈이 빨갛다. …울었던 건가?*",
         night: true,
         choices: [
             {
@@ -838,7 +838,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_cry.png",
-        text: "(서연의 눈에서 눈물이 흘러내렸다. 가로등 불빛에 반짝이는 눈물을 보는 건 처음이다.)",
+        text: "*서연의 눈에서 눈물이 흘러내렸다. 가로등 불빛에 반짝이는 눈물을 보는 건 처음이다.*",
         night: true,
         next: "day4_night_seoyeon_tear_choice"
     },
@@ -846,7 +846,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_cry.png",
-        text: "(서연이 울고 있다. 처음 보는 모습이다.)",
+        text: "*서연이 울고 있다. 처음 보는 모습이다.*",
         night: true,
         choices: [
             {
@@ -875,7 +875,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_cry.png",
-        text: "(서연이 내 가슴에 얼굴을 묻었다. 작은 어깨가 떨리고 있었다.)",
+        text: "*서연이 내 가슴에 얼굴을 묻었다. 작은 어깨가 떨리고 있었다.*",
         night: true,
         next: "day4_night_seoyeon_hug_3"
     },
@@ -907,7 +907,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_cry.png",
-        text: "(서연이 떨리는 손으로 새끼손가락을 걸었다. 그리고 참았던 울음이 터져 나왔다.)",
+        text: "*서연이 떨리는 손으로 새끼손가락을 걸었다. 그리고 참았던 울음이 터져 나왔다.*",
         night: true,
         next: "day4_night_seoyeon_pinky_4"
     },
@@ -943,7 +943,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_sad.png",
-        text: "(서연이 떨리는 눈으로 나를 올려다보고 있다.)",
+        text: "*서연이 떨리는 눈으로 나를 올려다보고 있다.*",
         night: true,
         choices: [
             {
@@ -1063,7 +1063,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_seoyeon_farewell": {
         name: "나",
         character: "assets/images/characters/seyoun_shy2.png",
-        text: "(공원을 나와 집 앞까지 함께 걸었다. 서연이 내 팔에 살짝 기대어 걸었다.)",
+        text: "*공원을 나와 집 앞까지 함께 걸었다. 서연이 내 팔에 살짝 기대어 걸었다.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_seoyeon_farewell_2"
@@ -1096,7 +1096,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/seyoun_shy2.png",
-        text: "(서연이 돌아서면서 작은 목소리로 말했다.)",
+        text: "*서연이 돌아서면서 작은 목소리로 말했다.*",
         night: true,
         next: "day4_night_seoyeon_farewell_6"
     },
@@ -1110,7 +1110,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_seoyeon_home": {
         name: "나",
-        text: "(집에 돌아왔다. 서연의 눈물이 자꾸 떠오른다. 완벽했던 학생회장의 진짜 모습… 그 무거운 짐을 나눠 들고 싶다.)",
+        text: "*집에 돌아왔다. 서연의 눈물이 자꾸 떠오른다. 완벽했던 학생회장의 진짜 모습… 그 무거운 짐을 나눠 들고 싶다.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1120,7 +1120,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_shy.png",
-        text: "(내일은… 서연이 웃는 이유가 '연기'가 아니라 '진심'이 되도록 해주고 싶다.)",
+        text: "*내일은… 서연이 웃는 이유가 '연기'가 아니라 '진심'이 되도록 해주고 싶다.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -1131,7 +1131,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_dain_gym": {
         name: "나",
-        text: "(밤 9시 반. 다인에게서 메시지가 왔다. '야 지금 시간 돼?ㅋㅋ 학교 오면 안 되지??')",
+        text: "*밤 9시 반. 다인에게서 메시지가 왔다. '야 지금 시간 돼?ㅋㅋ 학교 오면 안 되지??'*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1141,20 +1141,20 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_gym_2": {
         name: "나",
         background: "assets/images/background/room_my.png",
-        text: "(곧바로 또 메시지가 왔다. '아 그냥 와ㅋㅋ 체육관 뒷문 열어놨음!')",
+        text: "*곧바로 또 메시지가 왔다. '아 그냥 와ㅋㅋ 체육관 뒷문 열어놨음!'*",
         night: true,
         next: "day4_night_dain_gym_3"
     },
     "day4_night_dain_gym_3": {
         name: "나",
         background: "assets/images/background/room_my.png",
-        text: "(다인이 이 시간에 학교 체육관이라니. 뭔가 이상한데… 가보자.)",
+        text: "*다인이 이 시간에 학교 체육관이라니. 뭔가 이상한데… 가보자.*",
         night: true,
         next: "day4_night_dain_arrive"
     },
     "day4_night_dain_arrive": {
         name: "나",
-        text: "(체육관에 들어서자, 비상등만 켜진 어두운 코트 위에 다인이 혼자 배구공을 튀기고 있었다.)",
+        text: "*체육관에 들어서자, 비상등만 켜진 어두운 코트 위에 다인이 혼자 배구공을 튀기고 있었다.*",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_normal.png",
         night: true,
@@ -1172,7 +1172,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(그런데… 뭔가 이상하다. 다인이 평소보다 더 힘껏 웃고 있는 것 같다.)",
+        text: "*그런데… 뭔가 이상하다. 다인이 평소보다 더 힘껏 웃고 있는 것 같다.*",
         night: true,
         next: "day4_night_dain_spike"
     },
@@ -1188,7 +1188,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(다인에게 토스를 올려줬다. 다인이 높이 뛰어올라 스파이크를 내리찍는다.)",
+        text: "*다인에게 토스를 올려줬다. 다인이 높이 뛰어올라 스파이크를 내리찍는다.*",
         night: true,
         next: "day4_night_dain_spike_3"
     },
@@ -1196,7 +1196,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(착지하는 순간— 다인이 오른쪽 무릎을 움켜잡고 쪼그려 앉았다.)",
+        text: "*착지하는 순간— 다인이 오른쪽 무릎을 움켜잡고 쪼그려 앉았다.*",
         night: true,
         next: "day4_night_dain_hurt"
     },
@@ -1228,7 +1228,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(다인이 웃고 있지만, 무릎을 잡은 손이 하얗게 질려 있다.)",
+        text: "*다인이 웃고 있지만, 무릎을 잡은 손이 하얗게 질려 있다.*",
         night: true,
         choices: [
             {
@@ -1251,7 +1251,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(다인의 무릎을 보려 하자, 다인이 화들짝 뒤로 물러났다.)",
+        text: "*다인의 무릎을 보려 하자, 다인이 화들짝 뒤로 물러났다.*",
         night: true,
         next: "day4_night_dain_secret"
     },
@@ -1275,7 +1275,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(다인이 무릎 보호대를 걷어 올렸다. 무릎이 심하게 부어 있었다.)",
+        text: "*다인이 무릎 보호대를 걷어 올렸다. 무릎이 심하게 부어 있었다.*",
         night: true,
         next: "day4_night_dain_secret_3"
     },
@@ -1319,7 +1319,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(…배구가 전부였던 다인에게, 그건 사형선고나 마찬가지였을 거다.)",
+        text: "*…배구가 전부였던 다인에게, 그건 사형선고나 마찬가지였을 거다.*",
         night: true,
         next: "day4_night_dain_dream_2"
     },
@@ -1359,7 +1359,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(다인이 배구공을 꼭 안고 고개를 숙였다. 어깨가 떨리고 있었다. 항상 밝기만 했던 다인이… 울고 있다.)",
+        text: "*다인이 배구공을 꼭 안고 고개를 숙였다. 어깨가 떨리고 있었다. 항상 밝기만 했던 다인이… 울고 있다.*",
         night: true,
         next: "day4_night_dain_cry_choice"
     },
@@ -1367,7 +1367,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(……뭐라고 해야 하지.)",
+        text: "*……뭐라고 해야 하지.*",
         night: true,
         choices: [
             {
@@ -1440,7 +1440,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(다인이 내 가슴팍에 얼굴을 파묻고 엉엉 울기 시작했다. 체육관에 울음소리가 울려 퍼졌다.)",
+        text: "*다인이 내 가슴팍에 얼굴을 파묻고 엉엉 울기 시작했다. 체육관에 울음소리가 울려 퍼졌다.*",
         night: true,
         next: "day4_night_dain_tears_ok_4"
     },
@@ -1472,7 +1472,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(토스를 올려줬다. 다인이 이를 악물고 뛰어올라 최고의 스파이크를 내리찍었다. 착지와 함께 무릎을 잡았지만… 웃고 있었다.)",
+        text: "*토스를 올려줬다. 다인이 이를 악물고 뛰어올라 최고의 스파이크를 내리찍었다. 착지와 함께 무릎을 잡았지만… 웃고 있었다.*",
         night: true,
         next: "day4_night_dain_last_spike_4"
     },
@@ -1544,7 +1544,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_farewell": {
         name: "나",
         character: "assets/images/characters/dain_shy.png",
-        text: "(체육관을 나왔다. 밤 공기가 차갑지만, 다인이 내 팔짱을 끼고 걸었다.)",
+        text: "*체육관을 나왔다. 밤 공기가 차갑지만, 다인이 내 팔짱을 끼고 걸었다.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_dain_farewell_2"
@@ -1591,7 +1591,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_dain_home": {
         name: "나",
-        text: "(집에 돌아왔다. 체육관에서의 다인의 눈물이 떠오른다. 항상 밝기만 했던 다인이 감추고 있던 아픔… 그 무게가 가슴에 남아 있다.)",
+        text: "*집에 돌아왔다. 체육관에서의 다인의 눈물이 떠오른다. 항상 밝기만 했던 다인이 감추고 있던 아픔… 그 무게가 가슴에 남아 있다.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1601,7 +1601,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/dain_shy.png",
-        text: "(내일은 다인이 진심으로 웃을 수 있는 하루가 되길. 옆에서 지켜봐 줘야지.)",
+        text: "*내일은 다인이 진심으로 웃을 수 있는 하루가 되길. 옆에서 지켜봐 줘야지.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -1612,7 +1612,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_teacher_call": {
         name: "나",
-        text: "(밤 9시. 선생님한테 전화가 왔다.)",
+        text: "*밤 9시. 선생님한테 전화가 왔다.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1633,7 +1633,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
-        text: "(선생님 목소리가 평소와 다르다. 교실에서의 당당한 목소리가 아니라… 어딘가 지쳐 있는 느낌.)",
+        text: "*선생님 목소리가 평소와 다르다. 교실에서의 당당한 목소리가 아니라… 어딘가 지쳐 있는 느낌.*",
         night: true,
         next: "day4_night_teacher_call_4"
     },
@@ -1648,7 +1648,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_teacher_cafe": {
         name: "나",
-        text: "(카페에 도착했다. 구석 자리에 선생님이 앉아 있었다. 평소 정장 차림이 아니라 캐주얼한 옷을 입고 있었다.)",
+        text: "*카페에 도착했다. 구석 자리에 선생님이 앉아 있었다. 평소 정장 차림이 아니라 캐주얼한 옷을 입고 있었다.*",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_sad.png",
         night: true,
@@ -1666,7 +1666,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_sad.png",
-        text: "(선생님 눈이 붉다. …울었던 건가?)",
+        text: "*선생님 눈이 붉다. …울었던 건가?*",
         night: true,
         choices: [
             {
@@ -1753,7 +1753,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_sad.png",
-        text: "(선생님이 커피잔을 꼭 쥐고 고개를 숙였다. 어깨가 미세하게 떨리고 있었다.)",
+        text: "*선생님이 커피잔을 꼭 쥐고 고개를 숙였다. 어깨가 미세하게 떨리고 있었다.*",
         night: true,
         next: "day4_night_teacher_tear_2"
     },
@@ -1769,7 +1769,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_sad.png",
-        text: "(선생님의 눈가에 눈물이 맺혀 있다.)",
+        text: "*선생님의 눈가에 눈물이 맺혀 있다.*",
         night: true,
         choices: [
             {
@@ -1798,7 +1798,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_shy.png",
-        text: "(테이블 밑으로 선생님의 손을 잡았다. 차가웠던 손이 점점 따뜻해졌다.)",
+        text: "*테이블 밑으로 선생님의 손을 잡았다. 차가웠던 손이 점점 따뜻해졌다.*",
         night: true,
         next: "day4_night_teacher_hold_3"
     },
@@ -1890,7 +1890,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_shy.png",
-        text: "(선생님이 떨리는 목소리로 진심을 말하고 있다.)",
+        text: "*선생님이 떨리는 목소리로 진심을 말하고 있다.*",
         night: true,
         choices: [
             {
@@ -2042,7 +2042,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_farewell": {
         name: "나",
         character: "assets/images/characters/teacher_smile.png",
-        text: "(카페를 나왔다. 밤거리를 나란히 걸었다. 학교 밖에서 이렇게 걷는 건 처음이다.)",
+        text: "*카페를 나왔다. 밤거리를 나란히 걸었다. 학교 밖에서 이렇게 걷는 건 처음이다.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_teacher_farewell_2"
@@ -2089,7 +2089,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_teacher_home": {
         name: "나",
-        text: "(집에 돌아왔다. 카페에서의 선생님 모습이 떠오른다. 항상 당당하고 완벽했던 선생님이… 한 명의 여자로서 보여준 눈물과 떨림.)",
+        text: "*집에 돌아왔다. 카페에서의 선생님 모습이 떠오른다. 항상 당당하고 완벽했던 선생님이… 한 명의 여자로서 보여준 눈물과 떨림.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -2099,7 +2099,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_shy.png",
-        text: "(이 비밀은 무겁지만… 그만큼 소중하다. 선생님의 그 마음을 절대 가볍게 여기지 않을 거다.)",
+        text: "*이 비밀은 무겁지만… 그만큼 소중하다. 선생님의 그 마음을 절대 가볍게 여기지 않을 거다.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -2110,7 +2110,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_nurse_msg": {
         name: "나",
-        text: "(밤 10시. 보건선생님한테 메시지가 왔다. '아직 안 잤지? 시간 되면 잠깐 나올 수 있어?')",
+        text: "*밤 10시. 보건선생님한테 메시지가 왔다. '아직 안 잤지? 시간 되면 잠깐 나올 수 있어?'*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -2120,27 +2120,27 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_msg_2": {
         name: "나",
         background: "assets/images/background/room_my.png",
-        text: "(…평소처럼 장난스러운 메시지인데, 왜 이 시간에? 뭔가 이상하다.)",
+        text: "*…평소처럼 장난스러운 메시지인데, 왜 이 시간에? 뭔가 이상하다.*",
         night: true,
         next: "day4_night_nurse_msg_3"
     },
     "day4_night_nurse_msg_3": {
         name: "나",
         background: "assets/images/background/room_my.png",
-        text: "(곧바로 답장했다. '어디로 가면 돼요?')",
+        text: "*곧바로 답장했다. '어디로 가면 돼요?'*",
         night: true,
         next: "day4_night_nurse_msg_4"
     },
     "day4_night_nurse_msg_4": {
         name: "나",
         background: "assets/images/background/room_my.png",
-        text: "('학교 보건실. 뒷문 열어둘게.' …보건실에서?)",
+        text: "*'학교 보건실. 뒷문 열어둘게.' …보건실에서?*",
         night: true,
         next: "day4_night_nurse_arrive"
     },
     "day4_night_nurse_arrive": {
         name: "나",
-        text: "(학교에 도착했다. 보건실 문을 열자, 작은 스탠드 하나만 켜진 어두운 방 안에 선생님이 있었다.)",
+        text: "*학교에 도착했다. 보건실 문을 열자, 작은 스탠드 하나만 켜진 어두운 방 안에 선생님이 있었다.*",
         background: "assets/images/background/nurse_room.png",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2158,7 +2158,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/nurse_room.png",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(평소처럼 장난스럽게 웃고 있는데… 눈 밑에 다크서클이 짙다. 그리고 책상 위에 빈 커피캔이 여러 개.)",
+        text: "*평소처럼 장난스럽게 웃고 있는데… 눈 밑에 다크서클이 짙다. 그리고 책상 위에 빈 커피캔이 여러 개.*",
         night: true,
         choices: [
             {
@@ -2197,7 +2197,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/nurse_room.png",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(선생님이 웃고 있지만, 어딘가 무리하고 있다는 느낌이 든다.)",
+        text: "*선생님이 웃고 있지만, 어딘가 무리하고 있다는 느낌이 든다.*",
         night: true,
         next: "day4_night_nurse_mask_2"
     },
@@ -2261,7 +2261,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/nurse_room.png",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(선생님이 웃음을 멈췄다. 처음으로 장난기 없는, 진짜 얼굴을 보여주고 있다.)",
+        text: "*선생님이 웃음을 멈췄다. 처음으로 장난기 없는, 진짜 얼굴을 보여주고 있다.*",
         night: true,
         next: "day4_night_nurse_lonely_choice"
     },
@@ -2269,7 +2269,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/nurse_room.png",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(선생님의 진짜 모습이 보인다. 뭐라고 해야 할까.)",
+        text: "*선생님의 진짜 모습이 보인다. 뭐라고 해야 할까.*",
         night: true,
         choices: [
             {
@@ -2306,7 +2306,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/nurse_room.png",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(선생님이 처음에는 당황했지만… 곧 내 옷을 꼭 쥐었다.)",
+        text: "*선생님이 처음에는 당황했지만… 곧 내 옷을 꼭 쥐었다.*",
         night: true,
         next: "day4_night_nurse_hug_4"
     },
@@ -2414,7 +2414,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/nurse_room.png",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(선생님의 목소리가 떨리고 있다.)",
+        text: "*선생님의 목소리가 떨리고 있다.*",
         night: true,
         choices: [
             {
@@ -2542,7 +2542,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_farewell": {
         name: "나",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(보건실을 나와서 학교 밖으로 걸었다. 선생님이 내 팔짱을 끼었다.)",
+        text: "*보건실을 나와서 학교 밖으로 걸었다. 선생님이 내 팔짱을 끼었다.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_nurse_farewell_2"
@@ -2589,7 +2589,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_home": {
         name: "나",
-        text: "(집에 돌아왔다. 보건실에서 본 선생님의 진짜 얼굴이 떠오른다. 항상 장난치며 웃던 사람이… 사실은 가장 외로웠던 사람.)",
+        text: "*집에 돌아왔다. 보건실에서 본 선생님의 진짜 얼굴이 떠오른다. 항상 장난치며 웃던 사람이… 사실은 가장 외로웠던 사람.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -2599,7 +2599,7 @@ Object.assign(SCENARIO[4], {
         name: "나",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(이제는 선생님이 혼자가 아니다. 내가 옆에 있으니까. 내일은 진짜 웃음을 볼 수 있겠지.)",
+        text: "*이제는 선생님이 혼자가 아니다. 내가 옆에 있으니까. 내일은 진짜 웃음을 볼 수 있겠지.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -2610,13 +2610,13 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_regret": {
         name: "나",
-        text: "(…오늘 말할 수 있었는데. 그 석양 아래서, 완벽한 순간이었는데.)",
+        text: "*…오늘 말할 수 있었는데. 그 석양 아래서, 완벽한 순간이었는데.*",
         night: true,
         next: "day4_night_regret_2"
     },
     "day4_night_regret_2": {
         name: "나",
-        text: "(괜찮아. 내일이 있으니까. 내일은 반드시… 마음을 전하자.)",
+        text: "*괜찮아. 내일이 있으니까. 내일은 반드시… 마음을 전하자.*",
         night: true,
         next: "day4_night_regret_msg"
     },
@@ -2638,7 +2638,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_reflect": {
         name: "나",
-        text: "(토요일이 이렇게 지나갔다. 내일은… 뭘 하지?)",
+        text: "*토요일이 이렇게 지나갔다. 내일은… 뭘 하지?*",
         night: true,
         next: "day4_night_sleep"
     },
@@ -2648,14 +2648,14 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_sleep": {
         name: "나",
-        text: "(눈을 감으면 그 사람의 얼굴이 떠오른다. 이대로 잠들어도 좋겠다.)",
+        text: "*눈을 감으면 그 사람의 얼굴이 떠오른다. 이대로 잠들어도 좋겠다.*",
         night: true,
         fade: true,
         next: "day4_final"
     },
     "day4_final": {
         name: "나",
-        text: "(토요일 밤이 깊어간다... 내일은 일요일, 마지막 날이다.)",
+        text: "*토요일 밤이 깊어간다... 내일은 일요일, 마지막 날이다.*",
         background: null,
         character: null,
         night: true,
