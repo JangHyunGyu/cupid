@@ -116,7 +116,7 @@ Object.assign(SCENARIO[1], {
         choices: [
             { text: "응, 잘 부탁해! 학교가 엄청 예쁘네.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 3 } } },
             { text: "와... 진짜 예쁘다.", next: "path_blush_1", stats: { Seoyeon: { affinity: 10 } } },
-            { text: "학생회장이 이렇게 예뻐도 돼? 반칙 아냐?", next: "path_tease_1", stats: { Seoyeon: { affinity: 7 } } },
+            { text: "학교 홍보 모델이 직접 마중 나온 줄 알았네.", next: "path_tease_1", stats: { Seoyeon: { affinity: 7 } } },
             { text: "*눈이 부셔서 한동안 멍하니 바라본다.*", next: "path_silent_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "아, 그래? 근데 좀 비켜줄래?", next: "path_rude_1", stats: { Seoyeon: { affinity: -30 } } }
         ]
@@ -173,7 +173,7 @@ Object.assign(SCENARIO[1], {
     "path_blush_1_2": {
         name: "서연",
         background: "assets/images/background/school.png",
-        text: "\"...갑자기 그런 농담을 하면, 어떻게 반응해야 할지 모르겠잖아. (그녀는 뺨에 번진 홍조를 숨기려는 듯, 애써 차분한 목소리로 말하며 발걸음을 돌렸다.) 늦겠다. 얼른 따라와.\"",
+        text: "\"...갑자기 그런 농담을 하면, 어떻게 반응해야 할지 모르겠잖아. *그녀는 뺨에 번진 홍조를 숨기려는 듯, 애써 차분한 목소리로 말하며 발걸음을 돌렸다.* 늦겠다. 얼른 따라와.\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },

@@ -73,13 +73,13 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_reflect_trouble": {
         name: "나",
-        text: "*점심때 다 들켜버렸다... 주말이 무사히 지나갈 수 있을까?*",
+        text: "*점심때 다 들켜버렸다... 서늘하게 식어버린 공기와 나를 향하던 날 선 시선들이 아직도 생생하다. 주말이 무사히 지나갈 수 있을까?*",
         night: true,
         next: "day3_night_phone_check"
     },
     "day3_night_reflect_tension": {
         name: "나",
-        text: "*여러 약속을 잡아버렸는데... 시간 배분을 잘 해야겠다.*",
+        text: "*여러 약속을 잡아버렸는데... 한 명 한 명의 얼굴이 떠오를 때마다 가슴이 뛰면서도, 동시에 식은땀이 흐른다. 시간 배분을 잘 해야겠다.*",
         night: true,
         next: "day3_night_phone_check"
     },
@@ -194,7 +194,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seoyeon_jealous": {
         name: "서연",
-        text: "*추가 메시지* '오늘 점심때 일... 아직도 마음에 걸려. 나한테 솔직하게 말해줘.'",
+        text: "*추가 메시지* '오늘 점심때 일... 아직도 마음에 걸려. 나한테 솔직하게 말해줘.' *화면 너머로 그녀의 떨리는 목소리가 들리는 것만 같아 가슴이 욱신거린다.*",
         character: "assets/images/characters/seyoun_sad.png",
         silhouette: true,
         night: true,
@@ -287,7 +287,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_yuna_threat": {
         name: "유나",
-        text: "'...알지? 😊'",
+        text: "'...알지? 😊' *화면에 뜬 웃는 이모티콘이 왠지 모르게 등골을 서늘하게 만든다.*",
         character: "assets/images/characters/yuna_smile.png",
         silhouette: true,
         night: true,
@@ -385,7 +385,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_dain_priority": {
         name: "다인",
-        text: "'진짜?! 후훗, 그럼 됐어! 내일 멋진 거 보여줄게!'",
+        text: "'진짜?! 후훗, 그럼 됐어! 내일 멋진 거 보여줄게!' *단순하고 솔직한 다인이의 반응에 안도감이 들면서도, 한편으로는 죄책감이 밀려온다.*",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
         night: true,
