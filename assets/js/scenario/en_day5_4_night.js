@@ -108,21 +108,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_10": {
         name: "Me",
-        text: "*Tomorrow, the day after, even a year from now— I can see myself walking beside this person.*",
+        text: "*Tomorrow, the day after, even a year from now I can see myself unable to escape from this person.*",
         night: true,
         fade: true,
         next: "day5_ending_true_11"
     },
     "day5_ending_true_11": {
         name: "Me",
-        text: "*Let's make a promise. No matter what season comes, our story doesn't end here.*",
+        text: "*Let's make a promise. No matter what season comes, you will be tied to my side forever.*",
         night: true,
         fade: true,
         next: "day5_ending_true_12"
     },
     "day5_ending_true_12": {
         name: "Me",
-        text: "*To love someone completely— is to hold one single certainty amid all the uncertainty in the world.*",
+        text: "*To love someone completely is to hold one single obsession amid all the uncertainty in the world.*",
         night: true,
         fade: true,
         next: "day5_ending_true_13"
@@ -232,35 +232,35 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_good_8": {
         name: "Me",
-        text: "*I wasn't lost. It just took a little longer to arrive.*",
+        text: "*I wasn't lost. It was just a process to make you mine.*",
         night: true,
         fade: true,
         next: "day5_ending_good_9"
     },
     "day5_ending_good_9": {
         name: "Me",
-        text: "*If there had been no hesitation, there would be no conviction now.*",
+        text: "*If there had been no hesitation, there would be no such terrible possessiveness now.*",
         night: true,
         fade: true,
         next: "day5_ending_good_10"
     },
     "day5_ending_good_10": {
         name: "Me",
-        text: "*Imperfect love is still love. No— perhaps it's more precious because it's imperfect.*",
+        text: "*Imperfect love is still love. No perhaps it's more perfect because it's broken.*",
         night: true,
         fade: true,
         next: "day5_ending_good_11"
     },
     "day5_ending_good_11": {
         name: "Me",
-        text: "*I'll make mistakes again. We'll clash. But with this person, we can fall together and rise together.*",
+        text: "*I'll make mistakes again. We'll clash. But with this person, falling into ruin together wouldn't be so bad.*",
         night: true,
         fade: true,
         next: "day5_ending_good_12"
     },
     "day5_ending_good_12": {
         name: "Me",
-        text: "*So it's okay. This answer took a long time to find— that's exactly why it won't easily change.*",
+        text: "*So it's okay. This obsession took a long time to form that's exactly why it will never be undone.*",
         night: true,
         fade: true,
         next: "day5_ending_good_13"
@@ -331,21 +331,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_mayhem_8": {
         name: "Me",
-        text: "*Maybe it's selfish. Wanting to cherish everyone.*",
+        text: "*Maybe it's selfish. Wanting to cherish everyone. But it's already too late.*",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_9"
     },
     "day5_ending_mayhem_9": {
         name: "Me",
-        text: "*But the wind never blows in just one direction, and more than one star shines in the sky.*",
+        text: "*Their obsession is already suffocating me. The moment I choose one, I will be ruined.*",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_10"
     },
     "day5_ending_mayhem_10": {
         name: "Me",
-        text: "*This chaotic everyday life… honestly, it's not bad. I wonder what kind of mayhem tomorrow will bring.*",
+        text: "*This hellish everyday life honestly, it's not bad. I wonder what kind of bloody mayhem tomorrow will bring.*",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_11"
@@ -423,28 +423,28 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_7": {
         name: "Me",
-        text: "*But strangely enough… all of them are smiling. And so am I.*",
+        text: "*But strangely enough all of them are smiling. As if they completely own me.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_8"
     },
     "day5_ending_harem_8": {
         name: "Me",
-        text: "*Call it greed if you want. As long as there's no lie in this heart.*",
+        text: "*Call it greed if you want. If I can't escape from this terrible cycle of obsession.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_9"
     },
     "day5_ending_harem_9": {
         name: "Me",
-        text: "*No regrets. As for reflection… I'll leave that to tomorrow's me.*",
+        text: "*No regrets. No, they don't even give me time to regret. They are watching my every move.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_10"
     },
     "day5_ending_harem_10": {
         name: "Me",
-        text: "*Of course, no one knows how long this balance will last. There was another subtle standoff today.*",
+        text: "*Of course, no one knows when this balance will break. The moment someone crosses the line, a bloodbath will begin.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_11"
@@ -458,7 +458,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_12": {
         name: "Me",
-        text: "*Tomorrow will be busy. The day after, even more so. But— these dazzling days, I love them.*",
+        text: "*Tomorrow I'll be watched again. The day after, they'll tighten their grip even more. But these bloody days, I accept them.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_13"
@@ -529,21 +529,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_friend_8": {
         name: "Me",
-        text: "*Still, it's not all bad. I can see their smile right beside me. That alone is enough to get through the day.*",
+        text: "*Still, it's not all bad. I can see their smile right beside me. Waiting for the day I can shatter that smile.*",
         night: true,
         fade: true,
         next: "day5_ending_friend_9"
     },
     "day5_ending_friend_9": {
         name: "Me",
-        text: "*Maybe this isn't cowardice, but a quiet kind of courage. Staying by their side while holding love inside.*",
+        text: "*Maybe this isn't cowardice, but a quiet hunt. Staying by their side while holding my prey.*",
         night: true,
         fade: true,
         next: "day5_ending_friend_10"
     },
     "day5_ending_friend_10": {
         name: "Me",
-        text: "*Still… I don't regret it. Someday, another chance to be brave will come.*",
+        text: "*Still I don't regret it. Someday, the chance to make you completely mine will come.*",
         night: true,
         fade: true,
         next: "day5_ending_friend_11"
@@ -628,21 +628,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_alone_8": {
         name: "Me",
-        text: "*Being alone doesn't mean being lonely. There are things you can only hear when you're on your own.*",
+        text: "*Being alone doesn't mean being lonely. There are things you can only hear when you're on your own. Their footsteps, their breathing, the eyes watching me.*",
         night: true,
         fade: true,
         next: "day5_ending_alone_9"
     },
     "day5_ending_alone_9": {
         name: "Me",
-        text: "*The sound of the wind, my footsteps, my own heartbeat. Within that quiet rhythm, I was growing.*",
+        text: "*The sound of the wind, my footsteps, my own heartbeat. Within that quiet rhythm, I was slowly going mad.*",
         night: true,
         fade: true,
         next: "day5_ending_alone_10"
     },
     "day5_ending_alone_10": {
         name: "Me",
-        text: "*Next time… I'll be a little braver. I'm sure another chance will come.*",
+        text: "*Even if I couldn't reach anyone, these times are never meaningless. Because I am definitely sinking into a deeper darkness than yesterday.*",
         night: true,
         fade: true,
         next: "day5_ending_alone_11"
