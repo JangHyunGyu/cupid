@@ -71,7 +71,7 @@ if (!SCENARIO[2]) {
 Object.assign(SCENARIO[2], {
     "day2_afternoon_class": {
         name: "나",
-        text: "(지루한 오후 수업 끝. 창가로 스며드는 붉은 노을이 교실을 감성적으로 물들인다. 이제 자유시간인가...)",
+        text: "*지루한 오후 수업 끝. 창가로 스며드는 붉은 노을이 교실을 감성적으로 물들인다. 이제 자유시간인가...*",
         background: "assets/images/background/room_school.png",
         bgm: "sunset2.mp3",
         character: null,
@@ -80,7 +80,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_afternoon_nurse_skip": {
         name: "나",
-        text: "(보건실 침대에서 눈을 뜨니 어느덧 노을이 지고 있다. 수업은 다 빠졌지만, 선생님 옆에서 푹 자고 일어났더니 몸이 가볍다.)",
+        text: "*보건실 침대에서 눈을 뜨니 어느덧 노을이 지고 있다. 수업은 다 빠졌지만, 선생님 옆에서 푹 자고 일어났더니 몸이 가볍다.*",
         background: "assets/images/background/nurse_room.jpg",
         bgm: "sunset2.mp3",
         character: null,
@@ -91,7 +91,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_school": {
         name: "나",
         background: "assets/images/background/school_hallway.png",
-        text: "(어제보다 훨씬 익숙해진 복도. 오늘은 어떤 떨림이 나를 기다리고 있을까? 발길 닿는 대로 가보자.)",
+        text: "*어제보다 훨씬 익숙해진 복도. 오늘은 어떤 떨림이 나를 기다리고 있을까? 발길 닿는 대로 가보자.*",
         sunset: true,
         choices: [
             { text: "함께 노을을 보고 싶은 서연이를 찾아가 본다.", next: "day2_after_seoyeon" },
@@ -106,7 +106,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_stay": {
         name: "나",
-        text: "(다시 보건실로 발걸음을 옮겼다. 선생님은 여전히 자리에 앉아 계신다.)",
+        text: "*다시 보건실로 발걸음을 옮겼다. 선생님은 여전히 자리에 앉아 계신다.*",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
@@ -114,7 +114,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_seoyeon": {
         name: "나",
-        text: "(학생회실. 서연이와 함께 서류를 정리하기 시작했다. 전학 온 지 얼마 안 된 나에게 서연이는 친절하게 업무를 가르쳐주었다.)",
+        text: "*학생회실. 서연이와 함께 서류를 정리하기 시작했다. 전학 온 지 얼마 안 된 나에게 서연이는 친절하게 업무를 가르쳐주었다.*",
         background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
@@ -122,7 +122,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_seoyeon_work": {
         name: "나",
-        text: "(서연이와 함께 집중해서 서류를 정리하다 보니 창밖이 붉은 노을빛으로 물들어 있다. 학생회실 안에는 우리 둘의 숨소리와 종이 넘기는 소리만 가득하다.)",
+        text: "*서연이와 함께 집중해서 서류를 정리하다 보니 창밖이 붉은 노을빛으로 물들어 있다. 학생회실 안에는 우리 둘의 숨소리와 종이 넘기는 소리만 가득하다.*",
         background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
@@ -139,7 +139,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_seoyeon_3": {
         name: "나",
         background: "assets/images/background/student_room.png",
-        text: "(서연이가 기지개를 켜며 살짝 웃는다. 피곤해 보이지만 눈빛은 어느 때보다 맑고 예쁘다.)",
+        text: "*서연이가 기지개를 켜며 살짝 웃는다. 피곤해 보이지만 눈빛은 어느 때보다 맑고 예쁘다.*",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         choices: [
@@ -216,7 +216,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_massage_low": {
         name: "서연",
-        text: "(서연이가 황급히 몸을 빼며 불편한 표정을 짓는다) \"갑자기 뭐야... 좀 불편해.\"",
+        text: "*서연이가 황급히 몸을 빼며 불편한 표정을 짓는다* \"갑자기 뭐야... 좀 불편해.\"",
         character: "assets/images/characters/seyoun_pout.png",
         sunset: true,
         stats: { Seoyeon: { affinity: -10 } },
@@ -234,7 +234,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_dain_encounter": {
         name: "나",
         background: "assets/images/background/student_room.png",
-        text: "(서연이와 함께 학생회실을 나서는데, 복도에서 누군가와 마주쳤다.)",
+        text: "*서연이와 함께 학생회실을 나서는데, 복도에서 누군가와 마주쳤다.*",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         branches: [
@@ -284,7 +284,7 @@ Object.assign(SCENARIO[2], {
         choices: [
             { text: "응, 다음에 꼭!", next: "day2_seoyeon_dain_yes", stats: { Dain: { affinity: 3 }, Seoyeon: { affinity: -2 } } },
             { text: "오늘은 서연이랑 약속이 있어서...", next: "day2_seoyeon_dain_no", stats: { Seoyeon: { affinity: 5 }, Dain: { affinity: -2 } } },
-            { text: "(애매하게 웃으며) 둘 다 만나면 좋겠는데.", next: "day2_seoyeon_dain_both", stats: { Seoyeon: { affinity: -5 }, Dain: { affinity: -5 } } }
+            { text: "*애매하게 웃으며* 둘 다 만나면 좋겠는데.", next: "day2_seoyeon_dain_both", stats: { Seoyeon: { affinity: -5 }, Dain: { affinity: -5 } } }
         ]
     },
     "day2_seoyeon_dain_yes": {
@@ -309,7 +309,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_dain_both": {
         name: "나",
-        text: "(순간 서연이와 다인이의 표정이 동시에 굳는다. 뭔가 잘못 말한 건가...?)",
+        text: "*순간 서연이와 다인이의 표정이 동시에 굳는다. 뭔가 잘못 말한 건가...?*",
         characters: {
             left: "assets/images/characters/seyoun_normal.png",
             right: "assets/images/characters/dain_normal.png"
@@ -349,7 +349,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_dain_both_5": {
         name: "나",
-        text: "(두 사람이 묘하게 서로를 의식하며 나를 바라본다. 분위기가 싸해졌다...)",
+        text: "*두 사람이 묘하게 서로를 의식하며 나를 바라본다. 분위기가 싸해졌다...*",
         characters: {
             left: "assets/images/characters/seyoun_normal.png",
             right: "assets/images/characters/dain_normal.png"
@@ -359,7 +359,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_dain_end": {
         name: "나",
-        text: "(다인이가 손을 흔들며 멀어졌다. 서연이의 표정이 왜인지 살짝 굳어 있는 것 같다.)",
+        text: "*다인이가 손을 흔들며 멀어졌다. 서연이의 표정이 왜인지 살짝 굳어 있는 것 같다.*",
         sunset: true,
         branches: [
             { next: "day2_end", condition: "has_number_seyoun" },
@@ -394,7 +394,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna": {
         name: "나",
-        text: "(도서관 별관. 낡은 건물 안으로 들어서자 서늘한 공기가 나를 감싼다.)",
+        text: "*도서관 별관. 낡은 건물 안으로 들어서자 서늘한 공기가 나를 감싼다.*",
         background: "assets/images/background/library_old.png",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
@@ -448,7 +448,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_follow_again": {
         name: "나",
-        text: "(유나를 따라 다시 지하실 창고로 내려갔다. 아까보다 공기가 더 차갑게 느껴진다. 노을빛이 창문을 통해 스며들지만 지하실은 여전히 어두컴컴하다.)",
+        text: "*유나를 따라 다시 지하실 창고로 내려갔다. 아까보다 공기가 더 차갑게 느껴진다. 노을빛이 창문을 통해 스며들지만 지하실은 여전히 어두컴컴하다.*",
         background: "assets/images/background/school_basement.png",
         sunset: true,
         branches: [
@@ -458,7 +458,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_follow_new": {
         name: "나",
-        text: "(유나를 따라 지하실의 먼지 쌓인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다. 창문으로 노을빛이 희미하게 스며든다.)",
+        text: "*유나를 따라 지하실의 먼지 쌓인 창고로 내려갔다. 기묘한 한기가 감도는 곳이다. 창문으로 노을빛이 희미하게 스며든다.*",
         background: "assets/images/background/school_basement.png",
         sunset: true,
         branches: [
@@ -482,13 +482,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_yuna_3": {
         name: "나",
-        text: "(유나가 손가락으로 벽의 틈새를 가리킨다. 그곳에는 붉은색으로 기묘한 눈 모양이 그려져 있다.)",
+        text: "*유나가 손가락으로 벽의 틈새를 가리킨다. 그곳에는 붉은색으로 기묘한 눈 모양이 그려져 있다.*",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         choices: [
             { text: "이게 대체 뭘 의미하는 거야?", next: "day2_yuna_meaning", stats: { Yuna: { affinity: 4 } } },
             {
-                text: "(유나의 손을 잡으며) 무서우니까 이제 나가자.",
+                text: "*유나의 손을 잡으며* 무서우니까 이제 나가자.",
                 next: "day2_yuna_scary",
                 affinityChar: "Yuna",
                 affinityBranches: [
@@ -510,7 +510,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_scary_high": {
         name: "유나",
-        text: "(유나가 내 손을 꼭 잡으며 살며시 미소 짓는다.) \"...네 손, 따뜻해. 오랜만에 이런 온기를 느껴보네. 좋아, 나가자. 하지만... 손은 놓지 마.\"",
+        text: "*유나가 내 손을 꼭 잡으며 살며시 미소 짓는다.* \"...네 손, 따뜻해. 오랜만에 이런 온기를 느껴보네. 좋아, 나가자. 하지만... 손은 놓지 마.\"",
         character: "assets/images/characters/yuna_shy.png",
         sunset: true,
         stats: { Yuna: { affinity: 5 } },
@@ -525,7 +525,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_yuna_scary_low": {
         name: "유나",
-        text: "(유나가 차갑게 손을 뿌리친다.) \"...갑자기 손은 왜 잡아? 무섭다고? 겁쟁이치고는 대담하네. 나가고 싶으면 혼자 나가.\"",
+        text: "*유나가 차갑게 손을 뿌리친다.* \"...갑자기 손은 왜 잡아? 무섭다고? 겁쟁이치고는 대담하네. 나가고 싶으면 혼자 나가.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         stats: { Yuna: { affinity: -10 } },
@@ -549,7 +549,7 @@ Object.assign(SCENARIO[2], {
     "day2_yuna_nurse_encounter": {
         name: "나",
         character: "assets/images/characters/yuna_smile.png",
-        text: "(유나와 함께 창고를 나서는데, 복도에서 누군가와 마주쳤다.)",
+        text: "*유나와 함께 창고를 나서는데, 복도에서 누군가와 마주쳤다.*",
         sunset: true,
         branches: [
             { next: "day2_yuna_nurse_met", condition: "met_nurse" },
@@ -596,9 +596,9 @@ Object.assign(SCENARIO[2], {
         },
         sunset: true,
         choices: [
-            { text: "(유나의 손을 잡고) 네, 조심할게요.", next: "day2_yuna_nurse_protect", stats: { Yuna: { affinity: 5 }, Nurse: { affinity: -2 } } },
+            { text: "*유나의 손을 잡고* 네, 조심할게요.", next: "day2_yuna_nurse_protect", stats: { Yuna: { affinity: 5 }, Nurse: { affinity: -2 } } },
             { text: "선생님, 저희 그냥 산책하던 거예요.", next: "day2_yuna_nurse_excuse", stats: { Nurse: { affinity: 3 } } },
-            { text: "(아무 말 없이 목례만 한다)", next: "day2_yuna_nurse_silent", stats: { Yuna: { affinity: 2 } } }
+            { text: "*아무 말 없이 목례만 한다*", next: "day2_yuna_nurse_silent", stats: { Yuna: { affinity: 2 } } }
         ]
     },
     "day2_yuna_nurse_protect": {
@@ -668,7 +668,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain": {
         name: "나",
-        text: "(체육관 문을 열자, 활기찬 기합 소리와 함께 배구공 튀기는 소리가 들려온다.)",
+        text: "*체육관 문을 열자, 활기찬 기합 소리와 함께 배구공 튀기는 소리가 들려온다.*",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_normal.png",
         sunset: true,
@@ -686,7 +686,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain_practice": {
         name: "나",
-        text: "(다인이의 스파이크 연습을 도와주다 보니 어느새 온몸이 땀으로 젖었다. 창밖은 어느덧 어둑어둑해졌다.)",
+        text: "*다인이의 스파이크 연습을 도와주다 보니 어느새 온몸이 땀으로 젖었다. 창밖은 어느덧 어둑어둑해졌다.*",
         character: "assets/images/characters/dain_sweat.png",
         sunset: true,
         next: "day2_after_dain_3"
@@ -716,7 +716,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_dain_3": {
         name: "나",
-        text: "(다인이가 수건으로 땀을 닦으며 나에게 시원한 음료수를 건넨다.)",
+        text: "*다인이가 수건으로 땀을 닦으며 나에게 시원한 음료수를 건넨다.*",
         character: "assets/images/characters/dain_normal.png",
         sunset: true,
         choices: [
@@ -758,7 +758,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_yuna_encounter": {
         name: "나",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(그때, 체육관 창문 너머로 누군가 지나가는 게 보인다. 창백한 피부의 여학생이 조용히 복도를 걷고 있다.)",
+        text: "*그때, 체육관 창문 너머로 누군가 지나가는 게 보인다. 창백한 피부의 여학생이 조용히 복도를 걷고 있다.*",
         sunset: true,
         next: "day2_dain_yuna_spot"
     },
@@ -772,7 +772,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_yuna_choice": {
         name: "나",
         character: "assets/images/characters/dain_normal.png",
-        text: "(다인이가 유나를 보며 불안해하는 것 같다.)",
+        text: "*다인이가 유나를 보며 불안해하는 것 같다.*",
         choices: [
             { text: "유나? 아, 그냥 조용한 애야.", next: "day2_dain_yuna_know", condition: "met_yuna", stats: { Dain: { affinity: 2 }, Yuna: { affinity: 2 } } },
             { text: "글쎄, 나도 처음 봐.", next: "day2_dain_yuna_unknown", excludeCondition: "met_yuna", stats: { Dain: { affinity: 3 } } },
@@ -803,7 +803,7 @@ Object.assign(SCENARIO[2], {
     "day2_dain_yuna_end": {
         name: "나",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(유나가 멀리 사라진다. 다인이는 여전히 신경 쓰이는 듯하지만, 이내 다시 밝은 표정을 짓는다.)",
+        text: "*유나가 멀리 사라진다. 다인이는 여전히 신경 쓰이는 듯하지만, 이내 다시 밝은 표정을 짓는다.*",
         sunset: true,
         branches: [
             { next: "day2_end", condition: "has_number_dain" },
@@ -837,7 +837,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse": {
         name: "나",
-        text: "(보건실 문을 열자, 은은한 허브 향기와 함께 선생님이 책을 읽고 있는 모습이 보인다.)",
+        text: "*보건실 문을 열자, 은은한 허브 향기와 함께 선생님이 책을 읽고 있는 모습이 보인다.*",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
@@ -861,7 +861,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met_high": {
         name: "보건선생님",
-        text: "(선생님이 내 얼굴을 보며 부드럽게 미소 짓는다.) \"후훗, {name}. 이렇게 자주 오니까 선생님도 은근히 기대가 되네. 어서 들어와.\"",
+        text: "*선생님이 내 얼굴을 보며 부드럽게 미소 짓는다.* \"후훗, {name}. 이렇게 자주 오니까 선생님도 은근히 기대가 되네. 어서 들어와.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         stats: { Nurse: { affinity: 3 } },
@@ -882,7 +882,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_nurse_met_low": {
         name: "보건선생님",
-        text: "(선생님이 날 보며 무심하게 말한다.) \"...{name}, 또 왔어? 오늘은 무슨 일이야?\"",
+        text: "*선생님이 날 보며 무심하게 말한다.* \"...{name}, 또 왔어? 오늘은 무슨 일이야?\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         branches: [
@@ -923,7 +923,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_nurse_3": {
         name: "나",
         background: "assets/images/background/nurse_room.jpg",
-        text: "(선생님이 안경을 고쳐 쓰며 나를 빤히 바라본다.)",
+        text: "*선생님이 안경을 고쳐 쓰며 나를 빤히 바라본다.*",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         choices: [
@@ -959,7 +959,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_nurse_miss_low": {
         name: "보건선생님",
-        text: "(선생님이 안경 너머로 나를 차갑게 바라본다.) \"...아직 우린 그런 사이가 아닌 것 같은데? 학생, 농담도 적당히 해야지. 오늘은 그냥 쉬다 가렴.\"",
+        text: "*선생님이 안경 너머로 나를 차갑게 바라본다.* \"...아직 우린 그런 사이가 아닌 것 같은데? 학생, 농담도 적당히 해야지. 오늘은 그냥 쉬다 가렴.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         stats: { Nurse: { affinity: -8 } },
@@ -984,7 +984,7 @@ Object.assign(SCENARIO[2], {
     "day2_nurse_night_talk": {
         name: "보건선생님",
         background: "assets/images/background/nurse_room.jpg",
-        text: "(선생님이 부드러운 미소를 지으며 내 머리를 쓰다듬는다) \"후훗, 나랑 더 있고 싶어서 온 거구나? 좋아, 오늘은 특별히 조금 더 같이 있어줄게.\"",
+        text: "*선생님이 부드러운 미소를 지으며 내 머리를 쓰다듬는다* \"후훗, 나랑 더 있고 싶어서 온 거구나? 좋아, 오늘은 특별히 조금 더 같이 있어줄게.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         next: "day2_nurse_night_talk_2"
@@ -992,7 +992,7 @@ Object.assign(SCENARIO[2], {
     "day2_nurse_night_talk_2": {
         name: "나",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(선생님과 함께 보건실에서 도란도란 이야기를 나누다 보니 어느새 밖이 캄캄해졌다. 아쉽지만 다음을 기약하며 학교를 나섰다.)",
+        text: "*선생님과 함께 보건실에서 도란도란 이야기를 나누다 보니 어느새 밖이 캄캄해졌다. 아쉽지만 다음을 기약하며 학교를 나섰다.*",
         background: "assets/images/background/nurse_room.jpg",
         sunset: true,
         setFlag: "day2_met_nurse_after",
@@ -1021,7 +1021,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_success_after": {
         name: "보건선생님",
-        text: "(선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귓가에 속삭인다.) \"어머... {name}, 생각보다 훨씬 대담하네? 좋아, 오늘 저녁 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
+        text: "*선생님이 눈을 크게 뜨더니, 이내 요염한 미소를 지으며 내 귓가에 속삭인다.* \"어머... {name}, 생각보다 훨씬 대담하네? 좋아, 오늘 저녁 우리 집으로 올래? 주소 찍어줄게. 대신... 부모님께는 비밀이야?\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         stats: { Nurse: { affinity: 8 } },
@@ -1030,7 +1030,7 @@ Object.assign(SCENARIO[2], {
     },
     "nurse_contact_home_fail_after": {
         name: "보건선생님",
-        text: "(선생님이 꺄르르 웃음을 터뜨린다.) \"어머나 {name}! 넌 정말 귀엽다. 하지만 우리 집은 아직 좀 이른 것 같네? 나중에 메시지나 해.\"",
+        text: "*선생님이 꺄르르 웃음을 터뜨린다.* \"어머나 {name}! 넌 정말 귀엽다. 하지만 우리 집은 아직 좀 이른 것 같네? 나중에 메시지나 해.\"",
         character: "assets/images/characters/nurse_normal.png",
         sunset: true,
         next: "day2_end"
@@ -1062,7 +1062,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher": {
         name: "나",
-        text: "(교무실 문을 열자, 텅 빈 사무실 안에서 홀로 스탠드를 켜고 서류를 검토 중인 담임선생님이 보인다.)",
+        text: "*교무실 문을 열자, 텅 빈 사무실 안에서 홀로 스탠드를 켜고 서류를 검토 중인 담임선생님이 보인다.*",
         background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
@@ -1090,7 +1090,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_work": {
         name: "나",
-        text: "(선생님의 옆자리에 앉아 서류 정리를 돕기 시작했다. 조용한 교무실 안에 종이 넘기는 소리만 규칙적으로 들려온다.)",
+        text: "*선생님의 옆자리에 앉아 서류 정리를 돕기 시작했다. 조용한 교무실 안에 종이 넘기는 소리만 규칙적으로 들려온다.*",
         background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_normal.png",
         sunset: true,
@@ -1108,7 +1108,7 @@ Object.assign(SCENARIO[2], {
         name: "나",
         background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_smile.png",
-        text: "(선생님이 나를 가만히 바라보며 생각에 잠긴 듯하다.)",
+        text: "*선생님이 나를 가만히 바라보며 생각에 잠긴 듯하다.*",
         sunset: true,
         affinityChar: "Teacher",
         affinityBranches: [
@@ -1118,7 +1118,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_teacher_special": {
         name: "담임선생님",
-        text: "(선생님이 갑자기 내 쪽으로 몸을 기울인다. 은은한 향수 냄새와 함께 그녀의 따뜻한 숨결이 느껴진다.)",
+        text: "*선생님이 갑자기 내 쪽으로 몸을 기울인다. 은은한 향수 냄새와 함께 그녀의 따뜻한 숨결이 느껴진다.*",
         character: "assets/images/characters/teacher_smile.png",
         sunset: true,
         next: "day2_after_teacher_special_2"

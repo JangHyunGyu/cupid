@@ -64,7 +64,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_start": {
         name: "Me",
-        text: "(Sunday morning. Warm sunlight filters through the curtains.)",
+        text: "*Sunday morning. Warm sunlight filters through the curtains.*",
         background: "assets/images/background/room_my.png",
         character: null,
         bgm: "morning.mp3",
@@ -74,31 +74,31 @@ Object.assign(SCENARIO[5], {
     "day5_morning_wake": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(I opened my eyes. It's been a while since I woke up on my own without an alarm. The clock reads 8 AM.)",
+        text: "*I opened my eyes. It's been a while since I woke up on my own without an alarm. The clock reads 8 AM.*",
         next: "day5_morning_stretch"
     },
     "day5_morning_stretch": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(I stretch and stare at the ceiling. It doesn't feel real that today is Sunday.)",
+        text: "*I stretch and stare at the ceiling. It doesn't feel real that today is Sunday.*",
         next: "day5_morning_think"
     },
     "day5_morning_think": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(It's only been five days since I transferred to this school. It feels like it's been at least a month.)",
+        text: "*It's only been five days since I transferred to this school. It feels like it's been at least a month.*",
         next: "day5_morning_mirror"
     },
     "day5_morning_mirror": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(I washed my face and stood in front of the mirror. The face staring back at me looks... different from before I transferred.)",
+        text: "*I washed my face and stood in front of the mirror. The face staring back at me looks... different from before I transferred.*",
         next: "day5_morning_mirror2"
     },
     "day5_morning_mirror2": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(So much happened over the past four days. A new class, new people... and some very special encounters.)",
+        text: "*So much happened over the past four days. A new class, new people... and some very special encounters.*",
         next: "day5_morning_phone_check"
     },
 
@@ -108,7 +108,7 @@ Object.assign(SCENARIO[5], {
     "day5_morning_phone_check": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(I picked up the phone from my bed. There are notifications on the screen.)",
+        text: "*I picked up the phone from my bed. There are notifications on the screen.*",
         next: "day5_morning_msg_branch"
     },
     "day5_morning_msg_branch": {
@@ -150,7 +150,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         character: "assets/images/characters/seyoun_laugh.png",
         silhouette: true,
-        text: "(Reading Seoyeon's message makes me smile without even trying. Talking about flowers first thing in the morning—that's so like her.)",
+        text: "*Reading Seoyeon's message makes me smile without even trying. Talking about flowers first thing in the morning—that's so like her.*",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day5_couple_reply_seoyeon"
     },
@@ -198,7 +198,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
-        text: "(...So many exclamation marks. Dain's overflowing with energy from the crack of dawn. But somehow, messages like this give me energy too.)",
+        text: "*...So many exclamation marks. Dain's overflowing with energy from the crack of dawn. But somehow, messages like this give me energy too.*",
         stats: { Dain: { affinity: 3 } },
         next: "day5_couple_reply_dain"
     },
@@ -222,7 +222,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
-        text: "(My face turned red at the heart emoji she sent. Meeting outside of school definitely feels different.)",
+        text: "*My face turned red at the heart emoji she sent. Meeting outside of school definitely feels different.*",
         stats: { Nurse: { affinity: 3 } },
         next: "day5_couple_reply_nurse"
     },
@@ -355,7 +355,7 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
-        text: "(Organizing the nurse's office on a weekend... It sounds like an excuse, but if it means I can see her, the reason doesn't matter.)",
+        text: "*Organizing the nurse's office on a weekend... It sounds like an excuse, but if it means I can see her, the reason doesn't matter.*",
         next: "day5_pending_reply_nurse"
     },
     "day5_pending_reply_nurse": {
@@ -394,32 +394,32 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_default_msg_start": {
         name: "Me",
-        text: "(I turned on my phone... but there are no new messages.)",
+        text: "*I turned on my phone... but there are no new messages.*",
         next: "day5_default_msg_scroll"
     },
     "day5_default_msg_scroll": {
         name: "Me",
-        text: "(I scroll through my chat list. Conversations from the past few days stretch on and on.)",
+        text: "*I scroll through my chat list. Conversations from the past few days stretch on and on.*",
         next: "day5_default_msg_reflect"
     },
     "day5_default_msg_reflect": {
         name: "Me",
-        text: "(Since transferring, I've met so many people. Seoyeon, Yuna, Dain, the school nurse, the homeroom teacher...)",
+        text: "*Since transferring, I've met so many people. Seoyeon, Yuna, Dain, the school nurse, the homeroom teacher...*",
         next: "day5_default_msg_reflect2"
     },
     "day5_default_msg_reflect2": {
         name: "Me",
-        text: "(They were all so kind to me... but in the end, I never managed to properly tell any of them how I feel.)",
+        text: "*They were all so kind to me... but in the end, I never managed to properly tell any of them how I feel.*",
         next: "day5_default_msg_resolve"
     },
     "day5_default_msg_resolve": {
         name: "Me",
-        text: "(...No, it's not over yet. Today is Sunday. If I go to school, maybe I'll run into someone.)",
+        text: "*...No, it's not over yet. Today is Sunday. If I go to school, maybe I'll run into someone.*",
         next: "day5_default_msg_decide"
     },
     "day5_default_msg_decide": {
         name: "Me",
-        text: "(It's the last day. I'll at least take a walk around the school. Something might change.)",
+        text: "*It's the last day. I'll at least take a walk around the school. Something might change.*",
         next: "day5_morning_ready"
     },
 
@@ -429,27 +429,27 @@ Object.assign(SCENARIO[5], {
     "day5_morning_ready": {
         name: "Me",
         character: null,
-        text: "(Time to get ready. I stood in front of my closet.)",
+        text: "*Time to get ready. I stood in front of my closet.*",
         next: "day5_morning_closet"
     },
     "day5_morning_closet": {
         name: "Me",
         character: null,
-        text: "(It's Sunday, so I don't have to wear the school uniform... but what should I wear?)",
+        text: "*It's Sunday, so I don't have to wear the school uniform... but what should I wear?*",
         next: "day5_outfit_choice"
     },
     "day5_outfit_choice": {
         name: "Me",
         character: null,
-        text: "(What should I wear today?)",
+        text: "*What should I wear today?*",
         choices: [
             {
-                text: "Clean casual (comfortable and natural)",
+                text: "Clean casual *comfortable and natural*",
                 next: "day5_outfit_casual",
                 setFlag: "day5_outfit_casual"
             },
             {
-                text: "A little dressed up (today's special, after all)",
+                text: "A little dressed up *today's special, after all*",
                 next: "day5_outfit_special",
                 setFlag: "day5_outfit_special"
             }
@@ -458,31 +458,31 @@ Object.assign(SCENARIO[5], {
     "day5_outfit_casual": {
         name: "Me",
         character: null,
-        text: "(A crisp shirt and jeans. Comfortable yet neat. Yeah, keeping it natural is more my style.)",
+        text: "*A crisp shirt and jeans. Comfortable yet neat. Yeah, keeping it natural is more my style.*",
         next: "day5_breakfast"
     },
     "day5_outfit_special": {
         name: "Me",
         character: null,
-        text: "(I picked my outfit more carefully than usual. One last check in the mirror. ...Looks good, I think.)",
+        text: "*I picked my outfit more carefully than usual. One last check in the mirror. ...Looks good, I think.*",
         next: "day5_breakfast"
     },
     "day5_breakfast": {
         name: "Me",
         character: null,
-        text: "(I made some quick toast and ate. A quiet kitchen on a Sunday morning. I can hear birds singing outside.)",
+        text: "*I made some quick toast and ate. A quiet kitchen on a Sunday morning. I can hear birds singing outside.*",
         next: "day5_outfit_check"
     },
     "day5_outfit_check": {
         name: "Me",
         character: null,
-        text: "(One final look at myself in the mirror. My eyes are definitely different from the first day I transferred.)",
+        text: "*One final look at myself in the mirror. My eyes are definitely different from the first day I transferred.*",
         next: "day5_morning_items"
     },
     "day5_morning_items": {
         name: "Me",
         character: null,
-        text: "(Wallet, phone, keys. All set. I stood at the front door.)",
+        text: "*Wallet, phone, keys. All set. I stood at the front door.*",
         next: "day5_morning_depart"
     },
 
@@ -492,7 +492,7 @@ Object.assign(SCENARIO[5], {
     "day5_morning_depart": {
         name: "Me",
         character: null,
-        text: "(I opened the door and stepped outside. A pleasant spring breeze greeted me.)",
+        text: "*I opened the door and stepped outside. A pleasant spring breeze greeted me.*",
         background: "assets/images/background/street.png",
         fade: true,
         next: "day5_walk_route_branch"
@@ -534,7 +534,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_seoyeon_2": {
         name: "Me",
         character: "assets/images/characters/seyoun_laugh.png",
-        text: "(Seoyeon was already there at our meeting spot. Standing in the sunlight, she looked radiant.)",
+        text: "*Seoyeon was already there at our meeting spot. Standing in the sunlight, she looked radiant.*",
         next: "day5_walk_seoyeon_talk"
     },
     "day5_walk_seoyeon_talk": {
@@ -546,7 +546,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_seoyeon_react": {
         name: "Me",
         character: "assets/images/characters/seyoun_normal.png",
-        text: "(I walked side by side with Seoyeon. Without saying a word, our steps naturally fell in sync.)",
+        text: "*I walked side by side with Seoyeon. Without saying a word, our steps naturally fell in sync.*",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day5_walk_couple_common"
     },
@@ -554,7 +554,7 @@ Object.assign(SCENARIO[5], {
     // --- Walking with Yuna ---
     "day5_walk_couple_yuna": {
         name: "Me",
-        text: "(When I arrived at our meeting spot, Yuna was leaning against the wall. One earbud in her ear.)",
+        text: "*When I arrived at our meeting spot, Yuna was leaning against the wall. One earbud in her ear.*",
         character: "assets/images/characters/yuna_normal.png",
         next: "day5_walk_yuna_2"
     },
@@ -567,13 +567,13 @@ Object.assign(SCENARIO[5], {
     "day5_walk_yuna_talk": {
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(Yuna pulled out one earbud and held it out to me. No words needed—she wanted me to listen along.)",
+        text: "*Yuna pulled out one earbud and held it out to me. No words needed—she wanted me to listen along.*",
         next: "day5_walk_yuna_react"
     },
     "day5_walk_yuna_react": {
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(We shared the earbuds and walked side by side. No words, but this silence isn't uncomfortable. If anything, it's nice.)",
+        text: "*We shared the earbuds and walked side by side. No words, but this silence isn't uncomfortable. If anything, it's nice.*",
         stats: { Yuna: { affinity: 5 } },
         next: "day5_walk_couple_common"
     },
@@ -588,7 +588,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_dain_2": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(Dain was waving both arms from way over there. Where does she get all that energy this early in the morning?)",
+        text: "*Dain was waving both arms from way over there. Where does she get all that energy this early in the morning?*",
         next: "day5_walk_dain_talk"
     },
     "day5_walk_dain_talk": {
@@ -600,7 +600,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_dain_react": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(I walked along, pulled by Dain's hand. Before I knew it, I was smiling too. Her energy must be contagious.)",
+        text: "*I walked along, pulled by Dain's hand. Before I knew it, I was smiling too. Her energy must be contagious.*",
         stats: { Dain: { affinity: 5 } },
         next: "day5_walk_couple_common"
     },
@@ -608,7 +608,7 @@ Object.assign(SCENARIO[5], {
     // --- Walking with School Nurse ---
     "day5_walk_couple_nurse": {
         name: "Me",
-        text: "(When I arrived at the meeting spot, she was standing there in casual clothes. She looks so different from how she does at school.)",
+        text: "*When I arrived at the meeting spot, she was standing there in casual clothes. She looks so different from how she does at school.*",
         character: "assets/images/characters/nurse_normal.png",
         next: "day5_walk_nurse_2"
     },
@@ -627,7 +627,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_nurse_react": {
         name: "Me",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(The slightly shy look on her face was something new. Just walking side by side was enough to make my heart race.)",
+        text: "*The slightly shy look on her face was something new. Just walking side by side was enough to make my heart race.*",
         stats: { Nurse: { affinity: 5 } },
         next: "day5_walk_couple_common"
     },
@@ -635,7 +635,7 @@ Object.assign(SCENARIO[5], {
     // --- Walking with Homeroom Teacher ---
     "day5_walk_couple_teacher": {
         name: "Me",
-        text: "(When I arrived at the meeting spot, she was standing in casual clothes. A far cry from the strict teacher I see in the classroom.)",
+        text: "*When I arrived at the meeting spot, she was standing in casual clothes. A far cry from the strict teacher I see in the classroom.*",
         character: "assets/images/characters/teacher_normal.png",
         next: "day5_walk_teacher_2"
     },
@@ -663,13 +663,13 @@ Object.assign(SCENARIO[5], {
     "day5_walk_couple_common": {
         name: "Me",
         character: null,
-        text: "(Walking side by side, we talked about everything that happened the past few days. How we first met, the funny moments, the times our hearts raced.)",
+        text: "*Walking side by side, we talked about everything that happened the past few days. How we first met, the funny moments, the times our hearts raced.*",
         next: "day5_walk_couple_common2"
     },
     "day5_walk_couple_common2": {
         name: "Me",
         character: null,
-        text: "(Before I knew it, the school came into view. I thought I'd dread saying goodbye, but today marks the beginning of a day we're spending together.)",
+        text: "*Before I knew it, the school came into view. I thought I'd dread saying goodbye, but today marks the beginning of a day we're spending together.*",
         next: "day5_arrive_start"
     },
 
@@ -678,12 +678,12 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_walk_pending_start": {
         name: "Me",
-        text: "(I left the house and started walking toward school.)",
+        text: "*I left the house and started walking toward school.*",
         next: "day5_walk_pending_think"
     },
     "day5_walk_pending_think": {
         name: "Me",
-        text: "(I can't stop thinking about how I didn't confess yesterday. Today... today I absolutely will.)",
+        text: "*I can't stop thinking about how I didn't confess yesterday. Today... today I absolutely will.*",
         next: "day5_walk_pending_plan"
     },
     "day5_walk_pending_plan": {
@@ -693,27 +693,27 @@ Object.assign(SCENARIO[5], {
     },
     "day5_walk_pending_nervous": {
         name: "Me",
-        text: "(My hands are already trembling. With every step, my heart beats faster.)",
+        text: "*My hands are already trembling. With every step, my heart beats faster.*",
         next: "day5_walk_pending_resolve"
     },
     "day5_walk_pending_resolve": {
         name: "Me",
-        text: "(It's okay. I have four days' worth of memories together. Those moments give me courage.)",
+        text: "*It's okay. I have four days' worth of memories together. Those moments give me courage.*",
         next: "day5_walk_pending_memory"
     },
     "day5_walk_pending_memory": {
         name: "Me",
-        text: "(The awkward greeting on the first day, laughing together at lunch, our after-school conversations... every moment was precious.)",
+        text: "*The awkward greeting on the first day, laughing together at lunch, our after-school conversations... every moment was precious.*",
         next: "day5_walk_pending_ready"
     },
     "day5_walk_pending_ready": {
         name: "Me",
-        text: "(Right. If I don't want any regrets, I have to say it today.)",
+        text: "*Right. If I don't want any regrets, I have to say it today.*",
         next: "day5_walk_pending_almost"
     },
     "day5_walk_pending_almost": {
         name: "Me",
-        text: "(The school is just up ahead. I took one deep breath.)",
+        text: "*The school is just up ahead. I took one deep breath.*",
         next: "day5_arrive_start"
     },
 
@@ -722,27 +722,27 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_walk_default_start": {
         name: "Me",
-        text: "(Walking alone on a Sunday morning. Normally, I'd still be in bed at this hour.)",
+        text: "*Walking alone on a Sunday morning. Normally, I'd still be in bed at this hour.*",
         next: "day5_walk_default_reflect"
     },
     "day5_walk_default_reflect": {
         name: "Me",
-        text: "(Before I transferred, my Sunday mornings were nothing but lounging around at home.)",
+        text: "*Before I transferred, my Sunday mornings were nothing but lounging around at home.*",
         next: "day5_walk_default_change"
     },
     "day5_walk_default_change": {
         name: "Me",
-        text: "(But now things have changed. I never thought the day would come when I'd actually want to go to school on a Sunday.)",
+        text: "*But now things have changed. I never thought the day would come when I'd actually want to go to school on a Sunday.*",
         next: "day5_walk_default_people"
     },
     "day5_walk_default_people": {
         name: "Me",
-        text: "(Seoyeon's warmth, Yuna's mysteriousness, Dain's brightness, the school nurse's gentleness, the homeroom teacher's sincerity... They were all meaningful connections.)",
+        text: "*Seoyeon's warmth, Yuna's mysteriousness, Dain's brightness, the school nurse's gentleness, the homeroom teacher's sincerity... They were all meaningful connections.*",
         next: "day5_walk_default_arrive"
     },
     "day5_walk_default_arrive": {
         name: "Me",
-        text: "(The school building comes into view up ahead. The same scenery I saw on my very first day here.)",
+        text: "*The school building comes into view up ahead. The same scenery I saw on my very first day here.*",
         next: "day5_arrive_start"
     },
 
@@ -752,7 +752,7 @@ Object.assign(SCENARIO[5], {
     "day5_arrive_start": {
         name: "Me",
         character: null,
-        text: "(I stood in front of the school gate.)",
+        text: "*I stood in front of the school gate.*",
         background: "assets/images/background/school.png",
         next: "day5_arrive_nostalgia"
     },
@@ -760,21 +760,21 @@ Object.assign(SCENARIO[5], {
         name: "Me",
         background: "assets/images/background/school.png",
         character: null,
-        text: "(This gate... Five days ago, when I first came to this school, I stood in this exact spot.)",
+        text: "*This gate... Five days ago, when I first came to this school, I stood in this exact spot.*",
         next: "day5_arrive_firstday"
     },
     "day5_arrive_firstday": {
         name: "Me",
         background: "assets/images/background/school.png",
         character: null,
-        text: "(Back then, everything was unfamiliar. A new school, a new classroom, faces I didn't recognize. I was so nervous my feet wouldn't move.)",
+        text: "*Back then, everything was unfamiliar. A new school, a new classroom, faces I didn't recognize. I was so nervous my feet wouldn't move.*",
         next: "day5_arrive_now"
     },
     "day5_arrive_now": {
         name: "Me",
         background: "assets/images/background/school.png",
         character: null,
-        text: "(Now it's different. There are people I know here, and a place I can come back to. I walked past the gate and headed inside.)",
+        text: "*Now it's different. There are people I know here, and a place I can come back to. I walked past the gate and headed inside.*",
         fade: true,
         next: "day5_school_arrive"
     }

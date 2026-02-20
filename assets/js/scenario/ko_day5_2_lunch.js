@@ -62,7 +62,7 @@ Object.assign(SCENARIO[5], {
     // =========================================================================
     "day5_school_arrive": {
         name: "나",
-        text: "(교문으로 들어선다. 일요일 학교는 조용하다.)",
+        text: "*교문으로 들어선다. 일요일 학교는 조용하다.*",
         background: "assets/images/background/school.png",
         bgm: "date.mp3",
         next: "day5_school_arrive2"
@@ -70,19 +70,19 @@ Object.assign(SCENARIO[5], {
     "day5_school_arrive2": {
         name: "나",
         background: "assets/images/background/school.png",
-        text: "(이번 주가 정말 빨리 지나갔다. 벌써 마지막 날이라니... 교정의 나무들이 바람에 살랑인다.)",
+        text: "*이번 주가 정말 빨리 지나갔다. 벌써 마지막 날이라니... 교정의 나무들이 바람에 살랑인다.*",
         next: "day5_school_arrive3"
     },
     "day5_school_arrive3": {
         name: "나",
         background: "assets/images/background/school.png",
-        text: "(불과 며칠 전인데 까마득하게 느껴진다. 그때의 나는 긴장하고 불안했었지. 지금은 이렇게 달라졌다.)",
+        text: "*불과 며칠 전인데 까마득하게 느껴진다. 그때의 나는 긴장하고 불안했었지. 지금은 이렇게 달라졌다.*",
         next: "day5_school_arrive4"
     },
     "day5_school_arrive4": {
         name: "나",
         background: "assets/images/background/school.png",
-        text: "(뒤를 돌아보니 저 멀리서 누군가 걸어오고 있다. 낯익은 모습이다.)",
+        text: "*뒤를 돌아보니 저 멀리서 누군가 걸어오고 있다. 낯익은 모습이다.*",
         next: "day5_school_meet"
     },
 
@@ -119,7 +119,7 @@ Object.assign(SCENARIO[5], {
     "day5_react_seoyeon": {
         name: "나",
         character: "assets/images/characters/seyoun_normal.png",
-        text: "(서연이의 웃는 얼굴을 보니 가슴이 따뜻해진다. 이 학교에서 가장 처음 다가와준 사람이었지.)",
+        text: "*서연이의 웃는 얼굴을 보니 가슴이 따뜻해진다. 이 학교에서 가장 처음 다가와준 사람이었지.*",
         next: "day5_seoyeon_d4_check"
     },
     "day5_seoyeon_d4_check": {
@@ -163,7 +163,7 @@ Object.assign(SCENARIO[5], {
     "day5_react_yuna": {
         name: "나",
         character: "assets/images/characters/yuna_smile.png",
-        text: "(유나가 이렇게 많은 말을 한 건 처음이다. 그만큼 오늘이 특별한 날이라는 뜻일까.)",
+        text: "*유나가 이렇게 많은 말을 한 건 처음이다. 그만큼 오늘이 특별한 날이라는 뜻일까.*",
         next: "day5_yuna_d4_check"
     },
     "day5_yuna_d4_check": {
@@ -207,7 +207,7 @@ Object.assign(SCENARIO[5], {
     "day5_react_dain": {
         name: "나",
         character: "assets/images/characters/dain_normal.png",
-        text: "(갑작스러운 사고처럼 시작된 인연이었지만, 지금은 그 우연마저 필연처럼 느껴진다. 다인이의 환한 웃음이 내 일상을 완전히 바꿔놓았으니까.)",
+        text: "*갑작스러운 사고처럼 시작된 인연이었지만, 지금은 그 우연마저 필연처럼 느껴진다. 다인이의 환한 웃음이 내 일상을 완전히 바꿔놓았으니까.*",
         next: "day5_dain_d4_check"
     },
     "day5_dain_d4_check": {
@@ -243,7 +243,7 @@ Object.assign(SCENARIO[5], {
     "day5_react_nurse": {
         name: "나",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(사복 차림의 선생님이 낯설면서도 설렌다. 평소 가운 속에 가려진 모습이 이렇게 아름다울 줄이야.)",
+        text: "*사복 차림의 선생님이 낯설면서도 설렌다. 평소 가운 속에 가려진 모습이 이렇게 아름다울 줄이야.*",
         next: "day5_outfit_reaction_check"
     },
 
@@ -263,7 +263,7 @@ Object.assign(SCENARIO[5], {
     "day5_react_teacher": {
         name: "나",
         character: "assets/images/characters/teacher_smile.png",
-        text: "(칭찬을 듣는 건 드문 일이라 더 기쁘다. 선생님도 오늘은 부드러운 표정이다.)",
+        text: "*칭찬을 듣는 건 드문 일이라 더 기쁘다. 선생님도 오늘은 부드러운 표정이다.*",
         next: "day5_outfit_reaction_check"
     },
 
@@ -298,7 +298,7 @@ Object.assign(SCENARIO[5], {
     "day5_walk_enter": {
         name: "나",
         character: null,
-        text: "(나란히 학교 안으로 들어섰다. 일요일 학교는 텅 비어 있어서 우리 발소리만 울린다.)",
+        text: "*나란히 학교 안으로 들어섰다. 일요일 학교는 텅 비어 있어서 우리 발소리만 울린다.*",
         background: "assets/images/background/school_hallway.png",
         next: "day5_corridor1"
     },
@@ -306,14 +306,14 @@ Object.assign(SCENARIO[5], {
         name: "나",
         background: "assets/images/background/school_hallway.png",
         character: null,
-        text: "(이 복도… 전학 온 첫날, 교실을 찾지 못해서 헤맸던 곳이다. 어디로 가야 할지 몰라 발이 떨어지지 않았었지.)",
+        text: "*이 복도… 전학 온 첫날, 교실을 찾지 못해서 헤맸던 곳이다. 어디로 가야 할지 몰라 발이 떨어지지 않았었지.*",
         next: "day5_corridor2"
     },
     "day5_corridor2": {
         name: "나",
         background: "assets/images/background/school_hallway.png",
         character: null,
-        text: "(그때 이 복도에서 누군가가 말을 걸어줬다. 그 작은 친절이 지금까지 이어진 거다.)",
+        text: "*그때 이 복도에서 누군가가 말을 걸어줬다. 그 작은 친절이 지금까지 이어진 거다.*",
         next: "day5_classroom_enter"
     },
 
@@ -323,7 +323,7 @@ Object.assign(SCENARIO[5], {
     "day5_classroom_enter": {
         name: "나",
         character: null,
-        text: "(교실 문을 열었다. 빈 교실에 햇살이 비스듬히 들어와 책상 위를 물들인다.)",
+        text: "*교실 문을 열었다. 빈 교실에 햇살이 비스듬히 들어와 책상 위를 물들인다.*",
         background: "assets/images/background/room_school.png",
         next: "day5_classroom1"
     },
@@ -331,14 +331,14 @@ Object.assign(SCENARIO[5], {
         name: "나",
         background: "assets/images/background/room_school.png",
         character: null,
-        text: "(내 자리. 전학 와서 처음 앉았던 그 자리가 그대로 있다. 잠깐 다시 앉아봤다.)",
+        text: "*내 자리. 전학 와서 처음 앉았던 그 자리가 그대로 있다. 잠깐 다시 앉아봤다.*",
         next: "day5_classroom2"
     },
     "day5_classroom2": {
         name: "나",
         background: "assets/images/background/room_school.png",
         character: null,
-        text: "(이 자리에서 칠판을 올려다보면… 아, 그때와 같은 각도다. 이상하게 편안해진다.)",
+        text: "*이 자리에서 칠판을 올려다보면… 아, 그때와 같은 각도다. 이상하게 편안해진다.*",
         next: "day5_classroom3"
     },
     "day5_classroom3": {
@@ -510,14 +510,14 @@ Object.assign(SCENARIO[5], {
         name: "나",
         background: "assets/images/background/school.png",
         character: null,
-        text: "(이곳에서의 기억이 가슴 깊은 곳에서 올라온다. 처음엔 아무것도 몰랐는데, 하루하루가 쌓여서 지금의 나를 만들었다.)",
+        text: "*이곳에서의 기억이 가슴 깊은 곳에서 올라온다. 처음엔 아무것도 몰랐는데, 하루하루가 쌓여서 지금의 나를 만들었다.*",
         next: "day5_memory_common2"
     },
     "day5_memory_common2": {
         name: "나",
         background: "assets/images/background/school.png",
         character: null,
-        text: "(모든 장소에 추억이 있고, 그 추억에는 언제나 이 사람이 있었다. 그게 뭘 의미하는지, 나는 이제 안다.)",
+        text: "*모든 장소에 추억이 있고, 그 추억에는 언제나 이 사람이 있었다. 그게 뭘 의미하는지, 나는 이제 안다.*",
         next: "day5_rooftop_suggest"
     },
 
@@ -535,14 +535,14 @@ Object.assign(SCENARIO[5], {
         name: "나",
         background: "assets/images/background/school_hallway.png",
         character: null,
-        text: "(계단을 올라간다. 발소리 두 개가 텅 빈 계단통에 울려 퍼진다. 한 층, 두 층.)",
+        text: "*계단을 올라간다. 발소리 두 개가 텅 빈 계단통에 울려 퍼진다. 한 층, 두 층.*",
         next: "day5_rooftop_stairs2"
     },
     "day5_rooftop_stairs2": {
         name: "나",
         background: "assets/images/background/school_hallway.png",
         character: null,
-        text: "(마지막 계단을 올라 옥상 문 앞에 섰다. 문 틈 사이로 바람이 새어 들어온다.)",
+        text: "*마지막 계단을 올라 옥상 문 앞에 섰다. 문 틈 사이로 바람이 새어 들어온다.*",
         next: "day5_rooftop_door"
     },
 
@@ -552,7 +552,7 @@ Object.assign(SCENARIO[5], {
     "day5_rooftop_door": {
         name: "나",
         character: null,
-        text: "(삐걱. 옥상 문을 열자 탁 트인 하늘이 펼쳐졌다. 바람이 기분 좋게 불어온다.)",
+        text: "*삐걱. 옥상 문을 열자 탁 트인 하늘이 펼쳐졌다. 바람이 기분 좋게 불어온다.*",
         background: "assets/images/background/top_school.png",
         next: "day5_rooftop_view1"
     },
@@ -560,14 +560,14 @@ Object.assign(SCENARIO[5], {
         name: "나",
         background: "assets/images/background/top_school.png",
         character: null,
-        text: "(와… 여기서 보는 풍경이 이렇게 아름다운 거였나. 학교 운동장, 저 멀리 이어진 지붕들, 아까 걸었던 거리.)",
+        text: "*와… 여기서 보는 풍경이 이렇게 아름다운 거였나. 학교 운동장, 저 멀리 이어진 지붕들, 아까 걸었던 거리.*",
         next: "day5_rooftop_view2"
     },
     "day5_rooftop_view2": {
         name: "나",
         background: "assets/images/background/top_school.png",
         character: null,
-        text: "(아니면… 이렇게 아름답게 느껴지는 건, 옆에 있는 사람 덕분일까.)",
+        text: "*아니면… 이렇게 아름답게 느껴지는 건, 옆에 있는 사람 덕분일까.*",
         next: "day5_rooftop_lean"
     },
 
@@ -578,14 +578,14 @@ Object.assign(SCENARIO[5], {
         name: "나",
         background: "assets/images/background/top_school.png",
         character: null,
-        text: "(나란히 난간에 기대어 섰다. 바람에 머리카락이 흩날린다.)",
+        text: "*나란히 난간에 기대어 섰다. 바람에 머리카락이 흩날린다.*",
         next: "day5_rooftop_silence"
     },
     "day5_rooftop_silence": {
         name: "나",
         background: "assets/images/background/top_school.png",
         character: null,
-        text: "(한동안 아무 말 없이 풍경을 바라봤다. 이상하게 침묵이 어색하지 않다. 이 사람과는 말이 없어도 편하다.)",
+        text: "*한동안 아무 말 없이 풍경을 바라봤다. 이상하게 침묵이 어색하지 않다. 이 사람과는 말이 없어도 편하다.*",
         next: "day5_rooftop_talk_branch"
     },
 
@@ -669,7 +669,7 @@ Object.assign(SCENARIO[5], {
     "day5_rooftop_feeling2": {
         name: "나",
         character: null,
-        text: "(그건… 전부 옆에 있는 이 사람 덕분이다. 아직 말로 다 표현하진 못하겠지만, 언젠가 꼭.)",
+        text: "*그건… 전부 옆에 있는 이 사람 덕분이다. 아직 말로 다 표현하진 못하겠지만, 언젠가 꼭.*",
         next: "day5_lunch_suggest"
     },
 
@@ -685,13 +685,13 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_setup": {
         name: "나",
         character: null,
-        text: "(가방에서 삼각김밥이랑 음료수를 꺼냈다. 소박하지만, 이 풍경 앞에서 먹으면 뭐든 특별해질 것 같다.)",
+        text: "*가방에서 삼각김밥이랑 음료수를 꺼냈다. 소박하지만, 이 풍경 앞에서 먹으면 뭐든 특별해질 것 같다.*",
         next: "day5_lunch_sit"
     },
     "day5_lunch_sit": {
         name: "나",
         character: null,
-        text: "(난간 옆 그늘진 벽에 나란히 앉았다. 콘크리트 바닥이 좀 차갑지만, 옆 온기가 따뜻하다.)",
+        text: "*난간 옆 그늘진 벽에 나란히 앉았다. 콘크리트 바닥이 좀 차갑지만, 옆 온기가 따뜻하다.*",
         next: "day5_lunch_eat1"
     },
 
@@ -701,7 +701,7 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_eat1": {
         name: "나",
         character: null,
-        text: "(삼각김밥을 한 입 베어 물었다. 간단한 편의점 김밥인데, 오늘따라 유독 맛있게 느껴진다.)",
+        text: "*삼각김밥을 한 입 베어 물었다. 간단한 편의점 김밥인데, 오늘따라 유독 맛있게 느껴진다.*",
         next: "day5_lunch_talk1"
     },
     "day5_lunch_talk1": {
@@ -713,7 +713,7 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_talk2": {
         name: "나",
         character: null,
-        text: "(옆에서 작게 웃는 소리가 들렸다. 그 웃음이 바람에 실려 어딘가로 퍼져간다.)",
+        text: "*옆에서 작게 웃는 소리가 들렸다. 그 웃음이 바람에 실려 어딘가로 퍼져간다.*",
         next: "day5_lunch_talk3"
     },
     "day5_lunch_talk3": {
@@ -754,7 +754,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_lunch_touch_seoyeon": {
         name: "나",
-        text: "(서연이가 살며시 내 어깨에 머리를 기댔다. 뺨이 발갛게 물든 채로. 심장이 멈출 것 같다.)",
+        text: "*서연이가 살며시 내 어깨에 머리를 기댔다. 뺨이 발갛게 물든 채로. 심장이 멈출 것 같다.*",
         character: "assets/images/characters/seyoun_shy2.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day5_lunch_after"
@@ -769,7 +769,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_lunch_touch_yuna": {
         name: "나",
-        text: "(유나의 손이 슬며시 내 손 위에 올라왔다. 차갑던 손끝이 점점 따뜻해진다. 손을 감싸 쥐었다.)",
+        text: "*유나의 손이 슬며시 내 손 위에 올라왔다. 차갑던 손끝이 점점 따뜻해진다. 손을 감싸 쥐었다.*",
         character: "assets/images/characters/yuna_smile.png",
         stats: { Yuna: { affinity: 5 } },
         next: "day5_lunch_after"
@@ -814,7 +814,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_lunch_touch_teacher": {
         name: "나",
-        text: "(선생님이 미소를 지으며 내 머리를 한 번 쓱 쓸었다. 평소의 엄격함은 온데간데없고, 따뜻한 손길만 남았다.)",
+        text: "*선생님이 미소를 지으며 내 머리를 한 번 쓱 쓸었다. 평소의 엄격함은 온데간데없고, 따뜻한 손길만 남았다.*",
         character: "assets/images/characters/teacher_shy.png",
         stats: { Teacher: { affinity: 5 } },
         next: "day5_lunch_after"
@@ -826,13 +826,13 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_after": {
         name: "나",
         character: null,
-        text: "(음료수를 마저 마셨다. 차가운 캔이 어느새 손 안에서 미지근해졌다. 시간이 이렇게 빨리 흘렀다니.)",
+        text: "*음료수를 마저 마셨다. 차가운 캔이 어느새 손 안에서 미지근해졌다. 시간이 이렇게 빨리 흘렀다니.*",
         next: "day5_lunch_cleanup"
     },
     "day5_lunch_cleanup": {
         name: "나",
         character: null,
-        text: "(쓰레기를 챙겨서 자리를 정리했다. 옥상 바닥에 우리가 앉았던 자리에 햇살 자국이 남아 있다.)",
+        text: "*쓰레기를 챙겨서 자리를 정리했다. 옥상 바닥에 우리가 앉았던 자리에 햇살 자국이 남아 있다.*",
         next: "day5_pre_afternoon1"
     },
 
@@ -842,25 +842,25 @@ Object.assign(SCENARIO[5], {
     "day5_pre_afternoon1": {
         name: "나",
         character: null,
-        text: "(해가 중천을 넘기기 시작했다. 아까보다 그림자가 짧아졌다.)",
+        text: "*해가 중천을 넘기기 시작했다. 아까보다 그림자가 짧아졌다.*",
         next: "day5_pre_afternoon2"
     },
     "day5_pre_afternoon2": {
         name: "나",
         character: null,
-        text: "(오늘 하루가 아직 남았다. 아니… 정확히 말하면, 아직 하지 못한 말이 남았다.)",
+        text: "*오늘 하루가 아직 남았다. 아니… 정확히 말하면, 아직 하지 못한 말이 남았다.*",
         next: "day5_pre_afternoon3"
     },
     "day5_pre_afternoon3": {
         name: "나",
         character: null,
-        text: "(가슴 안쪽에서 무언가가 꿈틀거린다. 이건… 용기를 내야 할 때가 다가오고 있다는 신호다.)",
+        text: "*가슴 안쪽에서 무언가가 꿈틀거린다. 이건… 용기를 내야 할 때가 다가오고 있다는 신호다.*",
         next: "day5_pre_afternoon4"
     },
     "day5_pre_afternoon4": {
         name: "나",
         character: null,
-        text: "(옆에 서 있는 이 사람에게. 오늘, 반드시 전하고 싶은 마음이 있다.)",
+        text: "*옆에 서 있는 이 사람에게. 오늘, 반드시 전하고 싶은 마음이 있다.*",
         fade: true,
         next: "day5_afternoon_start"
     }

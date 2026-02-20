@@ -15,7 +15,7 @@ if (!SCENARIO[3]) {
 Object.assign(SCENARIO[3], {
     "day3_night_start": {
         name: "Me",
-        text: "(I'm home. Friday night... Tomorrow starts the weekend.)",
+        text: "*I'm home. Friday night... Tomorrow starts the weekend.*",
         background: "assets/images/background/room_my.png",
         bgm: "night2.mp3",
         character: null,
@@ -25,7 +25,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_reflect": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(Lying on the bed, I reflect on today. What happened at lunch... what happened after school...)",
+        text: "*Lying on the bed, I reflect on today. What happened at lunch... what happened after school...*",
         night: true,
         branches: [
             { next: "day3_night_reflect_trouble", condition: "day3_caught_multiple_dates" },
@@ -35,26 +35,26 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_reflect_trouble": {
         name: "Me",
-        text: "(Everyone found out at lunch... Can the weekend go smoothly?)",
+        text: "*Everyone found out at lunch... Can the weekend go smoothly?*",
         night: true,
         next: "day3_night_phone_check"
     },
     "day3_night_reflect_tension": {
         name: "Me",
-        text: "(I made multiple plans... I need to manage my time well.)",
+        text: "*I made multiple plans... I need to manage my time well.*",
         night: true,
         next: "day3_night_phone_check"
     },
     "day3_night_reflect_normal": {
         name: "Me",
-        text: "(I'm looking forward to tomorrow. What kind of day will it be?)",
+        text: "*I'm looking forward to tomorrow. What kind of day will it be?*",
         night: true,
         next: "day3_night_phone_check"
     },
 
     "day3_night_phone_check": {
         name: "Me",
-        text: "(I check my smartphone. There are messages.)",
+        text: "*I check my smartphone. There are messages.*",
         night: true,
         branches: [
             { next: "day3_night_multiple_messages", condition: "day3_has_multiple_dates" },
@@ -69,13 +69,13 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_multiple_messages": {
         name: "Me",
-        text: "(There are multiple messages... My heart is pounding.)",
+        text: "*There are multiple messages... My heart is pounding.*",
         night: true,
         next: "day3_night_check_messages"
     },
     "day3_night_check_messages": {
         name: "Me",
-        text: "(Which message should I check first?)",
+        text: "*Which message should I check first?*",
         night: true,
         choices: [
             { text: "Seoyeon's message", next: "day3_night_msg_seoyeon", condition: "day3_seoyeon_date_confirmed" },
@@ -89,7 +89,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_msg_seoyeon": {
         name: "Seoyeon",
-        text: "(Message: 10 PM) '{name}, are you still awake? I'm so excited for tomorrow!'",
+        text: "*Message: 10 PM* '{name}, are you still awake? I'm so excited for tomorrow!'",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
         night: true,
@@ -102,14 +102,14 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seoyeon_suspicious": {
         name: "Seoyeon",
-        text: "(Additional message) 'But... you're only meeting me, right? No other plans?'",
+        text: "*Additional message* 'But... you're only meeting me, right? No other plans?'",
         character: "assets/images/characters/seyoun_sad.png",
         silhouette: true,
         night: true,
         choices: [
             { text: "'Yes, only you!'", next: "day3_night_seoyeon_lie", stats: { Seoyeon: { affinity: 5 } }, setFlag: "day3_lied_to_seoyeon" },
             { text: "'Let me be honest...'", next: "day3_night_seoyeon_honest", stats: { Seoyeon: { affinity: -8 } } },
-            { text: "(Leave on read)", next: "day3_night_seoyeon_ignore", stats: { Seoyeon: { affinity: -5 } } }
+            { text: "*Leave on read*", next: "day3_night_seoyeon_ignore", stats: { Seoyeon: { affinity: -5 } } }
         ]
     },
     "day3_night_seoyeon_lie": {
@@ -140,21 +140,21 @@ Object.assign(SCENARIO[3], {
     "day3_night_seoyeon_ignore": {
         name: "Me",
         character: "assets/images/characters/seyoun_sad.png",
-        text: "(I didn't reply. Seoyeon will probably be disappointed...)",
+        text: "*I didn't reply. Seoyeon will probably be disappointed...*",
         night: true,
         setFlag: "day3_ignored_seoyeon",
         next: "day3_night_back_to_messages"
     },
     "day3_night_seoyeon_jealous": {
         name: "Seoyeon",
-        text: "(Additional message) 'About lunch today... it's still bothering me. Please be honest with me.'",
+        text: "*Additional message* 'About lunch today... it's still bothering me. Please be honest with me.'",
         character: "assets/images/characters/seyoun_sad.png",
         silhouette: true,
         night: true,
         choices: [
             { text: "'Sorry, I couldn't say no to anyone...'", next: "day3_night_seoyeon_apologize", stats: { Seoyeon: { affinity: 3 } } },
             { text: "'You're the most important to me'", next: "day3_night_seoyeon_reassure", stats: { Seoyeon: { affinity: 8 } } },
-            { text: "(Leave on read)", next: "day3_night_seoyeon_ignore", stats: { Seoyeon: { affinity: -5 } } }
+            { text: "*Leave on read*", next: "day3_night_seoyeon_ignore", stats: { Seoyeon: { affinity: -5 } } }
         ]
     },
     "day3_night_seoyeon_apologize": {
@@ -188,14 +188,14 @@ Object.assign(SCENARIO[3], {
     "day3_night_seoyeon_good": {
         name: "Me",
         character: "assets/images/characters/seyoun_laugh.png",
-        text: "(Finished chatting with Seoyeon.)",
+        text: "*Finished chatting with Seoyeon.*",
         night: true,
         next: "day3_night_back_to_messages"
     },
 
     "day3_night_msg_yuna": {
         name: "Yuna",
-        text: "(Message: 11:59 PM) '...{name}. Tomorrow night. Don't forget.'",
+        text: "*Message: 11:59 PM* '...{name}. Tomorrow night. Don't forget.'",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
@@ -208,7 +208,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_yuna_witnessed": {
         name: "Yuna",
-        text: "(Additional message) 'Today after school... I saw you leaving with Seoyeon.'",
+        text: "*Additional message* 'Today after school... I saw you leaving with Seoyeon.'",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
@@ -262,7 +262,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_yuna_knows": {
         name: "Yuna",
-        text: "(Additional message) '...You made promises with others too, didn't you?'",
+        text: "*Additional message* '...You made promises with others too, didn't you?'",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
@@ -299,14 +299,14 @@ Object.assign(SCENARIO[3], {
     "day3_night_yuna_sleep": {
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(Finished chatting with Yuna.)",
+        text: "*Finished chatting with Yuna.*",
         night: true,
         next: "day3_night_back_to_messages"
     },
 
     "day3_night_msg_dain": {
         name: "Dain",
-        text: "(Message: 9 PM) 'Hey!! 9 AM at the gym tomorrow!! Don't be late!!! 😤'",
+        text: "*Message: 9 PM* 'Hey!! 9 AM at the gym tomorrow!! Don't be late!!! 😤'",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
         night: true,
@@ -318,7 +318,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_dain_suspicious": {
         name: "Dain",
-        text: "(Additional message) 'But... did you really make plans with others too? I heard at lunch.'",
+        text: "*Additional message* 'But... did you really make plans with others too? I heard at lunch.'",
         character: "assets/images/characters/dain_sad.png",
         silhouette: true,
         night: true,
@@ -355,7 +355,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_dain_normal": {
         name: "Dain",
-        text: "(Additional message) 'Let's go get tteokbokki after practice! My treat! 🍜'",
+        text: "*Additional message* 'Let's go get tteokbokki after practice! My treat! 🍜'",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
         night: true,
@@ -367,14 +367,14 @@ Object.assign(SCENARIO[3], {
     "day3_night_dain_good": {
         name: "Me",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(Finished chatting with Dain.)",
+        text: "*Finished chatting with Dain.*",
         night: true,
         next: "day3_night_back_to_messages"
     },
 
     "day3_night_msg_nurse": {
         name: "School Nurse",
-        text: "(Message: 11 PM) 'My cute transfer student, still awake? Hehe.'",
+        text: "*Message: 11 PM* 'My cute transfer student, still awake? Hehe.'",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
@@ -411,7 +411,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_msg_teacher": {
         name: "Homeroom Teacher",
-        text: "(Message: 10 PM) '{name}, you haven't forgotten about the museum on Sunday, have you?'",
+        text: "*Message: 10 PM* '{name}, you haven't forgotten about the museum on Sunday, have you?'",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         night: true,
@@ -441,7 +441,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_back_to_messages": {
         name: "Me",
         character: null,
-        text: "(Should I check other messages?)",
+        text: "*Should I check other messages?*",
         night: true,
         choices: [
             { text: "Seoyeon's message", next: "day3_night_msg_seoyeon", condition: "day3_seoyeon_date_confirmed", excludeCondition: "checked_seoyeon_msg" },
@@ -455,7 +455,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_single_message": {
         name: "Me",
-        text: "(There's a message.)",
+        text: "*There's a message.*",
         night: true,
         branches: [
             { next: "day3_night_seoyeon_normal", condition: "day3_seoyeon_date_confirmed" },
@@ -468,14 +468,14 @@ Object.assign(SCENARIO[3], {
 
     "day3_night_no_message": {
         name: "Me",
-        text: "(No special messages. What should I do this weekend...)",
+        text: "*No special messages. What should I do this weekend...*",
         night: true,
         next: "day3_night_sleep"
     },
 
     "day3_night_ignore_all": {
         name: "Me",
-        text: "(I decided to just sleep without checking messages. I'll read them tomorrow morning...)",
+        text: "*I decided to just sleep without checking messages. I'll read them tomorrow morning...*",
         night: true,
         setFlag: "day3_ignored_all_messages",
         stats: { Seoyeon: { affinity: -3 }, Yuna: { affinity: -3 }, Dain: { affinity: -3 } },
@@ -485,7 +485,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_sleep": {
         name: "Me",
         character: null,
-        text: "(Just as my eyes are closing... my phone rings. A call.)",
+        text: "*Just as my eyes are closing... my phone rings. A call.*",
         night: true,
         branches: [
             { next: "day3_night_phone_seoyeon", condition: "day3_walked_with_seoyeon" },
@@ -498,7 +498,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_seoyeon": {
         name: "Seoyeon",
-        text: "(I answer the phone to hear Seoyeon's voice) \"...{name}? I know it's time to sleep. But... I wanted to hear your voice.\"",
+        text: "*I answer the phone to hear Seoyeon's voice* \"...{name}? I know it's time to sleep. But... I wanted to hear your voice.\"",
         character: "assets/images/characters/seyoun_shy.png",
         silhouette: true,
         night: true,
@@ -508,7 +508,7 @@ Object.assign(SCENARIO[3], {
         type: "free_talk",
         name: "Me",
         character: "assets/images/characters/seyoun_shy.png",
-        text: "(Having a late-night call with Seoyeon. Her voice sounds softer than usual in the dark room.)",
+        text: "*Having a late-night call with Seoyeon. Her voice sounds softer than usual in the dark room.*",
         context: "Late-night phone call. Seoyeon called saying 'I wanted to hear your voice.' A sweet late-night conversation. Seoyeon suddenly called before bed.",
         maxTurns: 3,
         silhouette: true,
@@ -517,7 +517,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_yuna": {
         name: "Yuna",
-        text: "(I answer the phone to hear Yuna's voice) \"...I know it's time to sleep. But... I can't fall asleep.\"",
+        text: "*I answer the phone to hear Yuna's voice* \"...I know it's time to sleep. But... I can't fall asleep.\"",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
@@ -527,7 +527,7 @@ Object.assign(SCENARIO[3], {
         type: "free_talk",
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(Having a late-night call with Yuna. Her quiet breathing reaches my ear.)",
+        text: "*Having a late-night call with Yuna. Her quiet breathing reaches my ear.*",
         context: "Late-night phone call. Yuna called saying 'I can't fall asleep.' A quiet and intimate late-night conversation. Her soft breathing feels close.",
         maxTurns: 2,
         silhouette: true,
@@ -536,7 +536,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_dain": {
         name: "Dain",
-        text: "(I answer the phone to hear Dain's voice) \"...Hey, I know it's late. But thinking about tomorrow, I can't sleep!\"",
+        text: "*I answer the phone to hear Dain's voice* \"...Hey, I know it's late. But thinking about tomorrow, I can't sleep!\"",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
         night: true,
@@ -546,7 +546,7 @@ Object.assign(SCENARIO[3], {
         type: "free_talk",
         name: "Me",
         character: "assets/images/characters/dain_normal.png",
-        text: "(Having a late-night call with Dain. Instead of her usual energy, her quiet voice feels new.)",
+        text: "*Having a late-night call with Dain. Instead of her usual energy, her quiet voice feels new.*",
         context: "Late-night phone call. Dain called saying 'Thinking about tomorrow, I can't sleep!' Unusually quiet Dain. A soft late-night atmosphere.",
         maxTurns: 3,
         silhouette: true,
@@ -555,7 +555,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_nurse": {
         name: "School Nurse",
-        text: "(I answer the phone to hear the nurse's voice) \"...{name}? Still awake? I couldn't sleep either.\"",
+        text: "*I answer the phone to hear the nurse's voice* \"...{name}? Still awake? I couldn't sleep either.\"",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
         night: true,
@@ -565,7 +565,7 @@ Object.assign(SCENARIO[3], {
         type: "free_talk",
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(Having a late-night call with the school nurse. Her low voice reaches my ear.)",
+        text: "*Having a late-night call with the school nurse. Her low voice reaches my ear.*",
         context: "Late-night phone call. The school nurse called saying 'I couldn't sleep.' Her low, gentle voice. A forbidden love's late-night call.",
         maxTurns: 2,
         silhouette: true,
@@ -574,7 +574,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_phone_teacher": {
         name: "Homeroom Teacher",
-        text: "(I answer the phone to hear the teacher's voice) \"...{name}? Still awake? I know it's bedtime, but...\"",
+        text: "*I answer the phone to hear the teacher's voice* \"...{name}? Still awake? I know it's bedtime, but...\"",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
         night: true,
@@ -584,7 +584,7 @@ Object.assign(SCENARIO[3], {
         type: "free_talk",
         name: "Me",
         character: "assets/images/characters/teacher_normal.png",
-        text: "(Having a late-night call with the homeroom teacher. Her quiet voice sounds close.)",
+        text: "*Having a late-night call with the homeroom teacher. Her quiet voice sounds close.*",
         context: "Late-night phone call. The homeroom teacher called saying 'I know it's bedtime, but...' Her quiet voice. A forbidden love's late-night call.",
         maxTurns: 2,
         silhouette: true,
@@ -594,7 +594,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_phone_end": {
         name: "Me",
         character: null,
-        text: "(I hang up and put down my phone. The lingering echo of her voice... makes my heart race.)",
+        text: "*I hang up and put down my phone. The lingering echo of her voice... makes my heart race.*",
         night: true,
         fade: true,
         next: "day3_night_sleep_2"
@@ -602,7 +602,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_sleep_2": {
         name: "Me",
         character: null,
-        text: "(My eyes are closing. Tomorrow is Saturday... What kind of day will it be.)",
+        text: "*My eyes are closing. Tomorrow is Saturday... What kind of day will it be.*",
         night: true,
         fade: true,
         next: "day3_night_sleep_final"
@@ -610,7 +610,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_sleep_final": {
         name: "Me",
         character: null,
-        text: "(Multiple plans swirl through my mind. Can I satisfy everyone...?)",
+        text: "*Multiple plans swirl through my mind. Can I satisfy everyone...?*",
         night: true,
         branches: [
             { next: "day3_night_nightmare", condition: "day3_has_multiple_dates" },
@@ -619,7 +619,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare": {
         name: "Me",
-        text: "(...I dream. Voices echo from a dark space.)",
+        text: "*...I dream. Voices echo from a dark space.*",
         night: true,
         branches: [
             { next: "day3_night_nightmare_voice1", condition: "day3_seoyeon_date_confirmed" },
@@ -630,7 +630,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare_voice1": {
         name: "???",
-        text: "(Seoyeon's voice echoes) \"...You'll only see me, right? You promised. We pinky swore...\"",
+        text: "*Seoyeon's voice echoes* \"...You'll only see me, right? You promised. We pinky swore...\"",
         character: "assets/images/characters/seyoun_sad.png",
         silhouette: true,
         night: true,
@@ -642,7 +642,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare_voice2": {
         name: "???",
-        text: "(Yuna's voice whispers coldly) \"...I said you'd regret it if you betray me, remember?\"",
+        text: "*Yuna's voice whispers coldly* \"...I said you'd regret it if you betray me, remember?\"",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
         night: true,
@@ -653,7 +653,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_nightmare_voice3": {
         name: "???",
-        text: "(Dain's voice trembles) \"...Idiot! You said you'd come! You said you wouldn't stand me up...\"",
+        text: "*Dain's voice trembles* \"...Idiot! You said you'd come! You said you wouldn't stand me up...\"",
         character: "assets/images/characters/dain_sad.png",
         silhouette: true,
         night: true,
@@ -662,33 +662,33 @@ Object.assign(SCENARIO[3], {
     "day3_night_nightmare_choice": {
         name: "Me",
         character: null,
-        text: "(Hands reach out from the darkness. Whose hand will I take...)",
+        text: "*Hands reach out from the darkness. Whose hand will I take...*",
         night: true,
         choices: [
-            { text: "(Take Seoyeon's hand)", next: "day3_night_nightmare_end", condition: "day3_seoyeon_date_confirmed" },
-            { text: "(Take Yuna's hand)", next: "day3_night_nightmare_end", condition: "day3_yuna_date_confirmed" },
-            { text: "(Take Dain's hand)", next: "day3_night_nightmare_end", condition: "day3_dain_date_confirmed" },
-            { text: "(Don't take anyone's hand)", next: "day3_night_nightmare_end" }
+            { text: "*Take Seoyeon's hand*", next: "day3_night_nightmare_end", condition: "day3_seoyeon_date_confirmed" },
+            { text: "*Take Yuna's hand*", next: "day3_night_nightmare_end", condition: "day3_yuna_date_confirmed" },
+            { text: "*Take Dain's hand*", next: "day3_night_nightmare_end", condition: "day3_dain_date_confirmed" },
+            { text: "*Don't take anyone's hand*", next: "day3_night_nightmare_end" }
         ]
     },
     "day3_night_nightmare_end": {
         name: "Me",
         character: null,
-        text: "(I reached out, but... there was nothing to hold. Everyone vanished, leaving only darkness and regret.)",
+        text: "*I reached out, but... there was nothing to hold. Everyone vanished, leaving only darkness and regret.*",
         night: true,
         next: "day3_night_nightmare_wake"
     },
     "day3_night_nightmare_wake": {
         name: "Me",
         character: null,
-        text: "(...I snap awake. My heart is pounding like crazy. It was a dream. But... what will tomorrow bring?)",
+        text: "*...I snap awake. My heart is pounding like crazy. It was a dream. But... what will tomorrow bring?*",
         night: true,
         fade: true,
         next: "day3_final_scene"
     },
     "day3_night_peaceful": {
         name: "Me",
-        text: "(A peaceful night. I'm looking forward to tomorrow.)",
+        text: "*A peaceful night. I'm looking forward to tomorrow.*",
         night: true,
         branches: [
             { next: "day3_night_loyalty_seoyeon", condition: "day3_seoyeon_date_confirmed", excludeCondition: "day3_has_multiple_dates" },
@@ -703,7 +703,7 @@ Object.assign(SCENARIO[3], {
     // --- 일편단심 보너스 ---
     "day3_night_loyalty_seoyeon": {
         name: "Me",
-        text: "(...Just thinking about Seoyeon makes me smile. Tomorrow is our time together. I'll make sure to tell her how I truly feel.)",
+        text: "*...Just thinking about Seoyeon makes me smile. Tomorrow is our time together. I'll make sure to tell her how I truly feel.*",
         night: true,
         stats: { Seoyeon: { affinity: 10 } },
         setFlag: "day3_loyalty_bonus",
@@ -712,7 +712,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_loyalty_yuna": {
         name: "Me",
-        text: "(...Just thinking about Yuna makes my heart race. Tomorrow night, just the two of us. Will I finally see the real Yuna?)",
+        text: "*...Just thinking about Yuna makes my heart race. Tomorrow night, just the two of us. Will I finally see the real Yuna?*",
         night: true,
         stats: { Yuna: { affinity: 10 } },
         setFlag: "day3_loyalty_bonus",
@@ -721,7 +721,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_loyalty_dain": {
         name: "Me",
-        text: "(...Thinking of Dain's smile makes me smile too. I wonder how happy she'll be when I show up to watch her practice tomorrow.)",
+        text: "*...Thinking of Dain's smile makes me smile too. I wonder how happy she'll be when I show up to watch her practice tomorrow.*",
         night: true,
         stats: { Dain: { affinity: 10 } },
         setFlag: "day3_loyalty_bonus",
@@ -730,7 +730,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_loyalty_nurse": {
         name: "Me",
-        text: "(...The school nurse's face comes to mind. It's a forbidden relationship, but... I can't hide these feelings.)",
+        text: "*...The school nurse's face comes to mind. It's a forbidden relationship, but... I can't hide these feelings.*",
         night: true,
         stats: { Nurse: { affinity: 10 } },
         setFlag: "day3_loyalty_bonus",
@@ -739,7 +739,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_loyalty_teacher": {
         name: "Me",
-        text: "(...The homeroom teacher's smile comes to mind. We're teacher and student, but... my feelings are real.)",
+        text: "*...The homeroom teacher's smile comes to mind. We're teacher and student, but... my feelings are real.*",
         night: true,
         stats: { Teacher: { affinity: 10 } },
         setFlag: "day3_loyalty_bonus",
@@ -749,7 +749,7 @@ Object.assign(SCENARIO[3], {
 
     "day3_final_scene": {
         name: "Me",
-        text: "(Friday night deepens... Tomorrow is finally Saturday.)",
+        text: "*Friday night deepens... Tomorrow is finally Saturday.*",
         background: null,
         character: null,
         night: true,

@@ -51,7 +51,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_start": {
         name: "Me",
-        text: "(I'm back home. Lying in bed, today's memories replay like a film.)",
+        text: "*I'm back home. Lying in bed, today's memories replay like a film.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -78,7 +78,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_yuna_sneak": {
         name: "Me",
-        text: "(10 PM. A message came from Yuna. 'School back gate. Come now.')",
+        text: "*10 PM. A message came from Yuna. 'School back gate. Come now.'*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -88,7 +88,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_sneak_2": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(My heart is pounding. The 'truth' Yuna mentioned... am I finally going to find out?)",
+        text: "*My heart is pounding. The 'truth' Yuna mentioned... am I finally going to find out?*",
         night: true,
         next: "day4_night_yuna_arrive"
     },
@@ -104,7 +104,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(The school back gate. Yuna stood under a streetlight. Her expression looked more resolute than usual.)",
+        text: "*The school back gate. Yuna stood under a streetlight. Her expression looked more resolute than usual.*",
         night: true,
         next: "day4_night_yuna_arrive_3"
     },
@@ -120,7 +120,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(The look in Yuna's eyes is serious.)",
+        text: "*The look in Yuna's eyes is serious.*",
         night: true,
         choices: [
             {
@@ -158,7 +158,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_corridor": {
         name: "Me",
         character: "assets/images/characters/yuna_smile.png",
-        text: "(Yuna opened the back gate lock with practiced ease. As if she'd done this many times before.)",
+        text: "*Yuna opened the back gate lock with practiced ease. As if she'd done this many times before.*",
         background: "assets/images/background/school_hallway.png",
         night: true,
         next: "day4_night_yuna_corridor_2"
@@ -167,7 +167,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/yuna_smile.png",
-        text: "(The empty school hallway. Only the dim emergency lights were on. The place that was so noisy during the day now felt like even a breath would echo.)",
+        text: "*The empty school hallway. Only the dim emergency lights were on. The place that was so noisy during the day now felt like even a breath would echo.*",
         night: true,
         next: "day4_night_yuna_corridor_3"
     },
@@ -186,7 +186,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_basement": {
         name: "Me",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(As we descended underground, the air turned cold. The smell of dust and old documents stung my nose.)",
+        text: "*As we descended underground, the air turned cold. The smell of dust and old documents stung my nose.*",
         background: "assets/images/background/school_basement.png",
         night: true,
         next: "day4_night_yuna_basement_2"
@@ -219,7 +219,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(Yuna pulled out a worn file from the shelf. Dense numbers and stamps filled the pages. This is... a real ledger.)",
+        text: "*Yuna pulled out a worn file from the shelf. Dense numbers and stamps filled the pages. This is... a real ledger.*",
         night: true,
         next: "day4_night_yuna_documents_2"
     },
@@ -243,7 +243,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
-        text: "(Yuna's voice is trembling.)",
+        text: "*Yuna's voice is trembling.*",
         night: true,
         choices: [
             {
@@ -330,7 +330,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
-        text: "(Yuna's hands were shaking. Her fingertips, gripping the documents, had turned white.)",
+        text: "*Yuna's hands were shaking. Her fingertips, gripping the documents, had turned white.*",
         night: true,
         next: "day4_night_yuna_silence_choice"
     },
@@ -338,7 +338,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_sad.png",
-        text: "(...)",
+        text: "*...*",
         night: true,
         choices: [
             {
@@ -370,7 +370,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(Yuna's hand was cold. But she didn't pull away.)",
+        text: "*Yuna's hand was cold. But she didn't pull away.*",
         night: true,
         next: "day4_night_yuna_resemblance"
     },
@@ -434,7 +434,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(So that's why. The reason Yuna showed interest in me from the start. When she called me a 'special light'... was I just the senior's shadow?)",
+        text: "*So that's why. The reason Yuna showed interest in me from the start. When she called me a 'special light'... was I just the senior's shadow?*",
         night: true,
         next: "day4_night_yuna_critical_choice"
     },
@@ -442,7 +442,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(...What should I say?)",
+        text: "*...What should I say?*",
         night: true,
         choices: [
             {
@@ -549,7 +549,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/school_basement.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(Determination filled Yuna's eyes. This wasn't mere curiosity. She'd been uncovering the truth alone for an entire year.)",
+        text: "*Determination filled Yuna's eyes. This wasn't mere curiosity. She'd been uncovering the truth alone for an entire year.*",
         night: true,
         next: "day4_night_yuna_resolve_4"
     },
@@ -585,7 +585,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_exit": {
         name: "Me",
         character: "assets/images/characters/yuna_smile.png",
-        text: "(We slipped out of the school. The cold night breeze blew, but it felt less cold with Yuna beside me.)",
+        text: "*We slipped out of the school. The cold night breeze blew, but it felt less cold with Yuna beside me.*",
         background: "assets/images/background/street.png",
         night: true,
         bgm: "night1.mp3",
@@ -611,7 +611,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_smile.png",
-        text: "(Under the night sky, Yuna smiles awkwardly.)",
+        text: "*Under the night sky, Yuna smiles awkwardly.*",
         night: true,
         choices: [
             {
@@ -646,7 +646,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(Yuna started to turn away but hesitated. Then she spoke in a very small voice.)",
+        text: "*Yuna started to turn away but hesitated. Then she spoke in a very small voice.*",
         night: true,
         next: "day4_night_yuna_farewell_2"
     },
@@ -662,13 +662,13 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(The night breeze tousled Yuna's hair. I thought to myself that I wanted to remember this moment for a long time.)",
+        text: "*The night breeze tousled Yuna's hair. I thought to myself that I wanted to remember this moment for a long time.*",
         night: true,
         next: "day4_night_yuna_home"
     },
     "day4_night_yuna_home": {
         name: "Me",
-        text: "(I'm back home. Everything I learned today swirls in my head. The foundation's corruption, the senior's death, and Yuna's tears...)",
+        text: "*I'm back home. Everything I learned today swirls in my head. The foundation's corruption, the senior's death, and Yuna's tears...*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -678,7 +678,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "(The weight Yuna carried alone for a whole year. Now it's my turn to help bear it.)",
+        text: "*The weight Yuna carried alone for a whole year. Now it's my turn to help bear it.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -689,7 +689,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_seoyeon_call": {
         name: "Me",
-        text: "(9 PM. A call from Seoyeon.)",
+        text: "*9 PM. A call from Seoyeon.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -710,7 +710,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_shy.png",
         silhouette: true,
-        text: "(Seoyeon's voice sounds different from usual. No warmth, and it seems like she's trembling.)",
+        text: "*Seoyeon's voice sounds different from usual. No warmth, and it seems like she's trembling.*",
         night: true,
         next: "day4_night_seoyeon_call_4"
     },
@@ -725,7 +725,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_seoyeon_park": {
         name: "Me",
-        text: "(I arrived at the park. Seoyeon was sitting alone on a bench. Instead of her usual neat uniform, she wore casual clothes.)",
+        text: "*I arrived at the park. Seoyeon was sitting alone on a bench. Instead of her usual neat uniform, she wore casual clothes.*",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_sad.png",
         night: true,
@@ -743,7 +743,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_sad.png",
-        text: "(Seoyeon's eyes are red. ...Was she crying?)",
+        text: "*Seoyeon's eyes are red. ...Was she crying?*",
         night: true,
         choices: [
             {
@@ -838,7 +838,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_cry.png",
-        text: "(Tears spilled from Seoyeon's eyes. Glistening under the streetlight. It was the first time I'd ever seen her cry.)",
+        text: "*Tears spilled from Seoyeon's eyes. Glistening under the streetlight. It was the first time I'd ever seen her cry.*",
         night: true,
         next: "day4_night_seoyeon_tear_choice"
     },
@@ -846,7 +846,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_cry.png",
-        text: "(Seoyeon is crying. I've never seen this side of her.)",
+        text: "*Seoyeon is crying. I've never seen this side of her.*",
         night: true,
         choices: [
             {
@@ -875,7 +875,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_cry.png",
-        text: "(Seoyeon buried her face in my chest. Her small shoulders were trembling.)",
+        text: "*Seoyeon buried her face in my chest. Her small shoulders were trembling.*",
         night: true,
         next: "day4_night_seoyeon_hug_3"
     },
@@ -907,7 +907,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_cry.png",
-        text: "(Seoyeon locked her trembling pinky with mine. And then the tears she'd been holding back poured out.)",
+        text: "*Seoyeon locked her trembling pinky with mine. And then the tears she'd been holding back poured out.*",
         night: true,
         next: "day4_night_seoyeon_pinky_4"
     },
@@ -943,7 +943,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_sad.png",
-        text: "(Seoyeon is looking up at me with trembling eyes.)",
+        text: "*Seoyeon is looking up at me with trembling eyes.*",
         night: true,
         choices: [
             {
@@ -1063,7 +1063,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_seoyeon_farewell": {
         name: "Me",
         character: "assets/images/characters/seyoun_shy2.png",
-        text: "(We left the park and walked together to her house. Seoyeon gently leaned on my arm as we walked.)",
+        text: "*We left the park and walked together to her house. Seoyeon gently leaned on my arm as we walked.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_seoyeon_farewell_2"
@@ -1096,7 +1096,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/seyoun_shy2.png",
-        text: "(As Seoyeon turned to leave, she said in a small voice.)",
+        text: "*As Seoyeon turned to leave, she said in a small voice.*",
         night: true,
         next: "day4_night_seoyeon_farewell_6"
     },
@@ -1110,7 +1110,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_seoyeon_home": {
         name: "Me",
-        text: "(Back home. Seoyeon's tears keep coming back to me. The real face behind the perfect student council president... I want to share that heavy burden.)",
+        text: "*Back home. Seoyeon's tears keep coming back to me. The real face behind the perfect student council president... I want to share that heavy burden.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1120,7 +1120,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_shy.png",
-        text: "(Tomorrow... I want her smile to come from the heart, not from acting.)",
+        text: "*Tomorrow... I want her smile to come from the heart, not from acting.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -1131,7 +1131,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_dain_gym": {
         name: "Me",
-        text: "(9:30 PM. A message from Dain. 'Hey, you free rn?? lol Can you come to school??')",
+        text: "*9:30 PM. A message from Dain. 'Hey, you free rn?? lol Can you come to school??'*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1141,20 +1141,20 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_gym_2": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(Another message right away. 'Nvm just come lol! Gym back door is open!')",
+        text: "*Another message right away. 'Nvm just come lol! Gym back door is open!'*",
         night: true,
         next: "day4_night_dain_gym_3"
     },
     "day4_night_dain_gym_3": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(Dain at the school gym at this hour? Something feels off... Let's go check.)",
+        text: "*Dain at the school gym at this hour? Something feels off... Let's go check.*",
         night: true,
         next: "day4_night_dain_arrive"
     },
     "day4_night_dain_arrive": {
         name: "Me",
-        text: "(I entered the gym. In the darkness lit only by emergency lights, Dain was alone, bumping a volleyball.)",
+        text: "*I entered the gym. In the darkness lit only by emergency lights, Dain was alone, bumping a volleyball.*",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_normal.png",
         night: true,
@@ -1172,7 +1172,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(But... something's off. Dain seems to be smiling harder than usual.)",
+        text: "*But... something's off. Dain seems to be smiling harder than usual.*",
         night: true,
         next: "day4_night_dain_spike"
     },
@@ -1188,7 +1188,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(I tossed the ball to Dain. She jumped high and slammed the spike down.)",
+        text: "*I tossed the ball to Dain. She jumped high and slammed the spike down.*",
         night: true,
         next: "day4_night_dain_spike_3"
     },
@@ -1196,7 +1196,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(The moment she landed—Dain grabbed her right knee and crumpled to the floor.)",
+        text: "*The moment she landed—Dain grabbed her right knee and crumpled to the floor.*",
         night: true,
         next: "day4_night_dain_hurt"
     },
@@ -1228,7 +1228,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(Dain is smiling, but her hand gripping her knee has gone white.)",
+        text: "*Dain is smiling, but her hand gripping her knee has gone white.*",
         night: true,
         choices: [
             {
@@ -1251,7 +1251,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
-        text: "(When I tried to look at Dain's knee, she flinched and pulled away.)",
+        text: "*When I tried to look at Dain's knee, she flinched and pulled away.*",
         night: true,
         next: "day4_night_dain_secret"
     },
@@ -1275,7 +1275,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(Dain rolled up her knee brace. Her knee was badly swollen.)",
+        text: "*Dain rolled up her knee brace. Her knee was badly swollen.*",
         night: true,
         next: "day4_night_dain_secret_3"
     },
@@ -1319,7 +1319,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(...For Dain, who lived for volleyball, that must have been a death sentence.)",
+        text: "*...For Dain, who lived for volleyball, that must have been a death sentence.*",
         night: true,
         next: "day4_night_dain_dream_2"
     },
@@ -1359,7 +1359,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(Dain hugged the volleyball tight and lowered her head. Her shoulders were shaking. The girl who was always bright and cheerful... was crying.)",
+        text: "*Dain hugged the volleyball tight and lowered her head. Her shoulders were shaking. The girl who was always bright and cheerful... was crying.*",
         night: true,
         next: "day4_night_dain_cry_choice"
     },
@@ -1367,7 +1367,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(...What do I say?)",
+        text: "*...What do I say?*",
         night: true,
         choices: [
             {
@@ -1440,7 +1440,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(Dain buried her face in my chest and started sobbing. Her cries echoed through the empty gym.)",
+        text: "*Dain buried her face in my chest and started sobbing. Her cries echoed through the empty gym.*",
         night: true,
         next: "day4_night_dain_tears_ok_4"
     },
@@ -1472,7 +1472,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_sad.png",
-        text: "(I tossed the ball. Dain gritted her teeth and jumped, slamming down the best spike I'd ever seen. She grabbed her knee on landing... but she was smiling.)",
+        text: "*I tossed the ball. Dain gritted her teeth and jumped, slamming down the best spike I'd ever seen. She grabbed her knee on landing... but she was smiling.*",
         night: true,
         next: "day4_night_dain_last_spike_4"
     },
@@ -1544,7 +1544,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_farewell": {
         name: "Me",
         character: "assets/images/characters/dain_shy.png",
-        text: "(We left the gym. The night air was cold, but Dain hooked her arm through mine as we walked.)",
+        text: "*We left the gym. The night air was cold, but Dain hooked her arm through mine as we walked.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_dain_farewell_2"
@@ -1591,7 +1591,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_dain_home": {
         name: "Me",
-        text: "(Back home. Dain's tears from the gym keep flashing before my eyes. The pain she hid behind her constant brightness... it weighs heavy on my heart.)",
+        text: "*Back home. Dain's tears from the gym keep flashing before my eyes. The pain she hid behind her constant brightness... it weighs heavy on my heart.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1601,7 +1601,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/dain_shy.png",
-        text: "(Tomorrow... I want it to be a day where Dain can smile from the heart. I'll be right there beside her.)",
+        text: "*Tomorrow... I want it to be a day where Dain can smile from the heart. I'll be right there beside her.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -1612,7 +1612,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_teacher_call": {
         name: "Me",
-        text: "(9 PM. A call from the teacher.)",
+        text: "*9 PM. A call from the teacher.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -1633,7 +1633,7 @@ Object.assign(SCENARIO[4], {
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
-        text: "(Her voice sounds different from usual. Not the confident voice from the classroom... it sounds like she's about to break.)",
+        text: "*Her voice sounds different from usual. Not the confident voice from the classroom... it sounds like she's about to break.*",
         night: true,
         next: "day4_night_teacher_call_4"
     },
@@ -1648,7 +1648,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_teacher_cafe": {
         name: "Me",
-        text: "(I arrived at the café. She was sitting in a corner booth. Instead of her usual neat outfit, she was in casual clothes.)",
+        text: "*I arrived at the café. She was sitting in a corner booth. Instead of her usual neat outfit, she was in casual clothes.*",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_sad.png",
         night: true,
@@ -1666,7 +1666,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_sad.png",
-        text: "(Her eyes are red. ...Was she crying?)",
+        text: "*Her eyes are red. ...Was she crying?*",
         night: true,
         choices: [
             {
@@ -1753,7 +1753,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_sad.png",
-        text: "(She gripped her coffee cup tightly and lowered her head. Her shoulders were trembling ever so slightly.)",
+        text: "*She gripped her coffee cup tightly and lowered her head. Her shoulders were trembling ever so slightly.*",
         night: true,
         next: "day4_night_teacher_tear_2"
     },
@@ -1769,7 +1769,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_sad.png",
-        text: "(There are tears glistening at the corner of her eyes.)",
+        text: "*There are tears glistening at the corner of her eyes.*",
         night: true,
         choices: [
             {
@@ -1798,7 +1798,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_shy.png",
-        text: "(I reached under the table and held her hand. Her cold fingers slowly grew warm.)",
+        text: "*I reached under the table and held her hand. Her cold fingers slowly grew warm.*",
         night: true,
         next: "day4_night_teacher_hold_3"
     },
@@ -1890,7 +1890,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_shy.png",
-        text: "(She's speaking her heart with a trembling voice.)",
+        text: "*She's speaking her heart with a trembling voice.*",
         night: true,
         choices: [
             {
@@ -2042,7 +2042,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_farewell": {
         name: "Me",
         character: "assets/images/characters/teacher_smile.png",
-        text: "(We left the café. Walking side by side down the night street. It's the first time we've walked together outside of school.)",
+        text: "*We left the café. Walking side by side down the night street. It's the first time we've walked together outside of school.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_teacher_farewell_2"
@@ -2089,7 +2089,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_teacher_home": {
         name: "Me",
-        text: "(Back home. The image of her at the café keeps coming back to me. The always confident, perfect teacher... showing her tears and vulnerability as just a woman.)",
+        text: "*Back home. The image of her at the café keeps coming back to me. The always confident, perfect teacher... showing her tears and vulnerability as just a woman.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -2099,7 +2099,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_shy.png",
-        text: "(This secret is daunting... but it's precious. I'll never take her feelings lightly.)",
+        text: "*This secret is daunting... but it's precious. I'll never take her feelings lightly.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -2110,7 +2110,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_nurse_msg": {
         name: "Me",
-        text: "(10 PM. A message from the nurse. 'Still up? Can you come out for a bit if you have time?')",
+        text: "*10 PM. A message from the nurse. 'Still up? Can you come out for a bit if you have time?'*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -2120,27 +2120,27 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_msg_2": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(...Her usual playful message, but why this late? Something feels off.)",
+        text: "*...Her usual playful message, but why this late? Something feels off.*",
         night: true,
         next: "day4_night_nurse_msg_3"
     },
     "day4_night_nurse_msg_3": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "(I replied right away. 'Where should I go?')",
+        text: "*I replied right away. 'Where should I go?'*",
         night: true,
         next: "day4_night_nurse_msg_4"
     },
     "day4_night_nurse_msg_4": {
         name: "Me",
         background: "assets/images/background/room_my.png",
-        text: "('The nurse's office at school. I'll leave the back door open.' ...The nurse's office?)",
+        text: "*'The nurse's office at school. I'll leave the back door open.' ...The nurse's office?*",
         night: true,
         next: "day4_night_nurse_arrive"
     },
     "day4_night_nurse_arrive": {
         name: "Me",
-        text: "(I arrived at the school. When I opened the nurse's office door, the room was dark with only a small lamp on. She was there.)",
+        text: "*I arrived at the school. When I opened the nurse's office door, the room was dark with only a small lamp on. She was there.*",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -2158,7 +2158,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(She's smiling as usual, but... there are dark circles under her eyes. And several empty coffee cans on the desk.)",
+        text: "*She's smiling as usual, but... there are dark circles under her eyes. And several empty coffee cans on the desk.*",
         night: true,
         choices: [
             {
@@ -2197,7 +2197,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(She's smiling, but something feels forced. Like she's pushing too hard.)",
+        text: "*She's smiling, but something feels forced. Like she's pushing too hard.*",
         night: true,
         next: "day4_night_nurse_mask_2"
     },
@@ -2261,7 +2261,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(Her smile faded. For the first time, she's showing me her real face—without the jokes, without the teasing.)",
+        text: "*Her smile faded. For the first time, she's showing me her real face—without the jokes, without the teasing.*",
         night: true,
         next: "day4_night_nurse_lonely_choice"
     },
@@ -2269,7 +2269,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(I can see the real her now. What do I say?)",
+        text: "*I can see the real her now. What do I say?*",
         night: true,
         choices: [
             {
@@ -2306,7 +2306,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(She was startled at first... but soon her hands gripped my clothes tightly.)",
+        text: "*She was startled at first... but soon her hands gripped my clothes tightly.*",
         night: true,
         next: "day4_night_nurse_hug_4"
     },
@@ -2414,7 +2414,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(Her voice is trembling.)",
+        text: "*Her voice is trembling.*",
         night: true,
         choices: [
             {
@@ -2542,7 +2542,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_farewell": {
         name: "Me",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(We left the nurse's office and walked outside the school. She hooked her arm through mine.)",
+        text: "*We left the nurse's office and walked outside the school. She hooked her arm through mine.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_nurse_farewell_2"
@@ -2589,7 +2589,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_nurse_home": {
         name: "Me",
-        text: "(Back home. The real face she showed me in the nurse's office keeps replaying. The person who was always joking and laughing... was actually the loneliest one of all.)",
+        text: "*Back home. The real face she showed me in the nurse's office keeps replaying. The person who was always joking and laughing... was actually the loneliest one of all.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -2599,7 +2599,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/nurse_shy.png",
-        text: "(She's not alone anymore. I'm here. Tomorrow, I want to see her real smile.)",
+        text: "*She's not alone anymore. I'm here. Tomorrow, I want to see her real smile.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -2610,13 +2610,13 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_regret": {
         name: "Me",
-        text: "(...I could have said it today. Under that sunset, it was the perfect moment.)",
+        text: "*...I could have said it today. Under that sunset, it was the perfect moment.*",
         night: true,
         next: "day4_night_regret_2"
     },
     "day4_night_regret_2": {
         name: "Me",
-        text: "(It's okay. There's tomorrow. Tomorrow, I'll definitely... tell them how I feel.)",
+        text: "*It's okay. There's tomorrow. Tomorrow, I'll definitely... tell them how I feel.*",
         night: true,
         next: "day4_night_regret_msg"
     },
@@ -2638,7 +2638,7 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_reflect": {
         name: "Me",
-        text: "(And just like that, Saturday passed. Tomorrow... what should I do?)",
+        text: "*And just like that, Saturday passed. Tomorrow... what should I do?*",
         night: true,
         next: "day4_night_sleep"
     },
@@ -2648,14 +2648,14 @@ Object.assign(SCENARIO[4], {
     // =========================================================================
     "day4_night_sleep": {
         name: "Me",
-        text: "(When I close my eyes, their face appears. I wouldn't mind falling asleep like this.)",
+        text: "*When I close my eyes, their face appears. I wouldn't mind falling asleep like this.*",
         night: true,
         fade: true,
         next: "day4_final"
     },
     "day4_final": {
         name: "Me",
-        text: "(Saturday night deepens... Tomorrow is Sunday, the last day.)",
+        text: "*Saturday night deepens... Tomorrow is Sunday, the last day.*",
         background: null,
         character: null,
         night: true,

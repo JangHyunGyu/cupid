@@ -69,7 +69,7 @@ if (!SCENARIO[1]) {
 Object.assign(SCENARIO[1], {
     "start": {
         name: "Me",
-        text: "(Warm sunlight... Today is my first day at this school. I'm a bit nervous.)",
+        text: "*Warm sunlight... Today is my first day at this school. I'm a bit nervous.*",
         background: "assets/images/background/school.png",
         bgm: "intro.mp3",
         character: null,
@@ -78,13 +78,13 @@ Object.assign(SCENARIO[1], {
     "start_2": {
         name: "Me",
         background: "assets/images/background/school.png",
-        text: "(An unfamiliar uniform, an unfamiliar scenery... But somehow I feel like something good is going to happen.)",
+        text: "*An unfamiliar uniform, an unfamiliar scenery... But somehow I feel like something good is going to happen.*",
         next: "start_3"
     },
     "start_3": {
         name: "Me",
         background: "assets/images/background/school.png",
-        text: "(Alright, let's go. It's a new beginning.)",
+        text: "*Alright, let's go. It's a new beginning.*",
         next: "name_input_scene"
     },
     "name_input_scene": {
@@ -104,7 +104,7 @@ Object.assign(SCENARIO[1], {
     "intro_1": {
         name: "Me",
         background: "assets/images/background/school.png",
-        text: "(A girl approaches me with a bright smile. A subtle scent of shampoo tickles my nose.)",
+        text: "*A girl approaches me with a bright smile. A subtle scent of shampoo tickles my nose.*",
         character: "assets/images/characters/seyoun_normal.png",
         next: "intro_2"
     },
@@ -112,7 +112,7 @@ Object.assign(SCENARIO[1], {
         name: "Me",
         background: "assets/images/background/school.png",
         character: "assets/images/characters/seyoun_normal.png",
-        text: "(When our eyes meet, my heart skips a beat. She's so pretty...)",
+        text: "*When our eyes meet, my heart skips a beat. She's so pretty...*",
         next: "intro_3"
     },
     "intro_3": {
@@ -125,14 +125,14 @@ Object.assign(SCENARIO[1], {
             { text: "Nice to meet you too! This school is really beautiful.", next: "path_friendly_1", stats: { Seoyeon: { affinity: 3 } } },
             { text: "Wow... You're really pretty.", next: "path_blush_1", stats: { Seoyeon: { affinity: 10 } } },
             { text: "Is it even allowed for a student council president to be this pretty? That's cheating!", next: "path_tease_1", stats: { Seoyeon: { affinity: 7 } } },
-            { text: "(Stare at her blankly, dazzled by her beauty.)", next: "path_silent_1", stats: { Seoyeon: { affinity: 5 } } },
+            { text: "*Stare at her blankly, dazzled by her beauty.*", next: "path_silent_1", stats: { Seoyeon: { affinity: 5 } } },
             { text: "Oh, okay? Can you move aside?", next: "path_rude_1", stats: { Seoyeon: { affinity: -30 } } }
         ]
     },
     "path_rude_1": {
         name: "Seoyeon",
         background: "assets/images/background/school.png",
-        text: "(Seoyeon's eyes widen, and she bites her lower lip.)",
+        text: "*Seoyeon's eyes widen, and she bites her lower lip.*",
         character: "assets/images/characters/seyoun_pout.png",
         next: "path_rude_1_2"
     },
@@ -146,7 +146,7 @@ Object.assign(SCENARIO[1], {
     "path_friendly_1": {
         name: "Seoyeon",
         background: "assets/images/background/school.png",
-        text: "(When she smiles brightly, the whole area seems to light up. My tension eases a bit.)",
+        text: "*When she smiles brightly, the whole area seems to light up. My tension eases a bit.*",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_friendly_1_2"
     },
@@ -160,7 +160,7 @@ Object.assign(SCENARIO[1], {
     "path_tease_1": {
         name: "Seoyeon",
         background: "assets/images/background/school.png",
-        text: "(Her eyes widen, then she playfully winks at me.)",
+        text: "*Her eyes widen, then she playfully winks at me.*",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_tease_1_2"
     },
@@ -174,7 +174,7 @@ Object.assign(SCENARIO[1], {
     "path_blush_1": {
         name: "Seoyeon",
         background: "assets/images/background/school.png",
-        text: "(Seoyeon's face instantly turns red. She avoids my gaze and plays with her hair.)",
+        text: "*Seoyeon's face instantly turns red. She avoids my gaze and plays with her hair.*",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "path_blush_1_2"
     },
@@ -188,7 +188,7 @@ Object.assign(SCENARIO[1], {
     "path_silent_1": {
         name: "Seoyeon",
         background: "assets/images/background/school.png",
-        text: "(She tilts her head and leans closer to my face. I can almost feel her breath.)",
+        text: "*She tilts her head and leans closer to my face. I can almost feel her breath.*",
         character: "assets/images/characters/seyoun_normal.png",
         next: "path_silent_1_2"
     },
@@ -201,7 +201,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_1": {
         name: "Me",
-        text: "(I follow Seoyeon down the hallway. The lively voices of students can be heard through the windows.)",
+        text: "*I follow Seoyeon down the hallway. The lively voices of students can be heard through the windows.*",
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_back.png",
         next: "hallway_name_ask"
@@ -209,7 +209,7 @@ Object.assign(SCENARIO[1], {
     "hallway_name_ask": {
         name: "Seoyeon",
         background: "assets/images/background/school_hallway.png",
-        text: "(Seoyeon suddenly stops and turns to me.) \"Oh, come to think of it, I said your name first earlier. It's {name}, right? Let me introduce myself properly this time!\"",
+        text: "*Seoyeon suddenly stops and turns to me.* \"Oh, come to think of it, I said your name first earlier. It's {name}, right? Let me introduce myself properly this time!\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_name_share"
     },
@@ -231,7 +231,7 @@ Object.assign(SCENARIO[1], {
     "hallway_1_2": {
         name: "Me",
         background: "assets/images/background/school_hallway.png",
-        text: "(I walk down the hallway, watching her from behind.)",
+        text: "*I walk down the hallway, watching her from behind.*",
         character: "assets/images/characters/seyoun_back.png",
         next: "hallway_free_talk"
     },
@@ -254,7 +254,7 @@ Object.assign(SCENARIO[1], {
     "hallway_1_3_high": {
         name: "Me",
         background: "assets/images/background/school_hallway.png",
-        text: "(Before I knew it, chatting with Seoyeon has led us to the school tour. Time flies so fast... It's fun being with her.)",
+        text: "*Before I knew it, chatting with Seoyeon has led us to the school tour. Time flies so fast... It's fun being with her.*",
         character: "assets/images/characters/seyoun_laugh.png",
         choices: [
             {
@@ -285,7 +285,7 @@ Object.assign(SCENARIO[1], {
                 ]
             },
             {
-                text: "(Pretend to listen to her explanation while sneaking glances at her profile.)",
+                text: "*Pretend to listen to her explanation while sneaking glances at her profile.*",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
@@ -298,7 +298,7 @@ Object.assign(SCENARIO[1], {
     "hallway_1_3_low": {
         name: "Me",
         background: "assets/images/background/school_hallway.png",
-        text: "(Seoyeon's expression doesn't look good. I must have made some mistake during our conversation. She started the school tour with a cold attitude.)",
+        text: "*Seoyeon's expression doesn't look good. I must have made some mistake during our conversation. She started the school tour with a cold attitude.*",
         character: "assets/images/characters/seyoun_pout.png",
         choices: [
             {
@@ -329,7 +329,7 @@ Object.assign(SCENARIO[1], {
                 ]
             },
             {
-                text: "(Quietly listen to her explanation while walking.)",
+                text: "*Quietly listen to her explanation while walking.*",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
@@ -342,7 +342,7 @@ Object.assign(SCENARIO[1], {
     "hallway_1_3": {
         name: "Me",
         background: "assets/images/background/school_hallway.png",
-        text: "(I started walking down the hallway with Seoyeon's guidance. She kindly began explaining various parts of the school.)",
+        text: "*I started walking down the hallway with Seoyeon's guidance. She kindly began explaining various parts of the school.*",
         character: "assets/images/characters/seyoun_normal.png",
         choices: [
             {
@@ -373,7 +373,7 @@ Object.assign(SCENARIO[1], {
                 ]
             },
             {
-                text: "(Quietly listen to her explanation while walking.)",
+                text: "*Quietly listen to her explanation while walking.*",
                 affinityChar: "Seoyeon",
                 affinityBranches: [
                     { minAffinity: 15, next: "hallway_talk_listen_high" },
@@ -385,7 +385,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_trap_high": {
         name: "Seoyeon",
-        text: "(Seoyeon stops as if flustered and stares at me. Her face turns slightly red, but soon she gives a playful smile.)",
+        text: "*Seoyeon stops as if flustered and stares at me. Her face turns slightly red, but soon she gives a playful smile.*",
         character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 7 } },
         next: "hallway_talk_trap_high_2"
@@ -398,7 +398,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_trap_low": {
         name: "Seoyeon",
-        text: "(Seoyeon stops without hiding her displeasure. Her eyes have gone cold.)",
+        text: "*Seoyeon stops without hiding her displeasure. Her eyes have gone cold.*",
         character: "assets/images/characters/seyoun_angry.png",
         stats: { Seoyeon: { affinity: -10 } },
         next: "hallway_talk_trap_low_2"
@@ -411,7 +411,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_trap_normal": {
         name: "Seoyeon",
-        text: "(Seoyeon stops as if flustered and stares at me. Her eyes turn a bit cold.)",
+        text: "*Seoyeon stops as if flustered and stares at me. Her eyes turn a bit cold.*",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_talk_trap_normal_2"
@@ -424,7 +424,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_club_high": {
         name: "Seoyeon",
-        text: "(Her eyes sparkle with excitement as she looks at me. There's anticipation that we might share similar interests.)",
+        text: "*Her eyes sparkle with excitement as she looks at me. There's anticipation that we might share similar interests.*",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "hallway_talk_club_high_2"
@@ -437,7 +437,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_club_low": {
         name: "Seoyeon",
-        text: "(She nods with a businesslike attitude. There's no emotion on her face.)",
+        text: "*She nods with a businesslike attitude. There's no emotion on her face.*",
         character: "assets/images/characters/seyoun_normal.png",
         stats: { Seoyeon: { affinity: -2 } },
         next: "hallway_talk_club_low_2"
@@ -450,7 +450,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_club_normal": {
         name: "Seoyeon",
-        text: "(She looks at me with delight.)",
+        text: "*She looks at me with delight.*",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "hallway_talk_club_normal_2"
@@ -463,7 +463,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_flatter_high": {
         name: "Seoyeon",
-        text: "(Seoyeon blushes with genuine happiness and smiles shyly. Her eyes are full of affection for me.)",
+        text: "*Seoyeon blushes with genuine happiness and smiles shyly. Her eyes are full of affection for me.*",
         character: "assets/images/characters/seyoun_shy2.png",
         stats: { Seoyeon: { affinity: 8 } },
         next: "hallway_talk_flatter_high_2"
@@ -476,7 +476,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_flatter_low": {
         name: "Seoyeon",
-        text: "(She looks at me coldly. The corner of her mouth is slightly twisted as if mocking.)",
+        text: "*She looks at me coldly. The corner of her mouth is slightly twisted as if mocking.*",
         character: "assets/images/characters/seyoun_pout.png",
         stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_talk_flatter_low_2"
@@ -489,7 +489,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_flatter_normal": {
         name: "Seoyeon",
-        text: "(She replies while blushing shyly.)",
+        text: "*She replies while blushing shyly.*",
         character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "hallway_talk_flatter_normal_2"
@@ -502,7 +502,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_listen_high": {
         name: "Seoyeon",
-        text: "(She continues her explanation excitedly with sparkling eyes. She seems happy with my every reaction.)",
+        text: "*She continues her explanation excitedly with sparkling eyes. She seems happy with my every reaction.*",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "hallway_talk_listen_high_2"
@@ -515,7 +515,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_listen_low": {
         name: "Seoyeon",
-        text: "(She continues her explanation mechanically. It feels like she's speaking to the air without even looking at me.)",
+        text: "*She continues her explanation mechanically. It feels like she's speaking to the air without even looking at me.*",
         character: "assets/images/characters/seyoun_normal.png",
         stats: { Seoyeon: { affinity: -5 } },
         next: "hallway_talk_listen_low_2"
@@ -528,7 +528,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_talk_listen_normal": {
         name: "Seoyeon",
-        text: "(She continues her explanation excitedly.)",
+        text: "*She continues her explanation excitedly.*",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 2 } },
         next: "hallway_talk_listen_normal_2"
@@ -549,19 +549,19 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_2_normal": {
         name: "Seoyeon",
-        text: "(She suddenly stops and turns to me.)",
+        text: "*She suddenly stops and turns to me.*",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_2_2"
     },
     "hallway_2_low": {
         name: "Seoyeon",
-        text: "(Seoyeon, who was walking ahead, suddenly stops and turns to me with cold eyes.)",
+        text: "*Seoyeon, who was walking ahead, suddenly stops and turns to me with cold eyes.*",
         character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_2_2_low"
     },
     "hallway_2_2_low": {
         name: "Seoyeon",
-        text: "(I can feel the distance in her gaze.)",
+        text: "*I can feel the distance in her gaze.*",
         character: "assets/images/characters/seyoun_pout.png",
         next: "hallway_2_3_low"
     },
@@ -573,7 +573,7 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_2_2": {
         name: "Seoyeon",
-        text: "(She stares intently into my eyes.)",
+        text: "*She stares intently into my eyes.*",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_2_3"
     },
@@ -590,7 +590,7 @@ Object.assign(SCENARIO[1], {
     },
     "path_rude_2": {
         name: "Seoyeon",
-        text: "(She can't hide her disappointment. Her shoulders seem to droop a little.)",
+        text: "*She can't hide her disappointment. Her shoulders seem to droop a little.*",
         character: "assets/images/characters/seyoun_pout.png",
         affinityChar: "Seoyeon",
         affinityBranches: [
@@ -602,7 +602,7 @@ Object.assign(SCENARIO[1], {
     },
     "path_flirt_2": {
         name: "Seoyeon",
-        text: "(Seoyeon's face turns red again. She avoids my gaze in embarrassment, but a faint smile spreads across her lips. Her fingertips fidget with her skirt. She shyly taps the floor with her toe.)",
+        text: "*Seoyeon's face turns red again. She avoids my gaze in embarrassment, but a faint smile spreads across her lips. Her fingertips fidget with her skirt. She shyly taps the floor with her toe.*",
         character: "assets/images/characters/seyoun_shy.png",
         next: "path_flirt_2_2"
     },
@@ -620,7 +620,7 @@ Object.assign(SCENARIO[1], {
     },
     "path_normal_2": {
         name: "Seoyeon",
-        text: "(She nods and starts walking ahead again. I feel a bit of regret.)",
+        text: "*She nods and starts walking ahead again. I feel a bit of regret.*",
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_back.png",
         affinityChar: "Seoyeon",
@@ -633,7 +633,7 @@ Object.assign(SCENARIO[1], {
     },
     "path_direct_2": {
         name: "Seoyeon",
-        text: "(She stares at me blankly, then bursts into a clear, beautiful laugh. The sound echoes through the hallway like silver bells. Small tears at the corner of her eyes sparkle in the sunlight. She holds her stomach and laughs for a while...)",
+        text: "*She stares at me blankly, then bursts into a clear, beautiful laugh. The sound echoes through the hallway like silver bells. Small tears at the corner of her eyes sparkle in the sunlight. She holds her stomach and laughs for a while...*",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "path_direct_2_2"
     },
@@ -651,7 +651,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_1_high": {
         name: "Seoyeon",
-        text: "(When we arrive at the classroom door, Seoyeon gently takes my hand. My heart starts pounding at her soft touch.)",
+        text: "*When we arrive at the classroom door, Seoyeon gently takes my hand. My heart starts pounding at her soft touch.*",
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_shy.png",
         next: "classroom_1_2_high"
@@ -659,7 +659,7 @@ Object.assign(SCENARIO[1], {
     "classroom_1_2_high": {
         name: "Seoyeon",
         background: "assets/images/background/school_hallway.png",
-        text: "(Seoyeon lowers her head slightly and whispers in my ear. Her sweet breath tickles me.) \"{name}, don't be too nervous. I'll always be by your side. You can do it.\"",
+        text: "*Seoyeon lowers her head slightly and whispers in my ear. Her sweet breath tickles me.* \"{name}, don't be too nervous. I'll always be by your side. You can do it.\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "classroom_1_3_high"
     },
@@ -672,7 +672,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_1_low": {
         name: "Seoyeon",
-        text: "(When we arrive at the classroom door, Seoyeon walks ahead of me, keeping her distance. Her back somehow feels cold.)",
+        text: "*When we arrive at the classroom door, Seoyeon walks ahead of me, keeping her distance. Her back somehow feels cold.*",
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_back.png",
         next: "classroom_1_2_low"
@@ -680,7 +680,7 @@ Object.assign(SCENARIO[1], {
     "classroom_1_2_low": {
         name: "Seoyeon",
         background: "assets/images/background/school_hallway.png",
-        text: "(She silently points at the sign next to the door with her chin. Her attitude of not even looking at me makes my heart feel cold.)",
+        text: "*She silently points at the sign next to the door with her chin. Her attitude of not even looking at me makes my heart feel cold.*",
         character: "assets/images/characters/seyoun_pout.png",
         next: "classroom_1_3_low"
     },
@@ -693,7 +693,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_1_1": {
         name: "Seoyeon",
-        text: "(We arrived at the classroom door. The chattering and laughter of students can be heard from inside. Seoyeon lightly pats my shoulder to encourage me.)",
+        text: "*We arrived at the classroom door. The chattering and laughter of students can be heard from inside. Seoyeon lightly pats my shoulder to encourage me.*",
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_1_2"
@@ -701,7 +701,7 @@ Object.assign(SCENARIO[1], {
     "classroom_1_2": {
         name: "Seoyeon",
         background: "assets/images/background/school_hallway.png",
-        text: "(Where her hand touched feels warm. She looks into my eyes and quietly cheers me on.)",
+        text: "*Where her hand touched feels warm. She looks into my eyes and quietly cheers me on.*",
         character: "assets/images/characters/seyoun_normal.png",
         next: "classroom_1_3"
     },
@@ -724,7 +724,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_normal": {
         name: "Me",
-        text: "(As I stand at the podium, dozens of eyes turn to me. Curious gazes, wary gazes... Seoyeon is smiling and watching over me from beside me.)",
+        text: "*As I stand at the podium, dozens of eyes turn to me. Curious gazes, wary gazes... Seoyeon is smiling and watching over me from beside me.*",
         background: "assets/images/background/room_school.png",
         bgm: "daily.mp3",
         characters: {
@@ -736,7 +736,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_high": {
         name: "Me",
-        text: "(As I stand at the podium, dozens of eyes turn to me. Seoyeon is smiling supportively beside me, cheering me on.)",
+        text: "*As I stand at the podium, dozens of eyes turn to me. Seoyeon is smiling supportively beside me, cheering me on.*",
         background: "assets/images/background/room_school.png",
         bgm: "daily.mp3",
         characters: {
@@ -748,7 +748,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_low": {
         name: "Me",
-        text: "(As I stand at the podium, dozens of eyes turn to me. Seoyeon is standing a bit away with a cold expression.)",
+        text: "*As I stand at the podium, dozens of eyes turn to me. Seoyeon is standing a bit away with a cold expression.*",
         background: "assets/images/background/room_school.png",
         bgm: "daily.mp3",
         characters: {
@@ -761,7 +761,7 @@ Object.assign(SCENARIO[1], {
     "classroom_2_2": {
         name: "Homeroom Teacher",
         background: "assets/images/background/room_school.png",
-        text: "(The atmosphere in the classroom feels heavy. The homeroom teacher taps the podium to get everyone's attention.)",
+        text: "*The atmosphere in the classroom feels heavy. The homeroom teacher taps the podium to get everyone's attention.*",
         character: "assets/images/characters/teacher_normal.png",
         next: "teacher_free_talk"
     },
@@ -783,7 +783,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3_high": {
         name: "Me",
-        text: "(Talking with the teacher helped me relax. She seems to like me, which is a relief. Now it's time to introduce myself to the class.)",
+        text: "*Talking with the teacher helped me relax. She seems to like me, which is a relief. Now it's time to introduce myself to the class.*",
         character: "assets/images/characters/teacher_smile.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you all!", next: "teacher_name_share_high", setFlag: "knows_name_teacher", stats: { Teacher: { affinity: 15 } } },
@@ -795,7 +795,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_3_low": {
         name: "Me",
-        text: "(The teacher's gaze is sharp. It seems I made a bad first impression. I have to introduce myself in this cold atmosphere.)",
+        text: "*The teacher's gaze is sharp. It seems I made a bad first impression. I have to introduce myself in this cold atmosphere.*",
         character: "assets/images/characters/teacher_angry.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you all!", next: "teacher_name_share_low", setFlag: "knows_name_teacher", stats: { Teacher: { affinity: 15 } } },
@@ -808,7 +808,7 @@ Object.assign(SCENARIO[1], {
     "classroom_2_3": {
         name: "Me",
         background: "assets/images/background/room_school.png",
-        text: "(The conversation with the teacher is over. Now it's time to officially introduce myself to the class. All eyes are on me.)",
+        text: "*The conversation with the teacher is over. Now it's time to officially introduce myself to the class. All eyes are on me.*",
         character: "assets/images/characters/teacher_normal.png",
         choices: [
             { text: "My name is '{name}'. Nice to meet you all!", next: "teacher_name_share_normal", setFlag: "knows_name_teacher", stats: { Teacher: { affinity: 15 } } },
@@ -853,14 +853,14 @@ Object.assign(SCENARIO[1], {
     "class_after_active": {
         name: "Classmates",
         background: "assets/images/background/room_school.png",
-        text: "(Cheers erupt from all over the classroom. The boys in the back seats are especially excited. Seoyeon claps with a pleased smile.)",
+        text: "*Cheers erupt from all over the classroom. The boys in the back seats are especially excited. Seoyeon claps with a pleased smile.*",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_2"
     },
     "class_after_active_2": {
         name: "Classmates",
         background: "assets/images/background/room_school.png",
-        text: "(The students are already whispering about recruiting me to their teams.)",
+        text: "*The students are already whispering about recruiting me to their teams.*",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_active_3"
     },
@@ -874,14 +874,14 @@ Object.assign(SCENARIO[1], {
     "class_after_quiet": {
         name: "Classmates",
         background: "assets/images/background/room_school.png",
-        text: "(The students nod and calmly accept me. Some girls whisper while looking at me.)",
+        text: "*The students nod and calmly accept me. Some girls whisper while looking at me.*",
         character: null,
         next: "class_after_quiet_2"
     },
     "class_after_quiet_2": {
         name: "Classmates",
         background: "assets/images/background/room_school.png",
-        text: "(Seoyeon seems pleased with my serious demeanor and nods. The classroom atmosphere becomes more calm.)",
+        text: "*Seoyeon seems pleased with my serious demeanor and nods. The classroom atmosphere becomes more calm.*",
         character: "assets/images/characters/seyoun_normal.png",
         next: "class_after_quiet_3"
     },
@@ -895,14 +895,14 @@ Object.assign(SCENARIO[1], {
     "class_after_party": {
         name: "Classmates",
         background: "assets/images/background/room_school.png",
-        text: "(The classroom instantly becomes as noisy as a marketplace. Students are already crowding around me.)",
+        text: "*The classroom instantly becomes as noisy as a marketplace. Students are already crowding around me.*",
         character: null,
         next: "class_after_party_2"
     },
     "class_after_party_2": {
         name: "Classmates",
         background: "assets/images/background/room_school.png",
-        text: "(Seoyeon seems a bit flustered but soon bursts out laughing. The students are already busy deciding where to eat.)",
+        text: "*Seoyeon seems a bit flustered but soon bursts out laughing. The students are already busy deciding where to eat.*",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "class_after_party_3"
     },
@@ -916,14 +916,14 @@ Object.assign(SCENARIO[1], {
     "class_after_study": {
         name: "Classmates",
         background: "assets/images/background/room_school.png",
-        text: "(A cold silence fills the classroom. The students look a bit taken aback and glance at each other while whispering.)",
+        text: "*A cold silence fills the classroom. The students look a bit taken aback and glance at each other while whispering.*",
         character: null,
         next: "class_after_study_2"
     },
     "class_after_study_2": {
         name: "Classmates",
         background: "assets/images/background/room_school.png",
-        text: "(Seoyeon's expression stiffens a bit too. It feels like some kind of wall has formed. The students quiet down while watching me.)",
+        text: "*Seoyeon's expression stiffens a bit too. It feels like some kind of wall has formed. The students quiet down while watching me.*",
         character: "assets/images/characters/seyoun_pout.png",
         next: "class_after_study_3"
     },

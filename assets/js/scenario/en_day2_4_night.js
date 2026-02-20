@@ -95,7 +95,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_end": {
         name: "Me",
-        text: "(As I step out of the school gate, the evening air wraps around my face. The sky is already fading into a deep navy blue.)",
+        text: "*As I step out of the school gate, the evening air wraps around my face. The sky is already fading into a deep navy blue.*",
         background: "assets/images/background/street.png",
         bgm: "night2.mp3",
         character: null,
@@ -104,42 +104,42 @@ Object.assign(SCENARIO[2], {
     },
     "day2_end_walk_home": {
         name: "Me",
-        text: "(The streetlights begin flickering on one by one. This road has become so familiar that my feet know where to turn without thinking.)",
+        text: "*The streetlights begin flickering on one by one. This road has become so familiar that my feet know where to turn without thinking.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day2_end_evening_air"
     },
     "day2_end_evening_air": {
         name: "Me",
-        text: "(The smell of someone cooking dinner drifts on the breeze. Warm light seeps through a neighbor's window... Something about this ordinary scene puts my mind strangely at ease.)",
+        text: "*The smell of someone cooking dinner drifts on the breeze. Warm light seeps through a neighbor's window... Something about this ordinary scene puts my mind strangely at ease.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day2_end_arrive_home"
     },
     "day2_end_arrive_home": {
         name: "Me",
-        text: "(I open the front door and step inside. I mutter 'I'm home' as I take off my shoes, but there's no reply. Looks like my parents aren't back yet.)",
+        text: "*I open the front door and step inside. I mutter 'I'm home' as I take off my shoes, but there's no reply. Looks like my parents aren't back yet.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_end_change_clothes"
     },
     "day2_end_change_clothes": {
         name: "Me",
-        text: "(I change out of my uniform into something comfortable. The moment the tie comes off, it feels like all the tension from the day melts away at once.)",
+        text: "*I change out of my uniform into something comfortable. The moment the tie comes off, it feels like all the tension from the day melts away at once.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_end_settle"
     },
     "day2_end_settle": {
         name: "Me",
-        text: "(I set my bag down and sit at my desk. I file away the printouts from today and drink a glass of water. The only sound in the quiet room is the ticking of the clock.)",
+        text: "*I set my bag down and sit at my desk. I file away the printouts from today and drink a glass of water. The only sound in the quiet room is the ticking of the clock.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_end_2"
     },
     "day2_end_2": {
         name: "Me",
-        text: "(I lean back against my bed and stare at the ceiling. Today was... really something. A much deeper and more complicated day than yesterday.)",
+        text: "*I lean back against my bed and stare at the ceiling. Today was... really something. A much deeper and more complicated day than yesterday.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_reflect_start"
@@ -151,7 +151,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_reflect_start": {
         name: "Me",
-        text: "(When I close my eyes, the scenes from today flash by like a panorama. It's only been two days... but this school already feels like part of my everyday life.)",
+        text: "*When I close my eyes, the scenes from today flash by like a panorama. It's only been two days... but this school already feels like part of my everyday life.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_reflect_yuna_check"
@@ -168,7 +168,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_reflect_yuna_secret": {
         name: "Me",
-        text: "(The secret Yuna whispered to me... it still lingers in my mind. Why did she tell only me something like that? What kind of world lies behind those mysterious eyes of hers...)",
+        text: "*The secret Yuna whispered to me... it still lingers in my mind. Why did she tell only me something like that? What kind of world lies behind those mysterious eyes of hers...*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_reflect_seoyeon_check"
@@ -185,7 +185,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_reflect_seoyeon": {
         name: "Me",
-        text: "(Seoyeon was her usual cheerful self today. Even though she's busy with student council work, she tries so hard to look after me... I feel a bit guilty, but also grateful.)",
+        text: "*Seoyeon was her usual cheerful self today. Even though she's busy with student council work, she tries so hard to look after me... I feel a bit guilty, but also grateful.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_reflect_dain_check"
@@ -202,14 +202,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_reflect_dain": {
         name: "Me",
-        text: "(Dain is... ah, that energy. There's never a dull moment with her. Watching her play sports was really cool, and messing around with her was fun. I wonder what challenge she'll throw at me tomorrow.)",
+        text: "*Dain is... ah, that energy. There's never a dull moment with her. Watching her play sports was really cool, and messing around with her was fun. I wonder what challenge she'll throw at me tomorrow.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_reflect_adults"
     },
     "day2_night_reflect_adults": {
         name: "Me",
-        text: "(The School Nurse had that mysterious aura about her again today, and the Homeroom Teacher was playful yet subtly attentive toward me. Is it more complicated because they're adults, or... am I just overthinking it?)",
+        text: "*The School Nurse had that mysterious aura about her again today, and the Homeroom Teacher was playful yet subtly attentive toward me. Is it more complicated because they're adults, or... am I just overthinking it?*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_snack_start"
@@ -221,28 +221,28 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_snack_start": {
         name: "Me",
-        text: "(Lost in thought, I realize I've gotten hungry. I barely ate dinner... maybe I should find something in the kitchen.)",
+        text: "*Lost in thought, I realize I've gotten hungry. I barely ate dinner... maybe I should find something in the kitchen.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_snack_kitchen"
     },
     "day2_night_snack_kitchen": {
         name: "Me",
-        text: "(I open the fridge and find a few side dishes Mom left behind and some instant noodles. I'm in the mood for ramen tonight.)",
+        text: "*I open the fridge and find a few side dishes Mom left behind and some instant noodles. I'm in the mood for ramen tonight.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_snack_ramen"
     },
     "day2_night_snack_ramen": {
         name: "Me",
-        text: "(I put water in the pot and start boiling the ramen. The bubbling sound fills the quiet kitchen. Watching the steam curl up makes me feel at ease.)",
+        text: "*I put water in the pot and start boiling the ramen. The bubbling sound fills the quiet kitchen. Watching the steam curl up makes me feel at ease.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_snack_think"
     },
     "day2_night_snack_think": {
         name: "Me",
-        text: "(I slurp the ramen and think. The people I exchanged numbers with today... should I send them a message? Or just go to sleep? After finishing the dishes, I head back to my room.)",
+        text: "*I slurp the ramen and think. The people I exchanged numbers with today... should I send them a message? Or just go to sleep? After finishing the dishes, I head back to my room.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_home"
@@ -254,7 +254,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_home": {
         name: "Me",
-        text: "(I lie on my bed and pick up my phone out of habit.)",
+        text: "*I lie on my bed and pick up my phone out of habit.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -265,28 +265,28 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_social_media": {
         name: "Me",
-        text: "(Before sending any messages, I quickly scroll through social media. My school friends' posts fill the timeline.)",
+        text: "*Before sending any messages, I quickly scroll through social media. My school friends' posts fill the timeline.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_social_media_scroll"
     },
     "day2_night_social_media_scroll": {
         name: "Me",
-        text: "(Someone's photo of school lunch, a sneaky shot taken during PE class, a picture of the sunset over the school field... Everyone's living their own version of the day.)",
+        text: "*Someone's photo of school lunch, a sneaky shot taken during PE class, a picture of the sunset over the school field... Everyone's living their own version of the day.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_social_media_post"
     },
     "day2_night_social_media_post": {
         name: "Me",
-        text: "(Seoyeon's student council activity photo is loaded with likes. Dain's volleyball practice video has a flood of comments saying 'So cool!'...)",
+        text: "*Seoyeon's student council activity photo is loaded with likes. Dain's volleyball practice video has a flood of comments saying 'So cool!'...*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_social_media_react"
     },
     "day2_night_social_media_react": {
         name: "Me",
-        text: "(I smile without realizing it. I tap a few likes and close the timeline. ...Maybe it's time to send a message directly.)",
+        text: "*I smile without realizing it. I tap a few likes and close the timeline. ...Maybe it's time to send a message directly.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_home_check_contact"
@@ -298,7 +298,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_home_check_contact": {
         name: "Me",
-        text: "(Should I send a message to someone...?)",
+        text: "*Should I send a message to someone...?*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -327,7 +327,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_night_nurse_home": {
         name: "Me",
-        text: "(I head to the address she gave me. It's a quiet studio apartment building near the school. My heart beats faster as I ride the elevator up.)",
+        text: "*I head to the address she gave me. It's a quiet studio apartment building near the school. My heart beats faster as I ride the elevator up.*",
         background: "assets/images/background/nurse_house.png",
         character: null,
         night: true,
@@ -336,14 +336,14 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_entrance": {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(I press the doorbell and hear rustling from inside. A voice calls out 'Just a moment~' followed by footsteps drawing closer.)",
+        text: "*I press the doorbell and hear rustling from inside. A voice calls out 'Just a moment~' followed by footsteps drawing closer.*",
         background: "assets/images/background/nurse_house.png",
         night: true,
         next: "day2_night_nurse_home_casual"
     },
     "day2_night_nurse_home_casual": {
         name: "Me",
-        text: "(The figure that appears from behind the door is... completely different from how she looks at school. Instead of her white coat, she's wearing a cozy knit sweater and a long skirt. A faint scent of shampoo drifts from her slightly damp hair.)",
+        text: "*The figure that appears from behind the door is... completely different from how she looks at school. Instead of her white coat, she's wearing a cozy knit sweater and a long skirt. A faint scent of shampoo drifts from her slightly damp hair.*",
         background: "assets/images/background/nurse_house.png",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
@@ -360,7 +360,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_tea": {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(Stepping inside, a cozy studio apartment comes into view. Soft indirect lighting, small potted plants, warm-toned décor. She puts the kettle on in the kitchen.)",
+        text: "*Stepping inside, a cozy studio apartment comes into view. Soft indirect lighting, small potted plants, warm-toned décor. She puts the kettle on in the kitchen.*",
         background: "assets/images/background/nurse_house.png",
         night: true,
         next: "day2_night_nurse_home_3"
@@ -393,7 +393,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_decision": {
         name: "Me",
         character: "assets/images/characters/nurse_normal.png",
-        text: "(I glance at the clock — it's already past 11 PM. The teacup is empty, and the night has grown deep. Should I stay a bit longer, or head back...)",
+        text: "*I glance at the clock — it's already past 11 PM. The teacup is empty, and the night has grown deep. Should I stay a bit longer, or head back...*",
         background: "assets/images/background/nurse_house.png",
         night: true,
         choices: [
@@ -403,7 +403,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_nurse_home_4": {
         name: "Me",
-        text: "(Her room... a quiet moment for just the two of us, under the dim lighting.)",
+        text: "*Her room... a quiet moment for just the two of us, under the dim lighting.*",
         background: "assets/images/background/nurse_home_event1.png",
         character: null,
         night: true,
@@ -411,7 +411,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_nurse_home_5": {
         name: "Me",
-        text: "(Alone with her in this room... my heartbeat pounds so loudly it echoes in my ears. Her scent tickles the tip of my nose, and the night only grows deeper.)",
+        text: "*Alone with her in this room... my heartbeat pounds so loudly it echoes in my ears. Her scent tickles the tip of my nose, and the night only grows deeper.*",
         background: "assets/images/background/nurse_house.png",
         character: null,
         night: true,
@@ -429,7 +429,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_seyoun": {
         name: "Me",
         character: null,
-        text: "(What should I text Seoyeon?)",
+        text: "*What should I text Seoyeon?*",
         background: "assets/images/background/room_my.png",
         night: true,
         branches: [
@@ -440,7 +440,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_after": {
         name: "Me",
-        text: "(I sent Seoyeon a message. 'From tonight's sunset to your overtime(?), I was really happy to spend it all with you. See you tomorrow!')",
+        text: "*I sent Seoyeon a message. 'From tonight's sunset to your overtime?, I was really happy to spend it all with you. See you tomorrow!'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_seyoun",
@@ -448,7 +448,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_lunch": {
         name: "Me",
-        text: "(I sent Seoyeon a message. 'The sandwich at lunch today was really delicious! See you tomorrow.')",
+        text: "*I sent Seoyeon a message. 'The sandwich at lunch today was really delicious! See you tomorrow.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_seyoun",
@@ -456,7 +456,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_generic": {
         name: "Me",
-        text: "(I sent Seoyeon a message. 'How was your day? See you at school tomorrow.')",
+        text: "*I sent Seoyeon a message. 'How was your day? See you at school tomorrow.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_seyoun",
@@ -466,7 +466,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "Seoyeon",
-        text: "(After a moment, a reply came.) '...Are you still awake? See you at school tomorrow, {name}.'",
+        text: "*After a moment, a reply came.* '...Are you still awake? See you at school tomorrow, {name}.'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
@@ -484,7 +484,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_reply_high": {
         name: "Me",
-        text: "(Talking with Seoyeon is always a joy. I can feel the sincerity in her warm words, and it makes packing my bag feel lighter. I'm already looking forward to lunchtime tomorrow.)",
+        text: "*Talking with Seoyeon is always a joy. I can feel the sincerity in her warm words, and it makes packing my bag feel lighter. I'm already looking forward to lunchtime tomorrow.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
@@ -493,7 +493,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_reply_normal": {
         name: "Me",
-        text: "(I finished chatting with Seoyeon without any issues. I'd better not forget our lunch plans tomorrow.)",
+        text: "*I finished chatting with Seoyeon without any issues. I'd better not forget our lunch plans tomorrow.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
@@ -502,7 +502,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_reply_low": {
         name: "Me",
-        text: "(Seoyeon's response feels more businesslike than usual. Did I do something wrong? I should approach her more carefully tomorrow.)",
+        text: "*Seoyeon's response feels more businesslike than usual. Did I do something wrong? I should approach her more carefully tomorrow.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/seyoun_normal.png",
         silhouette: true,
@@ -517,7 +517,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_yuna": {
         name: "Me",
         character: null,
-        text: "(What should I text Yuna?)",
+        text: "*What should I text Yuna?*",
         background: "assets/images/background/room_my.png",
         night: true,
         branches: [
@@ -528,7 +528,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_met": {
         name: "Me",
-        text: "(I sent Yuna a message. 'What you showed me today... I won't forget it. Good night.')",
+        text: "*I sent Yuna a message. 'What you showed me today... I won't forget it. Good night.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_yuna",
@@ -536,7 +536,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_generic": {
         name: "Me",
-        text: "(I sent Yuna a message. 'How was your day today? See you at school tomorrow.')",
+        text: "*I sent Yuna a message. 'How was your day today? See you at school tomorrow.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_yuna",
@@ -546,7 +546,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "Yuna",
-        text: "(A reply arrives after a moment.) '...Yeah. I knew you'd understand. I'll be watching over you, even in your dreams, {name}.'",
+        text: "*A reply arrives after a moment.* '...Yeah. I knew you'd understand. I'll be watching over you, even in your dreams, {name}.'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
@@ -564,7 +564,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply_high": {
         name: "Me",
-        text: "(I feel myself being drawn deeper into Yuna's mysterious aura. Her words about watching over me in my dreams feel less frightening and more strangely comforting. It almost feels like I really could meet her in a dream.)",
+        text: "*I feel myself being drawn deeper into Yuna's mysterious aura. Her words about watching over me in my dreams feel less frightening and more strangely comforting. It almost feels like I really could meet her in a dream.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
@@ -573,7 +573,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply_normal": {
         name: "Me",
-        text: "(Talking with Yuna is still puzzling, but I feel like we've gotten a little closer. The secrets she mentioned keep swirling in my mind.)",
+        text: "*Talking with Yuna is still puzzling, but I feel like we've gotten a little closer. The secrets she mentioned keep swirling in my mind.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
@@ -582,7 +582,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply_low": {
         name: "Me",
-        text: "(Yuna's attitude is so cold and unsettling. A chill runs through me, and I wonder if stepping into her world was really the right choice.)",
+        text: "*Yuna's attitude is so cold and unsettling. A chill runs through me, and I wonder if stepping into her world was really the right choice.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_normal.png",
         silhouette: true,
@@ -597,7 +597,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_dain": {
         name: "Me",
         character: null,
-        text: "(What should I text Dain?)",
+        text: "*What should I text Dain?*",
         background: "assets/images/background/room_my.png",
         night: true,
         branches: [
@@ -608,7 +608,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_after": {
         name: "Me",
-        text: "(I'm reminded of what happened during after-school practice. What should I text her?)",
+        text: "*I'm reminded of what happened during after-school practice. What should I text her?*",
         background: "assets/images/background/room_my.png",
         night: true,
         branches: [
@@ -618,7 +618,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_bet": {
         name: "Me",
-        text: "(I sent Dain a message. 'Great job at practice today! Don't forget our tteokbokki bet tomorrow.')",
+        text: "*I sent Dain a message. 'Great job at practice today! Don't forget our tteokbokki bet tomorrow.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_dain",
@@ -626,7 +626,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_practice": {
         name: "Me",
-        text: "(I sent Dain a message. 'Great job at practice today! I had a blast thanks to you. See you tomorrow!')",
+        text: "*I sent Dain a message. 'Great job at practice today! I had a blast thanks to you. See you tomorrow!'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_dain",
@@ -634,7 +634,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_lunch": {
         name: "Me",
-        text: "(I sent Dain a message. 'Running into you at the snack bar today was fun! Let's go grab tteokbokki tomorrow.')",
+        text: "*I sent Dain a message. 'Running into you at the snack bar today was fun! Let's go grab tteokbokki tomorrow.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_dain",
@@ -642,7 +642,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_generic": {
         name: "Me",
-        text: "(I sent Dain a message. 'Hey Dain, great job today! See you tomorrow.')",
+        text: "*I sent Dain a message. 'Hey Dain, great job today! See you tomorrow.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_dain",
@@ -652,7 +652,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "Dain",
-        text: "(An energetic reply.) 'Of course! I'm gonna win, so have your wallet ready! Haha, good night, {name}!'",
+        text: "*An energetic reply.* 'Of course! I'm gonna win, so have your wallet ready! Haha, good night, {name}!'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
@@ -670,7 +670,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply_high": {
         name: "Me",
-        text: "(Dain's vibrant energy lifts my spirits too. I can practically see her grinning as she teases 'have your wallet ready.' Should I maybe lose the tteokbokki bet on purpose just for her tomorrow?)",
+        text: "*Dain's vibrant energy lifts my spirits too. I can practically see her grinning as she teases 'have your wallet ready.' Should I maybe lose the tteokbokki bet on purpose just for her tomorrow?*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
@@ -679,7 +679,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply_normal": {
         name: "Me",
-        text: "(I had a fun chat with Dain. I should mentally prepare so I don't lose the tteokbokki bet tomorrow.)",
+        text: "*I had a fun chat with Dain. I should mentally prepare so I don't lose the tteokbokki bet tomorrow.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/dain_normal.png",
         silhouette: true,
@@ -688,7 +688,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply_low": {
         name: "Me",
-        text: "(Dain's response is more lifeless than usual. I wonder if my message annoyed her. The hand holding my phone feels awkward.)",
+        text: "*Dain's response is more lifeless than usual. I wonder if my message annoyed her. The hand holding my phone feels awkward.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/dain_sad.png",
         silhouette: true,
@@ -703,7 +703,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_nurse": {
         name: "Me",
         character: null,
-        text: "(What should I text the School Nurse?)",
+        text: "*What should I text the School Nurse?*",
         background: "assets/images/background/room_my.png",
         night: true,
         branches: [
@@ -714,7 +714,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_rest": {
         name: "Me",
-        text: "(I sent the School Nurse a message. 'Thank you for today, ma'am. I got a good rest thanks to you.')",
+        text: "*I sent the School Nurse a message. 'Thank you for today, ma'am. I got a good rest thanks to you.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_nurse",
@@ -722,7 +722,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_generic": {
         name: "Me",
-        text: "(I sent the School Nurse a message. 'Thank you for your hard work today, ma'am. Good night.')",
+        text: "*I sent the School Nurse a message. 'Thank you for your hard work today, ma'am. Good night.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_nurse",
@@ -732,7 +732,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "School Nurse",
-        text: "(After a moment, a reply came.) 'Got it. Don't push yourself—get some rest. See you tomorrow, {name}.'",
+        text: "*After a moment, a reply came.* 'Got it. Don't push yourself—get some rest. See you tomorrow, {name}.'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
@@ -750,7 +750,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_reply_high": {
         name: "Me",
-        text: "(Her alluring tone seems to linger in my ears. I can almost see her smile through the screen, and my heart trembles. No matter what happens tomorrow, I have to stop by the nurse's office.)",
+        text: "*Her alluring tone seems to linger in my ears. I can almost see her smile through the screen, and my heart trembles. No matter what happens tomorrow, I have to stop by the nurse's office.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
@@ -759,7 +759,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_reply_normal": {
         name: "Me",
-        text: "(I finished texting the School Nurse without any issues. I should greet her warmly if I see her at school tomorrow.)",
+        text: "*I finished texting the School Nurse without any issues. I should greet her warmly if I see her at school tomorrow.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
@@ -768,7 +768,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_reply_low": {
         name: "Me",
-        text: "(Her reply is painfully matter-of-fact. It feels like she's treating me as just another student, and a bitter feeling sinks in.)",
+        text: "*Her reply is painfully matter-of-fact. It feels like she's treating me as just another student, and a bitter feeling sinks in.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/nurse_normal.png",
         silhouette: true,
@@ -783,7 +783,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_message_teacher": {
         name: "Me",
         character: null,
-        text: "(I sent the Homeroom Teacher a message. 'Thank you for your hard work today, ma'am. Good night.')",
+        text: "*I sent the Homeroom Teacher a message. 'Thank you for your hard work today, ma'am. Good night.'*",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_teacher",
@@ -793,7 +793,7 @@ Object.assign(SCENARIO[2], {
         type: "free_talk",
         maxTurns: 10,
         name: "Homeroom Teacher",
-        text: "(A slightly delayed reply.) 'Oh my, {name}. A message at this hour — I'm a little surprised. But thank you for thinking of me. You get a good night's sleep too, and don't be late tomorrow.'",
+        text: "*A slightly delayed reply.* 'Oh my, {name}. A message at this hour — I'm a little surprised. But thank you for thinking of me. You get a good night's sleep too, and don't be late tomorrow.'",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
@@ -811,7 +811,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_teacher_reply_high": {
         name: "Me",
-        text: "(The warmth in her reply makes my heart feel full. It's not just being treated as a student — I feel a little respected as a person, and it makes me look forward to going to school tomorrow.)",
+        text: "*The warmth in her reply makes my heart feel full. It's not just being treated as a student — I feel a little respected as a person, and it makes me look forward to going to school tomorrow.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
@@ -820,7 +820,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_teacher_reply_normal": {
         name: "Me",
-        text: "(I finished chatting with the Homeroom Teacher without any problems. I'd better make sure I'm not late tomorrow.)",
+        text: "*I finished chatting with the Homeroom Teacher without any problems. I'd better make sure I'm not late tomorrow.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
@@ -829,7 +829,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_teacher_reply_low": {
         name: "Me",
-        text: "(Her reply is short and strict. The regret of texting her during her personal time washes over me.)",
+        text: "*Her reply is short and strict. The regret of texting her during her personal time washes over me.*",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/teacher_normal.png",
         silhouette: true,
@@ -844,7 +844,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_goodnight_start": {
         name: "Me",
         character: null,
-        text: "(I set my phone down and walk over to the window. Before falling asleep, I just want to take in this night for a moment.)",
+        text: "*I set my phone down and walk over to the window. Before falling asleep, I just want to take in this night for a moment.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_goodnight_stars"
@@ -852,7 +852,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_goodnight_stars": {
         name: "Me",
         character: null,
-        text: "(Opening the window, cold night air rushes in. Stars are scattered across the sky above. They seem even brighter than yesterday... Yuna's mention of 'the third star' crosses my mind.)",
+        text: "*Opening the window, cold night air rushes in. Stars are scattered across the sky above. They seem even brighter than yesterday... Yuna's mention of 'the third star' crosses my mind.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_goodnight_sounds"
@@ -860,7 +860,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_goodnight_sounds": {
         name: "Me",
         character: null,
-        text: "(The chirping of insects continues endlessly. A car horn sounds once from somewhere far away, then silence returns. The nights in this neighborhood... are really quiet.)",
+        text: "*The chirping of insects continues endlessly. A car horn sounds once from somewhere far away, then silence returns. The nights in this neighborhood... are really quiet.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_goodnight_tomorrow"
@@ -868,7 +868,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_goodnight_tomorrow": {
         name: "Me",
         character: null,
-        text: "(Tomorrow will already be my third day since transferring. Seoyeon, Yuna, Dain, the teachers... How will my relationships with them change? A strange flutter of anticipation and anxiety fills my chest.)",
+        text: "*Tomorrow will already be my third day since transferring. Seoyeon, Yuna, Dain, the teachers... How will my relationships with them change? A strange flutter of anticipation and anxiety fills my chest.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_goodnight_close"
@@ -876,7 +876,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_goodnight_close": {
         name: "Me",
         character: null,
-        text: "(I close the window and draw the curtains. I burrow into my blanket and shut my eyes. Good job today, me...)",
+        text: "*I close the window and draw the curtains. I burrow into my blanket and shut my eyes. Good job today, me...*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_dream_start"
@@ -889,14 +889,14 @@ Object.assign(SCENARIO[2], {
     "day2_night_dream_start": {
         name: "Me",
         character: null,
-        text: "(My consciousness fades into a haze... I'm standing in a space where I can't tell if it's a dream or reality. It looks like the school rooftop, or maybe some unknown garden.)",
+        text: "*My consciousness fades into a haze... I'm standing in a space where I can't tell if it's a dream or reality. It looks like the school rooftop, or maybe some unknown garden.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_dream_vision"
     },
     "day2_night_dream_vision": {
         name: "???",
-        text: "(Someone's voice drifts in on the wind. 'Tomorrow... there's something I want to show you.' I can't tell who the voice belongs to, but its warm yet desperate resonance lingers in my ears.)",
+        text: "*Someone's voice drifts in on the wind. 'Tomorrow... there's something I want to show you.' I can't tell who the voice belongs to, but its warm yet desperate resonance lingers in my ears.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_night_dream_end"
@@ -904,7 +904,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_dream_end": {
         name: "Me",
         character: null,
-        text: "(I reach out my hand, but nothing is there. The voice slowly fades away... and my consciousness sinks into a deep, deep sleep.)",
+        text: "*I reach out my hand, but nothing is there. The voice slowly fades away... and my consciousness sinks into a deep, deep sleep.*",
         background: "assets/images/background/room_my.png",
         night: true,
         next: "day2_final_scene"
@@ -916,7 +916,7 @@ Object.assign(SCENARIO[2], {
 
     "day2_final_scene": {
         name: "Me",
-        text: "(A faint light bleeds through the darkness. What truths await me tomorrow... I close my heavy eyelids and drift into a deep slumber.)",
+        text: "*A faint light bleeds through the darkness. What truths await me tomorrow... I close my heavy eyelids and drift into a deep slumber.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,

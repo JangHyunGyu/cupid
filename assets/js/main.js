@@ -1762,7 +1762,7 @@ class DialogueSystem {
     }
 
     /**
-     * 텍스트 파싱 헬퍼 함수: (지문) 형태를 별도의 블록 박스로 변환
+     * 텍스트 파싱 헬퍼 함수: **지문** 형태를 별도의 블록 박스로 변환
      * @param {string} text 
      * @returns {string}
      */
@@ -1770,10 +1770,10 @@ class DialogueSystem {
         // HTML 이스케이프 처리 (사용자 입력 등에서 태그 깨짐 방지)
         let escapedText = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
         
-        // 열린 괄호 '(' 로 시작해서 닫힌 괄호 ')' 로 끝나거나, 문자열 끝까지 가는 부분을 매칭
-        // 타이핑 중에는 닫힌 괄호가 아직 없을 수 있으므로 \)? 로 처리
-        // 괄호 앞뒤의 공백(\s*)도 함께 매칭하여 제거 (블록 요소이므로 여백은 CSS margin으로 처리)
-        return escapedText.replace(/\s*\(([^)]*)(\)?)\s*/g, '<div style="background: rgba(0, 0, 0, 0.4); padding: 12px 16px; border-radius: 8px; margin: 8px 0; font-size: 0.95em; color: rgba(255, 255, 255, 0.85); line-height: 1.6; font-style: italic; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">$1</div>');
+        // * 로 시작해서 * 로 끝나거나, 문자열 끝까지 가는 부분을 매칭
+        // 타이핑 중에는 닫는 * 가 아직 없을 수 있으므로 (\*)? 로 처리
+        // 앞뒤의 공백(\s*)도 함께 매칭하여 제거 (블록 요소이므로 여백은 CSS margin으로 처리)
+        return escapedText.replace(/\s*\*([^*]+)(?:\*)?\s*/g, '<div style="background: rgba(0, 0, 0, 0.4); padding: 12px 16px; border-radius: 8px; margin: 8px 0; font-size: 0.95em; color: rgba(255, 255, 255, 0.85); line-height: 1.6; font-style: italic; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">$1</div>');
     }
 
     /** 
@@ -2186,12 +2186,12 @@ class FreeTalkSystem {
         if (chatGuideEl) {
             if (isEn) {
                 chatGuideEl.innerHTML = isRemote
-                    ? "<b>Tip:</b> Describe tone in brackets, e.g., <i>(smiling) Hey...</i>"
-                    : "<b>Tip:</b> Describe scene or actions, e.g., <i>(holds hand) Let's go.</i>";
+                    ? "<b>Tip:</b> Describe tone in asterisks, e.g., <i>*smiling* Hey...</i>"
+                    : "<b>Tip:</b> Describe scene or actions, e.g., <i>*holds hand* Let's go.</i>";
             } else {
                 chatGuideEl.innerHTML = isRemote
-                    ? "<b>Tip:</b> <i>(웃으며) 자?</i> 처럼 어조나 상황을 표현해보세요."
-                    : "<b>Tip:</b> <i>(손을 잡으며) 같이 가자.</i> 처럼 말해보세요.";
+                    ? "<b>Tip:</b> <i>*웃으며* 자?</i> 처럼 어조나 상황을 표현해보세요."
+                    : "<b>Tip:</b> <i>*손을 잡으며* 같이 가자.</i> 처럼 말해보세요.";
             }
         }
 
@@ -2386,8 +2386,8 @@ class FreeTalkSystem {
                 const currentAffinity = (this.stateManager.stats[charKey] || {}).affinity || 0;
                 const isDatingCurrent = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
                 if (!isDatingCurrent && parsed.affinity > 0 && text) {
-                    // 괄호 안 내용에서 신체적/성적 키워드 감지
-                    const parenContent = (text.match(/\(([^)]+)\)/g) || []).join(' ').toLowerCase();
+                    // * 안 내용에서 신체적/성적 키워드 감지
+                    const parenContent = (text.match(/\*([^*]+)\*/g) || []).join(' ').toLowerCase();
                     if (parenContent) {
                         const nsfwKeywords = /키스|뽀뽀|껴안|포옹|안아|만지|잡아|스킨십|가슴|엉덩이|허벅지|입술|핥|빨|벗|더듬|쓰다듬|몸|허리|볼[에를]|kiss|hug|embrac|touch|grab|grope|fond|caress|strip|undress|breast|butt|thigh|lip|lick|suck|body|waist|cheek/i;
                         if (nsfwKeywords.test(parenContent)) {
