@@ -108,21 +108,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_10": {
         name: "나",
-        text: "*내일도, 모레도, 일 년 뒤에도— 이 사람 곁에서 걸어가는 내가 보인다.*",
+        text: "*내일도, 모레도, 일 년 뒤에도— 이 사람 곁에서 벗어날 수 없는 내가 보인다.*",
         night: true,
         fade: true,
         next: "day5_ending_true_11"
     },
     "day5_ending_true_11": {
         name: "나",
-        text: "*약속하자. 어떤 계절이 와도, 우리의 이야기는 여기서 끝나지 않는다고.*",
+        text: "*약속하자. 어떤 계절이 와도, 넌 영원히 내 곁에 묶여 있을 거라고.*",
         night: true,
         fade: true,
         next: "day5_ending_true_12"
     },
     "day5_ending_true_12": {
         name: "나",
-        text: "*누군가를 온전히 사랑한다는 건— 세상의 모든 불확실함 속에서, 단 하나의 확신을 품는 일이다.*",
+        text: "*누군가를 온전히 사랑한다는 건— 세상의 모든 불확실함 속에서, 단 하나의 집착을 품는 일이다.*",
         night: true,
         fade: true,
         next: "day5_ending_true_13"
@@ -232,35 +232,35 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_good_8": {
         name: "나",
-        text: "*길을 잃었던 게 아니었다. 그냥 도착하는 데 시간이 좀 걸렸을 뿐.*",
+        text: "*길을 잃었던 게 아니었다. 널 내 것으로 만들기 위한 과정이었을 뿐.*",
         night: true,
         fade: true,
         next: "day5_ending_good_9"
     },
     "day5_ending_good_9": {
         name: "나",
-        text: "*망설임이 없었다면, 지금 이 확신도 없었을 거다.*",
+        text: "*망설임이 없었다면, 지금 이 지독한 소유욕도 없었을 거다.*",
         night: true,
         fade: true,
         next: "day5_ending_good_10"
     },
     "day5_ending_good_10": {
         name: "나",
-        text: "*불완전한 사랑도 사랑이다. 아니, 어쩌면 불완전하기에 더 소중한 건지도 모른다.*",
+        text: "*불완전한 사랑도 사랑이다. 아니, 어쩌면 망가졌기에 더 완벽한 건지도 모른다.*",
         night: true,
         fade: true,
         next: "day5_ending_good_11"
     },
     "day5_ending_good_11": {
         name: "나",
-        text: "*앞으로도 실수하겠지. 부딪히겠지. 하지만 이 사람과 함께라면, 함께 넘어지고 함께 일어설 수 있다.*",
+        text: "*앞으로도 실수하겠지. 부딪히겠지. 하지만 이 사람과 함께라면, 차라리 같이 파멸하는 것도 나쁘지 않다.*",
         night: true,
         fade: true,
         next: "day5_ending_good_12"
     },
     "day5_ending_good_12": {
         name: "나",
-        text: "*그래서 괜찮다. 이 대답은, 오래 걸린 만큼 쉽게 변하지 않을 테니까.*",
+        text: "*그래서 괜찮다. 이 집착은, 오래 걸린 만큼 절대 풀리지 않을 테니까.*",
         night: true,
         fade: true,
         next: "day5_ending_good_13"
@@ -331,21 +331,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_mayhem_8": {
         name: "나",
-        text: "*어쩌면 욕심일지도 모른다. 모두를 소중히 여기고 싶다는 마음은.*",
+        text: "*어쩌면 욕심일지도 모른다. 모두를 소중히 여기고 싶다는 마음은. 하지만 이미 늦었다.*",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_9"
     },
     "day5_ending_mayhem_9": {
         name: "나",
-        text: "*하지만 바람은 한 방향으로만 부는 법이 없고, 별은 하나만 빛나지 않는다.*",
+        text: "*그녀들의 집착은 이미 나를 옭아매고 있다. 누구 하나를 선택하는 순간, 나는 파멸할 것이다.*",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_10"
     },
     "day5_ending_mayhem_10": {
         name: "나",
-        text: "*이런 소란스러운 매일이… 솔직히 나쁘지 않다. 내일은 또 어떤 수라장이 펼쳐질까.*",
+        text: "*이런 지옥 같은 매일이… 솔직히 나쁘지 않다. 내일은 또 어떤 핏빛 수라장이 펼쳐질까.*",
         night: true,
         fade: true,
         next: "day5_ending_mayhem_11"
@@ -423,28 +423,28 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_7": {
         name: "나",
-        text: "*하지만 이상하게도… 모두가 웃고 있다. 나도 웃고 있다.*",
+        text: "*하지만 이상하게도… 모두가 웃고 있다. 나를 완전히 소유했다는 듯이.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_8"
     },
     "day5_ending_harem_8": {
         name: "나",
-        text: "*욕심이라 불러도 좋다. 이 마음에 거짓이 없다면.*",
+        text: "*욕심이라 불러도 좋다. 이 지독한 집착의 굴레에서 벗어날 수 없다면.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_9"
     },
     "day5_ending_harem_9": {
         name: "나",
-        text: "*후회는 없다. 반성은… 내일의 나한테 맡기자.*",
+        text: "*후회는 없다. 아니, 후회할 틈조차 주지 않는다. 그녀들은 나를 철저히 감시하고 있으니까.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_10"
     },
     "day5_ending_harem_10": {
         name: "나",
-        text: "*물론, 이 균형이 언제까지 유지될지는 아무도 모른다. 오늘도 미묘한 신경전이 있었고.*",
+        text: "*물론, 이 균형이 언제 깨질지는 아무도 모른다. 누군가 선을 넘는 순간, 피바람이 불겠지.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_11"
@@ -458,7 +458,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_harem_12": {
         name: "나",
-        text: "*내일도 바쁘겠지. 모레는 더 바쁘겠지. 하지만— 이 눈부신 날들을, 나는 사랑한다.*",
+        text: "*내일도 감시당하겠지. 모레는 더 옥죄어오겠지. 하지만— 이 핏빛 날들을, 나는 받아들인다.*",
         night: true,
         fade: true,
         next: "day5_ending_harem_13"
@@ -529,21 +529,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_friend_8": {
         name: "나",
-        text: "*그래도 나쁘지만은 않다. 옆에서 웃는 모습을 볼 수 있으니까. 그것만으로도 하루가 버텨지니까.*",
+        text: "*그래도 나쁘지만은 않다. 옆에서 웃는 모습을 볼 수 있으니까. 언젠가 그 미소를 부숴버릴 날을 기다리며.*",
         night: true,
         fade: true,
         next: "day5_ending_friend_9"
     },
     "day5_ending_friend_9": {
         name: "나",
-        text: "*어쩌면 이건 비겁함이 아니라, 조용한 용기인지도 모른다. 사랑을 품은 채 곁에 머무르는 일.*",
+        text: "*어쩌면 이건 비겁함이 아니라, 조용한 사냥인지도 모른다. 먹잇감을 품은 채 곁에 머무르는 일.*",
         night: true,
         fade: true,
         next: "day5_ending_friend_10"
     },
     "day5_ending_friend_10": {
         name: "나",
-        text: "*그래도… 후회하지 않아. 용기를 낼 수 있는 다음 기회가, 언젠가 올 테니까.*",
+        text: "*그래도… 후회하지 않아. 널 완전히 내 것으로 만들 수 있는 기회가, 언젠가 올 테니까.*",
         night: true,
         fade: true,
         next: "day5_ending_friend_11"
@@ -628,21 +628,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_alone_8": {
         name: "나",
-        text: "*혼자라서 외로운 게 아니다. 혼자이기에 비로소 들리는 것들이 있다.*",
+        text: "*혼자라서 외로운 게 아니다. 혼자이기에 비로소 들리는 것들이 있다. 그녀들의 발소리, 숨소리, 나를 지켜보는 시선들.*",
         night: true,
         fade: true,
         next: "day5_ending_alone_9"
     },
     "day5_ending_alone_9": {
         name: "나",
-        text: "*바람 소리, 발걸음 소리, 내 심장 소리. 그 고요한 리듬 속에서 나는 자라고 있었다.*",
+        text: "*바람 소리, 발걸음 소리, 내 심장 소리. 그 고요한 리듬 속에서 나는 서서히 미쳐가고 있었다.*",
         night: true,
         fade: true,
         next: "day5_ending_alone_10"
     },
     "day5_ending_alone_10": {
         name: "나",
-        text: "*누군가에게 닿지 못했다 해도, 이 시간들이 결코 무의미해지는 것은 아니다. 나는 분명 어제보다 단단해졌으니까.*",
+        text: "*누군가에게 닿지 못했다 해도, 이 시간들이 결코 무의미해지는 것은 아니다. 나는 분명 어제보다 더 깊은 어둠 속으로 가라앉고 있으니까.*",
         night: true,
         fade: true,
         next: "day5_ending_alone_11"
