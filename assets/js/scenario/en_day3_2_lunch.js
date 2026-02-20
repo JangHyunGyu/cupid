@@ -326,6 +326,15 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_yuna_others_react"
     },
     "day3_lunch_yuna_others_react": {
+        name: "Me",
+        text: "(I decided to go with Yuna.)",
+        character: null,
+        branches: [
+            { next: "day3_lunch_yuna_seoyeon_jealous", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day3_lunch_with_yuna_start" }
+        ]
+    },
+    "day3_lunch_yuna_seoyeon_jealous": {
         name: "Seoyeon",
         text: "\"...Okay. Got it.\"",
         character: "assets/images/characters/seyoun_sad.png",
@@ -513,6 +522,15 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_dain_others_react"
     },
     "day3_lunch_dain_others_react": {
+        name: "Me",
+        text: "(I decided to go with Dain.)",
+        character: null,
+        branches: [
+            { next: "day3_lunch_dain_seoyeon_jealous", condition: "day3_seoyeon_date_confirmed" },
+            { next: "day3_lunch_with_dain_start" }
+        ]
+    },
+    "day3_lunch_dain_seoyeon_jealous": {
         name: "Seoyeon",
         text: "\"...Okay. See you later.\"",
         character: "assets/images/characters/seyoun_sad.png",
