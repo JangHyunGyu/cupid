@@ -301,7 +301,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_meet_seoyeon_high": {
         name: "서연",
-        text: "(서연이가 교문 앞에서 서성이다가 나를 발견하자마자 환하게 웃으며 달려온다.) \"{name}! 기다리고 있었어! 어젯밤에 잘 잤는지 궁금해서 한숨도 못 잤다니까?\"",
+        text: "(서연이가 교문 앞에서 서성이다 나를 발견하곤, 안도한 듯 환하게 웃으며 다가온다.) \"{name}! 일찍 왔네? 사실... 네가 오늘도 무사히 등교할지 은근히 신경 쓰였거든.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day2_seoyeon_talk"

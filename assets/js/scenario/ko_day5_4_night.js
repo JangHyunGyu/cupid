@@ -550,7 +550,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_friend_11": {
         name: "나",
-        text: "(언젠가— 이 마음을 말할 수 있는 날이 오면, 그때는 망설이지 않겠다.)",
+        text: "(입끝을 맴돌다 끝내 삼켜버린 말들은 결코 사라지지 않고, 내 안에서 조용히 나이테를 새겨갈 것이다.)",
         night: true,
         fade: true,
         next: "day5_ending_friend_12"

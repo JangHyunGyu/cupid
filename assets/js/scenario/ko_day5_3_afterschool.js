@@ -289,7 +289,7 @@ Object.assign(SCENARIO[5], {
         text: "(서연이 내 어깨에 머리를 기댔다. 심장이 터질 것 같았다.)",
         night: true,
         fade: true,
-        next: "day5_bed_common_1"
+        next: "day5_true_morning_seoyeon_1"
     },
 
     // ─── 유나: 도서관 별관 비밀 다락방 ───
@@ -348,7 +348,7 @@ Object.assign(SCENARIO[5], {
         character: "assets/images/characters/yuna_shy.png",
         night: true,
         fade: true,
-        next: "day5_bed_common_1"
+        next: "day5_true_morning_yuna_1"
     },
 
     // ─── 다인: 빈 체육관 매트 위 ───
@@ -408,7 +408,7 @@ Object.assign(SCENARIO[5], {
         character: "assets/images/characters/dain_shy.png",
         night: true,
         fade: true,
-        next: "day5_bed_common_1"
+        next: "day5_true_morning_dain_1"
     },
 
     // ─── 보건선생님: 보건실, 문 잠금 ───
@@ -467,7 +467,7 @@ Object.assign(SCENARIO[5], {
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         fade: true,
-        next: "day5_bed_common_1"
+        next: "day5_true_morning_nurse_1"
     },
 
     // ─── 담임선생님: 선생님의 차 안 → 선생님 자취방 ───
@@ -525,68 +525,220 @@ Object.assign(SCENARIO[5], {
         text: "(선생님이 머리끈을 풀며 힘없이 웃었다. 커피는… 결국 식었다.)",
         night: true,
         fade: true,
-        next: "day5_bed_common_1"
+        next: "day5_true_morning_teacher_1"
     },
 
-    // ─── 공통: 암전 → 아침 ───
-    "day5_bed_common_1": {
+    // ─── 서연: 아침 ───
+    "day5_true_morning_seoyeon_1": {
         name: "나",
         background: null,
         character: null,
-        text: "(서로의 체온이 느껴졌다. 말없이, 자연스럽게— 거리가 사라졌다.)",
+        text: "(서로의 체온이 얽힌 채, 말없이 거리가 사라졌던 밤이 지났다.)",
         night: true,
         fade: true,
-        next: "day5_bed_common_2"
+        next: "day5_true_morning_seoyeon_2"
     },
-    "day5_bed_common_2": {
+    "day5_true_morning_seoyeon_2": {
         name: "나",
         background: null,
         character: null,
-        text: "(……)",
-        night: true,
+        text: "(눈을 뜨자, 창틈으로 스며드는 아침 햇살 속에서 나를 가만히 바라보고 있는 서연이 보였다.)",
         fade: true,
-        next: "day5_bed_common_3"
+        next: "day5_true_morning_seoyeon_3"
     },
-    "day5_bed_common_3": {
+    "day5_true_morning_seoyeon_3": {
+        name: "서연",
+        background: null,
+        character: "assets/images/characters/seyoun_shy.png",
+        text: "\"…일찍 깼네. 좀 더 자도 되는데.\"",
+        fade: true,
+        next: "day5_true_morning_seoyeon_4"
+    },
+    "day5_true_morning_seoyeon_4": {
+        name: "나",
+        background: null,
+        character: "assets/images/characters/seyoun_shy.png",
+        text: "(눈이 마주치자 서연의 뺨이 옅게 달아올랐다. 평소의 완벽한 학생회장이 아닌, 오직 나만의 서연이었다.)",
+        fade: true,
+        next: "day5_true_morning_seoyeon_5"
+    },
+    "day5_true_morning_seoyeon_5": {
         name: "나",
         background: null,
         character: null,
-        text: "(………………)",
-        night: true,
+        text: "(맞잡은 두 손 사이로 전해지는 온기 속에서, 우리의 평범한 일상이 비로소 기적이 되는 순간을 마주하고 있었다.)",
         fade: true,
-        next: "day5_true_morning"
+        next: "day5_ending_true"
     },
 
-    // ─── 다음날 아침 ───
-    "day5_true_morning": {
+    // ─── 유나: 아침 ───
+    "day5_true_morning_yuna_1": {
         name: "나",
         background: null,
         character: null,
-        text: "(눈을 떴다. 창문 사이로 아침 햇살이 들어오고 있었다.)",
+        text: "(좁은 다락방 소파 위, 서로의 숨결만이 고요하게 섞여들던 밤이 지났다.)",
+        night: true,
         fade: true,
-        next: "day5_true_morning_2"
+        next: "day5_true_morning_yuna_2"
     },
-    "day5_true_morning_2": {
+    "day5_true_morning_yuna_2": {
         name: "나",
         background: null,
         character: null,
-        text: "(옆에서 조용히 잠든 얼굴이 보인다. 어젯밤이… 꿈이 아니었다.)",
+        text: "(눈을 뜨려는데, 내 팔을 단단히 끌어안고 있는 작은 온기가 느껴졌다.)",
         fade: true,
-        next: "day5_true_morning_3"
+        next: "day5_true_morning_yuna_3"
     },
-    "day5_true_morning_3": {
-        name: "나",
+    "day5_true_morning_yuna_3": {
+        name: "유나",
         background: null,
-        character: null,
-        text: "(살며시 이불을 올려 덮어줬다. 이 사람의 잠든 모습을, 평생 보고 싶다고 생각했다.)",
+        character: "assets/images/characters/yuna_shy.png",
+        text: "\"…어딜 가려고. 오늘은 하루 종일 내 옆에 있어.\"",
         fade: true,
-        next: "day5_true_final"
+        next: "day5_true_morning_yuna_4"
     },
-    "day5_true_final": {
+    "day5_true_morning_yuna_4": {
+        name: "나",
+        background: null,
+        character: "assets/images/characters/yuna_shy.png",
+        text: "(잠결에 웅얼거리며 내 품으로 더 파고드는 유나. 그 서늘했던 아이가 내게만 보여주는 무방비한 모습이었다.)",
+        fade: true,
+        next: "day5_true_morning_yuna_5"
+    },
+    "day5_true_morning_yuna_5": {
         name: "나",
         background: null,
         character: null,
-        text: "(이 순간을, 이 감정을, 이 온기를— 영원히 잊지 않을 거야.)",
+        text: "(이 고요하고 완벽한 세계에서, 나는 그녀의 온전한 안식처가 되기로 다짐했다.)",
+        fade: true,
+        next: "day5_ending_true"
+    },
+
+    // ─── 다인: 아침 ───
+    "day5_true_morning_dain_1": {
+        name: "나",
+        background: null,
+        character: null,
+        text: "(별빛이 쏟아지던 체육관 매트 위, 서로의 심장 소리가 하나처럼 겹쳐지던 밤이 지났다.)",
+        night: true,
+        fade: true,
+        next: "day5_true_morning_dain_2"
+    },
+    "day5_true_morning_dain_2": {
+        name: "나",
+        background: null,
+        character: null,
+        text: "(아침 햇살에 눈을 뜨자, 내 배 위로 턱 하니 다리를 걸치고 자는 다인이가 보였다.)",
+        fade: true,
+        next: "day5_true_morning_dain_3"
+    },
+    "day5_true_morning_dain_3": {
+        name: "다인",
+        background: null,
+        character: "assets/images/characters/dain_laugh.png",
+        text: "\"으음… 헤헤, 좋은 아침! 아~ 배고프다. 우리 밥 먹자!\"",
+        fade: true,
+        next: "day5_true_morning_dain_4"
+    },
+    "day5_true_morning_dain_4": {
+        name: "나",
+        background: null,
+        character: "assets/images/characters/dain_laugh.png",
+        text: "(눈을 비비며 해맑게 웃는 다인이. 어젯밤의 부끄러움은 온데간데없이, 평소의 밝은 에너지 그대로였다.)",
+        fade: true,
+        next: "day5_true_morning_dain_5"
+    },
+    "day5_true_morning_dain_5": {
+        name: "나",
+        background: null,
+        character: null,
+        text: "(이 눈부신 미소를 매일 아침 볼 수 있다면, 내 남은 생은 분명 지루할 틈이 없을 것이다.)",
+        fade: true,
+        next: "day5_ending_true"
+    },
+
+    // ─── 보건선생님: 아침 ───
+    "day5_true_morning_nurse_1": {
+        name: "나",
+        background: null,
+        character: null,
+        text: "(은은한 향수 냄새와 함께, 어른의 여유로움에 완전히 이끌렸던 밤이 지났다.)",
+        night: true,
+        fade: true,
+        next: "day5_true_morning_nurse_2"
+    },
+    "day5_true_morning_nurse_2": {
+        name: "나",
+        background: null,
+        character: null,
+        text: "(눈을 뜨자, 턱을 괸 채 내 얼굴을 가만히 내려다보고 있는 선생님과 시선이 마주쳤다.)",
+        fade: true,
+        next: "day5_true_morning_nurse_3"
+    },
+    "day5_true_morning_nurse_3": {
+        name: "보건선생님",
+        background: null,
+        character: "assets/images/characters/nurse_shy.png",
+        text: "\"잘 잤어? 우리 학생, 자는 모습도 꽤 귀엽네.\"",
+        fade: true,
+        next: "day5_true_morning_nurse_4"
+    },
+    "day5_true_morning_nurse_4": {
+        name: "나",
+        background: null,
+        character: "assets/images/characters/nurse_shy.png",
+        text: "(내 뺨을 부드럽게 쓸어내리는 손길. 장난기 어린 미소 뒤에 숨겨진 깊은 애정이 느껴졌다.)",
+        fade: true,
+        next: "day5_true_morning_nurse_5"
+    },
+    "day5_true_morning_nurse_5": {
+        name: "나",
+        background: null,
+        character: null,
+        text: "(더 이상 선생님과 학생이 아닌, 온전한 두 사람으로서 맞이하는 첫 아침이었다.)",
+        fade: true,
+        next: "day5_ending_true"
+    },
+
+    // ─── 담임선생님: 아침 ───
+    "day5_true_morning_teacher_1": {
+        name: "나",
+        background: null,
+        character: null,
+        text: "(어설프고 서툴렀지만, 그래서 더 진심이 닿았던 밤이 지났다.)",
+        night: true,
+        fade: true,
+        next: "day5_true_morning_teacher_2"
+    },
+    "day5_true_morning_teacher_2": {
+        name: "나",
+        background: null,
+        character: null,
+        text: "(부스럭거리는 소리에 눈을 뜨니, 선생님이 까치발을 들고 몰래 침대에서 빠져나가려 하고 있었다.)",
+        fade: true,
+        next: "day5_true_morning_teacher_3"
+    },
+    "day5_true_morning_teacher_3": {
+        name: "담임선생님",
+        background: null,
+        character: "assets/images/characters/teacher_shy.png",
+        text: "\"앗… 깼어? 그, 커피라도 타려고 했는데… 하아, 선생님 체면이 말이 아니네.\"",
+        fade: true,
+        next: "day5_true_morning_teacher_4"
+    },
+    "day5_true_morning_teacher_4": {
+        name: "나",
+        background: null,
+        character: "assets/images/characters/teacher_shy.png",
+        text: "(얼굴이 새빨개진 채 어쩔 줄 몰라 하는 선생님의 손을 잡아당겨 다시 품에 안았다.)",
+        fade: true,
+        next: "day5_true_morning_teacher_5"
+    },
+    "day5_true_morning_teacher_5": {
+        name: "나",
+        background: null,
+        character: null,
+        text: "(\"5분만… 이러고 있자.\" 엄격한 선생님의 가면이 벗겨진, 이 사랑스러운 사람을 평생 지켜주고 싶어졌다.)",
         fade: true,
         next: "day5_ending_true"
     },
@@ -666,7 +818,7 @@ Object.assign(SCENARIO[5], {
     "day5_good_final": {
         name: "나",
         character: null,
-        text: "(나란히 석양을 바라보며 손을 잡았다. 완벽하진 않았지만… 이게 우리의 시작이다.)",
+        text: "(맞잡은 두 손 사이로 전해지는 묵직한 온기가, 그동안의 모든 엇갈림과 망설임을 조용히 덮어주고 있었다.)",
         sunset: true,
         fade: true,
         next: "day5_ending_good"
