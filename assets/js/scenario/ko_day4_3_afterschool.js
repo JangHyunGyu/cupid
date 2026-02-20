@@ -544,7 +544,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_to_seoyeon": {
         name: "나",
-        text: "\"서연아… 매일 아침 네 미소를 보는 게 하루를 시작하는 이유가 됐어. 이런 마음은 처음이야.\"",
+        text: "\"서연아... 네가 웃을 때마다 내 세상의 축이 조금씩 기울어지는 기분이었어. 더 이상은 모른 척할 수가 없어. 널 좋아해.\"",
         character: "assets/images/characters/seyoun_shy2.png",
         sunset: true,
         next: "day4_accept_seoyeon"
@@ -552,7 +552,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_confess_to_yuna": {
         name: "나",
-        text: "\"유나야… 네 옆에 있으면 세상이 조용해지는 느낌이 들어. 그 고요함이 좋아. 너이기 때문에 좋은 거야.\"",
+        text: "\"유나야... 네 차가운 표정 뒤에 숨겨진 온기를 알게 된 순간부터, 내 시선은 늘 너를 향해 있었어. 널 좋아해.\"",
         character: "assets/images/characters/yuna_shy.png",
         sunset: true,
         next: "day4_accept_yuna"
@@ -589,7 +589,7 @@ Object.assign(SCENARIO[4], {
     // --- 서연 수락 ---
     "day4_accept_seoyeon": {
         name: "서연",
-        text: "\"……나도. 나도 좋아해. 전학 온 첫날, 정문에서 처음 봤을 때부터.\"",
+        text: "\"...바보. 내가 얼마나 기다렸는지 알아? 네가 그 말을 해주지 않으면, 내가 먼저 해버릴 참이었어.\"",
         character: "assets/images/characters/seyoun_shy.png",
         sunset: true,
         stats: { Seoyeon: { affinity: 20 } },
@@ -616,7 +616,7 @@ Object.assign(SCENARIO[4], {
     // --- 유나 수락 ---
     "day4_accept_yuna": {
         name: "유나",
-        text: "\"……바보. 내가 먼저 말하려고 했는데.\"",
+        text: "\"...네가 내 선을 넘어왔을 때부터, 이미 내 세상은 너로 가득 차 있었어. 책임져, 평생.\"",
         character: "assets/images/characters/yuna_shy.png",
         sunset: true,
         stats: { Yuna: { affinity: 20 } },

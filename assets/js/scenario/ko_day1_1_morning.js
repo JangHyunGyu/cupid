@@ -104,7 +104,7 @@ Object.assign(SCENARIO[1], {
         name: "나",
         background: "assets/images/background/school.png",
         character: "assets/images/characters/seyoun_normal.png",
-        text: "(눈이 마주치자 나도 모르게 심장이 덜컥한다. 너무 예쁘잖아...)",
+        text: "(시선이 얽히는 순간, 주변의 소음이 아득해지는 기분이 들었다. 단정한 교복 차림 위로 떨어지는 아침 햇살보다 그녀의 미소가 더 눈부셨다.)",
         next: "intro_3"
     },
     "intro_3": {
@@ -159,7 +159,7 @@ Object.assign(SCENARIO[1], {
     "path_tease_1_2": {
         name: "서연",
         background: "assets/images/background/school.png",
-        text: "\"어머, 첫날부터 작업이야? 합격점 줄게. 그럼 우리 '특별한' 전학생 소년, 따라와 보실까?\"",
+        text: "\"푸훗, 첫날부터 꽤 능글맞네? 뭐, 나쁘진 않아. 그럼 우리 '특별한' 전학생, 길 잃어버리기 전에 잘 따라와.\"",
         character: "assets/images/characters/seyoun_normal.png",
         next: "hallway_1"
     },

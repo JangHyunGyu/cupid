@@ -98,7 +98,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_confrontation_2": {
         name: "서연",
         background: "assets/images/background/school_hallway.png",
-        text: "\"점심때 말이야... 너 정말 우리 다한테 주말 약속 한 거야?\"",
+        text: "\"점심때 말이야... 네가 다른 애들한테 웃어줄 때마다, 내 안에서 뭔가가 무너지는 기분이었어. 너, 정말 우리 모두한테 주말을 약속한 거야?\"",
         character: "assets/images/characters/seyoun_sad.png",
         sunset: true,
         next: "day3_afternoon_confrontation_3"
@@ -126,7 +126,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_admit_react": {
         name: "서연",
         background: "assets/images/background/school_hallway.png",
-        text: "\"...솔직한 건 고마워. 근데 나, 그런 거 싫어.\"",
+        text: "\"거절하기 어려웠다고? 네 그 어설픈 다정함이 나를 얼마나 비참하게 만드는지, 넌 모를 거야.\"",
         character: "assets/images/characters/seyoun_sad.png",
         sunset: true,
         stats: { Seoyeon: { affinity: 5 } },
@@ -135,7 +135,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_admit_react_2": {
         name: "서연",
         background: "assets/images/background/school_hallway.png",
-        text: "\"만약 내가 진짜 특별하면... 나만 만나. 아니면 나도 생각이 있어.\"",
+        text: "\"난 네 친절함의 일부가 되고 싶지 않아. 전부가 아니면... 차라리 아무것도 안 할래. 선택해, {name}.\"",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         setFlag: "day3_seoyeon_ultimatum",
@@ -272,7 +272,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_talk": {
         name: "유나",
         background: "assets/images/background/school_hallway.png",
-        text: "\"점심때... 서연이 선택했네.\"",
+        text: "\"점심때... 네 시선이 어디로 향하는지 똑똑히 봤어. 서연이더라.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "day3_afternoon_yuna_talk_2"
@@ -281,7 +281,7 @@ Object.assign(SCENARIO[3], {
         name: "나",
         background: "assets/images/background/school_hallway.png",
         character: "assets/images/characters/yuna_normal.png",
-        text: "(유나의 눈빛이 평소보다 더 차갑다.)",
+        text: "(유나의 서늘한 눈동자가 나를 꿰뚫어 보는 것 같다. 숨이 턱 막히는 압박감이다.)",
         sunset: true,
         choices: [
             { text: "\"미안해, 유나\"", next: "day3_afternoon_yuna_apologize" },
@@ -292,7 +292,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_apologize": {
         name: "유나",
         background: "assets/images/background/school_hallway.png",
-        text: "\"...괜찮아. 내일이 있으니까.\"",
+        text: "\"사과를 듣고 싶은 게 아니야. 네가 누구 옆에 서 있을지, 그 자리의 무게를 알았으면 해.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         stats: { Yuna: { affinity: 5 } },
@@ -320,7 +320,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_yuna_warning": {
         name: "유나",
         background: "assets/images/background/school_hallway.png",
-        text: "\"기억해, {name}. 나한테 거짓말하면... 알지?\"",
+        text: "\"내일은 도망치지 마. 네가 만든 기대감, 끝까지 책임져야 할 테니까.\"",
         character: "assets/images/characters/yuna_normal.png",
         sunset: true,
         next: "day3_afternoon_transition"
