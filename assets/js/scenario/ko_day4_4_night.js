@@ -1163,7 +1163,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_arrive_2": {
         name: "다인",
         background: "assets/images/background/gym.png",
-        text: "\"오! 진짜 왔어?! 헤헤, 역시 내 남자친구!\"",
+        text: "\"오! 진짜 왔어?! 후훗, 역시 내 남자친구!\"",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
         next: "day4_night_dain_arrive_3"

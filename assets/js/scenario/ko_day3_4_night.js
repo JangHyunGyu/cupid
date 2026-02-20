@@ -385,7 +385,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_dain_priority": {
         name: "다인",
-        text: "'진짜?! 헤헤, 그럼 됐어! 내일 멋진 거 보여줄게!'",
+        text: "'진짜?! 후훗, 그럼 됐어! 내일 멋진 거 보여줄게!'",
         character: "assets/images/characters/dain_laugh.png",
         silhouette: true,
         night: true,

@@ -173,7 +173,7 @@ Object.assign(SCENARIO[1], {
     "path_blush_1_2": {
         name: "서연",
         background: "assets/images/background/school.png",
-        text: "\"그, 그렇게 갑자기... 반칙이야. 하여튼 전학생들은... 됐으니까 얼른 따라와!\"",
+        text: "\"...갑자기 그런 농담을 하면, 어떻게 반응해야 할지 모르겠잖아. (그녀는 뺨에 번진 홍조를 숨기려는 듯, 애써 차분한 목소리로 말하며 발걸음을 돌렸다.) 늦겠다. 얼른 따라와.\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "hallway_1"
     },

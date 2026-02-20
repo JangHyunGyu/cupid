@@ -194,20 +194,20 @@ Object.assign(SCENARIO[5], {
     // --- 다인 등장 ---
     "day5_meet_dain": {
         name: "다인",
-        text: "\"야! 학교 정문에 오니까 첫날 생각난다!! 그때 내가 배구공 날린 거 기억나?!\"",
+        text: "\"학교 정문에 오니까... 우리 처음 만났을 때 생각난다. 그때 내가 배구공 날린 거 기억나?!\"",
         character: "assets/images/characters/dain_laugh.png",
         next: "day5_meet_dain2"
     },
     "day5_meet_dain2": {
         name: "다인",
-        text: "\"미안했었는데, 지금 생각하면 그게 인연이었나 봐! 안 맞았으면 말도 못 걸었을 텐데!!\"",
+        text: "\"그땐 정말 미안했는데... 지금 생각해보면 그 우연이 참 고마워.\"",
         character: "assets/images/characters/dain_normal.png",
         next: "day5_react_dain"
     },
     "day5_react_dain": {
         name: "나",
         character: "assets/images/characters/dain_normal.png",
-        text: "(배구공에 맞은 건 아팠지만… 그 덕분에 다인이를 만났다면, 감사해야 하나.)",
+        text: "(갑작스러운 사고처럼 시작된 인연이었지만, 지금은 그 우연마저 필연처럼 느껴진다. 다인이의 환한 웃음이 내 일상을 완전히 바꿔놓았으니까.)",
         next: "day5_dain_d4_check"
     },
     "day5_dain_d4_check": {

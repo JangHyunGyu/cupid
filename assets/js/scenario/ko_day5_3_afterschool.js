@@ -360,7 +360,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_bed_dain_2": {
         name: "다인",
-        text: "\"야, 나 체육관 창고 열쇠 있거든! 별 보면서 얘기하자!\"",
+        text: "\"...여기, 나만의 비밀 장소야. 같이 별 볼래?\"",
         character: "assets/images/characters/dain_laugh.png",
         night: true,
         next: "day5_bed_dain_3"
@@ -636,7 +636,7 @@ Object.assign(SCENARIO[5], {
         name: "다인",
         background: null,
         character: "assets/images/characters/dain_laugh.png",
-        text: "\"으음… 헤헤, 좋은 아침! 아~ 배고프다. 우리 밥 먹자!\"",
+        text: "\"...으음, 좋은 아침. 눈 뜨자마자 네가 보이니까... 기분 되게 이상하다.\"",
         fade: true,
         next: "day5_true_morning_dain_4"
     },
@@ -722,7 +722,7 @@ Object.assign(SCENARIO[5], {
         name: "담임선생님",
         background: null,
         character: "assets/images/characters/teacher_shy.png",
-        text: "\"앗… 깼어? 그, 커피라도 타려고 했는데… 하아, 선생님 체면이 말이 아니네.\"",
+        text: "\"...깼어? 몰래 커피라도 타놓으려고 했는데... 들켜버렸네.\"",
         fade: true,
         next: "day5_true_morning_teacher_4"
     },
@@ -796,7 +796,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_good_dain": {
         name: "다인",
-        text: "\"에이~ 나는 처음부터 알았어! 네가 결국 나한테 올 줄!! 히히!\"",
+        text: "\"에이~ 나는 처음부터 알았어! 네가 결국 나한테 올 줄!! ...다행이다.\"",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
         next: "day5_good_final"

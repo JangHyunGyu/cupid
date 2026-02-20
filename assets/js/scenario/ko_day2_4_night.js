@@ -438,7 +438,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_after": {
         name: "나",
-        text: "(서연이에게 메시지를 보냈다. '오늘 노을부터 야근(?)까지, 너랑 함께해서 정말 행복했어. 내일 봐!')",
+        text: "(서연이에게 메시지를 보냈다. '오늘 노을부터 야근<i style=\"opacity: 0.85; font-style: italic;\">?)까지, 너랑 함께해서 정말 행복했어. 내일 봐!'</i>",
         background: "assets/images/background/room_my.png",
         night: true,
         setFlag: "sent_msg_day2_seyoun",

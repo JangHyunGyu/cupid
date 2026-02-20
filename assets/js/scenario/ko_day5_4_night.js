@@ -642,7 +642,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_alone_10": {
         name: "나",
-        text: "(다음엔… 좀 더 용기를 내자. 분명 다시 기회가 올 거야.)",
+        text: "(누군가에게 닿지 못했다 해도, 이 시간들이 결코 무의미해지는 것은 아니다. 나는 분명 어제보다 단단해졌으니까.)",
         night: true,
         fade: true,
         next: "day5_ending_alone_11"
