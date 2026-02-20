@@ -414,7 +414,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_default_msg_resolve": {
         name: "나",
-        text: "(…아니, 아직 끝이 아니야. 오늘은 일요일. 학교에 가면 누군가를 만날 수 있을지도.)",
+        text: "(아무런 연락도 없는 텅 빈 화면. 하지만 이대로 주저앉아 마침표를 찍고 싶지는 않다. 내 마음은 아직 전해지지 않았으니까.)",
         next: "day5_default_msg_decide"
     },
     "day5_default_msg_decide": {

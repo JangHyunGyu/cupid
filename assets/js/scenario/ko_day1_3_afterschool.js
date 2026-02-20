@@ -380,7 +380,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_seoyeon_worry_2": {
         name: "서연",
-        text: "\"헤헤, 들켰네. 학생회장이라는 게 생각보다 할 일이 많거든. 그래도 네가 이렇게 내 마음을 알아주니까 힘이 불끈 나는걸? 조금만 기다려줘, 금방 끝내고 같이 가자!\"",
+        text: "\"후훗, 들켰네. 학생회장이라는 게 생각보다 할 일이 많거든. 그래도 네가 이렇게 내 마음을 알아주니까 힘이 불끈 나는걸? 조금만 기다려줘, 금방 끝내고 같이 가자!\"",
         character: "assets/images/characters/seyoun_normal.png",
         sunset: true,
         next: "after_seoyeon_cafe"
@@ -996,7 +996,7 @@ Object.assign(SCENARIO[1], {
     },
     "dain_contact_call_success": {
         name: "다인",
-        text: "(다인이는 얼굴을 붉히며 당황한 듯 웃는다.) \"뭐, 뭐야! 갑자기... 내 목소리 듣고 싶다니... 너무 설레게 하는 거 아냐? 나 내일 연습 일찍 가야 하니까 너무 오래 하진 마!\"",
+        text: "(다인이는 얼굴을 붉히며 당황한 듯 웃는다.) \"...뭐야. 갑자기 내 목소리 듣고 싶다니... 나 내일 연습 일찍 가야 하니까 너무 오래 하진 마.\"",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/dain_shy.png", sunset: true,
         stats: { Dain: { affinity: 20 } },

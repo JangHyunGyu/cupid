@@ -264,7 +264,7 @@ Object.assign(SCENARIO[1], {
     },
     "rooftop_talk_ah_2": {
         name: "서연",
-        text: "\"에, 뭐뭐뭐라고?! 너 정말... 그런 소리를 아무렇지도 않게... 좋아, 정말 못 말린다니까. 딱 이번 한 번뿐이야! 자.. 아..\"",
+        text: "\"...너, 가끔 보면 정말 당돌한 구석이 있네. (서연은 어이없다는 듯 작게 웃음을 터뜨리더니, 이내 못 이기는 척 조심스레 젓가락을 내 입가로 가져왔다.) ...자, 아 해봐.\"",
         character: "assets/images/characters/seyoun_shy2.png",
         next: "rooftop_2"
     },

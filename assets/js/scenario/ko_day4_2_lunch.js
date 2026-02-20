@@ -106,7 +106,7 @@ Object.assign(SCENARIO[4], {
     "day4_arrive_wait": {
         name: "나",
         background: "assets/images/background/street.png",
-        text: "(심장이 빠르게 뛴다. 평소에 이렇게 긴장한 적이 있었나…)",
+        text: "(단순한 약속이 아니다. 오늘 누구의 손을 잡느냐에 따라, 내 일상은 완전히 다른 궤도로 진입하게 될 것이다. 묘한 갈증이 목을 조여온다.)",
         next: "day4_heroine_arrive"
     },
 
@@ -134,7 +134,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_meet_seoyeon": {
         name: "서연",
-        text: "\"앗, 벌써 와 있었어? 나도 좀 일찍 나왔는데… 헤헤.\"",
+        text: "\"앗, 벌써 와 있었어? 나도 좀 일찍 나왔는데… 후훗.\"",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day4_seoyeon_react"
@@ -280,7 +280,7 @@ Object.assign(SCENARIO[4], {
     "day4_dain_blush": {
         name: "다인",
         background: "assets/images/background/gym.png",
-        text: "\"헤, 헤헤… 진짜?! 나 오늘 엄청 고민했거든!! 다행이다~!!\"",
+        text: "\"헤, 후훗… 진짜?! 나 오늘 엄청 고민했거든!! 다행이다~!!\"",
         character: "assets/images/characters/dain_shy.png",
         next: "day4_date_walk"
     },

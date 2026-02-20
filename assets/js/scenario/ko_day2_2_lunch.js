@@ -254,7 +254,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_dain_tease": {
         name: "서연",
-        text: "\"지, 질투?! 아니거든! 그냥... 궁금해서 물어본 거야! (서연이가 얼굴을 붉히며 고개를 돌린다)\"",
+        text: "\"질투라니, 그런 거 아니야. 그냥... 네가 벌써 다른 애들이랑 친해진 것 같아서 조금 낯설었을 뿐이야. (서연은 시선을 창밖으로 돌리며, 애써 덤덤한 척 샌드위치 포장지를 만지작거렸다.)\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_seoyeon_lunch_end"
     },

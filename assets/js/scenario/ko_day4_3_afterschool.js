@@ -643,7 +643,7 @@ Object.assign(SCENARIO[4], {
     // --- 다인 수락 ---
     "day4_accept_dain": {
         name: "다인",
-        text: "\"……엥?! 진, 진짜?! 나도!! 나도 너 좋아해!! 우와아아!!\"",
+        text: "\"……...정말? 거짓말 아니지? 나도!! 나도 너 좋아해!! ...정말?!\"",
         character: "assets/images/characters/dain_shy.png",
         sunset: true,
         stats: { Dain: { affinity: 20 } },
@@ -661,7 +661,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_accept_dain_close": {
         name: "다인",
-        text: "\"헤헤, 우리 이제 사귀는 거지?! 진짜?! 아 심장 터져!!\"  (다인이가 펄쩍펄쩍 뛰며 내 손을 잡고 흔들었다.)",
+        text: "\"후훗, 우리 이제 사귀는 거지?! 진짜?! 아 심장 터져!!\"  (다인이가 펄쩍펄쩍 뛰며 내 손을 잡고 흔들었다.)",
         character: "assets/images/characters/dain_laugh.png",
         sunset: true,
         next: "day4_after_confess"

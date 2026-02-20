@@ -222,7 +222,7 @@ Object.assign(SCENARIO[3], {
     "day3_nurse_home_tension": {
         name: "서연",
         background: "assets/images/background/school.png",
-        text: "\"...뭣?!\"",
+        text: "\"...향수? 네가 그런 걸 뿌릴 리는 없고. 대체 간밤에 누구 품에 있었던 거야?\"",
         character: "assets/images/characters/seyoun_sad.png",
         stats: { Seoyeon: { affinity: -8 } },
         next: "day3_nurse_home_tension_2"
@@ -626,7 +626,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_walk_seoyeon_dream_me": {
         name: "서연",
-        text: "(서연이가 멈칫한다) \"뭐, 뭐야! 왜 그렇게 생각해! ...맞긴 하지만 그건 중요한 게 아니라!\"",
+        text: "(서연이가 멈칫한다) \"...뭐야. 왜 그렇게 생각해. ...맞긴 하지만 그건 중요한 게 아니라...\"",
         character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day3_walk_seoyeon_crosswalk"
@@ -679,14 +679,14 @@ Object.assign(SCENARIO[3], {
     },
     "day3_seoyeon_weekend_tease": {
         name: "서연",
-        text: "(서연이 얼굴이 새빨개진다) \"뭐, 뭐야! 그냥 친구끼리 가는 거지! …근데 다른 사람은 안 불렀어. 토요일 오후 2시, 공원 분수대 앞이야.\"",
+        text: "(서연이 얼굴이 새빨개진다) \"...뭐야. 그냥 친구끼리 가는 거지. …근데 다른 사람은 안 불렀어. 토요일 오후 2시, 공원 분수대 앞이야.\"",
         character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day3_seoyeon_weekend_choice"
     },
     "day3_seoyeon_weekend_direct": {
         name: "서연",
-        text: "(서연이가 환하게 웃는다) \"진짜?! 토요일 오후 2시, 공원 분수대 앞에서 만나! 절대 늦으면 안 돼!\"",
+        text: "(서연이가 환하게 웃는다) \"...정말? 토요일 오후 2시, 공원 분수대 앞이야. 늦으면 안 돼.\"",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 5 } },
         next: "day3_seoyeon_weekend_choice"
@@ -908,7 +908,7 @@ Object.assign(SCENARIO[3], {
     "day3_walk_dain_bold": {
         name: "다인",
         background: "assets/images/background/street.png",
-        text: "\"하?! 바, 바보! 당장 일어나! 사람들 보잖아!\"",
+        text: "\"하?! ...바보 같아. 당장 일어나! 사람들 보잖아!\"",
         character: "assets/images/characters/dain_shy.png",
         stats: { Dain: { affinity: 8 } },
         next: "day3_walk_dain_greet_shy"

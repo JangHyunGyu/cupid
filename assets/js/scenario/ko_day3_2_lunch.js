@@ -246,7 +246,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_seoyeon_tease": {
         name: "서연",
         background: "assets/images/background/store.png",
-        text: "\"뭐, 뭐야! 누가 질투래! ...조금.\"",
+        text: "\"질투? ...그래, 맞아. 네 시선이 다른 곳을 향할 때마다 속이 타들어 가는 것 같아. 그러니까 나만 봐.\"",
         character: "assets/images/characters/seyoun_shy.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day3_lunch_seoyeon_weekend"
@@ -272,7 +272,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_seoyeon_lie": {
         name: "서연",
-        text: "\"진짜?! 그럼 일요일에 만나자! 어디 갈지 내가 정해도 돼?\"",
+        text: "\"...정말? 그럼 일요일에 만나. 어디 갈지는 내가 정해도 될까?\"",
         character: "assets/images/characters/seyoun_laugh.png",
         stats: { Seoyeon: { affinity: 3 } },
         next: "day3_lunch_seoyeon_end"
@@ -830,7 +830,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_together_yuna_lie_2": {
         name: "다인",
-        text: "\"에? 진짜? 그럼 왜 알면서 왔어?!\"",
+        text: "\"...정말? 그럼 왜 알면서 왔어?\"",
         character: "assets/images/characters/dain_normal.png",
         next: "day3_lunch_together_yuna_lie_3"
     },

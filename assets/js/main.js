@@ -1796,7 +1796,7 @@ class DialogueSystem {
             if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = true;
 
             // 대사창 초기화
-            this.uiManager.messageEl.textContent = "";
+            this.uiManager.messageEl.innerHTML = "";
 
             // 이미지 포함 여부 확인 (Base64 데이터가 있으면 이미지)
             const hasImage = processedText.includes('data:image/');
@@ -1817,13 +1817,20 @@ class DialogueSystem {
             let charIndex = 0;      // 현재까지 표시한 글자 수
             let startTime = null;   // 타이핑 시작 시각
 
+            // 텍스트 파싱 헬퍼 함수: (지문) 형태를 이탤릭체로 변환
+            const parseNarration = (text) => {
+                // 열린 괄호 '(' 로 시작해서 닫힌 괄호 ')' 로 끝나거나, 문자열 끝까지 가는 부분을 매칭
+                // 타이핑 중에는 닫힌 괄호가 아직 없을 수 있으므로 \)? 로 처리
+                return text.replace(/\(([^)]*)(\)?)/g, '<span style="opacity: 0.85; font-style: italic;">($1$2</span>');
+            };
+
             // 애니메이션 프레임 함수
             const typeFrame = (timestamp) => {
                 if (!startTime) startTime = timestamp;
 
                 // 스킵 요청이 들어오면 즉시 전체 텍스트 표시
                 if (this.skipTyping) {
-                    this.uiManager.messageEl.textContent = processedText;
+                    this.uiManager.messageEl.innerHTML = parseNarration(textPart);
                     this.isTyping = false;
                     if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
                     this.skipTyping = false;
@@ -1833,10 +1840,11 @@ class DialogueSystem {
                 }
 
                 const elapsed = timestamp - startTime;
-                const targetIndex = Math.min(Math.floor(elapsed / this.typingSpeed), processedText.length);
+                const targetIndex = Math.min(Math.floor(elapsed / this.typingSpeed), textPart.length);
 
                 if (charIndex < targetIndex) {
-                    this.uiManager.messageEl.textContent = textPart.substring(0, targetIndex);
+                    const currentText = textPart.substring(0, targetIndex);
+                    this.uiManager.messageEl.innerHTML = parseNarration(currentText);
                     charIndex = targetIndex;
                 }
 
