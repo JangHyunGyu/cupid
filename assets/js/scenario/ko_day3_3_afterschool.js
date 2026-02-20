@@ -90,7 +90,7 @@ Object.assign(SCENARIO[3], {
     "day3_afternoon_confrontation": {
         name: "나",
         character: "assets/images/characters/seyoun_sad.png",
-        text: "*서연이가 복도로 나를 데리고 나왔다. 표정이 심상치 않다.*",
+        text: "*서연이가 복도로 나를 데리고 나왔다. 평소의 다정한 미소는 온데간데없고, 차갑게 굳은 표정에 등줄기를 타고 식은땀이 흐른다.*",
         background: "assets/images/background/school_hallway.png",
         sunset: true,
         next: "day3_afternoon_confrontation_2"

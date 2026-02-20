@@ -3580,7 +3580,14 @@ class GameEngine {
 
             // {name} 플레이스홀더를 실제 플레이어 이름으로 치환
             // 예: "{name}(와)과 데이트하기" → "유진(와)과 데이트하기"
-            btn.textContent = choice.text.replace(/{name}/g, this.stateManager.playerName);
+            let choiceText = choice.text.replace(/{name}/g, this.stateManager.playerName);
+
+            // 지문 파싱 적용 (일반 대화와 동일하게 *...* 를 지문 블록으로 변환)
+            if (this.dialogueSystem && typeof this.dialogueSystem.parseNarration === 'function') {
+                btn.innerHTML = this.dialogueSystem.parseNarration(choiceText);
+            } else {
+                btn.textContent = choiceText;
+            }
 
             // 클릭하면 해당 선택지 실행 (async 함수이므로 에러 처리 포함)
             btn.onclick = async () => {

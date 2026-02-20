@@ -87,7 +87,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_teacher": {
         name: "나",
-        text: "*교무실 문을 열자, 도시락을 드시려던 담임선생님이 나를 보고 반갑게 웃으신다.*",
+        text: "*교무실 문을 열자, 산더미 같은 서류 더미 사이에서 지친 기색으로 도시락을 꺼내시던 선생님과 눈이 마주쳤다. 나를 발견하자마자 피곤함이 싹 가신 듯 환하게 웃으시는 모습에, 왠지 모르게 가슴 한구석이 찌릿해졌다.*",
         background: "assets/images/background/teacher_office.png",
         character: "assets/images/characters/teacher_smile.png",
         next: "day2_lunch_teacher_2"
@@ -134,13 +134,13 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_teacher_end": {
         name: "나",
         background: "assets/images/background/teacher_office.png",
-        text: "*선생님과 짧지만 즐거운 대화를 나누고 교실로 돌아왔다. 선생님의 다정한 미소가 계속 생각난다.*",
+        text: "*선생님과 짧지만 즐거운 대화를 나누고 교실로 돌아왔다. 어른의 여유로움 속에 숨겨진, 나에게만 보여주는 듯한 무방비한 미소가 자꾸만 머릿속을 맴돈다.*",
         character: null,
         next: "day2_afternoon_class"
     },
     "day2_lunch_seoyeon": {
         name: "서연",
-        text: "*학생회실 문을 열자, 도시락을 먹던 서연이가 눈을 동그랗게 뜨며 나를 반긴다.*",
+        text: "*학생회실 문을 열자, 혼자서 조용히 한숨을 돌리며 도시락을 꺼내던 서연이가 나를 발견하고는 눈을 동그랗게 뜬다. 완벽한 학생회장의 모습 뒤에 숨겨진, 나만 아는 무방비한 표정에 순간 심장이 덜컹 내려앉았다.*",
         background: "assets/images/background/student_room.png",
         character: "assets/images/characters/seyoun_laugh.png",
         next: "day2_seoyeon_lunch_talk"
@@ -175,7 +175,7 @@ Object.assign(SCENARIO[2], {
     "day2_seoyeon_lunch_touch": {
         name: "서연",
         background: "assets/images/background/student_room.png",
-        text: "\"아... 고, 고마워. 내가 너무 급하게 먹었나 보네... (서연이의 얼굴이 살짝 붉어진다)\"",
+        text: "\"아... 고, 고마워. 내가 너무 급하게 먹었나 보네... *서연이의 얼굴이 살짝 붉어진다.*\"",
         character: "assets/images/characters/seyoun_shy.png",
         setFlag: "day2_ate_lunch_seoyeon",
         next: "day2_seoyeon_lunch_dain_event"
@@ -248,13 +248,13 @@ Object.assign(SCENARIO[2], {
     },
     "day2_seoyeon_lunch_dain_deny": {
         name: "서연",
-        text: "\"(서연이의 표정이 살짝 밝아진다) ...그래? 후훗, 그런 말 들으니까 기분이 좋네. 고마워, {name}.\"",
+        text: "*서연이의 표정이 살짝 밝아진다.* \"...그래? 후훗, 그런 말 들으니까 기분이 좋네. 고마워, {name}.\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_seoyeon_lunch_end"
     },
     "day2_seoyeon_lunch_dain_tease": {
         name: "서연",
-        text: "\"질투라니, 그런 거 아니야. 그냥... 네가 벌써 다른 애들이랑 친해진 것 같아서 조금 낯설었을 뿐이야. (서연은 시선을 창밖으로 돌리며, 애써 덤덤한 척 샌드위치 포장지를 만지작거렸다.)\"",
+        text: "\"질투라니, 그런 거 아니야. 그냥... 네가 벌써 다른 애들이랑 친해진 것 같아서 조금 낯설었을 뿐이야. *서연은 시선을 창밖으로 돌리며, 애써 덤덤한 척 샌드위치 포장지를 만지작거렸다.*\"",
         character: "assets/images/characters/seyoun_shy.png",
         next: "day2_seoyeon_lunch_end"
     },
@@ -266,7 +266,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_yuna": {
         name: "나",
-        text: "*도서관 안. 먼지가 떠다니는 고요한 공간에, 유나가 마치 풍경의 일부처럼 서 있다.*",
+        text: "*도서관 안. 먼지가 떠다니는 고요한 공간에, 유나가 마치 한 폭의 그림처럼 서 있다. 창문으로 스며든 햇살이 그녀의 머리칼을 비출 때, 왠지 모르게 숨을 죽이게 되었다.*",
         background: "assets/images/background/library_old.png",
         bgm: "mystery.mp3",
         character: "assets/images/characters/yuna_normal.png",
@@ -572,7 +572,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_dain": {
         name: "나",
-        text: "*체육관 문을 열자, 땀방울을 휘날리며 연습하던 한 여학생이 나를 발견하고 달려온다.*",
+        text: "*체육관 문을 열자, 땀방울을 흩날리며 스파이크를 때리던 다인이가 나를 발견하고는 환하게 웃으며 달려온다. 건강하게 빛나는 미소와 활기찬 발걸음에 나도 모르게 입꼬리가 올라갔다.*",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_laugh.png",
         branches: [
@@ -896,7 +896,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse": {
         name: "나",
-        text: "*긴장 탓인지 머리가 지끈거린다. 나도 모르게 조용한 보건실로 발걸음을 옮겼다.*",
+        text: "*긴장 탓인지 머리가 지끈거린다. 나도 모르게 조용한 보건실로 발걸음을 옮겼다. 문을 열자마자 훅 끼쳐오는 특유의 소독약 냄새와 은은한 향수 냄새가 묘하게 마음을 진정시킨다.*",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_talk"
@@ -1031,14 +1031,14 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_nurse_rest_yuna": {
         name: "나",
-        text: "\"(기운이 넘친다니...? 유나가 했던 말들이 떠오른다. 이 학교, 정말 뭔가가 있는 걸까?)\"",
+        text: "*기운이 넘친다니...? 유나가 했던 말들이 떠오른다. 이 학교, 정말 뭔가가 있는 걸까?*",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_normal.png",
         next: "day2_lunch_nurse_sleep"
     },
     "day2_lunch_nurse_sleep": {
         name: "나",
-        text: "*선생님이 덮어준 이불의 온기에 나도 모르게 의식이 흐려진다. 전학 이틀간의 피로가 한꺼번에 밀려오는 기분이다.*",
+        text: "*선생님이 덮어준 이불의 온기에 나도 모르게 의식이 흐려진다. 어른 특유의 나른하고 다정한 손길이 닿았던 이마가 왠지 모르게 뜨겁다. 전학 이틀간의 피로가 한꺼번에 밀려오는 기분이다.*",
         background: "assets/images/background/nurse_room.jpg",
         character: null,
         next: "day2_lunch_nurse_sleep_teacher"
