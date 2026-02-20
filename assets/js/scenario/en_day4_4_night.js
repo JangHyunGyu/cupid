@@ -572,7 +572,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_yuna_resolve_end": {
         name: "Yuna",
         background: "assets/images/background/school_basement.png",
-        text: "\"...Okay.\"",
+        text: "Yuna gently takes your hand, her touch no longer cold, but warm and seeking comfort.",
         character: "assets/images/characters/yuna_smile.png",
         night: true,
         setFlag: "day4_yuna_truth_revealed",
@@ -646,14 +646,14 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "*Yuna started to turn away but hesitated. Then she spoke in a very small voice.*",
+        text: "*Yuna stopped as she was about to turn around. And she gripped my collar tightly.*",
         night: true,
         next: "day4_night_yuna_farewell_2"
     },
     "day4_night_yuna_farewell_2": {
         name: "Yuna",
         background: "assets/images/background/street.png",
-        text: "\"...Thank you for coming tonight. Really.\"",
+        text: "I won't let you die like Sunbae. To protect you... I'd rather break you and tie you to my side.",
         character: "assets/images/characters/yuna_shy.png",
         night: true,
         next: "day4_night_yuna_farewell_3"
@@ -662,13 +662,13 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "*The night breeze tousled Yuna's hair. I thought to myself that I wanted to remember this moment for a long time.*",
+        text: "You're mine. You can't go anywhere.",
         night: true,
         next: "day4_night_yuna_home"
     },
     "day4_night_yuna_home": {
         name: "Me",
-        text: "*I'm back home. Everything I learned today swirls in my head. The foundation's corruption, the senior's death, and Yuna's tears...*",
+        text: "*I returned home. Yuna's chilling gaze and tight grip won't leave my mind.*",
         background: "assets/images/background/room_my.png",
         character: null,
         night: true,
@@ -678,7 +678,7 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/room_my.png",
         character: "assets/images/characters/yuna_shy.png",
-        text: "*The weight Yuna carried alone for a whole year. Now it's my turn to help bear it.*",
+        text: "*I had a feeling that what she meant by 'protecting' might be different from what I thought.*",
         night: true,
         fade: true,
         next: "day4_final"
@@ -1034,7 +1034,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_seoyeon_resolve_3": {
         name: "Seoyeon",
         background: "assets/images/background/park.png",
-        text: "\"I'm scared, but... I'm not alone anymore.\"",
+        text: "Since you've seen me at my lowest like this... you can never leave me now.",
         character: "assets/images/characters/seyoun_shy.png",
         night: true,
         next: "day4_night_seoyeon_resolve_4"
@@ -1043,14 +1043,14 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/park.png",
         character: "assets/images/characters/seyoun_shy.png",
-        text: "\"Let's go together. Anywhere.\"",
+        text: "......Seoyeon?",
         night: true,
         next: "day4_night_seoyeon_resolve_end"
     },
     "day4_night_seoyeon_resolve_end": {
         name: "Seoyeon",
         background: "assets/images/background/park.png",
-        text: "\"...Yeah.\"",
+        text: "If you smile at another girl... I don't know what I'll do then. Got it?",
         character: "assets/images/characters/seyoun_shy2.png",
         night: true,
         setFlag: "day4_seoyeon_real_self",
@@ -1063,7 +1063,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_seoyeon_farewell": {
         name: "Me",
         character: "assets/images/characters/seyoun_shy2.png",
-        text: "*We left the park and walked together to her house. Seoyeon gently leaned on my arm as we walked.*",
+        text: "*We left the park and walked together to my house. Seoyeon hugged my arm tightly and wouldn't let go.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_seoyeon_farewell_2"
@@ -1071,7 +1071,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_seoyeon_farewell_2": {
         name: "Seoyeon",
         background: "assets/images/background/street.png",
-        text: "\"...I showed you such an embarrassing side of me, but you didn't run away.\"",
+        text: "...I showed you an ugly side of me today, but you didn't run away. I'm glad.",
         character: "assets/images/characters/seyoun_shy.png",
         night: true,
         next: "day4_night_seoyeon_farewell_3"
@@ -1087,7 +1087,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_seoyeon_farewell_4": {
         name: "Seoyeon",
         background: "assets/images/background/street.png",
-        text: "\"...You really are unfair.\"",
+        text: "......Never forget those words. You're mine now.",
         character: "assets/images/characters/seyoun_shy2.png",
         night: true,
         next: "day4_night_seoyeon_farewell_5"
@@ -1103,7 +1103,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_seoyeon_farewell_6": {
         name: "Seoyeon",
         background: "assets/images/background/street.png",
-        text: "\"...Today, for the first time, I felt like 'being myself is okay.' Thank you.\"",
+        text: "*As Seoyeon turned around, she gave a chilling but sweet smile.*",
         character: "assets/images/characters/seyoun_shy.png",
         night: true,
         next: "day4_night_seoyeon_home"
@@ -1515,7 +1515,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_resolve_3": {
         name: "Dain",
         background: "assets/images/background/gym.png",
-        text: "\"Even if I can't play... this court is still my place.\"",
+        text: "If I can never play volleyball again... you have to take responsibility for my whole life. Got it?",
         character: "assets/images/characters/dain_normal.png",
         night: true,
         next: "day4_night_dain_resolve_4"
@@ -1524,14 +1524,14 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/gym.png",
         character: "assets/images/characters/dain_normal.png",
-        text: "\"On or off the court, Dain is still Dain.\"",
+        text: "......Huh?",
         night: true,
         next: "day4_night_dain_resolve_end"
     },
     "day4_night_dain_resolve_end": {
         name: "Dain",
         background: "assets/images/background/gym.png",
-        text: "\"...Okay, I'll admit it. You really are boyfriend material.\"",
+        text: "I'm not joking. You're mine now, so don't even think about running away. Even if my legs break, I'll chase after you.",
         character: "assets/images/characters/dain_shy.png",
         night: true,
         setFlag: "day4_dain_truth_revealed",
@@ -1544,7 +1544,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_farewell": {
         name: "Me",
         character: "assets/images/characters/dain_shy.png",
-        text: "*We left the gym. The night air was cold, but Dain hooked her arm through mine as we walked.*",
+        text: "*We left the gym. Dain linked her arm tightly with mine, putting strength into it as if she would never let go.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_dain_farewell_2"
@@ -1552,7 +1552,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_dain_farewell_2": {
         name: "Dain",
         background: "assets/images/background/street.png",
-        text: "\"...Hey. I totally lost my cool today. Crying and making a mess of myself.\"",
+        text: "...Since you've seen all my weaknesses today, you can't escape from me now. Just set tosses by my side for the rest of your life.",
         character: "assets/images/characters/dain_pout.png",
         night: true,
         next: "day4_night_dain_farewell_3"
@@ -2005,7 +2005,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_resolve_2": {
         name: "Homeroom Teacher",
         background: "assets/images/background/cafe.png",
-        text: "\"I've made up my mind. I'm not going to be ashamed of these feelings anymore.\"",
+        text: "I've made up my mind. I don't care if I lose my position as a teacher.",
         character: "assets/images/characters/teacher_normal.png",
         night: true,
         next: "day4_night_teacher_resolve_3"
@@ -2013,7 +2013,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_resolve_3": {
         name: "Homeroom Teacher",
         background: "assets/images/background/cafe.png",
-        text: "\"In the classroom, I'm your teacher. But in moments like this... I'll just be me.\"",
+        text: "If we get caught... I'll lock you in my room where no one can see you. Then only I can see you forever, right?",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day4_night_teacher_resolve_4"
@@ -2022,14 +2022,14 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/cafe.png",
         character: "assets/images/characters/teacher_smile.png",
-        text: "\"That's the version of you I've always wanted to see.\"",
+        text: "......Teacher?",
         night: true,
         next: "day4_night_teacher_resolve_end"
     },
     "day4_night_teacher_resolve_end": {
         name: "Homeroom Teacher",
         background: "assets/images/background/cafe.png",
-        text: "\"...Thank you. Really, thank you.\"",
+        text: "I'm not joking. You're my accomplice now. You can never get out.",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         setFlag: "day4_teacher_secret_shared",
@@ -2042,7 +2042,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_farewell": {
         name: "Me",
         character: "assets/images/characters/teacher_smile.png",
-        text: "*We left the café. Walking side by side down the night street. It's the first time we've walked together outside of school.*",
+        text: "*We left the cafe. We walked side by side on the night street. The teacher intertwined her fingers with mine and wouldn't let go.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_teacher_farewell_2"
@@ -2050,7 +2050,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_farewell_2": {
         name: "Homeroom Teacher",
         background: "assets/images/background/street.png",
-        text: "\"...It feels strange. Walking together outside of school... it actually feels like we're a real couple.\"",
+        text: "...I'll pretend to be a strict teacher again at school. We can't let the other kids notice.",
         character: "assets/images/characters/teacher_shy.png",
         night: true,
         next: "day4_night_teacher_farewell_3"
@@ -2059,14 +2059,14 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/street.png",
         character: "assets/images/characters/teacher_shy.png",
-        text: "\"We are a real couple.\"",
+        text: "A secret romance.",
         night: true,
         next: "day4_night_teacher_farewell_4"
     },
     "day4_night_teacher_farewell_4": {
         name: "Homeroom Teacher",
         background: "assets/images/background/street.png",
-        text: "\"...If you say that like it's the most obvious thing in the world... what am I supposed to do.\"",
+        text: "Yeah. So... don't get too close to other girls at school.",
         character: "assets/images/characters/teacher_shy.png",
         night: true,
         next: "day4_night_teacher_farewell_5"
@@ -2074,7 +2074,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_farewell_5": {
         name: "Homeroom Teacher",
         background: "assets/images/background/street.png",
-        text: "\"...When we see each other at school again, I'll be back in 'teacher mode.' I apologize in advance if I seem cold—please understand.\"",
+        text: "You never know how I might torment you using my authority as a teacher. Got it?",
         character: "assets/images/characters/teacher_smile.png",
         night: true,
         next: "day4_night_teacher_farewell_6"
@@ -2082,7 +2082,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_teacher_farewell_6": {
         name: "Homeroom Teacher",
         background: "assets/images/background/street.png",
-        text: "\"...But my heart will always be with you. Don't forget that.\"",
+        text: "...See you tomorrow. My accomplice.",
         character: "assets/images/characters/teacher_shy.png",
         night: true,
         next: "day4_night_teacher_home"
@@ -2505,7 +2505,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_resolve_2": {
         name: "School Nurse",
         background: "assets/images/background/nurse_room.jpg",
-        text: "\"From now on, I won't wear a mask around you. When I'm happy, I'll really smile. When I'm sad, I'll say so.\"",
+        text: "I won't wear a mask in front of you anymore. Instead... I want to lock you in this infirmary forever.",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_resolve_3"
@@ -2513,7 +2513,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_resolve_3": {
         name: "School Nurse",
         background: "assets/images/background/nurse_room.jpg",
-        text: "\"With you... I think I can show the real me.\"",
+        text: "I'll nurse you for the rest of my life... so I want you to keep being sick. So you only rely on me.",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         next: "day4_night_nurse_resolve_4"
@@ -2522,14 +2522,14 @@ Object.assign(SCENARIO[4], {
         name: "Me",
         background: "assets/images/background/nurse_room.jpg",
         character: "assets/images/characters/nurse_shy.png",
-        text: "\"I've been waiting for that. The real you.\"",
+        text: "......Teacher?",
         night: true,
         next: "day4_night_nurse_resolve_end"
     },
     "day4_night_nurse_resolve_end": {
         name: "School Nurse",
         background: "assets/images/background/nurse_room.jpg",
-        text: "\"...... You really... if you keep this up, there's no going back for me.\"",
+        text: "I'm joking. ...Half joking. So if you get hurt, come straight to me. If you go anywhere else, I'll be really mad.",
         character: "assets/images/characters/nurse_shy.png",
         night: true,
         setFlag: "day4_nurse_mask_off",
@@ -2542,7 +2542,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_farewell": {
         name: "Me",
         character: "assets/images/characters/nurse_shy.png",
-        text: "*We left the nurse's office and walked outside the school. She hooked her arm through mine.*",
+        text: "*We left the infirmary and walked out of the school. The teacher linked her arm tightly with mine and wouldn't let go.*",
         background: "assets/images/background/street.png",
         night: true,
         next: "day4_night_nurse_farewell_2"
@@ -2550,7 +2550,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_nurse_farewell_2": {
         name: "School Nurse",
         background: "assets/images/background/street.png",
-        text: "\"...Tonight was pretty embarrassing, wasn't it? Someone who's always laughing, suddenly falling apart like that.\"",
+        text: "...When you come to school tomorrow, drop by the infirmary first. I'll be checking attendance.",
         character: "assets/images/characters/nurse_normal.png",
         night: true,
         next: "day4_night_nurse_farewell_3"
