@@ -1761,6 +1761,21 @@ class DialogueSystem {
         return listStr;
     }
 
+    /**
+     * 텍스트 파싱 헬퍼 함수: (지문) 형태를 별도의 블록 박스로 변환
+     * @param {string} text 
+     * @returns {string}
+     */
+    parseNarration(text) {
+        // HTML 이스케이프 처리 (사용자 입력 등에서 태그 깨짐 방지)
+        let escapedText = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        
+        // 열린 괄호 '(' 로 시작해서 닫힌 괄호 ')' 로 끝나거나, 문자열 끝까지 가는 부분을 매칭
+        // 타이핑 중에는 닫힌 괄호가 아직 없을 수 있으므로 \)? 로 처리
+        // 괄호 앞뒤의 공백(\s*)도 함께 매칭하여 제거 (블록 요소이므로 여백은 CSS margin으로 처리)
+        return escapedText.replace(/\s*\(([^)]*)(\)?)\s*/g, '<div style="background: rgba(0, 0, 0, 0.4); padding: 12px 16px; border-radius: 8px; margin: 8px 0; font-size: 0.95em; color: rgba(255, 255, 255, 0.85); line-height: 1.6; font-style: italic; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">$1</div>');
+    }
+
     /** 
      * 텍스트 타이핑 효과 (한 글자씩 출력)
      * 
@@ -1817,20 +1832,13 @@ class DialogueSystem {
             let charIndex = 0;      // 현재까지 표시한 글자 수
             let startTime = null;   // 타이핑 시작 시각
 
-            // 텍스트 파싱 헬퍼 함수: (지문) 형태를 이탤릭체로 변환
-            const parseNarration = (text) => {
-                // 열린 괄호 '(' 로 시작해서 닫힌 괄호 ')' 로 끝나거나, 문자열 끝까지 가는 부분을 매칭
-                // 타이핑 중에는 닫힌 괄호가 아직 없을 수 있으므로 \)? 로 처리
-                return text.replace(/\(([^)]*)(\)?)/g, '<span style="opacity: 0.85; font-style: italic;">($1$2</span>');
-            };
-
             // 애니메이션 프레임 함수
             const typeFrame = (timestamp) => {
                 if (!startTime) startTime = timestamp;
 
                 // 스킵 요청이 들어오면 즉시 전체 텍스트 표시
                 if (this.skipTyping) {
-                    this.uiManager.messageEl.innerHTML = parseNarration(textPart);
+                    this.uiManager.messageEl.innerHTML = this.parseNarration(textPart);
                     this.isTyping = false;
                     if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
                     this.skipTyping = false;
@@ -1844,7 +1852,7 @@ class DialogueSystem {
 
                 if (charIndex < targetIndex) {
                     const currentText = textPart.substring(0, targetIndex);
-                    this.uiManager.messageEl.innerHTML = parseNarration(currentText);
+                    this.uiManager.messageEl.innerHTML = this.parseNarration(currentText);
                     charIndex = targetIndex;
                 }
 
@@ -2310,7 +2318,7 @@ class FreeTalkSystem {
             : text;
 
         // 텍스트 표시
-        this.uiManager.messageEl.textContent = text || '';
+        this.uiManager.messageEl.innerHTML = text ? this.dialogueSystem.parseNarration(text) : '';
         if (stagedImage) {
             const img = document.createElement('img');
             img.src = stagedImage;
