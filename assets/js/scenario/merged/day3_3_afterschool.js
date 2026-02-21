@@ -1,0 +1,2622 @@
+/**
+ * ============================================================================
+ * CUPID - day3_3_afterschool (통합 시나리오 / Merged Scenario)
+ * ============================================================================
+ *
+ * 이 파일은 merge-scenarios.js 스크립트로 자동 생성되었습니다.
+ * ko_day3_3_afterschool.js + en_day3_3_afterschool.js 를 합친 파일입니다.
+ *
+ * 언어 텍스트는 각 씬의 _i18n.ko / _i18n.en 블록에 있습니다.
+ * 게임 로직(배경, 분기, 선택지 구조, 호감도)은 최상위에 그대로 있습니다.
+ * ============================================================================
+ */
+
+if (typeof SCENARIO === 'undefined') var SCENARIO = {};
+if (!SCENARIO[3]) SCENARIO[3] = {};
+
+Object.assign(SCENARIO[3], {
+    "day3_afternoon_start": {
+        "background": "assets/images/background/room_school.png",
+        "bgm": "daily2.mp3",
+        "character": null,
+        "sunset": true,
+        "next": "day3_afternoon_check",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*드디어 종례가 끝났다. 금요일 방과후... 해방감과 함께 묘한 긴장감이 느껴진다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Finally, homeroom is over. Friday after school... Freedom mixed with strange tension.*"
+            }
+        }
+    },
+    "day3_afternoon_check": {
+        "background": "assets/images/background/room_school.png",
+        "sunset": true,
+        "branches": [
+            {
+                "next": "day3_afternoon_tension",
+                "condition": "day3_caught_multiple_dates"
+            },
+            {
+                "next": "day3_afternoon_jealousy_check",
+                "condition": "day3_jealousy_seoyeon"
+            },
+            {
+                "next": "day3_afternoon_jealousy_check",
+                "condition": "day3_jealousy_yuna"
+            },
+            {
+                "next": "day3_afternoon_jealousy_check",
+                "condition": "day3_jealousy_dain"
+            },
+            {
+                "next": "day3_afternoon_normal"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*가방을 챙기려는데...*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*As I pack my bag...*"
+            }
+        }
+    },
+    "day3_afternoon_tension": {
+        "sunset": true,
+        "next": "day3_afternoon_tension_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*교실 분위기가 무겁다. 아까 점심때 일 때문인 것 같다...*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*The classroom atmosphere is heavy. Must be because of lunch...*"
+            }
+        }
+    },
+    "day3_afternoon_tension_2": {
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "next": "day3_afternoon_confrontation",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...{name}아, 잠깐 얘기 좀 하자.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...{name}, can we talk for a moment?\""
+            }
+        }
+    },
+    "day3_afternoon_confrontation": {
+        "character": "assets/images/characters/seyoun_sad.png",
+        "background": "assets/images/background/school_hallway.png",
+        "sunset": true,
+        "next": "day3_afternoon_confrontation_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*서연이가 복도로 나를 데리고 나왔다. 평소의 다정한 미소는 온데간데없고, 차갑게 굳은 표정에 등줄기를 타고 식은땀이 흐른다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Seoyeon takes me to the hallway. Her expression looks serious.*"
+            }
+        }
+    },
+    "day3_afternoon_confrontation_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "next": "day3_afternoon_confrontation_3",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"점심때 말이야... 네가 다른 애들한테 웃어줄 때마다, 내 안에서 뭔가가 무너지는 기분이었어. 너, 정말 우리 모두한테 주말을 약속한 거야?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"About lunch... Did you really make weekend plans with all of us?\""
+            }
+        }
+    },
+    "day3_afternoon_confrontation_3": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_admit"
+            },
+            {
+                "next": "day3_afternoon_justify"
+            },
+            {
+                "next": "day3_afternoon_lie_seoyeon"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*어떻게 대답해야 할까...*",
+                "choices": [
+                    "솔직하게 인정한다",
+                    "시간대가 다르니까 괜찮다고 한다",
+                    "서연이만 진심이라고 한다"
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*How should I answer...*",
+                "choices": [
+                    "Admit honestly",
+                    "Say different times make it okay",
+                    "Say only Seoyeon is sincere"
+                ]
+            }
+        }
+    },
+    "day3_afternoon_admit": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "next": "day3_afternoon_admit_react",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"...응. 미안해. 다들 거절하기가 어려워서...\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"...Yes. Sorry. I couldn't turn anyone down...\""
+            }
+        }
+    },
+    "day3_afternoon_admit_react": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "stats": {
+            "Seoyeon": {
+                "affinity": 5
+            }
+        },
+        "next": "day3_afternoon_admit_react_2",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"거절하기 어려웠다고? 네 그 어설픈 다정함이 나를 얼마나 비참하게 만드는지, 넌 모를 거야.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...Thanks for being honest. But I don't like that.\""
+            }
+        }
+    },
+    "day3_afternoon_admit_react_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "sunset": true,
+        "setFlag": "day3_seoyeon_ultimatum",
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"난 네 친절함의 일부가 되고 싶지 않아. 전부가 아니면... 차라리 아무것도 안 할래. 선택해, {name}.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"If I'm really special to you... only meet me. Otherwise, I have options too.\""
+            }
+        }
+    },
+    "day3_afternoon_justify": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "next": "day3_afternoon_justify_react",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"시간대가 다 달라서... 다 만날 수 있을 것 같아서...\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"The times are all different... so I thought I could meet everyone...\""
+            }
+        }
+    },
+    "day3_afternoon_justify_react": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "stats": {
+            "Seoyeon": {
+                "affinity": -5
+            }
+        },
+        "next": "day3_afternoon_justify_react_2",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...그게 문제라는 걸 모르겠어?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...Don't you see that's the problem?\""
+            }
+        }
+    },
+    "day3_afternoon_justify_react_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...알았어. 주말에 보면 알겠지.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...Fine. We'll see this weekend.\""
+            }
+        }
+    },
+    "day3_afternoon_lie_seoyeon": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "next": "day3_afternoon_lie_seoyeon_react",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"서연아, 너만 진심이야. 다른 애들은 그냥 친구로서...\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"Seoyeon, you're the only one I'm sincere about. The others are just friends...\""
+            }
+        }
+    },
+    "day3_afternoon_lie_seoyeon_react": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "sunset": true,
+        "stats": {
+            "Seoyeon": {
+                "affinity": 3
+            }
+        },
+        "setFlag": "day3_promised_seoyeon_only",
+        "next": "day3_afternoon_lie_warning",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...정말? 그 말... 믿어도 돼?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...Really? Can I trust that?\""
+            }
+        }
+    },
+    "day3_afternoon_lie_warning": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "sunset": true,
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*서연이가 미소 짓는다. 하지만... 이게 맞는 걸까? 다른 애들에게 뭐라고 해야 하지?*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Seoyeon smiles. But... is this right? What should I tell the others?*"
+            }
+        }
+    },
+    "day3_afternoon_jealousy_check": {
+        "sunset": true,
+        "next": "day3_afternoon_approach",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*점심때 분위기가 좀 이상했는데... 괜찮겠지?*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*The atmosphere was a bit weird during lunch... It should be fine, right?*"
+            }
+        }
+    },
+    "day3_afternoon_approach": {
+        "sunset": true,
+        "branches": [
+            {
+                "next": "day3_afternoon_seoyeon_approach",
+                "condition": "day3_jealousy_seoyeon"
+            },
+            {
+                "next": "day3_afternoon_yuna_approach",
+                "condition": "day3_jealousy_yuna"
+            },
+            {
+                "next": "day3_afternoon_dain_approach",
+                "condition": "day3_jealousy_dain"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*가방을 챙기고 일어서는데, 누군가 다가온다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*As I stand up to pack my bag, someone approaches.*"
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_approach": {
+        "character": "assets/images/characters/seyoun_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_seoyeon_talk",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...{name}, 잠깐 시간 돼?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...{name}, do you have a minute?\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_talk": {
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "next": "day3_afternoon_seoyeon_talk_2",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"점심때... 미안해, 내가 좀 예민했던 것 같아.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"About lunch... Sorry, I think I was being sensitive.\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_talk_2": {
+        "character": "assets/images/characters/seyoun_normal.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_seoyeon_comfort"
+            },
+            {
+                "next": "day3_afternoon_seoyeon_friend"
+            },
+            {
+                "next": "day3_afternoon_seoyeon_tease"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"근데 솔직히... 너 유나나 다인이랑 친한 거 보면 마음이 좀 그래.\"",
+                "choices": [
+                    "\"서연이가 제일 좋아\"",
+                    "\"다들 소중한 친구야\"",
+                    "\"질투하는 거야?\""
+                ]
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"But honestly... seeing you close with Yuna or Dain bothers me a little.\"",
+                "choices": [
+                    "\"You're my favorite, Seoyeon\"",
+                    "\"They're all precious friends\"",
+                    "\"Are you jealous?\""
+                ]
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_comfort": {
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "sunset": true,
+        "stats": {
+            "Seoyeon": {
+                "affinity": 8
+            }
+        },
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...진짜? 그 말 들으니까... 좀 안심이 돼.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...Really? Hearing that... I feel a bit relieved.\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_friend": {
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "stats": {
+            "Seoyeon": {
+                "affinity": -3
+            }
+        },
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...그래. 친구구나. 알았어.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...Right. Friends. Got it.\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_tease": {
+        "character": "assets/images/characters/seyoun_shy.png",
+        "sunset": true,
+        "stats": {
+            "Seoyeon": {
+                "affinity": 3
+            }
+        },
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...뭐야. 그게 아니라... 아, 몰라.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"W-what! That's not... Ugh, forget it!\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_approach": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/school_hallway.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_talk",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"...{name}.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...{name}.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_talk": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_talk_2",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"점심때... 네 시선이 어디로 향하는지 똑똑히 봤어. 서연이더라.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"At lunch... you chose Seoyeon.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_talk_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_yuna_apologize"
+            },
+            {
+                "next": "day3_afternoon_yuna_promise"
+            },
+            {
+                "next": "day3_afternoon_yuna_question"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*유나의 서늘한 눈동자가 나를 꿰뚫어 보는 것 같다. 숨이 턱 막히는 압박감이다.*",
+                "choices": [
+                    "\"미안해, 유나\"",
+                    "\"내일은 유나랑 있을게\"",
+                    "\"왜, 화났어?\""
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Yuna's eyes are colder than usual.*",
+                "choices": [
+                    "\"I'm sorry, Yuna\"",
+                    "\"I'll spend time with you tomorrow\"",
+                    "\"Why, are you upset?\""
+                ]
+            }
+        }
+    },
+    "day3_afternoon_yuna_apologize": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "stats": {
+            "Yuna": {
+                "affinity": 5
+            }
+        },
+        "next": "day3_afternoon_yuna_warning",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"사과를 듣고 싶은 게 아니야. 네가 누구 옆에 서 있을지, 그 자리의 무게를 알았으면 해.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...It's okay. We have tomorrow.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_promise": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "sunset": true,
+        "stats": {
+            "Yuna": {
+                "affinity": 8
+            }
+        },
+        "setFlag": "day3_yuna_priority_promise",
+        "next": "day3_afternoon_yuna_warning",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"...그 말, 잊지 않을게.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...I won't forget those words.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_question": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "stats": {
+            "Yuna": {
+                "affinity": -3
+            }
+        },
+        "next": "day3_afternoon_yuna_warning",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"...화? 아니. 그냥... 확인하고 싶었어.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...Upset? No. I just... wanted to confirm.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_warning": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"내일은 도망치지 마. 네가 만든 기대감, 끝까지 책임져야 할 테니까.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"Remember, {name}. If you lie to me... you know, right?\""
+            }
+        }
+    },
+    "day3_afternoon_dain_approach": {
+        "character": "assets/images/characters/dain_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_talk",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"{name}아.\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Hey, {name}!\""
+            }
+        }
+    },
+    "day3_afternoon_dain_talk": {
+        "character": "assets/images/characters/dain_sad.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_talk_2",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"점심때... 나도 같이 먹고 싶었는데. 다음엔 나도 끼워주면 안 돼?\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Why didn't you include me at lunch?! I wanted to eat together too!\""
+            }
+        }
+    },
+    "day3_afternoon_dain_talk_2": {
+        "character": "assets/images/characters/dain_sad.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_dain_sorry"
+            },
+            {
+                "next": "day3_afternoon_dain_promise"
+            },
+            {
+                "next": "day3_afternoon_dain_tease"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*다인이가 볼을 부풀리며 항의한다.*",
+                "choices": [
+                    "\"미안, 다음엔 같이 먹자\"",
+                    "\"내일 연습 보러 갈게\"",
+                    "\"귀엽네, 화난 거야?\""
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Dain pouts and complains.*",
+                "choices": [
+                    "\"Sorry, let's eat together next time\"",
+                    "\"I'll come to your practice tomorrow\"",
+                    "\"Cute, are you angry?\""
+                ]
+            }
+        }
+    },
+    "day3_afternoon_dain_sorry": {
+        "character": "assets/images/characters/dain_normal.png",
+        "sunset": true,
+        "stats": {
+            "Dain": {
+                "affinity": 5
+            }
+        },
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"...알았어. 그 약속, 꼭 지켜야 해.\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Hmph, you better! It's a promise!\""
+            }
+        }
+    },
+    "day3_afternoon_dain_promise": {
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "stats": {
+            "Dain": {
+                "affinity": 8
+            }
+        },
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"진짜?! 그럼 용서해줄게! 내 스파이크 기대해!\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Really?! Then I forgive you! Look forward to my spike!\""
+            }
+        }
+    },
+    "day3_afternoon_dain_tease": {
+        "character": "assets/images/characters/dain_shy.png",
+        "sunset": true,
+        "stats": {
+            "Dain": {
+                "affinity": 5
+            }
+        },
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"...뭐야. 귀엽긴 뭐가 귀여워.\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"W-what! Cute my foot! Dummy!\""
+            }
+        }
+    },
+    "day3_afternoon_normal": {
+        "sunset": true,
+        "next": "day3_afternoon_transition",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*평화로운 방과후다. 집에 갈 준비를 하자.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*A peaceful after school. Let me get ready to go home.*"
+            }
+        }
+    },
+    "day3_afternoon_transition": {
+        "character": null,
+        "background": "assets/images/background/school.png",
+        "sunset": true,
+        "next": "day3_afternoon_gate",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*교문을 나서려는데...*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*As I'm about to leave through the school gate...*"
+            }
+        }
+    },
+    "day3_afternoon_gate": {
+        "background": "assets/images/background/school.png",
+        "sunset": true,
+        "branches": [
+            {
+                "next": "day3_afternoon_multiple_wait",
+                "condition": "day3_has_multiple_dates"
+            },
+            {
+                "next": "day3_afternoon_single_wait",
+                "condition": "day3_seoyeon_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_single_wait",
+                "condition": "day3_yuna_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_single_wait",
+                "condition": "day3_dain_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_teacher_wait",
+                "condition": "day3_teacher_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_nurse_wait",
+                "condition": "day3_nurse_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_nobody_waiting"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*누군가 기다리고 있는 것 같다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Someone seems to be waiting.*"
+            }
+        }
+    },
+    "day3_afternoon_multiple_wait": {
+        "sunset": true,
+        "branches": [
+            {
+                "next": "day3_afternoon_multiple_scene",
+                "condition": "day3_seoyeon_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_multiple_no_seoyeon"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*어... 왜 다들 교문 앞에...?*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Uh... why is everyone at the gate...?*"
+            }
+        }
+    },
+    "day3_afternoon_multiple_no_seoyeon": {
+        "sunset": true,
+        "next": "day3_afternoon_choose_walk",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*교문 앞에 여러 명이 서 있다. 다들 나를 기다리는 건가...?*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Several people are standing at the school gate. Are they all waiting for me...?*"
+            }
+        }
+    },
+    "day3_afternoon_multiple_scene": {
+        "character": "assets/images/characters/seyoun_normal.png",
+        "sunset": true,
+        "branches": [
+            {
+                "next": "day3_afternoon_three_way",
+                "condition": "day3_yuna_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_two_way_dain",
+                "condition": "day3_dain_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_seoyeon_walk"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"어, {name}! 같이 가자... 어?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"Hey, {name}! Let's walk together... huh?\""
+            }
+        }
+    },
+    "day3_afternoon_three_way": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_three_way_2",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"...또 만났네.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...We meet again.\""
+            }
+        }
+    },
+    "day3_afternoon_three_way_2": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_choose_walk",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*서연이와 유나가 서로를 노려보고 있다. 분위기가 살벌하다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Seoyeon and Yuna are glaring at each other. The atmosphere is tense.*"
+            }
+        }
+    },
+    "day3_afternoon_two_way_dain": {
+        "character": "assets/images/characters/dain_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_choose_walk",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"오? 서연이도 여기 있네? 나도 {name}이랑 같이 가려고!\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Oh? Seoyeon's here too? I was gonna walk home with {name}!\""
+            }
+        }
+    },
+    "day3_afternoon_choose_walk": {
+        "character": null,
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_seoyeon_walk"
+            },
+            {
+                "next": "day3_afternoon_yuna_walk",
+                "condition": "day3_yuna_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_dain_walk",
+                "condition": "day3_dain_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_reject_all",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -5
+                    },
+                    "Yuna": {
+                        "affinity": -5
+                    },
+                    "Dain": {
+                        "affinity": -5
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*누구와 함께 갈까...?*",
+                "choices": [
+                    "서연이와 간다",
+                    "유나와 간다",
+                    "다인이와 간다",
+                    "혼자 간다"
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Who should I walk with...?*",
+                "choices": [
+                    "Go with Seoyeon",
+                    "Go with Yuna",
+                    "Go with Dain",
+                    "Go alone"
+                ]
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_walk": {
+        "character": null,
+        "sunset": true,
+        "stats": {
+            "Seoyeon": {
+                "affinity": 5
+            }
+        },
+        "setFlag": "day3_walked_with_seoyeon",
+        "next": "day3_afternoon_seoyeon_walk_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"서연아, 같이 가자.\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"Seoyeon, let's go together.\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_walk_2": {
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "background": "assets/images/background/street.png",
+        "sunset": true,
+        "next": "day3_afternoon_seoyeon_walk_others",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"응! 가자!\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"Sure! Let's go!\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_walk_others": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "sunset": true,
+        "branches": [
+            {
+                "next": "day3_afternoon_seoyeon_walk_yuna_reaction",
+                "condition": "day3_yuna_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_seoyeon_walk_dain_reaction",
+                "condition": "day3_dain_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_seoyeon_talk_walk"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*뒤에서 시선이 느껴지지만... 서연이와 걷는 지금이 좋다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*I feel eyes on my back... but right now, walking with Seoyeon feels nice.*"
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_walk_yuna_reaction": {
+        "sunset": true,
+        "stats": {
+            "Yuna": {
+                "affinity": -8
+            }
+        },
+        "setFlag": "day3_yuna_witnessed_seoyeon",
+        "next": "day3_afternoon_seoyeon_talk_walk",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*유나가 멀찍이서 우리를 바라보고 있다. 그 눈빛이... 무섭다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Yuna is watching us from a distance. That look... is scary.*"
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_walk_dain_reaction": {
+        "character": "assets/images/characters/dain_sad.png",
+        "sunset": true,
+        "stats": {
+            "Dain": {
+                "affinity": -5
+            }
+        },
+        "next": "day3_afternoon_seoyeon_talk_walk",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"...나 먼저 갈게.\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Hmph! I'm going first!\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_talk_walk": {
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "sunset": true,
+        "next": "day3_afternoon_seoyeon_sunset",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"…있잖아, {name}. 저기 강변길로 돌아가자. 오늘 석양 예쁜데.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...Hey, {name}. Let's take the riverside path back. The sunset is beautiful today.\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_sunset": {
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "background": "assets/images/background/street.png",
+        "sunset": true,
+        "next": "day3_afternoon_seoyeon_sunset_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*석양이 강물에 반사되어 반짝인다. 서연이의 얼굴이 주황빛으로 물들어 눈부시다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*The sunset reflects off the river, sparkling. Seoyeon's face glows with an orange tint — she looks radiant.*"
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_sunset_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_seoyeon_sunset_3",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "*갑자기 발을 멈추고 내 앞에 서며* \"…{name}아. 나 한 가지 물어봐도 돼?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "*She suddenly stops and stands in front of me* \"...{name}. Can I ask you something?\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_sunset_3": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_seoyeon_pinky",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 8
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_seoyeon_hand",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 10
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_seoyeon_try",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 3
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "*석양을 배경으로 서연이의 눈이 빛난다* \"내일… 나만 만나줄 거지?\"",
+                "choices": [
+                    "\"당연하지\"",
+                    "*서연이의 손을 잡는다*",
+                    "\"…노력할게\""
+                ]
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "*Against the sunset backdrop, Seoyeon's eyes shine* \"Tomorrow... you'll only meet me, right?\"",
+                "choices": [
+                    "\"Of course\"",
+                    "*Take Seoyeon's hand*",
+                    "\"...I'll try\""
+                ]
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_pinky": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "sunset": true,
+        "next": "day3_afternoon_seoyeon_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "*서연이가 새끼손가락을 내밀며* \"그럼 새끼손가락 걸자. 약속 어기면… 바늘 만 개 삼키는 거다?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "*Seoyeon holds out her pinky finger* \"Then let's pinky promise. If you break it... you swallow ten thousand needles?\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_hand": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_seoyeon_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "*서연이의 손이 떨리다가 내 손을 꼭 잡는다* \"…바보. 이런 데서 손 잡으면 어떡해.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "*Seoyeon's hand trembles before she grips mine tight* \"...Dummy. What if someone sees us holding hands here.\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_try": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_seoyeon_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "*살짝 실망한 표정을 짓다가 억지로 웃는다* \"…그래. 노력하는 거다?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "*Looking slightly disappointed, she forces a smile* \"...Okay. You'll try, right?\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "sunset": true,
+        "maxTurns": 4,
+        "next": "day3_afternoon_seoyeon_talk_walk_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*석양 지는 강변길을 서연이와 나란히 걷는다. 주황빛이 점점 더 깊어진다.*",
+                "context": "서연이와 석양 강변길을 걷는 중. 서연이가 '내일 나만 만나줘'라고 하며 새끼손가락/손잡기 스킨십 후. 달콤하고 로맨틱한 분위기."
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Walking alongside Seoyeon down the riverside path as the sunset deepens.*",
+                "context": "Walking with Seoyeon along the sunset riverside. She asked 'Will you only meet me tomorrow?' and they had a pinky promise/hand-holding moment. Sweet and romantic atmosphere."
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_talk_walk_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "sunset": true,
+        "branches": [
+            {
+                "next": "day3_afternoon_seoyeon_guilt",
+                "condition": "day3_has_multiple_dates"
+            },
+            {
+                "next": "day3_afternoon_seoyeon_happy"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"우리 둘만의 시간이잖아. 그치?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"It's our time together, just the two of us. Right?\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_guilt": {
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_seoyeon_happy",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": 5
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_seoyeon_confess_walk",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -10
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*... '둘만의 시간'이라. 다른 약속들이 머릿속을 스친다.*",
+                "choices": [
+                    "\"응, 기대돼\"",
+                    "\"사실은...\" (솔직하게 말한다)"
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*...'Just the two of us'. My other plans flash through my mind.*",
+                "choices": [
+                    "\"Yeah, I'm excited too\"",
+                    "\"Actually...\" (Be honest)"
+                ]
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_happy": {
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "sunset": true,
+        "fade": true,
+        "next": "day3_night_start",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"후훗, 나도! 그럼 내일 봐! 잘 자!\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"Hehe, me too! See you tomorrow then! Sleep well!\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_confess_walk": {
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "next": "day3_afternoon_seoyeon_angry",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...뭐? 다른 약속도 있어?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...What? You have other plans too?\""
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_angry": {
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "setFlag": "day3_seoyeon_knows_others",
+        "fade": true,
+        "next": "day3_night_start",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...알았어. 주말에 보면 알겠지, 네가 누굴 진짜 좋아하는지.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...Fine. We'll see this weekend who you really like.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_walk": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "stats": {
+            "Yuna": {
+                "affinity": 5
+            }
+        },
+        "setFlag": "day3_walked_with_yuna",
+        "next": "day3_afternoon_yuna_walk_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"유나야, 같이 가자.\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"Yuna, let's walk together.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_walk_2": {
+        "character": "assets/images/characters/yuna_smile.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_walk_others",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"...응.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...Okay.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_walk_others": {
+        "character": "assets/images/characters/seyoun_sad.png",
+        "sunset": true,
+        "stats": {
+            "Seoyeon": {
+                "affinity": -8
+            }
+        },
+        "setFlag": "day3_seoyeon_witnessed_yuna",
+        "next": "day3_afternoon_yuna_talk_walk",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"...알았어. 조심히 가.\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...Okay. Be careful going home.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_talk_walk": {
+        "character": null,
+        "background": "assets/images/background/street.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_cat",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*유나와 함께 조용한 길을 걷는다. 그녀는 말이 없지만, 분위기가 편안하다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Walking with Yuna down a quiet path. She doesn't say much, but the atmosphere is comfortable.*"
+            }
+        }
+    },
+    "day3_afternoon_yuna_cat": {
+        "background": "assets/images/background/street.png",
+        "character": null,
+        "sunset": true,
+        "next": "day3_afternoon_yuna_cat_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*길가에 작은 고양이 한 마리가 웅크리고 있다. 유나가 갑자기 멈춘다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*A small cat is curled up by the roadside. Yuna suddenly stops.*"
+            }
+        }
+    },
+    "day3_afternoon_yuna_cat_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_cat_3",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "*조용히 무릎을 꿇고 고양이를 쓰다듬는다* \"…같이 있어줘서 다행이다.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "*Quietly kneeling down to pet the cat* \"...I'm glad you're with me.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_cat_3": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_yuna_cat_pat",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 3
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_yuna_head_pat",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 10
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_yuna_cat_watch",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 5
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*유나가 고양이를 쓰다듬는 모습이… 너무 부드럽다.*",
+                "choices": [
+                    "*나도 고양이를 쓰다듬는다*",
+                    "*유나의 머리를 쓰다듬는다*",
+                    "*조용히 지켜본다*"
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*The way Yuna pets the cat... she looks so gentle.*",
+                "choices": [
+                    "*Pet the cat too*",
+                    "*Pat Yuna's head*",
+                    "*Watch quietly*"
+                ]
+            }
+        }
+    },
+    "day3_afternoon_yuna_cat_pat": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "*두 사람의 손이 고양이 위에서 맞닿는다* \"…따뜻하네.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "*Our hands meet on top of the cat* \"...Warm.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_head_pat": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_head_pat_2",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "*머리를 쓰다듬는 내 손에 멈춰선다* \"…나를 쓰다듬는 거야?\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "*She freezes when I pat her head* \"...You're petting me?\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_head_pat_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "*눈을 감으며* \"…멈추지 마. 조금만 더.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "*Closing her eyes* \"...Don't stop. Just a little more.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_cat_watch": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "*고양이를 안아들며* \"…이 아이, {name}을 닮았어. 따뜻하고… 모자라.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "*Holding the cat up* \"...This one looks like you, {name}. Warm and... clueless.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "sunset": true,
+        "maxTurns": 4,
+        "next": "day3_afternoon_yuna_talk_walk_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*유나와 나란히 길을 걷는다. 평소보다 유나의 표정이 부드럽다.*",
+                "context": "유나와 귀가길에 고양이를 함께 쓰다듬은 후. 유나가 평소보다 부드러운 표정. 조용하고 편안한 분위기."
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Walking side by side with Yuna. Her expression is softer than usual.*",
+                "context": "Walking home with Yuna after petting a cat together. Yuna's expression is softer than usual. Quiet and comfortable atmosphere."
+            }
+        }
+    },
+    "day3_afternoon_yuna_talk_walk_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_talk_walk_3",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"...{name}. 내일 밤, 잊지 마.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...{name}. Don't forget tomorrow night.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_talk_walk_3": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_warning_walk",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"학교 후문. 8시. 늦으면... 안 돼.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"School back gate. 8 PM. Don't... be late.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_warning_walk": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_yuna_promise_keep",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 8
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_yuna_late_question"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*유나의 목소리에 묘한 압박감이 느껴진다.*",
+                "choices": [
+                    "\"절대 안 늦을게\"",
+                    "\"혹시 늦으면?\""
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*There's a strange pressure in Yuna's voice.*",
+                "choices": [
+                    "\"I definitely won't be late\"",
+                    "\"What if I'm late?\""
+                ]
+            }
+        }
+    },
+    "day3_afternoon_yuna_promise_keep": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "sunset": true,
+        "fade": true,
+        "next": "day3_night_start",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"...좋아. 믿을게.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...Good. I'll trust you.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_late_question": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_yuna_late_warning",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"...그럼 안 돼. 절대로.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...That can't happen. Absolutely not.\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_late_warning": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "fade": true,
+        "next": "day3_night_start",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*유나의 눈동자가 순간 이상하게 빛난 것 같았다... 착각이겠지?*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Yuna's eyes seemed to flash strangely for a moment... Must be my imagination?*"
+            }
+        }
+    },
+    "day3_afternoon_dain_walk": {
+        "character": null,
+        "sunset": true,
+        "stats": {
+            "Dain": {
+                "affinity": 5
+            }
+        },
+        "setFlag": "day3_walked_with_dain",
+        "next": "day3_afternoon_dain_walk_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"다인아, 같이 가자.\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"Dain, let's walk together.\""
+            }
+        }
+    },
+    "day3_afternoon_dain_walk_2": {
+        "character": "assets/images/characters/dain_laugh.png",
+        "stats": {
+            "Seoyeon": {
+                "affinity": -5
+            },
+            "Yuna": {
+                "affinity": -5
+            }
+        },
+        "background": "assets/images/background/street.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_talk_walk",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"야호! 가자 가자!\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Yay! Let's go!\""
+            }
+        }
+    },
+    "day3_afternoon_dain_talk_walk": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_store",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"야, {name}! 저기 편의점 보이지? 목마르다!\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Hey, {name}! See that convenience store? I'm thirsty!\""
+            }
+        }
+    },
+    "day3_afternoon_dain_store": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_store_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*다인이가 편의점으로 달려간다. 따라가보니 아이스크림 코너 앞에 멈춰선다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Dain dashes to the convenience store. I follow and find her stopped at the ice cream section.*"
+            }
+        }
+    },
+    "day3_afternoon_dain_store_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_dain_ice_one",
+                "stats": {
+                    "Dain": {
+                        "affinity": 3
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_dain_ice_share",
+                "stats": {
+                    "Dain": {
+                        "affinity": 8
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"니가 골라줘! 나 골라달라면 다 사고 싶어져서…\"",
+                "choices": [
+                    "*하나만 골라준다*",
+                    "*두 개 사서 하나 나눠먹는다*"
+                ]
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"You pick for me! If I pick, I'll want to buy everything...\"",
+                "choices": [
+                    "*Pick one for her*",
+                    "*Buy two and share one*"
+                ]
+            }
+        }
+    },
+    "day3_afternoon_dain_ice_one": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_park",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "*아이스크림을 받아들며* \"…고마워. 역시 {name}이 최고!\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "*Taking the ice cream* \"...Thanks. {name} is the best!\""
+            }
+        }
+    },
+    "day3_afternoon_dain_ice_share": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_park",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "*나눠먹기를 받아들며 얼굴이 빨개진다* \"…이, 이게 나눠먹기?! 간접키스잖아! 아, 아니다! 그냥 나눠먹는 거야!\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "*Her face turns red at the idea of sharing* \"Th-that's sharing?! That's an indirect kiss! N-no! It's just sharing!\""
+            }
+        }
+    },
+    "day3_afternoon_dain_park": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_park_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*다인이와 근처 공원 벤치에 나란히 앉았다. 아이스크림을 먹으며 석양을 바라본다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Dain and I sit side by side on a park bench nearby. We eat ice cream while watching the sunset.*"
+            }
+        }
+    },
+    "day3_afternoon_dain_park_2": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_park_3",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "*갑자기 조용해지며* \"…{name}. 나, 사실 어제 잠 못 잤어.\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "*Suddenly getting quiet* \"...{name}. Actually, I couldn't sleep last night.\""
+            }
+        }
+    },
+    "day3_afternoon_dain_park_3": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_dain_promise_firm",
+                "stats": {
+                    "Dain": {
+                        "affinity": 8
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_dain_pat",
+                "stats": {
+                    "Dain": {
+                        "affinity": 10
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"…내일 연습 보러 와준다면서… 정말 올 거지? 바람 맞추는 거 아니지?\"",
+                "choices": [
+                    "\"절대 바람 맞추지 않아\"",
+                    "*다인이의 머리를 쓰다듬는다*"
+                ]
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"...You said you'd come to my practice tomorrow... You'll really come, right? You're not gonna stand me up?\"",
+                "choices": [
+                    "\"I would never stand you up\"",
+                    "*Pat Dain's head*"
+                ]
+            }
+        }
+    },
+    "day3_afternoon_dain_promise_firm": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "*눈이 반짝이며* \"…진짜? 약속!\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "*Her eyes light up* \"...Really? Promise!\""
+            }
+        }
+    },
+    "day3_afternoon_dain_pat": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_dain_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "*머리를 쓰다듬으면 다인이가 얼굴을 붉힌다* \"야, 나 애기 아니거든! …근데 멈추지 마.\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "*Patting her head makes Dain's face turn red* \"Hey, I'm not a kid! ...But don't stop.\""
+            }
+        }
+    },
+    "day3_afternoon_dain_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "maxTurns": 4,
+        "next": "day3_afternoon_dain_talk_walk_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*공원 벤치에서 다인이와 아이스크림을 먹으며 이야기를 나눈다.*",
+                "context": "다인이와 공원 벤치에서 아이스크림 나눠먹기 후. 다인이가 '잘 못 잤다'라며 진지한 모습. 평소의 활발함 대신 수줍어하는 분위기."
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Eating ice cream and chatting with Dain on a park bench.*",
+                "context": "Sharing ice cream with Dain on a park bench. She said 'I couldn't sleep last night' showing a serious side. She's being shy instead of her usual energetic self."
+            }
+        }
+    },
+    "day3_afternoon_dain_talk_walk_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_dain_excited",
+                "stats": {
+                    "Dain": {
+                        "affinity": 5
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_dain_cheer",
+                "stats": {
+                    "Dain": {
+                        "affinity": 8
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"나 {name}한테 멋진 모습 보여주고 싶거든!\"",
+                "choices": [
+                    "\"기대할게!\"",
+                    "\"내가 응원해줄게\""
+                ]
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"I want to show you my cool side!\"",
+                "choices": [
+                    "\"Looking forward to it!\"",
+                    "\"I'll cheer for you\""
+                ]
+            }
+        }
+    },
+    "day3_afternoon_dain_excited": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "fade": true,
+        "next": "day3_night_start",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"좋아! 각오해!\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Great! Be prepared!\""
+            }
+        }
+    },
+    "day3_afternoon_dain_cheer": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "fade": true,
+        "next": "day3_night_start",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"후훗... 그 말 듣고 나니까 더 열심히 해야겠다!\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Hehe... Hearing that makes me want to work even harder!\""
+            }
+        }
+    },
+    "day3_afternoon_reject_all": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "setFlag": "day3_walked_alone",
+        "next": "day3_afternoon_reject_reaction",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"미안, 오늘은 혼자 가고 싶어.\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"Sorry, I want to go alone today.\""
+            }
+        }
+    },
+    "day3_afternoon_reject_reaction": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "fade": true,
+        "next": "day3_night_start",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*모두의 표정이 굳는다. 실망한 눈빛이 느껴진다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Everyone's expressions harden. I can feel their disappointment.*"
+            }
+        }
+    },
+    "day3_afternoon_nobody_waiting": {
+        "background": "assets/images/background/school.png",
+        "sunset": true,
+        "next": "day3_afternoon_alone_walk",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*...아무도 없다. 착각이었나. 괜히 기대한 내가 바보지.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*...No one's here. Must've been my imagination. Silly me for getting my hopes up.*"
+            }
+        }
+    },
+    "day3_afternoon_alone_walk": {
+        "character": null,
+        "background": "assets/images/background/street.png",
+        "sunset": true,
+        "fade": true,
+        "next": "day3_night_start",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*혼자 집으로 향한다. 내일은 어떤 하루가 될까...*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*I head home alone. I wonder what tomorrow will bring...*"
+            }
+        }
+    },
+    "day3_afternoon_single_wait": {
+        "sunset": true,
+        "branches": [
+            {
+                "next": "day3_afternoon_seoyeon_solo",
+                "condition": "day3_seoyeon_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_yuna_solo",
+                "condition": "day3_yuna_date_confirmed"
+            },
+            {
+                "next": "day3_afternoon_dain_solo",
+                "condition": "day3_dain_date_confirmed"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*교문 앞에 누군가 서 있다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Someone is standing in front of the gate.*"
+            }
+        }
+    },
+    "day3_afternoon_seoyeon_solo": {
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "sunset": true,
+        "stats": {
+            "Seoyeon": {
+                "affinity": 3
+            }
+        },
+        "next": "day3_afternoon_seoyeon_walk_2",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"{name}! 같이 가자!\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"{name}! Let's walk together!\""
+            }
+        }
+    },
+    "day3_afternoon_yuna_solo": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
+        "stats": {
+            "Yuna": {
+                "affinity": 3
+            }
+        },
+        "next": "day3_afternoon_yuna_talk_walk",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"...기다렸어.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...I was waiting.\""
+            }
+        }
+    },
+    "day3_afternoon_dain_solo": {
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "stats": {
+            "Dain": {
+                "affinity": 3
+            }
+        },
+        "next": "day3_afternoon_dain_talk_walk",
+        "_i18n": {
+            "ko": {
+                "name": "다인",
+                "text": "\"야! 빨리 와! 같이 가자!\""
+            },
+            "en": {
+                "name": "Dain",
+                "text": "\"Hey! Hurry up! Let's walk together!\""
+            }
+        }
+    },
+    "day3_afternoon_teacher_wait": {
+        "character": "assets/images/characters/teacher_smile.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_teacher_ride",
+                "stats": {
+                    "Teacher": {
+                        "affinity": 5
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_alone_walk"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "담임선생님",
+                "text": "\"{name}, 잠깐 시간 있니? 선생님이 데려다줄까?\"",
+                "choices": [
+                    "\"네, 감사합니다!\"",
+                    "\"괜찮아요, 걸어갈게요\""
+                ]
+            },
+            "en": {
+                "name": "Homeroom Teacher",
+                "text": "\"{name}, do you have a minute? Want me to give you a ride?\"",
+                "choices": [
+                    "\"Yes, thank you!\"",
+                    "\"It's okay, I'll walk\""
+                ]
+            }
+        }
+    },
+    "day3_afternoon_teacher_ride": {
+        "character": "assets/images/characters/teacher_normal.png",
+        "background": "assets/images/background/street.png",
+        "sunset": true,
+        "next": "day3_afternoon_teacher_ride_2",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*선생님의 차에 탔다. 퇴근길 도로가 석양으로 물든다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*I got in the teacher's car. The road home is bathed in sunset.*"
+            }
+        }
+    },
+    "day3_afternoon_teacher_ride_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_teacher_ride_3",
+        "_i18n": {
+            "ko": {
+                "name": "담임선생님",
+                "text": "*운전하며 조용히* \"…{name}야. 우리 이렇게 둘이만 있으니까… 뭔가 이상한 기분이야.\""
+            },
+            "en": {
+                "name": "Homeroom Teacher",
+                "text": "*Driving quietly* \"...{name}. Being alone together like this... feels a bit strange.\""
+            }
+        }
+    },
+    "day3_afternoon_teacher_ride_3": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_teacher_hold",
+                "stats": {
+                    "Teacher": {
+                        "affinity": 10
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_teacher_stop",
+                "stats": {
+                    "Teacher": {
+                        "affinity": -3
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_teacher_lean",
+                "stats": {
+                    "Teacher": {
+                        "affinity": 8
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*신호에 멈춘다. 선생님이 조용히 내 손등을 건드린다.*",
+                "choices": [
+                    "*선생님 손을 잡는다*",
+                    "\"선생님, 이러면 안 돼요\"",
+                    "*조용히 어깨에 머리를 기댄다*"
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*We stop at a red light. The teacher quietly touches the back of my hand.*",
+                "choices": [
+                    "*Hold her hand*",
+                    "\"Teacher, we shouldn't\"",
+                    "*Quietly lean my head on her shoulder*"
+                ]
+            }
+        }
+    },
+    "day3_afternoon_teacher_hold": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_teacher_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "담임선생님",
+                "text": "*선생님이 숨을 멈춘다* \"…신호 바뀌면 놓을 거야. 약속.\""
+            },
+            "en": {
+                "name": "Homeroom Teacher",
+                "text": "*The teacher holds her breath* \"...When the light changes, I'm letting go. Promise.\""
+            }
+        }
+    },
+    "day3_afternoon_teacher_stop": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_smile.png",
+        "sunset": true,
+        "next": "day3_afternoon_teacher_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "담임선생님",
+                "text": "*선생님이 쓸쓸하게 웃는다* \"…그래, 맞아. 선생님이 정신 차려야지.\""
+            },
+            "en": {
+                "name": "Homeroom Teacher",
+                "text": "*The teacher smiles wistfully* \"...You're right. Teacher needs to come to her senses.\""
+            }
+        }
+    },
+    "day3_afternoon_teacher_lean": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_teacher_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "담임선생님",
+                "text": "*놀라서 멈칫하더니… 조용히 내 머리를 쓰다듬는다* \"…아직 신호 안 바뀌었다.\""
+            },
+            "en": {
+                "name": "Homeroom Teacher",
+                "text": "*Startled at first... then quietly strokes my hair* \"...The light hasn't changed yet.\""
+            }
+        }
+    },
+    "day3_afternoon_teacher_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "sunset": true,
+        "maxTurns": 3,
+        "next": "day3_afternoon_teacher_arrive",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*담임선생님의 차 안에서 함께 집으로 향한다.*",
+                "context": "담임선생님의 차 안에서 귀가 중. 석양 속에서 손을 잡거나 어깨에 기대는 스킨십 후. 금지된 사랑의 달콤함과 죄책감."
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Riding in the teacher's car on the way home.*",
+                "context": "In the homeroom teacher's car heading home. After hand-holding or leaning on her shoulder in the sunset. The sweetness and guilt of a forbidden love."
+            }
+        }
+    },
+    "day3_afternoon_teacher_arrive": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_smile.png",
+        "sunset": true,
+        "fade": true,
+        "next": "day3_night_start",
+        "_i18n": {
+            "ko": {
+                "name": "담임선생님",
+                "text": "*집 앞에 도착하며* \"…모레 일요일에 박물관 약속 잊지 않았지? 기대하고 있을게.\""
+            },
+            "en": {
+                "name": "Homeroom Teacher",
+                "text": "*Arriving at my house* \"...You haven't forgotten our museum date on Sunday, right? I'll be looking forward to it.\""
+            }
+        }
+    },
+    "day3_afternoon_nurse_wait": {
+        "character": "assets/images/characters/nurse_normal.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_nurse_walk",
+                "stats": {
+                    "Nurse": {
+                        "affinity": 5
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_alone_walk"
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "보건선생님",
+                "text": "\"어머, {name}. 퇴근하려고 나왔는데 딱 마주쳤네? 후훗.\"",
+                "choices": [
+                    "\"같이 가실래요?\"",
+                    "\"안녕히 가세요\""
+                ]
+            },
+            "en": {
+                "name": "School Nurse",
+                "text": "\"Oh my, {name}. I came out to leave and ran into you? Hehe.\"",
+                "choices": [
+                    "\"Shall we walk together?\"",
+                    "\"Have a good evening\""
+                ]
+            }
+        }
+    },
+    "day3_afternoon_nurse_walk": {
+        "character": "assets/images/characters/nurse_normal.png",
+        "background": "assets/images/background/street.png",
+        "sunset": true,
+        "next": "day3_afternoon_nurse_band",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*보건선생님과 나란히 걷는다. 선생님이 내 손등을 본다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Walking side by side with the nurse. She glances at the back of my hand.*"
+            }
+        }
+    },
+    "day3_afternoon_nurse_band": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "sunset": true,
+        "next": "day3_afternoon_nurse_band_2",
+        "_i18n": {
+            "ko": {
+                "name": "보건선생님",
+                "text": "*갑자기 내 손을 잡고 밴드를 붙여준다* \"…여기 긁혔는데? 못 봤어.\""
+            },
+            "en": {
+                "name": "School Nurse",
+                "text": "*She suddenly takes my hand and puts a band-aid on it* \"...There's a scratch here? You didn't notice.\""
+            }
+        }
+    },
+    "day3_afternoon_nurse_band_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "day3_afternoon_nurse_caught",
+                "stats": {
+                    "Nurse": {
+                        "affinity": 5
+                    }
+                }
+            },
+            {
+                "next": "day3_afternoon_nurse_hold",
+                "stats": {
+                    "Nurse": {
+                        "affinity": 10
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*상처가 없는데… 선생님이 손을 잡고 싶었던 걸까?*",
+                "choices": [
+                    "\"상처 없는데요?\"",
+                    "*그냥 손을 잡아준다*"
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*There's no scratch... Did she just want to hold my hand?*",
+                "choices": [
+                    "\"There's no scratch though?\"",
+                    "*Just hold her hand*"
+                ]
+            }
+        }
+    },
+    "day3_afternoon_nurse_caught": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/nurse_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_nurse_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "보건선생님",
+                "text": "*들켰다는 듯 얼굴이 빨개진다* \"…훔, 눈치 빠르네? 그냥… 선생님 마크야.\""
+            },
+            "en": {
+                "name": "School Nurse",
+                "text": "*Her face turns red as if caught* \"...Hmm, sharp eyes? It's just... teacher's mark.\""
+            }
+        }
+    },
+    "day3_afternoon_nurse_hold": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/nurse_shy.png",
+        "sunset": true,
+        "next": "day3_afternoon_nurse_freetalk",
+        "_i18n": {
+            "ko": {
+                "name": "보건선생님",
+                "text": "*놀라서 멈춰서다가… 꼭 잡아온다* \"…위험한 애. 10초만 이러고 있자.\""
+            },
+            "en": {
+                "name": "School Nurse",
+                "text": "*Surprised, she stops... then holds on tight* \"...Dangerous boy. Let's stay like this for ten seconds.\""
+            }
+        }
+    },
+    "day3_afternoon_nurse_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/nurse_shy.png",
+        "sunset": true,
+        "maxTurns": 3,
+        "next": "day3_afternoon_nurse_arrive",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*보건선생님과 나란히 퇴근길을 걷는다.*",
+                "context": "보건선생님과 퇴근길. 선생님이 밴드를 구실로 손을 잡았다. 금지된 사랑의 설렘과 긴장감."
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Walking home alongside the school nurse.*",
+                "context": "Walking home with the school nurse. She used a band-aid as an excuse to hold my hand. The thrill and tension of a forbidden love."
+            }
+        }
+    },
+    "day3_afternoon_nurse_arrive": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "sunset": true,
+        "fade": true,
+        "next": "day3_night_start",
+        "_i18n": {
+            "ko": {
+                "name": "보건선생님",
+                "text": "\"일요일 저녁 7시, 잊으면 안 돼? 선생님 기다리고 있을 테니까.\""
+            },
+            "en": {
+                "name": "School Nurse",
+                "text": "\"Don't forget Sunday 7 PM, okay? I'll be waiting for you.\""
+            }
+        }
+    }
+});
