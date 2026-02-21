@@ -21,7 +21,7 @@
  * 로드 순서:
  *   1. 공통 스크립트: ga.js (Google Analytics), sound.js (사운드 관리)
  *   2. 시나리오: 현재 언어에 맞는 시나리오 파일들 (ko_* 또는 en_*)
- *   3. 게임 엔진: prompts.js, gallery 모듈들, main.js
+ *   3. 게임 엔진: prompts.js, gallery 모듈들, modules/*.js
  * 
  * 버전 관리:
  *   version 변수만 수정하면 모든 스크립트에 ?v= 쿼리가 자동 적용되어
@@ -141,7 +141,7 @@
     ];
 
     /**
-     * 현재 언어를 전역으로 노출 → main.js 에서 _i18n 텍스트 선택에 사용
+     * 현재 언어를 전역으로 노출 → SceneRenderer에서 _i18n 텍스트 선택에 사용
      * 값: 'ko' (한국어) 또는 'en' (영어)
      */
     window.GAME_LANG = lang;
@@ -152,20 +152,27 @@
 
     /**
      * 게임 실행에 필요한 핵심 엔진 스크립트
-     * 
+     *
      * 로드 순서가 중요합니다!
      * 의존성이 있는 파일은 의존하는 파일보다 먼저 로드되어야 합니다.
-     * 
-     * 1. prompts.js         : 게임 내 프롬프트 및 대화 시스템
-     * 2. gallery-data.js    : 갤러리 데이터 (캐릭터, CG, 음악 정보)
-     * 3. gallery-progress.js: 진행도 저장/불러오기 (localStorage 사용)
-     * 4. gallery-ui-*.js    : 갤러리 UI 컴포넌트들
-     * 5. gallery.js         : 갤러리 메인 논리
-     * 6. main.js            : 메인 게임 엔진 (가장 마지막에 로드)
+     *
+     * 1. prompts.js              : AI 캐릭터 프롬프트 정의
+     * 2. gallery-*.js            : 갤러리 페이지 모듈들
+     * 3. modules/config.js       : 전역 상수 + 유틸 함수
+     * 4. modules/KoreanProcessor : 한국어 조사 처리
+     * 5. modules/StateManager    : 게임 상태(이름, 호감도, 플래그)
+     * 6. modules/SaveManager     : localStorage 저장/불러오기
+     * 7. modules/GalleryManager  : 갤러리 해금 추적
+     * 8. modules/UIManager       : DOM/UI 제어
+     * 9. modules/DialogueSystem  : 대사 타이핑 효과
+     * 10. modules/SceneRenderer  : 씬 렌더링 (배경, 캐릭터, 분기)
+     * 11. modules/FreeTalkSystem : AI 자유대화
+     * 12. modules/GameEngine     : 메인 오케스트레이터
+     * 13. modules/index.js       : 초기화 + 모듈 검증 (항상 마지막)
      */
     const engineScripts = [
-        // 게임 시스템
-        'prompts.js',                // 프롬프트/대화 시스템
+        // AI 캐릭터 프롬프트
+        'prompts.js',
 
         // 갤러리 모듈 (게임에서 진행도 저장에도 사용됨)
         'gallery-data.js',           // 갤러리 데이터 정의
@@ -176,8 +183,18 @@
         'gallery-ui-music.js',       // UI: 음악실
         'gallery.js',                // 갤러리 초기화 및 이벤트
 
-        // 메인 게임 엔진 (항상 마지막)
-        'main.js'                    // 게임 로직, 시나리오 실행
+        // 게임 엔진 모듈 (의존성 순서대로 로드)
+        'modules/config.js',         // 전역 상수 + getAssetUrl()
+        'modules/KoreanProcessor.js',// 한국어 조사 자동 처리
+        'modules/StateManager.js',   // 게임 상태 관리
+        'modules/SaveManager.js',    // 저장/불러오기
+        'modules/GalleryManager.js', // 갤러리 해금 추적
+        'modules/UIManager.js',      // UI/DOM 제어
+        'modules/DialogueSystem.js', // 대사 타이핑 효과
+        'modules/SceneRenderer.js',  // 씬 렌더링
+        'modules/FreeTalkSystem.js', // AI 자유대화
+        'modules/GameEngine.js',     // 메인 오케스트레이터
+        'modules/index.js'           // 초기화 + 모듈 검증 (항상 마지막)
     ];
 
     // =========================================================================
