@@ -84,144 +84,67 @@
     ];
 
     // =========================================================================
-    // 시나리오 스크립트 목록 (한국어 버전)
+    // 시나리오 스크립트 목록 (통합 버전 - ko/en 합본)
     // =========================================================================
 
     /**
-     * 한국어 시나리오 파일 목록
-     * 
-     * 파일명 규칙: ko_day{일차}_{순서}_{시간대}.js
-     *   - ko       : 한국어 (Korean)
-     *   - day1~3   : 게임 진행 일차 (Day 1, Day 2, Day 3...)
-     *   - 1~4      : 하루 중 순서 (1=아침, 2=점심, 3=방과후, 4=밤)
-     *   - morning  : 아침 시나리오
-     *   - lunch    : 점심 시나리오
-     *   - afterschool : 방과후 시나리오
-     *   - night    : 밤 시나리오
-     * 
-     * 예시: ko_day1_1_morning.js = 한국어 1일차 첫번째(아침) 시나리오
-     * 
+     * 통합 시나리오 파일 목록
+     *
+     * 파일명 규칙: dayX_Y_time.js  (언어 접두사 없음)
+     *   - 각 파일 내 씬 노드에 _i18n: { ko: {...}, en: {...} } 블록 포함
+     *   - 게임 엔진이 window.GAME_LANG 값을 보고 런타임에 텍스트 주입
+     *
      * [!] 새 시나리오 추가 시:
-     *     1. 이 배열에 파일 경로 추가
-     *     2. enScenarioScripts에도 동일한 순서로 영문 버전 추가
+     *     1. 이 배열에 파일 경로만 추가하면 됨 (언어별 별도 파일 불필요)
+     *     2. 파일 내 각 씬의 _i18n.ko / _i18n.en 에 텍스트 작성
      */
-    const koScenarioScripts = [
+    const scenarioScripts = [
         // -----------------------------------------------------------------
         // Day 1 (1일차) - 전학 첫날
-        // 주인공이 새 학교에 전학 오는 날
         // -----------------------------------------------------------------
-        'scenario/ko_day1_1_morning.js',      // 아침: 기상, 등교, 첫 인상
-        'scenario/ko_day1_2_lunch.js',        // 점심: 급식실, 캐릭터들과 첫 만남
-        'scenario/ko_day1_3_afterschool.js',  // 방과후: 동아리 탐색, 선택
-        'scenario/ko_day1_4_night.js',        // 밤: 귀가, 하루 회상
+        'scenario/merged/day1_1_morning.js',
+        'scenario/merged/day1_2_lunch.js',
+        'scenario/merged/day1_3_afterschool.js',
+        'scenario/merged/day1_4_night.js',
 
         // -----------------------------------------------------------------
         // Day 2 (2일차) - 적응기
-        // 학교 생활에 적응하며 캐릭터들과 친해지는 날
         // -----------------------------------------------------------------
-        'scenario/ko_day2_1_morning.js',      // 아침: 등교, 우연한 만남
-        'scenario/ko_day2_2_lunch.js',        // 점심: 캐릭터별 이벤트 분기
-        'scenario/ko_day2_3_afterschool.js',  // 방과후: 심화 대화, 호감도 증가
-        'scenario/ko_day2_4_night.js',        // 밤: 호감도 체크, 특별 이벤트
+        'scenario/merged/day2_1_morning.js',
+        'scenario/merged/day2_2_lunch.js',
+        'scenario/merged/day2_3_afterschool.js',
+        'scenario/merged/day2_4_night.js',
 
         // -----------------------------------------------------------------
         // Day 3 (3일차) - 주말 약속
-        // 주말 데이트 약속을 잡는 날
         // -----------------------------------------------------------------
-        'scenario/ko_day3_1_morning.js',      // 아침: 메시지 확인, 주말 약속 수락/거절
-        'scenario/ko_day3_2_lunch.js',        // 점심: 히로인들 간 경쟁 시작
-        'scenario/ko_day3_3_afterschool.js',  // 방과후: 갈등 심화, 귀가 동행 선택
-        'scenario/ko_day3_4_night.js',        // 밤: 갈등 메시지, Day 4 전환
+        'scenario/merged/day3_1_morning.js',
+        'scenario/merged/day3_2_lunch.js',
+        'scenario/merged/day3_3_afterschool.js',
+        'scenario/merged/day3_4_night.js',
 
         // -----------------------------------------------------------------
         // Day 4 (4일차) - 토요일 데이트
-        // 히로인과의 데이트, 고백
         // -----------------------------------------------------------------
-        'scenario/ko_day4_1_morning.js',      // 아침: 데이트 준비, 설렘
-        'scenario/ko_day4_2_lunch.js',        // 점심: 데이트 시작, 함께하는 시간
-        'scenario/ko_day4_3_afterschool.js',  // 오후: 석양, 고백
-        'scenario/ko_day4_4_night.js',        // 밤: 고백 후, Day 5 전환
+        'scenario/merged/day4_1_morning.js',
+        'scenario/merged/day4_2_lunch.js',
+        'scenario/merged/day4_3_afterschool.js',
+        'scenario/merged/day4_4_night.js',
 
         // -----------------------------------------------------------------
         // Day 5 (5일차) - 일요일 에필로그
-        // 마지막 날, 에필로그, 엔딩 크레딧
         // -----------------------------------------------------------------
-        'scenario/ko_day5_1_morning.js',      // 아침: 마지막 날의 시작
-        'scenario/ko_day5_2_lunch.js',        // 점심: 학교에서 재회, 추억
-        'scenario/ko_day5_3_afterschool.js',  // 오후: 옥상 에필로그
-        'scenario/ko_day5_4_night.js'         // 밤: 엔딩 나레이션, 크레딧
-    ];
-
-    // =========================================================================
-    // 시나리오 스크립트 목록 (영문 버전)
-    // =========================================================================
-
-    /**
-     * 영문 시나리오 파일 목록
-     * 
-     * 파일명 규칙: en_day{일차}_{순서}_{시간대}.js
-     *   - en: 영문 (English)
-     *   - 나머지 구조는 한국어 버전과 동일
-     * 
-     * [!] 중요:
-     *     - 한국어 시나리오 추가 시 반드시 영문 버전도 함께 추가
-     *     - 두 배열의 순서와 개수가 반드시 일치해야 함
-     *     - 순서가 다르면 게임 진행에 오류 발생
-     */
-    const enScenarioScripts = [
-        // -----------------------------------------------------------------
-        // Day 1 (1일차) - 전학 첫날
-        // 주인공이 새 학교에 전학 오는 날
-        // -----------------------------------------------------------------
-        'scenario/en_day1_1_morning.js',      // 아침: 기상, 등교
-        'scenario/en_day1_2_lunch.js',        // 점심: 급식실, 첫 만남
-        'scenario/en_day1_3_afterschool.js',  // 방과후: 동아리 탐색
-        'scenario/en_day1_4_night.js',        // 밤: 귀가, 회상
-
-        // -----------------------------------------------------------------
-        // Day 2 (2일차) - 적응기
-        // 학교 생활에 적응하며 캐릭터들과 친해지는 날
-        // -----------------------------------------------------------------
-        'scenario/en_day2_1_morning.js',      // 아침: 등교
-        'scenario/en_day2_2_lunch.js',        // 점심: 캐릭터별 이벤트
-        'scenario/en_day2_3_afterschool.js',  // 방과후: 심화 대화
-        'scenario/en_day2_4_night.js',        // 밤: 호감도 체크
-
-        // -----------------------------------------------------------------
-        // Day 3 (3일차) - 주말 약속
-        // 주말 데이트 약속을 잡는 날
-        // -----------------------------------------------------------------
-        'scenario/en_day3_1_morning.js',      // 아침: 메시지 확인, 주말 약속
-        'scenario/en_day3_2_lunch.js',        // 점심: 히로인 경쟁 시작
-        'scenario/en_day3_3_afterschool.js',  // 방과후: 갈등 심화
-        'scenario/en_day3_4_night.js',        // 밤: 갈등 메시지, Day 4 전환
-
-        // -----------------------------------------------------------------
-        // Day 4 (4일차) - Saturday Date
-        // Date with heroine, confession
-        // -----------------------------------------------------------------
-        'scenario/en_day4_1_morning.js',      // Morning: Date preparation
-        'scenario/en_day4_2_lunch.js',        // Lunch: Date begins
-        'scenario/en_day4_3_afterschool.js',  // Afternoon: Sunset, confession
-        'scenario/en_day4_4_night.js',        // Night: After confession, Day 5
-
-        // -----------------------------------------------------------------
-        // Day 5 (5일차) - Sunday Epilogue
-        // Final day, epilogue, ending credits
-        // -----------------------------------------------------------------
-        'scenario/en_day5_1_morning.js',      // Morning: Last day begins
-        'scenario/en_day5_2_lunch.js',        // Lunch: Reunion at school
-        'scenario/en_day5_3_afterschool.js',  // Afternoon: Rooftop epilogue
-        'scenario/en_day5_4_night.js'         // Night: Ending narration, credits
+        'scenario/merged/day5_1_morning.js',
+        'scenario/merged/day5_2_lunch.js',
+        'scenario/merged/day5_3_afterschool.js',
+        'scenario/merged/day5_4_night.js',
     ];
 
     /**
-     * 현재 언어에 맞는 시나리오 배열 선택
-     * 
-     * URL에 '-en'이 포함되어 있으면 → enScenarioScripts (영문)
-     * 그 외 → koScenarioScripts (한국어)
+     * 현재 언어를 전역으로 노출 → main.js 에서 _i18n 텍스트 선택에 사용
+     * 값: 'ko' (한국어) 또는 'en' (영어)
      */
-    const scenarioScripts = isEnglish ? enScenarioScripts : koScenarioScripts;
+    window.GAME_LANG = lang;
 
     // =========================================================================
     // 게임 엔진 스크립트 (Game Engine Scripts)

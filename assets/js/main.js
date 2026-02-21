@@ -2824,21 +2824,52 @@ class SceneRenderer {
 
         // 1. 현재 날짜 시나리오에서 먼저 검색
         if (SCENARIO[this.stateManager.currentDay]?.[id]) {
-            return SCENARIO[this.stateManager.currentDay][id];
+            return this._applyI18n(SCENARIO[this.stateManager.currentDay][id]);
         }
 
         // 2. 모든 날짜 검색 (다른 날짜의 씬으로 점프할 경우)
         for (const day in SCENARIO) {
-            if (SCENARIO[day]?.[id]) return SCENARIO[day][id];
+            if (SCENARIO[day]?.[id]) return this._applyI18n(SCENARIO[day][id]);
         }
 
         // 3. 공통 시나리오(0)에서 검색 (날짜 무관한 씬들)
-        if (SCENARIO[0]?.[id]) return SCENARIO[0][id];
+        if (SCENARIO[0]?.[id]) return this._applyI18n(SCENARIO[0][id]);
 
         // 4. 루트 레벨 검색 (구버전 호환)
-        if (SCENARIO[id]) return SCENARIO[id];
+        if (SCENARIO[id]) return this._applyI18n(SCENARIO[id]);
 
         return null;
+    }
+
+    /**
+     * 씬의 _i18n 블록에서 현재 언어 텍스트를 꺼내 최상위 필드로 주입
+     *
+     * _i18n 블록이 없는 씬(구버전 or 언어 중립 씬)은 그대로 반환.
+     *
+     * @param {Object} scene - 원본 씬 데이터
+     * @returns {Object} 언어 텍스트가 주입된 씬 (원본 불변)
+     */
+    _applyI18n(scene) {
+        if (!scene || !scene._i18n) return scene;
+
+        const lang   = window.GAME_LANG || 'ko';
+        const i18n   = scene._i18n[lang] ?? scene._i18n['ko'] ?? {};
+        const result = { ...scene };
+
+        // 최상위 텍스트 필드 주입 (name, text, context, personality)
+        for (const key of ['name', 'text', 'context', 'personality']) {
+            if (i18n[key] !== undefined) result[key] = i18n[key];
+        }
+
+        // choices[].text 주입 (인덱스 순서로 매칭)
+        if (i18n.choices && Array.isArray(result.choices)) {
+            result.choices = result.choices.map((choice, idx) => ({
+                ...choice,
+                text: i18n.choices[idx] ?? choice.text ?? '',
+            }));
+        }
+
+        return result;
     }
 
     /** 
