@@ -102,42 +102,42 @@
         // -----------------------------------------------------------------
         // Day 1 (1일차) - 전학 첫날
         // -----------------------------------------------------------------
-        'scenario/merged/day1_1_morning.js',
-        'scenario/merged/day1_2_lunch.js',
-        'scenario/merged/day1_3_afterschool.js',
-        'scenario/merged/day1_4_night.js',
+        'scenario/day1_1_morning.js',
+        'scenario/day1_2_lunch.js',
+        'scenario/day1_3_afterschool.js',
+        'scenario/day1_4_night.js',
 
         // -----------------------------------------------------------------
         // Day 2 (2일차) - 적응기
         // -----------------------------------------------------------------
-        'scenario/merged/day2_1_morning.js',
-        'scenario/merged/day2_2_lunch.js',
-        'scenario/merged/day2_3_afterschool.js',
-        'scenario/merged/day2_4_night.js',
+        'scenario/day2_1_morning.js',
+        'scenario/day2_2_lunch.js',
+        'scenario/day2_3_afterschool.js',
+        'scenario/day2_4_night.js',
 
         // -----------------------------------------------------------------
         // Day 3 (3일차) - 주말 약속
         // -----------------------------------------------------------------
-        'scenario/merged/day3_1_morning.js',
-        'scenario/merged/day3_2_lunch.js',
-        'scenario/merged/day3_3_afterschool.js',
-        'scenario/merged/day3_4_night.js',
+        'scenario/day3_1_morning.js',
+        'scenario/day3_2_lunch.js',
+        'scenario/day3_3_afterschool.js',
+        'scenario/day3_4_night.js',
 
         // -----------------------------------------------------------------
         // Day 4 (4일차) - 토요일 데이트
         // -----------------------------------------------------------------
-        'scenario/merged/day4_1_morning.js',
-        'scenario/merged/day4_2_lunch.js',
-        'scenario/merged/day4_3_afterschool.js',
-        'scenario/merged/day4_4_night.js',
+        'scenario/day4_1_morning.js',
+        'scenario/day4_2_lunch.js',
+        'scenario/day4_3_afterschool.js',
+        'scenario/day4_4_night.js',
 
         // -----------------------------------------------------------------
         // Day 5 (5일차) - 일요일 에필로그
         // -----------------------------------------------------------------
-        'scenario/merged/day5_1_morning.js',
-        'scenario/merged/day5_2_lunch.js',
-        'scenario/merged/day5_3_afterschool.js',
-        'scenario/merged/day5_4_night.js',
+        'scenario/day5_1_morning.js',
+        'scenario/day5_2_lunch.js',
+        'scenario/day5_3_afterschool.js',
+        'scenario/day5_4_night.js',
     ];
 
     /**
