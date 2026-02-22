@@ -1034,7 +1034,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"Really... You have such a nice way with words. Being the student council president, I'm always tense, but when I'm with you, I feel relaxed. I might end up wanting to act spoiled... Hehe, just kidding.\""
+                "text": "\"Really... You have such a nice way with words. Being the student council president, I'm always tense, but when I'm with you, I feel relaxed. I might end up letting my guard down around you... Hehe, just kidding.\""
             }
         }
     },
@@ -1684,7 +1684,7 @@ Object.assign(SCENARIO[1], {
                 "name": "Homeroom Teacher",
                 "text": "\"Well, everyone seems very interested in the new transfer student. You must be nervous, but everyone here is nice, so don't worry too much. Before you introduce yourself, do you have any questions for me?\"",
                 "context": "Location: In front of the podium in Class 2-3. Situation: A brief waiting period before the homeroom teacher introduces the transfer student protagonist to the class. Dozens of students are watching us, but this conversation should only be between the protagonist and the homeroom teacher. The protagonist's introduction to all the students is an official event that happens AFTER this conversation, so do NOT have the protagonist greet or introduce themselves to the students yet. Talk only about personal questions to the teacher, advice about school life, first impressions, etc. Keep the conversation going until it naturally concludes. In the final turn only, mention that you'll now officially introduce them to the class.",
-                "personality": "A professional teacher with clear boundaries between work and personal life, but actually has a clumsy side and gets flustered by the protagonist's unexpectedly mature demeanor. Has a hidden desire to lean on the protagonist - a 'gap moe' characteristic."
+                "personality": "A professional teacher with clear boundaries between work and personal life, but actually has a clumsy side and gets flustered by the protagonist's unexpectedly mature demeanor. Has a hidden desire to lean on the protagonist - a charming contrast to her strict exterior."
             }
         }
     },

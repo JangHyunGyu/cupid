@@ -1187,7 +1187,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Yuna",
-                "text": "I won't let you die like Sunbae. To protect you... I'd rather break you and tie you to my side."
+                "text": "I won't let you die like he did. To protect you... I'd rather break you and tie you to my side."
             }
         }
     },

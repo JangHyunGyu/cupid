@@ -61,7 +61,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Me",
-                "text": "*Ding-dong-dang-dong! Finally, lunch break. The classroom is buzzing with energy, and my heart starts to race.*",
+                "text": "*The bell rings! Finally, lunch break. The classroom is buzzing with energy, and my heart starts to race.*",
                 "choices": [
                     "Go to see Seoyeon and her radiant smile.",
                     "Head to the library annex backyard as promised.",
