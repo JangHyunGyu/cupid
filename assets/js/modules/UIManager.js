@@ -167,7 +167,7 @@ class UIManager {
                             const btn = document.createElement('button');
                             btn.type = 'button';
                             btn.id = 'upload-image-btn';
-                            btn.title = document.documentElement.lang === 'en' ? 'Upload image' : '이미지 업로드';
+                            btn.title = { es: 'Subir imagen', ja: '画像をアップロード', en: 'Upload image' }[document.documentElement.lang] || '이미지 업로드';
                             btn.innerHTML = '<span aria-hidden="true">📸</span>';
                             container.appendChild(btn);
                             this.imageUploadBtn = btn;
@@ -191,7 +191,7 @@ class UIManager {
                             const remBtn = document.createElement('button');
                             remBtn.id = 'remove-image-btn';
                             remBtn.type = 'button';
-                            remBtn.title = document.documentElement.lang === 'en' ? 'Remove image' : '미리보기 제거';
+                            remBtn.title = { es: 'Eliminar imagen', ja: '画像を削除', en: 'Remove image' }[document.documentElement.lang] || '미리보기 제거';
                             remBtn.textContent = '×';
                             previewDiv.appendChild(remBtn);
 
@@ -248,7 +248,7 @@ class UIManager {
      */
     handleImageUpload(file) {
         if (!file.type.startsWith('image/')) {
-            alert(document.documentElement.lang === 'en' ? 'Only image files can be uploaded.' : '이미지 파일만 업로드 가능합니다.');
+            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロード可能です。', en: 'Only image files can be uploaded.' }[document.documentElement.lang] || '이미지 파일만 업로드 가능합니다.');
             return;
         }
 
@@ -560,8 +560,8 @@ class UIManager {
     /** 홈으로 이동 (BGM 정지 후 메인 페이지로) */
     goToHome() {
         if (window.soundManager) soundManager.stopBgm();
-        const isEn = document.documentElement.lang === 'en';
-        window.location.href = isEn ? 'index-en.html' : 'index.html';
+        const lang = document.documentElement.lang || 'ko';
+        window.location.href = { es: 'index-es.html', ja: 'index-ja.html', en: 'index-en.html' }[lang] || 'index.html';
     }
 
     /**

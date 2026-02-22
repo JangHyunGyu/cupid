@@ -1,0 +1,19 @@
+{
+    "name": "Cupid: 無料ウェブビジュアルノベル",
+    "short_name": "Cupid",
+    "description": "インストール不要の無料ウェブビジュアルノベル。学園恋愛の主人公になろう。",
+    "start_url": "/index-ja.html",
+    "display": "standalone",
+    "background_color": "#1a1a2e",
+    "theme_color": "#e94560",
+    "orientation": "portrait",
+    "lang": "ja",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        }
+    ],
+    "categories": ["games", "entertainment"]
+}

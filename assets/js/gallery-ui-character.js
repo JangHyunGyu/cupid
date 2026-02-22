@@ -152,8 +152,8 @@ class CharacterRenderer {
                     </div>
                     <div class="card-info">
                         <h3>${met ? char.name : '???'}</h3>
-                        <p>${met ? char.title : (this.ui.lang === 'ko' ? '아직 만나지 못함' : 'Not yet met')}</p>
-                        ${met ? `<span class="expression-count">${this.ui.lang === 'ko' ? '표정' : 'Expressions'} ${expressionCount}</span>` : ''}
+                        <p>${met ? char.title : ({ ko: '아직 만나지 못함', en: 'Not yet met', es: 'Aún no conocido', ja: 'まだ出会っていない' }[this.ui.lang] || 'Not yet met')}</p>
+                        ${met ? `<span class="expression-count">${{ ko: '표정', en: 'Expressions', es: 'Expresiones', ja: '表情' }[this.ui.lang] || 'Expressions'} ${expressionCount}</span>` : ''}
                     </div>
                 </div>
             `;
@@ -171,11 +171,15 @@ class CharacterRenderer {
         const met = this.ui.progress.isMet(charId);
 
         if (!met) {
+            const L = (ko, en, es, ja) => ({ ko, en, es, ja })[this.ui.lang] || en;
             this.ui.showUnlockPopup({
-                title: this.ui.lang === 'ko' ? '캐릭터 미발견' : 'Character Not Found',
-                message: this.ui.lang === 'ko'
-                    ? '아직 이 캐릭터를 만나지 못했습니다.<br>게임을 진행하여 캐릭터를 만나보세요!'
-                    : 'You haven\'t met this character yet.<br>Play the game to meet them!',
+                title: L('캐릭터 미발견', 'Character Not Found', 'Personaje no encontrado', 'キャラクター未発見'),
+                message: L(
+                    '아직 이 캐릭터를 만나지 못했습니다.<br>게임을 진행하여 캐릭터를 만나보세요!',
+                    'You haven\'t met this character yet.<br>Play the game to meet them!',
+                    'Aún no has conocido a este personaje.<br>¡Juega para conocerlo!',
+                    'まだこのキャラクターに出会っていません。<br>ゲームを進めてキャラクターに会いましょう！'
+                ),
                 icon: '❓'
             });
         } else {
@@ -211,7 +215,7 @@ class CharacterRenderer {
         if (affinity >= 80) {
             descContainer.innerHTML = char.description;
         } else {
-            const moreBtn = this.ui.lang === 'ko' ? '소개 더 보기' : 'Read More';
+            const moreBtn = { ko: '소개 더 보기', en: 'Read More', es: 'Leer más', ja: 'もっと見る' }[this.ui.lang] || 'Read More';
             descContainer.innerHTML = `${char.shortDescription} <button class="desc-more-btn" data-char-id="${charId}">${moreBtn}</button>`;
         }
 
@@ -311,9 +315,12 @@ class CharacterRenderer {
 
         const affinity = this.ui.progress.getAffinity(char.id);
 
-        const labels = this.ui.lang === 'ko' ?
-            { age: '나이', birthday: '생일', height: '키', weight: '몸무게', bust: '신체사이즈', hobby: '취미' } :
-            { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Body Size', hobby: 'Hobby' };
+        const labels = {
+            ko: { age: '나이', birthday: '생일', height: '키', weight: '몸무게', bust: '신체사이즈', hobby: '취미' },
+            en: { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Body Size', hobby: 'Hobby' },
+            es: { age: 'Edad', birthday: 'Cumpleaños', height: 'Altura', weight: 'Peso', bust: 'Talla', hobby: 'Pasatiempo' },
+            ja: { age: '年齢', birthday: '誕生日', height: '身長', weight: '体重', bust: '身体サイズ', hobby: '趣味' }
+        }[this.ui.lang] || { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Body Size', hobby: 'Hobby' };
 
         const lockText = '🔒';
 

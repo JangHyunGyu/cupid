@@ -99,7 +99,7 @@ class SceneRenderer {
         if (!scene || !scene._i18n) return scene;
 
         const lang   = window.GAME_LANG || 'ko';
-        const i18n   = scene._i18n[lang] ?? scene._i18n['ko'] ?? {};
+        const i18n   = scene._i18n[lang] ?? scene._i18n['en'] ?? scene._i18n['ko'] ?? {};
         const result = { ...scene };
 
         // 최상위 텍스트 필드 주입 (name, text, context, personality)

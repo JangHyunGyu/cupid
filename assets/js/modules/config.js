@@ -78,11 +78,17 @@ const REGISTERED_CG_IDS = new Set([
  * - 캐릭터 추가/변경 시 여기만 수정하면 전체 반영
  */
 const CHAR_NAME_MAP = Object.freeze({
+    // Korean
     "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain",
     "담임선생님": "Teacher", "보건선생님": "Nurse",
+    // English
     "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
     "Teacher": "Teacher", "Nurse": "Nurse",
-    "Homeroom Teacher": "Teacher", "School Nurse": "Nurse"
+    "Homeroom Teacher": "Teacher", "School Nurse": "Nurse",
+    // Spanish
+    "Profesora": "Teacher", "Enfermera": "Nurse",
+    // Japanese
+    "担任先生": "Teacher", "保健先生": "Nurse"
 });
 
 

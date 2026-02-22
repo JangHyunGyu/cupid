@@ -1,0 +1,2034 @@
+[
+  {
+    "key": "day3_walk_with_teacher",
+    "name": "Me",
+    "text": "*I headed to the meeting spot. The homeroom teacher is waving from the car.*"
+  },
+  {
+    "key": "day3_walk_teacher_greet",
+    "name": "Homeroom Teacher",
+    "text": "\"{name}! Good morning! It's nice to commute together by car. Now, put on your seatbelt.\""
+  },
+  {
+    "key": "day3_walk_teacher_car",
+    "name": "Me",
+    "text": "*I got into the teacher's car. A subtle perfume scent and soft music fills the air. It feels awkward yet exciting.*"
+  },
+  {
+    "key": "day3_walk_teacher_hair",
+    "name": "Homeroom Teacher",
+    "text": "*While stopped at a red light, the teacher suddenly reaches out to fix my hair* \"...Hold on. This part was messy.\""
+  },
+  {
+    "key": "day3_walk_teacher_hair_2",
+    "name": "Homeroom Teacher",
+    "text": "*She pauses, whispering* \"...I shouldn't be doing this to a student.\""
+  },
+  {
+    "key": "day3_walk_teacher_conflict",
+    "name": "Me",
+    "text": "*Her touch is warm. The air inside the car shifts to something strange.*",
+    "choices": [
+      "\"Your hands are warm, teacher\"",
+      "*Quietly hold her hand*",
+      "\"It's okay, teacher\""
+    ]
+  },
+  {
+    "key": "day3_walk_teacher_warm",
+    "name": "Homeroom Teacher",
+    "text": "*The teacher pulls her hand back, flustered* \"Oh my, this kid... Surprising a teacher like that.\""
+  },
+  {
+    "key": "day3_walk_teacher_hold",
+    "name": "Homeroom Teacher",
+    "text": "*She looks at our hands in surprise... but doesn't pull away* \"...When the light changes, I'm letting go. Promise.\""
+  },
+  {
+    "key": "day3_walk_teacher_calm",
+    "name": "Homeroom Teacher",
+    "text": "*The teacher smiles wistfully* \"...Thank you. Was teacher being a bit strange?\""
+  },
+  {
+    "key": "day3_walk_teacher_freetalk",
+    "name": "Me",
+    "text": "*Riding in the homeroom teacher's car on the way to school.*",
+    "context": "In the homeroom teacher's car on the way to school. She fixed my hair and said 'I shouldn't be doing this to a student.' The tension of a forbidden love hangs in the air."
+  },
+  {
+    "key": "day3_walk_teacher_talk",
+    "name": "Homeroom Teacher",
+    "text": "*While driving, the teacher carefully brings up a topic* \"Say, {name}. Do you have time this weekend?\"",
+    "choices": [
+      "Yes, why? Is something going on?",
+      "Well... what are your plans for the weekend?",
+      "I don't have any plans yet?"
+    ]
+  },
+  {
+    "key": "day3_teacher_weekend_ask",
+    "name": "Homeroom Teacher",
+    "text": "*The teacher glances at me and smiles* \"Actually... I got two tickets for a museum exhibition. It'd be a shame to go alone... Want to come with me? How about Sunday afternoon at 2?\""
+  },
+  {
+    "key": "day3_teacher_weekend_curious",
+    "name": "Homeroom Teacher",
+    "text": "\"Hmm... I have museum exhibition tickets and I wanted to go together. If you're okay with it... Sunday afternoon at 2?\""
+  },
+  {
+    "key": "day3_teacher_weekend_none",
+    "name": "Homeroom Teacher",
+    "text": "*The teacher's face lights up* \"Really? Then let's go see the museum exhibition on Sunday afternoon! How about meeting at the museum at 2?\""
+  },
+  {
+    "key": "day3_teacher_weekend_choice",
+    "name": "Me",
+    "text": "*The teacher glances at me with hopeful eyes. The air in the car feels unusually warm...*",
+    "choices": [
+      "Sure! I'll definitely be there on Sunday",
+      "Let me think about it and reply later",
+      "Museums are boring though."
+    ]
+  },
+  {
+    "key": "day3_teacher_weekend_yes",
+    "name": "Homeroom Teacher",
+    "text": "*The teacher smiles brightly* \"Really? Then Sunday at 2 PM, it's a date. It'll be fun!\""
+  },
+  {
+    "key": "day3_teacher_weekend_later",
+    "name": "Homeroom Teacher",
+    "text": "*The teacher makes a slightly disappointed face* \"Oh... really? Then let's talk again at lunchtime.\""
+  },
+  {
+    "key": "day3_teacher_weekend_no",
+    "name": "Homeroom Teacher",
+    "text": "*The teacher's expression stiffens for a moment* \"...That's disappointing. I had high expectations for you.\""
+  },
+  {
+    "key": "day3_prepare_school",
+    "name": "Me",
+    "text": "*I hurried to get ready for school.*"
+  },
+  {
+    "key": "day3_prepare_school_no_contact",
+    "name": "Me",
+    "text": "*I check my messages...*"
+  },
+  {
+    "key": "day3_prepare_school_ads",
+    "name": "Me",
+    "text": "*'Limited time sale! Order now...', 'Congratulations on winning the event...'* ...They're all spam messages. Looks like I'm going to school alone today."
+  },
+  {
+    "key": "day3_walk_alone",
+    "name": "Me",
+    "text": "*I headed to school alone. The morning air is refreshing.*"
+  },
+  {
+    "key": "day3_arrive_school",
+    "name": "Me",
+    "text": "*Before I knew it, I arrived at the school gate. Another lively day begins.*"
+  },
+  {
+    "key": "day3_classroom",
+    "name": "Me",
+    "text": "*As I enter the classroom, the kids are buzzing. I sit down at my desk and notice... something is on it.*"
+  },
+  {
+    "key": "day3_classroom_note_seoyeon",
+    "name": "Me",
+    "text": "*There's a small note. 'Let's eat lunch together ♡ - Seoyeon' ... We were literally just together, and she left a note in advance?*"
+  },
+  {
+    "key": "day3_classroom_note_yuna",
+    "name": "Me",
+    "text": "*There's an origami crow. I unfold its wings to find writing inside. '...Tomorrow night' — Looks like Yuna left it.*"
+  },
+  {
+    "key": "day3_classroom_note_dain",
+    "name": "Me",
+    "text": "*There's an energy bar and a sticky note. 'If you don't exercise, at least eat this! - Dain' ... She must have left it earlier.*"
+  },
+  {
+    "key": "day3_classroom_empty",
+    "name": "Me",
+    "text": "*Nothing on my desk. Just an ordinary Friday morning.*"
+  },
+  {
+    "key": "day3_classroom_class_start",
+    "name": "Me",
+    "text": "*Class begins. The homeroom teacher starts writing problems on the board.*"
+  },
+  {
+    "key": "day3_classroom_teacher_event",
+    "name": "Me",
+    "text": "*When the teacher raises her arm to write on the board, a subtle whiff of perfume drifts over. No one else seems to notice... only me.*"
+  },
+  {
+    "key": "day3_classroom_teacher_wink",
+    "name": "Homeroom Teacher",
+    "text": "*While asking a question, her eyes meet mine... she gives a subtle wink* \"...{name}, your answer?\""
+  },
+  {
+    "key": "day3_classroom_teacher_glance",
+    "name": "Me",
+    "text": "*The teacher glances my way and smiles faintly. Is she thinking about our Sunday plans?*"
+  },
+  {
+    "key": "day3_classroom_nurse_visit",
+    "name": "Me",
+    "text": "*Mid-class, the classroom door opens and the school nurse walks in.*"
+  },
+  {
+    "key": "day3_classroom_nurse_visit_2",
+    "name": "School Nurse",
+    "text": "\"Sorry to interrupt, teacher. I'm here to hand out health surveys.\""
+  },
+  {
+    "key": "day3_classroom_nurse_visit_3",
+    "name": "Me",
+    "text": "*The nurse pauses in front of me while handing out surveys. Her fingers lightly brush against my hand.*"
+  },
+  {
+    "key": "day3_classroom_nurse_secret",
+    "name": "School Nurse",
+    "text": "*Without anyone noticing, she slips a small note between the survey pages. 'Come to the nurse's office at lunch. I've prepared something special 💋'*"
+  },
+  {
+    "key": "day3_classroom_nurse_band",
+    "name": "School Nurse",
+    "text": "*She hands me the survey and places a band-aid on the back of my hand* \"...You don't have a wound? Well... it's teacher's mark.\""
+  },
+  {
+    "key": "day3_classroom_nurse_pass",
+    "name": "Me",
+    "text": "*The nurse smiles gently as she hands me the survey and moves on.*"
+  },
+  {
+    "key": "day3_classroom_nurse_leave",
+    "name": "Me",
+    "text": "*The nurse leaves the classroom. None of the other students noticed a thing.*"
+  },
+  {
+    "key": "day3_break_time",
+    "name": "Me",
+    "text": "*Break time. I check my phone — there are messages about weekend plans.*"
+  },
+  {
+    "key": "day3_weekend_check_seoyeon",
+    "name": "System",
+    "text": ""
+  },
+  {
+    "key": "day3_weekend_invite_seoyeon",
+    "name": "Seoyeon",
+    "text": "*Message* 'Hey {name}! Want to check out that new café this Saturday? I really want to go with you! ☕'",
+    "choices": [
+      "Sure! Let's go!",
+      "Sorry, I'm busy this weekend"
+    ]
+  },
+  {
+    "key": "day3_weekend_yes_seoyeon",
+    "name": "Seoyeon",
+    "text": "*Instant reply* 'Really?! See you Saturday then! You can look forward to it! ♡'"
+  },
+  {
+    "key": "day3_weekend_no_seoyeon",
+    "name": "Seoyeon",
+    "text": "*Reply after a long pause* '...That's okay! Maybe next time!'"
+  },
+  {
+    "key": "day3_weekend_check_yuna",
+    "name": "System",
+    "text": ""
+  },
+  {
+    "key": "day3_weekend_invite_yuna",
+    "name": "Yuna",
+    "text": "*Message* '...Saturday night. 8 PM. The warehouse behind school. Come if you want the truth. Alone.'",
+    "choices": [
+      "Got it, I'll be there",
+      "That's creepy, no thanks"
+    ]
+  },
+  {
+    "key": "day3_weekend_no_yuna",
+    "name": "Yuna",
+    "text": "*Read. No reply.*"
+  },
+  {
+    "key": "day3_weekend_check_dain",
+    "name": "System",
+    "text": ""
+  },
+  {
+    "key": "day3_weekend_invite_dain",
+    "name": "Dain",
+    "text": "*Message* '{name}!!! Wanna work out with me at the gym on Saturday?! See you at 9!! 💪🔥'",
+    "choices": [
+      "Sure! See you Saturday!",
+      "Working out isn't really my thing..."
+    ]
+  },
+  {
+    "key": "day3_weekend_yes_dain",
+    "name": "Dain",
+    "text": "*Reply in 0.5 seconds* 'AWESOME!! Don't forget your gym clothes!! 🏃‍♂️'"
+  },
+  {
+    "key": "day3_weekend_check_nurse",
+    "name": "System",
+    "text": ""
+  },
+  {
+    "key": "day3_weekend_invite_nurse",
+    "name": "School Nurse",
+    "text": "*Message* 'Are you free this Sunday evening? I know a great restaurant I'd love to take you to... 😉'",
+    "choices": [
+      "Sure! I'd love to go!",
+      "Sorry, I have plans on Sunday..."
+    ]
+  },
+  {
+    "key": "day3_weekend_check_teacher",
+    "name": "System",
+    "text": ""
+  },
+  {
+    "key": "day3_weekend_invite_teacher",
+    "name": "Homeroom Teacher",
+    "text": "*Message* '{name}, there's a special exhibition at the city museum this Sunday. Want to go together? I'll give you extra credit too lol'",
+    "choices": [
+      "Sure! I'll definitely be there!",
+      "Museums aren't really my thing..."
+    ]
+  },
+  {
+    "key": "day3_check_multiple_dates",
+    "name": "System",
+    "text": ""
+  },
+  {
+    "key": "day3_multi_from_seoyeon",
+    "name": "System",
+    "text": ""
+  },
+  {
+    "key": "day3_multi_from_yuna",
+    "name": "System",
+    "text": ""
+  },
+  {
+    "key": "day3_multi_from_dain",
+    "name": "System",
+    "text": ""
+  },
+  {
+    "key": "day3_multi_from_nurse",
+    "name": "System",
+    "text": ""
+  },
+  {
+    "key": "day3_set_multiple_dates",
+    "name": "Me",
+    "text": "*...Wait. Did I just make plans with multiple people this weekend? I'm starting to feel uneasy.*"
+  },
+  {
+    "key": "day3_morning_end",
+    "name": "Me",
+    "text": "*Classes began... and before I knew it, it was lunchtime.*"
+  },
+  {
+    "key": "day3_lunch_collision_seoyeon_dain",
+    "name": "Dain",
+    "text": "\"Hey, {name}! Let's go eat! Oh... Seoyeon too?\""
+  },
+  {
+    "key": "day3_lunch_tension_1",
+    "name": "Me",
+    "text": "*Suddenly, the classroom fills with tension. Their eyes meeting each other don't look friendly.*"
+  },
+  {
+    "key": "day3_lunch_tension_2",
+    "name": "Seoyeon",
+    "text": "\"...Excuse me, I spoke to {name} first?\""
+  },
+  {
+    "key": "day3_lunch_tension_3",
+    "name": "Me",
+    "text": "*This doesn't look good... What should I do?*",
+    "choices": [
+      "Have lunch with Seoyeon",
+      "Have lunch with Yuna",
+      "Have lunch with Dain",
+      "Suggest eating together",
+      "Run away to eat alone"
+    ]
+  },
+  {
+    "key": "day3_lunch_choose_seoyeon",
+    "name": "Me",
+    "text": "\"Seoyeon, let's go together. We had plans from yesterday, remember?\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_others_react",
+    "name": "Me",
+    "text": "*I can feel the others' expressions harden.*"
+  },
+  {
+    "key": "day3_lunch_yuna_jealous",
+    "name": "Yuna",
+    "text": "\"...I see. Enjoy your meal.\""
+  },
+  {
+    "key": "day3_lunch_yuna_jealous_2",
+    "name": "Me",
+    "text": "*Yuna leaves the classroom without a word. Her back looks somehow lonely.*"
+  },
+  {
+    "key": "day3_lunch_dain_jealous",
+    "name": "Dain",
+    "text": "\"What, you're not including me? Hmph, fine!\""
+  },
+  {
+    "key": "day3_lunch_dain_jealous_2",
+    "name": "Me",
+    "text": "*Dain grumbles and goes to her other friends. I'm a bit worried...*"
+  },
+  {
+    "key": "day3_lunch_with_seoyeon_start",
+    "name": "Seoyeon",
+    "text": "\"Phew... Finally just the two of us. Honestly, {name}, don't you think too many people are interested in you lately?\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_jealous_talk",
+    "name": "Me",
+    "text": "*There's an unusual edge in Seoyeon's voice.*",
+    "choices": [
+      "\"You're the most important to me\"",
+      "\"They're just friends\"",
+      "\"Why, are you jealous?\""
+    ]
+  },
+  {
+    "key": "day3_lunch_seoyeon_reassure",
+    "name": "Seoyeon",
+    "text": "\"...Really? I'll remember that.\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_deny",
+    "name": "Seoyeon",
+    "text": "\"...Right, I guess so. Sorry, I said something weird.\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_tease",
+    "name": "Seoyeon",
+    "text": "\"W-what! Who said I'm jealous! ...Maybe a little.\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_weekend",
+    "name": "Seoyeon",
+    "text": "\"By the way, what are you doing this weekend? I... want to hang out somewhere together if you're free.\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_caught",
+    "name": "Me",
+    "text": "*Wait, I already have other plans... What should I do?*",
+    "choices": [
+      "\"How about Sunday?\" (Lie)",
+      "Be honest",
+      "Dodge the question"
+    ]
+  },
+  {
+    "key": "day3_lunch_seoyeon_lie",
+    "name": "Seoyeon",
+    "text": "\"Really?! Then let's meet on Sunday! Can I pick where to go?\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_honest",
+    "name": "Seoyeon",
+    "text": "\"...What? You have other plans? With who?\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_honest_2",
+    "name": "Me",
+    "text": "*Seoyeon's eyes turn cold. The atmosphere has frozen.*"
+  },
+  {
+    "key": "day3_lunch_seoyeon_dodge",
+    "name": "Seoyeon",
+    "text": "\"Why are you hesitating? ...Do you have other plans?\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_promise",
+    "name": "Me",
+    "text": "\"Sure, let's hang out this weekend.\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_end",
+    "name": "Me",
+    "text": "*We finished lunch and sat on a bench behind the school. A gentle breeze is blowing.*"
+  },
+  {
+    "key": "day3_lunch_seoyeon_bench",
+    "name": "Seoyeon",
+    "text": "*Quietly leaning her head on my shoulder* \"...{name}. I've been strange lately. I think about you every single day.\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_bench_2",
+    "name": "Me",
+    "text": "*The scent of shampoo from Seoyeon's hair. My heart is racing.*",
+    "choices": [
+      "*Pat Seoyeon's head*",
+      "\"I feel the same way\"",
+      "*Stay still*"
+    ]
+  },
+  {
+    "key": "day3_lunch_seoyeon_pat",
+    "name": "Seoyeon",
+    "text": "*As I pat her head, Seoyeon buries her face* \"D-dummy... Don't do that in a place like this...\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_same",
+    "name": "Seoyeon",
+    "text": "*Seoyeon lifts her head and looks at me* \"...Really? I'm going to remember that.\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_silent",
+    "name": "Seoyeon",
+    "text": "*Seoyeon quietly takes my hand* \"...This is nice. Just like this.\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_freetalk",
+    "name": "Me",
+    "text": "*Sitting side by side with Seoyeon on the bench behind the school, chatting.*",
+    "context": "Sitting with Seoyeon on a bench behind school. She leaned her head on my shoulder and confessed she thinks about me every day. Sweet atmosphere."
+  },
+  {
+    "key": "day3_lunch_seoyeon_bell",
+    "name": "Me",
+    "text": "*The bell rings for class. Time with Seoyeon felt magically short.*"
+  },
+  {
+    "key": "day3_lunch_choose_yuna",
+    "name": "Me",
+    "text": "\"Yuna, let's go together.\""
+  },
+  {
+    "key": "day3_lunch_yuna_others_react",
+    "name": "Me",
+    "text": "*I decided to go with Yuna.*"
+  },
+  {
+    "key": "day3_lunch_yuna_seoyeon_jealous",
+    "name": "Seoyeon",
+    "text": "\"...Okay. Got it.\""
+  },
+  {
+    "key": "day3_lunch_with_yuna_start",
+    "name": "Yuna",
+    "text": "\"...Follow me.\""
+  },
+  {
+    "key": "day3_lunch_yuna_rooftop",
+    "name": "Me",
+    "text": "*I followed Yuna to the rooftop. Yuna lays down a blanket on the floor and pulls out a lunchbox from her bag.*"
+  },
+  {
+    "key": "day3_lunch_yuna_bento",
+    "name": "Yuna",
+    "text": "\"...I made it. For two.\""
+  },
+  {
+    "key": "day3_lunch_yuna_bento_2",
+    "name": "Me",
+    "text": "*Two lunch boxes placed side by side. One with a black lid, one with a pink lid. Did Yuna make these herself?*",
+    "choices": [
+      "\"You made these yourself?\"",
+      "*Quietly taste it*"
+    ]
+  },
+  {
+    "key": "day3_lunch_yuna_bento_ask",
+    "name": "Yuna",
+    "text": "*Looking away* \"...You're perceptive. Throw it away if it's bad.\""
+  },
+  {
+    "key": "day3_lunch_yuna_bento_taste",
+    "name": "Me",
+    "text": "*I take a bite. Surprisingly... it's actually really good!*"
+  },
+  {
+    "key": "day3_lunch_yuna_bento_eat",
+    "name": "Yuna",
+    "text": "*Watching me eat, she smiles ever so slightly* \"...Is it good?\""
+  },
+  {
+    "key": "day3_lunch_yuna_lap",
+    "name": "Me",
+    "text": "*After finishing the lunchbox, a gentle breeze makes me drowsy. Yuna suddenly pushes down on my shoulder.*"
+  },
+  {
+    "key": "day3_lunch_yuna_lap_2",
+    "name": "Yuna",
+    "text": "\"...Lie down. On my lap.\"",
+    "choices": [
+      "*Lie on Yuna's lap*",
+      "\"It's okay, not yet...\""
+    ]
+  },
+  {
+    "key": "day3_lunch_yuna_lap_yes",
+    "name": "Yuna",
+    "text": "*As I lie down, Yuna strokes my hair* \"...Just five minutes.\""
+  },
+  {
+    "key": "day3_lunch_yuna_lap_no",
+    "name": "Yuna",
+    "text": "\"...Fine.\""
+  },
+  {
+    "key": "day3_lunch_yuna_lap_talk",
+    "name": "Yuna",
+    "text": "*Quietly stroking my hair* \"...When we're like this, it feels like you're mine.\""
+  },
+  {
+    "key": "day3_lunch_yuna_freetalk",
+    "name": "Me",
+    "text": "*Lying on Yuna's lap, looking up at the sky from the rooftop, chatting.*",
+    "context": "Lying on Yuna's lap on the rooftop. Yuna made a homemade lunchbox and is stroking my hair. Quiet, peaceful atmosphere."
+  },
+  {
+    "key": "day3_lunch_yuna_talk_1_jealous",
+    "name": "Yuna",
+    "text": "\"...{name}. I thought you were only nice to me.\""
+  },
+  {
+    "key": "day3_lunch_yuna_single_end",
+    "name": "Me",
+    "text": "*I spent a peaceful lunch time with Yuna.*"
+  },
+  {
+    "key": "day3_lunch_yuna_talk_2",
+    "name": "Me",
+    "text": "*There's thorns in Yuna's words.*",
+    "choices": [
+      "\"You're special to me\"",
+      "\"I try to be nice to everyone\"",
+      "\"Why do you say that?\""
+    ]
+  },
+  {
+    "key": "day3_lunch_yuna_special",
+    "name": "Yuna",
+    "text": "\"...Really? Prove it. Tomorrow night.\""
+  },
+  {
+    "key": "day3_lunch_yuna_everyone",
+    "name": "Yuna",
+    "text": "\"...I see. So I'm just one of 'everyone'.\""
+  },
+  {
+    "key": "day3_lunch_yuna_question",
+    "name": "Yuna",
+    "text": "\"...You don't need to know. Not yet.\""
+  },
+  {
+    "key": "day3_lunch_yuna_warning",
+    "name": "Yuna",
+    "text": "\"Remember one thing. If you betray me... you'll regret it.\""
+  },
+  {
+    "key": "day3_lunch_yuna_warning_2",
+    "name": "Me",
+    "text": "*Yuna's eyes flashed eerily for a moment... That was a joke, right?*"
+  },
+  {
+    "key": "day3_lunch_choose_dain",
+    "name": "Me",
+    "text": "\"Dain, let's go eat together.\""
+  },
+  {
+    "key": "day3_lunch_dain_others_react",
+    "name": "Me",
+    "text": "*I decided to go with Dain.*"
+  },
+  {
+    "key": "day3_lunch_dain_seoyeon_jealous",
+    "name": "Seoyeon",
+    "text": "\"...Okay. See you later.\""
+  },
+  {
+    "key": "day3_lunch_with_dain_start",
+    "name": "Dain",
+    "text": "\"Yay! {name} is the best! Let's go, today's lunch is chicken!\""
+  },
+  {
+    "key": "day3_lunch_dain_talk_1",
+    "name": "Dain",
+    "text": "\"By the way... did you see Seoyeon's face just now? Totally jealous, right?\""
+  },
+  {
+    "key": "day3_lunch_dain_talk_2",
+    "name": "Me",
+    "text": "*Dain glances around and lowers her voice.*"
+  },
+  {
+    "key": "day3_lunch_dain_talk_3",
+    "name": "Dain",
+    "text": "\"Hey, be honest with me. Are you dating Seoyeon? Or Yuna? I know they're both interested in you.\"",
+    "choices": [
+      "\"No, I like you\"",
+      "\"We're just friends\"",
+      "\"Why, are you jealous too?\""
+    ]
+  },
+  {
+    "key": "day3_lunch_dain_confess",
+    "name": "Dain",
+    "text": "\"W-what?! Saying that out of nowhere... Geez!\""
+  },
+  {
+    "key": "day3_lunch_dain_friends",
+    "name": "Dain",
+    "text": "\"Hmm, really? Their faces say otherwise though... Well, whatever!\""
+  },
+  {
+    "key": "day3_lunch_dain_jealous_tease",
+    "name": "Dain",
+    "text": "\"Huh?! Who's jealous! I'm just curious! ...Maybe a little bothered though!\""
+  },
+  {
+    "key": "day3_lunch_dain_serious",
+    "name": "Dain",
+    "text": "*Suddenly putting down her chopsticks, quietly* \"...{name}. Let me ask you something seriously.\""
+  },
+  {
+    "key": "day3_lunch_dain_serious_2",
+    "name": "Dain",
+    "text": "\"...What am I to you? Just a friend? Or... something else?\""
+  },
+  {
+    "key": "day3_lunch_dain_serious_choice",
+    "name": "Me",
+    "text": "*Dain's eyes are different from usual. She's serious.*",
+    "choices": [
+      "\"You're special, Dain\"",
+      "\"I'm not sure yet\"",
+      "\"A precious friend\""
+    ]
+  },
+  {
+    "key": "day3_lunch_dain_special",
+    "name": "Dain",
+    "text": "*Her face turns beet red and she punches my arm* \"Wh-what?! Really?! My heart almost exploded, you know!\""
+  },
+  {
+    "key": "day3_lunch_dain_unsure",
+    "name": "Dain",
+    "text": "*Looking slightly disappointed but quickly brightening up* \"...Fine! Then I'll show you how special I can be! Just watch!\""
+  },
+  {
+    "key": "day3_lunch_dain_friend",
+    "name": "Dain",
+    "text": "*Her expression freezes for a moment before she forces a laugh* \"...Ahaha, right? A friend. Yeah, friends. Haha!\""
+  },
+  {
+    "key": "day3_lunch_dain_freetalk",
+    "name": "Me",
+    "text": "*Sitting side by side with Dain in the cafeteria, chatting. She's shier than usual.*",
+    "context": "Having lunch with Dain. She asked 'What am I to you?' seriously. She's being shy instead of her usual energetic self."
+  },
+  {
+    "key": "day3_lunch_dain_end",
+    "name": "Dain",
+    "text": "\"Anyway! You're coming to my practice tomorrow, right? You better come!\""
+  },
+  {
+    "key": "day3_lunch_dain_conflict",
+    "name": "Me",
+    "text": "*Tomorrow... I have other plans too...*",
+    "choices": [
+      "\"Of course!\"",
+      "\"If I have time...\""
+    ]
+  },
+  {
+    "key": "day3_lunch_dain_promise",
+    "name": "Dain",
+    "text": "\"Great! Look forward to it! I'll show you my amazing spike!\""
+  },
+  {
+    "key": "day3_lunch_dain_maybe",
+    "name": "Dain",
+    "text": "\"...What, if you have time? Do you have other plans?\""
+  },
+  {
+    "key": "day3_lunch_dain_suspicious",
+    "name": "Dain",
+    "text": "\"Hmph, fine. But if you stand me up, I'll be really mad!\""
+  },
+  {
+    "key": "day3_lunch_together_propose",
+    "name": "Me",
+    "text": "\"C-can't we all eat together?\""
+  },
+  {
+    "key": "day3_lunch_together_react",
+    "name": "Me",
+    "text": "*A moment of silence. Three pairs of eyes scan each other.*"
+  },
+  {
+    "key": "day3_lunch_together_awkward",
+    "name": "Seoyeon",
+    "text": "\"...Fine. Let's all eat together.\""
+  },
+  {
+    "key": "day3_lunch_together_2",
+    "name": "Me",
+    "text": "*Lunch in the cafeteria. The atmosphere is unusually tense.*"
+  },
+  {
+    "key": "day3_lunch_together_3",
+    "name": "Dain",
+    "text": "\"Hey, {name}. You're coming to see my volleyball practice tomorrow, right?\""
+  },
+  {
+    "key": "day3_lunch_together_4",
+    "name": "Seoyeon",
+    "text": "\"Huh? {name} has plans with me tomorrow?\""
+  },
+  {
+    "key": "day3_lunch_together_yuna",
+    "name": "Yuna",
+    "text": "\"...{name} promised me. Tomorrow night.\""
+  },
+  {
+    "key": "day3_lunch_together_explosion",
+    "name": "Me",
+    "text": "*The air freezes rapidly. All eyes are on me.*"
+  },
+  {
+    "key": "day3_lunch_together_silence",
+    "name": "Me",
+    "text": "*A suffocating silence fills the air. Seoyeon's hands are trembling, Yuna's eyes darken, and Dain's expression hardens.*"
+  },
+  {
+    "key": "day3_lunch_together_seoyeon_react",
+    "name": "Seoyeon",
+    "text": "*Slowly putting down her spoon* \"...So. I wasn't the only special one.\""
+  },
+  {
+    "key": "day3_lunch_together_yuna_lie",
+    "name": "Yuna",
+    "text": "*Standing up* \"...I knew. That {name} didn't only promise me.\""
+  },
+  {
+    "key": "day3_lunch_together_yuna_lie_2",
+    "name": "Dain",
+    "text": "\"Huh? Really? Then why did you come knowing that?!\""
+  },
+  {
+    "key": "day3_lunch_together_yuna_lie_3",
+    "name": "Yuna",
+    "text": "*Looking at me coldly* \"...That was a lie. I didn't know either. I just... didn't want to cry in front of the others.\""
+  },
+  {
+    "key": "day3_lunch_together_confront",
+    "name": "Seoyeon",
+    "text": "\"Wait... {name}, did you make promises with all of us?\"",
+    "choices": [
+      "Apologize honestly",
+      "Make excuses about different times",
+      "Run away"
+    ]
+  },
+  {
+    "key": "day3_lunch_apologize",
+    "name": "Me",
+    "text": "\"I'm sorry... I couldn't say no to anyone...\""
+  },
+  {
+    "key": "day3_lunch_apologize_react",
+    "name": "Dain",
+    "text": "\"...Being honest is good, but still annoying.\""
+  },
+  {
+    "key": "day3_lunch_excuse",
+    "name": "Me",
+    "text": "\"Well, the times are all different... Dain's in the morning, others in the evening...\""
+  },
+  {
+    "key": "day3_lunch_excuse_react",
+    "name": "Seoyeon",
+    "text": "\"That's not the problem... Ugh, I don't know. I'm confused too.\""
+  },
+  {
+    "key": "day3_lunch_excuse_react_2",
+    "name": "Dain",
+    "text": "\"Hmm... can't you just manage your time well? I'm fine with it.\""
+  },
+  {
+    "key": "day3_lunch_excuse_react_3",
+    "name": "Yuna",
+    "text": "\"...Someone like you might be fine with that. But I... (stands up) I'm leaving first.\""
+  },
+  {
+    "key": "day3_lunch_run",
+    "name": "Me",
+    "text": "*I hurriedly finished my food and escaped. That was the worst choice.*"
+  },
+  {
+    "key": "day3_lunch_together_end",
+    "name": "Me",
+    "text": "*Lunch ended in an awkward atmosphere. I'm worried about the weekend...*"
+  },
+  {
+    "key": "day3_lunch_escape",
+    "name": "Me",
+    "text": "\"Oh, I just remembered something I need to do! See you later!\""
+  },
+  {
+    "key": "day3_lunch_escape_2",
+    "name": "Me",
+    "text": "*I escaped the classroom as if running away. I think I heard sighs behind me...*"
+  },
+  {
+    "key": "day3_lunch_single_approach",
+    "name": "Me",
+    "text": "*It's lunch time. Who should I eat with?*",
+    "choices": [
+      "Eat with Seoyeon",
+      "Eat with Yuna",
+      "Eat with Dain",
+      "Visit the nurse's office",
+      "Find the homeroom teacher",
+      "Eat alone"
+    ]
+  },
+  {
+    "key": "day3_lunch_nurse",
+    "name": "Me",
+    "text": "*I headed to the nurse's office during lunch. The teacher is eating a sandwich at her desk.*"
+  },
+  {
+    "key": "day3_lunch_nurse_2",
+    "name": "School Nurse",
+    "text": "*Beaming when she sees me* \"Oh my, {name}! Have you eaten? Want to eat with teacher?\""
+  },
+  {
+    "key": "day3_lunch_nurse_3",
+    "name": "School Nurse",
+    "text": "*Locking the door* \"Actually... I wanted some time alone with you. Watching out for the kids is exhausting.\""
+  },
+  {
+    "key": "day3_lunch_nurse_freetalk",
+    "name": "Me",
+    "text": "*Having lunch together in the nurse's office. My heart races at the secretive atmosphere.*",
+    "context": "Having lunch alone with the school nurse in her office. She locked the door. It's like a secret date. The thrill of a forbidden love."
+  },
+  {
+    "key": "day3_lunch_nurse_4",
+    "name": "School Nurse",
+    "text": "*Glancing at the clock with a sigh* \"...Time's up. Get to class. See you Sunday.\""
+  },
+  {
+    "key": "day3_lunch_teacher",
+    "name": "Me",
+    "text": "*I visited the teachers' office during lunch. The teacher is having coffee alone.*"
+  },
+  {
+    "key": "day3_lunch_teacher_2",
+    "name": "Homeroom Teacher",
+    "text": "*Surprised to see me, then brightening up* \"...{name}? What brings you here? It's my lunch break...\""
+  },
+  {
+    "key": "day3_lunch_teacher_3",
+    "name": "Homeroom Teacher",
+    "text": "*Blushing* \"...Come in. Close the door.\""
+  },
+  {
+    "key": "day3_lunch_teacher_freetalk",
+    "name": "Me",
+    "text": "*Having lunch with the homeroom teacher in the teachers' office.*",
+    "context": "Having lunch alone with the homeroom teacher in her office. She shyly closed the door. Secret date atmosphere."
+  },
+  {
+    "key": "day3_lunch_teacher_4",
+    "name": "Homeroom Teacher",
+    "text": "*Putting down her coffee cup* \"...This shouldn't be happening. A student coming to spend lunch with a teacher, and the teacher enjoying it. Does that even make sense?\""
+  },
+  {
+    "key": "day3_lunch_seoyeon_only",
+    "name": "Seoyeon",
+    "text": "\"{name}! Let's eat together!\""
+  },
+  {
+    "key": "day3_lunch_yuna_only",
+    "name": "Yuna",
+    "text": "\"...{name}. Rooftop.\""
+  },
+  {
+    "key": "day3_lunch_dain_only",
+    "name": "Dain",
+    "text": "\"Let's go eat! Today's chicken day!\""
+  },
+  {
+    "key": "day3_lunch_normal",
+    "name": "Me",
+    "text": "*No special plans... I'll just have a normal lunch today.*"
+  },
+  {
+    "key": "day3_lunch_normal_2",
+    "name": "Me",
+    "text": "*I hear laughter around me. Everyone looks happy with their friends.*"
+  },
+  {
+    "key": "day3_lunch_alone",
+    "name": "Me",
+    "text": "*I quietly ate lunch alone. What should I do this weekend...*"
+  },
+  {
+    "key": "day3_afternoon_admit_react_2",
+    "name": "Seoyeon",
+    "text": "\"If I'm really special to you... only meet me. Otherwise, I have options too.\""
+  },
+  {
+    "key": "day3_afternoon_justify",
+    "name": "Me",
+    "text": "\"The times are all different... so I thought I could meet everyone...\""
+  },
+  {
+    "key": "day3_afternoon_justify_react",
+    "name": "Seoyeon",
+    "text": "\"...Don't you see that's the problem?\""
+  },
+  {
+    "key": "day3_afternoon_justify_react_2",
+    "name": "Seoyeon",
+    "text": "\"...Fine. We'll see this weekend.\""
+  },
+  {
+    "key": "day3_afternoon_lie_seoyeon",
+    "name": "Me",
+    "text": "\"Seoyeon, you're the only one I'm sincere about. The others are just friends...\""
+  },
+  {
+    "key": "day3_afternoon_lie_seoyeon_react",
+    "name": "Seoyeon",
+    "text": "\"...Really? Can I trust that?\""
+  },
+  {
+    "key": "day3_afternoon_lie_warning",
+    "name": "Me",
+    "text": "*Seoyeon smiles. But... is this right? What should I tell the others?*"
+  },
+  {
+    "key": "day3_afternoon_jealousy_check",
+    "name": "Me",
+    "text": "*The atmosphere was a bit weird during lunch... It should be fine, right?*"
+  },
+  {
+    "key": "day3_afternoon_approach",
+    "name": "Me",
+    "text": "*As I stand up to pack my bag, someone approaches.*"
+  },
+  {
+    "key": "day3_afternoon_seoyeon_approach",
+    "name": "Seoyeon",
+    "text": "\"...{name}, do you have a minute?\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_talk",
+    "name": "Seoyeon",
+    "text": "\"About lunch... Sorry, I think I was being sensitive.\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_talk_2",
+    "name": "Seoyeon",
+    "text": "\"But honestly... seeing you close with Yuna or Dain bothers me a little.\"",
+    "choices": [
+      "\"You're my favorite, Seoyeon\"",
+      "\"They're all precious friends\"",
+      "\"Are you jealous?\""
+    ]
+  },
+  {
+    "key": "day3_afternoon_seoyeon_comfort",
+    "name": "Seoyeon",
+    "text": "\"...Really? Hearing that... I feel a bit relieved.\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_friend",
+    "name": "Seoyeon",
+    "text": "\"...Right. Friends. Got it.\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_tease",
+    "name": "Seoyeon",
+    "text": "\"W-what! That's not... Ugh, forget it!\""
+  },
+  {
+    "key": "day3_afternoon_yuna_approach",
+    "name": "Yuna",
+    "text": "\"...{name}.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_talk",
+    "name": "Yuna",
+    "text": "\"At lunch... you chose Seoyeon.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_talk_2",
+    "name": "Me",
+    "text": "*Yuna's eyes are colder than usual.*",
+    "choices": [
+      "\"I'm sorry, Yuna\"",
+      "\"I'll spend time with you tomorrow\"",
+      "\"Why, are you upset?\""
+    ]
+  },
+  {
+    "key": "day3_afternoon_yuna_apologize",
+    "name": "Yuna",
+    "text": "\"...It's okay. We have tomorrow.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_promise",
+    "name": "Yuna",
+    "text": "\"...I won't forget those words.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_question",
+    "name": "Yuna",
+    "text": "\"...Upset? No. I just... wanted to confirm.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_warning",
+    "name": "Yuna",
+    "text": "\"Remember, {name}. If you lie to me... you know, right?\""
+  },
+  {
+    "key": "day3_afternoon_dain_approach",
+    "name": "Dain",
+    "text": "\"Hey, {name}!\""
+  },
+  {
+    "key": "day3_afternoon_dain_talk",
+    "name": "Dain",
+    "text": "\"Why didn't you include me at lunch?! I wanted to eat together too!\""
+  },
+  {
+    "key": "day3_afternoon_dain_talk_2",
+    "name": "Me",
+    "text": "*Dain pouts and complains.*",
+    "choices": [
+      "\"Sorry, let's eat together next time\"",
+      "\"I'll come to your practice tomorrow\"",
+      "\"Cute, are you angry?\""
+    ]
+  },
+  {
+    "key": "day3_afternoon_dain_sorry",
+    "name": "Dain",
+    "text": "\"Hmph, you better! It's a promise!\""
+  },
+  {
+    "key": "day3_afternoon_dain_promise",
+    "name": "Dain",
+    "text": "\"Really?! Then I forgive you! Look forward to my spike!\""
+  },
+  {
+    "key": "day3_afternoon_dain_tease",
+    "name": "Dain",
+    "text": "\"W-what! Cute my foot! Dummy!\""
+  },
+  {
+    "key": "day3_afternoon_normal",
+    "name": "Me",
+    "text": "*A peaceful after school. Let me get ready to go home.*"
+  },
+  {
+    "key": "day3_afternoon_transition",
+    "name": "Me",
+    "text": "*As I'm about to leave through the school gate...*"
+  },
+  {
+    "key": "day3_afternoon_gate",
+    "name": "Me",
+    "text": "*Someone seems to be waiting.*"
+  },
+  {
+    "key": "day3_afternoon_multiple_wait",
+    "name": "Me",
+    "text": "*Uh... why is everyone at the gate...?*"
+  },
+  {
+    "key": "day3_afternoon_multiple_no_seoyeon",
+    "name": "Me",
+    "text": "*Several people are standing at the school gate. Are they all waiting for me...?*"
+  },
+  {
+    "key": "day3_afternoon_multiple_scene",
+    "name": "Seoyeon",
+    "text": "\"Hey, {name}! Let's walk together... huh?\""
+  },
+  {
+    "key": "day3_afternoon_three_way",
+    "name": "Yuna",
+    "text": "\"...We meet again.\""
+  },
+  {
+    "key": "day3_afternoon_three_way_2",
+    "name": "Me",
+    "text": "*Seoyeon and Yuna are glaring at each other. The atmosphere is tense.*"
+  },
+  {
+    "key": "day3_afternoon_two_way_dain",
+    "name": "Dain",
+    "text": "\"Oh? Seoyeon's here too? I was gonna walk home with {name}!\""
+  },
+  {
+    "key": "day3_afternoon_choose_walk",
+    "name": "Me",
+    "text": "*Who should I walk with...?*",
+    "choices": [
+      "Go with Seoyeon",
+      "Go with Yuna",
+      "Go with Dain",
+      "Go alone"
+    ]
+  },
+  {
+    "key": "day3_afternoon_seoyeon_walk",
+    "name": "Me",
+    "text": "\"Seoyeon, let's go together.\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_walk_2",
+    "name": "Seoyeon",
+    "text": "\"Sure! Let's go!\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_walk_others",
+    "name": "Me",
+    "text": "*I feel eyes on my back... but right now, walking with Seoyeon feels nice.*"
+  },
+  {
+    "key": "day3_afternoon_seoyeon_walk_yuna_reaction",
+    "name": "Me",
+    "text": "*Yuna is watching us from a distance. That look... is scary.*"
+  },
+  {
+    "key": "day3_afternoon_seoyeon_walk_dain_reaction",
+    "name": "Dain",
+    "text": "\"Hmph! I'm going first!\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_talk_walk",
+    "name": "Seoyeon",
+    "text": "\"...Hey, {name}. Let's take the riverside path back. The sunset is beautiful today.\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_sunset",
+    "name": "Me",
+    "text": "*The sunset reflects off the river, sparkling. Seoyeon's face glows with an orange tint — she looks radiant.*"
+  },
+  {
+    "key": "day3_afternoon_seoyeon_sunset_2",
+    "name": "Seoyeon",
+    "text": "*She suddenly stops and stands in front of me* \"...{name}. Can I ask you something?\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_sunset_3",
+    "name": "Seoyeon",
+    "text": "*Against the sunset backdrop, Seoyeon's eyes shine* \"Tomorrow... you'll only meet me, right?\"",
+    "choices": [
+      "\"Of course\"",
+      "*Take Seoyeon's hand*",
+      "\"...I'll try\""
+    ]
+  },
+  {
+    "key": "day3_afternoon_seoyeon_pinky",
+    "name": "Seoyeon",
+    "text": "*Seoyeon holds out her pinky finger* \"Then let's pinky promise. If you break it... you swallow ten thousand needles?\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_hand",
+    "name": "Seoyeon",
+    "text": "*Seoyeon's hand trembles before she grips mine tight* \"...Dummy. What if someone sees us holding hands here.\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_try",
+    "name": "Seoyeon",
+    "text": "*Looking slightly disappointed, she forces a smile* \"...Okay. You'll try, right?\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_freetalk",
+    "name": "Me",
+    "text": "*Walking alongside Seoyeon down the riverside path as the sunset deepens.*",
+    "context": "Walking with Seoyeon along the sunset riverside. She asked 'Will you only meet me tomorrow?' and they had a pinky promise/hand-holding moment. Sweet and romantic atmosphere."
+  },
+  {
+    "key": "day3_afternoon_seoyeon_talk_walk_2",
+    "name": "Seoyeon",
+    "text": "\"It's our time together, just the two of us. Right?\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_guilt",
+    "name": "Me",
+    "text": "*...'Just the two of us'. My other plans flash through my mind.*",
+    "choices": [
+      "\"Yeah, I'm excited too\"",
+      "\"Actually...\" (Be honest)"
+    ]
+  },
+  {
+    "key": "day3_afternoon_seoyeon_happy",
+    "name": "Seoyeon",
+    "text": "\"Hehe, me too! See you tomorrow then! Sleep well!\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_confess_walk",
+    "name": "Seoyeon",
+    "text": "\"...What? You have other plans too?\""
+  },
+  {
+    "key": "day3_afternoon_seoyeon_angry",
+    "name": "Seoyeon",
+    "text": "\"...Fine. We'll see this weekend who you really like.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_walk",
+    "name": "Me",
+    "text": "\"Yuna, let's walk together.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_walk_2",
+    "name": "Yuna",
+    "text": "\"...Okay.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_walk_others",
+    "name": "Seoyeon",
+    "text": "\"...Okay. Be careful going home.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_talk_walk",
+    "name": "Me",
+    "text": "*Walking with Yuna down a quiet path. She doesn't say much, but the atmosphere is comfortable.*"
+  },
+  {
+    "key": "day3_afternoon_yuna_cat",
+    "name": "Me",
+    "text": "*A small cat is curled up by the roadside. Yuna suddenly stops.*"
+  },
+  {
+    "key": "day3_afternoon_yuna_cat_2",
+    "name": "Yuna",
+    "text": "*Quietly kneeling down to pet the cat* \"...I'm glad you're with me.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_cat_3",
+    "name": "Me",
+    "text": "*The way Yuna pets the cat... she looks so gentle.*",
+    "choices": [
+      "*Pet the cat too*",
+      "*Pat Yuna's head*",
+      "*Watch quietly*"
+    ]
+  },
+  {
+    "key": "day3_afternoon_yuna_cat_pat",
+    "name": "Yuna",
+    "text": "*Our hands meet on top of the cat* \"...Warm.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_head_pat",
+    "name": "Yuna",
+    "text": "*She freezes when I pat her head* \"...You're petting me?\""
+  },
+  {
+    "key": "day3_afternoon_yuna_head_pat_2",
+    "name": "Yuna",
+    "text": "*Closing her eyes* \"...Don't stop. Just a little more.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_cat_watch",
+    "name": "Yuna",
+    "text": "*Holding the cat up* \"...This one looks like you, {name}. Warm and... clueless.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_freetalk",
+    "name": "Me",
+    "text": "*Walking side by side with Yuna. Her expression is softer than usual.*",
+    "context": "Walking home with Yuna after petting a cat together. Yuna's expression is softer than usual. Quiet and comfortable atmosphere."
+  },
+  {
+    "key": "day3_afternoon_yuna_talk_walk_2",
+    "name": "Yuna",
+    "text": "\"...{name}. Don't forget tomorrow night.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_talk_walk_3",
+    "name": "Yuna",
+    "text": "\"School back gate. 8 PM. Don't... be late.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_warning_walk",
+    "name": "Me",
+    "text": "*There's a strange pressure in Yuna's voice.*",
+    "choices": [
+      "\"I definitely won't be late\"",
+      "\"What if I'm late?\""
+    ]
+  },
+  {
+    "key": "day3_afternoon_yuna_promise_keep",
+    "name": "Yuna",
+    "text": "\"...Good. I'll trust you.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_late_question",
+    "name": "Yuna",
+    "text": "\"...That can't happen. Absolutely not.\""
+  },
+  {
+    "key": "day3_afternoon_yuna_late_warning",
+    "name": "Me",
+    "text": "*Yuna's eyes seemed to flash oddly for a moment... Must be my imagination?*"
+  },
+  {
+    "key": "day3_afternoon_dain_walk",
+    "name": "Me",
+    "text": "\"Dain, let's walk together.\""
+  },
+  {
+    "key": "day3_afternoon_dain_walk_2",
+    "name": "Dain",
+    "text": "\"Yay! Let's go!\""
+  },
+  {
+    "key": "day3_afternoon_dain_talk_walk",
+    "name": "Dain",
+    "text": "\"Hey, {name}! See that convenience store? I'm thirsty!\""
+  },
+  {
+    "key": "day3_afternoon_dain_store",
+    "name": "Me",
+    "text": "*Dain dashes to the convenience store. I follow and find her stopped at the ice cream section.*"
+  },
+  {
+    "key": "day3_afternoon_dain_store_2",
+    "name": "Dain",
+    "text": "\"You pick for me! If I pick, I'll want to buy everything...\"",
+    "choices": [
+      "*Pick one for her*",
+      "*Buy two and share one*"
+    ]
+  },
+  {
+    "key": "day3_afternoon_dain_ice_one",
+    "name": "Dain",
+    "text": "*Taking the ice cream* \"...Thanks. {name} is the best!\""
+  },
+  {
+    "key": "day3_afternoon_dain_ice_share",
+    "name": "Dain",
+    "text": "*Her face turns red at the idea of sharing* \"Th-that's sharing?! That's an indirect kiss! N-no! It's just sharing!\""
+  },
+  {
+    "key": "day3_afternoon_dain_park",
+    "name": "Me",
+    "text": "*Dain and I sit side by side on a park bench nearby. We eat ice cream while watching the sunset.*"
+  },
+  {
+    "key": "day3_afternoon_dain_park_2",
+    "name": "Dain",
+    "text": "*Suddenly getting quiet* \"...{name}. Actually, I couldn't sleep last night.\""
+  },
+  {
+    "key": "day3_afternoon_dain_park_3",
+    "name": "Dain",
+    "text": "\"...You said you'd come to my practice tomorrow... You'll really come, right? You're not gonna stand me up?\"",
+    "choices": [
+      "\"I would never stand you up\"",
+      "*Pat Dain's head*"
+    ]
+  },
+  {
+    "key": "day3_afternoon_dain_promise_firm",
+    "name": "Dain",
+    "text": "*Her eyes light up* \"...Really? Promise!\""
+  },
+  {
+    "key": "day3_afternoon_dain_pat",
+    "name": "Dain",
+    "text": "*Patting her head makes Dain's face turn red* \"Hey, I'm not a kid! ...But don't stop.\""
+  },
+  {
+    "key": "day3_afternoon_dain_freetalk",
+    "name": "Me",
+    "text": "*Eating ice cream and chatting with Dain on a park bench.*",
+    "context": "Sharing ice cream with Dain on a park bench. She said 'I couldn't sleep last night' showing a serious side. She's being shy instead of her usual energetic self."
+  },
+  {
+    "key": "day3_afternoon_dain_talk_walk_2",
+    "name": "Dain",
+    "text": "\"I want to show you my cool side!\"",
+    "choices": [
+      "\"Looking forward to it!\"",
+      "\"I'll cheer for you\""
+    ]
+  },
+  {
+    "key": "day3_afternoon_dain_excited",
+    "name": "Dain",
+    "text": "\"Great! Be prepared!\""
+  },
+  {
+    "key": "day3_afternoon_dain_cheer",
+    "name": "Dain",
+    "text": "\"Hehe... Hearing that makes me want to work even harder!\""
+  },
+  {
+    "key": "day3_afternoon_reject_all",
+    "name": "Me",
+    "text": "\"Sorry, I want to go alone today.\""
+  },
+  {
+    "key": "day3_afternoon_reject_reaction",
+    "name": "Me",
+    "text": "*Everyone's expressions harden. I can feel their disappointment.*"
+  },
+  {
+    "key": "day3_afternoon_nobody_waiting",
+    "name": "Me",
+    "text": "*...No one's here. Must've been my imagination. Silly me for getting my hopes up.*"
+  },
+  {
+    "key": "day3_afternoon_alone_walk",
+    "name": "Me",
+    "text": "*I head home alone. I wonder what tomorrow will bring...*"
+  },
+  {
+    "key": "day3_afternoon_single_wait",
+    "name": "Me",
+    "text": "*Someone is standing in front of the gate.*"
+  },
+  {
+    "key": "day3_afternoon_seoyeon_solo",
+    "name": "Seoyeon",
+    "text": "\"{name}! Let's walk together!\""
+  },
+  {
+    "key": "day3_afternoon_yuna_solo",
+    "name": "Yuna",
+    "text": "\"...I was waiting.\""
+  },
+  {
+    "key": "day3_afternoon_dain_solo",
+    "name": "Dain",
+    "text": "\"Hey! Hurry up! Let's walk together!\""
+  },
+  {
+    "key": "day3_afternoon_teacher_wait",
+    "name": "Homeroom Teacher",
+    "text": "\"{name}, do you have a minute? Want me to give you a ride?\"",
+    "choices": [
+      "\"Yes, thank you!\"",
+      "\"It's okay, I'll walk\""
+    ]
+  },
+  {
+    "key": "day3_afternoon_teacher_ride",
+    "name": "Me",
+    "text": "*I got in the teacher's car. The road home is bathed in sunset.*"
+  },
+  {
+    "key": "day3_afternoon_teacher_ride_2",
+    "name": "Homeroom Teacher",
+    "text": "*Driving quietly* \"...{name}. Being alone together like this... feels a bit strange.\""
+  },
+  {
+    "key": "day3_afternoon_teacher_ride_3",
+    "name": "Me",
+    "text": "*We stop at a red light. The teacher quietly touches the back of my hand.*",
+    "choices": [
+      "*Hold her hand*",
+      "\"Teacher, we shouldn't\"",
+      "*Quietly lean my head on her shoulder*"
+    ]
+  },
+  {
+    "key": "day3_afternoon_teacher_hold",
+    "name": "Homeroom Teacher",
+    "text": "*The teacher holds her breath* \"...When the light changes, I'm letting go. Promise.\""
+  },
+  {
+    "key": "day3_afternoon_teacher_stop",
+    "name": "Homeroom Teacher",
+    "text": "*The teacher smiles wistfully* \"...You're right. Teacher needs to come to her senses.\""
+  },
+  {
+    "key": "day3_afternoon_teacher_lean",
+    "name": "Homeroom Teacher",
+    "text": "*Startled at first... then quietly strokes my hair* \"...The light hasn't changed yet.\""
+  },
+  {
+    "key": "day3_afternoon_teacher_freetalk",
+    "name": "Me",
+    "text": "*Riding in the teacher's car on the way home.*",
+    "context": "In the homeroom teacher's car heading home. After hand-holding or leaning on her shoulder in the sunset. The sweetness and guilt of a forbidden love."
+  },
+  {
+    "key": "day3_afternoon_teacher_arrive",
+    "name": "Homeroom Teacher",
+    "text": "*Arriving at my house* \"...You haven't forgotten our museum date on Sunday, right? I'll be looking forward to it.\""
+  },
+  {
+    "key": "day3_afternoon_nurse_wait",
+    "name": "School Nurse",
+    "text": "\"Oh my, {name}. I came out to leave and ran into you? Hehe.\"",
+    "choices": [
+      "\"Shall we walk together?\"",
+      "\"Have a good evening\""
+    ]
+  },
+  {
+    "key": "day3_afternoon_nurse_walk",
+    "name": "Me",
+    "text": "*Walking side by side with the nurse. She glances at the back of my hand.*"
+  },
+  {
+    "key": "day3_afternoon_nurse_band",
+    "name": "School Nurse",
+    "text": "*She suddenly takes my hand and puts a band-aid on it* \"...There's a scratch here? You didn't notice.\""
+  },
+  {
+    "key": "day3_afternoon_nurse_band_2",
+    "name": "Me",
+    "text": "*There's no scratch... Did she just want to hold my hand?*",
+    "choices": [
+      "\"There's no scratch though?\"",
+      "*Just hold her hand*"
+    ]
+  },
+  {
+    "key": "day3_afternoon_nurse_caught",
+    "name": "School Nurse",
+    "text": "*Her face turns red as if caught* \"...Hmm, sharp eyes? It's just... teacher's mark.\""
+  },
+  {
+    "key": "day3_afternoon_nurse_hold",
+    "name": "School Nurse",
+    "text": "*Surprised, she stops... then holds on tight* \"...Dangerous boy. Let's stay like this for ten seconds.\""
+  },
+  {
+    "key": "day3_afternoon_nurse_freetalk",
+    "name": "Me",
+    "text": "*Walking home alongside the school nurse.*",
+    "context": "Walking home with the school nurse. She used a band-aid as an excuse to hold my hand. The thrill and tension of a forbidden love."
+  },
+  {
+    "key": "day3_afternoon_nurse_arrive",
+    "name": "School Nurse",
+    "text": "\"Don't forget Sunday 7 PM, okay? I'll be waiting for you.\""
+  },
+  {
+    "key": "day3_night_msg_seoyeon",
+    "name": "Seoyeon",
+    "text": "*Message: 10 PM* '{name}, are you still awake? I'm so excited for tomorrow!'"
+  },
+  {
+    "key": "day3_night_seoyeon_suspicious",
+    "name": "Seoyeon",
+    "text": "*Additional message* 'But... you're only meeting me, right? No other plans?'",
+    "choices": [
+      "'Yes, only you!'",
+      "'Let me be honest...'",
+      "*Leave on read*"
+    ]
+  },
+  {
+    "key": "day3_night_seoyeon_lie",
+    "name": "Seoyeon",
+    "text": "'Really? I trust you! See you tomorrow! 💕'"
+  },
+  {
+    "key": "day3_night_seoyeon_honest",
+    "name": "Seoyeon",
+    "text": "'...What? You have other plans? With who?'"
+  },
+  {
+    "key": "day3_night_seoyeon_angry",
+    "name": "Seoyeon",
+    "text": "'...Fine. We'll see this weekend.'"
+  },
+  {
+    "key": "day3_night_seoyeon_ignore",
+    "name": "Me",
+    "text": "*I didn't reply. Seoyeon will probably be disappointed...*"
+  },
+  {
+    "key": "day3_night_seoyeon_jealous",
+    "name": "Seoyeon",
+    "text": "*Additional message* 'About lunch today... it's still bothering me. Please be honest with me.'",
+    "choices": [
+      "'Sorry, I couldn't say no to anyone...'",
+      "'You're the most important to me'",
+      "*Leave on read*"
+    ]
+  },
+  {
+    "key": "day3_night_seoyeon_apologize",
+    "name": "Seoyeon",
+    "text": "'...Thanks for being honest. But I don't like sharing with others.'"
+  },
+  {
+    "key": "day3_night_seoyeon_reassure",
+    "name": "Seoyeon",
+    "text": "'...Really? I'll remember that. Prove it tomorrow.'"
+  },
+  {
+    "key": "day3_night_seoyeon_normal",
+    "name": "Seoyeon",
+    "text": "'Have you decided where to go tomorrow? You can leave it to me! Good night! 😊'",
+    "choices": [
+      "'I'll leave it to you! Good night!'",
+      "'Thanks, see you tomorrow!'"
+    ]
+  },
+  {
+    "key": "day3_night_seoyeon_good",
+    "name": "Me",
+    "text": "*Finished chatting with Seoyeon.*"
+  },
+  {
+    "key": "day3_night_msg_yuna",
+    "name": "Yuna",
+    "text": "*Message: 11:59 PM* '...{name}. Tomorrow night. Don't forget.'"
+  },
+  {
+    "key": "day3_night_yuna_witnessed",
+    "name": "Yuna",
+    "text": "*Additional message* 'Today after school... I saw you leaving with Seoyeon.'"
+  },
+  {
+    "key": "day3_night_yuna_warning",
+    "name": "Yuna",
+    "text": "'If you lie to me... you'll regret it.'",
+    "choices": [
+      "'You're the most important to me'",
+      "'Seoyeon and I are just friends'",
+      "'...Sorry'"
+    ]
+  },
+  {
+    "key": "day3_night_yuna_reassure",
+    "name": "Yuna",
+    "text": "'...Really? I'll believe that. But if you betray me...'"
+  },
+  {
+    "key": "day3_night_yuna_threat",
+    "name": "Yuna",
+    "text": "'...You know, right? 😊'"
+  },
+  {
+    "key": "day3_night_yuna_excuse",
+    "name": "Yuna",
+    "text": "'...Okay. Friends. I'll believe you.'"
+  },
+  {
+    "key": "day3_night_yuna_apologize",
+    "name": "Yuna",
+    "text": "'...We'll talk when we meet tomorrow. Don't run away.'"
+  },
+  {
+    "key": "day3_night_yuna_knows",
+    "name": "Yuna",
+    "text": "*Additional message* '...You made promises with others too, didn't you?'"
+  },
+  {
+    "key": "day3_night_yuna_knows_2",
+    "name": "Yuna",
+    "text": "'It's okay. You'll come to me in the end.'"
+  },
+  {
+    "key": "day3_night_yuna_normal",
+    "name": "Yuna",
+    "text": "'...See you in your dreams.'",
+    "choices": [
+      "'Yeah, good night'",
+      "'What kind of dreams?'"
+    ]
+  },
+  {
+    "key": "day3_night_yuna_dream",
+    "name": "Yuna",
+    "text": "'...Secret. I'll tell you tomorrow night.'"
+  },
+  {
+    "key": "day3_night_yuna_sleep",
+    "name": "Me",
+    "text": "*Finished chatting with Yuna.*"
+  },
+  {
+    "key": "day3_night_msg_dain",
+    "name": "Dain",
+    "text": "*Message: 9 PM* 'Hey!! 9 AM at the gym tomorrow!! Don't be late!!! 😤'"
+  },
+  {
+    "key": "day3_night_dain_suspicious",
+    "name": "Dain",
+    "text": "*Additional message* 'But... did you really make plans with others too? I heard at lunch.'",
+    "choices": [
+      "'Your practice is most important!'",
+      "'I do have other plans...'",
+      "'The times are different so it's fine'"
+    ]
+  },
+  {
+    "key": "day3_night_dain_priority",
+    "name": "Dain",
+    "text": "'Really?! Hehe, then it's fine! I'll show you something cool tomorrow!'"
+  },
+  {
+    "key": "day3_night_dain_honest",
+    "name": "Dain",
+    "text": "'...I see? Well, can't help it. But you HAVE to come to my practice!'"
+  },
+  {
+    "key": "day3_night_dain_excuse",
+    "name": "Dain",
+    "text": "'Hmm... well, if the times work out, I guess it's okay. But focus on me!'"
+  },
+  {
+    "key": "day3_night_dain_normal",
+    "name": "Dain",
+    "text": "*Additional message* 'Let's go get tteokbokki after practice! My treat! 🍜'",
+    "choices": [
+      "'Sounds great! Looking forward to it!'",
+      "'lol okay!'"
+    ]
+  },
+  {
+    "key": "day3_night_dain_good",
+    "name": "Me",
+    "text": "*Finished chatting with Dain.*"
+  },
+  {
+    "key": "day3_night_msg_nurse",
+    "name": "School Nurse",
+    "text": "*Message: 11 PM* 'My cute transfer student, still awake? Hehe.'"
+  },
+  {
+    "key": "day3_night_nurse_2",
+    "name": "School Nurse",
+    "text": "'You haven't forgotten Sunday evening, right? I'll prepare something special. 😉'",
+    "choices": [
+      "'I'm looking forward to it!'",
+      "'What is it?'"
+    ]
+  },
+  {
+    "key": "day3_night_nurse_excited",
+    "name": "School Nurse",
+    "text": "'You can look forward to it. Sleep well and see you Sunday, {name}. 💋'"
+  },
+  {
+    "key": "day3_night_nurse_curious",
+    "name": "School Nurse",
+    "text": "'It's a secret. You'll find out on Sunday. Look forward to it.'"
+  },
+  {
+    "key": "day3_night_msg_teacher",
+    "name": "Homeroom Teacher",
+    "text": "*Message: 10 PM* '{name}, you haven't forgotten about the museum on Sunday, have you?'"
+  },
+  {
+    "key": "day3_night_teacher_2",
+    "name": "Homeroom Teacher",
+    "text": "'I'm excited since it's been a while since I had an outing. Sunday at 2 PM, museum entrance.'",
+    "choices": [
+      "'Yes, I'm excited!'",
+      "'Good night!'"
+    ]
+  },
+  {
+    "key": "day3_night_teacher_good",
+    "name": "Homeroom Teacher",
+    "text": "'Alright, sleep well and see you Sunday. Good night.'"
+  },
+  {
+    "key": "day3_night_single_message",
+    "name": "Me",
+    "text": "*There's a message.*"
+  },
+  {
+    "key": "day3_night_no_message",
+    "name": "Me",
+    "text": "*No special messages. What should I do this weekend...*"
+  },
+  {
+    "key": "day3_night_ignore_all",
+    "name": "Me",
+    "text": "*I decided to just sleep without checking messages. I'll read them tomorrow morning...*"
+  },
+  {
+    "key": "day3_night_sleep",
+    "name": "Me",
+    "text": "*Just as my eyes are closing... my phone rings. A call.*"
+  },
+  {
+    "key": "day3_night_phone_seoyeon",
+    "name": "Seoyeon",
+    "text": "*I answer the phone to hear Seoyeon's voice* \"...{name}? I know it's time to sleep. But... I wanted to hear your voice.\""
+  },
+  {
+    "key": "day3_night_phone_seoyeon_freetalk",
+    "name": "Me",
+    "text": "*Having a late-night call with Seoyeon. Her voice sounds softer than usual in the dark room.*",
+    "context": "Late-night phone call. Seoyeon called saying 'I wanted to hear your voice.' A sweet late-night conversation. Seoyeon suddenly called before bed."
+  },
+  {
+    "key": "day3_night_phone_yuna",
+    "name": "Yuna",
+    "text": "*I answer the phone to hear Yuna's voice* \"...I know it's time to sleep. But... I can't fall asleep.\""
+  },
+  {
+    "key": "day3_night_phone_yuna_freetalk",
+    "name": "Me",
+    "text": "*Having a late-night call with Yuna. Her quiet breathing reaches my ear.*",
+    "context": "Late-night phone call. Yuna called saying 'I can't fall asleep.' A quiet and intimate late-night conversation. Her soft breathing feels close."
+  },
+  {
+    "key": "day3_night_phone_dain",
+    "name": "Dain",
+    "text": "*I answer the phone to hear Dain's voice* \"...Hey, I know it's late. But thinking about tomorrow, I can't sleep!\""
+  },
+  {
+    "key": "day3_night_phone_dain_freetalk",
+    "name": "Me",
+    "text": "*Having a late-night call with Dain. Instead of her usual energy, her quiet voice feels new.*",
+    "context": "Late-night phone call. Dain called saying 'Thinking about tomorrow, I can't sleep!' Unusually quiet Dain. A soft late-night atmosphere."
+  },
+  {
+    "key": "day3_night_phone_nurse",
+    "name": "School Nurse",
+    "text": "*I answer the phone to hear the nurse's voice* \"...{name}? Still awake? I couldn't sleep either.\""
+  },
+  {
+    "key": "day3_night_phone_nurse_freetalk",
+    "name": "Me",
+    "text": "*Having a late-night call with the school nurse. Her low voice reaches my ear.*",
+    "context": "Late-night phone call. The school nurse called saying 'I couldn't sleep.' Her low, gentle voice. A forbidden love's late-night call."
+  },
+  {
+    "key": "day3_night_phone_teacher",
+    "name": "Homeroom Teacher",
+    "text": "*I answer the phone to hear the teacher's voice* \"...{name}? Still awake? I know it's bedtime, but...\""
+  },
+  {
+    "key": "day3_night_phone_teacher_freetalk",
+    "name": "Me",
+    "text": "*Having a late-night call with the homeroom teacher. Her quiet voice sounds close.*",
+    "context": "Late-night phone call. The homeroom teacher called saying 'I know it's bedtime, but...' Her quiet voice. A forbidden love's late-night call."
+  },
+  {
+    "key": "day3_night_phone_end",
+    "name": "Me",
+    "text": "*I hang up and put down my phone. The lingering echo of her voice... makes my heart race.*"
+  },
+  {
+    "key": "day3_night_sleep_2",
+    "name": "Me",
+    "text": "*My eyes are closing. Tomorrow is Saturday... What kind of day will it be.*"
+  },
+  {
+    "key": "day3_night_sleep_final",
+    "name": "Me",
+    "text": "*Multiple plans swirl through my mind. Can I satisfy everyone...?*"
+  },
+  {
+    "key": "day3_night_nightmare",
+    "name": "Me",
+    "text": "*...I dream. Voices echo from a dark space.*"
+  },
+  {
+    "key": "day3_night_nightmare_voice1",
+    "name": "???",
+    "text": "*Seoyeon's voice echoes* \"...You'll only see me, right? You promised. We pinky swore...\""
+  },
+  {
+    "key": "day3_night_nightmare_voice2",
+    "name": "???",
+    "text": "*Yuna's voice whispers coldly* \"...I said you'd regret it if you betray me, remember?\""
+  },
+  {
+    "key": "day3_night_nightmare_voice3",
+    "name": "???",
+    "text": "*Dain's voice trembles* \"...Idiot! You said you'd come! You said you wouldn't stand me up...\""
+  },
+  {
+    "key": "day3_night_nightmare_choice",
+    "name": "Me",
+    "text": "*Hands reach out from the darkness. Whose hand will I take...*",
+    "choices": [
+      "*Take Seoyeon's hand*",
+      "*Take Yuna's hand*",
+      "*Take Dain's hand*",
+      "*Don't take anyone's hand*"
+    ]
+  },
+  {
+    "key": "day3_night_nightmare_end",
+    "name": "Me",
+    "text": "*I reached out, but... there was nothing to hold. Everyone vanished, leaving only darkness and regret.*"
+  },
+  {
+    "key": "day3_night_nightmare_wake",
+    "name": "Me",
+    "text": "*...I snap awake. My heart is pounding like crazy. It was a dream. But... what will tomorrow bring?*"
+  },
+  {
+    "key": "day3_night_peaceful",
+    "name": "Me",
+    "text": "*A peaceful night. I'm looking forward to tomorrow.*"
+  },
+  {
+    "key": "day3_night_loyalty_seoyeon",
+    "name": "Me",
+    "text": "*...Just thinking about Seoyeon makes me smile. Tomorrow is our time together. I'll make sure to tell her how I truly feel.*"
+  },
+  {
+    "key": "day3_night_loyalty_yuna",
+    "name": "Me",
+    "text": "*...Just thinking about Yuna makes my heart race. Tomorrow night, just the two of us. Will I finally see the real Yuna?*"
+  },
+  {
+    "key": "day3_night_loyalty_dain",
+    "name": "Me",
+    "text": "*...Thinking of Dain's smile makes me smile too. I wonder how happy she'll be when I show up to watch her practice tomorrow.*"
+  },
+  {
+    "key": "day3_night_loyalty_nurse",
+    "name": "Me",
+    "text": "*...The school nurse's face comes to mind. It's a forbidden relationship, but... I can't hide these feelings.*"
+  },
+  {
+    "key": "day3_night_loyalty_teacher",
+    "name": "Me",
+    "text": "*...The homeroom teacher's smile comes to mind. We're teacher and student, but... my feelings are real.*"
+  },
+  {
+    "key": "day3_final_scene",
+    "name": "Me",
+    "text": "*Friday night deepens... Tomorrow is finally Saturday.*"
+  }
+]

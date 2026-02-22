@@ -30,6 +30,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*And so, my transfer student story comes to an end.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Y así, mi historia como estudiante transferido llega a su fin.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*こうして、僕の転校物語は幕を閉じる。*"
             }
         }
     },
@@ -46,6 +54,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*That one person I met at my new school.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Esa única persona que conocí en mi nueva escuela.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*新しい学校で出会ったたった一人の人。*"
             }
         }
     },
@@ -61,6 +77,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*From the very first moment we met, until this very moment— my heart never once wavered.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Desde el primer momento en que nos conocimos, hasta este instante— mi corazón nunca vaciló ni una vez.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*初めて出会ったあの瞬間から、今この瞬間まで—一度も気持ちが揺れたことはなかった。*"
             }
         }
     },
@@ -76,6 +100,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I remember it. That moment our eyes first met in the hallway. It felt like time had stopped.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Lo recuerdo. Ese momento en que nuestras miradas se cruzaron por primera vez en el pasillo. Sentí como si el tiempo se hubiera detenido.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*覚えている。廊下で初めて目が合ったあの瞬間。時間が止まったみたいだった。*"
             }
         }
     },
@@ -91,6 +123,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I didn't know back then. That one brief glance would change the course of my entire life.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No lo sabía en ese entonces. Que esa breve mirada cambiaría el rumbo de toda mi vida.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*あの時は知らなかった。あの短い眼差し一つが、僕の人生の方向を変えてしまうなんて。*"
             }
         }
     },
@@ -106,6 +146,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I can't pinpoint the exact moment I fell in love. I just— one day, I couldn't imagine a tomorrow without them.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No puedo señalar el momento exacto en que me enamoré. Solo— un día, no pude imaginar un mañana sin esa persona.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*恋に落ちた瞬間は正確には分からない。ただ—ある日ふと、あの人のいない明日が想像できなくなっていた。*"
             }
         }
     },
@@ -121,6 +169,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Like warmth that still lingers on my lips, this feeling will never fade.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Como la calidez que aún permanece en mis labios, este sentimiento nunca se desvanecerá.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*まだ唇に残る温もりのように、この感情は永遠に消えないだろう。*"
             }
         }
     },
@@ -136,6 +192,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Some would say even feelings like this have an expiration date.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Algunos dirían que incluso sentimientos como este tienen fecha de vencimiento.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*こんな感情にも消費期限があると言う人もいるだろう。*"
             }
         }
     },
@@ -151,6 +215,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*But I know the truth. This isn't something that cools— it's something that seeps deeper.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Pero yo conozco la verdad. Esto no es algo que se enfría— es algo que se filtra más profundo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*でも僕は知っている。これは冷めるものじゃない、染み込んでいくものだって。*"
             }
         }
     },
@@ -166,6 +238,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Tomorrow, the day after, even a year from now I can see myself unable to escape from this person.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Mañana, pasado mañana, incluso dentro de un año— me veo incapaz de escapar de esta persona.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*明日も、明後日も、一年後も—この人のそばから離れられない僕が見える。*"
             }
         }
     },
@@ -181,6 +261,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Let's make a promise. No matter what season comes, you will be tied to my side forever.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Hagamos una promesa. No importa qué estación llegue, estarás atada a mi lado para siempre.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*約束しよう。どんな季節が来ても、君は永遠に僕のそばに縛られているんだって。*"
             }
         }
     },
@@ -196,6 +284,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*To love someone completely is to hold one single obsession amid all the uncertainty in the world.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Amar a alguien por completo es aferrarse a una sola obsesión en medio de toda la incertidumbre del mundo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*誰かを完全に愛するということは—世界のすべての不確かさの中で、たった一つの執着を抱くことだ。*"
             }
         }
     },
@@ -210,6 +306,14 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "System",
+                "text": "─── TRUE LOVE END ───"
+            },
+            "es": {
+                "name": "Sistema",
+                "text": "─── TRUE LOVE END ───"
+            },
+            "ja": {
+                "name": "システム",
                 "text": "─── TRUE LOVE END ───"
             }
         }
@@ -229,6 +333,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*And so, my transfer student story comes to an end.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Y así, mi historia como estudiante transferido llega a su fin.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*こうして、僕の転校物語は幕を閉じる。*"
             }
         }
     },
@@ -251,6 +363,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "System",
                 "text": ""
+            },
+            "es": {
+                "name": "Sistema",
+                "text": ""
+            },
+            "ja": {
+                "name": "システム",
+                "text": ""
             }
         }
     },
@@ -267,6 +387,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*It took me a long time to find the courage. But because I waited, this feeling is certain.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Me tomó mucho tiempo reunir el valor. Pero porque esperé, este sentimiento es seguro.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*勇気を出すまで長くかかった。でも待った分だけ、この気持ちは確かだ。*"
             }
         }
     },
@@ -282,6 +410,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*My heart was set from the beginning. It just took time to put it into words.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Mi corazón estaba decidido desde el principio. Solo me tomó tiempo ponerlo en palabras.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*最初から気持ちは一つだった。ただ伝えるのに時間がかかっただけ。*"
             }
         }
     },
@@ -297,6 +433,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I hesitated because I was afraid of the answer. Afraid of rejection, afraid of ruining what we had.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Dudé porque tenía miedo de la respuesta. Miedo al rechazo, miedo de arruinar lo que teníamos.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*迷ったのは相手の気持ちが怖かったからだ。拒絶されること、この関係が壊れることが。*"
             }
         }
     },
@@ -312,6 +456,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*But I finally said it. And the answer— was worth the wait.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Pero al final lo dije. Y la respuesta— valió la pena esperar.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*でも結局言った。そしてその答えは——待った甲斐があった。*"
             }
         }
     },
@@ -328,6 +480,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*My heart swayed at times, and I made mistakes.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Mi corazón vaciló a veces, y cometí errores.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*心が揺れたこともあったし、間違いも犯した。*"
             }
         }
     },
@@ -343,6 +503,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*But in the end— I found where my true feelings belonged.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Pero al final— encontré a dónde pertenecían mis verdaderos sentimientos.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*でも結局——本当の気持ちが向かう場所を見つけた。*"
             }
         }
     },
@@ -358,6 +526,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Looking back, there were times I was careless with someone else's heart.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Mirando atrás, hubo veces en que fui descuidado con el corazón de alguien más.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*振り返れば、他の人の気持ちに無頓着だったこともあった。*"
             }
         }
     },
@@ -373,6 +549,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I may have given someone hope only to take it away. I'm sorry for that.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Quizás le di esperanza a alguien solo para quitársela. Lo siento por eso.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*誰かに希望を与えておいて取り上げる結果になったかもしれない。それは申し訳なく思う。*"
             }
         }
     },
@@ -388,6 +572,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*But it was because of that wavering that I came to understand what true feelings really are.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Pero fue gracias a esa vacilación que llegué a entender lo que son los verdaderos sentimientos.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*でもその揺らぎがあったからこそ、本当の気持ちが何なのか分かったんだ。*"
             }
         }
     },
@@ -403,6 +595,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*It doesn't have to be perfect. Because this is our beginning.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No tiene que ser perfecto. Porque este es nuestro comienzo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*完璧じゃなくてもいい。これが僕たちの始まりだから。*"
             }
         }
     },
@@ -418,6 +618,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I wasn't lost. It was just a process to make you mine.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No estaba perdido. Solo fue un proceso para hacerte mía.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*道に迷っていたわけじゃない。君を僕のものにするための過程だっただけだ。*"
             }
         }
     },
@@ -433,6 +641,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*If there had been no hesitation, there would be no such terrible possessiveness now.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Si no hubiera habido vacilación, no existiría esta terrible posesividad ahora.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*迷いがなかったなら、今のこのひどい独占欲もなかっただろう。*"
             }
         }
     },
@@ -448,6 +664,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Imperfect love is still love. No perhaps it's more perfect because it's broken.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*El amor imperfecto sigue siendo amor. No, quizás es más perfecto precisamente porque está roto.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*不完全な愛も愛だ。いや、壊れているからこそより完璧なのかもしれない。*"
             }
         }
     },
@@ -463,6 +687,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I'll make mistakes again. We'll clash. But with this person, falling into ruin together wouldn't be so bad.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Volveré a equivocarme. Chocaremos. Pero con esta persona, caer juntos en la ruina no estaría tan mal.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*これからも間違えるだろう。ぶつかるだろう。でもこの人と一緒なら、いっそ共に破滅するのも悪くない。*"
             }
         }
     },
@@ -478,6 +710,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*So it's okay. This obsession took a long time to form that's exactly why it will never be undone.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Así que está bien. Esta obsesión tardó mucho en formarse, y por eso mismo nunca se deshará.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*だから大丈夫だ。この執着は、長くかかった分だけ絶対にほどけないから。*"
             }
         }
     },
@@ -492,6 +732,14 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "System",
+                "text": "─── GOOD END ───"
+            },
+            "es": {
+                "name": "Sistema",
+                "text": "─── GOOD END ───"
+            },
+            "ja": {
+                "name": "システム",
                 "text": "─── GOOD END ───"
             }
         }
@@ -511,6 +759,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*And so, my transfer student story… is it really over?*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Y así, mi historia como estudiante transferido... ¿realmente terminó?*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*こうして、僕の転校物語は…終わったのか？*"
             }
         }
     },
@@ -527,6 +783,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*The night sky was too beautiful to gaze at just one star.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*El cielo nocturno era demasiado hermoso para mirar una sola estrella.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*一つの星だけを見つめるには、夜空はあまりに美しかった。*"
             }
         }
     },
@@ -542,6 +806,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*…not that excuses like that will stop them from chasing me.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*…no es que excusas así vayan a evitar que me persigan.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*…と言い訳したところで、追われる現実は変わらないだろうけど。*"
             }
         }
     },
@@ -557,6 +829,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*One day, three lunch boxes appeared behind the classroom at the same time. That day, I genuinely thought I was done for.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Un día, tres loncheras aparecieron detrás del salón al mismo tiempo. Ese día, genuinamente pensé que estaba acabado.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*ある日、教室の裏で同時に三つの弁当が出てきた。あの日、僕は心の底からヤバいと思った。*"
             }
         }
     },
@@ -572,6 +852,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "(\"Is she your girlfriend?\" \"No, I am!\" \"What are you talking about, it's me!\" …The hallway became a battlefield that day.)"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(\"¿Ella es tu novia?\" \"¡No, soy yo!\" \"¿De qué hablan? ¡Soy yo!\" …El pasillo se convirtió en un campo de batalla ese día.)"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(「あの子が彼女？」「違う、私だよ！」「何言ってるの、私でしょ！」…あの日、廊下は戦場になった。)"
             }
         }
     },
@@ -587,6 +875,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I took the chance to sneak away to the rooftop. I'd never run that fast in my entire life.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Aproveché la oportunidad para escapar a la azotea. Nunca había corrido tan rápido en toda mi vida.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*僕はその隙にこっそり屋上へ逃げた。人生であんなに速く走ったのは初めてだった。*"
             }
         }
     },
@@ -602,6 +898,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*…But someone was already waiting for me on the rooftop. There really was no escape.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*…Pero alguien ya me estaba esperando en la azotea. Realmente no había escapatoria.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*…でも屋上にはもう誰かが待っていた。本当に逃げ場はなかった。*"
             }
         }
     },
@@ -617,6 +921,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Maybe it's selfish. Wanting to cherish everyone. But it's already too late.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Quizás sea egoísta. Querer valorar a todas. Pero ya es demasiado tarde.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*欲張りかもしれない。みんなを大切にしたいなんて。でももう遅い。*"
             }
         }
     },
@@ -632,6 +944,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Their obsession is already suffocating me. The moment I choose one, I will be ruined.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Su obsesión ya me está asfixiando. En el momento en que elija a una, estaré arruinado.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*彼女たちの執着はもう僕を締め付けている。誰か一人を選んだ瞬間、僕は破滅するだろう。*"
             }
         }
     },
@@ -647,6 +967,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Honestly, this hellish daily life... isn't so bad. I wonder what chaos tomorrow will bring.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Honestamente, esta vida diaria infernal... no está tan mal. Me pregunto qué caos traerá mañana.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*正直、この地獄のような毎日は…悪くない。明日はまたどんな修羅場が待っているだろう。*"
             }
         }
     },
@@ -662,6 +990,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Would I make the same choices if I were born again? …I won't answer that. But this smile is real.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*¿Tomaría las mismas decisiones si volviera a nacer? …No voy a responder eso. Pero esta sonrisa es real.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*生まれ変わっても同じ選択をするかって？…答えない。でもこの笑みは本物だ。*"
             }
         }
     },
@@ -677,6 +1013,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*There's no conclusion. But well… this chaotic everyday life is my story.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No hay conclusión. Pero bueno… esta caótica vida cotidiana es mi historia.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*結論はない。でもまあ…この騒がしい毎日が僕の物語だ。*"
             }
         }
     },
@@ -691,6 +1035,14 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "System",
+                "text": "─── MAYHEM END ───"
+            },
+            "es": {
+                "name": "Sistema",
+                "text": "─── MAYHEM END ───"
+            },
+            "ja": {
+                "name": "システム",
                 "text": "─── MAYHEM END ───"
             }
         }
@@ -710,6 +1062,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*And so, my transfer student story— hasn't ended.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Y así, mi historia como estudiante transferido— no ha terminado.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*こうして、僕の転校物語は——終わらなかった。*"
             }
         }
     },
@@ -726,6 +1086,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Multiple lovers. An impossible reality unfolded before my eyes.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Múltiples amantes. Una realidad imposible se desplegó ante mis ojos.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*複数の恋人。あり得ない現実が目の前に広がった。*"
             }
         }
     },
@@ -741,6 +1109,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Every day is a war. Battles break out daily over who gets treated the best.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Cada día es una guerra. Las batallas estallan diariamente por quién recibe el mejor trato.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*毎日が戦争だ。誰が一番大切にされるかを巡って日々バトルが繰り広げられる。*"
             }
         }
     },
@@ -756,6 +1132,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Mondays: who walks me to school. Tuesdays: whose lunch I eat. Wednesdays: who walks me home... My weekly schedule is a diplomatic nightmare.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Lunes: quién me acompaña a la escuela. Martes: de quién como el almuerzo. Miércoles: quién me acompaña a casa... Mi horario semanal es una pesadilla diplomática.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*月曜は一緒に登校する順番、火曜は弁当、水曜は帰り道…一週間のスケジュールは外交戦争だ。*"
             }
         }
     },
@@ -771,6 +1155,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*One of them watches over me with a quiet smile, another confidently links her arm with mine, and the last one secretly holds my hand from behind.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Una de ellas me vigila con una sonrisa tranquila, otra enlaza su brazo con el mío con confianza, y la última me toma la mano en secreto por detrás.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*一人は静かな微笑みで僕を見守り、もう一人は堂々と腕を組み、最後の一人はこっそり後ろから手を握る。*"
             }
         }
     },
@@ -786,6 +1178,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Each of their charms is so different. That's why I can't compare them, and that's why I can't give any of them up.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*El encanto de cada una es tan diferente. Por eso no puedo compararlas, y por eso no puedo renunciar a ninguna.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*それぞれの魅力があまりに違う。だから比べようがないし、だから誰も諦められない。*"
             }
         }
     },
@@ -801,6 +1201,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*But oddly enough, all of them are smiling. As if they completely own me.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Pero curiosamente, todas están sonriendo. Como si me poseyeran por completo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*でも不思議なことに…みんな笑っている。まるで僕を完全に所有しているかのように。*"
             }
         }
     },
@@ -816,6 +1224,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Call it greed if you want. If I can't escape from this terrible cycle of obsession.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Llámenlo avaricia si quieren. Si no puedo escapar de este terrible ciclo de obsesión.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*欲張りと呼んでもいい。この恐ろしい執着の連鎖から逃れられないのなら。*"
             }
         }
     },
@@ -831,6 +1247,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*No regrets. No, they don't even give me time to regret. They are watching my every move.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Sin arrepentimientos. No, ni siquiera me dan tiempo para arrepentirme. Están vigilando cada uno de mis movimientos.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*後悔はない。いや、後悔する暇すら与えてくれない。彼女たちは僕の一挙一動を監視しているから。*"
             }
         }
     },
@@ -846,6 +1270,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Of course, no one knows when this balance will break. The moment someone crosses the line, a bloodbath will begin.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Por supuesto, nadie sabe cuándo se romperá este equilibrio. En el momento en que alguien cruce la línea, comenzará un baño de sangre.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*もちろん、この均衡がいつ崩れるかは誰にも分からない。誰かが一線を越えた瞬間、血の嵐が吹き荒れるだろう。*"
             }
         }
     },
@@ -861,6 +1293,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*But the fact that I even enjoy the tension— maybe I'm already past the point of no return.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Pero el hecho de que incluso disfrute la tensión— quizás ya pasé el punto de no retorno.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*でもその緊張感すら楽しんでいるという事実——もう戻れないところまで来てしまったのかもしれない。*"
             }
         }
     },
@@ -876,6 +1316,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Tomorrow I'll be watched again. The day after, they'll tighten their grip even more. But these bloody days, I accept them.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Mañana me vigilarán de nuevo. Pasado mañana, apretarán su agarre aún más. Pero estos días sangrientos, los acepto.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*明日もまた監視されるだろう。明後日はもっと締め付けてくるだろう。でも——この血みどろの日々を、僕は受け入れる。*"
             }
         }
     },
@@ -890,6 +1338,14 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "System",
+                "text": "─── HAREM END ───"
+            },
+            "es": {
+                "name": "Sistema",
+                "text": "─── HAREM END ───"
+            },
+            "ja": {
+                "name": "システム",
                 "text": "─── HAREM END ───"
             }
         }
@@ -909,6 +1365,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*And so, my transfer student story comes to an end.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Y así, mi historia como estudiante transferido llega a su fin.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*こうして、僕の転校物語は幕を閉じる。*"
             }
         }
     },
@@ -925,6 +1389,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I couldn't say what I felt. No— I chose not to.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No pude decir lo que sentía. No— elegí no hacerlo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*気持ちを伝えられなかった。いや、伝えなかった。*"
             }
         }
     },
@@ -940,6 +1412,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "(The feelings I hid behind the word \"friend\" might surface on some quiet nights.)"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(Los sentimientos que escondí detrás de la palabra \"amigo\" quizás afloren en algunas noches silenciosas.)"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(「友達」という言葉の裏に隠した感情が、時々夜に浮かんでくるかもしれない。)"
             }
         }
     },
@@ -955,6 +1435,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I remember. That day on the rooftop, the way the wind swept their hair, and the fingertips that brushed it aside.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Lo recuerdo. Ese día en la azotea, la forma en que el viento movía su cabello, y las puntas de los dedos que lo apartaban.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*覚えている。あの日屋上で、風に吹かれた髪を払うその指先を。*"
             }
         }
     },
@@ -970,6 +1458,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "(If I had said \"I like you\" back then, would tonight be any different?)"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(Si hubiera dicho \"me gustas\" en ese momento, ¿esta noche sería diferente?)"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(あの時「好きだ」と言っていたら、今夜は違っていただろうか。)"
             }
         }
     },
@@ -985,6 +1481,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Unspoken feelings don't disappear. They simply glow quietly, deep within the heart.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Los sentimientos no expresados no desaparecen. Simplemente brillan en silencio, en lo profundo del corazón.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*言えなかった感情は消えるわけじゃない。心の奥深くで静かに光っているだけだ。*"
             }
         }
     },
@@ -1000,6 +1504,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "(Sometimes the closest distance is also the farthest. The distance called \"friends.\")"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(A veces la distancia más cercana es también la más lejana. La distancia llamada \"amigos\".)"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*時に最も近い距離が、最も遠い距離でもある。「友達」という名の距離。*"
             }
         }
     },
@@ -1015,6 +1527,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Still, it's not all bad. I can see their smile right beside me. Waiting for the day I can shatter that smile.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Aun así, no está tan mal. Puedo ver su sonrisa justo a mi lado. Esperando el día en que pueda destrozar esa sonrisa.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*それでも悪くはない。隣で笑う姿を見られるから。いつかその笑顔を壊せる日を待ちながら。*"
             }
         }
     },
@@ -1030,6 +1550,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Maybe this isn't cowardice, but a quiet hunt. Staying by their side while holding my prey.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Quizás esto no es cobardía, sino una cacería silenciosa. Permanecer a su lado mientras sostengo a mi presa.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*もしかしたらこれは臆病なんかじゃなく、静かな狩りなのかもしれない。獲物を抱えたまま、そばに居続けること。*"
             }
         }
     },
@@ -1045,6 +1573,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Still I don't regret it. Someday, the chance to make you completely mine will come.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Aun así... no me arrepiento. Algún día, la oportunidad de hacerte completamente mía llegará.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*それでも…後悔してない。君を完全に僕のものにできるチャンスが、いつか来るから。*"
             }
         }
     },
@@ -1060,6 +1596,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Someday— when the day comes that I can speak this heart, I won't hesitate.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Algún día— cuando llegue el día en que pueda expresar este corazón, no dudaré.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*いつか——この気持ちを伝えられる日が来たら、僕は迷わない。*"
             }
         }
     },
@@ -1075,6 +1619,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Some stories linger longer precisely because they're left unfinished. This season will be remembered that way.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Algunas historias perduran más precisamente porque quedan sin terminar. Esta temporada será recordada así.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*終わらないからこそ長く残る物語もある。この季節は、そうやって記憶されるだろう。*"
             }
         }
     },
@@ -1089,6 +1641,14 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "System",
+                "text": "─── FRIEND END ───"
+            },
+            "es": {
+                "name": "Sistema",
+                "text": "─── FRIEND END ───"
+            },
+            "ja": {
+                "name": "システム",
                 "text": "─── FRIEND END ───"
             }
         }
@@ -1108,6 +1668,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*And so, my transfer student story comes to an end.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Y así, mi historia como estudiante transferido llega a su fin.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*こうして、僕の転校物語は幕を閉じる。*"
             }
         }
     },
@@ -1124,6 +1692,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*No one special came along. But the time I spent at this school was precious.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No apareció nadie especial. Pero el tiempo que pasé en esta escuela fue valioso.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*特別な誰かはできなかった。でもこの学校で過ごした時間は大切だった。*"
             }
         }
     },
@@ -1139,6 +1715,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I'm different now from who I was before I transferred— back when I felt like I couldn't do anything.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Soy diferente ahora de quien era antes de transferirme— cuando sentía que no podía hacer nada.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*転校する前の、何もできなかった僕とは変わったから。*"
             }
         }
     },
@@ -1154,6 +1738,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*What I learned at this school wasn't about romance. It was about facing myself.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Lo que aprendí en esta escuela no fue sobre romance. Fue sobre enfrentarme a mí mismo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*この学校で学んだのは恋愛じゃなかった。自分自身と向き合うことだった。*"
             }
         }
     },
@@ -1169,6 +1761,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*The laughter in the classroom, the chatter between classes, the sunlight during P.E.— all those ordinary things mattered.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Las risas en el salón, las charlas entre clases, la luz del sol durante educación física— todas esas cosas ordinarias importaban.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*教室の笑い声、休み時間の雑談、体育の時間の日差し——そのすべての平凡なものに意味があった。*"
             }
         }
     },
@@ -1184,6 +1784,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Solitude is not a punishment. It's time spent face to face with yourself.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*La soledad no es un castigo. Es tiempo dedicado a estar cara a cara contigo mismo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*孤独は罰じゃない。自分自身と向き合う時間だ。*"
             }
         }
     },
@@ -1199,6 +1807,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*I learned that before you can love someone else, you must first understand yourself.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Aprendí que antes de poder amar a alguien más, primero debes entenderte a ti mismo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*誰かを愛する前に、まず自分自身を理解しなければならないということを学んだ。*"
             }
         }
     },
@@ -1214,6 +1830,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Being alone doesn't mean being lonely. There are things you can only hear when you're on your own. Their footsteps, their breathing, the eyes watching me.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Estar solo no significa estar solitario. Hay cosas que solo puedes escuchar cuando estás por tu cuenta. Sus pasos, su respiración, los ojos que me observan.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*一人だから寂しいわけじゃない。一人だからこそ聞こえるものがある。彼女たちの足音、息遣い、僕を見つめる視線。*"
             }
         }
     },
@@ -1229,6 +1853,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*The sound of the wind, my footsteps, my own heartbeat. Within that quiet rhythm, I was slowly going mad.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*El sonido del viento, mis pasos, los latidos de mi propio corazón. Dentro de ese ritmo silencioso, lentamente me estaba volviendo loco.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*風の音、足音、自分の心臓の音。その静かなリズムの中で、僕は少しずつ狂っていた。*"
             }
         }
     },
@@ -1244,6 +1876,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Even if I couldn't reach anyone, these times are never meaningless. Because I am definitely sinking into a deeper darkness than yesterday.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Aunque no pude alcanzar a nadie, estos momentos nunca carecen de sentido. Porque definitivamente me estoy hundiendo en una oscuridad más profunda que ayer.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*誰にも届かなかったとしても、この時間は決して無意味にはならない。僕は確かに昨日より深い闇の中へ沈んでいるから。*"
             }
         }
     },
@@ -1259,6 +1899,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*There's no need to rush. I can walk at my own pace, on my own path.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No hay necesidad de apresurarse. Puedo caminar a mi propio ritmo, por mi propio camino.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*急がなくてもいい。自分のペースで、自分の道を歩けばいいから。*"
             }
         }
     },
@@ -1274,6 +1922,14 @@ Object.assign(SCENARIO[5], {
             "en": {
                 "name": "Me",
                 "text": "*Walking alone on a night road isn't so bad. The stars shine brightest, after all, because of the darkness.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Caminar solo por un camino nocturno no está tan mal. Las estrellas brillan más, después de todo, gracias a la oscuridad.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*一人で歩く夜道も悪くない。星がひときわ明るいのは、闇のおかげだから。*"
             }
         }
     },
@@ -1288,6 +1944,14 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "System",
+                "text": "─── ALONE END ───"
+            },
+            "es": {
+                "name": "Sistema",
+                "text": "─── ALONE END ───"
+            },
+            "ja": {
+                "name": "システム",
                 "text": "─── ALONE END ───"
             }
         }
@@ -1305,6 +1969,14 @@ Object.assign(SCENARIO[5], {
                 "text": ""
             },
             "en": {
+                "name": "",
+                "text": ""
+            },
+            "es": {
+                "name": "",
+                "text": ""
+            },
+            "ja": {
                 "name": "",
                 "text": ""
             }
@@ -1333,6 +2005,20 @@ Object.assign(SCENARIO[5], {
                 "text": "",
                 "choices": [
                     "Start Over from the Beginning"
+                ]
+            },
+            "es": {
+                "name": "Sistema",
+                "text": "",
+                "choices": [
+                    "Empezar de nuevo desde el principio"
+                ]
+            },
+            "ja": {
+                "name": "システム",
+                "text": "",
+                "choices": [
+                    "最初からやり直す"
                 ]
             }
         }

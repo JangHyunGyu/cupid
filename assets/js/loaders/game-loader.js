@@ -11,8 +11,12 @@
  * 사용되는 페이지:
  *   - index.html     (한국어 메인 페이지)
  *   - index-en.html  (영문 메인 페이지)
+ *   - index-es.html  (스페인어 메인 페이지)
+ *   - index-ja.html  (일본어 메인 페이지)
  *   - game.html      (한국어 게임 페이지)
  *   - game-en.html   (영문 게임 페이지)
+ *   - game-es.html   (스페인어 게임 페이지)
+ *   - game-ja.html   (일본어 게임 페이지)
  * 
  * 사용법:
  *   HTML의 body 하단에 아래 한 줄만 추가:
@@ -57,16 +61,20 @@
 
     /**
      * 현재 페이지 URL을 분석하여 언어를 감지합니다.
-     * 
+     *
      * 판단 기준:
      *   - URL에 '-en'이 포함되면 영문 (예: index-en.html, game-en.html)
+     *   - URL에 '-es'이 포함되면 스페인어 (예: index-es.html, game-es.html)
+     *   - URL에 '-ja'이 포함되면 일본어 (예: index-ja.html, game-ja.html)
      *   - 그 외에는 한국어 (예: index.html, game.html)
-     * 
-     * isEnglish: true면 영문, false면 한국어
-     * lang: 'en' 또는 'ko' 문자열 (다른 곳에서 참조용)
+     *
+     * lang: 'en', 'es', 'ja', 또는 'ko' 문자열 (다른 곳에서 참조용)
      */
-    const isEnglish = window.location.pathname.includes('-en');
-    const lang = isEnglish ? 'en' : 'ko';
+    const pathname = window.location.pathname;
+    const lang = pathname.includes('-es') ? 'es'
+               : pathname.includes('-ja') ? 'ja'
+               : pathname.includes('-en') ? 'en'
+               : 'ko';
 
     // =========================================================================
     // 공통 스크립트 (Common Scripts)

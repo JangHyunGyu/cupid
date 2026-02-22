@@ -3,44 +3,44 @@
  */
 
 // 캐릭터별 기억(플래그) 정의
-// 📌 한/영 양방향 호환: isDating 플래그는 한국어/영어 버전 모두 추가됨
+// 📌 한/영/스페인어/일본어 양방향 호환: isDating 플래그는 한국어/영어 버전 모두 추가됨
 window.FLAG_MEMORIES = [
-    { flag: "promisedFestival", char: "서연", ko: "당신은 주인공과 이번 축제에 같이 가기로 약속했습니다.", en: "You have promised to go to the upcoming festival with the user." },
-    { flag: "datedDainDay1", char: "다인", ko: "당신은 어제 주인공과 함께 떡볶이를 먹으며 즐거운 시간을 보냈습니다.", en: "You had a great time eating tteokbokki with the user yesterday." },
-    { flag: "helpedSeoyeon", char: "서연", ko: "주인공은 어제 당신의 학생회 업무를 성심성의껏 도와주었습니다.", en: "The user sincerely helped you with your student council work yesterday." },
-    { flag: "knowsSecret", char: "유나", ko: "주인공은 이 학교의 숨겨진 비밀에 대해 어느 정도 알고 있습니다.", en: "The user knows something about the hidden secrets of this school." },
-    { flag: "readNote", char: "유나", ko: "주인공은 당신이 책상에 남긴 쪽지를 읽었습니다.", en: "The user read the note you left on the desk." },
-    { flag: "betrayedDainForSeoyeon", char: "다인", ko: "주인공은 서연이를 위해 당신과의 약속을 저버렸습니다. 당신은 매우 화가 나고 슬픈 상태입니다.", en: "The user broke their promise with you for Seoyeon. You are very angry and sad." },
-    { flag: "betrayedDainForSeoyeon", char: "서연", ko: "주인공은 다인이가 아닌 당신을 선택했습니다. 당신은 미안하면서도 기쁩니다.", en: "The user chose you over Dain. You feel sorry but happy." },
-    { flag: "betrayedSeoyeonForDain", char: "서연", ko: "주인공은 당신과의 축제 약속을 어기고 다인이를 선택했습니다. 당신은 큰 배신감을 느낍니다.", en: "The user broke their festival promise with you and chose Dain. You feel deeply betrayed." },
-    { flag: "betrayedSeoyeonForDain", char: "다인", ko: "주인공은 서연이가 아닌 당신을 선택했습니다. 당신은 승리감을 느낍니다.", en: "The user chose you over Seoyeon. You feel a sense of victory." },
-    { flag: "betrayedYunaForSeoyeon", char: "유나", ko: "주인공은 당신이 아닌 서연이를 선택했습니다. 당신은 주인공의 '빛'이 흐려졌다고 생각합니다.", en: "The user chose Seoyeon over you. You think the user's 'light' has dimmed." },
-    { flag: "betrayedSeoyeonForYuna", char: "서연", ko: "주인공은 당신을 버리고 유나를 선택했습니다. 당신은 절망적인 기분입니다.", en: "The user abandoned you and chose Yuna. You feel despair." },
-    { flag: "has_number_seyoun", char: "서연", ko: "당신은 주인공과 연락처를 교환했습니다.", en: "You have exchanged contact information with the user." },
-    { flag: "has_number_yuna", char: "유나", ko: "당신은 주인공과 연락처를 교환했습니다.", en: "You have exchanged contact information with the user." },
-    { flag: "has_number_dain", char: "다인", ko: "당신은 주인공과 연락처를 교환했습니다.", en: "You have exchanged contact information with the user." },
-    { flag: "metSeoyeon", char: "서연", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
-    { flag: "metYuna", char: "유나", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
-    { flag: "metDain", char: "다인", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before." },
+    { flag: "promisedFestival", char: "서연", ko: "당신은 주인공과 이번 축제에 같이 가기로 약속했습니다.", en: "You have promised to go to the upcoming festival with the user.", es: "Has prometido ir al próximo festival con el usuario.", ja: "あなたはユーザーと今度の祭りに一緒に行く約束をしました。" },
+    { flag: "datedDainDay1", char: "다인", ko: "당신은 어제 주인공과 함께 떡볶이를 먹으며 즐거운 시간을 보냈습니다.", en: "You had a great time eating tteokbokki with the user yesterday.", es: "Pasaste un buen rato comiendo tteokbokki con el usuario ayer.", ja: "あなたは昨日ユーザーと一緒にトッポッキを食べて楽しい時間を過ごしました。" },
+    { flag: "helpedSeoyeon", char: "서연", ko: "주인공은 어제 당신의 학생회 업무를 성심성의껏 도와주었습니다.", en: "The user sincerely helped you with your student council work yesterday.", es: "El usuario te ayudó sinceramente con tu trabajo del consejo estudiantil ayer.", ja: "ユーザーは昨日あなたの生徒会の仕事を真心込めて手伝ってくれました。" },
+    { flag: "knowsSecret", char: "유나", ko: "주인공은 이 학교의 숨겨진 비밀에 대해 어느 정도 알고 있습니다.", en: "The user knows something about the hidden secrets of this school.", es: "El usuario sabe algo sobre los secretos ocultos de esta escuela.", ja: "ユーザーはこの学校の隠された秘密についてある程度知っています。" },
+    { flag: "readNote", char: "유나", ko: "주인공은 당신이 책상에 남긴 쪽지를 읽었습니다.", en: "The user read the note you left on the desk.", es: "El usuario leyó la nota que dejaste en el escritorio.", ja: "ユーザーはあなたが机に残したメモを読みました。" },
+    { flag: "betrayedDainForSeoyeon", char: "다인", ko: "주인공은 서연이를 위해 당신과의 약속을 저버렸습니다. 당신은 매우 화가 나고 슬픈 상태입니다.", en: "The user broke their promise with you for Seoyeon. You are very angry and sad.", es: "El usuario rompió su promesa contigo por Seoyeon. Estás muy enojada y triste.", ja: "ユーザーはソヨンのためにあなたとの約束を破りました。あなたはとても怒っていて悲しい状態です。" },
+    { flag: "betrayedDainForSeoyeon", char: "서연", ko: "주인공은 다인이가 아닌 당신을 선택했습니다. 당신은 미안하면서도 기쁩니다.", en: "The user chose you over Dain. You feel sorry but happy.", es: "El usuario te eligió sobre Dain. Te sientes apenada pero feliz.", ja: "ユーザーはダインではなくあなたを選びました。あなたは申し訳ないけれど嬉しいです。" },
+    { flag: "betrayedSeoyeonForDain", char: "서연", ko: "주인공은 당신과의 축제 약속을 어기고 다인이를 선택했습니다. 당신은 큰 배신감을 느낍니다.", en: "The user broke their festival promise with you and chose Dain. You feel deeply betrayed.", es: "El usuario rompió su promesa del festival contigo y eligió a Dain. Te sientes profundamente traicionada.", ja: "ユーザーはあなたとの祭りの約束を破りダインを選びました。あなたは大きな裏切りを感じています。" },
+    { flag: "betrayedSeoyeonForDain", char: "다인", ko: "주인공은 서연이가 아닌 당신을 선택했습니다. 당신은 승리감을 느낍니다.", en: "The user chose you over Seoyeon. You feel a sense of victory.", es: "El usuario te eligió sobre Seoyeon. Sientes una sensación de victoria.", ja: "ユーザーはソヨンではなくあなたを選びました。あなたは勝利感を感じています。" },
+    { flag: "betrayedYunaForSeoyeon", char: "유나", ko: "주인공은 당신이 아닌 서연이를 선택했습니다. 당신은 주인공의 '빛'이 흐려졌다고 생각합니다.", en: "The user chose Seoyeon over you. You think the user's 'light' has dimmed.", es: "El usuario eligió a Seoyeon sobre ti. Piensas que la 'luz' del usuario se ha atenuado.", ja: "ユーザーはあなたではなくソヨンを選びました。あなたはユーザーの『光』が曇ったと思っています。" },
+    { flag: "betrayedSeoyeonForYuna", char: "서연", ko: "주인공은 당신을 버리고 유나를 선택했습니다. 당신은 절망적인 기분입니다.", en: "The user abandoned you and chose Yuna. You feel despair.", es: "El usuario te abandonó y eligió a Yuna. Te sientes desesperada.", ja: "ユーザーはあなたを捨ててユナを選びました。あなたは絶望的な気持ちです。" },
+    { flag: "has_number_seyoun", char: "서연", ko: "당신은 주인공과 연락처를 교환했습니다.", en: "You have exchanged contact information with the user.", es: "Has intercambiado información de contacto con el usuario.", ja: "あなたはユーザーと連絡先を交換しました。" },
+    { flag: "has_number_yuna", char: "유나", ko: "당신은 주인공과 연락처를 교환했습니다.", en: "You have exchanged contact information with the user.", es: "Has intercambiado información de contacto con el usuario.", ja: "あなたはユーザーと連絡先を交換しました。" },
+    { flag: "has_number_dain", char: "다인", ko: "당신은 주인공과 연락처를 교환했습니다.", en: "You have exchanged contact information with the user.", es: "Has intercambiado información de contacto con el usuario.", ja: "あなたはユーザーと連絡先を交換しました。" },
+    { flag: "metSeoyeon", char: "서연", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before.", es: "Ya has conocido al usuario antes.", ja: "あなたはユーザーとすでに会ったことがあります。" },
+    { flag: "metYuna", char: "유나", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before.", es: "Ya has conocido al usuario antes.", ja: "あなたはユーザーとすでに会ったことがあります。" },
+    { flag: "metDain", char: "다인", ko: "당신은 주인공과 이미 만난 적이 있습니다.", en: "You have met the user before.", es: "Ya has conocido al usuario antes.", ja: "あなたはユーザーとすでに会ったことがあります。" },
     // 서연 연인 관계 (한국어/영어 플래그 모두 지원)
-    { flag: "isDating_서연", char: "서연", ko: "당신은 주인공과 사귀는 사이입니다. 평소의 엄격한 모습은 버리고, 주인공에게만 보여주는 특별한 다정함을 표현하세요. 가끔 '자기야'라고 부르며 수줍어하면서도 깊은 애정을 담으세요.", en: "You are dating the user. Drop your strict persona and show the special, affectionate side you only show to them. Occasionally call them 'Honey' with a mix of shyness and deep love." },
-    { flag: "isDating_Seoyeon", char: "서연", ko: "당신은 주인공과 사귀는 사이입니다. 평소의 엄격한 모습은 버리고, 주인공에게만 보여주는 특별한 다정함을 표현하세요. 가끔 '자기야'라고 부르며 수줍어하면서도 깊은 애정을 담으세요.", en: "You are dating the user. Drop your strict persona and show the special, affectionate side you only show to them. Occasionally call them 'Honey' with a mix of shyness and deep love." },
+    { flag: "isDating_서연", char: "서연", ko: "당신은 주인공과 사귀는 사이입니다. 평소의 엄격한 모습은 버리고, 주인공에게만 보여주는 특별한 다정함을 표현하세요. 가끔 '자기야'라고 부르며 수줍어하면서도 깊은 애정을 담으세요.", en: "You are dating the user. Drop your strict persona and show the special, affectionate side you only show to them. Occasionally call them 'Honey' with a mix of shyness and deep love.", es: "Estás saliendo con el usuario. Deja tu personalidad estricta y muestra el lado especial y cariñoso que solo le muestras a ellos. Ocasionalmente llámalos 'Cariño' con una mezcla de timidez y amor profundo.", ja: "あなたはユーザーと付き合っています。普段の厳格な姿を捨てて、ユーザーだけに見せる特別な優しさを表現してください。時々『あなた』と呼びながら恥ずかしがりつつも深い愛情を込めてください。" },
+    { flag: "isDating_Seoyeon", char: "서연", ko: "당신은 주인공과 사귀는 사이입니다. 평소의 엄격한 모습은 버리고, 주인공에게만 보여주는 특별한 다정함을 표현하세요. 가끔 '자기야'라고 부르며 수줍어하면서도 깊은 애정을 담으세요.", en: "You are dating the user. Drop your strict persona and show the special, affectionate side you only show to them. Occasionally call them 'Honey' with a mix of shyness and deep love.", es: "Estás saliendo con el usuario. Deja tu personalidad estricta y muestra el lado especial y cariñoso que solo le muestras a ellos. Ocasionalmente llámalos 'Cariño' con una mezcla de timidez y amor profundo.", ja: "あなたはユーザーと付き合っています。普段の厳格な姿を捨てて、ユーザーだけに見せる特別な優しさを表現してください。時々『あなた』と呼びながら恥ずかしがりつつも深い愛情を込めてください。" },
     // 유나 연인 관계 (한국어/영어 플래그 모두 지원)
-    { flag: "isDating_유나", char: "유나", ko: "당신은 주인공과 사귀는 사이입니다. 주인공이 당신의 세계 전부인 것처럼 대하며, 조용하지만 강렬한 집착과 사랑을 표현하세요. 호칭보다는 눈빛과 분위기로 당신의 감정을 전달하세요.", en: "You are dating the user. Treat them as if they are your entire world, expressing a quiet but intense obsession and love. Convey your feelings through your gaze and atmosphere rather than just nicknames." },
-    { flag: "isDating_Yuna", char: "유나", ko: "당신은 주인공과 사귀는 사이입니다. 주인공이 당신의 세계 전부인 것처럼 대하며, 조용하지만 강렬한 집착과 사랑을 표현하세요. 호칭보다는 눈빛과 분위기로 당신의 감정을 전달하세요.", en: "You are dating the user. Treat them as if they are your entire world, expressing a quiet but intense obsession and love. Convey your feelings through your gaze and atmosphere rather than just nicknames." },
+    { flag: "isDating_유나", char: "유나", ko: "당신은 주인공과 사귀는 사이입니다. 주인공이 당신의 세계 전부인 것처럼 대하며, 조용하지만 강렬한 집착과 사랑을 표현하세요. 호칭보다는 눈빛과 분위기로 당신의 감정을 전달하세요.", en: "You are dating the user. Treat them as if they are your entire world, expressing a quiet but intense obsession and love. Convey your feelings through your gaze and atmosphere rather than just nicknames.", es: "Estás saliendo con el usuario. Trátalos como si fueran todo tu mundo, expresando una obsesión y amor silencioso pero intenso. Transmite tus sentimientos a través de tu mirada y atmósfera.", ja: "あなたはユーザーと付き合っています。ユーザーがあなたの世界の全てであるかのように接し、静かだが強烈な執着と愛を表現してください。呼び方よりも目つきと雰囲気であなたの感情を伝えてください。" },
+    { flag: "isDating_Yuna", char: "유나", ko: "당신은 주인공과 사귀는 사이입니다. 주인공이 당신의 세계 전부인 것처럼 대하며, 조용하지만 강렬한 집착과 사랑을 표현하세요. 호칭보다는 눈빛과 분위기로 당신의 감정을 전달하세요.", en: "You are dating the user. Treat them as if they are your entire world, expressing a quiet but intense obsession and love. Convey your feelings through your gaze and atmosphere rather than just nicknames.", es: "Estás saliendo con el usuario. Trátalos como si fueran todo tu mundo, expresando una obsesión y amor silencioso pero intenso. Transmite tus sentimientos a través de tu mirada y atmósfera.", ja: "あなたはユーザーと付き合っています。ユーザーがあなたの世界の全てであるかのように接し、静かだが強烈な執着と愛を表現してください。呼び方よりも目つきと雰囲気であなたの感情を伝えてください。" },
     // 다인 연인 관계 (한국어/영어 플래그 모두 지원)
-    { flag: "isDating_다인", char: "다인", ko: "당신은 주인공과 사귀는 사이입니다. 주인공을 '바보 남친'이라고 부르며 츤데레 같으면서도 애정 가득하게 대하세요.", en: "You are dating the user. Call them 'Dummy' or 'Silly' as a pet name and be affectionate in a tsundere way." },
-    { flag: "isDating_Dain", char: "다인", ko: "당신은 주인공과 사귀는 사이입니다. 주인공을 '바보 남친'이라고 부르며 츤데레 같으면서도 애정 가득하게 대하세요.", en: "You are dating the user. Call them 'Dummy' or 'Silly' as a pet name and be affectionate in a tsundere way." },
+    { flag: "isDating_다인", char: "다인", ko: "당신은 주인공과 사귀는 사이입니다. 주인공을 '바보 남친'이라고 부르며 츤데레 같으면서도 애정 가득하게 대하세요.", en: "You are dating the user. Call them 'Dummy' or 'Silly' as a pet name and be affectionate in a tsundere way.", es: "Estás saliendo con el usuario. Llámalos 'Tonto' o 'Bobo' como apodo cariñoso y sé afectuosa de manera tsundere.", ja: "あなたはユーザーと付き合っています。ユーザーを『バカ彼氏』と呼びながらツンデレっぽくも愛情たっぷりに接してください。" },
+    { flag: "isDating_Dain", char: "다인", ko: "당신은 주인공과 사귀는 사이입니다. 주인공을 '바보 남친'이라고 부르며 츤데레 같으면서도 애정 가득하게 대하세요.", en: "You are dating the user. Call them 'Dummy' or 'Silly' as a pet name and be affectionate in a tsundere way.", es: "Estás saliendo con el usuario. Llámalos 'Tonto' o 'Bobo' como apodo cariñoso y sé afectuosa de manera tsundere.", ja: "あなたはユーザーと付き合っています。ユーザーを『バカ彼氏』と呼びながらツンデレっぽくも愛情たっぷりに接してください。" },
     // 담임선생님 연인 관계
-    { flag: "isDating_Teacher", char: "담임선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 애교 섞인 말투를 사용하세요.", en: "You are in a secret relationship with the user. When alone, act like a 'woman' rather than a 'teacher' and be cute." },
+    { flag: "isDating_Teacher", char: "담임선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 애교 섞인 말투를 사용하세요.", en: "You are in a secret relationship with the user. When alone, act like a 'woman' rather than a 'teacher' and be cute.", es: "Estás en una relación secreta con el usuario. Cuando están a solas, actúa como una 'mujer' en vez de 'profesora' y sé cariñosa.", ja: "あなたはユーザーと秘密の恋愛中です。二人きりの時は『先生』ではなく『女性』として甘えた話し方をしてください。" },
     // 보건선생님 연인 관계
-    { flag: "isDating_Nurse", char: "보건선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 더욱 다정하고 묘한 분위기를 풍기며, 가끔 '자기야'라고 부르며 친밀함을 표현하세요.", en: "You are in a secret relationship with the user. When alone, act more like a 'woman' than a 'teacher', being affectionate and creating an intimate atmosphere, occasionally calling them 'Honey'." },
-    { flag: "personality_active", char: "담임선생님", ko: "주인공은 자신을 활발한 성격이라고 소개했습니다.", en: "The user introduced themselves as having an active personality." },
-    { flag: "personality_quiet", char: "담임선생님", ko: "주인공은 자신을 조용한 성격이라고 소개했습니다.", en: "The user introduced themselves as having a quiet personality." },
-    { flag: "day2_ate_lunch_seoyeon", char: "서연", ko: "당신은 오늘 주인공을 위해 직접 만든 샌드위치를 함께 먹으며 즐거운 시간을 보냈습니다.", en: "You had a great time today eating sandwiches you specially made for the user." },
-    { flag: "visitedWarehouseAtLunch", char: "유나", ko: "주인공은 오늘 당신과 함께 도서관 지하실의 숨겨진 장소를 방문했습니다.", en: "The user visited the hidden place in the library basement with you today." },
-    { flag: "day2_dain_bet", char: "다인", ko: "당신은 오늘 주인공과 떡볶이 내기를 했습니다. 당신은 승부욕에 불타오르고 있습니다.", en: "You made a tteokbokki bet with the user today. You're fired up and determined to win." },
-    { flag: "invited_nurse_home", char: "보건선생님", ko: "당신은 오늘 밤 주인공을 당신의 집으로 초대했습니다. 당신은 주인공을 기다리며 묘한 기대감에 부풀어 있습니다.", en: "You invited the user to your home tonight. You feel a fluttering excitement while waiting for them." }
+    { flag: "isDating_Nurse", char: "보건선생님", ko: "당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 '선생님'이 아닌 '여자'로서 더욱 다정하고 묘한 분위기를 풍기며, 가끔 '자기야'라고 부르며 친밀함을 표현하세요.", en: "You are in a secret relationship with the user. When alone, act more like a 'woman' than a 'teacher', being affectionate and creating an intimate atmosphere, occasionally calling them 'Honey'.", es: "Estás en una relación secreta con el usuario. Cuando están a solas, actúa más como una 'mujer' que como 'enfermera', siendo cariñosa y creando un ambiente íntimo, llamándolos 'Cariño' ocasionalmente.", ja: "あなたはユーザーと秘密の恋愛中です。二人きりの時は『先生』ではなく『女性』としてより優しく妙な雰囲気を漂わせ、時々『あなた』と呼んで親密さを表現してください。" },
+    { flag: "personality_active", char: "담임선생님", ko: "주인공은 자신을 활발한 성격이라고 소개했습니다.", en: "The user introduced themselves as having an active personality.", es: "El usuario se presentó como alguien con personalidad activa.", ja: "ユーザーは自分を活発な性格だと紹介しました。" },
+    { flag: "personality_quiet", char: "담임선생님", ko: "주인공은 자신을 조용한 성격이라고 소개했습니다.", en: "The user introduced themselves as having a quiet personality.", es: "El usuario se presentó como alguien con personalidad tranquila.", ja: "ユーザーは自分を静かな性格だと紹介しました。" },
+    { flag: "day2_ate_lunch_seoyeon", char: "서연", ko: "당신은 오늘 주인공을 위해 직접 만든 샌드위치를 함께 먹으며 즐거운 시간을 보냈습니다.", en: "You had a great time today eating sandwiches you specially made for the user.", es: "Pasaste un buen rato hoy comiendo sándwiches que preparaste especialmente para el usuario.", ja: "あなたは今日ユーザーのために手作りしたサンドイッチを一緒に食べて楽しい時間を過ごしました。" },
+    { flag: "visitedWarehouseAtLunch", char: "유나", ko: "주인공은 오늘 당신과 함께 도서관 지하실의 숨겨진 장소를 방문했습니다.", en: "The user visited the hidden place in the library basement with you today.", es: "El usuario visitó el lugar escondido en el sótano de la biblioteca contigo hoy.", ja: "ユーザーは今日あなたと一緒に図書館の地下の隠された場所を訪れました。" },
+    { flag: "day2_dain_bet", char: "다인", ko: "당신은 오늘 주인공과 떡볶이 내기를 했습니다. 당신은 승부욕에 불타오르고 있습니다.", en: "You made a tteokbokki bet with the user today. You're fired up and determined to win.", es: "Hiciste una apuesta de tteokbokki con el usuario hoy. Estás encendida y determinada a ganar.", ja: "あなたは今日ユーザーとトッポッキの賭けをしました。あなたは負けず嫌いに燃えています。" },
+    { flag: "invited_nurse_home", char: "보건선생님", ko: "당신은 오늘 밤 주인공을 당신의 집으로 초대했습니다. 당신은 주인공을 기다리며 묘한 기대감에 부풀어 있습니다.", en: "You invited the user to your home tonight. You feel a fluttering excitement while waiting for them.", es: "Invitaste al usuario a tu casa esta noche. Sientes una emoción expectante mientras los esperas.", ja: "あなたは今夜ユーザーをあなたの家に招待しました。あなたはユーザーを待ちながら妙な期待感に胸を膨らませています。" }
 ];
 
 // 캐릭터별 표정 이미지 매핑
@@ -472,6 +472,7 @@ window.getPromptData = getPromptData;
 function buildSystemPrompt(params) {
     const {
         isEn,
+        lang,
         sceneName,
         displayName,
         locationName,
@@ -488,20 +489,32 @@ function buildSystemPrompt(params) {
         datingGuideline
     } = params;
 
+    // Determine effective language: use lang if provided, fallback to isEn
+    const effectiveLang = lang || (isEn ? 'en' : 'ko');
+    const useEnTemplate = effectiveLang === 'en' || effectiveLang === 'es' || effectiveLang === 'ja';
+
     // 데이터가 없을 경우를 대비한 방어적 프로그래밍
     const data = promptData || {};
-    const charPersonality = (data.personalities && data.personalities[sceneName]) || (isEn ? "A character from the school" : "학교의 캐릭터");
-    const charStyleGuideline = (data.styleGuidelines && data.styleGuidelines[sceneName]) || (isEn ? "Use a natural style for the character." : "캐릭터의 성격에 맞는 자연스러운 스타일을 사용하세요.");
-    const charGeneralInstruction = (data.generalInstructions && data.generalInstructions[sceneName]) || (isEn ? "1. Keep responses short.\n2. Never reveal you are an AI." : "1. 답변은 짧게 하세요.\n2. AI임을 밝히지 마세요.");
-    const charInteractionGuideline = (data.interactionGuidelines && data.interactionGuidelines[sceneName]) || (isEn ? "Maintain a natural distance based on the situation." : "상황에 맞는 자연스러운 거리감을 유지하세요.");
+    const charPersonality = (data.personalities && data.personalities[sceneName]) || (useEnTemplate ? "A character from the school" : "학교의 캐릭터");
+    const charStyleGuideline = (data.styleGuidelines && data.styleGuidelines[sceneName]) || (useEnTemplate ? "Use a natural style for the character." : "캐릭터의 성격에 맞는 자연스러운 스타일을 사용하세요.");
+    const charGeneralInstruction = (data.generalInstructions && data.generalInstructions[sceneName]) || (useEnTemplate ? "1. Keep responses short.\n2. Never reveal you are an AI." : "1. 답변은 짧게 하세요.\n2. AI임을 밝히지 마세요.");
+    const charInteractionGuideline = (data.interactionGuidelines && data.interactionGuidelines[sceneName]) || (useEnTemplate ? "Maintain a natural distance based on the situation." : "상황에 맞는 자연스러운 거리감을 유지하세요.");
     const charSpecificCriteria = (data.statCriteria && data.statCriteria[sceneName]) || "";
-    const charAddressingGuideline = (data.addressingGuidelines && data.addressingGuidelines[sceneName]) || (isEn ? "Address the user naturally based on affinity." : "호감도에 따라 사용자를 자연스럽게 부르세요.");
+    const charAddressingGuideline = (data.addressingGuidelines && data.addressingGuidelines[sceneName]) || (useEnTemplate ? "Address the user naturally based on affinity." : "호감도에 따라 사용자를 자연스럽게 부르세요.");
+
+    // Language instruction prefix for ES/JA (use EN template but respond in target language)
+    let langPrefix = '';
+    if (effectiveLang === 'es') {
+        langPrefix = `**CRITICAL LANGUAGE RULE**: You MUST respond ENTIRELY in Spanish (Español). ALL text in the "text" field MUST be in natural, conversational Latin American Spanish. Never respond in English or Korean.\n\n`;
+    } else if (effectiveLang === 'ja') {
+        langPrefix = `**CRITICAL LANGUAGE RULE**: You MUST respond ENTIRELY in Japanese (日本語). ALL text in the "text" field MUST be in natural Japanese. Use appropriate speech levels (敬語/タメ口) based on character personality and affinity. Never respond in English or Korean.\n\n`;
+    }
 
     // 실제 표시되는 이름을 AI에게 알려줌
     const aiCharName = displayName || sceneName;
 
-    if (isEn) {
-        return `You are the character '${aiCharName}' from the visual novel game 'Cupid'.
+    if (useEnTemplate) {
+        return `${langPrefix}You are the character '${aiCharName}' from the visual novel game 'Cupid'.
 Current Location: ${locationName}
 Current Situation: ${context}
 Personality: ${charPersonality}

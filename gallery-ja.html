@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Gallery - Cupid</title>
+    <title>ギャラリー - Cupid</title>
     <meta name="description"
-        content="Cupid character profiles, event CGs, and music room. Revisit the characters and special moments from the game.">
+        content="Cupidのキャラクタープロフィール、イベントCG、ミュージックルーム。ゲームのキャラクターと特別なシーンを振り返ろう。">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Gallery - Cupid">
-    <meta property="og:description" content="Explore Cupid character profiles and event CGs.">
+    <meta property="og:title" content="ギャラリー - Cupid">
+    <meta property="og:description" content="CupidのキャラクタープロフィールとイベントCGを探索しよう。">
     <meta property="og:type" content="website">
 
     <!-- Fonts -->
@@ -27,26 +27,26 @@
 <body>
     <!-- Header -->
     <header class="gallery-header">
-        <h1>📖 Gallery</h1>
+        <h1>📖 ギャラリー</h1>
         <div class="header-actions">
-            <a href="index-en.html" class="back-btn">← Back</a>
+            <a href="index-ja.html" class="back-btn">← 戻る</a>
             <div class="lang-combo" id="langCombo">
                 <div class="lang-combo-selected" onclick="toggleLangCombo()">
-                    <span class="lang-flag">🇺🇸</span> English
+                    <span class="lang-flag">🇯🇵</span> 日本語
                 </div>
                 <div class="lang-combo-dropdown">
                     <a href="gallery.html" class="lang-combo-option">
                         <span class="lang-flag">🇰🇷</span> 한국어
                     </a>
-                    <div class="lang-combo-option active">
+                    <a href="gallery-en.html" class="lang-combo-option">
                         <span class="lang-flag">🇺🇸</span> English
-                    </div>
+                    </a>
                     <a href="gallery-es.html" class="lang-combo-option">
                         <span class="lang-flag">🇪🇸</span> Español
                     </a>
-                    <a href="gallery-ja.html" class="lang-combo-option">
+                    <div class="lang-combo-option active">
                         <span class="lang-flag">🇯🇵</span> 日本語
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,9 +56,9 @@
     <main class="gallery-container">
         <!-- Tab Navigation -->
         <nav class="tab-nav">
-            <button class="tab-btn active" data-tab="characters">👤 Characters</button>
-            <button class="tab-btn" data-tab="cg">🖼️ Event CG</button>
-            <button class="tab-btn" data-tab="music">🎵 Music Room</button>
+            <button class="tab-btn active" data-tab="characters">👤 キャラクター</button>
+            <button class="tab-btn" data-tab="cg">🖼️ イベントCG</button>
+            <button class="tab-btn" data-tab="music">🎵 ミュージックルーム</button>
         </nav>
 
         <!-- Tab Contents -->
@@ -97,17 +97,17 @@
                 </div>
                 <div class="character-details">
                     <div class="detail-section">
-                        <h4>Introduction</h4>
+                        <h4>紹介</h4>
                         <p id="modal-char-desc">Character description</p>
                     </div>
                     <div class="detail-section">
-                        <h4>Expressions</h4>
+                        <h4>表情</h4>
                         <div id="expression-buttons" class="expression-grid">
                             <!-- Expression buttons -->
                         </div>
                     </div>
                     <div class="detail-section">
-                        <h4>Profile</h4>
+                        <h4>プロフィール</h4>
                         <div id="char-stats" class="stats-grid">
                             <!-- Stats -->
                         </div>
