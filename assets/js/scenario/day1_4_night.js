@@ -88,7 +88,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Me",
-                "text": "*I flick on the light in my room and flop onto the bed. The unfamiliar ceiling feels strangely cozy tonight... maybe it's just the mood.*"
+                "text": "*I flick on the light in my room and flop onto the bed. The unfamiliar ceiling feels oddly cozy tonight... maybe it's just the mood.*"
             }
         }
     },
@@ -541,7 +541,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Homeroom Teacher",
-                "text": "'By the way, I noticed an expression on your face during class today... were you thinking about something funny? I saw everything~'"
+                "text": "'By the way, I noticed an expression on your face during class today... were you thinking about something funny? I saw everything.'"
             }
         }
     },
@@ -575,7 +575,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Homeroom Teacher",
-                "text": "'Haha, I see~ Anyway, the real start is tomorrow, so take care of yourself and get a good rest. See you tomorrow!'"
+                "text": "'Haha, I see. Anyway, the real start is tomorrow, so take care of yourself and get a good rest. See you tomorrow!'"
             }
         }
     },
@@ -731,7 +731,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "*Ding~ An instant reply.* 'I had a great time too! Having you around made me feel so reassured, {name}. See you at school tomorrow~'"
+                "text": "*Ding~ An instant reply.* 'I had a great time too! Having you around made me feel so reassured, {name}. See you at school tomorrow!'"
             }
         }
     },
@@ -1210,7 +1210,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Dain",
-                "text": "*An enthusiastic reply came instantly.* 'Oh~ You were watching? How embarrassing! Haha, I'll show you something even cooler tomorrow. Good night, {name}!'"
+                "text": "*An enthusiastic reply came instantly.* 'Oh, you were watching? How embarrassing! Haha, I'll show you something even cooler tomorrow. Good night, {name}!'"
             }
         }
     },
@@ -1232,7 +1232,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Dain",
-                "text": "*An enthusiastic reply came instantly.* 'Already fallen for my skills? Hehe, I'll make you fall even harder tomorrow! Don't be shocked if I show up in your dreams~'"
+                "text": "*An enthusiastic reply came instantly.* 'Already fallen for my skills? Hehe, I'll make you fall even harder tomorrow! Don't be shocked if I show up in your dreams.'"
             }
         }
     },
@@ -1413,7 +1413,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "School Nurse",
-                "text": "*A charming reply arrived.* 'Oh my, you actually messaged? Our transfer student is so sweet~'"
+                "text": "*A charming reply arrived.* 'Oh my, you actually messaged? Our transfer student is so sweet.'"
             }
         }
     },
@@ -1435,7 +1435,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "School Nurse",
-                "text": "*A charming reply arrived.* 'My goodness... a message like this at night? Are you trying to keep me up? Just kidding~ I really like this sweet side of you.'"
+                "text": "*A charming reply arrived.* 'My goodness... a message like this at night? Are you trying to keep me up? Just kidding. I really like this sweet side of you.'"
             }
         }
     },
@@ -1452,7 +1452,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "School Nurse",
-                "text": "'By the way, aren't you worn out from adjusting to the new school? Don't push yourself too hard~ If you get a headache or anything, come straight to the nurse's office.'"
+                "text": "'By the way, aren't you worn out from adjusting to the new school? Don't push yourself too hard. If you get a headache or anything, come straight to the nurse's office.'"
             }
         }
     },
@@ -1486,7 +1486,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "School Nurse",
-                "text": "'Thank you~ Well then, good night, {name}. I'll wish you sweet dreams.'"
+                "text": "'Thank you. Well then, good night, {name}. I'll wish you sweet dreams.'"
             }
         }
     },
@@ -1719,7 +1719,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Me",
-                "text": "*I replied 'I was just looking at the stars too.' ...The thought that we're looking at the same sky feels strangely exciting.*"
+                "text": "*I replied 'I was just looking at the stars too.' ...The thought that we're looking at the same sky is unexpectedly exciting.*"
             }
         }
     },
@@ -1775,7 +1775,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "School Nurse",
-                "text": "*A message from the School Nurse.* 'If you're still up, that's no good~ Should I give you a sleep consultation at the nurse's office tomorrow? Just kidding. Good night.'"
+                "text": "*A message from the School Nurse.* 'If you're still up, that's no good. Should I give you a sleep consultation at the nurse's office tomorrow? Just kidding. Good night.'"
             }
         }
     },
@@ -1836,7 +1836,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Me",
-                "text": "*I replied 'Thank you, Teacher! Good night~' She's so attentive and thoughtful. What a kind person.*"
+                "text": "*I replied 'Thank you, Teacher! Good night!' She's so attentive and thoughtful. What a kind person.*"
             }
         }
     },

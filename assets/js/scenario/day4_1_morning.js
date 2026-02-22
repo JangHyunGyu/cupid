@@ -543,7 +543,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"You didn't forget about today, right? 😊 Meet me at the park fountain at 10! I can't wait~\""
+                "text": "\"You didn't forget about today, right? 😊 Meet me at the park fountain at 10! I can't wait!\""
             }
         }
     },
@@ -578,7 +578,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"Oh, and the weather's so nice today! Perfect for a walk~ Don't forget sunscreen!\""
+                "text": "\"Oh, and the weather's so nice today! Perfect for a walk. Don't forget sunscreen!\""
             }
         }
     },
@@ -608,7 +608,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"See you soon~!! 😆\""
+                "text": "\"See you soon!! 😆\""
             }
         }
     },
@@ -1329,7 +1329,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Me",
-                "text": "*Yuna pulls out one earbud and looks up at me. Her quiet gaze feels strangely warm.*"
+                "text": "*Yuna pulls out one earbud and looks up at me. Her quiet gaze feels surprisingly warm.*"
             }
         }
     },

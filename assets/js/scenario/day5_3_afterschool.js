@@ -1468,7 +1468,7 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"Pfft~ I knew from the start! That you'd come to me in the end!! Hehe!\""
+                "text": "\"Pfft, I knew from the start! That you'd come to me in the end!! Hehe!\""
             }
         }
     },
@@ -1558,7 +1558,7 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"Oh, {name}! I was just about to come up to the rooftop too~\""
+                "text": "\"Oh, {name}! I was just about to come up to the rooftop too!\""
             }
         }
     },

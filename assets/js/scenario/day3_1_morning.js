@@ -126,7 +126,7 @@ Object.assign(SCENARIO[3], {
             },
             "en": {
                 "name": "School Nurse",
-                "text": "\"Hehe, don't be so stiff~ Not after what we shared.\""
+                "text": "\"Hehe, don't be so stiff. Not after what we shared.\""
             }
         }
     },
@@ -886,7 +886,7 @@ Object.assign(SCENARIO[3], {
             },
             "en": {
                 "name": "Dain",
-                "text": "*Reply* 'Aw~ That's too bad! But see you at school!'"
+                "text": "*Reply* 'Aw, that's too bad! But see you at school!'"
             }
         }
     },
@@ -2396,7 +2396,7 @@ Object.assign(SCENARIO[3], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"{name}!! Yay~!\""
+                "text": "\"{name}!! Yay!\""
             }
         }
     },
@@ -3500,7 +3500,7 @@ Object.assign(SCENARIO[3], {
             },
             "en": {
                 "name": "Me",
-                "text": "*The teacher glances at me with hopeful eyes. The air in the car feels strangely warm...*",
+                "text": "*The teacher glances at me with hopeful eyes. The air in the car feels unusually warm...*",
                 "choices": [
                     "Sure! I'll definitely be there on Sunday",
                     "Let me think about it and reply later",
@@ -4234,7 +4234,7 @@ Object.assign(SCENARIO[3], {
             },
             "en": {
                 "name": "Dain",
-                "text": "*Reply* 'Aww~ Too bad! But let's definitely do it next time!'"
+                "text": "*Reply* 'Aww, too bad! But let's definitely do it next time!'"
             }
         }
     },
@@ -4312,7 +4312,7 @@ Object.assign(SCENARIO[3], {
             },
             "en": {
                 "name": "School Nurse",
-                "text": "*Reply* 'Great~ I'll be waiting. Sunday at 7 PM 💋'"
+                "text": "*Reply* 'Great. I'll be waiting. Sunday at 7 PM 💋'"
             }
         }
     },

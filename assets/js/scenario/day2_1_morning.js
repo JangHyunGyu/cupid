@@ -369,7 +369,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "School Nurse",
-                "text": "*She walks up to me and straightens my clothes.* \"My dear transfer student, what did you dream about to be glowing like this? I overslept a little because I was up thinking about you.\""
+                "text": "*She walks up to me and straightens my clothes.* \"My dear transfer student, what did you dream about to be glowing like this? I barely got any sleep because I was up thinking about you.\""
             }
         }
     },
@@ -1270,7 +1270,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Classmate",
-                "text": "*The girl in the front row turns around with a giggle.* \"Once Dain gets a hold of you, there's no escape~ Watch out if your stamina can't keep up!\""
+                "text": "*The girl in the front row turns around with a giggle.* \"Once Dain gets a hold of you, there's no escape! Watch out if your stamina can't keep up!\""
             }
         }
     },
