@@ -165,7 +165,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Homeroom Teacher",
-                "text": "\"My, my... you're a bold student, aren't you? Fine, I'll share some. Here, say 'Ah~'.\""
+                "text": "\"My, my... you're a bold student, aren't you? Fine, I'll share some. Here, say 'Ahh'.\""
             }
         }
     },
@@ -360,7 +360,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"Oh? {name}! Hey~! See you later!\""
+                "text": "\"Oh? {name}! Hey! See you later!\""
             }
         }
     },
@@ -374,7 +374,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "???",
-                "text": "\"Huh? Who's that? A boy in the student council room... Anyway, hi~!\""
+                "text": "\"Huh? Who's that? A boy in the student council room... Anyway, hi!\""
             }
         }
     },
@@ -2059,7 +2059,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"Hey~ {name}! Why are you paying? I said I'm treating! Hehe, but thanks for the thought. You pay today, and I'll get you something even better tomorrow! Promise!\""
+                "text": "\"Hey, {name}! Why are you paying? I said I'm treating! Hehe, but thanks for the thought. You pay today, and I'll get you something even better tomorrow! Promise!\""
             }
         }
     },
@@ -2089,7 +2089,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"Hey~ I said I'm treating! What money does a transfer student have? Today I'll treat you so just enjoy!\""
+                "text": "\"Hey, I said I'm treating! What money does a transfer student have? Today I'll treat you, so just enjoy!\""
             }
         }
     },

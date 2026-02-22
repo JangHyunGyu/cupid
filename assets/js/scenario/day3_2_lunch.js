@@ -1489,7 +1489,7 @@ Object.assign(SCENARIO[3], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"Hmm~ Really? Their faces say otherwise though... Well, whatever!\""
+                "text": "\"Hmm, really? Their faces say otherwise though... Well, whatever!\""
             }
         }
     },
@@ -1815,7 +1815,7 @@ Object.assign(SCENARIO[3], {
             },
             "en": {
                 "name": "Me",
-                "text": "*Lunch in the cafeteria. The atmosphere is strangely tense.*"
+                "text": "*Lunch in the cafeteria. The atmosphere is unusually tense.*"
             }
         }
     },
@@ -2315,7 +2315,7 @@ Object.assign(SCENARIO[3], {
             "en": {
                 "name": "Me",
                 "text": "*Having lunch together in the nurse's office. My heart races at the secretive atmosphere.*",
-                "context": "Having lunch alone with the school nurse in her office. She locked the door. It feels like a secret date. The thrill of a forbidden love."
+                "context": "Having lunch alone with the school nurse in her office. She locked the door. It's like a secret date. The thrill of a forbidden love."
             }
         }
     },

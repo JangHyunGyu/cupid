@@ -624,7 +624,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"Ahhh~ I feel alive now. Thanks so much for today, {name}.\""
+                "text": "\"Ahhh, I feel alive now. Thanks so much for today, {name}.\""
             }
         }
     },
@@ -2079,7 +2079,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"Hehe~ Not quite there yet. Alright, while we're at it, can you wait until our practice ends? Let's go get tteokbokki together!\""
+                "text": "\"Hehe, not quite there yet. Alright, while we're at it, can you wait until our practice ends? Let's go get tteokbokki together!\""
             }
         }
     },
@@ -2308,7 +2308,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Dain",
-                "text": "*Dain pouts for a moment but then smiles it off.* \"What~ Playing hard to get? Alright, alright. I'll try harder to get your number!\""
+                "text": "*Dain pouts for a moment but then smiles it off.* \"What, playing hard to get? Alright, alright. I'll try harder to get your number!\""
             }
         }
     },

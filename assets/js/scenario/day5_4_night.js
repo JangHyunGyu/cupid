@@ -800,7 +800,7 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "Me",
-                "text": "*But strangely enough all of them are smiling. As if they completely own me.*"
+                "text": "*But oddly enough, all of them are smiling. As if they completely own me.*"
             }
         }
     },

@@ -528,7 +528,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"Oh, really? I just finished practice! {name}, hang out with me next time too~!\"",
+                "text": "\"Oh, really? I just finished practice! {name}, hang out with me next time too!\"",
                 "choices": [
                     "Sure, definitely!",
                     "I have plans with Seoyeon today, so...",
@@ -569,7 +569,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"Aww~ That's disappointing. But promise me next time!\""
+                "text": "\"Aww, that's disappointing. But promise me next time!\""
             }
         }
     },
@@ -1744,7 +1744,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"H-hey, what's with that suddenly~! (Dain blushes and playfully hits my shoulder) But thanks! {name}'s the best!\""
+                "text": "\"H-hey, what's with that all of a sudden?! (Dain blushes and playfully hits my shoulder) But thanks! {name}'s the best!\""
             }
         }
     },

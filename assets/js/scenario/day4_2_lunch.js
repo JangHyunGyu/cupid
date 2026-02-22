@@ -233,7 +233,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"Really? I put a lot of effort in today! I'm glad you noticed~\""
+                "text": "\"Really? I put a lot of effort in today! I'm glad you noticed!\""
             }
         }
     },
@@ -418,7 +418,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Dain",
-                "text": "\"H-hehe... Really?! I spent so long deciding what to wear!! What a relief~!!\""
+                "text": "\"H-hehe... Really?! I spent so long deciding what to wear!! What a relief!!\""
             }
         }
     },
@@ -1054,7 +1054,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Me",
-                "text": "*She stopped in front of one painting. Her profile, gazing at the landscape in the painting... was strangely beautiful.*"
+                "text": "*She stopped in front of one painting. Her profile, gazing at the landscape in the painting... was unexpectedly beautiful.*"
             }
         }
     },
@@ -1412,7 +1412,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Me",
-                "text": "*Their eyes softened. It feels like something connected between us.*"
+                "text": "*Their eyes softened. Something just connected between us.*"
             }
         }
     },
@@ -1427,7 +1427,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Me",
-                "text": "*As we step out of the café, warm afternoon sunlight pours down. It feels like the distance between us has gotten smaller.*"
+                "text": "*As we step out of the café, warm afternoon sunlight pours down. Somehow, the distance between us has gotten smaller.*"
             }
         }
     },
@@ -1536,7 +1536,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Me",
-                "text": "*Walking side by side, a brief silence falls. It's not awkward — it's a comfortable silence. It feels like we've become the kind of people who are okay without saying a word.*"
+                "text": "*Walking side by side, a brief silence falls. It's not awkward — it's a comfortable silence. We've become the kind of people who are okay without saying a word.*"
             }
         }
     },

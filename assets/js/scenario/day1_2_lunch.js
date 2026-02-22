@@ -190,7 +190,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"Transfer student, feels like we've gotten a bit closer? I was just about to look for you. Want to eat together on the rooftop?\"",
+                "text": "\"Transfer student, I think we've gotten a bit closer, don't you? I was just about to look for you. Want to eat together on the rooftop?\"",
                 "choices": [
                     "Yeah! I wanted to eat with you, Seoyeon.",
                     "Sorry, I want to be alone today.",
@@ -463,7 +463,7 @@ Object.assign(SCENARIO[1], {
                 "text": "\"Especially these octopus sausages are my masterpiece! Want to try one?\"",
                 "choices": [
                     "Wow, it looks so delicious! You're a cooking genius, Seoyeon.",
-                    "Say... 'ah~'",
+                    "Say... 'ahh'",
                     "This is the first lunch box with so much care I've seen. Thank you.",
                     "It doesn't look that appetizing... Should've gone to the store."
                 ]
@@ -589,7 +589,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"Wh-what?! You really... saying such things so casually... Fine, you're hopeless. Just this once! Here... 'ah~'\""
+                "text": "\"Wh-what?! You really... saying such things so casually... Fine, you're hopeless. Just this once! Here... 'ahh'\""
             }
         }
     },
@@ -619,7 +619,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"Thank you?.. I should be the one thanking you for eating with me. It tastes so much better than eating alone. Will you eat with me like this again?\""
+                "text": "\"Thank you...? I should be the one thanking you for eating with me. It tastes so much better than eating alone. Will you eat with me like this again?\""
             }
         }
     },
@@ -1448,7 +1448,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Yuna",
-                "text": "\"{name}... Hehe, that's a nice name. This school... is very different from what it looks like. From you too.. I feel a strangely familiar aura.\""
+                "text": "\"{name}... Hehe, that's a nice name. This school... is very different from what it looks like. And you... there's something oddly familiar about you.\""
             }
         }
     },

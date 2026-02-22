@@ -1035,7 +1035,7 @@ Object.assign(SCENARIO[3], {
             },
             "en": {
                 "name": "School Nurse",
-                "text": "'Secret~ You'll find out on Sunday. Look forward to it.'"
+                "text": "'It's a secret. You'll find out on Sunday. Look forward to it.'"
             }
         }
     },

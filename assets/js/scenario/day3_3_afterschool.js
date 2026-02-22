@@ -1734,7 +1734,7 @@ Object.assign(SCENARIO[3], {
             },
             "en": {
                 "name": "Me",
-                "text": "*Yuna's eyes seemed to flash strangely for a moment... Must be my imagination?*"
+                "text": "*Yuna's eyes seemed to flash oddly for a moment... Must be my imagination?*"
             }
         }
     },

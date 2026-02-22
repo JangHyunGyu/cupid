@@ -176,7 +176,7 @@ class GalleryData {
                 id: 'dain',
                 name: 'Dain',
                 title: 'Sunny Childhood Friend',
-                shortDescription: 'A bright and lively "nurturing" tsundere.',
+                shortDescription: 'A bright and lively tsundere with a nurturing side.',
                 description: 'A bright and lively "nurturing" tsundere. Treats you like a comfortable friend, but quickly turns red and flustered in romantic moments. Honest about feelings but clumsy at expressing them.',
                 age: '18 years old',
                 birthday: 'December 25',

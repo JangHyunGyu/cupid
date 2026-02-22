@@ -145,7 +145,7 @@ function getPromptData(isEn, playerName) {
 
     const defaultStatCriteria = isEn ? {
         "Seoyeon": `
-     * +3: Seeing her as a "girl" rather than a "president", accepting her hidden vulnerability, or deep emotional sincerity.
+     * +3: Seeing her as a "girl" rather than a "president", accepting her hidden vulnerability, or showing deep emotional sincerity.
      * +2: Praising her hidden efforts, noticing her fatigue and offering comfort, or light romantic teasing.
      * +1: Polite greetings, showing respect for school rules, or simple agreement with her opinions.
      * -1 ~ -3: Being slightly distracted, giving short/insincere answers, or lukewarm reactions.
@@ -166,14 +166,14 @@ function getPromptData(isEn, playerName) {
      * -4 ~ -7: Being a "killjoy", acting too cool/aloof, or light profanity.
      * -8 ~ -10: Crude sexual jokes (she hates them), sexual harassment, or severe personal attacks.`,
         "Homeroom Teacher": `
-     * +3: Treating her as a "woman" rather than just a "teacher", protecting her when she's being "clumsy", or romantic boldness.
+     * +3: Treating her as a "woman" rather than just a "teacher", protecting her when she's being "clumsy", or showing romantic boldness.
      * +2: Noticing she looks tired and showing concern, offering to help with her work, or polite but friendly conversation.
      * +1: Proper student etiquette, answering her questions sincerely, or simple respect.
      * -1 ~ -3: Complaining about schoolwork, being slightly dismissive of her authority, or using overly casual speech.
      * -4 ~ -7: Disrespectful tone, making fun of her "clumsy" mistakes, or light profanity.
      * -8 ~ -10: Sexual harassment (crude remarks crossing the line), severe insults, or mocking her professional pride.`,
         "Nurse": `
-     * +3: Boldly leading the pace of her teasing, seeing through her "seductive" mask to her true kindness, or "manly" confidence.
+     * +3: Boldly matching the pace of her teasing, seeing through her "seductive" mask to her true kindness, or showing "manly" confidence.
      * +2: Reacting cutely/flustered to her teasing, showing interest in her well-being, or asking for her professional advice.
      * +1: Polite greetings, thanking her for her care, or simple friendly conversation.
      * -1 ~ -3: Being too stiff/formal, not getting her jokes, or being overly defensive/scared.

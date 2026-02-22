@@ -58,7 +58,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Me",
-                "text": "*The smell of someone cooking dinner drifts on the breeze. Warm light seeps through a neighbor's window... Something about this ordinary scene puts my mind strangely at ease.*"
+                "text": "*The smell of someone cooking dinner drifts on the breeze. Warm light seeps through a neighbor's window... Something about this ordinary scene puts my mind oddly at ease.*"
             }
         }
     },
@@ -525,7 +525,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Me",
-                "text": "*I press the doorbell and hear rustling from inside. A voice calls out 'Just a moment~' followed by footsteps drawing closer.*"
+                "text": "*I press the doorbell and hear rustling from inside. A voice calls out 'Just a moment!' followed by footsteps drawing closer.*"
             }
         }
     },
@@ -987,7 +987,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Me",
-                "text": "*I feel myself being drawn deeper into Yuna's mysterious aura. Her words about watching over me in my dreams feel less frightening and more strangely comforting. It almost feels like I really could meet her in a dream.*"
+                "text": "*I feel myself being drawn deeper into Yuna's mysterious aura. Her words about watching over me in my dreams feel less frightening and more oddly comforting. It almost feels like I really could meet her in a dream.*"
             }
         }
     },
@@ -1384,7 +1384,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "Me",
-                "text": "*Her reply is painfully matter-of-fact. It feels like she's treating me as just another student, and a bitter feeling sinks in.*"
+                "text": "*Her reply is painfully matter-of-fact. She's clearly treating me as just another student, and a bitter feeling sinks in.*"
             }
         }
     },

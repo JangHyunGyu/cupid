@@ -1293,7 +1293,7 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Me",
-                "text": "*We walked side by side along the riverbank. Neither of us said a word, but strangely, the silence wasn't uncomfortable at all.*"
+                "text": "*We walked side by side along the riverbank. Neither of us said a word, but somehow, the silence wasn't uncomfortable at all.*"
             }
         }
     },

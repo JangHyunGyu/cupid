@@ -279,7 +279,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Seoyeon",
-                "text": "\"Oh my, flirting on the first day? I'll give you a passing grade. So, shall our 'special' transfer student follow me?\""
+                "text": "\"Oh my, flirting on the first day? I'll give you credit for that. So, shall our 'special' transfer student follow me?\""
             }
         }
     },
@@ -2061,7 +2061,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Classmates",
-                "text": "\"Oh~ You seem athletic! How about a game of volleyball at lunch? Let's see what the transfer student's got!\""
+                "text": "\"Oh, you seem athletic! How about a game of volleyball at lunch? Let's see what the transfer student's got!\""
             }
         }
     },
@@ -2181,7 +2181,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Classmates",
-                "text": "*Seoyeon's expression stiffens a bit too. It feels like some kind of wall has formed. The students quiet down while watching me.*"
+                "text": "*Seoyeon's expression stiffens a bit too. It's as if some kind of wall has formed. The students quiet down while watching me.*"
             }
         }
     },
