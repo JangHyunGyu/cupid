@@ -340,15 +340,20 @@ class FreeTalkSystem {
 
         const chatGuideEl = document.getElementById('chat-guide');
         if (chatGuideEl) {
-            if (isEn) {
-                chatGuideEl.innerHTML = isRemote
+            const tips = {
+                es: isRemote
+                    ? "<b>Tip:</b> Describe el tono con asteriscos, ej: <i>*sonriendo* Hola...</i>"
+                    : "<b>Tip:</b> Describe la escena o acciones, ej: <i>*toma la mano* Vamos.</i>",
+                ja: isRemote
+                    ? "<b>Tip:</b> <i>*笑顔で* ねぇ</i> のように、雰囲気や状況を表現してみてね。"
+                    : "<b>Tip:</b> <i>*手を握って* 行こう。</i> のように話してみてね。",
+                en: isRemote
                     ? "<b>Tip:</b> Describe tone in asterisks, e.g., <i>*smiling* Hey...</i>"
-                    : "<b>Tip:</b> Describe scene or actions, e.g., <i>*holds hand* Let's go.</i>";
-            } else {
-                chatGuideEl.innerHTML = isRemote
-                    ? "<b>Tip:</b> <i>*웃으며* 자?</i> 처럼 어조나 상황을 표현해보세요."
-                    : "<b>Tip:</b> <i>*손을 잡으며* 같이 가자.</i> 처럼 말해보세요.";
-            }
+                    : "<b>Tip:</b> Describe scene or actions, e.g., <i>*holds hand* Let's go.</i>"
+            };
+            chatGuideEl.innerHTML = tips[lang] || (isRemote
+                ? "<b>Tip:</b> <i>*웃으며* 자?</i> 처럼 어조나 상황을 표현해보세요."
+                : "<b>Tip:</b> <i>*손을 잡으며* 같이 가자.</i> 처럼 말해보세요.");
         }
 
         // ─────────────────────────────────────────────────────────────

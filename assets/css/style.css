@@ -242,6 +242,9 @@ html {
     pointer-events: auto;
     /* 박스 내부는 클릭 가능 */
     margin-bottom: 10px;
+    overflow-y: auto;
+    /* 긴 텍스트가 박스를 넘지 않도록 */
+    box-sizing: border-box;
 }
 
 /* 캐릭터 이름 태그 */
@@ -263,9 +266,18 @@ html {
     font-size: 1.2rem;
     line-height: 1.6;
     word-break: keep-all;
-    /* 단어 단위 줄바꿈으로 가독성 향상 */
+    /* 단어 단위 줄바꿈으로 가독성 향상 (한국어) */
+    overflow-wrap: break-word;
+    /* 긴 단어가 박스를 넘지 않도록 안전장치 */
     white-space: pre-wrap;
     /* 줄바꿈 기호 유지 */
+}
+
+/* 스페인어/일본어: word-break 기본값 사용 (keep-all은 한국어 전용) */
+html[lang="es"] #message,
+html[lang="ja"] #message,
+html[lang="en"] #message {
+    word-break: normal;
 }
 
 /* 다음 장면 표시 화살표 */
@@ -989,6 +1001,13 @@ html {
     margin-bottom: 20px;
     line-height: 1.5;
     word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+html[lang="es"] .modal-content p,
+html[lang="ja"] .modal-content p,
+html[lang="en"] .modal-content p {
+    word-break: normal;
 }
 
 .modal-buttons {
