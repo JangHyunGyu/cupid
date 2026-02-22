@@ -127,7 +127,7 @@ const updates = {
 
     // Farewell
     'day4_night_yuna_farewell': "*Yuna stopped as she was about to turn around. And she gripped my collar tightly.*",
-    'day4_night_yuna_farewell_2': "I won't let you die like Sunbae. To protect you... I'd rather break you and tie you to my side.",
+    'day4_night_yuna_farewell_2': "I won't let you die like he did. To protect you... I'd rather break you and tie you to my side.",
     'day4_night_yuna_farewell_3': "You're mine. You can't go anywhere.",
     'day4_night_yuna_home': "*I returned home. Yuna's chilling gaze and tight grip won't leave my mind.*",
     'day4_night_yuna_home_2': "*I had a feeling that what she meant by 'protecting' might be different from what I thought.*",

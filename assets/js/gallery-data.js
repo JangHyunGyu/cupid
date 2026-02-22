@@ -140,7 +140,7 @@ class GalleryData {
             // Seyoun - 완벽한 학생회장 (메가데레)
             seyoun: {
                 id: 'seyoun',
-                name: 'Seyoun',
+                name: 'Seoyeon',
                 title: 'The Perfect President',
                 shortDescription: 'A perfect student council president who is kind to everyone.',
                 description: 'A perfect student council president who is kind to everyone. Actually gets lonely easily and becomes very shy when alone with you. Values rules, but sometimes wants to break them for you.',
@@ -176,8 +176,8 @@ class GalleryData {
                 id: 'dain',
                 name: 'Dain',
                 title: 'Sunny Childhood Friend',
-                shortDescription: 'A bright and lively "wifey-type" tsundere.',
-                description: 'A bright and lively "wifey-type" tsundere. Treats you like a comfortable friend, but quickly turns red and flustered in romantic moments. Honest about feelings but clumsy at expressing them.',
+                shortDescription: 'A bright and lively "nurturing" tsundere.',
+                description: 'A bright and lively "nurturing" tsundere. Treats you like a comfortable friend, but quickly turns red and flustered in romantic moments. Honest about feelings but clumsy at expressing them.',
                 age: '18 years old',
                 birthday: 'December 25',
                 height: '158cm',
@@ -194,7 +194,7 @@ class GalleryData {
                 name: 'Ms. Kim',
                 title: 'The Clumsy Teacher',
                 shortDescription: 'A professional teacher who separates work and personal life.',
-                description: 'A professional teacher who separates work and personal life, but actually has a clumsy side. Her heart flutters at your unexpectedly mature moments. Has a gap moe of secretly wanting to rely on you.',
+                description: 'A professional teacher who separates work and personal life, but actually has a clumsy side. Her heart flutters at your unexpectedly mature moments. Has a charming contrast of secretly wanting to rely on you.',
                 age: '28 years old',
                 birthday: 'May 5',
                 height: '170cm',

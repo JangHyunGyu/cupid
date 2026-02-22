@@ -12,7 +12,7 @@ const replacements = {
     'day5_ending_good_12': "*So it's okay. This obsession took a long time to form that's exactly why it will never be undone.*",
     'day5_ending_mayhem_8': "*Maybe it's selfish. Wanting to cherish everyone. But it's already too late.*",
     'day5_ending_mayhem_9': "*Their obsession is already suffocating me. The moment I choose one, I will be ruined.*",
-    'day5_ending_mayhem_10': "*This hellish everyday life honestly, it's not bad. I wonder what kind of bloody mayhem tomorrow will bring.*",
+    'day5_ending_mayhem_10': "*Honestly, this hellish daily life... isn't so bad. I wonder what chaos tomorrow will bring.*",
     'day5_ending_harem_7': "*But strangely enough all of them are smiling. As if they completely own me.*",
     'day5_ending_harem_8': "*Call it greed if you want. If I can't escape from this terrible cycle of obsession.*",
     'day5_ending_harem_9': "*No regrets. No, they don't even give me time to regret. They are watching my every move.*",

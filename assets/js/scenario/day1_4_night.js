@@ -1337,7 +1337,7 @@ Object.assign(SCENARIO[1], {
             },
             "en": {
                 "name": "Dain",
-                "text": "*Instant reply.* 'Ooh!! That's the spirit!! You gotta come early tomorrow, okay? Oversleep and it's a forfeit! Good night, fighting!'"
+                "text": "*Instant reply.* 'Ooh!! That's the spirit!! You gotta come early tomorrow, okay? Oversleep and it's a forfeit! Good night, you got this!'"
             }
         }
     },

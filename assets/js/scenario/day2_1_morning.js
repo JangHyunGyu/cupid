@@ -2224,7 +2224,7 @@ Object.assign(SCENARIO[2], {
             },
             "en": {
                 "name": "System",
-                "text": "- Ding dong dang dong -"
+                "text": "- The bell rings -"
             }
         }
     },

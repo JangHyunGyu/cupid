@@ -646,7 +646,7 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "Me",
-                "text": "*This hellish everyday life honestly, it's not bad. I wonder what kind of bloody mayhem tomorrow will bring.*"
+                "text": "*Honestly, this hellish daily life... isn't so bad. I wonder what chaos tomorrow will bring.*"
             }
         }
     },
@@ -755,7 +755,7 @@ Object.assign(SCENARIO[5], {
             },
             "en": {
                 "name": "Me",
-                "text": "*Monday is the walking-to-school order, Tuesday is lunch boxes, Wednesday is the walk home… the weekly schedule is a diplomatic war.*"
+                "text": "*Mondays: who walks me to school. Tuesdays: whose lunch I eat. Wednesdays: who walks me home... My weekly schedule is a diplomatic nightmare.*"
             }
         }
     },
