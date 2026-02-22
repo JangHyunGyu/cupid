@@ -121,7 +121,8 @@ class DialogueSystem {
      * @returns {string} 처리된 텍스트
      */
     processPlaceholders(text, charName) {
-        const isEn = document.documentElement.lang === 'en';
+        const lang = document.documentElement.lang || 'ko';
+        const isEn = lang === 'en';
 
         // 주인공/시스템 메시지인지 확인
         const isPlayer = charName === "나" || charName === "Me" || charName === "시스템" || charName === "System";
@@ -129,19 +130,19 @@ class DialogueSystem {
 
         // 이 캐릭터가 플레이어 이름을 알고 있는지 확인
         const nameKnown = charKey && this.stateManager.getFlag(`knows_name_${charKey.toLowerCase()}`);
-        const defaultTitle = isEn ? "Transfer Student" : "전학생";
+        const defaultTitle = { es: "Estudiante Transferido", ja: "転校生", en: "Transfer Student" }[lang] || "전학생";
 
         let processedText = text;
 
         // 한국어: 조사 처리 포함
-        if (!isEn && !isPlayer) {
+        if (lang === 'ko' && !isPlayer) {
             // {name?}: 이름을 아는지에 따라 다르게 표시
             const nameForQuestion = nameKnown ? this.stateManager.playerName : defaultTitle;
             processedText = this.koreanProcessor.processName(text, nameForQuestion, "{name\\?}");
             // {name}: 항상 플레이어 이름으로
             processedText = this.koreanProcessor.processName(processedText, this.stateManager.playerName, "{name}");
         } else {
-            // 영어: 단순 치환
+            // 영어/스페인어/일본어: 단순 치환
             const nameToUse = nameKnown ? this.stateManager.playerName : defaultTitle;
             processedText = text.replace(/{name\?}/g, nameToUse).replace(/{name}/g, this.stateManager.playerName);
         }
@@ -163,11 +164,16 @@ class DialogueSystem {
      * @returns {string} 호감도 현황 텍스트
      */
     generateAffinityList(isEn) {
-        const charNames = isEn ?
-            { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Teacher", Nurse: "Nurse" } :
-            { Seoyeon: "서연", Yuna: "유나", Dain: "다인", Teacher: "담임선생님", Nurse: "보건선생님" };
+        const lang = document.documentElement.lang || 'ko';
+        const charNamesByLang = {
+            en: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Teacher", Nurse: "Nurse" },
+            es: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Profesora", Nurse: "Enfermera" },
+            ja: { Seoyeon: "ソヨン", Yuna: "ユナ", Dain: "ダイン", Teacher: "担任先生", Nurse: "保健先生" },
+            ko: { Seoyeon: "서연", Yuna: "유나", Dain: "다인", Teacher: "담임선생님", Nurse: "보건선생님" }
+        };
+        const charNames = charNamesByLang[lang] || charNamesByLang.ko;
 
-        let listStr = isEn ? "\n\n[Affinity Status]\n" : "\n\n[호감도 현황]\n";
+        let listStr = { es: "\n\n[Estado de Afinidad]\n", ja: "\n\n[好感度状況]\n", en: "\n\n[Affinity Status]\n" }[lang] || "\n\n[호감도 현황]\n";
 
         for (const [key, name] of Object.entries(charNames)) {
             // 만난 적 없는 캐릭터는 건너뛰기

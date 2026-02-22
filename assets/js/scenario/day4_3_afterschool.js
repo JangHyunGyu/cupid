@@ -28,6 +28,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*We left the café and walked together through the streets. Before I knew it, afternoon had arrived.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Salimos del café y caminamos juntos por las calles. Sin darme cuenta, ya era la tarde.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*カフェを出て一緒に街を歩いた。いつの間にか午後になっていた。*"
             }
         }
     },
@@ -42,6 +50,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*We walked side by side, looking around at the scenery. It was the weekend, so the streets were pretty crowded. Laughter, music, and sweet aromas all blended together.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Caminamos uno al lado del otro, mirando el paisaje. Era fin de semana, así que las calles estaban bastante llenas. Risas, música y aromas dulces se mezclaban.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*並んで歩きながら周りを見回す。週末だから通りにはかなり人が多い。笑い声、音楽、甘い匂いが入り混じる。*"
             }
         }
     },
@@ -56,6 +72,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*I caught our reflection in a shop window. We looked just like a real couple… My heart started racing.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Vi nuestro reflejo en un escaparate. Parecíamos una pareja de verdad… Mi corazón empezó a latir con fuerza.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*ショーウィンドウに映った僕たちの姿が見える。まるで本物のカップルみたいで…心臓がドキドキした。*"
             }
         }
     },
@@ -70,6 +94,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*A small market came into view down a side alley. Delicious smells drifted in on the breeze. My mouth was watering.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Al fondo de un callejón se veía un pequeño mercado. Olores deliciosos llegaban con la brisa. Se me hizo agua la boca.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*路地の奥に小さな市場が見える。美味しそうな匂いが風に乗ってくる。思わずお腹が鳴りそうだ。*"
             }
         }
     },
@@ -99,6 +131,22 @@ Object.assign(SCENARIO[4], {
                     "\"Want to share one?\"",
                     "\"Looks delicious… Let's just browse for a bit.\""
                 ]
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Un puesto de comida callejera me llamó la atención. ¿Qué debería hacer?*",
+                "choices": [
+                    "\"¿Quieres compartir uno?\"",
+                    "\"Se ve delicioso… Solo miremos un poco.\""
+                ]
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*屋台が目に入った。どうしよう？*",
+                "choices": [
+                    "「一つ買って分けない？」",
+                    "「美味しそうだな…ちょっと見てみよう。」"
+                ]
             }
         }
     },
@@ -113,6 +161,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "(I bought a fish-shaped pastry and split it in half. Warm steam rose from it. \"Here, half for you.\" My hand trembled slightly as I offered it.)"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(Compré un pastelito con forma de pez y lo partí por la mitad. El vapor caliente subía. \"Toma, la mitad para ti.\" Mi mano tembló un poco al ofrecerlo.)"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(たい焼きを一つ買って半分に割った。温かい湯気がもくもくと立ち上る。「はい、半分。」渡す手が少し震えた。)"
             }
         }
     },
@@ -127,6 +183,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*As we browsed in front of the stall, our shoulders brushed against each other. My heart lurched. I pretended not to notice, but I'm pretty sure I was blushing up to my ears.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Mientras mirábamos frente al puesto, nuestros hombros se rozaron. Mi corazón dio un vuelco. Fingí no darme cuenta, pero estoy seguro de que me sonrojé hasta las orejas.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*屋台の前であれこれ見ていたら、肩が触れた。心臓がドキッとする。知らないふりをしたけど、耳まで赤くなっていたと思う。*"
             }
         }
     },
@@ -142,6 +206,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*We walked side by side back out to the main road. The streets had grown quieter. The sunset's glow stretched long between the buildings.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Caminamos uno al lado del otro de vuelta a la calle principal. Las calles se habían tranquilizado. El resplandor del atardecer se extendía entre los edificios.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*並んで歩きながら大通りに戻った。いつの間にか通りは静かになっていた。夕日の光がビルの間に長く差し込んでいる。*"
             }
         }
     },
@@ -156,6 +228,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*I can't believe just walking together like this can make me this happy. I stole a glance at the person beside me. Something… an emotion I couldn't put into words was welling up inside me.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No puedo creer que solo caminar juntos me haga tan feliz. Le eché un vistazo a la persona a mi lado. Algo… una emoción que no podía expresar con palabras crecía dentro de mí.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*こうして一緒に歩くだけでこんなに幸せだなんて。隣にいる人の顔をこっそり盗み見る。なんだか…言葉にできない感情が込み上げてくる。*"
             }
         }
     },
@@ -170,6 +250,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*I never knew walking side by side could feel this good. Every time our fingertips brushed, my heart pounded.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Nunca supe que caminar uno al lado del otro podía sentirse tan bien. Cada vez que nuestros dedos se rozaban, mi corazón latía con fuerza.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*並んで歩くのがこんなに良いものだったなんて。指先が触れるたびに心臓がドキドキする。*"
             }
         }
     },
@@ -184,6 +272,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*As we walked, some charming shops tucked away in the alley caught my eye. My companion pointed at one of them.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Mientras caminábamos, unas tiendas encantadoras escondidas en el callejón me llamaron la atención. Mi acompañante señaló una de ellas.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*歩いていると、路地の奥に雰囲気のあるお店が目に入った。相手が一軒を指差した。*"
             }
         }
     },
@@ -220,6 +316,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "System",
                 "text": ""
+            },
+            "es": {
+                "name": "Sistema",
+                "text": ""
+            },
+            "ja": {
+                "name": "システム",
+                "text": ""
             }
         }
     },
@@ -235,6 +339,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Seoyeon",
                 "text": "\"Look over there, a flower shop! Let's go check it out!\""
+            },
+            "es": {
+                "name": "Seoyeon",
+                "text": "\"¡Mira allí, una florería! ¡Vamos a verla!\""
+            },
+            "ja": {
+                "name": "ソヨン",
+                "text": "「あそこ見て、花屋さんだよ！ちょっと入ってみよう！」"
             }
         }
     },
@@ -275,6 +387,22 @@ Object.assign(SCENARIO[4], {
                     "\"You're prettier than any flower.\"",
                     "\"Thank you, I'll treasure it.\""
                 ]
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(Seoyeon sonrió radiante entre las flores, eligió una y me la ofreció. \"Esta es para ti. El significado de la flor es… un secreto.\")",
+                "choices": [
+                    "\"Tú eres más bonita que cualquier flor.\"",
+                    "\"Gracias, la guardaré con cariño.\""
+                ]
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(ソヨンが花の中で嬉しそうに笑いながら、小さな花を一輪選んで差し出してきた。「これ、あげる。花言葉は…秘密だよ。」)",
+                "choices": [
+                    "「ソヨンの方がずっと綺麗だよ。」",
+                    "「ありがとう、大切にするね。」"
+                ]
             }
         }
     },
@@ -290,6 +418,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Yuna",
                 "text": "\"…There's a used bookstore over there. Would it be okay if we stopped in?\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"…Hay una librería de segunda mano allá. ¿Podemos entrar un momento?\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "「…あそこ、古本屋だ。ちょっと入ってもいい？」"
             }
         }
     },
@@ -330,6 +466,22 @@ Object.assign(SCENARIO[4], {
                     "\"Let's read it together. One chapter a day.\"",
                     "\"If you picked it, I'm sure it's a great book.\""
                 ]
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(Yuna sacó cuidadosamente un libro de los estantes viejos. \"Este libro… quería leerlo contigo.\" Sus ojos brillaron suavemente.)",
+                "choices": [
+                    "\"Leámoslo juntos. Un capítulo por día.\"",
+                    "\"Si tú lo elegiste, seguro es un gran libro.\""
+                ]
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(ユナが古い本棚から一冊の本をそっと取り出した。「この本…一緒に読みたかったの。」ユナの目が柔らかく光った。)",
+                "choices": [
+                    "「一緒に読もう。毎日一章ずつ。」",
+                    "「ユナが選んだなら、きっといい本だよ。」"
+                ]
             }
         }
     },
@@ -345,6 +497,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Dain",
                 "text": "\"Oh! A sports store!! Hold on, there's something I need to check out!\""
+            },
+            "es": {
+                "name": "Dain",
+                "text": "\"¡Oh! ¡¡Una tienda de deportes!! ¡Espera, hay algo que tengo que ver!\""
+            },
+            "ja": {
+                "name": "ダイン",
+                "text": "「お！スポーツ用品店だ！！ちょっと待って、見たいものがあるの！！」"
             }
         }
     },
@@ -385,6 +545,22 @@ Object.assign(SCENARIO[4], {
                     "\"Sure! Let's match!\"",
                     "\"You pick them out, you've got great taste.\""
                 ]
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(Dain vino corriendo emocionada con unas pulseras a juego. \"¡Mira estas, pulseras de pareja! ¡Pongámonos una cada uno!\" Su cara estaba un poco sonrojada.)",
+                "choices": [
+                    "\"¡Claro! ¡Hagamos juego!\"",
+                    "\"Tú elígelas, tienes buen gusto.\""
+                ]
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(ダインがカップルお揃いのリストバンドを持って嬉しそうに走ってきた。「これ見て、ペアバンド！一つずつつけよう！」顔がちょっと赤くなっている。)",
+                "choices": [
+                    "「いいね！お揃いにしよう。」",
+                    "「ダインが選んでよ、センスいいから。」"
+                ]
             }
         }
     },
@@ -400,6 +576,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "School Nurse",
                 "text": "\"Oh my, an antique shop over there. Shall we have a look?\""
+            },
+            "es": {
+                "name": "Enfermera",
+                "text": "\"Vaya, una tienda de antigüedades. ¿Entramos a ver?\""
+            },
+            "ja": {
+                "name": "保健先生",
+                "text": "「あら、あそこにアンティークショップがあるわ。一緒に見てみない？」"
             }
         }
     },
@@ -440,6 +624,22 @@ Object.assign(SCENARIO[4], {
                     "\"It would look great on you. Can I buy it for you?\"",
                     "\"You have a good eye. It's really beautiful.\""
                 ]
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(Ella sostuvo un broche antiguo, inclinándolo a la luz del sol con una sonrisa. \"¿No es bonito? Algo en él… me hace querer guardarlo para siempre.\")",
+                "choices": [
+                    "\"Le quedaría muy bien. ¿Puedo comprárselo?\"",
+                    "\"Tiene muy buen ojo. Es realmente hermoso.\""
+                ]
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(先生がヴィンテージのブローチを手に取り、日の光にかざして微笑んだ。「これ、素敵じゃない？なんだか…ずっと大切にしたい気持ちになるの。」)",
+                "choices": [
+                    "「先生に似合いそうです。僕が買いましょうか？」",
+                    "「いい目してますね。本当に綺麗です。」"
+                ]
             }
         }
     },
@@ -455,6 +655,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Homeroom Teacher",
                 "text": "\"Wait, can we stop by that stationery store? I need a pen.\""
+            },
+            "es": {
+                "name": "Profesora",
+                "text": "\"Espera, ¿podemos pasar por esa papelería? Necesito un bolígrafo.\""
+            },
+            "ja": {
+                "name": "担任先生",
+                "text": "「ちょっと、あそこの文房具屋に寄ってもいい？ペンが一本欲しいの。」"
             }
         }
     },
@@ -495,6 +703,22 @@ Object.assign(SCENARIO[4], {
                     "\"Thank you. I'll use it every day.\"",
                     "\"It's even more special because you picked it out.\""
                 ]
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(Estaba eligiendo un bolígrafo cuando se detuvo y tomó otro. \"…Este es para ti. Asegúrate de tomar buenos apuntes en clase. …Es un regalo.\" Se dio la vuelta, pero las puntas de sus orejas estaban rojas.)",
+                "choices": [
+                    "\"Gracias. Lo usaré todos los días.\"",
+                    "\"Es aún más especial porque lo elegiste tú.\""
+                ]
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(先生がペンを選んでいると、ふと手を止めてもう一本手に取った。「…これは君の分。授業中ちゃんとノート取りなさいよ。…プレゼントだから。」顔を背けたけど、耳の先が赤かった。)",
+                "choices": [
+                    "「ありがとうございます。毎日使います。」",
+                    "「先生が選んでくれたから、もっと特別ですね。」"
+                ]
             }
         }
     },
@@ -511,6 +735,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "(It was a special time together. \"Hey, want to head to the riverside park?\" My companion suggested it first.)"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "(Fue un momento especial juntos. \"Oye, ¿quieres ir al parque del río?\" Mi acompañante lo sugirió primero.)"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(特別な時間だった。「ねえ、川沿いの公園に行ってみない？」相手が先に提案してくれた。)"
             }
         }
     },
@@ -526,6 +758,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*We arrived at the riverside park. The sunset was sparkling on the water. It looked like a scene straight out of a movie.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Llegamos al parque junto al río. El atardecer brillaba sobre el agua. Parecía una escena sacada de una película.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*川沿いの公園に着いた。夕日が水面にきらきらと輝いていた。まるで映画のワンシーンみたいだった。*"
             }
         }
     },
@@ -542,6 +782,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*We walked slowly along the riverbank. The sunset light shimmered across the water, painting golden ripples. Time seemed to slow down.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Caminamos lentamente por la orilla del río. La luz del atardecer se reflejaba en el agua, pintando ondas doradas. El tiempo parecía ir más lento.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*川沿いをゆっくり歩く。水面に夕焼けの光が揺らめいて、金色の波紋を描いている。時間がどんどんゆっくり流れていく気がする。*"
             }
         }
     },
@@ -558,6 +806,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*The sky shifted from orange to pink, and then to violet. I don't think I've ever seen a sky this beautiful in my entire life.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*El cielo cambió de naranja a rosa, y luego a violeta. Creo que nunca en mi vida había visto un cielo tan hermoso.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*空がオレンジからピンクに、そして紫色に染まっていく。こんな空を見たのは生まれて初めてかもしれない。*"
             }
         }
     },
@@ -574,6 +830,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*A warm breeze brushed past us. The wind from the river carried the scent of grass and water. The gentle sound of flowing water played like background music.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Una brisa cálida nos acarició. El viento del río traía el aroma de hierba y agua. El suave sonido del agua corría como música de fondo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*温かい風が吹き抜ける。川から吹く風に草の匂いと水の匂いが混ざる。穏やかな水の音がBGMのように流れている。*"
             }
         }
     },
@@ -610,6 +874,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "System",
                 "text": ""
+            },
+            "es": {
+                "name": "Sistema",
+                "text": ""
+            },
+            "ja": {
+                "name": "システム",
+                "text": ""
             }
         }
     },
@@ -625,6 +897,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*Seoyeon was leaning on the railing, gazing at the sunset. Her hair fluttered in the breeze. Her profile, bathed in the glow of the setting sun… was breathtakingly beautiful.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Seoyeon estaba apoyada en la barandilla, contemplando el atardecer. Su cabello ondeaba con la brisa. Su perfil, bañado por el resplandor del sol poniente… era increíblemente hermoso.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*ソヨンが手すりに腕をかけて夕日を眺めている。風に髪がなびく。夕焼けに染まったその横顔が…息を呑むほど綺麗だった。*"
             }
         }
     },
@@ -640,6 +920,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*Yuna was quietly watching the sunset. Her usually expressionless face had softened gently. I've… never seen her look like this before.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Yuna observaba el atardecer en silencio. Su rostro usualmente inexpresivo se había suavizado. Nunca… la había visto así antes.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*ユナが静かに夕日を眺めている。いつもの無表情が柔らかくほどけている。こんな表情は…初めてだ。*"
             }
         }
     },
@@ -655,6 +943,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*Dain let out a small gasp of awe. Unlike her usual energetic self, she stood still, gazing at the sunset. She looked unexpectedly mature.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Dain dejó escapar un pequeño suspiro de asombro. A diferencia de su yo enérgico habitual, se quedó quieta contemplando el atardecer. Se veía inesperadamente madura.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "(ダインが「わぁ…」と小さく感嘆の声を漏らした。いつもの元気な姿と違い、じっと夕日を見つめるその姿が意外と大人っぽかった。)"
             }
         }
     },
@@ -670,6 +966,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*She gazed at the sunset with her eyes gently narrowed. Bathed in the glow of the setting sun, she looked like a painting come to life.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Ella contemplaba el atardecer con los ojos entrecerrados. Bañada por el resplandor del sol poniente, parecía una pintura cobrada vida.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*先生が目を細めて夕日を眺めている。夕焼けに染まったその姿がまるで一枚の絵画のようだった。*"
             }
         }
     },
@@ -685,6 +989,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*She leaned quietly against the railing, looking down at the river. Her usual strictness was nowhere to be seen, replaced by a soft, gentle smile.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Se apoyó silenciosamente en la barandilla, mirando el río. Su severidad habitual había desaparecido por completo, reemplazada por una sonrisa suave y gentil.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*先生が静かに手すりに寄りかかって川を見下ろしている。いつもの厳しさはどこにもなく、柔らかい微笑みが浮かんでいた。*"
             }
         }
     },
@@ -701,6 +1013,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*The sunset was illuminating their face. Strangely, I couldn't find any words to say.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*El atardecer iluminaba su rostro. Extrañamente, no podía encontrar palabras.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*夕日がその人の顔を照らしている。不思議と言葉が出てこない。*"
             }
         }
     },
@@ -715,6 +1035,14 @@ Object.assign(SCENARIO[4], {
             },
             "en": {
                 "name": "Me",
+                "text": "*……*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*……*"
+            },
+            "ja": {
+                "name": "僕",
                 "text": "*……*"
             }
         }
@@ -731,6 +1059,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*I think I finally know what this feeling is. From the very first day I transferred here until now… I've been feeling it all along.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Creo que por fin sé qué es este sentimiento. Desde el primer día que me transferí hasta ahora… lo he sentido todo este tiempo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*この感情が何なのか、もうはっきりわかった気がする。転校してきた初日からずっと…感じていたんだ。*"
             }
         }
     },
@@ -763,6 +1099,22 @@ Object.assign(SCENARIO[4], {
                     "\"There's something I need to tell you…\"  (Confess)",
                     "\"…This view is really beautiful.\"  (Not yet)"
                 ]
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Ahora mismo, en este momento… ¿debería decirle lo que siento?*",
+                "choices": [
+                    "\"Hay algo que necesito decirte…\"  (Confesarse)",
+                    "\"…Este paisaje es realmente hermoso.\"  (Todavía no)"
+                ]
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*今この瞬間…気持ちを伝えようか？*",
+                "choices": [
+                    "「言いたいことがあるんだ…」（告白する）",
+                    "「…この景色、本当に綺麗だね。」（まだだ）"
+                ]
             }
         }
     },
@@ -778,6 +1130,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "\"The truth is… ever since I transferred here, all I've thought about every day is you.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"La verdad es que… desde que me transferí aquí, en lo único que pienso cada día es en ti.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "「実は…転校してきてから、毎日考えていた人がいるんだ。」"
             }
         }
     },
@@ -793,6 +1153,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*My heart was pounding like crazy. Thump, thump, thump. Can they hear it too?*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Mi corazón latía como loco. Tum, tum, tum. ¿Acaso puede escucharlo también?*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*心臓がおかしいくらいに鳴っている。ドクン、ドクン、ドクン。この音、相手にも聞こえてるんじゃないか。*"
             }
         }
     },
@@ -808,6 +1176,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "\"At first, I just thought you were a good person… but now I'm sure.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"Al principio, solo pensé que eras una buena persona… pero ahora estoy seguro.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "「最初はただいい人だなって思ってたんだけど…今ははっきりわかった。」"
             }
         }
     },
@@ -823,6 +1199,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*I took a deep breath. I clenched my fists. If not now… I'll regret it for the rest of my life.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Respiré profundamente. Apreté los puños. Si no es ahora… me arrepentiré el resto de mi vida.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*深く息を吸い込んだ。手をぎゅっと握りしめた。今じゃなかったら…一生後悔する気がする。*"
             }
         }
     },
@@ -838,6 +1222,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "\"I… I like you.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"Yo… me gustas. De verdad.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "「僕…好きだよ。本気で。」"
             }
         }
     },
@@ -853,6 +1245,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*As soon as the words left my mouth, silence fell. The world bathed in the sunset's glow seemed to stop. Every second felt like an hour.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*En cuanto las palabras salieron de mi boca, se hizo el silencio. El mundo bañado por el atardecer pareció detenerse. Cada segundo se sentía como una hora.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*言い終わった瞬間、静寂が流れた。夕焼けに染まった世界が止まったように感じた。1秒が1時間のように長く感じる。*"
             }
         }
     },
@@ -888,6 +1288,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "System",
                 "text": ""
+            },
+            "es": {
+                "name": "Sistema",
+                "text": ""
+            },
+            "ja": {
+                "name": "システム",
+                "text": ""
             }
         }
     },
@@ -903,6 +1311,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "\"Seoyeon… seeing your smile every morning has become the reason I start my day. I've never felt anything like this before.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"Seoyeon… ver tu sonrisa cada mañana se convirtió en la razón por la que empiezo mi día. Nunca había sentido algo así.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "「ソヨン…毎朝君の笑顔を見ることが、僕の一日が始まる理由になってた。こんな気持ちは初めてなんだ。」"
             }
         }
     },
@@ -918,6 +1334,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "\"Yuna… when I'm with you, the world feels quiet. I love that stillness. It's special because it's you.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"Yuna… cuando estoy contigo, el mundo se siente tranquilo. Me encanta esa calma. Es especial porque eres tú.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "「ユナ…君と一緒にいると、世界が静かに感じるんだ。その静けさが好きなんだ。君だから特別なんだよ。」"
             }
         }
     },
@@ -933,6 +1357,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "\"Dain… when you smile, I can't help but smile too. Your bright energy is contagious. At some point, it started feeling empty without you around.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"Dain… cuando sonríes, no puedo evitar sonreír también. Tu energía brillante es contagiosa. En algún momento, empecé a sentirme vacío sin ti.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "「ダイン…君が笑うと、僕もつられて笑っちゃうんだ。君の明るいエネルギーは伝染するんだよ。いつからか、君がいないと寂しくなったんだ。」"
             }
         }
     },
@@ -948,6 +1380,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "\"I'm not saying this as a student… I'm saying this as a person. I like you. I truly mean it.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"No digo esto como estudiante… lo digo como persona. Me gustas. Lo digo de verdad.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "「先生…これは生徒としてじゃなく、一人の人間として言ってるんです。先生が好きです。本気です。」"
             }
         }
     },
@@ -963,6 +1403,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "\"Whether you're being strict or smiling… I've liked every side of you. These feelings are genuine, and they're only for you.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"Ya sea que estés siendo estricta o sonriendo… me ha gustado cada lado tuyo. Estos sentimientos son genuinos, y son solo para ti.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "「先生…厳しい時も、笑っている時も、全部好きでした。この気持ちは先生だけに向けた本気の気持ちです。」"
             }
         }
     },
@@ -987,6 +1435,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Seoyeon",
                 "text": "\"…Me too. I like you too. Ever since the first day you transferred in, when I first saw you at the school gate.\""
+            },
+            "es": {
+                "name": "Seoyeon",
+                "text": "\"…Yo también. También me gustas. Desde el primer día que te transferiste, cuando te vi por primera vez en la puerta de la escuela.\""
+            },
+            "ja": {
+                "name": "ソヨン",
+                "text": "「…私も。私も好き。転校してきた初日、校門で初めて見た時から。」"
             }
         }
     },
@@ -1002,6 +1458,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*Tears were welling up in Seoyeon's eyes. Those tears, sparkling in the sunset's glow… were like the most beautiful jewels in the world.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Las lágrimas brotaban en los ojos de Seoyeon. Esas lágrimas, brillando bajo el resplandor del atardecer… eran como las joyas más hermosas del mundo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*ソヨンの目に涙が浮かんでいる。夕日の光にきらめくその涙が…世界で一番美しい宝石のようだった。*"
             }
         }
     },
@@ -1017,6 +1481,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Seoyeon",
                 "text": "\"…Can I hold your hand?\"  (Seoyeon gently wrapped her hand around mine. It was warm, and trembling slightly.)"
+            },
+            "es": {
+                "name": "Seoyeon",
+                "text": "\"…¿Puedo tomarte de la mano?\"  (Seoyeon envolvió suavemente mi mano con la suya. Era cálida, y temblaba ligeramente.)"
+            },
+            "ja": {
+                "name": "ソヨン",
+                "text": "「…手、繋いでもいい？」（ソヨンがそっと僕の手を握った。温かくて、少し震えていた。）"
             }
         }
     },
@@ -1041,6 +1513,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Yuna",
                 "text": "\"…Dummy. I was going to say it first.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"…Tonto. Yo iba a decirlo primero.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "「…バカ。先に言おうとしてたのに。」"
             }
         }
     },
@@ -1056,6 +1536,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*Yuna slightly lowered her head. I could see the blush spreading all the way to the tips of her ears. This was completely different from how she usually is… my heart felt like it would burst.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Yuna bajó ligeramente la cabeza. Podía ver el rubor extendiéndose hasta las puntas de sus orejas. Era completamente diferente a como suele ser… mi corazón sentía que iba a explotar.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*ユナが少しうつむいた。耳の先まで赤くなっているのが見える。いつもと全然違うこの姿に…心臓が破裂しそうだった。*"
             }
         }
     },
@@ -1071,6 +1559,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Yuna",
                 "text": "\"…Stay still.\"  (Yuna moved right next to me and stood close. Our shoulders were touching. A small warmth radiated between us.)"
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"…No te muevas.\"  (Yuna se acercó a mi lado y se quedó cerca. Nuestros hombros se tocaban. Un pequeño calor irradiaba entre nosotros.)"
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "「…じっとして。」（ユナが僕のすぐ隣に来て、ぴったりと寄り添った。肩が触れ合う。小さな温もりが二人の間に広がった。）"
             }
         }
     },
@@ -1095,6 +1591,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Dain",
                 "text": "\"…Huh?! F-for real?! Me too!! I like you too!! Oh my gosh!!\""
+            },
+            "es": {
+                "name": "Dain",
+                "text": "\"…¿¡Eh!? ¿¡D-de verdad!? ¡¡Yo también!! ¡¡También me gustas!! ¡¡Dios mío!!\""
+            },
+            "ja": {
+                "name": "ダイン",
+                "text": "「…え？！ほ、ほんとに？！私も！！私も好き！！うそでしょ？！」"
             }
         }
     },
@@ -1110,6 +1614,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*Dain grabbed my arm with both hands. Her face was flushed bright red, but her eyes were sparkling with joy.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Dain agarró mi brazo con ambas manos. Su cara estaba completamente roja, pero sus ojos brillaban de alegría.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*ダインが両手で僕の腕をぎゅっと掴んだ。顔は真っ赤に上気しているけど、目はキラキラと輝いていた。*"
             }
         }
     },
@@ -1125,6 +1637,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Dain",
                 "text": "\"Hehe, so we're officially dating now, right?! Really?! Ahh, my heart's gonna explode!!\"  (Dain bounced up and down, grabbing my hand and shaking it.)"
+            },
+            "es": {
+                "name": "Dain",
+                "text": "\"Jeje, ¿entonces estamos saliendo oficialmente, verdad?! ¿¡De verdad!? ¡¡Ahh, mi corazón va a explotar!!\"  (Dain saltaba de arriba a abajo, tomando mi mano y sacudiéndola.)"
+            },
+            "ja": {
+                "name": "ダイン",
+                "text": "「えへへ、じゃあ私たち付き合ってるってことだよね？！本当に？！ああもう心臓爆発しそう！！」（ダインがぴょんぴょん跳ねながら僕の手を掴んで振り回した。）"
             }
         }
     },
@@ -1149,6 +1669,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "School Nurse",
                 "text": "\"…I already knew. I could tell just by looking into your eyes. …I feel the same way.\""
+            },
+            "es": {
+                "name": "Enfermera",
+                "text": "\"…Ya lo sabía. Podía notarlo con solo mirarte a los ojos. …Yo siento lo mismo.\""
+            },
+            "ja": {
+                "name": "保健先生",
+                "text": "「…わかってたわ。あなたの目を見ればわかるもの。…私も同じ気持ちよ。」"
             }
         }
     },
@@ -1164,6 +1692,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*She took a step closer. A faint, gentle fragrance brushed past my nose. My heart felt like it might stop.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Ella dio un paso más cerca. Una fragancia suave y delicada rozó mi nariz. Sentí que mi corazón podría detenerse.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*先生が一歩近づいてきた。ほのかな香りが鼻先をかすめる。心臓が止まりそうだった。*"
             }
         }
     },
@@ -1179,6 +1715,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "School Nurse",
                 "text": "\"It's a secret, just between us.\"  (She gently took my hand. Her soft, warm hand… was trembling.)"
+            },
+            "es": {
+                "name": "Enfermera",
+                "text": "\"Es un secreto, solo entre nosotros.\"  (Ella tomó suavemente mi mano. Su mano suave y cálida… estaba temblando.)"
+            },
+            "ja": {
+                "name": "保健先生",
+                "text": "「秘密よ、二人だけの。」（先生がそっと僕の手を取った。柔らかくて温かい手が…震えていた。）"
             }
         }
     },
@@ -1203,6 +1747,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Homeroom Teacher",
                 "text": "\"…Honestly, you. You know a student shouldn't say things like that to a teacher, right? …But I feel the same way, you dummy.\""
+            },
+            "es": {
+                "name": "Profesora",
+                "text": "\"…En serio, tú. Sabes que un estudiante no debería decirle esas cosas a una profesora, ¿verdad? …Pero yo siento lo mismo, tonto.\""
+            },
+            "ja": {
+                "name": "担任先生",
+                "text": "「…まったく、あなたね。生徒が先生にそんなこと言っちゃダメでしょ？…でも、私も同じ気持ちよ、バカ。」"
             }
         }
     },
@@ -1218,6 +1770,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*Her eyes were wavering. Getting to see this vulnerable side of someone who's always so guarded… I must be the only one who gets to see this.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Sus ojos estaban vacilantes. Ver este lado vulnerable de alguien que siempre está tan protegida… debo ser el único que puede ver esto.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*先生の目が揺れている。いつも隙のないあの人のこんな姿は…僕だけが見られるものなんだろう。*"
             }
         }
     },
@@ -1233,6 +1793,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Homeroom Teacher",
                 "text": "\"…Just this much.\"  (She linked her pinky finger with mine. \"At school… it's a secret.\")"
+            },
+            "es": {
+                "name": "Profesora",
+                "text": "\"…Solo esto.\"  (Ella entrelazó su meñique con el mío. \"En la escuela… es un secreto.\")"
+            },
+            "ja": {
+                "name": "担任先生",
+                "text": "「…これだけね。」（先生が僕と小指を絡めた。「学校では…秘密よ。」）"
             }
         }
     },
@@ -1249,6 +1817,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*Beneath the sunset, our two shadows merged into one. It was the happiest moment in the world.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Bajo el atardecer, nuestras dos sombras se fusionaron en una sola. Fue el momento más feliz del mundo.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*夕日の下、二人の影が一つに重なった。世界で一番幸せな瞬間だった。*"
             }
         }
     },
@@ -1264,6 +1840,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "\"…This view is really beautiful.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"…Este paisaje es realmente hermoso.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "「…この景色、本当に綺麗だね。」"
             }
         }
     },
@@ -1279,6 +1863,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*The words I wanted to say rose all the way to the tip of my tongue… but I swallowed them back down. Not yet… it's not the right time yet.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Las palabras que quería decir subieron hasta la punta de mi lengua… pero las tragué de vuelta. Todavía no… aún no es el momento.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*言いたい言葉が喉元まで上がってきたけど…結局飲み込んだ。まだ…まだその時じゃない。*"
             }
         }
     },
@@ -1294,6 +1886,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*We walked side by side along the riverbank. Neither of us said a word, but somehow, the silence wasn't uncomfortable at all.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Caminamos uno al lado del otro por la orilla del río. Ninguno dijo una palabra, pero de alguna manera, el silencio no era incómodo en absoluto.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*並んで川沿いの道を歩いた。何も話さなかったけど、不思議と居心地の悪くない沈黙だった。*"
             }
         }
     },
@@ -1309,6 +1909,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "\"…Today was really fun. Thank you.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"…Hoy fue muy divertido. Gracias.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "「…今日、本当に楽しかった。ありがとう。」"
             }
         }
     },
@@ -1324,6 +1932,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*We'd have to part ways at the crosswalk up ahead. I never knew taking a single step could be this hard.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Tendríamos que separarnos en el cruce más adelante. Nunca supe que dar un solo paso podía ser tan difícil.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*あの先の横断歩道で別れなきゃいけない。一歩踏み出すのがこんなに難しいなんて。*"
             }
         }
     },
@@ -1339,6 +1955,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*The words I swallowed earlier came surging back up. 'I like you.' Those three words were pounding against the walls of my heart.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Las palabras que tragué antes volvieron a surgir. 'Me gustas.' Esas tres palabras golpeaban las paredes de mi corazón.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*さっき飲み込んだ言葉がまた込み上げてきた。「好きだよ。」その三文字が心臓の壁を叩いている。*"
             }
         }
     },
@@ -1374,6 +1998,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "System",
                 "text": ""
+            },
+            "es": {
+                "name": "Sistema",
+                "text": ""
+            },
+            "ja": {
+                "name": "システム",
+                "text": ""
             }
         }
     },
@@ -1394,6 +2026,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Seoyeon",
                 "text": "\"Me too! Let's hang out again… okay?\"  (Seoyeon smiled brightly, but somewhere deep in her eyes, a hint of longing showed.)"
+            },
+            "es": {
+                "name": "Seoyeon",
+                "text": "\"¡Yo también! Salgamos de nuevo… ¿sí?\"  (Seoyeon sonrió con alegría, pero en algún lugar de sus ojos, se asomó un destello de anhelo.)"
+            },
+            "ja": {
+                "name": "ソヨン",
+                "text": "「私も！また遊ぼうね…ね？」（ソヨンは明るく笑ったけど、目の奥にどこか名残惜しさが見えた。）"
             }
         }
     },
@@ -1414,6 +2054,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Yuna",
                 "text": "\"…Yeah. It wasn't bad. …Let's do this again sometime.\"  (Yuna turned her head slightly. Was she trying to hide her expression?)"
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"…Sí. No estuvo mal. …Hagámoslo de nuevo alguna vez.\"  (Yuna giró ligeramente la cabeza. ¿Estaba tratando de ocultar su expresión?)"
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "「…うん。悪くなかった。…また、やろう。」（ユナが少し顔をそむけた。表情を隠そうとしているのだろうか。）"
             }
         }
     },
@@ -1434,6 +2082,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Dain",
                 "text": "\"Of course it was fun!! Let's go out again next time!!\"  (Dain smiled brightly, but for a moment, I caught her biting her lip.)"
+            },
+            "es": {
+                "name": "Dain",
+                "text": "\"¡¡Claro que fue divertido!! ¡¡Salgamos de nuevo la próxima vez!!\"  (Dain sonrió con alegría, pero por un momento, la vi morderse el labio.)"
+            },
+            "ja": {
+                "name": "ダイン",
+                "text": "「もちろん楽しかったよ！！次もまた行こう！！」（ダインは明るく笑ったけど、一瞬唇を噛んでいるのが見えた。）"
             }
         }
     },
@@ -1454,6 +2110,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "School Nurse",
                 "text": "\"It was a lovely time. …Shall we meet up again?\"  (Her smile seemed just a bit weaker than usual.)"
+            },
+            "es": {
+                "name": "Enfermera",
+                "text": "\"Fue un momento encantador. …¿Nos vemos de nuevo?\"  (Su sonrisa parecía un poco más débil de lo normal.)"
+            },
+            "ja": {
+                "name": "保健先生",
+                "text": "「楽しい時間だったわ。…また会えるかしら？」（先生の微笑みがいつもより少しだけ弱く見えた。）"
             }
         }
     },
@@ -1474,6 +2138,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Homeroom Teacher",
                 "text": "\"…Well, it wasn't bad. Call me again next time. I'll come.\"  (She smiled, but her steps as she turned away were slow.)"
+            },
+            "es": {
+                "name": "Profesora",
+                "text": "\"…Bueno, no estuvo mal. Llámame de nuevo la próxima vez. Vendré.\"  (Sonrió, pero sus pasos al darse la vuelta fueron lentos.)"
+            },
+            "ja": {
+                "name": "担任先生",
+                "text": "「…まあ、悪くなかったわね。次もまた呼んでね。来てあげるから。」（先生は笑ったけど、振り返る足取りが遅かった。）"
             }
         }
     },
@@ -1489,6 +2161,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*We said our goodbyes and I turned to walk away. I wanted to look back… but I held myself back.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Nos despedimos y me di la vuelta para irme. Quería mirar atrás… pero me contuve.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*挨拶を交わして足を向けた。振り返りたかったけど…我慢した。*"
             }
         }
     },
@@ -1504,6 +2184,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*I couldn't help it anymore and looked back. They had turned around too. The moment our eyes met, we both quickly looked away.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No pude más y miré atrás. También se había dado la vuelta. En el momento en que nuestros ojos se encontraron, ambos miramos rápidamente hacia otro lado.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*どうしても我慢できなくて振り返った。相手も振り返っていた。目が合った瞬間、お互い慌てて顔をそむけた。*"
             }
         }
     },
@@ -1519,6 +2207,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*On the way home. The words I couldn't say today sat heavy in a corner of my chest. 'Next time… I'll definitely say it. I have to.'*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*De camino a casa. Las palabras que no pude decir hoy pesaban en un rincón de mi pecho. 'La próxima vez… definitivamente lo diré. Tengo que hacerlo.'*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*家への帰り道。今日言えなかった言葉が胸の隅に重く残っている。「次こそは…絶対に言おう。」*"
             }
         }
     },
@@ -1535,6 +2231,14 @@ Object.assign(SCENARIO[4], {
             "en": {
                 "name": "Me",
                 "text": "*In my heart… the unspoken words lingered.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*En mi corazón… las palabras no dichas persistían.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*心の中には…言えなかった言葉がいつまでも残っていた。*"
             }
         }
     }

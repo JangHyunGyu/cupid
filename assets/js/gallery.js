@@ -53,7 +53,11 @@ class Gallery {
      */
     init() {
         // 1. URL에서 언어 감지
-        this.lang = window.location.pathname.includes('-en') ? 'en' : 'ko';
+        const pathname = window.location.pathname;
+        this.lang = pathname.includes('-es') ? 'es'
+                  : pathname.includes('-ja') ? 'ja'
+                  : pathname.includes('-en') ? 'en'
+                  : 'ko';
 
         // 2. 진행도 관리 인스턴스 생성 및 로드
         this.progress = new GalleryProgress();

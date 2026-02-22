@@ -221,6 +221,164 @@ class GalleryData {
                 personality: 'Playful, Mature',
                 expressions: ['normal', 'shy', 'angry', 'bikini']
             }
+        },
+
+        // ===== 스페인어 데이터 (Spanish Data) =====
+        es: {
+            seyoun: {
+                id: 'seyoun',
+                name: 'Seoyeon',
+                title: 'La Presidenta Perfecta',
+                shortDescription: 'Una presidenta del consejo estudiantil perfecta y amable con todos.',
+                description: 'Una presidenta del consejo estudiantil perfecta y amable con todos. En realidad se siente sola fácilmente y se vuelve muy tímida cuando está a solas contigo. Valora las reglas, pero a veces quiere romperlas por ti.',
+                age: '18 años',
+                birthday: '14 de marzo',
+                height: '165cm',
+                weight: '48kg',
+                bust: '34-22-35 65E',
+                hobby: 'Música, Lectura',
+                personality: 'Megadere, Tímida',
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+            },
+            yuna: {
+                id: 'yuna',
+                name: 'Yuna',
+                title: 'Kuudere Misteriosa',
+                shortDescription: 'La esencia de una kuudere fría e inexpresiva.',
+                description: 'La esencia de una kuudere fría e inexpresiva. Muestra un interés profundo y obsesivo en tu "luz especial". Conocida por sus comentarios misteriosos y cautivadores. Emana un aura de querer protegerte.',
+                age: '18 años',
+                birthday: '22 de julio',
+                height: '162cm',
+                weight: '47kg',
+                bust: '33-21-34 65E',
+                hobby: 'Observar estrellas, Poesía',
+                personality: 'Kuudere, Misteriosa',
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+            },
+            dain: {
+                id: 'dain',
+                name: 'Dain',
+                title: 'Amiga de la Infancia Radiante',
+                shortDescription: 'Una tsundere alegre y vivaz con un lado maternal.',
+                description: 'Una tsundere alegre y vivaz con un lado maternal. Te trata como un amigo cercano, pero se sonroja rápidamente en momentos románticos. Honesta con sus sentimientos pero torpe al expresarlos.',
+                age: '18 años',
+                birthday: '25 de diciembre',
+                height: '158cm',
+                weight: '46kg',
+                bust: '35-23-36 65F',
+                hobby: 'Cocina, Deportes',
+                personality: 'Tsundere, Alegre',
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+            },
+            teacher: {
+                id: 'teacher',
+                name: 'Profesora',
+                title: 'La Profesora Despistada',
+                shortDescription: 'Una profesora profesional que separa el trabajo de la vida personal.',
+                description: 'Una profesora profesional que separa el trabajo de la vida personal, pero en realidad tiene un lado despistado. Su corazón se acelera con tus momentos inesperadamente maduros. Tiene un encantador contraste de querer apoyarse en ti secretamente.',
+                age: '28 años',
+                birthday: '5 de mayo',
+                height: '170cm',
+                weight: '58kg',
+                bust: '38-24-38 70G',
+                hobby: 'Lectura, Películas',
+                personality: 'Profesional, Despistada',
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+            },
+            nurse: {
+                id: 'nurse',
+                name: 'Enfermera',
+                title: 'Enfermera Juguetona',
+                shortDescription: 'Una enfermera escolar madura y juguetona.',
+                description: 'Una enfermera escolar madura y juguetona. Disfruta provocándote con palabras atrevidas, pero en realidad cuida y protege a los estudiantes más que nadie. Encuentra adorables tus reacciones avergonzadas.',
+                age: '26 años',
+                birthday: '12 de septiembre',
+                height: '168cm',
+                weight: '60kg',
+                bust: '40-24-40 70H',
+                hobby: 'Jardinería, Meditación',
+                personality: 'Juguetona, Madura',
+                expressions: ['normal', 'shy', 'angry', 'bikini']
+            }
+        },
+
+        // ===== 일본어 데이터 (Japanese Data) =====
+        ja: {
+            seyoun: {
+                id: 'seyoun',
+                name: 'ソヨン',
+                title: '完璧な生徒会長',
+                shortDescription: '誰にでも優しい完璧な生徒会長。',
+                description: '誰にでも優しい完璧な生徒会長。実は寂しがり屋で、二人きりになるととても恥ずかしがる。規則を大切にするが、あなたのためなら時々破りたいと思っている。',
+                age: '18歳',
+                birthday: '3月14日',
+                height: '165cm',
+                weight: '48kg',
+                bust: '34-22-35 65E',
+                hobby: '音楽鑑賞、読書',
+                personality: 'メガデレ、恥ずかしがり',
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+            },
+            yuna: {
+                id: 'yuna',
+                name: 'ユナ',
+                title: '神秘的なクーデレ',
+                shortDescription: '無表情で冷たいクーデレの典型。',
+                description: '無表情で冷たいクーデレの典型。あなたの「特別な光」に深く執着的な関心を示す。時折放つ神秘的でときめく言葉が特徴。あなたを守ろうとする不思議な雰囲気を漂わせる。',
+                age: '18歳',
+                birthday: '7月22日',
+                height: '162cm',
+                weight: '47kg',
+                bust: '33-21-34 65E',
+                hobby: '星を見ること、詩を書くこと',
+                personality: 'クーデレ、神秘的',
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+            },
+            dain: {
+                id: 'dain',
+                name: 'ダイン',
+                title: '太陽のような幼なじみ',
+                shortDescription: '明るく活発な世話焼きツンデレ。',
+                description: '明るく活発な世話焼きツンデレ。あなたを気軽な友達として接するが、ロマンチックな雰囲気になるとすぐ顔が真っ赤になって慌てる。気持ちに正直だが表現が下手な可愛い魅力がある。',
+                age: '18歳',
+                birthday: '12月25日',
+                height: '158cm',
+                weight: '46kg',
+                bust: '35-23-36 65F',
+                hobby: '料理、スポーツ',
+                personality: 'ツンデレ、活発',
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+            },
+            teacher: {
+                id: 'teacher',
+                name: '担任先生',
+                title: '意外とドジな先生',
+                shortDescription: '公私をきちんと分ける専門的な教師。',
+                description: '公私をきちんと分ける専門的な教師だが、実はドジな一面がある。あなたの予想外に大人びた姿にときめき、密かにあなたに頼りたいと思っているギャップ萌えがある。',
+                age: '28歳',
+                birthday: '5月5日',
+                height: '170cm',
+                weight: '58kg',
+                bust: '38-24-38 70G',
+                hobby: '読書、映画鑑賞',
+                personality: '専門的、ドジ',
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+            },
+            nurse: {
+                id: 'nurse',
+                name: '保健先生',
+                title: 'いたずら好きな保健教師',
+                shortDescription: '成熟していたずら好きな保健教師。',
+                description: '成熟していたずら好きな保健教師。挑発的な言葉であなたをからかうことを楽しむが、実は誰よりも生徒たちを大切に思い守ろうとする。あなたが慌てる姿を可愛いと感じている。',
+                age: '26歳',
+                birthday: '9月12日',
+                height: '168cm',
+                weight: '60kg',
+                bust: '40-24-40 70H',
+                hobby: '園芸、瞑想',
+                personality: 'いたずら好き、成熟',
+                expressions: ['normal', 'shy', 'angry', 'bikini']
+            }
         }
     };
 
@@ -267,6 +425,44 @@ class GalleryData {
             active: 'Active',
             sweat: 'Nervous',
             bikini: 'Bikini'     // Special expression (Affinity 100 + 100 Free Talks)
+        },
+
+        // 스페인어 표정 이름
+        es: {
+            normal: 'Normal',
+            shy: 'Tímida',
+            shy2: 'Tímida 2',
+            angry: 'Enfadada',
+            sad: 'Triste',
+            laugh: 'Risa',
+            cry: 'Llanto',
+            pout: 'Puchero',
+            worried: 'Preocupada',
+            back: 'Espalda',
+            smile: 'Sonrisa',
+            bored: 'Aburrida',
+            active: 'Activa',
+            sweat: 'Nerviosa',
+            bikini: 'Bikini'
+        },
+
+        // 일본어 표정 이름
+        ja: {
+            normal: '通常',
+            shy: '照れ',
+            shy2: '照れ2',
+            angry: '怒り',
+            sad: '悲しみ',
+            laugh: '笑い',
+            cry: '泣き',
+            pout: 'すねる',
+            worried: '心配',
+            back: '後ろ姿',
+            smile: '微笑み',
+            bored: '退屈',
+            active: '活発',
+            sweat: '汗',
+            bikini: 'ビキニ'
         }
     };
 
@@ -301,6 +497,26 @@ class GalleryData {
                 name: 'Special Moment with the Nurse',
                 character: 'School Nurse',
                 description: 'A special event at the nurse\'s home',
+                file: 'assets/images/background/nurse_home_event1.png',
+                thumbnail: 'assets/images/background/nurse_home_event1.png'
+            }
+        ],
+        es: [
+            {
+                id: 'nurse_home_event1',
+                name: 'Momento especial con la Enfermera',
+                character: 'Enfermera',
+                description: 'Un evento especial en la casa de la enfermera',
+                file: 'assets/images/background/nurse_home_event1.png',
+                thumbnail: 'assets/images/background/nurse_home_event1.png'
+            }
+        ],
+        ja: [
+            {
+                id: 'nurse_home_event1',
+                name: '保健先生との特別な出会い',
+                character: '保健先生',
+                description: '保健先生の家で起きた特別なイベント',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
             }
@@ -348,6 +564,34 @@ class GalleryData {
             { id: 'mystery', name: 'Suspicious Aura', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
             { id: 'confession', name: 'Confession', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
             { id: 'ending', name: 'Ending Theme', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
+        ],
+        es: [
+            { id: 'intro', name: 'Tema Principal', artist: 'Cupid OST', duration: '2:30', file: 'assets/audio/bgm/intro.mp3' },
+            { id: 'morning', name: 'Mañana Fresca', artist: 'Cupid OST', duration: '3:25', file: 'assets/audio/bgm/morning.mp3' },
+            { id: 'daily', name: 'Días de Escuela', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
+            { id: 'daily2', name: 'Tarde Tranquila', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
+            { id: 'sunset1', name: 'Camino al Atardecer', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
+            { id: 'sunset2', name: 'Momento Romántico', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: 'Cita Emocionante', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'night1', name: 'Noche Tranquila', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
+            { id: 'night2', name: 'Noche Secreta', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
+            { id: 'mystery', name: 'Aura Sospechosa', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
+            { id: 'confession', name: 'Confesión', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
+            { id: 'ending', name: 'Tema Final', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
+        ],
+        ja: [
+            { id: 'intro', name: 'メインテーマ', artist: 'Cupid OST', duration: '2:30', file: 'assets/audio/bgm/intro.mp3' },
+            { id: 'morning', name: 'さわやかな朝', artist: 'Cupid OST', duration: '3:25', file: 'assets/audio/bgm/morning.mp3' },
+            { id: 'daily', name: '学校の日常', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
+            { id: 'daily2', name: '穏やかな午後', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
+            { id: 'sunset1', name: '夕焼けの帰り道', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
+            { id: 'sunset2', name: 'ときめきの瞬間', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: 'ドキドキデート', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'night1', name: '静かな夜', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
+            { id: 'night2', name: '秘密の夜', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
+            { id: 'mystery', name: '怪しい気配', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
+            { id: 'confession', name: '告白', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
+            { id: 'ending', name: 'エンディングテーマ', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
         ]
     };
 
@@ -429,7 +673,9 @@ class GalleryData {
     static getAllCGIds() {
         return new Set([
             ...this.cg.ko.map(cg => cg.id),
-            ...this.cg.en.map(cg => cg.id)
+            ...this.cg.en.map(cg => cg.id),
+            ...(this.cg.es || []).map(cg => cg.id),
+            ...(this.cg.ja || []).map(cg => cg.id)
         ]);
     }
 
