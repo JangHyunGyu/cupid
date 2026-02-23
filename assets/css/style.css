@@ -249,6 +249,9 @@ html {
 #name-tag {
     display: inline-block;
     align-self: flex-start;
+    -webkit-align-self: flex-start;
+    width: -webkit-fit-content;
+    width: fit-content;
     /* flex 컨테이너 안에서 내용 너비만 차지하도록 (full-width stretch 방지) */
     background: #ff69b4;
     padding: 5px 15px;
