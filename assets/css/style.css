@@ -242,8 +242,8 @@ html {
     pointer-events: auto;
     /* 박스 내부는 클릭 가능 */
     margin-bottom: 10px;
-    overflow-y: auto;
-    /* 긴 텍스트가 박스를 넘지 않도록 */
+    overflow: visible;
+    /* name-tag가 위로 돌출되므로 잘리지 않도록 visible */
     box-sizing: border-box;
 }
 
