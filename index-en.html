@@ -2,6 +2,22 @@
 <html lang="en">
 
 <head>
+    <!-- Language auto-detect & redirect (must be first script) -->
+    <script>
+    (function () {
+        try {
+            var K = 'cupid:language', P = 'en';
+            var M = { ko: 'index.html', en: 'index-en.html', es: 'index-es.html', ja: 'index-ja.html' };
+            var s = localStorage.getItem(K);
+            if (!s) {
+                s = (navigator.language || '').split('-')[0].toLowerCase();
+                if (!M[s]) s = 'ko';
+                localStorage.setItem(K, s);
+            }
+            if (s !== P && M[s]) location.replace(M[s]);
+        } catch (e) { }
+    })();
+    </script>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <script>
         (function () {
@@ -669,16 +685,16 @@
                 <span class="lang-flag">🇺🇸</span> English
             </div>
             <div class="lang-combo-dropdown">
-                <a href="index.html" class="lang-combo-option">
+                <a href="index.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ko')">
                     <span class="lang-flag">🇰🇷</span> 한국어
                 </a>
                 <div class="lang-combo-option active">
                     <span class="lang-flag">🇺🇸</span> English
                 </div>
-                <a href="index-es.html" class="lang-combo-option">
+                <a href="index-es.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','es')">
                     <span class="lang-flag">🇪🇸</span> Español
                 </a>
-                <a href="index-ja.html" class="lang-combo-option">
+                <a href="index-ja.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
                     <span class="lang-flag">🇯🇵</span> 日本語
                 </a>
             </div>
