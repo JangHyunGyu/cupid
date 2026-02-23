@@ -369,7 +369,7 @@ class UIManager {
             this.nameTagEl.appendChild(gaugeBox);
         }
 
-        this.nameTagEl.style.display = 'block';
+        this.nameTagEl.style.display = 'inline-block';
     }
 
     /**
