@@ -466,7 +466,9 @@ class FreeTalkSystem {
         }
 
         // 사용자 메시지 표시
-        this.uiManager.updateNameTag("나");
+        const playerLabelByLang = { en: "Me", es: "Yo", ja: "僕" };
+        const playerLabel = playerLabelByLang[document.documentElement.lang] || "나";
+        this.uiManager.updateNameTag(playerLabel);
 
         // 이미지와 메시지 결합 처리
         const stagedImage = this.uiManager.stagedImage;
