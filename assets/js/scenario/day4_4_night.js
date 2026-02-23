@@ -166,7 +166,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/yuna_normal.png",
         "night": true,
-        "next": "day4_night_yuna_arrive_3",
+        "next": "day4_night_yuna_wall",
         "_i18n": {
             "ko": {
                 "name": "나",
@@ -186,6 +186,423 @@ Object.assign(SCENARIO[4], {
             }
         }
     },
+    "day4_night_yuna_wall": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_2",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"…안으로 가기 전에, 먼저 봐야 할 게 있어. 이쪽으로 와.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...Before we go inside, there's something you need to see first. Come this way.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Antes de entrar, hay algo que necesitas ver primero. Ven por aquí.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"…中に入る前に、まず見てほしいものがある。こっちに来て。\""
+            }
+        }
+    },
+    "day4_night_yuna_wall_2": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "night": true,
+        "next": "day4_night_yuna_wall_3",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*유나가 학교 건물 뒤편으로 나를 이끌었다. 가로등도 없는 어두운 구석. 손전등 불빛이 낡은 콘크리트 외벽을 비추자— 균열이 보였다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Yuna led me to the back of the school building. A dark corner with no streetlights. When her flashlight lit up the old concrete exterior wall— I saw the crack.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Yuna me llevó a la parte trasera del edificio escolar. Un rincón oscuro sin farolas. Cuando su linterna iluminó la vieja pared exterior de concreto— vi la grieta.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*ユナが校舎の裏手に僕を連れて行った。街灯もない暗い角。懐中電灯が古いコンクリートの外壁を照らすと――ひびが見えた。*"
+            }
+        }
+    },
+    "day4_night_yuna_wall_3": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "night": true,
+        "next": "day4_night_yuna_wall_4",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*균열이라는 말로는 부족했다. 외벽 한쪽 면을 따라 세로로 길게, 팔뚝 두께만큼 벌어진 갈라짐이 이어져 있었다. 여기저기 콘크리트 조각이 이미 떨어져 나간 흔적도 보인다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*'Crack' was too mild a word for it. Running vertically along one side of the exterior wall, a fissure as wide as a forearm stretched from top to bottom. Chunks of concrete had already fallen away in several places.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*'Grieta' era una palabra demasiado suave. A lo largo de un lado de la pared exterior, una fisura del grosor de un antebrazo se extendía verticalmente. En varios lugares ya se habían desprendido fragmentos de concreto.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*「ひび」という言葉では足りなかった。外壁の一面に沿って縦に長く、腕の太さほどに口を開いた亀裂が続いていた。あちこちにコンクリートの破片がすでに剥落した跡も見える。*"
+            }
+        }
+    },
+    "day4_night_yuna_wall_4": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_5",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"이거… 언제부터 이랬어?\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"This... how long has it been like this?\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"Esto... ¿desde cuándo está así?\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "\"これ…いつからこんなに？\""
+            }
+        }
+    },
+    "day4_night_yuna_wall_5": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_6",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"적어도 3년. 근데 학교는 계속 보수를 미뤄왔어. 학생들이 이쪽으로 못 오게 막아두고.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"At least three years. But the school kept delaying repairs. They've blocked students from coming over here.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"Al menos tres años. Pero la escuela siguió aplazando las reparaciones. Han bloqueado el acceso a los estudiantes en esta zona.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"少なくとも3年。でも学校はずっと修繕を先延ばしにしてきた。生徒がここに来られないように封鎖して。\""
+            }
+        }
+    },
+    "day4_night_yuna_wall_6": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_7",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"이 건물, 지어질 때부터 문제가 있었어. 설계대로 시공이 안 됐거든. 철근 간격, 콘크리트 배합비... 전부 기준 미달이었어.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"This building had problems from the moment it was built. It wasn't constructed according to the design. Rebar spacing, concrete mix ratio... all of it was below standard.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"Este edificio tuvo problemas desde que fue construido. No se construyó según el diseño. El espaciado de las varillas, la mezcla de concreto... todo estaba por debajo del estándar.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"この建物、建設当初から問題があった。設計通りに施工されてなかったんだ。鉄筋の間隔、コンクリートの配合比…全部基準以下だった。\""
+            }
+        }
+    },    
+    "day4_night_yuna_enter_honest": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "night": true,
+        "next": "day4_night_yuna_corridor",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"……솔직한 건 좋아해. 괜찮아, 내가 옆에 있으니까.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...I like that you're honest. It's okay—I'm right here beside you.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Me gusta que seas honesto. Está bien, estoy aquí a tu lado.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"…正直なの、好きだよ。大丈夫、私がそばにいるから。\""
+            }
+        }
+    },
+    "day4_night_yuna_wall_7": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_8",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"…그걸 어떻게 알았어?\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"...How do you know that?\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"...¿Cómo sabes eso?\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "\"…それをどうやって知ったの？\""
+            }
+        }
+    },
+    "day4_night_yuna_wall_8": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_9",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"시공사가 '성진건설'이었어. 재단 이사장 처남이 대표로 있는 회사. 공사비 15억 중 7억이 어디로 갔는지 알아?\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"The contractor was 'Hanjin Construction.' A company whose CEO is the brother-in-law of the foundation's chairman. Do you know where 700 million of the 1.5 billion won in construction costs went?\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"La constructora era 'Hanjin Construction.' Una empresa cuyo CEO es el cuñado del presidente de la fundación. ¿Sabes adónde fueron 700 millones de los 1.500 millones de won en costos de construcción?\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"施工業者は『漢進建設』。財団の理事長の義弟が代表を務める会社。工事費15億のうち7億がどこに消えたか知ってる？\""
+            }
+        }
+    },
+    "day4_night_yuna_wall_9": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_10",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*심장이 서늘해졌다. 설마…*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*My chest went cold. Surely not...*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Se me heló el corazón. No puede ser...*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*胸が冷たくなった。まさか…*"
+            }
+        }
+    },
+    "day4_night_yuna_wall_10": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_11",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"재단 계좌로. 공사비를 빼돌리고 부실 시공을 한 거야. 이 균열이 그 증거야. 학교 건물 전체가 사실 위험해.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"Into the foundation's accounts. They siphoned off the construction funds and did shoddy work. This crack is the proof. The entire school building is actually dangerous.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"A las cuentas de la fundación. Desviaron los fondos de construcción e hicieron un trabajo deficiente. Esta grieta es la prueba. En realidad, todo el edificio escolar es peligroso.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"財団の口座へ。工事費を横領して手抜き工事をしたんだ。この亀裂がその証拠。学校の建物全体が実は危険な状態にある。\""
+            }
+        }
+    },
+    "day4_night_yuna_wall_11": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_choice",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*균열을 다시 봤다. 단순한 낡음이 아니었다. 이건 누군가의 탐욕이 남긴 흔적이었다. 수백 명의 학생들이 매일 이런 건물 안에 있다는 사실이 갑자기 두렵게 느껴졌다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*I looked at the crack again. It wasn't just ordinary aging. This was the trace left behind by someone's greed. The fact that hundreds of students were inside this building every day suddenly felt terrifying.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Volví a mirar la grieta. No era solo desgaste ordinario. Era la huella dejada por la codicia de alguien. El hecho de que cientos de estudiantes estuvieran dentro de este edificio todos los días de repente me pareció aterrador.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*亀裂をもう一度見た。単なる老朽化じゃなかった。これは誰かの欲が残した跡だった。何百人もの生徒が毎日この建物の中にいるという事実が、急に恐ろしく感じられた。*"
+            }
+        }
+    },
+    "day4_night_yuna_wall_choice": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "choices": [
+            {
+                "next": "day4_night_yuna_wall_anger",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 5
+                    }
+                }
+            },
+            {
+                "next": "day4_night_yuna_wall_fear",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 3
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*이게 현실이라는 게 믿기지 않았다.*",
+                "choices": [
+                    "\"…이걸 알면서도 학교가 숨긴 거야? 용납이 안 돼.\"",
+                    "\"…이거, 우리가 건드려도 되는 거야?\""
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*I couldn't believe this was real.*",
+                "choices": [
+                    "\"...The school knew about this and hid it? That's unforgivable.\"",
+                    "\"...Should we really be getting involved in this?\""
+                ]
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No podía creer que esto fuera real.*",
+                "choices": [
+                    "\"...¿La escuela lo sabía y lo ocultó? Eso es imperdonable.\"",
+                    "\"...¿Deberíamos meternos en esto?\""
+                ]
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*これが現実だとは信じられなかった。*",
+                "choices": [
+                    "\"…これを知りながら学校が隠したの？許せない。\"",
+                    "\"…これ、僕たちが関わっていいものなの？\""
+                ]
+            }
+        }
+    },
+    "day4_night_yuna_wall_anger": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_end",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"…나도 처음에 그랬지만 분노만으론 안 돼. 그래서 증거가 필요했어. 지하에 있어. 따라와.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...That's how I felt at first too. But anger alone isn't enough. That's why I needed evidence. It's downstairs. Follow me.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Así me sentí yo al principio también. Pero la rabia sola no basta. Por eso necesitaba pruebas. Están abajo. Sígueme.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"…私も最初はそうだった。でも怒りだけじゃ足りない。だから証拠が必要だった。地下にある。ついてきて。\""
+            }
+        }
+    },
+    "day4_night_yuna_wall_fear": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_wall_end",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"…무서운 거 당연해. 나도 1년 동안 그랬어. 근데 이미 알아버렸잖아. 모른 척할 수 있어?\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...Being scared is natural. I felt the same way for a whole year. But now you know. Can you pretend you don't?\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Tener miedo es normal. Yo también lo sentí durante un año entero. Pero ahora ya sabes. ¿Puedes fingir que no?\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"…怖いのは当然だよ。私も1年間そうだった。でも、もう知ってしまったじゃない。知らないふりができる？\""
+            }
+        }
+    },    
+    "day4_night_yuna_wall_end": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_arrive_3",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*유나의 말이 가슴 깊이 박혔다. 모른 척할 수 없었다. 이미 이 균열을 눈으로 봐버렸으니까.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Yuna's words struck deep. I couldn't pretend not to know. I'd already seen this crack with my own eyes.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Las palabras de Yuna me llegaron al fondo. No podía fingir no saber. Ya había visto esta grieta con mis propios ojos.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*ユナの言葉が胸の奥に刺さった。知らないふりはできなかった。もうこの亀裂を自分の目で見てしまったから。*"
+            }
+        }
+    },
     "day4_night_yuna_arrive_3": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/yuna_normal.png",
@@ -194,7 +611,7 @@ Object.assign(SCENARIO[4], {
         "_i18n": {
             "ko": {
                 "name": "유나",
-                "text": "\"…오늘 보여줄 게 있어. 각오는 됐어?\""
+                "text": "\"…이쪽으로 따라와. 각오는 됐어?\""
             },
             "en": {
                 "name": "Yuna",
@@ -299,7 +716,7 @@ Object.assign(SCENARIO[4], {
         "_i18n": {
             "ko": {
                 "name": "유나",
-                "text": "\"……솔직한 건 좋아해. 괜찮아, 내가 옆에 있으니까.\""
+                "text": "\"……솔직해도 돼. 괜찮아, 내가 옆에 있으니까.\""
             },
             "en": {
                 "name": "Yuna",
@@ -314,7 +731,7 @@ Object.assign(SCENARIO[4], {
                 "text": "\"…正直なの、好きだよ。大丈夫、私がそばにいるから。\""
             }
         }
-    },
+    },    
     "day4_night_yuna_corridor": {
         "character": "assets/images/characters/yuna_smile.png",
         "background": "assets/images/background/school_hallway.png",
@@ -515,7 +932,7 @@ Object.assign(SCENARIO[4], {
         "_i18n": {
             "ko": {
                 "name": "유나",
-                "text": "\"특히 이 건물… 본관 동쪽 계단. 3년 전 보수 공사를 했다고 되어 있는데, 실제로는 한 푼도 쓰지 않았어.\""
+                "text": "\"특히 균열이 심한 이 건물… 본관 동쪽 계단. 3년 전 보수 공사를 했다고 되어 있는데, 실제로는 한 푼도 쓰지 않았어.\""
             },
             "en": {
                 "name": "Yuna",
@@ -583,7 +1000,7 @@ Object.assign(SCENARIO[4], {
                 "text": "*유나의 목소리가 떨리고 있다.*",
                 "choices": [
                     "\"…누가 다친 거야?\"",
-                    "\"유나… 괜찮아?\""
+                    "\"유나야… 괜찮아?\""
                 ]
             },
             "en": {
@@ -740,7 +1157,7 @@ Object.assign(SCENARIO[4], {
         "_i18n": {
             "ko": {
                 "name": "유나",
-                "text": "\"…보수도 안 한 낡은 계단 난간이 부러졌대. 재단이 공사비를 횡령하지 않았다면 일어나지 않았을 사고야.\""
+                "text": "\"…보수도 안 한 낡은 계단 난간이 부러지면서 추락했대. 하지만... 수상하게도 선배의 머리엔 무언가에 찍힌 흔적이 있었어.\""
             },
             "en": {
                 "name": "Yuna",
@@ -938,7 +1355,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/school_basement.png",
         "character": "assets/images/characters/yuna_sad.png",
         "night": true,
-        "next": "day4_night_yuna_resemblance",
+        "next": "day4_night_yuna_seoyeon_intro",
         "_i18n": {
             "ko": {
                 "name": "유나",
@@ -955,6 +1372,519 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"……ありがとう。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_intro": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_intro_2",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"…그리고 한 가지 더. 이게 제일 중요해.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...And one more thing. This is the most important part.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Y una cosa más. Esta es la parte más importante.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"…それともう一つ。これが一番重要なんだ。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_intro_2": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_intro_3",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"재단 비리는 10년 전 이사장이 시작했어. 근데 지금… 최근 2년 사이에 일어난 일들은 달라. 더 치밀하고, 더 조직적이야.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"The foundation's corruption started with the chairman ten years ago. But now... what's happened in the last two years is different. More calculated, more organized.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"La corrupción de la fundación comenzó con el presidente hace diez años. Pero ahora... lo que ha pasado en los últimos dos años es diferente. Más calculado, más organizado.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"財団の不正は10年前に理事長が始めた。でも今…ここ2年で起きたことは違う。もっと緻密で、もっと組織的。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_intro_3": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"…더 치밀하다고? 누가?\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"...More calculated? Who?\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"...¿Más calculado? ¿Quién?\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "\"…もっと緻密って？誰が？\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_2",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"…서연이야.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...Seoyeon.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Seoyeon.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"…ソヨンだよ。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_2": {
+        "background": "assets/images/background/school_basement.png",
+        "character": null,
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_3",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*심장이 멎는 것 같았다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*It felt like my heart stopped.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Sentí como si mi corazón se detuviera.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*心臓が止まりそうだった。*"
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_3": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_4",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"…서연이? 우리 반 서연이? 그게 무슨—\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"...Seoyeon? Seoyeon from our class? What are you—\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"...¿Seoyeon? ¿La Seoyeon de nuestra clase? ¿Qué estás—\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "\"…ソヨン？うちのクラスのソヨン？それってどういう—\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_4": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_5",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"서연은 이사장 손녀야. 이 학교 재단 '성진학원' 이사장… 성진그룹 회장의 외손녀.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"Seoyeon is the chairman's granddaughter. The chairman of this school's foundation, 'Sungjin Academy'... the granddaughter of the Sungjin Group chairman.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"Seoyeon es la nieta del presidente. El presidente de la fundación de esta escuela, 'Academia Sungjin'... la nieta del presidente del Grupo Sungjin.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"ソヨンは理事長の孫娘。この学校の財団『聖進学園』の理事長…聖進グループ会長の孫娘。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_5": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_6",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*머릿속이 하얘졌다. 서연이… 항상 밝게 웃던 그 애가. 그 호기심 가득한 눈이. 이사장 손녀?*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*My mind went blank. Seoyeon... that girl who always smiled so brightly. Those curious eyes. The chairman's granddaughter?*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Mi mente se quedó en blanco. Seoyeon... esa chica que siempre sonreía tan brillantemente. Esos ojos curiosos. ¿La nieta del presidente?*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*頭の中が真っ白になった。ソヨンが…いつも明るく笑ってたあの子が。あの好奇心溢れる目が。理事長の孫娘？*"
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_6": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_7",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"학생회비 유용, 장학금 사기 수급, 교내 상벌 조작… 최근 2년간 일어난 일들, 서연이가 재단을 등에 업고 직접 설계한 거야.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"Misuse of student council funds, fraudulent scholarship applications, manipulation of school disciplinary records... everything that happened in the last two years, Seoyeon designed it herself, with the foundation backing her.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"Mal uso de los fondos del consejo estudiantil, solicitudes de becas fraudulentas, manipulación de registros disciplinarios escolares... todo lo que sucedió en los últimos dos años, Seoyeon lo diseñó ella misma, respaldada por la fundación.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"生徒会費の流用、奨学金の不正受給、校内の賞罰操作…ここ2年で起きたこと、ソヨンが財団を後ろ盾にして自分で設計したんだ。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_7": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_8",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "\"…믿기지 않아. 서연이가 그럴 애가 아니잖아.\""
+            },
+            "en": {
+                "name": "Me",
+                "text": "\"...I can't believe it. Seoyeon isn't that kind of person.\""
+            },
+            "es": {
+                "name": "Yo",
+                "text": "\"...No puedo creerlo. Seoyeon no es ese tipo de persona.\""
+            },
+            "ja": {
+                "name": "僕",
+                "text": "\"…信じられない。ソヨンがそんな子じゃないだろ。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_8": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_9",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"…나도 그렇게 생각했어. 처음엔. 근데 이 서류들 봐.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...I thought the same thing. At first. But look at these documents.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Yo pensaba lo mismo. Al principio. Pero mira estos documentos.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"…私もそう思ってた。最初は。でもこの書類を見て。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_9": {
+        "background": "assets/images/background/school_basement.png",
+        "character": null,
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_10",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*유나가 서류 한 뭉치를 건넸다. 학생회 결산 보고서, 장학금 선발 명단, 교내 징계위원회 회의록… 모든 서류에 서연의 같은 서명이 있었다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*Yuna handed me a stack of documents. Student council financial reports, scholarship selection lists, school disciplinary committee meeting minutes... Every document had the Seoyeon's same signature.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Yuna me entregó un montón de documentos. Informes financieros del consejo estudiantil, listas de selección de becas, actas de reuniones del comité disciplinario escolar... Cada documento tenía la Seoyeon's misma firma.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*ユナが書類の束を渡してきた。生徒会の決算報告書、奨学金選考名簿、校内懲戒委員会の議事録…すべての書類に同じサインがあった。*"
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_10": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_11",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"서연이는 학생회장 자리를 이용해서 돈 흐름을 통제했어. 표면적으로는 완벽한 학생이면서, 뒤에서는 재단이 하라는 대로 움직인 거야.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"Seoyeon used her position as student council president to control the flow of money. On the surface, a perfect student — behind the scenes, doing exactly what the foundation told her to.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"Seoyeon usó su posición como presidenta del consejo estudiantil para controlar el flujo de dinero. En la superficie, una estudiante perfecta — entre bastidores, haciendo exactamente lo que la fundación le decía.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"ソヨンは生徒会長の立場を使って金の流れを操った。表向きは完璧な生徒でありながら、裏では財団の言いなりになって動いていたんだ。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_11": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_reveal_12",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*손에 쥔 서류가 떨렸다. 서연의 웃는 얼굴이 머릿속에 스쳤다. 그 자연스러운 미소가, 그 환한 눈빛이… 전부 연기였던 걸까.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*The documents in my hands trembled. Seoyeon's smiling face flashed through my mind. That natural smile, those bright eyes... was all of it an act?*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Los documentos en mis manos temblaron. La cara sonriente de Seoyeon cruzó por mi mente. Esa sonrisa natural, esos ojos brillantes... ¿todo era una actuación?*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*手に持った書類が震えた。ソヨンの笑顔が脳裏をよぎった。あの自然な笑み、あの明るい目…全部演技だったのか。*"
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_reveal_12": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_choice",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"…서연이가 나쁜 사람인지, 아닌지는 나도 몰라. 태어날 때부터 그 구조 안에 있었던 거니까. 근데 그게 면죄부가 되진 않아. 피해를 본 사람들이 실제로 있으니까.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...Whether Seoyeon is a bad person or not, I don't know. She's been inside that system since birth. But that doesn't excuse it. Because there are real people who were hurt.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Si Seoyeon es una mala persona o no, no lo sé. Ha estado dentro de ese sistema desde que nació. Pero eso no lo excusa. Porque hay personas reales que fueron lastimadas.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"…ソヨンが悪い人間かどうか、私にもわからない。生まれた時からその構造の中にいたんだから。でもそれが免罪符にはならない。実際に被害を受けた人たちがいるから。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_choice": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "choices": [
+            {
+                "next": "day4_night_yuna_seoyeon_doubt",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 5
+                    }
+                }
+            },
+            {
+                "next": "day4_night_yuna_seoyeon_accept",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 8
+                    }
+                }
+            }
+        ],
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*이 사실을 받아들일 수가 없었다.*",
+                "choices": [
+                    "\"…서연이한테 직접 물어보고 싶어.\"",
+                    "\"…알겠어. 증거가 있으니까. 진행하자.\""
+                ]
+            },
+            "en": {
+                "name": "Me",
+                "text": "*I couldn't accept this.*",
+                "choices": [
+                    "\"...I want to ask Seoyeon directly.\"",
+                    "\"...Okay. There's evidence. Let's move forward.\""
+                ]
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*No podía aceptar esto.*",
+                "choices": [
+                    "\"...Quiero preguntarle directamente a Seoyeon.\"",
+                    "\"...Entendido. Hay pruebas. Sigamos adelante.\""
+                ]
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*この事実を受け入れられなかった。*",
+                "choices": [
+                    "\"…ソヨンに直接聞いてみたい。\"",
+                    "\"…わかった。証拠があるんだから。進めよう。\""
+                ]
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_doubt": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_doubt_2",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"…그건 안 돼. 아직 너무 위험해. 서연이가 알아채는 순간 증거가 사라질 수 있어.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...That's not possible. It's still too dangerous. The moment Seoyeon realizes, the evidence could disappear.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Eso no es posible. Todavía es demasiado peligroso. En el momento en que Seoyeon se dé cuenta, las pruebas podrían desaparecer.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"…それはダメ。まだ危険すぎる。ソヨンが気づいた瞬間、証拠が消えるかもしれない。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_doubt_2": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_bridge",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*그 말이 맞다는 걸 알면서도… 쉽게 받아들여지지 않았다. 서연이 얼굴이 계속 눈앞에 아른거렸다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*I knew she was right... but I couldn't easily accept it. Seoyeon's face kept floating before my eyes.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*Sabía que tenía razón... pero no podía aceptarlo fácilmente. La cara de Seoyeon seguía flotando ante mis ojos.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*その言葉が正しいとわかっていながら…すんなり受け入れられなかった。ソヨンの顔がずっと目の前にちらついていた。*"
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_accept": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_seoyeon_bridge",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"…고마워. 믿어줘서.\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...Thank you. For believing me.\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Gracias. Por creerme.\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "\"…ありがとう。信じてくれて。\""
+            }
+        }
+    },
+    "day4_night_yuna_seoyeon_bridge": {
+        "background": "assets/images/background/school_basement.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "day4_night_yuna_resemblance",
+        "_i18n": {
+            "ko": {
+                "name": "나",
+                "text": "*지하실의 냉기가 뼛속까지 스몄다. 서연. 재단. 선배의 죽음. 벽의 균열. 모든 것이 하나로 연결되고 있었다. 그리고 유나는 이걸 혼자 감당해 온 거다.*"
+            },
+            "en": {
+                "name": "Me",
+                "text": "*The cold of the basement seeped into my bones. Seoyeon. The foundation. The senior's death. The crack in the wall. Everything was connecting into one. And Yuna had been carrying all of this alone.*"
+            },
+            "es": {
+                "name": "Yo",
+                "text": "*El frío del sótano se me metió en los huesos. Seoyeon. La fundación. La muerte del senpai. La grieta en la pared. Todo se estaba conectando en uno. Y Yuna había estado cargando todo esto sola.*"
+            },
+            "ja": {
+                "name": "僕",
+                "text": "*地下室の冷気が骨の髄まで染み込んだ。ソヨン。財団。先輩の死。壁の亀裂。すべてがひとつに繋がっていた。そしてユナはこれをひとりで抱えてきたんだ。*"
             }
         }
     },
@@ -1398,15 +2328,15 @@ Object.assign(SCENARIO[4], {
         "_i18n": {
             "ko": {
                 "name": "유나",
-                "text": "\"선배가 못 다 한 일… 이번엔 끝내고 싶어. 교육청에 제보할 거야.\""
+                "text": "\"선배가 못 다 한 일… 이번엔 끝내고 싶어. 언론과 교육청에 제보할 거야.\""
             },
             "en": {
                 "name": "Yuna",
-                "text": "\"What the senior couldn't finish... I want to see it through this time. I'm reporting it to the Board of Education.\""
+                "text": "\"What the senior couldn't finish... I want to see it through this time. I'm reporting it to the Press and Board of Education.\""
             },
             "es": {
                 "name": "Yuna",
-                "text": "\"Lo que el senpai no pudo terminar... esta vez quiero completarlo. Voy a denunciarlo a la Junta de Educación.\""
+                "text": "\"Lo que el senpai no pudo terminar... esta vez quiero completarlo. Voy a denunciarlo a la Press and Junta de Educación.\""
             },
             "ja": {
                 "name": "ユナ",
