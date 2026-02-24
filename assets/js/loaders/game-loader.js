@@ -73,6 +73,7 @@
     const pathname = window.location.pathname;
     const lang = pathname.includes('-es') ? 'es'
                : pathname.includes('-ja') ? 'ja'
+               : pathname.includes('-fr') ? 'fr'
                : pathname.includes('-en') ? 'en'
                : 'ko';
 

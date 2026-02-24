@@ -36,6 +36,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*カフェを出て一緒に街を歩いた。いつの間にか午後になっていた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous avons quitté le café et marché ensemble dans les rues. Sans que je m'en rende compte, l'après-midi était arrivé.*"
             }
         }
     },
@@ -58,6 +62,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*並んで歩きながら周りを見回す。週末だから通りにはかなり人が多い。笑い声、音楽、甘い匂いが入り混じる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous marchions côte à côte, regardant le paysage autour de nous. C'était le week-end, alors les rues étaient assez animées. Rires, musique et arômes sucrés se mêlaient.*"
             }
         }
     },
@@ -80,6 +88,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ショーウィンドウに映った僕たちの姿が見える。まるで本物のカップルみたいで…心臓がドキドキした。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ai aperçu notre reflet dans une vitrine. On ressemblait à un vrai couple... Mon cœur s'est mis à battre la chamade.*"
             }
         }
     },
@@ -102,6 +114,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*路地の奥に小さな市場が見える。美味しそうな匂いが風に乗ってくる。思わずお腹が鳴りそうだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Un petit marché est apparu au fond d'une ruelle. Des odeurs délicieuses flottaient dans la brise. J'en avais l'eau à la bouche.*"
             }
         }
     },
@@ -147,6 +163,14 @@ Object.assign(SCENARIO[4], {
                     "「一つ買って分けない？」",
                     "「美味しそうだな…ちょっと見てみよう。」"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Un stand de nourriture de rue a attiré mon attention. Que devrais-je faire ?*",
+                "choices": [
+                    "\"On en partage un ?\"",
+                    "\"Ça a l'air délicieux... Regardons un peu.\""
+                ]
             }
         }
     },
@@ -169,6 +193,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "(たい焼きを一つ買って半分に割った。温かい湯気がもくもくと立ち上る。「はい、半分。」渡す手が少し震えた。)"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "(J'ai acheté un gâteau en forme de poisson et je l'ai coupé en deux. De la vapeur chaude s'en élevait. \"Tiens, la moitié pour toi.\" Ma main tremblait légèrement en le lui tendant.)"
             }
         }
     },
@@ -191,6 +219,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*屋台の前であれこれ見ていたら、肩が触れた。心臓がドキッとする。知らないふりをしたけど、耳まで赤くなっていたと思う。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*En regardant devant le stand, nos épaules se sont frôlées. Mon cœur a fait un bond. J'ai fait semblant de ne pas le remarquer, mais je suis sûr que je rougissais jusqu'aux oreilles.*"
             }
         }
     },
@@ -214,6 +246,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*並んで歩きながら大通りに戻った。いつの間にか通りは静かになっていた。夕日の光がビルの間に長く差し込んでいる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous avons marché côte à côte pour revenir sur la rue principale. Les rues étaient devenues plus calmes. La lueur du coucher de soleil s'étirait longuement entre les bâtiments.*"
             }
         }
     },
@@ -236,6 +272,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*こうして一緒に歩くだけでこんなに幸せだなんて。隣にいる人の顔をこっそり盗み見る。なんだか…言葉にできない感情が込み上げてくる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je n'arrive pas à croire que simplement marcher ensemble puisse me rendre aussi heureux. J'ai jeté un regard furtif à la personne à côté de moi. Quelque chose... une émotion que je ne pouvais pas exprimer avec des mots montait en moi.*"
             }
         }
     },
@@ -258,6 +298,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*並んで歩くのがこんなに良いものだったなんて。指先が触れるたびに心臓がドキドキする。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je ne savais pas que marcher côte à côte pouvait être aussi agréable. Chaque fois que nos doigts se frôlaient, mon cœur battait la chamade.*"
             }
         }
     },
@@ -280,6 +324,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*歩いていると、路地の奥に雰囲気のあるお店が目に入った。相手が一軒を指差した。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*En marchant, de charmantes boutiques nichées dans la ruelle ont attiré mon regard. Mon compagnon en a montré une du doigt.*"
             }
         }
     },
@@ -324,6 +372,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "システム",
                 "text": ""
+            },
+            "fr": {
+                "name": "Système",
+                "text": ""
             }
         }
     },
@@ -347,6 +399,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "「あそこ見て、花屋さんだよ！ちょっと入ってみよう！」"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Regarde là-bas, une fleuriste ! Allons y jeter un coup d'œil !\""
             }
         }
     },
@@ -403,6 +459,14 @@ Object.assign(SCENARIO[4], {
                     "「ソヨンの方がずっと綺麗だよ。」",
                     "「ありがとう、大切にするね。」"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "(Seoyeon rayonnait parmi les fleurs, a choisi une seule fleur et me l'a tendue. \"Celle-ci est pour toi. La signification de la fleur est... un secret.\")",
+                "choices": [
+                    "\"Tu es plus jolie que n'importe quelle fleur.\"",
+                    "\"Merci, je la garderai précieusement.\""
+                ]
             }
         }
     },
@@ -426,6 +490,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "「…あそこ、古本屋だ。ちょっと入ってもいい？」"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"...Il y a une librairie d'occasion là-bas. On peut y faire un tour ?\""
             }
         }
     },
@@ -482,6 +550,14 @@ Object.assign(SCENARIO[4], {
                     "「一緒に読もう。毎日一章ずつ。」",
                     "「ユナが選んだなら、きっといい本だよ。」"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "(Yuna a délicatement sorti un livre des vieilles étagères. \"Ce livre... je voulais le lire avec toi.\" Ses yeux brillaient doucement.)",
+                "choices": [
+                    "\"Lisons-le ensemble. Un chapitre par jour.\"",
+                    "\"Si c'est toi qui l'as choisi, c'est sûrement un excellent livre.\""
+                ]
             }
         }
     },
@@ -505,6 +581,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "「お！スポーツ用品店だ！！ちょっと待って、見たいものがあるの！！」"
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\"Oh ! Un magasin de sport !! Attends, il y a quelque chose que je dois voir !\""
             }
         }
     },
@@ -561,6 +641,14 @@ Object.assign(SCENARIO[4], {
                     "「いいね！お揃いにしよう。」",
                     "「ダインが選んでよ、センスいいから。」"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "(Dain est arrivée en courant, tout excitée, avec des bracelets assortis. \"Regarde ça, des bracelets de couple ! Mettons-en chacun un !\" Son visage était légèrement rouge.)",
+                "choices": [
+                    "\"Super ! Assortissons-nous !\"",
+                    "\"Choisis-les toi, tu as très bon goût.\""
+                ]
             }
         }
     },
@@ -584,6 +672,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "「あら、あそこにアンティークショップがあるわ。一緒に見てみない？」"
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\"Oh, une boutique d'antiquités là-bas. On va y jeter un œil ?\""
             }
         }
     },
@@ -640,6 +732,14 @@ Object.assign(SCENARIO[4], {
                     "「先生に似合いそうです。僕が買いましょうか？」",
                     "「いい目してますね。本当に綺麗です。」"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "(Elle a pris une broche vintage et l'a inclinée dans la lumière du soleil avec un sourire. \"N'est-ce pas joli ? Quelque chose en elle... me donne envie de la garder pour toujours.\")",
+                "choices": [
+                    "\"Ça vous irait très bien. Je vous l'offre ?\"",
+                    "\"Vous avez l'œil. C'est vraiment magnifique.\""
+                ]
             }
         }
     },
@@ -663,6 +763,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "「ちょっと、あそこの文房具屋に寄ってもいい？ペンが一本欲しいの。」"
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\"Attends, on peut passer par cette papeterie ? J'ai besoin d'un stylo.\""
             }
         }
     },
@@ -719,6 +823,14 @@ Object.assign(SCENARIO[4], {
                     "「ありがとうございます。毎日使います。」",
                     "「先生が選んでくれたから、もっと特別ですね。」"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "(Elle choisissait un stylo quand elle s'est arrêtée et en a pris un autre. \"...Celui-ci est pour toi. Assure-toi de bien prendre des notes en classe. ...C'est un cadeau.\" Elle s'est détournée, mais le bout de ses oreilles était rouge.)",
+                "choices": [
+                    "\"Merci. Je l'utiliserai tous les jours.\"",
+                    "\"C'est encore plus spécial parce que c'est vous qui l'avez choisi.\""
+                ]
             }
         }
     },
@@ -743,6 +855,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "(特別な時間だった。「ねえ、川沿いの公園に行ってみない？」相手が先に提案してくれた。)"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "(C'était un moment spécial ensemble. \"Hé, tu veux aller au parc au bord de la rivière ?\" Mon compagnon l'a suggéré en premier.)"
             }
         }
     },
@@ -766,6 +882,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*川沿いの公園に着いた。夕日が水面にきらきらと輝いていた。まるで映画のワンシーンみたいだった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous sommes arrivés au parc au bord de la rivière. Le coucher de soleil scintillait sur l'eau. On aurait dit une scène tout droit sortie d'un film.*"
             }
         }
     },
@@ -790,6 +910,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*川沿いをゆっくり歩く。水面に夕焼けの光が揺らめいて、金色の波紋を描いている。時間がどんどんゆっくり流れていく気がする。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous marchions lentement le long de la berge. La lumière du couchant ondulait sur l'eau, peignant des ondulations dorées. Le temps semblait ralentir.*"
             }
         }
     },
@@ -814,6 +938,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*空がオレンジからピンクに、そして紫色に染まっていく。こんな空を見たのは生まれて初めてかもしれない。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Le ciel passait de l'orange au rose, puis au violet. Je ne pense pas avoir jamais vu un ciel aussi beau de toute ma vie.*"
             }
         }
     },
@@ -838,6 +966,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*温かい風が吹き抜ける。川から吹く風に草の匂いと水の匂いが混ざる。穏やかな水の音がBGMのように流れている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Une brise chaude nous a effleurés. Le vent venant de la rivière portait l'odeur de l'herbe et de l'eau. Le doux murmure de l'eau coulait comme une musique de fond.*"
             }
         }
     },
@@ -882,6 +1014,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "システム",
                 "text": ""
+            },
+            "fr": {
+                "name": "Système",
+                "text": ""
             }
         }
     },
@@ -905,6 +1041,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンが手すりに腕をかけて夕日を眺めている。風に髪がなびく。夕焼けに染まったその横顔が…息を呑むほど綺麗だった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Seoyeon était appuyée sur la rambarde, contemplant le coucher de soleil. Ses cheveux flottaient dans la brise. Son profil, baigné dans la lueur du soleil couchant... était d'une beauté à couper le souffle.*"
             }
         }
     },
@@ -928,6 +1068,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナが静かに夕日を眺めている。いつもの無表情が柔らかくほどけている。こんな表情は…初めてだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna regardait le coucher de soleil en silence. Son visage habituellement inexpressif s'était adouci. Je ne l'avais... jamais vue comme ça avant.*"
             }
         }
     },
@@ -951,6 +1095,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "(ダインが「わぁ…」と小さく感嘆の声を漏らした。いつもの元気な姿と違い、じっと夕日を見つめるその姿が意外と大人っぽかった。)"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dain a laissé échapper un petit soupir d'émerveillement. Contrairement à son énergie habituelle, elle se tenait immobile, contemplant le coucher de soleil. Elle avait l'air étonnamment mature.*"
             }
         }
     },
@@ -974,6 +1122,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*先生が目を細めて夕日を眺めている。夕焼けに染まったその姿がまるで一枚の絵画のようだった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Elle contemplait le coucher de soleil, les yeux mi-clos. Baignée dans la lueur du soleil couchant, elle ressemblait à un tableau vivant.*"
             }
         }
     },
@@ -997,6 +1149,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*先生が静かに手すりに寄りかかって川を見下ろしている。いつもの厳しさはどこにもなく、柔らかい微笑みが浮かんでいた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Elle s'appuyait silencieusement contre la rambarde, regardant la rivière en contrebas. Sa sévérité habituelle avait complètement disparu, remplacée par un sourire doux et tendre.*"
             }
         }
     },
@@ -1021,6 +1177,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*夕日がその人の顔を照らしている。不思議と言葉が出てこない。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Le coucher de soleil illuminait son visage. Étrangement, je ne trouvais aucun mot à dire.*"
             }
         }
     },
@@ -1044,6 +1204,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*……*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*......*"
             }
         }
     },
@@ -1067,6 +1231,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*この感情が何なのか、もうはっきりわかった気がする。転校してきた初日からずっと…感じていたんだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je crois que je sais enfin ce qu'est ce sentiment. Depuis le tout premier jour de mon transfert jusqu'à maintenant... je l'ai ressenti depuis le début.*"
             }
         }
     },
@@ -1115,6 +1283,14 @@ Object.assign(SCENARIO[4], {
                     "「言いたいことがあるんだ…」（告白する）",
                     "「…この景色、本当に綺麗だね。」（まだだ）"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*En ce moment... devrais-je lui dire ce que je ressens ?*",
+                "choices": [
+                    "\"Il y a quelque chose que je dois te dire...\"  (Se déclarer)",
+                    "\"...Ce paysage est vraiment magnifique.\"  (Pas encore)"
+                ]
             }
         }
     },
@@ -1138,6 +1314,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "「実は…転校してきてから、毎日考えていた人がいるんだ。」"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"La vérité c'est que... depuis mon transfert ici, je n'ai pensé qu'à toi chaque jour.\""
             }
         }
     },
@@ -1161,6 +1341,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*心臓がおかしいくらいに鳴っている。ドクン、ドクン、ドクン。この音、相手にも聞こえてるんじゃないか。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Mon cœur battait comme un fou. Boum, boum, boum. Est-ce qu'il peut l'entendre aussi ?*"
             }
         }
     },
@@ -1184,6 +1368,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "「最初はただいい人だなって思ってたんだけど…今ははっきりわかった。」"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Au début, je pensais juste que tu étais quelqu'un de bien... mais maintenant j'en suis sûr.\""
             }
         }
     },
@@ -1207,6 +1395,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*深く息を吸い込んだ。手をぎゅっと握りしめた。今じゃなかったら…一生後悔する気がする。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ai pris une grande inspiration. J'ai serré les poings. Si ce n'est pas maintenant... je le regretterai toute ma vie.*"
             }
         }
     },
@@ -1230,6 +1422,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "「僕…好きだよ。本気で。」"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Je... tu me plais.\""
             }
         }
     },
@@ -1253,6 +1449,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*言い終わった瞬間、静寂が流れた。夕焼けに染まった世界が止まったように感じた。1秒が1時間のように長く感じる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dès que les mots ont quitté ma bouche, le silence est tombé. Le monde baigné dans la lueur du couchant semblait s'être arrêté. Chaque seconde semblait durer une heure.*"
             }
         }
     },
@@ -1296,6 +1496,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "システム",
                 "text": ""
+            },
+            "fr": {
+                "name": "Système",
+                "text": ""
             }
         }
     },
@@ -1319,6 +1523,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "「ソヨン…毎朝君の笑顔を見ることが、僕の一日が始まる理由になってた。こんな気持ちは初めてなんだ。」"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Seoyeon... voir ton sourire chaque matin est devenu la raison pour laquelle je commence ma journée. Je n'ai jamais rien ressenti de tel.\""
             }
         }
     },
@@ -1342,6 +1550,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "「ユナ…君と一緒にいると、世界が静かに感じるんだ。その静けさが好きなんだ。君だから特別なんだよ。」"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Yuna... quand je suis avec toi, le monde semble paisible. J'aime cette tranquillité. C'est spécial parce que c'est toi.\""
             }
         }
     },
@@ -1365,6 +1577,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "「ダイン…君が笑うと、僕もつられて笑っちゃうんだ。君の明るいエネルギーは伝染するんだよ。いつからか、君がいないと寂しくなったんだ。」"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Dain... quand tu souris, je ne peux pas m'empêcher de sourire aussi. Ton énergie rayonnante est contagieuse. À un moment donné, ça a commencé à me sembler vide sans toi.\""
             }
         }
     },
@@ -1388,6 +1604,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "「先生…これは生徒としてじゃなく、一人の人間として言ってるんです。先生が好きです。本気です。」"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Je ne dis pas ça en tant qu'élève... je le dis en tant que personne. Vous me plaisez. Je suis sincère.\""
             }
         }
     },
@@ -1411,6 +1631,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "「先生…厳しい時も、笑っている時も、全部好きでした。この気持ちは先生だけに向けた本気の気持ちです。」"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Que vous soyez sévère ou souriante... j'ai aimé chaque facette de vous. Ces sentiments sont sincères, et ils ne sont que pour vous.\""
             }
         }
     },
@@ -1443,6 +1667,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "「…私も。私も好き。転校してきた初日、校門で初めて見た時から。」"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"...Moi aussi. Tu me plais aussi. Depuis le premier jour de ton transfert, quand je t'ai vu pour la première fois au portail de l'école.\""
             }
         }
     },
@@ -1466,6 +1694,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンの目に涙が浮かんでいる。夕日の光にきらめくその涙が…世界で一番美しい宝石のようだった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Des larmes perlaient dans les yeux de Seoyeon. Ces larmes, scintillant dans la lueur du couchant... ressemblaient aux plus beaux joyaux du monde.*"
             }
         }
     },
@@ -1489,6 +1721,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "「…手、繋いでもいい？」（ソヨンがそっと僕の手を握った。温かくて、少し震えていた。）"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"...Je peux te prendre la main ?\"  (Seoyeon a doucement enlacé sa main dans la mienne. Elle était chaude, et tremblait légèrement.)"
             }
         }
     },
@@ -1521,6 +1757,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "「…バカ。先に言おうとしてたのに。」"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"...Idiot. J'allais le dire en premier.\""
             }
         }
     },
@@ -1544,6 +1784,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナが少しうつむいた。耳の先まで赤くなっているのが見える。いつもと全然違うこの姿に…心臓が破裂しそうだった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna a légèrement baissé la tête. Je pouvais voir la rougeur s'étendre jusqu'au bout de ses oreilles. C'était complètement différent de d'habitude... mon cœur semblait prêt à exploser.*"
             }
         }
     },
@@ -1567,6 +1811,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "「…じっとして。」（ユナが僕のすぐ隣に来て、ぴったりと寄り添った。肩が触れ合う。小さな温もりが二人の間に広がった。）"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"...Ne bouge pas.\"  (Yuna s'est rapprochée et s'est tenue tout près. Nos épaules se touchaient. Une petite chaleur rayonnait entre nous.)"
             }
         }
     },
@@ -1599,6 +1847,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "「…え？！ほ、ほんとに？！私も！！私も好き！！うそでしょ？！」"
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\"...Hein ?! V-vraiment ?! Moi aussi !! Tu me plais aussi !! Oh mon Dieu !!\""
             }
         }
     },
@@ -1622,6 +1874,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ダインが両手で僕の腕をぎゅっと掴んだ。顔は真っ赤に上気しているけど、目はキラキラと輝いていた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dain a attrapé mon bras avec ses deux mains. Son visage était tout rouge, mais ses yeux pétillaient de joie.*"
             }
         }
     },
@@ -1645,6 +1901,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "「えへへ、じゃあ私たち付き合ってるってことだよね？！本当に？！ああもう心臓爆発しそう！！」（ダインがぴょんぴょん跳ねながら僕の手を掴んで振り回した。）"
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\"Héhé, alors on sort ensemble maintenant, c'est ça ?! Vraiment ?! Ahh, mon cœur va exploser !!\"  (Dain sautillait de haut en bas, attrapant ma main et la secouant.)"
             }
         }
     },
@@ -1677,6 +1937,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "「…わかってたわ。あなたの目を見ればわかるもの。…私も同じ気持ちよ。」"
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\"...Je le savais déjà. Je pouvais le voir rien qu'en te regardant dans les yeux. ...Je ressens la même chose.\""
             }
         }
     },
@@ -1700,6 +1964,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*先生が一歩近づいてきた。ほのかな香りが鼻先をかすめる。心臓が止まりそうだった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Elle a fait un pas vers moi. Un parfum doux et délicat a effleuré mon nez. Mon cœur semblait prêt à s'arrêter.*"
             }
         }
     },
@@ -1723,6 +1991,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "「秘密よ、二人だけの。」（先生がそっと僕の手を取った。柔らかくて温かい手が…震えていた。）"
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\"C'est un secret, rien qu'entre nous.\"  (Elle a doucement pris ma main. Sa main douce et chaude... tremblait.)"
             }
         }
     },
@@ -1755,6 +2027,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "「…まったく、あなたね。生徒が先生にそんなこと言っちゃダメでしょ？…でも、私も同じ気持ちよ、バカ。」"
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\"...Franchement, toi. Tu sais qu'un élève ne devrait pas dire ce genre de choses à une professeure, n'est-ce pas ? ...Mais je ressens la même chose, idiot.\""
             }
         }
     },
@@ -1778,6 +2054,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*先生の目が揺れている。いつも隙のないあの人のこんな姿は…僕だけが見られるものなんだろう。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Ses yeux vacillaient. Voir ce côté vulnérable de quelqu'un qui est toujours si sur ses gardes... je dois être le seul à pouvoir voir ça.*"
             }
         }
     },
@@ -1801,6 +2081,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "「…これだけね。」（先生が僕と小指を絡めた。「学校では…秘密よ。」）"
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\"...Juste ça.\"  (Elle a entrelacé son petit doigt avec le mien. \"À l'école... c'est un secret.\")"
             }
         }
     },
@@ -1825,6 +2109,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*夕日の下、二人の影が一つに重なった。世界で一番幸せな瞬間だった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Sous le coucher de soleil, nos deux ombres se sont fondues en une seule. C'était le moment le plus heureux du monde.*"
             }
         }
     },
@@ -1848,6 +2136,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "「…この景色、本当に綺麗だね。」"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"...Ce paysage est vraiment magnifique.\""
             }
         }
     },
@@ -1871,6 +2163,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*言いたい言葉が喉元まで上がってきたけど…結局飲み込んだ。まだ…まだその時じゃない。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Les mots que je voulais dire sont montés jusqu'au bout de ma langue... mais je les ai ravalés. Pas encore... ce n'est pas encore le bon moment.*"
             }
         }
     },
@@ -1894,6 +2190,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*並んで川沿いの道を歩いた。何も話さなかったけど、不思議と居心地の悪くない沈黙だった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous avons marché côte à côte le long de la berge. Aucun de nous n'a dit un mot, mais étrangement, le silence n'était pas du tout inconfortable.*"
             }
         }
     },
@@ -1917,6 +2217,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "「…今日、本当に楽しかった。ありがとう。」"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"...Aujourd'hui, c'était vraiment bien. Merci.\""
             }
         }
     },
@@ -1940,6 +2244,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*あの先の横断歩道で別れなきゃいけない。一歩踏み出すのがこんなに難しいなんて。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous allions devoir nous séparer au passage piéton là-bas. Je ne savais pas qu'un seul pas pouvait être aussi difficile.*"
             }
         }
     },
@@ -1963,6 +2271,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*さっき飲み込んだ言葉がまた込み上げてきた。「好きだよ。」その三文字が心臓の壁を叩いている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Les mots que j'avais ravalés tout à l'heure sont remontés d'un coup. 'Tu me plais.' Ces mots tambourinaient contre les parois de mon cœur.*"
             }
         }
     },
@@ -2006,6 +2318,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "システム",
                 "text": ""
+            },
+            "fr": {
+                "name": "Système",
+                "text": ""
             }
         }
     },
@@ -2034,6 +2350,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "「私も！また遊ぼうね…ね？」（ソヨンは明るく笑ったけど、目の奥にどこか名残惜しさが見えた。）"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Moi aussi ! On se revoit bientôt... d'accord ?\"  (Seoyeon souriait radieusement, mais au fond de ses yeux, une pointe de nostalgie transparaissait.)"
             }
         }
     },
@@ -2062,6 +2382,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "「…うん。悪くなかった。…また、やろう。」（ユナが少し顔をそむけた。表情を隠そうとしているのだろうか。）"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"...Ouais. C'était pas mal. ...Refaisons ça un de ces jours.\"  (Yuna a légèrement détourné la tête. Essayait-elle de cacher son expression ?)"
             }
         }
     },
@@ -2090,6 +2414,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "「もちろん楽しかったよ！！次もまた行こう！！」（ダインは明るく笑ったけど、一瞬唇を噛んでいるのが見えた。）"
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\"Bien sûr que c'était fun !! On ressort ensemble la prochaine fois !!\"  (Dain souriait de toutes ses dents, mais pendant un instant, je l'ai vue se mordre la lèvre.)"
             }
         }
     },
@@ -2118,6 +2446,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "「楽しい時間だったわ。…また会えるかしら？」（先生の微笑みがいつもより少しだけ弱く見えた。）"
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\"C'était un moment charmant. ...On se revoit ?\"  (Son sourire semblait un tout petit peu plus faible que d'habitude.)"
             }
         }
     },
@@ -2146,6 +2478,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "「…まあ、悪くなかったわね。次もまた呼んでね。来てあげるから。」（先生は笑ったけど、振り返る足取りが遅かった。）"
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\"...Bon, c'était pas mal. Rappelle-moi la prochaine fois. Je viendrai.\"  (Elle souriait, mais ses pas en se retournant étaient lents.)"
             }
         }
     },
@@ -2169,6 +2505,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*挨拶を交わして足を向けた。振り返りたかったけど…我慢した。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous nous sommes dit au revoir et je me suis retourné pour partir. Je voulais regarder en arrière... mais je me suis retenu.*"
             }
         }
     },
@@ -2192,6 +2532,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*どうしても我慢できなくて振り返った。相手も振り返っていた。目が合った瞬間、お互い慌てて顔をそむけた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je n'ai pas pu m'en empêcher et j'ai regardé en arrière. Elle s'était retournée aussi. Au moment où nos regards se sont croisés, nous avons tous les deux vite détourné les yeux.*"
             }
         }
     },
@@ -2215,6 +2559,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*家への帰り道。今日言えなかった言葉が胸の隅に重く残っている。「次こそは…絶対に言おう。」*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Sur le chemin du retour. Les mots que je n'ai pas pu dire aujourd'hui pesaient lourd dans un coin de ma poitrine. 'La prochaine fois... je le dirai, c'est sûr. Il le faut.'*"
             }
         }
     },
@@ -2239,6 +2587,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*心の中には…言えなかった言葉がいつまでも残っていた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dans mon cœur... les mots restés muets persistaient.*"
             }
         }
     }
