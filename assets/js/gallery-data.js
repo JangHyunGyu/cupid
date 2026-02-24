@@ -379,6 +379,85 @@ class GalleryData {
                 personality: 'いたずら好き、成熟',
                 expressions: ['normal', 'shy', 'angry', 'bikini']
             }
+        },
+
+        // ===== 프랑스어 데이터 (French Data) =====
+        fr: {
+            seyoun: {
+                id: 'seyoun',
+                name: 'Seoyeon',
+                title: 'La Présidente Parfaite',
+                shortDescription: 'Une présidente du conseil étudiant parfaite et bienveillante envers tous.',
+                description: 'Une présidente du conseil étudiant parfaite et bienveillante envers tous. En réalité, elle se sent facilement seule et devient très timide lorsqu\'elle est seule avec vous. Elle respecte les règles, mais parfois elle aimerait les enfreindre pour vous.',
+                age: '18 ans',
+                birthday: '14 mars',
+                height: '165cm',
+                weight: '48kg',
+                bust: '34-22-35 65E',
+                hobby: 'Musique, Lecture',
+                personality: 'Mégadere, Timide',
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+            },
+            yuna: {
+                id: 'yuna',
+                name: 'Yuna',
+                title: 'Kuudere Mystérieuse',
+                shortDescription: 'L\'incarnation d\'une kuudere froide et inexpressive.',
+                description: 'L\'incarnation d\'une kuudere froide et inexpressive. Elle montre un intérêt profond et obsessionnel pour votre « lumière spéciale ». Connue pour ses remarques mystérieuses et enivrantes. Elle dégage une aura de vouloir vous protéger.',
+                age: '18 ans',
+                birthday: '22 juillet',
+                height: '162cm',
+                weight: '47kg',
+                bust: '33-21-34 65E',
+                hobby: 'Observation des étoiles, Poésie',
+                personality: 'Kuudere, Mystérieuse',
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+            },
+            dain: {
+                id: 'dain',
+                name: 'Dain',
+                title: 'Amie d\'Enfance Radieuse',
+                shortDescription: 'Une tsundere joyeuse et vive avec un côté maternel.',
+                description: 'Une tsundere joyeuse et vive avec un côté maternel. Elle vous traite comme un ami proche, mais rougit rapidement dans les moments romantiques. Honnête avec ses sentiments mais maladroite pour les exprimer.',
+                age: '18 ans',
+                birthday: '25 décembre',
+                height: '158cm',
+                weight: '46kg',
+                bust: '35-23-36 65F',
+                hobby: 'Cuisine, Sport',
+                personality: 'Tsundere, Joyeuse',
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+            },
+            teacher: {
+                id: 'teacher',
+                name: 'Professeure',
+                title: 'La Professeure Maladroite',
+                shortDescription: 'Une enseignante professionnelle qui sépare travail et vie privée.',
+                description: 'Une enseignante professionnelle qui sépare travail et vie privée, mais qui a en réalité un côté maladroit. Son cœur s\'emballe devant vos moments de maturité inattendus. Un contraste charmant de vouloir secrètement s\'appuyer sur vous.',
+                age: '28 ans',
+                birthday: '5 mai',
+                height: '170cm',
+                weight: '58kg',
+                bust: '38-24-38 70G',
+                hobby: 'Lecture, Cinéma',
+                personality: 'Professionnelle, Maladroite',
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+            },
+            nurse: {
+                id: 'nurse',
+                name: 'Infirmière',
+                title: 'Infirmière Espiègle',
+                shortDescription: 'Une infirmière scolaire mature et espiègle.',
+                description: 'Une infirmière scolaire mature et espiègle. Elle aime vous taquiner avec des mots provocateurs, mais en réalité elle prend soin des élèves et les protège plus que quiconque. Elle trouve vos réactions embarrassées adorables.',
+                age: '26 ans',
+                birthday: '12 septembre',
+                height: '168cm',
+                weight: '60kg',
+                bust: '40-24-40 70H',
+                hobby: 'Jardinage, Méditation',
+                personality: 'Espiègle, Mature',
+                expressions: ['normal', 'shy', 'angry', 'bikini']
+            }
         }
     };
 
@@ -463,6 +542,25 @@ class GalleryData {
             active: '活発',
             sweat: '汗',
             bikini: 'ビキニ'
+        },
+
+        // 프랑스어 표정 이름
+        fr: {
+            normal: 'Normale',
+            shy: 'Timide',
+            shy2: 'Timide 2',
+            angry: 'En colère',
+            sad: 'Triste',
+            laugh: 'Rieuse',
+            cry: 'En pleurs',
+            pout: 'Boudeuse',
+            worried: 'Inquiète',
+            back: 'De dos',
+            smile: 'Souriante',
+            bored: 'Ennuyée',
+            active: 'Dynamique',
+            sweat: 'Nerveuse',
+            bikini: 'Bikini'
         }
     };
 
@@ -517,6 +615,16 @@ class GalleryData {
                 name: '保健先生との特別な出会い',
                 character: '保健先生',
                 description: '保健先生の家で起きた特別なイベント',
+                file: 'assets/images/background/nurse_home_event1.png',
+                thumbnail: 'assets/images/background/nurse_home_event1.png'
+            }
+        ],
+        fr: [
+            {
+                id: 'nurse_home_event1',
+                name: 'Moment spécial avec l\'Infirmière',
+                character: 'Infirmière',
+                description: 'Un événement spécial chez l\'infirmière',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
             }
@@ -592,6 +700,20 @@ class GalleryData {
             { id: 'mystery', name: '怪しい気配', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
             { id: 'confession', name: '告白', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
             { id: 'ending', name: 'エンディングテーマ', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
+        ],
+        fr: [
+            { id: 'intro', name: 'Thème Principal', artist: 'Cupid OST', duration: '2:30', file: 'assets/audio/bgm/intro.mp3' },
+            { id: 'morning', name: 'Matin Frais', artist: 'Cupid OST', duration: '3:25', file: 'assets/audio/bgm/morning.mp3' },
+            { id: 'daily', name: 'Jours d\'École', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
+            { id: 'daily2', name: 'Après-midi Paisible', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
+            { id: 'sunset1', name: 'Promenade au Coucher du Soleil', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
+            { id: 'sunset2', name: 'Moment Romantique', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: 'Rendez-vous Palpitant', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'night1', name: 'Nuit Tranquille', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
+            { id: 'night2', name: 'Nuit Secrète', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
+            { id: 'mystery', name: 'Aura Suspecte', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
+            { id: 'confession', name: 'Confession', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
+            { id: 'ending', name: 'Thème de Fin', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
         ]
     };
 
@@ -675,7 +797,8 @@ class GalleryData {
             ...this.cg.ko.map(cg => cg.id),
             ...this.cg.en.map(cg => cg.id),
             ...(this.cg.es || []).map(cg => cg.id),
-            ...(this.cg.ja || []).map(cg => cg.id)
+            ...(this.cg.ja || []).map(cg => cg.id),
+            ...(this.cg.fr || []).map(cg => cg.id)
         ]);
     }
 

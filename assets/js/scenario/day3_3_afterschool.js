@@ -140,7 +140,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"...{name}, can we talk for a moment?\""
+                "text": "\"...{name}, on peut parler un instant ?\""
             }
         }
     },
@@ -196,7 +196,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"About lunch... Did you really make weekend plans with all of us?\""
+                "text": "\"À propos du déjeuner... Tu as vraiment pris des engagements pour le week-end avec nous toutes ?\""
             }
         }
     },
@@ -287,7 +287,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "\"...Yes. Sorry. I couldn't turn anyone down...\""
+                "text": "\"...Oui. Désolé. Je n'arrivais pas à dire non...\""
             }
         }
     },
@@ -320,7 +320,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"...Thanks for being honest. But I don't like that.\""
+                "text": "\"...Merci d'être honnête. Mais ça ne me plaît pas.\""
             }
         }
     },
@@ -349,7 +349,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"If I'm really special to you... only meet me. Otherwise, I have options too.\""
+                "text": "\"Si je compte vraiment pour toi... ne vois que moi. Sinon, j'ai d'autres options aussi.\""
             }
         }
     },
@@ -377,7 +377,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "\"The times are all different... so I thought I could meet everyone...\""
+                "text": "\"Les horaires sont tous différents... alors je me suis dit que je pourrais voir tout le monde...\""
             }
         }
     },
@@ -410,7 +410,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"...Don't you see that's the problem?\""
+                "text": "\"...Tu ne vois pas que c'est ça le problème ?\""
             }
         }
     },
@@ -438,7 +438,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"...Fine. We'll see this weekend.\""
+                "text": "\"...Très bien. On verra ce week-end.\""
             }
         }
     },
@@ -466,7 +466,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "\"Seoyeon, you're the only one I'm sincere about. The others are just friends...\""
+                "text": "\"Seoyeon, tu es la seule qui compte vraiment. Les autres, ce sont juste des amies...\""
             }
         }
     },
@@ -500,7 +500,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"...Really? Can I trust that?\""
+                "text": "\"...Vraiment ? Je peux te croire ?\""
             }
         }
     },
@@ -620,7 +620,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"...{name}, do you have a minute?\""
+                "text": "\"...{name}, tu as une minute ?\""
             }
         }
     },
@@ -647,7 +647,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"About lunch... Sorry, I think I was being sensitive.\""
+                "text": "\"À propos du déjeuner... Désolée, je crois que j'étais un peu susceptible.\""
             }
         }
     },
@@ -704,11 +704,11 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"But honestly... seeing you close with Yuna or Dain bothers me a little.\"",
+                "text": "\"Mais honnêtement... te voir proche de Yuna ou Dain, ça me dérange un peu.\"",
                 "choices": [
-                    "\"You're my favorite, Seoyeon\"",
-                    "\"They're all precious friends\"",
-                    "\"Are you jealous?\""
+                    "\"Tu es ma préférée, Seoyeon\"",
+                    "\"Ce sont toutes des amies précieuses\"",
+                    "\"Tu es jalouse ?\""
                 ]
             }
         }
@@ -741,7 +741,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"...Really? Hearing that... I feel a bit relieved.\""
+                "text": "\"...Vraiment ? Entendre ça... je me sens un peu soulagée.\""
             }
         }
     },
@@ -773,7 +773,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"...Right. Friends. Got it.\""
+                "text": "\"...D'accord. Des amies. Compris.\""
             }
         }
     },
@@ -805,7 +805,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "\"W-what! That's not... Ugh, forget it!\""
+                "text": "\"Q-quoi ! C'est pas... Roh, laisse tomber !\""
             }
         }
     },
@@ -861,7 +861,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Yuna",
-                "text": "\"At lunch... you chose Seoyeon.\""
+                "text": "\"Au déjeuner... tu as choisi Seoyeon.\""
             }
         }
     },
@@ -921,9 +921,9 @@ Object.assign(SCENARIO[3], {
                 "name": "Moi",
                 "text": "*Les yeux de Yuna sont plus froids que d'habitude.*",
                 "choices": [
-                    "\"I'm sorry, Yuna\"",
-                    "\"I'll spend time with you tomorrow\"",
-                    "\"Why, are you upset?\""
+                    "\"Je suis désolé, Yuna\"",
+                    "\"Je passerai du temps avec toi demain\"",
+                    "\"Pourquoi, tu es vexée ?\""
                 ]
             }
         }
@@ -2176,7 +2176,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*..."Rien que tous les deux". Mes autres engagements me traversent l'esprit.*",
+                "text": "*...'Rien que nous deux'. Mes autres engagements me traversent l'esprit.*",
                 "choices": [
                     "\"Yeah, I'm excited too\"",
                     "\"Actually...\" (Be honest)"

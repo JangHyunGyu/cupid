@@ -116,7 +116,10 @@ class FreeTalkSystem {
                 (charName === "Enfermera" && (m.char === "보건선생님" || m.char === "Nurse")) ||
                 // Japanese name matching
                 (charName === "担任先生" && (m.char === "담임선생님" || m.char === "Teacher")) ||
-                (charName === "保健先生" && (m.char === "보건선생님" || m.char === "Nurse"));
+                (charName === "保健先生" && (m.char === "보건선생님" || m.char === "Nurse")) ||
+                // French name matching
+                (charName === "Professeur Principal" && (m.char === "담임선생님" || m.char === "Teacher")) ||
+                (charName === "Infirmière Scolaire" && (m.char === "보건선생님" || m.char === "Nurse"));
             // 플래그가 true인 기억만 포함
             return charMatch && this.stateManager.getFlag(m.flag);
         });
@@ -125,9 +128,9 @@ class FreeTalkSystem {
         if (memories.length === 0) return "";
 
         // 기억들을 리스트 형태로 포맷팅
-        const header = { es: "\n\n[Eventos y Recuerdos Recientes]:\n", ja: "\n\n[最近の出来事と記憶]:\n", en: "\n\n[Recent Events & Memories]:\n" }[lang] || "\n\n[최근 사건 및 기억]:\n";
+        const header = { es: "\n\n[Eventos y Recuerdos Recientes]:\n", ja: "\n\n[最近の出来事と記憶]:\n", en: "\n\n[Recent Events & Memories]:\n", fr: "\n\n[Événements et Souvenirs Récents] :\n" }[lang] || "\n\n[최근 사건 및 기억]:\n";
         return header + memories.map(m => {
-            let text = { es: m.es, ja: m.ja, en: m.en }[lang] || m.ko;
+            let text = { es: m.es, ja: m.ja, en: m.en, fr: m.fr }[lang] || m.ko;
             if (!text) text = m.en || m.ko;
             return `- ${text.replace(/{name}/g, this.stateManager.playerName)}`;
         }).join("\n");
@@ -169,6 +172,13 @@ class FreeTalkSystem {
                 "担任先生": "プロフェッショナルな教師だがドジな一面がある。",
                 "保健先生": "魅力的で茶目っ気のある保健教師。"
             },
+            fr: {
+                "Seoyeon": "Présidente du conseil des élèves. Gentille mais solitaire.",
+                "Yuna": "Fille mystérieuse. Intéressée par la 'lumière' de l'utilisateur.",
+                "Dain": "Fille énergique. Amie proche de l'utilisateur.",
+                "Professeur Principal": "Professionnelle mais a un côté maladroit.",
+                "Infirmière Scolaire": "Une enseignante de santé mature et joueuse."
+            },
             ko: {
                 "서연": "학생회장. 모두에게 친절하지만 외로움을 잘 탐.",
                 "유나": "신비로운 소녀. 주인공의 '빛'에 집착함.",
@@ -190,22 +200,22 @@ class FreeTalkSystem {
                 // 관계 상태 텍스트 생성
                 let status = "";
                 if (this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${name}`)) {
-                    status = { es: " (Actualmente SALIENDO con el usuario)", ja: " (現在ユーザーと交際中)", en: " (Currently DATING the user)" }[lang] || " (현재 사용자와 사귀는 사이)";
+                    status = { es: " (Actualmente SALIENDO con el usuario)", ja: " (現在ユーザーと交際中)", en: " (Currently DATING the user)", fr: " (Actuellement en COUPLE avec l'utilisateur)" }[lang] || " (현재 사용자와 사귀는 사이)";
                 } else if (affinity >= 70) {
-                    status = { es: " (Convencida de estar saliendo con el usuario)", ja: " (ユーザーと交際していると確信)", en: " (Convinced they are dating the user)" }[lang] || " (사용자와 사귀는 사이라고 확신함)";
+                    status = { es: " (Convencida de estar saliendo con el usuario)", ja: " (ユーザーと交際していると確信)", en: " (Convinced they are dating the user)", fr: " (Convaincue de sortir avec l'utilisateur)" }[lang] || " (사용자와 사귀는 사이라고 확신함)";
                 } else if (affinity >= 50) {
-                    status = { es: " (Sospecha que está saliendo con el usuario)", ja: " (ユーザーと交際しているか疑っている)", en: " (Suspecting they are dating the user)" }[lang] || " (사용자와 사귀는 사이인지 의심함)";
+                    status = { es: " (Sospecha que está saliendo con el usuario)", ja: " (ユーザーと交際しているか疑っている)", en: " (Suspecting they are dating the user)", fr: " (Suspecte qu'elle sort avec l'utilisateur)" }[lang] || " (사용자와 사귀는 사이인지 의심함)";
                 }
 
-                const affinityText = { es: ` (Afinidad: ${affinity})`, ja: ` (好感度: ${affinity})`, en: ` (Affinity: ${affinity})` }[lang] || ` (호감도: ${affinity})`;
+                const affinityText = { es: ` (Afinidad: ${affinity})`, ja: ` (好感度: ${affinity})`, en: ` (Affinity: ${affinity})`, fr: ` (Affinité : ${affinity})` }[lang] || ` (호감도: ${affinity})`;
                 return `- ${name}: ${desc}${affinityText}${status}`;
             })
             .join("\n");
 
-        const header = { es: "\n\n[Otros Personajes en la Escuela y Tu Conocimiento]:\n", ja: "\n\n[学校の他のキャラクターとあなたの認知状態]:\n", en: "\n\n[Other Characters in School & Your Awareness]:\n" }[lang] || "\n\n[학교의 다른 인물들 및 당신의 인지 상태]:\n";
+        const header = { es: "\n\n[Otros Personajes en la Escuela y Tu Conocimiento]:\n", ja: "\n\n[学校の他のキャラクターとあなたの認知状態]:\n", en: "\n\n[Other Characters in School & Your Awareness]:\n", fr: "\n\n[Autres Personnages de l'École et Votre Perception] :\n" }[lang] || "\n\n[학교의 다른 인물들 및 당신의 인지 상태]:\n";
 
         // 질투 반응 지침
-        const jealousyInstruction = { es: "\nNota: Eres consciente de la relación del usuario con otros. Si su afinidad es alta (50+), puedes sentir celos, sospechas u obsesión según tu personalidad.", ja: "\n注意: あなたはユーザーと他のキャラクターとの関係を認知しています。他のキャラクターの好感度が高い場合(50以上)、あなたの性格に応じて嫉妬、疑念、または執着を見せることがあります。", en: "\nNote: You are aware of the user's relationship with others. If their affinity is high (50+), you may feel jealous, suspicious, or obsessive depending on your personality." }[lang] || "\n참고: 당신은 사용자와 다른 캐릭터들의 관계를 인지하고 있습니다. 다른 캐릭터의 호감도가 높을 경우(50 이상), 당신의 성격에 따라 질투, 의심, 또는 집착을 보일 수 있습니다.";
+        const jealousyInstruction = { es: "\nNota: Eres consciente de la relación del usuario con otros. Si su afinidad es alta (50+), puedes sentir celos, sospechas u obsesión según tu personalidad.", ja: "\n注意: あなたはユーザーと他のキャラクターとの関係を認知しています。他のキャラクターの好感度が高い場合(50以上)、あなたの性格に応じて嫉妬、疑念、または執着を見せることがあります。", en: "\nNote: You are aware of the user's relationship with others. If their affinity is high (50+), you may feel jealous, suspicious, or obsessive depending on your personality.", fr: "\nNote : Vous êtes consciente de la relation de l'utilisateur avec les autres. Si leur affinité est élevée (50+), vous pouvez ressentir de la jalousie." }[lang] || "\n참고: 당신은 사용자와 다른 캐릭터들의 관계를 인지하고 있습니다. 다른 캐릭터의 호감도가 높을 경우(50 이상), 당신의 성격에 따라 질투, 의심, 또는 집착을 보일 수 있습니다.";
 
         return header + otherChars + jealousyInstruction;
     }
@@ -248,18 +258,18 @@ class FreeTalkSystem {
 
         // 🔍 현재 배경 이미지로 장소 유추
         const locNames = {
-            default:        { es: "Escuela", ja: "学校", en: "School", ko: "학교" },
-            room_school:    { es: "Aula", ja: "教室", en: "Classroom", ko: "교실" },
-            school_hallway: { es: "Pasillo", ja: "廊下", en: "Hallway", ko: "복도" },
-            'school.png':   { es: "Puerta de la escuela", ja: "校門前", en: "School Gate", ko: "교문 앞" },
-            top_school:     { es: "Azotea", ja: "屋上", en: "Rooftop", ko: "학교 옥상" },
-            playground:     { es: "Patio", ja: "運動場", en: "Playground", ko: "운동장" },
-            gym:            { es: "Gimnasio", ja: "体育館", en: "Gym", ko: "체육관" },
-            nurse_room:     { es: "Enfermería", ja: "保健室", en: "Nurse's Office", ko: "보건실" },
-            library:        { es: "Biblioteca", ja: "図書館", en: "Library", ko: "도서관" },
-            arcade:         { es: "Sala de juegos", ja: "ゲームセンター", en: "Arcade", ko: "오락실" },
-            bookstore:      { es: "Librería", ja: "書店", en: "Bookstore", ko: "서점" },
-            home_room:      { es: "Mi habitación", ja: "自分の部屋", en: "My Room", ko: "주인공의 방" }
+            default:        { es: "Escuela", ja: "学校", en: "School", fr: "École", ko: "학교" },
+            room_school:    { es: "Aula", ja: "教室", en: "Classroom", fr: "Salle de classe", ko: "교실" },
+            school_hallway: { es: "Pasillo", ja: "廊下", en: "Hallway", fr: "Couloir", ko: "복도" },
+            'school.png':   { es: "Puerta de la escuela", ja: "校門前", en: "School Gate", fr: "Portail de l'école", ko: "교문 앞" },
+            top_school:     { es: "Azotea", ja: "屋上", en: "Rooftop", fr: "Toit", ko: "학교 옥상" },
+            playground:     { es: "Patio", ja: "運動場", en: "Playground", fr: "Cour de récréation", ko: "운동장" },
+            gym:            { es: "Gimnasio", ja: "体育館", en: "Gym", fr: "Gymnase", ko: "체육관" },
+            nurse_room:     { es: "Enfermería", ja: "保健室", en: "Nurse's Office", fr: "Infirmerie", ko: "보건실" },
+            library:        { es: "Biblioteca", ja: "図書館", en: "Library", fr: "Bibliothèque", ko: "도서관" },
+            arcade:         { es: "Sala de juegos", ja: "ゲームセンター", en: "Arcade", fr: "Salle d'arcade", ko: "오락실" },
+            bookstore:      { es: "Librería", ja: "書店", en: "Bookstore", fr: "Librairie", ko: "서점" },
+            home_room:      { es: "Mi habitación", ja: "自分の部屋", en: "My Room", fr: "Ma chambre", ko: "주인공의 방" }
         };
         let locationName = locNames.default[lang] || locNames.default.ko;
         const bgUrl = this.uiManager.bgLayer.style.backgroundImage;
@@ -310,8 +320,8 @@ class FreeTalkSystem {
         );
 
         const mediumInstruction = isRemote
-            ? ({ es: "\n- MEDIO: Comunicándose por TELÉFONO/MENSAJERÍA.", ja: "\n- メディア: 電話/メッセンジャーで連絡中。", en: "\n- MEDIUM: Communicating via PHONE/MESSENGER." }[lang] || "\n- 매체 지침: 전화/메시지로 연락 중.")
-            : ({ es: "\n- MEDIO: Hablando CARA A CARA.", ja: "\n- メディア: 対面で会話中。", en: "\n- MEDIUM: Talking FACE-TO-FACE." }[lang] || "\n- 매체 지침: 대면 대화 중.");
+            ? ({ es: "\n- MEDIO: Comunicándose por TELÉFONO/MENSAJERÍA.", ja: "\n- メディア: 電話/メッセンジャーで連絡中。", en: "\n- MEDIUM: Communicating via PHONE/MESSENGER.", fr: "\n- MOYEN : Communication par TÉLÉPHONE/MESSAGERIE." }[lang] || "\n- 매체 지침: 전화/메시지로 연락 중.")
+            : ({ es: "\n- MEDIO: Hablando CARA A CARA.", ja: "\n- メディア: 対面で会話中。", en: "\n- MEDIUM: Talking FACE-TO-FACE.", fr: "\n- MOYEN : Conversation EN PERSONNE." }[lang] || "\n- 매체 지침: 대면 대화 중.");
 
         // 시스템 프롬프트 생성
         const systemPrompt = window.buildSystemPrompt ? window.buildSystemPrompt({
@@ -320,7 +330,7 @@ class FreeTalkSystem {
             sceneName: charKey,
             displayName: scene.name,
             locationName,
-            context: scene.context || ({ es: "Hablando con el usuario.", ja: "ユーザーと会話中です。", en: "Talking with the user." }[lang] || "사용자와 대화 중입니다."),
+            context: scene.context || ({ es: "Hablando con el usuario.", ja: "ユーザーと会話中です。", en: "Talking with the user.", fr: "En conversation avec l'utilisateur." }[lang] || "사용자와 대화 중입니다."),
             affinity: charStats.affinity,
             extraGuideline: scene.extra_guideline || "",
             gameContext,
@@ -349,7 +359,10 @@ class FreeTalkSystem {
                     : "<b>Tip:</b> <i>*手を握って* 行こう。</i> のように話してみてね。",
                 en: isRemote
                     ? "<b>Tip:</b> Describe tone in asterisks, e.g., <i>*smiling* Hey...</i>"
-                    : "<b>Tip:</b> Describe scene or actions, e.g., <i>*holds hand* Let's go.</i>"
+                    : "<b>Tip:</b> Describe scene or actions, e.g., <i>*holds hand* Let's go.</i>",
+                fr: isRemote
+                    ? "<b>Tip :</b> Décrivez le ton avec des astérisques, ex : <i>*en souriant* Salut...</i>"
+                    : "<b>Tip :</b> Décrivez la scène ou les actions, ex : <i>*prend la main* Allons-y.</i>"
             };
             chatGuideEl.innerHTML = tips[lang] || (isRemote
                 ? "<b>Tip:</b> <i>*웃으며* 자?</i> 처럼 어조나 상황을 표현해보세요."
@@ -399,7 +412,7 @@ class FreeTalkSystem {
         if (this.dialogueSystem.isCurrentlyTyping() || !this.isFreeTalking) return;
 
         const lang = document.documentElement.lang || 'ko';
-        const confirmMsg = { es: "¿Detener la conversación y continuar?", ja: "会話を中断して次のシーンに進みますか？", en: "Stop the conversation and proceed?" }[lang] || "대화를 중단하고 다음 장면으로 넘어가시겠습니까?";
+        const confirmMsg = { es: "¿Detener la conversación y continuar?", ja: "会話を中断して次のシーンに進みますか？", en: "Stop the conversation and proceed?", fr: "Arrêter la conversation et continuer ?" }[lang] || "대화를 중단하고 다음 장면으로 넘어가시겠습니까?";
 
         const confirmed = await this.uiManager.showModal(confirmMsg);
         if (confirmed) {
@@ -408,7 +421,7 @@ class FreeTalkSystem {
             this.uiManager.chatContainer.style.display = 'none';
             this.isFreeTalking = false;
 
-            const endMsg = { es: "\n\n(La conversación ha terminado.)", ja: "\n\n（会話が終了しました。）", en: "\n\n(Conversation ended. Click to continue.)" }[lang] || "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+            const endMsg = { es: "\n\n(La conversación ha terminado.)", ja: "\n\n（会話が終了しました。）", en: "\n\n(Conversation ended. Click to continue.)", fr: "\n\n(La conversation est terminée.)" }[lang] || "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.textContent += endMsg;
         }
     }
@@ -459,14 +472,14 @@ class FreeTalkSystem {
         if (this.freeTalkHistory.length > 0 && this.freeTalkHistory[0].role === "system") {
             const lang = document.documentElement.lang || 'ko';
             const remaining = this.currentMaxTurns - this.freeTalkTurns;
-            const progressTag = { es: `\n[Progreso del escenario]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.`, ja: `\n[シナリオ進行度]: ${this.freeTalkTurns}/${this.currentMaxTurns}ターン。残り${remaining}ターン。`, en: `\n[CURRENT_PROGRESS]: ${this.freeTalkTurns}/${this.currentMaxTurns} turns. ${remaining} remaining.` }[lang] || `\n[현재 진행 상황]: ${this.freeTalkTurns}/${this.currentMaxTurns}턴. ${remaining}턴 남음.`;
+            const progressTag = { es: `\n[Progreso del escenario]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.`, ja: `\n[シナリオ進行度]: ${this.freeTalkTurns}/${this.currentMaxTurns}ターン。残り${remaining}ターン。`, en: `\n[CURRENT_PROGRESS]: ${this.freeTalkTurns}/${this.currentMaxTurns} turns. ${remaining} remaining.`, fr: `\n[Progression du scénario] : ${this.freeTalkTurns}/${this.currentMaxTurns} tours. ${remaining} restants.` }[lang] || `\n[현재 진행 상황]: ${this.freeTalkTurns}/${this.currentMaxTurns}턴. ${remaining}턴 남음.`;
 
-            const baseContent = this.freeTalkHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0].split('\n[Progreso del escenario]')[0].split('\n[シナリオ進行度]')[0];
+            const baseContent = this.freeTalkHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0].split('\n[Progreso del escenario]')[0].split('\n[シナリオ進行度]')[0].split('\n[Progression du scénario]')[0];
             this.freeTalkHistory[0].content = baseContent + progressTag;
         }
 
         // 사용자 메시지 표시
-        const playerLabelByLang = { en: "Me", es: "Yo", ja: "僕" };
+        const playerLabelByLang = { en: "Me", es: "Yo", ja: "僕", fr: "Moi" };
         const playerLabel = playerLabelByLang[document.documentElement.lang] || "나";
         this.uiManager.updateNameTag(playerLabel);
 
@@ -762,7 +775,7 @@ class FreeTalkSystem {
         // 📌 파싱 실패하거나 텍스트 추출 실패 시 fallback 메시지 반환
         const langFallback = document.documentElement.lang || 'ko';
         return {
-            text: { es: "No pude entender la respuesta. Intentaré de nuevo.", ja: "応答を理解できませんでした。もう一度試みます。", en: "I couldn't understand the response. Let me try again." }[langFallback] || "응답을 이해할 수 없습니다. 다시 시도하겠습니다.",
+            text: { es: "No pude entender la respuesta. Intentaré de nuevo.", ja: "応答を理解できませんでした。もう一度試みます。", en: "I couldn't understand the response. Let me try again.", fr: "Je n'ai pas pu comprendre la réponse. Laissez-moi réessayer." }[langFallback] || "응답을 이해할 수 없습니다. 다시 시도하겠습니다.",
             expression: "",
             affinity: 0,
         };
@@ -921,7 +934,7 @@ class FreeTalkSystem {
 
             // 종료 안내 메시지
             const langEnd = document.documentElement.lang || 'ko';
-            const endMsg = { es: "\n\n(La conversación ha terminado.)", ja: "\n\n（会話が終了しました。）", en: "\n\n(Conversation ended. Click to continue.)" }[langEnd] || "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+            const endMsg = { es: "\n\n(La conversación ha terminado.)", ja: "\n\n（会話が終了しました。）", en: "\n\n(Conversation ended. Click to continue.)", fr: "\n\n(La conversation est terminée.)" }[langEnd] || "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.textContent += endMsg;
         }, 500);
     }

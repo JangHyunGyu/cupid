@@ -299,7 +299,7 @@ class GameEngine {
         if (!scene) {
             // 씬 데이터 없으면 오류 메시지 표시
             const lang = document.documentElement.lang || 'ko';
-            const errorMsg = { es: "Escena no encontrada. Verifica los datos del escenario.", ja: "シーンが見つかりません。シナリオデータを確認してください。", en: "Scene not found. Please check the scenario data." }[lang] || "씬을 찾을 수 없습니다. 시나리오 데이터를 확인하세요.";
+            const errorMsg = { es: "Escena no encontrada. Verifica los datos del escenario.", ja: "シーンが見つかりません。シナリオデータを確認してください。", en: "Scene not found. Please check the scenario data.", fr: "Scène introuvable. Veuillez vérifier les données du scénario." }[lang] || "씬을 찾을 수 없습니다. 시나리오 데이터를 확인하세요.";
             await this.uiManager.showModal(errorMsg, true);
             return;
         }
@@ -313,7 +313,7 @@ class GameEngine {
             } else {
                 // 다음 씬이 없으면 오류 메시지
                 const lang = document.documentElement.lang || 'ko';
-                const errorMsg = { es: "Siguiente escena no definida. Verifica los datos del escenario.", ja: "次のシーンが定義されていません。シナリオデータを確認してください。", en: "Next scene not defined. Please check the scenario data." }[lang] || "다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
+                const errorMsg = { es: "Siguiente escena no definida. Verifica los datos del escenario.", ja: "次のシーンが定義されていません。シナリオデータを確認してください。", en: "Next scene not defined. Please check the scenario data.", fr: "Scène suivante non définie. Veuillez vérifier les données du scénario." }[lang] || "다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
                 await this.uiManager.showModal(errorMsg, true);
             }
             return;
@@ -341,7 +341,7 @@ class GameEngine {
                 } else {
                     // 다음 씬이 없으면 오류 메시지
                     const lang = document.documentElement.lang || 'ko';
-                    const errorMsg = { es: "No hay opciones disponibles y la siguiente escena no está definida.", ja: "選択肢がなく、次のシーンが定義されていません。シナリオデータを確認してください。", en: "No available choices and next scene not defined. Please check the scenario data." }[lang] || "선택지가 없고 다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
+                    const errorMsg = { es: "No hay opciones disponibles y la siguiente escena no está definida.", ja: "選択肢がなく、次のシーンが定義されていません。シナリオデータを確認してください。", en: "No available choices and next scene not defined. Please check the scenario data.", fr: "Aucun choix disponible et la scène suivante n'est pas définie." }[lang] || "선택지가 없고 다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
                     await this.uiManager.showModal(errorMsg, true);
                 }
                 return;
@@ -365,7 +365,7 @@ class GameEngine {
             } else {
                 // 다음 씬이 없으면 오류 메시지
                 const lang = document.documentElement.lang || 'ko';
-                const errorMsg = { es: "Siguiente escena no definida. Verifica los datos del escenario.", ja: "次のシーンが定義されていません。シナリオデータを確認してください。", en: "Next scene not defined. Please check the scenario data." }[lang] || "다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
+                const errorMsg = { es: "Siguiente escena no definida. Verifica los datos del escenario.", ja: "次のシーンが定義されていません。シナリオデータを確認してください。", en: "Next scene not defined. Please check the scenario data.", fr: "Scène suivante non définie. Veuillez vérifier les données du scénario." }[lang] || "다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
                 await this.uiManager.showModal(errorMsg, true);
             }
         }
@@ -707,15 +707,15 @@ class GameEngine {
 
         if (hasMixed) {
             // 한영 혼합 입력
-            msg = { es: "Por favor, usa solo coreano o solo inglés. No se permite mezclar.", ja: "韓国語のみ、または英語のみで入力してください。混合は不可です。", en: "Please use only Korean or only English. Mixing is not allowed." }[lang] || "한글과 영문을 섞어서 사용할 수 없습니다.";
+            msg = { es: "Por favor, usa solo coreano o solo inglés. No se permite mezclar.", ja: "韓国語のみ、または英語のみで入力してください。混合は不可です。", en: "Please use only Korean or only English. Mixing is not allowed.", fr: "Veuillez utiliser uniquement le coréen ou uniquement l'anglais. Le mélange n'est pas autorisé." }[lang] || "한글과 영문을 섞어서 사용할 수 없습니다.";
         } else if (hasJamo) {
             // 한글 자모만 입력 (ㄱ, ㅏ 등)
-            msg = { es: "Por favor, ingresa caracteres coreanos completos (ej: 가, no ㄱ).", ja: "完成した韓国語を入力してください。（例：ㄱ → 가）", en: "Please enter complete Korean characters (e.g., 가, not ㄱ)." }[lang] || "완성된 한글을 입력해주세요. (예: ㄱ → 가)";
+            msg = { es: "Por favor, ingresa caracteres coreanos completos (ej: 가, no ㄱ).", ja: "完成した韓国語を入力してください。（例：ㄱ → 가）", en: "Please enter complete Korean characters (e.g., 가, not ㄱ).", fr: "Veuillez entrer des caractères coréens complets (ex : 가, pas ㄱ)." }[lang] || "완성된 한글을 입력해주세요. (예: ㄱ → 가)";
         } else {
             // 일반 유효성 검사
             const nameRegex = hasKorean ? /^[가-힣]{1,6}$/ : /^[a-zA-Z]{1,12}$/;
             if (!nameRegex.test(name)) {
-                msg = { es: "Por favor, ingresa un nombre: 1-12 letras en inglés o 1-6 caracteres coreanos.", ja: "名前を入力してください：英字1〜12文字、または韓国語1〜6文字。", en: "Please enter a name: 1-12 English letters or 1-6 Korean characters." }[lang] || "이름은 한글 1~6자 또는 영문 1~12자로 입력해주세요.";
+                msg = { es: "Por favor, ingresa un nombre: 1-12 letras en inglés o 1-6 caracteres coreanos.", ja: "名前を入力してください：英字1〜12文字、または韓国語1〜6文字。", en: "Please enter a name: 1-12 English letters or 1-6 Korean characters.", fr: "Veuillez entrer un nom : 1-12 lettres anglaises ou 1-6 caractères coréens." }[lang] || "이름은 한글 1~6자 또는 영문 1~12자로 입력해주세요.";
             }
         }
 
@@ -943,40 +943,40 @@ class GameEngine {
                 creditsLayer.innerHTML = `
                     <div id="credits-content">
                         <div class="credits-title">CUPID</div>
-                        <div class="credits-subtitle">${ct({ es: 'Donde cae la flecha de Cupido', ja: 'キューピッドの矢が届く場所', en: 'Where Cupid\'s Arrow Lands', ko: '사랑의 화살이 닿는 곳' })}</div>
+                        <div class="credits-subtitle">${ct({ es: 'Donde cae la flecha de Cupido', ja: 'キューピッドの矢が届く場所', en: 'Where Cupid\'s Arrow Lands', fr: 'Là où la flèche de Cupidon se pose', ko: '사랑의 화살이 닿는 곳' })}</div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
-                            <div class="credits-role">${ct({ es: 'Planificación · Guión', ja: '企画・シナリオ', en: 'Planning · Scenario', ko: '기획 · 시나리오' })}</div>
+                            <div class="credits-role">${ct({ es: 'Planificación · Guión', ja: '企画・シナリオ', en: 'Planning · Scenario', fr: 'Planification · Scénario', ko: '기획 · 시나리오' })}</div>
                             <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', ja: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', en: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', ko: '장현규 · 김유진 · 이상훈' })}</div>
                         </div>
                         <div class="credits-section">
-                            <div class="credits-role">${ct({ es: 'Programación · Dirección', ja: 'プログラミング・演出', en: 'Programming · Direction', ko: '프로그래밍 · 연출' })}</div>
+                            <div class="credits-role">${ct({ es: 'Programación · Dirección', ja: 'プログラミング・演出', en: 'Programming · Direction', fr: 'Programmation · Direction', ko: '프로그래밍 · 연출' })}</div>
                             <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim', ja: 'Hyungyu Jang · Yujin Kim', en: 'Hyungyu Jang · Yujin Kim', ko: '장현규 · 김유진' })}</div>
                         </div>
                         <div class="credits-section">
-                            <div class="credits-role">${ct({ es: 'Arte · Diseño', ja: 'アート・デザイン', en: 'Art · Design', ko: '아트 · 디자인' })}</div>
+                            <div class="credits-role">${ct({ es: 'Arte · Diseño', ja: 'アート・デザイン', en: 'Art · Design', fr: 'Art · Design', ko: '아트 · 디자인' })}</div>
                             <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim', ja: 'Hyungyu Jang · Yujin Kim', en: 'Hyungyu Jang · Yujin Kim', ko: '장현규 · 김유진' })}</div>
                         </div>
                         <div class="credits-section">
-                            <div class="credits-role">${ct({ es: 'Música · Sonido', ja: '音楽・サウンド', en: 'Music · Sound', ko: '음악 · 사운드' })}</div>
+                            <div class="credits-role">${ct({ es: 'Música · Sonido', ja: '音楽・サウンド', en: 'Music · Sound', fr: 'Musique · Son', ko: '음악 · 사운드' })}</div>
                             <div class="credits-name">${ct({ es: 'Hyungyu Jang', ja: 'Hyungyu Jang', en: 'Hyungyu Jang', ko: '장현규' })}</div>
                         </div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
-                            <div class="credits-role">${ct({ es: 'Personajes', ja: '登場人物', en: 'Characters', ko: '등장인물' })}</div>
-                            <div class="credits-name">${ct({ es: 'Seoyeon · Yuna · Dain', ja: 'ソヨン · ユナ · ダイン', en: 'Seoyeon · Yuna · Dain', ko: '서연 · 유나 · 다인' })}</div>
-                            <div class="credits-name">${ct({ es: 'Enfermera · Profesora', ja: '保健先生 · 担任先生', en: 'School Nurse · Homeroom Teacher', ko: '보건선생님 · 담임선생님' })}</div>
+                            <div class="credits-role">${ct({ es: 'Personajes', ja: '登場人物', en: 'Characters', fr: 'Personnages', ko: '등장인물' })}</div>
+                            <div class="credits-name">${ct({ es: 'Seoyeon · Yuna · Dain', ja: 'ソヨン · ユナ · ダイン', en: 'Seoyeon · Yuna · Dain', fr: 'Seoyeon · Yuna · Dain', ko: '서연 · 유나 · 다인' })}</div>
+                            <div class="credits-name">${ct({ es: 'Enfermera · Profesora', ja: '保健先生 · 担任先生', en: 'School Nurse · Homeroom Teacher', fr: 'Infirmière Scolaire · Professeur Principal', ko: '보건선생님 · 담임선생님' })}</div>
                         </div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
-                            <div class="credits-role">${ct({ es: 'Producción', ja: '制作', en: 'Production', ko: '제작' })}</div>
+                            <div class="credits-role">${ct({ es: 'Producción', ja: '制作', en: 'Production', fr: 'Produit par', ko: '제작' })}</div>
                             <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim', ja: 'Hyungyu Jang · Yujin Kim', en: 'Hyungyu Jang · Yujin Kim', ko: '장현규 · 김유진' })}</div>
                         </div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
-                            <div class="credits-role">${ct({ es: 'Agradecimientos Especiales', ja: 'スペシャルサンクス', en: 'Special Thanks', ko: 'Special Thanks' })}</div>
-                            <div class="credits-name">${ct({ es: '¡Gracias por jugar!', ja: 'プレイしていただきありがとうございます！', en: 'Thank you for playing!', ko: '플레이해 주신 여러분께' })}</div>
-                            <div class="credits-name">${ct({ es: 'Lo apreciamos sinceramente.', ja: '心より感謝申し上げます。', en: 'We sincerely appreciate it.', ko: '진심으로 감사드립니다' })}</div>
+                            <div class="credits-role">${ct({ es: 'Agradecimientos Especiales', ja: 'スペシャルサンクス', en: 'Special Thanks', fr: 'Remerciements Spéciaux', ko: 'Special Thanks' })}</div>
+                            <div class="credits-name">${ct({ es: '¡Gracias por jugar!', ja: 'プレイしていただきありがとうございます！', en: 'Thank you for playing!', fr: 'Merci d\'avoir joué !', ko: '플레이해 주신 여러분께' })}</div>
+                            <div class="credits-name">${ct({ es: 'Lo apreciamos sinceramente.', ja: '心より感謝申し上げます。', en: 'We sincerely appreciate it.', fr: 'Nous vous en sommes sincèrement reconnaissants.', ko: '진심으로 감사드립니다' })}</div>
                         </div>
                         <div class="credits-spacer"></div>
                         <div class="credits-final">Cupid © 2026 ArcherLab</div>

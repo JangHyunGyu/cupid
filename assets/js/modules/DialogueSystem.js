@@ -130,7 +130,7 @@ class DialogueSystem {
 
         // 이 캐릭터가 플레이어 이름을 알고 있는지 확인
         const nameKnown = charKey && this.stateManager.getFlag(`knows_name_${charKey.toLowerCase()}`);
-        const defaultTitle = { es: "Estudiante Transferido", ja: "転校生", en: "Transfer Student" }[lang] || "전학생";
+        const defaultTitle = { es: "Estudiante Transferido", ja: "転校生", en: "Transfer Student", fr: "Élève transféré" }[lang] || "전학생";
 
         let processedText = text;
 
@@ -169,11 +169,12 @@ class DialogueSystem {
             en: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Teacher", Nurse: "Nurse" },
             es: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Profesora", Nurse: "Enfermera" },
             ja: { Seoyeon: "ソヨン", Yuna: "ユナ", Dain: "ダイン", Teacher: "担任先生", Nurse: "保健先生" },
+            fr: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Professeur Principal", Nurse: "Infirmière Scolaire" },
             ko: { Seoyeon: "서연", Yuna: "유나", Dain: "다인", Teacher: "담임선생님", Nurse: "보건선생님" }
         };
         const charNames = charNamesByLang[lang] || charNamesByLang.ko;
 
-        let listStr = { es: "\n\n[Estado de Afinidad]\n", ja: "\n\n[好感度状況]\n", en: "\n\n[Affinity Status]\n" }[lang] || "\n\n[호감도 현황]\n";
+        let listStr = { es: "\n\n[Estado de Afinidad]\n", ja: "\n\n[好感度状況]\n", en: "\n\n[Affinity Status]\n", fr: "\n\n[État d'Affinité]\n" }[lang] || "\n\n[호감도 현황]\n";
 
         for (const [key, name] of Object.entries(charNames)) {
             // 만난 적 없는 캐릭터는 건너뛰기

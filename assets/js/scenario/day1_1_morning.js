@@ -763,8 +763,8 @@ Object.assign(SCENARIO[1], {
             "fr": {
                 "name": "Seoyeon",
                 "text": "\"Oh, maintenant que j'y pense, on a juste échangé nos noms sans vraiment discuter ! Si tu as des questions, n'hésite pas à demander !\"",
-                "context": "Walking through the school hallway together with the transfer student protagonist, having a light conversation. Keep the conversation going until it naturally concludes. When the conversation ends, Seoyeon will start showing the protagonist around the school facilities. In the final turn only, mention that you'll start moving or begin the tour.",
-                "personality": "Kind, caring, and responsible student council president. She's developing feelings for the protagonist."
+                "context": "En train de marcher dans le couloir de l'école avec l'élève transféré protagoniste, en ayant une conversation légère. Continuez la conversation jusqu'à ce qu'elle se termine naturellement. Quand la conversation se termine, Seoyeon commencera à faire visiter les installations de l'école au protagoniste. Uniquement au dernier tour, mentionnez que vous allez vous mettre en route ou commencer la visite.",
+                "personality": "Présidente du conseil des élèves gentille, attentionnée et responsable. Elle développe des sentiments pour le protagoniste."
             }
         }
     },

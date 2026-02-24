@@ -56,6 +56,10 @@
                     es: {
                         btn: "Compartir",
                         msg: "Este juego funciona mejor en Safari.<br><br>Por favor, toque el botón <b>[ {btn} ]</b><br>en la parte inferior derecha y seleccione<br><b>[Abrir en Safari]</b>."
+                    },
+                    fr: {
+                        btn: "Partager",
+                        msg: "Ce jeu fonctionne mieux dans Safari.<br><br>Appuyez sur le bouton <b>[ {btn} ]</b> en bas à droite<br>et sélectionnez <b>[Ouvrir dans Safari]</b>."
                     }
                 };
 
