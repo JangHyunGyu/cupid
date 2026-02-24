@@ -287,16 +287,20 @@ class FreeTalkSystem {
         const charStats = this.stateManager.stats[charKey] || { affinity: 0 };
 
         // 🔧 프롬프트 데이터 가져오기 (prompts.js에서)
-        const promptData = window.getPromptData ? window.getPromptData(isEn, this.stateManager.playerName) : {};
+        const promptData = window.getPromptData ? window.getPromptData(lang !== 'ko', this.stateManager.playerName) : {};
 
         // 연인 관계 가이드라인
         let datingGuideline = "";
         const isDatingCurrent = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
 
         if (isDatingCurrent) {
-            datingGuideline = isEn ?
-                `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.` :
-                `\n- 특별 지침: 당신은 현재 사용자와 사귀는 사이입니다. 매우 친밀하고 애정 어린 호칭을 사용하세요.`;
+            datingGuideline = ({
+                ko: `\n- 특별 지침: 당신은 현재 사용자와 사귀는 사이입니다. 매우 친밀하고 애정 어린 호칭을 사용하세요.`,
+                en: `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.`,
+                es: `\n- ESPECIAL: Actualmente estás SALIENDO con el usuario. Usa apodos extremadamente íntimos y cariñosos.`,
+                ja: `\n- 特別指示: あなたは現在ユーザーと付き合っています。非常に親密で愛情のこもった呼び方を使ってください。`,
+                fr: `\n- SPÉCIAL : Vous sortez actuellement avec l'utilisateur. Utilisez des surnoms extrêmement intimes et affectueux.`
+            }[lang] || `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.`);
 
             // 양다리 감지
             const otherDatingChars = Object.keys(this.charNameMap).filter(name => {
@@ -305,9 +309,13 @@ class FreeTalkSystem {
             });
 
             if (otherDatingChars.length > 0) {
-                datingGuideline += isEn ?
-                    `\n- JEALOUSY: You noticed the user is also dating others (${otherDatingChars.join(", ")}).` :
-                    `\n- 질투 지침: 사용자가 다른 사람들(${otherDatingChars.join(", ")})과도 사귀고 있습니다.`;
+                datingGuideline += ({
+                    ko: `\n- 질투 지침: 사용자가 다른 사람들(${otherDatingChars.join(", ")})과도 사귀고 있습니다.`,
+                    en: `\n- JEALOUSY: You noticed the user is also dating others (${otherDatingChars.join(", ")}).`,
+                    es: `\n- CELOS: Has notado que el usuario también está saliendo con otros (${otherDatingChars.join(", ")}).`,
+                    ja: `\n- 嫉妬指示: ユーザーが他の人(${otherDatingChars.join("、")})とも付き合っていることに気づいています。`,
+                    fr: `\n- JALOUSIE : Vous avez remarqué que l'utilisateur sort aussi avec d'autres (${otherDatingChars.join(", ")}).`
+                }[lang] || `\n- JEALOUSY: You noticed the user is also dating others (${otherDatingChars.join(", ")}).`);
             }
         }
 
