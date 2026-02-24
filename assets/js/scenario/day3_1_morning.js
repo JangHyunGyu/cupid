@@ -6325,7 +6325,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Infirmière Scolaire",
-                "text": "\"Sorry to interrupt, teacher. I'm here to hand out health surveys.\""
+                "text": "\"Excusez-moi de vous interrompre, professeur. Je viens distribuer les questionnaires de santé.\""
             }
         }
     },
@@ -6363,7 +6363,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*The nurse pauses in front of me while handing out surveys. Her fingers lightly brush against my hand.*"
+                "text": "*L'infirmière s'arrête devant moi en distribuant les questionnaires. Ses doigts effleurent légèrement ma main.*"
             }
         }
     },
@@ -6394,7 +6394,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Infirmière Scolaire",
-                "text": "*Without anyone noticing, she slips a small note between the survey pages. 'Come to the nurse's office at lunch. I've prepared something special 💋'*"
+                "text": "*Sans que personne ne le remarque, elle glisse un petit mot entre les pages du questionnaire. 'Viens à l'infirmerie à midi. Je t'ai préparé quelque chose de spécial 💋'*"
             }
         }
     },
@@ -6425,7 +6425,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Infirmière Scolaire",
-                "text": "*She hands me the survey and places a band-aid on the back of my hand* \"...You don't have a wound? Well... it's teacher's mark.\""
+                "text": "*Elle me tend le questionnaire et colle un pansement sur le dos de ma main* \"...Tu n'as pas de blessure ? Eh bien... c'est la marque de l'infirmière.\""
             }
         }
     },
@@ -6450,7 +6450,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*The nurse smiles gently as she hands me the survey and moves on.*"
+                "text": "*L'infirmière sourit doucement en me tendant le questionnaire et passe à l'élève suivant.*"
             }
         }
     },
@@ -6476,7 +6476,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*The nurse leaves the classroom. None of the other students noticed a thing.*"
+                "text": "*L'infirmière quitte la salle de classe. Aucun autre élève n'a rien remarqué.*"
             }
         }
     },
@@ -6511,7 +6511,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Break time. I check my phone — there are messages about weekend plans.*"
+                "text": "*Pause. Je regarde mon téléphone — il y a des messages concernant les projets du week-end.*"
             }
         }
     },
@@ -6606,9 +6606,9 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "*Message* 'Hey {name}! Want to check out that new café this Saturday? I really want to go with you! ☕'",
+                "text": "*Message* 'Hé {name} ! Tu veux aller voir ce nouveau café samedi ? J'ai vraiment envie d'y aller avec toi ! ☕'",
                 "choices": [
-                    "Sure! Let's go!",
+                    "Bien sûr ! Allons-y !",
                     "Désolé, je suis occupé ce week-end"
                 ]
             }
@@ -6637,7 +6637,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "*Instant reply* 'Really?! See you Saturday then! You can look forward to it! ♡'"
+                "text": "*Réponse instantanée* 'Vraiment ?! Alors à samedi ! Tu peux t'y attendre ! ♡'"
             }
         }
     },
@@ -6664,7 +6664,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Seoyeon",
-                "text": "*Reply after a long pause* '...That's okay! Maybe next time!'"
+                "text": "*Réponse après une longue pause* '...C'est pas grave ! Peut-être la prochaine fois !'"
             }
         }
     },
@@ -6759,10 +6759,10 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Yuna",
-                "text": "*Message* '...Saturday night. 8 PM. The warehouse behind school. Come if you want the truth. Alone.'",
+                "text": "*Message* '...Samedi soir. 20h. L'entrepôt derrière l'école. Viens si tu veux la vérité. Seul.'",
                 "choices": [
-                    "Got it, I'll be there",
-                    "That's creepy, no thanks"
+                    "Compris, j'y serai",
+                    "C'est flippant, non merci"
                 ]
             }
         }
@@ -6790,7 +6790,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Yuna",
-                "text": "*Reply* '...Thank you. You won't regret it.'"
+                "text": "*Réponse* '...Merci. Tu ne le regretteras pas.'"
             }
         }
     },
@@ -6817,7 +6817,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Yuna",
-                "text": "*Read. No reply.*"
+                "text": "*Lu. Pas de réponse.*"
             }
         }
     },
@@ -6912,10 +6912,10 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Dain",
-                "text": "*Message* '{name}!!! Wanna work out with me at the gym on Saturday?! See you at 9!! 💪🔥'",
+                "text": "*Message* '{name} !!! Tu veux t'entraîner avec moi à la salle samedi ?! On se voit à 9h !! 💪🔥'",
                 "choices": [
-                    "Sure! See you Saturday!",
-                    "Working out isn't really my thing..."
+                    "Bien sûr ! À samedi !",
+                    "Le sport, c'est pas trop mon truc..."
                 ]
             }
         }
@@ -6943,7 +6943,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Dain",
-                "text": "*Reply in 0.5 seconds* 'AWESOME!! Don't forget your gym clothes!! 🏃‍♂️'"
+                "text": "*Réponse en 0,5 seconde* 'GÉNIAL !! N'oublie pas tes vêtements de sport !! 🏃‍♂️'"
             }
         }
     },
@@ -6970,7 +6970,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Dain",
-                "text": "*Reply* 'Aww, too bad! But let's definitely do it next time!'"
+                "text": "*Réponse* 'Oh non, dommage ! Mais la prochaine fois, c'est sûr !'"
             }
         }
     },
@@ -7065,10 +7065,10 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Infirmière Scolaire",
-                "text": "*Message* 'Are you free this Sunday evening? I know a great restaurant I'd love to take you to... 😉'",
+                "text": "*Message* 'Tu es libre dimanche soir ? Je connais un super restaurant où j'aimerais t'emmener... 😉'",
                 "choices": [
-                    "Sure! I'd love to go!",
-                    "Sorry, I have plans on Sunday..."
+                    "Bien sûr ! J'adorerais y aller !",
+                    "Désolé, j'ai des projets dimanche..."
                 ]
             }
         }
@@ -7096,7 +7096,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Infirmière Scolaire",
-                "text": "*Reply* 'Great. I'll be waiting. Sunday at 7 PM 💋'"
+                "text": "*Réponse* 'Parfait. Je t'attendrai. Dimanche à 19h 💋'"
             }
         }
     },
@@ -7123,7 +7123,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Infirmière Scolaire",
-                "text": "*Reply* 'That's a shame... Maybe next time then.'"
+                "text": "*Réponse* 'C'est dommage... Peut-être la prochaine fois alors.'"
             }
         }
     },
@@ -7218,10 +7218,10 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*Message* '{name}, there's a special exhibition at the city museum this Sunday. Want to go together? I'll give you extra credit too lol'",
+                "text": "*Message* '{name}, il y a une exposition spéciale au musée municipal ce dimanche. Tu veux y aller ensemble ? Je te donnerai des points bonus en plus haha'",
                 "choices": [
-                    "Sure! I'll definitely be there!",
-                    "Museums aren't really my thing..."
+                    "Bien sûr ! J'y serai sans faute !",
+                    "Les musées, c'est pas trop mon truc..."
                 ]
             }
         }
@@ -7249,7 +7249,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*Reply* 'Great! Let's meet Sunday at 2 PM. It'll be fun!'"
+                "text": "*Réponse* 'Super ! On se retrouve dimanche à 14h. Ça va être chouette !'"
             }
         }
     },
@@ -7276,7 +7276,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*Reply* 'Alright. Maybe next time then.'"
+                "text": "*Réponse* 'D'accord. Peut-être une prochaine fois alors.'"
             }
         }
     },
@@ -7503,7 +7503,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*...Wait. Did I just make plans with multiple people this weekend? I'm starting to feel uneasy.*"
+                "text": "*...Attends. Est-ce que je viens de prendre des rendez-vous avec plusieurs personnes ce week-end ? Je commence à me sentir mal à l'aise.*"
             }
         }
     },
@@ -7529,7 +7529,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Classes began... and before I knew it, it was lunchtime.*"
+                "text": "*Les cours ont repris... et avant que je m'en rende compte, c'était l'heure du déjeuner.*"
             }
         }
     }

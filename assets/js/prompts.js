@@ -685,6 +685,39 @@ window.buildSystemPrompt = buildSystemPrompt;
  * AI 응답 실패 시 사용할 캐릭터별 기본 대답을 반환합니다.
  */
 function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerName) {
+    // Check for French language
+    const currentLang = (typeof document !== 'undefined' && document.documentElement && document.documentElement.lang) || '';
+    const isFr = currentLang === 'fr';
+
+    if (isFr) {
+        if (charKey === "Seoyeon") {
+            if (isDating) return isRemote ? "Mon chéri, pardon ! Ma batterie est presque morte... Je t'enverrai un message plus tard ! Je t'aime ! ❤️" : "Mon chéri, pardon... Je suis un peu fatiguée aujourd'hui, je n'arrive pas à trouver quoi dire. On en reparle plus tard. Je t'aime ! ❤️";
+            if (affinity > 50) return isRemote ? "Oh non, mon téléphone fait des siennes... Je te rappellerai plus tard sans faute ! Pardon ! 🙏" : "Hmm, pardon. J'ai tellement de choses en tête que je n'arrive pas à me concentrer sur notre conversation. On en reparle la prochaine fois ! 🙏";
+            return isRemote ? "Ah, pardon. Je suis un peu occupée avec mes messages en ce moment. On se reparle plus tard." : "Ah, pardon. Je ne suis pas vraiment d'humeur à parler en ce moment. On discute plus tard.";
+        }
+        if (charKey === "Yuna") {
+            if (isDating) return isRemote ? "...Mon chéri, le signal s'affaiblit. Les ténèbres m'appellent. Je te recontacterai plus tard, c'est promis. 💜" : "...Mon chéri, les ombres sont trop épaisses en ce moment. J'ai besoin d'un moment pour clarifier mes pensées. On se revoit plus tard. 💜";
+            if (affinity > 50) return isRemote ? "...Soudain, l'énergie me semble étrange. Je te recontacterai plus tard. Je n'oublierai pas... ta lumière. 🖤" : "...Soudain, l'énergie me semble étrange. Je n'arrive pas à entendre ta voix clairement en ce moment. À plus tard. 🖤";
+            return isRemote ? "...Les ombres s'épaississent. Je vais raccrocher." : "...Les ombres s'épaississent. Je vais rester silencieuse un moment.";
+        }
+        if (charKey === "Dain") {
+            if (isDating) return isRemote ? "Mon chéri ! Je suis vraiment désolée mais je dois filer à l'entraînement ! Je t'envoie un message plus tard, d'accord ? Je t'aime ! 🧡" : "Mon chéri ! Pardon, j'étais dans la lune pendant une seconde ! J'ai la tête qui tourne... on en reparle plus tard, d'accord ? Je t'aime ! 🧡";
+            if (affinity > 50) return isRemote ? "Pardon, pardon ! Ma mère m'appelle sur l'autre ligne ! Je t'envoie un message plus tard ! 🏃‍♀️" : "Oups, pardon ! Je ne sais plus trop quoi dire ! On fait une pause et on en reparle plus tard ! 🏃‍♀️";
+            return isRemote ? "Oups, je dois aller à l'entraînement maintenant ! On se texte plus tard !" : "Oups, je suis un peu distraite en ce moment ! On en reparle plus tard !";
+        }
+        if (charKey === "Teacher") {
+            if (isDating) return isRemote ? `${playerName}... pardon. J'ai un appel urgent du bureau. Je te recontacterai plus tard quand on sera seuls. Attends-moi. 💕` : `${playerName}... pardon. Je suis un peu débordée par le travail aujourd'hui. Je ne pense pas pouvoir te donner toute mon attention en ce moment. Attends-moi. 💕`;
+            if (affinity > 50) return isRemote ? `Oh, pardon ${playerName}. Un dossier urgent est arrivé... Je t'envoie un message plus tard. Pardon. 📝` : `Oh, pardon ${playerName}. J'ai beaucoup de choses en tête aujourd'hui. Je ne pense pas pouvoir continuer cette conversation correctement en ce moment. 📝`;
+            return isRemote ? "Ah, pardon. J'ai une réunion du corps enseignant maintenant... Contacte-moi plus tard." : "Ah, pardon. Je suis un peu fatiguée aujourd'hui. Arrêtons-nous là pour le moment.";
+        }
+        if (charKey === "Nurse") {
+            if (isDating) return isRemote ? "Mon chéri, pardon ! Je crois que je vais être occupée avec un patient. On se retrouve ce soir pour notre moment à nous ? À tout à l'heure. 💋" : "Mon chéri, pardon... J'ai un peu la tête qui tourne aujourd'hui. On s'arrête là et on se retrouve ce soir pour notre moment à nous ? 💋";
+            if (affinity > 50) return isRemote ? "Pardon, mon élève préféré. Un patient urgent vient d'arriver... Si tu m'envoies un message plus tard, je te promets que ce sera plus amusant. 😉" : "Pardon, mon élève préféré. Je suis un peu dans les nuages aujourd'hui. On s'arrête là et on en reparle plus tard ? 😉";
+            return isRemote ? "Oh, un autre élève m'appelle. Contacte-moi plus tard, nouvel élève." : "Oh là là, je suis un peu distraite aujourd'hui. On en reparle plus tard, nouvel élève.";
+        }
+        return "Pardon, je suis un peu occupé(e) en ce moment. On en reparle plus tard !";
+    }
+
     if (isEn) {
         if (charKey === "Seoyeon") {
             if (isDating) return isRemote ? "Honey, sorry! My battery is dying... I'll text you first later! Love you! ❤️" : "Honey, sorry... I'm a bit tired today, so I can't think of what to say. Let's talk more later. Love you! ❤️";
