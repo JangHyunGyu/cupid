@@ -39,7 +39,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*The lunch bell rings. It's Friday... Tomorrow is the weekend.*"
+                "text": "*La cloche du déjeuner sonne. C'est vendredi... Demain, c'est le week-end.*"
             }
         }
     },
@@ -93,7 +93,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*As I try to get up from my desk, I feel multiple eyes on me.*"
+                "text": "*Alors que j'essaie de me lever de mon bureau, je sens plusieurs regards posés sur moi.*"
             }
         }
     },
@@ -127,7 +127,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Uh... wait, why is everyone coming this way...?*"
+                "text": "*Euh... attendez, pourquoi tout le monde vient par ici ?*"
             }
         }
     },
@@ -153,7 +153,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*The girls I made plans with are all approaching me at the same time. This doesn't look good...*"
+                "text": "*Les filles avec qui j'ai pris rendez-vous s'approchent toutes en même temps. Ça s'annonce mal...*"
             }
         }
     },
@@ -226,12 +226,12 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Who should I eat with...?*",
+                "text": "*Avec qui je devrais manger ?*",
                 "choices": [
-                    "Have lunch with Yuna",
-                    "Have lunch with Dain",
-                    "Suggest eating together",
-                    "Run away to eat alone"
+                    "Déjeuner avec Yuna",
+                    "Déjeuner avec Dain",
+                    "Proposer de manger ensemble",
+                    "S'enfuir pour manger seul"
                 ]
             }
         }
@@ -348,7 +348,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Suddenly, the classroom fills with tension. Their eyes meeting each other don't look friendly.*"
+                "text": "*Soudain, la salle de classe se remplit de tension. Leurs regards qui se croisent n'ont rien d'amical.*"
             }
         }
     },
@@ -457,13 +457,13 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*This doesn't look good... What should I do?*",
+                "text": "*Ça s'annonce mal... Qu'est-ce que je fais ?*",
                 "choices": [
-                    "Have lunch with Seoyeon",
-                    "Have lunch with Yuna",
-                    "Have lunch with Dain",
-                    "Suggest eating together",
-                    "Run away to eat alone"
+                    "Déjeuner avec Seoyeon",
+                    "Déjeuner avec Yuna",
+                    "Déjeuner avec Dain",
+                    "Proposer de manger ensemble",
+                    "S'enfuir pour manger seul"
                 ]
             }
         }
@@ -534,7 +534,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I can feel the others' expressions harden.*"
+                "text": "*Je sens les expressions des autres se durcir.*"
             }
         }
     },
@@ -592,7 +592,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Yuna leaves the classroom without a word. Her back looks somehow lonely.*"
+                "text": "*Yuna quitte la salle de classe sans un mot. Son dos semble étrangement solitaire.*"
             }
         }
     },
@@ -650,7 +650,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Dain grumbles and goes to her other friends. I'm a bit worried...*"
+                "text": "*Dain ronchonne et va rejoindre ses autres amis. Je suis un peu inquiet...*"
             }
         }
     },
@@ -734,7 +734,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*There's an unusual edge in Seoyeon's voice.*",
+                "text": "*Il y a une tension inhabituelle dans la voix de Seoyeon.*",
                 "choices": [
                     "\"You're the most important to me\"",
                     "\"They're just friends\"",
@@ -926,11 +926,11 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Wait, I already have other plans... What should I do?*",
+                "text": "*Attends, j'ai déjà d'autres plans... Qu'est-ce que je fais ?*",
                 "choices": [
                     "\"How about Sunday?\" (Lie)",
-                    "Be honest",
-                    "Dodge the question"
+                    "Être honnête",
+                    "Éluder la question"
                 ]
             }
         }
@@ -1019,7 +1019,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Seoyeon's eyes turn cold. The atmosphere has frozen.*"
+                "text": "*Les yeux de Seoyeon deviennent froids. L'atmosphère s'est glacée.*"
             }
         }
     },
@@ -1108,7 +1108,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*We finished lunch and sat on a bench behind the school. A gentle breeze is blowing.*"
+                "text": "*Nous avons fini de déjeuner et nous sommes assis sur un banc derrière l'école. Une douce brise souffle.*"
             }
         }
     },
@@ -1212,9 +1212,9 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*The scent of shampoo from Seoyeon's hair. My heart is racing.*",
+                "text": "*L'odeur de shampooing des cheveux de Seoyeon. Mon cœur bat la chamade.*",
                 "choices": [
-                    "*Pat Seoyeon's head*",
+                    "*Caresser la tête de Seoyeon*",
                     "\"I feel the same way\"",
                     "*Rester immobile*"
                 ]
@@ -1331,8 +1331,8 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Sitting side by side with Seoyeon on the bench behind the school, chatting.*",
-                "context": "Sitting with Seoyeon on a bench behind school. She leaned her head on my shoulder and confessed she thinks about me every day. Sweet atmosphere."
+                "text": "*Assis côte à côte avec Seoyeon sur le banc derrière l'école, en train de discuter.*",
+                "context": "Assis avec Seoyeon sur un banc derrière l'école. Elle a posé sa tête sur mon épaule et a avoué qu'elle pense à moi chaque jour. Atmosphère douce."
             }
         }
     },
@@ -1360,7 +1360,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*The bell rings for class. Time with Seoyeon felt magically short.*"
+                "text": "*La cloche sonne pour le cours. Le temps passé avec Seoyeon a semblé magiquement court.*"
             }
         }
     },
@@ -1426,7 +1426,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I decided to go with Yuna.*"
+                "text": "*J'ai décidé d'aller avec Yuna.*"
             }
         }
     },
@@ -1511,7 +1511,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I followed Yuna to the rooftop. Yuna lays down a blanket on the floor and pulls out a lunchbox from her bag.*"
+                "text": "*J'ai suivi Yuna jusqu'au toit. Yuna étale une couverture par terre et sort un bento de son sac.*"
             }
         }
     },
@@ -1598,10 +1598,10 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Two lunch boxes placed side by side. One with a black lid, one with a pink lid. Did Yuna make these herself?*",
+                "text": "*Deux boîtes à déjeuner placées côte à côte. L'une avec un couvercle noir, l'autre avec un couvercle rose. Yuna les a préparées elle-même ?*",
                 "choices": [
                     "\"You made these yourself?\"",
-                    "*Quietly taste it*"
+                    "*Goûter en silence*"
                 ]
             }
         }
@@ -1656,7 +1656,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I take a bite. Surprisingly... it's actually really good!*"
+                "text": "*J'en prends une bouchée. Étonnamment... c'est vraiment bon !*"
             }
         }
     },
@@ -1710,7 +1710,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*After finishing the lunchbox, a gentle breeze makes me drowsy. Yuna suddenly pushes down on my shoulder.*"
+                "text": "*Après avoir fini le bento, une douce brise me rend somnolent. Yuna appuie soudain sur mon épaule.*"
             }
         }
     },
@@ -1772,7 +1772,7 @@ Object.assign(SCENARIO[3], {
                 "name": "Yuna",
                 "text": "\"...Lie down. On my lap.\"",
                 "choices": [
-                    "*Lie on Yuna's lap*",
+                    "*S'allonger sur les genoux de Yuna*",
                     "\"It's okay, not yet...\""
                 ]
             }
@@ -1893,8 +1893,8 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Lying on Yuna's lap, looking up at the sky from the rooftop, chatting.*",
-                "context": "Lying on Yuna's lap on the rooftop. Yuna made a homemade lunchbox and is stroking my hair. Quiet, peaceful atmosphere."
+                "text": "*Allongé sur les genoux de Yuna, regardant le ciel depuis le toit, en train de discuter.*",
+                "context": "Allongé sur les genoux de Yuna sur le toit. Yuna a préparé un bento maison et me caresse les cheveux. Atmosphère calme et paisible."
             }
         }
     },
@@ -1960,7 +1960,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I spent a peaceful lunch time with Yuna.*"
+                "text": "*J'ai passé un déjeuner paisible avec Yuna.*"
             }
         }
     },
@@ -2017,7 +2017,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*There's thorns in Yuna's words.*",
+                "text": "*Il y a des épines dans les mots de Yuna.*",
                 "choices": [
                     "\"You're special to me\"",
                     "\"I try to be nice to everyone\"",
@@ -2168,7 +2168,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Yuna's eyes flashed eerily for a moment... That was a joke, right?*"
+                "text": "*Les yeux de Yuna ont brillé de façon sinistre un instant... C'était une blague, non ?*"
             }
         }
     },
@@ -2234,7 +2234,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I decided to go with Dain.*"
+                "text": "*J'ai décidé d'aller avec Dain.*"
             }
         }
     },
@@ -2347,7 +2347,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Dain glances around and lowers her voice.*"
+                "text": "*Dain jette un coup d'œil autour d'elle et baisse la voix.*"
             }
         }
     },
@@ -2631,7 +2631,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Dain's eyes are different from usual. She's serious.*",
+                "text": "*Les yeux de Dain sont différents de d'habitude. Elle est sérieuse.*",
                 "choices": [
                     "\"You're special, Dain\"",
                     "\"I'm not sure yet\"",
@@ -2750,8 +2750,8 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Sitting side by side with Dain in the cafeteria, chatting. She's shier than usual.*",
-                "context": "Having lunch with Dain. She asked 'What am I to you?' seriously. She's being shy instead of her usual energetic self."
+                "text": "*Assis côte à côte avec Dain à la cantine, en train de discuter. Elle est plus timide que d'habitude.*",
+                "context": "En train de déjeuner avec Dain. Elle m'a demandé « Je suis quoi pour toi ? » sérieusement. Elle est timide au lieu de son énergie habituelle."
             }
         }
     },
@@ -2834,7 +2834,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Tomorrow... I have other plans too...*",
+                "text": "*Demain... j'ai d'autres plans aussi...*",
                 "choices": [
                     "\"Of course!\"",
                     "\"If I have time...\""
@@ -2980,7 +2980,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*A moment of silence. Three pairs of eyes scan each other.*"
+                "text": "*Un moment de silence. Trois paires d'yeux se scrutent mutuellement.*"
             }
         }
     },
@@ -3033,7 +3033,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Lunch in the cafeteria. The atmosphere is unusually tense.*"
+                "text": "*Déjeuner à la cantine. L'atmosphère est inhabituellement tendue.*"
             }
         }
     },
@@ -3159,7 +3159,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*The air freezes rapidly. All eyes are on me.*"
+                "text": "*L'air se glace instantanément. Tous les regards sont braqués sur moi.*"
             }
         }
     },
@@ -3185,7 +3185,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*A suffocating silence fills the air. Seoyeon's hands are trembling, Yuna's eyes darken, and Dain's expression hardens.*"
+                "text": "*Un silence étouffant emplit l'air. Les mains de Seoyeon tremblent, les yeux de Yuna s'assombrissent et l'expression de Dain se durcit.*"
             }
         }
     },
@@ -3391,9 +3391,9 @@ Object.assign(SCENARIO[3], {
                 "name": "Seoyeon",
                 "text": "\"Wait... {name}, did you make promises with all of us?\"",
                 "choices": [
-                    "Apologize honestly",
-                    "Make excuses about different times",
-                    "Run away"
+                    "S'excuser honnêtement",
+                    "Inventer des excuses sur les horaires",
+                    "S'enfuir"
                 ]
             }
         }
@@ -3584,7 +3584,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I hurriedly finished my food and escaped. That was the worst choice.*"
+                "text": "*J'ai fini mon repas en vitesse et je me suis échappé. C'était le pire choix.*"
             }
         }
     },
@@ -3611,7 +3611,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Lunch ended in an awkward atmosphere. I'm worried about the weekend...*"
+                "text": "*Le déjeuner s'est terminé dans une atmosphère gênée. Je suis inquiet pour le week-end...*"
             }
         }
     },
@@ -3665,7 +3665,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I escaped the classroom as if running away. I think I heard sighs behind me...*"
+                "text": "*Je me suis échappé de la classe comme si je fuyais. J'ai cru entendre des soupirs derrière moi...*"
             }
         }
     },
@@ -3746,14 +3746,14 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*It's lunch time. Who should I eat with?*",
+                "text": "*C'est l'heure du déjeuner. Avec qui devrais-je manger ?*",
                 "choices": [
-                    "Eat with Seoyeon",
-                    "Eat with Yuna",
-                    "Eat with Dain",
-                    "Visit the nurse's office",
-                    "Find the homeroom teacher",
-                    "Eat alone"
+                    "Manger avec Seoyeon",
+                    "Manger avec Yuna",
+                    "Manger avec Dain",
+                    "Aller à l'infirmerie",
+                    "Chercher la professeure principale",
+                    "Manger seul"
                 ]
             }
         }
@@ -3782,7 +3782,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I headed to the nurse's office during lunch. The teacher is eating a sandwich at her desk.*"
+                "text": "*Je me suis dirigé vers l'infirmerie pendant le déjeuner. L'infirmière mange un sandwich à son bureau.*"
             }
         }
     },
@@ -3874,8 +3874,8 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Having lunch together in the nurse's office. My heart races at the secretive atmosphere.*",
-                "context": "Having lunch alone with the school nurse in her office. She locked the door. It's like a secret date. The thrill of a forbidden love."
+                "text": "*Déjeuner ensemble dans l'infirmerie. Mon cœur s'emballe dans cette atmosphère secrète.*",
+                "context": "En train de déjeuner seul avec l'infirmière scolaire dans son bureau. Elle a fermé la porte à clé. C'est comme un rendez-vous secret. Le frisson d'un amour interdit."
             }
         }
     },
@@ -3936,7 +3936,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I visited the teachers' office during lunch. The teacher is having coffee alone.*"
+                "text": "*Je suis allé au bureau des professeurs pendant le déjeuner. La professeure boit un café toute seule.*"
             }
         }
     },
@@ -4028,8 +4028,8 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Having lunch with the homeroom teacher in the teachers' office.*",
-                "context": "Having lunch alone with the homeroom teacher in her office. She shyly closed the door. Secret date atmosphere."
+                "text": "*En train de déjeuner avec la professeure principale dans le bureau des professeurs.*",
+                "context": "En train de déjeuner seul avec la professeure principale dans son bureau. Elle a timidement fermé la porte. Atmosphère de rendez-vous secret."
             }
         }
     },
@@ -4186,7 +4186,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*No special plans... I'll just have a normal lunch today.*"
+                "text": "*Pas de plans particuliers... Je vais juste déjeuner normalement aujourd'hui.*"
             }
         }
     },
@@ -4212,7 +4212,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I hear laughter around me. Everyone looks happy with their friends.*"
+                "text": "*J'entends des rires autour de moi. Tout le monde a l'air heureux avec ses amis.*"
             }
         }
     },
@@ -4239,7 +4239,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I quietly ate lunch alone. What should I do this weekend...*"
+                "text": "*J'ai mangé tranquillement tout seul. Qu'est-ce que je vais faire ce week-end...*"
             }
         }
     }
