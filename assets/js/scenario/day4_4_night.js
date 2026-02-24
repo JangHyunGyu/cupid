@@ -37,6 +37,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*家に帰ってきた。ベッドに横になると、今日の記憶がフィルムのように駆け巡る。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je suis rentré. Allongé dans mon lit, les souvenirs d'aujourd'hui défilent comme un film.*"
             }
         }
     },
@@ -87,6 +91,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "システム",
                 "text": ""
+            },
+            "fr": {
+                "name": "Système",
+                "text": ""
             }
         }
     },
@@ -112,6 +120,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*夜10時。ユナからメッセージが来た。「学校の裏門。今すぐ来て。」*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*22 heures. Un message de Yuna. 'Portail arrière de l'école. Viens maintenant.'*"
             }
         }
     },
@@ -135,6 +147,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*心臓がドキドキする。ユナが言っていた「真実」…ついにわかるのか。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Mon cœur bat la chamade. La 'vérité' dont Yuna parlait... vais-je enfin la découvrir ?*"
             }
         }
     },
@@ -159,6 +175,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…来たんだ。遅れると思ってた。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Tu es venu. Je pensais que tu serais en retard.\\\""
             }
         }
     },
@@ -183,6 +203,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*学校の裏門。ユナが街灯の下に立っていた。表情がいつもより硬い。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Le portail arrière de l'école. Yuna se tenait sous un réverbère. Son expression semblait plus déterminée que d'habitude.*"
             }
         }
     },
@@ -207,6 +231,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…中に入る前に、まず見てほしいものがある。こっちに来て。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Avant d'entrer, il y a quelque chose que tu dois voir. Suis-moi par ici.\\\""
             }
         }
     },
@@ -231,6 +259,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナが校舎の裏手に僕を連れて行った。街灯もない暗い角。懐中電灯が古いコンクリートの外壁を照らすと――ひびが見えた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna m'a conduit à l'arrière du bâtiment scolaire. Un coin sombre sans éclairage. Quand sa lampe torche a illuminé le vieux mur extérieur en béton — j'ai vu la fissure.*"
             }
         }
     },
@@ -255,6 +287,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*「ひび」という言葉では足りなかった。外壁の一面に沿って縦に長く、腕の太さほどに口を開いた亀裂が続いていた。あちこちにコンクリートの破片がすでに剥落した跡も見える。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*'Fissure' était un mot trop faible. Le long d'un côté du mur extérieur, une crevasse large comme un avant-bras s'étendait verticalement de haut en bas. Des morceaux de béton s'étaient déjà détachés à plusieurs endroits.*"
             }
         }
     },
@@ -279,6 +315,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"これ…いつからこんなに？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Ça... depuis quand c'est comme ça ?\\\""
             }
         }
     },
@@ -303,6 +343,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"少なくとも3年。でも学校はずっと修繕を先延ばしにしてきた。生徒がここに来られないように封鎖して。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Au moins trois ans. Mais l'école n'a cessé de repousser les réparations. Ils ont interdit aux élèves de venir ici.\\\""
             }
         }
     },
@@ -327,6 +371,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"この建物、建設当初から問題があった。設計通りに施工されてなかったんだ。鉄筋の間隔、コンクリートの配合比…全部基準以下だった。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Ce bâtiment avait des problèmes dès sa construction. Il n'a pas été construit selon les plans. L'espacement des armatures, le dosage du béton... tout était en dessous des normes.\\\""
             }
         }
     },    
@@ -351,6 +399,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…正直なの、好きだよ。大丈夫、私がそばにいるから。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...J'aime ta franchise. Ça va — je suis juste là, à côté de toi.\\\""
             }
         }
     },
@@ -375,6 +427,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"…それをどうやって知ったの？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"...Comment tu sais ça ?\\\""
             }
         }
     },
@@ -399,6 +455,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"施工業者は『漢進建設』。財団の理事長の義弟が代表を務める会社。工事費15億のうち7億がどこに消えたか知ってる？\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"L'entrepreneur était 'Hanjin Construction.' Une entreprise dont le PDG est le beau-frère du président de la fondation. Tu sais où sont passés 700 millions sur les 1,5 milliard de wons de coûts de construction ?\\\""
             }
         }
     },
@@ -423,6 +483,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*胸が冷たくなった。まさか…*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Mon sang s'est glacé. Ce n'est pas possible...*"
             }
         }
     },
@@ -447,6 +511,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"財団の口座へ。工事費を横領して手抜き工事をしたんだ。この亀裂がその証拠。学校の建物全体が実は危険な状態にある。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Sur les comptes de la fondation. Ils ont détourné les fonds de construction et bâclé les travaux. Cette fissure en est la preuve. Tout le bâtiment scolaire est en réalité dangereux.\\\""
             }
         }
     },
@@ -471,6 +539,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*亀裂をもう一度見た。単なる老朽化じゃなかった。これは誰かの欲が残した跡だった。何百人もの生徒が毎日この建物の中にいるという事実が、急に恐ろしく感じられた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ai regardé la fissure à nouveau. Ce n'était pas un simple vieillissement. C'était la trace laissée par l'avidité de quelqu'un. Le fait que des centaines d'élèves se trouvaient dans ce bâtiment chaque jour m'a soudain paru terrifiant.*"
             }
         }
     },
@@ -528,6 +600,14 @@ Object.assign(SCENARIO[4], {
                     "\"…これを知りながら学校が隠したの？許せない。\"",
                     "\"…これ、僕たちが関わっていいものなの？\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je n'arrivais pas à croire que c'était réel.*",
+                "choices": [
+                    "\\\"...L'école le savait et l'a caché ? C'est impardonnable.\\\"",
+                    "\\\"...On devrait vraiment s'en mêler ?\\\""
+                ]
             }
         }
     },
@@ -552,6 +632,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…私も最初はそうだった。でも怒りだけじゃ足りない。だから証拠が必要だった。地下にある。ついてきて。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...C'est ce que j'ai ressenti au début aussi. Mais la colère seule ne suffit pas. C'est pour ça que j'avais besoin de preuves. C'est en bas. Suis-moi.\\\""
             }
         }
     },
@@ -576,6 +660,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…怖いのは当然だよ。私も1年間そうだった。でも、もう知ってしまったじゃない。知らないふりができる？\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Avoir peur, c'est normal. J'ai ressenti la même chose pendant un an. Mais maintenant tu sais. Tu peux faire semblant de ne rien savoir ?\\\""
             }
         }
     },    
@@ -600,6 +688,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナの言葉が胸の奥に刺さった。知らないふりはできなかった。もうこの亀裂を自分の目で見てしまったから。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Les mots de Yuna m'ont frappé en plein cœur. Je ne pouvais pas faire semblant de ne rien savoir. J'avais déjà vu cette fissure de mes propres yeux.*"
             }
         }
     },
@@ -624,6 +716,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…今日見せたいものがある。覚悟はできてる？\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...J'ai quelque chose à te montrer aujourd'hui. Tu es prêt ?\\\""
             }
         }
     },
@@ -681,6 +777,14 @@ Object.assign(SCENARIO[4], {
                     "\"当然だよ。そのために来たんだから。\"",
                     "\"…正直、ちょっと怖いかも。\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Le regard de Yuna est grave.*",
+                "choices": [
+                    "\\\"Bien sûr. C'est pour ça que je suis venu.\\\"",
+                    "\\\"...Honnêtement, j'ai un peu peur.\\\""
+                ]
             }
         }
     },
@@ -705,6 +809,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…いいね。ついてきて。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Bien. Suis-moi.\\\""
             }
         }
     },
@@ -729,6 +837,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…正直なの、好きだよ。大丈夫、私がそばにいるから。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...J'aime ta franchise. Ça va — je suis juste là, à côté de toi.\\\""
             }
         }
     },    
@@ -753,6 +865,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナは裏門の鍵を慣れた手つきで開けた。まるで何度もやったことがあるみたいに。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna a ouvert la serrure du portail arrière avec une aisance experte. Comme si elle l'avait fait de nombreuses fois.*"
             }
         }
     },
@@ -777,6 +893,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*がらんとした学校の廊下。非常灯だけがぼんやり点いている。昼間は騒がしかった場所が、今は息遣いすら響きそうだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Le couloir vide de l'école. Seules les faibles lumières de secours étaient allumées. L'endroit si bruyant en journée semblait maintenant si silencieux qu'un souffle y résonnerait.*"
             }
         }
     },
@@ -801,6 +921,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…地下資料室。学校が封印した区画。ここに全部ある。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Les archives souterraines. Une section que l'école a condamnée. Tout est ici.\\\""
             }
         }
     },
@@ -825,6 +949,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*地下に降りると空気が冷たくなった。ほこりの匂いと古い書類の匂いが鼻を突いた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*En descendant sous terre, l'air est devenu glacial. L'odeur de poussière et de vieux documents m'a piqué le nez.*"
             }
         }
     },
@@ -849,6 +977,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"この学校の財団…『聖進学園』。表向きは教育名門を自称してるけど、10年前から組織的に裏金を運営してきた。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"La fondation de cette école... 'Académie Sungjin.' Ils prétendent être une institution éducative d'élite, mais ils gèrent une caisse noire de manière systématique depuis dix ans.\\\""
             }
         }
     },
@@ -873,6 +1005,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"…裏金？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"...Une caisse noire ?\\\""
             }
         }
     },
@@ -897,6 +1033,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"学生福祉基金の横領、施設修繕費の虚偽請求、寄付金の流用…ここに全部ある。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Détournement des fonds d'aide aux élèves, fausses factures de réparation, malversation des dons... Tout est là.\\\""
             }
         }
     },
@@ -921,6 +1061,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナが棚から古びた書類ファイルを取り出した。びっしりと並んだ数字と印鑑。これは…本物の帳簿だ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna a sorti un dossier usé de l'étagère. Des chiffres serrés et des tampons remplissaient les pages. C'est... un vrai livre de comptes.*"
             }
         }
     },
@@ -945,6 +1089,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"特にこの建物…本館東側の階段。3年前に補修工事をしたことになってるけど、実際には一銭も使われてない。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Surtout ce bâtiment... l'escalier est du hall principal. Les registres indiquent qu'il a été rénové il y a trois ans, mais en réalité, pas un centime n'a été dépensé.\\\""
             }
         }
     },
@@ -969,6 +1117,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…そしてその階段で、1年前に事故が起きた。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Et dans cet escalier, un accident s'est produit il y a un an.\\\""
             }
         }
     },
@@ -1026,6 +1178,14 @@ Object.assign(SCENARIO[4], {
                     "\"…誰が怪我したの？\"",
                     "\"ユナ…大丈夫？\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*La voix de Yuna tremble.*",
+                "choices": [
+                    "\\\"...Qui a été blessé ?\\\"",
+                    "\\\"Yuna... ça va ?\\\""
+                ]
             }
         }
     },
@@ -1050,6 +1210,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"……大丈夫かって聞いてくれたのは、あんたが初めて。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Tu es la première personne à me demander ça.\\\""
             }
         }
     },
@@ -1074,6 +1238,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…イ・ジュノ先輩。当時の生徒会長だった。財団の不正を知って、証拠を集めてた。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Lee Junho, un élève plus âgé. Il était président du conseil des élèves à l'époque. Il avait découvert la corruption de la fondation et rassemblait des preuves.\\\""
             }
         }
     },
@@ -1098,6 +1266,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"先輩は…正義感が強い人だった。馬鹿みたいに。誰かが被害を受けてると、絶対に見過ごせない人。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"C'était... quelqu'un avec un sens aigu de la justice. Presque naïvement. Il ne pouvait jamais détourner le regard quand quelqu'un subissait une injustice.\\\""
             }
         }
     },
@@ -1122,6 +1294,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"そしてある日…あの東階段から転落した。学校は『失足死』として処理した。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Et puis un jour... il est tombé de cet escalier est. L'école a conclu à une 'chute accidentelle.'\\\""
             }
         }
     },
@@ -1146,6 +1322,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"……失足死？不正を調査してた人が？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"...Une chute accidentelle ? La personne qui enquêtait sur la corruption ?\\\""
             }
         }
     },
@@ -1170,6 +1350,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…補修もされてない古い階段の手すりが折れたんだって。財団が工事費を横領しなければ起きなかった事故。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...La vieille rampe d'escalier qui n'avait jamais été réparée s'est brisée. Si la fondation n'avait pas détourné les fonds de réparation, cet accident ne serait jamais arrivé.\\\""
             }
         }
     },
@@ -1194,6 +1378,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"証拠を持って教育委員会に行く前日だった。偶然なのか、そうじゃないのか…まだわからない。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"C'était la veille du jour où il comptait apporter les preuves au Rectorat. Que ce soit une coïncidence ou non... je ne sais toujours pas.\\\""
             }
         }
     },
@@ -1218,6 +1406,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"先輩は…数日後に病院で息を引き取った。結局目を覚まさなかった。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Il est... décédé à l'hôpital quelques jours plus tard. Il ne s'est jamais réveillé.\\\""
             }
         }
     },
@@ -1242,6 +1434,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナの手が震えていた。書類を握る指先が白くなっている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Les mains de Yuna tremblaient. Le bout de ses doigts, agrippés aux documents, était devenu blanc.*"
             }
         }
     },
@@ -1300,6 +1496,14 @@ Object.assign(SCENARIO[4], {
                     "ユナの手を握る",
                     "\"…続けて。聞いてるから。\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...*",
+                "choices": [
+                    "Prendre la main de Yuna",
+                    "\\\"...Continue. Je t'écoute.\\\""
+                ]
             }
         }
     },
@@ -1324,6 +1528,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"……！\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"... !\\\""
             }
         }
     },
@@ -1348,6 +1556,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナの手は冷たかった。でも僕の手を振り払わなかった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*La main de Yuna était glacée. Mais elle ne s'est pas dégagée.*"
             }
         }
     },
@@ -1372,6 +1584,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"……ありがとう。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Merci.\\\""
             }
         }
     },
@@ -1396,6 +1612,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…それともう一つ。これが一番重要なんだ。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Et encore une chose. C'est la plus importante.\\\""
             }
         }
     },
@@ -1420,6 +1640,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"財団の不正は10年前に理事長が始めた。でも今…ここ2年で起きたことは違う。もっと緻密で、もっと組織的。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"La corruption de la fondation a commencé avec le président il y a dix ans. Mais maintenant... ce qui s'est passé ces deux dernières années est différent. Plus calculé, plus organisé.\\\""
             }
         }
     },
@@ -1444,6 +1668,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"…もっと緻密って？誰が？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"...Plus calculé ? Par qui ?\\\""
             }
         }
     },
@@ -1468,6 +1696,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…ソヨンだよ。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Seoyeon.\\\""
             }
         }
     },
@@ -1492,6 +1724,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*心臓が止まりそうだった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ai eu l'impression que mon cœur s'est arrêté.*"
             }
         }
     },
@@ -1516,6 +1752,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"…ソヨン？うちのクラスのソヨン？それってどういう—\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"...Seoyeon ? La Seoyeon de notre classe ? Qu'est-ce que tu—\\\""
             }
         }
     },
@@ -1540,6 +1780,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"ソヨンは理事長の孫娘。この学校の財団『聖進学園』の理事長…聖進グループ会長の孫娘。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Seoyeon est la petite-fille du président. Le président de la fondation de cette école, 'l'Académie Sungjin'... la petite-fille du président du Groupe Sungjin.\\\""
             }
         }
     },
@@ -1564,6 +1808,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*頭の中が真っ白になった。ソヨンが…いつも明るく笑ってたあの子が。あの好奇心溢れる目が。理事長の孫娘？*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Mon esprit s'est vidé. Seoyeon... cette fille qui souriait toujours si joyeusement. Ces yeux curieux. La petite-fille du président ?*"
             }
         }
     },
@@ -1588,6 +1836,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"生徒会費の流用、奨学金の不正受給、校内の賞罰操作…ここ2年で起きたこと、ソヨンが財団を後ろ盾にして自分で設計したんだ。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Détournement des fonds du conseil des élèves, demandes de bourses frauduleuses, manipulation des dossiers disciplinaires... tout ce qui s'est passé ces deux dernières années, Seoyeon l'a orchestré elle-même, avec le soutien de la fondation.\\\""
             }
         }
     },
@@ -1612,6 +1864,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"…信じられない。ソヨンがそんな子じゃないだろ。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"...Je n'arrive pas à y croire. Seoyeon n'est pas ce genre de personne.\\\""
             }
         }
     },
@@ -1636,6 +1892,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…私もそう思ってた。最初は。でもこの書類を見て。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...J'ai pensé la même chose. Au début. Mais regarde ces documents.\\\""
             }
         }
     },
@@ -1660,6 +1920,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナが書類の束を渡してきた。生徒会の決算報告書、奨学金選考名簿、校内懲戒委員会の議事録…すべての書類に同じサインがあった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna m'a tendu une pile de documents. Rapports financiers du conseil des élèves, listes de sélection de bourses, procès-verbaux du comité disciplinaire... Chaque document portait la même signature de Seoyeon.*"
             }
         }
     },
@@ -1684,6 +1948,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"ソヨンは生徒会長の立場を使って金の流れを操った。表向きは完璧な生徒でありながら、裏では財団の言いなりになって動いていたんだ。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Seoyeon a utilisé son poste de présidente du conseil des élèves pour contrôler les flux d'argent. En apparence, une élève parfaite — dans l'ombre, exécutant exactement ce que la fondation lui dictait.\\\""
             }
         }
     },
@@ -1708,6 +1976,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*手に持った書類が震えた。ソヨンの笑顔が脳裏をよぎった。あの自然な笑み、あの明るい目…全部演技だったのか。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Les documents tremblaient entre mes mains. Le visage souriant de Seoyeon m'est revenu en mémoire. Ce sourire naturel, ces yeux brillants... tout cela n'était-il qu'une comédie ?*"
             }
         }
     },
@@ -1732,6 +2004,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…ソヨンが悪い人間かどうか、私にもわからない。生まれた時からその構造の中にいたんだから。でもそれが免罪符にはならない。実際に被害を受けた人たちがいるから。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Que Seoyeon soit une mauvaise personne ou non, je ne sais pas. Elle est dans ce système depuis sa naissance. Mais ça ne l'excuse pas. Parce qu'il y a de vraies victimes.\\\""
             }
         }
     },
@@ -1789,6 +2065,14 @@ Object.assign(SCENARIO[4], {
                     "\"…ソヨンに直接聞いてみたい。\"",
                     "\"…わかった。証拠があるんだから。進めよう。\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je ne pouvais pas accepter ça.*",
+                "choices": [
+                    "\\\"...Je veux le demander directement à Seoyeon.\\\"",
+                    "\\\"...D'accord. Il y a des preuves. Allons de l'avant.\\\""
+                ]
             }
         }
     },
@@ -1813,6 +2097,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…それはダメ。まだ危険すぎる。ソヨンが気づいた瞬間、証拠が消えるかもしれない。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...C'est impossible. C'est encore trop dangereux. Dès que Seoyeon s'en rendra compte, les preuves pourraient disparaître.\\\""
             }
         }
     },
@@ -1837,6 +2125,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*その言葉が正しいとわかっていながら…すんなり受け入れられなかった。ソヨンの顔がずっと目の前にちらついていた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je savais qu'elle avait raison... mais je ne pouvais pas l'accepter facilement. Le visage de Seoyeon ne cessait d'apparaître devant mes yeux.*"
             }
         }
     },
@@ -1861,6 +2153,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…ありがとう。信じてくれて。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Merci. De m'avoir crue.\\\""
             }
         }
     },
@@ -1885,6 +2181,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*地下室の冷気が骨の髄まで染み込んだ。ソヨン。財団。先輩の死。壁の亀裂。すべてがひとつに繋がっていた。そしてユナはこれをひとりで抱えてきたんだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Le froid du sous-sol me transperçait les os. Seoyeon. La fondation. La mort de l'aîné. La fissure dans le mur. Tout se connectait. Et Yuna avait porté tout cela seule.*"
             }
         }
     },
@@ -1909,6 +2209,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…実は、もう一つ言わなきゃいけないことがある。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...En fait, il y a encore quelque chose que je dois te dire.\\\""
             }
         }
     },
@@ -1933,6 +2237,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"あんたが最初に転校してきた時…息が止まりそうだった。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Quand tu as été transféré ici... j'ai failli arrêter de respirer.\\\""
             }
         }
     },
@@ -1957,6 +2265,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"…なんで？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"...Pourquoi ?\\\""
             }
         }
     },
@@ -1981,6 +2293,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"あんた…ジュノ先輩に似てるんだよ。目つきとか、雰囲気とか。不正を見ると黙ってられない感じまで。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Tu... ressembles à Junho. Tes yeux, ton aura. Même cette impression de ne jamais pouvoir rester les bras croisés face à l'injustice.\\\""
             }
         }
     },
@@ -2005,6 +2321,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…だから最初は怖かった。また同じことが繰り返されるんじゃないかって。あんたまで危険になるんじゃないかって。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Alors au début, j'avais peur. Peur que la même chose se reproduise. Peur que tu sois en danger toi aussi.\\\""
             }
         }
     },
@@ -2029,6 +2349,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"でも同時に…あんたがそばにいれば、先輩がやり残したことを終わらせられる気がした。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Mais en même temps... avec toi à mes côtés, j'avais l'impression de pouvoir finir ce qu'il n'avait pas pu accomplir.\\\""
             }
         }
     },
@@ -2053,6 +2377,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*そういうことだったのか。ユナが最初から僕に関心を示した理由。「特別な光」と言ったのも…先輩の影だったのか。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Alors c'était ça. La raison pour laquelle Yuna s'est intéressée à moi dès le début. Quand elle m'a appelé une 'lumière spéciale'... n'étais-je que l'ombre de cet aîné ?*"
             }
         }
     },
@@ -2124,6 +2452,15 @@ Object.assign(SCENARIO[4], {
                     "\"先輩の代役でもいい。ユナに必要な人になりたい。\"",
                     "\"…だから僕に近づいたの？先輩の代わりとして？\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...Que devrais-je dire ?*",
+                "choices": [
+                    "\\\"Je ne suis pas lui. Je suis moi. Mais quand même... je me battrai à tes côtés.\\\"",
+                    "\\\"Même si je ne suis que son remplaçant, ça me va. Je veux être la personne dont tu as besoin.\\\"",
+                    "\\\"...Alors tu t'es rapprochée de moi à cause de lui ? Comme un remplaçant ?\\\""
+                ]
             }
         }
     },
@@ -2148,6 +2485,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"……わかってる。あんたはあんただ。最初は先輩の影を追ってたのかもしれない。でも今は……\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Je sais. Tu es toi. Peut-être qu'au début je poursuivais l'ombre de cet aîné. Mais maintenant...\\\""
             }
         }
     },
@@ -2172,6 +2513,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"……今はあんたが見える。あんただけが。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Maintenant je ne vois que toi. Toi seul.\\\""
             }
         }
     },
@@ -2196,6 +2541,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"バカ…そんなこと言われたら困る。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Idiot... tu ne peux pas dire des choses comme ça.\\\""
             }
         }
     },
@@ -2220,6 +2569,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"代役なんかじゃない。あんたは…あんた自身で十分だよ。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Tu n'es pas un remplaçant. Tu... es déjà plus que suffisant, tel que tu es.\\\""
             }
         }
     },
@@ -2244,6 +2597,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"……\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...\\\""
             }
         }
     },
@@ -2268,6 +2625,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…否定しない。最初はそうだった。でも…一緒に過ごすうちに変わった。これは本気。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Je ne le nierai pas. Au début, c'était comme ça. Mais... au fil du temps passé ensemble, ça a changé. C'est réel.\\\""
             }
         }
     },
@@ -2293,6 +2654,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…信じてくれなくても、証明してみせる。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Même si tu ne me crois pas, je te le prouverai.\\\""
             }
         }
     },
@@ -2317,6 +2682,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…この書類、コピーを取ってある。原本はここにそのまま置いて。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...J'ai fait des copies de ces documents. Les originaux restent ici.\\\""
             }
         }
     },
@@ -2341,6 +2710,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"先輩がやり残したこと…今度こそ終わらせたい。教育委員会に通報する。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Ce que l'aîné n'a pas pu accomplir... je veux le mener à bien cette fois. Je vais le signaler à la presse et au Rectorat.\\\""
             }
         }
     },
@@ -2365,6 +2738,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナの目に決意が宿っている。これは単なる好奇心じゃなかった。1年間ひとりで真実を掘り起こしてきたんだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*La détermination emplissait les yeux de Yuna. Ce n'était pas de la simple curiosité. Elle avait enquêté seule sur la vérité pendant une année entière.*"
             }
         }
     },
@@ -2389,6 +2766,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…でも危険かもしれない。財団が黙ってるわけない。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Mais ça pourrait être dangereux. La fondation ne va pas rester les bras croisés.\\\""
             }
         }
     },
@@ -2413,6 +2794,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"…一緒にやろう。ひとりで抱え込むなよ。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"...Faisons-le ensemble. Ne porte pas tout ça toute seule.\\\""
             }
         }
     },
@@ -2438,6 +2823,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"……うん。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "Yuna prend doucement ta main ; son toucher n'est plus froid, mais chaud, en quête de réconfort."
             }
         }
     },
@@ -2463,6 +2852,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*学校を抜け出した。冷たい夜風が吹いていたけど、隣にユナがいるから寒くなかった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous nous sommes faufilés hors de l'école. La brise froide de la nuit soufflait, mais elle semblait moins glaciale avec Yuna à mes côtés.*"
             }
         }
     },
@@ -2487,6 +2880,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…今日はありがとう。ひとりで抱えてたことを誰かに話したの、初めて。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Merci pour aujourd'hui. C'est la première fois que je confie à quelqu'un ce que je portais seule.\\\""
             }
         }
     },
@@ -2511,6 +2908,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…重い一日だったでしょ？\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...C'était une journée lourde, non ?\\\""
             }
         }
     },
@@ -2568,6 +2969,14 @@ Object.assign(SCENARIO[4], {
                     "\"ううん。ユナのことをもっと知れたから。\"",
                     "\"次は本当のデートしよう。カフェとかで。\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Sous le ciel nocturne, Yuna sourit maladroitement.*",
+                "choices": [
+                    "\\\"Non. Parce que j'ai appris à mieux te connaître.\\\"",
+                    "\\\"La prochaine fois, allons à un vrai rendez-vous. Dans un café, par exemple.\\\""
+                ]
             }
         }
     },
@@ -2592,6 +3001,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"……そういうこと言うの、反則。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...C'est pas juste de dire un truc pareil.\\\""
             }
         }
     },
@@ -2616,6 +3029,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…カフェ。いいね。今度は私が選んでもいい？\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Un café. Ça me plairait. Je peux choisir l'endroit cette fois ?\\\""
             }
         }
     },
@@ -2640,6 +3057,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナが振り返ろうとして立ち止まった。そして僕の襟をぎゅっと掴んだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna s'est arrêtée alors qu'elle allait se retourner. Et elle a agrippé fermement mon col.*"
             }
         }
     },
@@ -2664,6 +3085,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"先輩みたいに死なせない。あんたを守るためなら…いっそ壊してでも私のそばに縛りつける。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "Je ne te laisserai pas mourir comme lui. Pour te protéger... je préfère te briser et t'enchaîner à moi."
             }
         }
     },
@@ -2688,6 +3113,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"あんたは私のものだから。どこにも行かせない。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "Tu es à moi. Tu ne peux aller nulle part."
             }
         }
     },
@@ -2712,6 +3141,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*家に帰ってきた。ユナのひんやりとした眼差しと、ぎゅっと握られた手の感触が忘れられない。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je suis rentré chez moi. Le regard glaçant de Yuna et sa poigne serrée ne quittent pas mon esprit.*"
             }
         }
     },
@@ -2737,6 +3170,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*彼女が言った「守る」の意味が、もしかしたら僕が思っていたのとは違うかもしれないという予感がした。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'avais le pressentiment que ce qu'elle entendait par 'protéger' était différent de ce que je pensais.*"
             }
         }
     },
@@ -2762,6 +3199,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*夜9時。ソヨンから電話が来た。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*21 heures. Un appel de Seoyeon.*"
             }
         }
     },
@@ -2787,6 +3228,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…あの、私だけど。忙しくなければ…ちょっと出てこれる？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Salut, c'est moi. Si tu n'es pas occupé... tu pourrais sortir un moment ?\\\""
             }
         }
     },
@@ -2812,6 +3257,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンの声がいつもと違う。明るさがなくて、どこか震えているようだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*La voix de Seoyeon est différente de d'habitude. Aucune chaleur, et elle semble trembler.*"
             }
         }
     },
@@ -2837,6 +3286,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…うちの前の公園わかるよね？そこで待ってるね。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Tu connais le parc près de chez moi, non ? Je t'attends là-bas.\\\""
             }
         }
     },
@@ -2861,6 +3314,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*公園に着いた。ベンチにソヨンがひとりで座っていた。いつものきちんとした制服じゃなくて、楽な服装だ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je suis arrivé au parc. Seoyeon était assise seule sur un banc. Au lieu de son uniforme soigné habituel, elle portait des vêtements décontractés.*"
             }
         }
     },
@@ -2885,6 +3342,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…来てくれたんだ。急に呼んでごめんね。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Tu es venu. Pardon de t'avoir appelé si soudainement.\\\""
             }
         }
     },
@@ -2942,6 +3403,14 @@ Object.assign(SCENARIO[4], {
                     "\"何かあったの？大丈夫？\"",
                     "何も言わずに隣に座る"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Les yeux de Seoyeon sont rouges. ...Elle pleurait ?*",
+                "choices": [
+                    "\\\"Qu'est-ce qui s'est passé ? Ça va ?\\\"",
+                    "S'asseoir à côté d'elle sans rien dire"
+                ]
             }
         }
     },
@@ -2966,6 +3435,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"……大丈夫って言ったら、嘘になるよね。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Si je disais que ça va, ce serait un mensonge.\\\""
             }
         }
     },
@@ -2990,6 +3463,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"……ありがとう。ただそばにいてくれるの、一番嬉しい。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Merci. Juste être assis à côté de moi... c'est ce qu'il y a de mieux.\\\""
             }
         }
     },
@@ -3014,6 +3491,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…今日、お母さんから電話があって。お父さんとまた喧嘩したって。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Maman a appelé aujourd'hui. Elle et papa se sont encore disputés.\\\""
             }
         }
     },
@@ -3038,6 +3519,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"うちの家…外からは完璧に見えるでしょ？大きな家、いい車、生徒会長の娘。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Notre maison... semble parfaite de l'extérieur, non ? Grande maison, belle voiture, fille présidente du conseil des élèves.\\\""
             }
         }
     },
@@ -3062,6 +3547,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"でも実は…お母さんとお父さん、1年も同じ屋根の下で他人同士なの。離婚届を出してないだけ。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Mais en réalité... maman et papa ne vivent plus sous le même toit depuis un an. Ils n'ont juste pas encore demandé le divorce.\\\""
             }
         }
     },
@@ -3086,6 +3575,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"……ソヨン。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"...Seoyeon.\\\""
             }
         }
     },
@@ -3110,6 +3603,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"お母さんに言われたの。『あなただけでも完璧じゃないとこの家は持たない』って。だから…生徒会長も、成績も、全部手放せなかった。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Maman a dit : 'Au moins, toi, tu dois être parfaite pour que cette famille tienne.' Alors... le conseil des élèves, les notes, je ne pouvais rien lâcher.\\\""
             }
         }
     },
@@ -3134,6 +3631,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"みんなに笑顔でいなきゃいけなかった。『ソヨンはいつも明るいね』、『ソヨンは何でもできるね』。その言葉が…だんだん牢獄みたいだった。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Je devais sourire pour tout le monde. 'Seoyeon est toujours si radieuse,' 'Seoyeon est bonne en tout.' Ces mots... ont commencé à ressembler à une prison.\\\""
             }
         }
     },
@@ -3158,6 +3659,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"笑ってたんじゃなくて、笑いを『演じて』たの。毎日。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Je ne souriais pas — je 'jouais' le sourire. Chaque jour.\\\""
             }
         }
     },
@@ -3182,6 +3687,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンの目から涙がこぼれた。街灯の光にきらめく涙を見るのは初めてだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Des larmes ont coulé des yeux de Seoyeon. Scintillant sous le réverbère. C'était la première fois que je la voyais pleurer.*"
             }
         }
     },
@@ -3241,6 +3750,14 @@ Object.assign(SCENARIO[4], {
                     "ソヨンを抱きしめる",
                     "小指を差し出す"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Seoyeon pleure. Je n'avais jamais vu ce côté d'elle.*",
+                "choices": [
+                    "Serrer Seoyeon dans ses bras",
+                    "Lui proposer une promesse du petit doigt"
+                ]
             }
         }
     },
@@ -3265,6 +3782,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"……！\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...... !\\\""
             }
         }
     },
@@ -3289,6 +3810,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンが僕の胸に顔を埋めた。小さな肩が震えていた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Seoyeon a enfoui son visage contre ma poitrine. Ses petites épaules tremblaient.*"
             }
         }
     },
@@ -3313,6 +3838,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…こんなに泣いたの、本当に久しぶり。誰かの前で泣くのは…初めて。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Ça faisait tellement longtemps que je n'avais pas pleuré comme ça. Pleurer devant quelqu'un... c'est la première fois.\\\""
             }
         }
     },
@@ -3337,6 +3866,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"約束するよ。ソヨンが泣きたい時は、僕の前で泣いていいから。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Je te le promets. Quand tu voudras pleurer, tu pourras pleurer avec moi.\\\""
             }
         }
     },
@@ -3361,6 +3894,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"……小指？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Une promesse du petit doigt ?\\\""
             }
         }
     },
@@ -3385,6 +3922,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンが震える手で小指を絡めた。そして我慢していた涙があふれ出した。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Seoyeon a noué son petit doigt tremblant au mien. Et les larmes qu'elle retenait se sont déversées.*"
             }
         }
     },
@@ -3409,6 +3950,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…バカ、なんでこんなに…私に優しくするの……\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Idiot, pourquoi tu es... si gentil avec moi...\\\""
             }
         }
     },
@@ -3433,6 +3978,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…実は今日のデート中も怖かった。こんなに幸せでいいのかなって。この幸せもすぐ崩れるんじゃないかって。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Même pendant notre rendez-vous aujourd'hui, j'avais peur. Ai-je le droit d'être si heureuse ? Est-ce que ce bonheur va s'effondrer aussi ?\\\""
             }
         }
     },
@@ -3457,6 +4006,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"完璧じゃない私でも…いいの？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Tu... acceptes une version de moi qui n'est pas parfaite ?\\\""
             }
         }
     },
@@ -3526,6 +4079,15 @@ Object.assign(SCENARIO[4], {
                     "\"生徒会長のソヨンじゃなくて、ただのソヨンが僕の彼女だよ。\"",
                     "\"正直、完璧だと思ってた。でも…こんな姿も見せてくれてありがとう。\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Seoyeon me regarde avec des yeux tremblants.*",
+                "choices": [
+                    "\\\"J'aime la Seoyeon d'en ce moment plus que la parfaite.\\\"",
+                    "\\\"Pas la Seoyeon présidente du conseil — juste Seoyeon est ma petite amie.\\\"",
+                    "\\\"Honnêtement, je t'ai toujours trouvée parfaite. Mais... merci de me montrer aussi ce côté de toi.\\\""
+                ]
             }
         }
     },
@@ -3550,6 +4112,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"……本当に？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Vraiment ?\\\""
             }
         }
     },
@@ -3574,6 +4140,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…その言葉、一生忘れないよ。忘れたら…約束だから。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Je n'oublierai jamais ces mots. Si jamais... on a fait une promesse du petit doigt, après tout.\\\""
             }
         }
     },
@@ -3598,6 +4168,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"か、彼女……\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"P-petite amie......\\\""
             }
         }
     },
@@ -3622,6 +4196,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…あ、心臓がドキドキして死にそう。そんなこと急に言わないでよ……\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Ah, mon cœur bat si fort que je pourrais mourir. Tu ne peux pas dire des choses comme ça...\\\""
             }
         }
     },
@@ -3646,6 +4224,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"……ありがとう。本気で言ってる？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Merci. Tu le penses vraiment ?\\\""
             }
         }
     },
@@ -3670,6 +4252,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"これからは…あなたの前では演技しない。約束する。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Désormais... je ne ferai plus semblant devant toi. Promis.\\\""
             }
         }
     },
@@ -3694,6 +4280,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…あのね。決めたの。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Tu sais quoi ? Je me suis décidée.\\\""
             }
         }
     },
@@ -3718,6 +4308,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"お母さんに言う。『完璧な娘』でいる前に、自分自身でいたいって。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Je vais le dire à maman. Que je veux être moi-même avant d'être 'la fille parfaite.'\\\""
             }
         }
     },
@@ -3742,6 +4336,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"こんな底まで見られちゃったから…もうあなたは絶対に私から離れられないよ。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "Puisque tu m'as vue au plus bas comme ça... tu ne pourras plus jamais me quitter."
             }
         }
     },
@@ -3766,6 +4364,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"……ソヨン？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "......Seoyeon ?"
             }
         }
     },
@@ -3791,6 +4393,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"もし他の女の子に笑いかけたら…その時は私も何するかわからないよ。わかった？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "Si tu souris à une autre fille... je ne sais pas ce que je ferai. Compris ?"
             }
         }
     },
@@ -3815,6 +4421,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*公園を出て家の前まで一緒に歩いた。ソヨンが僕の腕をぎゅっと抱きしめて離さなかった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous avons quitté le parc et marché ensemble jusqu'à chez moi. Seoyeon serrait mon bras et ne voulait pas lâcher.*"
             }
         }
     },
@@ -3839,6 +4449,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…今日みっともない姿見せちゃったのに、逃げなかったね。よかった。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "...Je t'ai montré un côté laid de moi aujourd'hui, mais tu n'as pas fui. Je suis contente."
             }
         }
     },
@@ -3863,6 +4477,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"逃げるわけないよ。むしろもっと好きになったけど。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Fuir ? En fait, je t'aime encore plus maintenant.\\\""
             }
         }
     },
@@ -3887,6 +4505,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"……その言葉、絶対忘れないで。あなたはもう私のだから。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "......N'oublie jamais ces mots. Tu es à moi maintenant."
             }
         }
     },
@@ -3911,6 +4533,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンが振り返りながら、ひんやりとした、でも甘い微笑みを浮かべた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Alors que Seoyeon se retournait pour partir, elle a dit d'une petite voix.*"
             }
         }
     },
@@ -3935,6 +4561,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…今日、初めて『私が私でいていいんだ』って感じた。ありがとう。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*En se retournant, Seoyeon a affiché un sourire glaçant mais doux.*"
             }
         }
     },
@@ -3959,6 +4589,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*家に帰ってきた。ソヨンの涙がずっと浮かんでくる。完璧だった生徒会長の本当の姿…あの重い荷物を一緒に持ちたい。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*De retour chez moi. Les larmes de Seoyeon me reviennent sans cesse. Le vrai visage derrière la présidente parfaite du conseil des élèves... je veux partager ce lourd fardeau.*"
             }
         }
     },
@@ -3984,6 +4618,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*明日は…ソヨンの笑顔が『演技』じゃなくて『本心』になるようにしてあげたい。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Demain... je veux que son sourire vienne du cœur, pas d'un rôle qu'elle joue.*"
             }
         }
     },
@@ -4009,6 +4647,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*夜9時半。ダインからメッセージが来た。「ねえ今暇？笑 学校来れない？？」*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*21h30. Un message de Dain. 'Hey, t'es libre là ?? mdr Tu peux venir à l'école ??'*"
             }
         }
     },
@@ -4032,6 +4674,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*すぐにまたメッセージが来た。「てかもう来て笑 体育館の裏口開けてあるから！」*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Un autre message aussitôt. 'Laisse tomber viens c'est tout mdr ! La porte arrière du gymnase est ouverte !'*"
             }
         }
     },
@@ -4055,6 +4701,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ダインがこの時間に学校の体育館だなんて。なんか変だけど…行ってみよう。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dain au gymnase de l'école à cette heure ? Quelque chose cloche... Allons voir.*"
             }
         }
     },
@@ -4079,6 +4729,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*体育館に入ると、非常灯だけが灯る暗いコートの上で、ダインがひとりでバレーボールを弾いていた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je suis entré dans le gymnase. Dans l'obscurité éclairée uniquement par les lumières de secours, Dain était seule, faisant rebondir un ballon de volley.*"
             }
         }
     },
@@ -4103,6 +4757,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"おっ！本当に来たの？！えへへ、さすが私の彼氏！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Oh ! T'es vraiment venu ?! Héhé, c'est bien mon copain !\\\""
             }
         }
     },
@@ -4127,6 +4785,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*でも…なんか変だ。ダインがいつもよりもっと頑張って笑ってるような気がする。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Mais... quelque chose ne va pas. Dain semble sourire plus fort que d'habitude.*"
             }
         }
     },
@@ -4151,6 +4813,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"トス上げて！一回だけ！私のスパイク見せてあげる！！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Fais-moi une passe ! Juste une fois ! Je vais te montrer mon smash !!\\\""
             }
         }
     },
@@ -4175,6 +4841,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ダインにトスを上げた。ダインが高く跳んでスパイクを叩き込む。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ai lancé le ballon à Dain. Elle a sauté haut et a claqué le smash.*"
             }
         }
     },
@@ -4199,6 +4869,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*着地した瞬間――ダインが右膝を押さえてしゃがみ込んだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Au moment de l'atterrissage — Dain a saisi son genou droit et s'est effondrée au sol.*"
             }
         }
     },
@@ -4223,6 +4897,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"……！！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...... !!\\\""
             }
         }
     },
@@ -4247,6 +4925,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"ダイン！！\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Dain !!\\\""
             }
         }
     },
@@ -4271,6 +4953,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"あ、大丈夫！！ちょっとひねっただけだって笑 大したことな…\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Aïe aïe !! Ça va !! J'ai juste un peu forcé haha, c'est rien...\\\""
             }
         }
     },
@@ -4328,6 +5014,14 @@ Object.assign(SCENARIO[4], {
                     "\"嘘つくなよ。見せて。\"",
                     "\"ダイン。大丈夫じゃないだろ。\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dain sourit, mais sa main qui agrippe son genou est devenue blanche.*",
+                "choices": [
+                    "\\\"Ne mens pas. Laisse-moi voir.\\\"",
+                    "\\\"Dain. Tu ne vas pas bien.\\\""
+                ]
             }
         }
     },
@@ -4352,6 +5046,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ダインの膝を見ようとしたら、ダインがびくっと後ずさった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Quand j'ai essayé de regarder le genou de Dain, elle a sursauté et s'est reculée.*"
             }
         }
     },
@@ -4376,6 +5074,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"……\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"......\\\""
             }
         }
     },
@@ -4400,6 +5102,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"……わかった。隠そうとしてたんだけど。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Bon. J'essayais de le cacher.\\\""
             }
         }
     },
@@ -4424,6 +5130,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ダインが膝のサポーターをめくった。膝がひどく腫れている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dain a remonté sa genouillère. Son genou était terriblement enflé.*"
             }
         }
     },
@@ -4448,6 +5158,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…前十字靭帯。去年怪我した。手術したけど…完治しなかった。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Rupture des ligaments croisés. Je me suis blessée l'an dernier. J'ai été opérée mais... ça n'a jamais complètement guéri.\\\""
             }
         }
     },
@@ -4472,6 +5186,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"…去年？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"...L'an dernier ?\\\""
             }
         }
     },
@@ -4496,6 +5214,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"お医者さんに言われた。『日常生活は大丈夫だけど、以前みたいに跳ぶのは無理』って。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Le médecin a dit : 'La vie quotidienne, pas de souci, mais rejouer comme avant, c'est trop.'\\\""
             }
         }
     },
@@ -4520,6 +5242,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"体育大学進学も、プロ選手も…全部ダメになった。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Bourse sportive, devenir pro... Tout envolé. Comme ça.\\\""
             }
         }
     },
@@ -4544,6 +5270,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*…バレーボールが全てだったダインにとって、それは死刑宣告みたいなものだっただろう。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...Pour Dain, qui vivait pour le volley, ça a dû être une condamnation à mort.*"
             }
         }
     },
@@ -4568,6 +5298,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…毎日明るいフリして笑ってたの、知ってた？誰にもバレないように。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Tu sais que je souris toujours ? Personne ne sait que c'est du cinéma.\\\""
             }
         }
     },
@@ -4592,6 +5326,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"『ダインはいつも元気だね！』って言われるたびに…本当に笑えるよ。中では毎日膝が燃えるみたいなのに。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"'Dain est toujours pleine d'énergie !' Chaque fois que j'entends ça... je ris pour de vrai. Mais à l'intérieur, mon genou me brûle chaque jour.\\\""
             }
         }
     },
@@ -4616,6 +5354,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"今日のデートで走り回ってた時も…本当は痛かった。でもバレたくなかった。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Même pendant notre rendez-vous aujourd'hui, quand on courait partout... ça faisait vraiment mal. Mais je ne voulais pas le montrer.\\\""
             }
         }
     },
@@ -4640,6 +5382,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"諦めなきゃいけないのはわかってる。でも…もう一回だけ跳びたかった。このコートで。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Je sais que je dois tourner la page. Mais... je voulais juste sauter une dernière fois. Sur ce terrain.\\\""
             }
         }
     },
@@ -4664,6 +5410,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ダインがバレーボールをぎゅっと抱きしめて頭を下げた。肩が震えている。いつも明るかったダインが…泣いている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dain a serré le ballon de volley contre elle et a baissé la tête. Ses épaules tremblaient. La fille toujours joyeuse et pleine d'entrain... pleurait.*"
             }
         }
     },
@@ -4734,6 +5484,15 @@ Object.assign(SCENARIO[4], {
                     "\"泣いていいよ。明るいフリしなくていい。僕の前では。\"",
                     "\"…もう一回トス上げようか？最後に。\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...Qu'est-ce que je dis ?*",
+                "choices": [
+                    "\\\"Ton rêve, ce n'est pas que le volley. Trouvons un nouveau rêve ensemble.\\\"",
+                    "\\\"Tu peux pleurer. Tu n'as pas besoin de faire semblant d'aller bien. Pas avec moi.\\\"",
+                    "\\\"...Tu veux que je fasse encore une passe ? Une dernière fois.\\\""
+                ]
             }
         }
     },
@@ -4758,6 +5517,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…新しい夢？\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Un nouveau rêve ?\\\""
             }
         }
     },
@@ -4782,6 +5545,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…コーチとか、トレーナーとか…考えたことはある。教えるのは好きだから。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...J'y ai réfléchi. Entraîner, former... j'adore enseigner aux gens.\\\""
             }
         }
     },
@@ -4806,6 +5573,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"ダインなら世界一情熱的なコーチになれるよ。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Tu serais l'entraîneuse la plus passionnée du monde.\\\""
             }
         }
     },
@@ -4830,6 +5601,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…バカ、そんなこと言ったら泣いちゃうじゃん……\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Idiot, si tu dis des trucs comme ça je vais encore pleurer...\\\""
             }
         }
     },
@@ -4854,6 +5629,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"……\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"......\\\""
             }
         }
     },
@@ -4878,6 +5657,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"……このバカ……そんなこと言ったら……本当に泣いちゃうじゃん……！！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Espèce d'idiot... si tu dis ça... je vais vraiment pleurer... !!\\\""
             }
         }
     },
@@ -4902,6 +5685,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*ダインが僕の胸に顔をうずめてわんわん泣き始めた。体育館に泣き声が響き渡った。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dain a enfoui son visage contre ma poitrine et s'est mise à sangloter. Ses pleurs résonnaient dans le gymnase vide.*"
             }
         }
     },
@@ -4926,6 +5713,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…誰にも言えなかった……毎日ひとりで……怖かったんだよ……\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Je ne pouvais le dire à personne... chaque jour, toute seule... j'avais tellement peur...\\\""
             }
         }
     },
@@ -4950,6 +5741,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"……最後？\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Une dernière fois ?\\\""
             }
         }
     },
@@ -4974,6 +5769,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"最後じゃなくて、『新しい始まりの前の最後の一歩』だよ。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Pas 'dernière' — c'est 'la dernière avant un nouveau départ.'\\\""
             }
         }
     },
@@ -4998,6 +5797,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*トスを上げた。ダインが歯を食いしばって跳び上がり、最高のスパイクを叩き込んだ。着地と同時に膝を押さえたけど…笑っていた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ai lancé le ballon. Dain a serré les dents et sauté, claquant le plus beau smash que j'aie jamais vu. Elle a attrapé son genou à l'atterrissage... mais elle souriait.*"
             }
         }
     },
@@ -5022,6 +5825,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…笑 痛い。でも…気持ちいい。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Haha. Ça fait mal. Mais... c'était incroyable.\\\""
             }
         }
     },
@@ -5046,6 +5853,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…ありがとう。これで本当に手放せる気がする。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Merci. Je crois que je peux vraiment tourner la page maintenant.\\\""
             }
         }
     },
@@ -5070,6 +5881,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…ねえ。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Hé.\\\""
             }
         }
     },
@@ -5094,6 +5909,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"決めた。主治医の先生にちゃんと話して、リハビリに集中する。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"J'ai décidé. Je vais parler sérieusement à mon médecin et me concentrer sur la rééducation.\\\""
             }
         }
     },
@@ -5118,6 +5937,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"もしバレーボールが永遠にできなくなったら…あんたが私の人生全部責任取ってよ。わかった？\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "Si je ne peux plus jamais jouer au volley... tu devras prendre la responsabilité de toute ma vie. Compris ?"
             }
         }
     },
@@ -5142,6 +5965,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"……え？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "......Hein ?"
             }
         }
     },
@@ -5167,6 +5994,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"冗談じゃないよ。あんたはもう私のものだから、逃げようなんて思わないで。脚が壊れても追いかけるから。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "Je ne plaisante pas. Tu es à moi maintenant, alors n'essaie même pas de fuir. Même si mes jambes se brisent, je te poursuivrai."
             }
         }
     },
@@ -5191,6 +6022,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*体育館を出た。ダインが僕の腕をぎゅっと組んで、絶対に離さないとばかりに力を込めた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous avons quitté le gymnase. Dain a enlacé mon bras fermement, y mettant toute sa force comme si elle ne le lâcherait jamais.*"
             }
         }
     },
@@ -5215,6 +6050,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…今日私の弱点全部見たんだから、もう逃げられないよ。一生私のそばでトス上げてて。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "...Puisque tu as vu toutes mes faiblesses aujourd'hui, tu ne peux plus m'échapper. Contente-toi de me faire des passes pour le reste de ta vie."
             }
         }
     },
@@ -5239,6 +6078,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"あの姿も良かったけどね。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"J'ai aimé ce côté de toi aussi.\\\""
             }
         }
     },
@@ -5263,6 +6106,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…え、変態じゃない？泣いてる彼女見て『良かった』って。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Hein ? Qui dit 'j'ai aimé ça' en parlant de sa copine en pleurs ? T'es bizarre.\\\""
             }
         }
     },
@@ -5287,6 +6134,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…でも、ありがとう。本当に。あんたがいなかったら、ずっとひとりで抱えてたと思う。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Mais merci. Vraiment. Sans toi, j'aurais continué à porter ça toute seule pour toujours.\\\""
             }
         }
     },
@@ -5311,6 +6162,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…明日からは本当に笑うよ。偽物じゃなくて、本当に。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...À partir de demain, je sourirai pour de vrai. Pas du faux — pour de vrai.\\\""
             }
         }
     },
@@ -5335,6 +6190,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*家に帰ってきた。体育館でのダインの涙が浮かんでくる。いつも明るかったダインが隠していた痛み…その重さが胸に残っている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*De retour chez moi. Les larmes de Dain au gymnase me reviennent sans cesse. La douleur qu'elle cachait derrière sa gaieté constante... ça me pèse sur le cœur.*"
             }
         }
     },
@@ -5360,6 +6219,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*明日は…ダインが心から笑える一日になりますように。そばで見守ってあげよう。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Demain... je veux que ce soit un jour où Dain pourra sourire du fond du cœur. Je serai juste là, à ses côtés.*"
             }
         }
     },
@@ -5385,6 +6248,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*夜9時。先生から電話が来た。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*21 heures. Un appel de la professeure.*"
             }
         }
     },
@@ -5410,6 +6277,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…もしもし？私だけど。今…時間大丈夫？\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Allô ? C'est moi. Tu es... libre en ce moment ?\\\""
             }
         }
     },
@@ -5435,6 +6306,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*先生の声がいつもと違う。教室での堂々とした声じゃなくて…どこか疲れ切っている感じ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Sa voix est différente de d'habitude. Pas la voix assurée de la salle de classe... on dirait qu'elle est sur le point de craquer.*"
             }
         }
     },
@@ -5460,6 +6335,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…学校の近くのカフェ知ってるでしょ？そこでちょっと会えないかな。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Il y a un café près de l'école. On peut se retrouver là-bas ?\\\""
             }
         }
     },
@@ -5484,6 +6363,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*カフェに着いた。隅の席に先生が座っていた。いつものスーツ姿じゃなくて、カジュアルな服を着ている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je suis arrivé au café. Elle était assise dans un coin isolé. Au lieu de sa tenue soignée habituelle, elle portait des vêtements décontractés.*"
             }
         }
     },
@@ -5508,6 +6391,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…来てくれてありがとう。急に呼んでごめんね。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Merci d'être venu. Pardon de t'avoir appelé si soudainement.\\\""
             }
         }
     },
@@ -5565,6 +6452,14 @@ Object.assign(SCENARIO[4], {
                     "\"何かあったんですか？\"",
                     "コーヒーを渡して静かに待つ"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Ses yeux sont rouges. ...Elle pleurait ?*",
+                "choices": [
+                    "\\\"Il s'est passé quelque chose ?\\\"",
+                    "Lui offrir un café et attendre calmement"
+                ]
             }
         }
     },
@@ -5589,6 +6484,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…何かあったというより、今日はちょっと色々考えちゃって。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Ce n'est pas tant qu'il s'est passé quelque chose. J'ai juste... beaucoup réfléchi aujourd'hui.\\\""
             }
         }
     },
@@ -5613,6 +6512,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…ありがとう。こうやって何も言わずにそばにいてくれるの…あなたのそういうところ、好き。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Merci. Juste être assis à côté de moi sans rien dire... j'aime vraiment ça chez toi.\\\""
             }
         }
     },
@@ -5637,6 +6540,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…昨日の職員会議で教頭先生に言われたの。『生徒と個人的に親しくするのは気をつけるように』って。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...À la réunion des professeurs hier, le proviseur adjoint a dit : 'Faites attention à ne pas devenir trop proche personnellement des élèves.'\\\""
             }
         }
     },
@@ -5661,6 +6568,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"直接私たちのことを言ったわけじゃないかもしれない。でも…心臓が止まるかと思った。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"Ce n'était peut-être pas à propos de nous directement. Mais... mon cœur a failli s'arrêter.\\\""
             }
         }
     },
@@ -5685,6 +6596,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"私…先生なんだよ。あなたの担任なんだよ。こんなのダメだってわかってる。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"Je suis... une professeure. Ta professeure principale. Je sais que ce n'est pas bien.\\\""
             }
         }
     },
@@ -5709,6 +6624,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"……先生。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"......\\\""
             }
         }
     },
@@ -5733,6 +6652,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"でも帰り道、ずっとあなたのことが気になって。『今何してるかな』、『ご飯食べたかな』…って。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"Mais sur le chemin du retour, je n'arrêtais pas de penser à toi. 'Qu'est-ce qu'il fait en ce moment ?' 'Est-ce qu'il a mangé ?'...\\\""
             }
         }
     },
@@ -5757,6 +6680,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"教師として失格なのかな。それとも…この気持ちが本物だからこうなるのかな。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"Ne suis-je pas faite pour être enseignante ? Ou... est-ce parce que ces sentiments sont réels que je me sens ainsi ?\\\""
             }
         }
     },
@@ -5781,6 +6708,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*先生がコーヒーカップをぎゅっと握って頭を下げた。肩が微かに震えている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Elle a serré sa tasse de café et baissé la tête. Ses épaules tremblaient imperceptiblement.*"
             }
         }
     },
@@ -5805,6 +6736,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…はは、ごめんね。先生が生徒の前でこんな姿見せちゃダメだよね。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Ha, pardon. Une professeure ne devrait pas être comme ça devant un élève.\\\""
             }
         }
     },
@@ -5864,6 +6799,14 @@ Object.assign(SCENARIO[4], {
                     "手を握る",
                     "\"今は先生じゃなくて、ひとりの女性として見ていいですか\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Des larmes brillent au coin de ses yeux.*",
+                "choices": [
+                    "Lui prendre la main",
+                    "\\\"En ce moment, tu n'es pas ma prof — tu es une femme à qui je tiens\\\""
+                ]
             }
         }
     },
@@ -5888,6 +6831,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"……！\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...... !\\\""
             }
         }
     },
@@ -5912,6 +6859,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*テーブルの下で先生の手を握った。冷たかった手がだんだん温かくなった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ai glissé ma main sous la table et pris la sienne. Ses doigts froids se sont lentement réchauffés.*"
             }
         }
     },
@@ -5936,6 +6887,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…ここでこんなことしちゃダメなのに。誰かに見られたら。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...On ne devrait pas faire ça ici. Quelqu'un pourrait voir.\\\""
             }
         }
     },
@@ -5960,6 +6915,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…でも離したくない。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Mais je ne veux pas lâcher.\\\""
             }
         }
     },
@@ -5984,6 +6943,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…え？\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Quoi ?\\\""
             }
         }
     },
@@ -6008,6 +6971,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"先生である前に、ひとりの人間じゃないですか。泣きたい時は泣いていいんですよ。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Avant d'être professeure, tu es une personne. C'est normal de pleurer quand tu en as envie.\\\""
             }
         }
     },
@@ -6032,6 +6999,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"……あなたって、本当に。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Toi, franchement.\\\""
             }
         }
     },
@@ -6056,6 +7027,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…そんなこと言われたら本当に泣いちゃうよ、バカ。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Si tu dis des choses comme ça, je vais vraiment me mettre à pleurer, idiot.\\\""
             }
         }
     },
@@ -6080,6 +7055,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…あのね。私が初めて教師になった時、『絶対に生徒に感情を持たないようにしよう』って誓ったの。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Tu sais, quand je suis devenue professeure, je me suis promis de ne jamais tomber amoureuse d'un élève.\\\""
             }
         }
     },
@@ -6104,6 +7083,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"でもあなたは…いつの間にかその誓いを壊しちゃった。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"Mais tu es arrivé... et tu as brisé cette promesse avant même que je m'en rende compte.\\\""
             }
         }
     },
@@ -6128,6 +7111,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"遅刻して叱ったのに、むしろ笑って『先生、今日ちょっと疲れて見えます、大丈夫ですか？』って言うんだもん。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"Quand je t'ai grondé pour ton retard, tu as juste souri et dit : 'Vous avez l'air fatiguée aujourd'hui, ça va ?' au lieu de te justifier.\\\""
             }
         }
     },
@@ -6152,6 +7139,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"あの時から…ずっと気になり始めた。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"C'est là que... j'ai commencé à te remarquer.\\\""
             }
         }
     },
@@ -6221,6 +7212,15 @@ Object.assign(SCENARIO[4], {
                     "\"今この瞬間が大切です。それで十分です\"",
                     "\"先生が辛いならやめてもいいですよ\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Elle ouvre son cœur d'une voix tremblante.*",
+                "choices": [
+                    "\\\"Après mon diplôme, je me tiendrai fièrement à tes côtés\\\"",
+                    "\\\"Cet instant présent est précieux. Ça me suffit\\\"",
+                    "\\\"Si c'est trop dur pour toi, on peut arrêter\\\""
+                ]
             }
         }
     },
@@ -6245,6 +7245,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…卒業したら？\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Après ton diplôme ?\\\""
             }
         }
     },
@@ -6269,6 +7273,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…それまで待ってくれるの？\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Tu attendras jusque-là ?\\\""
             }
         }
     },
@@ -6293,6 +7301,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"待つんじゃなくて、その時までにもっとかっこいい人になって来ますよ。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Je n'attends pas — je vais devenir quelqu'un d'encore mieux d'ici là.\\\""
             }
         }
     },
@@ -6317,6 +7329,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…はぁ、もう。私よりずっと大人じゃん。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Mon Dieu, sérieusement. Tu es bien plus mature que moi.\\\""
             }
         }
     },
@@ -6341,6 +7357,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…今この瞬間？\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Cet instant présent ?\\\""
             }
         }
     },
@@ -6365,6 +7385,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"明日のことは明日心配しましょう。今はただ、一緒にいたいです。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"On s'inquiétera de demain quand il viendra. Pour l'instant, je veux juste être ici avec toi.\\\""
             }
         }
     },
@@ -6389,6 +7413,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…そうだよね。今この時間が大切なんだよね。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Tu as raison. Pour l'instant... ce temps ensemble est ce qui compte.\\\""
             }
         }
     },
@@ -6413,6 +7441,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…やめる？\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Arrêter ?\\\""
             }
         }
     },
@@ -6437,6 +7469,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…バカ。やめたくて悩んでるんじゃないの。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Idiot. Ce n'est pas parce que je veux arrêter que j'ai du mal.\\\""
             }
         }
     },
@@ -6461,6 +7497,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"あなたを好きな気持ちが本物だから…だから怖いの。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"C'est parce que mes sentiments sont réels... que ça me fait peur.\\\""
             }
         }
     },
@@ -6485,6 +7525,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…あのね。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Tu sais quoi ?\\\""
             }
         }
     },
@@ -6509,6 +7553,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"決めた。教師の立場なんて失ってもいい。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "J'ai pris ma décision. Peu importe si je perds mon poste d'enseignante."
             }
         }
     },
@@ -6533,6 +7581,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"もしバレたら…あなたを誰にも見えない私の部屋に閉じ込めちゃう。そうしたら一生私だけのものでしょ？\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "Si on se fait prendre... je t'enfermerai dans ma chambre où personne ne pourra te voir. Comme ça, il n'y aura que moi pour te voir, pour toujours, non ?"
             }
         }
     },
@@ -6557,6 +7609,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"……先生？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "......Professeure ?"
             }
         }
     },
@@ -6582,6 +7638,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"冗談じゃないよ。あなたはもう私の共犯者だから。絶対に逃がさない。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "Je ne plaisante pas. Tu es mon complice maintenant. Tu ne pourras jamais t'en sortir."
             }
         }
     },
@@ -6606,6 +7666,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*カフェを出た。夜道を並んで歩いた。先生が僕の手を指を絡めて握って、離さなかった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous avons quitté le café. Nous avons marché côte à côte dans la rue nocturne. La professeure a entrelacé ses doigts aux miens et n'a pas lâché.*"
             }
         }
     },
@@ -6630,6 +7694,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…学校ではまた厳しい先生のフリするね。他の子にバレたらいけないから。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "...Je ferai semblant d'être une prof stricte à l'école. On ne peut pas laisser les autres élèves s'en apercevoir."
             }
         }
     },
@@ -6654,6 +7722,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"秘密の恋愛ですね。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "Une romance secrète."
             }
         }
     },
@@ -6678,6 +7750,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"うん。だから…学校で他の女の子と仲良くしすぎないでね。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "Oui. Alors... ne te rapproche pas trop des autres filles à l'école."
             }
         }
     },
@@ -6702,6 +7778,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"先生の権限であなたをどう苦しめるかわからないよ。わかった？\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "Tu ne sais pas comment je pourrais te tourmenter en utilisant mon autorité de professeure. Compris ?"
             }
         }
     },
@@ -6726,6 +7806,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"…また明日ね。私の共犯者。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "...À demain. Mon complice."
             }
         }
     },
@@ -6750,6 +7834,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*家に帰ってきた。カフェでの先生の姿が浮かんでくる。いつも堂々として完璧だった先生が…ひとりの女性として見せた涙と震え。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*De retour chez moi. Son image au café me revient sans cesse. La professeure toujours sûre d'elle, parfaite... montrant ses larmes et sa vulnérabilité en tant que simple femme.*"
             }
         }
     },
@@ -6775,6 +7863,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*この秘密は重いけど…それだけ大切だ。先生のあの気持ちを絶対に軽く考えない。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Ce secret est redoutable... mais il est précieux. Je ne prendrai jamais ses sentiments à la légère.*"
             }
         }
     },
@@ -6800,6 +7892,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*夜10時。保健の先生からメッセージが来た。「まだ起きてる？時間あったらちょっと出てこれる？」*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*22 heures. Un message de l'infirmière. 'Encore debout ? Tu peux sortir un peu si tu as le temps ?'*"
             }
         }
     },
@@ -6823,6 +7919,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*…いつもみたいなふざけたメッセージだけど、なんでこの時間に？なんか変だ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...Son message joueur habituel, mais pourquoi si tard ? Quelque chose ne va pas.*"
             }
         }
     },
@@ -6846,6 +7946,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*すぐに返信した。「どこに行けばいいですか？」*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ai répondu tout de suite. 'Où est-ce que je dois aller ?'*"
             }
         }
     },
@@ -6869,6 +7973,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*「学校の保健室。裏口開けとくね。」…保健室で？*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*'L'infirmerie de l'école. Je laisserai la porte de derrière ouverte.' ...L'infirmerie ?*"
             }
         }
     },
@@ -6893,6 +8001,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*学校に着いた。保健室のドアを開けると、小さなスタンドライトだけが灯る暗い部屋に先生がいた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je suis arrivé à l'école. Quand j'ai ouvert la porte de l'infirmerie, la pièce était sombre, éclairée seulement par une petite lampe. Elle était là.*"
             }
         }
     },
@@ -6917,6 +8029,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"わぁ、本当に来たんだ。こんな夜中に呼び出しても来てくれるの？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Waouh, tu es vraiment venu. Même si je t'ai fait venir si tard ?\\\""
             }
         }
     },
@@ -6974,6 +8090,14 @@ Object.assign(SCENARIO[4], {
                     "\"先生、すごく疲れて見えますよ\"",
                     "\"本当の理由は何ですか？\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Elle sourit comme d'habitude, mais... il y a des cernes sous ses yeux. Et plusieurs canettes de café vides sur le bureau.*",
+                "choices": [
+                    "\\\"Tu as l'air vraiment fatiguée\\\"",
+                    "\\\"C'est quoi la vraie raison pour laquelle tu m'as fait venir ?\\\""
+                ]
             }
         }
     },
@@ -6998,6 +8122,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"そう？最近ちょっとバタバタしてたかも。大丈夫、大したことないよ。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Tu trouves ? C'était une semaine mouvementée. Mais ça va, vraiment.\\\""
             }
         }
     },
@@ -7022,6 +8150,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…本当の理由？…会いたかったから。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...La vraie raison ? ...Je voulais te voir.\\\""
             }
         }
     },
@@ -7046,6 +8178,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*先生は笑っているけど、どこか無理している感じがする。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Elle sourit, mais quelque chose semble forcé. Comme si elle en faisait trop.*"
             }
         }
     },
@@ -7070,6 +8206,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…あのね、今日学校でちょっと辛いことがあって。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...En fait, un truc un peu dur s'est passé à l'école aujourd'hui.\\\""
             }
         }
     },
@@ -7094,6 +8234,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"他の先生たちに言われたの。『保健の先生はいつも明るくていいね、悩みなさそう』って。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Les autres profs ont dit : 'L'infirmière est toujours si joyeuse — ça doit être bien de ne pas avoir de soucis.'\\\""
             }
         }
     },
@@ -7118,6 +8262,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…悩みなさそう。あはは。その言葉が一番痛かった。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...'Pas de soucis.' Haha. Celle-là... c'est celle qui a fait le plus mal.\\\""
             }
         }
     },
@@ -7142,6 +8290,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"私だって辛いのに…誰も聞いてくれないんだよね。『大丈夫？』のひとことも。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Moi aussi j'avais du mal... mais personne n'a demandé. Pas une seule fois. Pas un seul 'ça va ?'\\\""
             }
         }
     },
@@ -7166,6 +8318,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"保健室に子供たちが来るたびに笑顔で接して、癒してあげて。でも…私のことは誰が癒してくれるの？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"À l'infirmerie, les élèves viennent et je leur souris, je prends soin d'eux. Mais... qui prend soin de moi ?\\\""
             }
         }
     },
@@ -7190,6 +8346,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…家に帰っても誰もいないの。一人暮らしだから。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Quand je rentre chez moi, il n'y a personne. Je vis seule.\\\""
             }
         }
     },
@@ -7214,6 +8374,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"だから…つい学校に遅くまで残っちゃう。この保健室にいれば寂しくないから。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Alors... j'ai commencé à rester tard à l'école. Au moins dans cette infirmerie, je ne me sens pas si seule.\\\""
             }
         }
     },
@@ -7238,6 +8402,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*先生が笑顔をやめた。初めてふざけない、本当の顔を見せてくれている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Son sourire s'est effacé. Pour la première fois, elle me montre son vrai visage — sans les blagues, sans les taquineries.*"
             }
         }
     },
@@ -7297,6 +8465,14 @@ Object.assign(SCENARIO[4], {
                     "隣に座って抱きしめる",
                     "\"これからは僕が先生のことを看てあげますよ\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je peux voir la vraie elle maintenant. Que dire ?*",
+                "choices": [
+                    "S'asseoir à côté d'elle et la serrer dans ses bras",
+                    "\\\"Désormais, c'est moi qui prendrai soin de toi\\\""
+                ]
             }
         }
     },
@@ -7321,6 +8497,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"……！！\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...... !!\\\""
             }
         }
     },
@@ -7345,6 +8525,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…ちょっと、急に…何…\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Hé, tout d'un coup... qu'est-ce que tu...\\\""
             }
         }
     },
@@ -7369,6 +8553,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*先生は最初戸惑ったけど…すぐに僕の服をぎゅっと握った。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Elle a d'abord été surprise... mais bientôt ses mains ont agrippé mes vêtements.*"
             }
         }
     },
@@ -7393,6 +8581,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…変だな。人に抱きしめてもらいたいと思ったこと、あったっけ。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...C'est bizarre. Est-ce que j'ai déjà voulu que quelqu'un me serre comme ça ?\\\""
             }
         }
     },
@@ -7417,6 +8609,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…もうちょっとだけこのままでいよう。ちょっとだけ。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Restons juste comme ça. Encore un peu.\\\""
             }
         }
     },
@@ -7441,6 +8637,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…え？あなたが私を？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Quoi ? Tu prendras soin de moi ?\\\""
             }
         }
     },
@@ -7465,6 +8665,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"先生はいつも他の人を看ているじゃないですか。今度は看てもらう番ですよ。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Tu prends toujours soin des autres. C'est à ton tour qu'on prenne soin de toi.\\\""
             }
         }
     },
@@ -7489,6 +8693,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…あはは。よくそうやって急所突いてくるよね。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Ha. Comment tu fais pour toujours toucher là où ça fait mal ?\\\""
             }
         }
     },
@@ -7513,6 +8721,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…本当にそうしてくれる？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Tu le penses vraiment ?\\\""
             }
         }
     },
@@ -7537,6 +8749,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…実は、保健教師になった理由があるの。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...En fait, il y a une raison pour laquelle je suis devenue infirmière scolaire.\\\""
             }
         }
     },
@@ -7561,6 +8777,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"高校の時、仲のいい友達が病気で長い間欠席したの。その時の保健室の先生が本当によく面倒見てくれて。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Au lycée, une amie proche est tombée malade et a été absente longtemps. L'infirmière scolaire de l'époque a vraiment pris soin d'elle.\\\""
             }
         }
     },
@@ -7585,6 +8805,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"私もそういう人になりたかった。辛い子たちの味方になれる人。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Je voulais être quelqu'un comme ça aussi. Quelqu'un qui est là pour les jeunes quand ils souffrent.\\\""
             }
         }
     },
@@ -7609,6 +8833,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"でもいざなってみたら…『冗談ばかり言う保健の先生』扱い。本物の先生じゃないって。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Mais en réalité... ils me voyaient juste comme 'l'infirmière qui rigole tout le temps.' Pas une vraie enseignante.\\\""
             }
         }
     },
@@ -7633,6 +8861,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"真面目にすると雰囲気壊すって言われるから…自然と笑いで隠すようになった。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"On disait qu'être sérieuse gâcherait l'ambiance, alors... j'ai naturellement commencé à me cacher derrière les rires.\\\""
             }
         }
     },
@@ -7657,6 +8889,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…あなたにもそうだった。ふざけながら近づいた。本心を見せるのが…怖かったから。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...J'ai fait pareil avec toi. T'approcher avec des blagues et des taquineries. Parce que montrer mes vrais sentiments... c'était terrifiant.\\\""
             }
         }
     },
@@ -7726,6 +8962,15 @@ Object.assign(SCENARIO[4], {
                     "\"本心を見せてくれてありがとうございます\"",
                     "\"もう怖がらなくていいですよ。僕がいますから\""
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Sa voix tremble.*",
+                "choices": [
+                    "\\\"J'aime la toi espiègle et la vraie toi — tout\\\"",
+                    "\\\"Merci de me montrer la vraie toi\\\"",
+                    "\\\"Tu n'as plus besoin d'avoir peur. Je suis là\\\""
+                ]
             }
         }
     },
@@ -7750,6 +8995,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…全部？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Tout ?\\\""
             }
         }
     },
@@ -7774,6 +9023,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…そう言ってくれたのは、あなたが初めて。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Tu es la première personne à m'avoir dit ça.\\\""
             }
         }
     },
@@ -7798,6 +9051,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…初めてだから、どう反応していいかわかんない。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Je ne sais même pas comment réagir. C'est une première.\\\""
             }
         }
     },
@@ -7822,6 +9079,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…ありがとう？私に？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Reconnaissant ? Envers moi ?\\\""
             }
         }
     },
@@ -7846,6 +9107,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…あなたに本心を見せるのがこんなに楽だとは思わなかった。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Je ne savais pas qu'être honnête avec toi pouvait être aussi apaisant.\\\""
             }
         }
     },
@@ -7870,6 +9135,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…怖がらなくていいの？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Je n'ai plus besoin d'avoir peur ?\\\""
             }
         }
     },
@@ -7894,6 +9163,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…もしかしたらあなたが一番楽なのかも。不思議だよね。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Tu es peut-être la personne avec qui je me sens le plus à l'aise. C'est drôle, non ?\\\""
             }
         }
     },
@@ -7918,6 +9191,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…あのね。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Tu sais quoi ?\\\""
             }
         }
     },
@@ -7942,6 +9219,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"これからはあなたの前ではもう仮面はつけない。その代わり…あなたをこの保健室に永遠に閉じ込めたい。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "Je ne porterai plus de masque devant toi. En échange... je veux t'enfermer dans cette infirmerie pour toujours."
             }
         }
     },
@@ -7966,6 +9247,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"一生看病してあげるから…ずっと体調悪くしててほしい。私だけに頼るように。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "Je te soignerai toute ma vie... alors je veux que tu restes malade. Pour que tu ne comptes que sur moi."
             }
         }
     },
@@ -7990,6 +9275,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"……先生？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "......Professeure ?"
             }
         }
     },
@@ -8015,6 +9304,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"冗談だよ。…半分は。だから怪我したら絶対私のところに来てね。よそに行ったら本気で怒るから。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "Je plaisante. ...À moitié. Alors si tu te blesses, viens directement me voir. Si tu vas ailleurs, je serai vraiment en colère."
             }
         }
     },
@@ -8039,6 +9332,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*保健室を出て学校の外を歩いた。先生が僕の腕をぎゅっと組んで離さなかった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Nous avons quitté l'infirmerie et sommes sortis de l'école. Elle a enlacé mon bras fermement et ne voulait pas lâcher.*"
             }
         }
     },
@@ -8063,6 +9360,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…明日学校来たら、一番に保健室に寄ってね。出席チェックするから。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "...Quand tu viendras à l'école demain, passe d'abord par l'infirmerie. Je prendrai les présences."
             }
         }
     },
@@ -8087,6 +9388,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "\"ダサいんじゃなくて、素直なんですよ。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Ce n'était pas gênant — c'était honnête.\\\""
             }
         }
     },
@@ -8111,6 +9416,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…不思議。あなたの前だとどんどん素直になっちゃう。私らしくないのに。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...C'est étrange. Près de toi, je n'arrête pas d'être honnête. Ça ne me ressemble pas du tout.\\\""
             }
         }
     },
@@ -8135,6 +9444,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…学校でまた会ったら、いつも通りにするよ。でも目は誤魔化せないと思う。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Quand on se reverra à l'école, j'agirai normalement. Mais mes yeux ne pourront pas le cacher.\\\""
             }
         }
     },
@@ -8159,6 +9472,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…だからよく見てね。保健室の前を通る時…一回くらいは。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Alors fais attention. Quand tu passeras devant l'infirmerie... juste un regard.\\\""
             }
         }
     },
@@ -8183,6 +9500,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*家に帰ってきた。保健室で見た先生の本当の顔が浮かんでくる。いつもふざけて笑っていた人が…実は一番寂しかった人。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*De retour chez moi. Le vrai visage qu'elle m'a montré à l'infirmerie ne cesse de repasser. La personne qui blaguait et riait toujours... était en fait la plus solitaire de toutes.*"
             }
         }
     },
@@ -8208,6 +9529,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*もう先生はひとりじゃない。僕がいるから。明日は本当の笑顔が見れるといいな。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Elle n'est plus seule. Je suis là. Demain, je veux voir son vrai sourire.*"
             }
         }
     },
@@ -8230,6 +9555,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*…今日言えたのに。あの夕焼けの下で、完璧な瞬間だったのに。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...J'aurais pu le dire aujourd'hui. Sous ce coucher de soleil, c'était le moment parfait.*"
             }
         }
     },
@@ -8252,6 +9581,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*大丈夫。明日がある。明日こそ必ず…気持ちを伝えよう。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Ce n'est pas grave. Il y a demain. Demain, je vais... leur dire ce que je ressens, c'est sûr.*"
             }
         }
     },
@@ -8274,6 +9607,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "(スマホにメッセージが来た。「今日は楽しかった。明日も時間ある？」)"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "(Un message est arrivé sur mon téléphone. \\\"Je me suis bien amusé(e) aujourd'hui. Tu es libre demain aussi ?\\\")"
             }
         }
     },
@@ -8296,6 +9633,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "(「うん、明日も会おう。」明日こそ絶対言うんだ。)"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "(\\\"Oui, retrouvons-nous demain.\\\" Je le dirai demain, c'est sûr.)"
             }
         }
     },
@@ -8318,6 +9659,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*土曜日がこうして過ぎていった。明日は…何しよう？*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Et comme ça, le samedi est passé. Demain... que devrais-je faire ?*"
             }
         }
     },
@@ -8341,6 +9686,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*目を閉じるとあの人の顔が浮かぶ。このまま眠ってしまってもいい。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Quand je ferme les yeux, leur visage apparaît. Ça ne me dérangerait pas de m'endormir comme ça.*"
             }
         }
     },
@@ -8367,6 +9716,10 @@ Object.assign(SCENARIO[4], {
             "ja": {
                 "name": "僕",
                 "text": "*土曜の夜が更けていく…明日は日曜日、最後の日だ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*La nuit de samedi s'approfondit... Demain, c'est dimanche, le dernier jour.*"
             }
         }
     }

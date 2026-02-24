@@ -37,6 +37,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*家に着いた。金曜の夜…明日から週末だ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*I'm home. Friday night... Tomorrow starts the weekend.*"
             }
         }
     },
@@ -72,6 +76,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*ベッドに横になって今日一日を振り返る。昼休みのこと…放課後のこと…*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Lying on the bed, I reflect on today. What happened at lunch... what happened after school...*"
             }
         }
     },
@@ -94,6 +102,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*昼休みに全部バレた…週末は無事に過ごせるだろうか？*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Everyone found out at lunch... Can the weekend go smoothly?*"
             }
         }
     },
@@ -116,6 +128,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*複数の約束を入れてしまった…時間配分をうまくやらないと。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*I made multiple plans... I need to manage my time well.*"
             }
         }
     },
@@ -138,6 +154,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*明日が楽しみだ。どんな一日になるだろう？*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*I'm looking forward to tomorrow. What kind of day will it be?*"
             }
         }
     },
@@ -188,6 +208,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*スマホを確認する。メッセージが来ている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*I check my smartphone. There are messages.*"
             }
         }
     },
@@ -210,6 +234,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*メッセージが複数来ている…心臓がドキドキする。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*There are multiple messages... My heart is pounding.*"
             }
         }
     },
@@ -288,6 +316,18 @@ Object.assign(SCENARIO[3], {
                     "担任先生のメッセージ",
                     "そのまま寝る"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Which message should I check first?*",
+                "choices": [
+                    "Seoyeon's message",
+                    "Yuna's message",
+                    "Dain's message",
+                    "School Nurse's message",
+                    "Homeroom Teacher's message",
+                    "Just go to sleep"
+                ]
             }
         }
     },
@@ -324,6 +364,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ソヨン",
+                "text": "*Message: 10 PM* '{name}, are you still awake? I'm so excited for tomorrow!'"
+            },
+            "fr": {
+                "name": "Seoyeon",
                 "text": "*Message: 10 PM* '{name}, are you still awake? I'm so excited for tomorrow!'"
             }
         }
@@ -395,6 +439,15 @@ Object.assign(SCENARIO[3], {
                     "'Let me be honest...'",
                     "*Leave on read*"
                 ]
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Additional message* 'But... you're only meeting me, right? No other plans?'",
+                "choices": [
+                    "'Yes, only you!'",
+                    "'Let me be honest...'",
+                    "*Leave on read*"
+                ]
             }
         }
     },
@@ -419,6 +472,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "ソヨン",
                 "text": "'Really? I trust you! See you tomorrow! 💕'"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "'Really? I trust you! See you tomorrow! 💕'"
             }
         }
     },
@@ -442,6 +499,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ソヨン",
+                "text": "'...What? You have other plans? With who?'"
+            },
+            "fr": {
+                "name": "Seoyeon",
                 "text": "'...What? You have other plans? With who?'"
             }
         }
@@ -468,6 +529,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "ソヨン",
                 "text": "'...Fine. We'll see this weekend.'"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "'...Fine. We'll see this weekend.'"
             }
         }
     },
@@ -491,6 +556,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*I didn't reply. Seoyeon will probably be disappointed...*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*I didn't reply. Seoyeon will probably be disappointed...*"
             }
         }
@@ -561,6 +630,15 @@ Object.assign(SCENARIO[3], {
                     "'You're the most important to me'",
                     "*Leave on read*"
                 ]
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Additional message* 'About lunch today... it's still bothering me. Please be honest with me.'",
+                "choices": [
+                    "'Sorry, I couldn't say no to anyone...'",
+                    "'You're the most important to me'",
+                    "*Leave on read*"
+                ]
             }
         }
     },
@@ -584,6 +662,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ソヨン",
+                "text": "'...Thanks for being honest. But I don't like sharing with others.'"
+            },
+            "fr": {
+                "name": "Seoyeon",
                 "text": "'...Thanks for being honest. But I don't like sharing with others.'"
             }
         }
@@ -609,6 +691,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ソヨン",
+                "text": "'...Really? I'll remember that. Prove it tomorrow.'"
+            },
+            "fr": {
+                "name": "Seoyeon",
                 "text": "'...Really? I'll remember that. Prove it tomorrow.'"
             }
         }
@@ -668,6 +754,14 @@ Object.assign(SCENARIO[3], {
                     "'I'll leave it to you! Good night!'",
                     "'Thanks, see you tomorrow!'"
                 ]
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "'Have you decided where to go tomorrow? You can leave it to me! Good night! 😊'",
+                "choices": [
+                    "'I'll leave it to you! Good night!'",
+                    "'Thanks, see you tomorrow!'"
+                ]
             }
         }
     },
@@ -690,6 +784,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*Finished chatting with Seoyeon.*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*Finished chatting with Seoyeon.*"
             }
         }
@@ -728,6 +826,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "ユナ",
                 "text": "*Message: 11:59 PM* '...{name}. Tomorrow night. Don't forget.'"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "*Message: 11:59 PM* '...{name}. Tomorrow night. Don't forget.'"
             }
         }
     },
@@ -751,6 +853,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ユナ",
+                "text": "*Additional message* 'Today after school... I saw you leaving with Seoyeon.'"
+            },
+            "fr": {
+                "name": "Yuna",
                 "text": "*Additional message* 'Today after school... I saw you leaving with Seoyeon.'"
             }
         }
@@ -822,6 +928,15 @@ Object.assign(SCENARIO[3], {
                     "'Seoyeon and I are just friends'",
                     "'...Sorry'"
                 ]
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "'If you lie to me... you'll regret it.'",
+                "choices": [
+                    "'You're the most important to me'",
+                    "'Seoyeon and I are just friends'",
+                    "'...Sorry'"
+                ]
             }
         }
     },
@@ -845,6 +960,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ユナ",
+                "text": "'...Really? I'll believe that. But if you betray me...'"
+            },
+            "fr": {
+                "name": "Yuna",
                 "text": "'...Really? I'll believe that. But if you betray me...'"
             }
         }
@@ -871,6 +990,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "ユナ",
                 "text": "'...You know, right? 😊'"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "'...You know, right? 😊'"
             }
         }
     },
@@ -894,6 +1017,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ユナ",
+                "text": "'...Okay. Friends. I'll believe you.'"
+            },
+            "fr": {
+                "name": "Yuna",
                 "text": "'...Okay. Friends. I'll believe you.'"
             }
         }
@@ -920,6 +1047,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "ユナ",
                 "text": "'...We'll talk when we meet tomorrow. Don't run away.'"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "'...We'll talk when we meet tomorrow. Don't run away.'"
             }
         }
     },
@@ -943,6 +1074,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ユナ",
+                "text": "*Additional message* '...You made promises with others too, didn't you?'"
+            },
+            "fr": {
+                "name": "Yuna",
                 "text": "*Additional message* '...You made promises with others too, didn't you?'"
             }
         }
@@ -968,6 +1103,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ユナ",
+                "text": "'It's okay. You'll come to me in the end.'"
+            },
+            "fr": {
+                "name": "Yuna",
                 "text": "'It's okay. You'll come to me in the end.'"
             }
         }
@@ -1027,6 +1166,14 @@ Object.assign(SCENARIO[3], {
                     "'Yeah, good night'",
                     "'What kind of dreams?'"
                 ]
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "'...See you in your dreams.'",
+                "choices": [
+                    "'Yeah, good night'",
+                    "'What kind of dreams?'"
+                ]
             }
         }
     },
@@ -1051,6 +1198,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "ユナ",
                 "text": "'...Secret. I'll tell you tomorrow night.'"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "'...Secret. I'll tell you tomorrow night.'"
             }
         }
     },
@@ -1072,6 +1223,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*Finished chatting with Yuna.*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*Finished chatting with Yuna.*"
             }
         }
@@ -1105,6 +1260,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ダイン",
+                "text": "*Message: 9 PM* 'Hey!! 9 AM at the gym tomorrow!! Don't be late!!! 😤'"
+            },
+            "fr": {
+                "name": "Dain",
                 "text": "*Message: 9 PM* 'Hey!! 9 AM at the gym tomorrow!! Don't be late!!! 😤'"
             }
         }
@@ -1176,6 +1335,15 @@ Object.assign(SCENARIO[3], {
                     "'I do have other plans...'",
                     "'The times are different so it's fine'"
                 ]
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "*Additional message* 'But... did you really make plans with others too? I heard at lunch.'",
+                "choices": [
+                    "'Your practice is most important!'",
+                    "'I do have other plans...'",
+                    "'The times are different so it's fine'"
+                ]
             }
         }
     },
@@ -1201,6 +1369,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "ダイン",
                 "text": "'Really?! Hehe, then it's fine! I'll show you something cool tomorrow!'"
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "'Really?! Hehe, then it's fine! I'll show you something cool tomorrow!'"
             }
         }
     },
@@ -1225,6 +1397,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "ダイン",
                 "text": "'...I see? Well, can't help it. But you HAVE to come to my practice!'"
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "'...I see? Well, can't help it. But you HAVE to come to my practice!'"
             }
         }
     },
@@ -1248,6 +1424,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ダイン",
+                "text": "'Hmm... well, if the times work out, I guess it's okay. But focus on me!'"
+            },
+            "fr": {
+                "name": "Dain",
                 "text": "'Hmm... well, if the times work out, I guess it's okay. But focus on me!'"
             }
         }
@@ -1307,6 +1487,14 @@ Object.assign(SCENARIO[3], {
                     "'Sounds great! Looking forward to it!'",
                     "'lol okay!'"
                 ]
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "*Additional message* 'Let's go get tteokbokki after practice! My treat! 🍜'",
+                "choices": [
+                    "'Sounds great! Looking forward to it!'",
+                    "'lol okay!'"
+                ]
             }
         }
     },
@@ -1329,6 +1517,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*Finished chatting with Dain.*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*Finished chatting with Dain.*"
             }
         }
@@ -1354,6 +1546,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "保健先生",
+                "text": "*Message: 11 PM* 'My cute transfer student, still awake? Hehe.'"
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
                 "text": "*Message: 11 PM* 'My cute transfer student, still awake? Hehe.'"
             }
         }
@@ -1412,6 +1608,14 @@ Object.assign(SCENARIO[3], {
                     "'I'm looking forward to it!'",
                     "'What is it?'"
                 ]
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "'You haven't forgotten Sunday evening, right? I'll prepare something special. 😉'",
+                "choices": [
+                    "'I'm looking forward to it!'",
+                    "'What is it?'"
+                ]
             }
         }
     },
@@ -1435,6 +1639,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "保健先生",
+                "text": "'You can look forward to it. Sleep well and see you Sunday, {name}. 💋'"
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
                 "text": "'You can look forward to it. Sleep well and see you Sunday, {name}. 💋'"
             }
         }
@@ -1460,6 +1668,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "保健先生",
                 "text": "'It's a secret. You'll find out on Sunday. Look forward to it.'"
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "'It's a secret. You'll find out on Sunday. Look forward to it.'"
             }
         }
     },
@@ -1484,6 +1696,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "担任先生",
+                "text": "*Message: 10 PM* '{name}, you haven't forgotten about the museum on Sunday, have you?'"
+            },
+            "fr": {
+                "name": "Professeur Principal",
                 "text": "*Message: 10 PM* '{name}, you haven't forgotten about the museum on Sunday, have you?'"
             }
         }
@@ -1542,6 +1758,14 @@ Object.assign(SCENARIO[3], {
                     "'Yes, I'm excited!'",
                     "'Good night!'"
                 ]
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "'I'm excited since it's been a while since I had an outing. Sunday at 2 PM, museum entrance.'",
+                "choices": [
+                    "'Yes, I'm excited!'",
+                    "'Good night!'"
+                ]
             }
         }
     },
@@ -1565,6 +1789,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "担任先生",
+                "text": "'Alright, sleep well and see you Sunday. Good night.'"
+            },
+            "fr": {
+                "name": "Professeur Principal",
                 "text": "'Alright, sleep well and see you Sunday. Good night.'"
             }
         }
@@ -1650,6 +1878,18 @@ Object.assign(SCENARIO[3], {
                     "担任先生のメッセージ",
                     "Go to sleep"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Devrais-je consulter d'autres messages ?*",
+                "choices": [
+                    "Seoyeon's message",
+                    "Yuna's message",
+                    "Dain's message",
+                    "School Nurse's message",
+                    "Homeroom Teacher's message",
+                    "Go to sleep"
+                ]
             }
         }
     },
@@ -1693,6 +1933,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*There's a message.*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*There's a message.*"
             }
         }
     },
@@ -1714,6 +1958,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*No special messages. What should I do this weekend...*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*No special messages. What should I do this weekend...*"
             }
         }
@@ -1748,6 +1996,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*I decided to just sleep without checking messages. I'll read them tomorrow morning...*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*I decided to just sleep without checking messages. I'll read them tomorrow morning...*"
             }
         }
@@ -1796,6 +2048,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*Just as my eyes are closing... my phone rings. A call.*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Just as my eyes are closing... my phone rings. A call.*"
             }
         }
     },
@@ -1819,6 +2075,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ソヨン",
+                "text": "*I answer the phone to hear Seoyeon's voice* \"...{name}? I know it's time to sleep. But... I wanted to hear your voice.\""
+            },
+            "fr": {
+                "name": "Seoyeon",
                 "text": "*I answer the phone to hear Seoyeon's voice* \"...{name}? I know it's time to sleep. But... I wanted to hear your voice.\""
             }
         }
@@ -1850,6 +2110,11 @@ Object.assign(SCENARIO[3], {
                 "name": "僕",
                 "text": "*Having a late-night call with Seoyeon. Her voice sounds softer than usual in the dark room.*",
                 "context": "深夜の電話。ソヨンが「声が聞きたかった」と電話してきた。甘い深夜の通話。ソヨンが寝る前に急に電話してきた。"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Having a late-night call with Seoyeon. Her voice sounds softer than usual in the dark room.*",
+                "context": "Late-night phone call. Seoyeon called saying 'I wanted to hear your voice.' A sweet late-night conversation. Seoyeon suddenly called before bed."
             }
         }
     },
@@ -1873,6 +2138,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ユナ",
+                "text": "*I answer the phone to hear Yuna's voice* \"...I know it's time to sleep. But... I can't fall asleep.\""
+            },
+            "fr": {
+                "name": "Yuna",
                 "text": "*I answer the phone to hear Yuna's voice* \"...I know it's time to sleep. But... I can't fall asleep.\""
             }
         }
@@ -1904,6 +2173,11 @@ Object.assign(SCENARIO[3], {
                 "name": "僕",
                 "text": "*Having a late-night call with Yuna. Her quiet breathing reaches my ear.*",
                 "context": "深夜の電話。ユナが「眠れない」と電話してきた。静かで親密な深夜の通話。ユナの小さな息遣いが近くに聞こえるような雰囲気。"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Having a late-night call with Yuna. Her quiet breathing reaches my ear.*",
+                "context": "Late-night phone call. Yuna called saying 'I can't fall asleep.' A quiet and intimate late-night conversation. Her soft breathing feels close."
             }
         }
     },
@@ -1927,6 +2201,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "ダイン",
+                "text": "*I answer the phone to hear Dain's voice* \"...Hey, I know it's late. But thinking about tomorrow, I can't sleep!\""
+            },
+            "fr": {
+                "name": "Dain",
                 "text": "*I answer the phone to hear Dain's voice* \"...Hey, I know it's late. But thinking about tomorrow, I can't sleep!\""
             }
         }
@@ -1958,6 +2236,11 @@ Object.assign(SCENARIO[3], {
                 "name": "僕",
                 "text": "*Having a late-night call with Dain. Instead of her usual energy, her quiet voice feels new.*",
                 "context": "深夜の電話。ダインが「明日のこと考えたら眠れなくて」と電話してきた。いつもと違って静かなダイン。柔らかい深夜の雰囲気。"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Having a late-night call with Dain. Instead of her usual energy, her quiet voice feels new.*",
+                "context": "Late-night phone call. Dain called saying 'Thinking about tomorrow, I can't sleep!' Unusually quiet Dain. A soft late-night atmosphere."
             }
         }
     },
@@ -1981,6 +2264,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "保健先生",
+                "text": "*I answer the phone to hear the nurse's voice* \"...{name}? Still awake? I couldn't sleep either.\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
                 "text": "*I answer the phone to hear the nurse's voice* \"...{name}? Still awake? I couldn't sleep either.\""
             }
         }
@@ -2012,6 +2299,11 @@ Object.assign(SCENARIO[3], {
                 "name": "僕",
                 "text": "*Having a late-night call with the school nurse. Her low voice reaches my ear.*",
                 "context": "深夜の電話。保健先生が「眠れなくて」と電話してきた。先生の低く優しい声。禁断の恋の深夜通話。"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Having a late-night call with the school nurse. Her low voice reaches my ear.*",
+                "context": "Late-night phone call. The school nurse called saying 'I couldn't sleep.' Her low, gentle voice. A forbidden love's late-night call."
             }
         }
     },
@@ -2035,6 +2327,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "担任先生",
+                "text": "*I answer the phone to hear the teacher's voice* \"...{name}? Still awake? I know it's bedtime, but...\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
                 "text": "*I answer the phone to hear the teacher's voice* \"...{name}? Still awake? I know it's bedtime, but...\""
             }
         }
@@ -2066,6 +2362,11 @@ Object.assign(SCENARIO[3], {
                 "name": "僕",
                 "text": "*Having a late-night call with the homeroom teacher. Her quiet voice sounds close.*",
                 "context": "深夜の電話。担任先生が「寝る時間なのはわかってるんだけど…」と電話してきた。先生の静かな声。禁断の恋の深夜通話。"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Having a late-night call with the homeroom teacher. Her quiet voice sounds close.*",
+                "context": "Late-night phone call. The homeroom teacher called saying 'I know it's bedtime, but...' Her quiet voice. A forbidden love's late-night call."
             }
         }
     },
@@ -2090,6 +2391,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*I hang up and put down my phone. The lingering echo of her voice... makes my heart race.*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*I hang up and put down my phone. The lingering echo of her voice... makes my heart race.*"
             }
         }
     },
@@ -2113,6 +2418,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*My eyes are closing. Tomorrow is Saturday... What kind of day will it be.*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*My eyes are closing. Tomorrow is Saturday... What kind of day will it be.*"
             }
         }
@@ -2144,6 +2453,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*Multiple plans swirl through my mind. Can I satisfy everyone...?*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*Multiple plans swirl through my mind. Can I satisfy everyone...?*"
             }
         }
@@ -2183,6 +2496,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*...I dream. Voices echo from a dark space.*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...I dream. Voices echo from a dark space.*"
             }
         }
     },
@@ -2219,6 +2536,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "???",
                 "text": "*Seoyeon's voice echoes* \"...You'll only see me, right? You promised. We pinky swore...\""
+            },
+            "fr": {
+                "name": "???",
+                "text": "*Seoyeon's voice echoes* \"...You'll only see me, right? You promised. We pinky swore...\""
             }
         }
     },
@@ -2251,6 +2572,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "???",
                 "text": "*Yuna's voice whispers coldly* \"...I said you'd regret it if you betray me, remember?\""
+            },
+            "fr": {
+                "name": "???",
+                "text": "*Yuna's voice whispers coldly* \"...I said you'd regret it if you betray me, remember?\""
             }
         }
     },
@@ -2273,6 +2598,10 @@ Object.assign(SCENARIO[3], {
                 "text": "*Dain's voice trembles* \"...Idiot! You said you'd come! You said you wouldn't stand me up...\""
             },
             "ja": {
+                "name": "???",
+                "text": "*Dain's voice trembles* \"...Idiot! You said you'd come! You said you wouldn't stand me up...\""
+            },
+            "fr": {
                 "name": "???",
                 "text": "*Dain's voice trembles* \"...Idiot! You said you'd come! You said you wouldn't stand me up...\""
             }
@@ -2338,6 +2667,16 @@ Object.assign(SCENARIO[3], {
                     "*Take Dain's hand*",
                     "*Don't take anyone's hand*"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Hands reach out from the darkness. Whose hand will I take...*",
+                "choices": [
+                    "*Take Seoyeon's hand*",
+                    "*Take Yuna's hand*",
+                    "*Take Dain's hand*",
+                    "*Don't take anyone's hand*"
+                ]
             }
         }
     },
@@ -2360,6 +2699,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*I reached out, but... there was nothing to hold. Everyone vanished, leaving only darkness and regret.*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*I reached out, but... there was nothing to hold. Everyone vanished, leaving only darkness and regret.*"
             }
         }
@@ -2384,6 +2727,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*...I snap awake. My heart is pounding like crazy. It was a dream. But... what will tomorrow bring?*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*...I snap awake. My heart is pounding like crazy. It was a dream. But... what will tomorrow bring?*"
             }
         }
@@ -2436,6 +2783,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*A peaceful night. I'm looking forward to tomorrow.*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*A peaceful night. I'm looking forward to tomorrow.*"
             }
         }
     },
@@ -2464,6 +2815,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*...Just thinking about Seoyeon makes me smile. Tomorrow is our time together. I'll make sure to tell her how I truly feel.*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*...Just thinking about Seoyeon makes me smile. Tomorrow is our time together. I'll make sure to tell her how I truly feel.*"
             }
         }
@@ -2494,6 +2849,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*...Just thinking about Yuna makes my heart race. Tomorrow night, just the two of us. Will I finally see the real Yuna?*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...Just thinking about Yuna makes my heart race. Tomorrow night, just the two of us. Will I finally see the real Yuna?*"
             }
         }
     },
@@ -2522,6 +2881,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*...Thinking of Dain's smile makes me smile too. I wonder how happy she'll be when I show up to watch her practice tomorrow.*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*...Thinking of Dain's smile makes me smile too. I wonder how happy she'll be when I show up to watch her practice tomorrow.*"
             }
         }
@@ -2552,6 +2915,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*...The school nurse's face comes to mind. It's a forbidden relationship, but... I can't hide these feelings.*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...The school nurse's face comes to mind. It's a forbidden relationship, but... I can't hide these feelings.*"
             }
         }
     },
@@ -2581,6 +2948,10 @@ Object.assign(SCENARIO[3], {
             "ja": {
                 "name": "僕",
                 "text": "*...The homeroom teacher's smile comes to mind. We're teacher and student, but... my feelings are real.*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...The homeroom teacher's smile comes to mind. We're teacher and student, but... my feelings are real.*"
             }
         }
     },
@@ -2606,6 +2977,10 @@ Object.assign(SCENARIO[3], {
             },
             "ja": {
                 "name": "僕",
+                "text": "*Friday night deepens... Tomorrow is finally Saturday.*"
+            },
+            "fr": {
+                "name": "Moi",
                 "text": "*Friday night deepens... Tomorrow is finally Saturday.*"
             }
         }

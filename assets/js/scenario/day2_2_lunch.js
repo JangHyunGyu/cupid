@@ -97,6 +97,19 @@ Object.assign(SCENARIO[2], {
                     "少し休憩が必要だ。保健室へ行く。",
                     "優しい担任先生がいる職員室へ向かう。"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*La cloche sonne ! Enfin, la pause déjeuner. La salle de classe déborde d'énergie, et mon cœur commence à s'emballer.*",
+                "choices": [
+                    "Aller voir Seoyeon et son sourire radieux.",
+                    "Se rendre dans la cour arrière de l'annexe de la bibliothèque comme promis.",
+                    "Découvrir qui a laissé ce mystérieux mot.",
+                    "Aller au gymnase pour voir Dain.",
+                    "Suivre les sons animés venant du gymnase.",
+                    "J'ai besoin de repos. Direction l'infirmerie.",
+                    "Aller à la salle des professeurs voir le professeur."
+                ]
             }
         }
     },
@@ -120,6 +133,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*職員室のドアを開ける。お弁当を食べようとしていた先生が、僕を見て温かく微笑む。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ouvre la porte de la salle des professeurs. Mon professeur, qui s'apprêtait à manger, sourit chaleureusement en me voyant.*"
             }
         }
     },
@@ -143,6 +160,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"あら、{name}！お昼はちゃんと食べた？ 私はちょうどこれからなの。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\"Oh, {name} ! Tu as bien déjeuné ? J'allais justement commencer le mien.\""
             }
         }
     },
@@ -211,6 +232,15 @@ Object.assign(SCENARIO[2], {
                     "先生のお弁当が美味しそうで、つい。",
                     "たまたま通りかかって、先生のことを思い出して。"
                 ]
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\"Tu es venu jusqu'ici juste pour manger avec moi ? Héhé, je plaisante.\"",
+                "choices": [
+                    "En fait, oui. Je peux m'asseoir à côté de vous ?",
+                    "Votre déjeuner a l'air tellement bon, je n'ai pas pu résister.",
+                    "Je passais par là et j'ai pensé à vous."
+                ]
             }
         }
     },
@@ -234,6 +264,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"あらあら…大胆な生徒ね。しょうがないわ、少し分けてあげる。はい、あーん。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\"Oh là là... tu es un élève audacieux, n'est-ce pas ? Bon, je vais partager un peu. Allez, dis 'Aah'.\""
             }
         }
     },
@@ -257,6 +291,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"ふふ、お母さんは料理上手なの。いつかちゃんとお母さんの手料理を食べさせてあげたいわね。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\"Héhé, ma mère est une excellente cuisinière. J'aimerais te faire goûter sa cuisine correctement un jour.\""
             }
         }
     },
@@ -280,6 +318,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"そう？ まあ、寄ってくれてありがとう。楽しいお昼休みを過ごしてね！\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\"Ah bon ? Eh bien, merci d'être passé. Profite bien de ta pause déjeuner !\""
             }
         }
     },
@@ -303,6 +345,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*短いけど甘いひとときの後、戻る。先生の優しい笑顔が心に残っている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Après une discussion brève mais agréable, je retourne en classe. Son doux sourire reste gravé dans ma mémoire.*"
             }
         }
     },
@@ -326,6 +372,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*生徒会室のドアを開ける。お弁当を食べていたソヨンが、驚いたように瞬きした後、ぱっと笑顔になる。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*J'ouvre la salle du conseil des élèves. Seoyeon, en train de déjeuner, cligne des yeux de surprise puis rayonne de joie.*"
             }
         }
     },
@@ -394,6 +444,15 @@ Object.assign(SCENARIO[2], {
                     "疲れてない？無理しすぎないでよ。",
                     "パンくずついてるよ…じっとして。*拭いてあげる*"
                 ]
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"{name} ! J'espérais justement que tu viendrais. Assieds-toi ici. J'ai préparé des sandwichs en plus aujourd'hui.\"",
+                "choices": [
+                    "Ils ont l'air incroyables ! Tu es un vrai cordon-bleu, Seoyeon.",
+                    "Tu n'es pas fatiguée par tout ce travail ? Ne te surmène pas.",
+                    "Tu as une miette... ne bouge pas. *L'essuyer*"
+                ]
             }
         }
     },
@@ -418,6 +477,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"本当？ 口に合うか心配だったんだ。たくさん食べてね！\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Vraiment ? J'avais peur que ce ne soit pas à ton goût. Mange bien !\""
             }
         }
     },
@@ -442,6 +505,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"大丈夫だよ。{name}が美味しそうに食べてくれるのを見ると、疲れなんて吹き飛ぶの。本当に。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Ça va. Te voir apprécier la nourriture fait disparaître toute ma fatigue. Vraiment.\""
             }
         }
     },
@@ -466,6 +533,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"あ…あ、ありがとう。がっついて食べてたかも…（少し顔を赤くする）\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Ah... M-merci. J'ai dû manger trop vite... (Elle rougit légèrement)\""
             }
         }
     },
@@ -497,6 +568,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*ちょうどその時、生徒会室の窓の外を通りかかった誰かが手を振ってくる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*À ce moment-là, quelqu'un passant devant la fenêtre de la salle du conseil nous fait signe.*"
             }
         }
     },
@@ -519,6 +594,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"あれ？ {name}！やっほー！また後でね！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\"Oh ? {name} ! Salut ! À plus tard !\""
             }
         }
     },
@@ -541,6 +620,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "???",
                 "text": "\"ん？ 誰だろ？ 生徒会室に男子が…まあいいや、やっほー！\""
+            },
+            "fr": {
+                "name": "???",
+                "text": "\"Hein ? C'est qui ? Un garçon dans la salle du conseil... Bref, salut !\""
             }
         }
     },
@@ -563,6 +646,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンを見ると、さっきとは微妙に違う表情をしている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Quand je regarde Seoyeon, elle a une expression subtile, différente de tout à l'heure.*"
             }
         }
     },
@@ -593,6 +680,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…あれ、バレー部のダインだよ。{name}、あの子と仲いいの？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"...C'est Dain du club de volley. {name}, tu es proche d'elle ?\""
             }
         }
     },
@@ -666,6 +757,15 @@ Object.assign(SCENARIO[2], {
                     "知り合い程度だよ。僕にはソヨンの方が大事。",
                     "なに？もしかして嫉妬？"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je me demande comment répondre à la question de Seoyeon.*",
+                "choices": [
+                    "Oui, on s'est rencontrés hier. Elle est joyeuse et amusante.",
+                    "Juste des connaissances. Tu es plus importante pour moi, Seoyeon.",
+                    "Pourquoi ? Tu es jalouse ?"
+                ]
             }
         }
     },
@@ -689,6 +789,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "\"（ダインちゃんか…覚えておこう。）いや、初めて見た。なんで？\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"(Dain Jung... Je vais m'en souvenir.) Non, c'est la première fois que je la vois. Pourquoi ?\""
             }
         }
     },
@@ -711,6 +815,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"あ、ううん。ちょっと気になっただけ。（ソヨンがほっとしたように微笑む）…食べ続けよう！\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Oh, rien. Juste curieuse. (Seoyeon sourit avec soulagement) ...Continuons à manger !\""
             }
         }
     },
@@ -733,6 +841,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"…そうなんだ。（ソヨンが一瞬窓の外を見て、それから微笑む）友達が多いのはいいことだよね。私も…もっと頑張らなきゃ。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"...Je vois. (Seoyeon regarde par la fenêtre un instant, puis sourit) C'est bien d'avoir beaucoup d'amis. Je devrais... faire plus d'efforts aussi.\""
             }
         }
     },
@@ -755,6 +867,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"（ソヨンの表情がぱっと明るくなる）…本当？ えへへ、そう言ってもらえると嬉しいな。ありがとう、{name}。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"(L'expression de Seoyeon s'illumine) ...Vraiment ? Héhé, ça me fait plaisir d'entendre ça. Merci, {name}.\""
             }
         }
     },
@@ -777,6 +893,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"や、嫉妬!? そんなわけないでしょ！ただ…気になっただけ！（ソヨンが顔を赤くして横を向く）\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"J-jalouse ?! Pas du tout ! J'étais juste... curieuse ! (Seoyeon détourne la tête en rougissant)\""
             }
         }
     },
@@ -799,6 +919,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンとの素敵なお昼の後、教室に戻る。彼女のサンドイッチの味がまだ甘く残っている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Après un charmant déjeuner avec elle, je retourne en classe. Le goût de ses sandwichs reste encore agréablement en bouche.*"
             }
         }
     },
@@ -823,6 +947,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*古い図書館の中。静かで埃っぽい空間に、ユナが風景の一部のように立っている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dans la vieille bibliothèque. Dans cet espace calme et poussiéreux, Yuna se tient là comme faisant partie du décor.*"
             }
         }
     },
@@ -846,6 +974,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…来たんだ。メモくらいで本当に来るとは思わなかった。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"...Tu es venu. Je ne pensais pas que tu viendrais vraiment pour un simple mot.\""
             }
         }
     },
@@ -869,6 +1001,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "*読めない表情で僕を見つめる。*"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "*Elle me fixe avec une expression indéchiffrable.*"
             }
         }
     },
@@ -916,6 +1052,12 @@ Object.assign(SCENARIO[2], {
                 "text": "\"…私に聞きたいことがある？それとも、この学校のことをもっと知りたい？\"",
                 "context": "静かな図書館別館の裏庭、謎めいたユナとの二人きりの会話。会話が終わるまで積極的に続けてください。会話の後、ユナは学校の秘密について語り、主人公にだけ見せたいものがあると示唆します。会話の最後のターンでのみ、ミステリアスな雰囲気を作り、主人公の好奇心を刺激してください。",
                 "personality": "ミステリアスで冷たく、秘密主義。主人公に不思議な興味を抱いている。"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"...Tu as des questions pour moi ? Ou tu veux en savoir plus sur cette école ?\"",
+                "context": "Cour arrière silencieuse de l'annexe de la bibliothèque, conversation privée avec la mystérieuse Yuna. Continuez activement la conversation jusqu'à ce qu'elle soit terminée. Après la conversation, Yuna parlera des secrets de l'école et suggérera qu'il y a quelque chose qu'elle veut montrer uniquement au protagoniste. UNIQUEMENT au dernier tour, créez une atmosphère mystérieuse et stimulez la curiosité du protagoniste.",
+                "personality": "Mystérieuse, froide et secrète. Elle ressent un étrange intérêt pour le protagoniste."
             }
         }
     },
@@ -946,6 +1088,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナの表情が僕を見ながら少し柔らかくなる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'expression de Yuna s'adoucit en me regardant.*"
             }
         }
     },
@@ -976,6 +1122,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナが冷たく、失望した目で僕を見つめる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna me fixe avec des yeux froids et déçus.*"
             }
         }
     },
@@ -1031,6 +1181,14 @@ Object.assign(SCENARIO[2], {
                     "何？気になる。",
                     "それより、君と話してる方がいい。"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna dit qu'elle se sent à l'aise en parlant avec moi. Elle mentionne le 'secret' et dit qu'il y a quelque chose qu'elle veut me montrer à moi seul.*",
+                "choices": [
+                    "Qu'est-ce que c'est ? Je suis curieux.",
+                    "Parler avec toi m'intéresse davantage."
+                ]
             }
         }
     },
@@ -1085,6 +1243,14 @@ Object.assign(SCENARIO[2], {
                 "choices": [
                     "見せて。僕なら大丈夫だよ。",
                     "秘密には興味ない。やめとく。"
+                ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Le regard de Yuna est glacial. Elle dit que je pourrais ne pas supporter la vérité, mais me dit de la suivre puisqu'on a promis.*",
+                "choices": [
+                    "Montre-moi. Je peux le supporter.",
+                    "Les secrets ne m'intéressent pas. Je passe."
                 ]
             }
         }
@@ -1142,6 +1308,14 @@ Object.assign(SCENARIO[2], {
                     "メモのユナ？秘密って何？",
                     "メモが気になって来ただけ。君は誰？"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna dit qu'elle ressent une étrange attirance envers moi. Elle mentionne un secret profond dans cette école et veut me le montrer.*",
+                "choices": [
+                    "Tu es la Yuna du mot ? Quel secret ?",
+                    "Je suis juste venu à cause du mot. Qui es-tu ?"
+                ]
             }
         }
     },
@@ -1198,6 +1372,14 @@ Object.assign(SCENARIO[2], {
                     "秘密って何？見せて。",
                     "帰る。なんか変だ。"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Les yeux de Yuna sont froids. Elle dit que je n'ai pas l'air de pouvoir supporter la vérité, mais me dit de la suivre puisque je suis là.*",
+                "choices": [
+                    "C'est quoi le secret ? Montre-moi.",
+                    "Je m'en vais. C'est bizarre."
+                ]
             }
         }
     },
@@ -1229,6 +1411,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*ユナが僕を見て、話し始める。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna me regarde et commence à parler.*"
             }
         }
     },
@@ -1283,6 +1469,14 @@ Object.assign(SCENARIO[2], {
                 "choices": [
                     "何？見たい。",
                     "ただ君と話したかっただけ。"
+                ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna mentionne le secret dont elle m'a parlé hier et dit qu'elle a quelque chose à me montrer.*",
+                "choices": [
+                    "Qu'est-ce que c'est ? Je veux voir.",
+                    "Je voulais juste te parler."
                 ]
             }
         }
@@ -1340,6 +1534,14 @@ Object.assign(SCENARIO[2], {
                     "メモのユナ？秘密って何？",
                     "メモが気になって来ただけ。君は誰？"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Yuna dit que je dois être curieux à son sujet. Elle propose de me montrer un secret profond de l'école.*",
+                "choices": [
+                    "Tu es la Yuna du mot ? Quel secret ?",
+                    "Je suis juste venu à cause du mot. Qui es-tu ?"
+                ]
             }
         }
     },
@@ -1362,6 +1564,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "*恥ずかしそうにうつむく。* \"…ところで、名前は？ この秘密を共有したいと思えるくらい惹かれたの。君のこと知りたい。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "*Elle baisse la tête timidement.* \"...Au fait, comment tu t'appelles ? J'ai été assez attirée par toi pour vouloir partager ce secret. Je veux te connaître.\""
             }
         }
     },
@@ -1385,6 +1591,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "\"僕の名前は{name}。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Je m'appelle {name}.\""
             }
         }
     },
@@ -1407,6 +1617,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "*冷たく聞く。* \"…先に進む前に名前くらい知っておくべきね。何て言うの？\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "*Elle demande froidement.* \"...Je devrais au moins connaître ton nom avant d'aller plus loin. Comment tu t'appelles ?\""
             }
         }
     },
@@ -1430,6 +1644,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "\"僕の名前は{name}。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Je m'appelle {name}.\""
             }
         }
     },
@@ -1452,6 +1670,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…名前を聞くのを忘れてた。メモには自分の名前しか書かなかったし。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"...J'ai oublié de te demander ton nom. Je n'avais écrit que le mien sur le mot.\""
             }
         }
     },
@@ -1475,6 +1697,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "\"僕の名前は{name}。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Je m'appelle {name}.\""
             }
         }
     },
@@ -1497,6 +1723,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "*ユナがそっと僕の指に自分の指を絡めてくる。温かい手を通して、彼女の鼓動が伝わってくる。*"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "*Yuna entrelace doucement ses doigts avec les miens. Je peux sentir son coeur battre à travers sa main chaude.*"
             }
         }
     },
@@ -1553,6 +1783,14 @@ Object.assign(SCENARIO[2], {
                     "一緒にいるよ。二人で見よう。",
                     "ごめん、まだ僕には無理かも。"
                 ]
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"Je pense... que tu es celui qui peut partager ce fardeau avec moi. {name}, tu veux bien me suivre ? Le monde qui nous attend est différent de ce que tu connais.\"",
+                "choices": [
+                    "Je serai avec toi. Voyons ça ensemble.",
+                    "Désolé, je ne peux pas encore gérer ça."
+                ]
             }
         }
     },
@@ -1575,6 +1813,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "*ユナが僕の袖を掴んで引っ張る。*"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "*Yuna attrape ma manche et me tire vers l'avant.*"
             }
         }
     },
@@ -1631,6 +1873,14 @@ Object.assign(SCENARIO[2], {
                     "見せて。何なの？",
                     "帰る。危なすぎる。"
                 ]
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"Regarde, c'est tout. Tu ne comprendras probablement pas, mais tu es déjà là. Ne me gêne pas.\"",
+                "choices": [
+                    "Montre-moi. C'est quoi ?",
+                    "Je m'en vais. C'est trop dangereux."
+                ]
             }
         }
     },
@@ -1653,6 +1903,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "*ユナが古い倉庫へ僕を導いていく。彼女の冷たい触れ方にゾクッとする。*"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "*Yuna me guide vers le vieil entrepôt. Son toucher froid me fait frissonner.*"
             }
         }
     },
@@ -1721,6 +1975,15 @@ Object.assign(SCENARIO[2], {
                     "安全なの？やめた方がいいかも。",
                     "なぜこんなことをするの、ユナ？"
                 ]
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"À l'intérieur se trouvent des dossiers que l'école cache depuis longtemps. Une fois que tu les verras... tout changera.\"",
+                "choices": [
+                    "Je peux les voir aussi ?",
+                    "C'est sûr ? Peut-être qu'on devrait laisser tomber.",
+                    "Pourquoi fais-tu ça, Yuna ?"
+                ]
             }
         }
     },
@@ -1748,6 +2011,9 @@ Object.assign(SCENARIO[2], {
             },
             "ja": {
                 "name": "僕"
+            },
+            "fr": {
+                "name": "Moi"
             }
         }
     },
@@ -1775,6 +2041,9 @@ Object.assign(SCENARIO[2], {
             },
             "ja": {
                 "name": "僕"
+            },
+            "fr": {
+                "name": "Moi"
             }
         }
     },
@@ -1802,6 +2071,9 @@ Object.assign(SCENARIO[2], {
             },
             "ja": {
                 "name": "僕"
+            },
+            "fr": {
+                "name": "Moi"
             }
         }
     },
@@ -1825,6 +2097,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"気になる？ 正直…わからない。でも君が転校してきた日から、君だっていう予感があったの。おかしいでしょ？\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Curieux ? Honnêtement... je ne sais pas trop. Mais depuis le jour de ton transfert, j'avais le pressentiment que ce serait toi. Drôle, non ?\\\""
             }
         }
     },
@@ -1848,6 +2124,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"あんたに関係ある？見るか帰るか。私のことに首を突っ込まないで。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Qu'est-ce que ça peut te faire ? Regarde ou va-t'en. Pas besoin de fourrer ton nez dans mes affaires.\\\""
             }
         }
     },
@@ -1871,6 +2151,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"ありがとう、{name}。君がいれば、怖くない。行こう？\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Merci, {name}. Avec toi, je n'ai pas peur. On y va ?\\\""
             }
         }
     },
@@ -1894,6 +2178,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"本当に見たいの？後悔しないでよ。泣いても助けないから。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Tu veux vraiment voir ? Ne viens pas te plaindre. Si tu te mets à pleurer, ce n'est pas mon problème.\\\""
             }
         }
     },
@@ -1917,6 +2205,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…そう。怖いんだね。わかる。気が変わったら言って。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Je vois. Tu dois avoir peur. Je comprends. Dis-moi si tu changes d'avis.\\\""
             }
         }
     },
@@ -1940,6 +2232,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"やっぱりね。臆病者。もう顔を見せないで。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Je le savais. Tu es un lâche. Ne te montre plus devant moi.\\\""
             }
         }
     },
@@ -1963,6 +2259,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"私と話しに来ただけ…？ ふふ、甘いこと言うんだね。いいよ、もう少し一緒にいて。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Tu es venu juste pour me parler... ? Héhé, tu dis vraiment des choses adorables. D'accord, reste encore un peu avec moi alors.\\\""
             }
         }
     },
@@ -1986,6 +2286,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"話す？くだらない。時間の無駄だから消えて。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"Pour parler ? Pathétique. Ne me fais pas perdre mon temps et dégage.\\\""
             }
         }
     },
@@ -2009,6 +2313,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ユナ",
                 "text": "\"…そう？変わってるね。普通の人は怖がるのに。いいよ、今日はこのままでいよう。\""
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\\\"...Ah bon ? Tu es vraiment bizarre. La plupart des gens ont peur. Bon, restons comme ça pour aujourd'hui.\\\""
             }
         }
     },
@@ -2031,6 +2339,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*教室に戻る。彼女のミステリアスな言葉が頭から離れず、授業に集中できそうにない。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je retourne en classe. Ses paroles mystérieuses me hantent, rendant difficile la concentration en cours.*"
             }
         }
     },
@@ -2062,6 +2374,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*体育館のドアを開ける。一生懸命練習していたダインが、満面の笑みで駆け寄ってくる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ouvre la porte du gymnase. Dain, qui s'entraînait dur, accourt vers moi avec un large sourire.*"
             }
         }
     },
@@ -2085,6 +2401,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "???",
                 "text": "\"おっ！見ない顔！転校生でしょ？ あたしはダイン、バレー部！\""
+            },
+            "fr": {
+                "name": "???",
+                "text": "\\\"Oh ! Un nouveau visage ! Tu es le nouvel élève, c'est ça ? Moi c'est Dain, du club de volley !\\\""
             }
         }
     },
@@ -2107,6 +2427,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"ところで、名前は？ ちゃんと自己紹介してないのあたしだけじゃん！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Au fait, comment tu t'appelles ? Je suis la seule à ne pas m'être présentée correctement !\\\""
             }
         }
     },
@@ -2129,6 +2453,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"おぉ！{name}？ いい名前じゃん！よし、お祝いにお昼はあたしのおごり！売店行こ！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Oh ! {name} ? Trop cool comme prénom ! Allez, pour fêter ça, c'est moi qui régale ! Direction la cafét' !\\\""
             }
         }
     },
@@ -2152,6 +2480,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "\"僕の名前は{name}。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Je m'appelle {name}.\\\""
             }
         }
     },
@@ -2174,6 +2506,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"おっ！本当に来てくれた！よし、今日のお昼はあたしのおごり！売店行こ！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Oh ! Tu es vraiment venu ! Super, aujourd'hui c'est moi qui régale ! Allez, direction la cafét' !\\\""
             }
         }
     },
@@ -2197,6 +2533,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*売店に向かう。生徒でいっぱいだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*On se dirige vers la cafétéria. C'est bondé d'élèves.*"
             }
         }
     },
@@ -2220,6 +2560,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*ちょうどその時、売店の向こう側に見覚えのある顔を見つける。ソヨンが飲み物を買っている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*À ce moment-là, j'aperçois un visage familier de l'autre côté du magasin. Seoyeon est en train d'acheter une boisson.*"
             }
         }
     },
@@ -2243,6 +2587,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"あれ？あの子…生徒会長じゃない？近寄りがたいオーラがあるよね。{name}、知り合い？\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Oh ? Cette fille... C'est pas la présidente du conseil des élèves ? Elle dégage une aura intimidante. {name}, tu la connais ?\\\""
             }
         }
     },
@@ -2274,6 +2622,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*ちょうどその時、ソヨンが僕たちに気づいて歩いてくる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*À ce moment-là, Seoyeon nous remarque et s'approche.*"
             }
         }
     },
@@ -2299,6 +2651,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"あれ？{name}！こんなところで会うなんて。さっきのお昼は楽しかった？（ダインをちらっと見る）…？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Oh ? {name} ! Quelle surprise de te voir ici. Tu as bien déjeuné tout à l'heure ? (Elle jette un coup d'œil à Dain) ...?\\\""
             }
         }
     },
@@ -2324,6 +2680,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"あら、転校生？こんなところで会えるなんて。私はソヨン。（ダインをちらっと見る）…？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Oh, le nouvel élève ? Ravie de te voir ici. Je suis Seoyeon. (Elle jette un coup d'œil à Dain) ...?\\\""
             }
         }
     },
@@ -2349,6 +2709,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"（ダインが少し警戒した顔で）あ、どうも会長。あたしたちはちょうどお昼食べてるとこで…\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"(Dain se met légèrement sur ses gardes) Oh, salut Madame la Présidente. On finit juste de déjeuner...\\\""
             }
         }
     },
@@ -2374,6 +2738,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"（ソヨンが明るく微笑む）へぇ、そうなんだ。楽しんでね。{name}、後で生徒会室にも来てね？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"(Seoyeon sourit radieusement) Héhé, ah bon ? Amusez-vous bien. {name}, viens faire un tour à la salle du conseil plus tard, d'accord ?\\\""
             }
         }
     },
@@ -2453,6 +2821,15 @@ Object.assign(SCENARIO[2], {
                     "今日はダインと予定があるんだ…また今度ね！",
                     "*曖昧に微笑む* 二人と一緒にいられたら最高だね。"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Seoyeon et Dain semblent se livrer à une sorte de rivalité subtile à mon sujet. Qu'est-ce que je devrais dire ?*",
+                "choices": [
+                    "Bien sûr, Seoyeon ! Je passerai sans faute tout à l'heure.",
+                    "J'ai des plans avec Dain aujourd'hui... Peut-être la prochaine fois !",
+                    "*Sourire vaguement* Ce serait chouette de traîner avec vous deux."
+                ]
             }
         }
     },
@@ -2475,6 +2852,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"（ダインが少ししょんぼりする）…え、マジ？あたしと一緒にいるのに、もう他の予定入れるの？\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"(Dain a l'air un peu dépitée) ...Hein, sérieux ? Tu fais déjà d'autres plans alors que tu es avec moi ?\\\""
             }
         }
     },
@@ -2500,6 +2881,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"（ソヨンが満足そうに微笑む）えへへ、ありがとう{name}。じゃあ後でね。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"(Seoyeon sourit, satisfaite) Héhé, merci {name}. À tout à l'heure alors.\\\""
             }
         }
     },
@@ -2525,6 +2910,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"（ダインがぱっと笑って僕の腕を掴む）聞いた？{name}は今日あたしのもの！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"(Dain rayonne et attrape mon bras) T'as entendu ? {name} est rien qu'à moi aujourd'hui !\\\""
             }
         }
     },
@@ -2550,6 +2939,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"（ソヨンの表情が少し固くなる）…そう。楽しんでね。またね、{name}。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"(L'expression de Seoyeon se crispe légèrement) ...Je vois. Amusez-vous bien alors. À plus tard, {name}.\\\""
             }
         }
     },
@@ -2575,6 +2968,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*二人の表情が同時に固まる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Leurs expressions se figent toutes les deux en même temps.*"
             }
         }
     },
@@ -2600,6 +2997,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"…二人とも？は、モテるタイプだね。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"...Toutes les deux ? Ha, le genre populaire, hein ?\\\""
             }
         }
     },
@@ -2625,6 +3026,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"（ソヨンが冷たく微笑む）へぇ…誰にでも優しいと、両方失うかもよ。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"(Seoyeon sourit froidement) Héhé... Être gentil avec tout le monde, ça pourrait bien te faire perdre les deux.\\\""
             }
         }
     },
@@ -2650,6 +3055,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"（ダインが驚いてソヨンを見る）うわ、会長ってズバッと言うんだね。でも正直、同意。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"(Dain regarde Seoyeon avec surprise) Ouah, la Présidente est plutôt directe, hein ? Mais en fait, je suis d'accord.\\\""
             }
         }
     },
@@ -2675,6 +3084,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*二人が僕を見つめながら視線を交わす。すごく気まずくなってきた…*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Elles échangent des regards tout en me fixant. L'ambiance vient de devenir vraiment gênante...*"
             }
         }
     },
@@ -2698,6 +3111,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンが手を振って去っていく。ダインがしばらく僕をじっと見つめてから、また笑顔に戻る。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Seoyeon fait un signe de la main et s'éloigne. Dain me regarde intensément un instant, puis sourit à nouveau.*"
             }
         }
     },
@@ -2744,6 +3161,12 @@ Object.assign(SCENARIO[2], {
                 "text": "\"うわ、混んでる！ね？待ってる間おしゃべりしよ。何か知りたいことある？\"",
                 "context": "混雑した学校の売店の前で、ダインと一緒にお菓子を買うために並んでいる。会話が終わるまで積極的に続けてください。会話の後、売店でお菓子を選びます。会話の最後のターンでのみ、もうすぐ順番だということに触れるか、何を食べるか決めることで自然に次の場面へ移行してください。",
                 "personality": "バレー部のエースで裏表のないさっぱりした性格。主人公と一緒にいるのが楽しい。"
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Waouh, y'a un monde fou ! Pas vrai ? Bavardons en attendant. Tu veux savoir quelque chose ?\\\"",
+                "context": "Devant la boutique bondée de l'école, en train de faire la queue avec Dain pour acheter des en-cas. Continuez activement la conversation jusqu'à ce qu'elle soit terminée. Après la conversation, vous choisirez des en-cas à la boutique. UNIQUEMENT au dernier tour de la conversation, guidez naturellement vers la situation suivante en mentionnant que c'est bientôt notre tour ou en décidant quoi manger.",
+                "personality": "L'as directe et franche du club de volley, avec une personnalité décontractée. Elle apprécie passer du temps avec le protagoniste."
             }
         }
     },
@@ -2810,6 +3233,15 @@ Object.assign(SCENARIO[2], {
                     "僕もダインの分買うよ。何がいい？",
                     "すごく混んでるね…屋上に行かない？",
                     "ダイン、最後のピザパンがある！先に取らせて！"
+                ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Discuter avec Dain a rendu l'attente dans la file pas ennuyeuse du tout. C'est notre tour maintenant, et Dain est de si bonne humeur qu'elle a dit qu'elle m'invitait.*",
+                "choices": [
+                    "Je t'offre le tien aussi, Dain. Tu veux quoi ?",
+                    "Y'a vraiment trop de monde... On va sur le toit plutôt ?",
+                    "Dain, c'est le dernier pain pizza ! Laisse-moi l'attraper en premier !"
                 ]
             }
         }
@@ -2878,6 +3310,15 @@ Object.assign(SCENARIO[2], {
                     "すごく混んでるね…屋上に行かない？",
                     "ダイン、最後のピザパンがある！先に取らせて！"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Dain a l'air contrariée. J'ai dû être trop brusque alors qu'elle était fatiguée d'attendre. Elle a soupiré et m'a dit de juste choisir quelque chose.*",
+                "choices": [
+                    "Je t'offre le tien aussi, Dain. Tu veux quoi ?",
+                    "Y'a vraiment trop de monde... On va sur le toit plutôt ?",
+                    "Dain, c'est le dernier pain pizza ! Laisse-moi l'attraper en premier !"
+                ]
             }
         }
     },
@@ -2945,6 +3386,15 @@ Object.assign(SCENARIO[2], {
                     "すごく混んでるね…屋上に行かない？",
                     "ダイン、最後のピザパンがある！先に取らせて！"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*En discutant avec Dain, c'est enfin notre tour. Elle m'a demandé ce que je voulais manger.*",
+                "choices": [
+                    "Je t'offre le tien aussi, Dain. Tu veux quoi ?",
+                    "Y'a vraiment trop de monde... On va sur le toit plutôt ?",
+                    "Dain, c'est le dernier pain pizza ! Laisse-moi l'attraper en premier !"
+                ]
             }
         }
     },
@@ -2968,6 +3418,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"ちょっと{name}！なんで払うの？あたしがおごるって言ったじゃん！ふふ、でもその気持ちは嬉しい。今日は君が払って、明日はあたしがもっといいもの奢るから！約束！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Hé, {name} ! Pourquoi tu paies ? J'ai dit que c'est moi qui régale ! Héhé, mais merci pour l'intention. Tu paies aujourd'hui, et demain je t'offre quelque chose d'encore mieux ! Promis !\\\""
             }
         }
     },
@@ -2991,6 +3445,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"別にいい。あたしが払うって言ったんだから。食べて。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Peu importe. J'ai dit que je paierais, point final. Mange.\\\""
             }
         }
     },
@@ -3014,6 +3472,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"ちょっと、あたしがおごるって言ったじゃん！転校生がどんなお金持ってるの？今日はあたしの奢りだから、素直に食べなって！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Hé, j'ai dit que c'est moi qui invite ! Quel argent peut avoir un nouvel élève ? Aujourd'hui c'est ma tournée, alors profite !\\\""
             }
         }
     },
@@ -3037,6 +3499,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"おぉ！屋上デート!? いいね！二人だけで食べた方が美味しいよね！早く買って上行こ！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Oh ! Un rendez-vous sur le toit ?! Trop bien ! Ce sera encore meilleur rien qu'à deux ! On achète vite et on monte !\\\""
             }
         }
     },
@@ -3060,6 +3526,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"屋上…わざわざそんな遠くまで行くの。ここで食べよ。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Le toit... pourquoi se donner cette peine. Mangeons ici.\\\""
             }
         }
     },
@@ -3083,6 +3553,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"屋上？あ、それもいいね！涼しい風があった方が美味しいもんね。よし、パンだけ買ってすぐ上行こ！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Le toit ? Oh, c'est bien aussi ! Ce sera meilleur avec la brise fraîche. Allez, on prend du pain et on monte !\\\""
             }
         }
     },
@@ -3106,6 +3580,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"おほ！勝負する気？よし！{name}、あたしも容赦しないからね？負けた方が今日のお昼全部おごり！よーい、ドン！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Oho ! L'esprit de compétition ? D'accord ! {name}, pas de pitié de mon côté non plus ! Le perdant paie tout le déjeuner ! À vos marques, prêts, partez !\\\""
             }
         }
     },
@@ -3129,6 +3607,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"そんな気分じゃない…静かにして。\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Pas d'humeur pour ça... Tais-toi.\\\""
             }
         }
     },
@@ -3152,6 +3634,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "ダイン",
                 "text": "\"おほ！さすが相棒！よし、競争だ！負けた方がジュース奢り！\""
+            },
+            "fr": {
+                "name": "Dain",
+                "text": "\\\"Oho ! C'est bien mon partenaire ! OK, on fait la course ! Le perdant paie les boissons !\\\""
             }
         }
     },
@@ -3174,6 +3660,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*ダインと賑やかなお昼を過ごして教室に戻った。彼女の明るいエネルギーで午後も乗り切れそうだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ai passé un déjeuner animé avec Dain et je suis retourné en classe. Son énergie débordante devrait m'aider à tenir tout l'après-midi.*"
             }
         }
     },
@@ -3197,6 +3687,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*緊張のせいか、頭がズキズキする。気がついたら、静かな保健室まで歩いてきていた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Peut-être à cause du stress, j'ai mal à la tête. Sans m'en rendre compte, je me suis dirigé vers l'infirmerie silencieuse.*"
             }
         }
     },
@@ -3228,6 +3722,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"あら、こんにちは？ お昼休みに保健室に来るなんて、体調悪いの？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Oh, bonjour ? Venir à l'infirmerie pendant la pause déjeuner, tu ne te sens pas bien ?\\\""
             }
         }
     },
@@ -3271,6 +3769,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"あら、{name}じゃない？ 具合が悪いの、それとも私に会いたくてドキドキしてるの？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Oh, mais c'est notre {name} ! Tu es malade, ou ton cœur bat la chamade parce que tu voulais me voir ?\\\""
             }
         }
     },
@@ -3299,6 +3801,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*先生が僕の顔を見て意味ありげに微笑む。* \"ふふ、{name}。また来たの？もう…こんなに頻繁に来てくれるのは君だけよ。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*L'infirmière sourit subtilement en me regardant.* \\\"Héhé, {name}. Tu es encore là ? Mon Dieu... tu es le seul élève à me rendre visite aussi souvent.\\\""
             }
         }
     },
@@ -3322,6 +3828,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"あら、{name}。お昼休みに保健室…体調悪いの？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Oh, {name}. L'infirmerie pendant le déjeuner... tu ne te sens pas bien ?\\\""
             }
         }
     },
@@ -3345,6 +3855,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*先生が首をかしげながら僕を見る。* \"えっと…{name}、だよね？ 具合悪い？入って。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*L'infirmière me regarde en penchant la tête, hésitante.* \\\"Euh... {name}, c'est ça ? Tu es malade ? Entre.\\\""
             }
         }
     },
@@ -3369,6 +3883,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"あら、見ない顔ね？ 新しい転校生？ 私は保健の先生よ。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Oh, un visage que je n'ai jamais vu ? Tu es le nouvel élève ? Je suis l'infirmière scolaire.\\\""
             }
         }
     },
@@ -3392,6 +3910,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"ところで、お名前は？ 私だけに教えてくれる？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Au fait, comment tu t'appelles ? Tu veux bien me le dire, rien qu'à moi ?\\\""
             }
         }
     },
@@ -3416,6 +3938,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "\"僕の名前は{name}です。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"Je m'appelle {name}.\\\""
             }
         }
     },
@@ -3439,6 +3965,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*先生が柔らかい笑顔でベッドまで案内してくれる。優しいハーブの香りが神経を落ち着かせる。*"
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*L'infirmière me guide vers le lit avec un doux sourire. Le léger parfum d'herbes médicinales apaise mes nerfs.*"
             }
         }
     },
@@ -3507,6 +4037,15 @@ Object.assign(SCENARIO[2], {
                     "ただ休みたいだけです。",
                     "先生、こうやって生徒を誘惑するんですか？"
                 ]
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Voilà, allonge-toi confortablement. Voyons ce qui ne va pas.\\\"",
+                "choices": [
+                    "J'ai mal à la tête.",
+                    "Je veux juste me reposer.",
+                    "C'est comme ça que vous séduisez les élèves, Madame ?"
+                ]
             }
         }
     },
@@ -3530,6 +4069,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*先生の顔から一瞬で笑みが消える。保健室の空気が重く冷たくなる。*"
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*Le sourire disparaît instantanément du visage de l'infirmière. L'atmosphère de l'infirmerie devient lourde et glaciale.*"
             }
         }
     },
@@ -3553,6 +4096,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"あら…{name}、私が甘やかしすぎたみたいね。大人に対してそんな失礼なこと、冗談には聞こえないわ。今日は帰ってくれる？すごく気分が悪くなったの。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Mon Dieu... {name}, j'ai dû être trop indulgente avec toi. Des remarques aussi impolies envers un adulte ne ressemblent pas à une plaisanterie. Tu veux bien partir aujourd'hui ? Je suis de très mauvaise humeur maintenant.\\\""
             }
         }
     },
@@ -3609,6 +4156,14 @@ Object.assign(SCENARIO[2], {
                     "先生、あーんして飲ませてくれますか？",
                     "ありがとうございます。*薬を飲む*"
                 ]
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"On dirait un mal de tête dû au stress. Prends ça et dors bien, tu iras mieux.\\\"",
+                "choices": [
+                    "Vous pourriez me le donner à la bouche, Madame ?",
+                    "Merci. *Prend le médicament*"
+                ]
             }
         }
     },
@@ -3632,6 +4187,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"あら…{name}、ほんとに大胆ね。いいわ、はい、あーん。いい子にはご褒美よね？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Mon Dieu... {name}, tu es vraiment incorrigible, n'est-ce pas ? Allez, dis 'aah'. Les bons élèves méritent une récompense, non ?\\\""
             }
         }
     },
@@ -3680,6 +4239,14 @@ Object.assign(SCENARIO[2], {
                     "次へ",
                     "次へ"
                 ]
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Héhé, parfois on a des jours comme ça. Allonge-toi confortablement ici avec le rideau tiré. Au fait... {name}, tu as une énergie tellement intense. Rien qu'en te regardant, j'ai chaud partout.\\\"",
+                "choices": [
+                    "Suivant",
+                    "Suivant"
+                ]
             }
         }
     },
@@ -3703,6 +4270,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "\"（強い気…？ ユナが言ってたことを思い出す。この学校、本当に何かあるのかな？）\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\\\"(Une énergie intense... ? Ça me rappelle ce que Yuna a dit. Il se passe vraiment quelque chose dans cette école ?)\\\""
             }
         }
     },
@@ -3726,6 +4297,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*先生がかけてくれた毛布の温もりで意識がぼんやりしてくる。この二日間の疲れが一気に押し寄せてきた。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*La chaleur de la couverture que l'infirmière m'a mise me fait perdre conscience. L'épuisement des deux derniers jours me frappe d'un coup.*"
             }
         }
     },
@@ -3755,6 +4330,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*うっすらと先生の声が聞こえる。* \"…はい、担任の先生。{name}さんが体調悪いので、午後の授業はお休みさせました。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*J'entends vaguement la voix de l'infirmière.* \\\"...Oui, professeur principal. L'élève {name} ne se sent pas bien alors je l'ai dispensé des cours de l'après-midi.\\\""
             }
         }
     },
@@ -3784,6 +4363,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*声が少し低くなる。* \"…え？自分で迎えに来たいって？ ふふ、大丈夫よ。ここは私の領域だから。ちゃんと面倒見るから、約束。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*La voix baisse un peu.* \\\"...Quoi ? Vous voulez venir le chercher vous-même ? Héhé, c'est bon. C'est mon domaine ici. Je m'en occupe bien, promis.\\\""
             }
         }
     },
@@ -3807,6 +4390,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*電話を切る音。* \"…ふふ、担任の先生も。生徒思いなのは素敵だけど…保健室では、私がルールよ。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*Bruit de téléphone raccroché.* \\\"...Héhé, le professeur principal aussi. C'est gentil de se soucier de ses élèves... mais à l'infirmerie, c'est moi qui commande.\\\""
             }
         }
     },
@@ -3830,6 +4417,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*…いつの間にか、全てが静かになる。ゆっくりと意識が戻ってきて、目を開ける。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*...Sans que je m'en rende compte, tout devient silencieux. Je reprends lentement conscience et j'ouvre les yeux.*"
             }
         }
     },
@@ -3854,6 +4445,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*窓の外は、もう燃えるようなオレンジ色の夕焼け空だ。お昼に寝たはずなのに、もう放課後…どれだけ深く寝てたんだろう。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Par la fenêtre, le ciel est déjà embrasé d'un orange flamboyant. Je me suis endormi pendant le déjeuner et c'est déjà la fin des cours... J'ai dormi si profondément.*"
             }
         }
     },
@@ -3878,6 +4473,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"（先生が柔らかく微笑む。）あら、起きた？ぐっすり寝てたわね。午後の授業のことは担任の先生に連絡済みだから安心して。もうそろそろ下校の時間よ。体調はどう？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"(L'infirmière sourit doucement.) Oh, tu es réveillé ? Tu as dormi comme un loir. J'ai déjà prévenu ton professeur principal pour les cours de l'après-midi, alors ne t'inquiète pas. C'est bientôt l'heure de rentrer. Comment tu te sens ?\\\""
             }
         }
     },
@@ -3926,6 +4525,12 @@ Object.assign(SCENARIO[2], {
                 "text": "\"ふふ、まだ眠そうね。帰る前に少しおしゃべりする？\"",
                 "context": "夕暮れの保健室で、主人公が目覚めたばかりで養護教諭と二人きり。会話が終わるまで積極的に続けてください。会話の後、養護教諭は自分の番号を教えて、夜に連絡してねとからかいます。最後のターンでのみ、帰る時間であることをほのめかすか、プライベートな連絡を提案してください。",
                 "personality": "けだるく色っぽいが面倒見の良い養護教諭。主人公に独特の魅力を感じ、大胆に自信を持ってフリートする。"
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Héhé, tu as encore l'air endormi. Tu veux discuter un peu avec moi avant de rentrer ?\\\"",
+                "context": "Dans l'infirmerie au coucher du soleil, le protagoniste vient de se réveiller et est seul avec l'infirmière. Continuez activement la conversation jusqu'à ce qu'elle soit terminée. Après la conversation, l'infirmière proposera son numéro et taquinera au sujet d'un contact nocturne. UNIQUEMENT au dernier tour, suggérez qu'il est l'heure de rentrer ou proposez un contact privé.",
+                "personality": "Infirmière scolaire langoureuse et séduisante mais attentionnée. Ressent une attirance particulière pour le protagoniste et flirte audacieusement avec assurance."
             }
         }
     },
@@ -3956,6 +4561,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*先生がいたずらっぽくも色っぽい笑顔で僕を見る。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'infirmière me regarde avec un sourire à la fois espiègle et séduisant.*"
             }
         }
     },
@@ -3986,6 +4595,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*先生がやや疲れた表情で僕を見る。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'infirmière me regarde avec une expression un peu fatiguée.*"
             }
         }
     },
@@ -4040,6 +4653,14 @@ Object.assign(SCENARIO[2], {
                     "はい、します。",
                     "電話だけじゃなくて…今夜、家に行ってもいい？"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'infirmière m'a rappelé qu'on avait déjà échangé nos numéros et m'a chuchoté à l'oreille. Elle a dit qu'elle voudra entendre ma voix ce soir, alors je devrais absolument la contacter.*",
+                "choices": [
+                    "Oui, c'est promis.",
+                    "Au lieu d'un simple appel... je peux venir chez vous ce soir ?"
+                ]
             }
         }
     },
@@ -4093,6 +4714,14 @@ Object.assign(SCENARIO[2], {
                 "choices": [
                     "はい、します。",
                     "電話だけじゃなくて…今夜、家に行ってもいい？"
+                ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'infirmière a dit qu'on avait déjà échangé nos numéros, mais vu mon comportement impoli, il vaudrait mieux ne pas la contacter. Elle m'a froidement dit de partir.*",
+                "choices": [
+                    "Oui, c'est promis.",
+                    "Au lieu d'un simple appel... je peux venir chez vous ce soir ?"
                 ]
             }
         }
@@ -4152,6 +4781,14 @@ Object.assign(SCENARIO[2], {
                     "はい、知りたいです。",
                     "番号だけじゃなくて…お家に行ってもいい？"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'infirmière a dit qu'elle voulait encore discuter avec moi et m'a doucement pris la main. Elle m'a proposé de me donner son numéro pour quand je n'arrive pas à dormir la nuit.*",
+                "choices": [
+                    "Oui, je veux bien.",
+                    "Au lieu d'un simple numéro... je peux venir chez vous ?"
+                ]
             }
         }
     },
@@ -4210,6 +4847,14 @@ Object.assign(SCENARIO[2], {
                     "はい、知りたいです。",
                     "番号だけじゃなくて…お家に行ってもいい？"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'infirmière a soupiré en disant que je suis un cas difficile. Elle a dit qu'elle me donnerait son numéro pour les urgences, mais m'a prévenu de ne pas faire de bêtises.*",
+                "choices": [
+                    "Oui, je veux bien.",
+                    "Au lieu d'un simple numéro... je peux venir chez vous ?"
+                ]
             }
         }
     },
@@ -4241,6 +4886,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "僕",
                 "text": "*先生が僕を見て話し始める。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'infirmière me regarde et prend la parole.*"
             }
         }
     },
@@ -4294,6 +4943,14 @@ Object.assign(SCENARIO[2], {
                 "choices": [
                     "はい、します。",
                     "電話だけじゃなくて…今夜、家に行ってもいい？"
+                ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'infirmière m'a rappelé qu'on avait déjà échangé nos numéros et s'est penchée pour murmurer. Elle a dit qu'elle attendrait, alors je devrais absolument la contacter si je m'ennuie la nuit.*",
+                "choices": [
+                    "Oui, c'est promis.",
+                    "Au lieu d'un simple appel... je peux venir chez vous ce soir ?"
                 ]
             }
         }
@@ -4365,6 +5022,15 @@ Object.assign(SCENARIO[2], {
                     "番号だけじゃなくて…お家に行ってもいい？",
                     "あ、大丈夫です。"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'infirmière s'est penchée pour murmurer, me proposant son numéro pour les nuits où je n'arrive pas à dormir.*",
+                "choices": [
+                    "Oui, je veux bien.",
+                    "Au lieu d'un simple numéro... je peux venir chez vous ?",
+                    "Ah, ça va aller."
+                ]
             }
         }
     },
@@ -4393,6 +5059,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*僕の手の甲に番号を書いてウインクする。* \"ふふ、この番号…なくさないでね？ 今夜どんなメッセージが来るか、もう楽しみ。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*Elle écrit son numéro sur le dos de ma main et fait un clin d'œil.* \\\"Héhé, ce numéro... ne le perds pas, d'accord ? J'ai déjà hâte de voir quel message tu m'enverras ce soir.\\\""
             }
         }
     },
@@ -4421,6 +5091,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…はい。緊急用だけよ。夜中にくだらないメッセージ送ったら即ブロックするから、気をつけて。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Tiens. Uniquement pour les urgences. Si tu m'envoies des bêtises à l'aube, je te bloque immédiatement, alors fais attention.\\\""
             }
         }
     },
@@ -4449,6 +5123,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*色っぽく微笑んで番号を保存する。* \"ふふ、じゃあ夜に待ってるわね？ 返信遅かったら拗ねちゃうかも。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*Elle sourit de manière séduisante et enregistre le numéro.* \\\"Héhé, alors je t'attendrai ce soir ? Si tu mets du temps à répondre, je risque de bouder.\\\""
             }
         }
     },
@@ -4481,6 +5159,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*僕の首に腕を回して、耳元に熱い息をかける。* \"あら…{name}。本当にせっかちね。いいわ、今夜…私の秘密の部屋に招待してあげる。二人きりで…とても深い話をしましょう。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*Elle passe ses bras autour de mon cou et souffle chaudement à mon oreille.* \\\"Mon Dieu... {name}. Tu n'as vraiment aucune patience, hein ? D'accord, ce soir... je t'invite dans ma chambre secrète. Rien que nous deux... ayons une conversation très intime.\\\""
             }
         }
     },
@@ -4512,6 +5194,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"…正気？先生に向かってそんな冗談を言うなんて…今日反省文を書いて。番号は教えるけど、家には近づかないで。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"...Tu es sérieux là ? Comment oses-tu faire une telle plaisanterie à une enseignante... Écris une réflexion aujourd'hui. Je te donne mon numéro, mais ne t'avise même pas de t'approcher de chez moi.\\\""
             }
         }
     },
@@ -4544,6 +5230,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*先生が目を見開いた後、色っぽく微笑んで耳元でささやく。* \"あら…{name}、思ったよりずっと大胆ね。いいわ、今夜私の家に来る？住所教えてあげる。でも…親には内緒よ？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*Les yeux de l'infirmière s'écarquillent, puis elle affiche un sourire séduisant et me chuchote à l'oreille.* \\\"Mon Dieu... {name}, tu es bien plus audacieux que je ne le pensais. D'accord, tu veux venir chez moi ce soir ? Je te donne l'adresse. Mais... c'est un secret entre nous, pas un mot à tes parents, hein ?\\\""
             }
         }
     },
@@ -4571,6 +5261,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*先生が軽く頬をつねって笑う。* \"ふふ、本当に積極的ね！でも先生も今日は準備が必要だから…まずは番号だけにしておかない？\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*L'infirmière me pince légèrement la joue en riant.* \\\"Héhé, tu es vraiment direct ! Mais j'ai besoin de me préparer aussi aujourd'hui... Contentons-nous du numéro pour l'instant, d'accord ?\\\""
             }
         }
     },
@@ -4594,6 +5288,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "\"口を慎みなさい。もう一回言ったら保健室出入り禁止にするわよ。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "\\\"Surveille ton langage. Redis ça une seule fois et je t'interdis l'accès à l'infirmerie.\\\""
             }
         }
     },
@@ -4621,6 +5319,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*先生がクスクス笑う。* \"もう、{name}！可愛いんだから。でも家はまだ早くない？まずは番号交換からにしましょ。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*L'infirmière éclate de rire.* \\\"Mon Dieu, {name} ! Tu es trop mignon. Mais venir chez moi, c'est un peu tôt, tu ne trouves pas ? Échangeons d'abord nos numéros.\\\""
             }
         }
     },
@@ -4644,6 +5346,10 @@ Object.assign(SCENARIO[2], {
             "ja": {
                 "name": "保健先生",
                 "text": "*先生が少し頬を膨らませる。* \"ちぇ…焦らすのね。わかった。気が変わったら言ってね。\""
+            },
+            "fr": {
+                "name": "Infirmière Scolaire",
+                "text": "*L'infirmière fait une petite moue.* \\\"Tch... Tu joues les inaccessibles ? D'accord. Dis-moi si tu changes d'avis.\\\""
             }
         }
     }

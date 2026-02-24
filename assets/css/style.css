@@ -280,7 +280,8 @@ html {
 /* 스페인어/일본어: word-break 기본값 사용 (keep-all은 한국어 전용) */
 html[lang="es"] #message,
 html[lang="ja"] #message,
-html[lang="en"] #message {
+html[lang="en"] #message,
+html[lang="fr"] #message {
     word-break: normal;
 }
 
@@ -1010,7 +1011,8 @@ html[lang="en"] #message {
 
 html[lang="es"] .modal-content p,
 html[lang="ja"] .modal-content p,
-html[lang="en"] .modal-content p {
+html[lang="en"] .modal-content p,
+html[lang="fr"] .modal-content p {
     word-break: normal;
 }
 

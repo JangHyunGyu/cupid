@@ -36,6 +36,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "*暖かい日差し……今日からこの学校か。少し緊張するな。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Un doux soleil... Aujourd'hui est mon premier jour dans cette école. Je suis un peu nerveux.*"
             }
         }
     },
@@ -58,6 +62,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "*見慣れない制服、見慣れない景色……でもなぜか、いいことが起きそうな気がする。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Un uniforme inconnu, un paysage inconnu... Mais j'ai le sentiment que quelque chose de bien va arriver.*"
             }
         }
     },
@@ -80,6 +88,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "*さあ、行こう。新しい始まりだ。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Allez, on y va. C'est un nouveau départ.*"
             }
         }
     },
@@ -103,6 +115,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "システム",
                 "text": "転校生、君の名前は？"
+            },
+            "fr": {
+                "name": "Système",
+                "text": "Élève transféré, quel est ton nom ?"
             }
         }
     },
@@ -126,6 +142,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "???",
                 "text": "\"こんにちは？見かけない顔だね。もしかして……{name}？\""
+            },
+            "fr": {
+                "name": "???",
+                "text": "\"Bonjour ? Je ne t'ai jamais vu avant. Tu es... {name}, le nouvel élève transféré ?\""
             }
         }
     },
@@ -149,6 +169,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "*にっこり笑いながら話しかけてくる女の子。ほのかなシャンプーの香りが鼻先をかすめる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Une fille s'approche de moi avec un sourire radieux. Un subtil parfum de shampoing chatouille mon nez.*"
             }
         }
     },
@@ -172,6 +196,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "*目が合った瞬間、周りの音が遠のくような気がした。彼女の微笑みは朝の日差しよりも眩しかった。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Quand nos regards se croisent, mon cœur fait un bond. Elle est tellement jolie...*"
             }
         }
     },
@@ -268,6 +296,17 @@ Object.assign(SCENARIO[1], {
                     "*眩しくてしばらくぼんやりと見つめてしまう。*",
                     "ああ、そう？ちょっとどいてくれる？"
                 ]
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Je suis Seoyeon, la présidente du conseil des élèves. Le professeur m'a demandé de venir t'accueillir. Ravie de te rencontrer !\"",
+                "choices": [
+                    "Ravi de te rencontrer aussi ! Cette école est vraiment magnifique.",
+                    "Waouh... Tu es vraiment jolie.",
+                    "Est-ce qu'une présidente du conseil des élèves a le droit d'être aussi jolie ? C'est de la triche !",
+                    "*La fixer du regard, ébloui par sa beauté.*",
+                    "Oh, d'accord ? Tu peux te pousser ?"
+                ]
             }
         }
     },
@@ -291,6 +330,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*ソヨンの目が大きく見開かれ、下唇をぎゅっと噛んだ。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Les yeux de Seoyeon s'écarquillent, et elle mord sa lèvre inférieure.*"
             }
         }
     },
@@ -314,6 +357,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"あ……ごめん。邪魔だったかな。でも案内は私の仕事だから……ついてきて。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Oh... Désolée. J'ai dû te gêner. Mais te guider fait partie de mon travail, alors... suis-moi.\""
             }
         }
     },
@@ -337,6 +384,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が明るく笑うと、周りまで明るくなる気がする。少し緊張がほぐれた。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Quand elle sourit radieusement, tout autour semble s'illuminer. Ma tension s'apaise un peu.*"
             }
         }
     },
@@ -360,6 +411,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"ふふっ、でしょ？最初はちょっと複雑だよね。私が完璧に案内してあげる。さあ、ついてきて！\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Héhé, n'est-ce pas ? Ça peut être un peu déroutant au début. Je serai ton guide parfait. Allez, suis-moi !\""
             }
         }
     },
@@ -383,6 +438,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が目を丸くして、すぐにいたずらっぽくウインクした。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Ses yeux s'écarquillent, puis elle me fait un clin d'œil espiègle.*"
             }
         }
     },
@@ -406,6 +465,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"あら、初日からなかなかやるね？ まあ、悪くないけど。じゃあ、'特別な'転校生さん、迷子になる前についてきてね。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Oh là là, tu dragues dès le premier jour ? Je t'accorde des points pour ça. Alors, notre élève transféré 'spécial' veut bien me suivre ?\""
             }
         }
     },
@@ -429,6 +492,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*ソヨンの顔が一瞬で赤く染まる。視線をそらしながら髪をいじっている。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Le visage de Seoyeon devient instantanément rouge. Elle détourne le regard et joue avec ses cheveux.*"
             }
         }
     },
@@ -452,6 +519,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"……いきなりそんなこと言われたら、どう反応していいかわからないじゃない。*頬に広がる赤みを隠すように、努めて落ち着いた声で言って歩き出した。* 遅れるよ。早くついてきて。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"C-c'était tellement soudain... C'est de la triche. Enfin, les élèves transférés de nos jours... Suis-moi !\""
             }
         }
     },
@@ -475,6 +546,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が首を傾げて僕の顔に近づいてくる。息遣いが感じられそうなほどに。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle penche la tête et s'approche de mon visage. Je peux presque sentir son souffle.*"
             }
         }
     },
@@ -498,6 +573,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"ん？どうしたの？顔が真っ赤だけど……まさかもう私に惚れちゃった？ふふっ。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Hmm ? Qu'est-ce qui ne va pas ? Ton visage est tout rouge... Tu es déjà tombé amoureux de moi ? Héhé.\""
             }
         }
     },
@@ -521,6 +600,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "*ソヨンの後ろを歩いて廊下を進む。窓の外から生徒たちの元気な声が聞こえる。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je suis Seoyeon dans le couloir. Les voix animées des élèves résonnent à travers les fenêtres.*"
             }
         }
     },
@@ -544,6 +627,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*ソヨンが急に立ち止まって振り返る。* \"あ、そういえばさっき私が先に名前言っちゃったね。{name}、だよね？改めて正式にご挨拶するね！\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Seoyeon s'arrête soudainement et se tourne vers moi.* \"Oh, maintenant que j'y pense, j'ai dit ton nom en premier tout à l'heure. C'est {name}, n'est-ce pas ? Laisse-moi me présenter correctement cette fois !\""
             }
         }
     },
@@ -567,6 +654,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "\"うん、そうだよ。{name}だ。さっきはバタバタしててちゃんと挨拶できなかったね。よろしく、ソヨン。\""
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "\"Oui, c'est ça. Je suis {name}. J'étais tellement distrait tout à l'heure que je n'ai pas pu me présenter correctement. Ravi de te rencontrer, Seoyeon.\""
             }
         }
     },
@@ -590,6 +681,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"{name}……ふふっ、いい名前だね！じゃあこれからは{name}って呼ぶね。よろしくね、{name}！\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"{name}... Héhé, c'est un joli nom ! Je t'appellerai {name} à partir de maintenant. Ravie de te connaître, {name} !\""
             }
         }
     },
@@ -613,6 +708,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "*彼女の後ろ姿を見ながら廊下を歩く。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Je marche dans le couloir en la regardant de dos.*"
             }
         }
     },
@@ -658,6 +757,12 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"あ、そういえば名前だけ交換して、ちゃんとお話してなかったね？ 気になることがあったら何でも聞いてね！\"",
+                "context": "Walking through the school hallway together with the transfer student protagonist, having a light conversation. Keep the conversation going until it naturally concludes. When the conversation ends, Seoyeon will start showing the protagonist around the school facilities. In the final turn only, mention that you'll start moving or begin the tour.",
+                "personality": "Kind, caring, and responsible student council president. She's developing feelings for the protagonist."
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Oh, maintenant que j'y pense, on a juste échangé nos noms sans vraiment discuter ! Si tu as des questions, n'hésite pas à demander !\"",
                 "context": "Walking through the school hallway together with the transfer student protagonist, having a light conversation. Keep the conversation going until it naturally concludes. When the conversation ends, Seoyeon will start showing the protagonist around the school facilities. In the final turn only, mention that you'll start moving or begin the tour.",
                 "personality": "Kind, caring, and responsible student council president. She's developing feelings for the protagonist."
             }
@@ -776,6 +881,16 @@ Object.assign(SCENARIO[1], {
                     "ソヨン……女神みたいだ。声を聞いてるだけで癒されるよ。",
                     "*説明を聞くふりをしながら、彼女の横顔をこっそり盗み見る。*"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Sans m'en rendre compte, discuter avec Seoyeon nous a menés à la visite de l'école. Le temps passe si vite... C'est agréable d'être avec elle.*",
+                "choices": [
+                    "L'école est vraiment animée. Tu fais des activités de club, Seoyeon ?",
+                    "L'école est belle, mais elle paraît encore mieux grâce à la personne qui me fait visiter.",
+                    "Seoyeon... Tu es comme une déesse. Rien qu'entendre ta voix me fait du bien.",
+                    "*Faire semblant d'écouter ses explications tout en jetant des regards furtifs à son profil.*"
+                ]
             }
         }
     },
@@ -891,6 +1006,16 @@ Object.assign(SCENARIO[1], {
                     "設備もいいけど、案内してくれる人がいいからもっと良く見えるよ。",
                     "いやぁ、ソヨン……まるで女神みたいだ。声を聞いてるだけで天国にいる気分だよ。",
                     "*静かに説明を聞きながら歩く。*"
+                ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*L'expression de Seoyeon n'est pas bonne. J'ai dû faire une erreur pendant notre conversation. Elle a commencé la visite de l'école avec une attitude froide.*",
+                "choices": [
+                    "L'école est vraiment animée. Tu fais des activités de club, Seoyeon ?",
+                    "Les installations sont belles, mais elles paraissent encore mieux grâce à la personne qui me fait visiter.",
+                    "Oh mon Dieu, Seoyeon... Tu es comme une déesse. Rien qu'entendre ta voix me donne l'impression d'être au paradis.",
+                    "*Écouter ses explications en silence tout en marchant.*"
                 ]
             }
         }
@@ -1008,6 +1133,16 @@ Object.assign(SCENARIO[1], {
                     "いやぁ、ソヨン……まるで女神みたいだ。声を聞いてるだけで天国にいる気分だよ。",
                     "*静かに説明を聞きながら歩く。*"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*J'ai commencé à marcher dans le couloir avec les conseils de Seoyeon. Elle a gentiment commencé à expliquer les différentes parties de l'école.*",
+                "choices": [
+                    "L'école est vraiment animée. Tu fais des activités de club, Seoyeon ?",
+                    "Les installations sont belles, mais elles paraissent encore mieux grâce à la personne qui me fait visiter.",
+                    "Oh mon Dieu, Seoyeon... Tu es comme une déesse. Rien qu'entendre ta voix me donne l'impression d'être au paradis.",
+                    "*Écouter ses explications en silence tout en marchant.*"
+                ]
             }
         }
     },
@@ -1035,6 +1170,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*ソヨンが戸惑ったように立ち止まって私をじっと見つめる。顔が少し赤くなるが、すぐにいたずらっぽい笑みを浮かべた。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Seoyeon s'arrête comme si elle était troublée et me fixe du regard. Son visage rougit légèrement, mais elle affiche bientôt un sourire espiègle.*"
             }
         }
     },
@@ -1057,6 +1196,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"あら、{name}は見た目で人を判断するタイプなんだ？ふふっ、でもありがとう。女神だなんて……ちょっと嬉しいかも。でもからかいすぎはダメだよ！\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Oh là là, {name}, tu es du genre à juger les gens sur leur apparence ? Héhé, mais merci. Une déesse... Ça me fait un peu plaisir. Mais ne pousse pas trop loin les plaisanteries !\""
             }
         }
     },
@@ -1084,6 +1227,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*ソヨンが不快感を隠さずに足を止める。彼女の目が冷たく冷えている。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Seoyeon s'arrête sans cacher son mécontentement. Ses yeux sont devenus glacials.*"
             }
         }
     },
@@ -1106,6 +1253,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"うーん……褒め言葉なのはわかるけど……ちょっとやりすぎじゃない？まだ会ったばかりなんだから。冗談はほどほどにしてね。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Eh bien... Je sais que c'est un compliment, mais... c'est un peu excessif, non ? On vient à peine de se rencontrer. Garde tes plaisanteries appropriées, s'il te plaît.\""
             }
         }
     },
@@ -1133,6 +1284,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*ソヨンが戸惑ったように立ち止まって私をじっと見つめる。彼女の目が少し冷たくなった。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Seoyeon s'arrête comme si elle était troublée et me fixe du regard. Ses yeux deviennent un peu froids.*"
             }
         }
     },
@@ -1155,6 +1310,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"うーん……まあ、ありがとうだけど……そういうのはちょっと困るな。まだ知り合ったばかりでしょ？冗談がちょっと過ぎると思う。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Hmm... Eh bien, merci, mais... ce genre de remarques me met mal à l'aise. On ne se connaît pas depuis longtemps, non ? La plaisanterie est un peu exagérée.\""
             }
         }
     },
@@ -1182,6 +1341,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女がキラキラした目で嬉しそうに私を見ている。似たような趣味を持っているかもしれないという期待が見える。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Ses yeux pétillent d'enthousiasme en me regardant. On devine l'espoir que nous partagions des intérêts similaires.*"
             }
         }
     },
@@ -1204,6 +1367,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"うん！生徒会もやってるけど、実は園芸部にも入ってるんだ。お花を育てるのが好きでね。{name}はお花好き？今度、温室にも遊びに来てね！特別に案内してあげる。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Oui ! Je suis au conseil des élèves, mais je suis aussi au club de jardinage. J'adore cultiver des fleurs. Tu aimes les fleurs, {name} ? Viens visiter notre serre un jour ! Je te ferai une visite spéciale.\""
             }
         }
     },
@@ -1231,6 +1398,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が事務的な態度でうなずく。表情には何の感情も乗っていない。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle hoche la tête avec une attitude professionnelle. Aucune émotion ne transparaît sur son visage.*"
             }
         }
     },
@@ -1253,6 +1424,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"うん。生徒会と園芸部を両立してるよ。質問はそれだけ？じゃあ案内を続けるね。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Oui. Je suis à la fois au conseil des élèves et au club de jardinage. C'est tout ce que tu voulais savoir ? Alors continuons la visite.\""
             }
         }
     },
@@ -1280,6 +1455,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が嬉しそうに私を見ている。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle me regarde avec ravissement.*"
             }
         }
     },
@@ -1302,6 +1481,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"うん！生徒会もやってるけど、実は園芸部にも入ってるんだ。お花を育てるのが好きでね。土をいじっていると心が落ち着くの。今度、温室にも遊びに来てね！\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Oui ! Je suis au conseil des élèves, mais je suis aussi au club de jardinage. J'adore cultiver des fleurs. Travailler la terre m'apaise. Viens visiter notre serre un jour !\""
             }
         }
     },
@@ -1329,6 +1512,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*ソヨンが本当に嬉しそうに頬を赤らめ、はにかんだ笑顔を見せる。彼女の目には私への好意がいっぱい詰まっている。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Seoyeon rougit de bonheur sincère et sourit timidement. Ses yeux sont remplis d'affection pour moi.*"
             }
         }
     },
@@ -1351,6 +1538,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"本当に……どうしてそんなに素敵なこと言えるの？転校生のあなたがうまくやれるか心配してたのに、逆に私が癒されちゃった。ありがとう、{name}。あなたといると本当に心が安らぐの。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Vraiment... Comment fais-tu pour dire des choses aussi douces ? Je m'inquiétais de savoir si tu t'adapterais bien en tant qu'élève transféré, mais c'est moi qui me sens réconfortée. Merci, {name}. Je me sens vraiment à l'aise quand je suis avec toi.\""
             }
         }
     },
@@ -1378,6 +1569,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が冷たい表情で私をちらっと見る。口元がバカにするように少し歪んでいる。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle me regarde froidement. Le coin de sa bouche est légèrement tordu, comme si elle se moquait.*"
             }
         }
     },
@@ -1400,6 +1595,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"口だけは達者だね。誰にでも言える褒め言葉はいいから。今は学校案内中だから、後ろについてきて。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Tu as la langue bien pendue. Garde tes compliments génériques. Pour l'instant, on est en visite scolaire, alors contente-toi de suivre.\""
             }
         }
     },
@@ -1427,6 +1626,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女がはにかみながら頬を赤らめて答える。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle répond en rougissant timidement.*"
             }
         }
     },
@@ -1449,6 +1652,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"本当に……言葉がとても上手なんだね。生徒会長って立場だからいつも緊張してるけど、あなたといると何だか気が楽になるの。知らないうちに甘えちゃうかも……ふふっ、冗談だよ。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Vraiment... Tu as une si jolie façon de parler. En tant que présidente du conseil des élèves, je suis toujours tendue, mais quand je suis avec toi, je me sens détendue. Je pourrais finir par baisser ma garde avec toi... Héhé, je plaisante.\""
             }
         }
     },
@@ -1476,6 +1683,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女がキラキラした目で楽しそうに説明を続ける。私の反応一つ一つを喜んでいるようだ。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle continue ses explications avec enthousiasme, les yeux pétillants. Elle semble ravie de chacune de mes réactions.*"
             }
         }
     },
@@ -1498,6 +1709,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"わあ、こんなに真剣に聞いてくれるなんて本当に感動！{name}は本当に優しくて真面目な人だね。案内した甲斐があるよ！もっと気になることがあったらいつでも聞いてね！\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Waouh, ça me touche tellement que tu écoutes aussi sérieusement ! {name}, tu as l'air d'une personne vraiment gentille et sérieuse. Ça vaut le coup de te guider ! Si tu as d'autres questions, n'hésite pas à demander !\""
             }
         }
     },
@@ -1525,6 +1740,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が機械的に説明を続ける。私を見もせず、空に向かって話しているような感じだ。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle continue ses explications de façon mécanique. On dirait qu'elle parle dans le vide sans même me regarder.*"
             }
         }
     },
@@ -1547,6 +1766,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"だいたいわかった？じゃあ次の場所に移動するよ。ぼーっとしてないでちゃんとついてきて。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Tu as compris tout ça ? Alors passons au prochain endroit. Ne reste pas là à rêvasser, suis-moi.\""
             }
         }
     },
@@ -1574,6 +1797,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が楽しそうに説明を続ける。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle continue ses explications avec enthousiasme.*"
             }
         }
     },
@@ -1596,6 +1823,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"こんなによく聞いてくれてありがとう。{name}、本当に真面目な人だね！そういう姿勢なら学校生活にもすぐ馴染めるよ。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Merci d'écouter aussi attentivement. {name}, tu as l'air d'une personne vraiment sérieuse ! Avec cette attitude, tu t'adapteras à la vie scolaire en un rien de temps.\""
             }
         }
     },
@@ -1632,6 +1863,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が急に立ち止まって私を振り返る。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle s'arrête soudainement et se tourne vers moi.*"
             }
         }
     },
@@ -1654,6 +1889,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*先を歩いていたソヨンが急に立ち止まり、冷たい目で私を振り返る。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Seoyeon, qui marchait devant, s'arrête soudainement et se tourne vers moi avec des yeux froids.*"
             }
         }
     },
@@ -1676,6 +1915,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女の視線から距離感が感じられる。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Je peux sentir la distance dans son regard.*"
             }
         }
     },
@@ -1698,6 +1941,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"転校初日からそんな態度じゃ困るよ。最低限の礼儀は守ってほしいんだけど。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Se comporter comme ça dès ton premier jour de transfert, c'est problématique. J'apprécierais que tu gardes au moins les bonnes manières de base.\""
             }
         }
     },
@@ -1720,6 +1967,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が私の目をじっと見つめる。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle me fixe intensément dans les yeux.*"
             }
         }
     },
@@ -1799,6 +2050,16 @@ Object.assign(SCENARIO[1], {
                     "まだわからない。学校生活に慣れてから決めるよ。",
                     "部活なんて面倒……一人でいたい。"
                 ]
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Quel genre de clubs t'intéresse ? Le conseil des élèves accueille toujours de nouveaux talents. Si tu nous rejoins... je pourrais personnellement t'apprendre le travail.\"",
+                "choices": [
+                    "Si je rejoins le conseil des élèves, je pourrai être avec toi tous les jours ? Alors je m'inscris tout de suite !",
+                    "Plus que les clubs... J'aimerais mieux te connaître, Seoyeon.",
+                    "Je ne suis pas encore sûr. Je déciderai après m'être adapté à la vie scolaire.",
+                    "Les clubs, quelle corvée... Je préfère être seul."
+                ]
             }
         }
     },
@@ -1836,6 +2097,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女は失望を隠しきれない。肩が少し落ちたように見える。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle ne peut pas cacher sa déception. Ses épaules semblent s'affaisser un peu.*"
             }
         }
     },
@@ -1858,6 +2123,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*ソヨンの顔がまた赤くなる。恥ずかしそうに視線をそらすが、唇には薄い笑みが広がっている。指先がスカートの裾をいじっている。恥ずかしそうにつま先で床をトントンと叩いている。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Le visage de Seoyeon rougit à nouveau. Elle détourne le regard avec gêne, mais un léger sourire se dessine sur ses lèvres. Ses doigts jouent avec l'ourlet de sa jupe. Elle tapote timidement le sol du bout du pied.*"
             }
         }
     },
@@ -1895,6 +2164,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"え、毎日って……仕事がどれだけあると思ってるの！でも、入ってくれたら……私もちょっと嬉しいかも。楽しみにしてるね？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"T-tous les jours ? Tu sais combien il y a de travail ?! Mais si tu nous rejoins... je serais peut-être un peu contente aussi. J'ai hâte d'y être.\""
             }
         }
     },
@@ -1933,6 +2206,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女がうなずいてまた先を歩き始める。少し残念な気持ちになる。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle hoche la tête et recommence à marcher devant. Je ressens un léger regret.*"
             }
         }
     },
@@ -1955,6 +2232,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女がぽかんと私を見つめた後、澄んだ美しい笑い声を上げる。その笑い声が銀の鈴のように廊下に響く。目尻に浮かんだ小さな涙が日差しにキラキラ光っている。お腹を抱えてしばらく笑っている……*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle me fixe du regard, puis éclate d'un rire clair et magnifique. Le son résonne dans le couloir comme des clochettes d'argent. De petites larmes au coin de ses yeux scintillent au soleil. Elle se tient le ventre en riant pendant un moment...*"
             }
         }
     },
@@ -1992,6 +2273,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"ふふっ、本当に素直なんだね？私のことは……そうだなあ、これからの付き合い次第で教えてあげるかも。楽しみにしてて！\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\"Héhé, tu es vraiment honnête, n'est-ce pas ? À propos de moi... Eh bien, je pourrais te le dire selon comment les choses évoluent. Sois impatient !\""
             }
         }
     },
@@ -2015,6 +2300,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*教室のドアの前に着くと、ソヨンがそっと僕の手を取った。彼女の柔らかな感触に心臓がドキドキし始める。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*En arrivant devant la porte de la classe, Seoyeon prend doucement ma main. Mon cœur se met à battre la chamade au contact de sa peau douce.*"
             }
         }
     },
@@ -2038,6 +2327,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*ソヨンが少し頭を下げて耳元でささやく。甘い息遣いがくすぐったい。* \"{name}、そんなに緊張しないで。私がいつもそばにいるから。大丈夫だよ。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Seoyeon baisse légèrement la tête et me murmure à l'oreille. Son souffle sucré me chatouille.* \\\"{name}, ne sois pas trop nerveux. Je serai toujours à tes côtés. Tu vas y arriver.\\\""
             }
         }
     },
@@ -2061,6 +2354,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"さあ、ここが私たちの教室だよ。……これは秘密だけど、先生にお願いして私の隣の席に移してもらったの。少しでも早く、あなたと仲良くなりたくて。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Voici notre classe. ...C'est un secret, mais j'ai demandé au professeur de te placer à côté de moi. Je voulais me rapprocher de toi le plus vite possible.\\\""
             }
         }
     },
@@ -2084,6 +2381,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*教室のドアの前に着くと、ソヨンが先に歩いて距離を置く。彼女の後ろ姿がどこか冷たく感じられる。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*En arrivant devant la porte de la classe, Seoyeon marche devant moi en gardant ses distances. Son dos dégage une certaine froideur.*"
             }
         }
     },
@@ -2107,6 +2408,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女が無言でドアの横の表示を顎で指す。こちらを見ようともしない態度に心の隅が冷える。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Elle désigne silencieusement le panneau à côté de la porte d'un mouvement du menton. Son attitude, sans même me regarder, me glace le cœur.*"
             }
         }
     },
@@ -2130,6 +2435,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"ここが2年3組だよ。先生が中で待ってるから。転校初日から遅刻して目をつけられないように、早く入って。\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"C'est la classe 2-3. Le professeur t'attend à l'intérieur. Ne sois pas en retard dès ton premier jour de transfert pour te faire mal voir. Allez, entre.\\\""
             }
         }
     },
@@ -2153,6 +2462,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*教室のドアの前に着いた。中から生徒たちのざわめきや笑い声が聞こえてくる。ソヨンが軽く肩をポンと叩いて応援してくれる。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*Nous sommes arrivés devant la porte de la classe. On entend les bavardages et les rires des élèves à l'intérieur. Seoyeon me tapote légèrement l'épaule pour m'encourager.*"
             }
         }
     },
@@ -2176,6 +2489,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "*彼女の手が触れた場所がじんわり温かい。彼女が僕の目を見て小さくファイトと言ってくれる。*"
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "*L'endroit où sa main m'a touché est tout chaud. Elle me regarde dans les yeux et m'encourage doucement.*"
             }
         }
     },
@@ -2199,6 +2516,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "ソヨン",
                 "text": "\"さあ、ここがあなたのいる2年3組だよ。緊張しないで。私がすぐ隣にいるから、いつも通りにすればいいよ。わかった？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"Voici la classe 2-3, ta nouvelle classe. Ne sois pas nerveux. Je suis juste à côté de toi, alors sois toi-même. Compris ?\\\""
             }
         }
     },
@@ -2245,6 +2566,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "*教壇の前に立つと、数十もの視線が一斉に僕に突き刺さる。好奇の目、警戒の目……ソヨンは隣で微笑みながら僕を見守っている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Debout devant l'estrade, des dizaines de regards se tournent vers moi. Des regards curieux, des regards méfiants... Seoyeon sourit à côté de moi et veille sur moi.*"
             }
         }
     },
@@ -2273,6 +2598,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "*教壇の前に立つと、数十もの視線が刺さる。ソヨンは隣で頼もしく微笑みながら僕を応援してくれている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Debout devant l'estrade, des dizaines de regards se tournent vers moi. Seoyeon me sourit avec encouragement à côté de moi, me soutenant du regard.*"
             }
         }
     },
@@ -2301,6 +2630,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "僕",
                 "text": "*教壇の前に立つと、数十もの視線が刺さる。ソヨンは少し離れた場所で冷たい表情で立っている。*"
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Debout devant l'estrade, des dizaines de regards se tournent vers moi. Seoyeon se tient un peu à l'écart avec une expression froide.*"
             }
         }
     },
@@ -2324,6 +2657,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "担任先生",
                 "text": "*教室の空気が重く感じられる。担任の先生が教壇をトントンと叩いて注目を集める。*"
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "*L'atmosphère dans la classe est pesante. Le professeur principal tape sur l'estrade pour attirer l'attention de tout le monde.*"
             }
         }
     },
@@ -2371,6 +2708,12 @@ Object.assign(SCENARIO[1], {
                 "text": "\"さて、みんな転校生にすごく興味があるみたいだね。緊張するだろうけど、みんないい子たちだから心配しないで。自己紹介の前に、先生に聞きたいことある？\"",
                 "context": "Location: In front of the podium in Class 2-3. Situation: A brief waiting period before the homeroom teacher introduces the transfer student protagonist to the class. Dozens of students are watching us, but this conversation should only be between the protagonist and the homeroom teacher. The protagonist's introduction to all the students is an official event that happens AFTER this conversation, so do NOT have the protagonist greet or introduce themselves to the students yet. Talk only about personal questions to the teacher, advice about school life, first impressions, etc. Keep the conversation going until it naturally concludes. In the final turn only, mention that you'll now officially introduce them to the class.",
                 "personality": "A professional teacher with clear boundaries between work and personal life, but actually has a clumsy side and gets flustered by the protagonist's unexpectedly mature demeanor. Has a hidden desire to lean on the protagonist - a charming contrast to her strict exterior."
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"Eh bien, tout le monde a l'air très intéressé par le nouvel élève transféré. Tu dois être nerveux, mais tout le monde ici est gentil, alors ne t'inquiète pas trop. Avant de te présenter, est-ce que tu as des questions à me poser ?\\\"",
+                "context": "Lieu : Devant l'estrade de la classe 2-3. Situation : Un bref moment d'attente avant que le professeur principal ne présente l'élève transféré protagoniste à la classe. Des dizaines d'élèves nous observent, mais cette conversation ne doit se dérouler qu'entre le protagoniste et le professeur principal. La présentation du protagoniste à tous les élèves est un événement officiel qui a lieu APRÈS cette conversation, donc NE faites PAS en sorte que le protagoniste salue ou se présente aux élèves pour l'instant. Parlez uniquement de questions personnelles au professeur, de conseils sur la vie scolaire, de premières impressions, etc. Continuez la conversation jusqu'à ce qu'elle se termine naturellement. Uniquement au dernier tour, mentionnez que vous allez maintenant les présenter officiellement à la classe.",
+                "personality": "Une enseignante professionnelle avec des limites claires entre vie professionnelle et personnelle, mais qui a en réalité un côté maladroit et se trouble face à la maturité inattendue du protagoniste. Elle a un désir caché de s'appuyer sur le protagoniste - un contraste charmant avec son apparence stricte."
             }
         }
     },
@@ -2479,6 +2822,17 @@ Object.assign(SCENARIO[1], {
                     "よろしく。一人でいるのが好きなんだ。",
                     "勉強しに来たんだ。邪魔されるのは嫌だから、ほどほどにね。"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Discuter avec le professeur m'a aidé à me détendre. Elle semble m'apprécier, ce qui est un soulagement. Maintenant, c'est le moment de me présenter à la classe.*",
+                "choices": [
+                    "Je m'appelle '{name}'. Ravi de vous rencontrer !",
+                    "Allez ! Entendons-nous bien à partir d'aujourd'hui, camarades !",
+                    "Salut ! J'adore le sport et j'ai un tempérament actif !",
+                    "Enchanté. Je préfère rester plutôt discret.",
+                    "Je suis là pour étudier. J'ai horreur d'être dérangé, alors restons-en là."
+                ]
             }
         }
     },
@@ -2586,6 +2940,17 @@ Object.assign(SCENARIO[1], {
                     "やあ！スポーツが大好きで、活発な性格です！",
                     "よろしく。一人でいるのが好きなんだ。",
                     "勉強しに来たんだ。邪魔されるのは嫌だから、ほどほどにね。"
+                ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*Le regard du professeur est perçant. On dirait que j'ai fait mauvaise impression. Je dois me présenter dans cette atmosphère glaciale.*",
+                "choices": [
+                    "Je m'appelle '{name}'. Ravi de vous rencontrer !",
+                    "Allez ! Entendons-nous bien à partir d'aujourd'hui, camarades !",
+                    "Salut ! J'adore le sport et j'ai un tempérament actif !",
+                    "Enchanté. Je préfère rester plutôt discret.",
+                    "Je suis là pour étudier. J'ai horreur d'être dérangé, alors restons-en là."
                 ]
             }
         }
@@ -2696,6 +3061,17 @@ Object.assign(SCENARIO[1], {
                     "よろしく。一人でいるのが好きなんだ。",
                     "勉強しに来たんだ。邪魔されるのは嫌だから、ほどほどにね。"
                 ]
+            },
+            "fr": {
+                "name": "Moi",
+                "text": "*La conversation avec le professeur est terminée. C'est maintenant le moment de me présenter officiellement à la classe. Tous les regards sont braqués sur moi.*",
+                "choices": [
+                    "Je m'appelle '{name}'. Ravi de vous rencontrer !",
+                    "Allez ! Entendons-nous bien à partir d'aujourd'hui, camarades !",
+                    "Salut ! J'adore le sport et j'ai un tempérament actif !",
+                    "Enchanté. Je préfère rester plutôt discret.",
+                    "Je suis là pour étudier. J'ai horreur d'être dérangé, alors restons-en là."
+                ]
             }
         }
     },
@@ -2718,6 +3094,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"（先生が嬉しそうな笑顔で私を見る。）あら、{name}……いい名前ね。さあ、みんなに自己紹介をお願いするわ。みんな、歓迎してあげてね！\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"(Le professeur me regarde avec un sourire satisfait.) Oh, {name}... Quel joli nom. Maintenant, dis quelques mots pour te présenter à la classe. Tout le monde, souhaitez-lui la bienvenue !\\\""
             }
         }
     },
@@ -2740,6 +3120,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"……さあ、{name}。クラスメートに簡単に自己紹介をして席に着きなさい。みんな、静かにして。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"...Bien, {name}. Présente-toi brièvement à tes camarades et va t'asseoir. Tout le monde, silence.\\\""
             }
         }
     },
@@ -2763,6 +3147,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"さあ、{name}。クラスメートに自己紹介をお願いするわね。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"Bien, {name}. Dis quelques mots pour te présenter à la classe, s'il te plaît.\\\""
             }
         }
     },
@@ -2801,6 +3189,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "担任先生",
                 "text": "\"{name}……いい名前だね。さあみんな、歓迎してあげて。\""
+            },
+            "fr": {
+                "name": "Professeur Principal",
+                "text": "\\\"{name}... C'est un joli nom. Allez tout le monde, souhaitez-lui la bienvenue.\\\""
             }
         }
     },
@@ -2824,6 +3216,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "*教室のあちこちから歓声が上がる。特に後ろの席の男子が目を輝かせている。ソヨンも嬉しそうに微笑みながら拍手してくれる。*"
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "*Des acclamations fusent de partout dans la classe. Les garçons du fond sont particulièrement enthousiastes. Seoyeon applaudit avec un sourire ravi.*"
             }
         }
     },
@@ -2847,6 +3243,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "*生徒たちはもう僕を自分のチームに入れようとひそひそ話している。*"
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "*Les élèves chuchotent déjà pour me recruter dans leurs équipes.*"
             }
         }
     },
@@ -2870,6 +3270,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "\"おー、運動できそうだね？昼休みにバレー一試合どう？転校生の実力見せてもらおうぜ！\""
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "\\\"Oh, tu as l'air sportif ! Que dirais-tu d'une partie de volley à midi ? Voyons ce que le nouvel élève a dans le ventre !\\\""
             }
         }
     },
@@ -2893,6 +3297,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "*生徒たちがうなずいて落ち着いて僕を受け入れる。数人の女子がこそこそ話しながら僕を見ている。*"
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "*Les élèves hochent la tête et m'acceptent calmement. Quelques filles chuchotent en me regardant.*"
             }
         }
     },
@@ -2916,6 +3324,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "*ソヨンは僕の真面目な様子が気に入ったのか、うなずいている。教室の雰囲気が一層落ち着いたものになる。*"
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "*Seoyeon semble apprécier mon attitude sérieuse et hoche la tête. L'atmosphère de la classe devient plus calme.*"
             }
         }
     },
@@ -2939,6 +3351,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "\"わあ、なんか雰囲気あるね……今度図書館で会ったら挨拶してもいいかな？\""
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "\\\"Waouh, cette personne a un style classe... Ce serait bien de se saluer si on se croise à la bibliothèque, non ?\\\""
             }
         }
     },
@@ -2962,6 +3378,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "*教室が一瞬で市場みたいに賑やかになる。もう周りに生徒たちが集まってきている。*"
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "*La classe devient instantanément aussi bruyante qu'un marché. Les élèves se pressent déjà autour de moi.*"
             }
         }
     },
@@ -2985,6 +3405,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "*ソヨンは少し戸惑った様子だが、すぐに笑い出した。生徒たちはもうメニューを決めるのに忙しい。*"
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "*Seoyeon semble un peu décontenancée mais éclate vite de rire. Les élèves sont déjà occupés à décider où manger.*"
             }
         }
     },
@@ -3008,6 +3432,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "\"わあ！{name}って性格めっちゃいいじゃん、今日のお昼は一緒に食べようよ！美味しいところいっぱい教えてあげる！\""
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "\\\"Waouh ! {name}, tu as vraiment un super caractère ! Mangeons ensemble ce midi ! On va te montrer tous les bons plans bouffe !\\\""
             }
         }
     },
@@ -3031,6 +3459,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "*教室に冷たい静寂が流れる。生徒たちが少し戸惑った様子で互いに目配せしながらひそひそ話している。*"
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "*Un silence glacial envahit la classe. Les élèves semblent un peu déconcertés et échangent des regards en chuchotant.*"
             }
         }
     },
@@ -3054,6 +3486,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "*ソヨンの表情も少し固くなる。なぜか壁ができたような気分だ。生徒たちは僕の様子をうかがいながら静かになる。*"
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "*L'expression de Seoyeon se fige aussi un peu. C'est comme si une sorte de mur s'était dressé. Les élèves se taisent en m'observant.*"
             }
         }
     },
@@ -3077,6 +3513,10 @@ Object.assign(SCENARIO[1], {
             "ja": {
                 "name": "生徒たち",
                 "text": "\"わあ……マジかよ。完全に勉強の虫じゃん。下手に関わらない方がよさそう……\""
+            },
+            "fr": {
+                "name": "Camarades",
+                "text": "\\\"Waouh... C'est intense. Ça doit être un vrai rat de bibliothèque. On ferait mieux de ne pas le déranger...\\\""
             }
         }
     }

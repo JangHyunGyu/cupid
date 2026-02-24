@@ -1,0 +1,4523 @@
+[
+  {
+    "file": "day2_1_morning.js",
+    "block": 1,
+    "name": "Me",
+    "text": "*The moment I open my eyes, the faces I met yesterday flash through my mind. The morning of my second day at the new school — I woke up before the alarm, probably because of the excitement.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 2,
+    "name": "Me",
+    "text": "*Yesterday feels as sweet as a dream... but the school uniform on my desk reminds me this is reality. I have a feeling something good will happen today too.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 3,
+    "name": "Me",
+    "text": "*I pick up the smartphone beside my bed. Maybe someone sent me a message overnight... I check the screen.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 4,
+    "name": "Me",
+    "text": "*No messages. Was I hoping for nothing...? But I'll see everyone at school today anyway. I get out of bed, filled with anticipation.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 5,
+    "name": "Me",
+    "text": "*I wash my face and stand in front of the mirror. I think I look a bit better than yesterday. I change into my uniform and fix my hair.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 6,
+    "name": "Me",
+    "text": "*My reflection in the uniform looks a little more familiar now. I retie my necktie and straighten my collar.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 7,
+    "name": "Me",
+    "text": "*I come down to the kitchen and find rice and a fried egg on the table. Mom must have already left for work. Eating alone, but somehow I don't feel lonely today.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 8,
+    "name": "Me",
+    "text": "*I scarf down breakfast and grab my bag. Checking the clock, I have plenty of time. I can take a leisurely walk to school.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 9,
+    "name": "Me",
+    "text": "*Alright, let's go. I wonder what kind of excitement awaits me today?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 10,
+    "name": "Me",
+    "text": "*Stepping outside, the fresh morning air fills my lungs. A softer breeze than yesterday blows by. It smells like spring.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 11,
+    "name": "Me",
+    "text": "*Students in the same uniform walk toward school in small groups. Yesterday it all felt so unfamiliar, but today it somehow feels welcoming.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 12,
+    "name": "Me",
+    "text": "*Across the street, a few students from our school glance my way and whisper. I can hear 'Oh, it's the transfer student!' carried by the wind. Looks like I'm still the hot topic.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 13,
+    "name": "Me",
+    "text": "*Arriving at the school gate, the scenery greets me far more warmly than yesterday. My steps feel light for some reason.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 14,
+    "name": "Me",
+    "text": "*As I'm about to pass through the gate, someone taps me on the shoulder.*",
+    "choices": [
+      "Turn around."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 15,
+    "name": "Me",
+    "text": "*I turn around and there stands...*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 16,
+    "name": "Me",
+    "text": "*Under the large zelkova tree beside the school gate, I spot Yuna standing with an indifferent expression. She closes her book and gazes at me quietly.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 17,
+    "name": "Yuna",
+    "text": "\\\"...Hi. Thanks for the message last night. It made the night a little warmer. Later... check the note on your desk.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 18,
+    "name": "Yuna",
+    "text": "\\\"...Hi. That 'light' of yours is still the same today. Good. Later... check the note on your desk.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 19,
+    "name": "System",
+    "text": "",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 20,
+    "name": "School Nurse",
+    "text": "\\\"Oh my, {name}! Good morning. You look extra energetic today, don't you?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 21,
+    "name": "School Nurse",
+    "text": "*She walks up to me and straightens my clothes.* \\\"My dear transfer student, what did you dream about to be glowing like this? I barely got any sleep because I was up thinking about you.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 22,
+    "name": "School Nurse",
+    "text": "*She sighs and turns her head as soon as she sees me.* \\\"Oh, transfer student... It's hard enough seeing your face this early in the morning. If you don't have any business, please head to class.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 23,
+    "name": "School Nurse",
+    "text": "*She walks up to me and gives a little wink.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 24,
+    "name": "School Nurse",
+    "text": "\\\"That message you sent last night was really cute. Thanks to you, I fell asleep in a good mood. If you're not feeling well today, come visit the nurse's office anytime.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 25,
+    "name": "School Nurse",
+    "text": "\\\"You didn't lose sleep thinking about me last night, did you? Hehe, just kidding. If you're not feeling well today, come visit the nurse's office anytime.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 26,
+    "name": "School Nurse",
+    "text": "\\\"It's only your second day, but you already look right at home. Don't push yourself too hard, and come hang out at the nurse's office if you need a break.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 27,
+    "name": "System",
+    "text": "",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 28,
+    "name": "Seoyeon",
+    "text": "\\\"Hi, {name}! Did you sleep well? You're here early again today!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 29,
+    "name": "Seoyeon",
+    "text": "*Seoyeon was lingering by the school gate, and the moment she spots me, she beams and runs over.* \\\"{name}! I was waiting for you! I couldn't sleep a wink because I was wondering if you slept well last night!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 30,
+    "name": "Seoyeon",
+    "text": "*Seoyeon's expression hardens as soon as she spots me, and she turns her head away.* \\\"...Oh, you're here? At least you're not late. Well, take care.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 31,
+    "name": "Seoyeon",
+    "text": "*Seoyeon meets my eyes and smiles softly.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 32,
+    "name": "Seoyeon",
+    "text": "\\\"Thank you so much for the message yesterday! I think I slept well because of it. Let's do our best today too!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 33,
+    "name": "Seoyeon",
+    "text": "\\\"Did you get home okay yesterday? After we exchanged numbers, I must have debated a hundred times whether to text you... but I held back because I didn't want to bother you.\\\"",
+    "choices": [
+      "I was waiting for your message too! Go ahead and send one now.",
+      "Oh, I see. Honestly, I was so tired I fell asleep the moment I lay down."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 34,
+    "name": "Seoyeon",
+    "text": "\\\"Did you get home okay yesterday? I was really worried since it was your first day, but seeing you today puts me at ease. Let's do our best today too!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 35,
+    "name": "Seoyeon",
+    "text": "\\\"Really? Then starting today, we share everything, even the little things, deal? Come on, let's head to class together!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 36,
+    "name": "Seoyeon",
+    "text": "\\\"Right? Your first day at a new school must have been exhausting. Come on, let's have another great day!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 37,
+    "name": "Dain",
+    "text": "\\\"Hey, {name}! Good morning! You're here early today!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 38,
+    "name": "Dain",
+    "text": "*Dain cheerfully bumps my shoulder.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 39,
+    "name": "Dain",
+    "text": "\\\"Got your message yesterday! You're surprisingly sweet, you know that? Thanks to you, I slept great. Let's make today awesome too!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 40,
+    "name": "Dain",
+    "text": "\\\"Thanks to the tteokbokki yesterday, I'm in top shape today! Same for you, right?\\\"",
+    "choices": [
+      "Yeah! I slept well thanks to you, Dain.",
+      "I'm a bit tired actually... Dain, you really have amazing stamina."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 41,
+    "name": "Dain",
+    "text": "\\\"Did you get home okay yesterday? It was your first day, so I hope you got to explore the school a bit! Let's make today awesome too!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 42,
+    "name": "Dain",
+    "text": "\\\"Haha! I guess my energy is a bit over the top, huh? Alright, come to the gym at lunch today too! I'll be waiting!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 43,
+    "name": "Dain",
+    "text": "\\\"Oh come on, don't be a wimp! Stamina is everything when you're adjusting to school life! Now let's get to class!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 44,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Oh, isn't that {name}? Only your second day and you're already fitting right in. It's nice to see you here early.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 45,
+    "name": "Homeroom Teacher",
+    "text": "\\\"We still have some time before class starts. Is there anything you'd like to ask me?\\\"",
+    "choices": [],
+    "context": "You've run into the homeroom teacher at the school gate and are walking to the classroom together. Keep the conversation going until it naturally wraps up. At the very end of the conversation, the teacher will ask for the protagonist's contact info for the emergency contact list. Only on the final turn should you hint at needing to ask about contact information or suggest there's some official business.",
+    "personality": "A homeroom teacher who strictly separates work from personal matters, but has a secret soft spot for the protagonist."
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 46,
+    "name": "Me",
+    "text": "*I had a nice chat with the teacher on the way to class. She said I looked like I was in a great mood this morning and asked for my phone number for the emergency contact list.*",
+    "choices": [
+      "Sure, here's my number.",
+      "I'll stop by the teacher's office later to give it to you."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 47,
+    "name": "Me",
+    "text": "*The teacher's expression hardened. I must have been too rude this early in the morning. She sighed and asked me to provide my phone number for the emergency contact list.*",
+    "choices": [
+      "Sure, here's my number.",
+      "I'll stop by the teacher's office later to give it to you."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 48,
+    "name": "Me",
+    "text": "*I chatted with the teacher about various things on the walk to class. She said she needed my phone number for the emergency contact list.*",
+    "choices": [
+      "Sure, here's my number.",
+      "I'll stop by the teacher's office later to give it to you."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 49,
+    "name": "Homeroom Teacher",
+    "text": "\\\"{name}, thanks for the number! Hehe, I used the emergency contact list as an excuse, but... truth is, I wanted to get closer to you too. If school life gets tough, don't hesitate to call me anytime, okay?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 50,
+    "name": "Homeroom Teacher",
+    "text": "\\\"...Alright, thank you. I'll only use your contact info for official purposes, so don't worry. Now hurry up and get to class before you're late.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 51,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Thank you. I'll reach out if anything comes up. Now, let's head to class.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 52,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Alright, we're here. Let's have another great day.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 53,
+    "name": "Me",
+    "text": "*Walking into the classroom alongside the teacher, all eyes turn to us. Walking in with the homeroom teacher definitely drew some attention.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 54,
+    "name": "Classmate",
+    "text": "\\\"Hey, transfer student! Good morning! Whoa, you came with the homeroom teacher? Getting special treatment already?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 55,
+    "name": "Me",
+    "text": "*A few students snicker with playful looks. At least there's no malice behind it.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 56,
+    "name": "Classmate",
+    "text": "*The student next to me nudges my elbow.* \\\"Dude, what's the deal with you and the homeroom teacher? Walking to school together first thing in the morning!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 57,
+    "name": "Me",
+    "text": "\\\"It's nothing, we just happened to run into each other at the school gate and walked in together.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 58,
+    "name": "Me",
+    "text": "*I brush it off and take my seat. Walking in with the teacher was a bit embarrassing, but... it didn't feel bad. I start unpacking my bag to get my textbooks out when... something seems off.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 59,
+    "name": "Seoyeon",
+    "text": "\\\"Here we are! Let's have another great day, {name}!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 60,
+    "name": "Me",
+    "text": "*Walking into the classroom side by side with Seoyeon, all eyes turn to us immediately. With Seoyeon standing so naturally beside me, we probably look like old friends.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 61,
+    "name": "Classmate",
+    "text": "\\\"Hey, transfer student! Good morning! You came with Seoyeon? You two are totally besties already!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 62,
+    "name": "Me",
+    "text": "*The students glance between Seoyeon and me with knowing smiles. Seoyeon casually heads to her seat like it's no big deal.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 63,
+    "name": "Classmate",
+    "text": "*The girl in the front row turns around and whispers,* \\\"Hey, you're already walking to school with Seoyeon? Are you two dating?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 64,
+    "name": "Me",
+    "text": "\\\"No, we just happened to meet at the school gate and walked in together. I'm just grateful that Seoyeon's been looking out for me.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 65,
+    "name": "Me",
+    "text": "*I brush it off and take my seat. Seoyeon gives me a little wave from her desk. It puts me in a good mood as I start unpacking my bag to get my textbooks out when... something seems off.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 66,
+    "name": "Dain",
+    "text": "\\\"We're here! Let's crush it today, {name}!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 67,
+    "name": "Me",
+    "text": "*Dain bursts through the classroom door with her usual energy, and the whole room seems to brighten up. Her energy is truly contagious.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 68,
+    "name": "Classmate",
+    "text": "\\\"Hey, transfer student! Good morning! You came with Dain? Already best friends, huh?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 69,
+    "name": "Dain",
+    "text": "\\\"Of course! {name}'s one of us now! Alright, {name}! See you at lunch!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 70,
+    "name": "Classmate",
+    "text": "*The girl in the front row turns around with a giggle.* \\\"Once Dain gets a hold of you, there's no escape! Watch out if your stamina can't keep up!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 71,
+    "name": "Me",
+    "text": "\\\"Oh, haha... I think I'll need to work on my fitness to keep up with Dain's energy.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 72,
+    "name": "Me",
+    "text": "*I brush it off and take my seat. Dain gives me a thumbs up from her desk. Feeling energized, I start unpacking my bag to get my textbooks out when... something seems off.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 73,
+    "name": "Me",
+    "text": "*I part ways with the school nurse and head toward the classroom. Her perfume still seems to linger at the tip of my nose.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 74,
+    "name": "Me",
+    "text": "*Opening the classroom door, a much softer atmosphere than yesterday wraps around me. Even the students' gazes carry a hint of friendliness.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 75,
+    "name": "Classmate",
+    "text": "\\\"Hey, transfer student! Good morning! Wait, did you just come from the nurse's office? Are you feeling sick?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 76,
+    "name": "Me",
+    "text": "\\\"No, I'm fine. I just bumped into the school nurse on the way in.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 77,
+    "name": "Classmate",
+    "text": "*The girl in the front row turns around and says,* \\\"I saw you chatting with the school nurse earlier. You two looked pretty close. A regular visitor to the nurse's office?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 78,
+    "name": "Me",
+    "text": "\\\"No, she was just checking on me since I'm the new transfer student. She even went out of her way to make sure I was doing okay...\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 79,
+    "name": "Me",
+    "text": "*I brush it off and take my seat. The nurse's warm smile keeps lingering in my mind. I start unpacking my bag to get my textbooks out when... something seems off.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 80,
+    "name": "Me",
+    "text": "*I part ways with Yuna, pass through the school gate, and head to the classroom. Her words keep echoing in my head. 'Check the note on your desk'... What note?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 81,
+    "name": "Me",
+    "text": "*Opening the classroom door, I step into the familiar bustle. But I can't fully focus with Yuna's words weighing on my mind.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 82,
+    "name": "Classmate",
+    "text": "\\\"Hey, transfer student! Good morning! You look like you've got something on your mind. Everything okay?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 83,
+    "name": "Me",
+    "text": "\\\"Oh... it's nothing, really.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 84,
+    "name": "Classmate",
+    "text": "*The girl in the front row turns around and says,* \\\"I saw you talking to some girl at the gate earlier... Is she from another class? She looked kind of mysterious.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 85,
+    "name": "Me",
+    "text": "\\\"Oh... she's just another student here. I don't really know her well yet.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 86,
+    "name": "Me",
+    "text": "*I brush it off and take my seat. I can't stop thinking about the 'note' Yuna mentioned. I start unpacking my bag to get my textbooks out when... something seems off.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 87,
+    "name": "Me",
+    "text": "*Opening the classroom door, a much softer atmosphere than yesterday wraps around me. Even the students' gazes carry a hint of friendliness.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 88,
+    "name": "Classmate",
+    "text": "\\\"Hey, transfer student! Good morning! Did you settle in okay yesterday? Our class is pretty chill, right?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 89,
+    "name": "Me",
+    "text": "*A few classmates greet me casually. Yesterday they looked at me with pure curiosity, but today their smiles are relaxed.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 90,
+    "name": "Classmate",
+    "text": "*The girl in the front row turns around and says,* \\\"Only your second day and you've already settled in? That's impressive!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 91,
+    "name": "Me",
+    "text": "\\\"Oh, haha... Everyone's been so nice, it was easy to adjust.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 92,
+    "name": "Me",
+    "text": "*I give a vague answer and sit down. Opening my bag to take out my textbooks... something feels off.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 93,
+    "name": "Me",
+    "text": "*As I'm settling in at my desk, I notice a small note tucked in the corner.*",
+    "choices": [
+      "Check the note."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 94,
+    "name": "Me",
+    "text": "*I carefully unfold the note. The handwriting is neat yet somehow cold.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 95,
+    "name": "System",
+    "text": "\\\"'Come to the courtyard behind the library annex at lunch. I have something to tell you.' - Yuna\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 96,
+    "name": "Me",
+    "text": "*Yuna...? I read the note again. 'The courtyard behind the library annex'... that's a secluded spot at school. Summoning me with a note like this — it feels secretive.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 97,
+    "name": "Me",
+    "text": "*What could she possibly want to say that she'd leave a note like this? If I had her number, I could just ask her directly... but a note — that somehow feels very like her.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 98,
+    "name": "Me",
+    "text": "*Is there anyone who might know about Yuna? I discreetly glance around. But I don't think I should mention the note to just anyone.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 99,
+    "name": "Me",
+    "text": "*I carefully fold the note and slip it into my pocket. I can't wait for lunch already... or maybe 'nervous' is more accurate.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 100,
+    "name": "Me",
+    "text": "*I casually ask the person sitting next to me.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 101,
+    "name": "Me",
+    "text": "\\\"Hey, do you know anything about someone named Yuna? I think she's in a different class...\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 102,
+    "name": "Me",
+    "text": "\\\"Hey... do you know anyone named Yuna?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 103,
+    "name": "Classmate",
+    "text": "\\\"Yuna? Hmm... she's not in our class. Maybe another class? Or an upperclassman?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 104,
+    "name": "Me",
+    "text": "*As expected, nobody knows. Just the name 'Yuna' isn't enough to go on. I'll just have to go there myself at lunch.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 105,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Alright, everyone take your seats. Homeroom is starting.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 106,
+    "name": "Homeroom Teacher",
+    "text": "*The teacher opens the attendance book and starts calling names one by one.* \\\"...{name}? Transfer student, you're here, right?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 107,
+    "name": "Me",
+    "text": "\\\"Yes, I'm here.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 108,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Good. It's only your second day, but you look brighter than yesterday. Seems like you're adjusting well.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 109,
+    "name": "Homeroom Teacher",
+    "text": "\\\"One announcement. There will be a school festival planning meeting this Friday, so anyone interested should stay after school.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 110,
+    "name": "Me",
+    "text": "*A school festival... I just transferred and there's already a festival coming up. I'm getting more and more excited about this school.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 111,
+    "name": "Classmate",
+    "text": "\\\"Teacher, question! Will there be a class talent show at the festival?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 112,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Well, nothing's decided yet, but... if our class enters, we'd obviously win first place, right?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 113,
+    "name": "Me",
+    "text": "*The classroom fills with chuckles. The teacher actually has a pretty good sense of humor.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 114,
+    "name": "Me",
+    "text": "*Throughout the entire class, Yuna's note won't leave my mind. What on earth does she want to tell me?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 115,
+    "name": "Me",
+    "text": "*Yuna, who I exchanged messages with last night... She has my number, so why leave a note? The thought that this is so very her makes me chuckle.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 116,
+    "name": "Me",
+    "text": "*Yuna, who I met yesterday... Did she really leave this note for me? A secret... I can't help but wonder what it could be.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 117,
+    "name": "Me",
+    "text": "*Yuna...? That's a name I didn't hear yesterday. Who is she, and why would she leave a note like this for me?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 118,
+    "name": "Me",
+    "text": "*The math formulas on the blackboard aren't registering at all. The words 'courtyard behind the library annex' just keep echoing in my head.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 119,
+    "name": "Math Teacher",
+    "text": "\\\"Alright, who wants to try this problem? ...Transfer student, how about you?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 120,
+    "name": "Me",
+    "text": "*Oh no, I was completely zoned out. I hastily look at the blackboard, but the formulas won't register at all.*",
+    "choices": [
+      "Boldly walk up and give it a shot.",
+      "Honestly say I don't know."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 121,
+    "name": "Me",
+    "text": "*Standing at the blackboard, I fumble through the formula. Luckily, it's something I previewed yesterday, so it vaguely comes back to me.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 122,
+    "name": "Math Teacher",
+    "text": "\\\"Oh, not bad, transfer student! That's correct. Well done — go back to your seat.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 123,
+    "name": "Me",
+    "text": "\\\"I'm sorry, I haven't quite caught up with the material yet...\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 124,
+    "name": "Math Teacher",
+    "text": "\\\"That's alright, you just transferred. Try to preview the material next time.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 125,
+    "name": "Me",
+    "text": "*The class moves on, one way or another. I can't help being distracted by the note, but class is class.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 126,
+    "name": "Me",
+    "text": "*Without a break, the second period starts — Korean language class. The teacher tells us to take out the handout from yesterday.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 127,
+    "name": "Me",
+    "text": "*Rummaging through the handouts, my fingertips brush against the note in my pocket. My heart skips a beat.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 128,
+    "name": "Me",
+    "text": "*There are still two hours until lunch. Why is time crawling so slowly...*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 129,
+    "name": "Me",
+    "text": "*Third period, English class. The teacher's pronunciation reaches my ears, but my mind is consumed with thoughts of lunchtime.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 130,
+    "name": "Me",
+    "text": "*The courtyard behind the library annex... I've never even been there. Why would Yuna pick such a secluded place?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 131,
+    "name": "Me",
+    "text": "*It's not dangerous or anything, right...? No, it's just a note from a fellow student. But still, my heart is pounding.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 132,
+    "name": "Me",
+    "text": "*I sneak a glance at the clock. 11:40... twenty minutes until lunch. Come on, time, move faster.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 133,
+    "name": "System",
+    "text": "- The bell rings -",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 134,
+    "name": "Me",
+    "text": "*The lunch bell finally rings! The classroom instantly erupts into commotion. Students rush out toward the cafeteria.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 135,
+    "name": "Me",
+    "text": "*I hurriedly pack my textbooks into my bag. I check the note in my pocket one more time. 'The courtyard behind the library annex'... Alright, let's go.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_1_morning.js",
+    "block": 136,
+    "name": "Me",
+    "text": "*It's lunch time. Who should I spend it with...*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 1,
+    "name": "Me",
+    "text": "*The bell rings! Finally, lunch break. The classroom is buzzing with energy, and my heart starts to race.*",
+    "choices": [
+      "Go to see Seoyeon and her radiant smile.",
+      "Head to the library annex backyard as promised.",
+      "Find out who left that mysterious note.",
+      "Go to the gym to see Dain.",
+      "Follow the lively sounds from the gymnasium.",
+      "I need some rest. Heading to the nurse's office.",
+      "Go to the faculty room to see the teacher."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 2,
+    "name": "Me",
+    "text": "*I open the faculty room door. My teacher, who was about to eat, smiles warmly when she sees me.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 3,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Oh, {name}! Did you have a good lunch? I was just about to start mine.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 4,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Did you come all this way just to eat with me? Hehe, just kidding.\\\"",
+    "choices": [
+      "Actually, yes. Can I sit next to you?",
+      "Your lunch looks so good, I couldn't resist.",
+      "I was just passing by and thought of you."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 5,
+    "name": "Homeroom Teacher",
+    "text": "\\\"My, my... you're a bold student, aren't you? Fine, I'll share some. Here, say 'Ahh'.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 6,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Hehe, my mother is quite the cook. I'd love to let you taste her cooking properly sometime.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 7,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Is that so? Well, thank you for stopping by. Have a great lunch break!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 8,
+    "name": "Me",
+    "text": "*After a brief but sweet chat, I head back. Her gentle smile stays with me.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 9,
+    "name": "Seoyeon",
+    "text": "*I open the student council room. Seoyeon, eating her lunch, blinks in surprise and then beams.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 10,
+    "name": "Seoyeon",
+    "text": "\\\"{name}! I was just hoping you'd come. Sit here. I made some extra sandwiches today.\\\"",
+    "choices": [
+      "They look amazing! You're a natural, Seoyeon.",
+      "Aren't you tired from all the work? Don't overdo it.",
+      "You've got a crumb... hold still. *Wipe it off*"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 11,
+    "name": "Seoyeon",
+    "text": "\\\"Really? I was worried they might not be to your taste. Eat up!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 12,
+    "name": "Seoyeon",
+    "text": "\\\"I'm okay. Seeing you enjoy the food makes all the fatigue disappear. Truly.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 13,
+    "name": "Seoyeon",
+    "text": "\\\"Ah... T-thank you. I must have been eating too greedily... (She blushes slightly)\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 14,
+    "name": "Me",
+    "text": "*Just then, someone passing by the student council room window waves at us.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 15,
+    "name": "Dain",
+    "text": "\\\"Oh? {name}! Hey! See you later!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 16,
+    "name": "???",
+    "text": "\\\"Huh? Who's that? A boy in the student council room... Anyway, hi!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 17,
+    "name": "Me",
+    "text": "*When I look at Seoyeon, she has a subtle expression different from before.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 18,
+    "name": "Seoyeon",
+    "text": "\\\"...That's Dain from the volleyball club. {name}, are you close with her?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 19,
+    "name": "Me",
+    "text": "*I wonder how to answer Seoyeon's question.*",
+    "choices": [
+      "Yeah, we met yesterday. She's bright and fun.",
+      "Just acquaintances. You're more important to me, Seoyeon.",
+      "Why? Are you jealous?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 20,
+    "name": "Me",
+    "text": "\\\"(Dain Jung... I'll remember that.) No, first time seeing her. Why?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 21,
+    "name": "Seoyeon",
+    "text": "\\\"Oh, nothing. Just curious. (Seoyeon smiles with relief) ...Let's keep eating!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 22,
+    "name": "Seoyeon",
+    "text": "\\\"...I see. (Seoyeon looks out the window for a moment, then smiles) It's good to have many friends. I should... try harder too.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 23,
+    "name": "Seoyeon",
+    "text": "\\\"(Seoyeon's expression brightens slightly) ...Really? Hehe, hearing that makes me happy. Thanks, {name}.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 24,
+    "name": "Seoyeon",
+    "text": "\\\"J-jealous?! No way! I was just... curious! (Seoyeon turns her head away, blushing)\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 25,
+    "name": "Me",
+    "text": "*After a lovely lunch with her, I return. The taste of her sandwiches is still lingering sweet.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 26,
+    "name": "Me",
+    "text": "*Inside the old library. In the quiet, dust-filled space, Yuna stands like part of the scenery.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 27,
+    "name": "Yuna",
+    "text": "\\\"...You came. I didn't think you'd actually show up for a note.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 28,
+    "name": "Yuna",
+    "text": "*She gazes at me with an unreadable expression.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 29,
+    "name": "Yuna",
+    "text": "\\\"...Do you have questions for me? Or do you want to know more about this school?\\\"",
+    "choices": [],
+    "context": "Quiet library annex backyard, private conversation with the mysterious Yuna. Keep the conversation going actively until it's finished. After the conversation, Yuna will talk about the school's secrets and suggest that there is something she only wants to show the protagonist. ONLY at the final turn of the conversation, please create a mysterious atmosphere and stimulate the protagonist's curiosity.",
+    "personality": "Mysterious, cold, and secretive. She feels a strange interest in the protagonist."
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 30,
+    "name": "Me",
+    "text": "*Yuna's expression softens as she looks at me.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 31,
+    "name": "Me",
+    "text": "*Yuna gazes at me with cold, disappointed eyes.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 32,
+    "name": "Me",
+    "text": "*Yuna says she feels at ease talking to me. She mentions the 'secret' and says there's something she only wants to show me.*",
+    "choices": [
+      "What is it? I'm curious.",
+      "I'm more interested in talking to you."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 33,
+    "name": "Me",
+    "text": "*Yuna's gaze is icy. She says I might not handle the truth, but tells me to follow her anyway since we promised.*",
+    "choices": [
+      "Show me. I can handle it.",
+      "I'm not interested in secrets. I'll pass."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 34,
+    "name": "Me",
+    "text": "*Yuna says she feels a strange pull toward me. She mentions a deep secret in this school and wants to show me.*",
+    "choices": [
+      "Are you the Yuna from the note? What secret?",
+      "I just came because of the note. Who are you?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 35,
+    "name": "Me",
+    "text": "*Yuna's eyes are cold. She says I don't look like I can handle the truth, but tells me to follow her since I'm here.*",
+    "choices": [
+      "What's the secret? Show me.",
+      "I'm leaving. This feels weird."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 36,
+    "name": "Me",
+    "text": "*Yuna looks at me and begins to speak.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 37,
+    "name": "Me",
+    "text": "*Yuna mentions the secret she told me yesterday and says she has something to show me.*",
+    "choices": [
+      "What is it? I want to see.",
+      "I just wanted to talk to you."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 38,
+    "name": "Me",
+    "text": "*Yuna says I must be curious about her. She offers to show me a deep secret of the school.*",
+    "choices": [
+      "Are you the Yuna from the note? What secret?",
+      "I just came because of the note. Who are you?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 39,
+    "name": "Yuna",
+    "text": "*She bows her head shyly.* \\\"...By the way, what's your name? I felt drawn to you enough to share this secret. I want to know you.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 40,
+    "name": "Me",
+    "text": "\\\"My name is {name}.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 41,
+    "name": "Yuna",
+    "text": "*She asks coldly.* \\\"...I should probably know your name before we go further. What is it?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 42,
+    "name": "Me",
+    "text": "\\\"My name is {name}.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 43,
+    "name": "Yuna",
+    "text": "\\\"...I forgot to ask your name. I only wrote mine on the note.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 44,
+    "name": "Me",
+    "text": "\\\"My name is {name}.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 45,
+    "name": "Yuna",
+    "text": "*Yuna gently interlocks her fingers with mine. I can feel her heart through her warm hand.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 46,
+    "name": "Yuna",
+    "text": "\\\"I think... you're the one who can share this burden with me. {name}, will you follow me? The world ahead is different from what you know.\\\"",
+    "choices": [
+      "I'll be with you. Let's see it together.",
+      "I'm sorry, I can't handle this yet."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 47,
+    "name": "Yuna",
+    "text": "*Yuna grabs my sleeve and pulls me forward.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 48,
+    "name": "Yuna",
+    "text": "\\\"Just watch. Not like you'll understand, but you're here already. Don't get in my way.\\\"",
+    "choices": [
+      "Show me. What is it?",
+      "I'm out. This is too dangerous."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 49,
+    "name": "Yuna",
+    "text": "*Yuna leads me toward the old warehouse. Her cold touch makes me shiver.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 50,
+    "name": "Yuna",
+    "text": "\\\"Inside are records the school has hidden for a long time. Once you see them... everything will change.\\\"",
+    "choices": [
+      "Can I see them too?",
+      "Is it safe? Maybe we should leave it.",
+      "Why are you doing this, Yuna?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 51,
+    "name": "Me",
+    "text": "",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 52,
+    "name": "Me",
+    "text": "",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 53,
+    "name": "Me",
+    "text": "",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 54,
+    "name": "Yuna",
+    "text": "\\\"Curious? Honestly... I'm not sure. But since the day you transferred, I had a feeling you'd be the one. Funny, right?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 55,
+    "name": "Yuna",
+    "text": "\\\"What's it to you? Just watch or leave. No need to poke your nose into my business.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 56,
+    "name": "Yuna",
+    "text": "\\\"Thank you, {name}. With you, I'm not afraid. Shall we?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 57,
+    "name": "Yuna",
+    "text": "\\\"You really want to see? Don't regret it. I won't help you if you start crying.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 58,
+    "name": "Yuna",
+    "text": "\\\"...I see. You must be scared. I understand. Tell me if you change your mind later.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 59,
+    "name": "Yuna",
+    "text": "\\\"I knew it. You're a coward. Don't show your face again.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 60,
+    "name": "Yuna",
+    "text": "\\\"You came just to talk to me...? Hehe, you really say sweet things. Fine, stay with me a little longer then.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 61,
+    "name": "Yuna",
+    "text": "\\\"To talk? Pathetic. Don't waste my time and get lost.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 62,
+    "name": "Yuna",
+    "text": "\\\"...Is that so? You're a strange one. Most people are afraid. Fine, let's just stay like this for today.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 63,
+    "name": "Me",
+    "text": "*I head back. Her mysterious words haunt me, making it hard to focus on class.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 64,
+    "name": "Me",
+    "text": "*I open the gym. Dain, practicing hard, runs over with a wide grin.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 65,
+    "name": "???",
+    "text": "\\\"Oh! A new face! You're the transfer student, right? I'm Dain from the volleyball club!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 66,
+    "name": "Dain",
+    "text": "\\\"By the way, what's your name? I'm the only one who didn't introduce myself properly!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 67,
+    "name": "Dain",
+    "text": "\\\"Oh! {name}? Cool name! Great, to celebrate, lunch is on me! Let's go to the snack bar!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 68,
+    "name": "Me",
+    "text": "\\\"My name is {name}.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 69,
+    "name": "Dain",
+    "text": "\\\"Oh! You really came! Great, lunch is on me today! Let's go to the snack bar!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 70,
+    "name": "Me",
+    "text": "*We head to the snack bar. It's packed with students.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 71,
+    "name": "Me",
+    "text": "*Just then, I spot a familiar face across the store. Seoyeon is buying a drink.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 72,
+    "name": "Dain",
+    "text": "\\\"Oh? That girl... Isn't she the student council president? She has this unapproachable aura. {name}, do you know her?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 73,
+    "name": "Me",
+    "text": "*Just then, Seoyeon notices us and walks over.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 74,
+    "name": "Seoyeon",
+    "text": "\\\"Oh? {name}! Fancy seeing you here. Did you enjoy lunch earlier? (Glances at Dain) ...?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 75,
+    "name": "Seoyeon",
+    "text": "\\\"Oh my, the transfer student? Nice to see you here. I'm Seoyeon. (Glances at Dain) ...?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 76,
+    "name": "Dain",
+    "text": "\\\"(Dain looks slightly on guard) Oh, hi Miss President. We're just finishing up lunch here...\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 77,
+    "name": "Seoyeon",
+    "text": "\\\"(Seoyeon smiles brightly) Heh, is that so? Enjoy yourselves. {name}, come visit the student council room later, okay?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 78,
+    "name": "Me",
+    "text": "*Seoyeon and Dain seem to be having some kind of subtle standoff over me. What should I say?*",
+    "choices": [
+      "Sure, Seoyeon! I'll definitely come by later.",
+      "I've got plans with Dain today... Maybe next time!",
+      "*Smile vaguely* Would be nice to hang with both of you."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 79,
+    "name": "Dain",
+    "text": "\\\"(Dain looks a bit dejected) ...Huh, really? Already making other plans while you're with me?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 80,
+    "name": "Seoyeon",
+    "text": "\\\"(Seoyeon smiles satisfied) Hehe, thanks {name}. See you later then.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 81,
+    "name": "Dain",
+    "text": "\\\"(Dain beams and grabs my arm) Hear that? {name}'s all mine today!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 82,
+    "name": "Seoyeon",
+    "text": "\\\"(Seoyeon's expression stiffens slightly) ...I see. Have fun then. See you later, {name}.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 83,
+    "name": "Me",
+    "text": "*Both their expressions freeze at the same time.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 84,
+    "name": "Dain",
+    "text": "\\\"...Both of us? Ha, the popular type, huh?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 85,
+    "name": "Seoyeon",
+    "text": "\\\"(Seoyeon smiles coldly) Heh... Being nice to everyone might mean you end up losing both.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 86,
+    "name": "Dain",
+    "text": "\\\"(Dain looks at Seoyeon in surprise) Whoa, Miss President's pretty blunt, huh? But I actually agree.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 87,
+    "name": "Me",
+    "text": "*The two of them exchange glances while staring at me. Things just got really awkward...*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 88,
+    "name": "Me",
+    "text": "*Seoyeon waves and walks away. Dain watches me intently for a moment, then smiles again.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 89,
+    "name": "Dain",
+    "text": "\\\"Wow, it's crowded! Right? Let's chat while we wait. Anything you want to know?\\\"",
+    "choices": [],
+    "context": "In front of the crowded school store, standing in line with Dain to buy snacks. Keep the conversation going actively until it's finished. After the conversation, you will choose snacks at the store. ONLY at the final turn of the conversation, please naturally lead into the next situation by mentioning that it's almost our turn or by deciding what to eat.",
+    "personality": "A straight-forward volleyball club ace with an easy-going personality. Enjoys spending time with the protagonist."
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 90,
+    "name": "Me",
+    "text": "*Chatting with Dain made waiting in line not boring at all. It's our turn now, and Dain's in such a good mood she said she'd treat me.*",
+    "choices": [
+      "I'll buy yours too, Dain. What do you want?",
+      "It's really crowded... Should we just go to the rooftop?",
+      "Dain, there's the last pizza bread! Let me grab it first!"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 91,
+    "name": "Me",
+    "text": "*Dain seems upset. I must have been too rude while she was tired from waiting. She sighed and told me to just pick something.*",
+    "choices": [
+      "I'll buy yours too, Dain. What do you want?",
+      "It's really crowded... Should we just go to the rooftop?",
+      "Dain, there's the last pizza bread! Let me grab it first!"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 92,
+    "name": "Me",
+    "text": "*While talking with Dain, it's finally our turn. She asked what I want to eat.*",
+    "choices": [
+      "I'll buy yours too, Dain. What do you want?",
+      "It's really crowded... Should we just go to the rooftop?",
+      "Dain, there's the last pizza bread! Let me grab it first!"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 93,
+    "name": "Dain",
+    "text": "\\\"Hey, {name}! Why are you paying? I said I'm treating! Hehe, but thanks for the thought. You pay today, and I'll get you something even better tomorrow! Promise!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 94,
+    "name": "Dain",
+    "text": "\\\"Whatever. I said I'd pay, so that's that. Just eat.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 95,
+    "name": "Dain",
+    "text": "\\\"Hey, I said I'm treating! What money does a transfer student have? Today I'll treat you, so just enjoy!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 96,
+    "name": "Dain",
+    "text": "\\\"Oh! A rooftop date?! Nice nice! It'll taste better eating just the two of us! Let's buy quickly and go up!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 97,
+    "name": "Dain",
+    "text": "\\\"The rooftop... why bother going so far. Let's just eat here.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 98,
+    "name": "Dain",
+    "text": "\\\"Rooftop? Oh, that's good too! It'll taste better with the cool breeze. Okay, let's just grab some bread and go up!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 99,
+    "name": "Dain",
+    "text": "\\\"Oho! Feeling competitive? Alright! {name}, no mercy from me either? Loser buys all of today's lunch! Ready, set, go!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 100,
+    "name": "Dain",
+    "text": "\\\"Not in the mood for that... Just be quiet.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 101,
+    "name": "Dain",
+    "text": "\\\"Oho! That's my partner! Okay, let's race for it! Loser buys drinks!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 102,
+    "name": "Me",
+    "text": "*Had a lively lunch with Dain and headed back to class. Her bright energy should help me get through the afternoon.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 103,
+    "name": "Me",
+    "text": "*Maybe from nerves, my head is throbbing. I unconsciously walked to the quiet nurse's office.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 104,
+    "name": "School Nurse",
+    "text": "\\\"Oh my, hello? Coming to the nurse's office during lunch, are you not feeling well?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 105,
+    "name": "School Nurse",
+    "text": "\\\"Oh my, isn't this our {name}? Are you feeling sick, or is your heart racing from wanting to see me?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 106,
+    "name": "School Nurse",
+    "text": "*The teacher smiles subtly looking at my face.* \\\"Hehe, {name}. You're here again? Goodness... you're the only student who visits me this often.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 107,
+    "name": "School Nurse",
+    "text": "\\\"Oh my, {name}. The nurse's office during lunch... are you not feeling well?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 108,
+    "name": "School Nurse",
+    "text": "*The teacher looks at me and tilts her head as if unsure.* \\\"Uh... {name}, right? Are you sick? Come in.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 109,
+    "name": "School Nurse",
+    "text": "\\\"Oh my, a face I haven't seen before? Are you the new transfer student? I'm the school nurse.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 110,
+    "name": "School Nurse",
+    "text": "\\\"By the way, what's your name? Will you tell just me?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 111,
+    "name": "Me",
+    "text": "\\\"My name is {name}.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 112,
+    "name": "School Nurse",
+    "text": "*The teacher guides me to the bed with a soft smile. The gentle herbal scent soothes my nerves.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 113,
+    "name": "School Nurse",
+    "text": "\\\"Here, lie down comfortably. Let me see what's bothering you.\\\"",
+    "choices": [
+      "I have a headache.",
+      "I just want to rest.",
+      "Is this how you seduce students, Teacher?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 114,
+    "name": "School Nurse",
+    "text": "*The smile instantly vanishes from the teacher's face. The air in the nurse's office turns heavy and cold.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 115,
+    "name": "School Nurse",
+    "text": "\\\"My... {name}, I must have been too lenient with you. Such rude comments to an adult don't sound like a joke. Would you please leave today? I'm in a terrible mood now.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 116,
+    "name": "School Nurse",
+    "text": "\\\"Sounds like a tension headache. Take this and get some good sleep, you'll feel better.\\\"",
+    "choices": [
+      "Could you feed it to me, Teacher?",
+      "Thank you. *Takes the medicine*"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 117,
+    "name": "School Nurse",
+    "text": "\\\"My... {name}, you're really something, aren't you? Alright, say 'ah'. Good students deserve rewards, right?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 118,
+    "name": "School Nurse",
+    "text": "\\\"Hehe, sometimes you have days like that. Lie down comfortably here with the curtain drawn. By the way... {name}, you have such strong energy. Just looking at you makes my body feel hot.\\\"",
+    "choices": [
+      "Next",
+      "Next"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 119,
+    "name": "Me",
+    "text": "\\\"(Strong energy...? It reminds me of what Yuna said. Is there really something going on at this school?)\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 120,
+    "name": "Me",
+    "text": "*The warmth of the blanket the teacher covered me with makes my consciousness drift. The exhaustion from the past two days hits all at once.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 121,
+    "name": "School Nurse",
+    "text": "*I faintly hear the teacher's voice.* \\\"...Yes, homeroom teacher. The student {name} isn't feeling well so I let them skip afternoon classes.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 122,
+    "name": "School Nurse",
+    "text": "*The voice gets a bit lower.* \\\"...What? You want to come pick them up yourself? Hehe, it's fine. This is my domain. I'll take good care of them, I promise.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 123,
+    "name": "School Nurse",
+    "text": "*Sound of hanging up the phone.* \\\"...Hehe, the homeroom teacher too. It's nice that she cares about her students... but in the nurse's office, I'm the law.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 124,
+    "name": "Me",
+    "text": "*...Before I know it, everything goes quiet. I slowly regain consciousness and open my eyes.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 125,
+    "name": "Me",
+    "text": "*Outside the window, the sky is already filled with blazing orange sunset. I fell asleep during lunch and it's already after school... How deeply did I sleep.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 126,
+    "name": "School Nurse",
+    "text": "\\\"(The teacher smiles softly.) Oh my, you're awake? You slept so soundly. I already notified your homeroom teacher about the afternoon classes, so don't worry. It's almost time to go home. How are you feeling?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 127,
+    "name": "School Nurse",
+    "text": "\\\"Hehe, you still look sleepy. Want to chat with me a bit before going home?\\\"",
+    "choices": [],
+    "context": "In the nurse's office at sunset, the protagonist just woke up and is alone with the nurse. Keep the conversation going actively until it's finished. After the conversation, the nurse will offer her number and tease about contacting her at night. ONLY at the final turn, hint that it's time to go home or suggest private contact.",
+    "personality": "Languid and seductive yet caring school nurse. Feels a peculiar attraction to the protagonist and boldly flirts with daring confidence."
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 128,
+    "name": "Me",
+    "text": "*The nurse looks at me with a playful yet seductive smile.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 129,
+    "name": "Me",
+    "text": "*The nurse looks at me with a somewhat tired expression.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 130,
+    "name": "Me",
+    "text": "*The teacher reminded me we already exchanged numbers and whispered in my ear. She said she'll want to hear my voice tonight, so I should definitely contact her.*",
+    "choices": [
+      "Yes, I will.",
+      "Instead of just a call... can I come to your house tonight?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 131,
+    "name": "Me",
+    "text": "*The teacher said we already exchanged numbers, but given my rude behavior, it might be better not to contact her. She coldly told me to leave.*",
+    "choices": [
+      "Yes, I will.",
+      "Instead of just a call... can I come to your house tonight?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 132,
+    "name": "Me",
+    "text": "*The teacher said she wants to talk with me more and gently held my hand. She offered to give me her number for when I can't sleep at night.*",
+    "choices": [
+      "Yes, I want to know.",
+      "Instead of just a number... can I come to your house?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 133,
+    "name": "Me",
+    "text": "*The teacher sighed saying I'm a handful. She said she'll give me her number for emergencies, but warned me not to play pranks.*",
+    "choices": [
+      "Yes, I want to know.",
+      "Instead of just a number... can I come to your house?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 134,
+    "name": "Me",
+    "text": "*The nurse looks at me and speaks.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 135,
+    "name": "Me",
+    "text": "*The teacher reminded me we already exchanged numbers and leaned in to whisper. She said she'll be waiting, so definitely contact her if I'm bored at night.*",
+    "choices": [
+      "Yes, I will.",
+      "Instead of just a call... can I come to your house tonight?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 136,
+    "name": "Me",
+    "text": "*The teacher leaned in to whisper, offering her number for when I can't sleep at night.*",
+    "choices": [
+      "Yes, I want to know.",
+      "Instead of just a number... can I come to your house?",
+      "Ah, I'm okay."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 137,
+    "name": "School Nurse",
+    "text": "*She writes her number on the back of my hand and winks.* \\\"Hehe, this number... don't lose it, okay? I'm already looking forward to what message you'll send tonight.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 138,
+    "name": "School Nurse",
+    "text": "\\\"...Here. Only for emergencies. If you send nonsense at dawn, I'll block you immediately, so be careful.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 139,
+    "name": "School Nurse",
+    "text": "*She smiles seductively and saves the number.* \\\"Hehe, then I'll be waiting for you at night? If you're slow to reply, I might get upset.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 140,
+    "name": "School Nurse",
+    "text": "*She wraps her arms around my neck and breathes hotly in my ear.* \\\"My... {name}. You really have no patience, do you? Alright, tonight... I'll invite you to my secret room. Just the two of us... let's have a very deep conversation.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 141,
+    "name": "School Nurse",
+    "text": "\\\"...Are you in your right mind? How dare you make such a joke to a teacher... Write a reflection today. I'll give you my number, but don't even think about coming near my house.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 142,
+    "name": "School Nurse",
+    "text": "*The teacher's eyes widen, then she gives a seductive smile and whispers in my ear.* \\\"My... {name}, you're much bolder than I thought? Alright, want to come to my house tonight? I'll give you the address. But... it's our secret from your parents?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 143,
+    "name": "School Nurse",
+    "text": "*The teacher lightly pinches my cheek and laughs.* \\\"Hehe, you're really forward! But the teacher needs some preparation today too... Let's settle for the number for now?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 144,
+    "name": "School Nurse",
+    "text": "\\\"Watch your mouth. Say that one more time and I'll ban you from the nurse's office.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 145,
+    "name": "School Nurse",
+    "text": "*The teacher bursts into giggles.* \\\"My goodness {name}! You're so cute. But my house is a bit early, don't you think? Let's exchange numbers first.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_2_lunch.js",
+    "block": 146,
+    "name": "School Nurse",
+    "text": "*The teacher pouts a bit.* \\\"Tch... Playing hard to get? Alright. Tell me if you change your mind.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 1,
+    "name": "Me",
+    "text": "*School's finally over. The red sunset filtering through the window paints the classroom in a sentimental glow. Is it free time now...?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 2,
+    "name": "Me",
+    "text": "*I wake up on the infirmary bed to find the sun setting. I skipped all my classes, but waking up after a long nap next to the teacher makes my body feel light.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 3,
+    "name": "Me",
+    "text": "*The hallway feels much more familiar than yesterday. What kind of heart-pounding moments are waiting for me today? Let's go where my heart leads.*",
+    "choices": [
+      "Go find Seoyeon to watch the sunset together.",
+      "Dive into the school's deep secrets with Yuna.",
+      "Search for Yuna, the mysterious girl who left the note.",
+      "Go help Dain practice, her sweat beads looking beautiful.",
+      "Head to the lively gym, searching for Dain's voice.",
+      "Talk more with the teacher who took care of me.",
+      "Go to the infirmary, scented with faint medicine, to see the teacher.",
+      "Head to the faculty room to see my kind homeroom teacher."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 4,
+    "name": "Me",
+    "text": "*I headed back to the infirmary. The nurse is still sitting in her seat.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 5,
+    "name": "Me",
+    "text": "*Student Council Room. I started helping Seoyeon organize documents. She kindly explains the work to me, a newcomer.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 6,
+    "name": "Me",
+    "text": "*Lost in work with Seoyeon, the window outside is bathed in crimson sunset light. The room is filled only with our breathing and the sound of paper.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 7,
+    "name": "Seoyeon",
+    "text": "\\\"Phew... finished at last. {name}, thank you so much for helping this much. I wouldn't have finished this today without you.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 8,
+    "name": "Me",
+    "text": "*Seoyeon stretches with a soft smile. She looks tired, but her eyes are clearer and more beautiful than ever.*",
+    "choices": [
+      "Seoyeon, why are you always so sincere and hardworking?",
+      "Let's rest now. I'll make sure to walk you home.",
+      "Your shoulders look tense. Here, stay still for a second."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 9,
+    "name": "Seoyeon",
+    "text": "\\\"Well... it's just something that needs to be done. And I hope that if I do my best, the school might improve, even if just a little.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 10,
+    "name": "Seoyeon",
+    "text": "\\\"Really...? (Seoyeon smiles brightly and gently takes my arm) Honestly, I wanted to walk with you, {name}. The sunset is so beautiful...\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 11,
+    "name": "Seoyeon",
+    "text": "\\\"Oh...? Walk me home? Ah... well, I'd be very grateful if you did...\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 12,
+    "name": "Seoyeon",
+    "text": "\\\"Oh.. it's okay, I can go alone. Thanks for helping today though.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 13,
+    "name": "Seoyeon",
+    "text": "\\\"Mmm... {name}... (Seoyeon happily closes her eyes and leans into it) That feels so good... I didn't know your hands were so warm. Just a little more...\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 14,
+    "name": "Seoyeon",
+    "text": "\\\"Ah... {name}! So suddenly... (She flinches for a moment, but soon relaxes and closes her eyes) ...That feels great. Thank you.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 15,
+    "name": "Seoyeon",
+    "text": "*Seoyeon quickly pulls away, looking uncomfortable* \\\"What was that...? It's a bit uncomfortable.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 16,
+    "name": "Seoyeon",
+    "text": "\\\"{name}... thank you so much for today. When I'm with you, all my tired thoughts vanish. Should we... have lunch together tomorrow too?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 17,
+    "name": "Me",
+    "text": "*As we leave the student council room together, we bump into someone in the corridor.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 18,
+    "name": "Dain",
+    "text": "\\\"Oh? You're the one from the snack bar earlier! {name}! Wow, hanging out with the student council president?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 19,
+    "name": "???",
+    "text": "\\\"Huh? Are you the transfer student? Whoa, already friends with the council president?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 20,
+    "name": "Seoyeon",
+    "text": "\\\"(Seoyeon looks slightly flustered) ...Dain, right? Hi. We just finished work, so we were heading out.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 21,
+    "name": "Dain",
+    "text": "\\\"Oh, really? I just finished practice! {name}, hang out with me next time too!\\\"",
+    "choices": [
+      "Sure, definitely!",
+      "I have plans with Seoyeon today, so...",
+      "*Smile vaguely* It'd be nice to hang out with both of you."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 22,
+    "name": "Dain",
+    "text": "\\\"It's a promise! See you tomorrow, {name}!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 23,
+    "name": "Dain",
+    "text": "\\\"Aww, that's disappointing. But promise me next time!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 24,
+    "name": "Me",
+    "text": "*Both Seoyeon's and Dain's expressions freeze at the same time. Did I say something wrong...?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 25,
+    "name": "Dain",
+    "text": "\\\"...What? Both of us? What's that supposed to mean?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 26,
+    "name": "Seoyeon",
+    "text": "\\\"(Seoyeon smiles coldly) Heh... {name} sure is popular, huh? The type who says yes to everyone, I guess.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 27,
+    "name": "Dain",
+    "text": "\\\"Oh come on, Miss President. But she's got a point though? {name}, you might end up losing both of us like that.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 28,
+    "name": "Me",
+    "text": "*The two of them exchange glances while staring at me. The atmosphere just got really awkward...*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 29,
+    "name": "Me",
+    "text": "*Dain waves and walks away. Seoyeon's expression seems slightly stiff for some reason.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 30,
+    "name": "Seoyeon",
+    "text": "\\\"Oh, right! I haven't asked for your contact info yet. I have a feeling I'll keep wanting to talk to you... Can I have your number?\\\"",
+    "choices": [
+      "Sure, contact me anytime. Here's my number.",
+      "Sorry, I'll give it to you when we're a bit closer."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 31,
+    "name": "Seoyeon",
+    "text": "\\\"Thank you! I'll definitely message you later. Get home safe!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 32,
+    "name": "Seoyeon",
+    "text": "\\\"Oh... right! I asked too suddenly, didn't I? Sorry. See you at school tomorrow!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 33,
+    "name": "Me",
+    "text": "*Library Annex. As I enter the old building, a cool draft of air surrounds me.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 34,
+    "name": "Yuna",
+    "text": "\\\"You're here. Come, follow me. I have something to show you.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 35,
+    "name": "???",
+    "text": "\\\"You... you came because you're curious about me, right? This school hides a very deep secret.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 36,
+    "name": "Yuna",
+    "text": "\\\"I'm Yuna. What's your name?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 37,
+    "name": "Me",
+    "text": "\\\"My name is {name}.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 38,
+    "name": "Yuna",
+    "text": "\\\"{name}... I'll remember that. Come, follow me. I have something to show only you.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 39,
+    "name": "Me",
+    "text": "*I follow Yuna back down to the basement warehouse. The air feels even colder than before. The sunset glow fades as we descend into the shadows.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 40,
+    "name": "Me",
+    "text": "*I follow Yuna down to a dusty warehouse in the basement. A strange chill hangs in the air. The sunset light barely reaches this deep.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 41,
+    "name": "Yuna",
+    "text": "\\\"Those symbols we saw earlier... what do you think now? Don't they look even more eerie in this dim light?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 42,
+    "name": "Yuna",
+    "text": "\\\"Look, {name}. These patterns on the wall... they match the secrets of this school I've been tracking.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 43,
+    "name": "Me",
+    "text": "*Yuna points to a crack in the wall. A strange, eye-like symbol is drawn there in reddish ink.*",
+    "choices": [
+      "What does this even mean?",
+      "*Taking Yuna's hand* It's scary, let's get out of here.",
+      "This eye... it feels like it's watching us."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 44,
+    "name": "Yuna",
+    "text": "\\\"Surveillance... or protection. I still don't know who it's for.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 45,
+    "name": "Yuna",
+    "text": "*Yuna holds my hand tightly and smiles softly.* \\\"...Your hand is warm. It's been a long time since I felt such warmth. Okay, let's go. But... don't let go of my hand.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 46,
+    "name": "Yuna",
+    "text": "\\\"...Your hand is warm. Okay. Let's head back for today.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 47,
+    "name": "Yuna",
+    "text": "*Yuna coldly pulls her hand away.* \\\"...Why are you grabbing my hand? Scared? You're quite bold for a coward. Leave alone if you want.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 48,
+    "name": "Yuna",
+    "text": "\\\"Correct. This school might be a giant prison or a laboratory. And we're being tested within it.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 49,
+    "name": "Yuna",
+    "text": "\\\"This isn't just graffiti. It's tied to the very purpose of this school. {name}, you've chosen a path with no turning back.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 50,
+    "name": "Me",
+    "text": "*As we leave the warehouse with Yuna, we bump into someone in the corridor.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 51,
+    "name": "School Nurse",
+    "text": "\\\"Oh my, {name}? What are you doing here at this hour? ...And who is this student?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 52,
+    "name": "???",
+    "text": "\\\"Hmm? Students at this hour, here? This old warehouse is dangerous... Oh, I'm the school nurse.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 53,
+    "name": "Yuna",
+    "text": "\\\"(Yuna speaks coldly) ...We were just passing by. Don't mind us.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 54,
+    "name": "School Nurse",
+    "text": "\\\"(The nurse looks at Yuna suspiciously) ...Is that so? Hehe, be careful. Dangerous things hide in dark places.\\\"",
+    "choices": [
+      "*Hold Yuna's hand* Yes, we'll be careful.",
+      "Ma'am, we were just taking a walk.",
+      "*Just bow silently*"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 55,
+    "name": "Yuna",
+    "text": "\\\"(Yuna squeezes my hand slightly) ...Thanks.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 56,
+    "name": "School Nurse",
+    "text": "\\\"Is that so? Hehe, try walking somewhere brighter next time. I worry, you know.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 57,
+    "name": "School Nurse",
+    "text": "\\\"(The nurse watches us with a suspicious look, then walks away)\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 58,
+    "name": "Yuna",
+    "text": "\\\"...That person feels strange. She's not just a normal school nurse. {name}, be careful.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 59,
+    "name": "Yuna",
+    "text": "\\\"If we're sharing secrets... we need a way to reach each other. Leave your number here.\\\"",
+    "choices": [
+      "Sure. I want to know everything about you.",
+      "Sorry, I'm still a bit cautious."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 60,
+    "name": "Yuna",
+    "text": "\\\"...Done. Now we're connected. When I call... you must come, no matter what.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 61,
+    "name": "Yuna",
+    "text": "\\\"...Fine. I won't force you. But remember, opportunities are rare.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 62,
+    "name": "Me",
+    "text": "*Opening the gym door, the energetic shouts and the sound of volleyballs bouncing greet me.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 63,
+    "name": "Dain",
+    "text": "\\\"Oh! {name}! Perfect timing. Can you help me with practice?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 64,
+    "name": "Me",
+    "text": "*Helping Dain with her spikes, I'm soon drenched in sweat. Outside, it has already turned dark.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 65,
+    "name": "???",
+    "text": "\\\"Haa, haa... You're so full of energy! We're perfectly in sync for our first time!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 66,
+    "name": "???",
+    "text": "\\\"I'm Dain Jung from Class 2-3! What's your name?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 67,
+    "name": "Me",
+    "text": "\\\"I'm {name}. I'm in Class 2-3, too.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 68,
+    "name": "Me",
+    "text": "*Dain wipes her sweat with a towel and hands me a cold drink.*",
+    "choices": [
+      "It's because you gave me such great tosses.",
+      "Should we have a real match sometime?",
+      "Tteokbokki after exercise is the best, right?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 69,
+    "name": "Dain",
+    "text": "\\\"Aww, don't be so modest! Anyway, thanks to you, I got some great practice in. Thanks!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 70,
+    "name": "Dain",
+    "text": "\\\"Oh? Confident? Fine, let's make a bet! Loser buys Tteokbokki!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 71,
+    "name": "Dain",
+    "text": "\\\"Whoa! You really get it! Tteokbokki with fried sides... man, just thinking about it makes me happy!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 72,
+    "name": "Dain",
+    "text": "\\\"Wow! You're really passionate about this. I almost want to recruit you for the team! Great job today, {name}! Get home safe!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 73,
+    "name": "Me",
+    "text": "*Just then, I notice someone passing by the gym window. A pale-skinned girl walks quietly down the corridor.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 74,
+    "name": "Dain",
+    "text": "\\\"(Dain looks out the window and shivers slightly) That girl... isn't she kind of creepy? She's always wandering around alone like that...\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 75,
+    "name": "Me",
+    "text": "*Dain seems uneasy looking at Yuna.*",
+    "choices": [
+      "Yuna? She's just quiet, that's all.",
+      "Dunno, first time seeing her.",
+      "You're way brighter and better, Dain!"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 76,
+    "name": "Dain",
+    "text": "\\\"Huh? You know her? Wow, {name}, you're friends with everyone. But I'm your best friend, right? Right?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 77,
+    "name": "Dain",
+    "text": "\\\"Right? She has this different vibe... Anyway, when you're with me, focus only on me!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 78,
+    "name": "Dain",
+    "text": "\\\"H-hey, what's with that all of a sudden?! (Dain blushes and playfully hits my shoulder) But thanks! {name}'s the best!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 79,
+    "name": "Me",
+    "text": "*Yuna disappears into the distance. Dain still seems bothered but quickly returns to her bright expression.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 80,
+    "name": "Dain",
+    "text": "\\\"Hey, {name}! If we're going on food tours, we'll need each other's numbers, right? Punch it in!\\\"",
+    "choices": [
+      "Sure! It'll be fun to explore food places with you.",
+      "Hmm.. maybe next time."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 81,
+    "name": "Dain",
+    "text": "\\\"Contact saved! I'll message you as soon as I find a tasty spot, so be ready!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 82,
+    "name": "Dain",
+    "text": "\\\"What? Playing coy? Fine, fine. I'll work harder until I get your number!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 83,
+    "name": "Me",
+    "text": "*Opening the infirmary door, I see the teacher reading under the gentle scent of herbs.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 84,
+    "name": "School Nurse",
+    "text": "\\\"Oh, {name}. Back again? What's the trouble today? Or... did you just come to see me?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 85,
+    "name": "School Nurse",
+    "text": "*The teacher looks at me and smiles softly.* \\\"Hehe, {name}. Seeing you so often makes me start to look forward to it. Come on in.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 86,
+    "name": "School Nurse",
+    "text": "\\\"Oh, {name}. An infirmary visit after school... is something wrong?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 87,
+    "name": "School Nurse",
+    "text": "*The teacher looks at me uncertainly.* \\\"...It's {name}, right? Are you feeling unwell?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 88,
+    "name": "School Nurse",
+    "text": "\\\"Hehe, {name}. You haven't forgotten our plan to meet at my place this evening, have you? If you're here because you missed me already, I'm truly touched.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 89,
+    "name": "School Nurse",
+    "text": "\\\"Oh, a new face? Are you the transfer student? I'm the school nurse.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 90,
+    "name": "School Nurse",
+    "text": "\\\"By the way, what's your name? Won't you tell me? Just between us.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 91,
+    "name": "Me",
+    "text": "\\\"My name is {name}.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 92,
+    "name": "Me",
+    "text": "*The teacher adjusts her glasses and stares at me intently.*",
+    "choices": [
+      "I came because I missed you.",
+      "I just wanted some quiet rest.",
+      "I love the scent of this room."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 93,
+    "name": "School Nurse",
+    "text": "\\\"Hehe, I like how honest you are. I should give such an honest transfer student a reward, shouldn't I?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 94,
+    "name": "School Nurse",
+    "text": "\\\"Hehe, honesty is good... but saying things like that to a teacher can be misunderstood, {name}. Still, you are quite cute.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 95,
+    "name": "School Nurse",
+    "text": "*The teacher looks at me coldly over her glasses.* \\\"...I don't think we're quite on such terms yet? Student, keep your jokes appropriate. Just rest here for today.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 96,
+    "name": "School Nurse",
+    "text": "\\\"Is that so? Then go ahead and lie down on that bed. I won't disturb you.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 97,
+    "name": "School Nurse",
+    "text": "\\\"Oh, you have sharp senses. This is an aroma oil I blended myself. It's meant to put the mind at ease.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 98,
+    "name": "School Nurse",
+    "text": "*The teacher smiles softly and strokes my hair.* \\\"Hehe, you came because you wanted more time with me, didn't you? Fine, I'll stay with you a bit longer today, just for you.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 99,
+    "name": "Me",
+    "text": "*Chatting with the teacher in the infirmary, the sunset has deepened into dusk. Regretfully, I leave the school, promising to see her again.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 100,
+    "name": "School Nurse",
+    "text": "\\\"{name}, we've already exchanged numbers, haven't we? You must contact me if you're bored this evening. I'll be waiting.\\\"",
+    "choices": [
+      "Yes, I will.",
+      "Instead of my number... can I go to your house this evening?"
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 101,
+    "name": "School Nurse",
+    "text": "*The teacher's eyes widen, then she whispers in my ear with a seductive smile.* \\\"Oh... {name}, you're much bolder than I thought. Fine, want to come to my house this evening? I'll send you the address. But... it's a secret from your parents, okay?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 102,
+    "name": "School Nurse",
+    "text": "*The teacher bursts into laughter.* \\\"Oh my, {name}! You're so cute. But my house is a bit too early, isn't it? Just message me later.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 103,
+    "name": "School Nurse",
+    "text": "\\\"{name}, why don't you save my number just in case? Contact me anytime you're sick or need someone to talk to.\\\"",
+    "choices": [
+      "Yes, please!",
+      "It's a bit much for now."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 104,
+    "name": "School Nurse",
+    "text": "\\\"Hehe, good boy. Then I'll message you later. Have a good evening, {name}.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 105,
+    "name": "School Nurse",
+    "text": "\\\"Oh, playing hard to get? Fine. Let me know if you change your mind. Get home safe!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 106,
+    "name": "Me",
+    "text": "*Opening the faculty room door, I see the homeroom teacher working alone under a desk lamp in the empty office.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 107,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Oh, {name}? What brings you here at this hour? Haven't you gone home yet?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 108,
+    "name": "Homeroom Teacher",
+    "text": "\\\"I have quite a few documents to submit this week... Hehe, I'm showing you such a haggard side of me since your first week.\\\"",
+    "choices": [
+      "I'll help you. We'll finish much faster together!",
+      "Hang in there! Should I make you a cup of coffee?",
+      "Teacher, don't overwork yourself. I'm worried."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 109,
+    "name": "Me",
+    "text": "*I sat next to the teacher and started helping her sort the papers. Only the rhythmic sound of turning pages fills the quiet office.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 110,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Thank you, {name}. You've been a huge help. I would've been here much longer if I were alone.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 111,
+    "name": "Me",
+    "text": "*The teacher looks at me quietly, seemingly lost in thought.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 112,
+    "name": "Homeroom Teacher",
+    "text": "*The teacher suddenly leans in toward me. I can feel her warm breath and the faint scent of her perfume.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 113,
+    "name": "Homeroom Teacher",
+    "text": "\\\"{name}, I think you're a truly special student. It's only been two days... why do I feel so comfortable, as if we've known each other for years?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 114,
+    "name": "Homeroom Teacher",
+    "text": "\\\"As a reward for helping today... I'll drive you home. Shall we talk more in the car?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 115,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Well, it's late, so you should head home. I'll finish up and leave, too. You did a great job today!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 116,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Oh, coffee? Hehe, thank you for the thought. But I can't have a student prepare it for me. I'll give you a delicious candy instead!\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_3_afterschool.js",
+    "block": 117,
+    "name": "Homeroom Teacher",
+    "text": "\\\"Thank you for worrying about me. I'm okay! I feel so reassured because {name} is such a kind student.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 1,
+    "name": "Me",
+    "text": "*As I step out of the school gate, the evening air wraps around my face. The sky is already fading into a deep navy blue.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 2,
+    "name": "Me",
+    "text": "*The streetlights begin flickering on one by one. This road has become so familiar that my feet know where to turn without thinking.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 3,
+    "name": "Me",
+    "text": "*The smell of someone cooking dinner drifts on the breeze. Warm light seeps through a neighbor's window... Something about this ordinary scene puts my mind oddly at ease.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 4,
+    "name": "Me",
+    "text": "*I open the front door and step inside. I mutter 'I'm home' as I take off my shoes, but there's no reply. Looks like my parents aren't back yet.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 5,
+    "name": "Me",
+    "text": "*I change out of my uniform into something comfortable. The moment the tie comes off, it feels like all the tension from the day melts away at once.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 6,
+    "name": "Me",
+    "text": "*I set my bag down and sit at my desk. I file away the printouts from today and drink a glass of water. The only sound in the quiet room is the ticking of the clock.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 7,
+    "name": "Me",
+    "text": "*I lean back against my bed and stare at the ceiling. Today was... really something. A much deeper and more complicated day than yesterday.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 8,
+    "name": "Me",
+    "text": "*When I close my eyes, the scenes from today flash by like a panorama. It's only been two days... but this school already feels like part of my everyday life.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 9,
+    "name": "System",
+    "text": "",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 10,
+    "name": "Me",
+    "text": "*The secret Yuna whispered to me... it still lingers in my mind. Why did she tell only me something like that? What kind of world lies behind those mysterious eyes of hers...*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 11,
+    "name": "System",
+    "text": "",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 12,
+    "name": "Me",
+    "text": "*Seoyeon was her usual cheerful self today. Even though she's busy with student council work, she tries so hard to look after me... I feel a bit guilty, but also grateful.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 13,
+    "name": "System",
+    "text": "",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 14,
+    "name": "Me",
+    "text": "*Dain is... ah, that energy. There's never a dull moment with her. Watching her play sports was really cool, and messing around with her was fun. I wonder what challenge she'll throw at me tomorrow.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 15,
+    "name": "Me",
+    "text": "*The School Nurse had that mysterious aura about her again today, and the Homeroom Teacher was playful yet subtly attentive toward me. Is it more complicated because they're adults, or... am I just overthinking it?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 16,
+    "name": "Me",
+    "text": "*Lost in thought, I realize I've gotten hungry. I barely ate dinner... maybe I should find something in the kitchen.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 17,
+    "name": "Me",
+    "text": "*I open the fridge and find a few side dishes Mom left behind and some instant noodles. I'm in the mood for ramen tonight.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 18,
+    "name": "Me",
+    "text": "*I put water in the pot and start boiling the ramen. The bubbling sound fills the quiet kitchen. Watching the steam curl up makes me feel at ease.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 19,
+    "name": "Me",
+    "text": "*I slurp the ramen and think. The people I exchanged numbers with today... should I send them a message? Or just go to sleep? After finishing the dishes, I head back to my room.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 20,
+    "name": "Me",
+    "text": "*I lie on my bed and pick up my phone out of habit.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 21,
+    "name": "Me",
+    "text": "*Before sending any messages, I quickly scroll through social media. My school friends' posts fill the timeline.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 22,
+    "name": "Me",
+    "text": "*Someone's photo of school lunch, a sneaky shot taken during PE class, a picture of the sunset over the school field... Everyone's living their own version of the day.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 23,
+    "name": "Me",
+    "text": "*Seoyeon's student council activity photo is loaded with likes. Dain's volleyball practice video has a flood of comments saying 'So cool!'...*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 24,
+    "name": "Me",
+    "text": "*I smile without realizing it. I tap a few likes and close the timeline. ...Maybe it's time to send a message directly.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 25,
+    "name": "Me",
+    "text": "*Should I send a message to someone...?*",
+    "choices": [
+      "Send a message to Seoyeon.",
+      "Send a message to Yuna.",
+      "Send a message to Dain.",
+      "Send a message to the School Nurse.",
+      "Send a message to the Homeroom Teacher.",
+      "Head to the School Nurse's place.",
+      "Check affinity",
+      "Stop messaging and go to sleep."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 26,
+    "name": "System",
+    "text": "Here is your current affinity status with each character.{affinity_list}",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 27,
+    "name": "Me",
+    "text": "*I head to the address she gave me. It's a quiet studio apartment building near the school. My heart beats faster as I ride the elevator up.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 28,
+    "name": "Me",
+    "text": "*I press the doorbell and hear rustling from inside. A voice calls out 'Just a moment!' followed by footsteps drawing closer.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 29,
+    "name": "Me",
+    "text": "*The figure that appears from behind the door is... completely different from how she looks at school. Instead of her white coat, she's wearing a cozy knit sweater and a long skirt. A faint scent of shampoo drifts from her slightly damp hair.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 30,
+    "name": "School Nurse",
+    "text": "\\\"Oh my, you actually came? Come on in. It must be cold outside, right?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 31,
+    "name": "Me",
+    "text": "*Stepping inside, a cozy studio apartment comes into view. Soft indirect lighting, small potted plants, warm-toned décor. She puts the kettle on in the kitchen.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 32,
+    "name": "School Nurse",
+    "text": "\\\"Here, sit down. I'll make you a warm cup of tea. Being alone with my cute transfer student... it feels kind of special, don't you think?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 33,
+    "name": "School Nurse",
+    "text": "\\\"At school, I'm always 'the teacher,' but here, I'm just a person. When I get home, I drink tea and watch dramas like this. Surprised?\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 34,
+    "name": "School Nurse",
+    "text": "\\\"Actually... you're the first student I've ever invited to this place. Living alone, it gets lonely sometimes. I thought it would be nice to have someone to share tea with.\\\"",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 35,
+    "name": "Me",
+    "text": "*I glance at the clock — it's already past 11 PM. The teacup is empty, and the night has grown deep. Should I stay a bit longer, or head back...*",
+    "choices": [
+      "Stay a little longer.",
+      "It's late, I should head back."
+    ],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 36,
+    "name": "Me",
+    "text": "*Her room... a quiet moment for just the two of us, under the dim lighting.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 37,
+    "name": "Me",
+    "text": "*Alone with her in this room... my heartbeat pounds so loudly it echoes in my ears. Her scent tickles the tip of my nose, and the night only grows deeper.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 38,
+    "name": "Me",
+    "text": "*What should I text Seoyeon?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 39,
+    "name": "Me",
+    "text": "*I sent Seoyeon a message. 'From tonight's sunset to your overtime?, I was really happy to spend it all with you. See you tomorrow!'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 40,
+    "name": "Me",
+    "text": "*I sent Seoyeon a message. 'The sandwich at lunch today was really delicious! See you tomorrow.'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 41,
+    "name": "Me",
+    "text": "*I sent Seoyeon a message. 'How was your day? See you at school tomorrow.'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 42,
+    "name": "Seoyeon",
+    "text": "*After a moment, a reply came.* '...Are you still awake? See you at school tomorrow, {name}.'",
+    "choices": [],
+    "context": "It's nighttime, and they are chatting via smartphone messages from their respective homes. Seoyeon has sent a reply to the protagonist's message. Her tone varies depending on her relationship with the protagonist—if affinity is high, she is warm and proactive; if affinity is low, she is cautious and reserved. Please continue the conversation until it naturally wraps up. Once the conversation concludes, the protagonist will drift off to sleep looking forward to tomorrow. Only on the final turn, say goodnight or suggest seeing each other at school tomorrow to end the conversation naturally.",
+    "personality": "A bright, affectionate, and friendly student council president. She has feelings for the protagonist and approaches him honestly and proactively."
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 43,
+    "name": "Me",
+    "text": "*Talking with Seoyeon is always a joy. I can feel the sincerity in her warm words, and it makes packing my bag feel lighter. I'm already looking forward to lunchtime tomorrow.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 44,
+    "name": "Me",
+    "text": "*I finished chatting with Seoyeon without any issues. I'd better not forget our lunch plans tomorrow.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 45,
+    "name": "Me",
+    "text": "*Seoyeon's response feels more businesslike than usual. Did I do something wrong? I should approach her more carefully tomorrow.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 46,
+    "name": "Me",
+    "text": "*What should I text Yuna?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 47,
+    "name": "Me",
+    "text": "*I sent Yuna a message. 'What you showed me today... I won't forget it. Good night.'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 48,
+    "name": "Me",
+    "text": "*I sent Yuna a message. 'How was your day today? See you at school tomorrow.'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 49,
+    "name": "Yuna",
+    "text": "*A reply arrives after a moment.* '...Yeah. I knew you'd understand. I'll be watching over you, even in your dreams, {name}.'",
+    "choices": [],
+    "context": "It's nighttime, and they are chatting via smartphone messages from their respective homes. Yuna has sent a brief but deeply lingering reply to the protagonist's message. Please continue the conversation until it naturally wraps up. Once the conversation concludes, the protagonist will drift off to sleep looking forward to tomorrow. Only on the final turn, say goodnight or suggest seeing each other at school tomorrow to end the conversation naturally.",
+    "personality": "A mysterious, cool, and secretive girl. She feels a strange fascination toward the protagonist and uses short, enigmatic phrases."
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 50,
+    "name": "Me",
+    "text": "*I feel myself being drawn deeper into Yuna's mysterious aura. Her words about watching over me in my dreams feel less frightening and more oddly comforting. It almost feels like I really could meet her in a dream.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 51,
+    "name": "Me",
+    "text": "*Talking with Yuna is still puzzling, but I feel like we've gotten a little closer. The secrets she mentioned keep swirling in my mind.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 52,
+    "name": "Me",
+    "text": "*Yuna's attitude is so cold and unsettling. A chill runs through me, and I wonder if stepping into her world was really the right choice.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 53,
+    "name": "Me",
+    "text": "*What should I text Dain?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 54,
+    "name": "Me",
+    "text": "*I'm reminded of what happened during after-school practice. What should I text her?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 55,
+    "name": "Me",
+    "text": "*I sent Dain a message. 'Great job at practice today! Don't forget our tteokbokki bet tomorrow.'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 56,
+    "name": "Me",
+    "text": "*I sent Dain a message. 'Great job at practice today! I had a blast thanks to you. See you tomorrow!'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 57,
+    "name": "Me",
+    "text": "*I sent Dain a message. 'Running into you at the snack bar today was fun! Let's go grab tteokbokki tomorrow.'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 58,
+    "name": "Me",
+    "text": "*I sent Dain a message. 'Hey Dain, great job today! See you tomorrow.'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 59,
+    "name": "Dain",
+    "text": "*An energetic reply.* 'Of course! I'm gonna win, so have your wallet ready! Haha, good night, {name}!'",
+    "choices": [],
+    "context": "It's nighttime, and they are chatting via smartphone messages from their respective homes. Dain has sent an energetic reply to the protagonist's message. Please continue the conversation until it naturally wraps up. Once the conversation concludes, the protagonist will drift off to sleep looking forward to tomorrow. Only on the final turn, say goodnight or suggest seeing each other at school tomorrow to end the conversation naturally.",
+    "personality": "An easygoing and refreshingly straightforward volleyball team ace. She enjoys spending time with the protagonist and converses in a playful, energetic manner."
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 60,
+    "name": "Me",
+    "text": "*Dain's vibrant energy lifts my spirits too. I can practically see her grinning as she teases 'have your wallet ready.' Should I maybe lose the tteokbokki bet on purpose just for her tomorrow?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 61,
+    "name": "Me",
+    "text": "*I had a fun chat with Dain. I should mentally prepare so I don't lose the tteokbokki bet tomorrow.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 62,
+    "name": "Me",
+    "text": "*Dain's response is more lifeless than usual. I wonder if my message annoyed her. The hand holding my phone feels awkward.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 63,
+    "name": "Me",
+    "text": "*What should I text the School Nurse?*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 64,
+    "name": "Me",
+    "text": "*I sent the School Nurse a message. 'Thank you for today, ma'am. I got a good rest thanks to you.'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 65,
+    "name": "Me",
+    "text": "*I sent the School Nurse a message. 'Thank you for your hard work today, ma'am. Good night.'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 66,
+    "name": "School Nurse",
+    "text": "*After a moment, a reply came.* 'Got it. Don't push yourself—get some rest. See you tomorrow, {name}.'",
+    "choices": [],
+    "context": "It's nighttime, and they are chatting via smartphone messages from their respective homes. The School Nurse has sent a reply to the protagonist's message. Her tone varies depending on her relationship with the protagonist—if affinity is high, she is playful and alluring; if affinity is low, she is professional and distant. Please continue the conversation until it naturally wraps up. Once the conversation concludes, the protagonist will drift off to sleep looking forward to tomorrow. Only on the final turn, say goodnight or suggest seeing each other at school tomorrow to end the conversation naturally.",
+    "personality": "A languid, alluring, yet warmhearted school nurse. She feels a mysterious attraction to the protagonist and has a bold, daringly flirtatious personality."
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 67,
+    "name": "Me",
+    "text": "*Her alluring tone seems to linger in my ears. I can almost see her smile through the screen, and my heart trembles. No matter what happens tomorrow, I have to stop by the nurse's office.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 68,
+    "name": "Me",
+    "text": "*I finished texting the School Nurse without any issues. I should greet her warmly if I see her at school tomorrow.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 69,
+    "name": "Me",
+    "text": "*Her reply is painfully matter-of-fact. She's clearly treating me as just another student, and a bitter feeling sinks in.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 70,
+    "name": "Me",
+    "text": "*I sent the Homeroom Teacher a message. 'Thank you for your hard work today, ma'am. Good night.'*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 71,
+    "name": "Homeroom Teacher",
+    "text": "*A slightly delayed reply.* 'Oh my, {name}. A message at this hour — I'm a little surprised. But thank you for thinking of me. You get a good night's sleep too, and don't be late tomorrow.'",
+    "choices": [],
+    "context": "It's nighttime, and they are chatting via smartphone messages from their respective homes. The Homeroom Teacher was a bit flustered but grateful for the protagonist's message, and has sent a reply. Please continue the conversation until it naturally wraps up. Once the conversation concludes, the protagonist will drift off to sleep looking forward to tomorrow. Only on the final turn, say goodnight or suggest seeing each other at school tomorrow to end the conversation naturally.",
+    "personality": "A homeroom teacher who keeps a clear line between professional and personal, yet has a soft spot for the protagonist. She cares warmly and attentively while trying to maintain boundaries."
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 72,
+    "name": "Me",
+    "text": "*The warmth in her reply makes my heart feel full. It's not just being treated as a student — I feel a little respected as a person, and it makes me look forward to going to school tomorrow.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 73,
+    "name": "Me",
+    "text": "*I finished chatting with the Homeroom Teacher without any problems. I'd better make sure I'm not late tomorrow.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 74,
+    "name": "Me",
+    "text": "*Her reply is short and strict. The regret of texting her during her personal time washes over me.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 75,
+    "name": "Me",
+    "text": "*I set my phone down and walk over to the window. Before falling asleep, I just want to take in this night for a moment.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 76,
+    "name": "Me",
+    "text": "*Opening the window, cold night air rushes in. Stars are scattered across the sky above. They seem even brighter than yesterday... Yuna's mention of 'the third star' crosses my mind.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 77,
+    "name": "Me",
+    "text": "*The chirping of insects continues endlessly. A car horn sounds once from somewhere far away, then silence returns. The nights in this neighborhood... are really quiet.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 78,
+    "name": "Me",
+    "text": "*Tomorrow will already be my third day since transferring. Seoyeon, Yuna, Dain, the teachers... How will my relationships with them change? A strange flutter of anticipation and anxiety fills my chest.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 79,
+    "name": "Me",
+    "text": "*I close the window and draw the curtains. I burrow into my blanket and shut my eyes. Good job today, me...*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 80,
+    "name": "Me",
+    "text": "*My consciousness fades into a haze... I'm standing in a space where I can't tell if it's a dream or reality. It looks like the school rooftop, or maybe some unknown garden.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 81,
+    "name": "???",
+    "text": "*Someone's voice drifts in on the wind. 'Tomorrow... there's something I want to show you.' I can't tell who the voice belongs to, but its warm yet desperate resonance lingers in my ears.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 82,
+    "name": "Me",
+    "text": "*I reach out my hand, but nothing is there. The voice slowly fades away... and my consciousness sinks into a deep, deep sleep.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  },
+  {
+    "file": "day2_4_night.js",
+    "block": 83,
+    "name": "Me",
+    "text": "*A faint light bleeds through the darkness. What truths await me tomorrow... I close my heavy eyelids and drift into a deep slumber.*",
+    "choices": [],
+    "context": "",
+    "personality": ""
+  }
+]

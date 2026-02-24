@@ -7,7 +7,7 @@
     (function () {
         try {
             var K = 'cupid:language', P = 'ko';
-            var M = { ko: 'index.html', en: 'index-en.html', es: 'index-es.html', ja: 'index-ja.html' };
+            var M = { ko: 'index.html', en: 'index-en.html', es: 'index-es.html', ja: 'index-ja.html', fr: 'index-fr.html' };
             var s = localStorage.getItem(K);
             if (!s) {
                 s = (navigator.language || '').split('-')[0].toLowerCase();
@@ -66,6 +66,7 @@
     <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en.html" />
     <link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/index-es.html" />
     <link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/index-ja.html" />
+    <link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/index-fr.html" />
     <link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/" />
     <link rel="canonical" href="https://cupid.archerlab.dev/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -693,6 +694,9 @@
                 </a>
                 <a href="index-ja.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
                     <span class="lang-flag">🇯🇵</span> 日本語
+                </a>
+                <a href="index-fr.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
+                    <span class="lang-flag">🇫🇷</span> Français
                 </a>
             </div>
         </div>
