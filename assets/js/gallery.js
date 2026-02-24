@@ -55,6 +55,7 @@ class Gallery {
         // 1. URL에서 언어 감지
         const pathname = window.location.pathname;
         this.lang = pathname.includes('-es') ? 'es'
+                  : pathname.includes('-fr') ? 'fr'
                   : pathname.includes('-ja') ? 'ja'
                   : pathname.includes('-en') ? 'en'
                   : 'ko';

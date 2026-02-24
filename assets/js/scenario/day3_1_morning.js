@@ -5179,7 +5179,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Infirmière Scolaire",
-                "text": "*The teacher makes a slightly disappointed face* \"Oh... really? Then come visit the nurse's office at lunchtime. Let's talk again.\""
+                "text": "*L'infirmière fait une mine légèrement déçue* \"Oh... vraiment ? Alors passe à l'infirmerie à l'heure du déjeuner. On en reparlera.\""
             }
         }
     },
@@ -5211,7 +5211,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Infirmière Scolaire",
-                "text": "*The teacher's smile stiffens slightly* \"...I see. That's okay. Maybe next time.\""
+                "text": "*Le sourire de l'infirmière se fige légèrement* \"...Je vois. Ce n'est pas grave. Peut-être une prochaine fois.\""
             }
         }
     },
@@ -5240,7 +5240,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I headed to the meeting spot. The homeroom teacher is waving from the car.*"
+                "text": "*Je me suis dirigé vers le point de rendez-vous. Le professeur principal me fait signe depuis sa voiture.*"
             }
         }
     },
@@ -5267,7 +5267,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "\"{name}! Good morning! It's nice to commute together by car. Now, put on your seatbelt.\""
+                "text": "\"{name} ! Bonjour ! C'est agréable de faire le trajet ensemble en voiture. Allez, attache ta ceinture.\""
             }
         }
     },
@@ -5294,7 +5294,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I got into the teacher's car. A subtle perfume scent and soft music fills the air. It feels awkward yet exciting.*"
+                "text": "*Je suis monté dans la voiture du professeur. Un léger parfum et une musique douce flottent dans l'air. C'est à la fois gênant et excitant.*"
             }
         }
     },
@@ -5321,7 +5321,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*While stopped at a red light, the teacher suddenly reaches out to fix my hair* \"...Hold on. This part was messy.\""
+                "text": "*À l'arrêt au feu rouge, le professeur tend soudain la main pour arranger mes cheveux* \"...Attends. C'était tout décoiffé ici.\""
             }
         }
     },
@@ -5348,7 +5348,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*She pauses, whispering* \"...I shouldn't be doing this to a student.\""
+                "text": "*Elle s'arrête, murmurant* \"...Je ne devrais pas faire ça à un élève.\""
             }
         }
     },
@@ -5420,11 +5420,11 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Her touch is warm. The air inside the car shifts to something strange.*",
+                "text": "*Son contact est chaud. L'atmosphère dans la voiture change subtilement.*",
                 "choices": [
-                    "\"Your hands are warm, teacher\"",
-                    "*Quietly hold her hand*",
-                    "\"It's okay, teacher\""
+                    "\"Vos mains sont chaudes, professeur\"",
+                    "*Lui prendre doucement la main*",
+                    "\"Ce n'est rien, professeur\""
                 ]
             }
         }
@@ -5452,7 +5452,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*The teacher pulls her hand back, flustered* \"Oh my, this kid... Surprising a teacher like that.\""
+                "text": "*Le professeur retire sa main, troublée* \"Oh là là, cet élève... Me surprendre comme ça.\""
             }
         }
     },
@@ -5479,7 +5479,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*She looks at our hands in surprise... but doesn't pull away* \"...When the light changes, I'm letting go. Promise.\""
+                "text": "*Elle regarde nos mains avec surprise... mais ne se dégage pas* \"...Quand le feu passera au vert, je lâcherai. Promis.\""
             }
         }
     },
@@ -5506,7 +5506,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*The teacher smiles wistfully* \"...Thank you. Was teacher being a bit strange?\""
+                "text": "*Le professeur sourit avec mélancolie* \"...Merci. Le professeur était un peu bizarre, non ?\""
             }
         }
     },
@@ -5539,8 +5539,8 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Riding in the homeroom teacher's car on the way to school.*",
-                "context": "In the homeroom teacher's car on the way to school. She fixed my hair and said 'I shouldn't be doing this to a student.' The tension of a forbidden love hangs in the air."
+                "text": "*En route vers l'école dans la voiture du professeur principal.*",
+                "context": "Dans la voiture du professeur principal en route vers l'école. Elle m'a arrangé les cheveux et a dit 'Je ne devrais pas faire ça à un élève.' La tension d'un amour interdit flotte dans l'air."
             }
         }
     },
@@ -5597,7 +5597,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*While driving, the teacher carefully brings up a topic* \"Say, {name}. Do you have time this weekend?\"",
+                "text": "*En conduisant, le professeur aborde prudemment le sujet* \"Dis-moi, {name}. Tu es libre ce week-end ?\"",
                 "choices": [
                     "Oui, pourquoi ? Il se passe quelque chose ?",
                     "Eh bien... quels sont vos projets pour le week-end ?",
@@ -5634,7 +5634,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*The teacher glances at me and smiles* \"Actually... I got two tickets for a museum exhibition. It'd be a shame to go alone... Want to come with me? How about Sunday afternoon at 2?\""
+                "text": "*Le professeur me jette un regard et sourit* \"En fait... j'ai obtenu deux billets pour une exposition au musée. Ce serait dommage d'y aller seule... Tu veux venir avec moi ? Dimanche après-midi à 14h, ça te dit ?\""
             }
         }
     },
@@ -5666,7 +5666,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "\"Hmm... I have museum exhibition tickets and I wanted to go together. If you're okay with it... Sunday afternoon at 2?\""
+                "text": "\"Hmm... j'ai des billets pour une exposition au musée et je voulais y aller ensemble. Si ça te convient... dimanche après-midi à 14h ?\""
             }
         }
     },
@@ -5698,7 +5698,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*The teacher's face lights up* \"Really? Then let's go see the museum exhibition on Sunday afternoon! How about meeting at the museum at 2?\""
+                "text": "*Le visage du professeur s'illumine* \"Vraiment ? Alors allons voir l'exposition au musée dimanche après-midi ! On se retrouve devant le musée à 14h ?\""
             }
         }
     },
@@ -5756,11 +5756,11 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*The teacher glances at me with hopeful eyes. The air in the car feels unusually warm...*",
+                "text": "*Le professeur me jette un regard plein d'espoir. L'air dans la voiture semble étrangement chaud...*",
                 "choices": [
                     "Bien sûr ! J'y serai sans faute dimanche",
-                    "Laisse-moi y réfléchir et te répondre plus tard",
-                    "Museums are boring though."
+                    "Laissez-moi y réfléchir et vous répondre plus tard",
+                    "Les musées, c'est ennuyeux quand même."
                 ]
             }
         }
@@ -5793,7 +5793,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*The teacher smiles brightly* \"Really? Then Sunday at 2 PM, it's a date. It'll be fun!\""
+                "text": "*Le professeur sourit radieusement* \"Vraiment ? Alors dimanche à 14h, c'est un rendez-vous. Ça va être amusant !\""
             }
         }
     },
@@ -5825,7 +5825,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*The teacher makes a slightly disappointed face* \"Oh... really? Then let's talk again at lunchtime.\""
+                "text": "*Le professeur fait une mine légèrement déçue* \"Oh... vraiment ? Alors on en reparlera à l'heure du déjeuner.\""
             }
         }
     },
@@ -5857,7 +5857,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*The teacher's expression stiffens for a moment* \"...That's disappointing. I had high expectations for you.\""
+                "text": "*L'expression du professeur se fige un instant* \"...C'est décevant. J'avais de grands espoirs pour toi.\""
             }
         }
     },
@@ -5882,7 +5882,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I hurried to get ready for school.*"
+                "text": "*Je me suis dépêché de me préparer pour l'école.*"
             }
         }
     },
@@ -5907,7 +5907,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I check my messages...*"
+                "text": "*Je vérifie mes messages...*"
             }
         }
     },
@@ -5932,7 +5932,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*'Limited time sale! Order now...', 'Congratulations on winning the event...'* ...They're all spam messages. Looks like I'm going to school alone today."
+                "text": "*'Vente flash ! Commandez maintenant...', 'Félicitations, vous avez gagné...'* ...Ce ne sont que des spams. On dirait que je vais à l'école seul aujourd'hui."
             }
         }
     },
@@ -5960,7 +5960,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*I headed to school alone. The morning air is refreshing.*"
+                "text": "*Je me suis dirigé vers l'école seul. L'air du matin est rafraîchissant.*"
             }
         }
     },
@@ -5987,7 +5987,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Before I knew it, I arrived at the school gate. Another lively day begins.*"
+                "text": "*Sans m'en rendre compte, je suis arrivé devant le portail de l'école. Une nouvelle journée animée commence.*"
             }
         }
     },
@@ -6030,7 +6030,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*As I enter the classroom, the kids are buzzing. I sit down at my desk and notice... something is on it.*"
+                "text": "*En entrant dans la salle de classe, les élèves bourdonnent. Je m'assois à mon bureau et remarque... quelque chose est posé dessus.*"
             }
         }
     },
@@ -6060,7 +6060,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*There's a small note. 'Let's eat lunch together ♡ - Seoyeon' ... We were literally just together, and she left a note in advance?*"
+                "text": "*Il y a un petit mot. 'Mangeons ensemble ce midi ♡ - Seoyeon' ... On était ensemble il y a deux minutes, et elle avait déjà laissé un mot ?*"
             }
         }
     },
@@ -6090,7 +6090,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*There's an origami crow. I unfold its wings to find writing inside. '...Tomorrow night' — Looks like Yuna left it.*"
+                "text": "*Il y a un corbeau en origami. Je déplie ses ailes et découvre une inscription à l'intérieur. '...Demain soir' — On dirait que c'est Yuna qui l'a laissé.*"
             }
         }
     },
@@ -6120,7 +6120,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*There's an energy bar and a sticky note. 'If you don't exercise, at least eat this! - Dain' ... She must have left it earlier.*"
+                "text": "*Il y a une barre énergétique et un post-it. 'Si tu ne fais pas de sport, mange au moins ça ! - Dain' ... Elle a dû le déposer plus tôt.*"
             }
         }
     },
@@ -6145,7 +6145,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Nothing on my desk. Just an ordinary Friday morning.*"
+                "text": "*Rien sur mon bureau. Juste un vendredi matin ordinaire.*"
             }
         }
     },
@@ -6172,7 +6172,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Class begins. The homeroom teacher starts writing problems on the board.*"
+                "text": "*Le cours commence. Le professeur principal se met à écrire des problèmes au tableau.*"
             }
         }
     },
@@ -6211,7 +6211,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*When the teacher raises her arm to write on the board, a subtle whiff of perfume drifts over. No one else seems to notice... only me.*"
+                "text": "*Quand le professeur lève le bras pour écrire au tableau, un léger effluve de parfum parvient jusqu'à moi. Personne d'autre ne semble le remarquer... sauf moi.*"
             }
         }
     },
@@ -6242,7 +6242,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Professeur Principal",
-                "text": "*While asking a question, her eyes meet mine... she gives a subtle wink* \"...{name}, your answer?\""
+                "text": "*En posant une question, ses yeux croisent les miens... elle fait un clin d'œil discret* \"...{name}, ta réponse ?\""
             }
         }
     },
@@ -6273,7 +6273,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*The teacher glances my way and smiles faintly. Is she thinking about our Sunday plans?*"
+                "text": "*Le professeur jette un regard dans ma direction et sourit légèrement. Pense-t-elle à nos projets de dimanche ?*"
             }
         }
     },
@@ -6299,7 +6299,7 @@ Object.assign(SCENARIO[3], {
             },
             "fr": {
                 "name": "Moi",
-                "text": "*Mid-class, the classroom door opens and the school nurse walks in.*"
+                "text": "*En plein cours, la porte de la salle s'ouvre et l'infirmière scolaire entre.*"
             }
         }
     },

@@ -29,14 +29,17 @@ const PRECACHE_URLS = [
     '/index-en.html',
     '/index-es.html',
     '/index-ja.html',
+    '/index-fr.html',
     '/game.html',
     '/game-en.html',
     '/game-es.html',
     '/game-ja.html',
+    '/game-fr.html',
     '/gallery.html',
     '/gallery-en.html',
     '/gallery-es.html',
     '/gallery-ja.html',
+    '/gallery-fr.html',
 
     // CSS
     '/assets/css/style.css',
@@ -53,6 +56,7 @@ const PRECACHE_URLS = [
     '/manifest-en.json',
     '/manifest-es.json',
     '/manifest-ja.json',
+    '/manifest-fr.json',
     '/favicon.ico',
     '/version.json'
 ];

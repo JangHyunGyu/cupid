@@ -1191,8 +1191,8 @@ Object.assign(SCENARIO[1], {
             "fr": {
                 "name": "Seoyeon",
                 "text": "\"Héhé, c'était trop sérieux d'un coup ? Parlons plus détendu. Tu n'es pas curieux de savoir des choses sur moi ?\"",
-                "context": "A peaceful and romantic atmosphere after having lunch alone with Seoyeon on the school rooftop. Keep the conversation going until it naturally concludes. When the conversation ends, Seoyeon will mention that being with you feels comfortable and good, and ask why that might be. Only in the final turn, mention the special feeling or comfort between us and naturally ask the question.",
-                "personality": "A bit more bold and honest than usual. Wants to know how the protagonist thinks about their relationship and why they feel comfortable."
+                "context": "Une atmosphère paisible et romantique après avoir déjeuné en tête-à-tête avec Seoyeon sur le toit de l'école. Continuez la conversation jusqu'à ce qu'elle se termine naturellement. Quand la conversation se termine, Seoyeon mentionnera qu'être avec vous lui semble confortable et agréable, et demandera pourquoi. Uniquement au dernier tour, mentionnez le sentiment spécial ou le confort entre nous et posez naturellement la question.",
+                "personality": "Un peu plus audacieuse et honnête que d'habitude. Elle veut savoir ce que le protagoniste pense de leur relation et pourquoi il se sent à l'aise."
             }
         }
     },
@@ -1947,8 +1947,8 @@ Object.assign(SCENARIO[1], {
             "fr": {
                 "name": "Seoyeon",
                 "text": "*Seoyeon s'arrête en rangeant son sac et me regarde avec hésitation.*",
-                "context": "After sharing lunch on the rooftop together, Seoyeon is about to suggest exchanging contact info. She's a little shy but expectant. It's a casual conversation that naturally leads to exchanging numbers.",
-                "personality": "A kind, caring, and responsible student council president. She has a crush on the transfer student protagonist and wants to exchange numbers, but is too shy to ask directly."
+                "context": "Après avoir partagé le déjeuner ensemble sur le toit, Seoyeon est sur le point de proposer d'échanger leurs coordonnées. Elle est un peu timide mais pleine d'attente. C'est une conversation décontractée qui mène naturellement à l'échange de numéros.",
+                "personality": "Une présidente du conseil des élèves gentille, attentionnée et responsable. Elle a le béguin pour l'élève transféré protagoniste et veut échanger leurs numéros, mais elle est trop timide pour le demander directement."
             }
         }
     },
@@ -2472,8 +2472,8 @@ Object.assign(SCENARIO[1], {
             "fr": {
                 "name": "Yuna",
                 "text": "\"...Il y a quelque chose qui te rend curieux ? Ou tu veux en savoir plus sur cette école ?\"",
-                "context": "In the quiet Library Annex, first meeting with Yuna who has a mysterious and cold atmosphere. Keep the conversation going until it naturally concludes. When the conversation ends, Yuna will ask if you want to know more about her or the school's secrets. Only in the final turn, show an attitude of checking if you're ready for deeper conversation.",
-                "personality": "A mysterious and cold girl with many secrets. She feels a strange interest in the protagonist."
+                "context": "Dans l'annexe tranquille de la bibliothèque, première rencontre avec Yuna qui dégage une atmosphère mystérieuse et froide. Continuez la conversation jusqu'à ce qu'elle se termine naturellement. Quand la conversation se termine, Yuna demandera si vous voulez en savoir plus sur elle ou sur les secrets de l'école. Uniquement au dernier tour, montrez une attitude vérifiant si vous êtes prêt pour une conversation plus profonde.",
+                "personality": "Une fille mystérieuse et froide avec beaucoup de secrets. Elle ressent un étrange intérêt pour le protagoniste."
             }
         }
     },
@@ -3919,8 +3919,8 @@ Object.assign(SCENARIO[1], {
             "fr": {
                 "name": "Infirmière Scolaire",
                 "text": "\"Ne sois pas nerveux. Tu peux te détendre ici. Il y a quelque chose qui te rend curieux ?\"",
-                "context": "Conversing with the nurse you just met in the nurse's office. The teacher shows a provocative attitude with strange interest in the protagonist. Keep the conversation going until it naturally concludes. When the conversation ends, lunch time ends and transitions to after school. Only in the final turn, see the protagonist off saying it's time for class.",
-                "personality": "A mature and charming 'big sister' style. Enjoys teasing the protagonist with provocative words but actually cares for and wants to protect them more than anyone."
+                "context": "En train de discuter avec l'infirmière que vous venez de rencontrer à l'infirmerie. L'enseignante montre une attitude provocatrice avec un étrange intérêt pour le protagoniste. Continuez la conversation jusqu'à ce qu'elle se termine naturellement. Quand la conversation se termine, la pause déjeuner se termine et on passe à l'après-cours. Uniquement au dernier tour, raccompagnez le protagoniste en disant qu'il est l'heure d'aller en cours.",
+                "personality": "Un style mature et charmant de « grande sœur ». Elle aime taquiner le protagoniste avec des mots provocateurs, mais en réalité, elle se soucie de lui et veut le protéger plus que quiconque."
             }
         }
     },

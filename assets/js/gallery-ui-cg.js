@@ -81,7 +81,8 @@ class CGRenderer {
                 ko: { title: '아직 이벤트 CG가 없습니다', desc: '게임을 진행하며 특별한 순간을 수집하세요!' },
                 en: { title: 'No Event CG yet', desc: 'Collect special moments as you play!' },
                 es: { title: 'Aún no hay CG registrados', desc: '¡Colecciona momentos especiales mientras juegas!' },
-                ja: { title: 'まだ登録されたCGはありません', desc: 'ゲームを進めて特別な瞬間を集めましょう！' }
+                ja: { title: 'まだ登録されたCGはありません', desc: 'ゲームを進めて特別な瞬間を集めましょう！' },
+                fr: { title: "Pas encore de CG d'événement", desc: 'Collectionnez des moments spéciaux en jouant !' }
             }[this.ui.lang] || { title: 'No Event CG yet', desc: 'Collect special moments as you play!' };
 
             this.gridEl.innerHTML = `
@@ -109,7 +110,7 @@ class CGRenderer {
                     </div>
                     <div class="card-info">
                         <h4>${cg.name}</h4>
-                        <p>${unlocked ? cg.character : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放' }[this.ui.lang] || 'Locked')}</p>
+                        <p>${unlocked ? cg.character : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé' }[this.ui.lang] || 'Locked')}</p>
                     </div>
                 </div>
             `;
@@ -123,14 +124,15 @@ class CGRenderer {
      * @param {string} cgId - CG ID
      */
     showLockPopup(cgId) {
-        const L = (ko, en, es, ja) => ({ ko, en, es, ja })[this.ui.lang] || en;
+        const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.ui.lang] || en;
         this.ui.showUnlockPopup({
-            title: L('CG 미해금', 'CG Locked', 'CG bloqueado', 'CG未解放'),
+            title: L('CG 미해금', 'CG Locked', 'CG bloqueado', 'CG未解放', 'CG verrouillé'),
             message: L(
                 '이 이벤트 CG는 아직 해금되지 않았습니다.<br><br><span class="condition-line">💕 해금 조건: 게임에서 해당 이벤트를 경험하세요!</span>',
                 'This event CG is not yet unlocked.<br><br><span class="condition-line">💕 Condition: Experience this event in the game!</span>',
                 'Este CG de evento aún no está desbloqueado.<br><br><span class="condition-line">💕 Condición: ¡Experimenta este evento en el juego!</span>',
-                'このイベントCGはまだ解放されていません。<br><br><span class="condition-line">💕 解放条件: ゲームでこのイベントを体験しましょう！</span>'
+                'このイベントCGはまだ解放されていません。<br><br><span class="condition-line">💕 解放条件: ゲームでこのイベントを体験しましょう！</span>',
+                'Ce CG d\'événement n\'est pas encore débloqué.<br><br><span class="condition-line">💕 Condition : Vivez cet événement dans le jeu !</span>'
             ),
             icon: '🖼️'
         });
