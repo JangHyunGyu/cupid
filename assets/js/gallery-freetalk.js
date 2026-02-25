@@ -211,7 +211,7 @@ class GalleryFreeTalk {
         this._showLastAssistantMessage();
 
         // 입력 포커스
-        const input = this.overlayEl.querySelector('.gft-input');
+        const input = document.getElementById('chat-input');
         if (input) setTimeout(() => input.focus(), 300);
 
         console.log(`[GalleryFreeTalk] 오버레이 열기: ${charId}`);
@@ -263,25 +263,25 @@ class GalleryFreeTalk {
                 <img id="gft-char-img" src="assets/images/characters/${charId}_normal.png" alt="${charName}">
             </div>
             <div class="gft-ui-layer">
-                <div class="gft-dialogue-box" id="gft-dialogue-box">
-                    <div class="gft-name-tag" id="gft-name-tag">${charName}</div>
-                    <div class="gft-message-text" id="gft-message-text"></div>
+                <div id="dialogue-box">
+                    <div id="name-tag">${charName}</div>
+                    <div id="message"></div>
                 </div>
                 <div class="gft-bottom-row">
-                    <div class="gft-chat-container">
-                        <div class="gft-guide">${this._getTip()}</div>
-                        <div class="gft-image-preview" id="gft-image-preview" style="display:none;">
-                            <img id="gft-preview-img" src="">
-                            <button class="gft-remove-image" id="gft-remove-image" title="×">×</button>
+                    <div id="chat-container">
+                        <div id="chat-guide">${this._getTip()}</div>
+                        <div id="image-preview-container" style="display:none;">
+                            <img id="image-preview" src="">
+                            <button id="remove-image-btn" title="×">×</button>
                         </div>
-                        <div class="gft-input-wrapper">
-                            <button class="gft-upload-btn" id="gft-upload-btn" title="${this._L('사진', 'Photo', 'Foto', '写真', 'Photo')}">
+                        <div id="chat-input-wrapper">
+                            <button id="upload-image-btn" title="${this._L('사진', 'Photo', 'Foto', '写真', 'Photo')}">
                                 <span>📸</span>
                             </button>
                             <input type="file" id="gft-file-input" accept="image/*" style="display:none;">
-                            <input type="text" class="gft-input" maxlength="200"
+                            <input type="text" id="chat-input" maxlength="200"
                                    placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力...', 'Saisissez un message...')}">
-                            <button class="gft-send-btn" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer')}">
+                            <button id="chat-send" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer')}">
                                 <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
                             </button>
                         </div>
@@ -291,14 +291,14 @@ class GalleryFreeTalk {
             </div>
         `;
 
-        // 이벤트 바인딩
+        // 이벤트 바인딩 (게임과 동일한 ID 사용)
         const closeBtn = this.overlayEl.querySelector('.gft-close-btn');
-        const sendBtn = this.overlayEl.querySelector('.gft-send-btn');
-        const input = this.overlayEl.querySelector('.gft-input');
-        const dialogueBox = document.getElementById('gft-dialogue-box');
-        const uploadBtn = document.getElementById('gft-upload-btn');
+        const sendBtn = document.getElementById('chat-send');
+        const input = document.getElementById('chat-input');
+        const dialogueBox = document.getElementById('dialogue-box');
+        const uploadBtn = document.getElementById('upload-image-btn');
         const fileInput = document.getElementById('gft-file-input');
-        const removeImgBtn = document.getElementById('gft-remove-image');
+        const removeImgBtn = document.getElementById('remove-image-btn');
 
         closeBtn.addEventListener('click', () => this.close());
         sendBtn.addEventListener('click', () => this._handleSend());
@@ -343,7 +343,7 @@ class GalleryFreeTalk {
         for (let i = this.chatHistory.length - 1; i >= 0; i--) {
             if (this.chatHistory[i].role === 'assistant') {
                 const text = this._extractText(this.chatHistory[i].content);
-                const msgEl = document.getElementById('gft-message-text');
+                const msgEl = document.getElementById('message');
                 if (msgEl) msgEl.innerHTML = this._formatAction(text);
                 // 마지막 표정도 복원
                 const parsed = this._parseResponse(this.chatHistory[i].content);
@@ -364,7 +364,7 @@ class GalleryFreeTalk {
     async _handleSend() {
         if (this.isProcessing) return;
 
-        const input = this.overlayEl.querySelector('.gft-input');
+        const input = document.getElementById('chat-input');
         const text = input.value.trim();
         const stagedImage = this.stagedImage;
 
@@ -379,8 +379,8 @@ class GalleryFreeTalk {
             ? (text ? `${text}\n\n${stagedImage}` : stagedImage)
             : text;
 
-        const msgEl = document.getElementById('gft-message-text');
-        const nameTag = document.getElementById('gft-name-tag');
+        const msgEl = document.getElementById('message');
+        const nameTag = document.getElementById('name-tag');
         const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)');
         const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
 
@@ -403,7 +403,7 @@ class GalleryFreeTalk {
         this.chatHistory.push({ role: 'user', content: finalContent });
 
         // 전송 버튼 & 입력 비활성화
-        const sendBtn = this.overlayEl.querySelector('.gft-send-btn');
+        const sendBtn = document.getElementById('chat-send');
         if (sendBtn) sendBtn.disabled = true;
         if (input) input.disabled = true;
 
@@ -532,7 +532,7 @@ class GalleryFreeTalk {
      * @returns {Promise} 타이핑 완료 시 resolve
      */
     _typeText(text) {
-        const msgEl = document.getElementById('gft-message-text');
+        const msgEl = document.getElementById('message');
         if (!msgEl) return Promise.resolve();
 
         this.isTyping = true;
@@ -672,8 +672,8 @@ class GalleryFreeTalk {
                 this.stagedImage = base64;
 
                 // 미리보기 표시
-                const previewContainer = document.getElementById('gft-image-preview');
-                const previewImg = document.getElementById('gft-preview-img');
+                const previewContainer = document.getElementById('image-preview-container');
+                const previewImg = document.getElementById('image-preview');
                 if (previewImg) previewImg.src = base64;
                 if (previewContainer) previewContainer.style.display = 'inline-flex';
             };
@@ -688,8 +688,8 @@ class GalleryFreeTalk {
      */
     _removeStagedImage() {
         this.stagedImage = null;
-        const previewContainer = document.getElementById('gft-image-preview');
-        const previewImg = document.getElementById('gft-preview-img');
+        const previewContainer = document.getElementById('image-preview-container');
+        const previewImg = document.getElementById('image-preview');
         if (previewContainer) previewContainer.style.display = 'none';
         if (previewImg) previewImg.src = '';
     }
