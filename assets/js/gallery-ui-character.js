@@ -384,7 +384,8 @@ class CharacterRenderer {
         const container = document.getElementById('freetalk-button-container');
         if (!container) return;
 
-        const unlocked = this.ui.progress.isFreeTalkUnlocked(charId);
+        const isAdmin = new URLSearchParams(window.location.search).has('admin');
+        const unlocked = isAdmin || this.ui.progress.isFreeTalkUnlocked(charId);
         const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.ui.lang] || en;
 
         if (unlocked) {
