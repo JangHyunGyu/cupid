@@ -203,8 +203,15 @@ class GalleryFreeTalk {
         if (!this.overlayEl.classList.contains('active')) return;
 
         this.overlayEl.classList.remove('active');
+        this.overlayEl.style.height = '';
         this.overlayEl.innerHTML = '';
         this.isProcessing = false;
+
+        // visualViewport 리스너 정리
+        if (this._vvHandler && window.visualViewport) {
+            window.visualViewport.removeEventListener('resize', this._vvHandler);
+            this._vvHandler = null;
+        }
 
         // 메모리 저장
         if (this.currentCharId) {
@@ -260,6 +267,17 @@ class GalleryFreeTalk {
         input.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' && !e.isComposing) this._handleSend();
         });
+
+        // 모바일: visualViewport로 키보드 올라와도 오버레이 높이 고정
+        this._vvHandler = null;
+        if (window.visualViewport && window.innerWidth <= 768) {
+            const overlay = this.overlayEl;
+            this._vvHandler = () => {
+                overlay.style.height = `${window.visualViewport.height}px`;
+            };
+            window.visualViewport.addEventListener('resize', this._vvHandler);
+            this._vvHandler(); // 초기 높이 설정
+        }
     }
 
     /**
@@ -507,7 +525,7 @@ class GalleryFreeTalk {
         const datingPrompt = this.CHAR_DATING_PROMPTS[charId]?.[this.lang] || '';
 
         // 플레이어 이름
-        const playerName = this.progress.getPlayerName() || L('플레이어', 'Player', 'Jugador', '\u30d7\u30ec\u30a4\u30e4\u30fc', 'Joueur');
+        const playerName = this.progress.getPlayerName() || L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)');
 
         const validExprs = this.CHAR_EXPRESSIONS[charId] || [];
 
