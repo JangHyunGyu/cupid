@@ -363,6 +363,41 @@ class GalleryFreeTalk {
         return new Promise(r => setTimeout(r, ms));
     }
 
+    /**
+     * 다른 캐릭터들의 트루엔딩(연인 관계) 여부 정보 문자열 생성
+     * - 현재 대화 중인 캐릭터 제외, 나머지 캐릭터들의 연인 관계 해금 여부를 알려줌
+     * - 캐릭터 간 질투, 바람 의심, 싸움 등의 드라마틱 반응을 유도
+     * @private
+     */
+    _buildOtherRelationshipsInfo(currentCharId, isEn) {
+        const allCharIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
+        const others = allCharIds.filter(id => id !== currentCharId);
+
+        const clearedOthers = others.filter(id => this.progress.isFreeTalkUnlocked(id));
+
+        if (clearedOthers.length === 0) return '';
+
+        const clearedNames = clearedOthers.map(id => this.CHAR_NAMES[id]?.[this.lang] || id).join(', ');
+
+        if (isEn) {
+            return `
+IMPORTANT RELATIONSHIP CONTEXT:
+${this.progress.getPlayerName() || 'The player'} has also reached TRUE LOVE endings with: ${clearedNames}.
+This means they have been romantically involved with these characters too.
+You know all these characters personally — you are classmates or colleagues at the same school.
+You may feel jealous, suspicious, hurt, or confrontational about this. React naturally based on your personality — you can bring it up, get angry, cry, guilt-trip, or try to pretend you don't care. This is a source of real emotional conflict for you.
+`;
+        }
+
+        return `
+중요한 관계 정보:
+${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)도 TRUE LOVE 엔딩(연인 관계)을 달성한 적이 있습니다.
+즉, 이 캐릭터들과도 연인 관계를 맺은 경험이 있다는 뜻입니다.
+당신은 이 캐릭터들을 모두 직접 알고 있습니다 — 같은 학교의 동급생이거나 동료입니다.
+이 사실에 대해 질투, 의심, 상처, 분노 등을 자연스럽게 느낄 수 있습니다. 당신의 성격에 맞게 반응하세요 — 따져 물을 수도, 화를 낼 수도, 울 수도, 모른 척할 수도 있습니다. 이것은 당신에게 진짜 감정적 갈등의 원인입니다.
+`;
+    }
+
     // =========================================================================
     // 오버레이 열기/닫기
     // =========================================================================
@@ -978,6 +1013,9 @@ class GalleryFreeTalk {
 
         const validExprs = this.CHAR_EXPRESSIONS[charId] || [];
 
+        // 다른 캐릭터들의 트루엔딩(연인 관계) 여부 수집
+        const otherRelationships = this._buildOtherRelationshipsInfo(charId, isEn);
+
         if (isEn) {
             return `You are the character '${charName}' from the visual novel game 'Cupid'.
 
@@ -987,7 +1025,7 @@ CURRENT SITUATION:
 - Location: ${location}
 - Time: After the game's ending. You and ${playerName} are a couple living your daily lives together.
 - Relationship: You are deeply in love and dating ${playerName}.
-
+${otherRelationships}
 SPECIAL RELATIONSHIP INSTRUCTIONS:
 ${datingPrompt}
 
@@ -1019,7 +1057,7 @@ IMPORTANT: Respond in the SAME LANGUAGE as the user's message. If the user write
 - 장소: ${location}
 - 시점: 게임 엔딩 이후. 당신과 ${playerName}은 연인으로서 일상을 함께 보내고 있습니다.
 - 관계: ${playerName}과 깊이 사랑하는 연인 사이.
-
+${otherRelationships}
 연인 관계 지시사항:
 ${datingPrompt}
 
