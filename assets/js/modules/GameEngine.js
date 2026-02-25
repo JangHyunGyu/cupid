@@ -809,6 +809,22 @@ class GameEngine {
         this.sceneRenderer.currentSceneId = sceneId;
 
         // ─────────────────────────────────────────────────────────
+        // 📝 호감도 기반 대사 분기
+        // ─────────────────────────────────────────────────────────
+        // affinityTextChar + affinityText: 동일 노드에서 호감도에 따라
+        // 대사 텍스트(+ 캐릭터 표정)를 분기. min 내림차순, 첫 매칭 적용.
+        if (scene.affinityTextChar && scene.affinityText) {
+            const affinity = this.stateManager.getAffinity(scene.affinityTextChar);
+            for (const v of scene.affinityText) {
+                if (affinity >= v.min) {
+                    scene.text = v.text;
+                    if (v.character) scene.character = v.character;
+                    break;
+                }
+            }
+        }
+
+        // ─────────────────────────────────────────────────────────
         // 🎵 2단계: BGM/SFX 처리
         // ─────────────────────────────────────────────────────────
         // bgm: "파일명" → 재생, bgm: null → 정지

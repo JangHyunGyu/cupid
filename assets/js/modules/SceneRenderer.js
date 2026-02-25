@@ -103,7 +103,7 @@ class SceneRenderer {
         const result = { ...scene };
 
         // 최상위 텍스트 필드 주입 (name, text, context, personality)
-        for (const key of ['name', 'text', 'context', 'personality']) {
+        for (const key of ['name', 'text', 'context', 'personality', 'affinityText']) {
             if (i18n[key] !== undefined) result[key] = i18n[key];
         }
 
