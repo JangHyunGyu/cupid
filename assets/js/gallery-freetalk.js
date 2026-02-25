@@ -851,7 +851,8 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
      */
     _parseSegments(text) {
         const segments = [];
-        const regex = /\*([^*]+)\*/g;
+        // **지문** (이중 별표) 또는 *지문* (단일 별표) 모두 지문으로 인식
+        const regex = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
         let lastIndex = 0;
         let match;
 
@@ -859,7 +860,8 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
             if (match.index > lastIndex) {
                 segments.push({ type: 'text', content: text.substring(lastIndex, match.index) });
             }
-            segments.push({ type: 'action', content: match[1] });
+            // match[1]은 **...**에서 캡처, match[2]는 *...*에서 캡처
+            segments.push({ type: 'action', content: match[1] || match[2] });
             lastIndex = regex.lastIndex;
         }
 
@@ -876,8 +878,9 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
      */
     _formatAction(text) {
         const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        return escaped.replace(/\*([^*]+)\*/g,
-            '<span class="gft-action">$1</span>');
+        // **지문** (이중 별표) 또는 *지문* (단일 별표) 모두 지문 스타일 적용
+        return escaped.replace(/\*\*([^*]+)\*\*/g, '<span class="gft-action">$1</span>')
+            .replace(/\*([^*]+)\*/g, '<span class="gft-action">$1</span>');
     }
 
     _updateExpression(expression) {
