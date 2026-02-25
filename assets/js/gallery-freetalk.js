@@ -268,15 +268,25 @@ class GalleryFreeTalk {
             if (e.key === 'Enter' && !e.isComposing) this._handleSend();
         });
 
-        // 모바일: visualViewport로 키보드 올라와도 오버레이 높이 고정
+        // 모바일: 키보드 올라와도 캐릭터 크기 유지, 채팅 패널만 축소
         this._vvHandler = null;
         if (window.visualViewport && window.innerWidth <= 768) {
             const overlay = this.overlayEl;
+            const charEl = overlay.querySelector('.gft-character');
+            const chatEl = overlay.querySelector('.gft-chat-panel');
+            // 초기 캐릭터 높이를 px로 고정
+            const initCharH = charEl.offsetHeight;
+            charEl.style.height = initCharH + 'px';
+
             this._vvHandler = () => {
-                overlay.style.height = `${window.visualViewport.height}px`;
+                const vvH = window.visualViewport.height;
+                overlay.style.height = vvH + 'px';
+                // 채팅 패널 = 전체 - 캐릭터 고정 높이
+                chatEl.style.height = (vvH - initCharH) + 'px';
+                chatEl.style.flex = 'none';
             };
             window.visualViewport.addEventListener('resize', this._vvHandler);
-            this._vvHandler(); // 초기 높이 설정
+            this._vvHandler(); // 초기 설정
         }
     }
 
@@ -349,9 +359,9 @@ class GalleryFreeTalk {
                 this._updateExpression(parsed.expression);
             }
 
-            // AI 메시지 표시 & 기록
+            // AI 메시지 타이핑 효과로 표시 & 기록
             this._removeTyping(typingEl);
-            this._appendMessage('assistant', displayText);
+            await this._appendMessageTyping(displayText);
             this.chatHistory.push({ role: 'assistant', content: reply });
 
             // 프리토킹 횟수 증가 (갤러리 통계)
@@ -361,9 +371,8 @@ class GalleryFreeTalk {
             console.error('[GalleryFreeTalk] API 오류:', err);
             this._removeTyping(typingEl);
 
-            const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.lang] || en;
             const fallback = this._getFallbackReply();
-            this._appendMessage('assistant', fallback);
+            await this._appendMessageTyping(fallback);
             this.chatHistory.push({ role: 'assistant', content: fallback });
         }
 
@@ -442,16 +451,89 @@ class GalleryFreeTalk {
     // UI 헬퍼
     // =========================================================================
 
+    /**
+     * 메시지 추가 (즉시 표시 - 유저 메시지 & 이전 대화 복원용)
+     */
     _appendMessage(role, text) {
         const container = document.getElementById('gft-messages');
         if (!container) return;
 
         const div = document.createElement('div');
         div.className = `gft-message ${role === 'user' ? 'user' : 'assistant'}`;
-        div.textContent = text;
+
+        if (role === 'assistant' && text.includes('*')) {
+            div.innerHTML = this._formatAction(text);
+        } else {
+            div.textContent = text;
+        }
+
+        container.appendChild(div);
+        container.scrollTop = container.scrollHeight;
+    }
+
+    /**
+     * AI 응답 타이핑 효과로 표시
+     * @returns {Promise} 타이핑 완료 시 resolve
+     */
+    _appendMessageTyping(text) {
+        const container = document.getElementById('gft-messages');
+        if (!container) return Promise.resolve();
+
+        const div = document.createElement('div');
+        div.className = 'gft-message assistant';
         container.appendChild(div);
 
-        container.scrollTop = container.scrollHeight;
+        const hasAction = text.includes('*');
+        const speed = 30; // ms per character (게임과 동일)
+
+        return new Promise((resolve) => {
+            let charIndex = 0;
+            let startTime = null;
+
+            const typeFrame = (timestamp) => {
+                if (!startTime) startTime = timestamp;
+                const elapsed = timestamp - startTime;
+                const targetIndex = Math.min(Math.floor(elapsed / speed), text.length);
+
+                if (charIndex < targetIndex) {
+                    charIndex = targetIndex;
+                    const current = text.substring(0, charIndex);
+                    if (hasAction) {
+                        div.innerHTML = this._formatAction(current);
+                    } else {
+                        div.textContent = current;
+                    }
+                    container.scrollTop = container.scrollHeight;
+                }
+
+                if (charIndex < text.length) {
+                    requestAnimationFrame(typeFrame);
+                } else {
+                    // 타이핑 완료: 최종 렌더링
+                    if (hasAction) {
+                        div.innerHTML = this._formatAction(text);
+                    } else {
+                        div.textContent = text;
+                    }
+                    container.scrollTop = container.scrollHeight;
+                    resolve();
+                }
+            };
+
+            requestAnimationFrame(typeFrame);
+        });
+    }
+
+    /**
+     * *지문*을 별도 블록으로 파싱 (게임 내 DialogueSystem 스타일)
+     * @private
+     */
+    _formatAction(text) {
+        // HTML 이스케이프
+        const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        // *지문* → 별도 스타일 블록
+        return escaped.replace(/\*([^*]+)\*/g,
+            '<span class="gft-action">$1</span>');
     }
 
     _showTyping() {
