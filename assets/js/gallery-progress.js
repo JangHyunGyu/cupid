@@ -297,13 +297,22 @@ class GalleryProgress {
 
     /**
      * 저장된 플레이어 이름 가져오기
-     * TRUE LOVE 엔딩 클리어 시 GameEngine에서 저장됨
+     * 1순위: 갤러리 데이터 (TRUE LOVE 엔딩 시 저장)
+     * 2순위: 게임 세이브 데이터 (cupid_save)
      *
      * @returns {string|null} 플레이어 이름 또는 null
      */
     getPlayerName() {
         this.refresh();
-        return this.data.playerName || null;
+        if (this.data.playerName) return this.data.playerName;
+
+        // 갤러리에 없으면 게임 세이브에서 가져오기
+        try {
+            const save = JSON.parse(localStorage.getItem('cupid_save') || '{}');
+            if (save.gameState?.playerName) return save.gameState.playerName;
+        } catch (e) { /* 무시 */ }
+
+        return null;
     }
 
     // =========================================================================
