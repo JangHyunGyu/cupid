@@ -545,6 +545,7 @@ class GalleryFreeTalk {
     /**
      * 대사창에 텍스트 타이핑 효과 (게임 DialogueSystem.typeText와 동일)
      * 대사창 클릭 시 스킵 가능.
+     * 지문(*text*)은 처음부터 포맷 적용된 상태로 타이핑.
      *
      * @param {string} text - 표시할 텍스트
      * @returns {Promise} 타이핑 완료 시 resolve
@@ -557,11 +558,21 @@ class GalleryFreeTalk {
         this.skipTyping = false;
         msgEl.innerHTML = '';
 
-        const hasAction = text.includes('*');
+        // 텍스트를 세그먼트로 미리 파싱 (일반 텍스트 / 지문)
+        const segments = this._parseSegments(text);
         const speed = 30; // ms per character (게임과 동일)
 
+        // 각 세그먼트별 DOM 요소를 미리 생성 (지문은 처음부터 포맷 적용)
+        const elements = segments.map(seg => {
+            const el = document.createElement('span');
+            if (seg.type === 'action') el.className = 'gft-action';
+            msgEl.appendChild(el);
+            return el;
+        });
+
+        const totalLength = segments.reduce((sum, s) => sum + s.content.length, 0);
+
         return new Promise((resolve) => {
-            let charIndex = 0;
             let startTime = null;
 
             const typeFrame = (timestamp) => {
@@ -569,7 +580,7 @@ class GalleryFreeTalk {
 
                 // 스킵 요청 시 즉시 전체 텍스트 표시
                 if (this.skipTyping) {
-                    msgEl.innerHTML = this._formatAction(text);
+                    segments.forEach((seg, i) => { elements[i].textContent = seg.content; });
                     this.isTyping = false;
                     this.skipTyping = false;
                     resolve();
@@ -577,23 +588,26 @@ class GalleryFreeTalk {
                 }
 
                 const elapsed = timestamp - startTime;
-                const targetIndex = Math.min(Math.floor(elapsed / speed), text.length);
+                const targetTotal = Math.min(Math.floor(elapsed / speed), totalLength);
 
-                if (charIndex < targetIndex) {
-                    charIndex = targetIndex;
-                    const current = text.substring(0, charIndex);
-                    if (hasAction) {
-                        msgEl.innerHTML = this._formatAction(current);
+                // 각 세그먼트에 타이핑 진행분 반영
+                let remaining = targetTotal;
+                for (let i = 0; i < segments.length; i++) {
+                    const segLen = segments[i].content.length;
+                    if (remaining >= segLen) {
+                        elements[i].textContent = segments[i].content;
+                        remaining -= segLen;
                     } else {
-                        msgEl.textContent = current;
+                        elements[i].textContent = segments[i].content.substring(0, remaining);
+                        for (let j = i + 1; j < segments.length; j++) elements[j].textContent = '';
+                        remaining = 0;
+                        break;
                     }
                 }
 
-                if (charIndex < text.length) {
+                if (targetTotal < totalLength) {
                     requestAnimationFrame(typeFrame);
                 } else {
-                    // 타이핑 완료: 최종 렌더링
-                    msgEl.innerHTML = this._formatAction(text);
                     this.isTyping = false;
                     resolve();
                 }
@@ -604,13 +618,37 @@ class GalleryFreeTalk {
     }
 
     /**
-     * *지문*을 별도 블록으로 파싱 (게임 내 DialogueSystem.parseNarration 스타일)
+     * 텍스트를 세그먼트로 파싱: 일반 텍스트 / *지문*
+     * @private
+     * @returns {Array<{type: 'text'|'action', content: string}>}
+     */
+    _parseSegments(text) {
+        const segments = [];
+        const regex = /\*([^*]+)\*/g;
+        let lastIndex = 0;
+        let match;
+
+        while ((match = regex.exec(text)) !== null) {
+            if (match.index > lastIndex) {
+                segments.push({ type: 'text', content: text.substring(lastIndex, match.index) });
+            }
+            segments.push({ type: 'action', content: match[1] });
+            lastIndex = regex.lastIndex;
+        }
+
+        if (lastIndex < text.length) {
+            segments.push({ type: 'text', content: text.substring(lastIndex) });
+        }
+
+        return segments;
+    }
+
+    /**
+     * *지문*을 별도 블록으로 파싱 (이전 대화 복원 등 일괄 렌더링용)
      * @private
      */
     _formatAction(text) {
-        // HTML 이스케이프
         const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        // *지문* → 별도 스타일 블록
         return escaped.replace(/\*([^*]+)\*/g,
             '<span class="gft-action">$1</span>');
     }
