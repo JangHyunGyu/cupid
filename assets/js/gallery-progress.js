@@ -196,6 +196,7 @@ class GalleryProgress {
      * }
      */
     getAffinity(charId) {
+        if (this.isAdmin) return 100;
         this.refresh();
         return this.data.characters?.[charId]?.maxAffinity || 0;
     }
@@ -262,6 +263,8 @@ class GalleryProgress {
      * isExpressionUnlocked('seyoun', 10, 11, 'bikini'); // 특별 조건
      */
     isExpressionUnlocked(charId, expressionIndex, totalExpressions, expressionName = null) {
+        if (this.isAdmin) return true;
+
         // 특별 표정 체크 (bikini)
         if (expressionName === 'bikini') {
             const affinity = this.getAffinity(charId);
@@ -287,6 +290,7 @@ class GalleryProgress {
      * @returns {boolean} 해금 여부
      */
     isFreeTalkUnlocked(charId) {
+        if (this.isAdmin) return true;
         this.refresh();
         return this.data.characters?.[charId]?.trueEndingCleared || false;
     }
