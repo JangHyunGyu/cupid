@@ -323,6 +323,7 @@ class GalleryProgress {
      * }
      */
     isUnlocked(type, id) {
+        if (this.isAdmin) return true;
         this.refresh();
         return this.data[type]?.[id]?.unlocked || false;
     }
