@@ -1313,7 +1313,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_seyoun_reply": {
         "type": "free_talk",
-        "maxTurns": 10,
+        "maxTurns": 5,
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "silhouette": true,
@@ -1557,7 +1557,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_yuna_reply": {
         "type": "free_talk",
-        "maxTurns": 10,
+        "maxTurns": 5,
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/yuna_normal.png",
         "silhouette": true,
@@ -1892,7 +1892,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_dain_reply": {
         "type": "free_talk",
-        "maxTurns": 10,
+        "maxTurns": 5,
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/dain_normal.png",
         "silhouette": true,
@@ -2136,7 +2136,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_nurse_reply": {
         "type": "free_talk",
-        "maxTurns": 10,
+        "maxTurns": 5,
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/nurse_normal.png",
         "silhouette": true,
@@ -2313,7 +2313,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_message_teacher_reply": {
         "type": "free_talk",
-        "maxTurns": 10,
+        "maxTurns": 5,
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/teacher_normal.png",
         "silhouette": true,
