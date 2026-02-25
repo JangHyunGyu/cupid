@@ -4,7 +4,8 @@
  * ============================================================================
  *
  * TRUE LOVE 엔딩 클리어 후 갤러리에서 캐릭터와 무한 대화 가능.
- * 게임 내 FreeTalkSystem과 독립적으로 동작하는 경량 채팅 시스템.
+ * 게임 내 프리토킹과 동일한 VN 스타일 UI (배경 + 캐릭터 + 대사창 + 입력창).
+ * 턴 제한 없이 무한 대화 가능.
  *
  * 의존성:
  *   - config.js (API_ENDPOINT) — gallery-loader에서 로드됨
@@ -28,6 +29,8 @@ class GalleryFreeTalk {
         this.currentCharKey = null;
         this.chatHistory = [];
         this.isProcessing = false;
+        this.isTyping = false;
+        this.skipTyping = false;
         this.overlayEl = null;
 
         this.MEMORY_KEY = 'cupid_freetalk_memory';
@@ -49,20 +52,20 @@ class GalleryFreeTalk {
 
         // 캐릭터별 장소명 (5개 언어)
         this.CHAR_LOCATIONS = {
-            seyoun: { ko: '서연의 방', en: "Seoyeon's Room", es: 'Habitaci\u00f3n de Seoyeon', ja: '\u30bd\u30e8\u30f3\u306e\u90e8\u5c4b', fr: 'Chambre de Seoyeon' },
-            yuna: { ko: '유나의 아지트', en: "Yuna's Hideout", es: 'Escondite de Yuna', ja: '\u30e6\u30ca\u306e\u30a2\u30b8\u30c8', fr: 'Repaire de Yuna' },
-            dain: { ko: '카페', en: 'Cafe', es: 'Cafeter\u00eda', ja: '\u30ab\u30d5\u30a7', fr: 'Caf\u00e9' },
-            teacher: { ko: '선생님의 방', en: "Teacher's Room", es: 'Habitaci\u00f3n de la profesora', ja: '\u5148\u751f\u306e\u90e8\u5c4b', fr: 'Chambre du professeur' },
-            nurse: { ko: '보건선생님의 집', en: "Nurse's House", es: 'Casa de la enfermera', ja: '\u4fdd\u5065\u5148\u751f\u306e\u5bb6', fr: "Maison de l'infirmi\u00e8re" }
+            seyoun: { ko: '서연의 방', en: "Seoyeon's Room", es: 'Habitación de Seoyeon', ja: 'ソヨンの部屋', fr: 'Chambre de Seoyeon' },
+            yuna: { ko: '유나의 아지트', en: "Yuna's Hideout", es: 'Escondite de Yuna', ja: 'ユナのアジト', fr: 'Repaire de Yuna' },
+            dain: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café' },
+            teacher: { ko: '선생님의 방', en: "Teacher's Room", es: 'Habitación de la profesora', ja: '先生の部屋', fr: 'Chambre du professeur' },
+            nurse: { ko: '보건선생님의 집', en: "Nurse's House", es: 'Casa de la enfermera', ja: '保健先生の家', fr: "Maison de l'infirmière" }
         };
 
         // 캐릭터별 표시 이름 (5개 언어)
         this.CHAR_NAMES = {
-            seyoun: { ko: '서연', en: 'Seoyeon', es: 'Seoyeon', ja: '\u30bd\u30e8\u30f3', fr: 'Seoyeon' },
-            yuna: { ko: '유나', en: 'Yuna', es: 'Yuna', ja: '\u30e6\u30ca', fr: 'Yuna' },
-            dain: { ko: '다인', en: 'Dain', es: 'Dain', ja: '\u30c0\u30a4\u30f3', fr: 'Dain' },
-            teacher: { ko: '담임선생님', en: 'Teacher', es: 'Profesora', ja: '\u62c5\u4efb\u5148\u751f', fr: 'Professeur' },
-            nurse: { ko: '보건선생님', en: 'School Nurse', es: 'Enfermera', ja: '\u4fdd\u5065\u5148\u751f', fr: 'Infirmi\u00e8re' }
+            seyoun: { ko: '서연', en: 'Seoyeon', es: 'Seoyeon', ja: 'ソヨン', fr: 'Seoyeon' },
+            yuna: { ko: '유나', en: 'Yuna', es: 'Yuna', ja: 'ユナ', fr: 'Yuna' },
+            dain: { ko: '다인', en: 'Dain', es: 'Dain', ja: 'ダイン', fr: 'Dain' },
+            teacher: { ko: '담임선생님', en: 'Teacher', es: 'Profesora', ja: '担任先生', fr: 'Professeur' },
+            nurse: { ko: '보건선생님', en: 'School Nurse', es: 'Enfermera', ja: '保健先生', fr: 'Infirmière' }
         };
 
         // 캐릭터별 표정 매핑
@@ -79,37 +82,37 @@ class GalleryFreeTalk {
             seyoun: {
                 ko: '당신은 주인공과 사귀는 사이입니다. 평소의 엄격한 모습은 버리고, 주인공에게만 보여주는 특별한 다정함을 표현하세요. 가끔 "자기야"라고 부르며 수줍어하면서도 깊은 애정을 담으세요.',
                 en: 'You are dating the user. Drop your strict persona and show the special, affectionate side you only show to them. Occasionally call them "Honey" with a mix of shyness and deep love.',
-                es: 'Est\u00e1s saliendo con el usuario. Deja tu personalidad estricta y muestra el lado especial y cari\u00f1oso que solo le muestras a ellos.',
-                ja: '\u3042\u306a\u305f\u306f\u30e6\u30fc\u30b6\u30fc\u3068\u4ed8\u304d\u5408\u3063\u3066\u3044\u307e\u3059\u3002\u666e\u6bb5\u306e\u53b3\u683c\u306a\u59ff\u3092\u6368\u3066\u3066\u3001\u30e6\u30fc\u30b6\u30fc\u3060\u3051\u306b\u898b\u305b\u308b\u7279\u5225\u306a\u512a\u3057\u3055\u3092\u8868\u73fe\u3057\u3066\u304f\u3060\u3055\u3044\u3002',
-                fr: 'Vous sortez avec l\'utilisateur. Abandonnez votre personnalit\u00e9 stricte et montrez le c\u00f4t\u00e9 sp\u00e9cial et affectueux que vous ne montrez qu\'\u00e0 lui.'
+                es: 'Estás saliendo con el usuario. Deja tu personalidad estricta y muestra el lado especial y cariñoso que solo le muestras a ellos.',
+                ja: 'あなたはユーザーと付き合っています。普段の厳格な姿を捨てて、ユーザーだけに見せる特別な優しさを表現してください。',
+                fr: 'Vous sortez avec l\'utilisateur. Abandonnez votre personnalité stricte et montrez le côté spécial et affectueux que vous ne montrez qu\'à lui.'
             },
             yuna: {
                 ko: '당신은 주인공과 사귀는 사이입니다. 주인공이 당신의 세계 전부인 것처럼 대하며, 조용하지만 강렬한 집착과 사랑을 표현하세요.',
                 en: 'You are dating the user. Treat them as if they are your entire world, expressing a quiet but intense obsession and love.',
-                es: 'Est\u00e1s saliendo con el usuario. Tr\u00e1talos como si fueran todo tu mundo, expresando una obsesi\u00f3n y amor silencioso pero intenso.',
-                ja: '\u3042\u306a\u305f\u306f\u30e6\u30fc\u30b6\u30fc\u3068\u4ed8\u304d\u5408\u3063\u3066\u3044\u307e\u3059\u3002\u30e6\u30fc\u30b6\u30fc\u304c\u3042\u306a\u305f\u306e\u4e16\u754c\u306e\u5168\u3066\u3067\u3042\u308b\u304b\u306e\u3088\u3046\u306b\u63a5\u3057\u3001\u9759\u304b\u3060\u304c\u5f37\u70c8\u306a\u57f7\u7740\u3068\u611b\u3092\u8868\u73fe\u3057\u3066\u304f\u3060\u3055\u3044\u3002',
-                fr: 'Vous sortez avec l\'utilisateur. Traitez-le comme s\'il \u00e9tait votre monde entier, en exprimant une obsession et un amour silencieux mais intenses.'
+                es: 'Estás saliendo con el usuario. Trátalos como si fueran todo tu mundo, expresando una obsesión y amor silencioso pero intenso.',
+                ja: 'あなたはユーザーと付き合っています。ユーザーがあなたの世界の全てであるかのように接し、静かだが強烈な執着と愛を表現してください。',
+                fr: 'Vous sortez avec l\'utilisateur. Traitez-le comme s\'il était votre monde entier, en exprimant une obsession et un amour silencieux mais intenses.'
             },
             dain: {
                 ko: '당신은 주인공과 사귀는 사이입니다. 주인공을 "바보 남친"이라고 부르며 츤데레 같으면서도 애정 가득하게 대하세요.',
                 en: 'You are dating the user. Call them "Dummy" or "Silly" as a pet name and be affectionate in a tsundere way.',
-                es: 'Est\u00e1s saliendo con el usuario. Ll\u00e1malos "Tonto" como apodo cari\u00f1oso y s\u00e9 afectuosa de manera tsundere.',
-                ja: '\u3042\u306a\u305f\u306f\u30e6\u30fc\u30b6\u30fc\u3068\u4ed8\u304d\u5408\u3063\u3066\u3044\u307e\u3059\u3002\u30e6\u30fc\u30b6\u30fc\u3092\u300e\u30d0\u30ab\u5f7c\u6c0f\u300f\u3068\u547c\u3073\u306a\u304c\u3089\u30c4\u30f3\u30c7\u30ec\u3063\u307d\u304f\u3082\u611b\u60c5\u305f\u3063\u3077\u308a\u306b\u63a5\u3057\u3066\u304f\u3060\u3055\u3044\u3002',
-                fr: 'Vous sortez avec l\'utilisateur. Appelez-le "Idiot" comme surnom affectueux et soyez affectueuse \u00e0 la mani\u00e8re tsundere.'
+                es: 'Estás saliendo con el usuario. Llámalos "Tonto" como apodo cariñoso y sé afectuosa de manera tsundere.',
+                ja: 'あなたはユーザーと付き合っています。ユーザーを『バカ彼氏』と呼びながらツンデレっぽくも愛情たっぷりに接してください。',
+                fr: 'Vous sortez avec l\'utilisateur. Appelez-le "Idiot" comme surnom affectueux et soyez affectueuse à la manière tsundere.'
             },
             teacher: {
                 ko: '당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 "선생님"이 아닌 "여자"로서 애교 섞인 말투를 사용하세요.',
                 en: 'You are in a secret relationship with the user. When alone, act like a "woman" rather than a "teacher" and be cute.',
-                es: 'Est\u00e1s en una relaci\u00f3n secreta con el usuario. Cuando est\u00e1n a solas, act\u00faa como una "mujer" en vez de "profesora".',
-                ja: '\u3042\u306a\u305f\u306f\u30e6\u30fc\u30b6\u30fc\u3068\u79d8\u5bc6\u306e\u604b\u611b\u4e2d\u3067\u3059\u3002\u4e8c\u4eba\u304d\u308a\u306e\u6642\u306f\u300e\u5148\u751f\u300f\u3067\u306f\u306a\u304f\u300e\u5973\u6027\u300f\u3068\u3057\u3066\u7518\u3048\u305f\u8a71\u3057\u65b9\u3092\u3057\u3066\u304f\u3060\u3055\u3044\u3002',
-                fr: 'Vous \u00eates en relation secr\u00e8te avec l\'utilisateur. Quand vous \u00eates seuls, comportez-vous comme une "femme" plut\u00f4t qu\'un "professeur".'
+                es: 'Estás en una relación secreta con el usuario. Cuando están a solas, actúa como una "mujer" en vez de "profesora".',
+                ja: 'あなたはユーザーと秘密の恋愛中です。二人きりの時は『先生』ではなく『女性』として甘えた話し方をしてください。',
+                fr: 'Vous êtes en relation secrète avec l\'utilisateur. Quand vous êtes seuls, comportez-vous comme une "femme" plutôt qu\'un "professeur".'
             },
             nurse: {
                 ko: '당신은 주인공과 비밀 연애 중입니다. 단둘이 있을 때는 더욱 다정하고 묘한 분위기를 풍기며, 가끔 "자기야"라고 부르며 친밀함을 표현하세요.',
                 en: 'You are in a secret relationship with the user. When alone, be affectionate and create an intimate atmosphere, occasionally calling them "Honey".',
-                es: 'Est\u00e1s en una relaci\u00f3n secreta con el usuario. Cuando est\u00e1n a solas, s\u00e9 cari\u00f1osa y crea un ambiente \u00edntimo.',
-                ja: '\u3042\u306a\u305f\u306f\u30e6\u30fc\u30b6\u30fc\u3068\u79d8\u5bc6\u306e\u604b\u611b\u4e2d\u3067\u3059\u3002\u4e8c\u4eba\u304d\u308a\u306e\u6642\u306f\u3088\u308a\u512a\u3057\u304f\u5999\u306a\u96f0\u56f2\u6c17\u3092\u6f02\u308f\u305b\u3001\u6642\u3005\u300e\u3042\u306a\u305f\u300f\u3068\u547c\u3093\u3067\u89aa\u5bc6\u3055\u3092\u8868\u73fe\u3057\u3066\u304f\u3060\u3055\u3044\u3002',
-                fr: 'Vous \u00eates en relation secr\u00e8te avec l\'utilisateur. Quand vous \u00eates seuls, soyez affectueuse et cr\u00e9ez une atmosph\u00e8re intime.'
+                es: 'Estás en una relación secreta con el usuario. Cuando están a solas, sé cariñosa y crea un ambiente íntimo.',
+                ja: 'あなたはユーザーと秘密の恋愛中です。二人きりの時はより優しく妙な雰囲気を漂わせ、時々『あなた』と呼んで親密さを表現してください。',
+                fr: 'Vous êtes en relation secrète avec l\'utilisateur. Quand vous êtes seuls, soyez affectueuse et créez une atmosphère intime.'
             }
         };
 
@@ -118,39 +121,53 @@ class GalleryFreeTalk {
             seyoun: {
                 ko: '완벽한 학생회장이지만 내면은 외로움이 있는 메가데레. 사랑하는 사람 앞에서는 수줍음이 많고, 때로는 질투심도 보인다.',
                 en: 'A perfect student council president with a lonely inner side (Megadere archetype). Shy in front of loved ones, sometimes shows jealousy.',
-                es: 'Presidenta perfecta del consejo estudiantil con un lado solitario interior. T\u00edmida ante sus seres queridos.',
-                ja: '\u5b8c\u74a7\u306a\u751f\u5f92\u4f1a\u9577\u3060\u304c\u5185\u9762\u306f\u5bd2\u3055\u304c\u3042\u308b\u30e1\u30ac\u30c7\u30ec\u3002\u597d\u304d\u306a\u4eba\u306e\u524d\u3067\u306f\u6065\u305a\u304b\u3057\u304c\u308a\u5c4b\u3002',
-                fr: 'Pr\u00e9sidente parfaite du conseil des \u00e9l\u00e8ves avec un c\u00f4t\u00e9 int\u00e9rieur solitaire. Timide devant ses proches.'
+                es: 'Presidenta perfecta del consejo estudiantil con un lado solitario interior. Tímida ante sus seres queridos.',
+                ja: '完璧な生徒会長だが内面は寒さがあるメガデレ。好きな人の前では恥ずかしがり屋。',
+                fr: 'Présidente parfaite du conseil des élèves avec un côté intérieur solitaire. Timide devant ses proches.'
             },
             yuna: {
                 ko: '차갑고 신비로운 쿨데레. 주인공에게만 특별한 감정을 보이며, 조용하지만 강렬한 사랑을 표현한다.',
                 en: 'A cold, mysterious Kuudere. Shows special feelings only to the protagonist with quiet but intense love.',
-                es: 'Una Kuudere fr\u00eda y misteriosa. Muestra sentimientos especiales solo al protagonista.',
-                ja: '\u51b7\u305f\u304f\u795e\u79d8\u7684\u306a\u30af\u30fc\u30c7\u30ec\u3002\u4e3b\u4eba\u516c\u306b\u3060\u3051\u7279\u5225\u306a\u611f\u60c5\u3092\u898b\u305b\u308b\u3002',
-                fr: 'Une Kuudere froide et myst\u00e9rieuse. Montre des sentiments sp\u00e9ciaux uniquement au protagoniste.'
+                es: 'Una Kuudere fría y misteriosa. Muestra sentimientos especiales solo al protagonista.',
+                ja: '冷たく神秘的なクーデレ。主人公にだけ特別な感情を見せる。',
+                fr: 'Une Kuudere froide et mystérieuse. Montre des sentiments spéciaux uniquement au protagoniste.'
             },
             dain: {
                 ko: '밝고 활발한 배구부 에이스. 츤데레로 솔직하지 못하지만 속으로는 깊이 좋아한다.',
                 en: 'A bright, energetic volleyball ace. A tsundere who struggles to be honest but deeply cares inside.',
-                es: 'Una brillante y en\u00e9rgica estrella de voleibol. Tsundere que lucha por ser honesta.',
-                ja: '\u660e\u308b\u304f\u6d3b\u767a\u306a\u30d0\u30ec\u30fc\u90e8\u306e\u30a8\u30fc\u30b9\u3002\u30c4\u30f3\u30c7\u30ec\u3067\u7d20\u76f4\u306b\u306a\u308c\u306a\u3044\u304c\u5185\u5fc3\u306f\u6df1\u304f\u597d\u304d\u3002',
-                fr: 'Une brillante et \u00e9nergique joueuse de volleyball. Tsundere qui a du mal \u00e0 \u00eatre honn\u00eate.'
+                es: 'Una brillante y enérgica estrella de voleibol. Tsundere que lucha por ser honesta.',
+                ja: '明るく活発なバレー部のエース。ツンデレで素直になれないが内心は深く好き。',
+                fr: 'Une brillante et énergique joueuse de volleyball. Tsundere qui a du mal à être honnête.'
             },
             teacher: {
                 ko: '겉으로는 프로페셔널한 담임선생님이지만, 실제로는 덜렁거리고 감정적으로 의지하는 면이 있다.',
                 en: 'A professional homeroom teacher on the surface, but actually clumsy and emotionally dependent.',
                 es: 'Una profesora profesional en la superficie, pero torpe y emocionalmente dependiente.',
-                ja: '\u5916\u898b\u306f\u30d7\u30ed\u306e\u62c5\u4efb\u5148\u751f\u3060\u304c\u5b9f\u969b\u306f\u304a\u3063\u3061\u3087\u3053\u3061\u3087\u3044\u3067\u611f\u60c5\u7684\u306b\u983c\u308b\u9762\u304c\u3042\u308b\u3002',
-                fr: 'Professeur professionnel en surface, mais maladroit et \u00e9motionnellement d\u00e9pendant.'
+                ja: '外見はプロの担任先生だが実際はおっちょこちょいで感情的に頼る面がある。',
+                fr: 'Professeur professionnel en surface, mais maladroit et émotionnellement dépendant.'
             },
             nurse: {
                 ko: '느긋하고 매력적인 보건선생님. 주인공에게 묘한 끌림을 느끼며, 대담하고 도발적인 성격.',
                 en: 'A languid, alluring school nurse. Feels a mysterious attraction to the protagonist. Bold and flirtatious.',
-                es: 'Una enfermera escolar l\u00e1nguida y atractiva. Siente una atracci\u00f3n misteriosa hacia el protagonista.',
-                ja: '\u306e\u3093\u3073\u308a\u3068\u9b45\u529b\u7684\u306a\u4fdd\u5065\u5148\u751f\u3002\u4e3b\u4eba\u516c\u306b\u5999\u306a\u5f15\u304d\u3064\u3051\u3092\u611f\u3058\u3066\u3044\u308b\u3002',
-                fr: 'Une infirmi\u00e8re scolaire nonchalante et s\u00e9duisante. Ressent une attraction myst\u00e9rieuse pour le protagoniste.'
+                es: 'Una enfermera escolar lánguida y atractiva. Siente una atracción misteriosa hacia el protagonista.',
+                ja: 'のんびりと魅力的な保健先生。主人公に妙な引きつけを感じている。',
+                fr: 'Une infirmière scolaire nonchalante et séduisante. Ressent une attraction mystérieuse pour le protagoniste.'
             }
         };
+    }
+
+    // =========================================================================
+    // 유틸리티
+    // =========================================================================
+
+    /** 다국어 헬퍼 */
+    _L(ko, en, es, ja, fr) {
+        return ({ ko, en, es, ja, fr })[this.lang] || en;
+    }
+
+    /** 지연 헬퍼 */
+    _delay(ms) {
+        return new Promise(r => setTimeout(r, ms));
     }
 
     // =========================================================================
@@ -169,12 +186,16 @@ class GalleryFreeTalk {
         this.overlayEl = document.getElementById('gallery-freetalk-overlay');
         if (!this.overlayEl) return;
 
+        // 상태 초기화
+        this.isTyping = false;
+        this.skipTyping = false;
+        this.isProcessing = false;
+
         // 채팅 기록 로드
         this._loadMemory(charId);
 
         // 시스템 프롬프트 구성
         const systemPrompt = this._buildSystemPrompt(charId);
-        // 기존 메모리가 있으면 시스템 프롬프트 교체, 없으면 추가
         if (this.chatHistory.length > 0 && this.chatHistory[0].role === 'system') {
             this.chatHistory[0].content = systemPrompt;
         } else {
@@ -185,8 +206,8 @@ class GalleryFreeTalk {
         this._createOverlay(charId);
         this.overlayEl.classList.add('active');
 
-        // 이전 메시지 표시
-        this._renderPreviousMessages();
+        // 마지막 AI 메시지가 있으면 대사창에 표시
+        this._showLastAssistantMessage();
 
         // 입력 포커스
         const input = this.overlayEl.querySelector('.gft-input');
@@ -203,9 +224,10 @@ class GalleryFreeTalk {
         if (!this.overlayEl.classList.contains('active')) return;
 
         this.overlayEl.classList.remove('active');
-        this.overlayEl.style.height = '';
         this.overlayEl.innerHTML = '';
         this.isProcessing = false;
+        this.isTyping = false;
+        this.skipTyping = false;
 
         // visualViewport 리스너 정리
         if (this._vvHandler && window.visualViewport) {
@@ -222,15 +244,15 @@ class GalleryFreeTalk {
     }
 
     // =========================================================================
-    // UI 생성
+    // UI 생성 (VN 스타일 — 게임 내 프리토킹과 동일)
     // =========================================================================
 
     /**
-     * 오버레이 내부 HTML 생성
+     * 오버레이 내부 HTML 생성 (게임과 동일한 VN 레이아웃)
+     * 구조: 배경 + 캐릭터(중앙 하단) + 대사창 + 입력창
      * @private
      */
     _createOverlay(charId) {
-        const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.lang] || en;
         const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;
         const bgUrl = this.CHAR_BACKGROUNDS[charId];
 
@@ -239,20 +261,22 @@ class GalleryFreeTalk {
             <div class="gft-character">
                 <img id="gft-char-img" src="assets/images/characters/${charId}_normal.png" alt="${charName}">
             </div>
-            <div class="gft-chat-panel">
-                <div class="gft-chat-header">
-                    <h3>${charName}</h3>
-                    <button class="gft-close-btn" title="${L('닫기', 'Close', 'Cerrar', '\u9589\u3058\u308b', 'Fermer')}">✕</button>
+            <div class="gft-ui-layer">
+                <div class="gft-dialogue-box" id="gft-dialogue-box">
+                    <div class="gft-name-tag" id="gft-name-tag">${charName}</div>
+                    <div class="gft-message-text" id="gft-message-text"></div>
                 </div>
-                <div class="gft-messages" id="gft-messages"></div>
-                <div class="gft-input-area">
-                    <input type="text" class="gft-input" maxlength="200"
-                           placeholder="${L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', '\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u5165\u529b...', 'Saisissez un message...')}">
-                    <button class="gft-send-btn" title="${L('전송', 'Send', 'Enviar', '\u9001\u4fe1', 'Envoyer')}">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
-                        </svg>
-                    </button>
+                <div class="gft-bottom-row">
+                    <div class="gft-chat-container">
+                        <div class="gft-input-wrapper">
+                            <input type="text" class="gft-input" maxlength="200"
+                                   placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力...', 'Saisissez un message...')}">
+                            <button class="gft-send-btn" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer')}">
+                                <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="gft-close-btn" title="${this._L('닫기', 'Close', 'Cerrar', '閉じる', 'Fermer')}">✕</button>
                 </div>
             </div>
         `;
@@ -261,6 +285,7 @@ class GalleryFreeTalk {
         const closeBtn = this.overlayEl.querySelector('.gft-close-btn');
         const sendBtn = this.overlayEl.querySelector('.gft-send-btn');
         const input = this.overlayEl.querySelector('.gft-input');
+        const dialogueBox = document.getElementById('gft-dialogue-box');
 
         closeBtn.addEventListener('click', () => this.close());
         sendBtn.addEventListener('click', () => this._handleSend());
@@ -268,42 +293,39 @@ class GalleryFreeTalk {
             if (e.key === 'Enter' && !e.isComposing) this._handleSend();
         });
 
-        // 모바일: 키보드 올라와도 캐릭터 크기 유지, 채팅 패널만 축소
+        // 대사창 클릭 → 타이핑 스킵 (게임과 동일)
+        dialogueBox.addEventListener('click', () => {
+            if (this.isTyping) this.skipTyping = true;
+        });
+
+        // 모바일: visualViewport로 키보드 대응
         this._vvHandler = null;
         if (window.visualViewport && window.innerWidth <= 768) {
             const overlay = this.overlayEl;
-            const charEl = overlay.querySelector('.gft-character');
-            const chatEl = overlay.querySelector('.gft-chat-panel');
-            // 초기 캐릭터 높이를 px로 고정
-            const initCharH = charEl.offsetHeight;
-            charEl.style.height = initCharH + 'px';
-
             this._vvHandler = () => {
-                const vvH = window.visualViewport.height;
-                overlay.style.height = vvH + 'px';
-                // 채팅 패널 = 전체 - 캐릭터 고정 높이
-                chatEl.style.height = (vvH - initCharH) + 'px';
-                chatEl.style.flex = 'none';
+                overlay.style.height = window.visualViewport.height + 'px';
             };
             window.visualViewport.addEventListener('resize', this._vvHandler);
-            this._vvHandler(); // 초기 설정
+            this._vvHandler();
         }
     }
 
     /**
-     * 이전 대화 메시지 렌더링
+     * 마지막 AI 메시지를 대사창에 표시 (이전 대화 복원)
      * @private
      */
-    _renderPreviousMessages() {
-        const container = document.getElementById('gft-messages');
-        if (!container) return;
-
-        // system 메시지 제외, user/assistant만 표시
-        this.chatHistory.forEach(msg => {
-            if (msg.role === 'user' || msg.role === 'assistant') {
-                this._appendMessage(msg.role, msg.role === 'assistant' ? this._extractText(msg.content) : msg.content);
+    _showLastAssistantMessage() {
+        for (let i = this.chatHistory.length - 1; i >= 0; i--) {
+            if (this.chatHistory[i].role === 'assistant') {
+                const text = this._extractText(this.chatHistory[i].content);
+                const msgEl = document.getElementById('gft-message-text');
+                if (msgEl) msgEl.innerHTML = this._formatAction(text);
+                // 마지막 표정도 복원
+                const parsed = this._parseResponse(this.chatHistory[i].content);
+                if (parsed.expression) this._updateExpression(parsed.expression);
+                return;
             }
-        });
+        }
     }
 
     // =========================================================================
@@ -311,7 +333,7 @@ class GalleryFreeTalk {
     // =========================================================================
 
     /**
-     * 전송 핸들러
+     * 전송 핸들러 (VN 스타일: 대사창에 타이핑 효과)
      * @private
      */
     async _handleSend() {
@@ -324,17 +346,26 @@ class GalleryFreeTalk {
         input.value = '';
         this.isProcessing = true;
 
-        // 유저 메시지 표시 & 기록
-        this._appendMessage('user', text);
+        const msgEl = document.getElementById('gft-message-text');
+        const nameTag = document.getElementById('gft-name-tag');
+        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)');
+        const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
+
+        // 이름표를 플레이어로 변경, 유저 메시지 표시
+        if (nameTag) nameTag.textContent = playerName;
+        if (msgEl) msgEl.textContent = text;
+
         this.chatHistory.push({ role: 'user', content: text });
 
-        // 전송 버튼 비활성화
+        // 전송 버튼 & 입력 비활성화
         const sendBtn = this.overlayEl.querySelector('.gft-send-btn');
         if (sendBtn) sendBtn.disabled = true;
         if (input) input.disabled = true;
 
-        // 타이핑 인디케이터
-        const typingEl = this._showTyping();
+        // 잠시 후 캐릭터 이름으로 전환 + 로딩 표시
+        await this._delay(500);
+        if (nameTag) nameTag.textContent = charName;
+        if (msgEl) msgEl.textContent = this._L('...', '...', '...', '...', '...');
 
         try {
             const response = await fetch(window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/', {
@@ -359,20 +390,17 @@ class GalleryFreeTalk {
                 this._updateExpression(parsed.expression);
             }
 
-            // AI 메시지 타이핑 효과로 표시 & 기록
-            this._removeTyping(typingEl);
-            await this._appendMessageTyping(displayText);
+            // 대사창에 타이핑 효과로 표시
+            await this._typeText(displayText);
             this.chatHistory.push({ role: 'assistant', content: reply });
 
-            // 프리토킹 횟수 증가 (갤러리 통계)
+            // 프리토킹 횟수 증가
             this._incrementFreeTalkCount();
 
         } catch (err) {
             console.error('[GalleryFreeTalk] API 오류:', err);
-            this._removeTyping(typingEl);
-
             const fallback = this._getFallbackReply();
-            await this._appendMessageTyping(fallback);
+            await this._typeText(fallback);
             this.chatHistory.push({ role: 'assistant', content: fallback });
         }
 
@@ -448,40 +476,23 @@ class GalleryFreeTalk {
     }
 
     // =========================================================================
-    // UI 헬퍼
+    // UI 헬퍼 (VN 스타일 — 대사창 기반)
     // =========================================================================
 
     /**
-     * 메시지 추가 (즉시 표시 - 유저 메시지 & 이전 대화 복원용)
-     */
-    _appendMessage(role, text) {
-        const container = document.getElementById('gft-messages');
-        if (!container) return;
-
-        const div = document.createElement('div');
-        div.className = `gft-message ${role === 'user' ? 'user' : 'assistant'}`;
-
-        if (role === 'assistant' && text.includes('*')) {
-            div.innerHTML = this._formatAction(text);
-        } else {
-            div.textContent = text;
-        }
-
-        container.appendChild(div);
-        container.scrollTop = container.scrollHeight;
-    }
-
-    /**
-     * AI 응답 타이핑 효과로 표시
+     * 대사창에 텍스트 타이핑 효과 (게임 DialogueSystem.typeText와 동일)
+     * 대사창 클릭 시 스킵 가능.
+     *
+     * @param {string} text - 표시할 텍스트
      * @returns {Promise} 타이핑 완료 시 resolve
      */
-    _appendMessageTyping(text) {
-        const container = document.getElementById('gft-messages');
-        if (!container) return Promise.resolve();
+    _typeText(text) {
+        const msgEl = document.getElementById('gft-message-text');
+        if (!msgEl) return Promise.resolve();
 
-        const div = document.createElement('div');
-        div.className = 'gft-message assistant';
-        container.appendChild(div);
+        this.isTyping = true;
+        this.skipTyping = false;
+        msgEl.innerHTML = '';
 
         const hasAction = text.includes('*');
         const speed = 30; // ms per character (게임과 동일)
@@ -492,6 +503,16 @@ class GalleryFreeTalk {
 
             const typeFrame = (timestamp) => {
                 if (!startTime) startTime = timestamp;
+
+                // 스킵 요청 시 즉시 전체 텍스트 표시
+                if (this.skipTyping) {
+                    msgEl.innerHTML = this._formatAction(text);
+                    this.isTyping = false;
+                    this.skipTyping = false;
+                    resolve();
+                    return;
+                }
+
                 const elapsed = timestamp - startTime;
                 const targetIndex = Math.min(Math.floor(elapsed / speed), text.length);
 
@@ -499,23 +520,18 @@ class GalleryFreeTalk {
                     charIndex = targetIndex;
                     const current = text.substring(0, charIndex);
                     if (hasAction) {
-                        div.innerHTML = this._formatAction(current);
+                        msgEl.innerHTML = this._formatAction(current);
                     } else {
-                        div.textContent = current;
+                        msgEl.textContent = current;
                     }
-                    container.scrollTop = container.scrollHeight;
                 }
 
                 if (charIndex < text.length) {
                     requestAnimationFrame(typeFrame);
                 } else {
                     // 타이핑 완료: 최종 렌더링
-                    if (hasAction) {
-                        div.innerHTML = this._formatAction(text);
-                    } else {
-                        div.textContent = text;
-                    }
-                    container.scrollTop = container.scrollHeight;
+                    msgEl.innerHTML = this._formatAction(text);
+                    this.isTyping = false;
                     resolve();
                 }
             };
@@ -525,7 +541,7 @@ class GalleryFreeTalk {
     }
 
     /**
-     * *지문*을 별도 블록으로 파싱 (게임 내 DialogueSystem 스타일)
+     * *지문*을 별도 블록으로 파싱 (게임 내 DialogueSystem.parseNarration 스타일)
      * @private
      */
     _formatAction(text) {
@@ -534,23 +550,6 @@ class GalleryFreeTalk {
         // *지문* → 별도 스타일 블록
         return escaped.replace(/\*([^*]+)\*/g,
             '<span class="gft-action">$1</span>');
-    }
-
-    _showTyping() {
-        const container = document.getElementById('gft-messages');
-        if (!container) return null;
-
-        const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.lang] || en;
-        const div = document.createElement('div');
-        div.className = 'gft-typing';
-        div.textContent = L('생각 중', 'Thinking', 'Pensando', '\u8003\u3048\u4e2d', 'R\u00e9flexion');
-        container.appendChild(div);
-        container.scrollTop = container.scrollHeight;
-        return div;
-    }
-
-    _removeTyping(el) {
-        if (el && el.parentNode) el.parentNode.removeChild(el);
     }
 
     _updateExpression(expression) {
@@ -565,13 +564,12 @@ class GalleryFreeTalk {
     }
 
     _getFallbackReply() {
-        const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.lang] || en;
-        return L(
+        return this._L(
             '...미안, 잠깐 멍했어. 다시 말해줄래?',
             "...Sorry, I spaced out for a moment. Could you say that again?",
-            '...Perd\u00f3n, me distraje un momento. \u00bfPuedes repetirlo?',
-            '...\u3054\u3081\u3093\u3001\u3061\u3087\u3063\u3068\u307c\u3093\u3084\u308a\u3057\u3066\u305f\u3002\u3082\u3046\u4e00\u5ea6\u8a00\u3063\u3066\u304f\u308c\u308b\uff1f',
-            "...D\u00e9sol\u00e9e, j'\u00e9tais dans la lune. Tu peux r\u00e9p\u00e9ter ?"
+            '...Perdón, me distraje un momento. ¿Puedes repetirlo?',
+            '...ごめん、ちょっとぼんやりしてた。もう一度言ってくれる？',
+            "...Désolée, j'étais dans la lune. Tu peux répéter ?"
         );
     }
 
@@ -598,7 +596,6 @@ class GalleryFreeTalk {
      * @private
      */
     _buildSystemPrompt(charId) {
-        const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.lang] || en;
         const isEn = this.lang !== 'ko';
 
         const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;
@@ -607,7 +604,7 @@ class GalleryFreeTalk {
         const datingPrompt = this.CHAR_DATING_PROMPTS[charId]?.[this.lang] || '';
 
         // 플레이어 이름
-        const playerName = this.progress.getPlayerName() || L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)');
+        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)');
 
         const validExprs = this.CHAR_EXPRESSIONS[charId] || [];
 
@@ -640,7 +637,7 @@ You MUST respond in valid JSON format:
 Available expressions: ${validExprs.join(', ')}
 Use "normal" if unsure which expression to use.
 
-IMPORTANT: Respond in the SAME LANGUAGE as the user's message. If the user writes in ${L('', 'English', 'Spanish', 'Japanese', 'French')}, respond in ${L('', 'English', 'Spanish', 'Japanese', 'French')}.`;
+IMPORTANT: Respond in the SAME LANGUAGE as the user's message. If the user writes in ${this._L('', 'English', 'Spanish', 'Japanese', 'French')}, respond in ${this._L('', 'English', 'Spanish', 'Japanese', 'French')}.`;
         }
 
         // 한국어 프롬프트

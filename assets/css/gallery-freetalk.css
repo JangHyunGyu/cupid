@@ -270,7 +270,7 @@
 .gft-bottom-row {
     display: flex;
     gap: 10px;
-    align-items: stretch;
+    align-items: center;
 }
 
 .gft-bottom-row .gft-chat-container {
