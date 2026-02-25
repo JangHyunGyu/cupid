@@ -323,15 +323,16 @@ class GalleryFreeTalk {
         });
         removeImgBtn.addEventListener('click', () => this._removeStagedImage());
 
-        // 모바일: visualViewport로 키보드 대응
+        // 모바일: visualViewport로 키보드 대응 (게임과 동일 방식)
+        // 오버레이 크기는 변경하지 않고, UI 레이어만 키보드 위로 이동
         this._vvHandler = null;
         if (window.visualViewport && window.innerWidth <= 768) {
-            const overlay = this.overlayEl;
+            const uiLayer = this.overlayEl.querySelector('.gft-ui-layer');
             this._vvHandler = () => {
-                overlay.style.height = window.visualViewport.height + 'px';
+                const keyboardHeight = window.innerHeight - window.visualViewport.height;
+                uiLayer.style.bottom = keyboardHeight + 'px';
             };
             window.visualViewport.addEventListener('resize', this._vvHandler);
-            this._vvHandler();
         }
     }
 
@@ -382,7 +383,6 @@ class GalleryFreeTalk {
         const msgEl = document.getElementById('message');
         const nameTag = document.getElementById('name-tag');
         const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)');
-        const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
 
         // 이름표를 플레이어로 변경, 유저 메시지 표시
         if (nameTag) nameTag.textContent = playerName;
@@ -402,15 +402,20 @@ class GalleryFreeTalk {
 
         this.chatHistory.push({ role: 'user', content: finalContent });
 
-        // 전송 버튼 & 입력 비활성화
+        // 전송 버튼 & 입력 비활성화 + 로딩 상태 (게임과 동일)
         const sendBtn = document.getElementById('chat-send');
-        if (sendBtn) sendBtn.disabled = true;
+        const originalBtnContent = sendBtn ? sendBtn.innerHTML : '';
+        if (sendBtn) {
+            sendBtn.disabled = true;
+            sendBtn.innerHTML = '<span class="loading-dots">...</span>';
+        }
         if (input) input.disabled = true;
 
-        // 잠시 후 캐릭터 이름으로 전환 + 로딩 표시
-        await this._delay(500);
-        if (nameTag) nameTag.textContent = charName;
-        if (msgEl) msgEl.textContent = this._L('...', '...', '...', '...', '...');
+        // 생각중 상태 (게임과 동일: thinking 클래스)
+        const charImg = document.getElementById('gft-char-img');
+        const dialogueBox = document.getElementById('dialogue-box');
+        if (charImg) charImg.classList.add('thinking');
+        if (dialogueBox) dialogueBox.classList.add('thinking-box');
 
         try {
             const response = await fetch(window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/', {
@@ -435,6 +440,12 @@ class GalleryFreeTalk {
                 this._updateExpression(parsed.expression);
             }
 
+            // 이름표를 캐릭터로 변경 + 생각중 상태 해제
+            const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
+            if (nameTag) nameTag.textContent = charName;
+            if (charImg) charImg.classList.remove('thinking');
+            if (dialogueBox) dialogueBox.classList.remove('thinking-box');
+
             // 대사창에 타이핑 효과로 표시
             await this._typeText(displayText);
             this.chatHistory.push({ role: 'assistant', content: reply });
@@ -444,13 +455,20 @@ class GalleryFreeTalk {
 
         } catch (err) {
             console.error('[GalleryFreeTalk] API 오류:', err);
+            const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
+            if (nameTag) nameTag.textContent = charName;
+            if (charImg) charImg.classList.remove('thinking');
+            if (dialogueBox) dialogueBox.classList.remove('thinking-box');
             const fallback = this._getFallbackReply();
             await this._typeText(fallback);
             this.chatHistory.push({ role: 'assistant', content: fallback });
         }
 
-        // UI 복원
-        if (sendBtn) sendBtn.disabled = false;
+        // UI 복원 (게임과 동일: 버튼 원복 + 입력 활성화)
+        if (sendBtn) {
+            sendBtn.disabled = false;
+            sendBtn.innerHTML = originalBtnContent;
+        }
         if (input) {
             input.disabled = false;
             input.focus();
