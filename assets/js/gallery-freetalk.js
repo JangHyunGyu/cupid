@@ -268,7 +268,15 @@ class GalleryFreeTalk {
                 </div>
                 <div class="gft-bottom-row">
                     <div class="gft-chat-container">
+                        <div class="gft-image-preview" id="gft-image-preview" style="display:none;">
+                            <img id="gft-preview-img" src="">
+                            <button class="gft-remove-image" id="gft-remove-image" title="×">×</button>
+                        </div>
                         <div class="gft-input-wrapper">
+                            <button class="gft-upload-btn" id="gft-upload-btn" title="${this._L('사진', 'Photo', 'Foto', '写真', 'Photo')}">
+                                <span>📸</span>
+                            </button>
+                            <input type="file" id="gft-file-input" accept="image/*" style="display:none;">
                             <input type="text" class="gft-input" maxlength="200"
                                    placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力...', 'Saisissez un message...')}">
                             <button class="gft-send-btn" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer')}">
@@ -286,6 +294,9 @@ class GalleryFreeTalk {
         const sendBtn = this.overlayEl.querySelector('.gft-send-btn');
         const input = this.overlayEl.querySelector('.gft-input');
         const dialogueBox = document.getElementById('gft-dialogue-box');
+        const uploadBtn = document.getElementById('gft-upload-btn');
+        const fileInput = document.getElementById('gft-file-input');
+        const removeImgBtn = document.getElementById('gft-remove-image');
 
         closeBtn.addEventListener('click', () => this.close());
         sendBtn.addEventListener('click', () => this._handleSend());
@@ -297,6 +308,18 @@ class GalleryFreeTalk {
         dialogueBox.addEventListener('click', () => {
             if (this.isTyping) this.skipTyping = true;
         });
+
+        // 이미지 업로드
+        uploadBtn.addEventListener('click', () => {
+            if (input.disabled) return;
+            fileInput.click();
+        });
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) this._handleImageUpload(file);
+            fileInput.value = ''; // 같은 파일 재선택 가능
+        });
+        removeImgBtn.addEventListener('click', () => this._removeStagedImage());
 
         // 모바일: visualViewport로 키보드 대응
         this._vvHandler = null;
