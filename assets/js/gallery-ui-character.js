@@ -390,13 +390,13 @@ class CharacterRenderer {
         if (unlocked) {
             container.innerHTML = `
                 <button class="freetalk-btn" data-char-id="${charId}">
-                    💕 ${L('연인과 대화하기', 'Talk with My Love', 'Hablar con Mi Amor', '恋人と話す', 'Parler avec Mon Amour')}
+                    💕 ${L('연인모드 비밀대화', 'Secret Love Chat', 'Chat Secreto de Amor', '恋人モード秘密会話', 'Chat Secret Amoureux')}
                 </button>
             `;
         } else {
             container.innerHTML = `
                 <button class="freetalk-btn locked" data-char-id="${charId}" data-char-name="${charName}">
-                    🔒 ${L('연인과 대화하기', 'Talk with My Love', 'Hablar con Mi Amor', '恋人と話す', 'Parler avec Mon Amour')}
+                    🔒 ${L('연인모드 비밀대화', 'Secret Love Chat', 'Chat Secreto de Amor', '恋人モード秘密会話', 'Chat Secret Amoureux')}
                 </button>
             `;
         }
