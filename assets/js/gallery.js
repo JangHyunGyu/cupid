@@ -76,6 +76,10 @@ class Gallery {
         // 6. 전역 이벤트 리스너 등록
         this._setupEventListeners();
 
+        // 7. 갤러리 프리토킹 시스템 초기화
+        this.freeTalk = new GalleryFreeTalk(this.lang, this.progress);
+        window.galleryFreeTalk = this.freeTalk;
+
         console.log('[Gallery] 초기화 완료 - 언어:', this.lang);
     }
 
@@ -145,6 +149,7 @@ class Gallery {
         // 키보드 단축키 (ESC로 모달 닫기)
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
+                if (this.freeTalk) this.freeTalk.close();
                 this.ui.closeCharacterModal();
                 this.ui.closeCGModal();
                 this.ui.closeUnlockPopup();

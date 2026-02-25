@@ -96,6 +96,20 @@ class CharacterRenderer {
             return;
         }
 
+        // 프리토킹 버튼 클릭
+        const ftBtn = target.closest('.freetalk-btn');
+        if (ftBtn) {
+            const charId = ftBtn.dataset.charId;
+            if (ftBtn.classList.contains('locked')) {
+                const charName = ftBtn.dataset.charName;
+                this._showFreeTalkLockPopup(charName);
+            } else if (charId && window.galleryFreeTalk) {
+                this.closeModal();
+                window.galleryFreeTalk.open(charId);
+            }
+            return;
+        }
+
         // 더보기 버튼 클릭
         const descBtn = target.closest('.desc-more-btn');
         if (descBtn) {
@@ -223,6 +237,7 @@ class CharacterRenderer {
         this._updateImage();
         this._renderExpressionButtons(char);
         this._renderStats(char);
+        this._renderFreeTalkButton(charId, char.name);
 
         this.modalEl.classList.add('active');
     }
@@ -358,6 +373,59 @@ class CharacterRenderer {
                 <div class="stat-value">${char.hobby}</div>
             </div>
         `;
+    }
+    /**
+     * 프리토킹 버튼 렌더링
+     * @private
+     * @param {string} charId - 캐릭터 ID
+     * @param {string} charName - 캐릭터 표시 이름
+     */
+    _renderFreeTalkButton(charId, charName) {
+        const container = document.getElementById('freetalk-button-container');
+        if (!container) return;
+
+        const unlocked = this.ui.progress.isFreeTalkUnlocked(charId);
+        const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.ui.lang] || en;
+
+        if (unlocked) {
+            container.innerHTML = `
+                <button class="freetalk-btn" data-char-id="${charId}">
+                    💬 ${L('대화하기', 'Chat', 'Conversar', '会話する', 'Discuter')}
+                </button>
+            `;
+        } else {
+            container.innerHTML = `
+                <button class="freetalk-btn locked" data-char-id="${charId}" data-char-name="${charName}">
+                    🔒 ${L('대화하기', 'Chat', 'Conversar', '会話する', 'Discuter')}
+                </button>
+            `;
+        }
+    }
+
+    /**
+     * 프리토킹 잠금 팝업 표시
+     * @private
+     * @param {string} charName - 캐릭터 이름
+     */
+    _showFreeTalkLockPopup(charName) {
+        const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.ui.lang] || en;
+
+        // 한국어 조사 처리 (받침 유무)
+        const lastChar = charName[charName.length - 1];
+        const hasJongseong = lastChar && ((lastChar.charCodeAt(0) - 0xAC00) % 28 !== 0);
+        const particle = hasJongseong ? '과' : '와';
+
+        this.ui.showUnlockPopup({
+            title: L('대화 미해금', 'Chat Locked', 'Chat bloqueado', '会話未解放', 'Discussion verrouillée'),
+            message: L(
+                `${charName}${particle} 연인이 된 상태로<br>TRUE LOVE 엔딩을 클리어하면<br>대화할 수 있습니다`,
+                `Clear the TRUE LOVE ending<br>while dating ${charName}<br>to unlock chat`,
+                `Completa el final TRUE LOVE<br>mientras sales con ${charName}<br>para desbloquear el chat`,
+                `${charName}と恋人になった状態で<br>TRUE LOVEエンディングをクリアすると<br>会話できるようになります`,
+                `Terminez la fin TRUE LOVE<br>en sortant avec ${charName}<br>pour débloquer la discussion`
+            ),
+            icon: '🔒'
+        });
     }
 }
 

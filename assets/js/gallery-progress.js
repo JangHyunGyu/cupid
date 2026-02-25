@@ -269,6 +269,33 @@ class GalleryProgress {
     }
 
     // =========================================================================
+    // 프리토킹 해금 관련 메서드
+    // =========================================================================
+
+    /**
+     * 캐릭터의 갤러리 프리토킹이 해금되었는지 확인
+     * TRUE LOVE 엔딩 클리어 시 GameEngine에서 설정됨
+     *
+     * @param {string} charId - 캐릭터 ID (예: 'seyoun')
+     * @returns {boolean} 해금 여부
+     */
+    isFreeTalkUnlocked(charId) {
+        this.refresh();
+        return this.data.characters?.[charId]?.trueEndingCleared || false;
+    }
+
+    /**
+     * 저장된 플레이어 이름 가져오기
+     * TRUE LOVE 엔딩 클리어 시 GameEngine에서 저장됨
+     *
+     * @returns {string|null} 플레이어 이름 또는 null
+     */
+    getPlayerName() {
+        this.refresh();
+        return this.data.playerName || null;
+    }
+
+    // =========================================================================
     // 해금 상태 확인/변경
     // =========================================================================
 

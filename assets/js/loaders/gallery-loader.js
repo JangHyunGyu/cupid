@@ -38,7 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // 3. UI 코어 (서브 렌더러 의존)
         'gallery-ui-core.js',
 
-        // 4. 메인 컨트롤러 (UI 의존)
+        // 4. 갤러리 프리토킹 (UI 코어 의존)
+        'gallery-freetalk.js',
+
+        // 5. 메인 컨트롤러 (UI 의존)
         'gallery.js'
     ];
 
