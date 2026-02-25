@@ -49,6 +49,12 @@ class GalleryProgress {
          */
         this.data = null;
 
+        /**
+         * 관리자 모드 - URL에 ?admin 파라미터가 있으면 모든 해금 우회
+         * @type {boolean}
+         */
+        this.isAdmin = new URLSearchParams(window.location.search).has('admin');
+
         // 초기 데이터 로드
         this.load();
     }
@@ -169,6 +175,7 @@ class GalleryProgress {
      * }
      */
     isMet(charId) {
+        if (this.isAdmin) return true;
         this.refresh();
         return this.data.characters?.[charId]?.met || false;
     }
