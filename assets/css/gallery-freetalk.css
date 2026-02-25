@@ -2,7 +2,8 @@
    Gallery Free Talk - VN 스타일 프리토킹 오버레이
    ============================================================================
    게임 내 프리토킹과 동일한 UI. 배경 + 캐릭터 + 대사창 + 입력창.
-   style.css의 #dialogue-box, #chat-container 스타일을 그대로 사용.
+   대사창·입력창·이미지업로드 등은 style.css의 게임 ID 스타일을 그대로 재활용.
+   이 파일에는 갤러리 오버레이 전용 레이아웃만 정의.
    ============================================================================ */
 
 /* ── 프리토킹 버튼 (캐릭터 모달 내부) ── */
@@ -43,7 +44,7 @@
     color: #aaa;
 }
 
-/* ── 풀스크린 오버레이 (게임 화면과 동일) ── */
+/* ── 풀스크린 오버레이 ── */
 
 .gallery-freetalk-overlay {
     display: none;
@@ -111,52 +112,27 @@
     pointer-events: none;
 }
 
-/* ── 대사 박스 (게임 #dialogue-box 동일) ── */
+/* ── style.css 오버라이드 (오버레이 컨텍스트에서 필요한 조정) ── */
 
-.gft-dialogue-box {
-    position: relative;
-    width: 100%;
-    min-height: 120px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid #ff69b4;
-    border-radius: 10px;
-    padding: 20px;
-    color: #fff;
-    box-sizing: border-box;
+/* 대사창: 오버레이 안에서 pointer-events 활성화 */
+.gallery-freetalk-overlay #dialogue-box {
     pointer-events: auto;
-    cursor: pointer;
+    margin-bottom: 0;
 }
 
-/* 이름 태그 (게임 #name-tag 동일) */
-.gft-name-tag {
-    position: absolute;
-    top: 0;
-    left: 20px;
-    transform: translateY(-50%);
-    display: inline-block;
-    background: #ff69b4;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    white-space: nowrap;
-    z-index: 1;
-    pointer-events: none;
+/* 입력 컨테이너: 오버레이 안에서 pointer-events 활성화 + 여백 제거 */
+.gallery-freetalk-overlay #chat-container {
+    display: block;
+    pointer-events: auto;
+    margin-bottom: 0;
 }
 
-/* 대사 텍스트 (게임 #message 동일) */
-.gft-message-text {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    word-break: keep-all;
-    overflow-wrap: break-word;
-    white-space: pre-wrap;
-    min-height: 1.6em;
+/* 채팅 입력란 placeholder */
+.gallery-freetalk-overlay #chat-input::placeholder {
+    color: #888;
 }
 
-/* 지문 (액션) 스타일 - 게임 내 DialogueSystem과 동일 */
+/* 지문 (액션) 스타일 — 게임은 인라인 스타일, 갤러리는 클래스 사용 */
 .gft-action {
     display: block;
     background: rgba(0, 0, 0, 0.4);
@@ -170,81 +146,17 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* ── 채팅 입력 컨테이너 (게임 #chat-container 동일) ── */
-
-.gft-chat-container {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid #ff69b4;
-    border-radius: 15px;
-    padding: 12px;
-    box-sizing: border-box;
-    pointer-events: auto;
+/* 대사창 내 채팅 이미지 */
+.gft-chat-image {
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 6px;
+    margin-top: 8px;
+    object-fit: contain;
 }
 
-.gft-input-wrapper {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
+/* ── 닫기 버튼 (갤러리 전용) ── */
 
-.gft-input {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #ff69b4;
-    border-radius: 8px;
-    padding: 8px 12px;
-    color: #fff;
-    font-size: 0.95rem;
-    font-family: 'Pretendard', sans-serif;
-    outline: none;
-    min-width: 0;
-}
-
-.gft-input:focus-visible {
-    border-color: #fff;
-    box-shadow: 0 0 0 2px rgba(255, 105, 180, 0.5);
-}
-
-.gft-input::placeholder {
-    color: #888;
-}
-
-.gft-send-btn {
-    background: #ff69b4;
-    border: none;
-    border-radius: 50%;
-    width: 38px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.2s;
-    padding: 0;
-    flex-shrink: 0;
-}
-
-.gft-send-btn svg {
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
-}
-
-.gft-send-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
-}
-
-.gft-send-btn:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-    transform: none;
-    box-shadow: none;
-}
-
-/* 닫기 버튼 (게임 홈 버튼 위치와 유사) */
 .gft-close-btn {
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #ff69b4;
@@ -273,98 +185,9 @@
     align-items: center;
 }
 
-.gft-bottom-row .gft-chat-container {
+.gft-bottom-row #chat-container {
     flex: 1;
     min-width: 0;
-}
-
-/* ── Tip 가이드 (게임 #chat-guide 동일) ── */
-
-.gft-guide {
-    font-size: 0.8rem;
-    color: #ffb6c1;
-    margin-bottom: 8px;
-    padding-left: 8px;
-    border-left: 2px solid #ff69b4;
-    line-height: 1.4;
-    opacity: 0.9;
-}
-
-/* ── 이미지 업로드 버튼 (게임 #upload-image-btn 동일) ── */
-
-.gft-upload-btn {
-    background: #ff69b4;
-    border: none;
-    border-radius: 50%;
-    width: 38px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.2s;
-    padding: 0;
-    flex-shrink: 0;
-    font-size: 18px;
-    line-height: 1;
-}
-
-.gft-upload-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
-}
-
-/* ── 이미지 미리보기 (게임 #image-preview-container 동일) ── */
-
-.gft-image-preview {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 8px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    margin-bottom: 8px;
-    border: 1px dashed #ff69b4;
-    width: auto;
-    max-width: fit-content;
-}
-
-.gft-image-preview img {
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 4px;
-    object-fit: contain;
-}
-
-.gft-remove-image {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    background: #ff4757;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    padding: 0;
-}
-
-/* ── 대사창 내 채팅 이미지 ── */
-
-.gft-chat-image {
-    max-width: 120px;
-    max-height: 120px;
-    border-radius: 6px;
-    margin-top: 8px;
-    object-fit: contain;
 }
 
 /* ── 모바일 반응형 ── */
@@ -378,16 +201,16 @@
         padding: 0 12px 12px;
     }
 
-    .gft-dialogue-box {
+    .gallery-freetalk-overlay #dialogue-box {
         min-height: 100px;
         padding: 16px;
     }
 
-    .gft-message-text {
+    .gallery-freetalk-overlay #message {
         font-size: 1rem;
     }
 
-    .gft-name-tag {
+    .gallery-freetalk-overlay #name-tag {
         font-size: 0.95rem;
         padding: 4px 12px;
     }
@@ -398,16 +221,16 @@
         max-height: 60vh;
     }
 
-    .gft-dialogue-box {
+    .gallery-freetalk-overlay #dialogue-box {
         min-height: 80px;
         padding: 14px;
     }
 
-    .gft-message-text {
+    .gallery-freetalk-overlay #message {
         font-size: 0.95rem;
     }
 
-    .gft-input {
+    .gallery-freetalk-overlay #chat-input {
         padding: 6px 10px;
         font-size: 0.9rem;
     }
