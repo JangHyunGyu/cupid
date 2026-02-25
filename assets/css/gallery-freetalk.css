@@ -82,6 +82,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    height: 100%;
     z-index: 1;
     pointer-events: none;
     display: flex;
@@ -90,8 +91,8 @@
 }
 
 .gft-character img {
-    max-height: 85vh;
-    max-width: 90vw;
+    height: 100%;
+    width: auto;
     object-fit: contain;
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
 }
@@ -193,8 +194,8 @@
 /* ── 모바일 반응형 ── */
 
 @media (max-width: 768px) {
-    .gft-character img {
-        max-height: 70vh;
+    .gft-character {
+        height: 90%;
     }
 
     .gft-ui-layer {
@@ -217,8 +218,9 @@
 }
 
 @media (max-width: 480px) {
-    .gft-character img {
-        max-height: 60vh;
+    .gft-character {
+        height: 100%;
+        bottom: -10%;
     }
 
     .gallery-freetalk-overlay #dialogue-box {
