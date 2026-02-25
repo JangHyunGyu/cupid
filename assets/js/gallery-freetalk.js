@@ -32,6 +32,7 @@ class GalleryFreeTalk {
         this.isTyping = false;
         this.skipTyping = false;
         this.overlayEl = null;
+        this.stagedImage = null;
 
         this.MEMORY_KEY = 'cupid_freetalk_memory';
 
@@ -268,6 +269,7 @@ class GalleryFreeTalk {
                 </div>
                 <div class="gft-bottom-row">
                     <div class="gft-chat-container">
+                        <div class="gft-guide">${this._getTip()}</div>
                         <div class="gft-image-preview" id="gft-image-preview" style="display:none;">
                             <img id="gft-preview-img" src="">
                             <button class="gft-remove-image" id="gft-remove-image" title="×">×</button>
@@ -364,10 +366,18 @@ class GalleryFreeTalk {
 
         const input = this.overlayEl.querySelector('.gft-input');
         const text = input.value.trim();
-        if (!text) return;
+        const stagedImage = this.stagedImage;
+
+        // 텍스트와 이미지 둘 다 없으면 전송 안 함
+        if (!text && !stagedImage) return;
 
         input.value = '';
         this.isProcessing = true;
+
+        // 이미지 + 텍스트 결합 (게임과 동일: text\n\nbase64)
+        const finalContent = stagedImage
+            ? (text ? `${text}\n\n${stagedImage}` : stagedImage)
+            : text;
 
         const msgEl = document.getElementById('gft-message-text');
         const nameTag = document.getElementById('gft-name-tag');
@@ -376,9 +386,21 @@ class GalleryFreeTalk {
 
         // 이름표를 플레이어로 변경, 유저 메시지 표시
         if (nameTag) nameTag.textContent = playerName;
-        if (msgEl) msgEl.textContent = text;
+        if (msgEl) {
+            msgEl.innerHTML = '';
+            if (text) msgEl.textContent = text;
+            if (stagedImage) {
+                const img = document.createElement('img');
+                img.src = stagedImage;
+                img.className = 'gft-chat-image';
+                msgEl.appendChild(img);
+            }
+        }
 
-        this.chatHistory.push({ role: 'user', content: text });
+        // 이미지 미리보기 제거
+        this._removeStagedImage();
+
+        this.chatHistory.push({ role: 'user', content: finalContent });
 
         // 전송 버튼 & 입력 비활성화
         const sendBtn = this.overlayEl.querySelector('.gft-send-btn');
@@ -608,6 +630,82 @@ class GalleryFreeTalk {
         } catch (e) {
             // 무시
         }
+    }
+
+    // =========================================================================
+    // 이미지 업로드 (게임 UIManager.handleImageUpload와 동일)
+    // =========================================================================
+
+    /**
+     * 이미지 파일을 리사이즈 → Base64 JPEG로 변환 → 미리보기 표시
+     * @param {File} file
+     * @private
+     */
+    _handleImageUpload(file) {
+        if (!file.type.startsWith('image/')) {
+            alert(this._L(
+                '이미지 파일만 업로드 가능합니다.',
+                'Only image files can be uploaded.',
+                'Solo se pueden subir archivos de imagen.',
+                '画像ファイルのみアップロード可能です。',
+                'Seuls les fichiers image peuvent être téléchargés.'
+            ));
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const img = new Image();
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                let w = img.width, h = img.height;
+                const maxSize = 1024;
+                if (w > h) {
+                    if (w > maxSize) { h *= maxSize / w; w = maxSize; }
+                } else {
+                    if (h > maxSize) { w *= maxSize / h; h = maxSize; }
+                }
+                canvas.width = w;
+                canvas.height = h;
+                canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+                const base64 = canvas.toDataURL('image/jpeg', 0.8);
+                this.stagedImage = base64;
+
+                // 미리보기 표시
+                const previewContainer = document.getElementById('gft-image-preview');
+                const previewImg = document.getElementById('gft-preview-img');
+                if (previewImg) previewImg.src = base64;
+                if (previewContainer) previewContainer.style.display = 'inline-flex';
+            };
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+
+    /**
+     * 스테이징된 이미지 제거
+     * @private
+     */
+    _removeStagedImage() {
+        this.stagedImage = null;
+        const previewContainer = document.getElementById('gft-image-preview');
+        const previewImg = document.getElementById('gft-preview-img');
+        if (previewContainer) previewContainer.style.display = 'none';
+        if (previewImg) previewImg.src = '';
+    }
+
+    /**
+     * 채팅 가이드 팁 HTML (게임 #chat-guide 동일)
+     * @private
+     */
+    _getTip() {
+        return this._L(
+            '<b>Tip:</b> <i>*웃으며* 자기야~</i> 처럼 어조나 상황을 표현해보세요.',
+            '<b>Tip:</b> Describe tone in asterisks, e.g., <i>*smiling* Hey...</i>',
+            '<b>Tip:</b> Describe el tono con asteriscos, ej: <i>*sonriendo* Hola...</i>',
+            '<b>Tip:</b> <i>*笑顔で* ねぇ</i> のように、雰囲気や状況を表現してみてね。',
+            '<b>Tip :</b> Décrivez le ton avec des astérisques, ex : <i>*en souriant* Salut...</i>'
+        );
     }
 
     // =========================================================================
