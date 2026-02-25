@@ -933,6 +933,27 @@ class GameEngine {
             this.uiManager.dialogueBox.style.display = 'none';
             this.uiManager.choiceContainer.style.display = 'none';
 
+            // ── 갤러리 프리토킹 해금 (TRUE LOVE 엔딩 한정) ──
+            if (this.stateManager.getFlag('ending_true_love')) {
+                const charMap = { Seoyeon: 'seyoun', Yuna: 'yuna', Dain: 'dain', Teacher: 'teacher', Nurse: 'nurse' };
+                for (const [key, id] of Object.entries(charMap)) {
+                    if (this.stateManager.getFlag(`isDating_${key}`)) {
+                        try {
+                            const gallery = JSON.parse(localStorage.getItem('cupid_gallery') || '{}');
+                            if (!gallery.characters) gallery.characters = {};
+                            if (!gallery.characters[id]) gallery.characters[id] = {};
+                            gallery.characters[id].trueEndingCleared = true;
+                            gallery.playerName = this.stateManager.playerName;
+                            localStorage.setItem('cupid_gallery', JSON.stringify(gallery));
+                            console.log(`[GameEngine] 갤러리 프리토킹 해금: ${key}`);
+                        } catch (e) {
+                            console.error('[GameEngine] 갤러리 프리토킹 해금 실패:', e);
+                        }
+                        break;
+                    }
+                }
+            }
+
             // 크레딧 레이어 표시 (없으면 동적 생성 — 캐시된 구 HTML 대응)
             let creditsLayer = document.getElementById('credits-layer');
             if (!creditsLayer) {
