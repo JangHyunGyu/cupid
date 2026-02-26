@@ -4849,8 +4849,7 @@ Object.assign(SCENARIO[4], {
         }
     },
     "day4_night_dain_spike_3": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "background": "assets/images/background/dain_hurt.png"
         "night": true,
         "next": "day4_night_dain_hurt",
         "_i18n": {
