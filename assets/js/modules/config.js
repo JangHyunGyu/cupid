@@ -67,7 +67,9 @@ const SEND_ICON = `<svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l
  * - 예: 'nurse_home_event1' → assets/images/cg/nurse_home_event1.webp
  */
 const REGISTERED_CG_IDS = new Set([
-    'nurse_home_event1'
+    'nurse_home_event1',
+    'dain_hurt_event1',
+    'dain_depressiob_event1'
     // 🔧 새 CG 추가 시 여기에 ID 추가 (예: 'seoyeon_rooftop_cg')
 ]);
 
