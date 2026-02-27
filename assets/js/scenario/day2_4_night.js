@@ -1126,7 +1126,6 @@ Object.assign(SCENARIO[2], {
     "day2_night_nurse_home_4": {
         "background": "assets/images/background/nurse_home_event1.png",
         "character": null,
-        "fade": true,
         "next": "day2_night_nurse_home_5",
         "_i18n": {
             "ko": {
