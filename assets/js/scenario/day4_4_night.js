@@ -5389,7 +5389,7 @@ Object.assign(SCENARIO[4], {
         }
     },
     "day4_night_dain_cry": {
-        "background": "assets/images/background/dain_depression_event.png",
+        "background": "assets/images/background/dain_depression_event1.png",
         "character": null,
         "next": "day4_night_dain_cry_choice",
         "_i18n": {
