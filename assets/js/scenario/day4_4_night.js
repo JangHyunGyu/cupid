@@ -4849,8 +4849,8 @@ Object.assign(SCENARIO[4], {
         }
     },
     "day4_night_dain_spike_3": {
-        "background": "assets/images/background/dain_hurt.png",
-        "night": true,
+        "background": "assets/images/background/dain_hurt_event1.png",
+        "character": null,
         "next": "day4_night_dain_hurt",
         "_i18n": {
             "ko": {
@@ -5390,7 +5390,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_dain_cry": {
         "background": "assets/images/background/dain_depression_event.png",
-        "night": true,
+        "character": null,
         "next": "day4_night_dain_cry_choice",
         "_i18n": {
             "ko": {
