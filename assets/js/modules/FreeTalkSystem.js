@@ -538,9 +538,12 @@ class FreeTalkSystem {
             // 📡 API 서버에 HTTP POST 요청
             // - API_ENDPOINT: 파일 상단에 정의된 서버 주소
             // - messages: 대화 기록 전체 (시스템 프롬프트 + 대화 내용)
+            // [Explicit Caching] 캐시 키 헤더 추가
+            const _lang = document.documentElement.lang || 'ko';
+            const _cacheKey = charKey ? `cupid:${_lang}:${charKey}` : '';
             const response = await fetch(API_ENDPOINT, {
                 method: "POST",
-                headers: { "Content-Type": "application/json", "x-app-type": "cupid" },
+                headers: { "Content-Type": "application/json", "x-app-type": "cupid", ...(_cacheKey && { "x-cache-key": _cacheKey }) },
                 body: JSON.stringify({ messages: this.freeTalkHistory })
             });
 
