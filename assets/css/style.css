@@ -58,6 +58,9 @@ html {
     /* 가운데 정렬 */
     transition: background-image 0.5s ease-in-out, filter 1s ease-in-out;
     /* 배경 전환 효과 */
+    /* GPU 가속: filter 전환을 GPU에서 처리 */
+    will-change: filter;
+    contain: strict;
 }
 
 /* 배경 시간대별 필터 효과 */
@@ -118,6 +121,9 @@ html {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: transform 0.3s ease, filter 0.3s ease;
+    /* GPU 가속: transform 애니메이션을 GPU 레이어로 분리 */
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 /* ==========================================================================
@@ -825,6 +831,8 @@ html[lang="fr"] #message {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* GPU 가속: opacity 전환 최적화 */
+    will-change: opacity;
 }
 
 #fade-layer.active {
@@ -967,12 +975,13 @@ html[lang="fr"] #message {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2000;
-    backdrop-filter: blur(3px);
+    /* backdrop-filter 제거: 저사양 기기에서 심각한 프레임 드롭 유발 */
+    /* 대신 불투명도를 0.7→0.85로 높여 시각적 효과 보완 */
 }
 
 /* 모달 박스 내용 */
@@ -1187,6 +1196,7 @@ html[lang="fr"] .modal-content p {
     transform: translateY(100vh);
     padding: 0 20px;
     box-sizing: border-box;
+    will-change: transform;
 }
 
 #credits-layer.active #credits-content {
