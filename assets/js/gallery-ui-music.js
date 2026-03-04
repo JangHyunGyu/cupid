@@ -159,12 +159,20 @@ class MusicRenderer {
         // 기존 재생 중지
         this.stop();
 
-        // 새 오디오 재생
-        this.audio = new Audio(file);
+        // 새 오디오 재생 (버퍼링 대기 후 재생)
+        this.audio = new Audio();
+        this.audio.preload = 'auto';
         this.audio.volume = parseFloat(localStorage.getItem('bgmVolume') || 0.5);
         this.audio.loop = true;
-        this.audio.play().catch(e => console.log('Audio play failed:', e));
 
+        this.audio.addEventListener('canplaythrough', () => {
+            if (this.audio && this.currentBgmId === id) {
+                this.audio.play().catch(e => console.log('Audio play failed:', e));
+            }
+        }, { once: true });
+
+        this.audio.src = file;
+        this.audio.load();
         this.currentBgmId = id;
     }
 
