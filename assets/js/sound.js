@@ -1,42 +1,51 @@
 /**
  * Cupid Sound Manager (사운드 관리자)
- * 배경음악(BGM)과 효과음(SFX)의 재생, 일시정지, 볼륨 조절을 관리합니다.
- * Web Audio API(AudioContext + GainNode)를 사용하여 저사양 기기에서도
- * 노이즈 없이 부드러운 볼륨 전환을 제공합니다.
+ *
+ * 오디오 노이즈 완전 제거 설계:
+ *   1. fetch()로 오디오 파일 전체를 ArrayBuffer로 다운로드
+ *   2. decodeAudioData()로 메모리에 디코딩
+ *   3. AudioBufferSourceNode로 메모리에서 직접 재생
+ *   → 네트워크 스트리밍 제로. 인터넷 속도와 무관하게 노이즈 없음.
+ *
+ * GainNode + linearRampToValueAtTime으로 볼륨 전환도 노이즈 없음.
  */
 class SoundManager {
     constructor() {
-        // Web Audio API 컨텍스트 (사용자 상호작용 후 생성)
         this.audioContext = null;
 
-        // 현재 재생 중인 BGM 관련
-        this.bgm = null;           // Audio 엘리먼트
-        this.bgmSource = null;     // MediaElementAudioSourceNode
-        this.bgmGain = null;       // GainNode (볼륨 제어용)
+        // 현재 재생 중인 BGM
+        this.bgmSourceNode = null;   // AudioBufferSourceNode
+        this.bgmGain = null;         // GainNode
+        this.bgmBuffer = null;       // 현재 재생 중인 AudioBuffer
 
-        // 로컬 스토리지에서 저장된 설정값 불러오기
+        // 디코딩된 오디오 버퍼 캐시 (같은 파일 재다운로드 방지)
+        this._bufferCache = {};
+        // 진행 중인 로딩 Promise 캐시 (중복 fetch 방지)
+        this._loadingPromises = {};
+
+        // 볼륨 설정 로드
         const savedSfx = localStorage.getItem('sfxVolume');
         const savedBgm = localStorage.getItem('bgmVolume');
-
         this.sfxVolume = savedSfx !== null ? parseFloat(savedSfx) : 0.5;
         this.bgmVolume = savedBgm !== null ? parseFloat(savedBgm) : 0.5;
-
         this.muted = localStorage.getItem('soundMuted') === 'true';
 
         this.isInitialized = false;
         this.currentBgmPath = '';
+        this._bgmLoop = true;
 
-        // 페이드 효과 설정
-        this.fadeInDuration = 2;    // 초 단위 (Web Audio API는 초 사용)
+        // 페이드 설정 (초 단위)
+        this.fadeInDuration = 2;
         this.fadeOutDuration = 2;
 
-        // 페이드 아웃 중인 이전 BGM을 추적 (리소스 정리용)
-        this._fadingOutNodes = [];
+        // 사용자 상호작용으로 AudioContext 활성화 여부
+        this._unlocked = false;
+        // 잠금 해제 대기 중인 재생 요청
+        this._pendingPlay = null;
     }
 
     /**
-     * AudioContext를 생성하거나 resume합니다.
-     * 브라우저 정책상 사용자 상호작용 후에만 활성화됩니다.
+     * AudioContext 생성/resume
      */
     _ensureAudioContext() {
         if (!this.audioContext) {
@@ -49,58 +58,104 @@ class SoundManager {
     }
 
     /**
-     * 사운드 매니저를 초기화합니다.
+     * 초기화: 사용자 상호작용 감지하여 AudioContext 잠금 해제
      */
     init() {
         if (this.isInitialized) return;
-
         console.log("SoundManager: 시스템 초기화 중...");
         this.isInitialized = true;
 
         const unlock = () => {
-            console.log("SoundManager: 사용자 상호작용 감지, 오디오 잠금 해제 시도");
+            console.log("SoundManager: 사용자 상호작용 감지");
+            const ctx = this._ensureAudioContext();
 
-            this._ensureAudioContext();
-
-            if (this.bgm) {
-                if (this.bgm.paused && this.currentBgmPath) {
-                    this.bgm.play()
-                        .then(() => {
-                            console.log("SoundManager: 잠금 해제 후 BGM 재생 성공");
-                            this._fadeIn(this.muted ? 0 : this.bgmVolume);
-                        })
-                        .catch(e => console.error("SoundManager: BGM 재생 실패:", e));
-                }
-            } else if (this.currentBgmPath) {
-                this.playBgm(this.currentBgmPath);
-            }
-
-            if (this.bgm && !this.bgm.paused) {
+            if (ctx.state === 'running') {
+                this._unlocked = true;
                 window.removeEventListener('click', unlock);
                 window.removeEventListener('touchstart', unlock);
-                console.log("SoundManager: 오디오 리스너 제거 완료");
+                console.log("SoundManager: AudioContext 잠금 해제 완료");
+
+                // 대기 중인 재생 요청 처리
+                if (this._pendingPlay) {
+                    const { path, loop } = this._pendingPlay;
+                    this._pendingPlay = null;
+                    this._startPlayback(path, loop);
+                }
             }
+
+            // suspended → running 전환 대기
+            ctx.resume().then(() => {
+                if (!this._unlocked && ctx.state === 'running') {
+                    this._unlocked = true;
+                    window.removeEventListener('click', unlock);
+                    window.removeEventListener('touchstart', unlock);
+
+                    if (this._pendingPlay) {
+                        const { path, loop } = this._pendingPlay;
+                        this._pendingPlay = null;
+                        this._startPlayback(path, loop);
+                    }
+                }
+            });
         };
 
         window.addEventListener('click', unlock);
         window.addEventListener('touchstart', unlock);
     }
 
-    /**
-     * 오디오 잠금을 강제로 해제합니다.
-     */
     unlock() {
         this._ensureAudioContext();
     }
 
     /**
-     * 배경음악을 재생합니다. (canplaythrough 대기 + GainNode 페이드 인)
-     * @param {string} path 오디오 파일 경로
-     * @param {boolean} loop 반복 재생 여부 (기본값 true)
-     * @param {boolean} force 같은 곡이라도 강제로 다시 재생할지 여부
+     * 오디오 파일을 완전히 다운로드 + 디코딩하여 AudioBuffer로 변환.
+     * 캐시하여 같은 파일은 재다운로드하지 않음.
      */
-    playBgm(path, loop = true, force = false) {
-        if (!force && this.currentBgmPath === path && this.bgm && !this.bgm.paused) return;
+    async _loadBuffer(path) {
+        // 이미 캐시에 있으면 즉시 반환
+        if (this._bufferCache[path]) {
+            return this._bufferCache[path];
+        }
+
+        // 이미 로딩 중이면 기존 Promise 반환 (중복 fetch 방지)
+        if (this._loadingPromises[path]) {
+            return this._loadingPromises[path];
+        }
+
+        const ctx = this._ensureAudioContext();
+
+        this._loadingPromises[path] = (async () => {
+            try {
+                console.log("SoundManager: 오디오 다운로드 시작 ->", path);
+                const response = await fetch(path);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                const arrayBuffer = await response.arrayBuffer();
+                console.log("SoundManager: 다운로드 완료, 디코딩 중 ->", path);
+
+                const audioBuffer = await ctx.decodeAudioData(arrayBuffer);
+                console.log("SoundManager: 디코딩 완료 ->", path,
+                    `(${audioBuffer.duration.toFixed(1)}초)`);
+
+                // 캐시에 저장
+                this._bufferCache[path] = audioBuffer;
+                return audioBuffer;
+            } catch (e) {
+                console.error("SoundManager: 오디오 로드 실패 ->", path, e);
+                return null;
+            } finally {
+                delete this._loadingPromises[path];
+            }
+        })();
+
+        return this._loadingPromises[path];
+    }
+
+    /**
+     * BGM 재생 요청
+     */
+    async playBgm(path, loop = true, force = false) {
+        if (!force && this.currentBgmPath === path && this.bgmSourceNode) return;
 
         console.log("SoundManager: BGM 재생 요청 ->", path);
 
@@ -110,144 +165,179 @@ class SoundManager {
             unlockBGM(bgmId);
         }
 
-        // 1. 기존 음악 페이드 아웃
-        if (this.bgm) {
-            this._fadeOutAndCleanup();
-        }
+        // 기존 BGM 페이드 아웃
+        this._fadeOutAndCleanup();
 
-        const ctx = this._ensureAudioContext();
         this.currentBgmPath = path;
+        this._bgmLoop = loop;
 
-        // 2. 새로운 오디오 엘리먼트 생성
-        const audio = new Audio();
-        audio.crossOrigin = 'anonymous';
-        audio.preload = 'auto';
-        audio.loop = false; // onended로 반복 처리
+        // 파일 다운로드 + 디코딩 (완료될 때까지 대기)
+        const buffer = await this._loadBuffer(path);
+        if (!buffer) return;
 
-        // 3. Web Audio API 노드 연결: Audio → GainNode → Destination
-        const source = ctx.createMediaElementSource(audio);
-        const gainNode = ctx.createGain();
-        gainNode.gain.value = 0; // 0에서 시작 (페이드 인)
-        source.connect(gainNode);
-        gainNode.connect(ctx.destination);
+        // 다운로드 중 다른 곡으로 전환된 경우 무시
+        if (this.currentBgmPath !== path) return;
 
-        this.bgm = audio;
-        this.bgmSource = source;
-        this.bgmGain = gainNode;
-
-        // 4. 반복 재생 설정
-        if (loop) {
-            audio.onended = () => {
-                console.log("SoundManager: BGM 트랙 종료, 반복 재생");
-                this.playBgm(path, true, true);
-            };
-        }
-
-        // 5. 에러 처리
-        audio.onerror = (e) => {
-            console.error("SoundManager: 오디오 파일 로드 실패 ->", path, e);
-        };
-
-        // 6. 충분히 버퍼링된 후 재생 (canplaythrough)
-        audio.addEventListener('canplaythrough', () => {
-            // 이미 다른 곡으로 전환된 경우 무시
-            if (this.bgm !== audio) return;
-
-            audio.play()
-                .then(() => {
-                    console.log("SoundManager: BGM 버퍼링 완료, 재생 시작");
-                    this._fadeIn(this.muted ? 0 : this.bgmVolume);
-                })
-                .catch(e => {
-                    console.warn("SoundManager: 자동 재생 차단, 사용자 상호작용 대기 중");
-                });
-        }, { once: true });
-
-        // 7. src 설정 → 로딩 시작
-        audio.src = path;
-        audio.load();
-    }
-
-    /**
-     * 현재 재생 중인 배경음악을 서서히 멈춥니다.
-     */
-    stopBgm() {
-        if (this.bgm) {
-            console.log("SoundManager: BGM 페이드 아웃 정지");
-            this._fadeOutAndCleanup();
-            this.bgm = null;
-            this.bgmSource = null;
-            this.bgmGain = null;
-            this.currentBgmPath = '';
-        }
-    }
-
-    /**
-     * GainNode를 사용하여 부드럽게 볼륨을 올립니다.
-     * linearRampToValueAtTime으로 노이즈 없는 전환을 보장합니다.
-     * @param {number} targetVolume 목표 볼륨
-     */
-    _fadeIn(targetVolume) {
-        if (!this.bgmGain || !this.audioContext) return;
-
-        const now = this.audioContext.currentTime;
-        this.bgmGain.gain.cancelScheduledValues(now);
-        this.bgmGain.gain.setValueAtTime(0, now);
-
-        if (targetVolume <= 0) {
-            this.bgmGain.gain.setValueAtTime(0, now);
+        // AudioContext가 잠금 상태면 대기
+        if (!this._unlocked) {
+            console.log("SoundManager: AudioContext 잠금 상태, 사용자 상호작용 대기 중");
+            this._pendingPlay = { path, loop };
             return;
         }
 
-        this.bgmGain.gain.linearRampToValueAtTime(targetVolume, now + this.fadeInDuration);
+        this._startPlayback(path, loop);
     }
 
     /**
-     * 현재 BGM을 페이드 아웃시키고 리소스를 정리합니다.
+     * 실제 재생 시작 (버퍼 준비 + AudioContext 활성 상태에서만 호출)
+     */
+    _startPlayback(path, loop) {
+        const buffer = this._bufferCache[path];
+        if (!buffer) return;
+
+        // 다른 곡으로 전환된 경우 무시
+        if (this.currentBgmPath !== path) return;
+
+        const ctx = this._ensureAudioContext();
+
+        // AudioBufferSourceNode 생성 (메모리에서 직접 재생)
+        const sourceNode = ctx.createBufferSource();
+        sourceNode.buffer = buffer;
+        sourceNode.loop = loop;
+
+        // GainNode 생성
+        const gainNode = ctx.createGain();
+        gainNode.gain.value = 0; // 0에서 시작 → 페이드 인
+
+        // 연결: SourceNode → GainNode → Destination
+        sourceNode.connect(gainNode);
+        gainNode.connect(ctx.destination);
+
+        // 이전 노드 정리
+        this._stopCurrentBgm();
+
+        this.bgmSourceNode = sourceNode;
+        this.bgmGain = gainNode;
+        this.bgmBuffer = buffer;
+
+        // 재생 시작
+        sourceNode.start(0);
+        console.log("SoundManager: BGM 재생 시작 (메모리 버퍼) ->", path);
+
+        // 페이드 인
+        const targetVol = this.muted ? 0 : this.bgmVolume;
+        const now = ctx.currentTime;
+        gainNode.gain.setValueAtTime(0, now);
+        if (targetVol > 0) {
+            gainNode.gain.linearRampToValueAtTime(targetVol, now + this.fadeInDuration);
+        }
+
+        // 비루프 모드에서 곡 끝나면 이벤트
+        if (!loop) {
+            sourceNode.onended = () => {
+                if (this.bgmSourceNode === sourceNode) {
+                    this.bgmSourceNode = null;
+                    this.bgmGain = null;
+                }
+            };
+        }
+    }
+
+    /**
+     * 현재 재생 중인 BGM을 즉시 정지 (페이드 없이)
+     */
+    _stopCurrentBgm() {
+        if (this.bgmSourceNode) {
+            try {
+                this.bgmSourceNode.onended = null;
+                this.bgmSourceNode.stop();
+                this.bgmSourceNode.disconnect();
+            } catch (e) { /* 이미 정지됨 */ }
+        }
+        if (this.bgmGain) {
+            try { this.bgmGain.disconnect(); } catch (e) {}
+        }
+        this.bgmSourceNode = null;
+        this.bgmGain = null;
+    }
+
+    /**
+     * BGM 페이드 아웃 후 정지
+     */
+    stopBgm() {
+        if (this.bgmSourceNode || this._pendingPlay) {
+            console.log("SoundManager: BGM 페이드 아웃 정지");
+            this._fadeOutAndCleanup();
+            this.currentBgmPath = '';
+            this._pendingPlay = null;
+        }
+    }
+
+    /**
+     * 현재 BGM을 페이드 아웃시키고 정리
      */
     _fadeOutAndCleanup() {
-        if (!this.bgmGain || !this.audioContext || !this.bgm) return;
+        if (!this.bgmSourceNode || !this.bgmGain || !this.audioContext) {
+            this._stopCurrentBgm();
+            return;
+        }
 
-        const audio = this.bgm;
+        const sourceNode = this.bgmSourceNode;
         const gainNode = this.bgmGain;
-        const source = this.bgmSource;
-        const now = this.audioContext.currentTime;
+        const ctx = this.audioContext;
+        const now = ctx.currentTime;
 
-        // onended 핸들러 제거 (반복 재생 방지)
-        audio.onended = null;
+        // 현재 참조 해제 (새 BGM이 즉시 설정 가능하도록)
+        this.bgmSourceNode = null;
+        this.bgmGain = null;
 
-        // GainNode 페이드 아웃
+        // 페이드 아웃
+        sourceNode.onended = null;
         gainNode.gain.cancelScheduledValues(now);
         gainNode.gain.setValueAtTime(gainNode.gain.value, now);
         gainNode.gain.linearRampToValueAtTime(0, now + this.fadeOutDuration);
 
-        // 페이드 아웃 완료 후 리소스 정리
-        const cleanupDelay = (this.fadeOutDuration + 0.1) * 1000;
+        // 페이드 완료 후 정리
         setTimeout(() => {
-            audio.pause();
-            audio.src = '';
+            try {
+                sourceNode.stop();
+                sourceNode.disconnect();
+                gainNode.disconnect();
+            } catch (e) {}
+        }, (this.fadeOutDuration + 0.1) * 1000);
+    }
+
+    /**
+     * 효과음 재생 (메모리 버퍼 방식)
+     */
+    async playSfx(path) {
+        if (this.muted) return;
+
+        const buffer = await this._loadBuffer(path);
+        if (!buffer || !this._unlocked) return;
+
+        const ctx = this._ensureAudioContext();
+        const source = ctx.createBufferSource();
+        source.buffer = buffer;
+
+        const gainNode = ctx.createGain();
+        gainNode.gain.value = this.sfxVolume;
+
+        source.connect(gainNode);
+        gainNode.connect(ctx.destination);
+        source.start(0);
+
+        // 재생 완료 후 자동 정리
+        source.onended = () => {
             try {
                 source.disconnect();
                 gainNode.disconnect();
-            } catch (e) { /* 이미 해제됨 */ }
-        }, cleanupDelay);
+            } catch (e) {}
+        };
     }
 
     /**
-     * 효과음(SFX)을 1회 재생합니다.
-     * @param {string} path 효과음 파일 경로
-     */
-    playSfx(path) {
-        if (this.muted) return;
-
-        const sfx = new Audio(path);
-        sfx.volume = this.sfxVolume;
-        sfx.play().catch(e => console.log("SoundManager: SFX 재생 실패:", e));
-    }
-
-    /**
-     * 배경음악의 볼륨을 실시간으로 조절합니다.
-     * @param {number} volume 0.0 ~ 1.0 사이의 값
+     * BGM 볼륨 조절
      */
     setBgmVolume(volume) {
         this.bgmVolume = volume;
@@ -262,8 +352,7 @@ class SoundManager {
     }
 
     /**
-     * 효과음의 볼륨을 설정합니다.
-     * @param {number} volume 0.0 ~ 1.0 사이의 값
+     * SFX 볼륨 설정
      */
     setSfxVolume(volume) {
         this.sfxVolume = volume;
@@ -271,13 +360,11 @@ class SoundManager {
     }
 
     /**
-     * 전체 소리를 켜거나 끕니다.
-     * @param {boolean} muted true면 전체 음소거
+     * 음소거 토글
      */
     setMuted(muted) {
         this.muted = muted;
         localStorage.setItem('soundMuted', muted);
-
         if (this.bgmGain && this.audioContext) {
             const now = this.audioContext.currentTime;
             const targetVol = muted ? 0 : this.bgmVolume;
@@ -288,6 +375,5 @@ class SoundManager {
     }
 }
 
-// 사운드 매니저 전역 인스턴스 생성 및 창(Window) 객체에 등록
 const soundManager = new SoundManager();
 window.soundManager = soundManager;

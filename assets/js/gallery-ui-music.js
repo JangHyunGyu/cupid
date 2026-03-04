@@ -155,31 +155,62 @@ class MusicRenderer {
      * @param {string} id - BGM ID
      * @param {string} file - 오디오 파일 경로
      */
-    play(id, file) {
+    async play(id, file) {
         // 기존 재생 중지
         this.stop();
 
-        // 새 오디오 재생 (버퍼링 대기 후 재생)
-        this.audio = new Audio();
-        this.audio.preload = 'auto';
+        this.currentBgmId = id;
+
+        // soundManager의 버퍼 캐시 활용 (이미 다운로드된 파일 재사용)
+        if (window.soundManager && window.soundManager._loadBuffer) {
+            try {
+                const ctx = soundManager._ensureAudioContext();
+                const buffer = await soundManager._loadBuffer(file);
+                if (!buffer || this.currentBgmId !== id) return;
+
+                const source = ctx.createBufferSource();
+                source.buffer = buffer;
+                source.loop = true;
+
+                const gain = ctx.createGain();
+                gain.gain.value = parseFloat(localStorage.getItem('bgmVolume') || 0.5);
+
+                source.connect(gain);
+                gain.connect(ctx.destination);
+                source.start(0);
+
+                this._sourceNode = source;
+                this._gainNode = gain;
+                return;
+            } catch (e) {
+                console.log('Gallery: AudioBuffer 방식 실패, fallback 사용:', e);
+            }
+        }
+
+        // Fallback: 기존 Audio 방식
+        this.audio = new Audio(file);
         this.audio.volume = parseFloat(localStorage.getItem('bgmVolume') || 0.5);
         this.audio.loop = true;
-
-        this.audio.addEventListener('canplaythrough', () => {
-            if (this.audio && this.currentBgmId === id) {
-                this.audio.play().catch(e => console.log('Audio play failed:', e));
-            }
-        }, { once: true });
-
-        this.audio.src = file;
-        this.audio.load();
-        this.currentBgmId = id;
+        this.audio.play().catch(e => console.log('Audio play failed:', e));
     }
 
     /**
      * BGM 정지
      */
     stop() {
+        // AudioBufferSourceNode 정리
+        if (this._sourceNode) {
+            try {
+                this._sourceNode.stop();
+                this._sourceNode.disconnect();
+            } catch (e) {}
+            this._sourceNode = null;
+        }
+        if (this._gainNode) {
+            try { this._gainNode.disconnect(); } catch (e) {}
+            this._gainNode = null;
+        }
+        // Fallback Audio 정리
         if (this.audio) {
             this.audio.pause();
             this.audio = null;
