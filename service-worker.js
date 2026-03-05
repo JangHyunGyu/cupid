@@ -5,23 +5,19 @@
  *
  * 캐시 전략:
  *   - 이미지/오디오: Cache-first (캐시 우선, 없으면 네트워크)
- *   - CSS/JS: Stale-while-revalidate (캐시 즉시 반환 + 백그라운드 갱신)
+ *   - CSS/JS: Network-only (항상 네트워크에서 직접 로드, 캐시 사용 안 함)
  *   - HTML/API: Network-first (네트워크 우선, 실패 시 캐시)
  *
  * 저사양 기기와 느린 인터넷에서 빠른 로딩을 위해 정적 에셋을 적극 캐시합니다.
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.0.0';
+const CACHE_VERSION = 'cupid-v3.1.0';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 
-// 설치 시 핵심 에셋 프리캐시
-const PRECACHE_URLS = [
-    'assets/css/style.css',
-    'assets/js/sound.js',
-    'assets/js/loaders/game-loader.js',
-];
+// 설치 시 핵심 에셋 프리캐시 (소스코드 CSS/JS 제외 - 항상 최신 로드)
+const PRECACHE_URLS = [];
 
 // ============================================================================
 // Install - 핵심 에셋 프리캐시
@@ -77,9 +73,9 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
-    // CSS/JS: Stale-while-revalidate (빠른 응답 + 백그라운드 갱신)
+    // CSS/JS: Network-only (소스코드는 항상 최신 버전 직접 로드, 캐시 사용 안 함)
     if (/\.(css|js)$/i.test(path)) {
-        event.respondWith(staleWhileRevalidate(event.request, STATIC_CACHE));
+        event.respondWith(networkOnly(event.request));
         return;
     }
 
@@ -127,6 +123,18 @@ async function staleWhileRevalidate(request, cacheName) {
     }).catch(() => null);
 
     return cached || await fetchPromise || new Response('Offline', { status: 503 });
+}
+
+/**
+ * Network-only: 항상 네트워크에서 직접 로드 (캐시 사용 안 함)
+ * 소스코드(CSS/JS) 수정 사항을 즉시 반영하기 위해 사용
+ */
+async function networkOnly(request) {
+    try {
+        return await fetch(request);
+    } catch (e) {
+        return new Response('Offline', { status: 503 });
+    }
 }
 
 /**
