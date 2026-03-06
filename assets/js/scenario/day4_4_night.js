@@ -3208,6 +3208,18 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_seoyeon_call_2": {
         "background": "assets/images/background/room_my.png",
+        "branches": [
+            {
+                "condition": "day3_lied_to_seoyeon",
+                "next": "day4_night_seoyeon_angry_call"
+            },
+            {
+                "next": "day4_night_seoyeon_call_2_normal"
+            }
+        ]
+    },
+    "day4_night_seoyeon_call_2_normal": {
+        "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/seyoun_shy.png",
         "silhouette": true,
         "night": true,
@@ -3232,6 +3244,35 @@ Object.assign(SCENARIO[4], {
             "fr": {
                 "name": "Seoyeon",
                 "text": "\\\"...Salut, c'est moi. Si tu n'es pas occupé... tu pourrais sortir un moment ?\\\""
+            }
+        }
+    },
+    "day4_night_seoyeon_angry_call": {
+        "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "silhouette": true,
+        "night": true,
+        "next": "day4_night_seoyeon_call_3",
+        "_i18n": {
+            "ko": {
+                "name": "서연",
+                "text": "\"…어제는 왜 나한테 거짓말했어? 직접 만나서 이야기하고 싶어. 바쁘지 않으면… 잠깐 나와 줄래?\""
+            },
+            "en": {
+                "name": "Seoyeon",
+                "text": "\"...Why did you lie to me yesterday? I want to talk in person. If you're not busy... could you come out for a bit?\""
+            },
+            "es": {
+                "name": "Seoyeon",
+                "text": "\"...¿Por qué me mentiste ayer? Quiero hablar en persona. Si no estás ocupado... ¿podrías salir un momento?\""
+            },
+            "ja": {
+                "name": "ソヨン",
+                "text": "\"…どうして昨日は嘘をついたの？ 直接会って話したい。忙しくなければ…ちょっと出てきてくれる？\""
+            },
+            "fr": {
+                "name": "Seoyeon",
+                "text": "\\\"...Pourquoi m'as-tu menti hier ? Je veux te parler en personne. Si tu n'es pas occupé... tu pourrais sortir un moment ?\\\""
             }
         }
     },
