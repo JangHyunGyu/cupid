@@ -395,6 +395,18 @@ Object.assign(SCENARIO[4], {
     },
     "day4_meet_yuna": {
         "background": "assets/images/background/cafe.png",
+        "branches": [
+            {
+                "condition": "day3_lied_to_yuna",
+                "next": "day4_yuna_angry_greeting"
+            },
+            {
+                "next": "day4_meet_yuna_normal"
+            }
+        ]
+    },
+    "day4_meet_yuna_normal": {
+        "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "day4_yuna_react",
         "_i18n": {
@@ -417,6 +429,33 @@ Object.assign(SCENARIO[4], {
             "fr": {
                 "name": "Yuna",
                 "text": "\"...Tu es là.\""
+            }
+        }
+    },
+    "day4_yuna_angry_greeting": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "day4_yuna_react",
+        "_i18n": {
+            "ko": {
+                "name": "유나",
+                "text": "\"…왔네. 그런데 어제는 왜 거짓말했어?\""
+            },
+            "en": {
+                "name": "Yuna",
+                "text": "\"...You're here. But why did you lie to me yesterday?\""
+            },
+            "es": {
+                "name": "Yuna",
+                "text": "\"...Llegaste. Pero ¿por qué me mentiste ayer?\""
+            },
+            "ja": {
+                "name": "ユナ",
+                "text": "「…来たのね。でもどうして昨日は嘘をついたの？」"
+            },
+            "fr": {
+                "name": "Yuna",
+                "text": "\"...Tu es là. Mais pourquoi m'as-tu menti hier ?\""
             }
         }
     },
