@@ -1,319 +1,319 @@
 {
     "lunch_time": {
         "name": "Yo",
-        "text": "*¡Las clases de la mañana terminaron! Por fin, es la tan esperada hora del almuerzo. Los estudiantes corren a la cafetería.*"
+        "text": "*Se acabaron las clases de la mañana. Por fin, hora de comer. Los compañeros salen en tropel.*"
     },
     "lunch_time_2": {
         "name": "Yo",
-        "text": "*Hora del almuerzo... Los estudiantes juegan en el campo afuera de la ventana. ¿Qué debería hacer?*",
+        "text": "*Hora del almuerzo. Desde la ventana ya se oye el sonido de balones en el patio. ¿Qué hago?*",
         "choices": [
-            "Ir a Seoyeon y pedirle almorzar juntos.",
-            "Buscar un lugar tranquilo para explorar la escuela solo.",
-            "Seguir el sonido de los balones de voleibol del gimnasio.",
-            "Ir a la enfermería, sintiéndome un poco mal.",
-            "Ir a la tienda de la escuela a comprar pan.",
-            "Estoy cansado, así que dormiré en el salón."
+            "Ir a pedirle a Seoyeon que coma conmigo.",
+            "Explorar el colegio solo y buscar un sitio tranquilo.",
+            "Seguir el sonido de pelotas de vóley que viene del gimnasio.",
+            "No me siento muy bien, voy a la enfermería.",
+            "Ir a la tienda del colegio a comprar pan.",
+            "Estoy agotado, me echo una siesta en clase."
         ]
     },
     "lunch_seoyeon_high": {
         "name": "Seoyeon",
-        "text": "*En cuanto me ve, corre hacia mí con una sonrisa radiante. Sus ojos están llenos de alegría.* \"{name}! Te estuve buscando. Vamos a almorzar juntos. ¡Te llevaré a un lugar muy especial!\""
+        "text": "*En cuanto me ve, le brillan los ojos y se acerca.* \"{name}, justo te estaba esperando. Te llevo a un sitio especial. Sígueme.\""
     },
     "lunch_seoyeon_low": {
         "name": "Seoyeon",
-        "text": "*Me da una sonrisa un poco incómoda cuando me ve.* \"Oh, {name}... Qué buena oportunidad. La profesora me pidió que te cuidara. Si no te importa, ¿quieres comer en la azotea? Es tranquilo y agradable.\""
+        "text": "*Me ve y pone cara algo incómoda.* \"Ah, {name}... la profesora me pidió que te cuidara. ¿Comemos en la azotea? Es tranquila.\""
     },
     "lunch_seoyeon_normal_branch": {
         "name": "Seoyeon",
-        "text": "*Cuando me acerco a Seoyeon, ella asiente con una dulce sonrisa.*"
+        "text": "*Cuando me acerco a Seoyeon, ella esboza una breve sonrisa y asiente.*"
     },
     "lunch_seoyeon_2_study": {
         "name": "Seoyeon",
-        "text": "\"Estudiante transferido, creo que nos hemos acercado un poco, ¿no crees? Justo iba a buscarte. ¿Quieres comer juntos en la azotea?\"",
+        "text": "\"¿Eh? El nuevo viene a buscarme primero. Qué oportuno. ¿Comemos juntos en la azotea? Es mi guarida secreta.\"",
         "choices": [
-            "¡Sí! Quería comer contigo, Seoyeon.",
-            "Lo siento, hoy quiero estar solo.",
-            "¿La azotea? ¿Por qué ir hasta allá arriba?"
+            "Dale. Quería comer contigo, Seoyeon.",
+            "Perdona, hoy necesito un rato a solas.",
+            "¿La azotea? Sinceramente, me da pereza."
         ]
     },
     "lunch_seoyeon_2_party": {
         "name": "Seoyeon",
-        "text": "\"¡Oh, estudiante transferido! ¿Parece que ya te adaptaste perfectamente a nuestra escuela? ¿Qué tal almorzar en nuestro lugar secreto en la azotea?\"",
+        "text": "\"Wow, para ser nuevo te adaptas rápido, ¿eh? ¿Conoces el sitio secreto de la azotea? No se lo he enseñado a nadie, pero hoy te invito como excepción.\"",
         "choices": [
-            "¡Sí! Quería comer contigo, Seoyeon.",
-            "Lo siento, hoy quiero estar solo.",
-            "¿La azotea? ¿Por qué ir hasta allá arriba?"
+            "Dale. Quería comer contigo, Seoyeon.",
+            "Perdona, hoy necesito un rato a solas.",
+            "¿La azotea? Sinceramente, me da pereza."
         ]
     },
     "lunch_seoyeon_2_normal": {
         "name": "Seoyeon",
-        "text": "\"¡Justo iba a buscarte! ¿Quieres comer juntos en nuestro lugar secreto en la azotea?\"",
+        "text": "\"Qué oportuno. Este es mi territorio. No traigo a cualquiera, pero hoy hago una excepción. ¿Comemos juntos?\"",
         "choices": [
-            "¡Sí! Quería comer contigo, Seoyeon.",
-            "Lo siento, hoy quiero estar solo.",
-            "¿La azotea? ¿Por qué ir hasta allá arriba?"
+            "Dale. Quería comer contigo, Seoyeon.",
+            "Perdona, hoy necesito un rato a solas.",
+            "¿La azotea? Sinceramente, me da pereza."
         ]
     },
     "rooftop_1": {
         "name": "Seoyeon",
-        "text": "*La azotea con una brisa fresca. Seoyeon saca una lonchera que preparó con cuidado.*"
+        "text": "*La azotea, con una brisa fresca. Seoyeon saca de su mochila un almuerzo preparado con esmero.*"
     },
     "rooftop_1_2": {
         "name": "Seoyeon",
-        "text": "\"Hice una lonchera pero es demasiado... ¿Quieres compartir? Como es tu primer día, probablemente no conoces bien la cafetería.\""
+        "text": "\"Lo hice yo, pero me pasé con la cantidad. No vas a comer pan de la tienda el primer día, ¿no? Compartimos.\""
     },
     "rooftop_1_3": {
         "name": "Yo",
-        "text": "*Doy un bocado a la lonchera. Tiene un sabor cálido lleno de cariño.*"
+        "text": "*Pruebo un bocado. Sabe a esmero puro. Mucho mejor de lo que esperaba.*"
     },
     "rooftop_1_4": {
         "name": "Yo",
-        "text": "\"¡Está realmente delicioso! ¿Lo hiciste tú misma? Es increíble...\""
+        "text": "\"Sinceramente, estoy flipando. Está buenísimo. ¿De verdad lo hiciste tú?\""
     },
     "rooftop_1_5": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sonríe felizmente ante mi cumplido.* \"Jeje, ¡qué alivio! Me alegra que te guste.\""
+        "text": "*Seoyeon sonríe satisfecha.* \"Pues claro. Cocinar es uno de mis pocos hobbies. Que aproveche.\""
     },
     "rooftop_talk_main": {
         "name": "Yo",
-        "text": "*Charlamos mientras comemos la lonchera juntos. Mi corazón se acelera cuando ella sonríe tímidamente.*"
+        "text": "*Charlamos mientras compartimos el almuerzo. La brisa de la azotea es agradable y el ambiente no está nada mal.*"
     },
     "rooftop_1_2_2": {
         "name": "Seoyeon",
-        "text": "\"¡Me alegra que te guste! Ah, y prueba esto también. Le puse un esfuerzo extra a este.\""
+        "text": "\"Me alegra que te guste, ha valido la pena hacerlo. Ah, prueba esto también. Le puse especial dedicación.\""
     },
     "rooftop_1_2_3": {
         "name": "Seoyeon",
-        "text": "\"¡Especialmente estas salchichas de pulpo son mi obra maestra! ¿Quieres probar una?\"",
+        "text": "\"Sobre todo esta salchicha de pulpo, es mi obra maestra. ¿Quieres probar?\"",
         "choices": [
-            "¡Vaya, se ve tan delicioso! Eres una genio de la cocina, Seoyeon.",
-            "Di... 'ahhh'",
-            "Es la primera lonchera con tanto cariño que he visto. Gracias.",
-            "No se ve tan apetitoso... Debería haber ido a la tienda."
+            "Wow, ¿esto también lo hiciste tú? Seoyeon, eres más polifacética de lo que pensaba.",
+            "Di... ahhh.",
+            "Es la primera vez que veo un almuerzo así. Gracias de corazón.",
+            "Hmm... sinceramente, igual hubiera sido mejor ir a la tienda."
         ]
     },
     "rooftop_talk_ah_fail": {
         "name": "Seoyeon",
-        "text": "*La expresión de Seoyeon se congela instantáneamente. Baja los palillos, desconcertada.* \"Um... eso es un poco... {name}, todavía no somos tan cercanos. La broma fue demasiado lejos.\""
+        "text": "*La expresión de Seoyeon se congela al instante. Deja los palillos y me mira.* \"...¿Qué? Todavía no tenemos esa confianza. ¿No te pasaste un poco?\""
     },
     "rooftop_awkward": {
         "name": "Yo",
-        "text": "*La atmósfera se volvió incómoda al instante. Comimos en silencio por un rato.*"
+        "text": "*El ambiente se puso tenso de golpe. Comimos en silencio un buen rato.*"
     },
     "lunch_refuse_rooftop": {
         "name": "Seoyeon",
-        "text": "*El rostro de Seoyeon decae. Intenta ocultar su decepción pero sus hombros caen ligeramente.* \"...Está bien, entiendo. Entonces iré sola.\""
+        "text": "*La comisura de los labios de Seoyeon baja ligeramente. Se recompone enseguida, pero por un instante se le notó la decepción.* \"...Vale. Entendido. Entonces voy sola.\""
     },
     "rooftop_talk_rude": {
         "name": "Seoyeon",
-        "text": "*La mano de Seoyeon tiembla ligeramente. Intenta forzar una sonrisa pero sus ojos se humedecen.*"
+        "text": "*La mano de Seoyeon se detiene imperceptiblemente. Su rostro pierde toda expresión.*"
     },
     "rooftop_talk_food": {
         "name": "Seoyeon",
-        "text": "*Sus mejillas se sonrojan de alegría.*"
+        "text": "*Se toca el pelo sin motivo y se le escapa una sonrisa.*"
     },
     "rooftop_talk_food_2": {
         "name": "Seoyeon",
-        "text": "\"¿De verdad? ¡Qué alivio! En realidad, es la primera vez que sirvo mi cocina a alguien, así que estaba un poco nerviosa. ¡Come mucho, aún queda bastante!\""
+        "text": "\"¿Polifacética...? Bueno, no lo voy a negar. La verdad es que es la primera vez que le doy de probar mi comida a alguien. Eres mi primer catador oficial.\""
     },
     "rooftop_talk_ah": {
         "name": "Seoyeon",
-        "text": "*El rostro de Seoyeon se pone rojo. Cuidadosamente acerca la salchicha a mi boca.*"
+        "text": "*El rostro de Seoyeon se pone rojo de golpe. Duda un momento como si fuera a dejarlo, suspira... y al final coge los palillos.*"
     },
     "rooftop_talk_ah_2": {
         "name": "Seoyeon",
-        "text": "\"¿Q-qué?! Tú de verdad... diciendo esas cosas tan tranquilamente... Bien, no tienes remedio. ¡Solo esta vez! Toma... 'ahhh'\""
+        "text": "\"...Tú, a veces eres demasiado atrevido. (Resignada, coge la salchicha con los palillos y la acerca a mi boca.) Solo una vez. Di ahhh.\""
     },
     "rooftop_talk_thanks": {
         "name": "Seoyeon",
-        "text": "*Sonríe y limpia la salsa de la comisura de mi boca.*"
+        "text": "*Seoyeon sonríe brevemente y con naturalidad me limpia la salsa de la comisura de la boca con el dedo.*"
     },
     "rooftop_talk_thanks_2": {
         "name": "Seoyeon",
-        "text": "\"¿Gracias...? Yo debería agradecerte a ti por comer conmigo. Sabe mucho mejor que comer sola. ¿Comerás conmigo así otra vez?\""
+        "text": "\"¿Gracias...? Soy yo la que te lo agradece, por comer conmigo. Definitivamente sabe mejor que comer sola. Repitamos esto de vez en cuando.\""
     },
     "rooftop_2_normal": {
         "name": "Seoyeon",
-        "text": "*Después de terminar la comida, nos sentamos lado a lado y miramos el cielo lejano. Seoyeon habla con cuidado.*"
+        "text": "*Terminamos de comer y nos sentamos uno al lado del otro disfrutando la brisa. Seoyeon rompe el silencio.*"
     },
     "rooftop_2_low": {
         "name": "Seoyeon",
-        "text": "*Después de terminar la comida, Seoyeon habla tras un pesado silencio. Su voz lleva un tono de incomodidad.*"
+        "text": "*Tras la comida, Seoyeon habla después de un silencio pesado. Su voz suena algo distante.*"
     },
     "rooftop_2_2_low": {
         "name": "Seoyeon",
-        "text": "\"Oye, {name}... La verdad, quería conocerte mejor hoy, pero la conversación parece más difícil de lo que pensaba. De todas formas, gracias por almorzar conmigo.\""
+        "text": "\"{name}... siendo sincera, hoy no fue fácil hablar contigo. Pero gracias por comer conmigo.\""
     },
     "rooftop_2_2": {
         "name": "Seoyeon",
-        "text": "\"Oye, {name}... La verdad, aunque apenas te conocí hoy, siento que puedo hablar contigo tan fácilmente, y eso me hace feliz. ¿Y tú?\""
+        "text": "\"{name}... te conocí hoy y es raro, pero me sale hablar contigo con total naturalidad. No suelo ser así. ¿A ti qué te parece?\""
     },
     "rooftop_free_talk": {
         "name": "Seoyeon",
-        "text": "\"Jeje, ¿fue eso demasiado serio de repente? Hablemos más relajados. ¿No tienes curiosidad de nada sobre mí?\"",
-        "context": "A peaceful and romantic atmosphere after having lunch alone with Seoyeon on the school rooftop. Keep the conversation going until it naturally concludes. When the conversation ends, Seoyeon will mention that being with you feels comfortable and good, and ask why that might be. Only in the final turn, mention the special feeling or comfort between us and naturally ask the question.",
-        "personality": "A bit more bold and honest than usual. Wants to know how the protagonist thinks about their relationship and why they feel comfortable."
+        "text": "\"¿Me puse muy seria? Vamos, hablemos de lo que sea. ¿Quieres saber algo de mí?\"",
+        "context": "Hora del almuerzo, en la azotea del colegio, solos después de comer juntos en un ambiente tranquilo y algo romántico. Seoyeon mantiene su actitud cool habitual, pero se está abriendo poco a poco al protagonista. Sigue la conversación hasta que cierre naturalmente. Cuando la conversación termine, Seoyeon menciona que se siente cómoda y bien estando con él, y le pregunta por qué cree que es así. Solo en el último turno, menciona esa sensación especial o comodidad entre ellos y lanza la pregunta de forma natural.",
+        "personality": "Belleza fría y presidenta del consejo estudiantil, pero se está volviendo más sincera frente al protagonista. Lanza preguntas directas pero con un toque de sondeo, y según la reacción del protagonista abre más su corazón o levanta muros."
     },
     "rooftop_choices_high": {
         "name": "Yo",
-        "text": "*Mientras hablaba con Seoyeon, la atmósfera se volvió sutil. Me mira a los ojos con una sonrisa suave. Me preguntó por qué estar conmigo se siente cómodo y agradable.*",
+        "text": "*Hablando con Seoyeon, el ambiente se volvió especial. Ella aparta el pelo que el viento le revuelve y me mira fijamente. Me dijo que se siente cómoda conmigo y me preguntó por qué cree que es.*",
         "choices": [
-            "¿Quizás sea algo como el destino?",
-            "¿Quizás porque eres tan amable conmigo?",
-            "Bueno, aún no estoy seguro."
+            "¿No será cosa del destino?",
+            "¿Será porque tú me tratas con naturalidad?",
+            "Pues la verdad, aún no lo tengo claro."
         ]
     },
     "rooftop_choices_low": {
         "name": "Yo",
-        "text": "*La expresión de Seoyeon está sombría. La conversación no salió bien al parecer. Suspiró luciendo un poco confundida, pero aún así preguntó por qué estar conmigo se siente cómodo.*",
+        "text": "*La expresión de Seoyeon es complicada. La conversación no fue del todo fluida... Aun así, me dijo que conmigo se siente rara pero cómoda, y me preguntó por qué será.*",
         "choices": [
-            "¿Quizás sea algo como el destino?",
-            "¿Quizás porque eres tan amable conmigo?",
-            "Bueno, aún no estoy seguro."
+            "¿No será cosa del destino?",
+            "¿Será porque tú me tratas con naturalidad?",
+            "Pues la verdad, aún no lo tengo claro."
         ]
     },
     "rooftop_choices": {
         "name": "Yo",
-        "text": "*Terminé una conversación agradable con Seoyeon. Me mira con ojos brillantes, esperando mi respuesta. Me preguntó por qué estar conmigo se siente cómodo y agradable.*",
+        "text": "*Terminé una conversación agradable con Seoyeon. Me mira con los ojos brillantes, expectante. Me dijo que conmigo se siente cómoda, y me preguntó por qué será.*",
         "choices": [
-            "¿Quizás sea algo como el destino?",
-            "¿Quizás porque eres tan amable conmigo?",
-            "Bueno, aún no estoy seguro."
+            "¿No será cosa del destino?",
+            "¿Será porque tú me tratas con naturalidad?",
+            "Pues la verdad, aún no lo tengo claro."
         ]
     },
     "rooftop_destiny_high": {
         "name": "Seoyeon",
-        "text": "*Se sonroja y toma mi mano con fuerza. Nuestras puntas de los dedos se tocan cálidamente.*"
+        "text": "*Seoyeon inhala suavemente y posa su mano sobre la mía. Sus dedos están cálidos.*"
     },
     "rooftop_destiny_high_2": {
         "name": "Seoyeon",
-        "text": "\"Yo también lo creo... Estar así con {name} se siente como un sueño. ¿Podemos seguir juntos así... como el destino?\""
+        "text": "\"...Yo sentí lo mismo. Es el primer día y aquí estamos, comiendo tan a gusto... ¿no te parece increíble? Quiero seguir así.\""
     },
     "rooftop_destiny_normal": {
         "name": "Seoyeon",
-        "text": "*Sonríe tímidamente y coloca suavemente su mano sobre la mía.*"
+        "text": "*Seoyeon posa suavemente su mano sobre la mía. El viento le alborota el pelo.*"
     },
     "rooftop_destiny_normal_2": {
         "name": "Seoyeon",
-        "text": "\"Destino... Jeje, es un poco cursi pero no me molesta. Yo también me siento así a veces cuando estoy contigo.\""
+        "text": "\"Destino... suena un poco cursi, pero bueno. No me disgusta. Yo también tengo esa sensación a veces.\""
     },
     "rooftop_destiny_low": {
         "name": "Seoyeon",
-        "text": "*Rápidamente retira su mano, luciendo desconcertada.*"
+        "text": "*Seoyeon retira la mano disimuladamente y levanta una ceja.*"
     },
     "rooftop_destiny_low_2": {
         "name": "Seoyeon",
-        "text": "\"¿Destino? Decir eso el primer día de transferencia... {name}, creo que la broma fue demasiado lejos. Todavía no tenemos ese tipo de relación.\""
+        "text": "\"¿Destino? Vaya, el primer día y ya a lo grande. {name}, ¿no vas demasiado rápido? Todavía no estamos en esa fase.\""
     },
     "rooftop_kind_high": {
         "name": "Seoyeon",
-        "text": "*Se le humedecen un poco los ojos y me da las gracias.*"
+        "text": "*Abre los ojos con sorpresa y luego sonríe con suavidad.*"
     },
     "rooftop_kind_high_2": {
         "name": "Seoyeon",
-        "text": "\"Me agradeces por ser amable... Yo debería agradecerte a ti. Que hayas aceptado mi amabilidad con gusto me dio mucha fuerza también.\""
+        "text": "\"¿Me agradeces...? La que debería agradecer soy yo. Que aceptaras mi atención con tanta naturalidad me hizo sentir cómoda a mí también.\""
     },
     "rooftop_kind_low": {
         "name": "Seoyeon",
-        "text": "*Suspira y responde fríamente.*"
+        "text": "*Seoyeon suspira y desvía la mirada.*"
     },
     "rooftop_kind_low_2": {
         "name": "Seoyeon",
-        "text": "\"Estás cómodo porque fui amable... ¿Eso no significa que estás dando mi amabilidad por sentada? Eso es un poco decepcionante.\""
+        "text": "\"¿Que estás cómodo porque soy amable...? Esa respuesta es un poco vaga, ¿no? Bueno, al menos eres honesto.\""
     },
     "rooftop_kind_normal": {
         "name": "Seoyeon",
-        "text": "*Asiente tímidamente con una sonrisa.*"
+        "text": "*Seoyeon asiente y sonríe levemente.*"
     },
     "rooftop_kind_normal_2": {
         "name": "Seoyeon",
-        "text": "\"Jeje, es una respuesta de estudiante modelo. ¡Pero es correcta! Me alegra haberte hecho sentir cómodo.\""
+        "text": "\"Respuesta de alumno modelo. Pero aciertas. Me alegra poder hacerte sentir a gusto.\""
     },
     "rooftop_comfortable_high": {
         "name": "Seoyeon",
-        "text": "*Felizmente apoya su cabeza ligeramente en mi hombro.*"
+        "text": "*Seoyeon, contenta, apoya ligeramente la cabeza en mi hombro.*"
     },
     "rooftop_comfortable_high_2": {
         "name": "Seoyeon",
-        "text": "\"Yo también. Estar con {name} realmente me tranquiliza. Como si nos conociéramos desde hace mucho tiempo... Gracias por sentir lo mismo.\""
+        "text": "\"Yo igual. Contigo siento que puedo ser solo Seoyeon, sin el título de presidenta del consejo. Gracias.\""
     },
     "rooftop_comfortable_low": {
         "name": "Seoyeon",
-        "text": "*Sonríe amargamente y voltea la cabeza.*"
+        "text": "*Seoyeon sonríe con un toque amargo y mira al cielo.*"
     },
     "rooftop_comfortable_low_2": {
         "name": "Seoyeon",
-        "text": "\"No estás seguro... ¿Eso significa que aún te sientes incómodo conmigo? Supongo que necesito esforzarme más.\""
+        "text": "\"¿No lo tienes claro...? ¿Todavía te resulta incómodo estar conmigo? Bueno, qué se le va a hacer. El tiempo lo arreglará.\""
     },
     "rooftop_comfortable_normal": {
         "name": "Seoyeon",
-        "text": "*Asiente con satisfacción.*"
+        "text": "*Seoyeon asiente con gesto satisfecho.*"
     },
     "rooftop_comfortable_normal_2": {
         "name": "Seoyeon",
-        "text": "\"Me alegra que te sientas cómodo. Cuando estoy contigo, siento que puedo dejar la carga de ser presidenta del consejo estudiantil por un momento. Gracias, {name}.\""
+        "text": "\"Me alegra que estés a gusto. Yo también, contigo se me va la tensión innecesaria. Ojalá hubiera más momentos así.\""
     },
     "seyoun_contact_exchange": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se detiene mientras empaca su bolsa, luego me mira con vacilación.*",
-        "context": "After sharing lunch on the rooftop together, Seoyeon is about to suggest exchanging contact info. She's a little shy but expectant. It's a casual conversation that naturally leads to exchanging numbers.",
-        "personality": "A kind, caring, and responsible student council president. She has a crush on the transfer student protagonist and wants to exchange numbers, but is too shy to ask directly."
+        "text": "*Seoyeon se detiene un momento mientras recoge sus cosas y me mira.*",
+        "context": "Después de comer juntos en la azotea, Seoyeon está a punto de proponerle intercambiar contactos. Quiere hacerlo con aire despreocupado, pero en el fondo está algo nerviosa. Una charla ligera que desemboca naturalmente en intercambiar números.",
+        "personality": "Belleza fría y presidenta del consejo estudiantil. Directa y factual, pero le cuesta más de lo esperado sacar el tema de intercambiar contactos, un contraste que la hace interesante."
     },
     "seyoun_contact_exchange_high": {
         "name": "Seoyeon",
-        "text": "*Seoyeon tímidamente extiende su celular.* \"Um... si está bien, ¿podrías darme tu número? Quiero preguntarte sobre menús de almuerzo...\"",
+        "text": "*Seoyeon saca el móvil con timidez.* \"Oye... intercambiemos contactos. Para preguntarte cosas del menú del almuerzo y eso... ya sabes.\"",
         "choices": [
-            "¡Claro! Yo también quería hablar más contigo, Seoyeon.",
-            "Lo siento, creo que es un poco pronto."
+            "Claro. Yo también quería seguir hablando contigo, Seoyeon.",
+            "Perdona, creo que todavía es pronto."
         ]
     },
     "seyoun_contact_exchange_normal": {
         "name": "Seoyeon",
-        "text": "\"Um... ¿estaría bien intercambiar información de contacto? Podría haber asuntos del consejo estudiantil que discutir...\"",
+        "text": "\"Oye, ¿te parece si intercambiamos contactos? Por si hay algo del consejo estudiantil que haya que coordinar.\"",
         "choices": [
-            "¡Claro! Yo también quería hablar más contigo, Seoyeon.",
-            "Lo siento, creo que es un poco pronto."
+            "Claro. Yo también quería seguir hablando contigo, Seoyeon.",
+            "Perdona, creo que todavía es pronto."
         ]
     },
     "seyoun_contact_exchange_low": {
         "name": "Seoyeon",
-        "text": "*Seoyeon me mira con cautela.* \"...Oye, podría haber asuntos del consejo estudiantil, así que ¿podrías darme tu número?\"",
+        "text": "*Seoyeon me mira tanteando mi reacción.* \"...Puede que necesite contactarte por temas del consejo, así que ¿me pasas tu número?\"",
         "choices": [
-            "Claro, está bien.",
-            "Lo siento, creo que es un poco pronto."
+            "Sí, vale.",
+            "Perdona, creo que todavía es pronto."
         ]
     },
     "seyoun_contact_success_cold": {
         "name": "Seoyeon",
-        "text": "*Guarda el número.* \"Gracias. Entonces... te contactaré cuando sea necesario.\""
+        "text": "*Guarda el número y asiente brevemente.* \"Gracias. Te escribo cuando haga falta.\""
     },
     "seyoun_contact_success": {
         "name": "Seoyeon",
-        "text": "*Sonríe radiantemente y guarda el número. Sus dedos se mueven emocionados.* \"¡Gracias! Entonces... te mandaré un mensaje después. ¿Tienes que responder, ok?\""
+        "text": "*Sonríe abiertamente mientras guarda el número.* \"Genial. Entonces te escribo luego. Más te vale contestar, ¿eh?\""
     },
     "seyoun_contact_fail": {
         "name": "Seoyeon",
-        "text": "*Luce un poco abatida pero luego fuerza una sonrisa y asiente.* \"Oh... está bien, ¡lo siento! ¿Fui muy apresurada? Podemos acercarnos lentamente, ¿verdad?\""
+        "text": "*La comisura de sus labios baja un instante, pero enseguida vuelve a subir.* \"...Sí, fui demasiado rápida. Poco a poco nos iremos conociendo.\""
     },
     "lunch_alone": {
         "name": "Yo",
-        "text": "*Caminando tranquilamente por el pasillo solo, llegué al Anexo de la Biblioteca. Allí, encontré a una chica recostada junto a la ventana leyendo un libro.*"
+        "text": "*Paseando solo por los pasillos, llegué al ala de la biblioteca. Me crucé miradas con una chica que leía recostada junto a la ventana.*"
     },
     "alone_2": {
         "name": "???",
-        "text": "*Levanta la vista de su libro y me mira fijamente. Con una voz baja, habla.*"
+        "text": "*Levanta la vista del libro y me mira fijamente. Voz baja.*"
     },
     "alone_2_2": {
         "name": "???",
-        "text": "\"...¿Estás perdido? Los estudiantes normalmente no vienen aquí. De alguna forma encontraste el camino.\""
+        "text": "\"...Si no haces ruido, puedes sentarte.\""
     },
     "yuna_intro": {
         "name": "???",
-        "text": "*Sus profundos y misteriosos ojos púrpura me observan en silencio. Es como si intentara ver a través de mi alma.*"
+        "text": "*Unos ojos violetas me examinan en silencio. Es la mirada de alguien acostumbrada a observar.*"
     },
     "yuna_intro_name_ask": {
-        "name": "???",
-        "text": "\"Soy 'Yuna'. ¿Cuál es... tu nombre?\""
+        "name": "Yuna",
+        "text": "\"...Yuna. ¿Y tú?\""
     },
     "yuna_intro_name_share": {
         "name": "Yo",
@@ -321,229 +321,229 @@
     },
     "yuna_intro_2": {
         "name": "Yuna",
-        "text": "\"{name}... Jeje, qué lindo nombre. Esta escuela... es muy diferente de lo que parece. Y tú... hay algo extrañamente familiar en ti.\""
+        "text": "\"{name}... Tienes la misma luz.\""
     },
     "yuna_free_talk": {
         "name": "Yuna",
-        "text": "\"...¿Hay algo que te dé curiosidad? ¿O quieres saber sobre esta escuela?\"",
-        "context": "In the quiet Library Annex, first meeting with Yuna who has a mysterious and cold atmosphere. Keep the conversation going until it naturally concludes. When the conversation ends, Yuna will ask if you want to know more about her or the school's secrets. Only in the final turn, show an attitude of checking if you're ready for deeper conversation.",
-        "personality": "A mysterious and cold girl with many secrets. She feels a strange interest in the protagonist."
+        "text": "\"...¿Tienes algo que preguntar?\"",
+        "context": "En el ala tranquila de la biblioteca, primer encuentro con Yuna, lánguida y que va a su propio ritmo. Yuna habla poco y en frases cortas, pero dice lo que piensa. Es del tipo que te pasa notas porque le da pereza hablar, pero no rechaza la conversación. Sigue la conversación hasta que cierre naturalmente. Cuando la conversación termine, Yuna pregunta si quiere saber más sobre ella o los secretos del colegio. Solo en el último turno, muestra una actitud de comprobar si está listo para una conversación más profunda.",
+        "personality": "Chica literaria lánguida y directa. Del tipo que escribe notas porque le da pereza hablar, pero siente una curiosidad extraña por el protagonista. Usa frases cortas y crípticas, y va completamente a su aire."
     },
     "yuna_choices_high": {
         "name": "Yo",
-        "text": "*Mientras hablaba con Yuna, sentí que me atraía su aura misteriosa. Me mira con una leve sonrisa y me preguntó si quiero saber más sobre ella.*",
+        "text": "*Hablando con Yuna, me fui sintiendo atraído por su aura única. Me pasó un papel en blanco con algo escrito. Decía '¿Quieres saber más?'.*",
         "choices": [
-            "The school is different? What do you mean by that?",
-            "Familiar... Have you seen me before?",
-            "You seem dangerous somehow. But I can't take my eyes off you."
+            "¿Qué quieres decir con que este colegio no es lo que parece?",
+            "¿Que te resulto familiar...? ¿Me has visto antes en algún sitio?",
+            "Pareces peligrosa. Pero no puedo dejar de mirarte."
         ]
     },
     "yuna_choices_low": {
         "name": "Yo",
-        "text": "*La mirada de Yuna se ha vuelto más fría. Mi actitud parece haberla molestado. Habló como si me advirtiera con una voz fría.*",
+        "text": "*La mirada de Yuna se volvió aún más fría. Parece que mi actitud no le gustó. Soltó una frase cortante con frialdad.*",
         "choices": [
-            "The school is different? What do you mean by that?",
-            "Familiar... Have you seen me before?",
-            "You seem dangerous somehow. But I can't take my eyes off you."
+            "¿Qué quieres decir con que este colegio no es lo que parece?",
+            "¿Que te resulto familiar...? ¿Me has visto antes en algún sitio?",
+            "Pareces peligrosa. Pero no puedo dejar de mirarte."
         ]
     },
     "yuna_choices": {
         "name": "Yo",
-        "text": "*La conversación con Yuna ha concluido por ahora. Sus ojos púrpura aún mantienen una mirada como si me vieran a través.*",
+        "text": "*La conversación con Yuna se pausó. Sus ojos violetas siguen observándome en silencio.*",
         "choices": [
-            "The school is different? What do you mean by that?",
-            "Familiar... Have you seen me before?",
-            "You seem dangerous somehow. But I can't take my eyes off you."
+            "¿Qué quieres decir con que este colegio no es lo que parece?",
+            "¿Que te resulto familiar...? ¿Me has visto antes en algún sitio?",
+            "Pareces peligrosa. Pero no puedo dejar de mirarte."
         ]
     },
     "yuna_secret_high": {
         "name": "Yuna",
-        "text": "*Roza suavemente el dorso de mi mano y da una sonrisa misteriosa.*"
+        "text": "*Me roza el dorso de la mano con la punta del dedo y esboza una sonrisa enigmática.*"
     },
     "yuna_secret_high_2": {
         "name": "Yuna",
-        "text": "\"Esa mirada en tus ojos... Me gusta mucho. ¿Qué expresión pondrás cuando descubras la enorme verdad oculta bajo esta escuela? Lo descubrirás pronto. Yo misma te enseñaré.\""
+        "text": "\"...Te lo preguntaba en serio. Estoy escribiendo algo, y no se lo he enseñado a nadie todavía. A ti... puede que te deje verlo.\""
     },
     "yuna_secret_low": {
         "name": "Yuna",
-        "text": "*Me empuja con una expresión burlona.*"
+        "text": "*Bufa con desdén y vuelve a su libro.*"
     },
     "yuna_secret_low_2": {
         "name": "Yuna",
-        "text": "\"¿Secretos? No es algo que alguien como tú pueda manejar. No metas la nariz donde no te llaman, simplemente lleva tu vida escolar tranquilamente.\""
+        "text": "\"¿Secretos? No es algo que alguien como tú pueda manejar. No metas las narices donde no te llaman.\""
     },
     "yuna_secret_normal": {
         "name": "Yuna",
-        "text": "*Cierra su libro con una sonrisa misteriosa en los labios. Sus labios se acercan a mi oído y susurran.*"
+        "text": "*Esboza una sonrisa enigmática y cierra el libro. Se acerca a mi oído y susurra.*"
     },
     "yuna_secret_normal_2": {
         "name": "Yuna",
-        "text": "\"Jeje, ¿curioso? Pero a veces es mejor no saber los secretos. Las historias que esta escuela intenta ocultar... podrías salir herido si las conoces.\""
+        "text": "\"¿Curioso? A veces los secretos es mejor no saberlos. Lo que parece más pacífico es lo más peligroso.\""
     },
     "yuna_scent_high": {
         "name": "Yuna",
-        "text": "*Se acerca a mi rostro y respira profundamente.*"
+        "text": "*Se acerca e inhala profundamente.*"
     },
     "yuna_scent_high_2": {
         "name": "Yuna",
-        "text": "\"Como pensaba... El dulce aroma de tu alma. Siento que he estado esperando por mucho tiempo. {name}, podrías ser una existencia mucho más especial de lo que crees.\""
+        "text": "\"...Reacción interesante. De todos los que han venido aquí, ninguno era como tú. {name}, ¿eres diferente?\""
     },
     "yuna_scent_low": {
         "name": "Yuna",
-        "text": "*Arruga la nariz mostrando desagrado.*"
+        "text": "*Arruga la nariz y gira la cabeza.*"
     },
     "yuna_scent_low_2": {
         "name": "Yuna",
-        "text": "\"Supongo que me equivoqué. Solo un olor desagradable como cualquier chico común. No finjas que me conoces.\""
+        "text": "\"Parece que me equivoqué. No hay nada especial. No te hagas el interesante.\""
     },
     "yuna_scent_normal": {
         "name": "Yuna",
-        "text": "*Da un paso más cerca y me mira fijamente. Murmura con una expresión solitaria.*"
+        "text": "*Da un paso hacia mí y me mira fijamente. Murmura con expresión melancólica.*"
     },
     "yuna_scent_normal_2": {
         "name": "Yuna",
-        "text": "\"No, es la primera vez que te veo. Pero la 'luz' en tus ojos... es bastante atractiva. Pareces diferente de los chicos desanimados de esta escuela. ¿Puedo seguir observando cómo cambias?\""
+        "text": "\"Es la primera vez que te veo. Pero eres peculiar. Los estudiantes nuevos suelen andar midiendo cada paso, pero tú no. Eso tiene su gracia.\""
     },
     "yuna_danger_high": {
         "name": "Yuna",
-        "text": "*Sonríe de forma encantadora y levanta ligeramente mi barbilla.*"
+        "text": "*Sonríe levemente y me levanta la barbilla con la punta del dedo.*"
     },
     "yuna_danger_high_2": {
         "name": "Yuna",
-        "text": "\"¿Así que eres del tipo que disfruta el peligro? Jeje, bien. Tengo curiosidad de cuánto puedo romperte. Realmente espero con ansias el tiempo que viene.\""
+        "text": "\"¿Que parezco peligrosa? Exageras. Solo soy rápida descartando lo que me aburre. Pero tú aún no has sido descartado. Qué curioso.\""
     },
     "yuna_danger_low": {
         "name": "Yuna",
-        "text": "*Me advierte con ojos helados.*"
+        "text": "*Me advierte con mirada gélida.*"
     },
     "yuna_danger_low_2": {
         "name": "Yuna",
-        "text": "\"Cuida tu boca. A menos que quieras saber qué es peor que la muerte. Si te me acercas descuidadamente, no encontrarán ni tus huesos.\""
+        "text": "\"...Déjalo. No me canses. Si no te interesa, vete por donde viniste.\""
     },
     "yuna_danger_normal": {
         "name": "Yuna",
-        "text": "*Roza mi mejilla suavemente con dedos fríos. Me mira fijamente a los ojos. Aparece una sonrisa extraña.*"
+        "text": "*Me roza la mejilla con sus dedos fríos. Sonrisa enigmática.*"
     },
     "yuna_danger_normal_2": {
         "name": "Yuna",
-        "text": "\"Peligrosa, dices... Jeje, correcto. Pero las personas como tú que se acercan sabiendo que es peligroso, no me desagradan. Hasta que pierdas esa luz especial... estaré a tu lado.\""
+        "text": "\"¿Peligrosa...? Qué forma tan graciosa de decirlo. Bueno, justo estaba aburrida. Al menos como compañía para charlar, me sirves.\""
     },
     "lunch_store": {
         "name": "Yo",
-        "text": "*¡Conseguí el último 'pan de concha de chocolate' en la tienda! Con un sentimiento de victoria, le doy un gran mordisco al pan, y la dulzura llena mi boca.*"
+        "text": "*¡Conseguí el último pan de chocolate en la batalla de la tienda! Le doy un buen mordisco saboreando la dulce victoria.*"
     },
     "lunch_store_2": {
         "name": "Yo",
-        "text": "*Felizmente comiendo el pan y regresando, choqué con alguien.*"
+        "text": "*Voy comiéndome el pan tan contento cuando choco con alguien de frente.*"
     },
     "lunch_store_teacher": {
         "name": "Profesora",
-        "text": "\"¡Oh, lo siento! ...Espera, ¿no eres {name}? ¿Tú también viniste a comprar pan a la tienda?\""
+        "text": "\"Ay, perdona... ¿eh? ¿{name}? ¿Tú también viniste a la tienda a comprar pan?\""
     },
     "lunch_store_teacher_2": {
         "name": "Profesora",
-        "text": "\"Jeje, ese pan es realmente bueno. Yo también vine a comprarlo pero llegué un paso tarde. ¡Disfútalo!\""
+        "text": "\"Ese pan está buenísimo. Yo venía a por el mismo pero llegué tarde. Disfrútalo. ...Tranquilo, no soy de las profes que te quitan el pan.\""
     },
     "lunch_sleep": {
         "name": "Yo",
-        "text": "*Apoyo mi cabeza en el escritorio para dormir una siesta. La luz del sol por la ventana calienta mi espalda.*"
+        "text": "*Me echo sobre el pupitre a dormir. El sol que entra por la ventana me calienta la espalda.*"
     },
     "lunch_sleep_2": {
         "name": "Yo",
-        "text": "*En mi sueño, escuché a alguien llamando mi nombre. Una voz muy añorante y triste...*"
+        "text": "*En el sueño, oí a alguien llamarme por mi nombre. Una voz llena de nostalgia y tristeza...*"
     },
     "lunch_sleep_3": {
         "name": "Yo",
-        "text": "*Cuando abrí los ojos, alguien me miraba fijamente desde arriba.*"
+        "text": "*Al abrir los ojos, alguien me está mirando fijamente desde arriba.*"
     },
     "lunch_sleep_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"Oye... ¿{name}? Despierta. La clase está empezando.\""
+        "text": "\"...Despierta. Empiezan las clases, {name}.\""
     },
     "lunch_sleep_seoyeon_2": {
         "name": "Seoyeon",
-        "text": "\"Estabas durmiendo tan profundamente que me dio pena despertarte... Pero no puedes faltar a clase. Jeje, ¡nos vemos después de clase!\""
+        "text": "\"Dormías tan profundo que dudé si despertarte o no... pero si llegas tarde quedo mal yo. Nos vemos después de clase.\""
     },
     "lunch_dain": {
         "name": "Yo",
-        "text": "*Escucho el sonido de balones de voleibol rebotando desde el gimnasio. Seguí el sonido y me dirigí al gimnasio.*"
+        "text": "*El sonido de pelotas de vóley resuena animadamente desde el gimnasio. Sigo el ruido y me dirijo allí.*"
     },
     "lunch_dain_2": {
         "name": "???",
-        "text": "*Cuando abrí la puerta del gimnasio, una chica estaba practicando voleibol. Me ve y saluda con una sonrisa radiante.*"
+        "text": "*Al abrir la puerta del gimnasio, una chica está concentrada practicando vóley sola. Me ve y me saluda con una sonrisa enorme, agitando la mano.*"
     },
     "lunch_dain_3_active": {
         "name": "???",
-        "text": "\"¡Oye, tú! Te vi durante la presentación de antes. ¡Tenías una energía increíble! No te quedes ahí mirando, ¡ven aquí y juega una ronda! ¡Te ves atlético!\""
+        "text": "\"¡Eh! ¡Te vi en la presentación de antes! ¡Tenías una energía brutal! ¡Deja de mirar desde ahí y ven aquí! ¡Echamos una partida!\""
     },
     "lunch_dain_3_normal": {
         "name": "???",
-        "text": "\"¡Oye, tú! No te quedes ahí mirando, ¡ven aquí y juega una ronda! ¡Parece que eres bueno en los deportes!\""
+        "text": "\"¡Eh! ¡No te quedes ahí plantado! ¡Ven y echamos un partido! ¡Tienes pinta de que se te da bien el deporte!\""
     },
     "dain_name_share": {
         "name": "Yo",
-        "text": "\"¿Yo? Soy {name}. Me transferí hoy.\""
+        "text": "\"Soy {name}. Me acabo de transferir hoy.\""
     },
     "dain_name_share_2": {
         "name": "Dain",
-        "text": "\"{name}? ¡Qué nombre genial! Soy Dain del club de voleibol. ¡Nadie en esta escuela tiene mejor salto que yo, así que prepárate!\""
+        "text": "\"¿{name}? ¡Mola! ¡Soy Dain, del club de vóley! ¿Alguien que salte más que yo en este colegio? ¡No existe! ¡Si te atreves, inténtalo!\""
     },
     "lunch_dain_gym_2": {
         "name": "Dain",
-        "text": "\"¡Bien, este es mi territorio! {name}, ¿estás listo? No seré suave contigo, ¡así que prepárate!\"",
+        "text": "\"¡Bien, este es mi territorio! {name}, ¿qué dices, un partido? ¡Me da igual si eres principiante! ¡Oye, para ser nuevo tu resistencia es penosa! ¡Si quieres seguirme el ritmo, toca entrenar!\"",
         "choices": [
-            "¡Bien, vamos a hacerlo!",
-            "No soy bueno en voleibol... ¿Puedes enseñarme?"
+            "¡Vamos! ¡A ver qué tal!",
+            "No tengo ni idea de vóley... ¿me enseñas?"
         ]
     },
     "lunch_dain_play": {
         "name": "Dain",
-        "text": "\"¡Oh! ¡Ese es el espíritu! ¡Allá voy! (Dain lanza un saque poderoso. Apenas logré recibirlo)\""
+        "text": "\"¡Eso, esa actitud me gusta! ¡Allá voy! (Dain lanza un saque potentísimo. Apenas logro devolver la pelota.)\""
     },
     "lunch_dain_teach": {
         "name": "Dain",
-        "text": "\"Eje, ¡no te preocupes! La gran Dain te enseñará desde lo básico. ¡Ahora, empecemos con la postura!\""
+        "text": "\"¡Ey, no te rayes! ¡Te enseño desde cero, paso a paso! ¡Venga, primero la postura!\""
     },
     "lunch_dain_end": {
         "name": "Yo",
-        "text": "*Después de eso, sudé con Dain hasta que terminó la hora del almuerzo. No esperaba que mi primer día de transferencia fuera tan activo... Sin darme cuenta, las clases de la tarde también terminaron.*"
+        "text": "*Estuve sudando con Dain hasta que se acabó el almuerzo. No esperaba que el primer día fuera tan movido. Sin darme cuenta, las clases de la tarde también terminaron.*"
     },
     "lunch_nurse": {
         "name": "Yo",
-        "text": "*Quizás porque es mi primer día, la tensión me está dando un ligero dolor de cabeza. Me dirigí tranquilamente a la enfermería.*"
+        "text": "*Será por los nervios del primer día, pero me duele un poco la cabeza. Me dirijo a la enfermería sin hacer ruido.*"
     },
     "lunch_nurse_2": {
         "name": "???",
-        "text": "\"Vaya, ¿una cara que no he visto antes? ¿Había un estudiante tan lindo en nuestra escuela?\""
+        "text": "\"Vaya, una cara nueva. ¿Teníamos un estudiante tan mono en este colegio?\""
     },
     "nurse_intro": {
         "name": "Enfermera",
-        "text": "\"Soy la enfermera de aquí. Los chicos simplemente me llaman 'profesora' pero... ¿podría decirte mi nombre especialmente?\""
+        "text": "\"Soy la enfermera del colegio. Los chicos me llaman simplemente 'profesora', pero... ¿a ti podría decirte mi nombre?\""
     },
     "nurse_name_share_pre": {
         "name": "Yo",
-        "text": "\"Mi nombre es '{name}'.\""
+        "text": "\"Soy {name}.\""
     },
     "nurse_name_share_study": {
         "name": "Enfermera",
-        "text": "\"{name}... Jeje, tus ojos son tan claros como tu nombre. Vi tu presentación antes y parecías todo un estudiante modelo. ¿Estás aquí porque estudiar te dio dolor de cabeza? ¿O pasaste porque estás nervioso en tu primer día?\""
+        "text": "\"{name}... qué mirada tan limpia tienes. Te vi antes en la presentación y parecías un alumno modelo total. ¿Será que el cerebro se te recalentó de estudiar? ¿O son los nervios del primer día?\""
     },
     "nurse_name_share_normal": {
         "name": "Enfermera",
-        "text": "\"{name}... Jeje, tus ojos son tan claros como tu nombre. ¿Estás aquí porque algo te duele? ¿O pasaste porque estás nervioso en tu primer día?\""
+        "text": "\"{name}... qué mirada tan limpia tienes. ¿Te duele algo? ¿O son los nervios del primer día?\""
     },
     "nurse_free_talk_day1": {
         "name": "Enfermera",
-        "text": "\"No te pongas nervioso. Puedes relajarte aquí. ¿Hay algo que te dé curiosidad?\"",
-        "context": "Conversing with the nurse you just met in the nurse's office. The teacher shows a provocative attitude with strange interest in the protagonist. Keep the conversation going until it naturally concludes. When the conversation ends, lunch time ends and transitions to after school. Only in the final turn, see the protagonist off saying it's time for class.",
-        "personality": "A mature and charming 'big sister' style. Enjoys teasing the protagonist with provocative words but actually cares for and wants to protect them more than anyone."
+        "text": "\"No te pongas tenso. Aquí puedes estar tranquilo. Si tienes curiosidad por algo, pregunta.\"",
+        "context": "Conversación con la enfermera que acaba de conocer en la enfermería. La enfermera tiene una actitud juguetona y lo llama 'nuevo mono' mientras le toma el pelo. Sigue la conversación hasta que cierre naturalmente. Cuando la conversación termine, se acaba el almuerzo y la escena pasa a después de clase. Solo en el último turno, despide al protagonista diciendo que es hora de volver a clase.",
+        "personality": "Enfermera juguetona y coqueta. Disfruta llamando al protagonista 'nuevo mono' y pinchándole, pero en el fondo lo cuida y protege con sinceridad."
     },
     "nurse_day1_end_high": {
         "name": "Yo",
-        "text": "*Mientras hablaba con la profesora, la hora de clase se acercó sin darme cuenta. La profesora parecía reacia a separarse y me dijo que definitivamente volviera a visitarla. Es hora de regresar a clase.*"
+        "text": "*Hablando con la enfermera, la hora de clase llegó sin darme cuenta. Me dijo que volviera sin falta. Tengo la sensación de que este sitio se me va a quedar grabado.*"
     },
     "nurse_day1_end_low": {
         "name": "Yo",
-        "text": "*La expresión de la profesora se endureció. Mi broma debió ir demasiado lejos. La profesora mostró desagrado y me dijo que volviera rápido a clase.*"
+        "text": "*La expresión de la enfermera se endureció. Parece que me pasé con la broma. Sin ocultar su disgusto, me dijo que volviera a clase.*"
     }
 }

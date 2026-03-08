@@ -76,9 +76,11 @@ class Gallery {
         // 6. 전역 이벤트 리스너 등록
         this._setupEventListeners();
 
-        // 7. 갤러리 프리토킹 시스템 초기화
-        this.freeTalk = new GalleryFreeTalk(this.lang, this.progress);
-        window.galleryFreeTalk = this.freeTalk;
+        // 7. 갤러리 프리토킹 시스템 초기화 (갤러리 페이지에서만)
+        if (typeof GalleryFreeTalk !== 'undefined') {
+            this.freeTalk = new GalleryFreeTalk(this.lang, this.progress);
+            window.galleryFreeTalk = this.freeTalk;
+        }
 
         console.log('[Gallery] 초기화 완료 - 언어:', this.lang);
     }
