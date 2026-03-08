@@ -53,20 +53,20 @@ class GalleryFreeTalk {
 
         // 캐릭터별 장소명 (5개 언어)
         this.CHAR_LOCATIONS = {
-            seyoun: { ko: '서연의 방', en: "Seoyeon's Room", es: 'Habitación de Seoyeon', ja: 'ソヨンの部屋', fr: 'Chambre de Seoyeon' },
-            yuna: { ko: '유나의 아지트', en: "Yuna's Hideout", es: 'Escondite de Yuna', ja: 'ユナのアジト', fr: 'Repaire de Yuna' },
-            dain: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café' },
-            teacher: { ko: '선생님의 방', en: "Teacher's Room", es: 'Habitación de la profesora', ja: '先生の部屋', fr: 'Chambre du professeur' },
-            nurse: { ko: '보건선생님의 집', en: "Nurse's House", es: 'Casa de la enfermera', ja: '保健先生の家', fr: "Maison de l'infirmière" }
+            seyoun: { ko: '서연의 방', en: "Seoyeon's Room", es: 'Habitación de Seoyeon', ja: 'ソヨンの部屋', fr: 'Chambre de Seoyeon', de: 'Seyeons Zimmer' },
+            yuna: { ko: '유나의 아지트', en: "Yuna's Hideout", es: 'Escondite de Yuna', ja: 'ユナのアジト', fr: 'Repaire de Yuna', de: 'Yunas Versteck' },
+            dain: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café' },
+            teacher: { ko: '선생님의 방', en: "Teacher's Room", es: 'Habitación de la profesora', ja: '先生の部屋', fr: 'Chambre du professeur', de: 'Zimmer der Lehrerin' },
+            nurse: { ko: '보건선생님의 집', en: "Nurse's House", es: 'Casa de la enfermera', ja: '保健先生の家', fr: "Maison de l'infirmière", de: 'Haus der Schulkrankenschwester' }
         };
 
         // 캐릭터별 표시 이름 (5개 언어)
         this.CHAR_NAMES = {
-            seyoun: { ko: '서연', en: 'Seoyeon', es: 'Seoyeon', ja: 'ソヨン', fr: 'Seoyeon' },
-            yuna: { ko: '유나', en: 'Yuna', es: 'Yuna', ja: 'ユナ', fr: 'Yuna' },
-            dain: { ko: '다인', en: 'Dain', es: 'Dain', ja: 'ダイン', fr: 'Dain' },
-            teacher: { ko: '담임선생님', en: 'Teacher', es: 'Profesora', ja: '担任先生', fr: 'Professeur' },
-            nurse: { ko: '보건선생님', en: 'School Nurse', es: 'Enfermera', ja: '保健先生', fr: 'Infirmière' }
+            seyoun: { ko: '서연', en: 'Seoyeon', es: 'Seoyeon', ja: 'ソヨン', fr: 'Seoyeon', de: 'Seoyeon' },
+            yuna: { ko: '유나', en: 'Yuna', es: 'Yuna', ja: 'ユナ', fr: 'Yuna', de: 'Yuna' },
+            dain: { ko: '다인', en: 'Dain', es: 'Dain', ja: 'ダイン', fr: 'Dain', de: 'Dain' },
+            teacher: { ko: '담임선생님', en: 'Teacher', es: 'Profesora', ja: '担任先生', fr: 'Professeur', de: 'Lehrerin' },
+            nurse: { ko: '보건선생님', en: 'School Nurse', es: 'Enfermera', ja: '保健先生', fr: 'Infirmière', de: 'Schulkrankenschwester' }
         };
 
         // 캐릭터별 표정 매핑
@@ -354,8 +354,8 @@ class GalleryFreeTalk {
     // =========================================================================
 
     /** 다국어 헬퍼 */
-    _L(ko, en, es, ja, fr) {
-        return ({ ko, en, es, ja, fr })[this.lang] || en;
+    _L(ko, en, es, ja, fr, de) {
+        return ({ ko, en, es, ja, fr, de })[this.lang] || en;
     }
 
     /** 지연 헬퍼 */
@@ -502,18 +502,18 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
                             <button id="remove-image-btn" title="×">×</button>
                         </div>
                         <div id="chat-input-wrapper">
-                            <button id="upload-image-btn" title="${this._L('사진', 'Photo', 'Foto', '写真', 'Photo')}">
+                            <button id="upload-image-btn" title="${this._L('사진', 'Photo', 'Foto', '写真', 'Photo', 'Foto')}">
                                 <span>📸</span>
                             </button>
                             <input type="file" id="gft-file-input" accept="image/*" style="display:none;">
                             <input type="text" id="chat-input" maxlength="200"
-                                   placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力...', 'Saisissez un message...')}">
-                            <button id="chat-send" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer')}">
+                                   placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力...', 'Saisissez un message...', 'Nachricht eingeben...')}">
+                            <button id="chat-send" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer', 'Senden')}">
                                 <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
                             </button>
                         </div>
                     </div>
-                    <button class="gft-close-btn" title="${this._L('닫기', 'Close', 'Cerrar', '閉じる', 'Fermer')}">✕</button>
+                    <button class="gft-close-btn" title="${this._L('닫기', 'Close', 'Cerrar', '閉じる', 'Fermer', 'Schließen')}">✕</button>
                 </div>
             </div>
         `;
@@ -609,7 +609,7 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
 
         const msgEl = document.getElementById('message');
         const nameTag = document.getElementById('name-tag');
-        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)');
+        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)', 'Liebling');
 
         // 이름표를 플레이어로 변경, 유저 메시지 표시
         if (nameTag) nameTag.textContent = playerName;
@@ -1014,7 +1014,7 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
         const speechStyle = this.CHAR_SPEECH_STYLES[charId]?.[this.lang] || '';
 
         // 플레이어 이름
-        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)');
+        const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)', 'Liebling');
 
         const validExprs = this.CHAR_EXPRESSIONS[charId] || [];
 
@@ -1045,7 +1045,7 @@ You MUST respond in valid JSON format:
 Available expressions: ${validExprs.join(', ')}
 Use "normal" if unsure which expression to use.
 
-IMPORTANT: Respond in the SAME LANGUAGE as the user's message. If the user writes in ${this._L('', 'English', 'Spanish', 'Japanese', 'French')}, respond in ${this._L('', 'English', 'Spanish', 'Japanese', 'French')}.
+IMPORTANT: Respond in the SAME LANGUAGE as the user's message. If the user writes in ${this._L('', 'English', 'Spanish', 'Japanese', 'French', 'Deutsch')}, respond in ${this._L('', 'English', 'Spanish', 'Japanese', 'French', 'Deutsch')}.
 ===CACHE_BOUNDARY===
 CURRENT SITUATION:
 - Location: ${location}

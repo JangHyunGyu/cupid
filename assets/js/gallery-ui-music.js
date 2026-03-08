@@ -99,7 +99,7 @@ class MusicRenderer {
                     
                     <div class="music-info">
                         <h4>${unlocked ? bgm.name : '???'}</h4>
-                        <p>${unlocked ? bgm.artist : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé' }[this.ui.lang] || 'Locked')}</p>
+                        <p>${unlocked ? bgm.artist : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé', de: 'Gesperrt' }[this.ui.lang] || 'Locked')}</p>
                     </div>
                     
                     <div class="music-duration">
@@ -117,9 +117,9 @@ class MusicRenderer {
      * @param {string} bgmId - BGM ID
      */
     showLockPopup(bgmId) {
-        const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.ui.lang] || en;
+        const L = (ko, en, es, ja, fr, de) => ({ ko, en, es, ja, fr, de })[this.ui.lang] || en;
         this.ui.showUnlockPopup({
-            title: L('음악 미해금', 'Music Locked', 'Música bloqueada', '音楽未解放', 'Musique verrouillée'),
+            title: L('음악 미해금', 'Music Locked', 'Música bloqueada', '音楽未解放', 'Musique verrouillée', 'Musik gesperrt'),
             message: L(
                 '이 배경음악은 아직 해금되지 않았습니다.<br><br><span class="condition-line">🎵 해금 조건: 게임에서 해당 음악이 재생되면 자동 해금됩니다!</span>',
                 'This BGM is not yet unlocked.<br><br><span class="condition-line">🎵 Condition: Will unlock automatically when played in game!</span>',

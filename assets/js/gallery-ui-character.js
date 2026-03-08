@@ -166,8 +166,8 @@ class CharacterRenderer {
                     </div>
                     <div class="card-info">
                         <h3>${met ? char.name : '???'}</h3>
-                        <p>${met ? char.title : ({ ko: '아직 만나지 못함', en: 'Not yet met', es: 'Aún no conocido', ja: 'まだ出会っていない', fr: 'Pas encore rencontré(e)' }[this.ui.lang] || 'Not yet met')}</p>
-                        ${met ? `<span class="expression-count">${{ ko: '표정', en: 'Expressions', es: 'Expresiones', ja: '表情', fr: 'Expressions' }[this.ui.lang] || 'Expressions'} ${expressionCount}</span>` : ''}
+                        <p>${met ? char.title : ({ ko: '아직 만나지 못함', en: 'Not yet met', es: 'Aún no conocido', ja: 'まだ出会っていない', fr: 'Pas encore rencontré(e)', de: 'Noch nicht getroffen' }[this.ui.lang] || 'Not yet met')}</p>
+                        ${met ? `<span class="expression-count">${{ ko: '표정', en: 'Expressions', es: 'Expresiones', ja: '表情', fr: 'Expressions', de: 'Ausdrücke' }[this.ui.lang] || 'Expressions'} ${expressionCount}</span>` : ''}
                     </div>
                 </div>
             `;
@@ -185,9 +185,9 @@ class CharacterRenderer {
         const met = this.ui.progress.isMet(charId);
 
         if (!met) {
-            const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.ui.lang] || en;
+            const L = (ko, en, es, ja, fr, de) => ({ ko, en, es, ja, fr, de })[this.ui.lang] || en;
             this.ui.showUnlockPopup({
-                title: L('캐릭터 미발견', 'Character Not Found', 'Personaje no encontrado', 'キャラクター未発見', 'Personnage non découvert'),
+                title: L('캐릭터 미발견', 'Character Not Found', 'Personaje no encontrado', 'キャラクター未発見', 'Personnage non découvert', 'Charakter nicht gefunden'),
                 message: L(
                     '아직 이 캐릭터를 만나지 못했습니다.<br>게임을 진행하여 캐릭터를 만나보세요!',
                     'You haven\'t met this character yet.<br>Play the game to meet them!',
@@ -230,7 +230,7 @@ class CharacterRenderer {
         if (affinity >= 80) {
             descContainer.innerHTML = char.description;
         } else {
-            const moreBtn = { ko: '소개 더 보기', en: 'Read More', es: 'Leer más', ja: 'もっと見る', fr: 'En savoir plus' }[this.ui.lang] || 'Read More';
+            const moreBtn = { ko: '소개 더 보기', en: 'Read More', es: 'Leer más', ja: 'もっと見る', fr: 'En savoir plus', de: 'Mehr lesen' }[this.ui.lang] || 'Read More';
             descContainer.innerHTML = `${char.shortDescription} <button class="desc-more-btn" data-char-id="${charId}">${moreBtn}</button>`;
         }
 
@@ -385,18 +385,18 @@ class CharacterRenderer {
         if (!container) return;
 
         const unlocked = this.ui.progress.isFreeTalkUnlocked(charId);
-        const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.ui.lang] || en;
+        const L = (ko, en, es, ja, fr, de) => ({ ko, en, es, ja, fr, de })[this.ui.lang] || en;
 
         if (unlocked) {
             container.innerHTML = `
                 <button class="freetalk-btn" data-char-id="${charId}">
-                    💕 ${L('연인모드 비밀대화', 'Secret Love Chat', 'Chat Secreto de Amor', '恋人モード秘密会話', 'Chat Secret Amoureux')}
+                    💕 ${L('연인모드 비밀대화', 'Secret Love Chat', 'Chat Secreto de Amor', '恋人モード秘密会話', 'Chat Secret Amoureux', 'Geheimes Liebeschat')}
                 </button>
             `;
         } else {
             container.innerHTML = `
                 <button class="freetalk-btn locked" data-char-id="${charId}" data-char-name="${charName}">
-                    🔒 ${L('연인모드 비밀대화', 'Secret Love Chat', 'Chat Secreto de Amor', '恋人モード秘密会話', 'Chat Secret Amoureux')}
+                    🔒 ${L('연인모드 비밀대화', 'Secret Love Chat', 'Chat Secreto de Amor', '恋人モード秘密会話', 'Chat Secret Amoureux', 'Geheimes Liebeschat')}
                 </button>
             `;
         }
@@ -408,7 +408,7 @@ class CharacterRenderer {
      * @param {string} charName - 캐릭터 이름
      */
     _showFreeTalkLockPopup(charName) {
-        const L = (ko, en, es, ja, fr) => ({ ko, en, es, ja, fr })[this.ui.lang] || en;
+        const L = (ko, en, es, ja, fr, de) => ({ ko, en, es, ja, fr, de })[this.ui.lang] || en;
 
         // 한국어 조사 처리 (받침 유무)
         const lastChar = charName[charName.length - 1];
@@ -416,7 +416,7 @@ class CharacterRenderer {
         const particle = hasJongseong ? '과' : '와';
 
         this.ui.showUnlockPopup({
-            title: L('대화 미해금', 'Chat Locked', 'Chat bloqueado', '会話未解放', 'Discussion verrouillée'),
+            title: L('대화 미해금', 'Chat Locked', 'Chat bloqueado', '会話未解放', 'Discussion verrouillée', 'Chat gesperrt'),
             message: L(
                 `${charName}${particle} 연인이 된 상태로<br>TRUE LOVE 엔딩을 클리어하면<br>대화할 수 있습니다`,
                 `Clear the TRUE LOVE ending<br>while dating ${charName}<br>to unlock chat`,
