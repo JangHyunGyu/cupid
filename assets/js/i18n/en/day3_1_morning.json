@@ -1,855 +1,860 @@
 {
     "day3_start": {
         "name": "Me",
-        "text": "*I wake up to the sound of my alarm. It's already been three days since I transferred... I'm starting to get used to waking up in the morning.*"
+        "text": "*The alarm goes off. Third morning. Life at this school is starting to feel almost routine.*"
     },
     "day3_nurse_home_morning": {
         "name": "Me",
-        "text": "*I open my eyes... Where am I? An unfamiliar ceiling.*"
+        "text": "*...I open my eyes. Unfamiliar ceiling. Oh, right. Here.*"
     },
     "day3_nurse_home_morning_2": {
         "name": "Me",
-        "text": "*Memories of last night flash through my mind. Her scent, her soft touch, and...*"
+        "text": "*Fragments of last night drift through my head. Her perfume, that soft voice, and...*"
     },
     "day3_nurse_home_morning_3": {
-        "name": "School Nurse",
-        "text": "\"Oh my, you're awake? Hehe, did you sleep well last night?\""
+        "name": "Nurse",
+        "text": "\"Oh my, you're up already? You were out cold last night~ Hehe.\""
     },
     "day3_nurse_home_morning_4": {
         "name": "Me",
-        "text": "*She hands me a cup of coffee with a knowing smile. My face feels hot.*",
+        "text": "*She hands me a cup of coffee. Her smile in the morning light is almost blinding.*",
         "choices": [
-            "\"Thank you, teacher...\"",
-            "\"Last night... was amazing\"",
-            "*Too embarrassed to speak*"
+            "\"I slept well. Thanks to you.\"",
+            "\"Last night... was really nice.\"",
+            "*Takes the coffee but can't make eye contact*"
         ]
     },
     "day3_nurse_home_morning_thanks": {
-        "name": "School Nurse",
-        "text": "\"Hehe, don't be so stiff. Not after what we shared.\""
+        "name": "Nurse",
+        "text": "\"Hehe, being all polite is no fun, is it? Not between us~\""
     },
     "day3_nurse_home_morning_bold": {
-        "name": "School Nurse",
-        "text": "\"Oh my... Bold thing to say in the morning. Hehe, teacher enjoyed it too.\""
+        "name": "Nurse",
+        "text": "\"My... throwing down the gauntlet this early? I didn't mind it either.\""
     },
     "day3_nurse_home_morning_shy": {
-        "name": "School Nurse",
-        "text": "\"Hehe, so cute. Your shy face is adorable too.\""
+        "name": "Nurse",
+        "text": "\"Aww, how cute. The shy look is quite endearing, you know?\""
     },
     "day3_nurse_home_morning_leave": {
-        "name": "School Nurse",
-        "text": "\"Now, hurry up and get ready. You need to go to school, right? When we see each other at school... pretend nothing happened, okay?\""
+        "name": "Nurse",
+        "text": "\"Now then, go get ready. If we run into each other at school... we're strangers. Got it?\""
     },
     "day3_nurse_home_morning_leave_2": {
         "name": "Me",
-        "text": "*My heart races at her wink. I quickly gather my things and leave her place.*"
+        "text": "*Leaving her sly wink behind me, I hurried out the door.*"
     },
     "day3_nurse_home_school_arrival": {
         "name": "Me",
-        "text": "*I arrived at school. The morning air feels especially refreshing today.*"
+        "text": "*Arrived at school. The morning air feels strangely refreshing. Nobody knows, right?*"
     },
     "day3_nurse_home_suspicion": {
         "name": "Seoyeon",
-        "text": "\"{name}! Good morning... Huh? Where did you come from today? It seems like you came from a different direction than usual...\""
+        "text": "\"Hey, {name}. Good morning... but you came from a different direction than usual, didn't you? I've got sharp eyes, you know.\""
     },
     "day3_nurse_home_suspicion_2": {
         "name": "Me",
-        "text": "*I'm flustered by Seoyeon's sharp question.*",
+        "text": "*Seoyeon's gaze is like a laser. I need to come up with something.*",
         "choices": [
-            "\"Just took a walk...\"",
-            "\"Stayed at a relative's house\"",
-            "*Stammer nervously*"
+            "\"Oh, I was just out for a walk and...\"",
+            "\"I stayed at a relative's place.\"",
+            "*Mumbles evasively*"
         ]
     },
     "day3_nurse_home_lie": {
         "name": "Seoyeon",
-        "text": "\"...A walk? At this hour? Hmm...\""
+        "text": "\"...A walk? At dawn? How healthy of you. I don't know what you were up to, but sure.\""
     },
     "day3_nurse_home_half_lie": {
         "name": "Seoyeon",
-        "text": "\"...A relative? A female relative?\""
+        "text": "\"...A relative? What kind of relative? A woman, by any chance?\""
     },
     "day3_nurse_home_stutter": {
         "name": "Seoyeon",
-        "text": "\"...Why can't you answer? Are you hiding something?\""
+        "text": "\"...Why won't you look at me? You're hiding something. I can tell.\""
     },
     "day3_nurse_home_yuna_appears": {
         "name": "Yuna",
-        "text": "\"...{name}. You smell different today.\""
+        "text": "\"...{name}. Did you change your perfume?\""
     },
     "day3_nurse_home_yuna_appears_2": {
         "name": "Me",
-        "text": "*Yuna stares at my face. Her eyes are... piercing.*"
+        "text": "*Yuna's nose twitches slightly. That look in her eyes... it's genuinely sharp.*"
     },
     "day3_nurse_home_yuna_appears_3": {
         "name": "Yuna",
-        "text": "\"...An adult's perfume. A woman's perfume.\""
+        "text": "\"...An adult scent. Expensive, too.\""
     },
     "day3_nurse_home_tension": {
         "name": "Seoyeon",
-        "text": "\"...What?!\""
+        "text": "\"...Wait. Perfume? If you didn't put it on yourself, then whose side were you at last night, exactly?\""
     },
     "day3_nurse_home_tension_2": {
         "name": "Me",
-        "text": "*The atmosphere became tense. I need to get out of this situation somehow.*",
+        "text": "*The air freezes. I need to get out of here.*",
         "choices": [
-            "\"I'll be late for class, gotta go!\"",
-            "\"It's a misunderstanding, I was at my parents' friend's place...\""
+            "\"Oh, I'm gonna be late for class! Gotta go!\"",
+            "\"It's a misunderstanding, I was at a family friend's place...\""
         ]
     },
     "day3_nurse_home_escape": {
         "name": "Me",
-        "text": "*I hurry to the classroom. The gazes from behind feel burning hot...*"
+        "text": "*I sprint toward the classroom at full speed. Their stares pierce my back like arrows.*"
     },
     "day3_nurse_home_excuse": {
         "name": "Seoyeon",
-        "text": "\"...Your parents' friend? Then why did you act like you were hiding something?\""
+        "text": "\"...A family friend? Then why are you being so squirrely about it?\""
     },
     "day3_nurse_home_excuse_2": {
         "name": "Me",
-        "text": "*Seoyeon looks upset. Let's just head to the classroom for now.*"
+        "text": "*Seoyeon's eyes narrow. Time to retreat to the classroom.*"
     },
     "day3_start_2": {
         "name": "Me",
-        "text": "*Looking outside, the weather is really nice today. It's already Friday... What should I do this weekend?*"
+        "text": "*Bright light outside the window. It's already Friday. What should I do this weekend?*"
     },
     "day3_start_3": {
         "name": "Me",
-        "text": "*I check my smartphone and see there are unread messages. Who could it be?*"
+        "text": "*I check my phone. There are some unread messages.*"
     },
     "day3_morning_message_check": {
         "name": "Me",
-        "text": "*Let me check the messages.*",
+        "text": "*Let's check the messages.*",
         "choices": [
             "Check Seoyeon's message",
             "Check Yuna's message",
             "Check Dain's message",
-            "Check Nurse's message",
-            "Check Homeroom Teacher's message"
+            "Check the Nurse's message",
+            "Check Teacher's message"
         ]
     },
     "day3_msg_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Message sent at 6 AM* 'Good morning! {name}, fighting for today too! Oh, and would you like to walk to school together? I'll wait for you in front of your house!'"
+        "text": "*06:00* 'Good morning, {name}. Walk to school together? I'll wait outside your place. And no, I don't accept refusals.'"
     },
     "day3_msg_yuna": {
         "name": "Yuna",
-        "text": "*Message sent at 3 AM* '...{name}. I'll wait for you at the back gate this morning. Let's go together.'"
+        "text": "*03:12* '...{name}. Back gate. Let's walk together.'"
     },
     "day3_msg_dain": {
         "name": "Dain",
-        "text": "*Message sent at 7 AM* 'Yay! {name}! Let's go to school together! Where do you live? I'll come find you! ><'"
+        "text": "*07:05* 'Yahooo!! {name}!! Let's walk to school together!! Where's your house?! I'll run over!! ><'"
     },
     "day3_msg_nurse": {
-        "name": "School Nurse",
-        "text": "*Message sent last night at 11 PM* 'Hehe, {name}. How about walking to school together this morning? Just the two of us... 😉'"
+        "name": "Nurse",
+        "text": "*23:47* 'Walk to school with me tomorrow? Just the two of us~'"
     },
     "day3_msg_teacher": {
-        "name": "Homeroom Teacher",
-        "text": "*Message sent last night at 10 PM* '{name}, are you going to school early tomorrow morning? I'm going early too, would you like to walk together?'"
+        "name": "Teacher",
+        "text": "*22:30* '{name}, are you heading to school early tomorrow? I could use some company on the walk. No extra credit for this.'"
     },
     "day3_msg_response_first": {
         "name": "Me",
-        "text": "*How should I reply?*",
+        "text": "*What should I reply?*",
         "choices": [
-            "Sure! Let's go together",
+            "Sure, let's go together",
             "Sorry, I'll go alone today",
-            "Check other messages"
+            "Check the other messages too"
         ]
     },
     "day3_msg_response_first_teachers": {
         "name": "Me",
-        "text": "*How should I reply?*",
+        "text": "*What should I reply?*",
         "choices": [
-            "Yes! Let's go together",
-            "Sorry, I'll go alone today",
-            "Check other messages"
+            "Yes, let's go together",
+            "Sorry, I'll head out alone today",
+            "Check the other messages too"
         ]
     },
     "day3_msg_response_after_check": {
         "name": "Me",
-        "text": "*I already saw this message...*"
+        "text": "*I already read this one.*"
     },
     "day3_reject_msg_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Reply* 'Oh... I see. It's okay! See you at school then!'"
+        "text": "*Reply* '...Really? Too bad, I guess. See you at school.'"
     },
     "day3_reject_msg_yuna": {
         "name": "Yuna",
-        "text": "*Reply* '...Alright. Sometimes it's more comfortable to go alone.'"
+        "text": "*Reply* '...Got it.'"
     },
     "day3_reject_msg_dain": {
         "name": "Dain",
-        "text": "*Reply* 'Aw, that's too bad! But see you at school!'"
+        "text": "*Reply* 'Whaaaat?! Why?! Fine... see you at school!!'"
     },
     "day3_reject_msg_nurse": {
-        "name": "School Nurse",
-        "text": "*Reply* 'Oh my, really? That's a shame. See you at school then.'"
+        "name": "Nurse",
+        "text": "*Reply* 'Aww, that's too bad. See you at school then~'"
     },
     "day3_reject_msg_teacher": {
-        "name": "Homeroom Teacher",
-        "text": "*Reply* 'Okay, understood. See you at school!'"
+        "name": "Teacher",
+        "text": "*Reply* 'Alright, understood. Get there safely.'"
     },
     "day3_after_reject": {
         "name": "Me",
-        "text": "*Should I check other messages?*",
+        "text": "*Should I check the other messages?*",
         "choices": [
             "Check other messages",
-            "Just go to school alone"
+            "Just walk to school alone"
         ]
     },
     "day3_check_more_messages": {
         "name": "Me",
-        "text": "*Let me check other messages.*",
+        "text": "*Let's check the other messages.*",
         "choices": [
             "Check Seoyeon's message",
             "Check Yuna's message",
             "Check Dain's message",
-            "Check Nurse's message",
+            "Check the Nurse's message",
             "Check Teacher's message",
-            "Go with Seoyeon",
-            "Go with Yuna",
-            "Go with Dain",
-            "Go with Nurse",
-            "Go with Teacher",
+            "Walk with Seoyeon",
+            "Walk with Yuna",
+            "Walk with Dain",
+            "Walk with the Nurse",
+            "Walk with Teacher",
             "Go alone"
         ]
     },
     "day3_check_more_after_reject": {
         "name": "Me",
-        "text": "*Let me check other messages.*",
+        "text": "*Let's check the other messages.*",
         "choices": [
             "Check Seoyeon's message",
             "Check Yuna's message",
             "Check Dain's message",
-            "Check Nurse's message",
+            "Check the Nurse's message",
             "Check Teacher's message",
-            "Just go to school alone"
+            "Just walk to school alone"
         ]
     },
     "day3_msg_seoyeon_after_reject": {
         "name": "Seoyeon",
-        "text": "*Message sent at 6 AM* 'Good morning! {name}, fighting for today too! Oh, and would you like to walk to school together? I'll wait for you in front of your house!'",
+        "text": "*06:00* 'Good morning, {name}. Walk to school together? I'll wait outside your place. And no, I don't accept refusals.'",
         "choices": [
-            "Go with Seoyeon *I rejected her earlier...*",
+            "Walk with Seoyeon *I already turned her down though...*",
             "Check other messages",
             "Just go alone"
         ]
     },
     "day3_msg_yuna_after_reject": {
         "name": "Yuna",
-        "text": "*Message sent at 3 AM* '...{name}. I'll wait for you at the back gate this morning. Let's go together.'",
+        "text": "*03:12* '...{name}. Back gate. Let's walk together.'",
         "choices": [
-            "Go with Yuna *I rejected her earlier...*",
+            "Walk with Yuna *I already turned her down though...*",
             "Check other messages",
             "Just go alone"
         ]
     },
     "day3_msg_dain_after_reject": {
         "name": "Dain",
-        "text": "*Message sent at 7 AM* 'Yay! {name}! Let's go to school together! Where do you live? I'll come find you! ><'",
+        "text": "*07:05* 'Yahooo!! {name}!! Let's walk to school together!! Where's your house?! I'll run over!! ><'",
         "choices": [
-            "Go with Dain *I rejected her earlier...*",
+            "Walk with Dain *I already turned her down though...*",
             "Check other messages",
             "Just go alone"
         ]
     },
     "day3_msg_nurse_after_reject": {
-        "name": "School Nurse",
-        "text": "*Message sent last night at 11 PM* 'Hehe, {name}. How about walking to school together this morning? Just the two of us... 😉'",
+        "name": "Nurse",
+        "text": "*23:47* 'Walk to school with me tomorrow? Just the two of us~'",
         "choices": [
-            "Go with Nurse *I rejected her earlier...*",
+            "Walk with the Nurse *I already turned her down though...*",
             "Check other messages",
             "Just go alone"
         ]
     },
     "day3_msg_teacher_after_reject": {
-        "name": "Homeroom Teacher",
-        "text": "*Message sent last night at 10 PM* '{name}, are you going to school early tomorrow morning? I'm going early too, would you like to walk together?'",
+        "name": "Teacher",
+        "text": "*22:30* '{name}, are you heading to school early tomorrow? I could use some company on the walk. No extra credit for this.'",
         "choices": [
-            "Go with Teacher *I rejected her earlier...*",
+            "Walk with Teacher *I already turned her down though...*",
             "Check other messages",
             "Just go alone"
         ]
     },
     "day3_change_mind": {
         "name": "Me",
-        "text": "*I sent another message. 'Sorry, I just checked other messages. I actually want to go together!'*"
+        "text": "*I send another message. 'Never mind what I said before, I want to go together!'*"
     },
     "day3_change_mind_teachers": {
         "name": "Me",
-        "text": "*I sent another message. 'Sorry, I actually want to go together!'*"
+        "text": "*I send another message. 'Actually, forget what I said earlier! I'd like to walk together after all!'*"
     },
     "day3_change_mind_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Immediate reply* 'Really?! Great! Then hurry up and come out! I'll wait!'"
+        "text": "*Instant reply* 'Changed your mind? That's fine, I was planning to wait anyway. Hurry up.'"
     },
     "day3_change_mind_yuna": {
         "name": "Yuna",
-        "text": "*Reply after a moment* '...Okay. I'll wait.'"
+        "text": "*Reply after 3 minutes* '...Okay. I'll wait.'"
     },
     "day3_change_mind_dain": {
         "name": "Dain",
-        "text": "*Immediate reply* 'Okay! I'm leaving now! Wait for me!'"
+        "text": "*Reply in 0.3 seconds* 'YESSS!! Leaving now!! Wait for me!!!!'"
     },
     "day3_change_mind_nurse": {
-        "name": "School Nurse",
-        "text": "*Reply* 'Hehe, changed your mind? Good, come out quickly.'"
+        "name": "Nurse",
+        "text": "*Reply* 'Hehe, so you can't resist me after all? Hurry up and get out here~'"
     },
     "day3_change_mind_teacher": {
-        "name": "Homeroom Teacher",
-        "text": "*Reply* 'Really? That's fine! Get ready quickly.'"
+        "name": "Teacher",
+        "text": "*Reply* 'Oh? Good. Hurry up and get ready.'"
     },
     "day3_return_to_choice": {
         "name": "Me",
-        "text": "*Hmm... who should I go with?*",
+        "text": "*So, who am I walking with?*",
         "choices": [
-            "Go with Seoyeon",
-            "Go with Yuna",
-            "Go with Dain",
-            "Go with Nurse",
-            "Go with Teacher",
+            "Walk with Seoyeon",
+            "Walk with Yuna",
+            "Walk with Dain",
+            "Walk with the Nurse",
+            "Walk with Teacher",
             "Go alone"
         ]
     },
     "day3_walk_with_seoyeon": {
         "name": "Me",
-        "text": "*I headed to the front of Seoyeon's house.*"
+        "text": "*I headed toward Seoyeon's place.*"
     },
     "day3_walk_with_seoyeon_2": {
         "name": "Seoyeon",
-        "text": "\"Wow! You really came! Thank you!\""
+        "text": "\"There you are. I said I don't accept refusals, and you actually showed up. How honest of you.\""
     },
     "day3_walk_seoyeon_dream": {
         "name": "Seoyeon",
-        "text": "*Walking side by side* \"Hey, {name}. Do you know what I dreamed about last night?\""
+        "text": "*Walking side by side* \"Hey, {name}. I had a dream last night.\""
     },
     "day3_walk_seoyeon_dream_choice": {
         "name": "Me",
-        "text": "*Seoyeon suddenly brings up a dream.*",
+        "text": "*Seoyeon brings up a dream out of nowhere.*",
         "choices": [
             "What kind of dream?",
             "Was I in it?",
-            "A nightmare?"
+            "Was it a nightmare?"
         ]
     },
     "day3_walk_seoyeon_dream_ask": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's face turns red* \"I-it's a secret! It was nothing! Why are you asking?!\""
+        "text": "*Seoyeon's ears turn red* \"...Secret. I'm not telling. Shouldn't have asked.\""
     },
     "day3_walk_seoyeon_dream_me": {
         "name": "Seoyeon",
-        "text": "*Seoyeon freezes* \"W-what?! Why would you think that! ...Okay, maybe, but that's not the point!\""
+        "text": "*Seoyeon stops in her tracks* \"...Wow. The confidence on you. ...Not that you're wrong, though.\""
     },
     "day3_walk_seoyeon_dream_bad": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sighs* \"Ugh, you totally killed the mood. It was a good dream, you know!\""
+        "text": "*Seoyeon looks at me like I'm hopeless* \"You really have a gift for killing the mood, don't you? It was a good dream, for the record.\""
     },
     "day3_walk_seoyeon_crosswalk": {
         "name": "Me",
-        "text": "*We wait for the light at the crosswalk. Standing still, Seoyeon's hand is tantalizingly close to mine.*"
+        "text": "*Waiting at the crosswalk. Standing still, her hand is almost-but-not-quite touching mine.*"
     },
     "day3_walk_seoyeon_crosswalk_2": {
         "name": "Me",
-        "text": "*Seoyeon lightly brushes my hand with her pinky finger. Our eyes meet, and we both look away at the same time.*"
+        "text": "*Seoyeon's pinky brushes the back of my hand. Our eyes meet, and we both look away at the same time.*"
     },
     "day3_walk_seoyeon_freetalk": {
         "name": "Me",
-        "text": "*We chat about various things on the way to school.*",
-        "context": "Walking to school with Seoyeon side by side. Our hands touched at the crosswalk, so there's a slightly self-conscious atmosphere. It's Friday morning, so weekend plans might come up."
+        "text": "*On the way to school, Seoyeon and I make small talk about this and that.*",
+        "context": "Walking to school with Seoyeon in the morning. Their hands just brushed at the crosswalk, so there's a subtle awareness between them. It's Friday morning, so the weekend might come up.",
+        "personality": "Seoyeon is the cool-beauty type. Sharp-tongued, composed, with a sly charm. She's possessive and bluntly direct when jealous."
     },
     "day3_seoyeon_weekend_talk": {
         "name": "Seoyeon",
-        "text": "*As the school gate comes into view, Seoyeon stutters as if trying to say something difficult* \"Um... {name}. Are you free this weekend? There's a café I've been wanting to visit...\"",
+        "text": "*As the school gate comes into view, Seoyeon casually brings it up* \"...{name}. Are you free this weekend? There's a cafe I've been wanting to check out.\"",
         "choices": [
-            "What kind of café?",
+            "What kind of cafe?",
             "Just the two of us?",
             "Sure, when should we go?"
         ]
     },
     "day3_seoyeon_weekend_ask": {
         "name": "Seoyeon",
-        "text": "\"I saw it on social media, and it has a really pretty vibe. It's awkward going alone though... Let's meet at the park fountain at 2 PM on Saturday!\""
+        "text": "\"I bookmarked it on social media. Too good to waste going alone. Saturday, 2 PM, by the park fountain.\""
     },
     "day3_seoyeon_weekend_tease": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's face turns bright red* \"W-what?! It's just friends hanging out! ...But I didn't invite anyone else. Saturday at 2 PM, at the park fountain.\""
+        "text": "*The tips of Seoyeon's ears go red* \"...What kind of question is that? I didn't invite anyone else. Saturday, 2 PM, by the park fountain.\""
     },
     "day3_seoyeon_weekend_direct": {
         "name": "Seoyeon",
-        "text": "*Seoyeon beams* \"Really?! Saturday at 2 PM, at the park fountain! You better not be late!\""
+        "text": "*Seoyeon's lips curl into a smile* \"...I'd say 'I don't accept refusals,' but. Saturday, 2 PM, by the park fountain.\""
     },
     "day3_seoyeon_weekend_choice": {
         "name": "Me",
-        "text": "*Seoyeon looks at me with eyes full of anticipation.*",
+        "text": "*Seoyeon's playing it cool, but there's the faintest waver in her eyes.*",
         "choices": [
-            "Sure, I'll definitely be there",
-            "Let me think about it",
-            "Sorry, I'm busy this weekend"
+            "Got it. I'll definitely be there.",
+            "Let me think about it and get back to you.",
+            "Sorry, I'm kind of busy this weekend."
         ]
     },
     "day3_seoyeon_weekend_yes": {
         "name": "Seoyeon",
-        "text": "*Seoyeon nearly shouts but quickly covers her mouth* \"...Ahem! O-okay. See you Saturday then. You can look forward to it!\""
+        "text": "*Seoyeon presses her lips together, then lets out a small grin* \"...Good. Saturday, then. Be late and I'm leaving without you.\""
     },
     "day3_seoyeon_weekend_later": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's expression dims slightly* \"...Okay, I see. Let me know later then.\""
+        "text": "*Seoyeon's smile stiffens slightly* \"...Sure. Let me know.\""
     },
     "day3_seoyeon_weekend_no": {
         "name": "Seoyeon",
-        "text": "*Seoyeon forces a smile* \"...Oh, is that so? It's fine! We can go some other time!\""
+        "text": "*Seoyeon pauses for a beat, then smiles* \"...That so? Well, I can go by myself.\""
     },
     "day3_walk_with_yuna": {
         "name": "Me",
-        "text": "*I headed toward the alley on the way to school. Yuna is standing under the shade of a tree.*"
+        "text": "*I headed toward the back gate. Yuna is standing under the shade of a tree.*"
     },
     "day3_walk_yuna_greet": {
         "name": "Yuna",
-        "text": "\"...You came. (Walking quietly) The weather is nice today. But... things that look peaceful are often the most dangerous.\""
+        "text": "\"...You came. *walking quietly* Clear skies today. But... clear days are the most dangerous.\""
     },
     "day3_walk_yuna_leaf": {
         "name": "Me",
-        "text": "*A leaf blown by the wind lands on my head. Yuna quietly reaches out and picks it off.*"
+        "text": "*A leaf carried by the breeze lands on my head. Yuna wordlessly reaches out and picks it off.*"
     },
     "day3_walk_yuna_leaf_2": {
         "name": "Yuna",
-        "text": "\"...Prettier than a flower.\""
+        "text": "\"...Prettier than a flower, this.\""
     },
     "day3_walk_yuna_leaf_3": {
         "name": "Me",
-        "text": "*My heart skips at Yuna's deadpan remark. Before I can respond, Yuna suddenly stops walking.*"
+        "text": "*My heart skips at that single line from Yuna's expressionless face. She suddenly stops walking.*"
     },
     "day3_walk_yuna_necktie": {
         "name": "Yuna",
-        "text": "\"...Hey. Stay still.\""
+        "text": "\"...Hold still.\""
     },
     "day3_walk_yuna_necktie_2": {
         "name": "Me",
-        "text": "*Yuna starts fixing my necktie. Her face is barely 10 centimeters away from mine.*",
+        "text": "*Yuna starts fixing my tie. Her face is barely 10cm away.*",
         "choices": [
             "*Stay still*",
-            "Your hands are cold, Yuna"
+            "Your hands are cold, Yuna."
         ]
     },
     "day3_walk_yuna_necktie_still": {
         "name": "Yuna",
-        "text": "\"...Dummy. How can you walk around with it this loose.\""
+        "text": "\"...Walking around with it this loose. Idiot.\""
     },
     "day3_walk_yuna_necktie_cold": {
         "name": "Yuna",
-        "text": "*Yuna's hands pause. After a moment of silence* \"...Want me to warm them up?\""
+        "text": "*Yuna's hands stop. A brief silence.* \"...Want me to warm them up?\""
     },
     "day3_walk_yuna_freetalk": {
         "name": "Me",
-        "text": "*I walk alongside Yuna toward school. A quiet but comfortable silence fills the air.*",
-        "context": "Walking to school with Yuna in the morning. She just fixed my necktie, creating an oddly intimate atmosphere. It's quiet but the distance between us feels close."
+        "text": "*Walking side by side toward school with Yuna. Neither of us says much, but it's not uncomfortable.*",
+        "context": "Walking to school with Yuna. She just fixed his tie, so the atmosphere is subtly charged. Quiet, but there's a closeness in the silence.",
+        "personality": "Yuna is languid, blunt, and marches to her own beat. She speaks in short, cryptic sentences. Cold on the surface, but there's a gap when she opens up."
     },
     "day3_walk_yuna_talk": {
         "name": "Yuna",
-        "text": "*Walking down the quiet path, Yuna suddenly speaks* \"{name}, this weekend... there's a place I want to show only you.\"",
+        "text": "*On a quiet stretch of the road, Yuna suddenly speaks* \"{name}. This weekend... there's a place I want to show only you.\"",
         "choices": [
             "What kind of place?",
-            "Another secret?",
-            "...Okay, when?"
+            "Another one of your mysteries?",
+            "...Sure, when?"
         ]
     },
     "day3_yuna_weekend_ask": {
         "name": "Yuna",
-        "text": "\"...A place where you can see the real face of this school. Saturday evening at 8 PM, at the school's back gate. Don't be late. There are things that can only be seen in the darkness.\""
+        "text": "\"...The real face of this school. Saturday, 8 PM, back gate. Don't be late. There are things you can only see in the dark.\""
     },
     "day3_yuna_weekend_curious": {
         "name": "Yuna",
-        "text": "*Yuna smiles coldly* \"It's closer to the truth than a secret. Saturday evening at 8 PM. Everything changes after the sun sets. You'll come, right?\""
+        "text": "*Yuna smiles coldly* \"It's not a secret. Closer to the truth. Saturday, 8 PM. Everything changes after sundown.\""
     },
     "day3_yuna_weekend_direct": {
         "name": "Yuna",
-        "text": "*Yuna looks at me in surprise, then smiles* \"...That's so like you. Saturday evening at 8 PM, school back gate. There are things that can only be seen when darkness falls. You must come.\""
+        "text": "*Yuna's eyes widen for a moment. A smile.* \"...Knew I could count on you. Saturday, 8 PM, back gate. Be there.\""
     },
     "day3_yuna_weekend_choice": {
         "name": "Me",
-        "text": "*Yuna's serious gaze pierces through me. 8 PM in the evening... Something feels ominous.*",
+        "text": "*Yuna's eyes are dead serious. 8 PM... something about this feels off.*",
         "choices": [
-            "Okay, I'll definitely come",
-            "Let me think about it and reply",
-            "Sorry, I have other plans"
+            "Got it. I'll definitely be there.",
+            "Let me think about it and get back to you.",
+            "I have other plans this weekend."
         ]
     },
     "day3_yuna_weekend_yes": {
         "name": "Yuna",
-        "text": "*Yuna briefly holds my hand then lets go* \"...Thank you. You won't regret it. Saturday night, be ready to face the truth.\""
+        "text": "*Yuna lightly grabs my sleeve, then lets go* \"...Thanks. You won't regret it.\""
     },
     "day3_yuna_weekend_later": {
         "name": "Yuna",
-        "text": "*Yuna looks disappointed and turns her head away* \"...I see. But there's only one chance. Think carefully. There's a door that only opens at night.\""
+        "text": "*Yuna looks away* \"...One chance. Think carefully.\""
     },
     "day3_yuna_weekend_no": {
         "name": "Yuna",
-        "text": "*Yuna's gaze turns cold* \"......\""
+        "text": "*Something goes cold in Yuna's eyes for a split second* \"......Okay.\""
     },
     "day3_walk_with_dain": {
         "name": "Me",
-        "text": "*On the way to the meeting spot. From a distance, Dain is waving her hand widely and running toward me.*"
+        "text": "*On my way to the meeting spot. In the distance, Dain waves both arms wildly while sprinting at full speed toward me.*"
     },
     "day3_walk_dain_bump": {
         "name": "Dain",
-        "text": "\"{name}!! Yay!\""
+        "text": "\"{name}!! Yahooo!!!\""
     },
     "day3_walk_dain_bump_2": {
         "name": "Me",
-        "text": "*Dain charges at me full speed with no brakes. There's no time to dodge— CRASH!*"
+        "text": "*Dain shows no signs of stopping. There's no time to dodge── WHAM!!*"
     },
     "day3_walk_dain_bump_3": {
         "name": "Dain",
-        "text": "\"Ow! S-sorry! I couldn't stop!\""
+        "text": "\"Ack! S-sorry!! My brakes are busted!!\""
     },
     "day3_walk_dain_bump_4": {
         "name": "Me",
-        "text": "*Dain fell on top of me. Our faces are barely 10 centimeters apart... I can feel her breath.*",
+        "text": "*Dain has landed right on top of me. Our faces are 10cm apart. I can feel her breathing.*",
         "choices": [
-            "\"Are you okay?\" (Help her up)",
-            "\"Should we stay like this?\"",
-            "*Can't say anything*"
+            "\"You okay?\" *Helps her up*",
+            "\"I dunno, this is pretty comfortable. Should we stay like this?\"",
+            "*Can't say a word*"
         ]
     },
     "day3_walk_dain_help": {
         "name": "Dain",
-        "text": "*As I take her hand and help her up, Dain's face turns beet red* \"Th-thanks... My heart almost exploded! I mean from the crash! Not for any other reason!\""
+        "text": "*I take her hand and pull her up. Dain's face turns beet red* \"Th-thanks... my heart is! pounding because! we bumped into each other! That's the only reason, okay!!!\""
     },
     "day3_walk_dain_bold": {
         "name": "Dain",
-        "text": "\"Huh?! Y-you idiot! Get up now! People are watching!\""
+        "text": "\"Huh?! ...Are you insane?! Get up right now!! People are watching!!\""
     },
     "day3_walk_dain_freeze": {
         "name": "Dain",
-        "text": "\"Hey, what's wrong?! Who's blushing here?! ...Am I blushing too? Ugh, whatever!\""
+        "text": "\"Hey, why are you just staring?! Whose face is red here! ...Mine too? Whatever, I don't care!!\""
     },
     "day3_walk_dain_greet_shy": {
         "name": "Dain",
-        "text": "*Jumping up and dusting herself off* \"...Dummy. What are you doing first thing in the morning.\""
+        "text": "*Springs up and brushes off the dust* \"...Dummy. Making me trip first thing in the morning.\""
     },
     "day3_walk_dain_greet": {
         "name": "Dain",
-        "text": "*Composing herself* \"A-anyway! Let's walk to school together! The weather is perfect for exercise today!\""
+        "text": "*Clears her throat* \"A-anyway! Let's go! The weather's perfect for exercise, don't you think?!\""
     },
     "day3_walk_dain_freetalk": {
         "name": "Me",
-        "text": "*I walk alongside Dain toward school. Perhaps because of the earlier collision, she's keeping a bit more distance than usual.*",
-        "context": "Walking to school with Dain. There was a bumping incident earlier so Dain is a bit shy. She's energetic but blushes occasionally."
+        "text": "*Walking to school side by side with Dain. Maybe because of the collision earlier, she's keeping a little more distance than usual.*",
+        "context": "Walking to school with Dain. They just had a tumbling incident so Dain is a bit flustered. Full of energy but occasionally blushing.",
+        "personality": "Dain is a puppy-energy type who loves physical contact and is fiercely competitive. Exclamation mark machine. Tsundere. Upbeat on the outside, sensitive on the inside."
     },
     "day3_walk_dain_talk": {
         "name": "Dain",
-        "text": "*Walking excitedly* \"Oh! By the way {name}! Tomorrow at 9 AM, our team has a practice match at the gym. Come cheer for me!\"",
+        "text": "*Bouncing along* \"Oh! Right, {name}! Tomorrow morning at 9, there's a practice match at the gym! Come cheer me on!!\"",
         "choices": [
-            "Sounds fun! Of course I'll go!",
-            "9 AM? That's pretty early",
-            "That sounds troublesome..."
+            "Obviously! I'll be there for sure!",
+            "9 AM is kinda early though...",
+            "Sounds like a drag..."
         ]
     },
     "day3_dain_weekend_ask": {
         "name": "Dain",
-        "text": "*Dain jumps excitedly* \"Really?! Awesome! Then after practice, let's eat together! Let's go get tteokbokki!\""
+        "text": "*Dain hops in place* \"Really?! Awesome! Then after practice, let's go get tteokbokki!! My treat!!\""
     },
     "day3_dain_weekend_early": {
         "name": "Dain",
-        "text": "*Dain smiles* \"Right? It's hard for me to wake up early too, but it would really give me energy if you came!\""
+        "text": "*Dain grins* \"Honestly, I hate waking up early too! But if you're there, I get like a 200% power boost!\""
     },
     "day3_dain_weekend_hesitate": {
         "name": "Dain",
-        "text": "*Dain puts her arm around my shoulder* \"It's okay! Just come and cheer! I'll show you my awesome spike!\""
+        "text": "*Dain slaps my shoulder* \"It's fine! Just come sit and watch! One look at my spike and you'll be wide awake, trust me!\""
     },
     "day3_dain_weekend_choice": {
         "name": "Me",
-        "text": "*Dain looks at me with hopeful eyes.*",
+        "text": "*Dain looks at me with eyes full of anticipation.*",
         "choices": [
-            "Okay! See you Saturday at 9 at the gym",
-            "Let me think about it and contact you",
-            "Good luck, I have other plans this weekend..."
+            "Alright! Saturday 9 AM at the gym.",
+            "Let me think about it and text you.",
+            "Sorry, I've got something else this weekend..."
         ]
     },
     "day3_dain_weekend_yes": {
         "name": "Dain",
-        "text": "*Dain grabs my hand and shakes it* \"Wow! You're the best {name}! Then see you on Saturday! Don't be late!\""
+        "text": "*Dain pumps both fists in the air* \"YES!! Then I'll see you Saturday!! Stand me up and I will actually cry, got it?!\""
     },
     "day3_dain_weekend_later": {
         "name": "Dain",
-        "text": "*Dain looks a bit down* \"Aw... But you have to come, okay? Promise?\""
+        "text": "*Dain puffs out her cheeks* \"Ugh... you better come, okay? It's a promise!!\""
     },
     "day3_dain_weekend_no": {
         "name": "Dain",
-        "text": "*Dain makes a disappointed face* \"Oh... I see. But if you have time later, make sure to visit!\""
+        "text": "*Dain's expression dims* \"...Oh. I see. Well, next time for sure!\""
     },
     "day3_walk_with_nurse": {
         "name": "Me",
-        "text": "*I headed to the meeting spot with the teacher. The school nurse is waiting.*"
+        "text": "*I headed to the meeting spot. The Nurse is leaning against a wall, waiting.*"
     },
     "day3_walk_nurse_greet": {
-        "name": "School Nurse",
-        "text": "\"Oh my, {name}. You came? Hehe, our transfer student is so nice. Come on, let's walk together.\""
+        "name": "Nurse",
+        "text": "\"Oh my, you actually came? Hehe, what a well-mannered student. Come on, let's go.\""
     },
     "day3_walk_nurse_arm": {
         "name": "Me",
-        "text": "*The teacher subtly places her hand on my arm as we walk side by side. What would people think if they saw us...*",
+        "text": "*She casually rests her hand on my arm as we walk side by side. What if someone sees...*",
         "choices": [
             "*Just enjoy it*",
-            "\"Teacher, people might see us...\""
+            "\"People might see us, Miss...\""
         ]
     },
     "day3_walk_nurse_enjoy": {
-        "name": "School Nurse",
-        "text": "*The teacher smiles with satisfaction* \"Hehe, this is nice. Walking together like this.\""
+        "name": "Nurse",
+        "text": "*She smiles with satisfaction* \"Hehe, you've got nerve. I like that.\""
     },
     "day3_walk_nurse_worry": {
-        "name": "School Nurse",
-        "text": "*The teacher sighs softly and removes her hand* \"You're right... We can't let anyone find out about us.\""
+        "name": "Nurse",
+        "text": "*She sighs softly and withdraws her hand* \"You're right... it'd be trouble if we got caught.\""
     },
     "day3_walk_nurse_conflict": {
-        "name": "School Nurse",
-        "text": "*Looking lost in thought, she says quietly* \"...{name}, I know a teacher shouldn't be doing this with a student... but my heart won't listen.\""
+        "name": "Nurse",
+        "text": "*Lost in thought* \"...{name}. A teacher shouldn't be doing this with a student. But I just can't help myself.\""
     },
     "day3_walk_nurse_conflict_2": {
         "name": "Me",
-        "text": "*There's an unusual seriousness in her voice. Is she struggling with this too?*",
+        "text": "*There's a seriousness in her voice I've never heard before.*",
         "choices": [
-            "\"I like you too, teacher\"",
-            "*Quietly take her hand*",
-            "\"But you're still a teacher\""
+            "\"I like you too, Miss.\"",
+            "*Quietly takes her hand*",
+            "\"But you're still my teacher.\""
         ]
     },
     "day3_walk_nurse_confess": {
-        "name": "School Nurse",
-        "text": "*Her eyes go wide* \"...You're really dangerous, you know? Making a teacher's heart waver like this.\""
+        "name": "Nurse",
+        "text": "\"...You're a dangerous one, aren't you? Don't go shaking a teacher's heart like this.\""
     },
     "day3_walk_nurse_hand": {
-        "name": "School Nurse",
-        "text": "*She looks down at our hands in surprise... then holds on tight* \"...Just five seconds. Let's stay like this for just five seconds.\""
+        "name": "Nurse",
+        "text": "*She looks at my hand in surprise... then squeezes back* \"...Just five seconds. Let's stay like this for just five seconds.\""
     },
     "day3_walk_nurse_boundary": {
-        "name": "School Nurse",
-        "text": "*Her expression freezes for a moment before she forces a smile* \"...Right. A teacher is a teacher, after all.\""
+        "name": "Nurse",
+        "text": "*Her expression freezes for a moment, then shifts to a smile* \"...Right. A teacher is still a teacher.\""
     },
     "day3_walk_nurse_freetalk": {
         "name": "Me",
-        "text": "*I walk toward school with the nurse. A strange mix of tension and excitement fills the air.*",
-        "context": "Walking to school with the school nurse. She confessed that she shouldn't feel this way about a student. The tension of a forbidden love hangs in the air."
+        "text": "*Walking to school with the Nurse. A strange mix of tension and excitement.*",
+        "context": "Walking to school with the Nurse. She said 'a teacher shouldn't be doing this with a student,' revealing her inner conflict. A forbidden-romance tension in the air.",
+        "personality": "The Nurse is playful, alluring, and mature. She's torn between her feelings for the student and her ethics as a teacher."
     },
     "day3_walk_nurse_talk": {
-        "name": "School Nurse",
-        "text": "*Walking to school, the teacher subtly places her hand on my arm* \"Say, {name}. Do you have time this weekend?\"",
+        "name": "Nurse",
+        "text": "*As the school gate comes into view, she switches to a bright tone* \"{name}. Got any plans this weekend?\"",
         "choices": [
-            "Yes, why? Is something going on?",
-            "Well... what are your plans for the weekend?",
-            "I don't have any plans yet?"
+            "Yes, why?",
+            "Hmm... what did you have in mind?",
+            "Nothing planned yet?"
         ]
     },
     "day3_nurse_weekend_ask": {
-        "name": "School Nurse",
-        "text": "*The teacher smiles meaningfully* \"Hehe, actually... I reserved a nice restaurant for Sunday evening. It'd be a shame to go alone... Want to come with me? How about Sunday evening at 7?\""
+        "name": "Nurse",
+        "text": "*She smiles meaningfully* \"I've got a reservation at a nice restaurant for Sunday evening. Too good to waste going alone. How about 7 PM?\""
     },
     "day3_nurse_weekend_curious": {
-        "name": "School Nurse",
-        "text": "*The teacher winks playfully* \"Hmm... I have a nice restaurant reserved and I wanted to go together. If you're okay with it... Sunday evening at 7?\""
+        "name": "Nurse",
+        "text": "*She gives a playful wink* \"There's a restaurant I reserved, and I want you to come with me. Sunday evening, 7 PM?\""
     },
     "day3_nurse_weekend_none": {
-        "name": "School Nurse",
-        "text": "*The teacher smiles with satisfaction* \"Really? Then let's have dinner together on Sunday evening! How about meeting at 7? I'll send you the address.\""
+        "name": "Nurse",
+        "text": "*She smiles contentedly* \"Really? Then let's grab dinner together Sunday. Meet at 7, I'll send you the address.\""
     },
     "day3_nurse_weekend_choice": {
         "name": "Me",
-        "text": "*The teacher gazes at me with captivating eyes. My heart is racing...*",
+        "text": "*She looks at me with that captivating gaze.*",
         "choices": [
-            "Sure! I'll definitely be there on Sunday",
-            "Let me think about it and reply later",
+            "I'd love to! I'll definitely be there Sunday.",
+            "Let me think about it and tell you later.",
             "Sorry, I have other plans this weekend..."
         ]
     },
     "day3_nurse_weekend_yes": {
-        "name": "School Nurse",
-        "text": "*The teacher gently squeezes my hand then lets go* \"Hehe, really? Then Sunday evening at 7, I'll be looking forward to it. Dress up nice, okay?\""
+        "name": "Nurse",
+        "text": "*She gives my hand a light squeeze, then lets go* \"Hehe, then Sunday evening, 7 PM. Dress sharp.\""
     },
     "day3_nurse_weekend_later": {
-        "name": "School Nurse",
-        "text": "*The teacher makes a slightly disappointed face* \"Oh... really? Then come visit the nurse's office at lunchtime. Let's talk again.\""
+        "name": "Nurse",
+        "text": "*She looks a little disappointed* \"Oh? Then come by the nurse's office at lunch. Let's talk more.\""
     },
     "day3_nurse_weekend_no": {
-        "name": "School Nurse",
-        "text": "*The teacher's smile stiffens slightly* \"...I see. That's okay. Maybe next time.\""
+        "name": "Nurse",
+        "text": "*Her smile stiffens slightly* \"...Really? That's a shame.\""
     },
     "day3_walk_with_teacher": {
         "name": "Me",
-        "text": "*I headed to the meeting spot. The homeroom teacher is waving from the car.*"
+        "text": "*I headed to the meeting spot. Teacher is waving at me from inside her car.*"
     },
     "day3_walk_teacher_greet": {
-        "name": "Homeroom Teacher",
-        "text": "\"{name}! Good morning! It's nice to commute together by car. Now, put on your seatbelt.\""
+        "name": "Teacher",
+        "text": "\"{name}, good morning. Having company on the commute feels reassuring somehow. Here, seatbelt.\""
     },
     "day3_walk_teacher_car": {
         "name": "Me",
-        "text": "*I got into the teacher's car. A subtle perfume scent and soft music fills the air. It feels awkward yet exciting.*"
+        "text": "*I got in. A faint coffee aroma and soft music. Oddly thrilling, this commute.*"
     },
     "day3_walk_teacher_hair": {
-        "name": "Homeroom Teacher",
-        "text": "*While stopped at a red light, the teacher suddenly reaches out to fix my hair* \"...Hold on. This part was messy.\""
+        "name": "Teacher",
+        "text": "*At a red light, she suddenly reaches over and smooths down my hair* \"...Wait. You've got a strand sticking out.\""
     },
     "day3_walk_teacher_hair_2": {
-        "name": "Homeroom Teacher",
-        "text": "*She pauses, whispering* \"...I shouldn't be doing this to a student.\""
+        "name": "Teacher",
+        "text": "*She pulls her hand back, murmuring* \"...A teacher shouldn't be doing this to a student.\""
     },
     "day3_walk_teacher_conflict": {
         "name": "Me",
-        "text": "*Her touch is warm. The air inside the car shifts to something strange.*",
+        "text": "*Her touch is warm. The air inside the car shifts to something different.*",
         "choices": [
-            "\"Your hands are warm, teacher\"",
-            "*Quietly hold her hand*",
-            "\"It's okay, teacher\""
+            "\"Your hand is warm, Miss.\"",
+            "*Quietly takes her hand*",
+            "\"It's okay, really.\""
         ]
     },
     "day3_walk_teacher_warm": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher pulls her hand back, flustered* \"Oh my, this kid... Surprising a teacher like that.\""
+        "name": "Teacher",
+        "text": "*She flinches and pulls her hand away* \"Goodness... are you teasing your teacher?\""
     },
     "day3_walk_teacher_hold": {
-        "name": "Homeroom Teacher",
-        "text": "*She looks at our hands in surprise... but doesn't pull away* \"...When the light changes, I'm letting go. Promise.\""
+        "name": "Teacher",
+        "text": "*She stares at my hand in surprise... but doesn't pull away* \"...When the light changes, you have to let go. Promise.\""
     },
     "day3_walk_teacher_calm": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher smiles wistfully* \"...Thank you. Was teacher being a bit strange?\""
+        "name": "Teacher",
+        "text": "*She smiles, a little wistfully* \"...Thank you. I was being a bit strange, wasn't I?\""
     },
     "day3_walk_teacher_freetalk": {
         "name": "Me",
-        "text": "*Riding in the homeroom teacher's car on the way to school.*",
-        "context": "In the homeroom teacher's car on the way to school. She fixed my hair and said 'I shouldn't be doing this to a student.' The tension of a forbidden love hangs in the air."
+        "text": "*Riding in Teacher's car on the way to school together.*",
+        "context": "In Teacher's car on the way to school. She smoothed down his hair and said 'a teacher shouldn't be doing this to a student.' A forbidden-romance tension hangs in the air.",
+        "personality": "Teacher has a dry sense of humor. Seems blunt on the surface, but there's a gap when she catches herself having feelings for a student."
     },
     "day3_walk_teacher_talk": {
-        "name": "Homeroom Teacher",
-        "text": "*While driving, the teacher carefully brings up a topic* \"Say, {name}. Do you have time this weekend?\"",
+        "name": "Teacher",
+        "text": "*Carefully, while driving* \"Hey, {name}. Are you free this weekend?\"",
         "choices": [
-            "Yes, why? Is something going on?",
-            "Well... what are your plans for the weekend?",
-            "I don't have any plans yet?"
+            "Yes, why?",
+            "Hmm... what did you have in mind?",
+            "Nothing planned yet?"
         ]
     },
     "day3_teacher_weekend_ask": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher glances at me and smiles* \"Actually... I got two tickets for a museum exhibition. It'd be a shame to go alone... Want to come with me? How about Sunday afternoon at 2?\""
+        "name": "Teacher",
+        "text": "*She glances over briefly* \"I ended up with two tickets to a museum exhibition. Too good to waste going alone. How about Sunday at 2 PM?\""
     },
     "day3_teacher_weekend_curious": {
-        "name": "Homeroom Teacher",
-        "text": "\"Hmm... I have museum exhibition tickets and I wanted to go together. If you're okay with it... Sunday afternoon at 2?\""
+        "name": "Teacher",
+        "text": "\"There's a museum exhibition I have tickets for, and I'd like company. Sunday, 2 PM?\""
     },
     "day3_teacher_weekend_none": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher's face lights up* \"Really? Then let's go see the museum exhibition on Sunday afternoon! How about meeting at the museum at 2?\""
+        "name": "Teacher",
+        "text": "*Her face lights up* \"Really? Then Sunday afternoon, museum exhibition. 2 PM at the main entrance.\""
     },
     "day3_teacher_weekend_choice": {
         "name": "Me",
-        "text": "*The teacher glances at me with hopeful eyes. The air in the car feels unusually warm...*",
+        "text": "*She steals a hopeful glance in my direction.*",
         "choices": [
-            "Sure! I'll definitely be there on Sunday",
-            "Let me think about it and reply later",
-            "Museums are boring though."
+            "I'd love to! I'll definitely be there Sunday.",
+            "Let me think about it and tell you later.",
+            "Museums aren't really my thing..."
         ]
     },
     "day3_teacher_weekend_yes": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher smiles brightly* \"Really? Then Sunday at 2 PM, it's a date. It'll be fun!\""
+        "name": "Teacher",
+        "text": "*Her face breaks into a bright smile* \"Really? Then Sunday, 2 PM. Don't forget.\""
     },
     "day3_teacher_weekend_later": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher makes a slightly disappointed face* \"Oh... really? Then let's talk again at lunchtime.\""
+        "name": "Teacher",
+        "text": "*She looks a little disappointed* \"Oh? Then let's talk about it later.\""
     },
     "day3_teacher_weekend_no": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher's expression stiffens for a moment* \"...That's disappointing. I had high expectations for you.\""
+        "name": "Teacher",
+        "text": "*Her expression hardens* \"...I see. Maybe I got my hopes up too much.\""
     },
     "day3_prepare_school": {
         "name": "Me",
-        "text": "*I hurried to get ready for school.*"
+        "text": "*I rushed to get ready for school.*"
     },
     "day3_prepare_school_no_contact": {
         "name": "Me",
-        "text": "*I check my messages...*"
+        "text": "*I checked my messages and...*"
     },
     "day3_prepare_school_ads": {
         "name": "Me",
-        "text": "*'Limited time sale! Order now...', 'Congratulations on winning the event...'* ...They're all spam messages. Looks like I'm going to school alone today."
+        "text": "*'Limited-time deal!' 'Congratulations, you've won!'* ...All spam. Guess I'm walking alone today."
     },
     "day3_walk_alone": {
         "name": "Me",
-        "text": "*I headed to school alone. The morning air is refreshing.*"
+        "text": "*I headed to school alone. The morning air is cool and crisp.*"
     },
     "day3_arrive_school": {
         "name": "Me",
-        "text": "*Before I knew it, I arrived at the school gate. Another lively day begins.*"
+        "text": "*Arrived at the school gate. Another day begins.*"
     },
     "day3_classroom": {
         "name": "Me",
-        "text": "*As I enter the classroom, the kids are buzzing. I sit down at my desk and notice... something is on it.*"
+        "text": "*I walk into the classroom, already buzzing with chatter. As I move to sit down... there's something on my desk.*"
     },
     "day3_classroom_note_seoyeon": {
         "name": "Me",
-        "text": "*There's a small note. 'Let's eat lunch together ♡ - Seoyeon' ... We were literally just together, and she left a note in advance?*"
+        "text": "*A small note. 'Let's eat lunch together. - Seoyeon' ...We were just together and she already planted this in advance?*"
     },
     "day3_classroom_note_yuna": {
         "name": "Me",
-        "text": "*There's an origami crow. I unfold its wings to find writing inside. '...Tomorrow night' — Looks like Yuna left it.*"
+        "text": "*An origami crow. Unfolding its wings reveals a message inside: '...tomorrow night' -- Must be from Yuna.*"
     },
     "day3_classroom_note_dain": {
         "name": "Me",
-        "text": "*There's an energy bar and a sticky note. 'If you don't exercise, at least eat this! - Dain' ... She must have left it earlier.*"
+        "text": "*An energy bar and a sticky note. 'If you're not gonna exercise, at least eat this!! - Dain' ...She planted this ahead of time.*"
     },
     "day3_classroom_empty": {
         "name": "Me",
-        "text": "*Nothing on my desk. Just an ordinary Friday morning.*"
+        "text": "*Nothing on the desk. Just an ordinary Friday.*"
     },
     "day3_classroom_class_start": {
         "name": "Me",
-        "text": "*Class begins. The homeroom teacher starts writing problems on the board.*"
+        "text": "*Class begins. Teacher writes on the board.*"
     },
     "day3_classroom_teacher_event": {
         "name": "Me",
-        "text": "*When the teacher raises her arm to write on the board, a subtle whiff of perfume drifts over. No one else seems to notice... only me.*"
+        "text": "*When she reaches up to write at the top of the board, a subtle fragrance drifts over. I think I'm the only one who noticed.*"
     },
     "day3_classroom_teacher_wink": {
-        "name": "Homeroom Teacher",
-        "text": "*While asking a question, her eyes meet mine... she gives a subtle wink* \"...{name}, your answer?\""
+        "name": "Teacher",
+        "text": "*While asking a question, her eyes meet mine and she gives the faintest smile* \"...{name}, what's the answer?\""
     },
     "day3_classroom_teacher_glance": {
         "name": "Me",
-        "text": "*The teacher glances my way and smiles faintly. Is she thinking about our Sunday plans?*"
+        "text": "*She glances my way for a second and flashes a tiny smile. Is she thinking about our Sunday plans?*"
     },
     "day3_classroom_nurse_visit": {
         "name": "Me",
-        "text": "*Mid-class, the classroom door opens and the school nurse walks in.*"
+        "text": "*Mid-class, the classroom door opens and the Nurse walks in.*"
     },
     "day3_classroom_nurse_visit_2": {
-        "name": "School Nurse",
-        "text": "\"Sorry to interrupt, teacher. I'm here to hand out health surveys.\""
+        "name": "Nurse",
+        "text": "\"Excuse me, I'm here to hand out health survey forms.\""
     },
     "day3_classroom_nurse_visit_3": {
         "name": "Me",
-        "text": "*The nurse pauses in front of me while handing out surveys. Her fingers lightly brush against my hand.*"
+        "text": "*The Nurse hands out surveys and pauses at my desk. Our fingertips barely touch.*"
     },
     "day3_classroom_nurse_secret": {
-        "name": "School Nurse",
-        "text": "*Without anyone noticing, she slips a small note between the survey pages. 'Come to the nurse's office at lunch. I've prepared something special 💋'*"
+        "name": "Nurse",
+        "text": "*Without anyone noticing, she slips a note between the survey pages. 'Come to the nurse's office at lunch. I've got something special for you.'*"
     },
     "day3_classroom_nurse_band": {
-        "name": "School Nurse",
-        "text": "*She hands me the survey and places a band-aid on the back of my hand* \"...You don't have a wound? Well... it's teacher's mark.\""
+        "name": "Nurse",
+        "text": "*While handing me the survey, she sticks a bandage on the back of my hand* \"...You don't have a cut, do you? It's just... a teacher's mark.\""
     },
     "day3_classroom_nurse_pass": {
         "name": "Me",
-        "text": "*The nurse smiles gently as she hands me the survey and moves on.*"
+        "text": "*The Nurse hands me the survey with a gentle smile.*"
     },
     "day3_classroom_nurse_leave": {
         "name": "Me",
-        "text": "*The nurse leaves the classroom. None of the other students noticed a thing.*"
+        "text": "*The Nurse leaves the classroom. Nobody noticed a thing.*"
     },
     "day3_break_time": {
         "name": "Me",
-        "text": "*Break time. I check my phone — there are messages about weekend plans.*"
+        "text": "*Break time. I check my phone and see some messages about the weekend.*"
     },
     "day3_weekend_check_seoyeon": {
         "name": "System",
@@ -857,19 +862,19 @@
     },
     "day3_weekend_invite_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Message* 'Hey {name}! Want to check out that new café this Saturday? I really want to go with you! ☕'",
+        "text": "*Message* '{name}, want to check out a new cafe with me Saturday? I want to go with you.'",
         "choices": [
-            "Sure! Let's go!",
-            "Sorry, I'm busy this weekend"
+            "Sure, let's go together",
+            "Sorry, I'm kind of busy this weekend"
         ]
     },
     "day3_weekend_yes_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Instant reply* 'Really?! See you Saturday then! You can look forward to it! ♡'"
+        "text": "*Instant reply* 'Done. See you Saturday. Feel free to get excited.'"
     },
     "day3_weekend_no_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Reply after a long pause* '...That's okay! Maybe next time!'"
+        "text": "*Reply, much later* '...Fine. We can always go another time.'"
     },
     "day3_weekend_check_yuna": {
         "name": "System",
@@ -877,15 +882,15 @@
     },
     "day3_weekend_invite_yuna": {
         "name": "Yuna",
-        "text": "*Message* '...Saturday night. 8 PM. The warehouse behind school. Come if you want the truth. Alone.'",
+        "text": "*Message* '...Saturday night, 8 PM. Storage shed behind the school. Come alone.'",
         "choices": [
-            "Got it, I'll be there",
-            "That's creepy, no thanks"
+            "Got it. I'll definitely be there.",
+            "That sounds creepy. I'll pass."
         ]
     },
     "day3_weekend_yes_yuna": {
         "name": "Yuna",
-        "text": "*Reply* '...Thank you. You won't regret it.'"
+        "text": "*Reply* '...Thanks. You won't regret it.'"
     },
     "day3_weekend_no_yuna": {
         "name": "Yuna",
@@ -897,59 +902,59 @@
     },
     "day3_weekend_invite_dain": {
         "name": "Dain",
-        "text": "*Message* '{name}!!! Wanna work out with me at the gym on Saturday?! See you at 9!! 💪🔥'",
+        "text": "*Message* '{name}!! Wanna work out with me at the gym Saturday?! See you at 9!!'",
         "choices": [
             "Sure! See you Saturday!",
-            "Working out isn't really my thing..."
+            "Exercise isn't really my thing..."
         ]
     },
     "day3_weekend_yes_dain": {
         "name": "Dain",
-        "text": "*Reply in 0.5 seconds* 'AWESOME!! Don't forget your gym clothes!! 🏃‍♂️'"
+        "text": "*Reply in 0.3 seconds* 'YAAAY!! The best!! Bring workout clothes!!'"
     },
     "day3_weekend_no_dain": {
         "name": "Dain",
-        "text": "*Reply* 'Aww, too bad! But let's definitely do it next time!'"
+        "text": "*Reply* 'Aww~ too bad! Next time for sure!!'"
     },
     "day3_weekend_check_nurse": {
         "name": "System",
         "text": ""
     },
     "day3_weekend_invite_nurse": {
-        "name": "School Nurse",
-        "text": "*Message* 'Are you free this Sunday evening? I know a great restaurant I'd love to take you to... 😉'",
+        "name": "Nurse",
+        "text": "*Message* 'Free Sunday evening? There's a restaurant I want to take you to~'",
         "choices": [
-            "Sure! I'd love to go!",
-            "Sorry, I have plans on Sunday..."
+            "I'd love to! I'll be there for sure.",
+            "Sorry, I have plans Sunday..."
         ]
     },
     "day3_weekend_yes_nurse": {
-        "name": "School Nurse",
-        "text": "*Reply* 'Great. I'll be waiting. Sunday at 7 PM 💋'"
+        "name": "Nurse",
+        "text": "*Reply* 'Hehe, I'll be looking forward to it. Sunday evening, 7 PM~'"
     },
     "day3_weekend_no_nurse": {
-        "name": "School Nurse",
-        "text": "*Reply* 'That's a shame... Maybe next time then.'"
+        "name": "Nurse",
+        "text": "*Reply* 'That's a shame... let's definitely go together next time.'"
     },
     "day3_weekend_check_teacher": {
         "name": "System",
         "text": ""
     },
     "day3_weekend_invite_teacher": {
-        "name": "Homeroom Teacher",
-        "text": "*Message* '{name}, there's a special exhibition at the city museum this Sunday. Want to go together? I'll give you extra credit too lol'",
+        "name": "Teacher",
+        "text": "*Message* '{name}, there's a special exhibition at the city museum this Sunday. Want to go together? No extra credit for this.'",
         "choices": [
-            "Sure! I'll definitely be there!",
+            "I'd love to! I'll be there for sure.",
             "Museums aren't really my thing..."
         ]
     },
     "day3_weekend_yes_teacher": {
-        "name": "Homeroom Teacher",
-        "text": "*Reply* 'Great! Let's meet Sunday at 2 PM. It'll be fun!'"
+        "name": "Teacher",
+        "text": "*Reply* 'Good. Sunday, 2 PM. See you there.'"
     },
     "day3_weekend_no_teacher": {
-        "name": "Homeroom Teacher",
-        "text": "*Reply* 'Alright. Maybe next time then.'"
+        "name": "Teacher",
+        "text": "*Reply* 'Alright, noted. Another time.'"
     },
     "day3_check_multiple_dates": {
         "name": "System",
@@ -973,10 +978,10 @@
     },
     "day3_set_multiple_dates": {
         "name": "Me",
-        "text": "*...Wait. Did I just make plans with multiple people this weekend? I'm starting to feel uneasy.*"
+        "text": "*......Wait. I have multiple weekend plans? How is this going to work?*"
     },
     "day3_morning_end": {
         "name": "Me",
-        "text": "*Classes began... and before I knew it, it was lunchtime.*"
+        "text": "*Classes continue... and before I know it, it's lunchtime.*"
     }
 }

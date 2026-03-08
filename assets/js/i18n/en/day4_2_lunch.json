@@ -1,27 +1,27 @@
 {
     "day4_arrive": {
         "name": "Me",
-        "text": "*I arrived at the meeting spot. I'm a bit early.*"
+        "text": "*I arrived at the meeting spot. Still a bit early.*"
     },
     "day4_arrive_nervous": {
         "name": "Me",
-        "text": "*My hands are sweaty in my pockets. Why am I so nervous... Let me take a deep breath.*"
+        "text": "*My palms are clammy inside my pockets. Why am I this nervous? Deep breath.*"
     },
     "day4_arrive_people": {
         "name": "Me",
-        "text": "*I look around. On the street, there are couples walking and laughing, a family eating ice cream, someone walking their dog...*"
+        "text": "*I looked around. Couples walking arm in arm, a family sharing ice cream, someone walking their dog.*"
     },
     "day4_arrive_phone": {
         "name": "Me",
-        "text": "*I take out my phone. No messages yet. I check the time — I arrived 15 minutes early.*"
+        "text": "*Pulled out my phone to check the time. Fifteen minutes early. No messages yet.*"
     },
     "day4_arrive_look": {
         "name": "Me",
-        "text": "*I sneak a glance at my reflection in a window. Not bad... I think.*"
+        "text": "*Snuck a glance at my reflection in a shop window. Do I look okay? ...Probably.*"
     },
     "day4_arrive_wait": {
         "name": "Me",
-        "text": "*My heart is racing. Have I ever been this nervous before...*"
+        "text": "*This isn't just any hangout. The feeling that something will change after today is gripping my throat.*"
     },
     "day4_heroine_arrive": {
         "name": "System",
@@ -29,27 +29,27 @@
     },
     "day4_meet_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"Oh, you're already here? I came early too... Hehe.\""
+        "text": "\"Already here? Deduction. You're obviously here early because you were excited.\""
     },
     "day4_seoyeon_react": {
         "name": "Me",
-        "text": "*Seoyeon walks over with a smile. Meeting outside of school... she looks different from usual.*"
+        "text": "*Seoyeon walked over with an easy confidence. She looks different outside of school.*"
     },
     "day4_seoyeon_compliment": {
         "name": "Me",
-        "text": "*What should I say?*",
+        "text": "*What do I say?*",
         "choices": [
             "\"You look really pretty today.\"",
-            "\"You look really cheerful today!\""
+            "\"You seem extra bright today.\""
         ]
     },
     "day4_seoyeon_blush": {
         "name": "Seoyeon",
-        "text": "\"W-what... You can't just say that out of nowhere... Thanks.\""
+        "text": "\"...What, out of nowhere. Give a girl some warning before you say stuff like that. ...Thanks.\""
     },
     "day4_seoyeon_happy": {
         "name": "Seoyeon",
-        "text": "\"Really? I put a lot of effort in today! I'm glad you noticed!\""
+        "text": "\"Obviously. I put in the effort today. At least you noticed -- points for that.\""
     },
     "day4_meet_yuna_normal": {
         "name": "Yuna",
@@ -57,15 +57,15 @@
     },
     "day4_yuna_angry_greeting": {
         "name": "Yuna",
-        "text": "\"...You're here. But why did you lie to me yesterday?\""
+        "text": "\"...You showed up. So why'd you lie to me yesterday?\""
     },
     "day4_yuna_react": {
         "name": "Me",
-        "text": "*Yuna was standing in front of the café. She gives off a different vibe outside of school.*"
+        "text": "*Yuna was standing in front of the cafe. She gives off a completely different vibe outside of school.*"
     },
     "day4_yuna_compliment": {
         "name": "Me",
-        "text": "*What should I say?*",
+        "text": "*What do I say?*",
         "choices": [
             "\"You look different today. Pretty.\"",
             "\"Were you waiting? Sorry.\""
@@ -73,111 +73,111 @@
     },
     "day4_yuna_blush": {
         "name": "Yuna",
-        "text": "\"...No one's ever said that to me before. ...Thanks.\""
+        "text": "\"...Nobody's ever said that to me before. ...Thanks.\""
     },
     "day4_yuna_cool": {
         "name": "Yuna",
-        "text": "\"...I just got here. Let's go in.\""
+        "text": "\"...Just got here. Let's go in.\""
     },
     "day4_meet_dain": {
         "name": "Dain",
-        "text": "\"Hey!! Over here, over here!!\""
+        "text": "\"HEY!! Over here!! OVER HERE!!\""
     },
     "day4_dain_react": {
         "name": "Me",
-        "text": "*Dain waves and runs over. Meeting outside of school, the vibe is totally different.*"
+        "text": "*Dain was waving and running toward me. Meeting outside school hits different.*"
     },
     "day4_dain_compliment": {
         "name": "Me",
-        "text": "*What should I say?*",
+        "text": "*What do I say?*",
         "choices": [
-            "\"You look super cute today!\"",
+            "\"You look super cute today.\"",
             "\"Did practice go well?\""
         ]
     },
     "day4_dain_blush": {
         "name": "Dain",
-        "text": "\"H-hehe... Really?! I spent so long deciding what to wear!! What a relief!!\""
+        "text": "\"Heheh...! Really?! I agonized over this outfit FOREVER!! Oh thank god~!!\""
     },
     "day4_dain_energy": {
         "name": "Dain",
-        "text": "\"It was totally perfect!! I'm in top shape today!! Come on, let's go!!\""
+        "text": "\"Nailed it!! I'm in peak condition today!! Come on, let's GO!!\""
     },
     "day4_meet_nurse": {
-        "name": "School Nurse",
-        "text": "\"Oh my, you're already here? Have you been waiting long?\""
+        "name": "Nurse",
+        "text": "\"Oh, you're already here? Have you been waiting long?\""
     },
     "day4_nurse_react": {
         "name": "Me",
-        "text": "*The school nurse is waving and smiling at the museum entrance. Meeting outside of school, the atmosphere feels completely different.*"
+        "text": "*The nurse was waving at the museum entrance. Outside of school, the whole atmosphere is different.*"
     },
     "day4_nurse_compliment": {
         "name": "Me",
-        "text": "*What should I say?*",
+        "text": "*What do I say?*",
         "choices": [
-            "\"You look... really beautiful today.\"",
-            "\"It's kind of strange meeting outside of school.\""
+            "\"You look really beautiful today.\"",
+            "\"Seeing you outside school feels so different.\""
         ]
     },
     "day4_nurse_blush": {
-        "name": "School Nurse",
-        "text": "\"Hehe... Thank you. Can I see you as just a man today, not a student?\""
+        "name": "Nurse",
+        "text": "\"Heh, thank you. So today, can I see you as a man instead of a student?\""
     },
     "day4_nurse_smile": {
-        "name": "School Nurse",
-        "text": "\"Right, I'm a bit nervous too. Today, I'm not a teacher — just me.\""
+        "name": "Nurse",
+        "text": "\"Yeah, I'm a bit nervous too. Today I'm just me. Not anyone's nurse.\""
     },
     "day4_meet_teacher": {
-        "name": "Homeroom Teacher",
-        "text": "\"Oh, you made it. I thought you'd be late, but you're surprisingly early.\""
+        "name": "Teacher",
+        "text": "\"You made it. Figured you'd be late, but look at you being punctual.\""
     },
     "day4_teacher_react": {
         "name": "Me",
-        "text": "*The homeroom teacher is smiling in front of the café. She looks so different outside of school that I almost didn't recognize her.*"
+        "text": "*Teacher was standing in front of the cafe. In casual clothes, I almost didn't recognize her.*"
     },
     "day4_teacher_compliment": {
         "name": "Me",
-        "text": "*What should I say?*",
+        "text": "*What do I say?*",
         "choices": [
             "\"You look really pretty today.\"",
-            "\"This café has a nice atmosphere.\""
+            "\"This cafe has a nice vibe.\""
         ]
     },
     "day4_teacher_blush": {
-        "name": "Homeroom Teacher",
-        "text": "\"...What, all of a sudden. Stop it, compliments make me feel weird.\""
+        "name": "Teacher",
+        "text": "\"...Don't just spring that on me. It's disarming. Stop.\""
     },
     "day4_teacher_casual": {
-        "name": "Homeroom Teacher",
-        "text": "\"Right? The coffee here is great. Come on, let's go in.\""
+        "name": "Teacher",
+        "text": "\"Right? The coffee here is legit. Let's head in.\""
     },
     "day4_date_walk": {
         "name": "Me",
-        "text": "*We walked side by side, chatting about all sorts of things. A relaxed atmosphere, different from school.*"
+        "text": "*We walked side by side, talking about everything and nothing. A relaxed air, nothing like school.*"
     },
     "day4_date_talk_1": {
         "name": "Me",
-        "text": "*Things we could never talk about at school... favorite music, childhood dreams, little hobbies.*"
+        "text": "*Things we never got to talk about. Favorite music, childhood dreams, random little hobbies.*"
     },
     "day4_date_talk_2": {
         "name": "Me",
-        "text": "*The more we talk, the closer I feel. I wish this moment could last forever.*"
+        "text": "*The longer we talked, the closer the gap between us felt. I wished this moment would freeze.*"
     },
     "day4_date_weather": {
         "name": "Me",
-        "text": "*A gentle breeze blows. Cotton candy clouds drift slowly across the sky.*"
+        "text": "*A breeze drifted by. Cotton candy clouds floated lazily across the sky.*"
     },
     "day4_date_surroundings": {
         "name": "Me",
-        "text": "*I see other couples around, just like us. I suddenly wonder, 'Do we look like that too?'*"
+        "text": "*Couples like us dotted the streets everywhere. The thought crossed my mind -- 'Do we look like that too?'*"
     },
     "day4_date_time_pass": {
         "name": "Me",
-        "text": "*I have no idea how time flew by so fast. I check my phone and realize an hour has already passed.*"
+        "text": "*I checked my phone and an hour had already vanished. Time got pickpocketed.*"
     },
     "day4_date_sunshine": {
         "name": "Me",
-        "text": "*Sunlight pours through the leaves. The light falling on the face of the person walking beside me is... beautiful.*"
+        "text": "*Sunlight filtering through leaves landed on the face beside me. ...Beautiful.*"
     },
     "day4_date_activity_branch": {
         "name": "System",
@@ -185,19 +185,19 @@
     },
     "day4_activity_seoyeon_1": {
         "name": "Seoyeon",
-        "text": "\"Wow, look over there! A flower garden! Let's go!!\""
+        "text": "\"Look over there. Flower garden. Let's take a lap.\""
     },
     "day4_activity_seoyeon_2": {
         "name": "Me",
-        "text": "*Seoyeon grabs my hand and runs into the flower garden. She beams brightly among the colorful flowers.*"
+        "text": "*Seoyeon walked ahead naturally, beckoning me. Her face lit up among the colorful flowers when she turned around.*"
     },
     "day4_activity_seoyeon_3": {
         "name": "Seoyeon",
-        "text": "\"Oh, look, ducks! Should we give them some bread? I bought some at the convenience store!\""
+        "text": "\"Ducks over there. Want to feed them? I bought bread at the convenience store ahead of time. This is what being prepared looks like.\""
     },
     "day4_activity_seoyeon_4": {
         "name": "Me",
-        "text": "*We sat side by side, tossing bread to the ducks in the pond. When the ducks waddled over, Seoyeon burst out laughing.*"
+        "text": "*We sat side by side tossing bread to the ducks. When they came waddling over, Seoyeon burst into laughter. I could listen to that laugh all day.*"
     },
     "day4_activity_yuna_1": {
         "name": "Yuna",
@@ -205,166 +205,166 @@
     },
     "day4_activity_yuna_2": {
         "name": "Me",
-        "text": "*We flipped through books side by side in the bookstore. Yuna gets really serious when she's picking out a book.*"
+        "text": "*We browsed side by side inside the bookstore. Yuna's expression gets so serious when she's picking a book that it felt wrong to interrupt.*"
     },
     "day4_activity_yuna_3": {
         "name": "Yuna",
-        "text": "\"...Do you like this song? Want to listen with one earbud?\""
+        "text": "\"...Do you like this song? Here, take one side.\""
     },
     "day4_activity_yuna_4": {
         "name": "Me",
-        "text": "*Yuna handed me one of her earbuds. We sat close together, listening to the same music. Her shoulder gently touched mine.*"
+        "text": "*Yuna handed me one earbud. We sat close, sharing the same music. Her shoulder brushed lightly against mine.*"
     },
     "day4_activity_dain_1": {
         "name": "Dain",
-        "text": "\"Hey hey hey, there's an arcade over there!! Let's go let's go let's go!!\""
+        "text": "\"HEY HEY, an arcade!! Right there!! LET'S GO!!\""
     },
     "day4_activity_dain_2": {
         "name": "Me",
-        "text": "*Dain's eyes light up as she dashes into the arcade. She stops in front of a rhythm game and gives me a challenging look.*"
+        "text": "*Dain's eyes lit up as she bolted inside. She planted herself in front of a rhythm game with a look of pure challenge.*"
     },
     "day4_activity_dain_3": {
         "name": "Dain",
-        "text": "\"It's a showdown!! Loser buys ice cream!! I'm NOT losing!!\""
+        "text": "\"We're BATTLING!! Loser buys ice cream!! I am NOT losing!!\""
     },
     "day4_activity_dain_4": {
         "name": "Me",
-        "text": "*I ended up losing. Dain pumps both fists in the air and cheers. I lost, but... seeing her that happy is a pretty good sight.*"
+        "text": "*I lost. Dain threw both fists in the air, cheering. I lost, sure, but seeing that face -- can't even be mad about it.*"
     },
     "day4_activity_nurse_1": {
-        "name": "School Nurse",
-        "text": "\"Don't you love this painting? The colors are so warm.\""
+        "name": "Nurse",
+        "text": "\"Isn't this painting lovely? The warm colors just keep pulling my eyes back.\""
     },
     "day4_activity_nurse_2": {
         "name": "Me",
-        "text": "*The museum was quiet and spacious. We walked slowly, viewing the paintings side by side. I like moments like this.*"
+        "text": "*The museum was quiet and spacious. We walked slowly, viewing paintings side by side. I could get used to moments like this.*"
     },
     "day4_activity_nurse_3": {
-        "name": "School Nurse",
-        "text": "\"When I was a student, I had so many dreams too. I still do, but... they've just changed a little.\""
+        "name": "Nurse",
+        "text": "\"I had so many dreams when I was a student too. I still do -- they've just changed shape a little.\""
     },
     "day4_activity_nurse_4": {
         "name": "Me",
-        "text": "*She stopped in front of one painting. Her profile, gazing at the landscape in the painting... was unexpectedly beautiful.*"
+        "text": "*She paused in front of one painting. Her profile in that moment -- quietly, unexpectedly beautiful.*"
     },
     "day4_activity_teacher_1": {
-        "name": "Homeroom Teacher",
-        "text": "\"What do you want to do after you graduate? Do you have a dream or anything?\""
+        "name": "Teacher",
+        "text": "\"What do you want to do after graduation? Got any dreams?\""
     },
     "day4_activity_teacher_2": {
         "name": "Me",
-        "text": "*We sat across from each other in the café, talking. She has a softer expression than usual.*"
+        "text": "*Sitting across from each other in the cafe, talking. Teacher seemed softer than usual.*"
     },
     "day4_activity_teacher_3": {
-        "name": "Homeroom Teacher",
-        "text": "\"When I was a student, I never thought I'd become a teacher. Life doesn't go as planned. But now... it's not bad.\""
+        "name": "Teacher",
+        "text": "\"I never thought I'd become a teacher when I was a student. Life doesn't follow the plan. But right now... it's not bad.\""
     },
     "day4_activity_teacher_4": {
         "name": "Me",
-        "text": "(She cut a piece of her cake and placed it on my plate. \"Try it, the desserts here are really good.\" My heart skipped a beat at that casual gesture.)"
+        "text": "*She sliced a piece of her cake and slid it onto my plate. \"Try this, the desserts here are actually amazing.\" That casual gesture made my heart race.*"
     },
     "day4_activity_converge": {
         "name": "Me",
-        "text": "*Time flew by so fast. Before I knew it, it was already lunchtime.*"
+        "text": "*Time moves fast. It's already almost lunch.*"
     },
     "day4_date_lunch": {
         "name": "Me",
-        "text": "*We went into a cute café nearby. Sitting across from each other by the window — is it just me, or does this feel even more exciting?*"
+        "text": "*We ducked into a nearby cafe. Sitting across from each other by the window -- heart rate spiking again.*"
     },
     "day4_lunch_menu": {
         "name": "Me",
-        "text": "*I look at the menu. Pasta, sandwiches, brunch set... What should I order?*"
+        "text": "*Flipping through the menu. Pasta, sandwiches, brunch set.*"
     },
     "day4_lunch_order": {
         "name": "Me",
-        "text": "\"I'll go with the pasta. What would you like?\""
+        "text": "\"I'll go with the pasta. What are you getting?\""
     },
     "day4_lunch_order_react": {
         "name": "Me",
-        "text": "*They picked something too. After ordering, there's a brief awkward silence.*"
+        "text": "*They picked something too. After ordering, a brief awkward silence settled in.*"
     },
     "day4_lunch_awkward": {
         "name": "Me",
-        "text": "*I feel like I should say something... What would be natural to talk about at a time like this?*"
+        "text": "*Feel like I should say something. What's natural in a moment like this?*"
     },
     "day4_lunch_funny": {
         "name": "Me",
-        "text": "*The food arrived. The pasta I ordered is way bigger than I expected. They can't hold back their laughter at the sight.*"
+        "text": "*The food arrived. My pasta portion is beyond anything I imagined. They couldn't hold back their laughter.*"
     },
     "day4_lunch_funny_react": {
         "name": "Me",
-        "text": "\"Why are you laughing! I can totally handle this much!\""
+        "text": "\"Why are you laughing! I can totally handle this!\""
     },
     "day4_lunch_share": {
         "name": "Me",
-        "text": "*We ended up sharing each other's food. Every time our forks bump on the same plate, we can't help but laugh.*"
+        "text": "*We ended up sharing each other's food. Every time our forks clinked, laughter slipped out on its own.*"
     },
     "day4_date_lunch_talk": {
         "name": "Me",
-        "text": "*The conversation blossomed. Laughing together, thinking together... So this is what happiness feels like.*"
+        "text": "*The conversation bloomed. Laughing together, mulling things over together. So this is what happiness feels like.*"
     },
     "day4_lunch_learn": {
         "name": "Me",
-        "text": "*The more we talk, the more I learn about sides of them I never knew. Favorite season, food they dislike, childhood nicknames... These little things feel so precious.*"
+        "text": "*The longer we talked, the more new sides I discovered. Favorite season, foods they hate, childhood nicknames. The little things felt precious.*"
     },
     "day4_date_lunch_choice": {
         "name": "Me",
-        "text": "*Should I bring up something more personal?*",
+        "text": "*Should I go a little deeper?*",
         "choices": [
-            "\"To be honest... I was pretty lonely before I transferred here.\"",
-            "\"I've met really great people since coming to this school.\""
+            "\"Honestly... I was pretty lonely before I transferred here.\"",
+            "\"I've met genuinely good people since coming to this school.\""
         ]
     },
     "day4_date_honest": {
         "name": "Me",
-        "text": "\"The new environment scared me... but thanks to you, now I look forward to every day.\""
+        "text": "\"The new environment scared me too, but thanks to you, every day feels a little different now.\""
     },
     "day4_date_honest_react": {
         "name": "Me",
-        "text": "*They listened quietly to my story. Did my sincerity get through? They nod with warm eyes.*"
+        "text": "*They listened quietly to my story. A warm nod, gentle eyes. Felt like the sincerity landed.*"
     },
     "day4_date_grateful": {
         "name": "Me",
-        "text": "\"Especially... right now, this moment is the best.\""
+        "text": "\"Especially... right now is the best part.\""
     },
     "day4_date_grateful_react": {
         "name": "Me",
-        "text": "*They look away slightly, smiling. They're definitely happy about what I said.*"
+        "text": "*They glanced away with a small smile. Definitely happy.*"
     },
     "day4_date_response": {
         "name": "Me",
-        "text": "*Their eyes softened. Something just connected between us.*"
+        "text": "*Their eyes softened. Something just clicked between us.*"
     },
     "day4_date_cafe_exit": {
         "name": "Me",
-        "text": "*As we step out of the café, warm afternoon sunlight pours down. Somehow, the distance between us has gotten smaller.*"
+        "text": "*Stepping out of the cafe, warm afternoon sun. The gap between us felt smaller than before.*"
     },
     "day4_date_photo_moment": {
         "name": "Me",
-        "text": "*I suddenly want to capture this moment.*",
+        "text": "*Suddenly I wanted to capture this moment.*",
         "choices": [
-            "\"Want to take a photo together?\"",
-            "*I'll keep this moment in my heart.*"
+            "\"Let's take a photo together.\"",
+            "*I'll keep this one in my memory.*"
         ]
     },
     "day4_date_photo_yes": {
         "name": "Me",
-        "text": "*We stood side by side and took a selfie. Two people smiling together on the screen. I want to keep this photo forever.*"
+        "text": "*We stood side by side and took a selfie. Two people smiling on screen. A photo I want to keep forever.*"
     },
     "day4_date_photo_no": {
         "name": "Me",
-        "text": "*More vivid than any photo, I engrave this moment into my memory. The scent of the breeze, the warmth of the sun, the smile of the person beside me.*"
+        "text": "*Sharper than any photo, I burned it into memory. The scent of the wind, the warmth of the sun, the smile of the person beside me.*"
     },
     "day4_date_ending_moment": {
         "name": "Me",
-        "text": "*Walking side by side, a brief silence falls. It's not awkward — it's a comfortable silence. We've become the kind of people who are okay without saying a word.*"
+        "text": "*Walking side by side, silence fell. Not the awkward kind. The kind where words aren't needed anymore.*"
     },
     "day4_date_ending_feel": {
         "name": "Me",
-        "text": "*Today feels like a dream. I never imagined such a wonderful day would come after transferring here... truly.*"
+        "text": "*Today feels like a dream. I genuinely never thought a day like this would come after transferring.*"
     },
     "day4_date_transition": {
         "name": "Me",
-        "text": "*The afternoon still awaits. This date... isn't over yet.*"
+        "text": "*The afternoon still stretches ahead. This date isn't over yet.*"
     }
 }

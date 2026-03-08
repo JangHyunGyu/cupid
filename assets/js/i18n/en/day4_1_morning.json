@@ -1,23 +1,23 @@
 {
     "day4_start": {
         "name": "Me",
-        "text": "*...I open my eyes. It's Saturday morning. My heart is already racing.*"
+        "text": "*...Saturday. My eyes opened on their own, no alarm needed. My heart's already doing its own thing.*"
     },
     "day4_morning_dream": {
         "name": "Me",
-        "text": "*Last night, I had a strange dream. Everything that happened at school flashed by like a panorama.*"
+        "text": "*Last night's dream was strange. School, hallways, someone's silhouette -- everything was hazy, but the emotions stayed vivid.*"
     },
     "day4_morning_wake": {
         "name": "Me",
-        "text": "*Today is... finally the day. I could barely sleep last night.*"
+        "text": "*Today's finally the day. I tossed and turned for over three hours last night, but the moment I opened my eyes, all sleepiness vanished.*"
     },
     "day4_morning_calendar": {
         "name": "Me",
-        "text": "*I check the calendar on my phone. 'Saturday' — the red letters stand out more than usual.*"
+        "text": "*I turned on my phone screen. 'Saturday' -- the red letters hit different today.*"
     },
     "day4_morning_excitement": {
         "name": "Me",
-        "text": "*It's only been four days since I transferred here. I never expected such an exciting weekend. My heart is pounding.*"
+        "text": "*Four days since I transferred. This is the most excited I've ever been for a weekend. My fingertips are tingling.*"
     },
     "day4_morning_guilt_check": {
         "name": "System",
@@ -25,95 +25,95 @@
     },
     "day4_morning_guilt": {
         "name": "Me",
-        "text": "*...Wait. I feel uneasy about having promised multiple people. They all trusted me when they made plans... but in the end, I can only meet one of them.*"
+        "text": "*...Wait. I made plans with multiple people but I'm only meeting one. There's a weight sitting in my chest.*"
     },
     "day4_morning_stretch": {
         "name": "Me",
-        "text": "*I stretch wide and kick off the blankets. Today, I'm going to live without any regrets.*"
+        "text": "*I kicked off the covers and stretched big. Whatever I'm overthinking, just today -- no regrets.*"
     },
     "day4_morning_mirror": {
         "name": "Me",
-        "text": "*Standing in front of the mirror, I see my nervous face. I wish I could look a little cooler...*"
+        "text": "*My face in the mirror looks oddly tense. Half nervous, half excited. ...Is it greedy to want to look a little better?*"
     },
     "day4_morning_window": {
         "name": "Me",
-        "text": "*I pull back the curtains and bright sunlight pours in. It's so bright outside.*"
+        "text": "*I pulled back the curtains. Sunlight poured in, blinding me. Today's weather -- approved.*"
     },
     "day4_morning_weather": {
         "name": "Me",
-        "text": "*The sky is endlessly clear. Cherry blossom petals drift in the breeze, and birds are singing. A perfect Saturday morning.*"
+        "text": "*The sky is endlessly clear. Cherry blossom petals drift on the breeze, birdsong layers upon itself. Perfect date weather.*"
     },
     "day4_morning_weather2": {
         "name": "Me",
-        "text": "*Through the window, I can see the neighborhood streets. People out for walks, couples heading into cafés... I'll be out there too, soon.*"
+        "text": "*The street beyond the window. People on walks, couples ducking into cafes. Soon enough, I'll be part of that scene too.*"
     },
     "day4_morning_kitchen": {
         "name": "Me",
-        "text": "*I head to the kitchen. Let me check what's in the fridge.*"
+        "text": "*I went to the kitchen. Opened the fridge -- slim pickings.*"
     },
     "day4_morning_breakfast_choice": {
         "name": "Me",
-        "text": "*I have plenty of time, but... what should I do about breakfast?*",
+        "text": "*Plenty of time, but the butterflies are bigger than my appetite.*",
         "choices": [
-            "At least grab some toast before heading out",
-            "Too excited to eat — skip it"
+            "At least grab some toast",
+            "Can't eat -- too nervous. Pass"
         ]
     },
     "day4_morning_breakfast_eat": {
         "name": "Me",
-        "text": "*I spread jam on a slice of toast and take a bite. The crispy texture shakes off the drowsiness. Nothing beats a good breakfast.*"
+        "text": "*Slapped some jam on toast and took a bite. The crunch snapped me awake. Gotta fuel up to function.*"
     },
     "day4_morning_breakfast_skip": {
         "name": "Me",
-        "text": "*I'm hungry, but I'm too nervous to taste anything anyway. I'll grab something on the way.*"
+        "text": "*My stomach's staging a protest. Nerves have killed my taste buds. I'll grab something on the way.*"
     },
     "day4_morning_breakfast_done": {
         "name": "Me",
-        "text": "*Alright, time to wash up and get ready. I've got plenty of time.*"
+        "text": "*Alright. Just need to wash up and get ready. Plenty of time.*"
     },
     "day4_morning_groom": {
         "name": "Me",
-        "text": "*I wash my face and fix my hair. I styled it more carefully than usual. Maybe... just a little cologne too.*"
+        "text": "*Washed my face, styled my hair. The mirror's showing me putting in more effort than usual. ...Maybe a touch of cologne?*"
     },
     "day4_morning_nervous": {
         "name": "Me",
-        "text": "*I check my reflection in the mirror one more time. Not bad. ...But why am I shaking so much?*"
+        "text": "*One more check in the mirror. Looking okay. Not bad, actually. ...So why are my hands shaking?*"
     },
     "day4_morning_closet": {
         "name": "Me",
-        "text": "*I open the closet. Besides my school uniform, I don't have that many options. What should I wear?*"
+        "text": "*Opened the closet. Besides the uniform, options are limited. What do I wear?*"
     },
     "day4_morning_outfit": {
         "name": "Me",
-        "text": "*What should I go with? First impressions matter, so I need to choose carefully.*",
+        "text": "*First impressions matter. Let's be strategic about this.*",
         "choices": [
-            "Clean casual *white shirt + jeans*",
-            "Sleek style *jacket + slacks*"
+            "Clean casual *white shirt and jeans*",
+            "Dress it up *jacket and slacks*"
         ]
     },
     "day4_outfit_casual": {
         "name": "Me",
-        "text": "*Comfort is king. Dressing naturally is my style.*"
+        "text": "*Comfort is my brand. Going natural beats trying too hard.*"
     },
     "day4_casual_mirror": {
         "name": "Me",
-        "text": "*I do a spin in front of the mirror. White shirt and jeans... clean and effortless. Looks good.*"
+        "text": "*White shirt, jeans. Clean and low-key. Not bad at all.*"
     },
     "day4_outfit_stylish": {
         "name": "Me",
-        "text": "*Today is special, after all. This should be fine, right?*"
+        "text": "*Today's kind of special. This calls for some armor.*"
     },
     "day4_stylish_mirror": {
         "name": "Me",
-        "text": "*The jacket fits just right, and the slacks make my legs look longer. I look different from usual, which feels a bit unfamiliar... but not bad.*"
+        "text": "*The jacket fits perfectly, slacks line up nicely. I look different from usual -- but not in a bad way.*"
     },
     "day4_morning_outfit_done": {
         "name": "Me",
-        "text": "*Good, outfit decided. Now I just need to check my phone and head out.*"
+        "text": "*Outfit decided. Just need to check my phone and head out.*"
     },
     "day4_morning_phone": {
         "name": "Me",
-        "text": "*I check my phone. There's a message waiting.*"
+        "text": "*The moment I picked up my phone, a message notification was already waiting.*"
     },
     "day4_morning_message_branch": {
         "name": "System",
@@ -125,39 +125,39 @@
     },
     "day4_msg_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"You didn't forget about today, right? 😊 Meet me at the park fountain at 10! I can't wait!\""
+        "text": "\"There's a penalty if you're late. Park fountain, 10 o'clock. Don't even think about bailing.\""
     },
     "day4_morning_reply_seoyeon": {
         "name": "Me",
-        "text": "*A message from Seoyeon. That smiley emoji is cute. What should I reply...*"
+        "text": "*A penalty, huh. Classic Seoyeon. I replied 'Not bailing' with a grin on my face.*"
     },
     "day4_msg_seoyeon_2": {
         "name": "Seoyeon",
-        "text": "\"Oh, and the weather's so nice today! Perfect for a walk. Don't forget sunscreen!\""
+        "text": "\"The weather's actually amazing today. Put on sunscreen. If you get sunburned, that's my loss.\""
     },
     "day4_reply_seoyeon_2": {
         "name": "Me",
-        "text": "*She keeps sending messages back to back. She must be excited too. I should hurry up and get ready.*"
+        "text": "*'That's my loss' -- my lips curled up on their own. Sounds like Seoyeon's looking forward to this too.*"
     },
     "day4_seoyeon_ready": {
         "name": "Seoyeon",
-        "text": "\"See you soon!! 😆\""
+        "text": "\"See you later. Feel free to get your hopes up.\""
     },
     "day4_msg_yuna": {
         "name": "Yuna",
-        "text": "\"...10 o'clock. Café by the station. Don't be late.\""
+        "text": "\"10 o'clock. Cafe by the station. If you're late, I'm leaving.\""
     },
     "day4_morning_reply_yuna": {
         "name": "Me",
-        "text": "*Short and to the point — so typical of Yuna. But that's part of her charm. I type back, 'Got it, I won't be late!'*"
+        "text": "*Short and blunt. So very Yuna. I sent back 'I won't be late.'*"
     },
     "day4_msg_yuna_2": {
         "name": "Yuna",
-        "text": "\"...It's nothing special. I just wanted some coffee. ...It's just weird going alone.\""
+        "text": "\"...It's nothing. Just didn't feel like drinking coffee alone. ...That's all.\""
     },
     "day4_reply_yuna_2": {
         "name": "Me",
-        "text": "*...That's Yuna-speak for 'I want to go together,' right? A smile spreads across my face.*"
+        "text": "*That's Yuna's version of 'I want to hang out.' A smile spread across my face.*"
     },
     "day4_yuna_ready": {
         "name": "Yuna",
@@ -165,63 +165,63 @@
     },
     "day4_msg_dain": {
         "name": "Dain",
-        "text": "\"HEY!! Let's meet up after practice today!! In front of the gym at 11!! Don't be late!!!! 🏐\""
+        "text": "\"HEY HEY HEY!! TODAY'S THE DAY!! GYM ENTRANCE, 11 O'CLOCK!! YOU'RE DEAD IF YOU'RE LATE!!!! I MEAN IT!!!!\""
     },
     "day4_morning_reply_dain": {
         "name": "Me",
-        "text": "*So many exclamation marks... Dain's energy comes through even in her texts. Better send a reply.*"
+        "text": "*An exclamation mark bombardment. Dain's energy is literally exploding off the screen. I typed back a reply.*"
     },
     "day4_msg_dain_2": {
         "name": "Dain",
-        "text": "\"Oh right!! I'm gonna be STARVING after practice!! Find us a good restaurant!! I want meat!!!\""
+        "text": "\"OH RIGHT!! I'll be starving after practice!! Look up restaurants!! MEAT!! I want MEAT!!\""
     },
     "day4_reply_dain_2": {
         "name": "Me",
-        "text": "*She's even making me look up restaurants... Then again, eating with Dain doesn't sound bad. No — I'm actually looking forward to it.*"
+        "text": "*Now she's got me doing restaurant recon. But honestly, eating with Dain -- I'm actually looking forward to it.*"
     },
     "day4_dain_ready": {
         "name": "Dain",
-        "text": "\"See you later!! Get excited!!! 💪\""
+        "text": "\"SEE YOU LATER!! GET EXCITED!!! FOR REAL!!!\""
     },
     "day4_msg_nurse": {
-        "name": "School Nurse",
-        "text": "\"If you're free today... how about the art museum downtown? There's an exhibition I'd like to see. Let's meet in front of the museum at 11.\""
+        "name": "Nurse",
+        "text": "\"If you're free today, how about the art museum downtown? There's an exhibit I've been wanting to see. 11 o'clock, in front of the museum.\""
     },
     "day4_morning_reply_nurse": {
         "name": "Me",
-        "text": "*The art museum with the school nurse... My heart is fluttering. I replied, 'Yes, I'll definitely be there!'*"
+        "text": "*An art museum with the nurse. My heart's racing. I sent back 'I'll definitely be there.'*"
     },
     "day4_msg_nurse_2": {
-        "name": "School Nurse",
-        "text": "\"I'll be looking forward to it. Oh, and... don't call me 'ma'am' today. Let's just meet casually.\""
+        "name": "Nurse",
+        "text": "\"Looking forward to it. Oh, and if you call me 'ma'am' today, there's a fine. Just keep it casual.\""
     },
     "day4_reply_nurse_2": {
         "name": "Me",
-        "text": "*Don't call her 'ma'am'...? I thought my heart was going to stop. Today is going to be a truly special day.*"
+        "text": "*Don't call her 'ma'am.' Pretty sure my heart just skipped a beat.*"
     },
     "day4_nurse_ready": {
-        "name": "School Nurse",
-        "text": "\"See you later then 😊\""
+        "name": "Nurse",
+        "text": "\"See you then.\""
     },
     "day4_msg_teacher": {
-        "name": "Homeroom Teacher",
-        "text": "\"Want to meet at the café near school around lunch? There's something I'd like to talk about. Let's meet at 12.\""
+        "name": "Teacher",
+        "text": "\"Let's meet at the cafe near school around lunch. There's something I want to talk about. 12 o'clock.\""
     },
     "day4_morning_reply_teacher": {
         "name": "Me",
-        "text": "*Meeting the homeroom teacher outside of school... I'm nervous. I sent a reply right away.*"
+        "text": "*Meeting Teacher outside of school. Nervous but curious. I replied right away.*"
     },
     "day4_msg_teacher_2": {
-        "name": "Homeroom Teacher",
-        "text": "\"I'll be in casual clothes, so don't be surprised if you don't recognize me. ...Just kidding. You probably will.\""
+        "name": "Teacher",
+        "text": "\"I'll be in regular clothes, so don't be shocked if you can't recognize me. ...Kidding. You'll probably manage.\""
     },
     "day4_reply_teacher_2": {
         "name": "Me",
-        "text": "*The homeroom teacher cracking jokes? That's a side I've never seen before — it feels refreshing. I wonder what she looks like in casual clothes.*"
+        "text": "*Teacher cracking jokes. That's a side I've never seen before -- which makes it all the more interesting. Wonder what casual looks like on her.*"
     },
     "day4_teacher_ready": {
-        "name": "Homeroom Teacher",
-        "text": "\"Don't be late. I hate waiting.\""
+        "name": "Teacher",
+        "text": "\"Don't be late. I don't like waiting.\""
     },
     "day4_morning_loyalty_check": {
         "name": "System",
@@ -229,76 +229,76 @@
     },
     "day4_morning_loyalty_boost": {
         "name": "Me",
-        "text": "*The fact that I'm getting ready for just one person... somehow makes me feel more certain. Today, I'll think only of them.*"
+        "text": "*The fact that I'm getting ready with just one person on my mind -- it actually steadies me.*"
     },
     "day4_morning_lastcheck": {
         "name": "Me",
-        "text": "*One last look in the mirror. ...I look fine. No — I actually look pretty good. Let's be confident.*"
+        "text": "*One last look in the mirror. ...Not bad. Actually, looking pretty good.*"
     },
     "day4_morning_wallet": {
         "name": "Me",
-        "text": "*Wallet, phone, keys. I put each one in my pockets. Better bring a handkerchief too, just in case.*"
+        "text": "*Wallet, phone, keys. Pocketed one by one. Better grab a handkerchief too.*"
     },
     "day4_morning_lock": {
         "name": "Me",
-        "text": "*I step out the front door and lock it behind me. Click — like the sound of a brand new day beginning.*"
+        "text": "*Stepped out the front door and locked it. Click -- that sound somehow feels like the start of today.*"
     },
     "day4_morning_outside": {
         "name": "Me",
-        "text": "*A warm breeze greets me outside. The scent of cherry blossoms brushes past. The streets are full of life.*"
+        "text": "*Warm breeze hit me the moment I stepped outside. Cherry blossom scent brushed past, the streets alive with energy.*"
     },
     "day4_morning_depart": {
         "name": "Me",
-        "text": "*Alright, all set. Let's go!*"
+        "text": "*Alright, let's go.*"
     },
     "day4_no_date_start": {
         "name": "Me",
-        "text": "*...I check my phone, but there are no messages.*"
+        "text": "*...I checked my phone. No messages.*"
     },
     "day4_no_date_2": {
         "name": "Me",
-        "text": "*It's the weekend and I have no plans. It's already been four days since I transferred... What have I been doing?*"
+        "text": "*It's the weekend and I have zero plans. Four days since transferring -- what have I even been doing?*"
     },
     "day4_no_date_3": {
         "name": "Me",
-        "text": "*Still, I can't just stay home on a beautiful day like this. Maybe I should go out somewhere.*",
+        "text": "*Can't just rot inside on a day like this.*",
         "choices": [
-            "Grab snacks from the convenience store and head to the park",
-            "Just laze around at home",
-            "Kill time at a local café"
+            "Grab snacks from the convenience store and hit the park",
+            "Just stay home and vegetate",
+            "Kill time at the neighborhood cafe"
         ]
     },
     "day4_no_date_park": {
         "name": "Me",
-        "text": "*I buy a rice ball and a drink from the convenience store and head to the park. I sit on a bench, eating alone.*"
+        "text": "*Bought a rice ball and a drink from the convenience store, sat on a park bench. Lunch for one.*"
     },
     "day4_no_date_park_weather": {
         "name": "Me",
-        "text": "*Cherry blossom petals blown by the wind land on my shoulder. It's a beautiful scene... but sitting here alone, it feels a little lonely.*"
+        "text": "*Cherry blossom petals landed on my shoulder. Beautiful scenery, but watching it alone feels a little empty.*"
     },
     "day4_no_date_home": {
         "name": "Me",
-        "text": "*I lie in bed staring at the ceiling. Is this really how I should be spending my day?*"
+        "text": "*Sprawled out on my bed, staring at the ceiling. Is this really how I'm spending today?*"
     },
     "day4_no_date_home_bored": {
         "name": "Me",
-        "text": "*I open social media and it's filled with weekend photos from classmates. Everyone looks so happy... Am I the only one like this?*"
+        "text": "*Opened social media. Flooded with classmates' weekend photos. Everyone looks like they're having a blast -- am I the only one like this?*"
     },
     "day4_no_date_cafe": {
         "name": "Me",
-        "text": "*I walk into a local café and order an Americano. I sit by the window and gaze outside.*"
+        "text": "*Ducked into the neighborhood cafe and ordered an americano. Grabbed a window seat.*"
     },
     "day4_no_date_cafe_sit": {
         "name": "Me",
-        "text": "*I watch couples passing by on the street, sipping my coffee. The bitterness feels particularly strong today.*"
+        "text": "*Sipping coffee while watching couples pass by on the street. The bitterness tastes extra strong today.*"
     },
     "day4_no_date_lonely": {
         "name": "Me",
-        "text": "*...Spending Saturday all alone like this. But I can't just sit still. Let me take a walk.*"
+        "text": "*...Spending Saturday alone. But I can't just sit still. Time to walk it off.*"
     },
     "day4_no_date_wander": {
         "name": "Me",
-        "text": "*Walking aimlessly through the neighborhood, I end up in front of the convenience store near the park. That's when I notice a familiar figure from behind.*"
+        "text": "*Wandered aimlessly around the neighborhood until I ended up near the park convenience store. That's when I spotted a familiar figure.*"
     },
     "day4_no_date_encounter": {
         "name": "System",
@@ -306,58 +306,58 @@
     },
     "day4_no_date_meet_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"Huh? What are you doing here? I just came out for a walk! Wanna join me?\""
+        "text": "\"Huh? You're alone? Talk about perfect timing. I was just on a walk too. Come on, walk with me.\""
     },
     "day4_no_date_chat_seoyeon": {
         "name": "Me",
-        "text": "*Seoyeon walks up with a bright smile. I was feeling so lonely being alone, and now I run into her. Must be fate.*"
+        "text": "*Seoyeon strolled over with an easy smile. I'd been feeling lonely all day -- is this what fate looks like?*"
     },
     "day4_no_date_meet_yuna": {
         "name": "Yuna",
-        "text": "\"...Oh. You're alone too? ...Same here.\""
+        "text": "\"...Oh. You're alone too? ...Same.\""
     },
     "day4_no_date_chat_yuna": {
         "name": "Me",
-        "text": "*Yuna pulls out one earbud and looks up at me. Her quiet gaze feels surprisingly warm.*"
+        "text": "*Yuna pulled out one earbud and looked up at me. Her indifferent expression somehow felt warm.*"
     },
     "day4_no_date_meet_dain": {
         "name": "Dain",
-        "text": "\"Whoa?! Running into you here!! I came to grab a drink after practice!! Wanna hang out?!\""
+        "text": "\"WAIT?! Running into you HERE!! I just came to grab a drink after practice!! Let's hang out!!\""
     },
     "day4_no_date_chat_dain": {
         "name": "Me",
-        "text": "*Dain walks up energetically in her workout clothes. I'm glad for this lively encounter.*"
+        "text": "*Dain came bounding over in her workout clothes. That energy is exactly what I needed.*"
     },
     "day4_no_date_meet_nurse": {
-        "name": "School Nurse",
-        "text": "\"Oh my, fancy meeting you here. I just stepped out for a walk too. Want to walk together?\""
+        "name": "Nurse",
+        "text": "\"Oh my, running into you here. I was just out for a little walk too. Want to walk together?\""
     },
     "day4_no_date_chat_nurse": {
         "name": "Me",
-        "text": "*I almost didn't recognize her in casual clothes. She looks so different outside of school. My heart starts racing.*"
+        "text": "*First time seeing her in casual clothes. Meeting outside school gives off a completely different vibe. My heart's pounding.*"
     },
     "day4_no_date_meet_teacher": {
-        "name": "Homeroom Teacher",
-        "text": "\"...What are you doing here? Heh, teachers get weekends too, you know. Well, want to grab a coffee or something?\""
+        "name": "Teacher",
+        "text": "\"...What are you doing here? Teachers get weekends too, you know. Whatever, want to grab some tea?\""
     },
     "day4_no_date_chat_teacher": {
         "name": "Me",
-        "text": "*The homeroom teacher says it with a straight face, but she's the one who started the conversation. I even caught the slight curve of a smile on her lips.*"
+        "text": "*Deadpan delivery, but she's the one who spoke first. I caught the slight upturn at the corner of her lips too.*"
     },
     "day4_no_date_after_encounter": {
         "name": "Me",
-        "text": "*We walked together for a while, chatting about this and that. I never imagined my weekend would turn out like this.*"
+        "text": "*We walked together for a while, talking about this and that. The day that started alone transformed in an instant.*"
     },
     "day4_no_date_reflect": {
         "name": "Me",
-        "text": "*It started as a day with no plans... but just this one chance encounter made today feel special.*"
+        "text": "*A day that began with no plans at all -- but this one chance encounter made it something special.*"
     },
     "day4_no_date_sunset": {
         "name": "Me",
-        "text": "*Before I know it, the sunset is starting to spread. The sky turns orange. It wasn't a bad day after all.*"
+        "text": "*Before I knew it, the sunset was spreading. The sky turning orange. Not a bad day after all.*"
     },
     "day4_no_date_evening": {
         "name": "Me",
-        "text": "*On the way home. Thinking back on today, a smile naturally forms on my face. I'm already looking forward to Monday.*"
+        "text": "*Walking home. Thinking back on today brings a natural smile. I'm curious about tomorrow.*"
     }
 }

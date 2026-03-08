@@ -1,19 +1,19 @@
 {
     "day5_school_arrive": {
         "name": "Yo",
-        "text": "*Entro por la puerta de la escuela. La escuela está tranquila un domingo.*"
+        "text": "*Paso por la entrada. La escuela un domingo esta completamente vacia.*"
     },
     "day5_school_arrive2": {
         "name": "Yo",
-        "text": "*Esta semana pasó volando. No puedo creer que ya sea el último día... Los árboles del patio se mecen suavemente con la brisa.*"
+        "text": "*Esta semana paso volando. Ya es el ultimo dia. Los arboles del patio se mecen suave con la brisa.*"
     },
     "day5_school_arrive3": {
         "name": "Yo",
-        "text": "*Fue hace solo unos días, pero se siente como una eternidad. Estaba tan nervioso y ansioso entonces. Mira cuánto ha cambiado ahora.*"
+        "text": "*Fue hace apenas unos dias, pero se siente lejisimos. En ese entonces yo era puro nervios y ansiedad. Ahora soy bastante distinto.*"
     },
     "day5_school_arrive4": {
         "name": "Yo",
-        "text": "*Mirando atrás, alguien viene caminando desde lejos. Una figura conocida.*"
+        "text": "*Mire hacia atras y alguien venia caminando desde lejos. Una silueta que me resulta familiar.*"
     },
     "day5_school_meet": {
         "name": "Sistema",
@@ -21,15 +21,15 @@
     },
     "day5_meet_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"Aquí fue donde nos conocimos, ¿no? Parecías un cachorro perdido en ese entonces, jeje.\""
+        "text": "\"Aqui fue donde nos conocimos, no? En ese entonces tenias pinta de estudiante nuevo que se perdio.\""
     },
     "day5_meet_seoyeon2": {
         "name": "Seoyeon",
-        "text": "\"Pero ahora... te ves diferente. Hay una tranquilidad en ti. Es un buen cambio.\""
+        "text": "\"Pero ahora se te ve diferente. Como mas relajado. No es un mal cambio.\""
     },
     "day5_react_seoyeon": {
         "name": "Yo",
-        "text": "*Ver la sonrisa de Seoyeon me llena el corazón de calidez. Fue la primera persona que se acercó a mí en esta escuela.*"
+        "text": "*Ver la sonrisa de Seoyeon me llena de calidez. Fue la primera persona que me hablo en esta escuela.*"
     },
     "day5_seoyeon_d4_check": {
         "name": "Sistema",
@@ -37,23 +37,23 @@
     },
     "day5_seoyeon_d4_warmth": {
         "name": "Seoyeon",
-        "text": "\"...Sabes, cuando me abrazaste anoche... estaba muy agradecida. Me dio valor.\""
+        "text": "\"...Oye. Cuando me abrazaste anoche. Eso solo ya me dio muchisimo valor. ...Gracias.\""
     },
     "day5_seoyeon_d4_warmth_pinky": {
         "name": "Seoyeon",
-        "text": "\"La promesa de meñique de anoche... mi dedo todavía se siente cálido. Por favor cumple tu promesa, ¿sí?\""
+        "text": "\"La promesa de menique de anoche... todavia siento los dedos calidos. Esa promesa, no la vayas a olvidar.\""
     },
     "day5_meet_yuna": {
         "name": "Yuna",
-        "text": "\"...Aquí. ¿Recuerdas cuando nos conocimos? ...Yo sí.\""
+        "text": "\"...Aqui. Te acuerdas de cuando nos conocimos? ...Yo si me acuerdo.\""
     },
     "day5_meet_yuna2": {
         "name": "Yuna",
-        "text": "\"...Cuando estabas parado en la entrada, te veías solo. ...Yo era igual, así que lo noté.\""
+        "text": "\"...Cuando estabas parado en la entrada, te veias solo. Yo tambien era asi. Por eso te reconoci.\""
     },
     "day5_react_yuna": {
         "name": "Yo",
-        "text": "*Es la primera vez que Yuna dice tanto. ¿Será que hoy también es un día especial para ella?*"
+        "text": "*Es la primera vez que Yuna habla tanto. Sera que hoy es un dia asi de especial para ella tambien?*"
     },
     "day5_yuna_d4_check": {
         "name": "Sistema",
@@ -61,23 +61,23 @@
     },
     "day5_yuna_d4_warmth": {
         "name": "Yuna",
-        "text": "\"...Gracias por tomar mi mano anoche. ...Fue cálido.\""
+        "text": "\"...Anoche, cuando me tomaste de la mano. ...Fue calido.\""
     },
     "day5_yuna_d4_warmth_ally": {
         "name": "Yuna",
-        "text": "\"...Por ponerte de mi lado ayer. ...No lo olvidaré.\""
+        "text": "\"...Ayer te pusiste de mi lado. ...No lo voy a olvidar.\""
     },
     "day5_meet_dain": {
         "name": "Dain",
-        "text": "\"¡Al estar en la entrada de la escuela me recuerda al primer día! ¿Te acuerdas cuando te pegué con la pelota de vóley?\""
+        "text": "\"Estar en la entrada de la escuela me recuerda al primer dia! Cuando nos conocimos! Te acuerdas del pelotazo de voley?!\""
     },
     "day5_meet_dain2": {
         "name": "Dain",
-        "text": "\"Me sentía muy mal por eso, pero mirándolo ahora, ¡tal vez fue el destino! Si no te hubiera golpeado, ¡nunca te habría hablado!\""
+        "text": "\"En ese momento me senti re mal... pero ahora lo pienso y agradezco ese accidente. Gracias a eso te conoci.\""
     },
     "day5_react_dain": {
         "name": "Yo",
-        "text": "*Ese pelotazo sí que dolió... pero si así conocí a Dain, tal vez debería estar agradecido.*"
+        "text": "*Una relacion que empezo con un pelotazo de voley, y ahora hasta esa casualidad se siente como destino. La sonrisa de Dain me cambio la vida por completo.*"
     },
     "day5_dain_d4_check": {
         "name": "Sistema",
@@ -85,31 +85,31 @@
     },
     "day5_dain_d4_warmth": {
         "name": "Dain",
-        "text": "\"...¡¡Lo de que lloré ayer es un SECRETO!! Pero... me alegra haber podido llorar frente a ti.\""
+        "text": "\"...Lo de que llore ayer es SECRETO!! Pero... me alegra haber podido llorar frente a ti.\""
     },
     "day5_meet_nurse": {
         "name": "Enfermera",
-        "text": "\"Venir a la escuela un fin de semana se siente raro. Conocerte en esta escuela... ¿habrá sido el destino?\""
+        "text": "\"Venir a la escuela un finde se siente raro. Haberte conocido en esta escuela... sera cosa del destino?\""
     },
     "day5_meet_nurse2": {
         "name": "Enfermera",
-        "text": "\"Cuando viniste a la enfermería en tu primer día, tu cara nerviosa era muy tierna. Has madurado mucho desde entonces.\""
+        "text": "\"Cuando viniste a la enfermeria el primer dia, tu cara de nervios era adorable. Ahora ya te ves mas maduro.\""
     },
     "day5_react_nurse": {
         "name": "Yo",
-        "text": "*Verla con ropa casual se siente extraño pero emocionante. No tenía idea de que se veía tan hermosa debajo de esa bata.*"
+        "text": "*Verla de civil se siente raro pero emocionante. No tenia idea de que debajo de la bata se veia tan linda.*"
     },
     "day5_meet_teacher": {
         "name": "Profesora",
-        "text": "\"Ja, venir a la escuela un fin de semana es raro. Pero... estar aquí contigo no está tan mal.\""
+        "text": "\"Ja, la escuela un fin de semana. Pero como estoy contigo, no esta tan mal.\""
     },
     "day5_meet_teacher2": {
         "name": "Profesora",
-        "text": "\"Cuando te vi por primera vez en la sala de profesores el día de tu transferencia, tus ojos se veían tan ansiosos. Ahora pareces una persona completamente diferente.\""
+        "text": "\"Cuando te vi por primera vez en la sala de profes el dia de tu transferencia, tenias unos ojos super ansiosos. Ahora pareces otra persona.\""
     },
     "day5_react_teacher": {
         "name": "Yo",
-        "text": "*Recibir un cumplido de ella es tan raro que me hace aún más feliz. Hoy también tiene una expresión muy suave.*"
+        "text": "*Que alguien que casi nunca te halaga te diga algo asi pega mas fuerte. Hoy la profe tiene una expresion suave.*"
     },
     "day5_outfit_reaction_check": {
         "name": "Sistema",
@@ -117,39 +117,39 @@
     },
     "day5_outfit_compliment": {
         "name": "Yo",
-        "text": "(Me mira de arriba a abajo con los ojos bien abiertos. \"¿Por qué te ves tan bien hoy?\" El pequeño cumplido me hace sentir mariposas.)"
+        "text": "(Me mira de arriba a abajo y abre los ojos bien grandes. \"Hoy te ves diferente, no?\" Ese comentario me lleno de orgullo.)"
     },
     "day5_walk_together": {
         "name": "Yo",
-        "text": "\"¿Quieres entrar? Hay muchos lugares con recuerdos aquí.\""
+        "text": "\"Entramos? Hay muchos lugares para recorrer.\""
     },
     "day5_walk_enter": {
         "name": "Yo",
-        "text": "*Entramos a la escuela lado a lado. La escuela está vacía un domingo, así que solo nuestros pasos resuenan en los pasillos.*"
+        "text": "*Entramos juntos a la escuela. Como es domingo y esta vacia, solo se oyen nuestros pasos.*"
     },
     "day5_corridor1": {
         "name": "Yo",
-        "text": "*Este pasillo... En mi primer día como estudiante transferido, vagué por aquí tratando de encontrar mi salón. No podía moverme sin saber a dónde ir.*"
+        "text": "*Este pasillo. El primer dia de clases me perdi intentando encontrar el salon. No sabia para donde ir y los pies no me respondian.*"
     },
     "day5_corridor2": {
         "name": "Yo",
-        "text": "*Alguien me habló en este pasillo aquel día. Ese pequeño acto de amabilidad llevó a todo lo que vino después.*"
+        "text": "*Ese dia, alguien me hablo en este pasillo. Esa pequena amabilidad fue lo que llevo a todo esto.*"
     },
     "day5_classroom_enter": {
         "name": "Yo",
-        "text": "*Abrí la puerta del salón. La luz del sol entra en diagonal, tiñendo los escritorios de un brillo dorado.*"
+        "text": "*Abri la puerta del salon. La luz de la tarde entra en diagonal y tine los pupitres de dorado.*"
     },
     "day5_classroom1": {
         "name": "Yo",
-        "text": "*Mi asiento. El mismo donde me senté por primera vez cuando me transferí sigue aquí. Me senté un momento.*"
+        "text": "*Mi pupitre. El mismo donde me sente por primera vez cuando me transferi, sigue ahi. Me sente un momento.*"
     },
     "day5_classroom2": {
         "name": "Yo",
-        "text": "*Mirando la pizarra desde este asiento... Ah, es el mismo ángulo de aquel entonces. De alguna forma, me reconforta.*"
+        "text": "*Si miro el pizarron desde aqui... es el mismo angulo de aquel dia. Por alguna razon, eso me tranquiliza.*"
     },
     "day5_classroom3": {
         "name": "Yo",
-        "text": "\"Pasaron muchas cosas en este salón. Me cacharon dormitando en clase, pasamos notas...\""
+        "text": "\"Pasaron muchas cosas en este salon. Hasta me cacharon durmiendo en clase.\""
     },
     "day5_classroom_react": {
         "name": "Sistema",
@@ -157,27 +157,27 @@
     },
     "day5_classroom_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"Sí. Cuando te presentaste por primera vez, ya pensé 'esta persona parece agradable'. Llámalo intuición de presidenta del consejo estudiantil.\""
+        "text": "\"Cuando te presentaste, pense 'este chico me cae bien'. Llamalo intuicion de presidenta del consejo estudiantil.\""
     },
     "day5_classroom_yuna": {
         "name": "Yuna",
-        "text": "\"...Nuestras miradas se cruzaron aquí por primera vez. Estaba mirando por la ventana... y cuando me miraste, mi corazón dio un salto.\""
+        "text": "\"...Aqui fue donde cruzamos miradas por primera vez. Estaba viendo por la ventana, y cuando me miraste... me sorprendi.\""
     },
     "day5_classroom_dain": {
         "name": "Dain",
-        "text": "\"¡¡Aquí hacíamos estiramientos antes de educación física!! Eras tan poco flexible, jaja. ¿Mejoraste algo?\""
+        "text": "\"Aqui haciamos estiramientos antes de educacion fisica! Eras re poco flexible jaja. Ya mejoraste algo?\""
     },
     "day5_classroom_nurse": {
         "name": "Enfermera",
-        "text": "\"Cuando vine a observar la clase, noté que no dejabas de mirar hacia la ventana de la enfermería, ¿sabes? Jeje.\""
+        "text": "\"Cuando vine a observar la clase, me di cuenta de que no dejabas de mirar hacia la ventana de la enfermeria. Jeje.\""
     },
     "day5_classroom_teacher": {
         "name": "Profesora",
-        "text": "\"Cada día en este salón, decía tu nombre al pasar lista. Justo cuando me estaba acostumbrando... ya es el final.\""
+        "text": "\"Todos los dias pasaba lista y decia tu nombre. Justo cuando me estaba acostumbrando... ya es el final.\""
     },
     "day5_memory_spot_suggest": {
         "name": "Yo",
-        "text": "\"¿Hay algún lugar donde quieras ir? Sigamos recorriendo.\""
+        "text": "\"Hay algun lugar al que quieras ir? Sigamos recorriendo.\""
     },
     "day5_memory_spot_branch": {
         "name": "Sistema",
@@ -185,83 +185,83 @@
     },
     "day5_memory_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"¡Oh! Espera, vamos al jardín. ¿Recuerdas el macizo de flores que regaba todos los días?\""
+        "text": "\"Espera, vamos al jardin. El macizo de flores que regaba todos los dias, te acuerdas?\""
     },
     "day5_memory_seoyeon2": {
         "name": "Seoyeon",
-        "text": "\"Mira, todas las flores que planté florecieron. Me ayudaste a regarlas la primera vez que viniste. Desde ese momento... empecé a sentir algo.\""
+        "text": "\"Mira, todas las flores que plante ya florecieron. La primera vez que viniste me ayudaste a regarlas. Desde ese momento... creo que lo supe.\""
     },
     "day5_memory_yuna": {
         "name": "Yuna",
-        "text": "\"...Espera. ¿Podemos ir allá? La biblioteca.\""
+        "text": "\"...Espera. Quiero ir ahi. La biblioteca.\""
     },
     "day5_memory_yuna2": {
         "name": "Yuna",
-        "text": "\"...Aquí fue donde te sentaste a mi lado por primera vez. Cuando me preguntaste por el título del libro... me sorprendí. Nadie me había hablado antes.\""
+        "text": "\"...Aqui fue donde te sentaste a mi lado por primera vez. Cuando me preguntaste el titulo del libro, me sorprendi. Nadie me habia hablado antes.\""
     },
     "day5_memory_dain": {
         "name": "Dain",
-        "text": "\"¡¡Espera!! ¡¡Vamos al gimnasio!! ¡¡Ahí empezó todo el primer día!!\""
+        "text": "\"Espera!! Vamos al gimnasio!! Ahi fue donde paso todo el primer dia!!\""
     },
     "day5_memory_dain2": {
         "name": "Dain",
-        "text": "\"Estaba practicando vóley aquí y la pelota voló... ¡y te dio justo en la cara! Perdón, jaja. Pero te agradezco que no te enojaras.\""
+        "text": "\"Estaba practicando voley y la pelota se fue volando y te dio justo en la cara! Perdon jaja. Pero gracias por no enojarte.\""
     },
     "day5_memory_nurse": {
         "name": "Enfermera",
-        "text": "\"¿Pasamos por la enfermería? Recuerdo vívidamente el día que viniste por primera vez.\""
+        "text": "\"Pasamos por la enfermeria? Recuerdo clarito el dia que viniste por primera vez.\""
     },
     "day5_memory_nurse2": {
         "name": "Enfermera",
-        "text": "\"El primer día, viniste diciendo que te dolía la cabeza por los nervios. Cuando puse mi mano en tu frente... tu cara se puso roja como un tomate, jeje.\""
+        "text": "\"El primer dia viniste diciendo que te dolia la cabeza de los nervios. Cuando te puse la mano en la frente, te pusiste rojo como tomate. Jeje.\""
     },
     "day5_memory_teacher": {
         "name": "Profesora",
-        "text": "\"Espera. Párate frente al podio. Ahí es donde te presentaste en tu primer día.\""
+        "text": "\"Espera. Parate frente al estrado. Ahi fue donde te presentaste el primer dia.\""
     },
     "day5_memory_teacher2": {
         "name": "Profesora",
-        "text": "\"Tu voz temblaba mucho en ese entonces... Pensé para mí, 'Este chico, me preocupa un poco'. Pero has cambiado mucho desde entonces.\""
+        "text": "\"En ese entonces la voz te temblaba un monton. Pense 'este chico me preocupa un poco'. Pero ahora sos distinto.\""
     },
     "day5_memory_common": {
         "name": "Yo",
-        "text": "*Los recuerdos de este lugar brotan desde lo profundo de mi corazón. Al principio no sabía nada, pero cada día que pasó me convirtió en quien soy ahora.*"
+        "text": "*Los recuerdos de este lugar me suben desde el fondo del pecho. Al principio no sabia nada, pero cada dia se fue acumulando hasta formar lo que soy ahora.*"
     },
     "day5_memory_common2": {
         "name": "Yo",
-        "text": "*Cada lugar guarda un recuerdo, y en cada recuerdo, esta persona siempre estuvo ahí. Ahora sé lo que eso significa.*"
+        "text": "*Cada lugar tiene un recuerdo, y en cada recuerdo siempre esta esta persona. Ahora entiendo lo que eso significa.*"
     },
     "day5_rooftop_suggest": {
         "name": "Yo",
-        "text": "\"Oye... ¿quieres subir a la azotea? El clima está lindo hoy, y la vista desde arriba debe ser genial.\""
+        "text": "\"Oye, subimos a la azotea? El dia esta lindo, y la vista desde arriba debe estar buena.\""
     },
     "day5_rooftop_stairs1": {
         "name": "Yo",
-        "text": "*Subimos las escaleras. Dos pares de pisadas resuenan en la escalera vacía. Un piso, dos pisos.*"
+        "text": "*Subimos las escaleras. Dos pares de pasos resuenan en el hueco vacio. Un piso, dos pisos.*"
     },
     "day5_rooftop_stairs2": {
         "name": "Yo",
-        "text": "*Llegamos al final de la última escalera y nos paramos frente a la puerta de la azotea. Una brisa se cuela por la rendija.*"
+        "text": "*Ultimo escalon. Estamos frente a la puerta de la azotea. El viento se cuela por la rendija.*"
     },
     "day5_rooftop_door": {
         "name": "Yo",
-        "text": "*Creak. La puerta de la azotea se abre revelando un cielo abierto. Una agradable brisa nos recibe.*"
+        "text": "*Criiic. Al abrir la puerta se abrio un cielo enorme. El viento me acaricia la cara.*"
     },
     "day5_rooftop_view1": {
         "name": "Yo",
-        "text": "*Wow... ¿La vista desde aquí siempre fue tan hermosa? El patio de la escuela, los techos extendiéndose a la distancia, las calles que caminamos antes.*"
+        "text": "*La vista desde aqui siempre fue tan buena? La cancha, los techos a lo lejos, la calle que camine hace un rato.*"
     },
     "day5_rooftop_view2": {
         "name": "Yo",
-        "text": "*O tal vez... se siente tan hermoso por la persona que está a mi lado.*"
+        "text": "*O tal vez se siente asi de lindo por la persona que tengo al lado.*"
     },
     "day5_rooftop_lean": {
         "name": "Yo",
-        "text": "*Nos recostamos contra la baranda lado a lado. El viento nos revuelve el cabello.*"
+        "text": "*Nos apoyamos juntos en la baranda. El viento nos revuelve el pelo.*"
     },
     "day5_rooftop_silence": {
         "name": "Yo",
-        "text": "*Por un rato, solo contemplamos el paisaje en silencio. Extrañamente, el silencio no se siente incómodo. Con esta persona, las palabras no siempre son necesarias.*"
+        "text": "*Por un buen rato miramos el paisaje sin decir nada. El silencio no incomoda. Con esta persona es asi.*"
     },
     "day5_rooftop_talk_branch": {
         "name": "Sistema",
@@ -269,67 +269,67 @@
     },
     "day5_rooftop_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"Tengo un sueño. Incluso después de graduarme, quiero ser alguien que trabaje por los demás. Estar en el consejo estudiantil me hizo pensar más en eso.\""
+        "text": "\"Tengo un sueno. Despues de graduarme quiero ser alguien que trabaje para los demas. Estar en el consejo estudiantil me hizo tenerlo mas claro.\""
     },
     "day5_rooftop_yuna": {
         "name": "Yuna",
-        "text": "\"...Quiero escribir. Puedo decir en escritura lo que no puedo decirle a la gente. ...Me gustaría que leyeras lo que escribo.\""
+        "text": "\"...Quiero escribir. Lo que no puedo decirle a la gente, puedo decirlo escribiendo. ...Me gustaria que tu lo leyeras.\""
     },
     "day5_rooftop_dain": {
         "name": "Dain",
-        "text": "\"¿Sabes qué? ¡Quiero ser atleta profesional! ¡Competir en el nacional, ganar el campeonato, salir en la tele! ...Pero a veces me da miedo. Como, ¿de verdad puedo lograrlo?\""
+        "text": "\"Voy a ser deportista profesional! Ir al nacional y ganar! ...Pero a veces me da miedo. Como que pienso, de verdad puedo?\""
     },
     "day5_rooftop_nurse": {
         "name": "Enfermera",
-        "text": "\"Al principio quería ser enfermera de hospital. Pero después de cuidar a los chicos en la escuela, sentí que este es mi lugar. ...Y aquí también te conocí a ti.\""
+        "text": "\"Al principio queria ser enfermera de hospital. Pero despues de cuidar a los chicos en la escuela, senti que este es mi lugar. Y aqui tambien te conoci a ti.\""
     },
     "day5_rooftop_teacher": {
         "name": "Profesora",
-        "text": "\"Cuando empecé como profesora, no tenía confianza. Pero conocer estudiantes como tú... sinceramente, me hace sentir que tomé la decisión correcta.\""
+        "text": "\"Cuando empece como profesora, no tenia confianza. Pero conocer a chicos como tu... me convenci de que fue una buena eleccion.\""
     },
     "day5_rooftop_future_talk": {
         "name": "Yo",
-        "text": "\"Yo también... sinceramente, antes de transferirme, no tenía el lujo de pensar en el futuro. Sentía que solo sobrevivía cada día.\""
+        "text": "\"Yo tambien, la verdad, antes de transferirme no tenia ni la cabeza para pensar en el futuro. Solo sobrevivia el dia a dia.\""
     },
     "day5_rooftop_feeling1": {
         "name": "Yo",
-        "text": "\"Pero las cosas cambiaron después de venir aquí. Empecé a esperar con ganas el mañana. Conocer gente se volvió divertido... y venir a la escuela cada día me hizo feliz.\""
+        "text": "\"Pero desde que vine aqui cambio todo. Empece a esperar el manana. Encontrarme con alguien se volvio algo que me gusta.\""
     },
     "day5_rooftop_feeling2": {
         "name": "Yo",
-        "text": "*Todo eso es... gracias a la persona a mi lado. Aún no puedo expresarlo todo con palabras, pero algún día lo haré.*"
+        "text": "*Todo eso es gracias a la persona que tengo al lado. No me alcanzan las palabras, pero algun dia, sin falta.*"
     },
     "day5_lunch_suggest": {
         "name": "Yo",
-        "text": "\"¿Tienes hambre? Compré algunas cosas en la tienda antes. ¿Quieres comer aquí arriba?\""
+        "text": "\"No tienes hambre? Traje unas cosas de la tienda. Comemos aqui?\""
     },
     "day5_lunch_setup": {
         "name": "Yo",
-        "text": "*Saqué unos onigiris y bebidas de mi mochila. Es una comida sencilla, pero con esta vista, cualquier cosa se sentiría especial.*"
+        "text": "*Saque onigiris y unas bebidas de la mochila. Es sencillo, pero con esta vista de fondo, sobra.*"
     },
     "day5_lunch_sit": {
         "name": "Yo",
-        "text": "*Nos sentamos lado a lado contra la pared sombreada cerca de la baranda. El piso de concreto está un poco frío, pero la calidez a mi lado lo compensa.*"
+        "text": "*Nos sentamos juntos contra la pared a la sombra, cerca de la baranda. El piso esta un poco frio, pero la calidez de al lado lo compensa.*"
     },
     "day5_lunch_eat1": {
         "name": "Yo",
-        "text": "*Le di un mordisco al onigiri. Es solo un simple onigiri de tienda, pero hoy sabe especialmente bien.*"
+        "text": "*Le di un mordisco al onigiri. Es de tienda, pero hoy sabe especialmente bien.*"
     },
     "day5_lunch_talk1": {
         "name": "Yo",
-        "text": "\"Sabes, comer aquí en la azotea se siente como un picnic.\""
+        "text": "\"Comer en la azotea se siente como picnic.\""
     },
     "day5_lunch_talk2": {
         "name": "Yo",
-        "text": "*Escuché una risa suave a mi lado. Esa risa se fue con la brisa, llevada a algún lugar lejano.*"
+        "text": "*Una risita suave a mi lado. Esa risa se la lleva el viento a algun lugar lejano.*"
     },
     "day5_lunch_talk3": {
         "name": "Yo",
-        "text": "\"Antes de transferirme, comer solo era lo normal para mí. En el salón, en casa. Pensaba que estaba bien así.\""
+        "text": "\"Antes de transferirme, comer solo era lo normal para mi. En el salon, en casa.\""
     },
     "day5_lunch_talk4": {
         "name": "Yo",
-        "text": "\"Pero ahora... me doy cuenta por primera vez de lo lindo que es comer con alguien.\""
+        "text": "\"Pero no sabia que comer con alguien podia ser tan lindo. Es la primera vez que lo siento.\""
     },
     "day5_lunch_moment_branch": {
         "name": "Sistema",
@@ -337,66 +337,66 @@
     },
     "day5_lunch_moment_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"Lo mismo digo. Siempre estaba tan ocupada con el consejo estudiantil que comía sola. Pero comer contigo... siento que el tiempo pasa más lento.\""
+        "text": "\"Yo tambien. Con lo del consejo estudiantil siempre almorzaba sola a las corridas. Pero contigo siento que el tiempo va mas despacio.\""
     },
     "day5_lunch_touch_seoyeon": {
         "name": "Yo",
-        "text": "*Seoyeon suavemente recostó su cabeza en mi hombro. Sus mejillas rojas como tomate. Siento que mi corazón va a detenerse.*"
+        "text": "*Seoyeon apoyo suavemente la cabeza en mi hombro. Con las mejillas rojas. Siento que el corazon se me va a parar.*"
     },
     "day5_lunch_moment_yuna": {
         "name": "Yuna",
-        "text": "\"...Yo también. Pensaba que comer sola era cómodo... pero cuando estoy a tu lado, la comida sabe mejor.\""
+        "text": "\"...Yo tambien. Pensaba que comer sola estaba bien. Pero al lado tuyo, la comida sabe mejor.\""
     },
     "day5_lunch_touch_yuna": {
         "name": "Yo",
-        "text": "*La mano de Yuna se deslizó silenciosamente sobre la mía. Sus dedos fríos se fueron calentando poco a poco. Le tomé la mano.*"
+        "text": "*La mano de Yuna se deslizo sobre la mia. Sus dedos frios se fueron calentando de a poco. Le tome la mano sin decir nada.*"
     },
     "day5_lunch_moment_dain": {
         "name": "Dain",
-        "text": "\"¡Cuando como sola, siempre como súper rápido! Pero cuando estoy contigo, como despacio. ¿No es raro...?\""
+        "text": "\"Cuando como sola, me la devoro rapidisimo! Pero contigo como despacio. Es raro, no?\""
     },
     "day5_lunch_touch_dain": {
         "name": "Yo",
-        "text": "(Dain de repente me agarró el brazo fuerte. \"¡Oye, no te quedes callado así, me preocupo!\" dijo, pero no me soltó.)"
+        "text": "(Dain me agarro del brazo de repente. \"Si te quedas callado me preocupo!\" dijo, pero no me solto.)"
     },
     "day5_lunch_moment_nurse": {
         "name": "Enfermera",
-        "text": "\"Cuando creces, momentos como estos son cada vez menos. Por eso... este momento es aún más valioso.\""
+        "text": "\"Cuando creces, momentos como estos se vuelven cada vez mas raros. Por eso este instante es todavia mas valioso.\""
     },
     "day5_lunch_touch_nurse": {
         "name": "Yo",
-        "text": "(Presionó suavemente la lata de bebida contra mi mejilla. \"Frío, ¿no?\" dijo con una sonrisa más brillante que la luz del sol.)"
+        "text": "(La enfermera me apoyo la lata fria en la mejilla. \"Frio, no?\" dijo con una sonrisa que brillaba mas que el sol.)"
     },
     "day5_lunch_moment_teacher": {
         "name": "Profesora",
-        "text": "\"Es la primera vez que como así con un estudiante. Como profesora es un poco... pero hoy solo quiero estar aquí como persona.\""
+        "text": "\"Es la primera vez que almuerzo asi con un estudiante. Como profesora es un poco... pero hoy quiero estar aqui solo como persona.\""
     },
     "day5_lunch_touch_teacher": {
         "name": "Yo",
-        "text": "*Sonrió y me acarició suavemente el cabello. Su rigidez habitual no estaba por ningún lado, solo quedaba un toque cálido y tierno.*"
+        "text": "*La profe sonrio y me paso la mano por el pelo. Nada de su seriedad habitual, solo quedo un gesto calido.*"
     },
     "day5_lunch_after": {
         "name": "Yo",
-        "text": "*Terminé mi bebida. La lata fría ya se había puesto tibia en mis manos. El tiempo pasó tan rápido.*"
+        "text": "*Termine la bebida. La lata que estaba helada ya se entibio en mis manos. Cuanto tiempo paso.*"
     },
     "day5_lunch_cleanup": {
         "name": "Yo",
-        "text": "*Recogí la basura y ordené. En el piso de la azotea, quedó una marca de sol donde habíamos estado sentados.*"
+        "text": "*Junte la basura y ordene. En el piso quedo la marca del sol donde estuvimos sentados.*"
     },
     "day5_pre_afternoon1": {
         "name": "Yo",
-        "text": "*El sol ha empezado a pasar su punto más alto. Las sombras son más cortas que antes.*"
+        "text": "*El sol empezo a bajar. Las sombras son mas cortas que antes.*"
     },
     "day5_pre_afternoon2": {
         "name": "Yo",
-        "text": "*Todavía queda tiempo hoy. No... más precisamente, todavía quedan palabras sin decir.*"
+        "text": "*Todavia queda dia. O mas bien, todavia quedan palabras que no dije.*"
     },
     "day5_pre_afternoon3": {
         "name": "Yo",
-        "text": "*Algo se agita en lo profundo de mi pecho. Es una señal... de que el momento de reunir valor se acerca.*"
+        "text": "*Algo se remueve dentro del pecho. Es la senal de que se acerca el momento de tomar valor.*"
     },
     "day5_pre_afternoon4": {
         "name": "Yo",
-        "text": "*A la persona que está a mi lado. Hoy, hay sentimientos que absolutamente debo expresar.*"
+        "text": "*A la persona que esta a mi lado. Hoy, sin falta, tengo que decirle lo que siento.*"
     }
 }

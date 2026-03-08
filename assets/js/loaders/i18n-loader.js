@@ -16,9 +16,9 @@
     for (let day of days) {
         for (let i = 0; i < slots.length; i++) {
             const slot = slots[i];
-            const file = \`day\${day}_\${i+1}_\${slot}.json\`;
+            const file = `day${day}_${i+1}_${slot}.json`;
             
-            const promise = fetch(\`\${basePath}/\${file}\`)
+            const promise = fetch(`${basePath}/${file}`)
                 .then(res => {
                     if (res.ok) return res.json();
                     return {};

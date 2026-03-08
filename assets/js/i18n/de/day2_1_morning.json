@@ -1,0 +1,578 @@
+{
+    "day2_start": {
+        "name": "Ich",
+        "text": "*Augen auf. Noch vor dem Wecker. ...Das liegt nicht an Vorfreude oder so, meine innere Uhr ist einfach on point. Ja, genau das ist es.*"
+    },
+    "day2_start_2": {
+        "name": "Ich",
+        "text": "*Die Sachen von gestern blitzen durch meinen Kopf. Surreal wie ein Traum, aber die Schuluniform am Schreibtisch ist ziemlich real. Tag zwei also. Ist es zu frueh, sich schon dran zu gewoehnen?*"
+    },
+    "day2_morning_phone": {
+        "name": "Ich",
+        "text": "*Greife unbewusst zum Smartphone. Auf dem Sperrbildschirm sind Benachrichtigungen... keine. Was hab ich eigentlich erwartet?*"
+    },
+    "day2_morning_phone_2": {
+        "name": "Ich",
+        "text": "*Starre auf die leere Benachrichtigungsleiste und muss schmunzeln. Weg mit den falschen Erwartungen, ich kann die Leute ja einfach persoenlich sehen. Decke weggetreten und aufgestanden.*"
+    },
+    "day2_morning_routine": {
+        "name": "Ich",
+        "text": "*Gesicht gewaschen, Blick in den Spiegel. Sehe besser aus als gestern. Zumindest fuer 'Schueler am zweiten Tag nach dem Schulwechsel' gar nicht schlecht.*"
+    },
+    "day2_morning_routine_2": {
+        "name": "Ich",
+        "text": "*Krawattenknoten sitzt beim ersten Versuch. Gestern hab ich drei Anlaeufe gebraucht, heute nur einen. Meine Anpassungsfaehigkeit ist echt nicht schlecht.*"
+    },
+    "day2_breakfast": {
+        "name": "Ich",
+        "text": "*In der Kueche angekommen, stehen Reis und Spiegelei auf dem Tisch. Mama ist schon bei der Arbeit. Dass sie nicht mal eine Notiz hinterlaesst, ist so typisch fuer sie.*"
+    },
+    "day2_breakfast_2": {
+        "name": "Ich",
+        "text": "*Fruehstueck schnell verputzt und die Tasche gepackt. Blick auf die Uhr - noch genuegend Zeit. Kann entspannt losgehen.*"
+    },
+    "day2_start_3": {
+        "name": "Ich",
+        "text": "*Trete aus der Haustuer. Tag zwei, Morgen. Was mich heute wohl erwartet? ...Nicht dass ich mich freue oder so, bin einfach nur neugierig.*"
+    },
+    "day2_road_to_school": {
+        "name": "Ich",
+        "text": "*Die Morgenluft ist kalt und frisch. Als ob der Fruehling sich ankuendigt - ein Hauch von Bluetenduft mischt sich in den Wind.*"
+    },
+    "day2_road_to_school_2": {
+        "name": "Ich",
+        "text": "*Schueler in der gleichen Uniform stroemen in kleinen Gruppen Richtung Schule. Gestern kam mir alles noch fremd vor, aber heute mische ich mich ganz selbstverstaendlich unter sie.*"
+    },
+    "day2_road_to_school_3": {
+        "name": "Ich",
+        "text": "*Von der anderen Strassenseite weht ein 'Ey, das ist der Neue!' herueber. Bin wohl immer noch das heisse Thema. ...Ist das jetzt ein guter oder schlechter Ruf?*"
+    },
+    "day2_school_gate": {
+        "name": "Ich",
+        "text": "*Am Schultor angekommen. Dass meine Schritte leichter sind als gestern - liegt das an meiner Stimmung oder ist diese Schule echt ganz okay?*"
+    },
+    "day2_school_gate_2": {
+        "name": "Ich",
+        "text": "*Vor dem Haupteingang schaue ich mich unauffaellig um. Dieses Gefuehl, dass irgendwas Vertrautes in der Luft liegt... scheint keine Einbildung zu sein.*",
+        "choices": [
+            "Sich umschauen."
+        ]
+    },
+    "day2_meet_someone": {
+        "name": "Ich",
+        "text": "*Ich drehe mich um, und da steht...*"
+    },
+    "day2_meet_yuna": {
+        "name": "Ich",
+        "text": "*Unter dem Schatten der grossen Zelkove neben dem Schultor klappt Yuna ihr Buch zu - ihre Art, mir zu zeigen, dass sie mich bemerkt hat. Wortlos, nur mit einem Blick.*"
+    },
+    "day2_yuna_talk_msg": {
+        "name": "Yuna",
+        "text": "\"...Da bist du ja. Deine Nachricht von gestern Abend - ich wollte sie eigentlich ignorieren, aber... konnte ich nicht. ...Schau spaeter in dein Fach.\""
+    },
+    "day2_yuna_morning_talk": {
+        "name": "Yuna",
+        "text": "\"...Du bist da. Das mit dem Lesezeichen gestern... danke. ...Schau spaeter mal in dein Fach.\""
+    },
+    "day2_meet_nurse": {
+        "name": "System",
+        "text": ""
+    },
+    "day2_meet_nurse_standard": {
+        "name": "Krankenschwester",
+        "text": "\"Hehe, so klare Augen schon am Morgen. Guten Morgen, {name}.\""
+    },
+    "day2_meet_nurse_high": {
+        "name": "Krankenschwester",
+        "text": "*Sie kommt naeher und streicht mir sanft den Uniformkragen glatt.* \"Oh, {name}. Du siehst heute viel entspannter aus als gestern. Hehe, liegt das etwa an mir?\""
+    },
+    "day2_meet_nurse_low": {
+        "name": "Krankenschwester",
+        "text": "*Sie wirft mir einen kurzen Blick zu und schaut dann weg.* \"Oh je, du siehst nicht gut aus. Wenn du nichts zu tun hast, ruh dich im Klassenraum aus.\""
+    },
+    "day2_nurse_talk": {
+        "name": "Krankenschwester",
+        "text": "*Sie kneift vielsagend die Augen zusammen und macht einen Schritt auf mich zu.*"
+    },
+    "day2_nurse_talk_msg": {
+        "name": "Krankenschwester",
+        "text": "\"Deine Nachricht gestern Abend war echt suess. Mein Herz hat kurz hoeherschlagen. ...War nur ein Scherz. Vielleicht? Jedenfalls, das Krankenzimmer hat auch heute geoeffnet.\""
+    },
+    "day2_nurse_talk_has_number": {
+        "name": "Krankenschwester",
+        "text": "\"Ich hab gestern Abend ueberlegt, ob ich dir schreiben soll... aber als Lehrerin zuerst einem Schueler zu schreiben, waere schon irgendwie komisch, oder? Hehe. Komm heute wieder im Krankenzimmer vorbei.\""
+    },
+    "day2_nurse_talk_no_number": {
+        "name": "Krankenschwester",
+        "text": "\"Schon Tag zwei, wow. Du bist wohl der Typ, der sich schnell anpasst? Uebernim dich nicht, und wenn's zu viel wird, fluechte ins Krankenzimmer.\""
+    },
+    "day2_meet_seoyeon": {
+        "name": "System",
+        "text": ""
+    },
+    "day2_meet_seoyeon_standard": {
+        "name": "Seoyeon",
+        "text": "\"Gut geschlafen gestern? Ich hoffe, du hast heute auch einen coolen Tag, {name}.\""
+    },
+    "day2_meet_seoyeon_high": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon steht vor dem Schultor, laeuft unruhig hin und her. Als sie mich entdeckt, huscht ein erleichterter Ausdruck ueber ihr Gesicht, den sie schnell verbirgt.* \"{name}, du bist frueh da. ...Ja, ich stand nur zufaellig hier rum. Hab nicht auf dich gewartet oder so.\""
+    },
+    "day2_meet_seoyeon_low": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon erstarrt, als sie mich sieht.* \"...Ach, du bist da. Immerhin nicht zu spaet. Ich geh dann mal vor.\""
+    },
+    "day2_seoyeon_talk": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon mustert mich einen Moment und hebt leicht die Mundwinkel.*"
+    },
+    "day2_seoyeon_talk_msg": {
+        "name": "Seoyeon",
+        "text": "\"Danke fuer deine Nachricht gestern. Dass ich deswegen gut geschlafen habe, ist ein Geheimnis. ...Was ich gerade gesagt habe, auch.\""
+    },
+    "day2_seoyeon_talk_has_number": {
+        "name": "Seoyeon",
+        "text": "\"Nachdem wir gestern Nummern getauscht haben, hab ich bestimmt hundertmal ueberlegt, ob ich dir schreiben soll. Hab mich zurueckgehalten, weil ich dich nicht stoeren wollte... jetzt bereue ich es.\"",
+        "choices": [
+            "Ich hab auch auf eine Nachricht von dir gewartet. Naechstes Mal halt dich nicht zurueck.",
+            "Ich bin sofort eingeschlafen, sorry. Naechstes Mal schreib mir auf jeden Fall."
+        ]
+    },
+    "day2_seoyeon_talk_no_number": {
+        "name": "Seoyeon",
+        "text": "\"Bist du gestern gut nach Hause gekommen? Erster Tag an einer neuen Schule ist bestimmt anstrengend, aber du siehst heute ganz fit aus. Gut so.\""
+    },
+    "day2_seoyeon_happy": {
+        "name": "Seoyeon",
+        "text": "\"Ich soll mich nicht zurueckhalten? ...Okay, deal. Aber beschwer dich nicht, wenn du mit Nachrichten bombardiert wirst. Komm, ab ins Klassenzimmer.\""
+    },
+    "day2_seoyeon_normal": {
+        "name": "Seoyeon",
+        "text": "\"Verstehe. Am ersten Tag ist man halt kaputt. Versuchen wir, auch heute zu ueberleben, {name}.\""
+    },
+    "day2_meet_dain": {
+        "name": "Dain",
+        "text": "\"Guten Morgen!! {name}! Wow, du bist frueh dran!!\""
+    },
+    "day2_dain_talk": {
+        "name": "Dain",
+        "text": "*Dain haut mir kraeftig auf den Ruecken. Morgens schon voll Power.*"
+    },
+    "day2_dain_talk_msg": {
+        "name": "Dain",
+        "text": "\"Hab deine Nachricht gestern gesehen!! Voll suess von dir?! Hat mich mega gefreut!! Lass uns auch heute Vollgas geben!!\""
+    },
+    "day2_dain_talk_dated": {
+        "name": "Dain",
+        "text": "\"Dank dem Tteokbokki gestern bin ich heute in Topform!! Du doch auch, oder?! Oder?!\"",
+        "choices": [
+            "Ja! Dank dir hab ich super geschlafen. Deine Energie ist echt ansteckend.",
+            "Ich bin eher muede... Wo nimmst du bloss die ganze Energie her?"
+        ]
+    },
+    "day2_dain_talk_not_dated": {
+        "name": "Dain",
+        "text": "\"Bist du gestern gut nach Hause gekommen? Wenn du dich nach dem ersten Tag immer noch nicht eingelebt hast, geb ich dir hoechstpersoenlich eine Tour!! Heute wird's auch super!!\""
+    },
+    "day2_dain_happy": {
+        "name": "Dain",
+        "text": "\"Hehe, meine Energie ist halt schon next level, oder?! Okay, komm in der Mittagspause zur Turnhalle!! Ohne Ausreden!! Ich warte auf dich!!\""
+    },
+    "day2_dain_normal": {
+        "name": "Dain",
+        "text": "\"Ach komm, stell dich nicht so an!! Fitness ist alles!! Los, ab ins Klassenzimmer! Du wirst jetzt mitgeschleift!\""
+    },
+    "day2_meet_teacher": {
+        "name": "Lehrerin",
+        "text": "\"Oh, {name}? Tag zwei und schon so frueh da... scheint, als haettest du Mustersehueler-Potenzial. Gar nicht schlecht.\""
+    },
+    "day2_teacher_free_talk": {
+        "name": "Lehrerin",
+        "text": "\"Bis zum Unterricht ist noch etwas Zeit. Hast du irgendwelche Fragen?\"",
+        "context": "Vor dem Schultor zufaellig die Klassenlehrerin getroffen und gehen nun gemeinsam zum Klassenzimmer. Fuehren Sie das Gespraech fort, bis es auf natuerliche Weise endet. Am Ende fragt die Lehrerin nach der Handynummer des Protagonisten, angeblich fuer die Notfallkontaktliste. Erst im letzten Gespraechszug andeuten, dass sie noch etwas Dienstliches zu klaeren hat.",
+        "personality": "Klassenlehrerin mit trockenem Humor und strenger Fassade, hinter der sich Waerme verbirgt. Fuehlt sich manchmal von der reifen Art des Protagonisten angesprochen."
+    },
+    "day2_teacher_contact_ask_high": {
+        "name": "Ich",
+        "text": "*Wir hatten ein nettes Gespraech auf dem Weg zum Klassenzimmer. Sie war schon morgens gut drauf und hat mich dann beilaeufig nach meiner Nummer gefragt - angeblich fuer die Notfallkontaktliste.*",
+        "choices": [
+            "Ja, hier bitte. Sie koennen mich auch ausserhalb von Notfaellen gerne kontaktieren.",
+            "Ich bringe sie Ihnen spaeter im Lehrerzimmer vorbei."
+        ]
+    },
+    "day2_teacher_contact_ask_low": {
+        "name": "Ich",
+        "text": "*Ihr Gesichtsausdruck ist nicht gerade freundlich. Ich war wohl etwas unhoelich. Seufzend bat sie sachlich um meine Nummer - fuer die Notfallkontaktliste.*",
+        "choices": [
+            "Ja, hier ist meine Nummer.",
+            "Ich gebe sie Ihnen spaeter im Lehrerzimmer."
+        ]
+    },
+    "day2_teacher_contact_ask": {
+        "name": "Ich",
+        "text": "*Wir haben uns nett unterhalten auf dem Weg zum Klassenzimmer. Sie sagt, sie braucht meine Nummer fuer die Notfallkontaktliste.*",
+        "choices": [
+            "Ja, hier ist meine Nummer.",
+            "Ich bringe sie Ihnen spaeter im Lehrerzimmer vorbei."
+        ]
+    },
+    "day2_teacher_contact_success_high": {
+        "name": "Lehrerin",
+        "text": "\"Danke. Hehe, die Notfallkontaktliste war nur ein Vorwand, aber... naja, fuer echte Notfaelle koennte man sie ja auch brauchen. Wenn die Schule dich stresst, meld dich unter dieser Nummer. ...Auch privat.\""
+    },
+    "day2_teacher_contact_success_low": {
+        "name": "Lehrerin",
+        "text": "\"...Danke. Wird nur fuer dienstliche Zwecke verwendet, keine Sorge. Komm nicht zu spaet zum Unterricht.\""
+    },
+    "day2_teacher_contact_success_normal": {
+        "name": "Lehrerin",
+        "text": "\"Danke. Ich melde mich, wenn was ist. So, ab ins Klassenzimmer.\""
+    },
+    "day2_classroom_from_teacher": {
+        "name": "Lehrerin",
+        "text": "\"Da waeren wir. Komm auch heute heil durch den Tag, {name}.\""
+    },
+    "day2_classroom_from_teacher_2": {
+        "name": "Ich",
+        "text": "*Als ich zusammen mit der Lehrerin das Klassenzimmer betrete, richten sich sofort alle Blicke auf uns. Naja, gemeinsamer Auftritt mit der Lehrerin faellt halt schon auf.*"
+    },
+    "day2_classroom_greet_teacher": {
+        "name": "Klassenkamerad",
+        "text": "\"Oh, der Neue! Guten Morgen! Krass, zusammen mit der Klassenlehrerin aufgetaucht?! Bist du jetzt schon ihr Lieblingsschueler?!\""
+    },
+    "day2_classroom_greet_teacher_2": {
+        "name": "Ich",
+        "text": "*Gekicher ueberall. Scheint nicht boese gemeint, aber ein bisschen Schadensbegrenzung waere jetzt gut.*"
+    },
+    "day2_classroom_settle_teacher": {
+        "name": "Klassenkamerad",
+        "text": "*Mein Sitznachbar stupst mich mit dem Ellenbogen an.* \"Ey, was laeuft zwischen dir und der Lehrerin? Morgens schon zusammen aufkreuzen!\""
+    },
+    "day2_classroom_settle_teacher_2": {
+        "name": "Ich",
+        "text": "\"Sind uns nur zufaellig am Schultor ueber den Weg gelaufen. Solche Zufaelle gibt's halt.\""
+    },
+    "day2_classroom_settle_teacher_3": {
+        "name": "Ich",
+        "text": "*Irgendwie rausgeredet und hingesetzt. Bisschen peinlich, aber... kein schlechtes Gefuehl. Packe meine Tasche aus und will die Buecher rausholen, als mir was auffaellt.*"
+    },
+    "day2_classroom_from_seoyeon": {
+        "name": "Seoyeon",
+        "text": "\"So, angekommen. Lass uns auch heute ueberleben, {name}.\""
+    },
+    "day2_classroom_from_seoyeon_2": {
+        "name": "Ich",
+        "text": "*Als Seoyeon und ich zusammen reinkommen, richten sich die Blicke auf uns. Naja, Schulsprecherin und Neuer zusammen - das faellt natuerlich auf.*"
+    },
+    "day2_classroom_greet_from_seoyeon": {
+        "name": "Klassenkamerad",
+        "text": "\"Oh, der Neue! Guten Morgen! Zusammen mit Seoyeon aufgetaucht?! Wie aus einem Drama!!\""
+    },
+    "day2_classroom_greet_from_seoyeon_2": {
+        "name": "Ich",
+        "text": "*Vielsagende Blicke werden getauscht. Seoyeon ignoriert alles und geht cool zu ihrem Platz.*"
+    },
+    "day2_classroom_settle_from_seoyeon": {
+        "name": "Klassenkamerad",
+        "text": "*Mein Vordermann dreht sich um und fluestert.* \"Ey, du kommst schon mit Seoyeon zusammen zur Schule? Seid ihr zusammen?\""
+    },
+    "day2_classroom_settle_from_seoyeon_2": {
+        "name": "Ich",
+        "text": "\"Wir sind uns nur zufaellig am Schultor begegnet. Seoyeon kuemmert sich halt gut um mich, dafuer bin ich dankbar.\""
+    },
+    "day2_classroom_settle_from_seoyeon_3": {
+        "name": "Ich",
+        "text": "*Irgendwie rausgeredet und hingesetzt. Seoyeon winkt mir kurz von ihrem Platz zu. Gute Laune steigt auf, waehrend ich meine Tasche auspacke und die Buecher rausholen will... aber irgendwas ist komisch.*"
+    },
+    "day2_classroom_from_dain": {
+        "name": "Dain",
+        "text": "\"Angekommen!! Heute auch Vollgas, {name}!!\""
+    },
+    "day2_classroom_from_dain_2": {
+        "name": "Ich",
+        "text": "*Dain reisst mit einem Kampfschrei die Klassenzimmertuer auf und sofort geht das Energielevel im Raum einen Level hoch. Diese Energie ist echt ansteckend.*"
+    },
+    "day2_classroom_greet_from_dain": {
+        "name": "Klassenkamerad",
+        "text": "\"Oh, der Neue! Guten Morgen! Mit Dain zusammen gekommen? Ihr seid ja schon voll dicke!\""
+    },
+    "day2_classroom_greet_from_dain_2": {
+        "name": "Dain",
+        "text": "\"Aber hallo!! {name} gehoert jetzt zu meiner Crew!! Wir sehen uns mittags, und wag es ja nicht, dich zu druecken!!\""
+    },
+    "day2_classroom_settle_from_dain": {
+        "name": "Klassenkamerad",
+        "text": "*Mein Vordermann dreht sich kichernd um.* \"Wenn Dain dich einmal hat, gibt's kein Entkommen~ Pass auf deine Ausdauer auf!\""
+    },
+    "day2_classroom_settle_from_dain_2": {
+        "name": "Ich",
+        "text": "\"...Mein Ruecken spuert noch ihren Morgengruss. Spartanische Willkommenskultur, sag ich nur.\""
+    },
+    "day2_classroom_settle_from_dain_3": {
+        "name": "Ich",
+        "text": "*Irgendwie rausgeredet und hingesetzt. Dain zeigt mir von ihrem Platz den Daumen nach oben. Vollgeladen mit Energie will ich meine Tasche auspacken... aber irgendwas ist komisch.*"
+    },
+    "day2_classroom_from_nurse": {
+        "name": "Ich",
+        "text": "*Ich verabschiede mich von der Krankenschwester und gehe zum Klassenzimmer. Dass mir der Duft ihres Parfuems noch in der Nase haengt... ist bestimmt Einbildung.*"
+    },
+    "day2_classroom_from_nurse_2": {
+        "name": "Ich",
+        "text": "*Oeffne die Klassenzimmertuer. Die Atmosphaere ist entspannter als gestern. In den Blicken liegt eher Wohlwollen als Neugier.*"
+    },
+    "day2_classroom_greet_from_nurse": {
+        "name": "Klassenkamerad",
+        "text": "\"Oh, der Neue! Guten Morgen! Hm? Kommst du gerade vom Krankenzimmer? Alles okay bei dir?\""
+    },
+    "day2_classroom_greet_from_nurse_2": {
+        "name": "Ich",
+        "text": "\"Mir geht's gut. Bin nur kurz der Krankenschwester ueber den Weg gelaufen.\""
+    },
+    "day2_classroom_settle_from_nurse": {
+        "name": "Klassenkamerad",
+        "text": "*Mein Vordermann dreht sich um.* \"Hab vorhin gesehen, wie du mit der Krankenschwester gequatscht hast. Ihr wirkt ziemlich vertraut? Bist du schon Stammkunde?\""
+    },
+    "day2_classroom_settle_from_nurse_2": {
+        "name": "Ich",
+        "text": "\"Stammkunde nach zwei Tagen waere ein Rekord. Sie hat nur gecheckt, wie ich mich als Neuer so einlebe.\""
+    },
+    "day2_classroom_settle_from_nurse_3": {
+        "name": "Ich",
+        "text": "*Irgendwie rausgeredet und hingesetzt. Ihr Laecheln geht mir nicht aus dem Kopf. Packe meine Tasche aus und will die Buecher rausholen... aber irgendwas ist komisch.*"
+    },
+    "day2_classroom_from_yuna": {
+        "name": "Ich",
+        "text": "*Ich trenne mich von Yuna und gehe durch das Schultor zum Klassenzimmer. 'Schau in dein Fach'... Ein Zettel vielleicht? Passt zu ihr.*"
+    },
+    "day2_classroom_from_yuna_2": {
+        "name": "Ich",
+        "text": "*Oeffne die Klassenzimmertuer und gehe rein. Im Trubel um mich herum gehen mir Yunas Worte einfach nicht aus dem Kopf.*"
+    },
+    "day2_classroom_greet_from_yuna": {
+        "name": "Klassenkamerad",
+        "text": "\"Oh, der Neue! Guten Morgen! Du guckst irgendwie ernst. Was fuer Sorgen plagen dich?\""
+    },
+    "day2_classroom_greet_from_yuna_2": {
+        "name": "Ich",
+        "text": "\"Ach... nee, alles gut. Bin nur noch nicht ganz wach.\""
+    },
+    "day2_classroom_settle_from_yuna": {
+        "name": "Klassenkamerad",
+        "text": "*Mein Vordermann dreht sich um.* \"Hab dich vorhin am Schultor mit jemandem reden sehen... andere Klasse? Wirkte irgendwie mysterioes.\""
+    },
+    "day2_classroom_settle_from_yuna_2": {
+        "name": "Ich",
+        "text": "\"Jemand von der Schule, aber ich kenn sie selbst noch nicht richtig. Ein ziemlich mysterioser Typ.\""
+    },
+    "day2_classroom_settle_from_yuna_3": {
+        "name": "Ich",
+        "text": "*Irgendwie abgewiegelt und hingesetzt. Was Yuna gesagt hat, laesst mich einfach nicht los. Packe meine Tasche aus und will die Buecher rausholen... aber irgendwas ist komisch.*"
+    },
+    "day2_classroom": {
+        "name": "Ich",
+        "text": "*Oeffne die Klassenzimmertuer. Entspanntere Atmosphaere als gestern. Auch in den Blicken liegt Wohlwollen.*"
+    },
+    "day2_classroom_greet": {
+        "name": "Klassenkamerad",
+        "text": "\"Oh, der Neue! Guten Morgen! Gestern gut eingelebt? Unsere Klasse ist doch cool, oder?\""
+    },
+    "day2_classroom_greet_2": {
+        "name": "Ich",
+        "text": "*Einige gruessen mich locker. Die neugierigen Blicke von gestern sind entspanntem Laecheln gewichen.*"
+    },
+    "day2_classroom_settle_alone": {
+        "name": "Klassenkamerad",
+        "text": "*Mein Vordermann dreht sich um.* \"Erst zwei Tage hier und schon so angekommen? Krasse Anpassungsfaehigkeit!\""
+    },
+    "day2_classroom_settle_alone_2": {
+        "name": "Ich",
+        "text": "\"Ihr seid alle so nett, da geht das Einleben schnell. Danke euch.\""
+    },
+    "day2_classroom_settle_alone_3": {
+        "name": "Ich",
+        "text": "*Irgendwie rausgeredet und hingesetzt. Packe meine Tasche aus und will die Buecher rausholen... aber irgendwas ist komisch.*"
+    },
+    "day2_classroom_2": {
+        "name": "Ich",
+        "text": "*Am Platz angekommen will ich meine Tasche auspacken, als mir ein kleiner Zettel in der Ecke des Tisches auffaellt.*",
+        "choices": [
+            "Den Zettel lesen."
+        ]
+    },
+    "day2_check_note": {
+        "name": "Ich",
+        "text": "*Ich falte den Zettel vorsichtig auf. Ordentliche, aber irgendwie kuehle Handschrift. Nur das Noetigste steht drauf.*"
+    },
+    "day2_note_content": {
+        "name": "System",
+        "text": "\"'Mittags im Bibliotheksanbau. - Yuna'\""
+    },
+    "day2_note_reaction": {
+        "name": "Ich",
+        "text": "*...Eine einzige Zeile. Kein Kontakt, stattdessen ein handgeschriebener Zettel. Der kryptische Satz passt so perfekt zu ihr, dass mir ein Schmunzeln entweicht.*"
+    },
+    "day2_note_speculation": {
+        "name": "Ich",
+        "text": "*Bibliotheksanbau also. Klingt nach einer abgelegenen Ecke der Schule. Will sie mir was zeigen, oder hat sie mir etwas zu sagen?*"
+    },
+    "day2_note_speculation_2": {
+        "name": "Ich",
+        "text": "*Ob jemand in der Naehe Yuna kennt? Aber den Inhalt des Zettels kann ich nicht einfach rumerzaehlen. Fuehlt sich wie ein Geheimnis an, das ich fuer mich behalten sollte.*"
+    },
+    "day2_note_speculation_3": {
+        "name": "Ich",
+        "text": "*Ich falte den Zettel zusammen und stecke ihn in die Tasche. Ob ich mich auf die Mittagspause freue oder nervoes bin... wahrscheinlich beides.*"
+    },
+    "day2_note_ask_around": {
+        "name": "Ich",
+        "text": "*Frage meinen Sitznachbarn beilaeufig.*"
+    },
+    "day2_note_ask_around_met": {
+        "name": "Ich",
+        "text": "\"Kennst du zufaellig eine Yuna? Muesste aus einer anderen Klasse sein...\""
+    },
+    "day2_note_ask_around_new": {
+        "name": "Ich",
+        "text": "\"Kennst du vielleicht... eine Yuna?\""
+    },
+    "day2_note_ask_around_2": {
+        "name": "Klassenkamerad",
+        "text": "\"Yuna? Hmm... die ist nicht bei uns in der Klasse? Andere Klasse oder vielleicht ein aelterer Jahrgang?\""
+    },
+    "day2_note_ask_around_3": {
+        "name": "Ich",
+        "text": "*Wie erwartet, keine Hinweise. Bleibt nur, in der Mittagspause selbst hinzugehen. ...Naja, wenn es eine Falle waere, waere es zumindest eine ziemlich charmante.*"
+    },
+    "day2_homeroom_start": {
+        "name": "Lehrerin",
+        "text": "\"So, alle hinsetzen. Wir fangen an.\""
+    },
+    "day2_homeroom_rollcall": {
+        "name": "Lehrerin",
+        "text": "*Sie schlaegt das Klassenbuch auf und beginnt die Namen aufzurufen.* \"...{name}? Unser Neuer, da?\""
+    },
+    "day2_homeroom_rollcall_2": {
+        "name": "Ich",
+        "text": "\"Ja, hier.\""
+    },
+    "day2_homeroom_rollcall_3": {
+        "name": "Lehrerin",
+        "text": "\"Gut. Dein Gesichtsausdruck ist heute schon viel besser als gestern. Scheint, als laeuft die Eingewoehnung ganz gut.\""
+    },
+    "day2_homeroom_notice": {
+        "name": "Lehrerin",
+        "text": "\"Eine Ankuendigung. Am Freitag findet die Vorbereitungssitzung fuer das Schulfest statt. Wer Interesse hat, bleibt nach dem Unterricht da.\""
+    },
+    "day2_homeroom_notice_2": {
+        "name": "Ich",
+        "text": "*Schulfest... Erst zwei Tage hier und schon wird ueber ein Fest geredet. Diese Schule hat echt ein volles Programm.*"
+    },
+    "day2_homeroom_event": {
+        "name": "Klassenkamerad",
+        "text": "\"Frau Lehrerin, Frage! Gibt's beim Fest auch wieder den Wettbewerb zwischen den Klassen?\""
+    },
+    "day2_homeroom_event_2": {
+        "name": "Lehrerin",
+        "text": "\"Steht noch nicht fest, aber... wenn unsere Klasse antritt, holen wir natuerlich den ersten Platz. Darauf geb ich mein Wort.\""
+    },
+    "day2_homeroom_event_3": {
+        "name": "Ich",
+        "text": "*Die Klasse bricht in Gelaeechter aus. Dass sie mit so einem trockenen Gesicht Witze macht, ist ein ueberraschender Gap.*"
+    },
+    "day2_morning_class": {
+        "name": "Ich",
+        "text": "*Der Unterricht hat angefangen, aber der Zettel in meiner Tasche laesst mich nicht los. 'Bibliotheksanbau'... Was will sie mir dort zeigen?*"
+    },
+    "day2_morning_class_yuna_msg": {
+        "name": "Ich",
+        "text": "*Yuna, mit der ich gestern Abend noch Nachrichten ausgetauscht habe. Sie hat meine Nummer, schreibt mir aber trotzdem einen Zettel. ...Passt irgendwie total zu ihr.*"
+    },
+    "day2_morning_class_yuna_met": {
+        "name": "Ich",
+        "text": "*Yuna, die ich gestern getroffen habe. Dass sie Zettel hinterlaesst, hab ich ihr sofort zugetraut. Ein Geheimnis also... die Neugier waechst.*"
+    },
+    "day2_morning_class_yuna_new": {
+        "name": "Ich",
+        "text": "*Yuna...? Gestern gab es noch keinen Beruehrungspunkt mit diesem Namen. Wer ist sie, und warum hinterlaesst sie mir einen Zettel?*"
+    },
+    "day2_morning_class_focus": {
+        "name": "Ich",
+        "text": "*Die Matheformeln an der Tafel gehen zum einen Ohr rein und zum anderen wieder raus. Die vier Woerter 'Bibliotheksanbau' kreisen in meinem Kopf in Endlosschleife.*"
+    },
+    "day2_morning_class_quiz": {
+        "name": "Mathelehrer",
+        "text": "\"So, wer moechte diese Aufgabe loesen? ...Der Neue, wie waer's, kommst du mal nach vorne?\""
+    },
+    "day2_morning_class_quiz_2": {
+        "name": "Ich",
+        "text": "*Total abgelenkt gewesen. Schaue hektisch zur Tafel, aber... die Formel will einfach nicht in meinen Kopf rein.*",
+        "choices": [
+            "Selbstbewusst nach vorne gehen und es versuchen.",
+            "Ehrlich zugeben, dass ich es nicht weiss."
+        ]
+    },
+    "day2_quiz_try": {
+        "name": "Ich",
+        "text": "*Stehe an der Tafel und taste mich durch die Aufgabe. Zum Glueck war das der Teil, den ich gestern vorgearbeitet habe - die Erinnerung kommt langsam zurueck.*"
+    },
+    "day2_quiz_try_2": {
+        "name": "Mathelehrer",
+        "text": "\"Oh, der Neue kann was! Richtig. Gut gemacht, setz dich.\""
+    },
+    "day2_quiz_pass": {
+        "name": "Ich",
+        "text": "\"Entschuldigung, ich bin mit dem Stoff noch nicht ganz hinterhergekommen...\""
+    },
+    "day2_quiz_pass_2": {
+        "name": "Mathelehrer",
+        "text": "\"Kein Ding, du bist ja erst gerade hergezogen. Beim naechsten Mal bitte vorarbeiten.\""
+    },
+    "day2_quiz_result": {
+        "name": "Ich",
+        "text": "*Irgendwie ueberstanden. Dass ich mich wegen dem Zettel nicht konzentrieren kann, ist bloed, aber Unterricht ist Unterricht.*"
+    },
+    "day2_second_class": {
+        "name": "Ich",
+        "text": "*Direkt weiter mit der zweiten Stunde, Deutsch. Wir sollen das Arbeitsblatt von gestern rausholen.*"
+    },
+    "day2_second_class_2": {
+        "name": "Ich",
+        "text": "*Beim Durchblaettern der Unterlagen beruehren meine Finger den Zettel in der Tasche. Mein Herz setzt einen Schlag aus.*"
+    },
+    "day2_second_class_3": {
+        "name": "Ich",
+        "text": "*Noch zwei Stunden bis zur Mittagspause. Warum vergeht die Zeit nur so langsam?*"
+    },
+    "day2_last_class_before_lunch": {
+        "name": "Ich",
+        "text": "*Dritte Stunde, Englisch. Die Aussprache des Lehrers dringt zwar durch, aber mein Kopf zaehlt nur noch den Countdown bis zur Mittagspause.*"
+    },
+    "day2_last_class_before_lunch_2": {
+        "name": "Ich",
+        "text": "*Bibliotheksanbau... Ich war noch nie dort. Warum ausgerechnet so ein abgelegener Ort?*"
+    },
+    "day2_last_class_before_lunch_3": {
+        "name": "Ich",
+        "text": "*Gefaehrlich wird's schon nicht sein. Ist ja ein Zettel von einer Mitschuelerin. ...Aber warum klopft mein Herz dann so?*"
+    },
+    "day2_last_class_before_lunch_4": {
+        "name": "Ich",
+        "text": "*Unauffaelliger Blick auf die Uhr. 11:40. Noch 20 Minuten bis zur Pause. Zeit, beeil dich mal.*"
+    },
+    "day2_class_end_bell": {
+        "name": "System",
+        "text": "- Ding dong deng dong -"
+    },
+    "day2_class_end": {
+        "name": "Ich",
+        "text": "*Endlich die Mittagsglocke! Im Klassenzimmer wird es schlagartig laut. Alles stroemt Richtung Mensa.*"
+    },
+    "day2_packing_up": {
+        "name": "Ich",
+        "text": "*Schnell die Buecher in die Tasche gestopft. Noch einmal den Zettel in der Tasche beruehrt. 'Bibliotheksanbau'... Okay, los geht's.*"
+    },
+    "day2_lunch_decision": {
+        "name": "Ich",
+        "text": "*Mittagspause. Wohin soll ich gehen?*"
+    }
+}
