@@ -1,0 +1,390 @@
+{
+    "day5_start": {
+        "name": "Moi",
+        "text": "*Dimanche matin. Un doux soleil filtre à travers les rideaux.*"
+    },
+    "day5_morning_wake": {
+        "name": "Moi",
+        "text": "*J'ai ouvert les yeux. Ça faisait longtemps que je ne m'étais pas réveillé tout seul, sans alarme. L'horloge indique 8 heures.*"
+    },
+    "day5_morning_stretch": {
+        "name": "Moi",
+        "text": "*Je m'étire en fixant le plafond. J'ai du mal à réaliser qu'on est dimanche.*"
+    },
+    "day5_morning_think": {
+        "name": "Moi",
+        "text": "*Ça ne fait que cinq jours que j'ai été transféré dans cette école. On dirait que ça fait au moins un mois.*"
+    },
+    "day5_morning_mirror": {
+        "name": "Moi",
+        "text": "*Je me suis lavé le visage et me suis planté devant le miroir. Le visage qui me fixe a l'air... différent d'avant mon transfert.*"
+    },
+    "day5_morning_mirror2": {
+        "name": "Moi",
+        "text": "*Tant de choses se sont passées en quatre jours. Une nouvelle classe, de nouvelles personnes... et des rencontres très spéciales.*"
+    },
+    "day5_morning_phone_check": {
+        "name": "Moi",
+        "text": "*J'ai attrapé mon téléphone sur le lit. Des notifications s'affichent à l'écran.*"
+    },
+    "day5_morning_msg_branch": {
+        "name": "Système",
+        "text": ""
+    },
+    "day5_couple_msg_branch": {
+        "name": "Système",
+        "text": ""
+    },
+    "day5_couple_msg_seoyeon": {
+        "name": "Seoyeon",
+        "text": "\"Bonjour ☀️ Il fait super beau aujourd'hui ! Je parie que les fleurs du jardin de l'école sont en train d'éclore. Tu veux aller les voir ensemble ?\""
+    },
+    "day5_couple_react_seoyeon": {
+        "name": "Moi",
+        "text": "*Le message de Seoyeon me fait sourire malgré moi. Parler de fleurs dès le matin, c'est tellement elle.*"
+    },
+    "day5_couple_reply_seoyeon": {
+        "name": "Moi",
+        "text": "(J'ai répondu : \"Super ! On se retrouve devant le portail de l'école. J'ai aussi un endroit à te montrer 😊\")"
+    },
+    "day5_couple_msg_yuna": {
+        "name": "Yuna",
+        "text": "\"...T'es réveillé ? Tu vas à l'école aujourd'hui, non ? ...J'y vais aussi. Portail principal. 10 heures.\""
+    },
+    "day5_couple_react_yuna": {
+        "name": "Moi",
+        "text": "(Court et direct, tout à fait Yuna... Mais en y regardant de plus près, il y a une pointe d'excitation dans les mots « J'y vais aussi. »)"
+    },
+    "day5_couple_reply_yuna": {
+        "name": "Moi",
+        "text": "(\"Ouais, j'y serai. Attends-moi.\" J'ai répondu calmement, mais mon cœur bat la chamade.)"
+    },
+    "day5_couple_msg_dain": {
+        "name": "Dain",
+        "text": "\"Bonjour !! ☀️🏐 On va à l'école aujourd'hui !! Retrouve-moi au portail !! Je cours jusqu'à toi !! T'as PAS INTÉRÊT à être en retard !!!\""
+    },
+    "day5_couple_react_dain": {
+        "name": "Moi",
+        "text": "*...Autant de points d'exclamation. Dain déborde d'énergie dès l'aube. Mais bizarrement, ce genre de messages me donne de l'énergie aussi.*"
+    },
+    "day5_couple_reply_dain": {
+        "name": "Moi",
+        "text": "(J'ai répondu : \"Haha, c'est noté ! Je serai pas en retard. Ne cours pas, fais attention en chemin !\")"
+    },
+    "day5_couple_msg_nurse": {
+        "name": "Infirmière Scolaire",
+        "text": "\"Tu as bien dormi ? Il fait tellement beau aujourd'hui, je me sens un peu fébrile. On se retrouve devant l'école ? ...Se voir le week-end, c'est différent, non ? 💕\""
+    },
+    "day5_couple_react_nurse": {
+        "name": "Moi",
+        "text": "*Mon visage a rougi en voyant l'emoji cœur qu'elle a envoyé. Se voir en dehors de l'école, c'est vraiment différent.*"
+    },
+    "day5_couple_reply_nurse": {
+        "name": "Moi",
+        "text": "(\"Oui, j'ai hâte. On se retrouve au portail à 10 heures !\" J'ai commencé à écrire de façon formelle mais... c'était un peu gênant.)"
+    },
+    "day5_couple_msg_teacher": {
+        "name": "Professeur Principal",
+        "text": "\"Tu viens à l'école aujourd'hui ? C'est le week-end, mais... j'ai quelque chose à voir avec toi. Portail principal, 10 heures. Gare à toi si tu es en retard.\""
+    },
+    "day5_couple_react_teacher": {
+        "name": "Moi",
+        "text": "(\"Quelque chose à voir avec moi\", dit-elle. Elle joue les indifférentes, mais c'est elle qui a fait le premier pas. J'aime ça chez elle.)"
+    },
+    "day5_couple_reply_teacher": {
+        "name": "Moi",
+        "text": "(J'ai répondu : \"Je serai pas en retard. J'y serai sans faute !\" et j'ai laissé échapper un petit sourire.)"
+    },
+    "day5_pending_msg_branch": {
+        "name": "Système",
+        "text": ""
+    },
+    "day5_pending_msg_seoyeon": {
+        "name": "Seoyeon",
+        "text": "\"Tu es libre aujourd'hui ? J'aurais besoin d'aide pour le jardin... Oh, sans pression hein ! 😅\""
+    },
+    "day5_pending_react_seoyeon": {
+        "name": "Moi",
+        "text": "(Seoyeon me demande de venir. Elle dit « sans pression », mais... je sais que j'ai envie d'y aller.)"
+    },
+    "day5_pending_reply_seoyeon": {
+        "name": "Moi",
+        "text": "(Aujourd'hui, je dois lui dire ce que je ressens. J'ai répondu : \"J'y serai ! On se retrouve au portail.\")"
+    },
+    "day5_pending_msg_yuna": {
+        "name": "Yuna",
+        "text": "\"...L'école. Aujourd'hui. Tu peux venir ? ...J'ai quelque chose à te dire.\""
+    },
+    "day5_pending_react_yuna": {
+        "name": "Moi",
+        "text": "(\"J'ai quelque chose à te dire.\" Mon cœur a raté un battement. Est-ce que Yuna ressentirait la même chose pour moi... ?)"
+    },
+    "day5_pending_reply_yuna": {
+        "name": "Moi",
+        "text": "(J'ai aussi quelque chose à dire. \"Ouais, j'y serai.\" J'ai répondu brièvement et posé mon téléphone.)"
+    },
+    "day5_pending_msg_dain": {
+        "name": "Dain",
+        "text": "\"Hé ! Tu veux venir à l'école aujourd'hui ?! T'as une minute après l'entraînement ? C'est important !!\""
+    },
+    "day5_pending_react_dain": {
+        "name": "Moi",
+        "text": "(Elle a dit « c'est important ». Dain sérieuse, c'est rare. Je me demande ce que c'est.)"
+    },
+    "day5_pending_reply_dain": {
+        "name": "Moi",
+        "text": "(Et moi aussi, j'ai quelque chose à dire aujourd'hui. J'ai répondu : \"J'y serai !! Attends-moi !\")"
+    },
+    "day5_pending_msg_nurse": {
+        "name": "Infirmière Scolaire",
+        "text": "\"Tu ne viendrais pas à l'école par hasard aujourd'hui ? Je dois ranger l'infirmerie... Ce serait sympa si tu pouvais venir m'aider.\""
+    },
+    "day5_pending_react_nurse": {
+        "name": "Moi",
+        "text": "*Ranger l'infirmerie un week-end... Ça ressemble à une excuse, mais si ça me permet de la voir, la raison importe peu.*"
+    },
+    "day5_pending_reply_nurse": {
+        "name": "Moi",
+        "text": "(Aujourd'hui, je dois lui dire ce que je ressens. J'ai répondu : \"J'y serai ! On se retrouve au portail.\")"
+    },
+    "day5_pending_msg_teacher": {
+        "name": "Professeur Principal",
+        "text": "\"Tu peux passer à l'école aujourd'hui ? J'aurais besoin d'aide pour ranger de la paperasse. ...Ne te fais pas d'idées, il n'y a aucun sous-entendu.\""
+    },
+    "day5_pending_react_teacher": {
+        "name": "Moi",
+        "text": "(\"Aucun sous-entendu\"... bizarrement, ça rend la chose encore plus significative. Est-ce qu'elle ressentirait la même chose ?)"
+    },
+    "day5_pending_reply_teacher": {
+        "name": "Moi",
+        "text": "(Si aujourd'hui passe, je n'aurai peut-être plus jamais l'occasion. J'ai répondu : \"J'y serai !\")"
+    },
+    "day5_default_msg_start": {
+        "name": "Moi",
+        "text": "*J'ai allumé mon téléphone... mais il n'y a aucun nouveau message.*"
+    },
+    "day5_default_msg_scroll": {
+        "name": "Moi",
+        "text": "*Je fais défiler ma liste de conversations. Les échanges des derniers jours s'étirent à l'infini.*"
+    },
+    "day5_default_msg_reflect": {
+        "name": "Moi",
+        "text": "*Depuis mon transfert, j'ai rencontré tellement de monde. Seoyeon, Yuna, Dain, l'infirmière scolaire, le professeur principal...*"
+    },
+    "day5_default_msg_reflect2": {
+        "name": "Moi",
+        "text": "*Elles ont toutes été si gentilles avec moi... mais au final, je n'ai jamais réussi à dire à aucune d'entre elles ce que je ressens.*"
+    },
+    "day5_default_msg_resolve": {
+        "name": "Moi",
+        "text": "*...Non, ce n'est pas encore fini. Aujourd'hui c'est dimanche. Si je vais à l'école, je croiserai peut-être quelqu'un.*"
+    },
+    "day5_default_msg_decide": {
+        "name": "Moi",
+        "text": "*C'est le dernier jour. Je vais au moins faire un tour à l'école. Quelque chose changera peut-être.*"
+    },
+    "day5_morning_ready": {
+        "name": "Moi",
+        "text": "*Il est temps de se préparer. Je me suis planté devant mon placard.*"
+    },
+    "day5_morning_closet": {
+        "name": "Moi",
+        "text": "*C'est dimanche, pas besoin de porter l'uniforme... mais qu'est-ce que je vais mettre ?*"
+    },
+    "day5_outfit_choice": {
+        "name": "Moi",
+        "text": "*Qu'est-ce que je porte aujourd'hui ?*",
+        "choices": [
+            "Casual soigné *confortable et naturel*",
+            "Un peu habillé *après tout, c'est un jour spécial*"
+        ]
+    },
+    "day5_outfit_casual": {
+        "name": "Moi",
+        "text": "*Une chemise impeccable et un jean. Confortable mais soigné. Ouais, rester naturel, c'est plus mon style.*"
+    },
+    "day5_outfit_special": {
+        "name": "Moi",
+        "text": "*J'ai choisi ma tenue avec plus de soin que d'habitude. Un dernier coup d'œil dans le miroir. ...Ça a l'air bien, je crois.*"
+    },
+    "day5_breakfast": {
+        "name": "Moi",
+        "text": "*J'ai fait griller un toast rapidement et mangé. Une cuisine silencieuse un dimanche matin. J'entends les oiseaux chanter dehors.*"
+    },
+    "day5_outfit_check": {
+        "name": "Moi",
+        "text": "*Un dernier regard dans le miroir. Mes yeux sont définitivement différents du premier jour de mon transfert.*"
+    },
+    "day5_morning_items": {
+        "name": "Moi",
+        "text": "*Portefeuille, téléphone, clés. Tout est prêt. Je me suis posté devant la porte d'entrée.*"
+    },
+    "day5_morning_depart": {
+        "name": "Moi",
+        "text": "*J'ai ouvert la porte et suis sorti. Une agréable brise printanière m'a accueilli.*"
+    },
+    "day5_walk_route_branch": {
+        "name": "Système",
+        "text": ""
+    },
+    "day5_walk_couple_branch": {
+        "name": "Système",
+        "text": ""
+    },
+    "day5_walk_couple_seoyeon": {
+        "name": "Seoyeon",
+        "text": "\"Par ici ! Par ici !!\""
+    },
+    "day5_walk_seoyeon_2": {
+        "name": "Moi",
+        "text": "*Seoyeon était déjà au point de rendez-vous. Debout dans la lumière du soleil, elle était radieuse.*"
+    },
+    "day5_walk_seoyeon_talk": {
+        "name": "Seoyeon",
+        "text": "\"Il fait tellement beau aujourd'hui. C'est encore mieux de marcher ensemble. Tu savais que des cerisiers fleurissent le long de ce chemin au printemps ?\""
+    },
+    "day5_walk_seoyeon_react": {
+        "name": "Moi",
+        "text": "*J'ai marché côte à côte avec Seoyeon. Sans dire un mot, nos pas se sont naturellement synchronisés.*"
+    },
+    "day5_walk_couple_yuna": {
+        "name": "Moi",
+        "text": "*En arrivant au point de rendez-vous, Yuna était adossée au mur. Un écouteur dans l'oreille.*"
+    },
+    "day5_walk_yuna_2": {
+        "name": "Yuna",
+        "text": "\"...Tu es venu.\""
+    },
+    "day5_walk_yuna_talk": {
+        "name": "Moi",
+        "text": "*Yuna a retiré un écouteur et me l'a tendu. Pas besoin de mots — elle voulait que j'écoute avec elle.*"
+    },
+    "day5_walk_yuna_react": {
+        "name": "Moi",
+        "text": "*On a partagé les écouteurs et marché côte à côte. Pas un mot, mais ce silence n'est pas gênant. C'est même agréable.*"
+    },
+    "day5_walk_couple_dain": {
+        "name": "Dain",
+        "text": "\"Hé !! Par ici !! Dépêche-toi !!\""
+    },
+    "day5_walk_dain_2": {
+        "name": "Moi",
+        "text": "*Dain agitait les deux bras depuis là-bas. Où trouve-t-elle toute cette énergie si tôt le matin ?*"
+    },
+    "day5_walk_dain_talk": {
+        "name": "Dain",
+        "text": "\"Aller à l'école un dimanche, c'est un peu bizarre, mais avec toi, on dirait une sortie scolaire ! Allez, allez !!\""
+    },
+    "day5_walk_dain_react": {
+        "name": "Moi",
+        "text": "*J'ai marché, entraîné par la main de Dain. Sans m'en rendre compte, je souriais aussi. Son énergie doit être contagieuse.*"
+    },
+    "day5_walk_couple_nurse": {
+        "name": "Moi",
+        "text": "*En arrivant au point de rendez-vous, elle était là en tenue décontractée. Elle a l'air tellement différente de d'habitude à l'école.*"
+    },
+    "day5_walk_nurse_2": {
+        "name": "Infirmière Scolaire",
+        "text": "\"Tu es là. Te voir le week-end, ça fait drôle. Tu ne m'as jamais vue qu'en blouse, après tout.\""
+    },
+    "day5_walk_nurse_talk": {
+        "name": "Infirmière Scolaire",
+        "text": "\"Si on passe par là, c'est un raccourci vers l'école. ...C'est aussi un chemin où personne qu'on connaît ne nous verra.\""
+    },
+    "day5_walk_nurse_react": {
+        "name": "Moi",
+        "text": "*Son air légèrement timide, c'était nouveau. Juste marcher côte à côte suffisait à faire battre mon cœur.*"
+    },
+    "day5_walk_couple_teacher": {
+        "name": "Moi",
+        "text": "*En arrivant au point de rendez-vous, elle était là en tenue décontractée. Bien loin de la professeure stricte que je vois en classe.*"
+    },
+    "day5_walk_teacher_2": {
+        "name": "Professeur Principal",
+        "text": "\"Je pensais que tu serais en retard, mais tu es pile à l'heure. ...C'est un compliment, au passage.\""
+    },
+    "day5_walk_teacher_talk": {
+        "name": "Professeur Principal",
+        "text": "\"C'est la première fois qu'on marche ensemble un week-end. ...C'est différent de l'école, non ? En ce moment, je ne suis pas professeure. Je suis juste... une personne.\""
+    },
+    "day5_walk_teacher_react": {
+        "name": "Moi",
+        "text": "(\"Juste une personne.\" Ces mots m'ont réchauffé le cœur. Je ne l'avais jamais vue aussi sincère.)"
+    },
+    "day5_walk_couple_common": {
+        "name": "Moi",
+        "text": "*En marchant côte à côte, on a parlé de tout ce qui s'est passé ces derniers jours. Notre première rencontre, les moments drôles, les instants où nos cœurs ont battu la chamade.*"
+    },
+    "day5_walk_couple_common2": {
+        "name": "Moi",
+        "text": "*Sans m'en rendre compte, l'école est apparue. Je pensais redouter les adieux, mais aujourd'hui marque le début d'une journée passée ensemble.*"
+    },
+    "day5_walk_pending_start": {
+        "name": "Moi",
+        "text": "*Je suis sorti de chez moi et me suis dirigé vers l'école.*"
+    },
+    "day5_walk_pending_think": {
+        "name": "Moi",
+        "text": "*Je n'arrête pas de penser au fait que je ne me suis pas déclaré hier. Aujourd'hui... aujourd'hui, je le ferai sans faute.*"
+    },
+    "day5_walk_pending_plan": {
+        "name": "Moi",
+        "text": "(Qu'est-ce que je devrais dire ? « Je t'aime bien » ? « Tu veux sortir avec moi » ? Non, peut-être que je devrais juste improviser...)"
+    },
+    "day5_walk_pending_nervous": {
+        "name": "Moi",
+        "text": "*Mes mains tremblent déjà. À chaque pas, mon cœur bat plus vite.*"
+    },
+    "day5_walk_pending_resolve": {
+        "name": "Moi",
+        "text": "*Ça va aller. J'ai quatre jours de souvenirs partagés. Ces moments me donnent du courage.*"
+    },
+    "day5_walk_pending_memory": {
+        "name": "Moi",
+        "text": "*Les salutations maladroites du premier jour, les rires à la cantine, nos conversations après les cours... chaque moment était précieux.*"
+    },
+    "day5_walk_pending_ready": {
+        "name": "Moi",
+        "text": "*C'est ça. Si je ne veux pas de regrets, je dois le dire aujourd'hui.*"
+    },
+    "day5_walk_pending_almost": {
+        "name": "Moi",
+        "text": "*L'école est juste devant. J'ai pris une grande inspiration.*"
+    },
+    "day5_walk_default_start": {
+        "name": "Moi",
+        "text": "*Marcher seul un dimanche matin. D'habitude, je serais encore au lit à cette heure-ci.*"
+    },
+    "day5_walk_default_reflect": {
+        "name": "Moi",
+        "text": "*Avant mon transfert, mes dimanches matin n'étaient que traîner à la maison.*"
+    },
+    "day5_walk_default_change": {
+        "name": "Moi",
+        "text": "*Mais maintenant les choses ont changé. Je n'aurais jamais pensé qu'un jour j'aurais envie d'aller à l'école un dimanche.*"
+    },
+    "day5_walk_default_people": {
+        "name": "Moi",
+        "text": "*La chaleur de Seoyeon, le mystère de Yuna, la vivacité de Dain, la douceur de l'infirmière, la sincérité du professeur principal... C'étaient toutes des liens précieux.*"
+    },
+    "day5_walk_default_arrive": {
+        "name": "Moi",
+        "text": "*Le bâtiment de l'école apparaît devant moi. Le même paysage que celui de mon tout premier jour ici.*"
+    },
+    "day5_arrive_start": {
+        "name": "Moi",
+        "text": "*Je me suis arrêté devant le portail de l'école.*"
+    },
+    "day5_arrive_nostalgia": {
+        "name": "Moi",
+        "text": "*Ce portail... Il y a cinq jours, quand je suis arrivé dans cette école pour la première fois, je me tenais exactement ici.*"
+    },
+    "day5_arrive_firstday": {
+        "name": "Moi",
+        "text": "*À l'époque, tout m'était inconnu. Une nouvelle école, une nouvelle salle de classe, des visages que je ne reconnaissais pas. J'étais si nerveux que mes pieds refusaient d'avancer.*"
+    },
+    "day5_arrive_now": {
+        "name": "Moi",
+        "text": "*Maintenant c'est différent. Il y a des gens que je connais ici, et un endroit où je peux revenir. J'ai franchi le portail et suis entré.*"
+    }
+}

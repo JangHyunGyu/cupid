@@ -180,6 +180,9 @@
      * 13. modules/index.js       : 초기화 + 모듈 검증 (항상 마지막)
      */
     const engineScripts = [
+        // 다국어 텍스트 로더
+        'loaders/i18n-loader.js',
+
         // AI 캐릭터 프롬프트
         'prompts.js',
 
