@@ -1,0 +1,372 @@
+{
+    "after_home": {
+        "name": "Ich",
+        "text": "*Ich gehe durch die dunklen Straßen. Die Straßenlaternen werfen lange Schatten auf den Boden.*"
+    },
+    "after_home_walk": {
+        "name": "Ich",
+        "text": "*Die Gegend wird mir langsam vertraut. Am Konbini vorbei, durch die Gasse, dann unser Haus... den Automaten da kenne ich auch schon.*"
+    },
+    "after_home_neighborhood": {
+        "name": "Ich",
+        "text": "*Ruhiges Wohnviertel. Irgendwo riecht es nach Abendessen. Fremde Gegend, aber seltsam gemütlich.*"
+    },
+    "after_home_arrive": {
+        "name": "Ich",
+        "text": "*Vor der Haustür angekommen. Schlüssel raus, Tür auf. Meine Eltern scheinen noch nicht da zu sein.*"
+    },
+    "after_home_2": {
+        "name": "Ich",
+        "text": "*Licht an, aufs Bett fallen lassen. Die unbekannte Zimmerdecke fühlt sich heute seltsam vertraut an — oder bilde ich mir das ein.*"
+    },
+    "after_home_settle": {
+        "name": "Ich",
+        "text": "*Schuluniform aus, bequeme Klamotten an. Tasche abstellen und die Handouts von heute auf dem Schreibtisch sortieren.*"
+    },
+    "after_home_3": {
+        "name": "Ich",
+        "text": "*Was wird morgen wohl passieren. Diese seltsame Aufregung — so schnell schlafe ich heute nicht ein.*"
+    },
+    "night_reflect_start": {
+        "name": "Ich",
+        "text": "*Ich starre an die Decke und lasse den Tag Revue passieren. Für den ersten Tag... ist ziemlich viel passiert.*"
+    },
+    "night_reflect_seoyeon": {
+        "name": "Ich",
+        "text": "*Seoyeon... tut cool, hat aber unerwartet warme Seiten. Ihr Gesicht, als sie meinte, ich sei der Erste, der ihr widerspricht — das geht mir nicht aus dem Kopf.*"
+    },
+    "night_reflect_yuna": {
+        "name": "Ich",
+        "text": "*Yuna... hat wenig geredet, aber ihr Blick verfolgt mich. 'Gleiches Licht' — was hat sie damit gemeint?*"
+    },
+    "night_reflect_dain": {
+        "name": "Ich",
+        "text": "*Dain... ein Energiebündel. Mit ihr wird's garantiert nie langweilig. Sie sah echt cool aus beim Volleyball.*"
+    },
+    "night_reflect_nurse": {
+        "name": "Ich",
+        "text": "*Die Krankenschwester... 'süßer Neuer', hm. Seltsam, dass ich ständig an diesen Ort denken muss.*"
+    },
+    "night_reflect_teacher": {
+        "name": "Ich",
+        "text": "*Die Klassenlehrerin wirkt streng, ist aber im Herzen warm. Bin froh, dass sie meine Klassenlehrerin ist.*"
+    },
+    "night_reflect_end": {
+        "name": "Ich",
+        "text": "*Diese Schule ist gar nicht schlecht. Was wird morgen wohl passieren.*"
+    },
+    "night_diary_choice": {
+        "name": "Ich",
+        "text": "*In der Schreibtischschublade liegt ein neues Notizbuch. Hat Mama das reingelegt — als Geschenk zum Schulwechsel?*",
+        "choices": [
+            "Aufschreiben, was heute alles passiert ist.",
+            "Einfach weitermachen."
+        ]
+    },
+    "night_diary_write_1": {
+        "name": "Ich",
+        "text": "*Stift in die Hand, erste Seite aufgeschlagen. 'Tag X im Monat X. Erster Schultag. Besser als erwartet.'*"
+    },
+    "night_diary_write_2": {
+        "name": "Ich",
+        "text": "*'Interessante Leute getroffen. Eine coole Schülerratsvorsitzende, ein rätselhaftes Büchermädchen, ein Volleyball-Energiebündel...'*"
+    },
+    "night_diary_write_3": {
+        "name": "Ich",
+        "text": "*'Ob ich diesen Menschen morgen näherkommen kann? Ich bin gespannt.' ...Stift ablegen, Buch zuklappen. Nach dem Schreiben fühlt sich alles etwas sortierter an.*"
+    },
+    "night_home": {
+        "name": "Ich",
+        "text": "*Vor dem Einschlafen checke ich gewohnheitsmäßig mein Handy.*"
+    },
+    "night_home_check_contact": {
+        "name": "Ich",
+        "text": "*Die Leute, mit denen ich heute Nummern getauscht habe... wem schreibe ich zuerst?*",
+        "choices": [
+            "Seoyeon eine Nachricht schicken.",
+            "Yuna eine Nachricht schicken.",
+            "Dain eine Nachricht schicken.",
+            "Der Krankenschwester eine Nachricht schicken.",
+            "Der Klassenlehrerin eine Nachricht schicken.",
+            "Zuneigungswerte checken",
+            "Schluss für heute — schlafen gehen."
+        ]
+    },
+    "day1_check_affinity": {
+        "name": "System",
+        "text": "Aktuelle Zuneigungswerte der Charaktere:{affinity_list}"
+    },
+    "night_message_teacher": {
+        "name": "Ich",
+        "text": "*Nachricht an die Klassenlehrerin geschickt: 'Frau Lehrerin, danke, dass Sie sich heute so um mich gekümmert haben. Dank Ihnen war der erste Tag richtig gut.'*"
+    },
+    "night_message_teacher_reply": {
+        "name": "Lehrerin",
+        "text": "*Schnelle Antwort.* 'Oh, {name}! Am ersten Schultag und dann noch so eine nette Nachricht. Sehr löblich.'"
+    },
+    "night_message_teacher_extra_1": {
+        "name": "Lehrerin",
+        "text": "'Aber heute im Unterricht, dein Gesichtsausdruck... du warst doch mit den Gedanken woanders, oder? Hab ich genau gesehen~'"
+    },
+    "night_message_teacher_extra_2": {
+        "name": "Ich",
+        "text": "*Erwischt? 'Das war... weil das Klassenzimmer so anders als an meiner alten Schule war!' schrieb ich zurück.*"
+    },
+    "night_message_teacher_extra_3": {
+        "name": "Lehrerin",
+        "text": "'Haha, verstehe~ Ab morgen geht's erst richtig los, also pass auf dich auf und schlaf gut. Bis morgen!'"
+    },
+    "night_message_teacher_extra_4": {
+        "name": "Ich",
+        "text": "*Wirkt streng, ist aber so aufmerksam. Bin froh über so eine Klassenlehrerin.*"
+    },
+    "night_message_seyoun": {
+        "name": "Ich",
+        "text": "*Was schreibe ich Seoyeon?*"
+    },
+    "night_message_seyoun_lunch": {
+        "name": "Ich",
+        "text": "*Nachricht an Seoyeon geschickt: 'Die Lunchbox auf dem Dach war echt lecker heute. Danke, Seoyeon.'*"
+    },
+    "night_message_seyoun_after": {
+        "name": "Ich",
+        "text": "*Nachricht an Seoyeon geschickt: 'War schön, dir heute bei der Schülerrats-Arbeit zu helfen. Überarbeite dich nicht. Bis morgen.'*"
+    },
+    "night_message_seyoun_generic": {
+        "name": "Ich",
+        "text": "*Nachricht an Seoyeon geschickt: 'Danke, dass du dich am ersten Tag um mich gekümmert hast. Bis morgen in der Schule.'*"
+    },
+    "night_message_seyoun_reply_lunch": {
+        "name": "Seoyeon",
+        "text": "*Sofortige Antwort.* 'Hat's geschmeckt? Freut mich! Freu dich auf morgen. Menü bleibt geheim.'"
+    },
+    "night_message_seyoun_reply_standard": {
+        "name": "Seoyeon",
+        "text": "*Sofortige Antwort.* 'Mir hat's auch Spaß gemacht. Für einen Neuen lebst du dich echt schnell ein. Bis morgen.'"
+    },
+    "night_message_seyoun_reply_high": {
+        "name": "Seoyeon",
+        "text": "*Antwort mit Herz-Emoji.* 'Weißt du was... heute war echt schön. Soll ich morgen wieder Lunchbox mitbringen? Sag mir, was du willst haha'"
+    },
+    "night_message_seyoun_reply_low": {
+        "name": "Seoyeon",
+        "text": "*Erst nach langer Zeit eine knappe Antwort.* 'Ja. Bis morgen.'"
+    },
+    "night_message_seyoun_followup": {
+        "name": "Ich",
+        "text": "*Ich starre auf Seoyeons Antwort. Irgendwie will ich noch was schreiben...*",
+        "choices": [
+            "'Was willst du morgen essen?' schreiben.",
+            "'Schlaf gut, Seoyeon.' schreiben.",
+            "Nichts mehr schreiben."
+        ]
+    },
+    "night_message_seyoun_followup_food": {
+        "name": "Seoyeon",
+        "text": "*Sofortige Antwort.* 'Machst du dir jetzt schon Gedanken übers Mittagessen morgen? Irgendwie süß haha. Vielleicht gibt's eine Überraschungs-Lunchbox? Schlaf schön.'"
+    },
+    "night_message_seyoun_followup_goodnight": {
+        "name": "Seoyeon",
+        "text": "*Antwort nach kurzem Moment.* '...Schlaf gut, {name}. Träum was Schönes.'"
+    },
+    "night_message_seyoun_followup_end": {
+        "name": "Ich",
+        "text": "*Dass es sich mit Seoyeon so natürlich anfühlt. Gleich am ersten Tag so vertraut — hätte ich nicht gedacht.*"
+    },
+    "night_message_yuna": {
+        "name": "Ich",
+        "text": "*Nachricht an Yuna geschickt: 'Heute war schön. Schlaf gut.'*"
+    },
+    "night_message_yuna_reply_standard": {
+        "name": "Yuna",
+        "text": "*Antwort nach langer Pause.* '...Ja. Du auch.'"
+    },
+    "night_message_yuna_reply_high": {
+        "name": "Yuna",
+        "text": "*Antwort nach langer Pause.* 'Heute... danke. Dank dir konnte ich ein wenig lächeln.'"
+    },
+    "night_message_yuna_reply_low": {
+        "name": "Yuna",
+        "text": "*Keine Antwort. Nur die Lesebestätigung leuchtet still.*"
+    },
+    "night_message_yuna_cryptic": {
+        "name": "Yuna",
+        "text": "*Weitere Nachricht.* '...{name}. Wenn du heute Nacht Sterne siehst, schau auf den dritten. Warum, sage ich dir später.'"
+    },
+    "night_message_yuna_cryptic_react": {
+        "name": "Ich",
+        "text": "*Der dritte Stern? Was soll das bedeuten? Typisch Yuna, würde ich sagen.*"
+    },
+    "night_message_yuna_cryptic_choice": {
+        "name": "Ich",
+        "text": "*Was antworte ich?*",
+        "choices": [
+            "'Okay, mach ich.' schreiben.",
+            "'Warum? Was bedeutet das?' schreiben."
+        ]
+    },
+    "night_message_yuna_cryptic_reply": {
+        "name": "Ich",
+        "text": "*'Okay. Mach ich.' geschrieben. ...Tatsächlich — am Fenster sind ein paar Sterne zu sehen. Der dritte Stern... ist es der da?*"
+    },
+    "night_message_yuna_cryptic_ask": {
+        "name": "Yuna",
+        "text": "*Antwort.* '...Wenn ich es jetzt sage, verliert es seine Bedeutung. Schau einfach.'"
+    },
+    "night_message_yuna_cryptic_end": {
+        "name": "Yuna",
+        "text": "*Letzte Nachricht.* '...Hast du geschaut? Dann gut. Du wirst schön träumen. Wahrscheinlich.'"
+    },
+    "night_message_dain": {
+        "name": "Ich",
+        "text": "*Was schreibe ich Dain?*"
+    },
+    "night_message_dain_date": {
+        "name": "Ich",
+        "text": "*Nachricht an Dain geschickt: 'Das Tteokbokki war mega lecker! Lass das bald nochmal machen haha'*"
+    },
+    "night_message_dain_generic": {
+        "name": "Ich",
+        "text": "*Nachricht an Dain geschickt: 'Du sahst echt cool aus beim Training! Bis morgen.'*"
+    },
+    "night_message_dain_reply_date": {
+        "name": "Dain",
+        "text": "*Sofortige Antwort.* 'Oder?! Ich kenne ALLE guten Läden! Nächstes Mal kommt Sundae dazu!!'"
+    },
+    "night_message_dain_reply_standard": {
+        "name": "Dain",
+        "text": "*Sofortige Antwort.* 'Oh~ hast du mir zugeschaut? Peinlich! haha Morgen zeig ich dir noch was Cooleres! Schlaf gut, {name}!!'"
+    },
+    "night_message_dain_reply_high": {
+        "name": "Dain",
+        "text": "*Sofortige Antwort.* 'Ooh hast du gesehen?! Meine Annahme war perfekt haha! Morgen zeig ich dir meinen Spike!! Freu dich drauf!!'"
+    },
+    "night_message_dain_selfie": {
+        "name": "Dain",
+        "text": "*Ein Foto kommt an. Ein Selfie aus der Sporthalle mit Victory-Zeichen.* 'Das bin ich heute! Cool, oder? haha'"
+    },
+    "night_message_dain_selfie_react": {
+        "name": "Ich",
+        "text": "*Dains Selfie... die Energie sprengt förmlich den Bildschirm. Ich muss unwillkürlich grinsen.*"
+    },
+    "night_message_dain_challenge": {
+        "name": "Dain",
+        "text": "*Weitere Nachricht.* 'Ach ja! Morgen früh Treppen-Wettrennen am Hügel hinter der Schule?! Verlierer zahlt Snacks! Challenge?!'"
+    },
+    "night_message_dain_challenge_choice": {
+        "name": "Ich",
+        "text": "*Dain fordert mich heraus. Was mache ich?*",
+        "choices": [
+            "'Challenge accepted!' schreiben.",
+            "'Was wenn DU verlierst haha' schreiben."
+        ]
+    },
+    "night_message_dain_challenge_accept": {
+        "name": "Dain",
+        "text": "*Sofortige Antwort.* 'SO mag ich das!! Morgen früh aufstehen?! Wer verschläft, hat schon verloren!! Gute Nacht, FIGHTING!!!'"
+    },
+    "night_message_dain_challenge_tease": {
+        "name": "Dain",
+        "text": "*Sofortige Antwort.* 'Was?! hahaha Große Sprüche klopfen!! Na gut, wir werden sehen!! Morgen früh am Schultor!! Schlaf guuut!!!'"
+    },
+    "night_message_nurse": {
+        "name": "Ich",
+        "text": "*Nachricht an die Krankenschwester geschickt: 'Frau Krankenschwester, danke für heute. Ich konnte mich richtig entspannen bei Ihnen.'*"
+    },
+    "night_message_nurse_reply_standard": {
+        "name": "Krankenschwester",
+        "text": "*Antwort.* 'Oh, du schreibst ja wirklich? Was für ein braves Kind~ mein süßer Neuer~'"
+    },
+    "night_message_nurse_reply_high": {
+        "name": "Krankenschwester",
+        "text": "*Antwort.* 'Oh~ so eine Nachricht am Abend, willst du, dass ich nicht schlafen kann? Scherz~ Deine liebe Art gefällt mir.'"
+    },
+    "night_message_nurse_extra_1": {
+        "name": "Krankenschwester",
+        "text": "'Bist du denn nicht müde von der ganzen Eingewöhnung an der neuen Schule? Überanstreng dich nicht~ bei Kopfschmerzen komm direkt ins Krankenzimmer.'"
+    },
+    "night_message_nurse_extra_2": {
+        "name": "Ich",
+        "text": "*'Ja, danke! Schlafen Sie auch gut!' geschrieben. Dass sie sich so kümmert, fühlt sich warm an.*"
+    },
+    "night_message_nurse_extra_3": {
+        "name": "Krankenschwester",
+        "text": "'Danke~ schlaf gut, {name}. Ich wünsche dir süße Träume~'"
+    },
+    "night_message_nurse_extra_4": {
+        "name": "Ich",
+        "text": "*'Ich wünsche dir süße Träume' — warum bleibt mir gerade dieser Satz so im Kopf. Sie ist eine Lehrerin... warum denke ich ständig daran.*"
+    },
+    "night_goodnight_start": {
+        "name": "Ich",
+        "text": "*Handy weglegen, vom Bett aufstehen. Soll ich vor dem Einschlafen noch das Fenster öffnen?*"
+    },
+    "night_goodnight_window": {
+        "name": "Ich",
+        "text": "*Das Fenster geht auf und kühle Nachtluft streift mein Gesicht. Ein paar Sterne am Himmel. Mehr als in der Stadt sieht man hier allemal.*"
+    },
+    "night_goodnight_sounds": {
+        "name": "Ich",
+        "text": "*Grillen zirpen. In der Ferne ein leises Zugrauschen. Diese ruhige Nacht — gar nicht schlecht.*"
+    },
+    "night_goodnight_think": {
+        "name": "Ich",
+        "text": "*Was mich wohl morgen erwartet.*"
+    },
+    "night_goodnight_close": {
+        "name": "Ich",
+        "text": "*Fenster zu, unter die Decke kriechen. Augen schließen — der Schlaf kommt bestimmt gleich.*"
+    },
+    "night_surprise_check": {
+        "name": "Ich",
+        "text": "*Gerade als ich die Augen schließen will — Pling! Handy-Benachrichtigung. Wer schreibt denn um die Uhrzeit?*"
+    },
+    "night_surprise_seyoun": {
+        "name": "Seoyeon",
+        "text": "*Nachricht von Seoyeon.* 'Kann nicht schlafen... wollen wir uns morgen am Schultor treffen? Zusammen hingehen.'"
+    },
+    "night_surprise_seyoun_react": {
+        "name": "Ich",
+        "text": "*'Klar. Morgen am Schultor.' geschrieben. Seoyeon schreibt zuerst — meine Mundwinkel gehen hoch.*"
+    },
+    "night_surprise_yuna": {
+        "name": "Yuna",
+        "text": "*Nachricht von Yuna.* '...Bist du noch wach? Die Sterne sind schön heute. Das ist alles.'"
+    },
+    "night_surprise_yuna_react": {
+        "name": "Ich",
+        "text": "*'Ich hab gerade auch Sterne geschaut.' geschrieben. Unter demselben Himmel — das berührt mich irgendwie.*"
+    },
+    "night_surprise_dain": {
+        "name": "Dain",
+        "text": "*Nachricht von Dain.* 'Du bist doch noch wach?! Vergiss morgen die Challenge nicht!! Dehn dich lieber mal!! haha Gute Nacht!!'"
+    },
+    "night_surprise_dain_react": {
+        "name": "Ich",
+        "text": "*'Mach dir keine Sorgen, bin bereit.' geschrieben. Dains Energie kennt selbst nachts keine Pause.*"
+    },
+    "night_surprise_nurse": {
+        "name": "Krankenschwester",
+        "text": "*Nachricht von der Krankenschwester.* 'Wenn du noch wach bist, ist das ein Problem~ soll ich dir morgen im Krankenzimmer eine Schlafberatung geben? Scherz~ schlaf gut, mein süßer Neuer.'"
+    },
+    "night_surprise_nurse_react": {
+        "name": "Ich",
+        "text": "*'Ja, ich schlafe jetzt! Danke!' geschrieben. Neckisch, aber insgeheim macht sie sich bestimmt Sorgen.*"
+    },
+    "night_surprise_teacher": {
+        "name": "Lehrerin",
+        "text": "*Nachricht von der Klassenlehrerin.* 'Bist du noch wach? Wollte dir den geänderten Stundenplan für morgen sagen. Dritte Stunde ist Sport. Schlaf gut!'"
+    },
+    "night_surprise_teacher_react": {
+        "name": "Ich",
+        "text": "*'Danke, Frau Lehrerin! Gute Nacht.' geschrieben. Dass sie sich sogar um solche Details kümmert.*"
+    },
+    "night_surprise_react": {
+        "name": "Ich",
+        "text": "*Überraschend, aber es hat mich glücklich gemacht. Handy umdrehen, Decke drüber. Heute war wirklich ein guter Tag.*"
+    },
+    "day1_end": {
+        "name": "Ich",
+        "text": "*Neue Begegnungen, unbekannte Gefühle... so endet der erste Schultag. Was für ein Tag wird morgen wohl werden.*"
+    }
+}

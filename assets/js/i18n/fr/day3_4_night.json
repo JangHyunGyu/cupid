@@ -1,96 +1,96 @@
 {
     "day3_night_start": {
         "name": "Moi",
-        "text": "*Je suis rentré. Vendredi soir... Demain, c'est le week-end.*"
+        "text": "*Arrive a la maison. Vendredi soir. Demain c'est le week-end.*"
     },
     "day3_night_reflect": {
         "name": "Moi",
-        "text": "*Allongé sur le lit, je repense à cette journée. Ce qui s'est passé au déjeuner... ce qui s'est passé après les cours...*"
+        "text": "*Allonge sur le lit, je repense a cette journee.*"
     },
     "day3_night_reflect_trouble": {
         "name": "Moi",
-        "text": "*Tout le monde a tout découvert au déjeuner... Est-ce que le week-end va bien se passer ?*"
+        "text": "*Tout a ete decouvert au dejeuner. L'air glacial et les regards aceres sont encore graves dans ma memoire. Est-ce que je vais survivre au week-end ?*"
     },
     "day3_night_reflect_tension": {
         "name": "Moi",
-        "text": "*J'ai pris plusieurs rendez-vous... Il faut que je gère bien mon temps.*"
+        "text": "*Les rendez-vous se chevauchent. A chaque visage qui me revient, mon coeur bat et je suis en sueur froide. Faut que je gere bien mon emploi du temps.*"
     },
     "day3_night_reflect_normal": {
         "name": "Moi",
-        "text": "*J'ai hâte d'être à demain. Quelle journée ce sera ?*"
+        "text": "*J'ai hate d'etre a demain. Quelle journee ce sera.*"
     },
     "day3_night_phone_check": {
         "name": "Moi",
-        "text": "*Je vérifie mon smartphone. Il y a des messages.*"
+        "text": "*Je regarde mon telephone. Il y a des messages.*"
     },
     "day3_night_multiple_messages": {
         "name": "Moi",
-        "text": "*Il y a plusieurs messages... Mon cœur bat la chamade.*"
+        "text": "*Plusieurs messages... Mon coeur s'emballe.*"
     },
     "day3_night_check_messages": {
         "name": "Moi",
-        "text": "*Quel message devrais-je lire en premier ?*",
+        "text": "*Lequel je lis en premier ?*",
         "choices": [
-            "Le message de Seoyeon",
-            "Le message de Yuna",
-            "Le message de Dain",
-            "Le message de l'Infirmière Scolaire",
-            "Le message du Professeur Principal",
-            "Aller dormir"
+            "Message de Seoyeon",
+            "Message de Yuna",
+            "Message de Dain",
+            "Message de l'Infirmiere",
+            "Message de la Professeure",
+            "Dormir direct"
         ]
     },
     "day3_night_msg_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Message : 22h* '{name}, tu es encore réveillé ? J'ai tellement hâte d'être à demain !'"
+        "text": "*22:03* '{name}, tu dors pas ? J'ai trop hate d'etre a demain.'"
     },
     "day3_night_seoyeon_suspicious": {
         "name": "Seoyeon",
-        "text": "*Message supplémentaire* 'Mais... tu ne vois que moi, hein ? Pas d'autres plans ?'",
+        "text": "*Message supplementaire* 'Mais... c'est bien que moi, hein ? T'as pas d'autres plans ?'",
         "choices": [
-            "'Oui, toi seule !'",
-            "'Laisse-moi être honnête...'",
-            "*Laisser en vu*"
+            "'Oui, que toi'",
+            "'Je vais etre honnete...'",
+            "*Vu sans repondre*"
         ]
     },
     "day3_night_seoyeon_lie": {
         "name": "Seoyeon",
-        "text": "'Vraiment ? Je te fais confiance ! À demain ! 💕'"
+        "text": "'...OK. Je te fais confiance. A demain.'"
     },
     "day3_night_seoyeon_honest": {
         "name": "Seoyeon",
-        "text": "'...Quoi ? Tu as d'autres plans ? Avec qui ?'"
+        "text": "'...Quoi ? D'autres plans ? Avec qui ?'"
     },
     "day3_night_seoyeon_angry": {
         "name": "Seoyeon",
-        "text": "'...Très bien. On verra ce week-end.'"
+        "text": "'...OK. On verra ce week-end.'"
     },
     "day3_night_seoyeon_ignore": {
         "name": "Moi",
-        "text": "*Je n'ai pas répondu. Seoyeon sera sûrement déçue...*"
+        "text": "*Je n'ai pas repondu. Seoyeon va etre decue...*"
     },
     "day3_night_seoyeon_jealous": {
         "name": "Seoyeon",
-        "text": "*Message supplémentaire* 'À propos du déjeuner aujourd'hui... ça me tracasse encore. S'il te plaît, sois honnête avec moi.'",
+        "text": "*Message supplementaire* 'Ce qui s'est passe au dejeuner... ca me tracasse encore. Sois honnete avec moi.'",
         "choices": [
-            "'Désolé, je n'ai pas pu dire non...'",
+            "'Pardon, j'arrivais pas a dire non...'",
             "'Tu es la plus importante pour moi'",
-            "*Laisser en vu*"
+            "*Vu sans repondre*"
         ]
     },
     "day3_night_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "'...Merci d'être honnête. Mais je n'aime pas partager avec les autres.'"
+        "text": "'...Merci d'etre honnete. Mais je compte pas te partager. T'es a moi. Pas vrai ?'"
     },
     "day3_night_seoyeon_reassure": {
         "name": "Seoyeon",
-        "text": "'...Vraiment ? Je m'en souviendrai. Prouve-le-moi demain.'"
+        "text": "'...Vraiment ? Oublie jamais ca. Si demain tu souris a quelqu'un d'autre... je reponds plus de rien.'"
     },
     "day3_night_seoyeon_normal": {
         "name": "Seoyeon",
-        "text": "'Tu as décidé où aller demain ? Tu peux me laisser faire ! Bonne nuit ! 😊'",
+        "text": "'T'as decide ou on va demain ? Tu peux me laisser gerer. Bonne nuit.'",
         "choices": [
-            "'Je te fais confiance ! Bonne nuit !'",
-            "'Merci, à demain !'"
+            "'Je te laisse faire, bonne nuit'",
+            "'Merci, a demain'"
         ]
     },
     "day3_night_seoyeon_good": {
@@ -99,18 +99,18 @@
     },
     "day3_night_msg_yuna": {
         "name": "Yuna",
-        "text": "*Message : 23h59* '...{name}. Demain soir. N'oublie pas.'"
+        "text": "*23:59* '...{name}. Demain soir. Oublie pas.'"
     },
     "day3_night_yuna_witnessed": {
         "name": "Yuna",
-        "text": "*Message supplémentaire* 'Aujourd'hui après les cours... je t'ai vu partir avec Seoyeon.'"
+        "text": "*Message supplementaire* 'Apres les cours aujourd'hui... je t'ai vu partir avec Seoyeon.'"
     },
     "day3_night_yuna_warning": {
         "name": "Yuna",
         "text": "'Si tu me mens... tu le regretteras.'",
         "choices": [
             "'Tu es la plus importante pour moi'",
-            "'Seoyeon et moi, on est juste amis'",
+            "'Seoyeon et moi, c'est juste de l'amitie'",
             "'...Pardon'"
         ]
     },
@@ -120,30 +120,30 @@
     },
     "day3_night_yuna_threat": {
         "name": "Yuna",
-        "text": "'...Tu le sais, n'est-ce pas ? 😊'"
+        "text": "'...N'essaie pas de fuir. Ou que tu ailles, avec qui que tu sois, je saurai.'"
     },
     "day3_night_yuna_excuse": {
         "name": "Yuna",
-        "text": "'...D'accord. Des amis. Je te crois.'"
+        "text": "'...Amis. OK. Je te crois.'"
     },
     "day3_night_yuna_apologize": {
         "name": "Yuna",
-        "text": "'...On en parlera quand on se verra demain. Ne t'enfuis pas.'"
+        "text": "'...On en parle quand on se voit demain. Te defife pas.'"
     },
     "day3_night_yuna_knows": {
         "name": "Yuna",
-        "text": "*Message supplémentaire* '...Tu as aussi fait des promesses à d'autres, n'est-ce pas ?'"
+        "text": "*Message supplementaire* '...T'as aussi fait des promesses aux autres, pas vrai ?'"
     },
     "day3_night_yuna_knows_2": {
         "name": "Yuna",
-        "text": "'C'est pas grave. Tu finiras par revenir vers moi.'"
+        "text": "'C'est pas grave. Tu auras beau te debattre, tu finiras dans le creux de ma main. Attends demain soir.'"
     },
     "day3_night_yuna_normal": {
         "name": "Yuna",
-        "text": "'...À tout à l'heure dans tes rêves.'",
+        "text": "'...A tout a l'heure dans tes reves.'",
         "choices": [
-            "'Ouais, bonne nuit'",
-            "'Quel genre de rêves ?'"
+            "'Oui, bonne nuit'",
+            "'Quel genre de reve ?'"
         ]
     },
     "day3_night_yuna_dream": {
@@ -156,35 +156,35 @@
     },
     "day3_night_msg_dain": {
         "name": "Dain",
-        "text": "*Message : 21h* 'Hé !! 9h au gymnase demain !! Ne sois pas en retard !!! 😤'"
+        "text": "*21:00* 'Hey !! Demain 9h au gymnase !! Sois pas en retard !!!'"
     },
     "day3_night_dain_suspicious": {
         "name": "Dain",
-        "text": "*Message supplémentaire* 'Mais... tu as vraiment pris des rendez-vous avec d'autres ? J'ai entendu au déjeuner.'",
+        "text": "*Message supplementaire* 'Mais... t'as vraiment fait des plans avec d'autres ? J'ai entendu au dejeuner.'",
         "choices": [
-            "'Ton entraînement est le plus important !'",
-            "'J'ai d'autres plans...'",
-            "'Les horaires sont différents alors ça va'"
+            "'Ton entrainement, c'est la priorite !'",
+            "'J'ai d'autres plans aussi...'",
+            "'Les horaires sont differents donc ca va'"
         ]
     },
     "day3_night_dain_priority": {
         "name": "Dain",
-        "text": "'Vraiment ?! Héhé, alors c'est bon ! Je te montrerai un truc génial demain !'"
+        "text": "'Serieux ?! Alors c'est regle !! Je vais te montrer un truc de ouf demain !!'"
     },
     "day3_night_dain_honest": {
         "name": "Dain",
-        "text": "'...Ah bon ? Bon, tant pis. Mais tu DOIS venir à mon entraînement !'"
+        "text": "'...Ah bon ? Pfff ! M'en fiche ! Je serai cent fois plus fun que les autres !! Tu verras demain !!'"
     },
     "day3_night_dain_excuse": {
         "name": "Dain",
-        "text": "'Hmm... bon, si les horaires s'arrangent, je suppose que ça va. Mais concentre-toi sur moi !'"
+        "text": "'Hmm... si les horaires matchent, ca passe. Mais concentre-toi sur moi !'"
     },
     "day3_night_dain_normal": {
         "name": "Dain",
-        "text": "*Message supplémentaire* 'On va manger des tteokbokki après l'entraînement ! C'est moi qui régale ! 🍜'",
+        "text": "*Message supplementaire* 'Apres l'entrainement on va manger des tteokbokki !! C'est moi qui regale !!'",
         "choices": [
-            "'Super ! J'ai hâte !'",
-            "'lol d'accord !'"
+            "'Trop bien ! J'ai hate !'",
+            "'Haha d'accord !'"
         ]
     },
     "day3_night_dain_good": {
@@ -192,186 +192,191 @@
         "text": "*Fin de la discussion avec Dain.*"
     },
     "day3_night_msg_nurse": {
-        "name": "Infirmière Scolaire",
-        "text": "*Message : 23h* 'Mon mignon petit nouvel élève, encore debout ? Héhé.'"
+        "name": "Infirmiere",
+        "text": "*23:00* 'Pas encore couche ? Moi non plus j'arrive pas a dormir~'"
     },
     "day3_night_nurse_2": {
-        "name": "Infirmière Scolaire",
-        "text": "'Tu n'as pas oublié dimanche soir, n'est-ce pas ? Je vais préparer quelque chose de spécial. 😉'",
+        "name": "Infirmiere",
+        "text": "'Dimanche soir, t'as pas oublie ? Je te prepare quelque chose de special.'",
         "choices": [
-            "'J'ai hâte !'",
+            "'J'ai trop hate !'",
             "'C'est quoi ?'"
         ]
     },
     "day3_night_nurse_excited": {
-        "name": "Infirmière Scolaire",
-        "text": "'Tu peux t'y attendre. Dors bien et à dimanche, {name}. 💋'"
+        "name": "Infirmiere",
+        "text": "'T'as le droit d'avoir hate. Dors bien et a dimanche, {name}.'"
     },
     "day3_night_nurse_curious": {
-        "name": "Infirmière Scolaire",
-        "text": "'C'est un secret. Tu le découvriras dimanche. Sois impatient.'"
+        "name": "Infirmiere",
+        "text": "'Secret~ Tu le sauras dimanche.'"
     },
     "day3_night_msg_teacher": {
-        "name": "Professeur Principal",
-        "text": "*Message : 22h* '{name}, tu n'as pas oublié le musée dimanche, n'est-ce pas ?'"
+        "name": "Professeure",
+        "text": "*22:00* '{name}, t'as pas oublie le musee dimanche ?'"
     },
     "day3_night_teacher_2": {
-        "name": "Professeur Principal",
-        "text": "'Je suis enthousiaste, ça faisait longtemps que je n'étais pas sortie. Dimanche à 14h, entrée du musée.'",
+        "name": "Professeure",
+        "text": "'Ca faisait longtemps que j'etais pas sortie, j'ai hate. Dimanche 14h, devant l'entree du musee.'",
         "choices": [
-            "'Oui, j'ai hâte !'",
+            "'Oui, j'ai hate !'",
             "'Bonne nuit !'"
         ]
     },
     "day3_night_teacher_good": {
-        "name": "Professeur Principal",
-        "text": "'D'accord, dors bien et à dimanche. Bonne nuit.'"
+        "name": "Professeure",
+        "text": "'D'accord, dors bien. A dimanche.'"
     },
     "day3_night_back_to_messages": {
         "name": "Moi",
-        "text": "*Devrais-je consulter d'autres messages ?*",
+        "text": "*Je regarde les autres messages ?*",
         "choices": [
-            "Le message de Seoyeon",
-            "Le message de Yuna",
-            "Le message de Dain",
-            "Le message de l'Infirmière Scolaire",
-            "Le message du Professeur Principal",
-            "Aller dormir"
+            "Message de Seoyeon",
+            "Message de Yuna",
+            "Message de Dain",
+            "Message de l'Infirmiere",
+            "Message de la Professeure",
+            "Dormir maintenant"
         ]
     },
     "day3_night_single_message": {
         "name": "Moi",
-        "text": "*Il y a un message.*"
+        "text": "*J'ai recu un message.*"
     },
     "day3_night_no_message": {
         "name": "Moi",
-        "text": "*Pas de messages particuliers. Qu'est-ce que je vais faire ce week-end...*"
+        "text": "*Pas de message particulier. Qu'est-ce que je fais ce week-end...*"
     },
     "day3_night_ignore_all": {
         "name": "Moi",
-        "text": "*J'ai décidé de dormir sans consulter les messages. Je les lirai demain matin...*"
+        "text": "*J'ai decide de dormir sans regarder les messages. Je verrai ca demain matin.*"
     },
     "day3_night_sleep": {
         "name": "Moi",
-        "text": "*Alors que mes yeux se ferment... mon téléphone sonne. Un appel.*"
+        "text": "*Mes yeux se ferment quand... mon telephone sonne. Un appel.*"
     },
     "day3_night_phone_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Je décroche et j'entends la voix de Seoyeon* \"...{name} ? Je sais qu'il est l'heure de dormir. Mais... je voulais entendre ta voix.\""
+        "text": "*Je decroche, c'est la voix de Seoyeon* \"...{name} ? Je sais qu'il est tard. Mais j'avais envie d'entendre ta voix.\""
     },
     "day3_night_phone_seoyeon_freetalk": {
         "name": "Moi",
-        "text": "*Un appel nocturne avec Seoyeon. Sa voix semble plus douce que d'habitude dans la chambre obscure.*",
-        "context": "Appel nocturne. Seoyeon a appelé en disant 'Je voulais entendre ta voix.' Une douce conversation nocturne. Seoyeon a appelé soudainement avant de dormir."
+        "text": "*Appel nocturne avec Seoyeon. Sa voix dans l'obscurite de ma chambre est plus douce que d'habitude.*",
+        "context": "Appel nocturne. Seoyeon a appele en disant 'j'avais envie d'entendre ta voix'. Douce conversation nocturne.",
+        "personality": "Seoyeon a un style cool beauty. Directe et cash, decontractee, un charme espiegle. Possessive, et quand elle est jalouse, elle ne mache pas ses mots."
     },
     "day3_night_phone_yuna": {
         "name": "Yuna",
-        "text": "*Je décroche et j'entends la voix de Yuna* \"...Je sais qu'il est l'heure de dormir. Mais... je n'arrive pas à m'endormir.\""
+        "text": "*Je decroche, c'est la voix de Yuna* \"...Je sais qu'il est tard. Mais j'arrive pas a dormir.\""
     },
     "day3_night_phone_yuna_freetalk": {
         "name": "Moi",
-        "text": "*Un appel nocturne avec Yuna. Sa respiration silencieuse parvient à mon oreille.*",
-        "context": "Appel nocturne. Yuna a appelé en disant 'Je n'arrive pas à m'endormir.' Une conversation nocturne calme et intime. Sa respiration douce semble toute proche."
+        "text": "*Appel nocturne avec Yuna. Son souffle leger effleure mon oreille.*",
+        "context": "Appel nocturne. Yuna a appele en disant 'j'arrive pas a dormir'. Atmosphere calme et intime.",
+        "personality": "Yuna est nonchalante, directe et fait les choses a son rythme. Elle parle en phrases courtes et cryptiques. Froide en apparence, mais quand elle s'ouvre, le contraste est saisissant."
     },
     "day3_night_phone_dain": {
         "name": "Dain",
-        "text": "*Je décroche et j'entends la voix de Dain* \"...Hé, je sais qu'il est tard. Mais en pensant à demain, je n'arrive pas à dormir !\""
+        "text": "*Je decroche, c'est la voix de Dain* \"...Hey, je sais qu'il est tard. Mais en pensant a demain, j'arrive pas a dormir !\""
     },
     "day3_night_phone_dain_freetalk": {
         "name": "Moi",
-        "text": "*Un appel nocturne avec Dain. Au lieu de son énergie habituelle, sa voix calme est une découverte.*",
-        "context": "Appel nocturne. Dain a appelé en disant 'En pensant à demain, je n'arrive pas à dormir !' Dain inhabituellement calme. Une atmosphère nocturne douce."
+        "text": "*Appel nocturne avec Dain. Au lieu de son energie habituelle, sa voix calme est une decouverte.*",
+        "context": "Appel nocturne. Dain a appele en disant 'en pensant a demain, j'arrive pas a dormir'. Dain inhabituellement calme.",
+        "personality": "Dain est du genre petit chiot, adore le contact physique et a un esprit de competition feroce. Reine des points d'exclamation. Tsundere. Joyeuse en surface, mais fragile au fond."
     },
     "day3_night_phone_nurse": {
-        "name": "Infirmière Scolaire",
-        "text": "*Je décroche et j'entends la voix de l'infirmière* \"...{name} ? Encore debout ? Moi non plus, je n'arrivais pas à dormir.\""
+        "name": "Infirmiere",
+        "text": "*Je decroche, c'est la voix de l'Infirmiere* \"...{name} ? Pas encore couche ? Moi non plus, j'arrive pas a dormir.\""
     },
     "day3_night_phone_nurse_freetalk": {
         "name": "Moi",
-        "text": "*Un appel nocturne avec l'infirmière scolaire. Sa voix grave parvient à mon oreille.*",
-        "context": "Appel nocturne. L'infirmière scolaire a appelé en disant 'Je n'arrivais pas à dormir.' Sa voix grave et douce. L'appel nocturne d'un amour interdit."
+        "text": "*Appel nocturne avec l'Infirmiere. Sa voix basse effleure mon oreille.*",
+        "context": "Appel nocturne. L'Infirmiere a appele en disant 'j'arrive pas a dormir'. Sa voix basse et douce.",
+        "personality": "L'Infirmiere est joueuse, seductrice et mature. Elle est tiraillee entre ses sentiments pour l'eleve et son ethique professionnelle."
     },
     "day3_night_phone_teacher": {
-        "name": "Professeur Principal",
-        "text": "*Je décroche et j'entends la voix du professeur* \"...{name} ? Encore debout ? Je sais qu'il est l'heure de dormir, mais...\""
+        "name": "Professeure",
+        "text": "*Je decroche, c'est la voix de la Professeure* \"...{name} ? Pas encore couche ? Je sais que c'est l'heure de dormir, mais...\""
     },
     "day3_night_phone_teacher_freetalk": {
         "name": "Moi",
-        "text": "*Un appel nocturne avec le professeur principal. Sa voix douce semble toute proche.*",
-        "context": "Appel nocturne. Le professeur principal a appelé en disant 'Je sais qu'il est l'heure de dormir, mais...' Sa voix douce. L'appel nocturne d'un amour interdit."
+        "text": "*Appel nocturne avec la Professeure. Sa voix calme resonne tout pres.*",
+        "context": "Appel nocturne. La Professeure a appele en disant 'je sais que c'est l'heure de dormir, mais...' Sa voix calme.",
+        "personality": "La Professeure a un humour pince-sans-rire. En apparence distante, mais le contraste avec ses sentiments naissants pour l'eleve cree un charme gap moe."
     },
     "day3_night_phone_end": {
         "name": "Moi",
-        "text": "*Je raccroche et pose mon téléphone. L'écho persistant de sa voix... fait battre mon cœur.*"
+        "text": "*Je raccroche et pose le telephone. L'echo de sa voix resonne encore dans mon coeur.*"
     },
     "day3_night_sleep_2": {
         "name": "Moi",
-        "text": "*Mes yeux se ferment. Demain, c'est samedi... Quelle journée ce sera.*"
+        "text": "*Mes yeux se ferment. Demain c'est samedi... Quelle journee ce sera.*"
     },
     "day3_night_sleep_final": {
         "name": "Moi",
-        "text": "*Plusieurs rendez-vous tourbillonnent dans ma tête. Est-ce que je peux satisfaire tout le monde... ?*"
+        "text": "*Les multiples rendez-vous tourbillonnent dans ma tete. Est-ce que je pourrai satisfaire tout le monde...*"
     },
     "day3_night_nightmare": {
         "name": "Moi",
-        "text": "*...Je rêve. Des voix résonnent dans un espace sombre.*"
+        "text": "*...Je reve. Des voix resonnent dans un espace sombre.*"
     },
     "day3_night_nightmare_voice1": {
         "name": "???",
-        "text": "*La voix de Seoyeon résonne* \"...Tu ne verras que moi, hein ? Tu as promis. On s'est fait une promesse du petit doigt...\""
+        "text": "*La voix de Seoyeon* \"...Tu avais dit que tu ne verrais que moi. Tu avais promis. On s'etait jure sur nos auriculaires...\""
     },
     "day3_night_nightmare_voice2": {
         "name": "???",
-        "text": "*La voix de Yuna murmure froidement* \"...Je t'ai dit que tu le regretterais si tu me trahissais, tu te souviens ?\""
+        "text": "*La voix de Yuna murmure froidement* \"...Je t'avais prevenu que tu le regretterais si tu me trahissais. Tu te souviens ?\""
     },
     "day3_night_nightmare_voice3": {
         "name": "???",
-        "text": "*La voix de Dain tremble* \"...Idiot ! Tu avais dit que tu viendrais ! Tu avais dit que tu ne me poserais pas un lapin...\""
+        "text": "*La voix de Dain tremble* \"...Tu avais dit que tu viendrais ! Tu avais dit que tu me poserais pas un lapin...!\""
     },
     "day3_night_nightmare_choice": {
         "name": "Moi",
-        "text": "*Des mains se tendent depuis les ténèbres. La main de qui vais-je saisir...*",
+        "text": "*Des mains emergent des tenebres. La main de qui vais-je saisir.*",
         "choices": [
             "*Prendre la main de Seoyeon*",
             "*Prendre la main de Yuna*",
             "*Prendre la main de Dain*",
-            "*Ne prendre la main de personne*"
+            "*Ne prendre aucune main*"
         ]
     },
     "day3_night_nightmare_end": {
         "name": "Moi",
-        "text": "*J'ai tendu la main, mais... il n'y avait rien à saisir. Tout le monde a disparu, ne laissant que les ténèbres et le regret.*"
+        "text": "*J'ai tendu la main mais... rien a saisir. Tout a disparu, ne laissant que les tenebres et les regrets.*"
     },
     "day3_night_nightmare_wake": {
         "name": "Moi",
-        "text": "*...Je me réveille en sursaut. Mon cœur bat comme un fou. C'était un rêve. Mais... que nous réserve demain ?*"
+        "text": "*...Mon corps est trempe de sueur. Mon coeur va exploser. C'etait un reve. Mais... qu'est-ce qui va se passer demain ?*"
     },
     "day3_night_peaceful": {
         "name": "Moi",
-        "text": "*Une nuit paisible. J'ai hâte d'être à demain.*"
+        "text": "*Une nuit paisible. J'ai hate d'etre a demain.*"
     },
     "day3_night_loyalty_seoyeon": {
         "name": "Moi",
-        "text": "*...Rien que de penser à Seoyeon, je souris. Demain, c'est notre moment à nous. Je m'assurerai de lui dire ce que je ressens vraiment.*"
+        "text": "*...Rien que penser a Seoyeon me fait sourire. Demain, c'est notre moment a nous. Je lui dirai ce que je ressens vraiment.*"
     },
     "day3_night_loyalty_yuna": {
         "name": "Moi",
-        "text": "*...Rien que de penser à Yuna, mon cœur s'emballe. Demain soir, rien que nous deux. Est-ce que je verrai enfin la vraie Yuna ?*"
+        "text": "*...Penser a Yuna fait battre mon coeur. Demain soir, cet endroit qu'elle veut me montrer. Est-ce que je verrai enfin la vraie Yuna ?*"
     },
     "day3_night_loyalty_dain": {
         "name": "Moi",
-        "text": "*...Penser au sourire de Dain me fait sourire aussi. Je me demande à quel point elle sera contente quand je viendrai la voir s'entraîner demain.*"
+        "text": "*...Le sourire de Dain me fait sourire aussi. Son match d'entrainement demain, elle va etre tellement contente que je sois la.*"
     },
     "day3_night_loyalty_nurse": {
         "name": "Moi",
-        "text": "*...Le visage de l'infirmière scolaire me revient en tête. C'est une relation interdite, mais... je ne peux pas cacher ces sentiments.*"
+        "text": "*...Le visage de l'Infirmiere me revient. Je sais que c'est interdit, mais... ce que je ressens, je peux pas le cacher.*"
     },
     "day3_night_loyalty_teacher": {
         "name": "Moi",
-        "text": "*...Le sourire du professeur principal me revient en tête. On est professeur et élève, mais... mes sentiments sont sincères.*"
+        "text": "*...Le sourire de la Professeure me revient. On est prof et eleve, mais ces sentiments sont reels.*"
     },
     "day3_final_scene": {
         "name": "Moi",
-        "text": "*La nuit de vendredi s'approfondit... Demain, c'est enfin samedi.*"
+        "text": "*La nuit de vendredi s'epaissit... Demain, c'est samedi.*"
     }
 }

@@ -1,51 +1,51 @@
 {
     "day5_ending_true": {
         "name": "Moi",
-        "text": "*Et ainsi, mon histoire d'élève transféré touche à sa fin.*"
+        "text": "*Ainsi se termine mon histoire de transfert.*"
     },
     "day5_ending_true_2": {
         "name": "Moi",
-        "text": "*Cette seule personne que j'ai rencontrée dans ma nouvelle école.*"
+        "text": "*Cette seule personne, rencontrée dans mon nouveau lycée.*"
     },
     "day5_ending_true_3": {
         "name": "Moi",
-        "text": "*Du tout premier instant de notre rencontre jusqu'à cet instant précis — mon cœur n'a jamais vacillé.*"
+        "text": "*Depuis le tout premier instant jusqu'à maintenant— mon cœur n'a jamais vacillé.*"
     },
     "day5_ending_true_4": {
         "name": "Moi",
-        "text": "*Je m'en souviens. Ce moment où nos regards se sont croisés pour la première fois dans le couloir. On aurait dit que le temps s'était arrêté.*"
+        "text": "*Je m'en souviens. La première fois que nos regards se sont croisés. On aurait dit que le temps s'arrêtait.*"
     },
     "day5_ending_true_5": {
         "name": "Moi",
-        "text": "*Je ne le savais pas à l'époque. Qu'un seul bref regard allait changer le cours de toute ma vie.*"
+        "text": "*Je ne savais pas, à l'époque. Qu'un seul bref regard allait changer le cours de ma vie.*"
     },
     "day5_ending_true_6": {
         "name": "Moi",
-        "text": "*Je ne peux pas identifier le moment exact où je suis tombé amoureux. C'est juste qu'un jour, je ne pouvais plus imaginer un lendemain sans elle.*"
+        "text": "*L'instant exact où je suis tombé amoureux, je ne saurais le dire. Juste qu'un jour, un lendemain sans cette personne est devenu inimaginable.*"
     },
     "day5_ending_true_7": {
         "name": "Moi",
-        "text": "*Comme une chaleur qui persiste encore sur mes lèvres, ce sentiment ne s'effacera jamais.*"
+        "text": "*Comme cette chaleur qui persiste encore sur mes lèvres. Ce sentiment ne s'effacera pas de sitôt.*"
     },
     "day5_ending_true_8": {
         "name": "Moi",
-        "text": "*Certains diraient que même des sentiments comme ceux-ci ont une date d'expiration.*"
+        "text": "*Certains diront que même ce genre de sentiment a une date de péremption.*"
     },
     "day5_ending_true_9": {
         "name": "Moi",
-        "text": "*Mais je connais la vérité. Ce n'est pas quelque chose qui se refroidit — c'est quelque chose qui s'enracine plus profondément.*"
+        "text": "*Mais je le sais. Ce n'est pas quelque chose qui se refroidit, c'est quelque chose qui s'imprègne.*"
     },
     "day5_ending_true_10": {
         "name": "Moi",
-        "text": "*Demain, après-demain, même dans un an, je me vois incapable d'échapper à cette personne.*"
+        "text": "*Demain, après-demain, dans un an. Je me vois toujours à côté de cette personne.*"
     },
     "day5_ending_true_11": {
         "name": "Moi",
-        "text": "*Faisons une promesse. Quelle que soit la saison, tu seras liée à moi pour toujours.*"
+        "text": "*Promettons-nous. Quelle que soit la saison, on restera l'un à côté de l'autre.*"
     },
     "day5_ending_true_12": {
         "name": "Moi",
-        "text": "*Aimer quelqu'un complètement, c'est entretenir une seule obsession au milieu de toute l'incertitude du monde.*"
+        "text": "*Aimer quelqu'un pleinement— c'est porter une seule certitude au milieu de toutes les incertitudes du monde.*"
     },
     "day5_ending_true_13": {
         "name": "Système",
@@ -53,7 +53,7 @@
     },
     "day5_ending_good": {
         "name": "Moi",
-        "text": "*Et ainsi, mon histoire d'élève transféré touche à sa fin.*"
+        "text": "*Ainsi se termine mon histoire de transfert.*"
     },
     "day5_ending_good_route": {
         "name": "Système",
@@ -61,63 +61,63 @@
     },
     "day5_ending_good_faithful_2": {
         "name": "Moi",
-        "text": "*Il m'a fallu longtemps pour trouver le courage. Mais parce que j'ai attendu, ce sentiment est certain.*"
+        "text": "*Il m'a fallu du temps pour trouver le courage. Mais justement parce que j'ai attendu, ce sentiment est une certitude.*"
     },
     "day5_ending_good_faithful_3": {
         "name": "Moi",
-        "text": "*Mon cœur était décidé depuis le début. Il a juste fallu du temps pour le mettre en mots.*"
+        "text": "*Mon cœur était décidé depuis le début. C'est juste le dire qui a pris du temps.*"
     },
     "day5_ending_good_faithful_4": {
         "name": "Moi",
-        "text": "*J'ai hésité parce que j'avais peur de la réponse. Peur du rejet, peur de gâcher ce qu'on avait.*"
+        "text": "*Si j'ai hésité, c'est parce que le rejet me terrifiait. J'avais peur que cette relation se brise.*"
     },
     "day5_ending_good_faithful_5": {
         "name": "Moi",
-        "text": "*Mais je l'ai finalement dit. Et la réponse — valait l'attente.*"
+        "text": "*Mais je l'ai finalement dit. Et la réponse— ça valait l'attente.*"
     },
     "day5_ending_good_2": {
         "name": "Moi",
-        "text": "*Mon cœur a parfois vacillé, et j'ai fait des erreurs.*"
+        "text": "*Mon cœur a balancé, j'ai fait des erreurs.*"
     },
     "day5_ending_good_3": {
         "name": "Moi",
-        "text": "*Mais au final — j'ai trouvé où appartenaient mes vrais sentiments.*"
+        "text": "*Mais au final, j'ai trouvé où mes vrais sentiments me menaient.*"
     },
     "day5_ending_good_4": {
         "name": "Moi",
-        "text": "*Avec le recul, il y a eu des moments où j'ai été négligent avec le cœur de quelqu'un d'autre.*"
+        "text": "*Avec le recul, il y a eu des moments où j'ai été inattentif au cœur de quelqu'un d'autre.*"
     },
     "day5_ending_good_5": {
         "name": "Moi",
-        "text": "*J'ai peut-être donné de l'espoir à quelqu'un pour ensuite le reprendre. J'en suis désolé.*"
+        "text": "*J'ai peut-être donné de l'espoir à quelqu'un pour finalement le reprendre. Je suis désolé.*"
     },
     "day5_ending_good_6": {
         "name": "Moi",
-        "text": "*Mais c'est grâce à ces hésitations que j'ai compris ce que sont les vrais sentiments.*"
+        "text": "*Mais c'est grâce à ces hésitations que j'ai compris ce qu'étaient les vrais sentiments.*"
     },
     "day5_ending_good_7": {
         "name": "Moi",
-        "text": "*Ce n'est pas obligé d'être parfait. Parce que c'est notre commencement.*"
+        "text": "*C'est pas obligé d'être parfait. Parce que c'est notre commencement.*"
     },
     "day5_ending_good_8": {
         "name": "Moi",
-        "text": "*Je n'étais pas perdu. C'était juste le chemin pour te faire mienne.*"
+        "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
     },
     "day5_ending_good_9": {
         "name": "Moi",
-        "text": "*S'il n'y avait pas eu d'hésitation, il n'y aurait pas cette terrible possessivité maintenant.*"
+        "text": "*Sans ces hésitations, cette certitude d'aujourd'hui n'existerait pas.*"
     },
     "day5_ending_good_10": {
         "name": "Moi",
-        "text": "*Un amour imparfait reste de l'amour. Non, il est peut-être plus parfait justement parce qu'il est brisé.*"
+        "text": "*Un amour imparfait reste de l'amour. Peut-être même que c'est justement parce qu'il est imparfait qu'il est si précieux.*"
     },
     "day5_ending_good_11": {
         "name": "Moi",
-        "text": "*Je referai des erreurs. On se disputera. Mais avec cette personne, sombrer ensemble ne serait pas si grave.*"
+        "text": "*Je referai des erreurs. On se disputera. Mais si c'est avec cette personne, ça ira.*"
     },
     "day5_ending_good_12": {
         "name": "Moi",
-        "text": "*Alors ça va. Cette obsession a mis longtemps à se former, c'est exactement pour ça qu'elle ne se défera jamais.*"
+        "text": "*Alors ça va. Justement parce que ça a pris du temps, ce sentiment ne vacillera pas facilement.*"
     },
     "day5_ending_good_13": {
         "name": "Système",
@@ -125,7 +125,7 @@
     },
     "day5_ending_mayhem": {
         "name": "Moi",
-        "text": "*Et ainsi, mon histoire d'élève transféré... est-elle vraiment terminée ?*"
+        "text": "*Ainsi, mon histoire de transfert— c'est vraiment fini ?*"
     },
     "day5_ending_mayhem_2": {
         "name": "Moi",
@@ -133,43 +133,43 @@
     },
     "day5_ending_mayhem_3": {
         "name": "Moi",
-        "text": "*...non pas que des excuses comme ça les empêcheront de me pourchasser.*"
+        "text": "*…J'ai beau trouver des excuses, ça ne m'empêchera pas d'être pourchassé.*"
     },
     "day5_ending_mayhem_4": {
         "name": "Moi",
-        "text": "*Un jour, trois bentôs sont apparus derrière la salle de classe en même temps. Ce jour-là, j'ai vraiment cru que c'en était fini de moi.*"
+        "text": "*Un jour, trois bentôs sont apparus en même temps au fond de la classe. À cet instant, j'ai sincèrement craint pour ma vie.*"
     },
     "day5_ending_mayhem_5": {
         "name": "Moi",
-        "text": "(\"C'est ta copine ?\" \"Non, c'est moi !\" \"N'importe quoi, c'est moi !\" ...Le couloir est devenu un champ de bataille ce jour-là.)"
+        "text": "*(\"T'étais avec elle hier, hein ?\" Le sourire glacial de Seoyeon, le regard perçant de Yuna, la voix grondante de Dain. Chaque jour est un jeu de survie.)*"
     },
     "day5_ending_mayhem_6": {
         "name": "Moi",
-        "text": "*J'en ai profité pour filer en douce sur le toit. Je n'avais jamais couru aussi vite de toute ma vie.*"
+        "text": "*J'en ai profité pour me réfugier sur le toit. Jamais de ma vie je n'avais couru aussi vite.*"
     },
     "day5_ending_mayhem_7": {
         "name": "Moi",
-        "text": "*...Mais quelqu'un m'attendait déjà sur le toit. Il n'y avait vraiment aucune échappatoire.*"
+        "text": "*Rien que d'imaginer le regard des autres si j'en choisissais une, j'en ai des frissons dans le dos.*"
     },
     "day5_ending_mayhem_8": {
         "name": "Moi",
-        "text": "*C'est peut-être égoïste. Vouloir chérir tout le monde. Mais il est déjà trop tard.*"
+        "text": "*C'est peut-être de la gourmandise. Vouloir chérir tout le monde. Mais il est déjà trop tard.*"
     },
     "day5_ending_mayhem_9": {
         "name": "Moi",
-        "text": "*Leur obsession m'étouffe déjà. Le moment où j'en choisirai une, je serai perdu.*"
+        "text": "*Leurs regards m'encerclent déjà. Depuis le début, il n'y avait nulle part où fuir.*"
     },
     "day5_ending_mayhem_10": {
         "name": "Moi",
-        "text": "*Honnêtement, ce quotidien infernal... c'est pas si mal. Je me demande quel chaos demain m'apportera.*"
+        "text": "*Ce quotidien-là… honnêtement, c'est pas si mal. Je me demande quel chaos m'attend demain.*"
     },
     "day5_ending_mayhem_11": {
         "name": "Moi",
-        "text": "*Ferais-je les mêmes choix si je renaissais ? ...Je ne répondrai pas. Mais ce sourire est sincère.*"
+        "text": "*Si je renaissais, est-ce que je referais le même choix ? Je ne répondrai pas. Mais ce sourire, il est sincère.*"
     },
     "day5_ending_mayhem_12": {
         "name": "Moi",
-        "text": "*Il n'y a pas de conclusion. Mais bon... ce quotidien chaotique, c'est mon histoire.*"
+        "text": "*Y'a pas de conclusion. Mais bon, ce quotidien chaotique, c'est mon histoire.*"
     },
     "day5_ending_mayhem_13": {
         "name": "Système",
@@ -177,51 +177,51 @@
     },
     "day5_ending_harem": {
         "name": "Moi",
-        "text": "*Et ainsi, mon histoire d'élève transféré — n'est pas terminée.*"
+        "text": "*Ainsi, mon histoire de transfert— n'est pas terminée.*"
     },
     "day5_ending_harem_2": {
         "name": "Moi",
-        "text": "*Plusieurs amours. Une réalité impossible s'est déployée devant mes yeux.*"
+        "text": "*Plusieurs amours. Une réalité impossible se déploie devant mes yeux.*"
     },
     "day5_ending_harem_3": {
         "name": "Moi",
-        "text": "*Chaque jour est une guerre. Des batailles éclatent quotidiennement pour savoir qui sera le mieux traitée.*"
+        "text": "*Chaque jour est une guerre. Des batailles éclatent quotidiennement pour savoir qui sera la mieux traitée.*"
     },
     "day5_ending_harem_4": {
         "name": "Moi",
-        "text": "*Lundi : qui m'accompagne à l'école. Mardi : le déjeuner de qui je mange. Mercredi : qui me raccompagne... Mon planning hebdomadaire est un cauchemar diplomatique.*"
+        "text": "*Lundi : l'ordre d'arrivée au lycée. Mardi : le déjeuner. Mercredi : le trajet retour. Mon planning hebdomadaire est un cauchemar diplomatique.*"
     },
     "day5_ending_harem_5": {
         "name": "Moi",
-        "text": "*L'une me surveille avec un sourire discret, l'autre passe son bras sous le mien avec assurance, et la dernière me tient secrètement la main par derrière.*"
+        "text": "*Elles se surveillent mutuellement, mais si elles ne peuvent pas m'avoir pour elles seules, elles préfèrent encore me partager. Ce compromis bizarre. Cet équilibre pourrait se briser à tout moment.*"
     },
     "day5_ending_harem_6": {
         "name": "Moi",
-        "text": "*Chacune de leurs charmes est si différent. C'est pour ça que je ne peux pas les comparer, et c'est pour ça que je ne peux renoncer à aucune d'elles.*"
+        "text": "*Le charme de chacune est si différent. Impossible de comparer, impossible de renoncer.*"
     },
     "day5_ending_harem_7": {
         "name": "Moi",
-        "text": "*Mais étrangement, elles sourient toutes. Comme si elles me possédaient entièrement.*"
+        "text": "*Et pourtant, elles sourient toutes. Comme si elles me possédaient entièrement.*"
     },
     "day5_ending_harem_8": {
         "name": "Moi",
-        "text": "*Appelez ça de l'avidité si vous voulez. Si je ne peux pas échapper à ce terrible cycle d'obsession.*"
+        "text": "*Appelez ça de la gourmandise si vous voulez. Si je ne peux pas m'échapper de ce cercle.*"
     },
     "day5_ending_harem_9": {
         "name": "Moi",
-        "text": "*Pas de regrets. Non, elles ne me laissent même pas le temps de regretter. Elles surveillent chacun de mes mouvements.*"
+        "text": "*Pas de regrets. Non, je n'ai même pas le temps d'en avoir. Elles me surveillent de près.*"
     },
     "day5_ending_harem_10": {
         "name": "Moi",
-        "text": "*Bien sûr, personne ne sait quand cet équilibre se brisera. Le moment où quelqu'un franchira la ligne, un bain de sang commencera.*"
+        "text": "*Le jour où cet équilibre se brisera, ce sera le bain de sang. Qui franchira la ligne en premier ?*"
     },
     "day5_ending_harem_11": {
         "name": "Moi",
-        "text": "*Mais le fait que j'apprécie même la tension — peut-être que j'ai déjà dépassé le point de non-retour.*"
+        "text": "*Un enfer sucré. Entre l'ivresse et la terreur, impossible de s'en sortir. Non— je ne veux pas m'en sortir.*"
     },
     "day5_ending_harem_12": {
         "name": "Moi",
-        "text": "*Demain je serai encore surveillé. Après-demain, elles resserreront leur emprise encore plus. Mais ces jours sanglants, je les accepte.*"
+        "text": "*Demain encore, je serai surveillé. Après-demain, l'étau se resserrera. Mais— ces jours-là, je les accepte.*"
     },
     "day5_ending_harem_13": {
         "name": "Système",
@@ -229,51 +229,51 @@
     },
     "day5_ending_friend": {
         "name": "Moi",
-        "text": "*Et ainsi, mon histoire d'élève transféré touche à sa fin.*"
+        "text": "*Ainsi se termine mon histoire de transfert.*"
     },
     "day5_ending_friend_2": {
         "name": "Moi",
-        "text": "*Je n'ai pas pu dire ce que je ressentais. Non — j'ai choisi de ne pas le dire.*"
+        "text": "*Je n'ai pas pu dire ce que je ressentais. Non— j'ai choisi de ne pas le dire.*"
     },
     "day5_ending_friend_3": {
         "name": "Moi",
-        "text": "(Les sentiments que j'ai cachés derrière le mot « ami » resurgiront peut-être certaines nuits silencieuses.)"
+        "text": "(Les sentiments cachés derrière le mot \"ami\", il est possible qu'ils remontent certaines nuits.)"
     },
     "day5_ending_friend_4": {
         "name": "Moi",
-        "text": "*Je me souviens. Ce jour-là sur le toit, la façon dont le vent balayait ses cheveux, et les doigts qui les écartaient.*"
+        "text": "*Je me souviens. Sur le toit, ses cheveux balayés par le vent, ses doigts qui les replaçaient.*"
     },
     "day5_ending_friend_5": {
         "name": "Moi",
-        "text": "(Si j'avais dit « Je t'aime bien » à ce moment-là, est-ce que ce soir serait différent ?)"
+        "text": "(Si j'avais dit \"je t'aime\" à ce moment-là, est-ce que cette nuit serait différente ?)"
     },
     "day5_ending_friend_6": {
         "name": "Moi",
-        "text": "*Les sentiments non exprimés ne disparaissent pas. Ils luisent simplement en silence, au fond du cœur.*"
+        "text": "*Les mots qu'on n'a pas prononcés ne disparaissent pas. Ils brillent en silence, au fond du cœur.*"
     },
     "day5_ending_friend_7": {
         "name": "Moi",
-        "text": "(Parfois la plus courte distance est aussi la plus longue. La distance qu'on appelle « amis ».)"
+        "text": "*La distance la plus proche est aussi la plus lointaine. Cette distance qu'on appelle \"amitié\".*"
     },
     "day5_ending_friend_8": {
         "name": "Moi",
-        "text": "*Pourtant, ce n'est pas si mal. Je peux voir son sourire juste à côté de moi. En attendant le jour où je pourrai briser ce sourire.*"
+        "text": "*C'est pas si mal, quand même. Je peux voir son sourire juste à côté de moi.*"
     },
     "day5_ending_friend_9": {
         "name": "Moi",
-        "text": "*Peut-être que ce n'est pas de la lâcheté, mais une chasse silencieuse. Rester à ses côtés tout en gardant ma proie.*"
+        "text": "*C'est peut-être de la lâcheté, ou peut-être de la prudence. Je ne voulais simplement pas perdre ce qu'on avait.*"
     },
     "day5_ending_friend_10": {
         "name": "Moi",
-        "text": "*Pourtant je ne regrette pas. Un jour, l'occasion de te faire entièrement mienne viendra.*"
+        "text": "*Je ne regrette pas. Juste, parfois, ce coucher de soleil me revient en mémoire.*"
     },
     "day5_ending_friend_11": {
         "name": "Moi",
-        "text": "*Un jour — quand viendra le moment de parler avec ce cœur, je n'hésiterai pas.*"
+        "text": "*Les mots qui ont effleuré mes lèvres avant d'être ravalés ne s'effaceront pas. Ils graveront doucement leurs anneaux en moi.*"
     },
     "day5_ending_friend_12": {
         "name": "Moi",
-        "text": "*Certaines histoires perdurent plus longtemps justement parce qu'elles restent inachevées. Cette saison sera remémorée ainsi.*"
+        "text": "*Certaines histoires restent plus longtemps justement parce qu'elles n'ont pas de fin. Cette saison sera remémorée ainsi.*"
     },
     "day5_ending_friend_13": {
         "name": "Système",
@@ -281,51 +281,51 @@
     },
     "day5_ending_alone": {
         "name": "Moi",
-        "text": "*Et ainsi, mon histoire d'élève transféré touche à sa fin.*"
+        "text": "*Ainsi se termine mon histoire de transfert.*"
     },
     "day5_ending_alone_2": {
         "name": "Moi",
-        "text": "*Personne de spécial n'est apparu. Mais le temps passé dans cette école était précieux.*"
+        "text": "*Personne de spécial n'est apparu. Mais le temps passé dans ce lycée n'a pas été vain.*"
     },
     "day5_ending_alone_3": {
         "name": "Moi",
-        "text": "*Je suis différent maintenant de celui que j'étais avant mon transfert — quand j'avais l'impression de ne rien pouvoir faire.*"
+        "text": "*Parce que je ne suis plus le même qu'avant mon transfert, quand je me sentais incapable de quoi que ce soit.*"
     },
     "day5_ending_alone_4": {
         "name": "Moi",
-        "text": "*Ce que j'ai appris dans cette école, ce n'était pas l'amour. C'était me confronter à moi-même.*"
+        "text": "*Ce que j'ai appris ici, ce n'était pas l'amour. C'était me confronter à moi-même.*"
     },
     "day5_ending_alone_5": {
         "name": "Moi",
-        "text": "*Les rires dans la salle de classe, les bavardages entre les cours, le soleil pendant le sport — toutes ces choses ordinaires comptaient.*"
+        "text": "*Les rires en classe, les bavardages entre les cours, le soleil pendant le sport. Ces choses ordinaires avaient du sens.*"
     },
     "day5_ending_alone_6": {
         "name": "Moi",
-        "text": "*La solitude n'est pas une punition. C'est du temps passé face à soi-même.*"
+        "text": "*La solitude n'est pas une punition. C'est du temps face à soi-même.*"
     },
     "day5_ending_alone_7": {
         "name": "Moi",
-        "text": "*J'ai appris qu'avant de pouvoir aimer quelqu'un d'autre, il faut d'abord se comprendre soi-même.*"
+        "text": "*J'ai appris qu'avant d'aimer quelqu'un, il faut d'abord se comprendre soi-même.*"
     },
     "day5_ending_alone_8": {
         "name": "Moi",
-        "text": "*Être seul ne veut pas dire être solitaire. Il y a des choses qu'on n'entend que quand on est seul. Leurs pas, leur souffle, les yeux qui me regardent.*"
+        "text": "*Être seul ne veut pas dire être solitaire. Il y a des choses qu'on n'entend que dans la solitude.*"
     },
     "day5_ending_alone_9": {
         "name": "Moi",
-        "text": "*Le bruit du vent, mes pas, mes propres battements de cœur. Dans ce rythme silencieux, je sombre doucement dans la folie.*"
+        "text": "*Le bruit du vent, mes pas, les battements de mon cœur. Dans ce rythme, j'apprenais doucement à me connaître.*"
     },
     "day5_ending_alone_10": {
         "name": "Moi",
-        "text": "*Même si je n'ai pu atteindre personne, ces moments ne sont jamais vains. Car je sombre assurément dans une obscurité plus profonde qu'hier.*"
+        "text": "*Même si je n'ai touché le cœur de personne, ces moments ne perdent pas leur valeur.*"
     },
     "day5_ending_alone_11": {
         "name": "Moi",
-        "text": "*Pas besoin de se presser. Je peux marcher à mon rythme, sur mon propre chemin.*"
+        "text": "*Pas besoin de se presser. À mon rythme, sur mon propre chemin.*"
     },
     "day5_ending_alone_12": {
         "name": "Moi",
-        "text": "*Marcher seul sur une route nocturne, ce n'est pas si mal. Les étoiles brillent le plus fort, après tout, grâce à l'obscurité.*"
+        "text": "*…Ce lycée, c'est pas si mal, finalement.*"
     },
     "day5_ending_alone_13": {
         "name": "Système",
@@ -339,7 +339,7 @@
         "name": "Système",
         "text": "",
         "choices": [
-            "Recommencer depuis le Début"
+            "Recommencer depuis le début"
         ]
     }
 }

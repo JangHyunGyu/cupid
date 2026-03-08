@@ -1,540 +1,540 @@
 {
     "day2_afternoon_class": {
         "name": "Me",
-        "text": "*School's finally over. The red sunset filtering through the window paints the classroom in a sentimental glow. Is it free time now...?*"
+        "text": "*The drag of afternoon classes is over. Sunset spills through the window, painting the classroom red. Free time at last.*"
     },
     "day2_afternoon_nurse_skip": {
         "name": "Me",
-        "text": "*I wake up on the infirmary bed to find the sun setting. I skipped all my classes, but waking up after a long nap next to the teacher makes my body feel light.*"
+        "text": "*I open my eyes on the nurse's office bed. The sun is setting. I slept through every class, but resting next to the nurse left my body feeling light.*"
     },
     "day2_after_school": {
         "name": "Me",
-        "text": "*The hallway feels much more familiar than yesterday. What kind of heart-pounding moments are waiting for me today? Let's go where my heart leads.*",
+        "text": "*The hallway feels far more familiar than yesterday. Let's see where my feet take me.*",
         "choices": [
-            "Go find Seoyeon to watch the sunset together.",
-            "Dive into the school's deep secrets with Yuna.",
-            "Search for Yuna, the mysterious girl who left the note.",
-            "Go help Dain practice, her sweat beads looking beautiful.",
-            "Head to the lively gym, searching for Dain's voice.",
-            "Talk more with the teacher who took care of me.",
-            "Go to the infirmary, scented with faint medicine, to see the teacher.",
-            "Head to the faculty room to see my kind homeroom teacher."
+            "Find Seoyeon. The sunset would suit her.",
+            "Go deeper into Yuna's secret.",
+            "Track down the girl behind the mystery note -- Yuna.",
+            "Help Dain with practice at the gym.",
+            "Dain's voice is coming from the gym -- head that way.",
+            "Talk more with the nurse who looked after me.",
+            "The nurse's office. Something about the medicine scent draws me in.",
+            "Head to the teachers' office to see the homeroom teacher."
         ]
     },
     "day2_after_nurse_stay": {
         "name": "Me",
-        "text": "*I headed back to the infirmary. The nurse is still sitting in her seat.*"
+        "text": "*I make my way back to the nurse's office. She's still there, right where I left her.*"
     },
     "day2_after_seoyeon": {
         "name": "Me",
-        "text": "*Student Council Room. I started helping Seoyeon organize documents. She kindly explains the work to me, a newcomer.*"
+        "text": "*Student council room. I start helping Seoyeon sort through documents. The voice guiding me through the work is surprisingly calm and gentle.*"
     },
     "day2_after_seoyeon_work": {
         "name": "Me",
-        "text": "*Lost in work with Seoyeon, the window outside is bathed in crimson sunset light. The room is filled only with our breathing and the sound of paper.*"
+        "text": "*Lost in the paperwork, I look up to find the window steeped in red sunset. The room is filled with nothing but our breathing and the rustle of pages.*"
     },
     "day2_after_seoyeon_2": {
         "name": "Seoyeon",
-        "text": "\"Phew... finished at last. {name}, thank you so much for helping this much. I wouldn't have finished this today without you.\""
+        "text": "\"Phew... done. {name}, seriously, thank you. You're surprisingly useful. ...That's a compliment, take it.\""
     },
     "day2_after_seoyeon_3": {
         "name": "Me",
-        "text": "*Seoyeon stretches with a soft smile. She looks tired, but her eyes are clearer and more beautiful than ever.*",
+        "text": "*Seoyeon stretches and lets out a small smile. She looks tired, but her eyes in the sunset glow are clearer than usual.*",
         "choices": [
-            "Seoyeon, why are you always so sincere and hardworking?",
-            "Let's rest now. I'll make sure to walk you home.",
-            "Your shoulders look tense. Here, stay still for a second."
+            "Why are you always so all-in on everything, Seoyeon?",
+            "Let's call it a day. I'll walk you home.",
+            "You're really tense. Hold still for a second."
         ]
     },
     "day2_seoyeon_why": {
         "name": "Seoyeon",
-        "text": "\"Well... it's just something that needs to be done. And I hope that if I do my best, the school might improve, even if just a little.\""
+        "text": "\"Why? ...Because someone has to. And if I give it my all, maybe at least one thing gets a little better.\""
     },
     "day2_seoyeon_home_high": {
         "name": "Seoyeon",
-        "text": "\"Really...? (Seoyeon smiles brightly and gently takes my arm) Honestly, I wanted to walk with you, {name}. The sunset is so beautiful...\""
+        "text": "\"Really...? *Seoyeon gently takes my arm.* I actually wanted to walk with you, {name}. ...Today's sunset is beautiful.\""
     },
     "day2_seoyeon_home": {
         "name": "Seoyeon",
-        "text": "\"Oh...? Walk me home? Ah... well, I'd be very grateful if you did...\""
+        "text": "\"Walk me home? ...Yeah, that'd be nice, actually.\""
     },
     "day2_seoyeon_home_low": {
         "name": "Seoyeon",
-        "text": "\"Oh.. it's okay, I can go alone. Thanks for helping today though.\""
+        "text": "\"It's fine, I can get home on my own. Thanks for helping today.\""
     },
     "day2_seoyeon_massage_high": {
         "name": "Seoyeon",
-        "text": "\"Mmm... {name}... (Seoyeon happily closes her eyes and leans into it) That feels so good... I didn't know your hands were so warm. Just a little more...\""
+        "text": "\"Mmm... *Seoyeon closes her eyes and leans into it.* That's amazing... I had no idea your hands were this warm. ...Just a little more.\""
     },
     "day2_seoyeon_massage": {
         "name": "Seoyeon",
-        "text": "\"Ah... {name}! So suddenly... (She flinches for a moment, but soon relaxes and closes her eyes) ...That feels great. Thank you.\""
+        "text": "\"Ah...! Out of nowhere...! *She flinches, then gradually relaxes and closes her eyes.* ...That feels good. Thanks.\""
     },
     "day2_seoyeon_massage_low": {
         "name": "Seoyeon",
-        "text": "*Seoyeon quickly pulls away, looking uncomfortable* \"What was that...? It's a bit uncomfortable.\""
+        "text": "*Seoyeon pulls away sharply.* \"What are you doing? That's uncomfortable.\""
     },
     "day2_seoyeon_night_talk": {
         "name": "Seoyeon",
-        "text": "\"{name}... thank you so much for today. When I'm with you, all my tired thoughts vanish. Should we... have lunch together tomorrow too?\""
+        "text": "\"{name}... thanks for today. Being around you makes me forget everything that's weighing me down. Want to grab lunch together again tomorrow?\""
     },
     "day2_seoyeon_dain_encounter": {
         "name": "Me",
-        "text": "*As we leave the student council room together, we bump into someone in the corridor.*"
+        "text": "*Leaving the student council room with Seoyeon, we run into someone in the hallway.*"
     },
     "day2_seoyeon_dain_met": {
         "name": "Dain",
-        "text": "\"Oh? You're the one from the snack bar earlier! {name}! Wow, hanging out with the student council president?\""
+        "text": "\"Oh?! The one from the snack bar earlier!! {name}!! Wow, hanging out with the student council president?!\""
     },
     "day2_seoyeon_dain_new": {
         "name": "???",
-        "text": "\"Huh? Are you the transfer student? Whoa, already friends with the council president?\""
+        "text": "\"Huh?! You're the transfer student, right?! Whoa, already tight with the council president?!\""
     },
     "day2_seoyeon_dain_react": {
         "name": "Seoyeon",
-        "text": "\"(Seoyeon looks slightly flustered) ...Dain, right? Hi. We just finished work, so we were heading out.\""
+        "text": "\"*Seoyeon looks slightly caught off guard.* ...Dain? Hi. We just finished up and were heading out.\""
     },
     "day2_seoyeon_dain_choice": {
         "name": "Dain",
-        "text": "\"Oh, really? I just finished practice! {name}, hang out with me next time too!\"",
+        "text": "\"Oh, really?! I just wrapped up practice! {name}, hang out with me next time too~!!\"",
         "choices": [
-            "Sure, definitely!",
-            "I have plans with Seoyeon today, so...",
-            "*Smile vaguely* It'd be nice to hang out with both of you."
+            "Yeah, for sure!",
+            "I'm with Seoyeon today, so...",
+            "*Grinning* Would be great to hang out with both of you."
         ]
     },
     "day2_seoyeon_dain_yes": {
         "name": "Dain",
-        "text": "\"It's a promise! See you tomorrow, {name}!\""
+        "text": "\"It's a promise!! See you tomorrow, {name}!!\""
     },
     "day2_seoyeon_dain_no": {
         "name": "Dain",
-        "text": "\"Aww, that's disappointing. But promise me next time!\""
+        "text": "\"Aww~ bummer!! You'd better make it up to me next time!\""
     },
     "day2_seoyeon_dain_both": {
         "name": "Me",
-        "text": "*Both Seoyeon's and Dain's expressions freeze at the same time. Did I say something wrong...?*"
+        "text": "*Seoyeon's and Dain's expressions freeze at the exact same time. Did I just step on another mine...*"
     },
     "day2_seoyeon_dain_both_2": {
         "name": "Dain",
-        "text": "\"...What? Both of us? What's that supposed to mean?\""
+        "text": "\"...What? Both of us?! What's that supposed to mean?!\""
     },
     "day2_seoyeon_dain_both_3": {
         "name": "Seoyeon",
-        "text": "\"(Seoyeon smiles coldly) Heh... {name} sure is popular, huh? The type who says yes to everyone, I guess.\""
+        "text": "\"*Seoyeon smiles coolly.* {name} sure is popular. The type who tells everyone what they want to hear, I guess.\""
     },
     "day2_seoyeon_dain_both_4": {
         "name": "Dain",
-        "text": "\"Oh come on, Miss President. But she's got a point though? {name}, you might end up losing both of us like that.\""
+        "text": "\"Geez, the president's sharp! But honestly? She's got a point!! {name}, keep that up and you'll lose both of us?!\""
     },
     "day2_seoyeon_dain_both_5": {
         "name": "Me",
-        "text": "*The two of them exchange glances while staring at me. The atmosphere just got really awkward...*"
+        "text": "*Both of them are eyeing each other, then me. The atmosphere just got real frosty...*"
     },
     "day2_seoyeon_dain_end": {
         "name": "Me",
-        "text": "*Dain waves and walks away. Seoyeon's expression seems slightly stiff for some reason.*"
+        "text": "*Dain waves and heads off. Seoyeon's expression seems oddly stiff.*"
     },
     "day2_seoyeon_contact_ask": {
         "name": "Seoyeon",
-        "text": "\"Oh, right! I haven't asked for your contact info yet. I have a feeling I'll keep wanting to talk to you... Can I have your number?\"",
+        "text": "\"Oh wait. I never got your number, did I? I have a feeling I'll keep wanting to talk to you... Mind sharing it?\"",
         "choices": [
-            "Sure, contact me anytime. Here's my number.",
-            "Sorry, I'll give it to you when we're a bit closer."
+            "Sure, text me anytime. Here's my number.",
+            "Sorry, maybe once we're a bit closer."
         ]
     },
     "day2_seoyeon_contact_success": {
         "name": "Seoyeon",
-        "text": "\"Thank you! I'll definitely message you later. Get home safe!\""
+        "text": "\"Thanks. Then I'm actually going to text you, okay? Brace yourself. Get home safe, {name}.\""
     },
     "day2_seoyeon_contact_fail": {
         "name": "Seoyeon",
-        "text": "\"Oh... right! I asked too suddenly, didn't I? Sorry. See you at school tomorrow!\""
+        "text": "\"...Right, got it. I was being too forward. Sorry. See you at school tomorrow.\""
     },
     "day2_after_yuna": {
         "name": "Me",
-        "text": "*Library Annex. As I enter the old building, a cool draft of air surrounds me.*"
+        "text": "*The library annex. Stepping into the old building, cool air wraps around me.*"
     },
     "day2_after_yuna_met": {
         "name": "Yuna",
-        "text": "\"You're here. Come, follow me. I have something to show you.\""
+        "text": "\"...You came. Follow me. There's something I want to show you.\""
     },
     "day2_after_yuna_new": {
         "name": "???",
-        "text": "\"You... you came because you're curious about me, right? This school hides a very deep secret.\""
+        "text": "\"You... came here because you're curious about me, right? This school has a very deep secret.\""
     },
     "day2_after_yuna_new_name_ask": {
         "name": "Yuna",
-        "text": "\"I'm Yuna. What's your name?\""
+        "text": "\"I'm Yuna. You?\""
     },
     "day2_after_yuna_new_name_share": {
         "name": "Me",
-        "text": "\"My name is {name}.\""
+        "text": "\"I'm {name}.\""
     },
     "day2_after_yuna_new_follow": {
         "name": "Yuna",
-        "text": "\"{name}... I'll remember that. Come, follow me. I have something to show only you.\""
+        "text": "\"{name}... I'll remember that. Follow me. This is for your eyes only.\""
     },
     "day2_after_yuna_follow_again": {
         "name": "Me",
-        "text": "*I follow Yuna back down to the basement warehouse. The air feels even colder than before. The sunset glow fades as we descend into the shadows.*"
+        "text": "*I follow Yuna back down to the underground storage. The air is even colder than before. Faint sunset light barely reaches through the window.*"
     },
     "day2_after_yuna_follow_new": {
         "name": "Me",
-        "text": "*I follow Yuna down to a dusty warehouse in the basement. A strange chill hangs in the air. The sunset light barely reaches this deep.*"
+        "text": "*I follow Yuna down to the underground storage. Dust-covered space with a strange chill hanging in the air. Sunset light barely seeps through the window.*"
     },
     "day2_after_yuna_3_pre_again": {
         "name": "Yuna",
-        "text": "\"Those symbols we saw earlier... what do you think now? Don't they look even more eerie in this dim light?\""
+        "text": "\"Those patterns from earlier... don't they look even more unsettling in the sunset?\""
     },
     "day2_after_yuna_3_pre_new": {
         "name": "Yuna",
-        "text": "\"Look, {name}. These patterns on the wall... they match the secrets of this school I've been tracking.\""
+        "text": "\"Look, {name}. These patterns carved into the wall... they match what I've been tracking.\""
     },
     "day2_after_yuna_3": {
         "name": "Me",
-        "text": "*Yuna points to a crack in the wall. A strange, eye-like symbol is drawn there in reddish ink.*",
+        "text": "*Yuna points to a gap in the wall. A strange eye-like shape is carved there in red.*",
         "choices": [
             "What does this even mean?",
-            "*Taking Yuna's hand* It's scary, let's get out of here.",
+            "*Taking Yuna's hand* It's creepy -- let's get out of here.",
             "This eye... it feels like it's watching us."
         ]
     },
     "day2_yuna_meaning": {
         "name": "Yuna",
-        "text": "\"Surveillance... or protection. I still don't know who it's for.\""
+        "text": "\"Surveillance... or protection. Who it's for -- I still don't know.\""
     },
     "day2_yuna_scary_high": {
         "name": "Yuna",
-        "text": "*Yuna holds my hand tightly and smiles softly.* \"...Your hand is warm. It's been a long time since I felt such warmth. Okay, let's go. But... don't let go of my hand.\""
+        "text": "*Yuna grips my hand tightly.* \"...Your hand is warm. It's been so long since I felt warmth like this. Let's go. But... don't let go of my hand.\""
     },
     "day2_yuna_scary": {
         "name": "Yuna",
-        "text": "\"...Your hand is warm. Okay. Let's head back for today.\""
+        "text": "\"...Warm. Okay. That's enough for today.\""
     },
     "day2_yuna_scary_low": {
         "name": "Yuna",
-        "text": "*Yuna coldly pulls her hand away.* \"...Why are you grabbing my hand? Scared? You're quite bold for a coward. Leave alone if you want.\""
+        "text": "*Yuna shakes off my hand.* \"Why are you grabbing me. Bold move for a scaredy-cat. If you want to leave, leave on your own.\""
     },
     "day2_yuna_eye": {
         "name": "Yuna",
-        "text": "\"Correct. This school might be a giant prison or a laboratory. And we're being tested within it.\""
+        "text": "\"...Same light. This school might be a prison, or a lab. And we're being tested inside it.\""
     },
     "day2_yuna_night_talk": {
         "name": "Yuna",
-        "text": "\"This isn't just graffiti. It's tied to the very purpose of this school. {name}, you've chosen a path with no turning back.\""
+        "text": "\"This isn't just graffiti. It's connected to the founding purpose of this school. {name}, you've already chosen a path you can't turn back from.\""
     },
     "day2_yuna_nurse_encounter": {
         "name": "Me",
-        "text": "*As we leave the warehouse with Yuna, we bump into someone in the corridor.*"
+        "text": "*Leaving the storage with Yuna, we run into someone in the hallway.*"
     },
     "day2_yuna_nurse_met": {
-        "name": "School Nurse",
-        "text": "\"Oh my, {name}? What are you doing here at this hour? ...And who is this student?\""
+        "name": "Nurse",
+        "text": "\"Oh my, {name}? What are you doing here at this hour? ...And who's this student?\""
     },
     "day2_yuna_nurse_new": {
         "name": "???",
-        "text": "\"Hmm? Students at this hour, here? This old warehouse is dangerous... Oh, I'm the school nurse.\""
+        "text": "\"Hmm? Students down here at this hour? This old storage room is dangerous... Oh, I'm the school nurse.\""
     },
     "day2_yuna_nurse_react": {
         "name": "Yuna",
-        "text": "\"(Yuna speaks coldly) ...We were just passing by. Don't mind us.\""
+        "text": "\"*Yuna says flatly.* ...Just passing through.\""
     },
     "day2_yuna_nurse_choice": {
-        "name": "School Nurse",
-        "text": "\"(The nurse looks at Yuna suspiciously) ...Is that so? Hehe, be careful. Dangerous things hide in dark places.\"",
+        "name": "Nurse",
+        "text": "\"*She gives Yuna a loaded look.* ...Is that so? Be careful. Dangerous things hide in dark places.\"",
         "choices": [
-            "*Hold Yuna's hand* Yes, we'll be careful.",
-            "Ma'am, we were just taking a walk.",
-            "*Just bow silently*"
+            "*Take Yuna's hand* We will, thanks.",
+            "We were just taking a walk, that's all.",
+            "*Just nod silently.*"
         ]
     },
     "day2_yuna_nurse_protect": {
         "name": "Yuna",
-        "text": "\"(Yuna squeezes my hand slightly) ...Thanks.\""
+        "text": "\"*Yuna squeezes my hand gently.* ...Thanks.\""
     },
     "day2_yuna_nurse_excuse": {
-        "name": "School Nurse",
-        "text": "\"Is that so? Hehe, try walking somewhere brighter next time. I worry, you know.\""
+        "name": "Nurse",
+        "text": "\"Is that so? Try picking a brighter path next time.\""
     },
     "day2_yuna_nurse_silent": {
-        "name": "School Nurse",
-        "text": "\"(The nurse watches us with a suspicious look, then walks away)\""
+        "name": "Nurse",
+        "text": "\"*She watches us with a meaningful look, then walks on.*\""
     },
     "day2_yuna_nurse_end": {
         "name": "Yuna",
-        "text": "\"...That person feels strange. She's not just a normal school nurse. {name}, be careful.\""
+        "text": "\"...That person is off. She's not just a normal school nurse. {name}, be careful.\""
     },
     "day2_yuna_contact_ask": {
         "name": "Yuna",
-        "text": "\"If we're sharing secrets... we need a way to reach each other. Leave your number here.\"",
+        "text": "\"To share secrets... we need a way to reach each other. Leave your number here.\"",
         "choices": [
-            "Sure. I want to know everything about you.",
-            "Sorry, I'm still a bit cautious."
+            "Sure. I want to know more about you.",
+            "Sorry, I'm still being cautious."
         ]
     },
     "day2_yuna_contact_success": {
         "name": "Yuna",
-        "text": "\"...Done. Now we're connected. When I call... you must come, no matter what.\""
+        "text": "\"...Done. We're connected now. When I call, come.\""
     },
     "day2_yuna_contact_fail": {
         "name": "Yuna",
-        "text": "\"...Fine. I won't force you. But remember, opportunities are rare.\""
+        "text": "\"...Fine. I won't force you. Just remember -- chances like this don't come often.\""
     },
     "day2_after_dain": {
         "name": "Me",
-        "text": "*Opening the gym door, the energetic shouts and the sound of volleyballs bouncing greet me.*"
+        "text": "*I push open the gym doors. Battle cries and the thwack of volleyballs come pouring out.*"
     },
     "day2_after_dain_met": {
         "name": "Dain",
-        "text": "\"Oh! {name}! Perfect timing. Can you help me with practice?\""
+        "text": "\"Oh!! {name}!! Perfect timing!! Help me with practice!! Please!!\""
     },
     "day2_after_dain_practice": {
         "name": "Me",
-        "text": "*Helping Dain with her spikes, I'm soon drenched in sweat. Outside, it has already turned dark.*"
+        "text": "*After helping Dain drill spikes, I'm soaked in sweat. Outside, it's already getting dark.*"
     },
     "day2_after_dain_new": {
         "name": "???",
-        "text": "\"Haa, haa... You're so full of energy! We're perfectly in sync for our first time!\""
+        "text": "\"Haa, haa... You've got serious energy!! We're in perfect sync for a first time!!\""
     },
     "day2_after_dain_new_name_ask": {
         "name": "???",
-        "text": "\"I'm Dain Jung from Class 2-3! What's your name?\""
+        "text": "\"I'm Dain Jung, Class 2-3!! What's your name?!\""
     },
     "day2_after_dain_new_name_share": {
         "name": "Me",
-        "text": "\"I'm {name}. I'm in Class 2-3, too.\""
+        "text": "\"I'm {name}, also Class 2-3.\""
     },
     "day2_after_dain_3": {
         "name": "Me",
         "text": "*Dain wipes her sweat with a towel and hands me a cold drink.*",
         "choices": [
-            "It's because you gave me such great tosses.",
-            "Should we have a real match sometime?",
-            "Tteokbokki after exercise is the best, right?"
+            "Your tosses were great -- I was just hitting them.",
+            "Actually? Let's not hold back. Next time, a real match.",
+            "Tteokbokki after a workout is peak happiness, right?!"
         ]
     },
     "day2_dain_praise": {
         "name": "Dain",
-        "text": "\"Aww, don't be so modest! Anyway, thanks to you, I got some great practice in. Thanks!\""
+        "text": "\"Oh come on, don't be modest!! You've got real skills! Anyway, thanks to you, practice was amazing today!! Thanks!!\""
     },
     "day2_dain_match": {
         "name": "Dain",
-        "text": "\"Oh? Confident? Fine, let's make a bet! Loser buys Tteokbokki!\""
+        "text": "\"Oh?! Feeling confident?! Alright, let's bet on it!! Loser buys tteokbokki!! I'm NOT losing!!\""
     },
     "day2_dain_food": {
         "name": "Dain",
-        "text": "\"Whoa! You really get it! Tteokbokki with fried sides... man, just thinking about it makes me happy!\""
+        "text": "\"RIGHT?! You get it!! Tteokbokki with fried stuff on the side... man, just thinking about it makes me happy!!\""
     },
     "day2_dain_night_talk": {
         "name": "Dain",
-        "text": "\"Wow! You're really passionate about this. I almost want to recruit you for the team! Great job today, {name}! Get home safe!\""
+        "text": "\"Wow!! You're seriously fired up!! I almost want to recruit you for the team!! Get home safe, {name}!!\""
     },
     "day2_dain_yuna_encounter": {
         "name": "Me",
-        "text": "*Just then, I notice someone passing by the gym window. A pale-skinned girl walks quietly down the corridor.*"
+        "text": "*Just then, I notice someone passing by the gym window. A pale-skinned girl walking quietly down the corridor.*"
     },
     "day2_dain_yuna_spot": {
         "name": "Dain",
-        "text": "\"(Dain looks out the window and shivers slightly) That girl... isn't she kind of creepy? She's always wandering around alone like that...\""
+        "text": "\"*Dain looks out the window and shrinks a little.* Th-that girl... doesn't she give you the creeps?! She's always wandering around alone like that...!!\""
     },
     "day2_dain_yuna_choice": {
         "name": "Me",
-        "text": "*Dain seems uneasy looking at Yuna.*",
+        "text": "*Dain seems uneasy watching Yuna.*",
         "choices": [
-            "Yuna? She's just quiet, that's all.",
-            "Dunno, first time seeing her.",
-            "You're way brighter and better, Dain!"
+            "Yuna? She's just the quiet type. Don't worry.",
+            "No idea, first time seeing her.",
+            "Dain, you're way brighter and better."
         ]
     },
     "day2_dain_yuna_know": {
         "name": "Dain",
-        "text": "\"Huh? You know her? Wow, {name}, you're friends with everyone. But I'm your best friend, right? Right?\""
+        "text": "\"Huh?! You know her?! Wow, {name}, you're friends with everyone! But I'm your BEST friend, right?! RIGHT?!\""
     },
     "day2_dain_yuna_unknown": {
         "name": "Dain",
-        "text": "\"Right? She has this different vibe... Anyway, when you're with me, focus only on me!\""
+        "text": "\"Right?! Something's just different about her vibe... Anyway, when you're with me, don't think about stuff like that!! Eyes on me!!\""
     },
     "day2_dain_yuna_compliment": {
         "name": "Dain",
-        "text": "\"H-hey, what's with that all of a sudden?! (Dain blushes and playfully hits my shoulder) But thanks! {name}'s the best!\""
+        "text": "\"Wha-- where did THAT come from~!! *Her face goes red and she punches my shoulder.* My heart almost exploded!! ...Because of the compliment!! No other reason!!\""
     },
     "day2_dain_yuna_end": {
         "name": "Me",
-        "text": "*Yuna disappears into the distance. Dain still seems bothered but quickly returns to her bright expression.*"
+        "text": "*Yuna disappears into the distance. Dain still seems bothered, but snaps back to her bright self soon enough.*"
     },
     "day2_dain_contact_ask": {
         "name": "Dain",
-        "text": "\"Hey, {name}! If we're going on food tours, we'll need each other's numbers, right? Punch it in!\"",
+        "text": "\"{name}!! We're gonna keep hanging out, right?! Contact info is a must!! Punch in your number!!\"",
         "choices": [
-            "Sure! It'll be fun to explore food places with you.",
-            "Hmm.. maybe next time."
+            "Yeah, obviously! Here's my number.",
+            "We'll see each other at school tomorrow anyway."
         ]
     },
     "day2_dain_contact_success": {
         "name": "Dain",
-        "text": "\"Contact saved! I'll message you as soon as I find a tasty spot, so be ready!\""
+        "text": "\"Saved!! I'm texting you the second I get bored, so be ready!!\""
     },
     "day2_dain_contact_fail": {
         "name": "Dain",
-        "text": "\"What? Playing coy? Fine, fine. I'll work harder until I get your number!\""
+        "text": "\"Wow, playing hard to get?! Fine!! Come to the gym tomorrow -- I'm not letting you leave until you hand it over!!\""
     },
     "day2_after_nurse": {
         "name": "Me",
-        "text": "*Opening the infirmary door, I see the teacher reading under the gentle scent of herbs.*"
+        "text": "*I open the nurse's office door. A soft herbal scent and the sight of her reading a book greet me.*"
     },
     "day2_after_nurse_met": {
-        "name": "School Nurse",
-        "text": "\"Oh, {name}. Back again? What's the trouble today? Or... did you just come to see me?\""
+        "name": "Nurse",
+        "text": "\"Oh, {name}. Back again? Are you actually sick, or did you just want to see my face?\""
     },
     "day2_after_nurse_met_high": {
-        "name": "School Nurse",
-        "text": "*The teacher looks at me and smiles softly.* \"Hehe, {name}. Seeing you so often makes me start to look forward to it. Come on in.\""
+        "name": "Nurse",
+        "text": "*She smiles softly.* \"{name}. You come so often, I'm starting to look forward to it. Come on in.\""
     },
     "day2_after_nurse_met_check": {
-        "name": "School Nurse",
-        "text": "\"Oh, {name}. An infirmary visit after school... is something wrong?\""
+        "name": "Nurse",
+        "text": "\"Oh, {name}. The nurse's office after school... something wrong?\""
     },
     "day2_after_nurse_met_low": {
-        "name": "School Nurse",
-        "text": "*The teacher looks at me uncertainly.* \"...It's {name}, right? Are you feeling unwell?\""
+        "name": "Nurse",
+        "text": "*She says flatly.* \"...{name}, you're here again? What is it.\""
     },
     "day2_after_nurse_invited": {
-        "name": "School Nurse",
-        "text": "\"Hehe, {name}. You haven't forgotten our plan to meet at my place this evening, have you? If you're here because you missed me already, I'm truly touched.\""
+        "name": "Nurse",
+        "text": "\"{name}. You haven't forgotten about tonight's plans, have you? If you rushed here because you couldn't wait... I'm genuinely touched.\""
     },
     "day2_after_nurse_new": {
-        "name": "School Nurse",
-        "text": "\"Oh, a new face? Are you the transfer student? I'm the school nurse.\""
+        "name": "Nurse",
+        "text": "\"Oh my, a new face. Transfer student? I'm the school nurse. Nice to meet you.\""
     },
     "day2_after_nurse_new_name_ask": {
-        "name": "School Nurse",
-        "text": "\"By the way, what's your name? Won't you tell me? Just between us.\""
+        "name": "Nurse",
+        "text": "\"What's your name? Tell just me?\""
     },
     "day2_after_nurse_new_name_share": {
         "name": "Me",
-        "text": "\"My name is {name}.\""
+        "text": "\"I'm {name}.\""
     },
     "day2_after_nurse_3": {
         "name": "Me",
-        "text": "*The teacher adjusts her glasses and stares at me intently.*",
+        "text": "*She adjusts her glasses and studies me closely.*",
         "choices": [
             "I came because I missed you.",
-            "I just wanted some quiet rest.",
-            "I love the scent of this room."
+            "Just wanted some quiet time.",
+            "This room smells incredible."
         ]
     },
     "day2_nurse_miss": {
-        "name": "School Nurse",
-        "text": "\"Hehe, I like how honest you are. I should give such an honest transfer student a reward, shouldn't I?\""
+        "name": "Nurse",
+        "text": "\"Honesty like that deserves a reward, doesn't it?\""
     },
     "day2_nurse_miss_normal": {
-        "name": "School Nurse",
-        "text": "\"Hehe, honesty is good... but saying things like that to a teacher can be misunderstood, {name}. Still, you are quite cute.\""
+        "name": "Nurse",
+        "text": "\"Honesty is nice... but saying things like that to a teacher can get you misunderstood, {name}. Still, it is kind of cute.\""
     },
     "day2_nurse_miss_low": {
-        "name": "School Nurse",
-        "text": "*The teacher looks at me coldly over her glasses.* \"...I don't think we're quite on such terms yet? Student, keep your jokes appropriate. Just rest here for today.\""
+        "name": "Nurse",
+        "text": "*She looks at me coolly over her glasses.* \"...We're not quite on those terms yet, are we? Keep the jokes appropriate. Just rest here for today.\""
     },
     "day2_nurse_rest": {
-        "name": "School Nurse",
-        "text": "\"Is that so? Then go ahead and lie down on that bed. I won't disturb you.\""
+        "name": "Nurse",
+        "text": "\"Fair enough. Go lie down on that bed. I won't bother you.\""
     },
     "day2_nurse_aroma": {
-        "name": "School Nurse",
-        "text": "\"Oh, you have sharp senses. This is an aroma oil I blended myself. It's meant to put the mind at ease.\""
+        "name": "Nurse",
+        "text": "\"Oh, good nose. I blended that aroma oil myself. It's meant to calm the mind.\""
     },
     "day2_nurse_night_talk": {
-        "name": "School Nurse",
-        "text": "*The teacher smiles softly and strokes my hair.* \"Hehe, you came because you wanted more time with me, didn't you? Fine, I'll stay with you a bit longer today, just for you.\""
+        "name": "Nurse",
+        "text": "*She smiles gently and strokes my hair.* \"You came because you wanted more time with me, didn't you? Fine, I'll stay with you a little longer today. Special treatment.\""
     },
     "day2_nurse_night_talk_2": {
         "name": "Me",
-        "text": "*Chatting with the teacher in the infirmary, the sunset has deepened into dusk. Regretfully, I leave the school, promising to see her again.*"
+        "text": "*Chatting with the nurse, the sky outside went from sunset to dark. Reluctantly, I left the school with a promise for next time.*"
     },
     "day2_nurse_contact_already_have_talk": {
-        "name": "School Nurse",
-        "text": "\"{name}, we've already exchanged numbers, haven't we? You must contact me if you're bored this evening. I'll be waiting.\"",
+        "name": "Nurse",
+        "text": "\"{name}, we already have each other's numbers, right? If you've got free time tonight, text me. I'll be waiting.\"",
         "choices": [
-            "Yes, I will.",
-            "Instead of my number... can I go to your house this evening?"
+            "I will.",
+            "Forget the phone... can I come to your place tonight?"
         ]
     },
     "nurse_contact_home_success_after": {
-        "name": "School Nurse",
-        "text": "*The teacher's eyes widen, then she whispers in my ear with a seductive smile.* \"Oh... {name}, you're much bolder than I thought. Fine, want to come to my house this evening? I'll send you the address. But... it's a secret from your parents, okay?\""
+        "name": "Nurse",
+        "text": "*She smiles suggestively and whispers near my ear.* \"Oh my... {name}, bolder than I thought. Sure, want to come over tonight? I'll send you the address. But it's our secret, okay?\""
     },
     "nurse_contact_home_fail_after": {
-        "name": "School Nurse",
-        "text": "*The teacher bursts into laughter.* \"Oh my, {name}! You're so cute. But my house is a bit too early, isn't it? Just message me later.\""
+        "name": "Nurse",
+        "text": "*She giggles.* \"Oh my, {name}! Adorable. But my place might be a bit soon, don't you think? Just text me later.\""
     },
     "day2_nurse_contact_ask": {
-        "name": "School Nurse",
-        "text": "\"{name}, why don't you save my number just in case? Contact me anytime you're sick or need someone to talk to.\"",
+        "name": "Nurse",
+        "text": "\"{name}, why don't you save my number? If you're ever sick or need someone to talk to, reach out.\"",
         "choices": [
             "Yes, please!",
-            "It's a bit much for now."
+            "That's a bit much for now."
         ]
     },
     "day2_nurse_contact_success": {
-        "name": "School Nurse",
-        "text": "\"Hehe, good boy. Then I'll message you later. Have a good evening, {name}.\""
+        "name": "Nurse",
+        "text": "\"Good. I'll text you later, then. Have a good evening, {name}.\""
     },
     "day2_nurse_contact_fail": {
-        "name": "School Nurse",
-        "text": "\"Oh, playing hard to get? Fine. Let me know if you change your mind. Get home safe!\""
+        "name": "Nurse",
+        "text": "\"Oh, playing hard to get? Let me know if you change your mind. Get home safe!\""
     },
     "day2_after_teacher": {
         "name": "Me",
-        "text": "*Opening the faculty room door, I see the homeroom teacher working alone under a desk lamp in the empty office.*"
+        "text": "*I open the teachers' office door. In the empty room, the homeroom teacher sits alone under a desk lamp, reviewing documents.*"
     },
     "day2_after_teacher_2": {
-        "name": "Homeroom Teacher",
-        "text": "\"Oh, {name}? What brings you here at this hour? Haven't you gone home yet?\""
+        "name": "Teacher",
+        "text": "\"Oh my, {name}? What are you doing here at this hour? Haven't you gone home yet?\""
     },
     "day2_after_teacher_3": {
-        "name": "Homeroom Teacher",
-        "text": "\"I have quite a few documents to submit this week... Hehe, I'm showing you such a haggard side of me since your first week.\"",
+        "name": "Teacher",
+        "text": "\"There's a pile of paperwork due this week... Can't believe I'm showing you this haggard side of me during your first week here.\"",
         "choices": [
-            "I'll help you. We'll finish much faster together!",
-            "Hang in there! Should I make you a cup of coffee?",
-            "Teacher, don't overwork yourself. I'm worried."
+            "Let me help! We'll finish way faster together.",
+            "Hang in there! Want me to make you some coffee?",
+            "You're pushing yourself too hard. I'm worried about you."
         ]
     },
     "day2_after_teacher_work": {
         "name": "Me",
-        "text": "*I sat next to the teacher and started helping her sort the papers. Only the rhythmic sound of turning pages fills the quiet office.*"
+        "text": "*I sat down next to her and started helping sort papers. In the quiet office, only the rhythmic sound of pages turning fills the air.*"
     },
     "day2_after_teacher_work_2": {
-        "name": "Homeroom Teacher",
-        "text": "\"Thank you, {name}. You've been a huge help. I would've been here much longer if I were alone.\""
+        "name": "Teacher",
+        "text": "\"Thank you, {name}. That was a huge help. I'd still be buried in this if I were alone.\""
     },
     "day2_after_teacher_branch": {
         "name": "Me",
-        "text": "*The teacher looks at me quietly, seemingly lost in thought.*"
+        "text": "*The teacher watches me quietly, seemingly lost in thought.*"
     },
     "day2_after_teacher_special": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher suddenly leans in toward me. I can feel her warm breath and the faint scent of her perfume.*"
+        "name": "Teacher",
+        "text": "*She suddenly leans toward me. A hint of perfume and warm breath reach me.*"
     },
     "day2_after_teacher_special_2": {
-        "name": "Homeroom Teacher",
-        "text": "\"{name}, I think you're a truly special student. It's only been two days... why do I feel so comfortable, as if we've known each other for years?\""
+        "name": "Teacher",
+        "text": "\"{name}, you're a genuinely special student. It's only been two days... why does it feel like I've known you for years?\""
     },
     "day2_after_teacher_special_3": {
-        "name": "Homeroom Teacher",
-        "text": "\"As a reward for helping today... I'll drive you home. Shall we talk more in the car?\""
+        "name": "Teacher",
+        "text": "\"As a thank-you for today's help... let me drive you home. We can talk more in the car.\""
     },
     "day2_after_teacher_normal": {
-        "name": "Homeroom Teacher",
-        "text": "\"Well, it's late, so you should head home. I'll finish up and leave, too. You did a great job today!\""
+        "name": "Teacher",
+        "text": "\"Well, it's late. Head home. I'll wrap up and leave too. Good work today, {name}.\""
     },
     "day2_after_teacher_coffee": {
-        "name": "Homeroom Teacher",
-        "text": "\"Oh, coffee? Hehe, thank you for the thought. But I can't have a student prepare it for me. I'll give you a delicious candy instead!\""
+        "name": "Teacher",
+        "text": "\"Oh, coffee? The thought is sweet, but I can't have a student make it for me. Here, take a candy instead.\""
     },
     "day2_after_teacher_worry": {
-        "name": "Homeroom Teacher",
-        "text": "\"Thank you for worrying about me. I'm okay! I feel so reassured because {name} is such a kind student.\""
+        "name": "Teacher",
+        "text": "\"Thanks for worrying. I'm fine, really! Having a student as thoughtful as {name} makes me feel reassured.\""
     }
 }

@@ -1,95 +1,95 @@
 {
     "after_home": {
         "name": "Moi",
-        "text": "*Je marche dans les rues assombries. Les réverbères projettent de longues ombres sur la route.*"
+        "text": "*Je marche dans les rues sombres. Les réverbères dessinent de longues ombres sur la chaussée.*"
     },
     "after_home_walk": {
         "name": "Moi",
-        "text": "*Ce quartier commence déjà à me sembler un peu familier. Après la ruelle à côté de la supérette, c'est ma maison... et j'ai aussi remarqué ce distributeur automatique tout à l'heure.*"
+        "text": "*Ce quartier commence à me devenir familier. Après la ruelle à côté de la supérette, c'est chez moi... et ce distributeur, je l'ai déjà repéré tout à l'heure.*"
     },
     "after_home_neighborhood": {
         "name": "Moi",
-        "text": "*Un quartier résidentiel calme. L'odeur du dîner flotte depuis quelque part à proximité. C'est un quartier inconnu... alors pourquoi est-ce que je m'y sens si bien ?*"
+        "text": "*Un quartier résidentiel calme. Une odeur de dîner flotte depuis quelque part. Un coin inconnu, et pourtant bizarrement apaisant.*"
     },
     "after_home_arrive": {
         "name": "Moi",
-        "text": "*Je suis arrivé devant la porte d'entrée. Je sors la clé de ma poche et j'ouvre. On dirait que mes parents ne sont pas encore rentrés.*"
+        "text": "*Devant la maison. Je sors la clé et ouvre la porte. Mes parents ne sont pas encore rentrés, apparemment.*"
     },
     "after_home_2": {
         "name": "Moi",
-        "text": "*J'allume la lumière dans ma chambre et me laisse tomber sur le lit. Le plafond inconnu semble étrangement chaleureux ce soir... c'est peut-être juste l'humeur du moment.*"
+        "text": "*J'allume la lumière et me laisse tomber sur le lit. Ce plafond inconnu me semble étrangement réconfortant ce soir. C'est peut-être juste l'humeur du moment.*"
     },
     "after_home_settle": {
         "name": "Moi",
-        "text": "*Je me change, troquant mon uniforme pour des vêtements confortables. Je pose mon sac et range les documents reçus aujourd'hui sur le bureau.*"
+        "text": "*J'enlève mon uniforme et enfile des fringues confortables. Je pose mon sac et range les documents du jour sur le bureau.*"
     },
     "after_home_3": {
         "name": "Moi",
-        "text": "*Qu'est-ce qui m'attend demain ? Une étrange excitation me fait sentir que le sommeil ne viendra pas facilement ce soir.*"
+        "text": "*Qu'est-ce qui m'attend demain ? Cette excitation diffuse, c'est pas près de me laisser dormir.*"
     },
     "night_reflect_start": {
         "name": "Moi",
-        "text": "*Je fixe le plafond, repensant à la journée. Pour un premier jour dans un nouveau lycée... il s'est vraiment passé beaucoup de choses.*"
+        "text": "*Les yeux au plafond, je repasse la journée. Pour un premier jour... il s'en est passé, des choses.*"
     },
     "night_reflect_seoyeon": {
         "name": "Moi",
-        "text": "*Seoyeon... elle était radieuse et gentille. Elle est venue vers moi sans hésiter, alors que j'étais un parfait inconnu. On est dans la même classe, donc je la verrai souvent. J'ai hâte.*"
+        "text": "*Seoyeon... Elle joue la fille cool mais elle a un côté chaleureux inattendu. Sa tête quand elle a dit que personne lui avait jamais répondu comme ça, ça me revient sans arrêt.*"
     },
     "night_reflect_yuna": {
         "name": "Moi",
-        "text": "*Yuna... une fille avec une aura mystérieuse. Elle n'a pas beaucoup parlé, mais je n'arrête pas de penser à ces yeux. À quoi pensait-elle... ? J'ai envie d'en savoir plus sur elle.*"
+        "text": "*Yuna... Elle parlait peu, mais son regard me hante. 'Même lumière'... qu'est-ce qu'elle voulait dire par là ?*"
     },
     "night_reflect_dain": {
         "name": "Moi",
-        "text": "*Dain... tellement pleine d'énergie. Je ne pense pas que je m'ennuierais jamais avec elle. Elle était vraiment impressionnante en jouant au volleyball.*"
+        "text": "*Dain... Un concentré d'énergie. Avec elle, impossible de s'ennuyer. Et son jeu au volley, c'était franchement stylé.*"
     },
     "night_reflect_nurse": {
         "name": "Moi",
-        "text": "*L'infirmière scolaire avait... comment dire, un certain charme. J'ai un peu envie d'y retourner.*"
+        "text": "*L'infirmière... 'Mon mignon petit nouveau', hein. Bizarrement, cet endroit commence à m'occuper l'esprit.*"
     },
     "night_reflect_teacher": {
         "name": "Moi",
-        "text": "*Le professeur principal était étonnamment attentionné. Je suis content d'avoir quelqu'un comme elle comme professeur.*"
+        "text": "*La prof principale a l'air sévère en surface mais elle est bienveillante au fond. Heureusement que je suis tombé sur une prof comme elle.*"
     },
     "night_reflect_end": {
         "name": "Moi",
-        "text": "*Ce lycée n'est peut-être pas si mal finalement. Je me demande ce que demain apportera...*"
+        "text": "*Ce lycée, finalement, c'est pas mal du tout. Qu'est-ce qui m'attend demain ?*"
     },
     "night_diary_choice": {
         "name": "Moi",
-        "text": "*J'aperçois un nouveau cahier dans le tiroir du bureau. Est-ce que maman l'a glissé là comme cadeau de transfert... ?*",
+        "text": "*J'aperçois un carnet neuf dans le tiroir du bureau. Ma mère l'a glissé là pour la rentrée ?*",
         "choices": [
-            "Écrire sur ce qui s'est passé aujourd'hui.",
-            "Passer mon tour."
+            "Écrire ce qui s'est passé aujourd'hui.",
+            "Laisser tomber."
         ]
     },
     "night_diary_write_1": {
         "name": "Moi",
-        "text": "*Je prends un stylo et ouvre la première page. 'Mois X, Jour X. Premier jour au nouveau lycée. C'était mieux que ce que j'attendais.'*"
+        "text": "*Je prends un stylo et ouvre la première page. 'X mois, X jour. Premier jour au nouveau lycée. Mieux que prévu.'*"
     },
     "night_diary_write_2": {
         "name": "Moi",
-        "text": "*J'ai écrit dans le journal. Premier jour au nouveau lycée... J'ai rencontré plusieurs personnes. Je ne sais pas encore quel genre de liens cela deviendra, mais ce n'était pas une mauvaise journée.*"
+        "text": "*'J'ai rencontré des gens intéressants. Une présidente du conseil au sang-froid, une fille de lettres énigmatique, une ace de volley survoltée...'*"
     },
     "night_diary_write_3": {
         "name": "Moi",
-        "text": "*'Est-ce que je pourrai me rapprocher d'eux demain ? J'ai hâte.' ...Je pose le stylo et ferme le cahier. Écrire m'a aidé à clarifier mes pensées.*"
+        "text": "*'Est-ce que je pourrai me rapprocher d'eux demain ? Vivement.' ...Je pose le stylo et ferme le carnet. Écrire m'a un peu clarifié les idées.*"
     },
     "night_home": {
         "name": "Moi",
-        "text": "*Avant de m'endormir, je vérifie mon téléphone par habitude.*"
+        "text": "*Avant de dormir, je checke mon téléphone par réflexe.*"
     },
     "night_home_check_contact": {
         "name": "Moi",
-        "text": "*Les personnes avec qui j'ai échangé mes coordonnées aujourd'hui... à qui devrais-je envoyer un message en premier ?*",
+        "text": "*Ceux avec qui j'ai échangé mon numéro aujourd'hui... À qui j'envoie un message en premier ?*",
         "choices": [
             "Envoyer un message à Seoyeon.",
             "Envoyer un message à Yuna.",
             "Envoyer un message à Dain.",
-            "Envoyer un message à l'Infirmière Scolaire.",
-            "Envoyer un message au Professeur Principal.",
+            "Envoyer un message à l'Infirmière.",
+            "Envoyer un message à la Professeure.",
             "Vérifier les niveaux d'affinité",
-            "Arrêter d'écrire et aller dormir."
+            "Lâcher le téléphone et dormir."
         ]
     },
     "day1_check_affinity": {
@@ -98,275 +98,275 @@
     },
     "night_message_teacher": {
         "name": "Moi",
-        "text": "*J'ai envoyé un message au Professeur Principal. 'Merci de vous être occupé de moi aujourd'hui, Professeur. Je pense m'être bien adapté dès le premier jour grâce à vous !'*"
+        "text": "*J'ai envoyé un message à la prof. 'Madame, merci de m'avoir accompagné aujourd'hui. Grâce à vous, je pense avoir bien géré mon premier jour.'*"
     },
     "night_message_teacher_reply": {
-        "name": "Professeur Principal",
-        "text": "*Une réponse chaleureuse est arrivée.* 'Oh, {name} ! Ça a dû être difficile pour ton premier jour en tant que nouvel élève, et tu m'envoies même un message comme ça. Comme c'est adorable.'"
+        "name": "Professeure",
+        "text": "*Réponse rapide.* 'Oh, {name} ! Premier jour et tu m'envoies un message comme ça. C'est adorable.'"
     },
     "night_message_teacher_extra_1": {
-        "name": "Professeur Principal",
-        "text": "'Au fait, j'ai remarqué une expression sur ton visage pendant le cours aujourd'hui... tu pensais à quelque chose de drôle ? J'ai tout vu.'"
+        "name": "Professeure",
+        "text": "'Au fait, en cours aujourd'hui, ta tête... tu pensais à autre chose, non ? J'ai tout vu~'"
     },
     "night_message_teacher_extra_2": {
         "name": "Moi",
-        "text": "*Oh non... elle a remarqué ? Je tape une réponse. 'Oh, c'était... la salle de classe était tellement différente de mon ancien lycée, j'étais juste fasciné !'*"
+        "text": "*Grillé ? J'ai répondu 'C'est que... la salle de classe était tellement différente de mon ancien lycée, ça me fascinait !'*"
     },
     "night_message_teacher_extra_3": {
-        "name": "Professeur Principal",
-        "text": "'Haha, je vois. En tout cas, le vrai début c'est demain, alors prends soin de toi et repose-toi bien. À demain !'"
+        "name": "Professeure",
+        "text": "'Haha, je vois~ Le vrai début c'est demain, alors prends soin de toi et dors bien. À demain !'"
     },
     "night_message_teacher_extra_4": {
         "name": "Moi",
-        "text": "*Quelle personne chaleureuse... Je suis content d'avoir un professeur principal comme elle. Je pose mon téléphone avec un petit sourire.*"
+        "text": "*Elle a l'air sévère comme ça, mais elle veille sur les détails. Heureusement que c'est elle ma prof principale.*"
     },
     "night_message_seyoun": {
         "name": "Moi",
-        "text": "*Qu'est-ce que je devrais écrire à Seoyeon ?*"
+        "text": "*J'écris quoi à Seoyeon ?*"
     },
     "night_message_seyoun_lunch": {
         "name": "Moi",
-        "text": "*J'ai envoyé un message à Seoyeon. 'J'ai vraiment apprécié de déjeuner ensemble aujourd'hui. Merci, Seoyeon.'*"
+        "text": "*J'ai envoyé un message à Seoyeon. 'Le bentô sur le toit aujourd'hui, c'était vraiment bon. Merci, Seoyeon.'*"
     },
     "night_message_seyoun_after": {
         "name": "Moi",
-        "text": "*J'ai envoyé un message à Seoyeon. 'Je me suis bien amusé à aider pour les affaires du conseil des élèves aujourd'hui. J'espère que ce n'était pas trop fatigant pour toi ? À demain !'*"
+        "text": "*J'ai envoyé un message à Seoyeon. 'Content d'avoir pu t'aider au conseil aujourd'hui. Force pas trop. À demain.'*"
     },
     "night_message_seyoun_generic": {
         "name": "Moi",
-        "text": "*J'ai envoyé un message à Seoyeon. 'Tu as passé une bonne journée ? On se voit au lycée demain.'*"
+        "text": "*J'ai envoyé un message à Seoyeon. 'Merci d'avoir pris soin de moi le premier jour. On se voit demain au lycée.'*"
     },
     "night_message_seyoun_reply_lunch": {
         "name": "Seoyeon",
-        "text": "*Ding~ Une réponse instantanée.* 'Vraiment ? Je suis contente ! C'est moi qui devrais te remercier d'avoir apprécié le repas. Vivement demain aussi !'"
+        "text": "*Réponse instantanée.* 'T'as aimé ? Tant mieux ! Demain aussi, attends-toi à une surprise. Le menu, c'est secret.'"
     },
     "night_message_seyoun_reply_standard": {
         "name": "Seoyeon",
-        "text": "*Ding~ Une réponse instantanée.* 'Moi aussi je me suis bien amusée ! T'avoir à mes côtés m'a vraiment rassurée, {name}. On se voit au lycée demain !'"
+        "text": "*Réponse instantanée.* 'Moi aussi c'était cool. Pour un nouveau, tu t'adaptes vite. On se voit demain au lycée.'"
     },
     "night_message_seyoun_reply_high": {
         "name": "Seoyeon",
-        "text": "*Une réponse est arrivée avec un emoji cœur.* 'Tu sais... je n'arrête pas de penser au temps qu'on a passé ensemble aujourd'hui. Je ne peux pas m'en empêcher. J'ai envie de te voir, même si c'est en rêve.'"
+        "text": "*Réponse accompagnée d'un emoji cœur.* 'Tu sais... aujourd'hui c'était vraiment bien. Je refais un bentô demain ? Dis-moi ce que tu veux manger lol'"
     },
     "night_message_seyoun_reply_low": {
         "name": "Seoyeon",
-        "text": "*Une courte réponse est arrivée après un moment.* 'Oh... oui. On se voit au lycée demain.'"
+        "text": "*Réponse courte, arrivée bien plus tard.* 'OK. À demain.'"
     },
     "night_message_seyoun_followup": {
         "name": "Moi",
-        "text": "*J'ai fixé la réponse de Seoyeon pendant un long moment. J'ai envie de dire quelque chose de plus...*",
+        "text": "*J'ai fixé la réponse de Seoyeon un long moment. J'ai envie d'écrire encore un truc...*",
         "choices": [
-            "Envoyer 'Qu'est-ce que tu veux manger demain ?'",
+            "Envoyer 'Tu veux manger quoi demain ?'",
             "Envoyer 'Bonne nuit, Seoyeon.'",
             "Ne rien envoyer de plus."
         ]
     },
     "night_message_seyoun_followup_food": {
         "name": "Seoyeon",
-        "text": "*Réponse instantanée.* 'Oh, déjà inquiet pour le déjeuner de demain ? Trop mignon lol. Attends et tu verras — je préparerai peut-être un bentô surprise !'"
+        "text": "*Réponse immédiate.* 'Déjà en mode déj de demain ? T'as un petit côté mignon lol. Attends, je te prépare peut-être un bentô surprise. Dors bien.'"
     },
     "night_message_seyoun_followup_goodnight": {
         "name": "Seoyeon",
-        "text": "*Une réponse après un moment.* 'Oui... bonne nuit, {name}. Fais de beaux rêves.'"
+        "text": "*Réponse après un moment.* '...Bonne nuit, {name}. Fais de beaux rêves.'"
     },
     "night_message_seyoun_followup_end": {
         "name": "Moi",
-        "text": "*Je n'arrive pas à croire à quel point c'est naturel de parler avec Seoyeon. Se faire une amie comme ça dès le premier jour... ça me rend heureux.*"
+        "text": "*J'aurais jamais cru que discuter avec Seoyeon serait aussi naturel. Se retrouver comme ça dès le premier jour...*"
     },
     "night_message_yuna": {
         "name": "Moi",
-        "text": "*J'ai envoyé un message à Yuna. 'J'ai passé un bon moment aujourd'hui. Dors bien.'*"
+        "text": "*J'ai envoyé un message à Yuna. 'C'était bien aujourd'hui. Bonne nuit.'*"
     },
     "night_message_yuna_reply_standard": {
         "name": "Yuna",
-        "text": "*Une réponse est arrivée après un moment.* '...Oui. Toi aussi, bonne nuit. On se voit au lycée demain, {name}.'"
+        "text": "*Réponse arrivée bien plus tard.* '...Ouais. Toi aussi.'"
     },
     "night_message_yuna_reply_high": {
         "name": "Yuna",
-        "text": "*Une réponse est arrivée après un moment.* 'Aujourd'hui... oui, merci. Je crois que j'ai pu sourire un peu grâce à toi. Bonne nuit.'"
+        "text": "*Réponse arrivée bien plus tard.* 'Aujourd'hui... merci. Grâce à toi, j'ai pu sourire un peu.'"
     },
     "night_message_yuna_reply_low": {
         "name": "Yuna",
-        "text": "*Pas de réponse. Seul l'indicateur « lu » s'affiche.*"
+        "text": "*Pas de réponse. Juste le 'vu' qui s'affiche.*"
     },
     "night_message_yuna_cryptic": {
         "name": "Yuna",
-        "text": "*Un autre message est arrivé.* '...Au fait, {name}. Si tu peux voir les étoiles ce soir, regarde la troisième. Je te dirai pourquoi plus tard.'"
+        "text": "*Message supplémentaire.* '...{name}. Si tu vois des étoiles ce soir, regarde la troisième. La raison, c'est pour plus tard.'"
     },
     "night_message_yuna_cryptic_react": {
         "name": "Moi",
-        "text": "*La troisième étoile... ? Qu'est-ce qu'elle veut dire ? Yuna dit parfois des choses énigmatiques comme ça.*"
+        "text": "*La troisième étoile ? C'est quoi le délire ? C'est tellement Yuna.*"
     },
     "night_message_yuna_cryptic_choice": {
         "name": "Moi",
-        "text": "*Qu'est-ce que je devrais répondre ?*",
+        "text": "*Je réponds quoi ?*",
         "choices": [
-            "Envoyer 'Compris, je regarderai sans faute.'",
-            "Envoyer 'Pourquoi ? Qu'est-ce que ça veut dire ?'"
+            "Envoyer 'Compris, je regarderai.'",
+            "Envoyer 'Pourquoi ? Ça veut dire quoi ?'"
         ]
     },
     "night_message_yuna_cryptic_reply": {
         "name": "Moi",
-        "text": "*J'ai répondu 'Compris. Je regarderai sans faute.' ...Je jette un coup d'œil par la fenêtre, et quelques étoiles sont visibles. La troisième étoile... c'est celle-là ?*"
+        "text": "*J'ai répondu 'Compris. Je regarderai.' ...Je jette un œil par la fenêtre, quelques étoiles sont visibles. La troisième étoile... c'est celle-là ?*"
     },
     "night_message_yuna_cryptic_ask": {
         "name": "Yuna",
-        "text": "*Réponse.* '...Si je te le dis maintenant, le vœu ne se réalisera pas. Regarde, c'est tout.'"
+        "text": "*Réponse.* '...Si je te le dis maintenant, ça perd son sens. Regarde, c'est tout.'"
     },
     "night_message_yuna_cryptic_end": {
         "name": "Yuna",
-        "text": "*Une dernière réponse.* '...Tu l'as vue ? Alors ça suffit. Tu feras de beaux rêves, probablement.'"
+        "text": "*Dernier message.* '...Tu l'as vue ? Alors c'est bon. Tu feras de beaux rêves. Probablement.'"
     },
     "night_message_dain": {
         "name": "Moi",
-        "text": "*Qu'est-ce que je devrais écrire à Dain ?*"
+        "text": "*J'écris quoi à Dain ?*"
     },
     "night_message_dain_date": {
         "name": "Moi",
-        "text": "*J'ai envoyé un message à Dain. 'Le tteokbokki d'aujourd'hui était vraiment excellent ! On y retourne un de ces jours haha'*"
+        "text": "*J'ai envoyé un message à Dain. 'Le tteokbokki aujourd'hui, c'était trop bon ! On y retourne bientôt haha'*"
     },
     "night_message_dain_generic": {
         "name": "Moi",
-        "text": "*J'ai envoyé un message à Dain. 'Tu étais géniale à l'entraînement aujourd'hui ! À demain.'*"
+        "text": "*J'ai envoyé un message à Dain. 'T'étais trop stylée à l'entraînement ! À demain.'*"
     },
     "night_message_dain_reply_date": {
         "name": "Dain",
-        "text": "*Une réponse enthousiaste est arrivée instantanément.* 'Pas vrai ?! Je t'avais dit que je connais tous les meilleurs endroits ! La prochaine fois on ajoute du sundae aussi !'"
+        "text": "*Réponse instantanée.* 'Trop vrai ?! Je connais TOUS les bons plans du coin ! La prochaine fois on rajoute du sundae !!'"
     },
     "night_message_dain_reply_standard": {
         "name": "Dain",
-        "text": "*Une réponse enthousiaste est arrivée instantanément.* 'Oh, tu regardais ? C'est gênant ! Haha, je te montrerai quelque chose d'encore plus cool demain. Bonne nuit, {name} !'"
+        "text": "*Réponse instantanée.* 'Oh~ t'as vu ? La honte ! lol Demain je te montre un truc encore plus classe ! Bonne nuit, {name} !!'"
     },
     "night_message_dain_reply_high": {
         "name": "Dain",
-        "text": "*Une réponse enthousiaste est arrivée instantanément.* 'Déjà conquis par mes talents ? Héhé, je te ferai encore plus craquer demain ! Ne sois pas choqué si j'apparais dans tes rêves.'"
+        "text": "*Réponse instantanée.* 'Ooh t'as vu ?! Ma réception de service était parfaite aujourd'hui lol Demain je te montre mon smash !! Prépare-toi !!'"
     },
     "night_message_dain_selfie": {
         "name": "Dain",
-        "text": "*Une photo est arrivée. C'est un selfie d'elle faisant le signe de la victoire dans le gymnase.* 'Moi aujourd'hui ! Plutôt cool, non ? lol'"
+        "text": "*Une photo arrive. Un selfie d'elle faisant le V dans le gymnase.* 'Moi aujourd'hui ! Trop stylée, non ? lol'"
     },
     "night_message_dain_selfie_react": {
         "name": "Moi",
-        "text": "*Le selfie de Dain... son énergie irradie littéralement de la photo. Je n'ai pas pu m'empêcher de sourire.*"
+        "text": "*Le selfie de Dain... son énergie déborde littéralement de l'écran. J'ai souri malgré moi.*"
     },
     "night_message_dain_challenge": {
         "name": "Dain",
-        "text": "*Un autre message.* 'Ah, c'est vrai ! Que dirais-tu d'une course dans les escaliers derrière le lycée demain matin ? Le perdant paie les snacks ! Tu es partant ?'"
+        "text": "*Message supplémentaire.* 'Ah, j'oubliais ! Demain matin, course dans les escaliers de la colline derrière le lycée, ça te dit ?! Le perdant paie les snacks ! Défi ?!'"
     },
     "night_message_dain_challenge_choice": {
         "name": "Moi",
         "text": "*Un défi de Dain. Qu'est-ce que je fais ?*",
         "choices": [
             "Envoyer 'C'est parti, j'accepte !'",
-            "Envoyer 'Et si c'est TOI qui perds ? lol'"
+            "Envoyer 'Et si c'est toi qui perds ? lol'"
         ]
     },
     "night_message_dain_challenge_accept": {
         "name": "Dain",
-        "text": "*Réponse instantanée.* 'Ooh !! Voilà l'esprit !! Tu dois venir tôt demain, d'accord ? Si tu fais la grasse matinée, c'est forfait ! Bonne nuit, tu vas y arriver !'"
+        "text": "*Réponse instantanée.* 'Voilà l'esprit !! Faut venir tôt demain hein ?! Si tu fais la grasse mat', c'est forfait !! Bonne nuit, go go go !!!'"
     },
     "night_message_dain_challenge_tease": {
         "name": "Dain",
-        "text": "*Réponse instantanée.* 'Quoi ?! lol De grandes paroles ! D'accord, on verra bien !! Retrouve-moi au portail principal demain matin ! Bonne nuuuit !!'"
+        "text": "*Réponse instantanée.* 'Quoi ?! lol Ça fanfaronne !! OK on va voir !! Demain matin au portail !! Bonne nuiiit !!'"
     },
     "night_message_nurse": {
         "name": "Moi",
-        "text": "*J'ai envoyé un message à l'Infirmière Scolaire. 'Merci pour aujourd'hui, Madame. J'ai pu me reposer confortablement.'*"
+        "text": "*J'ai envoyé un message à l'infirmière. 'Madame, merci pour aujourd'hui. J'ai pu me reposer tranquillement.'*"
     },
     "night_message_nurse_reply_standard": {
-        "name": "Infirmière Scolaire",
-        "text": "*Une réponse charmante est arrivée.* 'Oh, tu m'as vraiment envoyé un message ? Notre nouvel élève est tellement adorable.'"
+        "name": "Infirmière",
+        "text": "*Réponse.* 'Oh, t'as vraiment envoyé un message ? Trop adorable~ Mon mignon petit nouveau~'"
     },
     "night_message_nurse_reply_high": {
-        "name": "Infirmière Scolaire",
-        "text": "*Une réponse charmante est arrivée.* 'Mon Dieu... un message comme ça le soir ? Tu essaies de m'empêcher de dormir ? Je plaisante. J'aime beaucoup ce côté doux de toi.'"
+        "name": "Infirmière",
+        "text": "*Réponse.* 'Oh~ Un message comme ça le soir, tu veux m'empêcher de dormir ? Je plaisante~ J'aime bien ce côté attentionné chez toi.'"
     },
     "night_message_nurse_extra_1": {
-        "name": "Infirmière Scolaire",
-        "text": "'Au fait, tu n'es pas épuisé de t'adapter au nouveau lycée ? Ne te pousse pas trop. Si tu as mal à la tête ou quoi que ce soit, viens directement à l'infirmerie.'"
+        "name": "Infirmière",
+        "text": "'Au fait, t'es pas crevé de t'adapter au nouveau lycée ? Faut pas forcer~ Si t'as mal au crâne, file direct à l'infirmerie.'"
     },
     "night_message_nurse_extra_2": {
         "name": "Moi",
-        "text": "*J'ai répondu 'Oui, merci ! Reposez-vous bien aussi, Madame.' ...C'est vraiment chaleureux la façon dont elle veille discrètement sur moi.*"
+        "text": "*J'ai répondu 'Oui, merci ! Reposez-vous bien aussi.' ...Ses petites attentions discrètes, ça fait du bien.*"
     },
     "night_message_nurse_extra_3": {
-        "name": "Infirmière Scolaire",
-        "text": "'Merci. Eh bien, bonne nuit, {name}. Je te souhaite de doux rêves.'"
+        "name": "Infirmière",
+        "text": "'Merci~ Bonne nuit, {name}. Je te souhaite de jolis rêves~'"
     },
     "night_message_nurse_extra_4": {
         "name": "Moi",
-        "text": "*Son « Je te souhaite de doux rêves » reste dans mon esprit. C'est une enseignante, mais... pourquoi mon cœur bat-il si vite ?*"
+        "text": "*'Je te souhaite de jolis rêves'... Cette phrase me reste en tête. C'est une prof, et pourtant... pourquoi ça me travaille autant ?*"
     },
     "night_goodnight_start": {
         "name": "Moi",
-        "text": "*Je pose mon téléphone et me redresse dans le lit. Peut-être que je vais ouvrir la fenêtre un instant avant de dormir.*"
+        "text": "*Je pose le téléphone et me redresse sur le lit. Et si j'ouvrais la fenêtre un instant avant de dormir.*"
     },
     "night_goodnight_window": {
         "name": "Moi",
-        "text": "*J'ouvre la fenêtre, et une brise fraîche de la nuit me caresse le visage. Quelques étoiles sont dispersées dans le ciel nocturne. On voit tellement mieux les étoiles ici qu'en ville.*"
+        "text": "*J'ouvre la fenêtre, une brise fraîche me caresse le visage. Quelques étoiles parsèment le ciel nocturne. On les voit bien mieux qu'en ville.*"
     },
     "night_goodnight_sounds": {
         "name": "Moi",
-        "text": "*J'entends les grillons chanter. Un sifflet de train au loin... cette nuit calme semble étrangement paisible.*"
+        "text": "*Des grillons chantent. Au loin, un train siffle faiblement. Cette nuit calme, c'est pas mal du tout.*"
     },
     "night_goodnight_think": {
         "name": "Moi",
-        "text": "*Qu'est-ce que demain apportera... J'ai hâte d'y être.*"
+        "text": "*Qu'est-ce qui m'attend encore demain ?*"
     },
     "night_goodnight_close": {
         "name": "Moi",
-        "text": "*Je ferme la fenêtre et me glisse sous les couvertures. Si je ferme les yeux... le sommeil devrait venir bientôt.*"
+        "text": "*Je ferme la fenêtre et me glisse sous la couette. Si je ferme les yeux, le sommeil devrait venir.*"
     },
     "night_surprise_check": {
         "name": "Moi",
-        "text": "*Juste au moment où je m'apprête à fermer les yeux — ding ! Mon téléphone vibre avec une notification. Qui cela peut-il être à cette heure... ?*"
+        "text": "*Au moment de fermer les yeux -- ding ! Une notif sur le téléphone. Qui ça peut être à cette heure ?*"
     },
     "night_surprise_seyoun": {
         "name": "Seoyeon",
-        "text": "*Un message de Seoyeon.* 'Je n'arrive pas à dormir alors... tu veux qu'on se retrouve au portail principal demain et qu'on aille au lycée ensemble ?'"
+        "text": "*Message de Seoyeon.* 'J'arrive pas à dormir alors... demain, on se retrouve au portail et on y va ensemble ?'"
     },
     "night_surprise_seyoun_react": {
         "name": "Moi",
-        "text": "*J'ai répondu 'Bien sûr ! On se retrouve au portail principal demain.' ...C'est Seoyeon qui m'a contacté en premier. Ça me rend vraiment heureux, bizarrement.*"
+        "text": "*J'ai répondu 'OK. Demain au portail.' Seoyeon qui m'écrit en premier... le coin de mes lèvres remonte malgré moi.*"
     },
     "night_surprise_yuna": {
         "name": "Yuna",
-        "text": "*Un message de Yuna.* '...Tu es encore réveillé ? Les étoiles sont jolies ce soir. C'est tout ce que je voulais dire.'"
+        "text": "*Message de Yuna.* '...T'es encore réveillé ? Les étoiles sont belles ce soir. C'est tout.'"
     },
     "night_surprise_yuna_react": {
         "name": "Moi",
-        "text": "*J'ai répondu 'Moi aussi, j'étais justement en train de regarder les étoiles.' ...L'idée qu'on regarde le même ciel est étrangement excitante.*"
+        "text": "*J'ai répondu 'Moi aussi je regardais les étoiles justement.' Savoir qu'on est sous le même ciel, ça fait un drôle d'effet.*"
     },
     "night_surprise_dain": {
         "name": "Dain",
-        "text": "*Un message de Dain.* 'Tu es encore debout, pas vrai ?! N'oublie pas la course de demain !! Tu devrais t'étirer avant lol. Bonne nuit !'"
+        "text": "*Message de Dain.* 'T'es encore debout, hein ?! Oublie pas le défi de demain !! Fais tes étirements !! lol Bonne nuit !!'"
     },
     "night_surprise_dain_react": {
         "name": "Moi",
-        "text": "*J'ai répondu 'Ne t'inquiète pas, je suis prêt !' L'énergie de Dain ne faiblit vraiment jamais, même la nuit.*"
+        "text": "*J'ai répondu 'T'inquiète, je suis prêt.' L'énergie de Dain, même la nuit, ça faiblit pas.*"
     },
     "night_surprise_nurse": {
-        "name": "Infirmière Scolaire",
-        "text": "*Un message de l'Infirmière Scolaire.* 'Si tu es encore debout, ce n'est pas bon. Tu veux que je te fasse une consultation sommeil à l'infirmerie demain ? Je plaisante. Bonne nuit.'"
+        "name": "Infirmière",
+        "text": "*Message de l'infirmière.* 'Si t'es encore debout, c'est pas bien~ Tu veux une consultation sommeil à l'infirmerie demain ? Je plaisante~ Bonne nuit, mon mignon petit nouveau.'"
     },
     "night_surprise_nurse_react": {
         "name": "Moi",
-        "text": "*J'ai répondu 'Je vais dormir maintenant ! Merci, Madame.' ...Elle est taquine, mais elle s'inquiète vraiment pour moi, n'est-ce pas ?*"
+        "text": "*J'ai répondu 'Oui, je vais dormir ! Merci.' Elle a beau plaisanter, au fond elle s'inquiète quand même.*"
     },
     "night_surprise_teacher": {
-        "name": "Professeur Principal",
-        "text": "*Un message du Professeur Principal.* 'Tu es encore réveillé par hasard ? Je voulais te prévenir que l'emploi du temps a changé. La 3ème heure est maintenant éducation physique. Bonne nuit !'"
+        "name": "Professeure",
+        "text": "*Message de la prof.* 'T'es encore debout par hasard ? Je voulais te prévenir que l'emploi du temps a changé. La 3e heure c'est sport. Bonne nuit !'"
     },
     "night_surprise_teacher_react": {
         "name": "Moi",
-        "text": "*J'ai répondu 'Merci, Professeur ! Bonne nuit !' Elle est tellement attentive et prévenante. Quelle personne aimable.*"
+        "text": "*J'ai répondu 'Merci madame ! Bonne nuit.' Penser à ce genre de détails... vraiment attentionnée.*"
     },
     "night_surprise_react": {
         "name": "Moi",
-        "text": "*Ça m'a surpris, mais... ça m'a rendu heureux. Je retourne mon téléphone face contre le lit et remonte les couvertures. Aujourd'hui était vraiment une journée merveilleuse.*"
+        "text": "*Ça m'a surpris, mais ça m'a fait plaisir. Je retourne le téléphone et remonte la couette. Aujourd'hui, c'était vraiment une bonne journée.*"
     },
     "day1_end": {
         "name": "Moi",
-        "text": "*Je repense à la journée d'aujourd'hui. De nouvelles rencontres, des sentiments inconnus... Quel genre de journée sera demain ?*"
+        "text": "*De nouvelles rencontres, des émotions inconnues... Le premier jour au nouveau lycée s'achève. Quel genre de journée m'attend demain ?*"
     }
 }

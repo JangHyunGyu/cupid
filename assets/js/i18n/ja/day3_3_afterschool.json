@@ -1,211 +1,211 @@
 {
     "day3_afternoon_start": {
-        "name": "僕",
-        "text": "*やっと終礼が終わった。金曜日の放課後…解放感と共に妙な緊張感がある。*"
+        "name": "主人公",
+        "text": "*終礼のチャイムが鳴った。金曜日の放課後。解放感と一緒に、妙な緊張が押し寄せてくる。*"
     },
     "day3_afternoon_check": {
-        "name": "僕",
-        "text": "*鞄を片付けようとすると…*"
+        "name": "主人公",
+        "text": "*カバンを片付けようとしたら……*"
     },
     "day3_afternoon_tension": {
-        "name": "僕",
-        "text": "*教室の雰囲気が重い。さっきの昼休みのせいだろう…*"
+        "name": "主人公",
+        "text": "*教室の空気が重い。昼休みのことが原因みたいだ。*"
     },
     "day3_afternoon_tension_2": {
         "name": "ソヨン",
-        "text": "\"…{name}、ちょっと話がある。\""
+        "text": "\"……{name}。ちょっと話がある。\""
     },
     "day3_afternoon_confrontation": {
-        "name": "僕",
-        "text": "*ソヨンに廊下に連れ出された。表情が真剣だ。*"
+        "name": "主人公",
+        "text": "*ソヨンに廊下に引っ張り出された。いつもの余裕のある笑みはどこにもない。*"
     },
     "day3_afternoon_confrontation_2": {
         "name": "ソヨン",
-        "text": "\"お昼のことなんだけど…本当にみんなと週末の約束したの？\""
+        "text": "\"お昼のことなんだけど。あんたが他の子に笑いかけるたびに、私の中で何かが崩れていく感じだったの。正直に言って、全員に週末の約束したんでしょ？\""
     },
     "day3_afternoon_confrontation_3": {
-        "name": "僕",
-        "text": "*どう答えればいいんだろう…*",
+        "name": "主人公",
+        "text": "*ソヨンの瞳が揺れている。*",
         "choices": [
             "正直に認める",
-            "時間帯が違うから大丈夫と言う",
+            "時間帯が違うから大丈夫だと言う",
             "ソヨンだけが本気だと言う"
         ]
     },
     "day3_afternoon_admit": {
-        "name": "僕",
-        "text": "\"…うん。ごめん。みんなに断れなくて…\""
+        "name": "主人公",
+        "text": "\"……うん。ごめん。断れなくて。\""
     },
     "day3_afternoon_admit_react": {
         "name": "ソヨン",
-        "text": "\"…正直に言ってくれてありがとう。でも、嫌だよそういうの。\""
+        "text": "\"断れなくて？ その中途半端な優しさが私をどれだけ惨めにするか、あんたにはわからないでしょうね。\""
     },
     "day3_afternoon_admit_react_2": {
         "name": "ソヨン",
-        "text": "\"If I'm really special to you... only meet me. Otherwise, I have options too.\""
+        "text": "\"私はあんたの優しさの一部になりたくない。全部じゃなきゃ、いっそ何もない方がマシ。選んで、{name}。\""
     },
     "day3_afternoon_justify": {
-        "name": "僕",
-        "text": "\"The times are all different... so I thought I could meet everyone...\""
+        "name": "主人公",
+        "text": "\"時間帯が全部違うから……みんなに会えると思って……\""
     },
     "day3_afternoon_justify_react": {
         "name": "ソヨン",
-        "text": "\"...Don't you see that's the problem?\""
+        "text": "\"……それが問題だって、わからない？\""
     },
     "day3_afternoon_justify_react_2": {
         "name": "ソヨン",
-        "text": "\"...Fine. We'll see this weekend.\""
+        "text": "\"……わかった。週末になればわかるでしょ。\""
     },
     "day3_afternoon_lie_seoyeon": {
-        "name": "僕",
-        "text": "\"Seoyeon, you're the only one I'm sincere about. The others are just friends...\""
+        "name": "主人公",
+        "text": "\"ソヨン、君だけが本気だよ。他の子はただの……\""
     },
     "day3_afternoon_lie_seoyeon_react": {
         "name": "ソヨン",
-        "text": "\"...Really? Can I trust that?\""
+        "text": "\"……本当に？ その言葉……信じていいの？\""
     },
     "day3_afternoon_lie_warning": {
-        "name": "僕",
-        "text": "*Seoyeon smiles. But... is this right? What should I tell the others?*"
+        "name": "主人公",
+        "text": "*ソヨンが微笑む。でも……他の子たちになんて言えばいいんだ？*"
     },
     "day3_afternoon_jealousy_check": {
-        "name": "僕",
-        "text": "*The atmosphere was a bit weird during lunch... It should be fine, right?*"
+        "name": "主人公",
+        "text": "*昼休みの雰囲気がちょっと微妙だったけど……大丈夫だよな？*"
     },
     "day3_afternoon_approach": {
-        "name": "僕",
-        "text": "*As I stand up to pack my bag, someone approaches.*"
+        "name": "主人公",
+        "text": "*カバンを持って立ち上がると、誰かが近づいてくる。*"
     },
     "day3_afternoon_seoyeon_approach": {
         "name": "ソヨン",
-        "text": "\"...{name}, do you have a minute?\""
+        "text": "\"……{name}、時間ある？\""
     },
     "day3_afternoon_seoyeon_talk": {
         "name": "ソヨン",
-        "text": "\"About lunch... Sorry, I think I was being sensitive.\""
+        "text": "\"お昼のこと……ごめん。ちょっと敏感になってた。\""
     },
     "day3_afternoon_seoyeon_talk_2": {
         "name": "ソヨン",
-        "text": "\"But honestly... seeing you close with Yuna or Dain bothers me a little.\"",
+        "text": "\"でも正直、あんたがユナやダインと仲良くしてるの見ると、ちょっとアレなのよ。\"",
         "choices": [
-            "\"You're my favorite, Seoyeon\"",
-            "\"They're all precious friends\"",
-            "\"Are you jealous?\""
+            "\"ソヨンが一番好きだよ\"",
+            "\"みんな大切な友達だよ\"",
+            "\"嫉妬してるの？\""
         ]
     },
     "day3_afternoon_seoyeon_comfort": {
         "name": "ソヨン",
-        "text": "\"...Really? Hearing that... I feel a bit relieved.\""
+        "text": "\"……ほんと？ それ聞いたら、ちょっと楽になった。\""
     },
     "day3_afternoon_seoyeon_friend": {
         "name": "ソヨン",
-        "text": "\"...Right. Friends. Got it.\""
+        "text": "\"……そう。友達。わかった。\""
     },
     "day3_afternoon_seoyeon_tease": {
         "name": "ソヨン",
-        "text": "\"W-what! That's not... Ugh, forget it!\""
+        "text": "\"……そうじゃなくて……あー、もうわかったわかった。\""
     },
     "day3_afternoon_yuna_approach": {
         "name": "ユナ",
-        "text": "\"...{name}.\""
+        "text": "\"……{name}。\""
     },
     "day3_afternoon_yuna_talk": {
         "name": "ユナ",
-        "text": "\"At lunch... you chose Seoyeon.\""
+        "text": "\"お昼のとき……あんたの視線がどこに向いてたか、見てたよ。\""
     },
     "day3_afternoon_yuna_talk_2": {
-        "name": "僕",
-        "text": "*Yuna's eyes are colder than usual.*",
+        "name": "主人公",
+        "text": "*ユナのひんやりした瞳が突き刺さる。*",
         "choices": [
-            "\"I'm sorry, Yuna\"",
-            "\"I'll spend time with you tomorrow\"",
-            "\"Why, are you upset?\""
+            "\"ごめん、ユナ\"",
+            "\"明日はユナと一緒にいるよ\"",
+            "\"なに、怒ってる？\""
         ]
     },
     "day3_afternoon_yuna_apologize": {
         "name": "ユナ",
-        "text": "\"...It's okay. We have tomorrow.\""
+        "text": "\"謝ってほしいんじゃない。あんたが誰のそばに立つのか、その重さをわかってほしいだけ。\""
     },
     "day3_afternoon_yuna_promise": {
         "name": "ユナ",
-        "text": "\"...I won't forget those words.\""
+        "text": "\"……その言葉、忘れないから。\""
     },
     "day3_afternoon_yuna_question": {
         "name": "ユナ",
-        "text": "\"...Upset? No. I just... wanted to confirm.\""
+        "text": "\"……怒り？ 違う。確認したかっただけ。\""
     },
     "day3_afternoon_yuna_warning": {
         "name": "ユナ",
-        "text": "\"Remember, {name}. If you lie to me... you know, right?\""
+        "text": "\"明日は逃げないで。あんたが作った期待、最後まで責任取ってよ。\""
     },
     "day3_afternoon_dain_approach": {
         "name": "ダイン",
-        "text": "\"Hey, {name}!\""
+        "text": "\"{name}。\""
     },
     "day3_afternoon_dain_talk": {
         "name": "ダイン",
-        "text": "\"Why didn't you include me at lunch?! I wanted to eat together too!\""
+        "text": "\"お昼……あたしも一緒に食べたかったのに。次はあたしも混ぜてよ。\""
     },
     "day3_afternoon_dain_talk_2": {
-        "name": "僕",
-        "text": "*Dain pouts and complains.*",
+        "name": "主人公",
+        "text": "*ダインが頬を膨らませている。*",
         "choices": [
-            "\"Sorry, let's eat together next time\"",
-            "\"I'll come to your practice tomorrow\"",
-            "\"Cute, are you angry?\""
+            "\"ごめん、次は一緒に食べよ\"",
+            "\"明日の練習見に行くよ\"",
+            "\"かわいいな、怒ってるの？\""
         ]
     },
     "day3_afternoon_dain_sorry": {
         "name": "ダイン",
-        "text": "\"Hmph, you better! It's a promise!\""
+        "text": "\"……わかった。その約束、絶対守ってよ。\""
     },
     "day3_afternoon_dain_promise": {
         "name": "ダイン",
-        "text": "\"Really?! Then I forgive you! Look forward to my spike!\""
+        "text": "\"マジ？！ じゃあ許す！！ あたしのスパイク覚悟しなよ！！\""
     },
     "day3_afternoon_dain_tease": {
         "name": "ダイン",
-        "text": "\"W-what! Cute my foot! Dummy!\""
+        "text": "\"……なによ。かわいいって何がかわいいのよ。\""
     },
     "day3_afternoon_normal": {
-        "name": "僕",
-        "text": "*A peaceful after school. Let me get ready to go home.*"
+        "name": "主人公",
+        "text": "*穏やかな放課後。帰る準備をしよう。*"
     },
     "day3_afternoon_transition": {
-        "name": "僕",
-        "text": "*As I'm about to leave through the school gate...*"
+        "name": "主人公",
+        "text": "*校門を出ようとしたら……*"
     },
     "day3_afternoon_gate": {
-        "name": "僕",
-        "text": "*Someone seems to be waiting.*"
+        "name": "主人公",
+        "text": "*誰かが待っているみたいだ。*"
     },
     "day3_afternoon_multiple_wait": {
-        "name": "僕",
-        "text": "*Uh... why is everyone at the gate...?*"
+        "name": "主人公",
+        "text": "*……なんでみんな校門の前にいるんだ？*"
     },
     "day3_afternoon_multiple_no_seoyeon": {
-        "name": "僕",
-        "text": "*Several people are standing at the school gate. Are they all waiting for me...?*"
+        "name": "主人公",
+        "text": "*校門の前に何人か立っている。全員僕を待ってるのか？*"
     },
     "day3_afternoon_multiple_scene": {
         "name": "ソヨン",
-        "text": "\"Hey, {name}! Let's walk together... huh?\""
+        "text": "\"{name}、一緒に帰ろ……あれ？\""
     },
     "day3_afternoon_three_way": {
         "name": "ユナ",
-        "text": "\"...We meet again.\""
+        "text": "\"……また会ったね。\""
     },
     "day3_afternoon_three_way_2": {
-        "name": "僕",
-        "text": "*Seoyeon and Yuna are glaring at each other. The atmosphere is tense.*"
+        "name": "主人公",
+        "text": "*ソヨンとユナが互いを睨み合っている。*"
     },
     "day3_afternoon_two_way_dain": {
         "name": "ダイン",
-        "text": "\"Oh? Seoyeon's here too? I was gonna walk home with {name}!\""
+        "text": "\"あれ？ ソヨンもここ？！ あたしも{name}と一緒に帰ろうと思ってたのに！！\""
     },
     "day3_afternoon_choose_walk": {
-        "name": "僕",
-        "text": "*Who should I walk with...?*",
+        "name": "主人公",
+        "text": "*誰と一緒に帰ろう。*",
         "choices": [
             "ソヨンと行く",
             "ユナと行く",
@@ -214,363 +214,368 @@
         ]
     },
     "day3_afternoon_seoyeon_walk": {
-        "name": "僕",
-        "text": "\"Seoyeon, let's go together.\""
+        "name": "主人公",
+        "text": "\"ソヨン、一緒に行こう。\""
     },
     "day3_afternoon_seoyeon_walk_2": {
         "name": "ソヨン",
-        "text": "\"Sure! Let's go!\""
+        "text": "\"うん。行こ。\""
     },
     "day3_afternoon_seoyeon_walk_others": {
-        "name": "僕",
-        "text": "*I feel eyes on my back... but right now, walking with Seoyeon feels nice.*"
+        "name": "主人公",
+        "text": "*背中に視線を感じるけど……ソヨンと歩く今がいい。*"
     },
     "day3_afternoon_seoyeon_walk_yuna_reaction": {
-        "name": "僕",
-        "text": "*Yuna is watching us from a distance. That look... is scary.*"
+        "name": "主人公",
+        "text": "*ユナが遠くから僕たちを見ている。その目つきがひんやりしている。*"
     },
     "day3_afternoon_seoyeon_walk_dain_reaction": {
         "name": "ダイン",
-        "text": "\"Hmph! I'm going first!\""
+        "text": "\"……あたし先に行くわ。\""
     },
     "day3_afternoon_seoyeon_talk_walk": {
         "name": "ソヨン",
-        "text": "\"...Hey, {name}. Let's take the riverside path back. The sunset is beautiful today.\""
+        "text": "\"……{name}。あそこの川沿いの道、回り道して帰ろ。今日は夕焼けが綺麗よ。\""
     },
     "day3_afternoon_seoyeon_sunset": {
-        "name": "僕",
-        "text": "*The sunset reflects off the river, sparkling. Seoyeon's face glows with an orange tint — she looks radiant.*"
+        "name": "主人公",
+        "text": "*夕日が川面に反射してキラキラ光っている。ソヨンの顔がオレンジ色に染まる。*"
     },
     "day3_afternoon_seoyeon_sunset_2": {
         "name": "ソヨン",
-        "text": "*She suddenly stops and stands in front of me* \"...{name}. Can I ask you something?\""
+        "text": "*急に立ち止まって僕の前に立つ* \"……{name}。ひとつだけ聞いていい？\""
     },
     "day3_afternoon_seoyeon_sunset_3": {
         "name": "ソヨン",
-        "text": "*Against the sunset backdrop, Seoyeon's eyes shine* \"Tomorrow... you'll only meet me, right?\"",
+        "text": "*夕日を背にしてソヨンの瞳が輝く* \"明日……私だけに会ってくれるよね？\"",
         "choices": [
-            "\"Of course\"",
-            "*Take Seoyeon's hand*",
-            "\"...I'll try\""
+            "\"もちろん\"",
+            "*ソヨンの手を握る*",
+            "\"……努力するよ\""
         ]
     },
     "day3_afternoon_seoyeon_pinky": {
         "name": "ソヨン",
-        "text": "*Seoyeon holds out her pinky finger* \"Then let's pinky promise. If you break it... you swallow ten thousand needles?\""
+        "text": "*ソヨンが小指を差し出す* \"じゃあ指切り。約束破ったら……針千本飲むんだからね？\""
     },
     "day3_afternoon_seoyeon_hand": {
         "name": "ソヨン",
-        "text": "*Seoyeon's hand trembles before she grips mine tight* \"...Dummy. What if someone sees us holding hands here.\""
+        "text": "*ソヨンの手が震えてから、僕の手をぎゅっと握る* \"……バカ。こんなとこで手繋いだらどうすんの。\""
     },
     "day3_afternoon_seoyeon_try": {
         "name": "ソヨン",
-        "text": "*Looking slightly disappointed, she forces a smile* \"...Okay. You'll try, right?\""
+        "text": "*ちょっとがっかりした顔をしてから笑ってみせる* \"……努力、ね。ちょっと物足りないわ。\""
     },
     "day3_afternoon_seoyeon_freetalk": {
-        "name": "僕",
-        "text": "*Walking alongside Seoyeon down the riverside path as the sunset deepens.*",
-        "context": "ソヨンと夕焼けの川沿いを歩いている。ソヨンが「明日は私だけに会ってくれる？」と言い、指切り・手つなぎのスキンシップがあった。甘くてロマンチックな雰囲気。"
+        "name": "主人公",
+        "text": "*夕焼けの川沿いの道をソヨンと並んで歩く。*",
+        "context": "ソヨンと夕焼けの川沿いを歩いている。ソヨンが「明日は私だけに会って」と言い、指切り・手つなぎのスキンシップがあった。ロマンチックな雰囲気。",
+        "personality": "ソヨンはクールビューティ系。ズバッと本質を突く、余裕たっぷり、したたかな魅力。独占欲が強く、嫉妬すると直球で来る。"
     },
     "day3_afternoon_seoyeon_talk_walk_2": {
         "name": "ソヨン",
-        "text": "\"It's our time together, just the two of us. Right?\""
+        "text": "\"二人きりの時間でしょ。ね？\""
     },
     "day3_afternoon_seoyeon_guilt": {
-        "name": "僕",
-        "text": "*...'Just the two of us'. My other plans flash through my mind.*",
+        "name": "主人公",
+        "text": "*「二人きりの時間」か。他の約束が頭をよぎる。*",
         "choices": [
-            "\"Yeah, I'm excited too\"",
-            "\"Actually...\" (Be honest)"
+            "\"うん、楽しみだな\"",
+            "\"実は……\" *正直に言う*"
         ]
     },
     "day3_afternoon_seoyeon_happy": {
         "name": "ソヨン",
-        "text": "\"Hehe, me too! See you tomorrow then! Sleep well!\""
+        "text": "\"ふっ、私も。じゃあ明日ね。おやすみ。\""
     },
     "day3_afternoon_seoyeon_confess_walk": {
         "name": "ソヨン",
-        "text": "\"...What? You have other plans too?\""
+        "text": "\"……なに？ 他にも約束あるの？\""
     },
     "day3_afternoon_seoyeon_angry": {
         "name": "ソヨン",
-        "text": "\"...Fine. We'll see this weekend who you really like.\""
+        "text": "\"……わかった。週末になれば見えるでしょ、あんたが本当に誰を好きなのか。\""
     },
     "day3_afternoon_yuna_walk": {
-        "name": "僕",
-        "text": "\"Yuna, let's walk together.\""
+        "name": "主人公",
+        "text": "\"ユナ、一緒に帰ろう。\""
     },
     "day3_afternoon_yuna_walk_2": {
         "name": "ユナ",
-        "text": "\"...Okay.\""
+        "text": "\"……うん。\""
     },
     "day3_afternoon_yuna_walk_others": {
         "name": "ソヨン",
-        "text": "\"...Okay. Be careful going home.\""
+        "text": "\"……わかった。\""
     },
     "day3_afternoon_yuna_talk_walk": {
-        "name": "僕",
-        "text": "*Walking with Yuna down a quiet path. She doesn't say much, but the atmosphere is comfortable.*"
+        "name": "主人公",
+        "text": "*ユナと静かな道を歩く。言葉は少ないけど心地いい。*"
     },
     "day3_afternoon_yuna_cat": {
-        "name": "僕",
-        "text": "*A small cat is curled up by the roadside. Yuna suddenly stops.*"
+        "name": "主人公",
+        "text": "*道端に小さな猫が一匹うずくまっている。ユナが立ち止まった。*"
     },
     "day3_afternoon_yuna_cat_2": {
         "name": "ユナ",
-        "text": "*Quietly kneeling down to pet the cat* \"...I'm glad you're with me.\""
+        "text": "*静かにひざまずいて猫を撫でる* \"……一緒にいてくれてよかった。\""
     },
     "day3_afternoon_yuna_cat_3": {
-        "name": "僕",
-        "text": "*The way Yuna pets the cat... she looks so gentle.*",
+        "name": "主人公",
+        "text": "*ユナが猫を撫でる姿が……すごく柔らかい。*",
         "choices": [
-            "*Pet the cat too*",
-            "*Pat Yuna's head*",
-            "*Watch quietly*"
+            "*僕も猫を撫でる*",
+            "*ユナの頭を撫でる*",
+            "*静かに見守る*"
         ]
     },
     "day3_afternoon_yuna_cat_pat": {
         "name": "ユナ",
-        "text": "*Our hands meet on top of the cat* \"...Warm.\""
+        "text": "*二人の手が猫の上で触れ合う* \"……あったかい。\""
     },
     "day3_afternoon_yuna_head_pat": {
         "name": "ユナ",
-        "text": "*She freezes when I pat her head* \"...You're petting me?\""
+        "text": "*僕の手にピタッと止まる* \"……あたしを撫でてるの？\""
     },
     "day3_afternoon_yuna_head_pat_2": {
         "name": "ユナ",
-        "text": "*Closing her eyes* \"...Don't stop. Just a little more.\""
+        "text": "*目を閉じながら* \"……やめないで。もうちょっとだけ。\""
     },
     "day3_afternoon_yuna_cat_watch": {
         "name": "ユナ",
-        "text": "*Holding the cat up* \"...This one looks like you, {name}. Warm and... clueless.\""
+        "text": "*猫を抱き上げながら* \"……この子、{name}に似てる。あったかくて……ちょっと足りない。\""
     },
     "day3_afternoon_yuna_freetalk": {
-        "name": "僕",
-        "text": "*Walking side by side with Yuna. Her expression is softer than usual.*",
-        "context": "ユナと一緒に猫を撫でた後の帰り道。ユナの表情がいつもより柔らかい。静かで心地よい雰囲気。"
+        "name": "主人公",
+        "text": "*ユナと並んで歩く。いつもよりユナの表情が柔らかい。*",
+        "context": "ユナと帰り道に猫を一緒に撫でた後。ユナがいつもより柔らかい表情をしている。",
+        "personality": "ユナはけだるくて直球、マイペース。短くて暗号みたいな言葉を使う。冷たく見えるけど、心を開くとギャップがある。"
     },
     "day3_afternoon_yuna_talk_walk_2": {
         "name": "ユナ",
-        "text": "\"...{name}. Don't forget tomorrow night.\""
+        "text": "\"……{name}。明日の夜、忘れないで。\""
     },
     "day3_afternoon_yuna_talk_walk_3": {
         "name": "ユナ",
-        "text": "\"School back gate. 8 PM. Don't... be late.\""
+        "text": "\"学校の裏門。8時。遅れたら……ダメだから。\""
     },
     "day3_afternoon_yuna_warning_walk": {
-        "name": "僕",
-        "text": "*There's a strange pressure in Yuna's voice.*",
+        "name": "主人公",
+        "text": "*ユナの声に不思議な重みがこもっている。*",
         "choices": [
-            "\"I definitely won't be late\"",
-            "\"What if I'm late?\""
+            "\"絶対遅れないよ\"",
+            "\"もし遅れたら？\""
         ]
     },
     "day3_afternoon_yuna_promise_keep": {
         "name": "ユナ",
-        "text": "\"...Good. I'll trust you.\""
+        "text": "\"……いいよ。信じる。\""
     },
     "day3_afternoon_yuna_late_question": {
         "name": "ユナ",
-        "text": "\"...That can't happen. Absolutely not.\""
+        "text": "\"……それはダメ。絶対に。\""
     },
     "day3_afternoon_yuna_late_warning": {
-        "name": "僕",
-        "text": "*Yuna's eyes seemed to flash oddly for a moment... Must be my imagination?*"
+        "name": "主人公",
+        "text": "*ユナの瞳が一瞬おかしく光った気がした……気のせいだよな？*"
     },
     "day3_afternoon_dain_walk": {
-        "name": "僕",
-        "text": "\"Dain, let's walk together.\""
+        "name": "主人公",
+        "text": "\"ダイン、一緒に帰ろう。\""
     },
     "day3_afternoon_dain_walk_2": {
         "name": "ダイン",
-        "text": "\"Yay! Let's go!\""
+        "text": "\"やったー！ 行こ行こ！！\""
     },
     "day3_afternoon_dain_talk_walk": {
         "name": "ダイン",
-        "text": "\"Hey, {name}! See that convenience store? I'm thirsty!\""
+        "text": "\"{name}！ あそこにコンビニあるじゃん？！ 喉渇いた！！\""
     },
     "day3_afternoon_dain_store": {
-        "name": "僕",
-        "text": "*Dain dashes to the convenience store. I follow and find her stopped at the ice cream section.*"
+        "name": "主人公",
+        "text": "*ダインがコンビニに突進する。アイスコーナーの前で立ち止まった。*"
     },
     "day3_afternoon_dain_store_2": {
         "name": "ダイン",
-        "text": "\"You pick for me! If I pick, I'll want to buy everything...\"",
+        "text": "\"あんたが選んでよ！ あたしが選ぶと全部買いたくなるんだから！\"",
         "choices": [
-            "*Pick one for her*",
-            "*Buy two and share one*"
+            "*一つだけ選んであげる*",
+            "*二つ買って一個シェアしようと言う*"
         ]
     },
     "day3_afternoon_dain_ice_one": {
         "name": "ダイン",
-        "text": "*Taking the ice cream* \"...Thanks. {name} is the best!\""
+        "text": "*アイスを受け取りながら* \"……ありがと。やっぱ{name}が最高！\""
     },
     "day3_afternoon_dain_ice_share": {
         "name": "ダイン",
-        "text": "*Her face turns red at the idea of sharing* \"Th-that's sharing?! That's an indirect kiss! N-no! It's just sharing!\""
+        "text": "*シェアの提案に顔が真っ赤になる* \"こ、これシェア？！ 間接キ……い、いや！ ただのシェアだから！！\""
     },
     "day3_afternoon_dain_park": {
-        "name": "僕",
-        "text": "*Dain and I sit side by side on a park bench nearby. We eat ice cream while watching the sunset.*"
+        "name": "主人公",
+        "text": "*ダインと近くの公園のベンチに並んで座った。アイスを食べながら夕焼けを眺める。*"
     },
     "day3_afternoon_dain_park_2": {
         "name": "ダイン",
-        "text": "*Suddenly getting quiet* \"...{name}. Actually, I couldn't sleep last night.\""
+        "text": "*急に静かになって* \"……{name}。あたし実は昨日眠れなかったんだよね。\""
     },
     "day3_afternoon_dain_park_3": {
         "name": "ダイン",
-        "text": "\"...You said you'd come to my practice tomorrow... You'll really come, right? You're not gonna stand me up?\"",
+        "text": "\"明日の練習見に来てくれるって言ったよね……マジで来る？ すっぽかしたりしないよね？\"",
         "choices": [
-            "\"I would never stand you up\"",
-            "*Pat Dain's head*"
+            "\"絶対すっぽかさないよ\"",
+            "*ダインの頭を撫でる*"
         ]
     },
     "day3_afternoon_dain_promise_firm": {
         "name": "ダイン",
-        "text": "*Her eyes light up* \"...Really? Promise!\""
+        "text": "*目がキラッと輝く* \"……ほんと？！ 約束！！\""
     },
     "day3_afternoon_dain_pat": {
         "name": "ダイン",
-        "text": "*Patting her head makes Dain's face turn red* \"Hey, I'm not a kid! ...But don't stop.\""
+        "text": "*頭を撫でるとダインが顔を赤くする* \"あたし子供じゃないし！ ……でもやめないで。\""
     },
     "day3_afternoon_dain_freetalk": {
-        "name": "僕",
-        "text": "*Eating ice cream and chatting with Dain on a park bench.*",
-        "context": "ダインと公園のベンチでアイスクリームを分け合った後。ダインが「昨日寝れなかった」と真剣な一面を見せた。いつもの活発さの代わりに恥ずかしがっている。"
+        "name": "主人公",
+        "text": "*公園のベンチでダインとアイスを食べながら話をする。*",
+        "context": "ダインと公園のベンチでアイスをシェアした後。ダインが「昨日眠れなかった」と真剣な一面を見せている。",
+        "personality": "ダインは犬系で、スキンシップ好き、負けず嫌い。ビックリマークの嵐。ツンデレ。表面は元気だけど中身は繊細。"
     },
     "day3_afternoon_dain_talk_walk_2": {
         "name": "ダイン",
-        "text": "\"I want to show you my cool side!\"",
+        "text": "\"あたし{name}にカッコいいとこ見せたいんだよね！\"",
         "choices": [
-            "\"Looking forward to it!\"",
-            "\"I'll cheer for you\""
+            "\"楽しみにしてる！\"",
+            "\"俺が応援してあげるよ\""
         ]
     },
     "day3_afternoon_dain_excited": {
         "name": "ダイン",
-        "text": "\"Great! Be prepared!\""
+        "text": "\"よし！！ 覚悟しててよ！！\""
     },
     "day3_afternoon_dain_cheer": {
         "name": "ダイン",
-        "text": "\"Hehe... Hearing that makes me want to work even harder!\""
+        "text": "\"えへへ……そう言われるともっと頑張らなきゃ！\""
     },
     "day3_afternoon_reject_all": {
-        "name": "僕",
-        "text": "\"Sorry, I want to go alone today.\""
+        "name": "主人公",
+        "text": "\"ごめん、今日は一人で帰りたいんだ。\""
     },
     "day3_afternoon_reject_reaction": {
-        "name": "僕",
-        "text": "*Everyone's expressions harden. I can feel their disappointment.*"
+        "name": "主人公",
+        "text": "*みんなの表情が固まる。がっかりした目を感じる。*"
     },
     "day3_afternoon_nobody_waiting": {
-        "name": "僕",
-        "text": "*...No one's here. Must've been my imagination. Silly me for getting my hopes up.*"
+        "name": "主人公",
+        "text": "*……誰もいない。期待した自分がバカだった。*"
     },
     "day3_afternoon_alone_walk": {
-        "name": "僕",
-        "text": "*I head home alone. I wonder what tomorrow will bring...*"
+        "name": "主人公",
+        "text": "*一人で家に向かう。明日はどんな一日になるんだろう。*"
     },
     "day3_afternoon_single_wait": {
-        "name": "僕",
-        "text": "*Someone is standing in front of the gate.*"
+        "name": "主人公",
+        "text": "*校門の前に誰か立っている。*"
     },
     "day3_afternoon_seoyeon_solo": {
         "name": "ソヨン",
-        "text": "\"{name}! Let's walk together!\""
+        "text": "\"{name}。一緒に帰ろ。\""
     },
     "day3_afternoon_yuna_solo": {
         "name": "ユナ",
-        "text": "\"...I was waiting.\""
+        "text": "\"……待ってた。\""
     },
     "day3_afternoon_dain_solo": {
         "name": "ダイン",
-        "text": "\"Hey! Hurry up! Let's walk together!\""
+        "text": "\"おーい！！ 早く来て！ 一緒に帰ろ！！\""
     },
     "day3_afternoon_teacher_wait": {
-        "name": "担任先生",
-        "text": "\"{name}, do you have a minute? Want me to give you a ride?\"",
+        "name": "先生",
+        "text": "\"{name}、時間ある？ 送ってあげようか？\"",
         "choices": [
-            "\"Yes, thank you!\"",
-            "\"It's okay, I'll walk\""
+            "\"はい、ありがとうございます！\"",
+            "\"大丈夫です、歩いて帰ります\""
         ]
     },
     "day3_afternoon_teacher_ride": {
-        "name": "僕",
-        "text": "*I got in the teacher's car. The road home is bathed in sunset.*"
+        "name": "主人公",
+        "text": "*先生の車に乗った。帰り道が夕焼けに染まっている。*"
     },
     "day3_afternoon_teacher_ride_2": {
-        "name": "担任先生",
-        "text": "*Driving quietly* \"...{name}. Being alone together like this... feels a bit strange.\""
+        "name": "先生",
+        "text": "*運転しながら静かに* \"……{name}。こうして二人きりだと、妙な気分ね。\""
     },
     "day3_afternoon_teacher_ride_3": {
-        "name": "僕",
-        "text": "*We stop at a red light. The teacher quietly touches the back of my hand.*",
+        "name": "主人公",
+        "text": "*信号で止まる。先生が静かに僕の手の甲に触れる。*",
         "choices": [
-            "*Hold her hand*",
-            "\"Teacher, we shouldn't\"",
-            "*Quietly lean my head on her shoulder*"
+            "*先生の手を握る*",
+            "\"先生、こういうのはダメですよ\"",
+            "*静かに肩に頭を預ける*"
         ]
     },
     "day3_afternoon_teacher_hold": {
-        "name": "担任先生",
-        "text": "*The teacher holds her breath* \"...When the light changes, I'm letting go. Promise.\""
+        "name": "先生",
+        "text": "*先生が息を止める* \"……信号が変わったら離すわ。約束。\""
     },
     "day3_afternoon_teacher_stop": {
-        "name": "担任先生",
-        "text": "*The teacher smiles wistfully* \"...You're right. Teacher needs to come to her senses.\""
+        "name": "先生",
+        "text": "*先生が寂しそうに笑う* \"……そうよね。先生がしっかりしなきゃ。\""
     },
     "day3_afternoon_teacher_lean": {
-        "name": "担任先生",
-        "text": "*Startled at first... then quietly strokes my hair* \"...The light hasn't changed yet.\""
+        "name": "先生",
+        "text": "*驚いて固まってから……静かに頭を撫でてくれる* \"……まだ信号変わってないわよ。\""
     },
     "day3_afternoon_teacher_freetalk": {
-        "name": "僕",
-        "text": "*Riding in the teacher's car on the way home.*",
-        "context": "担任先生の車の中で帰宅中。夕焼けの中で手を繋いだり肩に寄りかかったりした後。禁断の恋の甘さと罪悪感。"
+        "name": "主人公",
+        "text": "*担任の先生の車で一緒に帰る。*",
+        "context": "担任の先生の車で帰宅中。夕焼けの中で手を握ったり肩に寄りかかったりした後。",
+        "personality": "担任の先生はドライなユーモアの持ち主。表向きはぶっきらぼうだけど、生徒に惹かれてしまっている自分にギャップ萌え的な戸惑いがある。"
     },
     "day3_afternoon_teacher_arrive": {
-        "name": "担任先生",
-        "text": "*Arriving at my house* \"...You haven't forgotten our museum date on Sunday, right? I'll be looking forward to it.\""
+        "name": "先生",
+        "text": "*家の前に着いて* \"あさっての日曜、博物館の約束、忘れてないわよね？ 待ってるから。\""
     },
     "day3_afternoon_nurse_wait": {
-        "name": "保健先生",
-        "text": "\"Oh my, {name}. I came out to leave and ran into you? Hehe.\"",
+        "name": "保健の先生",
+        "text": "\"あら、{name}。退勤しようと思ったらちょうどバッタリね？\"",
         "choices": [
-            "\"Shall we walk together?\"",
-            "\"Have a good evening\""
+            "\"一緒に帰りませんか？\"",
+            "\"お疲れさまでした\""
         ]
     },
     "day3_afternoon_nurse_walk": {
-        "name": "僕",
-        "text": "*Walking side by side with the nurse. She glances at the back of my hand.*"
+        "name": "主人公",
+        "text": "*保健の先生と並んで歩く。先生が僕の手の甲を見ている。*"
     },
     "day3_afternoon_nurse_band": {
-        "name": "保健先生",
-        "text": "*She suddenly takes my hand and puts a band-aid on it* \"...There's a scratch here? You didn't notice.\""
+        "name": "保健の先生",
+        "text": "*急に僕の手を取って絆創膏を貼る* \"……ここ擦りむいてない？ 気づかなかったの。\""
     },
     "day3_afternoon_nurse_band_2": {
-        "name": "僕",
-        "text": "*There's no scratch... Did she just want to hold my hand?*",
+        "name": "主人公",
+        "text": "*傷なんてないけど……先生は手を握りたかっただけじゃ？*",
         "choices": [
-            "\"There's no scratch though?\"",
-            "*Just hold her hand*"
+            "\"傷ないですけど？\"",
+            "*そのまま手を握ってあげる*"
         ]
     },
     "day3_afternoon_nurse_caught": {
-        "name": "保健先生",
-        "text": "*Her face turns red as if caught* \"...Hmm, sharp eyes? It's just... teacher's mark.\""
+        "name": "保健の先生",
+        "text": "*バレたように顔が赤くなる* \"……察しがいいわね？ ただの……先生のしるしよ。\""
     },
     "day3_afternoon_nurse_hold": {
-        "name": "保健先生",
-        "text": "*Surprised, she stops... then holds on tight* \"...Dangerous boy. Let's stay like this for ten seconds.\""
+        "name": "保健の先生",
+        "text": "*驚いて立ち止まってから……ぎゅっと握り返してくる* \"……危険な子ね。10秒だけこうしてよう。\""
     },
     "day3_afternoon_nurse_freetalk": {
-        "name": "僕",
-        "text": "*Walking home alongside the school nurse.*",
-        "context": "保健先生との帰り道。先生がバンドエイドを口実に手を握った。禁断の恋のときめきと緊張感。"
+        "name": "主人公",
+        "text": "*保健の先生と並んで帰り道を歩く。*",
+        "context": "保健の先生との帰り道。先生が絆創膏を口実に手を握った。",
+        "personality": "保健の先生はいたずらっぽくて誘惑的、大人の色気がある。生徒への気持ちと教師としての倫理の間で揺れている。"
     },
     "day3_afternoon_nurse_arrive": {
-        "name": "保健先生",
-        "text": "\"Don't forget Sunday 7 PM, okay? I'll be waiting for you.\""
+        "name": "保健の先生",
+        "text": "\"日曜の夜7時、忘れちゃダメよ。待ってるからね。\""
     }
 }

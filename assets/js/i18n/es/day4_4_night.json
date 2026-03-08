@@ -1,7 +1,7 @@
 {
     "day4_night_start": {
         "name": "Yo",
-        "text": "*Llegué a casa. Acostado en la cama, los recuerdos de hoy pasan como una película.*"
+        "text": "*Llegué a casa. Al tumbarme en la cama, los recuerdos de hoy pasan como una película.*"
     },
     "day4_night_branch": {
         "name": "Sistema",
@@ -9,11 +9,11 @@
     },
     "day4_night_yuna_sneak": {
         "name": "Yo",
-        "text": "*10 PM. Llegó un mensaje de Yuna. 'Puerta trasera de la escuela. Ven ahora.'*"
+        "text": "*Las 10 de la noche. Llegó un mensaje de Yuna. 'Puerta trasera de la escuela. Ven ahora.'*"
     },
     "day4_night_yuna_sneak_2": {
         "name": "Yo",
-        "text": "*Mi corazón late con fuerza. La 'verdad' que Yuna mencionó... ¿finalmente voy a descubrirla?*"
+        "text": "*El corazón me late con fuerza. La 'verdad' que mencionó Yuna... ¿por fin voy a descubrirla?*"
     },
     "day4_night_yuna_arrive": {
         "name": "Yuna",
@@ -21,19 +21,19 @@
     },
     "day4_night_yuna_arrive_2": {
         "name": "Yo",
-        "text": "*La puerta trasera de la escuela. Yuna estaba de pie bajo la luz de la calle. Su expresión se veía más decidida que de costumbre.*"
+        "text": "*La puerta trasera de la escuela. Yuna estaba de pie bajo una farola. Su expresión es más dura que de costumbre.*"
     },
     "day4_night_yuna_wall": {
         "name": "Yuna",
-        "text": "\"...Antes de entrar, hay algo que necesitas ver primero. Ven por aquí.\""
+        "text": "\"...Antes de entrar, hay algo que tienes que ver. Por aquí.\""
     },
     "day4_night_yuna_wall_2": {
         "name": "Yo",
-        "text": "*Yuna me llevó a la parte trasera del edificio escolar. Un rincón oscuro sin farolas. Cuando su linterna iluminó la vieja pared exterior de concreto— vi la grieta.*"
+        "text": "*Yuna me guio hasta la parte de atrás del edificio. Un rincón oscuro sin farolas. Cuando la linterna iluminó la pared exterior, vi la grieta.*"
     },
     "day4_night_yuna_wall_3": {
         "name": "Yo",
-        "text": "*'Grieta' era una palabra demasiado suave. A lo largo de un lado de la pared exterior, una fisura del grosor de un antebrazo se extendía verticalmente. En varios lugares ya se habían desprendido fragmentos de concreto.*"
+        "text": "*'Grieta' se quedaba corto. A lo largo de la pared, una fisura vertical tan ancha como un antebrazo. También había trozos de hormigón que se habían desprendido.*"
     },
     "day4_night_yuna_wall_4": {
         "name": "Yo",
@@ -41,159 +41,159 @@
     },
     "day4_night_yuna_wall_5": {
         "name": "Yuna",
-        "text": "\"Al menos tres años. Pero la escuela siguió aplazando las reparaciones. Han bloqueado el acceso a los estudiantes en esta zona.\""
+        "text": "\"Al menos tres años. La escuela ha ido aplazando las reparaciones. Bloquearon el acceso a los estudiantes por esta zona.\""
     },
     "day4_night_yuna_wall_6": {
         "name": "Yuna",
-        "text": "\"Este edificio tuvo problemas desde que fue construido. No se construyó según el diseño. El espaciado de las varillas, la mezcla de concreto... todo estaba por debajo del estándar.\""
+        "text": "\"Este edificio tiene problemas desde que se construyó. No se hizo según el diseño. El espaciado de las varillas, la mezcla del hormigón... todo por debajo del estándar.\""
     },
     "day4_night_yuna_enter_honest": {
         "name": "Yuna",
-        "text": "\"...Me gusta que seas honesto. Está bien, estoy aquí a tu lado.\""
+        "text": "\"...Puedes ser sincero. Estoy a tu lado.\""
     },
     "day4_night_yuna_wall_7": {
         "name": "Yo",
-        "text": "\"...¿Cómo sabes eso?\""
+        "text": "\"...¿Cómo sabes todo eso?\""
     },
     "day4_night_yuna_wall_8": {
         "name": "Yuna",
-        "text": "\"La constructora era 'Hanjin Construction.' Una empresa cuyo CEO es el cuñado del presidente de la fundación. ¿Sabes adónde fueron 700 millones de los 1.500 millones de won en costos de construcción?\""
+        "text": "\"La constructora es 'Sungjin Construcciones'. Una empresa cuyo director es el cuñado del presidente de la fundación. ¿Sabes adónde fueron 700 de los 1.500 millones del presupuesto de obra?\""
     },
     "day4_night_yuna_wall_9": {
         "name": "Yo",
-        "text": "*Se me heló el corazón. No puede ser...*"
+        "text": "*Se me heló el corazón.*"
     },
     "day4_night_yuna_wall_10": {
         "name": "Yuna",
-        "text": "\"A las cuentas de la fundación. Desviaron los fondos de construcción e hicieron un trabajo deficiente. Esta grieta es la prueba. En realidad, todo el edificio escolar es peligroso.\""
+        "text": "\"A las cuentas de la fundación. Desviaron los fondos de construcción e hicieron una obra deficiente. Esta grieta es la prueba. Todo el edificio es peligroso.\""
     },
     "day4_night_yuna_wall_11": {
         "name": "Yo",
-        "text": "*Volví a mirar la grieta. No era solo desgaste ordinario. Era la huella dejada por la codicia de alguien. El hecho de que cientos de estudiantes estuvieran dentro de este edificio todos los días de repente me pareció aterrador.*"
+        "text": "*Volví a mirar la grieta. No era simple deterioro. Cientos de estudiantes están dentro de este edificio cada día. De pronto ese hecho se me hizo insoportablemente pesado.*"
     },
     "day4_night_yuna_wall_choice": {
         "name": "Yo",
         "text": "*No podía creer que esto fuera real.*",
         "choices": [
-            "\"...¿La escuela lo sabía y lo ocultó? Eso es imperdonable.\"",
+            "\"...¿La escuela sabía esto y lo ocultó? ¿Tiene sentido?\"",
             "\"...¿Deberíamos meternos en esto?\""
         ]
     },
     "day4_night_yuna_wall_anger": {
         "name": "Yuna",
-        "text": "\"...Así me sentí yo al principio también. Pero la rabia sola no basta. Por eso necesitaba pruebas. Están abajo. Sígueme.\""
+        "text": "\"...La rabia sola no basta. Hacen falta pruebas. Están abajo. Sígueme.\""
     },
     "day4_night_yuna_wall_fear": {
         "name": "Yuna",
-        "text": "\"...Tener miedo es normal. Yo también lo sentí durante un año entero. Pero ahora ya sabes. ¿Puedes fingir que no?\""
+        "text": "\"...Es normal tener miedo. Yo también lo sentí durante un año entero. Pero ya lo has visto. ¿Puedes hacer como si nada?\""
     },
     "day4_night_yuna_wall_end": {
         "name": "Yo",
-        "text": "*Las palabras de Yuna me llegaron al fondo. No podía fingir no saber. Ya había visto esta grieta con mis propios ojos.*"
+        "text": "*Las palabras de Yuna se me clavaron en el pecho. No puedo hacer como si nada. Ya he visto esta grieta.*"
     },
     "day4_night_yuna_arrive_3": {
         "name": "Yuna",
-        "text": "\"...Hoy tengo algo que mostrarte. ¿Estás preparado?\""
+        "text": "\"...Es por aquí. ¿Estás preparado?\""
     },
     "day4_night_yuna_choice": {
         "name": "Yo",
         "text": "*La mirada de Yuna es seria.*",
         "choices": [
-            "\"Por supuesto. Por eso vine.\"",
-            "\"...Sinceramente, me da un poco de miedo.\""
+            "\"Claro. Para eso he venido.\"",
+            "\"...La verdad, me da un poco de miedo.\""
         ]
     },
     "day4_night_yuna_enter": {
         "name": "Yuna",
-        "text": "\"...Bien. Sígueme.\""
+        "text": "\"...Sígueme.\""
     },
     "day4_night_yuna_corridor": {
         "name": "Yo",
-        "text": "*Yuna abrió la cerradura de la puerta trasera con facilidad. Como si lo hubiera hecho muchas veces antes.*"
+        "text": "*Yuna abrió el candado de la puerta trasera con soltura. Ya lo ha hecho muchas veces.*"
     },
     "day4_night_yuna_corridor_2": {
         "name": "Yo",
-        "text": "*El pasillo vacío de la escuela. Solo las tenues luces de emergencia estaban encendidas. El lugar que era tan ruidoso durante el día ahora parecía que hasta un suspiro resonaría.*"
+        "text": "*El pasillo vacío de la escuela. Solo las luces de emergencia brillan tenuemente. El bullicio del día ha desaparecido por completo; hasta la respiración parece resonar.*"
     },
     "day4_night_yuna_corridor_3": {
         "name": "Yuna",
-        "text": "\"...Los archivos subterráneos. Una sección que la escuela selló. Todo está aquí.\""
+        "text": "\"...El archivo del sótano. Una zona que la escuela selló. Ahí está todo.\""
     },
     "day4_night_yuna_basement": {
         "name": "Yo",
-        "text": "*Al bajar al subterráneo, el aire se volvió frío. El olor a polvo y documentos viejos me golpeó la nariz.*"
+        "text": "*Al bajar al sótano, el aire se volvió frío. Olor a polvo mezclado con papel viejo.*"
     },
     "day4_night_yuna_basement_2": {
         "name": "Yuna",
-        "text": "\"La fundación de esta escuela... 'Academia Sungjin.' Se hacen pasar por una institución educativa de élite, pero han operado fondos ilícitos sistemáticamente durante los últimos diez años.\""
+        "text": "\"La fundación de esta escuela, 'Academia Sungjin'. Por fuera, una institución educativa de prestigio. Por dentro, lleva diez años manejando fondos negros de forma organizada.\""
     },
     "day4_night_yuna_basement_3": {
         "name": "Yo",
-        "text": "\"...¿Fondos ilícitos?\""
+        "text": "\"...¿Fondos negros?\""
     },
     "day4_night_yuna_basement_4": {
         "name": "Yuna",
-        "text": "\"Malversación de fondos de bienestar estudiantil, reclamaciones falsas por reparaciones, desvío de donaciones... Todo está aquí.\""
+        "text": "\"Malversación del fondo de bienestar estudiantil, facturas falsas de mantenimiento, desvío de donaciones. Está todo aquí.\""
     },
     "day4_night_yuna_documents": {
         "name": "Yo",
-        "text": "*Yuna sacó un archivo desgastado del estante. Números densos y sellos llenaban las páginas. Esto es... un libro de contabilidad real.*"
+        "text": "*Yuna sacó una carpeta vieja de la estantería. Llena de números y sellos oficiales. Son los libros contables de verdad.*"
     },
     "day4_night_yuna_documents_2": {
         "name": "Yuna",
-        "text": "\"Especialmente este edificio... la escalera este del edificio principal. Los registros dicen que fue renovada hace tres años, pero en realidad, no se gastó ni un centavo.\""
+        "text": "\"Sobre todo la escalera este del edificio principal. Según los registros, se hicieron obras de reparación hace tres años, pero en realidad no se gastó ni un céntimo.\""
     },
     "day4_night_yuna_documents_3": {
         "name": "Yuna",
-        "text": "\"...Y en esas escaleras, hace un año ocurrió un accidente.\""
+        "text": "\"...Y en esa escalera, hace un año, hubo un accidente.\""
     },
     "day4_night_yuna_truth_choice": {
         "name": "Yo",
         "text": "*La voz de Yuna está temblando.*",
         "choices": [
-            "\"...¿Quién resultó herido?\"",
+            "\"...¿Quién se hizo daño?\"",
             "\"Yuna... ¿estás bien?\""
         ]
     },
     "day4_night_yuna_senpai_concern": {
         "name": "Yuna",
-        "text": "\"...Eres la primera persona que me pregunta eso.\""
+        "text": "\"...Eres la primera persona que me pregunta si estoy bien.\""
     },
     "day4_night_yuna_senpai_reveal": {
         "name": "Yuna",
-        "text": "\"...Lee Junho, un estudiante mayor. Era el presidente del consejo estudiantil en ese momento. Descubrió la corrupción de la fundación y estaba reuniendo pruebas.\""
+        "text": "\"...Junho, un alumno mayor. Era el presidente del consejo estudiantil. Descubrió la corrupción de la fundación y estaba reuniendo pruebas.\""
     },
     "day4_night_yuna_senpai_2": {
         "name": "Yuna",
-        "text": "\"Él era... una persona con un fuerte sentido de justicia. Casi tontamente. Nunca podía mirar hacia otro lado cuando alguien estaba siendo perjudicado.\""
+        "text": "\"Tenía un sentido de la justicia muy fuerte. Hasta rayar en lo ingenuo. Si alguien salía perjudicado, era incapaz de quedarse de brazos cruzados.\""
     },
     "day4_night_yuna_senpai_3": {
         "name": "Yuna",
-        "text": "\"Entonces un día... cayó de esa escalera este. La escuela lo clasificó como 'caída accidental.'\""
+        "text": "\"Un día... se cayó por la escalera este. La escuela lo clasificó como 'accidente por resbalón'.\""
     },
     "day4_night_yuna_senpai_4": {
         "name": "Yo",
-        "text": "\"...¿Una caída accidental? ¿La persona que investigaba la corrupción?\""
+        "text": "\"...¿Accidente por resbalón? ¿Alguien que estaba investigando la corrupción?\""
     },
     "day4_night_yuna_senpai_5": {
         "name": "Yuna",
-        "text": "\"...La barandilla vieja de la escalera que nunca fue reparada se rompió. Si la fundación no hubiera malversado los fondos de reparación, ese accidente nunca habría ocurrido.\""
+        "text": "\"Se supone que la barandilla vieja de la escalera, que nunca repararon, se rompió y él cayó. Pero en la cabeza tenía una marca de algo que le golpeó.\""
     },
     "day4_night_yuna_senpai_6": {
         "name": "Yuna",
-        "text": "\"Fue el día antes de que planeara llevar las pruebas a la Junta de Educación. Si fue coincidencia o no... aún no lo sé.\""
+        "text": "\"Fue la noche antes de que llevara las pruebas a la junta de educación. Casualidad o no.\""
     },
     "day4_night_yuna_senpai_death": {
         "name": "Yuna",
-        "text": "\"Él... falleció en el hospital unos días después. Nunca despertó.\""
+        "text": "\"Unos días después, cerró los ojos en el hospital. Nunca volvió a despertar.\""
     },
     "day4_night_yuna_silence": {
         "name": "Yo",
-        "text": "*Las manos de Yuna temblaban. Sus dedos, aferrados a los documentos, se habían puesto blancos.*"
+        "text": "*Las manos de Yuna tiemblan. Los dedos que sujetan los documentos están blancos.*"
     },
     "day4_night_yuna_silence_choice": {
         "name": "Yo",
-        "text": "*...*",
+        "text": "*......*",
         "choices": [
             "Tomar la mano de Yuna",
             "\"...Sigue hablando. Te escucho.\""
@@ -201,11 +201,11 @@
     },
     "day4_night_yuna_hand": {
         "name": "Yuna",
-        "text": "\"...!\""
+        "text": "\"......!\""
     },
     "day4_night_yuna_hand_2": {
         "name": "Yo",
-        "text": "*La mano de Yuna estaba fría. Pero no se apartó.*"
+        "text": "*La mano de Yuna estaba fría. Pero no la apartó.*"
     },
     "day4_night_yuna_listen": {
         "name": "Yuna",
@@ -213,43 +213,43 @@
     },
     "day4_night_yuna_seoyeon_intro": {
         "name": "Yuna",
-        "text": "\"...Y una cosa más. Esta es la parte más importante.\""
+        "text": "\"...Y hay una cosa más. Esta es la más importante.\""
     },
     "day4_night_yuna_seoyeon_intro_2": {
         "name": "Yuna",
-        "text": "\"La corrupción de la fundación comenzó con el presidente hace diez años. Pero ahora... lo que ha pasado en los últimos dos años es diferente. Más calculado, más organizado.\""
+        "text": "\"La corrupción de la fundación la inició el presidente hace diez años. Pero lo que ha pasado en los últimos dos años es diferente. Más meticuloso, más organizado.\""
     },
     "day4_night_yuna_seoyeon_intro_3": {
         "name": "Yo",
-        "text": "\"...¿Más calculado? ¿Quién?\""
+        "text": "\"...¿Más meticuloso? ¿Quién?\""
     },
     "day4_night_yuna_seoyeon_reveal": {
         "name": "Yuna",
-        "text": "\"...Seoyeon.\""
+        "text": "\"...Es Seoyeon.\""
     },
     "day4_night_yuna_seoyeon_reveal_2": {
         "name": "Yo",
-        "text": "*Sentí como si mi corazón se detuviera.*"
+        "text": "*Sentí que el corazón se me paraba.*"
     },
     "day4_night_yuna_seoyeon_reveal_3": {
         "name": "Yo",
-        "text": "\"...¿Seoyeon? ¿La Seoyeon de nuestra clase? ¿Qué estás—\""
+        "text": "\"...¿Seoyeon? ¿La Seoyeon de nuestra clase? ¿Qué quieres decir?\""
     },
     "day4_night_yuna_seoyeon_reveal_4": {
         "name": "Yuna",
-        "text": "\"Seoyeon es la nieta del presidente. El presidente de la fundación de esta escuela, 'Academia Sungjin'... la nieta del presidente del Grupo Sungjin.\""
+        "text": "\"Seoyeon es la nieta del presidente de la fundación. La nieta por parte de madre del presidente de la Academia Sungjin, del Grupo Sungjin.\""
     },
     "day4_night_yuna_seoyeon_reveal_5": {
         "name": "Yo",
-        "text": "*Mi mente se quedó en blanco. Seoyeon... esa chica que siempre sonreía tan brillantemente. Esos ojos curiosos. ¿La nieta del presidente?*"
+        "text": "*Se me quedó la mente en blanco. Seoyeon, la que siempre sonríe con alegría. Esos ojos llenos de curiosidad. ¿La nieta del presidente de la fundación?*"
     },
     "day4_night_yuna_seoyeon_reveal_6": {
         "name": "Yuna",
-        "text": "\"Mal uso de los fondos del consejo estudiantil, solicitudes de becas fraudulentas, manipulación de registros disciplinarios escolares... todo lo que sucedió en los últimos dos años, Seoyeon lo diseñó ella misma, respaldada por la fundación.\""
+        "text": "\"Malversación de las cuotas estudiantiles, fraude en becas, manipulación de expedientes disciplinarios... Todo lo que ha ocurrido en los últimos dos años, Seoyeon lo diseñó personalmente respaldada por la fundación.\""
     },
     "day4_night_yuna_seoyeon_reveal_7": {
         "name": "Yo",
-        "text": "\"...No puedo creerlo. Seoyeon no es ese tipo de persona.\""
+        "text": "\"...No me lo puedo creer. Seoyeon no es ese tipo de persona.\""
     },
     "day4_night_yuna_seoyeon_reveal_8": {
         "name": "Yuna",
@@ -257,35 +257,35 @@
     },
     "day4_night_yuna_seoyeon_reveal_9": {
         "name": "Yo",
-        "text": "*Yuna me entregó un montón de documentos. Informes financieros del consejo estudiantil, listas de selección de becas, actas de reuniones del comité disciplinario escolar... Cada documento tenía la Seoyeon's misma firma.*"
+        "text": "*Yuna me pasó un fajo de papeles. Informes financieros del consejo estudiantil, listas de selección de becas, actas del comité disciplinario. Todos los documentos llevan la misma firma.*"
     },
     "day4_night_yuna_seoyeon_reveal_10": {
         "name": "Yuna",
-        "text": "\"Seoyeon usó su posición como presidenta del consejo estudiantil para controlar el flujo de dinero. En la superficie, una estudiante perfecta — entre bastidores, haciendo exactamente lo que la fundación le decía.\""
+        "text": "\"Seoyeon usó su puesto como presidenta del consejo para controlar el flujo de dinero. Por fuera, la alumna perfecta. Por detrás, haciendo lo que la fundación le ordenaba.\""
     },
     "day4_night_yuna_seoyeon_reveal_11": {
         "name": "Yo",
-        "text": "*Los documentos en mis manos temblaron. La cara sonriente de Seoyeon cruzó por mi mente. Esa sonrisa natural, esos ojos brillantes... ¿todo era una actuación?*"
+        "text": "*Los papeles me temblaban en la mano. La cara sonriente de Seoyeon me cruza la mente. ¿Esa sonrisa tan natural era todo actuación?*"
     },
     "day4_night_yuna_seoyeon_reveal_12": {
         "name": "Yuna",
-        "text": "\"...Si Seoyeon es una mala persona o no, no lo sé. Ha estado dentro de ese sistema desde que nació. Pero eso no lo excusa. Porque hay personas reales que fueron lastimadas.\""
+        "text": "\"...No sé si Seoyeon es mala persona. Ha estado dentro de esa estructura desde que nació. Pero eso no es excusa. Porque hay víctimas.\""
     },
     "day4_night_yuna_seoyeon_choice": {
         "name": "Yo",
-        "text": "*No podía aceptar esto.*",
+        "text": "*No podía asimilarlo.*",
         "choices": [
-            "\"...Quiero preguntarle directamente a Seoyeon.\"",
-            "\"...Entendido. Hay pruebas. Sigamos adelante.\""
+            "\"...Quiero preguntárselo a Seoyeon directamente.\"",
+            "\"...Entendido. Si hay pruebas, adelante.\""
         ]
     },
     "day4_night_yuna_seoyeon_doubt": {
         "name": "Yuna",
-        "text": "\"...Eso no es posible. Todavía es demasiado peligroso. En el momento en que Seoyeon se dé cuenta, las pruebas podrían desaparecer.\""
+        "text": "\"No puedes. Aún es peligroso. Si Seoyeon se entera, las pruebas podrían desaparecer.\""
     },
     "day4_night_yuna_seoyeon_doubt_2": {
         "name": "Yo",
-        "text": "*Sabía que tenía razón... pero no podía aceptarlo fácilmente. La cara de Seoyeon seguía flotando ante mis ojos.*"
+        "text": "*Sé que tiene razón, pero me cuesta aceptarlo. La cara de Seoyeon no deja de aparecérseme.*"
     },
     "day4_night_yuna_seoyeon_accept": {
         "name": "Yuna",
@@ -293,15 +293,15 @@
     },
     "day4_night_yuna_seoyeon_bridge": {
         "name": "Yo",
-        "text": "*El frío del sótano se me metió en los huesos. Seoyeon. La fundación. La muerte del senpai. La grieta en la pared. Todo se estaba conectando en uno. Y Yuna había estado cargando todo esto sola.*"
+        "text": "*El frío del sótano me cala hasta los huesos. Seoyeon, la fundación, la muerte de Junho, la grieta en la pared. Todo está conectado. Y Yuna ha cargado con esto sola.*"
     },
     "day4_night_yuna_resemblance": {
         "name": "Yuna",
-        "text": "\"...En realidad, hay una cosa más que necesito decirte.\""
+        "text": "\"...En realidad, hay algo más que tengo que contarte.\""
     },
     "day4_night_yuna_resemblance_2": {
         "name": "Yuna",
-        "text": "\"Cuando transferiste aquí por primera vez... casi dejé de respirar.\""
+        "text": "\"Cuando te transferiste... casi se me para el corazón.\""
     },
     "day4_night_yuna_resemblance_3": {
         "name": "Yo",
@@ -309,32 +309,32 @@
     },
     "day4_night_yuna_resemblance_4": {
         "name": "Yuna",
-        "text": "\"Tú... te pareces a Junho. Tu mirada, tu aura. Hasta esa sensación de no poder quedarte quieto cuando algo está mal.\""
+        "text": "\"Te pareces a Junho. La mirada, el aura. Hasta esa sensación de que no puedes quedarte de brazos cruzados ante una injusticia.\""
     },
     "day4_night_yuna_resemblance_5": {
         "name": "Yuna",
-        "text": "\"...Así que al principio, tenía miedo. Miedo de que lo mismo volviera a pasar. Miedo de que tú también estuvieras en peligro.\""
+        "text": "\"...Al principio me asustaba. Tenía miedo de que se repitiera lo mismo. De que tú también acabaras en peligro.\""
     },
     "day4_night_yuna_resemblance_6": {
         "name": "Yuna",
-        "text": "\"Pero al mismo tiempo... contigo a mi lado, sentí que podía terminar lo que él no pudo.\""
+        "text": "\"Pero al mismo tiempo... sentía que si estabas a mi lado, podría terminar lo que él no pudo.\""
     },
     "day4_night_yuna_resemblance_7": {
         "name": "Yo",
-        "text": "*Así que era por eso. La razón por la que Yuna mostró interés en mí desde el principio. Cuando me llamó una 'luz especial'... ¿era solo la sombra del senpai?*"
+        "text": "*Así que era eso. La razón por la que Yuna se interesó en mí desde el principio. Eso de 'una luz especial'... ¿era la sombra de Junho?*"
     },
     "day4_night_yuna_critical_choice": {
         "name": "Yo",
-        "text": "*...¿Qué debería decir?*",
+        "text": "*...¿Qué le digo?*",
         "choices": [
-            "\"No soy él. Soy yo. Pero aun así... lucharé a tu lado.\"",
-            "\"Aunque sea su reemplazo, está bien. Quiero ser la persona que necesitas.\"",
-            "\"...¿Entonces te acercaste a mí por él? ¿Como un sustituto?\""
+            "\"No soy él. Soy yo. Pero aun así, lucharé contigo.\"",
+            "\"No me importa si soy su sustituto. Quiero ser la persona que necesitas.\"",
+            "\"...¿Entonces te acercaste a mí por eso? ¿Como su reemplazo?\""
         ]
     },
     "day4_night_yuna_moved": {
         "name": "Yuna",
-        "text": "\"...Lo sé. Tú eres tú. Quizás al principio perseguía la sombra del senpai. Pero ahora...\""
+        "text": "\"...Lo sé. Tú eres tú. Puede que al principio persiguiera su sombra. Pero ahora...\""
     },
     "day4_night_yuna_moved_2": {
         "name": "Yuna",
@@ -342,19 +342,19 @@
     },
     "day4_night_yuna_touched": {
         "name": "Yuna",
-        "text": "\"Tonto... no puedes decir cosas así.\""
+        "text": "\"...Tonto. No puedes decir esas cosas así.\""
     },
     "day4_night_yuna_touched_2": {
         "name": "Yuna",
-        "text": "\"No eres un sustituto. Tú... ya eres más que suficiente, tal como eres.\""
+        "text": "\"No eres un sustituto. Tú ya eres suficiente siendo tú mismo.\""
     },
     "day4_night_yuna_confronted": {
         "name": "Yuna",
-        "text": "\"...\""
+        "text": "\"......\""
     },
     "day4_night_yuna_confronted_2": {
         "name": "Yuna",
-        "text": "\"...No lo negaré. Al principio, así era. Pero... mientras pasábamos tiempo juntos, eso cambió. Esto es real.\""
+        "text": "\"...No lo niego. Al principio era así. Pero al pasar tiempo juntos, cambió. Esto es de verdad.\""
     },
     "day4_night_yuna_confronted_3": {
         "name": "Yuna",
@@ -366,127 +366,127 @@
     },
     "day4_night_yuna_resolve_2": {
         "name": "Yuna",
-        "text": "\"Lo que el senpai no pudo terminar... esta vez quiero completarlo. Voy a denunciarlo a la Press and Junta de Educación.\""
+        "text": "\"Lo que él no pudo terminar. Esta vez lo acabaré. Denunciaré a los medios y a la junta de educación.\""
     },
     "day4_night_yuna_resolve_3": {
         "name": "Yo",
-        "text": "*Determinación llenaba los ojos de Yuna. Esto no era simple curiosidad. Había estado descubriendo la verdad sola durante un año entero.*"
+        "text": "*Los ojos de Yuna están llenos de determinación. Esto no es simple curiosidad. Lleva un año investigando esto sola.*"
     },
     "day4_night_yuna_resolve_4": {
         "name": "Yuna",
-        "text": "\"...Pero podría ser peligroso. La fundación no se quedará de brazos cruzados.\""
+        "text": "\"...Puede ser peligroso. La fundación no se quedará de brazos cruzados.\""
     },
     "day4_night_yuna_resolve_5": {
         "name": "Yo",
-        "text": "\"...Hagámoslo juntos. No lo cargues sola.\""
+        "text": "\"Hagámoslo juntos. No cargues con esto sola.\""
     },
     "day4_night_yuna_resolve_end": {
         "name": "Yuna",
-        "text": "\"...Sí.\""
+        "text": "\"...Vale.\""
     },
     "day4_night_yuna_exit": {
         "name": "Yo",
-        "text": "*Salimos de la escuela. La brisa fría de la noche soplaba, pero con Yuna a mi lado se sentía menos frío.*"
+        "text": "*Salimos de la escuela. El viento nocturno es frío, pero con Yuna al lado, se siente menos.*"
     },
     "day4_night_yuna_exit_2": {
         "name": "Yuna",
-        "text": "\"...Gracias por hoy. Es la primera vez que le cuento a alguien lo que he estado cargando sola.\""
+        "text": "\"...Gracias por lo de hoy. Es la primera vez que le cuento a alguien lo que cargaba sola.\""
     },
     "day4_night_yuna_exit_3": {
         "name": "Yuna",
-        "text": "\"...Fue un día pesado, ¿no?\""
+        "text": "\"...Ha sido un día pesado, ¿no?\""
     },
     "day4_night_yuna_exit_choice": {
         "name": "Yo",
-        "text": "*Bajo el cielo nocturno, Yuna sonríe torpemente.*",
+        "text": "*Yuna sonríe con timidez bajo el cielo nocturno.*",
         "choices": [
-            "\"No. Porque pude conocerte mejor.\"",
-            "\"La próxima vez, tengamos una cita de verdad. En un café o algo.\""
+            "\"No. Porque he conocido mejor a Yuna.\"",
+            "\"La próxima vez, tengamos una cita de verdad. En una cafetería o algo.\""
         ]
     },
     "day4_night_yuna_exit_warm": {
         "name": "Yuna",
-        "text": "\"...Eso no es justo, decir algo así.\""
+        "text": "\"...Eso es trampa.\""
     },
     "day4_night_yuna_exit_promise": {
         "name": "Yuna",
-        "text": "\"...Un café. Me gustaría. ¿Puedo elegir el lugar esta vez?\""
+        "text": "\"Una cafetería. Me gusta. ¿Esta vez puedo elegir yo?\""
     },
     "day4_night_yuna_farewell": {
         "name": "Yo",
-        "text": "*Yuna se detuvo cuando estaba a punto de darse vuelta. Y agarró mi cuello con fuerza.*"
+        "text": "*Yuna iba a girarse pero se detuvo. Y me agarró la manga con fuerza.*"
     },
     "day4_night_yuna_farewell_2": {
         "name": "Yuna",
-        "text": "\"No dejaré que mueras como él. Para protegerte... prefiero romperte y atarte a mi lado.\""
+        "text": "\"...Gracias por hoy. Decirlo en voz alta se siente un poco raro.\""
     },
     "day4_night_yuna_farewell_3": {
-        "name": "Yo",
-        "text": "\"Eres mío. No puedes ir a ningún lado.\""
+        "name": "Yuna",
+        "text": "\"...Ve con cuidado. Nos vemos mañana.\""
     },
     "day4_night_yuna_home": {
         "name": "Yo",
-        "text": "*Volví a casa. La mirada fría de Yuna y su agarre firme no salen de mi mente.*"
+        "text": "*Llegué a casa. No puedo olvidar las manos frías de Yuna ni su mirada firme.*"
     },
     "day4_night_yuna_home_2": {
         "name": "Yo",
-        "text": "*Tuve el presentimiento de que lo que ella quiso decir con 'proteger' podría ser diferente de lo que yo pensaba.*"
+        "text": "*El peso que Yuna ha cargado sola. Ahora tengo claro que quiero ayudarla a llevarlo.*"
     },
     "day4_night_seoyeon_call": {
         "name": "Yo",
-        "text": "*9 PM. Una llamada de Seoyeon.*"
+        "text": "*Las 9 de la noche. Seoyeon me llamó.*"
     },
     "day4_night_seoyeon_call_2_normal": {
         "name": "Seoyeon",
-        "text": "\"...Hola, soy yo. Si no estás ocupado... ¿podrías salir un momento?\""
+        "text": "\"...Soy yo. Si no estás ocupado, ¿puedes salir un momento?\""
     },
     "day4_night_seoyeon_angry_call": {
         "name": "Seoyeon",
-        "text": "\"...¿Por qué me mentiste ayer? Quiero hablar en persona. Si no estás ocupado... ¿podrías salir un momento?\""
+        "text": "\"...¿Por qué me mentiste ayer? Quiero hablar en persona. ¿Puedes salir?\""
     },
     "day4_night_seoyeon_call_3": {
         "name": "Yo",
-        "text": "*La voz de Seoyeon suena diferente de lo habitual. Sin calidez, y parece que está temblando.*"
+        "text": "*La voz de Seoyeon suena distinta a lo normal. Sin rastro de risa, como si le temblara.*"
     },
     "day4_night_seoyeon_call_4": {
         "name": "Seoyeon",
-        "text": "\"...¿Conoces el parque cerca de mi casa? Te espero ahí.\""
+        "text": "\"...¿Sabes el parque que hay delante de mi casa? Te espero ahí.\""
     },
     "day4_night_seoyeon_park": {
         "name": "Yo",
-        "text": "*Llegué al parque. Seoyeon estaba sentada sola en un banco. En vez de su uniforme pulcro de siempre, vestía ropa casual.*"
+        "text": "*Llegué al parque. Seoyeon está sentada sola en un banco. En vez del uniforme, lleva ropa cómoda.*"
     },
     "day4_night_seoyeon_park_2": {
         "name": "Seoyeon",
-        "text": "\"...Viniste. Perdón por llamarte tan de repente.\""
+        "text": "\"...Viniste. Perdona por llamarte así de repente.\""
     },
     "day4_night_seoyeon_park_3": {
         "name": "Yo",
-        "text": "*Los ojos de Seoyeon están rojos. ...¿Estaba llorando?*",
+        "text": "*Seoyeon tiene los ojos rojos. ¿Ha estado llorando?*",
         "choices": [
-            "\"¿Qué pasó? ¿Estás bien?\"",
+            "\"¿Qué ha pasado? ¿Estás bien?\"",
             "Sentarse a su lado sin decir nada"
         ]
     },
     "day4_night_seoyeon_concern": {
         "name": "Seoyeon",
-        "text": "\"...Si dijera que estoy bien, sería mentira.\""
+        "text": "\"...Si digo que estoy bien, sería mentira.\""
     },
     "day4_night_seoyeon_silent_sit": {
         "name": "Seoyeon",
-        "text": "\"...Gracias. Solo estar a mi lado... es lo mejor.\""
+        "text": "\"...Gracias. Que solo estés aquí a mi lado, eso es lo mejor.\""
     },
     "day4_night_seoyeon_open": {
         "name": "Seoyeon",
-        "text": "\"...Mamá llamó hoy. Ella y papá tuvieron otra pelea.\""
+        "text": "\"...Hoy me llamó mi madre. Se volvió a pelear con mi padre.\""
     },
     "day4_night_seoyeon_open_2": {
         "name": "Seoyeon",
-        "text": "\"Nuestra casa... se ve perfecta desde afuera, ¿verdad? Casa grande, carro bonito, hija presidenta del consejo estudiantil.\""
+        "text": "\"Mi familia parece perfecta por fuera, ¿no? Casa grande, buen coche, la hija presidenta del consejo.\""
     },
     "day4_night_seoyeon_open_3": {
         "name": "Seoyeon",
-        "text": "\"Pero en realidad... mamá y papá llevan un año viviendo como extraños bajo el mismo techo. Solo no han firmado el divorcio.\""
+        "text": "\"Pero mis padres llevan un año siendo completos desconocidos bajo el mismo techo. Solo les falta firmar el divorcio.\""
     },
     "day4_night_seoyeon_open_4": {
         "name": "Yo",
@@ -494,26 +494,26 @@
     },
     "day4_night_seoyeon_open_5": {
         "name": "Seoyeon",
-        "text": "\"Mamá dijo: 'Al menos tú tienes que ser perfecta para que esta familia se mantenga.' Así que... el consejo estudiantil, las calificaciones, no podía soltar nada.\""
+        "text": "\"Mi madre me dijo: 'Por lo menos tú tienes que ser perfecta para que esta familia se mantenga'. Por eso no podía soltar ni lo del consejo, ni las notas, nada.\""
     },
     "day4_night_seoyeon_open_6": {
         "name": "Seoyeon",
-        "text": "\"Tenía que sonreírle a todos. 'Seoyeon siempre es tan alegre,' 'Seoyeon es buena en todo.' Esas palabras... empezaron a sentirse como una prisión.\""
+        "text": "\"'Seoyeon siempre es tan alegre', 'Seoyeon todo lo hace bien'. Esas palabras se fueron convirtiendo en mi cárcel.\""
     },
     "day4_night_seoyeon_open_7": {
         "name": "Seoyeon",
-        "text": "\"No sonreía—estaba 'actuando' una sonrisa. Todos los días.\""
+        "text": "\"No estaba sonriendo. Estaba 'haciendo' sonrisas. Cada día.\""
     },
     "day4_night_seoyeon_tear": {
         "name": "Yo",
-        "text": "*Lágrimas cayeron de los ojos de Seoyeon. Brillando bajo la luz de la calle. Era la primera vez que la veía llorar.*"
+        "text": "*Las lágrimas caen por los ojos de Seoyeon. Lágrimas que brillan bajo la farola.*"
     },
     "day4_night_seoyeon_tear_choice": {
         "name": "Yo",
-        "text": "*Seoyeon está llorando. Nunca había visto este lado de ella.*",
+        "text": "*Seoyeon está llorando. Es la primera vez que la veo así.*",
         "choices": [
             "Abrazar a Seoyeon",
-            "Ofrecer una promesa de meñique"
+            "Ofrecerle el meñique"
         ]
     },
     "day4_night_seoyeon_hug": {
@@ -522,43 +522,43 @@
     },
     "day4_night_seoyeon_hug_2": {
         "name": "Yo",
-        "text": "*Seoyeon enterró su cara en mi pecho. Sus pequeños hombros temblaban.*"
+        "text": "*Seoyeon hundió la cara en mi pecho. Sus pequeños hombros tiemblan.*"
     },
     "day4_night_seoyeon_hug_3": {
         "name": "Seoyeon",
-        "text": "\"...Hace tanto que no lloraba así. Llorar frente a alguien... es la primera vez.\""
+        "text": "\"...Hace mucho que no lloraba así. Y llorar delante de alguien, es la primera vez.\""
     },
     "day4_night_seoyeon_pinky": {
         "name": "Yo",
-        "text": "\"Te lo prometo. Cuando quieras llorar, puedes llorar conmigo.\""
+        "text": "\"Te lo prometo. Cuando quieras llorar, puedes hacerlo conmigo.\""
     },
     "day4_night_seoyeon_pinky_2": {
         "name": "Seoyeon",
-        "text": "\"...¿Una promesa de meñique?\""
+        "text": "\"...¿El meñique?\""
     },
     "day4_night_seoyeon_pinky_3": {
         "name": "Yo",
-        "text": "*Seoyeon entrelazó su meñique tembloroso con el mío. Y entonces las lágrimas que había contenido se desbordaron.*"
+        "text": "*Seoyeon enganchó su meñique al mío con la mano temblando. Y entonces se le escapó todo el llanto que estaba conteniendo.*"
     },
     "day4_night_seoyeon_pinky_4": {
         "name": "Seoyeon",
-        "text": "\"...Tonto, ¿por qué eres... tan amable conmigo...\""
+        "text": "\"...Tonto, ¿por qué eres tan bueno conmigo...\""
     },
     "day4_night_seoyeon_real": {
         "name": "Seoyeon",
-        "text": "\"...La verdad es que incluso durante nuestra cita hoy, tenía miedo. ¿Puedo ser tan feliz? ¿Esta felicidad también se derrumbará?\""
+        "text": "\"...Incluso durante la cita de hoy tenía miedo. Si está bien que sea tan feliz. Si esto también se va a derrumbar pronto.\""
     },
     "day4_night_seoyeon_real_2": {
         "name": "Seoyeon",
-        "text": "\"¿Estás... bien con una yo que no es perfecta?\""
+        "text": "\"A ti... ¿te parece bien una yo que no es perfecta?\""
     },
     "day4_night_seoyeon_real_choice": {
         "name": "Yo",
         "text": "*Seoyeon me mira con ojos temblorosos.*",
         "choices": [
-            "\"Me gusta más la Seoyeon de ahora que la perfecta.\"",
-            "\"No la presidenta Seoyeon—solo Seoyeon es mi novia.\"",
-            "\"Sinceramente, siempre pensé que eras perfecta. Pero... gracias por mostrarme este lado también.\""
+            "\"Prefiero a esta Seoyeon antes que a la perfecta.\"",
+            "\"Mi novia no es la presidenta del consejo. Es simplemente Seoyeon.\"",
+            "\"La verdad, pensaba que eras perfecta. Pero gracias por mostrarme este lado.\""
         ]
     },
     "day4_night_seoyeon_accept": {
@@ -567,7 +567,7 @@
     },
     "day4_night_seoyeon_accept_2": {
         "name": "Seoyeon",
-        "text": "\"...Nunca olvidaré esas palabras. Si lo hago... hicimos una promesa de meñique, después de todo.\""
+        "text": "\"Esas palabras no las voy a olvidar en la vida. Es una promesa.\""
     },
     "day4_night_seoyeon_gf": {
         "name": "Seoyeon",
@@ -575,7 +575,7 @@
     },
     "day4_night_seoyeon_gf_2": {
         "name": "Seoyeon",
-        "text": "\"...Ay, mi corazón late tan fuerte que me voy a morir. No puedes decir cosas así de repente...\""
+        "text": "\"Siento que me va a explotar el corazón. No puedes soltar eso así de repente...\""
     },
     "day4_night_seoyeon_honest": {
         "name": "Seoyeon",
@@ -583,95 +583,95 @@
     },
     "day4_night_seoyeon_honest_2": {
         "name": "Seoyeon",
-        "text": "\"De ahora en adelante... no voy a actuar frente a ti. Lo prometo.\""
+        "text": "\"A partir de ahora, contigo al menos no voy a actuar. Lo prometo.\""
     },
     "day4_night_seoyeon_resolve": {
         "name": "Seoyeon",
-        "text": "\"...Sabes qué, he tomado una decisión.\""
+        "text": "\"...He tomado una decisión.\""
     },
     "day4_night_seoyeon_resolve_2": {
         "name": "Seoyeon",
-        "text": "\"Voy a decirle a mamá. Que quiero ser yo misma antes de ser 'la hija perfecta.'\""
+        "text": "\"Voy a hablar con mi madre. Quiero ser yo misma antes que 'la hija perfecta'.\""
     },
     "day4_night_seoyeon_resolve_3": {
         "name": "Seoyeon",
-        "text": "\"Ya que viste mi peor lado... ahora nunca podrás dejarme.\""
+        "text": "\"...Hoy me he portado un poco patética. Mañana lo compenso.\""
     },
     "day4_night_seoyeon_resolve_4": {
         "name": "Yo",
-        "text": "\"...¿Seoyeon?\""
+        "text": "\"¿Patética? Esta Seoyeon me gusta más.\""
     },
     "day4_night_seoyeon_resolve_end": {
         "name": "Seoyeon",
-        "text": "\"Si le sonríes a otra chica... no sé qué haré entonces. ¿Entendido?\""
+        "text": "\"...¿Eso es verdad? ¿Te acuerdas? Ya eres completamente mío. Si le dices eso a otra chica, no respondo.\""
     },
     "day4_night_seoyeon_farewell": {
         "name": "Yo",
-        "text": "*Salimos del parque y caminamos juntos hasta mi casa. Seoyeon se aferró a mi brazo y no me soltaba.*"
+        "text": "*Salimos del parque y caminamos juntos hasta su casa. Seoyeon se agarró a mi brazo y no me soltó.*"
     },
     "day4_night_seoyeon_farewell_2": {
         "name": "Seoyeon",
-        "text": "\"...Hoy te mostré un lado feo de mí, pero no huiste. Me alegro.\""
+        "text": "\"Te enseñé mi lado más feo y no has salido corriendo. Punto negativo cancelado.\""
     },
     "day4_night_seoyeon_farewell_3": {
         "name": "Yo",
-        "text": "\"¿Huir? En realidad me gustas más ahora.\""
+        "text": "\"Sabes que si huyes te persigo.\""
     },
     "day4_night_seoyeon_farewell_4": {
         "name": "Seoyeon",
-        "text": "\"...Nunca olvides esas palabras. Eres mío ahora.\""
+        "text": "\"...Esa frase es mía. Ladrón.\""
     },
     "day4_night_seoyeon_farewell_5": {
         "name": "Yo",
-        "text": "*Mientras Seoyeon se daba vuelta, hizo una sonrisa fría pero dulce.*"
+        "text": "*Seoyeon se giró sonriendo. Una sonrisa fría y dulce a la vez.*"
     },
     "day4_night_seoyeon_farewell_6": {
         "name": "Seoyeon",
-        "text": "\"...Hoy, por primera vez, sentí que 'está bien ser yo misma.' Gracias.\""
+        "text": "\"...Hoy, por primera vez, sentí que 'está bien ser yo'. Gracias.\""
     },
     "day4_night_seoyeon_home": {
         "name": "Yo",
-        "text": "*Volví a casa. Las lágrimas de Seoyeon siguen viniendo a mi mente. El rostro real detrás de la perfecta presidenta del consejo estudiantil... quiero compartir esa carga pesada.*"
+        "text": "*Llegué a casa. Las lágrimas de Seoyeon no se me van de la cabeza. La verdadera cara de la presidenta perfecta. Quiero ayudarla a cargar con ese peso.*"
     },
     "day4_night_seoyeon_home_2": {
         "name": "Yo",
-        "text": "*Mañana... quiero que su sonrisa venga del corazón, no de la actuación.*"
+        "text": "*Mañana quiero que cuando Seoyeon sonría, sea de verdad y no actuación.*"
     },
     "day4_night_dain_gym": {
         "name": "Yo",
-        "text": "*9:30 PM. Un mensaje de Dain. 'Oye, ¿estás libre ahora?? jaja ¿Puedes venir a la escuela??'*"
+        "text": "*Las 9 y media de la noche. Mensaje de Dain. 'Ey, ¿tienes tiempo? jaja ¿no vendrás a la escuela, no??'*"
     },
     "day4_night_dain_gym_2": {
         "name": "Yo",
-        "text": "*Otro mensaje enseguida. 'Olvídalo, solo ven jaja ¡La puerta trasera del gimnasio está abierta!'*"
+        "text": "*Enseguida otro. 'Bueno, ven jaja ¡La puerta de atrás del gimnasio está abierta!'*"
     },
     "day4_night_dain_gym_3": {
         "name": "Yo",
-        "text": "*¿Dain en el gimnasio de la escuela a esta hora? Algo se siente raro... Vamos a ver.*"
+        "text": "*¿El gimnasio a estas horas? Es raro, pero voy a ir.*"
     },
     "day4_night_dain_arrive": {
         "name": "Yo",
-        "text": "*Entré al gimnasio. En la oscuridad iluminada solo por luces de emergencia, Dain estaba sola, golpeando un balón de voleibol.*"
+        "text": "*Al entrar al gimnasio, solo las luces de emergencia iluminan la cancha oscura. Dain está sola botando un balón de voleibol.*"
     },
     "day4_night_dain_arrive_2": {
         "name": "Dain",
-        "text": "\"¡Oh! ¿¡De verdad viniste!? Jeje, ¡ese es mi novio!\""
+        "text": "\"¡¡Oh!! ¿¡Has venido de verdad?! ¡¡Ese es mi novio!!\""
     },
     "day4_night_dain_arrive_3": {
         "name": "Yo",
-        "text": "*Pero... algo no está bien. Dain parece estar sonriendo más de lo normal.*"
+        "text": "*Pero algo no cuadra. Parece que Dain se está esforzando más de la cuenta en sonreír.*"
     },
     "day4_night_dain_spike": {
         "name": "Dain",
-        "text": "\"¡Levántame un pase! ¡Solo uno! ¡¡Te mostraré mi remate!!\""
+        "text": "\"¡¡Hazme un pase!! ¡¡Solo uno!! ¡¡Te enseño mi remate!!\""
     },
     "day4_night_dain_spike_2": {
         "name": "Yo",
-        "text": "*Le lancé el pase a Dain. Ella saltó alto y clavó el remate.*"
+        "text": "*Le levanté el pase. Dain salta alto y clava un remate brutal.*"
     },
     "day4_night_dain_spike_3": {
         "name": "Yo",
-        "text": "*En el momento de aterrizar— Dain agarró su rodilla derecha y se desplomó al suelo.*"
+        "text": "*Al aterrizar, Dain se agarra la rodilla derecha y se encoge.*"
     },
     "day4_night_dain_hurt": {
         "name": "Dain",
@@ -683,35 +683,35 @@
     },
     "day4_night_dain_hurt_3": {
         "name": "Dain",
-        "text": "\"¡Ay ay! ¡¡Estoy bien!! Solo se torció un poco jaja, no es nada...\""
+        "text": "\"¡No no! ¡¡Estoy bien!! ¡Solo me torcí un poco, jaja! No es na...\""
     },
     "day4_night_dain_hurt_4": {
         "name": "Yo",
-        "text": "*Dain está sonriendo, pero su mano agarrando la rodilla está blanca.*",
+        "text": "*Dain sonríe, pero la mano que sujeta su rodilla está blanca de la presión.*",
         "choices": [
-            "\"No mientas. Déjame ver.\"",
+            "\"No me engañes. Déjame ver.\"",
             "\"Dain. No estás bien.\""
         ]
     },
     "day4_night_dain_check": {
         "name": "Yo",
-        "text": "*Cuando intenté ver la rodilla de Dain, ella se sobresaltó y retrocedió.*"
+        "text": "*Cuando intenté mirarle la rodilla, Dain retrocedió de un salto.*"
     },
     "day4_night_dain_serious": {
         "name": "Dain",
-        "text": "\"...\""
+        "text": "\"......\""
     },
     "day4_night_dain_secret": {
         "name": "Dain",
-        "text": "\"...Está bien. Estaba tratando de ocultarlo.\""
+        "text": "\"...Vale. Intenté esconderlo.\""
     },
     "day4_night_dain_secret_2": {
         "name": "Yo",
-        "text": "*Dain se levantó la rodillera. Su rodilla estaba muy hinchada.*"
+        "text": "*Dain se levantó la rodillera. La rodilla está muy hinchada.*"
     },
     "day4_night_dain_secret_3": {
         "name": "Dain",
-        "text": "\"...Ligamento cruzado anterior roto. Me lesioné el año pasado. Me operaron pero... nunca sanó completamente.\""
+        "text": "\"El ligamento cruzado anterior. Me lo rompí el año pasado. Me operaron pero no se curó del todo.\""
     },
     "day4_night_dain_secret_4": {
         "name": "Yo",
@@ -719,96 +719,96 @@
     },
     "day4_night_dain_secret_5": {
         "name": "Dain",
-        "text": "\"El doctor dijo: 'La vida diaria está bien, pero jugar como antes es demasiado.'\""
+        "text": "\"El médico me dijo: 'La vida diaria no hay problema, pero jugar como antes es imposible'.\""
     },
     "day4_night_dain_secret_6": {
         "name": "Dain",
-        "text": "\"Beca deportiva, volverse profesional... Todo se fue. Así nada más.\""
+        "text": "\"La universidad deportiva, ser jugadora profesional... todo se fue al agua.\""
     },
     "day4_night_dain_dream": {
         "name": "Yo",
-        "text": "*...Para Dain, que vivía para el voleibol, eso debió haber sido una sentencia de muerte.*"
+        "text": "*Para Dain, que vivía por el voleibol, eso es como una sentencia de muerte.*"
     },
     "day4_night_dain_dream_2": {
         "name": "Dain",
-        "text": "\"...¿Sabes cómo siempre sonrío? Nadie sabe que es una actuación.\""
+        "text": "\"...¿Sabes? Cada día he sonreído como si nada. Sin que nadie se enterara.\""
     },
     "day4_night_dain_dream_3": {
         "name": "Dain",
-        "text": "\"'¡Dain siempre tiene tanta energía!' Cada vez que escucho eso... me río de verdad. Pero por dentro, mi rodilla arde todos los días.\""
+        "text": "\"'¡Dain siempre tiene tanta energía!' Cada vez que oía eso, me hacía gracia. Porque por dentro, la rodilla me quemaba cada día.\""
     },
     "day4_night_dain_dream_4": {
         "name": "Dain",
-        "text": "\"Incluso en nuestra cita hoy, cuando corríamos... en realidad me dolía. Pero no quería demostrarlo.\""
+        "text": "\"Hoy durante la cita, cuando corría, también me dolía. Pero no quería que se notara.\""
     },
     "day4_night_dain_dream_5": {
         "name": "Dain",
-        "text": "\"Sé que tengo que dejarlo ir. Pero... solo quería saltar una vez más. En esta cancha.\""
+        "text": "\"Sé que tengo que dejarlo. Pero quería saltar una vez más. En esta cancha.\""
     },
     "day4_night_dain_cry": {
         "name": "Yo",
-        "text": "*Dain abrazó el balón de voleibol con fuerza y bajó la cabeza. Sus hombros temblaban. La chica que siempre era alegre y brillante... estaba llorando.*"
+        "text": "*Dain abraza el balón y baja la cabeza. Le tiemblan los hombros. La que siempre era pura alegría, está llorando.*"
     },
     "day4_night_dain_cry_choice": {
         "name": "Yo",
-        "text": "*...¿Qué digo?*",
+        "text": "*...¿Qué le digo?*",
         "choices": [
-            "\"Tu sueño no es solo el voleibol. Busquemos un nuevo sueño juntos.\"",
+            "\"El sueño de Dain no tiene por qué ser solo el voleibol. Busquemos uno nuevo juntos.\"",
             "\"Puedes llorar. No tienes que fingir estar bien. No conmigo.\"",
-            "\"...¿Quieres que lance uno más? Una última vez.\""
+            "\"...¿Te levanto un último pase?\""
         ]
     },
     "day4_night_dain_future": {
         "name": "Dain",
-        "text": "\"...¿Un nuevo sueño?\""
+        "text": "\"...¿Un sueño nuevo?\""
     },
     "day4_night_dain_future_2": {
         "name": "Dain",
-        "text": "\"...Lo he pensado. Entrenadora, preparadora física... Me gusta enseñar a la gente.\""
+        "text": "\"...Algo como entrenadora, o preparadora física. Enseñar sí que me gusta.\""
     },
     "day4_night_dain_future_3": {
         "name": "Yo",
-        "text": "\"Serías la entrenadora más apasionada del mundo.\""
+        "text": "\"Dain sería la entrenadora más apasionada del mundo.\""
     },
     "day4_night_dain_future_4": {
         "name": "Dain",
-        "text": "\"...Tonto, si dices cosas así voy a llorar otra vez...\""
+        "text": "\"...Tonto, si dices esas cosas me voy a poner a llorar...\""
     },
     "day4_night_dain_tears_ok": {
         "name": "Dain",
-        "text": "\"...\""
+        "text": "\"......\""
     },
     "day4_night_dain_tears_ok_2": {
         "name": "Dain",
-        "text": "\"...Tonto... si dices eso... de verdad voy a llorar...!!\""
+        "text": "\"...Tonto de remate... ¡¡si dices eso me pongo a llorar de verdad...!!\""
     },
     "day4_night_dain_tears_ok_3": {
         "name": "Yo",
-        "text": "*Dain enterró su cara en mi pecho y empezó a sollozar. Sus llantos resonaron por el gimnasio vacío.*"
+        "text": "*Dain hundió la cara en mi pecho y empezó a llorar. Sus sollozos resuenan en el gimnasio.*"
     },
     "day4_night_dain_tears_ok_4": {
         "name": "Dain",
-        "text": "\"...No podía decírselo a nadie... todos los días, sola... tenía mucho miedo...\""
+        "text": "\"...No podía contárselo a nadie... cada día sola... tenía mucho miedo...\""
     },
     "day4_night_dain_last_spike": {
         "name": "Dain",
-        "text": "\"...¿Una última vez?\""
+        "text": "\"...¿El último?\""
     },
     "day4_night_dain_last_spike_2": {
         "name": "Yo",
-        "text": "\"No 'última'—es 'el último salto antes de un nuevo comienzo.'\""
+        "text": "\"No es el último. Es 'el último salto antes de un nuevo comienzo'.\""
     },
     "day4_night_dain_last_spike_3": {
         "name": "Yo",
-        "text": "*Lancé el balón. Dain apretó los dientes y saltó, clavando el mejor remate que había visto. Agarró su rodilla al aterrizar... pero estaba sonriendo.*"
+        "text": "*Le levanté el pase. Dain apretó los dientes, saltó y clavó el mejor remate de su vida. Al aterrizar se agarró la rodilla, pero está sonriendo.*"
     },
     "day4_night_dain_last_spike_4": {
         "name": "Dain",
-        "text": "\"...Jaja. Duele. Pero... se sintió increíble.\""
+        "text": "\"...Jaja. Duele. Pero qué alivio.\""
     },
     "day4_night_dain_last_spike_5": {
         "name": "Dain",
-        "text": "\"...Gracias. Creo que ahora sí puedo dejarlo ir.\""
+        "text": "\"...Gracias. Con esto creo que de verdad puedo dejarlo ir.\""
     },
     "day4_night_dain_resolve": {
         "name": "Dain",
@@ -816,11 +816,11 @@
     },
     "day4_night_dain_resolve_2": {
         "name": "Dain",
-        "text": "\"He decidido. Voy a hablar con mi doctor seriamente y concentrarme en la rehabilitación.\""
+        "text": "\"He tomado una decisión. Voy a hablar con mi médico en serio y centrarme en la rehabilitación.\""
     },
     "day4_night_dain_resolve_3": {
         "name": "Dain",
-        "text": "\"Si nunca puedo volver a jugar voleibol... tú tendrás que hacerte responsable de toda mi vida. ¿Entendido?\""
+        "text": "\"Pero si al final no puedo volver a jugar al voleibol... tú te haces responsable. ¿Entendido?\""
     },
     "day4_night_dain_resolve_4": {
         "name": "Yo",
@@ -828,91 +828,91 @@
     },
     "day4_night_dain_resolve_end": {
         "name": "Dain",
-        "text": "\"No es broma. Eres mío ahora, así que ni pienses en escapar. Aunque mis piernas se rompan, te perseguiré.\""
+        "text": "\"No es broma. Ahora eres mío. Ni se te ocurra escapar.\""
     },
     "day4_night_dain_farewell": {
         "name": "Yo",
-        "text": "*Salimos del gimnasio. Dain enlazó su brazo fuertemente con el mío, con fuerza como si nunca fuera a soltarme.*"
+        "text": "*Salimos del gimnasio. Dain se cuelga de mi brazo y no me suelta.*"
     },
     "day4_night_dain_farewell_2": {
         "name": "Dain",
-        "text": "\"...Ya que viste todas mis debilidades hoy, ya no puedes escapar de mí. Solo levanta tosses a mi lado por el resto de tu vida.\""
+        "text": "\"Oye, hoy casi me haces llorar, ¿eh? jaja Pero curiosamente no me siento mal.\""
     },
     "day4_night_dain_farewell_3": {
         "name": "Yo",
-        "text": "\"Ese lado tuyo también me gustó.\""
+        "text": "\"Has llorado. No 'casi'.\""
     },
     "day4_night_dain_farewell_4": {
         "name": "Dain",
-        "text": "\"...¿Eh? ¿Quién dice 'me gustó' sobre su novia llorando? Raro.\""
+        "text": "\"...¡¡Jaja oye, eso es secreto!!\""
     },
     "day4_night_dain_farewell_5": {
         "name": "Dain",
-        "text": "\"...Pero gracias. De verdad. Sin ti, habría seguido cargando esto sola para siempre.\""
+        "text": "\"Pero gracias. De verdad. Si no fuera por ti, habría cargado con esto sola para siempre.\""
     },
     "day4_night_dain_farewell_6": {
         "name": "Dain",
-        "text": "\"...A partir de mañana, sonreiré de verdad. No en falso—de verdad.\""
+        "text": "\"A partir de mañana voy a sonreír de verdad. Sin fingir.\""
     },
     "day4_night_dain_home": {
         "name": "Yo",
-        "text": "*Volví a casa. Las lágrimas de Dain en el gimnasio siguen apareciendo ante mis ojos. El dolor que escondía detrás de su constante alegría... pesa en mi corazón.*"
+        "text": "*Llegué a casa. La imagen de Dain en el gimnasio me viene a la mente. La que siempre era pura alegría escondía tanto dolor.*"
     },
     "day4_night_dain_home_2": {
         "name": "Yo",
-        "text": "*Mañana... quiero que sea un día en el que Dain pueda sonreír de corazón. Estaré ahí a su lado.*"
+        "text": "*Ojalá mañana sea un día en el que Dain sonría de corazón. Estaré ahí para verlo.*"
     },
     "day4_night_teacher_call": {
         "name": "Yo",
-        "text": "*9 PM. Una llamada de la profesora.*"
+        "text": "*Las 9 de la noche. La profesora me llamó.*"
     },
     "day4_night_teacher_call_2": {
         "name": "Profesora",
-        "text": "\"...¿Hola? Soy yo. ¿Estás... libre ahora?\""
+        "text": "\"...Soy yo. ¿Tienes un momento?\""
     },
     "day4_night_teacher_call_3": {
         "name": "Yo",
-        "text": "*Su voz suena diferente de lo habitual. No es la voz segura del aula... suena como si estuviera a punto de quebrarse.*"
+        "text": "*La voz de la profesora suena distinta. No es la seguridad del aula, sino algo agotado.*"
     },
     "day4_night_teacher_call_4": {
         "name": "Profesora",
-        "text": "\"...Hay un café cerca de la escuela. ¿Podemos vernos ahí?\""
+        "text": "\"¿Sabes la cafetería cerca de la escuela? Vamos a vernos ahí un momento.\""
     },
     "day4_night_teacher_cafe": {
         "name": "Yo",
-        "text": "*Llegué al café. Estaba sentada en un rincón. En vez de su atuendo habitual, vestía ropa casual.*"
+        "text": "*Llegué a la cafetería. La profesora está sentada en un rincón. Ropa casual.*"
     },
     "day4_night_teacher_cafe_2": {
         "name": "Profesora",
-        "text": "\"...Gracias por venir. Perdón por llamarte tan de repente.\""
+        "text": "\"Gracias por venir. Perdona por llamarte así de repente.\""
     },
     "day4_night_teacher_cafe_3": {
         "name": "Yo",
-        "text": "*Sus ojos están rojos. ...¿Estaba llorando?*",
+        "text": "*Tiene los ojos rojos. ¿Ha llorado?*",
         "choices": [
-            "\"¿Pasó algo?\"",
-            "Ofrecerle café y esperar en silencio"
+            "\"¿Ha pasado algo?\"",
+            "Le paso un café y espero en silencio"
         ]
     },
     "day4_night_teacher_concern": {
         "name": "Profesora",
-        "text": "\"...No es tanto que algo haya pasado. Solo... pensé mucho hoy.\""
+        "text": "\"...Más que algo que haya pasado, hoy he estado dándole muchas vueltas a las cosas.\""
     },
     "day4_night_teacher_wait": {
         "name": "Profesora",
-        "text": "\"...Gracias. Solo estar a mi lado sin decir nada... me gusta mucho eso de ti.\""
+        "text": "\"...Gracias. Que estés ahí sin decir nada, eso es lo que más me gusta de ti.\""
     },
     "day4_night_teacher_open": {
         "name": "Profesora",
-        "text": "\"...En la reunión de profesores ayer, el subdirector dijo: 'Tengan cuidado de no acercarse demasiado personalmente a los estudiantes.'\""
+        "text": "\"Ayer en la reunión de profesores, el subdirector dijo: 'Hay que tener cuidado con las relaciones personales con los alumnos'.\""
     },
     "day4_night_teacher_open_2": {
         "name": "Profesora",
-        "text": "\"Quizás no era sobre nosotros directamente. Pero... casi se me para el corazón.\""
+        "text": "\"Puede que no se refiriera a nosotros. Pero sentí que el corazón se me paraba.\""
     },
     "day4_night_teacher_open_3": {
         "name": "Profesora",
-        "text": "\"Soy... una profesora. Tu profesora de aula. Sé que esto no está bien.\""
+        "text": "\"Soy tu profesora. Tu tutora. Sé que esto no está bien.\""
     },
     "day4_night_teacher_open_4": {
         "name": "Yo",
@@ -920,26 +920,26 @@
     },
     "day4_night_teacher_open_5": {
         "name": "Profesora",
-        "text": "\"Pero de camino a casa, no dejaba de pensar en ti. '¿Qué estará haciendo ahora?' '¿Ya comió?'...\""
+        "text": "\"Pero de vuelta a casa, no dejaba de pensar en ti. '¿Qué estará haciendo?', '¿Habrá cenado?'...\""
     },
     "day4_night_teacher_open_6": {
         "name": "Profesora",
-        "text": "\"¿No estoy calificada para ser profesora? O... ¿es porque estos sentimientos son reales que me siento así?\""
+        "text": "\"¿Es que no valgo como profesora? ¿O es porque lo que siento es real?\""
     },
     "day4_night_teacher_tear": {
         "name": "Yo",
-        "text": "*Ella agarró su taza de café con fuerza y bajó la cabeza. Sus hombros temblaban ligeramente.*"
+        "text": "*La profesora aprieta la taza de café y baja la cabeza. Le tiemblan ligeramente los hombros.*"
     },
     "day4_night_teacher_tear_2": {
         "name": "Profesora",
-        "text": "\"...Ja, perdón. Una profesora no debería estar así frente a un estudiante.\""
+        "text": "\"...Ja, perdona. Una profesora no debería hacer esto delante de un alumno.\""
     },
     "day4_night_teacher_tear_choice": {
         "name": "Yo",
-        "text": "*Hay lágrimas brillando en las esquinas de sus ojos.*",
+        "text": "*En los ojos de la profesora se acumulan las lágrimas.*",
         "choices": [
-            "Tomar su mano",
-            "\"Ahora mismo, no eres mi profesora—eres una mujer que me importa\""
+            "Tomarle la mano",
+            "\"Ahora mismo no es profesora. Es una mujer. Y está bien así\""
         ]
     },
     "day4_night_teacher_hold": {
@@ -948,15 +948,15 @@
     },
     "day4_night_teacher_hold_2": {
         "name": "Yo",
-        "text": "*Tomé su mano bajo la mesa. Sus dedos fríos poco a poco se calentaron.*"
+        "text": "*Le tomé la mano por debajo de la mesa. Su mano fría poco a poco se va calentando.*"
     },
     "day4_night_teacher_hold_3": {
         "name": "Profesora",
-        "text": "\"...No deberíamos hacer esto aquí. Alguien podría ver.\""
+        "text": "\"...No deberíamos hacer esto aquí. Podría vernos alguien.\""
     },
     "day4_night_teacher_hold_4": {
         "name": "Profesora",
-        "text": "\"...Pero no quiero soltar.\""
+        "text": "\"...Pero no quiero soltarte.\""
     },
     "day4_night_teacher_woman": {
         "name": "Profesora",
@@ -964,7 +964,7 @@
     },
     "day4_night_teacher_woman_2": {
         "name": "Yo",
-        "text": "\"Antes de ser profesora, eres una persona. Está bien llorar cuando quieras llorar.\""
+        "text": "\"Antes que profesora, es una persona. Cuando quiera llorar, puede llorar.\""
     },
     "day4_night_teacher_woman_3": {
         "name": "Profesora",
@@ -972,207 +972,207 @@
     },
     "day4_night_teacher_woman_4": {
         "name": "Profesora",
-        "text": "\"...Si dices cosas así, de verdad voy a llorar, tonto.\""
+        "text": "\"Si dices eso, voy a llorar de verdad, tonto.\""
     },
     "day4_night_teacher_real": {
         "name": "Profesora",
-        "text": "\"...Sabes, cuando me convertí en profesora por primera vez, me prometí que nunca tendría sentimientos por un estudiante.\""
+        "text": "\"...Cuando empecé como profesora, me prometí a mí misma: 'Nunca tendré sentimientos por un alumno'.\""
     },
     "day4_night_teacher_real_2": {
         "name": "Profesora",
-        "text": "\"Pero entonces llegaste tú... y rompiste esa promesa antes de que me diera cuenta.\""
+        "text": "\"Pero tú, en algún momento, hiciste que esa promesa se viniera abajo.\""
     },
     "day4_night_teacher_real_3": {
         "name": "Profesora",
-        "text": "\"Cuando te regañé por llegar tarde, solo sonreíste y dijiste: '¿Se ve cansada hoy, está bien?' en vez de dar excusas.\""
+        "text": "\"Te regañé por llegar tarde y tú, sonriendo, me dijiste: 'Profesora, hoy parece cansada, ¿está bien?'.\""
     },
     "day4_night_teacher_real_4": {
         "name": "Profesora",
-        "text": "\"Desde entonces... empecé a fijarme en ti.\""
+        "text": "\"Desde entonces no dejé de fijarme en ti.\""
     },
     "day4_night_teacher_real_choice": {
         "name": "Yo",
-        "text": "*Ella está hablando con el corazón, con voz temblorosa.*",
+        "text": "*La profesora habla con la voz temblorosa, diciendo lo que siente de verdad.*",
         "choices": [
-            "\"Cuando me gradúe, estaré orgullosamente a tu lado\"",
-            "\"Este momento ahora es precioso. Eso es suficiente para mí\"",
-            "\"Si es muy difícil para ti, podemos parar\""
+            "\"Cuando me gradúe, estaré a su lado sin esconderme\"",
+            "\"Este momento, ahora mismo, es lo que importa. Con eso basta\"",
+            "\"Si le resulta muy difícil, puede dejarlo\""
         ]
     },
     "day4_night_teacher_graduate": {
         "name": "Profesora",
-        "text": "\"...¿Después de que te gradúes?\""
+        "text": "\"...¿Cuando te gradúes?\""
     },
     "day4_night_teacher_graduate_2": {
         "name": "Profesora",
-        "text": "\"...¿Esperarás hasta entonces?\""
+        "text": "\"¿Vas a esperarme hasta entonces?\""
     },
     "day4_night_teacher_graduate_3": {
         "name": "Yo",
-        "text": "\"No estoy esperando—voy a convertirme en alguien aún mejor para entonces.\""
+        "text": "\"No es esperar. Es que para entonces, voy a ser alguien aún mejor.\""
     },
     "day4_night_teacher_graduate_4": {
         "name": "Profesora",
-        "text": "\"...Dios, en serio. Eres mucho más maduro que yo.\""
+        "text": "\"...Ja, ¿no eres tú mucho más maduro que yo?\""
     },
     "day4_night_teacher_present": {
         "name": "Profesora",
-        "text": "\"...¿Este momento ahora?\""
+        "text": "\"...¿Este momento?\""
     },
     "day4_night_teacher_present_2": {
         "name": "Yo",
-        "text": "\"Podemos preocuparnos por mañana cuando llegue. Ahora mismo, solo quiero estar aquí contigo.\""
+        "text": "\"Las preocupaciones de mañana son para mañana. Ahora solo quiero estar con usted.\""
     },
     "day4_night_teacher_present_3": {
         "name": "Profesora",
-        "text": "\"...Tienes razón. Ahora mismo... este tiempo juntos es lo que importa.\""
+        "text": "\"...Tienes razón. Lo que importa es este momento.\""
     },
     "day4_night_teacher_give_up": {
         "name": "Profesora",
-        "text": "\"...¿Parar?\""
+        "text": "\"...¿Que lo deje?\""
     },
     "day4_night_teacher_give_up_2": {
         "name": "Profesora",
-        "text": "\"...Tonto. No estoy luchando porque quiera parar.\""
+        "text": "\"Tonto. No estoy dudando porque quiera dejarlo.\""
     },
     "day4_night_teacher_give_up_3": {
         "name": "Profesora",
-        "text": "\"Es porque mis sentimientos son reales... eso es lo que me asusta.\""
+        "text": "\"Es que me asusta que lo que siento por ti sea real.\""
     },
     "day4_night_teacher_resolve": {
         "name": "Profesora",
-        "text": "\"...¿Sabes qué?\""
+        "text": "\"...Oye.\""
     },
     "day4_night_teacher_resolve_2": {
         "name": "Profesora",
-        "text": "\"He tomado una decisión. No me importa si pierdo mi puesto como profesora.\""
+        "text": "\"He tomado una decisión. En la escuela soy tu profesora, pero en estos momentos, seré yo misma.\""
     },
     "day4_night_teacher_resolve_3": {
         "name": "Profesora",
-        "text": "\"Si nos descubren... te encerraré en mi cuarto donde nadie pueda verte. Así solo yo podré verte para siempre, ¿verdad?\""
+        "text": "\"Un alumno no debería decir esas cosas... pero yo también, tonto.\""
     },
     "day4_night_teacher_resolve_4": {
         "name": "Yo",
-        "text": "\"...¿Profesora?\""
+        "text": "\"...Profesora.\""
     },
     "day4_night_teacher_resolve_end": {
         "name": "Profesora",
-        "text": "\"No es broma. Eres mi cómplice ahora. Nunca podrás escapar.\""
+        "text": "\"No te hagas demasiado amigo de las chicas de clase. Tengo poder para bajarte la nota. ...Es broma. A medias.\""
     },
     "day4_night_teacher_farewell": {
         "name": "Yo",
-        "text": "*Salimos del café. Caminamos juntos por la calle nocturna. La profesora entrelazó sus dedos con los míos y no me soltaba.*"
+        "text": "*Salimos de la cafetería. Caminamos juntos por las calles de noche. La profesora me tomó la mano disimuladamente.*"
     },
     "day4_night_teacher_farewell_2": {
         "name": "Profesora",
-        "text": "\"...En la escuela volveré a actuar como una profesora estricta. No podemos dejar que los demás se den cuenta.\""
+        "text": "\"En la escuela vuelvo a ser la profesora estricta. ¿Lo sabes, no?\""
     },
     "day4_night_teacher_farewell_3": {
         "name": "Yo",
-        "text": "\"Un romance secreto.\""
+        "text": "\"Es una relación secreta.\""
     },
     "day4_night_teacher_farewell_4": {
         "name": "Profesora",
-        "text": "\"Sí. Así que... no te acerques demasiado a otras chicas en la escuela.\""
+        "text": "\"...Así que ten cuidado. Se te da fatal disimular la mirada.\""
     },
     "day4_night_teacher_farewell_5": {
         "name": "Profesora",
-        "text": "\"Nunca sabes cómo podría atormentarte usando mi autoridad como profesora. ¿Entendido?\""
+        "text": "\"...Mañana no te duermas en mi clase. ¿Entendido?\""
     },
     "day4_night_teacher_farewell_6": {
         "name": "Profesora",
-        "text": "\"...Nos vemos mañana. Mi cómplice.\""
+        "text": "\"...Hasta mañana. Mi alumno tonto.\""
     },
     "day4_night_teacher_home": {
         "name": "Yo",
-        "text": "*Volví a casa. La imagen de ella en el café sigue repitiéndose. La profesora siempre segura y perfecta... mostrando sus lágrimas y vulnerabilidad como solo una mujer.*"
+        "text": "*Llegué a casa. La profesora de la cafetería me viene a la mente. La que siempre parecía tan segura, mostrando su fragilidad.*"
     },
     "day4_night_teacher_home_2": {
         "name": "Yo",
-        "text": "*Este secreto es abrumador... pero es precioso. Nunca tomaré sus sentimientos a la ligera.*"
+        "text": "*Este secreto pesa, pero por eso mismo es valioso. No voy a tomar a la ligera lo que siente.*"
     },
     "day4_night_nurse_msg": {
         "name": "Yo",
-        "text": "*10 PM. Un mensaje de la enfermera. '¿Sigues despierto? ¿Puedes salir un momento si tienes tiempo?'*"
+        "text": "*Las 10 de la noche. Mensaje de la enfermera. '¿Sigues despierto? Si tienes un momento, ¿puedes salir?'*"
     },
     "day4_night_nurse_msg_2": {
         "name": "Yo",
-        "text": "*...Su mensaje juguetón de siempre, pero ¿por qué tan tarde? Algo se siente raro.*"
+        "text": "*Suena al tono juguetón de siempre, pero ¿a estas horas? Algo es diferente.*"
     },
     "day4_night_nurse_msg_3": {
         "name": "Yo",
-        "text": "*Respondí enseguida. '¿Dónde voy?'*"
+        "text": "*Contesté enseguida. '¿Adónde voy?'*"
     },
     "day4_night_nurse_msg_4": {
         "name": "Yo",
-        "text": "*'La enfermería de la escuela. Dejaré la puerta trasera abierta.' ...¿La enfermería?*"
+        "text": "*'La enfermería de la escuela. Te dejo la puerta de atrás abierta.' ...¿La enfermería?*"
     },
     "day4_night_nurse_arrive": {
         "name": "Yo",
-        "text": "*Llegué a la escuela. Al abrir la puerta de la enfermería, el cuarto estaba oscuro con solo una pequeña lámpara encendida. Ella estaba ahí.*"
+        "text": "*Llegué a la escuela. Al abrir la puerta de la enfermería, una habitación oscura con solo una lámpara de escritorio encendida. Ahí está ella.*"
     },
     "day4_night_nurse_arrive_2": {
         "name": "Enfermera",
-        "text": "\"Wow, de verdad viniste. ¿Aunque te llamé tan tarde?\""
+        "text": "\"Vaya, has venido de verdad. ¿Vienes incluso cuando te llamo a medianoche?\""
     },
     "day4_night_nurse_arrive_3": {
         "name": "Yo",
-        "text": "*Está sonriendo como siempre, pero... tiene ojeras oscuras. Y varias latas de café vacías en el escritorio.*",
+        "text": "*Sonríe con su aire juguetón, pero tiene unas ojeras marcadas. Sobre la mesa, varias latas de café vacías.*",
         "choices": [
-            "\"Se ve muy cansada\"",
-            "\"¿Cuál es la verdadera razón por la que me llamó aquí?\""
+            "\"Parece muy cansada\"",
+            "\"¿Cuál es la verdadera razón?\""
         ]
     },
     "day4_night_nurse_tired": {
         "name": "Enfermera",
-        "text": "\"¿Tú crees? Ha sido una semana agitada. Pero estoy bien, de verdad.\""
+        "text": "\"¿Sí? Supongo que últimamente he estado un poco liada. No es nada.\""
     },
     "day4_night_nurse_real_reason": {
         "name": "Enfermera",
-        "text": "\"...¿La verdadera razón? ...Quería verte.\""
+        "text": "\"...¿La verdadera razón? ...Porque quería verte.\""
     },
     "day4_night_nurse_mask": {
         "name": "Yo",
-        "text": "*Está sonriendo, pero algo se siente forzado. Como si se estuviera esforzando demasiado.*"
+        "text": "*Está sonriendo, pero siento que se está forzando.*"
     },
     "day4_night_nurse_mask_2": {
         "name": "Enfermera",
-        "text": "\"...En realidad, hoy pasó algo difícil en la escuela.\""
+        "text": "\"...Hoy tuve un día un poco duro en la escuela.\""
     },
     "day4_night_nurse_mask_3": {
         "name": "Enfermera",
-        "text": "\"Los otros profesores dijeron: 'La enfermera siempre es tan alegre—debe ser lindo no tener preocupaciones.'\""
+        "text": "\"Los otros profesores dijeron: 'La enfermera siempre tan alegre, qué bien, parece que no tiene preocupaciones'.\""
     },
     "day4_night_nurse_mask_4": {
         "name": "Enfermera",
-        "text": "\"...'Sin preocupaciones.' Jaja. Eso... fue lo que más dolió.\""
+        "text": "\"'Parece que no tiene preocupaciones.' Eso fue lo que más me dolió.\""
     },
     "day4_night_nurse_mask_5": {
         "name": "Enfermera",
-        "text": "\"Yo también estaba pasándola mal... pero nadie preguntó. Ni una vez. Ni un solo '¿estás bien?'\""
+        "text": "\"Yo también lo paso mal, pero nadie pregunta. Ni un simple '¿estás bien?'.\""
     },
     "day4_night_nurse_mask_6": {
         "name": "Enfermera",
-        "text": "\"En la enfermería, los chicos vienen y les sonrío, los cuido. Pero... ¿quién me cuida a mí?\""
+        "text": "\"Sonrío a los alumnos, los cuido, los animo. Pero a mí, ¿quién me cuida?\""
     },
     "day4_night_nurse_lonely": {
         "name": "Enfermera",
-        "text": "\"...Cuando llego a casa, no hay nadie. Vivo sola.\""
+        "text": "\"...Cuando llego a casa no hay nadie. Vivo sola.\""
     },
     "day4_night_nurse_lonely_2": {
         "name": "Enfermera",
-        "text": "\"Entonces... empecé a quedarme tarde en la escuela. Al menos en esta enfermería, no me siento tan sola.\""
+        "text": "\"Por eso me quedo hasta tarde en la escuela. Mientras esté en esta enfermería, al menos no estoy sola.\""
     },
     "day4_night_nurse_lonely_3": {
         "name": "Yo",
-        "text": "*Su sonrisa desapareció. Por primera vez, me muestra su verdadero rostro—sin bromas, sin burlas.*"
+        "text": "*Dejó de sonreír. Por primera vez, su cara de verdad, sin máscara.*"
     },
     "day4_night_nurse_lonely_choice": {
         "name": "Yo",
-        "text": "*Puedo ver a la verdadera ella ahora. ¿Qué digo?*",
+        "text": "*Veo a la verdadera ella.*",
         "choices": [
             "Sentarse a su lado y abrazarla",
-            "\"De ahora en adelante, yo cuidaré de usted\""
+            "\"A partir de ahora, yo la cuido a usted\""
         ]
     },
     "day4_night_nurse_hug": {
@@ -1181,175 +1181,175 @@
     },
     "day4_night_nurse_hug_2": {
         "name": "Enfermera",
-        "text": "\"...Oye, de repente... ¿qué haces...\""
+        "text": "\"Oye, de repente... ¿qué haces...\""
     },
     "day4_night_nurse_hug_3": {
         "name": "Yo",
-        "text": "*Al principio se sorprendió... pero pronto sus manos se aferraron a mi ropa con fuerza.*"
+        "text": "*Al principio se sorprendió, pero enseguida me agarró la ropa con fuerza.*"
     },
     "day4_night_nurse_hug_4": {
         "name": "Enfermera",
-        "text": "\"...Qué raro. ¿Alguna vez había querido que alguien me abrazara así?\""
+        "text": "\"...Qué raro. ¿Alguna vez había querido que alguien me abrazara?\""
     },
     "day4_night_nurse_hug_5": {
         "name": "Enfermera",
-        "text": "\"...Quedémonos así. Solo un ratito.\""
+        "text": "\"...Quedémonos así un ratito. Solo un poco.\""
     },
     "day4_night_nurse_care": {
         "name": "Enfermera",
-        "text": "\"...¿Qué? ¿Tú cuidarás de mí?\""
+        "text": "\"...¿Qué? ¿Tú a mí?\""
     },
     "day4_night_nurse_care_2": {
         "name": "Yo",
-        "text": "\"Usted siempre cuida a los demás. Es su turno de ser cuidada.\""
+        "text": "\"Usted siempre cuida de los demás. Ahora le toca que la cuiden a usted.\""
     },
     "day4_night_nurse_care_3": {
         "name": "Enfermera",
-        "text": "\"...Ja. ¿Cómo siempre das justo en el blanco?\""
+        "text": "\"...¿Cómo das siempre en el clavo?\""
     },
     "day4_night_nurse_care_4": {
         "name": "Enfermera",
-        "text": "\"...¿De verdad lo harás?\""
+        "text": "\"...¿De verdad lo harías?\""
     },
     "day4_night_nurse_truth": {
         "name": "Enfermera",
-        "text": "\"...En realidad, hay una razón por la que me hice enfermera escolar.\""
+        "text": "\"...En realidad hay una razón por la que me hice enfermera escolar.\""
     },
     "day4_night_nurse_truth_2": {
         "name": "Enfermera",
-        "text": "\"En la secundaria, una amiga cercana se enfermó y estuvo ausente mucho tiempo. La enfermera escolar de ese entonces realmente cuidó de ella.\""
+        "text": "\"En el instituto, una amiga cercana estuvo enferma y faltó mucho tiempo. La enfermera de entonces la cuidó de maravilla.\""
     },
     "day4_night_nurse_truth_3": {
         "name": "Enfermera",
-        "text": "\"Yo también quería ser alguien así. Alguien que esté ahí para los chicos cuando están sufriendo.\""
+        "text": "\"Quería ser como ella. Estar del lado de los que lo pasan mal.\""
     },
     "day4_night_nurse_truth_4": {
         "name": "Enfermera",
-        "text": "\"Pero en realidad... me veían como 'la enfermera que hace chistes.' No como una profesora de verdad.\""
+        "text": "\"Pero cuando lo conseguí, me trataban como 'la que solo hace bromas'.\""
     },
     "day4_night_nurse_truth_5": {
         "name": "Enfermera",
-        "text": "\"Dijeron que ser seria arruinaría el ambiente, así que... naturalmente empecé a esconderme detrás de risas.\""
+        "text": "\"Si me ponía seria, decían que arruinaba el ambiente. Así que aprendí a esconderme detrás de las sonrisas.\""
     },
     "day4_night_nurse_truth_6": {
         "name": "Enfermera",
-        "text": "\"...Contigo hice lo mismo. Acercándome con bromas. Porque mostrar mis verdaderos sentimientos... me aterraba.\""
+        "text": "\"Contigo también. Me acerqué bromeando. Porque me daba miedo mostrar lo que sentía de verdad.\""
     },
     "day4_night_nurse_truth_choice": {
         "name": "Yo",
-        "text": "*Su voz está temblando.*",
+        "text": "*Le tiembla la voz.*",
         "choices": [
-            "\"Me gusta la tú juguetona y la tú real—todo\"",
-            "\"Gracias por mostrarme tu verdadero yo\"",
-            "\"Ya no tienes que tener miedo. Estoy aquí\""
+            "\"La que bromea y la de ahora, las dos me gustan\"",
+            "\"Gracias por mostrarme cómo es de verdad\"",
+            "\"Ya no tiene que tener miedo. Estoy aquí\""
         ]
     },
     "day4_night_nurse_accept_all": {
         "name": "Enfermera",
-        "text": "\"...¿Todo?\""
+        "text": "\"...¿Las dos te gustan?\""
     },
     "day4_night_nurse_accept_all_2": {
         "name": "Enfermera",
-        "text": "\"...Eres la primera persona que me dice eso.\""
+        "text": "\"Eres la primera persona que me dice eso.\""
     },
     "day4_night_nurse_accept_all_3": {
         "name": "Enfermera",
-        "text": "\"...Ni siquiera sé cómo reaccionar. Es la primera vez.\""
+        "text": "\"Es la primera vez y no sé ni cómo reaccionar.\""
     },
     "day4_night_nurse_thanks": {
         "name": "Enfermera",
-        "text": "\"...¿Agradecida? ¿A mí?\""
+        "text": "\"...¿Gracias? ¿Yo?\""
     },
     "day4_night_nurse_thanks_2": {
         "name": "Enfermera",
-        "text": "\"...No sabía que ser honesta contigo podía sentirse tan cómodo.\""
+        "text": "\"No sabía que ser sincera contigo iba a ser tan fácil.\""
     },
     "day4_night_nurse_safe": {
         "name": "Enfermera",
-        "text": "\"...¿No tengo que tener miedo?\""
+        "text": "\"¿Que no tenga miedo?\""
     },
     "day4_night_nurse_safe_2": {
         "name": "Enfermera",
-        "text": "\"...Tal vez eres la persona con la que me siento más cómoda. Curioso cómo funciona eso.\""
+        "text": "\"Puede que contigo sea con quien más cómoda me sienta.\""
     },
     "day4_night_nurse_resolve": {
         "name": "Enfermera",
-        "text": "\"...¿Sabes qué?\""
+        "text": "\"...Oye.\""
     },
     "day4_night_nurse_resolve_2": {
         "name": "Enfermera",
-        "text": "\"No usaré una máscara frente a ti nunca más. En cambio... quiero encerrarte en esta enfermería para siempre.\""
+        "text": "\"A partir de ahora, contigo no voy a ponerme la máscara. Lo prometo.\""
     },
     "day4_night_nurse_resolve_3": {
         "name": "Enfermera",
-        "text": "\"Te cuidaré por el resto de mi vida... así que quiero que sigas enfermo. Para que solo dependas de mí.\""
+        "text": "\"Lo sabía... Yo siento lo mismo. Así que si te duele algo, ven siempre a mí.\""
     },
     "day4_night_nurse_resolve_4": {
         "name": "Yo",
-        "text": "\"...¿Profesora?\""
+        "text": "\"...Sí.\""
     },
     "day4_night_nurse_resolve_end": {
         "name": "Enfermera",
-        "text": "\"Es broma. ...A medias. Así que si te lastimas, ven directo a mí. Si vas a otro lado, me enojaré de verdad.\""
+        "text": "\"Si vas a otra parte, me voy a enfadar. En serio.\""
     },
     "day4_night_nurse_farewell": {
         "name": "Yo",
-        "text": "*Salimos de la enfermería y caminamos fuera de la escuela. La profesora enlazó su brazo fuertemente con el mío y no me soltaba.*"
+        "text": "*Salimos de la enfermería y caminamos fuera de la escuela. Me agarró el brazo suavemente y no me soltó.*"
     },
     "day4_night_nurse_farewell_2": {
         "name": "Enfermera",
-        "text": "\"...Cuando vengas a la escuela mañana, pasa primero por la enfermería. Voy a tomar asistencia.\""
+        "text": "\"Mañana cuando vengas a la escuela, pasa por la enfermería primero. Control de asistencia.\""
     },
     "day4_night_nurse_farewell_3": {
         "name": "Yo",
-        "text": "\"Eso no fue patético—fue honesto.\""
+        "text": "\"Eso no es ser pegajosa, es ser sincera.\""
     },
     "day4_night_nurse_farewell_4": {
         "name": "Enfermera",
-        "text": "\"...Es extraño. A tu lado, sigo siendo honesta. Eso no es nada como yo.\""
+        "text": "\"...Contigo me vuelvo sincera sin querer. No es propio de mí.\""
     },
     "day4_night_nurse_farewell_5": {
         "name": "Enfermera",
-        "text": "\"...Cuando nos veamos en la escuela otra vez, actuaré normal. Pero mis ojos no podrán ocultarlo.\""
+        "text": "\"En la escuela volveré a actuar como siempre. Pero los ojos no mienten.\""
     },
     "day4_night_nurse_farewell_6": {
         "name": "Enfermera",
-        "text": "\"...Así que presta atención. Cuando pases frente a la enfermería... aunque sea una vez.\""
+        "text": "\"Cuando pases por delante de la enfermería, echa un vistazo de vez en cuando.\""
     },
     "day4_night_nurse_home": {
         "name": "Yo",
-        "text": "*Volví a casa. El verdadero rostro que me mostró en la enfermería sigue repitiéndose. La persona que siempre bromeaba y reía... en realidad era la más sola de todos.*"
+        "text": "*Llegué a casa. Su verdadera cara en la enfermería. La que siempre sonreía y bromeaba resultó ser la más sola de todos.*"
     },
     "day4_night_nurse_home_2": {
         "name": "Yo",
-        "text": "*Ya no está sola. Estoy aquí. Mañana, quiero ver su sonrisa real.*"
+        "text": "*Ya no está sola. Porque estoy yo.*"
     },
     "day4_night_regret": {
         "name": "Yo",
-        "text": "*...Pude haberlo dicho hoy. Bajo ese atardecer, era el momento perfecto.*"
+        "text": "*...Podría habérselo dicho hoy. Bajo aquel atardecer, era el momento perfecto.*"
     },
     "day4_night_regret_2": {
         "name": "Yo",
-        "text": "*Está bien. Hay un mañana. Mañana, definitivamente... les diré lo que siento.*"
+        "text": "*No pasa nada. Mañana hay otro día. Mañana sin falta.*"
     },
     "day4_night_regret_msg": {
         "name": "Yo",
-        "text": "(Llegó un mensaje a mi teléfono. \"Me divertí hoy. ¿Estás libre mañana también?\")"
+        "text": "*Llegó un mensaje al móvil. \"Hoy ha sido genial. ¿Tienes tiempo mañana también?\"*"
     },
     "day4_night_regret_reply": {
         "name": "Yo",
-        "text": "(\"Sí, veámonos mañana.\" Definitivamente lo diré mañana.)"
+        "text": "*\"Sí, quedamos mañana.\" Mañana se lo digo seguro.*"
     },
     "day4_night_reflect": {
         "name": "Yo",
-        "text": "*Y así pasó el sábado. Mañana... ¿qué haré?*"
+        "text": "*Así pasó el sábado. ¿Qué me espera mañana?*"
     },
     "day4_night_sleep": {
         "name": "Yo",
-        "text": "*Cuando cierro los ojos, su rostro aparece. No me importaría quedarme dormido así.*"
+        "text": "*Al cerrar los ojos, su cara aparece. Me quedaría dormido así.*"
     },
     "day4_final": {
         "name": "Yo",
-        "text": "*La noche del sábado se profundiza... Mañana es domingo, el último día.*"
+        "text": "*La noche del sábado se hace profunda. Mañana es domingo, el último día.*"
     }
 }
