@@ -1,0 +1,363 @@
+{
+    "day4_start": {
+        "name": "Moi",
+        "text": "*...J'ouvre les yeux. C'est samedi matin. Mon cœur bat déjà la chamade.*"
+    },
+    "day4_morning_dream": {
+        "name": "Moi",
+        "text": "*La nuit dernière, j'ai fait un rêve étrange. Tout ce qui s'est passé à l'école a défilé comme un panorama.*"
+    },
+    "day4_morning_wake": {
+        "name": "Moi",
+        "text": "*Aujourd'hui, c'est... enfin le jour. J'ai à peine dormi la nuit dernière.*"
+    },
+    "day4_morning_calendar": {
+        "name": "Moi",
+        "text": "*Je vérifie le calendrier sur mon téléphone. 'Samedi' — les lettres rouges ressortent plus que d'habitude.*"
+    },
+    "day4_morning_excitement": {
+        "name": "Moi",
+        "text": "*Cela ne fait que quatre jours depuis mon transfert ici. Je ne m'attendais pas à un week-end aussi excitant. Mon cœur bat fort.*"
+    },
+    "day4_morning_guilt_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "day4_morning_guilt": {
+        "name": "Moi",
+        "text": "*...Attends. Je me sens mal d'avoir fait des promesses à plusieurs personnes. Elles m'ont toutes fait confiance en faisant ces plans... mais au final, je ne peux en voir qu'une seule.*"
+    },
+    "day4_morning_stretch": {
+        "name": "Moi",
+        "text": "*Je m'étire de tout mon long et repousse les couvertures. Aujourd'hui, je vais vivre sans aucun regret.*"
+    },
+    "day4_morning_mirror": {
+        "name": "Moi",
+        "text": "*Debout devant le miroir, je vois mon visage nerveux. J'aimerais avoir l'air un peu plus cool...*"
+    },
+    "day4_morning_window": {
+        "name": "Moi",
+        "text": "*J'ouvre les rideaux et une lumière éclatante se déverse. Dehors, tout est lumineux.*"
+    },
+    "day4_morning_weather": {
+        "name": "Moi",
+        "text": "*Le ciel est d'une clarté infinie. Les pétales de cerisier dansent dans la brise et les oiseaux chantent. Un samedi matin parfait.*"
+    },
+    "day4_morning_weather2": {
+        "name": "Moi",
+        "text": "*Par la fenêtre, j'aperçois les rues du quartier. Des gens qui se promènent, des couples qui entrent dans des cafés... Moi aussi, j'y serai bientôt.*"
+    },
+    "day4_morning_kitchen": {
+        "name": "Moi",
+        "text": "*Je me dirige vers la cuisine. Voyons ce qu'il y a dans le frigo.*"
+    },
+    "day4_morning_breakfast_choice": {
+        "name": "Moi",
+        "text": "*J'ai largement le temps, mais... que faire pour le petit-déjeuner ?*",
+        "choices": [
+            "Au moins manger un toast avant de partir",
+            "Trop excité pour manger — on passe"
+        ]
+    },
+    "day4_morning_breakfast_eat": {
+        "name": "Moi",
+        "text": "*Je tartine de la confiture sur un toast et croque dedans. La texture croustillante me réveille d'un coup. Rien ne vaut un bon petit-déjeuner.*"
+    },
+    "day4_morning_breakfast_skip": {
+        "name": "Moi",
+        "text": "*J'ai faim, mais je suis trop nerveux pour apprécier quoi que ce soit. J'achèterai quelque chose en route.*"
+    },
+    "day4_morning_breakfast_done": {
+        "name": "Moi",
+        "text": "*Bien, c'est l'heure de se laver et de se préparer. J'ai largement le temps.*"
+    },
+    "day4_morning_groom": {
+        "name": "Moi",
+        "text": "*Je me lave le visage et me coiffe. J'ai mis plus de soin que d'habitude dans mon style. Peut-être... juste un peu de cologne aussi.*"
+    },
+    "day4_morning_nervous": {
+        "name": "Moi",
+        "text": "*Je vérifie mon reflet dans le miroir une dernière fois. Pas mal. ...Mais pourquoi est-ce que je tremble autant ?*"
+    },
+    "day4_morning_closet": {
+        "name": "Moi",
+        "text": "*J'ouvre le placard. En dehors de mon uniforme scolaire, je n'ai pas tant d'options que ça. Qu'est-ce que je devrais porter ?*"
+    },
+    "day4_morning_outfit": {
+        "name": "Moi",
+        "text": "*Qu'est-ce que je mets ? La première impression compte, alors je dois bien choisir.*",
+        "choices": [
+            "Casual soigné *chemise blanche + jean*",
+            "Style élégant *veste + pantalon habillé*"
+        ]
+    },
+    "day4_outfit_casual": {
+        "name": "Moi",
+        "text": "*Le confort avant tout. S'habiller naturellement, c'est mon style.*"
+    },
+    "day4_casual_mirror": {
+        "name": "Moi",
+        "text": "*Je fais un tour sur moi-même devant le miroir. Chemise blanche et jean... propre et décontracté. Ça a l'air bien.*"
+    },
+    "day4_outfit_stylish": {
+        "name": "Moi",
+        "text": "*Aujourd'hui est spécial, après tout. Ça devrait aller, non ?*"
+    },
+    "day4_stylish_mirror": {
+        "name": "Moi",
+        "text": "*La veste tombe parfaitement, et le pantalon habillé allonge mes jambes. Je parais différent de d'habitude, ce qui fait un peu bizarre... mais pas mal du tout.*"
+    },
+    "day4_morning_outfit_done": {
+        "name": "Moi",
+        "text": "*Bien, la tenue est choisie. Maintenant, je vérifie mon téléphone et j'y vais.*"
+    },
+    "day4_morning_phone": {
+        "name": "Moi",
+        "text": "*Je vérifie mon téléphone. Un message m'attend.*"
+    },
+    "day4_morning_message_branch": {
+        "name": "Système",
+        "text": ""
+    },
+    "day4_morning_date_route": {
+        "name": "Système",
+        "text": ""
+    },
+    "day4_msg_seoyeon": {
+        "name": "Seoyeon",
+        "text": "\"Tu n'as pas oublié pour aujourd'hui, n'est-ce pas ? 😊 Retrouve-moi à la fontaine du parc à 10 heures ! J'ai trop hâte !\""
+    },
+    "day4_morning_reply_seoyeon": {
+        "name": "Moi",
+        "text": "*Un message de Seoyeon. Cet emoji souriant est mignon. Qu'est-ce que je réponds...*"
+    },
+    "day4_msg_seoyeon_2": {
+        "name": "Seoyeon",
+        "text": "\"Oh, et il fait tellement beau aujourd'hui ! Parfait pour une promenade. N'oublie pas la crème solaire !\""
+    },
+    "day4_reply_seoyeon_2": {
+        "name": "Moi",
+        "text": "*Elle envoie des messages les uns après les autres. Elle doit être excitée aussi. Je ferais mieux de me dépêcher.*"
+    },
+    "day4_seoyeon_ready": {
+        "name": "Seoyeon",
+        "text": "\"À tout à l'heure !! 😆\""
+    },
+    "day4_msg_yuna": {
+        "name": "Yuna",
+        "text": "\"...10 heures. Le café devant la gare. Ne sois pas en retard.\""
+    },
+    "day4_morning_reply_yuna": {
+        "name": "Moi",
+        "text": "*Court et direct — tellement typique de Yuna. Mais c'est ce qui fait son charme. Je réponds : 'Compris, je ne serai pas en retard !'*"
+    },
+    "day4_msg_yuna_2": {
+        "name": "Yuna",
+        "text": "\"...Ce n'est rien de spécial. J'avais juste envie d'un café. ...C'est juste bizarre d'y aller seule.\""
+    },
+    "day4_reply_yuna_2": {
+        "name": "Moi",
+        "text": "*...C'est la façon de Yuna de dire 'je veux y aller ensemble', n'est-ce pas ? Un sourire s'étend sur mon visage.*"
+    },
+    "day4_yuna_ready": {
+        "name": "Yuna",
+        "text": "\"...Dépêche-toi.\""
+    },
+    "day4_msg_dain": {
+        "name": "Dain",
+        "text": "\"HÉ !! On se retrouve après l'entraînement aujourd'hui !! Devant le gymnase à 11 heures !! Ne sois pas en retard !!!! 🏐\""
+    },
+    "day4_morning_reply_dain": {
+        "name": "Moi",
+        "text": "*Tellement de points d'exclamation... L'énergie de Dain transparaît même dans ses messages. Il faut que je réponde.*"
+    },
+    "day4_msg_dain_2": {
+        "name": "Dain",
+        "text": "\"Ah, c'est vrai !! Je vais être AFFAMÉE après l'entraînement !! Trouve-nous un bon restaurant !! Je veux de la viande !!!\""
+    },
+    "day4_reply_dain_2": {
+        "name": "Moi",
+        "text": "*Elle me fait même chercher des restaurants... Cela dit, manger avec Dain n'a rien de désagréable. Non — en fait, j'ai hâte.*"
+    },
+    "day4_dain_ready": {
+        "name": "Dain",
+        "text": "\"À plus tard !! Prépare-toi !!! 💪\""
+    },
+    "day4_msg_nurse": {
+        "name": "Infirmière Scolaire",
+        "text": "\"Si tu es libre aujourd'hui... que dirais-tu du musée d'art en ville ? Il y a une exposition que j'aimerais voir. Retrouvons-nous devant le musée à 11 heures.\""
+    },
+    "day4_morning_reply_nurse": {
+        "name": "Moi",
+        "text": "*Le musée d'art avec l'infirmière scolaire... Mon cœur s'emballe. J'ai répondu : 'Oui, j'y serai sans faute !'*"
+    },
+    "day4_msg_nurse_2": {
+        "name": "Infirmière Scolaire",
+        "text": "\"J'ai hâte d'y être. Oh, et... ne m'appelle pas 'madame' aujourd'hui. On se retrouve juste de manière décontractée.\""
+    },
+    "day4_reply_nurse_2": {
+        "name": "Moi",
+        "text": "*Ne pas l'appeler 'madame'... ? J'ai cru que mon cœur allait s'arrêter. Aujourd'hui va être une journée vraiment spéciale.*"
+    },
+    "day4_nurse_ready": {
+        "name": "Infirmière Scolaire",
+        "text": "\"À tout à l'heure alors 😊\""
+    },
+    "day4_msg_teacher": {
+        "name": "Professeur Principal",
+        "text": "\"On se retrouve au café près de l'école vers midi ? J'aimerais te parler de quelque chose. Retrouvons-nous à 12 heures.\""
+    },
+    "day4_morning_reply_teacher": {
+        "name": "Moi",
+        "text": "*Rencontrer le professeur principal en dehors de l'école... Je suis nerveux. J'ai envoyé une réponse tout de suite.*"
+    },
+    "day4_msg_teacher_2": {
+        "name": "Professeur Principal",
+        "text": "\"Je serai en tenue décontractée, alors ne sois pas surpris si tu ne me reconnais pas. ...Je plaisante. Tu me reconnaîtras sûrement.\""
+    },
+    "day4_reply_teacher_2": {
+        "name": "Moi",
+        "text": "*Le professeur principal qui fait des blagues ? C'est un côté que je n'avais jamais vu — c'est rafraîchissant. Je me demande à quoi elle ressemble en tenue décontractée.*"
+    },
+    "day4_teacher_ready": {
+        "name": "Professeur Principal",
+        "text": "\"Ne sois pas en retard. Je déteste attendre.\""
+    },
+    "day4_morning_loyalty_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "day4_morning_loyalty_boost": {
+        "name": "Moi",
+        "text": "*Le fait que je me prépare pour une seule personne... me donne paradoxalement plus d'assurance. Aujourd'hui, je ne penserai qu'à elle.*"
+    },
+    "day4_morning_lastcheck": {
+        "name": "Moi",
+        "text": "*Un dernier coup d'œil dans le miroir. ...Ça va. Non — j'ai plutôt fière allure. Ayons confiance.*"
+    },
+    "day4_morning_wallet": {
+        "name": "Moi",
+        "text": "*Portefeuille, téléphone, clés. Je les mets un par un dans mes poches. Mieux vaut prendre un mouchoir aussi, au cas où.*"
+    },
+    "day4_morning_lock": {
+        "name": "Moi",
+        "text": "*Je sors par la porte d'entrée et je verrouille derrière moi. Clic — comme le son d'une toute nouvelle journée qui commence.*"
+    },
+    "day4_morning_outside": {
+        "name": "Moi",
+        "text": "*Une brise tiède m'accueille dehors. Le parfum des cerisiers en fleurs effleure mon nez. Les rues sont pleines de vie.*"
+    },
+    "day4_morning_depart": {
+        "name": "Moi",
+        "text": "*Très bien, tout est prêt. Allons-y !*"
+    },
+    "day4_no_date_start": {
+        "name": "Moi",
+        "text": "*...Je vérifie mon téléphone, mais il n'y a aucun message.*"
+    },
+    "day4_no_date_2": {
+        "name": "Moi",
+        "text": "*C'est le week-end et je n'ai aucun plan. Cela fait déjà quatre jours depuis mon transfert... Qu'est-ce que j'ai fait de tout ce temps ?*"
+    },
+    "day4_no_date_3": {
+        "name": "Moi",
+        "text": "*Quand même, je ne peux pas rester chez moi par une si belle journée. Je devrais peut-être sortir quelque part.*",
+        "choices": [
+            "Acheter des snacks à la supérette et aller au parc",
+            "Traîner à la maison",
+            "Passer le temps dans un café du coin"
+        ]
+    },
+    "day4_no_date_park": {
+        "name": "Moi",
+        "text": "*J'achète un onigiri et une boisson au konbini et je me dirige vers le parc. Je m'assieds sur un banc et mange seul.*"
+    },
+    "day4_no_date_park_weather": {
+        "name": "Moi",
+        "text": "*Des pétales de cerisier portés par le vent se posent sur mon épaule. C'est un beau spectacle... mais assis ici tout seul, c'est un peu solitaire.*"
+    },
+    "day4_no_date_home": {
+        "name": "Moi",
+        "text": "*Je suis allongé sur mon lit, les yeux rivés au plafond. Est-ce vraiment comme ça que je devrais passer ma journée ?*"
+    },
+    "day4_no_date_home_bored": {
+        "name": "Moi",
+        "text": "*J'ouvre les réseaux sociaux et c'est rempli de photos du week-end de mes camarades. Tout le monde a l'air si heureux... Suis-je le seul dans cette situation ?*"
+    },
+    "day4_no_date_cafe": {
+        "name": "Moi",
+        "text": "*J'entre dans un café du quartier et commande un americano. Je m'installe près de la fenêtre et regarde dehors.*"
+    },
+    "day4_no_date_cafe_sit": {
+        "name": "Moi",
+        "text": "*Je regarde les couples passer dans la rue en sirotant mon café. L'amertume me semble particulièrement forte aujourd'hui.*"
+    },
+    "day4_no_date_lonely": {
+        "name": "Moi",
+        "text": "*...Passer mon samedi tout seul comme ça. Mais je ne peux pas rester sans rien faire. Allons faire un tour.*"
+    },
+    "day4_no_date_wander": {
+        "name": "Moi",
+        "text": "*En déambulant sans but dans le quartier, je me retrouve devant le konbini près du parc. C'est alors que je remarque une silhouette familière de dos.*"
+    },
+    "day4_no_date_encounter": {
+        "name": "Système",
+        "text": ""
+    },
+    "day4_no_date_meet_seoyeon": {
+        "name": "Seoyeon",
+        "text": "\"Hein ? Qu'est-ce que tu fais ici ? Je suis juste sortie me promener ! Tu veux m'accompagner ?\""
+    },
+    "day4_no_date_chat_seoyeon": {
+        "name": "Moi",
+        "text": "*Seoyeon s'approche avec un grand sourire. Je me sentais si seul, et voilà que je tombe sur elle. C'est sûrement le destin.*"
+    },
+    "day4_no_date_meet_yuna": {
+        "name": "Yuna",
+        "text": "\"...Oh. Tu es seul aussi ? ...Moi aussi.\""
+    },
+    "day4_no_date_chat_yuna": {
+        "name": "Moi",
+        "text": "*Yuna retire un écouteur et lève les yeux vers moi. Son regard calme est étonnamment chaleureux.*"
+    },
+    "day4_no_date_meet_dain": {
+        "name": "Dain",
+        "text": "\"Whoa ?! Te croiser ici !! Je suis venue acheter un truc à boire après l'entraînement !! On traîne ensemble ?!\""
+    },
+    "day4_no_date_chat_dain": {
+        "name": "Moi",
+        "text": "*Dain s'approche pleine d'énergie dans ses vêtements de sport. Je suis content de cette rencontre pleine de vie.*"
+    },
+    "day4_no_date_meet_nurse": {
+        "name": "Infirmière Scolaire",
+        "text": "\"Oh, quelle surprise de te voir ici. Je suis sortie me promener aussi. On marche ensemble ?\""
+    },
+    "day4_no_date_chat_nurse": {
+        "name": "Moi",
+        "text": "*J'ai failli ne pas la reconnaître en vêtements décontractés. Elle a l'air si différente en dehors de l'école. Mon cœur se met à battre la chamade.*"
+    },
+    "day4_no_date_meet_teacher": {
+        "name": "Professeur Principal",
+        "text": "\"...Qu'est-ce que tu fais ici ? Hé, les profs aussi ont droit au week-end, tu sais. Bon, tu veux prendre un café ou quelque chose ?\""
+    },
+    "day4_no_date_chat_teacher": {
+        "name": "Moi",
+        "text": "*Le professeur principal dit ça avec un air détaché, mais c'est elle qui a engagé la conversation. J'ai même aperçu l'ombre d'un sourire sur ses lèvres.*"
+    },
+    "day4_no_date_after_encounter": {
+        "name": "Moi",
+        "text": "*Nous avons marché ensemble un moment, discutant de tout et de rien. Je n'aurais jamais imaginé que mon week-end se passerait comme ça.*"
+    },
+    "day4_no_date_reflect": {
+        "name": "Moi",
+        "text": "*La journée avait commencé sans aucun plan... mais cette simple rencontre fortuite a rendu aujourd'hui spécial.*"
+    },
+    "day4_no_date_sunset": {
+        "name": "Moi",
+        "text": "*Sans que je m'en rende compte, le coucher de soleil commence à s'étendre. Le ciel vire à l'orange. Ce n'était pas une si mauvaise journée, finalement.*"
+    },
+    "day4_no_date_evening": {
+        "name": "Moi",
+        "text": "*Sur le chemin du retour. En repensant à aujourd'hui, un sourire se dessine naturellement sur mon visage. J'ai déjà hâte d'être à lundi.*"
+    }
+}

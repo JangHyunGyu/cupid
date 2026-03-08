@@ -1,0 +1,549 @@
+{
+    "lunch_time": {
+        "name": "僕",
+        "text": "*午前の授業が終わった！やっと待ちに待った昼休みだ。みんな食堂に駆けていく。*"
+    },
+    "lunch_time_2": {
+        "name": "僕",
+        "text": "*昼休み……窓の外の運動場では生徒たちが遊んでいる。僕はどうしようかな？*",
+        "choices": [
+            "ソヨンに近づいて、一緒にお昼を食べようと誘う。",
+            "一人で学校を回って、静かな場所を探す。",
+            "体育館から聞こえるバレーボールの音を追いかける。",
+            "ちょっと具合が悪いから保健室に行く。",
+            "売店に行ってパンを買う。",
+            "疲れたから、教室で寝る。"
+        ]
+    },
+    "lunch_seoyeon_high": {
+        "name": "ソヨン",
+        "text": "*私を見つけるなり、明るい笑顔で駆け寄ってくる。目には喜びがいっぱいだ。* \"{name}！ずっと探してたんだよ。一緒にお昼食べに行こう。とっておきの場所に案内してあげる！\""
+    },
+    "lunch_seoyeon_low": {
+        "name": "ソヨン",
+        "text": "*私を見ると少しぎこちない笑みを浮かべる。* \"あ、{name}……ちょうどよかった。先生に面倒見てって頼まれてて。よかったら屋上で食べない？静かでいいところだよ。\""
+    },
+    "lunch_seoyeon_normal_branch": {
+        "name": "ソヨン",
+        "text": "*ソヨンに近づくと、彼女がにっこり微笑んでうなずいた。*"
+    },
+    "lunch_seoyeon_2_study": {
+        "name": "ソヨン",
+        "text": "\"転校生、ちょっとは仲良くなれた気がしない？ちょうど探そうとしてたんだ。屋上で一緒に食べない？\"",
+        "choices": [
+            "うん！ソヨンと一緒に食べたかったんだ。",
+            "ごめん、今日は一人でいたいんだ。",
+            "屋上？なんでわざわざあそこまで？"
+        ]
+    },
+    "lunch_seoyeon_2_party": {
+        "name": "ソヨン",
+        "text": "\"おっ、転校生！もう完璧にうちの学校に馴染んでるみたいだね？屋上の秘密の場所で一緒にお昼どう？\"",
+        "choices": [
+            "うん！ソヨンと一緒に食べたかったんだ。",
+            "ごめん、今日は一人でいたいんだ。",
+            "屋上？なんでわざわざあそこまで？"
+        ]
+    },
+    "lunch_seoyeon_2_normal": {
+        "name": "ソヨン",
+        "text": "\"ちょうど探そうとしてたの！屋上の秘密の場所で一緒に食べない？\"",
+        "choices": [
+            "うん！ソヨンと一緒に食べたかったんだ。",
+            "ごめん、今日は一人でいたいんだ。",
+            "屋上？なんでわざわざあそこまで？"
+        ]
+    },
+    "rooftop_1": {
+        "name": "ソヨン",
+        "text": "*涼しい風が吹く屋上。ソヨンが丁寧に準備したお弁当を取り出す。*"
+    },
+    "rooftop_1_2": {
+        "name": "ソヨン",
+        "text": "\"手作りのお弁当なんだけど、量が多くて……一緒に食べない？転校初日だし、学校の売店もよくわからないでしょ。\""
+    },
+    "rooftop_1_3": {
+        "name": "僕",
+        "text": "*お弁当を一口食べてみる。心のこもった温かい味がする。*"
+    },
+    "rooftop_1_4": {
+        "name": "僕",
+        "text": "\"本当に美味しい！これ自分で作ったの？すごいな……\""
+    },
+    "rooftop_1_5": {
+        "name": "ソヨン",
+        "text": "*僕の褒め言葉にソヨンが嬉しそうにはにかむ。* \"ふふっ、よかった！美味しく食べてくれて私も嬉しい。\""
+    },
+    "rooftop_talk_main": {
+        "name": "僕",
+        "text": "*一緒にお弁当を食べながら会話を交わす。彼女が恥ずかしそうに笑うたびに、胸がドキドキする。*"
+    },
+    "rooftop_1_2_2": {
+        "name": "ソヨン",
+        "text": "\"美味しく食べてくれて嬉しい！あ、これも食べてみて。特別に気合い入れて作ったの。\""
+    },
+    "rooftop_1_2_3": {
+        "name": "ソヨン",
+        "text": "\"特にこのタコさんウインナーは自信作なの！一つ食べてみる？\"",
+        "choices": [
+            "わぁ、すごく美味しそう！ソヨンは料理の天才だね。",
+            "はい……『あーん』",
+            "こんなに心のこもったお弁当、初めて見た。ありがとう。",
+            "あんまり美味しそうに見えないけど……売店に行けばよかった。"
+        ]
+    },
+    "rooftop_talk_ah_fail": {
+        "name": "ソヨン",
+        "text": "*ソヨンの表情が一瞬で固まる。戸惑ったようにお箸を置く。* \"えっと……それはちょっと……{name}、私たちまだそこまで親しくないでしょ。冗談がすぎるよ。\""
+    },
+    "rooftop_awkward": {
+        "name": "僕",
+        "text": "*一瞬で気まずい雰囲気になった。しばらく無言でお弁当を食べた。*"
+    },
+    "lunch_refuse_rooftop": {
+        "name": "ソヨン",
+        "text": "*ソヨンの表情が曇る。失望を隠そうとするが、肩が少し落ちている。* \"……そっか、わかった。じゃあ一人で行くね。\""
+    },
+    "rooftop_talk_rude": {
+        "name": "ソヨン",
+        "text": "*ソヨンの手が微かに震える。無理に笑おうとするが、目元が潤んでいる。*"
+    },
+    "rooftop_talk_food": {
+        "name": "ソヨン",
+        "text": "*嬉しそうに頬を赤らめる。*"
+    },
+    "rooftop_talk_food_2": {
+        "name": "ソヨン",
+        "text": "\"本当？よかった！実は誰かに自分の料理を出すの初めてで、ちょっと緊張してたんだ。たくさん食べてね、まだいっぱいあるから！\""
+    },
+    "rooftop_talk_ah": {
+        "name": "ソヨン",
+        "text": "*ソヨンの顔が真っ赤になる。彼女がそっとソーセージを僕の口元に運んでくる。*"
+    },
+    "rooftop_talk_ah_2": {
+        "name": "ソヨン",
+        "text": "\"……あんた、たまに見ると本当に大胆だよね。（ソヨンは呆れたように小さく笑いを漏らし、やがて負けたふりをしてそっとお箸を僕の口元に運んだ。）……ほら、あーんして。\""
+    },
+    "rooftop_talk_thanks": {
+        "name": "ソヨン",
+        "text": "*彼女が微笑んで僕の口元についたソースを拭いてくれる。*"
+    },
+    "rooftop_talk_thanks_2": {
+        "name": "ソヨン",
+        "text": "\"ありがとうだなんて……こちらこそ一緒に食べてくれてありがとう。一人で食べるより全然美味しいの。これからも時々こうやって一緒に食べてくれる？\""
+    },
+    "rooftop_2_normal": {
+        "name": "ソヨン",
+        "text": "*食事を終えて並んで座り、遠い空を見つめる。ソヨンがそっと口を開いた。*"
+    },
+    "rooftop_2_low": {
+        "name": "ソヨン",
+        "text": "*食事を終えた後、重い沈黙の末にソヨンが口を開いた。彼女の声にはぎこちなさが漂っている。*"
+    },
+    "rooftop_2_2_low": {
+        "name": "ソヨン",
+        "text": "\"ねえ、{name}……実は今日もっとあなたのこと知りたかったんだけど、思ったより会話が難しいね。でも一緒にお昼食べてくれてありがとう。\""
+    },
+    "rooftop_2_2": {
+        "name": "ソヨン",
+        "text": "\"ねえ、{name}……実は今日初めて会ったばかりなのに、なぜかすごく話しやすくて嬉しいな。{name}はどう？\""
+    },
+    "rooftop_free_talk": {
+        "name": "ソヨン",
+        "text": "\"ふふっ、急に真面目すぎた？もっと気楽に話そうよ。私のこと、何か気にならない？\"",
+        "context": "A peaceful and romantic atmosphere after having lunch alone with Seoyeon on the school rooftop. Keep the conversation going until it naturally concludes. When the conversation ends, Seoyeon will mention that being with you feels comfortable and good, and ask why that might be. Only in the final turn, mention the special feeling or comfort between us and naturally ask the question.",
+        "personality": "A bit more bold and honest than usual. Wants to know how the protagonist thinks about their relationship and why they feel comfortable."
+    },
+    "rooftop_choices_high": {
+        "name": "僕",
+        "text": "*ソヨンと話しているうちに雰囲気が微妙になった。彼女は優しい笑みを浮かべて僕の目をじっと見つめている。一緒にいると何だか落ち着くって、なんでだろうって聞いてきた。*",
+        "choices": [
+            "もしかして……運命みたいなもの？",
+            "もしかして、僕に優しくしてくれるから？",
+            "うーん、まだわからないな。"
+        ]
+    },
+    "rooftop_choices_low": {
+        "name": "僕",
+        "text": "*ソヨンの表情が暗い。会話がうまくいかなかったみたいだ。少し困惑した様子でため息をつきながらも、一緒にいると落ち着くのはなぜかと聞いてきた。*",
+        "choices": [
+            "もしかして……運命みたいなもの？",
+            "もしかして、僕に優しくしてくれるから？",
+            "うーん、まだわからないな。"
+        ]
+    },
+    "rooftop_choices": {
+        "name": "僕",
+        "text": "*ソヨンと楽しく会話を終えた。彼女はキラキラした目で僕の答えを待っている。一緒にいると何だか落ち着いて心地いいって、なぜだろうと聞いてきた。*",
+        "choices": [
+            "もしかして……運命みたいなもの？",
+            "もしかして、僕に優しくしてくれるから？",
+            "うーん、まだわからないな。"
+        ]
+    },
+    "rooftop_destiny_high": {
+        "name": "ソヨン",
+        "text": "*彼女が顔を赤らめて僕の手をぎゅっと握る。指先が温かく触れ合う。*"
+    },
+    "rooftop_destiny_high_2": {
+        "name": "ソヨン",
+        "text": "\"私もそう思う……{name}とこうしてるの、本当に夢みたい。これからもずっとこうやって……運命みたいに一緒にいられるかな？\""
+    },
+    "rooftop_destiny_normal": {
+        "name": "ソヨン",
+        "text": "*彼女が恥ずかしそうに微笑んで、そっと僕の手の上に自分の手を重ねる。*"
+    },
+    "rooftop_destiny_normal_2": {
+        "name": "ソヨン",
+        "text": "\"運命だなんて……ふふっ、ちょっとくすぐったい言葉だけど悪くないかも。私もあなたといるとそう感じる時があるの。\""
+    },
+    "rooftop_destiny_low": {
+        "name": "ソヨン",
+        "text": "*彼女が慌てて手を引っ込め、動揺した表情を見せる。*"
+    },
+    "rooftop_destiny_low_2": {
+        "name": "ソヨン",
+        "text": "\"運命？転校初日からそんなこと言うなんて……{name}、冗談がちょっとすぎると思う。まだそういう関係じゃないでしょ。\""
+    },
+    "rooftop_kind_high": {
+        "name": "ソヨン",
+        "text": "*彼女が少し目を潤ませながらお礼を言う。*"
+    },
+    "rooftop_kind_high_2": {
+        "name": "ソヨン",
+        "text": "\"親切にしてもらったからお礼だなんて……こちらこそありがとう。私の好意を嬉しそうに受け取ってくれて、私もすごく励みになったよ。\""
+    },
+    "rooftop_kind_low": {
+        "name": "ソヨン",
+        "text": "*彼女がため息をついて冷たく返す。*"
+    },
+    "rooftop_kind_low_2": {
+        "name": "ソヨン",
+        "text": "\"親切にしたから楽だなんて……ただ好意を当たり前に受け取ってるだけじゃない？ちょっとがっかりな答えだね。\""
+    },
+    "rooftop_kind_normal": {
+        "name": "ソヨン",
+        "text": "*彼女が恥ずかしそうに微笑みながらうなずく。*"
+    },
+    "rooftop_kind_normal_2": {
+        "name": "ソヨン",
+        "text": "\"ふふっ、優等生みたいな答えだね。でも正解！あなたを安心させてあげられてよかった。\""
+    },
+    "rooftop_comfortable_high": {
+        "name": "ソヨン",
+        "text": "*彼女が嬉しそうに少し僕の肩に頭をもたれかける。*"
+    },
+    "rooftop_comfortable_high_2": {
+        "name": "ソヨン",
+        "text": "\"私もだよ。{name}といると本当に安心する。ずっと前から知り合いだったみたいに……同じように感じてくれてありがとう。\""
+    },
+    "rooftop_comfortable_low": {
+        "name": "ソヨン",
+        "text": "*彼女が苦笑いして顔をそむける。*"
+    },
+    "rooftop_comfortable_low_2": {
+        "name": "ソヨン",
+        "text": "\"よくわからないって……まだ私といるのが居心地悪いってこと？もっと頑張らなきゃだね。\""
+    },
+    "rooftop_comfortable_normal": {
+        "name": "ソヨン",
+        "text": "*彼女が満足そうにうなずく。*"
+    },
+    "rooftop_comfortable_normal_2": {
+        "name": "ソヨン",
+        "text": "\"落ち着くって言ってくれて嬉しい。あなたといると、生徒会長という重荷をしばらく下ろせる気がするの。ありがとう、{name}。\""
+    },
+    "seyoun_contact_exchange": {
+        "name": "ソヨン",
+        "text": "*ソヨンがカバンを片付けながらふと手を止めて、ためらいがちに私を見つめる。*",
+        "context": "After sharing lunch on the rooftop together, Seoyeon is about to suggest exchanging contact info. She's a little shy but expectant. It's a casual conversation that naturally leads to exchanging numbers.",
+        "personality": "A kind, caring, and responsible student council president. She has a crush on the transfer student protagonist and wants to exchange numbers, but is too shy to ask directly."
+    },
+    "seyoun_contact_exchange_high": {
+        "name": "ソヨン",
+        "text": "*ソヨンが恥ずかしそうにスマホを差し出す。* \"あのね……もしよかったら、連絡先教えてくれないかな？これからお弁当のメニュー決める時に聞きたくて……\"",
+        "choices": [
+            "もちろん！僕もソヨンともっと話したかったんだ。",
+            "ごめん、まだちょっと早いかな。"
+        ]
+    },
+    "seyoun_contact_exchange_normal": {
+        "name": "ソヨン",
+        "text": "\"あの……連絡先交換してもいいかな？生徒会の用事で連絡することがあるかもしれないし……\"",
+        "choices": [
+            "もちろん！僕もソヨンともっと話したかったんだ。",
+            "ごめん、まだちょっと早いかな。"
+        ]
+    },
+    "seyoun_contact_exchange_low": {
+        "name": "ソヨン",
+        "text": "*ソヨンが様子をうかがいながら言う。* \"……あのさ、生徒会の用事で連絡することがあるかもしれないんだけど、番号教えてもらえる？\"",
+        "choices": [
+            "うん、いいよ。",
+            "ごめん、まだちょっと早いかな。"
+        ]
+    },
+    "seyoun_contact_success_cold": {
+        "name": "ソヨン",
+        "text": "*彼女が番号を保存する。* \"ありがと。じゃあ……必要な時に連絡するね。\""
+    },
+    "seyoun_contact_success": {
+        "name": "ソヨン",
+        "text": "*彼女が明るく笑って番号を保存する。指が嬉しそうに忙しく動いている。* \"ありがとう！じゃあ……後でメッセージ送るね。ちゃんと返信してよ？\""
+    },
+    "seyoun_contact_fail": {
+        "name": "ソヨン",
+        "text": "*少ししょんぼりした表情を見せたが、すぐに無理に笑顔を作ってうなずく。* \"あ……うん、ごめんね！急ぎすぎたかな。ゆっくり仲良くなればいいよね？\""
+    },
+    "lunch_alone": {
+        "name": "僕",
+        "text": "*一人で静かに廊下を歩いていたら、図書館別館に着いた。そこで、窓辺にもたれかかって本を読んでいる少女と出会った。*"
+    },
+    "alone_2": {
+        "name": "???",
+        "text": "*彼女が読んでいた本から視線を上げて、じっと僕を見つめる。低い声で話しかけてきた。*"
+    },
+    "alone_2_2": {
+        "name": "???",
+        "text": "\"……迷子？ここは生徒があまり来ない場所なのに。よくここまでたどり着いたね。\""
+    },
+    "yuna_intro": {
+        "name": "???",
+        "text": "*彼女の深く神秘的な紫色の瞳が静かに僕を観察している。まるで僕の魂まで見透かそうとするような視線だ。*"
+    },
+    "yuna_intro_name_ask": {
+        "name": "???",
+        "text": "\"私は『ユナ』。あなたは……名前は？\""
+    },
+    "yuna_intro_name_share": {
+        "name": "僕",
+        "text": "\"僕は{name}。今日転校してきたんだ。\""
+    },
+    "yuna_intro_2": {
+        "name": "ユナ",
+        "text": "\"{name}……ふふ、いい名前。この学校……見た目とはだいぶ違うんだよ。あなたからも……なぜか懐かしい雰囲気がする。\""
+    },
+    "yuna_free_talk": {
+        "name": "ユナ",
+        "text": "\"……私に何か聞きたいことでも？それとも、この学校について知りたい？\"",
+        "context": "In the quiet Library Annex, first meeting with Yuna who has a mysterious and cold atmosphere. Keep the conversation going until it naturally concludes. When the conversation ends, Yuna will ask if you want to know more about her or the school's secrets. Only in the final turn, show an attitude of checking if you're ready for deeper conversation.",
+        "personality": "A mysterious and cold girl with many secrets. She feels a strange interest in the protagonist."
+    },
+    "yuna_choices_high": {
+        "name": "僕",
+        "text": "*ユナと話しているうちに、彼女の神秘的な雰囲気に引き込まれていく気がする。彼女はかすかに微笑みながら僕を見つめ、自分のことをもっと知りたいか聞いてきた。*",
+        "choices": [
+            "学校が違う？どういう意味？",
+            "見覚え……前にどこかで会った？",
+            "なんだか危険な感じがする。でも、目が離せない。"
+        ]
+    },
+    "yuna_choices_low": {
+        "name": "僕",
+        "text": "*ユナの目つきがさらに冷たくなった。僕の態度が彼女の気に障ったらしい。冷たい声で警告するように言葉を吐いた。*",
+        "choices": [
+            "学校が違う？どういう意味？",
+            "見覚え……前にどこかで会った？",
+            "なんだか危険な感じがする。でも、目が離せない。"
+        ]
+    },
+    "yuna_choices": {
+        "name": "僕",
+        "text": "*ユナとの会話がひと段落した。彼女の紫色の瞳は相変わらず僕を見透かすような視線を保っている。*",
+        "choices": [
+            "学校が違う？どういう意味？",
+            "見覚え……前にどこかで会った？",
+            "なんだか危険な感じがする。でも、目が離せない。"
+        ]
+    },
+    "yuna_secret_high": {
+        "name": "ユナ",
+        "text": "*彼女が僕の手の甲を軽くなでて、神秘的な微笑みを浮かべる。*"
+    },
+    "yuna_secret_high_2": {
+        "name": "ユナ",
+        "text": "\"その目……本当に気に入った。この学校の下に隠された巨大な真実を知った時、あなたはどんな顔をするのかな？すぐにわかるよ。私が直接教えてあげるから。\""
+    },
+    "yuna_secret_low": {
+        "name": "ユナ",
+        "text": "*彼女がバカにしたような表情で僕を突き放す。*"
+    },
+    "yuna_secret_low_2": {
+        "name": "ユナ",
+        "text": "\"秘密？あなたみたいな子が扱えるレベルじゃないよ。余計なところに首を突っ込まないで、おとなしく学校生活を送ってなさい。\""
+    },
+    "yuna_secret_normal": {
+        "name": "ユナ",
+        "text": "*彼女が唇に不思議な笑みを浮かべて本を閉じる。彼女の唇が僕の耳元に近づいてささやく。*"
+    },
+    "yuna_secret_normal_2": {
+        "name": "ユナ",
+        "text": "\"ふふ、気になる？でも秘密は知らない方がいいこともあるよ。学校が隠そうとしている話は……知ったら傷つくかもしれないから。\""
+    },
+    "yuna_scent_high": {
+        "name": "ユナ",
+        "text": "*彼女が僕の顔に近づいて深く息を吸い込む。*"
+    },
+    "yuna_scent_high_2": {
+        "name": "ユナ",
+        "text": "\"やっぱり感じる……あなたの魂から漂う甘い香り。ずっと待っていた気がする。{name}、あなたは自分で思っているよりもずっと特別な存在かもしれないよ。\""
+    },
+    "yuna_scent_low": {
+        "name": "ユナ",
+        "text": "*彼女が鼻にしわを寄せて不快感をあらわにする。*"
+    },
+    "yuna_scent_low_2": {
+        "name": "ユナ",
+        "text": "\"勘違いだったみたいね。普通の子と変わらない不快な匂いだけ。知ったような顔しないで。\""
+    },
+    "yuna_scent_normal": {
+        "name": "ユナ",
+        "text": "*彼女が一歩近づいて僕をじっと見つめる。寂しそうな表情でつぶやく。*"
+    },
+    "yuna_scent_normal_2": {
+        "name": "ユナ",
+        "text": "\"ううん、初めて見たよ。でもその瞳の中の『光』……なかなか惹かれるね。この学校の無気力な子たちとはちょっと違って見える。あなたがこれからどう変わっていくか、私がずっと見ていてもいい？\""
+    },
+    "yuna_danger_high": {
+        "name": "ユナ",
+        "text": "*彼女が魅惑的に微笑んで僕の顎先をそっと持ち上げる。*"
+    },
+    "yuna_danger_high_2": {
+        "name": "ユナ",
+        "text": "\"危険なものが好きなタイプなんだ？ふふ、いいね。あなたをどれだけ壊せるか気になるな。これからの時間が本当に楽しみ。\""
+    },
+    "yuna_danger_low": {
+        "name": "ユナ",
+        "text": "*彼女が冷たい目で警告する。*"
+    },
+    "yuna_danger_low_2": {
+        "name": "ユナ",
+        "text": "\"口には気をつけなさい。死よりも恐ろしいものが何か知りたくなければね。迂闊に近づいてきたら、骨も残さないよ。\""
+    },
+    "yuna_danger_normal": {
+        "name": "ユナ",
+        "text": "*彼女が冷たい指で僕の頬をそっと撫でる。僕の目をじっと見つめる。不思議な笑みが浮かぶ。*"
+    },
+    "yuna_danger_normal_2": {
+        "name": "ユナ",
+        "text": "\"危険だなんて……ふふ、正解。でも危険だとわかっていて近づいてくるあなたみたいな人、嫌いじゃないよ。あなたがその特別な光を失うまで……そばにいてあげる。\""
+    },
+    "lunch_store": {
+        "name": "僕",
+        "text": "*売店で最後の『チョコ螺旋パン』をゲットした！勝者の気分でパンにかぶりつくと、甘さが口いっぱいに広がる。*"
+    },
+    "lunch_store_2": {
+        "name": "僕",
+        "text": "*機嫌よくパンを食べながら戻っていたら、誰かと肩がぶつかった。*"
+    },
+    "lunch_store_teacher": {
+        "name": "担任先生",
+        "text": "\"あ、ごめんなさい！……あら、{name}じゃない？あなたも売店にパン買いに来たの？\""
+    },
+    "lunch_store_teacher_2": {
+        "name": "担任先生",
+        "text": "\"ふふっ、そのパン本当に美味しいのよね。私も買いに来たんだけど一歩遅かったわ。おいしく食べてね！\""
+    },
+    "lunch_sleep": {
+        "name": "僕",
+        "text": "*机に突っ伏して眠りにつく。窓から差し込む日差しが背中を温かく照らしてくれる。*"
+    },
+    "lunch_sleep_2": {
+        "name": "僕",
+        "text": "*夢の中で誰かが僕の名前を呼ぶ声が聞こえた。とても懐かしくて悲しい声……*"
+    },
+    "lunch_sleep_3": {
+        "name": "僕",
+        "text": "*目を開けると、誰かが僕の顔をじっと覗き込んでいた。*"
+    },
+    "lunch_sleep_seoyeon": {
+        "name": "ソヨン",
+        "text": "\"ねえ……{name}？起きて。授業が始まるよ。\""
+    },
+    "lunch_sleep_seoyeon_2": {
+        "name": "ソヨン",
+        "text": "\"あんまり気持ちよさそうに寝てたから起こすの申し訳なかったけど……授業に遅れちゃダメだよ。ふふっ、放課後にまたね！\""
+    },
+    "lunch_dain": {
+        "name": "僕",
+        "text": "*体育館の方からバレーボールが弾む音が聞こえてくる。音を辿って体育館に向かった。*"
+    },
+    "lunch_dain_2": {
+        "name": "???",
+        "text": "*体育館のドアを開けると、一人の少女がバレーの練習をしていた。僕に気づいて、明るい笑顔で手を振ってくる。*"
+    },
+    "lunch_dain_3_active": {
+        "name": "???",
+        "text": "\"ちょっと、そこの君！さっきの自己紹介で見たよ。めっちゃテンション高かったよね？見てるだけじゃなくてこっち来て一勝負しようよ！運動できそうな感じだし！\""
+    },
+    "lunch_dain_3_normal": {
+        "name": "???",
+        "text": "\"ちょっと、そこの君！見てるだけじゃなくてこっち来て一勝負しようよ！運動できそうな感じだし！\""
+    },
+    "dain_name_share": {
+        "name": "僕",
+        "text": "\"僕？{name}だよ。今日転校してきたんだ。\""
+    },
+    "dain_name_share_2": {
+        "name": "ダイン",
+        "text": "\"{name}？いい名前じゃん！私はバレー部のダインだよ。この学校で私よりジャンプ力がある人はいないからね、覚悟しなよ！\""
+    },
+    "lunch_dain_gym_2": {
+        "name": "ダイン",
+        "text": "\"さあ、ここが私の領域だよ！{name}、準備はいい？手加減しないからね、覚悟しなよ！\"",
+        "choices": [
+            "よし、頑張ろう！",
+            "バレーボール苦手なんだ……教えてくれる？"
+        ]
+    },
+    "lunch_dain_play": {
+        "name": "ダイン",
+        "text": "\"おっ！その意気だよ！いくよ！（ダインが強烈なサーブを打つ。僕はなんとかレシーブした）\""
+    },
+    "lunch_dain_teach": {
+        "name": "ダイン",
+        "text": "\"えへへ、心配しないで！このダイン様が基礎からしっかり教えてあげるよ。さあ、まずは構えからやってみよっか？\""
+    },
+    "lunch_dain_end": {
+        "name": "僕",
+        "text": "*その後、昼休みが終わるまでダインと一緒に汗を流した。転校初日からこんなに活発に過ごすとは思わなかった……いつの間にか午後の授業も全部終わっていた。*"
+    },
+    "lunch_nurse": {
+        "name": "僕",
+        "text": "*転校初日だからか、緊張のせいで少し頭がズキズキする。静かに保健室へ向かった。*"
+    },
+    "lunch_nurse_2": {
+        "name": "???",
+        "text": "\"あら、見かけない顔ね？うちの学校にこんなに可愛い生徒がいたかしら？\""
+    },
+    "nurse_intro": {
+        "name": "保健先生",
+        "text": "\"ここの保健教師よ。みんなは『先生』って呼ぶだけだけど……あなたには特別に名前を教えてあげてもいいかな？\""
+    },
+    "nurse_name_share_pre": {
+        "name": "僕",
+        "text": "\"僕の名前は『{name}』です。\""
+    },
+    "nurse_name_share_study": {
+        "name": "保健先生",
+        "text": "\"{name}……ふふっ、名前と同じくらい澄んだ目をしてるわね。さっきの自己紹介見たけど、完全に模範生って感じだったわよ？勉強のしすぎで頭が痛いの？それとも……転校初日で緊張して来たのかしら？\""
+    },
+    "nurse_name_share_normal": {
+        "name": "保健先生",
+        "text": "\"{name}……ふふっ、名前と同じくらい澄んだ目をしてるわね。どこか具合が悪くて来たの？それとも……転校初日で緊張して来たのかしら？\""
+    },
+    "nurse_free_talk_day1": {
+        "name": "保健先生",
+        "text": "\"緊張しなくていいわよ。ここでは楽にしてね。何か気になることある？\"",
+        "context": "Conversing with the nurse you just met in the nurse's office. The teacher shows a provocative attitude with strange interest in the protagonist. Keep the conversation going until it naturally concludes. When the conversation ends, lunch time ends and transitions to after school. Only in the final turn, see the protagonist off saying it's time for class.",
+        "personality": "A mature and charming 'big sister' style. Enjoys teasing the protagonist with provocative words but actually cares for and wants to protect them more than anyone."
+    },
+    "nurse_day1_end_high": {
+        "name": "僕",
+        "text": "*先生と話しているうちに、いつの間にか授業の時間が近づいていた。先生も名残惜しそうに、また必ず遊びに来てねと言ってくれた。教室に戻らなきゃ。*"
+    },
+    "nurse_day1_end_low": {
+        "name": "僕",
+        "text": "*先生の表情が固くなった。僕の冗談が行き過ぎたらしい。先生は不快感をあらわにして、早く教室に戻りなさいと言った。*"
+    }
+}

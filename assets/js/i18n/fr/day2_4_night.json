@@ -1,0 +1,358 @@
+{
+    "day2_end": {
+        "name": "Moi",
+        "text": "*En franchissant le portail de l'école, l'air du soir enveloppe mon visage. Le ciel vire déjà au bleu marine profond.*"
+    },
+    "day2_end_walk_home": {
+        "name": "Moi",
+        "text": "*Les réverbères s'allument un à un. Cette route m'est devenue si familière que mes pieds savent où tourner sans réfléchir.*"
+    },
+    "day2_end_evening_air": {
+        "name": "Moi",
+        "text": "*L'odeur du dîner de quelqu'un flotte dans la brise. Une lumière chaude filtre par la fenêtre d'un voisin... Quelque chose dans cette scène ordinaire apaise étrangement mon esprit.*"
+    },
+    "day2_end_arrive_home": {
+        "name": "Moi",
+        "text": "*J'ouvre la porte d'entrée et entre. Je marmonne « je suis rentré » en enlevant mes chaussures, mais pas de réponse. On dirait que mes parents ne sont pas encore là.*"
+    },
+    "day2_end_change_clothes": {
+        "name": "Moi",
+        "text": "*Je quitte mon uniforme pour quelque chose de confortable. Dès que la cravate est enlevée, on dirait que toute la tension de la journée fond d'un coup.*"
+    },
+    "day2_end_settle": {
+        "name": "Moi",
+        "text": "*Je pose mon sac et m'assieds à mon bureau. Je range les polys d'aujourd'hui et bois un verre d'eau. Le seul bruit dans la pièce silencieuse est le tic-tac de l'horloge.*"
+    },
+    "day2_end_2": {
+        "name": "Moi",
+        "text": "*Je m'adosse à mon lit et fixe le plafond. Aujourd'hui était... vraiment quelque chose. Une journée bien plus profonde et compliquée qu'hier.*"
+    },
+    "day2_night_reflect_start": {
+        "name": "Moi",
+        "text": "*Quand je ferme les yeux, les scènes d'aujourd'hui défilent comme un panorama. Ça ne fait que deux jours... mais cette école fait déjà partie de mon quotidien.*"
+    },
+    "day2_night_reflect_yuna_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "day2_night_reflect_yuna_secret": {
+        "name": "Moi",
+        "text": "*Le secret que Yuna m'a chuchoté... il persiste encore dans mon esprit. Pourquoi m'a-t-elle dit ça uniquement à moi ? Quel genre de monde se cache derrière ces yeux mystérieux...*"
+    },
+    "day2_night_reflect_seoyeon_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "day2_night_reflect_seoyeon": {
+        "name": "Moi",
+        "text": "*Seoyeon était fidèle à elle-même, joyeuse comme toujours aujourd'hui. Même si elle est occupée avec le conseil des élèves, elle fait tellement d'efforts pour prendre soin de moi... Je me sens un peu coupable, mais aussi reconnaissant.*"
+    },
+    "day2_night_reflect_dain_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "day2_night_reflect_dain": {
+        "name": "Moi",
+        "text": "*Dain est... ah, cette énergie. On ne s'ennuie jamais avec elle. La regarder faire du sport était vraiment cool, et déconner avec elle était amusant. Je me demande quel défi elle me lancera demain.*"
+    },
+    "day2_night_reflect_adults": {
+        "name": "Moi",
+        "text": "*L'infirmière scolaire avait encore cette aura mystérieuse aujourd'hui, et la professeure principale était joueuse mais subtilement attentive envers moi. Est-ce plus compliqué parce que ce sont des adultes, ou... est-ce que je réfléchis trop ?*"
+    },
+    "day2_night_snack_start": {
+        "name": "Moi",
+        "text": "*Perdu dans mes pensées, je réalise que j'ai faim. J'ai à peine dîné... je devrais peut-être trouver quelque chose dans la cuisine.*"
+    },
+    "day2_night_snack_kitchen": {
+        "name": "Moi",
+        "text": "*J'ouvre le frigo et trouve quelques plats que maman a laissés et des nouilles instantanées. J'ai envie de ramen ce soir.*"
+    },
+    "day2_night_snack_ramen": {
+        "name": "Moi",
+        "text": "*Je mets de l'eau dans la casserole et commence à faire bouillir les ramen. Le bruit des bulles remplit la cuisine silencieuse. Regarder la vapeur s'élever m'apaise.*"
+    },
+    "day2_night_snack_think": {
+        "name": "Moi",
+        "text": "*Je mange mes ramen en réfléchissant. Les personnes avec qui j'ai échangé des numéros aujourd'hui... devrais-je leur envoyer un message ? Ou juste dormir ? Après avoir fait la vaisselle, je retourne dans ma chambre.*"
+    },
+    "day2_night_home": {
+        "name": "Moi",
+        "text": "*Je m'allonge sur mon lit et prends mon téléphone par habitude.*"
+    },
+    "day2_night_social_media": {
+        "name": "Moi",
+        "text": "*Avant d'envoyer des messages, je fais défiler rapidement les réseaux sociaux. Les publications de mes amis de l'école remplissent le fil d'actualité.*"
+    },
+    "day2_night_social_media_scroll": {
+        "name": "Moi",
+        "text": "*La photo du déjeuner de quelqu'un, un cliché volé pendant le cours de sport, une photo du coucher de soleil sur le terrain de l'école... Chacun vit sa propre version de la journée.*"
+    },
+    "day2_night_social_media_post": {
+        "name": "Moi",
+        "text": "*La photo d'activité du conseil de Seoyeon croule sous les likes. La vidéo d'entraînement de volley de Dain est inondée de commentaires disant « Trop cool ! »...*"
+    },
+    "day2_night_social_media_react": {
+        "name": "Moi",
+        "text": "*Je souris sans m'en rendre compte. Je mets quelques likes et ferme le fil d'actualité. ...C'est peut-être le moment d'envoyer un message directement.*"
+    },
+    "day2_night_home_check_contact": {
+        "name": "Moi",
+        "text": "*Devrais-je envoyer un message à quelqu'un ...?*",
+        "choices": [
+            "Envoyer un message à Seoyeon.",
+            "Envoyer un message à Yuna.",
+            "Envoyer un message à Dain.",
+            "Envoyer un message à l'infirmière scolaire.",
+            "Envoyer un message à la professeure principale.",
+            "Se rendre chez l'infirmière scolaire.",
+            "Vérifier l'affinité",
+            "Arrêter les messages et aller dormir."
+        ]
+    },
+    "day2_check_affinity": {
+        "name": "Système",
+        "text": "Voici ton statut d'affinité actuel avec chaque personnage.{affinity_list}"
+    },
+    "day2_night_nurse_home": {
+        "name": "Moi",
+        "text": "*Je me rends à l'adresse qu'elle m'a donnée. C'est un immeuble de studios calme près de l'école. Mon cœur bat plus vite en montant dans l'ascenseur.*"
+    },
+    "day2_night_nurse_home_entrance": {
+        "name": "Moi",
+        "text": "*J'appuie sur la sonnette et entends du remue-ménage à l'intérieur. Une voix lance « Un instant ! » suivie de pas qui s'approchent.*"
+    },
+    "day2_night_nurse_home_casual": {
+        "name": "Moi",
+        "text": "*La silhouette qui apparaît derrière la porte est... complètement différente de son apparence à l'école. Au lieu de sa blouse blanche, elle porte un pull en maille douillet et une longue jupe. Un léger parfum de shampoing émane de ses cheveux légèrement humides.*"
+    },
+    "day2_night_nurse_home_2": {
+        "name": "Infirmière Scolaire",
+        "text": "\\\"Oh, tu es vraiment venu ? Entre. Il doit faire froid dehors, non ?\\\""
+    },
+    "day2_night_nurse_home_tea": {
+        "name": "Moi",
+        "text": "*En entrant, un studio douillet s'offre à ma vue. Un éclairage indirect doux, de petites plantes en pot, une déco aux tons chauds. Elle met la bouilloire en marche dans la cuisine.*"
+    },
+    "day2_night_nurse_home_3": {
+        "name": "Infirmière Scolaire",
+        "text": "\\\"Tiens, assieds-toi. Je vais te préparer une tasse de thé chaud. Être seule avec mon mignon nouvel élève... c'est un peu spécial, tu ne trouves pas ?\\\""
+    },
+    "day2_night_nurse_home_talk_life": {
+        "name": "Infirmière Scolaire",
+        "text": "\\\"A l'école, je suis toujours « la professeure », mais ici, je suis juste une personne. Quand je rentre, je bois du thé et regarde des dramas comme ça. Surpris ?\\\""
+    },
+    "day2_night_nurse_home_talk_alone": {
+        "name": "Infirmière Scolaire",
+        "text": "\\\"En fait... tu es le premier élève que j'invite ici. Vivre seule, c'est parfois solitaire. Je me suis dit que ce serait bien d'avoir quelqu'un avec qui partager un thé.\\\""
+    },
+    "day2_night_nurse_home_decision": {
+        "name": "Moi",
+        "text": "*Je jette un coup d'œil à l'horloge — il est déjà plus de 23h. La tasse de thé est vide, et la nuit s'est approfondie. Devrais-je rester un peu plus, ou rentrer...*",
+        "choices": [
+            "Rester encore un peu.",
+            "Il est tard, je devrais rentrer."
+        ]
+    },
+    "day2_night_nurse_home_4": {
+        "name": "Moi",
+        "text": "*Sa chambre... un moment calme rien que pour nous deux, sous la lumière tamisée.*"
+    },
+    "day2_night_nurse_home_5": {
+        "name": "Moi",
+        "text": "*Seul avec elle dans cette pièce... mon cœur bat si fort qu'il résonne dans mes oreilles. Son parfum chatouille le bout de mon nez, et la nuit ne fait que s'approfondir.*"
+    },
+    "day2_night_message_seyoun": {
+        "name": "Moi",
+        "text": "*Qu'est-ce que je devrais écrire à Seoyeon ?*"
+    },
+    "day2_night_message_seyoun_after": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à Seoyeon. 'Du coucher de soleil de ce soir à tes heures sup ? j'étais vraiment heureux de tout partager avec toi. À demain !'*"
+    },
+    "day2_night_message_seyoun_lunch": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à Seoyeon. 'Le sandwich de ce midi était vraiment délicieux ! À demain.'*"
+    },
+    "day2_night_message_seyoun_generic": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à Seoyeon. 'Comment s'est passée ta journée ? À demain à l'école.'*"
+    },
+    "day2_night_message_seyoun_reply": {
+        "name": "Seoyeon",
+        "text": "*Après un moment, une réponse est arrivée.* '...Tu es encore debout ? À demain à l'école, {name}.'",
+        "context": "C'est la nuit, et ils discutent par messages sur smartphone depuis chez eux. Seoyeon a répondu au message du protagoniste. Son ton varie selon sa relation avec le protagoniste—si l'affinité est élevée, elle est chaleureuse et proactive ; si l'affinité est basse, elle est prudente et réservée. Continue la conversation jusqu'à ce qu'elle se termine naturellement. Une fois la conversation terminée, le protagoniste s'endormira en pensant à demain. Seulement au dernier tour, dis bonne nuit ou suggère de se voir à l'école demain pour terminer la conversation naturellement.",
+        "personality": "Une présidente du conseil des élèves lumineuse, affectueuse et amicale. Elle a des sentiments pour le protagoniste et l'approche avec honnêteté et proactivité."
+    },
+    "day2_night_message_seyoun_reply_high": {
+        "name": "Moi",
+        "text": "*Parler avec Seoyeon est toujours un plaisir. Je sens la sincérité dans ses mots chaleureux, et ça rend la préparation de mon sac plus légère. J'ai déjà hâte d'être au déjeuner de demain.*"
+    },
+    "day2_night_message_seyoun_reply_normal": {
+        "name": "Moi",
+        "text": "*J'ai fini de discuter avec Seoyeon sans problème. Je ferais mieux de ne pas oublier nos plans pour le déjeuner de demain.*"
+    },
+    "day2_night_message_seyoun_reply_low": {
+        "name": "Moi",
+        "text": "*La réponse de Seoyeon semble plus formelle que d'habitude. Ai-je fait quelque chose de mal ? Je devrais l'aborder plus prudemment demain.*"
+    },
+    "day2_night_message_yuna": {
+        "name": "Moi",
+        "text": "*Qu'est-ce que je devrais écrire à Yuna ?*"
+    },
+    "day2_night_message_yuna_met": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à Yuna. 'Ce que tu m'as montré aujourd'hui... je ne l'oublierai pas. Bonne nuit.'*"
+    },
+    "day2_night_message_yuna_generic": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à Yuna. 'Comment s'est passée ta journée ? À demain à l'école.'*"
+    },
+    "day2_night_message_yuna_reply": {
+        "name": "Yuna",
+        "text": "*Une réponse arrive après un moment.* '...Ouais. Je savais que tu comprendrais. Je veillerai sur toi, même dans tes rêves, {name}.'",
+        "context": "C'est la nuit, et ils discutent par messages sur smartphone depuis chez eux. Yuna a envoyé une réponse brève mais profondément pénétrante au message du protagoniste. Continue la conversation jusqu'à ce qu'elle se termine naturellement. Une fois la conversation terminée, le protagoniste s'endormira en pensant à demain. Seulement au dernier tour, dis bonne nuit ou suggère de se voir à l'école demain pour terminer la conversation naturellement.",
+        "personality": "Une fille mystérieuse, froide et secrète. Elle ressent une étrange fascination pour le protagoniste et utilise des phrases courtes et énigmatiques."
+    },
+    "day2_night_message_yuna_reply_high": {
+        "name": "Moi",
+        "text": "*Je me sens attiré plus profondément dans l'aura mystérieuse de Yuna. Ses mots sur le fait de veiller sur moi dans mes rêves sont moins effrayants et étrangement réconfortants. On dirait presque que je pourrais vraiment la rencontrer en rêve.*"
+    },
+    "day2_night_message_yuna_reply_normal": {
+        "name": "Moi",
+        "text": "*Parler avec Yuna reste déroutant, mais j'ai l'impression qu'on s'est un peu rapprochés. Les secrets qu'elle a mentionnés continuent de tourbillonner dans mon esprit.*"
+    },
+    "day2_night_message_yuna_reply_low": {
+        "name": "Moi",
+        "text": "*L'attitude de Yuna est si froide et déstabilisante. Un frisson me parcourt, et je me demande si entrer dans son monde était vraiment le bon choix.*"
+    },
+    "day2_night_message_dain": {
+        "name": "Moi",
+        "text": "*Qu'est-ce que je devrais écrire à Dain ?*"
+    },
+    "day2_night_message_dain_after": {
+        "name": "Moi",
+        "text": "*Je repense à ce qui s'est passé pendant l'entraînement après les cours. Qu'est-ce que je devrais lui écrire ?*"
+    },
+    "day2_night_message_dain_bet": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à Dain. 'Bravo pour l'entraînement aujourd'hui ! N'oublie pas notre pari tteokbokki demain.'*"
+    },
+    "day2_night_message_dain_practice": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à Dain. 'Bravo pour l'entraînement aujourd'hui ! Je me suis éclaté grâce à toi. À demain !'*"
+    },
+    "day2_night_message_dain_lunch": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à Dain. 'Te croiser à la boutique aujourd'hui, c'était fun ! Allons manger du tteokbokki demain.'*"
+    },
+    "day2_night_message_dain_generic": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à Dain. 'Hé Dain, bravo pour aujourd'hui ! À demain.'*"
+    },
+    "day2_night_message_dain_reply": {
+        "name": "Dain",
+        "text": "*Une réponse énergique.* 'Bien sûr ! Je vais gagner, alors prépare ton portefeuille ! Haha, bonne nuit, {name} !'",
+        "context": "C'est la nuit, et ils discutent par messages sur smartphone depuis chez eux. Dain a envoyé une réponse énergique au message du protagoniste. Continue la conversation jusqu'à ce qu'elle se termine naturellement. Une fois la conversation terminée, le protagoniste s'endormira en pensant à demain. Seulement au dernier tour, dis bonne nuit ou suggère de se voir à l'école demain pour terminer la conversation naturellement.",
+        "personality": "Une joueuse de volley-ball décontractée et rafraîchissante. Elle aime passer du temps avec le protagoniste et discute de manière enjouée et énergique."
+    },
+    "day2_night_message_dain_reply_high": {
+        "name": "Moi",
+        "text": "*L'énergie vibrante de Dain me remonte aussi le moral. Je la vois pratiquement sourire en me taquinant « prépare ton portefeuille ». Devrais-je peut-être perdre le pari tteokbokki exprès pour elle demain ?*"
+    },
+    "day2_night_message_dain_reply_normal": {
+        "name": "Moi",
+        "text": "*J'ai eu une discussion amusante avec Dain. Je devrais me préparer mentalement pour ne pas perdre le pari tteokbokki demain.*"
+    },
+    "day2_night_message_dain_reply_low": {
+        "name": "Moi",
+        "text": "*La réponse de Dain est plus morne que d'habitude. Je me demande si mon message l'a agacée. La main tenant mon téléphone se sent maladroite.*"
+    },
+    "day2_night_message_nurse": {
+        "name": "Moi",
+        "text": "*Qu'est-ce que je devrais écrire à l'infirmière scolaire ?*"
+    },
+    "day2_night_message_nurse_rest": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à l'infirmière scolaire. 'Merci pour aujourd'hui, madame. J'ai bien pu me reposer grâce à vous.'*"
+    },
+    "day2_night_message_nurse_generic": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à l'infirmière scolaire. 'Merci pour votre travail aujourd'hui, madame. Bonne nuit.'*"
+    },
+    "day2_night_message_nurse_reply": {
+        "name": "Infirmière Scolaire",
+        "text": "*Après un moment, une réponse est arrivée.* 'Compris. Ne te force pas—repose-toi. À demain, {name}.'",
+        "context": "C'est la nuit, et ils discutent par messages sur smartphone depuis chez eux. L'infirmière scolaire a répondu au message du protagoniste. Son ton varie selon sa relation avec le protagoniste—si l'affinité est élevée, elle est joueuse et séduisante ; si l'affinité est basse, elle est professionnelle et distante. Continue la conversation jusqu'à ce qu'elle se termine naturellement. Une fois la conversation terminée, le protagoniste s'endormira en pensant à demain. Seulement au dernier tour, dis bonne nuit ou suggère de se voir à l'école demain pour terminer la conversation naturellement.",
+        "personality": "Une infirmière scolaire languissante, séduisante mais chaleureuse. Elle ressent une attirance mystérieuse pour le protagoniste et a une personnalité audacieuse et fli rteuse."
+    },
+    "day2_night_message_nurse_reply_high": {
+        "name": "Moi",
+        "text": "*Son ton séduisant semble persister dans mes oreilles. Je peux presque voir son sourire à travers l'écran, et mon cœur tremble. Quoi qu'il arrive demain, je dois passer à l'infirmerie.*"
+    },
+    "day2_night_message_nurse_reply_normal": {
+        "name": "Moi",
+        "text": "*J'ai fini de discuter avec l'infirmière scolaire sans problème. Je devrais la saluer chaleureusement si je la vois à l'école demain.*"
+    },
+    "day2_night_message_nurse_reply_low": {
+        "name": "Moi",
+        "text": "*Sa réponse est douloureusement factuelle. Elle me traite clairement comme un simple élève, et un sentiment amer s'installe.*"
+    },
+    "day2_night_message_teacher": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message à la professeure principale. 'Merci pour votre travail aujourd'hui, madame. Bonne nuit.'*"
+    },
+    "day2_night_message_teacher_reply": {
+        "name": "Professeur Principal",
+        "text": "*Une réponse légèrement tardive.* 'Oh là là, {name}. Un message à cette heure — je suis un peu surprise. Mais merci de penser à moi. Dors bien toi aussi, et ne sois pas en retard demain.'",
+        "context": "C'est la nuit, et ils discutent par messages sur smartphone depuis chez eux. La professeure principale était un peu troublée mais reconnaissante du message du protagoniste, et a envoyé une réponse. Continue la conversation jusqu'à ce qu'elle se termine naturellement. Une fois la conversation terminée, le protagoniste s'endormira en pensant à demain. Seulement au dernier tour, dis bonne nuit ou suggère de se voir à l'école demain pour terminer la conversation naturellement.",
+        "personality": "Une professeure principale qui maintient une ligne claire entre le professionnel et le personnel, mais qui a un faible pour le protagoniste. Elle prend soin de lui avec chaleur et attention tout en essayant de garder ses distances."
+    },
+    "day2_night_message_teacher_reply_high": {
+        "name": "Moi",
+        "text": "*La chaleur de sa réponse remplit mon cœur. Ce n'est pas juste être traité comme un élève — je me sens un peu respecté en tant que personne, et ça me donne envie d'aller à l'école demain.*"
+    },
+    "day2_night_message_teacher_reply_normal": {
+        "name": "Moi",
+        "text": "*J'ai fini de discuter avec la professeure principale sans problème. Je ferais mieux de ne pas être en retard demain.*"
+    },
+    "day2_night_message_teacher_reply_low": {
+        "name": "Moi",
+        "text": "*Sa réponse est courte et stricte. Le regret de lui avoir écrit pendant son temps personnel m'envahit.*"
+    },
+    "day2_night_goodnight_start": {
+        "name": "Moi",
+        "text": "*Je pose mon téléphone et me dirige vers la fenêtre. Avant de m'endormir, je veux juste profiter de cette nuit un instant.*"
+    },
+    "day2_night_goodnight_stars": {
+        "name": "Moi",
+        "text": "*En ouvrant la fenêtre, l'air froid de la nuit s'engouffre. Des étoiles sont éparpillées dans le ciel. Elles semblent encore plus brillantes qu'hier... La mention de Yuna de « la troisième étoile » me traverse l'esprit.*"
+    },
+    "day2_night_goodnight_sounds": {
+        "name": "Moi",
+        "text": "*Le chant des insectes continue sans fin. Un klaxon retentit une fois au loin, puis le silence revient. Les nuits dans ce quartier... sont vraiment calmes.*"
+    },
+    "day2_night_goodnight_tomorrow": {
+        "name": "Moi",
+        "text": "*Demain sera déjà mon troisième jour depuis le transfert. Seoyeon, Yuna, Dain, les professeures... Comment mes relations avec elles vont-elles évoluer ? Un étrange mélange d'anticipation et d'anxiété remplit ma poitrine.*"
+    },
+    "day2_night_goodnight_close": {
+        "name": "Moi",
+        "text": "*Je ferme la fenêtre et tire les rideaux. Je me blottis dans ma couverture et ferme les yeux. Bien joué aujourd'hui, moi...*"
+    },
+    "day2_night_dream_start": {
+        "name": "Moi",
+        "text": "*Ma conscience se dissipe dans une brume... Je me tiens dans un espace où je ne sais pas si c'est un rêve ou la réalité. Ça ressemble au toit de l'école, ou peut-être à un jardin inconnu.*"
+    },
+    "day2_night_dream_vision": {
+        "name": "???",
+        "text": "*La voix de quelqu'un flotte dans le vent. « Demain... il y a quelque chose que je veux te montrer. » Je ne sais pas à qui appartient cette voix, mais sa résonance chaude et désespérée persiste dans mes oreilles.*"
+    },
+    "day2_night_dream_end": {
+        "name": "Moi",
+        "text": "*Je tends la main, mais il n'y a rien. La voix s'estompe lentement... et ma conscience sombre dans un sommeil profond, très profond.*"
+    },
+    "day2_final_scene": {
+        "name": "Moi",
+        "text": "*Une faible lumière perce l'obscurité. Quelles vérités m'attendent demain... Je ferme mes lourdes paupières et sombre dans un profond sommeil.*"
+    }
+}
