@@ -1,193 +1,193 @@
 {
     "after_school_start": {
         "name": "Yo",
-        "text": "*Se acabaron las clases. El atardecer carmesí se filtra por la ventana. Fue un día bastante especial.*"
+        "text": "*Se acabaron las clases. El atardecer se filtra por la ventana. Para ser el primer día, ha sido bastante memorable.*"
     },
     "after_school_start_2": {
         "name": "Yo",
-        "text": "*Mientras guardo mis cosas, siento algo de nostalgia. Quisiera ver a alguien más...*"
+        "text": "*Recojo mis cosas, pero me da pena irme a casa así sin más. ¿Echo un vistazo por ahí?*"
     },
     "after_school_start_3": {
         "name": "Yo",
-        "text": "*¿Qué debería hacer? El atardecer es demasiado bonito como para ir a casa así nada más.*",
+        "text": "*Con este atardecer, irse directo a casa sería un desperdicio. ¿Adónde voy?*",
         "choices": [
-            "Ir a la sala del consejo estudiantil a ver a Seoyeon.",
-            "Ir a la biblioteca a ver a Yuna.",
-            "Echar un vistazo al anexo de la biblioteca.",
-            "Ir al gimnasio a ver a Dain.",
+            "A la sala del consejo estudiantil, a buscar a Seoyeon.",
+            "A la biblioteca, a ver a Yuna.",
+            "Echar un vistazo al ala de la biblioteca.",
+            "Al gimnasio, a ver a Dain.",
             "Ir hacia el ruidoso gimnasio.",
-            "Ir a la enfermería.",
-            "Explorar la enfermería.",
-            "Ir a la sala de profesores a ver a la profesora.",
+            "La enfermería me atrae por alguna razón.",
+            "Pasar por la enfermería.",
+            "Ir a la sala de profesores a ver a la tutora.",
             "Por hoy es suficiente, me voy a casa."
         ]
     },
     "after_teacher": {
         "name": "Yo",
-        "text": "*Abro la puerta de la sala de profesores. Mi profesora está organizando documentos sola.*"
+        "text": "*Abro la puerta de la sala de profesores. La tutora está luchando entre montañas de papeles.*"
     },
     "after_teacher_2": {
         "name": "Profesora",
-        "text": "\"¡Oh, {name}! ¿Qué te trae por aquí a esta hora?\""
+        "text": "\"Anda, ¿{name}? ¿Qué haces en la sala de profesores a estas horas?\""
     },
     "after_teacher_3": {
         "name": "Profesora",
-        "text": "\"Debes tener muchas preguntas ya que es tu primer día. ¿Hay algo en lo que pueda ayudarte?\"",
+        "text": "\"Parece que al ser tu primer día tienes muchas dudas. ¿En qué te puedo ayudar?\"",
         "choices": [
-            "¿Cuándo se va? Si está sola, me encantaría ayudarla.",
-            "Solo quería verla una vez más antes de irme.",
-            "¿Hay algún lugar secreto en esta escuela?"
+            "Trabajar sola debe ser aburrido. ¿La ayudo un poco?",
+            "Es que verla trabajar tiene su encanto... quería verla una vez más.",
+            "¿Hay algún sitio secreto en el colegio? Algo que solo usted conozca."
         ]
     },
     "after_teacher_help": {
         "name": "Profesora",
-        "text": "\"Jeje, qué dulce de tu parte. Pero este es mi trabajo. Deberías ir a casa a descansar, {name}.\""
+        "text": "\"Con la intención me basta, gracias. Pero esto es cosa mía... {name}, vete a casa a descansar. Un estudiante no debería decir esas cosas... yo tampoco, tonta.\""
     },
     "after_teacher_miss": {
         "name": "Profesora",
-        "text": "\"Ay... {name}, de verdad eres un caso. Es un poco vergonzoso, pero me alegra que hayas venido... Jeje.\""
+        "text": "\"...{name}, de verdad que no tienes remedio. Que un estudiante me diga eso es un poco... pero me alegra. Yo no debería sentirme así.\""
     },
     "after_teacher_info": {
         "name": "Profesora",
-        "text": "\"Sí, nuestra escuela tiene una larga historia y muchos lugares escondidos. La profesora te los mostrará poco a poco.\""
+        "text": "\"El colegio tiene mucha historia, así que hay bastantes rincones ocultos. Ya te los iré enseñando. Por hoy, a casa.\""
     },
     "after_teacher_contact": {
         "name": "Profesora",
-        "text": "\"Ah, es verdad. Si surge algo urgente, contáctame. Te daré mi número.\""
+        "text": "\"Ah, cierto. Si surge alguna emergencia, contacta conmigo. Te doy mi número.\""
     },
     "after_teacher_contact_ask": {
         "name": "Profesora",
-        "text": "\"Aquí tienes mi número. Asegúrate de guardarlo.\""
+        "text": "\"Toma, aquí tienes. Guárdalo.\""
     },
     "after_seoyeon": {
-        "name": "Yo",
-        "text": "*Abro la puerta de la sala del consejo estudiantil. Seoyeon está luchando entre montones de papeles.*"
+        "name": "Seoyeon",
+        "text": "*Abro la puerta de la sala del consejo estudiantil. Seoyeon está luchando entre montañas de papeles.*"
     },
     "after_seoyeon_3_standard": {
         "name": "Seoyeon",
-        "text": "\"¿Eh? ¡{name}! ¿Sigues aquí? No me digas que... ¿me estabas esperando? (Sonrisa traviesa)\"",
+        "text": "\"¿Eh? {name}. ¿Qué haces aquí a estas horas? No me digas que me estabas esperando.\"",
         "choices": [
             "Sí, quería ir contigo. ¿Te ayudo?",
-            "Quería verte. ¿No te estás esforzando demasiado?",
-            "Es un malentendido. Solo me equivoqué de camino."
+            "Quería verte. ¿No te estás exigiendo demasiado?",
+            "Te equivocas. Solo me confundí de camino."
         ]
     },
     "after_seoyeon_3_high": {
         "name": "Seoyeon",
-        "text": "*Seoyeon deja los documentos y sonríe radiante.* \"¡{name}! Sabía que vendrías. No... en realidad estaba deseando que vinieras. ¿Vamos juntos?\"",
+        "text": "*Al verme, Seoyeon deja los papeles y sonríe abiertamente.* \"¡{name}! Sabía que vendrías. Siendo sincera, te estaba esperando. ¿Nos vamos juntos?\"",
         "choices": [
-            "Sí, yo también quería ir contigo. Te ayudo.",
-            "¿Me esperaste? Estoy conmovido. De verdad me alegra.",
-            "Te ves mucho más bonita bajo el atardecer."
+            "Yo también quería ir contigo. Te echo una mano.",
+            "¿Me estabas esperando? Qué detalle.",
+            "Con la luz del atardecer estás mucho más guapa que de costumbre."
         ]
     },
     "after_seoyeon_3_low": {
         "name": "Seoyeon",
-        "text": "*Seoyeon me mira de reojo con expresión molesta.* \"...¿{name}? ¿Qué haces aquí? Estoy ocupada, así que si no tienes nada que hacer, ¿podrías irte?\"",
+        "text": "*Seoyeon ordena papeles y me echa un vistazo de reojo. Su mirada es fría.* \"...¿{name}? Estoy ocupada, así que si no tienes nada que hacer, ¿puedes irte?\"",
         "choices": [
-            "Perdón, no quería molestarte.",
-            "Yo también estoy ocupado. Me iré sin que me lo pidas."
+            "Perdona, no quería molestar.",
+            "Yo también tengo cosas que hacer. Me iba a ir sin que me lo dijeras."
         ]
     },
     "after_seoyeon_rude": {
         "name": "Seoyeon",
-        "text": "*La expresión de Seoyeon se endurece al instante. Vuelve a mirar sus documentos.*"
+        "text": "*La expresión de Seoyeon se endurece al instante y vuelve a concentrarse en los papeles.*"
     },
     "after_seoyeon_rude_2": {
         "name": "Seoyeon",
-        "text": "\"Ah... ¿sí? Entonces no me molestes y vete, ¿quieres? Estoy bastante ocupada.\""
+        "text": "\"¿Ah, sí? Entonces no molestes y vete. Estoy ocupada.\""
     },
     "after_seoyeon_compliment": {
         "name": "Seoyeon",
-        "text": "*La cara de Seoyeon se pone roja al instante. Se esconde detrás de los documentos, haciendo pucheros.* \"¿Q-qué dices de repente...? ¿Me estás molestando? ...D-de todos modos, tenemos que terminar rápido, ¡así que ayúdame con esto!\""
+        "text": "*Las orejas de Seoyeon se ponen rojas. Se esconde tras los papeles y hace un puchero.* \"...¿A qué viene eso de repente? ¿Me estás tomando el pelo? ¡D-da igual, hay que terminar esto ya, así que ayúdame!\""
     },
     "after_seoyeon_help": {
         "name": "Seoyeon",
-        "text": "*Parece conmovida y abre mucho los ojos. Enseguida sonríe y me ofrece el asiento de al lado.*"
+        "text": "*Abre mucho los ojos y enseguida sonríe, señalando el asiento de al lado.*"
     },
     "after_seoyeon_help_dialogue": {
         "name": "Seoyeon",
-        "text": "\"¿En serio? ¡Gracias! Con tu ayuda, terminaremos enseguida. Toma, ¿puedes organizar esto?\""
+        "text": "\"¿En serio? Gracias. Contigo acabamos enseguida. Organiza esto, ¿vale?\""
     },
     "after_seoyeon_help_action": {
         "name": "Seoyeon",
-        "text": "*Mientras organizamos los documentos en silencio, siento una extraña conexión. Afuera, el atardecer ya está cayendo.*"
+        "text": "*Ordenamos papeles en silencio, sintiendo una extraña conexión. Fuera, el cielo ya se tiñó de atardecer.*"
     },
     "after_seoyeon_help_3": {
         "name": "Seoyeon",
-        "text": "\"¡Cuando terminemos esto, vamos a comer algo rico!\""
+        "text": "\"Cuando acabemos con esto, vamos a comer algo rico. Me muero de hambre.\""
     },
     "after_seoyeon_cafe": {
         "name": "Seoyeon",
-        "text": "*Después de terminar el trabajo, pasamos por una pequeña cafetería frente a la escuela.*"
+        "text": "*Terminamos el trabajo y pasamos por una cafetería pequeña frente al colegio.*"
     },
     "after_seoyeon_cafe_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon bebe su bebida con crema batida y se ve feliz.*"
+        "text": "*Seoyeon sostiene una bebida rebosante de nata montada con cara de satisfacción.*"
     },
     "after_seoyeon_cafe_2_2": {
         "name": "Seoyeon",
-        "text": "\"Ahhh, ahora sí me siento viva. Muchas gracias por hoy, {name}.\""
+        "text": "\"Ahhh~ ahora sí revivo. De verdad, gracias por hoy, {name}.\""
     },
     "after_seoyeon_cafe_3": {
         "name": "Seoyeon",
-        "text": "\"Gracias a ti, hoy se volvió realmente especial. Oye... ¿podemos volver juntos a casa mañana también?\"",
+        "text": "\"Gracias a ti, hoy fue un día especial. Oye... ¿mañana también podemos volver juntos?\"",
         "choices": [
-            "Claro que sí. Ya estoy ansioso por mañana.",
-            "Mmm, ya veremos... Es broma. Vamos juntos sí o sí."
+            "Claro. Ya tengo ganas de que sea mañana.",
+            "Pues no sé, depende de cómo me sienta... Es broma. Vamos juntos sí o sí."
         ]
     },
     "after_seoyeon_promise": {
         "name": "Seoyeon",
-        "text": "*Extiende su meñique y sonríe radiante...*"
+        "text": "*Seoyeon extiende el meñique con los ojos brillantes.*"
     },
     "after_seoyeon_promise_2": {
         "name": "Seoyeon",
-        "text": "\"¿Prometido? ¡No puedes echarte atrás! Nos vemos mañana, {name}. ¡Llega con cuidado a casa!\""
+        "text": "\"Prometido. No puedes fallar. Hasta mañana, {name}. Llega bien a casa.\""
     },
     "after_seoyeon_tease": {
         "name": "Seoyeon",
-        "text": "*Infla las mejillas y me fulmina con la mirada.*"
+        "text": "*Seoyeon infla los mofletes y me fulmina con la mirada.*"
     },
     "after_seoyeon_tease_2": {
         "name": "Seoyeon",
-        "text": "\"Hmph... ¡Eres muy malo! Pero tienes que venir. Si no vienes, como presidenta del consejo estudiantil voy a... Es broma. ¡Nos vemos mañana!\""
+        "text": "\"¡Eres lo peor! Pero más te vale venir. Si no, como presidenta del consejo... bueno, aún no he decidido qué te haré. Hasta mañana.\""
     },
     "after_seoyeon_contact_ask": {
         "name": "Seoyeon",
-        "text": "\"¡Ah, espera! Aún no hemos intercambiado números. Puede que tenga algo que decirte... ¿Me darías tu número?\"",
+        "text": "\"Ah, espera. Todavía no te pedí el número. Creo que voy a querer decirte cosas... ¿me lo pasas?\"",
         "choices": [
-            "Claro, contáctame cuando quieras. Aquí está mi número.",
-            "Lo siento, te lo daré cuando tengamos más confianza."
+            "Claro, escríbeme cuando quieras. Aquí tienes.",
+            "Perdona, te lo doy cuando tengamos más confianza."
         ]
     },
     "after_seoyeon_contact_success": {
         "name": "Seoyeon",
-        "text": "\"¡Gracias! Entonces de verdad te escribiré después. ¡Cuídate!\""
+        "text": "\"Genial. Entonces te escribo de verdad. ¡Cuídate!\""
     },
     "after_seoyeon_contact_fail": {
         "name": "Seoyeon",
-        "text": "\"Ah... ¡está bien! Fue muy repentino, ¿verdad? Perdón. ¡Entonces nos vemos mañana en la escuela!\""
+        "text": "\"...Sí, fui demasiado rápida. No pasa nada, poco a poco. Nos vemos mañana en el colegio.\""
     },
     "after_seoyeon_worry": {
         "name": "Seoyeon",
-        "text": "*Se rasca la cabeza tímidamente y sonríe.*"
+        "text": "*Seoyeon se rasca la cabeza con timidez.*"
     },
     "after_seoyeon_worry_2": {
         "name": "Seoyeon",
-        "text": "\"Jeje, me atrapaste. Ser presidenta del consejo estudiantil da más trabajo del que parece. ¡Pero saber que me entiendes me da energía! Espera un poco, termino pronto y nos vamos juntos.\""
+        "text": "\"Me has pillado. Ser presidenta del consejo da un trabajo que no te imaginas. Pero gracias por preocuparte. Espérame un momento, acabo enseguida y nos vamos juntos.\""
     },
     "after_yuna_new": {
         "name": "Yo",
-        "text": "*Caminando por las partes silenciosas de la escuela, llego al anexo de la biblioteca. Bajo la luz del atardecer, una chica está sentada junto a la ventana.*"
+        "text": "*Buscando un lugar tranquilo, acabo en el ala de la biblioteca. Bajo la luz del atardecer, una chica está sentada junto a la ventana.*"
     },
     "after_yuna_new_2": {
-        "name": "???",
-        "text": "\"¿Eh? Venir aquí a esta hora... Eres bastante peculiar. Me llamo Yuna.\""
+        "name": "Yuna",
+        "text": "\"...Venir hasta aquí a estas horas. Eres peculiar. Soy Yuna.\""
     },
     "after_yuna": {
         "name": "Yuna",
-        "text": "*El anexo de la biblioteca está más oscuro y silencioso que antes. Allí, una chica está sentada junto a la ventana, contemplando el atardecer.*"
+        "text": "*El ala de la biblioteca está más silenciosa que antes. Bajo la luz del atardecer, una chica permanece sentada junto a la ventana.*"
     },
     "after_yuna_2": {
         "name": "Yuna",
@@ -195,261 +195,261 @@
     },
     "after_yuna_3": {
         "name": "Yuna",
-        "text": "\"Ah, hola... La biblioteca después de clases es tan tranquila, me gusta. ¿Por qué viniste?\""
+        "text": "\"...Has venido.\""
     },
     "yuna_after_talk": {
         "name": "Yuna",
-        "text": "\"Nos vemos de nuevo, {name}. Este lugar sigue siendo tranquilo... y sigue siendo pesado. ¿No sientes ese peso?\""
+        "text": "\"Otra vez aquí, {name}. Este lugar sigue igual de tranquilo... y de pesado.\""
     },
     "yuna_after_choices": {
         "name": "Yuna",
-        "text": "\"¿Hay algo que te da curiosidad? O... ¿solo viniste porque te parezco interesante?\"",
+        "text": "\"¿Tienes curiosidad por algo? ¿O viniste solo por novedad?\"",
         "choices": [
-            "Cuéntame sobre los secretos de la escuela.",
-            "La comida de la cafetería estuvo rica hoy, ¿no?",
-            "¿Has estado aquí desde la mañana?"
+            "Cuéntame sobre los secretos de este colegio.",
+            "La comida de hoy estaba buena, ¿no?",
+            "¿Llevas aquí desde la mañana?"
         ]
     },
     "yuna_name_share_pre": {
         "name": "Yo",
-        "text": "\"Mi nombre es '{name}'. Quiero ser tu amigo.\""
+        "text": "\"Soy {name}. Quería conocerte un poco.\""
     },
     "yuna_name_share": {
         "name": "Yuna",
-        "text": "*Murmura mi nombre en voz baja.* \"...{name}. Lo recordaré. Pero en esta escuela, los nombres... puede que no signifiquen nada.\""
+        "text": "*Murmura mi nombre en voz baja.* \"...{name}. Lo recordaré.\""
     },
     "after_yuna_know": {
         "name": "Yuna",
-        "text": "*Gira la cabeza lentamente para mirarme. Una leve sonrisa se dibuja en sus labios.*"
+        "text": "*Gira la cabeza lentamente y me mira. Una tenue sonrisa en sus labios.*"
     },
     "after_yuna_know_2": {
         "name": "Yuna",
-        "text": "*Toma mi mano y me guía hacia la azotea del anexo.*"
+        "text": "*Me toma de la mano y me guía hacia la azotea del ala.*"
     },
     "after_yuna_know_2_2": {
         "name": "Yuna",
-        "text": "\"¿Quieres saber sobre mí...? Hmm, no sé si eres valiente o imprudente.\""
+        "text": "\"¿Quieres saber de mí...? No sé si eres valiente o imprudente.\""
     },
     "after_yuna_know_3": {
         "name": "Yuna",
-        "text": "\"Está bien. Antes de que el atardecer se desvanezca... te lo contaré poco a poco. Sígueme.\""
+        "text": "\"Vale. Antes de que caiga el sol, te iré contando poco a poco. Sígueme.\""
     },
     "after_yuna_move_rooftop": {
         "name": "Yo",
-        "text": "*La sigo subiendo las escaleras que crujen. La luz roja del atardecer se filtra por las ventanas, y al llegar a la azotea, sopla una brisa fresca.*"
+        "text": "*Subo por las escaleras que crujen. La luz rojiza del atardecer se cuela por las ventanas, y al llegar a la azotea sopla una brisa fresca.*"
     },
     "after_yuna_rooftop": {
         "name": "Yuna",
-        "text": "*Vista desde la azotea del anexo, la escuela se tiñe con el atardecer y emana una atmósfera misteriosa.*"
+        "text": "*Desde la azotea del ala, el colegio se tiñe de atardecer.*"
     },
     "after_yuna_rooftop_2": {
         "name": "Yuna",
-        "text": "*Yuna se recarga en la barandilla y me mira fijamente.*"
+        "text": "*Yuna se apoya en la barandilla y me mira fijamente.*"
     },
     "after_yuna_rooftop_2_2": {
         "name": "Yuna",
-        "text": "\"La gente cree que esta escuela es perfecta. Pero la perfección es solo una ilusión.\""
+        "text": "\"Hoy en clase, la segunda persona de la tercera fila... le temblaban las manos al hacer la presentación. Nadie se dio cuenta. La gente mira por encima.\""
     },
     "after_yuna_rooftop_3": {
         "name": "Yuna",
-        "text": "\"Los problemas que no se ven en la superficie solo se pudren por dentro. La energía pesada que llena esta escuela... ¿no sientes esos cambios?\"",
+        "text": "\"Lo que no se ve en la superficie se va pudriendo por dentro. La energía pesada que llena este colegio... ¿no la sientes?\"",
         "choices": [
-            "Donde sea está bien mientras esté contigo.",
-            "Oscuridad... suena algo aterrador."
+            "Si estoy contigo, cualquier lugar está bien.",
+            "Oscuridad... eso suena un poco aterrador."
         ]
     },
     "after_yuna_together": {
         "name": "Yuna",
-        "text": "*Aprieta mi mano con fuerza. Mirándola a los ojos, esboza una sonrisa triste...*"
+        "text": "*Me aprieta la mano con fuerza. Para ser tan pequeña, es sorprendentemente cálida.*"
     },
     "after_yuna_together_2": {
         "name": "Yuna",
-        "text": "\"Qué tontería... pero no me desagrada. Está bien, entonces... ¿qué tal si nos convertimos en personas que comparten los secretos del otro?\""
+        "text": "\"Qué tontería... pero no me disgusta. Entonces, ¿nos convertimos en personas que comparten sus secretos?\""
     },
     "yuna_contact_exchange": {
         "name": "Yuna",
-        "text": "*Yuna se separa de la barandilla y extiende su celular con indiferencia.* \"Para compartir secretos... necesitamos una forma de contactarnos. Deja tu número aquí.\"",
+        "text": "*Yuna se separa de la barandilla y me tiende el móvil sin inmutarse.* \"...Nunca se sabe lo que puede pasar. Déjame tu número.\"",
         "choices": [
-            "Claro. Quiero saber todo sobre ti.",
-            "Perdón, todavía soy algo precavido."
+            "Sí. Quiero saber más de ti.",
+            "Perdona, aún me lo pienso."
         ]
     },
     "yuna_contact_success": {
         "name": "Yuna",
-        "text": "*Yuna guarda mi número y sonríe débilmente.* \"...Listo. Ahora estamos conectados. Cuando te llame... tienes que venir sin importar cuándo.\""
+        "text": "*Guarda el número y asiente levemente.* \"...Guardado. Si te llamo, no me ignores.\""
     },
     "yuna_contact_fail": {
         "name": "Yuna",
-        "text": "*Yuna me mira con ojos fríos y guarda su celular.* \"...Bien. No te obligaré. Pero recuerda que las oportunidades no llegan seguido.\""
+        "text": "*Me mira con ojos fríos y guarda el móvil.* \"...Vale. No te obligo. Pero las oportunidades no se repiten mucho.\""
     },
     "after_yuna_scared": {
         "name": "Yuna",
-        "text": "*Ríe fríamente y da un paso atrás. Vuelve a dirigir la mirada hacia la ventana.*"
+        "text": "*Sonríe con frialdad y da un paso atrás. Vuelve a mirar por la ventana.*"
     },
     "after_yuna_scared_2": {
         "name": "Yuna",
-        "text": "\"Hmm, lo sabía. Es una historia demasiado pesada para un estudiante común. Vete a casa hoy. No intentes indagar más.\""
+        "text": "\"...Normal. Es una historia demasiado pesada para un estudiante corriente. Vete a casa hoy.\""
     },
     "after_yuna_secret": {
         "name": "Yuna",
-        "text": "*Pone el dedo índice en sus labios y me hace señas de guardar silencio.*"
+        "text": "*Se lleva el dedo índice a los labios, gesto de silencio.*"
     },
     "after_yuna_secret_2": {
         "name": "Yuna",
-        "text": "\"Shh... Las paredes tienen oídos. Una vez que sepas la verdad, no podrás volver a una vida normal. Si estás bien con eso... toma mi mano.\""
+        "text": "\"...Aquí no se puede hablar. Vamos a otro sitio. Tengo algo que enseñarte.\""
     },
     "after_yuna_secret_deep": {
         "name": "Yuna",
-        "text": "*Yuna cierra su libro y me mira fijamente. Sus ojos parecen brillar con un tono púrpura inquietante.* \"...¿La verdad? ¿Estás listo para soportarla? Bien, si tu mirada también es sincera... sígueme. Prométeme que no le dirás a nadie.\""
+        "text": "*Yuna cierra el libro y me mira fijamente. Por un instante sus ojos se abren de sorpresa, luego suspira.* \"...¿De verdad quieres saber? Si no te vas a arrepentir... sígueme. Y no se lo cuentes a nadie.\""
     },
     "after_yuna_secret_fail": {
         "name": "Yuna",
-        "text": "*Yuna sonríe fríamente.* \"La verdad... Aún pareces demasiado liviano para soportar su peso. Ser curioso está bien, pero no indagues demasiado. Podrías salir lastimado.\""
+        "text": "*Yuna sonríe con frialdad.* \"Aún pareces demasiado ligero para soportar ese peso. No escarbes demasiado. Podrías hacerte daño.\""
     },
     "after_yuna_boring": {
         "name": "Yuna",
-        "text": "*Yuna suspira como si fuera patético y vuelve a mirar su libro.*"
+        "text": "*Yuna suspira con desdén y vuelve a abrir el libro.*"
     },
     "after_yuna_boring_2": {
         "name": "Yuna",
-        "text": "\"¿La comida de la cafetería...? Habla de cosas tan triviales con otros chicos. Estoy ocupada, así que no me molestes y vete.\""
+        "text": "\"...¿Has venido hasta aquí para hablarme de la comida? Eso coméntalo con otros. Estoy ocupada.\""
     },
     "after_yuna_rude": {
         "name": "Yuna",
-        "text": "*Cierra su libro y me mira fríamente. El aire parece congelarse al instante.*"
+        "text": "*Cierra el libro y me mira con frialdad. El aire se congela por un instante.*"
     },
     "after_yuna_rude_2": {
         "name": "Yuna",
-        "text": "\"¿Desde la mañana...? Aún no sabes nada. Esta extraña aura que rodea la escuela... ¿no la sientes? La ignorancia a veces es un pecado. Desaparece de mi vista.\""
+        "text": "\"...Uf. Si no vienes a molestar, al menos cállate. Me has roto la concentración.\""
     },
     "after_dain_new": {
         "name": "Yo",
-        "text": "*Me dirijo al gimnasio y veo a las jugadoras de voleibol practicando en la cancha bañada por el atardecer. Entre ellas, una chica destaca especialmente.*"
+        "text": "*Al llegar al gimnasio, veo a las jugadoras de vóley entrenando en la cancha teñida de atardecer. Entre ellas, una chica destaca con diferencia.*"
     },
     "after_dain_new_intro": {
-        "name": "???",
-        "text": "\"¡Hola! Soy Dain del club de voleibol. ¿Tú eres el estudiante de intercambio, verdad?\""
+        "name": "Dain",
+        "text": "\"¡Hola! ¡Soy Dain, del club de vóley! Tú eres el nuevo de hoy, ¿a que sí?\""
     },
     "after_dain_new_name_ask": {
         "name": "Dain",
-        "text": "\"Por cierto, ¿cómo te llamas? ¡Siento que soy la única que se apura en preguntar!\""
+        "text": "\"Ah, ¡es verdad! ¿Cómo te llamas? ¡Soy yo la que pregunta primero!\""
     },
     "after_dain_new_name_share": {
         "name": "Yo",
-        "text": "\"Soy {name}, de segundo año, clase 3. Mucho gusto.\""
+        "text": "\"{name}, 2.° año, clase 3. Encantado.\""
     },
     "after_dain": {
         "name": "Dain",
-        "text": "*Al llegar al gimnasio, Dain está saltando alto y clavando potentes remates. Su energía saludable parece iluminar todo a su alrededor.*"
+        "text": "*Al llegar al gimnasio, Dain está saltando a gran altura clavando remates. Su energía saludable parece iluminar todo a su alrededor.*"
     },
     "after_dain_2": {
         "name": "Dain",
-        "text": "*Durante una breve pausa en la práctica, Dain me ve y corre hacia mí mientras se seca el sudor con una toalla.*"
+        "text": "*Hace una pausa en el entrenamiento y, al verme, viene corriendo mientras se seca el sudor con la toalla.*"
     },
     "dain_free_talk": {
         "name": "Dain",
-        "text": "\"¡Wow, {name}! ¡Qué bueno verte de cerca! ¿Tienes alguna pregunta para mí? Sobre deportes, la vida escolar, ¡lo que sea!\"",
-        "context": "Después de clases al atardecer en el gimnasio, teniendo una conversación divertida con Dain que acaba de terminar su práctica. Mantén la conversación hasta que termine naturalmente. Cuando la conversación termine, Dain terminará su último set de práctica y sugerirá ir a comer algo delicioso juntos. Solo en el turno final, menciona naturalmente que necesita terminar la práctica o que tiene hambre para llevar a la siguiente escena.",
-        "personality": "La estrella directa del club de voleibol con una personalidad relajada. Ama los deportes y es amigable y enérgica con el protagonista."
+        "text": "\"¡Eh, {name}! ¡Has vuelto! ¿Quieres preguntarme algo? ¡Deporte, restaurantes, lo que sea!\"",
+        "context": "Después de clase al atardecer en el gimnasio, conversación animada con Dain que acaba de terminar su entrenamiento. Dain tiene una energía desbordante tipo cachorro, es la típica extrovertida que desde el primer día te trata como un amigo de toda la vida y no tiene reparo en el contacto físico. Sigue la conversación hasta que cierre naturalmente. Cuando la conversación termine, Dain acaba su último set de entrenamiento y propone ir a comer algo rico juntos. Solo en el último turno, menciona de forma natural que tiene que acabar de entrenar o que tiene hambre para hacer la transición.",
+        "personality": "Energía desbordante tipo cachorro y reina del entusiasmo. Abusa de las exclamaciones, es ultra competitiva y no tiene reparo en el contacto físico. Trata al protagonista como un colega desde el minuto uno, pero de vez en cuando se le escapa el lado tsundere."
     },
     "after_dain_3_high": {
         "name": "Yo",
-        "text": "*El tiempo voló hablando con Dain. Su energía brillante me animó también. Dain sugirió ir a comer algo delicioso después de su último set de práctica.*",
+        "text": "*Hablando con Dain, el tiempo se me pasó volando. Su energía radiante es contagiosa. Dijo que acaba el último set y vamos a comer algo.*",
         "choices": [
-            "¡Claro, te animo! ¡Tú puedes!",
-            "Te ayudo con la práctica. ¡Pásame la pelota!",
-            "Estoy algo cansado hoy, ¿podemos ir a casa?"
+            "¡Dale, te animo! ¡Tú puedes!",
+            "¡Te echo una mano! ¡Pásame la pelota!",
+            "Hoy estoy agotado, mejor me voy a casa."
         ]
     },
     "after_dain_3_low": {
         "name": "Yo",
-        "text": "*Dain no se ve contenta. Parece que dije algo mal mientras estaba sensible por la práctica. Dijo secamente que solo terminaría su último set y se iría.*",
+        "text": "*La cara de Dain no pinta bien. Parece que metí la pata. Dijo secamente que solo iba a acabar el último set.*",
         "choices": [
-            "¡Claro, te animo! ¡Tú puedes!",
-            "Te ayudo con la práctica. ¡Pásame la pelota!",
-            "Estoy algo cansado hoy, ¿podemos ir a casa?"
+            "¡Dale, te animo! ¡Tú puedes!",
+            "¡Te echo una mano! ¡Pásame la pelota!",
+            "Hoy estoy agotado, mejor me voy a casa."
         ]
     },
     "after_dain_3": {
         "name": "Yo",
-        "text": "*Tuve una buena charla con Dain. Me pidió que esperara mientras termina su último set de práctica. Acordamos ir a comer algo delicioso después.*",
+        "text": "*Tuve una buena charla con Dain. Quedamos en ir a comer algo cuando acabe su último set de entrenamiento.*",
         "choices": [
-            "¡Claro, te animo! ¡Tú puedes!",
-            "Te ayudo con la práctica. ¡Pásame la pelota!",
-            "Estoy algo cansado hoy, ¿podemos ir a casa?"
+            "¡Dale, te animo! ¡Tú puedes!",
+            "¡Te echo una mano! ¡Pásame la pelota!",
+            "Hoy estoy agotado, mejor me voy a casa."
         ]
     },
     "after_dain_tired_high": {
         "name": "Dain",
-        "text": "*Dain no puede ocultar su decepción y agarra brevemente mi mano antes de soltarla.*"
+        "text": "*Dain me agarra la mano un momento con cara de pena y luego la suelta.*"
     },
     "after_dain_tired_high_2": {
         "name": "Dain",
-        "text": "\"¿{name}, de verdad te vas? Quería pasar más tiempo juntos... ¡Ah no! Debes estar cansado por tu primer día. ¡Perdón por entretenerte! Ve a descansar. ¿Prometes que comeremos juntos mañana?\""
+        "text": "\"¡{name}, ¿de verdad te vas?! Un ratito más juntos... ¡n-no! El primer día cansa, es normal. ¡Perdona! ¿Mañana comemos juntos seguro? ¡Promételo!\""
     },
     "after_dain_tired_low": {
         "name": "Dain",
-        "text": "*Me mira fríamente de reojo y recoge otra pelota.*"
+        "text": "*Me mira de reojo con frialdad y recoge otra pelota.*"
     },
     "after_dain_tired_low_2": {
         "name": "Dain",
-        "text": "\"Bien, haz lo que quieras. Perdón por retener a alguien tan ocupado. Vete a casa o lo que sea.\""
+        "text": "\"Haz lo que quieras. No pienso retener a nadie.\""
     },
     "after_dain_tired_normal": {
         "name": "Dain",
-        "text": "*Dain se ve algo decepcionada pero asiente.*"
+        "text": "*Pone cara de pena por un momento, pero enseguida asiente.*"
     },
     "after_dain_tired_normal_2": {
         "name": "Dain",
-        "text": "\"Ah... cierto. Debes estar cansado por tu primer día. Perdón, me emocioné demasiado. Bueno, ve a casa hoy. ¡Nos vemos mañana!\""
+        "text": "\"Ah... claro, el primer día cansa. Perdona, me emocioné demasiado. Vete a descansar hoy. ¡Nos vemos mañana!\""
     },
     "after_dain_help_high": {
         "name": "Dain",
-        "text": "*Sus ojos brillan mientras corre hacia mí, claramente encantada.*"
+        "text": "*Le brillan los ojos y viene corriendo hacia mí.*"
     },
     "after_dain_help_high_2": {
         "name": "Dain",
-        "text": "\"¿¡En serio!? ¡Así se habla, {name}! Que me ayudes me da mucha confianza. ¡Toma, lánzala bien alto!\""
+        "text": "\"¡¿En serio?! ¡Así se habla, {name}! ¡Contigo me siento invencible! ¡Venga, ahí va la pelota! ¡Levántala bien!\""
     },
     "after_dain_help_low": {
         "name": "Dain",
-        "text": "*Me mira con sospecha.*"
+        "text": "*Me mira con desconfianza.*"
     },
     "after_dain_help_low_2": {
         "name": "Dain",
-        "text": "\"...¿Acaso sabes cómo? Solo no me estorbes. Lánzala como sea.\""
+        "text": "\"...¿Sabes siquiera cómo? No me estorbes. Lánzala como puedas.\""
     },
     "after_dain_help_normal": {
         "name": "Dain",
-        "text": "*Sus ojos se iluminan mientras me pasa una pelota.*"
+        "text": "*Le brillan los ojos y me pasa la pelota.*"
     },
     "after_dain_help_normal_2": {
         "name": "Dain",
-        "text": "\"¡Oh! ¿Me ayudarás? ¡Genial! ¡Lánzala alto hacia la red! ¡Ahí voy!\""
+        "text": "\"¡Oh! ¡Genial! ¡Levántala alta hacia la red! ¡Allá voy!\""
     },
     "after_dain_cheer_high": {
         "name": "Dain",
-        "text": "*Dain se sonroja y sonríe ampliamente.*"
+        "text": "*Dain se pone roja como un tomate y sonríe sin saber qué hacer.*"
     },
     "after_dain_cheer_high_2": {
         "name": "Dain",
-        "text": "\"Con {name} animándome... ¡siento que puedo hacerlo cien veces mejor! Gracias. Te mostraré mi lado genial, así que no apartes la mirada, ¿ok?\""
+        "text": "\"¡Con {name} animándome siento que rindo cien veces más! ¡No me quites los ojos de encima!\""
     },
     "after_dain_cheer_low": {
         "name": "Dain",
-        "text": "*Frunce el ceño y responde secamente.*"
+        "text": "*Frunce el ceño y responde de mala gana.*"
     },
     "after_dain_cheer_low_2": {
         "name": "Dain",
-        "text": "\"No lo necesito. Que me mires es molesto, así que quédate allá atrás. Ya soy buena sin porras.\""
+        "text": "\"¡No lo necesito! Soy buena sin que nadie me anime. Quédate ahí lejos.\""
     },
     "after_dain_cheer_normal": {
         "name": "Dain",
-        "text": "*Dain arruga la nariz tímidamente y sonríe.*"
+        "text": "*Arruga la nariz con timidez y sonríe.*"
     },
     "after_dain_cheer_normal_2": {
         "name": "Dain",
-        "text": "\"¿Q-qué...? ¡Que me halagues así de repente es vergonzoso! No es que me esfuerce más porque me estés mirando. Pero aún así... que me veas sí me da más energía de algún modo...\""
+        "text": "\"¡P-pero qué dices! ¡Animarme así de repente, qué vergüenza! No es que me esfuerce más porque me estés mirando, ¡no te lo creas! ...Pero sí que me da un poco más de energía.\""
     },
     "after_dain_normal": {
         "name": "Dain",
@@ -457,135 +457,135 @@
     },
     "after_dain_normal_2": {
         "name": "Dain",
-        "text": "\"Jeje, aún no llegas al nivel. Bueno, ya que estamos, ¿puedes esperar a que termine la práctica? ¡Vamos a comer tteokbokki juntos!\""
+        "text": "\"¡Todavía te falta nivel! Bueno, ya que estás aquí, espérame a que termine el entrenamiento. ¡Vamos a comer tteokbokki!\""
     },
     "after_dain_end": {
         "name": "Yo",
-        "text": "*Me senté en las gradas del gimnasio observando a Dain hasta que terminó su práctica.*"
+        "text": "*Me senté en las gradas y observé a Dain hasta que terminó el entrenamiento.*"
     },
     "after_dain_end_2": {
         "name": "Dain",
-        "text": "*Después de la práctica, Dain corre hacia mí respirando con dificultad.* \"Uf... uf... ¡Perdón por hacerte esperar! ¡Vamos, vamos a comer tteokbokki!\""
+        "text": "*Dain viene corriendo jadeando.* \"Uf... ¡perdona la espera! ¡Venga, vamos a comer tteokbokki!\""
     },
     "after_dain_tteokbokki": {
         "name": "Dain",
-        "text": "*Dando un gran mordisco al tteokbokki humeante, Dain sonríe feliz.*"
+        "text": "*Le da un buen mordisco al tteokbokki humeante y sonríe de oreja a oreja.*"
     },
     "after_dain_tteokbokki_2": {
         "name": "Dain",
-        "text": "\"¡Ah, el tteokbokki después de la práctica es lo mejor! Gracias por venir conmigo hoy. ¡Contigo sabe cien veces más rico!\""
+        "text": "\"¡Tío, el tteokbokki después de entrenar es lo mejor! ¡Gracias por acompañarme hoy! ¡Contigo sabe cien veces más bueno!\""
     },
     "after_dain_tteokbokki_3": {
         "name": "Dain",
-        "text": "\"¡Vengamos juntos seguido mañana también... no, de ahora en adelante! ¿Prometido?\""
+        "text": "\"Mañana también... no, ¡a partir de ahora venimos juntos seguido! ¿Prometido?\""
     },
     "dain_contact_exchange": {
         "name": "Dain",
-        "text": "*Dain se limpia la salsa y agita su celular juguetonamente.* \"¡Oye, {name}! ¡Si vamos a comer juntos de ahora en adelante, necesitamos nuestros números! ¡Dame el tuyo!\"",
+        "text": "*Dain se limpia la salsa y agita el móvil con picardía.* \"¡Eh, {name}! ¡Si vamos a ir a comer juntos necesitamos el contacto! ¡Dame tu número!\"",
         "choices": [
-            "¡Claro! Sería divertido explorar restaurantes contigo, Dain.",
-            "Ya que estamos intercambiando números... ¿puedo llamarte ahora?",
-            "Mmm... te lo daré después cuando tenga oportunidad."
+            "¡Hecho! Explorar restaurantes contigo tiene que ser genial, Dain.",
+            "Ya que estamos intercambiando números... ¿puedo llamarte ahora mismo?",
+            "Hmm... te lo paso más adelante."
         ]
     },
     "dain_contact_call_success": {
         "name": "Dain",
-        "text": "*Dain se sonroja y ríe nerviosa.* \"¡¿Q-qué?! De la nada... Querer escuchar mi voz... ¡Eso me hace latir el corazón! Mañana tengo práctica temprano, ¡así que no hables demasiado!\""
+        "text": "*Dain se pone roja y se pone nerviosa.* \"...¿Qué? ¿Llamar así de repente...? Mañana tengo entrenamiento temprano, ¡así que no te alargues!\""
     },
     "dain_contact_call_fail": {
         "name": "Dain",
-        "text": "*Dain se echa a reír.* \"Oye, eres gracioso. ¿Llamar justo después de tener el número? ¿No vas muy rápido? ¡Empecemos con mensajes y nos vamos conociendo!\""
+        "text": "*Dain suelta una carcajada.* \"Oye, ¿llamar nada más tener el número? ¡Ve más despacio! ¡Primero mensajes y nos vamos conociendo!\""
     },
     "dain_contact_success": {
         "name": "Dain",
-        "text": "*Dain guarda el número con una sonrisa refrescante.* \"¡Contacto guardado! ¡Te escribiré en cuanto encuentre un buen lugar para comer!\""
+        "text": "*Dain guarda el número con una sonrisa de oreja a oreja.* \"¡Contacto guardado! ¡En cuanto encuentre un buen sitio para comer te aviso, así que estate atento!\""
     },
     "dain_contact_fail": {
         "name": "Dain",
-        "text": "*Dain hace un puchero por un momento pero luego lo deja pasar con una sonrisa.* \"¿Qué, te haces del rogar? Está bien, está bien. ¡Me esforzaré más para conseguir tu número!\""
+        "text": "*Dain hace un puchero pero enseguida vuelve a sonreír con energía.* \"¿Qué, te haces el duro? ¡Vale! ¡Me esforzaré más hasta que me lo des!\""
     },
     "after_nurse": {
         "name": "Enfermera",
-        "text": "*Al abrir la puerta de la enfermería, la profesora está tomando té junto a la ventana y sonríe al verme.*"
+        "text": "*Abro la puerta de la enfermería. La enfermera está tomando té junto a la ventana y sonríe al verme.*"
     },
     "after_nurse_new": {
         "name": "Yo",
-        "text": "*Sin darme cuenta me sentí somnoliento y caminé hacia la enfermería. Al abrir la puerta, un suave aroma a hierbas me recibe junto con una profesora de aspecto maduro.*"
+        "text": "*Sin darme cuenta, mis pasos me llevaron a la enfermería. Al abrir la puerta, un suave aroma a hierbas me recibe junto con una profesora de aire maduro.*"
     },
     "after_nurse_new_2": {
         "name": "Enfermera",
-        "text": "\"Vaya, ¿una cara nueva? ¿Eres el estudiante de intercambio? Soy la enfermera de la escuela. ¿Vienes porque te duele algo?\""
+        "text": "\"Vaya, una cara nueva. ¿Eres el estudiante que se transfirió hoy? Soy la enfermera del colegio. ¿Vienes porque te duele algo, mi nuevo favorito?\""
     },
     "after_nurse_new_name_ask": {
         "name": "Enfermera",
-        "text": "\"Por cierto, ¿cómo te llamas? ¿Me lo dirás solo a mí?\""
+        "text": "\"Ahora que lo pienso, ¿cómo te llamas? Dímelo solo a mí.\""
     },
     "after_nurse_new_name_share": {
         "name": "Yo",
-        "text": "\"Mi nombre es {name}.\""
+        "text": "\"Soy {name}.\""
     },
     "after_nurse_2": {
         "name": "Enfermera",
-        "text": "\"¡{name}! ¿Viniste a verme antes de irte a casa? Qué estudiante tan dulce.\""
+        "text": "\"¡{name}! ¿Viniste a verme antes de irte a casa? Qué nuevo más encantador.\""
     },
     "nurse_after_day1_contact": {
         "name": "Enfermera",
-        "text": "\"Ven, siéntate. Te sirvo un poco de té caliente. ¿Quieres platicar un poco más conmigo?\""
+        "text": "\"Ven, siéntate. Te pongo un tecito caliente. ¿Te quedas a charlar un rato más?\""
     },
     "nurse_after_day1_contact_already": {
         "name": "Yo",
-        "text": "*El cálido aroma del té me acaricia la nariz. ¿Qué debería hacer?*",
+        "text": "*El aroma cálido del té me roza la nariz. ¿Qué hago?*",
         "choices": [
-            "Sí, descansaré un poco antes de irme.",
-            "Estoy algo cansado hoy..."
+            "Sí, descanso un ratito antes de irme.",
+            "Hoy estoy bastante cansado..."
         ]
     },
     "nurse_after_day1_contact_already_stay": {
         "name": "Enfermera",
-        "text": "\"Jeje, buen chico. Tu primer día debió ser agotador. Descansa aquí conmigo un rato.\""
+        "text": "\"Qué bueno. El primer día tiene que haber sido agotador. Descansa aquí conmigo un rato.\""
     },
     "nurse_after_day1_contact_already_stay_2": {
         "name": "Enfermera",
-        "text": "\"...Bien, ya es hora de irse. Contáctame cuando quieras si necesitas algo, ¿de acuerdo?\""
+        "text": "\"...Bueno, ya es hora. Si te sientes mal, contacta conmigo cuando quieras, ¿vale?\""
     },
     "nurse_after_day1_contact_already_leave": {
         "name": "Enfermera",
-        "text": "\"Está bien, no te esfuerces demasiado. Contáctame cuando quieras si necesitas algo, ¿de acuerdo? Llega con cuidado.\""
+        "text": "\"Vale, no te fuerces. Si te pasa algo, contacta conmigo cuando quieras. Llega bien a casa, nuevo mono.\""
     },
     "nurse_after_day1_contact_choice": {
         "name": "Yo",
-        "text": "*El cálido aroma del té me acaricia la nariz. ¿Qué debería hacer?*",
+        "text": "*El aroma cálido del té me roza la nariz. ¿Qué hago?*",
         "choices": [
-            "Sí, descansaré un poco antes de irme.",
-            "Estoy algo cansado hoy..."
+            "Sí, descanso un ratito antes de irme.",
+            "Hoy estoy bastante cansado..."
         ]
     },
     "nurse_after_day1_contact_stay": {
         "name": "Enfermera",
-        "text": "\"Jeje, buen chico. Tu primer día debió ser agotador. Descansa aquí conmigo un rato.\""
+        "text": "\"Qué bueno. El primer día tiene que haber sido agotador. Descansa aquí conmigo un rato.\""
     },
     "nurse_after_day1_contact_stay_2": {
         "name": "Enfermera",
-        "text": "\"...Bien, ya es hora de irse. {name}, por si acaso, ¿guardas mi número? Contáctame cuando quieras si te sientes mal o tienes preocupaciones.\"",
+        "text": "\"...Bueno, ya es hora. {name}, por si acaso, ¿me guardas el número? Si te pones malo o tienes algún problema, escríbeme cuando quieras.\"",
         "choices": [
-            "¡Sí, por favor dígamelo!",
-            "Todavía me resulta algo incómodo."
+            "¡Sí, dígamelo!",
+            "Todavía me resulta un poco incómodo."
         ]
     },
     "nurse_after_day1_contact_2": {
         "name": "Enfermera",
-        "text": "\"¿Ya te vas? Qué lástima... {name}, por si acaso, ¿guardas mi número? Contáctame cuando quieras si te sientes mal o tienes preocupaciones.\"",
+        "text": "\"¿Ya te vas? Qué pena... {name}, ¿me guardas el número? Si te pones malo o tienes algún problema, escríbeme cuando quieras.\"",
         "choices": [
-            "¡Sí, por favor dígamelo!",
-            "Todavía me resulta algo incómodo."
+            "¡Sí, dígamelo!",
+            "Todavía me resulta un poco incómodo."
         ]
     },
     "nurse_after_day1_contact_success": {
         "name": "Enfermera",
-        "text": "\"Jeje, buen chico. ¿Entonces te escribo esta noche? Cuídate, {name}.\""
+        "text": "\"Qué bueno. Entonces, ¿te escribo esta noche? Cuídate, nuevo mono.\""
     },
     "nurse_after_day1_contact_fail": {
         "name": "Enfermera",
-        "text": "\"Ay, ¿te haces del rogar? Está bien. Dime si cambias de opinión. ¡Llega con cuidado a casa!\""
+        "text": "\"Vaya, ¿te haces el duro? Vale. Si cambias de opinión, me avisas. ¡Llega bien a casa!\""
     }
 }

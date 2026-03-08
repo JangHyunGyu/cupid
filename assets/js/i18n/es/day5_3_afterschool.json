@@ -1,7 +1,7 @@
 {
     "day5_afternoon_start": {
         "name": "Yo",
-        "text": "*Sin darme cuenta, llegó la tarde. El cielo visto desde la azotea empieza a teñirse de naranja.*"
+        "text": "*Ya es la tarde sin darme cuenta. El cielo sobre la azotea empieza a tenirse de naranja.*"
     },
     "day5_afternoon_branch": {
         "name": "Sistema",
@@ -9,15 +9,15 @@
     },
     "day5_true_love_start": {
         "name": "Yo",
-        "text": "*De pie, uno al lado del otro, bajo el atardecer. Desearía que este momento durara para siempre.*"
+        "text": "*Bajo el atardecer, estoy parado al lado de mi pareja. Ojala este momento se detuviera.*"
     },
     "day5_true_talk_1": {
         "name": "Yo",
-        "text": "\"Sabes... Antes de transferirme aquí, me daba miedo la nueva escuela.\""
+        "text": "\"Oye. Antes de transferirme, la verdad es que la nueva escuela me daba miedo.\""
     },
     "day5_true_talk_2": {
         "name": "Yo",
-        "text": "\"Pero ahora... creo que transferirme aquí fue la mejor decisión de mi vida.\""
+        "text": "\"Pero ahora siento que transferirme fue la mejor decision de mi vida.\""
     },
     "day5_true_response": {
         "name": "Sistema",
@@ -25,51 +25,51 @@
     },
     "day5_true_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"Yo también... me alegra mucho que te hayas transferido aquí. Quedémonos juntos... siempre.\""
+        "text": "\"...Yo tambien. Me alegra que hayas venido. Quedate a mi lado, siempre.\""
     },
     "day5_true_yuna": {
         "name": "Yuna",
-        "text": "\"...Pensaba que estar sola era más fácil. Pero desde que llegaste... todo cambió. Gracias.\""
+        "text": "\"...Pensaba que estar sola era mas comodo. Pero cuando llegaste... me di cuenta de que no era asi.\""
     },
     "day5_true_dain": {
         "name": "Dain",
-        "text": "\"¡¡Cada día se volvió más divertido desde que llegaste!! Vas a seguir apoyándome... ¿¡verdad!?\""
+        "text": "\"Desde que llegaste, cada dia es mas divertido! Vas a seguir en mi tribuna, verdad?!\""
     },
     "day5_true_nurse": {
         "name": "Enfermera",
-        "text": "\"Nuestra relación no será fácil... Pero si es contigo, está bien. Juntos podemos superar cualquier cosa.\""
+        "text": "\"Se que no es una relacion facil. Pero si eres tu, esta bien. Juntos, lo que sea.\""
     },
     "day5_true_teacher": {
         "name": "Profesora",
-        "text": "\"...Honestamente, una profesora no debería sentir esto por un estudiante. Pero qué puedo hacer, es real. ...Hagamos que funcione, nosotros.\""
+        "text": "\"...No deberia hacer esto con un estudiante. Pero que le voy a hacer, es de verdad. Vamos a intentarlo, nosotros.\""
     },
     "day5_true_kiss_buildup": {
         "name": "Yo",
-        "text": "*El viento sopla. Su rostro, bañado por la luz del atardecer, se siente inusualmente cerca.*"
+        "text": "*Sopla el viento. Su cara tenida por el atardecer se siente mas cerca que nunca.*"
     },
     "day5_true_kiss_2": {
         "name": "Yo",
-        "text": "*Nos miramos a los ojos. No hacen falta palabras.*"
+        "text": "*Nos miramos a los ojos. No hacian falta palabras.*"
     },
     "day5_true_kiss_3": {
         "name": "Yo",
-        "text": "*Naturalmente... nuestros rostros se acercan.*"
+        "text": "*Naturalmente, nuestros rostros se acercan.*"
     },
     "day5_true_kiss_4": {
         "name": "Yo",
-        "text": "*...Cerré los ojos.*"
+        "text": "*...Cerre los ojos.*"
     },
     "day5_true_kiss_5": {
         "name": "Yo",
-        "text": "*Una suave calidez. El tiempo pareció detenerse.*"
+        "text": "*Una calidez suave. El tiempo parecio detenerse.*"
     },
     "day5_true_kiss_6": {
         "name": "Yo",
-        "text": "*……*"
+        "text": "*......*"
     },
     "day5_true_kiss_after": {
         "name": "Yo",
-        "text": "*Cuando abrí los ojos, estaba sonriendo bajo la luz del atardecer. La sonrisa más hermosa del mundo.*"
+        "text": "*Abri los ojos. Ahi estaba, sonriendo bajo la luz del atardecer. El rostro mas hermoso del mundo.*"
     },
     "day5_true_evening_branch": {
         "name": "Sistema",
@@ -77,123 +77,123 @@
     },
     "day5_bed_seoyeon_1": {
         "name": "Yo",
-        "text": "*El sol se puso. Iba a acompañarla a casa... pero Seoyeon me agarró la manga.*"
+        "text": "*El sol se puso. Iba a acompanarla, pero Seoyeon me agarro de la manga.*"
     },
     "day5_bed_seoyeon_2": {
         "name": "Seoyeon",
-        "text": "\"...Oye, mis padres no están en casa hoy. Solo un momento... ¿quieres pasar?\""
+        "text": "\"...Oye. Mis papas no estan hoy. Solo un momento... quieres pasar?\""
     },
     "day5_bed_seoyeon_3": {
         "name": "Yo",
-        "text": "*Una calle residencial tranquila. Seoyeon abrió la puerta principal. Pasamos la amplia sala y subimos a su habitación en el segundo piso.*"
+        "text": "*Barrio residencial tranquilo. Abrio la puerta, cruzamos la sala amplia, subimos al segundo piso, al cuarto de Seoyeon.*"
     },
     "day5_bed_seoyeon_4": {
         "name": "Yo",
-        "text": "*Una habitación perfectamente ordenada. Un estante lleno de libros, documentos del consejo estudiantil sobre el escritorio. Iluminación ambiental suave. La habitación estaba llena del aroma de Seoyeon.*"
+        "text": "*Un espacio impecable. Estantes llenos de libros, documentos del consejo estudiantil, una lampara tenue. El aroma de Seoyeon llena toda la habitacion.*"
     },
     "day5_bed_seoyeon_4b": {
         "name": "Seoyeon",
-        "text": "\"...La habitación de mis padres está en el primer piso, así que está bien. Ah, no, no quise decir eso... Solo, ven y siéntate aquí.\""
+        "text": "\"...El cuarto de mis papas esta en el primer piso asi que esta bien. Ah, no es por eso... solo, ven y sientate aqui.\""
     },
     "day5_bed_seoyeon_5": {
         "name": "Yo",
-        "text": "*Nos sentamos uno al lado del otro en el borde de la cama. Las manos de Seoyeon temblaban.*"
+        "text": "*Nos sentamos juntos al borde de la cama. Las manos de Seoyeon temblaban ligeramente.*"
     },
     "day5_bed_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "\"...Siempre tenía que ser perfecta. Porque soy la presidenta del consejo estudiantil. Pero contigo... solo quiero ser yo misma.\""
+        "text": "\"...Siempre tuve que ser perfecta. Porque soy la presidenta del consejo. Pero frente a ti... solo quiero ser yo.\""
     },
     "day5_bed_seoyeon_7": {
         "name": "Yo",
-        "text": "*Seoyeon apoyó su cabeza en mi hombro. Sentí que mi corazón iba a explotar.*"
+        "text": "*Seoyeon apoyo la cabeza en mi hombro. Senti que el corazon me iba a explotar.*"
     },
     "day5_bed_yuna_1": {
         "name": "Yo",
-        "text": "*El sol se puso. Estaba por irme... pero Yuna me tomó de la mano.*"
+        "text": "*El sol se puso. Iba a volver, pero Yuna me tomo de la mano.*"
     },
     "day5_bed_yuna_2": {
         "name": "Yuna",
-        "text": "\"...Todavía no. Hay un lugar que quiero mostrarte.\""
+        "text": "\"...Todavia no. Hay un lugar que quiero mostrarte.\""
     },
     "day5_bed_yuna_3": {
         "name": "Yo",
-        "text": "*Yuna me llevó a lo alto del anexo de la biblioteca, un ático secreto que nadie conoce.*"
+        "text": "*Yuna me llevo a lo mas alto del anexo de la biblioteca, un atico que nadie conoce.*"
     },
     "day5_bed_yuna_4": {
         "name": "Yo",
-        "text": "*Un sofá viejo, una manta, y estrellas visibles a través de una ventana pequeña. El espacio secreto de Yuna.*"
+        "text": "*Un sofa viejo, una manta, y por la ventana pequena se ven las estrellas. El espacio secreto de Yuna.*"
     },
     "day5_bed_yuna_5": {
         "name": "Yuna",
-        "text": "\"...Solo yo conozco este lugar. Bueno, ahora tú también.\""
+        "text": "\"...Solo yo conocia este lugar. Ahora tu tambien lo sabes.\""
     },
     "day5_bed_yuna_6": {
         "name": "Yo",
-        "text": "*Yuna extendió la manta. Sentados uno al lado del otro en el sofá estrecho, nuestros hombros se tocaron.*"
+        "text": "*Yuna desplego la manta. Al sentarnos juntos en el sofa estrecho, nuestros hombros se tocaron.*"
     },
     "day5_bed_yuna_7": {
         "name": "Yuna",
-        "text": "\"...No te vayas. Esta noche... quédate aquí.\""
+        "text": "\"...No te vayas. Hoy quedate aqui.\""
     },
     "day5_bed_dain_1": {
         "name": "Yo",
-        "text": "*El sol se puso. Dain agitó una llave con una sonrisa.*"
+        "text": "*El sol se puso. Dain agito las llaves del gimnasio con una sonrisa.*"
     },
     "day5_bed_dain_2": {
         "name": "Dain",
-        "text": "\"¡Oye, tengo la llave del almacén del gimnasio! ¡Vamos a ver las estrellas y hablar!\""
+        "text": "\"...Este es mi lugar secreto. Quieres ver las estrellas conmigo?\""
     },
     "day5_bed_dain_3": {
         "name": "Yo",
-        "text": "*El gimnasio de noche, vacío. Dain extendió las colchonetas y abrió la claraboya del techo.*"
+        "text": "*El gimnasio vacio de noche. Dain puso colchonetas en el suelo y abrio la claraboya del techo.*"
     },
     "day5_bed_dain_4": {
         "name": "Yo",
-        "text": "*Nos acostamos uno al lado del otro sobre las colchonetas, mirando las estrellas. Podía escuchar la respiración de Dain muy cerca.*"
+        "text": "*Nos acostamos lado a lado en las colchonetas mirando las estrellas. Escucho su respiracion muy cerca.*"
     },
     "day5_bed_dain_5": {
         "name": "Dain",
-        "text": "\"...Oye, mi corazón está latiendo muy rápido ahora mismo. Pon tu mano aquí.\""
+        "text": "\"...Oye, mi corazon esta latiendo re rapido ahora. Pon la mano aqui.\""
     },
     "day5_bed_dain_6": {
         "name": "Yo",
-        "text": "*Dain puso mi mano sobre su pecho. De verdad... estaba latiendo rápido.*"
+        "text": "*Dain tomo mi mano y la puso sobre su pecho. De verdad estaba latiendo rapidisimo.*"
     },
     "day5_bed_dain_7": {
         "name": "Dain",
-        "text": "\"...Tonto, ¿por qué me miras así? Es vergonzoso...\""
+        "text": "\"...Tonto, por que me miras asi. Me da verguenza...\""
     },
     "day5_bed_nurse_1": {
         "name": "Yo",
-        "text": "*El sol se puso. La enfermera sonrió con significado.*"
+        "text": "*El sol se puso. La enfermera me sonrio con un gesto sugerente.*"
     },
     "day5_bed_nurse_2": {
         "name": "Enfermera",
-        "text": "\"...No debería haber nadie en la escuela todavía. ¿Quieres pasar por la enfermería?\""
+        "text": "\"...No deberia haber nadie en la escuela. Quieres pasar un momento a la enfermeria?\""
     },
     "day5_bed_nurse_3": {
         "name": "Yo",
-        "text": "*Clic. Escuché el cerrojo de la puerta de la enfermería.*"
+        "text": "*Clic. El sonido de la puerta de la enfermeria al trabarse.*"
     },
     "day5_bed_nurse_4": {
         "name": "Yo",
-        "text": "*El área de la cama con cortinas. En lugar de desinfectante, un suave aroma a perfume persistía.*"
+        "text": "*La cama con la cortina cerrada. En vez de olor a desinfectante, un perfume suave.*"
     },
     "day5_bed_nurse_5": {
         "name": "Enfermera",
-        "text": "\"Aquí dentro... no soy 'profesora'. Solo una mujer.\""
+        "text": "\"Aqui no soy 'la enfermera'. Solo soy una mujer.\""
     },
     "day5_bed_nurse_6": {
         "name": "Yo",
-        "text": "*Nos sentamos uno al lado del otro en el borde de la cama. Su mano descansó sobre la mía.*"
+        "text": "*Nos sentamos juntos al borde de la cama. Su mano se poso sobre la mia.*"
     },
     "day5_bed_nurse_7": {
         "name": "Enfermera",
-        "text": "\"...Solo por hoy, ni estudiante, ni profesora. Solo... nosotros.\""
+        "text": "\"...Solo por hoy, no somos estudiante ni enfermera. Solo... nosotros.\""
     },
     "day5_bed_teacher_1": {
         "name": "Yo",
-        "text": "*El sol se puso. La profesora sacó sus llaves del auto y las agitó.*"
+        "text": "*El sol se puso. La profesora saco las llaves del auto y las agito.*"
     },
     "day5_bed_teacher_2": {
         "name": "Profesora",
@@ -201,135 +201,135 @@
     },
     "day5_bed_teacher_3": {
         "name": "Yo",
-        "text": "*El auto se detuvo... no en mi casa. Estaba frente al departamento de la profesora.*"
+        "text": "*El auto no paro frente a mi casa. Paro frente al departamento de la profesora.*"
     },
     "day5_bed_teacher_4": {
         "name": "Profesora",
-        "text": "\"...Solo una taza de café. Te mando a casa después. Probablemente.\""
+        "text": "\"...Solo un cafe. Te lo tomas y te vas. Probablemente.\""
     },
     "day5_bed_teacher_5": {
         "name": "Yo",
-        "text": "*Un departamento pequeño pero ordenado. Exámenes sin calificar apilados en el escritorio. Nos sentamos uno al lado del otro en el sofá.*"
+        "text": "*Departamento chico pero impecable. Un escritorio con examenes sin corregir apilados. Nos sentamos juntos en el sofa.*"
     },
     "day5_bed_teacher_6": {
         "name": "Profesora",
-        "text": "\"...Ja, realmente no merezco ser profesora. Traer a un estudiante a casa...\""
+        "text": "\"...Ja, no tengo cara de profesora. Traer a un estudiante a mi casa.\""
     },
     "day5_bed_teacher_7": {
         "name": "Yo",
-        "text": "*La profesora se soltó el cabello y sonrió con cansancio. El café... terminó enfriándose.*"
+        "text": "*La profesora se solto el pelo y sonrio sin fuerzas. El cafe se enfrio sin que nadie lo tocara.*"
     },
     "day5_true_morning_seoyeon_1": {
         "name": "Yo",
-        "text": "*Con nuestro calor entrelazado, pasó la noche en la que la distancia desapareció en silencio.*"
+        "text": "*Una noche en la que el calor de nuestros cuerpos se mezclo y la distancia desaparecio en silencio, quedo atras.*"
     },
     "day5_true_morning_seoyeon_2": {
         "name": "Yo",
-        "text": "*Al abrir los ojos, vi a Seoyeon mirándome en silencio bajo la luz de la mañana que se filtraba por la ventana.*"
+        "text": "*Abri los ojos y ahi estaba Seoyeon, mirandome en silencio entre los rayos de sol que entraban por la cortina.*"
     },
     "day5_true_morning_seoyeon_3": {
         "name": "Seoyeon",
-        "text": "\"...Te despertaste temprano. Puedes dormir un poco más.\""
+        "text": "\"...Te despertaste temprano. Puedes seguir durmiendo.\""
     },
     "day5_true_morning_seoyeon_4": {
         "name": "Yo",
-        "text": "*Cuando nuestras miradas se cruzaron, las mejillas de Seoyeon se sonrojaron levemente. No era la presidenta perfecta de siempre, sino solo mi Seoyeon.*"
+        "text": "*Cuando nuestras miradas se cruzaron, las mejillas de Seoyeon se sonrojaron ligeramente. No la presidenta perfecta del consejo, sino la Seoyeon que solo es mia.*"
     },
     "day5_true_morning_seoyeon_5": {
         "name": "Yo",
-        "text": "*En la calidez transmitida entre nuestras manos entrelazadas, estábamos frente al momento en que nuestra vida cotidiana se convertía en un milagro.*"
+        "text": "*La calidez que fluia entre nuestras manos entrelazadas. Un momento en que lo cotidiano se convierte en milagro.*"
     },
     "day5_true_morning_yuna_1": {
         "name": "Yo",
-        "text": "*Sobre el sofá del pequeño ático, pasó la noche en la que solo nuestras respiraciones se mezclaban en silencio.*"
+        "text": "*Sobre el sofa estrecho del atico, una noche en la que solo se mezclaban nuestras respiraciones en silencio, quedo atras.*"
     },
     "day5_true_morning_yuna_2": {
         "name": "Yo",
-        "text": "*Cuando intenté abrir los ojos, sentí una pequeña calidez aferrada firmemente a mi brazo.*"
+        "text": "*Intente abrir los ojos, pero una pequena calidez abrazaba mi brazo con fuerza.*"
     },
     "day5_true_morning_yuna_3": {
         "name": "Yuna",
-        "text": "\"...¿A dónde vas? Hoy te quedas a mi lado todo el día.\""
+        "text": "\"...A donde vas. Hoy quedate a mi lado todo el dia.\""
     },
     "day5_true_morning_yuna_4": {
         "name": "Yo",
-        "text": "*Yuna murmuraba entre sueños mientras se acurrucaba más contra mí. Era la versión indefensa que esa chica fría solo me mostraba a mí.*"
+        "text": "*Yuna murmuraba entre suenos y se acurruco mas en mis brazos. La chica que siempre parecia fria, mostrandome su lado mas vulnerable solo a mi.*"
     },
     "day5_true_morning_yuna_5": {
         "name": "Yo",
-        "text": "*En este mundo silencioso y perfecto, decidí ser su refugio completo.*"
+        "text": "*En este mundo silencioso y perfecto, decidi ser su refugio.*"
     },
     "day5_true_morning_dain_1": {
         "name": "Yo",
-        "text": "*Sobre las colchonetas del gimnasio bañadas de estrellas, pasó la noche en la que nuestros latidos se fusionaron como uno solo.*"
+        "text": "*Sobre las colchonetas del gimnasio banadas de estrellas, una noche en la que nuestros latidos se volvieron uno, quedo atras.*"
     },
     "day5_true_morning_dain_2": {
         "name": "Yo",
-        "text": "*Al abrir los ojos con la luz de la mañana, vi a Dain durmiendo con su pierna despreocupadamente sobre mi estómago.*"
+        "text": "*La luz de la manana me desperto y ahi estaba Dain, dormida con las piernas cruzadas sobre mi.*"
     },
     "day5_true_morning_dain_3": {
         "name": "Dain",
-        "text": "\"...Mmm, buenos días. Verte apenas abro los ojos... se siente muy raro.\""
+        "text": "\"...Mmm, buen dia. Se siente re raro verte apenas abro los ojos.\""
     },
     "day5_true_morning_dain_4": {
         "name": "Yo",
-        "text": "*Dain frotándose los ojos y sonriendo radiante. La vergüenza de anoche había desaparecido por completo, era su energía brillante de siempre.*"
+        "text": "*Dain se refregaba los ojos y sonreia radiante. Ni rastro de la verguenza de anoche, pura energia brillante como siempre.*"
     },
     "day5_true_morning_dain_5": {
         "name": "Yo",
-        "text": "*Si pudiera ver esta sonrisa deslumbrante cada mañana, el resto de mi vida seguramente nunca sería aburrido.*"
+        "text": "*Si pudiera ver esa sonrisa deslumbrante todos los dias, no habria un solo momento de aburrimiento en lo que queda de vida.*"
     },
     "day5_true_morning_nurse_1": {
         "name": "Yo",
-        "text": "*Con un suave aroma a perfume, pasó la noche en la que fui completamente cautivado por la serenidad de una mujer adulta.*"
+        "text": "*Una noche guiada por un perfume suave y la tranquilidad de alguien mayor, quedo atras.*"
     },
     "day5_true_morning_nurse_2": {
         "name": "Yo",
-        "text": "*Al abrir los ojos, mi mirada se cruzó con la de la enfermera, que me observaba en silencio con la barbilla apoyada en su mano.*"
+        "text": "*Abri los ojos y me encontre con la mirada de la enfermera, apoyando la barbilla en su mano, observandome desde arriba.*"
     },
     "day5_true_morning_nurse_3": {
         "name": "Enfermera",
-        "text": "\"¿Dormiste bien? Mi querido estudiante, te ves bastante lindo cuando duermes.\""
+        "text": "\"Dormiste bien? Hasta dormido eres bastante lindo.\""
     },
     "day5_true_morning_nurse_4": {
         "name": "Yo",
-        "text": "*Una mano que acariciaba suavemente mi mejilla. Detrás de su sonrisa juguetona, podía sentir un profundo afecto oculto.*"
+        "text": "*Su mano me acariciaba suavemente la mejilla. Detras de esa sonrisa juguetona, se sentia un sentimiento profundo.*"
     },
     "day5_true_morning_nurse_5": {
         "name": "Yo",
-        "text": "*Era la primera mañana que recibíamos como dos personas completas, ya no como profesora y estudiante.*"
+        "text": "*Ni enfermera ni estudiante. La primera manana que nos recibimos como dos personas completas.*"
     },
     "day5_true_morning_teacher_1": {
         "name": "Yo",
-        "text": "*Fue torpe e inexperto, pero precisamente por eso, fue una noche donde la sinceridad se sintió más profunda.*"
+        "text": "*Una noche torpe e inexperta, pero justamente por eso, mas sincera, quedo atras.*"
     },
     "day5_true_morning_teacher_2": {
         "name": "Yo",
-        "text": "*Un ruido suave me despertó, y vi a la profesora de puntillas intentando escabullirse de la cama sin que me diera cuenta.*"
+        "text": "*Un ruido me desperto y vi a la profesora intentando escabullirse de la cama en puntas de pie.*"
     },
     "day5_true_morning_teacher_3": {
         "name": "Profesora",
-        "text": "\"...¿Te despertaste? Iba a preparar café a escondidas... me descubriste.\""
+        "text": "\"...Te desperte? Iba a hacer cafe a escondidas. Me descubriste.\""
     },
     "day5_true_morning_teacher_4": {
         "name": "Yo",
-        "text": "*Tomé la mano de la profesora, que estaba completamente sonrojada y sin saber qué hacer, y la abracé de nuevo.*"
+        "text": "*Con la cara completamente roja, sin saber que hacer, la tome de la mano y la jale de vuelta a mis brazos.*"
     },
     "day5_true_morning_teacher_5": {
         "name": "Yo",
-        "text": "(\"Solo 5 minutos más... quedémonos así.\" Quise proteger por siempre a esta persona adorable que dejó caer la máscara de profesora estricta.)"
+        "text": "(\"Solo cinco minutos asi.\" A esta persona, sin su mascara estricta, quiero protegerla toda la vida.)"
     },
     "day5_good_start": {
         "name": "Yo",
-        "text": "*De pie, uno al lado del otro, bajo el atardecer. Hubo complicaciones en el camino... pero al final, estoy aquí con esta persona.*"
+        "text": "*Bajo el atardecer, estoy parado al lado de mi pareja. Pasaron muchas cosas, pero al final, estoy aqui con esta persona.*"
     },
     "day5_good_talk_1": {
         "name": "Yo",
-        "text": "\"...Seré honesto. Al principio, mi corazón dudó. Había tantas personas maravillosas alrededor.\""
+        "text": "\"...Voy a ser sincero. Al principio mi corazon dudo. Porque habia mucha gente increible.\""
     },
     "day5_good_talk_2": {
         "name": "Yo",
-        "text": "\"Pero al final... la única persona a la que apunta mi corazón eres tú.\""
+        "text": "\"Pero al final, mi corazon solo iba hacia ti.\""
     },
     "day5_good_response": {
         "name": "Sistema",
@@ -337,47 +337,47 @@
     },
     "day5_good_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"...Lo sabía. Que eras amable con las otras chicas también. Pero está bien. Al final estás a mi lado.\""
+        "text": "\"...Lo sabia. Que eras amable con los demas tambien. Pero al final estas a mi lado. Con eso me basta.\""
     },
     "day5_good_yuna": {
         "name": "Yuna",
-        "text": "\"...Sé que dudaste. Pero al final viniste a mí. ...Con eso basta.\""
+        "text": "\"...Se que dudaste. Pero al final viniste a mi. Solo eso me alcanza.\""
     },
     "day5_good_dain": {
         "name": "Dain",
-        "text": "\"¡Ja, lo supe desde el principio! ¡¡Que al final vendrías a mí!! ¡¡Jeje!!\""
+        "text": "\"Pff, lo supe desde el principio! Que al final ibas a venir conmigo! ...Menos mal.\""
     },
     "day5_good_nurse": {
         "name": "Enfermera",
-        "text": "\"Sabía que eras popular entre las estudiantes. Jeje... Pero ahora mismo, solo mírame a mí.\""
+        "text": "\"Sabia que eras popular. Jeje. Pero justo en este momento, mirame solo a mi.\""
     },
     "day5_good_teacher": {
         "name": "Profesora",
-        "text": "\"...Mujeriego. Pero ya que viniste a mí, es suficiente. De ahora en adelante, solo mírame a mí. ¿Entendido?\""
+        "text": "\"...Mujeriego. Pero si al final viniste a mi, esta bien. De ahora en mas, solo me miras a mi. Entendido?\""
     },
     "day5_good_final": {
         "name": "Yo",
-        "text": "*Tomados de la mano, mirando el atardecer. No fue perfecto... pero este es nuestro comienzo.*"
+        "text": "*La calidez de nuestras manos entrelazadas cubria en silencio todos los desencuentros y las dudas que hubo.*"
     },
     "day5_mayhem_start": {
         "name": "Yo",
-        "text": "*Subí a la azotea... Espera, ¿eh?*"
+        "text": "*Subi a la azotea y... espera, que?*"
     },
     "day5_mayhem_2": {
         "name": "Yo",
-        "text": "*¿Por qué... por qué están todas aquí?!*"
+        "text": "*Por que... por que estan todos aqui?!*"
     },
     "day5_mayhem_3": {
         "name": "Seoyeon",
-        "text": "\"¡Oh, {name}! ¡Yo también estaba a punto de subir a la azotea!\""
+        "text": "\"Oh, {name}! Yo tambien estaba por subir a la azotea~\""
     },
     "day5_mayhem_4": {
         "name": "Yuna",
-        "text": "\"...¿Por qué Seoyeon está aquí otra vez?\""
+        "text": "\"...Por que Seoyeon esta aqui otra vez.\""
     },
     "day5_mayhem_5": {
         "name": "Dain",
-        "text": "\"¡¡Oigan!! ¡¡Yo también vine!! Esperen, ¿¡por qué están todas aquí!?\""
+        "text": "\"Oye!! Yo tambien vine!! Eh, por que estan todos aqui?!\""
     },
     "day5_mayhem_5b": {
         "name": "Sistema",
@@ -385,7 +385,7 @@
     },
     "day5_mayhem_teacher_watch": {
         "name": "Yo",
-        "text": "*A lo lejos, la profesora nos está observando. Su expresión parece complicada.*"
+        "text": "*A lo lejos, la profesora nos observa. Tiene una expresion complicada.*"
     },
     "day5_mayhem_nurse_check": {
         "name": "Sistema",
@@ -393,48 +393,48 @@
     },
     "day5_mayhem_nurse_watch": {
         "name": "Yo",
-        "text": "*La enfermera también está observando la situación a través de una ventana.*"
+        "text": "*La enfermera tambien esta observando la situacion desde la ventana.*"
     },
     "day5_mayhem_6": {
         "name": "Yo",
-        "text": "*Tengo el presentimiento... de que esto va a ser un caos total...*"
+        "text": "*Esto... es el comienzo de un desastre total?*"
     },
     "day5_mayhem_7": {
         "name": "Seoyeon",
-        "text": "\"Por cierto {name}, recuerdas nuestros planes para este fin de semana, ¿verdad?\""
+        "text": "\"Por cierto, {name}, te acuerdas de que quedamos para este fin de semana, verdad?\""
     },
     "day5_mayhem_8": {
         "name": "Yuna",
-        "text": "\"...¿Qué? También hiciste planes conmigo.\""
+        "text": "\"...Que? Conmigo tambien quedo.\""
     },
     "day5_mayhem_9": {
         "name": "Dain",
-        "text": "\"¿¡Eh!? ¡¡Oye!! ¡¡A mí también me dijiste que estabas libre!!\""
+        "text": "\"Quee?! A mi tambien me dijo que tenia tiempo!!\""
     },
     "day5_mayhem_10": {
         "name": "Yo",
-        "text": "*Las miradas de todas se dirigen hacia mí al mismo tiempo. ...Estoy perdido.*"
+        "text": "*Todas las miradas se clavan en mi al mismo tiempo. ...Se acabo.*"
     },
     "day5_mayhem_11": {
         "name": "Seoyeon",
-        "text": "\"...{name}. ¿Nos puedes explicar?\""
+        "text": "\"...{name}. Me quieres explicar?\""
     },
     "day5_mayhem_12": {
         "name": "Yo",
-        "text": "*¿¡Qué digo!?*",
+        "text": "*Que hago?!*",
         "choices": [
-            "\"¿N-no puedo quererlas a todas...?\"",
-            "\"Déjenme hablar con el corazón.\"",
-            "\"(¡¡Huir!!)\""
+            "\"Q-que tienen de malo que me gusten todas...?\"",
+            "\"Les voy a hablar con la verdad.\"",
+            "\"(Salgo corriendo con todo)\""
         ]
     },
     "day5_mayhem_honest": {
         "name": "Yo",
-        "text": "\"E-en realidad... todas son personas tan maravillosas que no pude elegir...\""
+        "text": "\"L-la verdad es que todas son tan increibles que no puedo elegir...\""
     },
     "day5_mayhem_honest_2": {
         "name": "Sistema",
-        "text": "*El silencio llena el ambiente.*"
+        "text": "*Silencio.*"
     },
     "day5_mayhem_honest_3": {
         "name": "Seoyeon",
@@ -446,67 +446,67 @@
     },
     "day5_mayhem_honest_5": {
         "name": "Dain",
-        "text": "\"De verdad... ¡¡¡eres realmente lo peor!!!\""
+        "text": "\"Eres de verdad... de verdad el peor!!!\""
     },
     "day5_mayhem_run": {
         "name": "Yo",
-        "text": "*¡¡Corro hacia la puerta de la azotea sin mirar atrás!!*"
+        "text": "*Sin mirar atras, salgo corriendo hacia la puerta de la azotea!!*"
     },
     "day5_mayhem_run_2": {
         "name": "Seoyeon",
-        "text": "\"¡¡Espera, {name}!! ¿¡A dónde vas!?\""
+        "text": "\"Espera, {name}!! A donde vas?!\""
     },
     "day5_mayhem_run_3": {
         "name": "Yuna",
-        "text": "\"...Huir lo hace peor, lo sabes.\""
+        "text": "\"...Si huyes es peor.\""
     },
     "day5_mayhem_run_4": {
         "name": "Dain",
-        "text": "\"¡¡Oye espera!! ¡¡Gané el primer lugar en la carrera!! ¡¡No puedes escapar!!\""
+        "text": "\"Oye espera!! Soy la mas rapida de la clase!! No te vas a escapar!!\""
     },
     "day5_mayhem_run_5": {
         "name": "Yo",
-        "text": "*Todas me persiguen escaleras abajo. ¿¡Por qué son todas tan rápidas!?*"
+        "text": "*Bajo las escaleras corriendo pero todas me persiguen. Por que son todas tan rapidas?!*"
     },
     "day5_mayhem_confess": {
         "name": "Yo",
-        "text": "\"...No estoy bromeando. Sinceramente me gusta cada una de ustedes.\""
+        "text": "\"...No es broma. De verdad, me gustan todas las que estan aqui.\""
     },
     "day5_mayhem_confess_2": {
         "name": "Yo",
-        "text": "\"No es que no pueda elegir— no quiero elegir. Si elijo a una, pierdo a las demás.\""
+        "text": "\"No es que no pueda elegir, es que no quiero. Si elijo a una, pierdo a las demas.\""
     },
     "day5_mayhem_confess_3": {
         "name": "Sistema",
-        "text": "*Un largo silencio sigue.*"
+        "text": "*Largo silencio.*"
     },
     "day5_mayhem_confess_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"...Ja. Realmente tienes agallas. Sabes que normalmente te darían una bofetada por decir eso, ¿verdad?\""
+        "text": "\"...Ja. Eres increible. Sabes que normalmente por decir eso te llevas una cachetada, verdad?\""
     },
     "day5_mayhem_confess_yuna": {
         "name": "Yuna",
-        "text": "\"...Lo peor. Pero... admito que eres honesto.\""
+        "text": "\"...Lo peor. Pero al menos sos sincero, eso te lo reconozco.\""
     },
     "day5_mayhem_confess_dain": {
         "name": "Dain",
-        "text": "\"¡¡Oye!! ¡¡Eso ni siquiera tiene sentido!! ...¿¡Pero por qué no lo odio!?\""
+        "text": "\"Oye!! Eso tiene sentido?! ...Pero por que no me molesta?!\""
     },
     "day5_mayhem_confess_silence": {
         "name": "Yo",
-        "text": "*Todas se miran entre sí. Un extraño silencio flota en el aire.*"
+        "text": "*Todas se miran entre si. Un silencio extrano.*"
     },
     "day5_mayhem_confess_seoyeon_2": {
         "name": "Seoyeon",
-        "text": "\"...Tengo una condición. Tienes que tratarme mejor que a todas.\""
+        "text": "\"...Con una condicion. A mi me tratas mejor que a todas.\""
     },
     "day5_mayhem_confess_yuna_2": {
         "name": "Yuna",
-        "text": "\"...Trátame mejor a mí.\""
+        "text": "\"...A mi me tratas mejor que a todas.\""
     },
     "day5_mayhem_confess_dain_2": {
         "name": "Dain",
-        "text": "\"¡¡Trátame!! ¡¡A mí!! ¡¡Mejor!!\""
+        "text": "\"A mi!! Mejor!! Que a todas!!\""
     },
     "day5_mayhem_confess_react": {
         "name": "Yo",
@@ -514,31 +514,31 @@
     },
     "day5_mayhem_confess_final": {
         "name": "Yo",
-        "text": "*...Esto podría ser el comienzo del infierno. Pero en este momento— soy el hombre más feliz del mundo.*"
+        "text": "*Esto puede ser el comienzo del infierno. Pero en este momento... soy el hombre mas feliz del mundo.*"
     },
     "day5_mayhem_final": {
         "name": "Yo",
-        "text": "*El atardecer se desvanece. ¿Así termina una tranquila tarde de domingo...?*"
+        "text": "*El atardecer cae. Asi termina una pacifica tarde de domingo?*"
     },
     "day5_mayhem_final_2": {
         "name": "Yo",
-        "text": "*...Pero ¿por qué no me siento tan mal? Esta vida cotidiana caótica... tiene su propia felicidad.*"
+        "text": "*...Pero no me siento mal. Este caos cotidiano tambien es, a su manera, mi felicidad.*"
     },
     "day5_friend_start": {
         "name": "Yo",
-        "text": "*El atardecer pinta la azotea. Miro el rostro de la persona a mi lado.*"
+        "text": "*El atardecer tine la azotea. Miro a la persona que tengo al lado.*"
     },
     "day5_friend_choice": {
         "name": "Yo",
-        "text": "*Esta es mi última oportunidad de decirle lo que siento... ¿Qué debo hacer?*",
+        "text": "*Es mi ultima oportunidad de decir lo que siento. Que hago?*",
         "choices": [
-            "\"Necesito decirte algo...\" (Confesarse)",
-            "\"...Me alegra que seamos buenos amigos.\" (Seguir como amigos)"
+            "\"Tengo algo que decirte...\" (Me confieso)",
+            "\"...Me alegra que seamos amigos.\" (Quedamos como amigos)"
         ]
     },
     "day5_friend_confess": {
         "name": "Yo",
-        "text": "\"La verdad es que... me gustas. He intentado decírtelo desde ayer, y finalmente encontré el valor.\""
+        "text": "\"La verdad es que me gustas. Desde ayer quise decirtelo, pero recien ahora me anime.\""
     },
     "day5_friend_confess_response": {
         "name": "Sistema",
@@ -546,35 +546,35 @@
     },
     "day5_late_accept_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"...Tonto. He estado esperando todo este tiempo. Yo... también me gustas.\""
+        "text": "\"...Tonto. Te estuve esperando todo este tiempo. Yo tambien te quiero.\""
     },
     "day5_late_accept_yuna": {
         "name": "Yuna",
-        "text": "\"...Llegaste tarde. Muy tarde. ...Pero está bien. Siento lo mismo.\""
+        "text": "\"...Llegaste tarde. Re tarde. Pero esta bien. Siento lo mismo.\""
     },
     "day5_late_accept_dain": {
         "name": "Dain",
-        "text": "\"...¡¡Por fin!! ¿¡Sabes cuánto he esperado desde ayer!? ¡¡Tú también me gustas, tonto!!\""
+        "text": "\"...!! Por fin!! Sabes cuanto espere desde ayer?! Yo tambien te quiero, tonto!!\""
     },
     "day5_late_accept_nurse": {
         "name": "Enfermera",
-        "text": "\"...¿Por fin lo dices? Yo también... siento lo mismo. Desde hace mucho tiempo.\""
+        "text": "\"...Por fin me lo dices? Yo siento lo mismo. Desde hace mucho.\""
     },
     "day5_late_accept_teacher": {
         "name": "Profesora",
-        "text": "\"...Ay, en serio. ¿Por qué no lo dijiste ayer? Estuve toda la noche pensando en ello. ...Tú también me gustas, tonto.\""
+        "text": "\"...Ja, por que no lo dijiste ayer. Me pase toda la noche pensando. Yo tambien te quiero, tonto.\""
     },
     "day5_late_accept_transition1": {
         "name": "Yo",
-        "text": "*Después de mirarnos por un rato, nos echamos a reír.*"
+        "text": "*Nos miramos un buen rato y al final nos estallamos de risa.*"
     },
     "day5_late_accept_transition2": {
         "name": "Yo",
-        "text": "*Algo tan simple... ¿por qué tardó tanto?*"
+        "text": "*Era tan simple. Por que tardamos tanto?*"
     },
     "day5_friend_stay": {
         "name": "Yo",
-        "text": "\"...Realmente me alegra haber conocido a alguien como tú en esta escuela.\""
+        "text": "\"...La verdad es que haber venido a esta escuela y conocerte fue una suerte enorme.\""
     },
     "day5_friend_response": {
         "name": "Sistema",
@@ -582,54 +582,54 @@
     },
     "day5_friend_seoyeon": {
         "name": "Seoyeon",
-        "text": "\"...¡Sí, yo también! Sigamos siendo buenos amigos. ...Amigos.\""
+        "text": "\"...Bueno. Ya lo sabia. Fuiste una variable que no estaba en mis planes. ...La proxima vez, yo te voy a buscar primero.\""
     },
     "day5_friend_yuna": {
         "name": "Yuna",
-        "text": "\"...Sí. Amigos. ...Gracias.\""
+        "text": "\"...Si. ...Fue divertido. Nos vemos en la proxima historia.\""
     },
     "day5_friend_dain": {
         "name": "Dain",
-        "text": "\"...¡¡Sí!! ¡¡Eres el mejor amigo de todos!! ...El mejor... amigo.\""
+        "text": "\"Tsk, que lastima! Pero fue tu decision. La proxima vez me tienes que dar una oportunidad!\""
     },
     "day5_friend_nurse": {
         "name": "Enfermera",
-        "text": "\"...Sí. Eres un buen estudiante. ...Un buen estudiante.\""
+        "text": "\"...Si. Eres un buen estudiante. ...Un buen estudiante.\""
     },
     "day5_friend_teacher": {
         "name": "Profesora",
-        "text": "\"...Sí, bueno. Profesora y estudiante, es lo natural. ...Lo natural.\""
+        "text": "\"...Si, bueno. Somos profesora y estudiante, es lo natural. ...Lo natural.\""
     },
     "day5_friend_bitter": {
         "name": "Yo",
-        "text": "*...De alguna manera, su sonrisa parecía un poco triste. Un rincón de mi corazón también dolía.*"
+        "text": "*Su sonrisa parecia un poco triste. Una parte de mi corazon tambien dolio.*"
     },
     "day5_friend_final": {
         "name": "Yo",
-        "text": "*¿Fue la elección correcta? ...No lo sé. Pero esto también es un final.*"
+        "text": "*Habra sido la decision correcta? No lo se. Pero esto tambien es un final.*"
     },
     "day5_alone_start": {
         "name": "Yo",
-        "text": "*Veo el atardecer solo en la azotea. Los recuerdos de mi tiempo en esta escuela pasan ante mis ojos.*"
+        "text": "*Veo el atardecer solo desde la azotea. El tiempo en esta escuela pasa frente a mis ojos como una pelicula.*"
     },
     "day5_alone_2": {
         "name": "Yo",
-        "text": "*Seoyeon, Yuna, Dain, las profesoras... Había tantas personas maravillosas.*"
+        "text": "*Seoyeon, Yuna, Dain, las profesoras. Hubo mucha gente buena.*"
     },
     "day5_alone_3": {
         "name": "Yo",
-        "text": "*¿Debería haberle dicho a alguna lo que sentía? ...Probablemente.*"
+        "text": "*Deberia haberle dicho lo que sentia a alguna de ellas? Probablemente.*"
     },
     "day5_alone_4": {
         "name": "Yo",
-        "text": "*Pero no me arrepiento. El tiempo que pasé aquí es valioso en sí mismo.*"
+        "text": "*Pero no me arrepiento. El tiempo que pase aqui ya es valioso en si.*"
     },
     "day5_alone_5": {
         "name": "Yo",
-        "text": "*Estoy solo, pero no me siento solo. Definitivamente he cambiado de quien era antes de transferirme.*"
+        "text": "*Estoy solo, pero no me siento solo. Definitivamente cambie desde antes de transferirme.*"
     },
     "day5_alone_6": {
         "name": "Yo",
-        "text": "*Mañana es un nuevo comienzo. Esta vez... seré un poco más valiente.*"
+        "text": "*Manana empieza de nuevo. Esta vez voy a ser un poco mas valiente.*"
     }
 }

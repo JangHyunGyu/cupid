@@ -1,377 +1,382 @@
 {
     "day3_night_start": {
-        "name": "僕",
-        "text": "*家に着いた。金曜の夜…明日から週末だ。*"
+        "name": "主人公",
+        "text": "*家に到着。金曜の夜。明日から週末だ。*"
     },
     "day3_night_reflect": {
-        "name": "僕",
-        "text": "*ベッドに横になって今日一日を振り返る。昼休みのこと…放課後のこと…*"
+        "name": "主人公",
+        "text": "*ベッドに横になって、今日一日を振り返る。*"
     },
     "day3_night_reflect_trouble": {
-        "name": "僕",
-        "text": "*昼休みに全部バレた…週末は無事に過ごせるだろうか？*"
+        "name": "主人公",
+        "text": "*昼休みに全部バレた。ひんやりした空気と鋭い視線がまだ生々しい。週末を無事に乗り越えられるだろうか？*"
     },
     "day3_night_reflect_tension": {
-        "name": "僕",
-        "text": "*複数の約束を入れてしまった…時間配分をうまくやらないと。*"
+        "name": "主人公",
+        "text": "*約束がかぶってしまった。一人一人の顔が浮かぶたびにドキドキしながらも、冷や汗が出る。時間配分をうまくやらないと。*"
     },
     "day3_night_reflect_normal": {
-        "name": "僕",
-        "text": "*明日が楽しみだ。どんな一日になるだろう？*"
+        "name": "主人公",
+        "text": "*明日が楽しみだ。どんな一日になるかな。*"
     },
     "day3_night_phone_check": {
-        "name": "僕",
+        "name": "主人公",
         "text": "*スマホを確認する。メッセージが来ている。*"
     },
     "day3_night_multiple_messages": {
-        "name": "僕",
-        "text": "*メッセージが複数来ている…心臓がドキドキする。*"
+        "name": "主人公",
+        "text": "*メッセージが何件も……心臓がドキドキする。*"
     },
     "day3_night_check_messages": {
-        "name": "僕",
-        "text": "*どのメッセージから確認しようか？*",
+        "name": "主人公",
+        "text": "*どのメッセージから見ようか？*",
         "choices": [
             "ソヨンのメッセージ",
             "ユナのメッセージ",
             "ダインのメッセージ",
-            "保健先生のメッセージ",
-            "担任先生のメッセージ",
+            "保健の先生のメッセージ",
+            "担任の先生のメッセージ",
             "そのまま寝る"
         ]
     },
     "day3_night_msg_seoyeon": {
         "name": "ソヨン",
-        "text": "*Message: 10 PM* '{name}, are you still awake? I'm so excited for tomorrow!'"
+        "text": "*22:03* '{name}、まだ起きてる？ 明日ほんと楽しみ。'"
     },
     "day3_night_seoyeon_suspicious": {
         "name": "ソヨン",
-        "text": "*Additional message* 'But... you're only meeting me, right? No other plans?'",
+        "text": "*追加メッセージ* 'ってか……私だけに会うんだよね？ 他の約束ないよね？'",
         "choices": [
-            "'Yes, only you!'",
-            "'Let me be honest...'",
-            "*Leave on read*"
+            "'うん、ソヨンだけだよ'",
+            "'正直に言うと……'",
+            "*既読スルー*"
         ]
     },
     "day3_night_seoyeon_lie": {
         "name": "ソヨン",
-        "text": "'Really? I trust you! See you tomorrow! 💕'"
+        "text": "'……わかった。信じる。明日ね。'"
     },
     "day3_night_seoyeon_honest": {
         "name": "ソヨン",
-        "text": "'...What? You have other plans? With who?'"
+        "text": "'……は？ 他の約束？ 誰と？'"
     },
     "day3_night_seoyeon_angry": {
         "name": "ソヨン",
-        "text": "'...Fine. We'll see this weekend.'"
+        "text": "'……わかった。週末になればわかるでしょ。'"
     },
     "day3_night_seoyeon_ignore": {
-        "name": "僕",
-        "text": "*I didn't reply. Seoyeon will probably be disappointed...*"
+        "name": "主人公",
+        "text": "*返信しなかった。ソヨンはがっかりするだろうな。*"
     },
     "day3_night_seoyeon_jealous": {
         "name": "ソヨン",
-        "text": "*Additional message* 'About lunch today... it's still bothering me. Please be honest with me.'",
+        "text": "*追加メッセージ* '今日のお昼のこと……まだ引っかかってるの。正直に教えて。'",
         "choices": [
-            "'Sorry, I couldn't say no to anyone...'",
-            "'You're the most important to me'",
-            "*Leave on read*"
+            "'ごめん、みんなに断れなくて……'",
+            "'ソヨンが一番大事だよ'",
+            "*既読スルー*"
         ]
     },
     "day3_night_seoyeon_apologize": {
         "name": "ソヨン",
-        "text": "'...Thanks for being honest. But I don't like sharing with others.'"
+        "text": "'……正直に言ってくれたのはありがと。でも私、あんたを誰かと共有する気はないから。あんたは私のもの。でしょ？'"
     },
     "day3_night_seoyeon_reassure": {
         "name": "ソヨン",
-        "text": "'...Really? I'll remember that. Prove it tomorrow.'"
+        "text": "'……本当に？ その言葉、絶対忘れないでよ。明日私以外の子に笑いかけたら……マジで知らないから。'"
     },
     "day3_night_seoyeon_normal": {
         "name": "ソヨン",
-        "text": "'Have you decided where to go tomorrow? You can leave it to me! Good night! 😊'",
+        "text": "'明日どこ行くか決めた？ 私に任せてくれていいよ。おやすみ。'",
         "choices": [
-            "'I'll leave it to you! Good night!'",
-            "'Thanks, see you tomorrow!'"
+            "'任せるね、おやすみ'",
+            "'ありがと、明日ね'"
         ]
     },
     "day3_night_seoyeon_good": {
-        "name": "僕",
-        "text": "*Finished chatting with Seoyeon.*"
+        "name": "主人公",
+        "text": "*ソヨンとのやりとりを終えた。*"
     },
     "day3_night_msg_yuna": {
         "name": "ユナ",
-        "text": "*Message: 11:59 PM* '...{name}. Tomorrow night. Don't forget.'"
+        "text": "*23:59* '……{name}。明日の夜。忘れちゃダメ。'"
     },
     "day3_night_yuna_witnessed": {
         "name": "ユナ",
-        "text": "*Additional message* 'Today after school... I saw you leaving with Seoyeon.'"
+        "text": "*追加メッセージ* '今日の放課後……ソヨンと一緒に帰るの、見てたよ。'"
     },
     "day3_night_yuna_warning": {
         "name": "ユナ",
-        "text": "'If you lie to me... you'll regret it.'",
+        "text": "'嘘ついたら……後悔するよ。'",
         "choices": [
-            "'You're the most important to me'",
-            "'Seoyeon and I are just friends'",
-            "'...Sorry'"
+            "'ユナが一番大事だよ'",
+            "'ソヨンとはただの友達だよ'",
+            "'……ごめん'"
         ]
     },
     "day3_night_yuna_reassure": {
         "name": "ユナ",
-        "text": "'...Really? I'll believe that. But if you betray me...'"
+        "text": "'……本当に？ 信じる。でも裏切ったら……'"
     },
     "day3_night_yuna_threat": {
         "name": "ユナ",
-        "text": "'...You know, right? 😊'"
+        "text": "'……逃げようなんて思わないで。どこにいても、誰といても、全部わかってるから。'"
     },
     "day3_night_yuna_excuse": {
         "name": "ユナ",
-        "text": "'...Okay. Friends. I'll believe you.'"
+        "text": "'……友達。そう。信じるよ。'"
     },
     "day3_night_yuna_apologize": {
         "name": "ユナ",
-        "text": "'...We'll talk when we meet tomorrow. Don't run away.'"
+        "text": "'……明日会ったら話そ。逃げちゃダメだよ。'"
     },
     "day3_night_yuna_knows": {
         "name": "ユナ",
-        "text": "*Additional message* '...You made promises with others too, didn't you?'"
+        "text": "*追加メッセージ* '……他の子にも約束したんでしょ？'"
     },
     "day3_night_yuna_knows_2": {
         "name": "ユナ",
-        "text": "'It's okay. You'll come to me in the end.'"
+        "text": "'いいよ。どうあがいても結局あたしの手の中だから。明日の夜を楽しみに。'"
     },
     "day3_night_yuna_normal": {
         "name": "ユナ",
-        "text": "'...See you in your dreams.'",
+        "text": "'……夢で会おうね。'",
         "choices": [
-            "'Yeah, good night'",
-            "'What kind of dreams?'"
+            "'うん、おやすみ'",
+            "'どんな夢？'"
         ]
     },
     "day3_night_yuna_dream": {
         "name": "ユナ",
-        "text": "'...Secret. I'll tell you tomorrow night.'"
+        "text": "'……秘密。明日の夜教えてあげる。'"
     },
     "day3_night_yuna_sleep": {
-        "name": "僕",
-        "text": "*Finished chatting with Yuna.*"
+        "name": "主人公",
+        "text": "*ユナとのやりとりを終えた。*"
     },
     "day3_night_msg_dain": {
         "name": "ダイン",
-        "text": "*Message: 9 PM* 'Hey!! 9 AM at the gym tomorrow!! Don't be late!!! 😤'"
+        "text": "*21:00* 'おい！！ 明日9時体育館！！ 絶対遅れんなよ！！！'"
     },
     "day3_night_dain_suspicious": {
         "name": "ダイン",
-        "text": "*Additional message* 'But... did you really make plans with others too? I heard at lunch.'",
+        "text": "*追加メッセージ* 'ってかさ……マジで他の子とも約束したの？ お昼に聞こえたんだけど。'",
         "choices": [
-            "'Your practice is most important!'",
-            "'I do have other plans...'",
-            "'The times are different so it's fine'"
+            "'ダインの練習が一番大事！'",
+            "'他の約束もあるにはあるけど……'",
+            "'時間帯違うから大丈夫だよ'"
         ]
     },
     "day3_night_dain_priority": {
         "name": "ダイン",
-        "text": "'Really?! Hehe, then it's fine! I'll show you something cool tomorrow!'"
+        "text": "'マジ？！ じゃあオッケー！！ 明日カッコいいとこ見せてやるから！！'"
     },
     "day3_night_dain_honest": {
         "name": "ダイン",
-        "text": "'...I see? Well, can't help it. But you HAVE to come to my practice!'"
+        "text": "'……そっか？ ふんっ！ 別にいいけど！ あたしが他の子の百倍面白いし！！ 明日来ればわかるって？！'"
     },
     "day3_night_dain_excuse": {
         "name": "ダイン",
-        "text": "'Hmm... well, if the times work out, I guess it's okay. But focus on me!'"
+        "text": "'うーん……時間が合うならいいけどさ。あたしに集中してよね！'"
     },
     "day3_night_dain_normal": {
         "name": "ダイン",
-        "text": "*Additional message* 'Let's go get tteokbokki after practice! My treat! 🍜'",
+        "text": "*追加メッセージ* '練習終わったらトッポッキ食べに行こ！！ あたしのおごり！！'",
         "choices": [
-            "'Sounds great! Looking forward to it!'",
-            "'lol okay!'"
+            "'いいね！ 楽しみ！'",
+            "'笑 わかった！'"
         ]
     },
     "day3_night_dain_good": {
-        "name": "僕",
-        "text": "*Finished chatting with Dain.*"
+        "name": "主人公",
+        "text": "*ダインとのやりとりを終えた。*"
     },
     "day3_night_msg_nurse": {
-        "name": "保健先生",
-        "text": "*Message: 11 PM* 'My cute transfer student, still awake? Hehe.'"
+        "name": "保健の先生",
+        "text": "*23:00* 'まだ起きてる？ 先生も眠れなくてさ〜'"
     },
     "day3_night_nurse_2": {
-        "name": "保健先生",
-        "text": "'You haven't forgotten Sunday evening, right? I'll prepare something special. 😉'",
+        "name": "保健の先生",
+        "text": "'日曜の夜、忘れてないよね？ 特別なもの用意しとくから。'",
         "choices": [
-            "'I'm looking forward to it!'",
-            "'What is it?'"
+            "'楽しみにしてます！'",
+            "'なんですか？'"
         ]
     },
     "day3_night_nurse_excited": {
-        "name": "保健先生",
-        "text": "'You can look forward to it. Sleep well and see you Sunday, {name}. 💋'"
+        "name": "保健の先生",
+        "text": "'楽しみにしてていいよ。ぐっすり寝て、日曜に会おうね、{name}。'"
     },
     "day3_night_nurse_curious": {
-        "name": "保健先生",
-        "text": "'It's a secret. You'll find out on Sunday. Look forward to it.'"
+        "name": "保健の先生",
+        "text": "'秘密〜 日曜になったらわかるわよ。'"
     },
     "day3_night_msg_teacher": {
-        "name": "担任先生",
-        "text": "*Message: 10 PM* '{name}, you haven't forgotten about the museum on Sunday, have you?'"
+        "name": "先生",
+        "text": "*22:00* '{name}、日曜の博物館の約束、忘れてないわよね？'"
     },
     "day3_night_teacher_2": {
-        "name": "担任先生",
-        "text": "'I'm excited since it's been a while since I had an outing. Sunday at 2 PM, museum entrance.'",
+        "name": "先生",
+        "text": "'久しぶりのお出かけで楽しみ。日曜の午後2時、博物館の正門前で。'",
         "choices": [
-            "'Yes, I'm excited!'",
-            "'Good night!'"
+            "'はい、楽しみです！'",
+            "'おやすみなさい！'"
         ]
     },
     "day3_night_teacher_good": {
-        "name": "担任先生",
-        "text": "'Alright, sleep well and see you Sunday. Good night.'"
+        "name": "先生",
+        "text": "'じゃあ、ゆっくり寝なさい。日曜にね。'"
     },
     "day3_night_back_to_messages": {
-        "name": "僕",
-        "text": "*他のメッセージも確認しようか？*",
+        "name": "主人公",
+        "text": "*他のメッセージも見ようかな？*",
         "choices": [
             "ソヨンのメッセージ",
             "ユナのメッセージ",
             "ダインのメッセージ",
-            "保健先生のメッセージ",
-            "担任先生のメッセージ",
-            "Go to sleep"
+            "保健の先生のメッセージ",
+            "担任の先生のメッセージ",
+            "もう寝る"
         ]
     },
     "day3_night_single_message": {
-        "name": "僕",
-        "text": "*There's a message.*"
+        "name": "主人公",
+        "text": "*メッセージが来ていた。*"
     },
     "day3_night_no_message": {
-        "name": "僕",
-        "text": "*No special messages. What should I do this weekend...*"
+        "name": "主人公",
+        "text": "*特にメッセージはない。週末はなにしようかな。*"
     },
     "day3_night_ignore_all": {
-        "name": "僕",
-        "text": "*I decided to just sleep without checking messages. I'll read them tomorrow morning...*"
+        "name": "主人公",
+        "text": "*メッセージを確認せずに寝ることにした。明日の朝見ればいいか。*"
     },
     "day3_night_sleep": {
-        "name": "僕",
-        "text": "*Just as my eyes are closing... my phone rings. A call.*"
+        "name": "主人公",
+        "text": "*目が閉じかけたその瞬間……スマホが鳴る。電話だ。*"
     },
     "day3_night_phone_seoyeon": {
         "name": "ソヨン",
-        "text": "*I answer the phone to hear Seoyeon's voice* \"...{name}? I know it's time to sleep. But... I wanted to hear your voice.\""
+        "text": "*電話に出るとソヨンの声が聞こえる* \"……{name}？ 寝る時間なのわかってる。でも声が聞きたくて。\""
     },
     "day3_night_phone_seoyeon_freetalk": {
-        "name": "僕",
-        "text": "*Having a late-night call with Seoyeon. Her voice sounds softer than usual in the dark room.*",
-        "context": "深夜の電話。ソヨンが「声が聞きたかった」と電話してきた。甘い深夜の通話。ソヨンが寝る前に急に電話してきた。"
+        "name": "主人公",
+        "text": "*ソヨンと深夜の電話をしている。暗い部屋で聞くソヨンの声がいつもより柔らかい。*",
+        "context": "深夜の電話。ソヨンが「声が聞きたかった」と電話してきた。甘い深夜の通話。",
+        "personality": "ソヨンはクールビューティ系。ズバッと本質を突く、余裕たっぷり、したたかな魅力。独占欲が強く、嫉妬すると直球で来る。"
     },
     "day3_night_phone_yuna": {
         "name": "ユナ",
-        "text": "*I answer the phone to hear Yuna's voice* \"...I know it's time to sleep. But... I can't fall asleep.\""
+        "text": "*電話に出るとユナの声* \"……寝る時間なのわかってる。でも眠れなくて。\""
     },
     "day3_night_phone_yuna_freetalk": {
-        "name": "僕",
-        "text": "*Having a late-night call with Yuna. Her quiet breathing reaches my ear.*",
-        "context": "深夜の電話。ユナが「眠れない」と電話してきた。静かで親密な深夜の通話。ユナの小さな息遣いが近くに聞こえるような雰囲気。"
+        "name": "主人公",
+        "text": "*ユナと深夜の電話をしている。ユナの小さな息遣いが耳に届く。*",
+        "context": "深夜の電話。ユナが「眠れなくて」と電話してきた。静かで親密な雰囲気。",
+        "personality": "ユナはけだるくて直球、マイペース。短くて暗号みたいな言葉を使う。冷たく見えるけど、心を開くとギャップがある。"
     },
     "day3_night_phone_dain": {
         "name": "ダイン",
-        "text": "*I answer the phone to hear Dain's voice* \"...Hey, I know it's late. But thinking about tomorrow, I can't sleep!\""
+        "text": "*電話に出るとダインの声* \"……ねえ、寝る時間なのわかってるけど。明日のこと考えたら眠れなくて！\""
     },
     "day3_night_phone_dain_freetalk": {
-        "name": "僕",
-        "text": "*Having a late-night call with Dain. Instead of her usual energy, her quiet voice feels new.*",
-        "context": "深夜の電話。ダインが「明日のこと考えたら眠れなくて」と電話してきた。いつもと違って静かなダイン。柔らかい深夜の雰囲気。"
+        "name": "主人公",
+        "text": "*ダインと深夜の電話をしている。いつものエネルギーの代わりに、静かな声が新鮮だ。*",
+        "context": "深夜の電話。ダインが「明日のこと考えたら眠れなくて」と電話してきた。いつもと違って静かなダイン。",
+        "personality": "ダインは犬系で、スキンシップ好き、負けず嫌い。ビックリマークの嵐。ツンデレ。表面は元気だけど中身は繊細。"
     },
     "day3_night_phone_nurse": {
-        "name": "保健先生",
-        "text": "*I answer the phone to hear the nurse's voice* \"...{name}? Still awake? I couldn't sleep either.\""
+        "name": "保健の先生",
+        "text": "*電話に出ると先生の声* \"……{name}？ まだ起きてる？ 先生も眠れなくてさ。\""
     },
     "day3_night_phone_nurse_freetalk": {
-        "name": "僕",
-        "text": "*Having a late-night call with the school nurse. Her low voice reaches my ear.*",
-        "context": "深夜の電話。保健先生が「眠れなくて」と電話してきた。先生の低く優しい声。禁断の恋の深夜通話。"
+        "name": "主人公",
+        "text": "*保健の先生と深夜の電話をしている。先生の低くて落ち着いた声が耳元に届く。*",
+        "context": "深夜の電話。保健の先生が「眠れなくて」と電話してきた。先生の低くて柔らかい声。",
+        "personality": "保健の先生はいたずらっぽくて誘惑的、大人の色気がある。生徒への気持ちと教師としての倫理の間で揺れている。"
     },
     "day3_night_phone_teacher": {
-        "name": "担任先生",
-        "text": "*I answer the phone to hear the teacher's voice* \"...{name}? Still awake? I know it's bedtime, but...\""
+        "name": "先生",
+        "text": "*電話に出ると先生の声* \"……{name}？ まだ起きてる？ 寝る時間だってわかってるんだけどね……\""
     },
     "day3_night_phone_teacher_freetalk": {
-        "name": "僕",
-        "text": "*Having a late-night call with the homeroom teacher. Her quiet voice sounds close.*",
-        "context": "深夜の電話。担任先生が「寝る時間なのはわかってるんだけど…」と電話してきた。先生の静かな声。禁断の恋の深夜通話。"
+        "name": "主人公",
+        "text": "*担任の先生と深夜の電話をしている。先生の静かな声が近くに聞こえる。*",
+        "context": "深夜の電話。担任の先生が「寝る時間なのはわかってるんだけど」と電話してきた。先生の静かな声。",
+        "personality": "担任の先生はドライなユーモアの持ち主。表向きはぶっきらぼうだけど、生徒に惹かれてしまっている自分にギャップ萌え的な戸惑いがある。"
     },
     "day3_night_phone_end": {
-        "name": "僕",
-        "text": "*I hang up and put down my phone. The lingering echo of her voice... makes my heart race.*"
+        "name": "主人公",
+        "text": "*電話を切ってスマホを置いた。耳に残る声の余韻が、心臓を揺らす。*"
     },
     "day3_night_sleep_2": {
-        "name": "僕",
-        "text": "*My eyes are closing. Tomorrow is Saturday... What kind of day will it be.*"
+        "name": "主人公",
+        "text": "*目が閉じていく。明日は土曜日……どんな一日になるんだろう。*"
     },
     "day3_night_sleep_final": {
-        "name": "僕",
-        "text": "*Multiple plans swirl through my mind. Can I satisfy everyone...?*"
+        "name": "主人公",
+        "text": "*いくつもの約束が頭の中をぐるぐる回る。全員を満足させられるのか……*"
     },
     "day3_night_nightmare": {
-        "name": "僕",
-        "text": "*...I dream. Voices echo from a dark space.*"
+        "name": "主人公",
+        "text": "*……夢を見る。暗い空間から声が聞こえてくる。*"
     },
     "day3_night_nightmare_voice1": {
         "name": "???",
-        "text": "*Seoyeon's voice echoes* \"...You'll only see me, right? You promised. We pinky swore...\""
+        "text": "*ソヨンの声* \"……私だけ見るって言ったよね？ 約束したよね。指切りしたよね……\""
     },
     "day3_night_nightmare_voice2": {
         "name": "???",
-        "text": "*Yuna's voice whispers coldly* \"...I said you'd regret it if you betray me, remember?\""
+        "text": "*ユナの声が冷たく囁く* \"……裏切ったら後悔するって言ったよね？ 覚えてる？\""
     },
     "day3_night_nightmare_voice3": {
         "name": "???",
-        "text": "*Dain's voice trembles* \"...Idiot! You said you'd come! You said you wouldn't stand me up...\""
+        "text": "*ダインの声が震えている* \"……来るって言ったじゃん！ すっぽかさないって言ったじゃん……！\""
     },
     "day3_night_nightmare_choice": {
-        "name": "僕",
-        "text": "*Hands reach out from the darkness. Whose hand will I take...*",
+        "name": "主人公",
+        "text": "*暗闇の中から手が伸びてくる。誰の手を取るか。*",
         "choices": [
-            "*Take Seoyeon's hand*",
-            "*Take Yuna's hand*",
-            "*Take Dain's hand*",
-            "*Don't take anyone's hand*"
+            "*ソヨンの手を取る*",
+            "*ユナの手を取る*",
+            "*ダインの手を取る*",
+            "*誰の手も取らない*"
         ]
     },
     "day3_night_nightmare_end": {
-        "name": "僕",
-        "text": "*I reached out, but... there was nothing to hold. Everyone vanished, leaving only darkness and regret.*"
+        "name": "主人公",
+        "text": "*手を伸ばしたけど……何も掴めなかった。全員消えて、残ったのは闇と後悔だけ。*"
     },
     "day3_night_nightmare_wake": {
-        "name": "僕",
-        "text": "*...I snap awake. My heart is pounding like crazy. It was a dream. But... what will tomorrow bring?*"
+        "name": "主人公",
+        "text": "*……全身汗びっしょりだ。心臓がはちきれそう。夢だった。でも……明日はどうなるんだ？*"
     },
     "day3_night_peaceful": {
-        "name": "僕",
-        "text": "*A peaceful night. I'm looking forward to tomorrow.*"
+        "name": "主人公",
+        "text": "*穏やかな夜だ。明日が楽しみ。*"
     },
     "day3_night_loyalty_seoyeon": {
-        "name": "僕",
-        "text": "*...Just thinking about Seoyeon makes me smile. Tomorrow is our time together. I'll make sure to tell her how I truly feel.*"
+        "name": "主人公",
+        "text": "*……ソヨンのことを考えると自然と笑みがこぼれる。明日はソヨンと二人きりの時間。素直な気持ちを伝えよう。*"
     },
     "day3_night_loyalty_yuna": {
-        "name": "僕",
-        "text": "*...Just thinking about Yuna makes my heart race. Tomorrow night, just the two of us. Will I finally see the real Yuna?*"
+        "name": "主人公",
+        "text": "*……ユナを思い浮かべると心臓が跳ねる。明日の夜、ユナが見せたいという場所。ユナの本当の姿を見れるんだろうか。*"
     },
     "day3_night_loyalty_dain": {
-        "name": "僕",
-        "text": "*...Thinking of Dain's smile makes me smile too. I wonder how happy she'll be when I show up to watch her practice tomorrow.*"
+        "name": "主人公",
+        "text": "*……ダインの笑顔を思い浮かべると、僕まで笑顔になる。明日の練習試合、ダインはどんなに喜ぶだろう。*"
     },
     "day3_night_loyalty_nurse": {
-        "name": "僕",
-        "text": "*...The school nurse's face comes to mind. It's a forbidden relationship, but... I can't hide these feelings.*"
+        "name": "主人公",
+        "text": "*……保健の先生の顔が浮かぶ。ダメだってわかってるのに……この気持ちは隠しようがない。*"
     },
     "day3_night_loyalty_teacher": {
-        "name": "僕",
-        "text": "*...The homeroom teacher's smile comes to mind. We're teacher and student, but... my feelings are real.*"
+        "name": "主人公",
+        "text": "*……担任の先生の笑顔が浮かぶ。先生と生徒だけど、この想いは本物だから。*"
     },
     "day3_final_scene": {
-        "name": "僕",
-        "text": "*Friday night deepens... Tomorrow is finally Saturday.*"
+        "name": "主人公",
+        "text": "*金曜の夜が更けていく……明日は土曜日だ。*"
     }
 }
