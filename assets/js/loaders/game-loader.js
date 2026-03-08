@@ -74,6 +74,7 @@
     const lang = pathname.includes('-es') ? 'es'
                : pathname.includes('-ja') ? 'ja'
                : pathname.includes('-fr') ? 'fr'
+               : pathname.includes('-de') ? 'de'
                : pathname.includes('-en') ? 'en'
                : 'ko';
 
