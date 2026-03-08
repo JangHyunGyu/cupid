@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Galerie - Cupid</title>
+    <meta name="description"
+        content="Cupid-Charakterprofile, Event-CGs und Musikraum. Erleben Sie die Charaktere und besonderen Momente des Spiels noch einmal.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Galerie - Cupid">
+    <meta property="og:description" content="Entdecken Sie Charakterprofile und Event-CGs von Cupid.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css?v=2.2.0">
+    <link rel="stylesheet" href="assets/css/gallery.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/gallery-freetalk.css?v=1.0.0">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="gallery-header">
+        <h1>📖 Galerie</h1>
+        <div class="header-actions">
+            <a href="index-de.html" class="back-btn">← Zurück</a>
+            <div class="lang-combo" id="langCombo">
+                <div class="lang-combo-selected" onclick="toggleLangCombo()">
+                    <span class="lang-flag">🇩🇪</span> Deutsch
+                </div>
+                <div class="lang-combo-dropdown">
+                    <a href="gallery.html" class="lang-combo-option">
+                        <span class="lang-flag">🇰🇷</span> 한국어
+                    </a>
+                    <a href="gallery-en.html" class="lang-combo-option">
+                        <span class="lang-flag">🇺🇸</span> English
+                    </a>
+                    <a href="gallery-es.html" class="lang-combo-option">
+                        <span class="lang-flag">🇪🇸</span> Español
+                    </a>
+                    <a href="gallery-ja.html" class="lang-combo-option">
+                        <span class="lang-flag">🇯🇵</span> 日本語
+                    </a>
+                    <a href="gallery-fr.html" class="lang-combo-option">
+                        <span class="lang-flag">🇫🇷</span> Français
+                    </a>
+                    <div class="lang-combo-option active">
+                        <span class="lang-flag">🇩🇪</span> Deutsch
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="gallery-container">
+        <!-- Tab Navigation -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="characters">👤 Charaktere</button>
+            <button class="tab-btn" data-tab="cg">🖼️ Event-CGs</button>
+            <button class="tab-btn" data-tab="music">🎵 Musikraum</button>
+        </nav>
+
+        <!-- Tab Contents -->
+        <section id="tab-characters" class="tab-content active">
+            <div id="character-grid" class="character-grid">
+                <!-- Characters will be rendered here -->
+            </div>
+        </section>
+
+        <section id="tab-cg" class="tab-content">
+            <div id="cg-grid" class="cg-grid">
+                <!-- CG items will be rendered here -->
+            </div>
+        </section>
+
+        <section id="tab-music" class="tab-content">
+            <div id="music-list" class="music-list">
+                <!-- Music items will be rendered here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Character Detail Modal -->
+    <div id="character-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 id="modal-char-name">Character Name</h2>
+                    <p id="modal-char-title" style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Title</p>
+                </div>
+                <button class="modal-close" onclick="closeCharacterModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="character-preview">
+                    <img id="modal-char-image" src="" alt="Character">
+                </div>
+                <div class="character-details">
+                    <div class="detail-section">
+                        <h4>Einführung</h4>
+                        <p id="modal-char-desc">Character description</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Ausdrücke</h4>
+                        <div id="expression-buttons" class="expression-grid">
+                            <!-- Expression buttons -->
+                        </div>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Profil</h4>
+                        <div id="char-stats" class="stats-grid">
+                            <!-- Stats -->
+                        </div>
+                    </div>
+                    <div class="detail-section" id="freetalk-button-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Free Talk Overlay -->
+    <div id="gallery-freetalk-overlay" class="gallery-freetalk-overlay"></div>
+
+    <!-- Footer -->
+    <footer class="gallery-footer">
+        <p>© 2026 ArcherLab. All rights reserved.</p>
+    </footer>
+
+    <!-- Gallery Scripts (Dynamic Loader) -->
+    <script src="assets/js/loaders/gallery-loader.js"></script>
+    <script>
+        function toggleLangCombo() {
+            document.getElementById('langCombo').classList.toggle('open');
+        }
+        document.addEventListener('click', function(e) {
+            const combo = document.getElementById('langCombo');
+            if (combo && !combo.contains(e.target)) {
+                combo.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+
+</html>

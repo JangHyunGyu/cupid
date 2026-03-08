@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!-- Language auto-detect & redirect (must be first script) -->
+    <script>
+    (function () {
+        try {
+            var K = 'cupid:language', P = 'de';
+            var M = { ko: 'index.html', en: 'index-en.html', es: 'index-es.html', ja: 'index-ja.html', fr: 'index-fr.html', de: 'index-de.html' };
+            var s = localStorage.getItem(K);
+            if (!s) {
+                s = (navigator.language || '').split('-')[0].toLowerCase();
+                if (!M[s]) s = 'ko';
+                localStorage.setItem(K, s);
+            }
+            if (s !== P && M[s]) location.replace(M[s]);
+        } catch (e) { }
+    })();
+    </script>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <script>
+        (function () {
+            const CURRENT_VERSION = '2.0.0';
+            // Register Service Worker (skip on local dev)
+            if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(reg => console.log('[SW] Registriert:', reg.scope))
+                    .catch(err => console.log('[SW] Registrierung fehlgeschlagen:', err));
+            }
+            // Version check (delayed)
+            setTimeout(() => {
+                fetch('version.json?t=' + new Date().getTime())
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.version !== CURRENT_VERSION) {
+                            if ('caches' in window) {
+                                caches.keys().then(names => {
+                                    Promise.all(names.map(n => caches.delete(n))).then(() => {
+                                        window.location.reload(true);
+                                    });
+                                });
+                            } else {
+                                window.location.reload(true);
+                            }
+                        }
+                    })
+                    .catch(err => console.log('Version check failed', err));
+            }, 3000);
+        })();
+    </script>
+    <script src="assets/js/browser-check.js?v=2.2.4" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest-de.json">
+    <title>Cupid: Kostenloser KI-Visual-Novel – Dating-Simulationsspiel im Browser</title>
+    <meta name="description"
+        content="Spielen Sie Cupid, einen kostenlosen KI-Visual-Novel — ohne Installation, ohne Download, ohne Registrierung. Spielen Sie auf dem Handy oder im Desktop-Browser. Die KI generiert jedes Mal einzigartige Geschichten.">
+    <meta name="keywords"
+        content="Dating-Simulation ohne Installation, Dating-Simulation Browser, Visual Novel Handy, Spiel ohne Registrierung, KI-Story-Spiel, KI-Visual-Novel, KI-Dating-Simulation, kostenloser Visual Novel, Browserspiel, Cupid, Dating-Spiel, Visual Novel">
+    <meta name="naver-site-verification" content="d1b1d31619e3752f70e28ef54cb08b49698ccf66" />
+    <link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/" />
+    <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en.html" />
+    <link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/index-es.html" />
+    <link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/index-ja.html" />
+    <link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/index-fr.html" />
+    <link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/index-de.html" />
+    <link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/" />
+    <link rel="canonical" href="https://cupid.archerlab.dev/index-de.html" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cupid.archerlab.dev/index-de.html">
+    <meta property="og:title" content="Cupid: Kostenloser KI-Visual-Novel – Dating-Simulationsspiel im Browser">
+    <meta property="og:description"
+        content="Spielen Sie Cupid, einen kostenlosen KI-Visual-Novel — ohne Installation, ohne Download, ohne Registrierung. Spielen Sie auf dem Handy oder im Desktop-Browser. Die KI generiert jedes Mal einzigartige Geschichten.">
+    <meta property="og:image" content="https://cupid.archerlab.dev/assets/images/background/school.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cupid.archerlab.dev/index-de.html">
+    <meta property="twitter:title" content="Cupid: Kostenloser KI-Visual-Novel – Dating-Simulationsspiel im Browser">
+    <meta property="twitter:description"
+        content="Spielen Sie Cupid, einen kostenlosen KI-Visual-Novel — ohne Installation, ohne Download, ohne Registrierung. Spielen Sie auf dem Handy oder im Desktop-Browser. Die KI generiert jedes Mal einzigartige Geschichten.">
+    <meta property="twitter:image" content="https://cupid.archerlab.dev/assets/images/background/school.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "VideoGame",
+                "@id": "https://cupid.archerlab.dev/index-de.html#game",
+                "name": "Cupid",
+                "alternateName": "Cupid: Kostenloser KI-Visual-Novel",
+                "url": "https://cupid.archerlab.dev/index-de.html",
+                "description": "Spielen Sie Cupid, einen kostenlosen KI-Visual-Novel — ohne Installation, ohne Download, ohne Registrierung. Spielen Sie auf dem Handy oder im Desktop-Browser. Die KI generiert jedes Mal einzigartige Geschichten.",
+                "inLanguage": "de",
+                "genre": ["KI-Visual-Novel", "Visual Novel", "Dating-Simulation", "Romanze"],
+                "gamePlatform": "Web Browser",
+                "applicationCategory": "Game",
+                "operatingSystem": "Web",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "EUR",
+                    "availability": "https://schema.org/InStock"
+                },
+                "image": "https://cupid.archerlab.dev/assets/images/background/school.png",
+                "screenshot": "https://cupid.archerlab.dev/assets/images/background/school.png",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "ArcherLab",
+                    "url": "https://archerlab.dev"
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://cupid.archerlab.dev/#website",
+                "url": "https://cupid.archerlab.dev/index-de.html",
+                "name": "Cupid - Kostenloser KI-Visual-Novel",
+                "inLanguage": "de"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05YM7K3VX9"></script>
+    <!-- ga.js, sound.js loaded by game-loader.js -->
+    <link rel="stylesheet" href="assets/css/style.css?v=2.2.7">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        #landing-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('assets/images/background/school.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        #landing-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .visual-h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            letter-spacing: 5px;
+            color: #ff69b4;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .start-btn {
+            padding: 15px 50px;
+            font-size: 1.5rem;
+            background: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+        }
+
+        .start-btn:hover {
+            transform: scale(1.1);
+            background: #ff1493;
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 30px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .contact-link {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .contact-link:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Mobile Portrait & Landscape Tweaks */
+        /* Mobile portrait mode */
+        @media (max-width: 768px) and (orientation: portrait) {
+            .visual-h1 {
+                font-size: 3rem;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .start-btn {
+                padding: 12px 40px;
+                font-size: 1.2rem;
+            }
+
+            .footer {
+                bottom: 20px;
+            }
+        }
+
+        /* Small mobile screens */
+        @media (max-width: 480px) and (orientation: portrait) {
+            .visual-h1 {
+                font-size: 2.5rem;
+                margin-bottom: 0.3rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .start-btn {
+                padding: 10px 35px;
+                font-size: 1.1rem;
+            }
+
+            .footer {
+                bottom: 15px;
+                gap: 8px;
+            }
+
+            .contact-links {
+                gap: 12px;
+            }
+
+            .contact-link {
+                padding: 6px 15px;
+                font-size: 0.8rem;
+            }
+
+            .footer p {
+                font-size: 0.75rem !important;
+                margin-bottom: 3px !important;
+            }
+        }
+
+        /* Mobile landscape mode */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .visual-h1 {
+                font-size: 2rem;
+                margin-bottom: 0.2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .start-btn {
+                padding: 8px 25px;
+                font-size: 1.1rem;
+            }
+
+            .footer {
+                bottom: 5px;
+                gap: 2px;
+            }
+
+            .contact-links {
+                gap: 10px;
+            }
+
+            .contact-link {
+                padding: 4px 12px;
+                font-size: 0.75rem;
+            }
+
+            .footer p {
+                font-size: 0.7rem !important;
+                margin-bottom: 2px !important;
+            }
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-overlay.is-open {
+            display: flex;
+        }
+
+        .modal-container {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            border: 1px solid #ff69b4;
+        }
+
+        .modal-title {
+            margin-top: 0;
+            color: #ff69b4;
+        }
+
+        .confirm-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .modal-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 100px;
+        }
+
+        .modal-btn.cancel {
+            background: #3a3a3a;
+            color: #aaa;
+            border: 1px solid #555;
+        }
+
+        .modal-btn.cancel:hover {
+            background: #4a4a4a;
+            color: #fff;
+            border-color: #666;
+        }
+
+        .modal-btn.confirm {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+        }
+
+        .modal-btn.confirm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 157, 0.6);
+        }
+
+        .modal-btn:active {
+            transform: scale(0.95);
+        }
+
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .contact-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #2a2a2a, #333);
+            color: white;
+            text-decoration: none;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.25s ease;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .contact-option:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 105, 180, 0.3);
+        }
+
+        .contact-option.kakao {
+            background: linear-gradient(135deg, #3A1D1D, #5C3A2E);
+            border-color: rgba(254, 229, 0, 0.15);
+        }
+
+        .contact-option.kakao:hover {
+            background: linear-gradient(135deg, #4A2D2D, #6C4A3E);
+            border-color: rgba(254, 229, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(254, 229, 0, 0.1);
+        }
+
+        .contact-option.email {
+            background: linear-gradient(135deg, #1a2a3a, #2a3a4a);
+            border-color: rgba(100, 180, 255, 0.15);
+        }
+
+        .contact-option.email:hover {
+            background: linear-gradient(135deg, #2a3a4a, #3a4a5a);
+            border-color: rgba(100, 180, 255, 0.4);
+            box-shadow: 0 6px 20px rgba(100, 180, 255, 0.1);
+        }
+
+        .contact-option-icon {
+            font-size: 1.5rem;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .contact-option-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .contact-option-label {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .contact-option-desc {
+            font-size: 0.75rem;
+            color: #999;
+        }
+
+        .contact-close-btn {
+            margin-top: 20px;
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #aaa;
+            cursor: pointer;
+            padding: 8px 28px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .contact-close-btn:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .archerlab-link {
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 4px 10px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            transition: all 0.2s;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .archerlab-link:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .lang-btn {
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 5px 15px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            cursor: pointer;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .lang-btn:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Custom Language Combo Box */
+        .lang-combo {
+            position: relative;
+        }
+
+        .lang-combo-selected {
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 5px 28px 5px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            user-select: none;
+            font-family: 'Pretendard', sans-serif;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .lang-combo-selected::after {
+            content: '';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 5px solid white;
+            transition: transform 0.2s;
+        }
+
+        .lang-combo.open .lang-combo-selected::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .lang-combo-selected:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .lang-combo-dropdown {
+            display: none;
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: rgba(30, 30, 30, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            min-width: 140px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            z-index: 100;
+        }
+
+        .lang-combo.open .lang-combo-dropdown {
+            display: block;
+            animation: dropdownFadeIn 0.15s ease-out;
+        }
+
+        @keyframes dropdownFadeIn {
+            from { opacity: 0; transform: translateY(-6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .lang-combo-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            color: white;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background 0.15s;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .lang-combo-option:hover {
+            background: rgba(255, 105, 180, 0.3);
+        }
+
+        .lang-combo-option.active {
+            background: rgba(255, 105, 180, 0.15);
+            color: #ff69b4;
+        }
+
+        .lang-combo-option .lang-flag {
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        /* Mobile: archerlab link top-left */
+        @media (max-width: 768px) {
+            .archerlab-link {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 11;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- SEO Structured Text (screen-reader accessible) -->
+    <div
+        style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+        <h1>CUPID - Kostenloser KI-Visual-Novel – Dating-Simulationsspiel im Browser</h1>
+        <p>CUPID ist ein kostenloser, KI-gesteuerter Visual Novel, den Sie sofort in Ihrem Webbrowser spielen können — ohne Download, ohne Installation, ohne Registrierung. Perfekt zum Spielen auf dem Handy, in der Schule oder auf jedem Gerät. Die KI generiert einzigartige Schulromanze-Geschichten, bei denen jede Entscheidung zu einem anderen Ergebnis führt. Treffen Sie Seoyeon, Yuna und Dain in einer verzweigten Geschichte mit mehreren Enden. Verfügbar auf PC und Handy auf Deutsch.</p>
+        <p>CUPID는 설치·회원가입 없이 웹 브라우저에서 바로 즐기는 2026년형 무료 AI 모바일 웹 미연시입니다. AI 스토리 게임으로 매번 다른 학원 로맨스를 경험하세요.</p>
+    </div>
+    <div class="lang-switch">
+        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab Home" title="ArcherLab">🏹</a>
+        <button id="landing-settings-btn" class="lang-btn"
+            style="border: none;">
+            Einstellungen</button>
+        <div class="lang-combo" id="langCombo">
+            <div class="lang-combo-selected" onclick="toggleLangCombo()">
+                <span class="lang-flag">🇩🇪</span> Deutsch
+            </div>
+            <div class="lang-combo-dropdown">
+                <a href="index.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ko')">
+                    <span class="lang-flag">🇰🇷</span> 한국어
+                </a>
+                <a href="index-en.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','en')">
+                    <span class="lang-flag">🇺🇸</span> English
+                </a>
+                <a href="index-es.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','es')">
+                    <span class="lang-flag">🇪🇸</span> Español
+                </a>
+                <a href="index-ja.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
+                    <span class="lang-flag">🇯🇵</span> 日本語
+                </a>
+                <a href="index-fr.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
+                    <span class="lang-flag">🇫🇷</span> Français
+                </a>
+                <div class="lang-combo-option active">
+                    <span class="lang-flag">🇩🇪</span> Deutsch
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="landing-container">
+        <div class="content">
+            <div class="visual-h1" role="heading" aria-level="2">CUPID</div>
+            <p>Die Geschichte deines ersten Tages an einer neuen Schule</p>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                <button onclick="startGame()" class="start-btn" style="border:none; cursor:pointer;">Neues Spiel</button>
+                <button id="continue-btn" onclick="continueGame()" class="start-btn"
+                    style="border:none; cursor:pointer; background: linear-gradient(135deg, #6b5b95, #4a4070); opacity: 0.5;"
+                    disabled>Fortsetzen</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contact-links">
+                <a href="gallery-de.html" class="contact-link" style="text-decoration: none;">📖 Galerie</a>
+                <button class="contact-link" onclick="openContactModal()"> Kontakt</button>
+                <button class="contact-link" onclick="installApp()"> App installieren</button>
+            </div>
+            <p style="font-size: 0.85rem; margin-bottom: 5px; color: #ffb6c1;">Advisor: Yujin Kim, Sanghun Lee</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;"> 2026 ArcherLab. All rights reserved. (v1.2.5)</p>
+        </div>
+    </div>
+
+    <!-- New Game Confirm Modal (Landing Page) -->
+    <div id="newGameConfirmModal" class="modal-overlay" style="display: none;" onclick="closeNewGameConfirm(event)">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <div style="font-size: 2.5rem; margin-bottom: 10px;">⚠️</div>
+            <h3 class="modal-title">Neues Spiel</h3>
+            <p style="color: #ccc; margin: 15px 0; line-height: 1.6;">Gespeicherte Daten gehen verloren.<br>Möchten Sie ein neues Spiel starten?</p>
+            <div class="confirm-buttons">
+                <button class="modal-btn cancel" onclick="closeNewGameConfirm(event)">Abbrechen</button>
+                <button class="modal-btn confirm" onclick="confirmNewGame()">Starten</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Container (Hidden initially) -->
+    <div id="game-container" style="display: none;">
+        <!-- Background -->
+        <div id="background-layer"></div>
+
+        <!-- Characters -->
+        <div id="character-layer">
+            <div id="char-left" class="char-slot"></div>
+            <div id="char-center" class="char-slot"></div>
+            <div id="char-right" class="char-slot"></div>
+        </div>
+
+        <!-- UI Layer -->
+        <div id="ui-layer">
+            <div id="dialogue-box">
+                <div id="name-tag"></div>
+                <div id="message"></div>
+                <div id="next-indicator"></div>
+
+                <!-- Name Input -->
+                <div id="name-input-container" style="display: none;">
+                    <div id="name-input-wrapper">
+                        <input type="text" id="player-name-input" placeholder="Geben Sie Ihren Namen ein (1-12 Zeichen)" maxlength="12">
+                        <button id="name-confirm-btn">Bestätigen</button>
+                    </div>
+                    <div id="name-input-guide">1-12 Zeichen, nur Buchstaben (keine Zahlen/Sonderzeichen)</div>
+                </div>
+            </div>
+
+            <div id="choice-container" style="display: none;">
+                <!-- Choice buttons generated here -->
+            </div>
+
+            <!-- Free Talk Input -->
+            <div id="chat-container" style="display: none;">
+                <div id="chat-guide"></div>
+                <div id="chat-input-wrapper">
+                    <input type="text" id="chat-input" placeholder="Nachricht eingeben..." maxlength="100">
+                    <button id="chat-send" title="Senden">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                        </svg>
+                    </button>
+                    <button id="chat-skip-btn" title="Gespräch beenden">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="chat-turn-indicator">Verbleibende Runden: <span id="turn-count">3</span></div>
+            </div>
+
+            <!-- Settings Gear -->
+            <button id="settings-btn" class="settings-gear" onclick="openSettingsModal()" title="Einstellungen">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor"
+                        d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87a.49.49 0 0 0 .12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.49.49 0 0 0-.12-.61l-2.03-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Home Button (in-game, top center) -->
+            <button id="home-btn" onclick="showHomeConfirm()" title="Zurück zum Titel" style="display: none;">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Fade Layer -->
+        <div id="fade-layer">
+            <div id="tbc-text">Fortsetzung folgt</div>
+        </div>
+
+        <!-- Ending Credits Layer -->
+        <div id="credits-layer">
+            <div id="credits-content">
+                <div class="credits-title">CUPID</div>
+                <div class="credits-subtitle">Wo Amors Pfeil trifft</div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">Planung · Szenario</div>
+                    <div class="credits-name">Hyungyu Jang · Yujin Kim · Sanghun Lee</div>
+                </div>
+                <div class="credits-section">
+                    <div class="credits-role">Programmierung · Regie</div>
+                    <div class="credits-name">Hyungyu Jang · Yujin Kim</div>
+                </div>
+                <div class="credits-section">
+                    <div class="credits-role">Kunst · Design</div>
+                    <div class="credits-name">Hyungyu Jang · Yujin Kim</div>
+                </div>
+                <div class="credits-section">
+                    <div class="credits-role">Musik · Sound</div>
+                    <div class="credits-name">Hyungyu Jang</div>
+                </div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">Charaktere</div>
+                    <div class="credits-name">Seoyeon · Yuna · Dain</div>
+                    <div class="credits-name">Schulkrankenschwester · Klassenlehrer</div>
+                </div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">Produktion</div>
+                    <div class="credits-name">Hyungyu Jang · Yujin Kim</div>
+                </div>
+                <div class="credits-divider">─ ─ ─</div>
+                <div class="credits-section">
+                    <div class="credits-role">Besonderer Dank</div>
+                    <div class="credits-name">Vielen Dank fürs Spielen</div>
+                    <div class="credits-name">Wir sind Ihnen aufrichtig dankbar.</div>
+                </div>
+                <div class="credits-spacer"></div>
+                <div class="credits-final">Cupid © 2026 ArcherLab</div>
+                <div class="credits-final">Vielen Dank fürs Spielen</div>
+                <div class="credits-spacer"></div>
+            </div>
+        </div>
+
+        <!-- Image Zoom Modal -->
+        <div id="image-modal" class="modal-overlay" style="display: none;" onclick="this.style.display='none'">
+            <img id="image-modal-img" src="" alt="CUPID Spielbild"
+                style="max-width: 90%; max-height: 90%; border-radius: 10px; box-shadow: 0 0 30px rgba(0,0,0,0.5);">
+        </div>
+
+        <!-- Home Confirm Modal -->
+        <div id="homeConfirmModal" class="modal-overlay" style="display: none;" onclick="closeHomeConfirm(event)">
+            <div class="modal-container" onclick="event.stopPropagation()">
+                <h3 class="modal-title">Zurück zum Titel</h3>
+                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">Möchten Sie wirklich zum Titelbildschirm zurückkehren?<br><span style="color: #6b5b95; font-size: 0.9em;">(Ihr Fortschritt wird gespeichert)</span></p>
+                <div class="confirm-buttons">
+                    <button class="modal-btn cancel" onclick="closeHomeConfirm(event)">Abbrechen</button>
+                    <button class="modal-btn confirm" onclick="goToHome()">Bestätigen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom Modal -->
+        <div id="custom-modal" class="modal-overlay" style="display: none;">
+            <div class="modal-content">
+                <p id="modal-message"></p>
+                <div class="modal-buttons">
+                    <button id="modal-confirm-btn">OK</button>
+                    <button id="modal-cancel-btn">Abbrechen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal-overlay" onclick="closeSettingsModal(event)">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <h3 class="modal-title">Einstellungen</h3>
+            <div class="contact-options" style="text-align: left; padding: 0 20px;">
+                <label
+                    style="display: flex; align-items: center; justify-content: space-between; color: white; cursor: pointer;">
+                    <span> Zuneigungsanzeige anzeigen</span>
+                    <input type="checkbox" id="affinityToggle" checked style="transform: scale(1.5);">
+                </label>
+                <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">Zeigt die Zuneigungsstufen neben den Charakternamen an.</p>
+
+                <div style="margin-top: 20px;">
+                    <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
+                        <span> BGM-Lautstärke</span>
+                        <span id="bgmVolumeVal">50%</span>
+                    </div>
+                    <input type="range" id="bgmVolume" min="0" max="100" value="50"
+                        style="width: 100%; accent-color: #ff69b4;">
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
+                        <span> SFX-Lautstärke</span>
+                        <span id="sfxVolumeVal">50%</span>
+                    </div>
+                    <input type="range" id="sfxVolume" min="0" max="100" value="50"
+                        style="width: 100%; accent-color: #ff69b4;">
+                </div>
+            </div>
+            <button onclick="saveSettings()"
+                style="margin-top: 20px; background: #ff69b4; border: none; padding: 10px 30px; border-radius: 20px; color: white; cursor: pointer; font-size: 1rem;">Speichern</button>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal-overlay" onclick="closeContactModal(event)">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <div style="font-size: 2.5rem; margin-bottom: 5px;">💌</div>
+            <h3 class="modal-title">Kontakt</h3>
+            <p style="color: #999; font-size: 0.85rem; margin: 0 0 5px;">Fragen oder Feedback? Kontaktieren Sie uns!</p>
+            <div class="contact-options">
+                <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option kakao">
+                    <span class="contact-option-icon">💬</span>
+                    <span class="contact-option-text">
+                        <span class="contact-option-label">KakaoTalk Open Chat</span>
+                        <span class="contact-option-desc">In Echtzeit mit uns chatten</span>
+                    </span>
+                </a>
+                <a href="mailto:hyungyu@archerlab.dev" class="contact-option email">
+                    <span class="contact-option-icon">📧</span>
+                    <span class="contact-option-text">
+                        <span class="contact-option-label">E-Mail senden</span>
+                        <span class="contact-option-desc">hyungyu@archerlab.dev</span>
+                    </span>
+                </a>
+            </div>
+            <button onclick="closeContactModal()" class="contact-close-btn">Schließen</button>
+        </div>
+    </div>
+
+    <script>window.preventAutoStart = true;</script>
+
+    <!-- Game Scripts (Dynamic Loader) -->
+    <script src="assets/js/loaders/game-loader.js"></script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => { soundManager.init(); });
+
+        async function startGame() {
+            const continueBtn = document.getElementById('continue-btn');
+            if (continueBtn && !continueBtn.disabled) {
+                const modal = document.getElementById('newGameConfirmModal');
+                if (modal) modal.style.display = 'flex';
+                return;
+            }
+            await launchNewGame();
+        }
+
+        function closeNewGameConfirm(e) {
+            if (e && e.target !== e.currentTarget && e.target.id !== 'newGameConfirmModal') return;
+            const modal = document.getElementById('newGameConfirmModal');
+            if (modal) modal.style.display = 'none';
+        }
+
+        async function confirmNewGame() {
+            const modal = document.getElementById('newGameConfirmModal');
+            if (modal) modal.style.display = 'none';
+            await launchNewGame();
+        }
+
+        async function launchNewGame() {
+            soundManager.playBgm('assets/audio/bgm/intro.mp3');
+            document.getElementById('landing-container').style.display = 'none';
+            document.querySelector('.lang-switch').style.display = 'none';
+            document.getElementById('game-container').style.display = 'block';
+            if (window.initGame) await window.initGame();
+
+            const homeBtn = document.getElementById('home-btn');
+            if (homeBtn) {
+                homeBtn.style.display = 'flex';
+            }
+        }
+
+        function showHomeConfirm() {
+            const homeModal = document.getElementById('homeConfirmModal');
+            if (homeModal) {
+                homeModal.style.display = 'flex';
+            }
+        }
+
+        function closeHomeConfirm(e) {
+            if (e && e.target !== e.currentTarget && e.target.id !== 'homeConfirmModal') return;
+            const homeModal = document.getElementById('homeConfirmModal');
+            if (homeModal) {
+                homeModal.style.display = 'none';
+            }
+        }
+
+        function goToHome() {
+            if (window.saveGameState) {
+                window.saveGameState();
+            }
+            if (window.soundManager) {
+                soundManager.stopBgm();
+            }
+            window.location.reload();
+        }
+
+        async function continueGame() {
+            const saveData = window.loadGameState ? window.loadGameState() : null;
+            if (!saveData) {
+                alert('Kein gespeicherter Spielstand gefunden.');
+                return;
+            }
+
+            soundManager.playBgm('assets/audio/bgm/intro.mp3');
+            document.getElementById('landing-container').style.display = 'none';
+            document.querySelector('.lang-switch').style.display = 'none';
+            document.getElementById('game-container').style.display = 'block';
+
+            if (window.initGameFromSave) {
+                await window.initGameFromSave(saveData);
+            }
+
+            const homeBtn = document.getElementById('home-btn');
+            if (homeBtn) {
+                homeBtn.style.display = 'flex';
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const continueBtn = document.getElementById('continue-btn');
+                if (continueBtn && window.hasSavedGame && window.hasSavedGame()) {
+                    continueBtn.disabled = false;
+                    continueBtn.style.opacity = '1';
+                    continueBtn.style.cursor = 'pointer';
+                }
+            }, 100);
+        });
+
+        function openSettingsModal() {
+            document.getElementById('settingsModal').classList.add('is-open');
+            const savedSetting = localStorage.getItem('showAffinity');
+            document.getElementById('affinityToggle').checked = savedSetting === null ? true : savedSetting === 'true';
+            const bgmVol = localStorage.getItem('bgmVolume') || 0.5;
+            const sfxVol = localStorage.getItem('sfxVolume') || 0.5;
+            document.getElementById('bgmVolume').value = bgmVol * 100;
+            document.getElementById('sfxVolume').value = sfxVol * 100;
+            document.getElementById('bgmVolumeVal').textContent = Math.round(bgmVol * 100) + '%';
+            document.getElementById('sfxVolumeVal').textContent = Math.round(sfxVol * 100) + '%';
+        }
+
+        window.addEventListener('input', (e) => {
+            if (e.target.id === 'bgmVolume') {
+                const vol = e.target.value / 100;
+                document.getElementById('bgmVolumeVal').textContent = e.target.value + '%';
+                if (window.soundManager) soundManager.setBgmVolume(vol);
+            } else if (e.target.id === 'sfxVolume') {
+                const vol = e.target.value / 100;
+                document.getElementById('sfxVolumeVal').textContent = e.target.value + '%';
+                if (window.soundManager) soundManager.setSfxVolume(vol);
+            }
+        });
+
+        function closeSettingsModal(e) {
+            if (e && e.target !== e.currentTarget && e.target.id !== 'settingsModal') return;
+            document.getElementById('settingsModal').classList.remove('is-open');
+        }
+
+        function saveSettings() {
+            localStorage.setItem('showAffinity', document.getElementById('affinityToggle').checked);
+            if (window.soundManager) {
+                soundManager.setBgmVolume(document.getElementById('bgmVolume').value / 100);
+                soundManager.setSfxVolume(document.getElementById('sfxVolume').value / 100);
+            }
+            closeSettingsModal();
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const settingsBtn = document.getElementById('landing-settings-btn');
+            if (settingsBtn) settingsBtn.addEventListener('click', openSettingsModal);
+        });
+
+        function openContactModal() { document.getElementById('contactModal').classList.add('is-open'); }
+        function closeContactModal() { document.getElementById('contactModal').classList.remove('is-open'); }
+
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; });
+        function installApp() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then(() => { deferredPrompt = null; });
+            } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                alert('Auf iOS tippen Sie auf [Teilen] und dann auf [Zum Startbildschirm hinzufügen].');
+            } else {
+                alert('Bereits installiert oder Browser nicht unterstützt.');
+            }
+        }
+
+        // Language combo box
+        function toggleLangCombo() {
+            document.getElementById('langCombo').classList.toggle('open');
+        }
+        document.addEventListener('click', function(e) {
+            const combo = document.getElementById('langCombo');
+            if (combo && !combo.contains(e.target)) {
+                combo.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+
+</html>
