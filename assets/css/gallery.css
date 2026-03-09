@@ -205,7 +205,7 @@ body::-webkit-scrollbar-thumb:hover {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     overflow: hidden;
-    min-width: 140px;
+    min-width: 160px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     z-index: 100;
 }
@@ -231,6 +231,8 @@ body::-webkit-scrollbar-thumb:hover {
     transition: background 0.15s;
     cursor: pointer;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .lang-combo-option:hover {
@@ -1399,7 +1401,7 @@ body::-webkit-scrollbar-thumb:hover {
     .tab-btn {
         padding: 10px 14px;
         font-size: 0.8rem;
-        white-space: nowrap;
+        text-align: center;
     }
 
     .tab-nav {
