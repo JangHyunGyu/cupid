@@ -267,6 +267,9 @@ html {
     color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
     z-index: 1;
     pointer-events: none;
 }
@@ -336,6 +339,8 @@ html[lang="fr"] #message {
     cursor: pointer;
     transition: all 0.2s;
     text-align: center;
+    word-break: keep-all;
+    overflow-wrap: break-word;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -777,7 +782,7 @@ html[lang="fr"] #message {
     }
 
     #dialogue-box {
-        min-height: 80px;
+        min-height: 100px;
         padding: 10px 20px;
         margin-bottom: 5px;
         bottom: 5px;
@@ -945,6 +950,7 @@ html[lang="fr"] #message {
     cursor: pointer;
     transition: background 0.2s;
     white-space: nowrap;
+    min-width: fit-content;
     flex-shrink: 0;
 }
 
