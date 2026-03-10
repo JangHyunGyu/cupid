@@ -1486,17 +1486,18 @@ HAREM: "이건 지옥의 시작일지도 모른다. 근데 이 순간만큼은 �
 
 ## 부록: 프리톡 노드 전체 목록
 
-### Day 1 (7개)
+### Day 1 (6개)
 
 | 노드 ID | 캐릭터 | 위치 | 비고 |
 |---------|--------|------|------|
 | hallway_free_talk | 서연 | 복도 | 학교 투어 3턴 |
 | teacher_free_talk | 담임 | 교실 | 자기소개 전 3턴 |
 | rooftop_free_talk | 서연 | 옥상 | 도시락 후 3턴 |
-| seyoun_contact_exchange | 서연 | 옥상 | 연락처 교환 전 3턴 |
 | yuna_free_talk | 유나 | 도서관 별관 | 첫 만남 3턴 |
 | nurse_free_talk_day1 | 보건 | 보건실 | 첫 방문 3턴 |
 | dain_free_talk | 다인 | 체육관 | 방과후 연습 3턴 |
+
+> ※ `seyoun_contact_exchange`는 연락처 교환 장면으로, 프리톡이 아닌 스크립트 대화로 진행.
 
 ### Day 2 (9개)
 

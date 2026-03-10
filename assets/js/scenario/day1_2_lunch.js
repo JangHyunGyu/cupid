@@ -519,7 +519,6 @@ Object.assign(SCENARIO[1], {
         "next": "seyoun_contact_exchange"
     },
     "seyoun_contact_exchange": {
-        "type": "free_talk",
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "affinityChar": "Seoyeon",
