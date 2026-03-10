@@ -161,8 +161,8 @@ class SoundManager {
 
         // BGM 갤러리 해금
         const bgmId = path.split('/').pop().replace('.mp3', '').replace('.ogg', '');
-        if (typeof unlockBGM === 'function') {
-            unlockBGM(bgmId);
+        if (window.gameEngine?.galleryManager) {
+            window.gameEngine.galleryManager.unlockBGM(bgmId);
         }
 
         // 기존 BGM 페이드 아웃

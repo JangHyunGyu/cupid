@@ -657,8 +657,8 @@ class GameEngine {
         // 📌 4단계: 씬 이동 실행
         // ─────────────────────────────────────────────────────────
         if (nextScene === 'index.html') {
-            // 메인 메뉴로 돌아가기 (게임 종료)
-            location.href = 'index.html';
+            // 메인 메뉴로 돌아가기 (게임 종료) - 현재 언어에 맞는 index 페이지로 이동
+            this.uiManager.goToHome();
         } else {
             // 다음 씬 렌더링
             await this.renderScene(nextScene);
@@ -801,7 +801,14 @@ class GameEngine {
 
         // 씬이 없으면 HTML 페이지 이동인지 확인
         if (!scene) {
-            if (sceneId?.endsWith('.html')) window.location.href = sceneId;
+            if (sceneId?.endsWith('.html')) {
+                // index.html 계열은 언어별 라우팅 적용
+                if (sceneId === 'index.html') {
+                    this.uiManager.goToHome();
+                } else {
+                    window.location.href = sceneId;
+                }
+            }
             return;
         }
 
