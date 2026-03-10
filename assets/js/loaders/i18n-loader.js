@@ -36,18 +36,27 @@
     
     // We must await these fetches before GameEngine starts.
     // However, this script is loaded synchronously via document.write, while fetch is async.
-    // We can delay window.initGame().
-    const originalInitGame = window.initGame;
-    window.initGame = async function() {
-        await Promise.all(fetchPromises);
-        await originalInitGame();
-    };
+    // Store the i18n ready promise globally so that initGame/initGameFromSave can await it.
+    // This avoids the race condition where window.initGame is not yet defined when this script runs.
+    window._i18nReady = Promise.all(fetchPromises);
 
-    const originalInitGameFromSave = window.initGameFromSave;
-    if (originalInitGameFromSave) {
-        window.initGameFromSave = async function() {
-            await Promise.all(fetchPromises);
-            await originalInitGameFromSave();
-        };
-    }
+    // Patch initGame/initGameFromSave after all scripts have loaded (deferred).
+    // By the time DOMContentLoaded fires, index.js has already defined window.initGame.
+    document.addEventListener('DOMContentLoaded', function() {
+        const originalInitGame = window.initGame;
+        if (typeof originalInitGame === 'function') {
+            window.initGame = async function() {
+                await window._i18nReady;
+                await originalInitGame();
+            };
+        }
+
+        const originalInitGameFromSave = window.initGameFromSave;
+        if (typeof originalInitGameFromSave === 'function') {
+            window.initGameFromSave = async function() {
+                await window._i18nReady;
+                await originalInitGameFromSave();
+            };
+        }
+    });
 })();
