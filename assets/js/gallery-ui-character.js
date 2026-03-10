@@ -193,7 +193,8 @@ class CharacterRenderer {
                     'You haven\'t met this character yet.<br>Play the game to meet them!',
                     'Aún no has conocido a este personaje.<br>¡Juega para conocerlo!',
                     'まだこのキャラクターに出会っていません。<br>ゲームを進めてキャラクターに会いましょう！',
-                    'Vous n\'avez pas encore rencontré ce personnage.<br>Jouez pour le rencontrer !'
+                    'Vous n\'avez pas encore rencontré ce personnage.<br>Jouez pour le rencontrer !',
+                    'Du hast diesen Charakter noch nicht getroffen.<br>Spiele das Spiel, um ihn kennenzulernen!'
                 ),
                 icon: '❓'
             });
@@ -336,7 +337,8 @@ class CharacterRenderer {
             en: { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Body Size', hobby: 'Hobby' },
             es: { age: 'Edad', birthday: 'Cumpleaños', height: 'Altura', weight: 'Peso', bust: 'Talla', hobby: 'Pasatiempo' },
             ja: { age: '年齢', birthday: '誕生日', height: '身長', weight: '体重', bust: '身体サイズ', hobby: '趣味' },
-            fr: { age: 'Âge', birthday: 'Anniversaire', height: 'Taille', weight: 'Poids', bust: 'Mensurations', hobby: 'Loisir' }
+            fr: { age: 'Âge', birthday: 'Anniversaire', height: 'Taille', weight: 'Poids', bust: 'Mensurations', hobby: 'Loisir' },
+            de: { age: 'Alter', birthday: 'Geburtstag', height: 'Größe', weight: 'Gewicht', bust: 'Körpermaße', hobby: 'Hobby' }
         }[this.ui.lang] || { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Body Size', hobby: 'Hobby' };
 
         const lockText = '🔒';
@@ -422,7 +424,8 @@ class CharacterRenderer {
                 `Clear the TRUE LOVE ending<br>while dating ${charName}<br>to unlock chat`,
                 `Completa el final TRUE LOVE<br>mientras sales con ${charName}<br>para desbloquear el chat`,
                 `${charName}と恋人になった状態で<br>TRUE LOVEエンディングをクリアすると<br>会話できるようになります`,
-                `Terminez la fin TRUE LOVE<br>en sortant avec ${charName}<br>pour débloquer la discussion`
+                `Terminez la fin TRUE LOVE<br>en sortant avec ${charName}<br>pour débloquer la discussion`,
+                `Schließe das TRUE LOVE-Ende ab,<br>während du mit ${charName} zusammen bist,<br>um den Chat freizuschalten`
             ),
             icon: '🔒'
         });

@@ -232,7 +232,8 @@ class GalleryUI {
                 `To unlock "${exprName}" expression,<br>you need ${requiredAffinity} affinity.<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: ${requiredAffinity}</span>`,
                 `Para desbloquear la expresión "${exprName}",<br>necesitas ${requiredAffinity} de afinidad.<br><br><span class="condition-line">💕 Afinidad máxima: ${currentAffinity}</span><span class="condition-line">🎯 Requerida: ${requiredAffinity}</span>`,
                 `「${exprName}」の表情を解放するには<br>好感度${requiredAffinity}が必要です。<br><br><span class="condition-line">💕 最大好感度: ${currentAffinity}</span><span class="condition-line">🎯 必要好感度: ${requiredAffinity}</span>`,
-                `Pour débloquer l'expression « ${exprName} »,<br>vous avez besoin de ${requiredAffinity} d'affinité.<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}</span><span class="condition-line">🎯 Requise : ${requiredAffinity}</span>`
+                `Pour débloquer l'expression « ${exprName} »,<br>vous avez besoin de ${requiredAffinity} d'affinité.<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}</span><span class="condition-line">🎯 Requise : ${requiredAffinity}</span>`,
+                `Um den Ausdruck „${exprName}" freizuschalten,<br>benötigst du ${requiredAffinity} Zuneigung.<br><br><span class="condition-line">💕 Max. Zuneigung: ${currentAffinity}</span><span class="condition-line">🎯 Benötigt: ${requiredAffinity}</span>`
             ),
             icon: '🔒'
         });
@@ -259,7 +260,8 @@ class GalleryUI {
                 `To see ${charName}'s special look,<br>you need to achieve both conditions!<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Free Talks: ${freeTalkCount}/100 ${talkStatus}</span>`,
                 `Para ver el look especial de ${charName},<br>¡debes cumplir ambas condiciones!<br><br><span class="condition-line">💕 Afinidad máxima: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Charlas libres: ${freeTalkCount}/100 ${talkStatus}</span>`,
                 `${charName}の特別な姿を見るには<br>2つの条件を両方達成する必要があります！<br><br><span class="condition-line">💕 最大好感度: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 フリートーク: ${freeTalkCount}/100回 ${talkStatus}</span>`,
-                `Pour voir le look spécial de ${charName},<br>vous devez remplir les deux conditions !<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Discussions libres : ${freeTalkCount}/100 ${talkStatus}</span>`
+                `Pour voir le look spécial de ${charName},<br>vous devez remplir les deux conditions !<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Discussions libres : ${freeTalkCount}/100 ${talkStatus}</span>`,
+                `Um ${charName}s besonderes Aussehen zu sehen,<br>musst du beide Bedingungen erfüllen!<br><br><span class="condition-line">💕 Max. Zuneigung: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Freie Gespräche: ${freeTalkCount}/100 ${talkStatus}</span>`
             ),
             icon: '👙'
         });
@@ -282,7 +284,8 @@ class GalleryUI {
                 `To view ${char.name}'s full description,<br>you need 80 affinity.<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: 80</span>`,
                 `Para ver la descripción completa de ${char.name},<br>necesitas 80 de afinidad.<br><br><span class="condition-line">💕 Afinidad máxima: ${currentAffinity}</span><span class="condition-line">🎯 Requerida: 80</span>`,
                 `${char.name}の全紹介を見るには<br>好感度80が必要です。<br><br><span class="condition-line">💕 最大好感度: ${currentAffinity}</span><span class="condition-line">🎯 必要好感度: 80</span>`,
-                `Pour voir la description complète de ${char.name},<br>vous avez besoin de 80 d'affinité.<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}</span><span class="condition-line">🎯 Requise : 80</span>`
+                `Pour voir la description complète de ${char.name},<br>vous avez besoin de 80 d'affinité.<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}</span><span class="condition-line">🎯 Requise : 80</span>`,
+                `Um ${char.name}s vollständige Beschreibung zu sehen,<br>benötigst du 80 Zuneigung.<br><br><span class="condition-line">💕 Max. Zuneigung: ${currentAffinity}</span><span class="condition-line">🎯 Benötigt: 80</span>`
             ),
             icon: '📖'
         });
@@ -307,7 +310,8 @@ class GalleryUI {
                     `To view ${charName}'s weight,<br>you need 80 affinity.<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: 80</span>`,
                     `Para ver el peso de ${charName},<br>necesitas 80 de afinidad.<br><br><span class="condition-line">💕 Afinidad máxima: ${currentAffinity}</span><span class="condition-line">🎯 Requerida: 80</span>`,
                     `${charName}の体重を見るには<br>好感度80が必要です。<br><br><span class="condition-line">💕 最大好感度: ${currentAffinity}</span><span class="condition-line">🎯 必要好感度: 80</span>`,
-                    `Pour voir le poids de ${charName},<br>vous avez besoin de 80 d'affinité.<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}</span><span class="condition-line">🎯 Requise : 80</span>`
+                    `Pour voir le poids de ${charName},<br>vous avez besoin de 80 d'affinité.<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}</span><span class="condition-line">🎯 Requise : 80</span>`,
+                    `Um ${charName}s Gewicht zu sehen,<br>benötigst du 80 Zuneigung.<br><br><span class="condition-line">💕 Max. Zuneigung: ${currentAffinity}</span><span class="condition-line">🎯 Benötigt: 80</span>`
                 ),
                 icon: '⚖️'
             });
@@ -319,7 +323,8 @@ class GalleryUI {
                     `To view ${charName}'s body size,<br>you need 100 affinity.<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}</span><span class="condition-line">🎯 Required: 100</span>`,
                     `Para ver la talla de ${charName},<br>necesitas 100 de afinidad.<br><br><span class="condition-line">💕 Afinidad máxima: ${currentAffinity}</span><span class="condition-line">🎯 Requerida: 100</span>`,
                     `${charName}の身体サイズを見るには<br>好感度100が必要です。<br><br><span class="condition-line">💕 最大好感度: ${currentAffinity}</span><span class="condition-line">🎯 必要好感度: 100</span>`,
-                    `Pour voir les mensurations de ${charName},<br>vous avez besoin de 100 d'affinité.<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}</span><span class="condition-line">🎯 Requise : 100</span>`
+                    `Pour voir les mensurations de ${charName},<br>vous avez besoin de 100 d'affinité.<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}</span><span class="condition-line">🎯 Requise : 100</span>`,
+                    `Um ${charName}s Körpermaße zu sehen,<br>benötigst du 100 Zuneigung.<br><br><span class="condition-line">💕 Max. Zuneigung: ${currentAffinity}</span><span class="condition-line">🎯 Benötigt: 100</span>`
                 ),
                 icon: '💝'
             });

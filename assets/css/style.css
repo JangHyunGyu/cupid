@@ -290,7 +290,8 @@ html {
 html[lang="es"] #message,
 html[lang="ja"] #message,
 html[lang="en"] #message,
-html[lang="fr"] #message {
+html[lang="fr"] #message,
+html[lang="de"] #message {
     word-break: normal;
 }
 
@@ -1027,7 +1028,8 @@ html[lang="fr"] #message {
 html[lang="es"] .modal-content p,
 html[lang="ja"] .modal-content p,
 html[lang="en"] .modal-content p,
-html[lang="fr"] .modal-content p {
+html[lang="fr"] .modal-content p,
+html[lang="de"] .modal-content p {
     word-break: normal;
 }
 

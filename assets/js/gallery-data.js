@@ -458,6 +458,85 @@ class GalleryData {
                 personality: 'Espiègle, Mature',
                 expressions: ['normal', 'shy', 'angry', 'bikini']
             }
+        },
+
+        // ===== 독일어 데이터 (German Data) =====
+        de: {
+            seyoun: {
+                id: 'seyoun',
+                name: 'Seoyeon',
+                title: 'Die perfekte Präsidentin',
+                shortDescription: 'Eine perfekte Schülerratspräsidentin, die zu allen freundlich ist.',
+                description: 'Eine perfekte Schülerratspräsidentin, die zu allen freundlich ist. In Wirklichkeit wird sie leicht einsam und wird sehr schüchtern, wenn sie mit dir allein ist. Sie schätzt Regeln, möchte sie aber manchmal für dich brechen.',
+                age: '18 Jahre',
+                birthday: '14. März',
+                height: '165cm',
+                weight: '48kg',
+                bust: '34-22-35 65E',
+                hobby: 'Musik, Lesen',
+                personality: 'Megadere, Schüchtern',
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+            },
+            yuna: {
+                id: 'yuna',
+                name: 'Yuna',
+                title: 'Geheimnisvolle Kuudere',
+                shortDescription: 'Der Inbegriff einer kalten, ausdruckslosen Kuudere.',
+                description: 'Der Inbegriff einer kalten, ausdruckslosen Kuudere. Zeigt tiefes, obsessives Interesse an deinem „besonderen Licht". Bekannt für gelegentliche geheimnisvolle und herzklopfende Bemerkungen. Strahlt eine Aura aus, dich beschützen zu wollen.',
+                age: '18 Jahre',
+                birthday: '22. Juli',
+                height: '162cm',
+                weight: '47kg',
+                bust: '33-21-34 65E',
+                hobby: 'Sternbeobachtung, Poesie',
+                personality: 'Kuudere, Geheimnisvoll',
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+            },
+            dain: {
+                id: 'dain',
+                name: 'Dain',
+                title: 'Sonnige Sandkastenfreundin',
+                shortDescription: 'Eine fröhliche und lebhafte Tsundere mit fürsorglicher Seite.',
+                description: 'Eine fröhliche und lebhafte „fürsorgliche" Tsundere. Behandelt dich wie einen engen Freund, wird aber in romantischen Momenten schnell rot und verlegen. Ehrlich mit ihren Gefühlen, aber unbeholfen im Ausdruck.',
+                age: '18 Jahre',
+                birthday: '25. Dezember',
+                height: '158cm',
+                weight: '46kg',
+                bust: '35-23-36 65F',
+                hobby: 'Kochen, Sport',
+                personality: 'Tsundere, Fröhlich',
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+            },
+            teacher: {
+                id: 'teacher',
+                name: 'Frau Lehrerin',
+                title: 'Die tollpatschige Lehrerin',
+                shortDescription: 'Eine professionelle Lehrerin, die Beruf und Privatleben trennt.',
+                description: 'Eine professionelle Lehrerin, die Beruf und Privatleben trennt, aber in Wirklichkeit eine tollpatschige Seite hat. Ihr Herz schlägt schneller bei deinen unerwartet reifen Momenten. Ein charmanter Kontrast – sie möchte sich heimlich auf dich verlassen.',
+                age: '28 Jahre',
+                birthday: '5. Mai',
+                height: '170cm',
+                weight: '58kg',
+                bust: '38-24-38 70G',
+                hobby: 'Lesen, Filme',
+                personality: 'Professionell, Tollpatschig',
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+            },
+            nurse: {
+                id: 'nurse',
+                name: 'Schulkrankenschwester',
+                title: 'Verspielte Schulkrankenschwester',
+                shortDescription: 'Eine reife und verspielte Schulkrankenschwester.',
+                description: 'Eine reife und verspielte Schulkrankenschwester. Neckt dich gerne mit provokanten Worten, kümmert sich aber in Wirklichkeit mehr als jeder andere um die Schüler und beschützt sie. Findet deine verlegenen Reaktionen entzückend.',
+                age: '26 Jahre',
+                birthday: '12. September',
+                height: '168cm',
+                weight: '60kg',
+                bust: '40-24-40 70H',
+                hobby: 'Gartenarbeit, Meditation',
+                personality: 'Verspielt, Reif',
+                expressions: ['normal', 'shy', 'angry', 'bikini']
+            }
         }
     };
 
@@ -561,6 +640,25 @@ class GalleryData {
             active: 'Dynamique',
             sweat: 'Nerveuse',
             bikini: 'Bikini'
+        },
+
+        // 독일어 표정 이름
+        de: {
+            normal: 'Normal',
+            shy: 'Schüchtern',
+            shy2: 'Schüchtern 2',
+            angry: 'Wütend',
+            sad: 'Traurig',
+            laugh: 'Lachen',
+            cry: 'Weinen',
+            pout: 'Schmollen',
+            worried: 'Besorgt',
+            back: 'Rückansicht',
+            smile: 'Lächeln',
+            bored: 'Gelangweilt',
+            active: 'Aktiv',
+            sweat: 'Nervös',
+            bikini: 'Bikini'
         }
     };
 
@@ -625,6 +723,16 @@ class GalleryData {
                 name: 'Moment spécial avec l\'Infirmière',
                 character: 'Infirmière',
                 description: 'Un événement spécial chez l\'infirmière',
+                file: 'assets/images/background/nurse_home_event1.png',
+                thumbnail: 'assets/images/background/nurse_home_event1.png'
+            }
+        ],
+        de: [
+            {
+                id: 'nurse_home_event1',
+                name: 'Besonderer Moment mit der Krankenschwester',
+                character: 'Schulkrankenschwester',
+                description: 'Ein besonderes Ereignis im Zuhause der Krankenschwester',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
             }
@@ -714,6 +822,20 @@ class GalleryData {
             { id: 'mystery', name: 'Aura Suspecte', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
             { id: 'confession', name: 'Confession', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
             { id: 'ending', name: 'Thème de Fin', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
+        ],
+        de: [
+            { id: 'intro', name: 'Hauptthema', artist: 'Cupid OST', duration: '2:30', file: 'assets/audio/bgm/intro.mp3' },
+            { id: 'morning', name: 'Frischer Morgen', artist: 'Cupid OST', duration: '3:25', file: 'assets/audio/bgm/morning.mp3' },
+            { id: 'daily', name: 'Schulalltag', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
+            { id: 'daily2', name: 'Friedlicher Nachmittag', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
+            { id: 'sunset1', name: 'Heimweg im Sonnenuntergang', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
+            { id: 'sunset2', name: 'Romantischer Moment', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: 'Herzklopfen-Date', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'night1', name: 'Stille Nacht', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
+            { id: 'night2', name: 'Geheimnisvolle Nacht', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
+            { id: 'mystery', name: 'Verdächtige Aura', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
+            { id: 'confession', name: 'Liebesgeständnis', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
+            { id: 'ending', name: 'Abschlussthema', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
         ]
     };
 
@@ -798,7 +920,8 @@ class GalleryData {
             ...this.cg.en.map(cg => cg.id),
             ...(this.cg.es || []).map(cg => cg.id),
             ...(this.cg.ja || []).map(cg => cg.id),
-            ...(this.cg.fr || []).map(cg => cg.id)
+            ...(this.cg.fr || []).map(cg => cg.id),
+            ...(this.cg.de || []).map(cg => cg.id)
         ]);
     }
 
