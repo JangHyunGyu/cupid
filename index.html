@@ -6,8 +6,9 @@
     <script>
     (function () {
         try {
+            if (/bot|crawl|spider|slurp|facebookexternalhit|mediapartners/i.test(navigator.userAgent)) return;
             var K = 'cupid:language', P = 'ko';
-            var M = { ko: 'index.html', en: 'index-en.html', es: 'index-es.html', ja: 'index-ja.html', fr: 'index-fr.html', de: 'index-de.html' };
+            var M = { ko: '/', en: 'index-en', es: 'index-es', ja: 'index-ja', fr: 'index-fr', de: 'index-de' };
             var s = localStorage.getItem(K);
             if (!s) {
                 s = (navigator.language || '').split('-')[0].toLowerCase();
@@ -63,11 +64,11 @@
     <meta name="keywords" content="설치 없는 미연시, 웹 브라우저 미연시, 모바일 웹 미연시, 회원가입 없는 게임, AI 스토리 게임, 학교 컴퓨터실 게임, AI 비주얼 노벨, AI 미연시, 무료 미연시, 비주얼 노벨, 학원 로맨스, Cupid">
     <meta name="naver-site-verification" content="d1b1d31619e3752f70e28ef54cb08b49698ccf66" />
     <link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/" />
-    <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en.html" />
-    <link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/index-es.html" />
-    <link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/index-ja.html" />
-    <link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/index-fr.html" />
-    <link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/index-de.html" />
+    <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en" />
+    <link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/index-es" />
+    <link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/index-ja" />
+    <link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/index-fr" />
+    <link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/index-de" />
     <link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/" />
     <link rel="canonical" href="https://cupid.archerlab.dev/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -687,19 +688,19 @@
                 <div class="lang-combo-option active">
                     <span class="lang-flag">🇰🇷</span> 한국어
                 </div>
-                <a href="index-en.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','en')">
+                <a href="index-en" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','en')">
                     <span class="lang-flag">🇺🇸</span> English
                 </a>
-                <a href="index-es.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','es')">
+                <a href="index-es" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','es')">
                     <span class="lang-flag">🇪🇸</span> Español
                 </a>
-                <a href="index-ja.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
+                <a href="index-ja" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
                     <span class="lang-flag">🇯🇵</span> 日本語
                 </a>
-                <a href="index-fr.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
+                <a href="index-fr" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
                     <span class="lang-flag">🇫🇷</span> Français
                 </a>
-                <a href="index-de.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','de')">
+                <a href="index-de" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','de')">
                     <span class="lang-flag">🇩🇪</span> Deutsch
                 </a>
             </div>

@@ -6,8 +6,9 @@
     <script>
     (function () {
         try {
+            if (/bot|crawl|spider|slurp|facebookexternalhit|mediapartners/i.test(navigator.userAgent)) return;
             var K = 'cupid:language', P = 'en';
-            var M = { ko: 'index.html', en: 'index-en.html', es: 'index-es.html', ja: 'index-ja.html', fr: 'index-fr.html', de: 'index-de.html' };
+            var M = { ko: '/', en: 'index-en', es: 'index-es', ja: 'index-ja', fr: 'index-fr', de: 'index-de' };
             var s = localStorage.getItem(K);
             if (!s) {
                 s = (navigator.language || '').split('-')[0].toLowerCase();
@@ -65,18 +66,18 @@
         content="no install dating sim, web browser dating sim, mobile web visual novel, no sign up game, AI story game, school computer game, AI visual novel, AI dating sim, free visual novel, browser game, Cupid">
     <meta name="naver-site-verification" content="d1b1d31619e3752f70e28ef54cb08b49698ccf66" />
     <link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/" />
-    <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en.html" />
-    <link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/index-es.html" />
-    <link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/index-ja.html" />
-    <link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/index-fr.html" />
-    <link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/index-de.html" />
+    <link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/index-en" />
+    <link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/index-es" />
+    <link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/index-ja" />
+    <link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/index-fr" />
+    <link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/index-de" />
     <link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/" />
-    <link rel="canonical" href="https://cupid.archerlab.dev/index-en.html" />
+    <link rel="canonical" href="https://cupid.archerlab.dev/index-en" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cupid.archerlab.dev/index-en.html">
+    <meta property="og:url" content="https://cupid.archerlab.dev/index-en">
     <meta property="og:title" content="Cupid: Free AI Visual Novel - No Install Web Browser Dating Sim">
     <meta property="og:description"
         content="Play Cupid, a free AI visual novel — no install, no download, no sign-up. Play on mobile or desktop browser. AI generates unique storylines every time.">
@@ -84,7 +85,7 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://cupid.archerlab.dev/index-en.html">
+    <meta property="twitter:url" content="https://cupid.archerlab.dev/index-en">
     <meta property="twitter:title" content="Cupid: Free AI Visual Novel - No Install Web Browser Dating Sim">
     <meta property="twitter:description"
         content="Play Cupid, a free AI visual novel — no install, no download, no sign-up. Play on mobile or desktop browser. AI generates unique storylines every time.">
@@ -97,10 +98,10 @@
         "@graph": [
             {
                 "@type": "VideoGame",
-                "@id": "https://cupid.archerlab.dev/index-en.html#game",
+                "@id": "https://cupid.archerlab.dev/index-en#game",
                 "name": "Cupid",
                 "alternateName": "Cupid: Free AI Visual Novel",
-                "url": "https://cupid.archerlab.dev/index-en.html",
+                "url": "https://cupid.archerlab.dev/index-en",
                 "description": "Play Cupid, a free AI visual novel — no install, no download, no sign-up. Play on mobile or desktop browser. AI generates unique storylines every time.",
                 "inLanguage": "en",
                 "genre": ["AI Visual Novel", "Visual Novel", "Dating Simulation", "Romance"],
@@ -124,7 +125,7 @@
             {
                 "@type": "WebSite",
                 "@id": "https://cupid.archerlab.dev/#website",
-                "url": "https://cupid.archerlab.dev/index-en.html",
+                "url": "https://cupid.archerlab.dev/index-en",
                 "name": "Cupid - Free AI Visual Novel",
                 "inLanguage": "en"
             }
@@ -693,16 +694,16 @@
                 <div class="lang-combo-option active">
                     <span class="lang-flag">🇺🇸</span> English
                 </div>
-                <a href="index-es.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','es')">
+                <a href="index-es" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','es')">
                     <span class="lang-flag">🇪🇸</span> Español
                 </a>
-                <a href="index-ja.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
+                <a href="index-ja" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','ja')">
                     <span class="lang-flag">🇯🇵</span> 日本語
                 </a>
-                <a href="index-fr.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
+                <a href="index-fr" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','fr')">
                     <span class="lang-flag">🇫🇷</span> Français
                 </a>
-                <a href="index-de.html" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','de')">
+                <a href="index-de" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','de')">
                     <span class="lang-flag">🇩🇪</span> Deutsch
                 </a>
             </div>

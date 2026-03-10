@@ -561,7 +561,7 @@ class UIManager {
     goToHome() {
         if (window.soundManager) soundManager.stopBgm();
         const lang = document.documentElement.lang || 'ko';
-        window.location.href = { es: 'index-es.html', ja: 'index-ja.html', en: 'index-en.html', fr: 'index-fr.html', de: 'index-de.html' }[lang] || 'index.html';
+        window.location.href = { es: '/index-es', ja: '/index-ja', en: '/index-en', fr: '/index-fr', de: '/index-de' }[lang] || '/';
     }
 
     /**
