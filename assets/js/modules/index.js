@@ -153,6 +153,8 @@ window.loadGameState = () => {
 if (!window.preventAutoStart) {
     window.addEventListener('DOMContentLoaded', async () => {
         try {
+            // i18n 데이터 로딩 완료 대기 (비한국어 페이지에서 번역 누락 방지)
+            if (window._i18nReady) await window._i18nReady;
             gameEngine = new GameEngine();  // 게임 엔진 생성
             window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
             soundManager.init();             // 사운드 매니저 초기화
