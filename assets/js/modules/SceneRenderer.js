@@ -192,7 +192,10 @@ class SceneRenderer {
         }
 
         // 분기 없으면 단순히 next 반환
-        return scene.next || "error";  // next가 없으면 error 씬으로 fallback
+        if (!scene.next) {
+            console.error(`[SceneRenderer] next가 정의되지 않은 씬:`, scene);
+        }
+        return scene.next || null;
     }
 
     /**

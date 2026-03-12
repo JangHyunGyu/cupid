@@ -58,11 +58,23 @@ class DialogueSystem {
 
         /** 캐릭터 이름 → 이미지 파일명 매핑 (말하기 애니메이션용) */
         this.charFileMap = {
+            // Korean
             "서연": "seyoun", "유나": "yuna", "다인": "dain",
             "담임선생님": "teacher", "보건선생님": "nurse",
+            // English
             "Seoyeon": "seyoun", "Yuna": "yuna", "Dain": "dain",
             "Teacher": "teacher", "Nurse": "nurse",
             "Homeroom Teacher": "teacher", "School Nurse": "nurse",
+            // Spanish
+            "Profesora": "teacher", "Enfermera": "nurse",
+            // Japanese
+            "ソヨン": "seyoun", "ユナ": "yuna", "ダイン": "dain",
+            "担任先生": "teacher", "保健先生": "nurse",
+            // French
+            "Professeur Principal": "teacher", "Infirmière Scolaire": "nurse",
+            // German
+            "Lehrerin": "teacher", "Schulkrankenschwester": "nurse",
+            // Unknown
             "???": "seyoun"
         };
     }
@@ -121,7 +133,7 @@ class DialogueSystem {
      * @returns {string} 처리된 텍스트
      */
     processPlaceholders(text, charName) {
-        const lang = document.documentElement.lang || 'ko';
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const isEn = lang === 'en';
 
         // 주인공/시스템 메시지인지 확인
@@ -164,7 +176,7 @@ class DialogueSystem {
      * @returns {string} 호감도 현황 텍스트
      */
     generateAffinityList(isEn) {
-        const lang = document.documentElement.lang || 'ko';
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const charNamesByLang = {
             en: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Teacher", Nurse: "Nurse" },
             es: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Profesora", Nurse: "Enfermera" },

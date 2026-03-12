@@ -167,13 +167,17 @@ class GameEngine {
         // 📌 대화창(dialogue-box) 클릭 이벤트
         // ─────────────────────────────────────────────────────────────
         // 클릭하면 다음 대사로 넘어가거나, 타이핑 중이면 스킵
-        this.uiManager.dialogueBox.onclick = () => this.handleDialogueClick();
+        if (this.uiManager.dialogueBox) {
+            this.uiManager.dialogueBox.onclick = () => this.handleDialogueClick();
+        }
 
         // ─────────────────────────────────────────────────────────────
         // 📌 채팅(프리토킹) 관련 이벤트
         // ─────────────────────────────────────────────────────────────
         // 전송 버튼 클릭 → AI에게 메시지 전송
-        this.uiManager.chatSendBtn.onclick = () => this.freeTalkSystem.sendChatMessage(id => this.sceneRenderer.getScene(id));
+        if (this.uiManager.chatSendBtn) {
+            this.uiManager.chatSendBtn.onclick = () => this.freeTalkSystem.sendChatMessage(id => this.sceneRenderer.getScene(id));
+        }
 
         // 스킵 버튼 클릭 → 대화 중단 (버튼이 있는 경우에만)
         if (this.uiManager.chatSkipBtn) {
@@ -181,32 +185,38 @@ class GameEngine {
         }
 
         // 입력창에서 Enter 키 → 전송
-        this.uiManager.chatInput.onkeydown = (e) => {
-            if (e.key === 'Enter') {
-                e.preventDefault();  // 기본 동작(줄바꿈) 방지
-                this.freeTalkSystem.sendChatMessage(id => this.sceneRenderer.getScene(id));
-            }
-        };
+        if (this.uiManager.chatInput) {
+            this.uiManager.chatInput.onkeydown = (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();  // 기본 동작(줄바꿈) 방지
+                    this.freeTalkSystem.sendChatMessage(id => this.sceneRenderer.getScene(id));
+                }
+            };
+        }
 
         // ─────────────────────────────────────────────────────────────
         // 📌 이름 입력 관련 이벤트
         // ─────────────────────────────────────────────────────────────
         // 확인 버튼 클릭 → 이름 저장 후 다음 씬
-        this.uiManager.nameConfirmBtn.onclick = () => this.handleNameConfirm();
+        if (this.uiManager.nameConfirmBtn) {
+            this.uiManager.nameConfirmBtn.onclick = () => this.handleNameConfirm();
+        }
 
         // Enter 키로도 확인 가능
-        this.uiManager.playerNameInput.onkeypress = (e) => {
-            if (e.key === 'Enter') this.handleNameConfirm();
-        };
+        if (this.uiManager.playerNameInput) {
+            this.uiManager.playerNameInput.onkeypress = (e) => {
+                if (e.key === 'Enter') this.handleNameConfirm();
+            };
 
-        // 포커스가 빠져나가면 다시 잡아주기 (사용자 편의)
-        // 단, 확인 버튼 클릭으로 포커스 이동한 경우는 제외
-        this.uiManager.playerNameInput.onblur = (e) => {
-            if (e.relatedTarget === this.uiManager.nameConfirmBtn) return;
-            if (this.uiManager.nameInputContainer.style.display === 'block') {
-                setTimeout(() => this.uiManager.playerNameInput.focus(), 10);
-            }
-        };
+            // 포커스가 빠져나가면 다시 잡아주기 (사용자 편의)
+            // 단, 확인 버튼 클릭으로 포커스 이동한 경우는 제외
+            this.uiManager.playerNameInput.onblur = (e) => {
+                if (e.relatedTarget === this.uiManager.nameConfirmBtn) return;
+                if (this.uiManager.nameInputContainer.style.display === 'block') {
+                    setTimeout(() => this.uiManager.playerNameInput.focus(), 10);
+                }
+            };
+        }
     }
 
     /**
@@ -298,7 +308,7 @@ class GameEngine {
         const scene = this.sceneRenderer.getScene(this.sceneRenderer.currentSceneId);
         if (!scene) {
             // 씬 데이터 없으면 오류 메시지 표시
-            const lang = document.documentElement.lang || 'ko';
+            const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             const errorMsg = { es: "Escena no encontrada. Verifica los datos del escenario.", ja: "シーンが見つかりません。シナリオデータを確認してください。", en: "Scene not found. Please check the scenario data.", fr: "Scène introuvable. Veuillez vérifier les données du scénario.", de: "Szene nicht gefunden. Bitte überprüfe die Szenariodaten." }[lang] || "씬을 찾을 수 없습니다. 시나리오 데이터를 확인하세요.";
             await this.uiManager.showModal(errorMsg, true);
             return;
@@ -312,7 +322,7 @@ class GameEngine {
                 await this.renderScene(nextId);
             } else {
                 // 다음 씬이 없으면 오류 메시지
-                const lang = document.documentElement.lang || 'ko';
+                const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
                 const errorMsg = { es: "Siguiente escena no definida. Verifica los datos del escenario.", ja: "次のシーンが定義されていません。シナリオデータを確認してください。", en: "Next scene not defined. Please check the scenario data.", fr: "Scène suivante non définie. Veuillez vérifier les données du scénario.", de: "Nächste Szene nicht definiert. Bitte überprüfe die Szenariodaten." }[lang] || "다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
                 await this.uiManager.showModal(errorMsg, true);
             }
@@ -340,7 +350,7 @@ class GameEngine {
                     await this.renderScene(nextId);
                 } else {
                     // 다음 씬이 없으면 오류 메시지
-                    const lang = document.documentElement.lang || 'ko';
+                    const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
                     const errorMsg = { es: "No hay opciones disponibles y la siguiente escena no está definida.", ja: "選択肢がなく、次のシーンが定義されていません。シナリオデータを確認してください。", en: "No available choices and next scene not defined. Please check the scenario data.", fr: "Aucun choix disponible et la scène suivante n'est pas définie.", de: "Keine verfügbaren Auswahlmöglichkeiten und nächste Szene nicht definiert." }[lang] || "선택지가 없고 다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
                     await this.uiManager.showModal(errorMsg, true);
                 }
@@ -364,7 +374,7 @@ class GameEngine {
                 await this.renderScene(nextId);
             } else {
                 // 다음 씬이 없으면 오류 메시지
-                const lang = document.documentElement.lang || 'ko';
+                const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
                 const errorMsg = { es: "Siguiente escena no definida. Verifica los datos del escenario.", ja: "次のシーンが定義されていません。シナリオデータを確認してください。", en: "Next scene not defined. Please check the scenario data.", fr: "Scène suivante non définie. Veuillez vérifier les données du scénario.", de: "Nächste Szene nicht definiert. Bitte überprüfe die Szenariodaten." }[lang] || "다음 씬이 정의되지 않았습니다. 시나리오 데이터를 확인하세요.";
                 await this.uiManager.showModal(errorMsg, true);
             }
@@ -697,7 +707,7 @@ class GameEngine {
         const name = this.uiManager.playerNameInput.value.trim();
 
         // 📌 이름 유효성 검사 (한글 1~6자 또는 영문 1~12자)
-        const lang = document.documentElement.lang || 'ko';
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const hasKorean = /[가-힣]/.test(name);
         const hasJamo = /[ㄱ-ㅎㅏ-ㅣ]/.test(name);
         const hasEnglish = /[a-zA-Z]/.test(name);
@@ -824,7 +834,7 @@ class GameEngine {
             const affinity = this.stateManager.getAffinity(scene.affinityTextChar);
             for (const v of scene.affinityText) {
                 if (affinity >= v.min) {
-                    scene.text = v.text;
+                    scene = { ...scene, text: v.text };
                     if (v.character) scene.character = v.character;
                     break;
                 }
@@ -980,7 +990,7 @@ class GameEngine {
             // 크레딧 레이어 표시 (없으면 동적 생성 — 캐시된 구 HTML 대응)
             let creditsLayer = document.getElementById('credits-layer');
             if (!creditsLayer) {
-                const lang = document.documentElement.lang || 'ko';
+                const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
                 const ct = (obj) => obj[lang] || obj.ko;
                 creditsLayer = document.createElement('div');
                 creditsLayer.id = 'credits-layer';

@@ -86,7 +86,7 @@ class FreeTalkSystem {
         // lang 파라미터가 boolean(이전 isEn)으로 전달되는 경우 하위 호환
         if (lang === true) lang = 'en';
         else if (lang === false) lang = 'ko';
-        if (!lang) lang = document.documentElement.lang || 'ko';
+        if (!lang) lang = window.GAME_LANG || document.documentElement.lang || 'ko';
 
         // FLAG_MEMORIES가 없으면 빈 문자열 반환
         if (!window.FLAG_MEMORIES) return "";
@@ -150,7 +150,7 @@ class FreeTalkSystem {
      * @returns {string} AI에게 전달할 소셜 컨텍스트
      */
     getSocialContext(currentCharName, isEn) {
-        const lang = document.documentElement.lang || 'ko';
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
 
         // 각 캐릭터의 기본 설명
         const charactersByLang = {
@@ -252,7 +252,7 @@ class FreeTalkSystem {
         this.currentMaxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
         this.currentSceneId = sceneId;
 
-        const lang = document.documentElement.lang || 'ko';
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const isEn = lang === 'en';
         const isEs = lang === 'es';
         const isJa = lang === 'ja';
@@ -429,7 +429,7 @@ class FreeTalkSystem {
     async skipFreeTalk() {
         if (this.dialogueSystem.isCurrentlyTyping() || !this.isFreeTalking) return;
 
-        const lang = document.documentElement.lang || 'ko';
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const confirmMsg = { es: "¿Detener la conversación y continuar?", ja: "会話を中断して次のシーンに進みますか？", en: "Stop the conversation and proceed?", fr: "Arrêter la conversation et continuer ?", de: "Gespräch beenden und fortfahren?" }[lang] || "대화를 중단하고 다음 장면으로 넘어가시겠습니까?";
 
         const confirmed = await this.uiManager.showModal(confirmMsg);
@@ -488,7 +488,7 @@ class FreeTalkSystem {
 
         // 진행 상황 업데이트
         if (this.freeTalkHistory.length > 0 && this.freeTalkHistory[0].role === "system") {
-            const lang = document.documentElement.lang || 'ko';
+            const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             const remaining = this.currentMaxTurns - this.freeTalkTurns;
             const progressTag = { es: `\n[Progreso del escenario]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.`, ja: `\n[シナリオ進行度]: ${this.freeTalkTurns}/${this.currentMaxTurns}ターン。残り${remaining}ターン。`, en: `\n[CURRENT_PROGRESS]: ${this.freeTalkTurns}/${this.currentMaxTurns} turns. ${remaining} remaining.`, fr: `\n[Progression du scénario] : ${this.freeTalkTurns}/${this.currentMaxTurns} tours. ${remaining} restants.`, de: `\n[Szenariofortschritt]: ${this.freeTalkTurns}/${this.currentMaxTurns} Runden. ${remaining} übrig.` }[lang] || `\n[현재 진행 상황]: ${this.freeTalkTurns}/${this.currentMaxTurns}턴. ${remaining}턴 남음.`;
 
@@ -498,7 +498,7 @@ class FreeTalkSystem {
 
         // 사용자 메시지 표시
         const playerLabelByLang = { en: "Me", es: "Yo", ja: "僕", fr: "Moi", de: "Ich" };
-        const playerLabel = playerLabelByLang[document.documentElement.lang] || "나";
+        const playerLabel = playerLabelByLang[window.GAME_LANG || document.documentElement.lang] || "나";
         this.uiManager.updateNameTag(playerLabel);
 
         // 이미지와 메시지 결합 처리
@@ -549,7 +549,7 @@ class FreeTalkSystem {
             // - API_ENDPOINT: 파일 상단에 정의된 서버 주소
             // - messages: 대화 기록 전체 (시스템 프롬프트 + 대화 내용)
             // [Explicit Caching] 캐시 키 헤더 추가
-            const _lang = document.documentElement.lang || 'ko';
+            const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             const _cacheKey = charKey ? `cupid:${_lang}:${charKey}` : '';
             const response = await fetch(API_ENDPOINT, {
                 method: "POST",
@@ -650,7 +650,7 @@ class FreeTalkSystem {
             console.error("AI Chat Error:", error);
 
             // 현재 언어 확인
-            const langErr = document.documentElement.lang || 'ko';
+            const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
             const isEnErr = langErr === 'en';
 
             // 폴백 메시지 가져오기 (prompts.js에서 정의)
@@ -794,7 +794,7 @@ class FreeTalkSystem {
         }
 
         // 📌 파싱 실패하거나 텍스트 추출 실패 시 fallback 메시지 반환
-        const langFallback = document.documentElement.lang || 'ko';
+        const langFallback = window.GAME_LANG || document.documentElement.lang || 'ko';
         return {
             text: { es: "No pude entender la respuesta. Intentaré de nuevo.", ja: "応答を理解できませんでした。もう一度試みます。", en: "I couldn't understand the response. Let me try again.", fr: "Je n'ai pas pu comprendre la réponse. Laissez-moi réessayer.", de: "Ich konnte die Antwort nicht verstehen. Lass mich es nochmal versuchen." }[langFallback] || "응답을 이해할 수 없습니다. 다시 시도하겠습니다.",
             expression: "",
@@ -954,7 +954,7 @@ class FreeTalkSystem {
             this.isFreeTalking = false;
 
             // 종료 안내 메시지
-            const langEnd = document.documentElement.lang || 'ko';
+            const langEnd = window.GAME_LANG || document.documentElement.lang || 'ko';
             const endMsg = { es: "\n\n(La conversación ha terminado.)", ja: "\n\n（会話が終了しました。）", en: "\n\n(Conversation ended. Click to continue.)", fr: "\n\n(La conversation est terminée.)", de: "\n\n(Gespräch beendet. Klicke, um fortzufahren.)" }[langEnd] || "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.textContent += endMsg;
         }, 500);

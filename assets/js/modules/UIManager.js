@@ -167,7 +167,7 @@ class UIManager {
                             const btn = document.createElement('button');
                             btn.type = 'button';
                             btn.id = 'upload-image-btn';
-                            btn.title = { es: 'Subir imagen', ja: '画像をアップロード', en: 'Upload image', fr: 'Télécharger une image', de: 'Bild hochladen' }[document.documentElement.lang] || '이미지 업로드';
+                            btn.title = { es: 'Subir imagen', ja: '画像をアップロード', en: 'Upload image', fr: 'Télécharger une image', de: 'Bild hochladen' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 업로드';
                             btn.innerHTML = '<span aria-hidden="true">📸</span>';
                             container.appendChild(btn);
                             this.imageUploadBtn = btn;
@@ -191,7 +191,7 @@ class UIManager {
                             const remBtn = document.createElement('button');
                             remBtn.id = 'remove-image-btn';
                             remBtn.type = 'button';
-                            remBtn.title = { es: 'Eliminar imagen', ja: '画像を削除', en: 'Remove image', fr: 'Supprimer l\'image', de: 'Bild entfernen' }[document.documentElement.lang] || '미리보기 제거';
+                            remBtn.title = { es: 'Eliminar imagen', ja: '画像を削除', en: 'Remove image', fr: 'Supprimer l\'image', de: 'Bild entfernen' }[(window.GAME_LANG || document.documentElement.lang)] || '미리보기 제거';
                             remBtn.textContent = '×';
                             previewDiv.appendChild(remBtn);
 
@@ -248,7 +248,7 @@ class UIManager {
      */
     handleImageUpload(file) {
         if (!file.type.startsWith('image/')) {
-            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロード可能です。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être téléchargés.', de: 'Nur Bilddateien können hochgeladen werden.' }[document.documentElement.lang] || '이미지 파일만 업로드 가능합니다.');
+            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロード可能です。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être téléchargés.', de: 'Nur Bilddateien können hochgeladen werden.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
             return;
         }
 
@@ -560,7 +560,7 @@ class UIManager {
     /** 홈으로 이동 (BGM 정지 후 메인 페이지로) */
     goToHome() {
         if (window.soundManager) soundManager.stopBgm();
-        const lang = document.documentElement.lang || 'ko';
+        const lang = (window.GAME_LANG || document.documentElement.lang) || 'ko';
         window.location.href = { es: '/index-es', ja: '/index-ja', en: '/index-en', fr: '/index-fr', de: '/index-de' }[lang] || '/';
     }
 
