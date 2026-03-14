@@ -230,19 +230,39 @@ class SceneRenderer {
         const cgFileName = bgPath.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
         this.galleryManager.unlockCG(cgFileName);
 
-        // 이미지 프리로드 후 적용
+        const bgLayer = this.uiManager.bgLayer;
+        const currentBg = bgLayer.style.backgroundImage;
+
+        // 이미지 프리로드
         await new Promise((resolve) => {
             const img = new Image();
-            img.onload = () => {
-                // 다른 씬으로 넘어간 경우 적용 취소
-                if (this.lastBgUrl === bgUrl) {
-                    this.uiManager.bgLayer.style.backgroundImage = `url(${bgUrl})`;
-                }
-                resolve();
-            };
-            img.onerror = resolve;
+            img.onload = () => resolve();
+            img.onerror = () => resolve();
             img.src = bgUrl;
         });
+
+        if (this.lastBgUrl !== bgUrl) return;
+
+        // 첫 배경이거나 같은 배경이면 즉시 적용
+        if (!currentBg || currentBg === 'none' || currentBg === `url("${bgUrl}")` || currentBg === `url(${bgUrl})`) {
+            bgLayer.style.backgroundImage = `url(${bgUrl})`;
+            return;
+        }
+
+        // 크로스페이드: ::after에 새 배경을 설정하고 페이드인
+        bgLayer.style.setProperty('--bg-next', `url(${bgUrl})`);
+        bgLayer.classList.remove('bg-crossfade');
+        // ::after에 background-image 설정
+        bgLayer.style.cssText = bgLayer.style.cssText; // force reflow
+        void bgLayer.offsetWidth; // force reflow
+        bgLayer.classList.add('bg-crossfade');
+
+        // 페이드 완료 후 메인 배경으로 교체
+        await new Promise(r => setTimeout(r, 420));
+        if (this.lastBgUrl === bgUrl) {
+            bgLayer.style.backgroundImage = `url(${bgUrl})`;
+            bgLayer.classList.remove('bg-crossfade');
+        }
     }
 
     /**
@@ -349,20 +369,75 @@ class SceneRenderer {
         const loadedChars = await Promise.all(charPromises);
         if (this.currentSceneId !== sceneId) return;
 
-        // 이미지 교체
-        loadedChars.forEach(result => {
-            if (result && this.uiManager.charSlots[result.pos]) {
-                this.uiManager.charSlots[result.pos].innerHTML = '';
-                this.uiManager.charSlots[result.pos].appendChild(result.img);
+        // 캐릭터 이름 프리픽스 추출 (seyoun_normal.png → seyoun)
+        const getCharPrefix = (src) => {
+            if (!src) return null;
+            const filename = src.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
+            return filename.split('_')[0];
+        };
+
+        // 퇴장 캐릭터 페이드아웃
+        const exitPromises = [];
+        Object.keys(this.uiManager.charSlots).forEach(pos => {
+            if (!newCharMap[pos] && changedSlots.includes(pos)) {
+                const slot = this.uiManager.charSlots[pos];
+                if (!slot) return;
+                const oldImg = slot.querySelector('img');
+                if (oldImg) {
+                    oldImg.classList.add('char-fade-out');
+                    exitPromises.push(new Promise(r => setTimeout(() => {
+                        if (slot.contains(oldImg)) slot.removeChild(oldImg);
+                        r();
+                    }, 260)));
+                }
             }
         });
 
-        // 퇴장 캐릭터 처리 (새 씬에 없는 캐릭터 제거)
-        Object.keys(this.uiManager.charSlots).forEach(pos => {
-            if (!newCharMap[pos] && changedSlots.includes(pos)) {
-                if (this.uiManager.charSlots[pos]) this.uiManager.charSlots[pos].innerHTML = '';
+        // 교체 캐릭터 처리
+        const swapPromises = [];
+        loadedChars.forEach(result => {
+            if (!result || !this.uiManager.charSlots[result.pos]) return;
+            const slot = this.uiManager.charSlots[result.pos];
+            const oldImg = slot.querySelector('img');
+            const oldPrefix = oldImg ? getCharPrefix(oldImg.dataset.rawSrc) : null;
+            const newPrefix = getCharPrefix(result.img.dataset.rawSrc);
+            const sameChar = oldPrefix && newPrefix && oldPrefix === newPrefix;
+
+            if (sameChar) {
+                // 같은 캐릭터 표정 변화 → 빠른 크로스페이드
+                result.img.classList.add('char-fade-in');
+                slot.appendChild(result.img);
+                void result.img.offsetWidth; // force reflow
+                result.img.classList.remove('char-fade-in');
+                // 이전 이미지 페이드아웃 후 제거
+                if (oldImg) {
+                    oldImg.classList.add('char-fade-out');
+                    swapPromises.push(new Promise(r => setTimeout(() => {
+                        if (slot.contains(oldImg)) slot.removeChild(oldImg);
+                        r();
+                    }, 260)));
+                }
+            } else if (oldImg) {
+                // 다른 캐릭터 → 페이드아웃 후 페이드인
+                oldImg.classList.add('char-fade-out');
+                swapPromises.push(new Promise(r => setTimeout(() => {
+                    if (slot.contains(oldImg)) slot.removeChild(oldImg);
+                    result.img.classList.add('char-fade-in');
+                    slot.appendChild(result.img);
+                    void result.img.offsetWidth;
+                    result.img.classList.remove('char-fade-in');
+                    r();
+                }, 280)));
+            } else {
+                // 새 등장 → 페이드인
+                result.img.classList.add('char-fade-in');
+                slot.appendChild(result.img);
+                void result.img.offsetWidth;
+                result.img.classList.remove('char-fade-in');
             }
         });
+
+        await Promise.all([...exitPromises, ...swapPromises]);
     }
     // ============================================================================================
     // 🚩 연락처 합성 플래그 계산
