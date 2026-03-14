@@ -16,7 +16,6 @@ Object.assign(SCENARIO[3], {
     },
     "after3_choice": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "choices": [
             {
                 "next": "after3_seo_1",
@@ -37,12 +36,10 @@ Object.assign(SCENARIO[3], {
     "after3_seo_1": {
         "background": "assets/images/background/teacher_office.png",
         "bgm": "sunset1.mp3",
-        "character": null,
         "next": "after3_seo_2"
     },
     "after3_seo_2": {
         "background": "assets/images/background/teacher_office.png",
-        "character": null,
         "next": "after3_seo_3"
     },
     "after3_seo_3": {
@@ -137,27 +134,22 @@ Object.assign(SCENARIO[3], {
     "after3_yuna_1": {
         "background": "assets/images/background/yuna_hideout.png",
         "bgm": "night1.mp3",
-        "character": null,
         "next": "after3_yuna_2"
     },
     "after3_yuna_2": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "next": "after3_yuna_3"
     },
     "after3_yuna_3": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "next": "after3_yuna_4"
     },
     "after3_yuna_4": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "next": "after3_yuna_5"
     },
     "after3_yuna_5": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "next": "after3_yuna_6"
     },
     "after3_yuna_6": {
@@ -262,7 +254,6 @@ Object.assign(SCENARIO[3], {
     "after3_dain_1": {
         "background": "assets/images/background/gym.png",
         "bgm": "daily2.mp3",
-        "character": null,
         "next": "after3_dain_2"
     },
     "after3_dain_2": {
@@ -367,7 +358,6 @@ Object.assign(SCENARIO[3], {
     "after3_confront_1": {
         "background": "assets/images/background/school_hallway.png",
         "bgm": "mystery.mp3",
-        "character": null,
         "next": "after3_confront_2"
     },
     "after3_confront_2": {
@@ -484,7 +474,6 @@ Object.assign(SCENARIO[3], {
     // --- Yuna enters ---
     "after3_confront_yuna_enter": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after3_confront_yuna_1"
     },
     "after3_confront_yuna_1": {
@@ -514,7 +503,6 @@ Object.assign(SCENARIO[3], {
     },
     "after3_confront_yuna_6": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after3_confront_end"
     },
     "after3_confront_end": {

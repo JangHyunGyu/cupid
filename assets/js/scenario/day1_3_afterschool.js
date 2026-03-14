@@ -25,22 +25,18 @@ Object.assign(SCENARIO[1], {
     },
     "after_kakao_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after_kakao_3"
     },
     "after_kakao_3": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after_kakao_4"
     },
     "after_kakao_4": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after_kakao_5"
     },
     "after_kakao_5": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after_kakao_end"
     },
     "after_kakao_end": {
@@ -69,7 +65,6 @@ Object.assign(SCENARIO[1], {
     },
     "after_miss_dain_1": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "excludeCondition": "met_dain",
         "next": "after_miss_dain_2"
     },
@@ -103,7 +98,6 @@ Object.assign(SCENARIO[1], {
     },
     "after_miss_dain_7": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "setFlag": "met_dain",
         "branches": [
             { "condition": "met_yuna", "next": "after_yuna_skip" },
@@ -112,13 +106,11 @@ Object.assign(SCENARIO[1], {
     },
     "after_miss_yuna_1": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "excludeCondition": "met_yuna",
         "next": "after_miss_yuna_2"
     },
     "after_miss_yuna_2": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "excludeCondition": "met_yuna",
         "next": "after_miss_yuna_3"
     },
@@ -130,7 +122,6 @@ Object.assign(SCENARIO[1], {
     },
     "after_miss_yuna_4": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "setFlag": "met_yuna",
         "branches": [
             { "condition": "ate_lunch_seoyeon", "next": "after_end" },
@@ -139,7 +130,6 @@ Object.assign(SCENARIO[1], {
     },
     "after_miss_seoyeon_1": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "excludeCondition": "ate_lunch_seoyeon",
         "next": "after_miss_seoyeon_2"
     },

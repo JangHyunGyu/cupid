@@ -13,7 +13,6 @@ Object.assign(SCENARIO[4], {
     "confess_seo_1": {
         "background": "assets/images/background/top_school.png",
         "bgm": "confession.mp3",
-        "character": null,
         "sunset": true,
         "branches": [
             {
@@ -43,7 +42,6 @@ Object.assign(SCENARIO[4], {
     },
     "confess_seo_3": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_4"
     },
@@ -170,7 +168,6 @@ Object.assign(SCENARIO[4], {
     "confess_yuna_1": {
         "background": "assets/images/background/yuna_hideout.png",
         "bgm": "confession.mp3",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_2"
     },
@@ -291,7 +288,6 @@ Object.assign(SCENARIO[4], {
     "confess_dain_1": {
         "background": "assets/images/background/gym.png",
         "bgm": "confession.mp3",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_2"
     },
@@ -303,7 +299,6 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_3": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_4"
     },

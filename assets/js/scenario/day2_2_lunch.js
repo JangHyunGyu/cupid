@@ -21,7 +21,6 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_choice": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "choices": [
             { "next": "lunch2_yuna_1" },
             { "next": "lunch2_seo_1" },
@@ -32,12 +31,10 @@ Object.assign(SCENARIO[2], {
     "lunch2_yuna_1": {
         "background": "assets/images/background/yuna_hideout.png",
         "bgm": "night1.mp3",
-        "character": null,
         "next": "lunch2_yuna_2"
     },
     "lunch2_yuna_2": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "next": "lunch2_yuna_3"
     },
     "lunch2_yuna_3": {
@@ -226,7 +223,6 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_yuna_c2_9": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "next": "lunch2_yuna_end"
     },
     "lunch2_yuna_end": {
@@ -238,7 +234,6 @@ Object.assign(SCENARIO[2], {
     "lunch2_seo_1": {
         "background": "assets/images/background/top_school.png",
         "bgm": "sunset1.mp3",
-        "character": null,
         "next": "lunch2_seo_2"
     },
     "lunch2_seo_2": {
@@ -267,12 +262,10 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_7": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch2_seo_8"
     },
     "lunch2_seo_8": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch2_seo_9"
     },
     "lunch2_seo_9": {
@@ -320,12 +313,10 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_18": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch2_seo_19"
     },
     "lunch2_seo_19": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch2_seo_20"
     },
     "lunch2_seo_20": {
@@ -389,7 +380,6 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_c2_3": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch2_seo_end"
     },
     "lunch2_seo_end": {
@@ -401,7 +391,6 @@ Object.assign(SCENARIO[2], {
     "lunch2_dain_1": {
         "background": "assets/images/background/store.png",
         "bgm": "daily2.mp3",
-        "character": null,
         "next": "lunch2_dain_2"
     },
     "lunch2_dain_2": {
@@ -504,7 +493,6 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_c3_2": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch2_dain_end"
     },
     "lunch2_dain_end": {
