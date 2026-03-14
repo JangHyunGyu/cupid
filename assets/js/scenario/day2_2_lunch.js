@@ -275,7 +275,8 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_yuna_end": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null
+        "character": null,
+        "next": "after2_start"
     },
 
     "lunch2_seo_1": {
@@ -321,7 +322,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_9": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_seo_10"
     },
     "lunch2_seo_10": {
@@ -331,7 +332,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_11": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_seo_12"
     },
     "lunch2_seo_12": {
@@ -341,7 +342,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_13": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_seo_14"
     },
     "lunch2_seo_14": {
@@ -361,7 +362,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_17": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_seo_18"
     },
     "lunch2_seo_18": {
@@ -413,7 +414,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_c1_3": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_seo_c1_4"
     },
     "lunch2_seo_c1_4": {
@@ -443,7 +444,8 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_end": {
         "background": "assets/images/background/top_school.png",
-        "character": null
+        "character": null,
+        "next": "after2_start"
     },
 
     "lunch2_dain_1": {
@@ -454,7 +456,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_2": {
         "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_dain_3"
     },
     "lunch2_dain_3": {
@@ -464,7 +466,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_4": {
         "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_dain_5"
     },
     "lunch2_dain_5": {
@@ -564,6 +566,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_end": {
         "background": "assets/images/background/store.png",
-        "character": null
+        "character": null,
+        "next": "after2_start"
     }
 });

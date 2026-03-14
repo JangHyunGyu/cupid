@@ -109,12 +109,12 @@ Object.assign(SCENARIO[3], {
     // === 다인 호감도 최고 루트 ===
     "morning3_dain_gate_1": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning3_dain_gate_2"
     },
     "morning3_dain_gate_2": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning3_dain_gate_3"
     },
     "morning3_dain_gate_3": {
@@ -124,7 +124,7 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_dain_gate_4": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning3_dain_gate_5"
     },
     "morning3_dain_gate_5": {
@@ -157,7 +157,7 @@ Object.assign(SCENARIO[3], {
     // === 서연과 동행 시 리액션 ===
     "morning3_react_seo_1": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning3_react_seo_2"
     },
     "morning3_react_seo_2": {
@@ -174,7 +174,7 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_react_yuna_2": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning3_date_intro"
     },
 
@@ -240,7 +240,7 @@ Object.assign(SCENARIO[3], {
     // === 다인 데이트 제안 ===
     "morning3_date_dain_1": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning3_date_dain_2"
     },
     "morning3_date_dain_2": {
@@ -255,7 +255,7 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_date_dain_choice": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "choices": [
             {
                 "next": "morning3_date_dain_accept",
@@ -416,6 +416,7 @@ Object.assign(SCENARIO[3], {
     // === 종료 ===
     "morning3_end": {
         "background": "assets/images/background/room_school.png",
-        "character": null
+        "character": null,
+        "next": "lunch3_start"
     }
 });

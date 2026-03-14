@@ -41,6 +41,13 @@ Object.assign(SCENARIO[5], {
     },
     "morning5_end": {
         "background": "assets/images/background/room_school.png",
-        "character": null
+        "character": null,
+        "selectByHighestAffinity": true,
+        "branches": [
+            {"character": "Seoyeon", "next": "tour_seo_1"},
+            {"character": "Yuna", "next": "tour_yuna_1"},
+            {"character": "Dain", "next": "tour_dain_1"}
+        ],
+        "next": "tour_seo_1"
     }
 });

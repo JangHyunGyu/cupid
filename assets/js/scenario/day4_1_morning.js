@@ -52,6 +52,13 @@ Object.assign(SCENARIO[4], {
     },
     "morning4_end": {
         "background": "assets/images/background/student_room.png",
-        "character": null
+        "character": null,
+        "selectByHighestAffinity": true,
+        "branches": [
+            {"character": "Seoyeon", "next": "date_seo_1"},
+            {"character": "Yuna", "next": "date_yuna_1"},
+            {"character": "Dain", "next": "date_dain_1"}
+        ],
+        "next": "date_seo_1"
     }
 });

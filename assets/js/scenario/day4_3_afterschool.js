@@ -142,7 +142,8 @@ Object.assign(SCENARIO[4], {
     "confess_seo_yes_12": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_shy2.png",
-        "sunset": true
+        "sunset": true,
+        "next": "day4_night_start"
     },
 
     // --- Seoyeon: Confession postponed ---
@@ -167,7 +168,8 @@ Object.assign(SCENARIO[4], {
     "confess_seo_no_4": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_sad.png",
-        "sunset": true
+        "sunset": true,
+        "next": "day4_night_start"
     },
 
     // ========== YUNA CONFESSION (도서관 별관) ==========
@@ -270,7 +272,8 @@ Object.assign(SCENARIO[4], {
     "confess_yuna_yes_9": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_sad.png",
-        "sunset": true
+        "sunset": true,
+        "next": "day4_night_start"
     },
 
     // --- Yuna: Confession postponed ---
@@ -295,7 +298,8 @@ Object.assign(SCENARIO[4], {
     "confess_yuna_no_4": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_sad.png",
-        "sunset": true
+        "sunset": true,
+        "next": "day4_night_start"
     },
 
     // ========== DAIN CONFESSION (체육관) ==========
@@ -404,7 +408,8 @@ Object.assign(SCENARIO[4], {
     "confess_dain_yes_10": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "sunset": true
+        "sunset": true,
+        "next": "day4_night_start"
     },
 
     // --- Dain: Confession postponed ---
@@ -429,6 +434,7 @@ Object.assign(SCENARIO[4], {
     "confess_dain_no_4": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
-        "sunset": true
+        "sunset": true,
+        "next": "day4_night_start"
     }
 });

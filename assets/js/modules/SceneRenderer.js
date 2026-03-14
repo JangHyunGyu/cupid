@@ -141,15 +141,30 @@ class SceneRenderer {
         if (!scene) return null;
 
         // 🔀 호감도 분기: 특정 캐릭터의 호감도에 따라 분기
-        if (scene.affinityBranches && scene.affinityChar) {
-            const currentAff = this.stateManager.getAffinity(scene.affinityChar);
-            // 높은 기준부터 검사 (minAffinity 내림차순 정렬)
-            // 동일한 minAffinity일 때는 배열 원래 순서 유지 (안정 정렬)
-            const sortedBranches = [...scene.affinityBranches]
-                .map((branch, index) => ({ ...branch, _originalIndex: index }))
-                .sort((a, b) => b.minAffinity - a.minAffinity || a._originalIndex - b._originalIndex);
-            for (const branch of sortedBranches) {
-                if (currentAff >= branch.minAffinity) return branch.next;
+        if (scene.affinityBranches) {
+            if (scene.affinityChar) {
+                // 단일 캐릭터 호감도 분기
+                const currentAff = this.stateManager.getAffinity(scene.affinityChar);
+                const sortedBranches = [...scene.affinityBranches]
+                    .map((branch, index) => ({ ...branch, _originalIndex: index }))
+                    .sort((a, b) => b.minAffinity - a.minAffinity || a._originalIndex - b._originalIndex);
+                for (const branch of sortedBranches) {
+                    if (currentAff >= branch.minAffinity) return branch.next;
+                }
+            } else {
+                // 다중 캐릭터 호감도 분기: 각 branch의 char별 호감도 비교
+                let bestNext = null;
+                let bestAffinity = -Infinity;
+                for (const branch of scene.affinityBranches) {
+                    if (branch.char) {
+                        const aff = this.stateManager.getAffinity(branch.char);
+                        if (aff >= (branch.minAffinity || 0) && aff > bestAffinity) {
+                            bestAffinity = aff;
+                            bestNext = branch.next;
+                        }
+                    }
+                }
+                if (bestNext) return bestNext;
             }
         }
 

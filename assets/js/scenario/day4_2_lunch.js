@@ -138,7 +138,8 @@ Object.assign(SCENARIO[4], {
     },
     "date_seo_end": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png"
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "confess_seo_1"
     },
 
     // ═══════════════════════════════════════════════════════════════
@@ -275,7 +276,8 @@ Object.assign(SCENARIO[4], {
     },
     "date_yuna_end": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_smile.png"
+        "character": "assets/images/characters/yuna_smile.png",
+        "next": "confess_yuna_1"
     },
 
     // ═══════════════════════════════════════════════════════════════
@@ -422,6 +424,7 @@ Object.assign(SCENARIO[4], {
     },
     "date_dain_end": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_sad.png"
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "confess_dain_1"
     }
 });

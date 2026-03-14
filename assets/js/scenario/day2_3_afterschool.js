@@ -129,7 +129,8 @@ Object.assign(SCENARIO[2], {
     },
     "after2_dain_end": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_laugh.png"
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "night2_start"
     },
     "after2_seo_1": {
         "background": "assets/images/background/teacher_room.png",
@@ -263,7 +264,8 @@ Object.assign(SCENARIO[2], {
     },
     "after2_seo_end": {
         "background": "assets/images/background/teacher_room.png",
-        "character": "assets/images/characters/seyoun_normal.png"
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "night2_start"
     },
     "after2_yuna_1": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -355,6 +357,7 @@ Object.assign(SCENARIO[2], {
     },
     "after2_yuna_end": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_smile.png"
+        "character": "assets/images/characters/yuna_smile.png",
+        "next": "night2_start"
     }
 });

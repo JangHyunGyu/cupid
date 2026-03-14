@@ -87,7 +87,8 @@ Object.assign(SCENARIO[5], {
     },
     "tour_seo_end": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_shy.png"
+        "character": "assets/images/characters/seyoun_shy.png",
+        "next": "after5_start"
     },
 
     // ── 유나 루트 ──
@@ -149,7 +150,8 @@ Object.assign(SCENARIO[5], {
     },
     "tour_yuna_end": {
         "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_shy.png"
+        "character": "assets/images/characters/yuna_shy.png",
+        "next": "after5_start"
     },
 
     // ── 다인 루트 ──
@@ -211,6 +213,7 @@ Object.assign(SCENARIO[5], {
     },
     "tour_dain_end": {
         "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_laugh.png"
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "after5_start"
     }
 });
