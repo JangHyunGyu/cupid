@@ -9,23 +9,23 @@
     },
     "night2_msg_2": {
         "name": "다인",
-        "text": "야!! 오늘 떡볶이 맛있었다!!"
+        "text": "\"야!! 오늘 떡볶이 맛있었다!!\""
     },
     "night2_msg_3": {
         "name": "다인",
-        "text": "내일도 내기하자!! 종목 바꿔서!!"
+        "text": "\"내일도 내기하자!! 종목 바꿔서!!\""
     },
     "night2_msg_4": {
         "name": "서연",
-        "text": "오늘 고마웠어. 덕분에 일찍 끝났어"
+        "text": "\"오늘 고마웠어. 덕분에 일찍 끝났어\""
     },
     "night2_msg_5": {
         "name": "서연",
-        "text": "다음에도 부를지도 모르니까, 각오해 둬"
+        "text": "\"다음에도 부를지도 모르니까, 각오해 둬\""
     },
     "night2_msg_6": {
         "name": "유나",
-        "text": "...책 다 읽었어?"
+        "text": "\"...책 다 읽었어?\""
     },
     "night2_msg_7": {
         "name": "나",
@@ -42,19 +42,19 @@
     },
     "night2_reply_dain_1": {
         "name": "{name}",
-        "text": "떡볶이 매웠어 ㅋㅋ"
+        "text": "\"떡볶이 매웠어 ㅋㅋ\""
     },
     "night2_reply_dain_2": {
         "name": "다인",
-        "text": "ㅋㅋㅋ 매운 거 못 먹는 거야?!"
+        "text": "\"ㅋㅋㅋ 매운 거 못 먹는 거야?!\""
     },
     "night2_reply_dain_3": {
         "name": "다인",
-        "text": "내일은 순한 맛으로 가자!!"
+        "text": "\"내일은 순한 맛으로 가자!!\""
     },
     "night2_reply_dain_4": {
         "name": "다인",
-        "text": "아 근데 순한 맛은 떡볶이가 아니지ㅋㅋ"
+        "text": "\"아 근데 순한 맛은 떡볶이가 아니지ㅋㅋ\""
     },
     "night2_reply_dain_5": {
         "name": "나",
@@ -62,19 +62,19 @@
     },
     "night2_reply_seo_1": {
         "name": "{name}",
-        "text": "부르면 또 갈게"
+        "text": "\"부르면 또 갈게\""
     },
     "night2_reply_seo_2": {
         "name": "서연",
-        "text": "쉽게 약속하네"
+        "text": "\"쉽게 약속하네\""
     },
     "night2_reply_seo_3": {
         "name": "{name}",
-        "text": "쉬운 약속인데"
+        "text": "\"쉬운 약속인데\""
     },
     "night2_reply_seo_4": {
         "name": "서연",
-        "text": "......\n내일 점심에 옥상 열어놓을게. 올지 말지는 네 자유야"
+        "text": "\"......\n내일 점심에 옥상 열어놓을게. 올지 말지는 네 자유야\""
     },
     "night2_reply_seo_5": {
         "name": "나",
@@ -82,11 +82,11 @@
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
-        "text": "아직 반 정도. 재밌어"
+        "text": "\"아직 반 정도. 재밌어\""
     },
     "night2_reply_yuna_2": {
         "name": "유나",
-        "text": "...다행이네"
+        "text": "\"...다행이네\""
     },
     "night2_reply_yuna_3": {
         "name": "나",
@@ -94,15 +94,15 @@
     },
     "night2_reply_yuna_4": {
         "name": "유나",
-        "text": "세 번째 별을 봐"
+        "text": "\"세 번째 별을 봐\""
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "?"
+        "text": "\"?\""
     },
     "night2_reply_yuna_6": {
         "name": "유나",
-        "text": "이유는 나중에"
+        "text": "\"이유는 나중에\""
     },
     "night2_reply_yuna_7": {
         "name": "나",

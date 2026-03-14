@@ -29,7 +29,7 @@
     },
 
     "confess_seo_yes_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"있잖아.\""
     },
     "confess_seo_yes_2": {
@@ -41,7 +41,7 @@
         "text": "*전 학교에서 삼킨 말이 떠오른다. 그때 말했으면 어땠을까, 라고 수백 번 되뇌었던 그 후회. — 이번에는 삼키지 않는다.*"
     },
     "confess_seo_yes_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"서연아. 너 완벽하게 웃잖아. 항상. 근데 나는 — 네가 웃다가 멈추는 그 0.5초가 자꾸 신경 쓰여.\""
     },
     "confess_seo_yes_5": {
@@ -49,7 +49,7 @@
         "text": "*손톱이 손바닥에 파고든다. 석양이 눈부신 건지 눈이 뜨거운 건지 모르겠다. — 그냥 말하자. 못생긴 문장이어도 괜찮으니까.*"
     },
     "confess_seo_yes_6": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"그 순간의 네가 진짜 서연인 것 같아서. 그 서연이 좋아해.\""
     },
     "confess_seo_yes_7": {
@@ -78,7 +78,7 @@
     },
 
     "confess_seo_no_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"...이 옥상 진짜 좋다.\""
     },
     "confess_seo_no_2": {
@@ -124,7 +124,7 @@
     },
 
     "confess_yuna_yes_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"있잖아.\""
     },
     "confess_yuna_yes_2": {
@@ -132,7 +132,7 @@
         "text": "*입을 열었는데 소리가 안 난다. 목이 타들어간다. 두 번째 시도.*"
     },
     "confess_yuna_yes_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"유나. 처음에 네가 말 안 하는 게 벽인 줄 알았어. 근데 아니더라.\""
     },
     "confess_yuna_yes_4": {
@@ -140,11 +140,11 @@
         "text": "*손톱이 손바닥에 파고든다. — 그냥 말하자. 못생긴 문장이어도 괜찮으니까.*"
     },
     "confess_yuna_yes_5": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"너는 — 말 대신 옆에 앉아주는 사람이었어. 그 침묵이 누구의 말보다 따뜻했어.\""
     },
     "confess_yuna_yes_6": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"좋아해.\""
     },
     "confess_yuna_yes_7": {
@@ -161,7 +161,7 @@
     },
 
     "confess_yuna_no_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"...여기 진짜 좋다.\""
     },
     "confess_yuna_no_2": {
@@ -207,7 +207,7 @@
     },
 
     "confess_dain_yes_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"있잖아.\""
     },
     "confess_dain_yes_2": {
@@ -215,7 +215,7 @@
         "text": "*입을 열었는데 소리가 안 난다. 목이 타들어간다. 두 번째 시도.*"
     },
     "confess_dain_yes_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"다인아. 너 웃을 때 눈이 반달 모양 되는 거 알아? 모를 거야, 자기 얼굴이니까.\""
     },
     "confess_dain_yes_4": {
@@ -223,11 +223,11 @@
         "text": "*손톱이 손바닥에 파고든다. — 그냥 말하자. 못생긴 문장이어도 괜찮으니까.*"
     },
     "confess_dain_yes_5": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"— 그 눈이 나를 안 볼 때 숨이 답답해. 언제부터 이랬는지 모르겠어.\""
     },
     "confess_dain_yes_6": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"좋아해.\""
     },
     "confess_dain_yes_7": {
@@ -248,7 +248,7 @@
     },
 
     "confess_dain_no_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"...여기 진짜 넓다.\""
     },
     "confess_dain_no_2": {

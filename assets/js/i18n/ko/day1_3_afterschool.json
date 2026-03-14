@@ -48,7 +48,7 @@
         "text": "\"오! 반사신경 좋은데?!\""
     },
     "after_miss_dain_5": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"넌 복도에서 왜 전력질주야?\""
     },
     "after_miss_dain_6": {
@@ -84,7 +84,7 @@
         "text": "\"아까 어디 갔어?\""
     },
     "after_miss_seoyeon_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"어디라니?\""
     },
     "after_miss_seoyeon_4": {
@@ -92,7 +92,7 @@
         "text": "\"점심. 옥상 열어놨는데. 나 기다리게 하다니, 대담한 전학생이네.\""
     },
     "after_miss_seoyeon_5": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"기다린 거야?\""
     },
     "after_miss_seoyeon_6": {
