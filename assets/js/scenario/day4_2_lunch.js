@@ -424,7 +424,7 @@ Object.assign(SCENARIO[4], {
     },
     "date_dain_end": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "confess_dain_1"
     }
 });
