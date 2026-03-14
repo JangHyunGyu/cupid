@@ -1,576 +1,225 @@
 {
-    "day3_lunch_start": {
-        "name": "主人公",
-        "text": "*昼休みのチャイムが鳴った。金曜日。明日から週末だ。*"
+    "lunch3_start": {
+        "name": "僕",
+        "text": "*昼休み。今日は珍しく — 三人が一か所に集まった。*"
     },
-    "day3_lunch_check_dates": {
-        "name": "主人公",
-        "text": "*席を立とうとすると、あちこちから視線を感じる。*"
+    "lunch3_start_2": {
+        "name": "僕",
+        "text": "*{name}が弁当を広げる。서연(Seoyeon)が自然に隣に座り、다인(Dain)が向かいにドスンと座り、유나(Yuna)が隅からパンをかじりながらそっと加わる。*"
     },
-    "day3_lunch_multiple_approach": {
-        "name": "主人公",
-        "text": "*……なんでみんな同時にこっち来るんだ？*"
+    "lunch3_meal_1": {
+        "name": "다인(Dain)",
+        "text": "「おっ！おいしい！！」"
     },
-    "day3_lunch_collision_no_seoyeon": {
-        "name": "主人公",
-        "text": "*約束した相手が同時に近づいてくる。雰囲気がただ事じゃない。*"
+    "lunch3_meal_2": {
+        "name": "僕",
+        "text": "「それ僕のなんだけど…」"
     },
-    "day3_lunch_collision_no_seoyeon_choose": {
-        "name": "主人公",
-        "text": "*素早く判断しないと。*",
+    "lunch3_meal_3": {
+        "name": "서연(Seoyeon)",
+        "text": "「卵焼き、ちょっと味が濃いわね。6点。」"
+    },
+    "lunch3_meal_4": {
+        "name": "僕",
+        "text": "「点数つけないでよ。」"
+    },
+    "lunch3_meal_5": {
+        "name": "서연(Seoyeon)",
+        "text": "「10点満点よ。悪くないでしょ？」"
+    },
+    "lunch3_meal_6": {
+        "name": "僕",
+        "text": "*유나(Yuna)が黙って箸を伸ばし、一番おいしそうなソーセージを取っていく。*"
+    },
+    "lunch3_meal_7": {
+        "name": "僕",
+        "text": "「…유나(Yuna)、それ僕が一番好きなやつなんだけど。」"
+    },
+    "lunch3_meal_8": {
+        "name": "유나(Yuna)",
+        "text": "「…おいしい。」"
+    },
+    "lunch3_meal_9": {
+        "name": "僕",
+        "text": "*略奪された。三人同時に。*"
+    },
+    "lunch3_meal_10": {
+        "name": "僕",
+        "text": "*おかずが一つ残った。最後の卵焼き。*"
+    },
+    "lunch3_meal_11": {
+        "name": "僕",
+        "text": "*誰にあげよう？*"
+    },
+    "lunch3_choice": {
+        "name": "僕",
+        "text": "*最後のおかずを誰にあげるか悩む。*",
         "choices": [
-            "ユナとお昼を食べる",
-            "ダインとお昼を食べる",
-            "みんなで食べようと言う",
+            "서연(Seoyeon)にあげる",
+            "다인(Dain)にあげる",
+            "유나(Yuna)にあげる",
+            "「みんなで分けよう」"
+        ]
+    },
+    "lunch3_give_seo_1": {
+        "name": "서연(Seoyeon)",
+        "text": "「…ありがと。やっぱりセンスあるわね。」"
+    },
+    "lunch3_give_seo_2": {
+        "name": "다인(Dain)",
+        "text": "「えー！私も食べたかったのに！」"
+    },
+    "lunch3_give_seo_3": {
+        "name": "유나(Yuna)",
+        "text": "「……」"
+    },
+    "lunch3_give_dain_1": {
+        "name": "다인(Dain)",
+        "text": "「本当？！ありがとう！！{name}が最高！！」"
+    },
+    "lunch3_give_dain_2": {
+        "name": "서연(Seoyeon)",
+        "text": "「…ふん。点数までつけてあげたのに。」"
+    },
+    "lunch3_give_dain_3": {
+        "name": "유나(Yuna)",
+        "text": "「……」"
+    },
+    "lunch3_give_yuna_1": {
+        "name": "유나(Yuna)",
+        "text": "「…ありがとう。」"
+    },
+    "lunch3_give_yuna_2": {
+        "name": "서연(Seoyeon)",
+        "text": "「…私にくれると思ったのに。」"
+    },
+    "lunch3_give_yuna_3": {
+        "name": "다인(Dain)",
+        "text": "「なんで！私は？！」"
+    },
+    "lunch3_expose_1": {
+        "name": "僕",
+        "text": "*「みんなで食べよう」と言った瞬間 — 다인(Dain)が先に口を開いた。*"
+    },
+    "lunch3_expose_2": {
+        "name": "다인(Dain)",
+        "text": "「あ、そうだ！{name}、週末一緒にゲーセン行くんだよね！！何食べてから行く？！」"
+    },
+    "lunch3_expose_3": {
+        "name": "僕",
+        "text": "*——凍りついた。*"
+    },
+    "lunch3_expose_4": {
+        "name": "僕",
+        "text": "*서연(Seoyeon)の箸が止まる。유나(Yuna)のパンをちぎる手が止まる。*"
+    },
+    "lunch3_expose_5": {
+        "name": "서연(Seoyeon)",
+        "text": "「…ゲーセン？」"
+    },
+    "lunch3_expose_6": {
+        "name": "서연(Seoyeon)",
+        "text": "「私には一緒に行くところがあるって言ったのに。」"
+    },
+    "lunch3_expose_7": {
+        "name": "다인(Dain)",
+        "text": "「…ちょっと待って。私にも週末遊ぼうって言ったよね？」"
+    },
+    "lunch3_expose_8": {
+        "name": "僕",
+        "text": "*유나(Yuna)がパンを置く。*"
+    },
+    "lunch3_expose_9": {
+        "name": "유나(Yuna)",
+        "text": "「知ってた。」"
+    },
+    "lunch3_expose_10": {
+        "name": "僕",
+        "text": "*しばし沈黙。*"
+    },
+    "lunch3_expose_11": {
+        "name": "유나(Yuna)",
+        "text": "「…嘘。私も知らなかった。」"
+    },
+    "lunch3_expose_12": {
+        "name": "僕",
+        "text": "*三人の視線が僕に向かう。——さっきまでの温かい昼食が氷のように冷たくなった。*"
+    },
+    "lunch3_expose_13": {
+        "name": "僕",
+        "text": "*隣のテーブルで민수(Minsu)がこっちを見ている。首を横に振っている。*"
+    },
+    "lunch3_expose_14": {
+        "name": "민수(Minsu)",
+        "text": "「…おい。お前マジか。」"
+    },
+    "lunch3_expose_15": {
+        "name": "僕",
+        "text": "*何も言えない。민수(Minsu)が正しい。*"
+    },
+    "lunch3_expose_choice": {
+        "name": "僕",
+        "text": "*何て言えばいいんだ…*",
+        "choices": [
+            "「ごめん。みんないい人だから断れなかった。」",
+            "「時間帯が違うから大丈夫だと思って…」",
             "逃げる"
         ]
     },
-    "day3_lunch_collision": {
-        "name": "ソヨン",
-        "text": "\"{name}、お昼一緒に……あれ？\""
-    },
-    "day3_lunch_collision_seoyeon_yuna": {
-        "name": "ユナ",
-        "text": "\"……{name}。一緒に来て。\""
-    },
-    "day3_lunch_collision_seoyeon_dain": {
-        "name": "ダイン",
-        "text": "\"{name}！ ごはん食べに行こ！ ……あれ？ ソヨンも？\""
-    },
-    "day3_lunch_tension_1": {
-        "name": "主人公",
-        "text": "*教室の温度が3度くらい下がった気がする。互いの視線が鋭く交差している。*"
-    },
-    "day3_lunch_tension_2": {
-        "name": "ソヨン",
-        "text": "\"……私が先に声かけたんだけど？\""
-    },
-    "day3_lunch_tension_3": {
-        "name": "主人公",
-        "text": "*この状況、どう切り抜ける？*",
-        "choices": [
-            "ソヨンとお昼を食べる",
-            "ユナとお昼を食べる",
-            "ダインとお昼を食べる",
-            "みんなで食べようと言う",
-            "逃げる"
-        ]
-    },
-    "day3_lunch_choose_seoyeon": {
-        "name": "主人公",
-        "text": "\"ソヨン、一緒に行こう。\""
-    },
-    "day3_lunch_seoyeon_others_react": {
-        "name": "主人公",
-        "text": "*残りの二人の表情が固まるのが分かる。*"
-    },
-    "day3_lunch_yuna_jealous": {
-        "name": "ユナ",
-        "text": "\"……そう。おいしく食べてね。\""
-    },
-    "day3_lunch_yuna_jealous_2": {
-        "name": "主人公",
-        "text": "*ユナが無言で教室を出ていく。後ろ姿がいつもより小さく見える。*"
-    },
-    "day3_lunch_dain_jealous": {
-        "name": "ダイン",
-        "text": "\"なにそれ！ あたしは？！ ……ふんっ、わかったよ。\""
-    },
-    "day3_lunch_dain_jealous_2": {
-        "name": "主人公",
-        "text": "*ダインが口をとがらせて別の方へ行ってしまった。*"
-    },
-    "day3_lunch_with_seoyeon_start": {
-        "name": "ソヨン",
-        "text": "\"……やっと二人きり。{name}、正直に言うけど。最近あんたに群がる子、多すぎない？\""
-    },
-    "day3_lunch_seoyeon_jealous_talk": {
-        "name": "主人公",
-        "text": "*ソヨンの声に刃が立っている。*",
-        "choices": [
-            "\"ソヨンが一番大事だよ\"",
-            "\"みんなただの友達だって\"",
-            "\"嫉妬してるの？\""
-        ]
-    },
-    "day3_lunch_seoyeon_reassure": {
-        "name": "ソヨン",
-        "text": "\"……その言葉、覚えとくからね。撤回したらただじゃおかないよ。\""
-    },
-    "day3_lunch_seoyeon_deny": {
-        "name": "ソヨン",
-        "text": "\"……そう。そうだよね。変なこと言った、ごめん。\""
-    },
-    "day3_lunch_seoyeon_tease": {
-        "name": "ソヨン",
-        "text": "\"嫉妬？ ……そうよ、そのとおり。あんたの目が他に向くたびに胸が焼けるの。だから私だけを見て。\""
-    },
-    "day3_lunch_seoyeon_weekend": {
-        "name": "ソヨン",
-        "text": "\"それよりさ、週末なにする？ 時間あったら……一緒にどっか行かない？\""
-    },
-    "day3_lunch_seoyeon_caught": {
-        "name": "主人公",
-        "text": "*ちょっと待て、他の約束があるんだけど……どうしよう？*",
-        "choices": [
-            "\"日曜はどう？\"",
-            "正直に言う",
-            "ごまかす"
-        ]
-    },
-    "day3_lunch_seoyeon_lie": {
-        "name": "ソヨン",
-        "text": "\"日曜？ ……いいわよ。どこ行くかは私が決めるから。\""
-    },
-    "day3_lunch_seoyeon_honest": {
-        "name": "ソヨン",
-        "text": "\"……別の約束？ 誰と？\""
-    },
-    "day3_lunch_seoyeon_honest_2": {
-        "name": "主人公",
-        "text": "*ソヨンの目が冷たく変わる。*"
-    },
-    "day3_lunch_seoyeon_dodge": {
-        "name": "ソヨン",
-        "text": "\"なんで答えられないの？ ……別の約束あるでしょ？\""
-    },
-    "day3_lunch_seoyeon_promise": {
-        "name": "主人公",
-        "text": "\"いいよ、週末一緒に遊ぼう。\""
-    },
-    "day3_lunch_seoyeon_end": {
-        "name": "主人公",
-        "text": "*お昼を食べて、校舎裏のベンチに並んで座った。風がそよそよと吹いている。*"
-    },
-    "day3_lunch_seoyeon_bench": {
-        "name": "ソヨン",
-        "text": "*静かに僕の肩に頭を預けて* \"……{name}。最近ちょっとおかしいの、私。ずっとあんたのことばっかり考えてる。\""
-    },
-    "day3_lunch_seoyeon_bench_2": {
-        "name": "主人公",
-        "text": "*ソヨンの髪からほのかな香りがする。*",
-        "choices": [
-            "*ソヨンの頭を撫でる*",
-            "\"俺も同じだよ\"",
-            "*じっとしている*"
-        ]
-    },
-    "day3_lunch_seoyeon_pat": {
-        "name": "ソヨン",
-        "text": "*頭を撫でるとソヨンが肩に顔をうずめる* \"……バカ。こんなとこでそういうことしないでよ。\""
-    },
-    "day3_lunch_seoyeon_same": {
-        "name": "ソヨン",
-        "text": "*ソヨンが顔を上げてこっちを見る* \"……ほんとに？ その言葉、絶対忘れないからね。\""
-    },
-    "day3_lunch_seoyeon_silent": {
-        "name": "ソヨン",
-        "text": "*ソヨンが静かに手を握ってくる* \"……こうしてるのが、いい。\""
-    },
-    "day3_lunch_seoyeon_freetalk": {
-        "name": "主人公",
-        "text": "*校舎裏のベンチでソヨンと並んで座って話をする。*",
-        "context": "ソヨンと校舎裏のベンチに並んで座っている。ソヨンが肩に頭を預けて「ずっとあんたのことばっかり考えてる」と言った後。甘い雰囲気。",
-        "personality": "ソヨンはクールビューティ系。ズバッと本質を突く、余裕たっぷり、したたかな魅力。独占欲が強く、嫉妬すると直球で来る。"
-    },
-    "day3_lunch_seoyeon_bell": {
-        "name": "主人公",
-        "text": "*授業のチャイムが鳴る。ソヨンとの時間が短すぎた気がした。*"
-    },
-    "day3_lunch_choose_yuna": {
-        "name": "主人公",
-        "text": "\"ユナ、一緒に行こう。\""
-    },
-    "day3_lunch_yuna_others_react": {
-        "name": "主人公",
-        "text": "*ユナと一緒に行くことにした。*"
-    },
-    "day3_lunch_yuna_seoyeon_jealous": {
-        "name": "ソヨン",
-        "text": "\"……そう？ わかった。\""
-    },
-    "day3_lunch_with_yuna_start": {
-        "name": "ユナ",
-        "text": "\"……ついてきて。\""
-    },
-    "day3_lunch_yuna_rooftop": {
-        "name": "主人公",
-        "text": "*ユナについて屋上に上がった。ユナが床にレジャーシートを敷いて、カバンからお弁当を取り出す。*"
-    },
-    "day3_lunch_yuna_bento": {
-        "name": "ユナ",
-        "text": "\"……二人分。作ってきた。\""
-    },
-    "day3_lunch_yuna_bento_2": {
-        "name": "主人公",
-        "text": "*お弁当が二つ並んでいる。丁寧に作られている。*",
-        "choices": [
-            "\"ユナが自分で作ったの？\"",
-            "*静かに味わってみる*"
-        ]
-    },
-    "day3_lunch_yuna_bento_ask": {
-        "name": "ユナ",
-        "text": "*視線をそらしながら* \"……察しがいいね。まずかったら捨てていいよ。\""
-    },
-    "day3_lunch_yuna_bento_taste": {
-        "name": "主人公",
-        "text": "*一口食べてみる。意外にも……マジでおいしい。*"
-    },
-    "day3_lunch_yuna_bento_eat": {
-        "name": "ユナ",
-        "text": "*僕が食べる姿をじっと見てから、微かに笑う* \"……おいしい？\""
-    },
-    "day3_lunch_yuna_lap": {
-        "name": "主人公",
-        "text": "*食べ終わるとゆるやかな風に眠気が来る。ユナがいきなり僕の肩を押す。*"
-    },
-    "day3_lunch_yuna_lap_2": {
-        "name": "ユナ",
-        "text": "\"……横になって。あたしの膝で。\"",
-        "choices": [
-            "*ユナの膝に横になる*",
-            "\"大丈夫、まだ……\""
-        ]
-    },
-    "day3_lunch_yuna_lap_yes": {
-        "name": "ユナ",
-        "text": "*横になるとユナが髪を撫でてくれる* \"……5分だけ。\""
-    },
-    "day3_lunch_yuna_lap_no": {
-        "name": "ユナ",
-        "text": "\"……そう。\""
-    },
-    "day3_lunch_yuna_lap_talk": {
-        "name": "ユナ",
-        "text": "*静かに髪を撫でながら* \"……こうしてると、あんたがあたしのものみたい。\""
-    },
-    "day3_lunch_yuna_freetalk": {
-        "name": "主人公",
-        "text": "*ユナの膝に横になって、屋上の空を眺めながら話をする。*",
-        "context": "ユナの膝枕で屋上にて会話中。ユナがお弁当を作ってきてくれて、髪を撫でてくれている。静かで穏やかな雰囲気。",
-        "personality": "ユナはけだるくて直球、マイペース。短くて暗号みたいな言葉を使う。冷たく見えるけど、心を開くとギャップがある。"
-    },
-    "day3_lunch_yuna_talk_1_jealous": {
-        "name": "ユナ",
-        "text": "\"……{name}。あたしにだけ優しくしてくれてるんだと思ってた。\""
-    },
-    "day3_lunch_yuna_single_end": {
-        "name": "主人公",
-        "text": "*ユナと穏やかな昼休みを過ごした。*"
-    },
-    "day3_lunch_yuna_talk_2": {
-        "name": "主人公",
-        "text": "*ユナの言葉にトゲがある。*",
-        "choices": [
-            "\"ユナは特別だよ\"",
-            "\"みんなに優しくしたいだけだよ\"",
-            "\"なんでそんなこと言うの？\""
-        ]
-    },
-    "day3_lunch_yuna_special": {
-        "name": "ユナ",
-        "text": "\"……ほんとに？ 証明して。明日の夜。\""
-    },
-    "day3_lunch_yuna_everyone": {
-        "name": "ユナ",
-        "text": "\"……やっぱりそうなんだ。あたしはただの『みんな』のうちの一人。\""
-    },
-    "day3_lunch_yuna_question": {
-        "name": "ユナ",
-        "text": "\"……知らなくていい。まだ。\""
-    },
-    "day3_lunch_yuna_warning": {
-        "name": "ユナ",
-        "text": "\"ひとつだけ覚えといて。裏切ったら……後悔するよ。\""
-    },
-    "day3_lunch_yuna_warning_2": {
-        "name": "主人公",
-        "text": "*ユナの目が一瞬ゾッとするほど光った……冗談だよな？*"
-    },
-    "day3_lunch_choose_dain": {
-        "name": "主人公",
-        "text": "\"ダイン、一緒にごはん食べに行こ。\""
-    },
-    "day3_lunch_dain_others_react": {
-        "name": "主人公",
-        "text": "*ダインと一緒に行くことにした。*"
-    },
-    "day3_lunch_dain_seoyeon_jealous": {
-        "name": "ソヨン",
-        "text": "\"……そう。またあとでね。\""
-    },
-    "day3_lunch_with_dain_start": {
-        "name": "ダイン",
-        "text": "\"やったー！ やっぱ{name}が最高！！ 早く行こ、今日の給食チキンだって！！\""
-    },
-    "day3_lunch_dain_talk_1": {
-        "name": "ダイン",
-        "text": "\"ってかさ……さっきソヨンの顔見た？ 完全に嫉妬モードじゃなかった？\""
-    },
-    "day3_lunch_dain_talk_2": {
-        "name": "主人公",
-        "text": "*ダインがチラチラ周りを見ながら声を低くする。*"
-    },
-    "day3_lunch_dain_talk_3": {
-        "name": "ダイン",
-        "text": "\"正直に言ってよ。ソヨンと付き合ってるの？ それともユナ？ あの二人があんたに気があるの、全部わかってんだけど？\"",
-        "choices": [
-            "\"いや、ダインが好きだよ\"",
-            "\"みんなただの友達だって\"",
-            "\"ダインも嫉妬してるの？\""
-        ]
-    },
-    "day3_lunch_dain_confess": {
-        "name": "ダイン",
-        "text": "\"な、なに？！ いきなりそんなこと言うとか……もう、ほんとに！！\""
-    },
-    "day3_lunch_dain_friends": {
-        "name": "ダイン",
-        "text": "\"ふーん、ほんとに？ でもあの子たちの顔はそうじゃなかったけど……まあ、どうでもいいけどさ！\""
-    },
-    "day3_lunch_dain_jealous_tease": {
-        "name": "ダイン",
-        "text": "\"はぁ？！ 誰が嫉妬だって！！ ただ気になっただけ！！ ……ちょっとだけ気になるけど！！\""
-    },
-    "day3_lunch_dain_serious": {
-        "name": "ダイン",
-        "text": "*急に箸を置いて静かになる* \"……{name}。真剣に聞いていい？\""
-    },
-    "day3_lunch_dain_serious_2": {
-        "name": "ダイン",
-        "text": "\"……あたしのこと、どう思ってる？ ただの友達？ それとも……別のなにか？\""
-    },
-    "day3_lunch_dain_serious_choice": {
-        "name": "主人公",
-        "text": "*ダインの目がいつもと違う。真剣だ。*",
-        "choices": [
-            "\"ダインは特別だよ\"",
-            "\"まだわからない\"",
-            "\"大切な友達\""
-        ]
-    },
-    "day3_lunch_dain_special": {
-        "name": "ダイン",
-        "text": "*顔が真っ赤になりながら拳で肩を叩く* \"ちょ、ちょっと！！ マジ？！ 心臓爆発するかと思ったんだけど！！\""
-    },
-    "day3_lunch_dain_unsure": {
-        "name": "ダイン",
-        "text": "*ちょっとしょんぼりしてから、すぐに明るくなる* \"……よし！ じゃああたしが特別になるの、見ててよね！！\""
-    },
-    "day3_lunch_dain_friend": {
-        "name": "ダイン",
-        "text": "*一瞬ダインの表情が固まって、無理に笑う* \"……あは？ 友達。うん、友達だよね。あはは。\""
-    },
-    "day3_lunch_dain_freetalk": {
-        "name": "主人公",
-        "text": "*ダインと食堂の片隅に並んで座って話をする。*",
-        "context": "ダインとランチ中。ダインが「あたしのこと、どう思ってる？」と真剣に聞いてきた。いつもの活発さの代わりに恥ずかしがっている。",
-        "personality": "ダインは犬系で、スキンシップ好き、負けず嫌い。ビックリマークの嵐。ツンデレ。表面は元気だけど中身は繊細。"
-    },
-    "day3_lunch_dain_end": {
-        "name": "ダイン",
-        "text": "\"とにかく！ 明日の練習見に来るんでしょ？！ 絶対来てよね！！\""
-    },
-    "day3_lunch_dain_conflict": {
-        "name": "主人公",
-        "text": "*明日……他の約束もあるんだけど。*",
-        "choices": [
-            "\"もちろん！\"",
-            "\"時間が合えば……\""
-        ]
-    },
-    "day3_lunch_dain_promise": {
-        "name": "ダイン",
-        "text": "\"よし！！ あたしのスパイク覚悟しといてね！！\""
-    },
-    "day3_lunch_dain_maybe": {
-        "name": "ダイン",
-        "text": "\"……時間が合えば？ 他に約束あるの？\""
-    },
-    "day3_lunch_dain_suspicious": {
-        "name": "ダイン",
-        "text": "\"ふんっ！ わかったよ。でもすっぽかしたらマジで怒るからね？！\""
-    },
-    "day3_lunch_together_propose": {
-        "name": "主人公",
-        "text": "\"み、みんなで食べちゃダメ？\""
-    },
-    "day3_lunch_together_react": {
-        "name": "主人公",
-        "text": "*静寂。三人の視線が互いを探り合う。*"
-    },
-    "day3_lunch_together_awkward": {
-        "name": "ソヨン",
-        "text": "\"……まあ。みんなで食べましょ。\""
-    },
-    "day3_lunch_together_2": {
-        "name": "主人公",
-        "text": "*食堂。雰囲気が妙に殺伐としている。*"
-    },
-    "day3_lunch_together_3": {
-        "name": "ダイン",
-        "text": "\"{name}！ 明日バレーの練習見に来るよね？！\""
-    },
-    "day3_lunch_together_4": {
-        "name": "ソヨン",
-        "text": "\"え？ {name}は明日私と約束あるんだけど？\""
-    },
-    "day3_lunch_together_yuna": {
-        "name": "ユナ",
-        "text": "\"……{name}はあたしと約束した。明日の夜。\""
-    },
-    "day3_lunch_together_explosion": {
-        "name": "主人公",
-        "text": "*空気が急速に凍りつく。全員の視線が僕に突き刺さる。*"
-    },
-    "day3_lunch_together_silence": {
-        "name": "主人公",
-        "text": "*息が詰まるような沈黙。ソヨンの手が震え、ユナの目が暗くなり、ダインの表情がこわばった。*"
-    },
-    "day3_lunch_together_seoyeon_react": {
-        "name": "ソヨン",
-        "text": "*ゆっくりスプーンを置きながら* \"……私だけが特別じゃなかったんだ。\""
-    },
-    "day3_lunch_together_yuna_lie": {
-        "name": "ユナ",
-        "text": "*席を立ちながら* \"……知ってた。{name}があたしだけに約束したんじゃないってこと。\""
-    },
-    "day3_lunch_together_yuna_lie_2": {
-        "name": "ダイン",
-        "text": "\"……マジ？ じゃあなんで知ってて来たの？\""
-    },
-    "day3_lunch_together_yuna_lie_3": {
-        "name": "ユナ",
-        "text": "*冷たくこっちを見ながら* \"……嘘。あたしも知らなかった。ただ……他の子の前で泣きたくなかっただけ。\""
-    },
-    "day3_lunch_together_confront": {
-        "name": "ソヨン",
-        "text": "\"ちょっと待って。{name}、あんた全員に約束したの？\"",
-        "choices": [
-            "正直に謝る",
-            "時間帯が違うと言う",
-            "逃げる"
-        ]
-    },
-    "day3_lunch_apologize": {
-        "name": "主人公",
-        "text": "\"ごめん……みんなに断れなくて。\""
-    },
-    "day3_lunch_apologize_react": {
-        "name": "ダイン",
-        "text": "\"……正直なのはいいけどさ、ムカつくんだけど。\""
-    },
-    "day3_lunch_excuse": {
-        "name": "主人公",
-        "text": "\"時間帯が全部違うから……ダインは朝で、他は午後だし……\""
-    },
-    "day3_lunch_excuse_react": {
-        "name": "ソヨン",
-        "text": "\"そういう問題じゃないでしょ。……あー、もう。\""
-    },
-    "day3_lunch_excuse_react_2": {
-        "name": "ダイン",
-        "text": "\"うーん……時間うまく使えばいいんじゃない？ あたしは別にいいけど。\""
-    },
-    "day3_lunch_excuse_react_3": {
-        "name": "ユナ",
-        "text": "\"……あんたみたいな子はそれでいいんだろうけどね。あたしは…… *立ち上がる* お先に。\""
-    },
-    "day3_lunch_run": {
-        "name": "主人公",
-        "text": "*急いでごはんを食べて、逃げるように席を立つ。最悪の選択だった。*"
-    },
-    "day3_lunch_together_end": {
-        "name": "主人公",
-        "text": "*気まずい雰囲気のまま昼休みが終わった。週末が怖い……*"
-    },
-    "day3_lunch_escape": {
-        "name": "主人公",
-        "text": "\"あっ、急に思い出したことがあって！ お先！\""
-    },
-    "day3_lunch_escape_2": {
-        "name": "主人公",
-        "text": "*逃げるように飛び出した。後ろから重なるため息が聞こえる。*"
-    },
-    "day3_lunch_single_approach": {
-        "name": "主人公",
-        "text": "*昼休み。誰と食べようかな。*",
-        "choices": [
-            "ソヨンと食べる",
-            "ユナと食べる",
-            "ダインと食べる",
-            "保健室に行く",
-            "担任の先生を探す",
-            "一人で食べる"
-        ]
-    },
-    "day3_lunch_nurse": {
-        "name": "主人公",
-        "text": "*保健室に向かった。先生がサンドイッチを食べている。*"
-    },
-    "day3_lunch_nurse_2": {
-        "name": "保健の先生",
-        "text": "*僕を見て微笑む* \"あら、{name}来たの？ ごはん食べた？ 一緒に食べる？\""
-    },
-    "day3_lunch_nurse_3": {
-        "name": "保健の先生",
-        "text": "*ドアに鍵をかけながら* \"二人きりの時間が必要でしょ。人目を気にするのも、もう疲れちゃったし。\""
-    },
-    "day3_lunch_nurse_freetalk": {
-        "name": "主人公",
-        "text": "*保健室で先生と二人きりでお昼を食べている。*",
-        "context": "保健室で保健の先生と二人きりでランチ中。先生がドアに鍵をかけた。秘密のデートのような雰囲気。",
-        "personality": "保健の先生はいたずらっぽくて誘惑的、大人の色気がある。生徒への気持ちと教師としての倫理の間で揺れている。"
-    },
-    "day3_lunch_nurse_4": {
-        "name": "保健の先生",
-        "text": "*時計を見てため息* \"……時間だわ。授業に戻りなさい。日曜にね。\""
-    },
-    "day3_lunch_teacher": {
-        "name": "主人公",
-        "text": "*職員室に向かった。先生が一人でコーヒーを飲んでいる。*"
-    },
-    "day3_lunch_teacher_2": {
-        "name": "先生",
-        "text": "*僕を見て驚いてから嬉しそうになる* \"{name}？ どうしたの？ 先生お昼休みなんだけど……\""
-    },
-    "day3_lunch_teacher_3": {
-        "name": "先生",
-        "text": "*頬を赤らめながら* \"……入って。ドア閉めて。\""
-    },
-    "day3_lunch_teacher_freetalk": {
-        "name": "主人公",
-        "text": "*職員室で担任の先生と二人きりでお昼を食べている。*",
-        "context": "職員室で担任の先生と二人きりでランチ中。先生が恥ずかしがりながらドアを閉めた。",
-        "personality": "担任の先生はドライなユーモアの持ち主。表向きはぶっきらぼうだけど、生徒に惹かれてしまっている自分にギャップ萌え的な戸惑いがある。"
-    },
-    "day3_lunch_teacher_4": {
-        "name": "先生",
-        "text": "*コーヒーカップを置きながら* \"……こんなのダメよね。生徒が昼休みに訪ねてきて、先生はそれが嬉しくて。これって普通なの？\""
-    },
-    "day3_lunch_seoyeon_only": {
-        "name": "ソヨン",
-        "text": "\"{name}。一緒にごはん食べよ。\""
-    },
-    "day3_lunch_yuna_only": {
-        "name": "ユナ",
-        "text": "\"……{name}。屋上。\""
-    },
-    "day3_lunch_dain_only": {
-        "name": "ダイン",
-        "text": "\"ごはん食べに行こ！！ 今日チキンだって！！\""
-    },
-    "day3_lunch_normal": {
-        "name": "主人公",
-        "text": "*特に約束もないし……普通にお昼でも食べるか。*"
-    },
-    "day3_lunch_normal_2": {
-        "name": "主人公",
-        "text": "*周りから笑い声が聞こえる。みんな楽しそうだ。*"
-    },
-    "day3_lunch_alone": {
-        "name": "主人公",
-        "text": "*一人で静かにお昼を食べた。週末はなにしようかな。*"
+    "lunch3_expose_honest_1": {
+        "name": "僕",
+        "text": "「ごめん。みんないい人だから断れなかった。」"
+    },
+    "lunch3_expose_honest_2": {
+        "name": "서연(Seoyeon)",
+        "text": "「…断れなかったから。その言葉が一番残酷なのよ、{name}。」"
+    },
+    "lunch3_expose_honest_3": {
+        "name": "서연(Seoyeon)",
+        "text": "「断れない優しさが——偽りの希望を与えるの。」"
+    },
+    "lunch3_expose_honest_4": {
+        "name": "僕",
+        "text": "*서연(Seoyeon)が弁当の蓋を閉じる。*"
+    },
+    "lunch3_expose_honest_5": {
+        "name": "서연(Seoyeon)",
+        "text": "「私はあなたの選択肢の一つになりたいんじゃない。唯一の答えか、何でもないか。——中途半端は無理。」"
+    },
+    "lunch3_expose_honest_6": {
+        "name": "僕",
+        "text": "*서연(Seoyeon)が席を立つ。*"
+    },
+    "lunch3_expose_honest_7": {
+        "name": "僕",
+        "text": "*感嘆符がない。——다인(Dain)の文章から感嘆符が消えた。初めてだ。*"
+    },
+    "lunch3_expose_excuse_1": {
+        "name": "僕",
+        "text": "「時間帯が違うから大丈夫だと思って…」"
+    },
+    "lunch3_expose_excuse_2": {
+        "name": "서연(Seoyeon)",
+        "text": "「…それが問題だって分からないの？」"
+    },
+    "lunch3_expose_excuse_3": {
+        "name": "다인(Dain)",
+        "text": "「私にも考える時間をちょうだい。」"
+    },
+    "lunch3_expose_excuse_4": {
+        "name": "僕",
+        "text": "*感嘆符がない。——다인(Dain)の文章から感嘆符が消えた。初めてだ。*"
+    },
+    "lunch3_expose_run_1": {
+        "name": "僕",
+        "text": "*逃げた。教室から。——一番卑怯な選択だ。*"
+    },
+    "lunch3_expose_run_2": {
+        "name": "僕",
+        "text": "*背後から三人の沈黙が背中に突き刺さる。*"
+    },
+    "lunch3_end": {
+        "name": "僕",
+        "text": "*昼休みが終わった。*"
     }
 }

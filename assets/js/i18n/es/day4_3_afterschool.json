@@ -1,354 +1,258 @@
 {
-    "day4_afternoon_start": {
+    "confess_seo_1": {
         "name": "Yo",
-        "text": "*Salimos de la cafetería y caminamos juntos por la calle. Sin darme cuenta, la tarde se iba haciendo profunda.*"
+        "text": "*La cita está llegando a su fin. Seoyeon se dirige hacia la escuela.*"
     },
-    "day4_walk_together": {
-        "name": "Yo",
-        "text": "*Caminamos uno al lado del otro mirando alrededor. Al ser fin de semana, hay mucha gente. Risas, música y olores dulces se mezclan en el aire.*"
+    "confess_seo_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Hay un último lugar que quiero mostrarte.\""
     },
-    "day4_walk_street": {
+    "confess_seo_3": {
         "name": "Yo",
-        "text": "*Nuestro reflejo en un escaparate. Parecemos una pareja de verdad y el corazón me da un vuelco.*"
+        "text": "*La azotea. El atardecer tiñe la escuela de dorado. El mismo lugar donde vine por primera vez en el Día 1.*"
     },
-    "day4_walk_market": {
+    "confess_seo_4": {
         "name": "Yo",
-        "text": "*Al fondo de un callejón se ve un mercadillo. El olor a comida rica llega con el viento.*"
+        "text": "*Intenté no ponerle nombre a este sentimiento. Porque en el momento en que lo nombre, no habrá vuelta atrás.*"
     },
-    "day4_walk_food_choice": {
+    "confess_seo_5": {
         "name": "Yo",
-        "text": "*Un puesto de comida callejera me llama la atención.*",
+        "text": "*-- Pero ya es demasiado tarde.*"
+    },
+    "confess_seo_choice": {
+        "name": "Yo",
+        "text": "*Mi corazón me ha subido hasta la garganta. Si no lo digo ahora -- nunca volveré a encontrar el valor.*",
         "choices": [
-            "\"¿Compramos uno y lo compartimos?\"",
-            "\"Qué buena pinta... vamos a mirar un poco.\""
+            "\"Sabes que si huyes, te perseguiré. Así que quédate y escúchame.\"",
+            "\"...Esta vista es realmente hermosa.\""
         ]
     },
-    "day4_walk_food_share": {
+    "confess_seo_yes_1": {
         "name": "Yo",
-        "text": "*Compré un pastelito y lo partí por la mitad. Sale un humito calentito. \"Toma, tu mitad.\" La mano me tembló un poco al dárselo.*"
+        "text": "\"Oye.\""
     },
-    "day4_walk_food_look": {
+    "confess_seo_yes_2": {
         "name": "Yo",
-        "text": "*Mientras mirábamos el puesto, nuestros hombros se rozaron. El corazón me dio un vuelco. Disimulé, pero las orejas me arden.*"
+        "text": "*Abrí la boca pero no salió ningún sonido. Mi garganta arde. Segundo intento.*"
     },
-    "day4_walk_close": {
+    "confess_seo_yes_3": {
         "name": "Yo",
-        "text": "*Caminamos juntos de vuelta a la calle principal. La calle se ha quedado tranquila y la luz del atardecer se extiende larga entre los edificios.*"
+        "text": "*Recuerdo las palabras que me tragué en mi antigua escuela. Las repetí cientos de veces -- 'qué habría pasado si lo hubiera dicho entonces.' -- Esta vez no me las tragaré.*"
     },
-    "day4_walk_feelings": {
+    "confess_seo_yes_4": {
         "name": "Yo",
-        "text": "*Con solo caminar juntos soy así de feliz. Le eché un vistazo disimulado. Una emoción que no se puede expresar con palabras crece dentro de mí.*"
+        "text": "\"Seoyeon. Siempre sonríes perfectamente. Siempre. Pero -- esos 0.5 segundos en que dejas de sonreír no dejan de inquietarme.\""
     },
-    "day4_afternoon_walk": {
+    "confess_seo_yes_5": {
         "name": "Yo",
-        "text": "*¿Caminar juntos siempre fue tan bonito? Cada vez que nuestros dedos se rozan, el pulso se me acelera.*"
+        "text": "*Mis uñas se clavan en mis palmas. No sé si es el atardecer que me ciega o si mis ojos simplemente arden. -- Solo dilo. Aunque las palabras salgan feas.*"
     },
-    "day4_special_notice": {
+    "confess_seo_yes_6": {
         "name": "Yo",
-        "text": "*Caminando, al fondo de un callejón se ven tiendas con encanto. Mi acompañante señaló una.*"
+        "text": "\"La tú de ese momento me parece la verdadera Seoyeon. Y esa Seoyeon es la que me gusta.\""
     },
-    "day4_special_visit": {
-        "name": "Sistema",
-        "text": ""
-    },
-    "day4_special_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"Espera. Mira, una floristería. Entremos.\""
-    },
-    "day4_special_seoyeon_react": {
+    "confess_seo_yes_7": {
         "name": "Yo",
-        "text": "*Seoyeon eligió una flor pequeña entre todas y me la puso delante. \"Toma. El significado de la flor... es secreto.\"*",
+        "text": "*Tres sílabas flotan en el viento de la azotea. En este mismo lugar donde dije 'me gusta la brisa' el Día 1.*"
+    },
+    "confess_seo_yes_8": {
+        "name": "Yo",
+        "text": "*Seoyeon no dice nada. Sus labios tiemblan. No es la presidenta del consejo estudiantil -- solo una chica, de pie ahí.*"
+    },
+    "confess_seo_yes_9": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Yo también.\""
+    },
+    "confess_seo_yes_10": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Desde el principio. Fuiste tú desde el principio.\""
+    },
+    "confess_seo_yes_11": {
+        "name": "서연(Seoyeon)",
+        "text": "\"-- No tienes idea de cuánto me contuve para no decirlo.\""
+    },
+    "confess_seo_yes_12": {
+        "name": "Yo",
+        "text": "*Seoyeon extiende su meñique. El mismo meñique que vi el Día 1. -- Entonces pensé que era solo un hábito, pero esta es la forma de Seoyeon de hacer una promesa.*"
+    },
+    "confess_seo_no_1": {
+        "name": "Yo",
+        "text": "\"...Esta azotea es realmente bonita.\""
+    },
+    "confess_seo_no_2": {
+        "name": "Yo",
+        "text": "*Palabras cobardes. Lo sé.*"
+    },
+    "confess_seo_no_3": {
+        "name": "Yo",
+        "text": "*Seoyeon sonríe. Una sonrisa ensayada. -- Se da la vuelta y camina. Al tercer paso, se detiene.*"
+    },
+    "confess_seo_no_4": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...La próxima vez que vengas aquí, trae algo diferente que decir.\""
+    },
+    "confess_yuna_1": {
+        "name": "Yo",
+        "text": "*La cita está llegando a su fin. Yuna se detiene.*"
+    },
+    "confess_yuna_2": {
+        "name": "유나(Yuna)",
+        "text": "\"...Hay un último lugar al que ir.\""
+    },
+    "confess_yuna_3": {
+        "name": "Yo",
+        "text": "*El anexo de la biblioteca. Un rincón secreto de lectura. El atardecer se filtra por la ventana. El mismo lugar donde vine por primera vez en el Día 2.*"
+    },
+    "confess_yuna_4": {
+        "name": "Yo",
+        "text": "*Intenté no ponerle nombre a este sentimiento. Porque en el momento en que lo nombre, no habrá vuelta atrás.*"
+    },
+    "confess_yuna_5": {
+        "name": "Yo",
+        "text": "*-- Pero ya es demasiado tarde.*"
+    },
+    "confess_yuna_choice": {
+        "name": "Yo",
+        "text": "*Mi corazón me ha subido hasta la garganta. Si no lo digo ahora -- nunca volveré a encontrar el valor.*",
         "choices": [
-            "\"Seoyeon, tú eres más bonita que la flor.\"",
-            "\"Gracias. La guardaré con mucho cariño.\""
+            "\"Sabes que si huyes, te perseguiré. Así que quédate y escúchame.\"",
+            "\"...Este lugar es realmente bonito.\""
         ]
     },
-    "day4_special_yuna": {
-        "name": "Yuna",
-        "text": "\"...Oye. Una librería de segunda mano. ¿Podemos entrar un momento?\""
-    },
-    "day4_special_yuna_react": {
+    "confess_yuna_yes_1": {
         "name": "Yo",
-        "text": "*Yuna sacó con cuidado un libro de entre las estanterías viejas. \"Este libro... quería leerlo contigo.\" Sus ojos brillaron con suavidad.*",
+        "text": "\"Oye.\""
+    },
+    "confess_yuna_yes_2": {
+        "name": "Yo",
+        "text": "*Abrí la boca pero no salió ningún sonido. Mi garganta arde. Segundo intento.*"
+    },
+    "confess_yuna_yes_3": {
+        "name": "Yo",
+        "text": "\"Yuna. Al principio pensé que tu silencio era un muro. Pero no lo era.\""
+    },
+    "confess_yuna_yes_4": {
+        "name": "Yo",
+        "text": "*Mis uñas se clavan en mis palmas. -- Solo dilo. Aunque las palabras salgan feas.*"
+    },
+    "confess_yuna_yes_5": {
+        "name": "Yo",
+        "text": "\"Tú eras -- el tipo de persona que se sienta a tu lado en vez de hablar. Ese silencio era más cálido que las palabras de cualquiera.\""
+    },
+    "confess_yuna_yes_6": {
+        "name": "Yo",
+        "text": "\"Me gustas.\""
+    },
+    "confess_yuna_yes_7": {
+        "name": "Yo",
+        "text": "*Tres sílabas flotan en la habitación silenciosa. En este mismo lugar donde dije 'me gusta la tranquilidad' el Día 2.*"
+    },
+    "confess_yuna_yes_8": {
+        "name": "Yo",
+        "text": "*La expresión indiferente de Yuna se quiebra. Su voz somnoliente desaparece, reemplazada por la más pequeña -- casi inaudible -- voz. Aprieta su manga con fuerza.*"
+    },
+    "confess_yuna_yes_9": {
+        "name": "유나(Yuna)",
+        "text": "\"...No te vayas. Esta vez, no te vayas.\""
+    },
+    "confess_yuna_no_1": {
+        "name": "Yo",
+        "text": "\"...Este lugar es realmente bonito.\""
+    },
+    "confess_yuna_no_2": {
+        "name": "Yo",
+        "text": "*Palabras cobardes. Lo sé.*"
+    },
+    "confess_yuna_no_3": {
+        "name": "Yo",
+        "text": "*Yuna toma un libro. Mira la portada, pero no está leyendo.*"
+    },
+    "confess_yuna_no_4": {
+        "name": "유나(Yuna)",
+        "text": "\"...El final aún no ha llegado.\""
+    },
+    "confess_dain_1": {
+        "name": "Yo",
+        "text": "*La cita está llegando a su fin. Dain corre hacia la escuela.*"
+    },
+    "confess_dain_2": {
+        "name": "다인(Dain)",
+        "text": "\"¡Último lugar! ¡¡Vamos!!\""
+    },
+    "confess_dain_3": {
+        "name": "Yo",
+        "text": "*El gimnasio. Vacío. El atardecer se cuela por las ventanas sobre la cancha. El mismo lugar donde vinimos juntos por primera vez el Día 1.*"
+    },
+    "confess_dain_4": {
+        "name": "Yo",
+        "text": "*Intenté no ponerle nombre a este sentimiento. Porque en el momento en que lo nombre, no habrá vuelta atrás.*"
+    },
+    "confess_dain_5": {
+        "name": "Yo",
+        "text": "*-- Pero ya es demasiado tarde.*"
+    },
+    "confess_dain_choice": {
+        "name": "Yo",
+        "text": "*Mi corazón me ha subido hasta la garganta. Si no lo digo ahora -- nunca volveré a encontrar el valor.*",
         "choices": [
-            "\"Leámoslo juntos. Un capítulo al día.\"",
-            "\"Si lo elegiste tú, seguro que es un buen libro.\""
+            "\"Sabes que si huyes, te perseguiré. Así que quédate y escúchame.\"",
+            "\"...Este lugar es realmente grande.\""
         ]
     },
-    "day4_special_dain": {
-        "name": "Dain",
-        "text": "\"¡¡Oh!! ¡¡Una tienda de deporte!! ¡Espera, tengo que ver una cosa!!\""
-    },
-    "day4_special_dain_react": {
+    "confess_dain_yes_1": {
         "name": "Yo",
-        "text": "*Dain vino corriendo con unas pulseras de pareja. \"¡¡Mira, pulseras a juego!! ¡¡Pongámonos una cada uno!!\" Tiene la cara un poco roja.*",
-        "choices": [
-            "\"¡Dale! Hagamos juego.\"",
-            "\"Elígelas tú. Tienes buen ojo.\""
-        ]
+        "text": "\"Oye.\""
     },
-    "day4_special_nurse": {
-        "name": "Enfermera",
-        "text": "\"Anda, una tienda de antigüedades. ¿Echamos un vistazo?\""
-    },
-    "day4_special_nurse_react": {
+    "confess_dain_yes_2": {
         "name": "Yo",
-        "text": "*Sostuvo un broche vintage y lo inclinó hacia la luz del sol. \"¿A que es bonito? No sé por qué, pero dan ganas de guardarlo para siempre.\"*",
-        "choices": [
-            "\"Le quedaría genial. Déjeme comprárselo.\"",
-            "\"Tiene muy buen ojo. Es precioso de verdad.\""
-        ]
+        "text": "*Abrí la boca pero no salió ningún sonido. Mi garganta arde. Segundo intento.*"
     },
-    "day4_special_teacher": {
-        "name": "Profesora",
-        "text": "\"Espera, ¿podemos pasar por esa papelería? Necesito un bolígrafo.\""
-    },
-    "day4_special_teacher_react": {
+    "confess_dain_yes_3": {
         "name": "Yo",
-        "text": "*Estaba eligiendo un bolígrafo cuando se detuvo y cogió otro más. \"...Este es para ti. Toma buenos apuntes en clase. Es un regalo.\" Se giró, pero las puntas de las orejas se le pusieron rojas.*",
-        "choices": [
-            "\"Gracias. Lo usaré todos los días.\"",
-            "\"Es más especial porque lo eligió usted.\""
-        ]
+        "text": "\"Dain. ¿Sabes que cuando sonríes tus ojos se convierten en pequeñas medias lunas? Seguro no lo sabes -- es tu propia cara.\""
     },
-    "day4_afternoon_special": {
+    "confess_dain_yes_4": {
         "name": "Yo",
-        "text": "*Fue un momento especial. \"Oye, ¿vamos al parque del río?\" Mi acompañante lo propuso primero.*"
+        "text": "*Mis uñas se clavan en mis palmas. -- Solo dilo. Aunque las palabras salgan feas.*"
     },
-    "day4_afternoon_park": {
+    "confess_dain_yes_5": {
         "name": "Yo",
-        "text": "*Llegamos al parque junto al río. El atardecer brillaba sobre el agua. Un paisaje de película.*"
+        "text": "\"-- Cuando esos ojos no me miran, no puedo respirar. No sé desde cuándo es así.\""
     },
-    "day4_sunset_approach": {
+    "confess_dain_yes_6": {
         "name": "Yo",
-        "text": "*Caminamos despacio siguiendo la orilla del río. Ondas doradas se mecen sobre el agua. El tiempo parece ralentizarse.*"
+        "text": "\"Me gustas.\""
     },
-    "day4_sunset_colors": {
+    "confess_dain_yes_7": {
         "name": "Yo",
-        "text": "*El cielo pasa del naranja al rosa y de ahí al violeta. Nunca había visto un cielo así.*"
+        "text": "*Tres sílabas resuenan en el gimnasio vacío. En este mismo lugar donde ella dijo '¿Gimnasio, va?' el Día 1.*"
     },
-    "day4_sunset_wind": {
+    "confess_dain_yes_8": {
         "name": "Yo",
-        "text": "*Una brisa cálida nos roza. Un viento que mezcla olor a hierba y agua. El suave murmullo del río suena como música de fondo.*"
+        "text": "*Dain está congelada. Su energía ha desaparecido. -- Y entonces sus ojos se llenan lentamente. Se cubre la cara con ambas manos. Entre sus dedos se asoman mejillas rojas.*"
     },
-    "day4_sunset_stare": {
-        "name": "Sistema",
-        "text": ""
+    "confess_dain_yes_9": {
+        "name": "다인(Dain)",
+        "text": "\"...Espera. Mi corazón -- creo que voy a llorar -- ¿por qué estoy llorando?, estoy feliz --\""
     },
-    "day4_sunset_stare_seoyeon": {
+    "confess_dain_yes_10": {
+        "name": "다인(Dain)",
+        "text": "\"Yo también te quiero. Muchísimo.\""
+    },
+    "confess_dain_no_1": {
         "name": "Yo",
-        "text": "*Seoyeon se apoya en la barandilla contemplando el atardecer. El pelo le ondea con el viento. Su perfil bañado por la luz del ocaso... es preciosa de verdad.*"
+        "text": "\"...Este lugar es realmente grande.\""
     },
-    "day4_sunset_stare_yuna": {
+    "confess_dain_no_2": {
         "name": "Yo",
-        "text": "*Yuna observa el atardecer en silencio. Su cara, siempre tan inexpresiva, se ha suavizado. Es la primera vez que la veo así.*"
+        "text": "*Palabras cobardes. Lo sé.*"
     },
-    "day4_sunset_stare_dain": {
+    "confess_dain_no_3": {
         "name": "Yo",
-        "text": "*Dain dejó escapar un pequeño \"guau...\". A diferencia de su habitual energía, se quedó quieta mirando el atardecer. De pronto parece más madura.*"
+        "text": "*Dain bota un balón de voleibol. Una vez. Dos veces. -- A la tercera, se detiene.*"
     },
-    "day4_sunset_stare_nurse": {
-        "name": "Yo",
-        "text": "*Entrecierra los ojos contemplando el atardecer. Bañada por la luz del ocaso, parece un cuadro.*"
-    },
-    "day4_sunset_stare_teacher": {
-        "name": "Yo",
-        "text": "*Se apoya en la barandilla mirando el río. Su severidad habitual ha desaparecido, solo queda una expresión suave.*"
-    },
-    "day4_afternoon_sunset": {
-        "name": "Yo",
-        "text": "*La luz del atardecer le ilumina la cara. Extrañamente, no me salen las palabras.*"
-    },
-    "day4_afternoon_silence": {
-        "name": "Yo",
-        "text": "*......*"
-    },
-    "day4_afternoon_feeling": {
-        "name": "Yo",
-        "text": "*Ahora sé con certeza qué es este sentimiento. Desde el primer día que me transferí... lo he estado sintiendo todo este tiempo.*"
-    },
-    "day4_confession_choice": {
-        "name": "Yo",
-        "text": "*Ahora mismo, en este instante... ¿le digo lo que siento?*",
-        "choices": [
-            "\"Sabes que si huyes te voy a perseguir. Mejor hablemos aquí.\"",
-            "\"...Este paisaje es precioso de verdad.\"  (Todavía no)"
-        ]
-    },
-    "day4_confess": {
-        "name": "Yo",
-        "text": "\"La verdad es que desde que me transferí, cada día he pensado en una sola persona.\""
-    },
-    "day4_confess_heartbeat": {
-        "name": "Yo",
-        "text": "*El corazón me late como loco. Bum, bum, bum. ¿Será que también puede oírlo?*"
-    },
-    "day4_confess_2": {
-        "name": "Yo",
-        "text": "\"Al principio pensé que simplemente era alguien genial. Pero ahora lo tengo claro.\""
-    },
-    "day4_confess_breathe": {
-        "name": "Yo",
-        "text": "*Tomé aire profundamente. Apreté los puños con fuerza. Si no es ahora, me arrepentiré toda la vida.*"
-    },
-    "day4_confess_3": {
-        "name": "Yo",
-        "text": "\"Me gustas. De verdad.\""
-    },
-    "day4_confess_silence": {
-        "name": "Yo",
-        "text": "*En cuanto terminé de hablar, silencio total. El mundo teñido de atardecer parece haberse detenido. Un segundo se siente como una hora.*"
-    },
-    "day4_confess_response": {
-        "name": "Sistema",
-        "text": ""
-    },
-    "day4_confess_to_seoyeon": {
-        "name": "Yo",
-        "text": "\"Seoyeon. Cada vez que sonríes, mi mirada se queda clavada y no puedo apartar los ojos. Ya no puedo seguir haciéndome el tonto.\""
-    },
-    "day4_confess_to_yuna": {
-        "name": "Yo",
-        "text": "\"Yuna. Desde que descubrí la calidez que escondes detrás de esa cara tan seria, mis ojos siempre te han estado buscando.\""
-    },
-    "day4_confess_to_dain": {
-        "name": "Yo",
-        "text": "\"Dain. Cuando sonríes, me sale la sonrisa sin darme cuenta. Y en algún momento, me siento vacío si no estás.\""
-    },
-    "day4_confess_to_nurse": {
-        "name": "Yo",
-        "text": "\"No le digo esto como alumno. Se lo digo como persona. Me gusta.\""
-    },
-    "day4_confess_to_teacher": {
-        "name": "Yo",
-        "text": "\"Profesora. Cuando es estricta, cuando sonríe, todo me gusta. Esto es lo que siento de verdad, y es solo para usted.\""
-    },
-    "day4_accept_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"...Yo también. Desde el primer día que te transferiste. ¿Lo recuerdas? Ahora eres completamente mío.\""
-    },
-    "day4_accept_seoyeon_moment": {
-        "name": "Yo",
-        "text": "*Los ojos de Seoyeon se llenan de lágrimas. Esas lágrimas brillando con la luz del atardecer... parecen las joyas más bonitas del mundo.*"
-    },
-    "day4_accept_seoyeon_close": {
-        "name": "Seoyeon",
-        "text": "\"Si miras a otra chica... en serio que no te lo voy a perdonar. ¿Entendido?\" *Seoyeon entrelazó sus dedos con los míos y apretó fuerte.*"
-    },
-    "day4_accept_yuna": {
-        "name": "Yuna",
-        "text": "\"...Tonto. Yo iba a decirlo primero.\""
-    },
-    "day4_accept_yuna_moment": {
-        "name": "Yo",
-        "text": "*Yuna bajó un poco la cabeza. Tiene las orejas rojas hasta las puntas. Tan diferente de lo habitual que siento que el corazón me va a estallar.*"
-    },
-    "day4_accept_yuna_close": {
-        "name": "Yuna",
-        "text": "\"...Estate quieto.\" *Yuna me agarró la manga con fuerza y apoyó la frente en mi hombro.*"
-    },
-    "day4_accept_dain": {
-        "name": "Dain",
-        "text": "\"¡¡Yo también!! ¡¡A mí también me gustas!! ¡¡Dios mío!! ...¿¡En serio?!\""
-    },
-    "day4_accept_dain_moment": {
-        "name": "Yo",
-        "text": "*Dain me agarró el brazo con las dos manos. La cara roja como un tomate, pero los ojos le brillan con fuerza.*"
-    },
-    "day4_accept_dain_close": {
-        "name": "Dain",
-        "text": "\"¡¿Ahora estamos saliendo, no?! ¿¡De verdad?! ¡¡Ahhh, me va a explotar el corazón!!\" *Dain saltaba sin parar, agarrándome la mano y sacudiéndola.*"
-    },
-    "day4_accept_nurse": {
-        "name": "Enfermera",
-        "text": "\"Lo sabía... Yo siento lo mismo.\""
-    },
-    "day4_accept_nurse_moment": {
-        "name": "Yo",
-        "text": "*Dio un paso más hacia mí. Un perfume suave me roza la nariz.*"
-    },
-    "day4_accept_nurse_close": {
-        "name": "Enfermera",
-        "text": "\"En la escuela es secreto. ¿De acuerdo?\" *Me susurró al oído, muy cerca.*"
-    },
-    "day4_accept_teacher": {
-        "name": "Profesora",
-        "text": "\"Un alumno no debería decir esas cosas... pero yo también, tonto.\""
-    },
-    "day4_accept_teacher_moment": {
-        "name": "Yo",
-        "text": "*Los ojos de la profesora tiemblan. Este lado suyo... solo yo puedo verlo.*"
-    },
-    "day4_accept_teacher_close": {
-        "name": "Profesora",
-        "text": "\"...Prepárate. Ya no eres solo mi alumno.\" *Sonrió brevemente. Su severidad habitual se había esfumado por completo.*"
-    },
-    "day4_after_confess": {
-        "name": "Yo",
-        "text": "*Bajo el atardecer, nuestras dos sombras se fundieron en una sola. Fue el momento más feliz del mundo.*"
-    },
-    "day4_wait": {
-        "name": "Yo",
-        "text": "\"...Este paisaje es precioso de verdad.\""
-    },
-    "day4_wait_conflict": {
-        "name": "Yo",
-        "text": "*Las palabras que quería decir me subieron hasta la garganta... pero las tragué. Aún no es el momento.*"
-    },
-    "day4_wait_walk": {
-        "name": "Yo",
-        "text": "*Caminamos juntos por la orilla del río. Sin decir nada, pero un silencio que no incomoda.*"
-    },
-    "day4_wait_talk": {
-        "name": "Yo",
-        "text": "\"...Hoy ha sido genial de verdad. Gracias.\""
-    },
-    "day4_wait_linger": {
-        "name": "Yo",
-        "text": "*En aquel cruce tendríamos que separarnos. Nunca pensé que dar un solo paso pudiera costar tanto.*"
-    },
-    "day4_wait_feelings": {
-        "name": "Yo",
-        "text": "*Las palabras que me tragué antes vuelven a subir. 'Me gustas' — esas dos palabras golpean las paredes de mi corazón.*"
-    },
-    "day4_wait_response": {
-        "name": "Sistema",
-        "text": ""
-    },
-    "day4_wait_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"Yo también me lo pasé genial. Quedamos otra vez.\" *Seoyeon sonrió, pero en sus ojos se asomó algo de nostalgia.*"
-    },
-    "day4_wait_yuna": {
-        "name": "Yuna",
-        "text": "\"...No estuvo mal. ...Repitamos algún día.\" *Yuna giró ligeramente la cabeza. ¿Estará escondiendo su expresión?*"
-    },
-    "day4_wait_dain": {
-        "name": "Dain",
-        "text": "\"¡¡Claro que fue divertido!! ¡¡La próxima vez también!!\" *Dain sonrió con ganas, pero por un momento vi cómo se mordía el labio.*"
-    },
-    "day4_wait_nurse": {
-        "name": "Enfermera",
-        "text": "\"Me lo pasé muy bien. ¿Quedamos otra vez?\" *Su sonrisa parecía más frágil que de costumbre.*"
-    },
-    "day4_wait_teacher": {
-        "name": "Profesora",
-        "text": "\"Bueno, no estuvo mal. Avísame la próxima vez.\" *Sonrió, pero sus pasos al girarse fueron lentos.*"
-    },
-    "day4_wait_goodbye": {
-        "name": "Yo",
-        "text": "*Nos despedimos y di media vuelta. Quería mirar atrás, pero me aguanté.*"
-    },
-    "day4_wait_regret": {
-        "name": "Yo",
-        "text": "*Al final miré atrás. También se había girado. En el instante en que nuestros ojos se cruzaron, los dos apartamos la mirada a toda prisa.*"
-    },
-    "day4_wait_home": {
-        "name": "Yo",
-        "text": "*De vuelta a casa. Las palabras que no dije pesan en el pecho. La próxima vez... seguro que se lo digo. Seguro.*"
-    },
-    "day4_wait_end": {
-        "name": "Yo",
-        "text": "*En mi corazón, las palabras no dichas seguían dando vueltas.*"
+    "confess_dain_no_4": {
+        "name": "다인(Dain)",
+        "text": "\"...La próxima vez, no huyas.\""
     }
 }

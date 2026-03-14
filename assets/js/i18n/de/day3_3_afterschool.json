@@ -1,581 +1,328 @@
 {
-    "day3_afternoon_start": {
+    "after3_start": {
         "name": "Ich",
-        "text": "*Die Schlussglocke läutet. Freitagnachmittag. Ein Gefühl von Freiheit, vermischt mit einer seltsamen Anspannung.*"
+        "text": "*Nach der Schule. Die Nachwirkungen des Mittagessens halten an. — Trotzdem muss ich irgendwohin.*"
     },
-    "day3_afternoon_check": {
+    "after3_choice": {
         "name": "Ich",
-        "text": "*Als ich meine Tasche packen will...*"
+        "text": "*Wohin soll ich gehen.*",
+        "choices": [
+            "Zum Schülerratszimmer",
+            "Zur Bibliothek",
+            "Zur Turnhalle"
+        ]
     },
-    "day3_afternoon_tension": {
+    "after3_seo_1": {
         "name": "Ich",
-        "text": "*Die Luft im Klassenzimmer ist schwer. Wohl wegen der Sache beim Mittagessen.*"
+        "text": "*Ich öffnete die Tür zum Schülerratszimmer. — 서연(Seoyeon) liegt über dem Schreibtisch zusammengesunken.*"
     },
-    "day3_afternoon_tension_2": {
-        "name": "Seoyeon",
-        "text": "\"...{name}. Können wir kurz reden?\""
-    },
-    "day3_afternoon_confrontation": {
+    "after3_seo_2": {
         "name": "Ich",
-        "text": "*Seoyeon hat mich auf den Flur gezogen. Von ihrem üblichen lässigen Lächeln keine Spur.*"
+        "text": "*Das habe ich noch nie gesehen. Die perfekte Schülerratsvorsitzende — wehrlos über dem Tisch zusammengesunken.*"
     },
-    "day3_afternoon_confrontation_2": {
-        "name": "Seoyeon",
-        "text": "\"Wegen dem Mittagessen. Jedes Mal wenn du den anderen zulächelst, fühlt es sich an, als würde in mir was zusammenbrechen. Sag ehrlich – hast du dich mit allen fürs Wochenende verabredet?\""
-    },
-    "day3_afternoon_confrontation_3": {
+    "after3_seo_3": {
         "name": "Ich",
-        "text": "*Seoyeons Augen zittern.*",
+        "text": "*서연(Seoyeon) hebt den Kopf, als sie jemanden bemerkt. Ihre Augen sehen müde aus. Ihr Make-up ist leicht verschmiert.*"
+    },
+    "after3_seo_4": {
+        "name": "서연(Seoyeon)",
+        "text": "\"......\""
+    },
+    "after3_seo_5": {
+        "name": "{name}",
+        "text": "\"서연(Seoyeon)?\""
+    },
+    "after3_seo_6": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Hast du das gesehen?\""
+    },
+    "after3_seo_7": {
+        "name": "{name}",
+        "text": "\"Was gesehen?\""
+    },
+    "after3_seo_8": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Diese Seite von mir. — Das bleibt ein Geheimnis.\""
+    },
+    "after3_seo_9": {
+        "name": "Ich",
+        "text": "*서연(Seoyeon) richtet ihre Haltung auf. Aber — ihr übliches perfektes Lächeln kehrt nicht zurück.*"
+    },
+    "after3_seo_choice": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Wenn ich dich das nächste Mal um einen Gefallen bitte, musst du ja sagen. Ohne Fragen. — Betrachte es als Preis.\"",
+        "choices": [
+            "\"Du musst nicht perfekt sein, weißt du\"",
+            "\"Ich werde dein Geheimnis hüten\""
+        ]
+    },
+    "after3_seo_choice1": {
+        "name": "Ich",
+        "text": "*서연(Seoyeon) hält inne. Ihre Lippen zittern. — Dann lächelt sie. Ein ungeübtes Lächeln.*"
+    },
+    "after3_seo_choice1_react": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Solche Worte. Die sollte man nicht so leichtfertig sagen.\""
+    },
+    "after3_seo_choice2": {
+        "name": "Ich",
+        "text": "*Ihre Augen glänzen feucht. — Sie hat nicht geweint. Noch nicht.*"
+    },
+    "after3_seo_end": {
+        "name": "Ich",
+        "text": "*Diese Worte wiegen schwer. — Ich glaube, ich beginne zu verstehen, wie gewaltig es für diese Person ist, eine unvollkommene Seite von sich zu zeigen.*"
+    },
+    "after3_yuna_1": {
+        "name": "Ich",
+        "text": "*Der Anbau der Bibliothek. 유나(Yuna)s geheimer Leseort. — Die Tür steht offen.*"
+    },
+    "after3_yuna_2": {
+        "name": "Ich",
+        "text": "*Ich gehe rein, aber 유나(Yuna) ist nicht da. Stattdessen — liegt ein Notizbuch aufgeschlagen auf dem Sofa. Voller Handschrift.*"
+    },
+    "after3_yuna_3": {
+        "name": "Ich",
+        "text": "*Es ist ein Roman. Ein Roman, den 유나(Yuna) geschrieben hat. — Darf ich ihn lesen?*"
+    },
+    "after3_yuna_4": {
+        "name": "Ich",
+        "text": "*Erste Seite.*"
+    },
+    "after3_yuna_5": {
+        "name": "Ich",
+        "text": "*‚Eines Tages kam ein Austauschschüler. Er kam in die Bibliothek und setzte sich wortlos neben mich. — Es störte mich nicht.‘*"
+    },
+    "after3_yuna_6": {
+        "name": "유나(Yuna)",
+        "text": "\"Was machst du.\""
+    },
+    "after3_yuna_7": {
+        "name": "Ich",
+        "text": "*유나(Yuna)s Stimme von hinten. Ich drehe mich um und sie steht da mit zwei Getränken. — Sie erstarrt, als sie sieht, dass ich das Notizbuch lese.*"
+    },
+    "after3_yuna_8": {
+        "name": "유나(Yuna)",
+        "text": "\"...Das.\""
+    },
+    "after3_yuna_9": {
+        "name": "Ich",
+        "text": "*Ihre Ohren. Rot. — Es ist das erste Mal, dass ich 유나(Yuna) erröten sehe.*"
+    },
+    "after3_yuna_choice": {
+        "name": "{name}",
+        "text": "\"Ich habe es gerne gelesen.\"",
+        "choices": [
+            "\"Vielleicht solltest du den Namen des Protagonisten ändern\"",
+            "\"Wie endet es?\""
+        ]
+    },
+    "after3_yuna_choice1": {
+        "name": "유나(Yuna)",
+        "text": "\"...Es gibt keinen Protagonistennamen.\""
+    },
+    "after3_yuna_choice1_2": {
+        "name": "{name}",
+        "text": "\"‚Ein Austauschschüler kam in die Bibliothek‘ ist nur ein Zufall?\""
+    },
+    "after3_yuna_choice1_3": {
+        "name": "유나(Yuna)",
+        "text": "\"...Romane sind. Fiktion.\""
+    },
+    "after3_yuna_choice1_react": {
+        "name": "Ich",
+        "text": "*Sie sagte \"Fiktion\", aber ihre Ohren lügen.*"
+    },
+    "after3_yuna_choice2": {
+        "name": "Ich",
+        "text": "*유나(Yuna) hält inne. Sie schaut auf das Notizbuch hinunter.*"
+    },
+    "after3_yuna_choice2_2": {
+        "name": "유나(Yuna)",
+        "text": "\"...Das Ende habe ich noch nicht entschieden.\""
+    },
+    "after3_yuna_choice2_3": {
+        "name": "유나(Yuna)",
+        "text": "\"...Weil es vorbei ist, wenn ich das Ende schreibe.\""
+    },
+    "after3_yuna_choice2_react": {
+        "name": "Ich",
+        "text": "*유나(Yuna) hat mehr als zwei Sätze hintereinander gesprochen. — Bei ihr ist das ein Beweis für Gefühle.*"
+    },
+    "after3_yuna_end": {
+        "name": "Ich",
+        "text": "*유나(Yuna) drückt das Notizbuch fest an ihre Brust.*"
+    },
+    "after3_dain_1": {
+        "name": "Ich",
+        "text": "*Die Turnhalle. 다인(Dain) dehnt sich alleine. Sie versucht leicht zu joggen und —*"
+    },
+    "after3_dain_2": {
+        "name": "Ich",
+        "text": "*— knickt leicht mit dem rechten Bein um. Sie verzieht das Gesicht.*"
+    },
+    "after3_dain_3": {
+        "name": "{name}",
+        "text": "\"다인(Dain)!\""
+    },
+    "after3_dain_4": {
+        "name": "다인(Dain)",
+        "text": "\"Ah! Alles gut!! Nur etwas umgeknickt!!\""
+    },
+    "after3_dain_5": {
+        "name": "{name}",
+        "text": "\"Sieht nicht gut aus.\""
+    },
+    "after3_dain_6": {
+        "name": "Ich",
+        "text": "*Zu viele Ausrufezeichen. — Viel zu viele. Benutzt sie mehr Ausrufezeichen, wenn es ihr nicht gut geht?*"
+    },
+    "after3_dain_choice": {
+        "name": "Ich",
+        "text": "*다인(Dain) setzt sich auf die Bank. Sie reibt sich das Knie.*",
+        "choices": [
+            "Mich neben sie setzen und still warten",
+            "\"Hast du Pflaster? Soll ich welche holen?\""
+        ]
+    },
+    "after3_dain_choice1": {
+        "name": "Ich",
+        "text": "*Ich setze mich wortlos neben sie. 다인(Dain) schaut kurz herüber.*"
+    },
+    "after3_dain_choice1_2": {
+        "name": "다인(Dain)",
+        "text": "\"...Warum fragst du nicht?\""
+    },
+    "after3_dain_choice1_3": {
+        "name": "{name}",
+        "text": "\"Weil du sagen würdest, dass alles gut ist.\""
+    },
+    "after3_dain_choice1_react": {
+        "name": "Ich",
+        "text": "*다인(Dain) stockt. — Dann lächelt sie leise. Ein Lächeln ohne Ausrufezeichen.*"
+    },
+    "after3_dain_choice1_react2": {
+        "name": "다인(Dain)",
+        "text": "\"...Stimmt. Ich hätte gesagt, alles gut.\""
+    },
+    "after3_dain_choice1_react3": {
+        "name": "다인(Dain)",
+        "text": "\"Danke. Dass du nichts gefragt hast.\""
+    },
+    "after3_dain_choice2": {
+        "name": "Ich",
+        "text": "*Eine stille 다인(Dain). — Ich glaube, ich spüre zum ersten Mal ihre wahre Temperatur.*"
+    },
+    "after3_dain_end": {
+        "name": "Ich",
+        "text": "*다인(Dain) boxt mir leicht gegen die Schulter. — Schwächer als gestern.*"
+    },
+    "after3_confront_1": {
+        "name": "Ich",
+        "text": "*Als ich nach der Schule rauskomme — wartet 서연(Seoyeon) im Flur. Arme verschränkt. Ohne ihre übliche Gelassenheit.*"
+    },
+    "after3_confront_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"{name}. Moment.\""
+    },
+    "after3_confront_3": {
+        "name": "Ich",
+        "text": "*서연(Seoyeon) führt mich ans Ende des Flurs. Wo niemand ist.*"
+    },
+    "after3_confront_4": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Wegen des Mittagessens.\""
+    },
+    "after3_confront_5": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Wenn du die anderen Mädchen anlächelst, bricht etwas in mir zusammen.\""
+    },
+    "after3_confront_6": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Sei ehrlich. Hast du allen das Wochenende versprochen?\""
+    },
+    "after3_confront_choice": {
+        "name": "Ich",
+        "text": "*서연(Seoyeon) sieht mich geradeheraus an. Nicht mit den Augen einer Schülerratsvorsitzenden. Mit den Augen eines Menschen.*",
         "choices": [
             "Ehrlich zugeben",
-            "Sagen, dass die Uhrzeiten verschieden sind",
-            "Sagen, nur bei Seoyeon ist es ernst gemeint"
+            "\"Die Uhrzeiten sind unterschiedlich, also dachte ich, es wäre in Ordnung\"",
+            "\"Nur mit dir meine ich es ernst\""
         ]
     },
-    "day3_afternoon_admit": {
+    "after3_confront_admit": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Weil du nicht ablehnen konntest.\""
+    },
+    "after3_confront_admit_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Das ist das Grausamste, was du sagen kannst, {name}. Freundlichkeit, die nicht ablehnen kann — gibt falsche Hoffnung.\""
+    },
+    "after3_confront_admit_3": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Ich will nicht eine von mehreren Optionen sein.\""
+    },
+    "after3_confront_admit_4": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Entweder die einzige Antwort oder gar nichts. — Halbe Sachen kann ich nicht.\""
+    },
+    "after3_confront_admit_5": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Heute lasse ich das Dach nicht offen.\""
+    },
+    "after3_confront_admit_6": {
         "name": "Ich",
-        "text": "\"...Ja. Sorry. Ich konnte einfach nicht nein sagen.\""
+        "text": "*Ihr Rücken ist gerade. Perfekt. — Aber ihre Schultern zittern.*"
     },
-    "day3_afternoon_admit_react": {
-        "name": "Seoyeon",
-        "text": "\"Nicht nein sagen können? Du hast keine Ahnung, wie erbärmlich mich diese halbherzige Nettigkeit fühlen lässt.\""
+    "after3_confront_excuse": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Siehst du nicht, dass genau das das Problem ist?\""
     },
-    "day3_afternoon_admit_react_2": {
-        "name": "Seoyeon",
-        "text": "\"Ich will nicht ein Teil deiner Freundlichkeit sein. Alles oder nichts. Entscheide dich, {name}.\""
+    "after3_confront_excuse_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Es geht nicht um die Anzahl der Versprechen. Es geht um ihr Gewicht.\""
     },
-    "day3_afternoon_justify": {
+    "after3_confront_lie": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Wirklich? Kann ich... das glauben?\""
+    },
+    "after3_confront_lie_2": {
         "name": "Ich",
-        "text": "\"Die Uhrzeiten sind alle verschieden... ich dachte, ich kann alle treffen...\""
+        "text": "*Augen, die glauben wollen. — Ich wusste nicht, dass eine Lüge so schwer wiegen kann.*"
     },
-    "day3_afternoon_justify_react": {
-        "name": "Seoyeon",
-        "text": "\"...Checkst du nicht, dass genau das das Problem ist?\""
-    },
-    "day3_afternoon_justify_react_2": {
-        "name": "Seoyeon",
-        "text": "\"...Okay. Am Wochenende wird sich zeigen.\""
-    },
-    "day3_afternoon_lie_seoyeon": {
+    "after3_confront_yuna_enter": {
         "name": "Ich",
-        "text": "\"Seoyeon, nur bei dir mein ich's ernst. Die anderen sind einfach...\""
+        "text": "*Nachdem 서연(Seoyeon) ging — steht 유나(Yuna) am Ende des Flurs. Ich weiß nicht, wie lange sie schon da war.*"
     },
-    "day3_afternoon_lie_seoyeon_react": {
-        "name": "Seoyeon",
-        "text": "\"...Wirklich? Kann ich dir das... glauben?\""
+    "after3_confront_yuna_1": {
+        "name": "유나(Yuna)",
+        "text": "\"Ich habe alles gehört.\""
     },
-    "day3_afternoon_lie_warning": {
+    "after3_confront_yuna_2": {
+        "name": "{name}",
+        "text": "\"유나(Yuna)...\""
+    },
+    "after3_confront_yuna_3": {
+        "name": "유나(Yuna)",
+        "text": "\"Ich will keine Entschuldigung.\""
+    },
+    "after3_confront_yuna_4": {
+        "name": "유나(Yuna)",
+        "text": "\"Ich will nur, dass du das Gewicht verstehst, an wessen Seite du stehen wirst.\""
+    },
+    "after3_confront_yuna_5": {
+        "name": "유나(Yuna)",
+        "text": "\"Lauf morgen nicht weg. Übernimm die Verantwortung für die Hoffnungen, die du geweckt hast.\""
+    },
+    "after3_confront_yuna_6": {
         "name": "Ich",
-        "text": "*Seoyeon lächelt. Aber... was sag ich den anderen?*"
+        "text": "*유나(Yuna) sprach in langen Sätzen. Mehrere Sätze. — Das bedeutet, dass sie so wütend ist.*"
     },
-    "day3_afternoon_jealousy_check": {
+    "after3_confront_end": {
         "name": "Ich",
-        "text": "*Die Stimmung beim Mittagessen war etwas seltsam... wird schon passen, oder?*"
+        "text": "*유나(Yuna) dreht sich um. — Sie bleibt nicht stehen.*"
     },
-    "day3_afternoon_approach": {
+    "after3_final": {
         "name": "Ich",
-        "text": "*Ich packe meine Tasche und stehe auf – da kommt jemand auf mich zu.*"
-    },
-    "day3_afternoon_seoyeon_approach": {
-        "name": "Seoyeon",
-        "text": "\"...{name}, hast du kurz Zeit?\""
-    },
-    "day3_afternoon_seoyeon_talk": {
-        "name": "Seoyeon",
-        "text": "\"Wegen dem Mittagessen... sorry. Ich war wohl etwas empfindlich.\""
-    },
-    "day3_afternoon_seoyeon_talk_2": {
-        "name": "Seoyeon",
-        "text": "\"Aber mal ehrlich, wenn ich sehe, wie du mit Yuna oder Dain so vertraut bist, dann ist das schon so ein Gefühl.\"",
-        "choices": [
-            "\"Du bist mir am liebsten, Seoyeon\"",
-            "\"Sind alles wichtige Freunde\"",
-            "\"Bist du eifersüchtig?\""
-        ]
-    },
-    "day3_afternoon_seoyeon_comfort": {
-        "name": "Seoyeon",
-        "text": "\"...Echt? Das zu hören macht's etwas besser.\""
-    },
-    "day3_afternoon_seoyeon_friend": {
-        "name": "Seoyeon",
-        "text": "\"...Ja. Freunde. Verstanden.\""
-    },
-    "day3_afternoon_seoyeon_tease": {
-        "name": "Seoyeon",
-        "text": "\"...Das ist es nicht... Ach, schon gut, schon gut.\""
-    },
-    "day3_afternoon_yuna_approach": {
-        "name": "Yuna",
-        "text": "\"...{name}.\""
-    },
-    "day3_afternoon_yuna_talk": {
-        "name": "Yuna",
-        "text": "\"Beim Mittagessen... ich hab gesehen, wohin dein Blick ging.\""
-    },
-    "day3_afternoon_yuna_talk_2": {
-        "name": "Ich",
-        "text": "*Yunas kühle Augen durchbohren mich.*",
-        "choices": [
-            "\"Tut mir leid, Yuna\"",
-            "\"Morgen bin ich bei dir\"",
-            "\"Warum, bist du sauer?\""
-        ]
-    },
-    "day3_afternoon_yuna_apologize": {
-        "name": "Yuna",
-        "text": "\"Ich will keine Entschuldigung. Ich will, dass du verstehst, was es bedeutet, neben wem du stehst.\""
-    },
-    "day3_afternoon_yuna_promise": {
-        "name": "Yuna",
-        "text": "\"...Das werde ich nicht vergessen.\""
-    },
-    "day3_afternoon_yuna_question": {
-        "name": "Yuna",
-        "text": "\"...Sauer? Nein. Ich wollte nur etwas bestätigen.\""
-    },
-    "day3_afternoon_yuna_warning": {
-        "name": "Yuna",
-        "text": "\"Morgen nicht wegrennen. Die Erwartungen, die du geweckt hast – dafür stehst du gerade.\""
-    },
-    "day3_afternoon_dain_approach": {
-        "name": "Dain",
-        "text": "\"{name}.\""
-    },
-    "day3_afternoon_dain_talk": {
-        "name": "Dain",
-        "text": "\"Beim Mittagessen... ich wollte auch mitmachen. Nächstes Mal lässt du mich mit, ja?\""
-    },
-    "day3_afternoon_dain_talk_2": {
-        "name": "Ich",
-        "text": "*Dain bläst die Backen auf.*",
-        "choices": [
-            "\"Sorry, nächstes Mal essen wir zusammen\"",
-            "\"Ich komm morgen zum Training\"",
-            "\"Süß, bist du sauer?\""
-        ]
-    },
-    "day3_afternoon_dain_sorry": {
-        "name": "Dain",
-        "text": "\"...Okay. Aber halt das Versprechen.\""
-    },
-    "day3_afternoon_dain_promise": {
-        "name": "Dain",
-        "text": "\"Echt?! Dann verziehen!! Mach dich auf meinen Spike gefasst!!\""
-    },
-    "day3_afternoon_dain_tease": {
-        "name": "Dain",
-        "text": "\"...Was soll das. Süß ist hier gar nichts.\""
-    },
-    "day3_afternoon_normal": {
-        "name": "Ich",
-        "text": "*Ein friedlicher Nachmittag nach der Schule. Zeit, nach Hause zu gehen.*"
-    },
-    "day3_afternoon_transition": {
-        "name": "Ich",
-        "text": "*Als ich gerade durchs Schultor will...*"
-    },
-    "day3_afternoon_gate": {
-        "name": "Ich",
-        "text": "*Jemand scheint zu warten.*"
-    },
-    "day3_afternoon_multiple_wait": {
-        "name": "Ich",
-        "text": "*...Warum stehen die alle vor dem Schultor?*"
-    },
-    "day3_afternoon_multiple_no_seoyeon": {
-        "name": "Ich",
-        "text": "*Vor dem Schultor stehen mehrere Leute. Warten die alle auf mich?*"
-    },
-    "day3_afternoon_multiple_scene": {
-        "name": "Seoyeon",
-        "text": "\"{name}, lass zusammen geh... Hä?\""
-    },
-    "day3_afternoon_three_way": {
-        "name": "Yuna",
-        "text": "\"...Wir treffen uns mal wieder.\""
-    },
-    "day3_afternoon_three_way_2": {
-        "name": "Ich",
-        "text": "*Seoyeon und Yuna starren sich gegenseitig an.*"
-    },
-    "day3_afternoon_two_way_dain": {
-        "name": "Dain",
-        "text": "\"Hä? Seoyeon auch hier?! Ich wollte auch mit {name} zusammen gehen!!\""
-    },
-    "day3_afternoon_choose_walk": {
-        "name": "Ich",
-        "text": "*Mit wem gehe ich?*",
-        "choices": [
-            "Mit Seoyeon gehen",
-            "Mit Yuna gehen",
-            "Mit Dain gehen",
-            "Allein gehen"
-        ]
-    },
-    "day3_afternoon_seoyeon_walk": {
-        "name": "Ich",
-        "text": "\"Seoyeon, lass zusammen gehen.\""
-    },
-    "day3_afternoon_seoyeon_walk_2": {
-        "name": "Seoyeon",
-        "text": "\"Ja. Los.\""
-    },
-    "day3_afternoon_seoyeon_walk_others": {
-        "name": "Ich",
-        "text": "*Ich spüre Blicke in meinem Rücken, aber... gerade ist es schön, mit Seoyeon zu gehen.*"
-    },
-    "day3_afternoon_seoyeon_walk_yuna_reaction": {
-        "name": "Ich",
-        "text": "*Yuna beobachtet uns aus der Ferne. Ihr Blick ist eiskalt.*"
-    },
-    "day3_afternoon_seoyeon_walk_dain_reaction": {
-        "name": "Dain",
-        "text": "\"...Ich geh schon mal vor.\""
-    },
-    "day3_afternoon_seoyeon_talk_walk": {
-        "name": "Seoyeon",
-        "text": "\"...{name}. Lass den Uferweg nehmen. Der Sonnenuntergang ist heute schön.\""
-    },
-    "day3_afternoon_seoyeon_sunset": {
-        "name": "Ich",
-        "text": "*Der Sonnenuntergang spiegelt sich funkelnd im Fluss. Seoyeons Gesicht taucht in orangenes Licht.*"
-    },
-    "day3_afternoon_seoyeon_sunset_2": {
-        "name": "Seoyeon",
-        "text": "*Bleibt plötzlich stehen und stellt sich vor mich* \"...{name}. Eine Frage nur.\""
-    },
-    "day3_afternoon_seoyeon_sunset_3": {
-        "name": "Seoyeon",
-        "text": "*Mit dem Sonnenuntergang im Rücken leuchten Seoyeons Augen* \"Morgen... triffst du nur mich, ja?\"",
-        "choices": [
-            "\"Na klar\"",
-            "*Greift nach Seoyeons Hand*",
-            "\"...Ich versuch's\""
-        ]
-    },
-    "day3_afternoon_seoyeon_pinky": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon streckt ihren kleinen Finger aus* \"Dann schwör. Wer sein Versprechen bricht... muss zehntausend Nadeln schlucken.\""
-    },
-    "day3_afternoon_seoyeon_hand": {
-        "name": "Seoyeon",
-        "text": "*Seoyeons Hand zittert, dann greift sie meine fest* \"...Idiot. Nicht hier Händchen halten.\""
-    },
-    "day3_afternoon_seoyeon_try": {
-        "name": "Seoyeon",
-        "text": "*Kurz enttäuscht, dann ein Lächeln* \"...‚Versuchen'. Etwas unbefriedigend.\""
-    },
-    "day3_afternoon_seoyeon_freetalk": {
-        "name": "Ich",
-        "text": "*Seoyeon und ich gehen Seite an Seite den Uferweg im Sonnenuntergang.*",
-        "context": "Mit Seoyeon auf dem Uferweg bei Sonnenuntergang. Nach ‚Morgen triffst du nur mich' kam Kleiner-Finger-Schwur/Händchenhalten. Romantische Stimmung.",
-        "personality": "Seoyeon ist der Cool-Beauty-Typ. Direkte Fakten-Bomben, entspannt, charmant frech. Starker Besitzanspruch, bei Eifersucht schonungslos ehrlich."
-    },
-    "day3_afternoon_seoyeon_talk_walk_2": {
-        "name": "Seoyeon",
-        "text": "\"Das hier ist unsere Zeit zu zweit. Oder?\""
-    },
-    "day3_afternoon_seoyeon_guilt": {
-        "name": "Ich",
-        "text": "*‚Unsere Zeit zu zweit'. Die anderen Verabredungen schießen mir durch den Kopf.*",
-        "choices": [
-            "\"Ja, ich freu mich drauf\"",
-            "\"Ehrlich gesagt...\" *Sagt die Wahrheit*"
-        ]
-    },
-    "day3_afternoon_seoyeon_happy": {
-        "name": "Seoyeon",
-        "text": "\"Gut, ich mich auch. Bis morgen. Schlaf gut.\""
-    },
-    "day3_afternoon_seoyeon_confess_walk": {
-        "name": "Seoyeon",
-        "text": "\"...Was? Du hast noch andere Verabredungen?\""
-    },
-    "day3_afternoon_seoyeon_angry": {
-        "name": "Seoyeon",
-        "text": "\"...Okay. Am Wochenende wird sich zeigen, wen du wirklich magst.\""
-    },
-    "day3_afternoon_yuna_walk": {
-        "name": "Ich",
-        "text": "\"Yuna, lass zusammen gehen.\""
-    },
-    "day3_afternoon_yuna_walk_2": {
-        "name": "Yuna",
-        "text": "\"...Ja.\""
-    },
-    "day3_afternoon_yuna_walk_others": {
-        "name": "Seoyeon",
-        "text": "\"...Na gut.\""
-    },
-    "day3_afternoon_yuna_talk_walk": {
-        "name": "Ich",
-        "text": "*Ich gehe mit Yuna einen ruhigen Weg. Wenig Worte, aber angenehm.*"
-    },
-    "day3_afternoon_yuna_cat": {
-        "name": "Ich",
-        "text": "*Am Straßenrand kauert eine kleine Katze. Yuna bleibt stehen.*"
-    },
-    "day3_afternoon_yuna_cat_2": {
-        "name": "Yuna",
-        "text": "*Kniet sich leise hin und streichelt die Katze* \"...Gut, dass du bei mir bist.\""
-    },
-    "day3_afternoon_yuna_cat_3": {
-        "name": "Ich",
-        "text": "*Wie Yuna die Katze streichelt... so sanft.*",
-        "choices": [
-            "*Streichelt auch die Katze*",
-            "*Streichelt Yuna über den Kopf*",
-            "*Beobachtet still*"
-        ]
-    },
-    "day3_afternoon_yuna_cat_pat": {
-        "name": "Yuna",
-        "text": "*Unsere Hände berühren sich auf der Katze* \"...Warm.\""
-    },
-    "day3_afternoon_yuna_head_pat": {
-        "name": "Yuna",
-        "text": "*Erstarrt unter meiner Hand* \"...Streichelst du gerade mich?\""
-    },
-    "day3_afternoon_yuna_head_pat_2": {
-        "name": "Yuna",
-        "text": "*Schließt die Augen* \"...Hör nicht auf. Noch ein bisschen.\""
-    },
-    "day3_afternoon_yuna_cat_watch": {
-        "name": "Yuna",
-        "text": "*Nimmt die Katze auf den Arm* \"...Die sieht aus wie {name}. Warm und... ein bisschen doof.\""
-    },
-    "day3_afternoon_yuna_freetalk": {
-        "name": "Ich",
-        "text": "*Yuna und ich gehen nebeneinander. Ihr Gesichtsausdruck ist weicher als sonst.*",
-        "context": "Auf dem Heimweg mit Yuna, nachdem wir zusammen eine Katze gestreichelt haben. Yunas Ausdruck ist weicher als gewöhnlich.",
-        "personality": "Yuna ist verträumt und direkt, geht ihren eigenen Weg. Spricht in kurzen, kryptischen Sätzen. Kühl, aber wenn sie sich öffnet, überrascht sie."
-    },
-    "day3_afternoon_yuna_talk_walk_2": {
-        "name": "Yuna",
-        "text": "\"...{name}. Morgen Nacht, vergiss es nicht.\""
-    },
-    "day3_afternoon_yuna_talk_walk_3": {
-        "name": "Yuna",
-        "text": "\"Hintereingang der Schule. 20 Uhr. Zu spät kommen... geht nicht.\""
-    },
-    "day3_afternoon_yuna_warning_walk": {
-        "name": "Ich",
-        "text": "*In Yunas Stimme liegt ein eigenartiges Gewicht.*",
-        "choices": [
-            "\"Ich komm auf keinen Fall zu spät\"",
-            "\"Und wenn ich doch zu spät komme?\""
-        ]
-    },
-    "day3_afternoon_yuna_promise_keep": {
-        "name": "Yuna",
-        "text": "\"...Gut. Ich vertrau dir.\""
-    },
-    "day3_afternoon_yuna_late_question": {
-        "name": "Yuna",
-        "text": "\"...Dann geht es nicht. Auf keinen Fall.\""
-    },
-    "day3_afternoon_yuna_late_warning": {
-        "name": "Ich",
-        "text": "*Yunas Augen haben gerade seltsam aufgeleuchtet... war bestimmt Einbildung, oder?*"
-    },
-    "day3_afternoon_dain_walk": {
-        "name": "Ich",
-        "text": "\"Dain, lass zusammen gehen.\""
-    },
-    "day3_afternoon_dain_walk_2": {
-        "name": "Dain",
-        "text": "\"Juhu! Los geht's!!\""
-    },
-    "day3_afternoon_dain_talk_walk": {
-        "name": "Dain",
-        "text": "\"{name}! Siehst du den Konbini da drüben?! Ich hab Durst!!\""
-    },
-    "day3_afternoon_dain_store": {
-        "name": "Ich",
-        "text": "*Dain stürmt in den Konbini. Bleibt vor dem Eis-Regal stehen.*"
-    },
-    "day3_afternoon_dain_store_2": {
-        "name": "Dain",
-        "text": "\"Du suchst eins aus! Wenn ich selbst wähle, will ich alles kaufen!\"",
-        "choices": [
-            "*Sucht eins aus*",
-            "*Kauft zwei und schlägt vor, eins zu teilen*"
-        ]
-    },
-    "day3_afternoon_dain_ice_one": {
-        "name": "Dain",
-        "text": "*Nimmt das Eis entgegen* \"...Danke. {name} ist halt der Beste!\""
-    },
-    "day3_afternoon_dain_ice_share": {
-        "name": "Dain",
-        "text": "*Wird bei dem Teilen-Vorschlag knallrot* \"T-teilen?! Ist das nicht indirekt... Nee, nee! Ist nur teilen!!\""
-    },
-    "day3_afternoon_dain_park": {
-        "name": "Ich",
-        "text": "*Dain und ich sitzen auf einer Parkbank in der Nähe. Eis essen und dem Sonnenuntergang zusehen.*"
-    },
-    "day3_afternoon_dain_park_2": {
-        "name": "Dain",
-        "text": "*Wird plötzlich still* \"...{name}. Ich hab gestern Nacht nicht schlafen können.\""
-    },
-    "day3_afternoon_dain_park_3": {
-        "name": "Dain",
-        "text": "\"Du hast gesagt, du kommst morgen zum Training... du kommst wirklich, oder? Du versetzt mich nicht, oder?\"",
-        "choices": [
-            "\"Auf gar keinen Fall\"",
-            "*Streichelt Dain über den Kopf*"
-        ]
-    },
-    "day3_afternoon_dain_promise_firm": {
-        "name": "Dain",
-        "text": "*Ihre Augen funkeln* \"...Echt?! Versprochen!!\""
-    },
-    "day3_afternoon_dain_pat": {
-        "name": "Dain",
-        "text": "*Wird beim Streicheln rot* \"Ich bin doch kein Kleinkind! ...Aber hör nicht auf.\""
-    },
-    "day3_afternoon_dain_freetalk": {
-        "name": "Ich",
-        "text": "*Auf der Parkbank mit Dain, Eis essen und quatschen.*",
-        "context": "Auf der Parkbank mit Dain, Eis teilen. Dain hat gesagt ‚Ich konnte nicht schlafen' und ist ungewöhnlich ernst.",
-        "personality": "Dain ist der Welpentyp – liebt Körperkontakt, extrem ehrgeizig. Ausrufezeichen-Feuerwerk. Tsundere. Außen fröhlich, innen verletzlich."
-    },
-    "day3_afternoon_dain_talk_walk_2": {
-        "name": "Dain",
-        "text": "\"Ich will {name} meine coole Seite zeigen!\"",
-        "choices": [
-            "\"Da bin ich gespannt!\"",
-            "\"Ich werd dich anfeuern\""
-        ]
-    },
-    "day3_afternoon_dain_excited": {
-        "name": "Dain",
-        "text": "\"Super!! Mach dich bereit!!\""
-    },
-    "day3_afternoon_dain_cheer": {
-        "name": "Dain",
-        "text": "\"Hehe... wenn du das sagst, muss ich mich noch mehr anstrengen!\""
-    },
-    "day3_afternoon_reject_all": {
-        "name": "Ich",
-        "text": "\"Sorry, heute will ich allein gehen.\""
-    },
-    "day3_afternoon_reject_reaction": {
-        "name": "Ich",
-        "text": "*Die Mienen aller erstarren. Enttäuschte Blicke.*"
-    },
-    "day3_afternoon_nobody_waiting": {
-        "name": "Ich",
-        "text": "*...Niemand da. Dumm von mir, mir Hoffnungen zu machen.*"
-    },
-    "day3_afternoon_alone_walk": {
-        "name": "Ich",
-        "text": "*Allein auf dem Heimweg. Was wird morgen wohl bringen.*"
-    },
-    "day3_afternoon_single_wait": {
-        "name": "Ich",
-        "text": "*Vor dem Schultor steht jemand.*"
-    },
-    "day3_afternoon_seoyeon_solo": {
-        "name": "Seoyeon",
-        "text": "\"{name}. Lass zusammen gehen.\""
-    },
-    "day3_afternoon_yuna_solo": {
-        "name": "Yuna",
-        "text": "\"...Hab gewartet.\""
-    },
-    "day3_afternoon_dain_solo": {
-        "name": "Dain",
-        "text": "\"Hey!! Beeil dich! Lass zusammen gehen!!\""
-    },
-    "day3_afternoon_teacher_wait": {
-        "name": "Lehrerin",
-        "text": "\"{name}, hast du Zeit? Soll ich dich fahren?\"",
-        "choices": [
-            "\"Ja, danke!\"",
-            "\"Nicht nötig, ich gehe zu Fuß\""
-        ]
-    },
-    "day3_afternoon_teacher_ride": {
-        "name": "Ich",
-        "text": "*Ich steige in ihr Auto. Der Feierabendweg taucht in den Sonnenuntergang.*"
-    },
-    "day3_afternoon_teacher_ride_2": {
-        "name": "Lehrerin",
-        "text": "*Fährt und sagt leise* \"...{name}. So zu zweit – das ist ein merkwürdiges Gefühl.\""
-    },
-    "day3_afternoon_teacher_ride_3": {
-        "name": "Ich",
-        "text": "*An der roten Ampel. Sie berührt leise meinen Handrücken.*",
-        "choices": [
-            "*Greift nach ihrer Hand*",
-            "\"Frau Lehrerin, das sollten wir nicht tun\"",
-            "*Lehnt sich still an ihre Schulter*"
-        ]
-    },
-    "day3_afternoon_teacher_hold": {
-        "name": "Lehrerin",
-        "text": "*Sie hält den Atem an* \"...Wenn die Ampel umschaltet, lässt du los. Versprochen.\""
-    },
-    "day3_afternoon_teacher_stop": {
-        "name": "Lehrerin",
-        "text": "*Sie lächelt wehmütig* \"...Stimmt. Ich muss mich zusammenreißen.\""
-    },
-    "day3_afternoon_teacher_lean": {
-        "name": "Lehrerin",
-        "text": "*Zuckt überrascht zusammen... und streicht mir dann leise durchs Haar* \"...Die Ampel ist noch rot.\""
-    },
-    "day3_afternoon_teacher_freetalk": {
-        "name": "Ich",
-        "text": "*Im Auto der Lehrerin auf dem Weg nach Hause.*",
-        "context": "Im Auto der Lehrerin auf dem Heimweg. Nach Händchenhalten oder Anlehnen im Sonnenuntergang.",
-        "personality": "Die Lehrerin hat einen trockenen Humor. Äußerlich nüchtern, aber der Kontrast zu ihren echten Gefühlen für den Schüler macht den Reiz aus."
-    },
-    "day3_afternoon_teacher_arrive": {
-        "name": "Lehrerin",
-        "text": "*Vor meinem Haus angekommen* \"Übermorgen Sonntag, Museum – nicht vergessen, ja? Ich warte auf dich.\""
-    },
-    "day3_afternoon_nurse_wait": {
-        "name": "Krankenschwester",
-        "text": "\"Oh, {name}. Wollte gerade Feierabend machen und da treff ich dich?\"",
-        "choices": [
-            "\"Wollen wir zusammen gehen?\"",
-            "\"Schönen Feierabend!\""
-        ]
-    },
-    "day3_afternoon_nurse_walk": {
-        "name": "Ich",
-        "text": "*Ich gehe neben der Krankenschwester. Sie schaut auf meinen Handrücken.*"
-    },
-    "day3_afternoon_nurse_band": {
-        "name": "Krankenschwester",
-        "text": "*Greift plötzlich nach meiner Hand und klebt ein Pflaster drauf* \"...Da ist ein Kratzer? Hast du nicht bemerkt.\""
-    },
-    "day3_afternoon_nurse_band_2": {
-        "name": "Ich",
-        "text": "*Da ist gar kein Kratzer... wollte sie einfach meine Hand halten?*",
-        "choices": [
-            "\"Da ist gar kein Kratzer?\"",
-            "*Hält einfach ihre Hand*"
-        ]
-    },
-    "day3_afternoon_nurse_caught": {
-        "name": "Krankenschwester",
-        "text": "*Wird rot, als wäre sie ertappt worden* \"...Hast du scharfe Augen. Ist halt... mein Zeichen.\""
-    },
-    "day3_afternoon_nurse_hold": {
-        "name": "Krankenschwester",
-        "text": "*Bleibt überrascht stehen... und drückt dann fest zu* \"...Du bist echt gefährlich. Zehn Sekunden so.\""
-    },
-    "day3_afternoon_nurse_freetalk": {
-        "name": "Ich",
-        "text": "*Neben der Krankenschwester auf dem Feierabendweg.*",
-        "context": "Mit der Krankenschwester auf dem Feierabendweg. Sie hat das Pflaster als Vorwand benutzt, um meine Hand zu halten.",
-        "personality": "Die Krankenschwester ist verspielt, verführerisch und reif. Sie schwankt zwischen ihren Gefühlen für den Schüler und ihrer Verantwortung als Lehrerin."
-    },
-    "day3_afternoon_nurse_arrive": {
-        "name": "Krankenschwester",
-        "text": "\"Sonntagabend 19 Uhr, nicht vergessen. Ich warte auf dich.\""
+        "text": "*Der Nachmittag ist vorbei. — Was ich heute gesehen habe, lässt mich nicht los.*"
     }
 }

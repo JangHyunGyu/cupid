@@ -1,372 +1,134 @@
 {
-    "after_home": {
+    "night_start": {
         "name": "나",
-        "text": "*어둠이 내려앉은 거리를 걷는다. 가로등 불빛이 길 위에 긴 그림자를 만든다.*"
+        "text": "*방에 돌아왔다. 침대에 누웠다.*"
     },
-    "after_home_walk": {
+    "night_start_2": {
         "name": "나",
-        "text": "*이 동네도 슬슬 익숙해지는 것 같아. 편의점 옆 골목을 지나면 우리 집... 저 자판기도 아까 본 기억이 있다.*"
+        "text": "*첫날 치고는 — 진이 빠졌다. 근데 나쁘지 않다.*"
     },
-    "after_home_neighborhood": {
+    "night_start_3": {
         "name": "나",
-        "text": "*조용한 주택가. 어딘가에서 저녁 반찬 냄새가 풍겨온다. 낯선 동네인데 이상하게 편안하다.*"
+        "text": "*핸드폰이 울린다. 학교 메신저.*"
     },
-    "after_home_arrive": {
-        "name": "나",
-        "text": "*집 앞에 도착. 열쇠를 꺼내 현관문을 연다. 아직 부모님은 안 계신 것 같다.*"
-    },
-    "after_home_2": {
-        "name": "나",
-        "text": "*방에 불을 켜고 침대에 털썩 눕는다. 낯선 천장이 오늘따라 포근하게 느껴지는 건 기분 탓일까.*"
-    },
-    "after_home_settle": {
-        "name": "나",
-        "text": "*교복을 벗고 편한 옷으로 갈아입었다. 가방을 내려놓고 오늘 받은 유인물을 책상 위에 정리한다.*"
-    },
-    "after_home_3": {
-        "name": "나",
-        "text": "*내일은 어떤 일이 기다리고 있을까. 묘한 설렘에 쉽게 잠이 올 것 같지 않다.*"
-    },
-    "night_reflect_start": {
-        "name": "나",
-        "text": "*천장을 보며 오늘을 떠올린다. 첫날치고... 꽤 많은 일이 있었다.*"
-    },
-    "night_reflect_seoyeon": {
-        "name": "나",
-        "text": "*서연... 쿨한 척하지만 의외로 따뜻한 구석이 있는 애. 나한테 말대꾸하는 사람이 처음이라던 그 표정이 자꾸 생각나.*"
-    },
-    "night_reflect_yuna": {
-        "name": "나",
-        "text": "*유나... 말 수는 적었지만, 그 눈빛이 자꾸 떠올라. '빛이 같다'는 게 무슨 뜻이었을까.*"
-    },
-    "night_reflect_dain": {
-        "name": "나",
-        "text": "*다인... 에너지가 넘치는 애. 같이 있으면 절대 지루하지 않을 것 같아. 배구하는 모습이 꽤 멋있었어.*"
-    },
-    "night_reflect_nurse": {
-        "name": "나",
-        "text": "*보건실 선생님은... '귀여운 전학생'이라니. 묘하게 자꾸 신경 쓰이는 곳이 됐네.*"
-    },
-    "night_reflect_teacher": {
-        "name": "나",
-        "text": "*담임선생님은 겉으론 엄격한데 속은 따뜻한 분. 이런 담임이라 다행이야.*"
-    },
-    "night_reflect_end": {
-        "name": "나",
-        "text": "*이 학교, 생각보다 나쁘지 않아. 내일은 어떤 일이 생길까.*"
-    },
-    "night_diary_choice": {
-        "name": "나",
-        "text": "*책상 서랍에서 새 노트가 보인다. 전학 기념으로 엄마가 넣어둔 건가.*",
-        "choices": [
-            "오늘 있었던 일을 적어본다.",
-            "그냥 넘어간다."
-        ]
-    },
-    "night_diary_write_1": {
-        "name": "나",
-        "text": "*펜을 들고 첫 페이지를 열었다. '○월 ○일. 전학 첫날. 예상보다 괜찮은 학교다.'*"
-    },
-    "night_diary_write_2": {
-        "name": "나",
-        "text": "*'재밌는 사람들을 만났다. 쿨한 학생회장, 수수께끼 같은 문학소녀, 에너지 폭탄 배구부 에이스...'*"
-    },
-    "night_diary_write_3": {
-        "name": "나",
-        "text": "*'내일은 이 사람들과 더 가까워질 수 있을까? 기대된다.' ...펜을 내려놓고 노트를 닫는다. 쓰고 나니 기분이 좀 정리된다.*"
-    },
-    "night_home": {
-        "name": "나",
-        "text": "*잠들기 전, 습관적으로 스마트폰을 확인한다.*"
-    },
-    "night_home_check_contact": {
-        "name": "나",
-        "text": "*오늘 연락처를 교환한 사람들... 누구에게 먼저 보내볼까?*",
-        "choices": [
-            "서연이에게 메시지를 보낸다.",
-            "유나에게 메시지를 보낸다.",
-            "다인이에게 메시지를 보낸다.",
-            "보건선생님께 메시지를 보낸다.",
-            "담임선생님께 메시지를 보낸다.",
-            "호감도 확인하기",
-            "그만 보내고 잠을 잔다."
-        ]
-    },
-    "day1_check_affinity": {
-        "name": "시스템",
-        "text": "현재 캐릭터들과의 호감도 상태입니다.{affinity_list}"
-    },
-    "night_message_teacher": {
-        "name": "나",
-        "text": "*담임선생님께 메시지를 보냈다. '선생님, 오늘 챙겨주셔서 감사했어요. 덕분에 첫날 잘 적응한 것 같아요.'*"
-    },
-    "night_message_teacher_reply": {
-        "name": "담임선생님",
-        "text": "*빠른 답장.* '어머, {name}! 전학 첫날인데 이런 메시지까지 보내주다니. 기특하네.'"
-    },
-    "night_message_teacher_extra_1": {
-        "name": "담임선생님",
-        "text": "'그런데 오늘 수업 중에 네 표정... 뭔가 딴 생각하고 있었지? 선생님 다 봤어~'"
-    },
-    "night_message_teacher_extra_2": {
-        "name": "나",
-        "text": "*들켰나? '그게... 교실이 전 학교랑 달라서 신기했어요!' 라고 보냈다.*"
-    },
-    "night_message_teacher_extra_3": {
-        "name": "담임선생님",
-        "text": "'하하, 그렇구나~ 내일부터가 진짜 시작이니까 몸 관리 잘 하고 푹 쉬어. 내일 보자!'"
-    },
-    "night_message_teacher_extra_4": {
-        "name": "나",
-        "text": "*겉으론 엄격한데 이렇게 세심하게 챙겨주시다니. 이런 담임이라 다행이야.*"
-    },
-    "night_message_seyoun": {
-        "name": "나",
-        "text": "*서연에게 뭐라고 보내지?*"
-    },
-    "night_message_seyoun_lunch": {
-        "name": "나",
-        "text": "*서연에게 메시지를 보냈다. '오늘 옥상 도시락 진짜 맛있었어. 고마워, 서연아.'*"
-    },
-    "night_message_seyoun_after": {
-        "name": "나",
-        "text": "*서연에게 메시지를 보냈다. '오늘 학생회 일 도울 수 있어서 좋았어. 무리하지 마. 내일 봐.'*"
-    },
-    "night_message_seyoun_generic": {
-        "name": "나",
-        "text": "*서연에게 메시지를 보냈다. '첫날 챙겨줘서 고마웠어. 내일 학교에서 보자.'*"
-    },
-    "night_message_seyoun_reply_lunch": {
+    "night_msg_seo_1": {
         "name": "서연",
-        "text": "*즉각 답장.* '맛있었어? 다행이다! 내일도 기대해. 메뉴는 비밀이야.'"
+        "text": "*오늘 옥상 어땠어?*"
     },
-    "night_message_seyoun_reply_standard": {
+    "night_msg_seo_2": {
+        "name": "나",
+        "text": "*바람이 좋더라*"
+    },
+    "night_msg_seo_3": {
         "name": "서연",
-        "text": "*즉각 답장.* '나도 즐거웠어. 전학생치고 적응 빠르더라. 내일 학교에서 봐.'"
+        "text": "*다음엔 음료 정도는 준비해 놓을게*"
     },
-    "night_message_seyoun_reply_high": {
+    "night_msg_seo_4": {
         "name": "서연",
-        "text": "*하트 이모티콘과 함께 온 답장.* '있잖아... 오늘 되게 재밌었어. 내일 도시락 또 싸올까? 먹고 싶은 거 있으면 말해ㅋㅋ'"
+        "text": "*...서비스야*"
     },
-    "night_message_seyoun_reply_low": {
+    "night_msg_seo_5": {
+        "name": "나",
+        "text": "*'서비스야'를 일부러 한 줄 띄어서 보냈다. — 이것도 계산인 건지, 진심인 건지.*"
+    },
+    "night_msg_yuna_1": {
+        "name": "유나",
+        "text": "*...오늘 조용히 있어줘서 좋았어*"
+    },
+    "night_msg_yuna_2": {
+        "name": "유나",
+        "text": "*내일도 자리 비워 놓을게*"
+    },
+    "night_msg_yuna_3": {
+        "name": "나",
+        "text": "*짧다. 근데 '자리 비워 놓을게'가 이 사람한테는 최대한의 환영 아닌가.*"
+    },
+    "night_msg_dain_1": {
+        "name": "다인",
+        "text": "*가위바위보 리벤지 내일이다!!*"
+    },
+    "night_msg_dain_2": {
+        "name": "다인",
+        "text": "*도망가지 마ㅋㅋ*"
+    },
+    "night_msg_dain_3": {
+        "name": "다인",
+        "text": "*오늘 빵값 아직도 아깝다 아 진짜ㅋㅋㅋ*"
+    },
+    "night_msg_dain_4": {
+        "name": "나",
+        "text": "*세 줄 연속. 숨 좀 쉬고 보내면 안 되나.*"
+    },
+    "night_late_transition": {
+        "name": "나",
+        "text": "*잠들려는데 — 핸드폰이 한 번 더 울린다.*"
+    },
+    "night_late_transition_2": {
+        "name": "나",
+        "text": "*밤 11시. 누구지?*"
+    },
+    "night_late_branch": {
+        "name": "나",
+        "text": "*화면이 밝아진다.*"
+    },
+    "night_seo_late_1": {
         "name": "서연",
-        "text": "*한참 뒤에 도착한 짧은 답장.* '응. 내일 봐.'"
+        "text": "*내일 같이 등교할래?*"
     },
-    "night_message_seyoun_followup": {
-        "name": "나",
-        "text": "*서연의 답장을 보고 한참 들여다봤다. 뭔가 더 보내고 싶은데...*",
-        "choices": [
-            "'내일 뭐 먹고 싶어?' 라고 보낸다.",
-            "'잘 자, 서연아.' 라고 보낸다.",
-            "더 보내지 않는다."
-        ]
-    },
-    "night_message_seyoun_followup_food": {
+    "night_seo_late_2": {
         "name": "서연",
-        "text": "*바로 답장.* '벌써 내일 점심 걱정? 귀여운 면이 있네ㅋㅋ 깜짝 도시락 싸올지도? 기대하고 자.'"
+        "text": "*집 앞에서 기다릴게*"
     },
-    "night_message_seyoun_followup_goodnight": {
-        "name": "서연",
-        "text": "*잠시 뒤 답장.* '...잘 자, {name}. 좋은 꿈 꿔.'"
-    },
-    "night_message_seyoun_followup_end": {
+    "night_seo_late_3": {
         "name": "나",
-        "text": "*서연과의 대화가 이렇게 자연스러울 줄이야. 첫날부터 이런 사이가 되다니.*"
+        "text": "*...뭐? 학생회장이 집 앞에서? — 심장이 한 박자 빨라진다. 왜.*"
     },
-    "night_message_yuna": {
-        "name": "나",
-        "text": "*유나에게 메시지를 보냈다. '오늘 즐거웠어. 잘 자.'*"
-    },
-    "night_message_yuna_reply_standard": {
+    "night_yuna_late_1": {
         "name": "유나",
-        "text": "*한참 뒤 답장.* '...응. 너도.'"
+        "text": "*...아직 깨어 있어?*"
     },
-    "night_message_yuna_reply_high": {
+    "night_yuna_late_2": {
         "name": "유나",
-        "text": "*한참 뒤 답장.* '오늘... 고마웠어. 덕분에 조금 웃을 수 있었어.'"
+        "text": "*별이 예뻐서*"
     },
-    "night_message_yuna_reply_low": {
+    "night_yuna_late_3": {
         "name": "유나",
-        "text": "*답장이 없다. 읽음 표시만 떠 있을 뿐이다.*"
+        "text": "*그것만*"
     },
-    "night_message_yuna_cryptic": {
-        "name": "유나",
-        "text": "*추가 메시지.* '...{name}. 오늘 밤 별이 보이면 세 번째 별을 봐. 이유는 나중에.'"
-    },
-    "night_message_yuna_cryptic_react": {
+    "night_yuna_late_4": {
         "name": "나",
-        "text": "*세 번째 별? 무슨 뜻이지. 유나답다고 해야 하나.*"
+        "text": "*'그것만'이라고 했는데, '그것만'은 아닌 것 같다.*"
     },
-    "night_message_yuna_cryptic_choice": {
-        "name": "나",
-        "text": "*뭐라고 답장할까?*",
-        "choices": [
-            "'알겠어, 꼭 볼게.' 라고 보낸다.",
-            "'왜? 무슨 뜻이야?' 라고 보낸다."
-        ]
-    },
-    "night_message_yuna_cryptic_reply": {
-        "name": "나",
-        "text": "*'알겠어. 꼭 볼게.' 라고 답장했다. ...정말 창밖을 보니 별이 몇 개 떠 있다. 세 번째 별은... 저건가?*"
-    },
-    "night_message_yuna_cryptic_ask": {
-        "name": "유나",
-        "text": "*답장.* '...지금 말하면 의미가 없어. 그냥 봐.'"
-    },
-    "night_message_yuna_cryptic_end": {
-        "name": "유나",
-        "text": "*마지막 답장.* '...봤어? 그럼 됐어. 좋은 꿈 꿀 거야. 아마.'"
-    },
-    "night_message_dain": {
-        "name": "나",
-        "text": "*다인에게 뭐라고 보내지?*"
-    },
-    "night_message_dain_date": {
-        "name": "나",
-        "text": "*다인에게 메시지를 보냈다. '오늘 떡볶이 진짜 맛있었어! 다음에 또 가자ㅎㅎ'*"
-    },
-    "night_message_dain_generic": {
-        "name": "나",
-        "text": "*다인에게 메시지를 보냈다. '오늘 연습하는 거 멋있더라! 내일 봐.'*"
-    },
-    "night_message_dain_reply_date": {
+    "night_dain_late_1": {
         "name": "다인",
-        "text": "*즉시 답장.* '그치?! 내가 맛집은 다 꿰고 있으니까! 다음엔 순대도 추가야!!'"
+        "text": "*야 아직 안 잤지?!*"
     },
-    "night_message_dain_reply_standard": {
+    "night_dain_late_2": {
         "name": "다인",
-        "text": "*즉시 답장.* '오~ 봤어? 부끄럽게!ㅋㅋ 내일은 더 멋진 모습 보여줄게! 잘 자, {name}!!'"
+        "text": "*내일 아침 운동 같이 할 사람 구한다!*"
     },
-    "night_message_dain_reply_high": {
+    "night_dain_late_3": {
         "name": "다인",
-        "text": "*즉시 답장.* '오오 봤어?! 오늘 서브 리시브 완벽했지ㅋㅋ 내일은 스파이크 보여줄게!! 기대해!!'"
+        "text": "*거절은 안 받음ㅋㅋ*"
     },
-    "night_message_dain_selfie": {
-        "name": "다인",
-        "text": "*사진 한 장이 도착했다. 체육관에서 브이를 하며 찍은 셀카.* '오늘의 나! 멋지지?ㅋㅋ'"
-    },
-    "night_message_dain_selfie_react": {
+    "night_dain_late_4": {
         "name": "나",
-        "text": "*다인의 셀카... 에너지가 화면에서도 넘쳐흐른다. 나도 모르게 웃음이 났다.*"
+        "text": "*이 사람은 거절이라는 개념이 없는 건가.*"
     },
-    "night_message_dain_challenge": {
-        "name": "다인",
-        "text": "*추가 메시지.* '아 참! 내일 아침에 학교 뒷산 계단 올라가기 시합 어때?! 지면 간식 사기! 도전?!'"
-    },
-    "night_message_dain_challenge_choice": {
+    "night_end_1": {
         "name": "나",
-        "text": "*다인의 도전장이다. 어떻게 할까?*",
-        "choices": [
-            "'좋아, 받아들이지!' 라고 보낸다.",
-            "'나한테 지면 어쩌려고ㅋㅋ' 라고 보낸다."
-        ]
+        "text": "*핸드폰을 내려놓았다.*"
     },
-    "night_message_dain_challenge_accept": {
-        "name": "다인",
-        "text": "*즉시 답장.* '좋은 자세야!! 내일 일찍 와야 한다?! 늦잠 자면 부전패!! 잘 자, 파이팅!!!'"
-    },
-    "night_message_dain_challenge_tease": {
-        "name": "다인",
-        "text": "*즉시 답장.* '뭐?!ㅋㅋㅋ 큰소리 치네!! 좋아 두고 보자!! 내일 아침 정문에서 만나!! 잘 자아!!!'"
-    },
-    "night_message_nurse": {
+    "night_end_2": {
         "name": "나",
-        "text": "*보건선생님께 메시지를 보냈다. '선생님, 오늘 감사했어요. 편하게 쉴 수 있었어요.'*"
+        "text": "*천장을 본다. 벚꽃 냄새가 아직 교복에 남아 있다.*"
     },
-    "night_message_nurse_reply_standard": {
-        "name": "보건선생님",
-        "text": "*답장.* '어머, 정말 연락했네? 착하기도~ 우리 귀여운 전학생~'"
-    },
-    "night_message_nurse_reply_high": {
-        "name": "보건선생님",
-        "text": "*답장.* '어머~ 밤에 이런 메시지라니, 선생님 잠 못 자게 하려는 거야? 농담이야~ 다정한 면이 참 좋구나.'"
-    },
-    "night_message_nurse_extra_1": {
-        "name": "보건선생님",
-        "text": "'그나저나 새 학교 적응하느라 피곤하지 않아? 무리하면 안 돼~ 머리 아프면 바로 보건실로 와.'"
-    },
-    "night_message_nurse_extra_2": {
+    "night_end_3": {
         "name": "나",
-        "text": "*'네, 감사해요! 선생님도 푹 쉬세요.' 라고 답장했다. 은근히 챙겨주시는 게 따뜻하다.*"
+        "text": "*나쁘지 않은 첫날이었다.*"
     },
-    "night_message_nurse_extra_3": {
-        "name": "보건선생님",
-        "text": "'고마워~ 잘 자렴, {name}. 선생님이 좋은 꿈 빌어줄게~'"
-    },
-    "night_message_nurse_extra_4": {
+    "night_end_4": {
         "name": "나",
-        "text": "*'좋은 꿈 빌어줄게'라는 말이 유독 마음에 남는다. 선생님인데... 왜 자꾸 신경 쓰이지.*"
-    },
-    "night_goodnight_start": {
-        "name": "나",
-        "text": "*스마트폰을 내려놓고 침대에서 일어났다. 잠들기 전에 창문을 열어볼까.*"
-    },
-    "night_goodnight_window": {
-        "name": "나",
-        "text": "*창문을 열자 서늘한 밤바람이 얼굴을 스친다. 밤하늘에 별이 몇 개 보인다. 도시보다 별이 잘 보이네.*"
-    },
-    "night_goodnight_sounds": {
-        "name": "나",
-        "text": "*귀뚜라미 소리가 들려온다. 멀리서 기차 소리도 희미하게. 이 조용한 밤이 나쁘지 않다.*"
-    },
-    "night_goodnight_think": {
-        "name": "나",
-        "text": "*내일은 또 어떤 일이 기다리고 있을까.*"
-    },
-    "night_goodnight_close": {
-        "name": "나",
-        "text": "*창문을 닫고 이불 속으로 들어간다. 눈을 감으면 잠이 올 것 같다.*"
-    },
-    "night_surprise_check": {
-        "name": "나",
-        "text": "*눈을 감으려는 순간 — 징! 스마트폰 알림. 이 시간에 누구지?*"
-    },
-    "night_surprise_seyoun": {
-        "name": "서연",
-        "text": "*서연의 메시지.* '잠 안 와서 그런 건데... 내일 등교할 때 정문에서 만날래? 같이 가자.'"
-    },
-    "night_surprise_seyoun_react": {
-        "name": "나",
-        "text": "*'좋아. 내일 정문에서.' 라고 답장했다. 서연이 먼저 연락을 하다니. 입꼬리가 올라간다.*"
-    },
-    "night_surprise_yuna": {
-        "name": "유나",
-        "text": "*유나의 메시지.* '...아직 깨어 있어? 별이 예뻐서. 그것만.'"
-    },
-    "night_surprise_yuna_react": {
-        "name": "나",
-        "text": "*'나도 방금 별 보고 있었어.' 라고 답장했다. 같은 하늘 아래라는 게 묘하게 와닿는다.*"
-    },
-    "night_surprise_dain": {
-        "name": "다인",
-        "text": "*다인의 메시지.* '아직 안 잤지?! 내일 시합 잊지 마!! 스트레칭 해둬야 할걸?!ㅋㅋ 잘 자!!'"
-    },
-    "night_surprise_dain_react": {
-        "name": "나",
-        "text": "*'걱정 마, 준비 됐어.' 라고 답장했다. 다인의 에너지는 밤에도 변함없다.*"
-    },
-    "night_surprise_nurse": {
-        "name": "보건선생님",
-        "text": "*보건선생님의 메시지.* '아직 안 잤으면 큰일이야~ 내일 보건실에서 수면 상담해줄까? 농담~ 잘 자렴, 귀여운 전학생.'"
-    },
-    "night_surprise_nurse_react": {
-        "name": "나",
-        "text": "*'네, 지금 잘게요! 감사해요.' 라고 답장했다. 장난스럽지만 은근히 걱정해주시는 거겠지.*"
-    },
-    "night_surprise_teacher": {
-        "name": "담임선생님",
-        "text": "*담임선생님의 메시지.* '혹시 아직 안 잤니? 내일 시간표 바뀐 거 미리 알려주려고. 3교시가 체육이야. 잘 자!'"
-    },
-    "night_surprise_teacher_react": {
-        "name": "나",
-        "text": "*'감사합니다 선생님! 잘 자요.' 라고 답장했다. 이런 세심한 부분까지 챙겨주시다니.*"
-    },
-    "night_surprise_react": {
-        "name": "나",
-        "text": "*깜짝 놀랐지만 기분이 좋아졌다. 스마트폰을 뒤집어 놓고 이불을 덮는다. 오늘은 정말 괜찮은 하루였어.*"
-    },
-    "day1_end": {
-        "name": "나",
-        "text": "*새로운 만남들, 낯선 감정들... 전학 첫날이 이렇게 끝났다. 내일은 어떤 하루가 될까.*"
+        "text": "*내일은 — 좀 더 재밌을 것 같다.*"
     }
 }

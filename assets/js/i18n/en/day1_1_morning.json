@@ -1,442 +1,314 @@
 {
     "start": {
         "name": "Me",
-        "text": "*Cherry blossom petals drift on the spring breeze and settle onto my uniform. New school... well, adapting is kind of my specialty no matter where I end up.*"
+        "text": "*April. Cherry blossoms scatter in the breeze.*"
     },
     "start_2": {
         "name": "Me",
-        "text": "*Standing at the front gate, unfamiliar buildings stretch out in every direction. Bigger than I expected. The kind of layout that's perfect for getting hopelessly lost.*"
+        "text": "*My uniform is still stiff. There's a faint smell of starch. Even though I ironed it yesterday, the creases have a mind of their own. Already off to a bad start with this uniform.*"
     },
     "start_3": {
         "name": "Me",
-        "text": "*First things first, find the teachers' office. But seriously, does this school not have a single map anywhere?*"
+        "text": "*Starting today, I'm a student at this school. A transfer. First time.*"
+    },
+    "start_4": {
+        "name": "Me",
+        "text": "*The word 'transfer student' carries both 'getting attention' and 'being alone' at the same time. Neither sounds great.*"
+    },
+    "start_5": {
+        "name": "Me",
+        "text": "*A cherry blossom petal brushes my nose. — I almost sneezed. If this were a drama, this is the part where some pretty girl bumps into me.*"
+    },
+    "start_6": {
+        "name": "Me",
+        "text": "*Reality is just a sneeze.*"
     },
     "name_input_scene": {
         "name": "System",
         "text": "Transfer student, what is your name?"
     },
-    "start_4": {
-        "name": "???",
-        "text": "\"Hey, hold up. You're the transfer student they said was coming today, right?\""
-    },
-    "intro_1": {
+    "gate_1": {
         "name": "Me",
-        "text": "*A girl approaches with an unhurried stride. Crisp uniform, student council armband. Sharp eyes, but there's a subtle ease playing at the corner of her lips.*"
+        "text": "*I'm standing in front of an unfamiliar school gate. It's a pretty big school. Clean buildings, spacious grounds.*"
     },
-    "intro_2": {
+    "gate_2": {
         "name": "Me",
-        "text": "*I figured she'd be your typical model student, but there's something about those eyes — like she can read you in a single glance. ...This might actually be an interesting school.*"
+        "text": "*Students pass through the gate in small groups. My uniform is the only one blindingly crisp. Like a billboard — 'I'm new here.'*"
     },
-    "intro_3": {
-        "name": "Seoyeon",
-        "text": "\"Student council president, Seoyeon. Our homeroom teacher sent me out here in case you got lost. But you don't look as clueless as I expected?\"",
+    "gate_3": {
+        "name": "Me",
+        "text": "*A girl is standing by the gate. She casually flips her long straight hair — her steps are relaxed. Not a hint of hurry.*"
+    },
+    "seoyeon_meet_1": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Transfer student? You're {name}, right?\""
+    },
+    "seoyeon_meet_2": {
+        "name": "Me",
+        "text": "*Her voice is calm. Not cold, but it has that tone of someone who anticipated everything.*"
+    },
+    "seoyeon_meet_3": {
+        "name": "{name}",
+        "text": "\"That's me. How'd you know?\""
+    },
+    "seoyeon_meet_4": {
+        "name": "서연(Seoyeon)",
+        "text": "\"I'm the student council president. Guiding new students is my job.\""
+    },
+    "seoyeon_meet_5": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Follow me. I'll show you around.\""
+    },
+    "seoyeon_meet_6": {
+        "name": "{name}",
+        "text": "\"The president herself? I'm honored.\""
+    },
+    "seoyeon_meet_7": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Whether you're honored or not — that's for me to decide.\""
+    },
+    "seoyeon_meet_8": {
+        "name": "Me",
+        "text": "*She smirks. Just the corner of her lips lifting. Whether it's calculated or just who she is — I can't tell yet.*"
+    },
+    "seoyeon_meet_9": {
+        "name": "Me",
+        "text": "*서연(Seoyeon) walks toward the gate, beckoning with a wave.*"
+    },
+    "seoyeon_choice": {
+        "name": "Me",
+        "text": "*How should I respond?*",
         "choices": [
-            "Thanks for worrying about me. I really almost got lost. Looking forward to working with you.",
-            "The student council president herself? This school's VIP treatment is pretty nice.",
-            "Or maybe you came out first because you were curious about me?",
-            "*Instead of answering, I just smile lazily and stare right at her.*",
-            "Skip the pleasantries. Where's the teachers' office?"
+            "\"Don't tell me you came out early because you're interested in me?\"",
+            "\"How much is the guide fee?\""
         ]
     },
-    "path_rude_1": {
-        "name": "Seoyeon",
-        "text": "*The warmth in Seoyeon's eyes vanishes for a split second. But she doesn't flinch.*"
+    "choice_flirt_1": {
+        "name": "Me",
+        "text": "*서연(Seoyeon) stops walking and turns around. Not surprised — more amused.*"
     },
-    "path_rude_1_2": {
-        "name": "Seoyeon",
-        "text": "\"Wow, your personality isn't just cool — it's arid. Fine by me. I'm not big on forced small talk either. Follow me.\""
+    "choice_flirt_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Wow. First day and already someone like this. Interest +1.\""
     },
-    "path_friendly_1": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon lets out a small laugh and nods.*"
+    "choice_flirt_3": {
+        "name": "{name}",
+        "text": "\"A point system?\""
     },
-    "path_friendly_1_2": {
-        "name": "Seoyeon",
-        "text": "\"Honest type, huh. I like that. I'll personally escort you to the teachers' office, so keep up.\""
+    "choice_flirt_4": {
+        "name": "서연(Seoyeon)",
+        "text": "\"You're the first person at this school to talk back to me.\""
     },
-    "path_tease_1": {
-        "name": "Seoyeon",
-        "text": "*I expected her to get flustered, but instead she steps closer and locks eyes with me. The corner of her mouth curls up.*"
+    "choice_flirt_5": {
+        "name": "{name}",
+        "text": "\"I'm flattered.\""
     },
-    "path_tease_1_2": {
-        "name": "Seoyeon",
-        "text": "\"Confident type, I see? Good — I was getting bored anyway. You're the first person at this school to talk back to me. Interest +1.\""
+    "choice_flirt_6": {
+        "name": "서연(Seoyeon)",
+        "text": "\"You don't know yet if it's flattery or disaster.\""
     },
-    "path_blush_1": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon folds her arms and smiles at a leisurely pace.*"
+    "choice_flirt_7": {
+        "name": "Me",
+        "text": "*She's smiling. She seems genuinely entertained. A student council president with this kind of energy on day one.*"
     },
-    "path_blush_1_2": {
-        "name": "Seoyeon",
-        "text": "\"VIP treatment for the transfer student is a one-day-only deal. Enjoy it while it lasts. Now let's move.\""
+    "choice_joke_1": {
+        "name": "서연(Seoyeon)",
+        "text": "\"It's free. — But the interest builds up later.\""
     },
-    "path_silent_1": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon meets my gaze head-on without looking away. A moment of silence passes, but she doesn't seem the least bit uncomfortable.*"
+    "choice_joke_2": {
+        "name": "{name}",
+        "text": "\"That's one scary council president.\""
     },
-    "path_silent_1_2": {
-        "name": "Seoyeon",
-        "text": "\"What, the type who lets their eyes do the talking? Not bad. But if we keep standing here, we're both going to be late.\""
+    "choice_joke_3": {
+        "name": "서연(Seoyeon)",
+        "text": "\"At least it won't be boring.\""
     },
     "hallway_1": {
         "name": "Me",
-        "text": "*I follow Seoyeon down the hallway. The morning commotion of students drifts in through the windows.*"
+        "text": "*서연(Seoyeon) guides me through the hallway. Passing students greet her. She acknowledges each one with a nod.*"
     },
-    "hallway_name_ask": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon stops walking and turns around.* \"Oh, right. I actually saw your name on the office documents beforehand. {name}, right?\""
-    },
-    "hallway_name_share": {
+    "hallway_2": {
         "name": "Me",
-        "text": "\"That's right. I'm {name}. You even looked up my name in advance? That's a pretty thorough student council president.\""
+        "text": "*Popular or feared — probably both.*"
     },
-    "hallway_name_share_2": {
-        "name": "Seoyeon",
-        "text": "\"Obviously. Preparation is the bare minimum. {name}... yeah, the name passes. Let's get along from here.\""
+    "hallway_3": {
+        "name": "서연(Seoyeon)",
+        "text": "\"First-year building is here, library's over there. Snack bar is in the basement.\""
     },
-    "hallway_1_2": {
+    "hallway_4": {
         "name": "Me",
-        "text": "*I walk down the hallway, watching her from behind. She's surprisingly fast.*"
+        "text": "*서연(Seoyeon) pulls out a key from her pocket and gives it a little shake.*"
     },
-    "hallway_free_talk": {
-        "name": "Seoyeon",
-        "text": "\"Come to think of it, we did introductions but haven't had an actual conversation. Ask me whatever you want. Whether I answer depends on my mood, though.\"",
-        "context": "Walking through the school hallway together with the transfer student protagonist, having a casual conversation. Seoyeon keeps a cool, composed attitude but is quietly enjoying the exchange. Keep the conversation going until it naturally wraps up. Once it ends, the scene transitions to Seoyeon giving a tour of the school facilities. Only in the final turn should she suggest they start moving or begin the tour.",
-        "personality": "Cool-beauty student council president. Delivers blunt observations and dry humor, parrying the protagonist's provocations with effortless composure. Prefers natural back-and-forth banter over fake politeness."
+    "hallway_5": {
+        "name": "서연(Seoyeon)",
+        "text": "\"The rooftop is normally locked. President's privilege.\""
     },
-    "hallway_1_3_high": {
+    "hallway_6": {
+        "name": "{name}",
+        "text": "\"You got a secret hideout or something?\""
+    },
+    "hallway_7": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...You're sharp.\""
+    },
+    "hallway_8": {
         "name": "Me",
-        "text": "*Chatting with Seoyeon somehow turned into a school tour. Our conversational rhythm just clicks.*",
-        "choices": [
-            "Nice facilities. Are you in any clubs, Seoyeon?",
-            "The facilities are great, but honestly they look even better with this tour guide.",
-            "Seoyeon, you've got a great voice. You could do campus tours professionally.",
-            "*I pretend to listen to her explanation while sneaking glances at her profile.*"
-        ]
+        "text": "*She hesitated. 0.5 seconds. Probably nothing, but somehow it sticks in my mind.*"
     },
-    "hallway_1_3_low": {
+    "hallway_9": {
         "name": "Me",
-        "text": "*Seoyeon's attitude has gotten noticeably colder. I must have rubbed her the wrong way during our conversation. She's switched to a strictly business tone for the tour.*",
-        "choices": [
-            "Nice facilities. Are you in any clubs, Seoyeon?",
-            "The facilities are great, but they look even better with a good tour guide.",
-            "Seoyeon, honestly your voice is the best feature this school has.",
-            "*I just walk quietly and focus on her explanation.*"
-        ]
+        "text": "*We arrive in front of the classroom.*"
     },
-    "hallway_1_3": {
+    "hallway_10": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Here it is. Go on in.\""
+    },
+    "hallway_11": {
+        "name": "{name}",
+        "text": "\"Will you guide me at lunch too?\""
+    },
+    "hallway_12": {
+        "name": "서연(Seoyeon)",
+        "text": "\"That depends on how well you do.\""
+    },
+    "hallway_13": {
         "name": "Me",
-        "text": "*Following Seoyeon's tour down the hallway. Her explanations are clean and to the point — easy to listen to.*",
-        "choices": [
-            "Nice facilities. Are you in any clubs, Seoyeon?",
-            "The facilities are great, but they look even better with a good tour guide.",
-            "Seoyeon, honestly your voice is the best feature this school has.",
-            "*I just walk quietly and focus on her explanation.*"
-        ]
+        "text": "*서연(Seoyeon) turns and gives a light wave. She doesn't look back.*"
     },
-    "hallway_talk_trap_high": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon's eyes go wide, then she can't hold back a laugh — her shoulders shake. The tips of her ears going pink is definitely not my imagination.*"
-    },
-    "hallway_talk_trap_high_2": {
-        "name": "Seoyeon",
-        "text": "\"Wow, you're really something on day one. But here's the thing — lines like that lose their value if you use them twice. Save them.\""
-    },
-    "hallway_talk_trap_low": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon's gaze goes ice-cold in an instant. She even stops walking and faces me head-on.*"
-    },
-    "hallway_talk_trap_low_2": {
-        "name": "Seoyeon",
-        "text": "\"...I get that it's a compliment, but we haven't even known each other for thirty minutes. Keep that kind of distance, please.\""
-    },
-    "hallway_talk_trap_normal": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon pauses and stares at me. Her expression is half guarded, half surprised.*"
-    },
-    "hallway_talk_trap_normal_2": {
-        "name": "Seoyeon",
-        "text": "\"I appreciate it, but... we're not exactly close enough for that yet, are we? Ease up on the pace a little.\""
-    },
-    "hallway_talk_club_high": {
-        "name": "Seoyeon",
-        "text": "*Something sparks in her eyes. There's a hint of anticipation on her face.*"
-    },
-    "hallway_talk_club_high_2": {
-        "name": "Seoyeon",
-        "text": "\"Student council and the gardening club. I like growing flowers — surprising, right? I'll show you the greenhouse sometime. Exclusive {name}-only tour, just for you.\""
-    },
-    "hallway_talk_club_low": {
-        "name": "Seoyeon",
-        "text": "*She answers in a flat, businesslike tone. Barely any feeling behind it.*"
-    },
-    "hallway_talk_club_low_2": {
-        "name": "Seoyeon",
-        "text": "\"Student council and gardening club. That's it. Next question?\""
-    },
-    "hallway_talk_club_normal": {
-        "name": "Seoyeon",
-        "text": "*She raises an eyebrow, looking mildly surprised.*"
-    },
-    "hallway_talk_club_normal_2": {
-        "name": "Seoyeon",
-        "text": "\"Yeah, student council and gardening club. I like growing flowers. Getting my hands in the dirt clears my head. Drop by the greenhouse sometime if you're interested.\""
-    },
-    "hallway_talk_flatter_high": {
-        "name": "Seoyeon",
-        "text": "*The tips of Seoyeon's ears turn pink. She tucks her hair behind her ear and looks away, but her lips clearly aren't cooperating with the rest of her poker face.*"
-    },
-    "hallway_talk_flatter_high_2": {
-        "name": "Seoyeon",
-        "text": "\"...Okay, you're unexpectedly smooth. Nobody's said something like that to me as a transfer student before. Fine, I admit it — giving this tour is actually a little rewarding.\""
-    },
-    "hallway_talk_flatter_low": {
-        "name": "Seoyeon",
-        "text": "*She practically scoffs, looking me up and down. Her expression is openly unimpressed.*"
-    },
-    "hallway_talk_flatter_low_2": {
-        "name": "Seoyeon",
-        "text": "\"You already used up your smooth-talk quota on the first impression. Try something that actually sounds genuine next time. Let's keep moving.\""
-    },
-    "hallway_talk_flatter_normal": {
-        "name": "Seoyeon",
-        "text": "*She turns her head away for a moment, caught off guard, but quickly recovers her composure.*"
-    },
-    "hallway_talk_flatter_normal_2": {
-        "name": "Seoyeon",
-        "text": "\"Weirdly enough, it's kind of easy being around you. It's been a while since someone talked to me without the 'student council president' filter. ...Not a bad feeling, I guess.\""
-    },
-    "hallway_talk_listen_high": {
-        "name": "Seoyeon",
-        "text": "*She picks up speed with her explanations, getting into it. Every time I nod along, her expression brightens a little more.*"
-    },
-    "hallway_talk_listen_high_2": {
-        "name": "Seoyeon",
-        "text": "\"Oh, you're actually paying attention. Most people zone out or start fidgeting by now. {name}, you're surprisingly diligent. I approve.\""
-    },
-    "hallway_talk_listen_low": {
-        "name": "Seoyeon",
-        "text": "*She continues explaining mechanically as she walks. She doesn't even glance my way.*"
-    },
-    "hallway_talk_listen_low_2": {
-        "name": "Seoyeon",
-        "text": "\"If you got all that, let's go. Time's wasting.\""
-    },
-    "hallway_talk_listen_normal": {
-        "name": "Seoyeon",
-        "text": "*She's getting into her explanation, adding hand gestures and everything.*"
-    },
-    "hallway_talk_listen_normal_2": {
-        "name": "Seoyeon",
-        "text": "\"It's rare to find someone who actually listens all the way through. {name}, you might be alright. With that attitude, you'll settle in fast.\""
-    },
-    "hallway_2_normal": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon suddenly stops and turns to look at me. There's a probing look in her eyes, like she's sizing me up.*"
-    },
-    "hallway_2_low": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon, walking ahead, suddenly stops. She looks back at me over her shoulder with cold eyes.*"
-    },
-    "hallway_2_2_low": {
-        "name": "Seoyeon",
-        "text": "*There's an unmistakable distance in the way she looks at me.*"
-    },
-    "hallway_2_3_low": {
-        "name": "Seoyeon",
-        "text": "\"A word of advice. If you keep this up from day one, things are going to be rough for you here. At least respect the basics.\""
-    },
-    "hallway_2_2": {
-        "name": "Seoyeon",
-        "text": "*She stares into my eyes like she's trying to read something. An appraising look.*"
-    },
-    "hallway_2_3": {
-        "name": "Seoyeon",
-        "text": "\"Thought about clubs at all? Student council is always short-handed. If you joined... I could personally train you.\"",
-        "choices": [
-            "If I join student council, I'd get to see you every day? Sign me up right now.",
-            "More than clubs... I want to know more about you, Seoyeon.",
-            "Not sure yet. I'll look around and decide.",
-            "Pass. Clubs aren't my thing."
-        ]
-    },
-    "path_rude_2": {
-        "name": "Seoyeon",
-        "text": "*The anticipation drains from Seoyeon's expression. She tries not to let it show.*"
-    },
-    "path_flirt_2": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon's face flushes slightly. She fiddles with her uniform, trying to mask being caught off guard.*"
-    },
-    "path_flirt_2_2": {
-        "name": "Seoyeon",
-        "text": "\"Every day... do you have any idea how much work is involved? Still, if you joined, I guess it wouldn't be boring. I'll hold you to that.\""
-    },
-    "path_normal_2": {
-        "name": "Seoyeon",
-        "text": "*She nods and starts walking ahead again. She says \"Smart choice,\" but there's a trace of disappointment in her voice.*"
-    },
-    "path_direct_2": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon's eyes go wide, then she lets out a disbelieving laugh. She laughs for a good while.*"
-    },
-    "path_direct_2_2": {
-        "name": "Seoyeon",
-        "text": "\"Wow, straight fastball. About me, huh... well, that depends on how you play it from here. I don't give that up easily.\""
-    },
-    "classroom_1_1_high": {
-        "name": "Seoyeon",
-        "text": "*At the classroom door, Seoyeon casually takes my hand. Warm and soft.*"
-    },
-    "classroom_1_2_high": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon leans in and whispers near my ear.* \"Don't be nervous. We're in the same class anyway, so whatever happens, I've got your back.\""
-    },
-    "classroom_1_3_high": {
-        "name": "Seoyeon",
-        "text": "\"This is our class. Oh, and the seat next to mine happens to be open. Lucky you, transfer student.\""
-    },
-    "classroom_1_1_low": {
-        "name": "Seoyeon",
-        "text": "*At the classroom door. Seoyeon walks ahead, putting physical distance between us.*"
-    },
-    "classroom_1_2_low": {
-        "name": "Seoyeon",
-        "text": "*She silently jerks her chin toward the sign next to the door. She doesn't even make eye contact.*"
-    },
-    "classroom_1_3_low": {
-        "name": "Seoyeon",
-        "text": "\"Class 2-3. The teacher's inside, so go on in. Making a bad impression by being late on your first day wouldn't be great.\""
-    },
-    "classroom_1_1": {
-        "name": "Seoyeon",
-        "text": "*We've arrived at the classroom door. Chatter drifts out from inside. Seoyeon gives my shoulder a light tap.*"
-    },
-    "classroom_1_2": {
-        "name": "Seoyeon",
-        "text": "*She flashes me a quick thumbs up. It's an unexpectedly casual gesture, and some of my tension melts away.*"
-    },
-    "classroom_1_3": {
-        "name": "Seoyeon",
-        "text": "\"This is Class 2-3. Don't overthink it. I'm right here, so just be yourself.\""
-    },
-    "classroom_2_normal": {
+    "hallway_14": {
         "name": "Me",
-        "text": "*Standing at the podium, dozens of eyes lock onto me all at once. Curiosity, wariness, indifference... a whole spectrum. Seoyeon is leaning back in her seat with her arms crossed, watching me at her own pace.*"
+        "text": "*Her posture is straight. Perfectly straight. — Like she's practiced it.*"
     },
-    "classroom_2_high": {
+    "classroom_1": {
         "name": "Me",
-        "text": "*Standing at the podium, dozens of eyes lock onto me. Seoyeon is smiling at me from her seat. It's oddly reassuring.*"
+        "text": "*I open the classroom door. Eyes pour onto me.*"
     },
-    "classroom_2_low": {
+    "classroom_2": {
         "name": "Me",
-        "text": "*Standing at the podium, dozens of eyes lock onto me. Seoyeon is staring out the window, looking thoroughly uninterested.*"
+        "text": "*I expected it, but the weight of 30 stares is still heavy.*"
     },
-    "classroom_2_2": {
-        "name": "Teacher",
-        "text": "*The homeroom teacher raps the podium a couple times to settle the room. Stern expression, but the corner of her mouth is slightly lifted.*"
+    "classroom_3": {
+        "name": "Homeroom Teacher",
+        "text": "\"Everyone, we have a transfer student joining our class today. Go ahead and introduce yourself.\""
     },
-    "teacher_free_talk": {
-        "name": "Teacher",
-        "text": "\"Alright, I know everyone's curious about the transfer student, but staring alone won't make you friends. Before the introduction, if you have any questions for me, go ahead and ask. No pressure.\"",
-        "context": "Location: In front of the podium in Class 2-3. Situation: A brief moment before the homeroom teacher formally introduces the transfer student protagonist to the class. Dozens of students are watching, but this conversation is strictly between the protagonist and the teacher. The protagonist's formal introduction and greeting to the class is a separate event that happens AFTER this dialogue — do NOT have the protagonist greet or introduce themselves to the students during this exchange. Keep to personal questions, school life tips, first impressions, etc. Continue the conversation until it wraps up naturally. Only in the final turn should the teacher mention they'll now formally introduce the protagonist to the class.",
-        "personality": "Dry humor with an unexpected soft side. Looks strict but is warm underneath, and is quietly curious about the transfer student. Occasionally shows an endearingly clumsy gap — the kind of teacher who says 'you shouldn't say that' and then adds 'honestly, same though.'"
+    "classroom_4": {
+        "name": "{name}",
+        "text": "\"I'm {name}. Nice to meet you all.\""
     },
-    "classroom_2_3_high": {
+    "classroom_5": {
         "name": "Me",
-        "text": "*Chatting with the teacher loosened me up. She's more fun than I expected. Now it's time to introduce myself to the class.*",
-        "choices": [
-            "I'm '{name}'. Nice to meet everyone.",
-            "Starting today, I'm in this class! Let's have a good time.",
-            "Hey! I'm the type who likes to stay active!",
-            "Nice to meet you. I'm more of a quiet, keep-to-myself type.",
-            "I'm here to study. Just don't get in my way and we'll be fine."
-        ]
+        "text": "*Short and clean. No point in dragging it out.*"
     },
-    "classroom_2_3_low": {
+    "classroom_6": {
         "name": "Me",
-        "text": "*The teacher's gaze is pretty sharp. Feels like I already lost some first-impression points. Either way, the intro has to happen.*",
-        "choices": [
-            "I'm '{name}'. Nice to meet everyone.",
-            "Starting today, I'm in this class! Let's have a good time.",
-            "Hey! I'm the type who likes to stay active!",
-            "Nice to meet you. I'm more of a quiet, keep-to-myself type.",
-            "I'm here to study. Just don't get in my way and we'll be fine."
-        ]
+        "text": "*A whistle from one side of the room.*"
     },
-    "classroom_2_3": {
+    "classroom_dain_1": {
+        "name": "다인(Dain)",
+        "text": "\"Oh! A new boy! Finally!\""
+    },
+    "classroom_dain_2": {
         "name": "Me",
-        "text": "*The conversation with the teacher ends, and I face the class. Dozens of pairs of eyes are pointed at me.*",
-        "choices": [
-            "I'm '{name}'. Nice to meet everyone.",
-            "Starting today, I'm in this class! Let's have a good time.",
-            "Hey! I'm the type who likes to stay active!",
-            "Nice to meet you. I'm more of a quiet, keep-to-myself type.",
-            "I'm here to study. Just don't get in my way and we'll be fine."
-        ]
+        "text": "*Brown ponytail. A voice brimming with energy. She's half-standing from her seat. The kid next to her is pulling her down, but it's no use.*"
     },
-    "teacher_name_share_high": {
-        "name": "Teacher",
-        "text": "\"(Looking pleased) {name}... nice name. Go ahead, say a few words to the class. Everyone, make them feel welcome.\""
+    "classroom_dain_3": {
+        "name": "Homeroom Teacher",
+        "text": "\"다인(Dain), please quiet down...\""
     },
-    "teacher_name_share_low": {
-        "name": "Teacher",
-        "text": "\"...{name}. Keep your introduction short and take your seat.\""
+    "classroom_dain_4": {
+        "name": "다인(Dain)",
+        "text": "\"Oh, sorry! But I'm just so excited! We needed more boys in our class!\""
     },
-    "teacher_name_share_normal": {
-        "name": "Teacher",
-        "text": "\"{name}. Alright, go ahead and say hi to the class.\""
+    "classroom_dain_5": {
+        "name": "Me",
+        "text": "*She has no volume control. But her face is so genuinely happy that you can't dislike her.*"
     },
-    "class_after_name": {
-        "name": "Teacher",
-        "text": "\"{name}... nice name. Alright everyone, give them a warm welcome.\""
+    "classroom_yuna_1": {
+        "name": "Me",
+        "text": "*I shift my gaze and spot a girl in the far back by the window, resting her chin on her hand, staring outside. She seems uninterested in my introduction.*"
     },
-    "class_after_active": {
-        "name": "Classmates",
-        "text": "*Cheers erupt from around the classroom. The guys in the back rows are already eyeing me with interest. Seoyeon watches from her seat with her arms crossed, looking quietly satisfied.*"
+    "classroom_yuna_2": {
+        "name": "Me",
+        "text": "*Black bob cut. Drowsy eyes. — She doesn't even glance this way. As if a transfer student is nothing special.*"
     },
-    "class_after_active_2": {
-        "name": "Classmates",
-        "text": "*I can already hear whispered negotiations about recruiting me for teams.*"
+    "classroom_seat_1": {
+        "name": "Me",
+        "text": "*The homeroom teacher points to an empty seat.*"
     },
-    "class_after_active_3": {
-        "name": "Classmates",
-        "text": "\"Oh nice, looks like you've got some game! How about a round at the gym during lunch? Show us what the new kid can do!\""
+    "classroom_seat_2": {
+        "name": "Me",
+        "text": "*It's next to 다인(Dain). Saved — or doomed — I'm not sure which, but at least it won't be quiet.*"
     },
-    "class_after_quiet": {
-        "name": "Classmates",
-        "text": "*The students nod and accept me with calm composure. A few girls whisper among themselves, glancing my way.*"
+    "classroom_minsu_1": {
+        "name": "Me",
+        "text": "*As I go to sit down — the boy in the seat ahead turns around.*"
     },
-    "class_after_quiet_2": {
-        "name": "Classmates",
-        "text": "*Seoyeon nods with a satisfied expression. The classroom settles into a calm atmosphere.*"
+    "classroom_minsu_2": {
+        "name": "민수(Minsu)",
+        "text": "\"Hey, transfer kid. Welcome. — And a word of advice.\""
     },
-    "class_after_quiet_3": {
-        "name": "Classmates",
-        "text": "\"Kind of has a vibe... mind if we chat sometime?\""
+    "classroom_minsu_3": {
+        "name": "{name}",
+        "text": "\"About what?\""
     },
-    "class_after_party": {
-        "name": "Classmates",
-        "text": "*The classroom erupts into chaos. Students swarm in from every direction.*"
+    "classroom_minsu_4": {
+        "name": "민수(Minsu)",
+        "text": "\"Your stamina.\""
     },
-    "class_after_party_2": {
-        "name": "Classmates",
-        "text": "*Seoyeon looks momentarily caught off guard but breaks into a grin. The students have already moved on to debating lunch options.*"
+    "classroom_dain_talk_1": {
+        "name": "Me",
+        "text": "*Good to know there's at least one sensible person here. — His name tag says '민수(Minsu).'*"
     },
-    "class_after_party_3": {
-        "name": "Classmates",
-        "text": "\"Oh man, absolute legend energy! {name}, eat lunch with us! We know all the best spots!\""
+    "classroom_dain_talk_2": {
+        "name": "Me",
+        "text": "*The moment I sit down, 다인(Dain) leans in. Zero concept of personal space.*"
     },
-    "class_after_study": {
-        "name": "Classmates",
-        "text": "*A brief silence falls over the classroom. The students shift uncomfortably, exchanging glances.*"
+    "classroom_dain_talk_3": {
+        "name": "다인(Dain)",
+        "text": "\"Hey, {name}! Do you like sports?!\""
     },
-    "class_after_study_2": {
-        "name": "Classmates",
-        "text": "*Seoyeon's expression tightens subtly too. An invisible wall has gone up.*"
+    "classroom_dain_talk_4": {
+        "name": "{name}",
+        "text": "\"Out of nowhere?\""
     },
-    "class_after_study_3": {
-        "name": "Classmates",
-        "text": "\"Whoa... total do-not-disturb energy. Probably best not to poke that one...\""
+    "classroom_dain_talk_5": {
+        "name": "다인(Dain)",
+        "text": "\"Just asking! I need someone to hit the gym with after school! Someone to toss balls for me!\""
+    },
+    "classroom_dain_talk_6": {
+        "name": "{name}",
+        "text": "\"Am I a ball machine?\""
+    },
+    "classroom_dain_talk_7": {
+        "name": "다인(Dain)",
+        "text": "\"Hahaha, you're probably better than a ball machine! Probably!\""
+    },
+    "classroom_dain_talk_8": {
+        "name": "Me",
+        "text": "*She said 'probably.' Meaning I might be better than a ball machine. My position is precarious.*"
+    },
+    "classroom_yuna_note_1": {
+        "name": "Me",
+        "text": "*A folded note lands on my desk. — I look back and the girl with the black bob by the window is staring outside again.*"
+    },
+    "classroom_yuna_note_2": {
+        "name": "Me",
+        "text": "*I unfold the note.*"
+    },
+    "classroom_yuna_note_3": {
+        "name": "Me",
+        "text": "*'Rough spot you got stuck in. — 유나(Yuna)'*"
+    },
+    "classroom_yuna_note_4": {
+        "name": "Me",
+        "text": "*Neat handwriting. And — the message is oddly comforting.*"
+    },
+    "classroom_yuna_note_5": {
+        "name": "Me",
+        "text": "*I glance toward 유나(Yuna). She's still looking out the window. But I think the tip of her ear just moved.*"
+    },
+    "classroom_yuna_note_6": {
+        "name": "Me",
+        "text": "*Pretending not to care, or genuinely not caring. — Interesting.*"
     }
 }

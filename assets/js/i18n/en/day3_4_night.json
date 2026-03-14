@@ -1,382 +1,131 @@
 {
-    "day3_night_start": {
+    "night3_start": {
         "name": "Me",
-        "text": "*Home at last. Friday night. Weekend starts tomorrow.*"
+        "text": "*I’m back in my room. It was a heavy day.*"
     },
-    "day3_night_reflect": {
+    "night3_start_2": {
         "name": "Me",
-        "text": "*I lie on my bed and think back over the day.*"
+        "text": "*I look at my phone.*"
     },
-    "day3_night_reflect_trouble": {
+    "night3_faithful_check": {
         "name": "Me",
-        "text": "*The whole thing came out at lunch. The icy air, the sharp stares -- still fresh in my mind. Can I survive this weekend in one piece?*"
+        "text": "*There are messages.*"
     },
-    "day3_night_reflect_tension": {
-        "name": "Me",
-        "text": "*My plans have piled up on top of each other. Each time a face flashes through my mind, my heart races and I break into a cold sweat. I need to manage my time carefully.*"
+    "night3_faithful_msg_seo_1": {
+        "name": "서연(Seoyeon)",
+        "text": "\"What you saw today, that’s a secret\""
     },
-    "day3_night_reflect_normal": {
-        "name": "Me",
-        "text": "*I'm looking forward to tomorrow. What kind of day will it be?*"
+    "night3_faithful_msg_seo_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...But you can come again\""
     },
-    "day3_night_phone_check": {
+    "night3_faithful_msg_seo_3": {
         "name": "Me",
-        "text": "*I check my phone. There are messages waiting.*"
+        "text": "*‘You can come again.’ — For her, that’s the same as saying ‘please come.’*"
     },
-    "day3_night_multiple_messages": {
+    "night3_faithful_msg_yuna_1": {
         "name": "Me",
-        "text": "*Multiple messages... my heart is pounding.*"
+        "text": "*유나(Yuna) sent a photo of a note. A single line written in her notebook.*"
     },
-    "day3_night_check_messages": {
+    "night3_faithful_msg_yuna_2": {
+        "name": "유나(Yuna)",
+        "text": "\"That novel, I still haven’t decided on the ending\""
+    },
+    "night3_faithful_msg_dain_1": {
+        "name": "다인(Dain)",
+        "text": "\"If you’re gonna ask about my ankle, come ask in person lol\""
+    },
+    "night3_faithful_msg_dain_2": {
+        "name": "다인(Dain)",
+        "text": "\"But hey, thanks\""
+    },
+    "night3_faithful_msg_dain_3": {
         "name": "Me",
-        "text": "*Which message should I read first?*",
+        "text": "*Not a single exclamation mark. She disguised it with ‘lol’ but — I can see the sincerity.*"
+    },
+    "night3_dream_1": {
+        "name": "Me",
+        "text": "*I had a dream. — I was walking side by side with someone.*"
+    },
+    "night3_dream_2": {
+        "name": "Me",
+        "text": "*I couldn’t see their face, but just having them beside me put my heart at ease.*"
+    },
+    "night3_dream_3": {
+        "name": "Me",
+        "text": "*It was a good dream.*"
+    },
+    "night3_cheat_msg_1": {
+        "name": "Me",
+        "text": "*I’m back in my room. It was a heavy day. I look at my phone.*"
+    },
+    "night3_cheat_msg_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Only be that way with me\""
+    },
+    "night3_cheat_msg_3": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Please\""
+    },
+    "night3_cheat_msg_4": {
+        "name": "유나(Yuna)",
+        "text": "\"...Don’t lie\""
+    },
+    "night3_cheat_msg_5": {
+        "name": "유나(Yuna)",
+        "text": "\"That’s all\""
+    },
+    "night3_nightmare_1": {
+        "name": "Me",
+        "text": "*I fell asleep. — A dream.*"
+    },
+    "night3_nightmare_2": {
+        "name": "Me",
+        "text": "*I’m standing in darkness. I can’t see anything.*"
+    },
+    "night3_nightmare_3": {
+        "name": "서연(Seoyeon)",
+        "text": "\"You promised. That it would only be me...\""
+    },
+    "night3_nightmare_4": {
+        "name": "유나(Yuna)",
+        "text": "\"I told you not to lie.\""
+    },
+    "night3_nightmare_5": {
+        "name": "다인(Dain)",
+        "text": "\"You said you’d come. I was waiting.\""
+    },
+    "night3_nightmare_6": {
+        "name": "Me",
+        "text": "*I see hands from three directions. Faintly, in the darkness.*"
+    },
+    "night3_nightmare_choice": {
+        "name": "Me",
+        "text": "*Whose hand will I take.*",
         "choices": [
-            "Seoyeon's message",
-            "Yuna's message",
-            "Dain's message",
-            "The Nurse's message",
-            "Teacher's message",
-            "Just go to sleep"
+            "Take 서연(Seoyeon)’s hand",
+            "Take 유나(Yuna)’s hand",
+            "Take 다인(Dain)’s hand"
         ]
     },
-    "day3_night_msg_seoyeon": {
-        "name": "Seoyeon",
-        "text": "*22:03* '{name}, still up? I'm really looking forward to tomorrow.'"
-    },
-    "day3_night_seoyeon_suspicious": {
-        "name": "Seoyeon",
-        "text": "*Follow-up message* 'But... I'm the only one you're seeing, right? No other plans?'",
-        "choices": [
-            "'Yeah, just you.'",
-            "'I'll be honest...'",
-            "*Leave it on read*"
-        ]
-    },
-    "day3_night_seoyeon_lie": {
-        "name": "Seoyeon",
-        "text": "'...Good. I'll trust you. See you tomorrow.'"
-    },
-    "day3_night_seoyeon_honest": {
-        "name": "Seoyeon",
-        "text": "'...What? Other plans? With who?'"
-    },
-    "day3_night_seoyeon_angry": {
-        "name": "Seoyeon",
-        "text": "'...Fine. This weekend will tell me everything I need to know.'"
-    },
-    "day3_night_seoyeon_ignore": {
+    "night3_nightmare_end": {
         "name": "Me",
-        "text": "*I didn't reply. Seoyeon's probably disappointed.*"
+        "text": "*I reached out. — I can’t grasp it.*"
     },
-    "day3_night_seoyeon_jealous": {
-        "name": "Seoyeon",
-        "text": "*Follow-up message* 'What happened at lunch today... it's still bothering me. Just be honest with me.'",
-        "choices": [
-            "'Sorry, I couldn't say no to anyone...'",
-            "'You're the most important one to me.'",
-            "*Leave it on read*"
-        ]
-    },
-    "day3_night_seoyeon_apologize": {
-        "name": "Seoyeon",
-        "text": "'...I appreciate the honesty. But I have no intention of sharing you. You're mine. Right?'"
-    },
-    "day3_night_seoyeon_reassure": {
-        "name": "Seoyeon",
-        "text": "'...Really? Don't you ever forget those words. If you smile at someone else over me tomorrow... I can't be held responsible.'"
-    },
-    "day3_night_seoyeon_normal": {
-        "name": "Seoyeon",
-        "text": "'Figured out where we're going tomorrow? You can leave it to me. Good night.'",
-        "choices": [
-            "'I'll leave it to you. Good night.'",
-            "'Thanks. See you tomorrow.'"
-        ]
-    },
-    "day3_night_seoyeon_good": {
+    "night3_nightmare_end_2": {
         "name": "Me",
-        "text": "*Finished chatting with Seoyeon.*"
+        "text": "*Everyone disappears, and only darkness remains.*"
     },
-    "day3_night_msg_yuna": {
-        "name": "Yuna",
-        "text": "*23:59* '...{name}. Tomorrow night. Don't forget.'"
-    },
-    "day3_night_yuna_witnessed": {
-        "name": "Yuna",
-        "text": "*Follow-up message* 'After school today... I saw you leaving with Seoyeon.'"
-    },
-    "day3_night_yuna_warning": {
-        "name": "Yuna",
-        "text": "'If you lie... you'll regret it.'",
-        "choices": [
-            "'You're the most important one, Yuna.'",
-            "'Seoyeon and I are just friends.'",
-            "'...I'm sorry.'"
-        ]
-    },
-    "day3_night_yuna_reassure": {
-        "name": "Yuna",
-        "text": "'...Really? I'll believe you. But if you betray me...'"
-    },
-    "day3_night_yuna_threat": {
-        "name": "Yuna",
-        "text": "'...Don't think about running. Wherever you go, whoever you're with -- I'll know.'"
-    },
-    "day3_night_yuna_excuse": {
-        "name": "Yuna",
-        "text": "'...Friends. Sure. I'll believe that.'"
-    },
-    "day3_night_yuna_apologize": {
-        "name": "Yuna",
-        "text": "'...We'll talk tomorrow. Don't run away.'"
-    },
-    "day3_night_yuna_knows": {
-        "name": "Yuna",
-        "text": "*Follow-up message* '...You made promises to the others too, didn't you?'"
-    },
-    "day3_night_yuna_knows_2": {
-        "name": "Yuna",
-        "text": "'It's fine. Struggle all you want -- you're still in the palm of my hand. Look forward to tomorrow night.'"
-    },
-    "day3_night_yuna_normal": {
-        "name": "Yuna",
-        "text": "'...See you in my dreams.'",
-        "choices": [
-            "'Yeah, good night.'",
-            "'What kind of dream?'"
-        ]
-    },
-    "day3_night_yuna_dream": {
-        "name": "Yuna",
-        "text": "'...Secret. I'll tell you tomorrow night.'"
-    },
-    "day3_night_yuna_sleep": {
+    "night3_nightmare_end_3": {
         "name": "Me",
-        "text": "*Finished chatting with Yuna.*"
+        "text": "*— I woke up drenched in sweat. 3 AM. I see the ceiling.*"
     },
-    "day3_night_msg_dain": {
-        "name": "Dain",
-        "text": "*21:00* 'HEY!! Tomorrow 9 AM at the gym!! Don't you DARE be late!!!'"
-    },
-    "day3_night_dain_suspicious": {
-        "name": "Dain",
-        "text": "*Follow-up message* 'But... did you really make plans with other people too? I heard at lunch.'",
-        "choices": [
-            "'Your practice is the top priority!'",
-            "'I do have other plans too...'",
-            "'The time slots are different, so it's fine.'"
-        ]
-    },
-    "day3_night_dain_priority": {
-        "name": "Dain",
-        "text": "'Really?! Then we're good!! I'll show you something amazing tomorrow!!'"
-    },
-    "day3_night_dain_honest": {
-        "name": "Dain",
-        "text": "'...Yeah? Hmph! I don't care! I'll be a hundred times more fun than any of them!! You'll see tomorrow!!'"
-    },
-    "day3_night_dain_excuse": {
-        "name": "Dain",
-        "text": "'Hmm... if the timing works out, I guess it's fine. But you better give me your full attention!'"
-    },
-    "day3_night_dain_normal": {
-        "name": "Dain",
-        "text": "*Follow-up message* 'After practice let's go get tteokbokki!! My treat!!'",
-        "choices": [
-            "'Sounds great! Can't wait!'",
-            "'Haha, deal!'"
-        ]
-    },
-    "day3_night_dain_good": {
+    "night3_nightmare_end_4": {
         "name": "Me",
-        "text": "*Finished chatting with Dain.*"
+        "text": "*What have I done.*"
     },
-    "day3_night_msg_nurse": {
-        "name": "Nurse",
-        "text": "*23:00* 'Still awake? I can't sleep either~'"
-    },
-    "day3_night_nurse_2": {
-        "name": "Nurse",
-        "text": "'You haven't forgotten about Sunday evening, have you? I'll have something special ready.'",
-        "choices": [
-            "'Looking forward to it!'",
-            "'What is it?'"
-        ]
-    },
-    "day3_night_nurse_excited": {
-        "name": "Nurse",
-        "text": "'Get excited. Sleep tight and I'll see you Sunday, {name}.'"
-    },
-    "day3_night_nurse_curious": {
-        "name": "Nurse",
-        "text": "'It's a secret~ You'll find out on Sunday.'"
-    },
-    "day3_night_msg_teacher": {
-        "name": "Teacher",
-        "text": "*22:00* '{name}, you haven't forgotten our museum plans on Sunday, have you?'"
-    },
-    "day3_night_teacher_2": {
-        "name": "Teacher",
-        "text": "'It's been a while since I've had an outing, so I'm looking forward to it. Sunday, 2 PM, museum entrance.'",
-        "choices": [
-            "'Yes, I'm excited!'",
-            "'Good night!'"
-        ]
-    },
-    "day3_night_teacher_good": {
-        "name": "Teacher",
-        "text": "'Alright, sleep well. See you Sunday.'"
-    },
-    "day3_night_back_to_messages": {
+    "night3_end": {
         "name": "Me",
-        "text": "*Should I check the other messages?*",
-        "choices": [
-            "Seoyeon's message",
-            "Yuna's message",
-            "Dain's message",
-            "The Nurse's message",
-            "Teacher's message",
-            "Go to sleep now"
-        ]
-    },
-    "day3_night_single_message": {
-        "name": "Me",
-        "text": "*I got a message.*"
-    },
-    "day3_night_no_message": {
-        "name": "Me",
-        "text": "*No special messages. What should I do this weekend?*"
-    },
-    "day3_night_ignore_all": {
-        "name": "Me",
-        "text": "*I decided to sleep without checking my messages. I can look at them in the morning.*"
-    },
-    "day3_night_sleep": {
-        "name": "Me",
-        "text": "*Just as my eyes are about to close... my phone rings. A call.*"
-    },
-    "day3_night_phone_seoyeon": {
-        "name": "Seoyeon",
-        "text": "*I pick up and hear Seoyeon's voice* \"...{name}? I know it's late. I just wanted to hear your voice.\""
-    },
-    "day3_night_phone_seoyeon_freetalk": {
-        "name": "Me",
-        "text": "*A late-night call with Seoyeon. Her voice in the dark room sounds softer than usual.*",
-        "context": "Late-night phone call. Seoyeon called saying 'I just wanted to hear your voice.' A sweet late-night conversation.",
-        "personality": "Seoyeon is the cool-beauty type. Sharp-tongued, composed, with a sly charm. She's possessive and bluntly direct when jealous."
-    },
-    "day3_night_phone_yuna": {
-        "name": "Yuna",
-        "text": "*I pick up and hear Yuna's voice* \"...I know it's late. But I couldn't sleep.\""
-    },
-    "day3_night_phone_yuna_freetalk": {
-        "name": "Me",
-        "text": "*A late-night call with Yuna. The faint sound of her breathing reaches my ear.*",
-        "context": "Late-night phone call. Yuna called saying 'I couldn't sleep.' A quiet, intimate atmosphere.",
-        "personality": "Yuna is languid, blunt, and marches to her own beat. She speaks in short, cryptic sentences. Cold on the surface, but there's a gap when she opens up."
-    },
-    "day3_night_phone_dain": {
-        "name": "Dain",
-        "text": "*I pick up and hear Dain's voice* \"...Hey, I know it's late. But I keep thinking about tomorrow and I can't sleep!\""
-    },
-    "day3_night_phone_dain_freetalk": {
-        "name": "Me",
-        "text": "*A late-night call with Dain. Instead of her usual energy, she speaks in a quiet voice. It's a different side of her.*",
-        "context": "Late-night phone call. Dain called saying 'I keep thinking about tomorrow and I can't sleep.' A quieter-than-usual Dain.",
-        "personality": "Dain is a puppy-energy type who loves physical contact and is fiercely competitive. Exclamation mark machine. Tsundere. Upbeat on the outside, sensitive on the inside."
-    },
-    "day3_night_phone_nurse": {
-        "name": "Nurse",
-        "text": "*I pick up and hear her voice* \"...{name}? Still up? I couldn't sleep either.\""
-    },
-    "day3_night_phone_nurse_freetalk": {
-        "name": "Me",
-        "text": "*A late-night call with the Nurse. Her low, soft voice brushes against my ear.*",
-        "context": "Late-night phone call. The Nurse called saying 'I couldn't sleep either.' Her low, soft voice.",
-        "personality": "The Nurse is playful, alluring, and mature. She's torn between her feelings for the student and her ethics as a teacher."
-    },
-    "day3_night_phone_teacher": {
-        "name": "Teacher",
-        "text": "*I pick up and hear her voice* \"...{name}? Still up? I know I should be sleeping, but...\""
-    },
-    "day3_night_phone_teacher_freetalk": {
-        "name": "Me",
-        "text": "*A late-night call with Teacher. Her quiet voice sounds closer than usual.*",
-        "context": "Late-night phone call. Teacher called saying 'I know I should be sleeping, but...' Her quiet voice.",
-        "personality": "Teacher has a dry sense of humor. Seems blunt on the surface, but there's a gap when she catches herself having feelings for a student."
-    },
-    "day3_night_phone_end": {
-        "name": "Me",
-        "text": "*I hang up and set the phone down. The echo of that voice lingers in my chest.*"
-    },
-    "day3_night_sleep_2": {
-        "name": "Me",
-        "text": "*My eyes drift shut. Tomorrow is Saturday... what kind of day will it be?*"
-    },
-    "day3_night_sleep_final": {
-        "name": "Me",
-        "text": "*All those promises swirl around in my head. Can I really keep everyone happy...*"
-    },
-    "day3_night_nightmare": {
-        "name": "Me",
-        "text": "*...I'm dreaming. Voices echo from a dark void.*"
-    },
-    "day3_night_nightmare_voice1": {
-        "name": "???",
-        "text": "*Seoyeon's voice* \"...You said you'd only see me, remember? You pinky swore...\""
-    },
-    "day3_night_nightmare_voice2": {
-        "name": "???",
-        "text": "*Yuna's voice whispers coldly* \"...I told you, betray me and you'd regret it. Remember?\""
-    },
-    "day3_night_nightmare_voice3": {
-        "name": "???",
-        "text": "*Dain's voice trembles* \"...You said you'd come! You promised you wouldn't bail...!\""
-    },
-    "day3_night_nightmare_choice": {
-        "name": "Me",
-        "text": "*Hands reach out from the darkness. Whose hand will I take?*",
-        "choices": [
-            "*Take Seoyeon's hand*",
-            "*Take Yuna's hand*",
-            "*Take Dain's hand*",
-            "*Take no one's hand*"
-        ]
-    },
-    "day3_night_nightmare_end": {
-        "name": "Me",
-        "text": "*I reached out... but there was nothing to hold. They all vanished, and all that remained was darkness and regret.*"
-    },
-    "day3_night_nightmare_wake": {
-        "name": "Me",
-        "text": "*...I'm drenched in sweat. My heart feels like it's about to burst. It was a dream. But... what's going to happen tomorrow?*"
-    },
-    "day3_night_peaceful": {
-        "name": "Me",
-        "text": "*A peaceful night. I'm looking forward to tomorrow.*"
-    },
-    "day3_night_loyalty_seoyeon": {
-        "name": "Me",
-        "text": "*...Thinking about Seoyeon makes me smile without even trying. Tomorrow is just us. Time to show her how I really feel.*"
-    },
-    "day3_night_loyalty_yuna": {
-        "name": "Me",
-        "text": "*...Thinking of Yuna makes my heart race. Tomorrow night, the place she wants to show me. Will I get to see the real her?*"
-    },
-    "day3_night_loyalty_dain": {
-        "name": "Me",
-        "text": "*...Picturing Dain's smile makes me smile too. Tomorrow's practice match -- she's going to be so happy I came.*"
-    },
-    "day3_night_loyalty_nurse": {
-        "name": "Me",
-        "text": "*...The Nurse's face comes to mind. I know this is wrong... but I can't hide what I feel.*"
-    },
-    "day3_night_loyalty_teacher": {
-        "name": "Me",
-        "text": "*...I picture Teacher's smile. We may be teacher and student, but what I feel is real.*"
-    },
-    "day3_final_scene": {
-        "name": "Me",
-        "text": "*Friday night deepens... tomorrow is Saturday.*"
+        "text": "*The night grows deeper...*"
     }
 }
