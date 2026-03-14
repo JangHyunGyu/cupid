@@ -1,9 +1,4 @@
 {
-    "tour_start": {
-        "name": "System",
-        "text": ""
-    },
-
     "tour_seo_1": {
         "name": "Ich",
         "text": "*Wir stehen nebeneinander vor dem Schultor. Genau die Stelle, an der Seoyeon am ersten Tag gewartet hat.*"
@@ -48,7 +43,6 @@
         "name": "Ich",
         "text": "*Seoyeon lächelte still. Sonnenlicht fällt schräg über das Schultor.*"
     },
-
     "tour_yuna_1": {
         "name": "Ich",
         "text": "*Der Lesesaal der Bibliothek. Genau der Platz, an dem Yuna am ersten Tag sagte: 'Du kannst dich hier hinsetzen, wenn du nicht laut bist.'*"
@@ -93,7 +87,6 @@
         "name": "유나(Yuna)",
         "text": "\"...Ich würde mir wünschen, dass du sie liest. Als mein erster Leser.\""
     },
-
     "tour_dain_1": {
         "name": "Ich",
         "text": "*Die Bank am Kiosk. Die Stelle, wo wir am ersten Tag Melonenbrötchen gegessen haben.*"

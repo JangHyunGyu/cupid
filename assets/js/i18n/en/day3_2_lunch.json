@@ -221,5 +221,9 @@
     "lunch3_end": {
         "name": "Me",
         "text": "*Lunch is over.*"
+    },
+    "lunch3_share_1": {
+        "name": "Me",
+        "text": "*I suggested we all share. Awkward, but not bad. All three are smiling. Whether it's real or an act, I can't tell.*"
     }
 }

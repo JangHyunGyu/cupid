@@ -221,5 +221,9 @@
     "lunch3_end": {
         "name": "Ich",
         "text": "*Die Mittagspause ist vorbei.*"
+    },
+    "lunch3_share_1": {
+        "name": "Ich",
+        "text": "*Ich schlug vor, alles zu teilen. Etwas unbeholfen, aber nicht schlecht. Alle drei lächeln. Ob echt oder gespielt, kann ich nicht sagen.*"
     }
 }

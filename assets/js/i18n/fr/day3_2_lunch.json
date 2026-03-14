@@ -221,5 +221,9 @@
     "lunch3_end": {
         "name": "Moi",
         "text": "*La pause déjeuner est terminée.*"
+    },
+    "lunch3_share_1": {
+        "name": "Moi",
+        "text": "*J'ai proposé de tout partager. Un peu gênant, mais pas désagréable. Toutes les trois sourient. Sincèrement ou non, impossible à dire.*"
     }
 }
