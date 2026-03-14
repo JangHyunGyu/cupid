@@ -277,7 +277,8 @@ Object.assign(SCENARIO[5], {
     },
     "true_epilogue_7": {
         "night": true,
-        "fade": true
+        "fade": true,
+        "next": "day5_credits"
     },
 
     // =========================================================================
@@ -313,7 +314,8 @@ Object.assign(SCENARIO[5], {
     },
     "good_5": {
         "night": true,
-        "fade": true
+        "fade": true,
+        "next": "day5_credits"
     },
 
     // =========================================================================
@@ -359,7 +361,8 @@ Object.assign(SCENARIO[5], {
     },
     "mayhem_7": {
         "night": true,
-        "fade": true
+        "fade": true,
+        "next": "day5_credits"
     },
 
     // =========================================================================
@@ -410,7 +413,8 @@ Object.assign(SCENARIO[5], {
     },
     "harem_8": {
         "night": true,
-        "fade": true
+        "fade": true,
+        "next": "day5_credits"
     },
 
     // =========================================================================
@@ -456,7 +460,8 @@ Object.assign(SCENARIO[5], {
     },
     "friend_7": {
         "night": true,
-        "fade": true
+        "fade": true,
+        "next": "day5_credits"
     },
 
     // =========================================================================
@@ -492,7 +497,8 @@ Object.assign(SCENARIO[5], {
     },
     "alone_5": {
         "night": true,
-        "fade": true
+        "fade": true,
+        "next": "day5_credits"
     },
 
     // =========================================================================
