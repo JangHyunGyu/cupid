@@ -3066,14 +3066,30 @@
 ---
 
 ## 시스템 참고: 엔딩 분기 조건 요약
-| 조건 | 결과 |
-|---|---|
-| 고백 수락 + 양다리 아님 | **TRUE LOVE** |
-| 고백 수락 + 양다리 있었음 | **GOOD** |
-| 양다리 + 고백 안 함 | **MAYHEM / HAREM** |
-| Day 4 보류 → Day 5 뒤늦은 고백 | **GOOD** |
-| Day 4 보류 → Day 5 "친구로" | **FRIEND** |
-| 기본값 | **ALONE** |
+
+### 엔딩 관련 플래그
+| 플래그 | 설정 시점 | 설명 |
+|---|---|---|
+| `chose_seoyeon_lunch` | Day 1 점심 | 서연 루트 점심 선택 |
+| `chose_dain_lunch` | Day 1 점심 | 다인 루트 점심 선택 |
+| `chose_yuna_lunch` | Day 1 점심 | 유나 루트 점심 선택 |
+| `ate_lunch_seoyeon` | Day 1 점심 | 서연과 함께 점심 먹기 선택 시 |
+| `day4_confession_accepted` | Day 4 방과후 | 플레이어가 고백을 **수락**했을 때 |
+| `day4_waited` | Day 4 방과후 | 플레이어가 고백을 **거절**(보류)했을 때 |
+| `day5_confessed` | Day 5 자동 | 루트가 있지만 Day 4 고백 미수락 시 자동 설정 |
+| `day3_has_multiple_dates` | Day 3 | 여러 명과 데이트한 경우 |
+| `ending_harem` | Day 5 자동 | 여러 명과 데이트했으나 들키지 않은 경우 자동 설정 |
+
+### 엔딩 분기 우선순위 (코드 구현 기준)
+| 우선순위 | 조건 | 결과 |
+|---|---|---|
+| 1 | `day4_confession_accepted` AND NOT `day3_has_multiple_dates` | **TRUE LOVE END** |
+| 2 | `day4_confession_accepted` (양다리 포함) | **GOOD END** |
+| 3 | `day5_confessed` | **GOOD END** (뒤늦은 고백) |
+| 4 | `ending_harem` | **HAREM END** |
+| 5 | `day3_has_multiple_dates` (들킨 경우) | **MAYHEM END** |
+| 6 | `day4_waited` | **FRIEND END** |
+| 7 | 기본값 (위 조건 모두 미충족) | **ALONE END** |
 
 ### 주요 호감도 변동 포인트
 | 타이밍 | 이벤트 | 영향도 |
@@ -3103,3 +3119,28 @@
 - **행동으로 보여주기**: "슬프다"고 말하지 말고, 무릎을 꿇고 배구공을 껴안고 우는 장면을 써라
 - **침묵의 활용**: 말줄임표 "......"는 캐릭터가 감정을 삼키는 순간. 남용하면 안 되지만, 적재적소에 쓰면 대사보다 강하다
 - **콜백**: Day 1의 사소한 디테일이 Day 4에서 의미를 갖게 하라 (서연의 새끼손가락, 유나의 비밀 장소, 다인의 반달 눈)
+
+---
+
+## 기술 구현 참고 (Technical Implementation Notes)
+
+### 배경 이미지 규칙
+- 서연의 학생회실 장면 (Day 2 & Day 3 방과후): `teacher_office.png` 사용 (`teacher_room.png` 아님 — `teacher_room.png`는 가정집/개인 방처럼 보이므로 학교 사무실에 부적합)
+
+### 캐릭터 스프라이트 표시 규칙
+- `dain_active.png`는 체육관/운동 장면에서만 사용. 교실, 복도, 매점, 옥상 등 모든 비운동 장면에서는 `dain_normal.png` 사용
+- 나레이션 장면 (name: "나" 또는 "{name}")에서는 현재 표시 중인 캐릭터를 숨기지 않음 — 이전 장면의 캐릭터가 그대로 유지됨
+- 호감도 스탯은 캐릭터가 화면에 보이는 장면에서 항상 표시 (보이지 않는 선택지 장면이 아닌, 캐릭터가 보이는 장면으로 이동)
+
+### 세그먼트 전환 (Segment Transitions)
+모든 세그먼트가 연결되어 있음:
+- Day 1: 아침(morning) → 점심(lunch) → 방과후(afterschool) → 밤(night)
+- Day 2: 아침(morning) → 점심(lunch) → 방과후(afterschool) → 밤(night) → Day 3
+- Day 3: 아침(morning) → 점심(lunch) → 방과후(afterschool) → 밤(night) → Day 4
+- Day 4: 아침(morning) → 점심(lunch) → 방과후(afterschool) → 밤(night) → Day 5
+- Day 5: 아침(morning) → 점심(lunch) → 방과후(afterschool) → 밤(night) → 엔딩
+- Day 4 아침: `selectByHighestAffinity`로 호감도 1위 캐릭터의 데이트 루트로 자동 분기
+- Day 5 아침: `selectByHighestAffinity`로 호감도 1위 캐릭터의 투어 루트로 자동 분기
+
+### 분기(Branch) 폴백
+모든 branch 장면에는 default fallback이 포함되어 있어, 조건이 하나도 매칭되지 않더라도 게임이 멈추지 않음
