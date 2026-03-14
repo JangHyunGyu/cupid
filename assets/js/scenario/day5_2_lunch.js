@@ -8,25 +8,6 @@ if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[5]) SCENARIO[5] = {};
 
 Object.assign(SCENARIO[5], {
-    "tour_start": {
-        "background": "assets/images/background/school.png",
-        "bgm": "sunset1.mp3",
-        "character": null,
-        "branches": [
-            {
-                "next": "tour_seo_1",
-                "condition": "route_seoyeon"
-            },
-            {
-                "next": "tour_yuna_1",
-                "condition": "route_yuna"
-            },
-            {
-                "next": "tour_dain_1",
-                "condition": "route_dain"
-            }
-        ]
-    },
 
     // ── 서연 루트 ──
     "tour_seo_1": {
