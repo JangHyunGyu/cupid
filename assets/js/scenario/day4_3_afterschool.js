@@ -27,6 +27,9 @@ Object.assign(SCENARIO[4], {
             {
                 "next": "confess_dain_1",
                 "condition": "route_dain"
+            },
+            {
+                "next": "day4_night_start"
             }
         ]
     },
@@ -134,6 +137,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_shy2.png",
         "sunset": true,
+        "setFlag": "day4_confession_accepted",
         "next": "day4_night_start"
     },
 
@@ -158,6 +162,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "sunset": true,
+        "setFlag": "day4_waited",
         "next": "day4_night_start"
     },
 
@@ -253,6 +258,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_sad.png",
         "sunset": true,
+        "setFlag": "day4_confession_accepted",
         "next": "day4_night_start"
     },
 
@@ -277,6 +283,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_sad.png",
         "sunset": true,
+        "setFlag": "day4_waited",
         "next": "day4_night_start"
     },
 
@@ -378,6 +385,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
         "sunset": true,
+        "setFlag": "day4_confession_accepted",
         "next": "day4_night_start"
     },
 
@@ -402,6 +410,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
         "sunset": true,
+        "setFlag": "day4_waited",
         "next": "day4_night_start"
     }
 });
