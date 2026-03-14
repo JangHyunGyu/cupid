@@ -540,7 +540,6 @@ Object.assign(SCENARIO[4], {
     },
     "wall_dain_cry_6": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "night": true,
         "next": "wall_dain_farewell_1"
     },
@@ -619,7 +618,6 @@ Object.assign(SCENARIO[4], {
     },
     "wall_dain_glimpse_4": {
         "background": "assets/images/background/school_back.png",
-        "character": null,
         "night": true,
         "fade": true,
         "next": "day4_final"
@@ -630,7 +628,6 @@ Object.assign(SCENARIO[4], {
     // ========================================================================
     "wall_yuna_1": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "bgm": "night2.mp3",
         "next": "wall_yuna_2"
@@ -787,7 +784,6 @@ Object.assign(SCENARIO[4], {
     },
     "wall_yuna_moved_5": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "night": true,
         "setFlag": "day4_yuna_wall_broken",
         "next": "wall_yuna_glimpse_1"
@@ -802,7 +798,6 @@ Object.assign(SCENARIO[4], {
     },
     "wall_yuna_sub_2": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "night": true,
         "setFlag": "day4_yuna_wall_broken",
         "next": "wall_yuna_glimpse_1"

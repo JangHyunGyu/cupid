@@ -62,7 +62,6 @@ Object.assign(SCENARIO[5], {
     },
     "tour_seo_7": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "tour_seo_8"
     },
     "tour_seo_8": {
@@ -188,7 +187,6 @@ Object.assign(SCENARIO[5], {
     },
     "tour_dain_7": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "tour_dain_8"
     },
     "tour_dain_8": {

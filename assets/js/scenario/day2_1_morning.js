@@ -26,7 +26,6 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_dain_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning2_dain_3"
     },
     "morning2_dain_3": {
@@ -36,7 +35,6 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_dain_4": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning2_dain_5"
     },
     "morning2_dain_5": {
@@ -76,7 +74,6 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_seo_3": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning2_seo_4"
     },
     "morning2_seo_4": {
@@ -186,7 +183,6 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_dain_react_4": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "morning2_dain_react_5"
     },
     "morning2_dain_react_5": {
