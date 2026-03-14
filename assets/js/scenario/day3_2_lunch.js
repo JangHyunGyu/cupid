@@ -36,7 +36,6 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_meal_4": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_meal_5"
     },
     "lunch3_meal_5": {
@@ -200,7 +199,6 @@ Object.assign(SCENARIO[3], {
 
     "lunch3_expose_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "setFlag": "day3_caught_multiple_dates",
         "next": "lunch3_expose_2"
     },
@@ -246,7 +244,6 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_10": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_11"
     },
     "lunch3_expose_11": {
@@ -351,7 +348,6 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_honest_4": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_honest_5"
     },
     "lunch3_expose_honest_5": {

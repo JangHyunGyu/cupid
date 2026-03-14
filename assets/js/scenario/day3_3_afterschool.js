@@ -454,7 +454,6 @@ Object.assign(SCENARIO[3], {
     },
     "after3_confront_admit_6": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after3_confront_yuna_enter"
     },
 

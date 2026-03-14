@@ -119,7 +119,6 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_dain_gate_3": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "morning3_dain_gate_4"
     },
     "morning3_dain_gate_4": {
@@ -129,7 +128,6 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_dain_gate_5": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "setFlags": ["morning3_companion_dain"],
         "next": "morning3_classroom_1"
     },
@@ -137,7 +135,6 @@ Object.assign(SCENARIO[3], {
     // === 교실 도착 ===
     "morning3_classroom_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "branches": [
             {
                 "next": "morning3_react_seo_1",
@@ -245,12 +242,10 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_date_dain_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning3_date_dain_3"
     },
     "morning3_date_dain_3": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning3_date_dain_choice"
     },
     "morning3_date_dain_choice": {

@@ -66,12 +66,10 @@ Object.assign(SCENARIO[1], {
     },
     "seoyeon_meet_2": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "seoyeon_meet_3"
     },
     "seoyeon_meet_3": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "seoyeon_meet_4"
     },
     "seoyeon_meet_4": {
@@ -86,7 +84,6 @@ Object.assign(SCENARIO[1], {
     },
     "seoyeon_meet_6": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "seoyeon_meet_7"
     },
     "seoyeon_meet_7": {
@@ -101,7 +98,6 @@ Object.assign(SCENARIO[1], {
     },
     "seoyeon_meet_9": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "seoyeon_choice"
     },
     "seoyeon_choice": {
@@ -128,7 +124,6 @@ Object.assign(SCENARIO[1], {
     },
     "choice_flirt_1": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "choice_flirt_2"
     },
     "choice_flirt_2": {
@@ -138,7 +133,6 @@ Object.assign(SCENARIO[1], {
     },
     "choice_flirt_3": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "choice_flirt_4"
     },
     "choice_flirt_4": {
@@ -148,7 +142,6 @@ Object.assign(SCENARIO[1], {
     },
     "choice_flirt_5": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "choice_flirt_6"
     },
     "choice_flirt_6": {
@@ -158,7 +151,6 @@ Object.assign(SCENARIO[1], {
     },
     "choice_flirt_7": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "hallway_1"
     },
     "choice_joke_1": {
@@ -168,7 +160,6 @@ Object.assign(SCENARIO[1], {
     },
     "choice_joke_2": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "choice_joke_3"
     },
     "choice_joke_3": {
@@ -183,7 +174,6 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "hallway_3"
     },
     "hallway_3": {
@@ -193,7 +183,6 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_4": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "hallway_5"
     },
     "hallway_5": {
@@ -203,7 +192,6 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_6": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "hallway_7"
     },
     "hallway_7": {
@@ -213,12 +201,10 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_8": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "hallway_9"
     },
     "hallway_9": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "hallway_10"
     },
     "hallway_10": {
@@ -228,7 +214,6 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_11": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "hallway_12"
     },
     "hallway_12": {

@@ -93,7 +93,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seo_4": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch_seo_5"
     },
     "lunch_seo_5": {
@@ -103,7 +102,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seo_6": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch_seo_7"
     },
     "lunch_seo_7": {
@@ -113,7 +111,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seo_8": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch_seo_9"
     },
     "lunch_seo_9": {
@@ -215,12 +212,10 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seo_c1_1": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch_seo_c1_2"
     },
     "lunch_seo_c1_2": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch_seo_c1_3"
     },
     "lunch_seo_c1_3": {
@@ -230,7 +225,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seo_c1_4": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch_seo_after"
     },
     "lunch_seo_c2_1": {
@@ -245,12 +239,10 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seo_c2_3": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch_seo_after"
     },
     "lunch_seo_after": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch_seo_after_2"
     },
     "lunch_seo_after_2": {
@@ -260,7 +252,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seo_after_3": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch_seo_after_4"
     },
     "lunch_seo_after_4": {
@@ -270,7 +261,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seo_after_5": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "next": "lunch_seo_after_6"
     },
     "lunch_seo_after_6": {
@@ -297,7 +287,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_3": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch_dain_4"
     },
     "lunch_dain_4": {
@@ -307,7 +296,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_5": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch_dain_6"
     },
     "lunch_dain_6": {
@@ -317,12 +305,10 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_7": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch_dain_8"
     },
     "lunch_dain_8": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch_dain_9"
     },
     "lunch_dain_9": {
@@ -357,7 +343,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_15": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch_dain_16"
     },
     "lunch_dain_16": {
@@ -367,7 +352,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_17": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch_dain_18"
     },
     "lunch_dain_18": {
@@ -392,7 +376,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_22": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch_dain_23"
     },
     "lunch_dain_23": {
@@ -429,7 +412,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_c1_2": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch_dain_after"
     },
     "lunch_dain_c2_1": {
@@ -439,7 +421,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_after": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch_dain_after_2"
     },
     "lunch_dain_after_2": {
@@ -449,7 +430,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_after_3": {
         "background": "assets/images/background/store.png",
-        "character": null,
         "next": "lunch_dain_after_4"
     },
     "lunch_dain_after_4": {
@@ -491,12 +471,10 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_yuna_5": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "next": "lunch_yuna_6"
     },
     "lunch_yuna_6": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "next": "lunch_yuna_7"
     },
     "lunch_yuna_7": {
@@ -506,22 +484,18 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_yuna_8": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "next": "lunch_yuna_9"
     },
     "lunch_yuna_9": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "next": "lunch_yuna_10"
     },
     "lunch_yuna_10": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "next": "lunch_yuna_11"
     },
     "lunch_yuna_11": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "next": "lunch_yuna_12"
     },
     "lunch_yuna_12": {
@@ -531,7 +505,6 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_yuna_13": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "next": "lunch_yuna_14"
     },
     "lunch_yuna_14": {
@@ -541,12 +514,10 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_yuna_15": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "next": "lunch_yuna_16"
     },
     "lunch_yuna_16": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "next": "lunch_yuna_17"
     },
     "lunch_yuna_17": {

@@ -46,19 +46,16 @@ Object.assign(SCENARIO[4], {
     },
     "confess_seo_4": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_5"
     },
     "confess_seo_5": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_choice"
     },
     "confess_seo_choice": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "choices": [
             {
@@ -75,37 +72,31 @@ Object.assign(SCENARIO[4], {
     // --- Seoyeon: Confession proceeds ---
     "confess_seo_yes_1": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_yes_2"
     },
     "confess_seo_yes_2": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_yes_3"
     },
     "confess_seo_yes_3": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_yes_4"
     },
     "confess_seo_yes_4": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_yes_5"
     },
     "confess_seo_yes_5": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_yes_6"
     },
     "confess_seo_yes_6": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_yes_7"
     },
@@ -149,13 +140,11 @@ Object.assign(SCENARIO[4], {
     // --- Seoyeon: Confession postponed ---
     "confess_seo_no_1": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_no_2"
     },
     "confess_seo_no_2": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
         "sunset": true,
         "next": "confess_seo_no_3"
     },
@@ -188,25 +177,21 @@ Object.assign(SCENARIO[4], {
     },
     "confess_yuna_3": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_4"
     },
     "confess_yuna_4": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_5"
     },
     "confess_yuna_5": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_choice"
     },
     "confess_yuna_choice": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "choices": [
             {
@@ -223,31 +208,26 @@ Object.assign(SCENARIO[4], {
     // --- Yuna: Confession proceeds ---
     "confess_yuna_yes_1": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_yes_2"
     },
     "confess_yuna_yes_2": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_yes_3"
     },
     "confess_yuna_yes_3": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_yes_4"
     },
     "confess_yuna_yes_4": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_yes_5"
     },
     "confess_yuna_yes_5": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_yes_6"
     },
@@ -279,13 +259,11 @@ Object.assign(SCENARIO[4], {
     // --- Yuna: Confession postponed ---
     "confess_yuna_no_1": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_no_2"
     },
     "confess_yuna_no_2": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "sunset": true,
         "next": "confess_yuna_no_3"
     },
@@ -324,19 +302,16 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_4": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_5"
     },
     "confess_dain_5": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_choice"
     },
     "confess_dain_choice": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "choices": [
             {
@@ -353,37 +328,31 @@ Object.assign(SCENARIO[4], {
     // --- Dain: Confession proceeds ---
     "confess_dain_yes_1": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_yes_2"
     },
     "confess_dain_yes_2": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_yes_3"
     },
     "confess_dain_yes_3": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_yes_4"
     },
     "confess_dain_yes_4": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_yes_5"
     },
     "confess_dain_yes_5": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_yes_6"
     },
     "confess_dain_yes_6": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_yes_7"
     },
@@ -415,13 +384,11 @@ Object.assign(SCENARIO[4], {
     // --- Dain: Confession postponed ---
     "confess_dain_no_1": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_no_2"
     },
     "confess_dain_no_2": {
         "background": "assets/images/background/gym.png",
-        "character": null,
         "sunset": true,
         "next": "confess_dain_no_3"
     },
