@@ -147,6 +147,9 @@ Object.assign(SCENARIO[3], {
             {
                 "next": "morning3_react_dain_1",
                 "condition": "morning3_companion_dain"
+            },
+            {
+                "next": "morning3_react_seo_1"
             }
         ]
     },

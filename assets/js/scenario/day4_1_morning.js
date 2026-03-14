@@ -29,6 +29,9 @@ Object.assign(SCENARIO[4], {
             {
                 "next": "morning4_dain_msg_1",
                 "condition": "route_dain"
+            },
+            {
+                "next": "morning4_end"
             }
         ]
     },

@@ -48,9 +48,9 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "choices": [
-            { "next": "lunch_seo_1" },
-            { "next": "lunch_dain_1" },
-            { "next": "lunch_yuna_1" }
+            { "next": "lunch_seo_1", "setFlags": ["chose_seoyeon_lunch", "ate_lunch_seoyeon"] },
+            { "next": "lunch_dain_1", "setFlags": ["chose_dain_lunch"] },
+            { "next": "lunch_yuna_1", "setFlags": ["chose_yuna_lunch"] }
         ]
     },
 

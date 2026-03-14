@@ -155,6 +155,49 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "sunset": true,
+        "next": "after5_ending_check"
+    },
+
+    // ========== 엔딩 플래그 설정 ==========
+    "after5_ending_check": {
+        "background": null,
+        "character": null,
+        "branches": [
+            {
+                "condition": "day3_has_multiple_dates",
+                "excludeCondition": "day3_caught_multiple_dates",
+                "next": "after5_set_harem"
+            },
+            {
+                "condition": "route_seoyeon",
+                "excludeCondition": "day4_confession_accepted",
+                "next": "after5_set_confessed"
+            },
+            {
+                "condition": "route_dain",
+                "excludeCondition": "day4_confession_accepted",
+                "next": "after5_set_confessed"
+            },
+            {
+                "condition": "route_yuna",
+                "excludeCondition": "day4_confession_accepted",
+                "next": "after5_set_confessed"
+            },
+            {
+                "next": "ending_start"
+            }
+        ]
+    },
+    "after5_set_harem": {
+        "background": null,
+        "character": null,
+        "setFlag": "ending_harem",
+        "next": "ending_start"
+    },
+    "after5_set_confessed": {
+        "background": null,
+        "character": null,
+        "setFlag": "day5_confessed",
         "next": "ending_start"
     }
 });
