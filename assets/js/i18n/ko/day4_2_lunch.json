@@ -1,370 +1,272 @@
 {
-    "day4_arrive": {
+    "date_seo_1": {
         "name": "나",
-        "text": "*약속 장소에 도착했다. 아직 시간이 좀 이르다.*"
+        "text": "*분수대 앞. 서연이 서 있다. 평소 교복이 아닌 사복. 흰 블라우스에 스커트.*"
     },
-    "day4_arrive_nervous": {
+    "date_seo_2": {
         "name": "나",
-        "text": "*주머니 속 손이 축축하다. 왜 이렇게 긴장되지. 심호흡.*"
+        "text": "*다른 사람 같다. 아니 — 같은 사람인데, 다른 면이다.*"
     },
-    "day4_arrive_people": {
-        "name": "나",
-        "text": "*주변을 둘러봤다. 웃으며 걷는 커플, 아이스크림 먹는 가족, 강아지 산책시키는 사람.*"
-    },
-    "day4_arrive_phone": {
-        "name": "나",
-        "text": "*핸드폰을 꺼내 시간을 확인했다. 약속보다 15분 일찍. 아직 연락은 없다.*"
-    },
-    "day4_arrive_look": {
-        "name": "나",
-        "text": "*유리창에 비친 내 모습을 슬쩍 확인한다. 괜찮아 보이나? ...아마.*"
-    },
-    "day4_arrive_wait": {
-        "name": "나",
-        "text": "*그냥 만남이 아니다. 오늘 이후로 뭔가 달라질 것 같다는 예감이 목을 조인다.*"
-    },
-    "day4_heroine_arrive": {
-        "name": "시스템",
-        "text": ""
-    },
-    "day4_meet_seoyeon": {
-        "name": "서연",
-        "text": "\"벌써 와 있네? 감점. 설레서 일찍 온 거 티 나잖아.\""
-    },
-    "day4_seoyeon_react": {
-        "name": "나",
-        "text": "*서연이 여유 있게 웃으며 다가온다. 학교 밖에서 보니 분위기가 다르다.*"
-    },
-    "day4_seoyeon_compliment": {
+    "date_seo_compliment_choice": {
         "name": "나",
         "text": "*뭐라고 하지?*",
         "choices": [
-            "\"오늘 되게 예쁘다.\"",
-            "\"오늘 분위기 밝은데?\""
+            "\"오늘 좀... 예쁘다.\"",
+            "\"분위기가 밝은데.\""
         ]
     },
-    "day4_seoyeon_blush": {
-        "name": "서연",
-        "text": "\"...뭐야, 갑자기. 그런 말은 예고하고 해. ...고마워.\""
-    },
-    "day4_seoyeon_happy": {
-        "name": "서연",
-        "text": "\"당연하지. 오늘 좀 신경 썼거든. 알아봐주니까 쓸 만하네.\""
-    },
-    "day4_meet_yuna_normal": {
-        "name": "유나",
-        "text": "\"...왔어.\""
-    },
-    "day4_yuna_angry_greeting": {
-        "name": "유나",
-        "text": "\"...왔네. 근데 어제 왜 거짓말했어?\""
-    },
-    "day4_yuna_react": {
+    "date_seo_pretty_high": {
         "name": "나",
-        "text": "*유나가 카페 앞에 서 있다. 학교 밖에서 보니 분위기가 또 다르다.*"
+        "text": "*서연이 잠깐 멈춘다. — 그리고 웃는다. 입꼬리가 아니라 눈이 웃는다.*"
     },
-    "day4_yuna_compliment": {
+    "date_seo_pretty_high_2": {
+        "name": "서연",
+        "text": "\"...그런 말. 준비해 온 거야?\""
+    },
+    "date_seo_pretty_high_3": {
+        "name": "{name}",
+        "text": "\"지금 나온 거야.\""
+    },
+    "date_seo_pretty_high_4": {
+        "name": "나",
+        "text": "*'바보'라고 했는데 목소리가 떨린다.*"
+    },
+    "date_seo_pretty_low": {
+        "name": "서연",
+        "text": "\"...뭐야, 갑자기. 그런 말은 예고하고 해.\""
+    },
+    "date_seo_bright": {
+        "name": "서연",
+        "text": "\"당연하지. 오늘 좀 신경 썼거든.\""
+    },
+    "date_seo_walk": {
+        "name": "나",
+        "text": "*공원을 산책한다. 오리들에게 빵을 던져준다.*"
+    },
+    "date_seo_duck": {
+        "name": "서연",
+        "text": "\"이 애들은 단순해서 좋다. 빵 주면 따라오고, 안 주면 안 오고.\""
+    },
+    "date_seo_duck_2": {
+        "name": "{name}",
+        "text": "\"사람도 그런 거 아냐?\""
+    },
+    "date_seo_duck_3": {
+        "name": "서연",
+        "text": "\"사람은 빵 줘도 안 올 때가 있으니까.\""
+    },
+    "date_seo_duck_4": {
+        "name": "나",
+        "text": "*무심한 말 같지만 — 거기에 서연의 경험이 묻어 있다.*"
+    },
+    "date_seo_flower": {
+        "name": "나",
+        "text": "*꽃집 앞을 지나간다.*"
+    },
+    "date_seo_flower_2": {
+        "name": "서연",
+        "text": "\"...들어가 볼까?\""
+    },
+    "date_seo_succulent": {
+        "name": "나",
+        "text": "*서연이 작은 화분을 하나 고른다. 다육이.*"
+    },
+    "date_seo_succulent_2": {
+        "name": "서연",
+        "text": "\"이건 관리하기 쉬워. 물 안 줘도 잘 살아.\""
+    },
+    "date_seo_succulent_3": {
+        "name": "서연",
+        "text": "\"키울 수 있으면. — 못 키우면 내가 다시 가져갈 거니까.\""
+    },
+    "date_seo_end": {
+        "name": "나",
+        "text": "*선물인 건지 시험인 건지. — 아마 둘 다.*"
+    },
+
+    "date_yuna_1": {
+        "name": "나",
+        "text": "*카페 앞. 유나가 벽에 기대어 서 있다. 검은 원피스에 작은 크로스백.*"
+    },
+    "date_yuna_2": {
+        "name": "나",
+        "text": "*유나가 이렇게 생겼었나. — 교복 밖의 유나를 처음 본다.*"
+    },
+    "date_yuna_compliment_choice": {
         "name": "나",
         "text": "*뭐라고 하지?*",
         "choices": [
-            "\"오늘 분위기 다르다. 예쁘네.\"",
-            "\"기다렸어? 미안.\""
+            "\"오늘 좀... 예쁘다.\"",
+            "\"분위기가 밝은데.\""
         ]
     },
-    "day4_yuna_blush": {
+    "date_yuna_pretty_high": {
+        "name": "나",
+        "text": "*유나가 잠깐 멈춘다. 고개를 살짝 숙인다.*"
+    },
+    "date_yuna_pretty_high_2": {
         "name": "유나",
-        "text": "\"...그런 말 처음 듣는다. ...고마워.\""
+        "text": "\"...그거.\""
     },
-    "day4_yuna_cool": {
+    "date_yuna_pretty_high_3": {
+        "name": "{name}",
+        "text": "\"응?\""
+    },
+    "date_yuna_pretty_high_4": {
         "name": "유나",
-        "text": "\"...방금 왔어. 들어가자.\""
+        "text": "\"한 번 더 말해.\""
     },
-    "day4_meet_dain": {
-        "name": "다인",
-        "text": "\"야!! 여기!! 여기!!\""
-    },
-    "day4_dain_react": {
+    "date_yuna_pretty_high_5": {
         "name": "나",
-        "text": "*다인이 손을 흔들며 뛰어온다. 학교 밖에서 만나니 느낌이 다르다.*"
+        "text": "*한 번 더? — 유나가 '한 번 더'를 요구한다.*"
     },
-    "day4_dain_compliment": {
-        "name": "나",
-        "text": "*뭐라고 하지?*",
-        "choices": [
-            "\"오늘 완전 귀엽다.\"",
-            "\"연습 잘 끝났어?\""
-        ]
-    },
-    "day4_dain_blush": {
-        "name": "다인",
-        "text": "\"헤헷...! 진짜?! 오늘 옷 엄청 고민했거든!! 다행이다~!!\""
-    },
-    "day4_dain_energy": {
-        "name": "다인",
-        "text": "\"완벽했지!! 오늘 컨디션 최상!! 자, 빨리 가자!!\""
-    },
-    "day4_meet_nurse": {
-        "name": "보건선생님",
-        "text": "\"어머, 벌써 와 있었네? 오래 기다렸어?\""
-    },
-    "day4_nurse_react": {
-        "name": "나",
-        "text": "*미술관 입구에서 선생님이 손을 흔들고 있다. 학교 밖에서 만나니 분위기가 다르다.*"
-    },
-    "day4_nurse_compliment": {
-        "name": "나",
-        "text": "*뭐라고 하지?*",
-        "choices": [
-            "\"선생님, 오늘 정말 예쁘세요.\"",
-            "\"학교 밖에서 뵈니까 새삼 다르네요.\""
-        ]
-    },
-    "day4_nurse_blush": {
-        "name": "보건선생님",
-        "text": "\"후후, 고마워. 오늘은 학생이 아니라 남자로 봐도 되는 거지?\""
-    },
-    "day4_nurse_smile": {
-        "name": "보건선생님",
-        "text": "\"맞아, 나도 좀 긴장돼. 오늘은 그냥 나야. 선생님 아니고.\""
-    },
-    "day4_meet_teacher": {
-        "name": "담임선생님",
-        "text": "\"왔네. 늦을 줄 알았는데 의외로 빠르잖아.\""
-    },
-    "day4_teacher_react": {
-        "name": "나",
-        "text": "*담임선생님이 카페 앞에서 서 있다. 사복 차림이라 순간 못 알아볼 뻔했다.*"
-    },
-    "day4_teacher_compliment": {
-        "name": "나",
-        "text": "*뭐라고 하지?*",
-        "choices": [
-            "\"선생님, 오늘 되게 예쁘세요.\"",
-            "\"카페 분위기 좋네요.\""
-        ]
-    },
-    "day4_teacher_blush": {
-        "name": "담임선생님",
-        "text": "\"...갑자기 그런 말 하면 당황하잖아. 그만해.\""
-    },
-    "day4_teacher_casual": {
-        "name": "담임선생님",
-        "text": "\"그치? 여기 커피 맛있어. 들어가자.\""
-    },
-    "day4_date_walk": {
-        "name": "나",
-        "text": "*나란히 걸으며 이런저런 이야기를 나눴다. 학교에서와는 다른 편안한 공기.*"
-    },
-    "day4_date_talk_1": {
-        "name": "나",
-        "text": "*평소에 못 했던 얘기들. 좋아하는 음악, 어릴 때 꿈, 사소한 취미.*"
-    },
-    "day4_date_talk_2": {
-        "name": "나",
-        "text": "*대화가 이어질수록 거리가 줄어드는 게 느껴진다. 이 시간이 멈췄으면.*"
-    },
-    "day4_date_weather": {
-        "name": "나",
-        "text": "*바람이 살랑인다. 하늘에 솜사탕 같은 구름이 천천히 흘러간다.*"
-    },
-    "day4_date_surroundings": {
-        "name": "나",
-        "text": "*거리에 우리 같은 커플들이 여기저기. 문득 '우리도 저렇게 보일까?' 하는 생각이 든다.*"
-    },
-    "day4_date_time_pass": {
-        "name": "나",
-        "text": "*핸드폰을 꺼내 봤더니 벌써 한 시간이 지나 있다. 시간이 도둑맞은 기분.*"
-    },
-    "day4_date_sunshine": {
-        "name": "나",
-        "text": "*나뭇잎 사이로 쏟아지는 햇살이 옆사람 얼굴에 내려앉는다. ...예쁘다.*"
-    },
-    "day4_date_activity_branch": {
-        "name": "시스템",
-        "text": ""
-    },
-    "day4_activity_seoyeon_1": {
-        "name": "서연",
-        "text": "\"저기 봐. 꽃밭. 한 바퀴 돌자.\""
-    },
-    "day4_activity_seoyeon_2": {
-        "name": "나",
-        "text": "*서연이 자연스럽게 앞서 걸으며 손짓한다. 알록달록한 꽃 사이에서 돌아본 그 얼굴이 환하다.*"
-    },
-    "day4_activity_seoyeon_3": {
-        "name": "서연",
-        "text": "\"저기 오리들. 빵 줄까? 편의점에서 미리 사왔거든. 이런 거 준비 안 하면 서연이가 아니지.\""
-    },
-    "day4_activity_seoyeon_4": {
-        "name": "나",
-        "text": "*나란히 앉아 오리들한테 빵을 던져줬다. 오리가 쪼르르 달려오자 서연이 까르르 웃는다. 이 웃음소리가 좋다.*"
-    },
-    "day4_activity_yuna_1": {
+    "date_yuna_pretty_low": {
         "name": "유나",
-        "text": "\"...저기, 서점 들려도 돼? 읽고 싶은 책이 있어.\""
+        "text": "\"...그런 말 처음 듣는다.\""
     },
-    "day4_activity_yuna_2": {
-        "name": "나",
-        "text": "*서점 안에서 유나와 나란히 책장을 넘겼다. 책 고를 때 유나 표정은 진지해서 말 걸기가 미안해진다.*"
-    },
-    "day4_activity_yuna_3": {
+    "date_yuna_bright": {
         "name": "유나",
-        "text": "\"...이 노래 좋아해? 한쪽 들어봐.\""
+        "text": "\"...별로 밝은 건 아닌데.\""
     },
-    "day4_activity_yuna_4": {
+    "date_yuna_bookstore": {
         "name": "나",
-        "text": "*유나가 이어폰 한쪽을 건넸다. 같은 음악을 들으며 가까이 앉았다. 유나의 어깨가 내 어깨에 살짝 닿았다.*"
+        "text": "*서점으로 향한다. 유나가 서가 사이를 천천히 걷는다.*"
     },
-    "day4_activity_dain_1": {
+    "date_yuna_bookstore_2": {
+        "name": "유나",
+        "text": "\"여기 와 본 적 있어?\""
+    },
+    "date_yuna_bookstore_3": {
+        "name": "유나",
+        "text": "\"...다행이다. 내가 먼저 보여준 거네.\""
+    },
+    "date_yuna_earphone": {
+        "name": "나",
+        "text": "*유나가 이어폰을 한쪽 건넨다.*"
+    },
+    "date_yuna_earphone_2": {
+        "name": "유나",
+        "text": "\"...들어봐.\""
+    },
+    "date_yuna_earphone_3": {
+        "name": "나",
+        "text": "*세상에 두 사람만 남은 것 같다. — 이어폰 하나로 만들어진 작은 세계.*"
+    },
+    "date_yuna_oldbook": {
+        "name": "나",
+        "text": "*헌책방을 지나간다. 유나가 걸음을 멈춘다.*"
+    },
+    "date_yuna_oldbook_2": {
+        "name": "유나",
+        "text": "\"이 책, 1년 전에 읽었는데. 그때는 결말이 슬펐어.\""
+    },
+    "date_yuna_oldbook_3": {
+        "name": "{name}",
+        "text": "\"지금은?\""
+    },
+    "date_yuna_oldbook_4": {
+        "name": "유나",
+        "text": "\"...지금은 다르게 읽혀.\""
+    },
+    "date_yuna_end": {
+        "name": "나",
+        "text": "*유나가 나를 보며 말한다. — 그 눈에 '너 때문에'가 적혀 있다.*"
+    },
+
+    "date_dain_1": {
+        "name": "나",
+        "text": "*체육관 앞. 다인이 뛰어온다. 캡모자에 운동복.*"
+    },
+    "date_dain_2": {
         "name": "다인",
-        "text": "\"야야야, 오락실!! 저기!! 가자!!\""
+        "text": "\"왔다!! 늦을 뻔했지?!\""
     },
-    "day4_activity_dain_2": {
-        "name": "나",
-        "text": "*다인이 눈을 반짝이며 오락실 안으로 뛰어 들어간다. 리듬게임 앞에 서더니 도전적인 눈빛.*"
+    "date_dain_3": {
+        "name": "{name}",
+        "text": "\"10분 일찍 왔는데.\""
     },
-    "day4_activity_dain_3": {
+    "date_dain_4": {
         "name": "다인",
-        "text": "\"대결이다!! 지는 사람 아이스크림 사기!! 절대 안 져!!\""
+        "text": "\"나는 20분 전에 왔거든!!\""
     },
-    "day4_activity_dain_4": {
+    "date_dain_compliment_choice": {
         "name": "나",
-        "text": "*결국 내가 졌다. 다인이 양 주먹을 불끈 쥐며 환호한다. 지긴 했지만, 저 표정 보면 별로 억울하지도 않다.*"
-    },
-    "day4_activity_nurse_1": {
-        "name": "보건선생님",
-        "text": "\"이 그림 좋지 않아? 색감이 따뜻해서 자꾸 눈이 가.\""
-    },
-    "day4_activity_nurse_2": {
-        "name": "나",
-        "text": "*미술관 안은 조용하고 넓었다. 선생님과 나란히 그림을 보며 천천히 걸었다. 이런 시간이 좋다.*"
-    },
-    "day4_activity_nurse_3": {
-        "name": "보건선생님",
-        "text": "\"나도 학생 때는 꿈이 많았어. 지금도 있긴 한데, 모양이 좀 달라졌을 뿐이야.\""
-    },
-    "day4_activity_nurse_4": {
-        "name": "나",
-        "text": "*선생님이 한 점의 그림 앞에서 멈췄다. 그 옆모습이 -- 묘하게 아름답다.*"
-    },
-    "day4_activity_teacher_1": {
-        "name": "담임선생님",
-        "text": "\"너, 졸업하면 뭐 하고 싶어? 꿈 같은 거 있어?\""
-    },
-    "day4_activity_teacher_2": {
-        "name": "나",
-        "text": "*카페에 마주 앉아 이야기를 나눈다. 선생님이 평소와 달리 부드럽다.*"
-    },
-    "day4_activity_teacher_3": {
-        "name": "담임선생님",
-        "text": "\"나도 학생 때 선생님 될 줄 몰랐어. 인생은 계획대로 안 되거든. 근데 지금은... 나쁘지 않아.\""
-    },
-    "day4_activity_teacher_4": {
-        "name": "나",
-        "text": "*선생님이 자기 케이크를 한 조각 잘라서 내 접시에 올려줬다. \"먹어봐, 여기 디저트 진짜 맛있어.\" 그 자연스러운 손길에 심장이 뛰었다.*"
-    },
-    "day4_activity_converge": {
-        "name": "나",
-        "text": "*시간이 빠르다. 벌써 점심때가 다 됐다.*"
-    },
-    "day4_date_lunch": {
-        "name": "나",
-        "text": "*근처 카페에 들어갔다. 창가 자리에 마주 앉으니 또 심장이 뛴다.*"
-    },
-    "day4_lunch_menu": {
-        "name": "나",
-        "text": "*메뉴판을 넘긴다. 파스타, 샌드위치, 브런치 세트.*"
-    },
-    "day4_lunch_order": {
-        "name": "나",
-        "text": "\"나는 파스타. 뭐 먹을래?\""
-    },
-    "day4_lunch_order_react": {
-        "name": "나",
-        "text": "*상대방도 메뉴를 골랐다. 주문하고 나니 잠깐 어색한 침묵.*"
-    },
-    "day4_lunch_awkward": {
-        "name": "나",
-        "text": "*뭔가 얘기를 꺼내야 할 것 같은데. 이럴 때 뭐가 자연스럽지.*"
-    },
-    "day4_lunch_funny": {
-        "name": "나",
-        "text": "*음식이 나왔다. 내가 시킨 파스타 양이 상상 이상이다. 상대방이 웃음을 참지 못하고 있다.*"
-    },
-    "day4_lunch_funny_react": {
-        "name": "나",
-        "text": "\"왜 웃어! 이 정도는 거뜬하다고!\""
-    },
-    "day4_lunch_share": {
-        "name": "나",
-        "text": "*결국 서로 음식을 나눠 먹게 됐다. 포크가 부딪힐 때마다 괜히 웃음이 새어 나온다.*"
-    },
-    "day4_date_lunch_talk": {
-        "name": "나",
-        "text": "*이야기꽃이 피었다. 같이 웃고, 같이 고민하고. 이런 게 행복이구나.*"
-    },
-    "day4_lunch_learn": {
-        "name": "나",
-        "text": "*대화가 길어질수록 모르던 면이 보인다. 좋아하는 계절, 싫어하는 음식, 어릴 때 별명. 사소한 것들이 소중하게 느껴진다.*"
-    },
-    "day4_date_lunch_choice": {
-        "name": "나",
-        "text": "*좀 더 깊은 이야기를 꺼내볼까?*",
+        "text": "*이건 이제 패턴이다.*",
         "choices": [
-            "\"나 사실... 전학 오기 전에 좀 외로웠어.\"",
-            "\"이 학교에 와서 진짜 좋은 사람들 만났다.\""
+            "\"오늘 좀... 예쁘다.\"",
+            "\"분위기가 밝은데.\""
         ]
     },
-    "day4_date_honest": {
+    "date_dain_pretty_high": {
         "name": "나",
-        "text": "\"새로운 환경이 무섭기도 했는데, 덕분에 이제 매일이 좀 다르다.\""
+        "text": "*다인이 멈춘다. 눈이 커진다. — 그리고 캡모자를 푹 눌러쓴다.*"
     },
-    "day4_date_honest_react": {
-        "name": "나",
-        "text": "*상대방이 조용히 내 이야기를 들어줬다. 따뜻한 눈빛으로 고개를 끄덕인다. 진심이 통한 것 같다.*"
+    "date_dain_pretty_high_2": {
+        "name": "다인",
+        "text": "\"갑— 갑자기 뭐야!!\""
     },
-    "day4_date_grateful": {
-        "name": "나",
-        "text": "\"특히... 지금 이 시간이 제일 좋아.\""
+    "date_dain_pretty_high_3": {
+        "name": "{name}",
+        "text": "\"사실인데.\""
     },
-    "day4_date_grateful_react": {
+    "date_dain_pretty_high_4": {
         "name": "나",
-        "text": "*상대방이 살짝 눈을 피하며 미소 짓는다. 분명 기뻐하고 있다.*"
+        "text": "*때린다고 했지만 목소리가 떨리고 있다.*"
     },
-    "day4_date_response": {
-        "name": "나",
-        "text": "*상대방의 눈빛이 부드러워졌다. 뭔가 통한 느낌.*"
+    "date_dain_pretty_low": {
+        "name": "다인",
+        "text": "\"에?! 뭐야 갑자기!! ...고, 고마워.\""
     },
-    "day4_date_cafe_exit": {
-        "name": "나",
-        "text": "*카페를 나서자 따사로운 오후 햇살. 아까보다 거리가 가까워진 것 같다.*"
+    "date_dain_bright": {
+        "name": "다인",
+        "text": "\"당연하지!! 오늘 컨디션 최상이거든!!\""
     },
-    "day4_date_photo_moment": {
+    "date_dain_arcade": {
         "name": "나",
-        "text": "*문득 이 순간을 남기고 싶다.*",
-        "choices": [
-            "\"우리 사진 한 장 찍자.\"",
-            "*마음속에 담아두자.*"
-        ]
+        "text": "*오락실로 간다. 리듬게임 앞에 선다.*"
     },
-    "day4_date_photo_yes": {
-        "name": "나",
-        "text": "*나란히 서서 셀카를 찍었다. 화면 속 두 사람이 웃고 있다. 오래 간직하고 싶은 사진.*"
+    "date_dain_arcade_2": {
+        "name": "다인",
+        "text": "\"자, 내기다!! 진 사람 음료수!!\""
     },
-    "day4_date_photo_no": {
-        "name": "나",
-        "text": "*사진보다 더 선명하게 기억에 새긴다. 바람 냄새, 햇살의 온도, 옆에 있는 사람의 웃음.*"
+    "date_dain_arcade_3": {
+        "name": "다인",
+        "text": "\"내기 없으면 재미없잖아!!\""
     },
-    "day4_date_ending_moment": {
-        "name": "나",
-        "text": "*나란히 걸으며 침묵이 흘렀다. 어색한 침묵이 아니다. 말 안 해도 괜찮은 사이가 된 것 같다.*"
+    "date_dain_rhythm": {
+        "name": "다인",
+        "text": "\"풀콤보!! 봤어?!\""
     },
-    "day4_date_ending_feel": {
-        "name": "나",
-        "text": "*오늘이 꿈 같다. 전학 와서 이런 하루가 올 줄은 진짜 몰랐다.*"
+    "date_dain_rhythm_2": {
+        "name": "{name}",
+        "text": "\"...대단해.\""
     },
-    "day4_date_transition": {
+    "date_dain_rhythm_3": {
+        "name": "다인",
+        "text": "\"ㅋㅋㅋ 당연하지!! 이건 무릎 안 써도 되니까!!\""
+    },
+    "date_dain_knee": {
         "name": "나",
-        "text": "*아직 오후가 남았다. 이 데이트는 끝나지 않았다.*"
+        "text": "*'무릎 안 써도 되니까'. — 가볍게 말했지만, 거기에 무게가 있다.*"
+    },
+    "date_dain_knee_2": {
+        "name": "나",
+        "text": "*스포츠용품점을 지나간다. 다인이 쇼윈도 앞에서 멈춘다. 배구화가 진열돼 있다.*"
+    },
+    "date_dain_shop": {
+        "name": "다인",
+        "text": "\"......\""
+    },
+    "date_dain_shop_2": {
+        "name": "{name}",
+        "text": "\"다인?\""
+    },
+    "date_dain_shop_3": {
+        "name": "다인",
+        "text": "\"아무것도 아냐! 가자!\""
+    },
+    "date_dain_end": {
+        "name": "나",
+        "text": "*웃고 있다. — 근데 눈이 웃지 않는다.*"
     }
 }

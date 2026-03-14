@@ -1,354 +1,258 @@
 {
-    "day4_afternoon_start": {
+    "confess_seo_1": {
         "name": "Ich",
-        "text": "*Raus aus dem Café und zusammen durch die Straßen gelaufen. Es wird langsam später Nachmittag.*"
+        "text": "*Das Date neigt sich dem Ende zu. Seoyeon wendet sich Richtung Schule.*"
     },
-    "day4_walk_together": {
-        "name": "Ich",
-        "text": "*Nebeneinander gehend schaue ich mich um. Wochenende, viele Leute unterwegs. Lachen, Musik, süße Düfte vermischen sich.*"
+    "confess_seo_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Es gibt noch einen letzten Ort, den ich dir zeigen will.\""
     },
-    "day4_walk_street": {
+    "confess_seo_3": {
         "name": "Ich",
-        "text": "*Unser Spiegelbild im Schaufenster. Sieht aus wie ein echtes Pärchen -- mein Herz setzt kurz aus.*"
+        "text": "*Das Dach. Der Sonnenuntergang taucht die Schule in Gold. Genau der Ort, an dem ich am Tag 1 zum ersten Mal war.*"
     },
-    "day4_walk_market": {
+    "confess_seo_4": {
         "name": "Ich",
-        "text": "*In einer Seitengasse taucht ein kleiner Markt auf. Leckere Gerüche wehen herüber.*"
+        "text": "*Ich habe versucht, diesem Gefühl keinen Namen zu geben. Denn sobald ich es benenne, gibt es kein Zurück mehr.*"
     },
-    "day4_walk_food_choice": {
+    "confess_seo_5": {
         "name": "Ich",
-        "text": "*Ein Streetfood-Stand fällt mir ins Auge.*",
+        "text": "*-- Aber es ist bereits zu spät.*"
+    },
+    "confess_seo_choice": {
+        "name": "Ich",
+        "text": "*Mein Herz ist bis zum Hals gestiegen. Wenn ich es jetzt nicht sage -- werde ich den Mut nie wieder finden.*",
         "choices": [
-            "\"Sollen wir uns einen teilen?\"",
-            "\"Sieht lecker aus... lass mal kurz gucken.\""
+            "\"Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.\"",
+            "\"...Diese Aussicht ist wirklich schön.\""
         ]
     },
-    "day4_walk_food_share": {
+    "confess_seo_yes_1": {
         "name": "Ich",
-        "text": "*Ein gefülltes Gebäck gekauft und in zwei Hälften geteilt. Warmer Dampf steigt auf. \"Hier, deine Hälfte.\" Meine Hand hat leicht gezittert beim Reichen.*"
+        "text": "\"Hey.\""
     },
-    "day4_walk_food_look": {
+    "confess_seo_yes_2": {
         "name": "Ich",
-        "text": "*Vorm Stand herumgeschaut und dabei unsere Schultern berührt. Herzstolpern. Hab so getan, als wäre nichts, aber meine Ohren glühen.*"
+        "text": "*Ich öffnete den Mund, aber kein Ton kam heraus. Mein Hals brennt. Zweiter Versuch.*"
     },
-    "day4_walk_close": {
+    "confess_seo_yes_3": {
         "name": "Ich",
-        "text": "*Nebeneinander auf die Hauptstraße. Es wird ruhiger, das Licht der untergehenden Sonne fällt lang zwischen die Gebäude.*"
+        "text": "*Ich erinnere mich an die Worte, die ich an meiner alten Schule heruntergeschluckt habe. Hunderte Male habe ich es wiederholt -- 'was wäre gewesen, wenn ich es damals gesagt hätte.' -- Diesmal schlucke ich sie nicht herunter.*"
     },
-    "day4_walk_feelings": {
+    "confess_seo_yes_4": {
         "name": "Ich",
-        "text": "*Einfach nur zusammen zu gehen fühlt sich schon so gut an. Hab heimlich einen Blick auf das Gesicht neben mir geworfen. Ein Gefühl steigt auf, das sich nicht in Worte fassen lässt.*"
+        "text": "\"Seoyeon. Du lächelst immer perfekt. Immer. Aber -- diese 0,5 Sekunden, wenn du aufhörst zu lächeln, lassen mich nicht los.\""
     },
-    "day4_afternoon_walk": {
+    "confess_seo_yes_5": {
         "name": "Ich",
-        "text": "*Nebeneinander zu gehen war noch nie so schön. Jedes Mal, wenn sich unsere Fingerspitzen fast berühren, wird mein Puls schneller.*"
+        "text": "*Meine Nägel graben sich in meine Handflächen. Ich weiß nicht, ob der Sonnenuntergang mich blendet oder ob meine Augen einfach brennen. -- Sag es einfach. Auch wenn die Worte hässlich klingen.*"
     },
-    "day4_special_notice": {
+    "confess_seo_yes_6": {
         "name": "Ich",
-        "text": "*Beim Laufen fallen Läden mit besonderer Atmosphäre in einer Seitengasse auf. Mein Gegenüber zeigt auf einen davon.*"
+        "text": "\"Die du in diesem Moment bist, fühlt sich wie die echte Seoyeon an. Und diese Seoyeon mag ich.\""
     },
-    "day4_special_visit": {
-        "name": "System",
-        "text": ""
-    },
-    "day4_special_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"Warte. Da drüben -- ein Blumenladen. Lass mal reingehen.\""
-    },
-    "day4_special_seoyeon_react": {
+    "confess_seo_yes_7": {
         "name": "Ich",
-        "text": "*Seoyeon wählt zwischen den Blumen eine einzelne aus und hält sie mir hin. \"Hier. Die Blumensprache bleibt mein Geheimnis.\"*",
+        "text": "*Drei Silben schweben im Wind auf dem Dach. An genau diesem Ort, wo ich am Tag 1 sagte 'Ich mag die Brise.'*"
+    },
+    "confess_seo_yes_8": {
+        "name": "Ich",
+        "text": "*Seoyeon sagt nichts. Ihre Lippen zittern. Nicht die Schülerpräsidentin -- nur ein Mädchen, das dort steht.*"
+    },
+    "confess_seo_yes_9": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Ich auch.\""
+    },
+    "confess_seo_yes_10": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Von Anfang an. Du warst es von Anfang an.\""
+    },
+    "confess_seo_yes_11": {
+        "name": "서연(Seoyeon)",
+        "text": "\"-- Du hast keine Ahnung, wie lange ich mich zurückgehalten habe.\""
+    },
+    "confess_seo_yes_12": {
+        "name": "Ich",
+        "text": "*Seoyeon streckt ihren kleinen Finger aus. Derselbe kleine Finger, den ich am Tag 1 gesehen habe. -- Damals dachte ich, es sei nur eine Angewohnheit, aber das ist Seoyeons Art, ein Versprechen zu machen.*"
+    },
+    "confess_seo_no_1": {
+        "name": "Ich",
+        "text": "\"...Dieses Dach ist wirklich schön.\""
+    },
+    "confess_seo_no_2": {
+        "name": "Ich",
+        "text": "*Feige Worte. Ich weiß es.*"
+    },
+    "confess_seo_no_3": {
+        "name": "Ich",
+        "text": "*Seoyeon lächelt. Ein geübtes Lächeln. -- Sie dreht sich um und geht. Beim dritten Schritt bleibt sie stehen.*"
+    },
+    "confess_seo_no_4": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Wenn du das nächste Mal herkommst, bereite etwas anderes vor.\""
+    },
+    "confess_yuna_1": {
+        "name": "Ich",
+        "text": "*Das Date neigt sich dem Ende zu. Yuna bleibt stehen.*"
+    },
+    "confess_yuna_2": {
+        "name": "유나(Yuna)",
+        "text": "\"...Es gibt noch einen letzten Ort.\""
+    },
+    "confess_yuna_3": {
+        "name": "Ich",
+        "text": "*Der Bibliotheksanbau. Ein geheimer Leseraum. Der Sonnenuntergang sickert durch das Fenster. Genau der Ort, an dem ich am Tag 2 zum ersten Mal war.*"
+    },
+    "confess_yuna_4": {
+        "name": "Ich",
+        "text": "*Ich habe versucht, diesem Gefühl keinen Namen zu geben. Denn sobald ich es benenne, gibt es kein Zurück mehr.*"
+    },
+    "confess_yuna_5": {
+        "name": "Ich",
+        "text": "*-- Aber es ist bereits zu spät.*"
+    },
+    "confess_yuna_choice": {
+        "name": "Ich",
+        "text": "*Mein Herz ist bis zum Hals gestiegen. Wenn ich es jetzt nicht sage -- werde ich den Mut nie wieder finden.*",
         "choices": [
-            "\"Du bist aber hübscher als jede Blume.\"",
-            "\"Danke. Die werde ich in Ehren halten.\""
+            "\"Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.\"",
+            "\"...Dieser Ort ist wirklich schön.\""
         ]
     },
-    "day4_special_yuna": {
-        "name": "Yuna",
-        "text": "\"...Hey. Da drüben. Ein Antiquariat. Können wir kurz rein?\""
-    },
-    "day4_special_yuna_react": {
+    "confess_yuna_yes_1": {
         "name": "Ich",
-        "text": "*Yuna zieht vorsichtig ein Buch aus dem alten Regal. \"Dieses Buch... wollte ich zusammen mit dir lesen.\" Ihre Augen leuchten sanft.*",
+        "text": "\"Hey.\""
+    },
+    "confess_yuna_yes_2": {
+        "name": "Ich",
+        "text": "*Ich öffnete den Mund, aber kein Ton kam heraus. Mein Hals brennt. Zweiter Versuch.*"
+    },
+    "confess_yuna_yes_3": {
+        "name": "Ich",
+        "text": "\"Yuna. Am Anfang dachte ich, dein Schweigen sei eine Mauer. Aber das war es nicht.\""
+    },
+    "confess_yuna_yes_4": {
+        "name": "Ich",
+        "text": "*Meine Nägel graben sich in meine Handflächen. -- Sag es einfach. Auch wenn die Worte hässlich klingen.*"
+    },
+    "confess_yuna_yes_5": {
+        "name": "Ich",
+        "text": "\"Du warst -- die Art von Mensch, die sich neben einen setzt, statt zu reden. Diese Stille war wärmer als alle Worte.\""
+    },
+    "confess_yuna_yes_6": {
+        "name": "Ich",
+        "text": "\"Ich mag dich.\""
+    },
+    "confess_yuna_yes_7": {
+        "name": "Ich",
+        "text": "*Drei Silben schweben im stillen Raum. An genau diesem Ort, wo ich am Tag 2 sagte 'Ich mag die Ruhe.'*"
+    },
+    "confess_yuna_yes_8": {
+        "name": "Ich",
+        "text": "*Yunas ausdruckslose Miene bricht auf. Ihre träge Stimme verschwindet, ersetzt durch die kleinste -- kaum hörbare -- Stimme. Sie umklammert ihren Ärmel.*"
+    },
+    "confess_yuna_yes_9": {
+        "name": "유나(Yuna)",
+        "text": "\"...Geh nicht. Diesmal geh nicht.\""
+    },
+    "confess_yuna_no_1": {
+        "name": "Ich",
+        "text": "\"...Dieser Ort ist wirklich schön.\""
+    },
+    "confess_yuna_no_2": {
+        "name": "Ich",
+        "text": "*Feige Worte. Ich weiß es.*"
+    },
+    "confess_yuna_no_3": {
+        "name": "Ich",
+        "text": "*Yuna greift nach einem Buch. Sie schaut auf das Cover, aber sie liest nicht.*"
+    },
+    "confess_yuna_no_4": {
+        "name": "유나(Yuna)",
+        "text": "\"...Das Ende ist noch nicht da.\""
+    },
+    "confess_dain_1": {
+        "name": "Ich",
+        "text": "*Das Date neigt sich dem Ende zu. Dain rennt Richtung Schule.*"
+    },
+    "confess_dain_2": {
+        "name": "다인(Dain)",
+        "text": "\"Letzter Halt!! Los geht's!!\""
+    },
+    "confess_dain_3": {
+        "name": "Ich",
+        "text": "*Die Turnhalle. Leer. Der Sonnenuntergang fällt durch die Fenster auf das Spielfeld. Genau der Ort, an dem wir am Tag 1 zum ersten Mal zusammen waren.*"
+    },
+    "confess_dain_4": {
+        "name": "Ich",
+        "text": "*Ich habe versucht, diesem Gefühl keinen Namen zu geben. Denn sobald ich es benenne, gibt es kein Zurück mehr.*"
+    },
+    "confess_dain_5": {
+        "name": "Ich",
+        "text": "*-- Aber es ist bereits zu spät.*"
+    },
+    "confess_dain_choice": {
+        "name": "Ich",
+        "text": "*Mein Herz ist bis zum Hals gestiegen. Wenn ich es jetzt nicht sage -- werde ich den Mut nie wieder finden.*",
         "choices": [
-            "\"Lass uns zusammen lesen. Jeden Tag ein Kapitel.\"",
-            "\"Wenn du es ausgesucht hast, muss es ein gutes Buch sein.\""
+            "\"Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.\"",
+            "\"...Dieser Ort ist wirklich groß.\""
         ]
     },
-    "day4_special_dain": {
-        "name": "Dain",
-        "text": "\"OH!! Ein Sportladen!! Warte kurz, ich muss da was gucken!!\""
-    },
-    "day4_special_dain_react": {
+    "confess_dain_yes_1": {
         "name": "Ich",
-        "text": "*Dain kommt mit Partner-Armbändern angerannt. \"Guck mal, Pärchen-Bänder! Lass uns die tragen!!\" Ihr Gesicht ist leicht gerötet.*",
-        "choices": [
-            "\"Ja! Lass uns die zusammen tragen.\"",
-            "\"Such du eins aus. Du hast da ein gutes Händchen für.\""
-        ]
+        "text": "\"Hey.\""
     },
-    "day4_special_nurse": {
-        "name": "Krankenschwester",
-        "text": "\"Oh, ein Antiquitätenladen. Wollen wir mal reinschauen?\""
-    },
-    "day4_special_nurse_react": {
+    "confess_dain_yes_2": {
         "name": "Ich",
-        "text": "*Sie hält eine Vintage-Brosche ins Sonnenlicht. \"Ist die nicht hübsch? Irgendwie möchte man sowas für immer aufbewahren.\"*",
-        "choices": [
-            "\"Die würde Ihnen total stehen. Lassen Sie mich die kaufen.\"",
-            "\"Sie haben einen guten Blick. Die ist wirklich schön.\""
-        ]
+        "text": "*Ich öffnete den Mund, aber kein Ton kam heraus. Mein Hals brennt. Zweiter Versuch.*"
     },
-    "day4_special_teacher": {
-        "name": "Lehrerin",
-        "text": "\"Moment, können wir kurz in den Schreibwarenladen? Ich brauche einen Stift.\""
-    },
-    "day4_special_teacher_react": {
+    "confess_dain_yes_3": {
         "name": "Ich",
-        "text": "*Sie sucht einen Stift aus, zögert kurz und nimmt noch einen zweiten. \"...Der ist für dich. Damit du im Unterricht ordentlich mitschreibst. Ein Geschenk.\" Sie dreht sich weg, aber ihre Ohrspitzen sind rot.*",
-        "choices": [
-            "\"Danke. Den benutze ich jeden Tag.\"",
-            "\"Von Ihnen ausgesucht macht ihn umso besonderer.\""
-        ]
+        "text": "\"Dain. Weißt du, dass deine Augen zu kleinen Halbmonden werden, wenn du lächelst? Wahrscheinlich nicht -- es ist dein eigenes Gesicht.\""
     },
-    "day4_afternoon_special": {
+    "confess_dain_yes_4": {
         "name": "Ich",
-        "text": "*Eine besondere Zeit. \"Hey, wollen wir zum Park am Fluss?\" Mein Gegenüber hat es zuerst vorgeschlagen.*"
+        "text": "*Meine Nägel graben sich in meine Handflächen. -- Sag es einfach. Auch wenn die Worte hässlich klingen.*"
     },
-    "day4_afternoon_park": {
+    "confess_dain_yes_5": {
         "name": "Ich",
-        "text": "*Am Uferpark angekommen. Die Abendsonne glitzert auf dem Wasser. Wie eine Filmkulisse.*"
+        "text": "\"-- Wenn diese Augen mich nicht ansehen, bekomme ich keine Luft. Ich weiß nicht, seit wann das so ist.\""
     },
-    "day4_sunset_approach": {
+    "confess_dain_yes_6": {
         "name": "Ich",
-        "text": "*Langsam am Flussufer entlang. Goldene Wellen schimmern auf der Wasseroberfläche. Die Zeit scheint langsamer zu werden.*"
+        "text": "\"Ich mag dich.\""
     },
-    "day4_sunset_colors": {
+    "confess_dain_yes_7": {
         "name": "Ich",
-        "text": "*Der Himmel wandelt sich von Orange zu Rosa, dann zu Violett. So einen Himmel habe ich noch nie gesehen.*"
+        "text": "*Drei Silben hallen durch die leere Turnhalle. An genau diesem Ort, wo sie am Tag 1 sagte 'Turnhalle, Deal?'*"
     },
-    "day4_sunset_wind": {
+    "confess_dain_yes_8": {
         "name": "Ich",
-        "text": "*Warmer Wind streift mich. Ein Mix aus Gras und Wasserduft. Das leise Plätschern untermalt alles wie eine Hintergrundmusik.*"
+        "text": "*Dain ist erstarrt. Ihre Energie ist verschwunden. -- Und dann füllen sich ihre Augen langsam. Sie bedeckt ihr Gesicht mit beiden Händen. Zwischen ihren Fingern schimmern rote Wangen.*"
     },
-    "day4_sunset_stare": {
-        "name": "System",
-        "text": ""
+    "confess_dain_yes_9": {
+        "name": "다인(Dain)",
+        "text": "\"...Moment. Mein Herz -- ich glaube ich weine gleich -- warum weine ich, ich bin doch glücklich --\""
     },
-    "day4_sunset_stare_seoyeon": {
+    "confess_dain_yes_10": {
+        "name": "다인(Dain)",
+        "text": "\"Ich mag dich auch. Total.\""
+    },
+    "confess_dain_no_1": {
         "name": "Ich",
-        "text": "*Seoyeon lehnt sich ans Geländer und schaut in den Sonnenuntergang. Ihre Haare wehen im Wind. Ihr Profil im Abendlicht -- wow, echt wunderschön.*"
+        "text": "\"...Dieser Ort ist wirklich groß.\""
     },
-    "day4_sunset_stare_yuna": {
+    "confess_dain_no_2": {
         "name": "Ich",
-        "text": "*Yuna schaut still in den Sonnenuntergang. Ihre übliche Gleichgültigkeit ist einem sanften Ausdruck gewichen. Diesen Blick sehe ich zum ersten Mal.*"
+        "text": "*Feige Worte. Ich weiß es.*"
     },
-    "day4_sunset_stare_dain": {
+    "confess_dain_no_3": {
         "name": "Ich",
-        "text": "*Dain lässt ein leises \"Wow...\" entweichen. Im Gegensatz zu ihrer üblichen Energie steht sie still da und betrachtet den Sonnenuntergang -- wirkt auf einmal richtig erwachsen.*"
+        "text": "*Dain lässt einen Volleyball aufprallen. Einmal. Zweimal. -- Beim dritten Mal hält sie inne.*"
     },
-    "day4_sunset_stare_nurse": {
-        "name": "Ich",
-        "text": "*Sie blinzelt in den Sonnenuntergang. Im Abendlicht sieht sie aus wie ein Gemälde.*"
-    },
-    "day4_sunset_stare_teacher": {
-        "name": "Ich",
-        "text": "*Sie lehnt am Geländer und blickt auf den Fluss hinab. Ihre übliche Strenge ist verschwunden, ein sanfter Ausdruck an ihrer Stelle.*"
-    },
-    "day4_afternoon_sunset": {
-        "name": "Ich",
-        "text": "*Das Abendlicht fällt auf ihr Gesicht. Seltsam -- mir fehlen die Worte.*"
-    },
-    "day4_afternoon_silence": {
-        "name": "Ich",
-        "text": "*......*"
-    },
-    "day4_afternoon_feeling": {
-        "name": "Ich",
-        "text": "*Was dieses Gefühl ist, weiß ich jetzt ganz sicher. Seit dem ersten Tag an der neuen Schule -- war es die ganze Zeit da.*"
-    },
-    "day4_confession_choice": {
-        "name": "Ich",
-        "text": "*Jetzt in diesem Moment... soll ich meine Gefühle gestehen?*",
-        "choices": [
-            "\"Du weißt doch, wenn du wegläufst, hol ich dich ein. Also lass uns hier reden.\"",
-            "\"...Die Aussicht ist echt krass schön.\"  (Noch nicht... nicht jetzt)"
-        ]
-    },
-    "day4_confess": {
-        "name": "Ich",
-        "text": "\"Seit ich hier an die Schule gewechselt bin, hab ich jeden Tag nur an eine Person gedacht.\""
-    },
-    "day4_confess_heartbeat": {
-        "name": "Ich",
-        "text": "*Mein Herz rast wie verrückt. Bum, bum, bum. Ob man das auf der anderen Seite hören kann?*"
-    },
-    "day4_confess_2": {
-        "name": "Ich",
-        "text": "\"Am Anfang dachte ich, du bist einfach nur ein netter Mensch. Aber jetzt bin ich mir sicher.\""
-    },
-    "day4_confess_breathe": {
-        "name": "Ich",
-        "text": "*Tief eingeatmet. Hände fest zusammengeballt. Wenn nicht jetzt -- bereue ich es ein Leben lang.*"
-    },
-    "day4_confess_3": {
-        "name": "Ich",
-        "text": "\"Ich mag dich. Wirklich.\""
-    },
-    "day4_confess_silence": {
-        "name": "Ich",
-        "text": "*Nach den Worten -- Stille. Die Welt im Abendlicht scheint eingefroren. Eine Sekunde fühlt sich an wie eine Stunde.*"
-    },
-    "day4_confess_response": {
-        "name": "System",
-        "text": ""
-    },
-    "day4_confess_to_seoyeon": {
-        "name": "Ich",
-        "text": "\"Seoyeon. Jedes Mal, wenn du lachst, bleibt mein Blick hängen und ich kann ihn nicht mehr lösen. Ich kann nicht mehr so tun, als wäre da nichts.\""
-    },
-    "day4_confess_to_yuna": {
-        "name": "Ich",
-        "text": "\"Yuna. Seit dem Moment, als ich die Wärme hinter deiner kühlen Fassade entdeckt habe, habe ich nur noch dich im Blick gehabt.\""
-    },
-    "day4_confess_to_dain": {
-        "name": "Ich",
-        "text": "\"Dain. Wenn du lachst, muss ich automatisch mitlachen. Und irgendwann hat mir ohne dich einfach was gefehlt.\""
-    },
-    "day4_confess_to_nurse": {
-        "name": "Ich",
-        "text": "\"Das sage ich nicht als Schüler. Sondern als Mensch. Ich mag Sie.\""
-    },
-    "day4_confess_to_teacher": {
-        "name": "Ich",
-        "text": "\"Wenn Sie streng sind, wenn Sie lachen -- alles daran mag ich. Das sind meine ehrlichen Gefühle, nur für Sie.\""
-    },
-    "day4_accept_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"...Ich auch. Seit dem ersten Tag, als du herkamst. Erinnerst du dich? Du gehörst jetzt ganz mir.\""
-    },
-    "day4_accept_seoyeon_moment": {
-        "name": "Ich",
-        "text": "*In Seoyeons Augenwinkeln schimmern Tränen. Im Abendlicht funkeln sie -- wie die schönsten Edelsteine der Welt.*"
-    },
-    "day4_accept_seoyeon_close": {
-        "name": "Seoyeon",
-        "text": "\"Wenn du eine andere anguckst... dann bin ich wirklich nicht mehr nett. Verstanden?\" *Seoyeon verschränkt ihre Finger mit meinen und drückt fest zu.*"
-    },
-    "day4_accept_yuna": {
-        "name": "Yuna",
-        "text": "\"...Idiot. Ich wollte das eigentlich zuerst sagen.\""
-    },
-    "day4_accept_yuna_moment": {
-        "name": "Ich",
-        "text": "*Yuna senkt leicht den Kopf. Bis zu den Ohrspitzen rot. So ganz anders als sonst -- mein Herz droht zu platzen.*"
-    },
-    "day4_accept_yuna_close": {
-        "name": "Yuna",
-        "text": "\"...Beweg dich nicht.\" *Yuna greift nach meinem Ärmel und lehnt ihre Stirn an meine Schulter.*"
-    },
-    "day4_accept_dain": {
-        "name": "Dain",
-        "text": "\"ICH AUCH!! Ich mag dich auch!! OH MEIN GOTT!! ...Ist das echt?!\""
-    },
-    "day4_accept_dain_moment": {
-        "name": "Ich",
-        "text": "*Dain packt meinen Arm mit beiden Händen. Ihr Gesicht ist feuerrot, aber ihre Augen strahlen.*"
-    },
-    "day4_accept_dain_close": {
-        "name": "Dain",
-        "text": "\"Wir sind jetzt zusammen, oder?! Echt jetzt?! AH MEIN HERZ EXPLODIERT!!\" *Dain springt auf und ab und schüttelt meine Hand.*"
-    },
-    "day4_accept_nurse": {
-        "name": "Krankenschwester",
-        "text": "\"Ich wusste es... Ich fühle genauso.\""
-    },
-    "day4_accept_nurse_moment": {
-        "name": "Ich",
-        "text": "*Sie tritt einen Schritt näher. Ein zarter Duft streift meine Nase.*"
-    },
-    "day4_accept_nurse_close": {
-        "name": "Krankenschwester",
-        "text": "\"In der Schule bleibt es unser Geheimnis. Klar?\" *Sie flüstert es mir dicht ins Ohr.*"
-    },
-    "day4_accept_teacher": {
-        "name": "Lehrerin",
-        "text": "\"Ein Schüler sollte so was nicht sagen... Ich auch, du Idiot.\""
-    },
-    "day4_accept_teacher_moment": {
-        "name": "Ich",
-        "text": "*Ihre Augen zittern. Diesen Anblick -- den darf nur ich sehen.*"
-    },
-    "day4_accept_teacher_close": {
-        "name": "Lehrerin",
-        "text": "\"...Stell dich drauf ein. Ab jetzt bist du nicht mehr nur mein Schüler.\" *Sie lächelt kurz. Von ihrer üblichen Strenge keine Spur.*"
-    },
-    "day4_after_confess": {
-        "name": "Ich",
-        "text": "*Im Licht der Abendsonne verschmelzen zwei Schatten zu einem. Der glücklichste Moment meines Lebens.*"
-    },
-    "day4_wait": {
-        "name": "Ich",
-        "text": "\"...Die Aussicht hier ist echt krass schön.\""
-    },
-    "day4_wait_conflict": {
-        "name": "Ich",
-        "text": "*Die Worte waren schon auf der Zungenspitze -- aber ich hab sie runtergeschluckt. Noch ist es nicht soweit.*"
-    },
-    "day4_wait_walk": {
-        "name": "Ich",
-        "text": "*Nebeneinander am Ufer entlang. Kein Wort, aber eine angenehme Stille.*"
-    },
-    "day4_wait_talk": {
-        "name": "Ich",
-        "text": "\"...Heute hat echt Spaß gemacht. Danke.\""
-    },
-    "day4_wait_linger": {
-        "name": "Ich",
-        "text": "*An der Kreuzung da vorne müssen wir uns trennen. Einen einzigen Schritt zu machen war noch nie so schwer.*"
-    },
-    "day4_wait_feelings": {
-        "name": "Ich",
-        "text": "*Die runtergeschluckten Worte steigen wieder hoch. 'Ich mag dich' -- drei Worte hämmern von innen gegen mein Herz.*"
-    },
-    "day4_wait_response": {
-        "name": "System",
-        "text": ""
-    },
-    "day4_wait_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"Fand ich auch. Bis zum nächsten Mal.\" *Seoyeon lächelt, aber in ihren Augen schimmert ein Hauch von Bedauern.*"
-    },
-    "day4_wait_yuna": {
-        "name": "Yuna",
-        "text": "\"...War okay. ...Nächstes Mal wieder.\" *Yuna dreht leicht den Kopf weg. Will sie ihren Gesichtsausdruck verstecken?*"
-    },
-    "day4_wait_dain": {
-        "name": "Dain",
-        "text": "\"Klar war das spaßig!! Nächstes Mal wieder!!\" *Dain strahlt, aber ich hab gesehen, wie sie kurz auf ihre Lippe gebissen hat.*"
-    },
-    "day4_wait_nurse": {
-        "name": "Krankenschwester",
-        "text": "\"Hat Spaß gemacht. Sollen wir uns bald wieder treffen?\" *Ihr Lächeln wirkt dünner als sonst.*"
-    },
-    "day4_wait_teacher": {
-        "name": "Lehrerin",
-        "text": "\"Naja, war ganz okay. Ruf mich ruhig wieder an.\" *Sie lächelt, aber ihre Schritte beim Weggehen sind langsam.*"
-    },
-    "day4_wait_goodbye": {
-        "name": "Ich",
-        "text": "*Wir verabschieden uns und ich drehe mich um. Wollte zurückschauen, hab mich aber zusammengerissen.*"
-    },
-    "day4_wait_regret": {
-        "name": "Ich",
-        "text": "*Am Ende hab ich doch zurückgeschaut. Mein Gegenüber auch. Als sich unsere Blicke treffen -- drehen wir beide hastig den Kopf weg.*"
-    },
-    "day4_wait_home": {
-        "name": "Ich",
-        "text": "*Auf dem Heimweg. Die ungesagten Worte liegen schwer auf der Brust. Beim nächsten Mal sage ich es... ganz bestimmt.*"
-    },
-    "day4_wait_end": {
-        "name": "Ich",
-        "text": "*Ungesagte Worte kreisen in meinem Kopf.*"
+    "confess_dain_no_4": {
+        "name": "다인(Dain)",
+        "text": "\"...Nächstes Mal lauf nicht weg.\""
     }
 }

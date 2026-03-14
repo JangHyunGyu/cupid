@@ -8,453 +8,496 @@ if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[5]) SCENARIO[5] = {};
 
 Object.assign(SCENARIO[5], {
+
+    // =========================================================================
+    // ENDING START — main entry & condition routing
+    // =========================================================================
+    "ending_start": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "branches": [
+            {
+                "next": "day5_ending_true",
+                "condition": "day4_confession_accepted",
+                "excludeCondition": "day3_has_multiple_dates"
+            },
+            {
+                "next": "day5_ending_good",
+                "condition": "day4_confession_accepted"
+            },
+            {
+                "next": "day5_ending_good",
+                "condition": "day5_confessed"
+            },
+            {
+                "next": "day5_ending_harem",
+                "condition": "ending_harem"
+            },
+            {
+                "next": "day5_ending_mayhem",
+                "condition": "day3_has_multiple_dates"
+            },
+            {
+                "next": "day5_ending_friend",
+                "condition": "day4_waited"
+            },
+            {
+                "next": "day5_ending_alone"
+            }
+        ]
+    },
+
+    // =========================================================================
+    // TRUE LOVE END — entry & route branch
+    // =========================================================================
     "day5_ending_true": {
         "background": null,
         "character": null,
         "night": true,
-        "bgm": null,
-        "fade": true,
-        "next": "day5_ending_true_2"
-    },
-    "day5_ending_true_2": {
-        "night": true,
         "fade": true,
         "bgm": "ending.mp3",
-        "next": "day5_ending_true_3"
+        "selectByHighestAffinity": true,
+        "branches": [
+            {
+                "next": "true_seo_1",
+                "character": "Seoyeon"
+            },
+            {
+                "next": "true_yuna_1",
+                "character": "Yuna"
+            },
+            {
+                "next": "true_dain_1",
+                "character": "Dain"
+            }
+        ]
     },
-    "day5_ending_true_3": {
+
+    // ── Seoyeon TRUE route ──
+    "true_seo_1": {
+        "background": "assets/images/background/seyoun_room.png",
+        "character": null,
         "night": true,
         "fade": true,
-        "next": "day5_ending_true_4"
+        "next": "true_seo_2"
     },
-    "day5_ending_true_4": {
+    "true_seo_2": {
+        "background": "assets/images/background/seyoun_room.png",
+        "character": null,
         "night": true,
         "fade": true,
-        "next": "day5_ending_true_5"
+        "next": "true_seo_3"
     },
-    "day5_ending_true_5": {
+    "true_seo_3": {
+        "background": "assets/images/background/seyoun_room.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "fade": true,
-        "next": "day5_ending_true_6"
+        "next": "true_seo_4"
     },
-    "day5_ending_true_6": {
+    "true_seo_4": {
+        "background": "assets/images/background/seyoun_room.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "fade": true,
-        "next": "day5_ending_true_7"
+        "next": "true_seo_5"
     },
-    "day5_ending_true_7": {
+    "true_seo_5": {
+        "background": "assets/images/background/seyoun_room.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
         "night": true,
         "fade": true,
-        "next": "day5_ending_true_8"
+        "next": "true_seo_6"
     },
-    "day5_ending_true_8": {
+    "true_seo_6": {
+        "background": "assets/images/background/seyoun_room.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
         "night": true,
         "fade": true,
-        "next": "day5_ending_true_9"
+        "next": "true_seo_7"
     },
-    "day5_ending_true_9": {
+    "true_seo_7": {
+        "background": "assets/images/background/seyoun_room.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "night": true,
         "fade": true,
-        "next": "day5_ending_true_10"
+        "next": "true_seo_8"
     },
-    "day5_ending_true_10": {
+    "true_seo_8": {
+        "background": "assets/images/background/seyoun_room.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "night": true,
         "fade": true,
-        "next": "day5_ending_true_11"
+        "next": "true_epilogue_1"
     },
-    "day5_ending_true_11": {
+
+    // ── Yuna TRUE route ──
+    "true_yuna_1": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
         "night": true,
         "fade": true,
-        "next": "day5_ending_true_12"
+        "next": "true_yuna_2"
     },
-    "day5_ending_true_12": {
+    "true_yuna_2": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "fade": true,
-        "next": "day5_ending_true_13"
+        "next": "true_yuna_3"
     },
-    "day5_ending_true_13": {
+    "true_yuna_3": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "fade": true,
-        "next": "day5_credits"
+        "next": "true_yuna_4"
     },
+    "true_yuna_4": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "night": true,
+        "fade": true,
+        "next": "true_yuna_5"
+    },
+    "true_yuna_5": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "night": true,
+        "fade": true,
+        "next": "true_yuna_6"
+    },
+    "true_yuna_6": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "true_yuna_7"
+    },
+    "true_yuna_7": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "true_epilogue_1"
+    },
+
+    // ── Dain TRUE route ──
+    "true_dain_1": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "true_dain_2"
+    },
+    "true_dain_2": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "true_dain_3"
+    },
+    "true_dain_3": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "true_dain_4"
+    },
+    "true_dain_4": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "true_dain_5"
+    },
+    "true_dain_5": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "true_dain_6"
+    },
+    "true_dain_6": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "true_dain_7"
+    },
+    "true_dain_7": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "night": true,
+        "fade": true,
+        "next": "true_dain_8"
+    },
+    "true_dain_8": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "night": true,
+        "fade": true,
+        "next": "true_epilogue_1"
+    },
+
+    // ── Shared epilogue ──
+    "true_epilogue_1": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "true_epilogue_2"
+    },
+    "true_epilogue_2": {
+        "night": true,
+        "fade": true,
+        "next": "true_epilogue_3"
+    },
+    "true_epilogue_3": {
+        "night": true,
+        "fade": true,
+        "next": "true_epilogue_4"
+    },
+    "true_epilogue_4": {
+        "night": true,
+        "fade": true,
+        "next": "true_epilogue_5"
+    },
+    "true_epilogue_5": {
+        "night": true,
+        "fade": true,
+        "next": "true_epilogue_6"
+    },
+    "true_epilogue_6": {
+        "night": true,
+        "fade": true,
+        "next": "true_epilogue_7"
+    },
+    "true_epilogue_7": {
+        "night": true,
+        "fade": true
+    },
+
+    // =========================================================================
+    // GOOD END
+    // =========================================================================
     "day5_ending_good": {
         "background": null,
         "character": null,
         "night": true,
-        "bgm": null,
         "fade": true,
-        "next": "day5_ending_good_route"
+        "bgm": "night2.mp3",
+        "next": "good_1"
     },
-    "day5_ending_good_route": {
-        "night": true,
-        "branches": [
-            {
-                "next": "day5_ending_good_faithful_2",
-                "condition": "day5_confessed"
-            },
-            {
-                "next": "day5_ending_good_2"
-            }
-        ]
-    },
-    "day5_ending_good_faithful_2": {
+    "good_1": {
         "night": true,
         "fade": true,
-        "bgm": "ending.mp3",
-        "next": "day5_ending_good_faithful_3"
+        "next": "good_2"
     },
-    "day5_ending_good_faithful_3": {
+    "good_2": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_good_faithful_4"
+        "next": "good_3"
     },
-    "day5_ending_good_faithful_4": {
+    "good_3": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_good_faithful_5"
+        "next": "good_4"
     },
-    "day5_ending_good_faithful_5": {
+    "good_4": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_good_7"
+        "next": "good_5"
     },
-    "day5_ending_good_2": {
+    "good_5": {
         "night": true,
-        "fade": true,
-        "bgm": "ending.mp3",
-        "next": "day5_ending_good_3"
+        "fade": true
     },
-    "day5_ending_good_3": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_good_4"
-    },
-    "day5_ending_good_4": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_good_5"
-    },
-    "day5_ending_good_5": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_good_6"
-    },
-    "day5_ending_good_6": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_good_7"
-    },
-    "day5_ending_good_7": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_good_8"
-    },
-    "day5_ending_good_8": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_good_9"
-    },
-    "day5_ending_good_9": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_good_10"
-    },
-    "day5_ending_good_10": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_good_11"
-    },
-    "day5_ending_good_11": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_good_12"
-    },
-    "day5_ending_good_12": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_good_13"
-    },
-    "day5_ending_good_13": {
-        "night": true,
-        "fade": true,
-        "next": "day5_credits"
-    },
+
+    // =========================================================================
+    // MAYHEM END
+    // =========================================================================
     "day5_ending_mayhem": {
-        "background": null,
+        "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
-        "bgm": null,
         "fade": true,
-        "next": "day5_ending_mayhem_2"
+        "bgm": "night1.mp3",
+        "next": "mayhem_1"
     },
-    "day5_ending_mayhem_2": {
+    "mayhem_1": {
         "night": true,
         "fade": true,
-        "bgm": "ending.mp3",
-        "next": "day5_ending_mayhem_3"
+        "next": "mayhem_2"
     },
-    "day5_ending_mayhem_3": {
+    "mayhem_2": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_mayhem_4"
+        "next": "mayhem_3"
     },
-    "day5_ending_mayhem_4": {
+    "mayhem_3": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_mayhem_5"
+        "next": "mayhem_4"
     },
-    "day5_ending_mayhem_5": {
+    "mayhem_4": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_mayhem_6"
+        "next": "mayhem_5"
     },
-    "day5_ending_mayhem_6": {
+    "mayhem_5": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_mayhem_7"
+        "next": "mayhem_6"
     },
-    "day5_ending_mayhem_7": {
+    "mayhem_6": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_mayhem_8"
+        "next": "mayhem_7"
     },
-    "day5_ending_mayhem_8": {
+    "mayhem_7": {
         "night": true,
-        "fade": true,
-        "next": "day5_ending_mayhem_9"
+        "fade": true
     },
-    "day5_ending_mayhem_9": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_mayhem_10"
-    },
-    "day5_ending_mayhem_10": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_mayhem_11"
-    },
-    "day5_ending_mayhem_11": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_mayhem_12"
-    },
-    "day5_ending_mayhem_12": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_mayhem_13"
-    },
-    "day5_ending_mayhem_13": {
-        "night": true,
-        "fade": true,
-        "next": "day5_credits"
-    },
+
+    // =========================================================================
+    // HAREM END
+    // =========================================================================
     "day5_ending_harem": {
-        "background": null,
+        "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
-        "bgm": null,
         "fade": true,
-        "next": "day5_ending_harem_2"
+        "bgm": "night1.mp3",
+        "next": "harem_1"
     },
-    "day5_ending_harem_2": {
+    "harem_1": {
         "night": true,
         "fade": true,
-        "bgm": "ending.mp3",
-        "next": "day5_ending_harem_3"
+        "next": "harem_2"
     },
-    "day5_ending_harem_3": {
+    "harem_2": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_harem_4"
+        "next": "harem_3"
     },
-    "day5_ending_harem_4": {
+    "harem_3": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_harem_5"
+        "next": "harem_4"
     },
-    "day5_ending_harem_5": {
+    "harem_4": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_harem_6"
+        "next": "harem_5"
     },
-    "day5_ending_harem_6": {
+    "harem_5": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_harem_7"
+        "next": "harem_6"
     },
-    "day5_ending_harem_7": {
+    "harem_6": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_harem_8"
+        "next": "harem_7"
     },
-    "day5_ending_harem_8": {
+    "harem_7": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_harem_9"
+        "next": "harem_8"
     },
-    "day5_ending_harem_9": {
+    "harem_8": {
         "night": true,
-        "fade": true,
-        "next": "day5_ending_harem_10"
+        "fade": true
     },
-    "day5_ending_harem_10": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_harem_11"
-    },
-    "day5_ending_harem_11": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_harem_12"
-    },
-    "day5_ending_harem_12": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_harem_13"
-    },
-    "day5_ending_harem_13": {
-        "night": true,
-        "fade": true,
-        "next": "day5_credits"
-    },
+
+    // =========================================================================
+    // FRIEND END
+    // =========================================================================
     "day5_ending_friend": {
-        "background": null,
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "bgm": null,
         "fade": true,
-        "next": "day5_ending_friend_2"
+        "bgm": "night2.mp3",
+        "next": "friend_1"
     },
-    "day5_ending_friend_2": {
+    "friend_1": {
         "night": true,
         "fade": true,
-        "bgm": "ending.mp3",
-        "next": "day5_ending_friend_3"
+        "next": "friend_2"
     },
-    "day5_ending_friend_3": {
+    "friend_2": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_friend_4"
+        "next": "friend_3"
     },
-    "day5_ending_friend_4": {
+    "friend_3": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_friend_5"
+        "next": "friend_4"
     },
-    "day5_ending_friend_5": {
+    "friend_4": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_friend_6"
+        "next": "friend_5"
     },
-    "day5_ending_friend_6": {
+    "friend_5": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_friend_7"
+        "next": "friend_6"
     },
-    "day5_ending_friend_7": {
+    "friend_6": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_friend_8"
+        "next": "friend_7"
     },
-    "day5_ending_friend_8": {
+    "friend_7": {
         "night": true,
-        "fade": true,
-        "next": "day5_ending_friend_9"
+        "fade": true
     },
-    "day5_ending_friend_9": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_friend_10"
-    },
-    "day5_ending_friend_10": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_friend_11"
-    },
-    "day5_ending_friend_11": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_friend_12"
-    },
-    "day5_ending_friend_12": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_friend_13"
-    },
-    "day5_ending_friend_13": {
-        "night": true,
-        "fade": true,
-        "next": "day5_credits"
-    },
+
+    // =========================================================================
+    // ALONE END
+    // =========================================================================
     "day5_ending_alone": {
-        "background": null,
+        "background": "assets/images/background/student_room.png",
         "character": null,
         "night": true,
-        "bgm": null,
         "fade": true,
-        "next": "day5_ending_alone_2"
+        "bgm": "night2.mp3",
+        "next": "alone_1"
     },
-    "day5_ending_alone_2": {
+    "alone_1": {
         "night": true,
         "fade": true,
-        "bgm": "ending.mp3",
-        "next": "day5_ending_alone_3"
+        "next": "alone_2"
     },
-    "day5_ending_alone_3": {
+    "alone_2": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_alone_4"
+        "next": "alone_3"
     },
-    "day5_ending_alone_4": {
+    "alone_3": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_alone_5"
+        "next": "alone_4"
     },
-    "day5_ending_alone_5": {
+    "alone_4": {
         "night": true,
         "fade": true,
-        "next": "day5_ending_alone_6"
+        "next": "alone_5"
     },
-    "day5_ending_alone_6": {
+    "alone_5": {
         "night": true,
-        "fade": true,
-        "next": "day5_ending_alone_7"
+        "fade": true
     },
-    "day5_ending_alone_7": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_alone_8"
-    },
-    "day5_ending_alone_8": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_alone_9"
-    },
-    "day5_ending_alone_9": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_alone_10"
-    },
-    "day5_ending_alone_10": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_alone_11"
-    },
-    "day5_ending_alone_11": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_alone_12"
-    },
-    "day5_ending_alone_12": {
-        "night": true,
-        "fade": true,
-        "next": "day5_ending_alone_13"
-    },
-    "day5_ending_alone_13": {
-        "night": true,
-        "fade": true,
-        "next": "day5_credits"
-    },
+
+    // =========================================================================
+    // CREDITS & RESTART
+    // =========================================================================
     "day5_credits": {
         "background": null,
         "character": null,

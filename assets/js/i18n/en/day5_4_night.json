@@ -1,333 +1,277 @@
 {
+    "ending_start": {
+        "name": "System",
+        "text": ""
+    },
     "day5_ending_true": {
-        "name": "Me",
-        "text": "*And so, my transfer story comes to a close.*"
+        "name": "System",
+        "text": ""
     },
-    "day5_ending_true_2": {
+    "true_seo_1": {
         "name": "Me",
-        "text": "*That one person I met at my new school.*"
+        "text": "*Seoyeon’s room. Her parents are out. The room is tidy — too tidy. A room without emotion.*"
     },
-    "day5_ending_true_3": {
+    "true_seo_2": {
         "name": "Me",
-        "text": "*From the very first moment until now— my heart never once wavered.*"
+        "text": "*— Except for one thing. On the desk, a row of plants Seoyeon grew herself.*"
     },
-    "day5_ending_true_4": {
+    "true_seo_3": {
+        "name": "서연(Seoyeon)",
+        "text": "\"I feel like I don’t have to be perfect in front of you.\""
+    },
+    "true_seo_4": {
         "name": "Me",
-        "text": "*I remember. The moment our eyes first met. It felt like time stopped.*"
+        "text": "\"You never had to be perfect.\""
     },
-    "day5_ending_true_5": {
+    "true_seo_5": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...I know. But it took five days to believe that.\""
+    },
+    "true_seo_6": {
         "name": "Me",
-        "text": "*I didn't know then. That one brief glance would change the direction of my entire life.*"
+        "text": "*Seoyeon smiles. An unpracticed smile.*"
     },
-    "day5_ending_true_6": {
+    "true_seo_7": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Promise me. — Stay by my side.\""
+    },
+    "true_seo_8": {
         "name": "Me",
-        "text": "*I can't pinpoint the exact moment I fell in love. I just realized, one day, that I couldn't imagine a tomorrow without them.*"
+        "text": "*We linked pinkies. Day 1’s habit, Day 4’s promise, and now. — Same finger, third meaning.*"
     },
-    "day5_ending_true_7": {
+    "true_yuna_1": {
         "name": "Me",
-        "text": "*Like the warmth still lingering on my lips. This feeling won't fade easily.*"
+        "text": "*The library annex. Deeper than the secret reading spot — an attic. A space I didn’t even know existed.*"
     },
-    "day5_ending_true_8": {
+    "true_yuna_2": {
+        "name": "유나(Yuna)",
+        "text": "\"I was the only one who knew about this place.\""
+    },
+    "true_yuna_3": {
         "name": "Me",
-        "text": "*Some would say even feelings like this have an expiration date.*"
+        "text": "*Yuna opens the small window. Stars are visible.*"
     },
-    "day5_ending_true_9": {
+    "true_yuna_4": {
+        "name": "유나(Yuna)",
+        "text": "\"Now you do too.\""
+    },
+    "true_yuna_5": {
         "name": "Me",
-        "text": "*But I know better. This isn't something that cools— it's something that seeps deeper.*"
+        "text": "\"The third star?\""
     },
-    "day5_ending_true_10": {
+    "true_yuna_6": {
+        "name": "유나(Yuna)",
+        "text": "\"...You remembered.\""
+    },
+    "true_yuna_7": {
         "name": "Me",
-        "text": "*Tomorrow, the day after, even a year from now. I can see myself right here, by this person's side.*"
+        "text": "*Day 2’s riddle. The third star. — Proof that Yuna had been watching me from the very beginning.*"
     },
-    "day5_ending_true_11": {
+    "true_dain_1": {
         "name": "Me",
-        "text": "*Let's make a promise. No matter what season comes, we'll stay by each other's side.*"
+        "text": "*The gym. The same emergency lights as yesterday. Lying side by side on the mat.*"
     },
-    "day5_ending_true_12": {
+    "true_dain_2": {
         "name": "Me",
-        "text": "*To love someone completely— that's holding one single certainty amid all the uncertainty in the world.*"
+        "text": "*Dain takes {name}’s hand and places it on her chest.*"
     },
-    "day5_ending_true_13": {
+    "true_dain_3": {
+        "name": "다인(Dain)",
+        "text": "\"My heart is beating so fast. Put your hand here.\""
+    },
+    "true_dain_4": {
+        "name": "Me",
+        "text": "*It’s fast. Really fast.*"
+    },
+    "true_dain_5": {
+        "name": "Me",
+        "text": "\"...It’s fast.\""
+    },
+    "true_dain_6": {
+        "name": "다인(Dain)",
+        "text": "\"Why are you looking at me like that? It’s embarrassing.\""
+    },
+    "true_dain_7": {
+        "name": "Me",
+        "text": "\"I wasn’t looking.\""
+    },
+    "true_dain_8": {
+        "name": "다인(Dain)",
+        "text": "\"You totally were!! ...But you can keep looking.\""
+    },
+    "true_epilogue_1": {
+        "name": "Me",
+        "text": "*I tried not to put a name to this feeling. Because once you name it, there’s no going back.*"
+    },
+    "true_epilogue_2": {
+        "name": "Me",
+        "text": "*But it was already too late. From the very first day, when our eyes met.*"
+    },
+    "true_epilogue_3": {
+        "name": "Me",
+        "text": "*I don’t know the exact moment I fell in love. I just know that one day, I couldn’t imagine a tomorrow without that person.*"
+    },
+    "true_epilogue_4": {
+        "name": "Me",
+        "text": "*Some would say even feelings like this have an expiration date. But I know. This isn’t something that cools — it’s something that seeps in.*"
+    },
+    "true_epilogue_5": {
+        "name": "Me",
+        "text": "*To love someone wholly — is to hold a single certainty amid all the uncertainty of the world.*"
+    },
+    "true_epilogue_6": {
+        "name": "Me",
+        "text": "*My knee hasn’t healed. My family isn’t any happier. The people who left haven’t come back. — But at least I don’t have to practice crying alone anymore. Not anymore.*"
+    },
+    "true_epilogue_7": {
         "name": "System",
         "text": "─── TRUE LOVE END ───"
     },
     "day5_ending_good": {
         "name": "Me",
-        "text": "*And so, my transfer story comes to a close.*"
+        "text": "*My heart wavered, and I made mistakes.*"
     },
-    "day5_ending_good_route": {
-        "name": "System",
-        "text": ""
-    },
-    "day5_ending_good_faithful_2": {
+    "good_1": {
         "name": "Me",
-        "text": "*It took a long time to find the courage. But because I waited, this feeling is certain.*"
+        "text": "*To someone, it might have seemed like I gave hope only to take it away. I’m sorry.*"
     },
-    "day5_ending_good_faithful_3": {
+    "good_2": {
         "name": "Me",
-        "text": "*My heart was set from the start. It just took time to put it into words.*"
+        "text": "*But because of that wavering, I came to understand what my true feelings were.*"
     },
-    "day5_ending_good_faithful_4": {
+    "good_3": {
         "name": "Me",
-        "text": "*I hesitated because I was afraid of rejection. Afraid this relationship might break.*"
+        "text": "*I wasn’t lost. It was just the process of finding you.*"
     },
-    "day5_ending_good_faithful_5": {
+    "good_4": {
         "name": "Me",
-        "text": "*But I finally said it. And the answer— was worth the wait.*"
+        "text": "*Imperfect love is still love. Perhaps it’s even more precious because it’s imperfect.*"
     },
-    "day5_ending_good_2": {
-        "name": "Me",
-        "text": "*My heart wavered at times, and I made mistakes.*"
-    },
-    "day5_ending_good_3": {
-        "name": "Me",
-        "text": "*But in the end, I found where my true feelings belonged.*"
-    },
-    "day5_ending_good_4": {
-        "name": "Me",
-        "text": "*Looking back, there were times I was careless with someone else's heart.*"
-    },
-    "day5_ending_good_5": {
-        "name": "Me",
-        "text": "*I may have given someone hope only to take it away. I'm sorry for that.*"
-    },
-    "day5_ending_good_6": {
-        "name": "Me",
-        "text": "*But it was because of that wavering that I came to understand what my real feelings are.*"
-    },
-    "day5_ending_good_7": {
-        "name": "Me",
-        "text": "*It doesn't have to be perfect. This is our beginning.*"
-    },
-    "day5_ending_good_8": {
-        "name": "Me",
-        "text": "*I wasn't lost. It was just the journey to finding you.*"
-    },
-    "day5_ending_good_9": {
-        "name": "Me",
-        "text": "*Without the time I spent hesitating, I wouldn't have this certainty now.*"
-    },
-    "day5_ending_good_10": {
-        "name": "Me",
-        "text": "*Imperfect love is still love. Maybe it's even more precious because of the flaws.*"
-    },
-    "day5_ending_good_11": {
-        "name": "Me",
-        "text": "*I'll make mistakes again. We'll clash. But as long as I'm with this person, it'll be okay.*"
-    },
-    "day5_ending_good_12": {
-        "name": "Me",
-        "text": "*So it's alright. It took a long time, and that's exactly why these feelings won't waver easily.*"
-    },
-    "day5_ending_good_13": {
+    "good_5": {
         "name": "System",
         "text": "─── GOOD END ───"
     },
     "day5_ending_mayhem": {
         "name": "Me",
-        "text": "*And so, my transfer story— is it really over?*"
+        "text": "*I liked all three of them. Genuinely. — And that’s why I couldn’t choose anyone.*"
     },
-    "day5_ending_mayhem_2": {
+    "mayhem_1": {
         "name": "Me",
-        "text": "*The night sky was too beautiful to gaze at just one star.*"
+        "text": "*Seoyeon brushed past me in the hallway. She didn’t turn her head. That 0.5 seconds — this time it was a blade aimed at me.*"
     },
-    "day5_ending_mayhem_3": {
+    "mayhem_2": {
         "name": "Me",
-        "text": "*...Not that excuses will stop them from chasing me.*"
+        "text": "*Yuna’s seat was empty. A single note on the desk. ‘It was fun.’ The period was the end.*"
     },
-    "day5_ending_mayhem_4": {
+    "mayhem_3": {
         "name": "Me",
-        "text": "*One day, three lunch boxes appeared behind the classroom at the same time. In that moment, I genuinely feared for my life.*"
+        "text": "*Dain was smiling. Bright as always. — But the exclamation marks were gone. \"Take care.\" The first time I ever heard Dain end a sentence with a period was, of all things, a farewell.*"
     },
-    "day5_ending_mayhem_5": {
+    "mayhem_4": {
         "name": "Me",
-        "text": "*(\"Were you with her yesterday?\" Seoyeon's icy smile, Yuna's chilling stare, Dain's growling voice. Every day is a survival game.)*"
+        "text": "*I only realized, after watching all three walk away, that the kindness of never being able to refuse is the cruelest violence of all.*"
     },
-    "day5_ending_mayhem_6": {
+    "mayhem_5": {
         "name": "Me",
-        "text": "*I seized the chance and escaped to the rooftop. I've never run that fast in my entire life.*"
+        "text": "*Spring is ending. The cherry blossoms are falling. No one is by my side.*"
     },
-    "day5_ending_mayhem_7": {
+    "mayhem_6": {
         "name": "Me",
-        "text": "*Just imagining how their eyes would change the moment I pick one sends a chill down my spine.*"
+        "text": "*The kindness of never refusing — the cruelest violence.*"
     },
-    "day5_ending_mayhem_8": {
-        "name": "Me",
-        "text": "*Maybe it's greedy. Wanting to cherish all of them. But it's already too late.*"
-    },
-    "day5_ending_mayhem_9": {
-        "name": "Me",
-        "text": "*Their gazes have already locked around me. There was never anywhere to run in the first place.*"
-    },
-    "day5_ending_mayhem_10": {
-        "name": "Me",
-        "text": "*Honestly... this daily chaos isn't so bad. I wonder what pandemonium tomorrow will bring.*"
-    },
-    "day5_ending_mayhem_11": {
-        "name": "Me",
-        "text": "*Would I make the same choice if I were born again? I won't answer that. But this smile on my face is real.*"
-    },
-    "day5_ending_mayhem_12": {
-        "name": "Me",
-        "text": "*There's no conclusion. But hey— this noisy, chaotic life is my story.*"
-    },
-    "day5_ending_mayhem_13": {
+    "mayhem_7": {
         "name": "System",
         "text": "─── MAYHEM END ───"
     },
     "day5_ending_harem": {
         "name": "Me",
-        "text": "*And so, my transfer story— hasn't ended.*"
+        "text": "*\"I like all of you.\" — When those words left my mouth, all three faces froze at once.*"
     },
-    "day5_ending_harem_2": {
+    "harem_1": {
         "name": "Me",
-        "text": "*Multiple lovers. An impossible reality sits right in front of me.*"
+        "text": "*Seoyeon smiled first. \"...Fine. At least you’re honest.\" It wasn’t my imagination that I heard teeth grinding behind that smile.*"
     },
-    "day5_ending_harem_3": {
+    "harem_2": {
         "name": "Me",
-        "text": "*Every day is a war. Daily battles over who gets treated the best.*"
+        "text": "*Yuna lowered her head. For a long time. And when she looked up, her dry eyes were smiling. \"...Idiot.\" Two sentences’ worth of emotion packed into that single word.*"
     },
-    "day5_ending_harem_4": {
+    "harem_3": {
         "name": "Me",
-        "text": "*Monday's walk to school, Tuesday's lunch, Wednesday's walk home. My weekly schedule is a diplomatic crisis.*"
+        "text": "*Dain punched my shoulder with her fist. It hurt. \"Are you insane? ...But I fell for you knowing you’re like that, so that’s on me. Hmph.\"*"
     },
-    "day5_ending_harem_5": {
+    "harem_4": {
         "name": "Me",
-        "text": "*They keep each other in check, yet they've reached a bizarre compromise: if they can't have me exclusively, they'd rather share. This balance could shatter at any moment.*"
+        "text": "*Monday is Seoyeon. Wednesday is Yuna. Friday is Dain. In between, the lies pile up to avoid getting caught. I thought it would be sweet — but it’s strangling me.*"
     },
-    "day5_ending_harem_6": {
+    "harem_5": {
         "name": "Me",
-        "text": "*Each of them is so different. Impossible to compare, impossible to give up.*"
+        "text": "*This balance will break. Someone will cry first. When that happens, this story stops being a romance — and becomes a catastrophe.*"
     },
-    "day5_ending_harem_7": {
+    "harem_6": {
         "name": "Me",
-        "text": "*Strangely, they're all smiling. As if they own me completely.*"
+        "text": "*And yet, today all three are smiling. Even knowing tomorrow’s ruin — I can’t let go of today.*"
     },
-    "day5_ending_harem_8": {
+    "harem_7": {
         "name": "Me",
-        "text": "*Call it greed if you want. If I can't escape this, then so be it.*"
+        "text": "*This balance will break.*"
     },
-    "day5_ending_harem_9": {
-        "name": "Me",
-        "text": "*No regrets. Actually, they don't even give me time to regret. They're watching my every move.*"
-    },
-    "day5_ending_harem_10": {
-        "name": "Me",
-        "text": "*The moment this balance breaks, there'll be hell to pay. Who'll be the first to cross the line?*"
-    },
-    "day5_ending_harem_11": {
-        "name": "Me",
-        "text": "*A sweet kind of hell. Caught between dizzying thrill and dread, I can't get out. No— I don't want to get out.*"
-    },
-    "day5_ending_harem_12": {
-        "name": "Me",
-        "text": "*Tomorrow I'll be watched again. The day after, the grip will tighten. But— these days, I accept them.*"
-    },
-    "day5_ending_harem_13": {
+    "harem_8": {
         "name": "System",
         "text": "─── HAREM END ───"
     },
     "day5_ending_friend": {
         "name": "Me",
-        "text": "*And so, my transfer story comes to a close.*"
+        "text": "*I couldn’t convey my feelings. No — I chose not to.*"
     },
-    "day5_ending_friend_2": {
+    "friend_1": {
         "name": "Me",
-        "text": "*I couldn't say what I felt. No— I chose not to.*"
+        "text": "*I remember. Those fingertips brushing hair back in the wind on the rooftop.*"
     },
-    "day5_ending_friend_3": {
+    "friend_2": {
         "name": "Me",
-        "text": "(The feelings I hid behind the word \"friend\" might surface on some quiet night.)"
+        "text": "*If I had said \"I like you\" then, would tonight have been different?*"
     },
-    "day5_ending_friend_4": {
+    "friend_3": {
         "name": "Me",
-        "text": "*I remember. On the rooftop, their fingertips brushing the hair the wind blew across their face.*"
+        "text": "*The closest distance is also the farthest. A distance called ‘friends.’*"
     },
-    "day5_ending_friend_5": {
+    "friend_4": {
         "name": "Me",
-        "text": "(If I'd said \"I like you\" back then, would tonight be any different?)"
+        "text": "*The words that lingered at the tip of my tongue before being swallowed don’t disappear. They’ll quietly carve growth rings inside me.*"
     },
-    "day5_ending_friend_6": {
+    "friend_5": {
         "name": "Me",
-        "text": "*Words left unsaid don't disappear. They just glow quietly, deep inside.*"
+        "text": "*Some stories last longer precisely because they’re never concluded. This season will be remembered that way.*"
     },
-    "day5_ending_friend_7": {
+    "friend_6": {
         "name": "Me",
-        "text": "*Sometimes the closest distance is also the farthest. The distance called \"friends.\"*"
+        "text": "*A distance called ‘friends.’*"
     },
-    "day5_ending_friend_8": {
-        "name": "Me",
-        "text": "*Still, it's not so bad. I can see them smiling right beside me.*"
-    },
-    "day5_ending_friend_9": {
-        "name": "Me",
-        "text": "*Maybe it's cowardice, or maybe it's caution. I just didn't want to lose what we had.*"
-    },
-    "day5_ending_friend_10": {
-        "name": "Me",
-        "text": "*I don't regret it. It's just that sometimes, that sunset comes back to me.*"
-    },
-    "day5_ending_friend_11": {
-        "name": "Me",
-        "text": "*The words that lingered on the tip of my tongue, then got swallowed— they won't vanish. They'll quietly etch their rings inside me, year after year.*"
-    },
-    "day5_ending_friend_12": {
-        "name": "Me",
-        "text": "*Some stories linger longer precisely because they're left unfinished. This season will be remembered that way.*"
-    },
-    "day5_ending_friend_13": {
+    "friend_7": {
         "name": "System",
         "text": "─── FRIEND END ───"
     },
     "day5_ending_alone": {
         "name": "Me",
-        "text": "*And so, my transfer story comes to a close.*"
+        "text": "*No one special came along. But the time I spent at this school wasn’t in vain.*"
     },
-    "day5_ending_alone_2": {
+    "alone_1": {
         "name": "Me",
-        "text": "*No one special came along. But the time I spent at this school wasn't wasted.*"
+        "text": "*Solitude is not a punishment. It’s time to face yourself.*"
     },
-    "day5_ending_alone_3": {
+    "alone_2": {
         "name": "Me",
-        "text": "*I've changed from who I was before the transfer, when I felt like I couldn't do anything.*"
+        "text": "*There’s no need to rush. I can walk at my own pace, along my own path.*"
     },
-    "day5_ending_alone_4": {
+    "alone_3": {
         "name": "Me",
-        "text": "*What I learned here wasn't about romance. It was about facing myself.*"
+        "text": "*...This school’s not half bad, actually.*"
     },
-    "day5_ending_alone_5": {
+    "alone_4": {
         "name": "Me",
-        "text": "*The laughter in the classroom, the chatter between classes, the sunlight during P.E. Ordinary things that turned out to matter.*"
+        "text": "*Solitude is not a punishment.*"
     },
-    "day5_ending_alone_6": {
-        "name": "Me",
-        "text": "*Solitude isn't a punishment. It's time spent face to face with yourself.*"
-    },
-    "day5_ending_alone_7": {
-        "name": "Me",
-        "text": "*I learned that before you can love someone, you have to understand yourself first.*"
-    },
-    "day5_ending_alone_8": {
-        "name": "Me",
-        "text": "*Being alone doesn't mean being lonely. Some things you can only hear when it's just you.*"
-    },
-    "day5_ending_alone_9": {
-        "name": "Me",
-        "text": "*The sound of the wind, my footsteps, my own heartbeat. In that rhythm, I was slowly getting to know myself.*"
-    },
-    "day5_ending_alone_10": {
-        "name": "Me",
-        "text": "*Even if I didn't reach anyone, these moments aren't meaningless.*"
-    },
-    "day5_ending_alone_11": {
-        "name": "Me",
-        "text": "*There's no need to rush. I can walk at my own pace, on my own path.*"
-    },
-    "day5_ending_alone_12": {
-        "name": "Me",
-        "text": "*...This school? Not bad at all.*"
-    },
-    "day5_ending_alone_13": {
+    "alone_5": {
         "name": "System",
         "text": "─── ALONE END ───"
     },
@@ -339,7 +283,7 @@
         "name": "System",
         "text": "",
         "choices": [
-            "Start Over from the Beginning"
+            "Start over from the beginning"
         ]
     }
 }

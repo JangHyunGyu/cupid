@@ -1,576 +1,225 @@
 {
-    "day3_lunch_start": {
+    "lunch3_start": {
         "name": "Me",
-        "text": "*The lunch bell rings. It's Friday. Weekend starts tomorrow.*"
+        "text": "*Lunchtime. Today, unusually — all three are gathered in one place.*"
     },
-    "day3_lunch_check_dates": {
+    "lunch3_start_2": {
         "name": "Me",
-        "text": "*As I stand up from my desk, I can feel eyes on me from every direction.*"
+        "text": "*{name} opens the lunch box. 서연(Seoyeon) naturally sits beside, 다인(Dain) plops down across, and 유나(Yuna) sneaks in from the corner munching her bread.*"
     },
-    "day3_lunch_multiple_approach": {
-        "name": "Me",
-        "text": "*...Why is everyone heading this way at the same time?*"
+    "lunch3_meal_1": {
+        "name": "다인(Dain)",
+        "text": "\"Oh! This is good!!\""
     },
-    "day3_lunch_collision_no_seoyeon": {
+    "lunch3_meal_2": {
         "name": "Me",
-        "text": "*The people I made plans with are all approaching at once. The vibe is not great.*"
+        "text": "\"That's mine...\""
     },
-    "day3_lunch_collision_no_seoyeon_choose": {
+    "lunch3_meal_3": {
+        "name": "서연(Seoyeon)",
+        "text": "\"The egg roll is a bit too salty. 6 points.\""
+    },
+    "lunch3_meal_4": {
         "name": "Me",
-        "text": "*I need to decide. Fast.*",
+        "text": "\"Don't rate my food.\""
+    },
+    "lunch3_meal_5": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Out of 10. That's not bad, you know?\""
+    },
+    "lunch3_meal_6": {
+        "name": "Me",
+        "text": "*유나(Yuna) silently reaches out with her chopsticks and takes the best-looking sausage.*"
+    },
+    "lunch3_meal_7": {
+        "name": "Me",
+        "text": "\"...유나(Yuna), that was my favorite one.\""
+    },
+    "lunch3_meal_8": {
+        "name": "유나(Yuna)",
+        "text": "\"...It's good.\""
+    },
+    "lunch3_meal_9": {
+        "name": "Me",
+        "text": "*Plundered. By all three, simultaneously.*"
+    },
+    "lunch3_meal_10": {
+        "name": "Me",
+        "text": "*One side dish remains. The last egg roll.*"
+    },
+    "lunch3_meal_11": {
+        "name": "Me",
+        "text": "*Who should I give it to?*"
+    },
+    "lunch3_choice": {
+        "name": "Me",
+        "text": "*I ponder who to give the last side dish to.*",
         "choices": [
-            "Have lunch with Yuna",
-            "Have lunch with Dain",
-            "Suggest eating all together",
+            "Give it to 서연(Seoyeon)",
+            "Give it to 다인(Dain)",
+            "Give it to 유나(Yuna)",
+            "\"Let's just share it\""
+        ]
+    },
+    "lunch3_give_seo_1": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Thanks. You do have a sense for these things.\""
+    },
+    "lunch3_give_seo_2": {
+        "name": "다인(Dain)",
+        "text": "\"Hey! I wanted some too!\""
+    },
+    "lunch3_give_seo_3": {
+        "name": "유나(Yuna)",
+        "text": "\"......\""
+    },
+    "lunch3_give_dain_1": {
+        "name": "다인(Dain)",
+        "text": "\"Really?! Thanks!! {name} is the best!!\""
+    },
+    "lunch3_give_dain_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Hmph. And here I even rated it for you.\""
+    },
+    "lunch3_give_dain_3": {
+        "name": "유나(Yuna)",
+        "text": "\"......\""
+    },
+    "lunch3_give_yuna_1": {
+        "name": "유나(Yuna)",
+        "text": "\"...Thanks.\""
+    },
+    "lunch3_give_yuna_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...I thought you'd give it to me.\""
+    },
+    "lunch3_give_yuna_3": {
+        "name": "다인(Dain)",
+        "text": "\"What! What about me?!\""
+    },
+    "lunch3_expose_1": {
+        "name": "Me",
+        "text": "*The moment I said \"let's all share\" — 다인(Dain) spoke first.*"
+    },
+    "lunch3_expose_2": {
+        "name": "다인(Dain)",
+        "text": "\"Oh right! {name}, we're going to the arcade this weekend!! What should we eat before?!\""
+    },
+    "lunch3_expose_3": {
+        "name": "Me",
+        "text": "*— I froze.*"
+    },
+    "lunch3_expose_4": {
+        "name": "Me",
+        "text": "*서연(Seoyeon)'s chopsticks stop. 유나(Yuna)'s hand tearing bread stops.*"
+    },
+    "lunch3_expose_5": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Arcade?\""
+    },
+    "lunch3_expose_6": {
+        "name": "서연(Seoyeon)",
+        "text": "\"You told me you had somewhere to go together.\""
+    },
+    "lunch3_expose_7": {
+        "name": "다인(Dain)",
+        "text": "\"...Wait. You told me you'd hang out this weekend too?\""
+    },
+    "lunch3_expose_8": {
+        "name": "Me",
+        "text": "*유나(Yuna) puts down her bread.*"
+    },
+    "lunch3_expose_9": {
+        "name": "유나(Yuna)",
+        "text": "\"I knew.\""
+    },
+    "lunch3_expose_10": {
+        "name": "Me",
+        "text": "*A moment of silence.*"
+    },
+    "lunch3_expose_11": {
+        "name": "유나(Yuna)",
+        "text": "\"...That was a lie. I didn't know either.\""
+    },
+    "lunch3_expose_12": {
+        "name": "Me",
+        "text": "*Three pairs of eyes are fixed on me. — The warm lunch from moments ago has turned to ice.*"
+    },
+    "lunch3_expose_13": {
+        "name": "Me",
+        "text": "*From the next table, 민수(Minsu) is watching. He shakes his head.*"
+    },
+    "lunch3_expose_14": {
+        "name": "민수(Minsu)",
+        "text": "\"...Dude. Have you lost your mind?\""
+    },
+    "lunch3_expose_15": {
+        "name": "Me",
+        "text": "*I can't say a word. 민수(Minsu) is right.*"
+    },
+    "lunch3_expose_choice": {
+        "name": "Me",
+        "text": "*What should I say...*",
+        "choices": [
+            "\"I'm sorry. You're all such great people, I couldn't say no.\"",
+            "\"The times are different, so I thought it'd be fine...\"",
             "Run away"
         ]
     },
-    "day3_lunch_collision": {
-        "name": "Seoyeon",
-        "text": "\"{name}, let's grab lunch togeth-- huh?\""
-    },
-    "day3_lunch_collision_seoyeon_yuna": {
-        "name": "Yuna",
-        "text": "\"...{name}. Come with me.\""
-    },
-    "day3_lunch_collision_seoyeon_dain": {
-        "name": "Dain",
-        "text": "\"{name}! Let's go eat! ...Huh? Seoyeon too?\""
-    },
-    "day3_lunch_tension_1": {
+    "lunch3_expose_honest_1": {
         "name": "Me",
-        "text": "*The classroom temperature just dropped about three degrees. Their gazes are crossing each other like blades.*"
+        "text": "\"I'm sorry. You're all such great people, I couldn't say no.\""
     },
-    "day3_lunch_tension_2": {
-        "name": "Seoyeon",
-        "text": "\"...I asked first, didn't I?\""
+    "lunch3_expose_honest_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Couldn't say no. That's the cruelest thing you could say, {name}.\""
     },
-    "day3_lunch_tension_3": {
+    "lunch3_expose_honest_3": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Kindness that can't refuse — gives false hope.\""
+    },
+    "lunch3_expose_honest_4": {
         "name": "Me",
-        "text": "*How do I defuse this?*",
-        "choices": [
-            "Have lunch with Seoyeon",
-            "Have lunch with Yuna",
-            "Have lunch with Dain",
-            "Suggest eating all together",
-            "Run away"
-        ]
+        "text": "*서연(Seoyeon) closes her lunch box lid.*"
     },
-    "day3_lunch_choose_seoyeon": {
+    "lunch3_expose_honest_5": {
+        "name": "서연(Seoyeon)",
+        "text": "\"I don't want to be just one of your options. Either the only answer, or nothing at all. — I can't do halfway.\""
+    },
+    "lunch3_expose_honest_6": {
         "name": "Me",
-        "text": "\"Seoyeon, let's go.\""
+        "text": "*서연(Seoyeon) leaves.*"
     },
-    "day3_lunch_seoyeon_others_react": {
+    "lunch3_expose_honest_7": {
         "name": "Me",
-        "text": "*I can feel the others' expressions harden.*"
+        "text": "*No exclamation marks. — The exclamation marks have vanished from 다인(Dain)'s sentences. For the first time.*"
     },
-    "day3_lunch_yuna_jealous": {
-        "name": "Yuna",
-        "text": "\"...Sure. Enjoy your meal.\""
-    },
-    "day3_lunch_yuna_jealous_2": {
+    "lunch3_expose_excuse_1": {
         "name": "Me",
-        "text": "*Yuna leaves the classroom without a word. Her retreating figure looks smaller than usual.*"
+        "text": "\"The times are different, so I thought it'd be fine...\""
     },
-    "day3_lunch_dain_jealous": {
-        "name": "Dain",
-        "text": "\"What! What about me?! ...Hmph, fine.\""
+    "lunch3_expose_excuse_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...You don't see how that's the problem?\""
     },
-    "day3_lunch_dain_jealous_2": {
+    "lunch3_expose_excuse_3": {
+        "name": "다인(Dain)",
+        "text": "\"Give me some time to think too.\""
+    },
+    "lunch3_expose_excuse_4": {
         "name": "Me",
-        "text": "*Dain sticks out her lip and heads off the other way.*"
+        "text": "*No exclamation marks. — The exclamation marks have vanished from 다인(Dain)'s sentences. For the first time.*"
     },
-    "day3_lunch_with_seoyeon_start": {
-        "name": "Seoyeon",
-        "text": "\"...Finally, just us two. {name}, I'll be straight with you. Don't you think there are way too many people hanging around you lately?\""
-    },
-    "day3_lunch_seoyeon_jealous_talk": {
+    "lunch3_expose_run_1": {
         "name": "Me",
-        "text": "*There's an edge in Seoyeon's voice.*",
-        "choices": [
-            "\"You're the one who matters most to me.\"",
-            "\"They're all just friends.\"",
-            "\"Are you jealous?\""
-        ]
+        "text": "*I ran. From the classroom. — The most cowardly choice.*"
     },
-    "day3_lunch_seoyeon_reassure": {
-        "name": "Seoyeon",
-        "text": "\"...I'm holding you to that. Take it back and there will be consequences.\""
-    },
-    "day3_lunch_seoyeon_deny": {
-        "name": "Seoyeon",
-        "text": "\"...Right. Of course. Sorry, that was weird of me.\""
-    },
-    "day3_lunch_seoyeon_tease": {
-        "name": "Seoyeon",
-        "text": "\"Jealous? ...Yeah, I am. Every time your attention drifts somewhere else, it burns. So just look at me.\""
-    },
-    "day3_lunch_seoyeon_weekend": {
-        "name": "Seoyeon",
-        "text": "\"Anyway, what are you doing this weekend? If you're free... want to go somewhere together?\""
-    },
-    "day3_lunch_seoyeon_caught": {
+    "lunch3_expose_run_2": {
         "name": "Me",
-        "text": "*Wait, I have other plans... what do I do?*",
-        "choices": [
-            "\"How about Sunday?\"",
-            "Be honest about it",
-            "Dodge the question"
-        ]
+        "text": "*Behind me, the silence of three people pierces my back.*"
     },
-    "day3_lunch_seoyeon_lie": {
-        "name": "Seoyeon",
-        "text": "\"Sunday? ...Fine. I'll pick the place.\""
-    },
-    "day3_lunch_seoyeon_honest": {
-        "name": "Seoyeon",
-        "text": "\"...Other plans? With who?\""
-    },
-    "day3_lunch_seoyeon_honest_2": {
+    "lunch3_end": {
         "name": "Me",
-        "text": "*Seoyeon's gaze turns cold.*"
-    },
-    "day3_lunch_seoyeon_dodge": {
-        "name": "Seoyeon",
-        "text": "\"Why can't you answer? ...You have other plans, don't you?\""
-    },
-    "day3_lunch_seoyeon_promise": {
-        "name": "Me",
-        "text": "\"Alright, let's hang out this weekend.\""
-    },
-    "day3_lunch_seoyeon_end": {
-        "name": "Me",
-        "text": "*After lunch, we sat side by side on a bench behind the school. A gentle breeze drifts by.*"
-    },
-    "day3_lunch_seoyeon_bench": {
-        "name": "Seoyeon",
-        "text": "*Quietly resting her head on my shoulder* \"...{name}. I've been a little off lately. I keep thinking about you.\""
-    },
-    "day3_lunch_seoyeon_bench_2": {
-        "name": "Me",
-        "text": "*A faint fragrance drifts from Seoyeon's hair.*",
-        "choices": [
-            "*Stroke Seoyeon's hair*",
-            "\"Same here.\"",
-            "*Stay still*"
-        ]
-    },
-    "day3_lunch_seoyeon_pat": {
-        "name": "Seoyeon",
-        "text": "*As I stroke her hair, Seoyeon buries her face in my shoulder* \"...Idiot. Not here, people could see.\""
-    },
-    "day3_lunch_seoyeon_same": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon lifts her head and looks at me* \"...Really? Don't you ever forget those words.\""
-    },
-    "day3_lunch_seoyeon_silent": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon quietly takes my hand* \"...I like it when we're like this.\""
-    },
-    "day3_lunch_seoyeon_freetalk": {
-        "name": "Me",
-        "text": "*Sitting side by side on the bench behind the school, talking with Seoyeon.*",
-        "context": "Sitting together on a bench behind the school. Seoyeon rested her head on his shoulder and said 'I keep thinking about you.' A sweet atmosphere.",
-        "personality": "Seoyeon is the cool-beauty type. Sharp-tongued, composed, with a sly charm. She's possessive and bluntly direct when jealous."
-    },
-    "day3_lunch_seoyeon_bell": {
-        "name": "Me",
-        "text": "*The class bell rings. Time with Seoyeon felt way too short.*"
-    },
-    "day3_lunch_choose_yuna": {
-        "name": "Me",
-        "text": "\"Yuna, let's go.\""
-    },
-    "day3_lunch_yuna_others_react": {
-        "name": "Me",
-        "text": "*I decided to go with Yuna.*"
-    },
-    "day3_lunch_yuna_seoyeon_jealous": {
-        "name": "Seoyeon",
-        "text": "\"...Sure? Got it.\""
-    },
-    "day3_lunch_with_yuna_start": {
-        "name": "Yuna",
-        "text": "\"...Follow me.\""
-    },
-    "day3_lunch_yuna_rooftop": {
-        "name": "Me",
-        "text": "*I followed Yuna up to the rooftop. She lays out a blanket and pulls a lunchbox from her bag.*"
-    },
-    "day3_lunch_yuna_bento": {
-        "name": "Yuna",
-        "text": "\"...For two. I made it.\""
-    },
-    "day3_lunch_yuna_bento_2": {
-        "name": "Me",
-        "text": "*Two compartments of food sit neatly side by side. She clearly put care into this.*",
-        "choices": [
-            "\"You made this yourself, Yuna?\"",
-            "*Try it quietly*"
-        ]
-    },
-    "day3_lunch_yuna_bento_ask": {
-        "name": "Yuna",
-        "text": "*Looking away* \"...Perceptive, aren't you. If it's bad, you can throw it out.\""
-    },
-    "day3_lunch_yuna_bento_taste": {
-        "name": "Me",
-        "text": "*I take a bite. Surprisingly... it's actually really good.*"
-    },
-    "day3_lunch_yuna_bento_eat": {
-        "name": "Yuna",
-        "text": "*Watching me eat in silence, then the faintest smile* \"...Is it good?\""
-    },
-    "day3_lunch_yuna_lap": {
-        "name": "Me",
-        "text": "*After finishing the meal, a lazy breeze makes me drowsy. Yuna suddenly presses down on my shoulder.*"
-    },
-    "day3_lunch_yuna_lap_2": {
-        "name": "Yuna",
-        "text": "\"...Lie down. On my lap.\"",
-        "choices": [
-            "*Lie down on Yuna's lap*",
-            "\"I'm okay, not yet...\""
-        ]
-    },
-    "day3_lunch_yuna_lap_yes": {
-        "name": "Yuna",
-        "text": "*As I lie down, Yuna strokes my hair* \"...Five minutes.\""
-    },
-    "day3_lunch_yuna_lap_no": {
-        "name": "Yuna",
-        "text": "\"...Okay.\""
-    },
-    "day3_lunch_yuna_lap_talk": {
-        "name": "Yuna",
-        "text": "*Stroking my hair softly* \"...When we're like this, it feels like you're mine.\""
-    },
-    "day3_lunch_yuna_freetalk": {
-        "name": "Me",
-        "text": "*Lying on Yuna's lap on the rooftop, looking up at the sky and talking.*",
-        "context": "Lying on Yuna's lap on the rooftop. Yuna made a lunchbox for two and is stroking his hair. A quiet, peaceful atmosphere.",
-        "personality": "Yuna is languid, blunt, and marches to her own beat. She speaks in short, cryptic sentences. Cold on the surface, but there's a gap when she opens up."
-    },
-    "day3_lunch_yuna_talk_1_jealous": {
-        "name": "Yuna",
-        "text": "\"...{name}. I thought you were only nice to me.\""
-    },
-    "day3_lunch_yuna_single_end": {
-        "name": "Me",
-        "text": "*I spent a peaceful lunch hour with Yuna.*"
-    },
-    "day3_lunch_yuna_talk_2": {
-        "name": "Me",
-        "text": "*Yuna's words have thorns in them.*",
-        "choices": [
-            "\"You're special to me, Yuna.\"",
-            "\"I want to be good to everyone.\"",
-            "\"Why would you say that?\""
-        ]
-    },
-    "day3_lunch_yuna_special": {
-        "name": "Yuna",
-        "text": "\"...Really? Prove it. Tomorrow night.\""
-    },
-    "day3_lunch_yuna_everyone": {
-        "name": "Yuna",
-        "text": "\"...Figures. I'm just one of 'everyone,' then.\""
-    },
-    "day3_lunch_yuna_question": {
-        "name": "Yuna",
-        "text": "\"...You don't need to know. Not yet.\""
-    },
-    "day3_lunch_yuna_warning": {
-        "name": "Yuna",
-        "text": "\"Just remember one thing. Betray me... and you'll regret it.\""
-    },
-    "day3_lunch_yuna_warning_2": {
-        "name": "Me",
-        "text": "*Yuna's eyes flash with something chilling for an instant... She's joking, right?*"
-    },
-    "day3_lunch_choose_dain": {
-        "name": "Me",
-        "text": "\"Dain, let's go eat.\""
-    },
-    "day3_lunch_dain_others_react": {
-        "name": "Me",
-        "text": "*I decided to go with Dain.*"
-    },
-    "day3_lunch_dain_seoyeon_jealous": {
-        "name": "Seoyeon",
-        "text": "\"...Sure. See you later.\""
-    },
-    "day3_lunch_with_dain_start": {
-        "name": "Dain",
-        "text": "\"Woohoo! {name}'s the best!! Let's hurry, they're serving chicken today!!\""
-    },
-    "day3_lunch_dain_talk_1": {
-        "name": "Dain",
-        "text": "\"Hey, but... did you see Seoyeon's face just now? Total jealousy mode, right?\""
-    },
-    "day3_lunch_dain_talk_2": {
-        "name": "Me",
-        "text": "*Dain keeps glancing around and lowers her voice.*"
-    },
-    "day3_lunch_dain_talk_3": {
-        "name": "Dain",
-        "text": "\"Be real with me. Are you dating Seoyeon? Or Yuna? I can tell they're both into you, you know.\"",
-        "choices": [
-            "\"No, I like you, Dain.\"",
-            "\"They're all just friends.\"",
-            "\"Are you jealous too, Dain?\""
-        ]
-    },
-    "day3_lunch_dain_confess": {
-        "name": "Dain",
-        "text": "\"Wh-what?! You can't just say that out of nowhere...! Ugh, seriously!!\""
-    },
-    "day3_lunch_dain_friends": {
-        "name": "Dain",
-        "text": "\"Hmm~ really? Their faces say otherwise though... whatever, not my business!\""
-    },
-    "day3_lunch_dain_jealous_tease": {
-        "name": "Dain",
-        "text": "\"Huh?! Who's jealous?! I'm just curious!! ...Okay, maybe it bugs me a little!!\""
-    },
-    "day3_lunch_dain_serious": {
-        "name": "Dain",
-        "text": "*Suddenly stops her chopsticks and goes quiet* \"...{name}. I need to ask you something. Seriously.\""
-    },
-    "day3_lunch_dain_serious_2": {
-        "name": "Dain",
-        "text": "\"...What am I to you? Just a friend? Or... something more?\""
-    },
-    "day3_lunch_dain_serious_choice": {
-        "name": "Me",
-        "text": "*Dain's eyes are different from usual. She's dead serious.*",
-        "choices": [
-            "\"You're special to me, Dain.\"",
-            "\"I'm not sure yet.\"",
-            "\"An important friend.\""
-        ]
-    },
-    "day3_lunch_dain_special": {
-        "name": "Dain",
-        "text": "*Face turning crimson, she punches my shoulder* \"H-hey!! Really?! I thought my heart was gonna explode!!\""
-    },
-    "day3_lunch_dain_unsure": {
-        "name": "Dain",
-        "text": "*Her face falls for a second, then immediately brightens* \"...Alright! Then just watch me become special!!\""
-    },
-    "day3_lunch_dain_friend": {
-        "name": "Dain",
-        "text": "*Dain's expression freezes for a moment, then she forces a smile* \"...Oh? Friend. Right, of course we're friends. Haha.\""
-    },
-    "day3_lunch_dain_freetalk": {
-        "name": "Me",
-        "text": "*Sitting side by side with Dain in the cafeteria, talking.*",
-        "context": "Having lunch with Dain. She asked 'what am I to you?' with a serious face. She's being shy instead of her usual energetic self.",
-        "personality": "Dain is a puppy-energy type who loves physical contact and is fiercely competitive. Exclamation mark machine. Tsundere. Upbeat on the outside, sensitive on the inside."
-    },
-    "day3_lunch_dain_end": {
-        "name": "Dain",
-        "text": "\"Anyway! You're coming to watch my practice tomorrow, right?! You HAVE to come!!\""
-    },
-    "day3_lunch_dain_conflict": {
-        "name": "Me",
-        "text": "*Tomorrow... I have other plans too, though.*",
-        "choices": [
-            "\"Of course!\"",
-            "\"If I have time...\""
-        ]
-    },
-    "day3_lunch_dain_promise": {
-        "name": "Dain",
-        "text": "\"Yes!! Brace yourself for my spike!!\""
-    },
-    "day3_lunch_dain_maybe": {
-        "name": "Dain",
-        "text": "\"...If you have time? Do you have other plans?\""
-    },
-    "day3_lunch_dain_suspicious": {
-        "name": "Dain",
-        "text": "\"Hmph! Fine. But if you bail on me, I'm seriously getting mad, okay?!\""
-    },
-    "day3_lunch_together_propose": {
-        "name": "Me",
-        "text": "\"C-can't we all just eat together?\""
-    },
-    "day3_lunch_together_react": {
-        "name": "Me",
-        "text": "*Silence. Three pairs of eyes scan each other.*"
-    },
-    "day3_lunch_together_awkward": {
-        "name": "Seoyeon",
-        "text": "\"...Whatever. Let's all eat.\""
-    },
-    "day3_lunch_together_2": {
-        "name": "Me",
-        "text": "*The cafeteria. The atmosphere is strangely hostile.*"
-    },
-    "day3_lunch_together_3": {
-        "name": "Dain",
-        "text": "\"{name}! You're coming to watch volleyball practice tomorrow, right?!\""
-    },
-    "day3_lunch_together_4": {
-        "name": "Seoyeon",
-        "text": "\"Huh? {name} already has plans with me tomorrow.\""
-    },
-    "day3_lunch_together_yuna": {
-        "name": "Yuna",
-        "text": "\"...{name} made plans with me. Tomorrow night.\""
-    },
-    "day3_lunch_together_explosion": {
-        "name": "Me",
-        "text": "*The air freezes over in an instant. Every pair of eyes locks onto me.*"
-    },
-    "day3_lunch_together_silence": {
-        "name": "Me",
-        "text": "*A suffocating silence. Seoyeon's hand is trembling, Yuna's eyes have gone dark, and Dain's expression has turned to stone.*"
-    },
-    "day3_lunch_together_seoyeon_react": {
-        "name": "Seoyeon",
-        "text": "*Slowly sets down her spoon* \"...So I wasn't the only special one.\""
-    },
-    "day3_lunch_together_yuna_lie": {
-        "name": "Yuna",
-        "text": "*Standing up* \"...I already knew. That {name} didn't only make promises to me.\""
-    },
-    "day3_lunch_together_yuna_lie_2": {
-        "name": "Dain",
-        "text": "\"...Really? Then why did you come here knowing that?\""
-    },
-    "day3_lunch_together_yuna_lie_3": {
-        "name": "Yuna",
-        "text": "*Looking over coldly* \"...That was a lie. I had no idea. I just... didn't want to cry in front of everyone.\""
-    },
-    "day3_lunch_together_confront": {
-        "name": "Seoyeon",
-        "text": "\"Wait. {name}, did you make promises to all of us?\"",
-        "choices": [
-            "Apologize honestly",
-            "Say the time slots are different",
-            "Run away"
-        ]
-    },
-    "day3_lunch_apologize": {
-        "name": "Me",
-        "text": "\"I'm sorry... I just couldn't say no to any of you.\""
-    },
-    "day3_lunch_apologize_react": {
-        "name": "Dain",
-        "text": "\"...I appreciate the honesty, but that still ticks me off.\""
-    },
-    "day3_lunch_excuse": {
-        "name": "Me",
-        "text": "\"The time slots are all different... Dain's is in the morning, the others are in the afternoon...\""
-    },
-    "day3_lunch_excuse_react": {
-        "name": "Seoyeon",
-        "text": "\"That's not the point. ...Unbelievable.\""
-    },
-    "day3_lunch_excuse_react_2": {
-        "name": "Dain",
-        "text": "\"Hmm... if you manage your time well, it's fine, right? I don't mind.\""
-    },
-    "day3_lunch_excuse_react_3": {
-        "name": "Yuna",
-        "text": "\"...That works for someone like you, maybe. I'm... *stands up* leaving.\""
-    },
-    "day3_lunch_run": {
-        "name": "Me",
-        "text": "*I shove my food down and flee the scene. That was the worst possible choice.*"
-    },
-    "day3_lunch_together_end": {
-        "name": "Me",
-        "text": "*Lunch ended in an awkward haze. The weekend is terrifying...*"
-    },
-    "day3_lunch_escape": {
-        "name": "Me",
-        "text": "\"Oh, I just remembered something! Gotta go!\""
-    },
-    "day3_lunch_escape_2": {
-        "name": "Me",
-        "text": "*I slip out like a fugitive. Overlapping sighs trail behind me.*"
-    },
-    "day3_lunch_single_approach": {
-        "name": "Me",
-        "text": "*Lunchtime. Who should I eat with?*",
-        "choices": [
-            "Eat with Seoyeon",
-            "Eat with Yuna",
-            "Eat with Dain",
-            "Go to the nurse's office",
-            "Find Teacher",
-            "Eat alone"
-        ]
-    },
-    "day3_lunch_nurse": {
-        "name": "Me",
-        "text": "*I headed to the nurse's office. She's eating a sandwich.*"
-    },
-    "day3_lunch_nurse_2": {
-        "name": "Nurse",
-        "text": "*She sees me and smiles* \"Oh my, {name}! Have you eaten? Want to join me?\""
-    },
-    "day3_lunch_nurse_3": {
-        "name": "Nurse",
-        "text": "*Locking the door* \"We need our private time, don't we? I'm tired of looking over my shoulder.\""
-    },
-    "day3_lunch_nurse_freetalk": {
-        "name": "Me",
-        "text": "*Having lunch with the Nurse, just the two of us in the nurse's office.*",
-        "context": "Having lunch alone with the Nurse in the nurse's office. She locked the door. It feels like a secret date.",
-        "personality": "The Nurse is playful, alluring, and mature. She's torn between her feelings for the student and her ethics as a teacher."
-    },
-    "day3_lunch_nurse_4": {
-        "name": "Nurse",
-        "text": "*Glancing at the clock with a sigh* \"...Time's up. Get back to class. See you Sunday.\""
-    },
-    "day3_lunch_teacher": {
-        "name": "Me",
-        "text": "*I went to the teachers' office. She's sitting alone, drinking coffee.*"
-    },
-    "day3_lunch_teacher_2": {
-        "name": "Teacher",
-        "text": "*She looks startled to see me, then brightens* \"{name}? What brings you here? It's my lunch break...\""
-    },
-    "day3_lunch_teacher_3": {
-        "name": "Teacher",
-        "text": "*Cheeks flushing* \"...Come in. Close the door.\""
-    },
-    "day3_lunch_teacher_freetalk": {
-        "name": "Me",
-        "text": "*Having lunch with Teacher, just the two of us in the teachers' office.*",
-        "context": "Having lunch alone with Teacher in the teachers' office. She blushed and closed the door.",
-        "personality": "Teacher has a dry sense of humor. Seems blunt on the surface, but there's a gap when she catches herself having feelings for a student."
-    },
-    "day3_lunch_teacher_4": {
-        "name": "Teacher",
-        "text": "*Setting down her coffee cup* \"...This isn't right. A student coming to spend lunch with me, and me being happy about it. Is this normal?\""
-    },
-    "day3_lunch_seoyeon_only": {
-        "name": "Seoyeon",
-        "text": "\"{name}. Let's eat together.\""
-    },
-    "day3_lunch_yuna_only": {
-        "name": "Yuna",
-        "text": "\"...{name}. Rooftop.\""
-    },
-    "day3_lunch_dain_only": {
-        "name": "Dain",
-        "text": "\"Let's go eat!! It's chicken today!!\""
-    },
-    "day3_lunch_normal": {
-        "name": "Me",
-        "text": "*No special plans or anything... just a normal lunch.*"
-    },
-    "day3_lunch_normal_2": {
-        "name": "Me",
-        "text": "*Laughter drifts from nearby. Everyone else seems to be having a good time.*"
-    },
-    "day3_lunch_alone": {
-        "name": "Me",
-        "text": "*I ate lunch quietly by myself. What should I do this weekend?*"
+        "text": "*Lunch is over.*"
     }
 }

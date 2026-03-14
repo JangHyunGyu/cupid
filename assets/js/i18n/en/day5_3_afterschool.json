@@ -1,635 +1,86 @@
 {
-    "day5_afternoon_start": {
+    "after5_start": {
         "name": "Me",
-        "text": "*Before I knew it, afternoon. The sky above the rooftop is starting to turn orange.*"
+        "text": "*The event is winding down. I naturally run into the two I didn't choose.*"
     },
-    "day5_afternoon_branch": {
-        "name": "System",
-        "text": ""
-    },
-    "day5_true_love_start": {
-        "name": "Me",
-        "text": "*Standing side by side under the sunset with my partner. I wish this moment would freeze.*"
-    },
-    "day5_true_talk_1": {
-        "name": "Me",
-        "text": "\"You know... before I transferred, the new school honestly scared me.\""
-    },
-    "day5_true_talk_2": {
-        "name": "Me",
-        "text": "\"But now I think transferring here was the best thing I've ever done.\""
-    },
-    "day5_true_response": {
-        "name": "System",
-        "text": ""
-    },
-    "day5_true_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"...Me too. I'm glad you came. Stay by my side... from now on.\""
-    },
-    "day5_true_yuna": {
-        "name": "Yuna",
-        "text": "\"...I thought being alone was easier. But when you showed up... I realized it wasn't.\""
-    },
-    "day5_true_dain": {
-        "name": "Dain",
-        "text": "\"Every day got way more fun since you came! You'll keep cheering me on, right?!\""
-    },
-    "day5_true_nurse": {
-        "name": "Nurse",
-        "text": "\"I know this won't be easy. But if it's you, it's okay. Together, we can handle anything.\""
-    },
-    "day5_true_teacher": {
-        "name": "Teacher",
-        "text": "\"...A teacher shouldn't be doing this. But what can I do— it's real. Let's make this work, you and me.\""
-    },
-    "day5_true_kiss_buildup": {
-        "name": "Me",
-        "text": "*The wind blows. Their face, bathed in sunset, feels unusually close.*"
-    },
-    "day5_true_kiss_2": {
-        "name": "Me",
-        "text": "*We look into each other's eyes. No words needed.*"
-    },
-    "day5_true_kiss_3": {
-        "name": "Me",
-        "text": "*Naturally, our faces draw closer.*"
-    },
-    "day5_true_kiss_4": {
-        "name": "Me",
-        "text": "*...I closed my eyes.*"
-    },
-    "day5_true_kiss_5": {
-        "name": "Me",
-        "text": "*A soft warmth. Time seemed to stop.*"
-    },
-    "day5_true_kiss_6": {
-        "name": "Me",
-        "text": "*......*"
-    },
-    "day5_true_kiss_after": {
-        "name": "Me",
-        "text": "*I opened my eyes. They were smiling in the sunset light. The most beautiful face in the world.*"
-    },
-    "day5_true_evening_branch": {
-        "name": "System",
-        "text": ""
-    },
-    "day5_bed_seoyeon_1": {
-        "name": "Me",
-        "text": "*The sun had set. I was going to walk her home, but Seoyeon grabbed my sleeve.*"
-    },
-    "day5_bed_seoyeon_2": {
-        "name": "Seoyeon",
-        "text": "\"...Um. My parents aren't home today. Just for a bit... do you want to come in?\""
-    },
-    "day5_bed_seoyeon_3": {
-        "name": "Me",
-        "text": "*A quiet residential street. Through the front door, past the spacious living room, up to Seoyeon's room on the second floor.*"
-    },
-    "day5_bed_seoyeon_4": {
-        "name": "Me",
-        "text": "*A neatly organized space. A bookshelf packed with books, student council documents, soft ambient lighting. The room was filled with Seoyeon's scent.*"
-    },
-    "day5_bed_seoyeon_4b": {
-        "name": "Seoyeon",
-        "text": "\"...My parents' room is on the first floor, so it's fine. Oh, that's not what I— just, come sit here.\""
-    },
-    "day5_bed_seoyeon_5": {
-        "name": "Me",
-        "text": "*We sat side by side on the edge of the bed. Seoyeon's hands were trembling slightly.*"
-    },
-    "day5_bed_seoyeon_6": {
-        "name": "Seoyeon",
-        "text": "\"...I always had to be perfect. Because I'm the student council president. But with you... I just want to be me.\""
-    },
-    "day5_bed_seoyeon_7": {
-        "name": "Me",
-        "text": "*Seoyeon rested her head on my shoulder. My heart felt like it would burst.*"
-    },
-    "day5_bed_yuna_1": {
-        "name": "Me",
-        "text": "*The sun had set. I was about to head back, but Yuna grabbed my hand.*"
-    },
-    "day5_bed_yuna_2": {
-        "name": "Yuna",
-        "text": "\"...Not yet. There's a place I want to show you.\""
-    },
-    "day5_bed_yuna_3": {
-        "name": "Me",
-        "text": "*Yuna led me to the top of the library annex— a hidden attic nobody knows about.*"
-    },
-    "day5_bed_yuna_4": {
-        "name": "Me",
-        "text": "*An old sofa, a single blanket, stars visible through a small window. Yuna's secret space.*"
-    },
-    "day5_bed_yuna_5": {
-        "name": "Yuna",
-        "text": "\"...I was the only one who knew about this place. Now you do too.\""
-    },
-    "day5_bed_yuna_6": {
-        "name": "Me",
-        "text": "*Yuna spread out the blanket. Sitting side by side on the narrow sofa, our shoulders touched.*"
-    },
-    "day5_bed_yuna_7": {
-        "name": "Yuna",
-        "text": "\"...Don't go. Stay here tonight.\""
-    },
-    "day5_bed_dain_1": {
-        "name": "Me",
-        "text": "*The sun had set. Dain dangled the gym key with a grin.*"
-    },
-    "day5_bed_dain_2": {
-        "name": "Dain",
-        "text": "\"...Here— my secret spot. Wanna look at stars together?\""
-    },
-    "day5_bed_dain_3": {
-        "name": "Me",
-        "text": "*The gym at night, completely empty. Dain laid out mats and opened the skylight in the ceiling.*"
-    },
-    "day5_bed_dain_4": {
-        "name": "Me",
-        "text": "*We lay side by side on the mats, looking up at the stars. I could hear Dain breathing close by.*"
-    },
-    "day5_bed_dain_5": {
-        "name": "Dain",
-        "text": "\"...Hey, my heart is racing so fast right now. Put your hand here and feel it.\""
-    },
-    "day5_bed_dain_6": {
-        "name": "Me",
-        "text": "*Dain took my hand and placed it over her chest. It really was beating fast.*"
-    },
-    "day5_bed_dain_7": {
-        "name": "Dain",
-        "text": "\"...Dummy, why are you staring like that. It's embarrassing...\""
-    },
-    "day5_bed_nurse_1": {
-        "name": "Me",
-        "text": "*The sun had set. The nurse smiled meaningfully.*"
-    },
-    "day5_bed_nurse_2": {
-        "name": "Nurse",
-        "text": "\"...There shouldn't be anyone left at school. Want to stop by the nurse's office?\""
-    },
-    "day5_bed_nurse_3": {
-        "name": "Me",
-        "text": "*Click. The sound of the nurse's office door locking.*"
-    },
-    "day5_bed_nurse_4": {
-        "name": "Me",
-        "text": "*The curtained bed area. Instead of disinfectant, a faint scent of perfume.*"
-    },
-    "day5_bed_nurse_5": {
-        "name": "Nurse",
-        "text": "\"In here, I'm not 'the nurse.' Just a woman.\""
-    },
-    "day5_bed_nurse_6": {
-        "name": "Me",
-        "text": "*We sat side by side on the edge of the bed. Her hand rested on top of mine.*"
-    },
-    "day5_bed_nurse_7": {
-        "name": "Nurse",
-        "text": "\"...Just for tonight— no student, no teacher. Just... us.\""
-    },
-    "day5_bed_teacher_1": {
-        "name": "Me",
-        "text": "*The sun had set. Teacher pulled out her car keys and jingled them.*"
-    },
-    "day5_bed_teacher_2": {
-        "name": "Teacher",
-        "text": "\"...I'll give you a ride. It's late.\""
-    },
-    "day5_bed_teacher_3": {
-        "name": "Me",
-        "text": "*The car didn't stop at my house. It stopped in front of her apartment.*"
-    },
-    "day5_bed_teacher_4": {
-        "name": "Teacher",
-        "text": "\"...Just one cup of coffee. I'll send you home after. Probably.\""
-    },
-    "day5_bed_teacher_5": {
-        "name": "Me",
-        "text": "*A small but tidy apartment. Ungraded exams piled on the desk. We sat side by side on the sofa.*"
-    },
-    "day5_bed_teacher_6": {
-        "name": "Teacher",
-        "text": "\"...Hah, I really have no business being a teacher. Bringing a student home...\""
-    },
-    "day5_bed_teacher_7": {
-        "name": "Me",
-        "text": "*She pulled her hair tie out and smiled weakly. The coffee went cold in the end.*"
-    },
-    "day5_true_morning_seoyeon_1": {
-        "name": "Me",
-        "text": "*A night where our warmth intertwined and the distance between us silently vanished— it had passed.*"
-    },
-    "day5_true_morning_seoyeon_2": {
-        "name": "Me",
-        "text": "*I opened my eyes. In the morning light seeping through the curtains, Seoyeon was watching me quietly.*"
-    },
-    "day5_true_morning_seoyeon_3": {
-        "name": "Seoyeon",
-        "text": "\"...You're up early. You can sleep a little more.\""
-    },
-    "day5_true_morning_seoyeon_4": {
-        "name": "Me",
-        "text": "*Our eyes met and a faint blush crept across Seoyeon's cheeks. Not the flawless student council president— just Seoyeon, mine alone.*"
-    },
-    "day5_true_morning_seoyeon_5": {
-        "name": "Me",
-        "text": "*The warmth passing between our clasped hands. An ordinary moment becoming something miraculous.*"
-    },
-    "day5_true_morning_yuna_1": {
-        "name": "Me",
-        "text": "*On the narrow attic sofa, a night where only our quiet breathing mingled— it had passed.*"
-    },
-    "day5_true_morning_yuna_2": {
-        "name": "Me",
-        "text": "*I tried to open my eyes, but a small warmth was clinging tightly to my arm.*"
-    },
-    "day5_true_morning_yuna_3": {
-        "name": "Yuna",
-        "text": "\"...Where do you think you're going. Stay next to me all day today.\""
-    },
-    "day5_true_morning_yuna_4": {
-        "name": "Me",
-        "text": "*Yuna murmured in her half-sleep and burrowed deeper into my arms. The girl who was always so guarded, showing me her completely defenseless side.*"
-    },
-    "day5_true_morning_yuna_5": {
-        "name": "Me",
-        "text": "*In this quiet, perfect world, I decided to become her sanctuary.*"
-    },
-    "day5_true_morning_dain_1": {
-        "name": "Me",
-        "text": "*On the gym mats under a cascade of starlight, a night where our heartbeats merged into one— it had passed.*"
-    },
-    "day5_true_morning_dain_2": {
-        "name": "Me",
-        "text": "*I opened my eyes to the morning light. Dain was sprawled across me, one leg slung over my stomach, fast asleep.*"
-    },
-    "day5_true_morning_dain_3": {
-        "name": "Dain",
-        "text": "\"...Mmm, good morning. Seeing you the second I open my eyes feels really... weird.\""
-    },
-    "day5_true_morning_dain_4": {
-        "name": "Me",
-        "text": "*Dain rubbed her eyes and grinned that radiant grin. Last night's shyness was nowhere to be found— just her usual bright energy.*"
-    },
-    "day5_true_morning_dain_5": {
-        "name": "Me",
-        "text": "*If I get to see this dazzling smile every morning, there won't be a dull moment for the rest of my days.*"
-    },
-    "day5_true_morning_nurse_1": {
-        "name": "Me",
-        "text": "*A night drawn in by the scent of perfume and an adult's easy confidence— it had passed.*"
-    },
-    "day5_true_morning_nurse_2": {
-        "name": "Me",
-        "text": "*I opened my eyes. She was resting her chin on her hand, gazing down at my face. Our eyes met.*"
-    },
-    "day5_true_morning_nurse_3": {
-        "name": "Nurse",
-        "text": "\"Sleep well? You're pretty cute when you're asleep, too.\""
-    },
-    "day5_true_morning_nurse_4": {
-        "name": "Me",
-        "text": "*Her fingertips traced softly down my cheek. Behind the playful smile, I could feel something deep.*"
-    },
-    "day5_true_morning_nurse_5": {
-        "name": "Me",
-        "text": "*No longer teacher and student— our first morning as two people, whole and equal.*"
-    },
-    "day5_true_morning_teacher_1": {
-        "name": "Me",
-        "text": "*A night that was clumsy and awkward, but all the more genuine for it— it had passed.*"
-    },
-    "day5_true_morning_teacher_2": {
-        "name": "Me",
-        "text": "*A rustling sound woke me. She was tiptoeing, trying to sneak out of bed.*"
-    },
-    "day5_true_morning_teacher_3": {
-        "name": "Teacher",
-        "text": "\"...You're awake? I was going to sneak off and make coffee. Busted.\""
-    },
-    "day5_true_morning_teacher_4": {
-        "name": "Me",
-        "text": "*Her face was bright red, completely flustered. I caught her hand and pulled her back into my arms.*"
-    },
-    "day5_true_morning_teacher_5": {
-        "name": "Me",
-        "text": "(\"Just five more minutes like this.\" The strict mask had fallen away. I wanted to protect this person for the rest of my life.)"
-    },
-    "day5_good_start": {
-        "name": "Me",
-        "text": "*Standing side by side under the sunset with my partner. Things got complicated along the way, but in the end, I'm here with this person.*"
-    },
-    "day5_good_talk_1": {
-        "name": "Me",
-        "text": "\"...I'll be honest. At first, my heart wavered. There were so many great people.\""
-    },
-    "day5_good_talk_2": {
-        "name": "Me",
-        "text": "\"But in the end, the only one my heart kept going to was you.\""
-    },
-    "day5_good_response": {
-        "name": "System",
-        "text": ""
-    },
-    "day5_good_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"...I knew. That you were nice to the other girls too. But you're by my side in the end. That's all that matters.\""
-    },
-    "day5_good_yuna": {
-        "name": "Yuna",
-        "text": "\"...I know you wavered. But you came to me in the end. ...That's enough.\""
-    },
-    "day5_good_dain": {
-        "name": "Dain",
-        "text": "\"Psh~ I knew from the start! That you'd end up coming to me! ...I'm glad.\""
-    },
-    "day5_good_nurse": {
-        "name": "Nurse",
-        "text": "\"I knew you were popular. Hehe. But right now, in this moment— only look at me.\""
-    },
-    "day5_good_teacher": {
-        "name": "Teacher",
-        "text": "\"...Player. But if you came to me, that's enough. From now on, eyes on me only. Got it?\""
-    },
-    "day5_good_final": {
-        "name": "Me",
-        "text": "*The warmth of our clasped hands quietly covered over all the missteps and hesitation along the way.*"
-    },
-    "day5_mayhem_start": {
-        "name": "Me",
-        "text": "*I came up to the rooftop and— wait, what?*"
-    },
-    "day5_mayhem_2": {
-        "name": "Me",
-        "text": "*Why... why is everyone here?!*"
-    },
-    "day5_mayhem_3": {
-        "name": "Seoyeon",
-        "text": "\"Oh, {name}! I was just about to come up to the rooftop too~\""
-    },
-    "day5_mayhem_4": {
-        "name": "Yuna",
-        "text": "\"...Why is Seoyeon here again.\""
-    },
-    "day5_mayhem_5": {
-        "name": "Dain",
-        "text": "\"HEY!! I'm here too!! Wait, why is everyone here?!\""
-    },
-    "day5_mayhem_5b": {
-        "name": "System",
-        "text": ""
-    },
-    "day5_mayhem_teacher_watch": {
-        "name": "Me",
-        "text": "*In the distance, the teacher is watching this unfold. Her expression is... complicated.*"
-    },
-    "day5_mayhem_nurse_check": {
-        "name": "System",
-        "text": ""
-    },
-    "day5_mayhem_nurse_watch": {
-        "name": "Me",
-        "text": "*The nurse is watching this situation through a window, too.*"
-    },
-    "day5_mayhem_6": {
-        "name": "Me",
-        "text": "*This is... the opening act of a catastrophe.*"
-    },
-    "day5_mayhem_7": {
-        "name": "Seoyeon",
-        "text": "\"By the way, {name}, you remember our plans for this weekend, right?\""
-    },
-    "day5_mayhem_8": {
-        "name": "Yuna",
-        "text": "\"...What? You made plans with me too.\""
-    },
-    "day5_mayhem_9": {
-        "name": "Dain",
-        "text": "\"Huh?! You told me you were free too!!\""
-    },
-    "day5_mayhem_10": {
-        "name": "Me",
-        "text": "*Everyone's eyes lock onto me at the same time. ...I'm finished.*"
-    },
-    "day5_mayhem_11": {
-        "name": "Seoyeon",
-        "text": "\"...{name}. Care to explain?\""
-    },
-    "day5_mayhem_12": {
-        "name": "Me",
-        "text": "*What do I do?!*",
-        "choices": [
-            "\"C-can't I like all of you...?\"",
-            "\"Let me speak from the heart.\"",
-            "\"(Sprint for the exit!!)\""
-        ]
-    },
-    "day5_mayhem_honest": {
-        "name": "Me",
-        "text": "\"A-actually, you're all such amazing people that I couldn't pick just one...\""
-    },
-    "day5_mayhem_honest_2": {
-        "name": "System",
-        "text": "*Silence.*"
-    },
-    "day5_mayhem_honest_3": {
-        "name": "Seoyeon",
-        "text": "\"......Hah.\""
-    },
-    "day5_mayhem_honest_4": {
-        "name": "Yuna",
-        "text": "\"...The worst.\""
-    },
-    "day5_mayhem_honest_5": {
-        "name": "Dain",
-        "text": "\"You really... you're really the WORST!!!\""
-    },
-    "day5_mayhem_run": {
-        "name": "Me",
-        "text": "*I bolt for the rooftop door without looking back!!*"
-    },
-    "day5_mayhem_run_2": {
-        "name": "Seoyeon",
-        "text": "\"Wait, {name}!! Where do you think you're going?!\""
-    },
-    "day5_mayhem_run_3": {
-        "name": "Yuna",
-        "text": "\"...Running away makes it worse.\""
-    },
-    "day5_mayhem_run_4": {
-        "name": "Dain",
-        "text": "\"Hey, wait!! I'm the fastest runner in our class!! You can't escape!!\""
-    },
-    "day5_mayhem_run_5": {
-        "name": "Me",
-        "text": "*I'm flying down the stairs and everyone's chasing me. Why is everyone so fast?!*"
-    },
-    "day5_mayhem_confess": {
-        "name": "Me",
-        "text": "\"...I'm not joking. I sincerely like every single one of you.\""
-    },
-    "day5_mayhem_confess_2": {
+
+    "after5_farewell_seo_1": {
         "name": "Me",
-        "text": "\"It's not that I can't choose— I don't want to. Choosing one means losing the rest.\""
+        "text": "*I run into Seoyeon in the hallway.*"
     },
-    "day5_mayhem_confess_3": {
-        "name": "System",
-        "text": "*A long silence.*"
+    "after5_farewell_seo_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Hah.\""
     },
-    "day5_mayhem_confess_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"...Hah. You've got some nerve. You know you'd normally get slapped for that, right?\""
-    },
-    "day5_mayhem_confess_yuna": {
-        "name": "Yuna",
-        "text": "\"...The worst. But I'll give you credit for being honest.\""
-    },
-    "day5_mayhem_confess_dain": {
-        "name": "Dain",
-        "text": "\"HEY!! That doesn't even make sense!! ...But why don't I hate it?!\""
-    },
-    "day5_mayhem_confess_silence": {
-        "name": "Me",
-        "text": "*They all look at each other. A strange silence.*"
-    },
-    "day5_mayhem_confess_seoyeon_2": {
-        "name": "Seoyeon",
-        "text": "\"...I have one condition. You treat me the best.\""
-    },
-    "day5_mayhem_confess_yuna_2": {
-        "name": "Yuna",
-        "text": "\"...Treat me the best.\""
-    },
-    "day5_mayhem_confess_dain_2": {
-        "name": "Dain",
-        "text": "\"Treat!! Me!! The best!!\""
-    },
-    "day5_mayhem_confess_react": {
-        "name": "Me",
-        "text": "*...They all glare at me simultaneously. Those eyes are terrifying.*"
-    },
-    "day5_mayhem_confess_final": {
+    "after5_farewell_seo_3": {
         "name": "Me",
-        "text": "*This might be the beginning of hell. But right now— I'm the happiest man alive.*"
+        "text": "*Seoyeon brushes her hair back.*"
     },
-    "day5_mayhem_final": {
-        "name": "Me",
-        "text": "*The sunset fades. Is this really how a peaceful Sunday afternoon ends?*"
+    "after5_farewell_seo_4": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Well, I knew. You were always a variable outside my plans.\""
     },
-    "day5_mayhem_final_2": {
+    "after5_farewell_seo_5": {
         "name": "Me",
-        "text": "*...But somehow I don't feel bad about it. This chaotic life— it's its own kind of happiness.*"
+        "text": "\"Seoyeon...\""
     },
-    "day5_friend_start": {
-        "name": "Me",
-        "text": "*The sunset paints the rooftop. I look at the person beside me.*"
+    "after5_farewell_seo_6": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Next time, I'll be the one to take you.\""
     },
-    "day5_friend_choice": {
+    "after5_farewell_seo_7": {
         "name": "Me",
-        "text": "*This is my last chance to say how I feel. What should I do?*",
-        "choices": [
-            "\"I need to tell you something...\" (Confess)",
-            "\"...I'm glad we're friends.\" (Stay friends)"
-        ]
+        "text": "*Seoyeon turns and waves. The same gesture as Day 1. She doesn't look back. Her back is straight. Perfectly. But this time, she isn't trembling.*"
     },
-    "day5_friend_confess": {
+
+    "after5_farewell_yuna_1": {
         "name": "Me",
-        "text": "\"The truth is, I like you. I've been trying to say it since yesterday, and I finally found the courage.\""
-    },
-    "day5_friend_confess_response": {
-        "name": "System",
-        "text": ""
+        "text": "*Yuna approaches in front of the library. Without a word, she hands me a book.*"
     },
-    "day5_late_accept_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"...Dummy. I've been waiting this whole time. I like you too.\""
-    },
-    "day5_late_accept_yuna": {
-        "name": "Yuna",
-        "text": "\"...You're late. Really, really late. But it's okay. I feel the same.\""
-    },
-    "day5_late_accept_dain": {
-        "name": "Dain",
-        "text": "\"...!! FINALLY!! Do you know how long I've been waiting since yesterday?! I like you too, dummy!!\""
-    },
-    "day5_late_accept_nurse": {
-        "name": "Nurse",
-        "text": "\"...You're finally saying it? I feel the same way. Have for a long time.\""
-    },
-    "day5_late_accept_teacher": {
-        "name": "Teacher",
-        "text": "\"...Hah, you should've said so yesterday. I was up all night over this. I like you too, dummy.\""
-    },
-    "day5_late_accept_transition1": {
+    "after5_farewell_yuna_2": {
         "name": "Me",
-        "text": "*We stared at each other for a long moment, then burst out laughing.*"
+        "text": "*A bookmark is tucked inside. A single line on the bookmark.*"
     },
-    "day5_late_accept_transition2": {
+    "after5_farewell_yuna_3": {
         "name": "Me",
-        "text": "*Something so simple. Why did it take this long?*"
+        "text": "*'It was fun. ...See you in the next story.'*"
     },
-    "day5_friend_stay": {
+    "after5_farewell_yuna_4": {
         "name": "Me",
-        "text": "\"...I'm really glad I met someone like you at this school.\""
-    },
-    "day5_friend_response": {
-        "name": "System",
-        "text": ""
+        "text": "*Yuna turns away. She doesn't stop.*"
     },
-    "day5_friend_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"...Hm. Well, I knew already. You were a variable I didn't plan for. ...Next time, I'll be the one to take the lead.\""
-    },
-    "day5_friend_yuna": {
-        "name": "Yuna",
-        "text": "\"...Yeah. ...It was fun. See you in the next story.\""
-    },
-    "day5_friend_dain": {
-        "name": "Dain",
-        "text": "\"Tch, that's a bummer! But it's your choice. Next time you'd better give me a shot!\""
-    },
-    "day5_friend_nurse": {
-        "name": "Nurse",
-        "text": "\"...Right. You're a good student. ...A good student.\""
-    },
-    "day5_friend_teacher": {
-        "name": "Teacher",
-        "text": "\"...Yeah, well. Teacher and student, so that's only natural. ...Only natural.\""
-    },
-    "day5_friend_bitter": {
+    "after5_farewell_yuna_5": {
         "name": "Me",
-        "text": "*Their smile looked a little wistful. A corner of my heart ached, too.*"
+        "text": "*Yuna's 'It was fun' is a word that compresses everything an ordinary person would say — 'Thank you, I liked you, let's meet again.'*"
     },
-    "day5_friend_final": {
+
+    "after5_farewell_dain_1": {
         "name": "Me",
-        "text": "*Was this the right choice? I don't know. But this, too, is an ending.*"
+        "text": "*Dain comes running from in front of the gym.*"
     },
-    "day5_alone_start": {
-        "name": "Me",
-        "text": "*Watching the sunset alone on the rooftop. My time at this school flashes past like a montage.*"
+    "after5_farewell_dain_2": {
+        "name": "다인(Dain)",
+        "text": "\"Tch, what a shame!\""
     },
-    "day5_alone_2": {
+    "after5_farewell_dain_3": {
         "name": "Me",
-        "text": "*Seoyeon, Yuna, Dain, the teachers. So many good people.*"
+        "text": "\"Dain...\""
     },
-    "day5_alone_3": {
-        "name": "Me",
-        "text": "*Should I have told one of them how I felt? Probably.*"
+    "after5_farewell_dain_4": {
+        "name": "다인(Dain)",
+        "text": "\"But hey, it's your choice. Next time you better give me a chance too!\""
     },
-    "day5_alone_4": {
+    "after5_farewell_dain_5": {
         "name": "Me",
-        "text": "*But I don't regret it. The time I spent here is precious on its own.*"
+        "text": "*She grins and punches my shoulder with her fist. Same force as Day 1. The exclamation marks are alive and well. Dain is Dain to the very end. That's her strength.*"
     },
-    "day5_alone_5": {
+
+    "after5_sunset_1": {
         "name": "Me",
-        "text": "*I'm alone, but not lonely. I've definitely changed from who I was before the transfer.*"
+        "text": "*The sun is setting. Five days are coming to an end.*"
     },
-    "day5_alone_6": {
+    "after5_end": {
         "name": "Me",
-        "text": "*Tomorrow is a fresh start. This time, I'll be a little braver.*"
+        "text": "*Checking the ending entry conditions. Top affinity and Day 3 exclusive event flag. If conditions aren't met, it leads to FRIEND END or ALONE END.*"
     }
 }

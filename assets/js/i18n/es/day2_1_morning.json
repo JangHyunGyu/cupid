@@ -1,578 +1,186 @@
 {
-    "day2_start": {
+    "morning2_start": {
         "name": "Yo",
-        "text": "*Abro los ojos. Antes que la alarma. ...No es por la expectativa, solo tengo buen reloj biológico. Sí, eso es.*"
+        "text": "*Segundo dia. El uniforme se siente un poco mas comodo que ayer. No se si me estoy adaptando rapido o rindiendome rapido.*"
     },
-    "day2_start_2": {
+    "morning2_start_2": {
         "name": "Yo",
-        "text": "*Lo de ayer pasa por mi cabeza. Irreal como un sueño, pero el uniforme colgado en la silla es bastante real. Segundo día. ¿Es muy pronto para sentirme cómodo?*"
+        "text": "*En el momento en que abro la puerta del aula... un golpe en la espalda.*"
     },
-    "day2_morning_phone": {
-        "name": "Yo",
-        "text": "*Sin pensar, agarro el móvil. Notificaciones en la pantalla de bloqueo... ninguna. ¿Qué esperaba, exactamente?*"
-    },
-    "day2_morning_phone_2": {
-        "name": "Yo",
-        "text": "*Me río ante el panel de notificaciones vacío. Dejo de hacerme ilusiones; ya los veré en persona. Aparto las sábanas de una patada y me levanto.*"
-    },
-    "day2_morning_routine": {
-        "name": "Yo",
-        "text": "*Me lavo la cara y me miro al espejo. Mejor cara que ayer. Al menos para ser 'el chico nuevo en su segundo día', no está nada mal.*"
-    },
-    "day2_morning_routine_2": {
-        "name": "Yo",
-        "text": "*El nudo de la corbata me sale a la primera. Ayer necesité tres intentos, y hoy solo uno. Nada mal mi capacidad de adaptación.*"
-    },
-    "day2_breakfast": {
-        "name": "Yo",
-        "text": "*Bajo a la cocina y encuentro arroz y un huevo frito en la mesa. Mamá ya se fue a trabajar. Que no haya dejado ni una nota es muy típico de ella.*"
-    },
-    "day2_breakfast_2": {
-        "name": "Yo",
-        "text": "*Devoro el desayuno y agarro la mochila. Miro el reloj: voy con tiempo de sobra. Puedo ir sin prisas.*"
-    },
-    "day2_start_3": {
-        "name": "Yo",
-        "text": "*Salgo por la puerta. Segunda mañana. Qué me esperará hoy. ...No es que tenga expectativas, solo curiosidad.*"
-    },
-    "day2_road_to_school": {
-        "name": "Yo",
-        "text": "*El aire de la mañana es frío y limpio. Como si la primavera estuviera por llegar, un ligero aroma a flores se mezcla con la brisa.*"
-    },
-    "day2_road_to_school_2": {
-        "name": "Yo",
-        "text": "*Estudiantes con el mismo uniforme van en grupitos hacia el instituto. Ayer todo me resultaba ajeno, pero hoy camino entre ellos con naturalidad.*"
-    },
-    "day2_road_to_school_3": {
-        "name": "Yo",
-        "text": "*Desde el otro lado de la calle llega un '¡Eh, el chico nuevo!' traído por el viento. Parece que sigo siendo trending topic. ...¿Será buena fama, al menos?*"
-    },
-    "day2_school_gate": {
-        "name": "Yo",
-        "text": "*Llego a la entrada del instituto. Que mis pasos sean más ligeros que ayer será por el buen humor... o porque este instituto mola de verdad.*"
-    },
-    "day2_school_gate_2": {
-        "name": "Yo",
-        "text": "*Frente a la entrada principal, echo un vistazo alrededor. Esa sensación de algo familiar... no creo que sea mi imaginación.*",
-        "choices": [
-            "Miro a mi alrededor."
-        ]
-    },
-    "day2_meet_someone": {
-        "name": "Yo",
-        "text": "*Giro la mirada, y ahí...*"
-    },
-    "day2_meet_yuna": {
-        "name": "Yo",
-        "text": "*Bajo la sombra del olmo junto a la entrada, Yuna cierra su libro como señal de que ha notado mi presencia. Sin palabras, solo con la mirada.*"
-    },
-    "day2_yuna_talk_msg": {
-        "name": "Yuna",
-        "text": "\"...Llegaste. El mensaje de anoche... iba a ignorarlo, pero no pude. ...Revisa tu pupitre luego.\""
-    },
-    "day2_yuna_morning_talk": {
-        "name": "Yuna",
-        "text": "\"...Llegaste. Lo del marcapáginas de ayer, gracias. ...Revisa dentro de tu pupitre luego.\""
-    },
-    "day2_meet_nurse": {
-        "name": "Sistema",
-        "text": ""
-    },
-    "day2_meet_nurse_standard": {
-        "name": "Enfermera",
-        "text": "\"Vaya, qué ojos tan despejados para ser tan temprano. Buenos días, {name}.\""
-    },
-    "day2_meet_nurse_high": {
-        "name": "Enfermera",
-        "text": "*La enfermera se acerca y me alisa el cuello del uniforme con la punta de los dedos.* \"Anda, {name}. Hoy te veo mucho más relajado que ayer. ¿Será gracias a mí?\""
-    },
-    "day2_meet_nurse_low": {
-        "name": "Enfermera",
-        "text": "*La enfermera me echa un vistazo y aparta la mirada.* \"Uy, no tienes buena cara. Si no tienes nada que hacer, descansa en el aula.\""
-    },
-    "day2_nurse_talk": {
-        "name": "Enfermera",
-        "text": "*La enfermera entrecierra los ojos con aire misterioso y da un paso hacia mí.*"
-    },
-    "day2_nurse_talk_msg": {
-        "name": "Enfermera",
-        "text": "\"Tu mensaje de anoche fue adorable. Mi corazón se aceleró un momento. ...Es broma. ¿O no? En fin, hoy también la enfermería está abierta para ti.\""
-    },
-    "day2_nurse_talk_has_number": {
-        "name": "Enfermera",
-        "text": "\"Anoche estuve dudando si escribirte... pero que una profesora mande mensaje primero a un alumno queda raro, ¿no? Pásate hoy por la enfermería.\""
-    },
-    "day2_nurse_talk_no_number": {
-        "name": "Enfermera",
-        "text": "\"Ya es tu segundo día. Te adaptas rápido, ¿eh? No te fuerces demasiado, y si necesitas refugio, la enfermería te espera.\""
-    },
-    "day2_meet_seoyeon": {
-        "name": "Sistema",
-        "text": ""
-    },
-    "day2_meet_seoyeon_standard": {
-        "name": "Seoyeon",
-        "text": "\"¿Dormiste bien anoche? Que tengas un buen día, {name}.\""
-    },
-    "day2_meet_seoyeon_high": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon está merodeando frente a la entrada y, al verme, pone una expresión de alivio que intenta disimular.* \"{name}, llegaste temprano. ...Sí, solo estaba aquí por casualidad. No es que te estuviera esperando ni nada.\""
-    },
-    "day2_meet_seoyeon_low": {
-        "name": "Seoyeon",
-        "text": "*Al verme, la expresión de Seoyeon se endurece.* \"...Ah, llegaste. Al menos no llegas tarde. Yo me adelanto.\""
-    },
-    "day2_seoyeon_talk": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon me observa un momento y luego esboza una ligera sonrisa.*"
-    },
-    "day2_seoyeon_talk_msg": {
-        "name": "Seoyeon",
-        "text": "\"Tu mensaje de ayer, gracias. Que dormí bien gracias a eso es un secreto. ...Lo que acabo de decir también es secreto.\""
-    },
-    "day2_seoyeon_talk_has_number": {
-        "name": "Seoyeon",
-        "text": "\"Después de intercambiar contactos ayer, pensé cientos de veces en mandarte un mensaje. Me contuve para no molestarte... y ahora me arrepiento.\"",
-        "choices": [
-            "Yo también esperaba un mensaje tuyo. La próxima vez, no te contengas.",
-            "Yo me dormí en cuanto me acosté. La próxima vez mándalo, porfa."
-        ]
-    },
-    "day2_seoyeon_talk_no_number": {
-        "name": "Seoyeon",
-        "text": "\"¿Llegaste bien a casa ayer? Primer día en un instituto nuevo debió ser agotador, pero hoy te veo entero. Menos mal.\""
-    },
-    "day2_seoyeon_happy": {
-        "name": "Seoyeon",
-        "text": "\"¿Que no me contenga? ...Vale. ¿Estás preparado para un bombardeo de mensajes del que te arrepientas? Venga, vamos al aula.\""
-    },
-    "day2_seoyeon_normal": {
-        "name": "Seoyeon",
-        "text": "\"Ya veo. Normal estar agotado el primer día. Intentemos sobrevivir hoy también, {name}.\""
-    },
-    "day2_meet_dain": {
-        "name": "Dain",
-        "text": "\"¡¡Buenos días!! ¡¡{name}!! ¡¡Wow, llegaste temprano!!\""
-    },
-    "day2_dain_talk": {
-        "name": "Dain",
-        "text": "*Dain me suelta un manotazo en la espalda. Menuda energía desde primera hora.*"
-    },
-    "day2_dain_talk_msg": {
-        "name": "Dain",
-        "text": "\"¡¡Vi tu mensaje de anoche!! ¡¡Eres más tierno de lo que pensaba!! ¡¡Me alegró mucho!! ¡¡Hoy a tope también!!\""
-    },
-    "day2_dain_talk_dated": {
-        "name": "Dain",
-        "text": "\"¡¡Gracias al tteokbokki de ayer estoy con las pilas al máximo!! ¡¡Tú también, ¿no?! ¿¡Verdad?!\"",
-        "choices": [
-            "¡Sí! Dormí genial gracias a ti. Se me contagió tu energía.",
-            "Estoy algo cansado... Dain, ¿de dónde sacas tanta energía?"
-        ]
-    },
-    "day2_dain_talk_not_dated": {
-        "name": "Dain",
-        "text": "\"¿¡Llegaste bien ayer?! ¡¡Si no te has adaptado desde el primer día, yo misma te hago el tour!! ¡¡Hoy también, ánimo!!\""
-    },
-    "day2_dain_happy": {
-        "name": "Dain",
-        "text": "\"¡¡Ji ji, mi energía es otro nivel, ¿verdad?! ¡¡Bien, ven al gimnasio a la hora de comer!! ¡¡Sin falta!! ¡¡Te espero!!\""
-    },
-    "day2_dain_normal": {
-        "name": "Dain",
-        "text": "\"¡¡Venga ya, no seas blandito!! ¡¡La resistencia es poder!! ¡Vamos al aula! ¡Te llevo a rastras!\""
-    },
-    "day2_meet_teacher": {
-        "name": "Profesora",
-        "text": "\"Vaya, ¿{name}? Segundo día y llegas temprano... parece que tienes madera de buen estudiante. Nada mal.\""
-    },
-    "day2_teacher_free_talk": {
-        "name": "Profesora",
-        "text": "\"Queda un rato hasta que empiece la clase. ¿Tienes alguna duda?\"",
-        "context": "Nos hemos encontrado frente a la entrada del instituto y caminamos juntos hacia el aula. Mantén la conversación hasta que se cierre de forma natural. Cuando la charla esté a punto de terminar, la profesora aprovechará para pedir el número de contacto del protagonista con la excusa de la lista de contactos de emergencia. Solo al final de la conversación, busca el momento de preguntar por el contacto o insinúa que tiene un asunto oficial.",
-        "personality": "Profesora tutora con humor seco y una calidez escondida tras su fachada estricta. A veces siente un ligero revoloteo ante la madurez del protagonista."
-    },
-    "day2_teacher_contact_ask_high": {
-        "name": "Yo",
-        "text": "*Tuvimos una charla agradable de camino al aula. Parecía de buen humor desde por la mañana, y con la excusa de la lista de contactos de emergencia, me pidió el número.*",
-        "choices": [
-            "Claro, aquí tiene. Puede escribirme aunque no sea emergencia.",
-            "Se lo doy luego en la sala de profesores."
-        ]
-    },
-    "day2_teacher_contact_ask_low": {
-        "name": "Yo",
-        "text": "*La profesora no parece contenta. Creo que fui algo maleducado. Suspira y me pide el número de forma puramente administrativa, para la lista de contactos de emergencia.*",
-        "choices": [
-            "Sí, aquí tiene mi número.",
-            "Se lo daré después en la sala de profesores."
-        ]
-    },
-    "day2_teacher_contact_ask": {
-        "name": "Yo",
-        "text": "*Estuvimos hablando de varias cosas mientras caminábamos al aula. Dice que necesita mi número para la lista de contactos de emergencia.*",
-        "choices": [
-            "Claro, aquí tiene mi número.",
-            "Se lo doy luego en la sala de profesores."
-        ]
-    },
-    "day2_teacher_contact_success_high": {
-        "name": "Profesora",
-        "text": "\"Gracias. Usé la excusa de los contactos de emergencia, pero... oye, podrían surgir emergencias de verdad. Si la vida escolar se te hace cuesta arriba, escríbeme a este número. ...También a nivel personal.\""
-    },
-    "day2_teacher_contact_success_low": {
-        "name": "Profesora",
-        "text": "\"...Gracias. Solo lo usaré para fines oficiales, tranquilo. No llegues tarde a clase.\""
-    },
-    "day2_teacher_contact_success_normal": {
-        "name": "Profesora",
-        "text": "\"Gracias. Si pasa algo, te aviso. Venga, vamos al aula.\""
-    },
-    "day2_classroom_from_teacher": {
-        "name": "Profesora",
-        "text": "\"Ya llegamos. Que hoy sea un día tranquilo, {name}.\""
-    },
-    "day2_classroom_from_teacher_2": {
-        "name": "Yo",
-        "text": "*Al entrar al aula junto a la profesora, todas las miradas se clavan en nosotros. Entrar acompañado de la tutora llama bastante la atención.*"
-    },
-    "day2_classroom_greet_teacher": {
-        "name": "Compañero",
-        "text": "\"¡Oh, el nuevo! ¡Buenos días! ¿¡Entrando con la profe?! ¿¡Ya eres su alumno favorito?!\""
-    },
-    "day2_classroom_greet_teacher_2": {
-        "name": "Yo",
-        "text": "*Risitas por todos lados. No parece con mala intención, pero toca dar alguna explicación.*"
-    },
-    "day2_classroom_settle_teacher": {
-        "name": "Compañero",
-        "text": "*El de al lado me da un codazo.* \"Oye, ¿qué tienes con la profe? ¡Llegar juntos por la mañana!\""
-    },
-    "day2_classroom_settle_teacher_2": {
-        "name": "Yo",
-        "text": "\"Nos cruzamos por casualidad en la entrada. Cosas que pasan.\""
-    },
-    "day2_classroom_settle_teacher_3": {
-        "name": "Yo",
-        "text": "*Salgo del paso como puedo y me siento. Un poco de vergüenza, pero... no me siento mal. Abro la mochila para sacar el libro, y noto algo raro.*"
-    },
-    "day2_classroom_from_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"Ya estamos. Intentemos sobrevivir hoy también, {name}.\""
-    },
-    "day2_classroom_from_seoyeon_2": {
-        "name": "Yo",
-        "text": "*Al entrar juntos, Seoyeon y yo acaparamos todas las miradas. Bueno, la presidenta del consejo estudiantil y el chico nuevo entrando juntos... es normal que llame la atención.*"
-    },
-    "day2_classroom_greet_from_seoyeon": {
-        "name": "Compañero",
-        "text": "\"¡Oh, el nuevo! ¡Buenos días! ¿¡Vienes con Seoyeon?! ¡¡Parece sacado de una serie!!\""
-    },
-    "day2_classroom_greet_from_seoyeon_2": {
-        "name": "Yo",
-        "text": "*Se intercambian miradas cómplices. Seoyeon ni se inmuta y va directa a su sitio. Qué fría.*"
-    },
-    "day2_classroom_settle_from_seoyeon": {
-        "name": "Compañero",
-        "text": "*El de delante se gira y susurra.* \"Oye, ¿ya vienes con Seoyeon al insti? ¿Estáis saliendo?\""
-    },
-    "day2_classroom_settle_from_seoyeon_2": {
-        "name": "Yo",
-        "text": "\"Nos encontramos por casualidad en la entrada. Seoyeon es muy amable conmigo, se lo agradezco mucho.\""
-    },
-    "day2_classroom_settle_from_seoyeon_3": {
-        "name": "Yo",
-        "text": "*Salgo del paso y me siento. Seoyeon me saluda con un gesto desde su sitio. Me sube el ánimo sin razón; abro la mochila para sacar el libro... y noto algo raro.*"
-    },
-    "day2_classroom_from_dain": {
-        "name": "Dain",
-        "text": "\"¡¡Llegamos!! ¡¡Hoy también a tope, {name}!!\""
-    },
-    "day2_classroom_from_dain_2": {
-        "name": "Yo",
-        "text": "*Dain abre la puerta del aula con un grito de guerra y el nivel de energía de la clase sube al instante. Esa energía es literalmente contagiosa.*"
-    },
-    "day2_classroom_greet_from_dain": {
-        "name": "Compañero",
-        "text": "\"¡Oh, el nuevo! ¡Buenos días! ¿Vienes con Dain? ¡Vaya, ya os lleváis bien!\""
+    "morning2_dain_1": {
+        "name": "다인(Dain)",
+        "text": "\"Llegaste?! Buenos dias!!\""
     },
-    "day2_classroom_greet_from_dain_2": {
-        "name": "Dain",
-        "text": "\"¡¡Pues claro!! ¡¡{name} ya es de los míos!! ¡¡Nos vemos a la hora de comer, y ni se te ocurra escaparte!!\""
+    "morning2_dain_2": {
+        "name": "{name}",
+        "text": "\"...Casi me rompes la espalda.\""
     },
-    "day2_classroom_settle_from_dain": {
-        "name": "Compañero",
-        "text": "*El de delante se gira riéndose.* \"Una vez que Dain te atrapa, no hay escape~ ¡Cuida tu resistencia!\""
+    "morning2_dain_3": {
+        "name": "다인(Dain)",
+        "text": "\"Jaja, con eso?! Necesitas hacer mas ejercicio!\""
     },
-    "day2_classroom_settle_from_dain_2": {
-        "name": "Yo",
-        "text": "\"...Ya noto el saludo matutino en la espalda. Menuda bienvenida espartana.\""
-    },
-    "day2_classroom_settle_from_dain_3": {
-        "name": "Yo",
-        "text": "*Salgo del paso y me siento. Dain me hace un pulgar arriba desde su sitio. Con las pilas bien cargadas, abro la mochila... y noto algo raro.*"
-    },
-    "day2_classroom_from_nurse": {
-        "name": "Yo",
-        "text": "*Me despido de la enfermera y voy hacia el aula. Juraría que aún tengo un rastro de su perfume en la nariz... será mi imaginación.*"
-    },
-    "day2_classroom_from_nurse_2": {
-        "name": "Yo",
-        "text": "*Abro la puerta del aula. El ambiente es más relajado que ayer. Las miradas mezclan simpatía en lugar de recelo.*"
-    },
-    "day2_classroom_greet_from_nurse": {
-        "name": "Compañero",
-        "text": "\"¡Oh, el nuevo! ¡Buenos días! ¿Eh? ¿Vienes de por la enfermería? ¿Te encuentras mal?\""
-    },
-    "day2_classroom_greet_from_nurse_2": {
-        "name": "Yo",
-        "text": "\"No estoy malo. Solo me crucé con la enfermera un momento.\""
-    },
-    "day2_classroom_settle_from_nurse": {
-        "name": "Compañero",
-        "text": "*El de delante se gira.* \"Antes te vi hablando con la enfermera, ¿no? Parecíais bastante cercanos. ¿Eres cliente habitual?\""
-    },
-    "day2_classroom_settle_from_nurse_2": {
-        "name": "Yo",
-        "text": "\"Para ser habitual, llevo solo dos días. Es que al ser nuevo, quiso comprobar cómo me va.\""
-    },
-    "day2_classroom_settle_from_nurse_3": {
-        "name": "Yo",
-        "text": "*Salgo del paso y me siento. La sonrisa de la enfermera sigue dando vueltas en mi cabeza. Abro la mochila para sacar el libro... y noto algo raro.*"
-    },
-    "day2_classroom_from_yuna": {
-        "name": "Yo",
-        "text": "*Me despido de Yuna y cruzo la entrada hacia el aula. 'Revisa tu pupitre'... ¿Una nota? Muy propio de ella.*"
-    },
-    "day2_classroom_from_yuna_2": {
-        "name": "Yo",
-        "text": "*Abro la puerta del aula y entro. Incluso entre el bullicio, las palabras de Yuna no se me van de la cabeza.*"
-    },
-    "day2_classroom_greet_from_yuna": {
-        "name": "Compañero",
-        "text": "\"¡Oh, el nuevo! ¡Buenos días! Tienes cara seria, ¿te preocupa algo?\""
-    },
-    "day2_classroom_greet_from_yuna_2": {
-        "name": "Yo",
-        "text": "\"Ah... no, nada. Es que aún tengo sueño.\""
-    },
-    "day2_classroom_settle_from_yuna": {
-        "name": "Compañero",
-        "text": "*El de delante se gira.* \"Antes te vi hablando con alguien en la entrada... ¿de otra clase? Parecía alguien bastante misteriosa.\""
-    },
-    "day2_classroom_settle_from_yuna_2": {
-        "name": "Yo",
-        "text": "\"Es del mismo instituto, pero tampoco la conozco mucho. Es del tipo misterioso.\""
-    },
-    "day2_classroom_settle_from_yuna_3": {
-        "name": "Yo",
-        "text": "*Salgo del paso y me siento. Lo que dijo Yuna no deja de rondarme. Abro la mochila para sacar el libro... y noto algo raro.*"
-    },
-    "day2_classroom": {
-        "name": "Yo",
-        "text": "*Abro la puerta del aula. El ambiente es más suave que ayer. Las miradas también transmiten simpatía.*"
+    "morning2_dain_4": {
+        "name": "{name}",
+        "text": "\"No es un poco temprano para tanta energia?\""
     },
-    "day2_classroom_greet": {
-        "name": "Compañero",
-        "text": "\"¡Oh, el nuevo! ¡Buenos días! ¿Te adaptaste bien ayer? Nuestra clase mola, ¿eh?\""
+    "morning2_dain_5": {
+        "name": "다인(Dain)",
+        "text": "\"Esto es lo normal! Tu eres el que anda bajo de pilas!\""
     },
-    "day2_classroom_greet_2": {
+    "morning2_dain_6": {
         "name": "Yo",
-        "text": "*Varios me saludan con naturalidad. Las miradas curiosas de ayer se han convertido en sonrisas amables.*"
+        "text": "*Si existiera un mundo donde este volumen a las 8 de la manana fuera normal, Dain seria su presidenta.*"
     },
-    "day2_classroom_settle_alone": {
-        "name": "Compañero",
-        "text": "*El de delante se gira.* \"¿Segundo día y ya te has adaptado? ¡Eres un crack!\""
-    },
-    "day2_classroom_settle_alone_2": {
+    "morning2_note_1": {
         "name": "Yo",
-        "text": "\"Es que todos me habéis tratado genial. Os lo agradezco.\""
+        "text": "*Estoy a punto de sentarme cuando... veo una nota doblada sobre mi escritorio.*"
     },
-    "day2_classroom_settle_alone_3": {
+    "morning2_note_2": {
         "name": "Yo",
-        "text": "*Salgo del paso y me siento. Abro la mochila para sacar el libro... y noto algo raro.*"
+        "text": "*'Ven al anexo de la biblioteca a la hora del almuerzo. -- Yuna'*"
     },
-    "day2_classroom_2": {
+    "morning2_note_3": {
         "name": "Yo",
-        "text": "*Me siento y voy a organizar la mochila cuando veo una pequeña nota en la esquina del pupitre.*",
-        "choices": [
-            "Miro la nota."
-        ]
-    },
-    "day2_check_note": {
-        "name": "Yo",
-        "text": "*Desdoblo la nota con cuidado. Letra pulcra pero con un toque frío. Solo las palabras justas.*"
-    },
-    "day2_note_content": {
-        "name": "Sistema",
-        "text": "\"'A la hora de comer, ven al anexo de la biblioteca. - Yuna'\""
+        "text": "*La misma letra prolija de ayer. Corta. Y el lugar es especifico. -- El 'anexo' de la biblioteca? Es un lugar diferente al de ayer.*"
     },
-    "day2_note_reaction": {
+    "morning2_seo_1": {
         "name": "Yo",
-        "text": "*...Una sola línea. Sin número de contacto, y va y deja una nota. Se me escapa una sonrisa al pensar que esa frase críptica es muy de ella.*"
+        "text": "*Estoy a punto de guardar la nota en el bolsillo cuando... una voz familiar desde el pasillo.*"
     },
-    "day2_note_speculation": {
-        "name": "Yo",
-        "text": "*El anexo de la biblioteca. Suena a un rincón apartado del instituto. ¿Querrá enseñarme algo o tiene algo que decirme?*"
+    "morning2_seo_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Dormiste bien anoche?\""
     },
-    "day2_note_speculation_2": {
+    "morning2_seo_3": {
         "name": "Yo",
-        "text": "*¿Habrá alguien por aquí que conozca a Yuna? Pero no puedo ir contando lo de la nota. Tiene pinta de ser un secreto que debo guardar solo para mí.*"
+        "text": "*Seoyeon pasa por el pasillo, echando un vistazo al aula. Su mirada se clava precisamente en mi.*"
     },
-    "day2_note_speculation_3": {
-        "name": "Yo",
-        "text": "*Doblo la nota y la guardo en el bolsillo. No sé si estoy deseando que llegue la hora de comer o si estoy nervioso. ...Probablemente ambas cosas.*"
+    "morning2_seo_4": {
+        "name": "{name}",
+        "text": "\"La presidenta del consejo estudiantil viene hasta el aula a saludar?\""
     },
-    "day2_note_ask_around": {
-        "name": "Yo",
-        "text": "*Le pregunto disimuladamente al de al lado.*"
+    "morning2_seo_5": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Solo iba de paso. -- Que tengas otro dia divertido.\""
     },
-    "day2_note_ask_around_met": {
+    "morning2_minsu_1": {
         "name": "Yo",
-        "text": "\"¿Conoces a una tal Yuna? Creo que es de otra clase...\""
+        "text": "*No dejo de caminar. Pero su mirada estaba claramente puesta en mi.*"
     },
-    "day2_note_ask_around_new": {
+    "morning2_minsu_2": {
         "name": "Yo",
-        "text": "\"Oye... ¿conoces a alguien que se llame Yuna?\""
+        "text": "*Minsu se gira desde el asiento de delante.*"
     },
-    "day2_note_ask_around_2": {
-        "name": "Compañero",
-        "text": "\"¿Yuna? Mmm... de nuestra clase no es. ¿Será de otro grupo o de un curso superior?\""
+    "morning2_minsu_3": {
+        "name": "민수(Minsu)",
+        "text": "\"Oye, dos dias como alumno nuevo y la presidenta del consejo viene a saludarte? Yo llevo un ano aqui y ni me mira.\""
     },
-    "day2_note_ask_around_3": {
-        "name": "Yo",
-        "text": "*Como esperaba, no hay pistas. No queda otra que ir en persona a la hora de comer. ...Bueno, si es una trampa, al menos es una trampa con gancho.*"
-    },
-    "day2_homeroom_start": {
-        "name": "Profesora",
-        "text": "\"Venga, todos sentados. Empezamos la tutoría.\""
+    "morning2_dain_claim_1": {
+        "name": "{name}",
+        "text": "\"Tal vez es que no eres popular.\""
     },
-    "day2_homeroom_rollcall": {
-        "name": "Profesora",
-        "text": "*Abre el listado y empieza a pasar lista.* \"...¿{name}? El nuevo, ¿estás?\""
+    "morning2_dain_claim_2": {
+        "name": "민수(Minsu)",
+        "text": "\"...Eso es verdad, pero no es el punto.\""
     },
-    "day2_homeroom_rollcall_2": {
+    "morning2_dain_claim_3": {
         "name": "Yo",
-        "text": "\"Sí, aquí estoy.\""
-    },
-    "day2_homeroom_rollcall_3": {
-        "name": "Profesora",
-        "text": "\"Bien. Mejor cara que ayer. Parece que la adaptación va viento en popa.\""
-    },
-    "day2_homeroom_notice": {
-        "name": "Profesora",
-        "text": "\"Un aviso. Este viernes hay reunión para preparar el festival del instituto. Los interesados, quedaos después de clase.\""
+        "text": "*Dain observa como Seoyeon se aleja.*"
     },
-    "day2_homeroom_notice_2": {
-        "name": "Yo",
-        "text": "*¿Festival del instituto...? Llevo dos días aquí y ya hablan de festival. Este sitio tiene bastante vidilla.*"
+    "morning2_dain_claim_4": {
+        "name": "다인(Dain)",
+        "text": "\"La presidenta tambien esta interesada en nuestro alumno nuevo?\""
     },
-    "day2_homeroom_event": {
-        "name": "Compañero",
-        "text": "\"¡Profe, pregunta! ¿En el festival habrá concurso de talentos entre clases?\""
+    "morning2_dain_claim_5": {
+        "name": "{name}",
+        "text": "\"'Nuestro' alumno nuevo?\""
     },
-    "day2_homeroom_event_2": {
-        "name": "Profesora",
-        "text": "\"Aún no está decidido, pero... si nuestra clase participa, el primer puesto está asegurado, ¿no? Os lo garantizo.\""
+    "morning2_dain_claim_6": {
+        "name": "다인(Dain)",
+        "text": "\"Yo te encontre primero, asi que eres nuestro alumno nuevo! Lo reclamo! Es mio!\""
     },
-    "day2_homeroom_event_3": {
+    "morning2_break_1": {
         "name": "Yo",
-        "text": "*La clase estalla en risas. Soltar eso con cara de póker tiene su gracia inesperada.*"
+        "text": "*Se puede reclamar a una persona? -- Pero por alguna razon no tengo ganas de discutir.*"
     },
-    "day2_morning_class": {
+    "morning2_seo_dust_1": {
         "name": "Yo",
-        "text": "*Empezó la clase, pero la nota en el bolsillo no me deja concentrarme. 'Anexo de la biblioteca'... ¿qué querrá mostrarme allí?*"
+        "text": "*Descanso despues de la primera clase. Me cruzo con Seoyeon en el pasillo. Se detiene. Mira mi hombro.*"
     },
-    "day2_morning_class_yuna_msg": {
-        "name": "Yo",
-        "text": "*Yuna, con quien estuve mensajeando anoche. Tiene mi número y aun así elige dejar una nota. ...Eso va muy con ella.*"
+    "morning2_seo_dust_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Espera.\""
     },
-    "day2_morning_class_yuna_met": {
+    "morning2_seo_dust_3": {
         "name": "Yo",
-        "text": "*Yuna, la chica que conocí ayer. Ya me parecía de las que dejan notas. Un secreto... la curiosidad me come.*"
+        "text": "*La mano de Seoyeon se extiende hacia mi hombro. Quita algo con un gesto. Natural. Demasiado natural.*"
     },
-    "day2_morning_class_yuna_new": {
-        "name": "Yo",
-        "text": "*¿Yuna...? Ayer ni coincidimos. ¿Quién es y por qué me deja una nota?*"
+    "morning2_seo_dust_4": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Tenias algo en la ropa.\""
     },
-    "day2_morning_class_focus": {
-        "name": "Yo",
-        "text": "*Las fórmulas de la pizarra no me entran. Las cuatro palabras 'anexo de la biblioteca' dan vueltas sin parar en mi cabeza.*"
+    "morning2_seo_dust_5": {
+        "name": "{name}",
+        "text": "\"......\""
     },
-    "day2_morning_class_quiz": {
-        "name": "Profesor de Mates",
-        "text": "\"A ver, ¿quién resuelve este problema? ...El nuevo, ¿quieres intentarlo?\""
+    "morning2_seo_dust_6": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Que? Solo era polvo.\""
     },
-    "day2_morning_class_quiz_2": {
-        "name": "Yo",
-        "text": "*Estaba en las nubes. Miro la pizarra a toda prisa, pero... las fórmulas no me entran en la cabeza.*",
-        "choices": [
-            "Salgo con seguridad e intento resolverlo.",
-            "Admito con sinceridad que no lo sé."
-        ]
-    },
-    "day2_quiz_try": {
+    "morning2_dain_react_1": {
         "name": "Yo",
-        "text": "*Me planto frente a la pizarra y empiezo a tantear. Por suerte es de lo que repasé ayer y la memoria me va volviendo poco a poco.*"
+        "text": "*Mi corazon se salto un latido. -- Probablemente no fue por el polvo.*"
     },
-    "day2_quiz_try_2": {
-        "name": "Profesor de Mates",
-        "text": "\"Vaya, el nuevo tiene nivel. Correcto. Bien hecho, siéntate.\""
-    },
-    "day2_quiz_pass": {
+    "morning2_dain_react_2": {
         "name": "Yo",
-        "text": "\"Lo siento, todavía no he podido ponerme al día con todo el temario...\""
-    },
-    "day2_quiz_pass_2": {
-        "name": "Profesor de Mates",
-        "text": "\"Tranquilo, llevas poco tiempo aquí. Para la próxima, trae el tema estudiado.\""
+        "text": "*Seoyeon se aleja como si nada hubiera pasado. La voz de Dain llega desde atras.*"
     },
-    "day2_quiz_result": {
-        "name": "Yo",
-        "text": "*Bueno, he salido del paso. La nota no me deja concentrarme, pero clase es clase.*"
+    "morning2_dain_react_3": {
+        "name": "다인(Dain)",
+        "text": "\"Oye! Que fue eso?! Te toco el hombro?!\""
     },
-    "day2_second_class": {
-        "name": "Yo",
-        "text": "*Directos a segunda hora, Lengua. Nos piden sacar la ficha que repartieron ayer.*"
+    "morning2_dain_react_4": {
+        "name": "{name}",
+        "text": "\"Me quito el polvo.\""
     },
-    "day2_second_class_2": {
-        "name": "Yo",
-        "text": "*Rebusco entre las fichas y mis dedos rozan la nota en el bolsillo. El corazón me da un vuelco.*"
+    "morning2_dain_react_5": {
+        "name": "다인(Dain)",
+        "text": "\"Polvo... de verdad habia polvo?!\""
     },
-    "day2_second_class_3": {
+    "morning2_dain_react_6": {
         "name": "Yo",
-        "text": "*Aún faltan dos horas para el recreo. ¿Por qué el tiempo no pasa?*"
+        "text": "*Probablemente si habia. Quiza. -- Pero no creo que ese sea el punto.*"
     },
-    "day2_last_class_before_lunch": {
+    "morning2_haeun_1": {
         "name": "Yo",
-        "text": "*Tercera hora, Inglés. La pronunciación del profe me llega al oído, pero mi cabeza solo hace la cuenta atrás hasta la comida.*"
+        "text": "*En el pasillo donde desaparecio Seoyeon... una chica con una pulsera del consejo estudiantil se acerca.*"
     },
-    "day2_last_class_before_lunch_2": {
-        "name": "Yo",
-        "text": "*El anexo de la biblioteca... nunca he ido. ¿Por qué eligió un sitio tan apartado?*"
+    "morning2_haeun_2": {
+        "name": "하은(Haeun)",
+        "text": "\"Disculpa, tu eres el alumno nuevo, verdad? Soy Haeun, la vicepresidenta del consejo estudiantil.\""
     },
-    "day2_last_class_before_lunch_3": {
-        "name": "Yo",
-        "text": "*No creo que sea peligroso. Es una nota de una compañera del mismo instituto. ...Pero entonces, ¿por qué me late tan fuerte el corazón?*"
+    "morning2_haeun_3": {
+        "name": "{name}",
+        "text": "\"Ah, si.\""
     },
-    "day2_last_class_before_lunch_4": {
-        "name": "Yo",
-        "text": "*Echo un vistazo al reloj. Las 11:40. Veinte minutos para comer. Tiempo, pasa más rápido, porfa.*"
+    "morning2_haeun_4": {
+        "name": "하은(Haeun)",
+        "text": "\"La presidenta... o sea, Seoyeon sunbae parece un poco diferente ultimamente.\""
     },
-    "day2_class_end_bell": {
-        "name": "Sistema",
-        "text": "- Din don dan don -"
+    "morning2_haeun_5": {
+        "name": "{name}",
+        "text": "\"Diferente como?\""
     },
-    "day2_class_end": {
-        "name": "Yo",
-        "text": "*¡Por fin la campana del almuerzo! El aula se llena de ruido al instante. Una avalancha de gente sale disparada hacia el comedor.*"
+    "morning2_haeun_6": {
+        "name": "하은(Haeun)",
+        "text": "\"Ella no suele ser asi. Acercarse a otro estudiante primero... llevo un ano observandola y es la primera vez.\""
     },
-    "day2_packing_up": {
+    "morning2_haeun_7": {
         "name": "Yo",
-        "text": "*Meto los libros en la mochila a toda prisa. Toco la nota en el bolsillo una vez más. 'Anexo de la biblioteca'... vale, vamos allá.*"
+        "text": "*Haeun hace una ligera reverencia y se va.*"
     },
-    "day2_lunch_decision": {
+    "morning2_end": {
         "name": "Yo",
-        "text": "*Es la hora de comer. ¿Hacia dónde me dirijo?*"
+        "text": "*Alguien que nunca se acerco a nadie primero en todo un ano... vino a mi primero? Que significa eso?*"
     }
 }

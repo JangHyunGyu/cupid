@@ -1,370 +1,270 @@
 {
-    "day4_arrive": {
+    "date_seo_1": {
         "name": "Moi",
-        "text": "*Je suis arrivé au point de rendez-vous. C'est encore un peu tôt.*"
+        "text": "*Devant la fontaine. Seoyeon est là, debout. Pas son uniforme habituel -- des vêtements décontractés. Un chemisier blanc et une jupe.*"
     },
-    "day4_arrive_nervous": {
+    "date_seo_2": {
         "name": "Moi",
-        "text": "*Mes mains sont moites au fond de mes poches. Pourquoi je stresse autant ? Allez, grande inspiration.*"
+        "text": "*On dirait une autre personne. Non -- c’est la même personne, mais un côté différent.*"
     },
-    "day4_arrive_people": {
+    "date_seo_compliment_choice": {
         "name": "Moi",
-        "text": "*J'ai jeté un œil autour de moi. Des couples qui marchent en riant, une famille qui mange des glaces, quelqu'un qui promène son chien.*"
-    },
-    "day4_arrive_phone": {
-        "name": "Moi",
-        "text": "*J'ai sorti mon téléphone pour vérifier l'heure. Quinze minutes d'avance sur le rendez-vous. Toujours aucun message.*"
-    },
-    "day4_arrive_look": {
-        "name": "Moi",
-        "text": "*Je vérifie discrètement mon reflet dans une vitrine. Ça passe ? ...Sûrement.*"
-    },
-    "day4_arrive_wait": {
-        "name": "Moi",
-        "text": "*C'est pas juste un rencard lambda. J'ai le pressentiment qu'après aujourd'hui, quelque chose va changer. Ça me noue la gorge.*"
-    },
-    "day4_heroine_arrive": {
-        "name": "Système",
-        "text": ""
-    },
-    "day4_meet_seoyeon": {
-        "name": "Seoyeon",
-        "text": "\"T'es déjà là ? Moins un point. Ça se voit trop que t'es venu en avance parce que t'avais hâte.\""
-    },
-    "day4_seoyeon_react": {
-        "name": "Moi",
-        "text": "*Seoyeon s'approche avec un sourire décontracté. La voir en dehors de l'école, l'ambiance est différente.*"
-    },
-    "day4_seoyeon_compliment": {
-        "name": "Moi",
-        "text": "*Qu'est-ce que je lui dis ?*",
+        "text": "*Qu’est-ce que je dis ?*",
         "choices": [
-            "\"T'es vraiment jolie aujourd'hui.\"",
-            "\"T'as l'air super radieuse aujourd'hui !\""
+            "\"Aujourd’hui tu es... jolie.\"",
+            "\"Tu as l’air radieuse aujourd’hui.\""
         ]
     },
-    "day4_seoyeon_blush": {
-        "name": "Seoyeon",
-        "text": "\"...Hein, comme ça, sans prévenir ? Ce genre de truc, faut annoncer avant. ...Merci.\""
-    },
-    "day4_seoyeon_happy": {
-        "name": "Seoyeon",
-        "text": "\"Évidemment. J'ai fait des efforts aujourd'hui. Au moins tu remarques, c'est pas pour rien.\""
-    },
-    "day4_meet_yuna_normal": {
-        "name": "Yuna",
-        "text": "\"...T'es là.\""
-    },
-    "day4_yuna_angry_greeting": {
-        "name": "Yuna",
-        "text": "\"...T'es là. Au fait, pourquoi t'as menti hier ?\""
-    },
-    "day4_yuna_react": {
+    "date_seo_pretty_high": {
         "name": "Moi",
-        "text": "*Yuna se tenait devant le café. En dehors de l'école, elle dégage une tout autre vibe.*"
+        "text": "*Seoyeon s’arrête un instant. -- Puis elle sourit. Pas avec ses lèvres, mais avec ses yeux.*"
     },
-    "day4_yuna_compliment": {
+    "date_seo_pretty_high_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Ce genre de phrase. Tu l’avais préparée ?\""
+    },
+    "date_seo_pretty_high_3": {
+        "name": "{name}",
+        "text": "\"C’est sorti tout seul.\""
+    },
+    "date_seo_pretty_high_4": {
         "name": "Moi",
-        "text": "*Qu'est-ce que je lui dis ?*",
+        "text": "*Elle m’a traité d’idiot, mais sa voix tremblait.*"
+    },
+    "date_seo_pretty_low": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Quoi, comme ça ? Préviens avant de dire ce genre de choses.\""
+    },
+    "date_seo_bright": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Évidemment. Aujourd’hui, j’ai fait un effort.\""
+    },
+    "date_seo_walk": {
+        "name": "Moi",
+        "text": "*On se promène dans le parc. On jette du pain aux canards.*"
+    },
+    "date_seo_duck": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Ces petites bêtes sont simples, c’est bien. Tu leur donnes du pain, ils suivent. Tu n’en donnes pas, ils ne viennent pas.\""
+    },
+    "date_seo_duck_2": {
+        "name": "{name}",
+        "text": "\"Les gens ne sont pas pareils ?\""
+    },
+    "date_seo_duck_3": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Les gens, parfois, ne viennent pas même quand tu leur donnes du pain.\""
+    },
+    "date_seo_duck_4": {
+        "name": "Moi",
+        "text": "*Ça semble anodin -- mais l’expérience de Seoyeon transparaît dans ces mots.*"
+    },
+    "date_seo_flower": {
+        "name": "Moi",
+        "text": "*On passe devant un fleuriste.*"
+    },
+    "date_seo_flower_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...On entre ?\""
+    },
+    "date_seo_succulent": {
+        "name": "Moi",
+        "text": "*Seoyeon choisit un petit pot. Une plante grasse.*"
+    },
+    "date_seo_succulent_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Celle-ci est facile à entretenir. Elle survit bien sans eau.\""
+    },
+    "date_seo_succulent_3": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Si tu arrives à la garder en vie. -- Sinon, je la reprends.\""
+    },
+    "date_seo_end": {
+        "name": "Moi",
+        "text": "*Un cadeau ou un test. -- Probablement les deux.*"
+    },
+    "date_yuna_1": {
+        "name": "Moi",
+        "text": "*Devant le café. Yuna est adossée au mur. Une robe noire et un petit sac bandoulière.*"
+    },
+    "date_yuna_2": {
+        "name": "Moi",
+        "text": "*Yuna avait toujours cette allure ? -- C’est la première fois que je la vois hors de son uniforme.*"
+    },
+    "date_yuna_compliment_choice": {
+        "name": "Moi",
+        "text": "*Qu’est-ce que je dis ?*",
         "choices": [
-            "\"T'as une autre aura aujourd'hui. T'es jolie.\"",
-            "\"T'attendais ? Désolé.\""
+            "\"Aujourd’hui tu es... jolie.\"",
+            "\"Tu as l’air radieuse aujourd’hui.\""
         ]
     },
-    "day4_yuna_blush": {
-        "name": "Yuna",
-        "text": "\"...C'est la première fois qu'on me dit ça. ...Merci.\""
-    },
-    "day4_yuna_cool": {
-        "name": "Yuna",
-        "text": "\"...Je viens d'arriver. On entre.\""
-    },
-    "day4_meet_dain": {
-        "name": "Dain",
-        "text": "\"Hé !! Ici !! Ici !!\""
-    },
-    "day4_dain_react": {
+    "date_yuna_pretty_high": {
         "name": "Moi",
-        "text": "*Dain agite la main en courant vers moi. La voir en dehors de l'école, c'est une autre ambiance.*"
+        "text": "*Yuna s’arrête un instant. Elle baisse légèrement la tête.*"
     },
-    "day4_dain_compliment": {
+    "date_yuna_pretty_high_2": {
+        "name": "유나(Yuna)",
+        "text": "\"...Ça.\""
+    },
+    "date_yuna_pretty_high_3": {
+        "name": "{name}",
+        "text": "\"Hm ?\""
+    },
+    "date_yuna_pretty_high_4": {
+        "name": "유나(Yuna)",
+        "text": "\"Redis-le.\""
+    },
+    "date_yuna_pretty_high_5": {
         "name": "Moi",
-        "text": "*Qu'est-ce que je lui dis ?*",
+        "text": "*Encore une fois ? -- Yuna demande un 'encore une fois.'*"
+    },
+    "date_yuna_pretty_low": {
+        "name": "유나(Yuna)",
+        "text": "\"...Personne ne m’a jamais dit ça.\""
+    },
+    "date_yuna_bright": {
+        "name": "유나(Yuna)",
+        "text": "\"...Je ne suis pas vraiment radieuse.\""
+    },
+    "date_yuna_bookstore": {
+        "name": "Moi",
+        "text": "*On se dirige vers une librairie. Yuna marche lentement entre les rayons.*"
+    },
+    "date_yuna_bookstore_2": {
+        "name": "유나(Yuna)",
+        "text": "\"Tu es déjà venu ici ?\""
+    },
+    "date_yuna_bookstore_3": {
+        "name": "유나(Yuna)",
+        "text": "\"...Tant mieux. C’est moi qui te l’ai montré en premier.\""
+    },
+    "date_yuna_earphone": {
+        "name": "Moi",
+        "text": "*Yuna me tend un de ses écouteurs.*"
+    },
+    "date_yuna_earphone_2": {
+        "name": "유나(Yuna)",
+        "text": "\"...Écoute.\""
+    },
+    "date_yuna_earphone_3": {
+        "name": "Moi",
+        "text": "*On dirait qu’il n’y a plus que nous deux au monde. -- Un petit univers créé par une seule paire d’écouteurs.*"
+    },
+    "date_yuna_oldbook": {
+        "name": "Moi",
+        "text": "*On passe devant une librairie d’occasion. Yuna s’arrête.*"
+    },
+    "date_yuna_oldbook_2": {
+        "name": "유나(Yuna)",
+        "text": "\"J’ai lu ce livre il y a un an. À l’époque, la fin me semblait triste.\""
+    },
+    "date_yuna_oldbook_3": {
+        "name": "{name}",
+        "text": "\"Et maintenant ?\""
+    },
+    "date_yuna_oldbook_4": {
+        "name": "유나(Yuna)",
+        "text": "\"...Maintenant, je le lis différemment.\""
+    },
+    "date_yuna_end": {
+        "name": "Moi",
+        "text": "*Yuna me regarde en disant cela. -- Dans ses yeux, c’est écrit 'grâce à toi.'*"
+    },
+    "date_dain_1": {
+        "name": "Moi",
+        "text": "*Devant le gymnase. Dain arrive en courant. Casquette et tenue de sport.*"
+    },
+    "date_dain_2": {
+        "name": "다인(Dain)",
+        "text": "\"T’es là !! T’as failli être en retard, non ?!\""
+    },
+    "date_dain_3": {
+        "name": "{name}",
+        "text": "\"Je suis arrivé dix minutes en avance.\""
+    },
+    "date_dain_4": {
+        "name": "다인(Dain)",
+        "text": "\"Moi j’étais là vingt minutes avant !!\""
+    },
+    "date_dain_compliment_choice": {
+        "name": "Moi",
+        "text": "*Ça devient un schéma récurrent maintenant.*",
         "choices": [
-            "\"T'es trop mignonne aujourd'hui.\"",
-            "\"L'entraînement s'est bien passé ?\""
+            "\"Aujourd’hui tu es... jolie.\"",
+            "\"Tu as l’air radieuse aujourd’hui.\""
         ]
     },
-    "day4_dain_blush": {
-        "name": "Dain",
-        "text": "\"Héhé... ! Sérieux ?! J'ai galéré grave pour choisir ma tenue !! Ouf, ça valait le coup~!!\""
-    },
-    "day4_dain_energy": {
-        "name": "Dain",
-        "text": "\"C'était parfait !! Je suis au top aujourd'hui !! Allez, on y go !!\""
-    },
-    "day4_meet_nurse": {
-        "name": "Infirmière",
-        "text": "\"Oh, t'es déjà là ? T'attends depuis longtemps ?\""
-    },
-    "day4_nurse_react": {
+    "date_dain_pretty_high": {
         "name": "Moi",
-        "text": "*L'infirmière me fait signe depuis l'entrée du musée. La voir en dehors de l'école, l'ambiance est complètement différente.*"
+        "text": "*Dain se fige. Ses yeux s’écarquillent. -- Puis elle enfonce sa casquette sur son visage.*"
     },
-    "day4_nurse_compliment": {
+    "date_dain_pretty_high_2": {
+        "name": "다인(Dain)",
+        "text": "\"Qu-- Qu’est-ce que c’est que ça tout d’un coup ?!\""
+    },
+    "date_dain_pretty_high_3": {
+        "name": "{name}",
+        "text": "\"C’est la vérité.\""
+    },
+    "date_dain_pretty_high_4": {
         "name": "Moi",
-        "text": "*Qu'est-ce que je lui dis ?*",
-        "choices": [
-            "\"Vous êtes vraiment belle aujourd'hui.\"",
-            "\"Vous voir en dehors de l'école, ça change tout.\""
-        ]
+        "text": "*Elle a dit qu’elle allait me frapper, mais sa voix tremblait.*"
     },
-    "day4_nurse_blush": {
-        "name": "Infirmière",
-        "text": "\"Hihi, merci. Aujourd'hui, tu me regardes en tant qu'homme, pas en tant qu'élève, pas vrai ?\""
+    "date_dain_pretty_low": {
+        "name": "다인(Dain)",
+        "text": "\"Hein ?! C’est quoi ça d’un coup !! ...Me-merci.\""
     },
-    "day4_nurse_smile": {
-        "name": "Infirmière",
-        "text": "\"C'est vrai, moi aussi je suis un peu nerveuse. Aujourd'hui, je suis juste moi. Pas l'infirmière.\""
+    "date_dain_bright": {
+        "name": "다인(Dain)",
+        "text": "\"Évidemment !! Aujourd’hui je suis au top !!\""
     },
-    "day4_meet_teacher": {
-        "name": "Professeure",
-        "text": "\"T'es là. Je pensais que tu serais en retard, t'es rapide finalement.\""
-    },
-    "day4_teacher_react": {
+    "date_dain_arcade": {
         "name": "Moi",
-        "text": "*La prof attendait devant le café. En civil, j'ai failli ne pas la reconnaître.*"
+        "text": "*On va à la salle d’arcade. On se met devant un jeu de rythme.*"
     },
-    "day4_teacher_compliment": {
+    "date_dain_arcade_2": {
+        "name": "다인(Dain)",
+        "text": "\"Allez, on parie !! Le perdant paie les boissons !!\""
+    },
+    "date_dain_arcade_3": {
+        "name": "다인(Dain)",
+        "text": "\"C’est pas drôle sans enjeu !!\""
+    },
+    "date_dain_rhythm": {
+        "name": "다인(Dain)",
+        "text": "\"Combo parfait !! T’as vu ?!\""
+    },
+    "date_dain_rhythm_2": {
+        "name": "{name}",
+        "text": "\"...Impressionnant.\""
+    },
+    "date_dain_rhythm_3": {
+        "name": "다인(Dain)",
+        "text": "\"Haha, évidemment !! Celui-là n’a pas besoin des genoux !!\""
+    },
+    "date_dain_knee": {
         "name": "Moi",
-        "text": "*Qu'est-ce que je lui dis ?*",
-        "choices": [
-            "\"Vous êtes vraiment jolie aujourd'hui.\"",
-            "\"L'ambiance du café est sympa.\""
-        ]
+        "text": "*'N’a pas besoin des genoux.' -- Elle l’a dit légèrement, mais il y a du poids derrière.*"
     },
-    "day4_teacher_blush": {
-        "name": "Professeure",
-        "text": "\"...Comme ça, de but en blanc, ça me déstabilise. Arrête.\""
-    },
-    "day4_teacher_casual": {
-        "name": "Professeure",
-        "text": "\"Hein ? Le café ici est top. On entre.\""
-    },
-    "day4_date_walk": {
+    "date_dain_knee_2": {
         "name": "Moi",
-        "text": "*On a marché côte à côte en discutant de tout et de rien. Une ambiance détendue, différente de l'école.*"
+        "text": "*On passe devant un magasin de sport. Dain s’arrête devant la vitrine. Des chaussures de volley sont exposées.*"
     },
-    "day4_date_talk_1": {
+    "date_dain_shop": {
+        "name": "다인(Dain)",
+        "text": "\"......\""
+    },
+    "date_dain_shop_2": {
+        "name": "{name}",
+        "text": "\"Dain ?\""
+    },
+    "date_dain_shop_3": {
+        "name": "다인(Dain)",
+        "text": "\"C’est rien ! On y va !\""
+    },
+    "date_dain_end": {
         "name": "Moi",
-        "text": "*Des trucs qu'on n'avait jamais pu se dire au lycée. Musique préférée, rêves d'enfance, petits hobbies.*"
-    },
-    "day4_date_talk_2": {
-        "name": "Moi",
-        "text": "*Plus on discute, plus la distance se réduit. Si seulement cet instant pouvait se figer.*"
-    },
-    "day4_date_weather": {
-        "name": "Moi",
-        "text": "*Une brise légère souffle. Des nuages de barbe à papa dérivent lentement dans le ciel.*"
-    },
-    "day4_date_surroundings": {
-        "name": "Moi",
-        "text": "*Des couples comme nous un peu partout dans la rue. Je me demande soudain : 'On a l'air comme eux aussi ?'*"
-    },
-    "day4_date_time_pass": {
-        "name": "Moi",
-        "text": "*J'ai sorti mon téléphone et une heure était déjà passée. On m'a volé le temps.*"
-    },
-    "day4_date_sunshine": {
-        "name": "Moi",
-        "text": "*Le soleil filtre à travers les feuilles et se pose sur le visage de la personne à côté de moi. ...C'est beau.*"
-    },
-    "day4_date_activity_branch": {
-        "name": "Système",
-        "text": ""
-    },
-    "day4_activity_seoyeon_1": {
-        "name": "Seoyeon",
-        "text": "\"Regarde là-bas. Un parterre de fleurs. On fait un tour.\""
-    },
-    "day4_activity_seoyeon_2": {
-        "name": "Moi",
-        "text": "*Seoyeon prend les devants naturellement et me fait signe de la main. Son visage quand elle se retourne au milieu des fleurs multicolores est rayonnant.*"
-    },
-    "day4_activity_seoyeon_3": {
-        "name": "Seoyeon",
-        "text": "\"Là-bas, des canards. On leur donne du pain ? J'en ai acheté au konbini en avance. Faut toujours être préparée, c'est ça être Seoyeon.\""
-    },
-    "day4_activity_seoyeon_4": {
-        "name": "Moi",
-        "text": "*On s'est assis côte à côte et on a lancé du pain aux canards. Quand ils ont trottiné vers nous, Seoyeon a éclaté de rire. Ce rire, j'adore.*"
-    },
-    "day4_activity_yuna_1": {
-        "name": "Yuna",
-        "text": "\"...Hé, on peut passer à la librairie ? Y a un livre que je veux lire.\""
-    },
-    "day4_activity_yuna_2": {
-        "name": "Moi",
-        "text": "*Dans la librairie, on a feuilleté des livres côte à côte. Quand Yuna choisit un livre, elle est tellement concentrée que j'ose pas la déranger.*"
-    },
-    "day4_activity_yuna_3": {
-        "name": "Yuna",
-        "text": "\"...Tu aimes cette chanson ? Tiens, écoute un côté.\""
-    },
-    "day4_activity_yuna_4": {
-        "name": "Moi",
-        "text": "*Yuna m'a tendu un de ses écouteurs. On a écouté la même musique, assis tout près. Son épaule effleurait la mienne.*"
-    },
-    "day4_activity_dain_1": {
-        "name": "Dain",
-        "text": "\"Hey hey hey, une salle d'arcade !! Là-bas !! On y va !!\""
-    },
-    "day4_activity_dain_2": {
-        "name": "Moi",
-        "text": "*Les yeux de Dain brillent, elle fonce dans l'arcade. Elle se plante devant un jeu de rythme avec un regard de défi.*"
-    },
-    "day4_activity_dain_3": {
-        "name": "Dain",
-        "text": "\"C'est le duel !! Celui qui perd paie la glace !! Hors de question que je perde !!\""
-    },
-    "day4_activity_dain_4": {
-        "name": "Moi",
-        "text": "*J'ai fini par perdre. Dain serre les deux poings en l'air en poussant un cri de victoire. J'ai perdu, mais vu sa tête, c'est pas si grave.*"
-    },
-    "day4_activity_nurse_1": {
-        "name": "Infirmière",
-        "text": "\"Ce tableau est magnifique, non ? Les couleurs sont tellement chaleureuses, je peux pas m'empêcher de le fixer.\""
-    },
-    "day4_activity_nurse_2": {
-        "name": "Moi",
-        "text": "*Le musée était calme et spacieux. On a marché lentement côte à côte en admirant les œuvres. Ce genre de moment, c'est précieux.*"
-    },
-    "day4_activity_nurse_3": {
-        "name": "Infirmière",
-        "text": "\"Quand j'étais étudiante, j'avais plein de rêves moi aussi. J'en ai toujours, mais ils ont changé de forme, c'est tout.\""
-    },
-    "day4_activity_nurse_4": {
-        "name": "Moi",
-        "text": "*Elle s'est arrêtée devant un tableau. Son profil à cet instant -- étrangement beau.*"
-    },
-    "day4_activity_teacher_1": {
-        "name": "Professeure",
-        "text": "\"Toi, après le diplôme, tu veux faire quoi ? T'as un rêve ?\""
-    },
-    "day4_activity_teacher_2": {
-        "name": "Moi",
-        "text": "*Assis face à face dans le café, on discute. La prof est plus douce que d'habitude.*"
-    },
-    "day4_activity_teacher_3": {
-        "name": "Professeure",
-        "text": "\"Moi non plus, quand j'étais étudiante, j'aurais jamais cru devenir prof. La vie fait jamais ce qu'on prévoit. Mais maintenant... c'est pas si mal.\""
-    },
-    "day4_activity_teacher_4": {
-        "name": "Moi",
-        "text": "*La prof a coupé un morceau de son gâteau et l'a posé sur mon assiette. \"Goûte, les desserts ici sont vraiment bons.\" Ce geste si naturel m'a fait battre le cœur.*"
-    },
-    "day4_activity_converge": {
-        "name": "Moi",
-        "text": "*Le temps file. C'est déjà presque l'heure du déjeuner.*"
-    },
-    "day4_date_lunch": {
-        "name": "Moi",
-        "text": "*On est entrés dans un café du coin. Assis face à face près de la fenêtre, mon cœur repart de plus belle.*"
-    },
-    "day4_lunch_menu": {
-        "name": "Moi",
-        "text": "*Je parcours le menu. Pâtes, sandwich, formule brunch.*"
-    },
-    "day4_lunch_order": {
-        "name": "Moi",
-        "text": "\"Moi je prends les pâtes. Tu veux quoi ?\""
-    },
-    "day4_lunch_order_react": {
-        "name": "Moi",
-        "text": "*L'autre a aussi fait son choix. Après la commande, un bref silence gêné s'installe.*"
-    },
-    "day4_lunch_awkward": {
-        "name": "Moi",
-        "text": "*Faudrait que je dise quelque chose. Mais quoi de naturel dans ce genre de moment ?*"
-    },
-    "day4_lunch_funny": {
-        "name": "Moi",
-        "text": "*Les plats sont arrivés. La portion de pâtes que j'ai commandée dépasse toute imagination. L'autre n'arrive plus à retenir son rire.*"
-    },
-    "day4_lunch_funny_react": {
-        "name": "Moi",
-        "text": "\"Pourquoi tu rigoles ! C'est largement dans mes cordes !\""
-    },
-    "day4_lunch_share": {
-        "name": "Moi",
-        "text": "*On a fini par partager nos plats. À chaque fois que nos fourchettes se croisent, un rire nous échappe.*"
-    },
-    "day4_date_lunch_talk": {
-        "name": "Moi",
-        "text": "*La conversation a fleuri. Rire ensemble, réfléchir ensemble. Alors c'est ça, le bonheur.*"
-    },
-    "day4_lunch_learn": {
-        "name": "Moi",
-        "text": "*Plus on parle, plus je découvre des facettes que je ne connaissais pas. Saison préférée, plats détestés, surnoms d'enfance. Ces petits détails me paraissent précieux.*"
-    },
-    "day4_date_lunch_choice": {
-        "name": "Moi",
-        "text": "*Et si j'abordais quelque chose de plus personnel ?*",
-        "choices": [
-            "\"En vrai... avant mon transfert, j'étais plutôt seul.\"",
-            "\"Depuis que je suis dans ce lycée, j'ai rencontré des gens vraiment géniaux.\""
-        ]
-    },
-    "day4_date_honest": {
-        "name": "Moi",
-        "text": "\"Le nouvel environnement me faisait flipper aussi, mais grâce à toi, maintenant chaque jour est un peu différent.\""
-    },
-    "day4_date_honest_react": {
-        "name": "Moi",
-        "text": "*L'autre a écouté mon histoire en silence. Un hochement de tête, un regard chaleureux. J'ai l'impression que ma sincérité est passée.*"
-    },
-    "day4_date_grateful": {
-        "name": "Moi",
-        "text": "\"Surtout... c'est maintenant, cet instant, qui me plaît le plus.\""
-    },
-    "day4_date_grateful_react": {
-        "name": "Moi",
-        "text": "*L'autre détourne légèrement le regard en souriant. C'est clair que ça lui fait plaisir.*"
-    },
-    "day4_date_response": {
-        "name": "Moi",
-        "text": "*Son regard s'est adouci. On dirait que quelque chose a connecté entre nous.*"
-    },
-    "day4_date_cafe_exit": {
-        "name": "Moi",
-        "text": "*En sortant du café, le soleil chaud de l'après-midi nous accueille. On dirait qu'on s'est rapprochés par rapport à tout à l'heure.*"
-    },
-    "day4_date_photo_moment": {
-        "name": "Moi",
-        "text": "*D'un coup, j'ai envie de garder cet instant.*",
-        "choices": [
-            "\"On prend une photo ensemble ?\"",
-            "*Je le garde dans ma mémoire.*"
-        ]
-    },
-    "day4_date_photo_yes": {
-        "name": "Moi",
-        "text": "*On s'est mis côte à côte pour un selfie. Deux personnes qui sourient sur l'écran. Une photo que je veux garder longtemps.*"
-    },
-    "day4_date_photo_no": {
-        "name": "Moi",
-        "text": "*Plus net que n'importe quelle photo, je grave ça dans ma mémoire. L'odeur du vent, la chaleur du soleil, le sourire de la personne à mes côtés.*"
-    },
-    "day4_date_ending_moment": {
-        "name": "Moi",
-        "text": "*On marchait côte à côte, et un silence s'est installé. Pas un silence gênant. Plutôt le genre de silence où on se sent bien sans avoir besoin de parler.*"
-    },
-    "day4_date_ending_feel": {
-        "name": "Moi",
-        "text": "*Aujourd'hui, on dirait un rêve. Après mon transfert, j'aurais jamais cru qu'une journée comme ça arriverait.*"
-    },
-    "day4_date_transition": {
-        "name": "Moi",
-        "text": "*Il reste encore l'après-midi. Ce rencard n'est pas terminé.*"
+        "text": "*Elle sourit. -- Mais ses yeux ne sourient pas.*"
     }
 }

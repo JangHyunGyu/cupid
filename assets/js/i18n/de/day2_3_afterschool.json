@@ -1,540 +1,235 @@
 {
-    "day2_afternoon_class": {
+    "after2_start": {
         "name": "Ich",
-        "text": "*Der oede Nachmittagsunterricht ist vorbei. Durch das Fenster taucht die Abendsonne das Klassenzimmer in Rot. Freizeit.*"
+        "text": "*Nach der Schule. Zwei Benachrichtigungen auf meinem Handy.*\n\nDain: \"Komm in die Turnhalle!! Heute wird's ernst!!\"\nSeoyeon: \"Kannst du zur Schuelerratskammer kommen? Uns fehlen Haende.\"\n\n*Nichts von Yuna. -- Das ist Yuna. Aber beim Packen meiner Tasche faellt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' fallen mir ins Auge.*"
     },
-    "day2_afternoon_nurse_skip": {
+    "after2_choice": {
         "name": "Ich",
-        "text": "*Ich oeffne die Augen im Krankenzimmerbett. Abenddaemmerung. Den ganzen Unterricht verpasst, aber nach dem tiefen Schlaf neben der Krankenschwester fuehle ich mich leicht.*"
-    },
-    "day2_after_school": {
-        "name": "Ich",
-        "text": "*Der Flur ist mir schon viel vertrauter als gestern. Mal schauen, wohin mich meine Fuesse tragen.*",
+        "text": "*Wohin soll ich gehen?*",
         "choices": [
-            "Zu Seoyeon gehen. Das Abendrot wuerde zu ihr passen.",
-            "Tiefer in Yunas Geheimnis eintauchen.",
-            "Das Maedchen vom mysterioesen Zettel suchen, Yuna.",
-            "Dain beim Training in der Turnhalle helfen.",
-            "Aus der lebhaften Turnhalle hoert man Dains Stimme.",
-            "Noch mehr mit der Krankenschwester reden, die mich gepflegt hat.",
-            "Zum Krankenzimmer. Der Medikamentengeruch zieht mich irgendwie an.",
-            "Zum Lehrerzimmer, wo die Klassenlehrerin ist."
+            "Zur Turnhalle (Dain)",
+            "Zur Schuelerratskammer (Seoyeon)",
+            "Am Bibliotheksanbau vorbeischauen (Yuna)"
         ]
     },
-    "day2_after_nurse_stay": {
+    "after2_dain_1": {
         "name": "Ich",
-        "text": "*Meine Schritte fuehren mich zurueck ins Krankenzimmer. Die Krankenschwester ist immer noch an ihrem Platz.*"
+        "text": "*Die Turnhalle. Dain macht Aufwaermuebungen vor dem Volleyballnetz.*"
     },
-    "day2_after_seoyeon": {
+    "after2_dain_2": {
+        "name": "다인(Dain)",
+        "text": "\"Du bist da?! Du bist spaet!!\""
+    },
+    "after2_dain_3": {
+        "name": "{name}",
+        "text": "\"Ich bin fuenf Minuten frueh dran.\""
+    },
+    "after2_dain_4": {
+        "name": "다인(Dain)",
+        "text": "\"Ich war zehn Minuten frueh dran!!\""
+    },
+    "after2_dain_5": {
         "name": "Ich",
-        "text": "*Schuelerratszimmer. Seoyeon und ich sitzen nebeneinander und sortieren Unterlagen. Ihre Stimme, wenn sie mir die Arbeit erklaert, ist ueberraschend ruhig und sanft.*"
+        "text": "*Das heisst, du warst frueh dran, nicht dass ich spaet bin.*"
     },
-    "day2_after_seoyeon_work": {
+    "after2_dain_6": {
+        "name": "다인(Dain)",
+        "text": "\"Also, die Wette! Fuenf Aufschlaege -- schaffst du drei oder mehr uebers Netz, gewinnst du! Wenn nicht, zahlst du heute Tteokbokki!\""
+    },
+    "after2_dain_7": {
+        "name": "{name}",
+        "text": "\"Tteokbokki aus dem Nichts?\""
+    },
+    "after2_dain_8": {
+        "name": "다인(Dain)",
+        "text": "\"Ich hab Hunger!!\""
+    },
+    "after2_dain_9": {
         "name": "Ich",
-        "text": "*Beim konzentrierten Arbeiten faerbt sich die Welt draussen in rotes Abendlicht. Im Schuelerratszimmer nur unser Atem und das Rascheln von Papier.*"
+        "text": "*Ich schlage auf. -- Ueberraschenderweise geht der zweite Aufschlag sauber uebers Netz.*"
     },
-    "day2_after_seoyeon_2": {
-        "name": "Seoyeon",
-        "text": "\"Puh... geschafft. {name}, echt danke. Du bist ueberraschend nuetzlich. ...Das war ein Kompliment, nimm's an.\""
+    "after2_dain_10": {
+        "name": "다인(Dain)",
+        "text": "*Mit grossen Augen* \"Huh? Ich wollte eigentlich locker spielen, aber das geht wohl nicht.\"\n\n*Dain geht in die Hocke. Ihre Augen haben sich veraendert.*\n\n\"Jetzt geb ich alles!\""
     },
-    "day2_after_seoyeon_3": {
+    "after2_dain_11": {
         "name": "Ich",
-        "text": "*Seoyeon streckt sich und laechelt leicht. Sie sieht muede aus, aber ihre Augen leuchten im Abendlicht klarer als sonst.*",
+        "text": "*Der Ballwechsel geht hin und her. Dains Bewegung ist -- eindeutig nicht gewoehnlich. Schnell, praezise, Muskelgedaechtnis in Aktion.*\n\n*Dieses Maedchen ist wirklich gut. Nicht nur 'mag Sport' gut -- sie bewegt sich wie jemand, der einmal alles darauf gesetzt hat.*\n\n*Endstand: 3 zu 2. Ich hab knapp gewonnen.*"
+    },
+    "after2_dain_12": {
+        "name": "다인(Dain)",
+        "text": "\"Aaaargh!! Verloren!! -- Aber du bist ganz gut?! Ich dachte du machst keinen Sport?!\""
+    },
+    "after2_dain_13": {
+        "name": "{name}",
+        "text": "\"Hab ich nie gesagt.\""
+    },
+    "after2_dain_14": {
+        "name": "다인(Dain)",
+        "text": "*Ehrlich ueberrascht* \"Was?! Wurde ich reingelegt?!\""
+    },
+    "after2_dain_15": {
+        "name": "{name}",
+        "text": "\"Ich hab dich nicht reingelegt -- du hast einfach nie gefragt.\""
+    },
+    "after2_dain_16": {
+        "name": "다인(Dain)",
+        "text": "*Boxt mir in die Schulter* \"Du Betrueger!! Hahaha -- aber das hat Spass gemacht!\""
+    },
+    "after2_dain_end": {
+        "name": "Ich",
+        "text": "*Ihre Augen haben Halbmondform. Dieselben Augen wie gestern. -- So sieht diese Person aus, wenn sie ehrlich Spass hat.*\n\n*Am Tteokbokki-Laden bei der Schule.*\n\n*Dain pustet auf ihr Tteokbokki und sagt:*\n\"Hey, du kannst wirklich Sport, oder?\"\n\n\"Ein bisschen.\"\n\n\"Ein 'bisschen' spielt nicht so! -- Gib's zu, du bist gut.\"\n\n\"{name} war viel besser.\"\n\n*Dain haelt die Staebchen an. Nur einen Moment.*\n\n\"...Natuerlich! Ich war Sportstipendiatin!\"\n\n*'War'. Vergangenheit. -- Irgendwas sagt mir, dass ich besser nicht frage.*\n\n\"Ahh das ist so scharf!! Wasser, Wasser!!\"\n\n*Das Thema hat gewechselt. -- Ob sie es absichtlich gewechselt hat oder es wirklich scharf war. Wahrscheinlich beides.*"
+    },
+    "after2_seo_1": {
+        "name": "Ich",
+        "text": "*Die Schuelerratskammer. Seoyeon sitzt hinter einem Stapel Dokumente. Allein.*"
+    },
+    "after2_seo_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Du bist wirklich gekommen. -- Ehrlich gesagt, hab ich nicht damit gerechnet.\""
+    },
+    "after2_seo_3": {
+        "name": "{name}",
+        "text": "\"Wenn man mich ruft, komme ich.\""
+    },
+    "after2_seo_4": {
+        "name": "서연(Seoyeon)",
+        "text": "*Mit einem leichten Laecheln* \"Folgsam.\""
+    },
+    "after2_seo_5": {
+        "name": "{name}",
+        "text": "\"Du warst diejenige, die um Hilfe gebeten hat.\""
+    },
+    "after2_seo_6": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Ich hab nicht gebeten -- ich hab dir eine Gelegenheit gegeben.\""
+    },
+    "after2_seo_7": {
+        "name": "Ich",
+        "text": "*Das Wort 'bitten' scheint im Vokabular dieser Person nicht zu existieren.*\n\n*Ich fange an, Dokumente zu sortieren. Veranstaltungsbudgets, Vereinsantraege. Es ist ziemlich viel.*"
+    },
+    "after2_seo_8": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Die hier nach Datum, die da nach Verein. -- Kannst du gut organisieren?\"\n\n\"{name}: Nicht super, aber auch nicht schlecht.\"\n\n\"Vage.\"\n\n\"{name}: Wie deine Komplimente. Die sind auch vage.\"\n\n*Seoyeon schaut von den Dokumenten hoch.*\n\n\"...Du bist ueberraschend nuetzlich.\"\n\n\"{name}: Ist das ein Kompliment?\"\n\n\"Ist ein Kompliment. Nimm's an.\""
+    },
+    "after2_seo_choice1": {
+        "name": "Ich",
+        "text": "*Es direkt ein Kompliment zu nennen. -- Das scheint selten fuer jemanden wie sie.*\n\n*Beim Sortieren dreht Seoyeon ihren Nacken. Scheint verspannt zu sein.*",
         "choices": [
-            "Seoyeon, warum nimmst du alles so ernst?",
-            "Jetzt ist aber Pause. Ich bring dich nach Hause.",
-            "Du bist total verspannt. Warte, halt kurz still."
+            "\"Der Sonnenuntergang ist wunderschoen. -- Oh, ich meinte draussen, nicht dich.\"",
+            "\"Hast du Nackenschmerzen? Mach mal Pause.\""
         ]
     },
-    "day2_seoyeon_why": {
-        "name": "Seoyeon",
-        "text": "\"Warum? ...Weil es jemand tun muss. Und wenn ich mein Bestes gebe, wird zumindest eine Sache besser, denke ich.\""
-    },
-    "day2_seoyeon_home_high": {
-        "name": "Seoyeon",
-        "text": "\"Wirklich...? *Seoyeon greift sanft nach meinem Arm.* Ich wollte eigentlich mit {name} zusammen gehen. ...Das Abendrot heute ist echt schoen.\""
-    },
-    "day2_seoyeon_home": {
-        "name": "Seoyeon",
-        "text": "\"Du bringst mich nach Hause? ...Aeh, ja, waer nett von dir.\""
-    },
-    "day2_seoyeon_home_low": {
-        "name": "Seoyeon",
-        "text": "\"Schon okay, ich kann alleine gehen. Danke fuer die Hilfe heute.\""
-    },
-    "day2_seoyeon_massage_high": {
-        "name": "Seoyeon",
-        "text": "\"Mmh... *Seoyeon schliesst die Augen und ueberlaesst sich mir.* Das tut gut... Wusste nicht, dass deine Haende so warm sind. ...Noch ein bisschen.\""
-    },
-    "day2_seoyeon_massage": {
-        "name": "Seoyeon",
-        "text": "\"Ah...! So ploetzlich...! *Sie zuckt zusammen, entspannt sich dann aber und schliesst die Augen.* ...Tut gut. Danke.\""
-    },
-    "day2_seoyeon_massage_low": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon weicht hastig zurueck.* \"Was soll das auf einmal? Ist mir unangenehm.\""
-    },
-    "day2_seoyeon_night_talk": {
-        "name": "Seoyeon",
-        "text": "\"{name}... danke fuer heute. Wenn ich mit dir zusammen bin, vergesse ich alles Anstrengende. Wollen wir morgen wieder zusammen zu Mittag essen?\""
-    },
-    "day2_seoyeon_dain_encounter": {
+    "after2_seo_sunset_joke": {
         "name": "Ich",
-        "text": "*Als Seoyeon und ich das Schuelerratszimmer verlassen, treffen wir im Flur auf jemanden.*"
+        "text": "*Seoyeon haelt einen Moment inne. Und dann -- lacht sie. Nicht nur die Lippen, sondern die Augen. Ein Laecheln, das ich noch nie gesehen habe.*"
     },
-    "day2_seoyeon_dain_met": {
-        "name": "Dain",
-        "text": "\"Oh?! Der vom Kiosk vorhin!! Das ist doch {name}!! Wow, du haengst mit der Schulsprecherin ab?!\""
+    "after2_seo_sunset_react": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Du bist der erste Mensch, der so etwas Kitschiges so natuerlich sagt.\"\n\n*Ihre Augen laechelten. -- Nicht das eingeuebt Laecheln, bei dem sich nur die Mundwinkel heben, sondern ein echtes. Das laenger als drei Sekunden dauerte, nicht nur eine halbe.*"
     },
-    "day2_seoyeon_dain_new": {
-        "name": "???",
-        "text": "\"Hey?! Du bist der Neue, oder?! Wow, schon so dicke mit der Schulsprecherin?!\""
+    "after2_seo_neck_worry": {
+        "name": "서연(Seoyeon)",
+        "text": "\"Geht schon. Das ist alltaeglich.\""
     },
-    "day2_seoyeon_dain_react": {
-        "name": "Seoyeon",
-        "text": "\"*Seoyeon ist minimal aus dem Konzept gebracht.* ...Dain Jung? Hi. Wir waren gerade fertig und wollten los.\""
+    "after2_seo_neck_react": {
+        "name": "Ich",
+        "text": "*Seoyeon rollt ihre Schultern. Ich hoere es knacken.*"
     },
-    "day2_seoyeon_dain_choice": {
-        "name": "Dain",
-        "text": "\"Ach so?! Ich bin auch gerade vom Training fertig!! {name}, naechstes Mal haengst du mit mir ab, ja~!!\"",
+    "after2_seo_9": {
+        "name": "Ich",
+        "text": "*Der Sonnenuntergang taucht die Schuelerratskammer in Licht. Die Papierarbeit ist fast fertig.*"
+    },
+    "after2_seo_choice2": {
+        "name": "Ich",
+        "text": "*Die Papierarbeit ist fast fertig.*",
         "choices": [
-            "Klar, naechstes Mal bestimmt!",
-            "Heute hab ich was mit Seoyeon vor, also...",
-            "*Grinsend* Am liebsten wuerde ich euch beide treffen?"
+            "\"Soll ich noch ein bisschen bleiben? Scheint noch was uebrig zu sein\"",
+            "\"Wenn wir fertig sind, geh ich\""
         ]
     },
-    "day2_seoyeon_dain_yes": {
-        "name": "Dain",
-        "text": "\"Abgemacht!! Dann bis morgen, {name}!!\""
-    },
-    "day2_seoyeon_dain_no": {
-        "name": "Dain",
-        "text": "\"Ey~ das ist gemein!! Naechstes Mal musst du aber!!\""
-    },
-    "day2_seoyeon_dain_both": {
+    "after2_seo_stay": {
         "name": "Ich",
-        "text": "*Im selben Moment erstarren Seoyeon und Dain gleichzeitig. Hab ich schon wieder auf eine Tretmine getreten...*"
+        "text": "*Seoyeon legt die Dokumente ab und schaut aus dem Fenster. Das Licht des Sonnenuntergangs beruehrt ihr Gesicht.*"
     },
-    "day2_seoyeon_dain_both_2": {
-        "name": "Dain",
-        "text": "\"...Was, beide?! Wie meinst du das?!\""
+    "after2_seo_stay_2": {
+        "name": "서연(Seoyeon)",
+        "text": "\"...Ich mag diese Zeit. Wenn ich allein in der Schuelerratskammer bin, muss ich keine Rolle spielen.\""
     },
-    "day2_seoyeon_dain_both_3": {
-        "name": "Seoyeon",
-        "text": "\"*Seoyeon laechelt kuehl.* {name} ist wirklich beliebt, hm? Scheint der Typ zu sein, der ueberall 'Ja' sagt.\""
+    "after2_seo_stay_3": {
+        "name": "{name}",
+        "text": "\"Selbst die Schuelerratspraesidentin ruht sich mal aus?\"\n\nSeoyeon: \"Nie. -- Ausser hier.\"\n\n*'Ausser hier.' -- Ob Dach oder Schuelerratskammer, Seoyeon ist jemand, der einen Ort braucht, an dem sie die Maske abnehmen kann.*"
     },
-    "day2_seoyeon_dain_both_4": {
-        "name": "Dain",
-        "text": "\"Ey, die Schulsprecherin auch!! Aber stimmt schon!! {name}, so verlierst du am Ende beide?!\""
-    },
-    "day2_seoyeon_dain_both_5": {
+    "after2_seo_leave": {
         "name": "Ich",
-        "text": "*Beide mustern sich gegenseitig und schauen dann mich an. Die Stimmung ist merklich abgekuehlt...*"
+        "text": "*Seoyeon nickt.*"
     },
-    "day2_seoyeon_dain_end": {
+    "after2_seo_end": {
         "name": "Ich",
-        "text": "*Dain winkt zum Abschied und geht. Seoyeons Ausdruck ist aus irgendeinem Grund leicht erstarrt.*"
+        "text": "*Ich verlasse die Schuelerratskammer. Der Sonnenuntergang faerbt den Flur.*"
     },
-    "day2_seoyeon_contact_ask": {
-        "name": "Seoyeon",
-        "text": "\"Ach stimmt. Ich hab noch gar nicht nach deiner Nummer gefragt. Mir fallen staendig Sachen ein, die ich dir sagen will... gibst du mir deine Nummer?\"",
+    "after2_yuna_1": {
+        "name": "Ich",
+        "text": "*Von Yuna kam keine Nachricht. Aber meine Fuesse gehen Richtung Bibliothek. Warum? -- Weiss nicht genau. Vielleicht wegen dem Morgenzettel.*\n\n*Der Flur des Anbaus. Keine Menschenseele. -- Die Tuer zum geheimen Leseraum steht einen Spalt offen.*"
+    },
+    "after2_yuna_2": {
+        "name": "Ich",
+        "text": "*Ich schleiche mich rein. Yuna sitzt auf dem Sofa und liest. Der Sonnenuntergang stroemt durchs Fenster.*\n\n*Yuna schaut hoch. Sie ist nicht ueberrascht.*"
+    },
+    "after2_yuna_3": {
+        "name": "유나(Yuna)",
+        "text": "\"...Du bist gekommen.\""
+    },
+    "after2_yuna_4": {
+        "name": "{name}",
+        "text": "\"Du hast mich nicht gerufen.\""
+    },
+    "after2_yuna_5": {
+        "name": "유나(Yuna)",
+        "text": "\"Muss ich dich rufen, damit du kommst?\""
+    },
+    "after2_yuna_6": {
+        "name": "Ich",
+        "text": "*Eine subtil geladene Frage. -- Aber da ist ein Hinweis, dass sie gewartet hat.*"
+    },
+    "after2_yuna_7": {
+        "name": "{name}",
+        "text": "\"Die Tuer war offen.\""
+    },
+    "after2_yuna_8": {
+        "name": "유나(Yuna)",
+        "text": "\"...Zufaellig.\"\n\n*Eine zufaellig offene Tuer. -- Yunas 'zufaellig' ist gleichbedeutend mit 'absichtlich'.*\n\n*Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrhoerer.*\n\n\"Hoer zu.\"\n\n*Ein ruhiges Klavierstueck ertönt. Der Sonnenuntergang faerbt den Raum.*"
+    },
+    "after2_yuna_9": {
+        "name": "Ich",
+        "text": "*Yuna liest ihr Buch, und ich hoere die Musik. Keine Worte. -- Ueberhaupt nicht unangenehm.*"
+    },
+    "after2_yuna_choice": {
+        "name": "유나(Yuna)",
+        "text": "*Nach einer langen Weile* \"...Jemand, der nach der Schule hierher kommt.\"\n\n\"{name}: Hm?\"\n\n\"Gab's seit diesem Sunbae nicht mehr.\"\n\n*Yuna hat zwei Saetze gesagt. -- Fuer sie ist das dasselbe wie 'danke'.*",
         "choices": [
-            "Klar, schreib mir jederzeit. Hier meine Nummer.",
-            "Sorry, die Nummer kommt erst, wenn wir uns besser kennen."
+            "\"Soll ich jeden Tag kommen?\"",
+            "\"Es ist schoen, weil es ruhig ist\""
         ]
     },
-    "day2_seoyeon_contact_success": {
-        "name": "Seoyeon",
-        "text": "\"Danke. Dann schreib ich dir wirklich, ja? Mach dich auf was gefasst. Bis dann, {name}.\""
-    },
-    "day2_seoyeon_contact_fail": {
-        "name": "Seoyeon",
-        "text": "\"...Okay, verstehe. War ich zu voreilig? Sorry. Bis morgen in der Schule.\""
-    },
-    "day2_after_yuna": {
+    "after2_yuna_everyday": {
         "name": "Ich",
-        "text": "*Bibliotheksanbau. Kuehle Luft umfaengt mich, als ich das alte Gebaeude betrete.*"
+        "text": "*Yuna spielt mit dem Ohrhoererkabel.*"
     },
-    "day2_after_yuna_met": {
-        "name": "Yuna",
-        "text": "\"...Da bist du ja. Komm mit. Ich zeig dir was.\""
+    "after2_yuna_everyday_react": {
+        "name": "유나(Yuna)",
+        "text": "\"...Komm, wenn du willst. Ich halt dich nicht auf.\"\n\n*'Ich halt dich nicht auf.' -- In Yunas Sprache uebersetzt heisst das 'bitte komm'.*"
     },
-    "day2_after_yuna_new": {
-        "name": "???",
-        "text": "\"Du... bist hergekommen, weil du wissen willst, wer ich bin, oder? Diese Schule hat ein ziemlich tiefes Geheimnis.\""
+    "after2_yuna_quiet": {
+        "name": "유나(Yuna)",
+        "text": "\"...Deshalb mag ich diesen Ort.\""
     },
-    "day2_after_yuna_new_name_ask": {
-        "name": "Yuna",
-        "text": "\"Ich bin Yuna. Und du?\""
-    },
-    "day2_after_yuna_new_name_share": {
+    "after2_yuna_quiet_react": {
         "name": "Ich",
-        "text": "\"Ich bin {name}.\""
+        "text": "*Yunas Lippen heben sich ganz leicht.*\n\n*Yunas Laecheln ist eine seltene Spezies. Nicht viele Menschen haben es gesehen.*"
     },
-    "day2_after_yuna_new_follow": {
-        "name": "Yuna",
-        "text": "\"{name}... merk ich mir. Komm mit. Das zeig ich nur dir.\""
-    },
-    "day2_after_yuna_follow_again": {
+    "after2_yuna_end": {
         "name": "Ich",
-        "text": "*Ich folge Yuna zurueck in den Keller. Die Luft ist kaelter als vorhin. Abendsonnenlicht sickert schwach durchs Fenster.*"
-    },
-    "day2_after_yuna_follow_new": {
-        "name": "Ich",
-        "text": "*Ich folge Yuna in den Keller. Verstaubter Raum mit einer seltsamen Kaelte. Abendsonnenlicht schafft es kaum durchs Fenster.*"
-    },
-    "day2_after_yuna_3_pre_again": {
-        "name": "Yuna",
-        "text": "\"Die Muster von vorhin... im Abendlicht sehen sie noch unheimlicher aus, oder?\""
-    },
-    "day2_after_yuna_3_pre_new": {
-        "name": "Yuna",
-        "text": "\"Schau, {name}. Die Muster an der Wand... sie stimmen mit dem ueberein, was ich verfolgt habe.\""
-    },
-    "day2_after_yuna_3": {
-        "name": "Ich",
-        "text": "*Yuna deutet mit dem Finger auf einen Spalt in der Wand. Ein bizarres Augensymbol ist in Rot eingeritzt.*",
-        "choices": [
-            "Was bedeutet das?",
-            "*Yunas Hand nehmend* Mir ist mulmig, lass uns gehen.",
-            "Dieses Auge... es fuehlt sich an, als wuerde es uns beobachten."
-        ]
-    },
-    "day2_yuna_meaning": {
-        "name": "Yuna",
-        "text": "\"Ueberwachung... oder Schutz. Fuer wen, weiss ich noch nicht.\""
-    },
-    "day2_yuna_scary_high": {
-        "name": "Yuna",
-        "text": "*Yuna drueckt meine Hand fest.* \"...Deine Hand ist warm. Lange nicht gespuert, solche Waerme. Lass uns gehen. Aber... lass nicht los.\""
-    },
-    "day2_yuna_scary": {
-        "name": "Yuna",
-        "text": "\"...Warm. Okay. Fuer heute reicht es.\""
-    },
-    "day2_yuna_scary_low": {
-        "name": "Yuna",
-        "text": "*Yuna schuettelt kalt meine Hand ab.* \"Warum fasst du mich ploetzlich an? Ganz schoen dreist fuer einen Angsthasen. Wenn du raus willst, geh alleine.\""
-    },
-    "day2_yuna_eye": {
-        "name": "Yuna",
-        "text": "\"...Das Licht ist gleich. Diese Schule ist vielleicht ein Gefaengnis oder ein Labor. Wir werden darin auf irgendeine Weise getestet.\""
-    },
-    "day2_yuna_night_talk": {
-        "name": "Yuna",
-        "text": "\"Das ist kein simples Graffiti. Es haengt mit dem Gruendungszweck dieser Schule zusammen. {name}, du hast dich bereits auf einen Weg begeben, von dem es kein Zurueck gibt.\""
-    },
-    "day2_yuna_nurse_encounter": {
-        "name": "Ich",
-        "text": "*Als Yuna und ich den Abstellraum verlassen, treffen wir im Flur auf jemanden.*"
-    },
-    "day2_yuna_nurse_met": {
-        "name": "Krankenschwester",
-        "text": "\"Oh, {name}? Was machst du um diese Zeit hier? ...Und wer ist die Schuelerin?\""
-    },
-    "day2_yuna_nurse_new": {
-        "name": "???",
-        "text": "\"Oh? Was machen Schueler um diese Zeit hier? Der alte Abstellraum ist gefaehrlich... Ach, ich bin die Krankenschwester.\""
-    },
-    "day2_yuna_nurse_react": {
-        "name": "Yuna",
-        "text": "\"*Yuna sagt kuehl.* ...Wir sind nur vorbeigekommen.\""
-    },
-    "day2_yuna_nurse_choice": {
-        "name": "Krankenschwester",
-        "text": "\"*Mustert Yuna vielsagend.* ...Ach so? Hehe, seid vorsichtig. An dunklen Orten lauern gefaehrliche Dinge.\"",
-        "choices": [
-            "*Yunas Hand nehmend* Ja, wir passen auf.",
-            "Wir haben nur einen Spaziergang gemacht, Frau Krankenschwester.",
-            "*Schweigend nur kurz nicken.*"
-        ]
-    },
-    "day2_yuna_nurse_protect": {
-        "name": "Yuna",
-        "text": "\"*Yuna drueckt meine Hand leicht.* ...Danke.\""
-    },
-    "day2_yuna_nurse_excuse": {
-        "name": "Krankenschwester",
-        "text": "\"Ach ja? Hehe, spaziert das naechste Mal lieber an helleren Orten.\""
-    },
-    "day2_yuna_nurse_silent": {
-        "name": "Krankenschwester",
-        "text": "\"*Sie mustert uns mit einem vielsagenden Blick und geht dann weiter.*\""
-    },
-    "day2_yuna_nurse_end": {
-        "name": "Yuna",
-        "text": "\"...Die ist komisch. Keine gewoehnliche Krankenschwester. {name}, sei vorsichtig.\""
-    },
-    "day2_yuna_contact_ask": {
-        "name": "Yuna",
-        "text": "\"Um ein Geheimnis zu teilen... brauchen wir einen Kommunikationsweg. Deine Nummer, schreib sie hier hin.\"",
-        "choices": [
-            "Klar. Ich will mehr ueber dich erfahren.",
-            "Sorry, ich bin da noch etwas vorsichtig."
-        ]
-    },
-    "day2_yuna_contact_success": {
-        "name": "Yuna",
-        "text": "\"...Gut. Jetzt sind wir verbunden. Wenn ich rufe, kommst du.\""
-    },
-    "day2_yuna_contact_fail": {
-        "name": "Yuna",
-        "text": "\"...Okay. Ich zwinge niemanden. Denk nur daran, dass solche Gelegenheiten nicht oft kommen.\""
-    },
-    "day2_after_dain": {
-        "name": "Ich",
-        "text": "*Turnhallentuer auf, und Kampfschreie und das Aufprallen von Volleybaellen stroemen heraus.*"
-    },
-    "day2_after_dain_met": {
-        "name": "Dain",
-        "text": "\"Oh!! {name}!! Perfektes Timing!! Hilf mir beim Training!! Bitte!!\""
-    },
-    "day2_after_dain_practice": {
-        "name": "Ich",
-        "text": "*Beim Helfen mit Dains Spike-Training bin ich komplett durchgeschwitzt. Draussen wird es bereits daemmerig.*"
-    },
-    "day2_after_dain_new": {
-        "name": "???",
-        "text": "\"Hah, hah... du hast voll die Power!! Wir sehen uns zum ersten Mal, aber wir harmonieren mega gut!!\""
-    },
-    "day2_after_dain_new_name_ask": {
-        "name": "???",
-        "text": "\"Ich bin Dain Jung aus der 2-3!! Und du?!\""
-    },
-    "day2_after_dain_new_name_share": {
-        "name": "Ich",
-        "text": "\"Ich bin {name}, auch aus der 2-3.\""
-    },
-    "day2_after_dain_3": {
-        "name": "Ich",
-        "text": "*Dain wischt sich mit dem Handtuch den Schweiss ab und reicht mir ein kuehles Getraenk.*",
-        "choices": [
-            "Nur weil Dains Zuspiel so gut war. Ich hab nur draufgehauen.",
-            "Was? Ich hab mich zurueckgehalten! Naechstes Mal fordern wir uns richtig!",
-            "Nach dem Sport gibt's nix Besseres als Tteokbokki, oder?!"
-        ]
-    },
-    "day2_dain_praise": {
-        "name": "Dain",
-        "text": "\"Ey, so bescheiden!! Du warst echt gut! Auf jeden Fall, danke fuer heute, das Training war top!!\""
-    },
-    "day2_dain_match": {
-        "name": "Dain",
-        "text": "\"Oh?! Selbstbewusst?! Deal, wetten wir! Verlierer zahlt Tteokbokki!! Ich verlier auf keinen Fall!!\""
-    },
-    "day2_dain_food": {
-        "name": "Dain",
-        "text": "\"Stimmt!! Du hast Ahnung!! Tteokbokki mit frittierten Beilagen dazu... ahhh, allein der Gedanke macht gluecklich!!\""
-    },
-    "day2_dain_night_talk": {
-        "name": "Dain",
-        "text": "\"Wow!! Du bist echt mega motiviert!! Wuerd dich am liebsten in unser Team holen!! Komm gut heim, {name}!!\""
-    },
-    "day2_dain_yuna_encounter": {
-        "name": "Ich",
-        "text": "*Da laeuft jemand am Turnhallenfenster vorbei. Ein blasses Maedchen geht leise den Flur entlang.*"
-    },
-    "day2_dain_yuna_spot": {
-        "name": "Dain",
-        "text": "\"*Dain schaut raus und zuckt leicht zusammen.* D-die da... ist die nicht irgendwie creepy?! Die laeuft staendig alleine so rum...!!\""
-    },
-    "day2_dain_yuna_choice": {
-        "name": "Ich",
-        "text": "*Dain scheint beim Anblick von Yuna etwas nervoes zu sein.*",
-        "choices": [
-            "Yuna? Ach, die ist einfach nur still. Keine Sorge.",
-            "Weiss nicht, seh ich auch zum ersten Mal.",
-            "Du bist viel strahlender und cooler, Dain."
-        ]
-    },
-    "day2_dain_yuna_know": {
-        "name": "Dain",
-        "text": "\"Was?! Du kennst die?! Wow, {name}, du bist mit allen moeglichen Leuten befreundet! Aber ich bin deine Beste, oder?! Oder?!\""
-    },
-    "day2_dain_yuna_unknown": {
-        "name": "Dain",
-        "text": "\"Oder?! Die hat so eine andere Aura... Jedenfalls, wenn du mit mir zusammen bist, vergiss solche Sachen!! Konzentrier dich auf mich!!\""
-    },
-    "day2_dain_yuna_compliment": {
-        "name": "Dain",
-        "text": "\"Ey, was sagst du da so ploetzlich~!! *Wird rot und haut mir auf die Schulter.* Fast haett mein Herz ausgesetzt!! ...Wegen dem Kompliment!! Nicht aus anderen Gruenden!!\""
-    },
-    "day2_dain_yuna_end": {
-        "name": "Ich",
-        "text": "*Yuna verschwindet in der Ferne. Dain scheint noch etwas beunruhigt, aber findet schnell zurueck zu ihrem strahlenden Ausdruck.*"
-    },
-    "day2_dain_contact_ask": {
-        "name": "Dain",
-        "text": "\"{name}!! Wir sehen uns doch ab jetzt staendig!! Nummern tauschen ist Pflicht!! Gib mir deine Nummer!!\"",
-        "choices": [
-            "Klar, logisch! Hier meine Nummer.",
-            "Wir sehen uns doch morgen in der Schule, oder?"
-        ]
-    },
-    "day2_dain_contact_success": {
-        "name": "Dain",
-        "text": "\"Okay, gespeichert!! Ab jetzt ruf ich dich an, wenn mir langweilig ist?! Mach dich auf was gefasst!!\""
-    },
-    "day2_dain_contact_fail": {
-        "name": "Dain",
-        "text": "\"Pah, spielst du dich auf?! Okay!! Komm morgen in die Turnhalle, ich lass dich nicht gehen, bis du mir deine Nummer gibst!!\""
-    },
-    "day2_after_nurse": {
-        "name": "Ich",
-        "text": "*Oeffne die Krankenzimmertuer. Dezenter Kraeuterduft empfaengt mich, und die Krankenschwester sitzt lesend an ihrem Platz.*"
-    },
-    "day2_after_nurse_met": {
-        "name": "Krankenschwester",
-        "text": "\"Oh, {name}. Schon wieder da? Ob du krank bist oder mich sehen willst... was ist es?\""
-    },
-    "day2_after_nurse_met_high": {
-        "name": "Krankenschwester",
-        "text": "*Laechelt sanft.* \"Hehe, {name}. Wenn du so oft kommst, freue ich mich insgeheim schon drauf. Komm rein.\""
-    },
-    "day2_after_nurse_met_check": {
-        "name": "Krankenschwester",
-        "text": "\"Oh, {name}. Nach Schulschluss ins Krankenzimmer... geht's dir nicht gut?\""
-    },
-    "day2_after_nurse_met_low": {
-        "name": "Krankenschwester",
-        "text": "*Sagt desinteressiert.* \"...{name}, schon wieder? Was ist los.\""
-    },
-    "day2_after_nurse_invited": {
-        "name": "Krankenschwester",
-        "text": "\"Hehe, {name}. Unsere Verabredung heute Abend... nicht vergessen, oder? Wenn du schon angelaufen kommst, bin ich ja richtig geruehrt.\""
-    },
-    "day2_after_nurse_new": {
-        "name": "Krankenschwester",
-        "text": "\"Oh, ein neues Gesicht? Der Neue? Ich bin die Krankenschwester. Hehe, freut mich.\""
-    },
-    "day2_after_nurse_new_name_ask": {
-        "name": "Krankenschwester",
-        "text": "\"Wie heisst du? Verraetst du's nur mir?\""
-    },
-    "day2_after_nurse_new_name_share": {
-        "name": "Ich",
-        "text": "\"Mein Name ist {name}.\""
-    },
-    "day2_after_nurse_3": {
-        "name": "Ich",
-        "text": "*Sie rueckt ihre Brille zurecht und mustert mich aufmerksam.*",
-        "choices": [
-            "Ich bin gekommen, weil ich Sie vermisst habe.",
-            "Wollte einfach kurz in Ruhe entspannen.",
-            "Der Duft in diesem Raum ist einfach zu gut."
-        ]
-    },
-    "day2_nurse_miss": {
-        "name": "Krankenschwester",
-        "text": "\"Hehe, Ehrlichkeit mag ich. So einem ehrlichen Schueler muss man eine Belohnung geben, nicht wahr?\""
-    },
-    "day2_nurse_miss_normal": {
-        "name": "Krankenschwester",
-        "text": "\"Hehe, ehrlich zu sein ist gut, aber... einer Lehrerin sowas sagen fuehrt zu Missverstaendnissen, {name}. Aber suess bist du schon.\""
-    },
-    "day2_nurse_miss_low": {
-        "name": "Krankenschwester",
-        "text": "*Schaut kuehl ueber den Brillenrand.* \"...So weit sind wir noch nicht, oder? Spass muss auch Grenzen haben. Ruh dich heute einfach nur aus.\""
-    },
-    "day2_nurse_rest": {
-        "name": "Krankenschwester",
-        "text": "\"Ach ja? Leg dich drueben aufs Bett. Ich stoer dich nicht.\""
-    },
-    "day2_nurse_aroma": {
-        "name": "Krankenschwester",
-        "text": "\"Oh, gutes Auge. Das ist ein Aromaoel, das ich selbst gemischt habe. Beruhigt die Seele.\""
-    },
-    "day2_nurse_night_talk": {
-        "name": "Krankenschwester",
-        "text": "*Laechelt sanft und streichelt mir ueber den Kopf.* \"Hehe, du bist also gekommen, weil du mehr Zeit mit mir verbringen willst? Na gut, heute bleibe ich ausnahmsweise etwas laenger bei dir.\""
-    },
-    "day2_nurse_night_talk_2": {
-        "name": "Ich",
-        "text": "*Beim gemuetlichen Plaudern mit der Krankenschwester ist es draussen stockdunkel geworden. Schade, aber ich nehme mir den naechsten Besuch vor und verlasse die Schule.*"
-    },
-    "day2_nurse_contact_already_have_talk": {
-        "name": "Krankenschwester",
-        "text": "\"{name}, wir haben doch schon unsere Nummern? Wenn du Zeit hast, meld dich unbedingt. Ich warte.\"",
-        "choices": [
-            "Ja, mache ich.",
-            "Statt Ihrer Nummer... darf ich heute Abend zu Ihnen nach Hause?"
-        ]
-    },
-    "nurse_contact_home_success_after": {
-        "name": "Krankenschwester",
-        "text": "*Laechelt verfuehrerisch und fluestert mir ins Ohr.* \"Oh mein... {name}, ganz schoen mutig? Na gut, willst du heute Abend zu mir kommen? Ich schick dir die Adresse. Aber das bleibt unser Geheimnis, ja?\""
-    },
-    "nurse_contact_home_fail_after": {
-        "name": "Krankenschwester",
-        "text": "*Kichert.* \"Ach du meine Guete, {name}! Suess. Aber zu mir nach Hause ist noch etwas frueh, oder? Schreib mir lieber eine Nachricht.\""
-    },
-    "day2_nurse_contact_ask": {
-        "name": "Krankenschwester",
-        "text": "\"{name}, fuer alle Faelle - willst du meine Nummer speichern? Wenn du krank bist oder Sorgen hast, meld dich.\"",
-        "choices": [
-            "Ja, gerne!",
-            "Das ist mir noch etwas unangenehm."
-        ]
-    },
-    "day2_nurse_contact_success": {
-        "name": "Krankenschwester",
-        "text": "\"Hehe, braver Junge. Ich melde mich spaeter, ja? Komm gut heim, {name}.\""
-    },
-    "day2_nurse_contact_fail": {
-        "name": "Krankenschwester",
-        "text": "\"Oh, spielst du hard to get? Sag Bescheid, wenn du es dir anders ueberlegst. Pass auf dich auf!\""
-    },
-    "day2_after_teacher": {
-        "name": "Ich",
-        "text": "*Oeffne die Tuer zum Lehrerzimmer. Im leeren Raum sitzt die Klassenlehrerin allein unter einer Schreibtischlampe und prueft Unterlagen.*"
-    },
-    "day2_after_teacher_2": {
-        "name": "Lehrerin",
-        "text": "\"Oh, {name}? Um diese Zeit im Lehrerzimmer? Noch nicht nach Hause?\""
-    },
-    "day2_after_teacher_3": {
-        "name": "Lehrerin",
-        "text": "\"Diese Woche ist der Papierkram etwas viel... Gleich in der ersten Woche nach dem Schulwechsel zeig ich dir nur meine abgekaempfte Seite.\"",
-        "choices": [
-            "Ich helfe Ihnen! Zu zweit geht's schneller!",
-            "Kopf hoch! Soll ich Ihnen wenigstens einen Kaffee machen?",
-            "Ueberarbeiten Sie sich nicht? Ich mache mir Sorgen."
-        ]
-    },
-    "day2_after_teacher_work": {
-        "name": "Ich",
-        "text": "*Setze mich neben die Lehrerin und helfe beim Sortieren der Unterlagen. Im stillen Lehrerzimmer nur das regelmaessige Rascheln von Papier.*"
-    },
-    "day2_after_teacher_work_2": {
-        "name": "Lehrerin",
-        "text": "\"Danke, {name}. Das war wirklich eine grosse Hilfe. Alleine haette ich mich echt abgemuht.\""
-    },
-    "day2_after_teacher_branch": {
-        "name": "Ich",
-        "text": "*Die Lehrerin betrachtet mich nachdenklich.*"
-    },
-    "day2_after_teacher_special": {
-        "name": "Lehrerin",
-        "text": "*Ploetzlich beugt sie sich in meine Richtung. Dezentes Parfuem und warmer Atem.*"
-    },
-    "day2_after_teacher_special_2": {
-        "name": "Lehrerin",
-        "text": "\"{name}, du bist wirklich ein besonderer Schueler. Erst zwei Tage, und doch... warum fuehlt es sich an, als wuerden wir uns schon ewig kennen?\""
-    },
-    "day2_after_teacher_special_3": {
-        "name": "Lehrerin",
-        "text": "\"Als Dank fuer deine Hilfe heute... bringe ich dich mit dem Auto nach Hause. Wollen wir uns im Wagen noch etwas unterhalten?\""
-    },
-    "day2_after_teacher_normal": {
-        "name": "Lehrerin",
-        "text": "\"So, es ist spaet geworden, geh jetzt nach Hause. Ich muss auch noch aufraumen und dann Feierabend machen. Danke fuer die Muehe heute, {name}.\""
-    },
-    "day2_after_teacher_coffee": {
-        "name": "Lehrerin",
-        "text": "\"Oh, Kaffee? Hehe, allein der Gedanke ist lieb. Aber von einem Schueler Kaffee annehmen waere etwas komisch, oder? Dafuer bekommst du ein Bonbon.\""
-    },
-    "day2_after_teacher_worry": {
-        "name": "Lehrerin",
-        "text": "\"Danke, dass du dir Sorgen machst. Mir geht's gut, so viel ist das nicht! Wenn {name} so lieb ist, fuehle ich mich gestaerkt.\""
+        "text": "*Der Sonnenuntergang verblasst. Neben Yuna sitzen und Musik hoeren. Ein Moment, in dem keine Worte noetig sind.*"
     }
 }
