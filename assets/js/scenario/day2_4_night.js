@@ -17,49 +17,41 @@ Object.assign(SCENARIO[2], {
     },
     "night2_msg_1": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_msg_2"
     },
     "night2_msg_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_msg_3"
     },
     "night2_msg_3": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_msg_4"
     },
     "night2_msg_4": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_msg_5"
     },
     "night2_msg_5": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_msg_6"
     },
     "night2_msg_6": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_msg_7"
     },
     "night2_msg_7": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_choice"
     },
     "night2_choice": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "choices": [
             { "next": "night2_reply_dain_1" },
@@ -76,25 +68,21 @@ Object.assign(SCENARIO[2], {
     },
     "night2_reply_dain_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_dain_3"
     },
     "night2_reply_dain_3": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_dain_4"
     },
     "night2_reply_dain_4": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_dain_5"
     },
     "night2_reply_dain_5": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_end_1"
     },
@@ -107,25 +95,21 @@ Object.assign(SCENARIO[2], {
     },
     "night2_reply_seo_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_seo_3"
     },
     "night2_reply_seo_3": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_seo_4"
     },
     "night2_reply_seo_4": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_seo_5"
     },
     "night2_reply_seo_5": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_end_1"
     },
@@ -138,37 +122,31 @@ Object.assign(SCENARIO[2], {
     },
     "night2_reply_yuna_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_yuna_3"
     },
     "night2_reply_yuna_3": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_yuna_4"
     },
     "night2_reply_yuna_4": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_yuna_5"
     },
     "night2_reply_yuna_5": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_yuna_6"
     },
     "night2_reply_yuna_6": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_reply_yuna_7"
     },
     "night2_reply_yuna_7": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
         "night": true,
         "next": "night2_end_1"
     },

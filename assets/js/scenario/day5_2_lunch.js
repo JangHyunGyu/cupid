@@ -13,7 +13,6 @@ Object.assign(SCENARIO[5], {
     "tour_seo_1": {
         "background": "assets/images/background/school.png",
         "bgm": "sunset1.mp3",
-        "character": null,
         "next": "tour_seo_2"
     },
     "tour_seo_2": {
@@ -75,7 +74,6 @@ Object.assign(SCENARIO[5], {
     "tour_yuna_1": {
         "background": "assets/images/background/library_old.png",
         "bgm": "sunset1.mp3",
-        "character": null,
         "next": "tour_yuna_2"
     },
     "tour_yuna_2": {
@@ -105,7 +103,6 @@ Object.assign(SCENARIO[5], {
     },
     "tour_yuna_7": {
         "background": "assets/images/background/library_old.png",
-        "character": null,
         "next": "tour_yuna_8"
     },
     "tour_yuna_8": {
@@ -138,7 +135,6 @@ Object.assign(SCENARIO[5], {
     "tour_dain_1": {
         "background": "assets/images/background/store.png",
         "bgm": "sunset1.mp3",
-        "character": null,
         "next": "tour_dain_2"
     },
     "tour_dain_2": {

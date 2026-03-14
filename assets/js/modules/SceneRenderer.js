@@ -291,7 +291,7 @@ class SceneRenderer {
      * @param {string} sceneId - 씬 ID (씬 전환 체크용)
      */
     async updateCharacters(scene, sceneId) {
-        // 캐릭터 정보가 없으면 리턴
+        // 캐릭터 정보가 없으면 리턴 (이전 캐릭터 유지)
         if (!scene.hasOwnProperty('characters') && !scene.hasOwnProperty('character')) return;
 
         const newCharMap = {};     // 슬롯별 새 이미지 URL

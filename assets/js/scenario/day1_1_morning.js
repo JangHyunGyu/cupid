@@ -46,17 +46,14 @@ Object.assign(SCENARIO[1], {
     },
     "gate_1": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "gate_2"
     },
     "gate_2": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "gate_3"
     },
     "gate_3": {
         "background": "assets/images/background/school.png",
-        "character": null,
         "next": "seoyeon_meet_1"
     },
     "seoyeon_meet_1": {
@@ -228,19 +225,16 @@ Object.assign(SCENARIO[1], {
     },
     "hallway_14": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "setFlags": ["met_seoyeon"],
         "next": "classroom_1"
     },
     "classroom_1": {
         "background": "assets/images/background/room_school.png",
         "bgm": "daily.mp3",
-        "character": null,
         "next": "classroom_2"
     },
     "classroom_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_3"
     },
     "classroom_3": {
@@ -250,17 +244,14 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_4": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_5"
     },
     "classroom_5": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_6"
     },
     "classroom_6": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_dain_1"
     },
     "classroom_dain_1": {
@@ -270,7 +261,6 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_dain_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_dain_3"
     },
     "classroom_dain_3": {
@@ -285,52 +275,42 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_dain_5": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_yuna_1"
     },
     "classroom_yuna_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_yuna_2"
     },
     "classroom_yuna_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_seat_1"
     },
     "classroom_seat_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_seat_2"
     },
     "classroom_seat_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_minsu_1"
     },
     "classroom_minsu_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_minsu_2"
     },
     "classroom_minsu_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_minsu_3"
     },
     "classroom_minsu_3": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_minsu_4"
     },
     "classroom_minsu_4": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_dain_talk_1"
     },
     "classroom_dain_talk_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_dain_talk_2"
     },
     "classroom_dain_talk_2": {
@@ -340,7 +320,6 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_dain_talk_3": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_dain_talk_4"
     },
     "classroom_dain_talk_4": {
@@ -350,7 +329,6 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_dain_talk_5": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_dain_talk_6"
     },
     "classroom_dain_talk_6": {
@@ -360,27 +338,22 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_dain_talk_7": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_dain_talk_8"
     },
     "classroom_dain_talk_8": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_yuna_note_1"
     },
     "classroom_yuna_note_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_yuna_note_2"
     },
     "classroom_yuna_note_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_yuna_note_3"
     },
     "classroom_yuna_note_3": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_yuna_note_4"
     },
     "classroom_yuna_note_4": {
@@ -390,12 +363,10 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_yuna_note_5": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_yuna_note_6"
     },
     "classroom_yuna_note_6": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "setFlags": ["met_dain", "met_yuna"],
         "next": "lunch_start"
     }

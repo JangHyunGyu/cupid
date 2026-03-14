@@ -26,7 +26,6 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_meal_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_meal_3"
     },
     "lunch3_meal_3": {
@@ -45,12 +44,10 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_meal_6": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_meal_7"
     },
     "lunch3_meal_7": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_meal_8"
     },
     "lunch3_meal_8": {
@@ -60,22 +57,18 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_meal_9": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_meal_10"
     },
     "lunch3_meal_10": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_meal_11"
     },
     "lunch3_meal_11": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_choice"
     },
     "lunch3_choice": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "choices": [
             { "next": "lunch3_give_seo_1" },
             { "next": "lunch3_give_dain_1" },
@@ -167,7 +160,6 @@ Object.assign(SCENARIO[3], {
 
     "lunch3_share_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_end"
     },
 
@@ -183,12 +175,10 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_3": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_4"
     },
     "lunch3_expose_4": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_5"
     },
     "lunch3_expose_5": {
@@ -208,7 +198,6 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_8": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_9"
     },
     "lunch3_expose_9": {
@@ -227,7 +216,6 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_12": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "stats": {
             "Seoyeon": {
                 "affinity": -5
@@ -243,17 +231,14 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_13": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_14"
     },
     "lunch3_expose_14": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_15"
     },
     "lunch3_expose_15": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_choice"
     },
     "lunch3_expose_choice": {
@@ -307,7 +292,6 @@ Object.assign(SCENARIO[3], {
 
     "lunch3_expose_honest_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_honest_2"
     },
     "lunch3_expose_honest_2": {
@@ -331,7 +315,6 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_honest_6": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_honest_7"
     },
     "lunch3_expose_honest_7": {
@@ -343,7 +326,6 @@ Object.assign(SCENARIO[3], {
 
     "lunch3_expose_excuse_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_expose_excuse_2"
     },
     "lunch3_expose_excuse_2": {
@@ -358,20 +340,17 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_excuse_4": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "setFlag": "day3_dain_no_exclamation",
         "next": "lunch3_end"
     },
 
     "lunch3_expose_run_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "setFlag": "day3_lunch_escaped",
         "next": "lunch3_expose_run_2"
     },
     "lunch3_expose_run_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "lunch3_end"
     },
 
