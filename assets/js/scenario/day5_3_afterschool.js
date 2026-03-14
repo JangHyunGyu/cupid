@@ -186,10 +186,6 @@ Object.assign(SCENARIO[5], {
                 "next": "after5_set_harem"
             },
             {
-                "condition": "day4_waited",
-                "next": "ending_start"
-            },
-            {
                 "condition": "day3_has_multiple_dates",
                 "next": "ending_start"
             },
@@ -257,7 +253,15 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "sunset": true,
-        "next": "ending_start"
+        "branches": [
+            {
+                "condition": "day4_waited",
+                "next": "day5_ending_friend"
+            },
+            {
+                "next": "ending_start"
+            }
+        ]
     },
     "after5_confess_no": {
         "background": "assets/images/background/school_back.png",
@@ -270,6 +274,6 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "sunset": true,
         "fade": true,
-        "next": "ending_start"
+        "next": "day5_ending_alone"
     }
 });

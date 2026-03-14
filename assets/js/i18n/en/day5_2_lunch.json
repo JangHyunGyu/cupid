@@ -1,9 +1,4 @@
 {
-    "tour_start": {
-        "name": "System",
-        "text": ""
-    },
-
     "tour_seo_1": {
         "name": "Me",
         "text": "*We stand side by side in front of the school gate. The very spot where Seoyeon was waiting on Day 1.*"
@@ -48,7 +43,6 @@
         "name": "Me",
         "text": "*Seoyeon smiled quietly. Sunlight slants down over the school gate.*"
     },
-
     "tour_yuna_1": {
         "name": "Me",
         "text": "*The library reading room. The very seat where Yuna said 'You can sit here if you're not noisy' on Day 1.*"
@@ -93,7 +87,6 @@
         "name": "유나(Yuna)",
         "text": "\"...I'd like you to read them. As my first reader.\""
     },
-
     "tour_dain_1": {
         "name": "Me",
         "text": "*The store bench. The spot where we ate melon bread on Day 1.*"
