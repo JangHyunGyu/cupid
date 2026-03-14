@@ -211,6 +211,9 @@ Object.assign(SCENARIO[2], {
     "night2_end_4": {
         "background": "assets/images/background/student_room.png",
         "character": null,
-        "night": true
+        "night": true,
+        "fade": true,
+        "changeDay": 3,
+        "next": "morning3_start"
     }
 });

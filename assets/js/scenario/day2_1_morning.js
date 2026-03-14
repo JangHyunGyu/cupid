@@ -21,7 +21,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_dain_1": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning2_dain_2"
     },
     "morning2_dain_2": {
@@ -181,7 +181,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_dain_react_3": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning2_dain_react_4"
     },
     "morning2_dain_react_4": {
@@ -191,7 +191,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_dain_react_5": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning2_dain_react_6"
     },
     "morning2_dain_react_6": {
@@ -236,6 +236,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_end": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null
+        "character": null,
+        "next": "lunch2_start"
     }
 });

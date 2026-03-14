@@ -56,7 +56,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_miss_dain_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "excludeCondition": "met_dain",
         "next": "after_miss_dain_3"
     },
@@ -166,6 +166,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_end": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null
+        "character": null,
+        "next": "night_start"
     }
 });

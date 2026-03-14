@@ -154,6 +154,7 @@ Object.assign(SCENARIO[5], {
     "after5_end": {
         "background": "assets/images/background/school_back.png",
         "character": null,
-        "sunset": true
+        "sunset": true,
+        "next": "ending_start"
     }
 });

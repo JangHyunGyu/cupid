@@ -527,6 +527,7 @@ Object.assign(SCENARIO[3], {
     // ========== FINAL ==========
     "after3_final": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null
+        "character": null,
+        "next": "night3_start"
     }
 });

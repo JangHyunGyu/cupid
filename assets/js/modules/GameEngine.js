@@ -921,7 +921,12 @@ class GameEngine {
         // 🏷️ 10단계: 이름 태그 설정
         // ─────────────────────────────────────────────────────────
         // 대화창 위에 표시되는 캐릭터 이름 (예: "소연", "다인")
-        this.uiManager.updateNameTag(scene.name);
+        // {name} 플레이스홀더를 실제 플레이어 이름으로 치환
+        let displayName = scene.name;
+        if (displayName && displayName.includes('{name}')) {
+            displayName = displayName.replace(/{name}/g, this.stateManager.playerName);
+        }
+        this.uiManager.updateNameTag(displayName);
 
         // ─────────────────────────────────────────────────────────
         // ▶️ 다음 지시계 초기화

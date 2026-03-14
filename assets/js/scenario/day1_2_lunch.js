@@ -31,7 +31,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_start_5": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_start_6"
     },
     "lunch_start_6": {
@@ -292,7 +292,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_2": {
         "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_dain_3"
     },
     "lunch_dain_3": {
@@ -312,7 +312,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_6": {
         "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_dain_7"
     },
     "lunch_dain_7": {
@@ -327,7 +327,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_9": {
         "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_dain_10"
     },
     "lunch_dain_10": {
@@ -352,7 +352,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_14": {
         "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_dain_15"
     },
     "lunch_dain_15": {
@@ -454,7 +454,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_dain_after_4": {
         "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_dain_after_5"
     },
     "lunch_dain_after_5": {
@@ -602,6 +602,7 @@ Object.assign(SCENARIO[1], {
 
     "lunch_end": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null
+        "character": null,
+        "next": "after_start"
     }
 });
