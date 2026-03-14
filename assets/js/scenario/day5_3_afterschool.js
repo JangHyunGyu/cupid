@@ -196,17 +196,17 @@ Object.assign(SCENARIO[5], {
             {
                 "condition": "route_seoyeon",
                 "excludeCondition": "day4_confession_accepted",
-                "next": "after5_set_confessed"
+                "next": "after5_last_chance_1"
             },
             {
                 "condition": "route_dain",
                 "excludeCondition": "day4_confession_accepted",
-                "next": "after5_set_confessed"
+                "next": "after5_last_chance_1"
             },
             {
                 "condition": "route_yuna",
                 "excludeCondition": "day4_confession_accepted",
-                "next": "after5_set_confessed"
+                "next": "after5_last_chance_1"
             },
             {
                 "next": "ending_start"
@@ -219,10 +219,57 @@ Object.assign(SCENARIO[5], {
         "setFlag": "ending_harem",
         "next": "ending_start"
     },
-    "after5_set_confessed": {
-        "background": null,
+
+    // ========== 마지막 고백 선택 (주인공 아크: "이번에는 삼키지 않겠다") ==========
+    "after5_last_chance_1": {
+        "background": "assets/images/background/school_back.png",
         "character": null,
-        "setFlag": "day5_confessed",
+        "sunset": true,
+        "next": "after5_last_chance_2"
+    },
+    "after5_last_chance_2": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "sunset": true,
+        "next": "after5_last_chance_choice"
+    },
+    "after5_last_chance_choice": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "sunset": true,
+        "choices": [
+            {
+                "next": "after5_confess_yes",
+                "setFlags": ["day5_confessed"]
+            },
+            {
+                "next": "after5_confess_no"
+            }
+        ]
+    },
+    "after5_confess_yes": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "sunset": true,
+        "next": "after5_confess_yes_2"
+    },
+    "after5_confess_yes_2": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "sunset": true,
+        "next": "ending_start"
+    },
+    "after5_confess_no": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "sunset": true,
+        "next": "after5_confess_no_2"
+    },
+    "after5_confess_no_2": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "sunset": true,
+        "fade": true,
         "next": "ending_start"
     }
 });
