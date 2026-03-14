@@ -62,36 +62,16 @@ Object.assign(SCENARIO[2], {
         "character": null,
         "night": true,
         "choices": [
-            {
-                "next": "night2_reply_dain_1",
-                "stats": {
-                    "Dain": {
-                        "affinity": 3
-                    }
-                }
-            },
-            {
-                "next": "night2_reply_seo_1",
-                "stats": {
-                    "Seoyeon": {
-                        "affinity": 3
-                    }
-                }
-            },
-            {
-                "next": "night2_reply_yuna_1",
-                "stats": {
-                    "Yuna": {
-                        "affinity": 3
-                    }
-                }
-            }
+            { "next": "night2_reply_dain_1" },
+            { "next": "night2_reply_seo_1" },
+            { "next": "night2_reply_yuna_1" }
         ]
     },
     "night2_reply_dain_1": {
         "background": "assets/images/background/student_room.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
+        "stats": { "Dain": { "affinity": 3 } },
         "next": "night2_reply_dain_2"
     },
     "night2_reply_dain_2": {
@@ -120,8 +100,9 @@ Object.assign(SCENARIO[2], {
     },
     "night2_reply_seo_1": {
         "background": "assets/images/background/student_room.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
+        "stats": { "Seoyeon": { "affinity": 3 } },
         "next": "night2_reply_seo_2"
     },
     "night2_reply_seo_2": {
@@ -150,8 +131,9 @@ Object.assign(SCENARIO[2], {
     },
     "night2_reply_yuna_1": {
         "background": "assets/images/background/student_room.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
+        "stats": { "Yuna": { "affinity": 3 } },
         "next": "night2_reply_yuna_2"
     },
     "night2_reply_yuna_2": {

@@ -318,24 +318,16 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_date_yuna_choice": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "choices": [
             {
                 "next": "morning3_date_yuna_accept",
                 "setFlags": ["accepted_yuna_date"],
-                "stats": {
-                    "Yuna": {
-                        "affinity": 5
-                    }
-                }
+                "stats": { "Yuna": { "affinity": 5 } }
             },
             {
                 "next": "morning3_date_yuna_decline",
-                "stats": {
-                    "Yuna": {
-                        "affinity": -3
-                    }
-                }
+                "stats": { "Yuna": { "affinity": -3 } }
             }
         ]
     },
@@ -346,7 +338,7 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_date_yuna_decline": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "morning3_check_multiple"
     },
 
