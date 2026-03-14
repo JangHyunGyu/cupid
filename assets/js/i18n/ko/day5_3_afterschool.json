@@ -21,7 +21,7 @@
         "text": "\"뭐, 알고 있었어. 넌 내 계획에 없는 변수였으니까.\""
     },
     "after5_farewell_seo_5": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"서연...\""
     },
     "after5_farewell_seo_6": {
@@ -63,7 +63,7 @@
         "text": "\"치, 아쉽다!\""
     },
     "after5_farewell_dain_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"다인...\""
     },
     "after5_farewell_dain_4": {
