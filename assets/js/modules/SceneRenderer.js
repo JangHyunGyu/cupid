@@ -404,19 +404,11 @@ class SceneRenderer {
             const sameChar = oldPrefix && newPrefix && oldPrefix === newPrefix;
 
             if (sameChar) {
-                // 같은 캐릭터 표정 변화 → 빠른 크로스페이드
-                result.img.classList.add('char-fade-in');
-                slot.appendChild(result.img);
-                void result.img.offsetWidth; // force reflow
-                result.img.classList.remove('char-fade-in');
-                // 이전 이미지 페이드아웃 후 제거
+                // 같은 캐릭터 표정 변화 → 즉시 교체
                 if (oldImg) {
-                    oldImg.classList.add('char-fade-out');
-                    swapPromises.push(new Promise(r => setTimeout(() => {
-                        if (slot.contains(oldImg)) slot.removeChild(oldImg);
-                        r();
-                    }, 260)));
+                    if (slot.contains(oldImg)) slot.removeChild(oldImg);
                 }
+                slot.appendChild(result.img);
             } else if (oldImg) {
                 // 다른 캐릭터 → 페이드아웃 후 페이드인
                 oldImg.classList.add('char-fade-out');
