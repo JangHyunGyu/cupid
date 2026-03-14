@@ -169,7 +169,7 @@ Object.assign(SCENARIO[3], {
     // === 유나와 동행 시 리액션 ===
     "morning3_react_yuna_1": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_pout.png",
         "next": "morning3_react_yuna_2"
     },
     "morning3_react_yuna_2": {

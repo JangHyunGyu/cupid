@@ -376,7 +376,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_dain_11": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_sweat.png",
         "night": true,
         "next": "wall_dain_12"
     },

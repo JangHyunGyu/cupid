@@ -203,7 +203,7 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_7": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_pout.png",
         "next": "lunch3_expose_8"
     },
     "lunch3_expose_8": {
@@ -336,7 +336,7 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_honest_7": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "setFlag": "day3_dain_no_exclamation",
         "next": "lunch3_end"
     },
@@ -353,7 +353,7 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_excuse_3": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "lunch3_expose_excuse_4"
     },
     "lunch3_expose_excuse_4": {

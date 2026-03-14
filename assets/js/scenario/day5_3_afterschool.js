@@ -15,7 +15,10 @@ Object.assign(SCENARIO[5], {
         "bgm": "sunset1.mp3",
         "character": null,
         "sunset": true,
-        "next": "after5_farewell_seo_1"
+        "branches": [
+            { "condition": "route_seoyeon", "next": "after5_farewell_yuna_check" },
+            { "next": "after5_farewell_seo_1" }
+        ]
     },
 
     // ========== 서연 미선택 시 작별 (복도) ==========
@@ -23,7 +26,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "sunset": true,
-        "excludeCondition": "route_seoyeon",
         "next": "after5_farewell_seo_2"
     },
     "after5_farewell_seo_2": {
@@ -49,9 +51,8 @@ Object.assign(SCENARIO[5], {
     },
     "after5_farewell_seo_5": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "sunset": true,
-        "excludeCondition": "route_seoyeon",
         "next": "after5_farewell_seo_6"
     },
     "after5_farewell_seo_6": {
@@ -65,8 +66,17 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "sunset": true,
-        "excludeCondition": "route_seoyeon",
-        "next": "after5_farewell_yuna_1"
+        "next": "after5_farewell_yuna_check"
+    },
+
+    "after5_farewell_yuna_check": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "sunset": true,
+        "branches": [
+            { "condition": "route_yuna", "next": "after5_farewell_dain_check" },
+            { "next": "after5_farewell_yuna_1" }
+        ]
     },
 
     // ========== 유나 미선택 시 작별 (도서관 앞) ==========
@@ -74,7 +84,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
         "sunset": true,
-        "excludeCondition": "route_yuna",
         "next": "after5_farewell_yuna_2"
     },
     "after5_farewell_yuna_2": {
@@ -102,8 +111,17 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/library_old.png",
         "character": null,
         "sunset": true,
-        "excludeCondition": "route_yuna",
-        "next": "after5_farewell_dain_1"
+        "next": "after5_farewell_dain_check"
+    },
+
+    "after5_farewell_dain_check": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "sunset": true,
+        "branches": [
+            { "condition": "route_dain", "next": "after5_sunset_1" },
+            { "next": "after5_farewell_dain_1" }
+        ]
     },
 
     // ========== 다인 미선택 시 작별 (체육관 앞) ==========
@@ -111,7 +129,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "sunset": true,
-        "excludeCondition": "route_dain",
         "next": "after5_farewell_dain_2"
     },
     "after5_farewell_dain_2": {
@@ -167,6 +184,14 @@ Object.assign(SCENARIO[5], {
                 "condition": "day3_has_multiple_dates",
                 "excludeCondition": "day3_caught_multiple_dates",
                 "next": "after5_set_harem"
+            },
+            {
+                "condition": "day4_waited",
+                "next": "ending_start"
+            },
+            {
+                "condition": "day3_has_multiple_dates",
+                "next": "ending_start"
             },
             {
                 "condition": "route_seoyeon",
