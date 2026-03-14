@@ -46,7 +46,26 @@ Object.assign(SCENARIO[1], {
     "after_kakao_end": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "after_miss_dain_1"
+        "branches": [
+            { "condition": "met_dain", "next": "after_dain_skip" },
+            { "next": "after_miss_dain_1" }
+        ]
+    },
+    "after_dain_skip": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "branches": [
+            { "condition": "met_yuna", "next": "after_yuna_skip" },
+            { "next": "after_miss_yuna_1" }
+        ]
+    },
+    "after_yuna_skip": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "branches": [
+            { "condition": "ate_lunch_seoyeon", "next": "after_end" },
+            { "next": "after_miss_seoyeon_1" }
+        ]
     },
     "after_miss_dain_1": {
         "background": "assets/images/background/school_hallway.png",
@@ -85,9 +104,11 @@ Object.assign(SCENARIO[1], {
     "after_miss_dain_7": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "excludeCondition": "met_dain",
         "setFlag": "met_dain",
-        "next": "after_miss_yuna_1"
+        "branches": [
+            { "condition": "met_yuna", "next": "after_yuna_skip" },
+            { "next": "after_miss_yuna_1" }
+        ]
     },
     "after_miss_yuna_1": {
         "background": "assets/images/background/library_old.png",
@@ -110,9 +131,11 @@ Object.assign(SCENARIO[1], {
     "after_miss_yuna_4": {
         "background": "assets/images/background/library_old.png",
         "character": null,
-        "excludeCondition": "met_yuna",
         "setFlag": "met_yuna",
-        "next": "after_miss_seoyeon_1"
+        "branches": [
+            { "condition": "ate_lunch_seoyeon", "next": "after_end" },
+            { "next": "after_miss_seoyeon_1" }
+        ]
     },
     "after_miss_seoyeon_1": {
         "background": "assets/images/background/school_hallway.png",

@@ -106,21 +106,33 @@ Object.assign(SCENARIO[3], {
     "night3_dream_3": {
         "character": null,
         "night": true,
-        "stats": {
-            "Seoyeon": {
-                "affinity": 10,
-                "condition": "seoyeon_day3_event"
-            },
-            "Yuna": {
-                "affinity": 10,
-                "condition": "yuna_day3_event"
-            },
-            "Dain": {
-                "affinity": 10,
-                "condition": "dain_day3_event"
-            }
-        },
         "fade": true,
+        "branches": [
+            { "condition": "seoyeon_day3_event", "next": "night3_dream_seo_bonus" },
+            { "condition": "yuna_day3_event", "next": "night3_dream_yuna_bonus" },
+            { "condition": "dain_day3_event", "next": "night3_dream_dain_bonus" },
+            { "next": "night3_end" }
+        ]
+    },
+    "night3_dream_seo_bonus": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "stats": { "Seoyeon": { "affinity": 10 } },
+        "next": "night3_end"
+    },
+    "night3_dream_yuna_bonus": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "stats": { "Yuna": { "affinity": 10 } },
+        "next": "night3_end"
+    },
+    "night3_dream_dain_bonus": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "stats": { "Dain": { "affinity": 10 } },
         "next": "night3_end"
     },
     "night3_cheat_msg_1": {
@@ -222,6 +234,7 @@ Object.assign(SCENARIO[3], {
         "character": null,
         "night": true,
         "fade": true,
-        "changeDay": 4
+        "changeDay": 4,
+        "next": "morning4_start"
     }
 });

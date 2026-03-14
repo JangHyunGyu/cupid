@@ -80,7 +80,7 @@ Object.assign(SCENARIO[3], {
             { "next": "lunch3_give_seo_1" },
             { "next": "lunch3_give_dain_1" },
             { "next": "lunch3_give_yuna_1" },
-            { "next": "lunch3_expose_1" }
+            { "next": "lunch3_share_1" }
         ]
     },
 
@@ -163,6 +163,12 @@ Object.assign(SCENARIO[3], {
                 "next": "lunch3_end"
             }
         ]
+    },
+
+    "lunch3_share_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "lunch3_end"
     },
 
     "lunch3_expose_1": {
