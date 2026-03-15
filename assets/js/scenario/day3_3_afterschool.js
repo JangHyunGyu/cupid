@@ -15,6 +15,7 @@ Object.assign(SCENARIO[3], {
         "next": "after3_choice"
     },
     "after3_choice": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "choices": [
             {
@@ -34,11 +35,13 @@ Object.assign(SCENARIO[3], {
 
     // ========== SEOYEON ROUTE ==========
     "after3_seo_1": {
+        "character": null,
         "background": "assets/images/background/teacher_office.png",
         "bgm": "sunset1.mp3",
         "next": "after3_seo_2"
     },
     "after3_seo_2": {
+        "character": null,
         "background": "assets/images/background/teacher_office.png",
         "next": "after3_seo_3"
     },
@@ -132,23 +135,28 @@ Object.assign(SCENARIO[3], {
 
     // ========== YUNA ROUTE ==========
     "after3_yuna_1": {
+        "character": null,
         "background": "assets/images/background/yuna_hideout.png",
         "bgm": "night1.mp3",
         "next": "after3_yuna_2"
     },
     "after3_yuna_2": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "next": "after3_yuna_3"
     },
     "after3_yuna_3": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "next": "after3_yuna_4"
     },
     "after3_yuna_4": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "next": "after3_yuna_5"
     },
     "after3_yuna_5": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "next": "after3_yuna_6"
     },
@@ -252,6 +260,7 @@ Object.assign(SCENARIO[3], {
 
     // ========== DAIN ROUTE ==========
     "after3_dain_1": {
+        "character": null,
         "background": "assets/images/background/gym.png",
         "bgm": "daily2.mp3",
         "next": "after3_dain_2"
@@ -356,6 +365,7 @@ Object.assign(SCENARIO[3], {
 
     // ========== CONFRONTATION ==========
     "after3_confront_1": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "bgm": "mystery.mp3",
         "next": "after3_confront_2"
@@ -443,6 +453,7 @@ Object.assign(SCENARIO[3], {
         "next": "after3_confront_admit_6"
     },
     "after3_confront_admit_6": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "next": "after3_confront_yuna_enter"
     },
@@ -473,6 +484,7 @@ Object.assign(SCENARIO[3], {
 
     // --- Yuna enters ---
     "after3_confront_yuna_enter": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "next": "after3_confront_yuna_1"
     },
@@ -502,6 +514,7 @@ Object.assign(SCENARIO[3], {
         "next": "after3_confront_yuna_6"
     },
     "after3_confront_yuna_6": {
+        "character": "assets/images/characters/yuna_angry.png",
         "background": "assets/images/background/school_hallway.png",
         "next": "after3_confront_end"
     },

@@ -23,6 +23,7 @@ Object.assign(SCENARIO[5], {
 
     // ========== 서연 미선택 시 작별 (복도) ==========
     "after5_farewell_seo_1": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "next": "after5_farewell_seo_2"
@@ -42,6 +43,7 @@ Object.assign(SCENARIO[5], {
         "next": "after5_farewell_seo_4"
     },
     "after5_farewell_seo_4": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "excludeCondition": "route_seoyeon",
@@ -54,12 +56,14 @@ Object.assign(SCENARIO[5], {
         "next": "after5_farewell_seo_6"
     },
     "after5_farewell_seo_6": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "excludeCondition": "route_seoyeon",
         "next": "after5_farewell_seo_7"
     },
     "after5_farewell_seo_7": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "next": "after5_farewell_yuna_check"
@@ -83,24 +87,28 @@ Object.assign(SCENARIO[5], {
         "next": "after5_farewell_yuna_2"
     },
     "after5_farewell_yuna_2": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "sunset": true,
         "excludeCondition": "route_yuna",
         "next": "after5_farewell_yuna_3"
     },
     "after5_farewell_yuna_3": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "sunset": true,
         "excludeCondition": "route_yuna",
         "next": "after5_farewell_yuna_4"
     },
     "after5_farewell_yuna_4": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "sunset": true,
         "excludeCondition": "route_yuna",
         "next": "after5_farewell_yuna_5"
     },
     "after5_farewell_yuna_5": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "sunset": true,
         "next": "after5_farewell_dain_check"
@@ -124,6 +132,7 @@ Object.assign(SCENARIO[5], {
         "next": "after5_farewell_dain_2"
     },
     "after5_farewell_dain_2": {
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/gym.png",
         "sunset": true,
         "excludeCondition": "route_dain",
@@ -144,6 +153,7 @@ Object.assign(SCENARIO[5], {
         "next": "after5_farewell_dain_5"
     },
     "after5_farewell_dain_5": {
+        "character": "assets/images/characters/dain_laugh.png",
         "background": "assets/images/background/gym.png",
         "sunset": true,
         "excludeCondition": "route_dain",
@@ -208,16 +218,19 @@ Object.assign(SCENARIO[5], {
 
     // ========== 마지막 고백 선택 (주인공 아크: "이번에는 삼키지 않겠다") ==========
     "after5_last_chance_1": {
+        "character": null,
         "background": "assets/images/background/school_back.png",
         "sunset": true,
         "next": "after5_last_chance_2"
     },
     "after5_last_chance_2": {
+        "character": null,
         "background": "assets/images/background/school_back.png",
         "sunset": true,
         "next": "after5_last_chance_choice"
     },
     "after5_last_chance_choice": {
+        "character": null,
         "background": "assets/images/background/school_back.png",
         "sunset": true,
         "choices": [

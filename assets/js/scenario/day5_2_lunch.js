@@ -11,6 +11,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 서연 루트 ──
     "tour_seo_1": {
+        "character": null,
         "background": "assets/images/background/school.png",
         "bgm": "sunset1.mp3",
         "next": "tour_seo_2"
@@ -41,6 +42,7 @@ Object.assign(SCENARIO[5], {
         "next": "tour_seo_7"
     },
     "tour_seo_7": {
+        "character": null,
         "background": "assets/images/background/school.png",
         "next": "tour_seo_8"
     },
@@ -72,6 +74,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 유나 루트 ──
     "tour_yuna_1": {
+        "character": null,
         "background": "assets/images/background/library_old.png",
         "bgm": "sunset1.mp3",
         "next": "tour_yuna_2"
@@ -102,6 +105,7 @@ Object.assign(SCENARIO[5], {
         "next": "tour_yuna_7"
     },
     "tour_yuna_7": {
+        "character": null,
         "background": "assets/images/background/library_old.png",
         "next": "tour_yuna_8"
     },
@@ -133,6 +137,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 다인 루트 ──
     "tour_dain_1": {
+        "character": null,
         "background": "assets/images/background/store.png",
         "bgm": "sunset1.mp3",
         "next": "tour_dain_2"
@@ -163,6 +168,7 @@ Object.assign(SCENARIO[5], {
         "next": "tour_dain_7"
     },
     "tour_dain_7": {
+        "character": null,
         "background": "assets/images/background/store.png",
         "next": "tour_dain_8"
     },

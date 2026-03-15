@@ -16,41 +16,49 @@ Object.assign(SCENARIO[2], {
         "next": "night2_msg_1"
     },
     "night2_msg_1": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_2"
     },
     "night2_msg_2": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_3"
     },
     "night2_msg_3": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_4"
     },
     "night2_msg_4": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_5"
     },
     "night2_msg_5": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_6"
     },
     "night2_msg_6": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_7"
     },
     "night2_msg_7": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_choice"
     },
     "night2_choice": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "choices": [
@@ -67,21 +75,25 @@ Object.assign(SCENARIO[2], {
         "next": "night2_reply_dain_2"
     },
     "night2_reply_dain_2": {
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_dain_3"
     },
     "night2_reply_dain_3": {
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_dain_4"
     },
     "night2_reply_dain_4": {
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_dain_5"
     },
     "night2_reply_dain_5": {
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_end_1"
@@ -94,21 +106,25 @@ Object.assign(SCENARIO[2], {
         "next": "night2_reply_seo_2"
     },
     "night2_reply_seo_2": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_seo_3"
     },
     "night2_reply_seo_3": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_seo_4"
     },
     "night2_reply_seo_4": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_seo_5"
     },
     "night2_reply_seo_5": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_end_1"
@@ -121,31 +137,37 @@ Object.assign(SCENARIO[2], {
         "next": "night2_reply_yuna_2"
     },
     "night2_reply_yuna_2": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_yuna_3"
     },
     "night2_reply_yuna_3": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_yuna_4"
     },
     "night2_reply_yuna_4": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_yuna_5"
     },
     "night2_reply_yuna_5": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_yuna_6"
     },
     "night2_reply_yuna_6": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_yuna_7"
     },
     "night2_reply_yuna_7": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_end_1"

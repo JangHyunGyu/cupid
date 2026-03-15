@@ -24,18 +24,22 @@ Object.assign(SCENARIO[1], {
         "next": "after_kakao_2"
     },
     "after_kakao_2": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "next": "after_kakao_3"
     },
     "after_kakao_3": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "next": "after_kakao_4"
     },
     "after_kakao_4": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "next": "after_kakao_5"
     },
     "after_kakao_5": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "next": "after_kakao_end"
     },
@@ -64,6 +68,7 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_miss_dain_1": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "excludeCondition": "met_dain",
         "next": "after_miss_dain_2"
@@ -75,6 +80,7 @@ Object.assign(SCENARIO[1], {
         "next": "after_miss_dain_3"
     },
     "after_miss_dain_3": {
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/school_hallway.png",
         "excludeCondition": "met_dain",
         "next": "after_miss_dain_4"
@@ -86,6 +92,7 @@ Object.assign(SCENARIO[1], {
         "next": "after_miss_dain_5"
     },
     "after_miss_dain_5": {
+        "character": "assets/images/characters/dain_laugh.png",
         "background": "assets/images/background/school_hallway.png",
         "excludeCondition": "met_dain",
         "next": "after_miss_dain_6"
@@ -97,6 +104,7 @@ Object.assign(SCENARIO[1], {
         "next": "after_miss_dain_7"
     },
     "after_miss_dain_7": {
+        "character": "assets/images/characters/dain_laugh.png",
         "background": "assets/images/background/school_hallway.png",
         "setFlag": "met_dain",
         "branches": [
@@ -105,11 +113,13 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_miss_yuna_1": {
+        "character": null,
         "background": "assets/images/background/library_old.png",
         "excludeCondition": "met_yuna",
         "next": "after_miss_yuna_2"
     },
     "after_miss_yuna_2": {
+        "character": null,
         "background": "assets/images/background/library_old.png",
         "excludeCondition": "met_yuna",
         "next": "after_miss_yuna_3"
@@ -121,6 +131,7 @@ Object.assign(SCENARIO[1], {
         "next": "after_miss_yuna_4"
     },
     "after_miss_yuna_4": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "setFlag": "met_yuna",
         "branches": [
@@ -129,6 +140,7 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_miss_seoyeon_1": {
+        "character": null,
         "background": "assets/images/background/school_hallway.png",
         "excludeCondition": "ate_lunch_seoyeon",
         "next": "after_miss_seoyeon_2"
@@ -140,6 +152,7 @@ Object.assign(SCENARIO[1], {
         "next": "after_miss_seoyeon_3"
     },
     "after_miss_seoyeon_3": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school_hallway.png",
         "excludeCondition": "ate_lunch_seoyeon",
         "next": "after_miss_seoyeon_4"
@@ -151,6 +164,7 @@ Object.assign(SCENARIO[1], {
         "next": "after_miss_seoyeon_5"
     },
     "after_miss_seoyeon_5": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school_hallway.png",
         "excludeCondition": "ate_lunch_seoyeon",
         "next": "after_miss_seoyeon_6"
@@ -162,6 +176,7 @@ Object.assign(SCENARIO[1], {
         "next": "after_miss_seoyeon_7"
     },
     "after_miss_seoyeon_7": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school_hallway.png",
         "excludeCondition": "ate_lunch_seoyeon",
         "next": "after_miss_seoyeon_8"
