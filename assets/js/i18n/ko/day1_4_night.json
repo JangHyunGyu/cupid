@@ -1,14 +1,14 @@
 {
     "night_start": {
-        "name": "나",
+        "name": "{name}",
         "text": "*방에 돌아왔다. 침대에 누웠다.*"
     },
     "night_start_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*첫날 치고는 — 진이 빠졌다. 근데 나쁘지 않다.*"
     },
     "night_start_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*핸드폰이 울린다. 학교 메신저.*"
     },
     "night_msg_seo_1": {
@@ -16,7 +16,7 @@
         "text": "*오늘 옥상 어땠어?*"
     },
     "night_msg_seo_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*바람이 좋더라*"
     },
     "night_msg_seo_3": {
@@ -28,7 +28,7 @@
         "text": "*...서비스야*"
     },
     "night_msg_seo_5": {
-        "name": "나",
+        "name": "{name}",
         "text": "*'서비스야'를 일부러 한 줄 띄어서 보냈다. — 이것도 계산인 건지, 진심인 건지.*"
     },
     "night_msg_yuna_1": {
@@ -40,7 +40,7 @@
         "text": "*내일도 자리 비워 놓을게*"
     },
     "night_msg_yuna_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*짧다. 근데 '자리 비워 놓을게'가 이 사람한테는 최대한의 환영 아닌가.*"
     },
     "night_msg_dain_1": {
@@ -56,19 +56,19 @@
         "text": "*오늘 빵값 아직도 아깝다 아 진짜ㅋㅋㅋ*"
     },
     "night_msg_dain_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "*세 줄 연속. 숨 좀 쉬고 보내면 안 되나.*"
     },
     "night_late_transition": {
-        "name": "나",
+        "name": "{name}",
         "text": "*잠들려는데 — 핸드폰이 한 번 더 울린다.*"
     },
     "night_late_transition_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*밤 11시. 누구지?*"
     },
     "night_late_branch": {
-        "name": "나",
+        "name": "{name}",
         "text": "*화면이 밝아진다.*"
     },
     "night_seo_late_1": {
@@ -80,7 +80,7 @@
         "text": "*집 앞에서 기다릴게*"
     },
     "night_seo_late_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*...뭐? 학생회장이 집 앞에서? — 심장이 한 박자 빨라진다. 왜.*"
     },
     "night_yuna_late_1": {
@@ -96,7 +96,7 @@
         "text": "*그것만*"
     },
     "night_yuna_late_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "*'그것만'이라고 했는데, '그것만'은 아닌 것 같다.*"
     },
     "night_dain_late_1": {
@@ -112,23 +112,23 @@
         "text": "*거절은 안 받음ㅋㅋ*"
     },
     "night_dain_late_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "*이 사람은 거절이라는 개념이 없는 건가.*"
     },
     "night_end_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*핸드폰을 내려놓았다.*"
     },
     "night_end_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*천장을 본다. 벚꽃 냄새가 아직 교복에 남아 있다.*"
     },
     "night_end_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*나쁘지 않은 첫날이었다.*"
     },
     "night_end_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "*내일은 — 좀 더 재밌을 것 같다.*"
     }
 }

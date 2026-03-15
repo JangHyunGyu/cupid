@@ -325,22 +325,22 @@ Object.assign(SCENARIO[1], {
         "next": "classroom_minsu_1"
     },
     "classroom_minsu_1": {
-        "character": "assets/images/characters/minsu_silhouette.svg",
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "next": "classroom_minsu_2"
     },
     "classroom_minsu_2": {
-        "character": "assets/images/characters/minsu_silhouette.svg",
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "next": "classroom_minsu_3"
     },
     "classroom_minsu_3": {
-        "character": "assets/images/characters/minsu_silhouette.svg",
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "next": "classroom_minsu_4"
     },
     "classroom_minsu_4": {
-        "character": "assets/images/characters/minsu_silhouette.svg",
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_talk_1"
     },

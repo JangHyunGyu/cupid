@@ -1,38 +1,38 @@
 {
     "after_start": {
-        "name": "나",
+        "name": "{name}",
         "text": "*방과후. 학교를 좀 둘러보기로 했다. 아직 구조를 잘 모르니까.*"
     },
     "after_start_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*복도를 걷는다. 핸드폰이 진동한다. — 이전 학교 단체 카톡방.*"
     },
     "after_kakao_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*'소정이 남친이랑 벚꽃 사진 올렸다 ㅋㅋ'*"
     },
     "after_kakao_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*핸드폰을 주머니에 넣었다.*"
     },
     "after_kakao_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*...아.*"
     },
     "after_kakao_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "*괜찮다. 진짜로. 이미 지난 일이다. 고백도 못 하고 끝난 거잖아. 미련이 아니라 후회다. — 그때 말했으면 어땠을까. 차였어도 이렇게 찜찜하지는 않았을 텐데.*"
     },
     "after_kakao_5": {
-        "name": "나",
+        "name": "{name}",
         "text": "*이 학교에서는 — 삼키지 말자. 할 말이 있으면.*"
     },
     "after_kakao_end": {
-        "name": "나",
+        "name": "{name}",
         "text": "*핸드폰을 다시 꺼내서 단체방을 나갔다. 정리 끝. — 이제 이 학교 사람이다.*"
     },
     "after_miss_dain_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*복도를 걷는데 뒤에서 쿵쿵 발소리.*"
     },
     "after_miss_dain_2": {
@@ -40,7 +40,7 @@
         "text": "\"앗 위험!!\""
     },
     "after_miss_dain_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*반사적으로 옆으로 비킨다. 다인이 옆을 스쳐 지나간다. 달리다 급정거.*"
     },
     "after_miss_dain_4": {
@@ -56,15 +56,15 @@
         "text": "\"늦었거든! 체육관 가야 해! — 아 너 내일 봐! 전학생!\""
     },
     "after_miss_dain_7": {
-        "name": "나",
+        "name": "{name}",
         "text": "*손을 흔들며 뛰어간다. 폭풍 같은 여자다. 이름도 모르는데 벌써 반말이다.*"
     },
     "after_miss_yuna_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*도서관 앞을 지나가는데, 나른한 눈의 여학생이 책을 읽으며 걸어가고 있다.*"
     },
     "after_miss_yuna_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*— 책갈피가 떨어진다.* \"저기, 이거...\""
     },
     "after_miss_yuna_3": {
@@ -72,11 +72,11 @@
         "text": "\"......고마워.\""
     },
     "after_miss_yuna_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "*그리고 다시 걸어간다. 그게 끝이다. 근데 — 뭔가 인상에 남는 사람이다.*"
     },
     "after_miss_seoyeon_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*하교하려는데 복도에서 서연과 마주친다.*"
     },
     "after_miss_seoyeon_2": {
@@ -100,7 +100,7 @@
         "text": "\"...바람 쐬러 올라간 건데 문이 열려 있길래.\""
     },
     "after_miss_seoyeon_7": {
-        "name": "나",
+        "name": "{name}",
         "text": "*기다린 거 맞는 것 같다. — 미안하기도 하고, 이상하게 좀 웃기기도 하다.*"
     },
     "after_miss_seoyeon_8": {
@@ -108,7 +108,7 @@
         "text": "\"내일은 도망가지 마.\""
     },
     "after_end": {
-        "name": "나",
+        "name": "{name}",
         "text": "*미소를 남기고 지나간다.*"
     }
 }

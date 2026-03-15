@@ -1,10 +1,10 @@
 {
     "lunch3_start": {
-        "name": "나",
+        "name": "{name}",
         "text": "*점심시간. 오늘은 특이하게 — 세 명이 한자리에 모였다.*"
     },
     "lunch3_start_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*{name}이 도시락을 펼친다. 서연이 자연스럽게 옆에 앉고, 다인이 맞은편에 털썩 앉고, 유나가 구석에서 자기 빵을 먹으며 슬쩍 끼어든다.*"
     },
     "lunch3_meal_1": {
@@ -12,7 +12,7 @@
         "text": "\"오! 맛있다!!\""
     },
     "lunch3_meal_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"그건 내 거...\""
     },
     "lunch3_meal_3": {
@@ -20,7 +20,7 @@
         "text": "\"계란말이 간이 좀 세네. 6점.\""
     },
     "lunch3_meal_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"점수 매기지 마.\""
     },
     "lunch3_meal_5": {
@@ -28,11 +28,11 @@
         "text": "\"10점 만점이야. 나쁜 거 아닌데?\""
     },
     "lunch3_meal_6": {
-        "name": "나",
+        "name": "{name}",
         "text": "*유나가 말없이 젓가락을 뻗어 제일 맛있어 보이는 소시지를 집어간다.*"
     },
     "lunch3_meal_7": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"...유나, 그건 내가 제일 좋아하는 건데.\""
     },
     "lunch3_meal_8": {
@@ -40,19 +40,19 @@
         "text": "\"...맛있네.\""
     },
     "lunch3_meal_9": {
-        "name": "나",
+        "name": "{name}",
         "text": "*약탈당했다. 세 명에게 동시에.*"
     },
     "lunch3_meal_10": {
-        "name": "나",
+        "name": "{name}",
         "text": "*반찬이 하나 남았다. 마지막 계란말이.*"
     },
     "lunch3_meal_11": {
-        "name": "나",
+        "name": "{name}",
         "text": "*누구에게 줄까?*"
     },
     "lunch3_choice": {
-        "name": "나",
+        "name": "{name}",
         "text": "*마지막 반찬을 누구에게 줄지 고민한다.*",
         "choices": [
             "서연에게 준다",
@@ -61,7 +61,6 @@
             "\"다 같이 나눠 먹자\""
         ]
     },
-
     "lunch3_give_seo_1": {
         "name": "서연",
         "text": "\"...고마워. 역시 너는 센스가 있어.\""
@@ -74,7 +73,6 @@
         "name": "유나",
         "text": "\"......\""
     },
-
     "lunch3_give_dain_1": {
         "name": "다인",
         "text": "\"진짜?! 고마워!! 역시 {name}이 최고!!\""
@@ -87,7 +85,6 @@
         "name": "유나",
         "text": "\"......\""
     },
-
     "lunch3_give_yuna_1": {
         "name": "유나",
         "text": "\"...고마워.\""
@@ -100,9 +97,8 @@
         "name": "다인",
         "text": "\"뭐야! 나는?!\""
     },
-
     "lunch3_expose_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*\"다 같이 먹자\"라고 말한 순간 — 다인이 먼저 입을 열었다.*"
     },
     "lunch3_expose_2": {
@@ -110,11 +106,11 @@
         "text": "\"아 맞다! {name} 주말에 나랑 오락실 가기로 했잖아!! 뭐 먹고 갈까?!\""
     },
     "lunch3_expose_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*— 얼어붙었다.*"
     },
     "lunch3_expose_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "*서연의 젓가락이 멈춘다. 유나의 빵 뜯는 손이 멈춘다.*"
     },
     "lunch3_expose_5": {
@@ -130,7 +126,7 @@
         "text": "\"...잠깐. 나한테도 주말에 같이 놀자고 했는데?\""
     },
     "lunch3_expose_8": {
-        "name": "나",
+        "name": "{name}",
         "text": "*유나가 빵을 내려놓는다.*"
     },
     "lunch3_expose_9": {
@@ -138,7 +134,7 @@
         "text": "\"알고 있었어.\""
     },
     "lunch3_expose_10": {
-        "name": "나",
+        "name": "{name}",
         "text": "*잠시 침묵.*"
     },
     "lunch3_expose_11": {
@@ -146,11 +142,11 @@
         "text": "\"...거짓말. 나도 몰랐어.\""
     },
     "lunch3_expose_12": {
-        "name": "나",
+        "name": "{name}",
         "text": "*세 사람의 시선이 나를 향한다. — 방금까지의 따뜻한 점심이 얼음장으로 변했다.*"
     },
     "lunch3_expose_13": {
-        "name": "나",
+        "name": "{name}",
         "text": "*옆 테이블에서 민수가 이쪽을 보고 있다. 고개를 절레절레 흔든다.*"
     },
     "lunch3_expose_14": {
@@ -158,11 +154,11 @@
         "text": "\"...야. 너 진짜 미쳤냐.\""
     },
     "lunch3_expose_15": {
-        "name": "나",
+        "name": "{name}",
         "text": "*아무 말도 못 하겠다. 민수가 맞다.*"
     },
     "lunch3_expose_choice": {
-        "name": "나",
+        "name": "{name}",
         "text": "*뭐라고 해야 하지...*",
         "choices": [
             "\"미안해. 다 좋은 사람이라 거절을 못 했어.\"",
@@ -170,9 +166,8 @@
             "도망친다"
         ]
     },
-
     "lunch3_expose_honest_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"미안해. 다 좋은 사람이라 거절을 못 했어.\""
     },
     "lunch3_expose_honest_2": {
@@ -184,7 +179,7 @@
         "text": "\"거절 못 하는 다정함이 — 가짜 희망을 주거든.\""
     },
     "lunch3_expose_honest_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "*서연이 도시락 뚜껑을 닫는다.*"
     },
     "lunch3_expose_honest_5": {
@@ -192,16 +187,15 @@
         "text": "\"나는 네 선택지 중 하나가 되고 싶은 게 아니야. 유일한 답이거나, 아무것도 아니거나. — 어중간한 건 못 해.\""
     },
     "lunch3_expose_honest_6": {
-        "name": "나",
+        "name": "{name}",
         "text": "*서연이 자리를 뜬다.*"
     },
     "lunch3_expose_honest_7": {
-        "name": "나",
+        "name": "{name}",
         "text": "*느낌표가 없다. — 다인의 문장에서 느낌표가 사라졌다. 처음이다.*"
     },
-
     "lunch3_expose_excuse_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "\"시간대가 다르니까 괜찮지 않을까...\""
     },
     "lunch3_expose_excuse_2": {
@@ -213,26 +207,23 @@
         "text": "\"나도 좀 생각할 시간 줘.\""
     },
     "lunch3_expose_excuse_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "*느낌표가 없다. — 다인의 문장에서 느낌표가 사라졌다. 처음이다.*"
     },
-
     "lunch3_expose_run_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*도망쳤다. 교실에서. — 가장 비겁한 선택이다.*"
     },
     "lunch3_expose_run_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*뒤에서 세 사람의 침묵이 등에 꽂힌다.*"
     },
-
     "lunch3_share_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*다 같이 나눠 먹자고 했다. 어색하지만 — 나쁘지 않은 공기다. 셋 다 웃고 있다. 진짜인지 연기인지는 모르겠지만.*"
     },
-
     "lunch3_end": {
-        "name": "나",
+        "name": "{name}",
         "text": "*점심시간이 끝났다.*"
     }
 }
