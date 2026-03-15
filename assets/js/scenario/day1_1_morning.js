@@ -128,7 +128,7 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "choice_flirt_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_laugh.png",
         "background": "assets/images/background/school.png",
         "next": "choice_flirt_2"
     },
@@ -325,22 +325,22 @@ Object.assign(SCENARIO[1], {
         "next": "classroom_minsu_1"
     },
     "classroom_minsu_1": {
-        "character": null,
+        "character": "assets/images/characters/minsu_silhouette.svg",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_minsu_2"
     },
     "classroom_minsu_2": {
-        "character": null,
+        "character": "assets/images/characters/minsu_silhouette.svg",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_minsu_3"
     },
     "classroom_minsu_3": {
-        "character": null,
+        "character": "assets/images/characters/minsu_silhouette.svg",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_minsu_4"
     },
     "classroom_minsu_4": {
-        "character": null,
+        "character": "assets/images/characters/minsu_silhouette.svg",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_talk_1"
     },
