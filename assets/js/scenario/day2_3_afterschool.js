@@ -15,6 +15,7 @@ Object.assign(SCENARIO[2], {
         "next": "after2_choice"
     },
     "after2_choice": {
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "bgm": "sunset1.mp3",
         "choices": [
@@ -248,6 +249,7 @@ Object.assign(SCENARIO[2], {
         "next": "night2_start"
     },
     "after2_yuna_1": {
+        "character": null,
         "background": "assets/images/background/yuna_hideout.png",
         "bgm": "night1.mp3",
         "next": "after2_yuna_2"

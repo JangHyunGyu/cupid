@@ -251,31 +251,37 @@ Object.assign(SCENARIO[5], {
         "next": "true_epilogue_2"
     },
     "true_epilogue_2": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "true_epilogue_3"
     },
     "true_epilogue_3": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "true_epilogue_4"
     },
     "true_epilogue_4": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "true_epilogue_5"
     },
     "true_epilogue_5": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "true_epilogue_6"
     },
     "true_epilogue_6": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "true_epilogue_7"
     },
     "true_epilogue_7": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "day5_credits"
@@ -293,26 +299,31 @@ Object.assign(SCENARIO[5], {
         "next": "good_1"
     },
     "good_1": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "good_2"
     },
     "good_2": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "good_3"
     },
     "good_3": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "good_4"
     },
     "good_4": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "good_5"
     },
     "good_5": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "day5_credits"
@@ -330,36 +341,43 @@ Object.assign(SCENARIO[5], {
         "next": "mayhem_1"
     },
     "mayhem_1": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "mayhem_2"
     },
     "mayhem_2": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "mayhem_3"
     },
     "mayhem_3": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "mayhem_4"
     },
     "mayhem_4": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "mayhem_5"
     },
     "mayhem_5": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "mayhem_6"
     },
     "mayhem_6": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "mayhem_7"
     },
     "mayhem_7": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "day5_credits"
@@ -377,41 +395,49 @@ Object.assign(SCENARIO[5], {
         "next": "harem_1"
     },
     "harem_1": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "harem_2"
     },
     "harem_2": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "harem_3"
     },
     "harem_3": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "harem_4"
     },
     "harem_4": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "harem_5"
     },
     "harem_5": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "harem_6"
     },
     "harem_6": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "harem_7"
     },
     "harem_7": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "harem_8"
     },
     "harem_8": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "day5_credits"
@@ -429,36 +455,43 @@ Object.assign(SCENARIO[5], {
         "next": "friend_1"
     },
     "friend_1": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "friend_2"
     },
     "friend_2": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "friend_3"
     },
     "friend_3": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "friend_4"
     },
     "friend_4": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "friend_5"
     },
     "friend_5": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "friend_6"
     },
     "friend_6": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "friend_7"
     },
     "friend_7": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "day5_credits"
@@ -476,26 +509,31 @@ Object.assign(SCENARIO[5], {
         "next": "alone_1"
     },
     "alone_1": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "alone_2"
     },
     "alone_2": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "alone_3"
     },
     "alone_3": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "alone_4"
     },
     "alone_4": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "alone_5"
     },
     "alone_5": {
+        "character": null,
         "night": true,
         "fade": true,
         "next": "day5_credits"

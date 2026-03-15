@@ -19,6 +19,7 @@ Object.assign(SCENARIO[4], {
         "next": "day4_night_branch"
     },
     "day4_night_branch": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "branches": [
             {
@@ -47,12 +48,14 @@ Object.assign(SCENARIO[4], {
     // ★★★ 서연 밤 — 가면 벗기 (route_seoyeon)
     // ========================================================================
     "wall_seo_1": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "bgm": "night2.mp3",
         "next": "wall_seo_2"
     },
     "wall_seo_2": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_seo_3"
@@ -283,6 +286,7 @@ Object.assign(SCENARIO[4], {
 
     // Cross-route glimpse: 체육관에서 다인 목격
     "wall_seo_glimpse_1": {
+        "character": null,
         "background": "assets/images/background/school_back.png",
         "night": true,
         "next": "wall_seo_glimpse_2"
@@ -311,17 +315,20 @@ Object.assign(SCENARIO[4], {
     // ★★★ 다인 밤 — 멈춰버린 꿈 (route_dain)
     // ========================================================================
     "wall_dain_1": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "bgm": "night2.mp3",
         "next": "wall_dain_2"
     },
     "wall_dain_2": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_dain_3"
     },
     "wall_dain_3": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_dain_4"
@@ -533,6 +540,7 @@ Object.assign(SCENARIO[4], {
         "next": "wall_dain_cry_6"
     },
     "wall_dain_cry_6": {
+        "character": "assets/images/characters/dain_sad.png",
         "background": "assets/images/background/gym.png",
         "night": true,
         "next": "wall_dain_farewell_1"
@@ -570,6 +578,7 @@ Object.assign(SCENARIO[4], {
         "next": "wall_dain_lastspike_6"
     },
     "wall_dain_lastspike_6": {
+        "character": "assets/images/characters/dain_sad.png",
         "background": "assets/images/background/gym.png",
         "night": true,
         "next": "wall_dain_farewell_1"
@@ -592,6 +601,7 @@ Object.assign(SCENARIO[4], {
 
     // Cross-route glimpse: 도서관 별관 유나 목격
     "wall_dain_glimpse_1": {
+        "character": null,
         "background": "assets/images/background/school_back.png",
         "night": true,
         "next": "wall_dain_glimpse_2"
@@ -609,6 +619,7 @@ Object.assign(SCENARIO[4], {
         "next": "wall_dain_glimpse_4"
     },
     "wall_dain_glimpse_4": {
+        "character": null,
         "background": "assets/images/background/school_back.png",
         "night": true,
         "fade": true,
@@ -619,6 +630,7 @@ Object.assign(SCENARIO[4], {
     // ★★★ 유나 밤 — 편지, 그리고 벽 너머 (route_yuna)
     // ========================================================================
     "wall_yuna_1": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "bgm": "night2.mp3",
@@ -775,6 +787,7 @@ Object.assign(SCENARIO[4], {
         "next": "wall_yuna_moved_5"
     },
     "wall_yuna_moved_5": {
+        "character": "assets/images/characters/yuna_shy.png",
         "background": "assets/images/background/yuna_hideout.png",
         "night": true,
         "setFlag": "day4_yuna_wall_broken",
@@ -789,6 +802,7 @@ Object.assign(SCENARIO[4], {
         "next": "wall_yuna_sub_2"
     },
     "wall_yuna_sub_2": {
+        "character": "assets/images/characters/yuna_sad.png",
         "background": "assets/images/background/yuna_hideout.png",
         "night": true,
         "setFlag": "day4_yuna_wall_broken",
@@ -815,6 +829,7 @@ Object.assign(SCENARIO[4], {
         "next": "wall_yuna_reject_4"
     },
     "wall_yuna_reject_4": {
+        "character": "assets/images/characters/yuna_sad.png",
         "background": "assets/images/background/yuna_hideout.png",
         "night": true,
         "next": "wall_yuna_glimpse_1"
@@ -822,6 +837,7 @@ Object.assign(SCENARIO[4], {
 
     // Cross-route glimpse: 교문 앞 서연 목격
     "wall_yuna_glimpse_1": {
+        "character": null,
         "background": "assets/images/background/school_back.png",
         "night": true,
         "next": "wall_yuna_glimpse_2"
@@ -850,26 +866,31 @@ Object.assign(SCENARIO[4], {
     // 공통 ending / fallback
     // ========================================================================
     "day4_night_regret": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "day4_night_regret_2"
     },
     "day4_night_regret_2": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "day4_night_regret_msg"
     },
     "day4_night_regret_msg": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "day4_night_regret_reply"
     },
     "day4_night_regret_reply": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "day4_night_sleep"
     },
     "day4_night_reflect": {
+        "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "day4_night_sleep"

@@ -37,6 +37,7 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_seo_gate_2"
     },
     "morning3_seo_gate_2": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school.png",
         "next": "morning3_seo_gate_3"
     },
@@ -46,6 +47,7 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_seo_gate_4"
     },
     "morning3_seo_gate_4": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school.png",
         "next": "morning3_seo_gate_5"
     },
@@ -60,6 +62,7 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_seo_gate_7"
     },
     "morning3_seo_gate_7": {
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school.png",
         "setFlags": ["morning3_companion_seoyeon"],
         "next": "morning3_classroom_1"
@@ -72,10 +75,12 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_yuna_gate_2"
     },
     "morning3_yuna_gate_2": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/school.png",
         "next": "morning3_yuna_gate_3"
     },
     "morning3_yuna_gate_3": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/school.png",
         "next": "morning3_yuna_gate_4"
     },
@@ -85,6 +90,7 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_yuna_gate_5"
     },
     "morning3_yuna_gate_5": {
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/school.png",
         "next": "morning3_yuna_gate_6"
     },
@@ -112,6 +118,7 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_dain_gate_3"
     },
     "morning3_dain_gate_3": {
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/school.png",
         "next": "morning3_dain_gate_4"
     },
@@ -121,6 +128,7 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_dain_gate_5"
     },
     "morning3_dain_gate_5": {
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/school.png",
         "setFlags": ["morning3_companion_dain"],
         "next": "morning3_classroom_1"
@@ -128,6 +136,7 @@ Object.assign(SCENARIO[3], {
 
     // === 교실 도착 ===
     "morning3_classroom_1": {
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "branches": [
             {
@@ -186,6 +195,7 @@ Object.assign(SCENARIO[3], {
 
     // === 주말 데이트 제안 도입 ===
     "morning3_date_intro": {
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "next": "morning3_date_seo_1"
     },
@@ -237,10 +247,12 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_date_dain_2"
     },
     "morning3_date_dain_2": {
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_school.png",
         "next": "morning3_date_dain_3"
     },
     "morning3_date_dain_3": {
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_school.png",
         "next": "morning3_date_dain_choice"
     },
@@ -278,6 +290,7 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_date_dain_decline_narr"
     },
     "morning3_date_dain_decline_narr": {
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "branches": [
             {
@@ -290,20 +303,24 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "morning3_date_dain_decline_inner": {
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "next": "morning3_date_dain_decline_inner_2"
     },
     "morning3_date_dain_decline_inner_2": {
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "next": "morning3_date_yuna_1"
     },
 
     // === 유나 데이트 제안 (쪽지) ===
     "morning3_date_yuna_1": {
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "next": "morning3_date_yuna_2"
     },
     "morning3_date_yuna_2": {
+        "character": null,
         "background": "assets/images/background/room_school.png",
         "next": "morning3_date_yuna_choice"
     },
@@ -356,6 +373,7 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "morning3_multi_from_seo": {
+        "character": null,
         "branches": [
             {
                 "next": "morning3_set_multiple",
@@ -371,6 +389,7 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "morning3_multi_from_dain": {
+        "character": null,
         "branches": [
             {
                 "next": "morning3_set_multiple",
@@ -382,6 +401,7 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "morning3_multi_from_yuna": {
+        "character": null,
         "next": "morning3_end"
     },
     "morning3_set_multiple": {
