@@ -90,17 +90,17 @@ Object.assign(SCENARIO[2], {
         "next": "morning2_minsu_1"
     },
     "morning2_minsu_1": {
-        "character": null,
+        "character": "assets/images/characters/minsu_silhouette.svg",
         "background": "assets/images/background/room_school.png",
         "next": "morning2_minsu_2"
     },
     "morning2_minsu_2": {
-        "character": null,
+        "character": "assets/images/characters/minsu_silhouette.svg",
         "background": "assets/images/background/room_school.png",
         "next": "morning2_minsu_3"
     },
     "morning2_minsu_3": {
-        "character": null,
+        "character": "assets/images/characters/minsu_silhouette.svg",
         "background": "assets/images/background/room_school.png",
         "next": "morning2_dain_claim_1"
     },
@@ -200,37 +200,37 @@ Object.assign(SCENARIO[2], {
         "next": "morning2_haeun_1"
     },
     "morning2_haeun_1": {
-        "character": null,
+        "character": "assets/images/characters/haeun_silhouette.svg",
         "background": "assets/images/background/school_hallway.png",
         "next": "morning2_haeun_2"
     },
     "morning2_haeun_2": {
-        "character": null,
+        "character": "assets/images/characters/haeun_silhouette.svg",
         "background": "assets/images/background/school_hallway.png",
         "next": "morning2_haeun_3"
     },
     "morning2_haeun_3": {
-        "character": null,
+        "character": "assets/images/characters/haeun_silhouette.svg",
         "background": "assets/images/background/school_hallway.png",
         "next": "morning2_haeun_4"
     },
     "morning2_haeun_4": {
-        "character": null,
+        "character": "assets/images/characters/haeun_silhouette.svg",
         "background": "assets/images/background/school_hallway.png",
         "next": "morning2_haeun_5"
     },
     "morning2_haeun_5": {
-        "character": null,
+        "character": "assets/images/characters/haeun_silhouette.svg",
         "background": "assets/images/background/school_hallway.png",
         "next": "morning2_haeun_6"
     },
     "morning2_haeun_6": {
-        "character": null,
+        "character": "assets/images/characters/haeun_silhouette.svg",
         "background": "assets/images/background/school_hallway.png",
         "next": "morning2_haeun_7"
     },
     "morning2_haeun_7": {
-        "character": null,
+        "character": "assets/images/characters/haeun_silhouette.svg",
         "background": "assets/images/background/school_hallway.png",
         "next": "morning2_end"
     },

@@ -77,7 +77,7 @@ Object.assign(SCENARIO[4], {
 
     // --- Seoyeon: Confession proceeds ---
     "confess_seo_yes_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/top_school.png",
         "sunset": true,
         "next": "confess_seo_yes_2"
@@ -152,7 +152,7 @@ Object.assign(SCENARIO[4], {
 
     // --- Seoyeon: Confession postponed ---
     "confess_seo_no_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/top_school.png",
         "sunset": true,
         "next": "confess_seo_no_2"
@@ -227,7 +227,7 @@ Object.assign(SCENARIO[4], {
 
     // --- Yuna: Confession proceeds ---
     "confess_yuna_yes_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "next": "confess_yuna_yes_2"
@@ -284,7 +284,7 @@ Object.assign(SCENARIO[4], {
 
     // --- Yuna: Confession postponed ---
     "confess_yuna_no_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "next": "confess_yuna_no_2"
@@ -359,7 +359,7 @@ Object.assign(SCENARIO[4], {
 
     // --- Dain: Confession proceeds ---
     "confess_dain_yes_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/gym.png",
         "sunset": true,
         "next": "confess_dain_yes_2"
@@ -422,7 +422,7 @@ Object.assign(SCENARIO[4], {
 
     // --- Dain: Confession postponed ---
     "confess_dain_no_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/gym.png",
         "sunset": true,
         "next": "confess_dain_no_2"
