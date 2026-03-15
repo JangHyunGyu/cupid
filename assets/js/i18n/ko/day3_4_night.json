@@ -1,14 +1,14 @@
 {
     "night3_start": {
-        "name": "나",
+        "name": "{name}",
         "text": "*방에 돌아왔다. 무거운 하루였다.*"
     },
     "night3_start_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*핸드폰을 본다.*"
     },
     "night3_faithful_check": {
-        "name": "나",
+        "name": "{name}",
         "text": "*메시지가 와 있다.*"
     },
     "night3_faithful_msg_seo_1": {
@@ -20,11 +20,11 @@
         "text": "\"...근데 또 와도 돼\""
     },
     "night3_faithful_msg_seo_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*'또 와도 돼'. — 이 사람한테는 이게 '와 줘'와 같은 말이다.*"
     },
     "night3_faithful_msg_yuna_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*유나가 쪽지 사진을 보냈다. 노트에 쓰인 한 줄.*"
     },
     "night3_faithful_msg_yuna_2": {
@@ -40,23 +40,23 @@
         "text": "\"아 근데 고마워\""
     },
     "night3_faithful_msg_dain_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*느낌표가 하나도 없다. 'ㅋㅋ'로 위장했지만 — 진심이 보인다.*"
     },
     "night3_dream_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*꿈을 꿨다. — 누군가와 나란히 걷고 있었다.*"
     },
     "night3_dream_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*얼굴은 보이지 않는데, 옆에 있다는 것만으로 마음이 편했다.*"
     },
     "night3_dream_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*좋은 꿈이었다.*"
     },
     "night3_cheat_msg_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*방에 돌아왔다. 무거운 하루였다. 핸드폰을 본다.*"
     },
     "night3_cheat_msg_2": {
@@ -76,11 +76,11 @@
         "text": "\"그것만\""
     },
     "night3_nightmare_1": {
-        "name": "나",
+        "name": "{name}",
         "text": "*잠이 들었다. — 꿈.*"
     },
     "night3_nightmare_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*어둠 속에 서 있다. 아무것도 보이지 않는다.*"
     },
     "night3_nightmare_3": {
@@ -96,11 +96,11 @@
         "text": "\"온다면서. 기다렸는데.\""
     },
     "night3_nightmare_6": {
-        "name": "나",
+        "name": "{name}",
         "text": "*세 방향에서 손이 보인다. 어둠 속에서 희미하게.*"
     },
     "night3_nightmare_choice": {
-        "name": "나",
+        "name": "{name}",
         "text": "*누구의 손을 잡을 것인가.*",
         "choices": [
             "서연의 손을 잡는다",
@@ -109,23 +109,23 @@
         ]
     },
     "night3_nightmare_end": {
-        "name": "나",
+        "name": "{name}",
         "text": "*손을 뻗었다. — 잡히지 않는다.*"
     },
     "night3_nightmare_end_2": {
-        "name": "나",
+        "name": "{name}",
         "text": "*모두 사라지고, 남은 건 어둠뿐.*"
     },
     "night3_nightmare_end_3": {
-        "name": "나",
+        "name": "{name}",
         "text": "*— 땀에 젖은 채 눈을 떴다. 새벽 3시. 천장이 보인다.*"
     },
     "night3_nightmare_end_4": {
-        "name": "나",
+        "name": "{name}",
         "text": "*내가 뭘 한 거지.*"
     },
     "night3_end": {
-        "name": "나",
+        "name": "{name}",
         "text": "*밤이 깊어간다...*"
     }
 }
