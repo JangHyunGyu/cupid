@@ -430,21 +430,21 @@ Object.assign(SCENARIO[4], {
 ,
     "date_seo_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_end"
     }
 ,
     "date_yuna_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "date_yuna_end"
     }
 ,
     "date_dain_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/playground.png",
+        "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_end"
     }

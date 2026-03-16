@@ -200,7 +200,7 @@ Object.assign(SCENARIO[5], {
 ,
     "tour_seo_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/top_school.png",
+        "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_end"
     }
@@ -214,7 +214,7 @@ Object.assign(SCENARIO[5], {
 ,
     "tour_dain_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "tour_dain_end"
     }

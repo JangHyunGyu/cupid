@@ -348,7 +348,7 @@ Object.assign(SCENARIO[2], {
 ,
     "after2_dain_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "after2_dain_end"
     },
