@@ -925,7 +925,10 @@ class GameEngine {
         await this.sceneRenderer.updateCharacters(scene, sceneId);
 
         // ⚠️ 다시 한번 Race Condition 체크
-        if (this.sceneRenderer.currentSceneId !== sceneId) return;
+        if (this.sceneRenderer.currentSceneId !== sceneId) { this._isRendering = false; return; }
+
+        // 비동기 로딩 완료 → 렌더링 락 해제 (이제 클릭 가능)
+        this._isRendering = false;
 
         // ─────────────────────────────────────────────────────────
         // 🏷️ 10단계: 이름 태그 설정
