@@ -218,7 +218,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/home_room.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "night2_hidden_check"
-    }
+    },
 
     // =========================================================================
     // HIDDEN ROUTE - Day 2 Night messages
