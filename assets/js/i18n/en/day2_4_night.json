@@ -123,5 +123,23 @@
     "night2_end_4": {
         "name": "Me",
         "text": "*There's still distance between 'on my mind' and 'in love.' — But that distance feels shorter than yesterday.*"
+    },
+    "night2_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Exchanging late-night messages with Seoyeon.*",
+        "context": "Night 2, chatting with Seoyeon. Conversation feels more natural than yesterday.",
+        "personality": "Seoyeon is the cool student council president. She shows a more honest side at night."
+    },
+    "night2_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Exchanging late-night messages with Dain.*",
+        "context": "Night 2, chatting with Dain.",
+        "personality": "Dain is energetic even at night, but sometimes gets serious."
+    },
+    "night2_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Exchanging late-night messages with Yuna.*",
+        "context": "Night 2, chatting with Yuna. She's more talkative than usual.",
+        "personality": "Yuna is a mysterious literary girl. Her walls lower a bit at night. Longer messages mean she's opening up."
     }
 }

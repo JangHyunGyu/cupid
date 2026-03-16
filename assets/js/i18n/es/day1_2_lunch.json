@@ -435,5 +435,23 @@
     "lunch_end": {
         "name": "Yo",
         "text": "*Suena la campana. El almuerzo terminó.*"
+    },
+    "lunch_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Sentados uno al lado del otro con Seoyeon en la azotea. La brisa es agradable.*",
+        "context": "Almuerzo del primer día, acaban de comer el bento de Seoyeon en la azotea. Aún conociéndose.",
+        "personality": "Seoyeon es la presidenta del consejo estudiantil, elegante y directa. Muestra interés a través de acciones."
+    },
+    "lunch_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Sentados en un banco con Dain en la tienda escolar, comiendo pan.*",
+        "context": "Almuerzo del primer día, acaban de jugar piedra-papel-tijera con Dain. Ella perdió y compró pan.",
+        "personality": "Dain es una atleta enérgica. Le encanta el contacto físico, usa muchas exclamaciones. Dura por fuera, suave por dentro."
+    },
+    "lunch_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Leyendo libros junto a Yuna en la biblioteca. Es silencioso, pero cómodo.*",
+        "context": "Almuerzo del primer día, acaban de pasar tiempo con Yuna en la biblioteca.",
+        "personality": "Yuna es una chica literaria y misteriosa. Frases cortas y secas, pero cuando se abre, sus frases se alargan."
     }
 }

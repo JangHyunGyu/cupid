@@ -324,5 +324,23 @@
     "after3_final": {
         "name": "Ich",
         "text": "*Der Nachmittag ist vorbei. — Was ich heute gesehen habe, lässt mich nicht los.*"
+    },
+    "after3_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon im Flur gegenüberstehend. Ihr Ausdruck ist kompliziert.*",
+        "context": "Tag 3, nach der Konfrontation mit Seoyeon. Das Vertrauen ist erschüttert.",
+        "personality": "Seoyeon ist besitzergreifend und direkt wenn eifersüchtig. Verletzt aber versucht es nicht zu zeigen."
+    },
+    "after3_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Neben Yuna gehend. Ihr Blick ist kühl.*",
+        "context": "Tag 3, nach dem Gespräch mit Yuna.",
+        "personality": "Yuna ist emotional erschüttert. Mehr Bestätigung suchend als eifersüchtig."
+    },
+    "after3_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Mit Dain auf einer Bank am Spielplatz sitzend. Sie ist ruhiger als sonst.*",
+        "context": "Tag 3, nach dem Gespräch mit Dain. Verletzt aber tut so als wäre sie fröhlich.",
+        "personality": "Dain nutzt Fröhlichkeit als Verteidigung. Weniger Ausrufezeichen bedeuten Ehrlichkeit."
     }
 }

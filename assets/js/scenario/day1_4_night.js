@@ -165,7 +165,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
-        "next": "night_end_1"
+        "next": "night_seo_freetalk"
     },
     "night_yuna_late_1": {
         "background": "assets/images/background/room_my.png",
@@ -189,7 +189,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
-        "next": "night_end_1"
+        "next": "night_yuna_freetalk"
     },
     "night_dain_late_1": {
         "background": "assets/images/background/room_my.png",
@@ -213,7 +213,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
-        "next": "night_end_1"
+        "next": "night_dain_freetalk"
     },
     "night_end_1": {
         "background": "assets/images/background/room_my.png",
@@ -240,5 +240,25 @@ Object.assign(SCENARIO[1], {
         "fade": true,
         "changeDay": 2,
         "next": "morning2_start"
+    }
+,
+    "night_seo_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/home_room.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "night_end_1"
+    }
+,
+    "night_dain_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/home_room.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "night_end_1"
+    },
+    "night_yuna_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/home_room.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "night_end_1"
     }
 });

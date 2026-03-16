@@ -130,5 +130,23 @@
     "night_end_4": {
         "name": "Yo",
         "text": "*Mañana — puede que sea aún más interesante.*"
+    },
+    "night_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Llegó un mensaje de Seoyeon.*",
+        "context": "Primera noche, chateando con Seoyeon por mensajero.",
+        "personality": "Seoyeon es la presidenta del consejo. Sus mensajes son tranquilos y provocativos."
+    },
+    "night_dain_freetalk": {
+        "name": "Dain",
+        "text": "*El bombardeo de mensajes de Dain ha comenzado.*",
+        "context": "Primera noche, chateando con Dain por mensajero.",
+        "personality": "Dain es una atleta enérgica. Sus mensajes son bombas de exclamaciones."
+    },
+    "night_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Llegó un mensaje corto de Yuna.*",
+        "context": "Primera noche, chateando con Yuna por mensajero.",
+        "personality": "Yuna es una chica literaria. Sus mensajes son cortos y crípticos."
     }
 }

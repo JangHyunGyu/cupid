@@ -266,5 +266,23 @@
     "date_dain_end": {
         "name": "Moi",
         "text": "*Elle sourit. -- Mais ses yeux ne sourient pas.*"
+    },
+    "date_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*En rendez-vous avec Seoyeon. Elle est plus douce que d'habitude.*",
+        "context": "Rendez-vous du jour 4 avec Seoyeon.",
+        "personality": "Pendant les rendez-vous, le calme de Seoyeon vacille et son côté honnête apparaît."
+    },
+    "date_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Passer du temps avec Yuna. Elle est plus bavarde que d'habitude.*",
+        "context": "Rendez-vous du jour 4 avec Yuna.",
+        "personality": "Pendant les rendez-vous, les phrases de Yuna s'allongent. Deux phrases consécutives équivalent à une confession."
+    },
+    "date_dain_freetalk": {
+        "name": "Dain",
+        "text": "*En rendez-vous avec Dain. Elle est plus prudente que d'habitude.*",
+        "context": "Rendez-vous du jour 4 avec Dain.",
+        "personality": "En rendez-vous, Dain est nerveuse et baisse le volume. Les exclamations disparaissent quand elle est sincère."
     }
 }

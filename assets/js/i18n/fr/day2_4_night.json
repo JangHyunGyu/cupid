@@ -123,5 +123,23 @@
     "night2_end_4": {
         "name": "Moi",
         "text": "*Il y a encore de la distance entre 'dans ma tete' et 'amoureux'. -- Mais cette distance semble plus courte qu'hier.*"
+    },
+    "night2_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Échange de messages nocturnes avec Seoyeon.*",
+        "context": "Nuit 2, discussion avec Seoyeon.",
+        "personality": "Seoyeon montre un côté plus honnête la nuit."
+    },
+    "night2_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Échange de messages nocturnes avec Dain.*",
+        "context": "Nuit 2, discussion avec Dain.",
+        "personality": "Dain est énergique même la nuit, mais parfois sérieuse."
+    },
+    "night2_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Échange de messages nocturnes avec Yuna.*",
+        "context": "Nuit 2, discussion avec Yuna.",
+        "personality": "Yuna baisse ses murs la nuit. Des messages plus longs signifient qu'elle s'ouvre."
     }
 }
