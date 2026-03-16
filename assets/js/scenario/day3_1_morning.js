@@ -315,12 +315,12 @@ Object.assign(SCENARIO[3], {
 
     // === 유나 데이트 제안 (쪽지) ===
     "morning3_date_yuna_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/room_school.png",
         "next": "morning3_date_yuna_2"
     },
     "morning3_date_yuna_2": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/room_school.png",
         "next": "morning3_date_yuna_choice"
     },
@@ -560,7 +560,7 @@ Object.assign(SCENARIO[3], {
     // === 종료 ===
     "morning3_end": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "lunch3_start"
     }
 });

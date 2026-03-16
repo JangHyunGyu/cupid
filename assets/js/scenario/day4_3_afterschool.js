@@ -179,7 +179,7 @@ Object.assign(SCENARIO[4], {
 
     // ========== YUNA CONFESSION (도서관 별관) ==========
     "confess_yuna_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "bgm": "confession.mp3",
         "sunset": true,
@@ -311,7 +311,7 @@ Object.assign(SCENARIO[4], {
 
     // ========== DAIN CONFESSION (체육관) ==========
     "confess_dain_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/gym.png",
         "bgm": "confession.mp3",
         "sunset": true,

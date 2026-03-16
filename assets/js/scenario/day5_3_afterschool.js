@@ -23,7 +23,7 @@ Object.assign(SCENARIO[5], {
 
     // ========== 서연 미선택 시 작별 (복도) ==========
     "after5_farewell_seo_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "next": "after5_farewell_seo_2"

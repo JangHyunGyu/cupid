@@ -173,7 +173,7 @@ Object.assign(SCENARIO[3], {
     },
 
     "lunch3_expose_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_laugh.png",
         "background": "assets/images/background/room_school.png",
         "setFlag": "day3_caught_multiple_dates",
         "next": "lunch3_expose_2"

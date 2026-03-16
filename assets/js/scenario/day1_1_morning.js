@@ -385,17 +385,17 @@ Object.assign(SCENARIO[1], {
         "next": "classroom_yuna_note_1"
     },
     "classroom_yuna_note_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_yuna_note_2"
     },
     "classroom_yuna_note_2": {
-        "character": null,
+        "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_yuna_note_3"
     },
     "classroom_yuna_note_3": {
-        "character": null,
+        "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_yuna_note_4"
     },
