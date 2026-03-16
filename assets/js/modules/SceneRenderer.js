@@ -296,6 +296,10 @@ class SceneRenderer {
         // 캐릭터 정보가 없으면 리턴 (이전 캐릭터 유지)
         if (!scene.hasOwnProperty('characters') && !scene.hasOwnProperty('character')) return;
 
+        // 호출 ID로 이전 비동기 작업 무효화
+        this._charUpdateId = (this._charUpdateId || 0) + 1;
+        const updateId = this._charUpdateId;
+
         const newCharMap = {};     // 슬롯별 새 이미지 URL
         const charOptions = {};    // 슬롯별 옵션 (투명도 등)
 
@@ -348,6 +352,24 @@ class SceneRenderer {
             return;
         }
 
+        // ★ 퇴장 캐릭터를 await 전에 즉시 처리 (레이스 컨디션 방지)
+        // 새 이미지가 없는 슬롯의 기존 이미지를 바로 페이드아웃 시작
+        const exitPromises = [];
+        Object.keys(this.uiManager.charSlots).forEach(pos => {
+            if (!newCharMap[pos] && changedSlots.includes(pos)) {
+                const slot = this.uiManager.charSlots[pos];
+                if (!slot) return;
+                const oldImg = slot.querySelector('img');
+                if (oldImg) {
+                    oldImg.classList.add('char-fade-out');
+                    exitPromises.push(new Promise(r => setTimeout(() => {
+                        if (slot.contains(oldImg)) slot.removeChild(oldImg);
+                        r();
+                    }, 260)));
+                }
+            }
+        });
+
         // 이미지 프리로드
         const charPromises = Object.entries(newCharMap)
             .filter(([pos]) => changedSlots.includes(pos))
@@ -369,7 +391,9 @@ class SceneRenderer {
             });
 
         const loadedChars = await Promise.all(charPromises);
-        if (this.currentSceneId !== sceneId) return;
+
+        // 비동기 대기 중 새 호출이 들어왔으면 무효화
+        if (this.currentSceneId !== sceneId || this._charUpdateId !== updateId) return;
 
         // 캐릭터 이름 프리픽스 추출 (seyoun_normal.png → seyoun)
         const getCharPrefix = (src) => {
@@ -377,23 +401,6 @@ class SceneRenderer {
             const filename = src.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
             return filename.split('_')[0];
         };
-
-        // 퇴장 캐릭터 페이드아웃
-        const exitPromises = [];
-        Object.keys(this.uiManager.charSlots).forEach(pos => {
-            if (!newCharMap[pos] && changedSlots.includes(pos)) {
-                const slot = this.uiManager.charSlots[pos];
-                if (!slot) return;
-                const oldImg = slot.querySelector('img');
-                if (oldImg) {
-                    oldImg.classList.add('char-fade-out');
-                    exitPromises.push(new Promise(r => setTimeout(() => {
-                        if (slot.contains(oldImg)) slot.removeChild(oldImg);
-                        r();
-                    }, 260)));
-                }
-            }
-        });
 
         // 교체 캐릭터 처리
         const swapPromises = [];
