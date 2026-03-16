@@ -58,7 +58,7 @@
     },
     "after3_seo_choice1": {
         "name": "Yo",
-        "text": "*서연(Seoyeon) se detiene un instante. Sus labios tiemblan. — Luego sonríe. Una sonrisa sin ensayar.*"
+        "text": "*Seoyeon se detiene un instante. Deja los palillos. Despacio.*"
     },
     "after3_seo_choice1_react": {
         "name": "서연(Seoyeon)",
@@ -271,7 +271,7 @@
     },
     "after3_confront_admit_6": {
         "name": "Yo",
-        "text": "*Su espalda está recta. Perfectamente. — Pero sus hombros tiemblan.*"
+        "text": "*Su espalda está recta. Perfectamente. — Pero tiene los puños cerrados. Los nudillos blancos.*"
     },
     "after3_confront_excuse": {
         "name": "서연(Seoyeon)",

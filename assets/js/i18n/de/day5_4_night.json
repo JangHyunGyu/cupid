@@ -101,27 +101,27 @@
     },
     "true_epilogue_1": {
         "name": "Ich",
-        "text": "*Ich habe versucht, diesem Gefühl keinen Namen zu geben. Denn sobald man es benennt, gibt es kein Zurück.*"
+        "text": "*Es waren fünf Tage.*"
     },
     "true_epilogue_2": {
         "name": "Ich",
-        "text": "*Aber es war bereits zu spät. Vom allerersten Tag an, als sich unsere Blicke trafen.*"
+        "text": "*Die Uniform war steif, die Kirschblüten ließen mich niesen, und ich wusste nicht, was ich vor dem Schultor tun sollte.*"
     },
     "true_epilogue_3": {
         "name": "Ich",
-        "text": "*Ich weiß nicht genau, wann ich mich verliebt habe. Ich weiß nur, dass ich eines Tages kein Morgen ohne diese Person mehr vorstellen konnte.*"
+        "text": "*Aber rückblickend — ich glaube, es war schon in dem Moment entschieden, als sich unsere Blicke zum ersten Mal trafen. Ich brauchte nur fünf Tage, um es zuzugeben.*"
     },
     "true_epilogue_4": {
         "name": "Ich",
-        "text": "*Manche würden sagen, selbst solche Gefühle haben ein Verfallsdatum. Aber ich weiß es besser. Das ist nichts, was erkaltet — es ist etwas, das einsickert.*"
+        "text": "*Mein Knie ist nicht geheilt. Meine Familie ist nicht glücklicher. Die Menschen, die gegangen sind, sind nicht zurückgekommen. — Aber zumindest muss ich nicht mehr üben, allein zu weinen. Nicht mehr.*"
     },
     "true_epilogue_5": {
         "name": "Ich",
-        "text": "*Jemanden ganz und gar zu lieben — bedeutet, inmitten aller Ungewissheit der Welt eine einzige Gewissheit zu tragen.*"
+        "text": ""
     },
     "true_epilogue_6": {
         "name": "Ich",
-        "text": "*Mein Knie ist nicht geheilt. Meine Familie ist nicht glücklicher. Die Menschen, die gegangen sind, kamen nicht zurück. — Aber zumindest muss ich nicht mehr üben, allein zu weinen. Nicht mehr.*"
+        "text": ""
     },
     "true_epilogue_7": {
         "name": "System",
@@ -169,7 +169,7 @@
     },
     "mayhem_4": {
         "name": "Ich",
-        "text": "*Erst nachdem ich allen dreien beim Weggehen zugesehen hatte, verstand ich, dass die Freundlichkeit, niemals ablehnen zu können, die grausamste Gewalt von allen ist.*"
+        "text": "*Ich sah den dreien hinterher. Keine drehte sich um. — Das war die Antwort.*"
     },
     "mayhem_5": {
         "name": "Ich",
@@ -177,7 +177,7 @@
     },
     "mayhem_6": {
         "name": "Ich",
-        "text": "*Die Freundlichkeit, niemals abzulehnen — die grausamste Gewalt.*"
+        "text": "*Ich sah den dreien hinterher. Keine drehte sich um.*"
     },
     "mayhem_7": {
         "name": "System",
@@ -225,23 +225,23 @@
     },
     "friend_1": {
         "name": "Ich",
-        "text": "*Ich erinnere mich. Diese Fingerspitzen, die auf dem Dach im Wind die Haare zurückstrichen.*"
+        "text": "*Am Ende konnte ich es nicht sagen.*"
     },
     "friend_2": {
         "name": "Ich",
-        "text": "*Hätte ich damals Ich mag dich gesagt, wäre diese Nacht anders gewesen?*"
+        "text": "*Ich weiß nicht, ob es Reue oder eine Entscheidung ist. Nur — fünf Tage endeten mit diesen drei Worten, die in meiner Kehle steckenblieben.*"
     },
     "friend_3": {
         "name": "Ich",
-        "text": "*Die nächste Distanz ist auch die fernste. Eine Distanz namens „Freunde.“*"
+        "text": "*An meiner alten Schule war es genauso. Und hier bin ich wieder.*"
     },
     "friend_4": {
         "name": "Ich",
-        "text": "*Die Worte, die an meinen Lippen verweilten, bevor sie hinuntergeschluckt wurden, verschwinden nicht. Sie werden leise Jahresringe in mir einkerben.*"
+        "text": "*Beim Verlassen des Schultors ist eine Nachricht auf meinem Handy. 'Danke für heute lol' — Der Ton eines Freundes. Ein perfekt freundschaftlicher Ton.*"
     },
     "friend_5": {
         "name": "Ich",
-        "text": "*Manche Geschichten dauern länger, gerade weil sie nie abgeschlossen werden. Diese Jahreszeit wird so in Erinnerung bleiben.*"
+        "text": "*...Auch an dieser Schule habe ich sie heruntergeschluckt.*"
     },
     "friend_6": {
         "name": "Ich",

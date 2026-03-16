@@ -29,7 +29,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "{name}",
-        "text": "*'바보'라고 했는데 목소리가 떨린다.*"
+        "text": "*'바보'라고 했는데 — 귀가 빨갛다. 또.*"
     },
     "date_seo_pretty_low": {
         "name": "서연",
@@ -149,7 +149,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*세상에 두 사람만 남은 것 같다. — 이어폰 하나로 만들어진 작은 세계.*"
+        "text": "*이어폰 줄의 길이만큼이 거리다. 30센티. — 이보다 가까우면 닿고, 이보다 멀면 빠진다.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",

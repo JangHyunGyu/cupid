@@ -58,7 +58,7 @@
     },
     "after3_seo_choice1": {
         "name": "{name}",
-        "text": "*서연이 잠깐 멈춘다. 입술이 떨린다. — 그리고 웃는다. 연습하지 않은 웃음.*"
+        "text": "*서연이 잠깐 멈춘다. 젓가락을 내려놓는다. 천천히.*"
     },
     "after3_seo_choice1_react": {
         "name": "서연",
@@ -271,7 +271,7 @@
     },
     "after3_confront_admit_6": {
         "name": "{name}",
-        "text": "*등이 곧다. 완벽하게. — 근데 어깨가 떨리고 있다.*"
+        "text": "*등이 곧다. 완벽하게. — 근데 주먹이 쥐어져 있다. 손등이 하얗다.*"
     },
     "after3_confront_excuse": {
         "name": "서연",

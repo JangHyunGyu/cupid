@@ -65,7 +65,7 @@
     },
     "wall_seo_15": {
         "name": "Moi",
-        "text": "*Seoyeon s’est arrêtée de parler. Ses lèvres tremblent. — Et lentement, très lentement, l’expression qu’elle maintenait si parfaitement s’est effondrée. Des larmes coulent sur son visage. En silence.*"
+        "text": "*Seoyeon a cessé de parler. Ses mains sont serrées sur ses genoux.*"
     },
     "wall_seo_hug_choice": {
         "name": "Moi",
@@ -81,7 +81,7 @@
     },
     "wall_seo_hug_2": {
         "name": "Moi",
-        "text": "*Seoyeon a enfoui son visage dans ma poitrine. Ses petites épaules tremblent.*"
+        "text": "*Seoyeon a enfoui son visage dans ma poitrine. Ma chemise d'uniforme se mouille.*"
     },
     "wall_seo_hug_3": {
         "name": "서연(Seoyeon)",
@@ -130,7 +130,7 @@
     },
     "wall_seo_after_line_4": {
         "name": "Moi",
-        "text": "*Seoyeon sourit. Un sourire non répété. — Son maquillage a coulé, ses yeux sont gonflés, et pourtant c’est le plus beau sourire.*"
+        "text": "*Seoyeon sourit. Un sourire non répété. — Le maquillage a coulé, ses yeux sont gonflés. Mais je ne peux pas détourner le regard.*"
     },
     "wall_seo_after_line_5": {
         "name": "서연(Seoyeon)",
@@ -383,7 +383,7 @@
     },
     "wall_yuna_12": {
         "name": "Moi",
-        "text": "*La voix de Yuna tremble. — Ses phrases sont bien plus longues que d’habitude.*"
+        "text": "*Les phrases de Yuna sont bien plus longues que d'habitude. — C'est la première fois que je l'entends parler autant.*"
     },
     "wall_yuna_13": {
         "name": "유나(Yuna)",
@@ -448,7 +448,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "Moi",
-        "text": "*Yuna se retourne. Ses épaules tremblent.*"
+        "text": "*Yuna se retourne. Ses pas sont rapides. — Elle ne court pas vraiment, mais c'est la démarche de quelqu'un qui veut courir.*"
     },
     "wall_yuna_reject_4": {
         "name": "Moi",

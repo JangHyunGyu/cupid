@@ -13,7 +13,7 @@
     },
     "confess_seo_4": {
         "name": "Ich",
-        "text": "*Ich habe versucht, diesem Gefühl keinen Namen zu geben. Denn sobald ich es benenne, gibt es kein Zurück mehr.*"
+        "text": "*Seoyeon lehnt am Geländer. Der Wind weht ihr Haar. — Sie streicht es mit dem kleinen Finger zurück. Diese Angewohnheit.*"
     },
     "confess_seo_5": {
         "name": "Ich",
@@ -45,7 +45,7 @@
     },
     "confess_seo_yes_5": {
         "name": "Ich",
-        "text": "*Meine Nägel graben sich in meine Handflächen. Ich weiß nicht, ob der Sonnenuntergang mich blendet oder ob meine Augen einfach brennen. -- Sag es einfach. Auch wenn die Worte hässlich klingen.*"
+        "text": "*Die Worte sind ein Durcheinander. Ich habe nichts davon vorbereitet, aber ich kann nicht aufhören.*"
     },
     "confess_seo_yes_6": {
         "name": "Ich",
@@ -81,7 +81,7 @@
     },
     "confess_seo_no_2": {
         "name": "Ich",
-        "text": "*Feige Worte. Ich weiß es.*"
+        "text": "*Am ersten Tag habe ich dasselbe gesagt. Damals meinte ich es ernst. Jetzt ist es Flucht.*"
     },
     "confess_seo_no_3": {
         "name": "Ich",
@@ -105,7 +105,7 @@
     },
     "confess_yuna_4": {
         "name": "Ich",
-        "text": "*Ich habe versucht, diesem Gefühl keinen Namen zu geben. Denn sobald ich es benenne, gibt es kein Zurück mehr.*"
+        "text": "*Yuna sitzt auf dem Sofa und sieht mich an. Als hätte sie gewartet.*"
     },
     "confess_yuna_5": {
         "name": "Ich",
@@ -133,7 +133,7 @@
     },
     "confess_yuna_yes_4": {
         "name": "Ich",
-        "text": "*Meine Nägel graben sich in meine Handflächen. -- Sag es einfach. Auch wenn die Worte hässlich klingen.*"
+        "text": "*Vor Yuna brauche ich keine langen Worte. Sie ist jemand, der zwischen den Zeilen liest.*"
     },
     "confess_yuna_yes_5": {
         "name": "Ich",
@@ -161,7 +161,7 @@
     },
     "confess_yuna_no_2": {
         "name": "Ich",
-        "text": "*Feige Worte. Ich weiß es.*"
+        "text": "*Yuna liest zwischen den Zeilen. Sie wird wissen, dass diese Worte nur Flucht sind.*"
     },
     "confess_yuna_no_3": {
         "name": "Ich",
@@ -185,7 +185,7 @@
     },
     "confess_dain_4": {
         "name": "Ich",
-        "text": "*Ich habe versucht, diesem Gefühl keinen Namen zu geben. Denn sobald ich es benenne, gibt es kein Zurück mehr.*"
+        "text": "*Dain hält einen Ball. Beiläufig. — Aber ihre Finger sind weiß. Sie umklammert ihn fest.*"
     },
     "confess_dain_5": {
         "name": "Ich",
@@ -213,7 +213,7 @@
     },
     "confess_dain_yes_4": {
         "name": "Ich",
-        "text": "*Meine Nägel graben sich in meine Handflächen. -- Sag es einfach. Auch wenn die Worte hässlich klingen.*"
+        "text": "*Das ist kein Schere-Stein-Papier, kein Spiel. Aber das ist alles für mich.*"
     },
     "confess_dain_yes_5": {
         "name": "Ich",
@@ -245,7 +245,7 @@
     },
     "confess_dain_no_2": {
         "name": "Ich",
-        "text": "*Feige Worte. Ich weiß es.*"
+        "text": "*Ich kann ihr den Ball zuspielen, aber drei Worte bringe ich nicht heraus. Erbärmlich.*"
     },
     "confess_dain_no_3": {
         "name": "Ich",
