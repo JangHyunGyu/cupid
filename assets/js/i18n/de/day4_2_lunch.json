@@ -11,8 +11,8 @@
         "name": "Ich",
         "text": "*Was sage ich?*",
         "choices": [
-            "\"Du siehst heute... hübsch aus.\"",
-            "\"Du strahlst heute richtig.\""
+            "Du siehst heute... hübsch aus.",
+            "Du strahlst heute richtig."
         ]
     },
     "date_seo_pretty_high": {
@@ -21,11 +21,11 @@
     },
     "date_seo_pretty_high_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...So etwas. Hast du das vorbereitet?\""
+        "text": "...So etwas. Hast du das vorbereitet?"
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
-        "text": "\"Ist mir gerade eingefallen.\""
+        "text": "Ist mir gerade eingefallen."
     },
     "date_seo_pretty_high_4": {
         "name": "Ich",
@@ -33,11 +33,11 @@
     },
     "date_seo_pretty_low": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Was, einfach so? Kündige sowas vorher an.\""
+        "text": "...Was, einfach so? Kündige sowas vorher an."
     },
     "date_seo_bright": {
         "name": "서연(Seoyeon)",
-        "text": "\"Natürlich. Heute hab ich mir Mühe gegeben.\""
+        "text": "Natürlich. Heute hab ich mir Mühe gegeben."
     },
     "date_seo_walk": {
         "name": "Ich",
@@ -45,15 +45,15 @@
     },
     "date_seo_duck": {
         "name": "서연(Seoyeon)",
-        "text": "\"Die sind so simpel, das ist schön. Gibst du ihnen Brot, folgen sie dir. Gibst du keins, kommen sie nicht.\""
+        "text": "Die sind so simpel, das ist schön. Gibst du ihnen Brot, folgen sie dir. Gibst du keins, kommen sie nicht."
     },
     "date_seo_duck_2": {
         "name": "{name}",
-        "text": "\"Sind Menschen nicht genauso?\""
+        "text": "Sind Menschen nicht genauso?"
     },
     "date_seo_duck_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Menschen kommen manchmal nicht, selbst wenn man ihnen Brot gibt.\""
+        "text": "Menschen kommen manchmal nicht, selbst wenn man ihnen Brot gibt."
     },
     "date_seo_duck_4": {
         "name": "Ich",
@@ -65,7 +65,7 @@
     },
     "date_seo_flower_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Wollen wir reingehen?\""
+        "text": "...Wollen wir reingehen?"
     },
     "date_seo_succulent": {
         "name": "Ich",
@@ -73,11 +73,11 @@
     },
     "date_seo_succulent_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Die ist pflegeleicht. Überlebt auch ohne Wasser.\""
+        "text": "Die ist pflegeleicht. Überlebt auch ohne Wasser."
     },
     "date_seo_succulent_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Wenn du sie am Leben halten kannst. -- Wenn nicht, nehme ich sie zurück.\""
+        "text": "Wenn du sie am Leben halten kannst. -- Wenn nicht, nehme ich sie zurück."
     },
     "date_seo_end": {
         "name": "Ich",
@@ -95,8 +95,8 @@
         "name": "Ich",
         "text": "*Was sage ich?*",
         "choices": [
-            "\"Du siehst heute... hübsch aus.\"",
-            "\"Du strahlst heute richtig.\""
+            "Du siehst heute... hübsch aus.",
+            "Du strahlst heute richtig."
         ]
     },
     "date_yuna_pretty_high": {
@@ -105,15 +105,15 @@
     },
     "date_yuna_pretty_high_2": {
         "name": "유나(Yuna)",
-        "text": "\"...Das.\""
+        "text": "...Das."
     },
     "date_yuna_pretty_high_3": {
         "name": "{name}",
-        "text": "\"Hm?\""
+        "text": "Hm?"
     },
     "date_yuna_pretty_high_4": {
         "name": "유나(Yuna)",
-        "text": "\"Sag es nochmal.\""
+        "text": "Sag es nochmal."
     },
     "date_yuna_pretty_high_5": {
         "name": "Ich",
@@ -121,11 +121,11 @@
     },
     "date_yuna_pretty_low": {
         "name": "유나(Yuna)",
-        "text": "\"...Das hat mir noch nie jemand gesagt.\""
+        "text": "...Das hat mir noch nie jemand gesagt."
     },
     "date_yuna_bright": {
         "name": "유나(Yuna)",
-        "text": "\"...Ich strahle nicht wirklich.\""
+        "text": "...Ich strahle nicht wirklich."
     },
     "date_yuna_bookstore": {
         "name": "Ich",
@@ -133,11 +133,11 @@
     },
     "date_yuna_bookstore_2": {
         "name": "유나(Yuna)",
-        "text": "\"Warst du schon mal hier?\""
+        "text": "Warst du schon mal hier?"
     },
     "date_yuna_bookstore_3": {
         "name": "유나(Yuna)",
-        "text": "\"...Gut. Dann habe ich es dir zuerst gezeigt.\""
+        "text": "...Gut. Dann habe ich es dir zuerst gezeigt."
     },
     "date_yuna_earphone": {
         "name": "Ich",
@@ -145,7 +145,7 @@
     },
     "date_yuna_earphone_2": {
         "name": "유나(Yuna)",
-        "text": "\"...Hör mal.\""
+        "text": "...Hör mal."
     },
     "date_yuna_earphone_3": {
         "name": "Ich",
@@ -157,15 +157,15 @@
     },
     "date_yuna_oldbook_2": {
         "name": "유나(Yuna)",
-        "text": "\"Dieses Buch habe ich vor einem Jahr gelesen. Damals fand ich das Ende traurig.\""
+        "text": "Dieses Buch habe ich vor einem Jahr gelesen. Damals fand ich das Ende traurig."
     },
     "date_yuna_oldbook_3": {
         "name": "{name}",
-        "text": "\"Und jetzt?\""
+        "text": "Und jetzt?"
     },
     "date_yuna_oldbook_4": {
         "name": "유나(Yuna)",
-        "text": "\"...Jetzt lese ich es anders.\""
+        "text": "...Jetzt lese ich es anders."
     },
     "date_yuna_end": {
         "name": "Ich",
@@ -177,22 +177,22 @@
     },
     "date_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"Du bist da!! Fast zu spät, oder?!\""
+        "text": "Du bist da!! Fast zu spät, oder?!"
     },
     "date_dain_3": {
         "name": "{name}",
-        "text": "\"Ich war zehn Minuten früher hier.\""
+        "text": "Ich war zehn Minuten früher hier."
     },
     "date_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"Ich war zwanzig Minuten vorher da!!\""
+        "text": "Ich war zwanzig Minuten vorher da!!"
     },
     "date_dain_compliment_choice": {
         "name": "Ich",
         "text": "*Das wird langsam zum Muster.*",
         "choices": [
-            "\"Du siehst heute... hübsch aus.\"",
-            "\"Du strahlst heute richtig.\""
+            "Du siehst heute... hübsch aus.",
+            "Du strahlst heute richtig."
         ]
     },
     "date_dain_pretty_high": {
@@ -201,11 +201,11 @@
     },
     "date_dain_pretty_high_2": {
         "name": "다인(Dain)",
-        "text": "\"Wa-- Was soll das auf einmal?!\""
+        "text": "Wa-- Was soll das auf einmal?!"
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
-        "text": "\"Es ist die Wahrheit.\""
+        "text": "Es ist die Wahrheit."
     },
     "date_dain_pretty_high_4": {
         "name": "Ich",
@@ -213,11 +213,11 @@
     },
     "date_dain_pretty_low": {
         "name": "다인(Dain)",
-        "text": "\"Häh?! Was soll das auf einmal!! ...Da-danke.\""
+        "text": "Häh?! Was soll das auf einmal!! ...Da-danke."
     },
     "date_dain_bright": {
         "name": "다인(Dain)",
-        "text": "\"Natürlich!! Heute bin ich in Topform!!\""
+        "text": "Natürlich!! Heute bin ich in Topform!!"
     },
     "date_dain_arcade": {
         "name": "Ich",
@@ -225,23 +225,23 @@
     },
     "date_dain_arcade_2": {
         "name": "다인(Dain)",
-        "text": "\"Los, wir wetten!! Verlierer zahlt die Getränke!!\""
+        "text": "Los, wir wetten!! Verlierer zahlt die Getränke!!"
     },
     "date_dain_arcade_3": {
         "name": "다인(Dain)",
-        "text": "\"Ohne Wetteinsatz macht's keinen Spaß!!\""
+        "text": "Ohne Wetteinsatz macht's keinen Spaß!!"
     },
     "date_dain_rhythm": {
         "name": "다인(Dain)",
-        "text": "\"Full Combo!! Hast du das gesehen?!\""
+        "text": "Full Combo!! Hast du das gesehen?!"
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
-        "text": "\"...Wahnsinn.\""
+        "text": "...Wahnsinn."
     },
     "date_dain_rhythm_3": {
         "name": "다인(Dain)",
-        "text": "\"Haha, na klar!! Dafür braucht man keine Knie!!\""
+        "text": "Haha, na klar!! Dafür braucht man keine Knie!!"
     },
     "date_dain_knee": {
         "name": "Ich",
@@ -253,15 +253,15 @@
     },
     "date_dain_shop": {
         "name": "다인(Dain)",
-        "text": "\"......\""
+        "text": "......"
     },
     "date_dain_shop_2": {
         "name": "{name}",
-        "text": "\"Dain?\""
+        "text": "Dain?"
     },
     "date_dain_shop_3": {
         "name": "다인(Dain)",
-        "text": "\"Ist nichts! Gehen wir!\""
+        "text": "Ist nichts! Gehen wir!"
     },
     "date_dain_end": {
         "name": "Ich",

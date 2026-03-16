@@ -17,15 +17,15 @@
     },
     "true_seo_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Vor dir habe ich das Gefühl, nicht perfekt sein zu müssen.\""
+        "text": "Vor dir habe ich das Gefühl, nicht perfekt sein zu müssen."
     },
     "true_seo_4": {
         "name": "Ich",
-        "text": "\"Du musstest nie perfekt sein.\""
+        "text": "Du musstest nie perfekt sein."
     },
     "true_seo_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Ich weiß. Aber es hat fünf Tage gedauert, das zu glauben.\""
+        "text": "...Ich weiß. Aber es hat fünf Tage gedauert, das zu glauben."
     },
     "true_seo_6": {
         "name": "Ich",
@@ -33,7 +33,7 @@
     },
     "true_seo_7": {
         "name": "서연(Seoyeon)",
-        "text": "\"Versprich es mir. — Bleib an meiner Seite.\""
+        "text": "Versprich es mir. — Bleib an meiner Seite."
     },
     "true_seo_8": {
         "name": "Ich",
@@ -45,7 +45,7 @@
     },
     "true_yuna_2": {
         "name": "유나(Yuna)",
-        "text": "\"Nur ich wusste von diesem Ort.\""
+        "text": "Nur ich wusste von diesem Ort."
     },
     "true_yuna_3": {
         "name": "Ich",
@@ -53,15 +53,15 @@
     },
     "true_yuna_4": {
         "name": "유나(Yuna)",
-        "text": "\"Jetzt du auch.\""
+        "text": "Jetzt du auch."
     },
     "true_yuna_5": {
         "name": "Ich",
-        "text": "\"Der dritte Stern?\""
+        "text": "Der dritte Stern?"
     },
     "true_yuna_6": {
         "name": "유나(Yuna)",
-        "text": "\"...Du hast dich erinnert.\""
+        "text": "...Du hast dich erinnert."
     },
     "true_yuna_7": {
         "name": "Ich",
@@ -77,7 +77,7 @@
     },
     "true_dain_3": {
         "name": "다인(Dain)",
-        "text": "\"Mein Herz schlägt total schnell. Leg deine Hand hierhin.\""
+        "text": "Mein Herz schlägt total schnell. Leg deine Hand hierhin."
     },
     "true_dain_4": {
         "name": "Ich",
@@ -85,19 +85,19 @@
     },
     "true_dain_5": {
         "name": "Ich",
-        "text": "\"...Schnell.\""
+        "text": "...Schnell."
     },
     "true_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"Warum schaust du mich so an? Das ist peinlich.\""
+        "text": "Warum schaust du mich so an? Das ist peinlich."
     },
     "true_dain_7": {
         "name": "Ich",
-        "text": "\"Hab ich nicht.\""
+        "text": "Hab ich nicht."
     },
     "true_dain_8": {
         "name": "다인(Dain)",
-        "text": "\"Hast du wohl!! ...Aber du darfst weiter schauen.\""
+        "text": "Hast du wohl!! ...Aber du darfst weiter schauen."
     },
     "true_epilogue_1": {
         "name": "Ich",
@@ -165,7 +165,7 @@
     },
     "mayhem_3": {
         "name": "Ich",
-        "text": "*Dain lächelte. Strahlend wie immer. — Aber die Ausrufezeichen fehlten. \"Pass auf dich auf.\" Das erste Mal, dass ich Dain einen Satz mit einem Punkt beenden hörte, war ausgerechnet ein Abschied.*"
+        "text": "*Dain lächelte. Strahlend wie immer. — Aber die Ausrufezeichen fehlten. Pass auf dich auf. Das erste Mal, dass ich Dain einen Satz mit einem Punkt beenden hörte, war ausgerechnet ein Abschied.*"
     },
     "mayhem_4": {
         "name": "Ich",
@@ -185,19 +185,19 @@
     },
     "day5_ending_harem": {
         "name": "Ich",
-        "text": "*\"Ich mag euch alle.\" — Als diese Worte meinen Mund verließen, erstarrten alle drei Gesichter gleichzeitig.*"
+        "text": "*Ich mag euch alle. — Als diese Worte meinen Mund verließen, erstarrten alle drei Gesichter gleichzeitig.*"
     },
     "harem_1": {
         "name": "Ich",
-        "text": "*Seoyeon lächelte zuerst. \"...Gut. Wenigstens bist du ehrlich.\" Es war keine Einbildung, dass ich Zähneknirschen hinter diesem Lächeln hörte.*"
+        "text": "*Seoyeon lächelte zuerst. ...Gut. Wenigstens bist du ehrlich. Es war keine Einbildung, dass ich Zähneknirschen hinter diesem Lächeln hörte.*"
     },
     "harem_2": {
         "name": "Ich",
-        "text": "*Yuna senkte den Kopf. Lange. Und als sie wieder aufschaute, lächelten ihre trockenen Augen. \"...Dummkopf.\" Zwei Sätze an Gefühl, komprimiert in ein einziges Wort.*"
+        "text": "*Yuna senkte den Kopf. Lange. Und als sie wieder aufschaute, lächelten ihre trockenen Augen. ...Dummkopf. Zwei Sätze an Gefühl, komprimiert in ein einziges Wort.*"
     },
     "harem_3": {
         "name": "Ich",
-        "text": "*Dain boxte mir mit der Faust gegen die Schulter. Es tat weh. \"Spinnst du? ...Aber ich hab mich in dich verliebt, obwohl ich wusste, dass du so bist. Selbst schuld. Hmpf.\"*"
+        "text": "*Dain boxte mir mit der Faust gegen die Schulter. Es tat weh. Spinnst du? ...Aber ich hab mich in dich verliebt, obwohl ich wusste, dass du so bist. Selbst schuld. Hmpf.*"
     },
     "harem_4": {
         "name": "Ich",
@@ -229,7 +229,7 @@
     },
     "friend_2": {
         "name": "Ich",
-        "text": "*Hätte ich damals \"Ich mag dich\" gesagt, wäre diese Nacht anders gewesen?*"
+        "text": "*Hätte ich damals Ich mag dich gesagt, wäre diese Nacht anders gewesen?*"
     },
     "friend_3": {
         "name": "Ich",

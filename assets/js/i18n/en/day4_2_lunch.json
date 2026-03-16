@@ -11,8 +11,8 @@
         "name": "Me",
         "text": "*What do I say?*",
         "choices": [
-            "\"You look... pretty today.\"",
-            "\"You seem bright today.\""
+            "You look... pretty today.",
+            "You seem bright today."
         ]
     },
     "date_seo_pretty_high": {
@@ -21,11 +21,11 @@
     },
     "date_seo_pretty_high_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...That line. Did you rehearse it?\""
+        "text": "...That line. Did you rehearse it?"
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
-        "text": "\"It just came out.\""
+        "text": "It just came out."
     },
     "date_seo_pretty_high_4": {
         "name": "Me",
@@ -33,11 +33,11 @@
     },
     "date_seo_pretty_low": {
         "name": "서연(Seoyeon)",
-        "text": "\"...What, all of a sudden. Give a warning before you say things like that.\""
+        "text": "...What, all of a sudden. Give a warning before you say things like that."
     },
     "date_seo_bright": {
         "name": "서연(Seoyeon)",
-        "text": "\"Of course. I put in some effort today.\""
+        "text": "Of course. I put in some effort today."
     },
     "date_seo_walk": {
         "name": "Me",
@@ -45,15 +45,15 @@
     },
     "date_seo_duck": {
         "name": "서연(Seoyeon)",
-        "text": "\"These guys are so simple. Give them bread and they follow. Don't, and they won't.\""
+        "text": "These guys are so simple. Give them bread and they follow. Don't, and they won't."
     },
     "date_seo_duck_2": {
         "name": "{name}",
-        "text": "\"Aren't people the same way?\""
+        "text": "Aren't people the same way?"
     },
     "date_seo_duck_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"People sometimes won't come even when you give them bread.\""
+        "text": "People sometimes won't come even when you give them bread."
     },
     "date_seo_duck_4": {
         "name": "Me",
@@ -65,7 +65,7 @@
     },
     "date_seo_flower_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Want to go in?\""
+        "text": "...Want to go in?"
     },
     "date_seo_succulent": {
         "name": "Me",
@@ -73,11 +73,11 @@
     },
     "date_seo_succulent_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"This one's easy to care for. It survives fine without water.\""
+        "text": "This one's easy to care for. It survives fine without water."
     },
     "date_seo_succulent_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"If you can keep it alive. -- If you can't, I'm taking it back.\""
+        "text": "If you can keep it alive. -- If you can't, I'm taking it back."
     },
     "date_seo_end": {
         "name": "Me",
@@ -95,8 +95,8 @@
         "name": "Me",
         "text": "*What do I say?*",
         "choices": [
-            "\"You look... pretty today.\"",
-            "\"You seem bright today.\""
+            "You look... pretty today.",
+            "You seem bright today."
         ]
     },
     "date_yuna_pretty_high": {
@@ -105,15 +105,15 @@
     },
     "date_yuna_pretty_high_2": {
         "name": "유나(Yuna)",
-        "text": "\"...That.\""
+        "text": "...That."
     },
     "date_yuna_pretty_high_3": {
         "name": "{name}",
-        "text": "\"Hm?\""
+        "text": "Hm?"
     },
     "date_yuna_pretty_high_4": {
         "name": "유나(Yuna)",
-        "text": "\"Say it again.\""
+        "text": "Say it again."
     },
     "date_yuna_pretty_high_5": {
         "name": "Me",
@@ -121,11 +121,11 @@
     },
     "date_yuna_pretty_low": {
         "name": "유나(Yuna)",
-        "text": "\"...No one's ever said that to me before.\""
+        "text": "...No one's ever said that to me before."
     },
     "date_yuna_bright": {
         "name": "유나(Yuna)",
-        "text": "\"...I'm not really that bright.\""
+        "text": "...I'm not really that bright."
     },
     "date_yuna_bookstore": {
         "name": "Me",
@@ -133,11 +133,11 @@
     },
     "date_yuna_bookstore_2": {
         "name": "유나(Yuna)",
-        "text": "\"Have you been here before?\""
+        "text": "Have you been here before?"
     },
     "date_yuna_bookstore_3": {
         "name": "유나(Yuna)",
-        "text": "\"...Good. That means I showed you first.\""
+        "text": "...Good. That means I showed you first."
     },
     "date_yuna_earphone": {
         "name": "Me",
@@ -145,7 +145,7 @@
     },
     "date_yuna_earphone_2": {
         "name": "유나(Yuna)",
-        "text": "\"...Listen.\""
+        "text": "...Listen."
     },
     "date_yuna_earphone_3": {
         "name": "Me",
@@ -157,15 +157,15 @@
     },
     "date_yuna_oldbook_2": {
         "name": "유나(Yuna)",
-        "text": "\"I read this book a year ago. Back then, the ending felt sad.\""
+        "text": "I read this book a year ago. Back then, the ending felt sad."
     },
     "date_yuna_oldbook_3": {
         "name": "{name}",
-        "text": "\"And now?\""
+        "text": "And now?"
     },
     "date_yuna_oldbook_4": {
         "name": "유나(Yuna)",
-        "text": "\"...Now it reads differently.\""
+        "text": "...Now it reads differently."
     },
     "date_yuna_end": {
         "name": "Me",
@@ -177,22 +177,22 @@
     },
     "date_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"You're here!! Almost late, weren't you?!\""
+        "text": "You're here!! Almost late, weren't you?!"
     },
     "date_dain_3": {
         "name": "{name}",
-        "text": "\"I got here ten minutes early.\""
+        "text": "I got here ten minutes early."
     },
     "date_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"I was here twenty minutes ago!!\""
+        "text": "I was here twenty minutes ago!!"
     },
     "date_dain_compliment_choice": {
         "name": "Me",
         "text": "*This is becoming a pattern now.*",
         "choices": [
-            "\"You look... pretty today.\"",
-            "\"You seem bright today.\""
+            "You look... pretty today.",
+            "You seem bright today."
         ]
     },
     "date_dain_pretty_high": {
@@ -201,11 +201,11 @@
     },
     "date_dain_pretty_high_2": {
         "name": "다인(Dain)",
-        "text": "\"Wh-- What was that all of a sudden?!\""
+        "text": "Wh-- What was that all of a sudden?!"
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
-        "text": "\"It's the truth.\""
+        "text": "It's the truth."
     },
     "date_dain_pretty_high_4": {
         "name": "Me",
@@ -213,11 +213,11 @@
     },
     "date_dain_pretty_low": {
         "name": "다인(Dain)",
-        "text": "\"Huh?! What's that all of a sudden!! ...Th-thanks.\""
+        "text": "Huh?! What's that all of a sudden!! ...Th-thanks."
     },
     "date_dain_bright": {
         "name": "다인(Dain)",
-        "text": "\"Obviously!! I'm in peak condition today!!\""
+        "text": "Obviously!! I'm in peak condition today!!"
     },
     "date_dain_arcade": {
         "name": "Me",
@@ -225,23 +225,23 @@
     },
     "date_dain_arcade_2": {
         "name": "다인(Dain)",
-        "text": "\"Alright, let's make a bet!! Loser buys drinks!!\""
+        "text": "Alright, let's make a bet!! Loser buys drinks!!"
     },
     "date_dain_arcade_3": {
         "name": "다인(Dain)",
-        "text": "\"It's no fun without stakes!!\""
+        "text": "It's no fun without stakes!!"
     },
     "date_dain_rhythm": {
         "name": "다인(Dain)",
-        "text": "\"Full combo!! Did you see that?!\""
+        "text": "Full combo!! Did you see that?!"
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
-        "text": "\"...That was amazing.\""
+        "text": "...That was amazing."
     },
     "date_dain_rhythm_3": {
         "name": "다인(Dain)",
-        "text": "\"Haha, of course!! This one doesn't need knees!!\""
+        "text": "Haha, of course!! This one doesn't need knees!!"
     },
     "date_dain_knee": {
         "name": "Me",
@@ -253,15 +253,15 @@
     },
     "date_dain_shop": {
         "name": "다인(Dain)",
-        "text": "\"......\""
+        "text": "......"
     },
     "date_dain_shop_2": {
         "name": "{name}",
-        "text": "\"Dain?\""
+        "text": "Dain?"
     },
     "date_dain_shop_3": {
         "name": "다인(Dain)",
-        "text": "\"It's nothing! Let's go!\""
+        "text": "It's nothing! Let's go!"
     },
     "date_dain_end": {
         "name": "Me",

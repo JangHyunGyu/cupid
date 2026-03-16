@@ -7,55 +7,53 @@
         "name": "Me",
         "text": "*I sprint down the road to school. — The school gate comes into view. And then.*"
     },
-
     "morning3_seo_gate_1": {
         "name": "Me",
         "text": "*서연(Seoyeon) is standing in front of the gate. Not in any hurry.*"
     },
     "morning3_seo_gate_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"You're late.\""
+        "text": "You're late."
     },
     "morning3_seo_gate_3": {
         "name": "{name}",
-        "text": "\"...서연(Seoyeon)? Why are you here?\""
+        "text": "...서연(Seoyeon)? Why are you here?"
     },
     "morning3_seo_gate_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"So what if we're late? If we get caught together, maybe the punishment won't be so bad?\""
+        "text": "So what if we're late? If we get caught together, maybe the punishment won't be so bad?"
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
-        "text": "\"I don't think that's how it works.\""
+        "text": "I don't think that's how it works."
     },
     "morning3_seo_gate_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"...I'm joking. I'll handle it somehow.\""
+        "text": "...I'm joking. I'll handle it somehow."
     },
     "morning3_seo_gate_7": {
         "name": "Me",
         "text": "*서연(Seoyeon) walks ahead. Confidently. She doesn't rush, even though she's late. — This girl is poised even when she's tardy. No, it's more like acting poised is second nature to her.*"
     },
-
     "morning3_yuna_gate_1": {
         "name": "Me",
         "text": "*I spot 유나(Yuna) standing blankly in front of the gate. Her eyes are half-closed.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
-        "text": "\"유나(Yuna)? You're late too?\""
+        "text": "유나(Yuna)? You're late too?"
     },
     "morning3_yuna_gate_3": {
         "name": "유나(Yuna)",
-        "text": "\"...I was up all night reading.\""
+        "text": "...I was up all night reading."
     },
     "morning3_yuna_gate_4": {
         "name": "{name}",
-        "text": "\"All night?\""
+        "text": "All night?"
     },
     "morning3_yuna_gate_5": {
         "name": "유나(Yuna)",
-        "text": "\"...I had to know the ending. I couldn't stop.\""
+        "text": "...I had to know the ending. I couldn't stop."
     },
     "morning3_yuna_gate_6": {
         "name": "Me",
@@ -65,14 +63,13 @@
         "name": "Me",
         "text": "*유나(Yuna) pulls a small bread roll from her bag. We share it as we slowly walk through the gate.*"
     },
-
     "morning3_dain_gate_1": {
         "name": "Me",
         "text": "*Near the gate, 다인(Dain) comes sprinting at full speed.*"
     },
     "morning3_dain_gate_2": {
         "name": "다인(Dain)",
-        "text": "\"Hey hey hey!! We're late!! Run!!\""
+        "text": "Hey hey hey!! We're late!! Run!!"
     },
     "morning3_dain_gate_3": {
         "name": "Me",
@@ -80,60 +77,54 @@
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
-        "text": "\"Wait — why are you holding my hand?!\""
+        "text": "Wait — why are you holding my hand?!"
     },
     "morning3_dain_gate_5": {
         "name": "Me",
         "text": "*Her hand is warm. Is it sweat, or is it my heart? — No time to think while running.*"
     },
-
     "morning3_classroom_1": {
         "name": "Me",
         "text": "*As I enter the classroom, I feel the stares of the other two who witnessed my arrival companion.*"
     },
-
     "morning3_react_seo_1": {
         "name": "다인(Dain)",
-        "text": "\"Hey! You came with the class president?! This early in the morning?!\""
+        "text": "Hey! You came with the class president?! This early in the morning?!"
     },
     "morning3_react_seo_2": {
         "name": "Me",
         "text": "*유나(Yuna) turns her gaze from the window, glances this way briefly. — Then back to the window.*"
     },
-
     "morning3_react_yuna_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"Walking in with the library girl first thing in the morning?\""
+        "text": "Walking in with the library girl first thing in the morning?"
     },
     "morning3_react_yuna_2": {
         "name": "다인(Dain)",
-        "text": "\"So jealous!! I wish I had someone to walk to school with too!!\""
+        "text": "So jealous!! I wish I had someone to walk to school with too!!"
     },
-
     "morning3_react_dain_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"Quite the cardio workout this morning. Want me to share my lunch box later?\""
+        "text": "Quite the cardio workout this morning. Want me to share my lunch box later?"
     },
     "morning3_react_dain_2": {
         "name": "Me",
         "text": "*유나(Yuna) is quietly observing. It looks like she's writing a note.*"
     },
-
     "morning3_date_intro": {
         "name": "Me",
         "text": "*First period ends. Break time. — All three approach me, one after another.*"
     },
-
     "morning3_date_seo_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"Are you free this weekend? There's somewhere I want to go.\""
+        "text": "Are you free this weekend? There's somewhere I want to go."
     },
     "morning3_date_seo_choice": {
         "name": "Me",
         "text": "*서연(Seoyeon) asks casually as she passes me in the hallway.*",
         "choices": [
-            "\"Sure. Where?\"",
-            "\"I think I'll be kind of busy\""
+            "Sure. Where?",
+            "I think I'll be kind of busy"
         ]
     },
     "morning3_date_seo_accept": {
@@ -144,10 +135,9 @@
         "name": "Me",
         "text": "*I turned down 서연(Seoyeon)'s offer.*"
     },
-
     "morning3_date_dain_1": {
         "name": "다인(Dain)",
-        "text": "\"Hey! What are you doing this weekend?! Wanna hit the arcade together?!\""
+        "text": "Hey! What are you doing this weekend?! Wanna hit the arcade together?!"
     },
     "morning3_date_dain_2": {
         "name": "Me",
@@ -161,8 +151,8 @@
         "name": "Me",
         "text": "*다인(Dain) comes to my desk during break and asks.*",
         "choices": [
-            "\"Sure, let's do it\"",
-            "\"This weekend's not great...\""
+            "Sure, let's do it",
+            "This weekend's not great..."
         ]
     },
     "morning3_date_dain_accept": {
@@ -171,7 +161,7 @@
     },
     "morning3_date_dain_decline": {
         "name": "다인(Dain)",
-        "text": "\"Oh, okay? Well, if you're busy, can't be helped!\""
+        "text": "Oh, okay? Well, if you're busy, can't be helped!"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Me",
@@ -185,7 +175,6 @@
         "name": "Me",
         "text": "*I pride myself on being perceptive. — Yet I get it wrong at the moments that matter most.*"
     },
-
     "morning3_date_yuna_1": {
         "name": "Me",
         "text": "*A note from 유나(Yuna) is sitting on my desk.*"
@@ -210,12 +199,10 @@
         "name": "Me",
         "text": "*I quietly folded the note and slipped it into my pocket.*"
     },
-
     "morning3_set_multiple": {
         "name": "Me",
         "text": "*...Wait. My weekend plans are overlapping. What do I do now.*"
     },
-
     "morning3_end": {
         "name": "Me",
         "text": "*My weekend plans are overlapping... Before I know it, classes continue and lunchtime approaches.*"

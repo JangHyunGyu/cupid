@@ -41,7 +41,7 @@
     },
     "seoyeon_meet_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"Transferschüler? Du bist {name}, oder?\""
+        "text": "Transferschüler? Du bist {name}, oder?"
     },
     "seoyeon_meet_2": {
         "name": "Ich",
@@ -49,23 +49,23 @@
     },
     "seoyeon_meet_3": {
         "name": "{name}",
-        "text": "\"Stimmt. Woher weißt du das?\""
+        "text": "Stimmt. Woher weißt du das?"
     },
     "seoyeon_meet_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Ich bin die Schülerratsvorsitzende. Neue Schüler einzuführen ist meine Aufgabe.\""
+        "text": "Ich bin die Schülerratsvorsitzende. Neue Schüler einzuführen ist meine Aufgabe."
     },
     "seoyeon_meet_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"Komm mit. Ich zeige dir die Schule.\""
+        "text": "Komm mit. Ich zeige dir die Schule."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "\"Die Vorsitzende persönlich? Welche Ehre.\""
+        "text": "Die Vorsitzende persönlich? Welche Ehre."
     },
     "seoyeon_meet_7": {
         "name": "서연(Seoyeon)",
-        "text": "\"Ob es eine Ehre ist oder nicht — das entscheide ich.\""
+        "text": "Ob es eine Ehre ist oder nicht — das entscheide ich."
     },
     "seoyeon_meet_8": {
         "name": "Ich",
@@ -79,8 +79,8 @@
         "name": "Ich",
         "text": "*Wie soll ich reagieren?*",
         "choices": [
-            "\"Sag bloß, du bist früher gekommen, weil du dich für mich interessierst?\"",
-            "\"Was kostet die Führung?\""
+            "Sag bloß, du bist früher gekommen, weil du dich für mich interessierst?",
+            "Was kostet die Führung?"
         ]
     },
     "choice_flirt_1": {
@@ -89,23 +89,23 @@
     },
     "choice_flirt_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Wow. Erster Tag und schon so einer. Interesse +1.\""
+        "text": "Wow. Erster Tag und schon so einer. Interesse +1."
     },
     "choice_flirt_3": {
         "name": "{name}",
-        "text": "\"Ein Punktesystem?\""
+        "text": "Ein Punktesystem?"
     },
     "choice_flirt_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Du bist die erste Person an dieser Schule, die mir widerspricht.\""
+        "text": "Du bist die erste Person an dieser Schule, die mir widerspricht."
     },
     "choice_flirt_5": {
         "name": "{name}",
-        "text": "\"Ich fühle mich geschmeichelt.\""
+        "text": "Ich fühle mich geschmeichelt."
     },
     "choice_flirt_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"Du weißt noch nicht, ob es Schmeichelei oder Katastrophe ist.\""
+        "text": "Du weißt noch nicht, ob es Schmeichelei oder Katastrophe ist."
     },
     "choice_flirt_7": {
         "name": "Ich",
@@ -113,15 +113,15 @@
     },
     "choice_joke_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"Kostenlos. — Aber die Zinsen kommen später.\""
+        "text": "Kostenlos. — Aber die Zinsen kommen später."
     },
     "choice_joke_2": {
         "name": "{name}",
-        "text": "\"Eine furchteinflößende Vorsitzende.\""
+        "text": "Eine furchteinflößende Vorsitzende."
     },
     "choice_joke_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Langweilig wird es zumindest nicht.\""
+        "text": "Langweilig wird es zumindest nicht."
     },
     "hallway_1": {
         "name": "Ich",
@@ -133,7 +133,7 @@
     },
     "hallway_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Das Gebäude der Erstklässler ist hier, die Bibliothek ist drüben. Der Kiosk ist im Untergeschoss.\""
+        "text": "Das Gebäude der Erstklässler ist hier, die Bibliothek ist drüben. Der Kiosk ist im Untergeschoss."
     },
     "hallway_4": {
         "name": "Ich",
@@ -141,15 +141,15 @@
     },
     "hallway_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"Das Dach ist normalerweise abgeschlossen. Privileg der Vorsitzenden.\""
+        "text": "Das Dach ist normalerweise abgeschlossen. Privileg der Vorsitzenden."
     },
     "hallway_6": {
         "name": "{name}",
-        "text": "\"Hast du da oben ein Geheimversteck?\""
+        "text": "Hast du da oben ein Geheimversteck?"
     },
     "hallway_7": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Du bist aufmerksam.\""
+        "text": "...Du bist aufmerksam."
     },
     "hallway_8": {
         "name": "Ich",
@@ -161,15 +161,15 @@
     },
     "hallway_10": {
         "name": "서연(Seoyeon)",
-        "text": "\"Hier ist es. Geh rein.\""
+        "text": "Hier ist es. Geh rein."
     },
     "hallway_11": {
         "name": "{name}",
-        "text": "\"Führst du mich auch in der Mittagspause?\""
+        "text": "Führst du mich auch in der Mittagspause?"
     },
     "hallway_12": {
         "name": "서연(Seoyeon)",
-        "text": "\"Das hängt davon ab, wie gut du dich anstellst.\""
+        "text": "Das hängt davon ab, wie gut du dich anstellst."
     },
     "hallway_13": {
         "name": "Ich",
@@ -189,11 +189,11 @@
     },
     "classroom_3": {
         "name": "Klassenlehrer",
-        "text": "\"So, ab heute haben wir einen neuen Schüler in unserer Klasse. Möchtest du dich vorstellen?\""
+        "text": "So, ab heute haben wir einen neuen Schüler in unserer Klasse. Möchtest du dich vorstellen?"
     },
     "classroom_4": {
         "name": "{name}",
-        "text": "\"Ich bin {name}. Freut mich, euch kennenzulernen.\""
+        "text": "Ich bin {name}. Freut mich, euch kennenzulernen."
     },
     "classroom_5": {
         "name": "Ich",
@@ -205,7 +205,7 @@
     },
     "classroom_dain_1": {
         "name": "다인(Dain)",
-        "text": "\"Oh! Ein neuer Junge! Endlich!\""
+        "text": "Oh! Ein neuer Junge! Endlich!"
     },
     "classroom_dain_2": {
         "name": "Ich",
@@ -213,11 +213,11 @@
     },
     "classroom_dain_3": {
         "name": "Klassenlehrer",
-        "text": "\"다인(Dain), bitte etwas leiser...\""
+        "text": "다인(Dain), bitte etwas leiser..."
     },
     "classroom_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"Oh, tut mir leid! Aber ich freu mich so! Wir hatten zu wenige Jungs in der Klasse!\""
+        "text": "Oh, tut mir leid! Aber ich freu mich so! Wir hatten zu wenige Jungs in der Klasse!"
     },
     "classroom_dain_5": {
         "name": "Ich",
@@ -245,15 +245,15 @@
     },
     "classroom_minsu_2": {
         "name": "민수(Minsu)",
-        "text": "\"Hey, Neuer. Willkommen. — Und ein Rat.\""
+        "text": "Hey, Neuer. Willkommen. — Und ein Rat."
     },
     "classroom_minsu_3": {
         "name": "{name}",
-        "text": "\"Welcher?\""
+        "text": "Welcher?"
     },
     "classroom_minsu_4": {
         "name": "민수(Minsu)",
-        "text": "\"Ausdauertraining.\""
+        "text": "Ausdauertraining."
     },
     "classroom_dain_talk_1": {
         "name": "Ich",
@@ -265,23 +265,23 @@
     },
     "classroom_dain_talk_3": {
         "name": "다인(Dain)",
-        "text": "\"Hey, {name}! Magst du Sport?!\""
+        "text": "Hey, {name}! Magst du Sport?!"
     },
     "classroom_dain_talk_4": {
         "name": "{name}",
-        "text": "\"Einfach so?\""
+        "text": "Einfach so?"
     },
     "classroom_dain_talk_5": {
         "name": "다인(Dain)",
-        "text": "\"Ich brauch einfach jemanden für die Turnhalle nach der Schule! Jemand muss mir Bälle zuwerfen!\""
+        "text": "Ich brauch einfach jemanden für die Turnhalle nach der Schule! Jemand muss mir Bälle zuwerfen!"
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
-        "text": "\"Bin ich eine Ballmaschine?\""
+        "text": "Bin ich eine Ballmaschine?"
     },
     "classroom_dain_talk_7": {
         "name": "다인(Dain)",
-        "text": "\"Hahaha, du bist bestimmt besser als eine Ballmaschine! Wahrscheinlich!\""
+        "text": "Hahaha, du bist bestimmt besser als eine Ballmaschine! Wahrscheinlich!"
     },
     "classroom_dain_talk_8": {
         "name": "Ich",

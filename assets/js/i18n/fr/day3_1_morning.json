@@ -13,23 +13,23 @@
     },
     "morning3_seo_gate_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Tu es en retard.\""
+        "text": "Tu es en retard."
     },
     "morning3_seo_gate_3": {
         "name": "{name}",
-        "text": "\"...서연(Seoyeon) ? Pourquoi tu es là ?\""
+        "text": "...서연(Seoyeon) ? Pourquoi tu es là ?"
     },
     "morning3_seo_gate_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Et alors, si on est en retard ? Si on se fait prendre ensemble, on sera peut-être moins punis, non ?\""
+        "text": "Et alors, si on est en retard ? Si on se fait prendre ensemble, on sera peut-être moins punis, non ?"
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
-        "text": "\"Je ne crois pas que ça marche comme ça.\""
+        "text": "Je ne crois pas que ça marche comme ça."
     },
     "morning3_seo_gate_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"...C’est une blague. Je m’en occupe.\""
+        "text": "...C’est une blague. Je m’en occupe."
     },
     "morning3_seo_gate_7": {
         "name": "Moi",
@@ -41,19 +41,19 @@
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
-        "text": "\"유나(Yuna) ? Toi aussi tu es en retard ?\""
+        "text": "유나(Yuna) ? Toi aussi tu es en retard ?"
     },
     "morning3_yuna_gate_3": {
         "name": "유나(Yuna)",
-        "text": "\"...J’ai lu toute la nuit.\""
+        "text": "...J’ai lu toute la nuit."
     },
     "morning3_yuna_gate_4": {
         "name": "{name}",
-        "text": "\"Toute la nuit ?\""
+        "text": "Toute la nuit ?"
     },
     "morning3_yuna_gate_5": {
         "name": "유나(Yuna)",
-        "text": "\"...Je voulais connaître la fin. Je ne pouvais pas m’arrêter.\""
+        "text": "...Je voulais connaître la fin. Je ne pouvais pas m’arrêter."
     },
     "morning3_yuna_gate_6": {
         "name": "Moi",
@@ -69,7 +69,7 @@
     },
     "morning3_dain_gate_2": {
         "name": "다인(Dain)",
-        "text": "\"Eh eh eh !! On est en retard !! Cours !!\""
+        "text": "Eh eh eh !! On est en retard !! Cours !!"
     },
     "morning3_dain_gate_3": {
         "name": "Moi",
@@ -77,7 +77,7 @@
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
-        "text": "\"Attends — pourquoi tu me prends la main ?!\""
+        "text": "Attends — pourquoi tu me prends la main ?!"
     },
     "morning3_dain_gate_5": {
         "name": "Moi",
@@ -89,7 +89,7 @@
     },
     "morning3_react_seo_1": {
         "name": "다인(Dain)",
-        "text": "\"Hey ! T’es venu avec la présidente ?! Dès le matin ?!\""
+        "text": "Hey ! T’es venu avec la présidente ?! Dès le matin ?!"
     },
     "morning3_react_seo_2": {
         "name": "Moi",
@@ -97,15 +97,15 @@
     },
     "morning3_react_yuna_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"Tu arrives avec la fille de la bibliothèque dès le matin ?\""
+        "text": "Tu arrives avec la fille de la bibliothèque dès le matin ?"
     },
     "morning3_react_yuna_2": {
         "name": "다인(Dain)",
-        "text": "\"Trop jalouse !! Moi aussi je voudrais quelqu’un pour venir le matin !!\""
+        "text": "Trop jalouse !! Moi aussi je voudrais quelqu’un pour venir le matin !!"
     },
     "morning3_react_dain_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"Sacrée séance de sport matinale. Tu veux que je te donne un peu de mon déjeuner ?\""
+        "text": "Sacrée séance de sport matinale. Tu veux que je te donne un peu de mon déjeuner ?"
     },
     "morning3_react_dain_2": {
         "name": "Moi",
@@ -117,14 +117,14 @@
     },
     "morning3_date_seo_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"Tu es libre ce week-end ? Il y a un endroit où j’aimerais aller.\""
+        "text": "Tu es libre ce week-end ? Il y a un endroit où j’aimerais aller."
     },
     "morning3_date_seo_choice": {
         "name": "Moi",
         "text": "*서연(Seoyeon) me demande en me croisant dans le couloir.*",
         "choices": [
-            "\"Oui. Où ça ?\"",
-            "\"Je crois que je serai un peu occupé\""
+            "Oui. Où ça ?",
+            "Je crois que je serai un peu occupé"
         ]
     },
     "morning3_date_seo_accept": {
@@ -137,7 +137,7 @@
     },
     "morning3_date_dain_1": {
         "name": "다인(Dain)",
-        "text": "\"Hey ! Tu fais quoi ce week-end ?! On va à la salle d’arcade ensemble ?!\""
+        "text": "Hey ! Tu fais quoi ce week-end ?! On va à la salle d’arcade ensemble ?!"
     },
     "morning3_date_dain_2": {
         "name": "Moi",
@@ -151,8 +151,8 @@
         "name": "Moi",
         "text": "*다인(Dain) vient à mon bureau pendant la pause et me demande.*",
         "choices": [
-            "\"OK, c’est parti\"",
-            "\"Ce week-end, c’est compliqué...\""
+            "OK, c’est parti",
+            "Ce week-end, c’est compliqué..."
         ]
     },
     "morning3_date_dain_accept": {
@@ -161,7 +161,7 @@
     },
     "morning3_date_dain_decline": {
         "name": "다인(Dain)",
-        "text": "\"Ah bon ? Ben, si t’es occupé, tant pis !\""
+        "text": "Ah bon ? Ben, si t’es occupé, tant pis !"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Moi",

@@ -9,23 +9,23 @@
     },
     "lunch3_meal_1": {
         "name": "다인(Dain)",
-        "text": "\"¡Oh! ¡Esto está bueno!!\""
+        "text": "¡Oh! ¡Esto está bueno!!"
     },
     "lunch3_meal_2": {
         "name": "Yo",
-        "text": "\"Eso era mío...\""
+        "text": "Eso era mío..."
     },
     "lunch3_meal_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"La tortilla está un poco salada. 6 puntos.\""
+        "text": "La tortilla está un poco salada. 6 puntos."
     },
     "lunch3_meal_4": {
         "name": "Yo",
-        "text": "\"No le pongas puntuación.\""
+        "text": "No le pongas puntuación."
     },
     "lunch3_meal_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"Es sobre 10. No está mal, ¿no?\""
+        "text": "Es sobre 10. No está mal, ¿no?"
     },
     "lunch3_meal_6": {
         "name": "Yo",
@@ -33,11 +33,11 @@
     },
     "lunch3_meal_7": {
         "name": "Yo",
-        "text": "\"...유나(Yuna), esa era mi favorita.\""
+        "text": "...유나(Yuna), esa era mi favorita."
     },
     "lunch3_meal_8": {
         "name": "유나(Yuna)",
-        "text": "\"...Está buena.\""
+        "text": "...Está buena."
     },
     "lunch3_meal_9": {
         "name": "Yo",
@@ -58,52 +58,52 @@
             "Dársela a 서연(Seoyeon)",
             "Dársela a 다인(Dain)",
             "Dársela a 유나(Yuna)",
-            "\"Compartamos entre todos\""
+            "Compartamos entre todos"
         ]
     },
     "lunch3_give_seo_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Gracias. Tienes buen gusto.\""
+        "text": "...Gracias. Tienes buen gusto."
     },
     "lunch3_give_seo_2": {
         "name": "다인(Dain)",
-        "text": "\"¡Eh! ¡Yo también quería!\""
+        "text": "¡Eh! ¡Yo también quería!"
     },
     "lunch3_give_seo_3": {
         "name": "유나(Yuna)",
-        "text": "\"......\""
+        "text": "......"
     },
     "lunch3_give_dain_1": {
         "name": "다인(Dain)",
-        "text": "\"¿En serio?! ¡Gracias!! ¡{name} es el mejor!!\""
+        "text": "¿En serio?! ¡Gracias!! ¡{name} es el mejor!!"
     },
     "lunch3_give_dain_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Hmph. Y yo que hasta le puse puntuación.\""
+        "text": "...Hmph. Y yo que hasta le puse puntuación."
     },
     "lunch3_give_dain_3": {
         "name": "유나(Yuna)",
-        "text": "\"......\""
+        "text": "......"
     },
     "lunch3_give_yuna_1": {
         "name": "유나(Yuna)",
-        "text": "\"...Gracias.\""
+        "text": "...Gracias."
     },
     "lunch3_give_yuna_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Pensé que me la darías a mí.\""
+        "text": "...Pensé que me la darías a mí."
     },
     "lunch3_give_yuna_3": {
         "name": "다인(Dain)",
-        "text": "\"¡¿Qué?! ¿Y yo?!\""
+        "text": "¡¿Qué?! ¿Y yo?!"
     },
     "lunch3_expose_1": {
         "name": "Yo",
-        "text": "*En el momento en que dije \"compartamos entre todos\" — 다인(Dain) habló primero.*"
+        "text": "*En el momento en que dije compartamos entre todos — 다인(Dain) habló primero.*"
     },
     "lunch3_expose_2": {
         "name": "다인(Dain)",
-        "text": "\"¡Ah, cierto! ¡{name}, quedamos en ir a los recreativos este fin de semana!! ¿Qué comemos antes?!\""
+        "text": "¡Ah, cierto! ¡{name}, quedamos en ir a los recreativos este fin de semana!! ¿Qué comemos antes?!"
     },
     "lunch3_expose_3": {
         "name": "Yo",
@@ -115,15 +115,15 @@
     },
     "lunch3_expose_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"...¿Recreativos?\""
+        "text": "...¿Recreativos?"
     },
     "lunch3_expose_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"A mí me dijiste que tenías un sitio al que ir conmigo.\""
+        "text": "A mí me dijiste que tenías un sitio al que ir conmigo."
     },
     "lunch3_expose_7": {
         "name": "다인(Dain)",
-        "text": "\"...Espera. ¿A mí también me propusiste quedar el fin de semana?\""
+        "text": "...Espera. ¿A mí también me propusiste quedar el fin de semana?"
     },
     "lunch3_expose_8": {
         "name": "Yo",
@@ -131,7 +131,7 @@
     },
     "lunch3_expose_9": {
         "name": "유나(Yuna)",
-        "text": "\"Lo sabía.\""
+        "text": "Lo sabía."
     },
     "lunch3_expose_10": {
         "name": "Yo",
@@ -139,7 +139,7 @@
     },
     "lunch3_expose_11": {
         "name": "유나(Yuna)",
-        "text": "\"...Mentira. Yo tampoco lo sabía.\""
+        "text": "...Mentira. Yo tampoco lo sabía."
     },
     "lunch3_expose_12": {
         "name": "Yo",
@@ -151,7 +151,7 @@
     },
     "lunch3_expose_14": {
         "name": "민수(Minsu)",
-        "text": "\"...Tío. ¿Estás loco?\""
+        "text": "...Tío. ¿Estás loco?"
     },
     "lunch3_expose_15": {
         "name": "Yo",
@@ -161,22 +161,22 @@
         "name": "Yo",
         "text": "*¿Qué debería decir...?*",
         "choices": [
-            "\"Lo siento. Sois tan buenas que no pude rechazar a nadie.\"",
-            "\"Los horarios son diferentes, así que pensé que no pasaría nada...\"",
+            "Lo siento. Sois tan buenas que no pude rechazar a nadie.",
+            "Los horarios son diferentes, así que pensé que no pasaría nada...",
             "Huir"
         ]
     },
     "lunch3_expose_honest_1": {
         "name": "Yo",
-        "text": "\"Lo siento. Sois tan buenas que no pude rechazar a nadie.\""
+        "text": "Lo siento. Sois tan buenas que no pude rechazar a nadie."
     },
     "lunch3_expose_honest_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Que no pudiste rechazar. Eso es lo más cruel que puedes decir, {name}.\""
+        "text": "...Que no pudiste rechazar. Eso es lo más cruel que puedes decir, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"La amabilidad de no saber rechazar — da falsas esperanzas.\""
+        "text": "La amabilidad de no saber rechazar — da falsas esperanzas."
     },
     "lunch3_expose_honest_4": {
         "name": "Yo",
@@ -184,7 +184,7 @@
     },
     "lunch3_expose_honest_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"No quiero ser una opción entre varias. O soy la única respuesta, o nada. — No puedo con las medias tintas.\""
+        "text": "No quiero ser una opción entre varias. O soy la única respuesta, o nada. — No puedo con las medias tintas."
     },
     "lunch3_expose_honest_6": {
         "name": "Yo",
@@ -196,15 +196,15 @@
     },
     "lunch3_expose_excuse_1": {
         "name": "Yo",
-        "text": "\"Los horarios son diferentes, así que pensé que no pasaría nada...\""
+        "text": "Los horarios son diferentes, así que pensé que no pasaría nada..."
     },
     "lunch3_expose_excuse_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...¿No entiendes que ese es el problema?\""
+        "text": "...¿No entiendes que ese es el problema?"
     },
     "lunch3_expose_excuse_3": {
         "name": "다인(Dain)",
-        "text": "\"Dame un poco de tiempo para pensar.\""
+        "text": "Dame un poco de tiempo para pensar."
     },
     "lunch3_expose_excuse_4": {
         "name": "Yo",

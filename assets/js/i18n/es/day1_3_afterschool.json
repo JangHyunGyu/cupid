@@ -37,7 +37,7 @@
     },
     "after_miss_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"¡¡Cuidado!!\""
+        "text": "¡¡Cuidado!!"
     },
     "after_miss_dain_3": {
         "name": "Yo",
@@ -45,15 +45,15 @@
     },
     "after_miss_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"¡Oh! ¡Buenos reflejos!\""
+        "text": "¡Oh! ¡Buenos reflejos!"
     },
     "after_miss_dain_5": {
         "name": "Yo",
-        "text": "\"¿Por qué corres a toda velocidad en el pasillo?\""
+        "text": "¿Por qué corres a toda velocidad en el pasillo?"
     },
     "after_miss_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"¡Llego tarde! ¡Tengo que ir al gimnasio! — ¡Ah, nos vemos mañana! ¡Chico nuevo!\""
+        "text": "¡Llego tarde! ¡Tengo que ir al gimnasio! — ¡Ah, nos vemos mañana! ¡Chico nuevo!"
     },
     "after_miss_dain_7": {
         "name": "Yo",
@@ -65,11 +65,11 @@
     },
     "after_miss_yuna_2": {
         "name": "Yo",
-        "text": "*— Se le cae un marcapáginas.* \"Oye, esto...\""
+        "text": "*— Se le cae un marcapáginas.* Oye, esto..."
     },
     "after_miss_yuna_3": {
         "name": "유나(Yuna)",
-        "text": "\"......Gracias.\""
+        "text": "......Gracias."
     },
     "after_miss_yuna_4": {
         "name": "Yo",
@@ -81,23 +81,23 @@
     },
     "after_miss_seoyeon_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"¿Dónde fuiste antes?\""
+        "text": "¿Dónde fuiste antes?"
     },
     "after_miss_seoyeon_3": {
         "name": "Yo",
-        "text": "\"¿Antes?\""
+        "text": "¿Antes?"
     },
     "after_miss_seoyeon_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"El almuerzo. Dejé la azotea abierta. Hacerme esperar — atrevido para ser un estudiante nuevo.\""
+        "text": "El almuerzo. Dejé la azotea abierta. Hacerme esperar — atrevido para ser un estudiante nuevo."
     },
     "after_miss_seoyeon_5": {
         "name": "Yo",
-        "text": "\"¿Esperaste?\""
+        "text": "¿Esperaste?"
     },
     "after_miss_seoyeon_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Subí a tomar aire y la puerta estaba abierta.\""
+        "text": "...Subí a tomar aire y la puerta estaba abierta."
     },
     "after_miss_seoyeon_7": {
         "name": "Yo",
@@ -105,7 +105,7 @@
     },
     "after_miss_seoyeon_8": {
         "name": "서연(Seoyeon)",
-        "text": "\"Mañana no te escapes.\""
+        "text": "Mañana no te escapes."
     },
     "after_end": {
         "name": "Yo",

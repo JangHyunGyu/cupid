@@ -11,8 +11,8 @@
         "name": "{name}",
         "text": "*뭐라고 하지?*",
         "choices": [
-            "\"오늘 좀... 예쁘다.\"",
-            "\"분위기가 밝은데.\""
+            "오늘 좀... 예쁘다.",
+            "분위기가 밝은데."
         ]
     },
     "date_seo_pretty_high": {
@@ -21,11 +21,11 @@
     },
     "date_seo_pretty_high_2": {
         "name": "서연",
-        "text": "\"...그런 말. 준비해 온 거야?\""
+        "text": "...그런 말. 준비해 온 거야?"
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
-        "text": "\"지금 나온 거야.\""
+        "text": "지금 나온 거야."
     },
     "date_seo_pretty_high_4": {
         "name": "{name}",
@@ -33,11 +33,11 @@
     },
     "date_seo_pretty_low": {
         "name": "서연",
-        "text": "\"...뭐야, 갑자기. 그런 말은 예고하고 해.\""
+        "text": "...뭐야, 갑자기. 그런 말은 예고하고 해."
     },
     "date_seo_bright": {
         "name": "서연",
-        "text": "\"당연하지. 오늘 좀 신경 썼거든.\""
+        "text": "당연하지. 오늘 좀 신경 썼거든."
     },
     "date_seo_walk": {
         "name": "{name}",
@@ -45,15 +45,15 @@
     },
     "date_seo_duck": {
         "name": "서연",
-        "text": "\"이 애들은 단순해서 좋다. 빵 주면 따라오고, 안 주면 안 오고.\""
+        "text": "이 애들은 단순해서 좋다. 빵 주면 따라오고, 안 주면 안 오고."
     },
     "date_seo_duck_2": {
         "name": "{name}",
-        "text": "\"사람도 그런 거 아냐?\""
+        "text": "사람도 그런 거 아냐?"
     },
     "date_seo_duck_3": {
         "name": "서연",
-        "text": "\"사람은 빵 줘도 안 올 때가 있으니까.\""
+        "text": "사람은 빵 줘도 안 올 때가 있으니까."
     },
     "date_seo_duck_4": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "date_seo_flower_2": {
         "name": "서연",
-        "text": "\"...들어가 볼까?\""
+        "text": "...들어가 볼까?"
     },
     "date_seo_succulent": {
         "name": "{name}",
@@ -73,11 +73,11 @@
     },
     "date_seo_succulent_2": {
         "name": "서연",
-        "text": "\"이건 관리하기 쉬워. 물 안 줘도 잘 살아.\""
+        "text": "이건 관리하기 쉬워. 물 안 줘도 잘 살아."
     },
     "date_seo_succulent_3": {
         "name": "서연",
-        "text": "\"키울 수 있으면. — 못 키우면 내가 다시 가져갈 거니까.\""
+        "text": "키울 수 있으면. — 못 키우면 내가 다시 가져갈 거니까."
     },
     "date_seo_end": {
         "name": "{name}",
@@ -95,8 +95,8 @@
         "name": "{name}",
         "text": "*뭐라고 하지?*",
         "choices": [
-            "\"오늘 좀... 예쁘다.\"",
-            "\"분위기가 밝은데.\""
+            "오늘 좀... 예쁘다.",
+            "분위기가 밝은데."
         ]
     },
     "date_yuna_pretty_high": {
@@ -105,15 +105,15 @@
     },
     "date_yuna_pretty_high_2": {
         "name": "유나",
-        "text": "\"...그거.\""
+        "text": "...그거."
     },
     "date_yuna_pretty_high_3": {
         "name": "{name}",
-        "text": "\"응?\""
+        "text": "응?"
     },
     "date_yuna_pretty_high_4": {
         "name": "유나",
-        "text": "\"한 번 더 말해.\""
+        "text": "한 번 더 말해."
     },
     "date_yuna_pretty_high_5": {
         "name": "{name}",
@@ -121,11 +121,11 @@
     },
     "date_yuna_pretty_low": {
         "name": "유나",
-        "text": "\"...그런 말 처음 듣는다.\""
+        "text": "...그런 말 처음 듣는다."
     },
     "date_yuna_bright": {
         "name": "유나",
-        "text": "\"...별로 밝은 건 아닌데.\""
+        "text": "...별로 밝은 건 아닌데."
     },
     "date_yuna_bookstore": {
         "name": "{name}",
@@ -133,11 +133,11 @@
     },
     "date_yuna_bookstore_2": {
         "name": "유나",
-        "text": "\"여기 와 본 적 있어?\""
+        "text": "여기 와 본 적 있어?"
     },
     "date_yuna_bookstore_3": {
         "name": "유나",
-        "text": "\"...다행이다. 내가 먼저 보여준 거네.\""
+        "text": "...다행이다. 내가 먼저 보여준 거네."
     },
     "date_yuna_earphone": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "date_yuna_earphone_2": {
         "name": "유나",
-        "text": "\"...들어봐.\""
+        "text": "...들어봐."
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
@@ -157,15 +157,15 @@
     },
     "date_yuna_oldbook_2": {
         "name": "유나",
-        "text": "\"이 책, 1년 전에 읽었는데. 그때는 결말이 슬펐어.\""
+        "text": "이 책, 1년 전에 읽었는데. 그때는 결말이 슬펐어."
     },
     "date_yuna_oldbook_3": {
         "name": "{name}",
-        "text": "\"지금은?\""
+        "text": "지금은?"
     },
     "date_yuna_oldbook_4": {
         "name": "유나",
-        "text": "\"...지금은 다르게 읽혀.\""
+        "text": "...지금은 다르게 읽혀."
     },
     "date_yuna_end": {
         "name": "{name}",
@@ -177,22 +177,22 @@
     },
     "date_dain_2": {
         "name": "다인",
-        "text": "\"왔다!! 늦을 뻔했지?!\""
+        "text": "왔다!! 늦을 뻔했지?!"
     },
     "date_dain_3": {
         "name": "{name}",
-        "text": "\"10분 일찍 왔는데.\""
+        "text": "10분 일찍 왔는데."
     },
     "date_dain_4": {
         "name": "다인",
-        "text": "\"나는 20분 전에 왔거든!!\""
+        "text": "나는 20분 전에 왔거든!!"
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
         "text": "*이건 이제 패턴이다.*",
         "choices": [
-            "\"오늘 좀... 예쁘다.\"",
-            "\"분위기가 밝은데.\""
+            "오늘 좀... 예쁘다.",
+            "분위기가 밝은데."
         ]
     },
     "date_dain_pretty_high": {
@@ -201,11 +201,11 @@
     },
     "date_dain_pretty_high_2": {
         "name": "다인",
-        "text": "\"갑— 갑자기 뭐야!!\""
+        "text": "갑— 갑자기 뭐야!!"
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
-        "text": "\"사실인데.\""
+        "text": "사실인데."
     },
     "date_dain_pretty_high_4": {
         "name": "{name}",
@@ -213,11 +213,11 @@
     },
     "date_dain_pretty_low": {
         "name": "다인",
-        "text": "\"에?! 뭐야 갑자기!! ...고, 고마워.\""
+        "text": "에?! 뭐야 갑자기!! ...고, 고마워."
     },
     "date_dain_bright": {
         "name": "다인",
-        "text": "\"당연하지!! 오늘 컨디션 최상이거든!!\""
+        "text": "당연하지!! 오늘 컨디션 최상이거든!!"
     },
     "date_dain_arcade": {
         "name": "{name}",
@@ -225,23 +225,23 @@
     },
     "date_dain_arcade_2": {
         "name": "다인",
-        "text": "\"자, 내기다!! 진 사람 음료수!!\""
+        "text": "자, 내기다!! 진 사람 음료수!!"
     },
     "date_dain_arcade_3": {
         "name": "다인",
-        "text": "\"내기 없으면 재미없잖아!!\""
+        "text": "내기 없으면 재미없잖아!!"
     },
     "date_dain_rhythm": {
         "name": "다인",
-        "text": "\"풀콤보!! 봤어?!\""
+        "text": "풀콤보!! 봤어?!"
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
-        "text": "\"...대단해.\""
+        "text": "...대단해."
     },
     "date_dain_rhythm_3": {
         "name": "다인",
-        "text": "\"ㅋㅋㅋ 당연하지!! 이건 무릎 안 써도 되니까!!\""
+        "text": "ㅋㅋㅋ 당연하지!! 이건 무릎 안 써도 되니까!!"
     },
     "date_dain_knee": {
         "name": "{name}",
@@ -253,15 +253,15 @@
     },
     "date_dain_shop": {
         "name": "다인",
-        "text": "\"......\""
+        "text": "......"
     },
     "date_dain_shop_2": {
         "name": "{name}",
-        "text": "\"다인?\""
+        "text": "다인?"
     },
     "date_dain_shop_3": {
         "name": "다인",
-        "text": "\"아무것도 아냐! 가자!\""
+        "text": "아무것도 아냐! 가자!"
     },
     "date_dain_end": {
         "name": "{name}",

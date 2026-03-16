@@ -1,7 +1,7 @@
 {
     "after2_start": {
         "name": "Moi",
-        "text": "*Apres les cours. Deux notifications sur mon telephone.*\n\nDain : \"Viens au gymnase !! Aujourd'hui c'est serieux !!\"\nSeoyeon : \"Tu peux passer a la salle du conseil ? On manque de monde.\"\n\n*Rien de Yuna. -- C'est Yuna. Mais en rangeant mon sac, le mot du matin tombe de ma poche. Les mots 'annexe de la bibliotheque' accrochent mon regard.*"
+        "text": "*Apres les cours. Deux notifications sur mon telephone.*\n\nDain : Viens au gymnase !! Aujourd'hui c'est serieux !!\nSeoyeon : Tu peux passer a la salle du conseil ? On manque de monde.\n\n*Rien de Yuna. -- C'est Yuna. Mais en rangeant mon sac, le mot du matin tombe de ma poche. Les mots 'annexe de la bibliotheque' accrochent mon regard.*"
     },
     "after2_choice": {
         "name": "Moi",
@@ -18,15 +18,15 @@
     },
     "after2_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"T'es la ?! T'es en retard !!\""
+        "text": "T'es la ?! T'es en retard !!"
     },
     "after2_dain_3": {
         "name": "{name}",
-        "text": "\"J'ai cinq minutes d'avance.\""
+        "text": "J'ai cinq minutes d'avance."
     },
     "after2_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"Moi j'avais dix minutes d'avance !!\""
+        "text": "Moi j'avais dix minutes d'avance !!"
     },
     "after2_dain_5": {
         "name": "Moi",
@@ -34,15 +34,15 @@
     },
     "after2_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"Bon, le defi ! Cinq services -- si t'en passes trois ou plus, tu gagnes ! Sinon, le tteokbokki d'aujourd'hui c'est pour toi !\""
+        "text": "Bon, le defi ! Cinq services -- si t'en passes trois ou plus, tu gagnes ! Sinon, le tteokbokki d'aujourd'hui c'est pour toi !"
     },
     "after2_dain_7": {
         "name": "{name}",
-        "text": "\"Du tteokbokki sorti de nulle part ?\""
+        "text": "Du tteokbokki sorti de nulle part ?"
     },
     "after2_dain_8": {
         "name": "다인(Dain)",
-        "text": "\"J'ai faim !!\""
+        "text": "J'ai faim !!"
     },
     "after2_dain_9": {
         "name": "Moi",
@@ -50,7 +50,7 @@
     },
     "after2_dain_10": {
         "name": "다인(Dain)",
-        "text": "*Les yeux ecarquilles* \"Hein ? J'allais aller doucement, mais finalement non.\"\n\n*Dain baisse sa position. Ses yeux ont change.*\n\n\"La je donne tout !\""
+        "text": "*Les yeux ecarquilles* Hein ? J'allais aller doucement, mais finalement non.\n\n*Dain baisse sa position. Ses yeux ont change.*\n\nLa je donne tout !"
     },
     "after2_dain_11": {
         "name": "Moi",
@@ -58,27 +58,27 @@
     },
     "after2_dain_12": {
         "name": "다인(Dain)",
-        "text": "\"Aaaargh !! J'ai perdu !! -- Mais t'es pas mal ?! Tu disais que tu faisais pas de sport ?!\""
+        "text": "Aaaargh !! J'ai perdu !! -- Mais t'es pas mal ?! Tu disais que tu faisais pas de sport ?!"
     },
     "after2_dain_13": {
         "name": "{name}",
-        "text": "\"J'ai jamais dit ca.\""
+        "text": "J'ai jamais dit ca."
     },
     "after2_dain_14": {
         "name": "다인(Dain)",
-        "text": "*Vraiment choquee* \"Quoi ?! Tu m'as trompee ?!\""
+        "text": "*Vraiment choquee* Quoi ?! Tu m'as trompee ?!"
     },
     "after2_dain_15": {
         "name": "{name}",
-        "text": "\"Je t'ai pas trompee -- t'as juste jamais demande.\""
+        "text": "Je t'ai pas trompee -- t'as juste jamais demande."
     },
     "after2_dain_16": {
         "name": "다인(Dain)",
-        "text": "*En me donnant un coup de poing dans l'epaule* \"Quel escroc !! Hahaha -- mais c'etait marrant !\""
+        "text": "*En me donnant un coup de poing dans l'epaule* Quel escroc !! Hahaha -- mais c'etait marrant !"
     },
     "after2_dain_end": {
         "name": "Moi",
-        "text": "*Ses yeux sont en forme de croissant. Les memes yeux qu'hier. -- C'est comme ca que cette personne est quand elle s'amuse vraiment.*\n\n*Au resto de tteokbokki pres de l'ecole.*\n\n*Dain souffle sur son tteokbokki et dit :*\n\"He, tu connais vraiment le sport, hein ?\"\n\n\"Un peu.\"\n\n\"Un 'peu' ca joue pas comme ca ! -- Avoue, t'es bon.\"\n\n\"{name} etait bien meilleure quand meme.\"\n\n*Dain arrete ses baguettes. Juste un instant.*\n\n\"...Evidemment ! J'etais sportive de haut niveau !\"\n\n*'J'etais'. Passe. -- Quelque chose me dit qu'il vaut mieux ne pas demander.*\n\n\"Ahh c'est trop epice !! De l'eau, de l'eau !!\"\n\n*Le sujet a change. -- Si elle l'a change expres ou si c'etait vraiment epice. Probablement les deux.*"
+        "text": "*Ses yeux sont en forme de croissant. Les memes yeux qu'hier. -- C'est comme ca que cette personne est quand elle s'amuse vraiment.*\n\n*Au resto de tteokbokki pres de l'ecole.*\n\n*Dain souffle sur son tteokbokki et dit :*\nHe, tu connais vraiment le sport, hein ?\n\nUn peu.\n\nUn 'peu' ca joue pas comme ca ! -- Avoue, t'es bon.\n\n{name} etait bien meilleure quand meme.\n\n*Dain arrete ses baguettes. Juste un instant.*\n\n...Evidemment ! J'etais sportive de haut niveau !\n\n*'J'etais'. Passe. -- Quelque chose me dit qu'il vaut mieux ne pas demander.*\n\nAhh c'est trop epice !! De l'eau, de l'eau !!\n\n*Le sujet a change. -- Si elle l'a change expres ou si c'etait vraiment epice. Probablement les deux.*"
     },
     "after2_seo_1": {
         "name": "Moi",
@@ -86,23 +86,23 @@
     },
     "after2_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"T'es vraiment venu. -- Honnetement, je pensais pas que tu viendrais.\""
+        "text": "T'es vraiment venu. -- Honnetement, je pensais pas que tu viendrais."
     },
     "after2_seo_3": {
         "name": "{name}",
-        "text": "\"Quand on m'appelle, je viens.\""
+        "text": "Quand on m'appelle, je viens."
     },
     "after2_seo_4": {
         "name": "서연(Seoyeon)",
-        "text": "*Avec un leger sourire* \"Obeissant.\""
+        "text": "*Avec un leger sourire* Obeissant."
     },
     "after2_seo_5": {
         "name": "{name}",
-        "text": "\"C'est toi qui as demande de l'aide.\""
+        "text": "C'est toi qui as demande de l'aide."
     },
     "after2_seo_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"J'ai pas demande -- je t'ai donne une opportunite.\""
+        "text": "J'ai pas demande -- je t'ai donne une opportunite."
     },
     "after2_seo_7": {
         "name": "Moi",
@@ -110,14 +110,14 @@
     },
     "after2_seo_8": {
         "name": "서연(Seoyeon)",
-        "text": "\"Ceux-ci par date, ceux-la par club. -- T'es doue pour ranger ?\"\n\n\"{name} : Pas genial, mais pas nul non plus.\"\n\n\"Vague.\"\n\n\"{name} : Comme tes compliments. T'es vague la-dessus aussi.\"\n\n*Seoyeon leve les yeux des documents.*\n\n\"...T'es etonnamment utile.\"\n\n\"{name} : C'est un compliment ?\"\n\n\"C'est un compliment. Prends-le.\""
+        "text": "Ceux-ci par date, ceux-la par club. -- T'es doue pour ranger ?\"\n\n\"{name} : Pas genial, mais pas nul non plus.\"\n\n\"Vague.\"\n\n\"{name} : Comme tes compliments. T'es vague la-dessus aussi.\"\n\n*Seoyeon leve les yeux des documents.*\n\n\"...T'es etonnamment utile.\"\n\n\"{name} : C'est un compliment ?\"\n\n\"C'est un compliment. Prends-le."
     },
     "after2_seo_choice1": {
         "name": "Moi",
         "text": "*Dire directement que c'est un compliment. -- Ca semble rare venant d'elle.*\n\n*En rangeant, Seoyeon fait rouler sa nuque. Ca a l'air tendu.*",
         "choices": [
-            "\"Le coucher de soleil est magnifique. -- Ah, je parlais de dehors, pas de toi.\"",
-            "\"T'as mal au cou ? Repose-toi un peu.\""
+            "Le coucher de soleil est magnifique. -- Ah, je parlais de dehors, pas de toi.",
+            "T'as mal au cou ? Repose-toi un peu."
         ]
     },
     "after2_seo_sunset_joke": {
@@ -126,11 +126,11 @@
     },
     "after2_seo_sunset_react": {
         "name": "서연(Seoyeon)",
-        "text": "\"...T'es la premiere personne a dire un truc aussi ringard aussi naturellement.\"\n\n*Ses yeux ont souri. -- Pas le sourire travaille ou seules les commissures se levent, mais un vrai. Qui a dure plus de trois secondes, pas juste une demi-seconde.*"
+        "text": "...T'es la premiere personne a dire un truc aussi ringard aussi naturellement.\n\n*Ses yeux ont souri. -- Pas le sourire travaille ou seules les commissures se levent, mais un vrai. Qui a dure plus de trois secondes, pas juste une demi-seconde.*"
     },
     "after2_seo_neck_worry": {
         "name": "서연(Seoyeon)",
-        "text": "\"Ca va. C'est quotidien.\""
+        "text": "Ca va. C'est quotidien."
     },
     "after2_seo_neck_react": {
         "name": "Moi",
@@ -144,8 +144,8 @@
         "name": "Moi",
         "text": "*Le tri est presque termine.*",
         "choices": [
-            "\"Je reste encore un peu ? Il semble en rester\"",
-            "\"Si c'est fini, j'y vais\""
+            "Je reste encore un peu ? Il semble en rester",
+            "Si c'est fini, j'y vais"
         ]
     },
     "after2_seo_stay": {
@@ -154,11 +154,11 @@
     },
     "after2_seo_stay_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...J'aime ce moment. Quand je suis seule dans la salle du conseil, je n'ai aucun role a jouer.\""
+        "text": "...J'aime ce moment. Quand je suis seule dans la salle du conseil, je n'ai aucun role a jouer."
     },
     "after2_seo_stay_3": {
         "name": "{name}",
-        "text": "\"Meme la presidente du conseil se repose ?\"\n\nSeoyeon : \"Jamais. -- Sauf ici.\"\n\n*'Sauf ici.' -- Que ce soit le toit ou la salle du conseil, Seoyeon est quelqu'un qui a besoin d'un endroit ou elle peut retirer le masque.*"
+        "text": "Meme la presidente du conseil se repose ?\n\nSeoyeon : Jamais. -- Sauf ici.\n\n*'Sauf ici.' -- Que ce soit le toit ou la salle du conseil, Seoyeon est quelqu'un qui a besoin d'un endroit ou elle peut retirer le masque.*"
     },
     "after2_seo_leave": {
         "name": "Moi",
@@ -178,15 +178,15 @@
     },
     "after2_yuna_3": {
         "name": "유나(Yuna)",
-        "text": "\"...T'es venu.\""
+        "text": "...T'es venu."
     },
     "after2_yuna_4": {
         "name": "{name}",
-        "text": "\"Tu m'as pas appele.\""
+        "text": "Tu m'as pas appele."
     },
     "after2_yuna_5": {
         "name": "유나(Yuna)",
-        "text": "\"Faut que je t'appelle pour que tu viennes ?\""
+        "text": "Faut que je t'appelle pour que tu viennes ?"
     },
     "after2_yuna_6": {
         "name": "Moi",
@@ -194,11 +194,11 @@
     },
     "after2_yuna_7": {
         "name": "{name}",
-        "text": "\"La porte etait ouverte.\""
+        "text": "La porte etait ouverte."
     },
     "after2_yuna_8": {
         "name": "유나(Yuna)",
-        "text": "\"...Par hasard.\"\n\n*Une porte ouverte par hasard. -- Le 'par hasard' de Yuna est synonyme de 'expres'.*\n\n*Je m'assois a cote d'elle. Yuna me tend un de ses ecouteurs.*\n\n\"Ecoute.\"\n\n*Un morceau de piano tranquille commence. Le couchant peint la piece.*"
+        "text": "...Par hasard.\n\n*Une porte ouverte par hasard. -- Le 'par hasard' de Yuna est synonyme de 'expres'.*\n\n*Je m'assois a cote d'elle. Yuna me tend un de ses ecouteurs.*\n\nEcoute.\n\n*Un morceau de piano tranquille commence. Le couchant peint la piece.*"
     },
     "after2_yuna_9": {
         "name": "Moi",
@@ -206,10 +206,10 @@
     },
     "after2_yuna_choice": {
         "name": "유나(Yuna)",
-        "text": "*Apres un long moment* \"...Quelqu'un qui vient ici apres les cours.\"\n\n\"{name} : Hm ?\"\n\n\"Y en a pas eu depuis ce sunbae.\"\n\n*Yuna a dit deux phrases. -- Pour elle, c'est l'equivalent de 'merci'.*",
+        "text": "*Apres un long moment* ...Quelqu'un qui vient ici apres les cours.\n\n{name} : Hm ?\n\nY en a pas eu depuis ce sunbae.\n\n*Yuna a dit deux phrases. -- Pour elle, c'est l'equivalent de 'merci'.*",
         "choices": [
-            "\"Je devrais venir tous les jours ?\"",
-            "\"C'est agreable parce que c'est calme\""
+            "Je devrais venir tous les jours ?",
+            "C'est agreable parce que c'est calme"
         ]
     },
     "after2_yuna_everyday": {
@@ -218,11 +218,11 @@
     },
     "after2_yuna_everyday_react": {
         "name": "유나(Yuna)",
-        "text": "\"...Viens si tu veux. Je t'en empecherai pas.\"\n\n*'Je t'en empecherai pas.' -- Dans le langage de Yuna, ca se traduit par 's'il te plait viens'.*"
+        "text": "...Viens si tu veux. Je t'en empecherai pas.\n\n*'Je t'en empecherai pas.' -- Dans le langage de Yuna, ca se traduit par 's'il te plait viens'.*"
     },
     "after2_yuna_quiet": {
         "name": "유나(Yuna)",
-        "text": "\"...C'est pour ca que j'aime cet endroit.\""
+        "text": "...C'est pour ca que j'aime cet endroit."
     },
     "after2_yuna_quiet_react": {
         "name": "Moi",

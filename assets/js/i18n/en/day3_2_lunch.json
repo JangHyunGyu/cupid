@@ -9,23 +9,23 @@
     },
     "lunch3_meal_1": {
         "name": "다인(Dain)",
-        "text": "\"Oh! This is good!!\""
+        "text": "Oh! This is good!!"
     },
     "lunch3_meal_2": {
         "name": "Me",
-        "text": "\"That's mine...\""
+        "text": "That's mine..."
     },
     "lunch3_meal_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"The egg roll is a bit too salty. 6 points.\""
+        "text": "The egg roll is a bit too salty. 6 points."
     },
     "lunch3_meal_4": {
         "name": "Me",
-        "text": "\"Don't rate my food.\""
+        "text": "Don't rate my food."
     },
     "lunch3_meal_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"Out of 10. That's not bad, you know?\""
+        "text": "Out of 10. That's not bad, you know?"
     },
     "lunch3_meal_6": {
         "name": "Me",
@@ -33,11 +33,11 @@
     },
     "lunch3_meal_7": {
         "name": "Me",
-        "text": "\"...유나(Yuna), that was my favorite one.\""
+        "text": "...유나(Yuna), that was my favorite one."
     },
     "lunch3_meal_8": {
         "name": "유나(Yuna)",
-        "text": "\"...It's good.\""
+        "text": "...It's good."
     },
     "lunch3_meal_9": {
         "name": "Me",
@@ -58,52 +58,52 @@
             "Give it to 서연(Seoyeon)",
             "Give it to 다인(Dain)",
             "Give it to 유나(Yuna)",
-            "\"Let's just share it\""
+            "Let's just share it"
         ]
     },
     "lunch3_give_seo_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Thanks. You do have a sense for these things.\""
+        "text": "...Thanks. You do have a sense for these things."
     },
     "lunch3_give_seo_2": {
         "name": "다인(Dain)",
-        "text": "\"Hey! I wanted some too!\""
+        "text": "Hey! I wanted some too!"
     },
     "lunch3_give_seo_3": {
         "name": "유나(Yuna)",
-        "text": "\"......\""
+        "text": "......"
     },
     "lunch3_give_dain_1": {
         "name": "다인(Dain)",
-        "text": "\"Really?! Thanks!! {name} is the best!!\""
+        "text": "Really?! Thanks!! {name} is the best!!"
     },
     "lunch3_give_dain_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Hmph. And here I even rated it for you.\""
+        "text": "...Hmph. And here I even rated it for you."
     },
     "lunch3_give_dain_3": {
         "name": "유나(Yuna)",
-        "text": "\"......\""
+        "text": "......"
     },
     "lunch3_give_yuna_1": {
         "name": "유나(Yuna)",
-        "text": "\"...Thanks.\""
+        "text": "...Thanks."
     },
     "lunch3_give_yuna_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...I thought you'd give it to me.\""
+        "text": "...I thought you'd give it to me."
     },
     "lunch3_give_yuna_3": {
         "name": "다인(Dain)",
-        "text": "\"What! What about me?!\""
+        "text": "What! What about me?!"
     },
     "lunch3_expose_1": {
         "name": "Me",
-        "text": "*The moment I said \"let's all share\" — 다인(Dain) spoke first.*"
+        "text": "*The moment I said let's all share — 다인(Dain) spoke first.*"
     },
     "lunch3_expose_2": {
         "name": "다인(Dain)",
-        "text": "\"Oh right! {name}, we're going to the arcade this weekend!! What should we eat before?!\""
+        "text": "Oh right! {name}, we're going to the arcade this weekend!! What should we eat before?!"
     },
     "lunch3_expose_3": {
         "name": "Me",
@@ -115,15 +115,15 @@
     },
     "lunch3_expose_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Arcade?\""
+        "text": "...Arcade?"
     },
     "lunch3_expose_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"You told me you had somewhere to go together.\""
+        "text": "You told me you had somewhere to go together."
     },
     "lunch3_expose_7": {
         "name": "다인(Dain)",
-        "text": "\"...Wait. You told me you'd hang out this weekend too?\""
+        "text": "...Wait. You told me you'd hang out this weekend too?"
     },
     "lunch3_expose_8": {
         "name": "Me",
@@ -131,7 +131,7 @@
     },
     "lunch3_expose_9": {
         "name": "유나(Yuna)",
-        "text": "\"I knew.\""
+        "text": "I knew."
     },
     "lunch3_expose_10": {
         "name": "Me",
@@ -139,7 +139,7 @@
     },
     "lunch3_expose_11": {
         "name": "유나(Yuna)",
-        "text": "\"...That was a lie. I didn't know either.\""
+        "text": "...That was a lie. I didn't know either."
     },
     "lunch3_expose_12": {
         "name": "Me",
@@ -151,7 +151,7 @@
     },
     "lunch3_expose_14": {
         "name": "민수(Minsu)",
-        "text": "\"...Dude. Have you lost your mind?\""
+        "text": "...Dude. Have you lost your mind?"
     },
     "lunch3_expose_15": {
         "name": "Me",
@@ -161,22 +161,22 @@
         "name": "Me",
         "text": "*What should I say...*",
         "choices": [
-            "\"I'm sorry. You're all such great people, I couldn't say no.\"",
-            "\"The times are different, so I thought it'd be fine...\"",
+            "I'm sorry. You're all such great people, I couldn't say no.",
+            "The times are different, so I thought it'd be fine...",
             "Run away"
         ]
     },
     "lunch3_expose_honest_1": {
         "name": "Me",
-        "text": "\"I'm sorry. You're all such great people, I couldn't say no.\""
+        "text": "I'm sorry. You're all such great people, I couldn't say no."
     },
     "lunch3_expose_honest_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Couldn't say no. That's the cruelest thing you could say, {name}.\""
+        "text": "...Couldn't say no. That's the cruelest thing you could say, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Kindness that can't refuse — gives false hope.\""
+        "text": "Kindness that can't refuse — gives false hope."
     },
     "lunch3_expose_honest_4": {
         "name": "Me",
@@ -184,7 +184,7 @@
     },
     "lunch3_expose_honest_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"I don't want to be just one of your options. Either the only answer, or nothing at all. — I can't do halfway.\""
+        "text": "I don't want to be just one of your options. Either the only answer, or nothing at all. — I can't do halfway."
     },
     "lunch3_expose_honest_6": {
         "name": "Me",
@@ -196,15 +196,15 @@
     },
     "lunch3_expose_excuse_1": {
         "name": "Me",
-        "text": "\"The times are different, so I thought it'd be fine...\""
+        "text": "The times are different, so I thought it'd be fine..."
     },
     "lunch3_expose_excuse_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...You don't see how that's the problem?\""
+        "text": "...You don't see how that's the problem?"
     },
     "lunch3_expose_excuse_3": {
         "name": "다인(Dain)",
-        "text": "\"Give me some time to think too.\""
+        "text": "Give me some time to think too."
     },
     "lunch3_expose_excuse_4": {
         "name": "Me",

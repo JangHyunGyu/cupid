@@ -9,23 +9,23 @@
     },
     "morning2_dain_1": {
         "name": "다인(Dain)",
-        "text": "\"Llegaste?! Buenos dias!!\""
+        "text": "Llegaste?! Buenos dias!!"
     },
     "morning2_dain_2": {
         "name": "{name}",
-        "text": "\"...Casi me rompes la espalda.\""
+        "text": "...Casi me rompes la espalda."
     },
     "morning2_dain_3": {
         "name": "다인(Dain)",
-        "text": "\"Jaja, con eso?! Necesitas hacer mas ejercicio!\""
+        "text": "Jaja, con eso?! Necesitas hacer mas ejercicio!"
     },
     "morning2_dain_4": {
         "name": "{name}",
-        "text": "\"No es un poco temprano para tanta energia?\""
+        "text": "No es un poco temprano para tanta energia?"
     },
     "morning2_dain_5": {
         "name": "다인(Dain)",
-        "text": "\"Esto es lo normal! Tu eres el que anda bajo de pilas!\""
+        "text": "Esto es lo normal! Tu eres el que anda bajo de pilas!"
     },
     "morning2_dain_6": {
         "name": "Yo",
@@ -49,7 +49,7 @@
     },
     "morning2_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Dormiste bien anoche?\""
+        "text": "Dormiste bien anoche?"
     },
     "morning2_seo_3": {
         "name": "Yo",
@@ -57,11 +57,11 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "\"La presidenta del consejo estudiantil viene hasta el aula a saludar?\""
+        "text": "La presidenta del consejo estudiantil viene hasta el aula a saludar?"
     },
     "morning2_seo_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"Solo iba de paso. -- Que tengas otro dia divertido.\""
+        "text": "Solo iba de paso. -- Que tengas otro dia divertido."
     },
     "morning2_minsu_1": {
         "name": "Yo",
@@ -73,15 +73,15 @@
     },
     "morning2_minsu_3": {
         "name": "민수(Minsu)",
-        "text": "\"Oye, dos dias como alumno nuevo y la presidenta del consejo viene a saludarte? Yo llevo un ano aqui y ni me mira.\""
+        "text": "Oye, dos dias como alumno nuevo y la presidenta del consejo viene a saludarte? Yo llevo un ano aqui y ni me mira."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
-        "text": "\"Tal vez es que no eres popular.\""
+        "text": "Tal vez es que no eres popular."
     },
     "morning2_dain_claim_2": {
         "name": "민수(Minsu)",
-        "text": "\"...Eso es verdad, pero no es el punto.\""
+        "text": "...Eso es verdad, pero no es el punto."
     },
     "morning2_dain_claim_3": {
         "name": "Yo",
@@ -89,15 +89,15 @@
     },
     "morning2_dain_claim_4": {
         "name": "다인(Dain)",
-        "text": "\"La presidenta tambien esta interesada en nuestro alumno nuevo?\""
+        "text": "La presidenta tambien esta interesada en nuestro alumno nuevo?"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
-        "text": "\"'Nuestro' alumno nuevo?\""
+        "text": "'Nuestro' alumno nuevo?"
     },
     "morning2_dain_claim_6": {
         "name": "다인(Dain)",
-        "text": "\"Yo te encontre primero, asi que eres nuestro alumno nuevo! Lo reclamo! Es mio!\""
+        "text": "Yo te encontre primero, asi que eres nuestro alumno nuevo! Lo reclamo! Es mio!"
     },
     "morning2_break_1": {
         "name": "Yo",
@@ -109,7 +109,7 @@
     },
     "morning2_seo_dust_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Espera.\""
+        "text": "Espera."
     },
     "morning2_seo_dust_3": {
         "name": "Yo",
@@ -117,15 +117,15 @@
     },
     "morning2_seo_dust_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Tenias algo en la ropa.\""
+        "text": "Tenias algo en la ropa."
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "\"......\""
+        "text": "......"
     },
     "morning2_seo_dust_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"Que? Solo era polvo.\""
+        "text": "Que? Solo era polvo."
     },
     "morning2_dain_react_1": {
         "name": "Yo",
@@ -137,15 +137,15 @@
     },
     "morning2_dain_react_3": {
         "name": "다인(Dain)",
-        "text": "\"Oye! Que fue eso?! Te toco el hombro?!\""
+        "text": "Oye! Que fue eso?! Te toco el hombro?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
-        "text": "\"Me quito el polvo.\""
+        "text": "Me quito el polvo."
     },
     "morning2_dain_react_5": {
         "name": "다인(Dain)",
-        "text": "\"Polvo... de verdad habia polvo?!\""
+        "text": "Polvo... de verdad habia polvo?!"
     },
     "morning2_dain_react_6": {
         "name": "Yo",
@@ -157,23 +157,23 @@
     },
     "morning2_haeun_2": {
         "name": "하은(Haeun)",
-        "text": "\"Disculpa, tu eres el alumno nuevo, verdad? Soy Haeun, la vicepresidenta del consejo estudiantil.\""
+        "text": "Disculpa, tu eres el alumno nuevo, verdad? Soy Haeun, la vicepresidenta del consejo estudiantil."
     },
     "morning2_haeun_3": {
         "name": "{name}",
-        "text": "\"Ah, si.\""
+        "text": "Ah, si."
     },
     "morning2_haeun_4": {
         "name": "하은(Haeun)",
-        "text": "\"La presidenta... o sea, Seoyeon sunbae parece un poco diferente ultimamente.\""
+        "text": "La presidenta... o sea, Seoyeon sunbae parece un poco diferente ultimamente."
     },
     "morning2_haeun_5": {
         "name": "{name}",
-        "text": "\"Diferente como?\""
+        "text": "Diferente como?"
     },
     "morning2_haeun_6": {
         "name": "하은(Haeun)",
-        "text": "\"Ella no suele ser asi. Acercarse a otro estudiante primero... llevo un ano observandola y es la primera vez.\""
+        "text": "Ella no suele ser asi. Acercarse a otro estudiante primero... llevo un ano observandola y es la primera vez."
     },
     "morning2_haeun_7": {
         "name": "Yo",

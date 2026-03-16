@@ -13,11 +13,11 @@
     },
     "night3_faithful_msg_seo_1": {
         "name": "서연",
-        "text": "\"오늘 본 거, 비밀이야\""
+        "text": "오늘 본 거, 비밀이야"
     },
     "night3_faithful_msg_seo_2": {
         "name": "서연",
-        "text": "\"...근데 또 와도 돼\""
+        "text": "...근데 또 와도 돼"
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
@@ -29,15 +29,15 @@
     },
     "night3_faithful_msg_yuna_2": {
         "name": "유나",
-        "text": "\"그 소설, 결말은 아직 안 정했어\""
+        "text": "그 소설, 결말은 아직 안 정했어"
     },
     "night3_faithful_msg_dain_1": {
         "name": "다인",
-        "text": "\"발목 괜찮냐고 물어볼 거면 직접 와서 물어봐ㅋㅋ\""
+        "text": "발목 괜찮냐고 물어볼 거면 직접 와서 물어봐ㅋㅋ"
     },
     "night3_faithful_msg_dain_2": {
         "name": "다인",
-        "text": "\"아 근데 고마워\""
+        "text": "아 근데 고마워"
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
@@ -61,19 +61,19 @@
     },
     "night3_cheat_msg_2": {
         "name": "서연",
-        "text": "\"나한테만 그래줘\""
+        "text": "나한테만 그래줘"
     },
     "night3_cheat_msg_3": {
         "name": "서연",
-        "text": "\"...부탁이야\""
+        "text": "...부탁이야"
     },
     "night3_cheat_msg_4": {
         "name": "유나",
-        "text": "\"...거짓말은 하지 마\""
+        "text": "...거짓말은 하지 마"
     },
     "night3_cheat_msg_5": {
         "name": "유나",
-        "text": "\"그것만\""
+        "text": "그것만"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -85,15 +85,15 @@
     },
     "night3_nightmare_3": {
         "name": "서연",
-        "text": "\"약속했잖아. 나한테만이라고...\""
+        "text": "약속했잖아. 나한테만이라고..."
     },
     "night3_nightmare_4": {
         "name": "유나",
-        "text": "\"거짓말하지 말라고 했지.\""
+        "text": "거짓말하지 말라고 했지."
     },
     "night3_nightmare_5": {
         "name": "다인",
-        "text": "\"온다면서. 기다렸는데.\""
+        "text": "온다면서. 기다렸는데."
     },
     "night3_nightmare_6": {
         "name": "{name}",

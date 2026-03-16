@@ -17,7 +17,7 @@
     },
     "lunch_start_5": {
         "name": "다인(Dain)",
-        "text": "\"¡Oye! ¡¿Ya comiste?! ¡Vamos a la tienda! Yo te invito el pan... ¡el que pierda paga!\""
+        "text": "¡Oye! ¡¿Ya comiste?! ¡Vamos a la tienda! Yo te invito el pan... ¡el que pierda paga!"
     },
     "lunch_start_6": {
         "name": "Yo",
@@ -46,23 +46,23 @@
     },
     "lunch_seo_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Este es mi territorio.\""
+        "text": "Este es mi territorio."
     },
     "lunch_seo_4": {
         "name": "{name}",
-        "text": "\"¿Una azotea exclusiva para la presidenta del consejo?\""
+        "text": "¿Una azotea exclusiva para la presidenta del consejo?"
     },
     "lunch_seo_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"No traigo a cualquiera aquí.\" *despliega una silla* \"Hoy es especial.\""
+        "text": "No traigo a cualquiera aquí.\" *despliega una silla* \"Hoy es especial."
     },
     "lunch_seo_6": {
         "name": "{name}",
-        "text": "\"¿Trato especial el primer día? Suena sospechoso.\""
+        "text": "¿Trato especial el primer día? Suena sospechoso."
     },
     "lunch_seo_7": {
         "name": "서연(Seoyeon)",
-        "text": "*sonríe* \"Eres muy desconfiado. Solo me gusta la brisa.\""
+        "text": "*sonríe* Eres muy desconfiado. Solo me gusta la brisa."
     },
     "lunch_seo_8": {
         "name": "Yo",
@@ -70,11 +70,11 @@
     },
     "lunch_seo_9": {
         "name": "{name}",
-        "text": "\"...Eso es para dos personas.\""
+        "text": "...Eso es para dos personas."
     },
     "lunch_seo_10": {
         "name": "서연(Seoyeon)",
-        "text": "\"Ya confirmé que eres observador, ¿recuerdas?\""
+        "text": "Ya confirmé que eres observador, ¿recuerdas?"
     },
     "lunch_seo_11": {
         "name": "Yo",
@@ -86,19 +86,19 @@
     },
     "lunch_seo_13": {
         "name": "{name}",
-        "text": "\"¿Lo preparaste tú misma?\""
+        "text": "¿Lo preparaste tú misma?"
     },
     "lunch_seo_14": {
         "name": "서연(Seoyeon)",
-        "text": "\"Una presidenta del consejo debe ser buena en todo.\""
+        "text": "Una presidenta del consejo debe ser buena en todo."
     },
     "lunch_seo_15": {
         "name": "{name}",
-        "text": "\"Eso no es realmente una respuesta.\""
+        "text": "Eso no es realmente una respuesta."
     },
     "lunch_seo_16": {
         "name": "서연(Seoyeon)",
-        "text": "*le pasa los palillos* \"Come. Frío no sabe bien.\""
+        "text": "*le pasa los palillos* Come. Frío no sabe bien."
     },
     "lunch_seo_17": {
         "name": "Yo",
@@ -110,15 +110,15 @@
     },
     "lunch_seo_19": {
         "name": "서연(Seoyeon)",
-        "text": "\"¿Qué te parece la escuela?\""
+        "text": "¿Qué te parece la escuela?"
     },
     "lunch_seo_20": {
         "name": "{name}",
-        "text": "\"La comida está buena.\""
+        "text": "La comida está buena."
     },
     "lunch_seo_21": {
         "name": "서연(Seoyeon)",
-        "text": "*sonríe con sorna* \"Pregunté por la escuela y me contestas sobre la comida.\""
+        "text": "*sonríe con sorna* Pregunté por la escuela y me contestas sobre la comida."
     },
     "lunch_seo_22": {
         "name": "Yo",
@@ -126,14 +126,14 @@
     },
     "lunch_seo_23": {
         "name": "서연(Seoyeon)",
-        "text": "\"Solo un bocado.\""
+        "text": "Solo un bocado."
     },
     "lunch_seo_choice": {
         "name": "Yo",
         "text": "*서연(Seoyeon) me ofrece la tortilla enrollada.*",
         "choices": [
             "Aceptarla",
-            "\"Sabría mejor si te la comieras tú\""
+            "Sabría mejor si te la comieras tú"
         ]
     },
     "lunch_seo_c1_1": {
@@ -142,11 +142,11 @@
     },
     "lunch_seo_c1_2": {
         "name": "{name}",
-        "text": "\"...Está buena.\""
+        "text": "...Está buena."
     },
     "lunch_seo_c1_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Obviamente.\""
+        "text": "...Obviamente."
     },
     "lunch_seo_c1_4": {
         "name": "Yo",
@@ -158,7 +158,7 @@
     },
     "lunch_seo_c2_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Tienes razón. Está buena.\""
+        "text": "Tienes razón. Está buena."
     },
     "lunch_seo_c2_3": {
         "name": "Yo",
@@ -170,15 +170,15 @@
     },
     "lunch_seo_after_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"¿Quieres venir otra vez?\""
+        "text": "¿Quieres venir otra vez?"
     },
     "lunch_seo_after_3": {
         "name": "{name}",
-        "text": "\"¿Es una invitación?\""
+        "text": "¿Es una invitación?"
     },
     "lunch_seo_after_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"No. Es un permiso.\""
+        "text": "No. Es un permiso."
     },
     "lunch_seo_after_5": {
         "name": "Yo",
@@ -198,27 +198,27 @@
     },
     "lunch_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"¡Aquí estamos! ¡¿Qué quieres?! ¡Te recomiendo el pan de costra y la leche de fresa!\""
+        "text": "¡Aquí estamos! ¡¿Qué quieres?! ¡Te recomiendo el pan de costra y la leche de fresa!"
     },
     "lunch_dain_3": {
         "name": "{name}",
-        "text": "\"Pero dijiste que el perdedor paga. ¿Qué hacemos?\""
+        "text": "Pero dijiste que el perdedor paga. ¿Qué hacemos?"
     },
     "lunch_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"¡Piedra-papel-tijeras! ¡Obvio!\""
+        "text": "¡Piedra-papel-tijeras! ¡Obvio!"
     },
     "lunch_dain_5": {
         "name": "{name}",
-        "text": "\"Nada de obvio.\""
+        "text": "Nada de obvio."
     },
     "lunch_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"¡¿No juegas?! ¡Entonces pagas tú!\""
+        "text": "¡¿No juegas?! ¡Entonces pagas tú!"
     },
     "lunch_dain_7": {
         "name": "{name}",
-        "text": "\"...Vale, vamos.\""
+        "text": "...Vale, vamos."
     },
     "lunch_dain_8": {
         "name": "Yo",
@@ -226,7 +226,7 @@
     },
     "lunch_dain_9": {
         "name": "다인(Dain)",
-        "text": "\"¡Piedra— papel— tijeras!\""
+        "text": "¡Piedra— papel— tijeras!"
     },
     "lunch_dain_10": {
         "name": "Yo",
@@ -234,15 +234,15 @@
     },
     "lunch_dain_11": {
         "name": "다인(Dain)",
-        "text": "\"¡¿...Eh?! ¡¿Perdí?! ¡¡La revancha!!\""
+        "text": "¡¿...Eh?! ¡¿Perdí?! ¡¡La revancha!!"
     },
     "lunch_dain_12": {
         "name": "{name}",
-        "text": "\"Una promesa es una promesa.\""
+        "text": "Una promesa es una promesa."
     },
     "lunch_dain_13": {
         "name": "다인(Dain)",
-        "text": "\"¡¡Ugh, está bien!! ¡¡Dos panes de costra!! ¡¡Señora!!\""
+        "text": "¡¡Ugh, está bien!! ¡¡Dos panes de costra!! ¡¡Señora!!"
     },
     "lunch_dain_14": {
         "name": "Yo",
@@ -254,27 +254,27 @@
     },
     "lunch_dain_16": {
         "name": "다인(Dain)",
-        "text": "*mordiendo el pan* \"Oye, ¿de verdad no haces deporte?\""
+        "text": "*mordiendo el pan* Oye, ¿de verdad no haces deporte?"
     },
     "lunch_dain_17": {
         "name": "{name}",
-        "text": "\"¿Por qué, te preocupa mi resistencia?\""
+        "text": "¿Por qué, te preocupa mi resistencia?"
     },
     "lunch_dain_18": {
         "name": "다인(Dain)",
-        "text": "\"¡No, es que para aguantarme necesitas algo de resistencia! Jaja\""
+        "text": "¡No, es que para aguantarme necesitas algo de resistencia! Jaja"
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "\"Sonó como un anuncio personal.\""
+        "text": "Sonó como un anuncio personal."
     },
     "lunch_dain_20": {
         "name": "다인(Dain)",
-        "text": "\"¡¿Qué?! ¡¿Qué es un PR?!\""
+        "text": "¡¿Qué?! ¡¿Qué es un PR?!"
     },
     "lunch_dain_21": {
         "name": "{name}",
-        "text": "\"Personal Record. Es un término deportivo.\""
+        "text": "Personal Record. Es un término deportivo."
     },
     "lunch_dain_22": {
         "name": "Yo",
@@ -282,19 +282,19 @@
     },
     "lunch_dain_23": {
         "name": "다인(Dain)",
-        "text": "\"¡Oh, ¿sabes eso?! ¡¿Entonces sí sabes de deportes?!\""
+        "text": "¡Oh, ¿sabes eso?! ¡¿Entonces sí sabes de deportes?!"
     },
     "lunch_dain_choice": {
         "name": "Yo",
         "text": "*다인(Dain) me mira con ojos llenos de expectación.*",
         "choices": [
-            "\"Un poco. ¿Me enseñarías?\"",
-            "\"Solo fingí.\""
+            "Un poco. ¿Me enseñarías?",
+            "Solo fingí."
         ]
     },
     "lunch_dain_c1_1": {
         "name": "다인(Dain)",
-        "text": "\"¡Jaja genial!! ¡Yo te enseño todo! ¡¿Gimnasio después de clases, hecho?!\""
+        "text": "¡Jaja genial!! ¡Yo te enseño todo! ¡¿Gimnasio después de clases, hecho?!"
     },
     "lunch_dain_c1_2": {
         "name": "Yo",
@@ -302,7 +302,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "다인(Dain)",
-        "text": "\"¡Venga ya, pero te interesa! ¡Ven al gimnasio después de clases! ¡No te arrepentirás!\""
+        "text": "¡Venga ya, pero te interesa! ¡Ven al gimnasio después de clases! ¡No te arrepentirás!"
     },
     "lunch_dain_after": {
         "name": "Yo",
@@ -310,15 +310,15 @@
     },
     "lunch_dain_after_2": {
         "name": "다인(Dain)",
-        "text": "\"¡Oye, {name}!\""
+        "text": "¡Oye, {name}!"
     },
     "lunch_dain_after_3": {
         "name": "{name}",
-        "text": "\"¿Sí?\""
+        "text": "¿Sí?"
     },
     "lunch_dain_after_4": {
         "name": "다인(Dain)",
-        "text": "\"¡Soy la primera persona con la que comiste en tu nueva escuela! ¡Recuérdalo!\""
+        "text": "¡Soy la primera persona con la que comiste en tu nueva escuela! ¡Recuérdalo!"
     },
     "lunch_dain_after_5": {
         "name": "Yo",
@@ -342,7 +342,7 @@
     },
     "lunch_yuna_4": {
         "name": "유나(Yuna)",
-        "text": "\"......\""
+        "text": "......"
     },
     "lunch_yuna_5": {
         "name": "Yo",
@@ -350,11 +350,11 @@
     },
     "lunch_yuna_6": {
         "name": "{name}",
-        "text": "\"...¿Puedo sentarme aquí?\""
+        "text": "...¿Puedo sentarme aquí?"
     },
     "lunch_yuna_7": {
         "name": "유나(Yuna)",
-        "text": "*sin apartar la vista del libro* \"...Si no haces ruido.\""
+        "text": "*sin apartar la vista del libro* ...Si no haces ruido."
     },
     "lunch_yuna_8": {
         "name": "Yo",
@@ -374,15 +374,15 @@
     },
     "lunch_yuna_12": {
         "name": "유나(Yuna)",
-        "text": "*echándome un vistazo* \"...Ese es el tomo 3.\""
+        "text": "*echándome un vistazo* ...Ese es el tomo 3."
     },
     "lunch_yuna_13": {
         "name": "{name}",
-        "text": "\"¿Eh?\""
+        "text": "¿Eh?"
     },
     "lunch_yuna_14": {
         "name": "유나(Yuna)",
-        "text": "\"Deberías empezar por el tomo 1.\""
+        "text": "Deberías empezar por el tomo 1."
     },
     "lunch_yuna_15": {
         "name": "Yo",
@@ -390,11 +390,11 @@
     },
     "lunch_yuna_16": {
         "name": "{name}",
-        "text": "\"Gracias.\""
+        "text": "Gracias."
     },
     "lunch_yuna_17": {
         "name": "유나(Yuna)",
-        "text": "\"...Léelo y devuelve.\""
+        "text": "...Léelo y devuelve."
     },
     "lunch_yuna_18": {
         "name": "Yo",
@@ -410,19 +410,19 @@
     },
     "lunch_yuna_21": {
         "name": "{name}",
-        "text": "\"¿Ya?\""
+        "text": "¿Ya?"
     },
     "lunch_yuna_22": {
         "name": "유나(Yuna)",
-        "text": "*colocando un marcapáginas* \"...Gracias por estar en silencio.\""
+        "text": "*colocando un marcapáginas* ...Gracias por estar en silencio."
     },
     "lunch_yuna_23": {
         "name": "{name}",
-        "text": "\"¿Eh?\""
+        "text": "¿Eh?"
     },
     "lunch_yuna_24": {
         "name": "유나(Yuna)",
-        "text": "\"Fue agradable.\""
+        "text": "Fue agradable."
     },
     "lunch_yuna_25": {
         "name": "Yo",

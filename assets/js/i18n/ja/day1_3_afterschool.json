@@ -37,7 +37,7 @@
     },
     "after_miss_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"あぶない！！\""
+        "text": "あぶない！！"
     },
     "after_miss_dain_3": {
         "name": "僕",
@@ -45,15 +45,15 @@
     },
     "after_miss_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"お！反射神経いいじゃん！\""
+        "text": "お！反射神経いいじゃん！"
     },
     "after_miss_dain_5": {
         "name": "僕",
-        "text": "\"廊下でなんで全力ダッシュなの？\""
+        "text": "廊下でなんで全力ダッシュなの？"
     },
     "after_miss_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"遅れてるの！体育館行かなきゃ！——あ、また明日ね！転校生！\""
+        "text": "遅れてるの！体育館行かなきゃ！——あ、また明日ね！転校生！"
     },
     "after_miss_dain_7": {
         "name": "僕",
@@ -69,7 +69,7 @@
     },
     "after_miss_yuna_3": {
         "name": "유나(Yuna)",
-        "text": "\"………ありがとう。\""
+        "text": "………ありがとう。"
     },
     "after_miss_yuna_4": {
         "name": "僕",
@@ -81,23 +81,23 @@
     },
     "after_miss_seoyeon_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"さっきどこ行ってたの？\""
+        "text": "さっきどこ行ってたの？"
     },
     "after_miss_seoyeon_3": {
         "name": "僕",
-        "text": "\"さっきって？\""
+        "text": "さっきって？"
     },
     "after_miss_seoyeon_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"お昼。屋上開けておいたのに。私を待たせるなんて、大胆な転校生ね。\""
+        "text": "お昼。屋上開けておいたのに。私を待たせるなんて、大胆な転校生ね。"
     },
     "after_miss_seoyeon_5": {
         "name": "僕",
-        "text": "\"待ってたの？\""
+        "text": "待ってたの？"
     },
     "after_miss_seoyeon_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"…風に当たりに上がったら、たまたまドアが開いてただけ。\""
+        "text": "…風に当たりに上がったら、たまたまドアが開いてただけ。"
     },
     "after_miss_seoyeon_7": {
         "name": "僕",
@@ -105,7 +105,7 @@
     },
     "after_miss_seoyeon_8": {
         "name": "서연(Seoyeon)",
-        "text": "\"明日は逃げないでよ。\""
+        "text": "明日は逃げないでよ。"
     },
     "after_end": {
         "name": "僕",

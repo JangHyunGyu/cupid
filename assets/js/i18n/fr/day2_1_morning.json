@@ -9,23 +9,23 @@
     },
     "morning2_dain_1": {
         "name": "다인(Dain)",
-        "text": "\"T'es la ?! Bonjour !!\""
+        "text": "T'es la ?! Bonjour !!"
     },
     "morning2_dain_2": {
         "name": "{name}",
-        "text": "\"...Tu as failli me casser le dos.\""
+        "text": "...Tu as failli me casser le dos."
     },
     "morning2_dain_3": {
         "name": "다인(Dain)",
-        "text": "\"Haha, pour ca ?! Faut faire du sport !\""
+        "text": "Haha, pour ca ?! Faut faire du sport !"
     },
     "morning2_dain_4": {
         "name": "{name}",
-        "text": "\"C'est pas un peu tot pour autant d'energie ?\""
+        "text": "C'est pas un peu tot pour autant d'energie ?"
     },
     "morning2_dain_5": {
         "name": "다인(Dain)",
-        "text": "\"C'est ca la normale ! C'est toi qui es a plat !\""
+        "text": "C'est ca la normale ! C'est toi qui es a plat !"
     },
     "morning2_dain_6": {
         "name": "Moi",
@@ -49,7 +49,7 @@
     },
     "morning2_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Tu as bien dormi ?\""
+        "text": "Tu as bien dormi ?"
     },
     "morning2_seo_3": {
         "name": "Moi",
@@ -57,11 +57,11 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "\"La presidente du conseil des eleves vient jusqu'en classe pour dire bonjour ?\""
+        "text": "La presidente du conseil des eleves vient jusqu'en classe pour dire bonjour ?"
     },
     "morning2_seo_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"Je ne faisais que passer. -- Passe une bonne journee aussi.\""
+        "text": "Je ne faisais que passer. -- Passe une bonne journee aussi."
     },
     "morning2_minsu_1": {
         "name": "Moi",
@@ -73,15 +73,15 @@
     },
     "morning2_minsu_3": {
         "name": "민수(Minsu)",
-        "text": "\"Mec, deux jours en tant que nouvel eleve et la presidente du conseil vient te saluer ? Ca fait un an que je suis la et elle me regarde meme pas.\""
+        "text": "Mec, deux jours en tant que nouvel eleve et la presidente du conseil vient te saluer ? Ca fait un an que je suis la et elle me regarde meme pas."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
-        "text": "\"T'es peut-etre juste pas populaire.\""
+        "text": "T'es peut-etre juste pas populaire."
     },
     "morning2_dain_claim_2": {
         "name": "민수(Minsu)",
-        "text": "\"...C'est vrai, mais c'est pas le sujet.\""
+        "text": "...C'est vrai, mais c'est pas le sujet."
     },
     "morning2_dain_claim_3": {
         "name": "Moi",
@@ -89,15 +89,15 @@
     },
     "morning2_dain_claim_4": {
         "name": "다인(Dain)",
-        "text": "\"La presidente aussi s'interesse a notre nouvel eleve ?\""
+        "text": "La presidente aussi s'interesse a notre nouvel eleve ?"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
-        "text": "\"'Notre' nouvel eleve ?\""
+        "text": "'Notre' nouvel eleve ?"
     },
     "morning2_dain_claim_6": {
         "name": "다인(Dain)",
-        "text": "\"C'est moi qui t'ai trouve en premier, donc t'es notre nouvel eleve ! Premier arrive, premier servi !\""
+        "text": "C'est moi qui t'ai trouve en premier, donc t'es notre nouvel eleve ! Premier arrive, premier servi !"
     },
     "morning2_break_1": {
         "name": "Moi",
@@ -109,7 +109,7 @@
     },
     "morning2_seo_dust_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Attends.\""
+        "text": "Attends."
     },
     "morning2_seo_dust_3": {
         "name": "Moi",
@@ -117,15 +117,15 @@
     },
     "morning2_seo_dust_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"T'avais un truc sur tes vetements.\""
+        "text": "T'avais un truc sur tes vetements."
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "\"......\""
+        "text": "......"
     },
     "morning2_seo_dust_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"Quoi ? C'etait juste de la poussiere.\""
+        "text": "Quoi ? C'etait juste de la poussiere."
     },
     "morning2_dain_react_1": {
         "name": "Moi",
@@ -137,15 +137,15 @@
     },
     "morning2_dain_react_3": {
         "name": "다인(Dain)",
-        "text": "\"He ! C'etait quoi ca ?! Elle t'a touche l'epaule ?!\""
+        "text": "He ! C'etait quoi ca ?! Elle t'a touche l'epaule ?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
-        "text": "\"Elle enlevait de la poussiere.\""
+        "text": "Elle enlevait de la poussiere."
     },
     "morning2_dain_react_5": {
         "name": "다인(Dain)",
-        "text": "\"De la poussiere... y en avait vraiment ?!\""
+        "text": "De la poussiere... y en avait vraiment ?!"
     },
     "morning2_dain_react_6": {
         "name": "Moi",
@@ -157,23 +157,23 @@
     },
     "morning2_haeun_2": {
         "name": "하은(Haeun)",
-        "text": "\"Excusez-moi, vous etes le nouvel eleve, n'est-ce pas ? Je suis Haeun, la vice-presidente du conseil.\""
+        "text": "Excusez-moi, vous etes le nouvel eleve, n'est-ce pas ? Je suis Haeun, la vice-presidente du conseil."
     },
     "morning2_haeun_3": {
         "name": "{name}",
-        "text": "\"Ah, oui.\""
+        "text": "Ah, oui."
     },
     "morning2_haeun_4": {
         "name": "하은(Haeun)",
-        "text": "\"La presidente... enfin, Seoyeon sunbae semble un peu differente ces derniers temps.\""
+        "text": "La presidente... enfin, Seoyeon sunbae semble un peu differente ces derniers temps."
     },
     "morning2_haeun_5": {
         "name": "{name}",
-        "text": "\"Differente comment ?\""
+        "text": "Differente comment ?"
     },
     "morning2_haeun_6": {
         "name": "하은(Haeun)",
-        "text": "\"D'habitude elle n'est pas comme ca. S'approcher d'un autre eleve en premier... ca fait un an que je l'observe et c'est la premiere fois.\""
+        "text": "D'habitude elle n'est pas comme ca. S'approcher d'un autre eleve en premier... ca fait un an que je l'observe et c'est la premiere fois."
     },
     "morning2_haeun_7": {
         "name": "Moi",

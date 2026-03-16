@@ -16,7 +16,6 @@
             "Ir a la tienda de la escuela con Dain"
         ]
     },
-
     "lunch2_yuna_1": {
         "name": "Yo",
         "text": "*El anexo de la biblioteca. Un edificio mas antiguo que el principal. Casi no hay estudiantes.*"
@@ -27,27 +26,27 @@
     },
     "lunch2_yuna_3": {
         "name": "유나(Yuna)",
-        "text": "\"...Viniste.\""
+        "text": "...Viniste."
     },
     "lunch2_yuna_4": {
         "name": "{name}",
-        "text": "\"Recibi tu nota.\""
+        "text": "Recibi tu nota."
     },
     "lunch2_yuna_5": {
         "name": "유나(Yuna)",
-        "text": "\"Podrias no haber venido.\""
+        "text": "Podrias no haber venido."
     },
     "lunch2_yuna_6": {
         "name": "{name}",
-        "text": "\"Por que?\""
+        "text": "Por que?"
     },
     "lunch2_yuna_7": {
         "name": "유나(Yuna)",
-        "text": "\"Parece que te estas llevando bien con la ruidosa. Eso es mas divertido, no?\""
+        "text": "Parece que te estas llevando bien con la ruidosa. Eso es mas divertido, no?"
     },
     "lunch2_yuna_8": {
         "name": "{name}",
-        "text": "\"A veces necesito un refugio.\""
+        "text": "A veces necesito un refugio."
     },
     "lunch2_yuna_9": {
         "name": "Yo",
@@ -55,7 +54,7 @@
     },
     "lunch2_yuna_10": {
         "name": "유나(Yuna)",
-        "text": "\"...Bien.\""
+        "text": "...Bien."
     },
     "lunch2_yuna_11": {
         "name": "Yo",
@@ -67,11 +66,11 @@
     },
     "lunch2_yuna_13": {
         "name": "{name}",
-        "text": "\"Que es este lugar? Una sala de lectura secreta?\""
+        "text": "Que es este lugar? Una sala de lectura secreta?"
     },
     "lunch2_yuna_14": {
         "name": "유나(Yuna)",
-        "text": "\"...Casi nadie sabe de este lugar.\""
+        "text": "...Casi nadie sabe de este lugar."
     },
     "lunch2_yuna_15": {
         "name": "Yo",
@@ -79,24 +78,23 @@
     },
     "lunch2_yuna_16": {
         "name": "유나(Yuna)",
-        "text": "\"Habia una persona mas aqui.\""
+        "text": "Habia una persona mas aqui."
     },
     "lunch2_yuna_17": {
         "name": "{name}",
-        "text": "\"Habia?\""
+        "text": "Habia?"
     },
     "lunch2_yuna_choice": {
         "name": "Yo",
         "text": "*Nada sigue despues de 'habia'. Pasado. -- Deberia preguntar?*",
         "choices": [
-            "\"Esa persona, donde esta ahora?\"",
+            "Esa persona, donde esta ahora?",
             "No preguntar y sentarse a su lado"
         ]
     },
-
     "lunch2_yuna_c1_1": {
         "name": "유나(Yuna)",
-        "text": "\"...Se fue. Hace un ano.\""
+        "text": "...Se fue. Hace un ano."
     },
     "lunch2_yuna_c1_2": {
         "name": "Yo",
@@ -104,7 +102,7 @@
     },
     "lunch2_yuna_c1_3": {
         "name": "유나(Yuna)",
-        "text": "\"Sin decir nada.\""
+        "text": "Sin decir nada."
     },
     "lunch2_yuna_c1_4": {
         "name": "Yo",
@@ -112,11 +110,11 @@
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
-        "text": "\"No se comunico?\""
+        "text": "No se comunico?"
     },
     "lunch2_yuna_c1_6": {
         "name": "유나(Yuna)",
-        "text": "\"...No lo se. Si no quiso, o no pudo.\""
+        "text": "...No lo se. Si no quiso, o no pudo."
     },
     "lunch2_yuna_c1_7": {
         "name": "Yo",
@@ -128,15 +126,15 @@
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
-        "text": "\"Ese sunbae, quiza simplemente se graduo? Los mayores siempre pierden el contacto.\""
+        "text": "Ese sunbae, quiza simplemente se graduo? Los mayores siempre pierden el contacto."
     },
     "lunch2_yuna_c1_10": {
         "name": "유나(Yuna)",
-        "text": "\"...Fue un traslado.\""
+        "text": "...Fue un traslado."
     },
     "lunch2_yuna_c1_11": {
         "name": "{name}",
-        "text": "\"Oh...\""
+        "text": "Oh..."
     },
     "lunch2_yuna_c1_12": {
         "name": "Yo",
@@ -150,7 +148,6 @@
         "name": "Yo",
         "text": "*Siempre me enorgulleci de ser perceptivo. -- Estaba equivocado. No con esta persona.*"
     },
-
     "lunch2_yuna_c2_1": {
         "name": "Yo",
         "text": "*Me siento a su lado sin decir nada. Yuna echa un vistazo brevemente.*"
@@ -161,7 +158,7 @@
     },
     "lunch2_yuna_c2_3": {
         "name": "유나(Yuna)",
-        "text": "\"...Lee.\""
+        "text": "...Lee."
     },
     "lunch2_yuna_c2_4": {
         "name": "Yo",
@@ -173,49 +170,47 @@
     },
     "lunch2_yuna_c2_6": {
         "name": "유나(Yuna)",
-        "text": "\"...La razon por la que me gusta este lugar.\""
+        "text": "...La razon por la que me gusta este lugar."
     },
     "lunch2_yuna_c2_7": {
         "name": "{name}",
-        "text": "\"Hm?\""
+        "text": "Hm?"
     },
     "lunch2_yuna_c2_8": {
         "name": "유나(Yuna)",
-        "text": "\"Es tranquilo. -- Pero no estoy sola.\""
+        "text": "Es tranquilo. -- Pero no estoy sola."
     },
     "lunch2_yuna_c2_9": {
         "name": "Yo",
         "text": "*Dos frases. Es un discurso largo para Yuna. -- Y todo esta contenido en esas dos frases.*"
     },
-
     "lunch2_yuna_end": {
         "name": "Yo",
         "text": "*El 'habia' de Yuna sigue dando vueltas en mi cabeza. El significado de este lugar que me mostro... va calando poco a poco.*"
     },
-
     "lunch2_seo_1": {
         "name": "Yo",
         "text": "*La azotea. El mismo lugar que ayer. Seoyeon esta desplegando su fiambrera.*"
     },
     "lunch2_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Volviste. Te gusto, eh?\""
+        "text": "Volviste. Te gusto, eh?"
     },
     "lunch2_seo_3": {
         "name": "{name}",
-        "text": "\"La comida estaba buena.\""
+        "text": "La comida estaba buena."
     },
     "lunch2_seo_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Es por la comida?\""
+        "text": "Es por la comida?"
     },
     "lunch2_seo_5": {
         "name": "{name}",
-        "text": "\"La brisa tambien esta bien.\""
+        "text": "La brisa tambien esta bien."
     },
     "lunch2_seo_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"...La brisa.\""
+        "text": "...La brisa."
     },
     "lunch2_seo_7": {
         "name": "Yo",
@@ -227,15 +222,15 @@
     },
     "lunch2_seo_9": {
         "name": "다인(Dain)",
-        "text": "\"Oh! Aqui estaban?! Los encontre!\""
+        "text": "Oh! Aqui estaban?! Los encontre!"
     },
     "lunch2_seo_10": {
         "name": "서연(Seoyeon)",
-        "text": "\"...La azotea requiere permiso.\""
+        "text": "...La azotea requiere permiso."
     },
     "lunch2_seo_11": {
         "name": "다인(Dain)",
-        "text": "\"Ay, quien necesita permiso para comer! -- Oh, una fiambrera! Se ve deliciosa!\""
+        "text": "Ay, quien necesita permiso para comer! -- Oh, una fiambrera! Se ve deliciosa!"
     },
     "lunch2_seo_12": {
         "name": "Yo",
@@ -243,23 +238,23 @@
     },
     "lunch2_seo_13": {
         "name": "다인(Dain)",
-        "text": "\"Nos conocimos ayer! Es una chica genial, Seoyeon sunbae!\""
+        "text": "Nos conocimos ayer! Es una chica genial, Seoyeon sunbae!"
     },
     "lunch2_seo_14": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Una chica genial.\""
+        "text": "...Una chica genial."
     },
     "lunch2_seo_15": {
         "name": "{name}",
-        "text": "\"Solo nos conocemos.\""
+        "text": "Solo nos conocemos."
     },
     "lunch2_seo_16": {
         "name": "서연(Seoyeon)",
-        "text": "\"Por que, te molesta?\""
+        "text": "Por que, te molesta?"
     },
     "lunch2_seo_17": {
         "name": "다인(Dain)",
-        "text": "\"Que?! Quien se molesta por que?!\""
+        "text": "Que?! Quien se molesta por que?!"
     },
     "lunch2_seo_18": {
         "name": "Yo",
@@ -271,71 +266,67 @@
     },
     "lunch2_seo_20": {
         "name": "서연(Seoyeon)",
-        "text": "\"Tienes algo en el labio. No te muevas.\""
+        "text": "Tienes algo en el labio. No te muevas."
     },
     "lunch2_seo_choice": {
         "name": "Yo",
         "text": "*La mano de Seoyeon se acerca.*",
         "choices": [
             "Quedarse quieto",
-            "\"Me lo limpio yo\""
+            "Me lo limpio yo"
         ]
     },
-
     "lunch2_seo_c1_1": {
         "name": "Yo",
         "text": "*El dedo de Seoyeon roza la comisura de mis labios. Suavemente. Despacio. -- Mas despacio de lo necesario.*"
     },
     "lunch2_seo_c1_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Listo.\""
+        "text": "...Listo."
     },
     "lunch2_seo_c1_3": {
         "name": "다인(Dain)",
-        "text": "\"Que acabo de ver?!\""
+        "text": "Que acabo de ver?!"
     },
     "lunch2_seo_c1_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Era un grano de arroz.\""
+        "text": "Era un grano de arroz."
     },
     "lunch2_seo_c1_5": {
         "name": "Yo",
         "text": "*Se necesitan tres segundos para quitar un grano de arroz? -- Nadie lo noto, pero las puntas de las orejas de Seoyeon estan rojas.*"
     },
-
     "lunch2_seo_c2_1": {
         "name": "Yo",
         "text": "*Me limpio la boca con el dorso de la mano.*"
     },
     "lunch2_seo_c2_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Si te lo limpias tu, solo lo vas a esparcir.\""
+        "text": "...Si te lo limpias tu, solo lo vas a esparcir."
     },
     "lunch2_seo_c2_3": {
         "name": "Yo",
         "text": "*Parece un poco molesta. -- Pero su compostura es impecable. Tipico de ella.*"
     },
-
     "lunch2_seo_end": {
         "name": "Yo",
         "text": "*La calidez de las yemas de Seoyeon aun persiste en la comisura de mis labios. -- Junto con la expresion atonita de Dain.*"
     },
-
     "lunch2_dain_1": {
         "name": "Yo",
         "text": "*A la tienda de la escuela con Dain. Revancha del piedra-papel-tijeras de ayer.*"
     },
     "lunch2_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"Hoy pierdes!! Preparate!!\""
+        "text": "Hoy pierdes!! Preparate!!"
     },
     "lunch2_dain_3": {
         "name": "{name}",
-        "text": "\"Dijiste lo mismo ayer.\""
+        "text": "Dijiste lo mismo ayer."
     },
     "lunch2_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"Ayer fue solo un calentamiento!!\""
+        "text": "Ayer fue solo un calentamiento!!"
     },
     "lunch2_dain_5": {
         "name": "Yo",
@@ -343,15 +334,15 @@
     },
     "lunch2_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"...Esto esta amanado?!\""
+        "text": "...Esto esta amanado?!"
     },
     "lunch2_dain_7": {
         "name": "{name}",
-        "text": "\"Como se amana un piedra-papel-tijeras?\""
+        "text": "Como se amana un piedra-papel-tijeras?"
     },
     "lunch2_dain_8": {
         "name": "다인(Dain)",
-        "text": "\"Ugh... Dos panes de soboro, por favor...\""
+        "text": "Ugh... Dos panes de soboro, por favor..."
     },
     "lunch2_dain_9": {
         "name": "Yo",
@@ -363,26 +354,25 @@
     },
     "lunch2_dain_11": {
         "name": "다인(Dain)",
-        "text": "\"Oye, que le pasa a la presidenta? Por que nos mira asi?\""
+        "text": "Oye, que le pasa a la presidenta? Por que nos mira asi?"
     },
     "lunch2_dain_12": {
         "name": "{name}",
-        "text": "\"Ni idea.\""
+        "text": "Ni idea."
     },
     "lunch2_dain_13": {
         "name": "다인(Dain)",
-        "text": "\"Hmm... eres cercano a la presidenta tambien?\""
+        "text": "Hmm... eres cercano a la presidenta tambien?"
     },
     "lunch2_dain_choice": {
         "name": "Yo",
         "text": "*Dain me mira fijamente.*",
         "choices": [
-            "\"Hablamos un poco ayer\"",
-            "\"Me enseno la escuela, eso es todo?\"",
-            "\"Por que, te molesta?\""
+            "Hablamos un poco ayer",
+            "Me enseno la escuela, eso es todo?",
+            "Por que, te molesta?"
         ]
     },
-
     "lunch2_dain_c1_1": {
         "name": "Yo",
         "text": "*La expresion de Dain se tensa sutilmente. Muerde su soboro y gira la cabeza.*"
@@ -393,13 +383,12 @@
     },
     "lunch2_dain_c3_1": {
         "name": "다인(Dain)",
-        "text": "\"Mo-Molestarme?! Para nada!\""
+        "text": "Mo-Molestarme?! Para nada!"
     },
     "lunch2_dain_c3_2": {
         "name": "Yo",
         "text": "*Sus lobulos. Rojos. -- Las chicas de esta escuela tienen orejas muy honestas.*"
     },
-
     "lunch2_dain_end": {
         "name": "Yo",
         "text": "*El crujido del pan de soboro de Dain es inusualmente fuerte. La mirada de Seoyeon, las orejas rojas de Dain -- la hora del almuerzo se complica mas cada dia.*"
