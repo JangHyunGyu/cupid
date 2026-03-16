@@ -26,5 +26,85 @@
     "morning5_end": {
         "name": "Me",
         "text": "*It's a question, but it's a threat. — Classic Dain.*"
+    },
+    "hidden_homeroom_d5_check": {
+        "name": "Me",
+        "text": "*Event prep time. Walking down the hallway — I pass the empty classroom. The door is open.*"
+    },
+    "hidden_homeroom_d5_1": {
+        "name": "Me",
+        "text": "*The teacher is sitting at the desk. — Not a manuscript this time. He's holding an envelope. A brown envelope.*"
+    },
+    "hidden_homeroom_d5_2": {
+        "name": "Homeroom Teacher",
+        "text": "The manuscript. — It's unfinished. But I wanted to give it to my first reader."
+    },
+    "hidden_homeroom_d5_3": {
+        "name": "Homeroom Teacher",
+        "text": "Haven't shown this to anyone in seven years. — I really shouldn't be doing this."
+    },
+    "hidden_homeroom_d5_4": {
+        "name": "Me",
+        "text": "Sir. I think you can stop saying that now."
+    },
+    "hidden_homeroom_d5_5": {
+        "name": "Homeroom Teacher",
+        "text": "...Never thought I'd hear that from a student."
+    },
+    "hidden_homeroom_d5_6": {
+        "name": "Homeroom Teacher",
+        "text": "...No book reports. — ...Actually, write me at least one line."
+    },
+    "hidden_homeroom_d5_7": {
+        "name": "Homeroom Teacher",
+        "text": "After you graduate — let's meet. Not as teacher and student. ...I really shouldn't. But just this once. One last time."
+    },
+    "hidden_homeroom_d5_8": {
+        "name": "Me",
+        "text": "*He turns away. His tie sways. — Today, it's straight.*"
+    },
+    "hidden_homeroom_d5_freetalk": {
+        "name": "Homeroom Teacher",
+        "text": "*Last conversation with the homeroom teacher in the empty classroom.*",
+        "context": "Day 5. Last day. The teacher handed over his 7-year manuscript. A promise to meet after graduation.",
+        "personality": "The teacher is more honest than usual because it's the last time. Using his catchphrase for the final time."
+    },
+    "hidden_nurse_d5_check": {
+        "name": "Me",
+        "text": "*Break during the event. Passing by the nurse's office.*"
+    },
+    "hidden_nurse_d5_1": {
+        "name": "School Nurse",
+        "text": "Oh? {name}. — It's the last day. The last day of the event."
+    },
+    "hidden_nurse_d5_2": {
+        "name": "School Nurse",
+        "text": "Come visit after graduation. ...Or before that, if you're hurt."
+    },
+    "hidden_nurse_d5_3": {
+        "name": "Me",
+        "text": "What if I'm not hurt?"
+    },
+    "hidden_nurse_d5_4": {
+        "name": "School Nurse",
+        "text": "...Ask me that after graduation. — I'll answer then."
+    },
+    "hidden_nurse_d5_5": {
+        "name": "School Nurse",
+        "text": "...{name}. Want me to put on a bandage?"
+    },
+    "hidden_nurse_d5_6": {
+        "name": "School Nurse",
+        "text": "I know. I just needed an excuse."
+    },
+    "hidden_nurse_d5_7": {
+        "name": "Me",
+        "text": "*There's small writing on the bandage. 'After graduation, let's meet at a cafe instead of the nurse's office — ♥'*"
+    },
+    "hidden_nurse_d5_freetalk": {
+        "name": "School Nurse",
+        "text": "*Last conversation with the school nurse outside her office.*",
+        "context": "Day 5. Last day. The nurse wrote a message on a bandage. A promise to meet after graduation.",
+        "personality": "The nurse is less playful than usual. Waiting for the day when excuses aren't needed."
     }
 }

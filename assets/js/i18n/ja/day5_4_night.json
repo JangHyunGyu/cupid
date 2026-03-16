@@ -285,5 +285,101 @@
         "choices": [
             "最初からやり直す"
         ]
+    },
+    "hidden_true_homeroom_1": {
+        "name": "僕",
+        "text": "*卒業式の日。——時が流れた。制服はもう固くない。*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "僕",
+        "text": "*空き教室。原稿を書いていたあの教室。——担任先生が待っている。私服姿。*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "担任先生",
+        "text": "卒業おめでとう。"
+    },
+    "hidden_true_homeroom_4": {
+        "name": "担任先生",
+        "text": "…それ。『先生』って言わなかったね。初めて。"
+    },
+    "hidden_true_homeroom_5": {
+        "name": "担任先生",
+        "text": "原稿、完成した。——君が最初の読者だったから書けた。一行でいいと言ったのに三ページ書いてきたじゃないか。"
+    },
+    "hidden_true_homeroom_6": {
+        "name": "担任先生",
+        "text": "もう先生じゃないから——一つ言ってもいい？…コーヒー飲みに行こう。今度はジュースじゃなくてコーヒー。"
+    },
+    "hidden_true_homeroom_7": {
+        "name": "僕",
+        "text": "いいですね。"
+    },
+    "hidden_true_homeroom_8": {
+        "name": "担任先生",
+        "text": "…先生がこんなことしちゃいけないんだけど。いや。もう先生じゃない。\n\n─── 担任先生 TRUE LOVE END ───"
+    },
+    "hidden_true_nurse_1": {
+        "name": "僕",
+        "text": "*卒業式の日。校門を出ると——保健室のドアに絆創膏が貼ってある。*"
+    },
+    "hidden_true_nurse_2": {
+        "name": "僕",
+        "text": "*『卒業おめでとう。カフェで待ってる』——絆創膏を剥がすと、中に小さな地図。*"
+    },
+    "hidden_true_nurse_3": {
+        "name": "保健先生",
+        "text": "卒業おめでとう。…今日から敬語はいらないよ。"
+    },
+    "hidden_true_nurse_4": {
+        "name": "保健先生",
+        "text": "あのね。初日に保健室に来た時。額に触れて『触りたかった』って言ったじゃん。あれは冗談だった。"
+    },
+    "hidden_true_nurse_5": {
+        "name": "保健先生",
+        "text": "…でも今は冗談じゃない。"
+    },
+    "hidden_true_nurse_6": {
+        "name": "保健先生",
+        "text": "先生が生徒に感情を持っちゃいけない。わかってた。——だから全部冗談で包んだ。ずっと。でも君は冗談の裏に本音があることに気づいた。"
+    },
+    "hidden_true_nurse_7": {
+        "name": "保健先生",
+        "text": "…見破ったのは君が初めて。"
+    },
+    "hidden_true_nurse_8": {
+        "name": "保健先生",
+        "text": "もう絆創膏なしで会える。——口実なしで。\n\n─── 保健先生 TRUE LOVE END ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "担任先生",
+        "text": "卒業おめでとう。"
+    },
+    "hidden_good_homeroom_2": {
+        "name": "僕",
+        "text": "*握手の最中——手のひらに何か滑り込む。折りたたまれたメモ。*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "僕",
+        "text": "*『原稿が完成したら連絡する。——最初の読者へ』電話番号が書かれている。*"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "僕",
+        "text": "*先生の手が—3秒ほど長く握られていた。握手にしては長く、告白にしては短い。\n\n─── 担任先生 GOOD END ───*"
+    },
+    "hidden_good_nurse_1": {
+        "name": "保健先生",
+        "text": "あ、卒業生。患者が退院の挨拶だなんて。——感動。"
+    },
+    "hidden_good_nurse_2": {
+        "name": "保健先生",
+        "text": "ビタミン。——大学では健康管理してね。…医療的関心。今回は本当に。"
+    },
+    "hidden_good_nurse_3": {
+        "name": "僕",
+        "text": "*蓋の裏側に小さな文字。『痛かったら連絡して。痛くなくても連絡して。— ♥』*"
+    },
+    "hidden_good_nurse_4": {
+        "name": "僕",
+        "text": "*あのハート——今回は確実に医療的関心じゃない。\n\n─── 保健先生 GOOD END ───*"
     }
 }

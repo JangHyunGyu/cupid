@@ -26,5 +26,85 @@
     "morning5_end": {
         "name": "{name}",
         "text": "*물음표인데 협박이다. — 다인답다.*"
+    },
+    "hidden_homeroom_d5_check": {
+        "name": "{name}",
+        "text": "*행사 준비 시간. 복도를 걷는데 — 빈 교실 앞을 지나간다. 문이 열려 있다.*"
+    },
+    "hidden_homeroom_d5_1": {
+        "name": "{name}",
+        "text": "*담임이 교탁에 앉아 있다. — 원고가 아니라, 봉투를 들고 있다. 갈색 봉투.*"
+    },
+    "hidden_homeroom_d5_2": {
+        "name": "담임선생님",
+        "text": "원고. — 미완성이지만. 첫 번째 독자한테 주려고."
+    },
+    "hidden_homeroom_d5_3": {
+        "name": "담임선생님",
+        "text": "7년 동안 아무한테도 안 보여줬어. — 선생님이 이러면 안 되는데."
+    },
+    "hidden_homeroom_d5_4": {
+        "name": "{name}",
+        "text": "선생님. 그 말, 이제 안 하셔도 될 것 같아요."
+    },
+    "hidden_homeroom_d5_5": {
+        "name": "담임선생님",
+        "text": "...그 말을 학생한테 듣는 날이 올 줄은 몰랐다."
+    },
+    "hidden_homeroom_d5_6": {
+        "name": "담임선생님",
+        "text": "...감상문은 안 받아. — ...맞아. 한 줄이라도 써 줘."
+    },
+    "hidden_homeroom_d5_7": {
+        "name": "담임선생님",
+        "text": "졸업하면 — 한 번 보자. 선생님이 아닌 이름으로. ...선생님이 이러면 안 되는데. 마지막이니까. 마지막 한 번만."
+    },
+    "hidden_homeroom_d5_8": {
+        "name": "{name}",
+        "text": "*담임이 돌아선다. 넥타이가 흔들린다. — 오늘은 반듯하다.*"
+    },
+    "hidden_homeroom_d5_freetalk": {
+        "name": "담임선생님",
+        "text": "*담임선생님과 빈 교실에서 마지막 대화.*",
+        "context": "Day 5. 마지막 날. 담임이 7년의 원고를 건넸다. 졸업 후 만나자는 약속.",
+        "personality": "담임선생님은 마지막이라서 평소보다 솔직하다. '선생님이 이러면 안 되는데'를 마지막으로 쓴다."
+    },
+    "hidden_nurse_d5_check": {
+        "name": "{name}",
+        "text": "*행사 중간 쉬는 시간. 보건실 앞을 지나간다.*"
+    },
+    "hidden_nurse_d5_1": {
+        "name": "보건선생님",
+        "text": "어? {name}. — 마지막 날이네. 행사 마지막 날이잖아."
+    },
+    "hidden_nurse_d5_2": {
+        "name": "보건선생님",
+        "text": "졸업하면 놀러 와. ...그전에도 아프면 와."
+    },
+    "hidden_nurse_d5_3": {
+        "name": "{name}",
+        "text": "안 아파도 가면 안 돼요?"
+    },
+    "hidden_nurse_d5_4": {
+        "name": "보건선생님",
+        "text": "...그건 졸업하고 물어봐. — 그때는 대답해줄게."
+    },
+    "hidden_nurse_d5_5": {
+        "name": "보건선생님",
+        "text": "...{name}. 밴드 붙여줄까?"
+    },
+    "hidden_nurse_d5_6": {
+        "name": "보건선생님",
+        "text": "알아. 그냥 핑계가 필요했어."
+    },
+    "hidden_nurse_d5_7": {
+        "name": "{name}",
+        "text": "*밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자 — ♥'*"
+    },
+    "hidden_nurse_d5_freetalk": {
+        "name": "보건선생님",
+        "text": "*보건선생님과 보건실 앞에서 마지막 대화.*",
+        "context": "Day 5. 마지막 날. 보건선생님이 밴드에 메시지를 적어 붙여줬다. 졸업 후 만나자는 약속.",
+        "personality": "보건선생님은 마지막이라 장난기가 줄었다. 핑계가 필요 없는 날을 기다린다."
     }
 }

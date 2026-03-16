@@ -238,7 +238,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "next": "lunch2_start"
-    }
+    },
 
     // =========================================================================
     // HIDDEN ROUTE - Day 2 담임 교무실 호출

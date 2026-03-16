@@ -285,5 +285,101 @@
         "choices": [
             "Start over from the beginning"
         ]
+    },
+    "hidden_true_homeroom_1": {
+        "name": "Me",
+        "text": "*Graduation day. — Time has passed. The uniform isn't stiff anymore.*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "Me",
+        "text": "*The empty classroom. The one where he wrote. — The homeroom teacher is waiting. In casual clothes.*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "Homeroom Teacher",
+        "text": "Congratulations on graduating."
+    },
+    "hidden_true_homeroom_4": {
+        "name": "Homeroom Teacher",
+        "text": "...That. You didn't say 'sir.' First time."
+    },
+    "hidden_true_homeroom_5": {
+        "name": "Homeroom Teacher",
+        "text": "I finished the manuscript. — I could write it because you were my first reader. I asked for one line and you came back with three pages."
+    },
+    "hidden_true_homeroom_6": {
+        "name": "Homeroom Teacher",
+        "text": "Since I'm not your teacher anymore — can I say one thing? ...Let's go get coffee. Real coffee this time, not juice."
+    },
+    "hidden_true_homeroom_7": {
+        "name": "Me",
+        "text": "I'd like that."
+    },
+    "hidden_true_homeroom_8": {
+        "name": "Homeroom Teacher",
+        "text": "...I really shouldn't be doing this. No. I'm not a teacher anymore.\n\n─── Homeroom Teacher TRUE LOVE END ───"
+    },
+    "hidden_true_nurse_1": {
+        "name": "Me",
+        "text": "*Graduation day. Walking out the school gate — there's a bandage stuck to the nurse's office door.*"
+    },
+    "hidden_true_nurse_2": {
+        "name": "Me",
+        "text": "*'Congrats on graduating. I'll wait at the cafe.' — Peeling off the bandage, there's a little map inside.*"
+    },
+    "hidden_true_nurse_3": {
+        "name": "School Nurse",
+        "text": "Congrats on graduating. ...Starting today, you can drop the formalities."
+    },
+    "hidden_true_nurse_4": {
+        "name": "School Nurse",
+        "text": "You know, on Day 1 when you came to the nurse's office. I touched your forehead and said 'I just wanted to touch you.' That was a joke."
+    },
+    "hidden_true_nurse_5": {
+        "name": "School Nurse",
+        "text": "...But right now it's not a joke."
+    },
+    "hidden_true_nurse_6": {
+        "name": "School Nurse",
+        "text": "A teacher shouldn't catch feelings for a student. I know that. — So I kept wrapping everything in jokes. But you saw through them every time."
+    },
+    "hidden_true_nurse_7": {
+        "name": "School Nurse",
+        "text": "...You're the first person to see through me."
+    },
+    "hidden_true_nurse_8": {
+        "name": "School Nurse",
+        "text": "Now we can meet without bandages. — No excuses needed.\n\n─── School Nurse TRUE LOVE END ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "Homeroom Teacher",
+        "text": "Congratulations on graduating."
+    },
+    "hidden_good_homeroom_2": {
+        "name": "Me",
+        "text": "*During the handshake — something slips into my palm. A folded note.*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "Me",
+        "text": "*'When I finish the manuscript, I'll reach out. — To my first reader.' There's a phone number.*"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "Me",
+        "text": "*His hand held on about three seconds longer than a handshake should. Too long for a handshake, too short for a confession.\n\n─── Homeroom Teacher GOOD END ───*"
+    },
+    "hidden_good_nurse_1": {
+        "name": "School Nurse",
+        "text": "Oh, a graduate. A patient giving discharge greetings. — I'm touched."
+    },
+    "hidden_good_nurse_2": {
+        "name": "School Nurse",
+        "text": "Vitamins. — Take care of yourself in college. ...Medical concern. This time, for real."
+    },
+    "hidden_good_nurse_3": {
+        "name": "Me",
+        "text": "*Inside the cap, tiny writing. 'Call me if you're sick. Call me even if you're not. — ♥'*"
+    },
+    "hidden_good_nurse_4": {
+        "name": "Me",
+        "text": "*That heart — this time it's definitely not medical concern.\n\n─── School Nurse GOOD END ───*"
     }
 }

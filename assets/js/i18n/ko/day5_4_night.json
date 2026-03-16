@@ -285,5 +285,101 @@
         "choices": [
             "처음부터 다시 시작하기"
         ]
+    },
+    "hidden_true_homeroom_1": {
+        "name": "{name}",
+        "text": "*졸업식 날. — 시간이 흘렀다. 교복은 더 이상 뻣뻣하지 않다.*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "{name}",
+        "text": "*빈 교실. 원고를 쓰던 그 교실. — 담임선생님이 기다리고 있다. 사복 차림이다.*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "담임선생님",
+        "text": "졸업 축하해."
+    },
+    "hidden_true_homeroom_4": {
+        "name": "담임선생님",
+        "text": "...그 말. '선생님'이라고 안 했네. 처음으로."
+    },
+    "hidden_true_homeroom_5": {
+        "name": "담임선생님",
+        "text": "원고 완성했어. — 네가 첫 번째 독자라서 쓸 수 있었어. '한 줄이라도'라고 했는데 세 장을 써왔잖아."
+    },
+    "hidden_true_homeroom_6": {
+        "name": "담임선생님",
+        "text": "이제 선생님이 아니니까 — 한 마디 해도 돼? ...커피 마시러 가자. 이번엔 주스 말고 커피."
+    },
+    "hidden_true_homeroom_7": {
+        "name": "{name}",
+        "text": "좋아요."
+    },
+    "hidden_true_homeroom_8": {
+        "name": "담임선생님",
+        "text": "...선생님이 이러면 안 되는데. 아니. 이제 선생님이 아니지.\n\n─── 담임선생님 TRUE LOVE END ───"
+    },
+    "hidden_true_nurse_1": {
+        "name": "{name}",
+        "text": "*졸업식 날. 교문을 나오는데 — 보건실 앞에 밴드가 붙어 있다.*"
+    },
+    "hidden_true_nurse_2": {
+        "name": "{name}",
+        "text": "*'졸업 축하해. 카페에서 기다릴게.' — 밴드를 떼니 안쪽에 작은 약도가 있다.*"
+    },
+    "hidden_true_nurse_3": {
+        "name": "보건선생님",
+        "text": "졸업 축하해. ...오늘부터 존댓말 안 해도 돼."
+    },
+    "hidden_true_nurse_4": {
+        "name": "보건선생님",
+        "text": "있잖아. Day 1에 네가 보건실에 왔을 때. 이마 만지면서 '만져보고 싶었다'고 했잖아. 농담이었거든."
+    },
+    "hidden_true_nurse_5": {
+        "name": "보건선생님",
+        "text": "...근데 지금은 농담이 아니야."
+    },
+    "hidden_true_nurse_6": {
+        "name": "보건선생님",
+        "text": "선생님이 학생한테 감정이 생기면 안 되잖아. 그래서 농담으로 포장했어. 계속. 근데 너는 농담 뒤에 진심이 있다는 걸 알아챘잖아."
+    },
+    "hidden_true_nurse_7": {
+        "name": "보건선생님",
+        "text": "...들킨 건 너가 처음이야."
+    },
+    "hidden_true_nurse_8": {
+        "name": "보건선생님",
+        "text": "이제는 밴드 없이도 만날 수 있어. — 핑계 없이.\n\n─── 보건선생님 TRUE LOVE END ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "담임선생님",
+        "text": "졸업 축하해."
+    },
+    "hidden_good_homeroom_2": {
+        "name": "{name}",
+        "text": "*악수를 하는데 — 손에 종이가 끼워져 있다. 접힌 쪽지.*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "{name}",
+        "text": "*'원고 완성하면 연락할게. — 첫 번째 독자에게.' 전화번호가 적혀 있다.*"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "{name}",
+        "text": "*선생님의 손이 — 3초쯤 더 길게 잡혀 있었다. 악수치고는 길고, 고백치고는 짧은.\n\n─── 담임선생님 GOOD END ───*"
+    },
+    "hidden_good_nurse_1": {
+        "name": "보건선생님",
+        "text": "아, 졸업생. 환자가 퇴원 인사를 하다니. — 감동이야."
+    },
+    "hidden_good_nurse_2": {
+        "name": "보건선생님",
+        "text": "비타민. — 대학 가면 건강 관리 잘해. ...의료적 관심. 이번에는 진짜로."
+    },
+    "hidden_good_nurse_3": {
+        "name": "{name}",
+        "text": "*병 뚜껑 안쪽에 작은 글씨. '아프면 연락해. 안 아파도 연락해. — ♥'*"
+    },
+    "hidden_good_nurse_4": {
+        "name": "{name}",
+        "text": "*하트가 — 이번에는 확실히 의료적 관심이 아니다.\n\n─── 보건선생님 GOOD END ───*"
     }
 }

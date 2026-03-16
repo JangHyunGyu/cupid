@@ -285,5 +285,101 @@
         "choices": [
             "Empezar de nuevo desde el principio"
         ]
+    },
+    "hidden_true_homeroom_1": {
+        "name": "Yo",
+        "text": "*Día de graduación. — Ha pasado el tiempo. El uniforme ya no es rígido.*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "Yo",
+        "text": "*El aula vacía. Donde escribía. — El profesor espera. En ropa casual.*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "Profesor",
+        "text": "Felicidades por graduarte."
+    },
+    "hidden_true_homeroom_4": {
+        "name": "Profesor",
+        "text": "...Eso. No dijiste 'profe'. Primera vez."
+    },
+    "hidden_true_homeroom_5": {
+        "name": "Profesor",
+        "text": "Terminé el manuscrito. — Pude escribirlo porque tú fuiste mi primer lector. Pedí una línea y trajiste tres páginas."
+    },
+    "hidden_true_homeroom_6": {
+        "name": "Profesor",
+        "text": "Ya no soy tu profesor — ¿puedo decir algo? ...Vamos por un café. Esta vez de verdad, no jugo."
+    },
+    "hidden_true_homeroom_7": {
+        "name": "Yo",
+        "text": "Me gustaría."
+    },
+    "hidden_true_homeroom_8": {
+        "name": "Profesor",
+        "text": "...No debería hacer esto. No. Ya no soy profesor.\n\n─── Profesor TRUE LOVE END ───"
+    },
+    "hidden_true_nurse_1": {
+        "name": "Yo",
+        "text": "*Día de graduación. Saliendo — hay una tirita pegada en la puerta de la enfermería.*"
+    },
+    "hidden_true_nurse_2": {
+        "name": "Yo",
+        "text": "*'Felicidades. Te espero en el café.' — Al despegarla, hay un pequeño mapa dentro.*"
+    },
+    "hidden_true_nurse_3": {
+        "name": "Enfermera",
+        "text": "Felicidades. ...Desde hoy puedes tutearme."
+    },
+    "hidden_true_nurse_4": {
+        "name": "Enfermera",
+        "text": "¿Sabes? El primer día, cuando viniste a la enfermería. Te toqué la frente y dije 'solo quería tocarte'. Era broma."
+    },
+    "hidden_true_nurse_5": {
+        "name": "Enfermera",
+        "text": "...Pero ahora no es broma."
+    },
+    "hidden_true_nurse_6": {
+        "name": "Enfermera",
+        "text": "Una profesora no debería sentir cosas por un alumno. Lo sabía. — Por eso lo envolvía todo en bromas. Pero tú siempre viste a través de ellas."
+    },
+    "hidden_true_nurse_7": {
+        "name": "Enfermera",
+        "text": "...Eres el primero que me descubrió."
+    },
+    "hidden_true_nurse_8": {
+        "name": "Enfermera",
+        "text": "Ahora podemos vernos sin tiritas. — Sin excusas.\n\n─── Enfermera TRUE LOVE END ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "Profesor",
+        "text": "Felicidades por graduarte."
+    },
+    "hidden_good_homeroom_2": {
+        "name": "Yo",
+        "text": "*Al dar la mano — algo se desliza en mi palma. Una nota doblada.*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "Yo",
+        "text": "*'Cuando termine el manuscrito, te contactaré. — A mi primer lector.' Hay un número de teléfono.*"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "Yo",
+        "text": "*Su mano se quedó tres segundos más. Largo para un apretón, corto para una confesión.\n\n─── Profesor GOOD END ───*"
+    },
+    "hidden_good_nurse_1": {
+        "name": "Enfermera",
+        "text": "Oh, un graduado. Un paciente que viene a despedirse. — Me conmueve."
+    },
+    "hidden_good_nurse_2": {
+        "name": "Enfermera",
+        "text": "Vitaminas. — Cuídate en la universidad. ...Interés médico. Esta vez de verdad."
+    },
+    "hidden_good_nurse_3": {
+        "name": "Yo",
+        "text": "*Dentro de la tapa, letras diminutas. 'Llámame si estás enfermo. Llámame aunque no lo estés. — ♥'*"
+    },
+    "hidden_good_nurse_4": {
+        "name": "Yo",
+        "text": "*Ese corazón — esta vez definitivamente no es interés médico.\n\n─── Enfermera GOOD END ───*"
     }
 }

@@ -39,6 +39,112 @@ Object.assign(SCENARIO[5], {
         "character": "assets/images/characters/dain_laugh.png",
         "next": "morning5_end"
     },
+    "hidden_homeroom_d5_check": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "homeroom_day4", "next": "hidden_homeroom_d5_1" },
+            { "next": "hidden_nurse_d5_check" }
+        ]
+    },
+    "hidden_homeroom_d5_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "hidden_homeroom_d5_2"
+    },
+    "hidden_homeroom_d5_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d5_3"
+    },
+    "hidden_homeroom_d5_3": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d5_4"
+    },
+    "hidden_homeroom_d5_4": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d5_5"
+    },
+    "hidden_homeroom_d5_5": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "hidden_homeroom_d5_6"
+    },
+    "hidden_homeroom_d5_6": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d5_7"
+    },
+    "hidden_homeroom_d5_7": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d5_8"
+    },
+    "hidden_homeroom_d5_8": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "setFlag": "homeroom_day5",
+        "next": "hidden_homeroom_d5_freetalk"
+    },
+    "hidden_homeroom_d5_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_nurse_d5_check"
+    },
+    "hidden_nurse_d5_check": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "branches": [
+            { "condition": "nurse_day4", "next": "hidden_nurse_d5_1" },
+            { "next": "morning5_end" }
+        ]
+    },
+    "hidden_nurse_d5_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d5_2"
+    },
+    "hidden_nurse_d5_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d5_3"
+    },
+    "hidden_nurse_d5_3": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "hidden_nurse_d5_4"
+    },
+    "hidden_nurse_d5_4": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d5_5"
+    },
+    "hidden_nurse_d5_5": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d5_6"
+    },
+    "hidden_nurse_d5_6": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d5_7"
+    },
+    "hidden_nurse_d5_7": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "setFlag": "nurse_day5",
+        "next": "hidden_nurse_d5_freetalk"
+    },
+    "hidden_nurse_d5_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "morning5_end"
+    },
+
     "morning5_end": {
         "background": "assets/images/background/room_school.png",
         "character": null,
