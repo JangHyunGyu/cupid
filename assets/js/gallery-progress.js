@@ -292,7 +292,9 @@ class GalleryProgress {
     isFreeTalkUnlocked(charId) {
         if (this.isAdmin) return true;
         this.refresh();
-        return this.data.characters?.[charId]?.trueEndingCleared || false;
+        const trueEnding = this.data.characters?.[charId]?.trueEndingCleared || false;
+        const bikiniUnlocked = this.getAffinity(charId) >= 100 && this.getFreeTalkCount(charId) >= 30;
+        return trueEnding && bikiniUnlocked;
     }
 
     /**
