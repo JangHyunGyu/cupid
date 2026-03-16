@@ -36,11 +36,11 @@
         "text": "*La profesora está sentada en el escritorio. — No es un manuscrito. Tiene un sobre. Un sobre marrón.*"
     },
     "hidden_homeroom_d5_2": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "El manuscrito. — Está incompleto. Pero quería dárselo a mi primer lector."
     },
     "hidden_homeroom_d5_3": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "No se lo he mostrado a nadie en siete años. — No debería hacer esto."
     },
     "hidden_homeroom_d5_4": {
@@ -48,24 +48,24 @@
         "text": "Profe. Creo que ya puede dejar de decir eso."
     },
     "hidden_homeroom_d5_5": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "...Nunca pensé que escucharía eso de un alumno."
     },
     "hidden_homeroom_d5_6": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "...No acepto reseñas. — ...Bueno, al menos una línea."
     },
     "hidden_homeroom_d5_7": {
-        "name": "Profesor",
-        "text": "Cuando te gradúes — vamos a vernos. No como profesor y alumno. ...No debería. Pero solo esta vez. La última."
+        "name": "Profesora",
+        "text": "Cuando te gradúes — vamos a vernos. No como profesora y alumno. ...No debería. Pero solo esta vez. La última."
     },
     "hidden_homeroom_d5_8": {
         "name": "Yo",
         "text": "*Se da la vuelta. Su largo cabello se balancea. — Hoy los botones de su cárdigan están rectos.*"
     },
     "hidden_homeroom_d5_freetalk": {
-        "name": "Profesor",
-        "text": "*Última conversación con el profesor en el aula vacía.*",
+        "name": "Profesora",
+        "text": "*Última conversación con la profesora en el aula vacía.*",
         "context": "Día 5. Último día. La profesora entregó su manuscrito de 7 años.",
         "personality": "La profesora es más sincera porque es la última vez. Usa su frase por última vez."
     },

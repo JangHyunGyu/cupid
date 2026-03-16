@@ -181,8 +181,8 @@ function getPromptData(isEn, playerName) {
         "Homeroom Teacher": `
      * +3: Seeing through her dry humor to her genuine feelings, showing interest in her hidden dreams (writing), or responding with unexpected maturity.
      * +2: Noticing she looks tired and showing concern, offering to help with her work, or polite but friendly conversation.
-     * +1: Proper student etiquette, answering his questions sincerely, or simple respect.
-     * -1 ~ -3: Complaining about schoolwork, being slightly dismissive of his authority, or using overly casual speech.
+     * +1: Proper student etiquette, answering her questions sincerely, or simple respect.
+     * -1 ~ -3: Complaining about schoolwork, being slightly dismissive of her authority, or using overly casual speech.
      * -4 ~ -7: Disrespectful tone, mocking her teaching, or light profanity.
      * -8 ~ -10: Sexual harassment (crude remarks crossing the line), severe insults, or mocking her professional pride.`,
         "Nurse": `

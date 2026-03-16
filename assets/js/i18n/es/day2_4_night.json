@@ -148,11 +148,11 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "Yo",
-        "text": "*Un mensaje privado del profesor. '{name}, gracias por venir a la oficina hoy. El papeleo ya terminó, no tendré que llamarte más. ...Pero si la adaptación se pone difícil, pasa cuando quieras.'*"
+        "text": "*Un mensaje privado de la profesora. '{name}, gracias por venir a la oficina hoy. El papeleo ya terminó, no tendré que llamarte más. ...Pero si la adaptación se pone difícil, pasa cuando quieras.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "Yo",
-        "text": "*Tres líneas. Agradecimiento, distancia, y luego acercarse de nuevo. — Está tirando de la cuerda consigo mismo.*"
+        "text": "*Tres líneas. Agradecimiento, distancia, y luego acercarse de nuevo. — Está tirando de la cuerda consigo misma.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "Yo",

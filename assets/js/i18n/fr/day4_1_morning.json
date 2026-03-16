@@ -29,7 +29,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "Moi",
-        "text": "*Le portail est entrouvert. Quelqu'un sort. C'est le prof principal. En civil.*"
+        "text": "*Le portail est entrouvert. Quelqu'un sort. C'est la prof principale. En civil.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Professeur Principal",
@@ -41,7 +41,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "Professeur Principal",
-        "text": "Ah, c'est que — de la paperasse. ...Un prof reste un prof même le weekend."
+        "text": "Ah, c'est que — de la paperasse. ...Une prof reste une prof même le weekend."
     },
     "hidden_homeroom_d4_5": {
         "name": "Professeur Principal",
@@ -85,9 +85,9 @@
     },
     "hidden_homeroom_d4_freetalk": {
         "name": "Professeur Principal",
-        "text": "*En train de discuter avec le prof principal au café.*",
-        "context": "Jour 4. Rencontre fortuite le weekend, café ensemble. Il m'a demandé d'être son premier lecteur.",
-        "personality": "Le prof est plus détendu en civil. Déchiré entre passion pour l'écriture et sentiments."
+        "text": "*En train de discuter avec la prof principale au café.*",
+        "context": "Jour 4. Rencontre fortuite le weekend, café ensemble. Elle m'a demandé d'être son premier lecteur.",
+        "personality": "La prof est plus détendue en civil. Déchirée entre passion pour l'écriture et sentiments."
     },
     "hidden_nurse_d4_check": {
         "name": "Moi",

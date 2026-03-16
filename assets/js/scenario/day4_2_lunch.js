@@ -369,7 +369,7 @@ Object.assign(SCENARIO[4], {
     },
     "date_dain_arcade": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_arcade_2"
     },
     "date_dain_arcade_2": {
@@ -379,7 +379,7 @@ Object.assign(SCENARIO[4], {
     },
     "date_dain_arcade_3": {
         "background": "assets/images/background/arcade.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_rhythm"
     },
     "date_dain_rhythm": {

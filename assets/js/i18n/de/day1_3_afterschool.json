@@ -116,7 +116,7 @@
         "text": "*Ich will gerade nach Hause gehen, als — eine Stimme von hinten.*"
     },
     "after_hidden_homeroom_2": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "{name}. Warte kurz."
     },
     "after_hidden_homeroom_3": {
@@ -124,7 +124,7 @@
         "text": "*Die Klassenlehrerin. Ihre Strickjacke ist noch zerknitterter als vorhin. Sieht aus, als hätte der Tag sie geschafft.*"
     },
     "after_hidden_homeroom_4": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Du hast nichts angestellt. — Du bist der Neue, deshalb frage ich. Wie läuft's?"
     },
     "after_hidden_homeroom_choice": {
@@ -136,7 +136,7 @@
         ]
     },
     "after_homeroom_ok": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Gut zu hören. — Wenn was ist, komm ins Lehrerzimmer. Dafür bin ich da."
     },
     "after_homeroom_ok_2": {
@@ -144,7 +144,7 @@
         "text": "*Dachte, sie wäre der distanzierte Typ, aber sie kümmert sich tatsächlich. — Oder es ist einfach ihr Job.*"
     },
     "after_homeroom_honest_1": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Sich überfordert zu fühlen ist normal. Es wäre seltsam, wenn du am ersten Tag in einer neuen Schule tiefenentspannt wärst."
     },
     "after_homeroom_honest_2": {
@@ -152,23 +152,23 @@
         "text": "Haben Sie auch mal die Schule gewechselt?"
     },
     "after_homeroom_honest_3": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...So ähnlich. Ich wurde schon mal von heute auf morgen woanders hingeworfen."
     },
     "after_homeroom_honest_4": {
         "name": "Ich",
-        "text": "Ein Lehrer, der einem Schüler was ausgibt?"
+        "text": "Eine Lehrerin, die einem Schüler was ausgibt?"
     },
     "after_homeroom_honest_5": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Pädagogisches Interesse. — Ich sollte das eigentlich nicht tun, aber naja."
     },
     "after_homeroom_honest_6": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Wenn's hart wird, komm ins Lehrerzimmer. Ich kann dir einen Kaffee — ach, du bist Schüler. Saft, dann."
     },
     "after_homeroom_honest_7": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Ach, {name}."
     },
     "after_homeroom_honest_8": {
@@ -176,7 +176,7 @@
         "text": "Ja?"
     },
     "after_homeroom_honest_9": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Schöner Name. — Den merke ich mir."
     },
     "after_homeroom_honest_10": {
@@ -184,9 +184,9 @@
         "text": "*Sie verschwindet am Ende des Flurs. Ihre langen Haare schwingen. — \"Ich sollte das eigentlich nicht tun\" scheint ihr Lieblingssatz zu sein.*"
     },
     "after_homeroom_freetalk": {
-        "name": "Klassenlehrer",
-        "text": "*Im Gespräch mit dem Klassenlehrer auf dem Flur.*",
-        "context": "Tag 1 nach der Schule. Der Klassenlehrer hat den neuen Schüler angehalten, um nach ihm zu sehen.",
+        "name": "Klassenlehrerin",
+        "text": "*Im Gespräch mit der Klassenlehrerin auf dem Flur.*",
+        "context": "Tag 1 nach der Schule. Die Klassenlehrerin hat den neuen Schüler angehalten, um nach ihm zu sehen.",
         "personality": "Die Klassenlehrerin versteckt Wärme hinter trockenem Humor. Anfang dreißig, braunes welliges langes Haar und beige Strickjacke. Ihr Spruch: \"Ich sollte das eigentlich nicht tun.\" Ehemalige angehende Romanautorin."
     },
     "after_hidden_nurse_intro": {

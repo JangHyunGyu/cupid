@@ -155,7 +155,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "Ich",
-        "text": "*In der Schul-App gibt es einen Post vom Klassenlehrer. 'Klasse 1-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und {name}, solange du dich gut einlebst, reicht das.'*"
+        "text": "*In der Schul-App gibt es einen Post von der Klassenlehrerin. 'Klasse 1-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und {name}, solange du dich gut einlebst, reicht das.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "Ich",

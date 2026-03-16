@@ -218,14 +218,14 @@
     },
     "hidden_homeroom_d3_2": {
         "name": "Yo",
-        "text": "*El profesor está sentado en el escritorio, escribiendo algo. Se detiene y levanta la vista. — Nuestras miradas se cruzan.*"
+        "text": "*La profesora está sentada en el escritorio, escribiendo algo. Se detiene y levanta la vista. — Nuestras miradas se cruzan.*"
     },
     "hidden_homeroom_d3_3": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "......"
     },
     "hidden_homeroom_d3_4": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "...No es nada. Documentos de trabajo. — ...Ser observador es una virtud, pero a veces es un defecto."
     },
     "hidden_homeroom_d3_choice": {
@@ -237,31 +237,31 @@
         ]
     },
     "hidden_homeroom_d3_reveal_1": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "...Muy vergonzoso para llamarlo novela. Demasiado viejo para llamarlo práctica. Siete años."
     },
     "hidden_homeroom_d3_reveal_2": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "Empecé en la universidad. Escritura creativa. Al graduarme, apliqué a premios literarios — me rechazaron tres veces en dos años."
     },
     "hidden_homeroom_d3_reveal_3": {
-        "name": "Profesor",
-        "text": "Hice el examen docente. Profesor de lengua. — Un aspirante a novelista enseñando literatura. Irónico, ¿no?"
+        "name": "Profesora",
+        "text": "Hice el examen docente. Profesora de lengua. — Una aspirante a novelista enseñando literatura. Irónico, ¿no?"
     },
     "hidden_homeroom_d3_reveal_4": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "Sería más fácil decir que lo dejé. Pero sigo sacándolo en aulas vacías — así que supongo que nunca lo hice."
     },
     "hidden_homeroom_d3_reveal_5": {
-        "name": "Profesor",
-        "text": "...No le digas esto a nadie. Un profesor compartiéndole esto a un alumno — es un secreto."
+        "name": "Profesora",
+        "text": "...No le digas esto a nadie. Una profesora compartiéndole esto a un alumno — es un secreto."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Yo",
         "text": "*Sonríe. No su sonrisa seca de siempre — una algo torpe. — ...Primer candidato a lector en siete años.*"
     },
     "hidden_homeroom_d3_hide_1": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "...Bien, has como que no viste nada. Por favor. — ...Gracias."
     },
     "hidden_homeroom_d3_end": {
@@ -269,9 +269,9 @@
         "text": "*Se aparta el cabello detrás de la oreja y sale. — 'Por favor' es una palabra rara en ella.*"
     },
     "hidden_homeroom_d3_freetalk": {
-        "name": "Profesor",
-        "text": "*Conversando con el profesor en el aula vacía.*",
-        "context": "Día 3 mañana. Descubrió al profesor escribiendo un manuscrito en un aula vacía.",
+        "name": "Profesora",
+        "text": "*Conversando con la profesora en el aula vacía.*",
+        "context": "Día 3 mañana. Descubrió a la profesora escribiendo un manuscrito en un aula vacía.",
         "personality": "La profesora fue aspirante a novelista. Se hizo profesora pero nunca renunció al sueño."
     },
     "hidden_nurse_d3_check": {

@@ -86,7 +86,7 @@
     "hidden_homeroom_d4_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Talking with the homeroom teacher at a cafe.*",
-        "context": "Day 4. Ran into the teacher on the weekend, went to a cafe. He asked you to be his first reader.",
+        "context": "Day 4. Ran into the teacher on the weekend, went to a cafe. She asked you to be her first reader.",
         "personality": "The teacher is more relaxed in casual clothes. Torn between passion for writing and feelings for a student."
     },
     "hidden_nurse_d4_check": {

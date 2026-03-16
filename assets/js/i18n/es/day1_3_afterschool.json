@@ -116,7 +116,7 @@
         "text": "*Estoy por irme a casa cuando — una voz detrás de mí.*"
     },
     "after_hidden_homeroom_2": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "{name}. Espera un momento."
     },
     "after_hidden_homeroom_3": {
@@ -124,7 +124,7 @@
         "text": "*Es la profesora. Su cárdigan está más desarreglado que antes. Parece que el día le pasó factura.*"
     },
     "after_hidden_homeroom_4": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "No estás en problemas. — Como eres nuevo, quiero saber. ¿Cómo te estás adaptando?"
     },
     "after_hidden_homeroom_choice": {
@@ -136,7 +136,7 @@
         ]
     },
     "after_homeroom_ok": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "Me alegro. — Si necesitas algo, pasa por la sala de profesores. Para eso estoy."
     },
     "after_homeroom_ok_2": {
@@ -144,7 +144,7 @@
         "text": "*Pensé que era del tipo distante, pero resulta que se preocupa. — O quizás solo es parte del trabajo.*"
     },
     "after_homeroom_honest_1": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "Sentirse abrumado es normal. Sería raro que estuvieras tranquilo en tu primer día en una escuela nueva."
     },
     "after_homeroom_honest_2": {
@@ -152,23 +152,23 @@
         "text": "¿Usted también se ha cambiado de escuela alguna vez, profe?"
     },
     "after_homeroom_honest_3": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "...Algo parecido. Me han lanzado a un lugar nuevo de la nada."
     },
     "after_homeroom_honest_4": {
         "name": "Yo",
-        "text": "¿Un profesor invitándole algo a un estudiante?"
+        "text": "¿Una profesora invitándole algo a un estudiante?"
     },
     "after_homeroom_honest_5": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "Interés profesional. — No debería hacer esto, pero bueno."
     },
     "after_homeroom_honest_6": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "Si se pone difícil, ven a la sala de profesores. Te puedo ofrecer un café — ah, eres estudiante. Un jugo, entonces."
     },
     "after_homeroom_honest_7": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "Ah, {name}."
     },
     "after_homeroom_honest_8": {
@@ -176,7 +176,7 @@
         "text": "¿Sí?"
     },
     "after_homeroom_honest_9": {
-        "name": "Profesor",
+        "name": "Profesora",
         "text": "Buen nombre. — Lo recordaré."
     },
     "after_homeroom_honest_10": {
@@ -184,9 +184,9 @@
         "text": "*Desaparece por el pasillo. Su largo cabello se balancea. — \"No debería hacer esto\" parece ser su frase favorita.*"
     },
     "after_homeroom_freetalk": {
-        "name": "Profesor",
-        "text": "*Conversando con el profesor en el pasillo.*",
-        "context": "Día 1 después de clases. El profesor detuvo al estudiante nuevo para ver cómo se adaptaba.",
+        "name": "Profesora",
+        "text": "*Conversando con la profesora en el pasillo.*",
+        "context": "Día 1 después de clases. La profesora detuvo al estudiante nuevo para ver cómo se adaptaba.",
         "personality": "La profesora esconde calidez detrás de humor seco. Treinta y pocos, cabello largo castaño ondulado y cárdigan beige. Su frase es \"No debería hacer esto\". Fue aspirante a novelista."
     },
     "after_hidden_nurse_intro": {
