@@ -148,5 +148,25 @@
         "text": "*Eine kurze Nachricht von Yuna.*",
         "context": "Erste Nacht, Chat mit Yuna über Messenger.",
         "personality": "Yuna ist ein mysteriöses Literaturgirl. Ihre Nachrichten sind kurz und kryptisch."
+    },
+    "night_hidden_check": {
+        "name": "Ich",
+        "text": "*Zwischen den Messenger-Benachrichtigungen — fällt mir noch etwas auf.*"
+    },
+    "night_hidden_homeroom_1": {
+        "name": "Ich",
+        "text": "*In der Schul-App gibt es einen Post vom Klassenlehrer. 'Klasse 1-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und {name}, solange du dich gut einlebst, reicht das.'*"
+    },
+    "night_hidden_homeroom_2": {
+        "name": "Ich",
+        "text": "*Eine persönliche Nachricht in einer Klassenankündigung? — Kann der Mann nicht zwischen Beruf und Privat unterscheiden, oder macht er das absichtlich?*"
+    },
+    "night_hidden_nurse_1": {
+        "name": "Ich",
+        "text": "*Eine Benachrichtigung in der Schul-Gesundheits-App. 'Krankenakte: {name} — Schwindel (leicht). Notiz: Komm morgen wieder, falls die Symptome anhalten. Trink viel Wasser. — das ♥ ist rein medizinisches Interesse ^^'*"
+    },
+    "night_hidden_nurse_2": {
+        "name": "Ich",
+        "text": "*Eine Schulkrankenschwester, die Herzchen in Krankenakten setzt. Noch nie jemanden gesehen, der Emojis in Gesundheitsakten benutzt.*"
     }
 }

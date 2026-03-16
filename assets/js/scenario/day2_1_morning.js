@@ -239,4 +239,70 @@ Object.assign(SCENARIO[2], {
         "character": null,
         "next": "lunch2_start"
     }
+
+    // =========================================================================
+    // HIDDEN ROUTE - Day 2 담임 교무실 호출
+    // =========================================================================
+    "hidden_homeroom_d2_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "condition": "homeroom_day1",
+        "next": "hidden_homeroom_d2_2"
+    },
+    "hidden_homeroom_d2_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "hidden_homeroom_d2_3"
+    },
+    "hidden_homeroom_d2_3": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d2_4"
+    },
+    "hidden_homeroom_d2_4": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": null,
+        "next": "hidden_homeroom_d2_5"
+    },
+    "hidden_homeroom_d2_5": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d2_6"
+    },
+    "hidden_homeroom_d2_6": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": null,
+        "next": "hidden_homeroom_d2_7"
+    },
+    "hidden_homeroom_d2_7": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d2_8"
+    },
+    "hidden_homeroom_d2_8": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d2_9"
+    },
+    "hidden_homeroom_d2_9": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": null,
+        "next": "hidden_homeroom_d2_10"
+    },
+    "hidden_homeroom_d2_10": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d2_11"
+    },
+    "hidden_homeroom_d2_11": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d2_12"
+    },
+    "hidden_homeroom_d2_12": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": null,
+        "setFlag": "homeroom_day2",
+        "next": "morning2_seo_dust_1"
+    },
 });

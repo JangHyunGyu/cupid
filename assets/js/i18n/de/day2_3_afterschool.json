@@ -237,5 +237,47 @@
         "text": "*Tteokbokki mit Dain essen und plaudern.*",
         "context": "Tag 2 nach der Schule, nach einer Volleyball-Wette in der Turnhalle.",
         "personality": "Dain ist ein energiegeladener, wettbewerbsorientierter Sporttyp."
+    },
+    "hidden_nurse_d2_1": {
+        "name": "Ich",
+        "text": "*Hab mir im Sportunterricht den Ellbogen aufgeschürft. Nichts Schlimmes, aber es blutet ein bisschen.*"
+    },
+    "hidden_nurse_d2_2": {
+        "name": "Schulkrankenschwester",
+        "text": "Oh, der Neue von gestern. Schon wieder hier? Willst du Stammgast werden?"
+    },
+    "hidden_nurse_d2_3": {
+        "name": "Ich",
+        "text": "Hab mir den Ellbogen aufgeschrammt."
+    },
+    "hidden_nurse_d2_4": {
+        "name": "Schulkrankenschwester",
+        "text": "Halt still~..."
+    },
+    "hidden_nurse_d2_5": {
+        "name": "Schulkrankenschwester",
+        "text": "Hier... so... fertig. Mit Sorgfalt, sonst hält's nicht."
+    },
+    "hidden_nurse_d2_6": {
+        "name": "Ich",
+        "text": "*Beim Prüfen des Pflasters — ihr Laptop steht offen auf dem Tisch. Das ist keine Krankenakte — sieht eher wie ein persönliches Tagebuch aus.*"
+    },
+    "hidden_nurse_d2_7": {
+        "name": "Schulkrankenschwester",
+        "text": "Das hast du nicht gesehen, oder? Geheimnis~ Auch Lehrer haben Geheimnisse."
+    },
+    "hidden_nurse_d2_8": {
+        "name": "Schulkrankenschwester",
+        "text": "Fertig, geh zurück zum Unterricht. — Nächstes Mal kommst du ohne Verletzung."
+    },
+    "hidden_nurse_d2_9": {
+        "name": "Schulkrankenschwester",
+        "text": "Du kannst auch ohne Grund kommen. — Na ja, nicht während des Unterrichts~! Nach der Schule!"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "name": "Schulkrankenschwester",
+        "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
+        "context": "Tag 2. Ellbogen beim Sport aufgeschürft.",
+        "personality": "Die Schulkrankenschwester ist verspielt aber gründlich. Braucht lange für Pflaster."
     }
 }

@@ -211,5 +211,113 @@
     "morning3_end": {
         "name": "Yo",
         "text": "*Los planes del fin de semana se solapan... Sin darme cuenta, las clases continúan y se acerca la hora del almuerzo.*"
+    },
+    "hidden_homeroom_d3_1": {
+        "name": "Yo",
+        "text": "*Recreo. Paso por un aula vacía — escucho a alguien adentro. Me acerco despacio.*"
+    },
+    "hidden_homeroom_d3_2": {
+        "name": "Yo",
+        "text": "*El profesor está sentado en el escritorio, escribiendo algo. Se detiene y levanta la vista. — Nuestras miradas se cruzan.*"
+    },
+    "hidden_homeroom_d3_3": {
+        "name": "Profesor",
+        "text": "......"
+    },
+    "hidden_homeroom_d3_4": {
+        "name": "Profesor",
+        "text": "...No es nada. Documentos de trabajo. — ...Ser observador es una virtud, pero a veces es un defecto."
+    },
+    "hidden_homeroom_d3_choice": {
+        "name": "Yo",
+        "text": "*Es papel de manuscrito. Tiene cara de que lo pillaron.*",
+        "choices": [
+            "Vi que es un manuscrito. — ¿Está escribiendo una novela?",
+            "Perdón, no vi nada."
+        ]
+    },
+    "hidden_homeroom_d3_reveal_1": {
+        "name": "Profesor",
+        "text": "...Muy vergonzoso para llamarlo novela. Demasiado viejo para llamarlo práctica. Siete años."
+    },
+    "hidden_homeroom_d3_reveal_2": {
+        "name": "Profesor",
+        "text": "Empecé en la universidad. Escritura creativa. Al graduarme, apliqué a premios literarios — me rechazaron tres veces en dos años."
+    },
+    "hidden_homeroom_d3_reveal_3": {
+        "name": "Profesor",
+        "text": "Hice el examen docente. Profesor de lengua. — Un aspirante a novelista enseñando literatura. Irónico, ¿no?"
+    },
+    "hidden_homeroom_d3_reveal_4": {
+        "name": "Profesor",
+        "text": "Sería más fácil decir que lo dejé. Pero sigo sacándolo en aulas vacías — así que supongo que nunca lo hice."
+    },
+    "hidden_homeroom_d3_reveal_5": {
+        "name": "Profesor",
+        "text": "...No le digas esto a nadie. Un profesor compartiéndole esto a un alumno — es un secreto."
+    },
+    "hidden_homeroom_d3_reveal_6": {
+        "name": "Yo",
+        "text": "*Sonríe. No su sonrisa seca de siempre — una algo torpe. — ...Primer candidato a lector en siete años.*"
+    },
+    "hidden_homeroom_d3_hide_1": {
+        "name": "Profesor",
+        "text": "...Bien, has como que no viste nada. Por favor. — ...Gracias."
+    },
+    "hidden_homeroom_d3_end": {
+        "name": "Yo",
+        "text": "*Se arregla la corbata y sale. — 'Por favor' es una palabra rara en él.*"
+    },
+    "hidden_homeroom_d3_freetalk": {
+        "name": "Profesor",
+        "text": "*Conversando con el profesor en el aula vacía.*",
+        "context": "Día 3 mañana. Descubrió al profesor escribiendo un manuscrito en un aula vacía.",
+        "personality": "El profesor fue aspirante a novelista. Se hizo profesor pero nunca renunció al sueño."
+    },
+    "hidden_nurse_d3_check": {
+        "name": "Yo",
+        "text": "*El recreo está por terminar.*"
+    },
+    "hidden_nurse_d3_1": {
+        "name": "Yo",
+        "text": "*Algo me inquieta desde esta mañana. Mis pies me llevan a la enfermería. Ni siquiera estoy herido.*"
+    },
+    "hidden_nurse_d3_2": {
+        "name": "Enfermera",
+        "text": "...¿Eh? ¿Qué te pasó hoy? — ¿No estás herido pero vienes a la enfermería?"
+    },
+    "hidden_nurse_d3_3": {
+        "name": "Yo",
+        "text": "...Solo quería descansar. Las relaciones se están complicando."
+    },
+    "hidden_nurse_d3_4": {
+        "name": "Enfermera",
+        "text": "...Siéntate. En serio, tienes mala cara. ¿Qué pasa?"
+    },
+    "hidden_nurse_d3_5": {
+        "name": "Enfermera",
+        "text": "¿Esto es una consulta sentimental? — Fingir que no lo es es lo que más te delata."
+    },
+    "hidden_nurse_d3_6": {
+        "name": "Enfermera",
+        "text": "Cuando trabajaba en el hospital. Demasiados pacientes. Quería salvarlos a todos, pero solo tengo dos manos. Al final sentía que no podía cuidar bien ni a uno."
+    },
+    "hidden_nurse_d3_7": {
+        "name": "Enfermera",
+        "text": "Por eso vine aquí. En la escuela — puedo ver a cada persona como se merece."
+    },
+    "hidden_nurse_d3_8": {
+        "name": "Enfermera",
+        "text": "Tú también. No intentes cuidar a todos. — ¿No sería mejor ver bien a la persona que realmente importa?"
+    },
+    "hidden_nurse_d3_9": {
+        "name": "Enfermera",
+        "text": "...La persona que importa. ¿Y si resulta que es tu profesora? — ¡Es broma~ anda, ve a clase!"
+    },
+    "hidden_nurse_d3_freetalk": {
+        "name": "Enfermera",
+        "text": "*Conversando con la enfermera en la enfermería.*",
+        "context": "Día 3. Vino a la enfermería por ansiedad. La enfermera tuvo una conversación seria.",
+        "personality": "Normalmente juguetona, pero al ponerse seria el ambiente cambia totalmente. Profesional con experiencia de burnout."
     }
 }

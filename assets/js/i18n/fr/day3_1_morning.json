@@ -211,5 +211,113 @@
     "morning3_end": {
         "name": "Moi",
         "text": "*Mes plans du week-end se chevauchent... Sans m’en rendre compte, les cours se poursuivent et l’heure du déjeuner approche.*"
+    },
+    "hidden_homeroom_d3_1": {
+        "name": "Moi",
+        "text": "*Pause. En passant devant une salle vide — j'entends quelqu'un à l'intérieur. Je m'approche discrètement.*"
+    },
+    "hidden_homeroom_d3_2": {
+        "name": "Moi",
+        "text": "*Le prof principal est assis au bureau, en train d'écrire. Il s'arrête et lève la tête. — Nos regards se croisent.*"
+    },
+    "hidden_homeroom_d3_3": {
+        "name": "Professeur Principal",
+        "text": "......"
+    },
+    "hidden_homeroom_d3_4": {
+        "name": "Professeur Principal",
+        "text": "...C'est rien. Des documents. — ...Être observateur, c'est bien. Parfois, c'est un défaut."
+    },
+    "hidden_homeroom_d3_choice": {
+        "name": "Moi",
+        "text": "*C'est du papier manuscrit. Il a la tête de quelqu'un qui s'est fait prendre.*",
+        "choices": [
+            "J'ai vu que c'est un manuscrit. — Vous écrivez un roman ?",
+            "Pardon, je n'ai rien vu."
+        ]
+    },
+    "hidden_homeroom_d3_reveal_1": {
+        "name": "Professeur Principal",
+        "text": "...Trop gênant pour appeler ça un roman. Trop vieux pour de l'exercice. Sept ans."
+    },
+    "hidden_homeroom_d3_reveal_2": {
+        "name": "Professeur Principal",
+        "text": "J'ai commencé à la fac. Écriture créative. Après le diplôme, j'ai postulé à des prix littéraires — refusé trois fois en deux ans."
+    },
+    "hidden_homeroom_d3_reveal_3": {
+        "name": "Professeur Principal",
+        "text": "J'ai passé le concours de l'enseignement. Prof de français. — Un aspirant romancier qui enseigne la littérature. Ironique, non ?"
+    },
+    "hidden_homeroom_d3_reveal_4": {
+        "name": "Professeur Principal",
+        "text": "Ce serait plus simple de dire que j'ai abandonné. Mais je continue à le sortir dans des salles vides — alors je suppose que non."
+    },
+    "hidden_homeroom_d3_reveal_5": {
+        "name": "Professeur Principal",
+        "text": "...N'en parle à personne. Un prof qui partage ça avec un élève — c'est un secret."
+    },
+    "hidden_homeroom_d3_reveal_6": {
+        "name": "Moi",
+        "text": "*Il sourit. Pas son sourire sec habituel — un peu maladroit. — ...Premier candidat lecteur en sept ans.*"
+    },
+    "hidden_homeroom_d3_hide_1": {
+        "name": "Professeur Principal",
+        "text": "...D'accord, fais comme si t'avais rien vu. S'il te plaît. — ...Merci."
+    },
+    "hidden_homeroom_d3_end": {
+        "name": "Moi",
+        "text": "*Il rajuste sa cravate et sort. — 'S'il te plaît' est un mot rare chez lui.*"
+    },
+    "hidden_homeroom_d3_freetalk": {
+        "name": "Professeur Principal",
+        "text": "*En train de discuter avec le prof principal dans la salle vide.*",
+        "context": "Jour 3 matin. Découvert le prof en train d'écrire un manuscrit.",
+        "personality": "Le prof était un aspirant romancier. Il est devenu prof mais n'a jamais abandonné son rêve."
+    },
+    "hidden_nurse_d3_check": {
+        "name": "Moi",
+        "text": "*La pause touche à sa fin.*"
+    },
+    "hidden_nurse_d3_1": {
+        "name": "Moi",
+        "text": "*Quelque chose me tracasse depuis ce matin. Mes pieds m'emmènent à l'infirmerie. Je n'ai même pas mal.*"
+    },
+    "hidden_nurse_d3_2": {
+        "name": "Infirmière",
+        "text": "...Hein ? Qu'est-ce que tu t'es fait aujourd'hui ? — T'es pas blessé mais tu viens à l'infirmerie ?"
+    },
+    "hidden_nurse_d3_3": {
+        "name": "Moi",
+        "text": "...Je voulais juste me reposer. Les relations se compliquent."
+    },
+    "hidden_nurse_d3_4": {
+        "name": "Infirmière",
+        "text": "...Assieds-toi. Sérieux, t'as une sale tête. Qu'est-ce qui se passe ?"
+    },
+    "hidden_nurse_d3_5": {
+        "name": "Infirmière",
+        "text": "C'est une consultation sentimentale ? — Prétendre que non, c'est le plus gros aveu."
+    },
+    "hidden_nurse_d3_6": {
+        "name": "Infirmière",
+        "text": "Quand je bossais à l'hôpital. Trop de patients. Je voulais tous les sauver, mais j'ai que deux mains. Au final, j'avais l'impression de n'en soigner aucun correctement."
+    },
+    "hidden_nurse_d3_7": {
+        "name": "Infirmière",
+        "text": "C'est pour ça que je suis venue ici. À l'école — je peux vraiment m'occuper de chacun."
+    },
+    "hidden_nurse_d3_8": {
+        "name": "Infirmière",
+        "text": "C'est pareil pour toi. N'essaie pas de t'occuper de tout le monde. — Ce serait pas mieux de vraiment regarder la seule personne qui compte ?"
+    },
+    "hidden_nurse_d3_9": {
+        "name": "Infirmière",
+        "text": "...La personne qui compte. Et si c'était ta prof ? — Je plaisante~ allez, file en cours !"
+    },
+    "hidden_nurse_d3_freetalk": {
+        "name": "Infirmière",
+        "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
+        "context": "Jour 3. Venu à l'infirmerie par anxiété.",
+        "personality": "D'habitude joueuse, mais quand elle est sérieuse l'atmosphère change complètement."
     }
 }

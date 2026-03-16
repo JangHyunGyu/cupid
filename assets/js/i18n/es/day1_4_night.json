@@ -148,5 +148,25 @@
         "text": "*Llegó un mensaje corto de Yuna.*",
         "context": "Primera noche, chateando con Yuna por mensajero.",
         "personality": "Yuna es una chica literaria. Sus mensajes son cortos y crípticos."
+    },
+    "night_hidden_check": {
+        "name": "Yo",
+        "text": "*Entre las notificaciones — veo algo más.*"
+    },
+    "night_hidden_homeroom_1": {
+        "name": "Yo",
+        "text": "*Hay un aviso del profesor en la app del colegio. 'Aviso clase 1-2: Traigan materiales de matemáticas para la primera hora. — Y {name}, mientras te estés adaptando bien, con eso basta.'*"
+    },
+    "night_hidden_homeroom_2": {
+        "name": "Yo",
+        "text": "*¿Un mensaje personal en un aviso de clase? — Este hombre no distingue lo profesional de lo personal, o lo hace a propósito.*"
+    },
+    "night_hidden_nurse_1": {
+        "name": "Yo",
+        "text": "*Hay una alerta en la app de salud del colegio. 'Registro enfermería: {name} — Mareo (leve). Nota: Vuelve si continúan los síntomas. Bebe mucha agua. — el ♥ es interés médico ^^'*"
+    },
+    "night_hidden_nurse_2": {
+        "name": "Yo",
+        "text": "*Una enfermera que pone corazones en los registros médicos. Nunca había visto a alguien usar emojis en fichas de salud.*"
     }
 }

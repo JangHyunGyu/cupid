@@ -182,5 +182,53 @@
     "morning2_end": {
         "name": "Ich",
         "text": "*Jemand, der ein ganzes Jahr lang nie als Erste auf jemanden zugegangen ist -- ist auf mich zuerst zugekommen? Was bedeutet das?*"
+    },
+    "hidden_homeroom_d2_1": {
+        "name": "Klassenlehrer",
+        "text": "Ach, {name}. Komm mal kurz ins Lehrerzimmer."
+    },
+    "hidden_homeroom_d2_2": {
+        "name": "Ich",
+        "text": "*Er sagt, es sei Verwaltungskram. Der Mann verpackt sein Interesse immer als dienstlich.*"
+    },
+    "hidden_homeroom_d2_3": {
+        "name": "Klassenlehrer",
+        "text": "Hab dein altes Zeugnis gesehen. Deine Deutschnoten waren gut. Liest du gerne?"
+    },
+    "hidden_homeroom_d2_4": {
+        "name": "Ich",
+        "text": "Lesen ja. — Schreiben eher nicht."
+    },
+    "hidden_homeroom_d2_5": {
+        "name": "Klassenlehrer",
+        "text": "...Okay. War nur eine Frage."
+    },
+    "hidden_homeroom_d2_6": {
+        "name": "Ich",
+        "text": "*Die Schublade. Hat er gerade hingeschaut? — Durch den Spalt sehe ich einen Stapel Papiere. Sieht aus wie Manuskriptseiten.*"
+    },
+    "hidden_homeroom_d2_7": {
+        "name": "Klassenlehrer",
+        "text": "Wie läuft die Eingewöhnung? Besser als gestern?"
+    },
+    "hidden_homeroom_d2_8": {
+        "name": "Klassenlehrer",
+        "text": "Dain ist laut, oder? — Die ist immer so. Aber kein schlechtes Mädchen. Eher der Typ, um den man sich Sorgen macht."
+    },
+    "hidden_homeroom_d2_9": {
+        "name": "Ich",
+        "text": "Danke, Herr Lehrer."
+    },
+    "hidden_homeroom_d2_10": {
+        "name": "Klassenlehrer",
+        "text": "Naja, dass ein Lehrer sich um Schüler sorgt, ist selbstverständlich. Dienstlich."
+    },
+    "hidden_homeroom_d2_11": {
+        "name": "Klassenlehrer",
+        "text": "...Ich sollte das eigentlich nicht tun. Wenn ich den Neuen bevorzuge, reden die anderen."
+    },
+    "hidden_homeroom_d2_12": {
+        "name": "Ich",
+        "text": "*Ich verlasse das Lehrerzimmer — die Papiere in der Schublade lassen mir keine Ruhe.*"
     }
 }

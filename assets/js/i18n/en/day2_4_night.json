@@ -141,5 +141,29 @@
         "text": "*Exchanging late-night messages with Yuna.*",
         "context": "Night 2, chatting with Yuna. She's more talkative than usual.",
         "personality": "Yuna is a mysterious literary girl. Her walls lower a bit at night. Longer messages mean she's opening up."
+    },
+    "night2_hidden_check": {
+        "name": "Me",
+        "text": "*Between the messenger alerts — I spot more notifications.*"
+    },
+    "night2_hidden_homeroom_1": {
+        "name": "Me",
+        "text": "*A private message from the homeroom teacher. '{name}, thanks for coming to the office today. The paperwork's done so I won't need to call you in again. ...But if adjusting gets tough, come by anytime.'*"
+    },
+    "night2_hidden_homeroom_2": {
+        "name": "Me",
+        "text": "*Three lines. Gratitude, distance, then reaching out again. — He's playing tug of war with himself.*"
+    },
+    "night2_hidden_homeroom_3": {
+        "name": "Me",
+        "text": "*'Won't need to call you in' and 'come by anytime' in the same message. Contradictory — but that's so him.*"
+    },
+    "night2_hidden_nurse_1": {
+        "name": "Me",
+        "text": "*Health app notification. 'Nurse's Record: {name} — Elbow abrasion (minor). Note: I'll change the bandage tomorrow morning. Changing bandages is a medical procedure so you can't refuse ^^'*"
+    },
+    "night2_hidden_nurse_2": {
+        "name": "Me",
+        "text": "*Can't refuse. — Is that medical authority or personal interest? The emoji blurs the line.*"
     }
 }

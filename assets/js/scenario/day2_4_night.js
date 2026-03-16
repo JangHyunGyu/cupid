@@ -203,20 +203,67 @@ Object.assign(SCENARIO[2], {
         "type": "free_talk",
         "background": "assets/images/background/home_room.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "night2_end_1"
+        "next": "night2_hidden_check"
     }
 ,
     "night2_dain_freetalk": {
         "type": "free_talk",
         "background": "assets/images/background/home_room.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "night2_end_1"
+        "next": "night2_hidden_check"
     }
 ,
     "night2_yuna_freetalk": {
         "type": "free_talk",
         "background": "assets/images/background/home_room.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "night2_end_1"
+        "next": "night2_hidden_check"
     }
+
+    // =========================================================================
+    // HIDDEN ROUTE - Day 2 Night messages
+    // =========================================================================
+    "night2_hidden_check": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "branches": [
+            { "condition": "homeroom_day2", "next": "night2_hidden_homeroom_1" },
+            { "condition": "nurse_day2", "next": "night2_hidden_nurse_1" },
+            { "next": "night2_end_1" }
+        ]
+    },
+    "night2_hidden_homeroom_1": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_hidden_homeroom_2"
+    },
+    "night2_hidden_homeroom_2": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_hidden_homeroom_3"
+    },
+    "night2_hidden_homeroom_3": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "branches": [
+            { "condition": "nurse_day2", "next": "night2_hidden_nurse_1" },
+            { "next": "night2_end_1" }
+        ]
+    },
+    "night2_hidden_nurse_1": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_hidden_nurse_2"
+    },
+    "night2_hidden_nurse_2": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_end_1"
+    },
 });

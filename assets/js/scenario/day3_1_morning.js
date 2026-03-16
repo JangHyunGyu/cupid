@@ -411,6 +411,152 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_end"
     },
 
+
+    // =========================================================================
+    // HIDDEN - Day 3 담임 빈 교실 원고 발견
+    // =========================================================================
+    "hidden_homeroom_d3_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "condition": "homeroom_day2",
+        "next": "hidden_homeroom_d3_2"
+    },
+    "hidden_homeroom_d3_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d3_3"
+    },
+    "hidden_homeroom_d3_3": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d3_4"
+    },
+    "hidden_homeroom_d3_4": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d3_choice"
+    },
+    "hidden_homeroom_d3_choice": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "choices": [
+            { "next": "hidden_homeroom_d3_reveal_1", "stats": { "Teacher": { "affinity": 10 } } },
+            { "next": "hidden_homeroom_d3_hide_1", "stats": { "Teacher": { "affinity": 3 } } }
+        ]
+    },
+    "hidden_homeroom_d3_reveal_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d3_reveal_2"
+    },
+    "hidden_homeroom_d3_reveal_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d3_reveal_3"
+    },
+    "hidden_homeroom_d3_reveal_3": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d3_reveal_4"
+    },
+    "hidden_homeroom_d3_reveal_4": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d3_reveal_5"
+    },
+    "hidden_homeroom_d3_reveal_5": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d3_reveal_6"
+    },
+    "hidden_homeroom_d3_reveal_6": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "setFlag": "discovered_manuscript",
+        "next": "hidden_homeroom_d3_end"
+    },
+    "hidden_homeroom_d3_hide_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d3_end"
+    },
+    "hidden_homeroom_d3_end": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "setFlag": "homeroom_day3",
+        "next": "hidden_homeroom_d3_freetalk"
+    },
+    "hidden_homeroom_d3_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_nurse_d3_check"
+    },
+
+    // =========================================================================
+    // HIDDEN - Day 3 보건선생님 감정 전환점
+    // =========================================================================
+    "hidden_nurse_d3_check": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "nurse_day2", "next": "hidden_nurse_d3_1" },
+            { "next": "morning3_date_seo_1" }
+        ]
+    },
+    "hidden_nurse_d3_1": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "condition": "nurse_day2",
+        "next": "hidden_nurse_d3_2"
+    },
+    "hidden_nurse_d3_2": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d3_3"
+    },
+    "hidden_nurse_d3_3": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "next": "hidden_nurse_d3_4"
+    },
+    "hidden_nurse_d3_4": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d3_5"
+    },
+    "hidden_nurse_d3_5": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d3_6"
+    },
+    "hidden_nurse_d3_6": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d3_7"
+    },
+    "hidden_nurse_d3_7": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d3_8"
+    },
+    "hidden_nurse_d3_8": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d3_9"
+    },
+    "hidden_nurse_d3_9": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "setFlag": "nurse_day3",
+        "next": "hidden_nurse_d3_freetalk"
+    },
+    "hidden_nurse_d3_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "morning3_date_seo_1"
+    },
     // === 종료 ===
     "morning3_end": {
         "background": "assets/images/background/room_school.png",

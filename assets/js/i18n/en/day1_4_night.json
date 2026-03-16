@@ -148,5 +148,25 @@
         "text": "*A short message from Yuna arrived.*",
         "context": "First night, chatting with Yuna via messenger. She messaged first.",
         "personality": "Yuna is a mysterious literary girl. Her messages are short and cryptic. Reaching out first at night is a big deal for her."
+    },
+    "night_hidden_check": {
+        "name": "Me",
+        "text": "*Between the messenger notifications — I notice something else.*"
+    },
+    "night_hidden_homeroom_1": {
+        "name": "Me",
+        "text": "*There's a post from the homeroom teacher on the school app. 'Class 1-2 Notice: Bring math supplies for 1st period tomorrow. — And {name}, as long as you're settling in okay, that's enough.'*"
+    },
+    "night_hidden_homeroom_2": {
+        "name": "Me",
+        "text": "*A personal message in a class announcement? — Does this guy not know the difference between work and personal, or is he doing it on purpose?*"
+    },
+    "night_hidden_nurse_1": {
+        "name": "Me",
+        "text": "*There's an alert on the school health app. 'Nurse's Office Record: {name} — Dizziness (mild). Note: Come back if symptoms persist tomorrow. Drink lots of water. — the ♥ is strictly medical concern ^^'*"
+    },
+    "night_hidden_nurse_2": {
+        "name": "Me",
+        "text": "*A school nurse who puts hearts in medical records. Never seen anyone use emojis in health files before.*"
     }
 }

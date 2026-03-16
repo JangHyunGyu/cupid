@@ -349,4 +349,61 @@ Object.assign(SCENARIO[2], {
         "character": "assets/images/characters/dain_normal.png",
         "next": "after2_dain_end"
     }
+
+    // =========================================================================
+    // HIDDEN ROUTE - Day 2 보건선생님 체육 시간
+    // =========================================================================
+    "hidden_nurse_d2_1": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "condition": "nurse_day1",
+        "next": "hidden_nurse_d2_2"
+    },
+    "hidden_nurse_d2_2": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d2_3"
+    },
+    "hidden_nurse_d2_3": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "next": "hidden_nurse_d2_4"
+    },
+    "hidden_nurse_d2_4": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d2_5"
+    },
+    "hidden_nurse_d2_5": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d2_6"
+    },
+    "hidden_nurse_d2_6": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "next": "hidden_nurse_d2_7"
+    },
+    "hidden_nurse_d2_7": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d2_8"
+    },
+    "hidden_nurse_d2_8": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d2_9"
+    },
+    "hidden_nurse_d2_9": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "setFlag": "nurse_day2",
+        "next": "hidden_nurse_d2_freetalk"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after2_choice"
+    },
 });

@@ -141,5 +141,29 @@
         "text": "*Intercambiando mensajes nocturnos con Yuna.*",
         "context": "Noche 2, chateando con Yuna.",
         "personality": "Yuna baja sus defensas por la noche. Mensajes más largos significan que se está abriendo."
+    },
+    "night2_hidden_check": {
+        "name": "Yo",
+        "text": "*Entre las alertas del chat — veo más notificaciones.*"
+    },
+    "night2_hidden_homeroom_1": {
+        "name": "Yo",
+        "text": "*Un mensaje privado del profesor. '{name}, gracias por venir a la oficina hoy. El papeleo ya terminó, no tendré que llamarte más. ...Pero si la adaptación se pone difícil, pasa cuando quieras.'*"
+    },
+    "night2_hidden_homeroom_2": {
+        "name": "Yo",
+        "text": "*Tres líneas. Agradecimiento, distancia, y luego acercarse de nuevo. — Está tirando de la cuerda consigo mismo.*"
+    },
+    "night2_hidden_homeroom_3": {
+        "name": "Yo",
+        "text": "*'No tendré que llamarte' y 'pasa cuando quieras' en el mismo mensaje. Contradictorio — pero típico de él.*"
+    },
+    "night2_hidden_nurse_1": {
+        "name": "Yo",
+        "text": "*Notificación de la app de salud. 'Registro enfermería: {name} — Rasguño en el codo (leve). Nota: Te cambio la tirita mañana. Cambiar tiritas es un acto médico así que no puedes negarte ^^'*"
+    },
+    "night2_hidden_nurse_2": {
+        "name": "Yo",
+        "text": "*Sin derecho a negarse. — ¿Es autoridad médica o interés personal? El emoji difumina la línea.*"
     }
 }

@@ -237,5 +237,47 @@
         "text": "*Comiendo tteokbokki con Dain y charlando.*",
         "context": "Día 2 después de clases, vinieron a la tienda de tteokbokki tras una apuesta de voleibol.",
         "personality": "Dain es una atleta enérgica y competitiva."
+    },
+    "hidden_nurse_d2_1": {
+        "name": "Yo",
+        "text": "*Me raspe el codo en educación física. No es nada grave, pero sangra un poco.*"
+    },
+    "hidden_nurse_d2_2": {
+        "name": "Enfermera",
+        "text": "Vaya, el nuevo de ayer. ¿Otra vez aquí? ¿Quieres ser cliente fijo?"
+    },
+    "hidden_nurse_d2_3": {
+        "name": "Yo",
+        "text": "Me raspe el codo."
+    },
+    "hidden_nurse_d2_4": {
+        "name": "Enfermera",
+        "text": "Quédate quieto~..."
+    },
+    "hidden_nurse_d2_5": {
+        "name": "Enfermera",
+        "text": "Aquí... así... listo. Es cuestión de cuidado. Si lo pones mal, se despega."
+    },
+    "hidden_nurse_d2_6": {
+        "name": "Yo",
+        "text": "*Revisando la tirita cuando — su portátil está abierto en el escritorio. No es un historial médico — parece un diario personal.*"
+    },
+    "hidden_nurse_d2_7": {
+        "name": "Enfermera",
+        "text": "No viste eso, ¿verdad? Secreto~ Los profesores también tienen secretos."
+    },
+    "hidden_nurse_d2_8": {
+        "name": "Enfermera",
+        "text": "Listo, vuelve a clase. — La próxima vez, ven sin heridas."
+    },
+    "hidden_nurse_d2_9": {
+        "name": "Enfermera",
+        "text": "Puedes venir sin razón. — Bueno, no en horario de clase~! ¡Después de clases!"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "name": "Enfermera",
+        "text": "*Conversando con la enfermera en la enfermería.*",
+        "context": "Día 2. Se raspo el codo en educación física.",
+        "personality": "La enfermera es juguetona pero meticulosa. Tarda mucho en poner tiritas. Esconde algo personal."
     }
 }

@@ -211,5 +211,113 @@
     "morning3_end": {
         "name": "Ich",
         "text": "*Die Wochenendpläne überschneiden sich... Ehe ich mich versehe, gehen die Stunden weiter und die Mittagspause naht.*"
+    },
+    "hidden_homeroom_d3_1": {
+        "name": "Ich",
+        "text": "*Pause. Beim Vorbeigehen an einem leeren Klassenzimmer — höre ich jemanden drin. Ich nähere mich leise.*"
+    },
+    "hidden_homeroom_d3_2": {
+        "name": "Ich",
+        "text": "*Der Klassenlehrer sitzt am Pult und schreibt etwas. Er hält inne und blickt auf. — Unsere Blicke treffen sich.*"
+    },
+    "hidden_homeroom_d3_3": {
+        "name": "Klassenlehrer",
+        "text": "......"
+    },
+    "hidden_homeroom_d3_4": {
+        "name": "Klassenlehrer",
+        "text": "...Ist nichts. Dienstliche Unterlagen. — ...Aufmerksam zu sein ist normalerweise eine Stärke. Manchmal eine Schwäche."
+    },
+    "hidden_homeroom_d3_choice": {
+        "name": "Ich",
+        "text": "*Das ist Manuskriptpapier. Er hat den Gesichtsausdruck von jemandem, der ertappt wurde.*",
+        "choices": [
+            "Ich hab gesehen, dass es ein Manuskript ist. — Schreiben Sie einen Roman?",
+            "Entschuldigung, ich hab nichts gesehen."
+        ]
+    },
+    "hidden_homeroom_d3_reveal_1": {
+        "name": "Klassenlehrer",
+        "text": "...Zu peinlich, um es Roman zu nennen. Zu alt für eine Übung. Sieben Jahre."
+    },
+    "hidden_homeroom_d3_reveal_2": {
+        "name": "Klassenlehrer",
+        "text": "Hab an der Uni angefangen. Kreatives Schreiben. Nach dem Abschluss hab ich mich bei Literaturpreisen beworben — dreimal abgelehnt in zwei Jahren."
+    },
+    "hidden_homeroom_d3_reveal_3": {
+        "name": "Klassenlehrer",
+        "text": "Hab das Lehrerexamen gemacht. Deutschlehrer. — Ein Möchtegern-Romanautor, der Literatur unterrichtet. Ironisch, oder?"
+    },
+    "hidden_homeroom_d3_reveal_4": {
+        "name": "Klassenlehrer",
+        "text": "Es wäre einfacher zu sagen, ich hätte aufgegeben. Aber ich hole es immer wieder in leeren Klassenzimmern raus — also hab ich's wohl nie wirklich."
+    },
+    "hidden_homeroom_d3_reveal_5": {
+        "name": "Klassenlehrer",
+        "text": "...Erzähl das niemandem. Ein Lehrer, der das mit einem Schüler teilt — das ist ein Geheimnis."
+    },
+    "hidden_homeroom_d3_reveal_6": {
+        "name": "Ich",
+        "text": "*Er lächelt. Nicht sein übliches trockenes — etwas unbeholfen. — ...Erster Leser-Bewerber seit sieben Jahren.*"
+    },
+    "hidden_homeroom_d3_hide_1": {
+        "name": "Klassenlehrer",
+        "text": "...Okay, tu so, als hättest du nichts gesehen. Bitte. — ...Danke."
+    },
+    "hidden_homeroom_d3_end": {
+        "name": "Ich",
+        "text": "*Er richtet seine Krawatte und geht. — 'Bitte' ist ein seltenes Wort bei ihm.*"
+    },
+    "hidden_homeroom_d3_freetalk": {
+        "name": "Klassenlehrer",
+        "text": "*Im Gespräch mit dem Klassenlehrer im leeren Klassenzimmer.*",
+        "context": "Tag 3 morgens. Den Lehrer beim Schreiben eines Manuskripts im leeren Klassenzimmer entdeckt.",
+        "personality": "Der Lehrer war ein angehender Romanautor. Wurde Lehrer, hat den Traum aber nie aufgegeben."
+    },
+    "hidden_nurse_d3_check": {
+        "name": "Ich",
+        "text": "*Die Pause geht zu Ende.*"
+    },
+    "hidden_nurse_d3_1": {
+        "name": "Ich",
+        "text": "*Seit heute Morgen beunruhigt mich etwas. Meine Füße tragen mich zum Krankenzimmer. Ich bin nicht mal verletzt.*"
+    },
+    "hidden_nurse_d3_2": {
+        "name": "Schulkrankenschwester",
+        "text": "...Hä? Was hast du dir heute getan? — Du bist nicht verletzt, aber kommst ins Krankenzimmer?"
+    },
+    "hidden_nurse_d3_3": {
+        "name": "Ich",
+        "text": "...Wollte mich einfach ausruhen. Beziehungen werden kompliziert."
+    },
+    "hidden_nurse_d3_4": {
+        "name": "Schulkrankenschwester",
+        "text": "...Setz dich. Im Ernst, du siehst nicht gut aus. Was ist los?"
+    },
+    "hidden_nurse_d3_5": {
+        "name": "Schulkrankenschwester",
+        "text": "Ist das eine Beziehungsberatung? — So tun als wäre es keine, verrät dich am meisten."
+    },
+    "hidden_nurse_d3_6": {
+        "name": "Schulkrankenschwester",
+        "text": "Als ich im Krankenhaus gearbeitet habe. Zu viele Patienten. Ich wollte alle retten, aber ich hab nur zwei Hände. Am Ende fühlte es sich an, als könnte ich mich um keinen richtig kümmern."
+    },
+    "hidden_nurse_d3_7": {
+        "name": "Schulkrankenschwester",
+        "text": "Deshalb bin ich hierher gekommen. In der Schule — kann ich mich wirklich um jeden Einzelnen kümmern."
+    },
+    "hidden_nurse_d3_8": {
+        "name": "Schulkrankenschwester",
+        "text": "Für dich gilt das Gleiche. Versuch nicht, dich um alle zu kümmern. — Wäre es nicht besser, die eine Person, die wirklich zählt, richtig anzuschauen?"
+    },
+    "hidden_nurse_d3_9": {
+        "name": "Schulkrankenschwester",
+        "text": "...Die Person, die zählt. Was, wenn das deine Lehrerin ist? — Spaß~ geh zum Unterricht!"
+    },
+    "hidden_nurse_d3_freetalk": {
+        "name": "Schulkrankenschwester",
+        "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
+        "context": "Tag 3. Kam aus Unruhe ins Krankenzimmer.",
+        "personality": "Normalerweise verspielt, aber wenn ernst, ändert sich die Atmosphäre komplett."
     }
 }

@@ -110,5 +110,157 @@
     "after_end": {
         "name": "僕",
         "text": "*微笑みを残して通り過ぎる。*"
+    },
+    "after_hidden_homeroom_1": {
+        "name": "僕",
+        "text": "*帰ろうとしたら——後ろから声がした。*"
+    },
+    "after_hidden_homeroom_2": {
+        "name": "担任先生",
+        "text": "{name}。ちょっと残って。"
+    },
+    "after_hidden_homeroom_3": {
+        "name": "僕",
+        "text": "*担任先生だ。ネクタイはさっきより曲がっている。一日戦った後みたいだ。*"
+    },
+    "after_hidden_homeroom_4": {
+        "name": "担任先生",
+        "text": "悪いことはしてないよ。——転校生だからさ。慣れた？"
+    },
+    "after_hidden_homeroom_choice": {
+        "name": "僕",
+        "text": "*義務的な質問に見えるのに、目は本気でこちらを見ている。*",
+        "choices": [
+            "大丈夫です。いい学校ですね。",
+            "正直、ちょっと大変です。"
+        ]
+    },
+    "after_homeroom_ok": {
+        "name": "担任先生",
+        "text": "そうか。良かった。——何かあったら職員室に来い。先生の仕事だから。"
+    },
+    "after_homeroom_ok_2": {
+        "name": "僕",
+        "text": "*無感心な人かと思ったけど、意外と気にかけるタイプなのか。——まあ、担任だからか。*"
+    },
+    "after_homeroom_honest_1": {
+        "name": "担任先生",
+        "text": "大変なのが普通だよ。新しい学校の初日に余裕がある方がおかしい。"
+    },
+    "after_homeroom_honest_2": {
+        "name": "僕",
+        "text": "先生も転校の経験ありますか？"
+    },
+    "after_homeroom_honest_3": {
+        "name": "担任先生",
+        "text": "...似たようなものかな。いきなり新しい場所に放り込まれたことはある。"
+    },
+    "after_homeroom_honest_4": {
+        "name": "僕",
+        "text": "先生が生徒に飲み物おごってくれるんですか？"
+    },
+    "after_homeroom_honest_5": {
+        "name": "担任先生",
+        "text": "教育的配慮だよ。——先生がこんなことしちゃいけないんだけどな。"
+    },
+    "after_homeroom_honest_6": {
+        "name": "担任先生",
+        "text": "つらかったら職員室に来い。コーヒーくらいは——あ、生徒だからジュースくらいは出せる。"
+    },
+    "after_homeroom_honest_7": {
+        "name": "担任先生",
+        "text": "あ、{name}。"
+    },
+    "after_homeroom_honest_8": {
+        "name": "僕",
+        "text": "はい？"
+    },
+    "after_homeroom_honest_9": {
+        "name": "担任先生",
+        "text": "いい名前だね。——覚えておくよ。"
+    },
+    "after_homeroom_honest_10": {
+        "name": "僕",
+        "text": "*担任が廊下の先に消える。ネクタイが揺れている。——「先生がこんなことしちゃいけないんだけど」が口癖らしい。*"
+    },
+    "after_homeroom_freetalk": {
+        "name": "担任先生",
+        "text": "*担任先生と廊下で会話中。*",
+        "context": "Day 1放課後。担任が転校生の適応を確認。",
+        "personality": "担任先生はドライなユーモアの裏に優しさを隠す。30代前半。口癖は「先生がこんなことしちゃいけないんだけど」。元小説家志望。"
+    },
+    "after_hidden_nurse_intro": {
+        "name": "僕",
+        "text": "*廊下を歩いていると——少しクラッとする。初日の緊張のせいかな。*"
+    },
+    "after_hidden_nurse_intro_2": {
+        "name": "僕",
+        "text": "*廊下に「保健室」の看板が見える。——入ろうか、どうしよう。*"
+    },
+    "after_hidden_nurse_choice": {
+        "name": "僕",
+        "text": "*朝から休みなく人に会い続けたからな。*",
+        "choices": [
+            "保健室に入る",
+            "そのまま帰る"
+        ]
+    },
+    "after_nurse_skip": {
+        "name": "僕",
+        "text": "*そのまま帰ることにした。大したことないだろう。*"
+    },
+    "after_nurse_enter_1": {
+        "name": "僕",
+        "text": "*保健室のドアを開ける。消毒液の化いがほのかに香る。白いカーテン、白いベッド、小さな机。*"
+    },
+    "after_nurse_enter_2": {
+        "name": "保健先生",
+        "text": "あら、患者さんだ。"
+    },
+    "after_nurse_enter_3": {
+        "name": "僕",
+        "text": "少しめまいがして……"
+    },
+    "after_nurse_enter_4": {
+        "name": "保健先生",
+        "text": "転校生だよね？初日から保健室なんて。ストレスたまってるね～"
+    },
+    "after_nurse_enter_5": {
+        "name": "僕",
+        "text": "*保健先生が近づいてくる。手が額に触れる。*"
+    },
+    "after_nurse_enter_6": {
+        "name": "保健先生",
+        "text": "熱はないね～…血圧がちょっと低いかも。"
+    },
+    "after_nurse_enter_7": {
+        "name": "保健先生",
+        "text": "...うそ、ただ触りたかっただけ。——冗談だよ冗談～さ、横になって。10分だけ休もう。"
+    },
+    "after_nurse_enter_8": {
+        "name": "保健先生",
+        "text": "敬語はいらないよ。保健室ではリラックスしてね。——先生じゃなくて、看護師のお姉さんだと思って。"
+    },
+    "after_nurse_enter_9": {
+        "name": "僕",
+        "text": "*水を飲みながら保健室を見回す。隠の小さな植木鉢。*"
+    },
+    "after_nurse_enter_10": {
+        "name": "保健先生",
+        "text": "ローズマリー。——病院で働いてた頃から育ててるの。昔の話～ここが好き。みんな軽い傷だけ持ってくるから。"
+    },
+    "after_nurse_enter_11": {
+        "name": "保健先生",
+        "text": "いつでもおいで～ドアはいつも開いてるから。でもあまり頻繁に来ないでね。先生が心配しちゃうから。"
+    },
+    "after_nurse_enter_12": {
+        "name": "保健先生",
+        "text": "{name}...いい名前だね。覚えておくよ。"
+    },
+    "after_nurse_freetalk": {
+        "name": "保健先生",
+        "text": "*保健先生と保健室で会話中。*",
+        "context": "Day 1放課後。転校生がめまいで保健室を訪れた。",
+        "personality": "保健先生はいたずら好きだが本音を冗談の裏に隠す女性。元病院看護師でバーンアウト経験者。"
     }
 }

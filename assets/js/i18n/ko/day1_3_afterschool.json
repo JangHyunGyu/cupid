@@ -110,5 +110,153 @@
     "after_end": {
         "name": "{name}",
         "text": "*미소를 남기고 지나간다.*"
+    },
+
+    "after_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*하교하려는데 — 뒤에서 목소리.*"
+    },
+    "after_hidden_homeroom_2": {
+        "name": "담임선생님",
+        "text": "{name}. 잠깐 남아."
+    },
+    "after_hidden_homeroom_3": {
+        "name": "{name}",
+        "text": "*담임선생님이다. 넥타이는 아까보다 더 비뚤어져 있다. 하루 동안 전투를 치른 것 같다.*"
+    },
+    "after_hidden_homeroom_4": {
+        "name": "담임선생님",
+        "text": "잘못한 건 없고. — 전학생이니까. 적응 좀 어때?"
+    },
+    "after_hidden_homeroom_choice": {
+        "name": "{name}",
+        "text": "*의무적인 질문인 것 같은데, 눈은 진심으로 살피고 있다.*",
+        "choices": ["괜찮습니다. 생각보다 좋은 학교네요.", "솔직히 좀 정신없습니다."]
+    },
+    "after_homeroom_ok": {
+        "name": "담임선생님",
+        "text": "그래? 다행이다. — 뭐 힘든 거 있으면 교무실로 와. 선생님 일이니까."
+    },
+    "after_homeroom_ok_2": {
+        "name": "{name}",
+        "text": "*무심한 사람인 줄 알았는데, 의외로 챙기는 타입인 건가. — 아니, 그냥 담임이니까 하는 거겠지.*"
+    },
+    "after_homeroom_honest_1": {
+        "name": "담임선생님",
+        "text": "정신없는 게 정상이야. 새 학교에 첫날인데 여유로우면 그게 더 이상한 거고."
+    },
+    "after_homeroom_honest_2": {
+        "name": "{name}",
+        "text": "선생님도 전학 경험 있어요?"
+    },
+    "after_homeroom_honest_3": {
+        "name": "담임선생님",
+        "text": "...비슷한 거. 갑자기 새로운 곳에 던져진 적은 있지."
+    },
+    "after_homeroom_honest_4": {
+        "name": "{name}",
+        "text": "선생님이 학생한테 음료수 사주시는 거예요?"
+    },
+    "after_homeroom_honest_5": {
+        "name": "담임선생님",
+        "text": "교육적 관심이야. — 선생님이 이러면 안 되는데, 뭐."
+    },
+    "after_homeroom_honest_6": {
+        "name": "담임선생님",
+        "text": "적응 못 하겠으면 교무실로 와. 커피 정도는 — 아, 학생이니까 주스 정도는 줄 수 있어."
+    },
+    "after_homeroom_honest_7": {
+        "name": "담임선생님",
+        "text": "아, {name}."
+    },
+    "after_homeroom_honest_8": {
+        "name": "{name}",
+        "text": "네?"
+    },
+    "after_homeroom_honest_9": {
+        "name": "담임선생님",
+        "text": "좋은 이름이네. — 잘 기억할게."
+    },
+    "after_homeroom_honest_10": {
+        "name": "{name}",
+        "text": "*담임이 복도 끝으로 사라진다. 넥타이가 흔들린다. — '선생님이 이러면 안 되는데'가 입버릇인 것 같다.*"
+    },
+    "after_homeroom_freetalk": {
+        "name": "담임선생님",
+        "text": "*담임선생님과 복도에서 대화 중.*",
+        "context": "Day 1 방과후. 전학 첫날 방과후에 담임선생님이 적응 확인을 위해 불러세웠다. 주인공이 솔직하게 정신없다고 대답한 뒤의 대화.",
+        "personality": "담임선생님은 건조한 유머와 무뚝뚝함 뒤에 세심함을 숨기는 30대 초반 남자 교사. '선생님이 이러면 안 되는데'가 입버릇. 소설가 지망생이었던 과거가 있다."
+    },
+
+    "after_hidden_nurse_intro": {
+        "name": "{name}",
+        "text": "*복도를 걷는데 — 갑자기 머리가 살짝 핑 돈다. 첫날의 긴장 때문인가.*"
+    },
+    "after_hidden_nurse_intro_2": {
+        "name": "{name}",
+        "text": "*복도 한쪽에 '보건실' 표지판이 보인다. — 들어갈까 말까.*"
+    },
+    "after_hidden_nurse_choice": {
+        "name": "{name}",
+        "text": "*아침부터 쉴 틈 없이 사람을 만났으니까.*",
+        "choices": ["보건실에 들어간다", "그냥 집에 간다"]
+    },
+    "after_nurse_skip": {
+        "name": "{name}",
+        "text": "*그냥 집에 가기로 했다. 별거 아닐 거다.*"
+    },
+    "after_nurse_enter_1": {
+        "name": "{name}",
+        "text": "*보건실 문을 연다. 소독약 냄새가 은은하게 난다. 흰 커튼, 하얀 침대, 작은 책상.*"
+    },
+    "after_nurse_enter_2": {
+        "name": "보건선생님",
+        "text": "어머, 환자다."
+    },
+    "after_nurse_enter_3": {
+        "name": "{name}",
+        "text": "좀 어지러워서요."
+    },
+    "after_nurse_enter_4": {
+        "name": "보건선생님",
+        "text": "전학생이지? 첫날에 벌써 보건실이라니. 스트레스 받았구나~"
+    },
+    "after_nurse_enter_5": {
+        "name": "{name}",
+        "text": "*보건선생님이 다가온다. 손이 이마에 올라온다.*"
+    },
+    "after_nurse_enter_6": {
+        "name": "보건선생님",
+        "text": "열은 없고~... 혈압이 좀 낮을 수도 있겠다."
+    },
+    "after_nurse_enter_7": {
+        "name": "보건선생님",
+        "text": "...아니, 그냥 만져보고 싶었어. — 농담이야 농담~ 자, 여기 누워. 10분만 쉬어."
+    },
+    "after_nurse_enter_8": {
+        "name": "보건선생님",
+        "text": "존댓말 안 해도 돼. 보건실에서는 편하게. — 선생님이 아니라 간호사 누나라고 생각해."
+    },
+    "after_nurse_enter_9": {
+        "name": "{name}",
+        "text": "*물을 마시며 보건실을 둘러본다. 한쪽 구석에 작은 화분이 하나.*"
+    },
+    "after_nurse_enter_10": {
+        "name": "보건선생님",
+        "text": "로즈마리. — 병원에서 일할 때부터 키우던 거야. 옛날 얘기~ 학교가 좋아. 여기선 다들 가벼운 상처만 가지고 오니까."
+    },
+    "after_nurse_enter_11": {
+        "name": "보건선생님",
+        "text": "또 오면 돼~ 보건실은 항상 열려 있으니까. 근데 너무 자주 오지는 마. 선생님이 신경 쓰이니까."
+    },
+    "after_nurse_enter_12": {
+        "name": "보건선생님",
+        "text": "{name}... 좋은 이름이네. 기억할게."
+    },
+    "after_nurse_freetalk": {
+        "name": "보건선생님",
+        "text": "*보건선생님과 보건실에서 대화 중.*",
+        "context": "Day 1 방과후. 전학 첫날 어지러워서 보건실에 들렀다. 보건선생님이 장난스럽게 대하면서도 세심하게 챙겨준 뒤의 대화.",
+        "personality": "보건선생님은 장난기 넘치고 유혹적이지만 진심을 장난 뒤에 숨기는 여성. 대학병원 간호사 출신으로 번아웃을 겪고 학교로 왔다. '선생님이니까' 뒤에 항상 숨겨진 감정이 있다."
     }
 }
