@@ -182,5 +182,53 @@
     "morning2_end": {
         "name": "Yo",
         "text": "*Alguien que nunca se acerco a nadie primero en todo un ano... vino a mi primero? Que significa eso?*"
+    },
+    "hidden_homeroom_d2_1": {
+        "name": "Profesor",
+        "text": "Ah, {name}. Ven a la sala de profesores un momento."
+    },
+    "hidden_homeroom_d2_2": {
+        "name": "Yo",
+        "text": "*Dice que es un trámite. Este hombre siempre disfraza su interés de asuntos oficiales.*"
+    },
+    "hidden_homeroom_d2_3": {
+        "name": "Profesor",
+        "text": "Vi tu expediente académico. Tenías buenas notas en lengua. ¿Te gusta leer?"
+    },
+    "hidden_homeroom_d2_4": {
+        "name": "Yo",
+        "text": "Leer sí. — Escribir, no tanto."
+    },
+    "hidden_homeroom_d2_5": {
+        "name": "Profesor",
+        "text": "...Ya. Solo preguntaba."
+    },
+    "hidden_homeroom_d2_6": {
+        "name": "Yo",
+        "text": "*El cajón. ¿Acaba de mirarlo? — Por la rendija se ve un montón de papeles. Parece un manuscrito.*"
+    },
+    "hidden_homeroom_d2_7": {
+        "name": "Profesor",
+        "text": "¿Cómo va la adaptación? ¿Mejor que ayer?"
+    },
+    "hidden_homeroom_d2_8": {
+        "name": "Profesor",
+        "text": "Dain es ruidosa, ¿no? — Siempre es así. Pero no es mala chica. Más bien del tipo que preocupa."
+    },
+    "hidden_homeroom_d2_9": {
+        "name": "Yo",
+        "text": "Gracias, profe."
+    },
+    "hidden_homeroom_d2_10": {
+        "name": "Profesor",
+        "text": "Bueno, que un profesor se preocupe por sus alumnos es normal. Es trabajo, trabajo."
+    },
+    "hidden_homeroom_d2_11": {
+        "name": "Profesor",
+        "text": "...No debería hacer esto. Si le doy trato especial al nuevo, los demás hablarán."
+    },
+    "hidden_homeroom_d2_12": {
+        "name": "Yo",
+        "text": "*Salgo de la sala de profesores — no puedo dejar de pensar en esos papeles del cajón.*"
     }
 }

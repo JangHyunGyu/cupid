@@ -190,6 +190,211 @@ Object.assign(SCENARIO[1], {
     "after_end": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
+        "next": "after_hidden_homeroom_1"
+    },
+
+    // =========================================================================
+    // HIDDEN ROUTE — 담임선생님 방과후 상담
+    // =========================================================================
+    "after_hidden_homeroom_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after_hidden_homeroom_2"
+    },
+    "after_hidden_homeroom_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_hidden_homeroom_3"
+    },
+    "after_hidden_homeroom_3": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_hidden_homeroom_4"
+    },
+    "after_hidden_homeroom_4": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_hidden_homeroom_choice"
+    },
+    "after_hidden_homeroom_choice": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "choices": [
+            {
+                "next": "after_homeroom_ok",
+                "stats": { "Teacher": { "affinity": 0 } }
+            },
+            {
+                "next": "after_homeroom_honest_1",
+                "stats": { "Teacher": { "affinity": 5 } }
+            }
+        ]
+    },
+    "after_homeroom_ok": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_homeroom_ok_2"
+    },
+    "after_homeroom_ok_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after_hidden_nurse_intro"
+    },
+    "after_homeroom_honest_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_homeroom_honest_2"
+    },
+    "after_homeroom_honest_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after_homeroom_honest_3"
+    },
+    "after_homeroom_honest_3": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_homeroom_honest_4"
+    },
+    "after_homeroom_honest_4": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after_homeroom_honest_5"
+    },
+    "after_homeroom_honest_5": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_homeroom_honest_6"
+    },
+    "after_homeroom_honest_6": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_homeroom_honest_7"
+    },
+    "after_homeroom_honest_7": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_homeroom_honest_8"
+    },
+    "after_homeroom_honest_8": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after_homeroom_honest_9"
+    },
+    "after_homeroom_honest_9": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_homeroom_honest_10"
+    },
+    "after_homeroom_honest_10": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "setFlag": "homeroom_day1",
+        "next": "after_homeroom_freetalk"
+    },
+    "after_homeroom_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_hidden_nurse_intro"
+    },
+
+    // =========================================================================
+    // HIDDEN ROUTE — 보건선생님 첫 만남
+    // =========================================================================
+    "after_hidden_nurse_intro": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after_hidden_nurse_intro_2"
+    },
+    "after_hidden_nurse_intro_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after_hidden_nurse_choice"
+    },
+    "after_hidden_nurse_choice": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "choices": [
+            {
+                "next": "after_nurse_enter_1",
+                "stats": { "Nurse": { "affinity": 5 } }
+            },
+            {
+                "next": "after_nurse_skip",
+                "stats": { "Nurse": { "affinity": 0 } }
+            }
+        ]
+    },
+    "after_nurse_skip": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "night_start"
+    },
+    "after_nurse_enter_1": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "next": "after_nurse_enter_2"
+    },
+    "after_nurse_enter_2": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after_nurse_enter_3"
+    },
+    "after_nurse_enter_3": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "next": "after_nurse_enter_4"
+    },
+    "after_nurse_enter_4": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after_nurse_enter_5"
+    },
+    "after_nurse_enter_5": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "next": "after_nurse_enter_6"
+    },
+    "after_nurse_enter_6": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after_nurse_enter_7"
+    },
+    "after_nurse_enter_7": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after_nurse_enter_8"
+    },
+    "after_nurse_enter_8": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after_nurse_enter_9"
+    },
+    "after_nurse_enter_9": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "next": "after_nurse_enter_10"
+    },
+    "after_nurse_enter_10": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after_nurse_enter_11"
+    },
+    "after_nurse_enter_11": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after_nurse_enter_12"
+    },
+    "after_nurse_enter_12": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "setFlag": "nurse_day1",
+        "next": "after_nurse_freetalk"
+    },
+    "after_nurse_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "night_start"
     }
 });

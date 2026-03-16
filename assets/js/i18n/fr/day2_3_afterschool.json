@@ -237,5 +237,47 @@
         "text": "*En train de manger du tteokbokki avec Dain et de discuter.*",
         "context": "Jour 2 après les cours, venus manger du tteokbokki après un pari au gym.",
         "personality": "Dain est une athlète énergique et compétitive."
+    },
+    "hidden_nurse_d2_1": {
+        "name": "Moi",
+        "text": "*Je me suis écorche le coude en sport. Rien de grave, mais ça saigne un peu.*"
+    },
+    "hidden_nurse_d2_2": {
+        "name": "Infirmière",
+        "text": "Oh, le nouveau d'hier. Déjà de retour ? Tu veux devenir un habitué ?"
+    },
+    "hidden_nurse_d2_3": {
+        "name": "Moi",
+        "text": "Je me suis écorche le coude."
+    },
+    "hidden_nurse_d2_4": {
+        "name": "Infirmière",
+        "text": "Bouge pas~..."
+    },
+    "hidden_nurse_d2_5": {
+        "name": "Infirmière",
+        "text": "Là... comme ça... voilà. C'est une question de soin. Un pansement mal posé, ça tient pas."
+    },
+    "hidden_nurse_d2_6": {
+        "name": "Moi",
+        "text": "*En vérifiant le pansement — son ordinateur est ouvert sur le bureau. Ce n'est pas un dossier médical — on dirait un journal intime.*"
+    },
+    "hidden_nurse_d2_7": {
+        "name": "Infirmière",
+        "text": "T'as rien vu, hein ? Secret~ Les profs aussi ont des secrets."
+    },
+    "hidden_nurse_d2_8": {
+        "name": "Infirmière",
+        "text": "C'est bon, retourne en cours. — La prochaine fois, viens sans blessure."
+    },
+    "hidden_nurse_d2_9": {
+        "name": "Infirmière",
+        "text": "Tu peux venir même sans raison. — Enfin, pas pendant les cours~! Après les cours !"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "name": "Infirmière",
+        "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
+        "context": "Jour 2. Coude écorché en sport.",
+        "personality": "L'infirmière est joueuse mais méticuleuse. Prend son temps pour les pansements."
     }
 }

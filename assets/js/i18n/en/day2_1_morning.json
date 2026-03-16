@@ -182,5 +182,53 @@
     "morning2_end": {
         "name": "Me",
         "text": "*Someone who never once approached anyone first in a whole year — came to me first? What does that mean?*"
+    },
+    "hidden_homeroom_d2_1": {
+        "name": "Homeroom Teacher",
+        "text": "Oh, {name}. Come to the faculty office for a sec."
+    },
+    "hidden_homeroom_d2_2": {
+        "name": "Me",
+        "text": "*He says it's administrative. This guy always wraps his interest in official business.*"
+    },
+    "hidden_homeroom_d2_3": {
+        "name": "Homeroom Teacher",
+        "text": "Looked at your old transcript. Your Korean grades were solid. You like reading?"
+    },
+    "hidden_homeroom_d2_4": {
+        "name": "Me",
+        "text": "I like reading. — Writing, not so much."
+    },
+    "hidden_homeroom_d2_5": {
+        "name": "Homeroom Teacher",
+        "text": "...Right. Just asking."
+    },
+    "hidden_homeroom_d2_6": {
+        "name": "Me",
+        "text": "*The drawer. Did he just glance at it? — Through the crack I can see a stack of papers. Looks like manuscript pages.*"
+    },
+    "hidden_homeroom_d2_7": {
+        "name": "Homeroom Teacher",
+        "text": "How's the adjustment? Better than yesterday?"
+    },
+    "hidden_homeroom_d2_8": {
+        "name": "Homeroom Teacher",
+        "text": "Dain's loud, right? — She's always like that. Not a bad kid though. More the type you worry about."
+    },
+    "hidden_homeroom_d2_9": {
+        "name": "Me",
+        "text": "Thanks, sir."
+    },
+    "hidden_homeroom_d2_10": {
+        "name": "Homeroom Teacher",
+        "text": "Well, teachers worrying about students is just part of the job. Strictly professional."
+    },
+    "hidden_homeroom_d2_11": {
+        "name": "Homeroom Teacher",
+        "text": "...I really shouldn't be doing this. Giving the transfer student special treatment — the others would talk."
+    },
+    "hidden_homeroom_d2_12": {
+        "name": "Me",
+        "text": "*Leaving the faculty office — I can't stop thinking about those papers in the drawer.*"
     }
 }

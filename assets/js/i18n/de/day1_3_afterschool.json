@@ -110,5 +110,157 @@
     "after_end": {
         "name": "Ich",
         "text": "*Sie geht mit einem Lächeln vorbei.*"
+    },
+    "after_hidden_homeroom_1": {
+        "name": "Ich",
+        "text": "*Ich will gerade nach Hause gehen, als — eine Stimme von hinten.*"
+    },
+    "after_hidden_homeroom_2": {
+        "name": "Klassenlehrer",
+        "text": "{name}. Warte kurz."
+    },
+    "after_hidden_homeroom_3": {
+        "name": "Ich",
+        "text": "*Der Klassenlehrer. Seine Krawatte sitzt noch schiefer als vorhin. Sieht aus, als hätte der Tag ihn geschafft.*"
+    },
+    "after_hidden_homeroom_4": {
+        "name": "Klassenlehrer",
+        "text": "Du hast nichts angestellt. — Du bist der Neue, deshalb frage ich. Wie läuft's?"
+    },
+    "after_hidden_homeroom_choice": {
+        "name": "Ich",
+        "text": "*Klingt nach Routine, aber seine Augen schauen aufmerksam.*",
+        "choices": [
+            "Ganz gut. Nette Schule.",
+            "Ehrlich gesagt, ziemlich überwältigend."
+        ]
+    },
+    "after_homeroom_ok": {
+        "name": "Klassenlehrer",
+        "text": "Gut zu hören. — Wenn was ist, komm ins Lehrerzimmer. Dafür bin ich da."
+    },
+    "after_homeroom_ok_2": {
+        "name": "Ich",
+        "text": "*Dachte, er wäre der distanzierte Typ, aber er kümmert sich tatsächlich. — Oder es ist einfach sein Job.*"
+    },
+    "after_homeroom_honest_1": {
+        "name": "Klassenlehrer",
+        "text": "Sich überfordert zu fühlen ist normal. Es wäre seltsam, wenn du am ersten Tag in einer neuen Schule tiefenentspannt wärst."
+    },
+    "after_homeroom_honest_2": {
+        "name": "Ich",
+        "text": "Haben Sie auch mal die Schule gewechselt?"
+    },
+    "after_homeroom_honest_3": {
+        "name": "Klassenlehrer",
+        "text": "...So ähnlich. Ich wurde schon mal von heute auf morgen woanders hingeworfen."
+    },
+    "after_homeroom_honest_4": {
+        "name": "Ich",
+        "text": "Ein Lehrer, der einem Schüler was ausgibt?"
+    },
+    "after_homeroom_honest_5": {
+        "name": "Klassenlehrer",
+        "text": "Pädagogisches Interesse. — Ich sollte das eigentlich nicht tun, aber naja."
+    },
+    "after_homeroom_honest_6": {
+        "name": "Klassenlehrer",
+        "text": "Wenn's hart wird, komm ins Lehrerzimmer. Ich kann dir einen Kaffee — ach, du bist Schüler. Saft, dann."
+    },
+    "after_homeroom_honest_7": {
+        "name": "Klassenlehrer",
+        "text": "Ach, {name}."
+    },
+    "after_homeroom_honest_8": {
+        "name": "Ich",
+        "text": "Ja?"
+    },
+    "after_homeroom_honest_9": {
+        "name": "Klassenlehrer",
+        "text": "Schöner Name. — Den merke ich mir."
+    },
+    "after_homeroom_honest_10": {
+        "name": "Ich",
+        "text": "*Er verschwindet am Ende des Flurs. Seine Krawatte schwingt. — \"Ich sollte das eigentlich nicht tun\" scheint sein Lieblingssatz zu sein.*"
+    },
+    "after_homeroom_freetalk": {
+        "name": "Klassenlehrer",
+        "text": "*Im Gespräch mit dem Klassenlehrer auf dem Flur.*",
+        "context": "Tag 1 nach der Schule. Der Klassenlehrer hat den neuen Schüler angehalten, um nach ihm zu sehen.",
+        "personality": "Der Klassenlehrer versteckt Wärme hinter trockenem Humor. Anfang dreißig. Sein Spruch: \"Ich sollte das eigentlich nicht tun.\" Ehemaliger angehender Romanautor."
+    },
+    "after_hidden_nurse_intro": {
+        "name": "Ich",
+        "text": "*Im Flur wird mir kurz schwindelig. Wohl die Anspannung vom ersten Tag.*"
+    },
+    "after_hidden_nurse_intro_2": {
+        "name": "Ich",
+        "text": "*An der Wand ein Schild: \"Krankenzimmer\". — Soll ich reingehen?*"
+    },
+    "after_hidden_nurse_choice": {
+        "name": "Ich",
+        "text": "*Seit heute Morgen habe ich ohne Pause Leute getroffen.*",
+        "choices": [
+            "Ins Krankenzimmer gehen",
+            "Einfach nach Hause gehen"
+        ]
+    },
+    "after_nurse_skip": {
+        "name": "Ich",
+        "text": "*Ich gehe einfach nach Hause. Wird schon nichts sein.*"
+    },
+    "after_nurse_enter_1": {
+        "name": "Ich",
+        "text": "*Ich öffne die Tür zum Krankenzimmer. Ein leichter Desinfektionsgeruch. Weiße Vorhänge, ein weißes Bett, ein kleiner Schreibtisch.*"
+    },
+    "after_nurse_enter_2": {
+        "name": "Schulkrankenschwester",
+        "text": "Oh, ein Patient."
+    },
+    "after_nurse_enter_3": {
+        "name": "Ich",
+        "text": "Mir ist ein bisschen schwindelig."
+    },
+    "after_nurse_enter_4": {
+        "name": "Schulkrankenschwester",
+        "text": "Du bist der Neue, oder? Am ersten Tag schon im Krankenzimmer. Musst gestresst sein~"
+    },
+    "after_nurse_enter_5": {
+        "name": "Ich",
+        "text": "*Die Krankenschwester kommt näher. Ihre Hand legt sich auf meine Stirn.*"
+    },
+    "after_nurse_enter_6": {
+        "name": "Schulkrankenschwester",
+        "text": "Kein Fieber~... Vielleicht ein bisschen niedriger Blutdruck."
+    },
+    "after_nurse_enter_7": {
+        "name": "Schulkrankenschwester",
+        "text": "...Nee, ich wollte dich einfach anfassen. — Spaß, Spaß~ Hier, leg dich hin. Nur zehn Minuten."
+    },
+    "after_nurse_enter_8": {
+        "name": "Schulkrankenschwester",
+        "text": "Du musst mich nicht siezen. Hier kannst du dich entspannen. — Denk an mich als Krankenschwester, nicht als Lehrerin."
+    },
+    "after_nurse_enter_9": {
+        "name": "Ich",
+        "text": "*Ich trinke Wasser und schaue mich um. Ein kleiner Blumentopf in der Ecke.*"
+    },
+    "after_nurse_enter_10": {
+        "name": "Schulkrankenschwester",
+        "text": "Rosmarin. — Den züchte ich seit meiner Zeit im Krankenhaus. Alte Geschichte~ Ich mag es hier. Alle kommen nur mit kleinen Kratzern."
+    },
+    "after_nurse_enter_11": {
+        "name": "Schulkrankenschwester",
+        "text": "Komm jederzeit vorbei~ Die Tür ist immer offen. Aber komm nicht zu oft. Sonst mache ich mir Sorgen."
+    },
+    "after_nurse_enter_12": {
+        "name": "Schulkrankenschwester",
+        "text": "{name}... Schöner Name. Den merke ich mir."
+    },
+    "after_nurse_freetalk": {
+        "name": "Schulkrankenschwester",
+        "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
+        "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er besuchte das Krankenzimmer.",
+        "personality": "Die Schulkrankenschwester ist verspielt und charmant, versteckt aber echte Gefühle hinter Witzen. Ehemalige Krankenhausschwester mit Burnout-Erfahrung."
     }
 }

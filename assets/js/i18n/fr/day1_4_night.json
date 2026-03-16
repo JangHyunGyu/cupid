@@ -148,5 +148,25 @@
         "text": "*Un court message de Yuna est arrivé.*",
         "context": "Première nuit, discussion avec Yuna par messagerie.",
         "personality": "Yuna est une fille littéraire. Ses messages sont courts et cryptiques."
+    },
+    "night_hidden_check": {
+        "name": "Moi",
+        "text": "*Entre les notifications — j'en remarque d'autres.*"
+    },
+    "night_hidden_homeroom_1": {
+        "name": "Moi",
+        "text": "*Il y a un message du prof principal sur l'appli de l'école. 'Classe 1-2 : Apportez vos affaires de maths pour la 1re heure demain. — Et {name}, si tu t'adaptes bien, c'est l'essentiel.'*"
+    },
+    "night_hidden_homeroom_2": {
+        "name": "Moi",
+        "text": "*Un message personnel dans une annonce de classe ? — Ce type ne fait pas la différence entre pro et perso, ou il le fait exprès ?*"
+    },
+    "night_hidden_nurse_1": {
+        "name": "Moi",
+        "text": "*Une alerte sur l'appli santé de l'école. 'Dossier infirmerie : {name} — Vertiges (légers). Note : Reviens si les symptômes persistent. Bois beaucoup d'eau. — le ♥ est un intérêt purement médical ^^'*"
+    },
+    "night_hidden_nurse_2": {
+        "name": "Moi",
+        "text": "*Une infirmière qui met des cœurs dans les dossiers médicaux. C'est la première fois que je vois des émojis dans un dossier de santé.*"
     }
 }

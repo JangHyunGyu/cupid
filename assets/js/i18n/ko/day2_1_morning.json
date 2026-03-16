@@ -182,5 +182,53 @@
     "morning2_end": {
         "name": "{name}",
         "text": "*1년 동안 한 번도 먼저 다가간 적 없는 사람이 — 나한테는 먼저 왔다? 그건 무슨 의미지.*"
+    },
+    "hidden_homeroom_d2_1": {
+        "name": "담임선생님",
+        "text": "아, {name}. 잠깐 교무실로."
+    },
+    "hidden_homeroom_d2_2": {
+        "name": "{name}",
+        "text": "*행정적인 거라고 한다. 이 사람은 자기 관심을 항상 업무로 포장한다.*"
+    },
+    "hidden_homeroom_d2_3": {
+        "name": "담임선생님",
+        "text": "전 학교 성적표 봤는데, 국어가 좋았네. 읽는 거 좋아해?"
+    },
+    "hidden_homeroom_d2_4": {
+        "name": "{name}",
+        "text": "읽는 건 좋아해요. — 쓰는 건 잘 모르겠어요."
+    },
+    "hidden_homeroom_d2_5": {
+        "name": "담임선생님",
+        "text": "...그래. 뭐, 그냥 물어본 거야."
+    },
+    "hidden_homeroom_d2_6": {
+        "name": "{name}",
+        "text": "*서랍. 방금 뭔가 의식하지 않았나? — 살짝 열린 서랍 사이로 종이뭉치가 보인다. 원고지 같은 것.*"
+    },
+    "hidden_homeroom_d2_7": {
+        "name": "담임선생님",
+        "text": "적응은 어때? 어제보다 나아?"
+    },
+    "hidden_homeroom_d2_8": {
+        "name": "담임선생님",
+        "text": "다인이가 시끄럽지? — 원래 저래. 근데 나쁜 애는 아니야. 걱정이 되는 쪽이지."
+    },
+    "hidden_homeroom_d2_9": {
+        "name": "{name}",
+        "text": "감사합니다, 선생님."
+    },
+    "hidden_homeroom_d2_10": {
+        "name": "담임선생님",
+        "text": "뭐, 선생님이 학생 걱정하는 건 당연한 거니까. 업무야, 업무."
+    },
+    "hidden_homeroom_d2_11": {
+        "name": "담임선생님",
+        "text": "...선생님이 이러면 안 되는데. 전학생이라고 특별 대우 하면 다른 애들이 뭐라 하지."
+    },
+    "hidden_homeroom_d2_12": {
+        "name": "{name}",
+        "text": "*교무실을 나서는데 — 서랍에서 봤던 종이뭉치가 자꾸 신경 쓰인다.*"
     }
 }

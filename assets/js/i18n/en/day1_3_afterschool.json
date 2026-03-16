@@ -110,5 +110,157 @@
     "after_end": {
         "name": "Me",
         "text": "*She leaves with a smile.*"
+    },
+    "after_hidden_homeroom_1": {
+        "name": "Me",
+        "text": "*I'm about to head home when — a voice from behind.*"
+    },
+    "after_hidden_homeroom_2": {
+        "name": "Homeroom Teacher",
+        "text": "{name}. Hang on a sec."
+    },
+    "after_hidden_homeroom_3": {
+        "name": "Me",
+        "text": "*It's the homeroom teacher. His tie is even more crooked than before. Looks like the day took a toll on him.*"
+    },
+    "after_hidden_homeroom_4": {
+        "name": "Homeroom Teacher",
+        "text": "You're not in trouble. — You're the transfer student, so. How are you settling in?"
+    },
+    "after_hidden_homeroom_choice": {
+        "name": "Me",
+        "text": "*Sounds like a routine check-in, but his eyes are genuinely watching me.*",
+        "choices": [
+            "I'm fine. It's a nice school, actually.",
+            "Honestly? It's been a lot."
+        ]
+    },
+    "after_homeroom_ok": {
+        "name": "Homeroom Teacher",
+        "text": "Good to hear. — If anything comes up, stop by the faculty office. That's what I'm here for."
+    },
+    "after_homeroom_ok_2": {
+        "name": "Me",
+        "text": "*Thought he was the distant type, but he actually looks out for people. — Or maybe it's just part of the job.*"
+    },
+    "after_homeroom_honest_1": {
+        "name": "Homeroom Teacher",
+        "text": "Feeling overwhelmed is normal. It'd be weirder if you were chill on your first day at a new school."
+    },
+    "after_homeroom_honest_2": {
+        "name": "Me",
+        "text": "Have you ever transferred schools, sir?"
+    },
+    "after_homeroom_honest_3": {
+        "name": "Homeroom Teacher",
+        "text": "...Something like that. I've been thrown into a new place out of nowhere before."
+    },
+    "after_homeroom_honest_4": {
+        "name": "Me",
+        "text": "A teacher buying a student drinks?"
+    },
+    "after_homeroom_honest_5": {
+        "name": "Homeroom Teacher",
+        "text": "Professional concern. — I really shouldn't be doing this, but hey."
+    },
+    "after_homeroom_honest_6": {
+        "name": "Homeroom Teacher",
+        "text": "If it gets too rough, come to the faculty office. I can get you a coffee — wait, you're a student. Juice, then."
+    },
+    "after_homeroom_honest_7": {
+        "name": "Homeroom Teacher",
+        "text": "Oh, {name}."
+    },
+    "after_homeroom_honest_8": {
+        "name": "Me",
+        "text": "Yeah?"
+    },
+    "after_homeroom_honest_9": {
+        "name": "Homeroom Teacher",
+        "text": "Nice name. — I'll remember it."
+    },
+    "after_homeroom_honest_10": {
+        "name": "Me",
+        "text": "*He disappears down the hallway. His tie sways. — \"I really shouldn't be doing this\" seems to be his catchphrase.*"
+    },
+    "after_homeroom_freetalk": {
+        "name": "Homeroom Teacher",
+        "text": "*Chatting with the homeroom teacher in the hallway.*",
+        "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check on them. The student was honest about feeling overwhelmed.",
+        "personality": "The homeroom teacher hides warmth behind dry humor. Early 30s, deadpan delivery. His catchphrase is \"I really shouldn't be doing this.\" Former aspiring novelist."
+    },
+    "after_hidden_nurse_intro": {
+        "name": "Me",
+        "text": "*Walking down the hallway when — my head gets a little dizzy. First-day nerves, probably.*"
+    },
+    "after_hidden_nurse_intro_2": {
+        "name": "Me",
+        "text": "*There's a sign for the nurse's office on the wall. — Should I go in?*"
+    },
+    "after_hidden_nurse_choice": {
+        "name": "Me",
+        "text": "*I've been meeting people nonstop since this morning.*",
+        "choices": [
+            "Go to the nurse's office",
+            "Just go home"
+        ]
+    },
+    "after_nurse_skip": {
+        "name": "Me",
+        "text": "*I decide to just head home. It's probably nothing.*"
+    },
+    "after_nurse_enter_1": {
+        "name": "Me",
+        "text": "*I open the nurse's office door. A faint smell of antiseptic. White curtains, a white bed, a small desk.*"
+    },
+    "after_nurse_enter_2": {
+        "name": "School Nurse",
+        "text": "Oh my, a patient."
+    },
+    "after_nurse_enter_3": {
+        "name": "Me",
+        "text": "I'm feeling a bit dizzy."
+    },
+    "after_nurse_enter_4": {
+        "name": "School Nurse",
+        "text": "You're the transfer student, right? Already in the nurse's office on day one. Must be stressed~"
+    },
+    "after_nurse_enter_5": {
+        "name": "Me",
+        "text": "*The nurse walks over. Her hand lands on my forehead.*"
+    },
+    "after_nurse_enter_6": {
+        "name": "School Nurse",
+        "text": "No fever~... Might be low blood pressure though."
+    },
+    "after_nurse_enter_7": {
+        "name": "School Nurse",
+        "text": "...Nah, I just wanted to touch you. — Kidding, kidding~ Here, lie down. Just ten minutes."
+    },
+    "after_nurse_enter_8": {
+        "name": "School Nurse",
+        "text": "Drop the formalities. Keep it casual in here. — Think of me as a nurse, not a teacher."
+    },
+    "after_nurse_enter_9": {
+        "name": "Me",
+        "text": "*I sip some water and look around. A small potted plant in the corner.*"
+    },
+    "after_nurse_enter_10": {
+        "name": "School Nurse",
+        "text": "Rosemary. — Been growing it since my hospital days. Ancient history~ I like it here. Everyone only comes in with minor scrapes."
+    },
+    "after_nurse_enter_11": {
+        "name": "School Nurse",
+        "text": "Come by anytime~ The door's always open. But don't come too often. You'll make me worry."
+    },
+    "after_nurse_enter_12": {
+        "name": "School Nurse",
+        "text": "{name}... Nice name. I'll remember it."
+    },
+    "after_nurse_freetalk": {
+        "name": "School Nurse",
+        "text": "*Chatting with the school nurse in the nurse's office.*",
+        "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse was playful but attentive.",
+        "personality": "The school nurse is playful and flirtatious but hides genuine feelings behind jokes. Former hospital nurse who burned out. \"Because I'm a teacher\" is her shield — there's always a hidden emotion behind it."
     }
 }

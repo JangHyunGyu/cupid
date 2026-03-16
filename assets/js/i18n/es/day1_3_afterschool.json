@@ -110,5 +110,157 @@
     "after_end": {
         "name": "Yo",
         "text": "*Se va con una sonrisa.*"
+    },
+    "after_hidden_homeroom_1": {
+        "name": "Yo",
+        "text": "*Estoy por irme a casa cuando — una voz detrás de mí.*"
+    },
+    "after_hidden_homeroom_2": {
+        "name": "Profesor",
+        "text": "{name}. Espera un momento."
+    },
+    "after_hidden_homeroom_3": {
+        "name": "Yo",
+        "text": "*Es el profesor. Su corbata está más torcida que antes. Parece que el día le pasó factura.*"
+    },
+    "after_hidden_homeroom_4": {
+        "name": "Profesor",
+        "text": "No estás en problemas. — Como eres nuevo, quiero saber. ¿Cómo te estás adaptando?"
+    },
+    "after_hidden_homeroom_choice": {
+        "name": "Yo",
+        "text": "*Parece una pregunta de rutina, pero sus ojos me observan con genuina atención.*",
+        "choices": [
+            "Estoy bien. Es una buena escuela.",
+            "Sinceramente, ha sido un día intenso."
+        ]
+    },
+    "after_homeroom_ok": {
+        "name": "Profesor",
+        "text": "Me alegro. — Si necesitas algo, pasa por la sala de profesores. Para eso estoy."
+    },
+    "after_homeroom_ok_2": {
+        "name": "Yo",
+        "text": "*Pensé que era del tipo distante, pero resulta que se preocupa. — O quizás solo es parte del trabajo.*"
+    },
+    "after_homeroom_honest_1": {
+        "name": "Profesor",
+        "text": "Sentirse abrumado es normal. Sería raro que estuvieras tranquilo en tu primer día en una escuela nueva."
+    },
+    "after_homeroom_honest_2": {
+        "name": "Yo",
+        "text": "¿Usted también se ha cambiado de escuela alguna vez, profe?"
+    },
+    "after_homeroom_honest_3": {
+        "name": "Profesor",
+        "text": "...Algo parecido. Me han lanzado a un lugar nuevo de la nada."
+    },
+    "after_homeroom_honest_4": {
+        "name": "Yo",
+        "text": "¿Un profesor invitándole algo a un estudiante?"
+    },
+    "after_homeroom_honest_5": {
+        "name": "Profesor",
+        "text": "Interés profesional. — No debería hacer esto, pero bueno."
+    },
+    "after_homeroom_honest_6": {
+        "name": "Profesor",
+        "text": "Si se pone difícil, ven a la sala de profesores. Te puedo ofrecer un café — ah, eres estudiante. Un jugo, entonces."
+    },
+    "after_homeroom_honest_7": {
+        "name": "Profesor",
+        "text": "Ah, {name}."
+    },
+    "after_homeroom_honest_8": {
+        "name": "Yo",
+        "text": "¿Sí?"
+    },
+    "after_homeroom_honest_9": {
+        "name": "Profesor",
+        "text": "Buen nombre. — Lo recordaré."
+    },
+    "after_homeroom_honest_10": {
+        "name": "Yo",
+        "text": "*Desaparece por el pasillo. Su corbata se balancea. — \"No debería hacer esto\" parece ser su frase favorita.*"
+    },
+    "after_homeroom_freetalk": {
+        "name": "Profesor",
+        "text": "*Conversando con el profesor en el pasillo.*",
+        "context": "Día 1 después de clases. El profesor detuvo al estudiante nuevo para ver cómo se adaptaba.",
+        "personality": "El profesor esconde calidez detrás de humor seco. Treinta y pocos. Su frase es \"No debería hacer esto\". Fue aspirante a novelista."
+    },
+    "after_hidden_nurse_intro": {
+        "name": "Yo",
+        "text": "*Caminando por el pasillo cuando — me mareo un poco. Serán los nervios del primer día.*"
+    },
+    "after_hidden_nurse_intro_2": {
+        "name": "Yo",
+        "text": "*Veo un letrero de \"Enfermería\" en la pared. — ¿Entro o no?*"
+    },
+    "after_hidden_nurse_choice": {
+        "name": "Yo",
+        "text": "*Llevo desde la mañana sin parar de conocer gente.*",
+        "choices": [
+            "Entrar a la enfermería",
+            "Ir directamente a casa"
+        ]
+    },
+    "after_nurse_skip": {
+        "name": "Yo",
+        "text": "*Mejor me voy a casa. No será nada.*"
+    },
+    "after_nurse_enter_1": {
+        "name": "Yo",
+        "text": "*Abro la puerta de la enfermería. Un suave olor a desinfectante. Cortinas blancas, una cama, un pequeño escritorio.*"
+    },
+    "after_nurse_enter_2": {
+        "name": "Enfermera",
+        "text": "Oh, un paciente."
+    },
+    "after_nurse_enter_3": {
+        "name": "Yo",
+        "text": "Estoy un poco mareado."
+    },
+    "after_nurse_enter_4": {
+        "name": "Enfermera",
+        "text": "¿Eres el nuevo, verdad? Ya en la enfermería el primer día. Debes estar estresado~"
+    },
+    "after_nurse_enter_5": {
+        "name": "Yo",
+        "text": "*La enfermera se acerca. Su mano toca mi frente.*"
+    },
+    "after_nurse_enter_6": {
+        "name": "Enfermera",
+        "text": "No tienes fiebre~... Puede que tengas la presión baja."
+    },
+    "after_nurse_enter_7": {
+        "name": "Enfermera",
+        "text": "...No, solo quería tocarte. — Es broma, es broma~ Ven, acuéstate. Solo diez minutos."
+    },
+    "after_nurse_enter_8": {
+        "name": "Enfermera",
+        "text": "No hace falta que me hables de usted. Aquí relájate. — Piénsalo como si fuera una enfermera, no una profesora."
+    },
+    "after_nurse_enter_9": {
+        "name": "Yo",
+        "text": "*Bebo agua y miro alrededor. Una pequeña maceta en la esquina.*"
+    },
+    "after_nurse_enter_10": {
+        "name": "Enfermera",
+        "text": "Romero. — Lo tengo desde que trabajaba en el hospital. Historia antigua~ Me gusta este lugar. Aquí solo vienen con rasguños."
+    },
+    "after_nurse_enter_11": {
+        "name": "Enfermera",
+        "text": "Vuelve cuando quieras~ La puerta siempre está abierta. Pero no vengas tanto. Me preocuparé."
+    },
+    "after_nurse_enter_12": {
+        "name": "Enfermera",
+        "text": "{name}... Buen nombre. Lo recordaré."
+    },
+    "after_nurse_freetalk": {
+        "name": "Enfermera",
+        "text": "*Conversando con la enfermera en la enfermería.*",
+        "context": "Día 1 después de clases. El estudiante nuevo se mareó y visitó la enfermería.",
+        "personality": "La enfermera es juguetona y coqueta pero esconde sentimientos reales detrás de bromas. Ex enfermera de hospital que sufrió burnout."
     }
 }

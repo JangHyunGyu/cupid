@@ -141,5 +141,29 @@
         "text": "*Späte Nachrichten mit Yuna austauschen.*",
         "context": "Nacht 2, Chat mit Yuna.",
         "personality": "Yuna senkt nachts ihre Mauern. Längere Nachrichten bedeuten, dass sie sich öffnet."
+    },
+    "night2_hidden_check": {
+        "name": "Ich",
+        "text": "*Zwischen den Chat-Benachrichtigungen — fallen mir weitere Meldungen auf.*"
+    },
+    "night2_hidden_homeroom_1": {
+        "name": "Ich",
+        "text": "*Eine private Nachricht vom Klassenlehrer. '{name}, danke, dass du heute im Büro warst. Der Papierkram ist erledigt, ich muss dich nicht mehr rufen. ...Aber wenn die Eingewöhnung schwer fällt, komm jederzeit.'*"
+    },
+    "night2_hidden_homeroom_2": {
+        "name": "Ich",
+        "text": "*Drei Zeilen. Dank, Distanz, dann wieder Annäherung. — Er spielt Tauziehen mit sich selbst.*"
+    },
+    "night2_hidden_homeroom_3": {
+        "name": "Ich",
+        "text": "*'Muss dich nicht mehr rufen' und 'komm jederzeit' in derselben Nachricht. Widersprüchlich — aber das ist so typisch für ihn.*"
+    },
+    "night2_hidden_nurse_1": {
+        "name": "Ich",
+        "text": "*Benachrichtigung der Gesundheits-App. 'Krankenakte: {name} — Schürfwunde am Ellbogen (leicht). Notiz: Pflaster wechsle ich morgen früh. Pflasterwechsel ist eine medizinische Maßnahme, also kein Widerspruchsrecht ^^'*"
+    },
+    "night2_hidden_nurse_2": {
+        "name": "Ich",
+        "text": "*Kein Widerspruchsrecht. — Medizinische Anordnung oder persönliches Interesse? Das Emoji verwischt die Grenze.*"
     }
 }

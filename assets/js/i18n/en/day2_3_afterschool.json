@@ -237,5 +237,47 @@
         "text": "*Eating tteokbokki with Dain and chatting.*",
         "context": "Day 2 afterschool, came to tteokbokki shop after a volleyball bet at the gym. Getting closer.",
         "personality": "Dain is an energetic athlete. Competitive and straightforward, but exclamation marks disappear when she's being genuine."
+    },
+    "hidden_nurse_d2_1": {
+        "name": "Me",
+        "text": "*Scraped my elbow during PE. Nothing major, but it's bleeding a little.*"
+    },
+    "hidden_nurse_d2_2": {
+        "name": "School Nurse",
+        "text": "Oh my, yesterday's transfer student. Back already? Trying to become a regular?"
+    },
+    "hidden_nurse_d2_3": {
+        "name": "Me",
+        "text": "I scraped my elbow."
+    },
+    "hidden_nurse_d2_4": {
+        "name": "School Nurse",
+        "text": "Hold still~..."
+    },
+    "hidden_nurse_d2_5": {
+        "name": "School Nurse",
+        "text": "Here... like this... there, done. It's all about care. Slap it on carelessly and it'll peel off."
+    },
+    "hidden_nurse_d2_6": {
+        "name": "Me",
+        "text": "*Checking the bandage when — her laptop is open on the desk. That's not a medical record — looks more like a personal diary.*"
+    },
+    "hidden_nurse_d2_7": {
+        "name": "School Nurse",
+        "text": "You didn't see that, right? Secret~ Even teachers have secrets."
+    },
+    "hidden_nurse_d2_8": {
+        "name": "School Nurse",
+        "text": "All done, get back to class. — Next time, come without an injury."
+    },
+    "hidden_nurse_d2_9": {
+        "name": "School Nurse",
+        "text": "You can come even without a reason. — Well, not during class~! After school!"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "name": "School Nurse",
+        "text": "*Chatting with the school nurse in the nurse's office.*",
+        "context": "Day 2. Scraped elbow during PE, came to the nurse's office. The nurse carefully applied a bandage.",
+        "personality": "The school nurse is playful but meticulous. Takes a long time applying bandages. Hiding something personal."
     }
 }

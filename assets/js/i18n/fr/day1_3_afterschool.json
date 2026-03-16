@@ -110,5 +110,157 @@
     "after_end": {
         "name": "Moi",
         "text": "*Elle s’éloigne avec un sourire.*"
+    },
+    "after_hidden_homeroom_1": {
+        "name": "Moi",
+        "text": "*Je m'apprête à rentrer quand — une voix derrière moi.*"
+    },
+    "after_hidden_homeroom_2": {
+        "name": "Professeur Principal",
+        "text": "{name}. Reste une seconde."
+    },
+    "after_hidden_homeroom_3": {
+        "name": "Moi",
+        "text": "*C'est le prof principal. Sa cravate est encore plus de travers qu'avant. On dirait qu'il a eu une rude journée.*"
+    },
+    "after_hidden_homeroom_4": {
+        "name": "Professeur Principal",
+        "text": "T'as rien fait de mal. — Comme t'es nouveau, je voulais savoir. Tu t'adaptes ?"
+    },
+    "after_hidden_homeroom_choice": {
+        "name": "Moi",
+        "text": "*Ça ressemble à une question de routine, mais ses yeux m'observent vraiment.*",
+        "choices": [
+            "Ça va. C'est une bonne école.",
+            "Franchement, c'est un peu intense."
+        ]
+    },
+    "after_homeroom_ok": {
+        "name": "Professeur Principal",
+        "text": "Tant mieux. — Si t'as besoin, passe à la salle des profs. C'est mon boulot."
+    },
+    "after_homeroom_ok_2": {
+        "name": "Moi",
+        "text": "*Je le croyais distant, mais il fait attention en fait. — Ou c'est juste son travail.*"
+    },
+    "after_homeroom_honest_1": {
+        "name": "Professeur Principal",
+        "text": "Se sentir débordé, c'est normal. Ce serait bizarre d'être zen le premier jour dans une nouvelle école."
+    },
+    "after_homeroom_honest_2": {
+        "name": "Moi",
+        "text": "Vous avez déjà changé d'école, monsieur ?"
+    },
+    "after_homeroom_honest_3": {
+        "name": "Professeur Principal",
+        "text": "...Quelque chose comme ça. J'ai été parachuté dans un nouveau lieu du jour au lendemain."
+    },
+    "after_homeroom_honest_4": {
+        "name": "Moi",
+        "text": "Un prof qui offre à boire à un élève ?"
+    },
+    "after_homeroom_honest_5": {
+        "name": "Professeur Principal",
+        "text": "Intérêt pédagogique. — Je devrais pas faire ça, mais bon."
+    },
+    "after_homeroom_honest_6": {
+        "name": "Professeur Principal",
+        "text": "Si ça devient dur, viens à la salle des profs. Je peux t'offrir un café — ah, t'es élève. Un jus, alors."
+    },
+    "after_homeroom_honest_7": {
+        "name": "Professeur Principal",
+        "text": "Ah, {name}."
+    },
+    "after_homeroom_honest_8": {
+        "name": "Moi",
+        "text": "Oui ?"
+    },
+    "after_homeroom_honest_9": {
+        "name": "Professeur Principal",
+        "text": "Joli prénom. — Je m'en souviendrai."
+    },
+    "after_homeroom_honest_10": {
+        "name": "Moi",
+        "text": "*Il disparaît au bout du couloir. Sa cravate se balance. — \"Je devrais pas faire ça\" semble être sa phrase fétiche.*"
+    },
+    "after_homeroom_freetalk": {
+        "name": "Professeur Principal",
+        "text": "*En train de discuter avec le prof principal dans le couloir.*",
+        "context": "Jour 1 après les cours. Le prof principal a arrêté le nouvel élève pour prendre de ses nouvelles.",
+        "personality": "Le prof principal cache sa gentillesse derrière un humour pince-sans-rire. Début de trentaine. Sa phrase fétiche : \"Je devrais pas faire ça\". Ancien aspirant romancier."
+    },
+    "after_hidden_nurse_intro": {
+        "name": "Moi",
+        "text": "*En marchant dans le couloir — un léger vertige. Le stress du premier jour, sûrement.*"
+    },
+    "after_hidden_nurse_intro_2": {
+        "name": "Moi",
+        "text": "*Un panneau \"Infirmerie\" sur le mur. — J'y vais ou pas ?*"
+    },
+    "after_hidden_nurse_choice": {
+        "name": "Moi",
+        "text": "*Depuis ce matin, j'ai pas arrêté de rencontrer des gens.*",
+        "choices": [
+            "Aller à l'infirmerie",
+            "Rentrer directement"
+        ]
+    },
+    "after_nurse_skip": {
+        "name": "Moi",
+        "text": "*Autant rentrer. C'est sûrement rien.*"
+    },
+    "after_nurse_enter_1": {
+        "name": "Moi",
+        "text": "*J'ouvre la porte de l'infirmerie. Une légère odeur de désinfectant. Des rideaux blancs, un lit, un petit bureau.*"
+    },
+    "after_nurse_enter_2": {
+        "name": "Infirmière",
+        "text": "Oh, un patient."
+    },
+    "after_nurse_enter_3": {
+        "name": "Moi",
+        "text": "J'ai un peu le vertige."
+    },
+    "after_nurse_enter_4": {
+        "name": "Infirmière",
+        "text": "T'es le nouveau, non ? Déjà à l'infirmerie le premier jour. Tu dois être stressé~"
+    },
+    "after_nurse_enter_5": {
+        "name": "Moi",
+        "text": "*L'infirmière s'approche. Sa main se pose sur mon front.*"
+    },
+    "after_nurse_enter_6": {
+        "name": "Infirmière",
+        "text": "Pas de fièvre~... Peut-être une tension un peu basse."
+    },
+    "after_nurse_enter_7": {
+        "name": "Infirmière",
+        "text": "...Non, j'avais juste envie de te toucher. — Je plaisante, je plaisante~ Allez, allonge-toi. Juste dix minutes."
+    },
+    "after_nurse_enter_8": {
+        "name": "Infirmière",
+        "text": "Pas besoin de me vouvoyer. Ici on est tranquille. — Pense à moi comme une infirmière, pas une prof."
+    },
+    "after_nurse_enter_9": {
+        "name": "Moi",
+        "text": "*Je bois de l'eau en regardant autour. Un petit pot de fleurs dans le coin.*"
+    },
+    "after_nurse_enter_10": {
+        "name": "Infirmière",
+        "text": "Du romarin. — Je le cultive depuis mes années à l'hôpital. C'est du passé~ J'aime bien ici. On ne vient qu'avec des petits bobos."
+    },
+    "after_nurse_enter_11": {
+        "name": "Infirmière",
+        "text": "Reviens quand tu veux~ La porte est toujours ouverte. Mais viens pas trop souvent. Tu vas me faire m'inquiéter."
+    },
+    "after_nurse_enter_12": {
+        "name": "Infirmière",
+        "text": "{name}... Joli prénom. Je m'en souviendrai."
+    },
+    "after_nurse_freetalk": {
+        "name": "Infirmière",
+        "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
+        "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et a visité l'infirmerie.",
+        "personality": "L'infirmière est joueuse et charmeuse mais cache ses vrais sentiments derrière l'humour. Ancienne infirmière hospitalière ayant fait un burnout."
     }
 }

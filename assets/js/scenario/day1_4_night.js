@@ -255,6 +255,48 @@ Object.assign(SCENARIO[1], {
         "character": "assets/images/characters/dain_normal.png",
         "next": "night_end_1"
     },
+,
+    // =========================================================================
+    // HIDDEN ROUTE - Night messages
+    // =========================================================================
+    "night_hidden_check": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "branches": [
+            { "condition": "homeroom_day1", "next": "night_hidden_homeroom_1" },
+            { "condition": "nurse_day1", "next": "night_hidden_nurse_1" },
+            { "next": "night_late_transition" }
+        ]
+    },
+    "night_hidden_homeroom_1": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night_hidden_homeroom_2"
+    },
+    "night_hidden_homeroom_2": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "branches": [
+            { "condition": "nurse_day1", "next": "night_hidden_nurse_1" },
+            { "next": "night_late_transition" }
+        ]
+    },
+    "night_hidden_nurse_1": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night_hidden_nurse_2"
+    },
+    "night_hidden_nurse_2": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night_late_transition"
+    }
+,
     "night_yuna_freetalk": {
         "type": "free_talk",
         "background": "assets/images/background/home_room.png",
