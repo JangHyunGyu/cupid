@@ -38,7 +38,7 @@ Object.assign(SCENARIO[1], {
                 "condition": "chose_dain_lunch"
             },
             {
-                "next": "night_late_transition"
+                "next": "night_hidden_check"
             }
         ]
     },
@@ -70,7 +70,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
-        "next": "night_late_transition"
+        "next": "night_hidden_check"
     },
     "night_msg_yuna_1": {
         "background": "assets/images/background/room_my.png",
@@ -88,7 +88,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
-        "next": "night_late_transition"
+        "next": "night_hidden_check"
     },
     "night_msg_dain_1": {
         "background": "assets/images/background/room_my.png",
@@ -112,7 +112,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
-        "next": "night_late_transition"
+        "next": "night_hidden_check"
     },
     "night_late_transition": {
         "background": "assets/images/background/room_my.png",

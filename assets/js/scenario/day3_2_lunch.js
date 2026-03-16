@@ -169,7 +169,15 @@ Object.assign(SCENARIO[3], {
     "lunch3_share_1": {
         "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
-        "next": "lunch3_end"
+        "branches": [
+            {
+                "next": "lunch3_expose_1",
+                "condition": "day3_has_multiple_dates"
+            },
+            {
+                "next": "lunch3_end"
+            }
+        ]
     },
 
     "lunch3_expose_1": {

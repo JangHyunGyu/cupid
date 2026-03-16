@@ -37,7 +37,7 @@ Object.assign(SCENARIO[5], {
     "morning5_dain_2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "morning5_end"
+        "next": "hidden_homeroom_d5_check"
     },
     "hidden_homeroom_d5_check": {
         "background": "assets/images/background/room_school.png",

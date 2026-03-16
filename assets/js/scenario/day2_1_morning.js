@@ -17,7 +17,10 @@ Object.assign(SCENARIO[2], {
     "morning2_start_2": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "next": "morning2_dain_1"
+        "branches": [
+            { "condition": "homeroom_day1", "next": "hidden_homeroom_d2_1" },
+            { "next": "morning2_dain_1" }
+        ]
     },
     "morning2_dain_1": {
         "background": "assets/images/background/room_school.png",
