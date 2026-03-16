@@ -250,7 +250,9 @@ class SceneRenderer {
         }
 
         // 크로스페이드: ::after에 새 배경을 설정하고 페이드인
-        bgLayer.style.setProperty('--bg-next', `url(${bgUrl})`);
+        // CSS 변수는 style.css 기준으로 URL이 해석되므로 절대 URL로 변환
+        const absoluteBgUrl = new URL(bgUrl, document.baseURI).href;
+        bgLayer.style.setProperty('--bg-next', `url(${absoluteBgUrl})`);
         bgLayer.classList.remove('bg-crossfade');
         // ::after에 background-image 설정
         bgLayer.style.cssText = bgLayer.style.cssText; // force reflow
