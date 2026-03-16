@@ -141,6 +141,9 @@ class GameEngine {
             this.stateManager, this.galleryManager, this.uiManager, this.dialogueSystem
         );
 
+        /** 씬 렌더링 중 클릭 방지 플래그 (비동기 로딩 완료 전 씬 스킵 방지) */
+        this._isRendering = false;
+
         // ════════════════════════════════════════════════════════════════
         // 📌 이벤트 핸들러 연결 및 전역 함수 등록
         // ════════════════════════════════════════════════════════════════
@@ -287,6 +290,9 @@ class GameEngine {
 
     /** 대화창 클릭 처리 */
     async handleDialogueClick() {
+        // 씬 렌더링 중이면 클릭 무시 (배경/캐릭터 로딩 완료 전 스킵 방지)
+        if (this._isRendering) return;
+
         // 타이핑 중이면 스킵
         if (this.dialogueSystem.isCurrentlyTyping()) {
             this.dialogueSystem.requestSkip();
@@ -804,6 +810,9 @@ class GameEngine {
      * @param {string} sceneId - 렌더링할 씬의 고유 ID
      */
     async renderScene(sceneId) {
+        // 렌더링 락 활성화 (비동기 로딩 중 클릭 방지)
+        this._isRendering = true;
+
         // ─────────────────────────────────────────────────────────
         // 📌 1단계: 씬 데이터 로드
         // ─────────────────────────────────────────────────────────
@@ -811,6 +820,7 @@ class GameEngine {
 
         // 씬이 없으면 HTML 페이지 이동인지 확인
         if (!scene) {
+            this._isRendering = false;
             if (sceneId?.endsWith('.html')) {
                 // index.html 계열은 언어별 라우팅 적용
                 if (sceneId === 'index.html') {
@@ -881,7 +891,7 @@ class GameEngine {
 
         // ⚠️ 비동기 작업 중 씬이 바뀌었으면 중단 (Race Condition 방지)
         // 예: 빠르게 클릭해서 다른 씬으로 넘어간 경우
-        if (this.sceneRenderer.currentSceneId !== sceneId) return;
+        if (this.sceneRenderer.currentSceneId !== sceneId) { this._isRendering = false; return; }
 
         // ─────────────────────────────────────────────────────────
         // 🚩 6단계: 플래그/스탯 처리
