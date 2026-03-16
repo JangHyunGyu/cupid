@@ -266,13 +266,13 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "Yo",
-        "text": "*Se arregla la corbata y sale. — 'Por favor' es una palabra rara en él.*"
+        "text": "*Se aparta el cabello detrás de la oreja y sale. — 'Por favor' es una palabra rara en ella.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Profesor",
         "text": "*Conversando con el profesor en el aula vacía.*",
         "context": "Día 3 mañana. Descubrió al profesor escribiendo un manuscrito en un aula vacía.",
-        "personality": "El profesor fue aspirante a novelista. Se hizo profesor pero nunca renunció al sueño."
+        "personality": "La profesora fue aspirante a novelista. Se hizo profesora pero nunca renunció al sueño."
     },
     "hidden_nurse_d3_check": {
         "name": "Yo",

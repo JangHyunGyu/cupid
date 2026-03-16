@@ -61,7 +61,7 @@
     },
     "after_miss_yuna_1": {
         "name": "Me",
-        "text": "*Passing by the library when I notice a girl with drowsy eyes walking while reading a book.*"
+        "text": "*Passing by the library when I notice a girl with red eyes walking while reading a book. The tattoos on her arms stand out — but the way she holds the book is surprisingly quiet.*"
     },
     "after_miss_yuna_2": {
         "name": "Me",
@@ -121,7 +121,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "Me",
-        "text": "*It's the homeroom teacher. His tie is even more crooked than before. Looks like the day took a toll on him.*"
+        "text": "*It's the homeroom teacher. Her cardigan is even more disheveled than before. Looks like the day took a toll on her.*"
     },
     "after_hidden_homeroom_4": {
         "name": "Homeroom Teacher",
@@ -129,7 +129,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "Me",
-        "text": "*Sounds like a routine check-in, but his eyes are genuinely watching me.*",
+        "text": "*Sounds like a routine check-in, but her eyes are genuinely watching me.*",
         "choices": [
             "I'm fine. It's a nice school, actually.",
             "Honestly? It's been a lot."
@@ -181,13 +181,13 @@
     },
     "after_homeroom_honest_10": {
         "name": "Me",
-        "text": "*He disappears down the hallway. His tie sways. — \"I really shouldn't be doing this\" seems to be his catchphrase.*"
+        "text": "*She disappears down the hallway. Her long hair sways. — \"I really shouldn't be doing this\" seems to be her catchphrase.*"
     },
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Chatting with the homeroom teacher in the hallway.*",
         "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check on them. The student was honest about feeling overwhelmed.",
-        "personality": "The homeroom teacher hides warmth behind dry humor. Early 30s, deadpan delivery. His catchphrase is \"I really shouldn't be doing this.\" Former aspiring novelist."
+        "personality": "The homeroom teacher hides warmth behind dry humor. Early 30s female teacher with brown wavy long hair and beige cardigan, deadpan delivery. Her catchphrase is \"I really shouldn't be doing this.\" Former aspiring novelist."
     },
     "after_hidden_nurse_intro": {
         "name": "Me",

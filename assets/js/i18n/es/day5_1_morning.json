@@ -33,7 +33,7 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "Yo",
-        "text": "*El profesor está sentado en el escritorio. — No es un manuscrito. Tiene un sobre. Un sobre marrón.*"
+        "text": "*La profesora está sentada en el escritorio. — No es un manuscrito. Tiene un sobre. Un sobre marrón.*"
     },
     "hidden_homeroom_d5_2": {
         "name": "Profesor",
@@ -61,13 +61,13 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "Yo",
-        "text": "*Se da la vuelta. Su corbata se balancea. — Hoy está recta.*"
+        "text": "*Se da la vuelta. Su largo cabello se balancea. — Hoy los botones de su cárdigan están rectos.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Profesor",
         "text": "*Última conversación con el profesor en el aula vacía.*",
-        "context": "Día 5. Último día. El profesor entregó su manuscrito de 7 años.",
-        "personality": "El profesor es más sincero porque es la última vez. Usa su frase por última vez."
+        "context": "Día 5. Último día. La profesora entregó su manuscrito de 7 años.",
+        "personality": "La profesora es más sincera porque es la última vez. Usa su frase por última vez."
     },
     "hidden_nurse_d5_check": {
         "name": "Yo",

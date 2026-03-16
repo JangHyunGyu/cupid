@@ -121,7 +121,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "Yo",
-        "text": "*Es el profesor. Su corbata está más torcida que antes. Parece que el día le pasó factura.*"
+        "text": "*Es la profesora. Su cárdigan está más desarreglado que antes. Parece que el día le pasó factura.*"
     },
     "after_hidden_homeroom_4": {
         "name": "Profesor",
@@ -181,13 +181,13 @@
     },
     "after_homeroom_honest_10": {
         "name": "Yo",
-        "text": "*Desaparece por el pasillo. Su corbata se balancea. — \"No debería hacer esto\" parece ser su frase favorita.*"
+        "text": "*Desaparece por el pasillo. Su largo cabello se balancea. — \"No debería hacer esto\" parece ser su frase favorita.*"
     },
     "after_homeroom_freetalk": {
         "name": "Profesor",
         "text": "*Conversando con el profesor en el pasillo.*",
         "context": "Día 1 después de clases. El profesor detuvo al estudiante nuevo para ver cómo se adaptaba.",
-        "personality": "El profesor esconde calidez detrás de humor seco. Treinta y pocos. Su frase es \"No debería hacer esto\". Fue aspirante a novelista."
+        "personality": "La profesora esconde calidez detrás de humor seco. Treinta y pocos, cabello largo castaño ondulado y cárdigan beige. Su frase es \"No debería hacer esto\". Fue aspirante a novelista."
     },
     "after_hidden_nurse_intro": {
         "name": "Yo",

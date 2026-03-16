@@ -331,69 +331,69 @@ Object.assign(SCENARIO[1], {
         "next": "night_start"
     },
     "after_nurse_enter_1": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": null,
         "next": "after_nurse_enter_2"
     },
     "after_nurse_enter_2": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_3"
     },
     "after_nurse_enter_3": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": null,
         "next": "after_nurse_enter_4"
     },
     "after_nurse_enter_4": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_5"
     },
     "after_nurse_enter_5": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": null,
         "next": "after_nurse_enter_6"
     },
     "after_nurse_enter_6": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_7"
     },
     "after_nurse_enter_7": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_8"
     },
     "after_nurse_enter_8": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_9"
     },
     "after_nurse_enter_9": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": null,
         "next": "after_nurse_enter_10"
     },
     "after_nurse_enter_10": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_11"
     },
     "after_nurse_enter_11": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_12"
     },
     "after_nurse_enter_12": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "setFlag": "nurse_day1",
         "next": "after_nurse_freetalk"
     },
     "after_nurse_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "night_start"
     }

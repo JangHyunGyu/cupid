@@ -218,7 +218,7 @@
     },
     "hidden_homeroom_d3_2": {
         "name": "Ich",
-        "text": "*Der Klassenlehrer sitzt am Pult und schreibt etwas. Er hält inne und blickt auf. — Unsere Blicke treffen sich.*"
+        "text": "*Die Klassenlehrerin sitzt am Pult und schreibt etwas. Sie hält inne und blickt auf. — Unsere Blicke treffen sich.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Klassenlehrer",
@@ -230,7 +230,7 @@
     },
     "hidden_homeroom_d3_choice": {
         "name": "Ich",
-        "text": "*Das ist Manuskriptpapier. Er hat den Gesichtsausdruck von jemandem, der ertappt wurde.*",
+        "text": "*Das ist Manuskriptpapier. Sie hat den Gesichtsausdruck von jemandem, der ertappt wurde.*",
         "choices": [
             "Ich hab gesehen, dass es ein Manuskript ist. — Schreiben Sie einen Roman?",
             "Entschuldigung, ich hab nichts gesehen."
@@ -258,7 +258,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Ich",
-        "text": "*Er lächelt. Nicht sein übliches trockenes — etwas unbeholfen. — ...Erster Leser-Bewerber seit sieben Jahren.*"
+        "text": "*Sie lächelt. Nicht ihr übliches trockenes — etwas unbeholfen. — ...Erster Leser-Bewerber seit sieben Jahren.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Klassenlehrer",
@@ -266,13 +266,13 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "Ich",
-        "text": "*Er richtet seine Krawatte und geht. — 'Bitte' ist ein seltenes Wort bei ihm.*"
+        "text": "*Sie streicht sich die Haare hinters Ohr und geht. — 'Bitte' ist ein seltenes Wort bei ihr.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Klassenlehrer",
         "text": "*Im Gespräch mit dem Klassenlehrer im leeren Klassenzimmer.*",
         "context": "Tag 3 morgens. Den Lehrer beim Schreiben eines Manuskripts im leeren Klassenzimmer entdeckt.",
-        "personality": "Der Lehrer war ein angehender Romanautor. Wurde Lehrer, hat den Traum aber nie aufgegeben."
+        "personality": "Die Lehrerin war eine angehende Romanautorin. Wurde Lehrerin, hat den Traum aber nie aufgegeben."
     },
     "hidden_nurse_d3_check": {
         "name": "Ich",
