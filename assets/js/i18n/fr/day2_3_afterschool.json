@@ -231,5 +231,11 @@
     "after2_yuna_end": {
         "name": "Moi",
         "text": "*Le soleil se couche. Assis cote a cote avec Yuna, a ecouter la musique. Un moment ou aucun mot n'est necessaire.*"
+    },
+    "after2_dain_freetalk": {
+        "name": "Dain",
+        "text": "*En train de manger du tteokbokki avec Dain et de discuter.*",
+        "context": "Jour 2 après les cours, venus manger du tteokbokki après un pari au gym.",
+        "personality": "Dain est une athlète énergique et compétitive."
     }
 }

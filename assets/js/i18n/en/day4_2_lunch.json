@@ -266,5 +266,23 @@
     "date_dain_end": {
         "name": "Me",
         "text": "*She's smiling. -- But her eyes aren't.*"
+    },
+    "date_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*On a date with Seoyeon. She's softer than usual.*",
+        "context": "Day 4 date, spending time with Seoyeon. The relationship is deepening.",
+        "personality": "Seoyeon is the cool student council president. During dates, her usual composure wavers and her honest side shows more."
+    },
+    "date_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Spending time with Yuna. She's more talkative than usual.*",
+        "context": "Day 4 date, together with Yuna. Her walls have lowered significantly.",
+        "personality": "Yuna is a mysterious literary girl. During dates, her sentences get longer and emotions show. Two consecutive sentences equal a confession."
+    },
+    "date_dain_freetalk": {
+        "name": "Dain",
+        "text": "*On a date with Dain. She's more careful than usual.*",
+        "context": "Day 4 date, together with Dain. A serious atmosphere mixed in.",
+        "personality": "Dain is an energetic athlete. On dates, she's nervous and her volume drops. Exclamation marks disappear when she's genuine."
     }
 }

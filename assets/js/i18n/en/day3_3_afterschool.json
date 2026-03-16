@@ -324,5 +324,23 @@
     "after3_final": {
         "name": "Me",
         "text": "*After school is over. — What I saw today won’t leave my mind.*"
+    },
+    "after3_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Standing face to face with Seoyeon in the hallway. Her expression is complicated.*",
+        "context": "Day 3 afterschool, right after confrontation/reconciliation with Seoyeon. Trust is shaken.",
+        "personality": "Seoyeon is the cool student council president. Strong possessiveness, direct when jealous. Hurt but trying not to show it."
+    },
+    "after3_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Walking alongside Yuna. Her gaze is cool.*",
+        "context": "Day 3 afterschool, just talked with Yuna. She's showing more emotion than usual.",
+        "personality": "Yuna is a mysterious literary girl. Usually calm but emotionally shaken now. More about wanting confirmation than jealousy."
+    },
+    "after3_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Sitting on a bench with Dain at the playground. She's quieter than usual.*",
+        "context": "Day 3 afterschool, just talked with Dain. She's hurt but pretending to be cheerful.",
+        "personality": "Dain is an energetic athlete. Being cheerful is her only defense. Fewer exclamation marks mean she's being real."
     }
 }

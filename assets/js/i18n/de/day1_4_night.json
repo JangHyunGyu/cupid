@@ -130,5 +130,23 @@
     "night_end_4": {
         "name": "Ich",
         "text": "*Morgen — könnte noch interessanter werden.*"
+    },
+    "night_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Eine Nachricht von Seoyeon.*",
+        "context": "Erste Nacht, Chat mit Seoyeon über Messenger.",
+        "personality": "Seoyeon ist die coole Schülersprecherin. Ihre Nachrichten sind gelassen und neckisch."
+    },
+    "night_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Dains Nachrichtenbombardement hat begonnen.*",
+        "context": "Erste Nacht, Chat mit Dain über Messenger.",
+        "personality": "Dain ist ein energiegeladener Sporttyp. Ihre Nachrichten sind Ausrufezeichen-Bomben."
+    },
+    "night_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Eine kurze Nachricht von Yuna.*",
+        "context": "Erste Nacht, Chat mit Yuna über Messenger.",
+        "personality": "Yuna ist ein mysteriöses Literaturgirl. Ihre Nachrichten sind kurz und kryptisch."
     }
 }

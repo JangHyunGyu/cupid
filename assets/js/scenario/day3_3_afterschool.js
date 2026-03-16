@@ -111,7 +111,7 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_cry.png",
         "setFlags": ["seoyeon_day3_event"],
-        "next": "after3_seo_end"
+        "next": "after3_seo_freetalk"
     },
     "after3_seo_choice2": {
         "background": "assets/images/background/teacher_office.png",
@@ -221,7 +221,7 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "setFlags": ["yuna_day3_event"],
-        "next": "after3_yuna_end"
+        "next": "after3_yuna_freetalk"
     },
     "after3_yuna_choice2": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -341,7 +341,7 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "setFlags": ["dain_day3_event"],
-        "next": "after3_dain_end"
+        "next": "after3_dain_freetalk"
     },
     "after3_dain_choice2": {
         "background": "assets/images/background/gym.png",
@@ -529,5 +529,26 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "next": "night3_start"
+    }
+,
+    "after3_seo_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after3_seo_end"
+    }
+,
+    "after3_yuna_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after3_yuna_end"
+    }
+,
+    "after3_dain_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/playground.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after3_dain_end"
     }
 });

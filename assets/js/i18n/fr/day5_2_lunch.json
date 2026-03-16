@@ -130,5 +130,23 @@
     "tour_dain_end": {
         "name": "Moi",
         "text": "*Elle sourit. Des yeux en croissant de lune. — Les mêmes yeux que j'ai vus le premier jour, mais avec une profondeur différente.*"
+    },
+    "tour_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Debout sur le toit avec Seoyeon. La dernière pause déjeuner.*",
+        "context": "Dernier déjeuner du jour 5 avec Seoyeon. La fin approche.",
+        "personality": "C'est la dernière fois, le calme de Seoyeon disparaît et ses vrais sentiments émergent."
+    },
+    "tour_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Debout à la bibliothèque avec Yuna. La dernière pause déjeuner.*",
+        "context": "Dernier déjeuner du jour 5 avec Yuna.",
+        "personality": "C'est la dernière fois, les murs de Yuna sont complètement tombés."
+    },
+    "tour_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Debout dans le gymnase avec Dain. La dernière pause déjeuner.*",
+        "context": "Dernier déjeuner du jour 5 avec Dain.",
+        "personality": "C'est la dernière fois, Dain ne peut pas maintenir sa façade joyeuse."
     }
 }

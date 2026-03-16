@@ -435,5 +435,23 @@
     "lunch_end": {
         "name": "Ich",
         "text": "*Die Glocke läutet. Die Mittagspause ist vorbei.*"
+    },
+    "lunch_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Neben Seoyeon auf dem Dach sitzend. Die Brise fühlt sich gut an.*",
+        "context": "Mittagessen am ersten Tag, gerade Seoyeons Bento auf dem Dach gegessen. Noch beim Kennenlernen.",
+        "personality": "Seoyeon ist die coole Schülersprecherin. Gelassen, schlagfertig und direkt. Zeigt Interesse durch Taten."
+    },
+    "lunch_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Mit Dain auf einer Bank am Schulkiosk sitzend, Brot essend.*",
+        "context": "Mittagessen am ersten Tag, gerade Schere-Stein-Papier mit Dain gespielt. Sie hat verloren.",
+        "personality": "Dain ist ein energiegeladener Sporttyp. Liebt Körperkontakt, viele Ausrufezeichen. Außen hart, innen weich."
+    },
+    "lunch_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Neben Yuna in der Bibliothek Bücher lesend. Es ist ruhig, aber angenehm.*",
+        "context": "Mittagessen am ersten Tag, gerade Zeit mit Yuna in der Bibliothek verbracht.",
+        "personality": "Yuna ist ein mysteriöses Literaturgirl. Kurze, trockene Sätze, aber wenn sie sich öffnet, werden ihre Sätze länger."
     }
 }

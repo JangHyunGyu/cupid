@@ -266,5 +266,23 @@
     "date_dain_end": {
         "name": "Ich",
         "text": "*Sie lächelt. -- Aber ihre Augen lächeln nicht.*"
+    },
+    "date_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Auf einem Date mit Seoyeon. Sie ist sanfter als sonst.*",
+        "context": "Date an Tag 4 mit Seoyeon.",
+        "personality": "Beim Date wankt Seoyeons Gelassenheit und ihre ehrliche Seite zeigt sich mehr."
+    },
+    "date_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Zeit mit Yuna verbringen. Sie ist gesprächiger als sonst.*",
+        "context": "Date an Tag 4 mit Yuna.",
+        "personality": "Beim Date werden Yunas Sätze länger. Zwei aufeinanderfolgende Sätze gleichen einem Geständnis."
+    },
+    "date_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Auf einem Date mit Dain. Sie ist vorsichtiger als sonst.*",
+        "context": "Date an Tag 4 mit Dain.",
+        "personality": "Beim Date ist Dain nervös und wird leiser. Ausrufezeichen verschwinden wenn sie ehrlich ist."
     }
 }

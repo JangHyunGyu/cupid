@@ -134,7 +134,7 @@ Object.assign(SCENARIO[4], {
     "date_seo_succulent_3": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_laugh.png",
-        "next": "date_seo_end"
+        "next": "date_seo_freetalk"
     },
     "date_seo_end": {
         "background": "assets/images/background/park.png",
@@ -272,7 +272,7 @@ Object.assign(SCENARIO[4], {
     "date_yuna_oldbook_4": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_smile.png",
-        "next": "date_yuna_end"
+        "next": "date_yuna_freetalk"
     },
     "date_yuna_end": {
         "background": "assets/images/background/bookstore.png",
@@ -420,11 +420,35 @@ Object.assign(SCENARIO[4], {
     "date_dain_shop_3": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "date_dain_end"
+        "next": "date_dain_freetalk"
     },
     "date_dain_end": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "confess_dain_1"
+    }
+,
+    "date_seo_freetalk": {
+        "type": "free_talk",
+        "maxTurns": 5,
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "date_seo_end"
+    }
+,
+    "date_yuna_freetalk": {
+        "type": "free_talk",
+        "maxTurns": 5,
+        "background": "assets/images/background/library.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "date_yuna_end"
+    }
+,
+    "date_dain_freetalk": {
+        "type": "free_talk",
+        "maxTurns": 5,
+        "background": "assets/images/background/playground.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "date_dain_end"
     }
 });

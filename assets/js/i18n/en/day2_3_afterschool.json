@@ -231,5 +231,11 @@
     "after2_yuna_end": {
         "name": "Me",
         "text": "*The sunset is fading. Sitting side by side with Yuna, listening to music. A moment where no words are needed.*"
+    },
+    "after2_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Eating tteokbokki with Dain and chatting.*",
+        "context": "Day 2 afterschool, came to tteokbokki shop after a volleyball bet at the gym. Getting closer.",
+        "personality": "Dain is an energetic athlete. Competitive and straightforward, but exclamation marks disappear when she's being genuine."
     }
 }

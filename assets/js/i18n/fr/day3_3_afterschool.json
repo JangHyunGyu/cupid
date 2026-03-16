@@ -324,5 +324,23 @@
     "after3_final": {
         "name": "Moi",
         "text": "*L’après-cours est terminé. — Ce que j’ai vu aujourd’hui ne quitte pas mon esprit.*"
+    },
+    "after3_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Face à face avec Seoyeon dans le couloir. Son expression est compliquée.*",
+        "context": "Jour 3, après la confrontation avec Seoyeon. La confiance est ébranlée.",
+        "personality": "Seoyeon est possessive et directe quand elle est jalouse. Blessée mais essayant de ne pas le montrer."
+    },
+    "after3_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*En marchant aux côtés de Yuna. Son regard est froid.*",
+        "context": "Jour 3, après avoir parlé avec Yuna.",
+        "personality": "Yuna est émotionnellement ébranlée. Plus de confirmation que de jalousie."
+    },
+    "after3_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Assise sur un banc avec Dain au terrain de jeux. Elle est plus calme que d'habitude.*",
+        "context": "Jour 3, après avoir parlé avec Dain. Blessée mais faisant semblant d'être joyeuse.",
+        "personality": "Dain utilise la joie comme défense. Moins de points d'exclamation signifient qu'elle est sincère."
     }
 }

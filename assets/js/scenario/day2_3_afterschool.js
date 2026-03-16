@@ -105,7 +105,7 @@ Object.assign(SCENARIO[2], {
     "after2_dain_16": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "after2_dain_end"
+        "next": "after2_dain_freetalk"
     },
     "after2_dain_end": {
         "background": "assets/images/background/street.png",
@@ -341,5 +341,12 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
         "next": "night2_start"
+    }
+,
+    "after2_dain_freetalk": {
+        "type": "free_talk",
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after2_dain_end"
     }
 });
