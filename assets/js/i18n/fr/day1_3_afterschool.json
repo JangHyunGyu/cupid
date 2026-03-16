@@ -211,7 +211,7 @@
     },
     "after_nurse_enter_1": {
         "name": "Moi",
-        "text": "*J'ouvre la porte de l'infirmerie. Une légère odeur de désinfectant. Des rideaux blancs, un lit, un petit bureau.*"
+        "text": "*J'ouvre la porte de l'infirmerie. Une légère odeur de désinfectant. Des rideaux blancs, un lit, un petit bureau. Une femme est assise au bureau. Blouse blanche, un stéthoscope autour du cou. De longs cheveux bruns attachés négligemment, elle m'observe par-dessus ses lunettes, le menton posé sur une main. Elle était en train de lire — elle lève la tête.*"
     },
     "after_nurse_enter_2": {
         "name": "Infirmière",

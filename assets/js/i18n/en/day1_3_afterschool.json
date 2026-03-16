@@ -211,7 +211,7 @@
     },
     "after_nurse_enter_1": {
         "name": "Me",
-        "text": "*I open the nurse's office door. A faint smell of antiseptic. White curtains, a white bed, a small desk.*"
+        "text": "*I open the nurse's office door. A faint smell of antiseptic. White curtains, a white bed, a small desk. A woman is sitting at the desk. White coat, a stethoscope around her neck. Long brown hair loosely tied back, watching me over her glasses with her chin propped on one hand. She was reading something — and looks up.*"
     },
     "after_nurse_enter_2": {
         "name": "School Nurse",
