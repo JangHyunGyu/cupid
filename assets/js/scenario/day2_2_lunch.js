@@ -255,7 +255,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_yuna_end": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "after2_start"
     },
 
@@ -332,7 +332,7 @@ Object.assign(SCENARIO[2], {
         "next": "lunch2_seo_15"
     },
     "lunch2_seo_15": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/top_school.png",
         "next": "lunch2_seo_16"
     },
@@ -404,7 +404,7 @@ Object.assign(SCENARIO[2], {
         "next": "lunch2_seo_c1_5"
     },
     "lunch2_seo_c1_5": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_shy.png",
         "background": "assets/images/background/top_school.png",
         "next": "lunch2_seo_end"
     },
@@ -425,7 +425,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_end": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_pout.png",
         "next": "after2_start"
     },
 
@@ -548,7 +548,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_end": {
         "background": "assets/images/background/store.png",
-        "character": null,
+        "character": "assets/images/characters/dain_pout.png",
         "next": "after2_start"
     }
 });

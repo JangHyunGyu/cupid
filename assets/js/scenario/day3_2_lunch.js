@@ -167,7 +167,7 @@ Object.assign(SCENARIO[3], {
     },
 
     "lunch3_share_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
         "next": "lunch3_end"
     },
@@ -309,7 +309,7 @@ Object.assign(SCENARIO[3], {
     },
 
     "lunch3_expose_honest_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_angry.png",
         "background": "assets/images/background/room_school.png",
         "next": "lunch3_expose_honest_2"
     },
@@ -324,7 +324,7 @@ Object.assign(SCENARIO[3], {
         "next": "lunch3_expose_honest_4"
     },
     "lunch3_expose_honest_4": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_sad.png",
         "background": "assets/images/background/room_school.png",
         "next": "lunch3_expose_honest_5"
     },
@@ -346,7 +346,7 @@ Object.assign(SCENARIO[3], {
     },
 
     "lunch3_expose_excuse_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_angry.png",
         "background": "assets/images/background/room_school.png",
         "next": "lunch3_expose_excuse_2"
     },
@@ -361,20 +361,20 @@ Object.assign(SCENARIO[3], {
         "next": "lunch3_expose_excuse_4"
     },
     "lunch3_expose_excuse_4": {
-        "character": null,
+        "character": "assets/images/characters/dain_sad.png",
         "background": "assets/images/background/room_school.png",
         "setFlag": "day3_dain_no_exclamation",
         "next": "lunch3_end"
     },
 
     "lunch3_expose_run_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_angry.png",
         "background": "assets/images/background/room_school.png",
         "setFlag": "day3_lunch_escaped",
         "next": "lunch3_expose_run_2"
     },
     "lunch3_expose_run_2": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_angry.png",
         "background": "assets/images/background/room_school.png",
         "next": "lunch3_end"
     },

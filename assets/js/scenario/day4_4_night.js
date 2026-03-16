@@ -305,7 +305,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_seo_glimpse_4": {
         "background": "assets/images/background/school_back.png",
-        "character": null,
+        "character": "assets/images/characters/dain_sad.png",
         "night": true,
         "fade": true,
         "next": "day4_final"
@@ -619,7 +619,7 @@ Object.assign(SCENARIO[4], {
         "next": "wall_dain_glimpse_4"
     },
     "wall_dain_glimpse_4": {
-        "character": null,
+        "character": "assets/images/characters/yuna_sad.png",
         "background": "assets/images/background/school_back.png",
         "night": true,
         "fade": true,
@@ -856,7 +856,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_yuna_glimpse_4": {
         "background": "assets/images/background/school_back.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "fade": true,
         "next": "day4_final"

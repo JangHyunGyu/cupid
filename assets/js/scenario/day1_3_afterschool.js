@@ -327,12 +327,12 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_skip": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "night_start"
     },
     "after_nurse_enter_1": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_2"
     },
     "after_nurse_enter_2": {
@@ -342,7 +342,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_enter_3": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_4"
     },
     "after_nurse_enter_4": {
@@ -352,7 +352,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_enter_5": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_6"
     },
     "after_nurse_enter_6": {
@@ -372,7 +372,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_enter_9": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_10"
     },
     "after_nurse_enter_10": {

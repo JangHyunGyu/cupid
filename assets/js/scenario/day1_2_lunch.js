@@ -36,12 +36,12 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_start_6": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_start_7"
     },
     "lunch_start_7": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_choice"
     },
     "lunch_choice": {
@@ -265,7 +265,7 @@ Object.assign(SCENARIO[1], {
     },
 
     "lunch_dain_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/store.png",
         "bgm": "daily2.mp3",
         "next": "lunch_dain_2"
@@ -419,7 +419,7 @@ Object.assign(SCENARIO[1], {
         "next": "lunch_dain_after"
     },
     "lunch_dain_after": {
-        "character": null,
+        "character": "assets/images/characters/dain_laugh.png",
         "background": "assets/images/background/store.png",
         "next": "lunch_dain_after_2"
     },

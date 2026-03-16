@@ -50,7 +50,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_msg_seo_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night_msg_seo_3"
     },
