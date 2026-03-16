@@ -285,5 +285,101 @@
         "choices": [
             "Recommencer depuis le début"
         ]
+    },
+    "hidden_true_homeroom_1": {
+        "name": "Moi",
+        "text": "*Jour de la remise des diplômes. — Le temps a passé. L'uniforme n'est plus raide.*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "Moi",
+        "text": "*La salle vide. Celle où il écrivait. — Le prof principal attend. En civil.*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "Professeur Principal",
+        "text": "Félicitations pour le diplôme."
+    },
+    "hidden_true_homeroom_4": {
+        "name": "Professeur Principal",
+        "text": "...Tiens. Tu n'as pas dit 'monsieur'. Première fois."
+    },
+    "hidden_true_homeroom_5": {
+        "name": "Professeur Principal",
+        "text": "J'ai terminé le manuscrit. — C'est grâce à toi. J'ai demandé une ligne et t'es revenu avec trois pages."
+    },
+    "hidden_true_homeroom_6": {
+        "name": "Professeur Principal",
+        "text": "Je suis plus ton prof — je peux dire un truc ? ...On va boire un café. Un vrai cette fois, pas un jus."
+    },
+    "hidden_true_homeroom_7": {
+        "name": "Moi",
+        "text": "Avec plaisir."
+    },
+    "hidden_true_homeroom_8": {
+        "name": "Professeur Principal",
+        "text": "...Je devrais pas faire ça. Non. Je suis plus prof.\n\n─── Professeur Principal TRUE LOVE END ───"
+    },
+    "hidden_true_nurse_1": {
+        "name": "Moi",
+        "text": "*Remise des diplômes. En sortant — un pansement collé sur la porte de l'infirmerie.*"
+    },
+    "hidden_true_nurse_2": {
+        "name": "Moi",
+        "text": "*'Félicitations. Je t'attends au café.' — En décollant le pansement, un petit plan à l'intérieur.*"
+    },
+    "hidden_true_nurse_3": {
+        "name": "Infirmière",
+        "text": "Félicitations. ...À partir d'aujourd'hui, tu peux me tutoyer."
+    },
+    "hidden_true_nurse_4": {
+        "name": "Infirmière",
+        "text": "Tu sais, le premier jour, quand t'es venu. J'ai touché ton front et j'ai dit 'j'avais envie de te toucher'. C'était une blague."
+    },
+    "hidden_true_nurse_5": {
+        "name": "Infirmière",
+        "text": "...Mais là, c'est plus une blague."
+    },
+    "hidden_true_nurse_6": {
+        "name": "Infirmière",
+        "text": "Un prof devrait pas avoir de sentiments pour un élève. Je le savais. — Alors j'emballais tout dans des blagues. Mais toi, tu voyais à travers à chaque fois."
+    },
+    "hidden_true_nurse_7": {
+        "name": "Infirmière",
+        "text": "...T'es le premier à voir à travers moi."
+    },
+    "hidden_true_nurse_8": {
+        "name": "Infirmière",
+        "text": "Maintenant on peut se voir sans pansements. — Sans excuses.\n\n─── Infirmière TRUE LOVE END ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "Professeur Principal",
+        "text": "Félicitations."
+    },
+    "hidden_good_homeroom_2": {
+        "name": "Moi",
+        "text": "*Pendant la poignée de main — quelque chose glisse dans ma paume. Un billet plié.*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "Moi",
+        "text": "*'Quand je finirai le manuscrit, je te contacterai. — À mon premier lecteur.' Il y a un numéro.*"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "Moi",
+        "text": "*Sa main est restée trois secondes de plus. Trop long pour une poignée de main, trop court pour une déclaration.\n\n─── Professeur Principal GOOD END ───*"
+    },
+    "hidden_good_nurse_1": {
+        "name": "Infirmière",
+        "text": "Oh, un diplômé. Un patient qui fait ses adieux. — Je suis touchée."
+    },
+    "hidden_good_nurse_2": {
+        "name": "Infirmière",
+        "text": "Des vitamines. — Prends soin de toi à la fac. ...Intérêt médical. Cette fois, pour de vrai."
+    },
+    "hidden_good_nurse_3": {
+        "name": "Moi",
+        "text": "*Sous le bouchon, une petite inscription. 'Appelle-moi si t'es malade. Appelle-moi même si t'es pas malade. — ♥'*"
+    },
+    "hidden_good_nurse_4": {
+        "name": "Moi",
+        "text": "*Ce cœur — cette fois, ce n'est clairement pas de l'intérêt médical.\n\n─── Infirmière GOOD END ───*"
     }
 }

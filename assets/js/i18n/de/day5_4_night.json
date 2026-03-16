@@ -285,5 +285,101 @@
         "choices": [
             "Von vorne beginnen"
         ]
+    },
+    "hidden_true_homeroom_1": {
+        "name": "Ich",
+        "text": "*Abschlusstag. — Die Zeit ist vergangen. Die Uniform ist nicht mehr steif.*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "Ich",
+        "text": "*Das leere Klassenzimmer. Das, in dem er geschrieben hat. — Der Klassenlehrer wartet. In Freizeitkleidung.*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "Klassenlehrer",
+        "text": "Glückwunsch zum Abschluss."
+    },
+    "hidden_true_homeroom_4": {
+        "name": "Klassenlehrer",
+        "text": "...Das. Du hast nicht 'Herr Lehrer' gesagt. Zum ersten Mal."
+    },
+    "hidden_true_homeroom_5": {
+        "name": "Klassenlehrer",
+        "text": "Ich hab das Manuskript fertig. — Weil du mein erster Leser warst. Ich sagte eine Zeile und du kamst mit drei Seiten."
+    },
+    "hidden_true_homeroom_6": {
+        "name": "Klassenlehrer",
+        "text": "Da ich nicht mehr dein Lehrer bin — darf ich was sagen? ...Lass uns Kaffee trinken gehen. Diesmal echten, keinen Saft."
+    },
+    "hidden_true_homeroom_7": {
+        "name": "Ich",
+        "text": "Gerne."
+    },
+    "hidden_true_homeroom_8": {
+        "name": "Klassenlehrer",
+        "text": "...Ich sollte das eigentlich nicht tun. Nein. Ich bin kein Lehrer mehr.\n\n─── Klassenlehrer TRUE LOVE END ───"
+    },
+    "hidden_true_nurse_1": {
+        "name": "Ich",
+        "text": "*Abschlusstag. Beim Rausgehen — ein Pflaster an der Tür des Krankenzimmers.*"
+    },
+    "hidden_true_nurse_2": {
+        "name": "Ich",
+        "text": "*'Glückwunsch. Ich warte im Café.' — Unter dem Pflaster eine kleine Karte.*"
+    },
+    "hidden_true_nurse_3": {
+        "name": "Schulkrankenschwester",
+        "text": "Glückwunsch zum Abschluss. ...Ab heute kannst du mich duzen."
+    },
+    "hidden_true_nurse_4": {
+        "name": "Schulkrankenschwester",
+        "text": "Weißt du, am ersten Tag, als du kamst. Ich hab deine Stirn berührt und gesagt 'Ich wollte dich einfach anfassen'. Das war ein Witz."
+    },
+    "hidden_true_nurse_5": {
+        "name": "Schulkrankenschwester",
+        "text": "...Aber jetzt ist es kein Witz."
+    },
+    "hidden_true_nurse_6": {
+        "name": "Schulkrankenschwester",
+        "text": "Eine Lehrerin sollte keine Gefühle für einen Schüler entwickeln. Wusste ich. — Deshalb hab ich alles in Witze verpackt. Aber du hast immer durchgeschaut."
+    },
+    "hidden_true_nurse_7": {
+        "name": "Schulkrankenschwester",
+        "text": "...Du bist der Erste, der mich durchschaut hat."
+    },
+    "hidden_true_nurse_8": {
+        "name": "Schulkrankenschwester",
+        "text": "Jetzt können wir uns ohne Pflaster treffen. — Ohne Ausreden.\n\n─── Schulkrankenschwester TRUE LOVE END ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "Klassenlehrer",
+        "text": "Glückwunsch zum Abschluss."
+    },
+    "hidden_good_homeroom_2": {
+        "name": "Ich",
+        "text": "*Beim Händeschütteln — etwas gleitet in meine Hand. Eine gefaltete Notiz.*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "Ich",
+        "text": "*'Wenn das Manuskript fertig ist, melde ich mich. — An meinen ersten Leser.' Eine Telefonnummer.*"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "Ich",
+        "text": "*Seine Hand hielt etwa drei Sekunden länger. Zu lang für einen Händedruck, zu kurz für ein Geständnis.\n\n─── Klassenlehrer GOOD END ───*"
+    },
+    "hidden_good_nurse_1": {
+        "name": "Schulkrankenschwester",
+        "text": "Ach, ein Absolvent. Ein Patient, der sich verabschiedet. — Rührend."
+    },
+    "hidden_good_nurse_2": {
+        "name": "Schulkrankenschwester",
+        "text": "Vitamine. — Pass an der Uni auf dich auf. ...Medizinisches Interesse. Diesmal wirklich."
+    },
+    "hidden_good_nurse_3": {
+        "name": "Ich",
+        "text": "*Im Deckel, winzige Schrift. 'Ruf an, wenn du krank bist. Ruf auch an, wenn nicht. — ♥'*"
+    },
+    "hidden_good_nurse_4": {
+        "name": "Ich",
+        "text": "*Dieses Herz — diesmal ist es definitiv kein medizinisches Interesse.\n\n─── Schulkrankenschwester GOOD END ───*"
     }
 }

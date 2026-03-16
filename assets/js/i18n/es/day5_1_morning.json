@@ -26,5 +26,85 @@
     "morning5_end": {
         "name": "Yo",
         "text": "*Es una pregunta, pero es una amenaza. — Típico de Dain.*"
+    },
+    "hidden_homeroom_d5_check": {
+        "name": "Yo",
+        "text": "*Preparativos del evento. Paso por el aula vacía. La puerta está abierta.*"
+    },
+    "hidden_homeroom_d5_1": {
+        "name": "Yo",
+        "text": "*El profesor está sentado en el escritorio. — No es un manuscrito. Tiene un sobre. Un sobre marrón.*"
+    },
+    "hidden_homeroom_d5_2": {
+        "name": "Profesor",
+        "text": "El manuscrito. — Está incompleto. Pero quería dárselo a mi primer lector."
+    },
+    "hidden_homeroom_d5_3": {
+        "name": "Profesor",
+        "text": "No se lo he mostrado a nadie en siete años. — No debería hacer esto."
+    },
+    "hidden_homeroom_d5_4": {
+        "name": "Yo",
+        "text": "Profe. Creo que ya puede dejar de decir eso."
+    },
+    "hidden_homeroom_d5_5": {
+        "name": "Profesor",
+        "text": "...Nunca pensé que escucharía eso de un alumno."
+    },
+    "hidden_homeroom_d5_6": {
+        "name": "Profesor",
+        "text": "...No acepto reseñas. — ...Bueno, al menos una línea."
+    },
+    "hidden_homeroom_d5_7": {
+        "name": "Profesor",
+        "text": "Cuando te gradúes — vamos a vernos. No como profesor y alumno. ...No debería. Pero solo esta vez. La última."
+    },
+    "hidden_homeroom_d5_8": {
+        "name": "Yo",
+        "text": "*Se da la vuelta. Su corbata se balancea. — Hoy está recta.*"
+    },
+    "hidden_homeroom_d5_freetalk": {
+        "name": "Profesor",
+        "text": "*Última conversación con el profesor en el aula vacía.*",
+        "context": "Día 5. Último día. El profesor entregó su manuscrito de 7 años.",
+        "personality": "El profesor es más sincero porque es la última vez. Usa su frase por última vez."
+    },
+    "hidden_nurse_d5_check": {
+        "name": "Yo",
+        "text": "*Descanso del evento. Paso por la enfermería.*"
+    },
+    "hidden_nurse_d5_1": {
+        "name": "Enfermera",
+        "text": "¿Eh? {name}. — Es el último día. El último día del evento."
+    },
+    "hidden_nurse_d5_2": {
+        "name": "Enfermera",
+        "text": "Ven a visitarme después de graduarte. ...O antes, si te lastimas."
+    },
+    "hidden_nurse_d5_3": {
+        "name": "Yo",
+        "text": "¿Y si no me lastimo?"
+    },
+    "hidden_nurse_d5_4": {
+        "name": "Enfermera",
+        "text": "...Pregúntame eso después de la graduación. — Entonces te responderé."
+    },
+    "hidden_nurse_d5_5": {
+        "name": "Enfermera",
+        "text": "...{name}. ¿Te pongo una tirita?"
+    },
+    "hidden_nurse_d5_6": {
+        "name": "Enfermera",
+        "text": "Lo sé. Solo necesitaba una excusa."
+    },
+    "hidden_nurse_d5_7": {
+        "name": "Yo",
+        "text": "*Hay letras pequeñas en la tirita. 'Después de graduarte, nos vemos en un café y no en la enfermería — ♥'*"
+    },
+    "hidden_nurse_d5_freetalk": {
+        "name": "Enfermera",
+        "text": "*Última conversación con la enfermera frente a la enfermería.*",
+        "context": "Día 5. Último día. La enfermera escribió un mensaje en una tirita.",
+        "personality": "La enfermera está menos juguetona. Esperando el día sin excusas."
     }
 }
