@@ -13,7 +13,7 @@
     },
     "confess_seo_4": {
         "name": "Moi",
-        "text": "*J'ai essayé de ne pas nommer ce sentiment. Parce qu'au moment où je le nomme, il n'y a plus de retour en arrière.*"
+        "text": "*Seoyeon est appuyée contre la rambarde. Le vent soulève ses cheveux. — Elle les repousse du petit doigt. Cette habitude.*"
     },
     "confess_seo_5": {
         "name": "Moi",
@@ -45,7 +45,7 @@
     },
     "confess_seo_yes_5": {
         "name": "Moi",
-        "text": "*Mes ongles s'enfoncent dans mes paumes. Je ne sais pas si c'est le coucher de soleil qui m'aveugle ou si mes yeux brûlent. -- Dis-le. Même si les mots sortent mal.*"
+        "text": "*Les mots sont un désastre. Je n'ai rien préparé, mais je ne peux pas m'arrêter.*"
     },
     "confess_seo_yes_6": {
         "name": "Moi",
@@ -81,7 +81,7 @@
     },
     "confess_seo_no_2": {
         "name": "Moi",
-        "text": "*Des mots lâches. Je le sais.*"
+        "text": "*J'ai dit la même chose le premier jour. À l'époque, c'était sincère. Maintenant, c'est fuir.*"
     },
     "confess_seo_no_3": {
         "name": "Moi",
@@ -105,7 +105,7 @@
     },
     "confess_yuna_4": {
         "name": "Moi",
-        "text": "*J'ai essayé de ne pas nommer ce sentiment. Parce qu'au moment où je le nomme, il n'y a plus de retour en arrière.*"
+        "text": "*Yuna est assise sur le canapé et me regarde. Comme si elle m'attendait.*"
     },
     "confess_yuna_5": {
         "name": "Moi",
@@ -133,7 +133,7 @@
     },
     "confess_yuna_yes_4": {
         "name": "Moi",
-        "text": "*Mes ongles s'enfoncent dans mes paumes. -- Dis-le. Même si les mots sortent mal.*"
+        "text": "*Devant Yuna, pas besoin de longs discours. Elle lit entre les lignes.*"
     },
     "confess_yuna_yes_5": {
         "name": "Moi",
@@ -161,7 +161,7 @@
     },
     "confess_yuna_no_2": {
         "name": "Moi",
-        "text": "*Des mots lâches. Je le sais.*"
+        "text": "*Yuna lit entre les lignes. Elle saura que ces mots ne sont qu'une fuite.*"
     },
     "confess_yuna_no_3": {
         "name": "Moi",
@@ -185,7 +185,7 @@
     },
     "confess_dain_4": {
         "name": "Moi",
-        "text": "*J'ai essayé de ne pas nommer ce sentiment. Parce qu'au moment où je le nomme, il n'y a plus de retour en arrière.*"
+        "text": "*Dain tient un ballon. Comme si de rien n'était. — Mais ses doigts sont blancs. Elle le serre fort.*"
     },
     "confess_dain_5": {
         "name": "Moi",
@@ -213,7 +213,7 @@
     },
     "confess_dain_yes_4": {
         "name": "Moi",
-        "text": "*Mes ongles s'enfoncent dans mes paumes. -- Dis-le. Même si les mots sortent mal.*"
+        "text": "*Ce n'est pas pierre-feuille-ciseaux, ce n'est pas un jeu. Mais c'est tout pour moi.*"
     },
     "confess_dain_yes_5": {
         "name": "Moi",
@@ -245,7 +245,7 @@
     },
     "confess_dain_no_2": {
         "name": "Moi",
-        "text": "*Des mots lâches. Je le sais.*"
+        "text": "*Je peux lui faire une passe, mais je ne peux pas dire trois mots. Lamentable.*"
     },
     "confess_dain_no_3": {
         "name": "Moi",

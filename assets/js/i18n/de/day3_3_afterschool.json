@@ -58,7 +58,7 @@
     },
     "after3_seo_choice1": {
         "name": "Ich",
-        "text": "*서연(Seoyeon) hält inne. Ihre Lippen zittern. — Dann lächelt sie. Ein ungeübtes Lächeln.*"
+        "text": "*Seoyeon hält inne. Sie legt die Stäbchen hin. Langsam.*"
     },
     "after3_seo_choice1_react": {
         "name": "서연(Seoyeon)",
@@ -271,7 +271,7 @@
     },
     "after3_confront_admit_6": {
         "name": "Ich",
-        "text": "*Ihr Rücken ist gerade. Perfekt. — Aber ihre Schultern zittern.*"
+        "text": "*Ihr Rücken ist gerade. Perfekt. — Aber ihre Fäuste sind geballt. Die Knöchel weiß.*"
     },
     "after3_confront_excuse": {
         "name": "서연(Seoyeon)",

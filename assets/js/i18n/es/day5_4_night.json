@@ -101,27 +101,27 @@
     },
     "true_epilogue_1": {
         "name": "Yo",
-        "text": "*Intenté no ponerle nombre a este sentimiento. Porque una vez que le pones nombre, no hay vuelta atrás.*"
+        "text": "*Fueron cinco días.*"
     },
     "true_epilogue_2": {
         "name": "Yo",
-        "text": "*Pero ya era demasiado tarde. Desde el primer día, cuando nuestros ojos se encontraron.*"
+        "text": "*El uniforme era rígido, los cerezos me hacían estornudar, y no sabía qué hacer frente a la puerta del colegio.*"
     },
     "true_epilogue_3": {
         "name": "Yo",
-        "text": "*No sé el momento exacto en que me enamoré. Solo sé que un día, no pude imaginar un mañana sin esa persona.*"
+        "text": "*Pero mirando atrás — creo que ya estaba decidido desde el momento en que nuestras miradas se cruzaron por primera vez. Solo tardé cinco días en admitirlo.*"
     },
     "true_epilogue_4": {
         "name": "Yo",
-        "text": "*Algunos dirían que hasta sentimientos como este tienen fecha de caducidad. Pero yo lo sé. Esto no es algo que se enfría — es algo que se impregna.*"
+        "text": "*Mi rodilla no se ha curado. Mi familia no es más feliz. Las personas que se fueron no han vuelto. — Pero al menos ya no tengo que practicar llorar a solas. Ya no.*"
     },
     "true_epilogue_5": {
         "name": "Yo",
-        "text": "*Amar a alguien por completo — es sostener una sola certeza en medio de toda la incertidumbre del mundo.*"
+        "text": ""
     },
     "true_epilogue_6": {
         "name": "Yo",
-        "text": "*Mi rodilla no se ha curado. Mi familia no es más feliz. Las personas que se fueron no han vuelto. — Pero al menos ya no tengo que practicar llorar a solas. Ya no.*"
+        "text": ""
     },
     "true_epilogue_7": {
         "name": "Sistema",
@@ -169,7 +169,7 @@
     },
     "mayhem_4": {
         "name": "Yo",
-        "text": "*Solo después de ver cómo las tres se alejaban comprendí que la amabilidad de nunca saber rechazar es la violencia más cruel de todas.*"
+        "text": "*Vi las espaldas de las tres alejarse. Ninguna miró atrás. — Esa fue la respuesta.*"
     },
     "mayhem_5": {
         "name": "Yo",
@@ -177,7 +177,7 @@
     },
     "mayhem_6": {
         "name": "Yo",
-        "text": "*La amabilidad de nunca rechazar — la violencia más cruel.*"
+        "text": "*Vi las espaldas de las tres alejarse. Ninguna miró atrás.*"
     },
     "mayhem_7": {
         "name": "Sistema",
@@ -225,23 +225,23 @@
     },
     "friend_1": {
         "name": "Yo",
-        "text": "*Lo recuerdo. Aquellas puntas de los dedos apartando el pelo con el viento en la azotea.*"
+        "text": "*Al final, no pude decirlo.*"
     },
     "friend_2": {
         "name": "Yo",
-        "text": "*Si hubiera dicho me gustas en ese momento, ¿esta noche habría sido diferente?*"
+        "text": "*No sé si es arrepentimiento o una decisión. Solo sé que — cinco días terminaron con esas tres palabras atascadas en mi garganta.*"
     },
     "friend_3": {
         "name": "Yo",
-        "text": "*La distancia más cercana es también la más lejana. Una distancia llamada ‘amigos.’*"
+        "text": "*En mi antiguo colegio también fue así. Y aquí estoy, haciéndolo otra vez.*"
     },
     "friend_4": {
         "name": "Yo",
-        "text": "*Las palabras que rondaron la punta de mi lengua antes de ser tragadas no desaparecen. Irán tallando anillos de crecimiento en silencio dentro de mí.*"
+        "text": "*Saliendo por la puerta del colegio, hay un mensaje en mi móvil. 'Gracias por hoy jaja' — El tono de un amigo. Un tono perfectamente amistoso.*"
     },
     "friend_5": {
         "name": "Yo",
-        "text": "*Algunas historias perduran más precisamente porque nunca se concluyen. Esta estación será recordada así.*"
+        "text": "*...También me las tragué en este colegio.*"
     },
     "friend_6": {
         "name": "Yo",

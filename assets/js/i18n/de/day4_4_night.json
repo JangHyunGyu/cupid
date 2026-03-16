@@ -65,7 +65,7 @@
     },
     "wall_seo_15": {
         "name": "Ich",
-        "text": "*Seoyeon hörte auf zu sprechen. Ihre Lippen zittern. — Und langsam, ganz langsam, brach der Ausdruck zusammen, den sie so perfekt aufrechterhalten hatte. Tränen laufen über ihr Gesicht. Lautlos.*"
+        "text": "*Seoyeon hörte auf zu sprechen. Ihre Hände sind fest auf ihren Knien zusammengepresst.*"
     },
     "wall_seo_hug_choice": {
         "name": "Ich",
@@ -81,7 +81,7 @@
     },
     "wall_seo_hug_2": {
         "name": "Ich",
-        "text": "*Seoyeon vergrub ihr Gesicht an meiner Brust. Ihre schmalen Schultern zittern.*"
+        "text": "*Seoyeon vergrub ihr Gesicht an meiner Brust. Mein Schulhemd wird nass.*"
     },
     "wall_seo_hug_3": {
         "name": "서연(Seoyeon)",
@@ -130,7 +130,7 @@
     },
     "wall_seo_after_line_4": {
         "name": "Ich",
-        "text": "*Seoyeon lächelt. Ein ungeübtes Lächeln. — Ihr Make-up ist verschmiert, ihre Augen sind geschwollen, und trotzdem ist das das schönste Lächeln.*"
+        "text": "*Seoyeon lächelt. Ein ungeübtes Lächeln. — Das Make-up ist verschmiert, die Augen geschwollen. Aber ich kann den Blick nicht abwenden.*"
     },
     "wall_seo_after_line_5": {
         "name": "서연(Seoyeon)",
@@ -383,7 +383,7 @@
     },
     "wall_yuna_12": {
         "name": "Ich",
-        "text": "*Yunas Stimme zittert. — Ihre Sätze sind viel länger als sonst.*"
+        "text": "*Yunas Sätze sind viel länger als sonst. — Es ist das erste Mal, dass ich sie so viel reden höre.*"
     },
     "wall_yuna_13": {
         "name": "유나(Yuna)",
@@ -448,7 +448,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "Ich",
-        "text": "*Yuna dreht sich um. Ihre Schultern zittern.*"
+        "text": "*Yuna dreht sich um. Ihre Schritte sind schnell. — Nicht ganz rennen, aber der Gang von jemandem, der rennen will.*"
     },
     "wall_yuna_reject_4": {
         "name": "Ich",

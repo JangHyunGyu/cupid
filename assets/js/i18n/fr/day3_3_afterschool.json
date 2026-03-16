@@ -58,7 +58,7 @@
     },
     "after3_seo_choice1": {
         "name": "Moi",
-        "text": "*서연(Seoyeon) s’arrête un instant. Ses lèvres tremblent. — Puis elle sourit. Un sourire non répété.*"
+        "text": "*Seoyeon s'arrête un instant. Elle pose ses baguettes. Lentement.*"
     },
     "after3_seo_choice1_react": {
         "name": "서연(Seoyeon)",
@@ -271,7 +271,7 @@
     },
     "after3_confront_admit_6": {
         "name": "Moi",
-        "text": "*Son dos est droit. Parfaitement. — Mais ses épaules tremblent.*"
+        "text": "*Son dos est droit. Parfaitement. — Mais ses poings sont serrés. Les jointures sont blanches.*"
     },
     "after3_confront_excuse": {
         "name": "서연(Seoyeon)",

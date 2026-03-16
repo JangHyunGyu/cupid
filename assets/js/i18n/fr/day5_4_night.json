@@ -101,27 +101,27 @@
     },
     "true_epilogue_1": {
         "name": "Moi",
-        "text": "*J'ai essayé de ne pas mettre de nom sur ce sentiment. Parce qu'une fois nommé, on ne peut plus revenir en arrière.*"
+        "text": "*Cinq jours.*"
     },
     "true_epilogue_2": {
         "name": "Moi",
-        "text": "*Mais c'était déjà trop tard. Dès le premier jour, quand nos regards se sont croisés.*"
+        "text": "*L'uniforme était raide, les cerisiers me faisaient éternuer, et je ne savais pas quoi faire devant le portail.*"
     },
     "true_epilogue_3": {
         "name": "Moi",
-        "text": "*Je ne connais pas le moment exact où je suis tombé amoureux. Je sais juste qu'un jour, je ne pouvais plus imaginer un lendemain sans cette personne.*"
+        "text": "*Mais avec le recul — je crois que c'était déjà joué à l'instant où nos regards se sont croisés. Il m'a juste fallu cinq jours pour l'admettre.*"
     },
     "true_epilogue_4": {
         "name": "Moi",
-        "text": "*Certains diraient que même des sentiments comme ceux-ci ont une date de péremption. Mais je le sais. Ce n'est pas quelque chose qui refroidit — c'est quelque chose qui imprègne.*"
+        "text": "*Mon genou n'a pas guéri. Ma famille n'est pas plus heureuse. Ceux qui sont partis ne sont pas revenus. — Mais au moins, je n'ai plus besoin de m'entraîner à pleurer seul. Plus maintenant.*"
     },
     "true_epilogue_5": {
         "name": "Moi",
-        "text": "*Aimer quelqu'un entièrement — c'est porter une seule certitude au milieu de toute l'incertitude du monde.*"
+        "text": ""
     },
     "true_epilogue_6": {
         "name": "Moi",
-        "text": "*Mon genou n'est pas guéri. Ma famille n'est pas plus heureuse. Ceux qui sont partis ne sont pas revenus. — Mais au moins, je n'ai plus besoin de m'entraîner à pleurer seul. Plus maintenant.*"
+        "text": ""
     },
     "true_epilogue_7": {
         "name": "Système",
@@ -169,7 +169,7 @@
     },
     "mayhem_4": {
         "name": "Moi",
-        "text": "*C'est seulement après avoir regardé les trois s'éloigner que j'ai compris que la gentillesse de ne jamais savoir refuser est la violence la plus cruelle.*"
+        "text": "*J'ai vu le dos de trois personnes. Aucune ne s'est retournée. — C'était la réponse.*"
     },
     "mayhem_5": {
         "name": "Moi",
@@ -177,7 +177,7 @@
     },
     "mayhem_6": {
         "name": "Moi",
-        "text": "*La gentillesse de ne jamais refuser — la violence la plus cruelle.*"
+        "text": "*J'ai vu le dos de trois personnes. Aucune ne s'est retournée.*"
     },
     "mayhem_7": {
         "name": "Système",
@@ -225,23 +225,23 @@
     },
     "friend_1": {
         "name": "Moi",
-        "text": "*Je me souviens. Ces doigts repoussant les cheveux dans le vent, sur le toit.*"
+        "text": "*Au final, je n'ai pas pu le dire.*"
     },
     "friend_2": {
         "name": "Moi",
-        "text": "*Si j'avais dit je t'aime à ce moment-là, cette nuit aurait-elle été différente ?*"
+        "text": "*Je ne sais pas si c'est du regret ou un choix. Mais — cinq jours se sont terminés avec ces trois mots coincés dans ma gorge.*"
     },
     "friend_3": {
         "name": "Moi",
-        "text": "*La distance la plus proche est aussi la plus lointaine. Une distance appelée «amis.»*"
+        "text": "*C'était pareil dans mon ancien lycée. Et me revoilà.*"
     },
     "friend_4": {
         "name": "Moi",
-        "text": "*Les mots qui ont erré au bord de mes lèvres avant d'être avalés ne disparaissent pas. Ils graveront silencieusement des cernes de croissance en moi.*"
+        "text": "*En sortant du portail, il y a un message sur mon téléphone. 'Merci pour aujourd'hui lol' — Le ton d'un ami. Un ton parfaitement amical.*"
     },
     "friend_5": {
         "name": "Moi",
-        "text": "*Certaines histoires durent plus longtemps justement parce qu'elles ne se concluent jamais. Cette saison sera mémorisée ainsi.*"
+        "text": "*...Je les ai ravalés dans ce lycée aussi.*"
     },
     "friend_6": {
         "name": "Moi",
