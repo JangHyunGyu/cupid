@@ -37,19 +37,19 @@ Object.assign(SCENARIO[4], {
     },
     "morning4_seo_msg_1": {
         "background": "assets/images/background/student_room.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "condition": "route_seoyeon",
         "next": "morning4_end"
     },
     "morning4_yuna_msg_1": {
         "background": "assets/images/background/student_room.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "condition": "route_yuna",
         "next": "morning4_end"
     },
     "morning4_dain_msg_1": {
         "background": "assets/images/background/student_room.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "condition": "route_dain",
         "next": "morning4_end"
     },

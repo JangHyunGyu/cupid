@@ -55,7 +55,7 @@ Object.assign(SCENARIO[4], {
         "next": "wall_seo_2"
     },
     "wall_seo_2": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_seo_3"
@@ -322,13 +322,13 @@ Object.assign(SCENARIO[4], {
         "next": "wall_dain_2"
     },
     "wall_dain_2": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_dain_3"
     },
     "wall_dain_3": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_dain_4"

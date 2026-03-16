@@ -44,7 +44,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_msg_seo_1": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night_msg_seo_2"
     },
@@ -56,13 +56,13 @@ Object.assign(SCENARIO[1], {
     },
     "night_msg_seo_3": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night_msg_seo_4"
     },
     "night_msg_seo_4": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night_msg_seo_5"
     },
@@ -74,13 +74,13 @@ Object.assign(SCENARIO[1], {
     },
     "night_msg_yuna_1": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night_msg_yuna_2"
     },
     "night_msg_yuna_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night_msg_yuna_3"
     },
@@ -92,19 +92,19 @@ Object.assign(SCENARIO[1], {
     },
     "night_msg_dain_1": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "night_msg_dain_2"
     },
     "night_msg_dain_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "night_msg_dain_3"
     },
     "night_msg_dain_3": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "night_msg_dain_4"
     },
@@ -151,61 +151,61 @@ Object.assign(SCENARIO[1], {
     },
     "night_seo_late_1": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night_seo_late_2"
     },
     "night_seo_late_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night_seo_late_3"
     },
     "night_seo_late_3": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night_seo_freetalk"
     },
     "night_yuna_late_1": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night_yuna_late_2"
     },
     "night_yuna_late_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night_yuna_late_3"
     },
     "night_yuna_late_3": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night_yuna_late_4"
     },
     "night_yuna_late_4": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night_yuna_freetalk"
     },
     "night_dain_late_1": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "night_dain_late_2"
     },
     "night_dain_late_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "night_dain_late_3"
     },
     "night_dain_late_3": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "night_dain_late_4"
     },

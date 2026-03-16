@@ -51,40 +51,40 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "night3_faithful_msg_seo_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "condition": "seoyeon_day3_event",
         "next": "night3_faithful_msg_seo_2"
     },
     "night3_faithful_msg_seo_2": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night3_faithful_msg_seo_3"
     },
     "night3_faithful_msg_seo_3": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night3_dream_1"
     },
     "night3_faithful_msg_yuna_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "condition": "yuna_day3_event",
         "next": "night3_faithful_msg_yuna_2"
     },
     "night3_faithful_msg_yuna_2": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night3_dream_1"
     },
     "night3_faithful_msg_dain_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "condition": "dain_day3_event",
         "next": "night3_faithful_msg_dain_2"
     },
     "night3_faithful_msg_dain_2": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "night3_faithful_msg_dain_3"
     },
@@ -142,22 +142,22 @@ Object.assign(SCENARIO[3], {
         "next": "night3_cheat_msg_2"
     },
     "night3_cheat_msg_2": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night3_cheat_msg_3"
     },
     "night3_cheat_msg_3": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night3_cheat_msg_4"
     },
     "night3_cheat_msg_4": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night3_cheat_msg_5"
     },
     "night3_cheat_msg_5": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night3_nightmare_1"
     },
@@ -174,17 +174,17 @@ Object.assign(SCENARIO[3], {
         "next": "night3_nightmare_3"
     },
     "night3_nightmare_3": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night3_nightmare_4"
     },
     "night3_nightmare_4": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night3_nightmare_5"
     },
     "night3_nightmare_5": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "night3_nightmare_6"
     },
