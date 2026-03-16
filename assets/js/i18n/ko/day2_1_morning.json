@@ -9,23 +9,23 @@
     },
     "morning2_dain_1": {
         "name": "다인",
-        "text": "\"왔어?! 좋은 아침!!\""
+        "text": "왔어?! 좋은 아침!!"
     },
     "morning2_dain_2": {
         "name": "{name}",
-        "text": "\"...등이 나갈 뻔했어.\""
+        "text": "...등이 나갈 뻔했어."
     },
     "morning2_dain_3": {
         "name": "다인",
-        "text": "\"ㅋㅋ 이 정도로?! 체력 관리 좀 해!\""
+        "text": "ㅋㅋ 이 정도로?! 체력 관리 좀 해!"
     },
     "morning2_dain_4": {
         "name": "{name}",
-        "text": "\"너 아침부터 에너지 과잉 아냐?\""
+        "text": "너 아침부터 에너지 과잉 아냐?"
     },
     "morning2_dain_5": {
         "name": "다인",
-        "text": "\"이게 정상이야! 너가 부족한 거야!\""
+        "text": "이게 정상이야! 너가 부족한 거야!"
     },
     "morning2_dain_6": {
         "name": "{name}",
@@ -49,7 +49,7 @@
     },
     "morning2_seo_2": {
         "name": "서연",
-        "text": "\"어제 잘 잤어?\""
+        "text": "어제 잘 잤어?"
     },
     "morning2_seo_3": {
         "name": "{name}",
@@ -57,11 +57,11 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "\"학생회장이 교실까지 인사하러 와?\""
+        "text": "학생회장이 교실까지 인사하러 와?"
     },
     "morning2_seo_5": {
         "name": "서연",
-        "text": "\"지나가는 길이야. — 오늘도 재밌는 하루 되길.\""
+        "text": "지나가는 길이야. — 오늘도 재밌는 하루 되길."
     },
     "morning2_minsu_1": {
         "name": "{name}",
@@ -73,15 +73,15 @@
     },
     "morning2_minsu_3": {
         "name": "민수",
-        "text": "\"야, 전학 이틀 만에 학생회장이 인사하러 오냐? 나 1년 다녀도 눈도 안 마주치던데.\""
+        "text": "야, 전학 이틀 만에 학생회장이 인사하러 오냐? 나 1년 다녀도 눈도 안 마주치던데."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
-        "text": "\"인기가 없는 거 아닐까.\""
+        "text": "인기가 없는 거 아닐까."
     },
     "morning2_dain_claim_2": {
         "name": "민수",
-        "text": "\"...그건 맞는데 그게 중요한 게 아니잖아.\""
+        "text": "...그건 맞는데 그게 중요한 게 아니잖아."
     },
     "morning2_dain_claim_3": {
         "name": "{name}",
@@ -89,15 +89,15 @@
     },
     "morning2_dain_claim_4": {
         "name": "다인",
-        "text": "\"회장님도 우리 전학생한테 관심 있어?\""
+        "text": "회장님도 우리 전학생한테 관심 있어?"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
-        "text": "\"'우리' 전학생?\""
+        "text": "'우리' 전학생?"
     },
     "morning2_dain_claim_6": {
         "name": "다인",
-        "text": "\"아 내가 먼저 발견했으니까 우리 전학생이지! 선점이야 선점!\""
+        "text": "아 내가 먼저 발견했으니까 우리 전학생이지! 선점이야 선점!"
     },
     "morning2_break_1": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "morning2_seo_dust_2": {
         "name": "서연",
-        "text": "\"잠깐.\""
+        "text": "잠깐."
     },
     "morning2_seo_dust_3": {
         "name": "{name}",
@@ -117,15 +117,15 @@
     },
     "morning2_seo_dust_4": {
         "name": "서연",
-        "text": "\"옷에 뭐 묻었어.\""
+        "text": "옷에 뭐 묻었어."
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "\"......\""
+        "text": "......"
     },
     "morning2_seo_dust_6": {
         "name": "서연",
-        "text": "\"왜 그래? 먼지잖아.\""
+        "text": "왜 그래? 먼지잖아."
     },
     "morning2_dain_react_1": {
         "name": "{name}",
@@ -137,15 +137,15 @@
     },
     "morning2_dain_react_3": {
         "name": "다인",
-        "text": "\"야! 지금 뭐야?! 어깨 만진 거야?!\""
+        "text": "야! 지금 뭐야?! 어깨 만진 거야?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
-        "text": "\"먼지 털어준 거야.\""
+        "text": "먼지 털어준 거야."
     },
     "morning2_dain_react_5": {
         "name": "다인",
-        "text": "\"먼지... 먼지가 진짜 있었어?!\""
+        "text": "먼지... 먼지가 진짜 있었어?!"
     },
     "morning2_dain_react_6": {
         "name": "{name}",
@@ -157,23 +157,23 @@
     },
     "morning2_haeun_2": {
         "name": "하은",
-        "text": "\"저기, 전학생 분이죠? 저 학생회 부회장 하은이에요.\""
+        "text": "저기, 전학생 분이죠? 저 학생회 부회장 하은이에요."
     },
     "morning2_haeun_3": {
         "name": "{name}",
-        "text": "\"아, 네.\""
+        "text": "아, 네."
     },
     "morning2_haeun_4": {
         "name": "하은",
-        "text": "\"회장님이... 그러니까 서연 선배가 요즘 좀 달라진 것 같아서.\""
+        "text": "회장님이... 그러니까 서연 선배가 요즘 좀 달라진 것 같아서."
     },
     "morning2_haeun_5": {
         "name": "{name}",
-        "text": "\"달라졌다니?\""
+        "text": "달라졌다니?"
     },
     "morning2_haeun_6": {
         "name": "하은",
-        "text": "\"원래 저런 분 아니거든요. 다른 학생한테 먼저 다가가는 건... 제가 1년 봤는데 처음이에요.\""
+        "text": "원래 저런 분 아니거든요. 다른 학생한테 먼저 다가가는 건... 제가 1년 봤는데 처음이에요."
     },
     "morning2_haeun_7": {
         "name": "{name}",

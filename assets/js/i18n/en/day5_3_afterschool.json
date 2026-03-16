@@ -3,14 +3,13 @@
         "name": "Me",
         "text": "*The event is winding down. I naturally run into the two I didn't choose.*"
     },
-
     "after5_farewell_seo_1": {
         "name": "Me",
         "text": "*I run into Seoyeon in the hallway.*"
     },
     "after5_farewell_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Hah.\""
+        "text": "...Hah."
     },
     "after5_farewell_seo_3": {
         "name": "Me",
@@ -18,21 +17,20 @@
     },
     "after5_farewell_seo_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Well, I knew. You were always a variable outside my plans.\""
+        "text": "Well, I knew. You were always a variable outside my plans."
     },
     "after5_farewell_seo_5": {
         "name": "Me",
-        "text": "\"Seoyeon...\""
+        "text": "Seoyeon..."
     },
     "after5_farewell_seo_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"Next time, I'll be the one to take you.\""
+        "text": "Next time, I'll be the one to take you."
     },
     "after5_farewell_seo_7": {
         "name": "Me",
         "text": "*Seoyeon turns and waves. The same gesture as Day 1. She doesn't look back. Her back is straight. Perfectly. But this time, she isn't trembling.*"
     },
-
     "after5_farewell_yuna_1": {
         "name": "Me",
         "text": "*Yuna approaches in front of the library. Without a word, she hands me a book.*"
@@ -53,28 +51,26 @@
         "name": "Me",
         "text": "*Yuna's 'It was fun' is a word that compresses everything an ordinary person would say — 'Thank you, I liked you, let's meet again.'*"
     },
-
     "after5_farewell_dain_1": {
         "name": "Me",
         "text": "*Dain comes running from in front of the gym.*"
     },
     "after5_farewell_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"Tch, what a shame!\""
+        "text": "Tch, what a shame!"
     },
     "after5_farewell_dain_3": {
         "name": "Me",
-        "text": "\"Dain...\""
+        "text": "Dain..."
     },
     "after5_farewell_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"But hey, it's your choice. Next time you better give me a chance too!\""
+        "text": "But hey, it's your choice. Next time you better give me a chance too!"
     },
     "after5_farewell_dain_5": {
         "name": "Me",
         "text": "*She grins and punches my shoulder with her fist. Same force as Day 1. The exclamation marks are alive and well. Dain is Dain to the very end. That's her strength.*"
     },
-
     "after5_sunset_1": {
         "name": "Me",
         "text": "*The sun is setting. Five days are coming to an end.*"

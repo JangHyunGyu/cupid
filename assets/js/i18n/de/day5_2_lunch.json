@@ -5,23 +5,23 @@
     },
     "tour_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Hier haben wir uns zum ersten Mal getroffen.\""
+        "text": "Hier haben wir uns zum ersten Mal getroffen."
     },
     "tour_seo_3": {
         "name": "Ich",
-        "text": "\"Damals hätte ich fast Ärger bekommen, als ich 'Das ist zu viel für mich' gesagt habe.\""
+        "text": "Damals hätte ich fast Ärger bekommen, als ich 'Das ist zu viel für mich' gesagt habe."
     },
     "tour_seo_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Ich hab dich doch gar nicht geschimpft. — Du hast mir von dem Moment an gefallen.\""
+        "text": "Ich hab dich doch gar nicht geschimpft. — Du hast mir von dem Moment an gefallen."
     },
     "tour_seo_5": {
         "name": "Ich",
-        "text": "\"Vom ersten Tag an?\""
+        "text": "Vom ersten Tag an?"
     },
     "tour_seo_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Vielleicht war es nur eine Täuschung des Windes.\""
+        "text": "...Vielleicht war es nur eine Täuschung des Windes."
     },
     "tour_seo_7": {
         "name": "Ich",
@@ -29,15 +29,15 @@
     },
     "tour_seo_8": {
         "name": "서연(Seoyeon)",
-        "text": "\"Nach dem Abschluss möchte ich jemand sein, der für andere arbeitet.\""
+        "text": "Nach dem Abschluss möchte ich jemand sein, der für andere arbeitet."
     },
     "tour_seo_9": {
         "name": "Ich",
-        "text": "\"Nicht als Schülersprecherin?\""
+        "text": "Nicht als Schülersprecherin?"
     },
     "tour_seo_10": {
         "name": "서연(Seoyeon)",
-        "text": "\"Als ich selbst, nicht als Schülersprecherin. — Das hast du mir gezeigt. Dass es auch ohne Rolle in Ordnung ist.\""
+        "text": "Als ich selbst, nicht als Schülersprecherin. — Das hast du mir gezeigt. Dass es auch ohne Rolle in Ordnung ist."
     },
     "tour_seo_end": {
         "name": "Ich",
@@ -49,7 +49,7 @@
     },
     "tour_yuna_2": {
         "name": "유나(Yuna)",
-        "text": "\"...Hier.\""
+        "text": "...Hier."
     },
     "tour_yuna_3": {
         "name": "Ich",
@@ -57,19 +57,19 @@
     },
     "tour_yuna_4": {
         "name": "Ich",
-        "text": "\"Hier habe ich mich zum ersten Mal hingesetzt.\""
+        "text": "Hier habe ich mich zum ersten Mal hingesetzt."
     },
     "tour_yuna_5": {
         "name": "유나(Yuna)",
-        "text": "\"...Du hast damals drei Bücher genommen.\""
+        "text": "...Du hast damals drei Bücher genommen."
     },
     "tour_yuna_6": {
         "name": "Ich",
-        "text": "\"Du erinnerst dich noch daran?\""
+        "text": "Du erinnerst dich noch daran?"
     },
     "tour_yuna_7": {
         "name": "유나(Yuna)",
-        "text": "\"Ich erinnere mich an alles.\""
+        "text": "Ich erinnere mich an alles."
     },
     "tour_yuna_8": {
         "name": "Ich",
@@ -77,15 +77,15 @@
     },
     "tour_yuna_9": {
         "name": "유나(Yuna)",
-        "text": "\"Ich will schreiben.\""
+        "text": "Ich will schreiben."
     },
     "tour_yuna_10": {
         "name": "Ich",
-        "text": "\"Romane?\""
+        "text": "Romane?"
     },
     "tour_yuna_end": {
         "name": "유나(Yuna)",
-        "text": "\"...Ich würde mir wünschen, dass du sie liest. Als mein erster Leser.\""
+        "text": "...Ich würde mir wünschen, dass du sie liest. Als mein erster Leser."
     },
     "tour_dain_1": {
         "name": "Ich",
@@ -93,15 +93,15 @@
     },
     "tour_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"Hier haben wir Schere-Stein-Papier gespielt!\""
+        "text": "Hier haben wir Schere-Stein-Papier gespielt!"
     },
     "tour_dain_3": {
         "name": "Ich",
-        "text": "\"Du hast verloren.\""
+        "text": "Du hast verloren."
     },
     "tour_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"Fängst du IMMER NOCH damit an?! — Ach, aber das Melonenbrötchen damals war echt lecker.\""
+        "text": "Fängst du IMMER NOCH damit an?! — Ach, aber das Melonenbrötchen damals war echt lecker."
     },
     "tour_dain_5": {
         "name": "Ich",
@@ -109,23 +109,23 @@
     },
     "tour_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"Profi werden... da bin ich mir nicht mehr sicher.\""
+        "text": "Profi werden... da bin ich mir nicht mehr sicher."
     },
     "tour_dain_7": {
         "name": "Ich",
-        "text": "\"……\""
+        "text": "……"
     },
     "tour_dain_8": {
         "name": "다인(Dain)",
-        "text": "\"Aber manchmal habe ich Angst. Angst, jemand ohne Traum zu werden.\""
+        "text": "Aber manchmal habe ich Angst. Angst, jemand ohne Traum zu werden."
     },
     "tour_dain_9": {
         "name": "Ich",
-        "text": "\"Dann findest du eben einen neuen Traum.\""
+        "text": "Dann findest du eben einen neuen Traum."
     },
     "tour_dain_10": {
         "name": "다인(Dain)",
-        "text": "\"...Ja. Wenn du das so sagst, fühlt es sich an, als könnte es wirklich klappen.\""
+        "text": "...Ja. Wenn du das so sagst, fühlt es sich an, als könnte es wirklich klappen."
     },
     "tour_dain_end": {
         "name": "Ich",

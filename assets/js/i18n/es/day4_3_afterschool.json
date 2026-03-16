@@ -5,7 +5,7 @@
     },
     "confess_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Hay un último lugar que quiero mostrarte.\""
+        "text": "Hay un último lugar que quiero mostrarte."
     },
     "confess_seo_3": {
         "name": "Yo",
@@ -23,13 +23,13 @@
         "name": "Yo",
         "text": "*Mi corazón me ha subido hasta la garganta. Si no lo digo ahora -- nunca volveré a encontrar el valor.*",
         "choices": [
-            "\"Sabes que si huyes, te perseguiré. Así que quédate y escúchame.\"",
-            "\"...Esta vista es realmente hermosa.\""
+            "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
+            "...Esta vista es realmente hermosa."
         ]
     },
     "confess_seo_yes_1": {
         "name": "Yo",
-        "text": "\"Oye.\""
+        "text": "Oye."
     },
     "confess_seo_yes_2": {
         "name": "Yo",
@@ -41,7 +41,7 @@
     },
     "confess_seo_yes_4": {
         "name": "Yo",
-        "text": "\"Seoyeon. Siempre sonríes perfectamente. Siempre. Pero -- esos 0.5 segundos en que dejas de sonreír no dejan de inquietarme.\""
+        "text": "Seoyeon. Siempre sonríes perfectamente. Siempre. Pero -- esos 0.5 segundos en que dejas de sonreír no dejan de inquietarme."
     },
     "confess_seo_yes_5": {
         "name": "Yo",
@@ -49,7 +49,7 @@
     },
     "confess_seo_yes_6": {
         "name": "Yo",
-        "text": "\"La tú de ese momento me parece la verdadera Seoyeon. Y esa Seoyeon es la que me gusta.\""
+        "text": "La tú de ese momento me parece la verdadera Seoyeon. Y esa Seoyeon es la que me gusta."
     },
     "confess_seo_yes_7": {
         "name": "Yo",
@@ -61,15 +61,15 @@
     },
     "confess_seo_yes_9": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Yo también.\""
+        "text": "...Yo también."
     },
     "confess_seo_yes_10": {
         "name": "서연(Seoyeon)",
-        "text": "\"Desde el principio. Fuiste tú desde el principio.\""
+        "text": "Desde el principio. Fuiste tú desde el principio."
     },
     "confess_seo_yes_11": {
         "name": "서연(Seoyeon)",
-        "text": "\"-- No tienes idea de cuánto me contuve para no decirlo.\""
+        "text": "-- No tienes idea de cuánto me contuve para no decirlo."
     },
     "confess_seo_yes_12": {
         "name": "Yo",
@@ -77,7 +77,7 @@
     },
     "confess_seo_no_1": {
         "name": "Yo",
-        "text": "\"...Esta azotea es realmente bonita.\""
+        "text": "...Esta azotea es realmente bonita."
     },
     "confess_seo_no_2": {
         "name": "Yo",
@@ -89,7 +89,7 @@
     },
     "confess_seo_no_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"...La próxima vez que vengas aquí, trae algo diferente que decir.\""
+        "text": "...La próxima vez que vengas aquí, trae algo diferente que decir."
     },
     "confess_yuna_1": {
         "name": "Yo",
@@ -97,7 +97,7 @@
     },
     "confess_yuna_2": {
         "name": "유나(Yuna)",
-        "text": "\"...Hay un último lugar al que ir.\""
+        "text": "...Hay un último lugar al que ir."
     },
     "confess_yuna_3": {
         "name": "Yo",
@@ -115,13 +115,13 @@
         "name": "Yo",
         "text": "*Mi corazón me ha subido hasta la garganta. Si no lo digo ahora -- nunca volveré a encontrar el valor.*",
         "choices": [
-            "\"Sabes que si huyes, te perseguiré. Así que quédate y escúchame.\"",
-            "\"...Este lugar es realmente bonito.\""
+            "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
+            "...Este lugar es realmente bonito."
         ]
     },
     "confess_yuna_yes_1": {
         "name": "Yo",
-        "text": "\"Oye.\""
+        "text": "Oye."
     },
     "confess_yuna_yes_2": {
         "name": "Yo",
@@ -129,7 +129,7 @@
     },
     "confess_yuna_yes_3": {
         "name": "Yo",
-        "text": "\"Yuna. Al principio pensé que tu silencio era un muro. Pero no lo era.\""
+        "text": "Yuna. Al principio pensé que tu silencio era un muro. Pero no lo era."
     },
     "confess_yuna_yes_4": {
         "name": "Yo",
@@ -137,11 +137,11 @@
     },
     "confess_yuna_yes_5": {
         "name": "Yo",
-        "text": "\"Tú eras -- el tipo de persona que se sienta a tu lado en vez de hablar. Ese silencio era más cálido que las palabras de cualquiera.\""
+        "text": "Tú eras -- el tipo de persona que se sienta a tu lado en vez de hablar. Ese silencio era más cálido que las palabras de cualquiera."
     },
     "confess_yuna_yes_6": {
         "name": "Yo",
-        "text": "\"Me gustas.\""
+        "text": "Me gustas."
     },
     "confess_yuna_yes_7": {
         "name": "Yo",
@@ -153,11 +153,11 @@
     },
     "confess_yuna_yes_9": {
         "name": "유나(Yuna)",
-        "text": "\"...No te vayas. Esta vez, no te vayas.\""
+        "text": "...No te vayas. Esta vez, no te vayas."
     },
     "confess_yuna_no_1": {
         "name": "Yo",
-        "text": "\"...Este lugar es realmente bonito.\""
+        "text": "...Este lugar es realmente bonito."
     },
     "confess_yuna_no_2": {
         "name": "Yo",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_no_4": {
         "name": "유나(Yuna)",
-        "text": "\"...El final aún no ha llegado.\""
+        "text": "...El final aún no ha llegado."
     },
     "confess_dain_1": {
         "name": "Yo",
@@ -177,7 +177,7 @@
     },
     "confess_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"¡Último lugar! ¡¡Vamos!!\""
+        "text": "¡Último lugar! ¡¡Vamos!!"
     },
     "confess_dain_3": {
         "name": "Yo",
@@ -195,13 +195,13 @@
         "name": "Yo",
         "text": "*Mi corazón me ha subido hasta la garganta. Si no lo digo ahora -- nunca volveré a encontrar el valor.*",
         "choices": [
-            "\"Sabes que si huyes, te perseguiré. Así que quédate y escúchame.\"",
-            "\"...Este lugar es realmente grande.\""
+            "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
+            "...Este lugar es realmente grande."
         ]
     },
     "confess_dain_yes_1": {
         "name": "Yo",
-        "text": "\"Oye.\""
+        "text": "Oye."
     },
     "confess_dain_yes_2": {
         "name": "Yo",
@@ -209,7 +209,7 @@
     },
     "confess_dain_yes_3": {
         "name": "Yo",
-        "text": "\"Dain. ¿Sabes que cuando sonríes tus ojos se convierten en pequeñas medias lunas? Seguro no lo sabes -- es tu propia cara.\""
+        "text": "Dain. ¿Sabes que cuando sonríes tus ojos se convierten en pequeñas medias lunas? Seguro no lo sabes -- es tu propia cara."
     },
     "confess_dain_yes_4": {
         "name": "Yo",
@@ -217,11 +217,11 @@
     },
     "confess_dain_yes_5": {
         "name": "Yo",
-        "text": "\"-- Cuando esos ojos no me miran, no puedo respirar. No sé desde cuándo es así.\""
+        "text": "-- Cuando esos ojos no me miran, no puedo respirar. No sé desde cuándo es así."
     },
     "confess_dain_yes_6": {
         "name": "Yo",
-        "text": "\"Me gustas.\""
+        "text": "Me gustas."
     },
     "confess_dain_yes_7": {
         "name": "Yo",
@@ -233,15 +233,15 @@
     },
     "confess_dain_yes_9": {
         "name": "다인(Dain)",
-        "text": "\"...Espera. Mi corazón -- creo que voy a llorar -- ¿por qué estoy llorando?, estoy feliz --\""
+        "text": "...Espera. Mi corazón -- creo que voy a llorar -- ¿por qué estoy llorando?, estoy feliz --"
     },
     "confess_dain_yes_10": {
         "name": "다인(Dain)",
-        "text": "\"Yo también te quiero. Muchísimo.\""
+        "text": "Yo también te quiero. Muchísimo."
     },
     "confess_dain_no_1": {
         "name": "Yo",
-        "text": "\"...Este lugar es realmente grande.\""
+        "text": "...Este lugar es realmente grande."
     },
     "confess_dain_no_2": {
         "name": "Yo",
@@ -253,6 +253,6 @@
     },
     "confess_dain_no_4": {
         "name": "다인(Dain)",
-        "text": "\"...La próxima vez, no huyas.\""
+        "text": "...La próxima vez, no huyas."
     }
 }

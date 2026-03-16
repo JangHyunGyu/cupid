@@ -17,15 +17,15 @@
     },
     "true_seo_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Siento que frente a ti no tengo que ser perfecta.\""
+        "text": "Siento que frente a ti no tengo que ser perfecta."
     },
     "true_seo_4": {
         "name": "Yo",
-        "text": "\"Nunca tuviste que serlo.\""
+        "text": "Nunca tuviste que serlo."
     },
     "true_seo_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Lo sé. Pero me tomó cinco días creerlo.\""
+        "text": "...Lo sé. Pero me tomó cinco días creerlo."
     },
     "true_seo_6": {
         "name": "Yo",
@@ -33,7 +33,7 @@
     },
     "true_seo_7": {
         "name": "서연(Seoyeon)",
-        "text": "\"Prométemelo. — Quédate a mi lado.\""
+        "text": "Prométemelo. — Quédate a mi lado."
     },
     "true_seo_8": {
         "name": "Yo",
@@ -45,7 +45,7 @@
     },
     "true_yuna_2": {
         "name": "유나(Yuna)",
-        "text": "\"Era la única que conocía este lugar.\""
+        "text": "Era la única que conocía este lugar."
     },
     "true_yuna_3": {
         "name": "Yo",
@@ -53,15 +53,15 @@
     },
     "true_yuna_4": {
         "name": "유나(Yuna)",
-        "text": "\"Ahora tú también.\""
+        "text": "Ahora tú también."
     },
     "true_yuna_5": {
         "name": "Yo",
-        "text": "\"¿La tercera estrella?\""
+        "text": "¿La tercera estrella?"
     },
     "true_yuna_6": {
         "name": "유나(Yuna)",
-        "text": "\"...Lo recordabas.\""
+        "text": "...Lo recordabas."
     },
     "true_yuna_7": {
         "name": "Yo",
@@ -77,7 +77,7 @@
     },
     "true_dain_3": {
         "name": "다인(Dain)",
-        "text": "\"Mi corazón late muy rápido. Pon tu mano aquí.\""
+        "text": "Mi corazón late muy rápido. Pon tu mano aquí."
     },
     "true_dain_4": {
         "name": "Yo",
@@ -85,19 +85,19 @@
     },
     "true_dain_5": {
         "name": "Yo",
-        "text": "\"...Es rápido.\""
+        "text": "...Es rápido."
     },
     "true_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"¿Por qué me miras así? Es vergonzoso.\""
+        "text": "¿Por qué me miras así? Es vergonzoso."
     },
     "true_dain_7": {
         "name": "Yo",
-        "text": "\"No te estaba mirando.\""
+        "text": "No te estaba mirando."
     },
     "true_dain_8": {
         "name": "다인(Dain)",
-        "text": "\"¡¡Sí lo hacías!! ...Pero puedes seguir mirando.\""
+        "text": "¡¡Sí lo hacías!! ...Pero puedes seguir mirando."
     },
     "true_epilogue_1": {
         "name": "Yo",
@@ -165,7 +165,7 @@
     },
     "mayhem_3": {
         "name": "Yo",
-        "text": "*Dain estaba sonriendo. Brillante como siempre. — Pero los signos de exclamación habían desaparecido. \"Cuídate.\" La primera vez que escuché a Dain terminar una frase con un punto fue, para colmo, una despedida.*"
+        "text": "*Dain estaba sonriendo. Brillante como siempre. — Pero los signos de exclamación habían desaparecido. Cuídate. La primera vez que escuché a Dain terminar una frase con un punto fue, para colmo, una despedida.*"
     },
     "mayhem_4": {
         "name": "Yo",
@@ -185,19 +185,19 @@
     },
     "day5_ending_harem": {
         "name": "Yo",
-        "text": "*\"Me gustan todas.\" — Cuando esas palabras salieron de mi boca, las tres caras se congelaron a la vez.*"
+        "text": "*Me gustan todas. — Cuando esas palabras salieron de mi boca, las tres caras se congelaron a la vez.*"
     },
     "harem_1": {
         "name": "Yo",
-        "text": "*Seoyeon sonrió primero. \"...Bien. Al menos eres honesto.\" No fue mi imaginación que escuché rechinar de dientes detrás de esa sonrisa.*"
+        "text": "*Seoyeon sonrió primero. ...Bien. Al menos eres honesto. No fue mi imaginación que escuché rechinar de dientes detrás de esa sonrisa.*"
     },
     "harem_2": {
         "name": "Yo",
-        "text": "*Yuna bajó la cabeza. Por mucho rato. Y cuando la levantó, sus ojos secos sonreían. \"...Idiota.\" Dos frases de emoción comprimidas en una sola palabra.*"
+        "text": "*Yuna bajó la cabeza. Por mucho rato. Y cuando la levantó, sus ojos secos sonreían. ...Idiota. Dos frases de emoción comprimidas en una sola palabra.*"
     },
     "harem_3": {
         "name": "Yo",
-        "text": "*Dain me dio un puñetazo en el hombro. Dolió. \"¿Estás loco? ...Pero yo me enamoré de ti sabiendo que eras así, así que es culpa mía. Hmph.\"*"
+        "text": "*Dain me dio un puñetazo en el hombro. Dolió. ¿Estás loco? ...Pero yo me enamoré de ti sabiendo que eras así, así que es culpa mía. Hmph.*"
     },
     "harem_4": {
         "name": "Yo",
@@ -229,7 +229,7 @@
     },
     "friend_2": {
         "name": "Yo",
-        "text": "*Si hubiera dicho \"me gustas\" en ese momento, ¿esta noche habría sido diferente?*"
+        "text": "*Si hubiera dicho me gustas en ese momento, ¿esta noche habría sido diferente?*"
     },
     "friend_3": {
         "name": "Yo",

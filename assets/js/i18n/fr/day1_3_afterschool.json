@@ -37,7 +37,7 @@
     },
     "after_miss_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"Attention !!\""
+        "text": "Attention !!"
     },
     "after_miss_dain_3": {
         "name": "Moi",
@@ -45,15 +45,15 @@
     },
     "after_miss_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"Oh ! Bons réflexes !\""
+        "text": "Oh ! Bons réflexes !"
     },
     "after_miss_dain_5": {
         "name": "Moi",
-        "text": "\"Pourquoi tu sprintes dans le couloir ?\""
+        "text": "Pourquoi tu sprintes dans le couloir ?"
     },
     "after_miss_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"Je suis en retard ! Faut que j’aille au gymnase ! — Ah, à demain ! Le nouveau !\""
+        "text": "Je suis en retard ! Faut que j’aille au gymnase ! — Ah, à demain ! Le nouveau !"
     },
     "after_miss_dain_7": {
         "name": "Moi",
@@ -69,7 +69,7 @@
     },
     "after_miss_yuna_3": {
         "name": "유나(Yuna)",
-        "text": "\"......Merci.\""
+        "text": "......Merci."
     },
     "after_miss_yuna_4": {
         "name": "Moi",
@@ -81,23 +81,23 @@
     },
     "after_miss_seoyeon_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"T’étais où tout à l’heure ?\""
+        "text": "T’étais où tout à l’heure ?"
     },
     "after_miss_seoyeon_3": {
         "name": "Moi",
-        "text": "\"Tout à l’heure ?\""
+        "text": "Tout à l’heure ?"
     },
     "after_miss_seoyeon_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Le déjeuner. J’avais laissé le toit ouvert. Me faire attendre — audacieux pour un nouvel élève.\""
+        "text": "Le déjeuner. J’avais laissé le toit ouvert. Me faire attendre — audacieux pour un nouvel élève."
     },
     "after_miss_seoyeon_5": {
         "name": "Moi",
-        "text": "\"Tu as attendu ?\""
+        "text": "Tu as attendu ?"
     },
     "after_miss_seoyeon_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Je suis montée prendre l’air et la porte était ouverte, c’est tout.\""
+        "text": "...Je suis montée prendre l’air et la porte était ouverte, c’est tout."
     },
     "after_miss_seoyeon_7": {
         "name": "Moi",
@@ -105,7 +105,7 @@
     },
     "after_miss_seoyeon_8": {
         "name": "서연(Seoyeon)",
-        "text": "\"Demain, ne te sauve pas.\""
+        "text": "Demain, ne te sauve pas."
     },
     "after_end": {
         "name": "Moi",

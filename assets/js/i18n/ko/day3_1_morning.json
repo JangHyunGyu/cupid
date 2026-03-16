@@ -18,23 +18,23 @@
     },
     "morning3_seo_gate_2": {
         "name": "서연",
-        "text": "\"늦었네.\""
+        "text": "늦었네."
     },
     "morning3_seo_gate_3": {
         "name": "{name}",
-        "text": "\"...서연? 왜 여기서?\""
+        "text": "...서연? 왜 여기서?"
     },
     "morning3_seo_gate_4": {
         "name": "서연",
-        "text": "\"지각이면 어때. 같이 걸리면 덜 혼나지 않을까?\""
+        "text": "지각이면 어때. 같이 걸리면 덜 혼나지 않을까?"
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
-        "text": "\"그건 아닌 것 같은데.\""
+        "text": "그건 아닌 것 같은데."
     },
     "morning3_seo_gate_6": {
         "name": "서연",
-        "text": "\"...농담이야. 내가 어떻게든 해줄게.\""
+        "text": "...농담이야. 내가 어떻게든 해줄게."
     },
     "morning3_seo_gate_7": {
         "name": "{name}",
@@ -46,19 +46,19 @@
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
-        "text": "\"유나? 너도 지각이야?\""
+        "text": "유나? 너도 지각이야?"
     },
     "morning3_yuna_gate_3": {
         "name": "유나",
-        "text": "\"...어제 밤새 책 읽느라.\""
+        "text": "...어제 밤새 책 읽느라."
     },
     "morning3_yuna_gate_4": {
         "name": "{name}",
-        "text": "\"밤새?\""
+        "text": "밤새?"
     },
     "morning3_yuna_gate_5": {
         "name": "유나",
-        "text": "\"...결말이 궁금했어. 멈출 수가 없었어.\""
+        "text": "...결말이 궁금했어. 멈출 수가 없었어."
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "morning3_dain_gate_2": {
         "name": "다인",
-        "text": "\"야야야!! 늦었다!! 뛰어!!\""
+        "text": "야야야!! 늦었다!! 뛰어!!"
     },
     "morning3_dain_gate_3": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
-        "text": "\"잠깐 — 왜 손을 잡아?!\""
+        "text": "잠깐 — 왜 손을 잡아?!"
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning3_react_seo_1": {
         "name": "다인",
-        "text": "\"야! 회장님이랑 같이 왔어?! 아침부터?!\""
+        "text": "야! 회장님이랑 같이 왔어?! 아침부터?!"
     },
     "morning3_react_seo_2": {
         "name": "{name}",
@@ -102,15 +102,15 @@
     },
     "morning3_react_yuna_1": {
         "name": "서연",
-        "text": "\"아침부터 도서관 여자친구랑?\""
+        "text": "아침부터 도서관 여자친구랑?"
     },
     "morning3_react_yuna_2": {
         "name": "다인",
-        "text": "\"부러워!! 나도 아침에 같이 올 사람 없는데!!\""
+        "text": "부러워!! 나도 아침에 같이 올 사람 없는데!!"
     },
     "morning3_react_dain_1": {
         "name": "서연",
-        "text": "\"아침부터 체력 소모가 심하네. 점심에 도시락 줄까?\""
+        "text": "아침부터 체력 소모가 심하네. 점심에 도시락 줄까?"
     },
     "morning3_react_dain_2": {
         "name": "{name}",
@@ -122,14 +122,14 @@
     },
     "morning3_date_seo_1": {
         "name": "서연",
-        "text": "\"이번 주말에 시간 있어? 갈 데가 있는데.\""
+        "text": "이번 주말에 시간 있어? 갈 데가 있는데."
     },
     "morning3_date_seo_choice": {
         "name": "{name}",
         "text": "*서연이 복도에서 스치며 물어본다.*",
         "choices": [
-            "\"있어. 어디?\"",
-            "\"좀 바쁠 것 같은데\""
+            "있어. 어디?",
+            "좀 바쁠 것 같은데"
         ]
     },
     "morning3_date_seo_accept": {
@@ -142,7 +142,7 @@
     },
     "morning3_date_dain_1": {
         "name": "다인",
-        "text": "\"야! 주말에 뭐 해?! 같이 오락실 갈래?!\""
+        "text": "야! 주말에 뭐 해?! 같이 오락실 갈래?!"
     },
     "morning3_date_dain_2": {
         "name": "{name}",
@@ -156,8 +156,8 @@
         "name": "{name}",
         "text": "*다인이 쉬는 시간에 자리로 와서 물어본다.*",
         "choices": [
-            "\"좋아, 콜\"",
-            "\"주말은 좀...\""
+            "좋아, 콜",
+            "주말은 좀..."
         ]
     },
     "morning3_date_dain_accept": {
@@ -166,7 +166,7 @@
     },
     "morning3_date_dain_decline": {
         "name": "다인",
-        "text": "\"아 그래? 뭐 바쁘면 어쩔 수 없지!\""
+        "text": "아 그래? 뭐 바쁘면 어쩔 수 없지!"
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",

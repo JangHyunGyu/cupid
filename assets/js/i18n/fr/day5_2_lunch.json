@@ -5,23 +5,23 @@
     },
     "tour_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"C'est ici qu'on s'est rencontrés pour la première fois.\""
+        "text": "C'est ici qu'on s'est rencontrés pour la première fois."
     },
     "tour_seo_3": {
         "name": "Moi",
-        "text": "\"J'ai failli me faire gronder quand j'ai dit 'c'est trop pour moi' ce jour-là.\""
+        "text": "J'ai failli me faire gronder quand j'ai dit 'c'est trop pour moi' ce jour-là."
     },
     "tour_seo_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Je ne t'ai pas grondé, si ? — Tu m'as plu dès ce moment-là.\""
+        "text": "Je ne t'ai pas grondé, si ? — Tu m'as plu dès ce moment-là."
     },
     "tour_seo_5": {
         "name": "Moi",
-        "text": "\"Dès le premier jour ?\""
+        "text": "Dès le premier jour ?"
     },
     "tour_seo_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"...C'était peut-être une illusion du vent.\""
+        "text": "...C'était peut-être une illusion du vent."
     },
     "tour_seo_7": {
         "name": "Moi",
@@ -29,15 +29,15 @@
     },
     "tour_seo_8": {
         "name": "서연(Seoyeon)",
-        "text": "\"Après le diplôme, je veux être quelqu'un qui travaille pour les autres.\""
+        "text": "Après le diplôme, je veux être quelqu'un qui travaille pour les autres."
     },
     "tour_seo_9": {
         "name": "Moi",
-        "text": "\"Pas en tant que présidente du conseil des élèves ?\""
+        "text": "Pas en tant que présidente du conseil des élèves ?"
     },
     "tour_seo_10": {
         "name": "서연(Seoyeon)",
-        "text": "\"En tant que moi-même, pas la présidente. — C'est toi qui me l'as montré. Qu'on peut être soi-même sans le titre.\""
+        "text": "En tant que moi-même, pas la présidente. — C'est toi qui me l'as montré. Qu'on peut être soi-même sans le titre."
     },
     "tour_seo_end": {
         "name": "Moi",
@@ -49,7 +49,7 @@
     },
     "tour_yuna_2": {
         "name": "유나(Yuna)",
-        "text": "\"...Ici.\""
+        "text": "...Ici."
     },
     "tour_yuna_3": {
         "name": "Moi",
@@ -57,19 +57,19 @@
     },
     "tour_yuna_4": {
         "name": "Moi",
-        "text": "\"C'est ici que je me suis assis pour la première fois.\""
+        "text": "C'est ici que je me suis assis pour la première fois."
     },
     "tour_yuna_5": {
         "name": "유나(Yuna)",
-        "text": "\"...Tu avais pris trois livres ce jour-là.\""
+        "text": "...Tu avais pris trois livres ce jour-là."
     },
     "tour_yuna_6": {
         "name": "Moi",
-        "text": "\"Tu t'en souviens encore ?\""
+        "text": "Tu t'en souviens encore ?"
     },
     "tour_yuna_7": {
         "name": "유나(Yuna)",
-        "text": "\"Je me souviens de tout.\""
+        "text": "Je me souviens de tout."
     },
     "tour_yuna_8": {
         "name": "Moi",
@@ -77,15 +77,15 @@
     },
     "tour_yuna_9": {
         "name": "유나(Yuna)",
-        "text": "\"Je veux écrire.\""
+        "text": "Je veux écrire."
     },
     "tour_yuna_10": {
         "name": "Moi",
-        "text": "\"Des romans ?\""
+        "text": "Des romans ?"
     },
     "tour_yuna_end": {
         "name": "유나(Yuna)",
-        "text": "\"...J'aimerais que tu les lises. Comme mon premier lecteur.\""
+        "text": "...J'aimerais que tu les lises. Comme mon premier lecteur."
     },
     "tour_dain_1": {
         "name": "Moi",
@@ -93,15 +93,15 @@
     },
     "tour_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"On a joué à pierre-feuille-ciseaux ici !\""
+        "text": "On a joué à pierre-feuille-ciseaux ici !"
     },
     "tour_dain_3": {
         "name": "Moi",
-        "text": "\"Tu as perdu.\""
+        "text": "Tu as perdu."
     },
     "tour_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"T'en parles ENCORE ?! — Ah mais c'est vrai que ce pain melon était délicieux.\""
+        "text": "T'en parles ENCORE ?! — Ah mais c'est vrai que ce pain melon était délicieux."
     },
     "tour_dain_5": {
         "name": "Moi",
@@ -109,23 +109,23 @@
     },
     "tour_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"Devenir pro... je ne sais plus trop.\""
+        "text": "Devenir pro... je ne sais plus trop."
     },
     "tour_dain_7": {
         "name": "Moi",
-        "text": "\"……\""
+        "text": "……"
     },
     "tour_dain_8": {
         "name": "다인(Dain)",
-        "text": "\"Mais parfois j'ai peur. Peur de devenir quelqu'un sans rêve.\""
+        "text": "Mais parfois j'ai peur. Peur de devenir quelqu'un sans rêve."
     },
     "tour_dain_9": {
         "name": "Moi",
-        "text": "\"Il suffit d'en trouver un nouveau.\""
+        "text": "Il suffit d'en trouver un nouveau."
     },
     "tour_dain_10": {
         "name": "다인(Dain)",
-        "text": "\"...Ouais. Quand tu le dis comme ça, on dirait que c'est vraiment possible.\""
+        "text": "...Ouais. Quand tu le dis comme ça, on dirait que c'est vraiment possible."
     },
     "tour_dain_end": {
         "name": "Moi",

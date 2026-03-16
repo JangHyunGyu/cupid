@@ -13,7 +13,7 @@
     },
     "wall_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Tu peux sortir maintenant ? Au parc. — Pardon, c’est soudain.\""
+        "text": "Tu peux sortir maintenant ? Au parc. — Pardon, c’est soudain."
     },
     "wall_seo_3": {
         "name": "Moi",
@@ -21,11 +21,11 @@
     },
     "wall_seo_4": {
         "name": "Moi",
-        "text": "\"Seoyeon. Qu’est-ce qui se passe ?\""
+        "text": "Seoyeon. Qu’est-ce qui se passe ?"
     },
     "wall_seo_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Assieds-toi.\""
+        "text": "...Assieds-toi."
     },
     "wall_seo_6": {
         "name": "Moi",
@@ -33,11 +33,11 @@
     },
     "wall_seo_7": {
         "name": "서연(Seoyeon)",
-        "text": "\"Ma mère a appelé aujourd’hui.\""
+        "text": "Ma mère a appelé aujourd’hui."
     },
     "wall_seo_8": {
         "name": "서연(Seoyeon)",
-        "text": "\"Elle s’est encore disputée avec papa.\""
+        "text": "Elle s’est encore disputée avec papa."
     },
     "wall_seo_9": {
         "name": "Moi",
@@ -45,23 +45,23 @@
     },
     "wall_seo_10": {
         "name": "서연(Seoyeon)",
-        "text": "\"Notre maison a l’air normale de l’extérieur, non ? Grande maison, belle voiture, fille présidente du conseil des élèves. Mais maman et papa sont des étrangers sous le même toit depuis un an. Ils n’ont juste pas signé les papiers du divorce.\""
+        "text": "Notre maison a l’air normale de l’extérieur, non ? Grande maison, belle voiture, fille présidente du conseil des élèves. Mais maman et papa sont des étrangers sous le même toit depuis un an. Ils n’ont juste pas signé les papiers du divorce."
     },
     "wall_seo_11": {
         "name": "서연(Seoyeon)",
-        "text": "\"Maman m’a dit : «Au moins toi, tu dois être parfaite pour que cette famille tienne.»\""
+        "text": "Maman m’a dit : «Au moins toi, tu dois être parfaite pour que cette famille tienne.»"
     },
     "wall_seo_12": {
         "name": "서연(Seoyeon)",
-        "text": "\"J’avais dix ans. — Elle a dit ça à une enfant de dix ans.\""
+        "text": "J’avais dix ans. — Elle a dit ça à une enfant de dix ans."
     },
     "wall_seo_13": {
         "name": "서연(Seoyeon)",
-        "text": "\"C’est là que j’ai commencé à m’entraîner à sourire devant le miroir. L’angle pour relever les lèvres, le timing pour plisser les yeux.\""
+        "text": "C’est là que j’ai commencé à m’entraîner à sourire devant le miroir. L’angle pour relever les lèvres, le timing pour plisser les yeux."
     },
     "wall_seo_14": {
         "name": "서연(Seoyeon)",
-        "text": "\"Chaque fois qu’on me félicitait, je pensais : «Ce sourire aussi est répété — est-ce que quelqu’un a déjà vu la vraie moi ?»\""
+        "text": "Chaque fois qu’on me félicitait, je pensais : «Ce sourire aussi est répété — est-ce que quelqu’un a déjà vu la vraie moi ?»"
     },
     "wall_seo_15": {
         "name": "Moi",
@@ -85,7 +85,7 @@
     },
     "wall_seo_hug_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Pleurer devant quelqu’un — c’est la première fois depuis l’école primaire. Huit ans. — Pendant tout ce temps, je ne pleurais que seule dans les toilettes.\""
+        "text": "...Pleurer devant quelqu’un — c’est la première fois depuis l’école primaire. Huit ans. — Pendant tout ce temps, je ne pleurais que seule dans les toilettes."
     },
     "wall_seo_pinky_1": {
         "name": "Moi",
@@ -93,7 +93,7 @@
     },
     "wall_seo_pinky_2": {
         "name": "Moi",
-        "text": "\"Je te le promets. Quand tu veux pleurer, tu peux pleurer devant moi.\""
+        "text": "Je te le promets. Quand tu veux pleurer, tu peux pleurer devant moi."
     },
     "wall_seo_pinky_3": {
         "name": "Moi",
@@ -101,32 +101,32 @@
     },
     "wall_seo_pinky_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Pourquoi tu es comme ça. Pourquoi tu fais — des promesses si facilement.\""
+        "text": "...Pourquoi tu es comme ça. Pourquoi tu fais — des promesses si facilement."
     },
     "wall_seo_pinky_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"Tout le monde dit ça et puis disparaît.\""
+        "text": "Tout le monde dit ça et puis disparaît."
     },
     "wall_seo_line_choice": {
         "name": "Moi",
         "text": "*Seoyeon essuie ses larmes, me regardant avec des yeux tremblants.*",
         "choices": [
-            "\"Je préfère cette Seoyeon à la parfaite.\"",
-            "\"Tu n’es pas la présidente du conseil pour moi — tu es juste Seoyeon, ma petite amie.\"",
-            "\"Honnêtement, je te croyais parfaite. Mais merci de me montrer ce côté de toi.\""
+            "Je préfère cette Seoyeon à la parfaite.",
+            "Tu n’es pas la présidente du conseil pour moi — tu es juste Seoyeon, ma petite amie.",
+            "Honnêtement, je te croyais parfaite. Mais merci de me montrer ce côté de toi."
         ]
     },
     "wall_seo_after_line": {
         "name": "서연(Seoyeon)",
-        "text": "\"C’est vraiment bien comme ça ?\""
+        "text": "C’est vraiment bien comme ça ?"
     },
     "wall_seo_after_line_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Ce visage — c’est un désastre maintenant, non ? Le maquillage coulé, les yeux gonflés. — C’est vraiment bien comme ça ?\""
+        "text": "Ce visage — c’est un désastre maintenant, non ? Le maquillage coulé, les yeux gonflés. — C’est vraiment bien comme ça ?"
     },
     "wall_seo_after_line_3": {
         "name": "Moi",
-        "text": "\"C’est bien.\""
+        "text": "C’est bien."
     },
     "wall_seo_after_line_4": {
         "name": "Moi",
@@ -134,7 +134,7 @@
     },
     "wall_seo_after_line_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"Pour la première fois en huit ans, je crois que mon visage sans répétition est peut-être bien.\""
+        "text": "Pour la première fois en huit ans, je crois que mon visage sans répétition est peut-être bien."
     },
     "wall_seo_glimpse_1": {
         "name": "Moi",
@@ -158,11 +158,11 @@
     },
     "wall_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"Hé, t’es libre là ? mdr\""
+        "text": "Hé, t’es libre là ? mdr"
     },
     "wall_dain_3": {
         "name": "다인(Dain)",
-        "text": "\"Viens juste mdr ! J’ai laissé la porte arrière du gymnase ouverte !\""
+        "text": "Viens juste mdr ! J’ai laissé la porte arrière du gymnase ouverte !"
     },
     "wall_dain_4": {
         "name": "Moi",
@@ -170,19 +170,19 @@
     },
     "wall_dain_5": {
         "name": "다인(Dain)",
-        "text": "\"T’es là ?! T’es en retard !!\""
+        "text": "T’es là ?! T’es en retard !!"
     },
     "wall_dain_6": {
         "name": "Moi",
-        "text": "\"Qu’est-ce que tu fais au lycée la nuit ?\""
+        "text": "Qu’est-ce que tu fais au lycée la nuit ?"
     },
     "wall_dain_7": {
         "name": "다인(Dain)",
-        "text": "\"Je me faufile de temps en temps ! Pour m’entraîner !!\""
+        "text": "Je me faufile de temps en temps ! Pour m’entraîner !!"
     },
     "wall_dain_8": {
         "name": "다인(Dain)",
-        "text": "\"Fais-moi une passe !! Juste une fois !!\""
+        "text": "Fais-moi une passe !! Juste une fois !!"
     },
     "wall_dain_9": {
         "name": "Moi",
@@ -190,7 +190,7 @@
     },
     "wall_dain_10": {
         "name": "다인(Dain)",
-        "text": "\"Non, ça va !! J’ai juste un peu tourné mdr, c’est rien du...\""
+        "text": "Non, ça va !! J’ai juste un peu tourné mdr, c’est rien du..."
     },
     "wall_dain_11": {
         "name": "Moi",
@@ -198,7 +198,7 @@
     },
     "wall_dain_12": {
         "name": "Moi",
-        "text": "\"Dain. Tu ne vas pas bien.\""
+        "text": "Dain. Tu ne vas pas bien."
     },
     "wall_dain_13": {
         "name": "Moi",
@@ -206,11 +206,11 @@
     },
     "wall_dain_14": {
         "name": "다인(Dain)",
-        "text": "\"...Ligament croisé antérieur.\""
+        "text": "...Ligament croisé antérieur."
     },
     "wall_dain_15": {
         "name": "다인(Dain)",
-        "text": "\"L’été dernier.\""
+        "text": "L’été dernier."
     },
     "wall_dain_16": {
         "name": "Moi",
@@ -218,52 +218,52 @@
     },
     "wall_dain_17": {
         "name": "다인(Dain)",
-        "text": "\"J’ai été opérée, et le médecin — il a dit ça très prudemment. «La vie quotidienne ira bien, mais sauter comme avant...» — Je ne me souviens pas de ce qu’il a dit après. Tout est devenu silencieux.\""
+        "text": "J’ai été opérée, et le médecin — il a dit ça très prudemment. «La vie quotidienne ira bien, mais sauter comme avant...» — Je ne me souviens pas de ce qu’il a dit après. Tout est devenu silencieux."
     },
     "wall_dain_18": {
         "name": "다인(Dain)",
-        "text": "\"Bourse sportive. Pro. Équipe nationale. — Depuis mes cinq ans, c’était tout ce que j’avais. Et ça s’est terminé en une phrase.\""
+        "text": "Bourse sportive. Pro. Équipe nationale. — Depuis mes cinq ans, c’était tout ce que j’avais. Et ça s’est terminé en une phrase."
     },
     "wall_dain_19": {
         "name": "다인(Dain)",
-        "text": "\"Je ne l’ai dit à personne. Pas même à mes parents. «Dain ne serait pas Dain si elle ne pouvait plus jouer !» — Je ne voulais pas entendre ça.\""
+        "text": "Je ne l’ai dit à personne. Pas même à mes parents. «Dain ne serait pas Dain si elle ne pouvait plus jouer !» — Je ne voulais pas entendre ça."
     },
     "wall_dain_20": {
         "name": "다인(Dain)",
-        "text": "\"Chaque fois que quelqu’un au lycée disait «Quelle énergie !» — ici, là-dedans. ...j’avais envie de mourir.\""
+        "text": "Chaque fois que quelqu’un au lycée disait «Quelle énergie !» — ici, là-dedans. ...j’avais envie de mourir."
     },
     "wall_dain_21": {
         "name": "다인(Dain)",
-        "text": "\"Aujourd’hui aussi. En courant pendant notre rendez-vous. En faisant semblant d’être joyeuse à côté de toi. Mon genou hurlait.\""
+        "text": "Aujourd’hui aussi. En courant pendant notre rendez-vous. En faisant semblant d’être joyeuse à côté de toi. Mon genou hurlait."
     },
     "wall_dain_22": {
         "name": "다인(Dain)",
-        "text": "\"— Mais si je te montre que j’ai mal aussi, il ne me reste plus rien.\""
+        "text": "— Mais si je te montre que j’ai mal aussi, il ne me reste plus rien."
     },
     "wall_dain_choice": {
         "name": "Moi",
         "text": "*Dain serre le ballon, tête baissée. Ses épaules tremblent.*",
         "choices": [
-            "\"Le volley n’est pas ton seul rêve, Dain. Cherchons-en un nouveau ensemble.\"",
-            "\"Tu peux pleurer. Tu n’as pas à faire semblant d’être joyeuse. Pas avec moi.\"",
-            "\"...Tu veux que je te fasse une dernière passe ? Une toute dernière.\""
+            "Le volley n’est pas ton seul rêve, Dain. Cherchons-en un nouveau ensemble.",
+            "Tu peux pleurer. Tu n’as pas à faire semblant d’être joyeuse. Pas avec moi.",
+            "...Tu veux que je te fasse une dernière passe ? Une toute dernière."
         ]
     },
     "wall_dain_newdream_1": {
         "name": "다인(Dain)",
-        "text": "\"...Un nouveau rêve ?\""
+        "text": "...Un nouveau rêve ?"
     },
     "wall_dain_newdream_2": {
         "name": "다인(Dain)",
-        "text": "\"...Comme entraîneuse, ou préparatrice physique. J’aime bien enseigner.\""
+        "text": "...Comme entraîneuse, ou préparatrice physique. J’aime bien enseigner."
     },
     "wall_dain_newdream_3": {
         "name": "Moi",
-        "text": "\"Tu serais l’entraîneuse la plus passionnée du monde.\""
+        "text": "Tu serais l’entraîneuse la plus passionnée du monde."
     },
     "wall_dain_newdream_4": {
         "name": "다인(Dain)",
-        "text": "\"...Idiot, si tu dis des trucs comme ça je vais pleurer...\""
+        "text": "...Idiot, si tu dis des trucs comme ça je vais pleurer..."
     },
     "wall_dain_cry_1": {
         "name": "Moi",
@@ -275,15 +275,15 @@
     },
     "wall_dain_cry_3": {
         "name": "다인(Dain)",
-        "text": "\"Toute seule... à bander mon genou chaque matin...\""
+        "text": "Toute seule... à bander mon genou chaque matin..."
     },
     "wall_dain_cry_4": {
         "name": "다인(Dain)",
-        "text": "\"Je l’ai mis dans l’alarme de mon téléphone. «Souris aujourd’hui !!»...\""
+        "text": "Je l’ai mis dans l’alarme de mon téléphone. «Souris aujourd’hui !!»..."
     },
     "wall_dain_cry_5": {
         "name": "다인(Dain)",
-        "text": "\"Chaque matin je voyais ça... ces deux points d’exclamation... et je me forçais à sourire...\""
+        "text": "Chaque matin je voyais ça... ces deux points d’exclamation... et je me forçais à sourire..."
     },
     "wall_dain_cry_6": {
         "name": "Moi",
@@ -303,15 +303,15 @@
     },
     "wall_dain_lastspike_4": {
         "name": "다인(Dain)",
-        "text": "\"...Héhé. Ça fait mal. Mais ça fait un bien étrange. — Je suis contente que mon dernier coup sur ce terrain ait été une passe de {name}.\""
+        "text": "...Héhé. Ça fait mal. Mais ça fait un bien étrange. — Je suis contente que mon dernier coup sur ce terrain ait été une passe de {name}."
     },
     "wall_dain_lastspike_5": {
         "name": "다인(Dain)",
-        "text": "\"Au revoir, terrain.\""
+        "text": "Au revoir, terrain."
     },
     "wall_dain_lastspike_6": {
         "name": "다인(Dain)",
-        "text": "\"— Treize ans depuis mes cinq ans. Merci.\""
+        "text": "— Treize ans depuis mes cinq ans. Merci."
     },
     "wall_dain_farewell_1": {
         "name": "Moi",
@@ -347,7 +347,7 @@
     },
     "wall_yuna_3": {
         "name": "유나(Yuna)",
-        "text": "\"Suis-moi.\""
+        "text": "Suis-moi."
     },
     "wall_yuna_4": {
         "name": "Moi",
@@ -359,7 +359,7 @@
     },
     "wall_yuna_6": {
         "name": "유나(Yuna)",
-        "text": "\"Ça. Je l’ai reçu il y a un an.\""
+        "text": "Ça. Je l’ai reçu il y a un an."
     },
     "wall_yuna_7": {
         "name": "Moi",
@@ -367,19 +367,19 @@
     },
     "wall_yuna_8": {
         "name": "Moi",
-        "text": "\"...Junho Lee ?\""
+        "text": "...Junho Lee ?"
     },
     "wall_yuna_9": {
         "name": "유나(Yuna)",
-        "text": "\"Un aîné qui venait ici avec moi. — La seule personne dont j’étais proche.\""
+        "text": "Un aîné qui venait ici avec moi. — La seule personne dont j’étais proche."
     },
     "wall_yuna_10": {
         "name": "유나(Yuna)",
-        "text": "\"Au collège, j’étais invisible. Personne dans la classe ne me parlait.\""
+        "text": "Au collège, j’étais invisible. Personne dans la classe ne me parlait."
     },
     "wall_yuna_11": {
         "name": "유나(Yuna)",
-        "text": "\"Il a été le premier. «J’ai aimé ce que tu écris» — ces mots. Pour moi, c’était la preuve que j’existais.\""
+        "text": "Il a été le premier. «J’ai aimé ce que tu écris» — ces mots. Pour moi, c’était la preuve que j’existais."
     },
     "wall_yuna_12": {
         "name": "Moi",
@@ -387,36 +387,36 @@
     },
     "wall_yuna_13": {
         "name": "유나(Yuna)",
-        "text": "\"Un jour il a été transféré. Sans contact. Juste cette lettre.\""
+        "text": "Un jour il a été transféré. Sans contact. Juste cette lettre."
     },
     "wall_yuna_14": {
         "name": "유나(Yuna)",
-        "text": "\"La personne qui prouvait mon existence — a disparu. J’ai eu l’impression que j’allais redevenir invisible.\""
+        "text": "La personne qui prouvait mon existence — a disparu. J’ai eu l’impression que j’allais redevenir invisible."
     },
     "wall_yuna_15": {
         "name": "유나(Yuna)",
-        "text": "\"Quand tu es venu à la bibliothèque pour la première fois. Tu avais une aura similaire à la sienne. — C’est pour ça que j’avais peur. Si je me rapprochais encore, tu pourrais disparaître aussi.\""
+        "text": "Quand tu es venu à la bibliothèque pour la première fois. Tu avais une aura similaire à la sienne. — C’est pour ça que j’avais peur. Si je me rapprochais encore, tu pourrais disparaître aussi."
     },
     "wall_yuna_16": {
         "name": "유나(Yuna)",
-        "text": "\"Mais tu es venu chaque jour. Silencieusement. — Sans disparaître.\""
+        "text": "Mais tu es venu chaque jour. Silencieusement. — Sans disparaître."
     },
     "wall_yuna_choice": {
         "name": "Moi",
         "text": "*Les yeux de Yuna brillent de larmes. — C’est la première fois que je l’entends parler autant.*",
         "choices": [
-            "\"Je ne suis pas cet aîné. Je suis moi. Mais je resterai à tes côtés.\"",
-            "\"Même si je suis son remplaçant, ça me va. Je veux être la personne dont tu as besoin.\"",
-            "\"...Alors tu t’es rapprochée de moi à cause de lui ? Comme remplaçant ?\""
+            "Je ne suis pas cet aîné. Je suis moi. Mais je resterai à tes côtés.",
+            "Même si je suis son remplaçant, ça me va. Je veux être la personne dont tu as besoin.",
+            "...Alors tu t’es rapprochée de moi à cause de lui ? Comme remplaçant ?"
         ]
     },
     "wall_yuna_moved_1": {
         "name": "유나(Yuna)",
-        "text": "\"...Au début, peut-être que je poursuivais son ombre.\""
+        "text": "...Au début, peut-être que je poursuivais son ombre."
     },
     "wall_yuna_moved_2": {
         "name": "유나(Yuna)",
-        "text": "\"Mais maintenant...\""
+        "text": "Mais maintenant..."
     },
     "wall_yuna_moved_3": {
         "name": "Moi",
@@ -424,7 +424,7 @@
     },
     "wall_yuna_moved_4": {
         "name": "유나(Yuna)",
-        "text": "\"Maintenant c’est toi que je vois. Toi seul.\""
+        "text": "Maintenant c’est toi que je vois. Toi seul."
     },
     "wall_yuna_moved_5": {
         "name": "Moi",
@@ -432,7 +432,7 @@
     },
     "wall_yuna_sub_1": {
         "name": "유나(Yuna)",
-        "text": "\"...Idiot. Tu n’es pas un remplaçant. Tu es déjà bien plus que suffisant en étant toi-même.\""
+        "text": "...Idiot. Tu n’es pas un remplaçant. Tu es déjà bien plus que suffisant en étant toi-même."
     },
     "wall_yuna_sub_2": {
         "name": "Moi",
@@ -440,11 +440,11 @@
     },
     "wall_yuna_reject_1": {
         "name": "유나(Yuna)",
-        "text": "\"......Tu penses ça ?\""
+        "text": "......Tu penses ça ?"
     },
     "wall_yuna_reject_2": {
         "name": "유나(Yuna)",
-        "text": "\"...Oui. C’était peut-être le cas.\""
+        "text": "...Oui. C’était peut-être le cas."
     },
     "wall_yuna_reject_3": {
         "name": "Moi",

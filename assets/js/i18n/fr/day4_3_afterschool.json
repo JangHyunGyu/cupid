@@ -5,7 +5,7 @@
     },
     "confess_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Il y a un dernier endroit que je veux te montrer.\""
+        "text": "Il y a un dernier endroit que je veux te montrer."
     },
     "confess_seo_3": {
         "name": "Moi",
@@ -23,13 +23,13 @@
         "name": "Moi",
         "text": "*Mon cœur est monté jusqu'à ma gorge. Si je ne le dis pas maintenant -- je ne retrouverai jamais le courage.*",
         "choices": [
-            "\"Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.\"",
-            "\"...Cette vue est vraiment magnifique.\""
+            "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
+            "...Cette vue est vraiment magnifique."
         ]
     },
     "confess_seo_yes_1": {
         "name": "Moi",
-        "text": "\"Hé.\""
+        "text": "Hé."
     },
     "confess_seo_yes_2": {
         "name": "Moi",
@@ -41,7 +41,7 @@
     },
     "confess_seo_yes_4": {
         "name": "Moi",
-        "text": "\"Seoyeon. Tu souris parfaitement. Toujours. Mais -- ces 0,5 secondes où tu arrêtes de sourire n'arrêtent pas de me hanter.\""
+        "text": "Seoyeon. Tu souris parfaitement. Toujours. Mais -- ces 0,5 secondes où tu arrêtes de sourire n'arrêtent pas de me hanter."
     },
     "confess_seo_yes_5": {
         "name": "Moi",
@@ -49,7 +49,7 @@
     },
     "confess_seo_yes_6": {
         "name": "Moi",
-        "text": "\"La toi de cet instant me semble être la vraie Seoyeon. Et c'est cette Seoyeon que j'aime.\""
+        "text": "La toi de cet instant me semble être la vraie Seoyeon. Et c'est cette Seoyeon que j'aime."
     },
     "confess_seo_yes_7": {
         "name": "Moi",
@@ -61,15 +61,15 @@
     },
     "confess_seo_yes_9": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Moi aussi.\""
+        "text": "...Moi aussi."
     },
     "confess_seo_yes_10": {
         "name": "서연(Seoyeon)",
-        "text": "\"Depuis le début. C'était toi depuis le début.\""
+        "text": "Depuis le début. C'était toi depuis le début."
     },
     "confess_seo_yes_11": {
         "name": "서연(Seoyeon)",
-        "text": "\"-- Tu n'imagines pas à quel point je me suis retenue pour ne pas le dire.\""
+        "text": "-- Tu n'imagines pas à quel point je me suis retenue pour ne pas le dire."
     },
     "confess_seo_yes_12": {
         "name": "Moi",
@@ -77,7 +77,7 @@
     },
     "confess_seo_no_1": {
         "name": "Moi",
-        "text": "\"...Ce toit est vraiment beau.\""
+        "text": "...Ce toit est vraiment beau."
     },
     "confess_seo_no_2": {
         "name": "Moi",
@@ -89,7 +89,7 @@
     },
     "confess_seo_no_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"...La prochaine fois que tu viens ici, prépare autre chose à dire.\""
+        "text": "...La prochaine fois que tu viens ici, prépare autre chose à dire."
     },
     "confess_yuna_1": {
         "name": "Moi",
@@ -97,7 +97,7 @@
     },
     "confess_yuna_2": {
         "name": "유나(Yuna)",
-        "text": "\"...Il y a un dernier endroit où aller.\""
+        "text": "...Il y a un dernier endroit où aller."
     },
     "confess_yuna_3": {
         "name": "Moi",
@@ -115,13 +115,13 @@
         "name": "Moi",
         "text": "*Mon cœur est monté jusqu'à ma gorge. Si je ne le dis pas maintenant -- je ne retrouverai jamais le courage.*",
         "choices": [
-            "\"Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.\"",
-            "\"...Cet endroit est vraiment bien.\""
+            "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
+            "...Cet endroit est vraiment bien."
         ]
     },
     "confess_yuna_yes_1": {
         "name": "Moi",
-        "text": "\"Hé.\""
+        "text": "Hé."
     },
     "confess_yuna_yes_2": {
         "name": "Moi",
@@ -129,7 +129,7 @@
     },
     "confess_yuna_yes_3": {
         "name": "Moi",
-        "text": "\"Yuna. Au début, je pensais que ton silence était un mur. Mais ce n'était pas le cas.\""
+        "text": "Yuna. Au début, je pensais que ton silence était un mur. Mais ce n'était pas le cas."
     },
     "confess_yuna_yes_4": {
         "name": "Moi",
@@ -137,11 +137,11 @@
     },
     "confess_yuna_yes_5": {
         "name": "Moi",
-        "text": "\"Tu étais -- le genre de personne qui s'assoit à côté de toi au lieu de parler. Ce silence était plus chaleureux que les mots de quiconque.\""
+        "text": "Tu étais -- le genre de personne qui s'assoit à côté de toi au lieu de parler. Ce silence était plus chaleureux que les mots de quiconque."
     },
     "confess_yuna_yes_6": {
         "name": "Moi",
-        "text": "\"Je t'aime.\""
+        "text": "Je t'aime."
     },
     "confess_yuna_yes_7": {
         "name": "Moi",
@@ -153,11 +153,11 @@
     },
     "confess_yuna_yes_9": {
         "name": "유나(Yuna)",
-        "text": "\"...Ne pars pas. Cette fois, ne pars pas.\""
+        "text": "...Ne pars pas. Cette fois, ne pars pas."
     },
     "confess_yuna_no_1": {
         "name": "Moi",
-        "text": "\"...Cet endroit est vraiment bien.\""
+        "text": "...Cet endroit est vraiment bien."
     },
     "confess_yuna_no_2": {
         "name": "Moi",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_no_4": {
         "name": "유나(Yuna)",
-        "text": "\"...La fin n'est pas encore arrivée.\""
+        "text": "...La fin n'est pas encore arrivée."
     },
     "confess_dain_1": {
         "name": "Moi",
@@ -177,7 +177,7 @@
     },
     "confess_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"Dernier endroit !! On y va !!\""
+        "text": "Dernier endroit !! On y va !!"
     },
     "confess_dain_3": {
         "name": "Moi",
@@ -195,13 +195,13 @@
         "name": "Moi",
         "text": "*Mon cœur est monté jusqu'à ma gorge. Si je ne le dis pas maintenant -- je ne retrouverai jamais le courage.*",
         "choices": [
-            "\"Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.\"",
-            "\"...Cet endroit est vraiment grand.\""
+            "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
+            "...Cet endroit est vraiment grand."
         ]
     },
     "confess_dain_yes_1": {
         "name": "Moi",
-        "text": "\"Hé.\""
+        "text": "Hé."
     },
     "confess_dain_yes_2": {
         "name": "Moi",
@@ -209,7 +209,7 @@
     },
     "confess_dain_yes_3": {
         "name": "Moi",
-        "text": "\"Dain. Tu sais que quand tu souris, tes yeux deviennent des petits croissants de lune ? Tu ne le sais sûrement pas -- c'est ton propre visage.\""
+        "text": "Dain. Tu sais que quand tu souris, tes yeux deviennent des petits croissants de lune ? Tu ne le sais sûrement pas -- c'est ton propre visage."
     },
     "confess_dain_yes_4": {
         "name": "Moi",
@@ -217,11 +217,11 @@
     },
     "confess_dain_yes_5": {
         "name": "Moi",
-        "text": "\"-- Quand ces yeux ne me regardent pas, je n'arrive plus à respirer. Je ne sais pas depuis quand c'est comme ça.\""
+        "text": "-- Quand ces yeux ne me regardent pas, je n'arrive plus à respirer. Je ne sais pas depuis quand c'est comme ça."
     },
     "confess_dain_yes_6": {
         "name": "Moi",
-        "text": "\"Je t'aime.\""
+        "text": "Je t'aime."
     },
     "confess_dain_yes_7": {
         "name": "Moi",
@@ -233,15 +233,15 @@
     },
     "confess_dain_yes_9": {
         "name": "다인(Dain)",
-        "text": "\"...Attends. Mon cœur -- je vais pleurer -- pourquoi je pleure, je suis contente --\""
+        "text": "...Attends. Mon cœur -- je vais pleurer -- pourquoi je pleure, je suis contente --"
     },
     "confess_dain_yes_10": {
         "name": "다인(Dain)",
-        "text": "\"Moi aussi je t'aime. Énormément.\""
+        "text": "Moi aussi je t'aime. Énormément."
     },
     "confess_dain_no_1": {
         "name": "Moi",
-        "text": "\"...Cet endroit est vraiment grand.\""
+        "text": "...Cet endroit est vraiment grand."
     },
     "confess_dain_no_2": {
         "name": "Moi",
@@ -253,6 +253,6 @@
     },
     "confess_dain_no_4": {
         "name": "다인(Dain)",
-        "text": "\"...La prochaine fois, ne fuis pas.\""
+        "text": "...La prochaine fois, ne fuis pas."
     }
 }

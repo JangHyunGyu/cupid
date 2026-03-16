@@ -13,11 +13,11 @@
     },
     "night3_faithful_msg_seo_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"Was du heute gesehen hast, ist ein Geheimnis\""
+        "text": "Was du heute gesehen hast, ist ein Geheimnis"
     },
     "night3_faithful_msg_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Aber du darfst wiederkommen\""
+        "text": "...Aber du darfst wiederkommen"
     },
     "night3_faithful_msg_seo_3": {
         "name": "Ich",
@@ -29,15 +29,15 @@
     },
     "night3_faithful_msg_yuna_2": {
         "name": "유나(Yuna)",
-        "text": "\"Der Roman, das Ende habe ich noch nicht entschieden\""
+        "text": "Der Roman, das Ende habe ich noch nicht entschieden"
     },
     "night3_faithful_msg_dain_1": {
         "name": "다인(Dain)",
-        "text": "\"Wenn du nach meinem Knöchel fragen willst, komm persönlich fragen haha\""
+        "text": "Wenn du nach meinem Knöchel fragen willst, komm persönlich fragen haha"
     },
     "night3_faithful_msg_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"Ach, aber danke\""
+        "text": "Ach, aber danke"
     },
     "night3_faithful_msg_dain_3": {
         "name": "Ich",
@@ -61,19 +61,19 @@
     },
     "night3_cheat_msg_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Sei nur so zu mir\""
+        "text": "Sei nur so zu mir"
     },
     "night3_cheat_msg_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Bitte\""
+        "text": "...Bitte"
     },
     "night3_cheat_msg_4": {
         "name": "유나(Yuna)",
-        "text": "\"...Lüg nicht\""
+        "text": "...Lüg nicht"
     },
     "night3_cheat_msg_5": {
         "name": "유나(Yuna)",
-        "text": "\"Das ist alles\""
+        "text": "Das ist alles"
     },
     "night3_nightmare_1": {
         "name": "Ich",
@@ -85,15 +85,15 @@
     },
     "night3_nightmare_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Du hast es versprochen. Dass es nur ich wäre...\""
+        "text": "Du hast es versprochen. Dass es nur ich wäre..."
     },
     "night3_nightmare_4": {
         "name": "유나(Yuna)",
-        "text": "\"Ich habe gesagt, du sollst nicht lügen.\""
+        "text": "Ich habe gesagt, du sollst nicht lügen."
     },
     "night3_nightmare_5": {
         "name": "다인(Dain)",
-        "text": "\"Du hast gesagt, du kommst. Ich habe gewartet.\""
+        "text": "Du hast gesagt, du kommst. Ich habe gewartet."
     },
     "night3_nightmare_6": {
         "name": "Ich",

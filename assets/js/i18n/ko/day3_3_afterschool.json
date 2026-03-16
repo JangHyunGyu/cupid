@@ -26,23 +26,23 @@
     },
     "after3_seo_4": {
         "name": "서연",
-        "text": "\"......\""
+        "text": "......"
     },
     "after3_seo_5": {
         "name": "{name}",
-        "text": "\"서연?\""
+        "text": "서연?"
     },
     "after3_seo_6": {
         "name": "서연",
-        "text": "\"...봤어?\""
+        "text": "...봤어?"
     },
     "after3_seo_7": {
         "name": "{name}",
-        "text": "\"뭘?\""
+        "text": "뭘?"
     },
     "after3_seo_8": {
         "name": "서연",
-        "text": "\"이런 모습. — 이건 비밀이야.\""
+        "text": "이런 모습. — 이건 비밀이야."
     },
     "after3_seo_9": {
         "name": "{name}",
@@ -50,10 +50,10 @@
     },
     "after3_seo_choice": {
         "name": "서연",
-        "text": "\"다음에 내가 부탁하면 무조건 들어줘야 해. — 대가야.\"",
+        "text": "다음에 내가 부탁하면 무조건 들어줘야 해. — 대가야.",
         "choices": [
-            "\"완벽하지 않아도 괜찮은데\"",
-            "\"비밀 지켜줄게\""
+            "완벽하지 않아도 괜찮은데",
+            "비밀 지켜줄게"
         ]
     },
     "after3_seo_choice1": {
@@ -62,7 +62,7 @@
     },
     "after3_seo_choice1_react": {
         "name": "서연",
-        "text": "\"...그런 말. 쉽게 하면 안 되는 건데.\""
+        "text": "...그런 말. 쉽게 하면 안 되는 건데."
     },
     "after3_seo_choice2": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "after3_yuna_6": {
         "name": "유나",
-        "text": "\"뭐 해.\""
+        "text": "뭐 해."
     },
     "after3_yuna_7": {
         "name": "{name}",
@@ -102,7 +102,7 @@
     },
     "after3_yuna_8": {
         "name": "유나",
-        "text": "\"...그거.\""
+        "text": "...그거."
     },
     "after3_yuna_9": {
         "name": "{name}",
@@ -110,23 +110,23 @@
     },
     "after3_yuna_choice": {
         "name": "{name}",
-        "text": "\"재밌게 읽고 있었어.\"",
+        "text": "재밌게 읽고 있었어.",
         "choices": [
-            "\"주인공 이름 바꿔야 할 것 같은데\"",
-            "\"결말은 어떻게 돼?\""
+            "주인공 이름 바꿔야 할 것 같은데",
+            "결말은 어떻게 돼?"
         ]
     },
     "after3_yuna_choice1": {
         "name": "유나",
-        "text": "\"...주인공 이름 같은 건 없어.\""
+        "text": "...주인공 이름 같은 건 없어."
     },
     "after3_yuna_choice1_2": {
         "name": "{name}",
-        "text": "\"'전학생이 도서관에 왔다'는 우연의 일치?\""
+        "text": "'전학생이 도서관에 왔다'는 우연의 일치?"
     },
     "after3_yuna_choice1_3": {
         "name": "유나",
-        "text": "\"...소설은. 허구야.\""
+        "text": "...소설은. 허구야."
     },
     "after3_yuna_choice1_react": {
         "name": "{name}",
@@ -138,11 +138,11 @@
     },
     "after3_yuna_choice2_2": {
         "name": "유나",
-        "text": "\"...결말은 아직 안 정했어.\""
+        "text": "...결말은 아직 안 정했어."
     },
     "after3_yuna_choice2_3": {
         "name": "유나",
-        "text": "\"...결말을 쓰면 끝나니까.\""
+        "text": "...결말을 쓰면 끝나니까."
     },
     "after3_yuna_choice2_react": {
         "name": "{name}",
@@ -162,15 +162,15 @@
     },
     "after3_dain_3": {
         "name": "{name}",
-        "text": "\"다인!\""
+        "text": "다인!"
     },
     "after3_dain_4": {
         "name": "다인",
-        "text": "\"아! 괜찮아!! 그냥 좀 삐끗한 거야!!\""
+        "text": "아! 괜찮아!! 그냥 좀 삐끗한 거야!!"
     },
     "after3_dain_5": {
         "name": "{name}",
-        "text": "\"괜찮지 않은 것 같은데.\""
+        "text": "괜찮지 않은 것 같은데."
     },
     "after3_dain_6": {
         "name": "{name}",
@@ -181,7 +181,7 @@
         "text": "*다인이 벤치에 앉는다. 무릎을 문지른다.*",
         "choices": [
             "옆에 앉아 조용히 기다린다",
-            "\"파스 있어? 가져올까?\""
+            "파스 있어? 가져올까?"
         ]
     },
     "after3_dain_choice1": {
@@ -190,11 +190,11 @@
     },
     "after3_dain_choice1_2": {
         "name": "다인",
-        "text": "\"...왜 안 물어봐?\""
+        "text": "...왜 안 물어봐?"
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "\"물어보면 괜찮다고 할 거잖아.\""
+        "text": "물어보면 괜찮다고 할 거잖아."
     },
     "after3_dain_choice1_react": {
         "name": "{name}",
@@ -202,11 +202,11 @@
     },
     "after3_dain_choice1_react2": {
         "name": "다인",
-        "text": "\"...맞아. 괜찮다고 했을 거야.\""
+        "text": "...맞아. 괜찮다고 했을 거야."
     },
     "after3_dain_choice1_react3": {
         "name": "다인",
-        "text": "\"고마워. 아무것도 안 물어봐 줘서.\""
+        "text": "고마워. 아무것도 안 물어봐 줘서."
     },
     "after3_dain_choice2": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "after3_confront_2": {
         "name": "서연",
-        "text": "\"{name}. 잠깐.\""
+        "text": "{name}. 잠깐."
     },
     "after3_confront_3": {
         "name": "{name}",
@@ -230,44 +230,44 @@
     },
     "after3_confront_4": {
         "name": "서연",
-        "text": "\"점심때 말이야.\""
+        "text": "점심때 말이야."
     },
     "after3_confront_5": {
         "name": "서연",
-        "text": "\"네가 다른 애들한테 웃어줄 때, 내 안에서 뭔가가 무너지는 기분이었거든.\""
+        "text": "네가 다른 애들한테 웃어줄 때, 내 안에서 뭔가가 무너지는 기분이었거든."
     },
     "after3_confront_6": {
         "name": "서연",
-        "text": "\"솔직히 말해. 우리 모두한테 주말을 약속한 거야?\""
+        "text": "솔직히 말해. 우리 모두한테 주말을 약속한 거야?"
     },
     "after3_confront_choice": {
         "name": "{name}",
         "text": "*서연이 나를 똑바로 본다. 학생회장의 눈이 아니다. 한 사람의 눈이다.*",
         "choices": [
             "솔직하게 인정한다",
-            "\"시간대가 다르니까 괜찮을 줄 알았어\"",
-            "\"서연만 진심이야\""
+            "시간대가 다르니까 괜찮을 줄 알았어",
+            "서연만 진심이야"
         ]
     },
     "after3_confront_admit": {
         "name": "서연",
-        "text": "\"...거절을 못 해서.\""
+        "text": "...거절을 못 해서."
     },
     "after3_confront_admit_2": {
         "name": "서연",
-        "text": "\"그 말이 제일 잔인한 거야, {name}. 거절 못 하는 다정함이 — 가짜 희망을 주거든.\""
+        "text": "그 말이 제일 잔인한 거야, {name}. 거절 못 하는 다정함이 — 가짜 희망을 주거든."
     },
     "after3_confront_admit_3": {
         "name": "서연",
-        "text": "\"나는 네 선택지 중 하나가 되고 싶은 게 아니야.\""
+        "text": "나는 네 선택지 중 하나가 되고 싶은 게 아니야."
     },
     "after3_confront_admit_4": {
         "name": "서연",
-        "text": "\"유일한 답이거나, 아무것도 아니거나. — 어중간한 건 못 해.\""
+        "text": "유일한 답이거나, 아무것도 아니거나. — 어중간한 건 못 해."
     },
     "after3_confront_admit_5": {
         "name": "서연",
-        "text": "\"...오늘은 옥상 안 열어놓을게.\""
+        "text": "...오늘은 옥상 안 열어놓을게."
     },
     "after3_confront_admit_6": {
         "name": "{name}",
@@ -275,15 +275,15 @@
     },
     "after3_confront_excuse": {
         "name": "서연",
-        "text": "\"...그게 문제라는 걸 모르겠어?\""
+        "text": "...그게 문제라는 걸 모르겠어?"
     },
     "after3_confront_excuse_2": {
         "name": "서연",
-        "text": "\"약속의 숫자가 문제가 아니야. 약속의 무게가 문제지.\""
+        "text": "약속의 숫자가 문제가 아니야. 약속의 무게가 문제지."
     },
     "after3_confront_lie": {
         "name": "서연",
-        "text": "\"...정말? 그 말... 믿어도 되는 거지?\""
+        "text": "...정말? 그 말... 믿어도 되는 거지?"
     },
     "after3_confront_lie_2": {
         "name": "{name}",
@@ -295,23 +295,23 @@
     },
     "after3_confront_yuna_1": {
         "name": "유나",
-        "text": "\"다 들었어.\""
+        "text": "다 들었어."
     },
     "after3_confront_yuna_2": {
         "name": "{name}",
-        "text": "\"유나...\""
+        "text": "유나..."
     },
     "after3_confront_yuna_3": {
         "name": "유나",
-        "text": "\"사과를 원하는 게 아니야.\""
+        "text": "사과를 원하는 게 아니야."
     },
     "after3_confront_yuna_4": {
         "name": "유나",
-        "text": "\"네가 누구 옆에 설 건지, 그 무게를 알았으면 해.\""
+        "text": "네가 누구 옆에 설 건지, 그 무게를 알았으면 해."
     },
     "after3_confront_yuna_5": {
         "name": "유나",
-        "text": "\"내일은 도망치지 마. 네가 만든 기대감, 끝까지 책임져.\""
+        "text": "내일은 도망치지 마. 네가 만든 기대감, 끝까지 책임져."
     },
     "after3_confront_yuna_6": {
         "name": "{name}",

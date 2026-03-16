@@ -41,7 +41,7 @@
     },
     "seoyeon_meet_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"¿Estudiante nuevo? ¿Eres {name}, verdad?\""
+        "text": "¿Estudiante nuevo? ¿Eres {name}, verdad?"
     },
     "seoyeon_meet_2": {
         "name": "Yo",
@@ -49,23 +49,23 @@
     },
     "seoyeon_meet_3": {
         "name": "{name}",
-        "text": "\"Sí, soy yo. ¿Cómo lo sabías?\""
+        "text": "Sí, soy yo. ¿Cómo lo sabías?"
     },
     "seoyeon_meet_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Soy la presidenta del consejo estudiantil. Guiar a los nuevos es mi trabajo.\""
+        "text": "Soy la presidenta del consejo estudiantil. Guiar a los nuevos es mi trabajo."
     },
     "seoyeon_meet_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"Sígueme. Te enseñaré el instituto.\""
+        "text": "Sígueme. Te enseñaré el instituto."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "\"¿La presidenta en persona? Qué honor.\""
+        "text": "¿La presidenta en persona? Qué honor."
     },
     "seoyeon_meet_7": {
         "name": "서연(Seoyeon)",
-        "text": "\"Si es un honor o no, eso lo decido yo.\""
+        "text": "Si es un honor o no, eso lo decido yo."
     },
     "seoyeon_meet_8": {
         "name": "Yo",
@@ -79,8 +79,8 @@
         "name": "Yo",
         "text": "*¿Cómo debería responder?*",
         "choices": [
-            "\"No me digas que viniste antes porque te intereso.\"",
-            "\"¿Cuánto cobra la guía?\""
+            "No me digas que viniste antes porque te intereso.",
+            "¿Cuánto cobra la guía?"
         ]
     },
     "choice_flirt_1": {
@@ -89,23 +89,23 @@
     },
     "choice_flirt_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Vaya. Primer día y ya alguien así. Interés +1.\""
+        "text": "Vaya. Primer día y ya alguien así. Interés +1."
     },
     "choice_flirt_3": {
         "name": "{name}",
-        "text": "\"¿Sistema de puntos?\""
+        "text": "¿Sistema de puntos?"
     },
     "choice_flirt_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Eres la primera persona en este instituto que me replica.\""
+        "text": "Eres la primera persona en este instituto que me replica."
     },
     "choice_flirt_5": {
         "name": "{name}",
-        "text": "\"Me siento halagado.\""
+        "text": "Me siento halagado."
     },
     "choice_flirt_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"Aún no sabes si es un halago o un desastre.\""
+        "text": "Aún no sabes si es un halago o un desastre."
     },
     "choice_flirt_7": {
         "name": "Yo",
@@ -113,15 +113,15 @@
     },
     "choice_joke_1": {
         "name": "서연(Seoyeon)",
-        "text": "\"Es gratis. — Pero luego se acumulan los intereses.\""
+        "text": "Es gratis. — Pero luego se acumulan los intereses."
     },
     "choice_joke_2": {
         "name": "{name}",
-        "text": "\"Qué presidenta más temible.\""
+        "text": "Qué presidenta más temible."
     },
     "choice_joke_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Al menos no te vas a aburrir.\""
+        "text": "Al menos no te vas a aburrir."
     },
     "hallway_1": {
         "name": "Yo",
@@ -133,7 +133,7 @@
     },
     "hallway_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"El edificio de primer año es este, la biblioteca está allí. La cafetería está en el sótano.\""
+        "text": "El edificio de primer año es este, la biblioteca está allí. La cafetería está en el sótano."
     },
     "hallway_4": {
         "name": "Yo",
@@ -141,15 +141,15 @@
     },
     "hallway_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"La azotea normalmente está cerrada con llave. Privilegio de presidenta.\""
+        "text": "La azotea normalmente está cerrada con llave. Privilegio de presidenta."
     },
     "hallway_6": {
         "name": "{name}",
-        "text": "\"¿Tienes algún escondite secreto?\""
+        "text": "¿Tienes algún escondite secreto?"
     },
     "hallway_7": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Eres perspicaz.\""
+        "text": "...Eres perspicaz."
     },
     "hallway_8": {
         "name": "Yo",
@@ -161,15 +161,15 @@
     },
     "hallway_10": {
         "name": "서연(Seoyeon)",
-        "text": "\"Aquí es. Adelante, entra.\""
+        "text": "Aquí es. Adelante, entra."
     },
     "hallway_11": {
         "name": "{name}",
-        "text": "\"¿También me guiarás a la hora de comer?\""
+        "text": "¿También me guiarás a la hora de comer?"
     },
     "hallway_12": {
         "name": "서연(Seoyeon)",
-        "text": "\"Eso depende de lo bien que lo hagas.\""
+        "text": "Eso depende de lo bien que lo hagas."
     },
     "hallway_13": {
         "name": "Yo",
@@ -189,11 +189,11 @@
     },
     "classroom_3": {
         "name": "Tutor",
-        "text": "\"Bien, a partir de hoy tenemos un estudiante nuevo en clase. ¿Te presentas?\""
+        "text": "Bien, a partir de hoy tenemos un estudiante nuevo en clase. ¿Te presentas?"
     },
     "classroom_4": {
         "name": "{name}",
-        "text": "\"Soy {name}. Encantado de conoceros.\""
+        "text": "Soy {name}. Encantado de conoceros."
     },
     "classroom_5": {
         "name": "Yo",
@@ -205,7 +205,7 @@
     },
     "classroom_dain_1": {
         "name": "다인(Dain)",
-        "text": "\"¡Oh! ¡Un chico nuevo! ¡Por fin!\""
+        "text": "¡Oh! ¡Un chico nuevo! ¡Por fin!"
     },
     "classroom_dain_2": {
         "name": "Yo",
@@ -213,11 +213,11 @@
     },
     "classroom_dain_3": {
         "name": "Tutor",
-        "text": "\"다인(Dain), un poco de silencio...\""
+        "text": "다인(Dain), un poco de silencio..."
     },
     "classroom_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"¡Perdón! ¡Pero es que estoy emocionada! ¡Nos faltaban chicos en clase!\""
+        "text": "¡Perdón! ¡Pero es que estoy emocionada! ¡Nos faltaban chicos en clase!"
     },
     "classroom_dain_5": {
         "name": "Yo",
@@ -245,15 +245,15 @@
     },
     "classroom_minsu_2": {
         "name": "민수(Minsu)",
-        "text": "\"Eh, nuevo. Bienvenido. — Y un consejo.\""
+        "text": "Eh, nuevo. Bienvenido. — Y un consejo."
     },
     "classroom_minsu_3": {
         "name": "{name}",
-        "text": "\"¿Sobre qué?\""
+        "text": "¿Sobre qué?"
     },
     "classroom_minsu_4": {
         "name": "민수(Minsu)",
-        "text": "\"Tu resistencia física.\""
+        "text": "Tu resistencia física."
     },
     "classroom_dain_talk_1": {
         "name": "Yo",
@@ -265,23 +265,23 @@
     },
     "classroom_dain_talk_3": {
         "name": "다인(Dain)",
-        "text": "\"¡Oye, {name}! ¡¿Te gustan los deportes?!\""
+        "text": "¡Oye, {name}! ¡¿Te gustan los deportes?!"
     },
     "classroom_dain_talk_4": {
         "name": "{name}",
-        "text": "\"¿Así de repente?\""
+        "text": "¿Así de repente?"
     },
     "classroom_dain_talk_5": {
         "name": "다인(Dain)",
-        "text": "\"¡Es que no tengo a nadie para ir al gimnasio después de clase! ¡Necesito a alguien que me lance pelotas!\""
+        "text": "¡Es que no tengo a nadie para ir al gimnasio después de clase! ¡Necesito a alguien que me lance pelotas!"
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
-        "text": "\"¿Soy una máquina lanzapelotas?\""
+        "text": "¿Soy una máquina lanzapelotas?"
     },
     "classroom_dain_talk_7": {
         "name": "다인(Dain)",
-        "text": "\"¡Jajaja, seguro eres mejor que una máquina! ¡Seguramente!\""
+        "text": "¡Jajaja, seguro eres mejor que una máquina! ¡Seguramente!"
     },
     "classroom_dain_talk_8": {
         "name": "Yo",

@@ -3,14 +3,13 @@
         "name": "Moi",
         "text": "*L'événement touche à sa fin. Je croise naturellement les deux personnes que je n'ai pas choisies.*"
     },
-
     "after5_farewell_seo_1": {
         "name": "Moi",
         "text": "*Je croise Seoyeon dans le couloir.*"
     },
     "after5_farewell_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Pfff.\""
+        "text": "...Pfff."
     },
     "after5_farewell_seo_3": {
         "name": "Moi",
@@ -18,21 +17,20 @@
     },
     "after5_farewell_seo_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Bon, je le savais. Tu as toujours été une variable hors de mes plans.\""
+        "text": "Bon, je le savais. Tu as toujours été une variable hors de mes plans."
     },
     "after5_farewell_seo_5": {
         "name": "Moi",
-        "text": "\"Seoyeon...\""
+        "text": "Seoyeon..."
     },
     "after5_farewell_seo_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"La prochaine fois, c'est moi qui t'emmènerai.\""
+        "text": "La prochaine fois, c'est moi qui t'emmènerai."
     },
     "after5_farewell_seo_7": {
         "name": "Moi",
         "text": "*Seoyeon se retourne et fait un signe de la main. Le même geste qu'au premier jour. Elle ne se retourne pas. Son dos est droit. Parfaitement. Mais cette fois, elle ne tremble pas.*"
     },
-
     "after5_farewell_yuna_1": {
         "name": "Moi",
         "text": "*Yuna s'approche devant la bibliothèque. Sans un mot, elle me tend un livre.*"
@@ -53,28 +51,26 @@
         "name": "Moi",
         "text": "*Le 'C'était bien' de Yuna est un mot qui compresse tout ce qu'une personne ordinaire dirait — 'Merci, je t'aimais bien, revoyons-nous.'*"
     },
-
     "after5_farewell_dain_1": {
         "name": "Moi",
         "text": "*Dain arrive en courant depuis le gymnase.*"
     },
     "after5_farewell_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"Tch, c'est dommage !\""
+        "text": "Tch, c'est dommage !"
     },
     "after5_farewell_dain_3": {
         "name": "Moi",
-        "text": "\"Dain...\""
+        "text": "Dain..."
     },
     "after5_farewell_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"Mais bon, c'est toi qui as choisi. La prochaine fois, t'as intérêt à me donner ma chance !\""
+        "text": "Mais bon, c'est toi qui as choisi. La prochaine fois, t'as intérêt à me donner ma chance !"
     },
     "after5_farewell_dain_5": {
         "name": "Moi",
         "text": "*Elle sourit et me donne un coup de poing à l'épaule. La même force qu'au premier jour. Les points d'exclamation sont bien vivants. Dain est Dain jusqu'au bout. C'est sa force.*"
     },
-
     "after5_sunset_1": {
         "name": "Moi",
         "text": "*Le soleil se couche. Les cinq jours touchent à leur fin.*"

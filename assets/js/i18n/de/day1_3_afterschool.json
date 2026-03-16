@@ -37,7 +37,7 @@
     },
     "after_miss_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"Vorsicht!!\""
+        "text": "Vorsicht!!"
     },
     "after_miss_dain_3": {
         "name": "Ich",
@@ -45,15 +45,15 @@
     },
     "after_miss_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"Oh! Gute Reflexe!\""
+        "text": "Oh! Gute Reflexe!"
     },
     "after_miss_dain_5": {
         "name": "Ich",
-        "text": "\"Warum sprintest du durch den Flur?\""
+        "text": "Warum sprintest du durch den Flur?"
     },
     "after_miss_dain_6": {
         "name": "다인(Dain)",
-        "text": "\"Ich bin spät dran! Muss zur Turnhalle! — Ach, bis morgen! Neuer!\""
+        "text": "Ich bin spät dran! Muss zur Turnhalle! — Ach, bis morgen! Neuer!"
     },
     "after_miss_dain_7": {
         "name": "Ich",
@@ -69,7 +69,7 @@
     },
     "after_miss_yuna_3": {
         "name": "유나(Yuna)",
-        "text": "\"......Danke.\""
+        "text": "......Danke."
     },
     "after_miss_yuna_4": {
         "name": "Ich",
@@ -81,23 +81,23 @@
     },
     "after_miss_seoyeon_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Wo warst du vorhin?\""
+        "text": "Wo warst du vorhin?"
     },
     "after_miss_seoyeon_3": {
         "name": "Ich",
-        "text": "\"Vorhin?\""
+        "text": "Vorhin?"
     },
     "after_miss_seoyeon_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Mittag. Ich hatte das Dach aufgelassen. Mich warten lassen — ganz schön mutig für einen neuen Schüler.\""
+        "text": "Mittag. Ich hatte das Dach aufgelassen. Mich warten lassen — ganz schön mutig für einen neuen Schüler."
     },
     "after_miss_seoyeon_5": {
         "name": "Ich",
-        "text": "\"Du hast gewartet?\""
+        "text": "Du hast gewartet?"
     },
     "after_miss_seoyeon_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Ich wollte frische Luft schnappen und die Tür war zufällig offen.\""
+        "text": "...Ich wollte frische Luft schnappen und die Tür war zufällig offen."
     },
     "after_miss_seoyeon_7": {
         "name": "Ich",
@@ -105,7 +105,7 @@
     },
     "after_miss_seoyeon_8": {
         "name": "서연(Seoyeon)",
-        "text": "\"Morgen lauf nicht weg.\""
+        "text": "Morgen lauf nicht weg."
     },
     "after_end": {
         "name": "Ich",

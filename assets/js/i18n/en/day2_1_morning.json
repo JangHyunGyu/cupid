@@ -9,23 +9,23 @@
     },
     "morning2_dain_1": {
         "name": "다인(Dain)",
-        "text": "\"You're here?! Good morning!!\""
+        "text": "You're here?! Good morning!!"
     },
     "morning2_dain_2": {
         "name": "{name}",
-        "text": "\"...You nearly broke my spine.\""
+        "text": "...You nearly broke my spine."
     },
     "morning2_dain_3": {
         "name": "다인(Dain)",
-        "text": "\"Haha, from that?! You need to work out more!\""
+        "text": "Haha, from that?! You need to work out more!"
     },
     "morning2_dain_4": {
         "name": "{name}",
-        "text": "\"Isn't it a bit early for this much energy?\""
+        "text": "Isn't it a bit early for this much energy?"
     },
     "morning2_dain_5": {
         "name": "다인(Dain)",
-        "text": "\"This is normal! You're the one running low!\""
+        "text": "This is normal! You're the one running low!"
     },
     "morning2_dain_6": {
         "name": "Me",
@@ -49,7 +49,7 @@
     },
     "morning2_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Did you sleep well?\""
+        "text": "Did you sleep well?"
     },
     "morning2_seo_3": {
         "name": "Me",
@@ -57,11 +57,11 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "\"The student council president comes all the way to the classroom to say hi?\""
+        "text": "The student council president comes all the way to the classroom to say hi?"
     },
     "morning2_seo_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"I was just passing by. — Have a fun day today too.\""
+        "text": "I was just passing by. — Have a fun day today too."
     },
     "morning2_minsu_1": {
         "name": "Me",
@@ -73,15 +73,15 @@
     },
     "morning2_minsu_3": {
         "name": "민수(Minsu)",
-        "text": "\"Dude, two days as a transfer student and the student council president comes to greet you? I've been here a year and she won't even make eye contact.\""
+        "text": "Dude, two days as a transfer student and the student council president comes to greet you? I've been here a year and she won't even make eye contact."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
-        "text": "\"Maybe you're just unpopular.\""
+        "text": "Maybe you're just unpopular."
     },
     "morning2_dain_claim_2": {
         "name": "민수(Minsu)",
-        "text": "\"...That's true, but that's not the point.\""
+        "text": "...That's true, but that's not the point."
     },
     "morning2_dain_claim_3": {
         "name": "Me",
@@ -89,15 +89,15 @@
     },
     "morning2_dain_claim_4": {
         "name": "다인(Dain)",
-        "text": "\"Is the president interested in our transfer student too?\""
+        "text": "Is the president interested in our transfer student too?"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
-        "text": "\"'Our' transfer student?\""
+        "text": "'Our' transfer student?"
     },
     "morning2_dain_claim_6": {
         "name": "다인(Dain)",
-        "text": "\"I found you first, so you're our transfer student! Dibs! I called dibs!\""
+        "text": "I found you first, so you're our transfer student! Dibs! I called dibs!"
     },
     "morning2_break_1": {
         "name": "Me",
@@ -109,7 +109,7 @@
     },
     "morning2_seo_dust_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Hold on.\""
+        "text": "Hold on."
     },
     "morning2_seo_dust_3": {
         "name": "Me",
@@ -117,15 +117,15 @@
     },
     "morning2_seo_dust_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"You had something on your clothes.\""
+        "text": "You had something on your clothes."
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "\"......\""
+        "text": "......"
     },
     "morning2_seo_dust_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"What? It was just dust.\""
+        "text": "What? It was just dust."
     },
     "morning2_dain_react_1": {
         "name": "Me",
@@ -137,15 +137,15 @@
     },
     "morning2_dain_react_3": {
         "name": "다인(Dain)",
-        "text": "\"Hey! What was that?! Did she just touch your shoulder?!\""
+        "text": "Hey! What was that?! Did she just touch your shoulder?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
-        "text": "\"She was brushing off dust.\""
+        "text": "She was brushing off dust."
     },
     "morning2_dain_react_5": {
         "name": "다인(Dain)",
-        "text": "\"Dust... was there actually dust?!\""
+        "text": "Dust... was there actually dust?!"
     },
     "morning2_dain_react_6": {
         "name": "Me",
@@ -157,23 +157,23 @@
     },
     "morning2_haeun_2": {
         "name": "하은(Haeun)",
-        "text": "\"Um, you're the transfer student, right? I'm Haeun, the student council vice president.\""
+        "text": "Um, you're the transfer student, right? I'm Haeun, the student council vice president."
     },
     "morning2_haeun_3": {
         "name": "{name}",
-        "text": "\"Oh, yeah.\""
+        "text": "Oh, yeah."
     },
     "morning2_haeun_4": {
         "name": "하은(Haeun)",
-        "text": "\"The president... I mean, Seoyeon sunbae seems a bit different lately.\""
+        "text": "The president... I mean, Seoyeon sunbae seems a bit different lately."
     },
     "morning2_haeun_5": {
         "name": "{name}",
-        "text": "\"Different how?\""
+        "text": "Different how?"
     },
     "morning2_haeun_6": {
         "name": "하은(Haeun)",
-        "text": "\"She's not usually like that. Approaching another student first... I've watched her for a year and this is the first time.\""
+        "text": "She's not usually like that. Approaching another student first... I've watched her for a year and this is the first time."
     },
     "morning2_haeun_7": {
         "name": "Me",

@@ -26,23 +26,23 @@
     },
     "after3_seo_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"......\""
+        "text": "......"
     },
     "after3_seo_5": {
         "name": "{name}",
-        "text": "\"서연(Seoyeon)？\""
+        "text": "서연(Seoyeon)？"
     },
     "after3_seo_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"...見た？\""
+        "text": "...見た？"
     },
     "after3_seo_7": {
         "name": "{name}",
-        "text": "\"何を？\""
+        "text": "何を？"
     },
     "after3_seo_8": {
         "name": "서연(Seoyeon)",
-        "text": "\"こんな姿。— これは秘密だよ。\""
+        "text": "こんな姿。— これは秘密だよ。"
     },
     "after3_seo_9": {
         "name": "僕",
@@ -50,10 +50,10 @@
     },
     "after3_seo_choice": {
         "name": "서연(Seoyeon)",
-        "text": "\"今度私がお願いしたら、無条件で聞いて。— それが代償。\"",
+        "text": "今度私がお願いしたら、無条件で聞いて。— それが代償。",
         "choices": [
-            "\"完璧じゃなくてもいいんだけど\"",
-            "\"秘密は守るよ\""
+            "完璧じゃなくてもいいんだけど",
+            "秘密は守るよ"
         ]
     },
     "after3_seo_choice1": {
@@ -62,7 +62,7 @@
     },
     "after3_seo_choice1_react": {
         "name": "서연(Seoyeon)",
-        "text": "\"...そんなこと。簡単に言っちゃダメなのに。\""
+        "text": "...そんなこと。簡単に言っちゃダメなのに。"
     },
     "after3_seo_choice2": {
         "name": "僕",
@@ -94,7 +94,7 @@
     },
     "after3_yuna_6": {
         "name": "유나(Yuna)",
-        "text": "\"何してるの。\""
+        "text": "何してるの。"
     },
     "after3_yuna_7": {
         "name": "僕",
@@ -102,7 +102,7 @@
     },
     "after3_yuna_8": {
         "name": "유나(Yuna)",
-        "text": "\"...それ。\""
+        "text": "...それ。"
     },
     "after3_yuna_9": {
         "name": "僕",
@@ -110,23 +110,23 @@
     },
     "after3_yuna_choice": {
         "name": "{name}",
-        "text": "\"楽しく読んでたよ。\"",
+        "text": "楽しく読んでたよ。",
         "choices": [
-            "\"主人公の名前、変えた方がいいんじゃない\"",
-            "\"結末はどうなるの？\""
+            "主人公の名前、変えた方がいいんじゃない",
+            "結末はどうなるの？"
         ]
     },
     "after3_yuna_choice1": {
         "name": "유나(Yuna)",
-        "text": "\"...主人公の名前なんてない。\""
+        "text": "...主人公の名前なんてない。"
     },
     "after3_yuna_choice1_2": {
         "name": "{name}",
-        "text": "\"『転校生が図書館に来た』は偶然の一致？\""
+        "text": "『転校生が図書館に来た』は偶然の一致？"
     },
     "after3_yuna_choice1_3": {
         "name": "유나(Yuna)",
-        "text": "\"...小説は。フィクションだから。\""
+        "text": "...小説は。フィクションだから。"
     },
     "after3_yuna_choice1_react": {
         "name": "僕",
@@ -138,11 +138,11 @@
     },
     "after3_yuna_choice2_2": {
         "name": "유나(Yuna)",
-        "text": "\"...結末はまだ決めてない。\""
+        "text": "...結末はまだ決めてない。"
     },
     "after3_yuna_choice2_3": {
         "name": "유나(Yuna)",
-        "text": "\"...結末を書いたら終わっちゃうから。\""
+        "text": "...結末を書いたら終わっちゃうから。"
     },
     "after3_yuna_choice2_react": {
         "name": "僕",
@@ -162,15 +162,15 @@
     },
     "after3_dain_3": {
         "name": "{name}",
-        "text": "\"다인(Dain)！\""
+        "text": "다인(Dain)！"
     },
     "after3_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"あ！大丈夫！！ちょっとひねっただけ！！\""
+        "text": "あ！大丈夫！！ちょっとひねっただけ！！"
     },
     "after3_dain_5": {
         "name": "{name}",
-        "text": "\"大丈夫には見えないけど。\""
+        "text": "大丈夫には見えないけど。"
     },
     "after3_dain_6": {
         "name": "僕",
@@ -181,7 +181,7 @@
         "text": "*다인(Dain)がベンチに座る。膝をさする。*",
         "choices": [
             "隣に座って静かに待つ",
-            "\"湿布ある？取ってこようか？\""
+            "湿布ある？取ってこようか？"
         ]
     },
     "after3_dain_choice1": {
@@ -190,11 +190,11 @@
     },
     "after3_dain_choice1_2": {
         "name": "다인(Dain)",
-        "text": "\"...なんで聞かないの？\""
+        "text": "...なんで聞かないの？"
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "\"聞いたら大丈夫って言うだろ。\""
+        "text": "聞いたら大丈夫って言うだろ。"
     },
     "after3_dain_choice1_react": {
         "name": "僕",
@@ -202,11 +202,11 @@
     },
     "after3_dain_choice1_react2": {
         "name": "다인(Dain)",
-        "text": "\"...そうだね。大丈夫って言ってた。\""
+        "text": "...そうだね。大丈夫って言ってた。"
     },
     "after3_dain_choice1_react3": {
         "name": "다인(Dain)",
-        "text": "\"ありがとう。何も聞かないでくれて。\""
+        "text": "ありがとう。何も聞かないでくれて。"
     },
     "after3_dain_choice2": {
         "name": "僕",
@@ -222,7 +222,7 @@
     },
     "after3_confront_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"{name}。ちょっと。\""
+        "text": "{name}。ちょっと。"
     },
     "after3_confront_3": {
         "name": "僕",
@@ -230,44 +230,44 @@
     },
     "after3_confront_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"昧食の時のことなんだけど。\""
+        "text": "昧食の時のことなんだけど。"
     },
     "after3_confront_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"君が他の子に笑いかけると、私の中で何かが崩れる感じがした。\""
+        "text": "君が他の子に笑いかけると、私の中で何かが崩れる感じがした。"
     },
     "after3_confront_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"正直に言って。みんなに週末の約束したの？\""
+        "text": "正直に言って。みんなに週末の約束したの？"
     },
     "after3_confront_choice": {
         "name": "僕",
         "text": "*서연(Seoyeon)がまっすぐ見つめてくる。生徒会長の目じゃない。一人の人間の目だ。*",
         "choices": [
             "正直に認める",
-            "\"時間帯が違うから大丈夫だと思った\"",
-            "\"서연(Seoyeon)だけが本気だよ\""
+            "時間帯が違うから大丈夫だと思った",
+            "서연(Seoyeon)だけが本気だよ"
         ]
     },
     "after3_confront_admit": {
         "name": "서연(Seoyeon)",
-        "text": "\"...断れなかったから。\""
+        "text": "...断れなかったから。"
     },
     "after3_confront_admit_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"それが一番残酷な言葉だよ、{name}。断れない優しさが— 偽りの希望を与えるんだから。\""
+        "text": "それが一番残酷な言葉だよ、{name}。断れない優しさが— 偽りの希望を与えるんだから。"
     },
     "after3_confront_admit_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"私は君の選択肢の一つになりたくない。\""
+        "text": "私は君の選択肢の一つになりたくない。"
     },
     "after3_confront_admit_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"唯一の答えか、何もないか。— 中途半端はできない。\""
+        "text": "唯一の答えか、何もないか。— 中途半端はできない。"
     },
     "after3_confront_admit_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"...今日は屋上、開けておかないから。\""
+        "text": "...今日は屋上、開けておかないから。"
     },
     "after3_confront_admit_6": {
         "name": "僕",
@@ -275,15 +275,15 @@
     },
     "after3_confront_excuse": {
         "name": "서연(Seoyeon)",
-        "text": "\"...それが問題だって分からない？\""
+        "text": "...それが問題だって分からない？"
     },
     "after3_confront_excuse_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"約束の数が問題じゃない。約束の重さが問題なの。\""
+        "text": "約束の数が問題じゃない。約束の重さが問題なの。"
     },
     "after3_confront_lie": {
         "name": "서연(Seoyeon)",
-        "text": "\"...本当？その言葉...信じていいの？\""
+        "text": "...本当？その言葉...信じていいの？"
     },
     "after3_confront_lie_2": {
         "name": "僕",
@@ -295,23 +295,23 @@
     },
     "after3_confront_yuna_1": {
         "name": "유나(Yuna)",
-        "text": "\"全部聞こえた。\""
+        "text": "全部聞こえた。"
     },
     "after3_confront_yuna_2": {
         "name": "{name}",
-        "text": "\"유나(Yuna)...\""
+        "text": "유나(Yuna)..."
     },
     "after3_confront_yuna_3": {
         "name": "유나(Yuna)",
-        "text": "\"謝罪はいらない。\""
+        "text": "謝罪はいらない。"
     },
     "after3_confront_yuna_4": {
         "name": "유나(Yuna)",
-        "text": "\"誰の隣に立つのか、その重さを分かってほしい。\""
+        "text": "誰の隣に立つのか、その重さを分かってほしい。"
     },
     "after3_confront_yuna_5": {
         "name": "유나(Yuna)",
-        "text": "\"明日は逃げないで。君が作った期待、最後まで責任取って。\""
+        "text": "明日は逃げないで。君が作った期待、最後まで責任取って。"
     },
     "after3_confront_yuna_6": {
         "name": "僕",

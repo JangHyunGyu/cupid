@@ -26,23 +26,23 @@
     },
     "after3_seo_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"......\""
+        "text": "......"
     },
     "after3_seo_5": {
         "name": "{name}",
-        "text": "\"서연(Seoyeon) ?\""
+        "text": "서연(Seoyeon) ?"
     },
     "after3_seo_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Tu as vu ?\""
+        "text": "...Tu as vu ?"
     },
     "after3_seo_7": {
         "name": "{name}",
-        "text": "\"Vu quoi ?\""
+        "text": "Vu quoi ?"
     },
     "after3_seo_8": {
         "name": "서연(Seoyeon)",
-        "text": "\"Ce côté de moi. — C’est un secret.\""
+        "text": "Ce côté de moi. — C’est un secret."
     },
     "after3_seo_9": {
         "name": "Moi",
@@ -50,10 +50,10 @@
     },
     "after3_seo_choice": {
         "name": "서연(Seoyeon)",
-        "text": "\"La prochaine fois que je te demande un service, tu devras accepter. Sans discuter. — Considère que c’est le prix.\"",
+        "text": "La prochaine fois que je te demande un service, tu devras accepter. Sans discuter. — Considère que c’est le prix.",
         "choices": [
-            "\"Tu n’as pas besoin d’être parfaite, tu sais\"",
-            "\"Je garderai ton secret\""
+            "Tu n’as pas besoin d’être parfaite, tu sais",
+            "Je garderai ton secret"
         ]
     },
     "after3_seo_choice1": {
@@ -62,7 +62,7 @@
     },
     "after3_seo_choice1_react": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Ce genre de mots. Tu ne devrais pas les dire si facilement.\""
+        "text": "...Ce genre de mots. Tu ne devrais pas les dire si facilement."
     },
     "after3_seo_choice2": {
         "name": "Moi",
@@ -94,7 +94,7 @@
     },
     "after3_yuna_6": {
         "name": "유나(Yuna)",
-        "text": "\"Qu’est-ce que tu fais.\""
+        "text": "Qu’est-ce que tu fais."
     },
     "after3_yuna_7": {
         "name": "Moi",
@@ -102,7 +102,7 @@
     },
     "after3_yuna_8": {
         "name": "유나(Yuna)",
-        "text": "\"...Ça.\""
+        "text": "...Ça."
     },
     "after3_yuna_9": {
         "name": "Moi",
@@ -110,27 +110,27 @@
     },
     "after3_yuna_choice": {
         "name": "{name}",
-        "text": "\"Je lisais avec plaisir.\"",
+        "text": "Je lisais avec plaisir.",
         "choices": [
-            "\"Tu devrais peut-être changer le nom du protagoniste\"",
-            "\"Comment ça finit ?\""
+            "Tu devrais peut-être changer le nom du protagoniste",
+            "Comment ça finit ?"
         ]
     },
     "after3_yuna_choice1": {
         "name": "유나(Yuna)",
-        "text": "\"...Il n’y a pas de nom de protagoniste.\""
+        "text": "...Il n’y a pas de nom de protagoniste."
     },
     "after3_yuna_choice1_2": {
         "name": "{name}",
-        "text": "\"‘Un élève transféré est venu à la bibliothèque’ c’est juste une coïncidence ?\""
+        "text": "‘Un élève transféré est venu à la bibliothèque’ c’est juste une coïncidence ?"
     },
     "after3_yuna_choice1_3": {
         "name": "유나(Yuna)",
-        "text": "\"...Les romans, c’est. De la fiction.\""
+        "text": "...Les romans, c’est. De la fiction."
     },
     "after3_yuna_choice1_react": {
         "name": "Moi",
-        "text": "*Elle a dit \"fiction\", mais ses oreilles la trahissent.*"
+        "text": "*Elle a dit fiction, mais ses oreilles la trahissent.*"
     },
     "after3_yuna_choice2": {
         "name": "Moi",
@@ -138,11 +138,11 @@
     },
     "after3_yuna_choice2_2": {
         "name": "유나(Yuna)",
-        "text": "\"...Je n’ai pas encore décidé de la fin.\""
+        "text": "...Je n’ai pas encore décidé de la fin."
     },
     "after3_yuna_choice2_3": {
         "name": "유나(Yuna)",
-        "text": "\"...Parce qu’une fois que j’écris la fin, c’est terminé.\""
+        "text": "...Parce qu’une fois que j’écris la fin, c’est terminé."
     },
     "after3_yuna_choice2_react": {
         "name": "Moi",
@@ -162,15 +162,15 @@
     },
     "after3_dain_3": {
         "name": "{name}",
-        "text": "\"다인(Dain) !\""
+        "text": "다인(Dain) !"
     },
     "after3_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"Ah ! Ça va !! C’est juste un petit faux mouvement !!\""
+        "text": "Ah ! Ça va !! C’est juste un petit faux mouvement !!"
     },
     "after3_dain_5": {
         "name": "{name}",
-        "text": "\"On dirait pas que ça va.\""
+        "text": "On dirait pas que ça va."
     },
     "after3_dain_6": {
         "name": "Moi",
@@ -181,7 +181,7 @@
         "text": "*다인(Dain) s’assoit sur le banc. Elle se frotte le genou.*",
         "choices": [
             "S’asseoir à côté d’elle et attendre en silence",
-            "\"T’as des patchs ? Je vais en chercher\""
+            "T’as des patchs ? Je vais en chercher"
         ]
     },
     "after3_dain_choice1": {
@@ -190,11 +190,11 @@
     },
     "after3_dain_choice1_2": {
         "name": "다인(Dain)",
-        "text": "\"...Pourquoi tu ne demandes pas ?\""
+        "text": "...Pourquoi tu ne demandes pas ?"
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "\"Parce que tu dirais que ça va.\""
+        "text": "Parce que tu dirais que ça va."
     },
     "after3_dain_choice1_react": {
         "name": "Moi",
@@ -202,11 +202,11 @@
     },
     "after3_dain_choice1_react2": {
         "name": "다인(Dain)",
-        "text": "\"...Oui. J’aurais dit que ça va.\""
+        "text": "...Oui. J’aurais dit que ça va."
     },
     "after3_dain_choice1_react3": {
         "name": "다인(Dain)",
-        "text": "\"Merci. De ne rien avoir demandé.\""
+        "text": "Merci. De ne rien avoir demandé."
     },
     "after3_dain_choice2": {
         "name": "Moi",
@@ -222,7 +222,7 @@
     },
     "after3_confront_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"{name}. Attends.\""
+        "text": "{name}. Attends."
     },
     "after3_confront_3": {
         "name": "Moi",
@@ -230,44 +230,44 @@
     },
     "after3_confront_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"À propos du déjeuner.\""
+        "text": "À propos du déjeuner."
     },
     "after3_confront_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"Quand tu souris aux autres filles, quelque chose s’effondre en moi.\""
+        "text": "Quand tu souris aux autres filles, quelque chose s’effondre en moi."
     },
     "after3_confront_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"Sois honnête. Tu as promis le week-end à toutes ?\""
+        "text": "Sois honnête. Tu as promis le week-end à toutes ?"
     },
     "after3_confront_choice": {
         "name": "Moi",
         "text": "*서연(Seoyeon) me regarde droit dans les yeux. Pas avec les yeux d’une présidente. Avec les yeux d’une personne.*",
         "choices": [
             "Avouer honnêtement",
-            "\"Les créneaux sont différents, alors je pensais que ça irait\"",
-            "\"C’est seulement avec toi que c’est sérieux\""
+            "Les créneaux sont différents, alors je pensais que ça irait",
+            "C’est seulement avec toi que c’est sérieux"
         ]
     },
     "after3_confront_admit": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Parce que tu n’as pas pu refuser.\""
+        "text": "...Parce que tu n’as pas pu refuser."
     },
     "after3_confront_admit_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"C’est la chose la plus cruelle que tu puisses dire, {name}. La gentillesse de ne pas savoir refuser — donne de faux espoirs.\""
+        "text": "C’est la chose la plus cruelle que tu puisses dire, {name}. La gentillesse de ne pas savoir refuser — donne de faux espoirs."
     },
     "after3_confront_admit_3": {
         "name": "서연(Seoyeon)",
-        "text": "\"Je ne veux pas être un choix parmi d’autres.\""
+        "text": "Je ne veux pas être un choix parmi d’autres."
     },
     "after3_confront_admit_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Soit la seule réponse, soit rien du tout. — Pas de demi-mesure.\""
+        "text": "Soit la seule réponse, soit rien du tout. — Pas de demi-mesure."
     },
     "after3_confront_admit_5": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Aujourd’hui, je ne laisserai pas le toit ouvert.\""
+        "text": "...Aujourd’hui, je ne laisserai pas le toit ouvert."
     },
     "after3_confront_admit_6": {
         "name": "Moi",
@@ -275,15 +275,15 @@
     },
     "after3_confront_excuse": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Tu ne vois pas que c’est ça le problème ?\""
+        "text": "...Tu ne vois pas que c’est ça le problème ?"
     },
     "after3_confront_excuse_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"Ce n’est pas le nombre de promesses. C’est leur poids.\""
+        "text": "Ce n’est pas le nombre de promesses. C’est leur poids."
     },
     "after3_confront_lie": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Vraiment ? Je peux... te croire ?\""
+        "text": "...Vraiment ? Je peux... te croire ?"
     },
     "after3_confront_lie_2": {
         "name": "Moi",
@@ -295,23 +295,23 @@
     },
     "after3_confront_yuna_1": {
         "name": "유나(Yuna)",
-        "text": "\"J’ai tout entendu.\""
+        "text": "J’ai tout entendu."
     },
     "after3_confront_yuna_2": {
         "name": "{name}",
-        "text": "\"유나(Yuna)...\""
+        "text": "유나(Yuna)..."
     },
     "after3_confront_yuna_3": {
         "name": "유나(Yuna)",
-        "text": "\"Je ne veux pas d’excuses.\""
+        "text": "Je ne veux pas d’excuses."
     },
     "after3_confront_yuna_4": {
         "name": "유나(Yuna)",
-        "text": "\"Je veux juste que tu comprennes le poids de choisir à côté de qui tu te tiendras.\""
+        "text": "Je veux juste que tu comprennes le poids de choisir à côté de qui tu te tiendras."
     },
     "after3_confront_yuna_5": {
         "name": "유나(Yuna)",
-        "text": "\"Demain, ne fuis pas. Assume les espoirs que tu as créés.\""
+        "text": "Demain, ne fuis pas. Assume les espoirs que tu as créés."
     },
     "after3_confront_yuna_6": {
         "name": "Moi",

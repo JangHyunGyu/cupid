@@ -3,14 +3,13 @@
         "name": "Yo",
         "text": "*El evento está llegando a su fin. Me encuentro naturalmente con las dos personas que no elegí.*"
     },
-
     "after5_farewell_seo_1": {
         "name": "Yo",
         "text": "*Me cruzo con Seoyeon en el pasillo.*"
     },
     "after5_farewell_seo_2": {
         "name": "서연(Seoyeon)",
-        "text": "\"...Uf.\""
+        "text": "...Uf."
     },
     "after5_farewell_seo_3": {
         "name": "Yo",
@@ -18,21 +17,20 @@
     },
     "after5_farewell_seo_4": {
         "name": "서연(Seoyeon)",
-        "text": "\"Bueno, ya lo sabía. Siempre fuiste una variable fuera de mis planes.\""
+        "text": "Bueno, ya lo sabía. Siempre fuiste una variable fuera de mis planes."
     },
     "after5_farewell_seo_5": {
         "name": "Yo",
-        "text": "\"Seoyeon...\""
+        "text": "Seoyeon..."
     },
     "after5_farewell_seo_6": {
         "name": "서연(Seoyeon)",
-        "text": "\"La próxima vez, seré yo quien te lleve.\""
+        "text": "La próxima vez, seré yo quien te lleve."
     },
     "after5_farewell_seo_7": {
         "name": "Yo",
         "text": "*Seoyeon se da la vuelta y agita la mano. El mismo gesto que el primer día. No mira atrás. Su espalda está recta. Perfectamente. Pero esta vez, no tiembla.*"
     },
-
     "after5_farewell_yuna_1": {
         "name": "Yo",
         "text": "*Yuna se acerca frente a la biblioteca. Sin decir nada, me entrega un libro.*"
@@ -53,28 +51,26 @@
         "name": "Yo",
         "text": "*El 'Fue divertido' de Yuna es una palabra que comprime todo lo que una persona normal diría: 'Gracias, me gustabas, volvamos a vernos.'*"
     },
-
     "after5_farewell_dain_1": {
         "name": "Yo",
         "text": "*Dain viene corriendo desde el gimnasio.*"
     },
     "after5_farewell_dain_2": {
         "name": "다인(Dain)",
-        "text": "\"¡Tch, qué lástima!\""
+        "text": "¡Tch, qué lástima!"
     },
     "after5_farewell_dain_3": {
         "name": "Yo",
-        "text": "\"Dain...\""
+        "text": "Dain..."
     },
     "after5_farewell_dain_4": {
         "name": "다인(Dain)",
-        "text": "\"Pero bueno, tú elegiste. ¡La próxima vez más te vale darme una oportunidad!\""
+        "text": "Pero bueno, tú elegiste. ¡La próxima vez más te vale darme una oportunidad!"
     },
     "after5_farewell_dain_5": {
         "name": "Yo",
         "text": "*Sonríe con picardía y me da un puñetazo en el hombro. La misma fuerza que el primer día. Los signos de exclamación siguen vivos. Dain es Dain hasta el final. Esa es su fortaleza.*"
     },
-
     "after5_sunset_1": {
         "name": "Yo",
         "text": "*El sol se está poniendo. Los cinco días llegan a su fin.*"
