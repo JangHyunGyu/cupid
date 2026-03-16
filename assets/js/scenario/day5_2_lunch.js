@@ -200,7 +200,6 @@ Object.assign(SCENARIO[5], {
 ,
     "tour_seo_freetalk": {
         "type": "free_talk",
-        "maxTurns": 5,
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_end"
@@ -208,7 +207,6 @@ Object.assign(SCENARIO[5], {
 ,
     "tour_yuna_freetalk": {
         "type": "free_talk",
-        "maxTurns": 5,
         "background": "assets/images/background/library.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_end"
@@ -216,7 +214,6 @@ Object.assign(SCENARIO[5], {
 ,
     "tour_dain_freetalk": {
         "type": "free_talk",
-        "maxTurns": 5,
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "tour_dain_end"
