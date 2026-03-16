@@ -105,7 +105,7 @@ Object.assign(SCENARIO[5], {
         "next": "tour_yuna_7"
     },
     "tour_yuna_7": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "next": "tour_yuna_8"
     },

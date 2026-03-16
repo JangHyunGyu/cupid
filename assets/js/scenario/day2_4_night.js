@@ -22,31 +22,31 @@ Object.assign(SCENARIO[2], {
         "next": "night2_msg_2"
     },
     "night2_msg_2": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_3"
     },
     "night2_msg_3": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_4"
     },
     "night2_msg_4": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_5"
     },
     "night2_msg_5": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_6"
     },
     "night2_msg_6": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_7"
