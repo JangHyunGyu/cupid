@@ -269,7 +269,7 @@ class GalleryProgress {
         if (expressionName === 'bikini') {
             const affinity = this.getAffinity(charId);
             const freeTalkCount = this.getFreeTalkCount(charId);
-            return affinity >= 100 && freeTalkCount >= 100;
+            return affinity >= 100 && freeTalkCount >= 30;
         }
 
         // 일반 표정: 호감도 기준

@@ -250,18 +250,18 @@ class GalleryUI {
         const freeTalkCount = this.progress.getFreeTalkCount(charId);
 
         const affinityStatus = currentAffinity >= 100 ? '✅' : '❌';
-        const talkStatus = freeTalkCount >= 100 ? '✅' : '❌';
+        const talkStatus = freeTalkCount >= 30 ? '✅' : '❌';
         const L = (ko, en, es, ja, fr, de) => ({ ko, en, es, ja, fr, de })[this.lang] || en;
 
         this.showUnlockPopup({
             title: L('💎 특별 표정', '💎 Special Expression', '💎 Expresión especial', '💎 特別な表情', '💎 Expression spéciale', '💎 Besonderer Ausdruck'),
             message: L(
-                `${charName}의 특별한 모습을 보려면<br>두 가지 조건을 모두 달성해야 합니다!<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 프리토킹: ${freeTalkCount}/100회 ${talkStatus}</span>`,
-                `To see ${charName}'s special look,<br>you need to achieve both conditions!<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Free Talks: ${freeTalkCount}/100 ${talkStatus}</span>`,
-                `Para ver el look especial de ${charName},<br>¡debes cumplir ambas condiciones!<br><br><span class="condition-line">💕 Afinidad máxima: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Charlas libres: ${freeTalkCount}/100 ${talkStatus}</span>`,
-                `${charName}の特別な姿を見るには<br>2つの条件を両方達成する必要があります！<br><br><span class="condition-line">💕 最大好感度: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 フリートーク: ${freeTalkCount}/100回 ${talkStatus}</span>`,
-                `Pour voir le look spécial de ${charName},<br>vous devez remplir les deux conditions !<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Discussions libres : ${freeTalkCount}/100 ${talkStatus}</span>`,
-                `Um ${charName}s besonderes Aussehen zu sehen,<br>musst du beide Bedingungen erfüllen!<br><br><span class="condition-line">💕 Max. Zuneigung: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Freie Gespräche: ${freeTalkCount}/100 ${talkStatus}</span>`
+                `${charName}의 특별한 모습을 보려면<br>두 가지 조건을 모두 달성해야 합니다!<br><br><span class="condition-line">💕 최대 호감도: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 프리토킹: ${freeTalkCount}/30회 ${talkStatus}</span>`,
+                `To see ${charName}'s special look,<br>you need to achieve both conditions!<br><br><span class="condition-line">💕 Max Affinity: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Free Talks: ${freeTalkCount}/30 ${talkStatus}</span>`,
+                `Para ver el look especial de ${charName},<br>¡debes cumplir ambas condiciones!<br><br><span class="condition-line">💕 Afinidad máxima: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Charlas libres: ${freeTalkCount}/30 ${talkStatus}</span>`,
+                `${charName}の特別な姿を見るには<br>2つの条件を両方達成する必要があります！<br><br><span class="condition-line">💕 最大好感度: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 フリートーク: ${freeTalkCount}/30回 ${talkStatus}</span>`,
+                `Pour voir le look spécial de ${charName},<br>vous devez remplir les deux conditions !<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Discussions libres : ${freeTalkCount}/30 ${talkStatus}</span>`,
+                `Um ${charName}s besonderes Aussehen zu sehen,<br>musst du beide Bedingungen erfüllen!<br><br><span class="condition-line">💕 Max. Zuneigung: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Freie Gespräche: ${freeTalkCount}/30 ${talkStatus}</span>`
             ),
             icon: '👙'
         });
