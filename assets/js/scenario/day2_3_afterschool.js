@@ -12,7 +12,10 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/room_school.png",
         "bgm": "sunset1.mp3",
         "character": null,
-        "next": "after2_choice"
+        "branches": [
+            { "condition": "nurse_day1", "next": "hidden_nurse_d2_1" },
+            { "next": "after2_choice" }
+        ]
     },
     "after2_choice": {
         "character": null,

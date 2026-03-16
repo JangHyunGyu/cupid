@@ -19,6 +19,24 @@ Object.assign(SCENARIO[5], {
         "fade": true,
         "branches": [
             {
+                "next": "hidden_true_homeroom_1",
+                "condition": "homeroom_day5",
+                "excludeCondition": "day3_has_multiple_dates"
+            },
+            {
+                "next": "hidden_good_homeroom_1",
+                "condition": "homeroom_day5"
+            },
+            {
+                "next": "hidden_true_nurse_1",
+                "condition": "nurse_day5",
+                "excludeCondition": "day3_has_multiple_dates"
+            },
+            {
+                "next": "hidden_good_nurse_1",
+                "condition": "nurse_day5"
+            },
+            {
                 "next": "day5_ending_true",
                 "condition": "day4_confession_accepted",
                 "excludeCondition": "day3_has_multiple_dates"
@@ -533,6 +551,194 @@ Object.assign(SCENARIO[5], {
         "next": "alone_5"
     },
     "alone_5": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
+    },
+
+    // =========================================================================
+    // TEACHER TRUE LOVE END (Hidden Route)
+    // =========================================================================
+    "hidden_true_homeroom_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "ending.mp3",
+        "next": "hidden_true_homeroom_2"
+    },
+    "hidden_true_homeroom_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_homeroom_3"
+    },
+    "hidden_true_homeroom_3": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_homeroom_4"
+    },
+    "hidden_true_homeroom_4": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_homeroom_5"
+    },
+    "hidden_true_homeroom_5": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_homeroom_6"
+    },
+    "hidden_true_homeroom_6": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_homeroom_7"
+    },
+    "hidden_true_homeroom_7": {
+        "background": "assets/images/background/cafe.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_homeroom_8"
+    },
+    "hidden_true_homeroom_8": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
+    },
+
+    // =========================================================================
+    // TEACHER GOOD END (Hidden Route)
+    // =========================================================================
+    "hidden_good_homeroom_1": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "night": true,
+        "fade": true,
+        "bgm": "night2.mp3",
+        "next": "hidden_good_homeroom_2"
+    },
+    "hidden_good_homeroom_2": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "hidden_good_homeroom_3"
+    },
+    "hidden_good_homeroom_3": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "hidden_good_homeroom_4"
+    },
+    "hidden_good_homeroom_4": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
+    },
+
+    // =========================================================================
+    // NURSE TRUE LOVE END (Hidden Route)
+    // =========================================================================
+    "hidden_true_nurse_1": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "ending.mp3",
+        "next": "hidden_true_nurse_2"
+    },
+    "hidden_true_nurse_2": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_nurse_3"
+    },
+    "hidden_true_nurse_3": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_nurse_4"
+    },
+    "hidden_true_nurse_4": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_nurse_5"
+    },
+    "hidden_true_nurse_5": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_nurse_6"
+    },
+    "hidden_true_nurse_6": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_nurse_7"
+    },
+    "hidden_true_nurse_7": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/nurse_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_true_nurse_8"
+    },
+    "hidden_true_nurse_8": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/nurse_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
+    },
+
+    // =========================================================================
+    // NURSE GOOD END (Hidden Route)
+    // =========================================================================
+    "hidden_good_nurse_1": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "night": true,
+        "fade": true,
+        "bgm": "night2.mp3",
+        "next": "hidden_good_nurse_2"
+    },
+    "hidden_good_nurse_2": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_good_nurse_3"
+    },
+    "hidden_good_nurse_3": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "hidden_good_nurse_4"
+    },
+    "hidden_good_nurse_4": {
+        "background": "assets/images/background/nurse_room.jpg",
         "character": null,
         "night": true,
         "fade": true,

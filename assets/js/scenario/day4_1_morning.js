@@ -31,7 +31,7 @@ Object.assign(SCENARIO[4], {
                 "condition": "route_dain"
             },
             {
-                "next": "morning4_end"
+                "next": "morning4_hidden_check"
             }
         ]
     },
@@ -39,27 +39,41 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "condition": "route_seoyeon",
-        "next": "morning4_end"
+        "next": "morning4_hidden_check"
     },
     "morning4_yuna_msg_1": {
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/yuna_normal.png",
         "condition": "route_yuna",
-        "next": "morning4_end"
+        "next": "morning4_hidden_check"
     },
     "morning4_dain_msg_1": {
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/dain_normal.png",
         "condition": "route_dain",
-        "next": "morning4_end"
+        "next": "morning4_hidden_check"
     },
     "morning4_hidden_check": {
         "background": "assets/images/background/student_room.png",
         "character": null,
         "branches": [
-            { "condition": "homeroom_day3", "next": "hidden_homeroom_d4_1" },
+            { "condition": "homeroom_day3", "next": "morning4_manuscript_check" },
             { "next": "hidden_nurse_d4_check" }
         ]
+    },
+    "morning4_manuscript_check": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "branches": [
+            { "condition": "discovered_manuscript", "next": "hidden_homeroom_d4_1" },
+            { "next": "hidden_homeroom_d4_skip" }
+        ]
+    },
+    "hidden_homeroom_d4_skip": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "setFlag": "homeroom_day4",
+        "next": "hidden_nurse_d4_check"
     },
 
     // === HIDDEN Day 4 담임 카페 ===
