@@ -41,7 +41,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_homeroom_d5_check": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "branches": [
             { "condition": "homeroom_day4", "next": "hidden_homeroom_d5_1" },
             { "next": "hidden_nurse_d5_check" }
@@ -49,7 +49,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_homeroom_d5_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d5_2"
     },
     "hidden_homeroom_d5_2": {
@@ -114,7 +114,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_nurse_d5_3": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_4"
     },
     "hidden_nurse_d5_4": {
@@ -134,7 +134,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_nurse_d5_7": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "setFlag": "nurse_day5",
         "next": "hidden_nurse_d5_freetalk"
     },

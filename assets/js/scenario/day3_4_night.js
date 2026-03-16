@@ -57,12 +57,12 @@ Object.assign(SCENARIO[3], {
         "next": "night3_faithful_msg_seo_2"
     },
     "night3_faithful_msg_seo_2": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night3_faithful_msg_seo_3"
     },
     "night3_faithful_msg_seo_3": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night3_dream_1"
     },
@@ -73,7 +73,7 @@ Object.assign(SCENARIO[3], {
         "next": "night3_faithful_msg_yuna_2"
     },
     "night3_faithful_msg_yuna_2": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night3_dream_1"
     },
@@ -84,7 +84,7 @@ Object.assign(SCENARIO[3], {
         "next": "night3_faithful_msg_dain_2"
     },
     "night3_faithful_msg_dain_2": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night3_faithful_msg_dain_3"
     },
@@ -142,22 +142,22 @@ Object.assign(SCENARIO[3], {
         "next": "night3_cheat_msg_2"
     },
     "night3_cheat_msg_2": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night3_cheat_msg_3"
     },
     "night3_cheat_msg_3": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night3_cheat_msg_4"
     },
     "night3_cheat_msg_4": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night3_cheat_msg_5"
     },
     "night3_cheat_msg_5": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night3_nightmare_1"
     },

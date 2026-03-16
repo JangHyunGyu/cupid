@@ -22,31 +22,31 @@ Object.assign(SCENARIO[2], {
         "next": "night2_msg_2"
     },
     "night2_msg_2": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_3"
     },
     "night2_msg_3": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_4"
     },
     "night2_msg_4": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_5"
     },
     "night2_msg_5": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_6"
     },
     "night2_msg_6": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_msg_7"
@@ -235,19 +235,19 @@ Object.assign(SCENARIO[2], {
     },
     "night2_hidden_homeroom_1": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "night": true,
         "next": "night2_hidden_homeroom_2"
     },
     "night2_hidden_homeroom_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "night": true,
         "next": "night2_hidden_homeroom_3"
     },
     "night2_hidden_homeroom_3": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "night": true,
         "branches": [
             { "condition": "nurse_day2", "next": "night2_hidden_nurse_1" },
@@ -262,7 +262,7 @@ Object.assign(SCENARIO[2], {
     },
     "night2_hidden_nurse_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "night2_end_1"
     },
