@@ -121,7 +121,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "Ich",
-        "text": "*Der Klassenlehrer. Seine Krawatte sitzt noch schiefer als vorhin. Sieht aus, als hätte der Tag ihn geschafft.*"
+        "text": "*Die Klassenlehrerin. Ihre Strickjacke ist noch zerknitterter als vorhin. Sieht aus, als hätte der Tag sie geschafft.*"
     },
     "after_hidden_homeroom_4": {
         "name": "Klassenlehrer",
@@ -129,7 +129,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "Ich",
-        "text": "*Klingt nach Routine, aber seine Augen schauen aufmerksam.*",
+        "text": "*Klingt nach Routine, aber ihre Augen schauen aufmerksam.*",
         "choices": [
             "Ganz gut. Nette Schule.",
             "Ehrlich gesagt, ziemlich überwältigend."
@@ -141,7 +141,7 @@
     },
     "after_homeroom_ok_2": {
         "name": "Ich",
-        "text": "*Dachte, er wäre der distanzierte Typ, aber er kümmert sich tatsächlich. — Oder es ist einfach sein Job.*"
+        "text": "*Dachte, sie wäre der distanzierte Typ, aber sie kümmert sich tatsächlich. — Oder es ist einfach ihr Job.*"
     },
     "after_homeroom_honest_1": {
         "name": "Klassenlehrer",
@@ -181,13 +181,13 @@
     },
     "after_homeroom_honest_10": {
         "name": "Ich",
-        "text": "*Er verschwindet am Ende des Flurs. Seine Krawatte schwingt. — \"Ich sollte das eigentlich nicht tun\" scheint sein Lieblingssatz zu sein.*"
+        "text": "*Sie verschwindet am Ende des Flurs. Ihre langen Haare schwingen. — \"Ich sollte das eigentlich nicht tun\" scheint ihr Lieblingssatz zu sein.*"
     },
     "after_homeroom_freetalk": {
         "name": "Klassenlehrer",
         "text": "*Im Gespräch mit dem Klassenlehrer auf dem Flur.*",
         "context": "Tag 1 nach der Schule. Der Klassenlehrer hat den neuen Schüler angehalten, um nach ihm zu sehen.",
-        "personality": "Der Klassenlehrer versteckt Wärme hinter trockenem Humor. Anfang dreißig. Sein Spruch: \"Ich sollte das eigentlich nicht tun.\" Ehemaliger angehender Romanautor."
+        "personality": "Die Klassenlehrerin versteckt Wärme hinter trockenem Humor. Anfang dreißig, braunes welliges langes Haar und beige Strickjacke. Ihr Spruch: \"Ich sollte das eigentlich nicht tun.\" Ehemalige angehende Romanautorin."
     },
     "after_hidden_nurse_intro": {
         "name": "Ich",

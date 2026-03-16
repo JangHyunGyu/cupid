@@ -33,7 +33,7 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "Ich",
-        "text": "*Der Lehrer sitzt am Pult. — Kein Manuskript diesmal. Ein Umschlag. Ein brauner Umschlag.*"
+        "text": "*Die Lehrerin sitzt am Pult. — Kein Manuskript diesmal. Ein Umschlag. Ein brauner Umschlag.*"
     },
     "hidden_homeroom_d5_2": {
         "name": "Klassenlehrer",
@@ -45,7 +45,7 @@
     },
     "hidden_homeroom_d5_4": {
         "name": "Ich",
-        "text": "Herr Lehrer. Ich glaube, Sie können damit aufhören."
+        "text": "Frau Lehrerin. Ich glaube, Sie können damit aufhören."
     },
     "hidden_homeroom_d5_5": {
         "name": "Klassenlehrer",
@@ -61,13 +61,13 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "Ich",
-        "text": "*Er dreht sich um. Seine Krawatte schwingt. — Heute sitzt sie gerade.*"
+        "text": "*Sie dreht sich um. Ihre langen Haare schwingen. — Heute sitzen die Knöpfe ihrer Strickjacke gerade.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Klassenlehrer",
         "text": "*Letztes Gespräch mit dem Klassenlehrer im leeren Klassenzimmer.*",
-        "context": "Tag 5. Letzter Tag. Der Lehrer übergab sein 7-Jahre-Manuskript.",
-        "personality": "Der Lehrer ist ehrlicher als sonst, weil es das letzte Mal ist."
+        "context": "Tag 5. Letzter Tag. Die Lehrerin übergab ihr 7-Jahre-Manuskript.",
+        "personality": "Die Lehrerin ist ehrlicher als sonst, weil es das letzte Mal ist."
     },
     "hidden_nurse_d5_check": {
         "name": "Ich",

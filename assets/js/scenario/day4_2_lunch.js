@@ -437,7 +437,7 @@ Object.assign(SCENARIO[4], {
 ,
     "date_yuna_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/library.png",
+        "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "date_yuna_end"
     }

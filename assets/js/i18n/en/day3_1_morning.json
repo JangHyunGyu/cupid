@@ -218,7 +218,7 @@
     },
     "hidden_homeroom_d3_2": {
         "name": "Me",
-        "text": "*The homeroom teacher is sitting at the desk, writing something. He stops and looks up. — Our eyes meet.*"
+        "text": "*The homeroom teacher is sitting at the desk, writing something. She stops and looks up. — Our eyes meet.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Homeroom Teacher",
@@ -230,7 +230,7 @@
     },
     "hidden_homeroom_d3_choice": {
         "name": "Me",
-        "text": "*That's manuscript paper. He has the face of someone who's been caught.*",
+        "text": "*That's manuscript paper. She has the face of someone who's been caught.*",
         "choices": [
             "I saw it's manuscript paper. — Are you writing a novel?",
             "Sorry, I didn't see anything."
@@ -258,7 +258,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Me",
-        "text": "*He smiles. Not his usual dry one — slightly awkward. — ...First reader applicant in seven years.*"
+        "text": "*She smiles. Not her usual dry one — slightly awkward. — ...First reader applicant in seven years.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Homeroom Teacher",
@@ -266,12 +266,12 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "Me",
-        "text": "*He straightens his tie and leaves. — 'Please' is a rare word from this man.*"
+        "text": "*She tucks her hair behind her ear and leaves. — 'Please' is a rare word from her.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Talking with the homeroom teacher in the empty classroom.*",
-        "context": "Day 3 morning. Discovered the teacher writing a novel manuscript in an empty classroom. A secret he's kept for 7 years.",
+        "context": "Day 3 morning. Discovered the teacher writing a novel manuscript in an empty classroom. A secret she's kept for 7 years.",
         "personality": "The teacher was an aspiring novelist. Became a teacher but never let go of the dream. A mix of embarrassment and relief at being found out."
     },
     "hidden_nurse_d3_check": {

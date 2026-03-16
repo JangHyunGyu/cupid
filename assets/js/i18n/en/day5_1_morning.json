@@ -33,7 +33,7 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "Me",
-        "text": "*The teacher is sitting at the desk. — Not a manuscript this time. He's holding an envelope. A brown envelope.*"
+        "text": "*The teacher is sitting at the desk. — Not a manuscript this time. She's holding an envelope. A brown envelope.*"
     },
     "hidden_homeroom_d5_2": {
         "name": "Homeroom Teacher",
@@ -45,7 +45,7 @@
     },
     "hidden_homeroom_d5_4": {
         "name": "Me",
-        "text": "Sir. I think you can stop saying that now."
+        "text": "Ma'am. I think you can stop saying that now."
     },
     "hidden_homeroom_d5_5": {
         "name": "Homeroom Teacher",
@@ -61,13 +61,13 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "Me",
-        "text": "*He turns away. His tie sways. — Today, it's straight.*"
+        "text": "*She turns away. Her long hair sways. — Today, her cardigan buttons are straight.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Last conversation with the homeroom teacher in the empty classroom.*",
-        "context": "Day 5. Last day. The teacher handed over his 7-year manuscript. A promise to meet after graduation.",
-        "personality": "The teacher is more honest than usual because it's the last time. Using his catchphrase for the final time."
+        "context": "Day 5. Last day. The teacher handed over her 7-year manuscript. A promise to meet after graduation.",
+        "personality": "The teacher is more honest than usual because it's the last time. Using her catchphrase for the final time."
     },
     "hidden_nurse_d5_check": {
         "name": "Me",

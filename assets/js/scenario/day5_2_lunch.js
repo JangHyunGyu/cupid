@@ -207,7 +207,7 @@ Object.assign(SCENARIO[5], {
 ,
     "tour_yuna_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/library.png",
+        "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_end"
     }
