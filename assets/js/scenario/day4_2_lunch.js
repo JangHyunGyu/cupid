@@ -430,7 +430,6 @@ Object.assign(SCENARIO[4], {
 ,
     "date_seo_freetalk": {
         "type": "free_talk",
-        "maxTurns": 5,
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_end"
@@ -438,7 +437,6 @@ Object.assign(SCENARIO[4], {
 ,
     "date_yuna_freetalk": {
         "type": "free_talk",
-        "maxTurns": 5,
         "background": "assets/images/background/library.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "date_yuna_end"
@@ -446,7 +444,6 @@ Object.assign(SCENARIO[4], {
 ,
     "date_dain_freetalk": {
         "type": "free_talk",
-        "maxTurns": 5,
         "background": "assets/images/background/playground.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_end"
