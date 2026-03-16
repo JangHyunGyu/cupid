@@ -417,7 +417,7 @@ Object.assign(SCENARIO[3], {
     // =========================================================================
     "hidden_homeroom_d3_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "condition": "homeroom_day2",
         "next": "hidden_homeroom_d3_2"
     },
@@ -482,7 +482,7 @@ Object.assign(SCENARIO[3], {
     },
     "hidden_homeroom_d3_end": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "setFlag": "homeroom_day3",
         "next": "hidden_homeroom_d3_freetalk"
     },
@@ -498,7 +498,7 @@ Object.assign(SCENARIO[3], {
     // =========================================================================
     "hidden_nurse_d3_check": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "branches": [
             { "condition": "nurse_day2", "next": "hidden_nurse_d3_1" },
             { "next": "morning3_date_seo_1" }
@@ -506,7 +506,7 @@ Object.assign(SCENARIO[3], {
     },
     "hidden_nurse_d3_1": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "condition": "nurse_day2",
         "next": "hidden_nurse_d3_2"
     },
@@ -517,7 +517,7 @@ Object.assign(SCENARIO[3], {
     },
     "hidden_nurse_d3_3": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d3_4"
     },
     "hidden_nurse_d3_4": {

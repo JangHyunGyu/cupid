@@ -65,7 +65,7 @@ Object.assign(SCENARIO[4], {
     // === HIDDEN Day 4 담임 카페 ===
     "hidden_homeroom_d4_1": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "condition": "homeroom_day3",
         "next": "hidden_homeroom_d4_2"
     },
@@ -76,7 +76,7 @@ Object.assign(SCENARIO[4], {
     },
     "hidden_homeroom_d4_3": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_4"
     },
     "hidden_homeroom_d4_4": {
@@ -152,7 +152,7 @@ Object.assign(SCENARIO[4], {
     },
     "hidden_nurse_d4_1": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "condition": "nurse_day3",
         "next": "hidden_nurse_d4_2"
     },
@@ -163,7 +163,7 @@ Object.assign(SCENARIO[4], {
     },
     "hidden_nurse_d4_3": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_4"
     },
     "hidden_nurse_d4_4": {

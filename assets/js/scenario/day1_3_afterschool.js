@@ -198,7 +198,7 @@ Object.assign(SCENARIO[1], {
     // =========================================================================
     "after_hidden_homeroom_1": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "after_hidden_homeroom_2"
     },
     "after_hidden_homeroom_2": {
@@ -237,7 +237,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_homeroom_ok_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "after_hidden_nurse_intro"
     },
     "after_homeroom_honest_1": {
@@ -247,7 +247,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_homeroom_honest_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_3"
     },
     "after_homeroom_honest_3": {
@@ -257,7 +257,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_homeroom_honest_4": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_5"
     },
     "after_homeroom_honest_5": {
@@ -277,7 +277,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_homeroom_honest_8": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_9"
     },
     "after_homeroom_honest_9": {
@@ -287,7 +287,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_homeroom_honest_10": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "setFlag": "homeroom_day1",
         "next": "after_homeroom_freetalk"
     },
@@ -308,12 +308,12 @@ Object.assign(SCENARIO[1], {
     },
     "after_hidden_nurse_intro_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_hidden_nurse_choice"
     },
     "after_hidden_nurse_choice": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "choices": [
             {
                 "next": "after_nurse_enter_1",

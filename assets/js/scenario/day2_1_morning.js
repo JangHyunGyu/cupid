@@ -251,7 +251,7 @@ Object.assign(SCENARIO[2], {
     },
     "hidden_homeroom_d2_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_3"
     },
     "hidden_homeroom_d2_3": {
@@ -261,7 +261,7 @@ Object.assign(SCENARIO[2], {
     },
     "hidden_homeroom_d2_4": {
         "background": "assets/images/background/teacher_office.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_5"
     },
     "hidden_homeroom_d2_5": {
@@ -271,7 +271,7 @@ Object.assign(SCENARIO[2], {
     },
     "hidden_homeroom_d2_6": {
         "background": "assets/images/background/teacher_office.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_7"
     },
     "hidden_homeroom_d2_7": {
@@ -286,7 +286,7 @@ Object.assign(SCENARIO[2], {
     },
     "hidden_homeroom_d2_9": {
         "background": "assets/images/background/teacher_office.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_10"
     },
     "hidden_homeroom_d2_10": {
@@ -301,7 +301,7 @@ Object.assign(SCENARIO[2], {
     },
     "hidden_homeroom_d2_12": {
         "background": "assets/images/background/teacher_office.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "setFlag": "homeroom_day2",
         "next": "morning2_seo_dust_1"
     },
