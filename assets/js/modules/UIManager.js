@@ -508,10 +508,16 @@ class UIManager {
      * @param {boolean} delayed - true면 1.5초 후 표시 (시네마틱용)
      */
     showNextIndicator(show, delayed = false) {
+        // 이전 지연 타이머가 있으면 취소
+        if (this._nextIndicatorTimer) {
+            clearTimeout(this._nextIndicatorTimer);
+            this._nextIndicatorTimer = null;
+        }
         if (show) {
             if (delayed) {
                 // 시네마틱 장면에서 자연스럽게 지연 표시
-                setTimeout(() => {
+                this._nextIndicatorTimer = setTimeout(() => {
+                    this._nextIndicatorTimer = null;
                     this.nextIndicator.style.display = 'block';
                     this.nextIndicator.classList.add('fade-in');
                 }, 1500);
@@ -599,8 +605,9 @@ class UIManager {
 
     /** 설정 모달 닫기 */
     closeSettingsModal(e) {
-        if (e && e.target !== e.currentTarget && e.target.id !== 'settingsModal') return;
-        document.getElementById('settingsModal').style.display = 'none';
+        if (e && e.target !== e.currentTarget) return;
+        const modal = document.getElementById('settingsModal');
+        if (modal) modal.style.display = 'none';
     }
 
     /**

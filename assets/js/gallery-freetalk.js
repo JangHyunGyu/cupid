@@ -902,7 +902,8 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
             "...Sorry, I spaced out for a moment. Could you say that again?",
             '...Perdón, me distraje un momento. ¿Puedes repetirlo?',
             '...ごめん、ちょっとぼんやりしてた。もう一度言ってくれる？',
-            "...Désolée, j'étais dans la lune. Tu peux répéter ?"
+            "...Désolée, j'étais dans la lune. Tu peux répéter ?",
+            '...Entschuldigung, ich war kurz abgelenkt. Kannst du das nochmal sagen?'
         );
     }
 
@@ -936,7 +937,8 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
                 'Only image files can be uploaded.',
                 'Solo se pueden subir archivos de imagen.',
                 '画像ファイルのみアップロード可能です。',
-                'Seuls les fichiers image peuvent être téléchargés.'
+                'Seuls les fichiers image peuvent être téléchargés.',
+                'Nur Bilddateien können hochgeladen werden.'
             ));
             return;
         }
@@ -992,7 +994,8 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
             '<b>Tip:</b> Describe tone in asterisks, e.g., <i>*smiling* Hey...</i>',
             '<b>Tip:</b> Describe el tono con asteriscos, ej: <i>*sonriendo* Hola...</i>',
             '<b>Tip:</b> <i>*笑顔で* ねぇ</i> のように、雰囲気や状況を表現してみてね。',
-            '<b>Tip :</b> Décrivez le ton avec des astérisques, ex : <i>*en souriant* Salut...</i>'
+            '<b>Tip :</b> Décrivez le ton avec des astérisques, ex : <i>*en souriant* Salut...</i>',
+            '<b>Tipp:</b> Beschreibe den Ton mit Sternchen, z.B. <i>*lächelnd* Hey...</i>'
         );
     }
 

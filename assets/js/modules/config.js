@@ -90,6 +90,7 @@ const CHAR_NAME_MAP = Object.freeze({
     // Spanish
     "Profesora": "Teacher", "Enfermera": "Nurse",
     // Japanese
+    "ソヨン": "Seoyeon", "ユナ": "Yuna", "ダイン": "Dain",
     "担任先生": "Teacher", "保健先生": "Nurse",
     // French
     "Professeur Principal": "Teacher", "Infirmière Scolaire": "Nurse",
