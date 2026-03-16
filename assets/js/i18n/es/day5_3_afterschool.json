@@ -78,5 +78,37 @@
     "after5_end": {
         "name": "Yo",
         "text": "*Se verifican las condiciones de entrada al final. La afinidad más alta y la bandera del evento exclusivo del Día 3. Si no se cumplen las condiciones, se accede al FRIEND END o al ALONE END.*"
+    },
+    "after5_last_chance_1": {
+        "name": "{name}",
+        "text": "*En la escuela anterior fue igual. Me tragué las palabras. Y me arrepentí.*"
+    },
+    "after5_last_chance_2": {
+        "name": "{name}",
+        "text": "*¿Voy a tragarme las palabras otra vez?*"
+    },
+    "after5_last_chance_choice": {
+        "name": "{name}",
+        "text": "*El sol se está poniendo. El tiempo se acaba.*",
+        "choices": [
+            "Esta vez no me callaré",
+            "...No pude decir nada"
+        ]
+    },
+    "after5_confess_yes": {
+        "name": "{name}",
+        "text": "*Corrí. Hacia esa persona. — Esta vez no me tragaré mis palabras.*"
+    },
+    "after5_confess_yes_2": {
+        "name": "{name}",
+        "text": "*Lo dije. Torpe, roto — pero lo dije.*"
+    },
+    "after5_confess_no": {
+        "name": "{name}",
+        "text": "*...No pude decir nada. Otra vez.*"
+    },
+    "after5_confess_no_2": {
+        "name": "{name}",
+        "text": "*El atardecer se desvaneció. Igual que mis palabras.*"
     }
 }
