@@ -22,5 +22,133 @@
     "morning4_end": {
         "name": "Me",
         "text": "*My heart is pounding. Let's get ready.*"
+    },
+    "morning4_hidden_check": {
+        "name": "Me",
+        "text": "*Weekend. I end up passing by the school.*"
+    },
+    "hidden_homeroom_d4_1": {
+        "name": "Me",
+        "text": "*The school gate is slightly ajar. Signs of life inside. — Someone walks out. It's the homeroom teacher. In casual clothes.*"
+    },
+    "hidden_homeroom_d4_2": {
+        "name": "Homeroom Teacher",
+        "text": "...Huh? {name}?"
+    },
+    "hidden_homeroom_d4_3": {
+        "name": "Me",
+        "text": "Sir? It's the weekend, why are you at school?"
+    },
+    "hidden_homeroom_d4_4": {
+        "name": "Homeroom Teacher",
+        "text": "Oh, it's — leftover paperwork. ...Teachers are teachers even on weekends."
+    },
+    "hidden_homeroom_d4_5": {
+        "name": "Homeroom Teacher",
+        "text": "...Have you eaten? I really shouldn't do this... but one cup of coffee should be fine, right? — Well, juice, since you're a student."
+    },
+    "hidden_homeroom_d4_choice": {
+        "name": "Me",
+        "text": "*In casual clothes, the teacher doesn't look like a teacher. More like — a writer.*",
+        "choices": [
+            "Sure. Is there a cafe nearby?",
+            "Sir, you probably shouldn't, right?"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_1": {
+        "name": "Homeroom Teacher",
+        "text": "First time having tea with a student outside school. Honestly? A bit awkward."
+    },
+    "hidden_homeroom_d4_cafe_2": {
+        "name": "Homeroom Teacher",
+        "text": "...A little. After you saw it yesterday — somehow I could write more. Being found out was... a relief, I guess."
+    },
+    "hidden_homeroom_d4_cafe_3": {
+        "name": "Homeroom Teacher",
+        "text": "Know what's hardest about novels? Finding the first reader. Writing can be done alone. But without someone to read it — the story never gets finished."
+    },
+    "hidden_homeroom_d4_cafe_4": {
+        "name": "Homeroom Teacher",
+        "text": "...Will you be my first reader?"
+    },
+    "hidden_homeroom_d4_cafe_5": {
+        "name": "Me",
+        "text": "I want to read it."
+    },
+    "hidden_homeroom_d4_cafe_6": {
+        "name": "Homeroom Teacher",
+        "text": "...Thanks. But this stays between us — you know? I really shouldn't be doing this."
+    },
+    "hidden_homeroom_d4_decline": {
+        "name": "Homeroom Teacher",
+        "text": "...Right. I shouldn't. Go on, it's the weekend, don't hang around school. — Go have fun."
+    },
+    "hidden_homeroom_d4_freetalk": {
+        "name": "Homeroom Teacher",
+        "text": "*Talking with the homeroom teacher at a cafe.*",
+        "context": "Day 4. Ran into the teacher on the weekend, went to a cafe. He asked you to be his first reader.",
+        "personality": "The teacher is more relaxed in casual clothes. Torn between passion for writing and feelings for a student."
+    },
+    "hidden_nurse_d4_check": {
+        "name": "Me",
+        "text": "*The weekend is winding down.*"
+    },
+    "hidden_nurse_d4_1": {
+        "name": "Me",
+        "text": "*The school nurse posted 'looking for helpers' on the school messenger. My feet are already heading to school.*"
+    },
+    "hidden_nurse_d4_2": {
+        "name": "School Nurse",
+        "text": "Huh? You actually came? Didn't expect that. — A student volunteering at the nurse's office on a weekend."
+    },
+    "hidden_nurse_d4_3": {
+        "name": "Me",
+        "text": "I said I'd help."
+    },
+    "hidden_nurse_d4_4": {
+        "name": "School Nurse",
+        "text": "...At the hospital I used to do all this alone. Night shifts — sometimes one nurse doing three nurses' work."
+    },
+    "hidden_nurse_d4_5": {
+        "name": "School Nurse",
+        "text": "The hardest part wasn't the workload. Nobody called me by my name. 'Nurse,' 'night shift,' 'Ward 3.' All titles, not names."
+    },
+    "hidden_nurse_d4_6": {
+        "name": "School Nurse",
+        "text": "Thanks~ Finished faster because of you. ...It matters."
+    },
+    "hidden_nurse_d4_choice": {
+        "name": "School Nurse",
+        "text": "So, as thanks, can I buy you something? A teacher treating a student to a meal is totally an educational activity~",
+        "choices": [
+            "If it's educational, sure?",
+            "That's okay, I should get going"
+        ]
+    },
+    "hidden_nurse_d4_meal_1": {
+        "name": "School Nurse",
+        "text": "This is so spicy! Is this what students eat?!"
+    },
+    "hidden_nurse_d4_meal_2": {
+        "name": "Me",
+        "text": "You're not old at all."
+    },
+    "hidden_nurse_d4_meal_3": {
+        "name": "School Nurse",
+        "text": "...That kind of thing. Sounds strange coming from a student."
+    },
+    "hidden_nurse_d4_meal_4": {
+        "name": "School Nurse",
+        "text": "{name}. Thanks for today. — Seriously."
+    },
+    "hidden_nurse_d4_pass": {
+        "name": "School Nurse",
+        "text": "Alright~ Get home safe! — Come by again."
+    },
+    "hidden_nurse_d4_freetalk": {
+        "name": "School Nurse",
+        "text": "*Talking with the school nurse at a snack bar.*",
+        "context": "Day 4. Helped with health checkup prep on the weekend, then ate together. Hospital burnout backstory.",
+        "personality": "In casual clothes she feels more like an older sister. Oscillates between playfulness and sincerity."
     }
 }

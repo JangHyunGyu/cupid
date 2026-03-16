@@ -22,5 +22,133 @@
     "morning4_end": {
         "name": "{name}",
         "text": "*심장이 두근거린다. 준비하자.*"
+    },
+    "morning4_hidden_check": {
+        "name": "{name}",
+        "text": "*주말. 학교 근처를 지나가게 됐다.*"
+    },
+    "hidden_homeroom_d4_1": {
+        "name": "{name}",
+        "text": "*학교 정문이 살짝 열려 있다. 안쪽에서 인기척. — 정문 앞에서 나오는 사람. 담임선생님이다. 사복 차림.*"
+    },
+    "hidden_homeroom_d4_2": {
+        "name": "담임선생님",
+        "text": "...어? {name}?"
+    },
+    "hidden_homeroom_d4_3": {
+        "name": "{name}",
+        "text": "선생님? 주말인데 학교에요?"
+    },
+    "hidden_homeroom_d4_4": {
+        "name": "담임선생님",
+        "text": "아, 이건 — 서류 정리가 남아서. ...교사는 주말에도 교사야. 뭐."
+    },
+    "hidden_homeroom_d4_5": {
+        "name": "담임선생님",
+        "text": "...밥 먹었어? 선생님이 이러면 안 되는데... 커피 한 잔 정도는 괜찮지? — 학생이니까 주스지만."
+    },
+    "hidden_homeroom_d4_choice": {
+        "name": "{name}",
+        "text": "*사복 차림의 담임은 교사처럼 보이지 않는다. 그냥 — 글 쓰는 사람처럼.*",
+        "choices": [
+            "좋아요. 근처에 카페 있어요?",
+            "선생님, 그러면 안 되는 거 아니에요?"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_1": {
+        "name": "담임선생님",
+        "text": "학교 밖에서 학생이랑 차 마시는 건 처음이야. 솔직히? 좀 어색해."
+    },
+    "hidden_homeroom_d4_cafe_2": {
+        "name": "담임선생님",
+        "text": "...조금. 어제 네가 보고 나서 — 이상하게 좀 더 쓸 수 있었어. 누군가한테 들킨 게 — 안도가 됐달까."
+    },
+    "hidden_homeroom_d4_cafe_3": {
+        "name": "담임선생님",
+        "text": "소설에서 제일 어려운 게 뭔지 알아? 첫 번째 독자를 찾는 거야. 읽어줄 사람이 없으면 — 이야기는 완성되지 않아."
+    },
+    "hidden_homeroom_d4_cafe_4": {
+        "name": "담임선생님",
+        "text": "...첫 번째 독자가 되어줄래?"
+    },
+    "hidden_homeroom_d4_cafe_5": {
+        "name": "{name}",
+        "text": "읽고 싶어요."
+    },
+    "hidden_homeroom_d4_cafe_6": {
+        "name": "담임선생님",
+        "text": "...고마워. 근데 이거 아무한테도 — 알지? 선생님이 이러면 안 되는데."
+    },
+    "hidden_homeroom_d4_decline": {
+        "name": "담임선생님",
+        "text": "...맞아. 안 되는 거지. 가 봐. 주말인데 학교 앞에서 뭐 하냐. — 재밌는 거 해."
+    },
+    "hidden_homeroom_d4_freetalk": {
+        "name": "담임선생님",
+        "text": "*담임선생님과 카페에서 대화 중.*",
+        "context": "Day 4. 주말에 학교 앞에서 우연히 만나 카페에서 대화. 첫 번째 독자가 되어달라는 부탁.",
+        "personality": "담임선생님은 사복 차림에서 더 편안하다. 소설에 대한 열정과 학생에 대한 감정 사이에서 흔들린다."
+    },
+    "hidden_nurse_d4_check": {
+        "name": "{name}",
+        "text": "*주말이 끝나간다.*"
+    },
+    "hidden_nurse_d4_1": {
+        "name": "{name}",
+        "text": "*보건선생님이 학교 메신저로 '도와줄 사람 구함'이라고 올렸다. 발이 학교를 향하고 있다.*"
+    },
+    "hidden_nurse_d4_2": {
+        "name": "보건선생님",
+        "text": "어? 진짜 왔어? 올 줄 몰랐는데. — 학생이 주말에 보건실에 자원봉사를 오다니."
+    },
+    "hidden_nurse_d4_3": {
+        "name": "{name}",
+        "text": "도와준다고 했잖아요."
+    },
+    "hidden_nurse_d4_4": {
+        "name": "보건선생님",
+        "text": "...대학병원에서는 이런 거 혼자 다 했었는데. 야간 근무 때 — 간호사 세 명이 해야 할 일을 혼자 하는 날도 있었어."
+    },
+    "hidden_nurse_d4_5": {
+        "name": "보건선생님",
+        "text": "그때 나한테 제일 힘들었던 건 일의 양이 아니었어. 아무도 내 이름을 안 불러줬어. 다 직함이지, 이름이 아니거든."
+    },
+    "hidden_nurse_d4_6": {
+        "name": "보건선생님",
+        "text": "고마워~ 덕분에 빨리 끝났다. ...별거야."
+    },
+    "hidden_nurse_d4_choice": {
+        "name": "보건선생님",
+        "text": "자, 보답으로 뭐 사줄까? 선생님이 학생한테 밥 사주는 건 교육적 활동이니까~",
+        "choices": [
+            "교육적 활동이면 돼요?",
+            "괜찮아요, 저 이만 갈게요"
+        ]
+    },
+    "hidden_nurse_d4_meal_1": {
+        "name": "보건선생님",
+        "text": "아 맵다! 이게 학생들이 먹는 건가?!"
+    },
+    "hidden_nurse_d4_meal_2": {
+        "name": "{name}",
+        "text": "안 늙었는데요."
+    },
+    "hidden_nurse_d4_meal_3": {
+        "name": "보건선생님",
+        "text": "...그런 말. 학생한테 들으니까 이상하네."
+    },
+    "hidden_nurse_d4_meal_4": {
+        "name": "보건선생님",
+        "text": "{name}. 오늘 고마웠어. — 진짜로."
+    },
+    "hidden_nurse_d4_pass": {
+        "name": "보건선생님",
+        "text": "그래~ 조심히 가! — 다음에 또 와."
+    },
+    "hidden_nurse_d4_freetalk": {
+        "name": "보건선생님",
+        "text": "*보건선생님과 분식집에서 대화 중.*",
+        "context": "Day 4. 주말에 건강검진 준비를 도와주고 분식집에서 식사. 대학병원 번아웃 이야기.",
+        "personality": "보건선생님은 사복에서 누나 같다. 장난기와 진심이 오가며, 이름을 불러주는 것의 무게를 안다."
     }
 }

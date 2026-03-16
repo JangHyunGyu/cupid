@@ -22,5 +22,133 @@
     "morning4_end": {
         "name": "Moi",
         "text": "*Mon cœur bat la chamade. Préparons-nous.*"
+    },
+    "morning4_hidden_check": {
+        "name": "Moi",
+        "text": "*Weekend. Je passe devant l'école.*"
+    },
+    "hidden_homeroom_d4_1": {
+        "name": "Moi",
+        "text": "*Le portail est entrouvert. Quelqu'un sort. C'est le prof principal. En civil.*"
+    },
+    "hidden_homeroom_d4_2": {
+        "name": "Professeur Principal",
+        "text": "...Hein ? {name} ?"
+    },
+    "hidden_homeroom_d4_3": {
+        "name": "Moi",
+        "text": "Monsieur ? C'est le weekend, qu'est-ce que vous faites là ?"
+    },
+    "hidden_homeroom_d4_4": {
+        "name": "Professeur Principal",
+        "text": "Ah, c'est que — de la paperasse. ...Un prof reste un prof même le weekend."
+    },
+    "hidden_homeroom_d4_5": {
+        "name": "Professeur Principal",
+        "text": "...T'as mangé ? Je devrais pas faire ça... mais un café, ça va, non ? — Enfin, un jus pour toi."
+    },
+    "hidden_homeroom_d4_choice": {
+        "name": "Moi",
+        "text": "*En civil, le prof ne ressemble pas à un prof. Plutôt à — un écrivain.*",
+        "choices": [
+            "D'accord. Il y a un café dans le coin ?",
+            "Monsieur, vous devriez pas, non ?"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_1": {
+        "name": "Professeur Principal",
+        "text": "Première fois que je prends un verre avec un élève en dehors de l'école. Franchement ? Un peu gênant."
+    },
+    "hidden_homeroom_d4_cafe_2": {
+        "name": "Professeur Principal",
+        "text": "...Un peu. Après que tu m'aies découvert hier — j'ai pu écrire davantage. Être découvert, c'était... un soulagement."
+    },
+    "hidden_homeroom_d4_cafe_3": {
+        "name": "Professeur Principal",
+        "text": "Tu sais ce qui est le plus dur dans l'écriture ? Trouver le premier lecteur. Sans quelqu'un pour lire — l'histoire ne se termine jamais."
+    },
+    "hidden_homeroom_d4_cafe_4": {
+        "name": "Professeur Principal",
+        "text": "...Tu veux bien être mon premier lecteur ?"
+    },
+    "hidden_homeroom_d4_cafe_5": {
+        "name": "Moi",
+        "text": "J'ai envie de le lire."
+    },
+    "hidden_homeroom_d4_cafe_6": {
+        "name": "Professeur Principal",
+        "text": "...Merci. Mais ça reste entre nous — d'accord ? Je devrais pas faire ça."
+    },
+    "hidden_homeroom_d4_decline": {
+        "name": "Professeur Principal",
+        "text": "...T'as raison. Je devrais pas. Allez, c'est le weekend. — Va t'amuser."
+    },
+    "hidden_homeroom_d4_freetalk": {
+        "name": "Professeur Principal",
+        "text": "*En train de discuter avec le prof principal au café.*",
+        "context": "Jour 4. Rencontre fortuite le weekend, café ensemble. Il m'a demandé d'être son premier lecteur.",
+        "personality": "Le prof est plus détendu en civil. Déchiré entre passion pour l'écriture et sentiments."
+    },
+    "hidden_nurse_d4_check": {
+        "name": "Moi",
+        "text": "*Le weekend touche à sa fin.*"
+    },
+    "hidden_nurse_d4_1": {
+        "name": "Moi",
+        "text": "*L'infirmière a posté 'cherche volontaires' sur la messagerie. Mes pieds se dirigent déjà vers l'école.*"
+    },
+    "hidden_nurse_d4_2": {
+        "name": "Infirmière",
+        "text": "Hein ? T'es vraiment venu ? Je m'y attendais pas. — Un élève bénévole à l'infirmerie un weekend."
+    },
+    "hidden_nurse_d4_3": {
+        "name": "Moi",
+        "text": "J'avais dit que j'aiderais."
+    },
+    "hidden_nurse_d4_4": {
+        "name": "Infirmière",
+        "text": "...À l'hôpital je faisais tout ça seule. Les gardes de nuit — parfois une infirmière fait le travail de trois."
+    },
+    "hidden_nurse_d4_5": {
+        "name": "Infirmière",
+        "text": "Le plus dur, c'était pas la charge. Personne m'appelait par mon prénom. Tout était des titres, pas des noms."
+    },
+    "hidden_nurse_d4_6": {
+        "name": "Infirmière",
+        "text": "Merci~ On a fini vite grâce à toi ! ...Ça compte."
+    },
+    "hidden_nurse_d4_choice": {
+        "name": "Infirmière",
+        "text": "Bon, en remerciement, je t'offre quelque chose ? Un prof qui nourrit un élève, c'est éducatif~",
+        "choices": [
+            "Si c'est éducatif, ça va ?",
+            "Ça va, je vais y aller"
+        ]
+    },
+    "hidden_nurse_d4_meal_1": {
+        "name": "Infirmière",
+        "text": "C'est super épicé ! C'est ça que mangent les élèves ?!"
+    },
+    "hidden_nurse_d4_meal_2": {
+        "name": "Moi",
+        "text": "Vous n'êtes pas vieille du tout."
+    },
+    "hidden_nurse_d4_meal_3": {
+        "name": "Infirmière",
+        "text": "...Ce genre de chose. Ça sonne bizarre venant d'un élève."
+    },
+    "hidden_nurse_d4_meal_4": {
+        "name": "Infirmière",
+        "text": "{name}. Merci pour aujourd'hui. — Vraiment."
+    },
+    "hidden_nurse_d4_pass": {
+        "name": "Infirmière",
+        "text": "D'accord~ Rentre bien ! — Reviens bientôt."
+    },
+    "hidden_nurse_d4_freetalk": {
+        "name": "Infirmière",
+        "text": "*En train de discuter avec l'infirmière dans un snack.*",
+        "context": "Jour 4. Aidé aux préparatifs et mangé ensemble.",
+        "personality": "En civil, elle fait plus grande sœur. Oscille entre enjouement et sincérité."
     }
 }
