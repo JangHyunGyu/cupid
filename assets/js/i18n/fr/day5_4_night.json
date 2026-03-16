@@ -292,7 +292,7 @@
     },
     "hidden_true_homeroom_2": {
         "name": "Moi",
-        "text": "*La salle vide. Celle où il écrivait. — Le prof principal attend. En civil.*"
+        "text": "*La salle vide. Celle où elle écrivait. — La prof principale attend. En civil.*"
     },
     "hidden_true_homeroom_3": {
         "name": "Professeur Principal",
@@ -300,7 +300,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Professeur Principal",
-        "text": "...Tiens. Tu n'as pas dit 'monsieur'. Première fois."
+        "text": "...Tiens. Tu n'as pas dit 'madame'. Première fois."
     },
     "hidden_true_homeroom_5": {
         "name": "Professeur Principal",
@@ -308,7 +308,7 @@
     },
     "hidden_true_homeroom_6": {
         "name": "Professeur Principal",
-        "text": "Je suis plus ton prof — je peux dire un truc ? ...On va boire un café. Un vrai cette fois, pas un jus."
+        "text": "Je suis plus ta prof — je peux dire un truc ? ...On va boire un café. Un vrai cette fois, pas un jus."
     },
     "hidden_true_homeroom_7": {
         "name": "Moi",
@@ -316,7 +316,7 @@
     },
     "hidden_true_homeroom_8": {
         "name": "Professeur Principal",
-        "text": "...Je devrais pas faire ça. Non. Je suis plus prof.\n\n─── Professeur Principal TRUE LOVE END ───"
+        "text": "...Je devrais pas faire ça. Non. Je suis plus prof.\n\n─── Professeur Principale TRUE LOVE END ───"
     },
     "hidden_true_nurse_1": {
         "name": "Moi",
@@ -340,7 +340,7 @@
     },
     "hidden_true_nurse_6": {
         "name": "Infirmière",
-        "text": "Un prof devrait pas avoir de sentiments pour un élève. Je le savais. — Alors j'emballais tout dans des blagues. Mais toi, tu voyais à travers à chaque fois."
+        "text": "Une prof devrait pas avoir de sentiments pour un élève. Je le savais. — Alors j'emballais tout dans des blagues. Mais toi, tu voyais à travers à chaque fois."
     },
     "hidden_true_nurse_7": {
         "name": "Infirmière",

@@ -121,7 +121,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "Moi",
-        "text": "*C'est le prof principal. Sa cravate est encore plus de travers qu'avant. On dirait qu'il a eu une rude journée.*"
+        "text": "*C'est la prof principale. Son cardigan est encore plus froissé qu'avant. On dirait qu'elle a eu une rude journée.*"
     },
     "after_hidden_homeroom_4": {
         "name": "Professeur Principal",
@@ -141,7 +141,7 @@
     },
     "after_homeroom_ok_2": {
         "name": "Moi",
-        "text": "*Je le croyais distant, mais il fait attention en fait. — Ou c'est juste son travail.*"
+        "text": "*Je la croyais distante, mais elle fait attention en fait. — Ou c'est juste son travail.*"
     },
     "after_homeroom_honest_1": {
         "name": "Professeur Principal",
@@ -181,13 +181,13 @@
     },
     "after_homeroom_honest_10": {
         "name": "Moi",
-        "text": "*Il disparaît au bout du couloir. Sa cravate se balance. — \"Je devrais pas faire ça\" semble être sa phrase fétiche.*"
+        "text": "*Elle disparaît au bout du couloir. Ses longs cheveux se balancent. — \"Je devrais pas faire ça\" semble être sa phrase fétiche.*"
     },
     "after_homeroom_freetalk": {
         "name": "Professeur Principal",
         "text": "*En train de discuter avec le prof principal dans le couloir.*",
         "context": "Jour 1 après les cours. Le prof principal a arrêté le nouvel élève pour prendre de ses nouvelles.",
-        "personality": "Le prof principal cache sa gentillesse derrière un humour pince-sans-rire. Début de trentaine. Sa phrase fétiche : \"Je devrais pas faire ça\". Ancien aspirant romancier."
+        "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Début de trentaine, longs cheveux bruns ondulés et cardigan beige. Sa phrase fétiche : \"Je devrais pas faire ça\". Ancienne aspirante romancière."
     },
     "after_hidden_nurse_intro": {
         "name": "Moi",

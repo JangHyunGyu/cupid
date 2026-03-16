@@ -37,7 +37,7 @@
     },
     "hidden_homeroom_d4_3": {
         "name": "Moi",
-        "text": "Monsieur ? C'est le weekend, qu'est-ce que vous faites là ?"
+        "text": "Madame ? C'est le weekend, qu'est-ce que vous faites là ?"
     },
     "hidden_homeroom_d4_4": {
         "name": "Professeur Principal",
@@ -49,10 +49,10 @@
     },
     "hidden_homeroom_d4_choice": {
         "name": "Moi",
-        "text": "*En civil, le prof ne ressemble pas à un prof. Plutôt à — un écrivain.*",
+        "text": "*En civil, la prof ne ressemble pas à une prof. Plutôt à — une écrivaine.*",
         "choices": [
             "D'accord. Il y a un café dans le coin ?",
-            "Monsieur, vous devriez pas, non ?"
+            "Madame, vous devriez pas, non ?"
         ]
     },
     "hidden_homeroom_d4_cafe_1": {

@@ -189,7 +189,7 @@
     },
     "hidden_homeroom_d2_2": {
         "name": "Ich",
-        "text": "*Er sagt, es sei Verwaltungskram. Der Mann verpackt sein Interesse immer als dienstlich.*"
+        "text": "*Sie sagt, es sei Verwaltungskram. Sie verpackt ihr Interesse immer als dienstlich.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Klassenlehrer",
@@ -205,7 +205,7 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "Ich",
-        "text": "*Die Schublade. Hat er gerade hingeschaut? — Durch den Spalt sehe ich einen Stapel Papiere. Sieht aus wie Manuskriptseiten.*"
+        "text": "*Die Schublade. Hat sie gerade hingeschaut? — Durch den Spalt sehe ich einen Stapel Papiere. Sieht aus wie Manuskriptseiten.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Klassenlehrer",
@@ -217,11 +217,11 @@
     },
     "hidden_homeroom_d2_9": {
         "name": "Ich",
-        "text": "Danke, Herr Lehrer."
+        "text": "Danke, Frau Lehrerin."
     },
     "hidden_homeroom_d2_10": {
         "name": "Klassenlehrer",
-        "text": "Naja, dass ein Lehrer sich um Schüler sorgt, ist selbstverständlich. Dienstlich."
+        "text": "Naja, dass eine Lehrerin sich um Schüler sorgt, ist selbstverständlich. Dienstlich."
     },
     "hidden_homeroom_d2_11": {
         "name": "Klassenlehrer",

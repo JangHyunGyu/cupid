@@ -33,7 +33,7 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "Moi",
-        "text": "*Le prof est assis au bureau. — Pas un manuscrit cette fois. Une enveloppe. Brune.*"
+        "text": "*La prof est assise au bureau. — Pas un manuscrit cette fois. Une enveloppe. Brune.*"
     },
     "hidden_homeroom_d5_2": {
         "name": "Professeur Principal",
@@ -45,7 +45,7 @@
     },
     "hidden_homeroom_d5_4": {
         "name": "Moi",
-        "text": "Monsieur. Je crois que vous pouvez arrêter de dire ça."
+        "text": "Madame. Je crois que vous pouvez arrêter de dire ça."
     },
     "hidden_homeroom_d5_5": {
         "name": "Professeur Principal",
@@ -61,13 +61,13 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "Moi",
-        "text": "*Il se retourne. Sa cravate oscille. — Aujourd'hui, elle est droite.*"
+        "text": "*Elle se retourne. Ses longs cheveux oscillent. — Aujourd'hui, les boutons de son cardigan sont droits.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Professeur Principal",
         "text": "*Dernière conversation avec le prof principal dans la salle vide.*",
-        "context": "Jour 5. Dernier jour. Le prof a remis son manuscrit.",
-        "personality": "Le prof est plus honnête que d'habitude car c'est la dernière fois."
+        "context": "Jour 5. Dernier jour. La prof a remis son manuscrit.",
+        "personality": "La prof est plus honnête que d'habitude car c'est la dernière fois."
     },
     "hidden_nurse_d5_check": {
         "name": "Moi",

@@ -37,7 +37,7 @@
     },
     "hidden_homeroom_d4_3": {
         "name": "Me",
-        "text": "Sir? It's the weekend, why are you at school?"
+        "text": "Ma'am? It's the weekend, why are you at school?"
     },
     "hidden_homeroom_d4_4": {
         "name": "Homeroom Teacher",
@@ -52,7 +52,7 @@
         "text": "*In casual clothes, the teacher doesn't look like a teacher. More like — a writer.*",
         "choices": [
             "Sure. Is there a cafe nearby?",
-            "Sir, you probably shouldn't, right?"
+            "Ma'am, you probably shouldn't, right?"
         ]
     },
     "hidden_homeroom_d4_cafe_1": {
