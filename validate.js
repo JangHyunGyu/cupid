@@ -55,9 +55,10 @@ if (fs.existsSync(I18N_DIR)) {
 // ===== Character name → image prefix mapping =====
 const NAME_TO_PREFIX = {
     "서연": "seyoun", "유나": "yuna", "다인": "dain",
-    "담임선생님": "teacher", "보건선생님": "nurse",
+    "담임선생님": "teacher", "담임": "teacher", "보건선생님": "nurse", "보건": "nurse",
     "Seoyeon": "seyoun", "Yuna": "yuna", "Dain": "dain",
-    "Teacher": "teacher", "Nurse": "nurse"
+    "Teacher": "teacher", "Nurse": "nurse",
+    "Homeroom Teacher": "teacher", "School Nurse": "nurse"
 };
 
 const errors = [];
