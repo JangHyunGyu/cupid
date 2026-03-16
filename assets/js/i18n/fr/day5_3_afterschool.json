@@ -78,5 +78,37 @@
     "after5_end": {
         "name": "Moi",
         "text": "*Vérification des conditions d'entrée de la fin. Affinité la plus haute et drapeau d'événement exclusif du Jour 3. Si les conditions ne sont pas remplies, c'est le FRIEND END ou l'ALONE END.*"
+    },
+    "after5_last_chance_1": {
+        "name": "{name}",
+        "text": "*C'était pareil dans mon ancienne école. J'ai ravalé mes mots. Et je l'ai regretté.*"
+    },
+    "after5_last_chance_2": {
+        "name": "{name}",
+        "text": "*Est-ce que je vais encore les ravaler ?*"
+    },
+    "after5_last_chance_choice": {
+        "name": "{name}",
+        "text": "*Le soleil se couche. Le temps presse.*",
+        "choices": [
+            "Cette fois, je ne me tairai pas",
+            "...Je n'ai rien pu dire"
+        ]
+    },
+    "after5_confess_yes": {
+        "name": "{name}",
+        "text": "*J'ai couru. Vers cette personne. — Cette fois, je ne ravalerai pas mes mots.*"
+    },
+    "after5_confess_yes_2": {
+        "name": "{name}",
+        "text": "*Je l'ai dit. Maladroit, brisé — mais je l'ai dit.*"
+    },
+    "after5_confess_no": {
+        "name": "{name}",
+        "text": "*...Je n'ai rien pu dire. Encore une fois.*"
+    },
+    "after5_confess_no_2": {
+        "name": "{name}",
+        "text": "*Le coucher de soleil s'est estompé. Comme mes mots.*"
     }
 }

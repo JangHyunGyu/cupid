@@ -78,5 +78,37 @@
     "after5_end": {
         "name": "Me",
         "text": "*Checking the ending entry conditions. Top affinity and Day 3 exclusive event flag. If conditions aren't met, it leads to FRIEND END or ALONE END.*"
+    },
+    "after5_last_chance_1": {
+        "name": "{name}",
+        "text": "*At the previous school, it was the same. I swallowed my words. And regretted it.*"
+    },
+    "after5_last_chance_2": {
+        "name": "{name}",
+        "text": "*Will I swallow them again this time too?*"
+    },
+    "after5_last_chance_choice": {
+        "name": "{name}",
+        "text": "*The sun is setting. Time is running out.*",
+        "choices": [
+            "This time, I won't hold back",
+            "...I couldn't say anything"
+        ]
+    },
+    "after5_confess_yes": {
+        "name": "{name}",
+        "text": "*I ran. Toward that person. — This time, I won't swallow my words.*"
+    },
+    "after5_confess_yes_2": {
+        "name": "{name}",
+        "text": "*I said it. Clumsy, broken — but I said it.*"
+    },
+    "after5_confess_no": {
+        "name": "{name}",
+        "text": "*...I couldn't say anything. Again.*"
+    },
+    "after5_confess_no_2": {
+        "name": "{name}",
+        "text": "*The sunset faded. Just like my words.*"
     }
 }

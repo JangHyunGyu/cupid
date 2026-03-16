@@ -78,5 +78,37 @@
     "after5_end": {
         "name": "Ich",
         "text": "*Prüfung der Ending-Eintrittsbedingungen. Höchste Zuneigung und Day-3-Exklusiv-Event-Flag. Bei Nichterfüllung führt es zum FRIEND END oder ALONE END.*"
+    },
+    "after5_last_chance_1": {
+        "name": "{name}",
+        "text": "*An der alten Schule war es genauso. Ich schluckte meine Worte. Und bereute es.*"
+    },
+    "after5_last_chance_2": {
+        "name": "{name}",
+        "text": "*Werde ich sie diesmal wieder schlucken?*"
+    },
+    "after5_last_chance_choice": {
+        "name": "{name}",
+        "text": "*Die Sonne geht unter. Die Zeit läuft ab.*",
+        "choices": [
+            "Diesmal halte ich nicht zurück",
+            "...Ich konnte nichts sagen"
+        ]
+    },
+    "after5_confess_yes": {
+        "name": "{name}",
+        "text": "*Ich rannte. Zu dieser Person. — Diesmal schlucke ich meine Worte nicht.*"
+    },
+    "after5_confess_yes_2": {
+        "name": "{name}",
+        "text": "*Ich habe es gesagt. Unbeholfen, gebrochen — aber ich habe es gesagt.*"
+    },
+    "after5_confess_no": {
+        "name": "{name}",
+        "text": "*...Ich konnte nichts sagen. Wieder.*"
+    },
+    "after5_confess_no_2": {
+        "name": "{name}",
+        "text": "*Der Sonnenuntergang verblasste. Genau wie meine Worte.*"
     }
 }
