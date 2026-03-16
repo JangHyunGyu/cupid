@@ -29,10 +29,10 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "Ich",
-        "text": "*Das Schultor steht einen Spalt offen. Jemand kommt raus. Der Klassenlehrer. In Freizeitkleidung.*"
+        "text": "*Das Schultor steht einen Spalt offen. Jemand kommt raus. Die Klassenlehrerin. In Freizeitkleidung.*"
     },
     "hidden_homeroom_d4_2": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...Hä? {name}?"
     },
     "hidden_homeroom_d4_3": {
@@ -40,11 +40,11 @@
         "text": "Frau Lehrerin? Es ist Wochenende, was machen Sie hier?"
     },
     "hidden_homeroom_d4_4": {
-        "name": "Klassenlehrer",
-        "text": "Ach, da war noch — Papierkram. ...Lehrer sind auch am Wochenende Lehrer."
+        "name": "Klassenlehrerin",
+        "text": "Ach, da war noch — Papierkram. ...Lehrerinnen sind auch am Wochenende Lehrerinnen."
     },
     "hidden_homeroom_d4_5": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...Schon gegessen? Ich sollte das eigentlich nicht tun... aber ein Kaffee geht doch, oder? — Also Saft, weil du Schüler bist."
     },
     "hidden_homeroom_d4_choice": {
@@ -56,19 +56,19 @@
         ]
     },
     "hidden_homeroom_d4_cafe_1": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Das erste Mal, dass ich mit einem Schüler außerhalb der Schule was trinke. Ehrlich? Ein bisschen komisch."
     },
     "hidden_homeroom_d4_cafe_2": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...Ein bisschen. Nachdem du mich gestern entdeckt hast — konnte ich irgendwie mehr schreiben. Ertappt zu werden war... erleichternd."
     },
     "hidden_homeroom_d4_cafe_3": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Weißt du, was beim Romanschreiben am schwersten ist? Den ersten Leser zu finden. Ohne jemanden, der liest — wird die Geschichte nie fertig."
     },
     "hidden_homeroom_d4_cafe_4": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...Würdest du mein erster Leser werden?"
     },
     "hidden_homeroom_d4_cafe_5": {
@@ -76,18 +76,18 @@
         "text": "Ich will es lesen."
     },
     "hidden_homeroom_d4_cafe_6": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...Danke. Aber das bleibt unter uns — klar? Ich sollte das eigentlich nicht tun."
     },
     "hidden_homeroom_d4_decline": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...Stimmt. Sollte ich nicht. Geh. Es ist Wochenende. — Hab Spaß."
     },
     "hidden_homeroom_d4_freetalk": {
-        "name": "Klassenlehrer",
-        "text": "*Im Gespräch mit dem Klassenlehrer im Café.*",
-        "context": "Tag 4. Zufällige Begegnung am Wochenende. Er bat mich, sein erster Leser zu werden.",
-        "personality": "Der Lehrer ist in Freizeitkleidung entspannter. Zerrissen zwischen Schreiblust und Gefühlen."
+        "name": "Klassenlehrerin",
+        "text": "*Im Gespräch mit der Klassenlehrerin im Café.*",
+        "context": "Tag 4. Zufällige Begegnung am Wochenende. Sie bat mich, ihr erster Leser zu werden.",
+        "personality": "Die Lehrerin ist in Freizeitkleidung entspannter. Zerrissen zwischen Schreiblust und Gefühlen."
     },
     "hidden_nurse_d4_check": {
         "name": "Ich",

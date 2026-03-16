@@ -65,7 +65,7 @@
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Professeur Principal",
-        "text": "*Dernière conversation avec le prof principal dans la salle vide.*",
+        "text": "*Dernière conversation avec la prof principale dans la salle vide.*",
         "context": "Jour 5. Dernier jour. La prof a remis son manuscrit.",
         "personality": "La prof est plus honnête que d'habitude car c'est la dernière fois."
     },

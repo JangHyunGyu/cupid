@@ -94,7 +94,7 @@ const CHAR_NAME_MAP = Object.freeze({
     // French
     "Professeur Principal": "Teacher", "Infirmière Scolaire": "Nurse",
     // German
-    "Lehrerin": "Teacher", "Schulkrankenschwester": "Nurse"
+    "Klassenlehrerin": "Teacher", "Lehrerin": "Teacher", "Schulkrankenschwester": "Nurse"
 });
 
 

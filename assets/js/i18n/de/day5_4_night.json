@@ -292,22 +292,22 @@
     },
     "hidden_true_homeroom_2": {
         "name": "Ich",
-        "text": "*Das leere Klassenzimmer. Das, in dem er geschrieben hat. — Der Klassenlehrer wartet. In Freizeitkleidung.*"
+        "text": "*Das leere Klassenzimmer. Das, in dem sie geschrieben hat. — Die Klassenlehrerin wartet. In Freizeitkleidung.*"
     },
     "hidden_true_homeroom_3": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Glückwunsch zum Abschluss."
     },
     "hidden_true_homeroom_4": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...Das. Du hast nicht 'Frau Lehrerin' gesagt. Zum ersten Mal."
     },
     "hidden_true_homeroom_5": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Ich hab das Manuskript fertig. — Weil du mein erster Leser warst. Ich sagte eine Zeile und du kamst mit drei Seiten."
     },
     "hidden_true_homeroom_6": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Da ich nicht mehr deine Lehrerin bin — darf ich was sagen? ...Lass uns Kaffee trinken gehen. Diesmal echten, keinen Saft."
     },
     "hidden_true_homeroom_7": {
@@ -315,8 +315,8 @@
         "text": "Gerne."
     },
     "hidden_true_homeroom_8": {
-        "name": "Klassenlehrer",
-        "text": "...Ich sollte das eigentlich nicht tun. Nein. Ich bin keine Lehrerin mehr.\n\n─── Klassenlehrer TRUE LOVE END ───"
+        "name": "Klassenlehrerin",
+        "text": "...Ich sollte das eigentlich nicht tun. Nein. Ich bin keine Lehrerin mehr.\n\n─── Klassenlehrerin TRUE LOVE END ───"
     },
     "hidden_true_nurse_1": {
         "name": "Ich",
@@ -351,7 +351,7 @@
         "text": "Jetzt können wir uns ohne Pflaster treffen. — Ohne Ausreden.\n\n─── Schulkrankenschwester TRUE LOVE END ───"
     },
     "hidden_good_homeroom_1": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Glückwunsch zum Abschluss."
     },
     "hidden_good_homeroom_2": {
@@ -364,7 +364,7 @@
     },
     "hidden_good_homeroom_4": {
         "name": "Ich",
-        "text": "*Seine Hand hielt etwa drei Sekunden länger. Zu lang für einen Händedruck, zu kurz für ein Geständnis.\n\n─── Klassenlehrer GOOD END ───*"
+        "text": "*Ihre Hand hielt etwa drei Sekunden länger. Zu lang für einen Händedruck, zu kurz für ein Geständnis.\n\n─── Klassenlehrerin GOOD END ───*"
     },
     "hidden_good_nurse_1": {
         "name": "Schulkrankenschwester",

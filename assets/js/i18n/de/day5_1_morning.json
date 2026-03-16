@@ -36,11 +36,11 @@
         "text": "*Die Lehrerin sitzt am Pult. — Kein Manuskript diesmal. Ein Umschlag. Ein brauner Umschlag.*"
     },
     "hidden_homeroom_d5_2": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Das Manuskript. — Unfertig. Aber ich wollte es meinem ersten Leser geben."
     },
     "hidden_homeroom_d5_3": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "Hab es sieben Jahre niemandem gezeigt. — Ich sollte das eigentlich nicht tun."
     },
     "hidden_homeroom_d5_4": {
@@ -48,24 +48,24 @@
         "text": "Frau Lehrerin. Ich glaube, Sie können damit aufhören."
     },
     "hidden_homeroom_d5_5": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...Hätte nie gedacht, das von einem Schüler zu hören."
     },
     "hidden_homeroom_d5_6": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...Keine Buchberichte. — ...Schreib mir wenigstens eine Zeile."
     },
     "hidden_homeroom_d5_7": {
-        "name": "Klassenlehrer",
-        "text": "Nach dem Abschluss — treffen wir uns. Nicht als Lehrer und Schüler. ...Sollte ich nicht. Aber nur dieses eine Mal."
+        "name": "Klassenlehrerin",
+        "text": "Nach dem Abschluss — treffen wir uns. Nicht als Lehrerin und Schüler. ...Sollte ich nicht. Aber nur dieses eine Mal."
     },
     "hidden_homeroom_d5_8": {
         "name": "Ich",
         "text": "*Sie dreht sich um. Ihre langen Haare schwingen. — Heute sitzen die Knöpfe ihrer Strickjacke gerade.*"
     },
     "hidden_homeroom_d5_freetalk": {
-        "name": "Klassenlehrer",
-        "text": "*Letztes Gespräch mit dem Klassenlehrer im leeren Klassenzimmer.*",
+        "name": "Klassenlehrerin",
+        "text": "*Letztes Gespräch mit der Klassenlehrerin im leeren Klassenzimmer.*",
         "context": "Tag 5. Letzter Tag. Die Lehrerin übergab ihr 7-Jahre-Manuskript.",
         "personality": "Die Lehrerin ist ehrlicher als sonst, weil es das letzte Mal ist."
     },

@@ -73,7 +73,7 @@ class DialogueSystem {
             // French
             "Professeur Principal": "teacher", "Infirmière Scolaire": "nurse",
             // German
-            "Lehrerin": "teacher", "Schulkrankenschwester": "nurse",
+            "Klassenlehrerin": "teacher", "Lehrerin": "teacher", "Schulkrankenschwester": "nurse",
             // Unknown
             "???": "seyoun"
         };

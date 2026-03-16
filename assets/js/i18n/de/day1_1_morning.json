@@ -188,7 +188,7 @@
         "text": "*Erwartet habe ich es, aber das Gewicht von 30 Blicken ist trotzdem schwer.*"
     },
     "classroom_3": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "So, ab heute haben wir einen neuen Schüler in unserer Klasse. Möchtest du dich vorstellen?"
     },
     "classroom_4": {
@@ -212,7 +212,7 @@
         "text": "*Brauner Pferdeschwanz. Eine Stimme voller Energie. Sie steht halb von ihrem Platz auf. Die Nachbarin zieht sie runter, aber es nützt nichts.*"
     },
     "classroom_dain_3": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "다인(Dain), bitte etwas leiser..."
     },
     "classroom_dain_4": {
@@ -233,11 +233,11 @@
     },
     "classroom_seat_1": {
         "name": "Ich",
-        "text": "*Der Klassenlehrer zeigt auf einen leeren Platz.*"
+        "text": "*Die Klassenlehrerin zeigt auf einen leeren Platz.*"
     },
     "classroom_seat_2": {
         "name": "Ich",
-        "text": "*Er ist neben 다인(Dain). Gerettet oder verloren — ich bin mir nicht sicher, aber leise wird es bestimmt nicht.*"
+        "text": "*Sie ist neben 다인(Dain). Gerettet oder verloren — ich bin mir nicht sicher, aber leise wird es bestimmt nicht.*"
     },
     "classroom_minsu_1": {
         "name": "Ich",

@@ -155,7 +155,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "Moi",
-        "text": "*Il y a un message du prof principal sur l'appli de l'école. 'Classe 1-2 : Apportez vos affaires de maths pour la 1re heure demain. — Et {name}, si tu t'adaptes bien, c'est l'essentiel.'*"
+        "text": "*Il y a un message de la prof principale sur l'appli de l'école. 'Classe 1-2 : Apportez vos affaires de maths pour la 1re heure demain. — Et {name}, si tu t'adaptes bien, c'est l'essentiel.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "Moi",

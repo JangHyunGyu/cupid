@@ -98,32 +98,32 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "hidden_homeroom_d4_cafe_1": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_cafe_2"
     },
     "hidden_homeroom_d4_cafe_2": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_cafe_3"
     },
     "hidden_homeroom_d4_cafe_3": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_cafe_4"
     },
     "hidden_homeroom_d4_cafe_4": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_cafe_5"
     },
     "hidden_homeroom_d4_cafe_5": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_cafe_6"
     },
     "hidden_homeroom_d4_cafe_6": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_normal.png",
         "setFlag": "homeroom_day4",
         "next": "hidden_homeroom_d4_freetalk"
@@ -136,7 +136,7 @@ Object.assign(SCENARIO[4], {
     },
     "hidden_homeroom_d4_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_nurse_d4_check"
     },

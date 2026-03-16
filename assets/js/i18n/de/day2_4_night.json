@@ -148,15 +148,15 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "Ich",
-        "text": "*Eine private Nachricht vom Klassenlehrer. '{name}, danke, dass du heute im Büro warst. Der Papierkram ist erledigt, ich muss dich nicht mehr rufen. ...Aber wenn die Eingewöhnung schwer fällt, komm jederzeit.'*"
+        "text": "*Eine private Nachricht von der Klassenlehrerin. '{name}, danke, dass du heute im Büro warst. Der Papierkram ist erledigt, ich muss dich nicht mehr rufen. ...Aber wenn die Eingewöhnung schwer fällt, komm jederzeit.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "Ich",
-        "text": "*Drei Zeilen. Dank, Distanz, dann wieder Annäherung. — Er spielt Tauziehen mit sich selbst.*"
+        "text": "*Drei Zeilen. Dank, Distanz, dann wieder Annäherung. — Sie spielt Tauziehen mit sich selbst.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "Ich",
-        "text": "*'Muss dich nicht mehr rufen' und 'komm jederzeit' in derselben Nachricht. Widersprüchlich — aber das ist so typisch für ihn.*"
+        "text": "*'Muss dich nicht mehr rufen' und 'komm jederzeit' in derselben Nachricht. Widersprüchlich — aber das ist so typisch für sie.*"
     },
     "night2_hidden_nurse_1": {
         "name": "Ich",

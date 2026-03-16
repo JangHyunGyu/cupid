@@ -218,7 +218,7 @@
     },
     "hidden_homeroom_d3_2": {
         "name": "Moi",
-        "text": "*Le prof principal est assis au bureau, en train d'écrire. Il s'arrête et lève la tête. — Nos regards se croisent.*"
+        "text": "*La prof principale est assise au bureau, en train d'écrire. Elle s'arrête et lève la tête. — Nos regards se croisent.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Professeur Principal",
@@ -230,7 +230,7 @@
     },
     "hidden_homeroom_d3_choice": {
         "name": "Moi",
-        "text": "*C'est du papier manuscrit. Il a la tête de quelqu'un qui s'est fait prendre.*",
+        "text": "*C'est du papier manuscrit. Elle a la tête de quelqu'un qui s'est fait prendre.*",
         "choices": [
             "J'ai vu que c'est un manuscrit. — Vous écrivez un roman ?",
             "Pardon, je n'ai rien vu."
@@ -246,7 +246,7 @@
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Professeur Principal",
-        "text": "J'ai passé le concours de l'enseignement. Prof de français. — Un aspirant romancier qui enseigne la littérature. Ironique, non ?"
+        "text": "J'ai passé le concours de l'enseignement. Prof de français. — Une aspirante romancière qui enseigne la littérature. Ironique, non ?"
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Professeur Principal",
@@ -258,7 +258,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Moi",
-        "text": "*Il sourit. Pas son sourire sec habituel — un peu maladroit. — ...Premier candidat lecteur en sept ans.*"
+        "text": "*Elle sourit. Pas son sourire sec habituel — un peu maladroit. — ...Premier candidat lecteur en sept ans.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Professeur Principal",
@@ -270,8 +270,8 @@
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Professeur Principal",
-        "text": "*En train de discuter avec le prof principal dans la salle vide.*",
-        "context": "Jour 3 matin. Découvert le prof en train d'écrire un manuscrit.",
+        "text": "*En train de discuter avec la prof principale dans la salle vide.*",
+        "context": "Jour 3 matin. Découvert la prof en train d'écrire un manuscrit.",
         "personality": "La prof était une aspirante romancière. Elle est devenue prof mais n'a jamais abandonné son rêve."
     },
     "hidden_nurse_d3_check": {

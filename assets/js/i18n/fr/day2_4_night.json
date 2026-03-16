@@ -148,15 +148,15 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "Moi",
-        "text": "*Un message privé du prof principal. '{name}, merci d'être passé au bureau aujourd'hui. L'administratif est réglé, plus besoin de revenir. ...Mais si l'adaptation est difficile, passe quand tu veux.'*"
+        "text": "*Un message privé de la prof principale. '{name}, merci d'être passé au bureau aujourd'hui. L'administratif est réglé, plus besoin de revenir. ...Mais si l'adaptation est difficile, passe quand tu veux.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "Moi",
-        "text": "*Trois lignes. Remerciement, distance, puis rapprochement. — Il joue au tir à la corde avec lui-même.*"
+        "text": "*Trois lignes. Remerciement, distance, puis rapprochement. — Elle joue au tir à la corde avec elle-même.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "Moi",
-        "text": "*'Plus besoin de revenir' et 'passe quand tu veux' dans le même message. Contradictoire — mais tellement lui.*"
+        "text": "*'Plus besoin de revenir' et 'passe quand tu veux' dans le même message. Contradictoire — mais tellement elle.*"
     },
     "night2_hidden_nurse_1": {
         "name": "Moi",

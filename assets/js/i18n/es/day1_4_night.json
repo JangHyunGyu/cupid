@@ -155,7 +155,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "Yo",
-        "text": "*Hay un aviso del profesor en la app del colegio. 'Aviso clase 1-2: Traigan materiales de matemáticas para la primera hora. — Y {name}, mientras te estés adaptando bien, con eso basta.'*"
+        "text": "*Hay un aviso de la profesora en la app del colegio. 'Aviso clase 1-2: Traigan materiales de matemáticas para la primera hora. — Y {name}, mientras te estés adaptando bien, con eso basta.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "Yo",

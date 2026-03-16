@@ -185,8 +185,8 @@
     },
     "after_homeroom_freetalk": {
         "name": "Professeur Principal",
-        "text": "*En train de discuter avec le prof principal dans le couloir.*",
-        "context": "Jour 1 après les cours. Le prof principal a arrêté le nouvel élève pour prendre de ses nouvelles.",
+        "text": "*En train de discuter avec la prof principale dans le couloir.*",
+        "context": "Jour 1 après les cours. La prof principale a arrêté le nouvel élève pour prendre de ses nouvelles.",
         "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Début de trentaine, longs cheveux bruns ondulés et cardigan beige. Sa phrase fétiche : \"Je devrais pas faire ça\". Ancienne aspirante romancière."
     },
     "after_hidden_nurse_intro": {
