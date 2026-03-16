@@ -30,13 +30,13 @@ Object.assign(SCENARIO[2], {
     },
 
     "lunch2_yuna_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "bgm": "night1.mp3",
         "next": "lunch2_yuna_2"
     },
     "lunch2_yuna_2": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "next": "lunch2_yuna_3"
     },
@@ -260,7 +260,7 @@ Object.assign(SCENARIO[2], {
     },
 
     "lunch2_seo_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/top_school.png",
         "bgm": "sunset1.mp3",
         "next": "lunch2_seo_2"
@@ -430,7 +430,7 @@ Object.assign(SCENARIO[2], {
     },
 
     "lunch2_dain_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/store.png",
         "bgm": "daily2.mp3",
         "next": "lunch2_dain_2"

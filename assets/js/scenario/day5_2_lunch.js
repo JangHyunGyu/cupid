@@ -11,7 +11,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 서연 루트 ──
     "tour_seo_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school.png",
         "bgm": "sunset1.mp3",
         "next": "tour_seo_2"
@@ -74,7 +74,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 유나 루트 ──
     "tour_yuna_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "bgm": "sunset1.mp3",
         "next": "tour_yuna_2"
@@ -137,7 +137,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 다인 루트 ──
     "tour_dain_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_laugh.png",
         "background": "assets/images/background/store.png",
         "bgm": "sunset1.mp3",
         "next": "tour_dain_2"

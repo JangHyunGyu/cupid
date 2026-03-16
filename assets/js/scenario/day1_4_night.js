@@ -211,7 +211,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_dain_late_4": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "night_dain_freetalk"
     },

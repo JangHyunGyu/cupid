@@ -249,7 +249,7 @@ Object.assign(SCENARIO[2], {
         "next": "night2_start"
     },
     "after2_yuna_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "bgm": "night1.mp3",
         "next": "after2_yuna_2"

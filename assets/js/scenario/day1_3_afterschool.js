@@ -68,7 +68,7 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_miss_dain_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/school_hallway.png",
         "excludeCondition": "met_dain",
         "next": "after_miss_dain_2"
@@ -113,13 +113,13 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_miss_yuna_1": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "excludeCondition": "met_yuna",
         "next": "after_miss_yuna_2"
     },
     "after_miss_yuna_2": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "excludeCondition": "met_yuna",
         "next": "after_miss_yuna_3"
@@ -140,7 +140,7 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_miss_seoyeon_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school_hallway.png",
         "excludeCondition": "ate_lunch_seoyeon",
         "next": "after_miss_seoyeon_2"
