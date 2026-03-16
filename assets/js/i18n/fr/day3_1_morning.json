@@ -266,13 +266,13 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "Moi",
-        "text": "*Il rajuste sa cravate et sort. — 'S'il te plaît' est un mot rare chez lui.*"
+        "text": "*Elle replace ses cheveux derrière son oreille et sort. — 'S'il te plaît' est un mot rare chez elle.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Professeur Principal",
         "text": "*En train de discuter avec le prof principal dans la salle vide.*",
         "context": "Jour 3 matin. Découvert le prof en train d'écrire un manuscrit.",
-        "personality": "Le prof était un aspirant romancier. Il est devenu prof mais n'a jamais abandonné son rêve."
+        "personality": "La prof était une aspirante romancière. Elle est devenue prof mais n'a jamais abandonné son rêve."
     },
     "hidden_nurse_d3_check": {
         "name": "Moi",

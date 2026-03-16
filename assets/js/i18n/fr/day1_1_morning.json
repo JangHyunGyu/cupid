@@ -37,7 +37,7 @@
     },
     "gate_3": {
         "name": "Moi",
-        "text": "*Une fille se tient près du portail. Elle repousse ses longs cheveux lisses d'un geste léger — sa démarche est décontractée. Pas la moindre trace de précipitation.*"
+        "text": "*Une fille se tient près du portail. Elle repousse ses longs cheveux noirs d'un geste léger — derrière ses lunettes, sa démarche est décontractée. Pas la moindre trace de précipitation.*"
     },
     "seoyeon_meet_1": {
         "name": "서연(Seoyeon)",
@@ -229,7 +229,7 @@
     },
     "classroom_yuna_2": {
         "name": "Moi",
-        "text": "*Carré noir. Des yeux nonchalants. — Elle ne regarde même pas dans ma direction. Comme si un élève transféré n'avait rien d'extraordinaire.*"
+        "text": "*Cheveux blanc argenté. Des yeux rouges, mi-clos et nonchalants. Des tatouages couvrent ses bras. — Elle ne regarde même pas dans ma direction. Comme si un élève transféré n'avait rien d'extraordinaire.*"
     },
     "classroom_seat_1": {
         "name": "Moi",
@@ -289,7 +289,7 @@
     },
     "classroom_yuna_note_1": {
         "name": "Moi",
-        "text": "*Un mot plié atterrit sur mon bureau. — Je me retourne et la fille au carré noir près de la fenêtre regarde à nouveau dehors.*"
+        "text": "*Un mot plié atterrit sur mon bureau. — Je me retourne et la fille aux cheveux blanc argenté près de la fenêtre regarde à nouveau dehors. Malgré ses bras couverts de tatouages — l'écriture sur le mot est soignée.*"
     },
     "classroom_yuna_note_2": {
         "name": "Moi",

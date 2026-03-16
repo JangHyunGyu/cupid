@@ -37,7 +37,7 @@
     },
     "hidden_homeroom_d4_3": {
         "name": "Ich",
-        "text": "Herr Lehrer? Es ist Wochenende, was machen Sie hier?"
+        "text": "Frau Lehrerin? Es ist Wochenende, was machen Sie hier?"
     },
     "hidden_homeroom_d4_4": {
         "name": "Klassenlehrer",
@@ -49,7 +49,7 @@
     },
     "hidden_homeroom_d4_choice": {
         "name": "Ich",
-        "text": "*In Freizeitkleidung sieht der Lehrer nicht wie ein Lehrer aus. Eher wie — ein Schriftsteller.*",
+        "text": "*In Freizeitkleidung sieht die Lehrerin nicht wie eine Lehrerin aus. Eher wie — eine Schriftstellerin.*",
         "choices": [
             "Klar. Gibt's ein Café in der Nähe?",
             "Das sollten Sie nicht tun, oder?"
