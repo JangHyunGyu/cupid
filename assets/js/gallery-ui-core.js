@@ -184,7 +184,7 @@ class GalleryUI {
             <div class="unlock-popup-content">
                 <div class="unlock-popup-icon">${options.icon}</div>
                 <h3 class="unlock-popup-title">${options.title}</h3>
-                <p class="unlock-popup-message">${options.message.replace(/\\n/g, '<br>')}</p>
+                <p class="unlock-popup-message">${options.message.replace(/\n/g, '<br>')}</p>
                 <button class="unlock-popup-btn" id="unlock-popup-ok-btn">
                     ${okText}
                 </button>

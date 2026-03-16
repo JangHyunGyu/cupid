@@ -483,6 +483,7 @@ class FreeTalkSystem {
 
         // 프리토킹 횟수 증가
         const scene = getSceneFn(this.currentSceneId);
+        if (!scene) return;
         const charKey = this.charNameMap[scene.name] || scene.name;
         this.galleryManager.incrementFreeTalkCount(charKey);
 
@@ -817,8 +818,9 @@ class FreeTalkSystem {
         if (!centerSlot) return;
 
         const exprUrl = getAssetUrl(charExprs[name]);
-        if (centerSlot.firstChild) {
-            centerSlot.firstChild.src = exprUrl;
+        const existingImg = centerSlot.querySelector('img');
+        if (existingImg) {
+            existingImg.src = exprUrl;
         } else {
             const img = document.createElement('img');
             img.src = exprUrl;

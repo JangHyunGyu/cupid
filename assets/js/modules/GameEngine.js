@@ -459,11 +459,12 @@ class GameEngine {
         this.uiManager.dialogueBox.style.display = 'none';
         this.uiManager.choiceContainer.innerHTML = "";
 
-        // 🔀 선택지 순서 랜덤 셔플
-        // - Math.random() - 0.5는 양수/음수가 랜덤하게 나옴
-        // - sort()가 이 값으로 비교하면 무작위 정렬됨
-        // - 같은 씬을 다시 봐도 선택지 위치가 달라짐
-        choices.sort(() => Math.random() - 0.5);
+        // 🔀 선택지 순서 랜덤 셔플 (원본 배열을 변경하지 않도록 복사)
+        choices = [...choices];
+        for (let i = choices.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [choices[i], choices[j]] = [choices[j], choices[i]];
+        }
 
         // 📌 각 선택지마다 버튼 생성
         choices.forEach(choice => {
@@ -816,7 +817,7 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 📌 1단계: 씬 데이터 로드
         // ─────────────────────────────────────────────────────────
-        const scene = this.sceneRenderer.getScene(sceneId);
+        let scene = this.sceneRenderer.getScene(sceneId);
 
         // 씬이 없으면 HTML 페이지 이동인지 확인
         if (!scene) {
@@ -856,16 +857,16 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // bgm: "파일명" → 재생, bgm: null → 정지
         if (scene.bgm) {
-            soundManager.playBgm(`assets/audio/bgm/${scene.bgm}`);
+            if (typeof soundManager !== 'undefined') soundManager.playBgm(`assets/audio/bgm/${scene.bgm}`);
             // 🔧 갤러리에 BGM 해금 (파일명에서 확장자 제거)
             const bgmId = scene.bgm.replace(/\.(mp3|ogg|wav)$/i, '');
             this.galleryManager.unlockBGM(bgmId);
         } else if (scene.bgm === null) {
-            soundManager.stopBgm();
+            if (typeof soundManager !== 'undefined') soundManager.stopBgm();
         }
 
         // sfx: 효과음 1회 재생
-        if (scene.sfx) soundManager.playSfx(`assets/audio/sfx/${scene.sfx}`);
+        if (scene.sfx && typeof soundManager !== 'undefined') soundManager.playSfx(`assets/audio/sfx/${scene.sfx}`);
 
         // ─────────────────────────────────────────────────────────
         // 🖥️ 3단계: UI 초기화 (깨끗한 상태로 시작)
@@ -1253,7 +1254,7 @@ class GameEngine {
     async startNewGame() {
         // 🔊 사운드 매니저 초기화
         // 브라우저 정책상 사용자 클릭 후에만 오디오 재생 가능
-        soundManager.init();
+        if (typeof soundManager !== 'undefined') soundManager.init();
 
         // 🗑️ 기존 저장 데이터 모두 삭제
         this.saveManager.clear();
@@ -1284,7 +1285,7 @@ class GameEngine {
      */
     async continueGame() {
         // 🔊 사운드 매니저 초기화
-        soundManager.init();
+        if (typeof soundManager !== 'undefined') soundManager.init();
 
         // 💾 저장 데이터 로드
         const saveData = this.saveManager.load();

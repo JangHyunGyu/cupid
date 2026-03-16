@@ -126,7 +126,7 @@ class StateManager {
      * @returns {boolean} 플래그 값 (없으면 false)
      */
     getFlag(flagName) {
-        return this.flags[flagName] || false;
+        return this.flags[flagName] ?? false;
     }
 
     /** 현재 캐릭터 설정 */

@@ -45,17 +45,17 @@
     document.addEventListener('DOMContentLoaded', function() {
         const originalInitGame = window.initGame;
         if (typeof originalInitGame === 'function') {
-            window.initGame = async function() {
+            window.initGame = async function(...args) {
                 await window._i18nReady;
-                await originalInitGame();
+                await originalInitGame(...args);
             };
         }
 
         const originalInitGameFromSave = window.initGameFromSave;
         if (typeof originalInitGameFromSave === 'function') {
-            window.initGameFromSave = async function() {
+            window.initGameFromSave = async function(...args) {
                 await window._i18nReady;
-                await originalInitGameFromSave();
+                await originalInitGameFromSave(...args);
             };
         }
     });

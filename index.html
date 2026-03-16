@@ -984,7 +984,7 @@
 
         // 새게임 확인 모달 닫기
         function closeNewGameConfirm(e) {
-            if (e && e.target !== e.currentTarget && e.target.id !== 'newGameConfirmModal') return;
+            if (e && e.target !== e.currentTarget) return;
             const modal = document.getElementById('newGameConfirmModal');
             if (modal) modal.style.display = 'none';
         }
@@ -999,7 +999,7 @@
         // 실제 새 게임 시작 로직
         async function launchNewGame() {
             // 1. 사운드 재생 (첫 버튼 클릭은 사용자 상호작용으로 인정됨)
-            soundManager.playBgm('assets/audio/bgm/intro.mp3');
+            if (window.soundManager) soundManager.playBgm('assets/audio/bgm/intro.mp3');
 
             // 2. UI 전환
             document.getElementById('landing-container').style.display = 'none';
@@ -1027,7 +1027,7 @@
         }
 
         function closeHomeConfirm(e) {
-            if (e && e.target !== e.currentTarget && e.target.id !== 'homeConfirmModal') return;
+            if (e && e.target !== e.currentTarget) return;
             const homeModal = document.getElementById('homeConfirmModal');
             if (homeModal) {
                 homeModal.style.display = 'none';
@@ -1056,7 +1056,7 @@
             }
 
             // 1. 사운드 재생
-            soundManager.playBgm('assets/audio/bgm/intro.mp3');
+            if (window.soundManager) soundManager.playBgm('assets/audio/bgm/intro.mp3');
 
             // 2. UI 전환
             document.getElementById('landing-container').style.display = 'none';
@@ -1103,8 +1103,8 @@
             const showAffinity = savedSetting === null ? true : savedSetting === 'true';
             document.getElementById('affinityToggle').checked = showAffinity;
 
-            const bgmVol = localStorage.getItem('bgmVolume') || 0.5;
-            const sfxVol = localStorage.getItem('sfxVolume') || 0.5;
+            const bgmVol = localStorage.getItem('bgmVolume') !== null ? parseFloat(localStorage.getItem('bgmVolume')) : 0.5;
+            const sfxVol = localStorage.getItem('sfxVolume') !== null ? parseFloat(localStorage.getItem('sfxVolume')) : 0.5;
 
             document.getElementById('bgmVolume').value = bgmVol * 100;
             document.getElementById('sfxVolume').value = sfxVol * 100;
