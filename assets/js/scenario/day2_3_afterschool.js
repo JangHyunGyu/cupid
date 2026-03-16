@@ -348,7 +348,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "after2_dain_end"
-    }
+    },
 
     // =========================================================================
     // HIDDEN ROUTE - Day 2 보건선생님 체육 시간
