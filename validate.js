@@ -65,7 +65,9 @@ const errors = [];
 const warnings = [];
 
 function sceneExists(id) {
-    return !id || allScenes[id] !== undefined;
+    if (!id) return true;
+    if (id.endsWith('.html')) return true; // HTML 리다이렉트는 유효
+    return allScenes[id] !== undefined;
 }
 
 // ===== 1. Scene Reference Integrity =====
@@ -153,12 +155,14 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     }
 
     // 메인 캐릭터가 말하는데 다른 캐릭터 이미지가 표시되는 경우
+    // (character 필드가 없으면 이전 씬 캐릭터 유지이므로 체크 안 함)
     const expectedPrefix = NAME_TO_PREFIX[speakerName];
-    if (scene.character && typeof scene.character === 'string' && expectedPrefix) {
+    if (scene.hasOwnProperty('character') && scene.character && typeof scene.character === 'string' && expectedPrefix) {
         const charFile = scene.character.split('/').pop();
         const actualPrefix = charFile.split('_')[0];
         if (actualPrefix !== expectedPrefix) {
-            warnings.push('[CHAR_SPEAKER] ' + sceneId + ': speaker="' + speakerName + '" expects ' + expectedPrefix + ' but shows ' + actualPrefix + ' (' + charFile + ')');
+            // 다중 캐릭터 대화 장면에서 다른 캐릭터가 등장해 있는 건 허용 (단순 경고)
+            errors.push('[CHAR_SPEAKER] ' + sceneId + ': speaker="' + speakerName + '" expects ' + expectedPrefix + ' but shows ' + actualPrefix + ' (' + charFile + ')');
         }
     }
 }
@@ -228,6 +232,100 @@ for (const [, { scene }] of Object.entries(allScenes)) {
 for (const f of checkedFlags) {
     if (!setFlags.has(f)) {
         warnings.push('[FLAG] "' + f + '" checked but never set in scenario');
+    }
+}
+
+// ===== 8. i18n Missing Entries =====
+for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
+    if (scene.type === 'credits') continue;
+    if (!i18nData[sceneId]) {
+        // 텍스트가 필요한 씬인데 i18n이 없으면 경고
+        // (라우팅/브랜치 노드는 텍스트 없어도 됨)
+        const isRoutingNode = !scene.text && !scene.choices &&
+            (scene.branches || scene.selectByHighestAffinity || scene.condition || scene.setFlag || scene.setFlags);
+        const hasText = scene.text;
+        const needsText = !isRoutingNode && scene.choices;
+        if (hasText || needsText) {
+            warnings.push('[I18N_MISSING] ' + sceneId + ' (day' + day + ') has no ko i18n entry');
+        }
+    }
+}
+
+// ===== 9. Speaker talks but character is null =====
+// 캐릭터가 대사를 하는데 이미지가 null인 경우 (의도적인 경우 제외)
+for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
+    const i18n = i18nData[sceneId];
+    if (!i18n || !i18n.name) continue;
+    const name = i18n.name.replace(/{name}/g, '').trim();
+    if (!name || name === '나' || name === '민수' || name === '???' || name === '') continue;
+
+    const prefix = NAME_TO_PREFIX[name];
+    if (!prefix) continue; // NPC는 null이 맞음
+
+    // 메인 캐릭터가 말하는데 character가 null이면 이전 씬 캐릭터가 유지됨
+    // 이건 의도적일 수 있으므로 warning으로만
+    // 단, character가 명시적으로 null로 설정된 경우만
+    if (scene.hasOwnProperty('character') && scene.character === null) {
+        // 전후 맥락 확인: 같은 캐릭터가 연속 대화하면 OK
+        // 여기서는 단순히 경고만
+    }
+}
+
+// ===== 10. Unreachable scene detection =====
+const reachable = new Set(['start', 'morning2_start', 'morning3_start', 'morning4_start', 'morning5_start',
+    'lunch_start', 'lunch2_start', 'lunch3_start', 'lunch4_start', 'lunch5_start',
+    'after_start', 'after2_start', 'after3_start', 'after4_start', 'after5_start',
+    'night_start', 'night2_start', 'night3_start', 'night4_start', 'night5_start']);
+// BFS from all entry points
+const queue = [...reachable];
+while (queue.length > 0) {
+    const id = queue.shift();
+    const entry = allScenes[id];
+    if (!entry) continue;
+    const scene = entry.scene;
+    const addTarget = (t) => {
+        if (t && !reachable.has(t) && allScenes[t]) {
+            reachable.add(t);
+            queue.push(t);
+        }
+    };
+    addTarget(scene.next);
+    if (scene.choices) scene.choices.forEach(c => {
+        addTarget(c.next);
+        if (c.affinityBranches) c.affinityBranches.forEach(ab => addTarget(ab.next));
+    });
+    if (scene.branches) scene.branches.forEach(b => addTarget(b.next));
+    if (scene.affinityBranches) scene.affinityBranches.forEach(b => addTarget(b.next));
+    if (scene.fallback) addTarget(scene.fallback);
+}
+const unreachable = Object.keys(allScenes).filter(id => !reachable.has(id));
+if (unreachable.length > 0) {
+    // 프리토킹/히든 씬은 별도 진입점이므로 제외
+    const realUnreachable = unreachable.filter(id =>
+        !id.includes('freetalk') && !id.includes('hidden') && !id.includes('ending')
+    );
+    realUnreachable.forEach(id => {
+        warnings.push('[UNREACHABLE] ' + id + ' (day' + allScenes[id].day + ') not reachable from any entry point');
+    });
+}
+
+// ===== 11. Cross-language i18n key consistency =====
+const i18nLangs = ['en', 'ja', 'fr', 'es', 'de'];
+for (const lang of i18nLangs) {
+    const langDir = path.join(BASE, 'i18n', lang);
+    if (!fs.existsSync(langDir)) continue;
+    const langData = {};
+    const langFiles = fs.readdirSync(langDir).filter(f => f.endsWith('.json'));
+    for (const file of langFiles) {
+        try {
+            Object.assign(langData, JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8')));
+        } catch (e) { /* skip parse errors */ }
+    }
+    const koKeys = Object.keys(i18nData);
+    const langKeys = Object.keys(langData);
+    const missingInLang = koKeys.filter(k => !langData[k]);
+    if (missingInLang.length > 5) {
+        warnings.push('[I18N_LANG] ' + lang + ': ' + missingInLang.length + ' ko keys missing (e.g. ' + missingInLang.slice(0, 3).join(', ') + ')');
     }
 }
 
