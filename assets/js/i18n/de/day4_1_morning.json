@@ -22,5 +22,133 @@
     "morning4_end": {
         "name": "Ich",
         "text": "*Mein Herz klopft wie wild. Machen wir uns bereit.*"
+    },
+    "morning4_hidden_check": {
+        "name": "Ich",
+        "text": "*Wochenende. Ich komme an der Schule vorbei.*"
+    },
+    "hidden_homeroom_d4_1": {
+        "name": "Ich",
+        "text": "*Das Schultor steht einen Spalt offen. Jemand kommt raus. Der Klassenlehrer. In Freizeitkleidung.*"
+    },
+    "hidden_homeroom_d4_2": {
+        "name": "Klassenlehrer",
+        "text": "...Hä? {name}?"
+    },
+    "hidden_homeroom_d4_3": {
+        "name": "Ich",
+        "text": "Herr Lehrer? Es ist Wochenende, was machen Sie hier?"
+    },
+    "hidden_homeroom_d4_4": {
+        "name": "Klassenlehrer",
+        "text": "Ach, da war noch — Papierkram. ...Lehrer sind auch am Wochenende Lehrer."
+    },
+    "hidden_homeroom_d4_5": {
+        "name": "Klassenlehrer",
+        "text": "...Schon gegessen? Ich sollte das eigentlich nicht tun... aber ein Kaffee geht doch, oder? — Also Saft, weil du Schüler bist."
+    },
+    "hidden_homeroom_d4_choice": {
+        "name": "Ich",
+        "text": "*In Freizeitkleidung sieht der Lehrer nicht wie ein Lehrer aus. Eher wie — ein Schriftsteller.*",
+        "choices": [
+            "Klar. Gibt's ein Café in der Nähe?",
+            "Das sollten Sie nicht tun, oder?"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_1": {
+        "name": "Klassenlehrer",
+        "text": "Das erste Mal, dass ich mit einem Schüler außerhalb der Schule was trinke. Ehrlich? Ein bisschen komisch."
+    },
+    "hidden_homeroom_d4_cafe_2": {
+        "name": "Klassenlehrer",
+        "text": "...Ein bisschen. Nachdem du mich gestern entdeckt hast — konnte ich irgendwie mehr schreiben. Ertappt zu werden war... erleichternd."
+    },
+    "hidden_homeroom_d4_cafe_3": {
+        "name": "Klassenlehrer",
+        "text": "Weißt du, was beim Romanschreiben am schwersten ist? Den ersten Leser zu finden. Ohne jemanden, der liest — wird die Geschichte nie fertig."
+    },
+    "hidden_homeroom_d4_cafe_4": {
+        "name": "Klassenlehrer",
+        "text": "...Würdest du mein erster Leser werden?"
+    },
+    "hidden_homeroom_d4_cafe_5": {
+        "name": "Ich",
+        "text": "Ich will es lesen."
+    },
+    "hidden_homeroom_d4_cafe_6": {
+        "name": "Klassenlehrer",
+        "text": "...Danke. Aber das bleibt unter uns — klar? Ich sollte das eigentlich nicht tun."
+    },
+    "hidden_homeroom_d4_decline": {
+        "name": "Klassenlehrer",
+        "text": "...Stimmt. Sollte ich nicht. Geh. Es ist Wochenende. — Hab Spaß."
+    },
+    "hidden_homeroom_d4_freetalk": {
+        "name": "Klassenlehrer",
+        "text": "*Im Gespräch mit dem Klassenlehrer im Café.*",
+        "context": "Tag 4. Zufällige Begegnung am Wochenende. Er bat mich, sein erster Leser zu werden.",
+        "personality": "Der Lehrer ist in Freizeitkleidung entspannter. Zerrissen zwischen Schreiblust und Gefühlen."
+    },
+    "hidden_nurse_d4_check": {
+        "name": "Ich",
+        "text": "*Das Wochenende geht zu Ende.*"
+    },
+    "hidden_nurse_d4_1": {
+        "name": "Ich",
+        "text": "*Die Schulkrankenschwester hat im Schul-Chat 'Suche Helfer' gepostet. Meine Füße tragen mich zur Schule.*"
+    },
+    "hidden_nurse_d4_2": {
+        "name": "Schulkrankenschwester",
+        "text": "Hä? Du bist wirklich gekommen? Hätte ich nicht erwartet. — Ein Schüler, der am Wochenende im Krankenzimmer aushilft."
+    },
+    "hidden_nurse_d4_3": {
+        "name": "Ich",
+        "text": "Ich hab gesagt, dass ich helfe."
+    },
+    "hidden_nurse_d4_4": {
+        "name": "Schulkrankenschwester",
+        "text": "...Im Krankenhaus hab ich das alles alleine gemacht. Nachtschichten — manchmal eine Schwester für drei."
+    },
+    "hidden_nurse_d4_5": {
+        "name": "Schulkrankenschwester",
+        "text": "Das Schlimmste war nicht die Arbeitslast. Niemand hat mich beim Namen genannt. Alles Titel, keine Namen."
+    },
+    "hidden_nurse_d4_6": {
+        "name": "Schulkrankenschwester",
+        "text": "Danke~ Dank dir war's schnell fertig! ...Das bedeutet was."
+    },
+    "hidden_nurse_d4_choice": {
+        "name": "Schulkrankenschwester",
+        "text": "So, als Dank spendiere ich dir was? Eine Lehrerin, die einen Schüler einlädt, ist eine pädagogische Maßnahme~",
+        "choices": [
+            "Wenn's pädagogisch ist, warum nicht?",
+            "Passt schon, ich gehe dann"
+        ]
+    },
+    "hidden_nurse_d4_meal_1": {
+        "name": "Schulkrankenschwester",
+        "text": "Das ist so scharf! Essen Schüler sowas?!"
+    },
+    "hidden_nurse_d4_meal_2": {
+        "name": "Ich",
+        "text": "Sie sind überhaupt nicht alt."
+    },
+    "hidden_nurse_d4_meal_3": {
+        "name": "Schulkrankenschwester",
+        "text": "...So was. Klingt komisch von einem Schüler."
+    },
+    "hidden_nurse_d4_meal_4": {
+        "name": "Schulkrankenschwester",
+        "text": "{name}. Danke für heute. — Echt jetzt."
+    },
+    "hidden_nurse_d4_pass": {
+        "name": "Schulkrankenschwester",
+        "text": "Okay~ Komm gut heim! — Komm bald wieder."
+    },
+    "hidden_nurse_d4_freetalk": {
+        "name": "Schulkrankenschwester",
+        "text": "*Im Gespräch mit der Schulkrankenschwester beim Imbiss.*",
+        "context": "Tag 4. Am Wochenende bei Vorbereitungen geholfen und zusammen gegessen.",
+        "personality": "In Freizeitkleidung wirkt sie wie eine große Schwester. Pendelt zwischen Scherz und Ernsthaftigkeit."
     }
 }

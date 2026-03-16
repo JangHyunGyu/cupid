@@ -255,7 +255,6 @@ Object.assign(SCENARIO[1], {
         "character": "assets/images/characters/dain_normal.png",
         "next": "night_end_1"
     },
-,
     // =========================================================================
     // HIDDEN ROUTE - Night messages
     // =========================================================================

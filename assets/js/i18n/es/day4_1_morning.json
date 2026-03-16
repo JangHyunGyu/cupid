@@ -22,5 +22,133 @@
     "morning4_end": {
         "name": "Yo",
         "text": "*Mi corazón late con fuerza. Vamos a prepararnos.*"
+    },
+    "morning4_hidden_check": {
+        "name": "Yo",
+        "text": "*Fin de semana. Paso por la escuela.*"
+    },
+    "hidden_homeroom_d4_1": {
+        "name": "Yo",
+        "text": "*La puerta de la escuela está entreabierta. Alguien sale. Es el profesor. En ropa casual.*"
+    },
+    "hidden_homeroom_d4_2": {
+        "name": "Profesor",
+        "text": "...¿Eh? ¿{name}?"
+    },
+    "hidden_homeroom_d4_3": {
+        "name": "Yo",
+        "text": "¿Profe? Es fin de semana, ¿qué hace en la escuela?"
+    },
+    "hidden_homeroom_d4_4": {
+        "name": "Profesor",
+        "text": "Ah, es que — me quedó papeleo. ...Un profesor es profesor incluso los fines de semana."
+    },
+    "hidden_homeroom_d4_5": {
+        "name": "Profesor",
+        "text": "...¿Comiste? No debería hacer esto... pero un café está bien, ¿no? — Bueno, un jugo, que eres estudiante."
+    },
+    "hidden_homeroom_d4_choice": {
+        "name": "Yo",
+        "text": "*En ropa casual, el profesor no parece profesor. Más bien — un escritor.*",
+        "choices": [
+            "Dale. ¿Hay algún café cerca?",
+            "Profe, ¿no debería hacer eso?"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_1": {
+        "name": "Profesor",
+        "text": "Primera vez tomando algo con un alumno fuera de la escuela. ¿Sinceramente? Un poco incómodo."
+    },
+    "hidden_homeroom_d4_cafe_2": {
+        "name": "Profesor",
+        "text": "...Un poco. Después de que me descubrieras ayer — pude escribir más. Que alguien lo supiera fue... un alivio."
+    },
+    "hidden_homeroom_d4_cafe_3": {
+        "name": "Profesor",
+        "text": "¿Sabes qué es lo más difícil de escribir novelas? Encontrar al primer lector. Sin alguien que lea — la historia nunca se completa."
+    },
+    "hidden_homeroom_d4_cafe_4": {
+        "name": "Profesor",
+        "text": "...¿Serías mi primer lector?"
+    },
+    "hidden_homeroom_d4_cafe_5": {
+        "name": "Yo",
+        "text": "Quiero leerlo."
+    },
+    "hidden_homeroom_d4_cafe_6": {
+        "name": "Profesor",
+        "text": "...Gracias. Pero esto queda entre nosotros — ¿sí? No debería hacer esto."
+    },
+    "hidden_homeroom_d4_decline": {
+        "name": "Profesor",
+        "text": "...Cierto. No debería. Anda, es fin de semana. — Diviértete."
+    },
+    "hidden_homeroom_d4_freetalk": {
+        "name": "Profesor",
+        "text": "*Conversando con el profesor en un café.*",
+        "context": "Día 4. Encuentro casual el fin de semana. Pidió ser su primer lector.",
+        "personality": "El profesor es más relajado en ropa casual. Dividido entre la pasión por escribir y sus sentimientos."
+    },
+    "hidden_nurse_d4_check": {
+        "name": "Yo",
+        "text": "*El fin de semana se acaba.*"
+    },
+    "hidden_nurse_d4_1": {
+        "name": "Yo",
+        "text": "*La enfermera publicó 'busco ayudante' en el chat escolar. Mis pies ya se dirigen a la escuela.*"
+    },
+    "hidden_nurse_d4_2": {
+        "name": "Enfermera",
+        "text": "¿Eh? ¿Viniste de verdad? No lo esperaba. — Un estudiante voluntario en la enfermería un fin de semana."
+    },
+    "hidden_nurse_d4_3": {
+        "name": "Yo",
+        "text": "Dije que ayudaría."
+    },
+    "hidden_nurse_d4_4": {
+        "name": "Enfermera",
+        "text": "...En el hospital hacía todo esto sola. Turnos de noche — a veces una enfermera haciendo el trabajo de tres."
+    },
+    "hidden_nurse_d4_5": {
+        "name": "Enfermera",
+        "text": "Lo más duro no era la carga de trabajo. Nadie me llamaba por mi nombre. 'Enfermera', 'turno nocturno', 'Planta 3'. Todo cargos, no nombres."
+    },
+    "hidden_nurse_d4_6": {
+        "name": "Enfermera",
+        "text": "¡Gracias~ Terminamos rápido por ti! ...Sí importa."
+    },
+    "hidden_nurse_d4_choice": {
+        "name": "Enfermera",
+        "text": "Bueno, ¿te invito algo? Una profesora invitando a un alumno es una actividad educativa~",
+        "choices": [
+            "¿Si es educativa, está bien?",
+            "No hace falta, me voy yendo"
+        ]
+    },
+    "hidden_nurse_d4_meal_1": {
+        "name": "Enfermera",
+        "text": "¡Qué picante! ¿Ésto es lo que comen los estudiantes?!"
+    },
+    "hidden_nurse_d4_meal_2": {
+        "name": "Yo",
+        "text": "No eres vieja para nada."
+    },
+    "hidden_nurse_d4_meal_3": {
+        "name": "Enfermera",
+        "text": "...Eso. Suena raro viniendo de un estudiante."
+    },
+    "hidden_nurse_d4_meal_4": {
+        "name": "Enfermera",
+        "text": "{name}. Gracias por hoy. — De verdad."
+    },
+    "hidden_nurse_d4_pass": {
+        "name": "Enfermera",
+        "text": "¡Bueno~ Cuídate! — Vuelve pronto."
+    },
+    "hidden_nurse_d4_freetalk": {
+        "name": "Enfermera",
+        "text": "*Conversando con la enfermera en una tienda de comida.*",
+        "context": "Día 4. Ayudó con los preparativos y comieron juntos.",
+        "personality": "En ropa casual parece una hermana mayor. Oscila entre lo juguetón y lo sincero."
     }
 }
