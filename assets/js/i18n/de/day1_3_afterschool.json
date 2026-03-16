@@ -186,7 +186,7 @@
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
         "text": "*Im Gespräch mit der Klassenlehrerin auf dem Flur.*",
-        "context": "Tag 1 nach der Schule. Die Klassenlehrerin hat den neuen Schüler angehalten, um nach ihm zu sehen.",
+        "context": "Tag 1 nach der Schule. Die Klassenlehrerin hat den neuen Schüler angehalten, um nach ihm zu sehen. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
         "personality": "Die Klassenlehrerin versteckt Wärme hinter trockenem Humor. Anfang dreißig, braunes welliges langes Haar und beige Strickjacke. Ihr Spruch: \"Ich sollte das eigentlich nicht tun.\" Ehemalige angehende Romanautorin."
     },
     "after_hidden_nurse_intro": {
@@ -260,7 +260,7 @@
     "after_nurse_freetalk": {
         "name": "Schulkrankenschwester",
         "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
-        "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er besuchte das Krankenzimmer.",
+        "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er besuchte das Krankenzimmer. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
         "personality": "Die Schulkrankenschwester ist verspielt und charmant, versteckt aber echte Gefühle hinter Witzen. Ehemalige Krankenhausschwester mit Burnout-Erfahrung."
     }
 }

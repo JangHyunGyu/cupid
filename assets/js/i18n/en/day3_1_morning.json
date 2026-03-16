@@ -271,7 +271,7 @@
     "hidden_homeroom_d3_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Talking with the homeroom teacher in the empty classroom.*",
-        "context": "Day 3 morning. Discovered the teacher writing a novel manuscript in an empty classroom. A secret she's kept for 7 years.",
+        "context": "Day 3 morning. Discovered the teacher writing a novel manuscript in an empty classroom. A secret she's kept for 7 years. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
         "personality": "The teacher was an aspiring novelist. Became a teacher but never let go of the dream. A mix of embarrassment and relief at being found out."
     },
     "hidden_nurse_d3_check": {
@@ -317,7 +317,7 @@
     "hidden_nurse_d3_freetalk": {
         "name": "School Nurse",
         "text": "*Talking with the school nurse in the nurse's office.*",
-        "context": "Day 3. Came to the nurse's office feeling anxious. The nurse had a serious heart-to-heart, including her hospital burnout backstory.",
+        "context": "Day 3. Came to the nurse's office feeling anxious. The nurse had a serious heart-to-heart, including her hospital burnout backstory. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
         "personality": "Usually playful, but when serious the whole atmosphere changes. A professional with burnout experience. Torn between feelings and her title."
     }
 }

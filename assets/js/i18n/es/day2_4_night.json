@@ -127,19 +127,19 @@
     "night2_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Intercambiando mensajes nocturnos con Seoyeon.*",
-        "context": "Noche 2, chateando con Seoyeon.",
+        "context": "Noche 2, chateando con Seoyeon. Tono: Sintiéndose más cerca que ayer. Las bromas se sienten naturales y cómodas. Coqueteo de tira y afloja. Aún sin temas pesados.",
         "personality": "Seoyeon muestra un lado más honesto por la noche."
     },
     "night2_dain_freetalk": {
         "name": "Dain",
         "text": "*Intercambiando mensajes nocturnos con Dain.*",
-        "context": "Noche 2, chateando con Dain.",
+        "context": "Noche 2, chateando con Dain. Tono: Sintiéndose más cerca que ayer. Las bromas se sienten naturales y cómodas. Coqueteo de tira y afloja. Aún sin temas pesados.",
         "personality": "Dain es enérgica incluso de noche, pero a veces se pone seria."
     },
     "night2_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Intercambiando mensajes nocturnos con Yuna.*",
-        "context": "Noche 2, chateando con Yuna.",
+        "context": "Noche 2, chateando con Yuna. Tono: Sintiéndose más cerca que ayer. Las bromas se sienten naturales y cómodas. Coqueteo de tira y afloja. Aún sin temas pesados.",
         "personality": "Yuna baja sus defensas por la noche. Mensajes más largos significan que se está abriendo."
     },
     "night2_hidden_check": {

@@ -66,7 +66,7 @@
     "hidden_homeroom_d5_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Last conversation with the homeroom teacher in the empty classroom.*",
-        "context": "Day 5. Last day. The teacher handed over her 7-year manuscript. A promise to meet after graduation.",
+        "context": "Day 5. Last day. The teacher handed over her 7-year manuscript. A promise to meet after graduation. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
         "personality": "The teacher is more honest than usual because it's the last time. Using her catchphrase for the final time."
     },
     "hidden_nurse_d5_check": {
@@ -104,7 +104,7 @@
     "hidden_nurse_d5_freetalk": {
         "name": "School Nurse",
         "text": "*Last conversation with the school nurse outside her office.*",
-        "context": "Day 5. Last day. The nurse wrote a message on a bandage. A promise to meet after graduation.",
+        "context": "Day 5. Last day. The nurse wrote a message on a bandage. A promise to meet after graduation. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
         "personality": "The nurse is less playful than usual. Waiting for the day when excuses aren't needed."
     }
 }

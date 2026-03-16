@@ -270,19 +270,19 @@
     "date_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*En una cita con Seoyeon. Está más suave de lo habitual.*",
-        "context": "Cita del día 4 con Seoyeon.",
+        "context": "Cita del día 4 con Seoyeon. Tono: La conversación se ha vuelto seria. Emoción y nerviosismo de la cita. Más sinceridad que bromas. Momentos de honestidad emocional.",
         "personality": "En las citas, la compostura de Seoyeon se tambalea y muestra su lado honesto."
     },
     "date_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Pasando tiempo con Yuna. Está más habladora de lo habitual.*",
-        "context": "Cita del día 4 con Yuna. Sus defensas han bajado.",
+        "context": "Cita del día 4 con Yuna. Sus defensas han bajado. Tono: La conversación se ha vuelto seria. Emoción y nerviosismo de la cita. Más sinceridad que bromas. Momentos de honestidad emocional.",
         "personality": "En las citas, las frases de Yuna se alargan. Dos frases seguidas equivalen a una confesión."
     },
     "date_dain_freetalk": {
         "name": "Dain",
         "text": "*En una cita con Dain. Está más cuidadosa de lo habitual.*",
-        "context": "Cita del día 4 con Dain.",
+        "context": "Cita del día 4 con Dain. Tono: La conversación se ha vuelto seria. Emoción y nerviosismo de la cita. Más sinceridad que bromas. Momentos de honestidad emocional.",
         "personality": "En las citas, Dain está nerviosa y baja el volumen. Las exclamaciones desaparecen cuando es sincera."
     }
 }

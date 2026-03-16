@@ -271,7 +271,7 @@
     "hidden_homeroom_d3_freetalk": {
         "name": "Profesora",
         "text": "*Conversando con la profesora en el aula vacía.*",
-        "context": "Día 3 mañana. Descubrió a la profesora escribiendo un manuscrito en un aula vacía.",
+        "context": "Día 3 mañana. Descubrió a la profesora escribiendo un manuscrito en un aula vacía. Tono: Brillante en la superficie pero con sombras por debajo. A veces sonriendo pero los ojos no. La sinceridad se asoma entre la conversación casual.",
         "personality": "La profesora fue aspirante a novelista. Se hizo profesora pero nunca renunció al sueño."
     },
     "hidden_nurse_d3_check": {
@@ -317,7 +317,7 @@
     "hidden_nurse_d3_freetalk": {
         "name": "Enfermera",
         "text": "*Conversando con la enfermera en la enfermería.*",
-        "context": "Día 3. Vino a la enfermería por ansiedad. La enfermera tuvo una conversación seria.",
+        "context": "Día 3. Vino a la enfermería por ansiedad. La enfermera tuvo una conversación seria. Tono: Brillante en la superficie pero con sombras por debajo. A veces sonriendo pero los ojos no. La sinceridad se asoma entre la conversación casual.",
         "personality": "Normalmente juguetona, pero al ponerse seria el ambiente cambia totalmente. Profesional con experiencia de burnout."
     }
 }

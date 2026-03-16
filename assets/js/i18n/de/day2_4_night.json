@@ -127,19 +127,19 @@
     "night2_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Späte Nachrichten mit Seoyeon austauschen.*",
-        "context": "Nacht 2, Chat mit Seoyeon.",
+        "context": "Nacht 2, Chat mit Seoyeon. Ton: Näher als gestern. Neckereien fühlen sich natürlich und bequem an. Hin-und-her-Flirten. Noch keine schweren Themen.",
         "personality": "Seoyeon zeigt nachts eine ehrlichere Seite."
     },
     "night2_dain_freetalk": {
         "name": "Dain",
         "text": "*Späte Nachrichten mit Dain austauschen.*",
-        "context": "Nacht 2, Chat mit Dain.",
+        "context": "Nacht 2, Chat mit Dain. Ton: Näher als gestern. Neckereien fühlen sich natürlich und bequem an. Hin-und-her-Flirten. Noch keine schweren Themen.",
         "personality": "Dain ist auch nachts energiegeladen, wird aber manchmal ernst."
     },
     "night2_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Späte Nachrichten mit Yuna austauschen.*",
-        "context": "Nacht 2, Chat mit Yuna.",
+        "context": "Nacht 2, Chat mit Yuna. Ton: Näher als gestern. Neckereien fühlen sich natürlich und bequem an. Hin-und-her-Flirten. Noch keine schweren Themen.",
         "personality": "Yuna senkt nachts ihre Mauern. Längere Nachrichten bedeuten, dass sie sich öffnet."
     },
     "night2_hidden_check": {

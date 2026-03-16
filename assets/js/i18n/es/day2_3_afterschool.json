@@ -235,7 +235,7 @@
     "after2_dain_freetalk": {
         "name": "Dain",
         "text": "*Comiendo tteokbokki con Dain y charlando.*",
-        "context": "Día 2 después de clases, vinieron a la tienda de tteokbokki tras una apuesta de voleibol.",
+        "context": "Día 2 después de clases, vinieron a la tienda de tteokbokki tras una apuesta de voleibol. Tono: Sintiéndose más cerca que ayer. Las bromas se sienten naturales y cómodas. Coqueteo de tira y afloja. Aún sin temas pesados.",
         "personality": "Dain es una atleta enérgica y competitiva."
     },
     "hidden_nurse_d2_1": {
@@ -277,7 +277,7 @@
     "hidden_nurse_d2_freetalk": {
         "name": "Enfermera",
         "text": "*Conversando con la enfermera en la enfermería.*",
-        "context": "Día 2. Se raspo el codo en educación física.",
+        "context": "Día 2. Se raspo el codo en educación física. Tono: Sintiéndose más cerca que ayer. Las bromas se sienten naturales y cómodas. Coqueteo de tira y afloja. Aún sin temas pesados.",
         "personality": "La enfermera es juguetona pero meticulosa. Tarda mucho en poner tiritas. Esconde algo personal."
     }
 }

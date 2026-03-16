@@ -186,7 +186,7 @@
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Chatting with the homeroom teacher in the hallway.*",
-        "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check on them. The student was honest about feeling overwhelmed.",
+        "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check on them. The student was honest about feeling overwhelmed. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
         "personality": "The homeroom teacher hides warmth behind dry humor. Early 30s female teacher with brown wavy long hair and beige cardigan, deadpan delivery. Her catchphrase is \"I really shouldn't be doing this.\" Former aspiring novelist."
     },
     "after_hidden_nurse_intro": {
@@ -260,7 +260,7 @@
     "after_nurse_freetalk": {
         "name": "School Nurse",
         "text": "*Chatting with the school nurse in the nurse's office.*",
-        "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse was playful but attentive.",
+        "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse was playful but attentive. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
         "personality": "The school nurse is playful and flirtatious but hides genuine feelings behind jokes. Former hospital nurse who burned out. \"Because I'm a teacher\" is her shield — there's always a hidden emotion behind it."
     }
 }

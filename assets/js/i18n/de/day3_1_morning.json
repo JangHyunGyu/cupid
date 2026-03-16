@@ -271,7 +271,7 @@
     "hidden_homeroom_d3_freetalk": {
         "name": "Klassenlehrerin",
         "text": "*Im Gespräch mit der Klassenlehrerin im leeren Klassenzimmer.*",
-        "context": "Tag 3 morgens. Die Lehrerin beim Schreiben eines Manuskripts im leeren Klassenzimmer entdeckt.",
+        "context": "Tag 3 morgens. Die Lehrerin beim Schreiben eines Manuskripts im leeren Klassenzimmer entdeckt. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
         "personality": "Die Lehrerin war eine angehende Romanautorin. Wurde Lehrerin, hat den Traum aber nie aufgegeben."
     },
     "hidden_nurse_d3_check": {
@@ -317,7 +317,7 @@
     "hidden_nurse_d3_freetalk": {
         "name": "Schulkrankenschwester",
         "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
-        "context": "Tag 3. Kam aus Unruhe ins Krankenzimmer.",
+        "context": "Tag 3. Kam aus Unruhe ins Krankenzimmer. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
         "personality": "Normalerweise verspielt, aber wenn ernst, ändert sich die Atmosphäre komplett."
     }
 }
