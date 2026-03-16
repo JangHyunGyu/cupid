@@ -203,6 +203,7 @@ Object.assign(SCENARIO[2], {
         "type": "free_talk",
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "night": true,
         "next": "night2_hidden_check"
     }
 ,
@@ -210,6 +211,7 @@ Object.assign(SCENARIO[2], {
         "type": "free_talk",
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/dain_normal.png",
+        "night": true,
         "next": "night2_hidden_check"
     }
 ,
@@ -217,6 +219,7 @@ Object.assign(SCENARIO[2], {
         "type": "free_talk",
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
         "next": "night2_hidden_check"
     },
 

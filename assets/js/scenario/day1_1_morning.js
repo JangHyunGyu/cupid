@@ -305,12 +305,12 @@ Object.assign(SCENARIO[1], {
         "next": "classroom_yuna_1"
     },
     "classroom_yuna_1": {
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_yuna_2"
     },
     "classroom_yuna_2": {
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_seat_1"
     },

@@ -597,7 +597,7 @@ Object.assign(SCENARIO[1], {
 ,
     "lunch_dain_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/playground.png",
+        "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_end"
     }
