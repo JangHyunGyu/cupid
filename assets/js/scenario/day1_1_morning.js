@@ -300,27 +300,27 @@ Object.assign(SCENARIO[1], {
         "next": "classroom_dain_5"
     },
     "classroom_dain_5": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_yuna_1"
     },
     "classroom_yuna_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_yuna_2"
     },
     "classroom_yuna_2": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_seat_1"
     },
     "classroom_seat_1": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_seat_2"
     },
     "classroom_seat_2": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/room_school.png",
         "next": "classroom_minsu_1"
     },
@@ -410,7 +410,7 @@ Object.assign(SCENARIO[1], {
         "next": "classroom_yuna_note_6"
     },
     "classroom_yuna_note_6": {
-        "character": null,
+        "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
         "setFlags": ["met_dain", "met_yuna"],
         "next": "lunch_start"

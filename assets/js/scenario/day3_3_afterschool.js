@@ -520,7 +520,7 @@ Object.assign(SCENARIO[3], {
     },
     "after3_confront_end": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_angry.png",
         "next": "after3_final"
     },
 

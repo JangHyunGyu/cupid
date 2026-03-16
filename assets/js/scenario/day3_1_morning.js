@@ -401,7 +401,7 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "morning3_multi_from_yuna": {
-        "character": null,
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "morning3_end"
     },
     "morning3_set_multiple": {
