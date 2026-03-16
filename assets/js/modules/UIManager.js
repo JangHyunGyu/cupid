@@ -586,8 +586,8 @@ class UIManager {
             document.getElementById('affinityToggle').checked = savedSetting === null ? true : savedSetting === 'true';
 
             // 볼륨 설정 불러오기
-            const bgmVol = localStorage.getItem('bgmVolume') || 0.5;
-            const sfxVol = localStorage.getItem('sfxVolume') || 0.5;
+            const bgmVol = localStorage.getItem('bgmVolume') !== null ? parseFloat(localStorage.getItem('bgmVolume')) : 0.5;
+            const sfxVol = localStorage.getItem('sfxVolume') !== null ? parseFloat(localStorage.getItem('sfxVolume')) : 0.5;
 
             document.getElementById('bgmVolume').value = bgmVol * 100;
             document.getElementById('sfxVolume').value = sfxVol * 100;
