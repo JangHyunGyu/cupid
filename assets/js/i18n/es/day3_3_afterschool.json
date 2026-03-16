@@ -328,19 +328,19 @@
     "after3_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Frente a frente con Seoyeon en el pasillo. Su expresión es complicada.*",
-        "context": "Día 3, después de la confrontación con Seoyeon. La confianza está rota.",
+        "context": "Día 3, después de la confrontación con Seoyeon. La confianza está rota. Tono: Brillante en la superficie pero con sombras por debajo. A veces sonriendo pero los ojos no. La sinceridad se asoma entre la conversación casual.",
         "personality": "Seoyeon es posesiva y directa cuando está celosa. Herida pero intentando no mostrarlo."
     },
     "after3_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Caminando junto a Yuna. Su mirada es fría.*",
-        "context": "Día 3, después de hablar con Yuna. Muestra más emociones de lo habitual.",
+        "context": "Día 3, después de hablar con Yuna. Muestra más emociones de lo habitual. Tono: Brillante en la superficie pero con sombras por debajo. A veces sonriendo pero los ojos no. La sinceridad se asoma entre la conversación casual.",
         "personality": "Yuna está emocionalmente alterada. Más que celos, busca confirmación."
     },
     "after3_dain_freetalk": {
         "name": "Dain",
         "text": "*Sentados en un banco con Dain en el patio. Está más callada de lo habitual.*",
-        "context": "Día 3, después de hablar con Dain. Está herida pero fingiendo alegría.",
+        "context": "Día 3, después de hablar con Dain. Está herida pero fingiendo alegría. Tono: Brillante en la superficie pero con sombras por debajo. A veces sonriendo pero los ojos no. La sinceridad se asoma entre la conversación casual.",
         "personality": "Dain usa la alegría como defensa. Menos exclamaciones significan que es sincera."
     }
 }

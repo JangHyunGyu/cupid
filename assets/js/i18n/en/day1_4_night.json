@@ -134,19 +134,19 @@
     "night_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Got a message from Seoyeon.*",
-        "context": "First night, chatting with Seoyeon via messenger. She messaged first.",
+        "context": "First night, chatting with Seoyeon via messenger. She messaged first. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
         "personality": "Seoyeon is the cool student council president. Even her texts are composed and teasing. Tries not to show interest but messaging first already gives it away."
     },
     "night_dain_freetalk": {
         "name": "Dain",
         "text": "*Dain's message bombardment has begun.*",
-        "context": "First night, chatting with Dain via messenger. She messaged first.",
+        "context": "First night, chatting with Dain via messenger. She messaged first. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
         "personality": "Dain is an energetic athlete. Her messages are exclamation mark bombs. Her energy doesn't drop even at night."
     },
     "night_yuna_freetalk": {
         "name": "Yuna",
         "text": "*A short message from Yuna arrived.*",
-        "context": "First night, chatting with Yuna via messenger. She messaged first.",
+        "context": "First night, chatting with Yuna via messenger. She messaged first. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
         "personality": "Yuna is a mysterious literary girl. Her messages are short and cryptic. Reaching out first at night is a big deal for her."
     },
     "night_hidden_check": {

@@ -328,19 +328,19 @@
     "after3_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Seoyeon im Flur gegenüberstehend. Ihr Ausdruck ist kompliziert.*",
-        "context": "Tag 3, nach der Konfrontation mit Seoyeon. Das Vertrauen ist erschüttert.",
+        "context": "Tag 3, nach der Konfrontation mit Seoyeon. Das Vertrauen ist erschüttert. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
         "personality": "Seoyeon ist besitzergreifend und direkt wenn eifersüchtig. Verletzt aber versucht es nicht zu zeigen."
     },
     "after3_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Neben Yuna gehend. Ihr Blick ist kühl.*",
-        "context": "Tag 3, nach dem Gespräch mit Yuna.",
+        "context": "Tag 3, nach dem Gespräch mit Yuna. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
         "personality": "Yuna ist emotional erschüttert. Mehr Bestätigung suchend als eifersüchtig."
     },
     "after3_dain_freetalk": {
         "name": "Dain",
         "text": "*Mit Dain auf einer Bank am Spielplatz sitzend. Sie ist ruhiger als sonst.*",
-        "context": "Tag 3, nach dem Gespräch mit Dain. Verletzt aber tut so als wäre sie fröhlich.",
+        "context": "Tag 3, nach dem Gespräch mit Dain. Verletzt aber tut so als wäre sie fröhlich. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
         "personality": "Dain nutzt Fröhlichkeit als Verteidigung. Weniger Ausrufezeichen bedeuten Ehrlichkeit."
     }
 }

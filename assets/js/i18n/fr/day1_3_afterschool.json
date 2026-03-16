@@ -186,7 +186,7 @@
     "after_homeroom_freetalk": {
         "name": "Professeur Principal",
         "text": "*En train de discuter avec la prof principale dans le couloir.*",
-        "context": "Jour 1 après les cours. La prof principale a arrêté le nouvel élève pour prendre de ses nouvelles.",
+        "context": "Jour 1 après les cours. La prof principale a arrêté le nouvel élève pour prendre de ses nouvelles. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
         "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Début de trentaine, longs cheveux bruns ondulés et cardigan beige. Sa phrase fétiche : \"Je devrais pas faire ça\". Ancienne aspirante romancière."
     },
     "after_hidden_nurse_intro": {
@@ -260,7 +260,7 @@
     "after_nurse_freetalk": {
         "name": "Infirmière",
         "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
-        "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et a visité l'infirmerie.",
+        "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et a visité l'infirmerie. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
         "personality": "L'infirmière est joueuse et charmeuse mais cache ses vrais sentiments derrière l'humour. Ancienne infirmière hospitalière ayant fait un burnout."
     }
 }

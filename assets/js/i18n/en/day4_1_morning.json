@@ -86,7 +86,7 @@
     "hidden_homeroom_d4_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Talking with the homeroom teacher at a cafe.*",
-        "context": "Day 4. Ran into the teacher on the weekend, went to a cafe. She asked you to be her first reader.",
+        "context": "Day 4. Ran into the teacher on the weekend, went to a cafe. She asked you to be her first reader. Tone: Conversation has gotten serious. Date excitement and nervousness. More sincerity than jokes. Moments of emotional honesty.",
         "personality": "The teacher is more relaxed in casual clothes. Torn between passion for writing and feelings for a student."
     },
     "hidden_nurse_d4_check": {
@@ -148,7 +148,7 @@
     "hidden_nurse_d4_freetalk": {
         "name": "School Nurse",
         "text": "*Talking with the school nurse at a snack bar.*",
-        "context": "Day 4. Helped with health checkup prep on the weekend, then ate together. Hospital burnout backstory.",
+        "context": "Day 4. Helped with health checkup prep on the weekend, then ate together. Hospital burnout backstory. Tone: Conversation has gotten serious. Date excitement and nervousness. More sincerity than jokes. Moments of emotional honesty.",
         "personality": "In casual clothes she feels more like an older sister. Oscillates between playfulness and sincerity."
     }
 }

@@ -235,7 +235,7 @@
     "after2_dain_freetalk": {
         "name": "Dain",
         "text": "*Eating tteokbokki with Dain and chatting.*",
-        "context": "Day 2 afterschool, came to tteokbokki shop after a volleyball bet at the gym. Getting closer.",
+        "context": "Day 2 afterschool, came to tteokbokki shop after a volleyball bet at the gym. Getting closer. Tone: Feeling closer than yesterday. Banter feels natural and comfortable. Push-pull flirting. No heavy topics yet.",
         "personality": "Dain is an energetic athlete. Competitive and straightforward, but exclamation marks disappear when she's being genuine."
     },
     "hidden_nurse_d2_1": {
@@ -277,7 +277,7 @@
     "hidden_nurse_d2_freetalk": {
         "name": "School Nurse",
         "text": "*Chatting with the school nurse in the nurse's office.*",
-        "context": "Day 2. Scraped elbow during PE, came to the nurse's office. The nurse carefully applied a bandage.",
+        "context": "Day 2. Scraped elbow during PE, came to the nurse's office. The nurse carefully applied a bandage. Tone: Feeling closer than yesterday. Banter feels natural and comfortable. Push-pull flirting. No heavy topics yet.",
         "personality": "The school nurse is playful but meticulous. Takes a long time applying bandages. Hiding something personal."
     }
 }

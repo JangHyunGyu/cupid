@@ -134,19 +134,19 @@
     "night_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Llegó un mensaje de Seoyeon.*",
-        "context": "Primera noche, chateando con Seoyeon por mensajero.",
+        "context": "Primera noche, chateando con Seoyeon por mensajero. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
         "personality": "Seoyeon es la presidenta del consejo. Sus mensajes son tranquilos y provocativos."
     },
     "night_dain_freetalk": {
         "name": "Dain",
         "text": "*El bombardeo de mensajes de Dain ha comenzado.*",
-        "context": "Primera noche, chateando con Dain por mensajero.",
+        "context": "Primera noche, chateando con Dain por mensajero. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
         "personality": "Dain es una atleta enérgica. Sus mensajes son bombas de exclamaciones."
     },
     "night_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Llegó un mensaje corto de Yuna.*",
-        "context": "Primera noche, chateando con Yuna por mensajero.",
+        "context": "Primera noche, chateando con Yuna por mensajero. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
         "personality": "Yuna es una chica literaria. Sus mensajes son cortos y crípticos."
     },
     "night_hidden_check": {

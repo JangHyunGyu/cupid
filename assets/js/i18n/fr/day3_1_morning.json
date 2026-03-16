@@ -271,7 +271,7 @@
     "hidden_homeroom_d3_freetalk": {
         "name": "Professeur Principal",
         "text": "*En train de discuter avec la prof principale dans la salle vide.*",
-        "context": "Jour 3 matin. Découvert la prof en train d'écrire un manuscrit.",
+        "context": "Jour 3 matin. Découvert la prof en train d'écrire un manuscrit. Ton : Lumineux en surface mais des ombres en dessous. Parfois le sourire n'atteint pas les yeux. La sincérité transparaît dans la conversation décontractée.",
         "personality": "La prof était une aspirante romancière. Elle est devenue prof mais n'a jamais abandonné son rêve."
     },
     "hidden_nurse_d3_check": {
@@ -317,7 +317,7 @@
     "hidden_nurse_d3_freetalk": {
         "name": "Infirmière",
         "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
-        "context": "Jour 3. Venu à l'infirmerie par anxiété.",
+        "context": "Jour 3. Venu à l'infirmerie par anxiété. Ton : Lumineux en surface mais des ombres en dessous. Parfois le sourire n'atteint pas les yeux. La sincérité transparaît dans la conversation décontractée.",
         "personality": "D'habitude joueuse, mais quand elle est sérieuse l'atmosphère change complètement."
     }
 }

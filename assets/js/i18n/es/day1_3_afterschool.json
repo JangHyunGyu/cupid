@@ -186,7 +186,7 @@
     "after_homeroom_freetalk": {
         "name": "Profesora",
         "text": "*Conversando con la profesora en el pasillo.*",
-        "context": "Día 1 después de clases. La profesora detuvo al estudiante nuevo para ver cómo se adaptaba.",
+        "context": "Día 1 después de clases. La profesora detuvo al estudiante nuevo para ver cómo se adaptaba. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
         "personality": "La profesora esconde calidez detrás de humor seco. Treinta y pocos, cabello largo castaño ondulado y cárdigan beige. Su frase es \"No debería hacer esto\". Fue aspirante a novelista."
     },
     "after_hidden_nurse_intro": {
@@ -260,7 +260,7 @@
     "after_nurse_freetalk": {
         "name": "Enfermera",
         "text": "*Conversando con la enfermera en la enfermería.*",
-        "context": "Día 1 después de clases. El estudiante nuevo se mareó y visitó la enfermería.",
+        "context": "Día 1 después de clases. El estudiante nuevo se mareó y visitó la enfermería. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
         "personality": "La enfermera es juguetona y coqueta pero esconde sentimientos reales detrás de bromas. Ex enfermera de hospital que sufrió burnout."
     }
 }

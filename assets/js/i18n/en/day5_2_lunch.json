@@ -134,19 +134,19 @@
     "tour_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Standing on the rooftop with Seoyeon. The last lunch break.*",
-        "context": "Day 5 last lunch, with Seoyeon. The end is approaching.",
+        "context": "Day 5 last lunch, with Seoyeon. The end is approaching. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
         "personality": "Seoyeon is the cool student council president. Being the last time, her usual composure is gone and true feelings emerge."
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Standing in the library with Yuna. The last lunch break.*",
-        "context": "Day 5 last lunch, with Yuna. The end is approaching.",
+        "context": "Day 5 last lunch, with Yuna. The end is approaching. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
         "personality": "Yuna is a mysterious literary girl. Being the last time, her walls are completely down. Her sentences are much longer than usual."
     },
     "tour_dain_freetalk": {
         "name": "Dain",
         "text": "*Standing in the gym with Dain. The last lunch break.*",
-        "context": "Day 5 last lunch, with Dain. The end is approaching.",
+        "context": "Day 5 last lunch, with Dain. The end is approaching. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
         "personality": "Dain is an energetic athlete. Being the last time, she can't maintain her cheerful facade. Real emotions show through."
     }
 }

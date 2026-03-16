@@ -66,7 +66,7 @@
     "hidden_homeroom_d5_freetalk": {
         "name": "Profesora",
         "text": "*Última conversación con la profesora en el aula vacía.*",
-        "context": "Día 5. Último día. La profesora entregó su manuscrito de 7 años.",
+        "context": "Día 5. Último día. La profesora entregó su manuscrito de 7 años. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
         "personality": "La profesora es más sincera porque es la última vez. Usa su frase por última vez."
     },
     "hidden_nurse_d5_check": {
@@ -104,7 +104,7 @@
     "hidden_nurse_d5_freetalk": {
         "name": "Enfermera",
         "text": "*Última conversación con la enfermera frente a la enfermería.*",
-        "context": "Día 5. Último día. La enfermera escribió un mensaje en una tirita.",
+        "context": "Día 5. Último día. La enfermera escribió un mensaje en una tirita. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
         "personality": "La enfermera está menos juguetona. Esperando el día sin excusas."
     }
 }
