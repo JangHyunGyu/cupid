@@ -463,6 +463,194 @@ if (cssVersionKeys.length > 1) {
     }
 }
 
+// ===== 16. Audio File Existence =====
+const AUDIO_BGM_DIR = path.join(__dirname, 'assets/audio/bgm');
+const AUDIO_SFX_DIR = path.join(__dirname, 'assets/audio/sfx');
+for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
+    if (scene.bgm && typeof scene.bgm === 'string') {
+        const bgmPath = path.join(AUDIO_BGM_DIR, scene.bgm);
+        if (!fs.existsSync(bgmPath)) {
+            errors.push('[AUDIO_MISSING] ' + sceneId + ' (day' + day + '): bgm="' + scene.bgm + '" file not found');
+        }
+    }
+    if (scene.sfx && typeof scene.sfx === 'string') {
+        const sfxPath = path.join(AUDIO_SFX_DIR, scene.sfx);
+        if (!fs.existsSync(sfxPath)) {
+            errors.push('[AUDIO_MISSING] ' + sceneId + ' (day' + day + '): sfx="' + scene.sfx + '" file not found');
+        }
+    }
+}
+
+// ===== 17. Gallery Data — CG/BGM 파일 존재 확인 =====
+try {
+    const galleryDataPath = path.join(__dirname, 'assets/js/gallery-data.js');
+    const gdContent = fs.readFileSync(galleryDataPath, 'utf8');
+
+    // CG file paths
+    const cgFileMatches = gdContent.matchAll(/file:\s*'([^']+)'/g);
+    for (const m of cgFileMatches) {
+        const filePath = path.join(__dirname, m[1]);
+        if (!fs.existsSync(filePath)) {
+            errors.push('[GALLERY_ASSET] gallery-data.js: CG/BGM file="' + m[1] + '" not found');
+        }
+    }
+    // thumbnail paths (별도 파일인 경우만)
+    const thumbMatches = gdContent.matchAll(/thumbnail:\s*'([^']+)'/g);
+    for (const m of thumbMatches) {
+        const filePath = path.join(__dirname, m[1]);
+        if (!fs.existsSync(filePath)) {
+            errors.push('[GALLERY_ASSET] gallery-data.js: thumbnail="' + m[1] + '" not found');
+        }
+    }
+
+    // Expression images — expressions 배열에서 캐릭터별 이미지 확인
+    const charImgDir = path.join(__dirname, 'assets/images/characters');
+    const exprBlockRegex = /(\w+):\s*\{[^}]*expressions:\s*\[([^\]]+)\]/g;
+    let exprMatch;
+    while ((exprMatch = exprBlockRegex.exec(gdContent)) !== null) {
+        const charId = exprMatch[1];
+        if (['ko', 'en', 'es', 'ja', 'fr', 'de'].includes(charId)) continue;
+        const exprs = exprMatch[2].match(/'([^']+)'/g);
+        if (!exprs) continue;
+        for (const expr of exprs) {
+            const exprName = expr.replace(/'/g, '');
+            const imgFile = charId + '_' + exprName + '.png';
+            const imgPath = path.join(charImgDir, imgFile);
+            if (!fs.existsSync(imgPath)) {
+                errors.push('[GALLERY_ASSET] gallery-data.js: ' + charId + ' expression "' + exprName + '" → ' + imgFile + ' not found');
+            }
+        }
+    }
+} catch (e) {
+    warnings.push('[GALLERY_ASSET] gallery-data.js 파싱 실패: ' + e.message);
+}
+
+// ===== 18. Duplicate Scene ID Across Days =====
+const sceneIdDays = {};
+for (const day of Object.keys(SCENARIO)) {
+    for (const sceneId of Object.keys(SCENARIO[day])) {
+        if (!sceneIdDays[sceneId]) sceneIdDays[sceneId] = [];
+        sceneIdDays[sceneId].push(day);
+    }
+}
+for (const [sceneId, days] of Object.entries(sceneIdDays)) {
+    if (days.length > 1) {
+        errors.push('[DUPLICATE_ID] "' + sceneId + '" exists in days: ' + days.join(', ') + ' — later day overwrites earlier');
+    }
+}
+
+// ===== 19. Version String Consistency =====
+try {
+    // LoaderConfig VERSION
+    const loaderConfigPath = path.join(__dirname, 'assets/js/loaders/config.js');
+    const loaderConfigContent = fs.readFileSync(loaderConfigPath, 'utf8');
+    const loaderVersion = (loaderConfigContent.match(/VERSION:\s*'([^']+)'/) || [])[1];
+
+    // game-loader.js hardcoded version
+    const gameLoaderPath = path.join(__dirname, 'assets/js/loaders/game-loader.js');
+    const gameLoaderContent = fs.readFileSync(gameLoaderPath, 'utf8');
+    const gameLoaderVersion = (gameLoaderContent.match(/const\s+version\s*=\s*'([^']+)'/) || [])[1];
+
+    // gallery-loader.js hardcoded version
+    const galleryLoaderPath = path.join(__dirname, 'assets/js/loaders/gallery-loader.js');
+    const galleryLoaderContent = fs.readFileSync(galleryLoaderPath, 'utf8');
+    const galleryLoaderVersion = (galleryLoaderContent.match(/const\s+version\s*=\s*'([^']+)'/) || [])[1];
+
+    // modules/config.js ASSET_VERSION
+    const modulesConfigPath = path.join(__dirname, 'assets/js/modules/config.js');
+    const modulesConfigContent = fs.readFileSync(modulesConfigPath, 'utf8');
+    const assetVersion = (modulesConfigContent.match(/ASSET_VERSION\s*=\s*'([^']+)'/) || [])[1];
+
+    const versions = { 'loaders/config.js(LoaderConfig)': loaderVersion, 'game-loader.js': gameLoaderVersion, 'gallery-loader.js': galleryLoaderVersion, 'modules/config.js(ASSET_VERSION)': assetVersion };
+    const uniqueVersions = new Set(Object.values(versions).filter(Boolean));
+    if (uniqueVersions.size > 1) {
+        const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
+        errors.push('[VERSION_SYNC] JS 버전 불일치: ' + detail);
+    }
+} catch (e) {
+    warnings.push('[VERSION_SYNC] 버전 파일 읽기 실패: ' + e.message);
+}
+
+// ===== 20. i18n Text/Choices Field Completeness =====
+for (const lang of ['ko', ...i18nLangs]) {
+    const langDir = path.join(BASE, 'i18n', lang);
+    if (!fs.existsSync(langDir)) continue;
+    const langData = {};
+    const langFiles = fs.readdirSync(langDir).filter(f => f.endsWith('.json'));
+    for (const file of langFiles) {
+        try { Object.assign(langData, JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8'))); } catch (e) {}
+    }
+    for (const [sceneId, entry] of Object.entries(langData)) {
+        const scene = allScenes[sceneId];
+        if (!scene) continue;
+        // 텍스트가 필요한 씬인데 text가 비어있으면
+        if (scene.scene.text && (!entry.text || entry.text.trim() === '')) {
+            warnings.push('[I18N_EMPTY] ' + lang + '/' + sceneId + ': text 필드가 비어있음');
+        }
+        // 선택지 수가 다르거나 빈 선택지
+        if (scene.scene.choices && entry.choices) {
+            entry.choices.forEach((c, i) => {
+                if (!c || (typeof c === 'string' && c.trim() === '')) {
+                    warnings.push('[I18N_EMPTY] ' + lang + '/' + sceneId + ': choices[' + i + '] 비어있음');
+                }
+            });
+        }
+    }
+}
+
+// ===== 21. HTML Resource References =====
+for (const file of htmlFiles) {
+    // <script src="..."> 체크
+    const scriptMatches = file.content.matchAll(/src="([^"]+\.js)(\?[^"]*)?"/g);
+    for (const m of scriptMatches) {
+        if (m[1].startsWith('http') || m[1].startsWith('//')) continue;
+        const filePath = path.join(__dirname, m[1]);
+        if (!fs.existsSync(filePath)) {
+            errors.push('[HTML_RESOURCE] ' + file.name + ': <script src="' + m[1] + '"> file not found');
+        }
+    }
+    // <link href="...css"> 체크
+    const cssMatches = file.content.matchAll(/href="([^"]+\.css)(\?[^"]*)?"/g);
+    for (const m of cssMatches) {
+        if (m[1].startsWith('http') || m[1].startsWith('//')) continue;
+        const filePath = path.join(__dirname, m[1]);
+        if (!fs.existsSync(filePath)) {
+            errors.push('[HTML_RESOURCE] ' + file.name + ': <link href="' + m[1] + '"> file not found');
+        }
+    }
+}
+
+// ===== 22. HTML Redirect Targets =====
+for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
+    const checkHtmlTarget = (target, context) => {
+        if (target && target.endsWith('.html')) {
+            const filePath = path.join(__dirname, target);
+            if (!fs.existsSync(filePath)) {
+                errors.push('[HTML_TARGET] ' + sceneId + ' ' + context + '="' + target + '" file not found');
+            }
+        }
+    };
+    checkHtmlTarget(scene.next, 'next');
+    if (scene.choices) scene.choices.forEach((c, i) => checkHtmlTarget(c.next, 'choices[' + i + '].next'));
+    if (scene.branches) scene.branches.forEach((b, i) => checkHtmlTarget(b.next, 'branches[' + i + '].next'));
+}
+
+// ===== 23. Manifest Icon Existence =====
+const manifestFiles = fs.readdirSync(__dirname).filter(f => f.startsWith('manifest') && f.endsWith('.json'));
+for (const mf of manifestFiles) {
+    try {
+        const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, mf), 'utf8'));
+        if (manifest.icons) {
+            for (const icon of manifest.icons) {
+                const iconPath = path.join(__dirname, icon.src);
+                if (!fs.existsSync(iconPath)) {
+                    errors.push('[MANIFEST] ' + mf + ': icon "' + icon.src + '" not found');
+                }
+            }
+        }
+    } catch (e) {}
+}
+
 // ===== 15. i18n Character Name Format Check =====
 // "한글명(English)" 형식이 남아있는지 검사
 const nameFormatRegex = /[\uAC00-\uD7A3]+\([A-Za-z]+\)/;
