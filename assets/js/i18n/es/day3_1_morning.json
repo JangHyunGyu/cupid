@@ -14,18 +14,18 @@
     },
     "morning3_seo_gate_1": {
         "name": "Yo",
-        "text": "*서연(Seoyeon) está de pie frente a la puerta. Sin prisa alguna.*"
+        "text": "*Seoyeon está de pie frente a la puerta. Sin prisa alguna.*"
     },
     "morning3_seo_gate_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Llegas tarde."
     },
     "morning3_seo_gate_3": {
         "name": "{name}",
-        "text": "...서연(Seoyeon)? ¿Por qué estás aquí?"
+        "text": "...Seoyeon? ¿Por qué estás aquí?"
     },
     "morning3_seo_gate_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "¿Qué más da si llegamos tarde? Si nos pillan juntos, quizá el castigo sea menor, ¿no?"
     },
     "morning3_seo_gate_5": {
@@ -33,23 +33,23 @@
         "text": "No creo que funcione así."
     },
     "morning3_seo_gate_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Es broma. Ya me encargo yo."
     },
     "morning3_seo_gate_7": {
         "name": "Yo",
-        "text": "*서연(Seoyeon) camina adelante. Con seguridad. No se apresura aunque llega tarde. — Esta chica mantiene la compostura incluso con retraso. No, más bien es que actuar con aplomo le sale natural.*"
+        "text": "*Seoyeon camina adelante. Con seguridad. No se apresura aunque llega tarde. — Esta chica mantiene la compostura incluso con retraso. No, más bien es que actuar con aplomo le sale natural.*"
     },
     "morning3_yuna_gate_1": {
         "name": "Yo",
-        "text": "*Encuentro a 유나(Yuna) de pie frente a la puerta con la mirada perdida. Tiene los ojos medio cerrados.*"
+        "text": "*Encuentro a Yuna de pie frente a la puerta con la mirada perdida. Tiene los ojos medio cerrados.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
-        "text": "¿유나(Yuna)? ¿Tú también llegas tarde?"
+        "text": "¿Yuna? ¿Tú también llegas tarde?"
     },
     "morning3_yuna_gate_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Me pasé toda la noche leyendo."
     },
     "morning3_yuna_gate_4": {
@@ -57,28 +57,28 @@
         "text": "¿Toda la noche?"
     },
     "morning3_yuna_gate_5": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Necesitaba saber el final. No podía parar."
     },
     "morning3_yuna_gate_6": {
         "name": "Yo",
-        "text": "*Alguien que se desvela leyendo y llega tarde. — Admirable o lamentable, en cualquier caso, típico de 유나(Yuna).*"
+        "text": "*Alguien que se desvela leyendo y llega tarde. — Admirable o lamentable, en cualquier caso, típico de Yuna.*"
     },
     "morning3_yuna_gate_7": {
         "name": "Yo",
-        "text": "*유나(Yuna) saca un panecillo de su mochila. Lo compartimos mientras cruzamos la puerta tranquilamente.*"
+        "text": "*Yuna saca un panecillo de su mochila. Lo compartimos mientras cruzamos la puerta tranquilamente.*"
     },
     "morning3_dain_gate_1": {
         "name": "Yo",
-        "text": "*Cerca de la puerta, 다인(Dain) viene corriendo a toda velocidad.*"
+        "text": "*Cerca de la puerta, Dain viene corriendo a toda velocidad.*"
     },
     "morning3_dain_gate_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "¡¡Oye oye oye!! ¡¡Llegamos tarde!! ¡¡Corre!!"
     },
     "morning3_dain_gate_3": {
         "name": "Yo",
-        "text": "*다인(Dain) me agarra la mano sin avisar y empieza a correr.*"
+        "text": "*Dain me agarra la mano sin avisar y empieza a correr.*"
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
@@ -93,40 +93,40 @@
         "text": "*Al entrar al salón, siento las miradas de las otras dos que presenciaron con quién llegué.*"
     },
     "morning3_react_seo_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "¡¡Oye!! ¿¡Viniste con la presidenta?! ¿¡Tan temprano?!"
     },
     "morning3_react_seo_2": {
         "name": "Yo",
-        "text": "*유나(Yuna) aparta la mirada de la ventana y me mira un instante. — Luego vuelve a la ventana.*"
+        "text": "*Yuna aparta la mirada de la ventana y me mira un instante. — Luego vuelve a la ventana.*"
     },
     "morning3_react_yuna_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "¿Llegas con la chica de la biblioteca a primera hora?"
     },
     "morning3_react_yuna_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "¡¡Qué envidia!! ¡¡Yo también quiero alguien con quien venir por la mañana!!"
     },
     "morning3_react_dain_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Vaya ejercicio matutino. ¿Quieres que te comparta mi almuerzo?"
     },
     "morning3_react_dain_2": {
         "name": "Yo",
-        "text": "*유나(Yuna) observa en silencio. Parece estar escribiendo una nota.*"
+        "text": "*Yuna observa en silencio. Parece estar escribiendo una nota.*"
     },
     "morning3_date_intro": {
         "name": "Yo",
         "text": "*Termina la primera clase. Recreo. — Las tres se me acercan una tras otra.*"
     },
     "morning3_date_seo_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "¿Tienes tiempo este fin de semana? Hay un lugar al que quiero ir."
     },
     "morning3_date_seo_choice": {
         "name": "Yo",
-        "text": "*서연(Seoyeon) me pregunta al cruzarse conmigo en el pasillo.*",
+        "text": "*Seoyeon me pregunta al cruzarse conmigo en el pasillo.*",
         "choices": [
             "Claro. ¿Adónde?",
             "Creo que estaré algo ocupado"
@@ -134,19 +134,19 @@
     },
     "morning3_date_seo_accept": {
         "name": "Yo",
-        "text": "*Acepté los planes del fin de semana con 서연(Seoyeon).*"
+        "text": "*Acepté los planes del fin de semana con Seoyeon.*"
     },
     "morning3_date_seo_decline": {
         "name": "Yo",
-        "text": "*Rechacé la propuesta de 서연(Seoyeon).*"
+        "text": "*Rechacé la propuesta de Seoyeon.*"
     },
     "morning3_date_dain_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "¡¡Oye!! ¿¡Qué haces este fin de semana?! ¿¡Vamos juntos al arcade?!"
     },
     "morning3_date_dain_2": {
         "name": "Yo",
-        "text": "*Los dedos de 다인(Dain) golpetean el borde del pupitre. ¿Está nerviosa? — No, imposible. 다인(Dain) no se pone nerviosa. Esto es cotidiano para ella.*"
+        "text": "*Los dedos de Dain golpetean el borde del pupitre. ¿Está nerviosa? — No, imposible. Dain no se pone nerviosa. Esto es cotidiano para ella.*"
     },
     "morning3_date_dain_3": {
         "name": "Yo",
@@ -154,7 +154,7 @@
     },
     "morning3_date_dain_choice": {
         "name": "Yo",
-        "text": "*다인(Dain) viene a mi pupitre en el recreo y me pregunta.*",
+        "text": "*Dain viene a mi pupitre en el recreo y me pregunta.*",
         "choices": [
             "Dale, hecho",
             "Este fin de semana no puedo..."
@@ -162,19 +162,19 @@
     },
     "morning3_date_dain_accept": {
         "name": "Yo",
-        "text": "*Acepté los planes del fin de semana con 다인(Dain).*"
+        "text": "*Acepté los planes del fin de semana con Dain.*"
     },
     "morning3_date_dain_decline": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "¿Ah, sí? Bueno, ¡si estás ocupado, qué se le va a hacer!"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Yo",
-        "text": "*Observo la reacción de 다인(Dain).*"
+        "text": "*Observo la reacción de Dain.*"
     },
     "morning3_date_dain_decline_inner": {
         "name": "Yo",
-        "text": "*Se fue con una sonrisa radiante. — En ese momento no lo supe. Que 다인(Dain) había dejado de golpetear y metido las manos en los bolsillos. Que le había costado valor preguntar.*"
+        "text": "*Se fue con una sonrisa radiante. — En ese momento no lo supe. Que Dain había dejado de golpetear y metido las manos en los bolsillos. Que le había costado valor preguntar.*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "Yo",
@@ -182,15 +182,15 @@
     },
     "morning3_date_yuna_1": {
         "name": "Yo",
-        "text": "*Hay una nota de 유나(Yuna) sobre mi pupitre.*"
+        "text": "*Hay una nota de Yuna sobre mi pupitre.*"
     },
     "morning3_date_yuna_2": {
         "name": "Yo",
-        "text": "*'Fin de semana. Voy a la librería de segunda mano. Si quieres venir, ven. — 유나(Yuna)'*"
+        "text": "*'Fin de semana. Voy a la librería de segunda mano. Si quieres venir, ven. — Yuna'*"
     },
     "morning3_date_yuna_choice": {
         "name": "Yo",
-        "text": "*Después de leer la nota de 유나(Yuna)...*",
+        "text": "*Después de leer la nota de Yuna...*",
         "choices": [
             "Le hago un gesto de asentimiento",
             "Doblo la nota y la guardo en el bolsillo"
@@ -198,7 +198,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "Yo",
-        "text": "*Acepté los planes del fin de semana con 유나(Yuna).*"
+        "text": "*Acepté los planes del fin de semana con Yuna.*"
     },
     "morning3_date_yuna_decline": {
         "name": "Yo",

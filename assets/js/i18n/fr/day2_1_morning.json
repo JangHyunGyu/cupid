@@ -8,7 +8,7 @@
         "text": "*Au moment ou j'ouvre la porte de la classe -- un choc dans le dos.*"
     },
     "morning2_dain_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "T'es la ?! Bonjour !!"
     },
     "morning2_dain_2": {
@@ -16,7 +16,7 @@
         "text": "...Tu as failli me casser le dos."
     },
     "morning2_dain_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Haha, pour ca ?! Faut faire du sport !"
     },
     "morning2_dain_4": {
@@ -24,7 +24,7 @@
         "text": "C'est pas un peu tot pour autant d'energie ?"
     },
     "morning2_dain_5": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "C'est ca la normale ! C'est toi qui es a plat !"
     },
     "morning2_dain_6": {
@@ -48,7 +48,7 @@
         "text": "*Je suis sur le point de mettre le mot dans ma poche quand -- une voix familiere depuis le couloir.*"
     },
     "morning2_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Tu as bien dormi ?"
     },
     "morning2_seo_3": {
@@ -60,7 +60,7 @@
         "text": "La presidente du conseil des eleves vient jusqu'en classe pour dire bonjour ?"
     },
     "morning2_seo_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Je ne faisais que passer. -- Passe une bonne journee aussi."
     },
     "morning2_minsu_1": {
@@ -72,7 +72,7 @@
         "text": "*Minsu se retourne depuis le siege devant moi.*"
     },
     "morning2_minsu_3": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "Mec, deux jours en tant que nouvel eleve et la presidente du conseil vient te saluer ? Ca fait un an que je suis la et elle me regarde meme pas."
     },
     "morning2_dain_claim_1": {
@@ -80,7 +80,7 @@
         "text": "T'es peut-etre juste pas populaire."
     },
     "morning2_dain_claim_2": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "...C'est vrai, mais c'est pas le sujet."
     },
     "morning2_dain_claim_3": {
@@ -88,7 +88,7 @@
         "text": "*Dain regarde Seoyeon s'eloigner.*"
     },
     "morning2_dain_claim_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "La presidente aussi s'interesse a notre nouvel eleve ?"
     },
     "morning2_dain_claim_5": {
@@ -96,7 +96,7 @@
         "text": "'Notre' nouvel eleve ?"
     },
     "morning2_dain_claim_6": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "C'est moi qui t'ai trouve en premier, donc t'es notre nouvel eleve ! Premier arrive, premier servi !"
     },
     "morning2_break_1": {
@@ -108,7 +108,7 @@
         "text": "*Pause apres le premier cours. Je croise Seoyeon dans le couloir. Elle s'arrete. Regarde mon epaule.*"
     },
     "morning2_seo_dust_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Attends."
     },
     "morning2_seo_dust_3": {
@@ -116,7 +116,7 @@
         "text": "*La main de Seoyeon se pose sur mon epaule. Elle enleve quelque chose. Naturellement. Trop naturellement.*"
     },
     "morning2_seo_dust_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "T'avais un truc sur tes vetements."
     },
     "morning2_seo_dust_5": {
@@ -124,7 +124,7 @@
         "text": "......"
     },
     "morning2_seo_dust_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Quoi ? C'etait juste de la poussiere."
     },
     "morning2_dain_react_1": {
@@ -136,7 +136,7 @@
         "text": "*Seoyeon s'eloigne comme si de rien n'etait. La voix de Dain arrive de derriere.*"
     },
     "morning2_dain_react_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "He ! C'etait quoi ca ?! Elle t'a touche l'epaule ?!"
     },
     "morning2_dain_react_4": {
@@ -144,7 +144,7 @@
         "text": "Elle enlevait de la poussiere."
     },
     "morning2_dain_react_5": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "De la poussiere... y en avait vraiment ?!"
     },
     "morning2_dain_react_6": {
@@ -156,7 +156,7 @@
         "text": "*Dans le couloir ou Seoyeon a disparu -- une fille portant un bracelet du conseil des eleves s'approche.*"
     },
     "morning2_haeun_2": {
-        "name": "하은(Haeun)",
+        "name": "Haeun",
         "text": "Excusez-moi, vous etes le nouvel eleve, n'est-ce pas ? Je suis Haeun, la vice-presidente du conseil."
     },
     "morning2_haeun_3": {
@@ -164,7 +164,7 @@
         "text": "Ah, oui."
     },
     "morning2_haeun_4": {
-        "name": "하은(Haeun)",
+        "name": "Haeun",
         "text": "La presidente... enfin, Seoyeon sunbae semble un peu differente ces derniers temps."
     },
     "morning2_haeun_5": {
@@ -172,7 +172,7 @@
         "text": "Differente comment ?"
     },
     "morning2_haeun_6": {
-        "name": "하은(Haeun)",
+        "name": "Haeun",
         "text": "D'habitude elle n'est pas comme ca. S'approcher d'un autre eleve en premier... ca fait un an que je l'observe et c'est la premiere fois."
     },
     "morning2_haeun_7": {

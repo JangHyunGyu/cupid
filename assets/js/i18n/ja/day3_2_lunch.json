@@ -5,10 +5,10 @@
     },
     "lunch3_start_2": {
         "name": "僕",
-        "text": "*{name}が弁当を広げる。서연(Seoyeon)が自然に隣に座り、다인(Dain)が向かいにドスンと座り、유나(Yuna)が隅からパンをかじりながらそっと加わる。*"
+        "text": "*{name}が弁当を広げる。ソヨンが自然に隣に座り、ダインが向かいにドスンと座り、ユナが隅からパンをかじりながらそっと加わる。*"
     },
     "lunch3_meal_1": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「おっ！おいしい！！」"
     },
     "lunch3_meal_2": {
@@ -16,7 +16,7 @@
         "text": "「それ僕のなんだけど…」"
     },
     "lunch3_meal_3": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「卵焼き、ちょっと味が濃いわね。6点。」"
     },
     "lunch3_meal_4": {
@@ -24,19 +24,19 @@
         "text": "「点数つけないでよ。」"
     },
     "lunch3_meal_5": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「10点満点よ。悪くないでしょ？」"
     },
     "lunch3_meal_6": {
         "name": "僕",
-        "text": "*유나(Yuna)が黙って箸を伸ばし、一番おいしそうなソーセージを取っていく。*"
+        "text": "*ユナが黙って箸を伸ばし、一番おいしそうなソーセージを取っていく。*"
     },
     "lunch3_meal_7": {
         "name": "僕",
-        "text": "「…유나(Yuna)、それ僕が一番好きなやつなんだけど。」"
+        "text": "「…ユナ、それ僕が一番好きなやつなんだけど。」"
     },
     "lunch3_meal_8": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…おいしい。」"
     },
     "lunch3_meal_9": {
@@ -55,54 +55,54 @@
         "name": "僕",
         "text": "*最後のおかずを誰にあげるか悩む。*",
         "choices": [
-            "서연(Seoyeon)にあげる",
-            "다인(Dain)にあげる",
-            "유나(Yuna)にあげる",
+            "ソヨンにあげる",
+            "ダインにあげる",
+            "ユナにあげる",
             "「みんなで分けよう」"
         ]
     },
     "lunch3_give_seo_1": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…ありがと。やっぱりセンスあるわね。」"
     },
     "lunch3_give_seo_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「えー！私も食べたかったのに！」"
     },
     "lunch3_give_seo_3": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「……」"
     },
     "lunch3_give_dain_1": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「本当？！ありがとう！！{name}が最高！！」"
     },
     "lunch3_give_dain_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…ふん。点数までつけてあげたのに。」"
     },
     "lunch3_give_dain_3": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「……」"
     },
     "lunch3_give_yuna_1": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…ありがとう。」"
     },
     "lunch3_give_yuna_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…私にくれると思ったのに。」"
     },
     "lunch3_give_yuna_3": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「なんで！私は？！」"
     },
     "lunch3_expose_1": {
         "name": "僕",
-        "text": "*「みんなで食べよう」と言った瞬間 — 다인(Dain)が先に口を開いた。*"
+        "text": "*「みんなで食べよう」と言った瞬間 — ダインが先に口を開いた。*"
     },
     "lunch3_expose_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「あ、そうだ！{name}、週末一緒にゲーセン行くんだよね！！何食べてから行く？！」"
     },
     "lunch3_expose_3": {
@@ -111,26 +111,26 @@
     },
     "lunch3_expose_4": {
         "name": "僕",
-        "text": "*서연(Seoyeon)の箸が止まる。유나(Yuna)のパンをちぎる手が止まる。*"
+        "text": "*ソヨンの箸が止まる。ユナのパンをちぎる手が止まる。*"
     },
     "lunch3_expose_5": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…ゲーセン？」"
     },
     "lunch3_expose_6": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「私には一緒に行くところがあるって言ったのに。」"
     },
     "lunch3_expose_7": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「…ちょっと待って。私にも週末遊ぼうって言ったよね？」"
     },
     "lunch3_expose_8": {
         "name": "僕",
-        "text": "*유나(Yuna)がパンを置く。*"
+        "text": "*ユナがパンを置く。*"
     },
     "lunch3_expose_9": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「知ってた。」"
     },
     "lunch3_expose_10": {
@@ -138,7 +138,7 @@
         "text": "*しばし沈黙。*"
     },
     "lunch3_expose_11": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…嘘。私も知らなかった。」"
     },
     "lunch3_expose_12": {
@@ -147,15 +147,15 @@
     },
     "lunch3_expose_13": {
         "name": "僕",
-        "text": "*隣のテーブルで민수(Minsu)がこっちを見ている。首を横に振っている。*"
+        "text": "*隣のテーブルでミンスがこっちを見ている。首を横に振っている。*"
     },
     "lunch3_expose_14": {
-        "name": "민수(Minsu)",
+        "name": "ミンス",
         "text": "「…おい。お前マジか。」"
     },
     "lunch3_expose_15": {
         "name": "僕",
-        "text": "*何も言えない。민수(Minsu)が正しい。*"
+        "text": "*何も言えない。ミンスが正しい。*"
     },
     "lunch3_expose_choice": {
         "name": "僕",
@@ -171,44 +171,44 @@
         "text": "「ごめん。みんないい人だから断れなかった。」"
     },
     "lunch3_expose_honest_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…断れなかったから。その言葉が一番残酷なのよ、{name}。」"
     },
     "lunch3_expose_honest_3": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「断れない優しさが——偽りの希望を与えるの。」"
     },
     "lunch3_expose_honest_4": {
         "name": "僕",
-        "text": "*서연(Seoyeon)が弁当の蓋を閉じる。*"
+        "text": "*ソヨンが弁当の蓋を閉じる。*"
     },
     "lunch3_expose_honest_5": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「私はあなたの選択肢の一つになりたいんじゃない。唯一の答えか、何でもないか。——中途半端は無理。」"
     },
     "lunch3_expose_honest_6": {
         "name": "僕",
-        "text": "*서연(Seoyeon)が席を立つ。*"
+        "text": "*ソヨンが席を立つ。*"
     },
     "lunch3_expose_honest_7": {
         "name": "僕",
-        "text": "*感嘆符がない。——다인(Dain)の文章から感嘆符が消えた。初めてだ。*"
+        "text": "*感嘆符がない。——ダインの文章から感嘆符が消えた。初めてだ。*"
     },
     "lunch3_expose_excuse_1": {
         "name": "僕",
         "text": "「時間帯が違うから大丈夫だと思って…」"
     },
     "lunch3_expose_excuse_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…それが問題だって分からないの？」"
     },
     "lunch3_expose_excuse_3": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「私にも考える時間をちょうだい。」"
     },
     "lunch3_expose_excuse_4": {
         "name": "僕",
-        "text": "*感嘆符がない。——다인(Dain)の文章から感嘆符が消えた。初めてだ。*"
+        "text": "*感嘆符がない。——ダインの文章から感嘆符が消えた。初めてだ。*"
     },
     "lunch3_expose_run_1": {
         "name": "僕",

@@ -20,7 +20,7 @@
         "text": "*ソヨンが一瞬止まる。――そして笑う。口元じゃなくて、目が笑っている。*"
     },
     "date_seo_pretty_high_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…そういうの。準備してきたの？」"
     },
     "date_seo_pretty_high_3": {
@@ -32,11 +32,11 @@
         "text": "*「バカ」と言ったけど——耳が赤い。また。*"
     },
     "date_seo_pretty_low": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…何よ急に。そういうのは予告してから言ってよ。」"
     },
     "date_seo_bright": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「当然でしょ。今日はちょっと気合い入れたんだから。」"
     },
     "date_seo_walk": {
@@ -44,7 +44,7 @@
         "text": "*公園を散歩する。アヒルたちにパンを投げてやる。*"
     },
     "date_seo_duck": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「この子たちは単純でいいよね。パンをあげればついてくるし、あげなければ来ない。」"
     },
     "date_seo_duck_2": {
@@ -52,7 +52,7 @@
         "text": "「人間もそんなもんじゃない？」"
     },
     "date_seo_duck_3": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「人間はパンをあげても来ない時があるから。」"
     },
     "date_seo_duck_4": {
@@ -64,7 +64,7 @@
         "text": "*花屋の前を通りかかる。*"
     },
     "date_seo_flower_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…入ってみる？」"
     },
     "date_seo_succulent": {
@@ -72,11 +72,11 @@
         "text": "*ソヨンが小さな鉢植えを一つ選ぶ。多肉植物だ。*"
     },
     "date_seo_succulent_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「これは育てやすいよ。水をあげなくてもちゃんと生きるから。」"
     },
     "date_seo_succulent_3": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「育てられるなら。――育てられなかったら私が引き取るからね。」"
     },
     "date_seo_end": {
@@ -104,7 +104,7 @@
         "text": "*ユナが一瞬止まる。少しだけうつむく。*"
     },
     "date_yuna_pretty_high_2": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…それ。」"
     },
     "date_yuna_pretty_high_3": {
@@ -112,7 +112,7 @@
         "text": "「ん？」"
     },
     "date_yuna_pretty_high_4": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「もう一回言って。」"
     },
     "date_yuna_pretty_high_5": {
@@ -120,11 +120,11 @@
         "text": "*もう一回？――ユナが「もう一回」を求めてくる。*"
     },
     "date_yuna_pretty_low": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…そんなこと、初めて言われた。」"
     },
     "date_yuna_bright": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…別に明るくはないけど。」"
     },
     "date_yuna_bookstore": {
@@ -132,11 +132,11 @@
         "text": "*本屋に向かう。ユナが書棚の間をゆっくり歩く。*"
     },
     "date_yuna_bookstore_2": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「ここ、来たことある？」"
     },
     "date_yuna_bookstore_3": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…よかった。私が先に見せたってことだね。」"
     },
     "date_yuna_earphone": {
@@ -144,7 +144,7 @@
         "text": "*ユナがイヤホンを片方差し出す。*"
     },
     "date_yuna_earphone_2": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…聴いて。」"
     },
     "date_yuna_earphone_3": {
@@ -156,7 +156,7 @@
         "text": "*古本屋を通りかかる。ユナが足を止める。*"
     },
     "date_yuna_oldbook_2": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「この本、1年前に読んだ。あの時は結末が悲しかった。」"
     },
     "date_yuna_oldbook_3": {
@@ -164,7 +164,7 @@
         "text": "「今は？」"
     },
     "date_yuna_oldbook_4": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…今は違うふうに読める。」"
     },
     "date_yuna_end": {
@@ -176,7 +176,7 @@
         "text": "*体育館の前。ダインが走ってくる。キャップに運動着。*"
     },
     "date_dain_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「来た!! 遅れるところだったでしょ？！」"
     },
     "date_dain_3": {
@@ -184,7 +184,7 @@
         "text": "「10分前に来たんだけど。」"
     },
     "date_dain_4": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「私は20分前に来たんだからね!!」"
     },
     "date_dain_compliment_choice": {
@@ -200,7 +200,7 @@
         "text": "*ダインが止まる。目が大きくなる。――そしてキャップを深くかぶり直す。*"
     },
     "date_dain_pretty_high_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「きゅ――急に何？！」"
     },
     "date_dain_pretty_high_3": {
@@ -212,11 +212,11 @@
         "text": "*殴るって言ったけど、声が震えていた。*"
     },
     "date_dain_pretty_low": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「え？！急に何なの！！…あ、ありがと。」"
     },
     "date_dain_bright": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「当然でしょ!! 今日はコンディション最高なんだから!!」"
     },
     "date_dain_arcade": {
@@ -224,15 +224,15 @@
         "text": "*ゲーセンに行く。リズムゲームの前に立つ。*"
     },
     "date_dain_arcade_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「さあ、勝負だ!! 負けた方がジュース!!」"
     },
     "date_dain_arcade_3": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「賭けがないとつまんないじゃん!!」"
     },
     "date_dain_rhythm": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「フルコンボ!! 見た？！」"
     },
     "date_dain_rhythm_2": {
@@ -240,7 +240,7 @@
         "text": "「…すごいな。」"
     },
     "date_dain_rhythm_3": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「ｗｗｗ当然でしょ!! これは膝使わなくていいからね!!」"
     },
     "date_dain_knee": {
@@ -252,7 +252,7 @@
         "text": "*スポーツ用品店を通りかかる。ダインがショーウィンドウの前で止まる。バレーシューズが並んでいる。*"
     },
     "date_dain_shop": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "......"
     },
     "date_dain_shop_2": {
@@ -260,7 +260,7 @@
         "text": "ダイン？"
     },
     "date_dain_shop_3": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「なんでもない! 行こう!」"
     },
     "date_dain_end": {

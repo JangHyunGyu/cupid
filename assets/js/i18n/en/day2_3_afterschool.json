@@ -17,7 +17,7 @@
         "text": "*The gym. Dain is doing warm-ups in front of the volleyball net.*"
     },
     "after2_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "You came?! You're late!!"
     },
     "after2_dain_3": {
@@ -25,7 +25,7 @@
         "text": "I'm five minutes early."
     },
     "after2_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "I got here ten minutes early!!"
     },
     "after2_dain_5": {
@@ -33,7 +33,7 @@
         "text": "*That means you were early, not that I'm late.*"
     },
     "after2_dain_6": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Okay, here's the deal! Five serves — get three or more over the net and you win! If not, you're buying tteokbokki today!"
     },
     "after2_dain_7": {
@@ -41,7 +41,7 @@
         "text": "Tteokbokki out of nowhere?"
     },
     "after2_dain_8": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "I'm hungry!!"
     },
     "after2_dain_9": {
@@ -49,7 +49,7 @@
         "text": "*I serve. — Surprisingly, the second serve goes cleanly over the net.*"
     },
     "after2_dain_10": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Eyes widening* Huh? I was going to go easy on you, but I guess I can't.\n\n*Dain lowers her stance. Her eyes have changed.*\n\nHere I come for real!"
     },
     "after2_dain_11": {
@@ -57,7 +57,7 @@
         "text": "*The rally goes back and forth. Dain's movement is — clearly not ordinary. Fast, precise, muscle memory in motion.*\n\n*This girl is genuinely good. Not just 'likes sports' good — she moves like someone who once staked her life on it.*\n\n*Final score: 3 to 2. I barely won.*"
     },
     "after2_dain_12": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Aaaargh!! I lost!! — But you're pretty good?! I thought you said you don't play sports?!"
     },
     "after2_dain_13": {
@@ -65,7 +65,7 @@
         "text": "I never said I don't."
     },
     "after2_dain_14": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Genuinely shocked* What?! Was I tricked?!"
     },
     "after2_dain_15": {
@@ -73,7 +73,7 @@
         "text": "I didn't trick you — you just never asked."
     },
     "after2_dain_16": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Punching my shoulder* You fraud!! Hahaha — but that was fun!"
     },
     "after2_dain_end": {
@@ -85,7 +85,7 @@
         "text": "*The student council room. Seoyeon sits behind a pile of documents. Alone.*"
     },
     "after2_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "You actually came. — Honestly, I didn't think you would."
     },
     "after2_seo_3": {
@@ -93,7 +93,7 @@
         "text": "I show up when I'm called."
     },
     "after2_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*With a slight smile* How obedient."
     },
     "after2_seo_5": {
@@ -101,7 +101,7 @@
         "text": "You're the one who asked for help."
     },
     "after2_seo_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "I didn't ask — I gave you an opportunity."
     },
     "after2_seo_7": {
@@ -109,7 +109,7 @@
         "text": "*The word 'ask' seems to not exist in this person's vocabulary.*\n\n*I start sorting documents. Event budgets, club applications. There's quite a lot.*"
     },
     "after2_seo_8": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "These go by date, those by club. — Are you any good at organizing?\"\n\n\"{name}: Not great, but not bad either.\"\n\n\"That's vague.\"\n\n\"{name}: Kind of like your compliments. You're vague about those too.\"\n\n*Seoyeon looks up from the documents.*\n\n\"...You're surprisingly useful.\"\n\n\"{name}: Is that a compliment?\"\n\n\"It's a compliment. Take it."
     },
     "after2_seo_choice1": {
@@ -125,11 +125,11 @@
         "text": "*Seoyeon pauses for a moment. And then — she laughs. Not just her lips, but her eyes. A smile I've never seen before.*"
     },
     "after2_seo_sunset_react": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...You're the first person to say something that cheesy so naturally.\n\n*Her eyes smiled. — Not the practiced smile where only the corners of her mouth rise, but a real one. Lasting more than three seconds, not just half a second.*"
     },
     "after2_seo_neck_worry": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "I'm fine. This is an everyday thing."
     },
     "after2_seo_neck_react": {
@@ -153,7 +153,7 @@
         "text": "*Seoyeon sets the documents down and gazes out the window. The sunset light touches her face.*"
     },
     "after2_seo_stay_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...I like this time. When I'm alone in the student council room, I don't have to play any role."
     },
     "after2_seo_stay_3": {
@@ -177,7 +177,7 @@
         "text": "*I slip in quietly. Yuna is on the sofa, reading. The sunset is streaming through the window.*\n\n*Yuna looks up. She's not surprised.*"
     },
     "after2_yuna_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...You came."
     },
     "after2_yuna_4": {
@@ -185,7 +185,7 @@
         "text": "You didn't call me."
     },
     "after2_yuna_5": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Do I have to call you for you to come?"
     },
     "after2_yuna_6": {
@@ -197,7 +197,7 @@
         "text": "The door was open."
     },
     "after2_yuna_8": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...By coincidence.\n\n*A door open by coincidence. — Yuna's 'by coincidence' is synonymous with 'on purpose.'*\n\n*I sit beside her. Yuna hands me one of her earbuds.*\n\nListen.\n\n*A quiet piano piece begins to play. The sunset is painting the room.*"
     },
     "after2_yuna_9": {
@@ -205,7 +205,7 @@
         "text": "*Yuna reads her book, and I listen to the music. No words. — Not uncomfortable at all.*"
     },
     "after2_yuna_choice": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*After a long while* ...Someone who comes here after school.\n\n{name}: Hm?\n\nThere hasn't been one since that sunbae.\n\n*Yuna said two sentences. — For her, that's the same as 'thank you.'*",
         "choices": [
             "Should I come every day?",
@@ -217,11 +217,11 @@
         "text": "*Yuna fidgets with the earphone cord.*"
     },
     "after2_yuna_everyday_react": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Come if you want. I won't stop you.\n\n*'I won't stop you.' — In Yuna's language, that translates to 'please come.'*"
     },
     "after2_yuna_quiet": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...That's why I like it here."
     },
     "after2_yuna_quiet_react": {

@@ -14,7 +14,7 @@
     },
     "after3_seo_1": {
         "name": "Yo",
-        "text": "*Abrí la puerta de la sala del consejo. — 서연(Seoyeon) está desplomada sobre el escritorio.*"
+        "text": "*Abrí la puerta de la sala del consejo. — Seoyeon está desplomada sobre el escritorio.*"
     },
     "after3_seo_2": {
         "name": "Yo",
@@ -22,18 +22,18 @@
     },
     "after3_seo_3": {
         "name": "Yo",
-        "text": "*서연(Seoyeon) levanta la cabeza al oír a alguien. Sus ojos se ven cansados. El maquillaje está ligeramente corrido.*"
+        "text": "*Seoyeon levanta la cabeza al oír a alguien. Sus ojos se ven cansados. El maquillaje está ligeramente corrido.*"
     },
     "after3_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "......"
     },
     "after3_seo_5": {
         "name": "{name}",
-        "text": "¿서연(Seoyeon)?"
+        "text": "¿Seoyeon?"
     },
     "after3_seo_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...¿Viste?"
     },
     "after3_seo_7": {
@@ -41,15 +41,15 @@
         "text": "¿Ver qué?"
     },
     "after3_seo_8": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Esta faceta mía. — Es un secreto."
     },
     "after3_seo_9": {
         "name": "Yo",
-        "text": "*서연(Seoyeon) corrige su postura. Pero — su sonrisa perfecta habitual no regresa.*"
+        "text": "*Seoyeon corrige su postura. Pero — su sonrisa perfecta habitual no regresa.*"
     },
     "after3_seo_choice": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "La próxima vez que te pida un favor, tienes que aceptar. Sin preguntas. — Consíeralo el precio.",
         "choices": [
             "No tienes que ser perfecta, ¿sabes?",
@@ -61,7 +61,7 @@
         "text": "*Seoyeon se detiene un instante. Deja los palillos. Despacio.*"
     },
     "after3_seo_choice1_react": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Esas palabras. No deberías decirlas tan a la ligera."
     },
     "after3_seo_choice2": {
@@ -74,15 +74,15 @@
     },
     "after3_yuna_1": {
         "name": "Yo",
-        "text": "*El anexo de la biblioteca. El rincón secreto de lectura de 유나(Yuna). — La puerta está abierta.*"
+        "text": "*El anexo de la biblioteca. El rincón secreto de lectura de Yuna. — La puerta está abierta.*"
     },
     "after3_yuna_2": {
         "name": "Yo",
-        "text": "*Entro, pero 유나(Yuna) no está. En cambio — hay un cuaderno abierto sobre el sofá. Lleno de escritura a mano.*"
+        "text": "*Entro, pero Yuna no está. En cambio — hay un cuaderno abierto sobre el sofá. Lleno de escritura a mano.*"
     },
     "after3_yuna_3": {
         "name": "Yo",
-        "text": "*Es una novela. Una novela que escribió 유나(Yuna). — ¿Puedo leerla?*"
+        "text": "*Es una novela. Una novela que escribió Yuna. — ¿Puedo leerla?*"
     },
     "after3_yuna_4": {
         "name": "Yo",
@@ -93,20 +93,20 @@
         "text": "*‘Un día, llegó un estudiante transferido. Vino a la biblioteca y se sentó a mi lado sin decir nada. — No me molestó.’*"
     },
     "after3_yuna_6": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "¿Qué haces?"
     },
     "after3_yuna_7": {
         "name": "Yo",
-        "text": "*La voz de 유나(Yuna) desde atrás. Me doy la vuelta y está de pie con dos bebidas. — Se queda helada al ver que estoy mirando el cuaderno.*"
+        "text": "*La voz de Yuna desde atrás. Me doy la vuelta y está de pie con dos bebidas. — Se queda helada al ver que estoy mirando el cuaderno.*"
     },
     "after3_yuna_8": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Eso."
     },
     "after3_yuna_9": {
         "name": "Yo",
-        "text": "*Sus orejas. Rojas. — Es la primera vez que veo a 유나(Yuna) sonrojarse.*"
+        "text": "*Sus orejas. Rojas. — Es la primera vez que veo a Yuna sonrojarse.*"
     },
     "after3_yuna_choice": {
         "name": "{name}",
@@ -117,7 +117,7 @@
         ]
     },
     "after3_yuna_choice1": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...No hay nombre de protagonista."
     },
     "after3_yuna_choice1_2": {
@@ -125,7 +125,7 @@
         "text": "‘Un estudiante transferido vino a la biblioteca’ ¿es solo una coincidencia?"
     },
     "after3_yuna_choice1_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Las novelas son. Ficción."
     },
     "after3_yuna_choice1_react": {
@@ -134,27 +134,27 @@
     },
     "after3_yuna_choice2": {
         "name": "Yo",
-        "text": "*유나(Yuna) se detiene. Mira el cuaderno hacia abajo.*"
+        "text": "*Yuna se detiene. Mira el cuaderno hacia abajo.*"
     },
     "after3_yuna_choice2_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Aún no he decidido el final."
     },
     "after3_yuna_choice2_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Porque si escribo el final, se acaba."
     },
     "after3_yuna_choice2_react": {
         "name": "Yo",
-        "text": "*유나(Yuna) dijo más de dos frases seguidas. — Para ella, eso es prueba de emoción.*"
+        "text": "*Yuna dijo más de dos frases seguidas. — Para ella, eso es prueba de emoción.*"
     },
     "after3_yuna_end": {
         "name": "Yo",
-        "text": "*유나(Yuna) abraza el cuaderno contra su pecho.*"
+        "text": "*Yuna abraza el cuaderno contra su pecho.*"
     },
     "after3_dain_1": {
         "name": "Yo",
-        "text": "*El gimnasio. 다인(Dain) está estirando sola. Intenta trotar un poco y —*"
+        "text": "*El gimnasio. Dain está estirando sola. Intenta trotar un poco y —*"
     },
     "after3_dain_2": {
         "name": "Yo",
@@ -162,10 +162,10 @@
     },
     "after3_dain_3": {
         "name": "{name}",
-        "text": "¡다인(Dain)!"
+        "text": "¡Dain!"
     },
     "after3_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "¡Ah! ¡¡Estoy bien!! ¡¡Solo me torcí un poco!!"
     },
     "after3_dain_5": {
@@ -178,7 +178,7 @@
     },
     "after3_dain_choice": {
         "name": "Yo",
-        "text": "*다인(Dain) se sienta en el banco. Se frota la rodilla.*",
+        "text": "*Dain se sienta en el banco. Se frota la rodilla.*",
         "choices": [
             "Sentarme a su lado y esperar en silencio",
             "¿Tienes parches? Voy a buscarlos"
@@ -186,10 +186,10 @@
     },
     "after3_dain_choice1": {
         "name": "Yo",
-        "text": "*Me siento a su lado sin decir nada. 다인(Dain) me echa un vistazo.*"
+        "text": "*Me siento a su lado sin decir nada. Dain me echa un vistazo.*"
     },
     "after3_dain_choice1_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "...¿Por qué no preguntas?"
     },
     "after3_dain_choice1_3": {
@@ -198,51 +198,51 @@
     },
     "after3_dain_choice1_react": {
         "name": "Yo",
-        "text": "*다인(Dain) se queda inmóvil. — Luego sonríe suavemente. Una sonrisa sin exclamaciones.*"
+        "text": "*Dain se queda inmóvil. — Luego sonríe suavemente. Una sonrisa sin exclamaciones.*"
     },
     "after3_dain_choice1_react2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "...Sí. Habría dicho que estoy bien."
     },
     "after3_dain_choice1_react3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Gracias. Por no preguntar nada."
     },
     "after3_dain_choice2": {
         "name": "Yo",
-        "text": "*Una 다인(Dain) callada. — Creo que siento su verdadera temperatura por primera vez.*"
+        "text": "*Una Dain callada. — Creo que siento su verdadera temperatura por primera vez.*"
     },
     "after3_dain_end": {
         "name": "Yo",
-        "text": "*다인(Dain) me da un puñetazo suave en el hombro. — Más débil que ayer.*"
+        "text": "*Dain me da un puñetazo suave en el hombro. — Más débil que ayer.*"
     },
     "after3_confront_1": {
         "name": "Yo",
-        "text": "*Al salir del lugar de después de clases — 서연(Seoyeon) está esperando en el pasillo. Con los brazos cruzados. Sin su calma habitual.*"
+        "text": "*Al salir del lugar de después de clases — Seoyeon está esperando en el pasillo. Con los brazos cruzados. Sin su calma habitual.*"
     },
     "after3_confront_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "{name}. Espera."
     },
     "after3_confront_3": {
         "name": "Yo",
-        "text": "*서연(Seoyeon) me lleva al final del pasillo. Donde no hay nadie.*"
+        "text": "*Seoyeon me lleva al final del pasillo. Donde no hay nadie.*"
     },
     "after3_confront_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Sobre lo del almuerzo."
     },
     "after3_confront_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Cuando les sonríes a las demás, algo dentro de mí se derrumba."
     },
     "after3_confront_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Sé honesto. ¿Les prometiste el fin de semana a todas?"
     },
     "after3_confront_choice": {
         "name": "Yo",
-        "text": "*서연(Seoyeon) me mira directamente. No con los ojos de una presidenta estudiantil. Con los ojos de una persona.*",
+        "text": "*Seoyeon me mira directamente. No con los ojos de una presidenta estudiantil. Con los ojos de una persona.*",
         "choices": [
             "Admitirlo honestamente",
             "Los horarios son diferentes, así que pensé que estaría bien",
@@ -250,23 +250,23 @@
         ]
     },
     "after3_confront_admit": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Porque no pudiste rechazar."
     },
     "after3_confront_admit_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Eso es lo más cruel que puedes decir, {name}. La amabilidad de no saber rechazar — da falsas esperanzas."
     },
     "after3_confront_admit_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "No quiero ser una opción entre varias."
     },
     "after3_confront_admit_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "O la única respuesta, o nada. — No puedo con las medias tintas."
     },
     "after3_confront_admit_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Hoy no voy a dejar la azotea abierta."
     },
     "after3_confront_admit_6": {
@@ -274,15 +274,15 @@
         "text": "*Su espalda está recta. Perfectamente. — Pero tiene los puños cerrados. Los nudillos blancos.*"
     },
     "after3_confront_excuse": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...¿No ves que ese es el problema?"
     },
     "after3_confront_excuse_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "No es la cantidad de promesas. Es el peso de cada una."
     },
     "after3_confront_lie": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...¿De verdad? Eso... ¿puedo creértelo?"
     },
     "after3_confront_lie_2": {
@@ -291,35 +291,35 @@
     },
     "after3_confront_yuna_enter": {
         "name": "Yo",
-        "text": "*Después de que 서연(Seoyeon) se va — 유나(Yuna) está de pie al final del pasillo. No sé cuánto tiempo lleva ahí.*"
+        "text": "*Después de que Seoyeon se va — Yuna está de pie al final del pasillo. No sé cuánto tiempo lleva ahí.*"
     },
     "after3_confront_yuna_1": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Lo escuché todo."
     },
     "after3_confront_yuna_2": {
         "name": "{name}",
-        "text": "유나(Yuna)..."
+        "text": "Yuna..."
     },
     "after3_confront_yuna_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "No quiero una disculpa."
     },
     "after3_confront_yuna_4": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Solo quiero que entiendas el peso de elegir al lado de quién estarás."
     },
     "after3_confront_yuna_5": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Mañana no huyas. Hazíte responsable de las esperanzas que creaste."
     },
     "after3_confront_yuna_6": {
         "name": "Yo",
-        "text": "*유나(Yuna) habló en frases largas. Varias frases. — Eso significa que está así de enfadada.*"
+        "text": "*Yuna habló en frases largas. Varias frases. — Eso significa que está así de enfadada.*"
     },
     "after3_confront_end": {
         "name": "Yo",
-        "text": "*유나(Yuna) se da la vuelta. — No se detiene.*"
+        "text": "*Yuna se da la vuelta. — No se detiene.*"
     },
     "after3_final": {
         "name": "Yo",

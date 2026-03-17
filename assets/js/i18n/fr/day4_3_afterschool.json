@@ -4,7 +4,7 @@
         "text": "*Le rendez-vous touche à sa fin. Seoyeon se dirige vers l'école.*"
     },
     "confess_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Il y a un dernier endroit que je veux te montrer."
     },
     "confess_seo_3": {
@@ -60,15 +60,15 @@
         "text": "*Seoyeon ne dit rien. Ses lèvres tremblent. Pas la présidente du conseil -- juste une fille, debout là.*"
     },
     "confess_seo_yes_9": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Moi aussi."
     },
     "confess_seo_yes_10": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Depuis le début. C'était toi depuis le début."
     },
     "confess_seo_yes_11": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "-- Tu n'imagines pas à quel point je me suis retenue pour ne pas le dire."
     },
     "confess_seo_yes_12": {
@@ -88,7 +88,7 @@
         "text": "*Seoyeon sourit. Un sourire répété. -- Elle se retourne et marche. Au troisième pas, elle s'arrête.*"
     },
     "confess_seo_no_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...La prochaine fois que tu viens ici, prépare autre chose à dire."
     },
     "confess_yuna_1": {
@@ -96,7 +96,7 @@
         "text": "*Le rendez-vous touche à sa fin. Yuna s'arrête.*"
     },
     "confess_yuna_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Il y a un dernier endroit où aller."
     },
     "confess_yuna_3": {
@@ -152,7 +152,7 @@
         "text": "*L'expression impassible de Yuna se fissure. Sa voix nonchalante disparaît, remplacée par la plus petite -- presque inaudible -- voix. Elle serre sa manche.*"
     },
     "confess_yuna_yes_9": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Ne pars pas. Cette fois, ne pars pas."
     },
     "confess_yuna_no_1": {
@@ -168,7 +168,7 @@
         "text": "*Yuna prend un livre. Elle regarde la couverture, mais elle ne lit pas.*"
     },
     "confess_yuna_no_4": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...La fin n'est pas encore arrivée."
     },
     "confess_dain_1": {
@@ -176,7 +176,7 @@
         "text": "*Le rendez-vous touche à sa fin. Dain court vers l'école.*"
     },
     "confess_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Dernier endroit !! On y va !!"
     },
     "confess_dain_3": {
@@ -232,11 +232,11 @@
         "text": "*Dain est figée. Son énergie a disparu. -- Puis ses yeux se remplissent lentement. Elle couvre son visage de ses deux mains. Entre ses doigts, des joues rouges apparaissent.*"
     },
     "confess_dain_yes_9": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "...Attends. Mon cœur -- je vais pleurer -- pourquoi je pleure, je suis contente --"
     },
     "confess_dain_yes_10": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Moi aussi je t'aime. Énormément."
     },
     "confess_dain_no_1": {
@@ -252,7 +252,7 @@
         "text": "*Dain fait rebondir un ballon de volley. Une fois. Deux fois. -- À la troisième, elle s'arrête.*"
     },
     "confess_dain_no_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "...La prochaine fois, ne fuis pas."
     }
 }

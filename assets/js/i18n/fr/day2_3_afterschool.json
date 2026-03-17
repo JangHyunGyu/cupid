@@ -17,7 +17,7 @@
         "text": "*Le gymnase. Dain fait des echauffements devant le filet de volley.*"
     },
     "after2_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "T'es la ?! T'es en retard !!"
     },
     "after2_dain_3": {
@@ -25,7 +25,7 @@
         "text": "J'ai cinq minutes d'avance."
     },
     "after2_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Moi j'avais dix minutes d'avance !!"
     },
     "after2_dain_5": {
@@ -33,7 +33,7 @@
         "text": "*Ca veut dire que t'etais en avance, pas que je suis en retard.*"
     },
     "after2_dain_6": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Bon, le defi ! Cinq services -- si t'en passes trois ou plus, tu gagnes ! Sinon, le tteokbokki d'aujourd'hui c'est pour toi !"
     },
     "after2_dain_7": {
@@ -41,7 +41,7 @@
         "text": "Du tteokbokki sorti de nulle part ?"
     },
     "after2_dain_8": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "J'ai faim !!"
     },
     "after2_dain_9": {
@@ -49,7 +49,7 @@
         "text": "*Je sers. -- Etonnamment, le deuxieme service passe proprement au-dessus du filet.*"
     },
     "after2_dain_10": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Les yeux ecarquilles* Hein ? J'allais aller doucement, mais finalement non.\n\n*Dain baisse sa position. Ses yeux ont change.*\n\nLa je donne tout !"
     },
     "after2_dain_11": {
@@ -57,7 +57,7 @@
         "text": "*Les echanges se prolongent. Le mouvement de Dain est -- clairement au-dessus de la moyenne. Rapide, precis, de la memoire musculaire en action.*\n\n*Cette fille est vraiment douee. Pas juste 'aime le sport' -- elle bouge comme quelqu'un qui y a un jour mis sa vie en jeu.*\n\n*Score final : 3 a 2. J'ai gagne de justesse.*"
     },
     "after2_dain_12": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Aaaargh !! J'ai perdu !! -- Mais t'es pas mal ?! Tu disais que tu faisais pas de sport ?!"
     },
     "after2_dain_13": {
@@ -65,7 +65,7 @@
         "text": "J'ai jamais dit ca."
     },
     "after2_dain_14": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Vraiment choquee* Quoi ?! Tu m'as trompee ?!"
     },
     "after2_dain_15": {
@@ -73,7 +73,7 @@
         "text": "Je t'ai pas trompee -- t'as juste jamais demande."
     },
     "after2_dain_16": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*En me donnant un coup de poing dans l'epaule* Quel escroc !! Hahaha -- mais c'etait marrant !"
     },
     "after2_dain_end": {
@@ -85,7 +85,7 @@
         "text": "*La salle du conseil des eleves. Seoyeon est assise derriere une pile de documents. Seule.*"
     },
     "after2_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "T'es vraiment venu. -- Honnetement, je pensais pas que tu viendrais."
     },
     "after2_seo_3": {
@@ -93,7 +93,7 @@
         "text": "Quand on m'appelle, je viens."
     },
     "after2_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*Avec un leger sourire* Obeissant."
     },
     "after2_seo_5": {
@@ -101,7 +101,7 @@
         "text": "C'est toi qui as demande de l'aide."
     },
     "after2_seo_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "J'ai pas demande -- je t'ai donne une opportunite."
     },
     "after2_seo_7": {
@@ -109,7 +109,7 @@
         "text": "*Le mot 'demander' ne semble pas exister dans le vocabulaire de cette personne.*\n\n*Je commence a trier les documents. Budgets evenements, demandes de clubs. Y en a pas mal.*"
     },
     "after2_seo_8": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Ceux-ci par date, ceux-la par club. -- T'es doue pour ranger ?\"\n\n\"{name} : Pas genial, mais pas nul non plus.\"\n\n\"Vague.\"\n\n\"{name} : Comme tes compliments. T'es vague la-dessus aussi.\"\n\n*Seoyeon leve les yeux des documents.*\n\n\"...T'es etonnamment utile.\"\n\n\"{name} : C'est un compliment ?\"\n\n\"C'est un compliment. Prends-le."
     },
     "after2_seo_choice1": {
@@ -125,11 +125,11 @@
         "text": "*Seoyeon marque une pause. Et puis -- elle rit. Pas juste ses levres, mais ses yeux. Un sourire que je n'avais jamais vu.*"
     },
     "after2_seo_sunset_react": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...T'es la premiere personne a dire un truc aussi ringard aussi naturellement.\n\n*Ses yeux ont souri. -- Pas le sourire travaille ou seules les commissures se levent, mais un vrai. Qui a dure plus de trois secondes, pas juste une demi-seconde.*"
     },
     "after2_seo_neck_worry": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Ca va. C'est quotidien."
     },
     "after2_seo_neck_react": {
@@ -153,7 +153,7 @@
         "text": "*Seoyeon pose les documents et regarde par la fenetre. La lumiere du couchant touche son visage.*"
     },
     "after2_seo_stay_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...J'aime ce moment. Quand je suis seule dans la salle du conseil, je n'ai aucun role a jouer."
     },
     "after2_seo_stay_3": {
@@ -177,7 +177,7 @@
         "text": "*J'entre discretement. Yuna est sur le canape, en train de lire. Le soleil couchant entre par la fenetre.*\n\n*Yuna leve les yeux. Elle n'est pas surprise.*"
     },
     "after2_yuna_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...T'es venu."
     },
     "after2_yuna_4": {
@@ -185,7 +185,7 @@
         "text": "Tu m'as pas appele."
     },
     "after2_yuna_5": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Faut que je t'appelle pour que tu viennes ?"
     },
     "after2_yuna_6": {
@@ -197,7 +197,7 @@
         "text": "La porte etait ouverte."
     },
     "after2_yuna_8": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Par hasard.\n\n*Une porte ouverte par hasard. -- Le 'par hasard' de Yuna est synonyme de 'expres'.*\n\n*Je m'assois a cote d'elle. Yuna me tend un de ses ecouteurs.*\n\nEcoute.\n\n*Un morceau de piano tranquille commence. Le couchant peint la piece.*"
     },
     "after2_yuna_9": {
@@ -205,7 +205,7 @@
         "text": "*Yuna lit son livre, et j'ecoute la musique. Aucun mot. -- Pas du tout inconfortable.*"
     },
     "after2_yuna_choice": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*Apres un long moment* ...Quelqu'un qui vient ici apres les cours.\n\n{name} : Hm ?\n\nY en a pas eu depuis ce sunbae.\n\n*Yuna a dit deux phrases. -- Pour elle, c'est l'equivalent de 'merci'.*",
         "choices": [
             "Je devrais venir tous les jours ?",
@@ -217,11 +217,11 @@
         "text": "*Yuna tripote le fil de l'ecouteur.*"
     },
     "after2_yuna_everyday_react": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Viens si tu veux. Je t'en empecherai pas.\n\n*'Je t'en empecherai pas.' -- Dans le langage de Yuna, ca se traduit par 's'il te plait viens'.*"
     },
     "after2_yuna_quiet": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...C'est pour ca que j'aime cet endroit."
     },
     "after2_yuna_quiet_react": {

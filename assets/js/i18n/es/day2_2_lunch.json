@@ -25,7 +25,7 @@
         "text": "*Subo las escaleras y encuentro a Yuna al final del pasillo. Esta apoyada contra la pared, leyendo un libro.*"
     },
     "lunch2_yuna_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Viniste."
     },
     "lunch2_yuna_4": {
@@ -33,7 +33,7 @@
         "text": "Recibi tu nota."
     },
     "lunch2_yuna_5": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Podrias no haber venido."
     },
     "lunch2_yuna_6": {
@@ -41,7 +41,7 @@
         "text": "Por que?"
     },
     "lunch2_yuna_7": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Parece que te estas llevando bien con la ruidosa. Eso es mas divertido, no?"
     },
     "lunch2_yuna_8": {
@@ -53,7 +53,7 @@
         "text": "*Los labios de Yuna se curvan hacia arriba muy ligeramente. Apenas perceptible.*"
     },
     "lunch2_yuna_10": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Bien."
     },
     "lunch2_yuna_11": {
@@ -69,7 +69,7 @@
         "text": "Que es este lugar? Una sala de lectura secreta?"
     },
     "lunch2_yuna_14": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Casi nadie sabe de este lugar."
     },
     "lunch2_yuna_15": {
@@ -77,7 +77,7 @@
         "text": "*Yuna se sienta en el sofa. Deja el espacio a su lado libre con disimulo.*"
     },
     "lunch2_yuna_16": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Habia una persona mas aqui."
     },
     "lunch2_yuna_17": {
@@ -93,7 +93,7 @@
         ]
     },
     "lunch2_yuna_c1_1": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Se fue. Hace un ano."
     },
     "lunch2_yuna_c1_2": {
@@ -101,7 +101,7 @@
         "text": "*La voz de Yuna bajo un tono.*"
     },
     "lunch2_yuna_c1_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Sin decir nada."
     },
     "lunch2_yuna_c1_4": {
@@ -113,7 +113,7 @@
         "text": "No se comunico?"
     },
     "lunch2_yuna_c1_6": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...No lo se. Si no quiso, o no pudo."
     },
     "lunch2_yuna_c1_7": {
@@ -129,7 +129,7 @@
         "text": "Ese sunbae, quiza simplemente se graduo? Los mayores siempre pierden el contacto."
     },
     "lunch2_yuna_c1_10": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Fue un traslado."
     },
     "lunch2_yuna_c1_11": {
@@ -157,7 +157,7 @@
         "text": "*Saca un libro de su pila y lo pone a mi lado.*"
     },
     "lunch2_yuna_c2_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Lee."
     },
     "lunch2_yuna_c2_4": {
@@ -169,7 +169,7 @@
         "text": "*Leemos lado a lado en silencio. La luz del sol a traves de la ventana es calida.*"
     },
     "lunch2_yuna_c2_6": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...La razon por la que me gusta este lugar."
     },
     "lunch2_yuna_c2_7": {
@@ -177,7 +177,7 @@
         "text": "Hm?"
     },
     "lunch2_yuna_c2_8": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Es tranquilo. -- Pero no estoy sola."
     },
     "lunch2_yuna_c2_9": {
@@ -193,7 +193,7 @@
         "text": "*La azotea. El mismo lugar que ayer. Seoyeon esta desplegando su fiambrera.*"
     },
     "lunch2_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Volviste. Te gusto, eh?"
     },
     "lunch2_seo_3": {
@@ -201,7 +201,7 @@
         "text": "La comida estaba buena."
     },
     "lunch2_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Es por la comida?"
     },
     "lunch2_seo_5": {
@@ -209,7 +209,7 @@
         "text": "La brisa tambien esta bien."
     },
     "lunch2_seo_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...La brisa."
     },
     "lunch2_seo_7": {
@@ -221,15 +221,15 @@
         "text": "*Mientras comemos -- la puerta de la azotea se abre. Dain ha subido.*"
     },
     "lunch2_seo_9": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Oh! Aqui estaban?! Los encontre!"
     },
     "lunch2_seo_10": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...La azotea requiere permiso."
     },
     "lunch2_seo_11": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ay, quien necesita permiso para comer! -- Oh, una fiambrera! Se ve deliciosa!"
     },
     "lunch2_seo_12": {
@@ -237,11 +237,11 @@
         "text": "*Dain se sienta sin dudarlo. El ceno de Seoyeon se frunce muy ligeramente.*"
     },
     "lunch2_seo_13": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Nos conocimos ayer! Es una chica genial, Seoyeon sunbae!"
     },
     "lunch2_seo_14": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Una chica genial."
     },
     "lunch2_seo_15": {
@@ -249,11 +249,11 @@
         "text": "Solo nos conocemos."
     },
     "lunch2_seo_16": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Por que, te molesta?"
     },
     "lunch2_seo_17": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Que?! Quien se molesta por que?!"
     },
     "lunch2_seo_18": {
@@ -265,7 +265,7 @@
         "text": "*Seoyeon mira casualmente los labios de {name}.*"
     },
     "lunch2_seo_20": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Tienes algo en el labio. No te muevas."
     },
     "lunch2_seo_choice": {
@@ -281,15 +281,15 @@
         "text": "*El dedo de Seoyeon roza la comisura de mis labios. Suavemente. Despacio. -- Mas despacio de lo necesario.*"
     },
     "lunch2_seo_c1_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Listo."
     },
     "lunch2_seo_c1_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Que acabo de ver?!"
     },
     "lunch2_seo_c1_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Era un grano de arroz."
     },
     "lunch2_seo_c1_5": {
@@ -301,7 +301,7 @@
         "text": "*Me limpio la boca con el dorso de la mano.*"
     },
     "lunch2_seo_c2_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Si te lo limpias tu, solo lo vas a esparcir."
     },
     "lunch2_seo_c2_3": {
@@ -317,7 +317,7 @@
         "text": "*A la tienda de la escuela con Dain. Revancha del piedra-papel-tijeras de ayer.*"
     },
     "lunch2_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hoy pierdes!! Preparate!!"
     },
     "lunch2_dain_3": {
@@ -325,7 +325,7 @@
         "text": "Dijiste lo mismo ayer."
     },
     "lunch2_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ayer fue solo un calentamiento!!"
     },
     "lunch2_dain_5": {
@@ -333,7 +333,7 @@
         "text": "*Piedra-papel-tijeras. -- Dain pierde otra vez.*"
     },
     "lunch2_dain_6": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "...Esto esta amanado?!"
     },
     "lunch2_dain_7": {
@@ -341,7 +341,7 @@
         "text": "Como se amana un piedra-papel-tijeras?"
     },
     "lunch2_dain_8": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ugh... Dos panes de soboro, por favor..."
     },
     "lunch2_dain_9": {
@@ -353,7 +353,7 @@
         "text": "*Seoyeon mira hacia aca. Me observa sentado junto a Dain comiendo pan durante medio segundo -- y sigue de largo.*"
     },
     "lunch2_dain_11": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Oye, que le pasa a la presidenta? Por que nos mira asi?"
     },
     "lunch2_dain_12": {
@@ -361,7 +361,7 @@
         "text": "Ni idea."
     },
     "lunch2_dain_13": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hmm... eres cercano a la presidenta tambien?"
     },
     "lunch2_dain_choice": {
@@ -382,7 +382,7 @@
         "text": "*Dain asiente y muerde su pan de soboro. Actuando como si no le importara.*"
     },
     "lunch2_dain_c3_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Mo-Molestarme?! Para nada!"
     },
     "lunch2_dain_c3_2": {

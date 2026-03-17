@@ -17,7 +17,7 @@
         "text": "*Die Turnhalle. Dain macht Aufwaermuebungen vor dem Volleyballnetz.*"
     },
     "after2_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Du bist da?! Du bist spaet!!"
     },
     "after2_dain_3": {
@@ -25,7 +25,7 @@
         "text": "Ich bin fuenf Minuten frueh dran."
     },
     "after2_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ich war zehn Minuten frueh dran!!"
     },
     "after2_dain_5": {
@@ -33,7 +33,7 @@
         "text": "*Das heisst, du warst frueh dran, nicht dass ich spaet bin.*"
     },
     "after2_dain_6": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Also, die Wette! Fuenf Aufschlaege -- schaffst du drei oder mehr uebers Netz, gewinnst du! Wenn nicht, zahlst du heute Tteokbokki!"
     },
     "after2_dain_7": {
@@ -41,7 +41,7 @@
         "text": "Tteokbokki aus dem Nichts?"
     },
     "after2_dain_8": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ich hab Hunger!!"
     },
     "after2_dain_9": {
@@ -49,7 +49,7 @@
         "text": "*Ich schlage auf. -- Ueberraschenderweise geht der zweite Aufschlag sauber uebers Netz.*"
     },
     "after2_dain_10": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Mit grossen Augen* Huh? Ich wollte eigentlich locker spielen, aber das geht wohl nicht.\n\n*Dain geht in die Hocke. Ihre Augen haben sich veraendert.*\n\nJetzt geb ich alles!"
     },
     "after2_dain_11": {
@@ -57,7 +57,7 @@
         "text": "*Der Ballwechsel geht hin und her. Dains Bewegung ist -- eindeutig nicht gewoehnlich. Schnell, praezise, Muskelgedaechtnis in Aktion.*\n\n*Dieses Maedchen ist wirklich gut. Nicht nur 'mag Sport' gut -- sie bewegt sich wie jemand, der einmal alles darauf gesetzt hat.*\n\n*Endstand: 3 zu 2. Ich hab knapp gewonnen.*"
     },
     "after2_dain_12": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Aaaargh!! Verloren!! -- Aber du bist ganz gut?! Ich dachte du machst keinen Sport?!"
     },
     "after2_dain_13": {
@@ -65,7 +65,7 @@
         "text": "Hab ich nie gesagt."
     },
     "after2_dain_14": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Ehrlich ueberrascht* Was?! Wurde ich reingelegt?!"
     },
     "after2_dain_15": {
@@ -73,7 +73,7 @@
         "text": "Ich hab dich nicht reingelegt -- du hast einfach nie gefragt."
     },
     "after2_dain_16": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Boxt mir in die Schulter* Du Betrueger!! Hahaha -- aber das hat Spass gemacht!"
     },
     "after2_dain_end": {
@@ -85,7 +85,7 @@
         "text": "*Die Schuelerratskammer. Seoyeon sitzt hinter einem Stapel Dokumente. Allein.*"
     },
     "after2_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Du bist wirklich gekommen. -- Ehrlich gesagt, hab ich nicht damit gerechnet."
     },
     "after2_seo_3": {
@@ -93,7 +93,7 @@
         "text": "Wenn man mich ruft, komme ich."
     },
     "after2_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*Mit einem leichten Laecheln* Folgsam."
     },
     "after2_seo_5": {
@@ -101,7 +101,7 @@
         "text": "Du warst diejenige, die um Hilfe gebeten hat."
     },
     "after2_seo_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Ich hab nicht gebeten -- ich hab dir eine Gelegenheit gegeben."
     },
     "after2_seo_7": {
@@ -109,7 +109,7 @@
         "text": "*Das Wort 'bitten' scheint im Vokabular dieser Person nicht zu existieren.*\n\n*Ich fange an, Dokumente zu sortieren. Veranstaltungsbudgets, Vereinsantraege. Es ist ziemlich viel.*"
     },
     "after2_seo_8": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Die hier nach Datum, die da nach Verein. -- Kannst du gut organisieren?\"\n\n\"{name}: Nicht super, aber auch nicht schlecht.\"\n\n\"Vage.\"\n\n\"{name}: Wie deine Komplimente. Die sind auch vage.\"\n\n*Seoyeon schaut von den Dokumenten hoch.*\n\n\"...Du bist ueberraschend nuetzlich.\"\n\n\"{name}: Ist das ein Kompliment?\"\n\n\"Ist ein Kompliment. Nimm's an."
     },
     "after2_seo_choice1": {
@@ -125,11 +125,11 @@
         "text": "*Seoyeon haelt einen Moment inne. Und dann -- lacht sie. Nicht nur die Lippen, sondern die Augen. Ein Laecheln, das ich noch nie gesehen habe.*"
     },
     "after2_seo_sunset_react": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Du bist der erste Mensch, der so etwas Kitschiges so natuerlich sagt.\n\n*Ihre Augen laechelten. -- Nicht das eingeuebt Laecheln, bei dem sich nur die Mundwinkel heben, sondern ein echtes. Das laenger als drei Sekunden dauerte, nicht nur eine halbe.*"
     },
     "after2_seo_neck_worry": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Geht schon. Das ist alltaeglich."
     },
     "after2_seo_neck_react": {
@@ -153,7 +153,7 @@
         "text": "*Seoyeon legt die Dokumente ab und schaut aus dem Fenster. Das Licht des Sonnenuntergangs beruehrt ihr Gesicht.*"
     },
     "after2_seo_stay_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Ich mag diese Zeit. Wenn ich allein in der Schuelerratskammer bin, muss ich keine Rolle spielen."
     },
     "after2_seo_stay_3": {
@@ -177,7 +177,7 @@
         "text": "*Ich schleiche mich rein. Yuna sitzt auf dem Sofa und liest. Der Sonnenuntergang stroemt durchs Fenster.*\n\n*Yuna schaut hoch. Sie ist nicht ueberrascht.*"
     },
     "after2_yuna_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Du bist gekommen."
     },
     "after2_yuna_4": {
@@ -185,7 +185,7 @@
         "text": "Du hast mich nicht gerufen."
     },
     "after2_yuna_5": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Muss ich dich rufen, damit du kommst?"
     },
     "after2_yuna_6": {
@@ -197,7 +197,7 @@
         "text": "Die Tuer war offen."
     },
     "after2_yuna_8": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Zufaellig.\n\n*Eine zufaellig offene Tuer. -- Yunas 'zufaellig' ist gleichbedeutend mit 'absichtlich'.*\n\n*Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrhoerer.*\n\nHoer zu.\n\n*Ein ruhiges Klavierstueck ertönt. Der Sonnenuntergang faerbt den Raum.*"
     },
     "after2_yuna_9": {
@@ -205,7 +205,7 @@
         "text": "*Yuna liest ihr Buch, und ich hoere die Musik. Keine Worte. -- Ueberhaupt nicht unangenehm.*"
     },
     "after2_yuna_choice": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*Nach einer langen Weile* ...Jemand, der nach der Schule hierher kommt.\n\n{name}: Hm?\n\nGab's seit diesem Sunbae nicht mehr.\n\n*Yuna hat zwei Saetze gesagt. -- Fuer sie ist das dasselbe wie 'danke'.*",
         "choices": [
             "Soll ich jeden Tag kommen?",
@@ -217,11 +217,11 @@
         "text": "*Yuna spielt mit dem Ohrhoererkabel.*"
     },
     "after2_yuna_everyday_react": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Komm, wenn du willst. Ich halt dich nicht auf.\n\n*'Ich halt dich nicht auf.' -- In Yunas Sprache uebersetzt heisst das 'bitte komm'.*"
     },
     "after2_yuna_quiet": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Deshalb mag ich diesen Ort."
     },
     "after2_yuna_quiet_react": {

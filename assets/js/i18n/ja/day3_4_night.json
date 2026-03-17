@@ -12,11 +12,11 @@
         "text": "*メッセージが来ている。*"
     },
     "night3_faithful_msg_seo_1": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "今日見たの、秘密だよ"
     },
     "night3_faithful_msg_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "...でもまた来てもいいよ"
     },
     "night3_faithful_msg_seo_3": {
@@ -25,18 +25,18 @@
     },
     "night3_faithful_msg_yuna_1": {
         "name": "僕",
-        "text": "*유나(Yuna)がメモの写真を送ってきた。ノートに書かれた一行。*"
+        "text": "*ユナがメモの写真を送ってきた。ノートに書かれた一行。*"
     },
     "night3_faithful_msg_yuna_2": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "あの小説、結末はまだ決めてない"
     },
     "night3_faithful_msg_dain_1": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "足首大丈夫かって聞くなら直接来て聞けよ笑"
     },
     "night3_faithful_msg_dain_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "あ、でもありがとう"
     },
     "night3_faithful_msg_dain_3": {
@@ -60,19 +60,19 @@
         "text": "*部屋に戻った。重い一日だった。スマホを見る。*"
     },
     "night3_cheat_msg_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "私にだけそうして"
     },
     "night3_cheat_msg_3": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "...お願い"
     },
     "night3_cheat_msg_4": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "...嘘はつかないで"
     },
     "night3_cheat_msg_5": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "それだけ"
     },
     "night3_nightmare_1": {
@@ -84,15 +84,15 @@
         "text": "*闇の中に立っている。何も見えない。*"
     },
     "night3_nightmare_3": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "約束したじゃない。私だけだって..."
     },
     "night3_nightmare_4": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "嘘つかないでって言ったのに。"
     },
     "night3_nightmare_5": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "来るって言ったのに。待ってたのに。"
     },
     "night3_nightmare_6": {
@@ -103,9 +103,9 @@
         "name": "僕",
         "text": "*誰の手を取るか。*",
         "choices": [
-            "서연(Seoyeon)の手を取る",
-            "유나(Yuna)の手を取る",
-            "다인(Dain)の手を取る"
+            "ソヨンの手を取る",
+            "ユナの手を取る",
+            "ダインの手を取る"
         ]
     },
     "night3_nightmare_end": {

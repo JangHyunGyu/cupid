@@ -14,18 +14,18 @@
     },
     "morning3_seo_gate_1": {
         "name": "僕",
-        "text": "*校門の前に서연(Seoyeon)が立っている。急いでいる様子はない。*"
+        "text": "*校門の前にソヨンが立っている。急いでいる様子はない。*"
     },
     "morning3_seo_gate_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「遅刻だね。」"
     },
     "morning3_seo_gate_3": {
         "name": "{name}",
-        "text": "「…서연(Seoyeon)？なんでここに？」"
+        "text": "「…ソヨン？なんでここに？」"
     },
     "morning3_seo_gate_4": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「遅刻したって何よ。一緒に捕まれば怒られにくくない？」"
     },
     "morning3_seo_gate_5": {
@@ -33,23 +33,23 @@
         "text": "「それは違うと思うけど。」"
     },
     "morning3_seo_gate_6": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…冗談よ。なんとかしてあげる。」"
     },
     "morning3_seo_gate_7": {
         "name": "僕",
-        "text": "*서연(Seoyeon)が歩いていく。堂々と。遅刻しても急がない。——この人は遅れても堂々としている。いや、堂々とするのが身に染みているんだ。*"
+        "text": "*ソヨンが歩いていく。堂々と。遅刻しても急がない。——この人は遅れても堂々としている。いや、堂々とするのが身に染みているんだ。*"
     },
     "morning3_yuna_gate_1": {
         "name": "僕",
-        "text": "*校門の前でぼんやり立っている유나(Yuna)を見つける。目が半分閉じている。*"
+        "text": "*校門の前でぼんやり立っているユナを見つける。目が半分閉じている。*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
-        "text": "「유나(Yuna)？君も遅刻？」"
+        "text": "「ユナ？君も遅刻？」"
     },
     "morning3_yuna_gate_3": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…昨夜、徹夜で本を読んでた。」"
     },
     "morning3_yuna_gate_4": {
@@ -57,28 +57,28 @@
         "text": "「徹夜？」"
     },
     "morning3_yuna_gate_5": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "「…結末が気になって。止められなかった。」"
     },
     "morning3_yuna_gate_6": {
         "name": "僕",
-        "text": "*徹夜で本を読んで遅刻する人。——すごいのか呆れるのか、とにかく유나(Yuna)らしい。*"
+        "text": "*徹夜で本を読んで遅刻する人。——すごいのか呆れるのか、とにかくユナらしい。*"
     },
     "morning3_yuna_gate_7": {
         "name": "僕",
-        "text": "*유나(Yuna)がカバンから小さなパンを取り出す。二人で分けて食べながらゆっくり校門を通過する。*"
+        "text": "*ユナがカバンから小さなパンを取り出す。二人で分けて食べながらゆっくり校門を通過する。*"
     },
     "morning3_dain_gate_1": {
         "name": "僕",
-        "text": "*校門の近くで다인(Dain)が全力疾走で走ってくる。*"
+        "text": "*校門の近くでダインが全力疾走で走ってくる。*"
     },
     "morning3_dain_gate_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「ねえねえねえ！！遅刻だよ！！走って！！」"
     },
     "morning3_dain_gate_3": {
         "name": "僕",
-        "text": "*다인(Dain)がいきなり手を掴んで走り始める。*"
+        "text": "*ダインがいきなり手を掴んで走り始める。*"
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
@@ -93,40 +93,40 @@
         "text": "*教室に入ると、一緒に来たのを目撃した残りの二人の視線を感じる。*"
     },
     "morning3_react_seo_1": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「え！会長と一緒に来たの？！朝から？！」"
     },
     "morning3_react_seo_2": {
         "name": "僕",
-        "text": "*유나(Yuna)が窓の外から視線をこちらに向ける。——またすぐ窓の外へ。*"
+        "text": "*ユナが窓の外から視線をこちらに向ける。——またすぐ窓の外へ。*"
     },
     "morning3_react_yuna_1": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「朝から図書館の彼女と？」"
     },
     "morning3_react_yuna_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「羨ましい！！私も朝一緒に来てくれる人いないのに！！」"
     },
     "morning3_react_dain_1": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「朝から体力消耗が激しいわね。お昼にお弁当あげようか？」"
     },
     "morning3_react_dain_2": {
         "name": "僕",
-        "text": "*유나(Yuna)が静かに観察している。メモを書いているようだ。*"
+        "text": "*ユナが静かに観察している。メモを書いているようだ。*"
     },
     "morning3_date_intro": {
         "name": "僕",
         "text": "*一時間目が終わって休み時間。——三人が順番に近づいてくる。*"
     },
     "morning3_date_seo_1": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「今週末、時間ある？行きたいところがあるんだけど。」"
     },
     "morning3_date_seo_choice": {
         "name": "僕",
-        "text": "*서연(Seoyeon)が廊下ですれ違いざまに聞いてくる。*",
+        "text": "*ソヨンが廊下ですれ違いざまに聞いてくる。*",
         "choices": [
             "「あるよ。どこ？」",
             "「ちょっと忙しいかも」"
@@ -134,19 +134,19 @@
     },
     "morning3_date_seo_accept": {
         "name": "僕",
-        "text": "*서연(Seoyeon)との週末の約束を受け入れた。*"
+        "text": "*ソヨンとの週末の約束を受け入れた。*"
     },
     "morning3_date_seo_decline": {
         "name": "僕",
-        "text": "*서연(Seoyeon)の提案を断った。*"
+        "text": "*ソヨンの提案を断った。*"
     },
     "morning3_date_dain_1": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「ねえ！週末なにする？！一緒にゲーセン行こうよ？！」"
     },
     "morning3_date_dain_2": {
         "name": "僕",
-        "text": "*다인(Dain)の指が机の角を叩いている。緊張しているのか？——いや。다인(Dain)が緊張するわけがない。これくらい日常のことだろう。*"
+        "text": "*ダインの指が机の角を叩いている。緊張しているのか？——いや。ダインが緊張するわけがない。これくらい日常のことだろう。*"
     },
     "morning3_date_dain_3": {
         "name": "僕",
@@ -154,7 +154,7 @@
     },
     "morning3_date_dain_choice": {
         "name": "僕",
-        "text": "*다인(Dain)が休み時間に席に来て聞いてくる。*",
+        "text": "*ダインが休み時間に席に来て聞いてくる。*",
         "choices": [
             "「いいよ、行こう」",
             "「週末はちょっと…」"
@@ -162,19 +162,19 @@
     },
     "morning3_date_dain_accept": {
         "name": "僕",
-        "text": "*다인(Dain)との週末の約束を受け入れた。*"
+        "text": "*ダインとの週末の約束を受け入れた。*"
     },
     "morning3_date_dain_decline": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「あ、そう？まあ忙しいなら仕方ないよね！」"
     },
     "morning3_date_dain_decline_narr": {
         "name": "僕",
-        "text": "*다인(Dain)の反応を見守る。*"
+        "text": "*ダインの反応を見守る。*"
     },
     "morning3_date_dain_decline_inner": {
         "name": "僕",
-        "text": "*明るく笑って去っていった。——あの時は気づかなかった。다인(Dain)が指を叩くのをやめて、ポケットに手を入れたことに。勇気を出して聞いたことだったのに。*"
+        "text": "*明るく笑って去っていった。——あの時は気づかなかった。ダインが指を叩くのをやめて、ポケットに手を入れたことに。勇気を出して聞いたことだったのに。*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "僕",
@@ -182,15 +182,15 @@
     },
     "morning3_date_yuna_1": {
         "name": "僕",
-        "text": "*유나(Yuna)のメモが机の上に置いてある。*"
+        "text": "*ユナのメモが机の上に置いてある。*"
     },
     "morning3_date_yuna_2": {
         "name": "僕",
-        "text": "*『週末。古本屋に行くけど。来るなら来て。——유나(Yuna)』*"
+        "text": "*『週末。古本屋に行くけど。来るなら来て。——ユナ』*"
     },
     "morning3_date_yuna_choice": {
         "name": "僕",
-        "text": "*유나(Yuna)のメモを読んで…*",
+        "text": "*ユナのメモを読んで…*",
         "choices": [
             "頷いて見せる",
             "メモを折ってポケットにしまう"
@@ -198,7 +198,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "僕",
-        "text": "*유나(Yuna)との週末の約束を受け入れた。*"
+        "text": "*ユナとの週末の約束を受け入れた。*"
     },
     "morning3_date_yuna_decline": {
         "name": "僕",

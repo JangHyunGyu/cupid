@@ -14,18 +14,18 @@
     },
     "morning3_seo_gate_1": {
         "name": "Moi",
-        "text": "*서연(Seoyeon) se tient devant le portail. Aucune trace de précipitation.*"
+        "text": "*Seoyeon se tient devant le portail. Aucune trace de précipitation.*"
     },
     "morning3_seo_gate_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Tu es en retard."
     },
     "morning3_seo_gate_3": {
         "name": "{name}",
-        "text": "...서연(Seoyeon) ? Pourquoi tu es là ?"
+        "text": "...Seoyeon ? Pourquoi tu es là ?"
     },
     "morning3_seo_gate_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Et alors, si on est en retard ? Si on se fait prendre ensemble, on sera peut-être moins punis, non ?"
     },
     "morning3_seo_gate_5": {
@@ -33,23 +33,23 @@
         "text": "Je ne crois pas que ça marche comme ça."
     },
     "morning3_seo_gate_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...C’est une blague. Je m’en occupe."
     },
     "morning3_seo_gate_7": {
         "name": "Moi",
-        "text": "*서연(Seoyeon) avance. Avec assurance. Elle ne se presse pas, même en retard. — Cette fille garde sa contenance même quand elle est en retard. Non, c’est plutôt que l’assurance est une seconde nature chez elle.*"
+        "text": "*Seoyeon avance. Avec assurance. Elle ne se presse pas, même en retard. — Cette fille garde sa contenance même quand elle est en retard. Non, c’est plutôt que l’assurance est une seconde nature chez elle.*"
     },
     "morning3_yuna_gate_1": {
         "name": "Moi",
-        "text": "*Je trouve 유나(Yuna) debout devant le portail, le regard vide. Ses yeux sont à moitié fermés.*"
+        "text": "*Je trouve Yuna debout devant le portail, le regard vide. Ses yeux sont à moitié fermés.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
-        "text": "유나(Yuna) ? Toi aussi tu es en retard ?"
+        "text": "Yuna ? Toi aussi tu es en retard ?"
     },
     "morning3_yuna_gate_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...J’ai lu toute la nuit."
     },
     "morning3_yuna_gate_4": {
@@ -57,28 +57,28 @@
         "text": "Toute la nuit ?"
     },
     "morning3_yuna_gate_5": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Je voulais connaître la fin. Je ne pouvais pas m’arrêter."
     },
     "morning3_yuna_gate_6": {
         "name": "Moi",
-        "text": "*Quelqu’un qui veille toute la nuit pour lire et arrive en retard. — Admirable ou navrant, en tout cas, c’est bien 유나(Yuna).*"
+        "text": "*Quelqu’un qui veille toute la nuit pour lire et arrive en retard. — Admirable ou navrant, en tout cas, c’est bien Yuna.*"
     },
     "morning3_yuna_gate_7": {
         "name": "Moi",
-        "text": "*유나(Yuna) sort un petit pain de son sac. On le partage en passant tranquillement le portail.*"
+        "text": "*Yuna sort un petit pain de son sac. On le partage en passant tranquillement le portail.*"
     },
     "morning3_dain_gate_1": {
         "name": "Moi",
-        "text": "*Près du portail, 다인(Dain) arrive en courant à toute vitesse.*"
+        "text": "*Près du portail, Dain arrive en courant à toute vitesse.*"
     },
     "morning3_dain_gate_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Eh eh eh !! On est en retard !! Cours !!"
     },
     "morning3_dain_gate_3": {
         "name": "Moi",
-        "text": "*다인(Dain) me prend la main sans prévenir et commence à courir.*"
+        "text": "*Dain me prend la main sans prévenir et commence à courir.*"
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
@@ -93,40 +93,40 @@
         "text": "*En entrant dans la classe, je sens les regards des deux autres qui ont vu avec qui je suis arrivé.*"
     },
     "morning3_react_seo_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hey ! T’es venu avec la présidente ?! Dès le matin ?!"
     },
     "morning3_react_seo_2": {
         "name": "Moi",
-        "text": "*유나(Yuna) détourne le regard de la fenêtre et me jette un bref coup d’œil. — Puis se retourne vers la fenêtre.*"
+        "text": "*Yuna détourne le regard de la fenêtre et me jette un bref coup d’œil. — Puis se retourne vers la fenêtre.*"
     },
     "morning3_react_yuna_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Tu arrives avec la fille de la bibliothèque dès le matin ?"
     },
     "morning3_react_yuna_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Trop jalouse !! Moi aussi je voudrais quelqu’un pour venir le matin !!"
     },
     "morning3_react_dain_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Sacrée séance de sport matinale. Tu veux que je te donne un peu de mon déjeuner ?"
     },
     "morning3_react_dain_2": {
         "name": "Moi",
-        "text": "*유나(Yuna) observe en silence. On dirait qu’elle écrit un mot.*"
+        "text": "*Yuna observe en silence. On dirait qu’elle écrit un mot.*"
     },
     "morning3_date_intro": {
         "name": "Moi",
         "text": "*La première heure se termine. Pause. — Les trois s’approchent tour à tour.*"
     },
     "morning3_date_seo_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Tu es libre ce week-end ? Il y a un endroit où j’aimerais aller."
     },
     "morning3_date_seo_choice": {
         "name": "Moi",
-        "text": "*서연(Seoyeon) me demande en me croisant dans le couloir.*",
+        "text": "*Seoyeon me demande en me croisant dans le couloir.*",
         "choices": [
             "Oui. Où ça ?",
             "Je crois que je serai un peu occupé"
@@ -134,19 +134,19 @@
     },
     "morning3_date_seo_accept": {
         "name": "Moi",
-        "text": "*J’ai accepté les plans du week-end avec 서연(Seoyeon).*"
+        "text": "*J’ai accepté les plans du week-end avec Seoyeon.*"
     },
     "morning3_date_seo_decline": {
         "name": "Moi",
-        "text": "*J’ai décliné la proposition de 서연(Seoyeon).*"
+        "text": "*J’ai décliné la proposition de Seoyeon.*"
     },
     "morning3_date_dain_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hey ! Tu fais quoi ce week-end ?! On va à la salle d’arcade ensemble ?!"
     },
     "morning3_date_dain_2": {
         "name": "Moi",
-        "text": "*Les doigts de 다인(Dain) tapotent le bord du bureau. Elle est nerveuse ? — Non. 다인(Dain) ne serait pas nerveuse pour ça. C’est juste du quotidien pour elle.*"
+        "text": "*Les doigts de Dain tapotent le bord du bureau. Elle est nerveuse ? — Non. Dain ne serait pas nerveuse pour ça. C’est juste du quotidien pour elle.*"
     },
     "morning3_date_dain_3": {
         "name": "Moi",
@@ -154,7 +154,7 @@
     },
     "morning3_date_dain_choice": {
         "name": "Moi",
-        "text": "*다인(Dain) vient à mon bureau pendant la pause et me demande.*",
+        "text": "*Dain vient à mon bureau pendant la pause et me demande.*",
         "choices": [
             "OK, c’est parti",
             "Ce week-end, c’est compliqué..."
@@ -162,19 +162,19 @@
     },
     "morning3_date_dain_accept": {
         "name": "Moi",
-        "text": "*J’ai accepté les plans du week-end avec 다인(Dain).*"
+        "text": "*J’ai accepté les plans du week-end avec Dain.*"
     },
     "morning3_date_dain_decline": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ah bon ? Ben, si t’es occupé, tant pis !"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Moi",
-        "text": "*J’observe la réaction de 다인(Dain).*"
+        "text": "*J’observe la réaction de Dain.*"
     },
     "morning3_date_dain_decline_inner": {
         "name": "Moi",
-        "text": "*Elle est partie avec un grand sourire. — Je ne l’ai pas compris à ce moment-là. Que 다인(Dain) avait arrêté de tapoter et mis ses mains dans ses poches. Que ça lui avait demandé du courage de poser la question.*"
+        "text": "*Elle est partie avec un grand sourire. — Je ne l’ai pas compris à ce moment-là. Que Dain avait arrêté de tapoter et mis ses mains dans ses poches. Que ça lui avait demandé du courage de poser la question.*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "Moi",
@@ -182,15 +182,15 @@
     },
     "morning3_date_yuna_1": {
         "name": "Moi",
-        "text": "*Un mot de 유나(Yuna) est posé sur mon bureau.*"
+        "text": "*Un mot de Yuna est posé sur mon bureau.*"
     },
     "morning3_date_yuna_2": {
         "name": "Moi",
-        "text": "*'Week-end. Je vais à la librairie d’occasion. Viens si tu veux. — 유나(Yuna)'*"
+        "text": "*'Week-end. Je vais à la librairie d’occasion. Viens si tu veux. — Yuna'*"
     },
     "morning3_date_yuna_choice": {
         "name": "Moi",
-        "text": "*Après avoir lu le mot de 유나(Yuna)...*",
+        "text": "*Après avoir lu le mot de Yuna...*",
         "choices": [
             "Je hoche la tête",
             "Je plie le mot et le range dans ma poche"
@@ -198,7 +198,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "Moi",
-        "text": "*J’ai accepté les plans du week-end avec 유나(Yuna).*"
+        "text": "*J’ai accepté les plans du week-end avec Yuna.*"
     },
     "morning3_date_yuna_decline": {
         "name": "Moi",

@@ -13,15 +13,15 @@
     },
     "lunch_start_4": {
         "name": "Me",
-        "text": "*At the end of the hallway, 서연(Seoyeon) catches my eye and gestures. Pointing toward the rooftop.*"
+        "text": "*At the end of the hallway, Seoyeon catches my eye and gestures. Pointing toward the rooftop.*"
     },
     "lunch_start_5": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hey! Have you eaten?! Let's hit the snack bar! I'll buy you bread... loser pays!"
     },
     "lunch_start_6": {
         "name": "Me",
-        "text": "*And 유나(Yuna) slips out of the classroom with just her bag. Heading toward the library.*"
+        "text": "*And Yuna slips out of the classroom with just her bag. Heading toward the library.*"
     },
     "lunch_start_7": {
         "name": "Me",
@@ -31,21 +31,21 @@
         "name": "Me",
         "text": "*Who do I follow?*",
         "choices": [
-            "Follow 서연(Seoyeon) to the rooftop",
-            "Go to the snack bar with 다인(Dain)",
-            "Follow 유나(Yuna) to the library"
+            "Follow Seoyeon to the rooftop",
+            "Go to the snack bar with Dain",
+            "Follow Yuna to the library"
         ]
     },
     "lunch_seo_1": {
         "name": "Me",
-        "text": "*서연(Seoyeon) unlocks the rooftop door with her key. A gust of wind rushes in.*"
+        "text": "*Seoyeon unlocks the rooftop door with her key. A gust of wind rushes in.*"
     },
     "lunch_seo_2": {
         "name": "Me",
         "text": "*The rooftop is clean. A few potted plants and a folding chair on one side. Someone's been maintaining this.*"
     },
     "lunch_seo_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "This is my territory."
     },
     "lunch_seo_4": {
@@ -53,7 +53,7 @@
         "text": "A rooftop reserved for the council president?"
     },
     "lunch_seo_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "I don't just bring anyone up here.\" *unfolds a chair* \"Today's special."
     },
     "lunch_seo_6": {
@@ -61,19 +61,19 @@
         "text": "Special treatment on day one? Sounds suspicious."
     },
     "lunch_seo_7": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*smiles* You're paranoid. I just like the breeze."
     },
     "lunch_seo_8": {
         "name": "Me",
-        "text": "*서연(Seoyeon) pulls out a lunchbox from her bag. Neatly packed for two.*"
+        "text": "*Seoyeon pulls out a lunchbox from her bag. Neatly packed for two.*"
     },
     "lunch_seo_9": {
         "name": "{name}",
         "text": "...That's for two people."
     },
     "lunch_seo_10": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "I already confirmed you're sharp, remember?"
     },
     "lunch_seo_11": {
@@ -89,7 +89,7 @@
         "text": "Did you make this yourself?"
     },
     "lunch_seo_14": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "A council president has to be good at everything."
     },
     "lunch_seo_15": {
@@ -97,7 +97,7 @@
         "text": "That's not really an answer."
     },
     "lunch_seo_16": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*hands over chopsticks* Eat. It's no good cold."
     },
     "lunch_seo_17": {
@@ -109,7 +109,7 @@
         "text": "*We eat for a while. The breeze is nice. The school grounds from the rooftop — wider than I expected.*"
     },
     "lunch_seo_19": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "So, how's the school?"
     },
     "lunch_seo_20": {
@@ -117,20 +117,20 @@
         "text": "The food's good."
     },
     "lunch_seo_21": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*smirks* I asked about the school, and you answer about the food."
     },
     "lunch_seo_22": {
         "name": "Me",
-        "text": "*서연(Seoyeon) picks up a piece of rolled egg and holds it out.*"
+        "text": "*Seoyeon picks up a piece of rolled egg and holds it out.*"
     },
     "lunch_seo_23": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Just one bite."
     },
     "lunch_seo_choice": {
         "name": "Me",
-        "text": "*서연(Seoyeon) is holding out the rolled egg.*",
+        "text": "*Seoyeon is holding out the rolled egg.*",
         "choices": [
             "Accept it",
             "It'd taste better if you ate it yourself"
@@ -138,26 +138,26 @@
     },
     "lunch_seo_c1_1": {
         "name": "Me",
-        "text": "*I take the rolled egg from 서연(Seoyeon)'s chopsticks.*"
+        "text": "*I take the rolled egg from Seoyeon's chopsticks.*"
     },
     "lunch_seo_c1_2": {
         "name": "{name}",
         "text": "...It's good."
     },
     "lunch_seo_c1_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Obviously."
     },
     "lunch_seo_c1_4": {
         "name": "Me",
-        "text": "*서연(Seoyeon) turns her head slightly. Her ears are red. — Did her ears just turn red? — Maybe it's just the wind.*"
+        "text": "*Seoyeon turns her head slightly. Her ears are red. — Did her ears just turn red? — Maybe it's just the wind.*"
     },
     "lunch_seo_c2_1": {
         "name": "Me",
-        "text": "*서연(Seoyeon) puts the rolled egg in her own mouth. Chewing slowly.*"
+        "text": "*Seoyeon puts the rolled egg in her own mouth. Chewing slowly.*"
     },
     "lunch_seo_c2_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "You're right. It is good."
     },
     "lunch_seo_c2_3": {
@@ -169,7 +169,7 @@
         "text": "*Lunch is almost over.*"
     },
     "lunch_seo_after_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Want to come again next time?"
     },
     "lunch_seo_after_3": {
@@ -177,16 +177,16 @@
         "text": "Is that an invitation?"
     },
     "lunch_seo_after_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "No. It's a permission."
     },
     "lunch_seo_after_5": {
         "name": "Me",
-        "text": "*That's so 서연(Seoyeon). Not an invitation, a permission. — But why is she smiling?*"
+        "text": "*That's so Seoyeon. Not an invitation, a permission. — But why is she smiling?*"
     },
     "lunch_seo_after_6": {
         "name": "Me",
-        "text": "*서연(Seoyeon) packs up the lunchbox and brushes her hair back with her pinky. An unconscious habit, it seems.*"
+        "text": "*Seoyeon packs up the lunchbox and brushes her hair back with her pinky. An unconscious habit, it seems.*"
     },
     "lunch_seo_after_7": {
         "name": "Me",
@@ -194,10 +194,10 @@
     },
     "lunch_dain_1": {
         "name": "Me",
-        "text": "*다인(Dain) drags me by the arm to the snack bar. This girl is seriously strong.*"
+        "text": "*Dain drags me by the arm to the snack bar. This girl is seriously strong.*"
     },
     "lunch_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Here we go! What do you want?! My pick is the crumble bread and strawberry milk!"
     },
     "lunch_dain_3": {
@@ -205,7 +205,7 @@
         "text": "But you said loser pays. What are we doing?"
     },
     "lunch_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Rock-paper-scissors! Obviously!"
     },
     "lunch_dain_5": {
@@ -213,7 +213,7 @@
         "text": "That's not obvious at all."
     },
     "lunch_dain_6": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Not playing?! Then you're buying!"
     },
     "lunch_dain_7": {
@@ -225,15 +225,15 @@
         "text": "*Rock-paper-scissors.*"
     },
     "lunch_dain_9": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Rock— paper— scissors!"
     },
     "lunch_dain_10": {
         "name": "Me",
-        "text": "*(Regardless of the result, 다인(Dain) loses)*"
+        "text": "*(Regardless of the result, Dain loses)*"
     },
     "lunch_dain_11": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "...Huh?! I lost?! Best of three!!"
     },
     "lunch_dain_12": {
@@ -241,19 +241,19 @@
         "text": "A promise is a promise."
     },
     "lunch_dain_13": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ughhhh fine!! Two crumble breads!! Ma'am!!"
     },
     "lunch_dain_14": {
         "name": "Me",
-        "text": "*다인(Dain) grumbles while buying the bread. But the corners of her mouth are turned up.*"
+        "text": "*Dain grumbles while buying the bread. But the corners of her mouth are turned up.*"
     },
     "lunch_dain_15": {
         "name": "Me",
         "text": "*We sit on a bench by the snack bar and eat our bread.*"
     },
     "lunch_dain_16": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*tearing into bread* Hey, do you seriously not do sports?"
     },
     "lunch_dain_17": {
@@ -261,7 +261,7 @@
         "text": "Why, worried about my stamina?"
     },
     "lunch_dain_18": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "No, it's just that keeping up with me takes some stamina! Haha"
     },
     "lunch_dain_19": {
@@ -269,7 +269,7 @@
         "text": "Sounded like a personal ad."
     },
     "lunch_dain_20": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "What?! What's a PR?!"
     },
     "lunch_dain_21": {
@@ -278,22 +278,22 @@
     },
     "lunch_dain_22": {
         "name": "Me",
-        "text": "*다인(Dain)'s eyes light up.*"
+        "text": "*Dain's eyes light up.*"
     },
     "lunch_dain_23": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Oh, you know that?! You DO know sports, don't you?!"
     },
     "lunch_dain_choice": {
         "name": "Me",
-        "text": "*다인(Dain) is staring at me with expectant eyes.*",
+        "text": "*Dain is staring at me with expectant eyes.*",
         "choices": [
             "A little. Would you teach me?",
             "I was just faking it."
         ]
     },
     "lunch_dain_c1_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Haha, awesome!! I'll teach you everything! Gym after school, deal?!"
     },
     "lunch_dain_c1_2": {
@@ -301,7 +301,7 @@
         "text": "*Her eyes become half-moons. So that's what she looks like when she smiles. — A detail I'd have missed if I hadn't been watching.*"
     },
     "lunch_dain_c2_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Aw come on, you're still interested though! Come to the gym after school! You won't regret it!"
     },
     "lunch_dain_after": {
@@ -309,7 +309,7 @@
         "text": "*We finish the bread and stand up.*"
     },
     "lunch_dain_after_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hey, {name}!"
     },
     "lunch_dain_after_3": {
@@ -317,7 +317,7 @@
         "text": "Yeah?"
     },
     "lunch_dain_after_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "I'm the first person you had a meal with at your new school, right? Remember that!"
     },
     "lunch_dain_after_5": {
@@ -330,18 +330,18 @@
     },
     "lunch_yuna_1": {
         "name": "Me",
-        "text": "*I follow 유나(Yuna)'s back into the library. Almost no one comes here during lunch, it seems.*"
+        "text": "*I follow Yuna's back into the library. Almost no one comes here during lunch, it seems.*"
     },
     "lunch_yuna_2": {
         "name": "Me",
-        "text": "*유나(Yuna) takes a seat in the corner of the reading room. Opens a book. I'm not sure if she knows I followed her.*"
+        "text": "*Yuna takes a seat in the corner of the reading room. Opens a book. I'm not sure if she knows I followed her.*"
     },
     "lunch_yuna_3": {
         "name": "Me",
         "text": "*I carefully sit across from her.*"
     },
     "lunch_yuna_4": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "......"
     },
     "lunch_yuna_5": {
@@ -353,7 +353,7 @@
         "text": "...Is it okay if I sit here?"
     },
     "lunch_yuna_7": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*without looking up from her book* ...As long as you're quiet."
     },
     "lunch_yuna_8": {
@@ -362,7 +362,7 @@
     },
     "lunch_yuna_9": {
         "name": "Me",
-        "text": "*Silence flows. 유나(Yuna) reads her book. I have nothing to do, so I browse the shelves.*"
+        "text": "*Silence flows. Yuna reads her book. I have nothing to do, so I browse the shelves.*"
     },
     "lunch_yuna_10": {
         "name": "Me",
@@ -373,7 +373,7 @@
         "text": "*I pick a random book from the shelf and open it.*"
     },
     "lunch_yuna_12": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*glances over* ...That's volume 3."
     },
     "lunch_yuna_13": {
@@ -381,7 +381,7 @@
         "text": "Huh?"
     },
     "lunch_yuna_14": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "You should start from volume 1."
     },
     "lunch_yuna_15": {
@@ -393,7 +393,7 @@
         "text": "Thanks."
     },
     "lunch_yuna_17": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Read it and return it."
     },
     "lunch_yuna_18": {
@@ -413,7 +413,7 @@
         "text": "Already?"
     },
     "lunch_yuna_22": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*sliding in a bookmark* ...Thanks for being quiet."
     },
     "lunch_yuna_23": {
@@ -421,16 +421,16 @@
         "text": "Hm?"
     },
     "lunch_yuna_24": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "It was nice."
     },
     "lunch_yuna_25": {
         "name": "Me",
-        "text": "*유나(Yuna) stands up first and walks away. She doesn't look back.*"
+        "text": "*Yuna stands up first and walks away. She doesn't look back.*"
     },
     "lunch_yuna_26": {
         "name": "Me",
-        "text": "*'It was nice.' — 유나(Yuna)'s sentences are short. But those two words linger for a long time.*"
+        "text": "*'It was nice.' — Yuna's sentences are short. But those two words linger for a long time.*"
     },
     "lunch_end": {
         "name": "Me",

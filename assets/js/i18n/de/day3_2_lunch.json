@@ -5,10 +5,10 @@
     },
     "lunch3_start_2": {
         "name": "Ich",
-        "text": "*{name} öffnet seine Lunchbox. 서연(Seoyeon) setzt sich selbstverständlich daneben, 다인(Dain) lässt sich gegenüber fallen, und 유나(Yuna) schleicht sich aus der Ecke heran, während sie ihr Brot isst.*"
+        "text": "*{name} öffnet seine Lunchbox. Seoyeon setzt sich selbstverständlich daneben, Dain lässt sich gegenüber fallen, und Yuna schleicht sich aus der Ecke heran, während sie ihr Brot isst.*"
     },
     "lunch3_meal_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Oh! Lecker!!"
     },
     "lunch3_meal_2": {
@@ -16,7 +16,7 @@
         "text": "Das war meins..."
     },
     "lunch3_meal_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Das Omelett ist etwas zu salzig. 6 Punkte."
     },
     "lunch3_meal_4": {
@@ -24,19 +24,19 @@
         "text": "Hör auf, Noten zu vergeben."
     },
     "lunch3_meal_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Von 10. Das ist doch nicht schlecht, oder?"
     },
     "lunch3_meal_6": {
         "name": "Ich",
-        "text": "*유나(Yuna) streckt wortlos ihre Stäbchen aus und schnappt sich das leckerste Würstchen.*"
+        "text": "*Yuna streckt wortlos ihre Stäbchen aus und schnappt sich das leckerste Würstchen.*"
     },
     "lunch3_meal_7": {
         "name": "Ich",
-        "text": "...유나(Yuna), das war mein Lieblingsstück."
+        "text": "...Yuna, das war mein Lieblingsstück."
     },
     "lunch3_meal_8": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Lecker."
     },
     "lunch3_meal_9": {
@@ -55,54 +55,54 @@
         "name": "Ich",
         "text": "*Ich überlege, wem ich den letzten Bissen gebe.*",
         "choices": [
-            "서연(Seoyeon) geben",
-            "다인(Dain) geben",
-            "유나(Yuna) geben",
+            "Seoyeon geben",
+            "Dain geben",
+            "Yuna geben",
             "Teilen wir es alle zusammen"
         ]
     },
     "lunch3_give_seo_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Danke. Du hast eben Geschmack."
     },
     "lunch3_give_seo_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hey! Ich wollte das auch!"
     },
     "lunch3_give_seo_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "......"
     },
     "lunch3_give_dain_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Echt?! Danke!! {name} ist der Beste!!"
     },
     "lunch3_give_dain_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Hmph. Und ich habe sogar Punkte vergeben."
     },
     "lunch3_give_dain_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "......"
     },
     "lunch3_give_yuna_1": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Danke."
     },
     "lunch3_give_yuna_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Ich dachte, du gibst es mir."
     },
     "lunch3_give_yuna_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Was?! Und ich?!"
     },
     "lunch3_expose_1": {
         "name": "Ich",
-        "text": "*In dem Moment, als ich Teilen wir es alle zusammen sagte — sprach 다인(Dain) zuerst.*"
+        "text": "*In dem Moment, als ich Teilen wir es alle zusammen sagte — sprach Dain zuerst.*"
     },
     "lunch3_expose_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ach stimmt! {name}, wir wollten doch am Wochenende in die Spielhalle!! Was essen wir vorher?!"
     },
     "lunch3_expose_3": {
@@ -111,26 +111,26 @@
     },
     "lunch3_expose_4": {
         "name": "Ich",
-        "text": "*서연(Seoyeon)s Stäbchen stoppen. 유나(Yuna)s Hand, die das Brot zerreißt, stoppt.*"
+        "text": "*Seoyeons Stäbchen stoppen. Yunas Hand, die das Brot zerreißt, stoppt.*"
     },
     "lunch3_expose_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Spielhalle?"
     },
     "lunch3_expose_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Mir hast du gesagt, du hättest einen Ort, den du mit mir besuchen willst."
     },
     "lunch3_expose_7": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "...Moment. Mir hast du auch vorgeschlagen, am Wochenende was zusammen zu machen?"
     },
     "lunch3_expose_8": {
         "name": "Ich",
-        "text": "*유나(Yuna) legt das Brot auf den Tisch.*"
+        "text": "*Yuna legt das Brot auf den Tisch.*"
     },
     "lunch3_expose_9": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Ich wusste es."
     },
     "lunch3_expose_10": {
@@ -138,7 +138,7 @@
         "text": "*Einen Moment Stille.*"
     },
     "lunch3_expose_11": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Gelögen. Ich wusste es auch nicht."
     },
     "lunch3_expose_12": {
@@ -147,15 +147,15 @@
     },
     "lunch3_expose_13": {
         "name": "Ich",
-        "text": "*Am Nebentisch beobachtet 민수(Minsu) mich. Er schüttelt den Kopf.*"
+        "text": "*Am Nebentisch beobachtet Minsu mich. Er schüttelt den Kopf.*"
     },
     "lunch3_expose_14": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "...Alter. Spinnst du?"
     },
     "lunch3_expose_15": {
         "name": "Ich",
-        "text": "*Ich kann nichts sagen. 민수(Minsu) hat recht.*"
+        "text": "*Ich kann nichts sagen. Minsu hat recht.*"
     },
     "lunch3_expose_choice": {
         "name": "Ich",
@@ -171,44 +171,44 @@
         "text": "Es tut mir leid. Ihr seid alle so toll, dass ich nicht ablehnen konnte."
     },
     "lunch3_expose_honest_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Nicht ablehnen konnte. Das ist das Grausamste, was du sagen kannst, {name}."
     },
     "lunch3_expose_honest_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Die Freundlichkeit, nicht ablehnen zu können — gibt falsche Hoffnung."
     },
     "lunch3_expose_honest_4": {
         "name": "Ich",
-        "text": "*서연(Seoyeon) schließt den Deckel ihrer Lunchbox.*"
+        "text": "*Seoyeon schließt den Deckel ihrer Lunchbox.*"
     },
     "lunch3_expose_honest_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Ich will keine von mehreren Optionen sein. Entweder die einzige Antwort oder nichts. — Halbe Sachen kann ich nicht."
     },
     "lunch3_expose_honest_6": {
         "name": "Ich",
-        "text": "*서연(Seoyeon) steht vom Tisch auf.*"
+        "text": "*Seoyeon steht vom Tisch auf.*"
     },
     "lunch3_expose_honest_7": {
         "name": "Ich",
-        "text": "*Keine Ausrufezeichen. — Aus 다인(Dain)s Sätzen sind die Ausrufezeichen verschwunden. Zum ersten Mal.*"
+        "text": "*Keine Ausrufezeichen. — Aus Dains Sätzen sind die Ausrufezeichen verschwunden. Zum ersten Mal.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "Ich",
         "text": "Die Uhrzeiten sind unterschiedlich, also dachte ich, es wäre okay..."
     },
     "lunch3_expose_excuse_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Verstehst du nicht, dass genau das das Problem ist?"
     },
     "lunch3_expose_excuse_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Gib mir etwas Zeit zum Nachdenken."
     },
     "lunch3_expose_excuse_4": {
         "name": "Ich",
-        "text": "*Keine Ausrufezeichen. — Aus 다인(Dain)s Sätzen sind die Ausrufezeichen verschwunden. Zum ersten Mal.*"
+        "text": "*Keine Ausrufezeichen. — Aus Dains Sätzen sind die Ausrufezeichen verschwunden. Zum ersten Mal.*"
     },
     "lunch3_expose_run_1": {
         "name": "Ich",
