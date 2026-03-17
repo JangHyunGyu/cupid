@@ -1152,7 +1152,394 @@ for (const file of htmlFiles) {
     });
 }
 
-console.log('[PLAYTEST] 메모리 누수 검사 완료\n');
+console.log('[PLAYTEST] 메모리 누수 검사 완료');
+
+// =====================================================================
+// ===== UI / GALLERY / SETTINGS / NAVIGATION 검증 =====
+// =====================================================================
+console.log('[UI_CHECK] UI 인터랙션 검증 시작...');
+
+// ===== UI-1: HTML getElementById vs 실제 DOM id 일치 =====
+for (const file of htmlFiles) {
+    // 인라인 <script> 블록 추출
+    const scriptBlocks = file.content.match(/<script[^>]*>([\s\S]*?)<\/script>/gi) || [];
+    const inlineJS = scriptBlocks.map(b => b.replace(/<\/?script[^>]*>/gi, '')).join('\n');
+    // getElementById 호출에서 ID 추출
+    const idRefs = [...inlineJS.matchAll(/getElementById\(\s*['"]([^'"]+)['"]\s*\)/g)].map(m => m[1]);
+    // HTML 내 id="..." 추출
+    const htmlIds = new Set([...file.content.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]));
+    for (const refId of idRefs) {
+        if (!htmlIds.has(refId)) {
+            // 동적 생성 요소는 허용 (game-loader가 생성하는 것들)
+            const dynamicIds = ['upload-image-btn', 'upload-image-input', 'image-preview-container', 'image-preview', 'remove-image-btn'];
+            if (!dynamicIds.includes(refId)) {
+                errors.push('[UI_DOM_ID] ' + file.name + ': getElementById("' + refId + '") 호출하지만 id="' + refId + '" 없음');
+            }
+        }
+    }
+}
+
+// ===== UI-2: 설정 모달 DOM ID 다국어 일관성 =====
+const settingsIds = ['settingsModal', 'affinityToggle', 'bgmVolume', 'sfxVolume', 'bgmVolumeVal', 'sfxVolumeVal'];
+const koIndexFile = htmlFiles.find(f => f.name === 'index.html');
+if (koIndexFile) {
+    const langIndexes = htmlFiles.filter(f => /^index-(en|es|ja|fr|de)\.html$/.test(f.name));
+    for (const langFile of langIndexes) {
+        for (const sid of settingsIds) {
+            const koHas = koIndexFile.content.includes('id="' + sid + '"');
+            const langHas = langFile.content.includes('id="' + sid + '"');
+            if (koHas && !langHas) {
+                errors.push('[UI_SETTINGS] ' + langFile.name + ': 설정 모달 id="' + sid + '" 누락 (index.html에는 있음)');
+            }
+        }
+    }
+}
+
+// ===== UI-3: gallery-data.js 다국어 데이터 동등성 =====
+try {
+    const gdPath = path.join(__dirname, 'assets/js/gallery-data.js');
+    const gdRaw = fs.readFileSync(gdPath, 'utf8');
+
+    // 캐릭터 ID 파싱 (각 언어 블록에서)
+    const charIdsByLang = {};
+    for (const lang of allLangs) {
+        const ids = [];
+        // 간단 파싱: id: 'xxx' 패턴
+        const langSection = gdRaw.split(new RegExp('\\b' + lang + ':\\s*\\{'))[1];
+        if (langSection) {
+            const idMatches = langSection.match(/id:\s*'([^']+)'/g);
+            if (idMatches) {
+                idMatches.forEach(im => {
+                    const id = im.match(/id:\s*'([^']+)'/)[1];
+                    if (['seyoun', 'yuna', 'dain', 'teacher', 'nurse'].includes(id)) ids.push(id);
+                });
+            }
+        }
+        charIdsByLang[lang] = [...new Set(ids)].sort();
+    }
+    const koCharIds = charIdsByLang.ko || [];
+    for (const lang of allLangs) {
+        if (lang === 'ko') continue;
+        const langIds = charIdsByLang[lang] || [];
+        if (koCharIds.length > 0 && JSON.stringify(koCharIds) !== JSON.stringify(langIds)) {
+            const missing = koCharIds.filter(id => !langIds.includes(id));
+            if (missing.length > 0) {
+                errors.push('[GALLERY_DATA] gallery-data.js ' + lang + ': 캐릭터 누락 — ' + missing.join(', '));
+            }
+        }
+    }
+
+    // BGM ID 다국어 동등성 — static bgm 블록만 파싱
+    const bgmSection = gdRaw.split(/static\s+bgm\s*=\s*\{/)[1]?.split(/static\s+/)[0] || '';
+    const bgmIdsByLang = {};
+    for (const lang of allLangs) {
+        const langBlock = bgmSection.split(new RegExp(lang + ':\\s*\\['))[1]?.split(/\]\s*[,}]/)[0] || '';
+        const bgmMatches = langBlock.match(/id:\s*'([^']+)'/g) || [];
+        bgmIdsByLang[lang] = bgmMatches.map(bm => bm.match(/id:\s*'([^']+)'/)[1]);
+    }
+    const koBgmIds = bgmIdsByLang.ko || [];
+    for (const lang of allLangs) {
+        if (lang === 'ko') continue;
+        const langBgmIds = bgmIdsByLang[lang] || [];
+        if (koBgmIds.length > 0 && koBgmIds.length !== langBgmIds.length) {
+            errors.push('[GALLERY_DATA] gallery-data.js ' + lang + ': BGM 수 불일치 (ko=' + koBgmIds.length + ', ' + lang + '=' + langBgmIds.length + ')');
+        }
+    }
+} catch (e) {
+    warnings.push('[GALLERY_DATA] gallery-data.js 파싱 실패: ' + e.message);
+}
+
+// ===== UI-4: REGISTERED_CG_IDS ↔ gallery-data CG ID 동기화 =====
+try {
+    const configContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/config.js'), 'utf8');
+    const cgIdMatch = configContent.match(/REGISTERED_CG_IDS\s*=\s*new\s+Set\(\[([^\]]+)\]\)/);
+    if (cgIdMatch) {
+        const registeredIds = cgIdMatch[1].match(/'([^']+)'/g).map(s => s.replace(/'/g, ''));
+        const gdContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-data.js'), 'utf8');
+        const cgOnlySection = gdContent.split(/static\s+cg\s*=\s*\{/)[1]?.split(/static\s+bgm/)[0] || '';
+        const galleryCgIds = [...new Set((cgOnlySection.match(/id:\s*'([^']+)'/g) || []).map(m => m.match(/id:\s*'([^']+)'/)[1]))];
+
+        for (const gcid of galleryCgIds) {
+            if (!registeredIds.includes(gcid)) {
+                errors.push('[CG_SYNC] gallery-data CG "' + gcid + '" 가 REGISTERED_CG_IDS에 없음 — 해금 불가');
+            }
+        }
+        for (const rcid of registeredIds) {
+            if (!galleryCgIds.includes(rcid)) {
+                warnings.push('[CG_SYNC] REGISTERED_CG_IDS "' + rcid + '" 가 gallery-data에 없음 — 갤러리에 표시 안 됨');
+            }
+        }
+    }
+} catch (e) {}
+
+// ===== UI-5: gallery-freetalk 캐릭터/표정/배경/언어맵 검증 =====
+try {
+    const ftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
+
+    // 표정 이미지 존재 확인
+    const charImgDir = path.join(__dirname, 'assets/images/characters');
+    const exprMapMatch = ftContent.match(/CHAR_EXPRESSIONS\s*=\s*\{([\s\S]*?)\};/);
+    if (exprMapMatch) {
+        const exprBlock = exprMapMatch[1];
+        const charExprRegex = /(\w+):\s*\{([^}]+)\}/g;
+        let cem;
+        while ((cem = charExprRegex.exec(exprBlock)) !== null) {
+            const charId = cem[1];
+            const exprValues = cem[2].match(/'([^']+\.png)'/g) || [];
+            for (const ev of exprValues) {
+                const fileName = ev.replace(/'/g, '');
+                const filePath = path.join(charImgDir, fileName);
+                if (!fs.existsSync(filePath)) {
+                    errors.push('[FREETALK_ASSET] gallery-freetalk.js CHAR_EXPRESSIONS ' + charId + ': "' + fileName + '" not found');
+                }
+            }
+        }
+    }
+
+    // 배경 이미지 존재 확인
+    const bgMapMatch = ftContent.match(/CHAR_BACKGROUNDS\s*=\s*\{([\s\S]*?)\};/);
+    if (bgMapMatch) {
+        const bgPaths = bgMapMatch[1].match(/'(assets\/[^']+)'/g) || [];
+        for (const bp of bgPaths) {
+            const bgFile = bp.replace(/'/g, '');
+            if (!fs.existsSync(path.join(__dirname, bgFile))) {
+                errors.push('[FREETALK_ASSET] gallery-freetalk.js CHAR_BACKGROUNDS: "' + bgFile + '" not found');
+            }
+        }
+    }
+
+    // 언어 맵 완전성 — CHAR_NAMES, CHAR_LOCATIONS 등에 6개 언어 있는지
+    const langMaps = ['CHAR_NAMES', 'CHAR_LOCATIONS', 'CHAR_DATING_PROMPTS', 'CHAR_PERSONALITIES'];
+    for (const mapName of langMaps) {
+        const mapMatch = ftContent.match(new RegExp(mapName + '\\s*=\\s*\\{([\\s\\S]*?)\\};'));
+        if (mapMatch) {
+            for (const lang of allLangs) {
+                if (!mapMatch[1].includes("'" + lang + "'") && !mapMatch[1].includes(lang + ':')) {
+                    warnings.push('[FREETALK_LANG] gallery-freetalk.js ' + mapName + ': "' + lang + '" 언어 누락');
+                }
+            }
+        }
+    }
+} catch (e) {
+    warnings.push('[FREETALK] gallery-freetalk.js 파싱 실패: ' + e.message);
+}
+
+// ===== UI-6: 페이지 간 네비게이션 — <a href> 링크 타겟 존재 확인 =====
+for (const file of htmlFiles) {
+    const hrefMatches = file.content.matchAll(/<a[^>]+href="([^"#][^"]*)"[^>]*>/gi);
+    for (const m of hrefMatches) {
+        const href = m[1];
+        if (href.startsWith('http') || href.startsWith('//') || href.startsWith('mailto:') || href.startsWith('javascript:')) continue;
+        // 상대 경로 정리
+        let target = href.replace(/^\//, '');
+        if (!target.includes('.')) target += '.html';  // /index-en → index-en.html
+        const filePath = path.join(__dirname, target);
+        if (!fs.existsSync(filePath)) {
+            errors.push('[NAV_LINK] ' + file.name + ': <a href="' + href + '"> → "' + target + '" not found');
+        }
+    }
+}
+
+// ===== UI-7: gallery-progress 기본 데이터 캐릭터 키 ↔ gallery-data 캐릭터 ID =====
+try {
+    const gpContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-progress.js'), 'utf8');
+    const defaultDataMatch = gpContent.match(/_createDefaultData[\s\S]*?characters:\s*\{([\s\S]*?)\n\s{12}\}/);
+    if (defaultDataMatch) {
+        const defaultCharIds = [...defaultDataMatch[1].matchAll(/(\w+):\s*\{/g)].map(m => m[1]);
+        const expectedIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
+        for (const eid of expectedIds) {
+            if (!defaultCharIds.includes(eid)) {
+                errors.push('[SAVE_SCHEMA] gallery-progress.js _createDefaultData: 캐릭터 "' + eid + '" 누락');
+            }
+        }
+    }
+} catch (e) {}
+
+// ===== UI-8: Service Worker 캐시 버전 일관성 =====
+try {
+    const swContent = fs.readFileSync(path.join(__dirname, 'service-worker.js'), 'utf8');
+    // PRECACHE_URLS 존재 확인
+    const precacheMatch = swContent.match(/PRECACHE_URLS\s*=\s*\[([^\]]*)\]/);
+    if (precacheMatch && precacheMatch[1].trim()) {
+        const urls = precacheMatch[1].match(/'([^']+)'/g) || [];
+        for (const u of urls) {
+            const url = u.replace(/'/g, '');
+            if (!fs.existsSync(path.join(__dirname, url))) {
+                errors.push('[SW_CACHE] service-worker.js PRECACHE_URLS: "' + url + '" not found');
+            }
+        }
+    }
+    // SW가 모든 메인 HTML에서 등록되는지
+    for (const file of htmlFiles) {
+        if (/^(index|game|gallery)\.html$/.test(file.name) || /^(index|game|gallery)-(en|es|ja|fr|de)\.html$/.test(file.name)) {
+            if (!file.content.includes('service-worker.js') && !file.content.includes('serviceWorker')) {
+                warnings.push('[SW_REG] ' + file.name + ': Service Worker 등록 코드 없음');
+            }
+        }
+    }
+} catch (e) {}
+
+// ===== UI-9: 갤러리 HTML DOM ID vs 갤러리 JS getElementById =====
+const galleryJsFiles = jsFiles.filter(f => f.name.startsWith('gallery'));
+const galleryHtmlFiles = htmlFiles.filter(f => f.name.startsWith('gallery'));
+if (galleryJsFiles.length > 0 && galleryHtmlFiles.length > 0) {
+    // 갤러리 JS에서 참조하는 모든 ID 수집
+    const galleryJsIds = new Set();
+    for (const gf of galleryJsFiles) {
+        const idMatches = gf.content.matchAll(/getElementById\(\s*['"]([^'"]+)['"]\s*\)/g);
+        for (const m of idMatches) galleryJsIds.add(m[1]);
+    }
+    // 각 갤러리 HTML에서 확인
+    for (const gh of galleryHtmlFiles) {
+        const htmlIds = new Set([...gh.content.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]));
+        for (const jsId of galleryJsIds) {
+            if (!htmlIds.has(jsId)) {
+                // freetalk overlay는 JS가 동적 생성
+                // 갤러리 freetalk/모달이 JS로 동적 생성하는 요소들
+                const dynamicGalleryIds = ['gallery-freetalk-overlay', 'freetalk-overlay', 'message', 'name-tag',
+                    'chat-input', 'chat-send', 'expression-buttons', 'unlock-condition-popup',
+                    'dialogue-box', 'upload-image-btn', 'gft-file-input', 'remove-image-btn',
+                    'gft-char-img', 'image-preview-container', 'image-preview',
+                    'cg-modal-image', 'cg-modal-title', 'cg-modal-desc'];
+                if (!dynamicGalleryIds.includes(jsId)) {
+                    warnings.push('[UI_GALLERY_ID] ' + gh.name + ': 갤러리 JS가 getElementById("' + jsId + '") 호출하지만 해당 id 없음');
+                }
+            }
+        }
+    }
+}
+
+console.log('[UI_CHECK] UI 인터랙션 검증 완료');
+
+// =====================================================================
+// ===== AI FREE TALK 검증 =====
+// =====================================================================
+console.log('[FREETALK_CHECK] AI 프리토킹 검증 시작...');
+
+// FT-1: 모든 free_talk 씬에 필수 필드 확인 (name, next)
+for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
+    if (scene.type !== 'free_talk') continue;
+    if (!scene.name && !scene.character) {
+        errors.push('[FREETALK_SCENE] "' + sceneId + '" (day' + day + '): free_talk 씬에 name/character 없음 — 캐릭터 식별 불가');
+    }
+    if (!scene.next && !scene.branches && !scene.affinityBranches) {
+        errors.push('[FREETALK_SCENE] "' + sceneId + '" (day' + day + '): free_talk 씬에 next 없음 — 대화 후 진행 불가');
+    }
+}
+
+// FT-2: free_talk 씬의 캐릭터가 CHAR_NAME_MAP에 있는지 (프리토킹 시스템이 매핑 가능한지)
+try {
+    const configContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/config.js'), 'utf8');
+    const charNameMapMatch = configContent.match(/CHAR_NAME_MAP\s*=\s*Object\.freeze\(\{([\s\S]*?)\}\)/);
+    if (charNameMapMatch) {
+        const mapEntries = charNameMapMatch[1].match(/"([^"]+)":\s*"([^"]+)"/g) || [];
+        const charNameMap = {};
+        mapEntries.forEach(e => {
+            const [, key, val] = e.match(/"([^"]+)":\s*"([^"]+)"/);
+            charNameMap[key] = val;
+        });
+        // free_talk 씬의 i18n name이 CHAR_NAME_MAP에 매핑되는지
+        for (const [sceneId, { scene }] of Object.entries(allScenes)) {
+            if (scene.type !== 'free_talk') continue;
+            for (const lang of allLangs) {
+                const langEntry = allLangData[lang]?.[sceneId];
+                const charName = langEntry?.name || scene.name;
+                if (charName && lang !== 'ko') {
+                    // 영문/일문 이름이 CHAR_NAME_MAP에 있어야 매핑 가능
+                    const mapped = charNameMap[charName];
+                    if (!mapped && !['나', '{name}', ''].includes(charName)) {
+                        // 직접 키(Seoyeon, Yuna 등)인 경우는 OK
+                        const isDirectKey = validCharKeys.includes(charName);
+                        if (!isDirectKey) {
+                            warnings.push('[FREETALK_CHARMAP] "' + sceneId + '" ' + lang + ': 캐릭터 "' + charName + '" 가 CHAR_NAME_MAP에 없음');
+                        }
+                    }
+                }
+            }
+        }
+    }
+} catch (e) {}
+
+// FT-3: 게임 내 프리토킹 — FreeTalkSystem.js의 API_ENDPOINT 접근 가능성
+try {
+    const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
+    // API 호출 부분에서 endpoint 사용 확인
+    if (ftSysContent.includes('API_ENDPOINT') || ftSysContent.includes('window.API_ENDPOINT')) {
+        const configContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/config.js'), 'utf8');
+        if (!configContent.includes('API_ENDPOINT')) {
+            errors.push('[FREETALK_API] FreeTalkSystem.js가 API_ENDPOINT를 사용하지만 config.js에 정의되지 않음');
+        }
+    }
+    // 갤러리 프리토킹도 동일
+    const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
+    if (gftContent.includes('API_ENDPOINT') || gftContent.includes('window.API_ENDPOINT')) {
+        // fallback URL 존재 확인
+        if (!gftContent.includes("'https://") && !gftContent.includes('"https://')) {
+            warnings.push('[FREETALK_API] gallery-freetalk.js: API_ENDPOINT 폴백 URL 없음');
+        }
+    }
+} catch (e) {}
+
+// FT-4: 프리토킹 프롬프트 — prompts.js의 FLAG_MEMORIES 캐릭터 매칭
+try {
+    const promptsPath = path.join(__dirname, 'assets/js/prompts.js');
+    if (fs.existsSync(promptsPath)) {
+        const promptsContent = fs.readFileSync(promptsPath, 'utf8');
+        // FLAG_MEMORIES에서 참조하는 캐릭터 이름 확인
+        const charRefs = promptsContent.matchAll(/char:\s*['"]([^'"]+)['"]/g);
+        const promptCharNames = new Set();
+        for (const m of charRefs) promptCharNames.add(m[1]);
+
+        // i18n 이름과 config CHAR_NAME_MAP 매핑 확인
+        for (const name of promptCharNames) {
+            // '서연', 'Seoyeon' 등의 이름이 CHAR_NAME_MAP을 통해 매핑 가능한지
+            if (!NAME_TO_PREFIX[name] && !validCharKeys.includes(name)) {
+                warnings.push('[FREETALK_PROMPT] prompts.js FLAG_MEMORIES char: "' + name + '" 가 NAME_TO_PREFIX에 없음');
+            }
+        }
+    }
+} catch (e) {}
+
+// FT-5: 프리토킹 턴 수 / maxTurns 설정 일관성
+try {
+    const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
+    const maxTurnsMatch = ftSysContent.match(/maxTurns\s*[=:]\s*(\d+)/);
+    const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
+    const gftMaxTurnsMatch = gftContent.match(/maxTurns\s*[=:]\s*(\d+)/);
+    if (maxTurnsMatch && gftMaxTurnsMatch) {
+        // 둘 다 있으면 비교 (같을 필요는 없지만 정보 출력)
+    }
+    // isProcessingChat 잠금 해제 확인 — early return 전에 해제하는지
+    if (ftSysContent.includes('this.isProcessingChat = true')) {
+        // finally 블록이 있는지
+        if (!ftSysContent.includes('finally')) {
+            errors.push('[FREETALK_LOCK] FreeTalkSystem.js: isProcessingChat = true 설정 후 finally 블록 없음 — 잠금 해제 누락 가능');
+        }
+    }
+} catch (e) {}
+
+// FT-6: 갤러리 프리토킹 CHAR_SPEECH_STYLES 언어별 캐릭터 완전성
+try {
+    const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
+    const speechMatch = gftContent.match(/CHAR_SPEECH_STYLES\s*=\s*\{([\s\S]*?)\n\s{4}\};/);
+    if (speechMatch) {
+        const charIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
+        for (const lang of allLangs) {
+            // 각 언어 블록에 모든 캐릭터가 있는지
+            const langBlock = speechMatch[1].split(new RegExp("'" + lang + "'\\s*:"))[1]?.split(/'\w+'\s*:/)[0] || '';
+            for (const cid of charIds) {
+                if (!langBlock.includes(cid)) {
+                    // 언어 블록 자체가 없으면 FREETALK_LANG에서 이미 잡으므로 skip
+                    if (speechMatch[1].includes("'" + lang + "'")) {
+                        warnings.push('[FREETALK_SPEECH] CHAR_SPEECH_STYLES ' + lang + ': "' + cid + '" 캐릭터 스타일 누락');
+                    }
+                }
+            }
+        }
+    }
+} catch (e) {}
+
+console.log('[FREETALK_CHECK] AI 프리토킹 검증 완료\n');
 
 // ===== Print Results =====
 console.log('========== CUPID VALIDATION RESULTS ==========\n');
