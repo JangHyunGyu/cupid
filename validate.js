@@ -329,6 +329,158 @@ for (const lang of i18nLangs) {
     }
 }
 
+// ===== 12. JS Code Pattern Bugs =====
+const JS_DIRS = [
+    path.join(__dirname, 'assets/js/modules'),
+    path.join(__dirname, 'assets/js/loaders'),
+    path.join(__dirname, 'assets/js'),
+];
+const HTML_DIR = __dirname;
+
+// JS 파일 수집 (재귀 X, 지정 디렉토리만)
+const jsFiles = [];
+for (const dir of JS_DIRS) {
+    if (!fs.existsSync(dir)) continue;
+    fs.readdirSync(dir).filter(f => f.endsWith('.js')).forEach(f => {
+        const full = path.join(dir, f);
+        if (!jsFiles.some(x => x.path === full)) {
+            jsFiles.push({ path: full, name: f, content: fs.readFileSync(full, 'utf8') });
+        }
+    });
+}
+// HTML 파일 수집
+const htmlFiles = fs.readdirSync(HTML_DIR)
+    .filter(f => f.endsWith('.html'))
+    .map(f => ({ path: path.join(HTML_DIR, f), name: f, content: fs.readFileSync(path.join(HTML_DIR, f), 'utf8') }));
+
+const allCodeFiles = [...jsFiles, ...htmlFiles];
+
+// 12-1. localStorage.getItem(...) || 기본값 패턴 (볼륨 0이 무시되는 버그)
+for (const file of allCodeFiles) {
+    const lines = file.content.split('\n');
+    lines.forEach((line, i) => {
+        // localStorage.getItem('...') || 기본값 (단, || '{}', || '[]', || '' 같은 문자열 폴백은 정상)
+        if (/localStorage\.getItem\([^)]*\)\s*\|\|/.test(line) && !/\/\//.test(line.split('localStorage')[0]) && !/\|\|\s*['"`]/.test(line)) {
+            errors.push('[CODE_PATTERN] ' + file.name + ':' + (i + 1) + ' localStorage || 기본값 → ?? 또는 !== null 사용 필요: ' + line.trim().substring(0, 80));
+        }
+    });
+}
+
+// 12-2. soundManager 호출에 가드 누락
+for (const file of allCodeFiles) {
+    const lines = file.content.split('\n');
+    lines.forEach((line, i) => {
+        const trimmed = line.trim();
+        // soundManager.xxx() 직접 호출 (가드 없이)
+        if (/(?<!\w)soundManager\.\w+\(/.test(trimmed) && !/if\s*\(/.test(trimmed) && !/typeof\s+soundManager/.test(trimmed) && !/window\.soundManager/.test(trimmed)) {
+            // 같은 줄이나 바로 윗줄에 가드가 있는지 확인
+            const prevLine = i > 0 ? lines[i - 1].trim() : '';
+            const hasPrevGuard = /typeof\s+soundManager/.test(prevLine) || /window\.soundManager/.test(prevLine) || /if\s*\(.*soundManager/.test(prevLine);
+            if (!hasPrevGuard && !/\/\//.test(trimmed.split('soundManager')[0])) {
+                errors.push('[CODE_PATTERN] ' + file.name + ':' + (i + 1) + ' soundManager 가드 없음: ' + trimmed.substring(0, 80));
+            }
+        }
+    });
+}
+
+// 12-3. .firstChild.src 패턴 (텍스트 노드에 src 설정 시 무시됨)
+for (const file of jsFiles) {
+    const lines = file.content.split('\n');
+    lines.forEach((line, i) => {
+        if (/\.firstChild\s*\.src\s*=/.test(line) || /\.firstChild\s*\)?\s*\.src/.test(line)) {
+            warnings.push('[CODE_PATTERN] ' + file.name + ':' + (i + 1) + ' firstChild.src → querySelector("img").src 권장: ' + line.trim().substring(0, 80));
+        }
+    });
+}
+
+// 12-4. || false, || 0 패턴 (getFlag 등에서 0/false가 유효값일 때)
+for (const file of jsFiles) {
+    const lines = file.content.split('\n');
+    lines.forEach((line, i) => {
+        // this.xxx || false 또는 this.xxx || 0 에서 ?? 사용 권장
+        if (/\]\s*\|\|\s*(false|0)\s*[;,)]/.test(line) && !/\/\//.test(line.split('||')[0])) {
+            warnings.push('[CODE_PATTERN] ' + file.name + ':' + (i + 1) + ' || false/0 → ?? 사용 권장: ' + line.trim().substring(0, 80));
+        }
+    });
+}
+
+// ===== 13. Multi-language HTML Inline JS Sync =====
+// index.html(KO)을 기준으로 다른 언어 index 파일의 인라인 JS 패턴 비교
+const koIndex = htmlFiles.find(f => f.name === 'index.html');
+if (koIndex) {
+    const langIndexFiles = htmlFiles.filter(f => /^index-(en|es|ja|fr|de)\.html$/.test(f.name));
+
+    // 체크할 패턴: KO에 있는 수정된 패턴이 다른 언어에도 적용되었는지
+    const syncPatterns = [
+        { name: 'volume_nullcheck', fixed: "!== null ? parseFloat", broken: /localStorage\.getItem\([^)]*[Vv]olume[^)]*\)\s*\|\|/ },
+        { name: 'soundManager_guard', fixed: "window.soundManager", broken: /(?<![.\w])soundManager\.playBgm\(/ },
+        { name: 'modal_close_fix', fixed: "if (e && e.target !== e.currentTarget) return", broken: /e\.target\.id\s*!==\s*['"].*Modal['"]/ },
+    ];
+
+    for (const langFile of langIndexFiles) {
+        for (const pat of syncPatterns) {
+            const koHas = koIndex.content.includes(pat.fixed);
+            const langHasBroken = pat.broken.test(langFile.content);
+            if (koHas && langHasBroken) {
+                errors.push('[HTML_SYNC] ' + langFile.name + ': "' + pat.name + '" 패턴이 index.html(KO)에는 수정됨, 이 파일은 미적용');
+            }
+        }
+    }
+}
+
+// game.html(KO)도 동일 체크
+const koGame = htmlFiles.find(f => f.name === 'game.html');
+if (koGame) {
+    const langGameFiles = htmlFiles.filter(f => /^game-(en|es|ja|fr|de)\.html$/.test(f.name));
+    for (const langFile of langGameFiles) {
+        // maxlength 불일치
+        const koMax = (koGame.content.match(/maxlength="(\d+)"/) || [])[1];
+        const langMax = (langFile.content.match(/maxlength="(\d+)"/) || [])[1];
+        if (koMax && langMax && koMax !== langMax) {
+            warnings.push('[HTML_SYNC] ' + langFile.name + ': maxlength="' + langMax + '" ≠ KO의 maxlength="' + koMax + '"');
+        }
+    }
+}
+
+// ===== 14. CSS Version Consistency =====
+const cssVersions = {};
+for (const file of htmlFiles) {
+    const matches = file.content.matchAll(/style\.css\?v=([0-9.]+)/g);
+    for (const m of matches) {
+        if (!cssVersions[m[1]]) cssVersions[m[1]] = [];
+        cssVersions[m[1]].push(file.name);
+    }
+}
+const cssVersionKeys = Object.keys(cssVersions);
+if (cssVersionKeys.length > 1) {
+    const latest = cssVersionKeys.sort().pop();
+    for (const [ver, files] of Object.entries(cssVersions)) {
+        if (ver !== latest) {
+            files.forEach(f => {
+                errors.push('[CSS_VERSION] ' + f + ': style.css?v=' + ver + ' → 최신 v=' + latest + '로 업데이트 필요');
+            });
+        }
+    }
+}
+
+// ===== 15. i18n Character Name Format Check =====
+// "한글명(English)" 형식이 남아있는지 검사
+const nameFormatRegex = /[\uAC00-\uD7A3]+\([A-Za-z]+\)/;
+for (const lang of i18nLangs) {
+    const langDir = path.join(BASE, 'i18n', lang);
+    if (!fs.existsSync(langDir)) continue;
+    const langFiles = fs.readdirSync(langDir).filter(f => f.endsWith('.json'));
+    for (const file of langFiles) {
+        const content = fs.readFileSync(path.join(langDir, file), 'utf8');
+        const data = JSON.parse(content);
+        for (const [sceneId, entry] of Object.entries(data)) {
+            if (entry.name && nameFormatRegex.test(entry.name)) {
+                errors.push('[I18N_NAME] ' + lang + '/' + file + ' ' + sceneId + ': "' + entry.name + '" → 현지화 이름 사용 필요');
+            }
+        }
+    }
+}
+
 // ===== Print Results =====
 console.log('\n========== CUPID VALIDATION RESULTS ==========\n');
 console.log('Total scenes: ' + Object.keys(allScenes).length);
