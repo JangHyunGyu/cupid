@@ -38,10 +38,15 @@
 - 프리토킹 톤 Day별 차별화 (밝음→그림자→진지→여운)
 - 입버릇/반복 대사 빈도 관리 (캐치프레이즈화 방지)
 
-### 동기화 체크리스트
-- 시나리오 JS 수정 → 번역 파일 6개 언어 확인 → SCENARIO.md 반영
-- SCENARIO.md 수정 → 시나리오 JS + 번역 파일에 반영
-- 캐릭터/배경 이미지 추가/변경 → CHARACTER_IMAGE_PROMPTS.md 업데이트
+### 동기화 체크리스트 (하나가 바뀌면 전부 동기화)
+- **시나리오 JS 수정** → i18n 번역 JSON 6개 언어 → SCENARIO.md → 관련 이미지 확인
+- **SCENARIO.md 수정** → 시나리오 JS → i18n 번역 JSON 6개 언어
+- **캐릭터/배경 이미지 추가/변경** → CHARACTER_IMAGE_PROMPTS.md → SCENARIO.md → 시나리오 JS → gallery-data.js
+- **index.html 인라인 JS 수정** → index-en/es/ja/fr/de.html 전부 동일 반영
+- **game.html 수정** → game-en/es/ja/fr/de.html 전부 동일 반영
+- **gallery.html 수정** → gallery-en/es/ja/fr/de.html 전부 동일 반영
+- **CSS 수정** → 모든 HTML의 style.css?v= 버전 통일
+- **JS 모듈 버전** → loaders/config.js, game-loader.js, gallery-loader.js, modules/config.js(ASSET_VERSION) 4곳 통일
 - 일괄 스크립트 사용 시 ID 중복 매칭 주의 — 맥락 판단 필요한 작업은 직접 하나씩 검토
 
 ## 기술 환경
