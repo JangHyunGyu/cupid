@@ -8,7 +8,7 @@
         "text": "*教室のドアを開けた瞬間——背中に衝撃。*"
     },
     "morning2_dain_1": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「来た？！おはよう！！」"
     },
     "morning2_dain_2": {
@@ -16,7 +16,7 @@
         "text": "「……背骨が折れるかと思った」"
     },
     "morning2_dain_3": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「ははっ、この程度で？！体力つけなよ！」"
     },
     "morning2_dain_4": {
@@ -24,7 +24,7 @@
         "text": "「朝からエネルギー過剰じゃない？」"
     },
     "morning2_dain_5": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「これが普通！あんたが足りないの！」"
     },
     "morning2_dain_6": {
@@ -48,7 +48,7 @@
         "text": "*メモをポケットに入れようとした時——廊下から聞き慣れた声。*"
     },
     "morning2_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「昨日はよく眠れた？」"
     },
     "morning2_seo_3": {
@@ -60,7 +60,7 @@
         "text": "「生徒会長が教室まで挨拶しに来るの？」"
     },
     "morning2_seo_5": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「通りかかっただけ。——今日も楽しい一日を」"
     },
     "morning2_minsu_1": {
@@ -72,7 +72,7 @@
         "text": "*前の席からミンスが振り返る。*"
     },
     "morning2_minsu_3": {
-        "name": "민수(Minsu)",
+        "name": "ミンス",
         "text": "「おい、転校二日目で生徒会長が挨拶に来るのか？俺1年通っても目も合わせてくれなかったのに」"
     },
     "morning2_dain_claim_1": {
@@ -80,7 +80,7 @@
         "text": "「人気がないんじゃない？」"
     },
     "morning2_dain_claim_2": {
-        "name": "민수(Minsu)",
+        "name": "ミンス",
         "text": "「……それは合ってるけど、そこが問題じゃないだろ」"
     },
     "morning2_dain_claim_3": {
@@ -88,7 +88,7 @@
         "text": "*ダインがソヨンの後ろ姿を見ながら。*"
     },
     "morning2_dain_claim_4": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「会長もうちの転校生に興味あるの？」"
     },
     "morning2_dain_claim_5": {
@@ -96,7 +96,7 @@
         "text": "「『うちの』転校生？」"
     },
     "morning2_dain_claim_6": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「あたしが先に見つけたんだから、うちの転校生！先取りだよ先取り！」"
     },
     "morning2_break_1": {
@@ -108,7 +108,7 @@
         "text": "*1時間目が終わって休み時間。廊下でソヨンとすれ違う。ソヨンが止まる。僕の肩を見る。*"
     },
     "morning2_seo_dust_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「ちょっと」"
     },
     "morning2_seo_dust_3": {
@@ -116,7 +116,7 @@
         "text": "*ソヨンの手が僕の肩に伸びる。ホコリを払い落とす。自然に。あまりにも自然に。*"
     },
     "morning2_seo_dust_4": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「服に何かついてた」"
     },
     "morning2_seo_dust_5": {
@@ -124,7 +124,7 @@
         "text": "「……」"
     },
     "morning2_seo_dust_6": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「何？ホコリじゃん」"
     },
     "morning2_dain_react_1": {
@@ -136,7 +136,7 @@
         "text": "*ソヨンが何事もなかったように歩いていく。後ろからダインの声。*"
     },
     "morning2_dain_react_3": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「ねえ！今の何？！肩触ったの？！」"
     },
     "morning2_dain_react_4": {
@@ -144,7 +144,7 @@
         "text": "「ホコリを払ってくれたんだよ」"
     },
     "morning2_dain_react_5": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「ホコリ……本当にホコリあったの？！」"
     },
     "morning2_dain_react_6": {
@@ -156,7 +156,7 @@
         "text": "*ソヨンが消えた廊下で——生徒会の腕輪をつけた女子生徒が近づいてくる。*"
     },
     "morning2_haeun_2": {
-        "name": "하은(Haeun)",
+        "name": "ハウン",
         "text": "「あの、転校生の方ですよね？生徒会副会長のハウンです」"
     },
     "morning2_haeun_3": {
@@ -164,7 +164,7 @@
         "text": "「あ、はい」"
     },
     "morning2_haeun_4": {
-        "name": "하은(Haeun)",
+        "name": "ハウン",
         "text": "「会長が……つまりソヨン先輩が、最近ちょっと変わった気がして」"
     },
     "morning2_haeun_5": {
@@ -172,7 +172,7 @@
         "text": "「変わったって？」"
     },
     "morning2_haeun_6": {
-        "name": "하은(Haeun)",
+        "name": "ハウン",
         "text": "「元々ああいう方じゃないんです。他の生徒に自分から近づくなんて……私が1年見てきて初めてです」"
     },
     "morning2_haeun_7": {

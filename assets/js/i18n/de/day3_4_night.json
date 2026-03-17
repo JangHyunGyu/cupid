@@ -12,11 +12,11 @@
         "text": "*Es sind Nachrichten da.*"
     },
     "night3_faithful_msg_seo_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Was du heute gesehen hast, ist ein Geheimnis"
     },
     "night3_faithful_msg_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Aber du darfst wiederkommen"
     },
     "night3_faithful_msg_seo_3": {
@@ -25,18 +25,18 @@
     },
     "night3_faithful_msg_yuna_1": {
         "name": "Ich",
-        "text": "*유나(Yuna) hat ein Foto einer Notiz geschickt. Eine einzige Zeile in ihrem Notizbuch.*"
+        "text": "*Yuna hat ein Foto einer Notiz geschickt. Eine einzige Zeile in ihrem Notizbuch.*"
     },
     "night3_faithful_msg_yuna_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Der Roman, das Ende habe ich noch nicht entschieden"
     },
     "night3_faithful_msg_dain_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Wenn du nach meinem Knöchel fragen willst, komm persönlich fragen haha"
     },
     "night3_faithful_msg_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ach, aber danke"
     },
     "night3_faithful_msg_dain_3": {
@@ -60,19 +60,19 @@
         "text": "*Zurück in meinem Zimmer. Es war ein schwerer Tag. Ich schaue auf mein Handy.*"
     },
     "night3_cheat_msg_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Sei nur so zu mir"
     },
     "night3_cheat_msg_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Bitte"
     },
     "night3_cheat_msg_4": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Lüg nicht"
     },
     "night3_cheat_msg_5": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Das ist alles"
     },
     "night3_nightmare_1": {
@@ -84,15 +84,15 @@
         "text": "*Ich stehe in der Dunkelheit. Ich kann nichts sehen.*"
     },
     "night3_nightmare_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Du hast es versprochen. Dass es nur ich wäre..."
     },
     "night3_nightmare_4": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Ich habe gesagt, du sollst nicht lügen."
     },
     "night3_nightmare_5": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Du hast gesagt, du kommst. Ich habe gewartet."
     },
     "night3_nightmare_6": {
@@ -103,9 +103,9 @@
         "name": "Ich",
         "text": "*Wessen Hand werde ich nehmen.*",
         "choices": [
-            "서연(Seoyeon)s Hand nehmen",
-            "유나(Yuna)s Hand nehmen",
-            "다인(Dain)s Hand nehmen"
+            "Seoyeons Hand nehmen",
+            "Yunas Hand nehmen",
+            "Dains Hand nehmen"
         ]
     },
     "night3_nightmare_end": {

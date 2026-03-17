@@ -8,23 +8,23 @@
         "text": "*Tres personas. Todas a la vez.*"
     },
     "night2_msg_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Oye!! El tteokbokki de hoy estuvo buenisimo!!"
     },
     "night2_msg_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Manana otra apuesta!! Con otro juego!!"
     },
     "night2_msg_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Gracias por hoy. Terminamos temprano gracias a ti"
     },
     "night2_msg_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Puede que te llame otra vez, asi que ve preparandote"
     },
     "night2_msg_6": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Terminaste el libro?"
     },
     "night2_msg_7": {
@@ -45,15 +45,15 @@
         "text": "El tteokbokki estaba picante jaja"
     },
     "night2_reply_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Jajaja no aguantas el picante?!"
     },
     "night2_reply_dain_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Manana vamos al suave!!"
     },
     "night2_reply_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ah espera el tteokbokki suave no es tteokbokki de verdad jaja"
     },
     "night2_reply_dain_5": {
@@ -65,7 +65,7 @@
         "text": "Llamame y vuelvo"
     },
     "night2_reply_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Haces promesas facilmente"
     },
     "night2_reply_seo_3": {
@@ -73,7 +73,7 @@
         "text": "Es una promesa facil"
     },
     "night2_reply_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "......\nManana al mediodia dejare la azotea abierta. Si vienes o no, es tu decision"
     },
     "night2_reply_seo_5": {
@@ -85,7 +85,7 @@
         "text": "Voy por la mitad. Esta bueno"
     },
     "night2_reply_yuna_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Me alegro"
     },
     "night2_reply_yuna_3": {
@@ -93,7 +93,7 @@
         "text": "*Un breve silencio. -- Y luego.*"
     },
     "night2_reply_yuna_4": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Mira la tercera estrella"
     },
     "night2_reply_yuna_5": {
@@ -101,7 +101,7 @@
         "text": "?"
     },
     "night2_reply_yuna_6": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Te dire por que despues"
     },
     "night2_reply_yuna_7": {

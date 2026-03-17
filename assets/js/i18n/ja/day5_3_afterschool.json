@@ -8,7 +8,7 @@
         "text": "*廊下でソヨンと出くわす。*"
     },
     "after5_farewell_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「…ふぅ。」"
     },
     "after5_farewell_seo_3": {
@@ -16,7 +16,7 @@
         "text": "*ソヨンが髪をかき上げながら。*"
     },
     "after5_farewell_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「まあ、分かってた。あなたは私の計画にない変数だったから。」"
     },
     "after5_farewell_seo_5": {
@@ -24,7 +24,7 @@
         "text": "「ソヨン…」"
     },
     "after5_farewell_seo_6": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "「次は私が先に連れて行くから。」"
     },
     "after5_farewell_seo_7": {
@@ -56,7 +56,7 @@
         "text": "*体育館の前からダインが走ってくる。*"
     },
     "after5_farewell_dain_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「ちっ、残念！」"
     },
     "after5_farewell_dain_3": {
@@ -64,7 +64,7 @@
         "text": "「ダイン…」"
     },
     "after5_farewell_dain_4": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "「でもまあ、あんたが選んだんだから。次は私にもチャンスちょうだいよね！」"
     },
     "after5_farewell_dain_5": {

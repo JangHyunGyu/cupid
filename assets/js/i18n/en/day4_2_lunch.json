@@ -20,7 +20,7 @@
         "text": "*Seoyeon pauses for a moment. -- Then she smiles. Not with her lips, but with her eyes.*"
     },
     "date_seo_pretty_high_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...That line. Did you rehearse it?"
     },
     "date_seo_pretty_high_3": {
@@ -32,11 +32,11 @@
         "text": "*She called me an idiot — but her ears are red. Again.*"
     },
     "date_seo_pretty_low": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...What, all of a sudden. Give a warning before you say things like that."
     },
     "date_seo_bright": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Of course. I put in some effort today."
     },
     "date_seo_walk": {
@@ -44,7 +44,7 @@
         "text": "*We walk through the park. We toss bread to the ducks.*"
     },
     "date_seo_duck": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "These guys are so simple. Give them bread and they follow. Don't, and they won't."
     },
     "date_seo_duck_2": {
@@ -52,7 +52,7 @@
         "text": "Aren't people the same way?"
     },
     "date_seo_duck_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "People sometimes won't come even when you give them bread."
     },
     "date_seo_duck_4": {
@@ -64,7 +64,7 @@
         "text": "*We pass by a flower shop.*"
     },
     "date_seo_flower_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Want to go in?"
     },
     "date_seo_succulent": {
@@ -72,11 +72,11 @@
         "text": "*Seoyeon picks out a small pot. A succulent.*"
     },
     "date_seo_succulent_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "This one's easy to care for. It survives fine without water."
     },
     "date_seo_succulent_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "If you can keep it alive. -- If you can't, I'm taking it back."
     },
     "date_seo_end": {
@@ -104,7 +104,7 @@
         "text": "*Yuna pauses for a moment. She lowers her head slightly.*"
     },
     "date_yuna_pretty_high_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...That."
     },
     "date_yuna_pretty_high_3": {
@@ -112,7 +112,7 @@
         "text": "Hm?"
     },
     "date_yuna_pretty_high_4": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Say it again."
     },
     "date_yuna_pretty_high_5": {
@@ -120,11 +120,11 @@
         "text": "*Again? -- Yuna is asking for a once more.*"
     },
     "date_yuna_pretty_low": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...No one's ever said that to me before."
     },
     "date_yuna_bright": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...I'm not really that bright."
     },
     "date_yuna_bookstore": {
@@ -132,11 +132,11 @@
         "text": "*We head to a bookstore. Yuna walks slowly between the shelves.*"
     },
     "date_yuna_bookstore_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Have you been here before?"
     },
     "date_yuna_bookstore_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Good. That means I showed you first."
     },
     "date_yuna_earphone": {
@@ -144,7 +144,7 @@
         "text": "*Yuna hands me one of her earbuds.*"
     },
     "date_yuna_earphone_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Listen."
     },
     "date_yuna_earphone_3": {
@@ -156,7 +156,7 @@
         "text": "*We pass a secondhand bookshop. Yuna stops walking.*"
     },
     "date_yuna_oldbook_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "I read this book a year ago. Back then, the ending felt sad."
     },
     "date_yuna_oldbook_3": {
@@ -164,7 +164,7 @@
         "text": "And now?"
     },
     "date_yuna_oldbook_4": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Now it reads differently."
     },
     "date_yuna_end": {
@@ -176,7 +176,7 @@
         "text": "*In front of the gym. Dain comes running over. Cap and sportswear.*"
     },
     "date_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "You're here!! Almost late, weren't you?!"
     },
     "date_dain_3": {
@@ -184,7 +184,7 @@
         "text": "I got here ten minutes early."
     },
     "date_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "I was here twenty minutes ago!!"
     },
     "date_dain_compliment_choice": {
@@ -200,7 +200,7 @@
         "text": "*Dain freezes. Her eyes go wide. -- Then she pulls her cap down over her face.*"
     },
     "date_dain_pretty_high_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Wh-- What was that all of a sudden?!"
     },
     "date_dain_pretty_high_3": {
@@ -212,11 +212,11 @@
         "text": "*She said she'd hit me, but her voice was trembling.*"
     },
     "date_dain_pretty_low": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Huh?! What's that all of a sudden!! ...Th-thanks."
     },
     "date_dain_bright": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Obviously!! I'm in peak condition today!!"
     },
     "date_dain_arcade": {
@@ -224,15 +224,15 @@
         "text": "*We go to an arcade. We stand in front of a rhythm game.*"
     },
     "date_dain_arcade_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Alright, let's make a bet!! Loser buys drinks!!"
     },
     "date_dain_arcade_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "It's no fun without stakes!!"
     },
     "date_dain_rhythm": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Full combo!! Did you see that?!"
     },
     "date_dain_rhythm_2": {
@@ -240,7 +240,7 @@
         "text": "...That was amazing."
     },
     "date_dain_rhythm_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Haha, of course!! This one doesn't need knees!!"
     },
     "date_dain_knee": {
@@ -252,7 +252,7 @@
         "text": "*We pass a sporting goods store. Dain stops in front of the display window. Volleyball shoes are on display.*"
     },
     "date_dain_shop": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "......"
     },
     "date_dain_shop_2": {
@@ -260,7 +260,7 @@
         "text": "Dain?"
     },
     "date_dain_shop_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "It's nothing! Let's go!"
     },
     "date_dain_end": {

@@ -40,7 +40,7 @@
         "text": "*Une fille se tient près du portail. Elle repousse ses longs cheveux noirs d'un geste léger — derrière ses lunettes, sa démarche est décontractée. Pas la moindre trace de précipitation.*"
     },
     "seoyeon_meet_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "L'élève transféré ? C'est bien {name} ?"
     },
     "seoyeon_meet_2": {
@@ -52,11 +52,11 @@
         "text": "C'est bien moi. Comment tu le sais ?"
     },
     "seoyeon_meet_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Je suis la présidente du conseil des élèves. Accueillir les nouveaux, c'est mon rôle."
     },
     "seoyeon_meet_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Suis-moi. Je vais te faire visiter."
     },
     "seoyeon_meet_6": {
@@ -64,7 +64,7 @@
         "text": "La présidente en personne ? Quel honneur."
     },
     "seoyeon_meet_7": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Si c'est un honneur ou non, c'est moi qui en décide."
     },
     "seoyeon_meet_8": {
@@ -73,7 +73,7 @@
     },
     "seoyeon_meet_9": {
         "name": "Moi",
-        "text": "*서연(Seoyeon) marche vers le portail en me faisant signe de la suivre.*"
+        "text": "*Seoyeon marche vers le portail en me faisant signe de la suivre.*"
     },
     "seoyeon_choice": {
         "name": "Moi",
@@ -85,10 +85,10 @@
     },
     "choice_flirt_1": {
         "name": "Moi",
-        "text": "*서연(Seoyeon) s'arrête et se retourne. Pas surprise — plutôt amusée.*"
+        "text": "*Seoyeon s'arrête et se retourne. Pas surprise — plutôt amusée.*"
     },
     "choice_flirt_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Oh. Premier jour et déjà quelqu'un comme ça. Intérêt +1."
     },
     "choice_flirt_3": {
@@ -96,7 +96,7 @@
         "text": "Un système de points ?"
     },
     "choice_flirt_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Tu es la première personne dans ce lycée à me répondre."
     },
     "choice_flirt_5": {
@@ -104,7 +104,7 @@
         "text": "Je suis flatté."
     },
     "choice_flirt_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Tu ne sais pas encore si c'est flatteur ou catastrophique."
     },
     "choice_flirt_7": {
@@ -112,7 +112,7 @@
         "text": "*Elle sourit. Elle a vraiment l'air de s'amuser. Une présidente du conseil avec cette énergie dès le premier jour.*"
     },
     "choice_joke_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "C'est gratuit. — Mais les intérêts s'accumulent après."
     },
     "choice_joke_2": {
@@ -120,27 +120,27 @@
         "text": "Quelle présidente redoutable."
     },
     "choice_joke_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Au moins, tu ne t'ennuieras pas."
     },
     "hallway_1": {
         "name": "Moi",
-        "text": "*서연(Seoyeon) me guide dans le couloir. Les élèves qui passent la saluent. Elle répond à chacun d'un signe de tête.*"
+        "text": "*Seoyeon me guide dans le couloir. Les élèves qui passent la saluent. Elle répond à chacun d'un signe de tête.*"
     },
     "hallway_2": {
         "name": "Moi",
         "text": "*Populaire ou redoutée — probablement les deux.*"
     },
     "hallway_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Le bâtiment des premières années est ici, la bibliothèque est là-bas. La cafétéria est au sous-sol."
     },
     "hallway_4": {
         "name": "Moi",
-        "text": "*서연(Seoyeon) sort une clé de sa poche et l'agite légèrement.*"
+        "text": "*Seoyeon sort une clé de sa poche et l'agite légèrement.*"
     },
     "hallway_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Le toit est normalement fermé à clé. Privilège de présidente."
     },
     "hallway_6": {
@@ -148,7 +148,7 @@
         "text": "Tu as un repaire secret ou quoi ?"
     },
     "hallway_7": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Tu es perspicace."
     },
     "hallway_8": {
@@ -160,7 +160,7 @@
         "text": "*On arrive devant la salle de classe.*"
     },
     "hallway_10": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "C'est ici. Vas-y, entre."
     },
     "hallway_11": {
@@ -168,12 +168,12 @@
         "text": "Tu me guideras aussi à midi ?"
     },
     "hallway_12": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Ça dépendra de toi."
     },
     "hallway_13": {
         "name": "Moi",
-        "text": "*서연(Seoyeon) se retourne et agite légèrement la main. Elle ne regarde pas en arrière.*"
+        "text": "*Seoyeon se retourne et agite légèrement la main. Elle ne regarde pas en arrière.*"
     },
     "hallway_14": {
         "name": "Moi",
@@ -204,7 +204,7 @@
         "text": "*Un sifflement depuis un coin de la classe.*"
     },
     "classroom_dain_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Oh ! Un nouveau garçon ! Enfin !"
     },
     "classroom_dain_2": {
@@ -213,10 +213,10 @@
     },
     "classroom_dain_3": {
         "name": "Professeur",
-        "text": "다인(Dain), un peu de calme... Et arrête de porter ton maillot de sport en classe."
+        "text": "Dain, un peu de calme... Et arrête de porter ton maillot de sport en classe."
     },
     "classroom_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Oh, m'dame ! C'est trop galère de se changer ! Bref, je suis contente pour le nouveau !!"
     },
     "classroom_dain_5": {
@@ -237,14 +237,14 @@
     },
     "classroom_seat_2": {
         "name": "Moi",
-        "text": "*C'est à côté de 다인(Dain). Sauvé ou condamné — je ne sais pas, mais au moins ce ne sera pas calme.*"
+        "text": "*C'est à côté de Dain. Sauvé ou condamné — je ne sais pas, mais au moins ce ne sera pas calme.*"
     },
     "classroom_minsu_1": {
         "name": "Moi",
         "text": "*Au moment de m'asseoir, le garçon devant moi se retourne.*"
     },
     "classroom_minsu_2": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "Eh, le nouveau. Bienvenue. — Et un conseil."
     },
     "classroom_minsu_3": {
@@ -252,19 +252,19 @@
         "text": "Lequel ?"
     },
     "classroom_minsu_4": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "Pense à ton endurance."
     },
     "classroom_dain_talk_1": {
         "name": "Moi",
-        "text": "*Au moins il y a quelqu'un de sensé ici. — Son badge indique '민수(Minsu)'.*"
+        "text": "*Au moins il y a quelqu'un de sensé ici. — Son badge indique 'Minsu'.*"
     },
     "classroom_dain_talk_2": {
         "name": "Moi",
-        "text": "*À peine assis, 다인(Dain) se penche vers moi. Aucune notion d'espace personnel.*"
+        "text": "*À peine assis, Dain se penche vers moi. Aucune notion d'espace personnel.*"
     },
     "classroom_dain_talk_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hé, {name} ! T'aimes le sport ?!"
     },
     "classroom_dain_talk_4": {
@@ -272,7 +272,7 @@
         "text": "Comme ça, sans prévenir ?"
     },
     "classroom_dain_talk_5": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "C'est juste que j'ai personne pour aller au gymnase après les cours ! J'ai besoin de quelqu'un pour me lancer des balles !"
     },
     "classroom_dain_talk_6": {
@@ -280,7 +280,7 @@
         "text": "Je suis une machine à balles ?"
     },
     "classroom_dain_talk_7": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hahaha, t'es sûrement mieux qu'une machine ! Probablement !"
     },
     "classroom_dain_talk_8": {
@@ -297,7 +297,7 @@
     },
     "classroom_yuna_note_3": {
         "name": "Moi",
-        "text": "*'T'es tombé sur la place bruyante. — 유나(Yuna)'*"
+        "text": "*'T'es tombé sur la place bruyante. — Yuna'*"
     },
     "classroom_yuna_note_4": {
         "name": "Moi",
@@ -305,7 +305,7 @@
     },
     "classroom_yuna_note_5": {
         "name": "Moi",
-        "text": "*Je regarde vers 유나(Yuna). Elle fixe toujours la fenêtre. Mais j'ai l'impression que le bout de son oreille a bougé.*"
+        "text": "*Je regarde vers Yuna. Elle fixe toujours la fenêtre. Mais j'ai l'impression que le bout de son oreille a bougé.*"
     },
     "classroom_yuna_note_6": {
         "name": "Moi",

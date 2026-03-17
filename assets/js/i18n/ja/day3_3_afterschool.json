@@ -14,7 +14,7 @@
     },
     "after3_seo_1": {
         "name": "僕",
-        "text": "*生徒会室のドアを開けた。— 서연(Seoyeon)が机に突っ伏している。*"
+        "text": "*生徒会室のドアを開けた。— ソヨンが机に突っ伏している。*"
     },
     "after3_seo_2": {
         "name": "僕",
@@ -22,18 +22,18 @@
     },
     "after3_seo_3": {
         "name": "僕",
-        "text": "*서연(Seoyeon)が気配に顔を上げる。目が疲れて見える。化粧が少し崩れている。*"
+        "text": "*ソヨンが気配に顔を上げる。目が疲れて見える。化粧が少し崩れている。*"
     },
     "after3_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "......"
     },
     "after3_seo_5": {
         "name": "{name}",
-        "text": "서연(Seoyeon)？"
+        "text": "ソヨン？"
     },
     "after3_seo_6": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "...見た？"
     },
     "after3_seo_7": {
@@ -41,15 +41,15 @@
         "text": "何を？"
     },
     "after3_seo_8": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "こんな姿。— これは秘密だよ。"
     },
     "after3_seo_9": {
         "name": "僕",
-        "text": "*서연(Seoyeon)が姿勢を正す。だけど— いつもの完璧な笑顔が戻らない。*"
+        "text": "*ソヨンが姿勢を正す。だけど— いつもの完璧な笑顔が戻らない。*"
     },
     "after3_seo_choice": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "今度私がお願いしたら、無条件で聞いて。— それが代償。",
         "choices": [
             "完璧じゃなくてもいいんだけど",
@@ -61,7 +61,7 @@
         "text": "*ソヨンが一瞬止まる。箸を置く。ゆっくりと。*"
     },
     "after3_seo_choice1_react": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "...そんなこと。簡単に言っちゃダメなのに。"
     },
     "after3_seo_choice2": {
@@ -74,15 +74,15 @@
     },
     "after3_yuna_1": {
         "name": "僕",
-        "text": "*図書館の別館。유나(Yuna)がいた秘密の読書スペース。— ドアが開いている。*"
+        "text": "*図書館の別館。ユナがいた秘密の読書スペース。— ドアが開いている。*"
     },
     "after3_yuna_2": {
         "name": "僕",
-        "text": "*入ると유나(Yuna)がいない。代わりに— ソファの上にノートが開いている。手書きがびっしり。*"
+        "text": "*入るとユナがいない。代わりに— ソファの上にノートが開いている。手書きがびっしり。*"
     },
     "after3_yuna_3": {
         "name": "僕",
-        "text": "*小説だ。유나(Yuna)が書いた小説。— 読んでもいいかな？*"
+        "text": "*小説だ。ユナが書いた小説。— 読んでもいいかな？*"
     },
     "after3_yuna_4": {
         "name": "僕",
@@ -93,20 +93,20 @@
         "text": "*『ある日、転校生が来た。彼は図書館に来て、何も言わず隣に座った。— 私はそれが嫌じゃなかった。』*"
     },
     "after3_yuna_6": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "何してるの。"
     },
     "after3_yuna_7": {
         "name": "僕",
-        "text": "*後ろから유나(Yuna)の声。振り返ると유나(Yuna)が飲み物を二つ持って立っている。— ノートを見ている僕を見て、固まる。*"
+        "text": "*後ろからユナの声。振り返るとユナが飲み物を二つ持って立っている。— ノートを見ている僕を見て、固まる。*"
     },
     "after3_yuna_8": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "...それ。"
     },
     "after3_yuna_9": {
         "name": "僕",
-        "text": "*耳。赤い。— 유나(Yuna)が赤くなるのを初めて見た。*"
+        "text": "*耳。赤い。— ユナが赤くなるのを初めて見た。*"
     },
     "after3_yuna_choice": {
         "name": "{name}",
@@ -117,7 +117,7 @@
         ]
     },
     "after3_yuna_choice1": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "...主人公の名前なんてない。"
     },
     "after3_yuna_choice1_2": {
@@ -125,7 +125,7 @@
         "text": "『転校生が図書館に来た』は偶然の一致？"
     },
     "after3_yuna_choice1_3": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "...小説は。フィクションだから。"
     },
     "after3_yuna_choice1_react": {
@@ -134,27 +134,27 @@
     },
     "after3_yuna_choice2": {
         "name": "僕",
-        "text": "*유나(Yuna)が一瞬止まる。ノートを見下ろす。*"
+        "text": "*ユナが一瞬止まる。ノートを見下ろす。*"
     },
     "after3_yuna_choice2_2": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "...結末はまだ決めてない。"
     },
     "after3_yuna_choice2_3": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "...結末を書いたら終わっちゃうから。"
     },
     "after3_yuna_choice2_react": {
         "name": "僕",
-        "text": "*유나(Yuna)が二文以上続けて話した。— この人にとってそれは感情の証拠だ。*"
+        "text": "*ユナが二文以上続けて話した。— この人にとってそれは感情の証拠だ。*"
     },
     "after3_yuna_end": {
         "name": "僕",
-        "text": "*유나(Yuna)がノートを胸にぎゅっと抱えている。*"
+        "text": "*ユナがノートを胸にぎゅっと抱えている。*"
     },
     "after3_dain_1": {
         "name": "僕",
-        "text": "*体育館。다인(Dain)が一人でストレッチしている。軽く走ってみると—*"
+        "text": "*体育館。ダインが一人でストレッチしている。軽く走ってみると—*"
     },
     "after3_dain_2": {
         "name": "僕",
@@ -162,10 +162,10 @@
     },
     "after3_dain_3": {
         "name": "{name}",
-        "text": "다인(Dain)！"
+        "text": "ダイン！"
     },
     "after3_dain_4": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "あ！大丈夫！！ちょっとひねっただけ！！"
     },
     "after3_dain_5": {
@@ -178,7 +178,7 @@
     },
     "after3_dain_choice": {
         "name": "僕",
-        "text": "*다인(Dain)がベンチに座る。膝をさする。*",
+        "text": "*ダインがベンチに座る。膝をさする。*",
         "choices": [
             "隣に座って静かに待つ",
             "湿布ある？取ってこようか？"
@@ -186,10 +186,10 @@
     },
     "after3_dain_choice1": {
         "name": "僕",
-        "text": "*何も言わず隣に座る。다인(Dain)がちらっとこちらを見る。*"
+        "text": "*何も言わず隣に座る。ダインがちらっとこちらを見る。*"
     },
     "after3_dain_choice1_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "...なんで聞かないの？"
     },
     "after3_dain_choice1_3": {
@@ -198,75 +198,75 @@
     },
     "after3_dain_choice1_react": {
         "name": "僕",
-        "text": "*다인(Dain)が一瞬止まる。— そして小さく笑う。ビックリマークのない笑顔。*"
+        "text": "*ダインが一瞬止まる。— そして小さく笑う。ビックリマークのない笑顔。*"
     },
     "after3_dain_choice1_react2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "...そうだね。大丈夫って言ってた。"
     },
     "after3_dain_choice1_react3": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "ありがとう。何も聞かないでくれて。"
     },
     "after3_dain_choice2": {
         "name": "僕",
-        "text": "*静かな다인(Dain)。— この人の本当の温度を初めて感じる気がする。*"
+        "text": "*静かなダイン。— この人の本当の温度を初めて感じる気がする。*"
     },
     "after3_dain_end": {
         "name": "僕",
-        "text": "*다인(Dain)が拳で軽く肩を叩く。— 昨日より弱い。*"
+        "text": "*ダインが拳で軽く肩を叩く。— 昨日より弱い。*"
     },
     "after3_confront_1": {
         "name": "僕",
-        "text": "*放課後の場所から出ると— 서연(Seoyeon)が廊下で待っている。腕を組んで。いつもの余裕がない。*"
+        "text": "*放課後の場所から出ると— ソヨンが廊下で待っている。腕を組んで。いつもの余裕がない。*"
     },
     "after3_confront_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "{name}。ちょっと。"
     },
     "after3_confront_3": {
         "name": "僕",
-        "text": "*서연(Seoyeon)が廊下の端まで連れて行く。誰もいない場所。*"
+        "text": "*ソヨンが廊下の端まで連れて行く。誰もいない場所。*"
     },
     "after3_confront_4": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "昧食の時のことなんだけど。"
     },
     "after3_confront_5": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "君が他の子に笑いかけると、私の中で何かが崩れる感じがした。"
     },
     "after3_confront_6": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "正直に言って。みんなに週末の約束したの？"
     },
     "after3_confront_choice": {
         "name": "僕",
-        "text": "*서연(Seoyeon)がまっすぐ見つめてくる。生徒会長の目じゃない。一人の人間の目だ。*",
+        "text": "*ソヨンがまっすぐ見つめてくる。生徒会長の目じゃない。一人の人間の目だ。*",
         "choices": [
             "正直に認める",
             "時間帯が違うから大丈夫だと思った",
-            "서연(Seoyeon)だけが本気だよ"
+            "ソヨンだけが本気だよ"
         ]
     },
     "after3_confront_admit": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "...断れなかったから。"
     },
     "after3_confront_admit_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "それが一番残酷な言葉だよ、{name}。断れない優しさが— 偽りの希望を与えるんだから。"
     },
     "after3_confront_admit_3": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "私は君の選択肢の一つになりたくない。"
     },
     "after3_confront_admit_4": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "唯一の答えか、何もないか。— 中途半端はできない。"
     },
     "after3_confront_admit_5": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "...今日は屋上、開けておかないから。"
     },
     "after3_confront_admit_6": {
@@ -274,15 +274,15 @@
         "text": "*背筋が伸びている。完璧に。——でも拳が握られている。手の甲が白い。*"
     },
     "after3_confront_excuse": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "...それが問題だって分からない？"
     },
     "after3_confront_excuse_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "約束の数が問題じゃない。約束の重さが問題なの。"
     },
     "after3_confront_lie": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "...本当？その言葉...信じていいの？"
     },
     "after3_confront_lie_2": {
@@ -291,35 +291,35 @@
     },
     "after3_confront_yuna_enter": {
         "name": "僕",
-        "text": "*서연(Seoyeon)が去った後— 유나(Yuna)が廊下の端に立っている。いつからいたのか分からない。*"
+        "text": "*ソヨンが去った後— ユナが廊下の端に立っている。いつからいたのか分からない。*"
     },
     "after3_confront_yuna_1": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "全部聞こえた。"
     },
     "after3_confront_yuna_2": {
         "name": "{name}",
-        "text": "유나(Yuna)..."
+        "text": "ユナ..."
     },
     "after3_confront_yuna_3": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "謝罪はいらない。"
     },
     "after3_confront_yuna_4": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "誰の隣に立つのか、その重さを分かってほしい。"
     },
     "after3_confront_yuna_5": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "明日は逃げないで。君が作った期待、最後まで責任取って。"
     },
     "after3_confront_yuna_6": {
         "name": "僕",
-        "text": "*유나(Yuna)が長い文を話した。複数の文を。— それはそれだけ怒っているということだ。*"
+        "text": "*ユナが長い文を話した。複数の文を。— それはそれだけ怒っているということだ。*"
     },
     "after3_confront_end": {
         "name": "僕",
-        "text": "*유나(Yuna)が背を向ける。— 止まらない。*"
+        "text": "*ユナが背を向ける。— 止まらない。*"
     },
     "after3_final": {
         "name": "僕",

@@ -12,7 +12,7 @@
         "text": "*Mein Handy klingelt. Der Schul-Messenger.*"
     },
     "night_msg_seo_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*Wie war das Dach heute?*"
     },
     "night_msg_seo_2": {
@@ -20,11 +20,11 @@
         "text": "*Die Brise war schön*"
     },
     "night_msg_seo_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*Nächstes Mal hab ich wenigstens Getränke bereit*"
     },
     "night_msg_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*...Geht aufs Haus*"
     },
     "night_msg_seo_5": {
@@ -32,11 +32,11 @@
         "text": "*Sie hat ‘Geht aufs Haus’ absichtlich als separate Nachricht geschickt. — Ist das berechnet oder aufrichtig?*"
     },
     "night_msg_yuna_1": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*...Danke, dass du heute still warst*"
     },
     "night_msg_yuna_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*Morgen halte ich dir den Platz frei*"
     },
     "night_msg_yuna_3": {
@@ -44,15 +44,15 @@
         "text": "*Kurz. Aber ‘ich halte dir den Platz frei’ — ist das bei ihr nicht die wärmste Begrüßung, die sie geben kann?*"
     },
     "night_msg_dain_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Schere-Stein-Papier-Revanche ist MORGEN!!*"
     },
     "night_msg_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Bloß nicht abhauen lol*"
     },
     "night_msg_dain_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Das Brotgeld tut mir immer noch weh ehrlich gesagt lolol*"
     },
     "night_msg_dain_4": {
@@ -72,11 +72,11 @@
         "text": "*Der Bildschirm leuchtet auf.*"
     },
     "night_seo_late_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*Wollen wir morgen zusammen zur Schule gehen?*"
     },
     "night_seo_late_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "*Ich warte vor deinem Haus*"
     },
     "night_seo_late_3": {
@@ -84,15 +84,15 @@
         "text": "*...Was? Die Schülerratsvorsitzende, vor meinem Haus? — Mein Herz schlägt einen Takt schneller. Warum.*"
     },
     "night_yuna_late_1": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*...Bist du noch wach?*"
     },
     "night_yuna_late_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*Die Sterne sind schön*"
     },
     "night_yuna_late_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "*Das ist alles*"
     },
     "night_yuna_late_4": {
@@ -100,15 +100,15 @@
         "text": "*Sie sagte ‘das ist alles’, aber es fühlt sich nicht nach ‘alles’ an.*"
     },
     "night_dain_late_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Hey du bist doch noch wach?!*"
     },
     "night_dain_late_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Suche jemanden fürs Frühsport morgen!*"
     },
     "night_dain_late_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "*Nein wird nicht akzeptiert lol*"
     },
     "night_dain_late_4": {

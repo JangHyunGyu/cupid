@@ -8,23 +8,23 @@
         "text": "*Drei Personen. Gleichzeitig.*"
     },
     "night2_msg_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hey!! Das Tteokbokki heute war mega gut!!"
     },
     "night2_msg_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Morgen machen wir wieder eine Wette!! Andere Disziplin!!"
     },
     "night2_msg_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Danke fuer heute. Wir waren frueher fertig dank dir"
     },
     "night2_msg_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Ich ruf dich vielleicht naechstes Mal wieder, also sei vorbereitet"
     },
     "night2_msg_6": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Hast du das Buch fertig gelesen?"
     },
     "night2_msg_7": {
@@ -45,15 +45,15 @@
         "text": "Das Tteokbokki war scharf lol"
     },
     "night2_reply_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Lol kannst kein Scharfes ab?!"
     },
     "night2_reply_dain_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Morgen nehmen wir mildes!!"
     },
     "night2_reply_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ah warte mildes Tteokbokki ist kein richtiges Tteokbokki lol"
     },
     "night2_reply_dain_5": {
@@ -65,7 +65,7 @@
         "text": "Ruf mich an und ich komme wieder"
     },
     "night2_reply_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Du machst leichtfertig Versprechen"
     },
     "night2_reply_seo_3": {
@@ -73,7 +73,7 @@
         "text": "Ist ein leichtes Versprechen"
     },
     "night2_reply_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "......\nMorgen Mittag lass ich das Dach offen. Ob du kommst oder nicht, liegt bei dir"
     },
     "night2_reply_seo_5": {
@@ -85,7 +85,7 @@
         "text": "Etwa zur Haelfte. Ist gut"
     },
     "night2_reply_yuna_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Schoen zu hoeren"
     },
     "night2_reply_yuna_3": {
@@ -93,7 +93,7 @@
         "text": "*Kurze Stille. -- Und dann.*"
     },
     "night2_reply_yuna_4": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Schau dir den dritten Stern an"
     },
     "night2_reply_yuna_5": {
@@ -101,7 +101,7 @@
         "text": "?"
     },
     "night2_reply_yuna_6": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Den Grund sag ich dir spaeter"
     },
     "night2_reply_yuna_7": {

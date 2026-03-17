@@ -40,7 +40,7 @@
         "text": "*Ein Mädchen steht am Tor. Sie streicht sich lässig das lange schwarze Haar zurück — hinter ihrer Brille ist ihr Gang entspannt. Keine Spur von Eile.*"
     },
     "seoyeon_meet_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Transferschüler? Du bist {name}, oder?"
     },
     "seoyeon_meet_2": {
@@ -52,11 +52,11 @@
         "text": "Stimmt. Woher weißt du das?"
     },
     "seoyeon_meet_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Ich bin die Schülerratsvorsitzende. Neue Schüler einzuführen ist meine Aufgabe."
     },
     "seoyeon_meet_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Komm mit. Ich zeige dir die Schule."
     },
     "seoyeon_meet_6": {
@@ -64,7 +64,7 @@
         "text": "Die Vorsitzende persönlich? Welche Ehre."
     },
     "seoyeon_meet_7": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Ob es eine Ehre ist oder nicht — das entscheide ich."
     },
     "seoyeon_meet_8": {
@@ -73,7 +73,7 @@
     },
     "seoyeon_meet_9": {
         "name": "Ich",
-        "text": "*서연(Seoyeon) geht Richtung Tor und winkt mich zu sich.*"
+        "text": "*Seoyeon geht Richtung Tor und winkt mich zu sich.*"
     },
     "seoyeon_choice": {
         "name": "Ich",
@@ -85,10 +85,10 @@
     },
     "choice_flirt_1": {
         "name": "Ich",
-        "text": "*서연(Seoyeon) bleibt stehen und dreht sich um. Nicht überrascht — eher amüsiert.*"
+        "text": "*Seoyeon bleibt stehen und dreht sich um. Nicht überrascht — eher amüsiert.*"
     },
     "choice_flirt_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Wow. Erster Tag und schon so einer. Interesse +1."
     },
     "choice_flirt_3": {
@@ -96,7 +96,7 @@
         "text": "Ein Punktesystem?"
     },
     "choice_flirt_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Du bist die erste Person an dieser Schule, die mir widerspricht."
     },
     "choice_flirt_5": {
@@ -104,7 +104,7 @@
         "text": "Ich fühle mich geschmeichelt."
     },
     "choice_flirt_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Du weißt noch nicht, ob es Schmeichelei oder Katastrophe ist."
     },
     "choice_flirt_7": {
@@ -112,7 +112,7 @@
         "text": "*Sie lächelt. Sie scheint wirklich amüsiert zu sein. Eine Schülerratsvorsitzende mit dieser Energie am ersten Tag.*"
     },
     "choice_joke_1": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Kostenlos. — Aber die Zinsen kommen später."
     },
     "choice_joke_2": {
@@ -120,27 +120,27 @@
         "text": "Eine furchteinflößende Vorsitzende."
     },
     "choice_joke_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Langweilig wird es zumindest nicht."
     },
     "hallway_1": {
         "name": "Ich",
-        "text": "*서연(Seoyeon) führt mich durch den Flur. Vorbeigehende Schüler grüßen sie. Sie erwidert jeden Gruß mit einem Nicken.*"
+        "text": "*Seoyeon führt mich durch den Flur. Vorbeigehende Schüler grüßen sie. Sie erwidert jeden Gruß mit einem Nicken.*"
     },
     "hallway_2": {
         "name": "Ich",
         "text": "*Beliebt oder gefürchtet — wahrscheinlich beides.*"
     },
     "hallway_3": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Das Gebäude der Erstklässler ist hier, die Bibliothek ist drüben. Der Kiosk ist im Untergeschoss."
     },
     "hallway_4": {
         "name": "Ich",
-        "text": "*서연(Seoyeon) zieht einen Schlüssel aus der Tasche und schüttelt ihn leicht.*"
+        "text": "*Seoyeon zieht einen Schlüssel aus der Tasche und schüttelt ihn leicht.*"
     },
     "hallway_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Das Dach ist normalerweise abgeschlossen. Privileg der Vorsitzenden."
     },
     "hallway_6": {
@@ -148,7 +148,7 @@
         "text": "Hast du da oben ein Geheimversteck?"
     },
     "hallway_7": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Du bist aufmerksam."
     },
     "hallway_8": {
@@ -160,7 +160,7 @@
         "text": "*Wir sind vor dem Klassenzimmer angekommen.*"
     },
     "hallway_10": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Hier ist es. Geh rein."
     },
     "hallway_11": {
@@ -168,12 +168,12 @@
         "text": "Führst du mich auch in der Mittagspause?"
     },
     "hallway_12": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Das hängt davon ab, wie gut du dich anstellst."
     },
     "hallway_13": {
         "name": "Ich",
-        "text": "*서연(Seoyeon) dreht sich um und winkt leicht. Sie schaut nicht zurück.*"
+        "text": "*Seoyeon dreht sich um und winkt leicht. Sie schaut nicht zurück.*"
     },
     "hallway_14": {
         "name": "Ich",
@@ -204,7 +204,7 @@
         "text": "*Ein Pfiff aus einer Ecke des Raums.*"
     },
     "classroom_dain_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Oh! Ein neuer Junge! Endlich!"
     },
     "classroom_dain_2": {
@@ -213,10 +213,10 @@
     },
     "classroom_dain_3": {
         "name": "Klassenlehrerin",
-        "text": "다인(Dain), bitte etwas leiser... Und hör auf, dein Trikot im Unterricht zu tragen."
+        "text": "Dain, bitte etwas leiser... Und hör auf, dein Trikot im Unterricht zu tragen."
     },
     "classroom_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ach, Frau Lehrerin! Umziehen ist so nervig! Jedenfalls freue ich mich über den Neuen!!"
     },
     "classroom_dain_5": {
@@ -237,14 +237,14 @@
     },
     "classroom_seat_2": {
         "name": "Ich",
-        "text": "*Sie ist neben 다인(Dain). Gerettet oder verloren — ich bin mir nicht sicher, aber leise wird es bestimmt nicht.*"
+        "text": "*Sie ist neben Dain. Gerettet oder verloren — ich bin mir nicht sicher, aber leise wird es bestimmt nicht.*"
     },
     "classroom_minsu_1": {
         "name": "Ich",
         "text": "*Als ich mich setzen will, dreht sich der Junge vor mir um.*"
     },
     "classroom_minsu_2": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "Hey, Neuer. Willkommen. — Und ein Rat."
     },
     "classroom_minsu_3": {
@@ -252,19 +252,19 @@
         "text": "Welcher?"
     },
     "classroom_minsu_4": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "Ausdauertraining."
     },
     "classroom_dain_talk_1": {
         "name": "Ich",
-        "text": "*Es gibt also auch vernünftige Leute hier. — Auf seinem Namensschild steht '민수(Minsu)'.*"
+        "text": "*Es gibt also auch vernünftige Leute hier. — Auf seinem Namensschild steht 'Minsu'.*"
     },
     "classroom_dain_talk_2": {
         "name": "Ich",
-        "text": "*Kaum sitze ich, lehnt sich 다인(Dain) herüber. Null Verständnis für persönlichen Freiraum.*"
+        "text": "*Kaum sitze ich, lehnt sich Dain herüber. Null Verständnis für persönlichen Freiraum.*"
     },
     "classroom_dain_talk_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hey, {name}! Magst du Sport?!"
     },
     "classroom_dain_talk_4": {
@@ -272,7 +272,7 @@
         "text": "Einfach so?"
     },
     "classroom_dain_talk_5": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ich brauch einfach jemanden für die Turnhalle nach der Schule! Jemand muss mir Bälle zuwerfen!"
     },
     "classroom_dain_talk_6": {
@@ -280,7 +280,7 @@
         "text": "Bin ich eine Ballmaschine?"
     },
     "classroom_dain_talk_7": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hahaha, du bist bestimmt besser als eine Ballmaschine! Wahrscheinlich!"
     },
     "classroom_dain_talk_8": {
@@ -297,7 +297,7 @@
     },
     "classroom_yuna_note_3": {
         "name": "Ich",
-        "text": "*'Du hast den lauten Platz erwischt. — 유나(Yuna)'*"
+        "text": "*'Du hast den lauten Platz erwischt. — Yuna'*"
     },
     "classroom_yuna_note_4": {
         "name": "Ich",
@@ -305,7 +305,7 @@
     },
     "classroom_yuna_note_5": {
         "name": "Ich",
-        "text": "*Ich schaue zu 유나(Yuna). Sie blickt immer noch aus dem Fenster. Aber ich glaube, ihre Ohrspitze hat sich leicht bewegt.*"
+        "text": "*Ich schaue zu Yuna. Sie blickt immer noch aus dem Fenster. Aber ich glaube, ihre Ohrspitze hat sich leicht bewegt.*"
     },
     "classroom_yuna_note_6": {
         "name": "Ich",

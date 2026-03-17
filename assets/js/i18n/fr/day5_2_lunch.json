@@ -4,7 +4,7 @@
         "text": "*Nous nous tenons côte à côte devant le portail de l'école. L'endroit exact où Seoyeon m'attendait le premier jour.*"
     },
     "tour_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "C'est ici qu'on s'est rencontrés pour la première fois."
     },
     "tour_seo_3": {
@@ -12,7 +12,7 @@
         "text": "J'ai failli me faire gronder quand j'ai dit 'c'est trop pour moi' ce jour-là."
     },
     "tour_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Je ne t'ai pas grondé, si ? — Tu m'as plu dès ce moment-là."
     },
     "tour_seo_5": {
@@ -20,7 +20,7 @@
         "text": "Dès le premier jour ?"
     },
     "tour_seo_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...C'était peut-être une illusion du vent."
     },
     "tour_seo_7": {
@@ -28,7 +28,7 @@
         "text": "*Il n'y a pas de vent.*"
     },
     "tour_seo_8": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Après le diplôme, je veux être quelqu'un qui travaille pour les autres."
     },
     "tour_seo_9": {
@@ -36,7 +36,7 @@
         "text": "Pas en tant que présidente du conseil des élèves ?"
     },
     "tour_seo_10": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "En tant que moi-même, pas la présidente. — C'est toi qui me l'as montré. Qu'on peut être soi-même sans le titre."
     },
     "tour_seo_end": {
@@ -48,7 +48,7 @@
         "text": "*La salle de lecture de la bibliothèque. La place même où Yuna avait dit 'Tu peux t'asseoir ici si tu n'es pas bruyant' le premier jour.*"
     },
     "tour_yuna_2": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Ici."
     },
     "tour_yuna_3": {
@@ -60,7 +60,7 @@
         "text": "C'est ici que je me suis assis pour la première fois."
     },
     "tour_yuna_5": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...Tu avais pris trois livres ce jour-là."
     },
     "tour_yuna_6": {
@@ -68,7 +68,7 @@
         "text": "Tu t'en souviens encore ?"
     },
     "tour_yuna_7": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Je me souviens de tout."
     },
     "tour_yuna_8": {
@@ -76,7 +76,7 @@
         "text": "*Une courte phrase, mais — cinq jours d'émotions sont concentrés dans 'Je me souviens de tout.'*"
     },
     "tour_yuna_9": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "Je veux écrire."
     },
     "tour_yuna_10": {
@@ -84,7 +84,7 @@
         "text": "Des romans ?"
     },
     "tour_yuna_end": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "...J'aimerais que tu les lises. Comme mon premier lecteur."
     },
     "tour_dain_1": {
@@ -92,7 +92,7 @@
         "text": "*Le banc de l'épicerie. L'endroit où on avait mangé du pain melon le premier jour.*"
     },
     "tour_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "On a joué à pierre-feuille-ciseaux ici !"
     },
     "tour_dain_3": {
@@ -100,7 +100,7 @@
         "text": "Tu as perdu."
     },
     "tour_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "T'en parles ENCORE ?! — Ah mais c'est vrai que ce pain melon était délicieux."
     },
     "tour_dain_5": {
@@ -108,7 +108,7 @@
         "text": "*Dain devient silencieuse un instant.*"
     },
     "tour_dain_6": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Devenir pro... je ne sais plus trop."
     },
     "tour_dain_7": {
@@ -116,7 +116,7 @@
         "text": "……"
     },
     "tour_dain_8": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Mais parfois j'ai peur. Peur de devenir quelqu'un sans rêve."
     },
     "tour_dain_9": {
@@ -124,7 +124,7 @@
         "text": "Il suffit d'en trouver un nouveau."
     },
     "tour_dain_10": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "...Ouais. Quand tu le dis comme ça, on dirait que c'est vraiment possible."
     },
     "tour_dain_end": {

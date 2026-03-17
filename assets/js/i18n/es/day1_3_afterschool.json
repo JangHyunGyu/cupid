@@ -36,15 +36,15 @@
         "text": "*Caminando por el pasillo cuando escucho pasos pesados detrás de mí.*"
     },
     "after_miss_dain_2": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "¡¡Cuidado!!"
     },
     "after_miss_dain_3": {
         "name": "Yo",
-        "text": "*Me esquivo por reflejo. 다인(Dain) pasa rozando a mi lado. Corriendo y luego un frenazo.*"
+        "text": "*Me esquivo por reflejo. Dain pasa rozando a mi lado. Corriendo y luego un frenazo.*"
     },
     "after_miss_dain_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "¡Oh! ¡Buenos reflejos!"
     },
     "after_miss_dain_5": {
@@ -52,7 +52,7 @@
         "text": "¿Por qué corres a toda velocidad en el pasillo?"
     },
     "after_miss_dain_6": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "¡Llego tarde! ¡Tengo que ir al gimnasio! — ¡Ah, nos vemos mañana! ¡Chico nuevo!"
     },
     "after_miss_dain_7": {
@@ -68,7 +68,7 @@
         "text": "*— Se le cae un marcapáginas.* Oye, esto..."
     },
     "after_miss_yuna_3": {
-        "name": "유나(Yuna)",
+        "name": "Yuna",
         "text": "......Gracias."
     },
     "after_miss_yuna_4": {
@@ -77,10 +77,10 @@
     },
     "after_miss_seoyeon_1": {
         "name": "Yo",
-        "text": "*Cuando iba a salir, me cruzo con 서연(Seoyeon) en el pasillo.*"
+        "text": "*Cuando iba a salir, me cruzo con Seoyeon en el pasillo.*"
     },
     "after_miss_seoyeon_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "¿Dónde fuiste antes?"
     },
     "after_miss_seoyeon_3": {
@@ -88,7 +88,7 @@
         "text": "¿Antes?"
     },
     "after_miss_seoyeon_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "El almuerzo. Dejé la azotea abierta. Hacerme esperar — atrevido para ser un estudiante nuevo."
     },
     "after_miss_seoyeon_5": {
@@ -96,7 +96,7 @@
         "text": "¿Esperaste?"
     },
     "after_miss_seoyeon_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "...Subí a tomar aire y la puerta estaba abierta."
     },
     "after_miss_seoyeon_7": {
@@ -104,7 +104,7 @@
         "text": "*Seguro que esperó. — Me siento un poco mal, y extrañamente, un poco divertido.*"
     },
     "after_miss_seoyeon_8": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Mañana no te escapes."
     },
     "after_end": {

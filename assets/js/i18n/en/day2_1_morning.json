@@ -8,7 +8,7 @@
         "text": "*The moment I open the classroom door — something slams into my back.*"
     },
     "morning2_dain_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "You're here?! Good morning!!"
     },
     "morning2_dain_2": {
@@ -16,7 +16,7 @@
         "text": "...You nearly broke my spine."
     },
     "morning2_dain_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Haha, from that?! You need to work out more!"
     },
     "morning2_dain_4": {
@@ -24,7 +24,7 @@
         "text": "Isn't it a bit early for this much energy?"
     },
     "morning2_dain_5": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "This is normal! You're the one running low!"
     },
     "morning2_dain_6": {
@@ -48,7 +48,7 @@
         "text": "*I'm about to pocket the note when — a familiar voice from the hallway.*"
     },
     "morning2_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Did you sleep well?"
     },
     "morning2_seo_3": {
@@ -60,7 +60,7 @@
         "text": "The student council president comes all the way to the classroom to say hi?"
     },
     "morning2_seo_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "I was just passing by. — Have a fun day today too."
     },
     "morning2_minsu_1": {
@@ -72,7 +72,7 @@
         "text": "*Minsu turns around from the seat in front of me.*"
     },
     "morning2_minsu_3": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "Dude, two days as a transfer student and the student council president comes to greet you? I've been here a year and she won't even make eye contact."
     },
     "morning2_dain_claim_1": {
@@ -80,7 +80,7 @@
         "text": "Maybe you're just unpopular."
     },
     "morning2_dain_claim_2": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "...That's true, but that's not the point."
     },
     "morning2_dain_claim_3": {
@@ -88,7 +88,7 @@
         "text": "*Dain watches Seoyeon walk away.*"
     },
     "morning2_dain_claim_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Is the president interested in our transfer student too?"
     },
     "morning2_dain_claim_5": {
@@ -96,7 +96,7 @@
         "text": "'Our' transfer student?"
     },
     "morning2_dain_claim_6": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "I found you first, so you're our transfer student! Dibs! I called dibs!"
     },
     "morning2_break_1": {
@@ -108,7 +108,7 @@
         "text": "*Break after first period. I pass Seoyeon in the hallway. She stops. Looks at my shoulder.*"
     },
     "morning2_seo_dust_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Hold on."
     },
     "morning2_seo_dust_3": {
@@ -116,7 +116,7 @@
         "text": "*Seoyeon's hand reaches toward my shoulder. She brushes something off. Naturally. Too naturally.*"
     },
     "morning2_seo_dust_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "You had something on your clothes."
     },
     "morning2_seo_dust_5": {
@@ -124,7 +124,7 @@
         "text": "......"
     },
     "morning2_seo_dust_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "What? It was just dust."
     },
     "morning2_dain_react_1": {
@@ -136,7 +136,7 @@
         "text": "*Seoyeon walks away like nothing happened. Dain's voice comes from behind.*"
     },
     "morning2_dain_react_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hey! What was that?! Did she just touch your shoulder?!"
     },
     "morning2_dain_react_4": {
@@ -144,7 +144,7 @@
         "text": "She was brushing off dust."
     },
     "morning2_dain_react_5": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Dust... was there actually dust?!"
     },
     "morning2_dain_react_6": {
@@ -156,7 +156,7 @@
         "text": "*In the hallway where Seoyeon disappeared — a girl wearing a student council bracelet approaches.*"
     },
     "morning2_haeun_2": {
-        "name": "하은(Haeun)",
+        "name": "Haeun",
         "text": "Um, you're the transfer student, right? I'm Haeun, the student council vice president."
     },
     "morning2_haeun_3": {
@@ -164,7 +164,7 @@
         "text": "Oh, yeah."
     },
     "morning2_haeun_4": {
-        "name": "하은(Haeun)",
+        "name": "Haeun",
         "text": "The president... I mean, Seoyeon sunbae seems a bit different lately."
     },
     "morning2_haeun_5": {
@@ -172,7 +172,7 @@
         "text": "Different how?"
     },
     "morning2_haeun_6": {
-        "name": "하은(Haeun)",
+        "name": "Haeun",
         "text": "She's not usually like that. Approaching another student first... I've watched her for a year and this is the first time."
     },
     "morning2_haeun_7": {

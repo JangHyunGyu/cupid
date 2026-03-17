@@ -8,7 +8,7 @@
         "text": "*In dem Moment, als ich die Klassentuer oeffne -- ein Schlag in den Ruecken.*"
     },
     "morning2_dain_1": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Du bist da?! Guten Morgen!!"
     },
     "morning2_dain_2": {
@@ -16,7 +16,7 @@
         "text": "...Du haettest mir fast das Rueckgrat gebrochen."
     },
     "morning2_dain_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Haha, davon?! Du musst mehr Sport machen!"
     },
     "morning2_dain_4": {
@@ -24,7 +24,7 @@
         "text": "Ist es nicht etwas frueh fuer so viel Energie?"
     },
     "morning2_dain_5": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Das ist normal! Du bist der, dem was fehlt!"
     },
     "morning2_dain_6": {
@@ -48,7 +48,7 @@
         "text": "*Ich will den Zettel gerade einstecken, als -- eine vertraute Stimme vom Flur kommt.*"
     },
     "morning2_seo_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Gut geschlafen?"
     },
     "morning2_seo_3": {
@@ -60,7 +60,7 @@
         "text": "Die Schuelerratspraesidentin kommt bis ins Klassenzimmer zum Gruessen?"
     },
     "morning2_seo_5": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Ich bin nur vorbeigekommen. -- Hab auch heute einen schoenen Tag."
     },
     "morning2_minsu_1": {
@@ -72,7 +72,7 @@
         "text": "*Minsu dreht sich vom vorderen Platz um.*"
     },
     "morning2_minsu_3": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "Alter, zwei Tage als Neuer und die Schuelerratspraesidentin kommt dich gruessen? Ich bin seit einem Jahr hier und sie guckt mich nicht mal an."
     },
     "morning2_dain_claim_1": {
@@ -80,7 +80,7 @@
         "text": "Vielleicht bist du einfach unbeliebt."
     },
     "morning2_dain_claim_2": {
-        "name": "민수(Minsu)",
+        "name": "Minsu",
         "text": "...Das stimmt, aber darum geht's nicht."
     },
     "morning2_dain_claim_3": {
@@ -88,7 +88,7 @@
         "text": "*Dain beobachtet, wie Seoyeon davongeht.*"
     },
     "morning2_dain_claim_4": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ist die Praesidentin auch an unserem Neuen interessiert?"
     },
     "morning2_dain_claim_5": {
@@ -96,7 +96,7 @@
         "text": "'Unserem' Neuen?"
     },
     "morning2_dain_claim_6": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Ich hab dich zuerst gefunden, also bist du unser Neuer! Reserviert! Meins!"
     },
     "morning2_break_1": {
@@ -108,7 +108,7 @@
         "text": "*Pause nach der ersten Stunde. Ich begegne Seoyeon im Flur. Sie bleibt stehen. Schaut auf meine Schulter.*"
     },
     "morning2_seo_dust_2": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Moment."
     },
     "morning2_seo_dust_3": {
@@ -116,7 +116,7 @@
         "text": "*Seoyeons Hand greift zu meiner Schulter. Sie wischt etwas ab. Natuerlich. Zu natuerlich.*"
     },
     "morning2_seo_dust_4": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Da war was auf deiner Kleidung."
     },
     "morning2_seo_dust_5": {
@@ -124,7 +124,7 @@
         "text": "......"
     },
     "morning2_seo_dust_6": {
-        "name": "서연(Seoyeon)",
+        "name": "Seoyeon",
         "text": "Was denn? War nur Staub."
     },
     "morning2_dain_react_1": {
@@ -136,7 +136,7 @@
         "text": "*Seoyeon geht weiter, als waere nichts gewesen. Dains Stimme kommt von hinten.*"
     },
     "morning2_dain_react_3": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Hey! Was war das gerade?! Hat sie deine Schulter beruehrt?!"
     },
     "morning2_dain_react_4": {
@@ -144,7 +144,7 @@
         "text": "Sie hat Staub weggewischt."
     },
     "morning2_dain_react_5": {
-        "name": "다인(Dain)",
+        "name": "Dain",
         "text": "Staub... war da wirklich Staub?!"
     },
     "morning2_dain_react_6": {
@@ -156,7 +156,7 @@
         "text": "*Im Flur, wo Seoyeon verschwunden ist -- ein Maedchen mit einem Schuelerrats-Armband kommt naeher.*"
     },
     "morning2_haeun_2": {
-        "name": "하은(Haeun)",
+        "name": "Haeun",
         "text": "Entschuldigung, du bist der neue Schueler, oder? Ich bin Haeun, die Vizepraesidentin des Schuelerrats."
     },
     "morning2_haeun_3": {
@@ -164,7 +164,7 @@
         "text": "Ah, ja."
     },
     "morning2_haeun_4": {
-        "name": "하은(Haeun)",
+        "name": "Haeun",
         "text": "Die Praesidentin... also Seoyeon Sunbae scheint sich in letzter Zeit etwas veraendert zu haben."
     },
     "morning2_haeun_5": {
@@ -172,7 +172,7 @@
         "text": "Veraendert wie?"
     },
     "morning2_haeun_6": {
-        "name": "하은(Haeun)",
+        "name": "Haeun",
         "text": "Normalerweise ist sie nicht so. Auf einen anderen Schueler zuerst zugehen... ich beobachte sie seit einem Jahr und das ist das erste Mal."
     },
     "morning2_haeun_7": {

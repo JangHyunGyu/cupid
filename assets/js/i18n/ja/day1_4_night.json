@@ -12,7 +12,7 @@
         "text": "*スマホが鸣る。学校のメッセンジャー。*"
     },
     "night_msg_seo_1": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "*今日の屋上、どうだった？*"
     },
     "night_msg_seo_2": {
@@ -20,11 +20,11 @@
         "text": "*風が気持ちよかった*"
     },
     "night_msg_seo_3": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "*次は飲み物くらいは用意しておくね*"
     },
     "night_msg_seo_4": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "*…サービスだよ*"
     },
     "night_msg_seo_5": {
@@ -32,11 +32,11 @@
         "text": "*『サービスだよ』をわざわざ一行空けて送ってきた。——これも計算なのか、本心なのか。*"
     },
     "night_msg_yuna_1": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "*…今日、静かにしてくれてよかった*"
     },
     "night_msg_yuna_2": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "*明日も席、空けとくね*"
     },
     "night_msg_yuna_3": {
@@ -44,15 +44,15 @@
         "text": "*短い。でも『席、空けとくね』って、この人にとっては最大限の歓迎じゃないか。*"
     },
     "night_msg_dain_1": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "*じゃんけんリベンジは明日だからね！！*"
     },
     "night_msg_dain_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "*逃げないでよｗｗ*"
     },
     "night_msg_dain_3": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "*今日のパン代まだ惜しいんだけどｗｗｗ*"
     },
     "night_msg_dain_4": {
@@ -72,11 +72,11 @@
         "text": "*画面が光る。*"
     },
     "night_seo_late_1": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "*明日一緒に登校しない？*"
     },
     "night_seo_late_2": {
-        "name": "서연(Seoyeon)",
+        "name": "ソヨン",
         "text": "*家の前で待ってるから*"
     },
     "night_seo_late_3": {
@@ -84,15 +84,15 @@
         "text": "*…え？生徒会長が家の前で？——心臓が一拍速くなる。なぜ。*"
     },
     "night_yuna_late_1": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "*…まだ起きてる？*"
     },
     "night_yuna_late_2": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "*星がきれいで*"
     },
     "night_yuna_late_3": {
-        "name": "유나(Yuna)",
+        "name": "ユナ",
         "text": "*それだけ*"
     },
     "night_yuna_late_4": {
@@ -100,15 +100,15 @@
         "text": "*『それだけ』と言ったけど、『それだけ』じゃない気がする。*"
     },
     "night_dain_late_1": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "*ねぇまだ起きてるでしょ！？*"
     },
     "night_dain_late_2": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "*明日の朝練一緒にやる人募集！*"
     },
     "night_dain_late_3": {
-        "name": "다인(Dain)",
+        "name": "ダイン",
         "text": "*拒否は受け付けませんｗｗ*"
     },
     "night_dain_late_4": {
