@@ -669,11 +669,497 @@ for (const lang of i18nLangs) {
     }
 }
 
+// =====================================================================
+// ===== PLAYTHROUGH SIMULATION (실제 브라우저 플레이 시뮬레이션) =====
+// =====================================================================
+
+// 간이 StateManager (Node.js 환경)
+class SimState {
+    constructor() {
+        this.playerName = '테스트';
+        this.currentDay = 1;
+        this.stats = { Seoyeon: 0, Yuna: 0, Dain: 0, Teacher: 0, Nurse: 0 };
+        this.flags = {};
+    }
+    changeAffinity(char, amount) {
+        if (!this.stats[char] && this.stats[char] !== 0) return;
+        this.stats[char] = Math.max(-100, Math.min(100, this.stats[char] + amount));
+    }
+    getAffinity(char) { return this.stats[char] ?? 0; }
+    setFlag(name, val = true) { this.flags[name] = val; }
+    getFlag(name) { return this.flags[name] ?? false; }
+    setDay(d) { this.currentDay = d; }
+    clone() {
+        const c = new SimState();
+        c.playerName = this.playerName;
+        c.currentDay = this.currentDay;
+        c.stats = { ...this.stats };
+        c.flags = { ...this.flags };
+        return c;
+    }
+}
+
+// 간이 resolveNextScene (SceneRenderer 로직 재현)
+function simResolveNext(scene, state) {
+    // 1. affinityBranches
+    if (scene.affinityBranches && scene.affinityBranches.length > 0) {
+        for (const ab of scene.affinityBranches) {
+            const charKey = ab.char || ab.character;
+            if (charKey && state.getAffinity(charKey) >= (ab.minAffinity || 0)) {
+                if (ab.condition && !state.getFlag(ab.condition)) continue;
+                if (ab.excludeCondition && state.getFlag(ab.excludeCondition)) continue;
+                return ab.next;
+            }
+        }
+        // fallback
+        return scene.next || scene.fallback || null;
+    }
+    // 2. branches
+    if (scene.branches && scene.branches.length > 0) {
+        if (scene.selectByHighestAffinity) {
+            let best = null, bestAff = -Infinity;
+            for (const b of scene.branches) {
+                const charKey = b.character;
+                if (b.condition && !state.getFlag(b.condition)) continue;
+                if (b.excludeCondition && state.getFlag(b.excludeCondition)) continue;
+                if (charKey) {
+                    const metFlag = 'met_' + charKey.toLowerCase();
+                    if (!state.getFlag(metFlag) && !state.getFlag('met_' + charKey)) continue;
+                    const aff = state.getAffinity(charKey);
+                    if (aff > bestAff) { bestAff = aff; best = b.next; }
+                }
+            }
+            return best || scene.fallback || scene.next || null;
+        }
+        for (const b of scene.branches) {
+            if (b.condition && !state.getFlag(b.condition)) continue;
+            if (b.excludeCondition && state.getFlag(b.excludeCondition)) continue;
+            if (!b.condition && !b.excludeCondition || b.next) return b.next;
+        }
+        return scene.next || null;
+    }
+    // 3. next
+    return scene.next || null;
+}
+
+// 씬에 진입할 때 효과 적용 (플래그, 호감도, 날짜 변경)
+function simApplyScene(scene, state) {
+    if (scene.setFlag) state.setFlag(scene.setFlag);
+    if (scene.setFlags) scene.setFlags.forEach(f => state.setFlag(f));
+    if (scene.clearFlags) scene.clearFlags.forEach(f => state.setFlag(f, false));
+    if (scene.changeDay) state.setDay(scene.changeDay);
+    if (scene.stats) {
+        for (const [charKey, val] of Object.entries(scene.stats)) {
+            const amount = typeof val === 'number' ? val : (val && val.affinity) || 0;
+            state.changeAffinity(charKey, amount);
+        }
+    }
+}
+
+// 선택지에서 효과 적용
+function simApplyChoice(choice, state) {
+    if (choice.setFlag) state.setFlag(choice.setFlag);
+    if (choice.setFlags) choice.setFlags.forEach(f => state.setFlag(f));
+    if (choice.stats) {
+        for (const [charKey, val] of Object.entries(choice.stats)) {
+            const amount = typeof val === 'number' ? val : (val && val.affinity) || 0;
+            state.changeAffinity(charKey, amount);
+        }
+    }
+}
+
+// 선택지 필터링 (condition/excludeCondition)
+function simGetAvailableChoices(choices, state) {
+    if (!choices) return [];
+    return choices.filter(c => {
+        if (c.condition && !state.getFlag(c.condition)) return false;
+        if (c.excludeCondition && state.getFlag(c.excludeCondition)) return false;
+        return true;
+    });
+}
+
+// ===== TEST 1: 전체 경로 탐색 (DFS) — 모든 선택지 조합으로 데드엔드 탐지 =====
+console.log('[PLAYTEST] 전체 경로 탐색 시작...');
+const MAX_STEPS = 2000;      // 무한루프 방지
+const MAX_PATHS = 5000;      // 탐색 경로 수 제한
+const deadEnds = [];
+const completedPaths = [];
+let pathsExplored = 0;
+
+// DFS 스택: { sceneId, state, path, depth }
+const dfsStack = [{ sceneId: 'start', state: new SimState(), path: ['start'], depth: 0 }];
+
+while (dfsStack.length > 0 && pathsExplored < MAX_PATHS) {
+    const { sceneId, state, path, depth } = dfsStack.pop();
+
+    if (depth > MAX_STEPS) {
+        warnings.push('[PLAYTEST_LOOP] 경로가 ' + MAX_STEPS + '스텝 초과 — 무한루프 의심: ' + path.slice(-5).join(' → '));
+        continue;
+    }
+
+    // HTML 리다이렉트면 완료
+    if (sceneId && sceneId.endsWith('.html')) {
+        completedPaths.push(path);
+        pathsExplored++;
+        continue;
+    }
+
+    const entry = allScenes[sceneId];
+    if (!entry) {
+        // 이미 SCENE_REF 체크에서 잡히므로 여기서는 패스
+        continue;
+    }
+    const scene = entry.scene;
+
+    // 씬 효과 적용
+    simApplyScene(scene, state);
+
+    // credits 타입은 완료
+    if (scene.type === 'credits') {
+        const nextId = simResolveNext(scene, state);
+        if (nextId) {
+            dfsStack.push({ sceneId: nextId, state: state.clone(), path: [...path, nextId], depth: depth + 1 });
+        } else {
+            completedPaths.push(path);
+        }
+        pathsExplored++;
+        continue;
+    }
+
+    // free_talk → 다음 씬으로
+    if (scene.type === 'free_talk') {
+        const nextId = simResolveNext(scene, state);
+        if (nextId) {
+            dfsStack.push({ sceneId: nextId, state: state.clone(), path: [...path, nextId], depth: depth + 1 });
+        } else {
+            deadEnds.push({ sceneId, path, reason: 'free_talk에 next 없음' });
+        }
+        continue;
+    }
+
+    // input → 다음 씬으로
+    if (scene.type === 'input') {
+        const nextId = simResolveNext(scene, state);
+        if (nextId) {
+            dfsStack.push({ sceneId: nextId, state: state.clone(), path: [...path, nextId], depth: depth + 1 });
+        }
+        continue;
+    }
+
+    // 선택지가 있는 경우 → 각 선택지를 별도 경로로 분기
+    if (scene.choices && scene.choices.length > 0) {
+        const available = simGetAvailableChoices(scene.choices, state);
+        if (available.length === 0) {
+            deadEnds.push({ sceneId, path, reason: '모든 선택지가 condition에 의해 필터됨' });
+            continue;
+        }
+        for (const choice of available) {
+            const choiceState = state.clone();
+            simApplyChoice(choice, choiceState);
+            // choice 안에 affinityBranches가 있는 경우 (중첩 분기)
+            if (choice.affinityBranches && choice.affinityBranches.length > 0) {
+                for (const ab of choice.affinityBranches) {
+                    if (ab.next) {
+                        dfsStack.push({ sceneId: ab.next, state: choiceState.clone(), path: [...path, sceneId + '→' + ab.next], depth: depth + 1 });
+                    }
+                }
+                if (choice.next) {
+                    dfsStack.push({ sceneId: choice.next, state: choiceState.clone(), path: [...path, sceneId + '→' + choice.next], depth: depth + 1 });
+                }
+            } else if (choice.next) {
+                dfsStack.push({ sceneId: choice.next, state: choiceState, path: [...path, sceneId + '→' + choice.next], depth: depth + 1 });
+            } else {
+                deadEnds.push({ sceneId, path, reason: 'choice에 next/affinityBranches 없음' });
+            }
+        }
+        continue;
+    }
+
+    // 텍스트만 있는 씬 → resolveNext
+    const nextId = simResolveNext(scene, state);
+    if (nextId) {
+        dfsStack.push({ sceneId: nextId, state: state.clone(), path: [...path, nextId], depth: depth + 1 });
+    } else if (scene.text || scene.name) {
+        // 텍스트가 있는데 다음이 없으면 데드엔드
+        deadEnds.push({ sceneId, path, reason: '대사가 있지만 next/branches 없음' });
+    }
+    // 라우팅 노드(텍스트 없고 next 없음)는 조건 분기 실패 — 이미 다른 체크에서 잡힘
+}
+
+for (const de of deadEnds) {
+    errors.push('[PLAYTEST_DEAD] "' + de.sceneId + '" 데드엔드: ' + de.reason + ' (경로: ...' + de.path.slice(-3).join(' → ') + ')');
+}
+
+// ===== TEST 2: Day 전환 검증 — 각 Day의 시작점에서 다음 Day 시작점까지 도달 가능한지 =====
+const dayEntries = { 1: 'start', 2: 'morning2_start', 3: 'morning3_start', 4: 'morning4_start', 5: 'morning5_start' };
+for (let day = 1; day <= 4; day++) {
+    const startScene = dayEntries[day];
+    const nextDayStart = dayEntries[day + 1];
+    // BFS로 현재 Day에서 다음 Day 진입점 도달 가능한지 확인
+    const visited = new Set();
+    const bfsQueue = [startScene];
+    let found = false;
+    while (bfsQueue.length > 0) {
+        const sid = bfsQueue.shift();
+        if (!sid || visited.has(sid) || sid.endsWith('.html')) continue;
+        visited.add(sid);
+        if (sid === nextDayStart) { found = true; break; }
+        const e = allScenes[sid];
+        if (!e) continue;
+        const s = e.scene;
+        if (s.next) bfsQueue.push(s.next);
+        if (s.fallback) bfsQueue.push(s.fallback);
+        if (s.choices) s.choices.forEach(c => { if (c.next) bfsQueue.push(c.next); });
+        if (s.branches) s.branches.forEach(b => { if (b.next) bfsQueue.push(b.next); });
+        if (s.affinityBranches) s.affinityBranches.forEach(b => { if (b.next) bfsQueue.push(b.next); });
+    }
+    if (!found) {
+        errors.push('[PLAYTEST_DAY] Day' + day + ' ("' + startScene + '") → Day' + (day + 1) + ' ("' + nextDayStart + '") 도달 불가');
+    }
+}
+
+// ===== TEST 3: 엔딩 도달 검증 — 모든 엔딩 씬이 실제로 도달 가능한지 =====
+const endingScenes = Object.keys(allScenes).filter(id => id.includes('ending') || id.includes('credits') || id.includes('epilogue'));
+const reachableFromStart = new Set();
+{
+    const q = ['start'];
+    while (q.length > 0) {
+        const sid = q.shift();
+        if (!sid || reachableFromStart.has(sid) || sid.endsWith('.html')) continue;
+        reachableFromStart.add(sid);
+        const e = allScenes[sid];
+        if (!e) continue;
+        const s = e.scene;
+        if (s.next) q.push(s.next);
+        if (s.fallback) q.push(s.fallback);
+        if (s.choices) s.choices.forEach(c => { if (c.next) q.push(c.next); });
+        if (s.branches) s.branches.forEach(b => { if (b.next) q.push(b.next); });
+        if (s.affinityBranches) s.affinityBranches.forEach(b => { if (b.next) q.push(b.next); });
+    }
+}
+for (const endId of endingScenes) {
+    if (!reachableFromStart.has(endId)) {
+        warnings.push('[PLAYTEST_ENDING] 엔딩 씬 "' + endId + '" 이 start에서 도달 불가');
+    }
+}
+
+// ===== TEST 4: 선택지 0개 상황 시뮬레이션 — 조건부 선택지만 있는 씬에서 모든 선택지가 숨겨질 수 있는지 =====
+for (const [sceneId, { scene }] of Object.entries(allScenes)) {
+    if (!scene.choices || scene.choices.length === 0) continue;
+    const allConditional = scene.choices.every(c => c.condition || c.excludeCondition);
+    if (allConditional) {
+        // 기본 선택지(condition 없는)가 하나도 없으면 위험
+        const hasDefault = scene.choices.some(c => !c.condition && !c.excludeCondition);
+        if (!hasDefault) {
+            warnings.push('[PLAYTEST_CHOICES] "' + sceneId + '": 모든 선택지가 조건부 — 특정 상태에서 선택지 0개 가능');
+        }
+    }
+}
+
+// ===== TEST 5: 배경 깜빡임 검사 — 연속 대화 중 배경이 갑자기 바뀌는지 =====
+for (const [sceneId, { scene }] of Object.entries(allScenes)) {
+    if (!scene.next || !scene.text) continue;
+    const nextEntry = allScenes[scene.next];
+    if (!nextEntry) continue;
+    const nextScene = nextEntry.scene;
+    // 현재 씬에 배경이 있고, 바로 다음 씬에도 다른 배경이 있는데 같은 화자의 연속 대화인 경우
+    if (scene.background && nextScene.background && scene.background !== nextScene.background) {
+        const curName = i18nData[sceneId]?.name;
+        const nextName = i18nData[scene.next]?.name;
+        if (curName && nextName && curName === nextName && curName !== '나' && curName !== '{name}') {
+            warnings.push('[PLAYTEST_BG_FLASH] "' + sceneId + '" → "' + scene.next + '": 같은 화자(' + curName + ') 연속 대화 중 배경 변경');
+        }
+    }
+}
+
+// ===== TEST 6: affinityBranches 캐릭터 키 검증 =====
+const validCharKeys = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
+for (const [sceneId, { scene }] of Object.entries(allScenes)) {
+    if (scene.affinityBranches) {
+        scene.affinityBranches.forEach((ab, i) => {
+            const charKey = ab.char || ab.character;
+            if (charKey && !validCharKeys.includes(charKey)) {
+                errors.push('[PLAYTEST_AFFINITY] "' + sceneId + '" affinityBranches[' + i + ']: "' + charKey + '" 유효하지 않은 캐릭터 키');
+            }
+        });
+    }
+    if (scene.selectByHighestAffinity && scene.branches) {
+        scene.branches.forEach((b, i) => {
+            if (b.character && !validCharKeys.includes(b.character)) {
+                errors.push('[PLAYTEST_AFFINITY] "' + sceneId + '" selectByHighestAffinity branches[' + i + ']: "' + b.character + '" 유효하지 않은 캐릭터 키');
+            }
+        });
+    }
+}
+
+// ===== TEST 7: stats 캐릭터 키 검증 =====
+for (const [sceneId, { scene }] of Object.entries(allScenes)) {
+    if (scene.stats) {
+        for (const charKey of Object.keys(scene.stats)) {
+            if (!validCharKeys.includes(charKey)) {
+                errors.push('[PLAYTEST_STATS] "' + sceneId + '" stats: "' + charKey + '" 유효하지 않은 캐릭터 키');
+            }
+        }
+    }
+    if (scene.choices) {
+        scene.choices.forEach((c, ci) => {
+            if (c.stats) {
+                for (const charKey of Object.keys(c.stats)) {
+                    if (!validCharKeys.includes(charKey)) {
+                        errors.push('[PLAYTEST_STATS] "' + sceneId + '" choices[' + ci + '].stats: "' + charKey + '" 유효하지 않은 캐릭터 키');
+                    }
+                }
+            }
+        });
+    }
+}
+
+console.log('[PLAYTEST] 탐색 완료: ' + pathsExplored + '개 경로, ' + completedPaths.length + '개 완료, ' + deadEnds.length + '개 데드엔드');
+
+// ===== TEST 8: 전 언어 i18n 완전 커버리지 — 모든 텍스트 씬이 모든 언어에 번역되어 있는지 =====
+console.log('[PLAYTEST] 전 언어 i18n 커버리지 검사...');
+const allLangs = ['ko', 'en', 'es', 'ja', 'fr', 'de'];
+const allLangData = {};
+for (const lang of allLangs) {
+    allLangData[lang] = {};
+    const langDir = path.join(BASE, 'i18n', lang);
+    if (!fs.existsSync(langDir)) { errors.push('[I18N_COVERAGE] ' + lang + ' 디렉토리 없음'); continue; }
+    const langFiles = fs.readdirSync(langDir).filter(f => f.endsWith('.json'));
+    for (const file of langFiles) {
+        try { Object.assign(allLangData[lang], JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8'))); } catch (e) {}
+    }
+}
+// 텍스트가 필요한 씬 목록
+const textScenes = Object.keys(allScenes).filter(id => {
+    const s = allScenes[id].scene;
+    return s.text || (s.choices && s.choices.length > 0);
+});
+for (const lang of allLangs) {
+    let missingCount = 0;
+    const missingExamples = [];
+    for (const sceneId of textScenes) {
+        const entry = allLangData[lang][sceneId];
+        if (!entry) { missingCount++; if (missingExamples.length < 3) missingExamples.push(sceneId); continue; }
+        // text가 필요한데 없거나 빈 경우
+        const scene = allScenes[sceneId].scene;
+        if (scene.text && (!entry.text || entry.text.trim() === '')) {
+            missingCount++;
+            if (missingExamples.length < 3) missingExamples.push(sceneId + '(빈 text)');
+        }
+        // choices가 필요한데 누락/불일치
+        if (scene.choices && scene.choices.length > 0) {
+            if (!entry.choices) {
+                missingCount++;
+                if (missingExamples.length < 3) missingExamples.push(sceneId + '(choices 누락)');
+            } else if (entry.choices.length !== scene.choices.length) {
+                errors.push('[I18N_COVERAGE] ' + lang + '/' + sceneId + ': choices 수 불일치 (JS=' + scene.choices.length + ', i18n=' + entry.choices.length + ')');
+            }
+        }
+    }
+    if (missingCount > 0) {
+        warnings.push('[I18N_COVERAGE] ' + lang + ': ' + missingCount + '개 씬 번역 누락 (예: ' + missingExamples.join(', ') + ')');
+    }
+}
+
+// ===== TEST 9: 메모리 누수 패턴 검사 (JS 코드 정적 분석) =====
+console.log('[PLAYTEST] 메모리 누수 패턴 검사...');
+
+for (const file of jsFiles) {
+    const lines = file.content.split('\n');
+    // 9-1. addEventListener 없이 removeEventListener가 없는 패턴
+    const addListeners = [];
+    const removeListeners = [];
+    lines.forEach((line, i) => {
+        if (/\.addEventListener\s*\(/.test(line)) addListeners.push({ line: i + 1, text: line.trim() });
+        if (/\.removeEventListener\s*\(/.test(line)) removeListeners.push({ line: i + 1, text: line.trim() });
+    });
+    // 익명 함수로 addEventListener하면 removeEventListener 불가
+    for (const al of addListeners) {
+        // 익명 함수: addEventListener('event', () => 또는 addEventListener('event', function(
+        if (/addEventListener\s*\(\s*['"][^'"]+['"]\s*,\s*(function\s*\(|\([^)]*\)\s*=>|\(\s*\)\s*=>)/.test(al.text)) {
+            // window나 document에 대한 것만 (전역 리스너가 누수 위험 큼)
+            if (/\b(window|document)\b/.test(al.text)) {
+                warnings.push('[MEMORY_LEAK] ' + file.name + ':' + al.line + ' window/document에 익명 함수 addEventListener — 제거 불가: ' + al.text.substring(0, 80));
+            }
+        }
+    }
+
+    // 9-2. setInterval 없이 clearInterval이 없는 패턴
+    const setIntervals = [];
+    const clearIntervals = [];
+    lines.forEach((line, i) => {
+        if (/setInterval\s*\(/.test(line)) setIntervals.push({ line: i + 1, text: line.trim() });
+        if (/clearInterval\s*\(/.test(line)) clearIntervals.push({ line: i + 1, text: line.trim() });
+    });
+    // setInterval이 있는데 변수에 저장 안 하면 clearInterval 불가
+    for (const si of setIntervals) {
+        if (!/=\s*setInterval/.test(si.text) && !/this\.\w+\s*=\s*setInterval/.test(si.text)) {
+            errors.push('[MEMORY_LEAK] ' + file.name + ':' + si.line + ' setInterval 반환값 미저장 — clearInterval 불가: ' + si.text.substring(0, 80));
+        }
+    }
+    if (setIntervals.length > 0 && clearIntervals.length === 0) {
+        warnings.push('[MEMORY_LEAK] ' + file.name + ': setInterval ' + setIntervals.length + '건 사용, clearInterval 0건 — 정리 안 됨');
+    }
+
+    // 9-3. setTimeout 반환값 미저장 (단, 단순 지연은 허용하되, 반복적으로 호출되는 함수 내에서만 경고)
+    // → 이미 타이머 관련 버그를 다른 체크에서 잡으므로 여기서는 setInterval만 집중
+
+    // 9-4. MutationObserver/IntersectionObserver disconnect 누락
+    const observerCreates = [];
+    const observerDisconnects = [];
+    lines.forEach((line, i) => {
+        if (/new\s+(MutationObserver|IntersectionObserver|ResizeObserver)\s*\(/.test(line)) observerCreates.push({ line: i + 1, text: line.trim() });
+        if (/\.disconnect\s*\(/.test(line)) observerDisconnects.push({ line: i + 1 });
+    });
+    if (observerCreates.length > 0 && observerDisconnects.length === 0) {
+        warnings.push('[MEMORY_LEAK] ' + file.name + ': Observer 생성 ' + observerCreates.length + '건, disconnect 0건 — 정리 안 됨');
+    }
+
+    // 9-5. DOM 요소 배열/맵에 계속 push만 하고 제거 안 하는 패턴
+    // → 정적 분석으로는 한계가 있으므로, 명백한 패턴만 (배열에 push만 있고 splice/pop/length=0 없는 경우)
+    const pushPattern = /this\.\w+\.push\(/;
+    const clearPattern = /this\.\w+\s*=\s*\[\]|this\.\w+\.splice\(|this\.\w+\.pop\(|this\.\w+\.length\s*=\s*0|this\.\w+\.shift\(/;
+    const pushLines = lines.filter(l => pushPattern.test(l));
+    const clearLines = lines.filter(l => clearPattern.test(l));
+    // push하는 변수 이름 추출
+    const pushVars = new Set(pushLines.map(l => (l.match(/this\.(\w+)\.push\(/) || [])[1]).filter(Boolean));
+    const clearVars = new Set(clearLines.map(l => {
+        const m = l.match(/this\.(\w+)\s*=\s*\[\]/) || l.match(/this\.(\w+)\.splice/) || l.match(/this\.(\w+)\.pop/) || l.match(/this\.(\w+)\.shift/) || l.match(/this\.(\w+)\.length\s*=\s*0/);
+        return m ? m[1] : null;
+    }).filter(Boolean));
+    for (const v of pushVars) {
+        if (!clearVars.has(v) && !['chatHistory', 'freeTalkHistory', 'conversationHistory'].includes(v)) {
+            // 채팅 히스토리는 의도적으로 누적 (slice로 제한함)
+            warnings.push('[MEMORY_LEAK] ' + file.name + ': this.' + v + '에 push만 있고 제거 로직 없음 — 메모리 누적 가능');
+        }
+    }
+
+    // 9-6. FileReader/Image/Audio 생성 후 참조 해제 안 됨 (onload 콜백에서만 사용)
+    // → 단발성이라 GC가 처리하므로 skip
+
+    // 9-7. closures에서 큰 객체 캡처 (정적 분석 한계)
+    // → skip
+}
+
+// 9-8. HTML 인라인 JS에서의 메모리 누수
+for (const file of htmlFiles) {
+    const lines = file.content.split('\n');
+    lines.forEach((line, i) => {
+        // setInterval 미저장
+        if (/setInterval\s*\(/.test(line) && !/=\s*setInterval/.test(line)) {
+            errors.push('[MEMORY_LEAK] ' + file.name + ':' + (i + 1) + ' setInterval 반환값 미저장: ' + line.trim().substring(0, 80));
+        }
+    });
+}
+
+console.log('[PLAYTEST] 메모리 누수 검사 완료\n');
+
 // ===== Print Results =====
-console.log('\n========== CUPID VALIDATION RESULTS ==========\n');
+console.log('========== CUPID VALIDATION RESULTS ==========\n');
 console.log('Total scenes: ' + Object.keys(allScenes).length);
 console.log('Total i18n entries: ' + Object.keys(i18nData).length);
 console.log('Total flags set: ' + setFlags.size + ', checked: ' + checkedFlags.size);
+console.log('Playtest paths: ' + pathsExplored + ' explored, ' + completedPaths.length + ' completed, ' + deadEnds.length + ' dead ends');
 console.log();
 
 if (errors.length === 0 && warnings.length === 0) {
