@@ -1006,6 +1006,50 @@ class GameEngine {
                 }
             }
 
+            // ── Nevergrad 크로스오버: 플레이 기록 저장 ──
+            try {
+                // 공략 히로인 판별: isDating 플래그 우선, 없으면 최고 호감도 캐릭터
+                const heroineMap = { Seoyeon: 'seoyeon', Yuna: 'yuna', Dain: 'dain', Teacher: 'teacher', Nurse: 'nurse' };
+                let heroineId = 'none';
+                let maxAff = -Infinity;
+                for (const [key, id] of Object.entries(heroineMap)) {
+                    if (this.stateManager.getFlag(`isDating_${key}`)) {
+                        heroineId = id;
+                        break;
+                    }
+                    const aff = this.stateManager.getAffinity(key);
+                    if (aff > maxAff) {
+                        maxAff = aff;
+                        heroineId = id;
+                    }
+                }
+
+                // 순응도 점수: 최고 호감도를 0~100% 범위로 변환 (호감도 범위 -100~100)
+                const topAffinity = Math.max(...Object.keys(heroineMap).map(k => this.stateManager.getAffinity(k)));
+                const complianceScore = Math.max(0, Math.min(100, Math.round((topAffinity + 100) / 2)));
+
+                localStorage.setItem('cupid_cycle_01', 'complete');
+                localStorage.setItem('cupid_heroine', heroineId);
+                localStorage.setItem('cupid_subject_compliance', String(complianceScore));
+
+                console.log(`[GameEngine] Nevergrad 크로스오버 데이터 저장 완료 — heroine: ${heroineId}, compliance: ${complianceScore}%`);
+
+                // Nevergrad 콘솔 메시지 출력
+                console.log('\n' +
+                    '╔══════════════════════════════════════╗\n' +
+                    '  NEVERGRAD RESEARCH INSTITUTE\n' +
+                    '  CYCLE_01 REPORT\n' +
+                    '\n' +
+                    '  피험자 순응도: ' + complianceScore + '%\n' +
+                    '  상태: FAILED — 기억 소거 예약됨\n' +
+                    '  다음 주기: SCHEDULED\n' +
+                    '\n' +
+                    '  [이 메시지를 보고 있다면 — 이미 늦었습니다]\n' +
+                    '╚══════════════════════════════════════╝\n');
+            } catch (e) {
+                console.error('[GameEngine] Nevergrad 크로스오버 데이터 저장 실패:', e);
+            }
+
             // 크레딧 레이어 표시 (없으면 동적 생성 — 캐시된 구 HTML 대응)
             let creditsLayer = document.getElementById('credits-layer');
             if (!creditsLayer) {
