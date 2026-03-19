@@ -1,0 +1,33 @@
+# Cupid: 5 Days of Love
+> Free browser-based visual novel (dating sim) — no download, no install. Play instantly on any device.
+
+## About
+Cupid is a web-based romantic visual novel game set in a Korean high school. Follow a 5-day story where your choices shape relationships with unique characters. Fully playable in the browser with no installation required.
+
+## Features
+- 100% browser-based — no download or install needed
+- Mobile and desktop support
+- Multiple story routes and endings
+- Beautiful character art and backgrounds
+- Save/load system using browser storage
+- Free to play
+
+## Supported Languages
+- Korean (한국어)
+- English
+- Japanese (日本語)
+- Spanish (Español)
+- French (Français)
+- German (Deutsch)
+
+## Links
+- Play now: https://cupid.archerlab.dev
+- English: https://cupid.archerlab.dev/index-en.html
+- Japanese: https://cupid.archerlab.dev/index-ja.html
+- Developer: https://archerlab.dev
+
+## Genre
+Visual Novel, Romance, Dating Simulation, School Life
+
+## Platform
+Web Browser (Chrome, Safari, Firefox, Edge — any modern browser)
