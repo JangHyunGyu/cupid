@@ -2,7 +2,7 @@
 
 ## 코드 수정 후 필수 작업
 - JS/HTML 코드를 수정한 후에는 반드시 `node validate.js`를 실행하여 검증할 것
-- 에러가 0건이 될 때까지 수정을 반복할 것
+- 에러가 0건이 될 때까지 수정을 반복할 것 — **기존 에러도 "기존 이슈"로 넘기지 말고 즉시 수정**
 - index.html(KO) 인라인 JS를 수정하면 index-en/es/ja/fr/de.html에도 동일하게 반영할 것
 - game.html(KO) 수정 시 game-en/es/ja/fr/de.html에도 동일하게 반영할 것
 - gallery.html(KO) 수정 시 gallery-en/es/ja/fr/de.html에도 동일하게 반영할 것
