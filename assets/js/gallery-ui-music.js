@@ -164,8 +164,8 @@ class MusicRenderer {
         // soundManager의 버퍼 캐시 활용 (이미 다운로드된 파일 재사용)
         if (window.soundManager && window.soundManager._loadBuffer) {
             try {
-                const ctx = soundManager._ensureAudioContext();
-                const buffer = await soundManager._loadBuffer(file);
+                const ctx = window.soundManager ? soundManager._ensureAudioContext() : null;
+                const buffer = window.soundManager ? await soundManager._loadBuffer(file) : null;
                 if (!buffer || this.currentBgmId !== id) return;
 
                 const source = ctx.createBufferSource();
@@ -173,7 +173,7 @@ class MusicRenderer {
                 source.loop = true;
 
                 const gain = ctx.createGain();
-                gain.gain.value = parseFloat(localStorage.getItem('bgmVolume') || 0.5);
+                gain.gain.value = localStorage.getItem('bgmVolume') !== null ? parseFloat(localStorage.getItem('bgmVolume')) : 0.5;
 
                 source.connect(gain);
                 gain.connect(ctx.destination);
@@ -189,7 +189,7 @@ class MusicRenderer {
 
         // Fallback: 기존 Audio 방식
         this.audio = new Audio(file);
-        this.audio.volume = parseFloat(localStorage.getItem('bgmVolume') || 0.5);
+        this.audio.volume = localStorage.getItem('bgmVolume') !== null ? parseFloat(localStorage.getItem('bgmVolume')) : 0.5;
         this.audio.loop = true;
         this.audio.play().catch(e => console.log('Audio play failed:', e));
     }

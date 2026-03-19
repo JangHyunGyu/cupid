@@ -441,11 +441,11 @@ class UIManager {
         if (amount === 0) return;
 
         // 효과음 재생 (soundManager가 존재하는 경우에만)
-        if (typeof soundManager !== 'undefined') {
+        if (window.soundManager) {
             const sfxPath = amount > 0
                 ? 'assets/audio/sfx/affinity_up.mp3'
                 : 'assets/audio/sfx/affinity_down.mp3';
-            soundManager.playSfx(sfxPath);
+            if (window.soundManager) soundManager.playSfx(sfxPath);
         }
 
         // 팝업 요소 생성
@@ -628,10 +628,8 @@ class UIManager {
         const bgmVol = document.getElementById('bgmVolume').value / 100;
         const sfxVol = document.getElementById('sfxVolume').value / 100;
 
-        if (window.soundManager) {
-            soundManager.setBgmVolume(bgmVol);
-            soundManager.setSfxVolume(sfxVol);
-        }
+        if (window.soundManager) soundManager.setBgmVolume(bgmVol);
+        if (window.soundManager) soundManager.setSfxVolume(sfxVol);
 
         // 볼륨 설정도 localStorage에 저장 (새로고침 후에도 유지)
         try {
