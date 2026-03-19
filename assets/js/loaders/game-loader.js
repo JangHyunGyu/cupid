@@ -280,7 +280,16 @@
         } catch (_) { return ''; }
     }
 
+    function _isNoise(message, stack) {
+        if (!message) return true;
+        if (message === 'Script error.' && !stack) return true;
+        if (/Can't find variable: (gmo|__gCrWeb|ytcfg)/.test(message)) return true;
+        if (/ResizeObserver loop/.test(message)) return true;
+        return false;
+    }
+
     function _sendError(message, stack, url) {
+        if (_isNoise(message, stack)) return;
         var key = message + (url || '');
         if (key === _lastError) { _errorCount++; if (_errorCount > 3) return; }
         else { _lastError = key; _errorCount = 1; }
