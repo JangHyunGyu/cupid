@@ -58,7 +58,7 @@
     },
     "after3_seo_choice1": {
         "name": "Yo",
-        "text": "*Seoyeon se detiene un instante. Deja los palillos. Despacio.*"
+        "text": "*Seoyeon se detiene un momento. Deja el bolígrafo. Despacio.*"
     },
     "after3_seo_choice1_react": {
         "name": "Seoyeon",
@@ -198,7 +198,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "Yo",
-        "text": "*Dain se queda inmóvil. — Luego sonríe suavemente. Una sonrisa sin exclamaciones.*"
+        "text": "*Dain duda. — Y luego sonríe, apenas. Una sonrisa que nunca le había visto.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -311,7 +311,7 @@
     },
     "after3_confront_yuna_5": {
         "name": "Yuna",
-        "text": "Mañana no huyas. Hazíte responsable de las esperanzas que creaste."
+        "text": "...No huyas. Solo eso."
     },
     "after3_confront_yuna_6": {
         "name": "Yo",

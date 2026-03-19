@@ -58,7 +58,7 @@
     },
     "after3_seo_choice1": {
         "name": "Me",
-        "text": "*Seoyeon pauses. She puts down her chopsticks. Slowly.*"
+        "text": "*Seoyeon pauses. Sets down her pen. Slowly.*"
     },
     "after3_seo_choice1_react": {
         "name": "Seoyeon",
@@ -198,7 +198,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "Me",
-        "text": "*Dain freezes. — Then smiles softly. A smile without exclamation marks.*"
+        "text": "*Dain hesitates. — Then smiles, small. A smile I've never seen before.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -311,7 +311,7 @@
     },
     "after3_confront_yuna_5": {
         "name": "Yuna",
-        "text": "Don’t run away tomorrow. Take responsibility for the hopes you created."
+        "text": "...Don’t run. That’s all."
     },
     "after3_confront_yuna_6": {
         "name": "Me",

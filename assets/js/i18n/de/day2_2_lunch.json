@@ -106,7 +106,7 @@
     },
     "lunch2_yuna_c1_4": {
         "name": "Ich",
-        "text": "*Der Name Lee Junho ist noch nicht gefallen, aber ein Schatten huscht ueber Yunas Gesicht.*"
+        "text": "*Ein Schatten huscht über Yunas Gesicht. Ich weiß nicht, wer dieses ‚jemand' war, aber—*"
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "lunch2_seo_17": {
         "name": "Dain",
-        "text": "Was?! Wen stoert was?!"
+        "text": "Ach komm, ich hab doch nur gefragt!"
     },
     "lunch2_seo_18": {
         "name": "Ich",

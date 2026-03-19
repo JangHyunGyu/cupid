@@ -5,7 +5,7 @@
     },
     "morning4_start_2": {
         "name": "Moi",
-        "text": "*Rien que sortir ce mot de ma tête fait battre mon cœur plus vite. C'est ridicule. Je regarde mon téléphone. Un message matinal.*"
+        "text": "*Dès que le mot « rendez-vous » apparaît dans ma tête, ma main file vers l'armoire. Déjà en train de penser à quoi porter — un peu ridicule. Je regarde le téléphone. Message du matin.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
@@ -21,7 +21,7 @@
     },
     "morning4_end": {
         "name": "Moi",
-        "text": "*Mon cœur bat la chamade. Préparons-nous.*"
+        "text": "*Un dernier regard dans le miroir. — C'est bon. On y va.*"
     },
     "morning4_hidden_check": {
         "name": "Moi",
@@ -77,7 +77,7 @@
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Professeur Principal",
-        "text": "...Merci. Mais ça reste entre nous — d'accord ? Je devrais pas faire ça."
+        "text": "...Merci. Mais n'en parle à personne — d'accord ? ...C'est notre secret. — Une enseignante ne devrait pas avoir de secrets avec un élève, pourtant."
     },
     "hidden_homeroom_d4_decline": {
         "name": "Professeur Principal",

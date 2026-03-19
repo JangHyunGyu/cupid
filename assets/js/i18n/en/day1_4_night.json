@@ -73,31 +73,31 @@
     },
     "night_seo_late_1": {
         "name": "Seoyeon",
-        "text": "*Want to walk to school together tomorrow?*"
+        "text": "*See you at school tomorrow.*"
     },
     "night_seo_late_2": {
         "name": "Seoyeon",
-        "text": "*I'll wait in front of your house*"
+        "text": "*— If you don't show up, I'm coming to find you*"
     },
     "night_seo_late_3": {
         "name": "Me",
-        "text": "*...What? The student council president, in front of my house? — My heart skips a beat. Why.*"
+        "text": "*Can't tell if 'I'm coming to find you' is a joke. — This person has zero boundaries.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
-        "text": "*...Are you still awake?*"
+        "text": "*...*"
     },
     "night_yuna_late_2": {
-        "name": "Yuna",
-        "text": "*The stars are pretty*"
+        "name": "{name}",
+        "text": "*Just '...' and nothing else. Like she typed something and erased it.*"
     },
     "night_yuna_late_3": {
-        "name": "Yuna",
-        "text": "*That's all*"
+        "name": "{name}",
+        "text": "*— I debate replying, and the screen goes dark.*"
     },
     "night_yuna_late_4": {
         "name": "Me",
-        "text": "*She said 'that's all,' but it doesn't feel like that's all.*"
+        "text": "*Did she leave me on read, or did I leave her on read? — Everything about this person is ambiguous.*"
     },
     "night_dain_late_1": {
         "name": "Dain",

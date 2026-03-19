@@ -58,7 +58,7 @@
     },
     "after3_seo_choice1": {
         "name": "Moi",
-        "text": "*Seoyeon s'arrête un instant. Elle pose ses baguettes. Lentement.*"
+        "text": "*Seoyeon s'arrête un instant. Pose son stylo. Lentement.*"
     },
     "after3_seo_choice1_react": {
         "name": "Seoyeon",
@@ -198,7 +198,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "Moi",
-        "text": "*Dain se fige. — Puis sourit doucement. Un sourire sans points d’exclamation.*"
+        "text": "*Dain hésite. — Puis sourit, à peine. Un sourire que je n’avais jamais vu.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -311,7 +311,7 @@
     },
     "after3_confront_yuna_5": {
         "name": "Yuna",
-        "text": "Demain, ne fuis pas. Assume les espoirs que tu as créés."
+        "text": "...Ne fuis pas. C'est tout."
     },
     "after3_confront_yuna_6": {
         "name": "Moi",

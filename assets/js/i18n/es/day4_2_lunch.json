@@ -11,8 +11,8 @@
         "name": "Yo",
         "text": "*¿Qué le digo?*",
         "choices": [
-            "Hoy estás... bonita.",
-            "Te ves radiante hoy."
+            "Viniste sin gafas.",
+            "Te has arreglado mucho hoy."
         ]
     },
     "date_seo_pretty_high": {
@@ -95,8 +95,8 @@
         "name": "Yo",
         "text": "*¿Qué le digo?*",
         "choices": [
-            "Hoy estás... bonita.",
-            "Te ves radiante hoy."
+            "Primera vez que te veo sin uniforme.",
+            "Hoy tus ojos se ven distintos."
         ]
     },
     "date_yuna_pretty_high": {
@@ -191,8 +191,8 @@
         "name": "Yo",
         "text": "*Esto ya se está volviendo un patrón.*",
         "choices": [
-            "Hoy estás... bonita.",
-            "Te ves radiante hoy."
+            "Esa gorra te queda bien.",
+            "¿Por qué la ropa deportiva te queda tan bien?"
         ]
     },
     "date_dain_pretty_high": {
@@ -201,7 +201,7 @@
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
-        "text": "De-- de repente, qué?!"
+        "text": "¡¡Oye!! ¡¡Sin avisar!! ¡¡No puedes decir eso así!!"
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
@@ -213,7 +213,7 @@
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "Eh?! Qué es eso tan de repente!! ...Gra-gracias."
+        "text": "¡¡¿Qué?!! ...Jaja, gracias, pero para, que me da vergüenza."
     },
     "date_dain_bright": {
         "name": "Dain",

@@ -73,31 +73,31 @@
     },
     "night_seo_late_1": {
         "name": "Seoyeon",
-        "text": "*¿Quieres ir juntos a la escuela mañana?*"
+        "text": "*Nos vemos mañana en la escuela.*"
     },
     "night_seo_late_2": {
         "name": "Seoyeon",
-        "text": "*Te espero frente a tu casa*"
+        "text": "*— Si no vienes, iré a buscarte*"
     },
     "night_seo_late_3": {
         "name": "Yo",
-        "text": "*...¿Qué? ¿La presidenta del consejo estudiantil, frente a mi casa? — El corazón me late un poco más rápido. Por qué.*"
+        "text": "*No sé si lo de 'iré a buscarte' es broma o va en serio. — Esta persona no tiene límites.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
-        "text": "*...¿Todavía estás despierto?*"
+        "text": "*...*"
     },
     "night_yuna_late_2": {
-        "name": "Yuna",
-        "text": "*Las estrellas están bonitas*"
+        "name": "{name}",
+        "text": "*Solo '...' y nada más. Como si hubiera escrito algo y lo hubiera borrado.*"
     },
     "night_yuna_late_3": {
-        "name": "Yuna",
-        "text": "*Solo eso*"
+        "name": "{name}",
+        "text": "*— Dudo si responder, y la pantalla se apaga.*"
     },
     "night_yuna_late_4": {
         "name": "Yo",
-        "text": "*Dijo 'solo eso', pero no parece que sea solo eso.*"
+        "text": "*¿Me dejó en visto o fui yo quien la dejó en visto? — Todo con esta persona es ambiguo.*"
     },
     "night_dain_late_1": {
         "name": "Dain",

@@ -21,7 +21,7 @@
     },
     "confess_seo_choice": {
         "name": "Yo",
-        "text": "*Mi corazón me ha subido hasta la garganta. Si no lo digo ahora -- nunca volveré a encontrar el valor.*",
+        "text": "*Tengo las puntas de los dedos frías. No hay viento. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
         "choices": [
             "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
             "...Esta vista es realmente hermosa."
@@ -33,7 +33,7 @@
     },
     "confess_seo_yes_2": {
         "name": "Yo",
-        "text": "*Abrí la boca pero no salió ningún sonido. Mi garganta arde. Segundo intento.*"
+        "text": "*Aprieto la barandilla. Abro la boca. No sale sonido.*"
     },
     "confess_seo_yes_3": {
         "name": "Yo",
@@ -53,7 +53,7 @@
     },
     "confess_seo_yes_7": {
         "name": "Yo",
-        "text": "*Tres sílabas flotan en el viento de la azotea. En este mismo lugar donde dije 'me gusta la brisa' el Día 1.*"
+        "text": "*Las palabras flotan en la brisa de la azotea. Seoyeon deja de respirar.*"
     },
     "confess_seo_yes_8": {
         "name": "Yo",
@@ -113,7 +113,7 @@
     },
     "confess_yuna_choice": {
         "name": "Yo",
-        "text": "*Mi corazón me ha subido hasta la garganta. Si no lo digo ahora -- nunca volveré a encontrar el valor.*",
+        "text": "*Mi respiración se acorta. La habitación parece más pequeña. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
         "choices": [
             "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
             "...Este lugar es realmente bonito."
@@ -125,7 +125,7 @@
     },
     "confess_yuna_yes_2": {
         "name": "Yo",
-        "text": "*Abrí la boca pero no salió ningún sonido. Mi garganta arde. Segundo intento.*"
+        "text": "*Abro la boca y la cierro. Sin sonido. Segundo intento.*"
     },
     "confess_yuna_yes_3": {
         "name": "Yo",
@@ -145,7 +145,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "Yo",
-        "text": "*Tres sílabas flotan en la habitación silenciosa. En este mismo lugar donde dije 'me gusta la tranquilidad' el Día 2.*"
+        "text": "*Las palabras parecen escritas en la habitación silenciosa. Los ojos de Yuna se abren grandes.*"
     },
     "confess_yuna_yes_8": {
         "name": "Yo",
@@ -193,7 +193,7 @@
     },
     "confess_dain_choice": {
         "name": "Yo",
-        "text": "*Mi corazón me ha subido hasta la garganta. Si no lo digo ahora -- nunca volveré a encontrar el valor.*",
+        "text": "*El suelo del gimnasio parece temblar. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
         "choices": [
             "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
             "...Este lugar es realmente grande."
@@ -205,7 +205,7 @@
     },
     "confess_dain_yes_2": {
         "name": "Yo",
-        "text": "*Abrí la boca pero no salió ningún sonido. Mi garganta arde. Segundo intento.*"
+        "text": "*Me quedo quieto, aún con el balón en las manos. La garganta me arde.*"
     },
     "confess_dain_yes_3": {
         "name": "Yo",

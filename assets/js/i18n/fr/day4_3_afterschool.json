@@ -21,7 +21,7 @@
     },
     "confess_seo_choice": {
         "name": "Moi",
-        "text": "*Mon cœur est monté jusqu'à ma gorge. Si je ne le dis pas maintenant -- je ne retrouverai jamais le courage.*",
+        "text": "*Le bout de mes doigts est glacé. Il n'y a pas de vent. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
         "choices": [
             "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
             "...Cette vue est vraiment magnifique."
@@ -33,7 +33,7 @@
     },
     "confess_seo_yes_2": {
         "name": "Moi",
-        "text": "*J'ai ouvert la bouche mais aucun son n'est sorti. Ma gorge brûle. Deuxième tentative.*"
+        "text": "*Ma main se crispe sur la rambarde. J'ouvre la bouche. Aucun son.*"
     },
     "confess_seo_yes_3": {
         "name": "Moi",
@@ -53,7 +53,7 @@
     },
     "confess_seo_yes_7": {
         "name": "Moi",
-        "text": "*Trois syllabes flottent dans le vent du toit. À cet endroit même où j'ai dit 'j'aime la brise' au Jour 1.*"
+        "text": "*Les mots flottent dans la brise du toit. Seoyeon retient son souffle.*"
     },
     "confess_seo_yes_8": {
         "name": "Moi",
@@ -113,7 +113,7 @@
     },
     "confess_yuna_choice": {
         "name": "Moi",
-        "text": "*Mon cœur est monté jusqu'à ma gorge. Si je ne le dis pas maintenant -- je ne retrouverai jamais le courage.*",
+        "text": "*Ma respiration s'est raccourcie. La pièce semble plus petite. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
         "choices": [
             "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
             "...Cet endroit est vraiment bien."
@@ -125,7 +125,7 @@
     },
     "confess_yuna_yes_2": {
         "name": "Moi",
-        "text": "*J'ai ouvert la bouche mais aucun son n'est sorti. Ma gorge brûle. Deuxième tentative.*"
+        "text": "*J'ouvre la bouche et la referme. Sans un bruit. Deuxième essai.*"
     },
     "confess_yuna_yes_3": {
         "name": "Moi",
@@ -145,7 +145,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "Moi",
-        "text": "*Trois syllabes flottent dans la pièce silencieuse. À cet endroit même où j'ai dit 'j'aime le calme' au Jour 2.*"
+        "text": "*Les mots semblent écrits dans le silence de la pièce. Les yeux de Yuna s'écarquillent.*"
     },
     "confess_yuna_yes_8": {
         "name": "Moi",
@@ -193,7 +193,7 @@
     },
     "confess_dain_choice": {
         "name": "Moi",
-        "text": "*Mon cœur est monté jusqu'à ma gorge. Si je ne le dis pas maintenant -- je ne retrouverai jamais le courage.*",
+        "text": "*Le sol du gymnase semble trembler. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
         "choices": [
             "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
             "...Cet endroit est vraiment grand."
@@ -205,7 +205,7 @@
     },
     "confess_dain_yes_2": {
         "name": "Moi",
-        "text": "*J'ai ouvert la bouche mais aucun son n'est sorti. Ma gorge brûle. Deuxième tentative.*"
+        "text": "*Figé, le ballon encore en main. Ma gorge brûle.*"
     },
     "confess_dain_yes_3": {
         "name": "Moi",

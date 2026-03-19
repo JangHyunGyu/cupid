@@ -21,7 +21,7 @@
     },
     "confess_seo_choice": {
         "name": "Ich",
-        "text": "*Mein Herz ist bis zum Hals gestiegen. Wenn ich es jetzt nicht sage -- werde ich den Mut nie wieder finden.*",
+        "text": "*Meine Fingerspitzen sind kalt. Es weht kein Wind. Wenn ich es jetzt nicht sage — werde ich diesen Mut nie wieder haben.*",
         "choices": [
             "Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.",
             "...Diese Aussicht ist wirklich schön."
@@ -33,7 +33,7 @@
     },
     "confess_seo_yes_2": {
         "name": "Ich",
-        "text": "*Ich öffnete den Mund, aber kein Ton kam heraus. Mein Hals brennt. Zweiter Versuch.*"
+        "text": "*Mein Griff am Geländer wird fester. Ich öffne den Mund. Kein Ton.*"
     },
     "confess_seo_yes_3": {
         "name": "Ich",
@@ -53,7 +53,7 @@
     },
     "confess_seo_yes_7": {
         "name": "Ich",
-        "text": "*Drei Silben schweben im Wind auf dem Dach. An genau diesem Ort, wo ich am Tag 1 sagte 'Ich mag die Brise.'*"
+        "text": "*Die Worte hängen in der Brise auf dem Dach. Seoyeon hält den Atem an.*"
     },
     "confess_seo_yes_8": {
         "name": "Ich",
@@ -113,7 +113,7 @@
     },
     "confess_yuna_choice": {
         "name": "Ich",
-        "text": "*Mein Herz ist bis zum Hals gestiegen. Wenn ich es jetzt nicht sage -- werde ich den Mut nie wieder finden.*",
+        "text": "*Mein Atem wird flacher. Der Raum fühlt sich kleiner an. Wenn ich es jetzt nicht sage — werde ich diesen Mut nie wieder haben.*",
         "choices": [
             "Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.",
             "...Dieser Ort ist wirklich schön."
@@ -125,7 +125,7 @@
     },
     "confess_yuna_yes_2": {
         "name": "Ich",
-        "text": "*Ich öffnete den Mund, aber kein Ton kam heraus. Mein Hals brennt. Zweiter Versuch.*"
+        "text": "*Ich öffne den Mund und schließe ihn wieder. Lautlos. Zweiter Versuch.*"
     },
     "confess_yuna_yes_3": {
         "name": "Ich",
@@ -145,7 +145,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "Ich",
-        "text": "*Drei Silben schweben im stillen Raum. An genau diesem Ort, wo ich am Tag 2 sagte 'Ich mag die Ruhe.'*"
+        "text": "*Die Worte scheinen in die Stille des Zimmers geschrieben. Yunas Augen werden groß.*"
     },
     "confess_yuna_yes_8": {
         "name": "Ich",
@@ -193,7 +193,7 @@
     },
     "confess_dain_choice": {
         "name": "Ich",
-        "text": "*Mein Herz ist bis zum Hals gestiegen. Wenn ich es jetzt nicht sage -- werde ich den Mut nie wieder finden.*",
+        "text": "*Der Boden der Turnhalle scheint zu schwanken. Wenn ich es jetzt nicht sage — werde ich diesen Mut nie wieder haben.*",
         "choices": [
             "Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.",
             "...Dieser Ort ist wirklich groß."
@@ -205,7 +205,7 @@
     },
     "confess_dain_yes_2": {
         "name": "Ich",
-        "text": "*Ich öffnete den Mund, aber kein Ton kam heraus. Mein Hals brennt. Zweiter Versuch.*"
+        "text": "*Erstarrt, den Ball noch in der Hand. Mein Hals brennt.*"
     },
     "confess_dain_yes_3": {
         "name": "Ich",

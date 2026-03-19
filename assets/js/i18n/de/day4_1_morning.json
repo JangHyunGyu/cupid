@@ -5,7 +5,7 @@
     },
     "morning4_start_2": {
         "name": "Ich",
-        "text": "*Allein dieses Wort aus meinem Kopf zu holen lässt mein Herz schneller schlagen. Ich bin albern. Ich schaue aufs Handy. Eine Nachricht am Morgen.*"
+        "text": "*Kaum taucht das Wort ‚Date' im Kopf auf, greift meine Hand zum Schrank. Schon am Überlegen, was ich anziehe — irgendwie lächerlich. Aufs Handy schauen. Nachricht am Morgen.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
@@ -21,7 +21,7 @@
     },
     "morning4_end": {
         "name": "Ich",
-        "text": "*Mein Herz klopft wie wild. Machen wir uns bereit.*"
+        "text": "*Noch ein Blick in den Spiegel. — Passt. Los geht's.*"
     },
     "morning4_hidden_check": {
         "name": "Ich",
@@ -77,7 +77,7 @@
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Klassenlehrerin",
-        "text": "...Danke. Aber das bleibt unter uns — klar? Ich sollte das eigentlich nicht tun."
+        "text": "...Danke. Aber erzähl niemandem davon — ja? ...Das bleibt unser Geheimnis. — Eine Lehrerin sollte keine Geheimnisse mit einem Schüler haben, eigentlich."
     },
     "hidden_homeroom_d4_decline": {
         "name": "Klassenlehrerin",

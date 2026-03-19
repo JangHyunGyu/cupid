@@ -58,7 +58,7 @@
     },
     "after3_seo_choice1": {
         "name": "Ich",
-        "text": "*Seoyeon hält inne. Sie legt die Stäbchen hin. Langsam.*"
+        "text": "*Seoyeon hält inne. Legt den Stift ab. Langsam.*"
     },
     "after3_seo_choice1_react": {
         "name": "Seoyeon",
@@ -198,7 +198,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "Ich",
-        "text": "*Dain stockt. — Dann lächelt sie leise. Ein Lächeln ohne Ausrufezeichen.*"
+        "text": "*Dain zögert. — Dann lächelt sie, ganz leicht. Ein Lächeln, das ich noch nie gesehen habe.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -311,7 +311,7 @@
     },
     "after3_confront_yuna_5": {
         "name": "Yuna",
-        "text": "Lauf morgen nicht weg. Übernimm die Verantwortung für die Hoffnungen, die du geweckt hast."
+        "text": "...Lauf nicht weg. Das ist alles."
     },
     "after3_confront_yuna_6": {
         "name": "Ich",

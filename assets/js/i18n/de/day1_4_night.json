@@ -73,31 +73,31 @@
     },
     "night_seo_late_1": {
         "name": "Seoyeon",
-        "text": "*Wollen wir morgen zusammen zur Schule gehen?*"
+        "text": "*Bis morgen in der Schule.*"
     },
     "night_seo_late_2": {
         "name": "Seoyeon",
-        "text": "*Ich warte vor deinem Haus*"
+        "text": "*— Wenn du nicht kommst, hole ich dich*"
     },
     "night_seo_late_3": {
         "name": "Ich",
-        "text": "*...Was? Die Schülerratsvorsitzende, vor meinem Haus? — Mein Herz schlägt einen Takt schneller. Warum.*"
+        "text": "*Ob \u201Eich hole dich\u201C ein Witz ist oder ernst gemeint. \u2014 Diese Person kennt keine Grenzen.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
-        "text": "*...Bist du noch wach?*"
+        "text": "*...*"
     },
     "night_yuna_late_2": {
-        "name": "Yuna",
-        "text": "*Die Sterne sind schön*"
+        "name": "{name}",
+        "text": "*Nur ‚...' und sonst nichts. Als hätte sie etwas getippt und wieder gelöscht.*"
     },
     "night_yuna_late_3": {
-        "name": "Yuna",
-        "text": "*Das ist alles*"
+        "name": "{name}",
+        "text": "*— Ich überlege, ob ich antworten soll, und der Bildschirm wird dunkel.*"
     },
     "night_yuna_late_4": {
         "name": "Ich",
-        "text": "*Sie sagte ‘das ist alles’, aber es fühlt sich nicht nach ‘alles’ an.*"
+        "text": "*Hat sie mich ignoriert, oder ich sie? — Bei dieser Person ist alles vage.*"
     },
     "night_dain_late_1": {
         "name": "Dain",
