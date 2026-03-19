@@ -164,13 +164,13 @@ Object.assign(SCENARIO[5], {
     "after5_sunset_1": {
         "background": "assets/images/background/school_back.png",
         "bgm": "confession.mp3",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": null,
         "sunset": true,
         "next": "after5_end"
     },
     "after5_end": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": null,
         "sunset": true,
         "next": "after5_ending_check"
     },
@@ -211,7 +211,7 @@ Object.assign(SCENARIO[5], {
     },
     "after5_set_harem": {
         "background": null,
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": null,
         "setFlag": "ending_harem",
         "next": "ending_start"
     },
@@ -253,15 +253,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "sunset": true,
-        "branches": [
-            {
-                "condition": "day4_waited",
-                "next": "day5_ending_friend"
-            },
-            {
-                "next": "ending_start"
-            }
-        ]
+        "next": "ending_start"
     },
     "after5_confess_no": {
         "background": "assets/images/background/school_back.png",

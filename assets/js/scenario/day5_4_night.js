@@ -284,7 +284,7 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "night": true,
         "fade": true,
-        "next": "true_epilogue_5"
+        "next": "true_epilogue_7"
     },
     "true_epilogue_5": {
         "character": null,

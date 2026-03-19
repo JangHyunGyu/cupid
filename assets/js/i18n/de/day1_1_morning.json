@@ -133,7 +133,7 @@
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "Das Gebäude der Erstklässler ist hier, die Bibliothek ist drüben. Der Kiosk ist im Untergeschoss."
+        "text": "Das Gebäude der Erstjährigen ist hier, die Bibliothek ist drüben. Die Mensa ist im Untergeschoss."
     },
     "hallway_4": {
         "name": "Ich",
@@ -209,7 +209,7 @@
     },
     "classroom_dain_2": {
         "name": "Ich",
-        "text": "*Brauner Pferdeschwanz. Eine Stimme voller Energie. Sie steht halb von ihrem Platz auf. Die Nachbarin zieht sie runter, aber es nützt nichts.*"
+        "text": "*Brauner Bob-Schnitt. Eine Stimme voller Energie. Sie steht halb von ihrem Platz auf. Die Nachbarin zieht sie runter, aber es nützt nichts.*"
     },
     "classroom_dain_3": {
         "name": "Klassenlehrerin",

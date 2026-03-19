@@ -58,7 +58,7 @@
     },
     "after3_seo_choice1": {
         "name": "{name}",
-        "text": "*서연이 잠깐 멈춘다. 젓가락을 내려놓는다. 천천히.*"
+        "text": "*서연이 잠깐 멈춘다. 펜을 내려놓는다. 천천히.*"
     },
     "after3_seo_choice1_react": {
         "name": "서연",
@@ -198,7 +198,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "{name}",
-        "text": "*다인이 멈칫한다. — 그리고 작게 웃는다. 느낌표 없는 웃음.*"
+        "text": "*다인이 멈칫한다. — 그리고 작게 웃는다. 처음 보는 웃음이다.*"
     },
     "after3_dain_choice1_react2": {
         "name": "다인",
@@ -311,7 +311,7 @@
     },
     "after3_confront_yuna_5": {
         "name": "유나",
-        "text": "내일은 도망치지 마. 네가 만든 기대감, 끝까지 책임져."
+        "text": "...도망치지 마. 그것만."
     },
     "after3_confront_yuna_6": {
         "name": "{name}",

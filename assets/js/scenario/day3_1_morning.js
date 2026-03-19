@@ -431,12 +431,12 @@ Object.assign(SCENARIO[3], {
     },
     "hidden_homeroom_d3_3": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_shy.png",
         "next": "hidden_homeroom_d3_4"
     },
     "hidden_homeroom_d3_4": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_sad.png",
         "next": "hidden_homeroom_d3_choice"
     },
     "hidden_homeroom_d3_choice": {
@@ -474,7 +474,7 @@ Object.assign(SCENARIO[3], {
     },
     "hidden_homeroom_d3_reveal_6": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_smile.png",
         "setFlag": "discovered_manuscript",
         "next": "hidden_homeroom_d3_end"
     },
@@ -485,7 +485,7 @@ Object.assign(SCENARIO[3], {
     },
     "hidden_homeroom_d3_end": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_smile.png",
         "setFlag": "homeroom_day3",
         "next": "hidden_homeroom_d3_freetalk"
     },
@@ -550,7 +550,7 @@ Object.assign(SCENARIO[3], {
     },
     "hidden_nurse_d3_9": {
         "background": "assets/images/background/nurse_room.jpg",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_shy.png",
         "setFlag": "nurse_day3",
         "next": "hidden_nurse_d3_freetalk"
     },
