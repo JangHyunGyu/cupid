@@ -645,13 +645,6 @@
 </head>
 
 <body>
-    <!-- SEO Structured Text (screen-reader accessible) -->
-    <div
-        style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-        <h1>CUPID - 無料AIビジュアルノベル ウェブ恋愛シミュレーション</h1>
-        <p>CUPIDは、インストール・ダウンロード・会員登録不要で、ウェブブラウザですぐに遊べる無料AI搭載ビジュアルノベルです。スマートフォン、学校、あらゆるデバイスでプレイ可能。AIが毎回異なる学園恋愛ストーリーを生成し、すべての選択が異なる結末へと導きます。ソヨン、ユナ、ダインと出会い、複数のエンディングがある分岐ストーリーを体験しましょう。PCとモバイルで韓国語・英語・日本語に対応。</p>
-        <p>CUPID는 설치·회원가입 없이 웹 브라우저에서 바로 즐기는 2026년형 무료 AI 모바일 웹 미연시입니다. AI 스토리 게임으로 매번 다른 학원 로맨스를 경험하세요.</p>
-    </div>
     <div class="lang-switch">
         <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab Home" title="ArcherLab">🏹</a>
         <button id="landing-settings-btn" class="lang-btn"
@@ -937,7 +930,7 @@
     <script src="assets/js/loaders/game-loader.js"></script>
 
     <script>
-        window.addEventListener('DOMContentLoaded', () => { soundManager.init(); });
+        window.addEventListener('DOMContentLoaded', () => { if (window.soundManager) soundManager.init(); });
 
         async function startGame() {
             // Show custom confirmation if saved game exists (continue button is enabled)
@@ -952,7 +945,7 @@
 
         // Close new game confirm modal
         function closeNewGameConfirm(e) {
-            if (e && e.target !== e.currentTarget && e.target.id !== 'newGameConfirmModal') return;
+            if (e && e.target !== e.currentTarget) return;
             const modal = document.getElementById('newGameConfirmModal');
             if (modal) modal.style.display = 'none';
         }
@@ -966,7 +959,7 @@
 
         // Actual new game launch logic
         async function launchNewGame() {
-            soundManager.playBgm('assets/audio/bgm/intro.mp3');
+            if (window.soundManager) window.soundManager.playBgm('assets/audio/bgm/intro.mp3');
             document.getElementById('landing-container').style.display = 'none';
             document.querySelector('.lang-switch').style.display = 'none';
             document.getElementById('game-container').style.display = 'block';
@@ -988,7 +981,7 @@
         }
 
         function closeHomeConfirm(e) {
-            if (e && e.target !== e.currentTarget && e.target.id !== 'homeConfirmModal') return;
+            if (e && e.target !== e.currentTarget) return;
             const homeModal = document.getElementById('homeConfirmModal');
             if (homeModal) {
                 homeModal.style.display = 'none';
@@ -1014,7 +1007,7 @@
                 return;
             }
 
-            soundManager.playBgm('assets/audio/bgm/intro.mp3');
+            if (window.soundManager) window.soundManager.playBgm('assets/audio/bgm/intro.mp3');
             document.getElementById('landing-container').style.display = 'none';
             document.querySelector('.lang-switch').style.display = 'none';
             document.getElementById('game-container').style.display = 'block';
@@ -1051,10 +1044,14 @@
 
         function openSettingsModal() {
             document.getElementById('settingsModal').classList.add('is-open');
+
             const savedSetting = localStorage.getItem('showAffinity');
-            document.getElementById('affinityToggle').checked = savedSetting === null ? true : savedSetting === 'true';
-            const bgmVol = localStorage.getItem('bgmVolume') || 0.5;
-            const sfxVol = localStorage.getItem('sfxVolume') || 0.5;
+            const showAffinity = savedSetting === null ? true : savedSetting === 'true';
+            document.getElementById('affinityToggle').checked = showAffinity;
+
+            const bgmVol = localStorage.getItem('bgmVolume') !== null ? parseFloat(localStorage.getItem('bgmVolume')) : 0.5;
+            const sfxVol = localStorage.getItem('sfxVolume') !== null ? parseFloat(localStorage.getItem('sfxVolume')) : 0.5;
+
             document.getElementById('bgmVolume').value = bgmVol * 100;
             document.getElementById('sfxVolume').value = sfxVol * 100;
             document.getElementById('bgmVolumeVal').textContent = Math.round(bgmVol * 100) + '%';
@@ -1074,16 +1071,20 @@
         });
 
         function closeSettingsModal(e) {
-            if (e && e.target !== e.currentTarget && e.target.id !== 'settingsModal') return;
+            if (e && e.target !== e.currentTarget) return;
             document.getElementById('settingsModal').classList.remove('is-open');
         }
 
         function saveSettings() {
-            localStorage.setItem('showAffinity', document.getElementById('affinityToggle').checked);
-            if (window.soundManager) {
-                soundManager.setBgmVolume(document.getElementById('bgmVolume').value / 100);
-                soundManager.setSfxVolume(document.getElementById('sfxVolume').value / 100);
-            }
+            const showAffinity = document.getElementById('affinityToggle').checked;
+            localStorage.setItem('showAffinity', showAffinity);
+
+            const bgmVol = document.getElementById('bgmVolume').value / 100;
+            const sfxVol = document.getElementById('sfxVolume').value / 100;
+
+            if (window.soundManager) soundManager.setBgmVolume(bgmVol);
+            if (window.soundManager) soundManager.setSfxVolume(sfxVol);
+
             closeSettingsModal();
         }
 
