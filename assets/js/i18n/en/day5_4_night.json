@@ -113,7 +113,7 @@
     },
     "true_epilogue_4": {
         "name": "Me",
-        "text": "*My knee hasn't healed. My family isn't any happier. The people who left haven't come back. — But at least I don't have to practice crying alone anymore. Not anymore.*"
+        "text": "*The knee hasn't healed. The family isn't any happier. The people who left haven't come back. — But at least I don't have to practice crying alone anymore. Not anymore.*"
     },
     "true_epilogue_5": {
         "name": "Me",
@@ -300,7 +300,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Homeroom Teacher",
-        "text": "...That. You didn't say 'ma'am.' First time."
+        "text": "...That. You didn't say 'teacher.' First time."
     },
     "hidden_true_homeroom_5": {
         "name": "Homeroom Teacher",
@@ -332,7 +332,7 @@
     },
     "hidden_true_nurse_4": {
         "name": "School Nurse",
-        "text": "You know, on Day 1 when you came to the nurse's office. I touched your forehead and said 'I just wanted to touch you.' That was a joke."
+        "text": "You know, on Day 1 when you came to the nurse's office. I put my hand on your forehead and said 'I just wanted to touch you.' That was a joke."
     },
     "hidden_true_nurse_5": {
         "name": "School Nurse",

@@ -303,11 +303,11 @@
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...Heh. Es tut weh. Aber es fühlt sich seltsam befreiend an. — Ich bin froh, dass mein letzter Schlag auf diesem Feld eine Zuspiel von {name} war."
+        "text": "...Heh. Es tut weh. Aber es fühlt sich seltsam befreiend an. — Ich bin froh, dass mein letzter Schlag auf diesem Feld ein Zuspiel von {name} war."
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
-        "text": "Auf Wiedersehen, Spielfeld."
+        "text": "Tschüss, Spielfeld."
     },
     "wall_dain_lastspike_6": {
         "name": "Dain",

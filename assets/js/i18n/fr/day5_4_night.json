@@ -295,19 +295,19 @@
         "text": "*La salle vide. Celle où elle écrivait. — La prof principale attend. En civil.*"
     },
     "hidden_true_homeroom_3": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Félicitations pour le diplôme."
     },
     "hidden_true_homeroom_4": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...Tiens. Tu n'as pas dit 'madame'. Première fois."
     },
     "hidden_true_homeroom_5": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "J'ai terminé le manuscrit. — C'est grâce à toi. J'ai demandé une ligne et t'es revenu avec trois pages."
     },
     "hidden_true_homeroom_6": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Je suis plus ta prof — je peux dire un truc ? ...On va boire un café. Un vrai cette fois, pas un jus."
     },
     "hidden_true_homeroom_7": {
@@ -315,8 +315,8 @@
         "text": "Avec plaisir."
     },
     "hidden_true_homeroom_8": {
-        "name": "Professeur Principal",
-        "text": "...Je devrais pas faire ça. Non. Je suis plus prof.\n\n─── Professeur Principale TRUE LOVE END ───"
+        "name": "Professeure principale",
+        "text": "...Je devrais pas faire ça. Non. Je suis plus prof.\n\n─── Professeure principale TRUE LOVE END ───"
     },
     "hidden_true_nurse_1": {
         "name": "Moi",
@@ -351,7 +351,7 @@
         "text": "Maintenant on peut se voir sans pansements. — Sans excuses.\n\n─── Infirmière TRUE LOVE END ───"
     },
     "hidden_good_homeroom_1": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Félicitations."
     },
     "hidden_good_homeroom_2": {
@@ -364,7 +364,7 @@
     },
     "hidden_good_homeroom_4": {
         "name": "Moi",
-        "text": "*Sa main est restée trois secondes de plus. Trop long pour une poignée de main, trop court pour une déclaration.\n\n─── Professeure Principale GOOD END ───*"
+        "text": "*Sa main est restée trois secondes de plus. Trop long pour une poignée de main, trop court pour une déclaration.\n\n─── Professeure principale GOOD END ───*"
     },
     "hidden_good_nurse_1": {
         "name": "Infirmière",
