@@ -73,31 +73,31 @@
     },
     "night_seo_late_1": {
         "name": "Seoyeon",
-        "text": "*Tu veux qu’on aille au lycée ensemble demain ?*"
+        "text": "*À demain à l’école.*"
     },
     "night_seo_late_2": {
         "name": "Seoyeon",
-        "text": "*Je t’attendrai devant chez toi*"
+        "text": "*— Si tu ne viens pas, je viendrai te chercher*"
     },
     "night_seo_late_3": {
         "name": "Moi",
-        "text": "*...Quoi ? La présidente du conseil, devant chez moi ? — Mon cœur accélère d’un battement. Pourquoi.*"
+        "text": "*Impossible de savoir si « je viendrai te chercher » est une blague. — Cette personne n’a aucune limite.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
-        "text": "*...Tu es encore réveillé ?*"
+        "text": "*...*"
     },
     "night_yuna_late_2": {
-        "name": "Yuna",
-        "text": "*Les étoiles sont belles*"
+        "name": "{name}",
+        "text": "*Juste « ... » et rien d'autre. Comme si elle avait tapé quelque chose et tout effacé.*"
     },
     "night_yuna_late_3": {
-        "name": "Yuna",
-        "text": "*C’est tout*"
+        "name": "{name}",
+        "text": "*— J’hésite à répondre, et l’écran s’éteint.*"
     },
     "night_yuna_late_4": {
         "name": "Moi",
-        "text": "*Elle a dit ‘c’est tout’, mais on dirait que ce n’est pas tout.*"
+        "text": "*C’est elle qui m’a ignoré, ou c’est moi ? — Tout est flou avec cette personne.*"
     },
     "night_dain_late_1": {
         "name": "Dain",

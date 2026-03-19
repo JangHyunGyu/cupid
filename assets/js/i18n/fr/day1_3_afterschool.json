@@ -177,7 +177,7 @@
     },
     "after_homeroom_honest_9": {
         "name": "Professeur Principal",
-        "text": "Joli prénom. — Je m'en souviendrai."
+        "text": "Si tu n'arrives pas à t'adapter, je reviendrai te chercher."
     },
     "after_homeroom_honest_10": {
         "name": "Moi",
@@ -235,11 +235,11 @@
     },
     "after_nurse_enter_7": {
         "name": "Infirmière",
-        "text": "...Non, j'avais juste envie de te toucher. — Je plaisante, je plaisante~ Allez, allonge-toi. Juste dix minutes."
+        "text": "Pas de fièvre, mais... il faut te détendre un peu. Allez, allonge-toi. Dix minutes seulement."
     },
     "after_nurse_enter_8": {
         "name": "Infirmière",
-        "text": "Pas besoin de me vouvoyer. Ici on est tranquille. — Pense à moi comme une infirmière, pas une prof."
+        "text": "Pas besoin de me vouvoyer ici. À l'infirmerie, on se détend. — C'est fait pour ça."
     },
     "after_nurse_enter_9": {
         "name": "Moi",
@@ -255,7 +255,7 @@
     },
     "after_nurse_enter_12": {
         "name": "Infirmière",
-        "text": "{name}... Joli prénom. Je m'en souviendrai."
+        "text": "La prochaine fois que tu te sens mal — ah, enfin, mieux vaut qu'il n'y ait pas de prochaine fois."
     },
     "after_nurse_freetalk": {
         "name": "Infirmière",

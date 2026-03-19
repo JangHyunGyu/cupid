@@ -177,7 +177,7 @@
     },
     "after_homeroom_honest_9": {
         "name": "Homeroom Teacher",
-        "text": "Nice name. — I'll remember it."
+        "text": "If you can't settle in, I'll come drag you back."
     },
     "after_homeroom_honest_10": {
         "name": "Me",
@@ -235,11 +235,11 @@
     },
     "after_nurse_enter_7": {
         "name": "School Nurse",
-        "text": "...Nah, I just wanted to touch you. — Kidding, kidding~ Here, lie down. Just ten minutes."
+        "text": "No fever, but... you need to relax a bit. Here, lie down. Just ten minutes."
     },
     "after_nurse_enter_8": {
         "name": "School Nurse",
-        "text": "Drop the formalities. Keep it casual in here. — Think of me as a nurse, not a teacher."
+        "text": "You don't have to be formal here. The nurse's office is a chill zone. — That's kind of the whole point."
     },
     "after_nurse_enter_9": {
         "name": "Me",
@@ -255,7 +255,7 @@
     },
     "after_nurse_enter_12": {
         "name": "School Nurse",
-        "text": "{name}... Nice name. I'll remember it."
+        "text": "Next time you feel sick — ah, well, better if there's no next time."
     },
     "after_nurse_freetalk": {
         "name": "School Nurse",

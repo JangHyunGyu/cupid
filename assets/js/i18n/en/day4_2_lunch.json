@@ -11,8 +11,8 @@
         "name": "Me",
         "text": "*What do I say?*",
         "choices": [
-            "You look... pretty today.",
-            "You seem bright today."
+            "No glasses today.",
+            "You really put in effort today."
         ]
     },
     "date_seo_pretty_high": {
@@ -95,8 +95,8 @@
         "name": "Me",
         "text": "*What do I say?*",
         "choices": [
-            "You look... pretty today.",
-            "You seem bright today."
+            "First time seeing you out of uniform.",
+            "Your eyes look different today."
         ]
     },
     "date_yuna_pretty_high": {
@@ -191,8 +191,8 @@
         "name": "Me",
         "text": "*This is becoming a pattern now.*",
         "choices": [
-            "You look... pretty today.",
-            "You seem bright today."
+            "That cap looks good.",
+            "Sportswear shouldn't look this good."
         ]
     },
     "date_dain_pretty_high": {
@@ -201,7 +201,7 @@
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
-        "text": "Wh-- What was that all of a sudden?!"
+        "text": "Hey!! You can't just — say that out of nowhere!!"
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
@@ -213,7 +213,7 @@
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "Huh?! What's that all of a sudden!! ...Th-thanks."
+        "text": "What the — !! ...Haha, thanks, but stop, it's embarrassing."
     },
     "date_dain_bright": {
         "name": "Dain",

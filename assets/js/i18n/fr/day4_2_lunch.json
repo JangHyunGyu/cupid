@@ -11,8 +11,8 @@
         "name": "Moi",
         "text": "*Qu’est-ce que je dis ?*",
         "choices": [
-            "Aujourd’hui tu es... jolie.",
-            "Tu as l’air radieuse aujourd’hui."
+            "T’es venue sans lunettes.",
+            "Tu t’es vraiment préparée aujourd’hui."
         ]
     },
     "date_seo_pretty_high": {
@@ -95,8 +95,8 @@
         "name": "Moi",
         "text": "*Qu’est-ce que je dis ?*",
         "choices": [
-            "Aujourd’hui tu es... jolie.",
-            "Tu as l’air radieuse aujourd’hui."
+            "Première fois que je te vois sans uniforme.",
+            "Tes yeux sont différents aujourd’hui."
         ]
     },
     "date_yuna_pretty_high": {
@@ -191,8 +191,8 @@
         "name": "Moi",
         "text": "*Ça devient un schéma récurrent maintenant.*",
         "choices": [
-            "Aujourd’hui tu es... jolie.",
-            "Tu as l’air radieuse aujourd’hui."
+            "Cette casquette te va bien.",
+            "Comment tu fais pour être jolie en tenue de sport ?"
         ]
     },
     "date_dain_pretty_high": {
@@ -201,7 +201,7 @@
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
-        "text": "Qu-- Qu’est-ce que c’est que ça tout d’un coup ?!"
+        "text": "Hé !! Sans prévenir !! Tu peux pas dire ça comme ça !!"
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
@@ -213,7 +213,7 @@
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "Hein ?! C’est quoi ça d’un coup !! ...Me-merci."
+        "text": "Quoi ?! ...Haha, merci, mais arrête, c’est gênant."
     },
     "date_dain_bright": {
         "name": "Dain",

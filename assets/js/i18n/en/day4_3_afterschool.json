@@ -21,7 +21,7 @@
     },
     "confess_seo_choice": {
         "name": "Me",
-        "text": "*My heart has risen all the way to my throat. If I don't say it now -- I'll never find the courage again.*",
+        "text": "*My fingertips are cold. There's no wind. If I don't say it now — I don't think I'll ever have this courage again.*",
         "choices": [
             "You know if you run, I'll chase you. So just stay and hear me out.",
             "...This view is really beautiful."
@@ -33,7 +33,7 @@
     },
     "confess_seo_yes_2": {
         "name": "Me",
-        "text": "*I opened my mouth but no sound came out. My throat is burning. Second attempt.*"
+        "text": "*My grip tightens on the railing. I open my mouth. No sound.*"
     },
     "confess_seo_yes_3": {
         "name": "Me",
@@ -53,7 +53,7 @@
     },
     "confess_seo_yes_7": {
         "name": "Me",
-        "text": "*Three syllables hang in the rooftop wind. On this very spot where I said 'I like the breeze' on Day 1.*"
+        "text": "*The words hang in the rooftop breeze. Seoyeon holds her breath.*"
     },
     "confess_seo_yes_8": {
         "name": "Me",
@@ -113,7 +113,7 @@
     },
     "confess_yuna_choice": {
         "name": "Me",
-        "text": "*My heart has risen all the way to my throat. If I don't say it now -- I'll never find the courage again.*",
+        "text": "*My breathing has shortened. The room feels smaller. If I don't say it now — I don't think I'll ever have this courage again.*",
         "choices": [
             "You know if you run, I'll chase you. So just stay and hear me out.",
             "...This place is really nice."
@@ -125,7 +125,7 @@
     },
     "confess_yuna_yes_2": {
         "name": "Me",
-        "text": "*I opened my mouth but no sound came out. My throat is burning. Second attempt.*"
+        "text": "*I open my mouth and close it. Silently. Second try.*"
     },
     "confess_yuna_yes_3": {
         "name": "Me",
@@ -145,7 +145,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "Me",
-        "text": "*Three syllables float in the quiet room. On this very spot where I said 'I like the quiet' on Day 2.*"
+        "text": "*The words seem to hang written in the quiet room. Yuna's eyes go wide.*"
     },
     "confess_yuna_yes_8": {
         "name": "Me",
@@ -193,7 +193,7 @@
     },
     "confess_dain_choice": {
         "name": "Me",
-        "text": "*My heart has risen all the way to my throat. If I don't say it now -- I'll never find the courage again.*",
+        "text": "*The gym floor seems to sway. If I don't say it now — I don't think I'll ever have this courage again.*",
         "choices": [
             "You know if you run, I'll chase you. So just stay and hear me out.",
             "...This place is really big."
@@ -205,7 +205,7 @@
     },
     "confess_dain_yes_2": {
         "name": "Me",
-        "text": "*I opened my mouth but no sound came out. My throat is burning. Second attempt.*"
+        "text": "*Frozen, still holding the ball. My throat burns.*"
     },
     "confess_dain_yes_3": {
         "name": "Me",

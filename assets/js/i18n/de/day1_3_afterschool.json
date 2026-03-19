@@ -177,7 +177,7 @@
     },
     "after_homeroom_honest_9": {
         "name": "Klassenlehrerin",
-        "text": "Schöner Name. — Den merke ich mir."
+        "text": "Wenn du dich nicht einlebst, komm ich dich wieder einfangen."
     },
     "after_homeroom_honest_10": {
         "name": "Ich",
@@ -235,11 +235,11 @@
     },
     "after_nurse_enter_7": {
         "name": "Schulkrankenschwester",
-        "text": "...Nee, ich wollte dich einfach anfassen. — Spaß, Spaß~ Hier, leg dich hin. Nur zehn Minuten."
+        "text": "Kein Fieber, aber... du musst dich etwas entspannen. Komm, leg dich hin. Nur zehn Minuten."
     },
     "after_nurse_enter_8": {
         "name": "Schulkrankenschwester",
-        "text": "Du musst mich nicht siezen. Hier kannst du dich entspannen. — Denk an mich als Krankenschwester, nicht als Lehrerin."
+        "text": "Du musst mich hier nicht siezen. Im Krankenzimmer darfst du dich entspannen. — Dafür ist es da."
     },
     "after_nurse_enter_9": {
         "name": "Ich",
@@ -255,7 +255,7 @@
     },
     "after_nurse_enter_12": {
         "name": "Schulkrankenschwester",
-        "text": "{name}... Schöner Name. Den merke ich mir."
+        "text": "Wenn du das nächste Mal krank wirst — ach, besser, es gibt kein nächstes Mal."
     },
     "after_nurse_freetalk": {
         "name": "Schulkrankenschwester",

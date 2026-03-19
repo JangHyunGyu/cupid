@@ -5,7 +5,7 @@
     },
     "morning4_start_2": {
         "name": "Yo",
-        "text": "*Solo sacar esa palabra de mi cabeza hace que mi corazón se acelere. Soy patético. Miro el teléfono. Un mensaje matutino.*"
+        "text": "*En cuanto la palabra 'cita' aparece en mi mente, mi mano va al armario. Ya pensando en qué ponerme — un poco ridículo. Miro el móvil. Mensaje de la mañana.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
@@ -21,7 +21,7 @@
     },
     "morning4_end": {
         "name": "Yo",
-        "text": "*Mi corazón late con fuerza. Vamos a prepararnos.*"
+        "text": "*Un último vistazo al espejo. — Listo. Vamos.*"
     },
     "morning4_hidden_check": {
         "name": "Yo",
@@ -77,7 +77,7 @@
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Profesora",
-        "text": "...Gracias. Pero esto queda entre nosotros — ¿sí? No debería hacer esto."
+        "text": "...Gracias. Pero no le digas a nadie — ¿vale? ...Esto es nuestro secreto. — Una profesora no debería tener secretos con un alumno."
     },
     "hidden_homeroom_d4_decline": {
         "name": "Profesora",

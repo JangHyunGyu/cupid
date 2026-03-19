@@ -58,7 +58,7 @@
     },
     "after3_seo_choice1": {
         "name": "僕",
-        "text": "*ソヨンが一瞬止まる。箸を置く。ゆっくりと。*"
+        "text": "*セヨンが少し止まる。ペンを置く。ゆっくりと。*"
     },
     "after3_seo_choice1_react": {
         "name": "ソヨン",
@@ -198,7 +198,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "僕",
-        "text": "*ダインが一瞬止まる。— そして小さく笑う。ビックリマークのない笑顔。*"
+        "text": "*ダインが一瞬ためらう。——そして小さく笑う。初めて見る笑顔だ。*"
     },
     "after3_dain_choice1_react2": {
         "name": "ダイン",
@@ -311,7 +311,7 @@
     },
     "after3_confront_yuna_5": {
         "name": "ユナ",
-        "text": "明日は逃げないで。君が作った期待、最後まで責任取って。"
+        "text": "……逃げないで。それだけ。"
     },
     "after3_confront_yuna_6": {
         "name": "僕",
