@@ -250,3 +250,59 @@
 
 })();
 // 즉시 실행 함수(IIFE)로 감싸서 전역 변수 오염 방지
+
+// ============================================================================
+// 【글로벌 에러 핸들러】 프론트엔드 에러를 D1에 기록
+// ============================================================================
+
+(function() {
+    var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
+    var p = window.location.pathname;
+    var lang = p.includes('-es') ? 'es' : p.includes('-ja') ? 'ja'
+             : p.includes('-fr') ? 'fr' : p.includes('-de') ? 'de'
+             : p.includes('-en') ? 'en' : 'ko';
+    var APP_ID = lang === 'ko' ? 'cupid' : 'cupid-' + lang;
+    var _lastError = '';
+    var _errorCount = 0;
+
+    function _getContext() {
+        try {
+            var parts = [];
+            var page = p.includes('game') ? 'game' : p.includes('gallery') ? 'gallery' : 'index';
+            parts.push('page:' + page);
+            if (window.__game) {
+                var g = window.__game;
+                if (g.stateManager?.currentDay) parts.push('day:' + g.stateManager.currentDay);
+                if (g.stateManager?.currentScene) parts.push('scene:' + g.stateManager.currentScene);
+            }
+            parts.push('vw:' + window.innerWidth + 'x' + window.innerHeight);
+            return parts.join(' | ');
+        } catch (_) { return ''; }
+    }
+
+    function _sendError(message, stack, url) {
+        var key = message + (url || '');
+        if (key === _lastError) { _errorCount++; if (_errorCount > 3) return; }
+        else { _lastError = key; _errorCount = 1; }
+
+        var context = _getContext();
+        try {
+            navigator.sendBeacon(ERROR_ENDPOINT, JSON.stringify({
+                appId: APP_ID, userId: '',
+                message: (message || '').substring(0, 500),
+                stack: (context ? '[ctx] ' + context + '\n' : '') + (stack || '').substring(0, 1900),
+                url: (url || '').substring(0, 500)
+            }));
+        } catch (_) {}
+    }
+
+    window.addEventListener('error', function(e) {
+        _sendError(e.message, e.error?.stack || '', e.filename + ':' + e.lineno + ':' + e.colno);
+    });
+
+    window.addEventListener('unhandledrejection', function(e) {
+        var reason = e.reason;
+        var message = reason?.message || String(reason || 'Unhandled rejection');
+        _sendError(message, reason?.stack || '', location.href);
+    });
+})();
