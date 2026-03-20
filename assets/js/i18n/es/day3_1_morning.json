@@ -312,7 +312,15 @@
     },
     "hidden_nurse_d3_9": {
         "name": "Enfermera",
-        "text": "...La persona que importa. ¿Y si resulta que es tu profesora? — ¡Es broma~ anda, ve a clase!"
+        "text": "...La persona que importa. ¿Y si resulta que es tu profesora?"
+    },
+    "hidden_nurse_d3_10": {
+        "name": "Yo",
+        "text": "*...¿Qué? — Me giré. La enfermera mira por la ventana. No está sonriendo. Es la primera vez que veo esa expresión.*"
+    },
+    "hidden_nurse_d3_11": {
+        "name": "Enfermera",
+        "text": "...¡Es broma~ anda, ve a clase!"
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Enfermera",

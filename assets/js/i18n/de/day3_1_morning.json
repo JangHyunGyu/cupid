@@ -312,7 +312,15 @@
     },
     "hidden_nurse_d3_9": {
         "name": "Schulkrankenschwester",
-        "text": "...Die Person, die zählt. Was, wenn das deine Lehrerin ist? — Spaß~ geh zum Unterricht!"
+        "text": "...Die Person, die zählt. Was, wenn das deine Lehrerin ist?"
+    },
+    "hidden_nurse_d3_10": {
+        "name": "Ich",
+        "text": "*...Was? — Ich drehte mich um. Die Krankenschwester starrt aus dem Fenster. Sie lächelt nicht. Diesen Ausdruck habe ich noch nie gesehen.*"
+    },
+    "hidden_nurse_d3_11": {
+        "name": "Schulkrankenschwester",
+        "text": "...Spaß~ geh zum Unterricht!"
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Schulkrankenschwester",

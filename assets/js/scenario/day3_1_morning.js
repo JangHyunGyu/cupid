@@ -550,6 +550,16 @@ Object.assign(SCENARIO[3], {
     },
     "hidden_nurse_d3_9": {
         "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d3_10"
+    },
+    "hidden_nurse_d3_10": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d3_11"
+    },
+    "hidden_nurse_d3_11": {
+        "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_shy.png",
         "setFlag": "nurse_day3",
         "next": "hidden_nurse_d3_freetalk"

@@ -312,7 +312,15 @@
     },
     "hidden_nurse_d3_9": {
         "name": "School Nurse",
-        "text": "...The one who matters most. What if that's your teacher? — Kidding~ Go on, get to class!"
+        "text": "...The one who matters most. What if that's your teacher?"
+    },
+    "hidden_nurse_d3_10": {
+        "name": "Me",
+        "text": "*...What? — I turned around. The nurse is staring out the window. She's not smiling. It's the first time I've seen that expression.*"
+    },
+    "hidden_nurse_d3_11": {
+        "name": "School Nurse",
+        "text": "...Kidding~ Go on, get to class!"
     },
     "hidden_nurse_d3_freetalk": {
         "name": "School Nurse",
