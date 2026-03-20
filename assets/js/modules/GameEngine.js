@@ -499,10 +499,9 @@ class GameEngine {
         // 📌 선택지 컨테이너 보이게 설정 (flex로 세로 정렬)
         this.uiManager.choiceContainer.style.display = 'flex';
 
-        // 📌 렌파이 스타일 연타 방지: 애니메이션 완료 후 클릭 활성화
-        // 최소 1500ms 보장하여 오클릭 방지 (모바일 터치 고려)
-        const animDelay = (choices.length - 1) * 80 + 400;
-        const totalDelay = Math.max(animDelay, 1500);
+        // 📌 렌파이 스타일 연타 방지: 마지막 버튼 애니메이션 완료 후 클릭 활성화
+        // 마지막 버튼 stagger delay + 애니메이션 duration(1500ms)
+        const totalDelay = (choices.length - 1) * 80 + 1500;
         setTimeout(() => {
             const buttons = this.uiManager.choiceContainer?.querySelectorAll('.choice-btn');
             if (buttons) {
