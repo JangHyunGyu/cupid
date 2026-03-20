@@ -13,7 +13,7 @@
     },
     "start_4": {
         "name": "Me",
-        "text": "*The word 'transfer student' carries both 'getting attention' and 'being alone' at the same time. Neither sounds great.*"
+        "text": "*My phone buzzes in my pocket. The old school group chat. I see a name flash on the screen — and shove the phone back in. Not yet.*"
     },
     "start_5": {
         "name": "Me",
@@ -230,6 +230,14 @@
     "classroom_yuna_2": {
         "name": "Me",
         "text": "*Silver-white hair. Red eyes, half-closed and drowsy. Tattoos cover her arms. — She doesn't even glance this way. As if a transfer student is nothing special.*"
+    },
+    "classroom_yuna_3": {
+        "name": "Me",
+        "text": "*The students around her don't look in Yuna's direction. Deliberately. As if no one's sitting there at all.*"
+    },
+    "classroom_yuna_4": {
+        "name": "Me",
+        "text": "*Someone in the front row whispers. '...Don't talk to her, she's scary.' — Close enough for Yuna to hear. But her expression doesn't change. She's used to it.*"
     },
     "classroom_seat_1": {
         "name": "Me",

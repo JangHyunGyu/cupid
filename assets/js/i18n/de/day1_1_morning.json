@@ -13,7 +13,7 @@
     },
     "start_4": {
         "name": "Ich",
-        "text": "*Das Wort 'Transferschüler' enthält gleichzeitig 'auffallen' und 'allein sein'. Beides nicht gerade verlockend.*"
+        "text": "*Mein Handy vibriert in der Tasche. Der Gruppenchat der alten Schule. Ein Name auf dem Display — ich stecke es zurück. Noch nicht.*"
     },
     "start_5": {
         "name": "Ich",
@@ -230,6 +230,14 @@
     "classroom_yuna_2": {
         "name": "Ich",
         "text": "*Silberweißes Haar. Rote Augen, halb geschlossen und verschlafen. Tattoos bedecken ihre Arme. — Sie schaut nicht mal in meine Richtung. Als wäre ein Transferschüler nichts Besonderes.*"
+    },
+    "classroom_yuna_3": {
+        "name": "Ich",
+        "text": "*Die Schüler um sie herum schauen nicht in Yunas Richtung. Absichtlich. Als säße dort niemand.*"
+    },
+    "classroom_yuna_4": {
+        "name": "Ich",
+        "text": "*Jemand in der vorderen Reihe flüstert. '...Sprich sie lieber nicht an, die ist unheimlich.' — Nah genug, dass Yuna es hören kann. Aber ihr Gesichtsausdruck ändert sich nicht. Sie ist es gewohnt.*"
     },
     "classroom_seat_1": {
         "name": "Ich",

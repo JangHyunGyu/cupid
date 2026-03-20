@@ -13,7 +13,7 @@
     },
     "start_4": {
         "name": "Moi",
-        "text": "*Le mot 'élève transféré' contient à la fois 'attirer l'attention' et 'être seul'. Aucun des deux ne me plaît.*"
+        "text": "*Mon téléphone vibre dans ma poche. Le groupe du lycée précédent. Je vois un nom s'afficher — et je le range aussitôt. Pas encore.*"
     },
     "start_5": {
         "name": "Moi",
@@ -230,6 +230,14 @@
     "classroom_yuna_2": {
         "name": "Moi",
         "text": "*Cheveux blanc argenté. Des yeux rouges, mi-clos et nonchalants. Des tatouages couvrent ses bras. — Elle ne regarde même pas dans ma direction. Comme si un élève transféré n'avait rien d'extraordinaire.*"
+    },
+    "classroom_yuna_3": {
+        "name": "Moi",
+        "text": "*Les élèves autour d'elle ne regardent pas dans la direction de Yuna. Délibérément. Comme si personne n'était assise là.*"
+    },
+    "classroom_yuna_4": {
+        "name": "Moi",
+        "text": "*Quelqu'un au premier rang chuchote. '...Ne lui parle pas, elle fait peur.' — Assez près pour que Yuna entende. Mais son expression ne change pas. Elle y est habituée.*"
     },
     "classroom_seat_1": {
         "name": "Moi",
