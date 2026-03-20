@@ -466,13 +466,15 @@ class GameEngine {
             [choices[i], choices[j]] = [choices[j], choices[i]];
         }
 
-        // 📌 각 선택지마다 버튼 생성
-        choices.forEach(choice => {
+        // 📌 각 선택지마다 버튼 생성 (시차 애니메이션 적용)
+        choices.forEach((choice, index) => {
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
 
+            // 시차(stagger) 애니메이션: 각 버튼이 80ms 간격으로 순차 등장
+            btn.style.animationDelay = `${index * 80}ms`;
+
             // {name} 플레이스홀더를 실제 플레이어 이름으로 치환
-            // 예: "{name}(와)과 데이트하기" → "유진(와)과 데이트하기"
             let choiceText = (choice.text || '').replace(/{name}/g, this.stateManager.playerName);
 
             // 지문 파싱 적용 (일반 대화와 동일하게 *...* 를 지문 블록으로 변환)
@@ -497,13 +499,15 @@ class GameEngine {
         // 📌 선택지 컨테이너 보이게 설정 (flex로 세로 정렬)
         this.uiManager.choiceContainer.style.display = 'flex';
 
-        // 📌 연타 방지: 선택지 등장 직후 500ms 동안 클릭 차단
-        this.uiManager.choiceContainer.style.pointerEvents = 'none';
+        // 📌 렌파이 스타일 연타 방지: 애니메이션 완료 후 클릭 활성화
+        // 마지막 버튼의 애니메이션 종료 시점 = (버튼 수 - 1) * 80ms + 400ms
+        const totalDelay = (choices.length - 1) * 80 + 400;
         setTimeout(() => {
-            if (this.uiManager.choiceContainer) {
-                this.uiManager.choiceContainer.style.pointerEvents = '';
+            const buttons = this.uiManager.choiceContainer?.querySelectorAll('.choice-btn');
+            if (buttons) {
+                buttons.forEach(btn => btn.classList.add('choice-ready'));
             }
-        }, 500);
+        }, totalDelay);
     }
 
     /**
