@@ -112,13 +112,45 @@
         "name": "Yo",
         "text": "*Respondi a las tres y deje el telefono.*"
     },
+    "night2_flashback_1": {
+        "name": "Yo",
+        "text": "*Lo que dijo Minsu no deja de volver. '¿Hacías lo mismo en tu anterior instituto?'*\n\n*— De repente abro la galería del móvil. No sé por qué. Mis dedos se movieron solos.*"
+    },
+    "night2_flashback_2": {
+        "name": "Yo",
+        "text": "*Bajo mucho en el scroll. Tres meses atrás. — Hay una foto. Foto de grupo delante de la biblioteca. Sojeong está sonriendo. A mi lado.*"
+    },
+    "night2_flashback_3": {
+        "name": "Yo",
+        "text": "*En aquella época llevaba un mes ensayando un 'me gustas'. Cada noche lo escribía en las notas del móvil. Simulaciones de confesión. — Siempre me quedaba ahí.*"
+    },
+    "night2_flashback_4": {
+        "name": "Yo",
+        "text": "*Y un día de marzo, en la hora de tutoría, el de al lado me dijo: 'Sojeong tiene novio.'*"
+    },
+    "night2_flashback_5": {
+        "name": "Yo",
+        "text": "*Las simulaciones en las notas se quedaron en la número 38. La 39 no existe. Ya no hacía falta escribirla.*"
+    },
+    "night2_flashback_6": {
+        "name": "Yo",
+        "text": "*El traslado no fue por Sojeong. Fue por el trabajo de mi padre. — Pero no me importó irme. Así no tendría que pasar cada día por el pasillo donde ella sonreía.*"
+    },
+    "night2_flashback_7": {
+        "name": "Yo",
+        "text": "*'Esta vez no me lo voy a tragar.' — Eso me prometí al venir a este instituto.*\n\n*Pero Minsu tiene razón. Intentando no tragarme nada, se lo estoy soltando a todas.*"
+    },
+    "night2_flashback_8": {
+        "name": "Yo",
+        "text": "*Cerré la galería. Dudé si borrar la foto o no — la dejé. Borrarla sería como borrar también el arrepentimiento.*"
+    },
     "night2_end_2": {
         "name": "Yo",
         "text": "*El segundo dia termino. El primer dia fue curiosidad. Me preguntaba que tipo de personas eran.*"
     },
     "night2_end_3": {
         "name": "Yo",
-        "text": "*Hoy es -- diferente. Ya no es curiosidad; las tengo en la cabeza. Que estaran haciendo, que diran manana.*"
+        "text": "*Entre 'pensar en alguien' y 'querer a alguien' todavía hay distancia. — Pero esa distancia se siente más corta que ayer.*\n\n*El problema es que esa distancia se está acortando con tres personas a la vez.*"
     },
     "night2_end_4": {
         "name": "Yo",

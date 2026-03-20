@@ -279,5 +279,66 @@
         "text": "*Conversando con la enfermera en la enfermería.*",
         "context": "Día 2. Se raspo el codo en educación física. Tono: Sintiéndose más cerca que ayer. Las bromas se sienten naturales y cómodas. Coqueteo de tira y afloja. Aún sin temas pesados.",
         "personality": "La enfermera es juguetona pero meticulosa. Tarda mucho en poner tiritas. Esconde algo personal."
+    },
+
+    "minsu_warn_1": {
+        "name": "Yo",
+        "text": "*De camino a casa. Saliendo del portón — Minsu me sigue por detrás.*"
+    },
+    "minsu_warn_2": {
+        "name": "Minsu",
+        "text": "Oye."
+    },
+    "minsu_warn_3": {
+        "name": "{name}",
+        "text": "¿Qué?"
+    },
+    "minsu_warn_4": {
+        "name": "Minsu",
+        "text": "¿Te lo estás pasando bien últimamente?"
+    },
+    "minsu_warn_5": {
+        "name": "{name}",
+        "text": "¿A qué viene eso?"
+    },
+    "minsu_warn_6": {
+        "name": "Minsu",
+        "text": "Seoyeon, Dain, Yuna. Las tres te sonríen."
+    },
+    "minsu_warn_7": {
+        "name": "{name}",
+        "text": "Simplemente son amables, ¿no?"
+    },
+    "minsu_warn_8": {
+        "name": "Minsu",
+        "text": "Tío, llevo un año en esta clase. Nunca vi a Seoyeon hablarle primero a un chico. Dain nunca le compró pan a otro. Y Yuna — ¿notas? No le escribe a nadie."
+    },
+    "minsu_warn_9": {
+        "name": "Minsu",
+        "text": "Las tres solo hacen eso contigo. — Y tú lo sabes."
+    },
+    "minsu_warn_10": {
+        "name": "Yo",
+        "text": "*Lo sé. Solo estoy haciéndome el tonto.*"
+    },
+    "minsu_warn_11": {
+        "name": "Minsu",
+        "text": "El problema es que tú les sonríes a las tres por igual."
+    },
+    "minsu_warn_12": {
+        "name": "Yo",
+        "text": "*No tengo nada que decir. Minsu tiene razón. — Me las doy de perceptivo, pero no veo los malentendidos que yo mismo voy dejando por ahí.*"
+    },
+    "minsu_warn_13": {
+        "name": "Minsu",
+        "text": "¿Hacías lo mismo en tu anterior instituto?"
+    },
+    "minsu_warn_14": {
+        "name": "Yo",
+        "text": "*— El corazón se me para un instante.*\n\n*Mi anterior instituto. — Esas palabras se me clavan en el pecho. Allí no fui capaz de decirle nada a nadie, y me arrepentí. Ahora les hablo a todas — ¿y eso es peor?*"
+    },
+    "minsu_warn_15": {
+        "name": "Minsu",
+        "text": "No sé, igual me estoy metiendo donde no me llaman. — Pero si al final las tres acaban llorando, eso será culpa tuya. En serio."
     }
 }

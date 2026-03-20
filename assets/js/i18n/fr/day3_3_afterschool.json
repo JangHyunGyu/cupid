@@ -342,5 +342,85 @@
         "text": "*Assise sur un banc avec Dain au terrain de jeux. Elle est plus calme que d'habitude.*",
         "context": "Jour 3, après avoir parlé avec Dain. Blessée mais faisant semblant d'être joyeuse. Ton : Lumineux en surface mais des ombres en dessous. Parfois le sourire n'atteint pas les yeux. La sincérité transparaît dans la conversation décontractée.",
         "personality": "Dain utilise la joie comme défense. Moins de points d'exclamation signifient qu'elle est sincère."
+    },
+    "haeun_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "haeun_warn_1": {
+        "name": "Moi",
+        "text": "*Je sors de la salle du conseil. Le couloir est vide. — Quelqu'un attendait.*"
+    },
+    "haeun_warn_2": {
+        "name": "Haeun",
+        "text": "...{name}."
+    },
+    "haeun_warn_3": {
+        "name": "Haeun",
+        "text": "Tu viens de voir Seoyeon-sunbae ?"
+    },
+    "haeun_warn_4": {
+        "name": "Haeun",
+        "text": "...Sunbae a pleuré. Après être sortie de la salle du conseil. Aux toilettes. — Il n'y avait que moi. En un an, je ne l'avais jamais vue pleurer."
+    },
+    "haeun_warn_5": {
+        "name": "Moi",
+        "text": "*Seoyeon a pleuré. — À moi, elle a juste dit que j'avais 'vu son côté imparfait'. Après ça, elle a pleuré.*"
+    },
+    "haeun_warn_6": {
+        "name": "Haeun",
+        "text": "Si sunbae a pleuré — ça veut dire que ce qu'elle ressent pour toi, {name}, c'est sincère."
+    },
+    "haeun_warn_7": {
+        "name": "Haeun",
+        "text": "Je sais que je me mêle de ce qui ne me regarde pas. Mais c'est que je m'inquiète pour sunbae. — En ce moment chez elle, c'est... compliqué. Ses parents... ...bref. S'il te plaît, sois bien avec elle. Je te le demande."
+    },
+    "haeun_warn_8": {
+        "name": "Moi",
+        "text": "*L'image de Seoyeon pleurant seule aux toilettes ne quitte pas ma tête. Le dos parfaitement droit, les poings blancs à force de serrer, et — des toilettes vides.*"
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "Moi",
+        "text": "*Sur le chemin du retour. Minsu attend au portail.*"
+    },
+    "minsu_d3_2": {
+        "name": "Minsu",
+        "text": "J'ai vu."
+    },
+    "minsu_d3_3": {
+        "name": "Minsu",
+        "text": "Au déjeuner. Et la tête de Seoyeon tout à l'heure."
+    },
+    "minsu_d3_4": {
+        "name": "Minsu",
+        "text": "Je t'avais dit quoi hier ? 'Si les trois finissent par pleurer, ce sera de ta faute.' Eh bien, c'est plus 'finissent par'. C'est maintenant."
+    },
+    "minsu_d3_5": {
+        "name": "Minsu",
+        "text": "Mec, moi aussi c'est dur à regarder de l'extérieur. Ce sont toutes des filles bien. — Je sais que t'es pas un mauvais gars. C'est juste que tu sais pas dire non."
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "......C'est vrai."
+    },
+    "minsu_d3_7": {
+        "name": "Minsu",
+        "text": "Refuser, c'est aussi aimer. Dire non à quelqu'un pour qui ça marchera pas — c'est cent fois mieux que de donner de faux espoirs."
+    },
+    "minsu_d3_8": {
+        "name": "Moi",
+        "text": "*Refuser, c'est aussi aimer. — Dans mon ancien lycée, Sojeong n'a même pas eu l'occasion de me refuser. Parce que j'avais tout gardé pour moi.*"
+    },
+    "minsu_d3_9": {
+        "name": "Moi",
+        "text": "*Si Sojeong m'avait refusé à l'époque — je n'aurais pas gardé ce regret. Si refuser c'est aimer, alors ce que je dois faire maintenant — c'est dire 'tu me plaîs' à une seule personne.*"
+    },
+    "minsu_d3_10": {
+        "name": "Minsu",
+        "text": "On se voit demain au lycée. — Réfléchis un peu, sérieusement."
     }
 }

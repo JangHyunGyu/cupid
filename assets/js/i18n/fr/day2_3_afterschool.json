@@ -279,5 +279,66 @@
         "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
         "context": "Jour 2. Coude écorché en sport. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
         "personality": "L'infirmière est joueuse mais méticuleuse. Prend son temps pour les pansements."
+    },
+
+    "minsu_warn_1": {
+        "name": "Moi",
+        "text": "*Sur le chemin du retour. En passant le portail — Minsu me suit par derrière.*"
+    },
+    "minsu_warn_2": {
+        "name": "Minsu",
+        "text": "Hé."
+    },
+    "minsu_warn_3": {
+        "name": "{name}",
+        "text": "Quoi ?"
+    },
+    "minsu_warn_4": {
+        "name": "Minsu",
+        "text": "Tu t'éclates bien en ce moment ?"
+    },
+    "minsu_warn_5": {
+        "name": "{name}",
+        "text": "Pourquoi tu me demandes ça ?"
+    },
+    "minsu_warn_6": {
+        "name": "Minsu",
+        "text": "Seoyeon, Dain, Yuna. Les trois te sourient."
+    },
+    "minsu_warn_7": {
+        "name": "{name}",
+        "text": "Elles sont juste gentilles, non ?"
+    },
+    "minsu_warn_8": {
+        "name": "Minsu",
+        "text": "Mec, ça fait un an que je suis dans cette classe. J'ai jamais vu Seoyeon parler en première à un mec. Dain n'a jamais offert de pain à un autre. Et Yuna — des petits mots ? Elle en écrit à personne."
+    },
+    "minsu_warn_9": {
+        "name": "Minsu",
+        "text": "Les trois ne font ça qu'avec toi. — Tu le sais très bien."
+    },
+    "minsu_warn_10": {
+        "name": "Moi",
+        "text": "*Je le sais. Je fais juste semblant de ne pas voir.*"
+    },
+    "minsu_warn_11": {
+        "name": "Minsu",
+        "text": "Le problème, c'est que tu souris aux trois de la même façon."
+    },
+    "minsu_warn_12": {
+        "name": "Moi",
+        "text": "*Rien à répondre. Minsu a raison. — Je me crois observateur, mais je ne vois même pas les malentendus que je sème moi-même.*"
+    },
+    "minsu_warn_13": {
+        "name": "Minsu",
+        "text": "Tu faisais pareil dans ton ancien lycée ?"
+    },
+    "minsu_warn_14": {
+        "name": "Moi",
+        "text": "*— Mon coeur se serre.*\n\n*Mon ancien lycée. — Ces mots se plantent dans ma poitrine. Là-bas, je n'avais rien dit à personne et je l'avais regretté. Cette fois — je parle à tout le monde, et c'est encore pire ?*"
+    },
+    "minsu_warn_15": {
+        "name": "Minsu",
+        "text": "Je sais pas, c'est peut-être pas mes affaires. — Mais si les trois finissent par pleurer, ce sera de ta faute. Pour de vrai."
     }
 }

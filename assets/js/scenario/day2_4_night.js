@@ -176,6 +176,54 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
+        "next": "night2_flashback_1"
+    },
+    "night2_flashback_1": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_flashback_2"
+    },
+    "night2_flashback_2": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_flashback_3"
+    },
+    "night2_flashback_3": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_flashback_4"
+    },
+    "night2_flashback_4": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_flashback_5"
+    },
+    "night2_flashback_5": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_flashback_6"
+    },
+    "night2_flashback_6": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_flashback_7"
+    },
+    "night2_flashback_7": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "next": "night2_flashback_8"
+    },
+    "night2_flashback_8": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
         "next": "night2_end_2"
     },
     "night2_end_2": {

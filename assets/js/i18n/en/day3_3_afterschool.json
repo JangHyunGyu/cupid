@@ -342,5 +342,85 @@
         "text": "*Sitting on a bench with Dain at the playground. She's quieter than usual.*",
         "context": "Day 3 afterschool, just talked with Dain. She's hurt but pretending to be cheerful. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
         "personality": "Dain is an energetic athlete. Being cheerful is her only defense. Fewer exclamation marks mean she's being real."
+    },
+    "haeun_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "haeun_warn_1": {
+        "name": "Me",
+        "text": "*I stepped out of the student council room. The hallway is empty. — Someone was waiting.*"
+    },
+    "haeun_warn_2": {
+        "name": "Haeun",
+        "text": "...{name}."
+    },
+    "haeun_warn_3": {
+        "name": "Haeun",
+        "text": "Did you just see Seoyeon? My senior?"
+    },
+    "haeun_warn_4": {
+        "name": "Haeun",
+        "text": "...She cried. After she left the student council room. In the bathroom. — I was the only one who saw. In a whole year, I've never seen her cry."
+    },
+    "haeun_warn_5": {
+        "name": "Me",
+        "text": "*Seoyeon cried. — All she said to me was that I'd 'seen her imperfect side.' But after that, she cried.*"
+    },
+    "haeun_warn_6": {
+        "name": "Haeun",
+        "text": "The fact that she cried — that means she really cares about you, {name}."
+    },
+    "haeun_warn_7": {
+        "name": "Haeun",
+        "text": "I know I'm butting in. But I'm worried about her. — Things at home are complicated for her right now. Her parents are... ...anyway. Please be good to her. I'm asking you."
+    },
+    "haeun_warn_8": {
+        "name": "Me",
+        "text": "*I can't get the image out of my head — Seoyeon crying alone in the bathroom. That perfectly straight back, those white-knuckled fists, and — an empty bathroom.*"
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "Me",
+        "text": "*Walking home. Minsu is waiting at the school gate.*"
+    },
+    "minsu_d3_2": {
+        "name": "Minsu",
+        "text": "I saw."
+    },
+    "minsu_d3_3": {
+        "name": "Minsu",
+        "text": "At lunch. And just now, Seoyeon's face."
+    },
+    "minsu_d3_4": {
+        "name": "Minsu",
+        "text": "What did I tell you yesterday? 'If all three of them end up crying, that's on you.' That wasn't supposed to be 'later.' It's now."
+    },
+    "minsu_d3_5": {
+        "name": "Minsu",
+        "text": "Man, it's hard to watch from the sidelines too. They're all good people. — I know you're not doing this because you're a bad guy. You just can't say no."
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "...Yeah."
+    },
+    "minsu_d3_7": {
+        "name": "Minsu",
+        "text": "Saying no is also a form of love. Turning someone down when it's not going to work — that's a hundred times better than giving them false hope."
+    },
+    "minsu_d3_8": {
+        "name": "Me",
+        "text": "*Saying no is love. — At my old school, I never even gave Sojeong the chance to turn me down. Because I swallowed it.*"
+    },
+    "minsu_d3_9": {
+        "name": "Me",
+        "text": "*If Sojeong had been able to reject me back then — maybe it wouldn't still haunt me. If saying no is love, then what I need to do now is — tell just one person 'yes.'*"
+    },
+    "minsu_d3_10": {
+        "name": "Minsu",
+        "text": "See you at school tomorrow. — Seriously, think about it. For real."
     }
 }

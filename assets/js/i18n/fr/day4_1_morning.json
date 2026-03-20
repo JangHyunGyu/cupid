@@ -3,6 +3,22 @@
         "name": "Moi",
         "text": "*Quatrième jour. Week-end. -- Aujourd'hui, pas d'école. C'est un rendez-vous.*"
     },
+    "minsu_cheer_1": {
+        "name": "Moi",
+        "text": "*Je regarde mon téléphone. Message du matin. — Minsu est tout en haut.*"
+    },
+    "minsu_cheer_2": {
+        "name": "Minsu",
+        "text": "Hé, c'est le rendez-vous aujourd'hui non ? Dain a posté dans le groupe mdr\nMais hé. N'y va qu'avec une seule."
+    },
+    "minsu_cheer_3": {
+        "name": "Minsu",
+        "text": "Ouais, je te fais confiance. — Assure."
+    },
+    "minsu_cheer_4": {
+        "name": "Moi",
+        "text": "*Court. Mais ce 'assure' pèse lourd. Le même qui au Jour 2 m'a demandé 'tu faisais pareil dans ton ancien lycée ?', qui au Jour 3 m'a dit 'refuser c'est aussi aimer' — aujourd'hui me dit 'assure'.*\n\n*D'avertissement à confrontation, de confrontation à encouragement. — Minsu croit en moi avant que je ne croie en moi-même.*"
+    },
     "morning4_start_2": {
         "name": "Moi",
         "text": "*Dès que le mot « rendez-vous » apparaît dans ma tête, ma main file vers l'armoire. Déjà en train de penser à quoi porter — un peu ridicule. Je regarde le téléphone. Message du matin.*"

@@ -922,6 +922,17 @@ class GameEngine {
         this.sceneRenderer.setTimeFilter(scene.night, scene.sunset);
 
         // ─────────────────────────────────────────────────────────────
+        // 📳 7.5단계: 메시지 씬 진동 효과
+        // ─────────────────────────────────────────────────────────────
+        if (scene.night && /_(msg|reply)_/.test(sceneId)) {
+            const box = this.uiManager.dialogueBox;
+            box.classList.remove('msg-vibrate');
+            void box.offsetWidth;
+            box.classList.add('msg-vibrate');
+            if (navigator.vibrate) navigator.vibrate(50);
+        }
+
+        // ─────────────────────────────────────────────────────────────
         // 📌 8단계: 현재 씬의 캐릭터를 "현재 캐릭터"로 설정
         // ─────────────────────────────────────────────────────────────
         if (scene.name) {

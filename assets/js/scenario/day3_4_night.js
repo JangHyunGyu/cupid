@@ -101,6 +101,30 @@ Object.assign(SCENARIO[3], {
     "night3_dream_2": {
         "character": null,
         "night": true,
+        "next": "night3_faithful_reflect_1"
+    },
+    "night3_faithful_reflect_1": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "night": true,
+        "next": "night3_faithful_reflect_2"
+    },
+    "night3_faithful_reflect_2": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "night": true,
+        "next": "night3_faithful_reflect_3"
+    },
+    "night3_faithful_reflect_3": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "night": true,
+        "next": "night3_faithful_reflect_4"
+    },
+    "night3_faithful_reflect_4": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "night": true,
         "next": "night3_dream_3"
     },
     "night3_dream_3": {
@@ -229,6 +253,36 @@ Object.assign(SCENARIO[3], {
         "next": "night3_nightmare_end_3"
     },
     "night3_nightmare_end_3": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "night": true,
+        "next": "night3_cheat_reflect_1"
+    },
+    "night3_cheat_reflect_1": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "night": true,
+        "next": "night3_cheat_reflect_2"
+    },
+    "night3_cheat_reflect_2": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "night": true,
+        "next": "night3_cheat_reflect_3"
+    },
+    "night3_cheat_reflect_3": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "night": true,
+        "next": "night3_cheat_reflect_4"
+    },
+    "night3_cheat_reflect_4": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "night": true,
+        "next": "night3_cheat_reflect_5"
+    },
+    "night3_cheat_reflect_5": {
         "background": "assets/images/background/student_room.png",
         "character": null,
         "night": true,

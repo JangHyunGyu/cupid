@@ -279,5 +279,66 @@
         "text": "*Chatting with the school nurse in the nurse's office.*",
         "context": "Day 2. Scraped elbow during PE, came to the nurse's office. The nurse carefully applied a bandage. Tone: Feeling closer than yesterday. Banter feels natural and comfortable. Push-pull flirting. No heavy topics yet.",
         "personality": "The school nurse is playful but meticulous. Takes a long time applying bandages. Hiding something personal."
+    },
+
+    "minsu_warn_1": {
+        "name": "Me",
+        "text": "*Walking home. Just past the school gate when — Minsu falls in step behind me.*"
+    },
+    "minsu_warn_2": {
+        "name": "Minsu",
+        "text": "Hey."
+    },
+    "minsu_warn_3": {
+        "name": "{name}",
+        "text": "What?"
+    },
+    "minsu_warn_4": {
+        "name": "Minsu",
+        "text": "Having fun these days?"
+    },
+    "minsu_warn_5": {
+        "name": "{name}",
+        "text": "Where's this coming from?"
+    },
+    "minsu_warn_6": {
+        "name": "Minsu",
+        "text": "Seoyeon, Dain, Yuna. All three of them smile at you."
+    },
+    "minsu_warn_7": {
+        "name": "{name}",
+        "text": "They're just being friendly."
+    },
+    "minsu_warn_8": {
+        "name": "Minsu",
+        "text": "Dude, I've been in this class for a year. I've never once seen Seoyeon start a conversation with a guy. Dain's never bought bread for another dude. And Yuna — notes? She doesn't write them for anyone."
+    },
+    "minsu_warn_9": {
+        "name": "Minsu",
+        "text": "All three of them only do that with you. — You know that already."
+    },
+    "minsu_warn_10": {
+        "name": "Me",
+        "text": "*I know. I've just been pretending not to.*"
+    },
+    "minsu_warn_11": {
+        "name": "Minsu",
+        "text": "The problem is you're smiling back at all three of them the same way."
+    },
+    "minsu_warn_12": {
+        "name": "Me",
+        "text": "*I have nothing to say. Minsu's right. — I pride myself on reading people, but I couldn't see the mixed signals I've been sending.*"
+    },
+    "minsu_warn_13": {
+        "name": "Minsu",
+        "text": "Were you like this at your old school too?"
+    },
+    "minsu_warn_14": {
+        "name": "Me",
+        "text": "*— My heart skips a beat.*\n\n*Old school. — That word hits hard. At my old school, I couldn't say anything to anyone and lived with regret. This time — I'm talking to everyone, but is that actually worse?*"
+    },
+    "minsu_warn_15": {
+        "name": "Minsu",
+        "text": "I don't know, maybe I'm overstepping. — But if all three of them end up crying, that's on you. For real."
     }
 }

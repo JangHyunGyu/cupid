@@ -132,6 +132,42 @@
         "name": "Me",
         "text": "*What have I done.*"
     },
+    "night3_cheat_reflect_1": {
+        "name": "Me",
+        "text": "*I pulled out my phone. Gallery. Scrolling again. — Sojeong's photo.*"
+    },
+    "night3_cheat_reflect_2": {
+        "name": "Me",
+        "text": "*She's smiling. Smiling at me in the group photo. Without knowing a thing.*"
+    },
+    "night3_cheat_reflect_3": {
+        "name": "Me",
+        "text": "*At my old school, I swallowed everything. Couldn't tell anyone. — This time, I swore I wouldn't swallow it.*\n\n*But looking back now — I didn't stop swallowing; I spat it out at everyone. That's not honesty — that's cowardice.*"
+    },
+    "night3_cheat_reflect_4": {
+        "name": "Me",
+        "text": "*The exact opposite of what happened with Sojeong, but the result is the same. Someone gets hurt.*\n\n*In the end, the problem was never 'swallow or spit out' — it was 'to whom.'*"
+    },
+    "night3_cheat_reflect_5": {
+        "name": "Me",
+        "text": "*— I won't run. This time, just one person.*"
+    },
+    "night3_faithful_reflect_1": {
+        "name": "Me",
+        "text": "*I opened my eyes. Morning light seeps through the curtains. — Today's dream was a good one.*"
+    },
+    "night3_faithful_reflect_2": {
+        "name": "Me",
+        "text": "*I pulled out my phone. Opened the gallery. Sojeong's photo. — I stopped scrolling, and held down.*\n\n*'Delete this photo?'*\n\n*— Deleted.*"
+    },
+    "night3_faithful_reflect_3": {
+        "name": "Me",
+        "text": "*I'd kept it because deleting it felt like erasing the regret. But now it's not regret anymore — it's a lesson. The photo that taught me not to swallow my feelings. — It served its purpose.*"
+    },
+    "night3_faithful_reflect_4": {
+        "name": "Me",
+        "text": "*This time is different. I'll only speak to one person. The rest — I'll turn down properly. That's the only honest thing I can do.*"
+    },
     "night3_end": {
         "name": "Me",
         "text": "*The night grows deeper...*"
