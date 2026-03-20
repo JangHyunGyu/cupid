@@ -49,6 +49,16 @@
 - **JS 모듈 버전** → loaders/config.js, game-loader.js, gallery-loader.js, modules/config.js(ASSET_VERSION) 4곳 통일
 - 일괄 스크립트 사용 시 ID 중복 매칭 주의 — 맥락 판단 필요한 작업은 직접 하나씩 검토
 
+## 반응형 UI 필수 검증
+- UI/CSS 수정 시 반드시 아래 5가지 뷰포트에서 레이아웃 깨짐·겹침·잘림 확인:
+  - PC (1280px+)
+  - 태블릿 가로 (1024px)
+  - 태블릿 세로 (768px)
+  - 모바일 세로 (375px)
+  - 모바일 가로 (667px × 375px)
+- fixed/absolute 요소는 모든 뷰포트에서 다른 요소와 겹치지 않는지 확인
+- 기존 UI 요소와 중복되는 요소가 없는지 확인 (같은 기능의 버튼이 2개 이상 존재 금지)
+
 ## 기술 환경
 - 웹 브라우저 기반 게임 — localStorage, URL, HTML/CSS/JS만 사용
 - exe, 설치 폴더, 파일 시스템 접근 절대 불가
