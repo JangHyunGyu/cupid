@@ -340,5 +340,21 @@
     "minsu_warn_15": {
         "name": "민수",
         "text": "몰라, 내가 오지랖이 많은 건지. — 근데 나중에 셋 다 울면 그건 네 탓이야. 진짜로."
+    },
+    "minsu_warn_8b": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_warn_11b": {
+        "name": "{name}",
+        "text": "나는 그냥 —"
+    },
+    "minsu_warn_11c": {
+        "name": "민수",
+        "text": "그냥? 그 '그냥'이 제일 잔인한 거야. 걔들은 '그냥'이 아니거든."
+    },
+    "minsu_warn_13b": {
+        "name": "{name}",
+        "text": "...뭐?"
     }
 }

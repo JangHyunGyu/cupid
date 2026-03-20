@@ -340,5 +340,21 @@
     "minsu_warn_15": {
         "name": "Minsu",
         "text": "I don't know, maybe I'm overstepping. — But if all three of them end up crying, that's on you. For real."
+    },
+    "minsu_warn_8b": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_warn_11b": {
+        "name": "{name}",
+        "text": "I was just —"
+    },
+    "minsu_warn_11c": {
+        "name": "Minsu",
+        "text": "Just? That 'just' is the cruelest part. To them, it's not 'just' anything."
+    },
+    "minsu_warn_13b": {
+        "name": "{name}",
+        "text": "...What?"
     }
 }

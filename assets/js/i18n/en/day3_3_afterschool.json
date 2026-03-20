@@ -422,5 +422,29 @@
     "minsu_d3_10": {
         "name": "Minsu",
         "text": "See you at school tomorrow. — Seriously, think about it. For real."
+    },
+    "haeun_warn_2b": {
+        "name": "{name}",
+        "text": "Yeah."
+    },
+    "haeun_warn_4b": {
+        "name": "{name}",
+        "text": "She cried?"
+    },
+    "haeun_warn_5b": {
+        "name": "Haeun",
+        "text": "Sunbae is someone who thinks she has to be perfect. Someone who thinks crying means losing."
+    },
+    "haeun_warn_5c": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_d3_5b": {
+        "name": "Me",
+        "text": "*Minsu sighs. Not out of contempt — out of genuine concern.*"
+    },
+    "minsu_d3_6b": {
+        "name": "Minsu",
+        "text": "I won't ask what happened at your old school. But let me tell you one thing."
     }
 }
