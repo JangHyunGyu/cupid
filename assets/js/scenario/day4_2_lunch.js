@@ -139,7 +139,7 @@ Object.assign(SCENARIO[4], {
     "date_seo_end": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "confess_seo_1"
+        "next": "pre_confess_minsu"
     },
 
     // ═══════════════════════════════════════════════════════════════
@@ -277,7 +277,7 @@ Object.assign(SCENARIO[4], {
     "date_yuna_end": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_smile.png",
-        "next": "confess_yuna_1"
+        "next": "pre_confess_minsu"
     },
 
     // ═══════════════════════════════════════════════════════════════
@@ -425,7 +425,29 @@ Object.assign(SCENARIO[4], {
     "date_dain_end": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "confess_dain_1"
+        "next": "pre_confess_minsu"
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 민수 독려 + 소정이 콜백 (공통, 고백 직전)
+    // ═══════════════════════════════════════════════════════════════
+    "pre_confess_minsu": {
+        "character": null,
+        "background": "assets/images/background/street.png",
+        "sunset": true,
+        "next": "pre_confess_minsu_2"
+    },
+    "pre_confess_minsu_2": {
+        "character": null,
+        "background": "assets/images/background/street.png",
+        "sunset": true,
+        "next": "pre_confess_callback"
+    },
+    "pre_confess_callback": {
+        "character": null,
+        "background": "assets/images/background/street.png",
+        "sunset": true,
+        "next": "confess_seo_1"
     }
 ,
     "date_seo_freetalk": {

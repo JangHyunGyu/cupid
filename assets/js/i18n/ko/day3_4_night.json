@@ -69,11 +69,19 @@
     },
     "night3_cheat_msg_4": {
         "name": "유나",
-        "text": "...거짓말은 하지 마"
+        "text": "...다 알고 있었어"
     },
     "night3_cheat_msg_5": {
         "name": "유나",
-        "text": "그것만"
+        "text": "네가 누구 옆에 설 건지. 그 무게를 알았으면 해"
+    },
+    "night3_cheat_msg_6": {
+        "name": "유나",
+        "text": "...도망치지 마. 그것만"
+    },
+    "night3_cheat_msg_7": {
+        "name": "{name}",
+        "text": "*유나가 메시지로 세 줄을 보냈다. 평소 한 줄도 안 보내는 사람이. — 그만큼 화가 났다는 뜻이다.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",

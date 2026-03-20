@@ -284,5 +284,17 @@
         "text": "*En rendez-vous avec Dain. Elle est plus prudente que d'habitude.*",
         "context": "Rendez-vous du jour 4 avec Dain. Ton : La conversation est devenue sérieuse. Excitation et nervosité du rendez-vous. Plus de sincérité que de blagues. Moments d'honnêteté émotionnelle.",
         "personality": "En rendez-vous, Dain est nerveuse et baisse le volume. Les exclamations disparaissent quand elle est sincère."
+    },
+    "pre_confess_minsu": {
+        "name": "Minsu",
+        "text": "Hé, t'es en rendez-vous là ? Juste un truc"
+    },
+    "pre_confess_minsu_2": {
+        "name": "Minsu",
+        "text": "Fais les choses bien cette fois. N'avale pas tes mots"
+    },
+    "pre_confess_callback": {
+        "name": "Moi",
+        "text": "*Le téléphone dans ma poche est lourd. Aucune notification pourtant. — Comme ce premier jour, quand j'ai vu un nom s'afficher et que je l'ai rangé aussitôt. Je ne peux plus fuir comme ça. Plus maintenant.*"
     }
 }

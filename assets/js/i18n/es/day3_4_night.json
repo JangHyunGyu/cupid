@@ -69,11 +69,19 @@
     },
     "night3_cheat_msg_4": {
         "name": "Yuna",
-        "text": "...No mientas"
+        "text": "...Lo sabía todo"
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "Solo eso"
+        "text": "Junto a quién te pondrás. Solo quiero que sientas el peso de eso"
+    },
+    "night3_cheat_msg_6": {
+        "name": "Yuna",
+        "text": "...No huyas. Solo eso"
+    },
+    "night3_cheat_msg_7": {
+        "name": "Yo",
+        "text": "*Yuna envió tres mensajes. De alguien que normalmente ni envía uno. — Eso muestra lo enfadada que está.*"
     },
     "night3_nightmare_1": {
         "name": "Yo",

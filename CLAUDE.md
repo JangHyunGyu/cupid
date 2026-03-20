@@ -60,6 +60,14 @@
 - fixed/absolute 요소는 모든 뷰포트에서 다른 요소와 겹치지 않는지 확인
 - 기존 UI 요소와 중복되는 요소가 없는지 확인 (같은 기능의 버튼이 2개 이상 존재 금지)
 
+## 시나리오 수정 작업 순서
+1. **SCENARIO.md 먼저 수정** — 시나리오 문서에서 대사/구조 변경을 확정
+2. **시나리오 JS 반영** — `assets/js/scenario/day*_*.js`에 씬 추가/라우팅 변경
+3. **i18n 6개 언어 동기화** — `assets/js/i18n/{ko,en,ja,es,fr,de}/day*_*.json` 전부 반영
+4. **`node validate.js` 실행** — 0 데드엔드, UNREACHABLE 확인
+5. 씬 제거 시 고아 씬을 남기지 말고 완전 삭제 (UNREACHABLE 경고 방지)
+6. 씬 삽입 시 기존 체인의 `next`를 새 씬으로 변경하고, 새 씬의 마지막 `next`가 원래 목적지를 가리키는지 확인
+
 ## 기술 환경
 - 웹 브라우저 기반 게임 — localStorage, URL, HTML/CSS/JS만 사용
 - exe, 설치 폴더, 파일 시스템 접근 절대 불가
