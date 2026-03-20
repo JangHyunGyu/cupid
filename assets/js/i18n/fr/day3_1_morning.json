@@ -312,7 +312,15 @@
     },
     "hidden_nurse_d3_9": {
         "name": "Infirmière",
-        "text": "...La personne qui compte. Et si c'était ta prof ? — Je plaisante~ allez, file en cours !"
+        "text": "...La personne qui compte. Et si c'était ta prof ?"
+    },
+    "hidden_nurse_d3_10": {
+        "name": "Moi",
+        "text": "*...Quoi ? — Je me suis retourné. L'infirmière regarde par la fenêtre. Elle ne sourit pas. C'est la première fois que je vois cette expression.*"
+    },
+    "hidden_nurse_d3_11": {
+        "name": "Infirmière",
+        "text": "...Je plaisante~ allez, file en cours !"
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Infirmière",
