@@ -422,5 +422,29 @@
     "minsu_d3_10": {
         "name": "Minsu",
         "text": "Nos vemos mañana en clase. — Piénsalo bien, en serio."
+    },
+    "haeun_warn_2b": {
+        "name": "{name}",
+        "text": "Sí."
+    },
+    "haeun_warn_4b": {
+        "name": "{name}",
+        "text": "¿Lloró?"
+    },
+    "haeun_warn_5b": {
+        "name": "Haeun",
+        "text": "Sunbae es de las que creen que tienen que ser perfectas. De las que creen que llorar es perder."
+    },
+    "haeun_warn_5c": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_d3_5b": {
+        "name": "Yo",
+        "text": "*Minsu suspira. No de hastío — de preocupación sincera.*"
+    },
+    "minsu_d3_6b": {
+        "name": "Minsu",
+        "text": "No voy a preguntarte qué pasó en tu anterior instituto. Pero déjame decirte una cosa."
     }
 }

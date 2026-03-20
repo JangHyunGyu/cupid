@@ -340,5 +340,21 @@
     "minsu_warn_15": {
         "name": "Minsu",
         "text": "Keine Ahnung, vielleicht geht mich das nichts an. — Aber wenn am Ende alle drei heulen, dann ist das deine Schuld. Echt jetzt."
+    },
+    "minsu_warn_8b": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_warn_11b": {
+        "name": "{name}",
+        "text": "Ich hab doch nur —"
+    },
+    "minsu_warn_11c": {
+        "name": "Minsu",
+        "text": "Nur? Dieses 'nur' ist das Grausamste daran. Für die ist es nicht 'nur' irgendwas."
+    },
+    "minsu_warn_13b": {
+        "name": "{name}",
+        "text": "...Was?"
     }
 }

@@ -422,5 +422,29 @@
     "minsu_d3_10": {
         "name": "Minsu",
         "text": "Wir sehen uns morgen in der Schule. — Denk mal drüber nach, ernsthaft."
+    },
+    "haeun_warn_2b": {
+        "name": "{name}",
+        "text": "Ja."
+    },
+    "haeun_warn_4b": {
+        "name": "{name}",
+        "text": "Sie hat geweint?"
+    },
+    "haeun_warn_5b": {
+        "name": "Haeun",
+        "text": "Sunbae ist jemand, der glaubt, perfekt sein zu müssen. Jemand, der denkt, dass Weinen Schwäche ist."
+    },
+    "haeun_warn_5c": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_d3_5b": {
+        "name": "Ich",
+        "text": "*Minsu seufzt. Nicht genervt — ehrlich besorgt.*"
+    },
+    "minsu_d3_6b": {
+        "name": "Minsu",
+        "text": "Ich frag dich nicht, was an deiner alten Schule passiert ist. Aber eins will ich dir sagen."
     }
 }

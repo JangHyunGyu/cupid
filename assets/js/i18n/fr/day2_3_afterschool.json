@@ -340,5 +340,21 @@
     "minsu_warn_15": {
         "name": "Minsu",
         "text": "Je sais pas, c'est peut-être pas mes affaires. — Mais si les trois finissent par pleurer, ce sera de ta faute. Pour de vrai."
+    },
+    "minsu_warn_8b": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_warn_11b": {
+        "name": "{name}",
+        "text": "Moi je fais juste —"
+    },
+    "minsu_warn_11c": {
+        "name": "Minsu",
+        "text": "Juste ? Ce 'juste' c'est le truc le plus cruel. Pour elles, c'est pas 'juste' rien du tout."
+    },
+    "minsu_warn_13b": {
+        "name": "{name}",
+        "text": "...Quoi ?"
     }
 }

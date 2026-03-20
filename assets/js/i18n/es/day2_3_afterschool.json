@@ -340,5 +340,21 @@
     "minsu_warn_15": {
         "name": "Minsu",
         "text": "No sé, igual me estoy metiendo donde no me llaman. — Pero si al final las tres acaban llorando, eso será culpa tuya. En serio."
+    },
+    "minsu_warn_8b": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_warn_11b": {
+        "name": "{name}",
+        "text": "Yo solo —"
+    },
+    "minsu_warn_11c": {
+        "name": "Minsu",
+        "text": "¿Solo? Ese 'solo' es lo más cruel de todo. Para ellas no es 'solo' nada."
+    },
+    "minsu_warn_13b": {
+        "name": "{name}",
+        "text": "...¿Qué?"
     }
 }

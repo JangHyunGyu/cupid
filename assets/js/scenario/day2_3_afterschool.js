@@ -388,6 +388,11 @@ Object.assign(SCENARIO[2], {
     "minsu_warn_8": {
         "background": "assets/images/background/school.png",
         "character": null,
+        "next": "minsu_warn_8b"
+    },
+    "minsu_warn_8b": {
+        "background": "assets/images/background/school.png",
+        "character": null,
         "next": "minsu_warn_9"
     },
     "minsu_warn_9": {
@@ -403,6 +408,16 @@ Object.assign(SCENARIO[2], {
     "minsu_warn_11": {
         "background": "assets/images/background/school.png",
         "character": null,
+        "next": "minsu_warn_11b"
+    },
+    "minsu_warn_11b": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_11c"
+    },
+    "minsu_warn_11c": {
+        "background": "assets/images/background/school.png",
+        "character": null,
         "next": "minsu_warn_12"
     },
     "minsu_warn_12": {
@@ -411,6 +426,11 @@ Object.assign(SCENARIO[2], {
         "next": "minsu_warn_13"
     },
     "minsu_warn_13": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_13b"
+    },
+    "minsu_warn_13b": {
         "background": "assets/images/background/school.png",
         "character": null,
         "next": "minsu_warn_14"

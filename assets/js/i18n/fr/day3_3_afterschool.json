@@ -422,5 +422,29 @@
     "minsu_d3_10": {
         "name": "Minsu",
         "text": "On se voit demain au lycée. — Réfléchis un peu, sérieusement."
+    },
+    "haeun_warn_2b": {
+        "name": "{name}",
+        "text": "Oui."
+    },
+    "haeun_warn_4b": {
+        "name": "{name}",
+        "text": "Elle a pleuré ?"
+    },
+    "haeun_warn_5b": {
+        "name": "Haeun",
+        "text": "Sunbae est quelqu'un qui croit qu'elle doit être parfaite. Quelqu'un qui pense que pleurer, c'est perdre."
+    },
+    "haeun_warn_5c": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_d3_5b": {
+        "name": "Moi",
+        "text": "*Minsu soupire. Pas un soupir de lassitude — un soupir d'inquiétude sincère.*"
+    },
+    "minsu_d3_6b": {
+        "name": "Minsu",
+        "text": "Je te demanderai pas ce qui s'est passé dans ton ancien lycée. Mais laisse-moi te dire une chose."
     }
 }
