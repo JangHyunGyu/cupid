@@ -496,6 +496,14 @@ class GameEngine {
 
         // 📌 선택지 컨테이너 보이게 설정 (flex로 세로 정렬)
         this.uiManager.choiceContainer.style.display = 'flex';
+
+        // 📌 연타 방지: 선택지 등장 직후 500ms 동안 클릭 차단
+        this.uiManager.choiceContainer.style.pointerEvents = 'none';
+        setTimeout(() => {
+            if (this.uiManager.choiceContainer) {
+                this.uiManager.choiceContainer.style.pointerEvents = '';
+            }
+        }, 500);
     }
 
     /**
