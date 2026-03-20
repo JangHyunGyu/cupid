@@ -312,6 +312,16 @@ Object.assign(SCENARIO[1], {
     "classroom_yuna_2": {
         "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
+        "next": "classroom_yuna_3"
+    },
+    "classroom_yuna_3": {
+        "character": "assets/images/characters/yuna_bored.png",
+        "background": "assets/images/background/room_school.png",
+        "next": "classroom_yuna_4"
+    },
+    "classroom_yuna_4": {
+        "character": "assets/images/characters/yuna_bored.png",
+        "background": "assets/images/background/room_school.png",
         "next": "classroom_seat_1"
     },
     "classroom_seat_1": {

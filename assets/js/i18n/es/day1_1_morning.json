@@ -13,7 +13,7 @@
     },
     "start_4": {
         "name": "Yo",
-        "text": "*La palabra 'estudiante transferido' lleva incorporadas 'llamar la atención' y 'estar solo' al mismo tiempo. Ninguna de las dos me entusiasma.*"
+        "text": "*El teléfono vibra en mi bolsillo. El chat grupal del antiguo instituto. Veo un nombre en la pantalla — y lo guardo de nuevo. Todavía no.*"
     },
     "start_5": {
         "name": "Yo",
@@ -230,6 +230,14 @@
     "classroom_yuna_2": {
         "name": "Yo",
         "text": "*Pelo blanco plateado. Ojos rojos, medio cerrados y soñolientos. Tatuajes cubren sus brazos. — Ni siquiera mira en esta dirección. Como si un estudiante nuevo no fuera nada del otro mundo.*"
+    },
+    "classroom_yuna_3": {
+        "name": "Yo",
+        "text": "*Los estudiantes a su alrededor no miran hacia Yuna. A propósito. Como si no hubiera nadie sentado allí.*"
+    },
+    "classroom_yuna_4": {
+        "name": "Yo",
+        "text": "*Alguien en la fila de delante susurra. '...No le hables, da miedo.' — A una distancia que Yuna puede oír perfectamente. Pero su expresión no cambia. Está acostumbrada.*"
     },
     "classroom_seat_1": {
         "name": "Yo",
