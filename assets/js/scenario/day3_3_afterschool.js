@@ -455,7 +455,7 @@ Object.assign(SCENARIO[3], {
     "after3_confront_admit_6": {
         "character": null,
         "background": "assets/images/background/school_hallway.png",
-        "next": "after3_confront_yuna_enter"
+        "next": "after3_confront_end"
     },
 
     // --- Excuse ---
@@ -467,7 +467,7 @@ Object.assign(SCENARIO[3], {
     "after3_confront_excuse_2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_angry.png",
-        "next": "after3_confront_yuna_enter"
+        "next": "after3_confront_end"
     },
 
     // --- Lie ---
@@ -479,48 +479,12 @@ Object.assign(SCENARIO[3], {
     "after3_confront_lie_2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_sad.png",
-        "next": "after3_confront_yuna_enter"
-    },
-
-    // --- Yuna enters ---
-    "after3_confront_yuna_enter": {
-        "character": "assets/images/characters/yuna_normal.png",
-        "background": "assets/images/background/school_hallway.png",
-        "next": "after3_confront_yuna_1"
-    },
-    "after3_confront_yuna_1": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_angry.png",
-        "next": "after3_confront_yuna_2"
-    },
-    "after3_confront_yuna_2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_angry.png",
-        "next": "after3_confront_yuna_3"
-    },
-    "after3_confront_yuna_3": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_angry.png",
-        "next": "after3_confront_yuna_4"
-    },
-    "after3_confront_yuna_4": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_angry.png",
-        "next": "after3_confront_yuna_5"
-    },
-    "after3_confront_yuna_5": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_angry.png",
-        "next": "after3_confront_yuna_6"
-    },
-    "after3_confront_yuna_6": {
-        "character": "assets/images/characters/yuna_angry.png",
-        "background": "assets/images/background/school_hallway.png",
         "next": "after3_confront_end"
     },
+
     "after3_confront_end": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_angry.png",
+        "character": null,
         "next": "after3_final"
     },
 

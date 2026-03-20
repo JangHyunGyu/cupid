@@ -159,6 +159,16 @@ Object.assign(SCENARIO[3], {
     "night3_cheat_msg_5": {
         "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
+        "next": "night3_cheat_msg_6"
+    },
+    "night3_cheat_msg_6": {
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
+        "night": true,
+        "next": "night3_cheat_msg_7"
+    },
+    "night3_cheat_msg_7": {
+        "character": null,
+        "night": true,
         "next": "night3_nightmare_1"
     },
     "night3_nightmare_1": {

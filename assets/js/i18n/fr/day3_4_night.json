@@ -69,11 +69,19 @@
     },
     "night3_cheat_msg_4": {
         "name": "Yuna",
-        "text": "...Ne mens pas"
+        "text": "...Je savais tout"
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "C’est tout"
+        "text": "À côté de qui tu te tiendras. Je veux juste que tu ressentes le poids de ça"
+    },
+    "night3_cheat_msg_6": {
+        "name": "Yuna",
+        "text": "...Ne fuis pas. C’est tout"
+    },
+    "night3_cheat_msg_7": {
+        "name": "Moi",
+        "text": "*Yuna a envoyé trois messages. De la part de quelqu’un qui n’en envoie normalement même pas un. — C’est dire à quel point elle est en colère.*"
     },
     "night3_nightmare_1": {
         "name": "Moi",

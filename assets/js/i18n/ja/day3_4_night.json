@@ -69,11 +69,19 @@
     },
     "night3_cheat_msg_4": {
         "name": "ユナ",
-        "text": "...嘘はつかないで"
+        "text": "...全部知ってた"
     },
     "night3_cheat_msg_5": {
         "name": "ユナ",
-        "text": "それだけ"
+        "text": "誰の隣に立つのか。その重さを分かってほしい"
+    },
+    "night3_cheat_msg_6": {
+        "name": "ユナ",
+        "text": "...逃げないで。それだけ"
+    },
+    "night3_cheat_msg_7": {
+        "name": "僕",
+        "text": "*ユナがメッセージを三通送ってきた。普段一通も送らない人が。— それだけ怒っているということだ。*"
     },
     "night3_nightmare_1": {
         "name": "僕",

@@ -284,5 +284,17 @@
         "text": "*Auf einem Date mit Dain. Sie ist vorsichtiger als sonst.*",
         "context": "Date an Tag 4 mit Dain. Ton: Das Gespräch ist ernst geworden. Date-Aufregung und Nervosität. Mehr Aufrichtigkeit als Witze. Momente emotionaler Ehrlichkeit.",
         "personality": "Beim Date ist Dain nervös und wird leiser. Ausrufezeichen verschwinden wenn sie ehrlich ist."
+    },
+    "pre_confess_minsu": {
+        "name": "Minsu",
+        "text": "Hey, du bist auf deinem Date, oder? Nur eine Sache"
+    },
+    "pre_confess_minsu_2": {
+        "name": "Minsu",
+        "text": "Mach es diesmal richtig. Schluck die Worte nicht runter"
+    },
+    "pre_confess_callback": {
+        "name": "Ich",
+        "text": "*Das Handy in meiner Tasche fühlt sich schwer an. Keine Benachrichtigungen. — Wie an jenem ersten Tag, als ich einen Namen auf dem Display sah und es zurücksteckte. So darf ich nicht wieder weglaufen. Nicht diesmal.*"
     }
 }

@@ -284,5 +284,17 @@
         "text": "*En una cita con Dain. Está más cuidadosa de lo habitual.*",
         "context": "Cita del día 4 con Dain. Tono: La conversación se ha vuelto seria. Emoción y nerviosismo de la cita. Más sinceridad que bromas. Momentos de honestidad emocional.",
         "personality": "En las citas, Dain está nerviosa y baja el volumen. Las exclamaciones desaparecen cuando es sincera."
+    },
+    "pre_confess_minsu": {
+        "name": "Minsu",
+        "text": "Oye, estás en tu cita, ¿no? Solo una cosa"
+    },
+    "pre_confess_minsu_2": {
+        "name": "Minsu",
+        "text": "Hazlo bien esta vez. No te tragues las palabras"
+    },
+    "pre_confess_callback": {
+        "name": "Yo",
+        "text": "*El teléfono en mi bolsillo pesa. Sin notificaciones. — Como aquel primer día, cuando vi un nombre en la pantalla y lo guardé de nuevo. No puedo huir así otra vez. Esta vez no.*"
     }
 }
