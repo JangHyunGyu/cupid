@@ -500,9 +500,9 @@ class GameEngine {
         this.uiManager.choiceContainer.style.display = 'flex';
 
         // 📌 렌파이 스타일 연타 방지: 애니메이션 완료 후 클릭 활성화
-        // 최소 1000ms 보장하여 오클릭 방지
+        // 최소 1500ms 보장하여 오클릭 방지 (모바일 터치 고려)
         const animDelay = (choices.length - 1) * 80 + 400;
-        const totalDelay = Math.max(animDelay, 1000);
+        const totalDelay = Math.max(animDelay, 1500);
         setTimeout(() => {
             const buttons = this.uiManager.choiceContainer?.querySelectorAll('.choice-btn');
             if (buttons) {
