@@ -113,7 +113,7 @@ Object.assign(SCENARIO[2], {
     "after2_dain_end": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "night2_start"
+        "next": "minsu_warn_1"
     },
     "after2_seo_1": {
         "background": "assets/images/background/teacher_office.png",
@@ -249,7 +249,7 @@ Object.assign(SCENARIO[2], {
     "after2_seo_end": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "night2_start"
+        "next": "minsu_warn_1"
     },
     "after2_yuna_1": {
         "character": "assets/images/characters/yuna_normal.png",
@@ -343,9 +343,89 @@ Object.assign(SCENARIO[2], {
     "after2_yuna_end": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
-        "next": "night2_start"
+        "next": "minsu_warn_1"
     }
 ,
+    // =========================================================================
+    // 민수의 직설 (Day 2 방과후 공통 — 모든 루트 합류)
+    // =========================================================================
+    "minsu_warn_1": {
+        "background": "assets/images/background/school.png",
+        "bgm": "sunset1.mp3",
+        "character": null,
+        "next": "minsu_warn_2"
+    },
+    "minsu_warn_2": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_3"
+    },
+    "minsu_warn_3": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_4"
+    },
+    "minsu_warn_4": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_5"
+    },
+    "minsu_warn_5": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_6"
+    },
+    "minsu_warn_6": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_7"
+    },
+    "minsu_warn_7": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_8"
+    },
+    "minsu_warn_8": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_9"
+    },
+    "minsu_warn_9": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_10"
+    },
+    "minsu_warn_10": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_11"
+    },
+    "minsu_warn_11": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_12"
+    },
+    "minsu_warn_12": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_13"
+    },
+    "minsu_warn_13": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_14"
+    },
+    "minsu_warn_14": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_warn_15"
+    },
+    "minsu_warn_15": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "night2_start"
+    },
+
     "after2_dain_freetalk": {
         "type": "free_talk",
         "background": "assets/images/background/street.png",

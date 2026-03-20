@@ -12,6 +12,26 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/student_room.png",
         "bgm": "intro.mp3",
         "character": null,
+        "next": "minsu_cheer_1"
+    },
+    "minsu_cheer_1": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "next": "minsu_cheer_2"
+    },
+    "minsu_cheer_2": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "next": "minsu_cheer_3"
+    },
+    "minsu_cheer_3": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
+        "next": "minsu_cheer_4"
+    },
+    "minsu_cheer_4": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
         "next": "morning4_start_2"
     },
     "morning4_start_2": {

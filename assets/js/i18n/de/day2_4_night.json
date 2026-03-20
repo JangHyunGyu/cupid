@@ -112,13 +112,45 @@
         "name": "Ich",
         "text": "*Ich hab allen dreien geantwortet und das Handy weggelegt.*"
     },
+    "night2_flashback_1": {
+        "name": "Ich",
+        "text": "*Was Minsu gesagt hat, kommt immer wieder. 'War das in deiner alten Schule auch so?'*\n\n*— Plötzlich öffne ich die Galerie auf dem Handy. Warum? Keine Ahnung. Meine Finger haben sich von allein bewegt.*"
+    },
+    "night2_flashback_2": {
+        "name": "Ich",
+        "text": "*Ich scrolle weit zurück. Drei Monate. — Ein Foto. Gruppenbild vor der Bibliothek. Sojeong lächelt. Neben mir.*"
+    },
+    "night2_flashback_3": {
+        "name": "Ich",
+        "text": "*Damals hatte ich seit einem Monat 'Ich mag dich' geübt. Jeden Abend in die Notizen-App getippt. Geständnis-Simulationen. — Jedes Mal blieb ich an der gleichen Stelle stehen.*"
+    },
+    "night2_flashback_4": {
+        "name": "Ich",
+        "text": "*Und eines Tages im März, bei der Morgenrunde, sagte der Typ neben mir: 'Sojeong hat einen Freund.'*"
+    },
+    "night2_flashback_5": {
+        "name": "Ich",
+        "text": "*Die Simulationen in der Notizen-App hörten bei Nummer 38 auf. Nummer 39 gibt es nicht. Es war nicht mehr nötig.*"
+    },
+    "night2_flashback_6": {
+        "name": "Ich",
+        "text": "*Der Schulwechsel war nicht wegen Sojeong. Es war wegen Papas Job. — Aber es hat mich nicht gestört, wegzugehen. So musste ich nicht mehr jeden Tag den Flur entlanggehen, in dem sie lächelte.*"
+    },
+    "night2_flashback_7": {
+        "name": "Ich",
+        "text": "*'Diesmal schlucke ich es nicht runter.' — Das hatte ich mir vorgenommen, als ich an diese Schule kam.*\n\n*Aber Minsu hat recht. Statt es runterzuschlucken, spucke ich es allen entgegen.*"
+    },
+    "night2_flashback_8": {
+        "name": "Ich",
+        "text": "*Ich habe die Galerie geschlossen. Überlegte, ob ich das Foto löschen soll — habe es gelassen. Es zu löschen wäre, als würde ich auch das Bereuen löschen.*"
+    },
     "night2_end_2": {
         "name": "Ich",
         "text": "*Der zweite Tag ist vorbei. Am ersten Tag war es Neugier. Ich fragte mich, was fuer Menschen sie sind.*"
     },
     "night2_end_3": {
         "name": "Ich",
-        "text": "*Heute ist -- anders. Es ist nicht mehr Neugier; sie gehen mir im Kopf herum. Was sie gerade machen, was sie morgen sagen werden.*"
+        "text": "*Zwischen 'an jemanden denken' und 'jemanden mögen' ist noch Abstand. — Aber dieser Abstand fühlt sich kürzer an als gestern.*\n\n*Das Problem ist, dass dieser Abstand gleichzeitig bei drei Personen schrumpft.*"
     },
     "night2_end_4": {
         "name": "Ich",

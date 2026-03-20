@@ -132,6 +132,42 @@
         "name": "Moi",
         "text": "*Qu’est-ce que j’ai fait.*"
     },
+    "night3_cheat_reflect_1": {
+        "name": "Moi",
+        "text": "*J’ai sorti le téléphone. Galerie. Encore du scroll. — La photo de Sojeong.*"
+    },
+    "night3_cheat_reflect_2": {
+        "name": "Moi",
+        "text": "*Elle sourit. Dans la photo de groupe, elle me regarde en souriant. Sans rien savoir.*"
+    },
+    "night3_cheat_reflect_3": {
+        "name": "Moi",
+        "text": "*Dans mon ancien lycée, j’avais tout gardé pour moi. Je n’avais rien pu dire à personne. — Cette fois, je voulais ne plus rien garder.*\n\n*Mais avec du recul — ce n’est pas que j’ai arrêté de garder les choses. Je les ai déversées sur tout le monde. Ce n’est pas de la sincérité — c’est de la lâcheté.*"
+    },
+    "night3_cheat_reflect_4": {
+        "name": "Moi",
+        "text": "*C’est l’inverse de Sojeong, mais le résultat est le même. Quelqu’un est blessé.*\n\n*Au final, le problème n’est pas de garder ou de dire — c’est à qui on le dit.*"
+    },
+    "night3_cheat_reflect_5": {
+        "name": "Moi",
+        "text": "*— Je ne fuirai pas. Cette fois, à une seule personne.*"
+    },
+    "night3_faithful_reflect_1": {
+        "name": "Moi",
+        "text": "*J’ai ouvert les yeux. La lumière du matin passe entre les rideaux. — Le rêve de cette nuit était beau.*"
+    },
+    "night3_faithful_reflect_2": {
+        "name": "Moi",
+        "text": "*J’ai sorti le téléphone. Ouvert la galerie. La photo de Sojeong. — J’ai appuyé longuement.*\n\n*’Supprimer ?’*\n\n*— Supprimée.*"
+    },
+    "night3_faithful_reflect_3": {
+        "name": "Moi",
+        "text": "*Je l’avais gardée parce que la supprimer, c’était comme effacer les regrets. Mais maintenant ce n’est plus du regret — c’est une leçon. La photo qui m’a appris à ne plus garder les choses pour moi. — Elle a rempli son rôle.*"
+    },
+    "night3_faithful_reflect_4": {
+        "name": "Moi",
+        "text": "*Cette fois, c’est différent. Je ne le dirai qu’à une seule personne. Aux autres — je refuserai correctement. C’est la seule honnêteté qui me reste.*"
+    },
     "night3_end": {
         "name": "Moi",
         "text": "*La nuit s’approfondit...*"

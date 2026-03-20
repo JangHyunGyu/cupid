@@ -492,6 +492,116 @@ Object.assign(SCENARIO[3], {
     "after3_final": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
+        "next": "haeun_check"
+    },
+
+    // =========================================================================
+    // 하은의 전언 + 민수 대화 (Day 3 방과후 추가)
+    // =========================================================================
+    "haeun_check": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "branches": [
+            { "condition": "seoyeon_day3_event", "next": "haeun_warn_1" },
+            { "next": "minsu_d3_check" }
+        ]
+    },
+    "haeun_warn_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "haeun_warn_2"
+    },
+    "haeun_warn_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "haeun_warn_3"
+    },
+    "haeun_warn_3": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "haeun_warn_4"
+    },
+    "haeun_warn_4": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "haeun_warn_5"
+    },
+    "haeun_warn_5": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "haeun_warn_6"
+    },
+    "haeun_warn_6": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "haeun_warn_7"
+    },
+    "haeun_warn_7": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "haeun_warn_8"
+    },
+    "haeun_warn_8": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "minsu_d3_check"
+    },
+    "minsu_d3_check": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "branches": [
+            { "condition": "day3_has_multiple_dates", "next": "minsu_d3_1" },
+            { "next": "night3_start" }
+        ]
+    },
+    "minsu_d3_1": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_2"
+    },
+    "minsu_d3_2": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_3"
+    },
+    "minsu_d3_3": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_4"
+    },
+    "minsu_d3_4": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_5"
+    },
+    "minsu_d3_5": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_6"
+    },
+    "minsu_d3_6": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_7"
+    },
+    "minsu_d3_7": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_8"
+    },
+    "minsu_d3_8": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_9"
+    },
+    "minsu_d3_9": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_10"
+    },
+    "minsu_d3_10": {
+        "background": "assets/images/background/school.png",
+        "character": null,
         "next": "night3_start"
     }
 ,

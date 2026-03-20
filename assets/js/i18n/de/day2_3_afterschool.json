@@ -279,5 +279,66 @@
         "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
         "context": "Tag 2. Ellbogen beim Sport aufgeschürft. Ton: Näher als gestern. Neckereien fühlen sich natürlich und bequem an. Hin-und-her-Flirten. Noch keine schweren Themen.",
         "personality": "Die Schulkrankenschwester ist verspielt aber gründlich. Braucht lange für Pflaster."
+    },
+
+    "minsu_warn_1": {
+        "name": "Ich",
+        "text": "*Auf dem Heimweg. Am Schultor — Minsu folgt mir von hinten.*"
+    },
+    "minsu_warn_2": {
+        "name": "Minsu",
+        "text": "Hey."
+    },
+    "minsu_warn_3": {
+        "name": "{name}",
+        "text": "Was?"
+    },
+    "minsu_warn_4": {
+        "name": "Minsu",
+        "text": "Hast du gerade Spaß in letzter Zeit?"
+    },
+    "minsu_warn_5": {
+        "name": "{name}",
+        "text": "Wie kommst du darauf?"
+    },
+    "minsu_warn_6": {
+        "name": "Minsu",
+        "text": "Seoyeon, Dain, Yuna. Alle drei lächeln dich an."
+    },
+    "minsu_warn_7": {
+        "name": "{name}",
+        "text": "Die sind einfach nett, oder?"
+    },
+    "minsu_warn_8": {
+        "name": "Minsu",
+        "text": "Alter, ich bin seit einem Jahr in dieser Klasse. Ich hab noch nie erlebt, dass Seoyeon einen Typen zuerst anspricht. Dain hat noch nie einem anderen Brot spendiert. Und Yuna — Zettel? Die schreibt niemandem."
+    },
+    "minsu_warn_9": {
+        "name": "Minsu",
+        "text": "Alle drei machen das nur bei dir. — Das weißt du auch."
+    },
+    "minsu_warn_10": {
+        "name": "Ich",
+        "text": "*Ich weiß es. Ich tu nur so, als würde ich es nicht sehen.*"
+    },
+    "minsu_warn_11": {
+        "name": "Minsu",
+        "text": "Das Problem ist, dass du allen dreien gleich zulächelst."
+    },
+    "minsu_warn_12": {
+        "name": "Ich",
+        "text": "*Mir fehlen die Worte. Minsu hat recht. — Ich bilde mir ein, aufmerksam zu sein, aber die Missverständnisse, die ich selbst verbreite, sehe ich nicht.*"
+    },
+    "minsu_warn_13": {
+        "name": "Minsu",
+        "text": "War das in deiner alten Schule auch so?"
+    },
+    "minsu_warn_14": {
+        "name": "Ich",
+        "text": "*— Mein Herz stockt.*\n\n*Meine alte Schule. — Diese Worte treffen mich ins Mark. Dort hatte ich es nicht geschafft, irgendjemandem etwas zu sagen, und es bereut. Diesmal — rede ich mit allen, und das ist noch schlimmer?*"
+    },
+    "minsu_warn_15": {
+        "name": "Minsu",
+        "text": "Keine Ahnung, vielleicht geht mich das nichts an. — Aber wenn am Ende alle drei heulen, dann ist das deine Schuld. Echt jetzt."
     }
 }

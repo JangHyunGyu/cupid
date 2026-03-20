@@ -342,5 +342,85 @@
         "text": "*Mit Dain auf einer Bank am Spielplatz sitzend. Sie ist ruhiger als sonst.*",
         "context": "Tag 3, nach dem Gespräch mit Dain. Verletzt aber tut so als wäre sie fröhlich. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
         "personality": "Dain nutzt Fröhlichkeit als Verteidigung. Weniger Ausrufezeichen bedeuten Ehrlichkeit."
+    },
+    "haeun_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "haeun_warn_1": {
+        "name": "Ich",
+        "text": "*Ich komme aus dem Schülerratszimmer. Der Flur ist leer. — Jemand hat gewartet.*"
+    },
+    "haeun_warn_2": {
+        "name": "Haeun",
+        "text": "...{name}."
+    },
+    "haeun_warn_3": {
+        "name": "Haeun",
+        "text": "Hast du gerade Seoyeon-Sunbae gesehen?"
+    },
+    "haeun_warn_4": {
+        "name": "Haeun",
+        "text": "...Sunbae hat geweint. Nachdem sie aus dem Schülerratszimmer kam. Auf der Toilette. — Nur ich hab's gesehen. In einem ganzen Jahr hab ich sie noch nie weinen sehen."
+    },
+    "haeun_warn_5": {
+        "name": "Ich",
+        "text": "*Seoyeon hat geweint. — Mir hat sie nur gesagt, ich hätte 'ihre unvollkommene Seite gesehen'. Danach hat sie geweint.*"
+    },
+    "haeun_warn_6": {
+        "name": "Haeun",
+        "text": "Dass Sunbae geweint hat — das bedeutet, dass sie es wirklich ernst meint mit dir, {name}."
+    },
+    "haeun_warn_7": {
+        "name": "Haeun",
+        "text": "Ich weiß, dass ich mich einmische. Aber ich mache mir Sorgen um Sunbae. — Zuhause ist es gerade... kompliziert bei ihr. Ihre Eltern... ...egal. Bitte, sei gut zu ihr. Ich bitte dich."
+    },
+    "haeun_warn_8": {
+        "name": "Ich",
+        "text": "*Das Bild von Seoyeon, die allein auf der Toilette weint, geht mir nicht aus dem Kopf. Der perfekt gerade Rücken, die weißen Knöchel vor Anspannung, und — eine leere Toilette.*"
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "Ich",
+        "text": "*Auf dem Heimweg. Minsu wartet am Schultor.*"
+    },
+    "minsu_d3_2": {
+        "name": "Minsu",
+        "text": "Ich hab's gesehen."
+    },
+    "minsu_d3_3": {
+        "name": "Minsu",
+        "text": "Beim Mittagessen. Und Seoyeons Gesicht vorhin."
+    },
+    "minsu_d3_4": {
+        "name": "Minsu",
+        "text": "Was hab ich gestern gesagt? 'Wenn am Ende alle drei heulen, ist das deine Schuld.' Das ist nicht mehr 'am Ende'. Das ist jetzt."
+    },
+    "minsu_d3_5": {
+        "name": "Minsu",
+        "text": "Alter, mir fällt's auch schwer, das von der Seite mit anzusehen. Die sind alle drei gute Leute. — Ich weiß, dass du kein Arsch bist. Du kannst einfach nicht nein sagen."
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "......Stimmt."
+    },
+    "minsu_d3_7": {
+        "name": "Minsu",
+        "text": "Absagen ist auch Liebe. Jemandem absagen, bei dem es nicht sein kann — ist hundertmal besser als falsche Hoffnung."
+    },
+    "minsu_d3_8": {
+        "name": "Ich",
+        "text": "*Absagen ist auch Liebe. — In meiner alten Schule hatte Sojeong nicht mal die Chance, mich abzulehnen. Weil ich alles runtergeschluckt hatte.*"
+    },
+    "minsu_d3_9": {
+        "name": "Ich",
+        "text": "*Wenn Sojeong mich damals abgelehnt hätte — wäre das nicht so hängengeblieben. Wenn absagen auch Liebe ist, dann muss ich jetzt — einer einzigen Person sagen, dass sie mir gefällt.*"
+    },
+    "minsu_d3_10": {
+        "name": "Minsu",
+        "text": "Wir sehen uns morgen in der Schule. — Denk mal drüber nach, ernsthaft."
     }
 }

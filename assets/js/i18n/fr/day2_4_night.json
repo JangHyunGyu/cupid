@@ -112,13 +112,45 @@
         "name": "Moi",
         "text": "*J'ai repondu aux trois et pose le telephone.*"
     },
+    "night2_flashback_1": {
+        "name": "Moi",
+        "text": "*Ce que Minsu a dit me revient sans cesse. 'Tu faisais pareil dans ton ancien lycée ?'*\n\n*— D'un coup, j'ouvre la galerie du téléphone. Pourquoi ? Aucune idée. Mes doigts ont bougé tout seuls.*"
+    },
+    "night2_flashback_2": {
+        "name": "Moi",
+        "text": "*Je fais défiler longtemps. Trois mois en arrière. — Une photo. Photo de groupe devant la bibliothèque. Sojeong sourit. À côté de moi.*"
+    },
+    "night2_flashback_3": {
+        "name": "Moi",
+        "text": "*À cette époque, ça faisait un mois que je répétais 'je t'aime bien'. Chaque soir, je l'écrivais dans le bloc-notes du téléphone. Des simulations de déclaration. — À chaque fois, je m'arrêtais là.*"
+    },
+    "night2_flashback_4": {
+        "name": "Moi",
+        "text": "*Et un jour de mars, pendant l'appel du matin, mon voisin de table m'a dit : 'Sojeong a un copain.'*"
+    },
+    "night2_flashback_5": {
+        "name": "Moi",
+        "text": "*Les simulations dans le bloc-notes se sont arrêtées à la 38ème. La 39ème n'existe pas. Plus besoin de l'écrire.*"
+    },
+    "night2_flashback_6": {
+        "name": "Moi",
+        "text": "*Le transfert, c'était pas à cause de Sojeong. C'était pour le travail de mon père. — Mais ça ne m'a pas dérangé de partir. Au moins, je n'aurais plus à passer chaque jour dans le couloir où elle souriait.*"
+    },
+    "night2_flashback_7": {
+        "name": "Moi",
+        "text": "*'Cette fois, je ne garderai plus rien pour moi.' — C'est ce que je m'étais promis en arrivant dans ce lycée.*\n\n*Mais Minsu a raison. En essayant de ne plus rien garder, je déverse tout sur tout le monde.*"
+    },
+    "night2_flashback_8": {
+        "name": "Moi",
+        "text": "*J'ai fermé la galerie. J'ai hésité à supprimer la photo — je l'ai gardée. La supprimer, ce serait comme effacer aussi les regrets.*"
+    },
     "night2_end_2": {
         "name": "Moi",
         "text": "*Le deuxieme jour est fini. Le premier jour, c'etait de la curiosite. Je me demandais quel genre de personnes elles etaient.*"
     },
     "night2_end_3": {
         "name": "Moi",
-        "text": "*Aujourd'hui c'est -- different. C'est plus de la curiosite ; elles sont dans ma tete. Ce qu'elles font, ce qu'elles diront demain.*"
+        "text": "*Entre 's'intéresser à quelqu'un' et 'aimer quelqu'un', il y a encore de la distance. — Mais cette distance semble plus courte qu'hier.*\n\n*Le problème, c'est que cette distance se réduit avec trois personnes en même temps.*"
     },
     "night2_end_4": {
         "name": "Moi",
