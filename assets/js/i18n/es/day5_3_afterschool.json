@@ -71,6 +71,18 @@
         "name": "Yo",
         "text": "*Sonríe con picardía y me da un puñetazo en el hombro. La misma fuerza que el primer día. Los signos de exclamación siguen vivos. Dain es Dain hasta el final. Esa es su fortaleza.*"
     },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*Frente a la puerta del colegio. A lo lejos, tres siluetas.*"
+    },
+    "after5_hidden_farewell_2": {
+        "name": "{name}",
+        "text": "*Ninguna mira hacia aquí. — Así es como debe ser. A quien elegí fue a otra persona.*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*No diré que lo siento. Esas palabras — decírselas a ellas sería más bien cruel.*"
+    },
     "after5_sunset_1": {
         "name": "Yo",
         "text": "*El sol se está poniendo. Los cinco días llegan a su fin.*"
@@ -85,7 +97,7 @@
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*¿Voy a quedarme callado otra vez?*"
+        "text": "*En el instituto anterior también fue así. No pude decirlo. Y me arrepentí. — ¿Va a pasar lo mismo otra vez?*"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
@@ -105,7 +117,7 @@
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*...No pude decir nada. Otra vez.*"
+        "text": "*Mis labios no se mueven. Otra vez. — Otra vez no pude decirlo.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",

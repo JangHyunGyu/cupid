@@ -258,12 +258,12 @@
         "text": "C’est la chose la plus cruelle que tu puisses dire, {name}. La gentillesse de ne pas savoir refuser — donne de faux espoirs."
     },
     "after3_confront_admit_3": {
-        "name": "Seoyeon",
-        "text": "Je ne veux pas être un choix parmi d’autres."
+        "name": "{name}",
+        "text": "*Seoyeon attrape son sac-repas. Ses mains tremblent.*"
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
-        "text": "Soit la seule réponse, soit rien du tout. — Pas de demi-mesure."
+        "text": "Tu m’as dit que je n’avais pas besoin d’être parfaite — et toi, tu as essayé d’être parfait pour tout le monde. C’est encore pire."
     },
     "after3_confront_admit_5": {
         "name": "Seoyeon",
@@ -413,7 +413,7 @@
     },
     "minsu_d3_8": {
         "name": "Moi",
-        "text": "*Refuser, c'est aussi aimer. — Dans mon ancien lycée, Sojeong n'a même pas eu l'occasion de me refuser. Parce que j'avais tout gardé pour moi.*"
+        "text": "*Refuser, c'est aussi aimer. — Dans mon ancien lycée, je n'ai même pas donné à Sojeong l'occasion de me refuser. Parce que je n'ai pas su lui dire.*"
     },
     "minsu_d3_9": {
         "name": "Moi",

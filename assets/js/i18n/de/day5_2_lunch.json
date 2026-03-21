@@ -28,108 +28,148 @@
         "text": "*Es weht kein Wind.*"
     },
     "tour_seo_8": {
-        "name": "Seoyeon",
-        "text": "Nach dem Abschluss möchte ich jemand sein, der für andere arbeitet."
+        "name": "{name}",
+        "text": "*Seoyeon holt etwas aus ihrer Tasche. — Ein Schlüssel. Der Dachschlüssel.*"
     },
     "tour_seo_9": {
-        "name": "Ich",
-        "text": "Nicht als Schülersprecherin?"
+        "name": "Seoyeon",
+        "text": "Hier."
     },
     "tour_seo_10": {
+        "name": "{name}",
+        "text": "Ein Schlüssel?"
+    },
+    "tour_seo_11": {
         "name": "Seoyeon",
-        "text": "Als ich selbst, nicht als Schülersprecherin. — Das hast du mir gezeigt. Dass es auch ohne Rolle in Ordnung ist."
+        "text": "War das Privileg der Schülerratsvorsitzenden. — Jetzt gehört er dir."
+    },
+    "tour_seo_12": {
+        "name": "{name}",
+        "text": "*Die Hand, die den Schlüssel übergibt. Unsere kleinen Finger berühren sich kurz.*"
+    },
+    "tour_seo_13": {
+        "name": "{name}",
+        "text": "Darf die Schülerratsvorsitzende das einfach so?"
+    },
+    "tour_seo_14": {
+        "name": "Seoyeon",
+        "text": "Ich darf, deshalb gebe ich ihn dir. — Geh hoch, wenn du mal frische Luft brauchst."
     },
     "tour_seo_end": {
-        "name": "Ich",
-        "text": "*Seoyeon lächelte still. Sonnenlicht fällt schräg über das Schultor.*"
+        "name": "{name}",
+        "text": "*Sie sagt nicht 'auch ohne mich'. Aber es versteckt sich dahinter.*"
     },
     "tour_yuna_1": {
-        "name": "Ich",
-        "text": "*Der Lesesaal der Bibliothek. Der Platz, an dem Yuna an Tag 1 sagte: ‚Wenn du leise bist.'*"
+        "name": "{name}",
+        "text": "*Der Bibliotheksanbau. Der geheime Leseraum. Ein altes Sofa, Nachmittagslicht.*"
     },
     "tour_yuna_2": {
-        "name": "Yuna",
-        "text": "...Hier."
+        "name": "{name}",
+        "text": "*Yuna setzt sich aufs Sofa. Den Platz neben sich lässt sie frei.*"
     },
     "tour_yuna_3": {
-        "name": "Ich",
-        "text": "*Yuna setzt sich auf denselben Platz wie an jenem Tag.*"
+        "name": "{name}",
+        "text": "Jedes Mal, wenn ich hierher komme, fühlt es sich an, als würde die Zeit stehen bleiben."
     },
     "tour_yuna_4": {
-        "name": "Ich",
-        "text": "Hier habe ich mich zum ersten Mal hingesetzt."
+        "name": "Yuna",
+        "text": "...Im guten Sinne?"
     },
     "tour_yuna_5": {
-        "name": "Yuna",
-        "text": "...Du hast damals drei Bücher genommen."
+        "name": "{name}",
+        "text": "Im guten Sinne."
     },
     "tour_yuna_6": {
-        "name": "Ich",
-        "text": "Du erinnerst dich noch daran?"
+        "name": "{name}",
+        "text": "*Yuna holt ein Notizbuch aus ihrer Tasche.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
-        "text": "Ich erinnere mich an alles."
+        "text": "...Ich habe das Ende geschrieben."
     },
     "tour_yuna_8": {
-        "name": "Ich",
-        "text": "*Ein kurzer Satz, aber — in 'Ich erinnere mich an alles' stecken fünf Tage voller Gefühle.*"
+        "name": "{name}",
+        "text": "Du hattest gesagt, du schreibst es nicht, weil 'wenn man das Ende schreibt, ist es vorbei'."
     },
     "tour_yuna_9": {
         "name": "Yuna",
-        "text": "Ich will schreiben."
+        "text": "Es ist kein Ende — wenn es der Anfang einer neuen Geschichte sein kann, ist es okay."
     },
     "tour_yuna_10": {
-        "name": "Ich",
-        "text": "Romane?"
+        "name": "{name}",
+        "text": "*Sie reicht mir das Notizbuch. Ihre Hände zittern leicht.*"
+    },
+    "tour_yuna_11": {
+        "name": "{name}",
+        "text": "Der erste Leser?"
     },
     "tour_yuna_end": {
         "name": "Yuna",
-        "text": "...Ich würde mir wünschen, dass du sie liest. Als mein erster Leser."
+        "text": "...Der einzige Leser. Vorerst."
+    },
+    "tour_yuna_end_2": {
+        "name": "{name}",
+        "text": "*In diesem 'vorerst' steckt alles, was Yuna ist. Ein Versprechen, so weit wie möglich geworfen von jemandem, der nicht 'für immer' sagen kann.*"
     },
     "tour_dain_1": {
-        "name": "Ich",
-        "text": "*Die Bank am Kiosk. Die Stelle, wo wir am ersten Tag Melonenbrötchen gegessen haben.*"
+        "name": "{name}",
+        "text": "*Die Turnhalle. Wo wir am Tag 1 zum ersten Mal gewettet haben. Heute ist das Licht an.*"
     },
     "tour_dain_2": {
-        "name": "Dain",
-        "text": "Hier haben wir Schere-Stein-Papier gespielt!"
+        "name": "{name}",
+        "text": "*Dain steht mitten auf dem Spielfeld. Mit einem Volleyball in der Hand.*"
     },
     "tour_dain_3": {
-        "name": "Ich",
-        "text": "Du hast verloren."
+        "name": "Dain",
+        "text": "Hey, ein letztes Schere-Stein-Papier?"
     },
     "tour_dain_4": {
-        "name": "Dain",
-        "text": "Fängst du IMMER NOCH damit an?! — Ach, aber das Melonenbrötchen damals war echt lecker."
+        "name": "{name}",
+        "text": "Wenn du eh wieder verlierst..."
     },
     "tour_dain_5": {
-        "name": "Ich",
-        "text": "*Dain wird einen Moment lang still.*"
+        "name": "Dain",
+        "text": "Diesmal gewinne ich!!"
     },
     "tour_dain_6": {
-        "name": "Dain",
-        "text": "Profi werden... da bin ich mir nicht mehr sicher."
+        "name": "{name}",
+        "text": "*Schere-Stein-Papier. — Dain hat verloren.*"
     },
     "tour_dain_7": {
-        "name": "Ich",
-        "text": "……"
+        "name": "Dain",
+        "text": "...Aaaargh!! Warum!! Fünf von fünf!!"
     },
     "tour_dain_8": {
-        "name": "Dain",
-        "text": "Aber manchmal habe ich Angst. Angst, jemand ohne Traum zu werden."
+        "name": "{name}",
+        "text": "*Sie ärgert sich und lacht gleichzeitig. — Das ist Dain.*"
     },
     "tour_dain_9": {
-        "name": "Ich",
-        "text": "Dann findest du eben einen neuen Traum."
+        "name": "{name}",
+        "text": "*Dain legt den Volleyball auf das Spielfeld. Langsam.*"
     },
     "tour_dain_10": {
         "name": "Dain",
-        "text": "...Ja. Wenn du das so sagst, fühlt es sich an, als könnte es wirklich klappen."
+        "text": "Profi... weiß ich nicht."
+    },
+    "tour_dain_11": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "tour_dain_12": {
+        "name": "Dain",
+        "text": "Aber das Komische ist — früher dachte ich, ohne Volleyball gibt es mich nicht. Aber jetzt ist das anders."
+    },
+    "tour_dain_13": {
+        "name": "{name}",
+        "text": "Was hat sich geändert?"
     },
     "tour_dain_end": {
-        "name": "Ich",
-        "text": "*Sie lächelt. Halbmondaugen. — Die gleichen Augen, die ich am ersten Tag gesehen habe, aber mit einer anderen Tiefe.*"
+        "name": "Dain",
+        "text": "...Jetzt ist jemand an meiner Seite."
+    },
+    "tour_dain_end_2": {
+        "name": "{name}",
+        "text": "*Sie sagt es ohne Ausrufezeichen. Aber diesmal ist es kein Abschied — es ist ein Anfang.*"
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",

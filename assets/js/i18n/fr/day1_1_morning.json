@@ -11,6 +11,10 @@
         "name": "Moi",
         "text": "*À partir d'aujourd'hui, je suis élève dans ce lycée. Transféré. C'est la première fois.*"
     },
+    "start_3b": {
+        "name": "Moi",
+        "text": "*Mon coeur bat vite. Je ne veux pas l'admettre, mais je suis tendu. Mes doigts tripotent mon téléphone au fond de la poche. — Un réflexe. Quand l'anxiété monte.*"
+    },
     "start_4": {
         "name": "Moi",
         "text": "*Mon téléphone vibre dans ma poche. Le groupe du lycée précédent. Je vois un nom s'afficher — et je le range aussitôt. Pas encore.*"
@@ -205,7 +209,7 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Oh ! Un nouveau garçon ! Enfin !"
+        "text": "Oh ! Un garçon transféré ! Enfin !"
     },
     "classroom_dain_2": {
         "name": "Moi",
@@ -217,7 +221,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Oh, m'dame ! C'est trop galère de se changer ! Bref, je suis contente pour le nouveau !!"
+        "text": "Oh, m'dame ! C'est trop la flemme de se changer ! Bref, je suis trop contente pour le nouveau !!"
     },
     "classroom_dain_5": {
         "name": "Moi",

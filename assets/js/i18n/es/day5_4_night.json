@@ -135,8 +135,28 @@
         "name": "Yo",
         "text": "*Para alguien, quizás pareció que di esperanzas solo para quitárselas. Lo siento.*"
     },
+    "good_1b": {
+        "name": "{name}",
+        "text": "*Ella habló.*"
+    },
+    "good_1c": {
+        "name": "{name}",
+        "text": ""
+    },
+    "good_1_seo": {
+        "name": "Seoyeon",
+        "text": "Lo que miraste a otro lado, te lo voy a cobrar el resto de tu vida. — Con intereses."
+    },
+    "good_1_yuna": {
+        "name": "Yuna",
+        "text": "...Idiota. Pero a un idiota que vuelve se le puede perdonar."
+    },
+    "good_1_dain": {
+        "name": "Dain",
+        "text": "Oye, estaba enfadada de verdad, ¿sabes? ...Pero al final viniste a mí. Con eso me basta."
+    },
     "good_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Pero gracias a esa vacilación, logré entender cuáles eran mis verdaderos sentimientos.*"
     },
     "good_3": {
@@ -240,36 +260,56 @@
         "text": "*Saliendo por la puerta del colegio, hay un mensaje en mi móvil. 'Gracias por hoy jaja' — El tono de un amigo. Un tono perfectamente amistoso.*"
     },
     "friend_5": {
-        "name": "Yo",
-        "text": "*...Tampoco pude decirlo en este colegio.*"
+        "name": "{name}",
+        "text": "*Escribí la respuesta. ‘Yo también, gracias.’ — Después de enviarlo, me quedé mirando la pantalla. Dos líneas de conversación. Sonriendo, pero con un frío extraño por dentro.*"
     },
     "friend_6": {
-        "name": "Yo",
-        "text": "*Una distancia llamada ‘amigos.’*"
+        "name": "{name}",
+        "text": "*Así será a partir de ahora. Emojis sonrientes, una comida de vez en cuando, ‘¿qué tal?’ contestado con ‘bien’. Al alcance de la mano pero sin poder tocar nunca. Eso es la amistad.*"
     },
     "friend_7": {
+        "name": "{name}",
+        "text": "*...Tampoco pude decirlo en este colegio.*"
+    },
+    "friend_8": {
+        "name": "{name}",
+        "text": "*Día de graduación. Paso las fotos del móvil. Donde antes estaba la foto de Sojeong, ahora hay una foto de grupo con ella.*"
+    },
+    "friend_9": {
+        "name": "{name}",
+        "text": "*Otra vez a su lado, con la máscara perfecta de ‘amigo’, sonriendo.*"
+    },
+    "friend_10": {
+        "name": "{name}",
+        "text": "*Abro el bloc de notas. ‘Tengo que decirte algo.’ — El cursor parpadea. Igual que hace tres años. Mantengo pulsado borrar. Se borra.*"
+    },
+    "friend_11": {
+        "name": "{name}",
+        "text": "*Aunque me cambiara de colegio, aunque huyera — al final, nada de mí ha cambiado.*"
+    },
+    "friend_12": {
         "name": "Sistema",
         "text": "─── FRIEND END ───"
     },
     "day5_ending_alone": {
-        "name": "Yo",
-        "text": "*No llegó nadie especial. Pero el tiempo que pasé en esta escuela no fue en vano.*"
+        "name": "{name}",
+        "text": "*Salgo por la puerta del colegio. El móvil suena. — No es nadie. Aviso de batería baja.*"
     },
     "alone_1": {
-        "name": "Yo",
-        "text": "*La soledad no es un castigo. Es tiempo para enfrentarte a ti mismo.*"
+        "name": "{name}",
+        "text": "*Cinco días. Me acerqué a alguien, no pude acercarme a otros, y al final, no pude elegir.*"
     },
     "alone_2": {
-        "name": "Yo",
-        "text": "*No hay prisa. Puedo caminar a mi propio ritmo, por mi propio camino.*"
+        "name": "{name}",
+        "text": "*En el antiguo instituto, me arrepentí de no haber hablado. En este — ¿me arrepiento de no haber encontrado a quién hablarle? No. Los encontré pero no pude elegir. No, no tuve el valor de elegir.*"
     },
     "alone_3": {
-        "name": "Yo",
-        "text": "*...Esta escuela no está nada mal, la verdad.*"
+        "name": "{name}",
+        "text": "*Los cerezos caen fuera de la puerta. Los mismos pétalos que me rozaron la nariz hace cinco días ahora están pegados al suelo. Si los pisas, seguro resbalan.*"
     },
     "alone_4": {
-        "name": "Yo",
-        "text": "*La soledad no es un castigo.*"
+        "name": "{name}",
+        "text": "*...Estar solo no es un castigo. Solo es — silencioso. Más de lo esperado.*"
     },
     "alone_5": {
         "name": "Sistema",

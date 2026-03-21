@@ -22,6 +22,11 @@ Object.assign(SCENARIO[1], {
     "start_3": {
         "background": "assets/images/background/school.png",
         "character": null,
+        "next": "start_3b"
+    },
+    "start_3b": {
+        "background": "assets/images/background/school.png",
+        "character": null,
         "next": "start_4"
     },
     "start_4": {

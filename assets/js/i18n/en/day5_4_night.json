@@ -135,6 +135,26 @@
         "name": "Me",
         "text": "*To someone, it might have seemed like I gave hope only to take it away. I’m sorry.*"
     },
+    "good_1b": {
+        "name": "Me",
+        "text": "*She spoke.*"
+    },
+    "good_1c": {
+        "name": "Me",
+        "text": ""
+    },
+    "good_1_seo": {
+        "name": "Seoyeon",
+        "text": "Looking at someone else — I’ll make you pay for that the rest of your life. — With interest."
+    },
+    "good_1_yuna": {
+        "name": "Yuna",
+        "text": "...Idiot. But an idiot who came back can be forgiven."
+    },
+    "good_1_dain": {
+        "name": "Dain",
+        "text": "Hey, I was seriously angry, you know? ...But you came to me in the end. That’s enough."
+    },
     "good_2": {
         "name": "Me",
         "text": "*But because of that wavering, I came to understand what my true feelings were.*"
@@ -241,35 +261,55 @@
     },
     "friend_5": {
         "name": "Me",
-        "text": "*...I couldn't say it at this school either.*"
+        "text": "*I typed back. ‘Thanks too.’ — After hitting send, I stare at the screen. Two lines of conversation. I’m smiling, but my chest feels strangely cold.*"
     },
     "friend_6": {
         "name": "Me",
-        "text": "*A distance called ‘friends.’*"
+        "text": "*We’ll keep exchanging messages like this. Adding smiley emojis, grabbing a meal now and then, asking ‘anything new?’ and answering ‘not really.’ — Close enough to touch, yet never touching. That’s what being friends is.*"
     },
     "friend_7": {
+        "name": "Me",
+        "text": "*...I couldn’t say it at this school either.*"
+    },
+    "friend_8": {
+        "name": "Me",
+        "text": "*Graduation day. Scrolling through my phone gallery. Where Sojeong’s photo used to be, there’s now a group photo of all of us — with her in it.*"
+    },
+    "friend_9": {
+        "name": "Me",
+        "text": "*I’m standing next to her again, wearing the perfect mask called ‘friend,’ smiling.*"
+    },
+    "friend_10": {
+        "name": "Me",
+        "text": "*I open the notes app. ‘I need to tell you something.’ — The cursor blinks. Just like three years ago. I hold down backspace and erase the words.*"
+    },
+    "friend_11": {
+        "name": "Me",
+        "text": "*Even after transferring, even after running away — in the end, nothing about me changed.*"
+    },
+    "friend_12": {
         "name": "System",
         "text": "─── FRIEND END ───"
     },
     "day5_ending_alone": {
         "name": "Me",
-        "text": "*No one special came along. But the time I spent at this school wasn’t in vain.*"
+        "text": "*I walk out the school gate. My phone buzzes. — It’s nobody. Low battery warning.*"
     },
     "alone_1": {
         "name": "Me",
-        "text": "*Solitude is not a punishment. It’s time to face yourself.*"
+        "text": "*Five days. I reached out to people, failed to reach others, and in the end couldn’t choose anyone.*"
     },
     "alone_2": {
         "name": "Me",
-        "text": "*There’s no need to rush. I can walk at my own pace, along my own path.*"
+        "text": "*At my old school, I regretted not speaking up. At this school — do I regret not finding anyone? No. I found them but couldn’t pick. No — I didn’t have the courage to pick.*"
     },
     "alone_3": {
         "name": "Me",
-        "text": "*...This school’s not half bad, actually.*"
+        "text": "*Cherry blossoms are falling outside the gate. The same petals that brushed my nose five days ago are stuck to the ground now. Stepping on them would be slippery.*"
     },
     "alone_4": {
         "name": "Me",
-        "text": "*Solitude is not a punishment.*"
+        "text": "*...Being alone isn’t a punishment. It’s just — quiet. Much more than I expected.*"
     },
     "alone_5": {
         "name": "System",

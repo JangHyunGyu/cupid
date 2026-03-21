@@ -258,12 +258,12 @@
         "text": "Eso es lo más cruel que puedes decir, {name}. La amabilidad de no saber rechazar — da falsas esperanzas."
     },
     "after3_confront_admit_3": {
-        "name": "Seoyeon",
-        "text": "No quiero ser una opción entre varias."
+        "name": "{name}",
+        "text": "*Seoyeon agarra la bolsa del almuerzo. Le tiemblan las manos.*"
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
-        "text": "O la única respuesta, o nada. — No puedo con las medias tintas."
+        "text": "Me dijiste que no tenía que ser perfecta — y tú intentaste ser perfecto para todas. Eso es peor."
     },
     "after3_confront_admit_5": {
         "name": "Seoyeon",
@@ -413,7 +413,7 @@
     },
     "minsu_d3_8": {
         "name": "Yo",
-        "text": "*Rechazar también es querer. — En mi anterior instituto, Sojeong ni siquiera tuvo la oportunidad de rechazarme. Porque no pude decírselo.*"
+        "text": "*Rechazar también es querer. — En mi anterior instituto, ni siquiera le di a Sojeong la oportunidad de rechazarme. Porque no fui capaz de decírselo.*"
     },
     "minsu_d3_9": {
         "name": "Yo",

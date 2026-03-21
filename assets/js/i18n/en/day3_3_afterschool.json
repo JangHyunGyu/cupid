@@ -258,12 +258,12 @@
         "text": "That’s the cruelest thing you can say, {name}. Kindness that can’t refuse — gives people false hope."
     },
     "after3_confront_admit_3": {
-        "name": "Seoyeon",
-        "text": "I don’t want to be one of your options."
+        "name": "Me",
+        "text": "*Seoyeon picks up her lunch bag. Her hands are trembling.*"
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
-        "text": "Either the only answer, or nothing at all. — I can’t do halfway."
+        "text": "You told me I didn’t have to be perfect — and then you tried to be the perfect person for everyone. That’s worse."
     },
     "after3_confront_admit_5": {
         "name": "Seoyeon",
@@ -413,7 +413,7 @@
     },
     "minsu_d3_8": {
         "name": "Me",
-        "text": "*Saying no is love. — At my old school, I never even gave Sojeong the chance to turn me down. Because I couldn't say it.*"
+        "text": "*Saying no is love. — At my old school, I never even gave Sojeong the chance to say 'no.' Because I never said anything.*"
     },
     "minsu_d3_9": {
         "name": "Me",

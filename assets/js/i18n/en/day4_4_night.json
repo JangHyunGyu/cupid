@@ -244,26 +244,42 @@
         "name": "Me",
         "text": "*Dain is clutching the volleyball, head down. Her shoulders are trembling.*",
         "choices": [
-            "Volleyball isn't your only dream, Dain. Let's find a new one together.",
+            "...Can I sit next to you?",
             "You can cry. You don't have to pretend to be cheerful. Not with me.",
             "...Want me to set one more? One last time."
         ]
     },
     "wall_dain_newdream_1": {
-        "name": "Dain",
-        "text": "...A new dream?"
+        "name": "{name}",
+        "text": "*I sat down next to Dain. The court floor is cold. I didn't say anything.*"
     },
     "wall_dain_newdream_2": {
-        "name": "Dain",
-        "text": "...Like coaching, or training. I do like teaching."
+        "name": "{name}",
+        "text": "*Dain doesn't say anything either. — Strange moment. This is the first time silence has lasted more than a minute beside Dain.*"
     },
     "wall_dain_newdream_3": {
-        "name": "Me",
-        "text": "You'd be the most passionate coach in the world."
+        "name": "Dain",
+        "text": "...Why aren't you saying anything?"
     },
     "wall_dain_newdream_4": {
+        "name": "{name}",
+        "text": "I'm waiting for when you want to talk."
+    },
+    "wall_dain_newdream_5": {
+        "name": "{name}",
+        "text": "*Dain looks at her hands resting on her knees. She clenches and unclenches her fists.*"
+    },
+    "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "...Idiot, if you say stuff like that I'll cry..."
+        "text": "Funny, right? I've stood on this court every day since I was five... and now I can't anymore."
+    },
+    "wall_dain_newdream_7": {
+        "name": "Dain",
+        "text": "But with you sitting next to me — the floor doesn't feel as cold."
+    },
+    "wall_dain_newdream_8": {
+        "name": "{name}",
+        "text": "*Not hitting a ball on the court, but sitting side by side with someone. — For Dain, even that was probably a first.*"
     },
     "wall_dain_cry_1": {
         "name": "Me",

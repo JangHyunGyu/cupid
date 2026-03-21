@@ -11,6 +11,10 @@
         "name": "Me",
         "text": "*Starting today, I'm a student at this school. A transfer. First time.*"
     },
+    "start_3b": {
+        "name": "{name}",
+        "text": "*My heart is racing. I hate to admit it, but I'm nervous. My hand fidgets with my phone inside my pocket. — A habit. When I'm anxious.*"
+    },
     "start_4": {
         "name": "Me",
         "text": "*My phone buzzes in my pocket. The old school group chat. I see a name flash on the screen — and shove the phone back in. Not yet.*"
@@ -205,7 +209,7 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Oh! A new boy! Finally!"
+        "text": "Oh! A boy transfer student! Finally."
     },
     "classroom_dain_2": {
         "name": "Me",
@@ -217,7 +221,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Aw, teach! Changing is such a hassle! Anyway, I'm just excited about the transfer student!!"
+        "text": "Aw, teach! Changing is such a hassle! Anyway, I'm just happy about the new kid!"
     },
     "classroom_dain_5": {
         "name": "Me",

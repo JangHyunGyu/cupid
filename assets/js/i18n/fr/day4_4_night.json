@@ -244,26 +244,42 @@
         "name": "Moi",
         "text": "*Dain serre le ballon, tête baissée. Ses épaules tremblent.*",
         "choices": [
-            "Le volley n’est pas ton seul rêve, Dain. Cherchons-en un nouveau ensemble.",
+            "...Je peux m’asseoir à côté de toi ?",
             "Tu peux pleurer. Tu n’as pas à faire semblant d’être joyeuse. Pas avec moi.",
             "...Tu veux que je te fasse une dernière passe ? Une toute dernière."
         ]
     },
     "wall_dain_newdream_1": {
-        "name": "Dain",
-        "text": "...Un nouveau rêve ?"
+        "name": "{name}",
+        "text": "*Je me suis assis à côté de Dain. Le sol du terrain est froid. Je n’ai rien dit.*"
     },
     "wall_dain_newdream_2": {
-        "name": "Dain",
-        "text": "...Comme entraîneuse, ou préparatrice physique. J’aime bien enseigner."
+        "name": "{name}",
+        "text": "*Dain ne dit rien non plus. — Moment étrange. C’est la première fois que plus d’une minute de silence passe à côté de Dain.*"
     },
     "wall_dain_newdream_3": {
-        "name": "Moi",
-        "text": "Tu serais l’entraîneuse la plus passionnée du monde."
+        "name": "Dain",
+        "text": "...Pourquoi tu ne dis rien ?"
     },
     "wall_dain_newdream_4": {
+        "name": "{name}",
+        "text": "Pour t’écouter quand tu voudras parler."
+    },
+    "wall_dain_newdream_5": {
+        "name": "{name}",
+        "text": "*Dain regarde ses mains sur ses genoux. Elle serre et desserre les poings.*"
+    },
+    "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "...Idiot, si tu dis des trucs comme ça je vais pleurer..."
+        "text": "C’est absurde, non ? Depuis mes cinq ans, j’étais sur ce terrain tous les jours... et maintenant, c’est fini."
+    },
+    "wall_dain_newdream_7": {
+        "name": "Dain",
+        "text": "Mais avec toi assis là, à côté — le sol est moins froid."
+    },
+    "wall_dain_newdream_8": {
+        "name": "{name}",
+        "text": "*Pas frapper un ballon sur le terrain, mais s’asseoir à côté de quelqu’un. — Pour Dain, c’était sûrement aussi une première.*"
     },
     "wall_dain_cry_1": {
         "name": "Moi",

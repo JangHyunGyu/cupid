@@ -482,28 +482,52 @@ Object.assign(SCENARIO[4], {
         ]
     },
 
-    // 선택 1: 새로운 꿈
+    // 선택 1: 코트 위의 침묵
     "wall_dain_newdream_1": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "night": true,
         "next": "wall_dain_newdream_2"
     },
     "wall_dain_newdream_2": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "night": true,
         "next": "wall_dain_newdream_3"
     },
     "wall_dain_newdream_3": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "night": true,
         "next": "wall_dain_newdream_4"
     },
     "wall_dain_newdream_4": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "night": true,
+        "next": "wall_dain_newdream_5"
+    },
+    "wall_dain_newdream_5": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "night": true,
+        "next": "wall_dain_newdream_6"
+    },
+    "wall_dain_newdream_6": {
+        "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
+        "night": true,
+        "next": "wall_dain_newdream_7"
+    },
+    "wall_dain_newdream_7": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "night": true,
+        "next": "wall_dain_newdream_8"
+    },
+    "wall_dain_newdream_8": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
         "night": true,
         "next": "wall_dain_farewell_1"
     },

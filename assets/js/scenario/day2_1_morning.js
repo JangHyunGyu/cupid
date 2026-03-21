@@ -230,6 +230,16 @@ Object.assign(SCENARIO[2], {
     "morning2_haeun_6": {
         "character": null,
         "background": "assets/images/background/school_hallway.png",
+        "next": "morning2_haeun_6b"
+    },
+    "morning2_haeun_6b": {
+        "character": null,
+        "background": "assets/images/background/school_hallway.png",
+        "next": "morning2_haeun_6c"
+    },
+    "morning2_haeun_6c": {
+        "character": null,
+        "background": "assets/images/background/school_hallway.png",
         "next": "morning2_haeun_7"
     },
     "morning2_haeun_7": {
