@@ -510,8 +510,8 @@ Object.assign(SCENARIO[4], {
 
     // 선택 2: 울어도 돼 (울음 씬)
     "wall_dain_cry_1": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/dain_depression_event1.png",
+        "character": null,
         "night": true,
         "next": "wall_dain_cry_2"
     },

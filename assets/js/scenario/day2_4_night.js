@@ -185,7 +185,7 @@ Object.assign(SCENARIO[2], {
         "next": "night2_flashback_2"
     },
     "night2_flashback_2": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/sojeong_flashback.png",
         "character": null,
         "night": true,
         "next": "night2_flashback_3"

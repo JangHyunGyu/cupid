@@ -75,6 +75,16 @@
 5. 씬 제거 시 고아 씬을 남기지 말고 완전 삭제 (UNREACHABLE 경고 방지)
 6. 씬 삽입 시 기존 체인의 `next`를 새 씬으로 변경하고, 새 씬의 마지막 `next`가 원래 목적지를 가리키는지 확인
 
+## 이미지 생성 규칙
+- **배경 이미지**: Imagen 4 Ultra (1순위) → Imagen 4 (2순위), **1:1 비율 (512x512)**, `assets/images/background/`
+- **이벤트 CG**: Imagen 4 Ultra → Imagen 4, **1:1 비율 (1024x1024)**, `assets/images/background/`
+- **캐릭터 레퍼런스(_normal)**: Imagen 4 Ultra → Imagen 4, **1:1 비율 (500x500)**, `assets/images/characters/`
+- **캐릭터 표정/행동 변형**: 레퍼런스 이미지 + Gemini 3.1 Flash Lite Image (편집), 동일 비율 유지
+- 프롬프트에 "anime visual novel style" 사용, 텍스트/워터마크 금지 지시 필수
+- API 키: `.env.txt` (workspace 루트)
+- 캐릭터 외형 참조: `CHARACTER_IMAGE_PROMPTS.md`
+- **기존 이미지 비율 절대 변경 금지** — 배경 512x512, 캐릭터 500x500, CG 1024x1024
+
 ## 기술 환경
 - 웹 브라우저 기반 게임 — localStorage, URL, HTML/CSS/JS만 사용
 - exe, 설치 폴더, 파일 시스템 접근 절대 불가
