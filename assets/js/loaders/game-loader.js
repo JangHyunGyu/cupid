@@ -280,33 +280,43 @@
         } catch (_) { return ''; }
     }
 
-    function _isNoise(message, stack) {
+    function _isNoise(message, stack, url) {
         if (!message) return true;
         if (message === 'Script error.' && !stack) return true;
         if (/Can't find variable: (gmo|__gCrWeb|ytcfg)/.test(message)) return true;
         if (/ResizeObserver loop/.test(message)) return true;
+        // 외부 스크립트 에러 필터 (GA, gtag, Cloudflare, 브라우저 확장 등)
+        if (url && /^(https?:\/\/)(?!cupid\.)/.test(url) && !/archerlab\.dev/.test(url)) return true;
+        if (url && /googletagmanager|google-analytics|gtag|cloudflare|chrome-extension|moz-extension/.test(url)) return true;
+        // 소스 파일이 undefined인 외부 에러 (eval/동적 로드 스크립트)
+        if (url && /^undefined:/.test(url) && !/assets\//.test(stack || '')) return true;
         return false;
     }
 
-    function _sendError(message, stack, url) {
-        if (_isNoise(message, stack)) return;
+    function _sendError(message, stack, url, extra) {
+        if (_isNoise(message, stack, url)) return;
         var key = message + (url || '');
         if (key === _lastError) { _errorCount++; if (_errorCount > 3) return; }
         else { _lastError = key; _errorCount = 1; }
 
         var context = _getContext();
+        var detail = '[ctx] ' + context;
+        if (extra) detail += '\n[info] ' + extra;
         try {
             navigator.sendBeacon(ERROR_ENDPOINT, JSON.stringify({
                 appId: APP_ID, userId: '',
                 message: (message || '').substring(0, 500),
-                stack: (context ? '[ctx] ' + context + '\n' : '') + (stack || '').substring(0, 1900),
+                stack: detail + '\n' + (stack || '').substring(0, 1800),
                 url: (url || '').substring(0, 500)
             }));
         } catch (_) {}
     }
 
     window.addEventListener('error', function(e) {
-        _sendError(e.message, e.error?.stack || '', e.filename + ':' + e.lineno + ':' + e.colno);
+        var src = e.filename || 'unknown';
+        var loc = src + ':' + e.lineno + ':' + e.colno;
+        var extra = 'type:' + (e.error?.name || 'Error') + ' | ua:' + navigator.userAgent.substring(0, 120);
+        _sendError(e.message, e.error?.stack || '', loc, extra);
     });
 
     window.addEventListener('unhandledrejection', function(e) {
