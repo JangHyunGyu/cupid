@@ -81,23 +81,23 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*At the previous school, it was the same. I swallowed my words. And regretted it.*"
+        "text": "*At the previous school, it was the same. I couldn't say it. And regretted it.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*Will I swallow them again this time too?*"
+        "text": "*Will I stay silent again this time too?*"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
         "text": "*The sun is setting. Time is running out.*",
         "choices": [
-            "This time, I won't hold back",
+            "This time, I'll confess",
             "...I couldn't say anything"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*I ran. Toward that person. — This time, I won't swallow my words.*"
+        "text": "*I ran. Toward that person. — This time, I'll say it.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",

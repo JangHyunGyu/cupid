@@ -81,23 +81,23 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*En la escuela anterior fue igual. Me tragué las palabras. Y me arrepentí.*"
+        "text": "*En la escuela anterior fue igual. No pude decirlo. Y me arrepentí.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*¿Voy a tragarme las palabras otra vez?*"
+        "text": "*¿Voy a quedarme callado otra vez?*"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
         "text": "*El sol se está poniendo. El tiempo se acaba.*",
         "choices": [
-            "Esta vez no me callaré",
+            "Esta vez me confesaré",
             "...No pude decir nada"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Corrí. Hacia esa persona. — Esta vez no me tragaré mis palabras.*"
+        "text": "*Corrí. Hacia esa persona. — Esta vez lo diré.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
