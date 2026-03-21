@@ -25,7 +25,7 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*이 학교에서는 — 삼키지 말자. 할 말이 있으면.*"
+        "text": "*이 학교에서는 — 하고 싶은 말은 하자. 이번에는.*"
     },
     "after_kakao_end": {
         "name": "{name}",
