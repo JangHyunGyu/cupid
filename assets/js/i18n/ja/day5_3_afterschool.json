@@ -81,23 +81,23 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*前の学校でも同じだった。言葉を飲み込んだ。そして後悔した。*"
+        "text": "*前の学校でも同じだった。言えなかった。そして後悔した。*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*今回も飲み込むのか？*"
+        "text": "*今回も黙ったままなのか？*"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
         "text": "*夕日が沈んでいく。時間がない。*",
         "choices": [
-            "今度は飲み込まない",
+            "今度は告白する",
             "...何も言えなかった"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*走った。あの人に向かって。— 今度は飲み込まない。*"
+        "text": "*走った。あの人に向かって。— 今度は言う。*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",

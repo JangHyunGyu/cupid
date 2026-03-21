@@ -81,23 +81,23 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*An der alten Schule war es genauso. Ich schluckte meine Worte. Und bereute es.*"
+        "text": "*An der alten Schule war es genauso. Ich konnte es nicht sagen. Und bereute es.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*Werde ich sie diesmal wieder schlucken?*"
+        "text": "*Werde ich diesmal wieder schweigen?*"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
         "text": "*Die Sonne geht unter. Die Zeit läuft ab.*",
         "choices": [
-            "Diesmal halte ich nicht zurück",
+            "Diesmal gestehe ich es",
             "...Ich konnte nichts sagen"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Ich rannte. Zu dieser Person. — Diesmal schlucke ich meine Worte nicht.*"
+        "text": "*Ich rannte. Zu dieser Person. — Diesmal sage ich es.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
