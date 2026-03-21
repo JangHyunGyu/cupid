@@ -264,64 +264,71 @@
     var APP_ID = lang === 'ko' ? 'cupid' : 'cupid-' + lang;
     var _lastError = '';
     var _errorCount = 0;
+    var _session = Math.random().toString(36).substring(2, 8);
 
     function _getContext() {
         try {
-            var parts = [];
-            var page = p.includes('game') ? 'game' : p.includes('gallery') ? 'gallery' : 'index';
-            parts.push('page:' + page);
+            var parts = ['sess:' + _session];
+            var p = window.location.pathname;
+            parts.push('path:' + p);
+            parts.push('online:' + navigator.onLine);
             if (window.__game) {
                 var g = window.__game;
-                if (g.stateManager?.currentDay) parts.push('day:' + g.stateManager.currentDay);
-                if (g.stateManager?.currentScene) parts.push('scene:' + g.stateManager.currentScene);
+                if (g.stateManager) {
+                    if (g.stateManager.currentDay) parts.push('day:' + g.stateManager.currentDay);
+                    if (g.stateManager.currentScene) parts.push('scene:' + g.stateManager.currentScene);
+                }
             }
             parts.push('vw:' + window.innerWidth + 'x' + window.innerHeight);
             return parts.join(' | ');
-        } catch (_) { return ''; }
+        } catch (_) { return 'ctx-error'; }
     }
 
-    function _isNoise(message, stack, url) {
-        if (!message) return true;
-        if (message === 'Script error.' && !stack) return true;
-        if (/Can't find variable: (gmo|__gCrWeb|ytcfg)/.test(message)) return true;
-        if (/ResizeObserver loop/.test(message)) return true;
-        // 외부 스크립트 에러 필터 (GA, gtag, Cloudflare, 브라우저 확장 등)
-        if (url && /^(https?:\/\/)(?!cupid\.)/.test(url) && !/archerlab\.dev/.test(url)) return true;
-        if (url && /googletagmanager|google-analytics|gtag|cloudflare|chrome-extension|moz-extension/.test(url)) return true;
-        // 소스 파일이 undefined인 외부 에러 (eval/동적 로드 스크립트)
-        if (url && /^undefined:/.test(url) && !/assets\//.test(stack || '')) return true;
+    function _isNoise(msg, stack, src) {
+        if (!msg) return true;
+        if (msg === 'Script error.' && !stack) return true;
+        if (/Can't find variable: (gmo|__gCrWeb|ytcfg|__)/.test(msg)) return true;
+        if (/ResizeObserver loop|Loading chunk|dynamically imported module/.test(msg)) return true;
+        // External scripts (GA, Cloudflare, browser extensions)
+        if (src && /googletagmanager|google-analytics|gtag\/js|cloudflare|chrome-extension|moz-extension|safari-extension/.test(src)) return true;
+        // Unknown source with no relevant stack trace
+        if (src && /^undefined:/.test(src) && !(stack || '').match(/\/(assets|js|modules)\//)) return true;
         return false;
     }
 
-    function _sendError(message, stack, url, extra) {
-        if (_isNoise(message, stack, url)) return;
-        var key = message + (url || '');
-        if (key === _lastError) { _errorCount++; if (_errorCount > 3) return; }
+    function _sendError(type, msg, stack, src) {
+        if (_isNoise(msg, stack, src)) return;
+        var key = msg + '|' + src;
+        if (key === _lastError) { _errorCount++; if (_errorCount > 5) return; }
         else { _lastError = key; _errorCount = 1; }
 
-        var context = _getContext();
-        var detail = '[ctx] ' + context;
-        if (extra) detail += '\n[info] ' + extra;
-        try {
-            navigator.sendBeacon(ERROR_ENDPOINT, JSON.stringify({
-                appId: APP_ID, userId: '',
-                message: (message || '').substring(0, 500),
-                stack: detail + '\n' + (stack || '').substring(0, 1800),
-                url: (url || '').substring(0, 500)
-            }));
-        } catch (_) {}
+        var ctx = _getContext();
+        var payload = {
+            appId: APP_ID, userId: '',
+            message: ('[' + type + '] ' + (msg || '')).substring(0, 500),
+            stack: (
+                '[ctx] ' + ctx +
+                '\n[src] ' + (src || 'N/A') +
+                '\n[ua] ' + navigator.userAgent.substring(0, 150) +
+                '\n[ref] ' + (document.referrer || 'direct') +
+                '\n[time] ' + new Date().toISOString() +
+                '\n[trace]\n' + (stack || 'no stack')
+            ).substring(0, 2000),
+            url: (src || window.location.href).substring(0, 500)
+        };
+
+        try { navigator.sendBeacon(ERROR_ENDPOINT, JSON.stringify(payload)); } catch (_) {}
     }
 
     window.addEventListener('error', function(e) {
-        var src = e.filename || 'unknown';
-        var loc = src + ':' + e.lineno + ':' + e.colno;
-        var extra = 'type:' + (e.error?.name || 'Error') + ' | ua:' + navigator.userAgent.substring(0, 120);
-        _sendError(e.message, e.error?.stack || '', loc, extra);
+        var src = (e.filename || '') + ':' + e.lineno + ':' + e.colno;
+        _sendError(e.error?.name || 'Error', e.message, e.error?.stack || '', src);
     });
 
     window.addEventListener('unhandledrejection', function(e) {
         var reason = e.reason;
-        var message = reason?.message || String(reason || 'Unhandled rejection');
-        _sendError(message, reason?.stack || '', location.href);
+        var msg = reason?.message || String(reason || 'Unhandled rejection');
+        var stack = reason?.stack || '';
+        _sendError('UnhandledRejection', msg, stack, window.location.href);
     });
 })();
