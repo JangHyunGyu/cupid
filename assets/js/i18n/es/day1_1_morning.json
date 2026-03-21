@@ -11,6 +11,10 @@
         "name": "Yo",
         "text": "*A partir de hoy, soy estudiante de este instituto. Transferido. Primera vez.*"
     },
+    "start_3b": {
+        "name": "Yo",
+        "text": "*El corazón me late deprisa. No quiero admitirlo, pero estoy nervioso. Los dedos juguetean con el móvil dentro del bolsillo. — Es un tic. Cuando la ansiedad aprieta.*"
+    },
     "start_4": {
         "name": "Yo",
         "text": "*El teléfono vibra en mi bolsillo. El chat grupal del antiguo instituto. Veo un nombre en la pantalla — y lo guardo de nuevo. Todavía no.*"
@@ -205,7 +209,7 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "¡Oh! ¡Un chico nuevo! ¡Por fin!"
+        "text": "¡Oh! ¡Un chico nuevo! ¡Por fin nos mandan uno!"
     },
     "classroom_dain_2": {
         "name": "Yo",
@@ -217,7 +221,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "¡Ay, profe! ¡Es que da pereza cambiarse! ¡De todos modos, estoy contenta por el nuevo!!"
+        "text": "¡Ay, profe! ¡Es que da mucha pereza cambiarse! ¡De todos modos, estoy emocionada con el nuevo!!"
     },
     "classroom_dain_5": {
         "name": "Yo",

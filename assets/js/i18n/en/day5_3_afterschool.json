@@ -71,6 +71,18 @@
         "name": "Me",
         "text": "*She grins and punches my shoulder with her fist. Same force as Day 1. The exclamation marks are alive and well. Dain is Dain to the very end. That's her strength.*"
     },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*In front of the school gate. I can see three figures in the distance. Seoyeon walking with Haeun, Dain tossing a volleyball as she runs, Yuna reading a book as she walks slowly.*"
+    },
+    "after5_hidden_farewell_2": {
+        "name": "{name}",
+        "text": "*None of them look this way. — That's how it should be. I chose someone else.*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*I won't say I'm sorry. Those words — saying them to those people would only be cruel. Just silently, in my heart. Thank you.*"
+    },
     "after5_sunset_1": {
         "name": "Me",
         "text": "*The sun is setting. Five days are coming to an end.*"
@@ -85,7 +97,7 @@
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*Will I stay silent again this time too?*"
+        "text": "*At my old school, it was the same. I couldn't say it. And I regretted it. — Am I going to do this again?*"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
@@ -105,7 +117,7 @@
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*...I couldn't say anything. Again.*"
+        "text": "*My lips won't move. Again. — Again, I couldn't say it.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",

@@ -244,26 +244,42 @@
         "name": "Ich",
         "text": "*Dain umklammert den Volleyball, den Kopf gesenkt. Ihre Schultern zittern.*",
         "choices": [
-            "Volleyball ist nicht dein einziger Traum, Dain. Lass uns zusammen einen neuen finden.",
+            "...Darf ich mich neben dich setzen?",
             "Du darfst weinen. Du musst nicht fröhlich tun. Nicht vor mir.",
             "...Soll ich dir noch einmal zustellen? Ein letztes Mal."
         ]
     },
     "wall_dain_newdream_1": {
-        "name": "Dain",
-        "text": "...Ein neuer Traum?"
+        "name": "{name}",
+        "text": "*Ich setzte mich neben Dain. Der Hallenboden ist kalt. Ich sagte nichts.*"
     },
     "wall_dain_newdream_2": {
-        "name": "Dain",
-        "text": "...Trainerin vielleicht, oder Fitnesstrainerin. Unterrichten mag ich."
+        "name": "{name}",
+        "text": "*Dain sagt auch nichts. — Seltsamer Moment. Zum ersten Mal herrscht mehr als eine Minute Stille neben Dain.*"
     },
     "wall_dain_newdream_3": {
-        "name": "Ich",
-        "text": "Du wärst die leidenschaftlichste Trainerin der Welt."
+        "name": "Dain",
+        "text": "...Warum sagst du nichts?"
     },
     "wall_dain_newdream_4": {
+        "name": "{name}",
+        "text": "Damit ich zuhören kann, wenn du reden willst."
+    },
+    "wall_dain_newdream_5": {
+        "name": "{name}",
+        "text": "*Dain schaut auf ihre Hände auf den Knien. Ballt die Fäuste, öffnet sie wieder.*"
+    },
+    "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "...Idiot, wenn du so was sagst, muss ich weinen..."
+        "text": "Echt witzig, oder? Seit ich fünf bin, stand ich jeden Tag auf diesem Feld... und jetzt soll es vorbei sein."
+    },
+    "wall_dain_newdream_7": {
+        "name": "Dain",
+        "text": "Aber mit dir neben mir — fühlt sich der Boden weniger kalt an."
+    },
+    "wall_dain_newdream_8": {
+        "name": "{name}",
+        "text": "*Nicht einen Ball auf dem Feld schlagen, sondern neben jemandem sitzen. — Für Dain war auch das wahrscheinlich das erste Mal.*"
     },
     "wall_dain_cry_1": {
         "name": "Ich",

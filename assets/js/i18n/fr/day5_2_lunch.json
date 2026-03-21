@@ -28,108 +28,148 @@
         "text": "*Il n'y a pas de vent.*"
     },
     "tour_seo_8": {
-        "name": "Seoyeon",
-        "text": "Après le diplôme, je veux être quelqu'un qui travaille pour les autres."
+        "name": "{name}",
+        "text": "*Seoyeon sort quelque chose de son sac. — Une clé. La clé du toit.*"
     },
     "tour_seo_9": {
-        "name": "Moi",
-        "text": "Pas en tant que présidente du conseil des élèves ?"
+        "name": "Seoyeon",
+        "text": "Tiens."
     },
     "tour_seo_10": {
+        "name": "{name}",
+        "text": "Une clé ?"
+    },
+    "tour_seo_11": {
         "name": "Seoyeon",
-        "text": "En tant que moi-même, pas la présidente. — C'est toi qui me l'as montré. Qu'on peut être soi-même sans le titre."
+        "text": "C'était un privilège de présidente. — Maintenant, c'est à toi."
+    },
+    "tour_seo_12": {
+        "name": "{name}",
+        "text": "*La main qui tend la clé. Nos auriculaires se frôlent.*"
+    },
+    "tour_seo_13": {
+        "name": "{name}",
+        "text": "La présidente du conseil a le droit de faire ça ?"
+    },
+    "tour_seo_14": {
+        "name": "Seoyeon",
+        "text": "J'ai le droit, c'est pour ça que je te la donne. — Monte prendre l'air quand tu en as besoin."
     },
     "tour_seo_end": {
-        "name": "Moi",
-        "text": "*Seoyeon a souri doucement. Le soleil descend en biais sur le portail de l'école.*"
+        "name": "{name}",
+        "text": "*Elle ne dit pas 'même sans moi'. Mais c'est caché derrière.*"
     },
     "tour_yuna_1": {
-        "name": "Moi",
-        "text": "*La salle de lecture de la bibliothèque. La place où Yuna avait dit « si tu ne fais pas de bruit » au Jour 1.*"
+        "name": "{name}",
+        "text": "*L'annexe de la bibliothèque. Le coin lecture secret. Un vieux canapé, la lumière de l'après-midi.*"
     },
     "tour_yuna_2": {
-        "name": "Yuna",
-        "text": "...Ici."
+        "name": "{name}",
+        "text": "*Yuna s'assoit sur le canapé. Elle laisse la place à côté d'elle libre.*"
     },
     "tour_yuna_3": {
-        "name": "Moi",
-        "text": "*Yuna s'assoit à la même place que ce jour-là.*"
+        "name": "{name}",
+        "text": "À chaque fois que je viens ici, j'ai l'impression que le temps s'arrête."
     },
     "tour_yuna_4": {
-        "name": "Moi",
-        "text": "C'est ici que je me suis assis pour la première fois."
+        "name": "Yuna",
+        "text": "...Dans le bon sens ?"
     },
     "tour_yuna_5": {
-        "name": "Yuna",
-        "text": "...Tu avais pris trois livres ce jour-là."
+        "name": "{name}",
+        "text": "Dans le bon sens."
     },
     "tour_yuna_6": {
-        "name": "Moi",
-        "text": "Tu t'en souviens encore ?"
+        "name": "{name}",
+        "text": "*Yuna sort un cahier de son sac.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
-        "text": "Je me souviens de tout."
+        "text": "...J'ai écrit la fin."
     },
     "tour_yuna_8": {
-        "name": "Moi",
-        "text": "*Une courte phrase, mais — cinq jours d'émotions sont concentrés dans 'Je me souviens de tout.'*"
+        "name": "{name}",
+        "text": "Tu avais dit que tu ne l'écrirais pas parce que 'si on écrit la fin, c'est fini'."
     },
     "tour_yuna_9": {
         "name": "Yuna",
-        "text": "Je veux écrire."
+        "text": "Ce n'est pas une fin — si c'est le début d'une nouvelle histoire, je crois que ça va."
     },
     "tour_yuna_10": {
-        "name": "Moi",
-        "text": "Des romans ?"
+        "name": "{name}",
+        "text": "*Elle me tend le cahier. Ses mains tremblent.*"
+    },
+    "tour_yuna_11": {
+        "name": "{name}",
+        "text": "Le premier lecteur ?"
     },
     "tour_yuna_end": {
         "name": "Yuna",
-        "text": "...J'aimerais que tu les lises. Comme mon premier lecteur."
+        "text": "...L'unique lecteur. Pour le moment."
+    },
+    "tour_yuna_end_2": {
+        "name": "{name}",
+        "text": "*Dans ce 'pour le moment', il y a tout ce que Yuna est. Une promesse lancée aussi loin que possible par quelqu'un qui ne peut pas dire 'pour toujours'.*"
     },
     "tour_dain_1": {
-        "name": "Moi",
-        "text": "*Le banc de l'épicerie. L'endroit où on avait mangé du pain melon le premier jour.*"
+        "name": "{name}",
+        "text": "*Le gymnase. Là où on a fait notre premier pari au Jour 1. Aujourd'hui, les lumières sont allumées.*"
     },
     "tour_dain_2": {
-        "name": "Dain",
-        "text": "On a joué à pierre-feuille-ciseaux ici !"
+        "name": "{name}",
+        "text": "*Dain est debout au milieu du terrain. Un ballon de volley dans les mains.*"
     },
     "tour_dain_3": {
-        "name": "Moi",
-        "text": "Tu as perdu."
+        "name": "Dain",
+        "text": "Hé, un dernier pierre-feuille-ciseaux ?"
     },
     "tour_dain_4": {
-        "name": "Dain",
-        "text": "T'en parles ENCORE ?! — Ah mais c'est vrai que ce pain melon était délicieux."
+        "name": "{name}",
+        "text": "Tu vas encore perdre."
     },
     "tour_dain_5": {
-        "name": "Moi",
-        "text": "*Dain devient silencieuse un instant.*"
+        "name": "Dain",
+        "text": "Cette fois je gagne !!"
     },
     "tour_dain_6": {
-        "name": "Dain",
-        "text": "Devenir pro... je ne sais plus trop."
+        "name": "{name}",
+        "text": "*Pierre-feuille-ciseaux. — Dain a perdu.*"
     },
     "tour_dain_7": {
-        "name": "Moi",
-        "text": "……"
+        "name": "Dain",
+        "text": "...Raaah !! Pourquoi !! Cinq sur cinq !!"
     },
     "tour_dain_8": {
-        "name": "Dain",
-        "text": "Mais parfois j'ai peur. Peur de devenir quelqu'un sans rêve."
+        "name": "{name}",
+        "text": "*Elle râle tout en riant. — C'est ça, Dain.*"
     },
     "tour_dain_9": {
-        "name": "Moi",
-        "text": "Il suffit d'en trouver un nouveau."
+        "name": "{name}",
+        "text": "*Dain pose le ballon sur le terrain. Doucement.*"
     },
     "tour_dain_10": {
         "name": "Dain",
-        "text": "...Ouais. Quand tu le dis comme ça, on dirait que c'est vraiment possible."
+        "text": "Devenir pro... je ne sais pas."
+    },
+    "tour_dain_11": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "tour_dain_12": {
+        "name": "Dain",
+        "text": "Mais c'est bizarre — avant, je pensais que sans le volley, je n'existais plus. Mais maintenant, ce n'est plus le cas."
+    },
+    "tour_dain_13": {
+        "name": "{name}",
+        "text": "Qu'est-ce qui a changé ?"
     },
     "tour_dain_end": {
-        "name": "Moi",
-        "text": "*Elle sourit. Des yeux en croissant de lune. — Les mêmes yeux que j'ai vus le premier jour, mais avec une profondeur différente.*"
+        "name": "Dain",
+        "text": "...J'ai quelqu'un à côté de moi maintenant."
+    },
+    "tour_dain_end_2": {
+        "name": "{name}",
+        "text": "*Elle le dit sans point d'exclamation. Mais cette fois, ce n'est pas un adieu — c'est un début.*"
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",

@@ -320,6 +320,41 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "night": true,
         "fade": true,
+        "next": "good_1b"
+    },
+    "good_1b": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "good_1c"
+    },
+    "good_1c": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "good_1_seo" },
+            { "condition": "route_yuna", "next": "good_1_yuna" },
+            { "condition": "route_dain", "next": "good_1_dain" },
+            { "next": "good_2" }
+        ]
+    },
+    "good_1_seo": {
+        "character": "assets/images/characters/seyoun_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "good_2"
+    },
+    "good_1_yuna": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "good_2"
+    },
+    "good_1_dain": {
+        "character": "assets/images/characters/dain_normal.png",
+        "night": true,
+        "fade": true,
         "next": "good_2"
     },
     "good_2": {
@@ -509,6 +544,36 @@ Object.assign(SCENARIO[5], {
         "next": "friend_7"
     },
     "friend_7": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "friend_8"
+    },
+    "friend_8": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "friend_9"
+    },
+    "friend_9": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "friend_10"
+    },
+    "friend_10": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "friend_11"
+    },
+    "friend_11": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "friend_12"
+    },
+    "friend_12": {
         "character": null,
         "night": true,
         "fade": true,

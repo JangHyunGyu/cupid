@@ -27,6 +27,10 @@
         "name": "Me",
         "text": "*Three paths. Having to make a choice like this on day one.*"
     },
+    "lunch_start_7b": {
+        "name": "{name}",
+        "text": "*At my old school, I never chose. To be precise, I kept putting it off until the moment passed. — There it is again. My mouth moves smooth enough, but when it actually matters, it locks up. This pattern. I'm my own worst disappointment.*"
+    },
     "lunch_choice": {
         "name": "Me",
         "text": "*Who do I follow?*",

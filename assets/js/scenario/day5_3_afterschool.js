@@ -16,9 +16,31 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "sunset": true,
         "branches": [
+            { "condition": "homeroom_route_unlocked", "next": "after5_hidden_farewell_1" },
+            { "condition": "nurse_route_unlocked", "next": "after5_hidden_farewell_1" },
             { "condition": "route_seoyeon", "next": "after5_farewell_yuna_check" },
             { "next": "after5_farewell_seo_1" }
         ]
+    },
+
+    // ========== 히든 루트 진입 시 전용 독백 ==========
+    "after5_hidden_farewell_1": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "sunset": true,
+        "next": "after5_hidden_farewell_2"
+    },
+    "after5_hidden_farewell_2": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "sunset": true,
+        "next": "after5_hidden_farewell_3"
+    },
+    "after5_hidden_farewell_3": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "sunset": true,
+        "next": "after5_sunset_1"
     },
 
     // ========== 서연 미선택 시 작별 (복도) ==========
@@ -216,7 +238,7 @@ Object.assign(SCENARIO[5], {
         "next": "ending_start"
     },
 
-    // ========== 마지막 고백 선택 (주인공 아크: "이번에는 삼키지 않겠다") ==========
+    // ========== 마지막 고백 선택 (주인공 아크: "이번에는 고백하겠다") ==========
     "after5_last_chance_1": {
         "character": null,
         "background": "assets/images/background/school_back.png",

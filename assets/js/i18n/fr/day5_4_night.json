@@ -135,8 +135,28 @@
         "name": "Moi",
         "text": "*Pour quelqu'un, j'ai peut-être donné de l'espoir pour ensuite le reprendre. Je suis désolé.*"
     },
+    "good_1b": {
+        "name": "{name}",
+        "text": "*Elle a parlé.*"
+    },
+    "good_1c": {
+        "name": "{name}",
+        "text": ""
+    },
+    "good_1_seo": {
+        "name": "Seoyeon",
+        "text": "Les regards que tu as portés ailleurs, tu vas me les rembourser toute ta vie. — Avec intérêts."
+    },
+    "good_1_yuna": {
+        "name": "Yuna",
+        "text": "...Idiot. Mais un idiot qui revient, on peut lui pardonner."
+    },
+    "good_1_dain": {
+        "name": "Dain",
+        "text": "Hé, j'étais vraiment en colère, tu sais ? ...Mais au final t'es revenu vers moi. Ça me suffit."
+    },
     "good_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Mais c'est grâce à cette hésitation que j'ai compris quels étaient mes vrais sentiments.*"
     },
     "good_3": {
@@ -240,36 +260,56 @@
         "text": "*En sortant du portail, il y a un message sur mon téléphone. 'Merci pour aujourd'hui lol' — Le ton d'un ami. Un ton parfaitement amical.*"
     },
     "friend_5": {
-        "name": "Moi",
-        "text": "*...Je n'ai pas pu le dire dans ce lycée non plus.*"
+        "name": "{name}",
+        "text": "*J'ai tapé ma réponse. 'Moi aussi, merci.' — Après l'envoi, j'ai fixé l'écran. Deux lignes de conversation. Je souris, mais un froid étrange me traverse.*"
     },
     "friend_6": {
-        "name": "Moi",
-        "text": "*Une distance appelée «amis.»*"
+        "name": "{name}",
+        "text": "*Ce sera comme ça désormais. Des emojis souriants, un repas de temps en temps, 'ça va ?' répondu par 'ça va'. À portée de main mais à jamais intouchable. C'est ça, l'amitié.*"
     },
     "friend_7": {
+        "name": "{name}",
+        "text": "*...Je n'ai pas pu le dire dans ce lycée non plus.*"
+    },
+    "friend_8": {
+        "name": "{name}",
+        "text": "*Jour de la remise des diplômes. Je fais défiler la galerie de mon téléphone. Là où il y avait la photo de Sojeong, il y a maintenant une photo de groupe avec elle.*"
+    },
+    "friend_9": {
+        "name": "{name}",
+        "text": "*Encore une fois à côté d'elle, portant le masque parfait de l'« ami », souriant.*"
+    },
+    "friend_10": {
+        "name": "{name}",
+        "text": "*J'ouvre le bloc-notes. 'J'ai quelque chose à te dire.' — Le curseur clignote. Comme il y a trois ans. Je maintiens la touche effacer. Tout s'efface.*"
+    },
+    "friend_11": {
+        "name": "{name}",
+        "text": "*Changer de lycée, fuir — au final, rien n'a changé en moi.*"
+    },
+    "friend_12": {
         "name": "Système",
         "text": "─── FRIEND END ───"
     },
     "day5_ending_alone": {
-        "name": "Moi",
-        "text": "*Personne de spécial n'est apparu. Mais le temps passé dans cette école n'a pas été vain.*"
+        "name": "{name}",
+        "text": "*Je franchis le portail. Mon téléphone sonne. — Personne. Alerte batterie faible.*"
     },
     "alone_1": {
-        "name": "Moi",
-        "text": "*La solitude n'est pas une punition. C'est le temps de se confronter à soi-même.*"
+        "name": "{name}",
+        "text": "*Cinq jours. Je me suis approché de quelqu'un, je n'ai pas pu approcher d'autres, et au final, je n'ai pas su choisir.*"
     },
     "alone_2": {
-        "name": "Moi",
-        "text": "*Pas besoin de se presser. Je peux marcher à mon rythme, sur mon propre chemin.*"
+        "name": "{name}",
+        "text": "*À l'ancien lycée, j'ai regretté de ne pas avoir parlé. Ici — je regrette de ne pas avoir trouvé à qui parler ? Non. Je les ai trouvés mais je n'ai pas su choisir. Non, je n'ai pas eu le courage de choisir.*"
     },
     "alone_3": {
-        "name": "Moi",
-        "text": "*...Cette école n'est pas si mal, en fait.*"
+        "name": "{name}",
+        "text": "*Les fleurs de cerisier tombent devant le portail. Les mêmes pétales qui m'ont effleuré le nez il y a cinq jours sont maintenant collés au sol. Ça doit glisser si on marche dessus.*"
     },
     "alone_4": {
-        "name": "Moi",
-        "text": "*La solitude n'est pas une punition.*"
+        "name": "{name}",
+        "text": "*...Être seul n'est pas une punition. C'est juste — silencieux. Plus que prévu.*"
     },
     "alone_5": {
         "name": "Système",

@@ -135,8 +135,28 @@
         "name": "Ich",
         "text": "*Jemandem habe ich vielleicht Hoffnung gegeben, nur um sie wieder zu nehmen. Es tut mir leid.*"
     },
+    "good_1b": {
+        "name": "{name}",
+        "text": "*Sie sprach.*"
+    },
+    "good_1c": {
+        "name": "{name}",
+        "text": ""
+    },
+    "good_1_seo": {
+        "name": "Seoyeon",
+        "text": "Dass du woanders hingeschaut hast, wirst du mir ein Leben lang zurückzahlen. — Mit Zinsen."
+    },
+    "good_1_yuna": {
+        "name": "Yuna",
+        "text": "...Dummkopf. Aber einem Dummkopf, der zurückkommt, kann man verzeihen."
+    },
+    "good_1_dain": {
+        "name": "Dain",
+        "text": "Hey, ich war echt sauer, weißt du? ...Aber am Ende bist du zu mir gekommen. Das reicht mir."
+    },
     "good_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Aber gerade weil ich schwankte, verstand ich, was meine wahren Gefühle sind.*"
     },
     "good_3": {
@@ -161,7 +181,7 @@
     },
     "mayhem_2": {
         "name": "Ich",
-        "text": "*Yunas Platz war leer. Ein einzelner Zettel auf dem Tisch. „Es hat Spaß gemacht.“ Der Punkt war das Ende.*"
+        "text": "*Yunas Platz war leer. Ein einzelner Zettel auf dem Tisch. 'Es hat Spaß gemacht.' Der Punkt war das Ende.*"
     },
     "mayhem_3": {
         "name": "Ich",
@@ -240,36 +260,56 @@
         "text": "*Beim Verlassen des Schultors ist eine Nachricht auf meinem Handy. 'Danke für heute lol' — Der Ton eines Freundes. Ein perfekt freundschaftlicher Ton.*"
     },
     "friend_5": {
-        "name": "Ich",
-        "text": "*...Auch an dieser Schule konnte ich es nicht sagen.*"
+        "name": "{name}",
+        "text": "*Ich tippte eine Antwort. 'Dir auch danke.' — Nach dem Senden starrte ich auf den Bildschirm. Zwei Zeilen Gespräch. Ich lächle, doch innerlich ist es seltsam kalt.*"
     },
     "friend_6": {
-        "name": "Ich",
-        "text": "*Eine Distanz namens „Freunde.“*"
+        "name": "{name}",
+        "text": "*So wird es ab jetzt sein. Lachende Emojis, ab und zu zusammen essen, 'Wie geht's?' mit 'Gut' beantwortet. In Reichweite, aber für immer unerreichbar. Das ist Freundschaft.*"
     },
     "friend_7": {
+        "name": "{name}",
+        "text": "*...Auch an dieser Schule konnte ich es nicht sagen.*"
+    },
+    "friend_8": {
+        "name": "{name}",
+        "text": "*Abschlusstag. Ich scrolle durch die Handygalerie. Wo einmal Sojeongs Foto war, ist jetzt ein Gruppenfoto mit ihr.*"
+    },
+    "friend_9": {
+        "name": "{name}",
+        "text": "*Wieder stehe ich neben ihr, trage die perfekte Maske des 'Freundes', und lächle.*"
+    },
+    "friend_10": {
+        "name": "{name}",
+        "text": "*Ich öffne die Notizen-App. 'Ich muss dir was sagen.' — Der Cursor blinkt. Wie vor drei Jahren. Löschtaste gedrückt halten. Gelöscht.*"
+    },
+    "friend_11": {
+        "name": "{name}",
+        "text": "*Die Schule wechseln, davonlaufen — am Ende hat sich nichts an mir verändert.*"
+    },
+    "friend_12": {
         "name": "System",
         "text": "─── FRIEND END ───"
     },
     "day5_ending_alone": {
-        "name": "Ich",
-        "text": "*Niemand Besonderes kam. Aber die Zeit, die ich an dieser Schule verbracht habe, war nicht umsonst.*"
+        "name": "{name}",
+        "text": "*Ich gehe durch das Schultor. Das Handy summt. — Niemand. Akkuwarnung.*"
     },
     "alone_1": {
-        "name": "Ich",
-        "text": "*Einsamkeit ist keine Strafe. Es ist Zeit, sich selbst zu begegnen.*"
+        "name": "{name}",
+        "text": "*Fünf Tage. Auf jemanden zugegangen, auf andere nicht zugehen können, und am Ende nicht wählen können.*"
     },
     "alone_2": {
-        "name": "Ich",
-        "text": "*Es gibt keinen Grund zur Eile. Ich kann in meinem eigenen Tempo meinen eigenen Weg gehen.*"
+        "name": "{name}",
+        "text": "*An der alten Schule bereute ich, nicht gesprochen zu haben. An dieser Schule — bereue ich, niemanden zum Reden gefunden zu haben? Nein. Gefunden, aber nicht wählen können. Nein, nicht den Mut gehabt zu wählen.*"
     },
     "alone_3": {
-        "name": "Ich",
-        "text": "*...Diese Schule ist gar nicht so schlecht, eigentlich.*"
+        "name": "{name}",
+        "text": "*Kirschblüten fallen vor dem Tor. Die gleichen Blütenblätter, die mir vor fünf Tagen die Nase gestreift haben, kleben jetzt am Boden. Wenn man drauftritt, wird es wohl rutschig.*"
     },
     "alone_4": {
-        "name": "Ich",
-        "text": "*Einsamkeit ist keine Strafe.*"
+        "name": "{name}",
+        "text": "*...Allein zu sein ist keine Strafe. Es ist nur — still. Stiller als erwartet.*"
     },
     "alone_5": {
         "name": "System",

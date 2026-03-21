@@ -244,26 +244,42 @@
         "name": "Yo",
         "text": "*Dain abraza el balón con la cabeza agachada. Sus hombros tiemblan.*",
         "choices": [
-            "El voleibol no es tu único sueño, Dain. Busquemos uno nuevo juntos.",
+            "...¿Puedo sentarme a tu lado?",
             "Puedes llorar. No tienes que fingir estar alegre. No conmigo.",
             "...¿Quieres que te coloque una más? Una última vez."
         ]
     },
     "wall_dain_newdream_1": {
-        "name": "Dain",
-        "text": "...¿Un nuevo sueño?"
+        "name": "{name}",
+        "text": "*Me senté junto a Dain. El suelo de la cancha está frío. No dije nada.*"
     },
     "wall_dain_newdream_2": {
-        "name": "Dain",
-        "text": "...Como entrenadora, o preparadora física. Me gusta enseñar."
+        "name": "{name}",
+        "text": "*Dain tampoco dice nada. — Qué momento tan extraño. Es la primera vez que hay más de un minuto de silencio al lado de Dain.*"
     },
     "wall_dain_newdream_3": {
-        "name": "Yo",
-        "text": "Serías la entrenadora más apasionada del mundo."
+        "name": "Dain",
+        "text": "...¿Por qué no dices nada?"
     },
     "wall_dain_newdream_4": {
+        "name": "{name}",
+        "text": "Para escucharte cuando quieras hablar."
+    },
+    "wall_dain_newdream_5": {
+        "name": "{name}",
+        "text": "*Dain mira sus manos sobre las rodillas. Cierra los puños y los abre. Una y otra vez.*"
+    },
+    "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "...Tonto, si dices esas cosas voy a llorar..."
+        "text": "Es gracioso, ¿no? Llevo pisando esta cancha todos los días desde los cinco años... y ahora resulta que ya no puedo."
+    },
+    "wall_dain_newdream_7": {
+        "name": "Dain",
+        "text": "Pero contigo sentado a mi lado — el suelo se siente menos frío."
+    },
+    "wall_dain_newdream_8": {
+        "name": "{name}",
+        "text": "*No golpear una pelota en la cancha, sino sentarse al lado de alguien. — Para Dain, seguramente eso también es una primera vez.*"
     },
     "wall_dain_cry_1": {
         "name": "Yo",

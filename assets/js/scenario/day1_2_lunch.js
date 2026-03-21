@@ -42,6 +42,11 @@ Object.assign(SCENARIO[1], {
     "lunch_start_7": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_normal.png",
+        "next": "lunch_start_7b"
+    },
+    "lunch_start_7b": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "lunch_choice"
     },
     "lunch_choice": {
