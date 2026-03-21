@@ -698,8 +698,8 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_true_nurse_7"
     },
     "hidden_true_nurse_7": {
-        "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "background": "assets/images/background/nurse_home_event1.png",
+        "character": null,
         "night": true,
         "fade": true,
         "next": "hidden_true_nurse_8"

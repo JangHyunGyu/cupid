@@ -271,8 +271,8 @@ Object.assign(SCENARIO[3], {
         "next": "after3_dain_3"
     },
     "after3_dain_3": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sweat.png",
+        "background": "assets/images/background/dain_hurt_event1.png",
+        "character": null,
         "next": "after3_dain_4"
     },
     "after3_dain_4": {
