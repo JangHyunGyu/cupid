@@ -289,34 +289,6 @@
         "name": "Moi",
         "text": "*Des yeux qui veulent croire. — Je ne savais pas qu’un mensonge pouvait peser autant.*"
     },
-    "after3_confront_yuna_enter": {
-        "name": "Moi",
-        "text": "*Après le départ de Seoyeon — Yuna est debout au bout du couloir. Je ne sais pas depuis quand elle est là.*"
-    },
-    "after3_confront_yuna_1": {
-        "name": "Yuna",
-        "text": "J’ai tout entendu."
-    },
-    "after3_confront_yuna_2": {
-        "name": "{name}",
-        "text": "Yuna..."
-    },
-    "after3_confront_yuna_3": {
-        "name": "Yuna",
-        "text": "Je ne veux pas d’excuses."
-    },
-    "after3_confront_yuna_4": {
-        "name": "Yuna",
-        "text": "Je veux juste que tu comprennes le poids de choisir à côté de qui tu te tiendras."
-    },
-    "after3_confront_yuna_5": {
-        "name": "Yuna",
-        "text": "...Ne fuis pas. C'est tout."
-    },
-    "after3_confront_yuna_6": {
-        "name": "Moi",
-        "text": "*Yuna a parlé en longues phrases. Plusieurs phrases. — Ça veut dire qu’elle est vraiment en colère.*"
-    },
     "after3_confront_end": {
         "name": "Moi",
         "text": "*Je suis seul dans le couloir où Seoyeon a disparu. — Son dos était droit. Parfaitement droit. Mais ses poings étaient serrés.*"
