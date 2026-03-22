@@ -392,5 +392,37 @@
     "lunch2_dain_end": {
         "name": "Me",
         "text": "*The crunching of Dain's soboro bread is unusually loud. Seoyeon's gaze, Dain's red ears — lunch period is getting more complicated by the day.*"
+    },
+    "lunch2_seo_1_check": {
+        "name": "{name}",
+        "text": "*Heading up to the rooftop.*"
+    },
+    "lunch2_seo_1b": {
+        "name": "{name}",
+        "text": "*The rooftop. First time here. The breeze is cool and the view is wide open. Seoyeon is setting out her lunch.*"
+    },
+    "lunch2_seo_2b": {
+        "name": "Seoyeon",
+        "text": "You came all the way up here. Bold."
+    },
+    "lunch2_seo_13b": {
+        "name": "Dain",
+        "text": "Oh! Seoyeon? Nice to meet you!"
+    },
+    "lunch2_dain_1_check": {
+        "name": "{name}",
+        "text": "*Heading toward the school store.*"
+    },
+    "lunch2_dain_1b": {
+        "name": "{name}",
+        "text": "*To the store with Dain. First rock-paper-scissors match.*"
+    },
+    "lunch2_dain_3b": {
+        "name": "{name}",
+        "text": "Really?"
+    },
+    "lunch2_dain_4b": {
+        "name": "Dain",
+        "text": "Obviously!! I'm actually really good!!"
     }
 }

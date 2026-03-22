@@ -392,5 +392,37 @@
     "lunch2_dain_end": {
         "name": "Ich",
         "text": "*Das Knuspern von Dains Soboro-Brot ist ungewoehnlich laut. Seoyeons Blick, Dains rote Ohren -- die Mittagspause wird von Tag zu Tag komplizierter.*"
+    },
+    "lunch2_seo_1_check": {
+        "name": "{name}",
+        "text": "*Auf dem Weg zum Dach.*"
+    },
+    "lunch2_seo_1b": {
+        "name": "{name}",
+        "text": "*Das Dach. Das erste Mal hier. Die Brise ist kühl und die Aussicht weit. Seoyeon packt ihr Mittagessen aus.*"
+    },
+    "lunch2_seo_2b": {
+        "name": "Seoyeon",
+        "text": "Du bist bis hierher gekommen. Mutig."
+    },
+    "lunch2_seo_13b": {
+        "name": "Dain",
+        "text": "Oh! Seoyeon? Freut mich!"
+    },
+    "lunch2_dain_1_check": {
+        "name": "{name}",
+        "text": "*Auf dem Weg zum Schulkiosk.*"
+    },
+    "lunch2_dain_1b": {
+        "name": "{name}",
+        "text": "*Mit Dain zum Kiosk. Erstes Schere-Stein-Papier-Duell.*"
+    },
+    "lunch2_dain_3b": {
+        "name": "{name}",
+        "text": "Wirklich?"
+    },
+    "lunch2_dain_4b": {
+        "name": "Dain",
+        "text": "Natürlich!! Ich bin eigentlich richtig gut!!"
     }
 }
