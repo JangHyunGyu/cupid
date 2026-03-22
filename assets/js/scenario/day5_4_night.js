@@ -76,6 +76,7 @@ Object.assign(SCENARIO[5], {
         "night": true,
         "fade": true,
         "bgm": "ending.mp3",
+        "setFlag": "ending_true_love",
         "selectByHighestAffinity": true,
         "branches": [
             {
@@ -284,7 +285,7 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "night": true,
         "fade": true,
-        "next": "true_epilogue_7"
+        "next": "true_epilogue_5"
     },
     "true_epilogue_5": {
         "character": null,
