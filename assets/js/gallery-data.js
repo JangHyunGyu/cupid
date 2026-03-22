@@ -684,8 +684,23 @@ class GalleryData {
                 description: '보건선생님의 집에서 일어난 특별한 이벤트',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
+            },
+            {
+                id: 'dain_hurt_event1',
+                name: '다인의 부상',
+                character: '다인',
+                description: '체육관에서 무릎 부상을 당한 다인',
+                file: 'assets/images/background/dain_hurt_event1.png',
+                thumbnail: 'assets/images/background/dain_hurt_event1.png'
+            },
+            {
+                id: 'dain_depression_event1',
+                name: '다인의 눈물',
+                character: '다인',
+                description: '어두운 체육관에서 혼자 울고 있는 다인',
+                file: 'assets/images/background/dain_depression_event1.png',
+                thumbnail: 'assets/images/background/dain_depression_event1.png'
             }
-            // 새 CG를 추가하려면 여기에 같은 형식으로 객체 추가
         ],
         en: [
             {
@@ -695,6 +710,22 @@ class GalleryData {
                 description: 'A special event at the nurse\'s home',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
+            },
+            {
+                id: 'dain_hurt_event1',
+                name: 'Dain\'s Injury',
+                character: 'Dain',
+                description: 'Dain suffers a knee injury in the gym',
+                file: 'assets/images/background/dain_hurt_event1.png',
+                thumbnail: 'assets/images/background/dain_hurt_event1.png'
+            },
+            {
+                id: 'dain_depression_event1',
+                name: 'Dain\'s Tears',
+                character: 'Dain',
+                description: 'Dain crying alone in the dark gym',
+                file: 'assets/images/background/dain_depression_event1.png',
+                thumbnail: 'assets/images/background/dain_depression_event1.png'
             }
         ],
         es: [
@@ -705,6 +736,22 @@ class GalleryData {
                 description: 'Un evento especial en la casa de la enfermera',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
+            },
+            {
+                id: 'dain_hurt_event1',
+                name: 'Lesión de Dain',
+                character: 'Dain',
+                description: 'Dain sufre una lesión de rodilla en el gimnasio',
+                file: 'assets/images/background/dain_hurt_event1.png',
+                thumbnail: 'assets/images/background/dain_hurt_event1.png'
+            },
+            {
+                id: 'dain_depression_event1',
+                name: 'Las lágrimas de Dain',
+                character: 'Dain',
+                description: 'Dain llorando sola en el gimnasio oscuro',
+                file: 'assets/images/background/dain_depression_event1.png',
+                thumbnail: 'assets/images/background/dain_depression_event1.png'
             }
         ],
         ja: [
@@ -715,6 +762,22 @@ class GalleryData {
                 description: '保健先生の家で起きた特別なイベント',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
+            },
+            {
+                id: 'dain_hurt_event1',
+                name: 'ダインの怪我',
+                character: 'ダイン',
+                description: '体育館で膝を怪我したダイン',
+                file: 'assets/images/background/dain_hurt_event1.png',
+                thumbnail: 'assets/images/background/dain_hurt_event1.png'
+            },
+            {
+                id: 'dain_depression_event1',
+                name: 'ダインの涙',
+                character: 'ダイン',
+                description: '暗い体育館で一人泣いているダイン',
+                file: 'assets/images/background/dain_depression_event1.png',
+                thumbnail: 'assets/images/background/dain_depression_event1.png'
             }
         ],
         fr: [
@@ -725,6 +788,22 @@ class GalleryData {
                 description: 'Un événement spécial chez l\'infirmière',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
+            },
+            {
+                id: 'dain_hurt_event1',
+                name: 'La blessure de Dain',
+                character: 'Dain',
+                description: 'Dain se blesse au genou dans le gymnase',
+                file: 'assets/images/background/dain_hurt_event1.png',
+                thumbnail: 'assets/images/background/dain_hurt_event1.png'
+            },
+            {
+                id: 'dain_depression_event1',
+                name: 'Les larmes de Dain',
+                character: 'Dain',
+                description: 'Dain pleurant seule dans le gymnase sombre',
+                file: 'assets/images/background/dain_depression_event1.png',
+                thumbnail: 'assets/images/background/dain_depression_event1.png'
             }
         ],
         de: [
@@ -735,6 +814,22 @@ class GalleryData {
                 description: 'Ein besonderes Ereignis im Zuhause der Krankenschwester',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
+            },
+            {
+                id: 'dain_hurt_event1',
+                name: 'Dains Verletzung',
+                character: 'Dain',
+                description: 'Dain verletzt sich das Knie in der Turnhalle',
+                file: 'assets/images/background/dain_hurt_event1.png',
+                thumbnail: 'assets/images/background/dain_hurt_event1.png'
+            },
+            {
+                id: 'dain_depression_event1',
+                name: 'Dains Tränen',
+                character: 'Dain',
+                description: 'Dain weint allein in der dunklen Turnhalle',
+                file: 'assets/images/background/dain_depression_event1.png',
+                thumbnail: 'assets/images/background/dain_depression_event1.png'
             }
         ]
     };

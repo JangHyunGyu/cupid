@@ -70,7 +70,7 @@ const REGISTERED_CG_IDS = new Set([
     'nurse_home_event1',
     'dain_hurt_event1',
     'dain_depression_event1'
-    // 🔧 새 CG 추가 시 여기에 ID 추가 (예: 'seoyeon_rooftop_cg')
+    // 🔧 새 CG 추가 시 여기에 ID 추가
 ]);
 
 /**
@@ -93,7 +93,7 @@ const CHAR_NAME_MAP = Object.freeze({
     "ソヨン": "Seoyeon", "ユナ": "Yuna", "ダイン": "Dain",
     "担任先生": "Teacher", "保健先生": "Nurse",
     // French
-    "Professeur Principal": "Teacher", "Infirmière Scolaire": "Nurse",
+    "Professeur Principal": "Teacher", "Infirmière Scolaire": "Nurse", "Infirmière": "Nurse",
     // German
     "Klassenlehrerin": "Teacher", "Lehrerin": "Teacher", "Schulkrankenschwester": "Nurse"
 });
