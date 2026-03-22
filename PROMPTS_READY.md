@@ -447,9 +447,37 @@
 
 ---
 
-## 7~12. 배경 / 이벤트 CG / 타이틀 — (변경 없음, 기존 유지)
+## 7. 이벤트 CG
 
-> 배경, 이벤트 CG, 타이틀/UI 프롬프트는 이전 버전과 동일합니다.
+> 이벤트 CG는 캐릭터 _normal 레퍼런스 이미지 + Gemini 3.1 Flash Image로 생성 (캐릭터 일관성 유지)
+> 생성 스크립트: `generate_cg.js` (node generate_cg.js [cg_id])
+
+### nurse_home_event1.png
+**레퍼런스:** `assets/images/characters/nurse_normal.webp`
+**프롬프트:**
+```
+Using this character as reference, create an anime visual novel event CG scene. Keep the character's exact appearance (ash lavender short bob hair with sharp cut at jawline, brown eyes, round glasses, beauty mark/mole near lips, glamorous voluptuous figure). Change the scene to: front-facing camera angle looking directly at viewer. She is sitting on a cozy sofa in her apartment at night, wearing a loose pink cardigan over a deep V-neck white top showing cleavage line, comfortable black casual shorts (NOT a skirt), stomach area covered not see-through. Holding a steaming coffee cup with BOTH hands (not touching glasses). Warm lamp lighting, night window view behind. Gentle meaningful smile with one corner raised. Cozy relaxed intimate atmosphere. 1024x1024, anime art style, no text no watermark.
+```
+
+### dain_hurt_event1.png
+**레퍼런스:** `assets/images/characters/dain_normal.webp`
+**프롬프트:**
+```
+Using this character as reference, create an anime visual novel event CG scene with only ONE character. Keep the character's exact appearance (brown short bob hair, bright green eyes, tanned skin, athletic toned body with 7 head proportions tall slender figure, white ETAURS #19 volleyball uniform with orange lines, navy hot pants, black arm sleeve on left arm only). Change the scene to: she is sitting on the gymnasium wooden floor, both legs visible and extended, clutching her right knee with both hands in pain. Eyes shut tight, sweat drops, pained expression with teeth clenched. A volleyball on the floor nearby. Indoor gym with volleyball net in background. Dramatic emotional lighting. Only one person in the scene. 1024x1024, anime art style, no text no watermark.
+```
+
+### dain_depression_event1.png
+**레퍼런스:** `assets/images/characters/dain_normal.webp`
+**프롬프트:**
+```
+Using this character as reference, create an anime visual novel event CG scene with only ONE character. Keep the character's exact appearance (brown short bob hair, bright green eyes, tanned skin, athletic toned body with 7 head proportions tall slender figure, white ETAURS #19 volleyball uniform with orange lines, navy hot pants, black arm sleeve on left arm only). Change the scene to: she is sitting alone on the dark gymnasium floor, hugging her knees, crying quietly. Side/back view angle. Volleyball beside her. Dark empty gym with volleyball net. Dim moody lighting, teardrops visible. Lonely sad atmosphere. Only one person in the scene. 1024x1024, anime art style, no text no watermark.
+```
+
+---
+
+## 8~12. 배경 / 타이틀 — (변경 없음, 기존 유지)
+
+> 배경, 타이틀/UI 프롬프트는 이전 버전과 동일합니다.
 > 배경은 캐릭터처럼 세부 외형 묘사가 필요 없으므로 기존 프롬프트 수준이 적절합니다.
 
 ---
