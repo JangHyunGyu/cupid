@@ -432,13 +432,13 @@ Object.assign(SCENARIO[4], {
     // 민수 독려 + 소정이 콜백 (공통, 고백 직전)
     // ═══════════════════════════════════════════════════════════════
     "pre_confess_minsu": {
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "background": "assets/images/background/street.png",
         "sunset": true,
         "next": "pre_confess_minsu_2"
     },
     "pre_confess_minsu_2": {
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "background": "assets/images/background/street.png",
         "sunset": true,
         "next": "pre_confess_callback"

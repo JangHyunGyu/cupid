@@ -113,6 +113,16 @@ Object.assign(SCENARIO[2], {
     "after2_dain_end": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_laugh.png",
+        "next": "after2_dain_end_2"
+    },
+    "after2_dain_end_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "after2_dain_end_3"
+    },
+    "after2_dain_end_3": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_shy.png",
         "next": "minsu_warn_1"
     },
     "after2_seo_1": {
@@ -357,7 +367,7 @@ Object.assign(SCENARIO[2], {
     },
     "minsu_warn_2": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_3"
     },
     "minsu_warn_3": {
@@ -367,7 +377,7 @@ Object.assign(SCENARIO[2], {
     },
     "minsu_warn_4": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_5"
     },
     "minsu_warn_5": {
@@ -377,7 +387,7 @@ Object.assign(SCENARIO[2], {
     },
     "minsu_warn_6": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_7"
     },
     "minsu_warn_7": {
@@ -387,7 +397,7 @@ Object.assign(SCENARIO[2], {
     },
     "minsu_warn_8": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_8b"
     },
     "minsu_warn_8b": {
@@ -397,7 +407,7 @@ Object.assign(SCENARIO[2], {
     },
     "minsu_warn_9": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_10"
     },
     "minsu_warn_10": {
@@ -407,7 +417,7 @@ Object.assign(SCENARIO[2], {
     },
     "minsu_warn_11": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_11b"
     },
     "minsu_warn_11b": {
@@ -417,7 +427,7 @@ Object.assign(SCENARIO[2], {
     },
     "minsu_warn_11c": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_12"
     },
     "minsu_warn_12": {
@@ -427,7 +437,7 @@ Object.assign(SCENARIO[2], {
     },
     "minsu_warn_13": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_13b"
     },
     "minsu_warn_13b": {
@@ -442,7 +452,7 @@ Object.assign(SCENARIO[2], {
     },
     "minsu_warn_15": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "night2_start"
     },
 
