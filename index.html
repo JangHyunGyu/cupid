@@ -676,6 +676,87 @@
                 transform: scale(1.08);
             }
         }
+
+        /* ===== Title Heroines ===== */
+        .title-heroines {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 70%;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .title-heroine {
+            position: absolute;
+            bottom: -5%;
+            height: 75%;
+            max-height: 500px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5));
+            transition: transform 0.3s ease;
+        }
+
+        /* 5명 배치: 담임 - 서연 - 유나(센터) - 다인 - 보건실 */
+        .title-heroine.pos-1 { left: 2%; height: 68%; }
+        .title-heroine.pos-2 { left: 19%; height: 72%; }
+        .title-heroine.pos-3 { left: 50%; transform: translateX(-50%); height: 78%; }
+        .title-heroine.pos-4 { right: 19%; height: 72%; }
+        .title-heroine.pos-5 { right: 2%; height: 68%; }
+
+        /* PC wide */
+        @media (min-width: 1400px) {
+            .title-heroine { max-height: 600px; }
+            .title-heroine.pos-1 { left: 5%; }
+            .title-heroine.pos-2 { left: 22%; }
+            .title-heroine.pos-4 { right: 22%; }
+            .title-heroine.pos-5 { right: 5%; }
+        }
+
+        /* Tablet landscape */
+        @media (max-width: 1024px) {
+            .title-heroine { max-height: 420px; }
+            .title-heroine.pos-1 { left: 0%; height: 62%; }
+            .title-heroine.pos-2 { left: 16%; height: 66%; }
+            .title-heroine.pos-4 { right: 16%; height: 66%; }
+            .title-heroine.pos-5 { right: 0%; height: 62%; }
+        }
+
+        /* Tablet portrait */
+        @media (max-width: 768px) and (orientation: portrait) {
+            .title-heroines { height: 55%; }
+            .title-heroine { max-height: 350px; }
+            .title-heroine.pos-1,
+            .title-heroine.pos-5 { display: none; }
+            .title-heroine.pos-2 { left: 2%; height: 65%; }
+            .title-heroine.pos-3 { height: 72%; }
+            .title-heroine.pos-4 { right: 2%; height: 65%; }
+        }
+
+        /* Small mobile portrait */
+        @media (max-width: 480px) and (orientation: portrait) {
+            .title-heroines { height: 50%; }
+            .title-heroine { max-height: 280px; }
+            .title-heroine.pos-2 { left: -2%; height: 60%; }
+            .title-heroine.pos-3 { height: 68%; }
+            .title-heroine.pos-4 { right: -2%; height: 60%; }
+        }
+
+        /* Mobile landscape */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .title-heroines { height: 65%; }
+            .title-heroine { max-height: 250px; }
+            .title-heroine.pos-1 { left: 1%; height: 60%; }
+            .title-heroine.pos-2 { left: 17%; height: 64%; }
+            .title-heroine.pos-3 { height: 70%; }
+            .title-heroine.pos-4 { right: 17%; height: 64%; }
+            .title-heroine.pos-5 { right: 1%; height: 60%; }
+        }
     </style>
 </head>
 
@@ -712,6 +793,14 @@
         </div>
     </div>
     <div id="landing-container">
+        <!-- Title Heroines -->
+        <div class="title-heroines">
+            <img src="assets/images/characters/teacher_normal.webp" alt="" class="title-heroine pos-1" loading="eager">
+            <img src="assets/images/characters/seyoun_normal.webp" alt="" class="title-heroine pos-2" loading="eager">
+            <img src="assets/images/characters/yuna_normal.webp" alt="" class="title-heroine pos-3" loading="eager">
+            <img src="assets/images/characters/dain_normal.webp" alt="" class="title-heroine pos-4" loading="eager">
+            <img src="assets/images/characters/nurse_normal.webp" alt="" class="title-heroine pos-5" loading="eager">
+        </div>
         <div class="content">
             <div class="visual-h1" role="heading" aria-level="2">CUPID</div>
             <p>당신의 운명을 결정할 전학 첫날의 이야기</p>
