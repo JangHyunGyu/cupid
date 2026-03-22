@@ -392,5 +392,37 @@
     "lunch2_dain_end": {
         "name": "{name}",
         "text": "*다인의 소보로 빵 크런치 소리가 유난히 크다. 서연의 시선도, 다인의 귓불도 — 점심시간이 점점 복잡해진다.*"
+    },
+    "lunch2_seo_1_check": {
+        "name": "{name}",
+        "text": "*옥상으로 올라간다.*"
+    },
+    "lunch2_seo_1b": {
+        "name": "{name}",
+        "text": "*옥상. 처음 와보는 장소다. 바람이 시원하고, 시야가 탁 트여 있다. 서연이 도시락을 펼치고 있다.*"
+    },
+    "lunch2_seo_2b": {
+        "name": "서연",
+        "text": "여기까지 올라왔네. 용기 있다."
+    },
+    "lunch2_seo_13b": {
+        "name": "다인",
+        "text": "오! 서연 선배? 반가워요!"
+    },
+    "lunch2_dain_1_check": {
+        "name": "{name}",
+        "text": "*매점 쪽으로 향한다.*"
+    },
+    "lunch2_dain_1b": {
+        "name": "{name}",
+        "text": "*다인과 매점으로. 첫 가위바위보 대결.*"
+    },
+    "lunch2_dain_3b": {
+        "name": "{name}",
+        "text": "정말?"
+    },
+    "lunch2_dain_4b": {
+        "name": "다인",
+        "text": "당연하지!! 나 원래 잘해!!"
     }
 }

@@ -392,5 +392,37 @@
     "lunch2_dain_end": {
         "name": "Yo",
         "text": "*El crujido del pan de soboro de Dain es inusualmente fuerte. La mirada de Seoyeon, las orejas rojas de Dain -- la hora del almuerzo se complica mas cada dia.*"
+    },
+    "lunch2_seo_1_check": {
+        "name": "{name}",
+        "text": "*Subiendo a la azotea.*"
+    },
+    "lunch2_seo_1b": {
+        "name": "{name}",
+        "text": "*La azotea. Primera vez aquí. La brisa es fresca y la vista es amplia. Seoyeon está sacando su almuerzo.*"
+    },
+    "lunch2_seo_2b": {
+        "name": "Seoyeon",
+        "text": "Subiste hasta aquí. Valiente."
+    },
+    "lunch2_seo_13b": {
+        "name": "Dain",
+        "text": "¡Oh! ¿Seoyeon? ¡Mucho gusto!"
+    },
+    "lunch2_dain_1_check": {
+        "name": "{name}",
+        "text": "*Caminando hacia la tienda.*"
+    },
+    "lunch2_dain_1b": {
+        "name": "{name}",
+        "text": "*A la tienda con Dain. Primer duelo de piedra-papel-tijera.*"
+    },
+    "lunch2_dain_3b": {
+        "name": "{name}",
+        "text": "¿En serio?"
+    },
+    "lunch2_dain_4b": {
+        "name": "Dain",
+        "text": "¡¡Claro!! ¡¡Yo siempre soy buena!!"
     }
 }
