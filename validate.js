@@ -428,19 +428,7 @@ if (koIndex) {
     }
 }
 
-// game.html(KO)도 동일 체크
-const koGame = htmlFiles.find(f => f.name === 'game.html');
-if (koGame) {
-    const langGameFiles = htmlFiles.filter(f => /^game-(en|es|ja|fr|de)\.html$/.test(f.name));
-    for (const langFile of langGameFiles) {
-        // maxlength 불일치
-        const koMax = (koGame.content.match(/maxlength="(\d+)"/) || [])[1];
-        const langMax = (langFile.content.match(/maxlength="(\d+)"/) || [])[1];
-        if (koMax && langMax && koMax !== langMax) {
-            warnings.push('[HTML_SYNC] ' + langFile.name + ': maxlength="' + langMax + '" ≠ KO의 maxlength="' + koMax + '"');
-        }
-    }
-}
+// maxlength는 언어별로 다를 수 있음 (한글 6자, 일본어 8자, 영문 12자) — 검사 스킵
 
 // ===== 14. CSS Version Consistency =====
 const cssVersions = {};
