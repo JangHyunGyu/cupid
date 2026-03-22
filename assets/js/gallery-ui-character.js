@@ -407,25 +407,29 @@ class CharacterRenderer {
     /**
      * 프리토킹 잠금 팝업 표시
      * @private
+     * @param {string} charId - 캐릭터 ID
      * @param {string} charName - 캐릭터 이름
      */
-    _showFreeTalkLockPopup(charName) {
+    _showFreeTalkLockPopup(charId, charName) {
         const L = (ko, en, es, ja, fr, de) => ({ ko, en, es, ja, fr, de })[this.ui.lang] || en;
 
-        // 한국어 조사 처리 (받침 유무)
-        const lastChar = charName[charName.length - 1];
-        const hasJongseong = lastChar && ((lastChar.charCodeAt(0) - 0xAC00) % 28 !== 0);
-        const particle = hasJongseong ? '과' : '와';
+        const trueEnding = this.ui.progress.data.characters?.[charId]?.trueEndingCleared || false;
+        const currentAffinity = this.ui.progress.getAffinity(charId);
+        const freeTalkCount = this.ui.progress.getFreeTalkCount(charId);
+
+        const endingStatus = trueEnding ? '✅' : '❌';
+        const affinityStatus = currentAffinity >= 100 ? '✅' : '❌';
+        const talkStatus = freeTalkCount >= 30 ? '✅' : '❌';
 
         this.ui.showUnlockPopup({
             title: L('대화 미해금', 'Chat Locked', 'Chat bloqueado', '会話未解放', 'Discussion verrouillée', 'Chat gesperrt'),
             message: L(
-                `${charName}${particle} 연인이 된 상태로<br>TRUE LOVE 엔딩을 클리어하면<br>대화할 수 있습니다`,
-                `Clear the TRUE LOVE ending<br>while dating ${charName}<br>to unlock chat`,
-                `Completa el final TRUE LOVE<br>mientras sales con ${charName}<br>para desbloquear el chat`,
-                `${charName}と恋人になった状態で<br>TRUE LOVEエンディングをクリアすると<br>会話できるようになります`,
-                `Terminez la fin TRUE LOVE<br>en sortant avec ${charName}<br>pour débloquer la discussion`,
-                `Schließe das TRUE LOVE-Ende ab,<br>während du mit ${charName} zusammen bist,<br>um den Chat freizuschalten`
+                `${charName}의 비밀대화를 열려면<br>세 가지 조건을 모두 달성해야 합니다!<br><br><span class="condition-line">💘 TRUE LOVE 엔딩 클리어 ${endingStatus}</span><span class="condition-line">💕 최대 호감도: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 프리토킹: ${freeTalkCount}/30회 ${talkStatus}</span>`,
+                `To unlock ${charName}'s Secret Chat,<br>you need to achieve all three conditions!<br><br><span class="condition-line">💘 Clear TRUE LOVE Ending ${endingStatus}</span><span class="condition-line">💕 Max Affinity: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Free Talks: ${freeTalkCount}/30 ${talkStatus}</span>`,
+                `Para desbloquear el chat secreto de ${charName},<br>debes cumplir las tres condiciones!<br><br><span class="condition-line">💘 Completar final TRUE LOVE ${endingStatus}</span><span class="condition-line">💕 Afinidad max: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Charlas libres: ${freeTalkCount}/30 ${talkStatus}</span>`,
+                `${charName}の秘密会話を開くには<br>3つの条件をすべて達成する必要があります！<br><br><span class="condition-line">💘 TRUE LOVEエンディングクリア ${endingStatus}</span><span class="condition-line">💕 最大好感度: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 フリートーク: ${freeTalkCount}/30回 ${talkStatus}</span>`,
+                `Pour débloquer la discussion secrète de ${charName},<br>vous devez remplir les trois conditions !<br><br><span class="condition-line">💘 Fin TRUE LOVE terminée ${endingStatus}</span><span class="condition-line">💕 Affinité max : ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Discussions libres : ${freeTalkCount}/30 ${talkStatus}</span>`,
+                `Um ${charName}s geheimen Chat freizuschalten,<br>musst du alle drei Bedingungen erfüllen!<br><br><span class="condition-line">💘 TRUE LOVE-Ende abgeschlossen ${endingStatus}</span><span class="condition-line">💕 Max. Zuneigung: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Freie Gespräche: ${freeTalkCount}/30 ${talkStatus}</span>`
             ),
             icon: '🔒'
         });
