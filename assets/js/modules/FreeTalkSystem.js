@@ -894,8 +894,9 @@ class FreeTalkSystem {
                     const exprUrl = getAssetUrl(charExprs[exprName]);    // 버전 쿼리 추가
 
                     // 이미 이미지가 있으면 src만 변경, 없으면 새로 생성
-                    if (centerSlot.firstChild) {
-                        centerSlot.firstChild.src = exprUrl;
+                    const existingImg = centerSlot.querySelector('img');
+                    if (existingImg) {
+                        existingImg.src = exprUrl;
                     } else {
                         const img = document.createElement('img');
                         img.src = exprUrl;

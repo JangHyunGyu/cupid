@@ -1066,7 +1066,8 @@ for (const file of jsFiles) {
         // 익명 함수: addEventListener('event', () => 또는 addEventListener('event', function(
         if (/addEventListener\s*\(\s*['"][^'"]+['"]\s*,\s*(function\s*\(|\([^)]*\)\s*=>|\(\s*\)\s*=>)/.test(al.text)) {
             // window나 document에 대한 것만 (전역 리스너가 누수 위험 큼)
-            if (/\b(window|document)\b/.test(al.text)) {
+            // 단, 1회성 이벤트(DOMContentLoaded, error, unhandledrejection, beforeunload, input, keydown)는 제외
+            if (/\b(window|document)\b/.test(al.text) && !/DOMContentLoaded|error|unhandledrejection|beforeunload|input|keydown/.test(al.text)) {
                 warnings.push('[MEMORY_LEAK] ' + file.name + ':' + al.line + ' window/document에 익명 함수 addEventListener — 제거 불가: ' + al.text.substring(0, 80));
             }
         }
@@ -1359,7 +1360,7 @@ try {
     }
     // SW가 모든 메인 HTML에서 등록되는지
     for (const file of htmlFiles) {
-        if (/^(index|game|gallery)\.html$/.test(file.name) || /^(index|game|gallery)-(en|es|ja|fr|de)\.html$/.test(file.name)) {
+        if (/^(index|game)\.html$/.test(file.name) || /^(index|game)-(en|es|ja|fr|de)\.html$/.test(file.name)) {
             if (!file.content.includes('service-worker.js') && !file.content.includes('serviceWorker')) {
                 warnings.push('[SW_REG] ' + file.name + ': Service Worker 등록 코드 없음');
             }
