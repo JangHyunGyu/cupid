@@ -234,11 +234,12 @@ class UIManager {
             if (file) this.handleImageUpload(file);
         });
 
-        // 미리보기 제거 버튼 클릭 시
-        if (this.removeImageBtn) {
+        // 미리보기 제거 버튼 클릭 시 (dataset.bound로 중복 방지)
+        if (this.removeImageBtn && !this.removeImageBtn.dataset.bound) {
             this.removeImageBtn.addEventListener('click', () => {
                 this.removeStagedImage();
             });
+            this.removeImageBtn.dataset.bound = '1';
         }
     }
 
