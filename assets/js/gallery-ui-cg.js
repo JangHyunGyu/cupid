@@ -104,7 +104,7 @@ class CGRenderer {
                 <div class="cg-card ${unlocked ? '' : 'locked'}" data-cg-id="${cg.id}">
                     <div class="card-image">
                         ${unlocked ?
-                    `<img src="${cg.thumbnail || cg.file}" alt="${cg.name}">` :
+                    `<img src="${(cg.thumbnail || cg.file)}?v=${window.ASSET_VERSION || ''}" alt="${cg.name}">` :
                     `<div class="lock-overlay">🔒</div>`
                 }
                     </div>
@@ -149,7 +149,7 @@ class CGRenderer {
         const modal = this.modalEl || this._createModal();
 
         const cgImage = document.getElementById('cg-modal-image');
-        cgImage.src = cg.file;
+        cgImage.src = `${cg.file}?v=${window.ASSET_VERSION || ''}`;
         cgImage.classList.remove('cg-image-loaded');
 
         document.getElementById('cg-modal-title').textContent = cg.name;
