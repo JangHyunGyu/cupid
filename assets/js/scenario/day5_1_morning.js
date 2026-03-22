@@ -151,8 +151,8 @@ Object.assign(SCENARIO[5], {
         "selectByHighestAffinity": true,
         "branches": [
             {"character": "Seoyeon", "next": "tour_seo_1"},
-            {"character": "Yuna", "next": "tour_yuna_1"},
-            {"character": "Dain", "next": "tour_dain_1"}
+            {"character": "Yuna", "next": "tour_yuna_1_check"},
+            {"character": "Dain", "next": "tour_dain_1_check"}
         ],
         "next": "tour_seo_1"
     }

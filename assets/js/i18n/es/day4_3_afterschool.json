@@ -254,5 +254,13 @@
     "confess_dain_no_4": {
         "name": "Dain",
         "text": "...La próxima vez, no huyas."
+    },
+    "confess_seo_3b": {
+        "name": "{name}",
+        "text": "*La azotea. El atardecer tiñe la escuela. Un lugar que se volvió familiar en pocos días.*"
+    },
+    "confess_dain_3b": {
+        "name": "{name}",
+        "text": "*El gimnasio. Vacío. El atardecer se filtra por las ventanas sobre la cancha. Un lugar donde se acumularon incontables recuerdos en pocos días.*"
     }
 }

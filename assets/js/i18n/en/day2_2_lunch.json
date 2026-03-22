@@ -424,5 +424,9 @@
     "lunch2_dain_4b": {
         "name": "Dain",
         "text": "Obviously!! I'm actually really good!!"
+    },
+    "lunch2_dain_5b": {
+        "name": "{name}",
+        "text": "*Rock-paper-scissors. Dain lost.*"
     }
 }

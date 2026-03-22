@@ -254,5 +254,13 @@
     "confess_dain_no_4": {
         "name": "Dain",
         "text": "...Next time, don't run away."
+    },
+    "confess_seo_3b": {
+        "name": "{name}",
+        "text": "*The rooftop. The sunset paints the school. A place that became familiar in just a few days.*"
+    },
+    "confess_dain_3b": {
+        "name": "{name}",
+        "text": "*The gym. Empty. Sunset seeps through the windows onto the court. A place where countless memories piled up in just a few days.*"
     }
 }

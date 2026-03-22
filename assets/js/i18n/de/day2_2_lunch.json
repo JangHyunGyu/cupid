@@ -424,5 +424,9 @@
     "lunch2_dain_4b": {
         "name": "Dain",
         "text": "Natürlich!! Ich bin eigentlich richtig gut!!"
+    },
+    "lunch2_dain_5b": {
+        "name": "{name}",
+        "text": "*Schere-Stein-Papier. Dain hat verloren.*"
     }
 }

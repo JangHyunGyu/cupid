@@ -188,5 +188,21 @@
         "text": "*Debout dans le gymnase avec Dain. La dernière pause déjeuner.*",
         "context": "Dernier déjeuner du jour 5 avec Dain. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
         "personality": "C'est la dernière fois, Dain ne peut pas maintenir sa façade joyeuse."
+    },
+    "tour_yuna_1_check": {
+        "name": "{name}",
+        "text": "*Direction l'annexe de la bibliothèque.*"
+    },
+    "tour_yuna_1b": {
+        "name": "{name}",
+        "text": "*L'annexe de la bibliothèque. L'espace de lecture secret partagé avec Yuna. Un vieux canapé, la lumière de l'après-midi filtrant par la fenêtre.*"
+    },
+    "tour_dain_1_check": {
+        "name": "{name}",
+        "text": "*Direction le gymnase.*"
+    },
+    "tour_dain_1b": {
+        "name": "{name}",
+        "text": "*Le gymnase. Un lieu où d'innombrables paris et smashs ont été échangés ces derniers jours. — Aujourd'hui, les lumières sont allumées.*"
     }
 }
