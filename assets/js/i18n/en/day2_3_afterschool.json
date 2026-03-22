@@ -80,6 +80,14 @@
         "name": "Me",
         "text": "*Her eyes are half-moon shaped. Same eyes as yesterday. — That's how this person looks when she's genuinely having fun.*\n\n*At the tteokbokki place near school.*\n\n*Dain blows on her tteokbokki and says,*\nHey, you actually know sports, don't you?"
     },
+    "after2_dain_end_2": {
+        "name": "Me",
+        "text": "A little.\n\nA 'little' doesn't play like that! — Just admit it, you're good.\n\n{name} was way better though."
+    },
+    "after2_dain_end_3": {
+        "name": "Me",
+        "text": "*Dain pauses her chopsticks. Just for a moment.*\n\n...Obviously! I was a sports scholarship student, you know!\n\n*'Was.' Past tense. — Something tells me it's better not to ask.*\n\nAhh it's so spicy!! Water, water!!\n\n*The topic changed. — Whether she changed it on purpose or it was actually spicy. Probably both.*"
+    },
     "after2_seo_1": {
         "name": "Me",
         "text": "*The student council room. Seoyeon sits behind a pile of documents. Alone.*"
@@ -110,7 +118,11 @@
     },
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "These go by date, those by club. — Are you any good at organizing?\"\n\n\"{name}: Not great, but not bad either.\"\n\n\"That's vague.\"\n\n\"{name}: Kind of like your compliments. You're vague about those too.\"\n\n*Seoyeon looks up from the documents.*\n\n\"...You're surprisingly useful.\"\n\n\"{name}: Is that a compliment?\"\n\n\"It's a compliment. Take it."
+        "text": "These go by date, those by club. — Are you any good at organizing?\"\n\n\"{name}: Not great, but not bad either.\"\n\n\"That's vague.\"\n\n\"{name}: Kind of like your compliments. You're vague about those too.\""
+    },
+    "after2_seo_8b": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon looks up from the documents.*\n\n\"...You're surprisingly useful.\"\n\n\"{name}: Is that a compliment?\"\n\n\"It's a compliment. Take it."
     },
     "after2_seo_choice1": {
         "name": "Me",
@@ -355,13 +367,5 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "...What?"
-    },
-    "after2_dain_end_2": {
-        "name": "Me",
-        "text": "A little.\n\nA 'little' doesn't play like that! — Just admit it, you're good.\n\n{name} was way better though."
-    },
-    "after2_dain_end_3": {
-        "name": "Me",
-        "text": "*Dain pauses her chopsticks. Just for a moment.*\n\n...Obviously! I was a sports scholarship student, you know!\n\n*'Was.' Past tense. — Something tells me it's better not to ask.*\n\nAhh it's so spicy!! Water, water!!\n\n*The topic changed. — Whether she changed it on purpose or it was actually spicy. Probably both.*"
     }
 }

@@ -165,6 +165,11 @@ Object.assign(SCENARIO[2], {
     "after2_seo_8": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after2_seo_8b"
+    },
+    "after2_seo_8b": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "next": "after2_seo_choice1"
     },
     "after2_seo_choice1": {
