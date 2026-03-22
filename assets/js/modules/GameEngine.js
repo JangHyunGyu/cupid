@@ -883,9 +883,9 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 🖥️ 3단계: UI 초기화 (깨끗한 상태로 시작)
         // ─────────────────────────────────────────────────────────
+        this.uiManager.messageEl.innerHTML = '';
         this.uiManager.dialogueBox.style.display = 'block';
         this.uiManager.dialogueBox.style.pointerEvents = 'auto';
-        if (this.uiManager.dialogueText) this.uiManager.dialogueText.innerHTML = '';
         this.uiManager.choiceContainer.style.display = 'none';      // 선택지 숨김
         this.uiManager.chatContainer.style.display = 'none';        // 채팅 UI 숨김
         this.uiManager.nameInputContainer.style.display = 'none';   // 이름 입력 숨김
