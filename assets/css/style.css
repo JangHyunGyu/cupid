@@ -127,7 +127,7 @@ html {
 
 /* 캐릭터 이미지 설정 */
 .char-slot img {
-    height: 100%;
+    height: 85%;
     width: auto;
     max-width: none;
     object-fit: contain;
@@ -782,8 +782,8 @@ html[lang="de"] #message {
 /* 세로 모드 (Portrait) 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 90%;
-        /* 세로 화면에서 캐릭터가 너무 크지 않게 소폭 축소 */
+        height: 85%;
+        /* 세로 화면에서 캐릭터가 너무 크지 않게 축소 */
         bottom: 0;
     }
 
