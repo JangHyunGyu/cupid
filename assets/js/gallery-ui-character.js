@@ -160,7 +160,7 @@ class CharacterRenderer {
             html += `
                 <div class="character-card ${met ? '' : 'not-met'}" data-char-id="${char.id}">
                     <div class="card-image">
-                        <img src="assets/images/characters/${char.id}_normal.png" 
+                        <img src="assets/images/characters/${char.id}_normal.png?v=${window.ASSET_VERSION || ''}"
                              alt="${met ? char.name : '???'}" 
                              class="${met ? '' : 'silhouette'}">
                     </div>
@@ -260,7 +260,7 @@ class CharacterRenderer {
     _updateImage() {
         const img = document.getElementById('modal-char-image');
         if (img && this.currentCharacter) {
-            img.src = `assets/images/characters/${this.currentCharacter}_${this.currentExpression}.png`;
+            img.src = `assets/images/characters/${this.currentCharacter}_${this.currentExpression}.png?v=${window.ASSET_VERSION || ''}`;
         }
     }
 
