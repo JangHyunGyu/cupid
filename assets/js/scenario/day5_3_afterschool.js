@@ -16,8 +16,8 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "sunset": true,
         "branches": [
-            { "condition": "homeroom_route_unlocked", "next": "after5_hidden_farewell_1" },
-            { "condition": "nurse_route_unlocked", "next": "after5_hidden_farewell_1" },
+            { "condition": "homeroom_day5", "next": "after5_hidden_farewell_1" },
+            { "condition": "nurse_day5", "next": "after5_hidden_farewell_1" },
             { "condition": "route_seoyeon", "next": "after5_farewell_yuna_check" },
             { "next": "after5_farewell_seo_1" }
         ]
