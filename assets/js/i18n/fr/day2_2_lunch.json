@@ -424,5 +424,9 @@
     "lunch2_dain_4b": {
         "name": "Dain",
         "text": "Évidemment !! Je suis douée à la base !!"
+    },
+    "lunch2_dain_5b": {
+        "name": "{name}",
+        "text": "*Pierre-feuille-ciseaux. Dain a perdu.*"
     }
 }

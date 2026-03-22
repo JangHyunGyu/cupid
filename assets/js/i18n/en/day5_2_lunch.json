@@ -188,5 +188,21 @@
         "text": "*Standing in the gym with Dain. The last lunch break.*",
         "context": "Day 5 last lunch, with Dain. The end is approaching. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
         "personality": "Dain is an energetic athlete. Being the last time, she can't maintain her cheerful facade. Real emotions show through."
+    },
+    "tour_yuna_1_check": {
+        "name": "{name}",
+        "text": "*Heading to the library annex.*"
+    },
+    "tour_yuna_1b": {
+        "name": "{name}",
+        "text": "*The library annex. The secret reading space shared with Yuna. An old sofa, afternoon sunlight streaming through the window.*"
+    },
+    "tour_dain_1_check": {
+        "name": "{name}",
+        "text": "*Heading to the gym.*"
+    },
+    "tour_dain_1b": {
+        "name": "{name}",
+        "text": "*The gym. A place where countless bets and spikes were exchanged over the past few days. — The lights are on today.*"
     }
 }

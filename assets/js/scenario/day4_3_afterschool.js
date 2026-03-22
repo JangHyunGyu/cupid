@@ -39,9 +39,18 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "sunset": true,
-        "next": "confess_seo_3"
+        "branches": [
+            { "condition": "chose_seoyeon_lunch", "next": "confess_seo_3" },
+            { "next": "confess_seo_3b" }
+        ]
     },
     "confess_seo_3": {
+        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/top_school.png",
+        "sunset": true,
+        "next": "confess_seo_4"
+    },
+    "confess_seo_3b": {
         "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/top_school.png",
         "sunset": true,
@@ -321,9 +330,18 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "sunset": true,
-        "next": "confess_dain_3"
+        "branches": [
+            { "condition": "chose_dain_lunch", "next": "confess_dain_3" },
+            { "next": "confess_dain_3b" }
+        ]
     },
     "confess_dain_3": {
+        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/gym.png",
+        "sunset": true,
+        "next": "confess_dain_4"
+    },
+    "confess_dain_3b": {
         "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/gym.png",
         "sunset": true,

@@ -424,5 +424,9 @@
     "lunch2_dain_4b": {
         "name": "Dain",
         "text": "¡¡Claro!! ¡¡Yo siempre soy buena!!"
+    },
+    "lunch2_dain_5b": {
+        "name": "{name}",
+        "text": "*Piedra-papel-tijera. Dain perdió.*"
     }
 }

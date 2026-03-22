@@ -188,5 +188,21 @@
         "text": "*De pie en el gimnasio con Dain. El último almuerzo.*",
         "context": "Último almuerzo del día 5 con Dain. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
         "personality": "Siendo la última vez, Dain no puede mantener su fachada alegre."
+    },
+    "tour_yuna_1_check": {
+        "name": "{name}",
+        "text": "*Caminando hacia el anexo de la biblioteca.*"
+    },
+    "tour_yuna_1b": {
+        "name": "{name}",
+        "text": "*El anexo de la biblioteca. El espacio secreto de lectura con Yuna. Un viejo sofá, la luz de la tarde entrando por la ventana.*"
+    },
+    "tour_dain_1_check": {
+        "name": "{name}",
+        "text": "*Caminando hacia el gimnasio.*"
+    },
+    "tour_dain_1b": {
+        "name": "{name}",
+        "text": "*El gimnasio. Un lugar donde se intercambiaron incontables apuestas y remates en estos días. — Hoy las luces están encendidas.*"
     }
 }

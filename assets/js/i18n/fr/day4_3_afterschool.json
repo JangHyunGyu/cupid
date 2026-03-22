@@ -254,5 +254,13 @@
     "confess_dain_no_4": {
         "name": "Dain",
         "text": "...La prochaine fois, ne fuis pas."
+    },
+    "confess_seo_3b": {
+        "name": "{name}",
+        "text": "*Le toit. Le coucher de soleil colore l'école. Un endroit devenu familier en quelques jours.*"
+    },
+    "confess_dain_3b": {
+        "name": "{name}",
+        "text": "*Le gymnase. Vide. Le coucher de soleil filtre par les fenêtres sur le terrain. Un lieu où d'innombrables souvenirs se sont accumulés en quelques jours.*"
     }
 }

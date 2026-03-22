@@ -93,10 +93,23 @@ Object.assign(SCENARIO[5], {
     },
 
     // ── 유나 루트 ──
+    "tour_yuna_1_check": {
+        "character": null,
+        "background": "assets/images/background/library_old.png",
+        "bgm": "sunset1.mp3",
+        "branches": [
+            { "condition": "chose_yuna_lunch", "next": "tour_yuna_1" },
+            { "next": "tour_yuna_1b" }
+        ]
+    },
     "tour_yuna_1": {
         "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
-        "bgm": "sunset1.mp3",
+        "next": "tour_yuna_2"
+    },
+    "tour_yuna_1b": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/library_old.png",
         "next": "tour_yuna_2"
     },
     "tour_yuna_2": {
@@ -166,10 +179,23 @@ Object.assign(SCENARIO[5], {
     },
 
     // ── 다인 루트 ──
-    "tour_dain_1": {
+    "tour_dain_1_check": {
         "character": null,
         "background": "assets/images/background/gym.png",
         "bgm": "sunset1.mp3",
+        "branches": [
+            { "condition": "chose_dain_lunch", "next": "tour_dain_1" },
+            { "next": "tour_dain_1b" }
+        ]
+    },
+    "tour_dain_1": {
+        "character": null,
+        "background": "assets/images/background/gym.png",
+        "next": "tour_dain_2"
+    },
+    "tour_dain_1b": {
+        "character": null,
+        "background": "assets/images/background/gym.png",
         "next": "tour_dain_2"
     },
     "tour_dain_2": {

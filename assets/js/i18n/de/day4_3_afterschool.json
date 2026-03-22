@@ -254,5 +254,13 @@
     "confess_dain_no_4": {
         "name": "Dain",
         "text": "...Nächstes Mal lauf nicht weg."
+    },
+    "confess_seo_3b": {
+        "name": "{name}",
+        "text": "*Das Dach. Der Sonnenuntergang taucht die Schule in warmes Licht. Ein Ort, der in wenigen Tagen vertraut wurde.*"
+    },
+    "confess_dain_3b": {
+        "name": "{name}",
+        "text": "*Die Turnhalle. Leer. Der Sonnenuntergang fällt durch die Fenster auf das Spielfeld. Ein Ort, an dem sich in wenigen Tagen unzählige Erinnerungen angesammelt haben.*"
     }
 }
