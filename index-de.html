@@ -713,12 +713,13 @@
         }
 
         /* 5명 배치: 왼쪽(담임-서연-유나) / 오른쪽(다인-보건실) — 가운데 버튼 영역 비움 */
-        /* 키 설정: 담임(168cm) 서연(163cm) 유나(170cm) 다인(158cm) 보건실(165cm) */
-        .title-heroine.pos-1 { left: 1%; height: 78%; }
-        .title-heroine.pos-2 { left: 14%; height: 74%; }
-        .title-heroine.pos-3 { left: 27%; height: 80%; transform: none; }
-        .title-heroine.pos-4 { right: 14%; height: 70%; }
-        .title-heroine.pos-5 { right: 1%; height: 76%; }
+        /* 키 설정: 담임(성인) 서연(6.5등신) 유나(센터) 다인(6등신) 보건실(성인) */
+        /* 다인 - 담임 - 서연(센터) - 보건실 - 유나 */
+        .title-heroine.pos-1 { left: 1%; height: 66%; }
+        .title-heroine.pos-2 { left: 14%; height: 75%; opacity: 0.72; }
+        .title-heroine.pos-3 { left: 27%; height: 72%; transform: none; opacity: 0.85; }
+        .title-heroine.pos-4 { right: 14%; height: 73%; opacity: 0.65; }
+        .title-heroine.pos-5 { right: 1%; height: 70%; opacity: 0.65; }
 
         /* PC wide */
         @media (min-width: 1400px) {
@@ -744,20 +745,26 @@
         @media (max-width: 768px) and (orientation: portrait) {
             .title-heroines { height: 55%; }
             .title-heroine { max-height: 350px; }
-            .title-heroine.pos-1,
-            .title-heroine.pos-5 { display: none; }
-            .title-heroine.pos-2 { left: 2%; height: 68%; }
-            .title-heroine.pos-3 { height: 68%; }
-            .title-heroine.pos-4 { right: 2%; height: 68%; }
+            /* 뒷줄: 담임(pos-2, 왼쪽 뒤), 보건실(pos-4, 오른쪽 뒤) */
+            .title-heroine.pos-2 { left: -3%; height: 71%; opacity: 0.7; z-index: 0; }
+            .title-heroine.pos-4 { right: -3%; height: 69%; opacity: 0.7; z-index: 0; }
+            /* 앞줄: 다인(pos-1) - 서연(pos-3, 센터) - 유나(pos-5) */
+            .title-heroine.pos-1 { left: 5%; height: 62%; opacity: 0.7; z-index: 1; }
+            .title-heroine.pos-3 { height: 68%; opacity: 0.7; z-index: 1; }
+            .title-heroine.pos-5 { right: 5%; height: 66%; opacity: 0.7; z-index: 1; }
         }
 
         /* Small mobile portrait */
         @media (max-width: 480px) and (orientation: portrait) {
             .title-heroines { height: 50%; }
             .title-heroine { max-height: 280px; }
-            .title-heroine.pos-2 { left: -2%; height: 63%; }
-            .title-heroine.pos-3 { height: 63%; }
-            .title-heroine.pos-4 { right: -2%; height: 63%; }
+            /* 뒷줄: 담임(pos-2), 보건실(pos-4) */
+            .title-heroine.pos-2 { left: -5%; height: 66%; opacity: 0.7; }
+            .title-heroine.pos-4 { right: -5%; height: 64%; opacity: 0.7; }
+            /* 앞줄: 다인(pos-1) - 서연(pos-3) - 유나(pos-5) */
+            .title-heroine.pos-1 { left: 2%; height: 58%; opacity: 0.7; }
+            .title-heroine.pos-3 { height: 63%; opacity: 0.7; }
+            .title-heroine.pos-5 { right: 2%; height: 61%; opacity: 0.7; }
         }
 
         /* Mobile landscape */
