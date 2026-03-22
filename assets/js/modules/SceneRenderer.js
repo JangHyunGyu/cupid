@@ -32,6 +32,48 @@
  *   - 시간 필터 적용 (night, sunset)
  *   - 분기 조건 처리 (호감도, 플래그 기반)
  */
+// WebP 지원 감지 (1회만 실행)
+const _webpSupport = (() => {
+    const canvas = document.createElement('canvas');
+    canvas.width = 1;
+    canvas.height = 1;
+    return canvas.toDataURL('image/webp').startsWith('data:image/webp');
+})();
+
+/**
+ * 이미지 URL을 WebP로 변환 (지원 시). PNG/JPG → WebP 폴백 로딩.
+ * @param {string} url - 원본 이미지 URL
+ * @returns {string} WebP URL (지원 시) 또는 원본 URL
+ */
+function toWebpUrl(url) {
+    if (!_webpSupport || !url) return url;
+    return url.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+}
+
+/**
+ * WebP 우선 로딩 + PNG 폴백
+ * @param {HTMLImageElement} img - 이미지 엘리먼트
+ * @param {string} url - 원본 이미지 URL (.png)
+ * @param {Function} onload - 로드 성공 콜백
+ * @param {Function} onerror - 로드 실패 콜백
+ */
+function loadImageWithFallback(img, url, onload, onerror) {
+    const webpUrl = toWebpUrl(url);
+    if (webpUrl !== url) {
+        img.onerror = () => {
+            img.onerror = onerror || null;
+            img.onload = onload || null;
+            img.src = url;
+        };
+        img.onload = onload || null;
+        img.src = webpUrl;
+    } else {
+        img.onload = onload || null;
+        img.onerror = onerror || null;
+        img.src = url;
+    }
+}
+
 class SceneRenderer {
     /**
      * @param {StateManager} stateManager - 게임 상태 관리자
@@ -233,25 +275,26 @@ class SceneRenderer {
         const bgLayer = this.uiManager.bgLayer;
         const currentBg = bgLayer.style.backgroundImage;
 
-        // 이미지 프리로드
+        // 이미지 프리로드 (WebP 우선 + PNG 폴백)
         await new Promise((resolve) => {
             const img = new Image();
-            img.onload = () => resolve();
-            img.onerror = () => resolve();
-            img.src = bgUrl;
+            loadImageWithFallback(img, bgUrl, () => resolve(), () => resolve());
         });
 
         if (this.lastBgUrl !== bgUrl) return;
 
+        // WebP 우선 URL
+        const displayBgUrl = toWebpUrl(bgUrl);
+
         // 첫 배경이거나 같은 배경이면 즉시 적용
-        if (!currentBg || currentBg === 'none' || currentBg === `url("${bgUrl}")` || currentBg === `url(${bgUrl})`) {
-            bgLayer.style.backgroundImage = `url(${bgUrl})`;
+        if (!currentBg || currentBg === 'none' || currentBg === `url("${displayBgUrl}")` || currentBg === `url(${displayBgUrl})` || currentBg === `url("${bgUrl}")` || currentBg === `url(${bgUrl})`) {
+            bgLayer.style.backgroundImage = `url(${displayBgUrl})`;
             return;
         }
 
         // 크로스페이드: ::after에 새 배경을 설정하고 페이드인
         // CSS 변수는 style.css 기준으로 URL이 해석되므로 절대 URL로 변환
-        const absoluteBgUrl = new URL(bgUrl, document.baseURI).href;
+        const absoluteBgUrl = new URL(displayBgUrl, document.baseURI).href;
         bgLayer.style.setProperty('--bg-next', `url(${absoluteBgUrl})`);
         bgLayer.classList.remove('bg-crossfade');
         // ::after에 background-image 설정
@@ -262,7 +305,7 @@ class SceneRenderer {
         // 페이드 완료 후 메인 배경으로 교체
         await new Promise(r => setTimeout(r, 420));
         if (this.lastBgUrl === bgUrl) {
-            bgLayer.style.backgroundImage = `url(${bgUrl})`;
+            bgLayer.style.backgroundImage = `url(${displayBgUrl})`;
             bgLayer.classList.remove('bg-crossfade');
         }
     }
@@ -376,14 +419,12 @@ class SceneRenderer {
             .map(([pos, charUrl]) => {
                 return new Promise((resolve) => {
                     const img = document.createElement('img');
-                    img.onload = () => {
+                    loadImageWithFallback(img, charUrl, () => {
                         img.dataset.rawSrc = charUrl;
                         const options = charOptions[pos] || { opacity: 1 };
                         if (options.opacity !== 1) img.style.opacity = options.opacity;
                         resolve({ pos, img, sceneId });
-                    };
-                    img.onerror = () => resolve(null);
-                    img.src = charUrl;
+                    }, () => resolve(null));
                     if (scene.silhouette) img.classList.add('silhouette');
                     if (scene.thinking) img.classList.add('thinking');
                     img.classList.add('char-breathing');
