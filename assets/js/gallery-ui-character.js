@@ -102,7 +102,7 @@ class CharacterRenderer {
             const charId = ftBtn.dataset.charId;
             if (ftBtn.classList.contains('locked')) {
                 const charName = ftBtn.dataset.charName;
-                this._showFreeTalkLockPopup(charName);
+                this._showFreeTalkLockPopup(charId, charName);
             } else if (charId && window.galleryFreeTalk) {
                 this.closeModal();
                 window.galleryFreeTalk.open(charId);
