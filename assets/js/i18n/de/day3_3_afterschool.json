@@ -289,34 +289,6 @@
         "name": "Ich",
         "text": "*Augen, die glauben wollen. — Ich wusste nicht, dass eine Lüge so schwer wiegen kann.*"
     },
-    "after3_confront_yuna_enter": {
-        "name": "Ich",
-        "text": "*Nachdem Seoyeon ging — steht Yuna am Ende des Flurs. Ich weiß nicht, wie lange sie schon da war.*"
-    },
-    "after3_confront_yuna_1": {
-        "name": "Yuna",
-        "text": "Ich habe alles gehört."
-    },
-    "after3_confront_yuna_2": {
-        "name": "{name}",
-        "text": "Yuna..."
-    },
-    "after3_confront_yuna_3": {
-        "name": "Yuna",
-        "text": "Ich will keine Entschuldigung."
-    },
-    "after3_confront_yuna_4": {
-        "name": "Yuna",
-        "text": "Ich will nur, dass du das Gewicht verstehst, an wessen Seite du stehen wirst."
-    },
-    "after3_confront_yuna_5": {
-        "name": "Yuna",
-        "text": "...Lauf nicht weg. Das ist alles."
-    },
-    "after3_confront_yuna_6": {
-        "name": "Ich",
-        "text": "*Yuna sprach in langen Sätzen. Mehrere Sätze. — Das bedeutet, dass sie so wütend ist.*"
-    },
     "after3_confront_end": {
         "name": "Ich",
         "text": "*Ich stehe allein im Flur, in dem Seoyeon verschwunden ist. — Ihre Haltung war gerade. Perfekt gerade. Aber ihre Fäuste waren geballt.*"

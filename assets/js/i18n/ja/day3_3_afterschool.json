@@ -289,34 +289,6 @@
         "name": "僕",
         "text": "*信じたい目。— 嘘がこんなに重いとは知らなかった。*"
     },
-    "after3_confront_yuna_enter": {
-        "name": "僕",
-        "text": "*ソヨンが去った後— ユナが廊下の端に立っている。いつからいたのか分からない。*"
-    },
-    "after3_confront_yuna_1": {
-        "name": "ユナ",
-        "text": "全部聞こえた。"
-    },
-    "after3_confront_yuna_2": {
-        "name": "{name}",
-        "text": "ユナ..."
-    },
-    "after3_confront_yuna_3": {
-        "name": "ユナ",
-        "text": "謝罪はいらない。"
-    },
-    "after3_confront_yuna_4": {
-        "name": "ユナ",
-        "text": "誰の隣に立つのか、その重さを分かってほしい。"
-    },
-    "after3_confront_yuna_5": {
-        "name": "ユナ",
-        "text": "……逃げないで。それだけ。"
-    },
-    "after3_confront_yuna_6": {
-        "name": "僕",
-        "text": "*ユナが長い文を話した。複数の文を。— それはそれだけ怒っているということだ。*"
-    },
     "after3_confront_end": {
         "name": "僕",
         "text": "*ソヨンが消えた廊下に一人で立っている。— 背筋はまっすぐだった。完璧に。でも拳は握りしめられていた。*"

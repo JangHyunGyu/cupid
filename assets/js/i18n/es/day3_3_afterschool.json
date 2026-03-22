@@ -289,34 +289,6 @@
         "name": "Yo",
         "text": "*Ojos que quieren creer. — No sabía que una mentira pudiera pesar tanto.*"
     },
-    "after3_confront_yuna_enter": {
-        "name": "Yo",
-        "text": "*Después de que Seoyeon se va — Yuna está de pie al final del pasillo. No sé cuánto tiempo lleva ahí.*"
-    },
-    "after3_confront_yuna_1": {
-        "name": "Yuna",
-        "text": "Lo escuché todo."
-    },
-    "after3_confront_yuna_2": {
-        "name": "{name}",
-        "text": "Yuna..."
-    },
-    "after3_confront_yuna_3": {
-        "name": "Yuna",
-        "text": "No quiero una disculpa."
-    },
-    "after3_confront_yuna_4": {
-        "name": "Yuna",
-        "text": "Solo quiero que entiendas el peso de elegir al lado de quién estarás."
-    },
-    "after3_confront_yuna_5": {
-        "name": "Yuna",
-        "text": "...No huyas. Solo eso."
-    },
-    "after3_confront_yuna_6": {
-        "name": "Yo",
-        "text": "*Yuna habló en frases largas. Varias frases. — Eso significa que está así de enfadada.*"
-    },
     "after3_confront_end": {
         "name": "Yo",
         "text": "*Me quedo solo en el pasillo por donde Seoyeon desapareció. — Su postura era recta. Perfectamente recta. Pero tenía los puños cerrados.*"

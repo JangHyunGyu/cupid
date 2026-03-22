@@ -289,34 +289,6 @@
         "name": "Me",
         "text": "*Eyes that want to believe. — I didn’t know a lie could weigh this much.*"
     },
-    "after3_confront_yuna_enter": {
-        "name": "Me",
-        "text": "*After Seoyeon leaves — Yuna is standing at the end of the hallway. I don’t know how long she’s been there.*"
-    },
-    "after3_confront_yuna_1": {
-        "name": "Yuna",
-        "text": "I heard everything."
-    },
-    "after3_confront_yuna_2": {
-        "name": "{name}",
-        "text": "Yuna..."
-    },
-    "after3_confront_yuna_3": {
-        "name": "Yuna",
-        "text": "I don’t want an apology."
-    },
-    "after3_confront_yuna_4": {
-        "name": "Yuna",
-        "text": "I just want you to understand the weight of choosing whose side you’ll stand on."
-    },
-    "after3_confront_yuna_5": {
-        "name": "Yuna",
-        "text": "...Don’t run. That’s all."
-    },
-    "after3_confront_yuna_6": {
-        "name": "Me",
-        "text": "*Yuna spoke in long sentences. Multiple sentences. — That means she’s that angry.*"
-    },
     "after3_confront_end": {
         "name": "Me",
         "text": "*I’m standing alone in the hallway where Seoyeon disappeared. — Her posture was straight. Perfectly straight. But her fists were clenched.*"

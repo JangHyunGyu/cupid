@@ -289,34 +289,6 @@
         "name": "{name}",
         "text": "*믿고 싶어하는 눈. — 거짓말이 이렇게 무거울 줄 몰랐다.*"
     },
-    "after3_confront_yuna_enter": {
-        "name": "{name}",
-        "text": "*서연이 간 뒤 — 유나가 복도 끝에 서 있다. 언제부터 있었는지 모르겠다.*"
-    },
-    "after3_confront_yuna_1": {
-        "name": "유나",
-        "text": "다 들었어."
-    },
-    "after3_confront_yuna_2": {
-        "name": "{name}",
-        "text": "유나..."
-    },
-    "after3_confront_yuna_3": {
-        "name": "유나",
-        "text": "사과를 원하는 게 아니야."
-    },
-    "after3_confront_yuna_4": {
-        "name": "유나",
-        "text": "네가 누구 옆에 설 건지, 그 무게를 알았으면 해."
-    },
-    "after3_confront_yuna_5": {
-        "name": "유나",
-        "text": "...도망치지 마. 그것만."
-    },
-    "after3_confront_yuna_6": {
-        "name": "{name}",
-        "text": "*유나가 긴 문장을 말했다. 여러 문장을. — 그건 그만큼 화가 났다는 뜻이다.*"
-    },
     "after3_confront_end": {
         "name": "{name}",
         "text": "*서연이 사라진 복도에 혼자 서 있다. — 등이 곧았다. 완벽하게. 근데 주먹이 쥐어져 있었다.*"
