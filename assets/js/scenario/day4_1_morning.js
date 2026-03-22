@@ -21,12 +21,12 @@ Object.assign(SCENARIO[4], {
     },
     "minsu_cheer_2": {
         "background": "assets/images/background/student_room.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_cheer_3"
     },
     "minsu_cheer_3": {
         "background": "assets/images/background/student_room.png",
-        "character": null,
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_cheer_4"
     },
     "minsu_cheer_4": {

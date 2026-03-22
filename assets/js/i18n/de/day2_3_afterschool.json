@@ -78,7 +78,7 @@
     },
     "after2_dain_end": {
         "name": "Ich",
-        "text": "*Ihre Augen haben Halbmondform. Dieselben Augen wie gestern. -- So sieht diese Person aus, wenn sie ehrlich Spass hat.*\n\n*Am Tteokbokki-Laden bei der Schule.*\n\n*Dain pustet auf ihr Tteokbokki und sagt:*\nHey, du kannst wirklich Sport, oder?\n\nEin bisschen.\n\nEin 'bisschen' spielt nicht so! -- Gib's zu, du bist gut.\n\n{name} war viel besser.\n\n*Dain haelt die Staebchen an. Nur einen Moment.*\n\n...Natuerlich! Ich war Sportstipendiatin!\n\n*'War'. Vergangenheit. -- Irgendwas sagt mir, dass ich besser nicht frage.*\n\nAhh das ist so scharf!! Wasser, Wasser!!\n\n*Das Thema hat gewechselt. -- Ob sie es absichtlich gewechselt hat oder es wirklich scharf war. Wahrscheinlich beides.*"
+        "text": "*Ihre Augen haben Halbmondform. Dieselben Augen wie gestern. -- So sieht diese Person aus, wenn sie ehrlich Spass hat.*\n\n*Am Tteokbokki-Laden bei der Schule.*\n\n*Dain pustet auf ihr Tteokbokki und sagt:*\nHey, du kannst wirklich Sport, oder?"
     },
     "after2_seo_1": {
         "name": "Ich",
@@ -280,7 +280,6 @@
         "context": "Tag 2. Ellbogen beim Sport aufgeschürft. Ton: Näher als gestern. Neckereien fühlen sich natürlich und bequem an. Hin-und-her-Flirten. Noch keine schweren Themen.",
         "personality": "Die Schulkrankenschwester ist verspielt aber gründlich. Braucht lange für Pflaster."
     },
-
     "minsu_warn_1": {
         "name": "Ich",
         "text": "*Auf dem Heimweg. Am Schultor — Minsu folgt mir von hinten.*"
@@ -356,5 +355,13 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "...Was?"
+    },
+    "after2_dain_end_2": {
+        "name": "Ich",
+        "text": "Ein bisschen.\n\nEin 'bisschen' spielt nicht so! -- Gib's zu, du bist gut.\n\n{name} war viel besser."
+    },
+    "after2_dain_end_3": {
+        "name": "Ich",
+        "text": "*Dain haelt die Staebchen an. Nur einen Moment.*\n\n...Natuerlich! Ich war Sportstipendiatin!\n\n*'War'. Vergangenheit. -- Irgendwas sagt mir, dass ich besser nicht frage.*\n\nAhh das ist so scharf!! Wasser, Wasser!!\n\n*Das Thema hat gewechselt. -- Ob sie es absichtlich gewechselt hat oder es wirklich scharf war. Wahrscheinlich beides.*"
     }
 }

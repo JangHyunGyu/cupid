@@ -78,7 +78,7 @@
     },
     "after2_dain_end": {
         "name": "Moi",
-        "text": "*Ses yeux sont en forme de croissant. Les memes yeux qu'hier. -- C'est comme ca que cette personne est quand elle s'amuse vraiment.*\n\n*Au resto de tteokbokki pres de l'ecole.*\n\n*Dain souffle sur son tteokbokki et dit :*\nHe, tu connais vraiment le sport, hein ?\n\nUn peu.\n\nUn 'peu' ca joue pas comme ca ! -- Avoue, t'es bon.\n\n{name} etait bien meilleure quand meme.\n\n*Dain arrete ses baguettes. Juste un instant.*\n\n...Evidemment ! J'etais sportive de haut niveau !\n\n*'J'etais'. Passe. -- Quelque chose me dit qu'il vaut mieux ne pas demander.*\n\nAhh c'est trop epice !! De l'eau, de l'eau !!\n\n*Le sujet a change. -- Si elle l'a change expres ou si c'etait vraiment epice. Probablement les deux.*"
+        "text": "*Ses yeux sont en forme de croissant. Les memes yeux qu'hier. -- C'est comme ca que cette personne est quand elle s'amuse vraiment.*\n\n*Au resto de tteokbokki pres de l'ecole.*\n\n*Dain souffle sur son tteokbokki et dit :*\nHe, tu connais vraiment le sport, hein ?"
     },
     "after2_seo_1": {
         "name": "Moi",
@@ -280,7 +280,6 @@
         "context": "Jour 2. Coude écorché en sport. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
         "personality": "L'infirmière est joueuse mais méticuleuse. Prend son temps pour les pansements."
     },
-
     "minsu_warn_1": {
         "name": "Moi",
         "text": "*Sur le chemin du retour. En passant le portail — Minsu me suit par derrière.*"
@@ -356,5 +355,13 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "...Quoi ?"
+    },
+    "after2_dain_end_2": {
+        "name": "Moi",
+        "text": "Un peu.\n\nUn 'peu' ca joue pas comme ca ! -- Avoue, t'es bon.\n\n{name} etait bien meilleure quand meme."
+    },
+    "after2_dain_end_3": {
+        "name": "Moi",
+        "text": "*Dain arrete ses baguettes. Juste un instant.*\n\n...Evidemment ! J'etais sportive de haut niveau !\n\n*'J'etais'. Passe. -- Quelque chose me dit qu'il vaut mieux ne pas demander.*\n\nAhh c'est trop epice !! De l'eau, de l'eau !!\n\n*Le sujet a change. -- Si elle l'a change expres ou si c'etait vraiment epice. Probablement les deux.*"
     }
 }

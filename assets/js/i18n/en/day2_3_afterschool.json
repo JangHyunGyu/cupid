@@ -78,7 +78,7 @@
     },
     "after2_dain_end": {
         "name": "Me",
-        "text": "*Her eyes are half-moon shaped. Same eyes as yesterday. — That's how this person looks when she's genuinely having fun.*\n\n*At the tteokbokki place near school.*\n\n*Dain blows on her tteokbokki and says,*\nHey, you actually know sports, don't you?\n\nA little.\n\nA 'little' doesn't play like that! — Just admit it, you're good.\n\n{name} was way better though.\n\n*Dain pauses her chopsticks. Just for a moment.*\n\n...Obviously! I was a sports scholarship student, you know!\n\n*'Was.' Past tense. — Something tells me it's better not to ask.*\n\nAhh it's so spicy!! Water, water!!\n\n*The topic changed. — Whether she changed it on purpose or it was actually spicy. Probably both.*"
+        "text": "*Her eyes are half-moon shaped. Same eyes as yesterday. — That's how this person looks when she's genuinely having fun.*\n\n*At the tteokbokki place near school.*\n\n*Dain blows on her tteokbokki and says,*\nHey, you actually know sports, don't you?"
     },
     "after2_seo_1": {
         "name": "Me",
@@ -280,7 +280,6 @@
         "context": "Day 2. Scraped elbow during PE, came to the nurse's office. The nurse carefully applied a bandage. Tone: Feeling closer than yesterday. Banter feels natural and comfortable. Push-pull flirting. No heavy topics yet.",
         "personality": "The school nurse is playful but meticulous. Takes a long time applying bandages. Hiding something personal."
     },
-
     "minsu_warn_1": {
         "name": "Me",
         "text": "*Walking home. Just past the school gate when — Minsu falls in step behind me.*"
@@ -356,5 +355,13 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "...What?"
+    },
+    "after2_dain_end_2": {
+        "name": "Me",
+        "text": "A little.\n\nA 'little' doesn't play like that! — Just admit it, you're good.\n\n{name} was way better though."
+    },
+    "after2_dain_end_3": {
+        "name": "Me",
+        "text": "*Dain pauses her chopsticks. Just for a moment.*\n\n...Obviously! I was a sports scholarship student, you know!\n\n*'Was.' Past tense. — Something tells me it's better not to ask.*\n\nAhh it's so spicy!! Water, water!!\n\n*The topic changed. — Whether she changed it on purpose or it was actually spicy. Probably both.*"
     }
 }

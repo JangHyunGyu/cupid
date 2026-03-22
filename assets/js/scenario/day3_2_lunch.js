@@ -258,7 +258,7 @@ Object.assign(SCENARIO[3], {
         "next": "lunch3_expose_14"
     },
     "lunch3_expose_14": {
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "background": "assets/images/background/room_school.png",
         "next": "lunch3_expose_15"
     },
