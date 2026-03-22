@@ -80,6 +80,14 @@
         "name": "Yo",
         "text": "*Sus ojos tienen forma de media luna. Los mismos ojos de ayer. -- Asi se ve esta persona cuando se divierte de verdad.*\n\n*En la tienda de tteokbokki cerca de la escuela.*\n\n*Dain sopla su tteokbokki y dice:*\nOye, de verdad sabes de deportes, no?"
     },
+    "after2_dain_end_2": {
+        "name": "Yo",
+        "text": "Un poco.\n\nUn 'poco' no juega asi! -- Admitelo, eres bueno.\n\n{name} era mucho mejor."
+    },
+    "after2_dain_end_3": {
+        "name": "Yo",
+        "text": "*Dain detiene los palillos. Solo un instante.*\n\n...Obvio! Yo era becada deportiva!\n\n*'Era'. Pasado. -- Algo me dice que es mejor no preguntar.*\n\nAhh esta muy picante!! Agua, agua!!\n\n*El tema cambio. -- Si lo cambio a proposito o de verdad estaba picante. Probablemente ambas.*"
+    },
     "after2_seo_1": {
         "name": "Yo",
         "text": "*La sala del consejo estudiantil. Seoyeon esta sentada detras de una pila de documentos. Sola.*"
@@ -110,7 +118,11 @@
     },
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "Estos van por fecha, esos por club. -- Se te da bien organizar?\"\n\n\"{name}: No genial, pero tampoco mal.\"\n\n\"Vago.\"\n\n\"{name}: Como tus cumplidos. Tambien son vagos.\"\n\n*Seoyeon levanta la vista de los documentos.*\n\n\"...Eres sorprendentemente util.\"\n\n\"{name}: Eso es un cumplido?\"\n\n\"Es un cumplido. Aceptalo."
+        "text": "Estos van por fecha, esos por club. -- Se te da bien organizar?\"\n\n\"{name}: No genial, pero tampoco mal.\"\n\n\"Vago.\"\n\n\"{name}: Como tus cumplidos. Tambien son vagos.\""
+    },
+    "after2_seo_8b": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon levanta la vista de los documentos.*\n\n\"...Eres sorprendentemente util.\"\n\n\"{name}: Eso es un cumplido?\"\n\n\"Es un cumplido. Aceptalo."
     },
     "after2_seo_choice1": {
         "name": "Yo",
@@ -355,13 +367,5 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "...¿Qué?"
-    },
-    "after2_dain_end_2": {
-        "name": "Yo",
-        "text": "Un poco.\n\nUn 'poco' no juega asi! -- Admitelo, eres bueno.\n\n{name} era mucho mejor."
-    },
-    "after2_dain_end_3": {
-        "name": "Yo",
-        "text": "*Dain detiene los palillos. Solo un instante.*\n\n...Obvio! Yo era becada deportiva!\n\n*'Era'. Pasado. -- Algo me dice que es mejor no preguntar.*\n\nAhh esta muy picante!! Agua, agua!!\n\n*El tema cambio. -- Si lo cambio a proposito o de verdad estaba picante. Probablemente ambas.*"
     }
 }

@@ -80,6 +80,14 @@
         "name": "Moi",
         "text": "*Ses yeux sont en forme de croissant. Les memes yeux qu'hier. -- C'est comme ca que cette personne est quand elle s'amuse vraiment.*\n\n*Au resto de tteokbokki pres de l'ecole.*\n\n*Dain souffle sur son tteokbokki et dit :*\nHe, tu connais vraiment le sport, hein ?"
     },
+    "after2_dain_end_2": {
+        "name": "Moi",
+        "text": "Un peu.\n\nUn 'peu' ca joue pas comme ca ! -- Avoue, t'es bon.\n\n{name} etait bien meilleure quand meme."
+    },
+    "after2_dain_end_3": {
+        "name": "Moi",
+        "text": "*Dain arrete ses baguettes. Juste un instant.*\n\n...Evidemment ! J'etais sportive de haut niveau !\n\n*'J'etais'. Passe. -- Quelque chose me dit qu'il vaut mieux ne pas demander.*\n\nAhh c'est trop epice !! De l'eau, de l'eau !!\n\n*Le sujet a change. -- Si elle l'a change expres ou si c'etait vraiment epice. Probablement les deux.*"
+    },
     "after2_seo_1": {
         "name": "Moi",
         "text": "*La salle du conseil des eleves. Seoyeon est assise derriere une pile de documents. Seule.*"
@@ -110,7 +118,11 @@
     },
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "Ceux-ci par date, ceux-la par club. -- T'es doue pour ranger ?\"\n\n\"{name} : Pas genial, mais pas nul non plus.\"\n\n\"Vague.\"\n\n\"{name} : Comme tes compliments. T'es vague la-dessus aussi.\"\n\n*Seoyeon leve les yeux des documents.*\n\n\"...T'es etonnamment utile.\"\n\n\"{name} : C'est un compliment ?\"\n\n\"C'est un compliment. Prends-le."
+        "text": "Ceux-ci par date, ceux-la par club. -- T'es doue pour ranger ?\"\n\n\"{name} : Pas genial, mais pas nul non plus.\"\n\n\"Vague.\"\n\n\"{name} : Comme tes compliments. T'es vague la-dessus aussi.\""
+    },
+    "after2_seo_8b": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon leve les yeux des documents.*\n\n\"...T'es etonnamment utile.\"\n\n\"{name} : C'est un compliment ?\"\n\n\"C'est un compliment. Prends-le."
     },
     "after2_seo_choice1": {
         "name": "Moi",
@@ -355,13 +367,5 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "...Quoi ?"
-    },
-    "after2_dain_end_2": {
-        "name": "Moi",
-        "text": "Un peu.\n\nUn 'peu' ca joue pas comme ca ! -- Avoue, t'es bon.\n\n{name} etait bien meilleure quand meme."
-    },
-    "after2_dain_end_3": {
-        "name": "Moi",
-        "text": "*Dain arrete ses baguettes. Juste un instant.*\n\n...Evidemment ! J'etais sportive de haut niveau !\n\n*'J'etais'. Passe. -- Quelque chose me dit qu'il vaut mieux ne pas demander.*\n\nAhh c'est trop epice !! De l'eau, de l'eau !!\n\n*Le sujet a change. -- Si elle l'a change expres ou si c'etait vraiment epice. Probablement les deux.*"
     }
 }

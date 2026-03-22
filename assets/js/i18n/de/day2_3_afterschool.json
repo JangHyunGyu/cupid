@@ -80,6 +80,14 @@
         "name": "Ich",
         "text": "*Ihre Augen haben Halbmondform. Dieselben Augen wie gestern. -- So sieht diese Person aus, wenn sie ehrlich Spass hat.*\n\n*Am Tteokbokki-Laden bei der Schule.*\n\n*Dain pustet auf ihr Tteokbokki und sagt:*\nHey, du kannst wirklich Sport, oder?"
     },
+    "after2_dain_end_2": {
+        "name": "Ich",
+        "text": "Ein bisschen.\n\nEin 'bisschen' spielt nicht so! -- Gib's zu, du bist gut.\n\n{name} war viel besser."
+    },
+    "after2_dain_end_3": {
+        "name": "Ich",
+        "text": "*Dain haelt die Staebchen an. Nur einen Moment.*\n\n...Natuerlich! Ich war Sportstipendiatin!\n\n*'War'. Vergangenheit. -- Irgendwas sagt mir, dass ich besser nicht frage.*\n\nAhh das ist so scharf!! Wasser, Wasser!!\n\n*Das Thema hat gewechselt. -- Ob sie es absichtlich gewechselt hat oder es wirklich scharf war. Wahrscheinlich beides.*"
+    },
     "after2_seo_1": {
         "name": "Ich",
         "text": "*Die Schuelerratskammer. Seoyeon sitzt hinter einem Stapel Dokumente. Allein.*"
@@ -110,7 +118,11 @@
     },
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "Die hier nach Datum, die da nach Verein. -- Kannst du gut organisieren?\"\n\n\"{name}: Nicht super, aber auch nicht schlecht.\"\n\n\"Vage.\"\n\n\"{name}: Wie deine Komplimente. Die sind auch vage.\"\n\n*Seoyeon schaut von den Dokumenten hoch.*\n\n\"...Du bist ueberraschend nuetzlich.\"\n\n\"{name}: Ist das ein Kompliment?\"\n\n\"Ist ein Kompliment. Nimm's an."
+        "text": "Die hier nach Datum, die da nach Verein. -- Kannst du gut organisieren?\"\n\n\"{name}: Nicht super, aber auch nicht schlecht.\"\n\n\"Vage.\"\n\n\"{name}: Wie deine Komplimente. Die sind auch vage.\""
+    },
+    "after2_seo_8b": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon schaut von den Dokumenten hoch.*\n\n\"...Du bist ueberraschend nuetzlich.\"\n\n\"{name}: Ist das ein Kompliment?\"\n\n\"Ist ein Kompliment. Nimm's an."
     },
     "after2_seo_choice1": {
         "name": "Ich",
@@ -355,13 +367,5 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "...Was?"
-    },
-    "after2_dain_end_2": {
-        "name": "Ich",
-        "text": "Ein bisschen.\n\nEin 'bisschen' spielt nicht so! -- Gib's zu, du bist gut.\n\n{name} war viel besser."
-    },
-    "after2_dain_end_3": {
-        "name": "Ich",
-        "text": "*Dain haelt die Staebchen an. Nur einen Moment.*\n\n...Natuerlich! Ich war Sportstipendiatin!\n\n*'War'. Vergangenheit. -- Irgendwas sagt mir, dass ich besser nicht frage.*\n\nAhh das ist so scharf!! Wasser, Wasser!!\n\n*Das Thema hat gewechselt. -- Ob sie es absichtlich gewechselt hat oder es wirklich scharf war. Wahrscheinlich beides.*"
     }
 }
