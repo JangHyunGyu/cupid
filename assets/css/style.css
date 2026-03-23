@@ -1170,7 +1170,6 @@ html[lang="de"] .modal-content p {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    filter: drop-shadow(0 0 15px currentColor);
 }
 
 /* 긍정적 변화 (+) */
