@@ -908,30 +908,35 @@ Object.assign(SCENARIO[5], {
         "next": "confess_fail_1"
     },
     "confess_fail_1": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "confess_fail_2"
     },
     "confess_fail_2": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "confess_fail_3"
     },
     "confess_fail_3": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "confess_fail_4"
     },
     "confess_fail_4": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "confess_fail_5"
     },
     "confess_fail_5": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -950,42 +955,49 @@ Object.assign(SCENARIO[5], {
         "next": "friend_1"
     },
     "friend_1": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_2"
     },
     "friend_2": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_3"
     },
     "friend_3": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_4"
     },
     "friend_4": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_5"
     },
     "friend_5": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_6"
     },
     "friend_6": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_7"
     },
     "friend_7": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -999,18 +1011,21 @@ Object.assign(SCENARIO[5], {
         "next": "friend_9"
     },
     "friend_9": {
+        "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_10"
     },
     "friend_10": {
+        "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_11"
     },
     "friend_11": {
+        "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
         "fade": true,
