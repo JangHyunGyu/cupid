@@ -338,6 +338,7 @@ Object.assign(SCENARIO[2], {
         "next": "hidden_homeroom_d2_3"
     },
     "hidden_homeroom_d2_3": {
+        "stats": { "Teacher": { "affinity": 15 } },
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_4"
