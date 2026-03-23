@@ -7,6 +7,22 @@
         "name": "Moi",
         "text": "*Aujourd'hui, il y a un événement scolaire. Le dernier. Dès que j'entre en classe — des signaux arrivent de trois directions.*"
     },
+    "morning5_mood_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "morning5_mood_high": {
+        "name": "Moi",
+        "text": "*Dernier jour. Étrangement, mes pas sont légers. Avoir quelqu'un que je veux voir — c'est une raison suffisante pour tenir le matin.*"
+    },
+    "morning5_mood_mid": {
+        "name": "Moi",
+        "text": "*Dernier jour. Plus compliqué qu'hier. J'ai quelque chose à dire, mais je ne sais pas si ça sortira.*"
+    },
+    "morning5_mood_low": {
+        "name": "Moi",
+        "text": "*Dernier jour. Cinq jours, c'est passé vite. Au final, est-ce que je quitterai cette école sans rien laisser derrière moi aussi ?*"
+    },
     "morning5_seo_note_1": {
         "name": "Moi",
         "text": "*Il y a un mot sur mon bureau. L'écriture de Seoyeon. — 'Libère-toi cet après-midi. Je laisserai le toit ouvert. — Seoyeon'*"

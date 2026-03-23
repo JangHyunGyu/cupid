@@ -154,16 +154,16 @@
         "text": "...비슷한 거. 갑자기 새로운 곳에 던져진 적은 있지."
     },
     "after_homeroom_honest_4": {
+        "name": "담임선생님",
+        "text": "적응 못 하겠으면 교무실로 와. 커피 정도는 — 아, 학생이니까 주스 정도는 줄 수 있어."
+    },
+    "after_homeroom_honest_5": {
         "name": "{name}",
         "text": "선생님이 학생한테 음료수 사주시는 거예요?"
     },
-    "after_homeroom_honest_5": {
-        "name": "담임선생님",
-        "text": "교육적 관심이야. — 선생님이 이러면 안 되는데, 뭐."
-    },
     "after_homeroom_honest_6": {
         "name": "담임선생님",
-        "text": "적응 못 하겠으면 교무실로 와. 커피 정도는 — 아, 학생이니까 주스 정도는 줄 수 있어."
+        "text": "교육적 관심이야. — 선생님이 이러면 안 되는데, 뭐."
     },
     "after_homeroom_honest_7": {
         "name": "담임선생님",

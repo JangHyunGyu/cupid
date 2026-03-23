@@ -59,10 +59,6 @@ Object.assign(SCENARIO[5], {
                 "condition": "day5_confessed"
             },
             {
-                "next": "day5_ending_friend",
-                "condition": "day4_waited"
-            },
-            {
                 "next": "day5_ending_alone"
             }
         ]
@@ -149,7 +145,7 @@ Object.assign(SCENARIO[5], {
         "affinityBranches": [
             { "minAffinity": 50, "next": "day5_ending_good" }
         ],
-        "next": "day5_ending_friend"
+        "next": "day5_ending_confess_fail"
     },
     "ending_confessed_aff_yuna": {
         "background": null,
@@ -160,7 +156,7 @@ Object.assign(SCENARIO[5], {
         "affinityBranches": [
             { "minAffinity": 50, "next": "day5_ending_good" }
         ],
-        "next": "day5_ending_friend"
+        "next": "day5_ending_confess_fail"
     },
     "ending_confessed_aff_dain": {
         "background": null,
@@ -171,7 +167,7 @@ Object.assign(SCENARIO[5], {
         "affinityBranches": [
             { "minAffinity": 50, "next": "day5_ending_good" }
         ],
-        "next": "day5_ending_friend"
+        "next": "day5_ending_confess_fail"
     },
 
     // =========================================================================
@@ -427,33 +423,6 @@ Object.assign(SCENARIO[5], {
         "night": true,
         "fade": true,
         "next": "day5_credits"
-    },
-
-    // =========================================================================
-    // TRUE LOVE END — entry & route branch
-    // =========================================================================
-    "day5_ending_true": {
-        "background": null,
-        "character": null,
-        "night": true,
-        "fade": true,
-        "bgm": "ending.mp3",
-        "setFlag": "ending_true_love",
-        "selectByHighestAffinity": true,
-        "branches": [
-            {
-                "next": "true_seo_1",
-                "character": "Seoyeon"
-            },
-            {
-                "next": "true_yuna_1",
-                "character": "Yuna"
-            },
-            {
-                "next": "true_dain_1",
-                "character": "Dain"
-            }
-        ]
     },
 
     // ── Seoyeon TRUE route ──
@@ -880,6 +849,48 @@ Object.assign(SCENARIO[5], {
         "next": "harem_8"
     },
     "harem_8": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
+    },
+
+    // =========================================================================
+    // CONFESS FAIL END (고백했으나 호감 부족)
+    // =========================================================================
+    "day5_ending_confess_fail": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "night2.mp3",
+        "next": "confess_fail_1"
+    },
+    "confess_fail_1": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "confess_fail_2"
+    },
+    "confess_fail_2": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "confess_fail_3"
+    },
+    "confess_fail_3": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "confess_fail_4"
+    },
+    "confess_fail_4": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "confess_fail_5"
+    },
+    "confess_fail_5": {
         "character": null,
         "night": true,
         "fade": true,

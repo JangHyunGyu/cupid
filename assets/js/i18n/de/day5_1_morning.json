@@ -7,6 +7,22 @@
         "name": "Ich",
         "text": "*Heute gibt es eine Schulveranstaltung. Die letzte. Kaum betrete ich das Klassenzimmer — kommen Signale aus drei Richtungen.*"
     },
+    "morning5_mood_check": {
+        "name": "System",
+        "text": ""
+    },
+    "morning5_mood_high": {
+        "name": "Ich",
+        "text": "*Letzter Tag. Seltsamerweise fühlen sich meine Schritte leicht an. Jemanden zu haben, den ich sehen will — das reicht als Grund, den Morgen zu überstehen.*"
+    },
+    "morning5_mood_mid": {
+        "name": "Ich",
+        "text": "*Letzter Tag. Komplizierter als gestern. Ich habe etwas zu sagen, aber ob es über meine Lippen kommt, weiß ich nicht.*"
+    },
+    "morning5_mood_low": {
+        "name": "Ich",
+        "text": "*Letzter Tag. Fünf Tage vergingen schnell. Am Ende — verlasse ich auch diese Schule, ohne etwas zu hinterlassen?*"
+    },
     "morning5_seo_note_1": {
         "name": "Ich",
         "text": "*Auf meinem Tisch liegt ein Zettel. Seoyeons Handschrift. — 'Nimm dir heute Nachmittag kurz Zeit. Ich lasse das Dach offen. — Seoyeon'*"

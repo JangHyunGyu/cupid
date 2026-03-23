@@ -159,10 +159,6 @@
         "name": "시스템",
         "text": "─── BITTERSWEET END ───"
     },
-    "day5_ending_true": {
-        "name": "시스템",
-        "text": ""
-    },
     "true_seo_1": {
         "name": "{name}",
         "text": "*서연의 방. 부모는 외출 중이다. 방은 깔끔하다 — 너무 깔끔하다. 감정이 없는 방.*"
@@ -406,6 +402,30 @@
     "harem_8": {
         "name": "시스템",
         "text": "─── HAREM END ───"
+    },
+    "day5_ending_confess_fail": {
+        "name": "{name}",
+        "text": "*마음을 전했다. 말했다. — 근데 돌아온 건 침묵이었다.*"
+    },
+    "confess_fail_1": {
+        "name": "{name}",
+        "text": "*용기는 냈다. 이번에는 도망치지 않았다. — 그건 분명하다.*"
+    },
+    "confess_fail_2": {
+        "name": "{name}",
+        "text": "*하지만 고백만으로는 부족했다. 5일 동안 쌓은 것이 — 그 세 글자를 받쳐주기엔 얇았다.*"
+    },
+    "confess_fail_3": {
+        "name": "{name}",
+        "text": "*전 학교에서는 말하지 못해서 후회했다. 이 학교에서는 말했는데도 — 다른 종류의 빈자리가 남았다.*"
+    },
+    "confess_fail_4": {
+        "name": "{name}",
+        "text": "*교문을 나선다. 핸드폰은 조용하다. — 이번엔 도망치지 않았으니까. 그것만은 다르다.*"
+    },
+    "confess_fail_5": {
+        "name": "시스템",
+        "text": "--- CONFESS FAIL END ---"
     },
     "day5_ending_friend": {
         "name": "{name}",

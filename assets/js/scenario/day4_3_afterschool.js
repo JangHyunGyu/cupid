@@ -198,9 +198,18 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "sunset": true,
-        "next": "confess_yuna_3"
+        "branches": [
+            { "condition": "chose_yuna_lunch", "next": "confess_yuna_3" },
+            { "next": "confess_yuna_3b" }
+        ]
     },
     "confess_yuna_3": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/yuna_hideout.png",
+        "sunset": true,
+        "next": "confess_yuna_4"
+    },
+    "confess_yuna_3b": {
         "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,

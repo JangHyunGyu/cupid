@@ -354,7 +354,7 @@
     },
     "lunch_yuna_6": {
         "name": "{name}",
-        "text": "...¿Puedo sentarme aquí?"
+        "text": "...¿Puedo quedarme?"
     },
     "lunch_yuna_7": {
         "name": "Yuna",
@@ -468,7 +468,7 @@
     },
     "lunch_dain_1_aff_high": {
         "name": "Dain",
-        "text": "¡Oh! ¡Viniste! ¡Te vi en educación física! ¡Comamos juntos!"
+        "text": "¡Oh! ¡Viniste! ¡Te vi en la presentación! ¡Comamos juntos!"
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",

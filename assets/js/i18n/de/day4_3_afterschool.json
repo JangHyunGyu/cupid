@@ -255,6 +255,10 @@
         "name": "Dain",
         "text": "...Nächstes Mal lauf nicht weg."
     },
+    "confess_yuna_3b": {
+        "name": "{name}",
+        "text": "*Der Bibliotheksanbau. Der Sonnenuntergang dringt durch die Fenster. Ein Ort, der in wenigen Tagen vertraut wurde.*"
+    },
     "confess_seo_3b": {
         "name": "{name}",
         "text": "*Das Dach. Der Sonnenuntergang taucht die Schule in warmes Licht. Ein Ort, der in wenigen Tagen vertraut wurde.*"

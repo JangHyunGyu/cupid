@@ -159,10 +159,6 @@
         "name": "システム",
         "text": "─── BITTERSWEET END ───"
     },
-    "day5_ending_true": {
-        "name": "システム",
-        "text": ""
-    },
     "true_seo_1": {
         "name": "僕",
         "text": "*ソヨンの部屋。親は外出中。部屋はきれいだ——きれいすぎる。感情のない部屋。*"
@@ -406,6 +402,30 @@
     "harem_8": {
         "name": "システム",
         "text": "─── HAREM END ───"
+    },
+    "day5_ending_confess_fail": {
+        "name": "僕",
+        "text": "*気持ちは伝えた。言った。——でも返ってきたのは沈黙だった。*"
+    },
+    "confess_fail_1": {
+        "name": "僕",
+        "text": "*勇気は出した。今回は逃げなかった。——それだけは確かだ。*"
+    },
+    "confess_fail_2": {
+        "name": "僕",
+        "text": "*でも告白だけじゃ足りなかった。5日間で積み上げたものが——あの三文字を支えるには薄すぎた。*"
+    },
+    "confess_fail_3": {
+        "name": "僕",
+        "text": "*前の学校では言えなくて後悔した。この学校では言ったのに——違う種類の空席が残った。*"
+    },
+    "confess_fail_4": {
+        "name": "僕",
+        "text": "*校門を出る。スマホは静かだ。——でも今回は逃げなかった。それだけが違う。*"
+    },
+    "confess_fail_5": {
+        "name": "システム",
+        "text": "--- CONFESS FAIL END ---"
     },
     "day5_ending_friend": {
         "name": "僕",

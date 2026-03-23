@@ -7,6 +7,22 @@
         "name": "Me",
         "text": "*There's a school event today. The final one. The moment I step into the classroom — signals come from three directions.*"
     },
+    "morning5_mood_check": {
+        "name": "System",
+        "text": ""
+    },
+    "morning5_mood_high": {
+        "name": "Me",
+        "text": "*Last day. Strangely, my steps feel light. Having someone I want to see — that's reason enough to get through the morning.*"
+    },
+    "morning5_mood_mid": {
+        "name": "Me",
+        "text": "*Last day. More complicated than yesterday. I have something to say, but I don't know if it'll make it past my lips.*"
+    },
+    "morning5_mood_low": {
+        "name": "Me",
+        "text": "*Last day. Five days went by fast. In the end, am I leaving this school without leaving anything behind too?*"
+    },
     "morning5_seo_note_1": {
         "name": "Me",
         "text": "*There's a note on my desk. Seoyeon's handwriting. — 'Make some time this afternoon. I'll leave the rooftop unlocked. — Seoyeon'*"
