@@ -668,7 +668,7 @@ Object.assign(SCENARIO[5], {
     // GOOD END
     // =========================================================================
     "day5_ending_good": {
-        "background": null,
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -705,13 +705,13 @@ Object.assign(SCENARIO[5], {
         "next": "good_2"
     },
     "good_1_yuna": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_smile.png",
         "night": true,
         "fade": true,
         "next": "good_2"
     },
     "good_1_dain": {
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_pout.png",
         "night": true,
         "fade": true,
         "next": "good_2"
@@ -753,7 +753,7 @@ Object.assign(SCENARIO[5], {
         "next": "mayhem_1"
     },
     "mayhem_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_angry.png",
         "night": true,
         "fade": true,
         "next": "mayhem_2"
@@ -765,7 +765,7 @@ Object.assign(SCENARIO[5], {
         "next": "mayhem_3"
     },
     "mayhem_3": {
-        "character": null,
+        "character": "assets/images/characters/dain_sad.png",
         "night": true,
         "fade": true,
         "next": "mayhem_4"
@@ -807,19 +807,19 @@ Object.assign(SCENARIO[5], {
         "next": "harem_1"
     },
     "harem_1": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_laugh.png",
         "night": true,
         "fade": true,
         "next": "harem_2"
     },
     "harem_2": {
-        "character": null,
+        "character": "assets/images/characters/yuna_sad.png",
         "night": true,
         "fade": true,
         "next": "harem_3"
     },
     "harem_3": {
-        "character": null,
+        "character": "assets/images/characters/dain_pout.png",
         "night": true,
         "fade": true,
         "next": "harem_4"
@@ -951,6 +951,7 @@ Object.assign(SCENARIO[5], {
         "next": "friend_8"
     },
     "friend_8": {
+        "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -985,7 +986,7 @@ Object.assign(SCENARIO[5], {
     // ALONE END
     // =========================================================================
     "day5_ending_alone": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
         "fade": true,
