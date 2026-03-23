@@ -327,5 +327,77 @@
         "text": "*Talking with the school nurse in the nurse's office.*",
         "context": "Day 3. Came to the nurse's office feeling anxious. The nurse had a serious heart-to-heart, including her hospital burnout backstory. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
         "personality": "Usually playful, but when serious the whole atmosphere changes. A professional with burnout experience. Torn between feelings and her title."
+    },
+    "morning3_seo_gate_warm_1": {
+        "name": "Me",
+        "text": "*Seoyeon is waiting at the gate. Unusually, she seems like she came early.*"
+    },
+    "morning3_seo_gate_warm_2": {
+        "name": "Seoyeon",
+        "text": "...I didn't come early. Student council business."
+    },
+    "morning3_seo_gate_warm_3": {
+        "name": "Me",
+        "text": "*Her hands are empty. No papers, no clipboard.*"
+    },
+    "morning3_seo_gate_warm_4": {
+        "name": "Me",
+        "text": "*Seoyeon starts walking alongside me without a word. — Was the distance from the gate to the classroom always this short?*"
+    },
+    "morning3_seo_gate_cold_1": {
+        "name": "Me",
+        "text": "*Seoyeon pauses as she passes by.*"
+    },
+    "morning3_seo_gate_cold_2": {
+        "name": "Seoyeon",
+        "text": "...Transfer student. Still coming to school, huh."
+    },
+    "morning3_seo_gate_cold_3": {
+        "name": "Me",
+        "text": "*Her tone is businesslike. Seoyeon walks past the gate, her back getting smaller.*"
+    },
+    "morning3_yuna_gate_warm_1": {
+        "name": "Me",
+        "text": "*Yuna is leaning against the wall by the gate. She hands me a note.*"
+    },
+    "morning3_yuna_gate_warm_2": {
+        "name": "Yuna",
+        "text": "...Can I walk with you?"
+    },
+    "morning3_yuna_gate_warm_3": {
+        "name": "Me",
+        "text": "*One word on the note. \"Waited.\"*"
+    },
+    "morning3_yuna_gate_warm_4": {
+        "name": "Me",
+        "text": "*Walking side by side with Yuna. No words. — But strangely, the silence is comfortable.*"
+    },
+    "morning3_yuna_gate_cold_1": {
+        "name": "Me",
+        "text": "*Yuna walks past first. Our eyes meet, but she turns away.*"
+    },
+    "morning3_yuna_gate_cold_2": {
+        "name": "Me",
+        "text": "*Her pace quickens. — It feels like the wall is going back up.*"
+    },
+    "morning3_dain_gate_warm_1": {
+        "name": "Me",
+        "text": "*Dain runs up and links her arm with mine.*"
+    },
+    "morning3_dain_gate_warm_2": {
+        "name": "Dain",
+        "text": "Hey! You almost made us late! Let's go together!"
+    },
+    "morning3_dain_gate_warm_3": {
+        "name": "Me",
+        "text": "*Dain's arm is wrapped around mine. She's strong. — I can't shake her off, and I don't want to.*"
+    },
+    "morning3_dain_gate_cold_1": {
+        "name": "Me",
+        "text": "*Dain runs past with her other friends.*"
+    },
+    "morning3_dain_gate_cold_2": {
+        "name": "Dain",
+        "text": "Oh, hey!"
     }
 }

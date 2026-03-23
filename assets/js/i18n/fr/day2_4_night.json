@@ -253,5 +253,29 @@
     "night2_hidden_nurse_2": {
         "name": "Moi",
         "text": "*Pas de droit de refus. — Autorité médicale ou intérêt personnel ? L'émoji brouille la frontière.*"
+    },
+    "night2_reply_dain_react_high": {
+        "name": "Dain",
+        "text": "AAAH !!!!! Je viens de me rouler dans mon lit tellement c'était drole mdr !! Viens au gymnase demain, PROMIS !!"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "Dain",
+        "text": "lol ok~ bonne nuit !"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "Seoyeon",
+        "text": "...Tu es plus intéressant que prévu. Tu veux déjeuner sur le toit demain ?"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "Seoyeon",
+        "text": "Heh. Compris. À demain."
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "Yuna",
+        "text": "...Quelqu'un répond à cette heure. Tu veux venir à la bibliothèque demain ?"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "Yuna",
+        "text": "...Oui. Bonne nuit."
     }
 }

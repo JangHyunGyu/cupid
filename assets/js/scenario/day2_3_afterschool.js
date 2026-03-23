@@ -109,6 +109,29 @@ Object.assign(SCENARIO[2], {
     "after2_dain_16": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_laugh.png",
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 25, "next": "after2_dain_skinship_1" },
+            { "minAffinity": 0, "next": "after2_dain_freetalk" }
+        ],
+        "next": "after2_dain_freetalk"
+    },
+    // =========================================================================
+    // 스킨십: 다인 호감 25+ — 하이파이브
+    // =========================================================================
+    "after2_dain_skinship_1": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "after2_dain_skinship_2"
+    },
+    "after2_dain_skinship_2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "next": "after2_dain_skinship_3"
+    },
+    "after2_dain_skinship_3": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_shy.png",
         "next": "after2_dain_freetalk"
     },
     "after2_dain_end": {
@@ -370,6 +393,29 @@ Object.assign(SCENARIO[2], {
     "after2_seo_end": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 25, "next": "after2_seo_skinship_1" },
+            { "minAffinity": 0, "next": "minsu_warn_1" }
+        ],
+        "next": "minsu_warn_1"
+    },
+    // =========================================================================
+    // 스킨십: 서연 호감 25+ — 먼지 떼기
+    // =========================================================================
+    "after2_seo_skinship_1": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after2_seo_skinship_2"
+    },
+    "after2_seo_skinship_2": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "next": "after2_seo_skinship_3"
+    },
+    "after2_seo_skinship_3": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "minsu_warn_1"
     },
     "after2_yuna_1": {
@@ -495,6 +541,29 @@ Object.assign(SCENARIO[2], {
     "after2_yuna_end": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 25, "next": "after2_yuna_skinship_1" },
+            { "minAffinity": 0, "next": "minsu_warn_1" }
+        ],
+        "next": "minsu_warn_1"
+    },
+    // =========================================================================
+    // 스킨십: 유나 호감 25+ — 손 겹침
+    // =========================================================================
+    "after2_yuna_skinship_1": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after2_yuna_skinship_2"
+    },
+    "after2_yuna_skinship_2": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "next": "after2_yuna_skinship_3"
+    },
+    "after2_yuna_skinship_3": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "minsu_warn_1"
     }
 ,

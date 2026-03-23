@@ -63,6 +63,21 @@ Object.assign(SCENARIO[1], {
         "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/top_school.png",
         "bgm": "sunset1.mp3",
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 8, "next": "lunch_seo_1_aff_high" },
+            { "minAffinity": 0, "next": "lunch_seo_1_aff_default" }
+        ],
+        "next": "lunch_seo_1_aff_default"
+    },
+    "lunch_seo_1_aff_high": {
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "background": "assets/images/background/top_school.png",
+        "next": "lunch_seo_2"
+    },
+    "lunch_seo_1_aff_default": {
+        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/top_school.png",
         "next": "lunch_seo_2"
     },
     "lunch_seo_2": {
@@ -273,6 +288,21 @@ Object.assign(SCENARIO[1], {
         "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/store.png",
         "bgm": "daily2.mp3",
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 5, "next": "lunch_dain_1_aff_high" },
+            { "minAffinity": 0, "next": "lunch_dain_1_aff_default" }
+        ],
+        "next": "lunch_dain_1_aff_default"
+    },
+    "lunch_dain_1_aff_high": {
+        "character": "assets/images/characters/dain_laugh.png",
+        "background": "assets/images/background/store.png",
+        "next": "lunch_dain_2"
+    },
+    "lunch_dain_1_aff_default": {
+        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/store.png",
         "next": "lunch_dain_2"
     },
     "lunch_dain_2": {
@@ -458,6 +488,21 @@ Object.assign(SCENARIO[1], {
         "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "bgm": "night1.mp3",
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 5, "next": "lunch_yuna_1_aff_high" },
+            { "minAffinity": 0, "next": "lunch_yuna_1_aff_default" }
+        ],
+        "next": "lunch_yuna_1_aff_default"
+    },
+    "lunch_yuna_1_aff_high": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/library_old.png",
+        "next": "lunch_yuna_2"
+    },
+    "lunch_yuna_1_aff_default": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/library_old.png",
         "next": "lunch_yuna_2"
     },
     "lunch_yuna_2": {

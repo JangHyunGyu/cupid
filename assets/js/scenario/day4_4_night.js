@@ -48,11 +48,40 @@ Object.assign(SCENARIO[4], {
     // ========================================================================
     // ★★★ 서연 밤 — 가면 벗기 (route_seoyeon)
     // ========================================================================
+    // --- A-5: 벽허물기 전 호감도 반영 ---
     "wall_seo_1": {
         "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "bgm": "night2.mp3",
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 60, "next": "wall_seo_pre_high_1" },
+            { "minAffinity": 0, "next": "wall_seo_pre_low_1" }
+        ]
+    },
+    "wall_seo_pre_high_1": {
+        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "wall_seo_pre_high_2"
+    },
+    "wall_seo_pre_high_2": {
+        "character": "assets/images/characters/seyoun_sad.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "wall_seo_3"
+    },
+    "wall_seo_pre_low_1": {
+        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "wall_seo_pre_low_2"
+    },
+    "wall_seo_pre_low_2": {
+        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
         "next": "wall_seo_2"
     },
     "wall_seo_2": {
@@ -302,6 +331,69 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "setFlag": "day4_seoyeon_wall_broken",
+        "next": "wall_seo_mention_1"
+    },
+    // --- B-6: 벽허물기 중 다른 캐릭터 언급 ---
+    "wall_seo_mention_1": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "night": true,
+        "next": "wall_seo_mention_2"
+    },
+    "wall_seo_mention_2": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "night": true,
+        "next": "wall_seo_mention_3"
+    },
+    "wall_seo_mention_3": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "night": true,
+        "next": "wall_seo_skin_check"
+    },
+    // --- Day 4 스킨십: 서연 관람차 기대기 (60+) / 새끼손가락→손→이마 (70+) ---
+    "wall_seo_skin_check": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "night": true,
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 70, "next": "wall_seo_skin70_1" },
+            { "minAffinity": 60, "next": "wall_seo_skin60_1" },
+            { "minAffinity": 0, "next": "wall_seo_glimpse_1" }
+        ]
+    },
+    "wall_seo_skin70_1": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "night": true,
+        "next": "wall_seo_skin70_2"
+    },
+    "wall_seo_skin70_2": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "night": true,
+        "next": "wall_seo_skin70_3"
+    },
+    "wall_seo_skin70_3": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "night": true,
+        "setFlags": ["day4_skinship_seoyeon_70"],
+        "next": "wall_seo_glimpse_1"
+    },
+    "wall_seo_skin60_1": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "night": true,
+        "next": "wall_seo_skin60_2"
+    },
+    "wall_seo_skin60_2": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "night": true,
+        "setFlags": ["day4_skinship_seoyeon_60"],
         "next": "wall_seo_glimpse_1"
     },
 
@@ -335,11 +427,40 @@ Object.assign(SCENARIO[4], {
     // ========================================================================
     // ★★★ 다인 밤 — 멈춰버린 꿈 (route_dain)
     // ========================================================================
+    // --- A-5: 벽허물기 전 호감도 반영 ---
     "wall_dain_1": {
         "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "bgm": "night2.mp3",
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 60, "next": "wall_dain_pre_high_1" },
+            { "minAffinity": 0, "next": "wall_dain_pre_low_1" }
+        ]
+    },
+    "wall_dain_pre_high_1": {
+        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "wall_dain_pre_high_2"
+    },
+    "wall_dain_pre_high_2": {
+        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "wall_dain_3"
+    },
+    "wall_dain_pre_low_1": {
+        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "wall_dain_pre_low_2"
+    },
+    "wall_dain_pre_low_2": {
+        "character": "assets/images/characters/dain_laugh.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
         "next": "wall_dain_2"
     },
     "wall_dain_2": {
@@ -641,6 +762,69 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "night": true,
+        "next": "wall_dain_mention_1"
+    },
+    // --- B-6: 벽허물기 중 다른 캐릭터 언급 ---
+    "wall_dain_mention_1": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "night": true,
+        "next": "wall_dain_mention_2"
+    },
+    "wall_dain_mention_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "night": true,
+        "next": "wall_dain_mention_3"
+    },
+    "wall_dain_mention_3": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "night": true,
+        "next": "wall_dain_skin_check"
+    },
+    // --- Day 4 스킨십: 다인 무릎 위 (60+) / 안기기 (70+) ---
+    "wall_dain_skin_check": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "night": true,
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 70, "next": "wall_dain_skin70_1" },
+            { "minAffinity": 60, "next": "wall_dain_skin60_1" },
+            { "minAffinity": 0, "next": "wall_dain_glimpse_1" }
+        ]
+    },
+    "wall_dain_skin70_1": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "night": true,
+        "next": "wall_dain_skin70_2"
+    },
+    "wall_dain_skin70_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "night": true,
+        "next": "wall_dain_skin70_3"
+    },
+    "wall_dain_skin70_3": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "night": true,
+        "setFlags": ["day4_skinship_dain_70"],
+        "next": "wall_dain_glimpse_1"
+    },
+    "wall_dain_skin60_1": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "night": true,
+        "next": "wall_dain_skin60_2"
+    },
+    "wall_dain_skin60_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "night": true,
+        "setFlags": ["day4_skinship_dain_60"],
         "next": "wall_dain_glimpse_1"
     },
 
@@ -674,11 +858,40 @@ Object.assign(SCENARIO[4], {
     // ========================================================================
     // ★★★ 유나 밤 — 편지, 그리고 벽 너머 (route_yuna)
     // ========================================================================
+    // --- A-5: 벽허물기 전 호감도 반영 ---
     "wall_yuna_1": {
         "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
         "bgm": "night2.mp3",
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 60, "next": "wall_yuna_pre_high_1" },
+            { "minAffinity": 0, "next": "wall_yuna_pre_low_1" }
+        ]
+    },
+    "wall_yuna_pre_high_1": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "wall_yuna_pre_high_2"
+    },
+    "wall_yuna_pre_high_2": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "wall_yuna_3"
+    },
+    "wall_yuna_pre_low_1": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "wall_yuna_pre_low_2"
+    },
+    "wall_yuna_pre_low_2": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
         "next": "wall_yuna_2"
     },
     "wall_yuna_2": {
@@ -836,6 +1049,69 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/yuna_hideout.png",
         "night": true,
         "setFlag": "day4_yuna_wall_broken",
+        "next": "wall_yuna_mention_1"
+    },
+    // --- B-6: 벽허물기 중 다른 캐릭터 언급 ---
+    "wall_yuna_mention_1": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "night": true,
+        "next": "wall_yuna_mention_2"
+    },
+    "wall_yuna_mention_2": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "night": true,
+        "next": "wall_yuna_mention_3"
+    },
+    "wall_yuna_mention_3": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "next": "wall_yuna_skin_check"
+    },
+    // --- Day 4 스킨십: 유나 뒤에서 안기 (60+) / 어깨→손 (70+) ---
+    "wall_yuna_skin_check": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 70, "next": "wall_yuna_skin70_1" },
+            { "minAffinity": 60, "next": "wall_yuna_skin60_1" },
+            { "minAffinity": 0, "next": "wall_yuna_glimpse_1" }
+        ]
+    },
+    "wall_yuna_skin70_1": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "night": true,
+        "next": "wall_yuna_skin70_2"
+    },
+    "wall_yuna_skin70_2": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "night": true,
+        "next": "wall_yuna_skin70_3"
+    },
+    "wall_yuna_skin70_3": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "night": true,
+        "setFlags": ["day4_skinship_yuna_70"],
+        "next": "wall_yuna_glimpse_1"
+    },
+    "wall_yuna_skin60_1": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "night": true,
+        "next": "wall_yuna_skin60_2"
+    },
+    "wall_yuna_skin60_2": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "night": true,
+        "setFlags": ["day4_skinship_yuna_60"],
         "next": "wall_yuna_glimpse_1"
     },
 

@@ -541,5 +541,152 @@
     "day4_final": {
         "name": "Ich",
         "text": "*Die Samstagnacht wird tiefer. Morgen ist Sonntag — der letzte Tag.*"
+    },
+    "wall_seo_pre_high_1": {
+        "name": "Seoyeon",
+        "text": "...Darf ich heute ehrlich sein?"
+    },
+    "wall_seo_pre_high_2": {
+        "name": "Ich",
+        "text": "*Seoyeon spricht zuerst. Freiwillig. — Das ist das erste Mal.*"
+    },
+    "wall_seo_pre_low_1": {
+        "name": "Ich",
+        "text": "*Seoyeon schweigt. Ich muss zuerst sprechen.*"
+    },
+    "wall_seo_pre_low_2": {
+        "name": "Seoyeon",
+        "text": "Kannst du jetzt rauskommen? Der Park. — Entschuldigung, so plötzlich."
+    },
+    "wall_seo_mention_1": {
+        "name": "Seoyeon",
+        "text": "...Dain scheint es in letzter Zeit schwer zu haben. Du weißt, dass du der Grund bist, oder?"
+    },
+    "wall_seo_mention_2": {
+        "name": "Seoyeon",
+        "text": "Mir geht es gut. Ich wurde zuerst gewählt. — Aber es beschäftigt mich trotzdem ein wenig."
+    },
+    "wall_seo_mention_3": {
+        "name": "Ich",
+        "text": "*Seoyeon schaut kurz in die Ferne. — Dann schaut sie mich wieder an. Ihr Blick ist fest.*"
+    },
+    "wall_seo_skin_check": {},
+    "wall_seo_skin70_1": {
+        "name": "Ich",
+        "text": "*Seoyeon streckt zuerst ihren kleinen Finger aus. Sie hört dort nicht auf. Sie nimmt meine Hand.*"
+    },
+    "wall_seo_skin70_2": {
+        "name": "Ich",
+        "text": "*Sie drückt ihre Lippen auf meine Stirn.*"
+    },
+    "wall_seo_skin70_3": {
+        "name": "Seoyeon",
+        "text": "...Das habe ich nicht geübt."
+    },
+    "wall_seo_skin60_1": {
+        "name": "Ich",
+        "text": "*Im Riesenrad lehnt sich Seoyeon an meine Schulter.*"
+    },
+    "wall_seo_skin60_2": {
+        "name": "Seoyeon",
+        "text": "...Höhen machen mir ein bisschen Angst."
+    },
+    "wall_dain_pre_high_1": {
+        "name": "Dain",
+        "text": "...Können wir heute über etwas anderes als Sport reden?"
+    },
+    "wall_dain_pre_high_2": {
+        "name": "Ich",
+        "text": "*Dain ist ungewöhnlich still. — Ein Ton, den ich noch nie gehört habe.*"
+    },
+    "wall_dain_pre_low_1": {
+        "name": "Ich",
+        "text": "*Dain zwingt sich zu lachen.*"
+    },
+    "wall_dain_pre_low_2": {
+        "name": "Dain",
+        "text": "Haha, heute hat Spaß gemacht, oder!"
+    },
+    "wall_dain_mention_1": {
+        "name": "Dain",
+        "text": "Weißt du, was Seoyeon zu mir gesagt hat? ...Nichts. Sie hat nichts gesagt. Das war schlimmer."
+    },
+    "wall_dain_mention_2": {
+        "name": "Dain",
+        "text": "Hätte sie was gesagt, hätte ich wenigstens dagegen kämpfen können. Wenn jemand nichts sagt, fühlt man sich wie der Böse."
+    },
+    "wall_dain_mention_3": {
+        "name": "Ich",
+        "text": "*Dain hält kurz inne. — Dann geht sie wieder. Mit leichterem Schritt.*"
+    },
+    "wall_dain_skin_check": {},
+    "wall_dain_skin70_1": {
+        "name": "Ich",
+        "text": "*Dain weint und fällt mir in die Arme.*"
+    },
+    "wall_dain_skin70_2": {
+        "name": "Dain",
+        "text": "Lass nicht los."
+    },
+    "wall_dain_skin70_3": {
+        "name": "Ich",
+        "text": "*Mein Hemd wird nass. Dains Hände umklammern meinen Rücken. Sie lässt nicht locker.*"
+    },
+    "wall_dain_skin60_1": {
+        "name": "Ich",
+        "text": "*Nach dem Sportzentrum sitzen wir auf einer Bank. Dain legt sich ohne Vorwarnung auf meinen Schoß.*"
+    },
+    "wall_dain_skin60_2": {
+        "name": "Dain",
+        "text": "Nur fünf Minuten. Aufladen."
+    },
+    "wall_yuna_pre_high_1": {
+        "name": "Yuna",
+        "text": "...Heute rede ich ohne Zettel."
+    },
+    "wall_yuna_pre_high_2": {
+        "name": "Ich",
+        "text": "*Yuna spricht direkt statt über Zettel. Ihre Sätze sind schon lang. — Die Mauer sinkt.*"
+    },
+    "wall_yuna_pre_low_1": {
+        "name": "Ich",
+        "text": "*Yuna reicht mir einen Zettel.*"
+    },
+    "wall_yuna_pre_low_2": {
+        "name": "Ich",
+        "text": "*Noch zu früh, es mit Worten zu sagen.*"
+    },
+    "wall_yuna_mention_1": {
+        "name": "Yuna",
+        "text": "...Dain hat geweint. Im Krankenzimmer."
+    },
+    "wall_yuna_mention_2": {
+        "name": "Yuna",
+        "text": "Weil du mich gewählt hast. ...Ich sollte mich entschuldigen. Aber die Worte kommen nicht. Das hasse ich noch mehr."
+    },
+    "wall_yuna_mention_3": {
+        "name": "Ich",
+        "text": "*Kurze Stille. — Yunas Ehrlichkeit wiegt noch schwerer.*"
+    },
+    "wall_yuna_skin_check": {},
+    "wall_yuna_skin70_1": {
+        "name": "Yuna",
+        "text": "Darf ich näher kommen?"
+    },
+    "wall_yuna_skin70_2": {
+        "name": "Ich",
+        "text": "*Sie lehnt sich an meine Schulter. Sie hält meine Hand fest.*"
+    },
+    "wall_yuna_skin70_3": {
+        "name": "Ich",
+        "text": "*Yunas Körpertemperatur ist niedrig. Aber die Hand, die sie hält, brennt.*"
+    },
+    "wall_yuna_skin60_1": {
+        "name": "Ich",
+        "text": "*Zwischen den Regalen des Antiquariats. Yuna drückt von hinten ihre Stirn an meinen Rücken.*"
+    },
+    "wall_yuna_skin60_2": {
+        "name": "Yuna",
+        "text": "...Weil du warm bist."
     }
 }

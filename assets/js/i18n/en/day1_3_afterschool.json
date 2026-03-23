@@ -262,5 +262,69 @@
         "text": "*Chatting with the school nurse in the nurse's office.*",
         "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse was playful but attentive. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
         "personality": "The school nurse is playful and flirtatious but hides genuine feelings behind jokes. Former hospital nurse who burned out. \"Because I'm a teacher\" is her shield — there's always a hidden emotion behind it."
+    },
+    "after1_jealousy_seo_1": {
+        "name": "Dain",
+        "text": "Hey, where'd you go during lunch? I went to the snack bar but you weren't there."
+    },
+    "after1_jealousy_seo_2": {
+        "name": "Me",
+        "text": "I ate on the rooftop with the student council president."
+    },
+    "after1_jealousy_seo_3": {
+        "name": "Dain",
+        "text": "...The rooftop? Just the two of you?"
+    },
+    "after1_jealousy_seo_choice": {
+        "name": "Me",
+        "text": "*Dain's voice went up slightly.*",
+        "choices": [
+            "I ate on the rooftop with the president. (Honest)",
+            "I was just wandering around alone. (Lie)"
+        ]
+    },
+    "after1_jealousy_seo_honest": {
+        "name": "Me",
+        "text": "Yeah, she brought me there. Even had a packed lunch for two."
+    },
+    "after1_jealousy_seo_honest_2": {
+        "name": "Dain",
+        "text": "...I see? Could've told me, at least."
+    },
+    "after1_jealousy_seo_lie": {
+        "name": "Me",
+        "text": "Nah, I was just wandering around by myself."
+    },
+    "after1_jealousy_seo_lie_2": {
+        "name": "Dain",
+        "text": "Really? Alone? — Well, makes sense, it's your first day!"
+    },
+    "after1_jealousy_seo_yuna": {
+        "name": "Me",
+        "text": "*A folded note falls out of my pocket. Yuna's handwriting.*"
+    },
+    "after1_jealousy_seo_yuna_2": {
+        "name": "Me",
+        "text": "*'I saw you on the rooftop at lunch. ...You looked close with the student council president.' — Three dots at the end. Words swallowed.*"
+    },
+    "after1_jealousy_dain_1": {
+        "name": "Seoyeon",
+        "text": "I saw you at the snack bar with Dain during lunch. You adapt fast."
+    },
+    "after1_jealousy_dain_2": {
+        "name": "Me",
+        "text": "*She's smiling. But her eyes aren't. Her fingers are tapping the clipboard.*"
+    },
+    "after1_jealousy_yuna_1": {
+        "name": "Dain",
+        "text": "You went to the library at lunch? With Yuna?"
+    },
+    "after1_jealousy_yuna_2": {
+        "name": "Dain",
+        "text": "...She doesn't usually hang out with anyone, you know."
+    },
+    "after1_pre_miss": {
+        "name": "Me",
+        "text": "*I keep walking down the hallway.*"
     }
 }

@@ -238,5 +238,53 @@
     "hidden_homeroom_d2_12": {
         "name": "Me",
         "text": "*Leaving the faculty office — I can't stop thinking about those papers in the drawer.*"
+    },
+    "morning2_greet_seo_1": {
+        "name": "Seoyeon",
+        "text": "What you said on the rooftop yesterday — still valid?"
+    },
+    "morning2_greet_seo_2": {
+        "name": "Me",
+        "text": "*Seoyeon came to me first. Her usual composed tone, but with a hint of wanting confirmation.*"
+    },
+    "morning2_greet_seo_others": {
+        "name": "Me",
+        "text": "*Dain glances from the back of the classroom. Turns away. Yuna buries deeper into her book. Pages turning faster.*"
+    },
+    "morning2_greet_seo_others_2": {
+        "name": "Me",
+        "text": "*Two subtle reactions. — Should I notice, or pretend I didn't?*"
+    },
+    "morning2_greet_dain_1": {
+        "name": "Dain",
+        "text": "Hey! Yesterday was fun, let's do something again today!"
+    },
+    "morning2_greet_dain_2": {
+        "name": "Me",
+        "text": "*Dain slaps my shoulder from behind. No hesitation in her touch.*"
+    },
+    "morning2_greet_dain_others": {
+        "name": "Me",
+        "text": "*Seoyeon passes by, flipping her clipboard. \"Such energy.\" Can't tell if it's sarcasm or admiration. Yuna doesn't react. But the hand writing a note has stopped.*"
+    },
+    "morning2_greet_dain_others_2": {
+        "name": "Me",
+        "text": "*Laughed it off, but — Seoyeon's remark lingers.*"
+    },
+    "morning2_greet_yuna_1": {
+        "name": "Me",
+        "text": "*About to sit down — a folded note on my desk. '...Thank you for yesterday.'*"
+    },
+    "morning2_greet_yuna_2": {
+        "name": "Me",
+        "text": "*Yuna's handwriting. One sentence longer than yesterday.*"
+    },
+    "morning2_greet_yuna_others": {
+        "name": "Me",
+        "text": "*Seoyeon walks by. \"A letter this early?\" She's smiling. But her eyes linger on the note for half a second. Dain: \"What's that! Let me see!\" She reaches for it.*"
+    },
+    "morning2_greet_yuna_others_2": {
+        "name": "Me",
+        "text": "*Pocketed the note. The two reactions are subtly different.*"
     }
 }

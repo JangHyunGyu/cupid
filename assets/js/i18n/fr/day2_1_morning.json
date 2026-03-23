@@ -238,5 +238,53 @@
     "hidden_homeroom_d2_12": {
         "name": "Moi",
         "text": "*En quittant la salle des profs — ces papiers dans le tiroir me trottent dans la tête.*"
+    },
+    "morning2_greet_seo_1": {
+        "name": "Seoyeon",
+        "text": "Ce que tu as dit sur le toit hier — c'est toujours valable ?"
+    },
+    "morning2_greet_seo_2": {
+        "name": "{name}",
+        "text": "*Seoyeon est venue vers moi en premier. Son ton habituel, mais avec un besoin de confirmation.*"
+    },
+    "morning2_greet_seo_others": {
+        "name": "{name}",
+        "text": "*Dain jette un coup d'œil depuis le fond de la classe. Détourne la tête. Yuna s'enfonce dans son livre. Les pages tournent plus vite.*"
+    },
+    "morning2_greet_seo_others_2": {
+        "name": "{name}",
+        "text": "*Deux réactions subtiles. — Est-ce que je dois remarquer, ou faire semblant de rien ?*"
+    },
+    "morning2_greet_dain_1": {
+        "name": "Dain",
+        "text": "Hé ! C'était fun hier, on refait un truc aujourd'hui !"
+    },
+    "morning2_greet_dain_2": {
+        "name": "{name}",
+        "text": "*Dain me tape l'épaule par derrière. Zéro hésitation.*"
+    },
+    "morning2_greet_dain_others": {
+        "name": "{name}",
+        "text": "*Seoyeon passe en feuilletant son bloc. \"Quelle énergie.\" Sarcasme ou admiration ? Yuna ne réagit pas. Mais sa main qui écrivait s'est arrêtée.*"
+    },
+    "morning2_greet_dain_others_2": {
+        "name": "{name}",
+        "text": "*J'ai ri, mais — la remarque de Seoyeon reste en tête.*"
+    },
+    "morning2_greet_yuna_1": {
+        "name": "{name}",
+        "text": "*Sur le point de m'asseoir — un mot plié sur mon bureau. \"...Merci pour hier.\"*"
+    },
+    "morning2_greet_yuna_2": {
+        "name": "{name}",
+        "text": "*L'écriture de Yuna. Une phrase de plus qu'hier.*"
+    },
+    "morning2_greet_yuna_others": {
+        "name": "{name}",
+        "text": "*Seoyeon passe. \"Une lettre dès le matin ?\" Elle sourit. Mais son regard s'attarde sur le mot une demi-seconde. Dain : \"C'est quoi ça ! Montre !\" Elle tend la main.*"
+    },
+    "morning2_greet_yuna_others_2": {
+        "name": "{name}",
+        "text": "*J'ai rangé le mot dans ma poche. Les deux réactions sont subtilement différentes.*"
     }
 }

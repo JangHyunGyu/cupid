@@ -422,5 +422,53 @@
     "minsu_d3_6b": {
         "name": "Minsu",
         "text": "No voy a preguntarte qué pasó en tu anterior instituto. Pero déjame decirte una cosa."
+    },
+    "after3_reject_for_seo_1": {
+        "name": "Yo",
+        "text": "*Me encuentro con Dain en el pasillo. Su energía habitual no está.*"
+    },
+    "after3_reject_for_seo_2": {
+        "name": "Dain",
+        "text": "...Hoy no vas al gimnasio, ¿verdad?"
+    },
+    "after3_reject_for_seo_3": {
+        "name": "Yo",
+        "text": "*Paso por la biblioteca. El asiento de Yuna está vacío. Queda una sola nota. '...Entendido.' Tres palabras.*"
+    },
+    "after3_reject_for_seo_4": {
+        "name": "Yo",
+        "text": "*La frase de Dain sin signo de exclamación, la nota de Yuna de solo tres palabras. — El peso de la elección se asienta en mis hombros.*"
+    },
+    "after3_reject_for_yuna_1": {
+        "name": "Yo",
+        "text": "*Seoyeon está organizando su portapapeles en el pasillo.*"
+    },
+    "after3_reject_for_yuna_2": {
+        "name": "Seoyeon",
+        "text": "Popular, ¿eh?"
+    },
+    "after3_reject_for_yuna_3": {
+        "name": "Yo",
+        "text": "*Dain está golpeando pelotas sola en el gimnasio. Me ve y dice '¡Ah, hola!' pero voltea la cara. Sus ojos están rojos.*"
+    },
+    "after3_reject_for_yuna_4": {
+        "name": "Yo",
+        "text": "*La frase de Seoyeon, los ojos rojos de Dain. — El camino de regreso se siente pesado.*"
+    },
+    "after3_reject_for_dain_1": {
+        "name": "Yo",
+        "text": "*Seoyeon está organizando su portapapeles.*"
+    },
+    "after3_reject_for_dain_2": {
+        "name": "Seoyeon",
+        "text": "El consejo está ocupado. Comeré por separado."
+    },
+    "after3_reject_for_dain_3": {
+        "name": "Yo",
+        "text": "*No hay notas en la biblioteca. La mochila de Yuna no está. Debe haberse ido temprano.*"
+    },
+    "after3_reject_for_dain_4": {
+        "name": "Yo",
+        "text": "*La sonrisa ensayada de Seoyeon, el asiento vacío de Yuna. — Los dos asientos restantes se sienten más vacíos.*"
     }
 }

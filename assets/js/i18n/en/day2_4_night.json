@@ -253,5 +253,29 @@
     "night2_hidden_nurse_2": {
         "name": "Me",
         "text": "*Can't refuse. — Is that medical authority or personal interest? The emoji blurs the line.*"
+    },
+    "night2_reply_dain_react_high": {
+        "name": "Dain",
+        "text": "DUDEEE!!!!! I'm literally kicking my blanket laughing rn LOL!! You HAVE to come to the gym tomorrow!!"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "Dain",
+        "text": "lol okay~ night!"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "Seoyeon",
+        "text": "...You're more interesting than I expected. Want to come to the rooftop for lunch tomorrow?"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "Seoyeon",
+        "text": "Heh. Got it. See you tomorrow."
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "Yuna",
+        "text": "...So there's someone who texts back at this hour. Want to come to the library tomorrow?"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "Yuna",
+        "text": "...Yeah. Good night."
     }
 }

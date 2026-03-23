@@ -65,9 +65,50 @@
         "name": "서연",
         "text": "...고마워. 역시 너는 센스가 있어."
     },
+    "lunch3_seo_skin_check": {},
+    "lunch3_seo_skin_1": {
+        "name": "{name}",
+        "text": "*도시락을 먹다가 입가에 밥풀이 묻었다. 서연이 손을 뻗어 떼어낸다.*"
+    },
+    "lunch3_seo_skin_2": {
+        "name": "서연",
+        "text": "...남 앞에서 좀 신경 써."
+    },
+    "lunch3_seo_skin_3": {
+        "name": "{name}",
+        "text": "*손을 거둔 서연이 젓가락을 떨어뜨렸다. — 자연스러운 동작처럼 보였지만, 손끝이 살짝 떨리고 있었다.*"
+    },
     "lunch3_give_seo_2": {
         "name": "다인",
         "text": "에이! 나도 먹고 싶었는데!"
+    },
+    "lunch3_seo_witness_1": {
+        "name": "{name}",
+        "text": "*다인이 교실 문 앞에서 멈춰 선다. 서연이 도시락을 받는 모습을 본다. \"...아.\" 돌아간다.*"
+    },
+    "lunch3_seo_witness_choice": {
+        "name": "{name}",
+        "text": "*다인의 뒷모습이 복도로 사라지고 있다.*",
+        "choices": [
+            "다인!",
+            "(서연에게 집중한다)"
+        ]
+    },
+    "lunch3_seo_chase_dain_1": {
+        "name": "{name}",
+        "text": "*서연이 도시락을 내려놓는다. 표정이 없다.*"
+    },
+    "lunch3_seo_chase_dain_2": {
+        "name": "다인",
+        "text": "...뭐야."
+    },
+    "lunch3_seo_focus_1": {
+        "name": "{name}",
+        "text": "*다인의 발소리가 복도에서 멀어진다.*"
+    },
+    "lunch3_seo_focus_2": {
+        "name": "서연",
+        "text": "...신경 쓰여?"
     },
     "lunch3_give_seo_3": {
         "name": "유나",
@@ -77,9 +118,30 @@
         "name": "다인",
         "text": "진짜?! 고마워!! 역시 {name}이 최고!!"
     },
+    "lunch3_dain_skin_check": {},
+    "lunch3_dain_skin_1": {
+        "name": "{name}",
+        "text": "*점심 내기에서 이겨서 흥분한 다인이 양팔을 벌린다. 안긴다. 1초.*"
+    },
+    "lunch3_dain_skin_2": {
+        "name": "{name}",
+        "text": "*다인이 튕기듯 떨어진다. 귀가 빨갛다.*"
+    },
+    "lunch3_dain_skin_3": {
+        "name": "다인",
+        "text": "지금 거 카운트 아니야!!"
+    },
     "lunch3_give_dain_2": {
         "name": "서연",
         "text": "...참나. 내가 점수까지 매겨줬는데."
+    },
+    "lunch3_dain_witness_1": {
+        "name": "{name}",
+        "text": "*유나가 복도를 지나가다 체육관 안을 본다. 다인이 웃고 있다. 유나는 발걸음을 빠르게 한다.*"
+    },
+    "lunch3_dain_witness_2": {
+        "name": "{name}",
+        "text": "*다음 쉬는 시간, 유나의 자리가 비어 있다.*"
     },
     "lunch3_give_dain_3": {
         "name": "유나",
@@ -89,9 +151,30 @@
         "name": "유나",
         "text": "...고마워."
     },
+    "lunch3_yuna_skin_check": {},
+    "lunch3_yuna_skin_1": {
+        "name": "{name}",
+        "text": "*쪽지를 건네면서 유나가 손을 잡는다. 놓지 않는다.*"
+    },
+    "lunch3_yuna_skin_2": {
+        "name": "유나",
+        "text": "...이건 쪽지 내용이 아니야. 그냥."
+    },
+    "lunch3_yuna_skin_3": {
+        "name": "{name}",
+        "text": "*문장이 끝나고 나서야 손을 뗀다.*"
+    },
     "lunch3_give_yuna_2": {
         "name": "서연",
         "text": "...나한테 줄 줄 알았는데."
+    },
+    "lunch3_yuna_witness_1": {
+        "name": "서연",
+        "text": "도서관에서 도시락 냄새 났다더라. ...유나랑?"
+    },
+    "lunch3_yuna_witness_2": {
+        "name": "{name}",
+        "text": "*표정이 무감정하다. 그게 더 무섭다.*"
     },
     "lunch3_give_yuna_3": {
         "name": "다인",

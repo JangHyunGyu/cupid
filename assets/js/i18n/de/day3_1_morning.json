@@ -327,5 +327,77 @@
         "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
         "context": "Tag 3. Kam aus Unruhe ins Krankenzimmer. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
         "personality": "Normalerweise verspielt, aber wenn ernst, ändert sich die Atmosphäre komplett."
+    },
+    "morning3_seo_gate_warm_1": {
+        "name": "Ich",
+        "text": "*Seoyeon wartet anders als sonst vor dem Schultor.*"
+    },
+    "morning3_seo_gate_warm_2": {
+        "name": "Seoyeon",
+        "text": "...Ich bin nicht früh gekommen. Schülervertreter-Angelegenheiten."
+    },
+    "morning3_seo_gate_warm_3": {
+        "name": "Ich",
+        "text": "*Ihre Hände sind leer. Keine Papiere, kein Klemmbrett.*"
+    },
+    "morning3_seo_gate_warm_4": {
+        "name": "Ich",
+        "text": "*Seoyeon beginnt wortlos neben mir herzugehen. — War der Weg vom Tor zum Klassenzimmer schon immer so kurz?*"
+    },
+    "morning3_seo_gate_cold_1": {
+        "name": "Ich",
+        "text": "*Seoyeon hält kurz an, als sie vorbeigeht.*"
+    },
+    "morning3_seo_gate_cold_2": {
+        "name": "Seoyeon",
+        "text": "...Der Neue. Bist immer noch hier."
+    },
+    "morning3_seo_gate_cold_3": {
+        "name": "Ich",
+        "text": "*Ihr Ton ist sachlich. Seoyeons Rücken wird kleiner, als sie das Tor passiert.*"
+    },
+    "morning3_yuna_gate_warm_1": {
+        "name": "Ich",
+        "text": "*Yuna lehnt an der Mauer neben dem Tor und reicht mir einen Zettel.*"
+    },
+    "morning3_yuna_gate_warm_2": {
+        "name": "Yuna",
+        "text": "...Darf ich mitgehen?"
+    },
+    "morning3_yuna_gate_warm_3": {
+        "name": "Ich",
+        "text": "*Ein Wort auf dem Zettel. \"Gewartet.\"*"
+    },
+    "morning3_yuna_gate_warm_4": {
+        "name": "Ich",
+        "text": "*Seite an Seite mit Yuna gehen. Keine Worte. — Aber seltsamerweise ist die Stille angenehm.*"
+    },
+    "morning3_yuna_gate_cold_1": {
+        "name": "Ich",
+        "text": "*Yuna geht zuerst vorbei. Unsere Blicke treffen sich, aber sie wendet sich ab.*"
+    },
+    "morning3_yuna_gate_cold_2": {
+        "name": "Ich",
+        "text": "*Ihre Schritte werden schneller. — Es fühlt sich an, als ob die Mauer wieder hochgeht.*"
+    },
+    "morning3_dain_gate_warm_1": {
+        "name": "Ich",
+        "text": "*Dain rennt herbei und hakt sich bei mir unter.*"
+    },
+    "morning3_dain_gate_warm_2": {
+        "name": "Dain",
+        "text": "Hey! Fast zu spät! Lass zusammen gehen!"
+    },
+    "morning3_dain_gate_warm_3": {
+        "name": "Ich",
+        "text": "*Dains Arm ist um meinen geschlungen. Sie ist stark. — Ich kann mich nicht losreißen, und ich will es auch nicht.*"
+    },
+    "morning3_dain_gate_cold_1": {
+        "name": "Ich",
+        "text": "*Dain rennt mit ihren anderen Freunden vorbei.*"
+    },
+    "morning3_dain_gate_cold_2": {
+        "name": "Dain",
+        "text": "Oh, hi!"
     }
 }

@@ -457,5 +457,29 @@
         "text": "*Leyendo libros junto a Yuna en la biblioteca. Es silencioso, pero cómodo.*",
         "context": "Almuerzo del primer día, acaban de pasar tiempo con Yuna en la biblioteca. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
         "personality": "Yuna es una chica literaria y misteriosa. Frases cortas y secas, pero cuando se abre, sus frases se alargan."
+    },
+    "lunch_seo_1_aff_high": {
+        "name": "Seoyeon",
+        "text": "Siéntate aquí. Lo que dijiste en el pasillo antes — me hizo gracia."
+    },
+    "lunch_seo_1_aff_default": {
+        "name": "Seoyeon",
+        "text": "...¿Te vas a sentar o qué?"
+    },
+    "lunch_dain_1_aff_high": {
+        "name": "Dain",
+        "text": "¡Oh! ¡Viniste! ¡Te vi en educación física! ¡Comamos juntos!"
+    },
+    "lunch_dain_1_aff_default": {
+        "name": "Dain",
+        "text": "Oye, eres el nuevo, ¿no? ¿Ya comiste?"
+    },
+    "lunch_yuna_1_aff_high": {
+        "name": "{name}",
+        "text": "*Yuna entrega una nota doblada. \"...Lo que dijiste antes. Lo recordé.\"*"
+    },
+    "lunch_yuna_1_aff_default": {
+        "name": "{name}",
+        "text": "*Yuna está sentada sin ninguna nota. En silencio.*"
     }
 }

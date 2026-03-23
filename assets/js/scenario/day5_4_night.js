@@ -37,24 +37,25 @@ Object.assign(SCENARIO[5], {
                 "condition": "nurse_day5"
             },
             {
+                "next": "ending_affinity_check",
+                "condition": "day4_confession_accepted",
+                "excludeCondition": "day3_has_multiple_dates"
+            },
+            {
                 "next": "day5_ending_harem",
                 "condition": "ending_harem"
             },
             {
                 "next": "day5_ending_mayhem",
-                "condition": "day3_has_multiple_dates"
-            },
-            {
-                "next": "day5_ending_true",
-                "condition": "day4_confession_accepted",
-                "excludeCondition": "day3_has_multiple_dates"
+                "condition": "day3_has_multiple_dates",
+                "excludeCondition": "ending_harem"
             },
             {
                 "next": "day5_ending_good",
                 "condition": "day4_confession_accepted"
             },
             {
-                "next": "day5_ending_good",
+                "next": "ending_confessed_aff_check",
                 "condition": "day5_confessed"
             },
             {
@@ -65,6 +66,367 @@ Object.assign(SCENARIO[5], {
                 "next": "day5_ending_alone"
             }
         ]
+    },
+
+    // =========================================================================
+    // ENDING AFFINITY CHECK — route → character affinity branch
+    // =========================================================================
+    "ending_affinity_check": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "ending_aff_check_seo" },
+            { "condition": "route_yuna", "next": "ending_aff_check_yuna" },
+            { "condition": "route_dain", "next": "ending_aff_check_dain" }
+        ]
+    },
+    "ending_aff_check_seo": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 80, "next": "perfect_seo_1" },
+            { "minAffinity": 60, "next": "true_seo_1" },
+            { "minAffinity": 40, "next": "day5_ending_good" },
+            { "minAffinity": 0, "next": "bitter_seo_1" }
+        ],
+        "next": "bitter_seo_1"
+    },
+    "ending_aff_check_yuna": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 80, "next": "perfect_yuna_1" },
+            { "minAffinity": 60, "next": "true_yuna_1" },
+            { "minAffinity": 40, "next": "day5_ending_good" },
+            { "minAffinity": 0, "next": "bitter_yuna_1" }
+        ],
+        "next": "bitter_yuna_1"
+    },
+    "ending_aff_check_dain": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 80, "next": "perfect_dain_1" },
+            { "minAffinity": 60, "next": "true_dain_1" },
+            { "minAffinity": 40, "next": "day5_ending_good" },
+            { "minAffinity": 0, "next": "bitter_dain_1" }
+        ],
+        "next": "bitter_dain_1"
+    },
+
+    // =========================================================================
+    // CONFESSED AFFINITY CHECK — day5_confessed + affinity 50+/50-
+    // =========================================================================
+    "ending_confessed_aff_check": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "ending_confessed_aff_seo" },
+            { "condition": "route_yuna", "next": "ending_confessed_aff_yuna" },
+            { "condition": "route_dain", "next": "ending_confessed_aff_dain" },
+            { "next": "day5_ending_friend" }
+        ]
+    },
+    "ending_confessed_aff_seo": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 50, "next": "day5_ending_good" }
+        ],
+        "next": "day5_ending_friend"
+    },
+    "ending_confessed_aff_yuna": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 50, "next": "day5_ending_good" }
+        ],
+        "next": "day5_ending_friend"
+    },
+    "ending_confessed_aff_dain": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 50, "next": "day5_ending_good" }
+        ],
+        "next": "day5_ending_friend"
+    },
+
+    // =========================================================================
+    // PERFECT END — Seoyeon
+    // =========================================================================
+    "perfect_seo_1": {
+        "background": "assets/images/background/top_school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "ending.mp3",
+        "setFlag": "ending_perfect",
+        "next": "perfect_seo_2"
+    },
+    "perfect_seo_2": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_seo_3"
+    },
+    "perfect_seo_3": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_seo_4"
+    },
+    "perfect_seo_4": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_seo_5"
+    },
+    "perfect_seo_5": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_epilogue_1"
+    },
+
+    // =========================================================================
+    // PERFECT END — Yuna
+    // =========================================================================
+    "perfect_yuna_1": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "ending.mp3",
+        "setFlag": "ending_perfect",
+        "next": "perfect_yuna_2"
+    },
+    "perfect_yuna_2": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_yuna_3"
+    },
+    "perfect_yuna_3": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_smile.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_yuna_4"
+    },
+    "perfect_yuna_4": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_yuna_5"
+    },
+    "perfect_yuna_5": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_epilogue_1"
+    },
+
+    // =========================================================================
+    // PERFECT END — Dain
+    // =========================================================================
+    "perfect_dain_1": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "ending.mp3",
+        "setFlag": "ending_perfect",
+        "next": "perfect_dain_2"
+    },
+    "perfect_dain_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_dain_3"
+    },
+    "perfect_dain_3": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_dain_4"
+    },
+    "perfect_dain_4": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_dain_5"
+    },
+    "perfect_dain_5": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "night": true,
+        "fade": true,
+        "next": "perfect_epilogue_1"
+    },
+
+    // =========================================================================
+    // PERFECT END — Shared Epilogue
+    // =========================================================================
+    "perfect_epilogue_1": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "perfect_epilogue_2"
+    },
+    "perfect_epilogue_2": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "perfect_epilogue_3"
+    },
+    "perfect_epilogue_3": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "perfect_epilogue_4"
+    },
+    "perfect_epilogue_4": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
+    },
+
+    // =========================================================================
+    // BITTERSWEET END — Seoyeon
+    // =========================================================================
+    "bitter_seo_1": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "night2.mp3",
+        "setFlag": "ending_bittersweet",
+        "next": "bitter_seo_2"
+    },
+    "bitter_seo_2": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "bitter_seo_3"
+    },
+    "bitter_seo_3": {
+        "background": "assets/images/background/cafe.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "bitter_epilogue_1"
+    },
+
+    // =========================================================================
+    // BITTERSWEET END — Yuna
+    // =========================================================================
+    "bitter_yuna_1": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "night2.mp3",
+        "setFlag": "ending_bittersweet",
+        "next": "bitter_yuna_2"
+    },
+    "bitter_yuna_2": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "bitter_yuna_3"
+    },
+    "bitter_yuna_3": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "bitter_epilogue_1"
+    },
+
+    // =========================================================================
+    // BITTERSWEET END — Dain
+    // =========================================================================
+    "bitter_dain_1": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "night2.mp3",
+        "setFlag": "ending_bittersweet",
+        "next": "bitter_dain_2"
+    },
+    "bitter_dain_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "bitter_dain_3"
+    },
+    "bitter_dain_3": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "bitter_epilogue_1"
+    },
+
+    // =========================================================================
+    // BITTERSWEET END — Shared Epilogue
+    // =========================================================================
+    "bitter_epilogue_1": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "bitter_epilogue_2"
+    },
+    "bitter_epilogue_2": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "bitter_epilogue_3"
+    },
+    "bitter_epilogue_3": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
     },
 
     // =========================================================================
@@ -100,6 +462,8 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "night": true,
         "fade": true,
+        "bgm": "ending.mp3",
+        "setFlag": "ending_true_love",
         "next": "true_seo_2"
     },
     "true_seo_2": {
@@ -165,6 +529,8 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "night": true,
         "fade": true,
+        "bgm": "ending.mp3",
+        "setFlag": "ending_true_love",
         "next": "true_yuna_2"
     },
     "true_yuna_2": {
@@ -223,6 +589,8 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "night": true,
         "fade": true,
+        "bgm": "ending.mp3",
+        "setFlag": "ending_true_love",
         "next": "true_dain_2"
     },
     "true_dain_2": {

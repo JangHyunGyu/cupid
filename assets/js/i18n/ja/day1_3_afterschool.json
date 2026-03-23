@@ -262,5 +262,69 @@
         "text": "*保健先生と保健室で会話中。*",
         "context": "Day 1放課後。転校生がめまいで保健室を訪れた。 トーン：明るく軽い会話。初日のドキドキと好奇心。重い話は絶対にしない。冗談とテンポの良いやり取り中心。",
         "personality": "保健先生はいたずら好きだが本音を冗談の裏に隠す女性。元病院看護師でバーンアウト経験者。"
+    },
+    "after1_jealousy_seo_1": {
+        "name": "ダイン",
+        "text": "ねえ、昼休みどこ行ったの？売店行ったのにいなかったんだけど。"
+    },
+    "after1_jealousy_seo_2": {
+        "name": "{name}",
+        "text": "生徒会長と屋上で食べたんだけど。"
+    },
+    "after1_jealousy_seo_3": {
+        "name": "ダイン",
+        "text": "...屋上？二人で？"
+    },
+    "after1_jealousy_seo_choice": {
+        "name": "{name}",
+        "text": "*ダインの声が少し上がった。*",
+        "choices": [
+            "生徒会長と屋上で食べたよ。（正直）",
+            "いや、一人でぶらぶらしてた。（嘘）"
+        ]
+    },
+    "after1_jealousy_seo_honest": {
+        "name": "{name}",
+        "text": "うん、会長が連れてってくれた。弁当まで作ってきてたよ。"
+    },
+    "after1_jealousy_seo_honest_2": {
+        "name": "ダイン",
+        "text": "...そう？言ってくれればいいのに。"
+    },
+    "after1_jealousy_seo_lie": {
+        "name": "{name}",
+        "text": "いや、一人でうろうろしてただけ。"
+    },
+    "after1_jealousy_seo_lie_2": {
+        "name": "ダイン",
+        "text": "ホント？一人で？——まあ、初日だもんね！迷うよね！"
+    },
+    "after1_jealousy_seo_yuna": {
+        "name": "{name}",
+        "text": "*ポケットから折りたたんだメモが出てきた。ユナの字。*"
+    },
+    "after1_jealousy_seo_yuna_2": {
+        "name": "{name}",
+        "text": "*「昼休みに屋上で見た。...生徒会長と仲良さそうだった。」——最後に点が三つ。飲み込んだ言葉。*"
+    },
+    "after1_jealousy_dain_1": {
+        "name": "ソヨン",
+        "text": "昼休みに売店でダインと一緒にいるの見たけど。適応早いね。"
+    },
+    "after1_jealousy_dain_2": {
+        "name": "{name}",
+        "text": "*笑っている。でも目が笑っていない。指がクリップボードを叩いている。*"
+    },
+    "after1_jealousy_yuna_1": {
+        "name": "ダイン",
+        "text": "昼休み図書館行ったって？ユナと？"
+    },
+    "after1_jealousy_yuna_2": {
+        "name": "ダイン",
+        "text": "...あの子、普段人と会わないのに。"
+    },
+    "after1_pre_miss": {
+        "name": "{name}",
+        "text": "*廊下を歩き続ける。*"
     }
 }

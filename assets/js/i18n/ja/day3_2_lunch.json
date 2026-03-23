@@ -225,5 +225,88 @@
     "lunch3_share_1": {
         "name": "僕",
         "text": "*みんなで分けようと言った。気まずいけど — 悪くない空気だ。三人とも笑っている。本心かどうかはわからないけど。*"
+    },
+    "lunch3_seo_skin_check": {},
+    "lunch3_seo_skin_1": {
+        "name": "僕",
+        "text": "*お弁当を食べていたら、口元にご飯粒が付いた。ソヨンが手を伸ばして取ってくれる。*"
+    },
+    "lunch3_seo_skin_2": {
+        "name": "ソヨン",
+        "text": "「…人前でもう少し気をつけて。」"
+    },
+    "lunch3_seo_skin_3": {
+        "name": "僕",
+        "text": "*手を引いたソヨンが箔を落とした。——自然な動作に見えたが、指先がわずかに震えていた。*"
+    },
+    "lunch3_seo_witness_1": {
+        "name": "僕",
+        "text": "*ダインが教室のドアの前で立ち止まる。ソヨンがお弁当を受け取るのを見る。「…あ。」戻っていく。*"
+    },
+    "lunch3_seo_witness_choice": {
+        "name": "僕",
+        "text": "*ダインの後ろ姿が廊下に消えていく。*",
+        "choices": [
+            "ダイン！",
+            "(ソヨンに集中する)"
+        ]
+    },
+    "lunch3_seo_chase_dain_1": {
+        "name": "僕",
+        "text": "*ソヨンがお弁当を置く。表情がない。*"
+    },
+    "lunch3_seo_chase_dain_2": {
+        "name": "ダイン",
+        "text": "「…なに。」"
+    },
+    "lunch3_seo_focus_1": {
+        "name": "僕",
+        "text": "*ダインの足音が廊下に遠ざかる。*"
+    },
+    "lunch3_seo_focus_2": {
+        "name": "ソヨン",
+        "text": "「…気になる？」"
+    },
+    "lunch3_dain_skin_check": {},
+    "lunch3_dain_skin_1": {
+        "name": "僕",
+        "text": "*お昼の賭けに勝って興奮したダインが両腕を広げる。抱きつかれる。1秒。*"
+    },
+    "lunch3_dain_skin_2": {
+        "name": "僕",
+        "text": "*ダインが弾かれたように離れる。耳が赤い。*"
+    },
+    "lunch3_dain_skin_3": {
+        "name": "ダイン",
+        "text": "「今のカウントしないで！！」"
+    },
+    "lunch3_dain_witness_1": {
+        "name": "僕",
+        "text": "*ユナが廊下を通りかかり体育館の中を見る。ダインが笑っている。ユナは足を速める。*"
+    },
+    "lunch3_dain_witness_2": {
+        "name": "僕",
+        "text": "*次の休み時間、ユナの席が空いている。*"
+    },
+    "lunch3_yuna_skin_check": {},
+    "lunch3_yuna_skin_1": {
+        "name": "僕",
+        "text": "*メモを渡しながらユナが手を握る。離さない。*"
+    },
+    "lunch3_yuna_skin_2": {
+        "name": "ユナ",
+        "text": "「…これはメモの内容じゃない。ただ。」"
+    },
+    "lunch3_yuna_skin_3": {
+        "name": "僕",
+        "text": "*文が終わってからやっと手を離す。*"
+    },
+    "lunch3_yuna_witness_1": {
+        "name": "ソヨン",
+        "text": "「図書館でお弁当の匂いがしたらしいよ。…ユナと？」"
+    },
+    "lunch3_yuna_witness_2": {
+        "name": "僕",
+        "text": "*表情が無い。それが余計に怖い。*"
     }
 }

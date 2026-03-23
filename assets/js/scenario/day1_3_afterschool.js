@@ -47,6 +47,104 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "branches": [
+            { "condition": "chose_seoyeon_lunch", "next": "after1_jealousy_seo_1" },
+            { "condition": "chose_dain_lunch", "next": "after1_jealousy_dain_1" },
+            { "condition": "chose_yuna_lunch", "next": "after1_jealousy_yuna_1" },
+            { "next": "after1_pre_miss" }
+        ]
+    },
+    // =========================================================================
+    // B-1: 점심 선택 여파 — 질투/갈등 반응
+    // =========================================================================
+    // --- 서연과 점심 먹음 → 다인 반응 ---
+    "after1_jealousy_seo_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after1_jealousy_seo_2"
+    },
+    "after1_jealousy_seo_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after1_jealousy_seo_3"
+    },
+    "after1_jealousy_seo_3": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_pout.png",
+        "next": "after1_jealousy_seo_choice"
+    },
+    "after1_jealousy_seo_choice": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_pout.png",
+        "choices": [
+            {
+                "next": "after1_jealousy_seo_honest",
+                "stats": { "Dain": { "affinity": -2 } },
+                "setFlags": ["day1_honest_to_dain"]
+            },
+            {
+                "next": "after1_jealousy_seo_lie",
+                "setFlags": ["day1_lied_to_dain"]
+            }
+        ]
+    },
+    "after1_jealousy_seo_honest": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_pout.png",
+        "next": "after1_jealousy_seo_honest_2"
+    },
+    "after1_jealousy_seo_honest_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after1_jealousy_seo_yuna"
+    },
+    "after1_jealousy_seo_lie": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after1_jealousy_seo_lie_2"
+    },
+    "after1_jealousy_seo_lie_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "after1_jealousy_seo_yuna"
+    },
+    // --- 서연과 점심 먹음 → 유나 쪽지 반응 ---
+    "after1_jealousy_seo_yuna": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after1_jealousy_seo_yuna_2"
+    },
+    "after1_jealousy_seo_yuna_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after1_pre_miss"
+    },
+    // --- 다인과 점심 먹음 → 서연 반응 ---
+    "after1_jealousy_dain_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after1_jealousy_dain_2"
+    },
+    "after1_jealousy_dain_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after1_pre_miss"
+    },
+    // --- 유나와 점심 먹음 → 다인 반응 ---
+    "after1_jealousy_yuna_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after1_jealousy_yuna_2"
+    },
+    "after1_jealousy_yuna_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after1_pre_miss"
+    },
+    // --- 합류: 미선택 캐릭터 만남 체인 ---
+    "after1_pre_miss": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "branches": [
             { "condition": "met_dain", "next": "after_dain_skip" },
             { "next": "after_miss_dain_1" }
         ]

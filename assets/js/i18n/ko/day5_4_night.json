@@ -3,6 +3,162 @@
         "name": "시스템",
         "text": ""
     },
+    "ending_affinity_check": {
+        "name": "시스템",
+        "text": ""
+    },
+    "ending_aff_check_seo": {
+        "name": "시스템",
+        "text": ""
+    },
+    "ending_aff_check_yuna": {
+        "name": "시스템",
+        "text": ""
+    },
+    "ending_aff_check_dain": {
+        "name": "시스템",
+        "text": ""
+    },
+    "ending_confessed_aff_check": {
+        "name": "시스템",
+        "text": ""
+    },
+    "ending_confessed_aff_seo": {
+        "name": "시스템",
+        "text": ""
+    },
+    "ending_confessed_aff_yuna": {
+        "name": "시스템",
+        "text": ""
+    },
+    "ending_confessed_aff_dain": {
+        "name": "시스템",
+        "text": ""
+    },
+    "perfect_seo_1": {
+        "name": "{name}",
+        "text": "*서연의 옥상. 서연이 직접 가꾼 화분 사이에 서 있다.*"
+    },
+    "perfect_seo_2": {
+        "name": "{name}",
+        "text": "*처음으로 안경을 벗고 — 울고 있다.*"
+    },
+    "perfect_seo_3": {
+        "name": "서연",
+        "text": "...연습 안 한 표정이야, 이거."
+    },
+    "perfect_seo_4": {
+        "name": "서연",
+        "text": "졸업해도 여기 올 거야. 이 화분은 네가 있어야 자라거든."
+    },
+    "perfect_seo_5": {
+        "name": "{name}",
+        "text": "*서연이 손을 뻗는다. 새끼손가락이 아니다. 손 전체를.*"
+    },
+    "perfect_yuna_1": {
+        "name": "{name}",
+        "text": "*도서관 별관, 비밀 다락방. 유나가 소설 한 편을 건넨다.*"
+    },
+    "perfect_yuna_2": {
+        "name": "{name}",
+        "text": "*제목이 주인공 이름이다.*"
+    },
+    "perfect_yuna_3": {
+        "name": "유나",
+        "text": "...다 읽고 나면 말해줘. 그게 내 대답이야."
+    },
+    "perfect_yuna_4": {
+        "name": "{name}",
+        "text": "*소설의 마지막 문장: '사라지지 않는 사람이 있었다. 그 사람 덕분에, 나도 사라지지 않기로 했다.'*"
+    },
+    "perfect_yuna_5": {
+        "name": "{name}",
+        "text": "*유나의 첫 장편소설이 출판됐다. 헌정사: '세 번째 별에게.'*"
+    },
+    "perfect_dain_1": {
+        "name": "{name}",
+        "text": "*체육관. 다인이 마지막 서브를 날린다. 붕대를 풀면서.*"
+    },
+    "perfect_dain_2": {
+        "name": "다인",
+        "text": "이게 마지막 토스야. — 근데 시작이기도 해."
+    },
+    "perfect_dain_3": {
+        "name": "다인",
+        "text": "코트 밖에서도 나, 괜찮은 사람이야?"
+    },
+    "perfect_dain_4": {
+        "name": "{name}",
+        "text": "코트 안에서도 밖에서도."
+    },
+    "perfect_dain_5": {
+        "name": "{name}",
+        "text": "*다인이 배구공을 코트에 내려놓는다. 돌아서서 웃는다. 느낌표 없는 웃음.*"
+    },
+    "perfect_epilogue_1": {
+        "name": "{name}",
+        "text": "*모든 선택이 하나의 사람을 향해 있었다. 5일이 아니라, 하루하루가 전부였다.*"
+    },
+    "perfect_epilogue_2": {
+        "name": "{name}",
+        "text": "*1년 후. 대학 입학식 날. 핸드폰에 메시지가 와 있다.*"
+    },
+    "perfect_epilogue_3": {
+        "name": "{name}",
+        "text": "*달라진 건 많다. 하지만 변하지 않은 것도 있다. — 그 사람이 내 옆에 있다는 것.*"
+    },
+    "perfect_epilogue_4": {
+        "name": "시스템",
+        "text": "─── PERFECT END ───"
+    },
+    "bitter_seo_1": {
+        "name": "{name}",
+        "text": "*고백은 했다. 받아들여졌다. — 근데 그게 끝이었다.*"
+    },
+    "bitter_seo_2": {
+        "name": "서연",
+        "text": "...우리 잘 될 줄 알았는데. 나도 너도, 뭔가 한 발짝씩 부족했던 것 같아."
+    },
+    "bitter_seo_3": {
+        "name": "{name}",
+        "text": "*카페에서 만난 서연. 안경 너머 시선이 건조하다. 예전의 여유도, 떨림도 없다. 그냥 — 정리하러 온 사람의 눈이다.*"
+    },
+    "bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*고백은 했다. 받아들여졌다. — 근데 그게 끝이었다.*"
+    },
+    "bitter_yuna_2": {
+        "name": "유나",
+        "text": "...가끔 생각나. 도서관 냄새 맡으면. 그때 좀 더 말할 걸."
+    },
+    "bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*마지막 쪽지. 우편함에 꽂혀 있었다. 유나의 글씨. 짧다. — 언제나 그랬듯. 근데 이번에는 짧은 게 아니라, 더 쓸 말이 없는 거다.*"
+    },
+    "bitter_dain_1": {
+        "name": "{name}",
+        "text": "*고백은 했다. 받아들여졌다. — 근데 그게 끝이었다.*"
+    },
+    "bitter_dain_2": {
+        "name": "다인",
+        "text": "재밌었어, 진짜로! ...근데 재밌기만 했던 것 같아. 그게 좀 아쉬워."
+    },
+    "bitter_dain_3": {
+        "name": "{name}",
+        "text": "*느낌표가 돌아왔다. 하지만 마지막 문장에는 없다. — 다인이 마침표로 끝내는 건, 더 이상 함께할 에너지가 남지 않았다는 뜻이다.*"
+    },
+    "bitter_epilogue_1": {
+        "name": "{name}",
+        "text": "*졸업 후. 연락이 뜸해졌다. 한 달에 한 번이 두 달에 한 번이 되고, 읽씹이 일상이 되고.*"
+    },
+    "bitter_epilogue_2": {
+        "name": "{name}",
+        "text": "*5일의 기록은 남았다. 아프지 않다. 다만 — 충분하지 않았다. 서로에게.*"
+    },
+    "bitter_epilogue_3": {
+        "name": "시스템",
+        "text": "─── BITTERSWEET END ───"
+    },
     "day5_ending_true": {
         "name": "시스템",
         "text": ""

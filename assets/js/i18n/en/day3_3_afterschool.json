@@ -422,5 +422,53 @@
     "minsu_d3_6b": {
         "name": "Minsu",
         "text": "I won't ask what happened at your old school. But let me tell you one thing."
+    },
+    "after3_reject_for_seo_1": {
+        "name": "Me",
+        "text": "*I run into Dain in the hallway. Her usual energy is gone.*"
+    },
+    "after3_reject_for_seo_2": {
+        "name": "Dain",
+        "text": "...You're not coming to the gym today, are you?"
+    },
+    "after3_reject_for_seo_3": {
+        "name": "Me",
+        "text": "*I pass by the library. Yuna's seat is empty. A single note remains. '...Got it.' Three words.*"
+    },
+    "after3_reject_for_seo_4": {
+        "name": "Me",
+        "text": "*Dain's sentence without an exclamation mark, Yuna's note of only three words. — The weight of choice settles on my shoulders.*"
+    },
+    "after3_reject_for_yuna_1": {
+        "name": "Me",
+        "text": "*Seoyeon is organizing her clipboard in the hallway.*"
+    },
+    "after3_reject_for_yuna_2": {
+        "name": "Seoyeon",
+        "text": "Popular, aren't you."
+    },
+    "after3_reject_for_yuna_3": {
+        "name": "Me",
+        "text": "*Dain is hitting balls alone in the gym. She sees me and says 'Ah, hey!' but turns her face away. Her eyes are red.*"
+    },
+    "after3_reject_for_yuna_4": {
+        "name": "Me",
+        "text": "*Seoyeon's one liner, Dain's red eyes. — The walk back feels heavy.*"
+    },
+    "after3_reject_for_dain_1": {
+        "name": "Me",
+        "text": "*Seoyeon is organizing her clipboard.*"
+    },
+    "after3_reject_for_dain_2": {
+        "name": "Seoyeon",
+        "text": "Student council is busy. I'll eat lunch separately."
+    },
+    "after3_reject_for_dain_3": {
+        "name": "Me",
+        "text": "*No notes in the library. Yuna's bag is gone. She must have left early.*"
+    },
+    "after3_reject_for_dain_4": {
+        "name": "Me",
+        "text": "*Seoyeon's practiced smile, Yuna's empty seat. — The remaining two seats feel emptier.*"
     }
 }

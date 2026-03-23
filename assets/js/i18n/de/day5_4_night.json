@@ -3,6 +3,162 @@
         "name": "System",
         "text": ""
     },
+    "ending_affinity_check": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_seo": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_yuna": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_dain": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_check": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_seo": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_yuna": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_dain": {
+        "name": "System",
+        "text": ""
+    },
+    "perfect_seo_1": {
+        "name": "Ich",
+        "text": "*Seoyeons Dachterrasse. Sie steht zwischen den Pflanzen, die sie selbst gezogen hat.*"
+    },
+    "perfect_seo_2": {
+        "name": "Ich",
+        "text": "*Zum ersten Mal hat sie die Brille abgenommen — und weint.*"
+    },
+    "perfect_seo_3": {
+        "name": "Seoyeon",
+        "text": "...Das ist ein ungeubter Ausdruck."
+    },
+    "perfect_seo_4": {
+        "name": "Seoyeon",
+        "text": "Auch nach dem Abschluss werde ich herkommen. Diese Pflanzen wachsen nur, wenn du da bist."
+    },
+    "perfect_seo_5": {
+        "name": "Ich",
+        "text": "*Seoyeon streckt die Hand aus. Nicht den kleinen Finger. Die ganze Hand.*"
+    },
+    "perfect_yuna_1": {
+        "name": "Ich",
+        "text": "*Der Bibliotheksanbau, der geheime Dachboden. Yuna reicht eine Kurzgeschichte.*"
+    },
+    "perfect_yuna_2": {
+        "name": "Ich",
+        "text": "*Der Titel ist der Name des Protagonisten.*"
+    },
+    "perfect_yuna_3": {
+        "name": "Yuna",
+        "text": "...Sag mir, was du denkst, wenn du fertig bist. Das ist meine Antwort."
+    },
+    "perfect_yuna_4": {
+        "name": "Ich",
+        "text": "*Der letzte Satz der Geschichte: 'Es gab jemanden, der nie verschwand. Dank dieser Person beschloss auch ich, nicht zu verschwinden.'*"
+    },
+    "perfect_yuna_5": {
+        "name": "Ich",
+        "text": "*Yunas erster Roman wurde veroffentlicht. Die Widmung: 'Fur den dritten Stern.'*"
+    },
+    "perfect_dain_1": {
+        "name": "Ich",
+        "text": "*Die Turnhalle. Dain schlagt ihren letzten Aufschlag. Wahrend sie ihre Bandagen lost.*"
+    },
+    "perfect_dain_2": {
+        "name": "Dain",
+        "text": "Das ist der letzte Wurf. — Aber es ist auch ein Anfang."
+    },
+    "perfect_dain_3": {
+        "name": "Dain",
+        "text": "Bin ich auch abseits des Spielfelds ein guter Mensch?"
+    },
+    "perfect_dain_4": {
+        "name": "Ich",
+        "text": "Auf dem Feld und daneben."
+    },
+    "perfect_dain_5": {
+        "name": "Ich",
+        "text": "*Dain legt den Volleyball auf das Spielfeld. Sie dreht sich um und lachelt. Ein Lacheln ohne Ausrufezeichen.*"
+    },
+    "perfect_epilogue_1": {
+        "name": "Ich",
+        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht funf Tage — jeder einzelne Tag war alles.*"
+    },
+    "perfect_epilogue_2": {
+        "name": "Ich",
+        "text": "*Ein Jahr spater. Tag der Universitatseinschreibung. Eine Nachricht auf meinem Handy.*"
+    },
+    "perfect_epilogue_3": {
+        "name": "Ich",
+        "text": "*Vieles hat sich geandert. Aber manches nicht. — Diese Person ist immer noch an meiner Seite.*"
+    },
+    "perfect_epilogue_4": {
+        "name": "System",
+        "text": "─── PERFECT END ───"
+    },
+    "bitter_seo_1": {
+        "name": "Ich",
+        "text": "*Ich habe gestanden. Es wurde angenommen. — Aber das war alles.*"
+    },
+    "bitter_seo_2": {
+        "name": "Seoyeon",
+        "text": "...Ich dachte, es wurde klappen. Wir waren wohl beide einen Schritt zu kurz."
+    },
+    "bitter_seo_3": {
+        "name": "Ich",
+        "text": "*Seoyeon im Cafe. Ihr Blick hinter der Brille ist trocken. Keine Gelassenheit, kein Zittern. Nur — die Augen von jemandem, der gekommen ist, um abzuschliessen.*"
+    },
+    "bitter_yuna_1": {
+        "name": "Ich",
+        "text": "*Ich habe gestanden. Es wurde angenommen. — Aber das war alles.*"
+    },
+    "bitter_yuna_2": {
+        "name": "Yuna",
+        "text": "...Manchmal denke ich an dich. Wenn ich die Bibliothek rieche. Ich hatte damals mehr sagen sollen."
+    },
+    "bitter_yuna_3": {
+        "name": "Ich",
+        "text": "*Eine letzte Notiz. Im Briefkasten. Yunas Handschrift. Kurz. — Wie immer. Aber diesmal ist es nicht Kurze. Es gibt einfach nichts mehr zu schreiben.*"
+    },
+    "bitter_dain_1": {
+        "name": "Ich",
+        "text": "*Ich habe gestanden. Es wurde angenommen. — Aber das war alles.*"
+    },
+    "bitter_dain_2": {
+        "name": "Dain",
+        "text": "Es hat Spass gemacht, echt! ...Aber ich glaube, Spass war alles. Das ist irgendwie schade."
+    },
+    "bitter_dain_3": {
+        "name": "Ich",
+        "text": "*Die Ausrufezeichen sind zuruck. Aber der letzte Satz hat keines. — Wenn Dain mit einem Punkt endet, bedeutet das, dass keine Energie mehr ubrig ist.*"
+    },
+    "bitter_epilogue_1": {
+        "name": "Ich",
+        "text": "*Nach dem Abschluss. Der Kontakt wurde seltener. Einmal im Monat wurde zu einmal alle zwei Monate, und Nachrichten ungelesen zu lassen wurde zur Gewohnheit.*"
+    },
+    "bitter_epilogue_2": {
+        "name": "Ich",
+        "text": "*Die Erinnerung an funf Tage bleibt. Es tut nicht weh. Es war nur — nicht genug. Fur uns beide.*"
+    },
+    "bitter_epilogue_3": {
+        "name": "System",
+        "text": "─── BITTERSWEET END ───"
+    },
     "day5_ending_true": {
         "name": "System",
         "text": ""

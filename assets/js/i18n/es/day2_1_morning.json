@@ -238,5 +238,53 @@
     "hidden_homeroom_d2_12": {
         "name": "Yo",
         "text": "*Salgo de la sala de profesores — no puedo dejar de pensar en esos papeles del cajón.*"
+    },
+    "morning2_greet_seo_1": {
+        "name": "Seoyeon",
+        "text": "Lo que dijiste en la azotea ayer — ¿sigue en pie?"
+    },
+    "morning2_greet_seo_2": {
+        "name": "{name}",
+        "text": "*Seoyeon vino a mí primero. Su tono habitual, pero con un matiz de querer confirmación.*"
+    },
+    "morning2_greet_seo_others": {
+        "name": "{name}",
+        "text": "*Dain echa un vistazo desde el fondo del salón. Se da la vuelta. Yuna se hunde más en su libro. Pasa las páginas más rápido.*"
+    },
+    "morning2_greet_seo_others_2": {
+        "name": "{name}",
+        "text": "*Dos reacciones sutiles. — ¿Debería darme cuenta, o hacerme el distraído?*"
+    },
+    "morning2_greet_dain_1": {
+        "name": "Dain",
+        "text": "¡Oye! ¡Ayer fue divertido, hagamos algo hoy también!"
+    },
+    "morning2_greet_dain_2": {
+        "name": "{name}",
+        "text": "*Dain me da una palmada en el hombro por detrás. Sin dudarlo.*"
+    },
+    "morning2_greet_dain_others": {
+        "name": "{name}",
+        "text": "*Seoyeon pasa hojeando su portapapeles. \"Qué energía.\" No se sabe si es sarcasmo o admiración. Yuna no reacciona. Pero la mano que escribía se ha detenido.*"
+    },
+    "morning2_greet_dain_others_2": {
+        "name": "{name}",
+        "text": "*Me reí, pero — el comentario de Seoyeon se queda.*"
+    },
+    "morning2_greet_yuna_1": {
+        "name": "{name}",
+        "text": "*A punto de sentarme — una nota doblada en mi escritorio. \"...Gracias por lo de ayer.\"*"
+    },
+    "morning2_greet_yuna_2": {
+        "name": "{name}",
+        "text": "*La letra de Yuna. Una frase más larga que ayer.*"
+    },
+    "morning2_greet_yuna_others": {
+        "name": "{name}",
+        "text": "*Seoyeon pasa. \"¿Una carta tan temprano?\" Sonríe. Pero su mirada se detiene en la nota medio segundo. Dain: \"¡¿Qué es eso?! ¡Déjame ver!\" Extiende la mano.*"
+    },
+    "morning2_greet_yuna_others_2": {
+        "name": "{name}",
+        "text": "*Guardé la nota en el bolsillo. Las dos reacciones son sutilmente diferentes.*"
     }
 }

@@ -238,5 +238,53 @@
     "hidden_homeroom_d2_12": {
         "name": "僕",
         "text": "*職員室を出る——引き出しの中の紙の束が気になって仵方ない。*"
+    },
+    "morning2_greet_seo_1": {
+        "name": "ソヨン",
+        "text": "昨日屋上で言ったこと、まだ有効？"
+    },
+    "morning2_greet_seo_2": {
+        "name": "{name}",
+        "text": "*ソヨンから声をかけてきた。いつもの落ち着いたトーンだけど、どこか確認したがっている感じ。*"
+    },
+    "morning2_greet_seo_others": {
+        "name": "{name}",
+        "text": "*ダインが教室の奥からちらっと見る。顔を背ける。ユナは本に更に没頭する。ページをめくる速度が上がった。*"
+    },
+    "morning2_greet_seo_others_2": {
+        "name": "{name}",
+        "text": "*二人の微かな反応。——気づくべきか、気づかないふりをすべきか。*"
+    },
+    "morning2_greet_dain_1": {
+        "name": "ダイン",
+        "text": "ねえ！昨日楽しかったよね、今日も一緒に何かしよ！"
+    },
+    "morning2_greet_dain_2": {
+        "name": "{name}",
+        "text": "*ダインが後ろから肩を叩く。躊躇いのないスキンシップ。*"
+    },
+    "morning2_greet_dain_others": {
+        "name": "{name}",
+        "text": "*ソヨンがクリップボードをめくりながら通り過ぎる。「元気だね。」皮肉か感心か分からない。ユナは無反応。でもメモを書いていた手が止まっている。*"
+    },
+    "morning2_greet_dain_others_2": {
+        "name": "{name}",
+        "text": "*笑って流したけど——ソヨンの一言がちょっと引っかかる。*"
+    },
+    "morning2_greet_yuna_1": {
+        "name": "{name}",
+        "text": "*座ろうとしたら——机の上に折りたたんだメモ。「...昨日、ありがとう。」*"
+    },
+    "morning2_greet_yuna_2": {
+        "name": "{name}",
+        "text": "*ユナの字。昨日より一文長くなった。*"
+    },
+    "morning2_greet_yuna_others": {
+        "name": "{name}",
+        "text": "*ソヨンが通りがかりに「朝から手紙？」笑っている。でも視線がメモの上で0.5秒止まった。ダイン「何それ！見せて！」手を伸ばす。*"
+    },
+    "morning2_greet_yuna_others_2": {
+        "name": "{name}",
+        "text": "*メモをポケットにしまった。二人の反応が微妙に違う。*"
     }
 }

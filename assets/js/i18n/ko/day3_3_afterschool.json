@@ -12,6 +12,54 @@
             "체육관으로"
         ]
     },
+    "after3_reject_for_seo_1": {
+        "name": "{name}",
+        "text": "*복도에서 다인과 마주친다. 평소의 에너지가 없다.*"
+    },
+    "after3_reject_for_seo_2": {
+        "name": "다인",
+        "text": "...오늘 체육관 안 올 거지?"
+    },
+    "after3_reject_for_seo_3": {
+        "name": "{name}",
+        "text": "*도서관 옆을 지나간다. 유나의 자리가 비어 있다. 쪽지가 하나 남아 있다. '...알겠어.' 세 글자.*"
+    },
+    "after3_reject_for_seo_4": {
+        "name": "{name}",
+        "text": "*느낌표가 없는 다인의 문장, 세 글자밖에 안 되는 유나의 쪽지. — 선택의 무게가 어깨에 내려앉는다.*"
+    },
+    "after3_reject_for_yuna_1": {
+        "name": "{name}",
+        "text": "*복도에서 서연이 클립보드를 정리하고 있다.*"
+    },
+    "after3_reject_for_yuna_2": {
+        "name": "서연",
+        "text": "인기 많네."
+    },
+    "after3_reject_for_yuna_3": {
+        "name": "{name}",
+        "text": "*다인이 체육관에서 혼자 공을 치고 있다. 나를 보고 \"아, 안녕!\" 하지만 얼굴을 돌린다. 눈이 빨갛다.*"
+    },
+    "after3_reject_for_yuna_4": {
+        "name": "{name}",
+        "text": "*서연의 한마디, 다인의 빨간 눈. — 돌아서는 길이 무겁다.*"
+    },
+    "after3_reject_for_dain_1": {
+        "name": "{name}",
+        "text": "*서연이 클립보드를 정리하고 있다.*"
+    },
+    "after3_reject_for_dain_2": {
+        "name": "서연",
+        "text": "학생회 일이 바빠서. 점심은 따로 먹을게."
+    },
+    "after3_reject_for_dain_3": {
+        "name": "{name}",
+        "text": "*도서관에 쪽지가 없다. 유나의 가방이 없다. 일찍 간 것 같다.*"
+    },
+    "after3_reject_for_dain_4": {
+        "name": "{name}",
+        "text": "*서연의 연습한 웃음, 유나의 빈 자리. — 남은 두 사람의 자리가 비어 가는 느낌.*"
+    },
     "after3_seo_1": {
         "name": "{name}",
         "text": "*학생회실 문을 열었다. — 서연이 책상에 엎드려 있다.*"
