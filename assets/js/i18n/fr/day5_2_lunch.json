@@ -69,7 +69,7 @@
     },
     "tour_yuna_3": {
         "name": "{name}",
-        "text": "À chaque fois que je viens ici, j'ai l'impression que le temps s'arrête."
+        "text": "À chaque fois que je viens ici, j'ai l'impression que le temps passe différemment."
     },
     "tour_yuna_4": {
         "name": "Yuna",
@@ -157,7 +157,7 @@
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "Mais c'est bizarre — avant, je pensais que sans le volley, je n'existais plus. Mais maintenant, ce n'est plus le cas."
+        "text": "Mais c'est bizarre — le volley, c'était toute ma vie. Mais maintenant je vois aussi autre chose."
     },
     "tour_dain_13": {
         "name": "{name}",

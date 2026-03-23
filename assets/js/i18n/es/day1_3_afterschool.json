@@ -223,7 +223,7 @@
     },
     "after_nurse_enter_4": {
         "name": "Enfermera",
-        "text": "¿Eres el nuevo, verdad? Ya en la enfermería el primer día. Debes estar estresado~"
+        "text": "¿Eres el nuevo? En la enfermería desde el primer día — debes estar agotado. ¿Qué te pasa?"
     },
     "after_nurse_enter_5": {
         "name": "Yo",

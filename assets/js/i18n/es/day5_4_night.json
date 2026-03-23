@@ -77,11 +77,11 @@
     },
     "true_dain_3": {
         "name": "Dain",
-        "text": "Mi corazón late muy rápido. Pon tu mano aquí."
+        "text": "Creo que estoy muy nerviosa ahora. Pon tu mano aquí."
     },
     "true_dain_4": {
         "name": "Yo",
-        "text": "*Es rápido. Muy rápido.*"
+        "text": "*Los latidos bajo mis dedos son nítidos.*"
     },
     "true_dain_5": {
         "name": "Yo",
@@ -161,7 +161,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "...Idiota. Pero a un idiota que vuelve se le puede perdonar."
+        "text": "Eres un completo idiota. Pero como volviste, te perdono esta vez."
     },
     "good_1_dain": {
         "name": "Dain",
@@ -225,7 +225,7 @@
     },
     "harem_2": {
         "name": "Yo",
-        "text": "*Yuna bajó la cabeza. Por mucho rato. Y cuando la levantó, sus ojos secos sonreían. ...Idiota. Dos frases de emoción comprimidas en una sola palabra.*"
+        "text": "*Yuna bajó la cabeza. Por mucho rato. Y cuando la levantó, sus ojos secos sonreían. ...Canalla. Dos frases de emoción comprimidas en esa sola palabra.*"
     },
     "harem_3": {
         "name": "Yo",
@@ -420,7 +420,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "Enfermera",
-        "text": "Oh, un graduado. Un paciente que viene a despedirse. — Me conmueve."
+        "text": "Oh, un graduado. Un paciente que viene a despedirse. Qué bonito, ¿no?"
     },
     "hidden_good_nurse_2": {
         "name": "Enfermera",

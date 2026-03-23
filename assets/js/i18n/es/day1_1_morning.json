@@ -13,7 +13,7 @@
     },
     "start_3b": {
         "name": "Yo",
-        "text": "*El corazón me late deprisa. No quiero admitirlo, pero estoy nervioso. Los dedos juguetean con el móvil dentro del bolsillo. — Es un tic. Cuando la ansiedad aprieta.*"
+        "text": "*Mis dedos juguetean con el borde del móvil dentro del bolsillo. No quiero admitirlo, pero es un tic que solo aparece cuando estoy nervioso.*"
     },
     "start_4": {
         "name": "Yo",
@@ -93,7 +93,7 @@
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
-        "text": "Vaya. Primer día y ya alguien así. Interés +1."
+        "text": "Vaya. Primer día y no te echas atrás. Voy a recordar tu nombre."
     },
     "choice_flirt_3": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "¡Ay, profe! ¡Es que da mucha pereza cambiarse! ¡De todos modos, estoy emocionada con el nuevo!!"
+        "text": "¡Ay, profe! ¡Es que da mucha pereza cambiarse al uniforme deportivo, qué le hago! ¡Bienvenido, nuevo!"
     },
     "classroom_dain_5": {
         "name": "Yo",

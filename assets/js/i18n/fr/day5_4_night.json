@@ -77,11 +77,11 @@
     },
     "true_dain_3": {
         "name": "Dain",
-        "text": "Mon cœur bat super vite. Mets ta main ici."
+        "text": "Je crois que je suis super nerveuse là. Mets ta main ici."
     },
     "true_dain_4": {
         "name": "Moi",
-        "text": "*C'est rapide. Vraiment rapide.*"
+        "text": "*Les battements sous mes doigts sont nets.*"
     },
     "true_dain_5": {
         "name": "Moi",
@@ -161,7 +161,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "...Idiot. Mais un idiot qui revient, on peut lui pardonner."
+        "text": "T'es vraiment stupide. Mais puisque t'es revenu, je te pardonne cette fois."
     },
     "good_1_dain": {
         "name": "Dain",
@@ -225,7 +225,7 @@
     },
     "harem_2": {
         "name": "Moi",
-        "text": "*Yuna a baissé la tête. Longtemps. Et quand elle l'a relevée, ses yeux secs souriaient. ...Idiot. Deux phrases d'émotion compressées dans ce seul mot.*"
+        "text": "*Yuna a baissé la tête. Longtemps. Et quand elle l'a relevée, ses yeux secs souriaient. ...Sale type. Deux phrases d'émotion compressées dans ces mots.*"
     },
     "harem_3": {
         "name": "Moi",
@@ -420,7 +420,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "Infirmière",
-        "text": "Oh, un diplômé. Un patient qui fait ses adieux. — Je suis touchée."
+        "text": "Oh, un diplômé. Un patient qui vient dire au revoir. C'est touchant, non ?"
     },
     "hidden_good_nurse_2": {
         "name": "Infirmière",

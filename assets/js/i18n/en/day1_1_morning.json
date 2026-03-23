@@ -13,7 +13,7 @@
     },
     "start_3b": {
         "name": "{name}",
-        "text": "*My heart is racing. I hate to admit it, but I'm nervous. My hand fidgets with my phone inside my pocket. — A habit. When I'm anxious.*"
+        "text": "*My hand fidgets with the edge of my phone inside my pocket. I hate to admit it, but it's a habit that only comes out when I'm nervous.*"
     },
     "start_4": {
         "name": "Me",
@@ -93,7 +93,7 @@
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
-        "text": "Wow. First day and already someone like this. Interest +1."
+        "text": "Wow. First day and you're already not backing down. I'll remember your name."
     },
     "choice_flirt_3": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Aw, teach! Changing is such a hassle! Anyway, I'm just happy about the new kid!"
+        "text": "Aw, teach! Changing out of my jersey is such a hassle, what can I do? Anyway, welcome, new kid!"
     },
     "classroom_dain_5": {
         "name": "Me",
