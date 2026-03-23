@@ -700,6 +700,78 @@ class GalleryData {
                 description: '어두운 체육관에서 혼자 울고 있는 다인',
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
+            },
+            {
+                id: 'ending_perfect_seoyeon',
+                name: '서연과의 약속',
+                character: '서연',
+                description: '석양이 물드는 옥상에서, 서연이 팔짱을 끼며 어깨에 기대는 순간',
+                file: 'assets/images/background/ending_perfect_seoyeon.png',
+                thumbnail: 'assets/images/background/ending_perfect_seoyeon.png'
+            },
+            {
+                id: 'ending_perfect_yuna',
+                name: '유나의 온기',
+                character: '유나',
+                description: '달빛 아래 아지트에서, 유나가 처음으로 등 뒤에서 안아준 밤',
+                file: 'assets/images/background/ending_perfect_yuna.png',
+                thumbnail: 'assets/images/background/ending_perfect_yuna.png'
+            },
+            {
+                id: 'ending_perfect_dain',
+                name: '다인의 승리',
+                character: '다인',
+                description: '석양 빛 체육관에서, 다인이 뛰어올라 안기던 순간',
+                file: 'assets/images/background/ending_perfect_dain.png',
+                thumbnail: 'assets/images/background/ending_perfect_dain.png'
+            },
+            {
+                id: 'ending_bittersweet',
+                name: '빗속의 이별',
+                character: null,
+                description: '비 오는 학교 정문, 우산 아래 혼자 서서 멀어지는 뒷모습을 바라보다',
+                file: 'assets/images/background/ending_bittersweet.png',
+                thumbnail: 'assets/images/background/ending_bittersweet.png'
+            },
+            {
+                id: 'ending_true_teacher',
+                name: '금지된 손잡기',
+                character: '담임선생님',
+                description: '카페 창가에서 몰래 손을 잡은 순간, 선생님의 볼이 빨갛게 물들다',
+                file: 'assets/images/background/ending_true_teacher.png',
+                thumbnail: 'assets/images/background/ending_true_teacher.png'
+            },
+            {
+                id: 'ending_true_nurse',
+                name: '안전한 곳',
+                character: '보건선생님',
+                description: '보건선생님의 집 소파에서, 어깨에 기대 잠든 조용한 밤',
+                file: 'assets/images/background/ending_true_nurse.png',
+                thumbnail: 'assets/images/background/ending_true_nurse.png'
+            },
+            {
+                id: 'ending_harem',
+                name: '삼각관계...아니 사각?',
+                character: null,
+                description: '세 명에게 둘러싸인 혼돈의 순간',
+                file: 'assets/images/background/ending_harem.png',
+                thumbnail: 'assets/images/background/ending_harem.png'
+            },
+            {
+                id: 'ending_alone',
+                name: '혼자 남은 방',
+                character: null,
+                description: '어두운 방, 꺼진 핸드폰, 창밖의 도시 불빛만이 유일한 빛',
+                file: 'assets/images/background/ending_alone.png',
+                thumbnail: 'assets/images/background/ending_alone.png'
+            },
+            {
+                id: 'ending_friend',
+                name: '우리들의 졸업사진',
+                character: null,
+                description: '졸업식 날, 교실에서 찍은 다섯 명의 단체 셀카',
+                file: 'assets/images/background/ending_friend.png',
+                thumbnail: 'assets/images/background/ending_friend.png'
             }
         ],
         en: [
@@ -726,7 +798,16 @@ class GalleryData {
                 description: 'Dain crying alone in the dark gym',
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
-            }
+            },
+            { id: 'ending_perfect_seoyeon', name: 'Promise with Seoyeon', character: 'Seoyeon', description: 'On the sunset rooftop, Seoyeon leans on your shoulder', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png' },
+            { id: 'ending_perfect_yuna', name: 'Yuna\'s Warmth', character: 'Yuna', description: 'In the moonlit hideout, Yuna hugs you from behind for the first time', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png' },
+            { id: 'ending_perfect_dain', name: 'Dain\'s Victory', character: 'Dain', description: 'In the sunset gym, Dain leaps into your arms', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png' },
+            { id: 'ending_bittersweet', name: 'Farewell in the Rain', character: null, description: 'Standing alone under an umbrella, watching a silhouette fade away', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png' },
+            { id: 'ending_true_teacher', name: 'Forbidden Touch', character: 'Teacher', description: 'A secret hand-holding at the cafe, her cheeks turning red', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png' },
+            { id: 'ending_true_nurse', name: 'Safe Place', character: 'School Nurse', description: 'She falls asleep on your shoulder on her couch, a quiet night', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png' },
+            { id: 'ending_harem', name: 'Love Triangle...or Square?', character: null, description: 'Surrounded by three girls at once — chaos ensues', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png' },
+            { id: 'ending_alone', name: 'Empty Room', character: null, description: 'A dark room, a dead phone, city lights through the curtain', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png' },
+            { id: 'ending_friend', name: 'Our Graduation Photo', character: null, description: 'A group selfie in the classroom on graduation day', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' }
         ],
         es: [
             {
@@ -752,7 +833,16 @@ class GalleryData {
                 description: 'Dain llorando sola en el gimnasio oscuro',
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
-            }
+            },
+            { id: 'ending_perfect_seoyeon', name: 'Promesa con Seoyeon', character: 'Seoyeon', description: 'En la azotea al atardecer, Seoyeon se apoya en tu hombro', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png' },
+            { id: 'ending_perfect_yuna', name: 'La calidez de Yuna', character: 'Yuna', description: 'En el escondite bajo la luz de la luna, Yuna te abraza por detrás', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png' },
+            { id: 'ending_perfect_dain', name: 'La victoria de Dain', character: 'Dain', description: 'En el gimnasio al atardecer, Dain salta a tus brazos', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png' },
+            { id: 'ending_bittersweet', name: 'Despedida bajo la lluvia', character: null, description: 'Solo bajo un paraguas, viendo una silueta desaparecer', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png' },
+            { id: 'ending_true_teacher', name: 'Toque prohibido', character: 'Profesora', description: 'Tomarse las manos en secreto en el café', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png' },
+            { id: 'ending_true_nurse', name: 'Lugar seguro', character: 'Enfermera', description: 'Ella se duerme en tu hombro en su sofá', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png' },
+            { id: 'ending_harem', name: 'Triángulo...¿o cuadrado?', character: null, description: 'Rodeado por tres chicas a la vez', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png' },
+            { id: 'ending_alone', name: 'Habitación vacía', character: null, description: 'Una habitación oscura, un teléfono apagado', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png' },
+            { id: 'ending_friend', name: 'Nuestra foto de graduación', character: null, description: 'Un selfie grupal el día de la graduación', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' }
         ],
         ja: [
             {
@@ -778,7 +868,16 @@ class GalleryData {
                 description: '暗い体育館で一人泣いているダイン',
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
-            }
+            },
+            { id: 'ending_perfect_seoyeon', name: 'ソヨンとの約束', character: 'ソヨン', description: '夕焼けの屋上で、ソヨンが肩にもたれかかる瞬間', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png' },
+            { id: 'ending_perfect_yuna', name: 'ユナの温もり', character: 'ユナ', description: '月明かりの隠れ家で、ユナが初めて後ろから抱きしめた夜', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png' },
+            { id: 'ending_perfect_dain', name: 'ダインの勝利', character: 'ダイン', description: '夕日の体育館で、ダインが飛びついて抱きついた瞬間', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png' },
+            { id: 'ending_bittersweet', name: '雨の中の別れ', character: null, description: '傘の下で一人、遠ざかる影を見つめる', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png' },
+            { id: 'ending_true_teacher', name: '禁じられた手つなぎ', character: '担任先生', description: 'カフェでこっそり手を繋いだ瞬間、先生の頬が赤く染まる', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png' },
+            { id: 'ending_true_nurse', name: '安全な場所', character: '保健先生', description: '保健先生の家のソファで、肩にもたれて眠った静かな夜', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png' },
+            { id: 'ending_harem', name: '三角関係...いや四角？', character: null, description: '三人の女の子に囲まれた混沌の瞬間', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png' },
+            { id: 'ending_alone', name: '一人きりの部屋', character: null, description: '暗い部屋、消えたスマホ、カーテン越しの街の灯り', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png' },
+            { id: 'ending_friend', name: '僕たちの卒業写真', character: null, description: '卒業式の日、教室で撮った五人の集合セルフィー', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' }
         ],
         fr: [
             {
@@ -804,7 +903,16 @@ class GalleryData {
                 description: 'Dain pleurant seule dans le gymnase sombre',
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
-            }
+            },
+            { id: 'ending_perfect_seoyeon', name: 'Promesse avec Seoyeon', character: 'Seoyeon', description: 'Sur le toit au coucher du soleil, Seoyeon s\'appuie sur ton épaule', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png' },
+            { id: 'ending_perfect_yuna', name: 'La chaleur de Yuna', character: 'Yuna', description: 'Dans le repaire au clair de lune, Yuna t\'enlace par derrière', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png' },
+            { id: 'ending_perfect_dain', name: 'La victoire de Dain', character: 'Dain', description: 'Dans le gymnase au coucher du soleil, Dain saute dans tes bras', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png' },
+            { id: 'ending_bittersweet', name: 'Adieu sous la pluie', character: null, description: 'Seul sous un parapluie, regardant une silhouette s\'éloigner', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png' },
+            { id: 'ending_true_teacher', name: 'Contact interdit', character: 'Professeure', description: 'Se tenir la main en secret au café', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png' },
+            { id: 'ending_true_nurse', name: 'Lieu sûr', character: 'Infirmière', description: 'Elle s\'endort sur ton épaule sur son canapé', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png' },
+            { id: 'ending_harem', name: 'Triangle...ou carré ?', character: null, description: 'Entouré par trois filles en même temps', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png' },
+            { id: 'ending_alone', name: 'Chambre vide', character: null, description: 'Une chambre sombre, un téléphone éteint', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png' },
+            { id: 'ending_friend', name: 'Notre photo de fin d\'année', character: null, description: 'Un selfie de groupe le jour de la remise des diplômes', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' }
         ],
         de: [
             {
@@ -830,7 +938,16 @@ class GalleryData {
                 description: 'Dain weint allein in der dunklen Turnhalle',
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
-            }
+            },
+            { id: 'ending_perfect_seoyeon', name: 'Versprechen mit Seoyeon', character: 'Seoyeon', description: 'Auf dem Dach bei Sonnenuntergang, Seoyeon lehnt sich an deine Schulter', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png' },
+            { id: 'ending_perfect_yuna', name: 'Yunas Wärme', character: 'Yuna', description: 'Im mondbeleuchteten Versteck umarmt Yuna dich zum ersten Mal von hinten', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png' },
+            { id: 'ending_perfect_dain', name: 'Dains Sieg', character: 'Dain', description: 'In der Turnhalle bei Sonnenuntergang springt Dain in deine Arme', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png' },
+            { id: 'ending_bittersweet', name: 'Abschied im Regen', character: null, description: 'Allein unter einem Regenschirm, eine Silhouette verschwindet', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png' },
+            { id: 'ending_true_teacher', name: 'Verbotene Berührung', character: 'Lehrerin', description: 'Heimliches Händchenhalten im Café', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png' },
+            { id: 'ending_true_nurse', name: 'Sicherer Ort', character: 'Schulkrankenschwester', description: 'Sie schläft auf deiner Schulter auf ihrem Sofa ein', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png' },
+            { id: 'ending_harem', name: 'Dreieck...oder Viereck?', character: null, description: 'Von drei Mädchen gleichzeitig umringt', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png' },
+            { id: 'ending_alone', name: 'Leeres Zimmer', character: null, description: 'Ein dunkles Zimmer, ein totes Handy', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png' },
+            { id: 'ending_friend', name: 'Unser Abschlussfoto', character: null, description: 'Ein Gruppenselfie am Abschlusstag', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' }
         ]
     };
 
