@@ -552,11 +552,15 @@
     },
     "wall_seo_pre_low_1": {
         "name": "Me",
-        "text": "*Seoyeon is silent. I need to be the one to speak first.*"
+        "text": "*Seoyeon is silent. I need to be the one to reach out first.*"
+    },
+    "wall_seo_pre_low_1b": {
+        "name": "Me",
+        "text": "*I sent a text. 'Seoyeon, are you okay?' — One minute. Read receipt appears. No reply. Then — my phone rings.*"
     },
     "wall_seo_pre_low_2": {
         "name": "Seoyeon",
-        "text": "Can you come out now? The park. — Sorry, it's sudden."
+        "text": "...I saw your text. Can you come out now? The park. — Sorry, it's sudden."
     },
     "wall_seo_mention_1": {
         "name": "Seoyeon",

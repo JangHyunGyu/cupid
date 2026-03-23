@@ -162,6 +162,7 @@ Object.assign(SCENARIO[1], {
         "character": null,
         "branches": [
             { "condition": "ate_lunch_seoyeon", "next": "after_end" },
+            { "condition": "chose_seoyeon_lunch", "next": "after_end" },
             { "next": "after_miss_seoyeon_1" }
         ]
     },
@@ -234,6 +235,7 @@ Object.assign(SCENARIO[1], {
         "setFlag": "met_yuna",
         "branches": [
             { "condition": "ate_lunch_seoyeon", "next": "after_end" },
+            { "condition": "chose_seoyeon_lunch", "next": "after_end" },
             { "next": "after_miss_seoyeon_1" }
         ]
     },

@@ -552,11 +552,15 @@
     },
     "wall_seo_pre_low_1": {
         "name": "Moi",
-        "text": "*Seoyeon est silencieuse. C'est à moi de parler en premier.*"
+        "text": "*Seoyeon est silencieuse. C'est à moi de faire le premier pas.*"
+    },
+    "wall_seo_pre_low_1b": {
+        "name": "Moi",
+        "text": "*J'ai envoyé un message. \"Seoyeon, ça va ?\" — Une minute. Lu. Pas de réponse. Puis — mon téléphone sonne.*"
     },
     "wall_seo_pre_low_2": {
         "name": "Seoyeon",
-        "text": "Tu peux sortir maintenant ? Le parc. — Désolée, c'est soudain."
+        "text": "...J'ai vu ton message. Tu peux sortir maintenant ? Le parc. — Désolée, c'est soudain."
     },
     "wall_seo_mention_1": {
         "name": "Seoyeon",

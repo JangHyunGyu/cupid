@@ -76,6 +76,12 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
+        "next": "wall_seo_pre_low_1b"
+    },
+    "wall_seo_pre_low_1b": {
+        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "night": true,
         "next": "wall_seo_pre_low_2"
     },
     "wall_seo_pre_low_2": {

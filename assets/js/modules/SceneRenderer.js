@@ -194,19 +194,24 @@ class SceneRenderer {
                     if (currentAff >= branch.minAffinity) return branch.next;
                 }
             } else {
-                // 다중 캐릭터 호감도 분기: 각 branch의 char별 호감도 비교
-                let bestNext = null;
+                // 다중 캐릭터 호감도 분기: 각 branch의 char별 호감도 비교 (동률 시 랜덤)
+                let bestCandidates = [];
                 let bestAffinity = -Infinity;
                 for (const branch of scene.affinityBranches) {
                     if (branch.char) {
                         const aff = this.stateManager.getAffinity(branch.char);
-                        if (aff >= (branch.minAffinity || 0) && aff > bestAffinity) {
-                            bestAffinity = aff;
-                            bestNext = branch.next;
+                        if (aff >= (branch.minAffinity || 0)) {
+                            if (aff > bestAffinity) {
+                                bestAffinity = aff;
+                                bestCandidates = [branch.next];
+                            } else if (aff === bestAffinity) {
+                                bestCandidates.push(branch.next);
+                            }
                         }
                     }
                 }
-                if (bestNext) return bestNext;
+                if (bestCandidates.length === 1) return bestCandidates[0];
+                if (bestCandidates.length > 1) return bestCandidates[Math.floor(Math.random() * bestCandidates.length)];
             }
         }
 
