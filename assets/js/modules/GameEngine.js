@@ -848,6 +848,9 @@ class GameEngine {
         // 현재 씬 ID 저장 (다른 곳에서 참조용)
         this.sceneRenderer.currentSceneId = sceneId;
 
+        // GA4 가상 페이지뷰 전송 (SPA 보정)
+        if (window.sendGAPageView) window.sendGAPageView(sceneId);
+
         // ─────────────────────────────────────────────────────────
         // 📝 호감도 기반 대사 분기
         // ─────────────────────────────────────────────────────────

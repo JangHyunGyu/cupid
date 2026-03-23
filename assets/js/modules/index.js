@@ -88,7 +88,24 @@ window.gameEngine = null;
  * 사용 예시 (HTML):
  * <button onclick="initGame()">새 게임</button>
  */
+/**
+ * 📱 모바일 풀스크린 요청 (게임 시작 시 자동)
+ * - 모바일에서만 동작 (터치 디바이스 + 화면폭 1024px 이하)
+ * - PC에서는 풀스크린 강제하지 않음
+ */
+function requestMobileFullscreen() {
+    const isMobile = ('ontouchstart' in window || navigator.maxTouchPoints > 0) && window.innerWidth <= 1024;
+    if (!isMobile) return;
+
+    const el = document.documentElement;
+    const rfs = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
+    if (rfs && !document.fullscreenElement && !document.webkitFullscreenElement) {
+        rfs.call(el).catch(() => {});
+    }
+}
+
 window.initGame = async () => {
+    requestMobileFullscreen();
     gameEngine = new GameEngine();  // 게임 엔진 인스턴스 생성
     window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
     await gameEngine.startNewGame();  // 처음부터 시작
@@ -101,6 +118,7 @@ window.initGame = async () => {
  * <button onclick="initGameFromSave()">이어하기</button>
  */
 window.initGameFromSave = async (saveData) => {
+    requestMobileFullscreen();
     gameEngine = new GameEngine();  // 게임 엔진 인스턴스 생성
     window.gameEngine = gameEngine; // 개발자 도구에서 접근 가능
     await gameEngine.continueGame();  // 저장 지점부터 재개
