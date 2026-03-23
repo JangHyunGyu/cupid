@@ -1561,6 +1561,89 @@ for (const [sceneId, entry] of Object.entries(i18nData)) {
 
 console.log('[STYLE_CHECK] 대사 스타일 검증 완료 (' + styleIssues + '건 발견)\n');
 
+// ===== Image Matching Check =====
+console.log('[IMAGE_CHECK] 이미지 매칭 검증 시작...');
+
+// 1. 이미지 파일 존재 확인
+const referencedImages = new Set();
+for (const day of Object.keys(SCENARIO)) {
+    for (const [id, scene] of Object.entries(SCENARIO[day])) {
+        if (scene.character) referencedImages.add(scene.character);
+        if (scene.background) referencedImages.add(scene.background);
+        if (scene.characters) {
+            for (const slot of Object.values(scene.characters)) {
+                if (slot.src) referencedImages.add(slot.src);
+            }
+        }
+    }
+}
+
+let imageMissing = 0;
+for (const img of referencedImages) {
+    if (!fs.existsSync(path.join(__dirname, img))) {
+        errors.push('[IMAGE_MISSING] ' + img + ' 파일이 존재하지 않음');
+        imageMissing++;
+    }
+}
+
+// 2. 캐릭터 이미지 매칭 - character:null인데 name이 특정 캐릭터인 경우 warning
+let charMatchWarnings = 0;
+for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
+    const i18n = i18nData[sceneId];
+    if (!i18n || !i18n.name) continue;
+
+    const speakerName = i18n.name.replace(/{name}/g, '').trim();
+    if (!speakerName || speakerName === '' || speakerName === '???' || speakerName === '나') continue;
+
+    // character가 명시적으로 null이고, name이 메인 캐릭터인 경우 → warning
+    if (scene.hasOwnProperty('character') && scene.character === null && NAME_TO_PREFIX[speakerName]) {
+        // characters 슬롯이 있으면 괜찮음 (메신저/투명 캐릭터 연출)
+        if (!scene.characters) {
+            warnings.push('[IMAGE_MATCH] ' + sceneId + ': speaker="' + speakerName + '" 인데 character=null (캐릭터가 말하는데 이미지 없음)');
+            charMatchWarnings++;
+        }
+    }
+    // 반대: character가 있는데 name이 "{name}"(주인공)인 경우는 정상 (나레이션에서 대화 상대 유지)
+}
+
+// 3. 배경 이미지 일관성 - 같은 next 체인 내에서 배경이 갑자기 바뀌는데 장소 이동 나레이션이 없는 경우
+let bgInconsistencies = 0;
+for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
+    if (!scene.next || !allScenes[scene.next]) continue;
+    const nextEntry = allScenes[scene.next];
+    const nextScene = nextEntry.scene;
+
+    // 현재 씬과 다음 씬 모두 배경이 명시적으로 있고, 서로 다른 경우
+    if (scene.background && nextScene.background && scene.background !== nextScene.background) {
+        // Day 전환 / 타임슬롯 전환 패턴은 배경 변경이 정상이므로 제외
+        const nextId = scene.next;
+        const isTimeSlotTransition =
+            (/night/.test(sceneId) && /^morning/.test(nextId)) ||  // 밤→아침
+            (/_freetalk/.test(sceneId) && /_end/.test(nextId)) ||  // 프리토킹→종료
+            (/^(morning|classroom|room_school)/.test(sceneId) && /^lunch/.test(nextId)) ||  // 아침→점심
+            (/^lunch/.test(sceneId) && /^after/.test(nextId)) ||  // 점심→방과후
+            (/_end$/.test(sceneId) && /_(start|1)$/.test(nextId)) ||  // 타임슬롯 종료→시작
+            (/^morning\d*_end/.test(sceneId) && /^(tour|lunch|after)/.test(nextId));  // 아침 종료→다음
+        if (isTimeSlotTransition) continue;
+
+        // 다음 씬의 i18n 텍스트에 장소 이동 힌트가 있는지 확인
+        const nextI18n = i18nData[scene.next];
+        const currentI18n = i18nData[sceneId];
+        const nextText = nextI18n ? (nextI18n.text || '') : '';
+        const currentText = currentI18n ? (currentI18n.text || '') : '';
+        const combinedText = currentText + ' ' + nextText;
+
+        // 장소 이동 관련 키워드
+        const locationHints = /이동|걸어|향하|도착|들어서|나가|나서|올라|내려|교실|복도|옥상|보건실|운동장|체육관|카페|집|학교|문을 열|자리에서|돌아|move|walk|head|arrive|enter|leave|went|go to|came to/i;
+        if (!locationHints.test(combinedText)) {
+            warnings.push('[BG_CHANGE] ' + sceneId + ' → ' + scene.next + ': 배경 변경 (' + path.basename(scene.background) + ' → ' + path.basename(nextScene.background) + ') 인데 장소 이동 나레이션 없음');
+            bgInconsistencies++;
+        }
+    }
+}
+
+console.log('[IMAGE_CHECK] 이미지 매칭 검증 완료 (누락: ' + imageMissing + ', 캐릭터매칭: ' + charMatchWarnings + ', 배경일관성: ' + bgInconsistencies + ')\n');
+
 // ===== Print Results =====
 console.log('========== CUPID VALIDATION RESULTS ==========\n');
 console.log('Total scenes: ' + Object.keys(allScenes).length);

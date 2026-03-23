@@ -363,7 +363,7 @@ Object.assign(SCENARIO[5], {
     },
     "bitter_yuna_2": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_sad.png",
         "night": true,
         "fade": true,
         "next": "bitter_yuna_3"
@@ -1165,7 +1165,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_true_nurse_7": {
         "background": "assets/images/background/nurse_home_event1.png",
-        "character": null,
+        "character": "assets/images/characters/nurse_shy.png",
         "night": true,
         "fade": true,
         "next": "hidden_true_nurse_8"
