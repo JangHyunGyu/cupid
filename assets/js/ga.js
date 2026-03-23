@@ -11,7 +11,7 @@ gtag('config', 'G-05YM7K3VX9', {
 // GA4는 클릭/스크롤이 없으면 비활성으로 판정하므로 수동 핑 필요
 (function() {
 	var startTime = Date.now();
-	setInterval(function() {
+	var _gaTimer = setInterval(function() {
 		if (document.visibilityState === 'visible') {
 			var elapsed = Math.round((Date.now() - startTime) / 1000);
 			gtag('event', 'vn_engagement', {
