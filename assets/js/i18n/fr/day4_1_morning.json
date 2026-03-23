@@ -141,6 +141,10 @@
             "Ça va, je vais y aller"
         ]
     },
+    "hidden_nurse_d4_meal_walk": {
+        "name": "{name}",
+        "text": "*On s'est dirigés vers le snack devant l'école.*"
+    },
     "hidden_nurse_d4_meal_1": {
         "name": "Infirmière",
         "text": "C'est super épicé ! C'est ça que mangent les élèves ?!"

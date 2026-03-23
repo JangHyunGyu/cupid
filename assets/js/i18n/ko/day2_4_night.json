@@ -5,7 +5,7 @@
     },
     "night2_msg_1": {
         "name": "{name}",
-        "text": "*세 명. 동시에.*"
+        "text": "*세 명에게서 메시지가 왔다.*"
     },
     "night2_msg_dain_specific": {
         "name": "다인",

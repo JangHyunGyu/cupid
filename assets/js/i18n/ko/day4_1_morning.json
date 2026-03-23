@@ -141,6 +141,10 @@
             "괜찮아요, 저 이만 갈게요"
         ]
     },
+    "hidden_nurse_d4_meal_walk": {
+        "name": "{name}",
+        "text": "*학교 앞 분식집으로 향했다.*"
+    },
     "hidden_nurse_d4_meal_1": {
         "name": "보건선생님",
         "text": "아 맵다! 나이 먹으니까 이런 거 못 먹겠어~"

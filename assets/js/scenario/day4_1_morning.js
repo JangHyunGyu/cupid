@@ -92,7 +92,6 @@ Object.assign(SCENARIO[4], {
     "hidden_homeroom_d4_skip": {
         "background": "assets/images/background/student_room.png",
         "character": null,
-        "setFlag": "homeroom_day4",
         "next": "hidden_nurse_d4_check"
     },
 
@@ -165,7 +164,6 @@ Object.assign(SCENARIO[4], {
     "hidden_homeroom_d4_decline": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "setFlag": "homeroom_day4",
         "next": "hidden_nurse_d4_check"
     },
     "hidden_homeroom_d4_freetalk": {
@@ -219,12 +217,17 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
-            { "next": "hidden_nurse_d4_meal_1", "stats": { "Nurse": { "affinity": 10 } } },
+            { "next": "hidden_nurse_d4_meal_walk", "stats": { "Nurse": { "affinity": 10 } } },
             { "next": "hidden_nurse_d4_pass", "stats": { "Nurse": { "affinity": 3 } } }
         ]
     },
+    "hidden_nurse_d4_meal_walk": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "hidden_nurse_d4_meal_1"
+    },
     "hidden_nurse_d4_meal_1": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/store.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_meal_2"
     },

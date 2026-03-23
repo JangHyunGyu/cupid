@@ -141,6 +141,10 @@
             "No hace falta, me voy yendo"
         ]
     },
+    "hidden_nurse_d4_meal_walk": {
+        "name": "{name}",
+        "text": "*Nos dirigimos a la tienda de snacks frente a la escuela.*"
+    },
     "hidden_nurse_d4_meal_1": {
         "name": "Enfermera",
         "text": "¡Qué picante! ¿Ésto es lo que comen los estudiantes?!"

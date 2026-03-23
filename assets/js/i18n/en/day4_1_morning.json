@@ -141,6 +141,10 @@
             "That's okay, I should get going"
         ]
     },
+    "hidden_nurse_d4_meal_walk": {
+        "name": "Me",
+        "text": "*We headed to the snack shop in front of school.*"
+    },
     "hidden_nurse_d4_meal_1": {
         "name": "School Nurse",
         "text": "This is so spicy! Is this what students eat?!"
