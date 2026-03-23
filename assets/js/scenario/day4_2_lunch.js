@@ -40,7 +40,7 @@ Object.assign(SCENARIO[4], {
                 "next": "date_seo_bright",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 3
+                        "affinity": 5
                     }
                 }
             }
@@ -51,7 +51,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/seyoun_shy.png",
         "stats": {
             "Seoyeon": {
-                "affinity": 5
+                "affinity": 10
             }
         },
         "next": "date_seo_pretty_high_2"
@@ -76,7 +76,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/seyoun_shy.png",
         "stats": {
             "Seoyeon": {
-                "affinity": 2
+                "affinity": 3
             }
         },
         "next": "date_seo_walk"
@@ -178,7 +178,7 @@ Object.assign(SCENARIO[4], {
                 "next": "date_yuna_bright",
                 "stats": {
                     "Yuna": {
-                        "affinity": 4
+                        "affinity": 5
                     }
                 }
             }
@@ -189,7 +189,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/yuna_shy.png",
         "stats": {
             "Yuna": {
-                "affinity": 7
+                "affinity": 10
             }
         },
         "next": "date_yuna_pretty_high_2"
@@ -319,7 +319,7 @@ Object.assign(SCENARIO[4], {
                 "next": "date_dain_bright",
                 "stats": {
                     "Dain": {
-                        "affinity": 3
+                        "affinity": 5
                     }
                 }
             },
@@ -337,7 +337,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/dain_shy.png",
         "stats": {
             "Dain": {
-                "affinity": 6
+                "affinity": 10
             }
         },
         "next": "date_dain_pretty_high_2"
@@ -362,7 +362,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/dain_shy.png",
         "stats": {
             "Dain": {
-                "affinity": 2
+                "affinity": 3
             }
         },
         "next": "date_dain_to_arcade"

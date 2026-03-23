@@ -348,7 +348,7 @@ Object.assign(SCENARIO[3], {
                 "setFlags": ["accepted_seoyeon_date"],
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 3
+                        "affinity": 5
                     }
                 }
             },
@@ -408,7 +408,7 @@ Object.assign(SCENARIO[3], {
                 "setFlags": ["accepted_dain_date"],
                 "stats": {
                     "Dain": {
-                        "affinity": 3
+                        "affinity": 5
                     }
                 }
             },
@@ -474,7 +474,7 @@ Object.assign(SCENARIO[3], {
             {
                 "next": "morning3_date_yuna_accept",
                 "setFlags": ["accepted_yuna_date"],
-                "stats": { "Yuna": { "affinity": 4 } }
+                "stats": { "Yuna": { "affinity": 5 } }
             },
             {
                 "next": "morning3_date_yuna_decline",
@@ -583,8 +583,8 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
-            { "next": "hidden_homeroom_d3_reveal_1", "stats": { "Teacher": { "affinity": 17 } } },
-            { "next": "hidden_homeroom_d3_hide_1", "stats": { "Teacher": { "affinity": 9 } } }
+            { "next": "hidden_homeroom_d3_reveal_1", "stats": { "Teacher": { "affinity": 10 } } },
+            { "next": "hidden_homeroom_d3_hide_1", "stats": { "Teacher": { "affinity": 3 } } }
         ]
     },
     "hidden_homeroom_d3_reveal_1": {

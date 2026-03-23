@@ -138,7 +138,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/room_my.png",
         "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
-        "stats": { "Dain": { "affinity": 2 } },
+        "stats": { "Dain": { "affinity": 3 } },
         "next": "night2_reply_dain_2"
     },
     "night2_reply_dain_2": {
@@ -189,7 +189,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/room_my.png",
         "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
-        "stats": { "Seoyeon": { "affinity": 2 } },
+        "stats": { "Seoyeon": { "affinity": 3 } },
         "next": "night2_reply_seo_2"
     },
     "night2_reply_seo_2": {
