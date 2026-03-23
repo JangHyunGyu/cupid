@@ -784,7 +784,9 @@ class GalleryData {
             { id: 'ending_confess_fail_dain', name: '다인의 거짓 웃음', character: '다인', description: '눈물을 닦으며 억지로 웃는 다인, "괜찮아" 라고 손을 흔들며', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
             { id: 'ending_mayhem', name: '들킨 순간', character: null, description: '복도에서 마주친 서연의 차가운 눈빛과 다인의 떨리는 주먹', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
             { id: 'ending_good_teacher', name: '선생님의 창가', character: '담임선생님', description: '방과후 복도 창가에서, 서류를 안고 학생들을 바라보는 담임선생님', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
-            { id: 'ending_good_nurse', name: '보건실의 여유', character: '보건선생님', description: '보건실 의자에 기대앉아 커피를 마시며 의미심장하게 웃는 보건선생님', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
+            { id: 'ending_good_nurse', name: '보건실의 여유', character: '보건선생님', description: '보건실 의자에 기대앉아 커피를 마시며 의미심장하게 웃는 보건선생님', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' },
+            { id: 'ending_perfect_teacher', name: '벚꽃 아래 꽃다발', character: '담임선생님', description: '졸업 후, 벚꽃 테라스에서 정장을 입고 꽃다발을 건네는 순간', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png' },
+            { id: 'ending_perfect_nurse', name: '함께한 아침', character: '보건선생님', description: '졸업 후, 아침 햇살 속 팔베개와 이불 아래 둘만의 시간', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png' }
         ],
         en: [
             {
@@ -825,7 +827,9 @@ class GalleryData {
             { id: 'ending_confess_fail_dain', name: 'Dain\'s Fake Smile', character: 'Dain', description: 'Dain wipes her tears and waves with a forced grin', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
             { id: 'ending_mayhem', name: 'Caught', character: null, description: 'Seoyeon\'s ice-cold glare and Dain\'s trembling fists in the hallway', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
             { id: 'ending_good_teacher', name: 'Teacher by the Window', character: 'Teacher', description: 'The homeroom teacher watches students leave from the hallway window', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
-            { id: 'ending_good_nurse', name: 'Nurse\'s Leisure', character: 'School Nurse', description: 'The nurse leans back with coffee and a knowing smirk', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
+            { id: 'ending_good_nurse', name: 'Nurse\'s Leisure', character: 'School Nurse', description: 'The nurse leans back with coffee and a knowing smirk', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' },
+            { id: 'ending_perfect_teacher', name: 'Bouquet Under Cherry Blossoms', character: 'Teacher', description: 'After graduation, handing her flowers on a sunset terrace', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png' },
+            { id: 'ending_perfect_nurse', name: 'Morning Together', character: 'School Nurse', description: 'After graduation, a warm morning together under the covers', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png' }
         ],
         es: [
             {
@@ -866,7 +870,9 @@ class GalleryData {
             { id: 'ending_confess_fail_dain', name: 'La sonrisa falsa de Dain', character: 'Dain', description: 'Dain se seca las lágrimas y saluda con una sonrisa forzada', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
             { id: 'ending_mayhem', name: 'Atrapado', character: null, description: 'La mirada gélida de Seoyeon y los puños temblorosos de Dain', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
             { id: 'ending_good_teacher', name: 'La profesora en la ventana', character: 'Profesora', description: 'La profesora observa a los alumnos irse desde la ventana', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
-            { id: 'ending_good_nurse', name: 'El relax de la enfermera', character: 'Enfermera', description: 'La enfermera se recuesta con café y una sonrisa cómplice', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
+            { id: 'ending_good_nurse', name: 'El relax de la enfermera', character: 'Enfermera', description: 'La enfermera se recuesta con café y una sonrisa cómplice', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' },
+            { id: 'ending_perfect_teacher', name: 'Ramo bajo los cerezos', character: 'Profesora', description: 'Después de graduarse, entregándole flores en una terraza', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png' },
+            { id: 'ending_perfect_nurse', name: 'Mañana juntos', character: 'Enfermera', description: 'Después de graduarse, una mañana cálida juntos', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png' }
         ],
         ja: [
             {
@@ -907,7 +913,9 @@ class GalleryData {
             { id: 'ending_confess_fail_dain', name: 'ダインの作り笑い', character: 'ダイン', description: 'ダインは涙を拭きながら無理に笑って手を振る', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
             { id: 'ending_mayhem', name: 'バレた瞬間', character: null, description: 'ソヨンの氷のような視線とダインの震える拳', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
             { id: 'ending_good_teacher', name: '窓辺の先生', character: '担任先生', description: '担任の先生が廊下の窓から生徒たちを見送る', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
-            { id: 'ending_good_nurse', name: '保健室のひととき', character: '保健先生', description: '保健先生がコーヒーを片手に意味深な笑みを浮かべる', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
+            { id: 'ending_good_nurse', name: '保健室のひととき', character: '保健先生', description: '保健先生がコーヒーを片手に意味深な笑みを浮かべる', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' },
+            { id: 'ending_perfect_teacher', name: '桜の下の花束', character: '担任先生', description: '卒業後、夕日のテラスで花束を渡す瞬間', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png' },
+            { id: 'ending_perfect_nurse', name: '二人の朝', character: '保健先生', description: '卒業後、朝日の中で布団の下の二人きりの時間', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png' }
         ],
         fr: [
             {
@@ -948,7 +956,9 @@ class GalleryData {
             { id: 'ending_confess_fail_dain', name: 'Le faux sourire de Dain', character: 'Dain', description: 'Dain essuie ses larmes et fait un signe de la main avec un sourire forcé', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
             { id: 'ending_mayhem', name: 'Pris en flagrant délit', character: null, description: 'Le regard glacial de Seoyeon et les poings tremblants de Dain', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
             { id: 'ending_good_teacher', name: 'La professeure à la fenêtre', character: 'Professeure', description: 'La professeure regarde les élèves partir depuis la fenêtre', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
-            { id: 'ending_good_nurse', name: 'La détente de l\'infirmière', character: 'Infirmière', description: 'L\'infirmière se détend avec un café et un sourire complice', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
+            { id: 'ending_good_nurse', name: 'La détente de l\'infirmière', character: 'Infirmière', description: 'L\'infirmière se détend avec un café et un sourire complice', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' },
+            { id: 'ending_perfect_teacher', name: 'Bouquet sous les cerisiers', character: 'Professeure', description: 'Après le diplôme, lui offrant des fleurs sur une terrasse', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png' },
+            { id: 'ending_perfect_nurse', name: 'Matin ensemble', character: 'Infirmière', description: 'Après le diplôme, un matin chaleureux ensemble', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png' }
         ],
         de: [
             {
@@ -989,7 +999,9 @@ class GalleryData {
             { id: 'ending_confess_fail_dain', name: 'Dains falsches Lächeln', character: 'Dain', description: 'Dain wischt sich die Tränen ab und winkt mit einem erzwungenen Grinsen', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
             { id: 'ending_mayhem', name: 'Erwischt', character: null, description: 'Seoyeons eiskalter Blick und Dains zitternde Fäuste', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
             { id: 'ending_good_teacher', name: 'Die Lehrerin am Fenster', character: 'Lehrerin', description: 'Die Lehrerin beobachtet die Schüler vom Flurfenster aus', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
-            { id: 'ending_good_nurse', name: 'Die Muße der Krankenschwester', character: 'Schulkrankenschwester', description: 'Die Krankenschwester lehnt sich mit Kaffee zurück und lächelt wissend', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
+            { id: 'ending_good_nurse', name: 'Die Muße der Krankenschwester', character: 'Schulkrankenschwester', description: 'Die Krankenschwester lehnt sich mit Kaffee zurück und lächelt wissend', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' },
+            { id: 'ending_perfect_teacher', name: 'Blumenstrauß unter Kirschblüten', character: 'Lehrerin', description: 'Nach dem Abschluss, Blumen auf einer Terrasse überreichend', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png' },
+            { id: 'ending_perfect_nurse', name: 'Morgen zusammen', character: 'Schulkrankenschwester', description: 'Nach dem Abschluss, ein warmer Morgen zu zweit', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png' }
         ]
     };
 

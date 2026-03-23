@@ -90,7 +90,9 @@ const REGISTERED_CG_IDS = new Set([
     'ending_good_nurse',
     'ending_true_seoyeon',
     'ending_true_yuna',
-    'ending_true_dain'
+    'ending_true_dain',
+    'ending_perfect_teacher',
+    'ending_perfect_nurse'
 ]);
 
 /**

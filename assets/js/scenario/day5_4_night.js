@@ -1122,6 +1122,120 @@ Object.assign(SCENARIO[5], {
     },
 
     // =========================================================================
+    // TEACHER PERFECT / TRUE LOVE — Affinity Check
+    // =========================================================================
+    "hidden_perfect_homeroom_check": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "affinityChar": "Teacher",
+        "affinityBranches": [
+            { "minAffinity": 80, "next": "hidden_perfect_homeroom_1" },
+            { "minAffinity": 0, "next": "hidden_true_homeroom_1" }
+        ],
+        "next": "hidden_true_homeroom_1"
+    },
+
+    // =========================================================================
+    // TEACHER PERFECT END (Hidden Route — Affinity 80+)
+    // =========================================================================
+    "hidden_perfect_homeroom_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "ending.mp3",
+        "setFlag": "ending_perfect",
+        "next": "hidden_perfect_homeroom_2"
+    },
+    "hidden_perfect_homeroom_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_perfect_homeroom_3"
+    },
+    "hidden_perfect_homeroom_3": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_perfect_homeroom_4"
+    },
+    "hidden_perfect_homeroom_4": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_perfect_homeroom_5"
+    },
+    "hidden_perfect_homeroom_5": {
+        "background": "assets/images/background/ending_perfect_teacher.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
+    },
+
+    // =========================================================================
+    // NURSE PERFECT / TRUE LOVE — Affinity Check
+    // =========================================================================
+    "hidden_perfect_nurse_check": {
+        "background": null,
+        "character": null,
+        "night": true,
+        "fade": true,
+        "affinityChar": "Nurse",
+        "affinityBranches": [
+            { "minAffinity": 80, "next": "hidden_perfect_nurse_1" },
+            { "minAffinity": 0, "next": "hidden_true_nurse_1" }
+        ],
+        "next": "hidden_true_nurse_1"
+    },
+
+    // =========================================================================
+    // NURSE PERFECT END (Hidden Route — Affinity 80+)
+    // =========================================================================
+    "hidden_perfect_nurse_1": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "bgm": "ending.mp3",
+        "setFlag": "ending_perfect",
+        "next": "hidden_perfect_nurse_2"
+    },
+    "hidden_perfect_nurse_2": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_perfect_nurse_3"
+    },
+    "hidden_perfect_nurse_3": {
+        "background": "assets/images/background/nurse_home_event1.png",
+        "character": "assets/images/characters/nurse_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_perfect_nurse_4"
+    },
+    "hidden_perfect_nurse_4": {
+        "background": "assets/images/background/nurse_home_event1.png",
+        "character": "assets/images/characters/nurse_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "hidden_perfect_nurse_5"
+    },
+    "hidden_perfect_nurse_5": {
+        "background": "assets/images/background/ending_perfect_nurse.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
+    },
+
+    // =========================================================================
     // TEACHER TRUE LOVE END (Hidden Route)
     // =========================================================================
     "hidden_true_homeroom_1": {
