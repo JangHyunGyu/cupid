@@ -1036,30 +1036,35 @@ Object.assign(SCENARIO[5], {
         "next": "alone_1"
     },
     "alone_1": {
+        "background": "assets/images/background/ending_alone.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "alone_2"
     },
     "alone_2": {
+        "background": "assets/images/background/ending_alone.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "alone_3"
     },
     "alone_3": {
+        "background": "assets/images/background/ending_alone.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "alone_4"
     },
     "alone_4": {
+        "background": "assets/images/background/ending_alone.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "alone_5"
     },
     "alone_5": {
+        "background": "assets/images/background/ending_alone.png",
         "character": null,
         "night": true,
         "fade": true,
