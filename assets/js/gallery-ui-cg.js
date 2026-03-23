@@ -125,14 +125,28 @@ class CGRenderer {
      */
     showLockPopup(cgId) {
         const L = (ko, en, es, ja, fr, de) => ({ ko, en, es, ja, fr, de })[this.ui.lang] || en;
+
+        // CG별 해금 힌트 가져오기
+        const cgList = GalleryData.getCGList(this.ui.lang);
+        const cgData = cgList.find(c => c.id === cgId);
+        const hint = cgData?.unlockHint ?? L(
+            '게임에서 해당 이벤트를 경험하세요!',
+            'Experience this event in the game!',
+            '¡Experimenta este evento en el juego!',
+            'ゲームでこのイベントを体験しましょう！',
+            'Vivez cet événement dans le jeu !',
+            'Erlebe dieses Event im Spiel!'
+        );
+
         this.ui.showUnlockPopup({
             title: L('CG 미해금', 'CG Locked', 'CG bloqueado', 'CG未解放', 'CG verrouillé', 'CG gesperrt'),
             message: L(
-                '이 이벤트 CG는 아직 해금되지 않았습니다.<br><br><span class="condition-line">💕 해금 조건: 게임에서 해당 이벤트를 경험하세요!</span>',
-                'This event CG is not yet unlocked.<br><br><span class="condition-line">💕 Condition: Experience this event in the game!</span>',
-                'Este CG de evento aún no está desbloqueado.<br><br><span class="condition-line">💕 Condición: ¡Experimenta este evento en el juego!</span>',
-                'このイベントCGはまだ解放されていません。<br><br><span class="condition-line">💕 解放条件: ゲームでこのイベントを体験しましょう！</span>',
-                'Ce CG d\'événement n\'est pas encore débloqué.<br><br><span class="condition-line">💕 Condition : Vivez cet événement dans le jeu !</span>'
+                `이 이벤트 CG는 아직 해금되지 않았습니다.<br><br><span class="condition-line">💕 해금 조건: ${hint}</span>`,
+                `This event CG is not yet unlocked.<br><br><span class="condition-line">💕 Condition: ${hint}</span>`,
+                `Este CG de evento aún no está desbloqueado.<br><br><span class="condition-line">💕 Condición: ${hint}</span>`,
+                `このイベントCGはまだ解放されていません。<br><br><span class="condition-line">💕 解放条件: ${hint}</span>`,
+                `Ce CG d'événement n'est pas encore débloqué.<br><br><span class="condition-line">💕 Condition : ${hint}</span>`,
+                `Dieses Event-CG ist noch nicht freigeschaltet.<br><br><span class="condition-line">💕 Bedingung: ${hint}</span>`
             ),
             icon: '🖼️'
         });
