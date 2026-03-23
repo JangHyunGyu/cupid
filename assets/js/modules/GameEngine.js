@@ -929,7 +929,9 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // night: true → 파란색 어두운 필터
         // sunset: true → 주황색 노을 필터
-        this.sceneRenderer.setTimeFilter(scene.night, scene.sunset);
+        // 엔딩 CG 씬은 night 필터 비활성화 (CG 자체가 완성된 장면이므로)
+        const isEndingCG = scene.background && scene.background.includes('ending_');
+        this.sceneRenderer.setTimeFilter(isEndingCG ? false : scene.night, scene.sunset);
 
         // ─────────────────────────────────────────────────────────────
         // 📳 7.5단계: 메시지 씬 진동 효과
