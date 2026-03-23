@@ -771,11 +771,12 @@
         @media (max-height: 500px) and (orientation: landscape) {
             .title-heroines { height: 65%; }
             .title-heroine { max-height: 250px; }
-            .title-heroine.pos-1 { left: -2%; height: 60%; }
-            .title-heroine.pos-2 { left: 5%; height: 58%; opacity: 0.65; z-index: 0; }
-            .title-heroine.pos-3 { height: 64%; z-index: 1; }
-            .title-heroine.pos-4 { right: 5%; height: 58%; opacity: 0.65; z-index: 0; }
-            .title-heroine.pos-5 { right: -2%; height: 60%; }
+            /* PC 비율 유지하면서 축소: 66→56, 75→64, 72→62, 73→63, 70→60 */
+            .title-heroine.pos-1 { left: -3%; height: 56%; }
+            .title-heroine.pos-2 { left: 10%; height: 64%; opacity: 0.65; z-index: 0; }
+            .title-heroine.pos-3 { left: 22%; height: 62%; transform: none; opacity: 0.85; z-index: 1; }
+            .title-heroine.pos-4 { right: 3%; height: 63%; opacity: 0.65; z-index: 0; }
+            .title-heroine.pos-5 { right: -2%; height: 60%; opacity: 0.72; }
         }
     </style>
 </head>

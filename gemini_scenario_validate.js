@@ -23,7 +23,7 @@ async function main() {
 {"pass": true 또는 false, "score": 0에서100, "strengths": ["잘 된 점들"], "issues": [{"severity": "high/medium/low", "location": "위치", "description": "설명", "fix": "수정 제안"}], "summary": "전체 평가"}
 
 SCENARIO.md:
-` + md.substring(0, 60000);
+` + md;
 
     const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro-preview:generateContent?key=${API_KEY}`, {
         method: 'POST',
