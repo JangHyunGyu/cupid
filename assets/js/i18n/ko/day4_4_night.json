@@ -116,6 +116,18 @@
             "솔직히 완벽한 줄만 알았어. 근데 이런 모습 보여줘서 고마워."
         ]
     },
+    "wall_seo_line_react_1": {
+        "name": "서연",
+        "text": "...진짜?"
+    },
+    "wall_seo_line_react_2": {
+        "name": "서연",
+        "text": "...여자친구?"
+    },
+    "wall_seo_line_react_3": {
+        "name": "서연",
+        "text": "...고맙긴."
+    },
     "wall_seo_after_line": {
         "name": "서연",
         "text": "이래도 괜찮아?"
@@ -244,14 +256,14 @@
         "name": "{name}",
         "text": "*다인이 배구공을 꼭 안고 고개를 숙였다. 어깨가 떨리고 있다.*",
         "choices": [
-            "...나도 옆에 앉아도 돼?",
+            "...아무 말 안 할게. 그냥 여기 있을게.",
             "울어도 돼. 밝은 척 안 해도 돼. 나한테는.",
             "...한 번 더 토스 올려줄까? 마지막으로."
         ]
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*다인 옆에 앉았다. 코트 바닥이 차갑다. 아무 말도 안 했다.*"
+        "text": "*그대로 옆에 앉아 있었다. 아무 말도 안 했다.*"
     },
     "wall_dain_newdream_2": {
         "name": "{name}",
@@ -493,6 +505,22 @@
     "day4_night_regret_2": {
         "name": "{name}",
         "text": "*괜찮아. 내일이 있으니까. 내일은 반드시.*"
+    },
+    "day4_night_regret_msg_branch": {
+        "name": "시스템",
+        "text": ""
+    },
+    "day4_night_regret_msg_seo": {
+        "name": "서연",
+        "text": "오늘 즐거웠어. 내일도 시간 괜찮아?"
+    },
+    "day4_night_regret_msg_dain": {
+        "name": "다인",
+        "text": "오늘 즐거웠어!! 내일도 시간 돼?!"
+    },
+    "day4_night_regret_msg_yuna": {
+        "name": "유나",
+        "text": "...오늘 즐거웠어. 내일도 괜찮아?"
     },
     "day4_night_regret_msg": {
         "name": "{name}",

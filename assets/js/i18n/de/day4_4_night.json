@@ -116,6 +116,18 @@
             "Ehrlich gesagt dachte ich, du wärst makellos. Aber danke, dass du mir diese Seite zeigst."
         ]
     },
+    "wall_seo_line_react_1": {
+        "name": "Seoyeon",
+        "text": "...Wirklich?"
+    },
+    "wall_seo_line_react_2": {
+        "name": "Seoyeon",
+        "text": "...Freundin?"
+    },
+    "wall_seo_line_react_3": {
+        "name": "Seoyeon",
+        "text": "...Danke, schätze ich."
+    },
     "wall_seo_after_line": {
         "name": "Seoyeon",
         "text": "Ist das wirklich in Ordnung?"
@@ -493,6 +505,22 @@
     "day4_night_regret_2": {
         "name": "Ich",
         "text": "*Es ist okay. Morgen ist noch ein Tag. Morgen, ganz bestimmt.*"
+    },
+    "day4_night_regret_msg_branch": {
+        "name": "System",
+        "text": ""
+    },
+    "day4_night_regret_msg_seo": {
+        "name": "Seoyeon",
+        "text": "Heute hat Spaß gemacht. Hast du morgen auch Zeit?"
+    },
+    "day4_night_regret_msg_dain": {
+        "name": "Dain",
+        "text": "Heute war mega lustig!! Hast du morgen Zeit?!"
+    },
+    "day4_night_regret_msg_yuna": {
+        "name": "Yuna",
+        "text": "...Heute hat Spaß gemacht. Morgen auch okay?"
     },
     "day4_night_regret_msg": {
         "name": "Ich",

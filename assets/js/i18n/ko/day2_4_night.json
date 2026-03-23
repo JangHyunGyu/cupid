@@ -7,25 +7,61 @@
         "name": "{name}",
         "text": "*세 명. 동시에.*"
     },
-    "night2_msg_2": {
+    "night2_msg_dain_specific": {
         "name": "다인",
         "text": "야!! 오늘 떡볶이 맛있었다!!"
     },
-    "night2_msg_3": {
+    "night2_msg_dain_specific_2": {
         "name": "다인",
         "text": "내일도 내기하자!! 종목 바꿔서!!"
     },
-    "night2_msg_4": {
+    "night2_msg_seo_specific": {
         "name": "서연",
         "text": "오늘 고마웠어. 덕분에 일찍 끝났어"
     },
-    "night2_msg_5": {
+    "night2_msg_seo_specific_2": {
         "name": "서연",
         "text": "다음에도 부를지도 모르니까, 각오해 둬"
     },
-    "night2_msg_6": {
+    "night2_msg_yuna_specific": {
         "name": "유나",
-        "text": "...책 다 읽었어?"
+        "text": "...오늘 그 곡. 좋았어"
+    },
+    "night2_msg_yuna_specific_2": {
+        "name": "유나",
+        "text": "...다음에 또 들려줘"
+    },
+    "night2_msg_seo_general": {
+        "name": "서연",
+        "text": "내일 점심에 옥상 열어놓을게. 와"
+    },
+    "night2_msg_dain_general": {
+        "name": "다인",
+        "text": "야!! 내일 뭐 해?!"
+    },
+    "night2_msg_dain_general_merge": {
+        "name": "서연",
+        "text": "내일 점심 시간 비워둬"
+    },
+    "night2_msg_seo_general_alt": {
+        "name": "서연",
+        "text": "내일 점심에 옥상 열어놓을게. 와"
+    },
+    "night2_msg_yuna_general": {
+        "name": "유나",
+        "text": "...내일 도서관에 올 거야?"
+    },
+    "night2_msg_generic": {
+        "name": "다인",
+        "text": "야!! 내일 뭐 해?!"
+    },
+    "night2_msg_generic_2": {
+        "name": "서연",
+        "text": "내일 점심 시간 비워둬"
+    },
+    "night2_msg_generic_3": {
+        "name": "유나",
+        "text": "...내일 도서관에 올 거야?"
     },
     "night2_msg_7": {
         "name": "{name}",
@@ -154,7 +190,7 @@
     },
     "night2_end_4": {
         "name": "{name}",
-        "text": "*'신경 쓰인다'와 '좋아한다' 사이에는 아직 거리가 있다. — 근데 그 거리가 어제보다 짧아진 것 같다.*"
+        "text": "*눈을 감는다. — 내일은 조금 더 정직해져야 할지도.*"
     },
     "night2_seo_freetalk": {
         "name": "서연",

@@ -115,6 +115,18 @@
         "name": "{name}",
         "text": "*Ich habe es gesagt. Unbeholfen, gebrochen — aber ich habe es gesagt.*"
     },
+    "after5_confess_react_seo": {
+        "name": "Seoyeon",
+        "text": "...Du bist spät. Aber — nicht zu spät."
+    },
+    "after5_confess_react_dain": {
+        "name": "Dain",
+        "text": "Ey, echt?! ...Echt jetzt?"
+    },
+    "after5_confess_react_yuna": {
+        "name": "Yuna",
+        "text": "...Ich wusste es schon."
+    },
     "after5_confess_no": {
         "name": "{name}",
         "text": "*Meine Lippen bewegen sich nicht. Wieder. — Wieder konnte ich es nicht sagen.*"

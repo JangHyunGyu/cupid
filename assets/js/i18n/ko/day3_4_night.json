@@ -79,6 +79,10 @@
         "name": "유나",
         "text": "...도망치지 마. 그것만"
     },
+    "night3_cheat_msg_dain_1": {
+        "name": "다인",
+        "text": "...ㅋㅋ 농담이었으면 좋겠다"
+    },
     "night3_cheat_msg_7": {
         "name": "{name}",
         "text": "*유나가 메시지로 세 줄을 보냈다. 평소 한 줄도 안 보내는 사람이. — 그만큼 화가 났다는 뜻이다.*"
@@ -115,6 +119,18 @@
             "유나의 손을 잡는다",
             "다인의 손을 잡는다"
         ]
+    },
+    "night3_nightmare_seo": {
+        "name": "{name}",
+        "text": "*서연 쪽으로 손을 뻗었다. 그 미소가 보이는 순간 — 사라진다.*"
+    },
+    "night3_nightmare_yuna": {
+        "name": "{name}",
+        "text": "*유나 쪽으로 발을 옮겼다. 손끝이 닿기 직전 — 사라진다.*"
+    },
+    "night3_nightmare_dain": {
+        "name": "{name}",
+        "text": "*다인 쪽으로 달려갔다. 잡았다고 생각한 순간 — 사라진다.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",

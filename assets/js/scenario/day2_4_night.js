@@ -19,33 +19,100 @@ Object.assign(SCENARIO[2], {
         "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
-        "next": "night2_msg_2"
+        "branches": [
+            { "condition": "chose_dain_after2", "next": "night2_msg_dain_specific" },
+            { "condition": "chose_seo_after2", "next": "night2_msg_seo_specific" },
+            { "condition": "chose_yuna_after2", "next": "night2_msg_yuna_specific" },
+            { "next": "night2_msg_generic" }
+        ]
     },
-    "night2_msg_2": {
+    // --- 방과후 다인 루트: 다인은 떡볶이, 서연/유나는 일반 ---
+    "night2_msg_dain_specific": {
         "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
-        "next": "night2_msg_3"
+        "next": "night2_msg_dain_specific_2"
     },
-    "night2_msg_3": {
+    "night2_msg_dain_specific_2": {
         "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
-        "next": "night2_msg_4"
+        "next": "night2_msg_seo_general"
     },
-    "night2_msg_4": {
+    // --- 방과후 서연 루트: 서연은 서류, 다인/유나는 일반 ---
+    "night2_msg_seo_specific": {
         "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
-        "next": "night2_msg_5"
+        "next": "night2_msg_seo_specific_2"
     },
-    "night2_msg_5": {
+    "night2_msg_seo_specific_2": {
         "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
-        "next": "night2_msg_6"
+        "next": "night2_msg_dain_general"
     },
-    "night2_msg_6": {
+    // --- 방과후 유나 루트: 유나는 음악, 다인/서연은 일반 ---
+    "night2_msg_yuna_specific": {
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night2_msg_yuna_specific_2"
+    },
+    "night2_msg_yuna_specific_2": {
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night2_msg_dain_general"
+    },
+    // --- 범용 (히든 루트 등) ---
+    "night2_msg_generic": {
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night2_msg_generic_2"
+    },
+    "night2_msg_generic_2": {
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night2_msg_generic_3"
+    },
+    "night2_msg_generic_3": {
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night2_msg_7"
+    },
+    // --- 일반 메시지 (방과후에 안 만난 캐릭터용) ---
+    "night2_msg_seo_general": {
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night2_msg_yuna_general"
+    },
+    "night2_msg_dain_general": {
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night2_msg_dain_general_merge"
+    },
+    "night2_msg_dain_general_merge": {
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "branches": [
+            { "condition": "chose_seo_after2", "next": "night2_msg_yuna_general" },
+            { "next": "night2_msg_seo_general_alt" }
+        ]
+    },
+    "night2_msg_seo_general_alt": {
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night2_msg_yuna_general"
+    },
+    "night2_msg_yuna_general": {
         "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
@@ -69,105 +136,105 @@ Object.assign(SCENARIO[2], {
     },
     "night2_reply_dain_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
         "stats": { "Dain": { "affinity": 3 } },
         "next": "night2_reply_dain_2"
     },
     "night2_reply_dain_2": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_dain_3"
     },
     "night2_reply_dain_3": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_dain_4"
     },
     "night2_reply_dain_4": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_dain_5"
     },
     "night2_reply_dain_5": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_dain_freetalk"
     },
     "night2_reply_seo_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
         "stats": { "Seoyeon": { "affinity": 3 } },
         "next": "night2_reply_seo_2"
     },
     "night2_reply_seo_2": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_seo_3"
     },
     "night2_reply_seo_3": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_seo_4"
     },
     "night2_reply_seo_4": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_seo_5"
     },
     "night2_reply_seo_5": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_seo_freetalk"
     },
     "night2_reply_yuna_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "stats": { "Yuna": { "affinity": 3 } },
         "next": "night2_reply_yuna_2"
     },
     "night2_reply_yuna_2": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_yuna_3"
     },
     "night2_reply_yuna_3": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_yuna_4"
     },
     "night2_reply_yuna_4": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_yuna_5"
     },
     "night2_reply_yuna_5": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_yuna_6"
     },
     "night2_reply_yuna_6": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_reply_yuna_7"
     },
     "night2_reply_yuna_7": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "night2_yuna_freetalk"
@@ -286,19 +353,19 @@ Object.assign(SCENARIO[2], {
     },
     "night2_hidden_homeroom_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/teacher_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night2_hidden_homeroom_2"
     },
     "night2_hidden_homeroom_2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/teacher_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night2_hidden_homeroom_3"
     },
     "night2_hidden_homeroom_3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/teacher_normal.png", "opacity": 0.35 } },
         "night": true,
         "branches": [
             { "condition": "nurse_day2", "next": "night2_hidden_nurse_1" },
@@ -313,7 +380,7 @@ Object.assign(SCENARIO[2], {
     },
     "night2_hidden_nurse_2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/nurse_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night2_end_1"
     },

@@ -99,6 +99,18 @@
         "name": "Dain",
         "text": "¡¡Sí lo hacías!! ...Pero puedes seguir mirando."
     },
+    "true_seo_bridge": {
+        "name": "Yo",
+        "text": "*La promesa de Seoyeon aún perdura en mis dedos.*"
+    },
+    "true_yuna_bridge": {
+        "name": "Yo",
+        "text": "*Las estrellas de Yuna aún brillan ante mis ojos.*"
+    },
+    "true_dain_bridge": {
+        "name": "Yo",
+        "text": "*La risa de Dain aún resuena en mis oídos.*"
+    },
     "true_epilogue_1": {
         "name": "Yo",
         "text": "*Fueron cinco días.*"
@@ -141,7 +153,7 @@
     },
     "good_1c": {
         "name": "{name}",
-        "text": ""
+        "text": "*Ella dio un paso más cerca.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",

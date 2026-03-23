@@ -27,6 +27,62 @@
         "name": "Yuna",
         "text": "...Terminaste el libro?"
     },
+    "night2_msg_dain_specific": {
+        "name": "Dain",
+        "text": "¡¡Oye!! ¡¡El tteokbokki de hoy estaba increíble!!"
+    },
+    "night2_msg_dain_specific_2": {
+        "name": "Dain",
+        "text": "¡¡Mañana apostamos otra vez!! ¡¡Cambiamos de juego!!"
+    },
+    "night2_msg_seo_specific": {
+        "name": "Seoyeon",
+        "text": "Gracias por hoy. Terminamos pronto gracias a ti"
+    },
+    "night2_msg_seo_specific_2": {
+        "name": "Seoyeon",
+        "text": "Puede que te llame otra vez, así que ve preparándote"
+    },
+    "night2_msg_yuna_specific": {
+        "name": "Yuna",
+        "text": "...Esa canción de hoy. Estuvo bien"
+    },
+    "night2_msg_yuna_specific_2": {
+        "name": "Yuna",
+        "text": "...Tócala otra vez algún día"
+    },
+    "night2_msg_seo_general": {
+        "name": "Seoyeon",
+        "text": "Mañana al mediodía dejo la azotea abierta. Ven"
+    },
+    "night2_msg_dain_general": {
+        "name": "Dain",
+        "text": "¡¡Oye!! ¡¡Qué haces mañana?!"
+    },
+    "night2_msg_dain_general_merge": {
+        "name": "Seoyeon",
+        "text": "Deja libre la hora del almuerzo mañana"
+    },
+    "night2_msg_seo_general_alt": {
+        "name": "Seoyeon",
+        "text": "Mañana al mediodía dejo la azotea abierta. Ven"
+    },
+    "night2_msg_yuna_general": {
+        "name": "Yuna",
+        "text": "...¿Mañana vendrás a la biblioteca?"
+    },
+    "night2_msg_generic": {
+        "name": "Dain",
+        "text": "¡¡Oye!! ¡¡Qué haces mañana?!"
+    },
+    "night2_msg_generic_2": {
+        "name": "Seoyeon",
+        "text": "Deja libre la hora del almuerzo mañana"
+    },
+    "night2_msg_generic_3": {
+        "name": "Yuna",
+        "text": "...¿Mañana vendrás a la biblioteca?"
+    },
     "night2_msg_7": {
         "name": "Yo",
         "text": "*Tengo que responder a las tres a la vez. -- No se si esto es felicidad o tortura.*"

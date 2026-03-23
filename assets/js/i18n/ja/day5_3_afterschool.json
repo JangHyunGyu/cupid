@@ -115,6 +115,18 @@
         "name": "{name}",
         "text": "*言った。不格好で、ぎこちなくて — でも言った。*"
     },
+    "after5_confess_react_seo": {
+        "name": "ソヨン",
+        "text": "...遅い。でも——間に合った。"
+    },
+    "after5_confess_react_dain": {
+        "name": "ダイン",
+        "text": "え、マジ？！…マジで？"
+    },
+    "after5_confess_react_yuna": {
+        "name": "ユナ",
+        "text": "...知ってた。"
+    },
     "after5_confess_no": {
         "name": "{name}",
         "text": "*唇が動かない。また。——また言えなかった。*"

@@ -202,7 +202,7 @@
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",
-        "text": "*쪽지를 조용히 접어 주머니에 넣었다.*"
+        "text": "*쪽지를 조용히 접어 주머니에 넣었다. 답장은 쓰지 않았다. — 유나가 고개를 살짝 숙인다. 알겠다는 뜻인 것 같다.*"
     },
     "morning3_set_multiple": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "morning3_end": {
         "name": "{name}",
-        "text": "*주말 약속이 겹치는데... 어느덧 수업이 이어지고 점심시간이 다가온다.*"
+        "text": "*어느덧 수업이 이어지고 점심시간이 다가온다.*"
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",

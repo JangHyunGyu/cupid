@@ -99,6 +99,18 @@
         "name": "다인",
         "text": "봤거든!! ...근데 계속 봐도 돼."
     },
+    "true_seo_bridge": {
+        "name": "{name}",
+        "text": "*서연의 약속이 아직 손끝에 남아 있다.*"
+    },
+    "true_yuna_bridge": {
+        "name": "{name}",
+        "text": "*유나의 별이 아직 눈앞에 남아 있다.*"
+    },
+    "true_dain_bridge": {
+        "name": "{name}",
+        "text": "*다인의 웃음이 아직 귓가에 남아 있다.*"
+    },
     "true_epilogue_1": {
         "name": "{name}",
         "text": "*5일이었다.*"
@@ -141,7 +153,7 @@
     },
     "good_1c": {
         "name": "{name}",
-        "text": ""
+        "text": "*그녀가 한 걸음 다가왔다.*"
     },
     "good_1_seo": {
         "name": "서연",

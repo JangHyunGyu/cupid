@@ -27,6 +27,62 @@
         "name": "Yuna",
         "text": "...Have you finished the book?"
     },
+    "night2_msg_dain_specific": {
+        "name": "Dain",
+        "text": "Hey!! The tteokbokki today was amazing!!"
+    },
+    "night2_msg_dain_specific_2": {
+        "name": "Dain",
+        "text": "Let's bet again tomorrow!! Different event!!"
+    },
+    "night2_msg_seo_specific": {
+        "name": "Seoyeon",
+        "text": "Thanks for today. We finished early thanks to you"
+    },
+    "night2_msg_seo_specific_2": {
+        "name": "Seoyeon",
+        "text": "I might call on you again next time, so brace yourself"
+    },
+    "night2_msg_yuna_specific": {
+        "name": "Yuna",
+        "text": "...That song today. It was nice"
+    },
+    "night2_msg_yuna_specific_2": {
+        "name": "Yuna",
+        "text": "...Play it for me again sometime"
+    },
+    "night2_msg_seo_general": {
+        "name": "Seoyeon",
+        "text": "I'll leave the rooftop open at lunch tomorrow. Come"
+    },
+    "night2_msg_dain_general": {
+        "name": "Dain",
+        "text": "Hey!! What are you doing tomorrow?!"
+    },
+    "night2_msg_dain_general_merge": {
+        "name": "Seoyeon",
+        "text": "Keep your lunch hour free tomorrow"
+    },
+    "night2_msg_seo_general_alt": {
+        "name": "Seoyeon",
+        "text": "I'll leave the rooftop open at lunch tomorrow. Come"
+    },
+    "night2_msg_yuna_general": {
+        "name": "Yuna",
+        "text": "...Are you coming to the library tomorrow?"
+    },
+    "night2_msg_generic": {
+        "name": "Dain",
+        "text": "Hey!! What are you doing tomorrow?!"
+    },
+    "night2_msg_generic_2": {
+        "name": "Seoyeon",
+        "text": "Keep your lunch hour free tomorrow"
+    },
+    "night2_msg_generic_3": {
+        "name": "Yuna",
+        "text": "...Are you coming to the library tomorrow?"
+    },
     "night2_msg_7": {
         "name": "Me",
         "text": "*I need to reply to all three at the same time. — I'm not sure if this is bliss or torture.*"

@@ -79,6 +79,10 @@
         "name": "Yuna",
         "text": "...No huyas. Solo eso"
     },
+    "night3_cheat_msg_dain_1": {
+        "name": "Dain",
+        "text": "...jaja ojalá fuera broma"
+    },
     "night3_cheat_msg_7": {
         "name": "Yo",
         "text": "*Yuna envió tres mensajes. De alguien que normalmente ni envía uno. — Eso muestra lo enfadada que está.*"
@@ -115,6 +119,18 @@
             "Tomar la mano de Yuna",
             "Tomar la mano de Dain"
         ]
+    },
+    "night3_nightmare_seo": {
+        "name": "Yo",
+        "text": "*Tendí la mano hacia Seoyeon. En el momento en que vi esa sonrisa — desapareció.*"
+    },
+    "night3_nightmare_yuna": {
+        "name": "Yo",
+        "text": "*Di un paso hacia Yuna. Justo cuando mis dedos estaban a punto de tocarla — desapareció.*"
+    },
+    "night3_nightmare_dain": {
+        "name": "Yo",
+        "text": "*Corrí hacia Dain. En el momento en que creí alcanzarla — desapareció.*"
     },
     "night3_nightmare_end": {
         "name": "Yo",

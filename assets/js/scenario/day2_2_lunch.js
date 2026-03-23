@@ -450,7 +450,12 @@ Object.assign(SCENARIO[2], {
     "lunch2_seo_c1_5": {
         "character": "assets/images/characters/seyoun_shy.png",
         "background": "assets/images/background/top_school.png",
-        "next": "lunch2_seo_end"
+        "next": "lunch2_seo_end_c1"
+    },
+    "lunch2_seo_end_c1": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "next": "after2_start"
     },
     "lunch2_seo_c2_1": {
         "character": "assets/images/characters/seyoun_normal.png",
@@ -465,9 +470,9 @@ Object.assign(SCENARIO[2], {
     "lunch2_seo_c2_3": {
         "character": "assets/images/characters/seyoun_pout.png",
         "background": "assets/images/background/top_school.png",
-        "next": "lunch2_seo_end"
+        "next": "lunch2_seo_end_c2"
     },
-    "lunch2_seo_end": {
+    "lunch2_seo_end_c2": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_pout.png",
         "next": "after2_start"
