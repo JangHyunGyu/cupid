@@ -430,6 +430,42 @@ if (koIndex) {
 
 // maxlength는 언어별로 다를 수 있음 (한글 6자, 일본어 8자, 영문 12자) — 검사 스킵
 
+// ===== 13-2. HTML Structure Sync (KO 기준 핵심 HTML 요소가 다른 언어에도 존재하는지) =====
+const htmlStructureChecks = [
+    { name: 'title-heroines', selector: 'class="title-heroines"', context: 'index' },
+    { name: 'title-heroine images', selector: 'class="title-heroine pos-1"', context: 'index' },
+    { name: 'character-layer', selector: 'id="character-layer"', context: 'index' },
+    { name: 'game-container', selector: 'id="game-container"', context: 'index' },
+    { name: 'landing-container', selector: 'id="landing-container"', context: 'index' },
+];
+
+for (const check of htmlStructureChecks) {
+    const koFile = htmlFiles.find(f => f.name === check.context + '.html');
+    if (!koFile || !koFile.content.includes(check.selector)) continue;
+    const langFiles = htmlFiles.filter(f => new RegExp('^' + check.context + '-(en|es|ja|fr|de)\\.html$').test(f.name));
+    for (const langFile of langFiles) {
+        if (!langFile.content.includes(check.selector)) {
+            errors.push('[HTML_STRUCTURE] ' + langFile.name + ': "' + check.name + '" (' + check.selector + ') 가 index.html(KO)에는 있지만 이 파일에는 누락');
+        }
+    }
+}
+
+// game.html, gallery.html 구조 체크
+const gameStructureChecks = [
+    { name: 'character-layer', selector: 'id="character-layer"', context: 'game' },
+    { name: 'dialogue-box', selector: 'id="dialogue-box"', context: 'game' },
+];
+for (const check of gameStructureChecks) {
+    const koFile = htmlFiles.find(f => f.name === check.context + '.html');
+    if (!koFile || !koFile.content.includes(check.selector)) continue;
+    const langFiles = htmlFiles.filter(f => new RegExp('^' + check.context + '-(en|es|ja|fr|de)\\.html$').test(f.name));
+    for (const langFile of langFiles) {
+        if (!langFile.content.includes(check.selector)) {
+            errors.push('[HTML_STRUCTURE] ' + langFile.name + ': "' + check.name + '" (' + check.selector + ') 누락');
+        }
+    }
+}
+
 // ===== 14. CSS Version Consistency =====
 const cssVersions = {};
 for (const file of htmlFiles) {
