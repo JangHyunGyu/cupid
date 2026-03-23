@@ -88,7 +88,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_give_seo_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "stats": { "Seoyeon": { "affinity": 3 } },
+        "stats": { "Seoyeon": { "affinity": 5 } },
         "setFlags": ["lunch3_gave_seoyeon"],
         "next": "lunch3_seo_skin_check"
     },
@@ -195,7 +195,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_give_dain_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "stats": { "Dain": { "affinity": 3 } },
+        "stats": { "Dain": { "affinity": 5 } },
         "setFlags": ["lunch3_gave_dain"],
         "next": "lunch3_dain_skin_check"
     },
@@ -265,7 +265,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_give_yuna_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": { "Yuna": { "affinity": 4 } },
+        "stats": { "Yuna": { "affinity": 5 } },
         "setFlags": ["lunch3_gave_yuna"],
         "next": "lunch3_yuna_skin_check"
     },
@@ -402,7 +402,7 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/room_school.png",
         "stats": {
             "Seoyeon": {
-                "affinity": -4
+                "affinity": -5
             },
             "Yuna": {
                 "affinity": -5
@@ -436,7 +436,7 @@ Object.assign(SCENARIO[3], {
                 "next": "lunch3_expose_honest_1",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": -4
+                        "affinity": -5
                     },
                     "Yuna": {
                         "affinity": -5
@@ -450,7 +450,7 @@ Object.assign(SCENARIO[3], {
                 "next": "lunch3_expose_excuse_1",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": -7
+                        "affinity": -8
                     },
                     "Yuna": {
                         "affinity": -8
@@ -464,7 +464,7 @@ Object.assign(SCENARIO[3], {
                 "next": "lunch3_expose_run_1",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": -9
+                        "affinity": -10
                     },
                     "Yuna": {
                         "affinity": -10
