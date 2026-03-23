@@ -308,5 +308,13 @@
     "lunch3_yuna_witness_2": {
         "name": "Me",
         "text": "*Her expression is blank. That makes it scarier.*"
+    },
+    "lunch3_seo_chase_dain_2b": {
+        "name": "{name}",
+        "text": "*I headed back to the classroom.*"
+    },
+    "lunch3_dain_witness_2b": {
+        "name": "{name}",
+        "text": "*I headed back to the classroom.*"
     }
 }

@@ -470,5 +470,17 @@
     "minsu_d3_6b": {
         "name": "민수",
         "text": "전 학교에서 뭔 일 있었는지 안 물어볼게. 근데 하나만 말해줄게."
+    },
+    "after3_reject_for_dain_2b": {
+        "name": "{name}",
+        "text": "*유나의 아지트로 향했다.*"
+    },
+    "after3_reject_for_dain_3b": {
+        "name": "{name}",
+        "text": "*다시 복도로 돌아왔다.*"
+    },
+    "haeun_warn_8b": {
+        "name": "{name}",
+        "text": "*학교 앞으로 나왔다.*"
     }
 }

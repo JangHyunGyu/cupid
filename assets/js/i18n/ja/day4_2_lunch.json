@@ -296,5 +296,17 @@
     "pre_confess_callback": {
         "name": "僕",
         "text": "*ポケットの中のスマホが重い。通知はないのに。— 初日、画面に浮かんだ名前を見てポケットに戻したあの時のように逃げてはいけない。今度は。*"
+    },
+    "date_seo_end_b": {
+        "name": "{name}",
+        "text": "*公園を出て、通りを歩いた。*"
+    },
+    "date_dain_to_arcade": {
+        "name": "{name}",
+        "text": "*ゲームセンターへ向かった。*"
+    },
+    "date_dain_knee_2b": {
+        "name": "{name}",
+        "text": "*ゲームセンターを出て、通りに出た。*"
     }
 }

@@ -399,5 +399,21 @@
     "morning3_dain_gate_cold_2": {
         "name": "ダイン",
         "text": "「あ、おはよう！」"
+    },
+    "morning3_react_yuna_1b": {
+        "name": "{name}",
+        "text": "*教室に戻った。*"
+    },
+    "morning3_date_intro_b": {
+        "name": "{name}",
+        "text": "*休み時間、廊下に出た。*"
+    },
+    "morning3_date_seo_accept_b": {
+        "name": "{name}",
+        "text": "*教室に戻った。*"
+    },
+    "morning3_date_seo_decline_b": {
+        "name": "{name}",
+        "text": "*教室に戻った。*"
     }
 }

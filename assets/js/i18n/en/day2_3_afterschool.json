@@ -507,5 +507,9 @@
     "after2_yuna_skinship_3": {
         "name": "Me",
         "text": "*Hands separate. Yuna picks up the book and hands it over. Without a word.*"
+    },
+    "after2_dain_11b": {
+        "name": "{name}",
+        "text": "*We left the gym and walked down the street.*"
     }
 }

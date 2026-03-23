@@ -688,5 +688,9 @@
     "day4_final": {
         "name": "{name}",
         "text": "*토요일 밤이 깊어간다. 내일은 일요일, 마지막 날이다.*"
+    },
+    "wall_seo_to_park": {
+        "name": "{name}",
+        "text": "*집을 나서 공원으로 향했다.*"
     }
 }

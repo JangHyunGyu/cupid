@@ -134,5 +134,21 @@
     "after5_confess_no_2": {
         "name": "{name}",
         "text": "*저녁 바람이 불어온다. 등 뒤의 그림자가 길어진다. — 혼자다.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*학교 뒤편으로 걸어갔다.*"
+    },
+    "after5_farewell_yuna_5b": {
+        "name": "{name}",
+        "text": "*복도로 돌아왔다.*"
+    },
+    "after5_farewell_dain_5b": {
+        "name": "{name}",
+        "text": "*체육관을 나서 학교 뒤편으로 향했다.*"
+    },
+    "after5_confess_no_2b": {
+        "name": "{name}",
+        "text": "*집으로 돌아왔다.*"
     }
 }

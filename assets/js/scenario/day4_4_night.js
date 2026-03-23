@@ -70,7 +70,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/seyoun_sad.png",
         "background": "assets/images/background/room_my.png",
         "night": true,
-        "next": "wall_seo_3"
+        "next": "wall_seo_to_park"
     },
     "wall_seo_pre_low_1": {
         "character": "assets/images/characters/seyoun_normal.png",
@@ -93,6 +93,12 @@ Object.assign(SCENARIO[4], {
     "wall_seo_2": {
         "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "wall_seo_to_park"
+    },
+    "wall_seo_to_park": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "wall_seo_3"
     },
@@ -633,7 +639,7 @@ Object.assign(SCENARIO[4], {
     // 선택 1: 코트 위의 침묵
     "wall_dain_newdream_1": {
         "background": "assets/images/background/gym.png",
-        "character": null,
+        "character": "assets/images/characters/dain_sad.png",
         "night": true,
         "next": "wall_dain_newdream_2"
     },

@@ -296,5 +296,17 @@
     "pre_confess_callback": {
         "name": "Yo",
         "text": "*El teléfono en mi bolsillo pesa. Sin notificaciones. — Como aquel primer día, cuando vi un nombre en la pantalla y lo guardé de nuevo. No puedo huir así otra vez. Esta vez no.*"
+    },
+    "date_seo_end_b": {
+        "name": "{name}",
+        "text": "*Salimos del parque y caminamos por la calle.*"
+    },
+    "date_dain_to_arcade": {
+        "name": "{name}",
+        "text": "*Nos dirigimos a la sala de juegos.*"
+    },
+    "date_dain_knee_2b": {
+        "name": "{name}",
+        "text": "*Salimos de la sala de juegos a la calle.*"
     }
 }

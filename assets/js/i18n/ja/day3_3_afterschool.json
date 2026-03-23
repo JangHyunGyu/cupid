@@ -470,5 +470,17 @@
     "after3_reject_for_dain_4": {
         "name": "僕",
         "text": "*ソヨンの練習した笑顔、ユナの空いた席。——残りの二人の席が空いていく感覚。*"
+    },
+    "after3_reject_for_dain_2b": {
+        "name": "{name}",
+        "text": "*ユナのアジトへ向かった。*"
+    },
+    "after3_reject_for_dain_3b": {
+        "name": "{name}",
+        "text": "*廊下に戻った。*"
+    },
+    "haeun_warn_8b": {
+        "name": "{name}",
+        "text": "*校門の前に出た。*"
     }
 }

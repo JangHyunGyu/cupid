@@ -296,5 +296,17 @@
     "pre_confess_callback": {
         "name": "{name}",
         "text": "*주머니 안의 핸드폰이 무겁다. 아무 알림도 없는데. — 첫날, 화면에 뜬 이름을 보고 주머니에 넣었던 그때처럼 도망치면 안 된다. 이번에는.*"
+    },
+    "date_seo_end_b": {
+        "name": "{name}",
+        "text": "*공원을 나서 거리를 걸었다.*"
+    },
+    "date_dain_to_arcade": {
+        "name": "{name}",
+        "text": "*오락실로 향했다.*"
+    },
+    "date_dain_knee_2b": {
+        "name": "{name}",
+        "text": "*오락실을 나와 거리로 나왔다.*"
     }
 }

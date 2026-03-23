@@ -134,5 +134,21 @@
     "after5_confess_no_2": {
         "name": "{name}",
         "text": "*夕焼けが消えた。言葉と一緒に。*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*校舎の裏手へ歩いていった。*"
+    },
+    "after5_farewell_yuna_5b": {
+        "name": "{name}",
+        "text": "*廊下に戻った。*"
+    },
+    "after5_farewell_dain_5b": {
+        "name": "{name}",
+        "text": "*体育館を出て、校舎の裏手へ向かった。*"
+    },
+    "after5_confess_no_2b": {
+        "name": "{name}",
+        "text": "*家に帰った。*"
     }
 }

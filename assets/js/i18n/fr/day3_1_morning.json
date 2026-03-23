@@ -399,5 +399,21 @@
     "morning3_dain_gate_cold_2": {
         "name": "Dain",
         "text": "Oh, salut !"
+    },
+    "morning3_react_yuna_1b": {
+        "name": "{name}",
+        "text": "*Je suis retourné en classe.*"
+    },
+    "morning3_date_intro_b": {
+        "name": "{name}",
+        "text": "*Pendant la pause, je suis sorti dans le couloir.*"
+    },
+    "morning3_date_seo_accept_b": {
+        "name": "{name}",
+        "text": "*Je suis retourné en classe.*"
+    },
+    "morning3_date_seo_decline_b": {
+        "name": "{name}",
+        "text": "*Je suis retourné en classe.*"
     }
 }

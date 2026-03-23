@@ -308,5 +308,13 @@
     "lunch3_yuna_witness_2": {
         "name": "Moi",
         "text": "*Son expression est vide. C'est encore plus effrayant.*"
+    },
+    "lunch3_seo_chase_dain_2b": {
+        "name": "{name}",
+        "text": "*Je suis retourné en classe.*"
+    },
+    "lunch3_dain_witness_2b": {
+        "name": "{name}",
+        "text": "*Je suis retourné en classe.*"
     }
 }

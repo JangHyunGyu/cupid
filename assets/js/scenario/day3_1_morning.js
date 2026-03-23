@@ -296,6 +296,11 @@ Object.assign(SCENARIO[3], {
     "morning3_react_yuna_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_pout.png",
+        "next": "morning3_react_yuna_1b"
+    },
+    "morning3_react_yuna_1b": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_pout.png",
         "next": "morning3_react_yuna_2"
     },
     "morning3_react_yuna_2": {
@@ -320,6 +325,11 @@ Object.assign(SCENARIO[3], {
     "morning3_date_intro": {
         "character": null,
         "background": "assets/images/background/room_school.png",
+        "next": "morning3_date_intro_b"
+    },
+    "morning3_date_intro_b": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "morning3_date_seo_1"
     },
 
@@ -355,10 +365,20 @@ Object.assign(SCENARIO[3], {
     "morning3_date_seo_accept": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_shy.png",
+        "next": "morning3_date_seo_accept_b"
+    },
+    "morning3_date_seo_accept_b": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "next": "morning3_date_dain_1"
     },
     "morning3_date_seo_decline": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning3_date_seo_decline_b"
+    },
+    "morning3_date_seo_decline_b": {
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning3_date_dain_1"
     },
