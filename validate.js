@@ -1530,6 +1530,37 @@ try {
 
 console.log('[FREETALK_CHECK] AI 프리토킹 검증 완료\n');
 
+// ===== Style Check: 지문 형식 + 오글/올드체 검출 =====
+console.log('[STYLE_CHECK] 대사 스타일 검증 시작...');
+
+const BANNED_PATTERNS = [
+    { pattern: /\([^)]*웃으며\)/g, desc: '(괄호) 지문 형식 사용 — *이탤릭* 형식으로 변경 필요' },
+    { pattern: /\([^)]*하며\)/g, desc: '(괄호) 지문 형식 사용 — *이탤릭* 형식으로 변경 필요' },
+    { pattern: /\([^)]*치며\)/g, desc: '(괄호) 지문 형식 사용 — *이탤릭* 형식으로 변경 필요' },
+    { pattern: /심장이 미친 듯이|심장이 뛴다|심장이 빨리/g, desc: '과도한 감정 서술 — 행동/디테일로 대체' },
+    { pattern: /바, 바보|후훗|쿡쿡/g, desc: '일본식 번역체' },
+    { pattern: /콩닥콩닥|두근두근/g, desc: '올드 미연시 클리셰' },
+    { pattern: /~쥬|~냥|~데스/g, desc: '유치한 애교' },
+];
+
+let styleIssues = 0;
+for (const [sceneId, entry] of Object.entries(i18nData)) {
+    const text = entry.text || '';
+    const choices = entry.choices || [];
+    const allTexts = [text, ...choices];
+    for (const t of allTexts) {
+        for (const { pattern, desc } of BANNED_PATTERNS) {
+            pattern.lastIndex = 0;
+            if (pattern.test(t)) {
+                errors.push('[STYLE] ' + sceneId + ': ' + desc + ' → "' + t.substring(0, 60) + '"');
+                styleIssues++;
+            }
+        }
+    }
+}
+
+console.log('[STYLE_CHECK] 대사 스타일 검증 완료 (' + styleIssues + '건 발견)\n');
+
 // ===== Print Results =====
 console.log('========== CUPID VALIDATION RESULTS ==========\n');
 console.log('Total scenes: ' + Object.keys(allScenes).length);
