@@ -27,6 +27,62 @@
         "name": "ユナ",
         "text": "……本、読み終わった？"
     },
+    "night2_msg_dain_specific": {
+        "name": "ダイン",
+        "text": "ねえ！！今日のトッポッキ最高だった！！"
+    },
+    "night2_msg_dain_specific_2": {
+        "name": "ダイン",
+        "text": "明日も勝負しよ！！種目変えて！！"
+    },
+    "night2_msg_seo_specific": {
+        "name": "ソヨン",
+        "text": "今日はありがとう。おかげで早く終わったよ"
+    },
+    "night2_msg_seo_specific_2": {
+        "name": "ソヨン",
+        "text": "次もお願いするかもしれないから、覚悟しておいて"
+    },
+    "night2_msg_yuna_specific": {
+        "name": "ユナ",
+        "text": "……今日のあの曲。よかった"
+    },
+    "night2_msg_yuna_specific_2": {
+        "name": "ユナ",
+        "text": "……また聴かせて"
+    },
+    "night2_msg_seo_general": {
+        "name": "ソヨン",
+        "text": "明日の昼、屋上開けておくよ。来て"
+    },
+    "night2_msg_dain_general": {
+        "name": "ダイン",
+        "text": "ねえ！！明日なにする？！"
+    },
+    "night2_msg_dain_general_merge": {
+        "name": "ソヨン",
+        "text": "明日の昼休み、空けておいて"
+    },
+    "night2_msg_seo_general_alt": {
+        "name": "ソヨン",
+        "text": "明日の昼、屋上開けておくよ。来て"
+    },
+    "night2_msg_yuna_general": {
+        "name": "ユナ",
+        "text": "……明日、図書館に来る？"
+    },
+    "night2_msg_generic": {
+        "name": "ダイン",
+        "text": "ねえ！！明日なにする？！"
+    },
+    "night2_msg_generic_2": {
+        "name": "ソヨン",
+        "text": "明日の昼休み、空けておいて"
+    },
+    "night2_msg_generic_3": {
+        "name": "ユナ",
+        "text": "……明日、図書館に来る？"
+    },
     "night2_msg_7": {
         "name": "僕",
         "text": "*三人に同時に返信しなきゃいけない状況。——これが幸せなのか拷問なのかわからない。*"

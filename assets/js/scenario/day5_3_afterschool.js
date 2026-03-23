@@ -275,6 +275,29 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "sunset": true,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "after5_confess_react_seo" },
+            { "condition": "route_dain", "next": "after5_confess_react_dain" },
+            { "condition": "route_yuna", "next": "after5_confess_react_yuna" },
+            { "next": "ending_start" }
+        ]
+    },
+    "after5_confess_react_seo": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "sunset": true,
+        "next": "ending_start"
+    },
+    "after5_confess_react_dain": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "sunset": true,
+        "next": "ending_start"
+    },
+    "after5_confess_react_yuna": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
         "next": "ending_start"
     },
     "after5_confess_no": {

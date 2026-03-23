@@ -116,6 +116,18 @@
             "Honestly, I thought you were flawless. But thank you for showing me this side of you."
         ]
     },
+    "wall_seo_line_react_1": {
+        "name": "Seoyeon",
+        "text": "...Really?"
+    },
+    "wall_seo_line_react_2": {
+        "name": "Seoyeon",
+        "text": "...Girlfriend?"
+    },
+    "wall_seo_line_react_3": {
+        "name": "Seoyeon",
+        "text": "...Thanks, I guess."
+    },
     "wall_seo_after_line": {
         "name": "Seoyeon",
         "text": "Is this really okay?"
@@ -493,6 +505,22 @@
     "day4_night_regret_2": {
         "name": "Me",
         "text": "*It's okay. There's tomorrow. Tomorrow, for sure.*"
+    },
+    "day4_night_regret_msg_branch": {
+        "name": "System",
+        "text": ""
+    },
+    "day4_night_regret_msg_seo": {
+        "name": "Seoyeon",
+        "text": "I had fun today. Are you free tomorrow too?"
+    },
+    "day4_night_regret_msg_dain": {
+        "name": "Dain",
+        "text": "Today was so fun!! Are you free tomorrow?!"
+    },
+    "day4_night_regret_msg_yuna": {
+        "name": "Yuna",
+        "text": "...I had fun today. Are you free tomorrow?"
     },
     "day4_night_regret_msg": {
         "name": "Me",

@@ -21,7 +21,12 @@ Object.assign(SCENARIO[4], {
     "day4_night_branch": {
         "character": null,
         "background": "assets/images/background/room_my.png",
+        "night": true,
         "branches": [
+            {
+                "next": "day4_night_regret",
+                "condition": "day4_waited"
+            },
             {
                 "next": "wall_seo_1",
                 "condition": "route_seoyeon"
@@ -33,10 +38,6 @@ Object.assign(SCENARIO[4], {
             {
                 "next": "wall_yuna_1",
                 "condition": "route_yuna"
-            },
-            {
-                "next": "day4_night_regret",
-                "condition": "day4_waited"
             },
             {
                 "next": "day4_night_reflect"
@@ -225,7 +226,7 @@ Object.assign(SCENARIO[4], {
         "night": true,
         "choices": [
             {
-                "next": "wall_seo_after_line",
+                "next": "wall_seo_line_react_1",
                 "stats": {
                     "Seoyeon": {
                         "affinity": 10
@@ -233,7 +234,7 @@ Object.assign(SCENARIO[4], {
                 }
             },
             {
-                "next": "wall_seo_after_line",
+                "next": "wall_seo_line_react_2",
                 "stats": {
                     "Seoyeon": {
                         "affinity": 10
@@ -241,7 +242,7 @@ Object.assign(SCENARIO[4], {
                 }
             },
             {
-                "next": "wall_seo_after_line",
+                "next": "wall_seo_line_react_3",
                 "stats": {
                     "Seoyeon": {
                         "affinity": 8
@@ -249,6 +250,26 @@ Object.assign(SCENARIO[4], {
                 }
             }
         ]
+    },
+
+    // 선택지별 서연 즉각 반응
+    "wall_seo_line_react_1": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_cry.png",
+        "night": true,
+        "next": "wall_seo_after_line"
+    },
+    "wall_seo_line_react_2": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_cry.png",
+        "night": true,
+        "next": "wall_seo_after_line"
+    },
+    "wall_seo_line_react_3": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_cry.png",
+        "night": true,
+        "next": "wall_seo_after_line"
     },
 
     // 선택 후 공통 흐름
@@ -899,7 +920,36 @@ Object.assign(SCENARIO[4], {
         "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
-        "next": "day4_night_regret_msg"
+        "next": "day4_night_regret_msg_branch"
+    },
+    "day4_night_regret_msg_branch": {
+        "character": null,
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "day4_night_regret_msg_seo" },
+            { "condition": "route_dain", "next": "day4_night_regret_msg_dain" },
+            { "condition": "route_yuna", "next": "day4_night_regret_msg_yuna" },
+            { "next": "day4_night_regret_msg" }
+        ]
+    },
+    "day4_night_regret_msg_seo": {
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "day4_night_regret_reply"
+    },
+    "day4_night_regret_msg_dain": {
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "day4_night_regret_reply"
+    },
+    "day4_night_regret_msg_yuna": {
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "day4_night_regret_reply"
     },
     "day4_night_regret_msg": {
         "character": null,

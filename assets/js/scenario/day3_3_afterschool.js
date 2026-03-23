@@ -117,9 +117,22 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "setFlags": ["seoyeon_day3_event"],
-        "next": "after3_seo_end"
+        "next": "after3_seo_end_c2"
     },
     "after3_seo_end": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "branches": [
+            {
+                "next": "after3_confront_1",
+                "condition": "day3_has_multiple_dates"
+            },
+            {
+                "next": "after3_final"
+            }
+        ]
+    },
+    "after3_seo_end_c2": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "branches": [
@@ -419,7 +432,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_confront_lie",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 5
+                        "affinity": -3
                     }
                 }
             }

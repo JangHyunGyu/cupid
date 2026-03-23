@@ -9,14 +9,14 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
 
 Object.assign(SCENARIO[3], {
     "night3_start": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "bgm": "night1.mp3",
         "character": null,
         "night": true,
         "next": "night3_start_2"
     },
     "night3_start_2": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "branches": [
@@ -51,7 +51,7 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "night3_faithful_msg_seo_1": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
         "condition": "seoyeon_day3_event",
         "next": "night3_faithful_msg_seo_2"
@@ -67,7 +67,7 @@ Object.assign(SCENARIO[3], {
         "next": "night3_dream_1"
     },
     "night3_faithful_msg_yuna_1": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "condition": "yuna_day3_event",
         "next": "night3_faithful_msg_yuna_2"
@@ -78,7 +78,7 @@ Object.assign(SCENARIO[3], {
         "next": "night3_dream_1"
     },
     "night3_faithful_msg_dain_1": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
         "condition": "dain_day3_event",
         "next": "night3_faithful_msg_dain_2"
@@ -104,25 +104,25 @@ Object.assign(SCENARIO[3], {
         "next": "night3_faithful_reflect_1"
     },
     "night3_faithful_reflect_1": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "next": "night3_faithful_reflect_2"
     },
     "night3_faithful_reflect_2": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "next": "night3_faithful_reflect_3"
     },
     "night3_faithful_reflect_3": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "next": "night3_faithful_reflect_4"
     },
     "night3_faithful_reflect_4": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "next": "night3_dream_3"
@@ -188,6 +188,11 @@ Object.assign(SCENARIO[3], {
     "night3_cheat_msg_6": {
         "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
+        "next": "night3_cheat_msg_dain_1"
+    },
+    "night3_cheat_msg_dain_1": {
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
+        "night": true,
         "next": "night3_cheat_msg_7"
     },
     "night3_cheat_msg_7": {
@@ -232,15 +237,30 @@ Object.assign(SCENARIO[3], {
         "night": true,
         "choices": [
             {
-                "next": "night3_nightmare_end"
+                "next": "night3_nightmare_seo"
             },
             {
-                "next": "night3_nightmare_end"
+                "next": "night3_nightmare_yuna"
             },
             {
-                "next": "night3_nightmare_end"
+                "next": "night3_nightmare_dain"
             }
         ]
+    },
+    "night3_nightmare_seo": {
+        "character": null,
+        "night": true,
+        "next": "night3_nightmare_end"
+    },
+    "night3_nightmare_yuna": {
+        "character": null,
+        "night": true,
+        "next": "night3_nightmare_end"
+    },
+    "night3_nightmare_dain": {
+        "character": null,
+        "night": true,
+        "next": "night3_nightmare_end"
     },
     "night3_nightmare_end": {
         "character": null,
@@ -253,37 +273,37 @@ Object.assign(SCENARIO[3], {
         "next": "night3_nightmare_end_3"
     },
     "night3_nightmare_end_3": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "next": "night3_cheat_reflect_1"
     },
     "night3_cheat_reflect_1": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "next": "night3_cheat_reflect_2"
     },
     "night3_cheat_reflect_2": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "next": "night3_cheat_reflect_3"
     },
     "night3_cheat_reflect_3": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "next": "night3_cheat_reflect_4"
     },
     "night3_cheat_reflect_4": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "next": "night3_cheat_reflect_5"
     },
     "night3_cheat_reflect_5": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "next": "night3_nightmare_end_4"

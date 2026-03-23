@@ -116,6 +116,18 @@
             "Honnêtement, je te croyais parfaite. Mais merci de me montrer ce côté de toi."
         ]
     },
+    "wall_seo_line_react_1": {
+        "name": "Seoyeon",
+        "text": "...Vraiment ?"
+    },
+    "wall_seo_line_react_2": {
+        "name": "Seoyeon",
+        "text": "...Petite amie ?"
+    },
+    "wall_seo_line_react_3": {
+        "name": "Seoyeon",
+        "text": "...Merci, je suppose."
+    },
     "wall_seo_after_line": {
         "name": "Seoyeon",
         "text": "C’est vraiment bien comme ça ?"
@@ -493,6 +505,22 @@
     "day4_night_regret_2": {
         "name": "Moi",
         "text": "*C’est pas grave. Il y a demain. Demain, sans faute.*"
+    },
+    "day4_night_regret_msg_branch": {
+        "name": "Système",
+        "text": ""
+    },
+    "day4_night_regret_msg_seo": {
+        "name": "Seoyeon",
+        "text": "Je me suis bien amusée aujourd’hui. Tu es libre demain aussi ?"
+    },
+    "day4_night_regret_msg_dain": {
+        "name": "Dain",
+        "text": "C’était trop bien aujourd’hui !! Tu es libre demain ?!"
+    },
+    "day4_night_regret_msg_yuna": {
+        "name": "Yuna",
+        "text": "...Je me suis bien amusée aujourd’hui. Demain, ça te va ?"
     },
     "day4_night_regret_msg": {
         "name": "Moi",

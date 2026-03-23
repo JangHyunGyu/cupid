@@ -115,6 +115,18 @@
         "name": "{name}",
         "text": "있잖아 — 나, 너한테 할 말이 있어."
     },
+    "after5_confess_react_seo": {
+        "name": "서연",
+        "text": "...늦었어. 근데 — 안 늦었어."
+    },
+    "after5_confess_react_dain": {
+        "name": "다인",
+        "text": "야, 진짜?! ...진짜?"
+    },
+    "after5_confess_react_yuna": {
+        "name": "유나",
+        "text": "...알고 있었어."
+    },
     "after5_confess_no": {
         "name": "{name}",
         "text": "*입술이 움직이지 않는다. 또. — 또 말하지 못했다.*"

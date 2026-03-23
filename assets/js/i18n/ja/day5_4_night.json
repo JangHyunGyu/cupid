@@ -99,6 +99,18 @@
         "name": "ダイン",
         "text": "「見てたし！！…でもずっと見ててもいいよ。」"
     },
+    "true_seo_bridge": {
+        "name": "僕",
+        "text": "*ソヨンの約束がまだ指先に残っている。*"
+    },
+    "true_yuna_bridge": {
+        "name": "僕",
+        "text": "*ユナの星がまだ目の前に残っている。*"
+    },
+    "true_dain_bridge": {
+        "name": "僕",
+        "text": "*ダインの笑い声がまだ耳に残っている。*"
+    },
     "true_epilogue_1": {
         "name": "僕",
         "text": "*5日間だった。*"
@@ -141,7 +153,7 @@
     },
     "good_1c": {
         "name": "{name}",
-        "text": ""
+        "text": "*彼女が一歩近づいた。*"
     },
     "good_1_seo": {
         "name": "ソヨン",

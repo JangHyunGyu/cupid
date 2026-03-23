@@ -27,6 +27,62 @@
         "name": "Yuna",
         "text": "...Hast du das Buch fertig gelesen?"
     },
+    "night2_msg_dain_specific": {
+        "name": "Dain",
+        "text": "Hey!! Das Tteokbokki heute war der Hammer!!"
+    },
+    "night2_msg_dain_specific_2": {
+        "name": "Dain",
+        "text": "Morgen wetten wir wieder!! Andere Disziplin!!"
+    },
+    "night2_msg_seo_specific": {
+        "name": "Seoyeon",
+        "text": "Danke für heute. Wir waren dank dir früher fertig"
+    },
+    "night2_msg_seo_specific_2": {
+        "name": "Seoyeon",
+        "text": "Ich rufe dich vielleicht nächstes Mal wieder, also sei vorbereitet"
+    },
+    "night2_msg_yuna_specific": {
+        "name": "Yuna",
+        "text": "...Das Lied heute. War schön"
+    },
+    "night2_msg_yuna_specific_2": {
+        "name": "Yuna",
+        "text": "...Spiel es mir irgendwann nochmal vor"
+    },
+    "night2_msg_seo_general": {
+        "name": "Seoyeon",
+        "text": "Morgen Mittag lass ich das Dach offen. Komm"
+    },
+    "night2_msg_dain_general": {
+        "name": "Dain",
+        "text": "Hey!! Was machst du morgen?!"
+    },
+    "night2_msg_dain_general_merge": {
+        "name": "Seoyeon",
+        "text": "Halt dir morgen die Mittagspause frei"
+    },
+    "night2_msg_seo_general_alt": {
+        "name": "Seoyeon",
+        "text": "Morgen Mittag lass ich das Dach offen. Komm"
+    },
+    "night2_msg_yuna_general": {
+        "name": "Yuna",
+        "text": "...Kommst du morgen in die Bibliothek?"
+    },
+    "night2_msg_generic": {
+        "name": "Dain",
+        "text": "Hey!! Was machst du morgen?!"
+    },
+    "night2_msg_generic_2": {
+        "name": "Seoyeon",
+        "text": "Halt dir morgen die Mittagspause frei"
+    },
+    "night2_msg_generic_3": {
+        "name": "Yuna",
+        "text": "...Kommst du morgen in die Bibliothek?"
+    },
     "night2_msg_7": {
         "name": "Ich",
         "text": "*Ich muss allen dreien gleichzeitig antworten. -- Ich weiss nicht, ob das Glueck oder Qual ist.*"

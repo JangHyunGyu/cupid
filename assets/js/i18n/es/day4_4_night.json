@@ -116,6 +116,18 @@
             "Sinceramente, pensé que eras perfecta. Pero gracias por mostrarme este lado tuyo."
         ]
     },
+    "wall_seo_line_react_1": {
+        "name": "Seoyeon",
+        "text": "...¿En serio?"
+    },
+    "wall_seo_line_react_2": {
+        "name": "Seoyeon",
+        "text": "...¿Novia?"
+    },
+    "wall_seo_line_react_3": {
+        "name": "Seoyeon",
+        "text": "...Gracias, supongo."
+    },
     "wall_seo_after_line": {
         "name": "Seoyeon",
         "text": "¿De verdad está bien así?"
@@ -493,6 +505,22 @@
     "day4_night_regret_2": {
         "name": "Yo",
         "text": "*Está bien. Hay un mañana. Mañana, sin falta.*"
+    },
+    "day4_night_regret_msg_branch": {
+        "name": "Sistema",
+        "text": ""
+    },
+    "day4_night_regret_msg_seo": {
+        "name": "Seoyeon",
+        "text": "Me divertí hoy. ¿Tienes tiempo mañana también?"
+    },
+    "day4_night_regret_msg_dain": {
+        "name": "Dain",
+        "text": "¡¡Hoy fue súper divertido!! ¡¿Estás libre mañana?!"
+    },
+    "day4_night_regret_msg_yuna": {
+        "name": "Yuna",
+        "text": "...Me divertí hoy. ¿Mañana estás libre?"
     },
     "day4_night_regret_msg": {
         "name": "Yo",

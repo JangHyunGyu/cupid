@@ -149,6 +149,13 @@ Object.assign(SCENARIO[5], {
         "character": "assets/images/characters/seyoun_shy.png",
         "night": true,
         "fade": true,
+        "next": "true_seo_bridge"
+    },
+    "true_seo_bridge": {
+        "background": "assets/images/background/seyoun_room.png",
+        "character": null,
+        "night": true,
+        "fade": true,
         "next": "true_epilogue_1"
     },
 
@@ -198,6 +205,13 @@ Object.assign(SCENARIO[5], {
     "true_yuna_7": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
+        "night": true,
+        "fade": true,
+        "next": "true_yuna_bridge"
+    },
+    "true_yuna_bridge": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
         "night": true,
         "fade": true,
         "next": "true_epilogue_1"
@@ -256,6 +270,13 @@ Object.assign(SCENARIO[5], {
     "true_dain_8": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
+        "night": true,
+        "fade": true,
+        "next": "true_dain_bridge"
+    },
+    "true_dain_bridge": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
         "night": true,
         "fade": true,
         "next": "true_epilogue_1"
@@ -585,7 +606,7 @@ Object.assign(SCENARIO[5], {
     // ALONE END
     // =========================================================================
     "day5_ending_alone": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
         "fade": true,

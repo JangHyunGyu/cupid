@@ -115,6 +115,18 @@
         "name": "{name}",
         "text": "*Lo dije. Torpe, roto — pero lo dije.*"
     },
+    "after5_confess_react_seo": {
+        "name": "Seoyeon",
+        "text": "...Llegas tarde. Pero — no demasiado tarde."
+    },
+    "after5_confess_react_dain": {
+        "name": "Dain",
+        "text": "Oye, ¿en serio?! ...¿En serio?"
+    },
+    "after5_confess_react_yuna": {
+        "name": "Yuna",
+        "text": "...Ya lo sabía."
+    },
     "after5_confess_no": {
         "name": "{name}",
         "text": "*Mis labios no se mueven. Otra vez. — Otra vez no pude decirlo.*"

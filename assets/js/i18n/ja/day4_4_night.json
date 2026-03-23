@@ -116,6 +116,18 @@
             "正直、完璧だと思ってた。でもこういう姿を見せてくれて、ありがとう。"
         ]
     },
+    "wall_seo_line_react_1": {
+        "name": "ソヨン",
+        "text": "…本当に？"
+    },
+    "wall_seo_line_react_2": {
+        "name": "ソヨン",
+        "text": "…彼女？"
+    },
+    "wall_seo_line_react_3": {
+        "name": "ソヨン",
+        "text": "…ありがと。"
+    },
     "wall_seo_after_line": {
         "name": "ソヨン",
         "text": "これでもいいの？"
@@ -493,6 +505,22 @@
     "day4_night_regret_2": {
         "name": "僕",
         "text": "*大丈夫。明日がある。明日こそ必ず。*"
+    },
+    "day4_night_regret_msg_branch": {
+        "name": "システム",
+        "text": ""
+    },
+    "day4_night_regret_msg_seo": {
+        "name": "ソヨン",
+        "text": "今日は楽しかった。明日も時間ある？"
+    },
+    "day4_night_regret_msg_dain": {
+        "name": "ダイン",
+        "text": "今日めっちゃ楽しかった！！明日も空いてる？！"
+    },
+    "day4_night_regret_msg_yuna": {
+        "name": "ユナ",
+        "text": "…今日は楽しかった。明日も大丈夫？"
     },
     "day4_night_regret_msg": {
         "name": "僕",
