@@ -31,7 +31,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/gym.png",
         "bgm": "daily2.mp3",
         "character": "assets/images/characters/dain_active.png",
-        "stats": { "Dain": { "affinity": 16 } },
+        "stats": { "Dain": { "affinity": 6 } },
         "setFlags": ["chose_dain_after2"],
         "next": "after2_dain_2"
     },
@@ -193,7 +193,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/teacher_office.png",
         "bgm": "sunset1.mp3",
         "character": "assets/images/characters/seyoun_normal.png",
-        "stats": { "Seoyeon": { "affinity": 16 } },
+        "stats": { "Seoyeon": { "affinity": 4 } },
         "setFlags": ["chose_seo_after2"],
         "next": "after2_seo_2"
     },
@@ -275,7 +275,7 @@ Object.assign(SCENARIO[2], {
                 "next": "after2_seo_sunset_joke",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 16
+                        "affinity": 4
                     }
                 }
             },
@@ -283,7 +283,7 @@ Object.assign(SCENARIO[2], {
                 "next": "after2_seo_neck_worry",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 10
+                        "affinity": 3
                     }
                 }
             }
@@ -351,7 +351,7 @@ Object.assign(SCENARIO[2], {
                 "next": "after2_seo_stay",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 10
+                        "affinity": 3
                     }
                 }
             },
@@ -433,7 +433,7 @@ Object.assign(SCENARIO[2], {
     "after2_yuna_2": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": { "Yuna": { "affinity": 16 } },
+        "stats": { "Yuna": { "affinity": 6 } },
         "next": "after2_yuna_3"
     },
     "after2_yuna_3": {
@@ -509,7 +509,7 @@ Object.assign(SCENARIO[2], {
                 "next": "after2_yuna_everyday",
                 "stats": {
                     "Yuna": {
-                        "affinity": 16
+                        "affinity": 6
                     }
                 }
             },
@@ -517,7 +517,7 @@ Object.assign(SCENARIO[2], {
                 "next": "after2_yuna_quiet",
                 "stats": {
                     "Yuna": {
-                        "affinity": 10
+                        "affinity": 4
                     }
                 }
             }
@@ -694,7 +694,7 @@ Object.assign(SCENARIO[2], {
         "next": "hidden_nurse_d2_3"
     },
     "hidden_nurse_d2_3": {
-        "stats": { "Nurse": { "affinity": 15 } },
+        "stats": { "Nurse": { "affinity": 10 } },
         "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d2_4"
@@ -715,7 +715,7 @@ Object.assign(SCENARIO[2], {
         "next": "hidden_nurse_d2_7"
     },
     "hidden_nurse_d2_7": {
-        "stats": { "Nurse": { "affinity": 10 } },
+        "stats": { "Nurse": { "affinity": 7 } },
         "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d2_8"

@@ -164,7 +164,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_seo_choice1",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 18
+                        "affinity": 5
                     }
                 }
             },
@@ -172,7 +172,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_seo_choice2",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 10
+                        "affinity": 3
                     }
                 }
             }
@@ -277,7 +277,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_yuna_choice1",
                 "stats": {
                     "Yuna": {
-                        "affinity": 16
+                        "affinity": 6
                     }
                 }
             },
@@ -285,7 +285,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_yuna_choice2",
                 "stats": {
                     "Yuna": {
-                        "affinity": 18
+                        "affinity": 7
                     }
                 }
             }
@@ -387,7 +387,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_dain_choice1",
                 "stats": {
                     "Dain": {
-                        "affinity": 18
+                        "affinity": 6
                     }
                 }
             },
@@ -395,7 +395,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_dain_choice2",
                 "stats": {
                     "Dain": {
-                        "affinity": 10
+                        "affinity": 3
                     }
                 }
             }
@@ -492,7 +492,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_confront_admit",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": -5
+                        "affinity": -4
                     }
                 }
             },
@@ -500,7 +500,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_confront_excuse",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": -8
+                        "affinity": -7
                     }
                 }
             },
