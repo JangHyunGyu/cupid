@@ -78,6 +78,12 @@ html {
     opacity: 1;
 }
 
+/* 엔딩 CG 전용 느린 페이드인 (2초) */
+#background-layer.bg-crossfade-slow::after {
+    transition: opacity 2s ease-in-out;
+    opacity: 1;
+}
+
 /* 배경 시간대별 필터 효과 */
 #background-layer.night {
     filter: brightness(0.3) sepia(0.3) hue-rotate(210deg) saturate(0.8);
