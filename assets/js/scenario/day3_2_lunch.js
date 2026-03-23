@@ -88,7 +88,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_give_seo_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "stats": { "Seoyeon": { "affinity": 5 } },
+        "stats": { "Seoyeon": { "affinity": 10 } },
         "setFlags": ["lunch3_gave_seoyeon"],
         "next": "lunch3_seo_skin_check"
     },
@@ -144,7 +144,7 @@ Object.assign(SCENARIO[3], {
         "choices": [
             {
                 "next": "lunch3_seo_chase_dain_1",
-                "stats": { "Seoyeon": { "affinity": -3 }, "Dain": { "affinity": 2 } }
+                "stats": { "Seoyeon": { "affinity": -3 }, "Dain": { "affinity": 6 } }
             },
             {
                 "next": "lunch3_seo_focus_1",
@@ -195,7 +195,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_give_dain_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "stats": { "Dain": { "affinity": 5 } },
+        "stats": { "Dain": { "affinity": 10 } },
         "setFlags": ["lunch3_gave_dain"],
         "next": "lunch3_dain_skin_check"
     },
@@ -265,7 +265,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_give_yuna_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": { "Yuna": { "affinity": 5 } },
+        "stats": { "Yuna": { "affinity": 10 } },
         "setFlags": ["lunch3_gave_yuna"],
         "next": "lunch3_yuna_skin_check"
     },
