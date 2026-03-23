@@ -782,9 +782,13 @@ html[lang="de"] #message {
 /* 세로 모드 (Portrait) 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 90%;
+        height: 80%;
         /* 세로 화면에서 캐릭터가 너무 크지 않게 축소 */
         bottom: 0;
+    }
+
+    .char-slot img {
+        height: 85%;
     }
 
     .char-slot {
@@ -796,7 +800,7 @@ html[lang="de"] #message {
     }
 
     #char-left img {
-        transform: scale(0.8);
+        transform: scale(0.75);
         /* 모바일에서 더 작게 */
     }
 
@@ -805,7 +809,7 @@ html[lang="de"] #message {
     }
 
     #char-right img {
-        transform: scale(0.8);
+        transform: scale(0.75);
         /* 모바일에서 더 작게 */
         mix-blend-mode: lighten;
     }
