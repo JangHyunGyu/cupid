@@ -24,7 +24,7 @@
         "text": "*My fingertips are cold. There's no wind. If I don't say it now — I don't think I'll ever have this courage again.*",
         "choices": [
             "You know if you run, I'll chase you. So just stay and hear me out.",
-            "...This view is really beautiful."
+            "...Nice breeze."
         ]
     },
     "confess_seo_yes_1": {
@@ -77,7 +77,7 @@
     },
     "confess_seo_no_1": {
         "name": "Me",
-        "text": "...This rooftop is really nice."
+        "text": "...Nice breeze."
     },
     "confess_seo_no_2": {
         "name": "Me",
@@ -196,7 +196,7 @@
         "text": "*The gym floor seems to sway. If I don't say it now — I don't think I'll ever have this courage again.*",
         "choices": [
             "You know if you run, I'll chase you. So just stay and hear me out.",
-            "...This place is really big."
+            "...Wanna play one more round?"
         ]
     },
     "confess_dain_yes_1": {
@@ -241,7 +241,7 @@
     },
     "confess_dain_no_1": {
         "name": "Me",
-        "text": "...This place is really big."
+        "text": "...Wanna play one more round?"
     },
     "confess_dain_no_2": {
         "name": "Me",

@@ -78,15 +78,43 @@
     },
     "after2_dain_end": {
         "name": "Yo",
-        "text": "*Sus ojos tienen forma de media luna. Los mismos ojos de ayer. -- Asi se ve esta persona cuando se divierte de verdad.*\n\n*En la tienda de tteokbokki cerca de la escuela.*\n\n*Dain sopla su tteokbokki y dice:*\nOye, de verdad sabes de deportes, no?"
+        "text": "*Sus ojos tienen forma de media luna. Los mismos ojos de ayer. -- Asi se ve esta persona cuando se divierte de verdad.*\n\n*En la tienda de tteokbokki cerca de la escuela.*\n\n*Dain sopla su tteokbokki y dice --*"
     },
     "after2_dain_end_2": {
-        "name": "Yo",
-        "text": "Un poco.\n\nUn 'poco' no juega asi! -- Admitelo, eres bueno.\n\n{name} era mucho mejor."
+        "name": "Dain",
+        "text": "Oye, de verdad sabes de deportes, no?"
+    },
+    "after2_dain_end_2b": {
+        "name": "{name}",
+        "text": "Un poco."
+    },
+    "after2_dain_end_2c": {
+        "name": "Dain",
+        "text": "Un 'poco' no juega asi! -- Admitelo, eres bueno."
+    },
+    "after2_dain_end_2d": {
+        "name": "{name}",
+        "text": "{name} era mucho mejor."
     },
     "after2_dain_end_3": {
         "name": "Yo",
-        "text": "*Dain detiene los palillos. Solo un instante.*\n\n...Obvio! Yo era becada deportiva!\n\n*'Era'. Pasado. -- Algo me dice que es mejor no preguntar.*\n\nAhh esta muy picante!! Agua, agua!!\n\n*El tema cambio. -- Si lo cambio a proposito o de verdad estaba picante. Probablemente ambas.*"
+        "text": "*Dain detiene los palillos. Solo un instante.*"
+    },
+    "after2_dain_end_3b": {
+        "name": "Dain",
+        "text": "...Obvio! Yo era becada deportiva!"
+    },
+    "after2_dain_end_3c": {
+        "name": "Yo",
+        "text": "*'Era'. Pasado. -- Algo me dice que es mejor no preguntar.*"
+    },
+    "after2_dain_end_3d": {
+        "name": "Dain",
+        "text": "Ahh esta muy picante!! Agua, agua!!"
+    },
+    "after2_dain_end_3e": {
+        "name": "Yo",
+        "text": "*El tema cambio. -- Si lo cambio a proposito o de verdad estaba picante. Probablemente ambas.*"
     },
     "after2_seo_1": {
         "name": "Yo",
@@ -118,11 +146,35 @@
     },
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "Estos van por fecha, esos por club. -- Se te da bien organizar?\"\n\n\"{name}: No genial, pero tampoco mal.\"\n\n\"Vago.\"\n\n\"{name}: Como tus cumplidos. Tambien son vagos.\""
+        "text": "Estos van por fecha, esos por club. -- Se te da bien organizar?"
+    },
+    "after2_seo_8a2": {
+        "name": "{name}",
+        "text": "No genial, pero tampoco mal."
+    },
+    "after2_seo_8a3": {
+        "name": "Seoyeon",
+        "text": "Vago."
+    },
+    "after2_seo_8a4": {
+        "name": "{name}",
+        "text": "Como tus cumplidos. Tambien son vagos."
     },
     "after2_seo_8b": {
+        "name": "Yo",
+        "text": "*Seoyeon levanta la vista de los documentos.*"
+    },
+    "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon levanta la vista de los documentos.*\n\n\"...Eres sorprendentemente util.\"\n\n\"{name}: Eso es un cumplido?\"\n\n\"Es un cumplido. Aceptalo."
+        "text": "...Eres sorprendentemente util."
+    },
+    "after2_seo_8b3": {
+        "name": "{name}",
+        "text": "Eso es un cumplido?"
+    },
+    "after2_seo_8b4": {
+        "name": "Seoyeon",
+        "text": "Es un cumplido. Aceptalo."
     },
     "after2_seo_choice1": {
         "name": "Yo",
@@ -148,6 +200,26 @@
         "name": "Yo",
         "text": "*Seoyeon rota los hombros. Se escucha como crujen.*"
     },
+    "after2_seo_neck_touch": {
+        "name": "Seoyeon",
+        "text": "Esta muy tenso. No te muevas un momento.\n\n*Seoyeon se levanta y viene detras de mi. Pone las manos sobre mis hombros.*"
+    },
+    "after2_seo_neck_high": {
+        "name": "Yo",
+        "text": "*Cierro los ojos y me dejo llevar.*"
+    },
+    "after2_seo_neck_high_2": {
+        "name": "Seoyeon",
+        "text": "*En voz baja* ...No sabia que tus manos fueran tan calidas.\n\n*Las manos de quien? -- Sus manos estan sobre mis hombros, no al reves. Se le mezclaron las palabras. Asi de nerviosa esta.*"
+    },
+    "after2_seo_neck_low": {
+        "name": "Yo",
+        "text": "*Me echo un poco hacia atras.*\n\nQue haces de repente."
+    },
+    "after2_seo_neck_low_2": {
+        "name": "Seoyeon",
+        "text": "*Retirando las manos* ...No es nada.\n\n*Su expresion se congela por medio segundo. -- Y luego sonrie de inmediato. Perfectamente.*"
+    },
     "after2_seo_9": {
         "name": "Yo",
         "text": "*El atardecer bana la sala del consejo. El papeleo esta casi terminado.*"
@@ -170,7 +242,15 @@
     },
     "after2_seo_stay_3": {
         "name": "{name}",
-        "text": "Incluso la presidenta del consejo descansa?\n\nSeoyeon: Nunca. -- Excepto aqui.\n\n*'Excepto aqui.' -- Ya sea la azotea o la sala del consejo, Seoyeon es alguien que necesita un lugar donde pueda quitarse la mascara.*"
+        "text": "Incluso la presidenta del consejo descansa?"
+    },
+    "after2_seo_stay_3b": {
+        "name": "Seoyeon",
+        "text": "Nunca. -- Excepto aqui."
+    },
+    "after2_seo_stay_3c": {
+        "name": "Yo",
+        "text": "*'Excepto aqui.' -- Ya sea la azotea o la sala del consejo, Seoyeon es alguien que necesita un lugar donde pueda quitarse la mascara.*"
     },
     "after2_seo_leave": {
         "name": "Yo",
@@ -210,15 +290,39 @@
     },
     "after2_yuna_8": {
         "name": "Yuna",
-        "text": "...Por casualidad.\n\n*Una puerta abierta por casualidad. -- La 'casualidad' de Yuna es sinonimo de 'a proposito'.*\n\n*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*\n\nEscucha.\n\n*Suena una pieza tranquila de piano. El atardecer esta pintando la habitacion.*"
+        "text": "...Por casualidad."
+    },
+    "after2_yuna_8b": {
+        "name": "Yo",
+        "text": "*Una puerta abierta por casualidad. -- La 'casualidad' de Yuna es sinonimo de 'a proposito'.*\n\n*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*"
+    },
+    "after2_yuna_8c": {
+        "name": "Yuna",
+        "text": "Escucha."
+    },
+    "after2_yuna_8d": {
+        "name": "Yo",
+        "text": "*Suena una pieza tranquila de piano. El atardecer esta pintando la habitacion.*"
     },
     "after2_yuna_9": {
         "name": "Yo",
         "text": "*Yuna lee su libro y yo escucho la musica. Sin palabras. -- Nada incomodo.*"
     },
-    "after2_yuna_choice": {
+    "after2_yuna_choice_pre1": {
         "name": "Yuna",
-        "text": "*Despues de un largo rato* ...Alguien que viene aqui despues de clases.\n\n{name}: Hm?\n\nNo habia habido nadie desde aquel sunbae.\n\n*Yuna dijo dos frases. -- Para ella, eso es lo mismo que 'gracias'.*",
+        "text": "*Despues de un largo rato* ...Alguien que viene aqui despues de clases."
+    },
+    "after2_yuna_choice_pre2": {
+        "name": "{name}",
+        "text": "Hm?"
+    },
+    "after2_yuna_choice_pre3": {
+        "name": "Yuna",
+        "text": "No habia habido nadie desde aquel sunbae."
+    },
+    "after2_yuna_choice": {
+        "name": "Yo",
+        "text": "*Yuna dijo dos frases. -- Para ella, eso es lo mismo que 'gracias'.*",
         "choices": [
             "Deberia venir todos los dias?",
             "Es agradable porque es tranquilo"

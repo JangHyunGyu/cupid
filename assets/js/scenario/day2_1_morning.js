@@ -17,10 +17,7 @@ Object.assign(SCENARIO[2], {
     "morning2_start_2": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "branches": [
-            { "condition": "homeroom_day1", "next": "hidden_homeroom_d2_1" },
-            { "next": "morning2_dain_1" }
-        ]
+        "next": "morning2_dain_1"
     },
     "morning2_dain_1": {
         "background": "assets/images/background/room_school.png",
@@ -134,7 +131,10 @@ Object.assign(SCENARIO[2], {
     "morning2_dain_claim_6": {
         "character": "assets/images/characters/dain_laugh.png",
         "background": "assets/images/background/room_school.png",
-        "next": "morning2_break_1"
+        "branches": [
+            { "condition": "homeroom_day1", "next": "hidden_homeroom_d2_1" },
+            { "next": "morning2_break_1" }
+        ]
     },
     "morning2_break_1": {
         "character": null,
@@ -314,7 +314,7 @@ Object.assign(SCENARIO[2], {
     "hidden_homeroom_d2_12": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "setFlag": "homeroom_day2",
+        "setFlags": ["homeroom_day2", "noticed_manuscript"],
         "next": "morning2_seo_dust_1"
     },
 });

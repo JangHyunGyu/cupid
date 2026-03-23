@@ -24,7 +24,7 @@
         "text": "*Meine Fingerspitzen sind kalt. Es weht kein Wind. Wenn ich es jetzt nicht sage — werde ich diesen Mut nie wieder haben.*",
         "choices": [
             "Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.",
-            "...Diese Aussicht ist wirklich schön."
+            "...Schöner Wind."
         ]
     },
     "confess_seo_yes_1": {
@@ -77,7 +77,7 @@
     },
     "confess_seo_no_1": {
         "name": "Ich",
-        "text": "...Dieses Dach ist wirklich schön."
+        "text": "...Schöner Wind."
     },
     "confess_seo_no_2": {
         "name": "Ich",
@@ -196,7 +196,7 @@
         "text": "*Der Boden der Turnhalle scheint zu schwanken. Wenn ich es jetzt nicht sage — werde ich diesen Mut nie wieder haben.*",
         "choices": [
             "Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.",
-            "...Dieser Ort ist wirklich groß."
+            "...Noch eine Runde?"
         ]
     },
     "confess_dain_yes_1": {
@@ -241,7 +241,7 @@
     },
     "confess_dain_no_1": {
         "name": "Ich",
-        "text": "...Dieser Ort ist wirklich groß."
+        "text": "...Noch eine Runde?"
     },
     "confess_dain_no_2": {
         "name": "Ich",
