@@ -253,5 +253,29 @@
     "night2_hidden_nurse_2": {
         "name": "僕",
         "text": "*拒否権なし。——医療的強制なのか個人的関心なのか、絵文字が境界を曖昧にする。*"
+    },
+    "night2_reply_dain_react_high": {
+        "name": "ダイン",
+        "text": "うわあああ！！今マジで布団蹴ったwwww 明日絶対体育館来て！！"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "ダイン",
+        "text": "ｗｗ了解〜おやすみ！"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "ソヨン",
+        "text": "...思ったより面白い人だね。明日の昼、屋上で会わない？"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "ソヨン",
+        "text": "ふ、了解。また明日。"
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "ユナ",
+        "text": "...こんな時間に返信する人がいるんだ。明日、図書館に来る？"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "ユナ",
+        "text": "...うん。おやすみ。"
     }
 }

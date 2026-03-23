@@ -163,6 +163,26 @@ Object.assign(SCENARIO[2], {
         "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 30, "next": "night2_reply_dain_react_high" },
+            { "minAffinity": 0, "next": "night2_reply_dain_react_default" }
+        ],
+        "next": "night2_reply_dain_react_default"
+    },
+    "night2_reply_dain_react_high": {
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "stats": { "Dain": { "affinity": 2 } },
+        "setFlags": ["night2_replied_dain"],
+        "next": "night2_dain_freetalk"
+    },
+    "night2_reply_dain_react_default": {
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "setFlags": ["night2_replied_dain"],
         "next": "night2_dain_freetalk"
     },
     "night2_reply_seo_1": {
@@ -194,6 +214,26 @@ Object.assign(SCENARIO[2], {
         "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 30, "next": "night2_reply_seo_react_high" },
+            { "minAffinity": 0, "next": "night2_reply_seo_react_default" }
+        ],
+        "next": "night2_reply_seo_react_default"
+    },
+    "night2_reply_seo_react_high": {
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "stats": { "Seoyeon": { "affinity": 2 } },
+        "setFlags": ["night2_replied_seo"],
+        "next": "night2_seo_freetalk"
+    },
+    "night2_reply_seo_react_default": {
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "setFlags": ["night2_replied_seo"],
         "next": "night2_seo_freetalk"
     },
     "night2_reply_yuna_1": {
@@ -237,6 +277,26 @@ Object.assign(SCENARIO[2], {
         "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 30, "next": "night2_reply_yuna_react_high" },
+            { "minAffinity": 0, "next": "night2_reply_yuna_react_default" }
+        ],
+        "next": "night2_reply_yuna_react_default"
+    },
+    "night2_reply_yuna_react_high": {
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "stats": { "Yuna": { "affinity": 2 } },
+        "setFlags": ["night2_replied_yuna"],
+        "next": "night2_yuna_freetalk"
+    },
+    "night2_reply_yuna_react_default": {
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "setFlags": ["night2_replied_yuna"],
         "next": "night2_yuna_freetalk"
     },
     "night2_end_1": {

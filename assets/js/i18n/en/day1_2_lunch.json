@@ -457,5 +457,29 @@
         "text": "*Reading books side by side with Yuna in the library. It's quiet, but comfortable.*",
         "context": "First day lunch, just spent time with Yuna in the library. The quiet was nice. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
         "personality": "Yuna is a mysterious literary girl. Short, dry sentences, but when she opens up, her sentences get longer. Communicates through notes."
+    },
+    "lunch_seo_1_aff_high": {
+        "name": "Seoyeon",
+        "text": "Sit here. That thing you said in the hallway earlier — it was kind of funny."
+    },
+    "lunch_seo_1_aff_default": {
+        "name": "Seoyeon",
+        "text": "...You sitting down or what?"
+    },
+    "lunch_dain_1_aff_high": {
+        "name": "Dain",
+        "text": "Oh! You came! I saw you during PE! Let's eat together!"
+    },
+    "lunch_dain_1_aff_default": {
+        "name": "Dain",
+        "text": "Hey, you're the transfer student, right? Eaten yet?"
+    },
+    "lunch_yuna_1_aff_high": {
+        "name": "Me",
+        "text": "*Yuna hands over a folded note. '...What you said earlier. I remembered.'*"
+    },
+    "lunch_yuna_1_aff_default": {
+        "name": "Me",
+        "text": "*Yuna sits in her spot without a note. Silent.*"
     }
 }

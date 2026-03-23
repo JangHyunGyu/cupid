@@ -471,5 +471,41 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "...¿Qué?"
+    },
+    "after2_dain_skinship_1": {
+        "name": "{name}",
+        "text": "*Dain levanta la mano de golpe. Choca esos cinco.*"
+    },
+    "after2_dain_skinship_2": {
+        "name": "Dain",
+        "text": "...¡Ay, perdón! ¡Es la costumbre!"
+    },
+    "after2_dain_skinship_3": {
+        "name": "{name}",
+        "text": "*Retiró la mano. No parece nada arrepentida. — Mi palma aún está caliente.*"
+    },
+    "after2_seo_skinship_1": {
+        "name": "{name}",
+        "text": "*Seoyeon extiende la mano. Quita una mota de polvo de mi cuello. Su mano roza mi cuello.*"
+    },
+    "after2_seo_skinship_2": {
+        "name": "{name}",
+        "text": "*Los dedos de Seoyeon se detienen medio segundo. Se da la vuelta sin decir nada.*"
+    },
+    "after2_seo_skinship_3": {
+        "name": "Seoyeon",
+        "text": "...Tenías polvo."
+    },
+    "after2_yuna_skinship_1": {
+        "name": "{name}",
+        "text": "*Fuimos a tomar el mismo libro — nuestras manos se superponen.*"
+    },
+    "after2_yuna_skinship_2": {
+        "name": "{name}",
+        "text": "*Yuna no retira la mano primero. Tres segundos. Baja la mirada.*"
+    },
+    "after2_yuna_skinship_3": {
+        "name": "{name}",
+        "text": "*Las manos se separan. Yuna toma el libro y me lo pasa. Sin decir nada.*"
     }
 }

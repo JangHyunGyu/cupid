@@ -17,6 +17,77 @@ Object.assign(SCENARIO[2], {
     "morning2_start_2": {
         "background": "assets/images/background/room_school.png",
         "character": null,
+        "affinityBranches": [
+            { "char": "Seoyeon", "minAffinity": 15, "next": "morning2_greet_seo_1" },
+            { "char": "Dain", "minAffinity": 15, "next": "morning2_greet_dain_1" },
+            { "char": "Yuna", "minAffinity": 15, "next": "morning2_greet_yuna_1" }
+        ],
+        "next": "morning2_dain_1"
+    },
+    // =========================================================================
+    // A-2: 호감도 최고 캐릭터 인사 분기
+    // =========================================================================
+    "morning2_greet_seo_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning2_greet_seo_2"
+    },
+    "morning2_greet_seo_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning2_greet_seo_others"
+    },
+    // B-1.5: 서연 접근 시 나머지 반응
+    "morning2_greet_seo_others": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning2_greet_seo_others_2"
+    },
+    "morning2_greet_seo_others_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning2_dain_1"
+    },
+    "morning2_greet_dain_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "morning2_greet_dain_2"
+    },
+    "morning2_greet_dain_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "morning2_greet_dain_others"
+    },
+    // B-1.5: 다인 접근 시 나머지 반응
+    "morning2_greet_dain_others": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning2_greet_dain_others_2"
+    },
+    "morning2_greet_dain_others_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning2_dain_1"
+    },
+    "morning2_greet_yuna_1": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning2_greet_yuna_2"
+    },
+    "morning2_greet_yuna_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning2_greet_yuna_others"
+    },
+    // B-1.5: 유나 쪽지 시 나머지 반응
+    "morning2_greet_yuna_others": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning2_greet_yuna_others_2"
+    },
+    "morning2_greet_yuna_others_2": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
         "next": "morning2_dain_1"
     },
     "morning2_dain_1": {

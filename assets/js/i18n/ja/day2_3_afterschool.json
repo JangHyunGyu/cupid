@@ -471,5 +471,41 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "……え？"
+    },
+    "after2_dain_skinship_1": {
+        "name": "{name}",
+        "text": "*ダインが手をバッと上げる。ハイタッチ。*"
+    },
+    "after2_dain_skinship_2": {
+        "name": "ダイン",
+        "text": "...あ、ごめん！癖なの！"
+    },
+    "after2_dain_skinship_3": {
+        "name": "{name}",
+        "text": "*手を離した。全然ごめんって顔じゃない。——手のひらがまだ熱い。*"
+    },
+    "after2_seo_skinship_1": {
+        "name": "{name}",
+        "text": "*ソヨンが手を伸ばす。襟についた埃を取ってくれる。手が首に触れる。*"
+    },
+    "after2_seo_skinship_2": {
+        "name": "{name}",
+        "text": "*ソヨンの指が0.5秒止まる。何も言わずに顔を背ける。*"
+    },
+    "after2_seo_skinship_3": {
+        "name": "ソヨン",
+        "text": "...埃ついてた。"
+    },
+    "after2_yuna_skinship_1": {
+        "name": "{name}",
+        "text": "*同じ本を取ろうとして——手が重なった。*"
+    },
+    "after2_yuna_skinship_2": {
+        "name": "{name}",
+        "text": "*ユナが先に引かない。3秒。ユナが視線を下ろす。*"
+    },
+    "after2_yuna_skinship_3": {
+        "name": "{name}",
+        "text": "*手が離れた。ユナが本を取って渡す。何も言わずに。*"
     }
 }

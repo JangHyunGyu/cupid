@@ -33,12 +33,40 @@ Object.assign(SCENARIO[3], {
         "next": "morning3_seo_gate_1"
     },
 
-    // === 서연 호감도 최고 루트 ===
+    // === 서연 호감도 최고 루트 — A-4 호감도 3단계 분기 ===
     "morning3_seo_gate_1": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning3_seo_gate_2"
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 35, "next": "morning3_seo_gate_warm_1" },
+            { "minAffinity": 15, "next": "morning3_seo_gate_2" },
+            { "minAffinity": 0, "next": "morning3_seo_gate_cold_1" }
+        ]
     },
+    // --- 서연 warm (35+) ---
+    "morning3_seo_gate_warm_1": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "next": "morning3_seo_gate_warm_2"
+    },
+    "morning3_seo_gate_warm_2": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_shy.png",
+        "next": "morning3_seo_gate_warm_3"
+    },
+    "morning3_seo_gate_warm_3": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "next": "morning3_seo_gate_warm_4"
+    },
+    "morning3_seo_gate_warm_4": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
+        "setFlags": ["morning3_companion_seoyeon"],
+        "next": "morning3_classroom_1"
+    },
+    // --- 서연 normal (15~34) ---
     "morning3_seo_gate_2": {
         "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/school.png",
@@ -70,13 +98,58 @@ Object.assign(SCENARIO[3], {
         "setFlags": ["morning3_companion_seoyeon"],
         "next": "morning3_classroom_1"
     },
+    // --- 서연 cold (15 미만) ---
+    "morning3_seo_gate_cold_1": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning3_seo_gate_cold_2"
+    },
+    "morning3_seo_gate_cold_2": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning3_seo_gate_cold_3"
+    },
+    "morning3_seo_gate_cold_3": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "setFlags": ["morning3_companion_seoyeon"],
+        "next": "morning3_classroom_1"
+    },
 
-    // === 유나 호감도 최고 루트 ===
+    // === 유나 호감도 최고 루트 — A-4 호감도 3단계 분기 ===
     "morning3_yuna_gate_1": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "morning3_yuna_gate_2"
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 35, "next": "morning3_yuna_gate_warm_1" },
+            { "minAffinity": 15, "next": "morning3_yuna_gate_2" },
+            { "minAffinity": 0, "next": "morning3_yuna_gate_cold_1" }
+        ]
     },
+    // --- 유나 warm (35+) ---
+    "morning3_yuna_gate_warm_1": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "next": "morning3_yuna_gate_warm_2"
+    },
+    "morning3_yuna_gate_warm_2": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "next": "morning3_yuna_gate_warm_3"
+    },
+    "morning3_yuna_gate_warm_3": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "next": "morning3_yuna_gate_warm_4"
+    },
+    "morning3_yuna_gate_warm_4": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "setFlags": ["morning3_companion_yuna"],
+        "next": "morning3_classroom_1"
+    },
+    // --- 유나 normal (15~34) ---
     "morning3_yuna_gate_2": {
         "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/school.png",
@@ -108,13 +181,48 @@ Object.assign(SCENARIO[3], {
         "setFlags": ["morning3_companion_yuna"],
         "next": "morning3_classroom_1"
     },
+    // --- 유나 cold (15 미만) ---
+    "morning3_yuna_gate_cold_1": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "morning3_yuna_gate_cold_2"
+    },
+    "morning3_yuna_gate_cold_2": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "setFlags": ["morning3_companion_yuna"],
+        "next": "morning3_classroom_1"
+    },
 
-    // === 다인 호감도 최고 루트 ===
+    // === 다인 호감도 최고 루트 — A-4 호감도 3단계 분기 ===
     "morning3_dain_gate_1": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "morning3_dain_gate_2"
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 35, "next": "morning3_dain_gate_warm_1" },
+            { "minAffinity": 15, "next": "morning3_dain_gate_2" },
+            { "minAffinity": 0, "next": "morning3_dain_gate_cold_1" }
+        ]
     },
+    // --- 다인 warm (35+) ---
+    "morning3_dain_gate_warm_1": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "morning3_dain_gate_warm_2"
+    },
+    "morning3_dain_gate_warm_2": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "morning3_dain_gate_warm_3"
+    },
+    "morning3_dain_gate_warm_3": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "setFlags": ["morning3_companion_dain"],
+        "next": "morning3_classroom_1"
+    },
+    // --- 다인 normal (15~34) ---
     "morning3_dain_gate_2": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/dain_normal.png",
@@ -133,6 +241,18 @@ Object.assign(SCENARIO[3], {
     "morning3_dain_gate_5": {
         "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/school.png",
+        "setFlags": ["morning3_companion_dain"],
+        "next": "morning3_classroom_1"
+    },
+    // --- 다인 cold (15 미만) ---
+    "morning3_dain_gate_cold_1": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "morning3_dain_gate_cold_2"
+    },
+    "morning3_dain_gate_cold_2": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/dain_normal.png",
         "setFlags": ["morning3_companion_dain"],
         "next": "morning3_classroom_1"
     },

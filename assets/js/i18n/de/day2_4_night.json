@@ -253,5 +253,29 @@
     "night2_hidden_nurse_2": {
         "name": "Ich",
         "text": "*Kein Widerspruchsrecht. — Medizinische Anordnung oder persönliches Interesse? Das Emoji verwischt die Grenze.*"
+    },
+    "night2_reply_dain_react_high": {
+        "name": "Dain",
+        "text": "AAAHH!!!!! Ich hab gerade vor Lachen meine Decke getreten lol!! Du MUSST morgen in die Turnhalle kommen!!"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "Dain",
+        "text": "haha okay~ gute Nacht!"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "Seoyeon",
+        "text": "...Du bist interessanter als erwartet. Willst du morgen auf dem Dach zu Mittag essen?"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "Seoyeon",
+        "text": "Heh. Verstanden. Bis morgen."
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "Yuna",
+        "text": "...Also gibt es jemanden, der um diese Zeit antwortet. Willst du morgen in die Bibliothek kommen?"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "Yuna",
+        "text": "...Ja. Gute Nacht."
     }
 }

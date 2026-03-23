@@ -262,5 +262,69 @@
         "text": "*Conversando con la enfermera en la enfermería.*",
         "context": "Día 1 después de clases. El estudiante nuevo se mareó y visitó la enfermería. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
         "personality": "La enfermera es juguetona y coqueta pero esconde sentimientos reales detrás de bromas. Ex enfermera de hospital que sufrió burnout."
+    },
+    "after1_jealousy_seo_1": {
+        "name": "Dain",
+        "text": "Oye, ¿dónde fuiste en el almuerzo? Fui a la cafetería y no estabas."
+    },
+    "after1_jealousy_seo_2": {
+        "name": "{name}",
+        "text": "Comí en la azotea con la presidenta del consejo."
+    },
+    "after1_jealousy_seo_3": {
+        "name": "Dain",
+        "text": "...¿La azotea? ¿Solos los dos?"
+    },
+    "after1_jealousy_seo_choice": {
+        "name": "{name}",
+        "text": "*La voz de Dain subió un poco.*",
+        "choices": [
+            "Comí en la azotea con la presidenta. (Sincero)",
+            "Solo estuve paseando solo. (Mentira)"
+        ]
+    },
+    "after1_jealousy_seo_honest": {
+        "name": "{name}",
+        "text": "Sí, ella me llevó. Hasta trajo almuerzo para dos."
+    },
+    "after1_jealousy_seo_honest_2": {
+        "name": "Dain",
+        "text": "...¿En serio? Me lo podrías haber dicho, al menos."
+    },
+    "after1_jealousy_seo_lie": {
+        "name": "{name}",
+        "text": "No, solo estuve caminando solo por ahí."
+    },
+    "after1_jealousy_seo_lie_2": {
+        "name": "Dain",
+        "text": "¿De verdad? ¿Solo? — Bueno, es tu primer día, ¡tiene sentido!"
+    },
+    "after1_jealousy_seo_yuna": {
+        "name": "{name}",
+        "text": "*Una nota doblada cae de mi bolsillo. La letra de Yuna.*"
+    },
+    "after1_jealousy_seo_yuna_2": {
+        "name": "{name}",
+        "text": "*\"Te vi en la azotea en el almuerzo. ...Parecías cercano a la presidenta.\" — Tres puntos al final. Palabras tragadas.*"
+    },
+    "after1_jealousy_dain_1": {
+        "name": "Seoyeon",
+        "text": "Te vi en la cafetería con Dain en el almuerzo. Te adaptas rápido."
+    },
+    "after1_jealousy_dain_2": {
+        "name": "{name}",
+        "text": "*Está sonriendo. Pero sus ojos no. Sus dedos golpean el portapapeles.*"
+    },
+    "after1_jealousy_yuna_1": {
+        "name": "Dain",
+        "text": "¿Fuiste a la biblioteca en el almuerzo? ¿Con Yuna?"
+    },
+    "after1_jealousy_yuna_2": {
+        "name": "Dain",
+        "text": "...Ella normalmente no sale con nadie."
+    },
+    "after1_pre_miss": {
+        "name": "{name}",
+        "text": "*Sigo caminando por el pasillo.*"
     }
 }

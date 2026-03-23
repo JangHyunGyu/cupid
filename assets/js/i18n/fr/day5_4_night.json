@@ -3,6 +3,162 @@
         "name": "Système",
         "text": ""
     },
+    "ending_affinity_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_aff_check_seo": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_aff_check_yuna": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_aff_check_dain": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_confessed_aff_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_confessed_aff_seo": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_confessed_aff_yuna": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_confessed_aff_dain": {
+        "name": "Système",
+        "text": ""
+    },
+    "perfect_seo_1": {
+        "name": "Moi",
+        "text": "*Le toit de Seoyeon. Elle se tient parmi les plantes qu'elle a cultivees elle-meme.*"
+    },
+    "perfect_seo_2": {
+        "name": "Moi",
+        "text": "*Pour la premiere fois, elle a retire ses lunettes — et elle pleure.*"
+    },
+    "perfect_seo_3": {
+        "name": "Seoyeon",
+        "text": "...C'est une expression que je n'ai pas repetee."
+    },
+    "perfect_seo_4": {
+        "name": "Seoyeon",
+        "text": "Meme apres le diplome, je viendrai ici. Ces plantes ne poussent que quand tu es la."
+    },
+    "perfect_seo_5": {
+        "name": "Moi",
+        "text": "*Seoyeon tend la main. Pas le petit doigt. La main entiere.*"
+    },
+    "perfect_yuna_1": {
+        "name": "Moi",
+        "text": "*L'annexe de la bibliotheque, le grenier secret. Yuna me tend une nouvelle.*"
+    },
+    "perfect_yuna_2": {
+        "name": "Moi",
+        "text": "*Le titre est le nom du protagoniste.*"
+    },
+    "perfect_yuna_3": {
+        "name": "Yuna",
+        "text": "...Dis-moi ce que tu en penses quand tu auras fini. C'est ma reponse."
+    },
+    "perfect_yuna_4": {
+        "name": "Moi",
+        "text": "*La derniere phrase de l'histoire : 'Il y avait quelqu'un qui ne disparaissait jamais. Grace a cette personne, j'ai decide de ne pas disparaitre non plus.'*"
+    },
+    "perfect_yuna_5": {
+        "name": "Moi",
+        "text": "*Le premier roman de Yuna a ete publie. La dedicace : 'A la troisieme etoile.'*"
+    },
+    "perfect_dain_1": {
+        "name": "Moi",
+        "text": "*Le gymnase. Dain frappe son dernier service. En defaisant ses bandages.*"
+    },
+    "perfect_dain_2": {
+        "name": "Dain",
+        "text": "C'est la derniere passe. — Mais c'est aussi un debut."
+    },
+    "perfect_dain_3": {
+        "name": "Dain",
+        "text": "En dehors du terrain, est-ce que je suis quelqu'un de bien ?"
+    },
+    "perfect_dain_4": {
+        "name": "Moi",
+        "text": "Sur le terrain et en dehors."
+    },
+    "perfect_dain_5": {
+        "name": "Moi",
+        "text": "*Dain pose le ballon sur le terrain. Elle se retourne et sourit. Un sourire sans points d'exclamation.*"
+    },
+    "perfect_epilogue_1": {
+        "name": "Moi",
+        "text": "*Chaque choix pointait vers une seule personne. Ce n'etait pas cinq jours — chaque jour etait tout.*"
+    },
+    "perfect_epilogue_2": {
+        "name": "Moi",
+        "text": "*Un an plus tard. Jour de la rentree universitaire. Un message sur mon telephone.*"
+    },
+    "perfect_epilogue_3": {
+        "name": "Moi",
+        "text": "*Beaucoup de choses ont change. Mais certaines non. — Cette personne est toujours a mes cotes.*"
+    },
+    "perfect_epilogue_4": {
+        "name": "Système",
+        "text": "─── PERFECT END ───"
+    },
+    "bitter_seo_1": {
+        "name": "Moi",
+        "text": "*Je me suis confesse. C'etait accepte. — Mais c'etait tout.*"
+    },
+    "bitter_seo_2": {
+        "name": "Seoyeon",
+        "text": "...Je pensais que ca marcherait. On dirait qu'on etait tous les deux a un pas de trop."
+    },
+    "bitter_seo_3": {
+        "name": "Moi",
+        "text": "*Retrouvant Seoyeon au cafe. Son regard derriere ses lunettes est sec. Ni calme, ni tremblant. Juste — les yeux de quelqu'un venu tourner la page.*"
+    },
+    "bitter_yuna_1": {
+        "name": "Moi",
+        "text": "*Je me suis confesse. C'etait accepte. — Mais c'etait tout.*"
+    },
+    "bitter_yuna_2": {
+        "name": "Yuna",
+        "text": "...Parfois je pense a toi. Quand je sens l'odeur de la bibliotheque. J'aurais du en dire plus a l'epoque."
+    },
+    "bitter_yuna_3": {
+        "name": "Moi",
+        "text": "*Une derniere note. Glissee dans la boite aux lettres. L'ecriture de Yuna. Courte. — Comme toujours. Mais cette fois, ce n'est pas de la concision. Il n'y a simplement plus rien a ecrire.*"
+    },
+    "bitter_dain_1": {
+        "name": "Moi",
+        "text": "*Je me suis confesse. C'etait accepte. — Mais c'etait tout.*"
+    },
+    "bitter_dain_2": {
+        "name": "Dain",
+        "text": "C'etait amusant, vraiment ! ...Mais je crois que c'etait juste amusant. C'est un peu dommage."
+    },
+    "bitter_dain_3": {
+        "name": "Moi",
+        "text": "*Les points d'exclamation sont revenus. Mais la derniere phrase n'en a pas. — Quand Dain finit par un point, c'est qu'il ne reste plus d'energie a partager.*"
+    },
+    "bitter_epilogue_1": {
+        "name": "Moi",
+        "text": "*Apres le diplome. Les contacts se sont espaces. Une fois par mois est devenu une fois tous les deux mois, et laisser les messages sans reponse est devenu la norme.*"
+    },
+    "bitter_epilogue_2": {
+        "name": "Moi",
+        "text": "*Le souvenir de cinq jours reste. Ca ne fait pas mal. C'etait juste — pas assez. Pour nous deux.*"
+    },
+    "bitter_epilogue_3": {
+        "name": "Système",
+        "text": "─── BITTERSWEET END ───"
+    },
     "day5_ending_true": {
         "name": "Système",
         "text": ""

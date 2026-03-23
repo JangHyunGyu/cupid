@@ -422,5 +422,53 @@
     "minsu_d3_6b": {
         "name": "Minsu",
         "text": "Ich frag dich nicht, was an deiner alten Schule passiert ist. Aber eins will ich dir sagen."
+    },
+    "after3_reject_for_seo_1": {
+        "name": "Ich",
+        "text": "*Ich treffe Dain im Flur. Ihre übliche Energie fehlt.*"
+    },
+    "after3_reject_for_seo_2": {
+        "name": "Dain",
+        "text": "...Du kommst heute nicht in die Turnhalle, oder?"
+    },
+    "after3_reject_for_seo_3": {
+        "name": "Ich",
+        "text": "*Ich gehe an der Bibliothek vorbei. Yunas Platz ist leer. Ein einzelner Zettel liegt da. '...Verstanden.' Drei Wörter.*"
+    },
+    "after3_reject_for_seo_4": {
+        "name": "Ich",
+        "text": "*Dains Satz ohne Ausrufezeichen, Yunas Zettel mit nur drei Wörtern. — Das Gewicht der Wahl lastet auf meinen Schultern.*"
+    },
+    "after3_reject_for_yuna_1": {
+        "name": "Ich",
+        "text": "*Seoyeon ordnet ihr Klemmbrett im Flur.*"
+    },
+    "after3_reject_for_yuna_2": {
+        "name": "Seoyeon",
+        "text": "Beliebt, was."
+    },
+    "after3_reject_for_yuna_3": {
+        "name": "Ich",
+        "text": "*Dain schlägt allein Bälle in der Turnhalle. Sie sieht mich und sagt 'Ah, hey!' aber wendet das Gesicht ab. Ihre Augen sind rot.*"
+    },
+    "after3_reject_for_yuna_4": {
+        "name": "Ich",
+        "text": "*Seoyeons eine Zeile, Dains rote Augen. — Der Rückweg fühlt sich schwer an.*"
+    },
+    "after3_reject_for_dain_1": {
+        "name": "Ich",
+        "text": "*Seoyeon ordnet ihr Klemmbrett.*"
+    },
+    "after3_reject_for_dain_2": {
+        "name": "Seoyeon",
+        "text": "Der Schülerrat hat viel zu tun. Ich esse mittags getrennt."
+    },
+    "after3_reject_for_dain_3": {
+        "name": "Ich",
+        "text": "*Keine Zettel in der Bibliothek. Yunas Tasche ist weg. Sie ist wohl früh gegangen.*"
+    },
+    "after3_reject_for_dain_4": {
+        "name": "Ich",
+        "text": "*Seoyeons einstudiertes Lächeln, Yunas leerer Platz. — Die verbleibenden zwei Plätze werden leerer.*"
     }
 }

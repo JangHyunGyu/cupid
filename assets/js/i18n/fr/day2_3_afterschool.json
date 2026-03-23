@@ -471,5 +471,41 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "...Quoi ?"
+    },
+    "after2_dain_skinship_1": {
+        "name": "{name}",
+        "text": "*Dain lève la main d'un coup. High-five.*"
+    },
+    "after2_dain_skinship_2": {
+        "name": "Dain",
+        "text": "...Oh pardon ! C'est une habitude !"
+    },
+    "after2_dain_skinship_3": {
+        "name": "{name}",
+        "text": "*Elle a retiré sa main. Elle n'a pas du tout l'air désolée. — Ma paume est encore chaude.*"
+    },
+    "after2_seo_skinship_1": {
+        "name": "{name}",
+        "text": "*Seoyeon tend la main. Enlève une poussière sur mon col. Sa main effleure mon cou.*"
+    },
+    "after2_seo_skinship_2": {
+        "name": "{name}",
+        "text": "*Les doigts de Seoyeon se figent une demi-seconde. Elle détourne la tête sans un mot.*"
+    },
+    "after2_seo_skinship_3": {
+        "name": "Seoyeon",
+        "text": "...T'avais de la poussière."
+    },
+    "after2_yuna_skinship_1": {
+        "name": "{name}",
+        "text": "*On a attrapé le même livre — nos mains se superposent.*"
+    },
+    "after2_yuna_skinship_2": {
+        "name": "{name}",
+        "text": "*Yuna ne retire pas sa main en premier. Trois secondes. Elle baisse les yeux.*"
+    },
+    "after2_yuna_skinship_3": {
+        "name": "{name}",
+        "text": "*Les mains se séparent. Yuna prend le livre et me le tend. Sans un mot.*"
     }
 }

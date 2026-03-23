@@ -19,18 +19,84 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/school_hallway.png",
         "choices": [
             {
-                "next": "after3_seo_1",
+                "next": "after3_reject_for_seo_1",
                 "setFlags": ["route_seoyeon"]
             },
             {
-                "next": "after3_yuna_1",
+                "next": "after3_reject_for_yuna_1",
                 "setFlags": ["route_yuna"]
             },
             {
-                "next": "after3_dain_1",
+                "next": "after3_reject_for_dain_1",
                 "setFlags": ["route_dain"]
             }
         ]
+    },
+
+    // ========== B-5: 서연 루트 확정 → 다인/유나 탈락 반응 ==========
+    "after3_reject_for_seo_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_reject_for_seo_2"
+    },
+    "after3_reject_for_seo_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_reject_for_seo_3"
+    },
+    "after3_reject_for_seo_3": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
+        "next": "after3_reject_for_seo_4"
+    },
+    "after3_reject_for_seo_4": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after3_seo_1"
+    },
+
+    // ========== B-5: 유나 루트 확정 → 서연/다인 탈락 반응 ==========
+    "after3_reject_for_yuna_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after3_reject_for_yuna_2"
+    },
+    "after3_reject_for_yuna_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after3_reject_for_yuna_3"
+    },
+    "after3_reject_for_yuna_3": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_reject_for_yuna_4"
+    },
+    "after3_reject_for_yuna_4": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after3_yuna_1"
+    },
+
+    // ========== B-5: 다인 루트 확정 → 서연/유나 탈락 반응 ==========
+    "after3_reject_for_dain_1": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after3_reject_for_dain_2"
+    },
+    "after3_reject_for_dain_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after3_reject_for_dain_3"
+    },
+    "after3_reject_for_dain_3": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
+        "next": "after3_reject_for_dain_4"
+    },
+    "after3_reject_for_dain_4": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after3_dain_1"
     },
 
     // ========== SEOYEON ROUTE ==========

@@ -225,5 +225,88 @@
     "lunch3_share_1": {
         "name": "Me",
         "text": "*I suggested we all share. Awkward, but not bad. All three are smiling. Whether it's real or an act, I can't tell.*"
+    },
+    "lunch3_seo_skin_check": {},
+    "lunch3_seo_skin_1": {
+        "name": "Me",
+        "text": "*While eating lunch, a grain of rice sticks to my lip. Seoyeon reaches over and picks it off.*"
+    },
+    "lunch3_seo_skin_2": {
+        "name": "Seoyeon",
+        "text": "...Pay more attention when eating in front of people."
+    },
+    "lunch3_seo_skin_3": {
+        "name": "Me",
+        "text": "*After pulling her hand back, Seoyeon drops her chopsticks. — It looked natural, but her fingertips were trembling slightly.*"
+    },
+    "lunch3_seo_witness_1": {
+        "name": "Me",
+        "text": "*Dain stops at the classroom door. She sees Seoyeon receiving the lunchbox. \"...Oh.\" She turns back.*"
+    },
+    "lunch3_seo_witness_choice": {
+        "name": "Me",
+        "text": "*Dain's back is disappearing down the hallway.*",
+        "choices": [
+            "Dain!",
+            "(Focus on Seoyeon)"
+        ]
+    },
+    "lunch3_seo_chase_dain_1": {
+        "name": "Me",
+        "text": "*Seoyeon sets down the lunchbox. Her face is expressionless.*"
+    },
+    "lunch3_seo_chase_dain_2": {
+        "name": "Dain",
+        "text": "...What."
+    },
+    "lunch3_seo_focus_1": {
+        "name": "Me",
+        "text": "*Dain's footsteps fade down the hallway.*"
+    },
+    "lunch3_seo_focus_2": {
+        "name": "Seoyeon",
+        "text": "...Does it bother you?"
+    },
+    "lunch3_dain_skin_check": {},
+    "lunch3_dain_skin_1": {
+        "name": "Me",
+        "text": "*Dain wins the lunch bet and throws her arms open in excitement. She hugs me. One second.*"
+    },
+    "lunch3_dain_skin_2": {
+        "name": "Me",
+        "text": "*Dain springs away. Her ears are red.*"
+    },
+    "lunch3_dain_skin_3": {
+        "name": "Dain",
+        "text": "That one doesn't count!!"
+    },
+    "lunch3_dain_witness_1": {
+        "name": "Me",
+        "text": "*Yuna passes by the hallway and glances into the gym. Dain is laughing. Yuna quickens her pace.*"
+    },
+    "lunch3_dain_witness_2": {
+        "name": "Me",
+        "text": "*Next break, Yuna's seat is empty.*"
+    },
+    "lunch3_yuna_skin_check": {},
+    "lunch3_yuna_skin_1": {
+        "name": "Me",
+        "text": "*While handing me a note, Yuna grabs my hand. She doesn't let go.*"
+    },
+    "lunch3_yuna_skin_2": {
+        "name": "Yuna",
+        "text": "...This isn't about what's on the note. Just."
+    },
+    "lunch3_yuna_skin_3": {
+        "name": "Me",
+        "text": "*She only lets go after the sentence ends.*"
+    },
+    "lunch3_yuna_witness_1": {
+        "name": "Seoyeon",
+        "text": "I heard lunchbox smell coming from the library. ...With Yuna?"
+    },
+    "lunch3_yuna_witness_2": {
+        "name": "Me",
+        "text": "*Her expression is blank. That makes it scarier.*"
     }
 }

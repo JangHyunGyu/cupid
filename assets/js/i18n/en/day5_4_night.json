@@ -3,6 +3,162 @@
         "name": "System",
         "text": ""
     },
+    "ending_affinity_check": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_seo": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_yuna": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_dain": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_check": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_seo": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_yuna": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_dain": {
+        "name": "System",
+        "text": ""
+    },
+    "perfect_seo_1": {
+        "name": "Me",
+        "text": "*Seoyeon's rooftop. She stands among the plants she grew herself.*"
+    },
+    "perfect_seo_2": {
+        "name": "Me",
+        "text": "*For the first time, her glasses are off — and she's crying.*"
+    },
+    "perfect_seo_3": {
+        "name": "Seoyeon",
+        "text": "...This is an unpracticed expression."
+    },
+    "perfect_seo_4": {
+        "name": "Seoyeon",
+        "text": "Even after graduation, I'll come here. These plants only grow when you're around."
+    },
+    "perfect_seo_5": {
+        "name": "Me",
+        "text": "*Seoyeon reaches out. Not a pinky finger. Her whole hand.*"
+    },
+    "perfect_yuna_1": {
+        "name": "Me",
+        "text": "*The library annex, the secret attic. Yuna hands over a short story.*"
+    },
+    "perfect_yuna_2": {
+        "name": "Me",
+        "text": "*The title is the protagonist's name.*"
+    },
+    "perfect_yuna_3": {
+        "name": "Yuna",
+        "text": "...Tell me what you think after you finish reading. That's my answer."
+    },
+    "perfect_yuna_4": {
+        "name": "Me",
+        "text": "*The last line of the story: 'There was someone who never disappeared. Because of that person, I decided not to disappear either.'*"
+    },
+    "perfect_yuna_5": {
+        "name": "Me",
+        "text": "*Yuna's first novel was published. The dedication: 'To the third star.'*"
+    },
+    "perfect_dain_1": {
+        "name": "Me",
+        "text": "*The gym. Dain fires off her last serve. Unwrapping her bandages.*"
+    },
+    "perfect_dain_2": {
+        "name": "Dain",
+        "text": "This is the last toss. — But it's also a beginning."
+    },
+    "perfect_dain_3": {
+        "name": "Dain",
+        "text": "Am I a decent person off the court too?"
+    },
+    "perfect_dain_4": {
+        "name": "Me",
+        "text": "On the court and off it."
+    },
+    "perfect_dain_5": {
+        "name": "Me",
+        "text": "*Dain sets the volleyball down on the court. She turns and smiles. A smile without exclamation marks.*"
+    },
+    "perfect_epilogue_1": {
+        "name": "Me",
+        "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
+    },
+    "perfect_epilogue_2": {
+        "name": "Me",
+        "text": "*One year later. University entrance ceremony day. There's a message on my phone.*"
+    },
+    "perfect_epilogue_3": {
+        "name": "Me",
+        "text": "*A lot has changed. But some things haven't. — That person is still by my side.*"
+    },
+    "perfect_epilogue_4": {
+        "name": "System",
+        "text": "─── PERFECT END ───"
+    },
+    "bitter_seo_1": {
+        "name": "Me",
+        "text": "*I confessed. It was accepted. — But that was the end of it.*"
+    },
+    "bitter_seo_2": {
+        "name": "Seoyeon",
+        "text": "...I thought we'd work out. I guess we were both a step short."
+    },
+    "bitter_seo_3": {
+        "name": "Me",
+        "text": "*Meeting Seoyeon at the cafe. Her gaze behind the glasses is dry. No composure, no trembling. Just — the eyes of someone who came to wrap things up.*"
+    },
+    "bitter_yuna_1": {
+        "name": "Me",
+        "text": "*I confessed. It was accepted. — But that was the end of it.*"
+    },
+    "bitter_yuna_2": {
+        "name": "Yuna",
+        "text": "...Sometimes I think of you. When I smell the library. I should have said more back then."
+    },
+    "bitter_yuna_3": {
+        "name": "Me",
+        "text": "*A final note. Tucked in the mailbox. Yuna's handwriting. Short. — As always. But this time it's not brevity. There's simply nothing left to write.*"
+    },
+    "bitter_dain_1": {
+        "name": "Me",
+        "text": "*I confessed. It was accepted. — But that was the end of it.*"
+    },
+    "bitter_dain_2": {
+        "name": "Dain",
+        "text": "It was fun, really! ...But I think fun was all it was. That's kind of sad."
+    },
+    "bitter_dain_3": {
+        "name": "Me",
+        "text": "*The exclamation marks are back. But the last sentence has none. — When Dain ends with a period, it means there's no energy left to share.*"
+    },
+    "bitter_epilogue_1": {
+        "name": "Me",
+        "text": "*After graduation. Contact grew sparse. Once a month became once every two months, and leaving messages on read became the norm.*"
+    },
+    "bitter_epilogue_2": {
+        "name": "Me",
+        "text": "*The record of five days remains. It doesn't hurt. It just — wasn't enough. For either of us.*"
+    },
+    "bitter_epilogue_3": {
+        "name": "System",
+        "text": "─── BITTERSWEET END ───"
+    },
     "day5_ending_true": {
         "name": "System",
         "text": ""

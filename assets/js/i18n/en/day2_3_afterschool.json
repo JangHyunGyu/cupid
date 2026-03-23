@@ -471,5 +471,41 @@
     "minsu_warn_13b": {
         "name": "{name}",
         "text": "...What?"
+    },
+    "after2_dain_skinship_1": {
+        "name": "Me",
+        "text": "*Dain throws her hand up. High-five.*"
+    },
+    "after2_dain_skinship_2": {
+        "name": "Dain",
+        "text": "...Oh sorry! Force of habit!"
+    },
+    "after2_dain_skinship_3": {
+        "name": "Me",
+        "text": "*She pulled her hand away. Doesn't look sorry at all. — My palm is still warm.*"
+    },
+    "after2_seo_skinship_1": {
+        "name": "Me",
+        "text": "*Seoyeon reaches out. Picks off a speck of dust from my collar. Her hand grazes my neck.*"
+    },
+    "after2_seo_skinship_2": {
+        "name": "Me",
+        "text": "*Seoyeon's fingers pause for half a second. She turns away without a word.*"
+    },
+    "after2_seo_skinship_3": {
+        "name": "Seoyeon",
+        "text": "...You had some dust."
+    },
+    "after2_yuna_skinship_1": {
+        "name": "Me",
+        "text": "*We reached for the same book — our hands overlap.*"
+    },
+    "after2_yuna_skinship_2": {
+        "name": "Me",
+        "text": "*Yuna doesn't pull away first. Three seconds. She lowers her gaze.*"
+    },
+    "after2_yuna_skinship_3": {
+        "name": "Me",
+        "text": "*Hands separate. Yuna picks up the book and hands it over. Without a word.*"
     }
 }

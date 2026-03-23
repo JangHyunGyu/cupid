@@ -253,5 +253,29 @@
     "night2_hidden_nurse_2": {
         "name": "Yo",
         "text": "*Sin derecho a negarse. — ¿Es autoridad médica o interés personal? El emoji difumina la línea.*"
+    },
+    "night2_reply_dain_react_high": {
+        "name": "Dain",
+        "text": "¡¡¡AAAA!!!!! Acabo de patear la cobija de la risa jajaja ¡¡Mañana ven al gimnasio sin falta!!"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "Dain",
+        "text": "jaja ok~ ¡buenas noches!"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "Seoyeon",
+        "text": "...Eres más interesante de lo que pensé. ¿Quieres almorzar en la azotea mañana?"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "Seoyeon",
+        "text": "Je. Entendido. Hasta mañana."
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "Yuna",
+        "text": "...Así que hay alguien que responde a esta hora. ¿Quieres venir a la biblioteca mañana?"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "Yuna",
+        "text": "...Sí. Buenas noches."
     }
 }

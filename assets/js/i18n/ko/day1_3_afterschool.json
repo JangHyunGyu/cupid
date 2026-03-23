@@ -258,5 +258,69 @@
         "text": "*보건선생님과 보건실에서 대화 중.*",
         "context": "Day 1 방과후. 전학 첫날 어지러워서 보건실에 들렀다. 보건선생님이 장난스럽게 대하면서도 세심하게 챙겨준 뒤의 대화. 톤: 밝고 가벼운 대화. 첫날의 설렘과 호기심. 무거운 이야기는 절대 하지 않는다. 장난과 티키타카 위주.",
         "personality": "보건선생님은 장난기 넘치고 유혹적이지만 진심을 장난 뒤에 숨기는 여성. 대학병원 간호사 출신으로 번아웃을 겪고 학교로 왔다. '선생님이니까' 뒤에 항상 숨겨진 감정이 있다."
+    },
+    "after1_jealousy_seo_1": {
+        "name": "다인",
+        "text": "야, 점심때 어디 갔어? 매점 갔는데 없더라."
+    },
+    "after1_jealousy_seo_2": {
+        "name": "{name}",
+        "text": "학생회장이랑 옥상에서 먹었는데."
+    },
+    "after1_jealousy_seo_3": {
+        "name": "다인",
+        "text": "...옥상? 둘이서?"
+    },
+    "after1_jealousy_seo_choice": {
+        "name": "{name}",
+        "text": "*다인의 목소리가 살짝 높아졌다.*",
+        "choices": [
+            "학생회장이랑 옥상에서 먹었어. (솔직)",
+            "그냥 혼자 돌아다녔어. (거짓말)"
+        ]
+    },
+    "after1_jealousy_seo_honest": {
+        "name": "{name}",
+        "text": "응, 학생회장이 데려갔어. 도시락도 싸 왔더라."
+    },
+    "after1_jealousy_seo_honest_2": {
+        "name": "다인",
+        "text": "...그래? 말이라도 해주지."
+    },
+    "after1_jealousy_seo_lie": {
+        "name": "{name}",
+        "text": "아니, 그냥 혼자 돌아다녔어."
+    },
+    "after1_jealousy_seo_lie_2": {
+        "name": "다인",
+        "text": "진짜? 혼자? — 아 그래, 첫날이니까 헤맸겠다!"
+    },
+    "after1_jealousy_seo_yuna": {
+        "name": "{name}",
+        "text": "*주머니에서 접힌 쪽지가 나온다. 유나의 필체.*"
+    },
+    "after1_jealousy_seo_yuna_2": {
+        "name": "{name}",
+        "text": "*'점심때 옥상에서 봤어. ...학생회장이랑 사이 좋아 보였어.' — 끝에 점이 세 개. 하고 싶은 말을 삼켰다는 뜻이다.*"
+    },
+    "after1_jealousy_dain_1": {
+        "name": "서연",
+        "text": "점심때 매점에서 다인이랑 같이 있는 거 봤는데. 적응 빠르네."
+    },
+    "after1_jealousy_dain_2": {
+        "name": "{name}",
+        "text": "*웃고 있다. 하지만 눈이 안 웃는다. 손가락이 클립보드를 두드리고 있다.*"
+    },
+    "after1_jealousy_yuna_1": {
+        "name": "다인",
+        "text": "점심때 도서관 갔다며? 유나랑?"
+    },
+    "after1_jealousy_yuna_2": {
+        "name": "다인",
+        "text": "...그 애 원래 사람 안 만나는데."
+    },
+    "after1_pre_miss": {
+        "name": "{name}",
+        "text": "*복도를 계속 걷는다.*"
     }
 }

@@ -327,5 +327,77 @@
         "text": "*Conversando con la enfermera en la enfermería.*",
         "context": "Día 3. Vino a la enfermería por ansiedad. La enfermera tuvo una conversación seria. Tono: Brillante en la superficie pero con sombras por debajo. A veces sonriendo pero los ojos no. La sinceridad se asoma entre la conversación casual.",
         "personality": "Normalmente juguetona, pero al ponerse seria el ambiente cambia totalmente. Profesional con experiencia de burnout."
+    },
+    "morning3_seo_gate_warm_1": {
+        "name": "Yo",
+        "text": "*Seoyeon está esperando en la puerta, algo inusual.*"
+    },
+    "morning3_seo_gate_warm_2": {
+        "name": "Seoyeon",
+        "text": "...No llegué temprano. Asuntos del consejo estudiantil."
+    },
+    "morning3_seo_gate_warm_3": {
+        "name": "Yo",
+        "text": "*Sus manos están vacías. Sin papeles, sin portapapeles.*"
+    },
+    "morning3_seo_gate_warm_4": {
+        "name": "Yo",
+        "text": "*Seoyeon empieza a caminar a mi lado sin decir nada. — ¿Siempre fue tan corto el camino de la puerta al salón?*"
+    },
+    "morning3_seo_gate_cold_1": {
+        "name": "Yo",
+        "text": "*Seoyeon se detiene brevemente al pasar.*"
+    },
+    "morning3_seo_gate_cold_2": {
+        "name": "Seoyeon",
+        "text": "...El nuevo. Sigues viniendo."
+    },
+    "morning3_seo_gate_cold_3": {
+        "name": "Yo",
+        "text": "*Su tono es formal. La espalda de Seoyeon se hace pequeña al pasar la puerta.*"
+    },
+    "morning3_yuna_gate_warm_1": {
+        "name": "Yo",
+        "text": "*Yuna, apoyada en el muro junto a la puerta, me extiende una nota.*"
+    },
+    "morning3_yuna_gate_warm_2": {
+        "name": "Yuna",
+        "text": "...¿Puedo caminar contigo?"
+    },
+    "morning3_yuna_gate_warm_3": {
+        "name": "Yo",
+        "text": "*Una sola palabra en la nota. \"Esperé.\"*"
+    },
+    "morning3_yuna_gate_warm_4": {
+        "name": "Yo",
+        "text": "*Caminando lado a lado con Yuna. Sin palabras. — Pero extrañamente, el silencio es cómodo.*"
+    },
+    "morning3_yuna_gate_cold_1": {
+        "name": "Yo",
+        "text": "*Yuna pasa primero. Nuestras miradas se cruzan, pero ella voltea la cabeza.*"
+    },
+    "morning3_yuna_gate_cold_2": {
+        "name": "Yo",
+        "text": "*Sus pasos se aceleran. — Se siente como si el muro volviera a levantarse.*"
+    },
+    "morning3_dain_gate_warm_1": {
+        "name": "Yo",
+        "text": "*Dain corre hacia mí y me toma del brazo.*"
+    },
+    "morning3_dain_gate_warm_2": {
+        "name": "Dain",
+        "text": "¡Oye! ¡Casi llegamos tarde! ¡Vamos juntos!"
+    },
+    "morning3_dain_gate_warm_3": {
+        "name": "Yo",
+        "text": "*El brazo de Dain está enrollado alrededor del mío. Es fuerte. — No puedo soltarme, y no quiero.*"
+    },
+    "morning3_dain_gate_cold_1": {
+        "name": "Yo",
+        "text": "*Dain pasa corriendo con sus otros amigos.*"
+    },
+    "morning3_dain_gate_cold_2": {
+        "name": "Dain",
+        "text": "¡Ah, hola!"
     }
 }

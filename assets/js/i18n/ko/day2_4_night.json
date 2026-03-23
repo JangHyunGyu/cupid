@@ -233,5 +233,29 @@
     "night2_hidden_nurse_2": {
         "name": "{name}",
         "text": "*거부권 없음. — 의료적 강제인 건지 개인적 관심인 건지, 이모티콘이 경계를 흐린다.*"
+    },
+    "night2_reply_dain_react_high": {
+        "name": "다인",
+        "text": "야!!!!! 지금 웃겨서 이불킥 했어 진짜ㅋㅋㅋㅋ 내일 꼭 체육관 와!!"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "다인",
+        "text": "ㅋㅋ 알겠어~ 굿나잇!"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "서연",
+        "text": "...너, 생각보다 재밌는 사람이야. 내일 점심 옥상에서 볼래?"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "서연",
+        "text": "ㅋ 알겠어. 내일 봐."
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "유나",
+        "text": "...이 시간에도 답장하는 사람이 있구나. 내일 도서관에 올래?"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "유나",
+        "text": "...응. 잘 자."
     }
 }

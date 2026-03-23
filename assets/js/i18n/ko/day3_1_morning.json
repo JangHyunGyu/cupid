@@ -16,6 +16,34 @@
         "name": "{name}",
         "text": "*교문 앞에 서연이 서 있다. 서두르는 기색 없이.*"
     },
+    "morning3_seo_gate_warm_1": {
+        "name": "{name}",
+        "text": "*서연이 평소와 다르게 교문 앞에서 기다리고 있다.*"
+    },
+    "morning3_seo_gate_warm_2": {
+        "name": "서연",
+        "text": "...일찍 온 거 아니야. 학생회 일이 있어서."
+    },
+    "morning3_seo_gate_warm_3": {
+        "name": "{name}",
+        "text": "*손에 아무것도 없다. 서류도, 클립보드도.*"
+    },
+    "morning3_seo_gate_warm_4": {
+        "name": "{name}",
+        "text": "*서연이 아무 말 없이 나란히 걷기 시작한다. — 교문에서 교실까지, 이 거리가 이렇게 짧았나.*"
+    },
+    "morning3_seo_gate_cold_1": {
+        "name": "{name}",
+        "text": "*서연이 지나가다 잠깐 멈춘다.*"
+    },
+    "morning3_seo_gate_cold_2": {
+        "name": "서연",
+        "text": "...전학생. 아직 다니고 있었구나."
+    },
+    "morning3_seo_gate_cold_3": {
+        "name": "{name}",
+        "text": "*톤이 사무적이다. 교문을 지나가는 서연의 뒷모습이 멀어진다.*"
+    },
     "morning3_seo_gate_2": {
         "name": "서연",
         "text": "늦었네."
@@ -44,6 +72,30 @@
         "name": "{name}",
         "text": "*교문 앞에서 멍하니 서 있는 유나를 발견한다. 눈이 반쯤 감겨 있다.*"
     },
+    "morning3_yuna_gate_warm_1": {
+        "name": "{name}",
+        "text": "*교문 벽에 기대어 서 있던 유나가 쪽지를 건넨다.*"
+    },
+    "morning3_yuna_gate_warm_2": {
+        "name": "유나",
+        "text": "...같이 가도 돼?"
+    },
+    "morning3_yuna_gate_warm_3": {
+        "name": "{name}",
+        "text": "*쪽지에는 한 글자. '기다렸어.'*"
+    },
+    "morning3_yuna_gate_warm_4": {
+        "name": "{name}",
+        "text": "*유나와 나란히 걷는다. 아무 말이 없다. — 그런데 이상하게 불편하지 않다.*"
+    },
+    "morning3_yuna_gate_cold_1": {
+        "name": "{name}",
+        "text": "*유나가 먼저 지나간다. 눈이 마주쳤지만, 고개를 돌린다.*"
+    },
+    "morning3_yuna_gate_cold_2": {
+        "name": "{name}",
+        "text": "*유나의 발걸음이 빨라진다. — 벽이 다시 올라간 느낌이다.*"
+    },
     "morning3_yuna_gate_2": {
         "name": "{name}",
         "text": "유나? 너도 지각이야?"
@@ -71,6 +123,26 @@
     "morning3_dain_gate_1": {
         "name": "{name}",
         "text": "*교문 근처에서 다인이 전력 질주로 달려온다.*"
+    },
+    "morning3_dain_gate_warm_1": {
+        "name": "{name}",
+        "text": "*다인이 달려오며 팔짱을 낀다.*"
+    },
+    "morning3_dain_gate_warm_2": {
+        "name": "다인",
+        "text": "야! 늦을 뻔했잖아! 같이 가자!"
+    },
+    "morning3_dain_gate_warm_3": {
+        "name": "{name}",
+        "text": "*다인의 팔이 내 팔에 감겨 있다. 힘이 세다. — 뿌리칠 수도 없고, 뿌리치고 싶지도 않다.*"
+    },
+    "morning3_dain_gate_cold_1": {
+        "name": "{name}",
+        "text": "*다인이 다른 친구들과 뛰어간다.*"
+    },
+    "morning3_dain_gate_cold_2": {
+        "name": "다인",
+        "text": "어, 안녕!"
     },
     "morning3_dain_gate_2": {
         "name": "다인",

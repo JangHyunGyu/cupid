@@ -262,5 +262,69 @@
         "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
         "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er besuchte das Krankenzimmer. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
         "personality": "Die Schulkrankenschwester ist verspielt und charmant, versteckt aber echte Gefühle hinter Witzen. Ehemalige Krankenhausschwester mit Burnout-Erfahrung."
+    },
+    "after1_jealousy_seo_1": {
+        "name": "Dain",
+        "text": "Hey, wo warst du in der Mittagspause? Ich war in der Kantine und du warst nicht da."
+    },
+    "after1_jealousy_seo_2": {
+        "name": "{name}",
+        "text": "Ich hab auf dem Dach mit der Schülersprecherin gegessen."
+    },
+    "after1_jealousy_seo_3": {
+        "name": "Dain",
+        "text": "...Auf dem Dach? Nur ihr zwei?"
+    },
+    "after1_jealousy_seo_choice": {
+        "name": "{name}",
+        "text": "*Dains Stimme wurde etwas höher.*",
+        "choices": [
+            "Ich hab auf dem Dach mit der Sprecherin gegessen. (Ehrlich)",
+            "Ich bin einfach allein rumgelaufen. (Lüge)"
+        ]
+    },
+    "after1_jealousy_seo_honest": {
+        "name": "{name}",
+        "text": "Ja, sie hat mich mitgenommen. Hatte sogar ein Bento für zwei dabei."
+    },
+    "after1_jealousy_seo_honest_2": {
+        "name": "Dain",
+        "text": "...Echt? Hättest ja was sagen können."
+    },
+    "after1_jealousy_seo_lie": {
+        "name": "{name}",
+        "text": "Nee, bin einfach allein rumgelaufen."
+    },
+    "after1_jealousy_seo_lie_2": {
+        "name": "Dain",
+        "text": "Echt? Allein? — Naja, ist ja dein erster Tag!"
+    },
+    "after1_jealousy_seo_yuna": {
+        "name": "{name}",
+        "text": "*Ein gefalteter Zettel fällt aus meiner Tasche. Yunas Handschrift.*"
+    },
+    "after1_jealousy_seo_yuna_2": {
+        "name": "{name}",
+        "text": "*\"Ich hab dich in der Mittagspause auf dem Dach gesehen. ...Du sahst vertraut aus mit der Sprecherin.\" — Drei Punkte am Ende. Verschluckte Worte.*"
+    },
+    "after1_jealousy_dain_1": {
+        "name": "Seoyeon",
+        "text": "Hab dich beim Mittagessen mit Dain in der Kantine gesehen. Du passt dich schnell an."
+    },
+    "after1_jealousy_dain_2": {
+        "name": "{name}",
+        "text": "*Sie lächelt. Aber ihre Augen nicht. Ihre Finger klopfen auf das Klemmbrett.*"
+    },
+    "after1_jealousy_yuna_1": {
+        "name": "Dain",
+        "text": "Du warst in der Bibliothek beim Mittagessen? Mit Yuna?"
+    },
+    "after1_jealousy_yuna_2": {
+        "name": "Dain",
+        "text": "...Die trifft sich normalerweise mit niemandem."
+    },
+    "after1_pre_miss": {
+        "name": "{name}",
+        "text": "*Ich gehe weiter den Flur entlang.*"
     }
 }

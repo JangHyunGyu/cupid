@@ -457,5 +457,29 @@
         "text": "*Neben Yuna in der Bibliothek Bücher lesend. Es ist ruhig, aber angenehm.*",
         "context": "Mittagessen am ersten Tag, gerade Zeit mit Yuna in der Bibliothek verbracht. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
         "personality": "Yuna ist ein mysteriöses Literaturgirl. Kurze, trockene Sätze, aber wenn sie sich öffnet, werden ihre Sätze länger."
+    },
+    "lunch_seo_1_aff_high": {
+        "name": "Seoyeon",
+        "text": "Setz dich hierhin. Was du vorhin auf dem Flur gesagt hast — war ganz witzig."
+    },
+    "lunch_seo_1_aff_default": {
+        "name": "Seoyeon",
+        "text": "...Setzt du dich oder was?"
+    },
+    "lunch_dain_1_aff_high": {
+        "name": "Dain",
+        "text": "Oh! Du bist da! Hab dich beim Sport gesehen! Lass uns zusammen essen!"
+    },
+    "lunch_dain_1_aff_default": {
+        "name": "Dain",
+        "text": "Hey, du bist der Neue, oder? Schon gegessen?"
+    },
+    "lunch_yuna_1_aff_high": {
+        "name": "{name}",
+        "text": "*Yuna reicht einen gefalteten Zettel. \"...Was du vorhin gesagt hast. Ich habe es mir gemerkt.\"*"
+    },
+    "lunch_yuna_1_aff_default": {
+        "name": "{name}",
+        "text": "*Yuna sitzt ohne Zettel da. Schweigend.*"
     }
 }

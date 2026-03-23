@@ -262,5 +262,69 @@
         "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
         "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et a visité l'infirmerie. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
         "personality": "L'infirmière est joueuse et charmeuse mais cache ses vrais sentiments derrière l'humour. Ancienne infirmière hospitalière ayant fait un burnout."
+    },
+    "after1_jealousy_seo_1": {
+        "name": "Dain",
+        "text": "Hé, t'étais où à midi ? Je suis allée à la cantine et t'étais pas là."
+    },
+    "after1_jealousy_seo_2": {
+        "name": "{name}",
+        "text": "J'ai mangé sur le toit avec la présidente du conseil."
+    },
+    "after1_jealousy_seo_3": {
+        "name": "Dain",
+        "text": "...Le toit ? Juste vous deux ?"
+    },
+    "after1_jealousy_seo_choice": {
+        "name": "{name}",
+        "text": "*La voix de Dain a monté d'un ton.*",
+        "choices": [
+            "J'ai mangé sur le toit avec la présidente. (Honnête)",
+            "J'ai juste traîné seul. (Mensonge)"
+        ]
+    },
+    "after1_jealousy_seo_honest": {
+        "name": "{name}",
+        "text": "Oui, elle m'a emmené. Elle avait même préparé un bento pour deux."
+    },
+    "after1_jealousy_seo_honest_2": {
+        "name": "Dain",
+        "text": "...Ah bon ? Tu aurais pu me le dire, au moins."
+    },
+    "after1_jealousy_seo_lie": {
+        "name": "{name}",
+        "text": "Non, j'ai juste traîné tout seul."
+    },
+    "after1_jealousy_seo_lie_2": {
+        "name": "Dain",
+        "text": "Vraiment ? Tout seul ? — Bon, c'est ton premier jour, normal !"
+    },
+    "after1_jealousy_seo_yuna": {
+        "name": "{name}",
+        "text": "*Un mot plié tombe de ma poche. L'écriture de Yuna.*"
+    },
+    "after1_jealousy_seo_yuna_2": {
+        "name": "{name}",
+        "text": "*\"Je t'ai vu sur le toit à midi. ...Tu avais l'air proche de la présidente.\" — Trois points à la fin. Des mots avalés.*"
+    },
+    "after1_jealousy_dain_1": {
+        "name": "Seoyeon",
+        "text": "Je t'ai vu à la cantine avec Dain à midi. Tu t'adaptes vite."
+    },
+    "after1_jealousy_dain_2": {
+        "name": "{name}",
+        "text": "*Elle sourit. Mais ses yeux ne sourient pas. Ses doigts tapotent le bloc-notes.*"
+    },
+    "after1_jealousy_yuna_1": {
+        "name": "Dain",
+        "text": "T'es allé à la bibliothèque à midi ? Avec Yuna ?"
+    },
+    "after1_jealousy_yuna_2": {
+        "name": "Dain",
+        "text": "...D'habitude elle ne traîne avec personne."
+    },
+    "after1_pre_miss": {
+        "name": "{name}",
+        "text": "*Je continue dans le couloir.*"
     }
 }

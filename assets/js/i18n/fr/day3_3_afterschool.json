@@ -422,5 +422,53 @@
     "minsu_d3_6b": {
         "name": "Minsu",
         "text": "Je te demanderai pas ce qui s'est passé dans ton ancien lycée. Mais laisse-moi te dire une chose."
+    },
+    "after3_reject_for_seo_1": {
+        "name": "Moi",
+        "text": "*Je croise Dain dans le couloir. Son énergie habituelle a disparu.*"
+    },
+    "after3_reject_for_seo_2": {
+        "name": "Dain",
+        "text": "...Tu ne viendras pas au gymnase aujourd'hui, hein ?"
+    },
+    "after3_reject_for_seo_3": {
+        "name": "Moi",
+        "text": "*Je passe devant la bibliothèque. La place de Yuna est vide. Un seul mot reste. '...Compris.' Trois mots.*"
+    },
+    "after3_reject_for_seo_4": {
+        "name": "Moi",
+        "text": "*La phrase de Dain sans point d'exclamation, le mot de Yuna de seulement trois mots. — Le poids du choix s'installe sur mes épaules.*"
+    },
+    "after3_reject_for_yuna_1": {
+        "name": "Moi",
+        "text": "*Seoyeon range son bloc-notes dans le couloir.*"
+    },
+    "after3_reject_for_yuna_2": {
+        "name": "Seoyeon",
+        "text": "Populaire, dis donc."
+    },
+    "after3_reject_for_yuna_3": {
+        "name": "Moi",
+        "text": "*Dain frappe des balles seule au gymnase. Elle me voit et dit 'Ah, salut !' mais détourne le visage. Ses yeux sont rouges.*"
+    },
+    "after3_reject_for_yuna_4": {
+        "name": "Moi",
+        "text": "*La réplique de Seoyeon, les yeux rouges de Dain. — Le chemin du retour semble lourd.*"
+    },
+    "after3_reject_for_dain_1": {
+        "name": "Moi",
+        "text": "*Seoyeon range son bloc-notes.*"
+    },
+    "after3_reject_for_dain_2": {
+        "name": "Seoyeon",
+        "text": "Le conseil est occupé. Je mangerai séparément."
+    },
+    "after3_reject_for_dain_3": {
+        "name": "Moi",
+        "text": "*Pas de mots à la bibliothèque. Le sac de Yuna est parti. Elle est partie tôt.*"
+    },
+    "after3_reject_for_dain_4": {
+        "name": "Moi",
+        "text": "*Le sourire pratiqué de Seoyeon, le siège vide de Yuna. — Les deux places restantes semblent se vider.*"
     }
 }

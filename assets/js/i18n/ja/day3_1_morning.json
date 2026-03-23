@@ -327,5 +327,77 @@
         "text": "*保健先生と保健室で会話中。*",
         "context": "Day 3。不安な気持ちで保健室を訪れた。 トーン：明るいけれどどこかに影がある。笑っていても目が笑っていない瞬間がある。軽い会話の間に本音がちらりと見える。",
         "personality": "普段はいたずら好きだが真剣になると雰囲気が一変する。バーンアウト経験者。"
+    },
+    "morning3_seo_gate_warm_1": {
+        "name": "僕",
+        "text": "*ソヨンがいつもと違って校門の前で待っている。*"
+    },
+    "morning3_seo_gate_warm_2": {
+        "name": "ソヨン",
+        "text": "「…早く来たんじゃないよ。生徒会の用事があって。」"
+    },
+    "morning3_seo_gate_warm_3": {
+        "name": "僕",
+        "text": "*手には何もない。書類も、クリップボードも。*"
+    },
+    "morning3_seo_gate_warm_4": {
+        "name": "僕",
+        "text": "*ソヨンが何も言わずに並んで歩き始める。——校門から教室まで、こんなに短かったっけ。*"
+    },
+    "morning3_seo_gate_cold_1": {
+        "name": "僕",
+        "text": "*ソヨンが通りがかりに立ち止まる。*"
+    },
+    "morning3_seo_gate_cold_2": {
+        "name": "ソヨン",
+        "text": "「…転校生。まだ通ってたんだ。」"
+    },
+    "morning3_seo_gate_cold_3": {
+        "name": "僕",
+        "text": "*事務的なトーンだ。校門を過ぎるソヨンの後ろ姿が遠くなる。*"
+    },
+    "morning3_yuna_gate_warm_1": {
+        "name": "僕",
+        "text": "*校門の壁に寄りかかっていたユナがメモを渡す。*"
+    },
+    "morning3_yuna_gate_warm_2": {
+        "name": "ユナ",
+        "text": "「…一緒に行ってもいい？」"
+    },
+    "morning3_yuna_gate_warm_3": {
+        "name": "僕",
+        "text": "*メモには一文字。「待ってた」*"
+    },
+    "morning3_yuna_gate_warm_4": {
+        "name": "僕",
+        "text": "*ユナと並んで歩く。何も言わない。——でも不思議と居心地がいい。*"
+    },
+    "morning3_yuna_gate_cold_1": {
+        "name": "僕",
+        "text": "*ユナが先に通り過ぎる。目が合ったが、顧をそらす。*"
+    },
+    "morning3_yuna_gate_cold_2": {
+        "name": "僕",
+        "text": "*ユナの足取りが速くなる。——壁がまた上がった感じだ。*"
+    },
+    "morning3_dain_gate_warm_1": {
+        "name": "僕",
+        "text": "*ダインが走ってきて腕を組む。*"
+    },
+    "morning3_dain_gate_warm_2": {
+        "name": "ダイン",
+        "text": "「やばい！遅刻するとこだった！一緒に行こう！」"
+    },
+    "morning3_dain_gate_warm_3": {
+        "name": "僕",
+        "text": "*ダインの腕が絡みついている。力が強い。——振りほどけないし、振りほどきたくもない。*"
+    },
+    "morning3_dain_gate_cold_1": {
+        "name": "僕",
+        "text": "*ダインが他の友達と走っていく。*"
+    },
+    "morning3_dain_gate_cold_2": {
+        "name": "ダイン",
+        "text": "「あ、おはよう！」"
     }
 }
