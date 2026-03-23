@@ -102,6 +102,27 @@ function requestMobileFullscreen() {
     if (rfs && !document.fullscreenElement && !document.webkitFullscreenElement) {
         rfs.call(el).catch(() => {});
     }
+
+    // 풀스크린 상태에서 input 포커스 시 자동완성 바 위치가 깨지므로
+    // input 포커스 시 풀스크린 해제, blur 시 복귀
+    document.addEventListener('focusin', (e) => {
+        if (!e.target.matches('input, textarea')) return;
+        if (document.fullscreenElement || document.webkitFullscreenElement) {
+            (document.exitFullscreen || document.webkitExitFullscreen).call(document).catch(() => {});
+        }
+    });
+    document.addEventListener('focusout', (e) => {
+        if (!e.target.matches('input, textarea')) return;
+        // 다른 input으로 포커스 이동하는 경우 재진입 방지
+        setTimeout(() => {
+            if (document.activeElement?.matches('input, textarea')) return;
+            const el = document.documentElement;
+            const rfs = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
+            if (rfs && !document.fullscreenElement && !document.webkitFullscreenElement) {
+                rfs.call(el).catch(() => {});
+            }
+        }, 300);
+    });
 }
 
 window.initGame = async () => {
