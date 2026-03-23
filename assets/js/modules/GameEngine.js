@@ -144,6 +144,9 @@ class GameEngine {
         /** 씬 렌더링 중 클릭 방지 플래그 (비동기 로딩 완료 전 씬 스킵 방지) */
         this._isRendering = false;
 
+        /** 엔딩 CG 감상 잠금 플래그 (CG 씬에서 N초간 클릭 무시) */
+        this._cgLocked = false;
+
         // ════════════════════════════════════════════════════════════════
         // 📌 이벤트 핸들러 연결 및 전역 함수 등록
         // ════════════════════════════════════════════════════════════════
@@ -292,6 +295,9 @@ class GameEngine {
     async handleDialogueClick() {
         // 씬 렌더링 중이면 클릭 무시 (배경/캐릭터 로딩 완료 전 스킵 방지)
         if (this._isRendering) return;
+
+        // 엔딩 CG 감상 중이면 클릭 무시 (4초간 스킵 불가)
+        if (this._cgLocked) return;
 
         // 타이핑 중이면 스킵
         if (this.dialogueSystem.isCurrentlyTyping()) {
@@ -957,6 +963,12 @@ class GameEngine {
 
         // 비동기 로딩 완료 → 렌더링 락 해제 (이제 클릭 가능)
         this._isRendering = false;
+
+        // 엔딩 CG 씬이면 4초간 클릭 잠금 (CG 감상 시간 보장)
+        if (scene.background && scene.background.includes('ending_') && !scene.choices) {
+            this._cgLocked = true;
+            setTimeout(() => { this._cgLocked = false; }, 4000);
+        }
 
         // ─────────────────────────────────────────────────────────
         // 🏷️ 10단계: 이름 태그 설정
