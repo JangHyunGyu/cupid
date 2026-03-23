@@ -19,7 +19,7 @@ Object.assign(SCENARIO[5], {
         "fade": true,
         "branches": [
             {
-                "next": "hidden_true_homeroom_1",
+                "next": "hidden_perfect_homeroom_check",
                 "condition": "homeroom_day5",
                 "excludeCondition": "day3_has_multiple_dates"
             },
@@ -28,7 +28,7 @@ Object.assign(SCENARIO[5], {
                 "condition": "homeroom_day5"
             },
             {
-                "next": "hidden_true_nurse_1",
+                "next": "hidden_perfect_nurse_check",
                 "condition": "nurse_day5",
                 "excludeCondition": "day3_has_multiple_dates"
             },
