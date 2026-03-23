@@ -772,7 +772,13 @@ class GalleryData {
                 description: '졸업식 날, 교실에서 찍은 다섯 명의 단체 셀카',
                 file: 'assets/images/background/ending_friend.png',
                 thumbnail: 'assets/images/background/ending_friend.png'
-            }
+            },
+            { id: 'ending_confess_fail_seoyeon', name: '서연의 침묵', character: '서연', description: '석양의 공원에서, 안경을 고쳐 쓰며 조용히 시선을 돌리는 서연', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png' },
+            { id: 'ending_confess_fail_yuna', name: '유나의 뒷모습', character: '유나', description: '어두운 공원에서, 한마디 없이 돌아서 걸어가는 유나', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png' },
+            { id: 'ending_confess_fail_dain', name: '다인의 거짓 웃음', character: '다인', description: '눈물을 닦으며 억지로 웃는 다인, "괜찮아" 라고 손을 흔들며', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
+            { id: 'ending_mayhem', name: '들킨 순간', character: null, description: '복도에서 마주친 서연의 차가운 눈빛과 다인의 떨리는 주먹', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
+            { id: 'ending_good_teacher', name: '선생님의 창가', character: '담임선생님', description: '방과후 복도 창가에서, 서류를 안고 학생들을 바라보는 담임선생님', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
+            { id: 'ending_good_nurse', name: '보건실의 여유', character: '보건선생님', description: '보건실 의자에 기대앉아 커피를 마시며 의미심장하게 웃는 보건선생님', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
         ],
         en: [
             {
@@ -807,7 +813,13 @@ class GalleryData {
             { id: 'ending_true_nurse', name: 'Safe Place', character: 'School Nurse', description: 'She falls asleep on your shoulder on her couch, a quiet night', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png' },
             { id: 'ending_harem', name: 'Love Triangle...or Square?', character: null, description: 'Surrounded by three girls at once — chaos ensues', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png' },
             { id: 'ending_alone', name: 'Empty Room', character: null, description: 'A dark room, a dead phone, city lights through the curtain', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png' },
-            { id: 'ending_friend', name: 'Our Graduation Photo', character: null, description: 'A group selfie in the classroom on graduation day', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' }
+            { id: 'ending_friend', name: 'Our Graduation Photo', character: null, description: 'A group selfie in the classroom on graduation day', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' },
+            { id: 'ending_confess_fail_seoyeon', name: 'Seoyeon\'s Silence', character: 'Seoyeon', description: 'At the sunset park, Seoyeon quietly adjusts her glasses and looks away', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png' },
+            { id: 'ending_confess_fail_yuna', name: 'Yuna\'s Back', character: 'Yuna', description: 'In the dark park, Yuna turns and walks away without a word', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png' },
+            { id: 'ending_confess_fail_dain', name: 'Dain\'s Fake Smile', character: 'Dain', description: 'Dain wipes her tears and waves with a forced grin', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
+            { id: 'ending_mayhem', name: 'Caught', character: null, description: 'Seoyeon\'s ice-cold glare and Dain\'s trembling fists in the hallway', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
+            { id: 'ending_good_teacher', name: 'Teacher by the Window', character: 'Teacher', description: 'The homeroom teacher watches students leave from the hallway window', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
+            { id: 'ending_good_nurse', name: 'Nurse\'s Leisure', character: 'School Nurse', description: 'The nurse leans back with coffee and a knowing smirk', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
         ],
         es: [
             {
@@ -842,7 +854,13 @@ class GalleryData {
             { id: 'ending_true_nurse', name: 'Lugar seguro', character: 'Enfermera', description: 'Ella se duerme en tu hombro en su sofá', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png' },
             { id: 'ending_harem', name: 'Triángulo...¿o cuadrado?', character: null, description: 'Rodeado por tres chicas a la vez', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png' },
             { id: 'ending_alone', name: 'Habitación vacía', character: null, description: 'Una habitación oscura, un teléfono apagado', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png' },
-            { id: 'ending_friend', name: 'Nuestra foto de graduación', character: null, description: 'Un selfie grupal el día de la graduación', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' }
+            { id: 'ending_friend', name: 'Nuestra foto de graduación', character: null, description: 'Un selfie grupal el día de la graduación', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' },
+            { id: 'ending_confess_fail_seoyeon', name: 'El silencio de Seoyeon', character: 'Seoyeon', description: 'En el parque al atardecer, Seoyeon se ajusta las gafas y mira hacia otro lado', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png' },
+            { id: 'ending_confess_fail_yuna', name: 'La espalda de Yuna', character: 'Yuna', description: 'En el parque oscuro, Yuna se da la vuelta y se va sin decir nada', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png' },
+            { id: 'ending_confess_fail_dain', name: 'La sonrisa falsa de Dain', character: 'Dain', description: 'Dain se seca las lágrimas y saluda con una sonrisa forzada', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
+            { id: 'ending_mayhem', name: 'Atrapado', character: null, description: 'La mirada gélida de Seoyeon y los puños temblorosos de Dain', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
+            { id: 'ending_good_teacher', name: 'La profesora en la ventana', character: 'Profesora', description: 'La profesora observa a los alumnos irse desde la ventana', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
+            { id: 'ending_good_nurse', name: 'El relax de la enfermera', character: 'Enfermera', description: 'La enfermera se recuesta con café y una sonrisa cómplice', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
         ],
         ja: [
             {
@@ -877,7 +895,13 @@ class GalleryData {
             { id: 'ending_true_nurse', name: '安全な場所', character: '保健先生', description: '保健先生の家のソファで、肩にもたれて眠った静かな夜', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png' },
             { id: 'ending_harem', name: '三角関係...いや四角？', character: null, description: '三人の女の子に囲まれた混沌の瞬間', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png' },
             { id: 'ending_alone', name: '一人きりの部屋', character: null, description: '暗い部屋、消えたスマホ、カーテン越しの街の灯り', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png' },
-            { id: 'ending_friend', name: '僕たちの卒業写真', character: null, description: '卒業式の日、教室で撮った五人の集合セルフィー', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' }
+            { id: 'ending_friend', name: '僕たちの卒業写真', character: null, description: '卒業式の日、教室で撮った五人の集合セルフィー', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' },
+            { id: 'ending_confess_fail_seoyeon', name: 'ソヨンの沈黙', character: 'ソヨン', description: '夕暮れの公園で、ソヨンは静かに眼鏡を直して目をそらす', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png' },
+            { id: 'ending_confess_fail_yuna', name: 'ユナの背中', character: 'ユナ', description: '暗い公園で、ユナは一言もなく振り向いて去っていく', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png' },
+            { id: 'ending_confess_fail_dain', name: 'ダインの作り笑い', character: 'ダイン', description: 'ダインは涙を拭きながら無理に笑って手を振る', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
+            { id: 'ending_mayhem', name: 'バレた瞬間', character: null, description: 'ソヨンの氷のような視線とダインの震える拳', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
+            { id: 'ending_good_teacher', name: '窓辺の先生', character: '担任先生', description: '担任の先生が廊下の窓から生徒たちを見送る', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
+            { id: 'ending_good_nurse', name: '保健室のひととき', character: '保健先生', description: '保健先生がコーヒーを片手に意味深な笑みを浮かべる', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
         ],
         fr: [
             {
@@ -912,7 +936,13 @@ class GalleryData {
             { id: 'ending_true_nurse', name: 'Lieu sûr', character: 'Infirmière', description: 'Elle s\'endort sur ton épaule sur son canapé', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png' },
             { id: 'ending_harem', name: 'Triangle...ou carré ?', character: null, description: 'Entouré par trois filles en même temps', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png' },
             { id: 'ending_alone', name: 'Chambre vide', character: null, description: 'Une chambre sombre, un téléphone éteint', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png' },
-            { id: 'ending_friend', name: 'Notre photo de fin d\'année', character: null, description: 'Un selfie de groupe le jour de la remise des diplômes', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' }
+            { id: 'ending_friend', name: 'Notre photo de fin d\'année', character: null, description: 'Un selfie de groupe le jour de la remise des diplômes', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' },
+            { id: 'ending_confess_fail_seoyeon', name: 'Le silence de Seoyeon', character: 'Seoyeon', description: 'Au parc au coucher du soleil, Seoyeon ajuste ses lunettes et détourne le regard', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png' },
+            { id: 'ending_confess_fail_yuna', name: 'Le dos de Yuna', character: 'Yuna', description: 'Dans le parc sombre, Yuna se retourne et part sans un mot', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png' },
+            { id: 'ending_confess_fail_dain', name: 'Le faux sourire de Dain', character: 'Dain', description: 'Dain essuie ses larmes et fait un signe de la main avec un sourire forcé', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
+            { id: 'ending_mayhem', name: 'Pris en flagrant délit', character: null, description: 'Le regard glacial de Seoyeon et les poings tremblants de Dain', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
+            { id: 'ending_good_teacher', name: 'La professeure à la fenêtre', character: 'Professeure', description: 'La professeure regarde les élèves partir depuis la fenêtre', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
+            { id: 'ending_good_nurse', name: 'La détente de l\'infirmière', character: 'Infirmière', description: 'L\'infirmière se détend avec un café et un sourire complice', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
         ],
         de: [
             {
@@ -947,7 +977,13 @@ class GalleryData {
             { id: 'ending_true_nurse', name: 'Sicherer Ort', character: 'Schulkrankenschwester', description: 'Sie schläft auf deiner Schulter auf ihrem Sofa ein', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png' },
             { id: 'ending_harem', name: 'Dreieck...oder Viereck?', character: null, description: 'Von drei Mädchen gleichzeitig umringt', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png' },
             { id: 'ending_alone', name: 'Leeres Zimmer', character: null, description: 'Ein dunkles Zimmer, ein totes Handy', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png' },
-            { id: 'ending_friend', name: 'Unser Abschlussfoto', character: null, description: 'Ein Gruppenselfie am Abschlusstag', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' }
+            { id: 'ending_friend', name: 'Unser Abschlussfoto', character: null, description: 'Ein Gruppenselfie am Abschlusstag', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png' },
+            { id: 'ending_confess_fail_seoyeon', name: 'Seoyeons Schweigen', character: 'Seoyeon', description: 'Im Park bei Sonnenuntergang richtet Seoyeon ihre Brille und schaut weg', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png' },
+            { id: 'ending_confess_fail_yuna', name: 'Yunas Rücken', character: 'Yuna', description: 'Im dunklen Park dreht sich Yuna um und geht wortlos', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png' },
+            { id: 'ending_confess_fail_dain', name: 'Dains falsches Lächeln', character: 'Dain', description: 'Dain wischt sich die Tränen ab und winkt mit einem erzwungenen Grinsen', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },
+            { id: 'ending_mayhem', name: 'Erwischt', character: null, description: 'Seoyeons eiskalter Blick und Dains zitternde Fäuste', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png' },
+            { id: 'ending_good_teacher', name: 'Die Lehrerin am Fenster', character: 'Lehrerin', description: 'Die Lehrerin beobachtet die Schüler vom Flurfenster aus', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png' },
+            { id: 'ending_good_nurse', name: 'Die Muße der Krankenschwester', character: 'Schulkrankenschwester', description: 'Die Krankenschwester lehnt sich mit Kaffee zurück und lächelt wissend', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png' }
         ]
     };
 
