@@ -308,5 +308,13 @@
     "lunch3_yuna_witness_2": {
         "name": "Yo",
         "text": "*Su expresión es vacía. Eso lo hace más aterrador.*"
+    },
+    "lunch3_seo_chase_dain_2b": {
+        "name": "{name}",
+        "text": "*Volví al salón de clases.*"
+    },
+    "lunch3_dain_witness_2b": {
+        "name": "{name}",
+        "text": "*Volví al salón de clases.*"
     }
 }

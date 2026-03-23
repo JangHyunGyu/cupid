@@ -134,5 +134,21 @@
     "after5_confess_no_2": {
         "name": "{name}",
         "text": "*Der Sonnenuntergang verblasste. Genau wie meine Worte.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*Ich ging zur Rückseite der Schule.*"
+    },
+    "after5_farewell_yuna_5b": {
+        "name": "{name}",
+        "text": "*Ich ging zurück in den Flur.*"
+    },
+    "after5_farewell_dain_5b": {
+        "name": "{name}",
+        "text": "*Ich verließ die Sporthalle und ging zur Rückseite der Schule.*"
+    },
+    "after5_confess_no_2b": {
+        "name": "{name}",
+        "text": "*Ich ging nach Hause.*"
     }
 }

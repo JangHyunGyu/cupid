@@ -83,6 +83,11 @@ Object.assign(SCENARIO[2], {
     "after2_dain_11": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
+        "next": "after2_dain_11b"
+    },
+    "after2_dain_11b": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_12"
     },
     "after2_dain_12": {

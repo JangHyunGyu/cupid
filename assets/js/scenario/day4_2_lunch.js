@@ -139,6 +139,11 @@ Object.assign(SCENARIO[4], {
     "date_seo_end": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "next": "date_seo_end_b"
+    },
+    "date_seo_end_b": {
+        "background": "assets/images/background/street.png",
+        "character": null,
         "next": "pre_confess_minsu"
     },
 
@@ -350,7 +355,7 @@ Object.assign(SCENARIO[4], {
     "date_dain_pretty_high_4": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
-        "next": "date_dain_arcade"
+        "next": "date_dain_to_arcade"
     },
     "date_dain_pretty_low": {
         "background": "assets/images/background/gym.png",
@@ -360,10 +365,15 @@ Object.assign(SCENARIO[4], {
                 "affinity": 3
             }
         },
-        "next": "date_dain_arcade"
+        "next": "date_dain_to_arcade"
     },
     "date_dain_bright": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "date_dain_to_arcade"
+    },
+    "date_dain_to_arcade": {
+        "background": "assets/images/background/arcade.png",
         "character": "assets/images/characters/dain_laugh.png",
         "next": "date_dain_arcade"
     },
@@ -404,6 +414,11 @@ Object.assign(SCENARIO[4], {
     },
     "date_dain_knee_2": {
         "background": "assets/images/background/arcade.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "date_dain_knee_2b"
+    },
+    "date_dain_knee_2b": {
+        "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_shop"
     },

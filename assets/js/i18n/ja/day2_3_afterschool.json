@@ -507,5 +507,9 @@
     "after2_yuna_skinship_3": {
         "name": "{name}",
         "text": "*手が離れた。ユナが本を取って渡す。何も言わずに。*"
+    },
+    "after2_dain_11b": {
+        "name": "{name}",
+        "text": "*体育館を出て、通りを歩いた。*"
     }
 }

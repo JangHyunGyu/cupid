@@ -308,5 +308,13 @@
     "lunch3_end": {
         "name": "{name}",
         "text": "*점심시간이 끝났다.*"
+    },
+    "lunch3_seo_chase_dain_2b": {
+        "name": "{name}",
+        "text": "*교실로 돌아왔다.*"
+    },
+    "lunch3_dain_witness_2b": {
+        "name": "{name}",
+        "text": "*교실로 돌아왔다.*"
     }
 }

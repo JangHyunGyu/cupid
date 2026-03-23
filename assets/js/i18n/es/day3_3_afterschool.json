@@ -470,5 +470,17 @@
     "after3_reject_for_dain_4": {
         "name": "Yo",
         "text": "*La sonrisa ensayada de Seoyeon, el asiento vacío de Yuna. — Los dos asientos restantes se sienten más vacíos.*"
+    },
+    "after3_reject_for_dain_2b": {
+        "name": "{name}",
+        "text": "*Me dirigí al escondite de Yuna.*"
+    },
+    "after3_reject_for_dain_3b": {
+        "name": "{name}",
+        "text": "*Volví al pasillo.*"
+    },
+    "haeun_warn_8b": {
+        "name": "{name}",
+        "text": "*Salí a la entrada de la escuela.*"
     }
 }

@@ -470,5 +470,17 @@
     "after3_reject_for_dain_4": {
         "name": "Ich",
         "text": "*Seoyeons einstudiertes Lächeln, Yunas leerer Platz. — Die verbleibenden zwei Plätze werden leerer.*"
+    },
+    "after3_reject_for_dain_2b": {
+        "name": "{name}",
+        "text": "*Ich ging zu Yunas Versteck.*"
+    },
+    "after3_reject_for_dain_3b": {
+        "name": "{name}",
+        "text": "*Ich ging zurück in den Flur.*"
+    },
+    "haeun_warn_8b": {
+        "name": "{name}",
+        "text": "*Ich ging zum Schuleingang hinaus.*"
     }
 }

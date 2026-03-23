@@ -399,5 +399,21 @@
     "morning3_dain_gate_cold_2": {
         "name": "Dain",
         "text": "¡Ah, hola!"
+    },
+    "morning3_react_yuna_1b": {
+        "name": "{name}",
+        "text": "*Volví al salón de clases.*"
+    },
+    "morning3_date_intro_b": {
+        "name": "{name}",
+        "text": "*En el descanso, salí al pasillo.*"
+    },
+    "morning3_date_seo_accept_b": {
+        "name": "{name}",
+        "text": "*Volví al salón de clases.*"
+    },
+    "morning3_date_seo_decline_b": {
+        "name": "{name}",
+        "text": "*Volví al salón de clases.*"
     }
 }

@@ -296,5 +296,17 @@
     "pre_confess_callback": {
         "name": "Ich",
         "text": "*Das Handy in meiner Tasche fühlt sich schwer an. Keine Benachrichtigungen. — Wie an jenem ersten Tag, als ich einen Namen auf dem Display sah und es zurücksteckte. So darf ich nicht wieder weglaufen. Nicht diesmal.*"
+    },
+    "date_seo_end_b": {
+        "name": "{name}",
+        "text": "*Wir verließen den Park und gingen die Straße entlang.*"
+    },
+    "date_dain_to_arcade": {
+        "name": "{name}",
+        "text": "*Wir gingen zur Spielhalle.*"
+    },
+    "date_dain_knee_2b": {
+        "name": "{name}",
+        "text": "*Wir verließen die Spielhalle und gingen auf die Straße.*"
     }
 }

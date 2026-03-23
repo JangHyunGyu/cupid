@@ -692,5 +692,9 @@
     "wall_yuna_skin60_2": {
         "name": "Yuna",
         "text": "...Porque eres cálido."
+    },
+    "wall_seo_to_park": {
+        "name": "{name}",
+        "text": "*Salí de casa y me dirigí al parque.*"
     }
 }

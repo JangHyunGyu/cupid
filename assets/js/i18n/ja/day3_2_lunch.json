@@ -308,5 +308,13 @@
     "lunch3_yuna_witness_2": {
         "name": "僕",
         "text": "*表情が無い。それが余計に怖い。*"
+    },
+    "lunch3_seo_chase_dain_2b": {
+        "name": "{name}",
+        "text": "*教室に戻った。*"
+    },
+    "lunch3_dain_witness_2b": {
+        "name": "{name}",
+        "text": "*教室に戻った。*"
     }
 }

@@ -1626,6 +1626,17 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
             (/^morning\d*_end/.test(sceneId) && /^(tour|lunch|after)/.test(nextId));  // 아침 종료→다음
         if (isTimeSlotTransition) continue;
 
+        // 의도적 연출 (플래시백, CG 전환, 엔딩 몽타주, 회상/비전)은 제외
+        const isIntentionalCut =
+            /^night\d*_flashback_/.test(sceneId) ||  // 플래시백 전환
+            (sceneId === 'after3_dain_2' && nextId === 'after3_dain_3') ||  // 부상 이벤트 CG
+            (sceneId === 'after3_dain_3' && nextId === 'after3_dain_4') ||  // CG → 원래 배경 복귀
+            /^bitter_/.test(sceneId) ||  // 엔딩 몽타주 (시간 경과)
+            /^hidden_true_/.test(sceneId) ||  // 히든 엔딩 몽타주
+            /^wall_dain_glimpse_/.test(sceneId) ||  // 회상/비전 연출
+            /^wall_dain_skin\d+_/.test(sceneId) && /^wall_dain_glimpse_/.test(nextId);  // 비전 진입
+        if (isIntentionalCut) continue;
+
         // 다음 씬의 i18n 텍스트에 장소 이동 힌트가 있는지 확인
         const nextI18n = i18nData[scene.next];
         const currentI18n = i18nData[sceneId];
@@ -1634,7 +1645,7 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
         const combinedText = currentText + ' ' + nextText;
 
         // 장소 이동 관련 키워드
-        const locationHints = /이동|걸어|향하|도착|들어서|나가|나서|올라|내려|교실|복도|옥상|보건실|운동장|체육관|카페|집|학교|문을 열|자리에서|돌아|move|walk|head|arrive|enter|leave|went|go to|came to/i;
+        const locationHints = /이동|걸어|걸었|향하|향했|도착|들어서|나가|나서|나와|나왔|올라|내려|교실|복도|옥상|보건실|운동장|체육관|카페|오락실|집으로|학교|문을 열|자리에서|돌아|move|walk|head|arrive|enter|leave|went|go to|came to|left the|stepped out|back to/i;
         if (!locationHints.test(combinedText)) {
             warnings.push('[BG_CHANGE] ' + sceneId + ' → ' + scene.next + ': 배경 변경 (' + path.basename(scene.background) + ' → ' + path.basename(nextScene.background) + ') 인데 장소 이동 나레이션 없음');
             bgInconsistencies++;

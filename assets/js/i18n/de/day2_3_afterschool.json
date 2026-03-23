@@ -507,5 +507,9 @@
     "after2_yuna_skinship_3": {
         "name": "{name}",
         "text": "*Die Hände trennen sich. Yuna nimmt das Buch und reicht es mir. Ohne ein Wort.*"
+    },
+    "after2_dain_11b": {
+        "name": "{name}",
+        "text": "*Wir verließen die Sporthalle und gingen die Straße entlang.*"
     }
 }

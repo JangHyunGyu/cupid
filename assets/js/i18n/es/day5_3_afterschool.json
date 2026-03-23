@@ -134,5 +134,21 @@
     "after5_confess_no_2": {
         "name": "{name}",
         "text": "*El atardecer se desvaneció. Igual que mis palabras.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*Caminé hacia la parte trasera de la escuela.*"
+    },
+    "after5_farewell_yuna_5b": {
+        "name": "{name}",
+        "text": "*Volví al pasillo.*"
+    },
+    "after5_farewell_dain_5b": {
+        "name": "{name}",
+        "text": "*Salí del gimnasio y me dirigí a la parte trasera de la escuela.*"
+    },
+    "after5_confess_no_2b": {
+        "name": "{name}",
+        "text": "*Volví a casa.*"
     }
 }

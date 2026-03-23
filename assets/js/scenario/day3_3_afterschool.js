@@ -86,10 +86,20 @@ Object.assign(SCENARIO[3], {
     "after3_reject_for_dain_2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after3_reject_for_dain_2b"
+    },
+    "after3_reject_for_dain_2b": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
         "next": "after3_reject_for_dain_3"
     },
     "after3_reject_for_dain_3": {
         "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
+        "next": "after3_reject_for_dain_3b"
+    },
+    "after3_reject_for_dain_3b": {
+        "background": "assets/images/background/school_hallway.png",
         "character": null,
         "next": "after3_reject_for_dain_4"
     },
@@ -642,6 +652,11 @@ Object.assign(SCENARIO[3], {
     },
     "haeun_warn_8": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "haeun_warn_8b"
+    },
+    "haeun_warn_8b": {
+        "background": "assets/images/background/school.png",
         "character": null,
         "next": "minsu_d3_check"
     },

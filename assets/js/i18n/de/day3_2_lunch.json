@@ -308,5 +308,13 @@
     "lunch3_yuna_witness_2": {
         "name": "Ich",
         "text": "*Ihr Gesicht ist ausdruckslos. Das macht es noch beängstigender.*"
+    },
+    "lunch3_seo_chase_dain_2b": {
+        "name": "{name}",
+        "text": "*Ich ging zurück ins Klassenzimmer.*"
+    },
+    "lunch3_dain_witness_2b": {
+        "name": "{name}",
+        "text": "*Ich ging zurück ins Klassenzimmer.*"
     }
 }

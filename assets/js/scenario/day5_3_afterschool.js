@@ -40,6 +40,12 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school.png",
         "character": null,
         "sunset": true,
+        "next": "after5_hidden_farewell_3b"
+    },
+    "after5_hidden_farewell_3b": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "sunset": true,
         "next": "after5_sunset_1"
     },
 
@@ -133,6 +139,12 @@ Object.assign(SCENARIO[5], {
         "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "sunset": true,
+        "next": "after5_farewell_yuna_5b"
+    },
+    "after5_farewell_yuna_5b": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "sunset": true,
         "next": "after5_farewell_dain_check"
     },
 
@@ -179,6 +191,12 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/gym.png",
         "sunset": true,
         "excludeCondition": "route_dain",
+        "next": "after5_farewell_dain_5b"
+    },
+    "after5_farewell_dain_5b": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "sunset": true,
         "next": "after5_sunset_1"
     },
 
@@ -319,6 +337,12 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "sunset": true,
         "fade": true,
+        "next": "after5_confess_no_2b"
+    },
+    "after5_confess_no_2b": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "night": true,
         "next": "day5_ending_alone"
     }
 });

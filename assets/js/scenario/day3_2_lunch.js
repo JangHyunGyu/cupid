@@ -160,6 +160,11 @@ Object.assign(SCENARIO[3], {
     "lunch3_seo_chase_dain_2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_sad.png",
+        "next": "lunch3_seo_chase_dain_2b"
+    },
+    "lunch3_seo_chase_dain_2b": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "lunch3_give_seo_3"
     },
     "lunch3_seo_focus_1": {
@@ -234,7 +239,12 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_dain_witness_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "lunch3_dain_witness_2b"
+    },
+    "lunch3_dain_witness_2b": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "lunch3_give_dain_3"
     },
     "lunch3_give_dain_3": {

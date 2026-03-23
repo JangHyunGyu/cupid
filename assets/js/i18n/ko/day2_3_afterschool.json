@@ -507,5 +507,9 @@
     "after2_yuna_skinship_3": {
         "name": "{name}",
         "text": "*손을 뗐다. 유나가 책을 집어 건넨다. 아무 말 없이.*"
+    },
+    "after2_dain_11b": {
+        "name": "{name}",
+        "text": "*체육관을 나와 거리를 걸었다.*"
     }
 }

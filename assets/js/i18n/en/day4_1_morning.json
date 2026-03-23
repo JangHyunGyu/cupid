@@ -170,5 +170,9 @@
         "text": "*Talking with the school nurse at a snack bar.*",
         "context": "Day 4. Helped with health checkup prep on the weekend, then ate together. Hospital burnout backstory. Tone: Conversation has gotten serious. Date excitement and nervousness. More sincerity than jokes. Moments of emotional honesty.",
         "personality": "In casual clothes she feels more like an older sister. Oscillates between playfulness and sincerity."
+    },
+    "hidden_nurse_d4_meal_1b": {
+        "name": "{name}",
+        "text": "*We headed back to the nurse's office.*"
     }
 }

@@ -296,5 +296,17 @@
     "pre_confess_callback": {
         "name": "Me",
         "text": "*The phone in my pocket feels heavy. No notifications. — Like that first day, when I saw a name flash on the screen and shoved it back in. I can't run like that again. Not this time.*"
+    },
+    "date_seo_end_b": {
+        "name": "{name}",
+        "text": "*We left the park and walked down the street.*"
+    },
+    "date_dain_to_arcade": {
+        "name": "{name}",
+        "text": "*We headed to the arcade.*"
+    },
+    "date_dain_knee_2b": {
+        "name": "{name}",
+        "text": "*We stepped out of the arcade onto the street.*"
     }
 }

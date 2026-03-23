@@ -170,5 +170,9 @@
         "text": "*Conversando con la enfermera en una tienda de comida.*",
         "context": "Día 4. Ayudó con los preparativos y comieron juntos. Tono: La conversación se ha vuelto seria. Emoción y nerviosismo de la cita. Más sinceridad que bromas. Momentos de honestidad emocional.",
         "personality": "En ropa casual parece una hermana mayor. Oscila entre lo juguetón y lo sincero."
+    },
+    "hidden_nurse_d4_meal_1b": {
+        "name": "{name}",
+        "text": "*Volvimos a la enfermería.*"
     }
 }
