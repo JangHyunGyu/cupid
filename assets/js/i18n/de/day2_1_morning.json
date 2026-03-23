@@ -277,7 +277,7 @@
     },
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*Yunas Handschrift. Ein Satz länger als gestern.*"
+        "text": "*Yunas Handschrift. Ein Satz länger als gestern. — Auf der Rückseite, winzig klein: 'Mittags im Bibliotheksanbau.'*"
     },
     "morning2_greet_yuna_others": {
         "name": "{name}",

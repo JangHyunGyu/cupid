@@ -141,6 +141,10 @@
             "Passt schon, ich gehe dann"
         ]
     },
+    "hidden_nurse_d4_meal_walk": {
+        "name": "{name}",
+        "text": "*Wir gingen zum Imbiss vor der Schule.*"
+    },
     "hidden_nurse_d4_meal_1": {
         "name": "Schulkrankenschwester",
         "text": "Das ist so scharf! Essen Schüler sowas?!"

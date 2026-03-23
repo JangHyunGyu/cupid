@@ -277,7 +277,7 @@
     },
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*유나의 글씨. 어제보다 한 문장이 길어졌다.*"
+        "text": "*유나의 글씨. 어제보다 한 문장이 길어졌다. — 뒷면에 작게 '점심에 도서관 별관으로.'*"
     },
     "morning2_greet_yuna_others": {
         "name": "{name}",

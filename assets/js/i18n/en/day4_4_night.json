@@ -258,7 +258,7 @@
         "choices": [
             "...Can I sit next to you?",
             "You can cry. You don't have to pretend to be cheerful. Not with me.",
-            "...Want me to set one more? One last time."
+            "...Let's get up. One more time."
         ]
     },
     "wall_dain_newdream_1": {
@@ -319,7 +319,7 @@
     },
     "wall_dain_lastspike_1": {
         "name": "Me",
-        "text": "*I set the ball for her.*"
+        "text": "*I held out my hand. Dain took it. We both stood up. — I set the ball for her.*"
     },
     "wall_dain_lastspike_2": {
         "name": "Me",

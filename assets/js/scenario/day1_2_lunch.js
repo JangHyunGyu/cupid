@@ -285,24 +285,9 @@ Object.assign(SCENARIO[1], {
     },
 
     "lunch_dain_1": {
-        "character": "assets/images/characters/dain_normal.png",
-        "background": "assets/images/background/store.png",
-        "bgm": "daily2.mp3",
-        "affinityChar": "Dain",
-        "affinityBranches": [
-            { "minAffinity": 1, "next": "lunch_dain_1_aff_high" },
-            { "minAffinity": 0, "next": "lunch_dain_1_aff_default" }
-        ],
-        "next": "lunch_dain_1_aff_default"
-    },
-    "lunch_dain_1_aff_high": {
         "character": "assets/images/characters/dain_laugh.png",
         "background": "assets/images/background/store.png",
-        "next": "lunch_dain_2"
-    },
-    "lunch_dain_1_aff_default": {
-        "character": "assets/images/characters/dain_normal.png",
-        "background": "assets/images/background/store.png",
+        "bgm": "daily2.mp3",
         "next": "lunch_dain_2"
     },
     "lunch_dain_2": {
@@ -488,21 +473,6 @@ Object.assign(SCENARIO[1], {
         "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
         "bgm": "night1.mp3",
-        "affinityChar": "Yuna",
-        "affinityBranches": [
-            { "minAffinity": 1, "next": "lunch_yuna_1_aff_high" },
-            { "minAffinity": 0, "next": "lunch_yuna_1_aff_default" }
-        ],
-        "next": "lunch_yuna_1_aff_default"
-    },
-    "lunch_yuna_1_aff_high": {
-        "character": "assets/images/characters/yuna_normal.png",
-        "background": "assets/images/background/library_old.png",
-        "next": "lunch_yuna_2"
-    },
-    "lunch_yuna_1_aff_default": {
-        "character": "assets/images/characters/yuna_normal.png",
-        "background": "assets/images/background/library_old.png",
         "next": "lunch_yuna_2"
     },
     "lunch_yuna_2": {

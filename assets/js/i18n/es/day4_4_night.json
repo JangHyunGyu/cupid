@@ -258,7 +258,7 @@
         "choices": [
             "...¿Puedo sentarme a tu lado?",
             "Puedes llorar. No tienes que fingir estar alegre. No conmigo.",
-            "...¿Quieres que te coloque una más? Una última vez."
+            "...Levantémonos. Una vez más."
         ]
     },
     "wall_dain_newdream_1": {
@@ -319,7 +319,7 @@
     },
     "wall_dain_lastspike_1": {
         "name": "Yo",
-        "text": "*Le hice la colocación.*"
+        "text": "*Le tendí la mano. Dain la tomó. Nos pusimos de pie. — Le hice la colocación.*"
     },
     "wall_dain_lastspike_2": {
         "name": "Yo",

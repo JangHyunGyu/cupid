@@ -141,6 +141,10 @@
             "大丈夫です、そろそろ帰ります"
         ]
     },
+    "hidden_nurse_d4_meal_walk": {
+        "name": "{name}",
+        "text": "*学校前の軽食屋に向かった。*"
+    },
     "hidden_nurse_d4_meal_1": {
         "name": "保健先生",
         "text": "辛い！これが生徒たちの食べるもの？！"

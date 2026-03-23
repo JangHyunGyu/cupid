@@ -277,7 +277,7 @@
     },
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*ユナの字。昨日より一文長くなった。*"
+        "text": "*ユナの字。昨日より一文長くなった。——裏に小さく「昼休みに図書館別館で。」*"
     },
     "morning2_greet_yuna_others": {
         "name": "{name}",

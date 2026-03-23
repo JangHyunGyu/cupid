@@ -258,7 +258,7 @@
         "choices": [
             "...Darf ich mich neben dich setzen?",
             "Du darfst weinen. Du musst nicht fröhlich tun. Nicht vor mir.",
-            "...Soll ich dir noch einmal zustellen? Ein letztes Mal."
+            "...Lass uns aufstehen. Noch einmal."
         ]
     },
     "wall_dain_newdream_1": {
@@ -319,7 +319,7 @@
     },
     "wall_dain_lastspike_1": {
         "name": "Ich",
-        "text": "*Ich stellte ihr zu.*"
+        "text": "*Ich streckte die Hand aus. Dain ergriff sie. Wir standen beide auf. — Ich stellte ihr zu.*"
     },
     "wall_dain_lastspike_2": {
         "name": "Ich",
