@@ -203,6 +203,14 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "branches": [
             {
+                "condition": "homeroom_day5",
+                "next": "ending_start"
+            },
+            {
+                "condition": "nurse_day5",
+                "next": "ending_start"
+            },
+            {
                 "condition": "day3_has_multiple_dates",
                 "excludeCondition": "day3_caught_multiple_dates",
                 "next": "after5_set_harem"

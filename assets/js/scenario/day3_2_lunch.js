@@ -122,7 +122,15 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_pout.png",
         "stats": { "Dain": { "affinity": -3 } },
-        "next": "lunch3_seo_witness_1"
+        "branches": [
+            {
+                "condition": "day3_has_multiple_dates",
+                "next": "lunch3_give_seo_3"
+            },
+            {
+                "next": "lunch3_seo_witness_1"
+            }
+        ]
     },
     // --- B-4: 다인이 목격하고 돌아감 → 주인공 대응 선택지 ---
     "lunch3_seo_witness_1": {

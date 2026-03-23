@@ -552,11 +552,15 @@
     },
     "wall_seo_pre_low_1": {
         "name": "Yo",
-        "text": "*Seoyeon guarda silencio. Tengo que ser yo quien hable primero.*"
+        "text": "*Seoyeon guarda silencio. Tengo que dar el primer paso.*"
+    },
+    "wall_seo_pre_low_1b": {
+        "name": "Yo",
+        "text": "*Le envié un mensaje. \"Seoyeon, ¿estás bien?\" — Un minuto. Leído. Sin respuesta. Entonces — suena mi teléfono.*"
     },
     "wall_seo_pre_low_2": {
         "name": "Seoyeon",
-        "text": "¿Puedes salir ahora? El parque. — Perdón, es repentino."
+        "text": "...Vi tu mensaje. ¿Puedes salir ahora? El parque. — Perdón, es repentino."
     },
     "wall_seo_mention_1": {
         "name": "Seoyeon",

@@ -65,7 +65,7 @@ Object.assign(SCENARIO[1], {
         "bgm": "sunset1.mp3",
         "affinityChar": "Seoyeon",
         "affinityBranches": [
-            { "minAffinity": 8, "next": "lunch_seo_1_aff_high" },
+            { "minAffinity": 5, "next": "lunch_seo_1_aff_high" },
             { "minAffinity": 0, "next": "lunch_seo_1_aff_default" }
         ],
         "next": "lunch_seo_1_aff_default"
@@ -290,7 +290,7 @@ Object.assign(SCENARIO[1], {
         "bgm": "daily2.mp3",
         "affinityChar": "Dain",
         "affinityBranches": [
-            { "minAffinity": 5, "next": "lunch_dain_1_aff_high" },
+            { "minAffinity": 1, "next": "lunch_dain_1_aff_high" },
             { "minAffinity": 0, "next": "lunch_dain_1_aff_default" }
         ],
         "next": "lunch_dain_1_aff_default"
@@ -490,7 +490,7 @@ Object.assign(SCENARIO[1], {
         "bgm": "night1.mp3",
         "affinityChar": "Yuna",
         "affinityBranches": [
-            { "minAffinity": 5, "next": "lunch_yuna_1_aff_high" },
+            { "minAffinity": 1, "next": "lunch_yuna_1_aff_high" },
             { "minAffinity": 0, "next": "lunch_yuna_1_aff_default" }
         ],
         "next": "lunch_yuna_1_aff_default"
