@@ -773,6 +773,9 @@ class GalleryData {
                 file: 'assets/images/background/ending_friend.png',
                 thumbnail: 'assets/images/background/ending_friend.png'
             },
+            { id: 'ending_true_seoyeon', name: '서연의 방', character: '서연', description: '서연의 방에서 나란히 앉아, 손끝이 닿을 듯 말 듯한 밤', file: 'assets/images/background/ending_true_seoyeon.png', thumbnail: 'assets/images/background/ending_true_seoyeon.png' },
+            { id: 'ending_true_yuna', name: '옥상의 별', character: '유나', description: '등을 맞대고 앉아 손을 잡은 채 야경을 바라보는 밤', file: 'assets/images/background/ending_true_yuna.png', thumbnail: 'assets/images/background/ending_true_yuna.png' },
+            { id: 'ending_true_dain', name: '다인의 낮잠', character: '다인', description: '체육관 벽에 기대 어깨에서 잠든 다인, 깨우지 않으려 가만히', file: 'assets/images/background/ending_true_dain.png', thumbnail: 'assets/images/background/ending_true_dain.png' },
             { id: 'ending_good_seoyeon', name: '공원의 두 사람', character: '서연', description: '해질녘 공원길을 나란히 걷는 두 사람, 손끝이 스칠 듯 말 듯', file: 'assets/images/background/ending_good_seoyeon.png', thumbnail: 'assets/images/background/ending_good_seoyeon.png' },
             { id: 'ending_good_yuna', name: '옥상의 침묵', character: '유나', description: '어두운 옥상에 나란히 앉아 하늘을 바라보는 두 사람', file: 'assets/images/background/ending_good_yuna.png', thumbnail: 'assets/images/background/ending_good_yuna.png' },
             { id: 'ending_good_dain', name: '교문 앞 인사', character: '다인', description: '석양 교문에서 장난스럽게 어깨를 치며 웃는 다인', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png' },

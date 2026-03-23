@@ -485,7 +485,7 @@ Object.assign(SCENARIO[5], {
         "next": "true_seo_bridge"
     },
     "true_seo_bridge": {
-        "background": "assets/images/background/seyoun_room.png",
+        "background": "assets/images/background/ending_true_seoyeon.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -545,7 +545,7 @@ Object.assign(SCENARIO[5], {
         "next": "true_yuna_bridge"
     },
     "true_yuna_bridge": {
-        "background": "assets/images/background/yuna_hideout.png",
+        "background": "assets/images/background/ending_true_yuna.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -612,7 +612,7 @@ Object.assign(SCENARIO[5], {
         "next": "true_dain_bridge"
     },
     "true_dain_bridge": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/ending_true_dain.png",
         "character": null,
         "night": true,
         "fade": true,
