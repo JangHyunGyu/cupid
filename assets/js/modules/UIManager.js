@@ -98,6 +98,42 @@ class UIManager {
 
         // 이미지 업로드 관련 이벤트 초기화
         this.bindImageUploadEvents();
+
+        // 모바일 가상키보드 추천바 분리 방지
+        this.setupMobileKeyboardFix();
+    }
+
+    /**
+     * 모바일 가상키보드 추천바(suggestion bar) 분리 방지
+     * Android Chrome에서 html/body가 overflow:hidden + height:100%일 때
+     * 키보드 추천바가 본체에서 분리되어 화면 중앙에 뜨는 버그 수정
+     */
+    setupMobileKeyboardFix() {
+        if (!window.visualViewport) return;
+
+        this._kbResize = () => {
+            if (document.activeElement?.matches('input, textarea')) {
+                const vvh = window.visualViewport.height;
+                document.documentElement.style.height = vvh + 'px';
+                document.body.style.height = vvh + 'px';
+            }
+        };
+
+        this._kbFocusIn = (e) => {
+            if (!e.target.matches('input, textarea')) return;
+            this._kbResize();
+            window.visualViewport.addEventListener('resize', this._kbResize);
+        };
+
+        this._kbFocusOut = (e) => {
+            if (!e.target.matches('input, textarea')) return;
+            window.visualViewport.removeEventListener('resize', this._kbResize);
+            document.documentElement.style.height = '';
+            document.body.style.height = '';
+        };
+
+        document.addEventListener('focusin', this._kbFocusIn);
+        document.addEventListener('focusout', this._kbFocusOut);
     }
 
     /**
