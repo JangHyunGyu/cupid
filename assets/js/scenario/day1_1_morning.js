@@ -118,7 +118,7 @@ Object.assign(SCENARIO[1], {
                 "next": "choice_flirt_1",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 5
+                        "affinity": 10
                     }
                 }
             },
@@ -126,7 +126,7 @@ Object.assign(SCENARIO[1], {
                 "next": "choice_joke_1",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 3
+                        "affinity": 7
                     }
                 }
             }

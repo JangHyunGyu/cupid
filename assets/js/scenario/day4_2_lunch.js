@@ -40,7 +40,7 @@ Object.assign(SCENARIO[4], {
                 "next": "date_seo_bright",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 5
+                        "affinity": 10
                     }
                 }
             }
@@ -51,7 +51,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/seyoun_shy.png",
         "stats": {
             "Seoyeon": {
-                "affinity": 10
+                "affinity": 18
             }
         },
         "next": "date_seo_pretty_high_2"
@@ -76,7 +76,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/seyoun_shy.png",
         "stats": {
             "Seoyeon": {
-                "affinity": 3
+                "affinity": 7
             }
         },
         "next": "date_seo_walk"
@@ -178,7 +178,7 @@ Object.assign(SCENARIO[4], {
                 "next": "date_yuna_bright",
                 "stats": {
                     "Yuna": {
-                        "affinity": 5
+                        "affinity": 10
                     }
                 }
             }
@@ -189,7 +189,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/yuna_shy.png",
         "stats": {
             "Yuna": {
-                "affinity": 10
+                "affinity": 18
             }
         },
         "next": "date_yuna_pretty_high_2"
@@ -219,7 +219,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/yuna_shy.png",
         "stats": {
             "Yuna": {
-                "affinity": 3
+                "affinity": 7
             }
         },
         "next": "date_yuna_bookstore"
@@ -319,7 +319,7 @@ Object.assign(SCENARIO[4], {
                 "next": "date_dain_bright",
                 "stats": {
                     "Dain": {
-                        "affinity": 5
+                        "affinity": 10
                     }
                 }
             },
@@ -337,7 +337,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/dain_shy.png",
         "stats": {
             "Dain": {
-                "affinity": 10
+                "affinity": 18
             }
         },
         "next": "date_dain_pretty_high_2"
@@ -362,7 +362,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/dain_shy.png",
         "stats": {
             "Dain": {
-                "affinity": 3
+                "affinity": 7
             }
         },
         "next": "date_dain_to_arcade"

@@ -164,7 +164,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_seo_choice1",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 10
+                        "affinity": 18
                     }
                 }
             },
@@ -172,7 +172,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_seo_choice2",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 5
+                        "affinity": 10
                     }
                 }
             }
@@ -277,7 +277,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_yuna_choice1",
                 "stats": {
                     "Yuna": {
-                        "affinity": 8
+                        "affinity": 16
                     }
                 }
             },
@@ -285,7 +285,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_yuna_choice2",
                 "stats": {
                     "Yuna": {
-                        "affinity": 10
+                        "affinity": 18
                     }
                 }
             }
@@ -387,7 +387,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_dain_choice1",
                 "stats": {
                     "Dain": {
-                        "affinity": 10
+                        "affinity": 18
                     }
                 }
             },
@@ -395,7 +395,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_dain_choice2",
                 "stats": {
                     "Dain": {
-                        "affinity": 5
+                        "affinity": 10
                     }
                 }
             }

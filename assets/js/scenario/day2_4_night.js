@@ -138,7 +138,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/room_my.png",
         "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
-        "stats": { "Dain": { "affinity": 3 } },
+        "stats": { "Dain": { "affinity": 7 } },
         "next": "night2_reply_dain_2"
     },
     "night2_reply_dain_2": {
@@ -174,7 +174,7 @@ Object.assign(SCENARIO[2], {
         "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
-        "stats": { "Dain": { "affinity": 2 } },
+        "stats": { "Dain": { "affinity": 6 } },
         "setFlags": ["night2_replied_dain"],
         "next": "night2_dain_freetalk"
     },
@@ -189,7 +189,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/room_my.png",
         "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
-        "stats": { "Seoyeon": { "affinity": 3 } },
+        "stats": { "Seoyeon": { "affinity": 7 } },
         "next": "night2_reply_seo_2"
     },
     "night2_reply_seo_2": {
@@ -225,7 +225,7 @@ Object.assign(SCENARIO[2], {
         "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
-        "stats": { "Seoyeon": { "affinity": 2 } },
+        "stats": { "Seoyeon": { "affinity": 6 } },
         "setFlags": ["night2_replied_seo"],
         "next": "night2_seo_freetalk"
     },
@@ -240,7 +240,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/room_my.png",
         "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
-        "stats": { "Yuna": { "affinity": 3 } },
+        "stats": { "Yuna": { "affinity": 7 } },
         "next": "night2_reply_yuna_2"
     },
     "night2_reply_yuna_2": {
@@ -288,7 +288,7 @@ Object.assign(SCENARIO[2], {
         "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
-        "stats": { "Yuna": { "affinity": 2 } },
+        "stats": { "Yuna": { "affinity": 6 } },
         "setFlags": ["night2_replied_yuna"],
         "next": "night2_yuna_freetalk"
     },
