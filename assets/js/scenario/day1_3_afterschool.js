@@ -326,7 +326,7 @@ Object.assign(SCENARIO[1], {
             },
             {
                 "next": "after_homeroom_honest_1",
-                "stats": { "Teacher": { "affinity": 27 } }
+                "stats": { "Teacher": { "affinity": 12 } }
             }
         ]
     },
@@ -417,7 +417,7 @@ Object.assign(SCENARIO[1], {
         "choices": [
             {
                 "next": "after_nurse_enter_1",
-                "stats": { "Nurse": { "affinity": 27 } }
+                "stats": { "Nurse": { "affinity": 19 } }
             },
             {
                 "next": "after_nurse_skip",
