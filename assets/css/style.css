@@ -11,15 +11,25 @@
 }
 
 /* 기본 문서 구조 설정 */
-body,
 html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* 스크롤 방지 */
+    /* html에서 오버플로 차단 */
     background-color: #000;
     font-family: 'Pretendard', sans-serif;
     /* 가독성 좋은 프리텐다드 서체 사용 */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overscroll-behavior: none;
+    /* body는 overflow:auto — 모바일 가상키보드 추천바 분리 방지 */
+    /* overscroll-behavior:none — 바운스/새로고침 방지 */
+    background-color: #000;
+    font-family: 'Pretendard', sans-serif;
 }
 
 /* ==========================================================================
