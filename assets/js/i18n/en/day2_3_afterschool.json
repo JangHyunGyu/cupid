@@ -78,15 +78,43 @@
     },
     "after2_dain_end": {
         "name": "Me",
-        "text": "*Her eyes are half-moon shaped. Same eyes as yesterday. — That's how this person looks when she's genuinely having fun.*\n\n*At the tteokbokki place near school.*\n\n*Dain blows on her tteokbokki and says,*\nHey, you actually know sports, don't you?"
+        "text": "*Her eyes are half-moon shaped. Same eyes as yesterday. — That's how this person looks when she's genuinely having fun.*\n\n*At the tteokbokki place near school.*\n\n*Dain blows on her tteokbokki and says —*"
     },
     "after2_dain_end_2": {
-        "name": "Me",
-        "text": "A little.\n\nA 'little' doesn't play like that! — Just admit it, you're good.\n\n{name} was way better though."
+        "name": "Dain",
+        "text": "Hey, you actually know sports, don't you?"
+    },
+    "after2_dain_end_2b": {
+        "name": "{name}",
+        "text": "A little."
+    },
+    "after2_dain_end_2c": {
+        "name": "Dain",
+        "text": "A 'little' doesn't play like that! — Just admit it, you're good."
+    },
+    "after2_dain_end_2d": {
+        "name": "{name}",
+        "text": "{name} was way better though."
     },
     "after2_dain_end_3": {
         "name": "Me",
-        "text": "*Dain pauses her chopsticks. Just for a moment.*\n\n...Obviously! I was a sports scholarship student, you know!\n\n*'Was.' Past tense. — Something tells me it's better not to ask.*\n\nAhh it's so spicy!! Water, water!!\n\n*The topic changed. — Whether she changed it on purpose or it was actually spicy. Probably both.*"
+        "text": "*Dain pauses her chopsticks. Just for a moment.*"
+    },
+    "after2_dain_end_3b": {
+        "name": "Dain",
+        "text": "...Obviously! I was a sports scholarship student, you know!"
+    },
+    "after2_dain_end_3c": {
+        "name": "Me",
+        "text": "*'Was.' Past tense. — Something tells me it's better not to ask.*"
+    },
+    "after2_dain_end_3d": {
+        "name": "Dain",
+        "text": "Ahh it's so spicy!! Water, water!!"
+    },
+    "after2_dain_end_3e": {
+        "name": "Me",
+        "text": "*The topic changed. — Whether she changed it on purpose or it was actually spicy. Probably both.*"
     },
     "after2_seo_1": {
         "name": "Me",
@@ -118,11 +146,35 @@
     },
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "These go by date, those by club. — Are you any good at organizing?\"\n\n\"{name}: Not great, but not bad either.\"\n\n\"That's vague.\"\n\n\"{name}: Kind of like your compliments. You're vague about those too.\""
+        "text": "These go by date, those by club. — Are you any good at organizing?"
+    },
+    "after2_seo_8a2": {
+        "name": "{name}",
+        "text": "Not great, but not bad either."
+    },
+    "after2_seo_8a3": {
+        "name": "Seoyeon",
+        "text": "That's vague."
+    },
+    "after2_seo_8a4": {
+        "name": "{name}",
+        "text": "Kind of like your compliments. You're vague about those too."
     },
     "after2_seo_8b": {
+        "name": "Me",
+        "text": "*Seoyeon looks up from the documents.*"
+    },
+    "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon looks up from the documents.*\n\n\"...You're surprisingly useful.\"\n\n\"{name}: Is that a compliment?\"\n\n\"It's a compliment. Take it."
+        "text": "...You're surprisingly useful."
+    },
+    "after2_seo_8b3": {
+        "name": "{name}",
+        "text": "Is that a compliment?"
+    },
+    "after2_seo_8b4": {
+        "name": "Seoyeon",
+        "text": "It's a compliment. Take it."
     },
     "after2_seo_choice1": {
         "name": "Me",
@@ -148,6 +200,26 @@
         "name": "Me",
         "text": "*Seoyeon rolls her shoulders. I hear them crack.*"
     },
+    "after2_seo_neck_touch": {
+        "name": "Seoyeon",
+        "text": "It's really stiff. Hold still for a sec.\n\n*Seoyeon gets up and comes behind me. She places her hands on my shoulders.*"
+    },
+    "after2_seo_neck_high": {
+        "name": "Me",
+        "text": "*I close my eyes and lean into it.*"
+    },
+    "after2_seo_neck_high_2": {
+        "name": "Seoyeon",
+        "text": "*Quietly* ...I didn't know your hands were this warm.\n\n*Whose hands? -- Her hands are on my shoulders, not the other way around. Her words got mixed up. That's how nervous she is.*"
+    },
+    "after2_seo_neck_low": {
+        "name": "Me",
+        "text": "*I pull back slightly.*\n\nWhat are you doing all of a sudden."
+    },
+    "after2_seo_neck_low_2": {
+        "name": "Seoyeon",
+        "text": "*Pulling her hands back* ...It's nothing.\n\n*Her expression freezes for half a second. -- Then she smiles right away. Perfectly.*"
+    },
     "after2_seo_9": {
         "name": "Me",
         "text": "*The sunset washes over the student council room. The paperwork is almost done.*"
@@ -170,7 +242,15 @@
     },
     "after2_seo_stay_3": {
         "name": "{name}",
-        "text": "Even the student council president gets to rest?\n\nSeoyeon: Never. — Except here.\n\n*'Except here.' — Whether it's the rooftop or the student council room, Seoyeon is someone who needs a place where she can take off the mask.*"
+        "text": "Even the student council president gets to rest?"
+    },
+    "after2_seo_stay_3b": {
+        "name": "Seoyeon",
+        "text": "Never. — Except here."
+    },
+    "after2_seo_stay_3c": {
+        "name": "Me",
+        "text": "*'Except here.' — Whether it's the rooftop or the student council room, Seoyeon is someone who needs a place where she can take off the mask.*"
     },
     "after2_seo_leave": {
         "name": "Me",
@@ -210,15 +290,39 @@
     },
     "after2_yuna_8": {
         "name": "Yuna",
-        "text": "...By coincidence.\n\n*A door open by coincidence. — Yuna's 'by coincidence' is synonymous with 'on purpose.'*\n\n*I sit beside her. Yuna hands me one of her earbuds.*\n\nListen.\n\n*A quiet piano piece begins to play. The sunset is painting the room.*"
+        "text": "...By coincidence."
+    },
+    "after2_yuna_8b": {
+        "name": "Me",
+        "text": "*A door open by coincidence. — Yuna's 'by coincidence' is synonymous with 'on purpose.'*\n\n*I sit beside her. Yuna hands me one of her earbuds.*"
+    },
+    "after2_yuna_8c": {
+        "name": "Yuna",
+        "text": "Listen."
+    },
+    "after2_yuna_8d": {
+        "name": "Me",
+        "text": "*A quiet piano piece begins to play. The sunset is painting the room.*"
     },
     "after2_yuna_9": {
         "name": "Me",
         "text": "*Yuna reads her book, and I listen to the music. No words. — Not uncomfortable at all.*"
     },
-    "after2_yuna_choice": {
+    "after2_yuna_choice_pre1": {
         "name": "Yuna",
-        "text": "*After a long while* ...Someone who comes here after school.\n\n{name}: Hm?\n\nThere hasn't been one since that sunbae.\n\n*Yuna said two sentences. — For her, that's the same as 'thank you.'*",
+        "text": "*After a long while* ...Someone who comes here after school."
+    },
+    "after2_yuna_choice_pre2": {
+        "name": "{name}",
+        "text": "Hm?"
+    },
+    "after2_yuna_choice_pre3": {
+        "name": "Yuna",
+        "text": "There hasn't been one since that sunbae."
+    },
+    "after2_yuna_choice": {
+        "name": "Me",
+        "text": "*Yuna said two sentences. — For her, that's the same as 'thank you.'*",
         "choices": [
             "Should I come every day?",
             "It's nice because it's quiet"

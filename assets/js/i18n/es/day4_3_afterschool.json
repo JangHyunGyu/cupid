@@ -24,7 +24,7 @@
         "text": "*Tengo las puntas de los dedos frías. No hay viento. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
         "choices": [
             "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
-            "...Esta vista es realmente hermosa."
+            "...Hace buen viento."
         ]
     },
     "confess_seo_yes_1": {
@@ -77,7 +77,7 @@
     },
     "confess_seo_no_1": {
         "name": "Yo",
-        "text": "...Esta azotea es realmente bonita."
+        "text": "...Hace buen viento."
     },
     "confess_seo_no_2": {
         "name": "Yo",
@@ -196,7 +196,7 @@
         "text": "*El suelo del gimnasio parece temblar. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
         "choices": [
             "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
-            "...Este lugar es realmente grande."
+            "...Jugamos otra ronda?"
         ]
     },
     "confess_dain_yes_1": {
@@ -241,7 +241,7 @@
     },
     "confess_dain_no_1": {
         "name": "Yo",
-        "text": "...Este lugar es realmente grande."
+        "text": "...Jugamos otra ronda?"
     },
     "confess_dain_no_2": {
         "name": "Yo",

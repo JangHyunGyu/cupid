@@ -24,7 +24,7 @@
         "text": "*Le bout de mes doigts est glacé. Il n'y a pas de vent. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
         "choices": [
             "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
-            "...Cette vue est vraiment magnifique."
+            "...Il y a du bon vent."
         ]
     },
     "confess_seo_yes_1": {
@@ -77,7 +77,7 @@
     },
     "confess_seo_no_1": {
         "name": "Moi",
-        "text": "...Ce toit est vraiment beau."
+        "text": "...Il y a du bon vent."
     },
     "confess_seo_no_2": {
         "name": "Moi",
@@ -196,7 +196,7 @@
         "text": "*Le sol du gymnase semble trembler. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
         "choices": [
             "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
-            "...Cet endroit est vraiment grand."
+            "...On refait une partie ?"
         ]
     },
     "confess_dain_yes_1": {
@@ -241,7 +241,7 @@
     },
     "confess_dain_no_1": {
         "name": "Moi",
-        "text": "...Cet endroit est vraiment grand."
+        "text": "...On refait une partie ?"
     },
     "confess_dain_no_2": {
         "name": "Moi",

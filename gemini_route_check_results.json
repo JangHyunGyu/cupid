@@ -1,0 +1,172 @@
+{
+  "day1": {
+    "day": 1,
+    "pass": false,
+    "routes_checked": [
+      "아침 공통 루트 (서연 만남 및 교실)",
+      "점심 서연 루트 (옥상)",
+      "점심 다인 루트 (매점)",
+      "점심 유나 루트 (도서관 - JS 코드 일부 누락)",
+      "방과후 엇갈림 이벤트 및 히든 루트 (담임/보건 - 텍스트 기반 검증)",
+      "밤 메신저 이벤트 (텍스트 기반 검증)"
+    ],
+    "issues": [
+      {
+        "route": "전체 / 시스템",
+        "node_id": "day1_2_lunch.js (lunch_yuna_8 이후)",
+        "severity": "high",
+        "description": "제공된 시나리오 JS 코드가 `lunch_yuna_8` 노드에서 중간에 끊겨 있습니다. 이로 인해 유나 점심 루트의 후반부, 방과후 루트(히든 포함), 밤 루트의 라우팅 로직 및 플래그/호감도 정합성을 검증할 수 없습니다.",
+        "suggested_fix": "누락된 JS 라우팅 코드를 추가하여 분기 및 플래그(homeroom_day1, nurse_day1 등)가 정상적으로 작동하는지 확인해야 합니다."
+      },
+      {
+        "route": "방과후 공통 (엇갈림 이벤트)",
+        "node_id": "SCENARIO.md 설계 문서",
+        "severity": "high",
+        "description": "설계 문서상 방과후에 다인/유나를 만나면 `[플래그: met_dain = true]`, `[met_yuna = true]`를 설정한다고 되어 있으나, 이 플래그들은 이미 아침 교실 씬(`classroom_yuna_note_6`)에서 true로 설정되었습니다. 이미 만난 상태이므로 논리적 모순이 발생합니다.",
+        "suggested_fix": "방과후 엇갈림 이벤트의 플래그를 `met_dain`이 아닌 `afterschool_encounter_dain` 등으로 변경하거나, 점심 선택 여부를 확인하는 기존 플래그(`chose_dain_lunch`가 false인지)만 조건으로 사용하도록 설계를 수정해야 합니다."
+      },
+      {
+        "route": "점심 유나 루트",
+        "node_id": "lunch_yuna_24, lunch_yuna_26",
+        "severity": "medium",
+        "description": "설계 문서에서는 유나가 \"좋았어.\"라고 명확히 말하고 주인공이 그 짧은 문장에 여운을 느끼는 것이 핵심 감정선입니다. 하지만 JSON 대사에서는 유나가 \"......\"(lunch_yuna_24)으로 침묵하고, 주인공도 \"말을 삼켰다\"(lunch_yuna_26)로 변경되어 씬의 핵심 의도와 보상(호감도 상승에 따른 데레)이 훼손되었습니다.",
+        "suggested_fix": "lunch_yuna_24의 텍스트를 \"좋았어.\"로 수정하고, lunch_yuna_26의 텍스트를 \"*'좋았어.' — 유나의 문장은 짧다. 근데 그 한마디가 왠지 오래 남는다.*\"로 설계 문서와 동일하게 복구할 것을 권장합니다."
+      },
+      {
+        "route": "아침 서연 루트",
+        "node_id": "choice_flirt_2",
+        "severity": "low",
+        "description": "설계 문서에서는 서연이 \"흥미 +1.\"이라고 말하며 독특한 캐릭터성을 보여주지만, JSON 대사에서는 \"기록해 둘게.\"로 평범하게 변경되었습니다.",
+        "suggested_fix": "캐릭터의 개성을 살리기 위해 JSON의 대사를 \"와. 첫날부터 이런 사람은 처음이네. 흥미 +1.\"로 원복하는 것을 제안합니다."
+      }
+    ],
+    "summary": "전반적인 대사의 흐름과 선택지 구조는 기획 의도를 잘 반영하고 있으나, JS 라우팅 코드가 절반 이상 누락되어 시스템적 검증이 불가능한 상태입니다. 또한 기획서 내의 플래그 논리 오류(아침에 이미 만난 캐릭터의 첫 만남 플래그를 방과후에 다시 부여)와 유나 루트의 핵심 대사 누락 등 감정선을 해치는 텍스트 불일치가 존재하여 수정이 필요합니다."
+  },
+  "day2": {
+    "day": 2,
+    "pass": false,
+    "routes_checked": [
+      "아침 공통",
+      "아침 히든(담임)",
+      "점심 유나(도서관 별관)",
+      "점심 서연(옥상)",
+      "점심 다인(매점)",
+      "방과후 다인(체육관)",
+      "방과후 서연(학생회실)",
+      "방과후 유나(도서관 별관)",
+      "방과후 공통(민수 경고)",
+      "밤 메신저 및 회상"
+    ],
+    "issues": [
+      {
+        "route": "아침 공통 / 아침 히든(담임)",
+        "node_id": "morning2_start_2",
+        "severity": "high",
+        "description": "JS 라우팅 논리 오류. morning2_start_2에서 homeroom_day1 조건이 true일 경우 hidden_homeroom_d2_1로 분기하는데, 이로 인해 다인의 아침 인사, 유나의 쪽지 획득, 서연의 아침 인사 등 중요한 아침 공통 이벤트가 통째로 스킵되는 심각한 흐름 단절이 발생합니다.",
+        "suggested_fix": "담임 호출 분기점(branches)을 morning2_start_2가 아닌, 1교시가 끝나는 시점인 morning2_break_1 노드로 이동시켜야 합니다."
+      },
+      {
+        "route": "아침 히든(담임)",
+        "node_id": "hidden_homeroom_d2_12",
+        "severity": "medium",
+        "description": "SCENARIO.md 설계 문서에는 교무실 이벤트 종료 시 [플래그: homeroom_day2 = true, noticed_manuscript = true] 두 가지를 설정하도록 되어 있으나, JS 코드에서는 setFlag에 'homeroom_day2'만 설정되어 있습니다.",
+        "suggested_fix": "hidden_homeroom_d2_12의 setFlag를 배열이나 객체 형태로 변경하여 'noticed_manuscript' 플래그도 함께 부여하도록 수정해야 합니다."
+      },
+      {
+        "route": "방과후 다인 / 서연 / 유나",
+        "node_id": "after2_dain_end_2, after2_seo_8, after2_yuna_8 등",
+        "severity": "high",
+        "description": "i18n JSON 대사 포맷 오류. 비주얼 노벨 엔진은 1노드 1대사가 원칙이나, 해당 노드들은 두 명 이상의 캐릭터가 주고받는 대사가 '\\n\\n'으로 묶여 하나의 text 값에 하드코딩되어 있습니다. (예: \"{name}: 잘하진 않는데...\\n\\n애매하네.\")",
+        "suggested_fix": "대화가 오가는 부분은 반드시 개별 노드(after2_seo_8_1, after2_seo_8_2 등)로 분리하여 각각의 character와 text를 매핑해야 합니다."
+      },
+      {
+        "route": "방과후 서연",
+        "node_id": "after2_seo_choice1 (선택지 2번)",
+        "severity": "medium",
+        "description": "SCENARIO.md에는 '목 아파? 쉬면서 해' 선택 시 [호감 50 이상]과 [호감 50 미만]에 따른 서연의 반응(손이 따뜻하다 vs 몸을 뺀다) 분기가 명시되어 있으나, JSON 대사 파일에는 해당 호감도 분기를 처리할 대사 노드가 누락되어 있습니다.",
+        "suggested_fix": "after2_seo_neck_react 이후 호감도 조건에 따라 분기하는 JS 로직을 추가하고, JSON에 after2_seo_neck_high_affinity, after2_seo_neck_low_affinity 대사 노드를 추가해야 합니다."
+      },
+      {
+        "route": "밤 메신저",
+        "node_id": "night2_msg_dain_specific 등",
+        "severity": "low",
+        "description": "방과후에 누구와 시간을 보냈는지에 따라 특정 메시지(specific)와 범용 메시지(general)가 조합되어야 합니다. JSON에는 대사가 잘 준비되어 있으나, JS 라우팅 시 방과후 선택 플래그(chose_dain_after2 등)를 엄격하게 체크하지 않으면 다인과 체육관에 가지 않았는데 떡볶이 이야기를 하는 논리적 모순이 발생할 위험이 큽니다.",
+        "suggested_fix": "누락된 day2_4_night.js 작성 시, 방과후 루트 플래그를 condition으로 체크하여 메시지 노드를 동적으로 조합(배열 push 등)하는 로직을 확실히 구현해야 합니다."
+      }
+    ],
+    "summary": "전반적인 캐릭터의 성격 일관성과 감정선(특히 주인공의 과거 회상과 맞물리는 민수의 경고 씬)은 설계 문서대로 훌륭하게 구현되었습니다. 점심시간의 복잡한 조건부 합류(Day 1 선택지에 따른 대사 변화)도 JS와 JSON에 정확히 반영되었습니다. 다만, 아침 교무실 히든 루트 진입 시 공통 스크립트가 통째로 스킵되는 치명적인 라우팅 오류와 방과후 JSON 대사 파일의 다중 대화 병합(하드코딩) 문제는 게임 플레이에 직접적인 버그를 유발하므로 즉각적인 수정이 필요합니다."
+  },
+  "day3": {
+    "raw": "```json\n{\n  \"day\": 3,\n  \"pass\": false,\n  \"routes_checked\": [\n    \"아침 등교 분기 (서연/유나/다인)\",\n    \"주말 데이트 제안 및 복수 수락 플래그 (day3_has_multiple_dates)\",\n    \"히든 루트 (담임선생님, 보건선생님)\",\n    \"점심 반찬 선택 및 양다리 발각 씬\",\n    \"방과후 단독 이벤트 (서연/유나/다인)\",\n    \"방과후 양다리 대질 씬\",\n    \"밤 메시지 및 악몽 씬\"\n  ],\n  \"issues\": [\n    {\n      \"route\": \"아침 등교 및 히든 루트\",\n      \"node_id\": \"morning3_start_2\",\n      \"severity\": \"high\",\n      \"description\": \"homeroom_day2 조건이 참일 경우 hidden_homeroom_d3_1로 분기한 뒤, 아침 등교 씬(morning3_gate_branch)을 통째로 스킵하고 바로 데이트 제안(morning3_date_seo_1)으로 넘어가는 치명적인 라우팅 오류가 있습니다.\",\n      \"suggested_fix\": \"morning3_start_2에서는 무조건 morning3_gate_branch로 이동하게 하고, 아침 등교 씬이 끝난 후(morning3_date_intro 이전)에 히든 이벤트 조건을 체크하도록 라우팅 구조를 변경해야 합니다.\"\n    },\n    {\n      \"route\": \"점심 씬\",\n      \"node_id\": \"lunch3_share_1\",\n      \"severity\": \"medium\",\n      \"description\": \"SCENARIO.md에는 양다리가 아닐 때 '다 같이 나눠 먹자'를 선택하면 lunch3_share_bittersweet 씬으로 분기하여 미선택 캐릭터의 씁쓸한 인정 씬이 나와야 한다고 명시되어 있으나, JS 코드에는 해당 분기가 누락되어 무조건 lunch3_end로 이동합니다.\",\n      \"suggested_fix\": \"lunch3_share_1 노드에서 양다리가 아닐 경우 lunch3_share_bittersweet 노드로 분기하도록 JS 코드를 추가 구현해야 합니다.\"\n    },\n    {\n      \"route\": \"아침 등교 씬 (다인)\",\n      \"node_id\": \"morning3_dain_gate_4 ~ 5\",\n      \"severity\": \"low\",\n      \"description\": \"SCENARIO.md에 있는 다인의 대사 '이렇게 해야 빨라!! 의문 품지 마!!'가 JSON 파일에 누락되어 있습니다.\",\n      \"suggested_fix\": \"day3_1_morning.json에 해당 다인의 대사를 추가해야 합니다.\"\n    },\n    {\n      \"route\": \"점심 양다리 발각 씬\",\n      \"node_id\": \"lunch3_expose_honest_7\",\n      \"severity\": \"medium\",\n      \"description\": \"'미안해' 선택 시 다인이 '나도 좀 생각할 시간 줘.'라고 말하는 대사가 JSON에 누락되어 있고 독백만 존재합니다.\",\n      \"suggested_fix\": \"day3_2_lunch.json의 lunch3_expose_honest_7에 다인의 대사를 추가해야 합니다.\"\n    },\n    {\n      \"route\": \"방과후 씬 (서연)\",\n      \"node_id\": \"after3_seo_choice2\",\n      \"severity\": \"low\",\n      \"description\": \"선택지 1('완벽하지 않아도 괜찮은데')의 후속 독백이 SCENARIO.md('새끼손가락이 책상 위에서 가볍게 움직인다...')와 JSON('눈이 촉촉하다...')이 다르게 작성되어 있습니다.\",\n      \"suggested_fix\": \"JSON의 독백을 SCENARIO.md의 기획 의도에 맞게 수정해야 합니다.\"\n    },\n    {\n      \"route\": \"방과후 씬 (서연)\",\n      \"node_id\": \"after3_seo_end_c2\",\n      \"severity\": \"medium\",\n      \"description\": \"선택지 2('비밀 지켜줄게') 선택 시 이어지는 서연과 주인공의 티키타카 대사('고마워', '비밀은 잘 지켜', '나도 네 비밀 하나 알고 있어...')가 JSON에 통째로 누락되어 있습니다.\",\n      \"suggested_fix\": \"day3_3_afterschool.json에 누락된 대사 노드들을 추가해야 합니다.\"\n    },\n    {\n      \"route\": \"방과후 씬 (유나)\",\n      \"node_id\": \"after3_yuna_choice2_2 ~ 3\",\n      \"severity\": \"low\",\n      \"description\": \"선택지 2('결말은 어떻게"
+  },
+  "day4": {
+    "day": 4,
+    "pass": false,
+    "routes_checked": [
+      "아침 공통 및 히든 이벤트(담임/보건)",
+      "점심 데이트(서연/유나/다인)",
+      "방과후 고백 분기(서연/유나/다인 - 진행/보류)",
+      "밤 벽허물기 이벤트(서연/다인/유나)"
+    ],
+    "issues": [
+      {
+        "route": "방과후(고백) -> 밤(보류 루트)",
+        "node_id": "day4_night_regret_msg",
+        "severity": "high",
+        "description": "SCENARIO.md에는 고백 보류 시 밤에 캐릭터별로 아쉬움을 나타내는 메시지(day4_night_regret_msg)가 기획되어 있으나, 제공된 day4_4_night.json에는 해당 대사 데이터가 완전히 누락되어 있습니다. day4_night_start 이후 바로 wall_seo_1로 넘어갑니다.",
+        "suggested_fix": "day4_4_night.json에 서연('오늘 바람 좋았어...'), 다인('뭔가 빠진 거 없어?'), 유나('...오늘 괜찮았어')의 regret 메시지 노드를 추가하고, JS 라우팅에서 day4_waited 플래그가 true일 때 해당 노드를 거치도록 수정해야 합니다."
+      },
+      {
+        "route": "방과후(고백)",
+        "node_id": "confess_seo_choice, confess_dain_choice",
+        "severity": "medium",
+        "description": "SCENARIO.md의 기획과 JSON의 고백 보류 선택지 텍스트가 불일치합니다. 기획서에는 서연('...바람 좋다'), 다인('...한 판 더 할까?')로 되어 있으나, JSON에는 서연('...이 풍경 진짜 예쁘다'), 다인('...여기 진짜 넓다')로 작성되어 있어 기획 의도(Day 1 콜백 및 캐릭터 특성 반영)가 희석되었습니다.",
+        "suggested_fix": "JSON의 선택지 텍스트를 SCENARIO.md 기획에 맞게 '...바람 좋다', '...한 판 더 할까?'로 수정하여 감정선과 콜백 요소를 살려야 합니다."
+      },
+      {
+        "route": "밤(벽허물기) - 유나",
+        "node_id": "wall_yuna_glimpse_2",
+        "severity": "low",
+        "description": "제공된 day4_4_night.json 파일의 끝부분(wall_yuna_glimpse_2)이 텍스트 작성 도중 잘려 있습니다(Incomplete JSON).",
+        "suggested_fix": "잘린 JSON 데이터를 완성하고 문법 오류가 없도록 닫는 괄호를 확인해야 합니다."
+      }
+    ],
+    "summary": "전반적인 감정선의 고조(데이트->고백->벽허물기)와 캐릭터별 디테일(다인의 느낌표 소멸, 유나의 문장 길이 변화, 다인이 이미 앉아있는 물리적 상태 반영 등)은 기획 의도에 맞게 매우 훌륭하게 구현되었습니다. 선택지에 따른 즉각 반응 노드나 플래그 조건(homeroom_day3 등)도 정확히 작동합니다. 다만, 고백 보류 시 발생하는 '밤 메시지(Regret)' 데이터가 JSON에서 누락된 점과 일부 선택지 텍스트가 기획서의 콜백 의도를 살리지 못한 점이 발견되어 수정이 필요합니다."
+  },
+  "day5": {
+    "day": 5,
+    "pass": false,
+    "routes_checked": [
+      "아침 공통 및 히든 루트(담임/보건) 조건부 진입",
+      "점심 추억의 장소 투어 (서연/유나/다인 및 과거 선택지 연동 분기)",
+      "방과후 미선택 캐릭터 작별 인사 (루트별 스킵 로직)",
+      "방과후 히든 루트 전용 독백 스킵 로직",
+      "방과후 마지막 고백 기회 (after5_last_chance_choice)",
+      "엔딩 분기 우선순위 (ending_start)"
+    ],
+    "issues": [
+      {
+        "route": "밤(엔딩) 공통",
+        "node_id": "day5_4_night.js",
+        "severity": "high",
+        "description": "제공된 JS 코드가 `true_yuna_7` 노드의 `\"character\": \"assets/images/chara` 부분에서 물리적으로 잘려 있습니다. 이로 인해 유나 트루 엔딩 후반부, 다인 트루 엔딩, 에필로그, Good, Mayhem, Harem, Friend, Alone 및 히든 엔딩들의 라우팅 로직이 완전히 누락되어 게임이 멈추게 됩니다.",
+        "suggested_fix": "잘린 JS 코드를 복구하여 SCENARIO.md와 JSON에 정의된 모든 엔딩 노드(true_dain_1, good_1, mayhem_1 등)의 라우팅 구조를 완성해야 합니다."
+      },
+      {
+        "route": "엔딩 분기 (Harem / Mayhem)",
+        "node_id": "ending_start",
+        "severity": "high",
+        "description": "Harem 엔딩과 Mayhem 엔딩의 분기 우선순위가 Good 엔딩(`day4_confession_accepted`)보다 낮게 설정되어 있습니다. 하렘/양다리 루트를 탄 플레이어는 Day 4에서 고백을 수락했을 것이므로, 현재 로직대로라면 파국(Harem/Mayhem) 엔딩 대신 Good 엔딩으로 빠지게 되는 심각한 논리적 오류가 발생합니다.",
+        "suggested_fix": "`ending_start` 노드의 branches 배열에서 `ending_harem` 조건과 `day3_has_multiple_dates` 조건을 `day4_confession_accepted` 조건보다 상단으로 배치하여 배드 엔딩 판정 우선순위를 높여야 합니다."
+      },
+      {
+        "route": "방과후 작별 인사",
+        "node_id": "after5_farewell_seo_2 ~ 6 등",
+        "severity": "low",
+        "description": "`after5_start`에서 이미 `route_seoyeon`인 경우 서연의 작별 인사를 스킵하고 유나 체크로 넘어가도록 라우팅되어 있습니다. 따라서 하위 대사 노드들에 설정된 `excludeCondition: \"route_seoyeon\"`은 도달할 수 없는 상태에서의 중복 검사입니다. (유나, 다인 루트도 동일)",
+        "suggested_fix": "기능상 오류를 일으키지는 않으나, 코드 가독성과 최적화를 위해 하위 대사 노드들의 불필요한 `excludeCondition`을 제거하는 것을 권장합니다."
+      }
+    ],
+    "summary": "전반적인 시나리오 흐름과 대사 매핑은 기획서와 완벽하게 일치하며, 히든 루트 진입 시 작별 인사 스킵이나 마지막 고백 기회 등 복잡한 분기 설계가 훌륭하게 구현되었습니다. 다만 day5_4_night.js 파일이 중간에 잘려 있어 엔딩부 진행이 불가능한 치명적인 문제가 있으며, Harem/Mayhem 엔딩의 분기 우선순위가 Good 엔딩보다 낮아 파국 엔딩 진입이 막히는 논리적 오류가 발견되어 반드시 수정이 필요합니다."
+  }
+}
