@@ -13,7 +13,7 @@
     },
     "start_3b": {
         "name": "Moi",
-        "text": "*Mon coeur bat vite. Je ne veux pas l'admettre, mais je suis tendu. Mes doigts tripotent mon téléphone au fond de la poche. — Un réflexe. Quand l'anxiété monte.*"
+        "text": "*Mes doigts tripotent le bord du téléphone au fond de la poche. Je ne veux pas l'admettre, mais c'est un tic qui ne sort que quand je suis nerveux.*"
     },
     "start_4": {
         "name": "Moi",
@@ -93,7 +93,7 @@
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
-        "text": "Oh. Premier jour et déjà quelqu'un comme ça. Intérêt +1."
+        "text": "Oh. Premier jour et tu ne lâches rien. Je vais retenir ton nom."
     },
     "choice_flirt_3": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Oh, m'dame ! C'est trop la flemme de se changer ! Bref, je suis trop contente pour le nouveau !!"
+        "text": "Oh, m'dame ! C'est trop la flemme de mettre la tenue de sport, qu'est-ce que j'y peux ? Bref, bienvenue le nouveau !"
     },
     "classroom_dain_5": {
         "name": "Moi",

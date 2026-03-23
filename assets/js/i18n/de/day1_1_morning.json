@@ -13,7 +13,7 @@
     },
     "start_3b": {
         "name": "Ich",
-        "text": "*Mein Herz schlägt schnell. Ich will es nicht zugeben, aber ich bin nervös. Meine Finger spielen mit dem Handy in der Tasche. — Eine Angewohnheit. Wenn die Unruhe kommt.*"
+        "text": "*Meine Finger spielen mit der Kante des Handys in der Tasche. Ich will es nicht zugeben, aber es ist eine Angewohnheit, die nur rauskommt, wenn ich nervös bin.*"
     },
     "start_4": {
         "name": "Ich",
@@ -93,7 +93,7 @@
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
-        "text": "Wow. Erster Tag und schon so einer. Interesse +1."
+        "text": "Wow. Erster Tag und du gibst nicht klein bei. Ich merk mir deinen Namen."
     },
     "choice_flirt_3": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Ach, Frau Lehrerin! Umziehen ist echt zu nervig! Jedenfalls, ich freu mich halt über den Neuen!!"
+        "text": "Ach, Frau Lehrerin! Umziehen in Sportkleidung ist echt zu nervig, was soll ich machen? Jedenfalls, willkommen, Neuer!"
     },
     "classroom_dain_5": {
         "name": "Ich",

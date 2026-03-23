@@ -77,11 +77,11 @@
     },
     "true_dain_3": {
         "name": "Dain",
-        "text": "Mein Herz schlägt total schnell. Leg deine Hand hierhin."
+        "text": "Ich glaub, ich bin gerade total nervös. Leg deine Hand hierhin."
     },
     "true_dain_4": {
         "name": "Ich",
-        "text": "*Es ist schnell. Wirklich schnell.*"
+        "text": "*Der Herzschlag unter meinen Fingerspitzen ist deutlich spürbar.*"
     },
     "true_dain_5": {
         "name": "Ich",
@@ -161,7 +161,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "...Dummkopf. Aber einem Dummkopf, der zurückkommt, kann man verzeihen."
+        "text": "Du bist echt dumm. Aber weil du zurückgekommen bist, lass ich es einmal durchgehen."
     },
     "good_1_dain": {
         "name": "Dain",
@@ -225,7 +225,7 @@
     },
     "harem_2": {
         "name": "Ich",
-        "text": "*Yuna senkte den Kopf. Lange. Und als sie wieder aufschaute, lächelten ihre trockenen Augen. ...Dummkopf. Zwei Sätze an Gefühl, komprimiert in ein einziges Wort.*"
+        "text": "*Yuna senkte den Kopf. Lange. Und als sie wieder aufschaute, lächelten ihre trockenen Augen. ...Mistkerl. Zwei Sätze an Gefühl, komprimiert in ein einziges Wort.*"
     },
     "harem_3": {
         "name": "Ich",
@@ -420,7 +420,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "Schulkrankenschwester",
-        "text": "Ach, ein Absolvent. Ein Patient, der sich verabschiedet. — Rührend."
+        "text": "Oh, ein Absolvent. Ein Patient, der zum Abschied kommt. Das ist doch rührend, oder?"
     },
     "hidden_good_nurse_2": {
         "name": "Schulkrankenschwester",

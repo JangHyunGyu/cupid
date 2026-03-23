@@ -834,6 +834,31 @@ html[lang="de"] #message {
         /* 캐릭터를 조금 더 아래로 내려서 상체 위주로 노출 */
     }
 
+    .char-slot {
+        max-width: 100%;
+    }
+
+    #char-left {
+        transform: translateX(-95%);
+        /* 가로 모드에서 왼쪽 캐릭터를 더 왼쪽으로 이동하여 겹침 방지 */
+    }
+
+    #char-left img {
+        transform: scale(0.75);
+        transform-origin: bottom center;
+    }
+
+    #char-right {
+        transform: translateX(-10%);
+        /* 가로 모드에서 오른쪽 캐릭터를 더 오른쪽으로 이동 */
+    }
+
+    #char-right img {
+        transform: scale(0.75);
+        transform-origin: bottom center;
+        mix-blend-mode: lighten;
+    }
+
     #dialogue-box {
         min-height: 100px;
         padding: 10px 20px;

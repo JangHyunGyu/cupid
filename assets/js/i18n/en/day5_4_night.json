@@ -77,11 +77,11 @@
     },
     "true_dain_3": {
         "name": "Dain",
-        "text": "My heart is beating so fast. Put your hand here."
+        "text": "I think I'm really nervous right now. Put your hand here."
     },
     "true_dain_4": {
         "name": "Me",
-        "text": "*It’s fast. Really fast.*"
+        "text": "*The heartbeat under my fingertips is vivid.*"
     },
     "true_dain_5": {
         "name": "Me",
@@ -161,7 +161,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "...Idiot. But an idiot who came back can be forgiven."
+        "text": "You're such a fool. But since you came back, I'll let it slide this once."
     },
     "good_1_dain": {
         "name": "Dain",
@@ -225,7 +225,7 @@
     },
     "harem_2": {
         "name": "Me",
-        "text": "*Yuna lowered her head. For a long time. And when she looked up, her dry eyes were smiling. ...Idiot. Two sentences’ worth of emotion packed into that single word.*"
+        "text": "*Yuna lowered her head. For a long time. And when she looked up, her dry eyes were smiling. ...Jerk. Two sentences’ worth of emotion packed into that single word.*"
     },
     "harem_3": {
         "name": "Me",
@@ -420,7 +420,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "School Nurse",
-        "text": "Oh, a graduate. A patient giving discharge greetings. — I'm touched."
+        "text": "Oh, a graduate. A patient actually coming to say goodbye. That's actually sweet."
     },
     "hidden_good_nurse_2": {
         "name": "School Nurse",
