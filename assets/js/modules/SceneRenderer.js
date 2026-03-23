@@ -297,21 +297,26 @@ class SceneRenderer {
             return;
         }
 
+        // 엔딩 CG 여부 판별 (느린 페이드인 적용)
+        const isEndingCG = bgPath.includes('ending_');
+        const fadeClass = isEndingCG ? 'bg-crossfade-slow' : 'bg-crossfade';
+        const fadeDuration = isEndingCG ? 2100 : 420;
+
         // 크로스페이드: ::after에 새 배경을 설정하고 페이드인
         // CSS 변수는 style.css 기준으로 URL이 해석되므로 절대 URL로 변환
         const absoluteBgUrl = new URL(displayBgUrl, document.baseURI).href;
         bgLayer.style.setProperty('--bg-next', `url(${absoluteBgUrl})`);
-        bgLayer.classList.remove('bg-crossfade');
+        bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-slow');
         // ::after에 background-image 설정
         bgLayer.style.cssText = bgLayer.style.cssText; // force reflow
         void bgLayer.offsetWidth; // force reflow
-        bgLayer.classList.add('bg-crossfade');
+        bgLayer.classList.add(fadeClass);
 
         // 페이드 완료 후 메인 배경으로 교체
-        await new Promise(r => setTimeout(r, 420));
+        await new Promise(r => setTimeout(r, fadeDuration));
         if (this.lastBgUrl === bgUrl) {
             bgLayer.style.backgroundImage = `url(${displayBgUrl})`;
-            bgLayer.classList.remove('bg-crossfade');
+            bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-slow');
         }
     }
 
