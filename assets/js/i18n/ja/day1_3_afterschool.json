@@ -215,7 +215,7 @@
     },
     "after_nurse_enter_2": {
         "name": "保健先生",
-        "text": "あら、患者さんだ。"
+        "text": "お、患者だ。"
     },
     "after_nurse_enter_3": {
         "name": "僕",

@@ -97,33 +97,34 @@ Object.assign(SCENARIO[4], {
 
     // === HIDDEN Day 4 담임 카페 ===
     "hidden_homeroom_d4_1": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_school.png",
+        "bgm": "morning.mp3",
         "character": "assets/images/characters/teacher_normal.png",
         "condition": "homeroom_day3",
         "next": "hidden_homeroom_d4_2"
     },
     "hidden_homeroom_d4_2": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_3"
     },
     "hidden_homeroom_d4_3": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_4"
     },
     "hidden_homeroom_d4_4": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_5"
     },
     "hidden_homeroom_d4_5": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_choice"
     },
     "hidden_homeroom_d4_choice": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
             { "next": "hidden_homeroom_d4_cafe_1", "stats": { "Teacher": { "affinity": 10 } } },
@@ -162,7 +163,7 @@ Object.assign(SCENARIO[4], {
         "next": "hidden_homeroom_d4_freetalk"
     },
     "hidden_homeroom_d4_decline": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_nurse_d4_check"
     },
@@ -184,6 +185,7 @@ Object.assign(SCENARIO[4], {
     },
     "hidden_nurse_d4_1": {
         "background": "assets/images/background/nurse_room.jpg",
+        "bgm": "morning.mp3",
         "character": "assets/images/characters/nurse_normal.png",
         "condition": "nurse_day3",
         "next": "hidden_nurse_d4_2"

@@ -211,7 +211,7 @@
     },
     "after_nurse_enter_2": {
         "name": "보건선생님",
-        "text": "어머, 환자다."
+        "text": "오, 환자네."
     },
     "after_nurse_enter_3": {
         "name": "{name}",

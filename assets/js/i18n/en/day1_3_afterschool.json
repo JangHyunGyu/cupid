@@ -215,7 +215,7 @@
     },
     "after_nurse_enter_2": {
         "name": "School Nurse",
-        "text": "Oh my, a patient."
+        "text": "Oh, a patient."
     },
     "after_nurse_enter_3": {
         "name": "Me",
