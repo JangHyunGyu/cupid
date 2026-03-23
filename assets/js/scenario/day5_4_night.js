@@ -676,18 +676,21 @@ Object.assign(SCENARIO[5], {
         "next": "good_1"
     },
     "good_1": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "good_1b"
     },
     "good_1b": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "good_1c"
     },
     "good_1c": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -699,42 +702,74 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "good_1_seo": {
+        "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "fade": true,
         "next": "good_2"
     },
     "good_1_yuna": {
+        "background": "assets/images/background/park.png",
         "character": "assets/images/characters/yuna_smile.png",
         "night": true,
         "fade": true,
         "next": "good_2"
     },
     "good_1_dain": {
+        "background": "assets/images/background/park.png",
         "character": "assets/images/characters/dain_pout.png",
         "night": true,
         "fade": true,
         "next": "good_2"
     },
     "good_2": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "good_3"
     },
     "good_3": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "good_4"
     },
     "good_4": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "good_5"
     },
     "good_5": {
+        "character": null,
+        "night": true,
+        "fade": true,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "good_5_cg_seo" },
+            { "condition": "route_yuna", "next": "good_5_cg_yuna" },
+            { "condition": "route_dain", "next": "good_5_cg_dain" }
+        ],
+        "next": "day5_credits"
+    },
+    "good_5_cg_seo": {
+        "background": "assets/images/background/ending_good_seoyeon.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
+    },
+    "good_5_cg_yuna": {
+        "background": "assets/images/background/ending_good_yuna.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "day5_credits"
+    },
+    "good_5_cg_dain": {
+        "background": "assets/images/background/ending_good_dain.png",
         "character": null,
         "night": true,
         "fade": true,

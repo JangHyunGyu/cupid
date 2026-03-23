@@ -773,6 +773,9 @@ class GalleryData {
                 file: 'assets/images/background/ending_friend.png',
                 thumbnail: 'assets/images/background/ending_friend.png'
             },
+            { id: 'ending_good_seoyeon', name: '공원의 두 사람', character: '서연', description: '해질녘 공원길을 나란히 걷는 두 사람, 손끝이 스칠 듯 말 듯', file: 'assets/images/background/ending_good_seoyeon.png', thumbnail: 'assets/images/background/ending_good_seoyeon.png' },
+            { id: 'ending_good_yuna', name: '옥상의 침묵', character: '유나', description: '어두운 옥상에 나란히 앉아 하늘을 바라보는 두 사람', file: 'assets/images/background/ending_good_yuna.png', thumbnail: 'assets/images/background/ending_good_yuna.png' },
+            { id: 'ending_good_dain', name: '교문 앞 인사', character: '다인', description: '석양 교문에서 장난스럽게 어깨를 치며 웃는 다인', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png' },
             { id: 'ending_confess_fail_seoyeon', name: '서연의 침묵', character: '서연', description: '석양의 공원에서, 안경을 고쳐 쓰며 조용히 시선을 돌리는 서연', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png' },
             { id: 'ending_confess_fail_yuna', name: '유나의 뒷모습', character: '유나', description: '어두운 공원에서, 한마디 없이 돌아서 걸어가는 유나', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png' },
             { id: 'ending_confess_fail_dain', name: '다인의 거짓 웃음', character: '다인', description: '눈물을 닦으며 억지로 웃는 다인, "괜찮아" 라고 손을 흔들며', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png' },

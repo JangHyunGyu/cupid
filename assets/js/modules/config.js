@@ -69,8 +69,25 @@ const SEND_ICON = `<svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l
 const REGISTERED_CG_IDS = new Set([
     'nurse_home_event1',
     'dain_hurt_event1',
-    'dain_depression_event1'
-    // 🔧 새 CG 추가 시 여기에 ID 추가
+    'dain_depression_event1',
+    'ending_perfect_seoyeon',
+    'ending_perfect_yuna',
+    'ending_perfect_dain',
+    'ending_bittersweet',
+    'ending_true_teacher',
+    'ending_true_nurse',
+    'ending_harem',
+    'ending_alone',
+    'ending_friend',
+    'ending_good_seoyeon',
+    'ending_good_yuna',
+    'ending_good_dain',
+    'ending_confess_fail_seoyeon',
+    'ending_confess_fail_yuna',
+    'ending_confess_fail_dain',
+    'ending_mayhem',
+    'ending_good_teacher',
+    'ending_good_nurse'
 ]);
 
 /**
