@@ -156,16 +156,16 @@
         "text": "...Quelque chose comme ça. J'ai été parachuté dans un nouveau lieu du jour au lendemain."
     },
     "after_homeroom_honest_4": {
+        "name": "Professeur Principal",
+        "text": "Si ça devient dur, viens à la salle des profs. Je peux t'offrir un café — ah, t'es élève. Un jus, alors."
+    },
+    "after_homeroom_honest_5": {
         "name": "Moi",
         "text": "Un prof qui offre à boire à un élève ?"
     },
-    "after_homeroom_honest_5": {
-        "name": "Professeur Principal",
-        "text": "Intérêt pédagogique. — Je devrais pas faire ça, mais bon."
-    },
     "after_homeroom_honest_6": {
         "name": "Professeur Principal",
-        "text": "Si ça devient dur, viens à la salle des profs. Je peux t'offrir un café — ah, t'es élève. Un jus, alors."
+        "text": "Intérêt pédagogique. — Je devrais pas faire ça, mais bon."
     },
     "after_homeroom_honest_7": {
         "name": "Professeur Principal",

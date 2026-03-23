@@ -7,6 +7,22 @@
         "name": "Yo",
         "text": "*Hoy hay un evento escolar. El último. En cuanto entro al aula — llegan señales desde tres direcciones.*"
     },
+    "morning5_mood_check": {
+        "name": "Sistema",
+        "text": ""
+    },
+    "morning5_mood_high": {
+        "name": "Yo",
+        "text": "*Último día. Extrañamente, mis pasos se sienten ligeros. Tener a alguien a quien quiero ver — es razón suficiente para sobrevivir la mañana.*"
+    },
+    "morning5_mood_mid": {
+        "name": "Yo",
+        "text": "*Último día. Más complicado que ayer. Tengo algo que decir, pero no sé si saldrá de mis labios.*"
+    },
+    "morning5_mood_low": {
+        "name": "Yo",
+        "text": "*Último día. Cinco días pasaron rápido. Al final, ¿me iré de esta escuela sin dejar nada también?*"
+    },
     "morning5_seo_note_1": {
         "name": "Yo",
         "text": "*Hay una nota sobre mi escritorio. La letra de Seoyeon. — 'Haz un hueco esta tarde. Dejaré la azotea abierta. — Seoyeon'*"

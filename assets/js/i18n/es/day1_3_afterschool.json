@@ -156,16 +156,16 @@
         "text": "...Algo parecido. Me han lanzado a un lugar nuevo de la nada."
     },
     "after_homeroom_honest_4": {
+        "name": "Profesora",
+        "text": "Si se pone difícil, ven a la sala de profesores. Te puedo ofrecer un café — ah, eres estudiante. Un jugo, entonces."
+    },
+    "after_homeroom_honest_5": {
         "name": "Yo",
         "text": "¿Una profesora invitándole algo a un estudiante?"
     },
-    "after_homeroom_honest_5": {
-        "name": "Profesora",
-        "text": "Interés profesional. — No debería hacer esto, pero bueno."
-    },
     "after_homeroom_honest_6": {
         "name": "Profesora",
-        "text": "Si se pone difícil, ven a la sala de profesores. Te puedo ofrecer un café — ah, eres estudiante. Un jugo, entonces."
+        "text": "Interés profesional. — No debería hacer esto, pero bueno."
     },
     "after_homeroom_honest_7": {
         "name": "Profesora",

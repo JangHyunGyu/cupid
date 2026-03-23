@@ -17,6 +17,31 @@ Object.assign(SCENARIO[5], {
     "morning5_start_2": {
         "background": "assets/images/background/room_school.png",
         "character": null,
+        "next": "morning5_mood_check"
+    },
+    "morning5_mood_check": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "affinityBranches": [
+            { "minAffinity": 80, "next": "morning5_mood_high" },
+            { "minAffinity": 50, "next": "morning5_mood_mid" },
+            { "minAffinity": 0, "next": "morning5_mood_low" }
+        ],
+        "next": "morning5_mood_low"
+    },
+    "morning5_mood_high": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning5_seo_note_1"
+    },
+    "morning5_mood_mid": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "next": "morning5_seo_note_1"
+    },
+    "morning5_mood_low": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
         "next": "morning5_seo_note_1"
     },
     "morning5_seo_note_1": {

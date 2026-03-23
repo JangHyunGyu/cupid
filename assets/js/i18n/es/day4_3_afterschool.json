@@ -255,6 +255,10 @@
         "name": "Dain",
         "text": "...La próxima vez, no huyas."
     },
+    "confess_yuna_3b": {
+        "name": "{name}",
+        "text": "*El anexo de la biblioteca. El atardecer se filtra por las ventanas. Un lugar que se volvió familiar en pocos días.*"
+    },
     "confess_seo_3b": {
         "name": "{name}",
         "text": "*La azotea. El atardecer tiñe la escuela. Un lugar que se volvió familiar en pocos días.*"

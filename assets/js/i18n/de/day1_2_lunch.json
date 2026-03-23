@@ -354,7 +354,7 @@
     },
     "lunch_yuna_6": {
         "name": "{name}",
-        "text": "...Darf ich hier sitzen?"
+        "text": "...Darf ich bleiben?"
     },
     "lunch_yuna_7": {
         "name": "Yuna",
@@ -468,7 +468,7 @@
     },
     "lunch_dain_1_aff_high": {
         "name": "Dain",
-        "text": "Oh! Du bist da! Hab dich beim Sport gesehen! Lass uns zusammen essen!"
+        "text": "Oh! Du bist da! Hab dich bei der Vorstellung gesehen! Lass uns zusammen essen!"
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",

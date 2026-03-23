@@ -255,6 +255,10 @@
         "name": "Dain",
         "text": "...Next time, don't run away."
     },
+    "confess_yuna_3b": {
+        "name": "{name}",
+        "text": "*The library annex. Sunset seeps through the windows. A place that became familiar in just a few days.*"
+    },
     "confess_seo_3b": {
         "name": "{name}",
         "text": "*The rooftop. The sunset paints the school. A place that became familiar in just a few days.*"

@@ -156,16 +156,16 @@
         "text": "...So ähnlich. Ich wurde schon mal von heute auf morgen woanders hingeworfen."
     },
     "after_homeroom_honest_4": {
+        "name": "Klassenlehrerin",
+        "text": "Wenn's hart wird, komm ins Lehrerzimmer. Ich kann dir einen Kaffee — ach, du bist Schüler. Saft, dann."
+    },
+    "after_homeroom_honest_5": {
         "name": "Ich",
         "text": "Eine Lehrerin, die einem Schüler was ausgibt?"
     },
-    "after_homeroom_honest_5": {
-        "name": "Klassenlehrerin",
-        "text": "Pädagogisches Interesse. — Ich sollte das eigentlich nicht tun, aber naja."
-    },
     "after_homeroom_honest_6": {
         "name": "Klassenlehrerin",
-        "text": "Wenn's hart wird, komm ins Lehrerzimmer. Ich kann dir einen Kaffee — ach, du bist Schüler. Saft, dann."
+        "text": "Pädagogisches Interesse. — Ich sollte das eigentlich nicht tun, aber naja."
     },
     "after_homeroom_honest_7": {
         "name": "Klassenlehrerin",

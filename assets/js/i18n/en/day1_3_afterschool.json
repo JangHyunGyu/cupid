@@ -156,16 +156,16 @@
         "text": "...Something like that. I've been thrown into a new place out of nowhere before."
     },
     "after_homeroom_honest_4": {
+        "name": "Homeroom Teacher",
+        "text": "If it gets too rough, come to the faculty office. I can get you a coffee — wait, you're a student. Juice, then."
+    },
+    "after_homeroom_honest_5": {
         "name": "Me",
         "text": "A teacher buying a student drinks?"
     },
-    "after_homeroom_honest_5": {
-        "name": "Homeroom Teacher",
-        "text": "Professional concern. — I really shouldn't be doing this, but hey."
-    },
     "after_homeroom_honest_6": {
         "name": "Homeroom Teacher",
-        "text": "If it gets too rough, come to the faculty office. I can get you a coffee — wait, you're a student. Juice, then."
+        "text": "Professional concern. — I really shouldn't be doing this, but hey."
     },
     "after_homeroom_honest_7": {
         "name": "Homeroom Teacher",

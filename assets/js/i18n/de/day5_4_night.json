@@ -159,10 +159,6 @@
         "name": "System",
         "text": "─── BITTERSWEET END ───"
     },
-    "day5_ending_true": {
-        "name": "System",
-        "text": ""
-    },
     "true_seo_1": {
         "name": "Ich",
         "text": "*Seoyeons Zimmer. Ihre Eltern sind unterwegs. Das Zimmer ist ordentlich — zu ordentlich. Ein Zimmer ohne Emotion.*"
@@ -406,6 +402,30 @@
     "harem_8": {
         "name": "System",
         "text": "─── HAREM END ───"
+    },
+    "day5_ending_confess_fail": {
+        "name": "Ich",
+        "text": "*Ich habe es gesagt. Ich habe gesprochen. — Aber was zurückkam, war Stille.*"
+    },
+    "confess_fail_1": {
+        "name": "Ich",
+        "text": "*Ich fand den Mut. Diesmal bin ich nicht weggelaufen. — Das steht fest.*"
+    },
+    "confess_fail_2": {
+        "name": "Ich",
+        "text": "*Aber das Geständnis allein reichte nicht. Was ich in fünf Tagen aufgebaut hatte — war zu dünn, um diese Worte zu tragen.*"
+    },
+    "confess_fail_3": {
+        "name": "Ich",
+        "text": "*An meiner alten Schule bereute ich, nicht gesprochen zu haben. An dieser Schule habe ich gesprochen — und eine andere Art von Leere blieb zurück.*"
+    },
+    "confess_fail_4": {
+        "name": "Ich",
+        "text": "*Ich gehe durch das Schultor. Mein Handy ist still. — Aber diesmal bin ich nicht weggelaufen. Das allein ist anders.*"
+    },
+    "confess_fail_5": {
+        "name": "System",
+        "text": "--- CONFESS FAIL END ---"
     },
     "day5_ending_friend": {
         "name": "Ich",

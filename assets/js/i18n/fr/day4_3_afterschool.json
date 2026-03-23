@@ -255,6 +255,10 @@
         "name": "Dain",
         "text": "...La prochaine fois, ne fuis pas."
     },
+    "confess_yuna_3b": {
+        "name": "{name}",
+        "text": "*L'annexe de la bibliothèque. Le coucher de soleil filtre par les fenêtres. Un endroit devenu familier en quelques jours.*"
+    },
     "confess_seo_3b": {
         "name": "{name}",
         "text": "*Le toit. Le coucher de soleil colore l'école. Un endroit devenu familier en quelques jours.*"
