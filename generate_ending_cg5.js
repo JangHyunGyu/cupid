@@ -9,14 +9,15 @@ if (!API_KEY) { console.error('.env에서 GEMINI_API_KEY를 찾을 수 없습니
 const charDir = path.join(__dirname, 'assets', 'images', 'characters');
 const bgDir = path.join(__dirname, 'assets', 'images', 'background');
 
+const mcSide = fs.readFileSync(path.join(charDir, 'backup', 'mc_side_v1_3.png')).toString('base64');
 const teacherRef = fs.readFileSync(path.join(charDir, 'teacher_normal.png')).toString('base64');
 
-const prompt = `Create an anime visual novel event CG (1024x1024).
-Scene: A beautiful outdoor cafe terrace or park with cherry blossoms at sunset. This is YEARS AFTER graduation - both are adults.
-A tall broad-shouldered man in a sharp fitted dark navy BUSINESS SUIT with a crisp white dress shirt and tie, styled adult hairstyle (neat dark brown hair parted to the side, NOT a messy student cut - a mature professional look), bigger and more muscular build than a high school student. He stands facing the woman, shown from behind/side angle - face NOT visible. He holds out a large beautiful bouquet of flowers to her with both hands. Just a romantic gesture between lovers, not a proposal.
-The woman (ref: brown wavy long hair flowing freely past shoulders, warm brown eyes, bright skin, large full bust) wearing elegant casual clothes - a cream off-shoulder knit and flowing long skirt. She receives the bouquet with both hands, pressing it against her chest, blushing deeply with a warm happy smile.
-Cherry blossom petals falling around them. Warm golden sunset light.
-A sweet date between two adults who are finally free to love openly.
+const prompt = `Create an anime visual novel event CG (1024x1024). Use these two character references.
+Scene: Beautiful outdoor cafe terrace with cherry blossoms at sunset. YEARS AFTER graduation - both adults.
+The man (ref 1 - use this face/hair as reference: same dark brown short hair, same facial features, but now wearing a sharp navy business suit with white dress shirt and tie instead of school uniform). He stands facing the woman, shown from behind/side angle - face only partially visible (jawline and side profile matching ref 1). He holds out a large beautiful bouquet of flowers to her.
+The woman (ref 2: brown wavy long hair flowing freely, warm brown eyes, bright skin, large full bust) wearing elegant cream off-shoulder knit and flowing long skirt. She receives the bouquet, pressing it against her chest, blushing deeply with happy smile.
+IMPORTANT: The man's body should be the same slim average build as in reference 1, NOT muscular or overly broad. Same hairstyle as ref 1 but slightly more mature/neat.
+Cherry blossom petals falling. Golden sunset light. A sweet date between two adults.
 Anime cel-shaded art style, no text, no watermark.`;
 
 async function generate() {
@@ -24,13 +25,14 @@ async function generate() {
 
   const body = {
     contents: [{ parts: [
+      { inlineData: { mimeType: 'image/png', data: mcSide } },
       { inlineData: { mimeType: 'image/png', data: teacherRef } },
       { text: prompt }
     ]}],
     generationConfig: { responseModalities: ['TEXT', 'IMAGE'] }
   };
 
-  console.log('Generating teacher perfect ending (v2)...');
+  console.log('Generating teacher perfect ending (v3 - MC sync)...');
   const response = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
   if (!response.ok) { console.error('API error:', (await response.text()).slice(0, 500)); return; }
 
