@@ -182,7 +182,7 @@
     },
     "bitter_epilogue_1": {
         "name": "Moi",
-        "text": "*Apres le diplome. Les contacts se sont espaces. Une fois par mois est devenu une fois tous les deux mois, et laisser les messages sans reponse est devenu la norme.*"
+        "text": "*Après le diplôme. Les contacts se sont espacés. Une fois par mois est devenu une fois tous les deux mois, laisser les messages sans réponse est devenu la norme, et un jour — quand j'ai voulu écrire et que j'ai bloqué sur quoi dire — j'ai su que c'était fini.*"
     },
     "bitter_epilogue_2": {
         "name": "Moi",
@@ -258,11 +258,11 @@
     },
     "true_dain_2": {
         "name": "Moi",
-        "text": "*Dain prend la main de {name} et la pose sur sa poitrine.*"
+        "text": "*Dain prend la main de {name} — l'attire vers elle et la pose sur sa poitrine gauche. Sans un mot.*"
     },
     "true_dain_3": {
-        "name": "Dain",
-        "text": "Je crois que je suis super nerveuse là. Mets ta main ici."
+        "name": "Moi",
+        "text": "*Les battements sous mes doigts sont nets.*"
     },
     "true_dain_4": {
         "name": "Moi",
@@ -274,7 +274,7 @@
     },
     "true_dain_6": {
         "name": "Dain",
-        "text": "Pourquoi tu me regardes comme ça ? C'est gênant."
+        "text": "*se cachant à moitié le visage avec le ballon* Arrête de me regarder comme ça... C'est pas fair."
     },
     "true_dain_7": {
         "name": "Moi",
@@ -290,7 +290,7 @@
     },
     "true_yuna_bridge": {
         "name": "Moi",
-        "text": "*J'ai quitté le grenier et suis monté sur le toit. Assis côte à côte sur la rambarde. Les étoiles de Yuna — d'ici, elles sont plus proches.*"
+        "text": "*Les étoiles de Yuna sont encore là, juste devant moi.*"
     },
     "true_dain_bridge": {
         "name": "Moi",
@@ -347,7 +347,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "T'es vraiment stupide. Mais puisque t'es revenu, je te pardonne cette fois."
+        "text": "...T'es vraiment nul. Mais puisque t'es revenu, je peux passer l'éponge."
     },
     "good_1_dain": {
         "name": "Dain",
@@ -454,8 +454,8 @@
         "text": "*Seoyeon a souri la première. ...D'accord. Au moins tu es honnête. Ce n'était pas mon imagination si j'ai entendu des dents grincer derrière ce sourire.*"
     },
     "harem_2": {
-        "name": "Moi",
-        "text": "*Yuna a baissé la tête. Longtemps. Et quand elle l'a relevée, ses yeux secs souriaient. ...Sale type. Deux phrases d'émotion compressées dans ces mots.*"
+        "name": "Yuna",
+        "text": "...Idiot."
     },
     "harem_3": {
         "name": "Moi",
