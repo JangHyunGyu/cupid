@@ -908,13 +908,13 @@ class GameEngine {
         this.uiManager.setFade(shouldFade, scene.tbc);
 
         // ─────────────────────────────────────────────────────────
-        // 🖼️ 5단계: 배경 이미지 설정
+        // 🖼️ 5단계: 배경 + 캐릭터 병렬 처리
         // ─────────────────────────────────────────────────────────
-        if (scene.background) await this.sceneRenderer.setBackground(scene.background);
-
-        // ⚠️ 비동기 작업 중 씬이 바뀌었으면 중단 (Race Condition 방지)
-        // 예: 빠르게 클릭해서 다른 씬으로 넘어간 경우
-        if (this.sceneRenderer.currentSceneId !== sceneId) { this._isRendering = false; return; }
+        // 배경 크로스페이드(최대 2.1초)와 캐릭터 업데이트를 동시에 시작
+        // → CG 전환 시 캐릭터가 남아있는 현상 방지
+        const bgPromise = scene.background
+            ? this.sceneRenderer.setBackground(scene.background)
+            : Promise.resolve();
 
         // ─────────────────────────────────────────────────────────
         // 🚩 6단계: 플래그/스탯 처리
@@ -955,12 +955,15 @@ class GameEngine {
         }
 
         // ─────────────────────────────────────────────────────────
-        // 👤 9단계: 캐릭터 이미지 업데이트
+        // 👤 9단계: 캐릭터 이미지 업데이트 (배경과 병렬)
         // ─────────────────────────────────────────────────────────
         // character 또는 characters 속성에 따라 캐릭터 표시
-        await this.sceneRenderer.updateCharacters(scene, sceneId);
+        const charPromise = this.sceneRenderer.updateCharacters(scene, sceneId);
 
-        // ⚠️ 다시 한번 Race Condition 체크
+        // 배경 + 캐릭터 모두 완료 대기
+        await Promise.all([bgPromise, charPromise]);
+
+        // ⚠️ 비동기 작업 중 씬이 바뀌었으면 중단 (Race Condition 방지)
         if (this.sceneRenderer.currentSceneId !== sceneId) { this._isRendering = false; return; }
 
         // 비동기 로딩 완료 → 렌더링 락 해제 (이제 클릭 가능)
