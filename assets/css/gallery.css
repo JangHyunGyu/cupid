@@ -757,6 +757,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* CG 카드 */
 .cg-card {
+    width: 100%;
     background: linear-gradient(145deg, rgba(40, 30, 60, 0.8), rgba(20, 15, 35, 0.9));
     border-radius: 20px;
     overflow: hidden;
