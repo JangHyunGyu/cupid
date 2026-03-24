@@ -317,6 +317,7 @@ class SceneRenderer {
         if (this.lastBgUrl === bgUrl) {
             bgLayer.style.backgroundImage = `url(${displayBgUrl})`;
             bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-slow');
+            bgLayer.style.removeProperty('--bg-next');
         }
     }
 
