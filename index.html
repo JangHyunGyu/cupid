@@ -774,6 +774,11 @@
 </head>
 
 <body>
+    <script>
+        function toggleLangCombo() {
+            document.getElementById('langCombo').classList.toggle('open');
+        }
+    </script>
     <div class="lang-switch">
         <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab 홈" title="ArcherLab">🏹 ArcherLab</a>
         <button id="landing-settings-btn" class="lang-btn"
@@ -1281,10 +1286,7 @@
             }
         }
 
-        // Language combo box
-        function toggleLangCombo() {
-            document.getElementById('langCombo').classList.toggle('open');
-        }
+        // Language combo box (toggleLangCombo is defined before .lang-switch)
         document.addEventListener('click', function(e) {
             const combo = document.getElementById('langCombo');
             if (combo && !combo.contains(e.target)) {
