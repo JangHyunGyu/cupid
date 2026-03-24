@@ -796,7 +796,7 @@ Object.assign(SCENARIO[5], {
         "next": "good_5_seo"
     },
     "good_5_seo": {
-        "background": "assets/images/background/park.png",
+        "background": "assets/images/background/ending_good_seoyeon.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -825,7 +825,7 @@ Object.assign(SCENARIO[5], {
         "next": "good_5_yuna"
     },
     "good_5_yuna": {
-        "background": "assets/images/background/top_school.png",
+        "background": "assets/images/background/ending_good_yuna.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -854,7 +854,7 @@ Object.assign(SCENARIO[5], {
         "next": "good_5_dain"
     },
     "good_5_dain": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/ending_good_dain.png",
         "character": null,
         "night": true,
         "fade": true,
