@@ -21,6 +21,9 @@ gtag('config', 'G-05YM7K3VX9', {
 		}
 	}, 60000);
 
+	function _gaClearTimer() { clearInterval(_gaTimer); }
+	window.addEventListener('pagehide', _gaClearTimer);
+
 	// 씬 전환 시 가상 페이지뷰 전송 (SPA 보정)
 	window.sendGAPageView = function(sceneName) {
 		gtag('event', 'page_view', {
