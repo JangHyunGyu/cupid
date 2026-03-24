@@ -182,7 +182,7 @@
     },
     "bitter_epilogue_1": {
         "name": "Me",
-        "text": "*After graduation. Contact grew sparse. Once a month became once every two months, and leaving messages on read became the norm.*"
+        "text": "*After graduation. Contact grew sparse. Once a month became once every two months, leaving messages on read became the norm, and one day — when I tried to send something and drew a blank on what to say — I knew it was over.*"
     },
     "bitter_epilogue_2": {
         "name": "Me",
@@ -258,11 +258,11 @@
     },
     "true_dain_2": {
         "name": "Me",
-        "text": "*Dain takes {name}’s hand and places it on her chest.*"
+        "text": "*Dain takes {name}’s hand — pulls it over and presses it against her chest. Without a word.*"
     },
     "true_dain_3": {
-        "name": "Dain",
-        "text": "I think I'm really nervous right now. Put your hand here."
+        "name": "Me",
+        "text": "*The heartbeat under my fingertips is vivid.*"
     },
     "true_dain_4": {
         "name": "Me",
@@ -274,7 +274,7 @@
     },
     "true_dain_6": {
         "name": "Dain",
-        "text": "Why are you looking at me like that? It’s embarrassing."
+        "text": "*half-covering her face with the volleyball* Why are you staring... That’s not fair."
     },
     "true_dain_7": {
         "name": "Me",
@@ -290,7 +290,7 @@
     },
     "true_yuna_bridge": {
         "name": "Me",
-        "text": "*I left the attic and climbed up to the rooftop. We sat side by side on the railing. Yuna's stars — they're closer from up here.*"
+        "text": "*Yuna's stars are still here, right in front of me.*"
     },
     "true_dain_bridge": {
         "name": "Me",
@@ -347,7 +347,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "You're such a fool. But since you came back, I'll let it slide this once."
+        "text": "...You really are clueless. But since you came back, I can let it go."
     },
     "good_1_dain": {
         "name": "Dain",
@@ -454,8 +454,8 @@
         "text": "*Seoyeon smiled first. ...Fine. At least you’re honest. It wasn’t my imagination that I heard teeth grinding behind that smile.*"
     },
     "harem_2": {
-        "name": "Me",
-        "text": "*Yuna lowered her head. For a long time. And when she looked up, her dry eyes were smiling. ...Jerk. Two sentences’ worth of emotion packed into that single word.*"
+        "name": "Yuna",
+        "text": "...Idiot."
     },
     "harem_3": {
         "name": "Me",
@@ -571,7 +571,7 @@
     },
     "alone_3": {
         "name": "Me",
-        "text": "*Cherry blossoms drift past the window. The same petals that brushed my nose five days ago are stuck to the ground now. From inside the room, they don't even make a sound.*"
+        "text": "*The cherry blossoms are now scattering, carried off by the wind.*"
     },
     "alone_4": {
         "name": "Me",
@@ -723,5 +723,101 @@
     "hidden_good_nurse_4": {
         "name": "Me",
         "text": "*That heart — this time it's definitely not medical concern.\n\n─── School Nurse GOOD END ───*"
+    },
+    "perfect_seo_5b": {
+        "name": "Me",
+        "text": "*Day 1's rooftop. Day 4's park. And now. — Same place, different meaning. Every moment converges here.*"
+    },
+    "perfect_dain_2b": {
+        "name": "Me",
+        "text": "*No exclamation mark. For the first time. — Dain is talking about a beginning that isn't volleyball.*"
+    },
+    "perfect_dain_3b": {
+        "name": "Me",
+        "text": "*Dain sets the volleyball down on the court. Turns around and smiles. A smile without an exclamation mark.*"
+    },
+    "perfect_epilogue_bridge_seo": {
+        "name": "System",
+        "text": "*Epilogue — One Year Later*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "System",
+        "text": "*Epilogue — One Year Later*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "System",
+        "text": "*Epilogue — One Year Later*"
+    },
+    "true_seo_6b": {
+        "name": "Seoyeon",
+        "text": "I always had to smile. But in front of you, I just want to be myself."
+    },
+    "true_seo_7b": {
+        "name": "Me",
+        "text": "*Seoyeon holds out her pinky finger.*"
+    },
+    "true_yuna_6b": {
+        "name": "Yuna",
+        "text": "Don't go. Stay here tonight."
+    },
+    "true_dain_2b": {
+        "name": "Me",
+        "text": "*Fast. A speed that needs no words.*"
+    },
+    "true_dain_8b": {
+        "name": "Me",
+        "text": "*The exclamation mark is back. — But this time, it's a real one.*"
+    },
+    "good_1_yuna_b": {
+        "name": "Me",
+        "text": "*Yuna hands over a note. \"Don't get lost next time.\" — Short. And warm.*"
+    },
+    "good_epilogue_1": {
+        "name": "Me",
+        "text": "*But it was that wavering that showed me what I truly felt.*"
+    },
+    "good_epilogue_2": {
+        "name": "Me",
+        "text": "*I wasn't lost. It was just the process of finding you.*"
+    },
+    "good_epilogue_3": {
+        "name": "Me",
+        "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
+    },
+    "good_epilogue_1_yuna": {
+        "name": "Me",
+        "text": "*But it was that wavering that showed me what I truly felt.*"
+    },
+    "good_epilogue_2_yuna": {
+        "name": "Me",
+        "text": "*I wasn't lost. It was just the process of finding you.*"
+    },
+    "good_epilogue_3_yuna": {
+        "name": "Me",
+        "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
+    },
+    "good_epilogue_1_dain": {
+        "name": "Me",
+        "text": "*But it was that wavering that showed me what I truly felt.*"
+    },
+    "good_epilogue_2_dain": {
+        "name": "Me",
+        "text": "*I wasn't lost. It was just the process of finding you.*"
+    },
+    "good_epilogue_3_dain": {
+        "name": "Me",
+        "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
+    },
+    "confess_fail_cg_seo": {
+        "name": "Me",
+        "text": ""
+    },
+    "confess_fail_cg_yuna": {
+        "name": "Me",
+        "text": ""
+    },
+    "confess_fail_cg_dain": {
+        "name": "Me",
+        "text": ""
     }
 }
