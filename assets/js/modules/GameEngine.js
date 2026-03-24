@@ -1026,8 +1026,8 @@ class GameEngine {
             this.uiManager.dialogueBox.style.display = 'none';
             this.uiManager.choiceContainer.style.display = 'none';
 
-            // ── 갤러리 프리토킹 해금 (TRUE LOVE 엔딩 한정) ──
-            if (this.stateManager.getFlag('ending_true_love')) {
+            // ── 갤러리 프리토킹 해금 (PERFECT 엔딩 한정) ──
+            if (this.stateManager.getFlag('ending_perfect')) {
                 const charMap = { Seoyeon: 'seyoun', Yuna: 'yuna', Dain: 'dain', Teacher: 'teacher', Nurse: 'nurse' };
                 for (const [key, id] of Object.entries(charMap)) {
                     if (this.stateManager.getFlag(`isDating_${key}`)) {
