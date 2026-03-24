@@ -182,7 +182,7 @@
     },
     "bitter_epilogue_1": {
         "name": "Ich",
-        "text": "*Nach dem Abschluss. Der Kontakt wurde seltener. Einmal im Monat wurde zu einmal alle zwei Monate, und Nachrichten ungelesen zu lassen wurde zur Gewohnheit.*"
+        "text": "*Nach dem Abschluss. Der Kontakt wurde seltener. Einmal im Monat wurde zu einmal alle zwei Monate, Nachrichten ungelesen zu lassen wurde zur Gewohnheit, und eines Tages — als ich schreiben wollte und nicht wusste was — wusste ich, dass es vorbei war.*"
     },
     "bitter_epilogue_2": {
         "name": "Ich",
@@ -258,11 +258,11 @@
     },
     "true_dain_2": {
         "name": "Ich",
-        "text": "*Dain nimmt {name}s Hand und legt sie auf ihre Brust.*"
+        "text": "*Dain nimmt {name}s Hand — zieht sie zu sich und legt sie auf ihre linke Brust. Ohne ein Wort.*"
     },
     "true_dain_3": {
-        "name": "Dain",
-        "text": "Ich glaub, ich bin gerade total nervös. Leg deine Hand hierhin."
+        "name": "Ich",
+        "text": "*Der Herzschlag unter meinen Fingerspitzen ist deutlich spürbar.*"
     },
     "true_dain_4": {
         "name": "Ich",
@@ -274,7 +274,7 @@
     },
     "true_dain_6": {
         "name": "Dain",
-        "text": "Warum schaust du mich so an? Das ist peinlich."
+        "text": "*halb das Gesicht mit dem Volleyball versteckend* Warum starrst du mich so an... Das ist nicht fair."
     },
     "true_dain_7": {
         "name": "Ich",
@@ -290,7 +290,7 @@
     },
     "true_yuna_bridge": {
         "name": "Ich",
-        "text": "*Ich verließ den Dachboden und stieg aufs Dach. Wir saßen nebeneinander am Geländer. Yunas Sterne — von hier oben sind sie näher.*"
+        "text": "*Yunas Sterne sind noch da, direkt vor mir.*"
     },
     "true_dain_bridge": {
         "name": "Ich",
@@ -347,7 +347,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "Du bist echt dumm. Aber weil du zurückgekommen bist, lass ich es einmal durchgehen."
+        "text": "...Du bist wirklich begriffsstutzig. Aber weil du zurückgekommen bist, kann ich es verzeihen."
     },
     "good_1_dain": {
         "name": "Dain",
@@ -454,8 +454,8 @@
         "text": "*Seoyeon lächelte zuerst. ...Gut. Wenigstens bist du ehrlich. Es war keine Einbildung, dass ich Zähneknirschen hinter diesem Lächeln hörte.*"
     },
     "harem_2": {
-        "name": "Ich",
-        "text": "*Yuna senkte den Kopf. Lange. Und als sie wieder aufschaute, lächelten ihre trockenen Augen. ...Mistkerl. Zwei Sätze an Gefühl, komprimiert in ein einziges Wort.*"
+        "name": "Yuna",
+        "text": "...Idiot."
     },
     "harem_3": {
         "name": "Ich",
@@ -571,7 +571,7 @@
     },
     "alone_3": {
         "name": "{name}",
-        "text": "*Kirschblüten fallen vor dem Fenster. Die gleichen Blütenblätter, die mir vor fünf Tagen die Nase gestreift haben, kleben jetzt am Boden. Vom Zimmer aus hört man sie nicht einmal.*"
+        "text": "*Die Kirschblüten treiben jetzt im Wind davon.*"
     },
     "alone_4": {
         "name": "{name}",
@@ -723,5 +723,101 @@
     "hidden_good_nurse_4": {
         "name": "Ich",
         "text": "*Dieses Herz — diesmal ist es definitiv kein medizinisches Interesse.\n\n─── Schulkrankenschwester GOOD END ───*"
+    },
+    "perfect_seo_5b": {
+        "name": "Ich",
+        "text": "*Das Dach von Tag 1. Der Park von Tag 4. Und jetzt. — Derselbe Ort, eine andere Bedeutung. Jeder Moment läuft hier zusammen.*"
+    },
+    "perfect_dain_2b": {
+        "name": "Ich",
+        "text": "*Kein Ausrufezeichen. Zum ersten Mal. — Dain spricht von einem Anfang, der nicht Volleyball ist.*"
+    },
+    "perfect_dain_3b": {
+        "name": "Ich",
+        "text": "*Dain legt den Ball auf dem Spielfeld ab. Dreht sich um und lächelt. Ein Lächeln ohne Ausrufezeichen.*"
+    },
+    "perfect_epilogue_bridge_seo": {
+        "name": "System",
+        "text": "*Epilog — Ein Jahr später*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "System",
+        "text": "*Epilog — Ein Jahr später*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "System",
+        "text": "*Epilog — Ein Jahr später*"
+    },
+    "true_seo_6b": {
+        "name": "Seoyeon",
+        "text": "Ich musste immer lächeln. Aber vor dir will ich einfach ich selbst sein."
+    },
+    "true_seo_7b": {
+        "name": "Ich",
+        "text": "*Seoyeon streckt ihren kleinen Finger aus.*"
+    },
+    "true_yuna_6b": {
+        "name": "Yuna",
+        "text": "Geh nicht. Bleib heute Nacht hier."
+    },
+    "true_dain_2b": {
+        "name": "Ich",
+        "text": "*Schnell. Eine Geschwindigkeit, die keine Worte braucht.*"
+    },
+    "true_dain_8b": {
+        "name": "Ich",
+        "text": "*Das Ausrufezeichen ist zurück. — Aber diesmal ist es ein echtes.*"
+    },
+    "good_1_yuna_b": {
+        "name": "Ich",
+        "text": "*Yuna reicht mir einen Zettel. «Verirr dich nächstes Mal nicht.» — Kurz. Und warm.*"
+    },
+    "good_epilogue_1": {
+        "name": "Ich",
+        "text": "*Aber gerade dieses Schwanken hat mir gezeigt, was ich wirklich fühlte.*"
+    },
+    "good_epilogue_2": {
+        "name": "Ich",
+        "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+    },
+    "good_epilogue_3": {
+        "name": "Ich",
+        "text": "*Unvollkommene Liebe ist immer noch Liebe. Vielleicht ist sie gerade deshalb wertvoller, weil sie unvollständig ist.*"
+    },
+    "good_epilogue_1_yuna": {
+        "name": "Ich",
+        "text": "*Aber gerade dieses Schwanken hat mir gezeigt, was ich wirklich fühlte.*"
+    },
+    "good_epilogue_2_yuna": {
+        "name": "Ich",
+        "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+    },
+    "good_epilogue_3_yuna": {
+        "name": "Ich",
+        "text": "*Unvollkommene Liebe ist immer noch Liebe. Vielleicht ist sie gerade deshalb wertvoller, weil sie unvollständig ist.*"
+    },
+    "good_epilogue_1_dain": {
+        "name": "Ich",
+        "text": "*Aber gerade dieses Schwanken hat mir gezeigt, was ich wirklich fühlte.*"
+    },
+    "good_epilogue_2_dain": {
+        "name": "Ich",
+        "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+    },
+    "good_epilogue_3_dain": {
+        "name": "Ich",
+        "text": "*Unvollkommene Liebe ist immer noch Liebe. Vielleicht ist sie gerade deshalb wertvoller, weil sie unvollständig ist.*"
+    },
+    "confess_fail_cg_seo": {
+        "name": "Ich",
+        "text": ""
+    },
+    "confess_fail_cg_yuna": {
+        "name": "Ich",
+        "text": ""
+    },
+    "confess_fail_cg_dain": {
+        "name": "Ich",
+        "text": ""
     }
 }
