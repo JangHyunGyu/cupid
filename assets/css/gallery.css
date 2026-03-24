@@ -746,8 +746,8 @@ body::-webkit-scrollbar-thumb:hover {
 /* CG 그리드 */
 .cg-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(160px, 25vw, 280px), 1fr));
+    gap: clamp(10px, 2vw, 20px);
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
@@ -894,23 +894,29 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* CG 카드 정보 */
 .cg-card .card-info {
-    padding: 15px 18px;
+    padding: clamp(8px, 1.5vw, 15px) clamp(10px, 1.5vw, 18px);
     text-align: center;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
 }
 
 .cg-card .card-info h4 {
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
     color: #fff;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     font-weight: 600;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .cg-card .card-info p {
-    font-size: 0.8rem;
+    font-size: clamp(0.65rem, 1.2vw, 0.8rem);
     color: rgba(255, 200, 255, 0.8);
     font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* 

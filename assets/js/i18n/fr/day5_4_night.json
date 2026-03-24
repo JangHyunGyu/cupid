@@ -723,5 +723,101 @@
     "hidden_good_nurse_4": {
         "name": "Moi",
         "text": "*Ce cœur — cette fois, ce n'est clairement pas de l'intérêt médical.\n\n─── Infirmière GOOD END ───*"
+    },
+    "perfect_seo_5b": {
+        "name": "Moi",
+        "text": "*Le toit du Jour 1. Le parc du Jour 4. Et maintenant. — Même endroit, sens différent. Chaque moment converge ici.*"
+    },
+    "perfect_dain_2b": {
+        "name": "Moi",
+        "text": "*Pas de point d'exclamation. Pour la première fois. — Dain parle d'un début qui n'est pas le volley.*"
+    },
+    "perfect_dain_3b": {
+        "name": "Moi",
+        "text": "*Dain pose le ballon sur le terrain. Se retourne et sourit. Un sourire sans point d'exclamation.*"
+    },
+    "perfect_epilogue_bridge_seo": {
+        "name": "Système",
+        "text": "*Épilogue — Un an plus tard*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "Système",
+        "text": "*Épilogue — Un an plus tard*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "Système",
+        "text": "*Épilogue — Un an plus tard*"
+    },
+    "true_seo_6b": {
+        "name": "Seoyeon",
+        "text": "Je devais toujours sourire. Mais avec toi, je veux juste être moi-même."
+    },
+    "true_seo_7b": {
+        "name": "Moi",
+        "text": "*Seoyeon tend son petit doigt.*"
+    },
+    "true_yuna_6b": {
+        "name": "Yuna",
+        "text": "Pars pas. Reste ici ce soir."
+    },
+    "true_dain_2b": {
+        "name": "Moi",
+        "text": "*Vite. Une vitesse qui n'a pas besoin de mots.*"
+    },
+    "true_dain_8b": {
+        "name": "Moi",
+        "text": "*Le point d'exclamation est revenu. — Mais cette fois, c'est un vrai.*"
+    },
+    "good_1_yuna_b": {
+        "name": "Moi",
+        "text": "*Yuna me tend un mot. « La prochaine fois, ne te perds pas. » — Court. Et chaleureux.*"
+    },
+    "good_epilogue_1": {
+        "name": "Moi",
+        "text": "*Mais c'est cette hésitation qui m'a montré ce que je ressentais vraiment.*"
+    },
+    "good_epilogue_2": {
+        "name": "Moi",
+        "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+    },
+    "good_epilogue_3": {
+        "name": "Moi",
+        "text": "*Un amour imparfait reste un amour. Peut-être qu'il est plus précieux justement parce qu'il est incomplet.*"
+    },
+    "good_epilogue_1_yuna": {
+        "name": "Moi",
+        "text": "*Mais c'est cette hésitation qui m'a montré ce que je ressentais vraiment.*"
+    },
+    "good_epilogue_2_yuna": {
+        "name": "Moi",
+        "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+    },
+    "good_epilogue_3_yuna": {
+        "name": "Moi",
+        "text": "*Un amour imparfait reste un amour. Peut-être qu'il est plus précieux justement parce qu'il est incomplet.*"
+    },
+    "good_epilogue_1_dain": {
+        "name": "Moi",
+        "text": "*Mais c'est cette hésitation qui m'a montré ce que je ressentais vraiment.*"
+    },
+    "good_epilogue_2_dain": {
+        "name": "Moi",
+        "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+    },
+    "good_epilogue_3_dain": {
+        "name": "Moi",
+        "text": "*Un amour imparfait reste un amour. Peut-être qu'il est plus précieux justement parce qu'il est incomplet.*"
+    },
+    "confess_fail_cg_seo": {
+        "name": "Moi",
+        "text": ""
+    },
+    "confess_fail_cg_yuna": {
+        "name": "Moi",
+        "text": ""
+    },
+    "confess_fail_cg_dain": {
+        "name": "Moi",
+        "text": ""
     }
 }
