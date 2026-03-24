@@ -130,7 +130,7 @@
     },
     "bitter_seo_3": {
         "name": "Moi",
-        "text": "*Retrouvant Seoyeon au cafe. Son regard derriere ses lunettes est sec. Ni calme, ni tremblant. Juste — les yeux de quelqu'un venu tourner la page.*"
+        "text": "*J'ai quitté le café. Il pleut. Le regard de Seoyeon derrière ses lunettes était sec. Ni calme, ni tremblant. Juste — les yeux de quelqu'un venu tourner la page.*"
     },
     "bitter_yuna_1": {
         "name": "Moi",
@@ -142,7 +142,7 @@
     },
     "bitter_yuna_3": {
         "name": "Moi",
-        "text": "*Une derniere note. Glissee dans la boite aux lettres. L'ecriture de Yuna. Courte. — Comme toujours. Mais cette fois, ce n'est pas de la concision. Il n'y a simplement plus rien a ecrire.*"
+        "text": "*J'ai franchi le portail. Il pleut. — Le dernier mot de Yuna, glissé dans la boîte aux lettres. Court. Comme toujours. Mais cette fois, ce n'est pas de la concision. Il n'y a simplement plus rien à écrire.*"
     },
     "bitter_dain_1": {
         "name": "Moi",
@@ -154,7 +154,7 @@
     },
     "bitter_dain_3": {
         "name": "Moi",
-        "text": "*Les points d'exclamation sont revenus. Mais la derniere phrase n'en a pas. — Quand Dain finit par un point, c'est qu'il ne reste plus d'energie a partager.*"
+        "text": "*J'ai quitté le gymnase. Il pleut. — Les points d'exclamation sont revenus, mais la dernière phrase n'en avait pas. Quand Dain finit par un point, c'est qu'il ne reste plus d'énergie à partager.*"
     },
     "bitter_epilogue_1": {
         "name": "Moi",
@@ -266,7 +266,7 @@
     },
     "true_yuna_bridge": {
         "name": "Moi",
-        "text": "*Les étoiles de Yuna brillent encore devant mes yeux.*"
+        "text": "*J'ai quitté le grenier et suis monté sur le toit. Assis côte à côte sur la rambarde. Les étoiles de Yuna — d'ici, elles sont plus proches.*"
     },
     "true_dain_bridge": {
         "name": "Moi",
@@ -350,6 +350,18 @@
         "text": "*L'amour imparfait reste de l'amour. Peut-être est-il encore plus précieux justement parce qu'il est imparfait.*"
     },
     "good_5": {
+        "name": "{name}",
+        "text": "*Imparfait, et c'est bien ainsi. L'histoire n'est pas encore terminée.*"
+    },
+    "good_5_cg_seo": {
+        "name": "Système",
+        "text": "─── GOOD END ───"
+    },
+    "good_5_cg_yuna": {
+        "name": "Système",
+        "text": "─── GOOD END ───"
+    },
+    "good_5_cg_dain": {
         "name": "Système",
         "text": "─── GOOD END ───"
     },
@@ -511,7 +523,7 @@
     },
     "alone_3": {
         "name": "{name}",
-        "text": "*Les fleurs de cerisier tombent devant le portail. Les mêmes pétales qui m'ont effleuré le nez il y a cinq jours sont maintenant collés au sol. Ça doit glisser si on marche dessus.*"
+        "text": "*Les fleurs de cerisier tombent de l'autre côté de la vitre. Les mêmes pétales qui m'ont effleuré le nez il y a cinq jours sont maintenant collés au sol. Depuis la chambre, on ne les entend même pas.*"
     },
     "alone_4": {
         "name": "{name}",
@@ -532,6 +544,42 @@
             "Recommencer depuis le début"
         ]
     },
+    "hidden_perfect_homeroom_check": {},
+    "hidden_perfect_homeroom_1": {
+        "name": "{name}",
+        "text": "*La cérémonie est terminée. — Je suis seul dans la salle de classe vide quand la porte s'ouvre.*"
+    },
+    "hidden_perfect_homeroom_2": {
+        "name": "Homeroom Teacher",
+        "text": "Je savais que tu serais encore là. — Prépare-toi. On a un endroit où aller."
+    },
+    "hidden_perfect_homeroom_3": {
+        "name": "{name}",
+        "text": "*La terrasse d'un café. Les cerisiers virevoltent. La prof en civil — non, la personne qui n'est plus prof est assise en face de moi.*"
+    },
+    "hidden_perfect_homeroom_4": {
+        "name": "Homeroom Teacher",
+        "text": "J'ai terminé le manuscrit. Envoyé à l'éditeur. — Il y a un nom sur la première page. Le nom de mon premier lecteur.\n\n─── Homeroom Teacher PERFECT END ───"
+    },
+    "hidden_perfect_homeroom_5": {},
+    "hidden_perfect_nurse_check": {},
+    "hidden_perfect_nurse_1": {
+        "name": "{name}",
+        "text": "*La cérémonie est finie. J'ai ouvert la porte de l'infirmerie. Vide. Un pansement sur le bureau. 'Viens chez moi. L'adresse est au dos.' — Sans cœur cette fois.*"
+    },
+    "hidden_perfect_nurse_2": {
+        "name": "School Nurse",
+        "text": "*Celle qui a ouvert la porte ne porte pas de blouse blanche — mais un cardigan, pieds nus.* ...Tu es venu. Je ne pensais pas que tu viendrais vraiment."
+    },
+    "hidden_perfect_nurse_3": {
+        "name": "{name}",
+        "text": "*Côte à côte sur le canapé du salon. Le soleil se couche derrière la vitre. Au lieu d'un pansement, ce sont les doigts qui se touchent.*"
+    },
+    "hidden_perfect_nurse_4": {
+        "name": "School Nurse",
+        "text": "*Elle s'appuie contre moi.* ...Plus besoin d'excuses. Ni patient, ni élève. Juste — quelqu'un avec qui j'ai envie d'être.\n\n─── School Nurse PERFECT END ───"
+    },
+    "hidden_perfect_nurse_5": {},
     "hidden_true_homeroom_1": {
         "name": "Moi",
         "text": "*Jour de la remise des diplômes. — Le temps a passé. L'uniforme n'est plus raide.*"

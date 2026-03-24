@@ -130,7 +130,7 @@
     },
     "bitter_seo_3": {
         "name": "Me",
-        "text": "*Meeting Seoyeon at the cafe. Her gaze behind the glasses is dry. No composure, no trembling. Just — the eyes of someone who came to wrap things up.*"
+        "text": "*I left the cafe. It's raining. Seoyeon's gaze behind her glasses was dry. No composure, no trembling. Just — the eyes of someone who came to wrap things up.*"
     },
     "bitter_yuna_1": {
         "name": "Me",
@@ -142,7 +142,7 @@
     },
     "bitter_yuna_3": {
         "name": "Me",
-        "text": "*A final note. Tucked in the mailbox. Yuna's handwriting. Short. — As always. But this time it's not brevity. There's simply nothing left to write.*"
+        "text": "*I walked out the school gate. It's raining. — Yuna's last note, tucked in the mailbox. Short. As always. But this time it's not brevity. There's simply nothing left to write.*"
     },
     "bitter_dain_1": {
         "name": "Me",
@@ -154,7 +154,7 @@
     },
     "bitter_dain_3": {
         "name": "Me",
-        "text": "*The exclamation marks are back. But the last sentence has none. — When Dain ends with a period, it means there's no energy left to share.*"
+        "text": "*I left the gym. It's raining. — The exclamation marks came back, but the last sentence had none. When Dain ends with a period, it means there's no energy left to share.*"
     },
     "bitter_epilogue_1": {
         "name": "Me",
@@ -266,7 +266,7 @@
     },
     "true_yuna_bridge": {
         "name": "Me",
-        "text": "*Yuna's stars still linger before my eyes.*"
+        "text": "*I left the attic and climbed up to the rooftop. We sat side by side on the railing. Yuna's stars — they're closer from up here.*"
     },
     "true_dain_bridge": {
         "name": "Me",
@@ -350,6 +350,18 @@
         "text": "*Imperfect love is still love. Perhaps it’s even more precious because it’s imperfect.*"
     },
     "good_5": {
+        "name": "{name}",
+        "text": "*Imperfect, and that's okay. The story isn't over yet.*"
+    },
+    "good_5_cg_seo": {
+        "name": "System",
+        "text": "─── GOOD END ───"
+    },
+    "good_5_cg_yuna": {
+        "name": "System",
+        "text": "─── GOOD END ───"
+    },
+    "good_5_cg_dain": {
         "name": "System",
         "text": "─── GOOD END ───"
     },
@@ -511,7 +523,7 @@
     },
     "alone_3": {
         "name": "Me",
-        "text": "*Cherry blossoms are falling outside the gate. The same petals that brushed my nose five days ago are stuck to the ground now. Stepping on them would be slippery.*"
+        "text": "*Cherry blossoms drift past the window. The same petals that brushed my nose five days ago are stuck to the ground now. From inside the room, they don't even make a sound.*"
     },
     "alone_4": {
         "name": "Me",
@@ -532,6 +544,42 @@
             "Start over from the beginning"
         ]
     },
+    "hidden_perfect_homeroom_check": {},
+    "hidden_perfect_homeroom_1": {
+        "name": "{name}",
+        "text": "*Graduation is over. — I'm alone in the empty classroom when the door opens.*"
+    },
+    "hidden_perfect_homeroom_2": {
+        "name": "Homeroom Teacher",
+        "text": "I knew you'd still be here. — Get ready. There's somewhere we need to go."
+    },
+    "hidden_perfect_homeroom_3": {
+        "name": "{name}",
+        "text": "*A cafe terrace. Cherry blossoms drifting. The homeroom teacher in casual clothes — no, the person who's no longer a teacher sits across from me.*"
+    },
+    "hidden_perfect_homeroom_4": {
+        "name": "Homeroom Teacher",
+        "text": "I finished the manuscript. Submitted it to the publisher. — There's a name on the first page. The name of my first reader.\n\n─── Homeroom Teacher PERFECT END ───"
+    },
+    "hidden_perfect_homeroom_5": {},
+    "hidden_perfect_nurse_check": {},
+    "hidden_perfect_nurse_1": {
+        "name": "{name}",
+        "text": "*Graduation is over. I opened the nurse's office door. Empty. A single bandage on the desk. 'Come to my place. Address on the back.' — No heart this time.*"
+    },
+    "hidden_perfect_nurse_2": {
+        "name": "School Nurse",
+        "text": "*The person who opened the door isn't wearing a white coat — but a cardigan, barefoot.* ...You came. I honestly didn't think you would."
+    },
+    "hidden_perfect_nurse_3": {
+        "name": "{name}",
+        "text": "*Side by side on the living room couch. The sun is setting outside the window. Instead of a bandage, fingers are touching.*"
+    },
+    "hidden_perfect_nurse_4": {
+        "name": "School Nurse",
+        "text": "*She leans against me.* ...I don't need excuses anymore. Not a patient, not a student. Just — someone I want to be with.\n\n─── School Nurse PERFECT END ───"
+    },
+    "hidden_perfect_nurse_5": {},
     "hidden_true_homeroom_1": {
         "name": "Me",
         "text": "*Graduation day. — Time has passed. The uniform isn't stiff anymore.*"
