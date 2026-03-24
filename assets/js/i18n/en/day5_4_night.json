@@ -108,17 +108,41 @@
         "name": "Me",
         "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
     },
-    "perfect_epilogue_2": {
+    "perfect_epilogue_2_seo": {
         "name": "Me",
-        "text": "*One year later. University entrance ceremony day. There's a message on my phone.*"
+        "text": "*University entrance ceremony day. A message on my phone. 'Watered the plant today. — But come home soon.'*"
     },
-    "perfect_epilogue_3": {
+    "perfect_epilogue_2_yuna": {
         "name": "Me",
-        "text": "*A lot has changed. But some things haven't. — That person is still by my side.*"
+        "text": "*Yuna's debut novel was published. The dedication: 'To the third star.'*"
     },
-    "perfect_epilogue_4": {
+    "perfect_epilogue_2_dain": {
+        "name": "Me",
+        "text": "*Dain became a sports commentator. She smiles in front of the camera. But this time it's a real smile.*"
+    },
+    "perfect_epilogue_3_seo": {
+        "name": "Me",
+        "text": "*Seoyeon has changed. She knows it's okay not to be perfect. Unpracticed smiles have become her everyday.*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "Me",
+        "text": "*Yuna still doesn't talk much. But her sentences got longer. Only with me.*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "Me",
+        "text": "*Sometimes she says her knee hurts. Every time, I just sit beside her and say nothing. That's how we do it.*"
+    },
+    "perfect_epilogue_4_seo": {
         "name": "System",
-        "text": "─── PERFECT END ───"
+        "text": "─── PERFECT END (Seoyeon) ───"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "System",
+        "text": "─── PERFECT END (Yuna) ───"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "System",
+        "text": "─── PERFECT END (Dain) ───"
     },
     "bitter_seo_1": {
         "name": "Me",
@@ -296,14 +320,6 @@
     "true_epilogue_4": {
         "name": "Me",
         "text": "*The knee hasn't healed. The family isn't any happier. The people who left haven't come back. — But at least I don't have to practice crying alone anymore. Not anymore.*"
-    },
-    "true_epilogue_5": {
-        "name": "Me",
-        "text": ""
-    },
-    "true_epilogue_6": {
-        "name": "Me",
-        "text": ""
     },
     "true_epilogue_7": {
         "name": "System",

@@ -108,17 +108,41 @@
         "name": "僕",
         "text": "*すべての選択が一人に向いていた。5日間じゃなくて、一日一日がすべてだった。*"
     },
-    "perfect_epilogue_2": {
+    "perfect_epilogue_2_seo": {
         "name": "僕",
-        "text": "*1年後。大学入学式の日。スマホにメッセージが届いている。*"
+        "text": "*大学入学式の日。スマホにメッセージ。「今日も植木に水やった。——でも早く帰ってきて。」*"
     },
-    "perfect_epilogue_3": {
+    "perfect_epilogue_2_yuna": {
         "name": "僕",
-        "text": "*変わったことは多い。でも変わらないこともある。——あの人がそばにいるということ。*"
+        "text": "*ユナの初めての長編小説が出版された。献辞には「三番目の星へ。」とあった。*"
     },
-    "perfect_epilogue_4": {
+    "perfect_epilogue_2_dain": {
+        "name": "僕",
+        "text": "*ダインはスポーツ解説者になった。カメラの前でも笑っている。でも今度は本物の笑顔だ。*"
+    },
+    "perfect_epilogue_3_seo": {
+        "name": "僕",
+        "text": "*ソヨンが変わった。完璧じゃなくていいって知っている。練習しない笑顔が日常になった。*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "僕",
+        "text": "*ユナは相変わらず口数が少ない。でも文章の長さが変わった。僕にだけ。*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "僕",
+        "text": "*たまに膝が痛いと言う。そのたびに隣に座って何も言わない。それが僕たちのやり方だ。*"
+    },
+    "perfect_epilogue_4_seo": {
         "name": "システム",
-        "text": "─── PERFECT END ───"
+        "text": "─── PERFECT END (ソヨン) ───"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "システム",
+        "text": "─── PERFECT END (ユナ) ───"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "システム",
+        "text": "─── PERFECT END (ダイン) ───"
     },
     "bitter_seo_1": {
         "name": "僕",
@@ -296,14 +320,6 @@
     "true_epilogue_4": {
         "name": "僕",
         "text": "*膝が治ったわけじゃない。家庭が円満になったわけでもない。いなくなった人が戻ってきたわけでもない。——ただ、一人で泣く練習はしなくてよくなった。もう。*"
-    },
-    "true_epilogue_5": {
-        "name": "僕",
-        "text": ""
-    },
-    "true_epilogue_6": {
-        "name": "僕",
-        "text": ""
     },
     "true_epilogue_7": {
         "name": "システム",

@@ -108,17 +108,41 @@
         "name": "Yo",
         "text": "*Cada eleccion apuntaba a una persona. No fueron cinco dias — cada dia lo fue todo.*"
     },
-    "perfect_epilogue_2": {
+    "perfect_epilogue_2_seo": {
         "name": "Yo",
-        "text": "*Un ano despues. Dia de ingreso a la universidad. Hay un mensaje en mi telefono.*"
+        "text": "*Día de la ceremonia de ingreso a la universidad. Un mensaje en mi teléfono. 'Hoy regué la planta. — Pero vuelve pronto.'*"
     },
-    "perfect_epilogue_3": {
+    "perfect_epilogue_2_yuna": {
         "name": "Yo",
-        "text": "*Muchas cosas cambiaron. Pero algunas no. — Esa persona sigue a mi lado.*"
+        "text": "*La primera novela de Yuna fue publicada. La dedicatoria: 'A la tercera estrella.'*"
     },
-    "perfect_epilogue_4": {
+    "perfect_epilogue_2_dain": {
+        "name": "Yo",
+        "text": "*Dain se convirtió en comentarista deportiva. Sonríe frente a la cámara. Pero esta vez es una sonrisa de verdad.*"
+    },
+    "perfect_epilogue_3_seo": {
+        "name": "Yo",
+        "text": "*Seoyeon ha cambiado. Sabe que no pasa nada por no ser perfecta. Las sonrisas no ensayadas se han vuelto su día a día.*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "Yo",
+        "text": "*Yuna sigue sin hablar mucho. Pero sus frases se han vuelto más largas. Solo conmigo.*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "Yo",
+        "text": "*A veces dice que le duele la rodilla. Cada vez, me siento a su lado sin decir nada. Así somos nosotros.*"
+    },
+    "perfect_epilogue_4_seo": {
         "name": "Sistema",
-        "text": "─── PERFECT END ───"
+        "text": "─── PERFECT END (Seoyeon) ───"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "Sistema",
+        "text": "─── PERFECT END (Yuna) ───"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "Sistema",
+        "text": "─── PERFECT END (Dain) ───"
     },
     "bitter_seo_1": {
         "name": "Yo",
@@ -296,14 +320,6 @@
     "true_epilogue_4": {
         "name": "Yo",
         "text": "*Mi rodilla no se ha curado. Mi familia no es más feliz. Las personas que se fueron no han vuelto. — Pero al menos ya no tengo que practicar llorar a solas. Ya no.*"
-    },
-    "true_epilogue_5": {
-        "name": "Yo",
-        "text": ""
-    },
-    "true_epilogue_6": {
-        "name": "Yo",
-        "text": ""
     },
     "true_epilogue_7": {
         "name": "Sistema",
