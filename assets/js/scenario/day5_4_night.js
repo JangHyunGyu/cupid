@@ -1349,6 +1349,7 @@ Object.assign(SCENARIO[5], {
         "night": true,
         "fade": true,
         "bgm": "ending.mp3",
+        "setFlag": "ending_true_love",
         "next": "hidden_true_homeroom_2"
     },
     "hidden_true_homeroom_2": {
@@ -1443,6 +1444,7 @@ Object.assign(SCENARIO[5], {
         "night": true,
         "fade": true,
         "bgm": "ending.mp3",
+        "setFlag": "ending_true_love",
         "next": "hidden_true_nurse_2"
     },
     "hidden_true_nurse_2": {
