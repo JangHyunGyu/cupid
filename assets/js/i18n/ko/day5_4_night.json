@@ -321,15 +321,7 @@
         "name": "{name}",
         "text": "*무릎이 나은 건 아니다. 가정이 화목해진 것도 아니다. 사라진 사람이 돌아온 것도 아니다. — 다만, 혼자 우는 연습은 안 해도 되는 거다. 이제는.*"
     },
-    "true_epilogue_5": {
-        "name": "{name}",
-        "text": ""
-    },
-    "true_epilogue_6": {
-        "name": "{name}",
-        "text": ""
-    },
-    "true_epilogue_7": {
+"true_epilogue_7": {
         "name": "시스템",
         "text": "─── TRUE LOVE END ───"
     },
