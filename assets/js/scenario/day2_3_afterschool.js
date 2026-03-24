@@ -275,7 +275,7 @@ Object.assign(SCENARIO[2], {
                 "next": "after2_seo_sunset_joke",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 8
+                        "affinity": 5
                     }
                 }
             },
@@ -283,7 +283,7 @@ Object.assign(SCENARIO[2], {
                 "next": "after2_seo_neck_worry",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 5
+                        "affinity": 3
                     }
                 }
             }
@@ -706,6 +706,30 @@ Object.assign(SCENARIO[2], {
     "hidden_nurse_d2_5": {
         "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d2_choice1"
+    },
+    "hidden_nurse_d2_choice1": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "choices": [
+            {
+                "next": "hidden_nurse_d2_choice1_a",
+                "stats": { "Nurse": { "affinity": 8 } }
+            },
+            {
+                "next": "hidden_nurse_d2_choice1_b",
+                "stats": { "Nurse": { "affinity": 3 } }
+            }
+        ]
+    },
+    "hidden_nurse_d2_choice1_a": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_shy.png",
+        "next": "hidden_nurse_d2_6"
+    },
+    "hidden_nurse_d2_choice1_b": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d2_6"
     },
     "hidden_nurse_d2_6": {
@@ -714,6 +738,30 @@ Object.assign(SCENARIO[2], {
         "next": "hidden_nurse_d2_7"
     },
     "hidden_nurse_d2_7": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d2_choice2"
+    },
+    "hidden_nurse_d2_choice2": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "choices": [
+            {
+                "next": "hidden_nurse_d2_choice2_a",
+                "stats": { "Nurse": { "affinity": 5 } }
+            },
+            {
+                "next": "hidden_nurse_d2_choice2_b",
+                "stats": { "Nurse": { "affinity": 0 } }
+            }
+        ]
+    },
+    "hidden_nurse_d2_choice2_a": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d2_8"
+    },
+    "hidden_nurse_d2_choice2_b": {
         "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d2_8"

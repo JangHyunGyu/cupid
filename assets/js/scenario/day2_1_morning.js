@@ -340,9 +340,28 @@ Object.assign(SCENARIO[2], {
     "hidden_homeroom_d2_3": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "hidden_homeroom_d2_4"
+        "next": "hidden_homeroom_d2_choice1"
     },
-    "hidden_homeroom_d2_4": {
+    "hidden_homeroom_d2_choice1": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "choices": [
+            {
+                "next": "hidden_homeroom_d2_choice1_a",
+                "stats": { "Teacher": { "affinity": 8 } }
+            },
+            {
+                "next": "hidden_homeroom_d2_choice1_b",
+                "stats": { "Teacher": { "affinity": 3 } }
+            }
+        ]
+    },
+    "hidden_homeroom_d2_choice1_a": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d2_5"
+    },
+    "hidden_homeroom_d2_choice1_b": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_5"
@@ -373,6 +392,30 @@ Object.assign(SCENARIO[2], {
         "next": "hidden_homeroom_d2_10"
     },
     "hidden_homeroom_d2_10": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d2_choice2"
+    },
+    "hidden_homeroom_d2_choice2": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "choices": [
+            {
+                "next": "hidden_homeroom_d2_choice2_a",
+                "stats": { "Teacher": { "affinity": 5 } }
+            },
+            {
+                "next": "hidden_homeroom_d2_choice2_b",
+                "stats": { "Teacher": { "affinity": 0 } }
+            }
+        ]
+    },
+    "hidden_homeroom_d2_choice2_a": {
+        "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "next": "hidden_homeroom_d2_11"
+    },
+    "hidden_homeroom_d2_choice2_b": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_11"

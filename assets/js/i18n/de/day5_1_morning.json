@@ -57,15 +57,31 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Klassenlehrerin",
-        "text": "Hab es sieben Jahre niemandem gezeigt. — Ich sollte das eigentlich nicht tun."
+        "text": "Hab es sieben Jahre niemandem gezeigt."
     },
     "hidden_homeroom_d5_4": {
         "name": "Ich",
-        "text": "Frau Lehrerin. Ich glaube, Sie können damit aufhören."
+        "text": "*...Ich nehme das Manuskript entgegen. Es ist schwerer als gedacht.*"
     },
     "hidden_homeroom_d5_5": {
         "name": "Klassenlehrerin",
-        "text": "...Hätte nie gedacht, das von einem Schüler zu hören."
+        "text": "...Es meinem ersten Leser zu geben — ich bin nervöser als gedacht."
+    },
+    "hidden_homeroom_d5_choice": {
+        "name": "{name}",
+        "text": "*Ich halte das Manuskript. Ihre sieben Jahre liegen in meinen Händen.*",
+        "choices": [
+            "Darf ich Sie nach dem Abschluss beim Namen nennen?",
+            "Darf ich statt einer Zeile eine ganze Seite Rezension schreiben?"
+        ]
+    },
+    "hidden_homeroom_d5_choice_a": {
+        "name": "Klassenlehrerin",
+        "text": "*Ihre Lippen zittern.* ...Nach dem Abschluss."
+    },
+    "hidden_homeroom_d5_choice_b": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie lächelt. Ein Lächeln, das ich nie zuvor gesehen habe.* ...Auch zehn Seiten wären in Ordnung."
     },
     "hidden_homeroom_d5_6": {
         "name": "Klassenlehrerin",
@@ -73,7 +89,7 @@
     },
     "hidden_homeroom_d5_7": {
         "name": "Klassenlehrerin",
-        "text": "Nach dem Abschluss — treffen wir uns. Nicht als Lehrerin und Schüler. ...Sollte ich nicht. Aber nur dieses eine Mal."
+        "text": "Nach dem Abschluss — treffen wir uns. Nicht als Lehrerin und Schüler."
     },
     "hidden_homeroom_d5_8": {
         "name": "Ich",
@@ -83,7 +99,7 @@
         "name": "Klassenlehrerin",
         "text": "*Letztes Gespräch mit der Klassenlehrerin im leeren Klassenzimmer.*",
         "context": "Tag 5. Letzter Tag. Die Lehrerin übergab ihr 7-Jahre-Manuskript. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
-        "personality": "Die Lehrerin ist ehrlicher als sonst, weil es das letzte Mal ist."
+        "personality": "Die Lehrerin ist ehrlicher als sonst, weil es das letzte Mal ist. Letztes Gespräch nach der Übergabe des Manuskripts."
     },
     "hidden_nurse_d5_check": {
         "name": "Ich",
@@ -108,6 +124,22 @@
     "hidden_nurse_d5_5": {
         "name": "Schulkrankenschwester",
         "text": "...{name}. Soll ich dir ein Pflaster kleben?"
+    },
+    "hidden_nurse_d5_choice": {
+        "name": "{name}",
+        "text": "*Ich bin nicht verletzt. Sie weiß das. Sie fragt trotzdem.*",
+        "choices": [
+            "Ja, weil es das letzte Mal ist. Nur einmal.",
+            "Kein Pflaster — Ihre Telefonnummer"
+        ]
+    },
+    "hidden_nurse_d5_choice_a": {
+        "name": "Schulkrankenschwester",
+        "text": "*Ihre Hand zittert. Sie klebt das Pflaster langsam auf.* ...Wenn du sagst, es ist das letzte Mal, gehorchen meine Hände nicht mehr."
+    },
+    "hidden_nurse_d5_choice_b": {
+        "name": "Schulkrankenschwester",
+        "text": "*Ihre Augen zittern hinter der Brille.* ...Nach dem Abschluss. Versprochen."
     },
     "hidden_nurse_d5_6": {
         "name": "Schulkrankenschwester",

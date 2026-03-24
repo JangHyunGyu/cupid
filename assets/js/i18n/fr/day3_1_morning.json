@@ -6,7 +6,7 @@
     "morning3_multi_from_yuna": {},
     "morning3_start": {
         "name": "Moi",
-        "text": "*Troisième jour. J’ai fait la grasse matinée. J’ai éteint mon réveil trois fois. C’est parce que j’ai veillé tard à répondre aux trois hier soir.*"
+        "text": "*Troisième jour. J'ai fait la grasse matinée. J'ai éteint mon réveil trois fois. J'ai veillé tard à lire des messages hier soir.*"
     },
     "morning3_start_2": {
         "name": "Moi",
@@ -252,6 +252,22 @@
         "name": "Professeur Principal",
         "text": "Ce serait plus simple de dire que j'ai abandonné. Mais je continue à le sortir dans des salles vides — alors je suppose que non."
     },
+    "hidden_homeroom_d3_reveal_choice": {
+        "name": "{name}",
+        "text": "*Sept ans. Le papier de manuscrit sur le bureau est usé.*",
+        "choices": [
+            "Sept ans, c'est pas de l'abandon — c'est de la persévérance",
+            "Pourquoi vous écrivez toujours ici ?"
+        ]
+    },
+    "hidden_homeroom_d3_reveal_choice_a": {
+        "name": "Professeure",
+        "text": "*Elle reste muette un instant.* ...De la persévérance. T'es le premier à le voir comme ça."
+    },
+    "hidden_homeroom_d3_reveal_choice_b": {
+        "name": "Professeure",
+        "text": "...La salle de classe est l'endroit le plus calme. Ironique, non ?"
+    },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Professeur Principal",
         "text": "...N'en parle à personne. Un prof qui partage ça avec un élève — c'est un secret."
@@ -298,6 +314,22 @@
         "name": "Infirmière",
         "text": "C'est une consultation sentimentale ? — Prétendre que non, c'est le plus gros aveu."
     },
+    "hidden_nurse_d3_choice1": {
+        "name": "{name}",
+        "text": "*...Elle n'a pas tort.*",
+        "choices": [
+            "C'est possible, oui...",
+            "Non, c'est juste... compliqué"
+        ]
+    },
+    "hidden_nurse_d3_choice1_a": {
+        "name": "Infirmière",
+        "text": "*Remonte ses lunettes.* Honnête. C'est mieux. — Je peux pas prescrire quoi que ce soit, mais je peux écouter."
+    },
+    "hidden_nurse_d3_choice1_b": {
+        "name": "Infirmière",
+        "text": "Compliqué, c'est compliqué, que ce soit l'amour ou autre chose. N'essaie pas de ranger. Ressens, c'est tout."
+    },
     "hidden_nurse_d3_6": {
         "name": "Infirmière",
         "text": "Quand je bossais à l'hôpital. Trop de patients. Je voulais tous les sauver, mais j'ai que deux mains. Au final, j'avais l'impression de n'en soigner aucun correctement."
@@ -309,6 +341,22 @@
     "hidden_nurse_d3_8": {
         "name": "Infirmière",
         "text": "C'est pareil pour toi. N'essaie pas de t'occuper de tout le monde. — Ce serait pas mieux de vraiment regarder la seule personne qui compte ?"
+    },
+    "hidden_nurse_d3_choice2": {
+        "name": "{name}",
+        "text": "*Une seule personne, correctement — on dirait que ça ne concerne pas que l'hôpital.*",
+        "choices": [
+            "C'est pour ça que vous avez quitté l'hôpital ?",
+            "Vous aussi, vous l'avez, cette personne ?"
+        ]
+    },
+    "hidden_nurse_d3_choice2_a": {
+        "name": "Infirmière",
+        "text": "*Elle regarde par la fenêtre.* ...À moitié vrai. L'autre moitié — je ne suis pas encore prête à le dire."
+    },
+    "hidden_nurse_d3_choice2_b": {
+        "name": "Infirmière",
+        "text": "*Ses yeux tremblent derrière ses lunettes.* ...Va savoir. Ça changerait quoi ?"
     },
     "hidden_nurse_d3_9": {
         "name": "Infirmière",

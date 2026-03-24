@@ -61,7 +61,7 @@
     },
     "hidden_homeroom_d4_5": {
         "name": "Homeroom Teacher",
-        "text": "...Have you eaten? I really shouldn't do this... but one cup of coffee should be fine, right? — Well, juice, since you're a student."
+        "text": "...Have you eaten? A cup of coffee should be fine, right? — Well, juice, since you're a student."
     },
     "hidden_homeroom_d4_choice": {
         "name": "Me",
@@ -83,6 +83,22 @@
         "name": "Homeroom Teacher",
         "text": "Know what's hardest about novels? Finding the first reader. Writing can be done alone. But without someone to read it — the story never gets finished."
     },
+    "hidden_homeroom_d4_cafe_choice": {
+        "name": "{name}",
+        "text": "*She sets down her coffee cup. Her eyes are sparkling.*",
+        "choices": [
+            "That novel — who's the protagonist?",
+            "Being your first reader... that's a lot of pressure"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_choice_a": {
+        "name": "Homeroom Teacher",
+        "text": "*She wraps both hands around the cup.* ...Secret. You'll find out when you read it."
+    },
+    "hidden_homeroom_d4_cafe_choice_b": {
+        "name": "Homeroom Teacher",
+        "text": "It's not pressure. Just read it. — That alone is enough."
+    },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Homeroom Teacher",
         "text": "...Will you be my first reader?"
@@ -93,7 +109,7 @@
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Homeroom Teacher",
-        "text": "...Thanks. But don't tell anyone about this — you know? ...This is our secret. — A teacher shouldn't have secrets with a student, though."
+        "text": "...Thanks. But don't tell anyone about this — you know? ...This is our secret."
     },
     "hidden_homeroom_d4_decline": {
         "name": "Homeroom Teacher",
@@ -128,6 +144,22 @@
     "hidden_nurse_d4_5": {
         "name": "School Nurse",
         "text": "The hardest part wasn't the workload. Nobody called me by my name. 'Nurse,' 'night shift,' 'Ward 3.' All titles, not names."
+    },
+    "hidden_nurse_d4_name_choice": {
+        "name": "{name}",
+        "text": "*Her name. I've been calling her \"School Nurse\" this whole time too.*",
+        "choices": [
+            "What's your name? Not \"School Nurse\"",
+            "So that's why you came to this school"
+        ]
+    },
+    "hidden_nurse_d4_name_choice_a": {
+        "name": "School Nurse",
+        "text": "*Her eyes widen behind her glasses.* ...I'll tell you after you graduate. Hold on till then."
+    },
+    "hidden_nurse_d4_name_choice_b": {
+        "name": "School Nurse",
+        "text": "At least here, there's someone who calls me by my name. ...Even if it's just one person."
     },
     "hidden_nurse_d4_6": {
         "name": "School Nurse",

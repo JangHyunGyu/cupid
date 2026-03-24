@@ -165,7 +165,23 @@
     },
     "after_homeroom_honest_6": {
         "name": "Profesora",
-        "text": "Interés profesional. — No debería hacer esto, pero bueno."
+        "text": "Interés profesional, supongo."
+    },
+    "after_homeroom_honest_choice2": {
+        "name": "{name}",
+        "text": "*Interés profesional. Esta persona siempre esconde lo que siente detrás de su cargo.*",
+        "choices": [
+            "Si le preocupo, puede decir que le preocupo",
+            "Esperaré ese jugo con ilusión, profe"
+        ]
+    },
+    "after_homeroom_honest_choice2a": {
+        "name": "Profesora",
+        "text": "...Está bien, me preocupo. — ¿Se me nota tanto?"
+    },
+    "after_homeroom_honest_choice2b": {
+        "name": "Profesora",
+        "text": "*Suelta una risita.* No te hagas ilusiones. Es de la máquina expendedora."
     },
     "after_homeroom_honest_7": {
         "name": "Profesora",
@@ -181,13 +197,13 @@
     },
     "after_homeroom_honest_10": {
         "name": "Yo",
-        "text": "*Desaparece por el pasillo. Su largo cabello se balancea. — \"No debería hacer esto\" parece ser su frase favorita.*"
+        "text": "*Desaparece por el pasillo. Su largo cabello se balancea. — Dice que es interés profesional, pero sus ojos decían otra cosa.*"
     },
     "after_homeroom_freetalk": {
         "name": "Profesora",
         "text": "*Conversando con la profesora en el pasillo.*",
         "context": "Día 1 después de clases. La profesora detuvo al estudiante nuevo para ver cómo se adaptaba. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
-        "personality": "La profesora esconde calidez detrás de humor seco. Treinta y pocos, cabello largo castaño ondulado y cárdigan beige. Su frase es \"No debería hacer esto\". Fue aspirante a novelista."
+        "personality": "La profesora esconde calidez detrás de humor seco. Treinta y pocos, cabello largo castaño ondulado y cárdigan beige. Envuelve sus sentimientos en palabras como \"trabajo\" e \"interés profesional\". Fue aspirante a novelista."
     },
     "after_hidden_nurse_intro": {
         "name": "Yo",
@@ -236,6 +252,22 @@
     "after_nurse_enter_7": {
         "name": "Enfermera",
         "text": "No tienes fiebre, pero... necesitas relajarte un poco. Ven, acuéstate aquí. Solo diez minutos."
+    },
+    "after_nurse_enter_choice": {
+        "name": "{name}",
+        "text": "*Me acuesto en la cama. A través de la cortina, puedo ver la espalda de la enfermera.*",
+        "choices": [
+            "Usted parece más cansada que yo",
+            "Este lugar es más acogedor de lo que pensaba"
+        ]
+    },
+    "after_nurse_enter_choice_a": {
+        "name": "Enfermera",
+        "text": "*Se detiene un instante.* ...Buen ojo. Es la primera vez que un paciente se preocupa por la doctora."
+    },
+    "after_nurse_enter_choice_b": {
+        "name": "Enfermera",
+        "text": "¿Verdad? Esa es la trampa — más vale que no te hagas cliente fijo."
     },
     "after_nurse_enter_8": {
         "name": "Enfermera",

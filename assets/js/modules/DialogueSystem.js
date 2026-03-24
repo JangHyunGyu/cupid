@@ -256,8 +256,7 @@ class DialogueSystem {
             this.isTyping = true;
             this.skipTyping = false;
 
-            // 스킵 버튼 비활성화 (타이핑 중 프리토킹 스킵 방지)
-            if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = true;
+            // 스킵 버튼은 타이핑/AI 응답 대기 중에도 활성 유지
 
             // 대사창 초기화
             this.uiManager.messageEl.innerHTML = "";

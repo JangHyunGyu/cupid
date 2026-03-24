@@ -57,15 +57,31 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Professeur Principal",
-        "text": "Je ne l'ai montré à personne en sept ans. — Je devrais pas faire ça."
+        "text": "Je ne l'ai montré à personne en sept ans."
     },
     "hidden_homeroom_d5_4": {
         "name": "Moi",
-        "text": "Madame. Je crois que vous pouvez arrêter de dire ça."
+        "text": "*...Je prends le manuscrit. Il est plus lourd que ce que j'imaginais.*"
     },
     "hidden_homeroom_d5_5": {
         "name": "Professeur Principal",
-        "text": "...Jamais cru qu'un élève me dirait ça."
+        "text": "...Le donner à mon premier lecteur — je suis plus nerveuse que je croyais."
+    },
+    "hidden_homeroom_d5_choice": {
+        "name": "{name}",
+        "text": "*Je tiens le manuscrit. Ses sept années sont entre mes mains.*",
+        "choices": [
+            "Après mon diplôme, je pourrai vous appeler par votre prénom ?",
+            "Au lieu d'une ligne, je peux écrire une page entière de critique ?"
+        ]
+    },
+    "hidden_homeroom_d5_choice_a": {
+        "name": "Professeure",
+        "text": "*Ses lèvres tremblent.* ...Après ton diplôme."
+    },
+    "hidden_homeroom_d5_choice_b": {
+        "name": "Professeure",
+        "text": "*Elle sourit. Un sourire que je n'avais jamais vu.* ...Même dix pages."
     },
     "hidden_homeroom_d5_6": {
         "name": "Professeur Principal",
@@ -73,7 +89,7 @@
     },
     "hidden_homeroom_d5_7": {
         "name": "Professeur Principal",
-        "text": "Après ton diplôme — on se voit. Plus comme prof et élève. ...Je devrais pas. Mais juste cette fois. Une dernière fois."
+        "text": "Après ton diplôme — on se voit. Plus comme prof et élève."
     },
     "hidden_homeroom_d5_8": {
         "name": "Moi",
@@ -83,7 +99,7 @@
         "name": "Professeur Principal",
         "text": "*Dernière conversation avec la prof principale dans la salle vide.*",
         "context": "Jour 5. Dernier jour. La prof a remis son manuscrit. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
-        "personality": "La prof est plus honnête que d'habitude car c'est la dernière fois."
+        "personality": "La prof est plus honnête que d'habitude car c'est la dernière fois. Dernière conversation après avoir remis le manuscrit."
     },
     "hidden_nurse_d5_check": {
         "name": "Moi",
@@ -108,6 +124,22 @@
     "hidden_nurse_d5_5": {
         "name": "Infirmière",
         "text": "...{name}. Je te mets un pansement ?"
+    },
+    "hidden_nurse_d5_choice": {
+        "name": "{name}",
+        "text": "*Je ne suis pas blessé. Elle le sait. Elle demande quand même.*",
+        "choices": [
+            "Oui, puisque c'est la dernière fois. Juste une.",
+            "Pas un pansement — votre numéro"
+        ]
+    },
+    "hidden_nurse_d5_choice_a": {
+        "name": "Infirmière",
+        "text": "*Sa main tremble. Elle pose lentement le pansement.* ...Quand tu dis que c'est la dernière fois, mes mains ne suivent plus."
+    },
+    "hidden_nurse_d5_choice_b": {
+        "name": "Infirmière",
+        "text": "*Ses yeux tremblent derrière ses lunettes.* ...Après ton diplôme. Promis."
     },
     "hidden_nurse_d5_6": {
         "name": "Infirmière",

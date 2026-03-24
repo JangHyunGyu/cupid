@@ -165,7 +165,23 @@
     },
     "after_homeroom_honest_6": {
         "name": "Klassenlehrerin",
-        "text": "Pädagogisches Interesse. — Ich sollte das eigentlich nicht tun, aber naja."
+        "text": "Pädagogisches Interesse, nehme ich an."
+    },
+    "after_homeroom_honest_choice2": {
+        "name": "{name}",
+        "text": "*Pädagogisches Interesse. Dieser Mensch versteckt ihre Gefühle immer hinter ihrer Berufsbezeichnung.*",
+        "choices": [
+            "Wenn Sie sich Sorgen machen, können Sie es auch einfach sagen",
+            "Ich freue mich auf den Saft, Frau Lehrerin"
+        ]
+    },
+    "after_homeroom_honest_choice2a": {
+        "name": "Klassenlehrerin",
+        "text": "...Gut, ich mache mir Sorgen. — War das so offensichtlich?"
+    },
+    "after_homeroom_honest_choice2b": {
+        "name": "Klassenlehrerin",
+        "text": "*Unterdrückt ein Lachen.* Erwarte nicht zu viel. Ist aus dem Automaten."
     },
     "after_homeroom_honest_7": {
         "name": "Klassenlehrerin",
@@ -181,13 +197,13 @@
     },
     "after_homeroom_honest_10": {
         "name": "Ich",
-        "text": "*Sie verschwindet am Ende des Flurs. Ihre langen Haare schwingen. — \"Ich sollte das eigentlich nicht tun\" scheint ihr Lieblingssatz zu sein.*"
+        "text": "*Sie verschwindet am Ende des Flurs. Ihre langen Haare schwingen. — Pädagogisches Interesse, sagte sie, aber ihre Augen erzählten etwas anderes.*"
     },
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
         "text": "*Im Gespräch mit der Klassenlehrerin auf dem Flur.*",
         "context": "Tag 1 nach der Schule. Die Klassenlehrerin hat den neuen Schüler angehalten, um nach ihm zu sehen. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
-        "personality": "Die Klassenlehrerin versteckt Wärme hinter trockenem Humor. Anfang dreißig, braunes welliges langes Haar und beige Strickjacke. Ihr Spruch: \"Ich sollte das eigentlich nicht tun.\" Ehemalige angehende Romanautorin."
+        "personality": "Die Klassenlehrerin versteckt Wärme hinter trockenem Humor. Anfang dreißig, braunes welliges langes Haar und beige Strickjacke. Sie verpackt ihre Gefühle in Worte wie \"Arbeit\" und \"pädagogisches Interesse\". Ehemalige angehende Romanautorin."
     },
     "after_hidden_nurse_intro": {
         "name": "Ich",
@@ -236,6 +252,22 @@
     "after_nurse_enter_7": {
         "name": "Schulkrankenschwester",
         "text": "Kein Fieber, aber... du musst dich etwas entspannen. Komm, leg dich hin. Nur zehn Minuten."
+    },
+    "after_nurse_enter_choice": {
+        "name": "{name}",
+        "text": "*Ich lege mich aufs Bett. Durch den Vorhang sehe ich den Rücken der Krankenschwester.*",
+        "choices": [
+            "Sie sehen müder aus als ich, ehrlich gesagt",
+            "Hier ist es gemütlicher als gedacht"
+        ]
+    },
+    "after_nurse_enter_choice_a": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie hält kurz inne.* ...Scharfe Augen. Ist das erste Mal, dass sich ein Patient Sorgen um die Ärztin macht."
+    },
+    "after_nurse_enter_choice_b": {
+        "name": "Schulkrankenschwester",
+        "text": "Oder? Das ist die Falle — werde bloß kein Stammgast hier."
     },
     "after_nurse_enter_8": {
         "name": "Schulkrankenschwester",

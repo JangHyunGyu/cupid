@@ -6,7 +6,7 @@
     "morning3_multi_from_yuna": {},
     "morning3_start": {
         "name": "Me",
-        "text": "*Day three. I overslept. I turned off my alarm three times. Blame it on staying up late replying to all three of them last night.*"
+        "text": "*Day three. I overslept. I turned off my alarm three times. Stayed up late texting last night.*"
     },
     "morning3_start_2": {
         "name": "Me",
@@ -252,6 +252,22 @@
         "name": "Homeroom Teacher",
         "text": "It'd be easier to say I gave up. But I keep pulling it out in empty classrooms like this — so I guess I never really did."
     },
+    "hidden_homeroom_d3_reveal_choice": {
+        "name": "{name}",
+        "text": "*Seven years. The manuscript paper on the desk is worn thin.*",
+        "choices": [
+            "Seven years isn't giving up — that's persistence",
+            "Why do you always write here?"
+        ]
+    },
+    "hidden_homeroom_d3_reveal_choice_a": {
+        "name": "Homeroom Teacher",
+        "text": "*She can't find her words for a moment.* ...Persistence. You're the first person to see it that way."
+    },
+    "hidden_homeroom_d3_reveal_choice_b": {
+        "name": "Homeroom Teacher",
+        "text": "...The classroom is the quietest place. Ironic, isn't it."
+    },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Homeroom Teacher",
         "text": "...Don't tell anyone about this. A teacher sharing this with a student — it's a secret."
@@ -298,6 +314,22 @@
         "name": "School Nurse",
         "text": "Is this a relationship consultation? — Pretending it's not is the biggest giveaway."
     },
+    "hidden_nurse_d3_choice1": {
+        "name": "{name}",
+        "text": "*...She has a point.*",
+        "choices": [
+            "Maybe, yeah...",
+            "No, it's just... complicated"
+        ]
+    },
+    "hidden_nurse_d3_choice1_a": {
+        "name": "School Nurse",
+        "text": "*Pushes up her glasses.* Honest. That's better. — I can't prescribe anything, but I can listen."
+    },
+    "hidden_nurse_d3_choice1_b": {
+        "name": "School Nurse",
+        "text": "Complicated is complicated, whether it's love or anything else. Don't try to sort it out. Just feel it."
+    },
     "hidden_nurse_d3_6": {
         "name": "School Nurse",
         "text": "When I worked at the hospital. Too many patients. I wanted to save everyone, but I only have two hands. Eventually it felt like I couldn't properly care for even one."
@@ -309,6 +341,22 @@
     "hidden_nurse_d3_8": {
         "name": "School Nurse",
         "text": "Same goes for you. Don't try to take care of everyone. — Wouldn't it be better to really see the one person who matters most?"
+    },
+    "hidden_nurse_d3_choice2": {
+        "name": "{name}",
+        "text": "*One person, properly — it doesn't sound like she's only talking about the hospital.*",
+        "choices": [
+            "Is that why you left the hospital?",
+            "Do you have that one person too?"
+        ]
+    },
+    "hidden_nurse_d3_choice2_a": {
+        "name": "School Nurse",
+        "text": "*She looks out the window.* ...Half right. The other half — I'm not ready to say."
+    },
+    "hidden_nurse_d3_choice2_b": {
+        "name": "School Nurse",
+        "text": "*Her eyes waver behind her glasses.* ...Who knows. Would it change anything if I did?"
     },
     "hidden_nurse_d3_9": {
         "name": "School Nurse",

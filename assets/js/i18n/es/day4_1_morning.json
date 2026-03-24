@@ -61,7 +61,7 @@
     },
     "hidden_homeroom_d4_5": {
         "name": "Profesora",
-        "text": "...¿Comiste? No debería hacer esto... pero un café está bien, ¿no? — Bueno, un jugo, que eres estudiante."
+        "text": "...¿Comiste? Un café está bien, ¿no? — Bueno, un jugo, que eres estudiante."
     },
     "hidden_homeroom_d4_choice": {
         "name": "Yo",
@@ -83,6 +83,22 @@
         "name": "Profesora",
         "text": "¿Sabes qué es lo más difícil de escribir novelas? Encontrar al primer lector. Sin alguien que lea — la historia nunca se completa."
     },
+    "hidden_homeroom_d4_cafe_choice": {
+        "name": "{name}",
+        "text": "*Deja la taza de café. Sus ojos brillan.*",
+        "choices": [
+            "Esa novela — ¿quién es el protagonista?",
+            "Ser su primer lector... eso es mucha presión"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_choice_a": {
+        "name": "Profesora",
+        "text": "*Envuelve la taza con ambas manos.* ...Secreto. Lo sabrás cuando la leas."
+    },
+    "hidden_homeroom_d4_cafe_choice_b": {
+        "name": "Profesora",
+        "text": "No es presión. Solo léela. — Con eso es suficiente."
+    },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Profesora",
         "text": "...¿Serías mi primer lector?"
@@ -93,7 +109,7 @@
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Profesora",
-        "text": "...Gracias. Pero no le digas a nadie — ¿vale? ...Esto es nuestro secreto. — Una profesora no debería tener secretos con un alumno."
+        "text": "...Gracias. Pero no le digas a nadie — ¿vale? ...Esto es nuestro secreto."
     },
     "hidden_homeroom_d4_decline": {
         "name": "Profesora",
@@ -128,6 +144,22 @@
     "hidden_nurse_d4_5": {
         "name": "Enfermera",
         "text": "Lo más duro no era la carga de trabajo. Nadie me llamaba por mi nombre. 'Enfermera', 'turno nocturno', 'Planta 3'. Todo cargos, no nombres."
+    },
+    "hidden_nurse_d4_name_choice": {
+        "name": "{name}",
+        "text": "*Su nombre. Yo también la he llamado \"Enfermera\" todo este tiempo.*",
+        "choices": [
+            "¿Cómo se llama? No \"Enfermera\"",
+            "Entonces por eso vino a esta escuela"
+        ]
+    },
+    "hidden_nurse_d4_name_choice_a": {
+        "name": "Enfermera",
+        "text": "*Sus ojos se agrandan detrás de los lentes.* ...Te lo diré cuando te gradúes. Aguanta hasta entonces."
+    },
+    "hidden_nurse_d4_name_choice_b": {
+        "name": "Enfermera",
+        "text": "Aquí al menos hay alguien que me llama por mi nombre. ...Aunque sea solo una persona."
     },
     "hidden_nurse_d4_6": {
         "name": "Enfermera",
