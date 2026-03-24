@@ -155,7 +155,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_shy2.png",
         "sunset": true,
-        "setFlag": "day4_confession_accepted",
+        "setFlags": ["day4_confession_accepted", "isDating_Seoyeon"],
         "next": "day4_night_start"
     },
 
@@ -296,7 +296,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "sunset": true,
-        "setFlag": "day4_confession_accepted",
+        "setFlags": ["day4_confession_accepted", "isDating_Yuna"],
         "next": "day4_night_start"
     },
 
@@ -443,7 +443,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
         "sunset": true,
-        "setFlag": "day4_confession_accepted",
+        "setFlags": ["day4_confession_accepted", "isDating_Dain"],
         "next": "day4_night_start"
     },
 

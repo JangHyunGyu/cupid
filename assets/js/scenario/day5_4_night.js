@@ -76,7 +76,8 @@ Object.assign(SCENARIO[5], {
             { "condition": "route_seoyeon", "next": "ending_aff_check_seo" },
             { "condition": "route_yuna", "next": "ending_aff_check_yuna" },
             { "condition": "route_dain", "next": "ending_aff_check_dain" }
-        ]
+        ],
+        "next": "day5_ending_good"
     },
     "ending_aff_check_seo": {
         "background": "assets/images/background/top_school.png",
@@ -1252,7 +1253,7 @@ Object.assign(SCENARIO[5], {
         "night": true,
         "fade": true,
         "bgm": "ending.mp3",
-        "setFlag": "ending_perfect",
+        "setFlags": ["ending_perfect", "isDating_Teacher"],
         "next": "hidden_perfect_homeroom_2"
     },
     "hidden_perfect_homeroom_2": {
@@ -1310,7 +1311,7 @@ Object.assign(SCENARIO[5], {
         "night": true,
         "fade": true,
         "bgm": "ending.mp3",
-        "setFlag": "ending_perfect",
+        "setFlags": ["ending_perfect", "isDating_Nurse"],
         "next": "hidden_perfect_nurse_2"
     },
     "hidden_perfect_nurse_2": {
