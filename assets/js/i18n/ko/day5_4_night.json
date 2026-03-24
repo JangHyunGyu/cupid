@@ -108,17 +108,41 @@
         "name": "{name}",
         "text": "*모든 선택이 하나의 사람을 향해 있었다. 5일이 아니라, 하루하루가 전부였다.*"
     },
-    "perfect_epilogue_2": {
+    "perfect_epilogue_2_seo": {
         "name": "{name}",
-        "text": "*1년 후. 대학 입학식 날. 핸드폰에 메시지가 와 있다.*"
+        "text": "*대학 입학식 날. 핸드폰에 메시지. '오늘도 화분 물 줬어. — 근데 빨리 와.'*"
     },
-    "perfect_epilogue_3": {
+    "perfect_epilogue_2_yuna": {
         "name": "{name}",
-        "text": "*달라진 건 많다. 하지만 변하지 않은 것도 있다. — 그 사람이 내 옆에 있다는 것.*"
+        "text": "*유나의 첫 장편소설이 출판됐다. 헌정사: '세 번째 별에게.'*"
     },
-    "perfect_epilogue_4": {
+    "perfect_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*다인은 스포츠 해설가가 됐다. 카메라 앞에서도 웃고 있다. 근데 이번에는 진짜 웃음이다.*"
+    },
+    "perfect_epilogue_3_seo": {
+        "name": "{name}",
+        "text": "*서연이 달라졌다. 완벽하지 않아도 괜찮다는 걸 안다. 연습하지 않은 웃음이 일상이 됐다.*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "{name}",
+        "text": "*유나는 여전히 말이 적다. 하지만 문장의 길이가 달라졌다. 나한테만.*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*가끔 무릎이 아프다고 한다. 그때마다 옆에 앉아서 아무 말 안 한다. 그게 우리의 방식이다.*"
+    },
+    "perfect_epilogue_4_seo": {
         "name": "시스템",
-        "text": "─── PERFECT END ───"
+        "text": "─── PERFECT END (서연) ───"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "시스템",
+        "text": "─── PERFECT END (유나) ───"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "시스템",
+        "text": "─── PERFECT END (다인) ───"
     },
     "bitter_seo_1": {
         "name": "{name}",

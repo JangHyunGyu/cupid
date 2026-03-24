@@ -277,10 +277,7 @@ Object.assign(SCENARIO[5], {
     // PERFECT END — Shared Epilogue
     // =========================================================================
     "perfect_epilogue_1": {
-        "background": "assets/images/background/park.png",
         "character": null,
-        "night": true,
-        "fade": true,
         "branches": [
             { "condition": "route_seoyeon", "next": "perfect_epilogue_1_seo" },
             { "condition": "route_yuna", "next": "perfect_epilogue_1_yuna" },
@@ -291,31 +288,61 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_perfect_seoyeon.png",
         "character": null,
         "night": true,
-        "next": "perfect_epilogue_2"
+        "next": "perfect_epilogue_2_seo"
     },
     "perfect_epilogue_1_yuna": {
         "background": "assets/images/background/ending_perfect_yuna.png",
         "character": null,
         "night": true,
-        "next": "perfect_epilogue_2"
+        "next": "perfect_epilogue_2_yuna"
     },
     "perfect_epilogue_1_dain": {
         "background": "assets/images/background/ending_perfect_dain.png",
         "character": null,
         "night": true,
-        "next": "perfect_epilogue_2"
+        "next": "perfect_epilogue_2_dain"
     },
-    "perfect_epilogue_2": {
+    "perfect_epilogue_2_seo": {
         "character": null,
         "night": true,
-        "next": "perfect_epilogue_3"
+        "next": "perfect_epilogue_3_seo"
     },
-    "perfect_epilogue_3": {
+    "perfect_epilogue_2_yuna": {
         "character": null,
         "night": true,
-        "next": "perfect_epilogue_4"
+        "next": "perfect_epilogue_3_yuna"
     },
-    "perfect_epilogue_4": {
+    "perfect_epilogue_2_dain": {
+        "character": null,
+        "night": true,
+        "next": "perfect_epilogue_3_dain"
+    },
+    "perfect_epilogue_3_seo": {
+        "character": null,
+        "night": true,
+        "next": "perfect_epilogue_4_seo"
+    },
+    "perfect_epilogue_3_yuna": {
+        "character": null,
+        "night": true,
+        "next": "perfect_epilogue_4_yuna"
+    },
+    "perfect_epilogue_3_dain": {
+        "character": null,
+        "night": true,
+        "next": "perfect_epilogue_4_dain"
+    },
+    "perfect_epilogue_4_seo": {
+        "character": null,
+        "night": true,
+        "next": "day5_credits"
+    },
+    "perfect_epilogue_4_yuna": {
+        "character": null,
+        "night": true,
+        "next": "day5_credits"
+    },
+    "perfect_epilogue_4_dain": {
         "character": null,
         "night": true,
         "next": "day5_credits"
@@ -588,9 +615,7 @@ Object.assign(SCENARIO[5], {
 
     // ── Shared epilogue ──
     "true_epilogue_1": {
-        "background": "assets/images/background/park.png",
         "character": null,
-        "night": true,
         "branches": [
             { "condition": "route_seoyeon", "next": "true_epilogue_1_seo" },
             { "condition": "route_yuna", "next": "true_epilogue_1_yuna" },
