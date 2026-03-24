@@ -16,24 +16,20 @@ if not api_key:
     exit(1)
 
 prompt = (
-    "anime visual novel character sprite, clean lineart, vivid digital cel shading, "
-    "brown very short pixie cut hair above ears, green eyes, healthy bright skin tone, "
-    "bright round cute eyes, small cute button nose, baby face, 6-head-tall proportions, "
-    "dating sim art style, energetic Korean high school girl, "
-    "body tilted about 10 degrees left from front, face angled toward viewer, "
-    "athletic volleyball player, hourglass body shape, big round chest proportions, "
-    "tight uniform stretched across full rounded upper body, "
-    "narrow waist, wide hips, toned thighs, "
-    "glamorous athletic 6.5-head-tall body with petite cute face, "
-    "brown very short cropped pixie haircut barely covering ears with slightly messy sporty texture, "
-    "bright sparkling green eyes with star-shaped highlights, "
-    "healthy lightly tanned bright skin, "
-    "wearing volleyball uniform white base with orange lines ETAURS team name number 19 on chest, "
-    "navy shorts, black arm sleeve on left arm only, "
-    "right hand on hip left hand naturally at side confident pose, "
-    "bright cool smile showing teeth wide grin, energetic sporty girl vibe, "
-    "upper body portrait, 1024x1024 resolution, "
-    "solid bright green chroma key background, soft diffused front lighting"
+    "anime visual novel character sprite, detailed clean lineart, rich digital cel shading with depth, "
+    "brown very short pixie cut hair above ears with slightly messy sporty texture, "
+    "bright sparkling green eyes with star-shaped highlights, cute baby face with round eyes and small nose, "
+    "6.5-head-tall proportions, dating sim art style, energetic Korean high school girl, "
+    "body facing slightly right with face looking at viewer, left hand on hip confident pose, "
+    "athletic volleyball player with hourglass curvy figure, "
+    "large rounded chest stretching the uniform, slim toned waist, "
+    "natural athletic hips, toned thighs visible below very short navy dolphin shorts, "
+    "wearing sleeveless volleyball jersey white base with orange and navy accent lines, "
+    "ETAURS team name and number 19 printed on chest, no logo near collar, "
+    "black arm sleeve on left arm only, right arm bare, "
+    "bright cool smile showing teeth, energetic sporty girl vibe, "
+    "cut at mid-thigh level, 1024x1024 resolution, "
+    "solid black background, soft diffused front lighting with subtle rim light"
 )
 
 negative = (
