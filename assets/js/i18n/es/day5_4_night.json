@@ -337,21 +337,53 @@
         "name": "Dain",
         "text": "Oye, estaba enfadada de verdad, ¿sabes? ...Pero al final viniste a mí. Con eso me basta."
     },
-    "good_2": {
+    "good_2_seo": {
         "name": "{name}",
-        "text": "*Pero gracias a esa vacilación, logré entender cuáles eran mis verdaderos sentimientos.*"
+        "text": "*Caminamos uno al lado del otro. Los cerezos se esparcen bajo las farolas. Un pétalo cae sobre el cabello de Seoyeon.*"
     },
-    "good_3": {
-        "name": "Yo",
+    "good_3_seo": {
+        "name": "{name}",
         "text": "*No estaba perdido. Solo era el proceso de encontrarte.*"
     },
-    "good_4": {
-        "name": "Yo",
-        "text": "*El amor imperfecto también es amor. Quizás es aún más valioso precisamente por ser imperfecto.*"
-    },
-    "good_5": {
+    "good_4_seo": {
         "name": "{name}",
-        "text": "*Imperfecto, y está bien así. La historia aún no ha terminado.*"
+        "text": "*El amor imperfecto también es amor. Quizás es más valioso precisamente porque le falta algo.*"
+    },
+    "good_5_seo": {
+        "name": "{name}",
+        "text": "*Aunque el camino de cerezos se acabe, está bien. La historia aún no ha terminado.*"
+    },
+    "good_2_yuna": {
+        "name": "{name}",
+        "text": "*Subimos a la azotea. Yuna ya está apoyada en la barandilla. El paisaje nocturno se extiende a nuestros pies.*"
+    },
+    "good_3_yuna": {
+        "name": "{name}",
+        "text": "*No estaba perdido. Solo era el proceso de encontrarte.*"
+    },
+    "good_4_yuna": {
+        "name": "{name}",
+        "text": "*El amor imperfecto también es amor. Quizás es más valioso precisamente porque le falta algo.*"
+    },
+    "good_5_yuna": {
+        "name": "{name}",
+        "text": "*Se ve una estrella. Imperfecto, y está bien así. La historia aún no ha terminado.*"
+    },
+    "good_2_dain": {
+        "name": "{name}",
+        "text": "*De pie uno al lado del otro frente a la puerta del colegio. El atardecer se apaga. Dain sostiene un balón de voleibol en una mano.*"
+    },
+    "good_3_dain": {
+        "name": "{name}",
+        "text": "*No estaba perdido. Solo era el proceso de encontrarte.*"
+    },
+    "good_4_dain": {
+        "name": "{name}",
+        "text": "*El amor imperfecto también es amor. Quizás es más valioso precisamente porque le falta algo.*"
+    },
+    "good_5_dain": {
+        "name": "{name}",
+        "text": "*El sol se pone más allá de la puerta del colegio. Imperfecto, y está bien así. La historia aún no ha terminado.*"
     },
     "good_5_cg_seo": {
         "name": "Sistema",

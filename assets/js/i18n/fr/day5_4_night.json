@@ -337,21 +337,53 @@
         "name": "Dain",
         "text": "Hé, j'étais vraiment en colère, tu sais ? ...Mais au final t'es revenu vers moi. Ça me suffit."
     },
-    "good_2": {
+    "good_2_seo": {
         "name": "{name}",
-        "text": "*Mais c'est grâce à cette hésitation que j'ai compris quels étaient mes vrais sentiments.*"
+        "text": "*On marche côte à côte. Les fleurs de cerisier tourbillonnent sous les réverbères. Un pétale se pose sur les cheveux de Seoyeon.*"
     },
-    "good_3": {
-        "name": "Moi",
+    "good_3_seo": {
+        "name": "{name}",
         "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
     },
-    "good_4": {
-        "name": "Moi",
-        "text": "*L'amour imparfait reste de l'amour. Peut-être est-il encore plus précieux justement parce qu'il est imparfait.*"
-    },
-    "good_5": {
+    "good_4_seo": {
         "name": "{name}",
-        "text": "*Imparfait, et c'est bien ainsi. L'histoire n'est pas encore terminée.*"
+        "text": "*L'amour imparfait reste de l'amour. C'est peut-être justement parce qu'il manque quelque chose qu'il est si précieux.*"
+    },
+    "good_5_seo": {
+        "name": "{name}",
+        "text": "*Même quand l'allée de cerisiers prend fin, ce n'est pas grave. L'histoire n'est pas encore terminée.*"
+    },
+    "good_2_yuna": {
+        "name": "{name}",
+        "text": "*On est montés sur le toit. Yuna est déjà appuyée contre la rambarde. Le panorama nocturne s'étend à nos pieds.*"
+    },
+    "good_3_yuna": {
+        "name": "{name}",
+        "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+    },
+    "good_4_yuna": {
+        "name": "{name}",
+        "text": "*L'amour imparfait reste de l'amour. C'est peut-être justement parce qu'il manque quelque chose qu'il est si précieux.*"
+    },
+    "good_5_yuna": {
+        "name": "{name}",
+        "text": "*Une étoile est visible. Imparfait, et c'est bien ainsi. L'histoire n'est pas encore terminée.*"
+    },
+    "good_2_dain": {
+        "name": "{name}",
+        "text": "*Debout côte à côte devant le portail de l'école. Le soleil se couche. Dain tient un ballon de volley d'une main.*"
+    },
+    "good_3_dain": {
+        "name": "{name}",
+        "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+    },
+    "good_4_dain": {
+        "name": "{name}",
+        "text": "*L'amour imparfait reste de l'amour. C'est peut-être justement parce qu'il manque quelque chose qu'il est si précieux.*"
+    },
+    "good_5_dain": {
+        "name": "{name}",
+        "text": "*Le soleil disparaît derrière le portail. Imparfait, et c'est bien ainsi. L'histoire n'est pas encore terminée.*"
     },
     "good_5_cg_seo": {
         "name": "Système",

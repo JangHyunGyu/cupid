@@ -748,7 +748,7 @@ Object.assign(SCENARIO[5], {
             { "condition": "route_seoyeon", "next": "good_1_seo" },
             { "condition": "route_yuna", "next": "good_1_yuna" },
             { "condition": "route_dain", "next": "good_1_dain" },
-            { "next": "good_2" }
+            { "next": "good_2_seo" }
         ]
     },
     "good_1_seo": {
@@ -756,53 +756,108 @@ Object.assign(SCENARIO[5], {
         "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "fade": true,
-        "next": "good_2"
+        "next": "good_2_seo"
     },
     "good_1_yuna": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/yuna_smile.png",
         "night": true,
         "fade": true,
-        "next": "good_2"
+        "next": "good_2_yuna"
     },
     "good_1_dain": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/dain_pout.png",
         "night": true,
         "fade": true,
-        "next": "good_2"
+        "next": "good_2_dain"
     },
-    "good_2": {
+    // ── Seoyeon good route (벚꽃 길) ──
+    "good_2_seo": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
-        "next": "good_3"
+        "next": "good_3_seo"
     },
-    "good_3": {
+    "good_3_seo": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
-        "next": "good_4"
+        "next": "good_4_seo"
     },
-    "good_4": {
+    "good_4_seo": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
-        "next": "good_5"
+        "next": "good_5_seo"
     },
-    "good_5": {
+    "good_5_seo": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
-        "branches": [
-            { "condition": "route_seoyeon", "next": "good_5_cg_seo" },
-            { "condition": "route_yuna", "next": "good_5_cg_yuna" },
-            { "condition": "route_dain", "next": "good_5_cg_dain" }
-        ],
-        "next": "day5_credits"
+        "next": "good_5_cg_seo"
+    },
+    // ── Yuna good route (옥상) ──
+    "good_2_yuna": {
+        "background": "assets/images/background/top_school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "good_3_yuna"
+    },
+    "good_3_yuna": {
+        "background": "assets/images/background/top_school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "good_4_yuna"
+    },
+    "good_4_yuna": {
+        "background": "assets/images/background/top_school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "good_5_yuna"
+    },
+    "good_5_yuna": {
+        "background": "assets/images/background/top_school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "good_5_cg_yuna"
+    },
+    // ── Dain good route (학교 교문) ──
+    "good_2_dain": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "good_3_dain"
+    },
+    "good_3_dain": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "good_4_dain"
+    },
+    "good_4_dain": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "good_5_dain"
+    },
+    "good_5_dain": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "good_5_cg_dain"
     },
     "good_5_cg_seo": {
         "background": "assets/images/background/ending_good_seoyeon.png",
