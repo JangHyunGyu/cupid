@@ -374,6 +374,19 @@
         "name": "보건선생님",
         "text": "여기... 이렇게... 자, 됐다. 정성이야, 정성. 대충 붙이면 떨어지거든."
     },
+    "hidden_nurse_d2_choice1": {
+        "name": "{name}",
+        "text": "*밴드를 붙여주는 손이 가깝다.*",
+        "choices": ["손이 따뜻하네요", "밴드 하나에 그렇게까지 정성을"]
+    },
+    "hidden_nurse_d2_choice1_a": {
+        "name": "보건선생님",
+        "text": "*손을 슬쩍 뗀다.* ...직업병이야."
+    },
+    "hidden_nurse_d2_choice1_b": {
+        "name": "보건선생님",
+        "text": "프로니까~ 대충 하면 밴드한테 미안하지."
+    },
     "hidden_nurse_d2_6": {
         "name": "{name}",
         "text": "*밴드를 확인하는데 — 책상 위에 노트북이 열려 있다. 의료 기록이 아니라 — 개인 일기 같은 것.*"
@@ -381,6 +394,19 @@
     "hidden_nurse_d2_7": {
         "name": "보건선생님",
         "text": "그건 안 봤지? 비밀~ 선생님도 비밀이 있는 거야."
+    },
+    "hidden_nurse_d2_choice2": {
+        "name": "{name}",
+        "text": "*비밀이라며 웃는데 — 눈은 안 웃고 있다.*",
+        "choices": ["비밀 많으시네요. 하나만 알려주면 안 돼요?", "네, 안 봤어요"]
+    },
+    "hidden_nurse_d2_choice2_a": {
+        "name": "보건선생님",
+        "text": "하나? — 음, 그건 좀 더 자주 와야 알 수 있는 거야~"
+    },
+    "hidden_nurse_d2_choice2_b": {
+        "name": "보건선생님",
+        "text": "착하네. 근데 거짓말은 못 하는 타입이구나."
     },
     "hidden_nurse_d2_8": {
         "name": "보건선생님",

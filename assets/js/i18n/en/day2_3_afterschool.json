@@ -374,6 +374,22 @@
         "name": "School Nurse",
         "text": "Here... like this... there, done. It's all about care. Slap it on carelessly and it'll peel off."
     },
+    "hidden_nurse_d2_choice1": {
+        "name": "{name}",
+        "text": "*Her hands are close, applying the bandage.*",
+        "choices": [
+            "Your hands are warm",
+            "All that care for one little bandage"
+        ]
+    },
+    "hidden_nurse_d2_choice1_a": {
+        "name": "School Nurse",
+        "text": "*She pulls her hand back.* ...Occupational hazard."
+    },
+    "hidden_nurse_d2_choice1_b": {
+        "name": "School Nurse",
+        "text": "I'm a pro~ Slacking off would be an insult to the bandage."
+    },
     "hidden_nurse_d2_6": {
         "name": "Me",
         "text": "*Checking the bandage when — her laptop is open on the desk. That's not a medical record — looks more like a personal diary.*"
@@ -381,6 +397,22 @@
     "hidden_nurse_d2_7": {
         "name": "School Nurse",
         "text": "You didn't see that, right? Secret~ Even teachers have secrets."
+    },
+    "hidden_nurse_d2_choice2": {
+        "name": "{name}",
+        "text": "*She says it's a secret, laughing — but her eyes aren't laughing.*",
+        "choices": [
+            "You sure have a lot of secrets. Can't you tell me just one?",
+            "Right, I didn't see anything"
+        ]
+    },
+    "hidden_nurse_d2_choice2_a": {
+        "name": "School Nurse",
+        "text": "Just one? — Hmm, you'd have to visit a lot more to earn that~"
+    },
+    "hidden_nurse_d2_choice2_b": {
+        "name": "School Nurse",
+        "text": "Good kid. But you're the type who can't lie, aren't you."
     },
     "hidden_nurse_d2_8": {
         "name": "School Nurse",

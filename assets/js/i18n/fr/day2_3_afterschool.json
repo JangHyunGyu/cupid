@@ -374,6 +374,22 @@
         "name": "Infirmière",
         "text": "Là... comme ça... voilà. C'est une question de soin. Un pansement mal posé, ça tient pas."
     },
+    "hidden_nurse_d2_choice1": {
+        "name": "{name}",
+        "text": "*Ses mains sont proches, en train de poser le pansement.*",
+        "choices": [
+            "Vos mains sont chaudes",
+            "Tout ce soin pour un simple pansement"
+        ]
+    },
+    "hidden_nurse_d2_choice1_a": {
+        "name": "Infirmière",
+        "text": "*Elle retire discrètement sa main.* ...Déformation professionnelle."
+    },
+    "hidden_nurse_d2_choice1_b": {
+        "name": "Infirmière",
+        "text": "Je suis une pro~ Bâcler le travail, ce serait une insulte au pansement."
+    },
     "hidden_nurse_d2_6": {
         "name": "Moi",
         "text": "*En vérifiant le pansement — son ordinateur est ouvert sur le bureau. Ce n'est pas un dossier médical — on dirait un journal intime.*"
@@ -381,6 +397,22 @@
     "hidden_nurse_d2_7": {
         "name": "Infirmière",
         "text": "T'as rien vu, hein ? Secret~ Les profs aussi ont des secrets."
+    },
+    "hidden_nurse_d2_choice2": {
+        "name": "{name}",
+        "text": "*Elle dit que c'est un secret en riant — mais ses yeux ne rient pas.*",
+        "choices": [
+            "Vous avez beaucoup de secrets. Vous pouvez m'en dire un seul ?",
+            "Oui, j'ai rien vu"
+        ]
+    },
+    "hidden_nurse_d2_choice2_a": {
+        "name": "Infirmière",
+        "text": "Un seul ? — Hmm, pour ça il faudrait venir beaucoup plus souvent~"
+    },
+    "hidden_nurse_d2_choice2_b": {
+        "name": "Infirmière",
+        "text": "Sage garçon. Mais t'es du genre à pas savoir mentir, hein."
     },
     "hidden_nurse_d2_8": {
         "name": "Infirmière",

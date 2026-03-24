@@ -374,6 +374,22 @@
         "name": "Schulkrankenschwester",
         "text": "Hier... so... fertig. Mit Sorgfalt, sonst hält's nicht."
     },
+    "hidden_nurse_d2_choice1": {
+        "name": "{name}",
+        "text": "*Ihre Hände sind nah, beim Pflaster aufkleben.*",
+        "choices": [
+            "Ihre Hände sind warm",
+            "So viel Sorgfalt für ein kleines Pflaster"
+        ]
+    },
+    "hidden_nurse_d2_choice1_a": {
+        "name": "Schulkrankenschwester",
+        "text": "*Zieht ihre Hand unauffällig zurück.* ...Berufskrankheit."
+    },
+    "hidden_nurse_d2_choice1_b": {
+        "name": "Schulkrankenschwester",
+        "text": "Bin halt Profi~ Schludern wäre dem Pflaster gegenüber respektlos."
+    },
     "hidden_nurse_d2_6": {
         "name": "Ich",
         "text": "*Beim Prüfen des Pflasters — ihr Laptop steht offen auf dem Tisch. Das ist keine Krankenakte — sieht eher wie ein persönliches Tagebuch aus.*"
@@ -381,6 +397,22 @@
     "hidden_nurse_d2_7": {
         "name": "Schulkrankenschwester",
         "text": "Das hast du nicht gesehen, oder? Geheimnis~ Auch Lehrer haben Geheimnisse."
+    },
+    "hidden_nurse_d2_choice2": {
+        "name": "{name}",
+        "text": "*Sie sagt, es sei ein Geheimnis, und lacht — aber ihre Augen lachen nicht.*",
+        "choices": [
+            "Sie haben viele Geheimnisse. Können Sie mir nicht eins verraten?",
+            "Ja, ich hab nichts gesehen"
+        ]
+    },
+    "hidden_nurse_d2_choice2_a": {
+        "name": "Schulkrankenschwester",
+        "text": "Nur eins? — Hmm, dafür müsstest du schon öfter vorbeikommen~"
+    },
+    "hidden_nurse_d2_choice2_b": {
+        "name": "Schulkrankenschwester",
+        "text": "Braver Junge. Aber du bist der Typ, der nicht lügen kann, oder?"
     },
     "hidden_nurse_d2_8": {
         "name": "Schulkrankenschwester",

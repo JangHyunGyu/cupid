@@ -165,7 +165,23 @@
     },
     "after_homeroom_honest_6": {
         "name": "Homeroom Teacher",
-        "text": "Professional concern. — I really shouldn't be doing this, but hey."
+        "text": "Professional concern, I guess."
+    },
+    "after_homeroom_honest_choice2": {
+        "name": "{name}",
+        "text": "*Professional concern. This person always hides what she feels behind her title.*",
+        "choices": [
+            "If you're worried, you can just say you're worried",
+            "I'll look forward to that juice, ma'am"
+        ]
+    },
+    "after_homeroom_honest_choice2a": {
+        "name": "Homeroom Teacher",
+        "text": "...Fine, I'm worried. — Was it that obvious?"
+    },
+    "after_homeroom_honest_choice2b": {
+        "name": "Homeroom Teacher",
+        "text": "*Stifles a laugh.* Don't get your hopes up. It's from the vending machine."
     },
     "after_homeroom_honest_7": {
         "name": "Homeroom Teacher",
@@ -181,13 +197,13 @@
     },
     "after_homeroom_honest_10": {
         "name": "Me",
-        "text": "*She disappears down the hallway. Her long hair sways. — \"I really shouldn't be doing this\" seems to be her catchphrase.*"
+        "text": "*She disappears down the hallway. Her long hair sways. — She called it professional concern, but her eyes told a different story.*"
     },
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Chatting with the homeroom teacher in the hallway.*",
         "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check on them. The student was honest about feeling overwhelmed. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
-        "personality": "The homeroom teacher hides warmth behind dry humor. Early 30s female teacher with brown wavy long hair and beige cardigan, deadpan delivery. Her catchphrase is \"I really shouldn't be doing this.\" Former aspiring novelist."
+        "personality": "The homeroom teacher hides warmth behind dry humor and deadpan delivery. Early 30s female teacher with brown wavy long hair and beige cardigan. She wraps her feelings in words like \"work\" and \"professional concern.\" Former aspiring novelist."
     },
     "after_hidden_nurse_intro": {
         "name": "Me",
@@ -236,6 +252,22 @@
     "after_nurse_enter_7": {
         "name": "School Nurse",
         "text": "No fever, but... you need to relax a bit. Here, lie down. Just ten minutes."
+    },
+    "after_nurse_enter_choice": {
+        "name": "{name}",
+        "text": "*I lie down on the bed. Through the curtain, I can see the nurse's back.*",
+        "choices": [
+            "You look more tired than I do, actually",
+            "This place is cozier than I expected"
+        ]
+    },
+    "after_nurse_enter_choice_a": {
+        "name": "School Nurse",
+        "text": "*She pauses.* ...Sharp eyes. First time a patient's worried about the doctor."
+    },
+    "after_nurse_enter_choice_b": {
+        "name": "School Nurse",
+        "text": "Right? That's the trap though — you'd better not become a regular here."
     },
     "after_nurse_enter_8": {
         "name": "School Nurse",

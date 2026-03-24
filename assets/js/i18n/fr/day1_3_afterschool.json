@@ -165,7 +165,23 @@
     },
     "after_homeroom_honest_6": {
         "name": "Professeur Principal",
-        "text": "Intérêt pédagogique. — Je devrais pas faire ça, mais bon."
+        "text": "Intérêt pédagogique, j'imagine."
+    },
+    "after_homeroom_honest_choice2": {
+        "name": "{name}",
+        "text": "*Intérêt pédagogique. Cette personne cache toujours ce qu'elle ressent derrière son titre.*",
+        "choices": [
+            "Si vous êtes inquiète, dites juste que vous êtes inquiète",
+            "J'attendrai ce jus avec impatience, madame"
+        ]
+    },
+    "after_homeroom_honest_choice2a": {
+        "name": "Professeure",
+        "text": "...D'accord, je m'inquiète. — C'était si évident ?"
+    },
+    "after_homeroom_honest_choice2b": {
+        "name": "Professeure",
+        "text": "*Étouffe un rire.* T'emballe pas. C'est du distributeur."
     },
     "after_homeroom_honest_7": {
         "name": "Professeur Principal",
@@ -181,13 +197,13 @@
     },
     "after_homeroom_honest_10": {
         "name": "Moi",
-        "text": "*Elle disparaît au bout du couloir. Ses longs cheveux se balancent. — \"Je devrais pas faire ça\" semble être sa phrase fétiche.*"
+        "text": "*Elle disparaît au bout du couloir. Ses longs cheveux se balancent. — Elle appelle ça de l'intérêt pédagogique, mais ses yeux racontaient autre chose.*"
     },
     "after_homeroom_freetalk": {
         "name": "Professeur Principal",
         "text": "*En train de discuter avec la prof principale dans le couloir.*",
         "context": "Jour 1 après les cours. La prof principale a arrêté le nouvel élève pour prendre de ses nouvelles. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
-        "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Début de trentaine, longs cheveux bruns ondulés et cardigan beige. Sa phrase fétiche : \"Je devrais pas faire ça\". Ancienne aspirante romancière."
+        "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Début de trentaine, longs cheveux bruns ondulés et cardigan beige. Elle enveloppe ses sentiments dans des mots comme \"boulot\" et \"intérêt pédagogique\". Ancienne aspirante romancière."
     },
     "after_hidden_nurse_intro": {
         "name": "Moi",
@@ -236,6 +252,22 @@
     "after_nurse_enter_7": {
         "name": "Infirmière",
         "text": "Pas de fièvre, mais... il faut te détendre un peu. Allez, allonge-toi. Dix minutes seulement."
+    },
+    "after_nurse_enter_choice": {
+        "name": "{name}",
+        "text": "*Je m'allonge sur le lit. À travers le rideau, j'aperçois le dos de l'infirmière.*",
+        "choices": [
+            "Vous avez l'air plus fatiguée que moi, en fait",
+            "C'est plus douillet que je pensais, ici"
+        ]
+    },
+    "after_nurse_enter_choice_a": {
+        "name": "Infirmière",
+        "text": "*Elle s'arrête un instant.* ...T'as l'œil. C'est la première fois qu'un patient s'inquiète pour le médecin."
+    },
+    "after_nurse_enter_choice_b": {
+        "name": "Infirmière",
+        "text": "Hein ? C'est le piège — faudrait pas que tu deviennes un habitué."
     },
     "after_nurse_enter_8": {
         "name": "Infirmière",

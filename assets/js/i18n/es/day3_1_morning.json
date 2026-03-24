@@ -6,7 +6,7 @@
     "morning3_multi_from_yuna": {},
     "morning3_start": {
         "name": "Yo",
-        "text": "*Tercer día. Me quedé dormido. Apagué la alarma tres veces. Todo por quedarme despierto hasta tarde respondiendo a las tres anoche.*"
+        "text": "*Tercer día. Me quedé dormido. Apagué la alarma tres veces. Me desvelé anoche leyendo mensajes.*"
     },
     "morning3_start_2": {
         "name": "Yo",
@@ -252,6 +252,22 @@
         "name": "Profesora",
         "text": "Sería más fácil decir que lo dejé. Pero sigo sacándolo en aulas vacías — así que supongo que nunca lo hice."
     },
+    "hidden_homeroom_d3_reveal_choice": {
+        "name": "{name}",
+        "text": "*Siete años. El papel de manuscrito sobre el escritorio está desgastado.*",
+        "choices": [
+            "Siete años no es rendirse — es perseverancia",
+            "¿Por qué siempre escribe aquí?"
+        ]
+    },
+    "hidden_homeroom_d3_reveal_choice_a": {
+        "name": "Profesora",
+        "text": "*Se queda sin palabras un momento.* ...Perseverancia. Eres la primera persona que lo ve así."
+    },
+    "hidden_homeroom_d3_reveal_choice_b": {
+        "name": "Profesora",
+        "text": "...El aula es el lugar más silencioso. Irónico, ¿no?"
+    },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Profesora",
         "text": "...No le digas esto a nadie. Una profesora compartiéndole esto a un alumno — es un secreto."
@@ -298,6 +314,22 @@
         "name": "Enfermera",
         "text": "¿Esto es una consulta sentimental? — Fingir que no lo es es lo que más te delata."
     },
+    "hidden_nurse_d3_choice1": {
+        "name": "{name}",
+        "text": "*...Tiene razón.*",
+        "choices": [
+            "Puede que se parezca, sí...",
+            "No, es solo que... es complicado"
+        ]
+    },
+    "hidden_nurse_d3_choice1_a": {
+        "name": "Enfermera",
+        "text": "*Se acomoda los lentes.* Honesto. Eso está bien. — No puedo recetarte nada, pero puedo escuchar."
+    },
+    "hidden_nurse_d3_choice1_b": {
+        "name": "Enfermera",
+        "text": "Lo complicado es complicado, sea amor o lo que sea. No intentes ordenarlo. Solo siéntelo."
+    },
     "hidden_nurse_d3_6": {
         "name": "Enfermera",
         "text": "Cuando trabajaba en el hospital. Demasiados pacientes. Quería salvarlos a todos, pero solo tengo dos manos. Al final sentía que no podía cuidar bien ni a uno."
@@ -309,6 +341,22 @@
     "hidden_nurse_d3_8": {
         "name": "Enfermera",
         "text": "Tú también. No intentes cuidar a todos. — ¿No sería mejor ver bien a la persona que realmente importa?"
+    },
+    "hidden_nurse_d3_choice2": {
+        "name": "{name}",
+        "text": "*A una persona, como se debe — no parece hablar solo del hospital.*",
+        "choices": [
+            "¿Por eso dejó el hospital?",
+            "¿Usted también tiene a esa persona?"
+        ]
+    },
+    "hidden_nurse_d3_choice2_a": {
+        "name": "Enfermera",
+        "text": "*Mira por la ventana.* ...A medias. La otra mitad — aún no quiero decirla."
+    },
+    "hidden_nurse_d3_choice2_b": {
+        "name": "Enfermera",
+        "text": "*Sus ojos tiemblan detrás de los lentes.* ...Quién sabe. ¿Cambiaría algo si la tuviera?"
     },
     "hidden_nurse_d3_9": {
         "name": "Enfermera",

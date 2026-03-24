@@ -203,9 +203,21 @@
         "name": "Klassenlehrerin",
         "text": "Hab dein altes Zeugnis gesehen. Deine Deutschnoten waren gut. Liest du gerne?"
     },
-    "hidden_homeroom_d2_4": {
-        "name": "Ich",
-        "text": "Lesen ja. — Schreiben eher nicht."
+    "hidden_homeroom_d2_choice1": {
+        "name": "{name}",
+        "text": "*Lesen. Sie schaut sich sogar die Zeugnisse an.*",
+        "choices": [
+            "Und Sie? Was lesen Sie?",
+            "Ja, ich lese gern"
+        ]
+    },
+    "hidden_homeroom_d2_choice1_a": {
+        "name": "Klassenlehrerin",
+        "text": "*Zögert kurz.* ...Ich? Dienstliche Unterlagen. — Was hast du erwartet?"
+    },
+    "hidden_homeroom_d2_choice1_b": {
+        "name": "Klassenlehrerin",
+        "text": "...Okay. War nur eine Frage."
     },
     "hidden_homeroom_d2_5": {
         "name": "Klassenlehrerin",
@@ -231,9 +243,25 @@
         "name": "Klassenlehrerin",
         "text": "Naja, dass eine Lehrerin sich um Schüler sorgt, ist selbstverständlich. Dienstlich."
     },
+    "hidden_homeroom_d2_choice2": {
+        "name": "{name}",
+        "text": "*Sie sagt, es sei Arbeit, aber das Lächeln in ihren Augen bleibt.*",
+        "choices": [
+            "Für Arbeit sehen Sie ziemlich zufrieden aus",
+            "Danke, dass Sie sich kümmern"
+        ]
+    },
+    "hidden_homeroom_d2_choice2_a": {
+        "name": "Klassenlehrerin",
+        "text": "*Ihr Ausdruck wird kurz steif.* ...Mein Gesicht unter Kontrolle zu halten ist auch Teil der Arbeit."
+    },
+    "hidden_homeroom_d2_choice2_b": {
+        "name": "Klassenlehrerin",
+        "text": "Selbstverständlich. Geh schon."
+    },
     "hidden_homeroom_d2_11": {
         "name": "Klassenlehrerin",
-        "text": "...Ich sollte das eigentlich nicht tun. Wenn ich den Neuen bevorzuge, reden die anderen."
+        "text": "...Wenn ich den Neuen bevorzuge, reden die anderen."
     },
     "hidden_homeroom_d2_12": {
         "name": "Ich",

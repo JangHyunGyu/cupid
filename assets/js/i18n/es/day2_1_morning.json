@@ -203,9 +203,21 @@
         "name": "Profesora",
         "text": "Vi tu expediente académico. Tenías buenas notas en lengua. ¿Te gusta leer?"
     },
-    "hidden_homeroom_d2_4": {
-        "name": "Yo",
-        "text": "Leer sí. — Escribir, no tanto."
+    "hidden_homeroom_d2_choice1": {
+        "name": "{name}",
+        "text": "*Leer. Hasta se mira las notas del expediente.*",
+        "choices": [
+            "¿Y usted? ¿Qué lee?",
+            "Sí, me gusta leer"
+        ]
+    },
+    "hidden_homeroom_d2_choice1_a": {
+        "name": "Profesora",
+        "text": "*Duda un instante.* ...¿Yo? Documentos de trabajo. — ¿Qué esperabas?"
+    },
+    "hidden_homeroom_d2_choice1_b": {
+        "name": "Profesora",
+        "text": "...Ya. Solo preguntaba."
     },
     "hidden_homeroom_d2_5": {
         "name": "Profesora",
@@ -231,9 +243,25 @@
         "name": "Profesora",
         "text": "Bueno, que una profesora se preocupe por sus alumnos es normal. Es trabajo, trabajo."
     },
+    "hidden_homeroom_d2_choice2": {
+        "name": "{name}",
+        "text": "*Dice que es trabajo, pero aún le queda una sonrisa en los ojos.*",
+        "choices": [
+            "Para ser trabajo, se la ve bastante contenta",
+            "Gracias por preocuparse"
+        ]
+    },
+    "hidden_homeroom_d2_choice2_a": {
+        "name": "Profesora",
+        "text": "*Su expresión se tensa levemente.* ...Controlar la expresión también es parte del trabajo."
+    },
+    "hidden_homeroom_d2_choice2_b": {
+        "name": "Profesora",
+        "text": "Es lo normal. Anda, vete."
+    },
     "hidden_homeroom_d2_11": {
         "name": "Profesora",
-        "text": "...No debería hacer esto. Si le doy trato especial al nuevo, los demás hablarán."
+        "text": "...Si le doy trato especial al nuevo, los demás hablarán."
     },
     "hidden_homeroom_d2_12": {
         "name": "Yo",

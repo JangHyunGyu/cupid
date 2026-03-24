@@ -374,6 +374,22 @@
         "name": "Enfermera",
         "text": "Aquí... así... listo. Es cuestión de cuidado. Si lo pones mal, se despega."
     },
+    "hidden_nurse_d2_choice1": {
+        "name": "{name}",
+        "text": "*Sus manos están cerca, poniendo la tirita.*",
+        "choices": [
+            "Tiene las manos cálidas",
+            "Tanta dedicación por una simple tirita"
+        ]
+    },
+    "hidden_nurse_d2_choice1_a": {
+        "name": "Enfermera",
+        "text": "*Retira la mano disimuladamente.* ...Deformación profesional."
+    },
+    "hidden_nurse_d2_choice1_b": {
+        "name": "Enfermera",
+        "text": "Soy una profesional~ Si la pongo mal, le falto el respeto a la tirita."
+    },
     "hidden_nurse_d2_6": {
         "name": "Yo",
         "text": "*Revisando la tirita cuando — su portátil está abierto en el escritorio. No es un historial médico — parece un diario personal.*"
@@ -381,6 +397,22 @@
     "hidden_nurse_d2_7": {
         "name": "Enfermera",
         "text": "No viste eso, ¿verdad? Secreto~ Los profesores también tienen secretos."
+    },
+    "hidden_nurse_d2_choice2": {
+        "name": "{name}",
+        "text": "*Dice que es un secreto, sonriendo — pero sus ojos no sonríen.*",
+        "choices": [
+            "Tiene muchos secretos. ¿No me puede contar solo uno?",
+            "Sí, no vi nada"
+        ]
+    },
+    "hidden_nurse_d2_choice2_a": {
+        "name": "Enfermera",
+        "text": "¿Solo uno? — Mmm, para eso tendrías que venir mucho más seguido~"
+    },
+    "hidden_nurse_d2_choice2_b": {
+        "name": "Enfermera",
+        "text": "Buen chico. Pero eres de los que no saben mentir, ¿verdad?"
     },
     "hidden_nurse_d2_8": {
         "name": "Enfermera",

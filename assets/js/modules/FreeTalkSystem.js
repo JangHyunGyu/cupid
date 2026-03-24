@@ -427,17 +427,22 @@ class FreeTalkSystem {
 
     /** 프리토킹 스킵 */
     async skipFreeTalk() {
-        if (this.dialogueSystem.isCurrentlyTyping() || !this.isFreeTalking) return;
+        if (!this.isFreeTalking) return;
 
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const confirmMsg = { es: "¿Detener la conversación y continuar?", ja: "会話を中断して次のシーンに進みますか？", en: "Stop the conversation and proceed?", fr: "Arrêter la conversation et continuer ?", de: "Gespräch beenden und fortfahren?" }[lang] || "대화를 중단하고 다음 장면으로 넘어가시겠습니까?";
 
         const confirmed = await this.uiManager.showModal(confirmMsg);
         if (confirmed) {
+            // 타이핑 중이면 중단
+            if (this.dialogueSystem.isCurrentlyTyping()) {
+                this.dialogueSystem.skipTyping();
+            }
             this.freeTalkTurns = this.currentMaxTurns;
             this.stateManager.setFlag(`messaged_${this.currentSceneId}`);
             this.uiManager.chatContainer.style.display = 'none';
             this.isFreeTalking = false;
+            this.isProcessingChat = false;
 
             const endMsg = { es: "\n\n(La conversación ha terminado.)", ja: "\n\n（会話が終了しました。）", en: "\n\n(Conversation ended. Click to continue.)", fr: "\n\n(La conversation est terminée.)", de: "\n\n(Gespräch beendet. Klicke, um fortzufahren.)" }[lang] || "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.textContent += endMsg;
@@ -524,7 +529,6 @@ class FreeTalkSystem {
 
         // 로딩 상태
         this.uiManager.chatSendBtn.disabled = true;
-        if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = true;
         this.uiManager.chatInput.disabled = true;
         const originalBtnContent = this.uiManager.chatSendBtn.innerHTML;
         this.uiManager.chatSendBtn.innerHTML = `<span class="loading-dots">...</span>`;

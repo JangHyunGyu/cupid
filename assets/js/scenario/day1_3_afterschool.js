@@ -368,6 +368,30 @@ Object.assign(SCENARIO[1], {
     "after_homeroom_honest_6": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
+        "next": "after_homeroom_honest_choice2"
+    },
+    "after_homeroom_honest_choice2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "choices": [
+            {
+                "next": "after_homeroom_honest_choice2a",
+                "stats": { "Teacher": { "affinity": 8 } }
+            },
+            {
+                "next": "after_homeroom_honest_choice2b",
+                "stats": { "Teacher": { "affinity": 3 } }
+            }
+        ]
+    },
+    "after_homeroom_honest_choice2a": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "next": "after_homeroom_honest_7"
+    },
+    "after_homeroom_honest_choice2b": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_smile.png",
         "next": "after_homeroom_honest_7"
     },
     "after_homeroom_honest_7": {
@@ -461,6 +485,30 @@ Object.assign(SCENARIO[1], {
         "next": "after_nurse_enter_7"
     },
     "after_nurse_enter_7": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "after_nurse_enter_choice"
+    },
+    "after_nurse_enter_choice": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "choices": [
+            {
+                "next": "after_nurse_enter_choice_a",
+                "stats": { "Nurse": { "affinity": 8 } }
+            },
+            {
+                "next": "after_nurse_enter_choice_b",
+                "stats": { "Nurse": { "affinity": 3 } }
+            }
+        ]
+    },
+    "after_nurse_enter_choice_a": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_shy.png",
+        "next": "after_nurse_enter_8"
+    },
+    "after_nurse_enter_choice_b": {
         "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_8"

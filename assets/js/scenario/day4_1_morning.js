@@ -144,6 +144,30 @@ Object.assign(SCENARIO[4], {
     "hidden_homeroom_d4_cafe_3": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d4_cafe_choice"
+    },
+    "hidden_homeroom_d4_cafe_choice": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "choices": [
+            {
+                "next": "hidden_homeroom_d4_cafe_choice_a",
+                "stats": { "Teacher": { "affinity": 10 } }
+            },
+            {
+                "next": "hidden_homeroom_d4_cafe_choice_b",
+                "stats": { "Teacher": { "affinity": 5 } }
+            }
+        ]
+    },
+    "hidden_homeroom_d4_cafe_choice_a": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "next": "hidden_homeroom_d4_cafe_4"
+    },
+    "hidden_homeroom_d4_cafe_choice_b": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_cafe_4"
     },
     "hidden_homeroom_d4_cafe_4": {
@@ -206,6 +230,30 @@ Object.assign(SCENARIO[4], {
         "next": "hidden_nurse_d4_5"
     },
     "hidden_nurse_d4_5": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "hidden_nurse_d4_name_choice"
+    },
+    "hidden_nurse_d4_name_choice": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_normal.png",
+        "choices": [
+            {
+                "next": "hidden_nurse_d4_name_choice_a",
+                "stats": { "Nurse": { "affinity": 10 } }
+            },
+            {
+                "next": "hidden_nurse_d4_name_choice_b",
+                "stats": { "Nurse": { "affinity": 5 } }
+            }
+        ]
+    },
+    "hidden_nurse_d4_name_choice_a": {
+        "background": "assets/images/background/nurse_room.jpg",
+        "character": "assets/images/characters/nurse_shy.png",
+        "next": "hidden_nurse_d4_6"
+    },
+    "hidden_nurse_d4_name_choice_b": {
         "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_6"

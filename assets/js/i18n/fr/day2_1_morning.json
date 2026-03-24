@@ -203,9 +203,21 @@
         "name": "Professeur Principal",
         "text": "J'ai vu ton ancien bulletin. T'avais de bonnes notes en français. T'aimes lire ?"
     },
-    "hidden_homeroom_d2_4": {
-        "name": "Moi",
-        "text": "J'aime lire. — Écrire, pas trop."
+    "hidden_homeroom_d2_choice1": {
+        "name": "{name}",
+        "text": "*Lire. Elle vérifie même les bulletins de notes.*",
+        "choices": [
+            "Et vous ? Vous lisez quoi ?",
+            "Oui, j'aime lire"
+        ]
+    },
+    "hidden_homeroom_d2_choice1_a": {
+        "name": "Professeure",
+        "text": "*Hésite un instant.* ...Moi ? Des dossiers. — Tu t'attendais à quoi ?"
+    },
+    "hidden_homeroom_d2_choice1_b": {
+        "name": "Professeure",
+        "text": "...D'accord. Je demandais, c'est tout."
     },
     "hidden_homeroom_d2_5": {
         "name": "Professeur Principal",
@@ -231,9 +243,25 @@
         "name": "Professeur Principal",
         "text": "Bon, un prof qui s'inquiète pour ses élèves, c'est normal. C'est le boulot."
     },
+    "hidden_homeroom_d2_choice2": {
+        "name": "{name}",
+        "text": "*Elle dit que c'est du boulot, mais il y a encore un sourire au coin des yeux.*",
+        "choices": [
+            "Pour du boulot, vous avez l'air drôlement contente",
+            "Merci de prendre soin de moi"
+        ]
+    },
+    "hidden_homeroom_d2_choice2_a": {
+        "name": "Professeure",
+        "text": "*Son expression se fige légèrement.* ...Gérer ses expressions, ça fait aussi partie du boulot."
+    },
+    "hidden_homeroom_d2_choice2_b": {
+        "name": "Professeure",
+        "text": "C'est normal. Allez, file."
+    },
     "hidden_homeroom_d2_11": {
         "name": "Professeur Principal",
-        "text": "...Je devrais pas faire ça. Si je fais du favoritisme avec le nouveau, les autres vont jaser."
+        "text": "...Si je fais du favoritisme avec le nouveau, les autres vont jaser."
     },
     "hidden_homeroom_d2_12": {
         "name": "Moi",

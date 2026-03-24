@@ -57,15 +57,31 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Profesora",
-        "text": "No se lo he mostrado a nadie en siete años. — No debería hacer esto."
+        "text": "No se lo he mostrado a nadie en siete años."
     },
     "hidden_homeroom_d5_4": {
         "name": "Yo",
-        "text": "Profe. Creo que ya puede dejar de decir eso."
+        "text": "*...Recibo el manuscrito. Es más pesado de lo que esperaba.*"
     },
     "hidden_homeroom_d5_5": {
         "name": "Profesora",
-        "text": "...Nunca pensé que escucharía eso de un alumno."
+        "text": "...Dárselo a mi primer lector — estoy más nerviosa de lo que pensaba."
+    },
+    "hidden_homeroom_d5_choice": {
+        "name": "{name}",
+        "text": "*Sostengo el manuscrito. Sus siete años están en mis manos.*",
+        "choices": [
+            "Cuando me gradúe, ¿puedo llamarla por su nombre?",
+            "¿Puedo escribir una página entera de reseña en vez de una línea?"
+        ]
+    },
+    "hidden_homeroom_d5_choice_a": {
+        "name": "Profesora",
+        "text": "*Le tiemblan los labios.* ...Cuando te gradúes."
+    },
+    "hidden_homeroom_d5_choice_b": {
+        "name": "Profesora",
+        "text": "*Sonríe. Una sonrisa que nunca había visto.* ...Aunque sean diez páginas."
     },
     "hidden_homeroom_d5_6": {
         "name": "Profesora",
@@ -73,7 +89,7 @@
     },
     "hidden_homeroom_d5_7": {
         "name": "Profesora",
-        "text": "Cuando te gradúes — vamos a vernos. No como profesora y alumno. ...No debería. Pero solo esta vez. La última."
+        "text": "Cuando te gradúes — vamos a vernos. No como profesora y alumno."
     },
     "hidden_homeroom_d5_8": {
         "name": "Yo",
@@ -83,7 +99,7 @@
         "name": "Profesora",
         "text": "*Última conversación con la profesora en el aula vacía.*",
         "context": "Día 5. Último día. La profesora entregó su manuscrito de 7 años. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
-        "personality": "La profesora es más sincera porque es la última vez. Usa su frase por última vez."
+        "personality": "La profesora es más sincera porque es la última vez. Última conversación tras entregar el manuscrito."
     },
     "hidden_nurse_d5_check": {
         "name": "Yo",
@@ -108,6 +124,22 @@
     "hidden_nurse_d5_5": {
         "name": "Enfermera",
         "text": "...{name}. ¿Te pongo una tirita?"
+    },
+    "hidden_nurse_d5_choice": {
+        "name": "{name}",
+        "text": "*No estoy herido. Ella lo sabe. Pregunta de todas formas.*",
+        "choices": [
+            "Sí, ya que es la última vez. Solo una.",
+            "No una tirita — su número de teléfono"
+        ]
+    },
+    "hidden_nurse_d5_choice_a": {
+        "name": "Enfermera",
+        "text": "*Le tiembla la mano. Pone la tirita despacio.* ...Cuando dices que es la última vez, las manos no me responden."
+    },
+    "hidden_nurse_d5_choice_b": {
+        "name": "Enfermera",
+        "text": "*Sus ojos tiemblan detrás de los lentes.* ...Cuando te gradúes. Lo prometo."
     },
     "hidden_nurse_d5_6": {
         "name": "Enfermera",

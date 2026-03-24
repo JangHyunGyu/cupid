@@ -61,7 +61,7 @@
     },
     "hidden_homeroom_d4_5": {
         "name": "Klassenlehrerin",
-        "text": "...Schon gegessen? Ich sollte das eigentlich nicht tun... aber ein Kaffee geht doch, oder? — Also Saft, weil du Schüler bist."
+        "text": "...Schon gegessen? Ein Kaffee geht doch, oder? — Also Saft, weil du Schüler bist."
     },
     "hidden_homeroom_d4_choice": {
         "name": "Ich",
@@ -83,6 +83,22 @@
         "name": "Klassenlehrerin",
         "text": "Weißt du, was beim Romanschreiben am schwersten ist? Den ersten Leser zu finden. Ohne jemanden, der liest — wird die Geschichte nie fertig."
     },
+    "hidden_homeroom_d4_cafe_choice": {
+        "name": "{name}",
+        "text": "*Sie stellt die Kaffeetasse ab. Ihre Augen leuchten.*",
+        "choices": [
+            "Der Roman — wer ist die Hauptfigur?",
+            "Ihr erster Leser zu sein... das ist ganz schön viel"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_choice_a": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie umschließt die Tasse mit beiden Händen.* ...Geheim. Das erfährst du beim Lesen."
+    },
+    "hidden_homeroom_d4_cafe_choice_b": {
+        "name": "Klassenlehrerin",
+        "text": "Ist nicht viel. Lies es einfach. — Das allein reicht."
+    },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Klassenlehrerin",
         "text": "...Würdest du mein erster Leser werden?"
@@ -93,7 +109,7 @@
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Klassenlehrerin",
-        "text": "...Danke. Aber erzähl niemandem davon — ja? ...Das bleibt unser Geheimnis. — Eine Lehrerin sollte keine Geheimnisse mit einem Schüler haben, eigentlich."
+        "text": "...Danke. Aber erzähl niemandem davon — ja? ...Das bleibt unser Geheimnis."
     },
     "hidden_homeroom_d4_decline": {
         "name": "Klassenlehrerin",
@@ -128,6 +144,22 @@
     "hidden_nurse_d4_5": {
         "name": "Schulkrankenschwester",
         "text": "Das Schlimmste war nicht die Arbeitslast. Niemand hat mich beim Namen genannt. Alles Titel, keine Namen."
+    },
+    "hidden_nurse_d4_name_choice": {
+        "name": "{name}",
+        "text": "*Ihr Name. Ich habe sie auch die ganze Zeit nur \"Schulkrankenschwester\" genannt.*",
+        "choices": [
+            "Wie heißen Sie? Nicht \"Schulkrankenschwester\"",
+            "Deshalb sind Sie an diese Schule gekommen"
+        ]
+    },
+    "hidden_nurse_d4_name_choice_a": {
+        "name": "Schulkrankenschwester",
+        "text": "*Ihre Augen werden groß hinter der Brille.* ...Sag ich dir nach dem Abschluss. Bis dahin Geduld."
+    },
+    "hidden_nurse_d4_name_choice_b": {
+        "name": "Schulkrankenschwester",
+        "text": "Hier gibt es wenigstens jemanden, der mich beim Namen nennt. ...Auch wenn es nur eine Person ist."
     },
     "hidden_nurse_d4_6": {
         "name": "Schulkrankenschwester",

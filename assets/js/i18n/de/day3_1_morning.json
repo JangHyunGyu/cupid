@@ -6,7 +6,7 @@
     "morning3_multi_from_yuna": {},
     "morning3_start": {
         "name": "Ich",
-        "text": "*Dritter Tag. Ich habe verschlafen. Dreimal den Wecker ausgemacht. Weil ich gestern Nacht zu lange wach war und allen dreien geantwortet habe.*"
+        "text": "*Dritter Tag. Ich habe verschlafen. Dreimal den Wecker ausgemacht. Gestern Nacht zu lange Nachrichten gelesen.*"
     },
     "morning3_start_2": {
         "name": "Ich",
@@ -252,6 +252,22 @@
         "name": "Klassenlehrerin",
         "text": "Es wäre einfacher zu sagen, ich hätte aufgegeben. Aber ich hole es immer wieder in leeren Klassenzimmern raus — also hab ich's wohl nie wirklich."
     },
+    "hidden_homeroom_d3_reveal_choice": {
+        "name": "{name}",
+        "text": "*Sieben Jahre. Das Manuskriptpapier auf dem Pult ist abgegriffen.*",
+        "choices": [
+            "Sieben Jahre sind kein Aufgeben — das ist Durchhaltevermögen",
+            "Warum schreiben Sie immer hier?"
+        ]
+    },
+    "hidden_homeroom_d3_reveal_choice_a": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie ringt kurz um Worte.* ...Durchhaltevermögen. Du bist der erste Mensch, der das so sieht."
+    },
+    "hidden_homeroom_d3_reveal_choice_b": {
+        "name": "Klassenlehrerin",
+        "text": "...Das Klassenzimmer ist am ruhigsten. Ironischerweise."
+    },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Klassenlehrerin",
         "text": "...Erzähl das niemandem. Eine Lehrerin, die das mit einem Schüler teilt — das ist ein Geheimnis."
@@ -298,6 +314,22 @@
         "name": "Schulkrankenschwester",
         "text": "Ist das eine Beziehungsberatung? — So tun als wäre es keine, verrät dich am meisten."
     },
+    "hidden_nurse_d3_choice1": {
+        "name": "{name}",
+        "text": "*...Da hat sie recht.*",
+        "choices": [
+            "Vielleicht schon, ja...",
+            "Nein, es ist einfach... kompliziert"
+        ]
+    },
+    "hidden_nurse_d3_choice1_a": {
+        "name": "Schulkrankenschwester",
+        "text": "*Schiebt ihre Brille hoch.* Ehrlich. Das ist besser. — Verschreiben kann ich nichts, aber zuhören schon."
+    },
+    "hidden_nurse_d3_choice1_b": {
+        "name": "Schulkrankenschwester",
+        "text": "Kompliziert ist kompliziert, ob Liebe oder was auch immer. Versuch nicht, es zu ordnen. Fühl es einfach."
+    },
     "hidden_nurse_d3_6": {
         "name": "Schulkrankenschwester",
         "text": "Als ich im Krankenhaus gearbeitet habe. Zu viele Patienten. Ich wollte alle retten, aber ich hab nur zwei Hände. Am Ende fühlte es sich an, als könnte ich mich um keinen richtig kümmern."
@@ -309,6 +341,22 @@
     "hidden_nurse_d3_8": {
         "name": "Schulkrankenschwester",
         "text": "Für dich gilt das Gleiche. Versuch nicht, dich um alle zu kümmern. — Wäre es nicht besser, die eine Person, die wirklich zählt, richtig anzuschauen?"
+    },
+    "hidden_nurse_d3_choice2": {
+        "name": "{name}",
+        "text": "*Eine Person richtig — das klingt nicht nur nach der Klinik.*",
+        "choices": [
+            "Haben Sie deshalb das Krankenhaus verlassen?",
+            "Haben Sie auch diese eine Person?"
+        ]
+    },
+    "hidden_nurse_d3_choice2_a": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie schaut aus dem Fenster.* ...Halb richtig. Die andere Hälfte — will ich noch nicht sagen."
+    },
+    "hidden_nurse_d3_choice2_b": {
+        "name": "Schulkrankenschwester",
+        "text": "*Ihre Augen zittern hinter der Brille.* ...Wer weiß. Würde es etwas ändern?"
     },
     "hidden_nurse_d3_9": {
         "name": "Schulkrankenschwester",

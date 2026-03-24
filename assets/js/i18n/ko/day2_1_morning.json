@@ -203,9 +203,18 @@
         "name": "담임선생님",
         "text": "전 학교 성적표 봤는데, 국어가 좋았네. 읽는 거 좋아해?"
     },
-    "hidden_homeroom_d2_4": {
+    "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "읽는 건 좋아해요. — 쓰는 건 잘 모르겠어요."
+        "text": "*읽는 거. 성적표까지 챙겨보는 사람이구나.*",
+        "choices": ["선생님은요? 뭐 읽으세요?", "읽는 건 좋아해요"]
+    },
+    "hidden_homeroom_d2_choice1_a": {
+        "name": "담임선생님",
+        "text": "*잠깐 멈칫한다.* ...나? 업무 자료. — 뭘 기대한 거야?"
+    },
+    "hidden_homeroom_d2_choice1_b": {
+        "name": "담임선생님",
+        "text": "...그래. 뭐, 그냥 물어본 거야."
     },
     "hidden_homeroom_d2_5": {
         "name": "담임선생님",
@@ -231,9 +240,22 @@
         "name": "담임선생님",
         "text": "뭐, 선생님이 학생 걱정하는 건 당연한 거니까. 업무야, 업무."
     },
+    "hidden_homeroom_d2_choice2": {
+        "name": "{name}",
+        "text": "*업무라고 하면서 눈가에 웃음이 남아 있다.*",
+        "choices": ["업무치고 표정이 좋으신데요", "챙겨주셔서 감사합니다"]
+    },
+    "hidden_homeroom_d2_choice2_a": {
+        "name": "담임선생님",
+        "text": "*표정이 살짝 굳는다.* ...표정 관리도 업무야."
+    },
+    "hidden_homeroom_d2_choice2_b": {
+        "name": "담임선생님",
+        "text": "당연한 거야. 가 봐."
+    },
     "hidden_homeroom_d2_11": {
         "name": "담임선생님",
-        "text": "...선생님이 이러면 안 되는데. 전학생이라고 특별 대우 하면 다른 애들이 뭐라 하지."
+        "text": "...전학생이라고 특별 대우 하면 다른 애들이 뭐라 하지."
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",
