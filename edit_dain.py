@@ -32,7 +32,7 @@ payload = {
                 }
             },
             {
-                "text": "Edit this anime character image. 1) Remove the small bird logo and text near the collar area on the upper right chest. Make that area just plain white fabric. 2) Remove the black elbow guard/arm sleeve from her right arm (the arm hanging down). Her right arm should be bare. Keep the black arm sleeve on her left arm (the one on her hip). Keep everything else the same - same face, hair, chest size, navy shorts, pose, green background. Output one single image."
+                "text": "Edit this anime character image. Make her hips and pelvis wider and more voluminous. She should have a wider hourglass figure with bigger broader hips. Keep everything else exactly the same - same face, hair, chest size, uniform, navy shorts, pose, green background, no logo on chest, bare right arm, arm sleeve on left arm only. Output one single image."
             }
         ]
     }],
