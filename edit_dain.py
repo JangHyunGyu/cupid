@@ -32,7 +32,7 @@ payload = {
                 }
             },
             {
-                "text": "Edit this anime character image. Make her hips and pelvis wider and more voluminous. She should have a wider hourglass figure with bigger broader hips. Keep everything else exactly the same - same face, hair, chest size, uniform, navy shorts, pose, green background, no logo on chest, bare right arm, arm sleeve on left arm only. Output one single image."
+                "text": "Edit this anime character image. Make her hips slightly narrower, about 10-15% less wide than current. Keep the hourglass shape but more natural athletic proportions. Keep everything else exactly the same - same face, hair, chest size, uniform, navy shorts, pose, green background. Output one single image."
             }
         ]
     }],
