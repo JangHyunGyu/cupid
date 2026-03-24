@@ -794,7 +794,7 @@ class GalleryData {
             { id: 'ending_true_seoyeon', name: '서연의 방', character: '서연', description: '서연의 방에서 나란히 앉아, 손끝이 닿을 듯 말 듯한 밤', file: 'assets/images/background/ending_true_seoyeon.png', thumbnail: 'assets/images/background/ending_true_seoyeon.png',
                 unlockHint: "서연 트루 엔딩 도달"
             },
-            { id: 'ending_true_yuna', name: '옥상의 별', character: '유나', description: '등을 맞대고 앉아 손을 잡은 채 야경을 바라보는 밤', file: 'assets/images/background/ending_true_yuna.png', thumbnail: 'assets/images/background/ending_true_yuna.png',
+            { id: 'ending_true_yuna', name: '옥상의 별', character: '유나', description: '옥상 난간에 나란히 앉아 야경과 초승달을 바라보는 밤', file: 'assets/images/background/ending_true_yuna.png', thumbnail: 'assets/images/background/ending_true_yuna.png',
                 unlockHint: "유나 트루 엔딩 도달"
             },
             { id: 'ending_true_dain', name: '다인의 낮잠', character: '다인', description: '체육관 벽에 기대 어깨에서 잠든 다인, 깨우지 않으려 가만히', file: 'assets/images/background/ending_true_dain.png', thumbnail: 'assets/images/background/ending_true_dain.png',
