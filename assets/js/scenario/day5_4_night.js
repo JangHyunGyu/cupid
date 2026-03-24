@@ -16,7 +16,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "branches": [
             {
                 "next": "hidden_perfect_homeroom_check",
@@ -71,7 +70,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "branches": [
             { "condition": "route_seoyeon", "next": "ending_aff_check_seo" },
             { "condition": "route_yuna", "next": "ending_aff_check_yuna" },
@@ -83,7 +81,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/top_school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 80, "next": "perfect_seo_1" },
@@ -97,7 +94,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/yuna_hideout.png",
         "character": null,
         "night": true,
-        "fade": true,
         "affinityChar": "Yuna",
         "affinityBranches": [
             { "minAffinity": 80, "next": "perfect_yuna_1" },
@@ -111,7 +107,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/gym.png",
         "character": null,
         "night": true,
-        "fade": true,
         "affinityChar": "Dain",
         "affinityBranches": [
             { "minAffinity": 80, "next": "perfect_dain_1" },
@@ -129,7 +124,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "branches": [
             { "condition": "route_seoyeon", "next": "ending_confessed_aff_seo" },
             { "condition": "route_yuna", "next": "ending_confessed_aff_yuna" },
@@ -141,7 +135,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/top_school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 40, "next": "day5_ending_good" }
@@ -152,7 +145,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/yuna_hideout.png",
         "character": null,
         "night": true,
-        "fade": true,
         "affinityChar": "Yuna",
         "affinityBranches": [
             { "minAffinity": 40, "next": "day5_ending_good" }
@@ -163,7 +155,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/gym.png",
         "character": null,
         "night": true,
-        "fade": true,
         "affinityChar": "Dain",
         "affinityBranches": [
             { "minAffinity": 40, "next": "day5_ending_good" }
@@ -187,28 +178,24 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_shy.png",
         "night": true,
-        "fade": true,
         "next": "perfect_seo_3"
     },
     "perfect_seo_3": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_shy.png",
         "night": true,
-        "fade": true,
         "next": "perfect_seo_4"
     },
     "perfect_seo_4": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_laugh.png",
         "night": true,
-        "fade": true,
         "next": "perfect_seo_5"
     },
     "perfect_seo_5": {
         "background": "assets/images/background/ending_perfect_seoyeon.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "perfect_epilogue_1"
     },
 
@@ -228,28 +215,24 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "night": true,
-        "fade": true,
         "next": "perfect_yuna_3"
     },
     "perfect_yuna_3": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
         "night": true,
-        "fade": true,
         "next": "perfect_yuna_4"
     },
     "perfect_yuna_4": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "night": true,
-        "fade": true,
         "next": "perfect_yuna_5"
     },
     "perfect_yuna_5": {
         "background": "assets/images/background/ending_perfect_yuna.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "perfect_epilogue_1"
     },
 
@@ -269,28 +252,24 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "night": true,
-        "fade": true,
         "next": "perfect_dain_3"
     },
     "perfect_dain_3": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "night": true,
-        "fade": true,
         "next": "perfect_dain_4"
     },
     "perfect_dain_4": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "night": true,
-        "fade": true,
         "next": "perfect_dain_5"
     },
     "perfect_dain_5": {
         "background": "assets/images/background/ending_perfect_dain.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "perfect_epilogue_1"
     },
 
@@ -312,39 +291,33 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_perfect_seoyeon.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "perfect_epilogue_2"
     },
     "perfect_epilogue_1_yuna": {
         "background": "assets/images/background/ending_perfect_yuna.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "perfect_epilogue_2"
     },
     "perfect_epilogue_1_dain": {
         "background": "assets/images/background/ending_perfect_dain.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "perfect_epilogue_2"
     },
     "perfect_epilogue_2": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "perfect_epilogue_3"
     },
     "perfect_epilogue_3": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "perfect_epilogue_4"
     },
     "perfect_epilogue_4": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -364,14 +337,12 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
-        "fade": true,
         "next": "bitter_seo_3"
     },
     "bitter_seo_3": {
         "background": "assets/images/background/ending_bittersweet.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "bitter_epilogue_1"
     },
 
@@ -391,14 +362,12 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/yuna_sad.png",
         "night": true,
-        "fade": true,
         "next": "bitter_yuna_3"
     },
     "bitter_yuna_3": {
         "background": "assets/images/background/ending_bittersweet.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "bitter_epilogue_1"
     },
 
@@ -418,14 +387,12 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "night": true,
-        "fade": true,
         "next": "bitter_dain_3"
     },
     "bitter_dain_3": {
         "background": "assets/images/background/ending_bittersweet.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "bitter_epilogue_1"
     },
 
@@ -435,19 +402,16 @@ Object.assign(SCENARIO[5], {
     "bitter_epilogue_1": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "bitter_epilogue_2"
     },
     "bitter_epilogue_2": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "bitter_epilogue_3"
     },
     "bitter_epilogue_3": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -465,56 +429,48 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/seyoun_room.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_seo_3"
     },
     "true_seo_3": {
         "background": "assets/images/background/seyoun_room.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
-        "fade": true,
         "next": "true_seo_4"
     },
     "true_seo_4": {
         "background": "assets/images/background/seyoun_room.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
-        "fade": true,
         "next": "true_seo_5"
     },
     "true_seo_5": {
         "background": "assets/images/background/seyoun_room.png",
         "character": "assets/images/characters/seyoun_laugh.png",
         "night": true,
-        "fade": true,
         "next": "true_seo_6"
     },
     "true_seo_6": {
         "background": "assets/images/background/seyoun_room.png",
         "character": "assets/images/characters/seyoun_laugh.png",
         "night": true,
-        "fade": true,
         "next": "true_seo_7"
     },
     "true_seo_7": {
         "background": "assets/images/background/seyoun_room.png",
         "character": "assets/images/characters/seyoun_shy.png",
         "night": true,
-        "fade": true,
         "next": "true_seo_8"
     },
     "true_seo_8": {
         "background": "assets/images/background/seyoun_room.png",
         "character": "assets/images/characters/seyoun_shy.png",
         "night": true,
-        "fade": true,
         "next": "true_seo_bridge"
     },
     "true_seo_bridge": {
         "background": "assets/images/background/ending_true_seoyeon.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_1"
     },
 
@@ -532,49 +488,42 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "night": true,
-        "fade": true,
         "next": "true_yuna_3"
     },
     "true_yuna_3": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "night": true,
-        "fade": true,
         "next": "true_yuna_4"
     },
     "true_yuna_4": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
         "night": true,
-        "fade": true,
         "next": "true_yuna_5"
     },
     "true_yuna_5": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
         "night": true,
-        "fade": true,
         "next": "true_yuna_6"
     },
     "true_yuna_6": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "night": true,
-        "fade": true,
         "next": "true_yuna_7"
     },
     "true_yuna_7": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "night": true,
-        "fade": true,
         "next": "true_yuna_bridge"
     },
     "true_yuna_bridge": {
         "background": "assets/images/background/ending_true_yuna.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_1"
     },
 
@@ -592,56 +541,48 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/gym.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_dain_3"
     },
     "true_dain_3": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "night": true,
-        "fade": true,
         "next": "true_dain_4"
     },
     "true_dain_4": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "night": true,
-        "fade": true,
         "next": "true_dain_5"
     },
     "true_dain_5": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "night": true,
-        "fade": true,
         "next": "true_dain_6"
     },
     "true_dain_6": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "night": true,
-        "fade": true,
         "next": "true_dain_7"
     },
     "true_dain_7": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
         "night": true,
-        "fade": true,
         "next": "true_dain_8"
     },
     "true_dain_8": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
         "night": true,
-        "fade": true,
         "next": "true_dain_bridge"
     },
     "true_dain_bridge": {
         "background": "assets/images/background/ending_true_dain.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_1"
     },
 
@@ -650,7 +591,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "branches": [
             { "condition": "route_seoyeon", "next": "true_epilogue_1_seo" },
             { "condition": "route_yuna", "next": "true_epilogue_1_yuna" },
@@ -661,57 +601,48 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_true_seoyeon.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_2"
     },
     "true_epilogue_1_yuna": {
         "background": "assets/images/background/ending_true_yuna.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_2"
     },
     "true_epilogue_1_dain": {
         "background": "assets/images/background/ending_true_dain.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_2"
     },
     "true_epilogue_2": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_3"
     },
     "true_epilogue_3": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_4"
     },
     "true_epilogue_4": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_5"
     },
     "true_epilogue_5": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_6"
     },
     "true_epilogue_6": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "true_epilogue_7"
     },
     "true_epilogue_7": {
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -730,21 +661,18 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_1b"
     },
     "good_1b": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_1c"
     },
     "good_1c": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "branches": [
             { "condition": "route_seoyeon", "next": "good_1_seo" },
             { "condition": "route_yuna", "next": "good_1_yuna" },
@@ -756,21 +684,18 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
-        "fade": true,
         "next": "good_2_seo"
     },
     "good_1_yuna": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/yuna_smile.png",
         "night": true,
-        "fade": true,
         "next": "good_2_yuna"
     },
     "good_1_dain": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/dain_pout.png",
         "night": true,
-        "fade": true,
         "next": "good_2_dain"
     },
     // ── Seoyeon good route (벚꽃 길) ──
@@ -778,28 +703,24 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_3_seo"
     },
     "good_3_seo": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_4_seo"
     },
     "good_4_seo": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_5_seo"
     },
     "good_5_seo": {
         "background": "assets/images/background/ending_good_seoyeon.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_5_cg_seo"
     },
     // ── Yuna good route (옥상) ──
@@ -807,28 +728,24 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/top_school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_3_yuna"
     },
     "good_3_yuna": {
         "background": "assets/images/background/top_school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_4_yuna"
     },
     "good_4_yuna": {
         "background": "assets/images/background/top_school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_5_yuna"
     },
     "good_5_yuna": {
         "background": "assets/images/background/ending_good_yuna.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_5_cg_yuna"
     },
     // ── Dain good route (학교 교문) ──
@@ -836,49 +753,42 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_3_dain"
     },
     "good_3_dain": {
         "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_4_dain"
     },
     "good_4_dain": {
         "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_5_dain"
     },
     "good_5_dain": {
         "background": "assets/images/background/ending_good_dain.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "good_5_cg_dain"
     },
     "good_5_cg_seo": {
         "background": "assets/images/background/ending_good_seoyeon.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
     "good_5_cg_yuna": {
         "background": "assets/images/background/ending_good_yuna.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
     "good_5_cg_dain": {
         "background": "assets/images/background/ending_good_dain.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -897,49 +807,42 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_mayhem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "mayhem_2"
     },
     "mayhem_2": {
         "background": "assets/images/background/ending_mayhem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "mayhem_3"
     },
     "mayhem_3": {
         "background": "assets/images/background/ending_mayhem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "mayhem_4"
     },
     "mayhem_4": {
         "background": "assets/images/background/ending_mayhem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "mayhem_5"
     },
     "mayhem_5": {
         "background": "assets/images/background/ending_mayhem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "mayhem_6"
     },
     "mayhem_6": {
         "background": "assets/images/background/ending_mayhem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "mayhem_7"
     },
     "mayhem_7": {
         "background": "assets/images/background/ending_mayhem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -958,56 +861,48 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_harem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "harem_2"
     },
     "harem_2": {
         "background": "assets/images/background/ending_harem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "harem_3"
     },
     "harem_3": {
         "background": "assets/images/background/ending_harem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "harem_4"
     },
     "harem_4": {
         "background": "assets/images/background/ending_harem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "harem_5"
     },
     "harem_5": {
         "background": "assets/images/background/ending_harem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "harem_6"
     },
     "harem_6": {
         "background": "assets/images/background/ending_harem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "harem_7"
     },
     "harem_7": {
         "background": "assets/images/background/ending_harem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "harem_8"
     },
     "harem_8": {
         "background": "assets/images/background/ending_harem.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -1031,56 +926,48 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_confess_fail_seoyeon.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "confess_fail_1"
     },
     "confess_fail_cg_yuna": {
         "background": "assets/images/background/ending_confess_fail_yuna.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "confess_fail_1"
     },
     "confess_fail_cg_dain": {
         "background": "assets/images/background/ending_confess_fail_dain.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "confess_fail_1"
     },
     "confess_fail_1": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "confess_fail_2"
     },
     "confess_fail_2": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "confess_fail_3"
     },
     "confess_fail_3": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "confess_fail_4"
     },
     "confess_fail_4": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "confess_fail_5"
     },
     "confess_fail_5": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -1099,84 +986,72 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_2"
     },
     "friend_2": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_3"
     },
     "friend_3": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_4"
     },
     "friend_4": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_5"
     },
     "friend_5": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_6"
     },
     "friend_6": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_7"
     },
     "friend_7": {
         "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_8"
     },
     "friend_8": {
         "background": "assets/images/background/ending_friend.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_9"
     },
     "friend_9": {
         "background": "assets/images/background/ending_friend.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_10"
     },
     "friend_10": {
         "background": "assets/images/background/ending_friend.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_11"
     },
     "friend_11": {
         "background": "assets/images/background/ending_friend.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "friend_12"
     },
     "friend_12": {
         "background": "assets/images/background/ending_friend.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -1195,35 +1070,30 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_alone.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "alone_2"
     },
     "alone_2": {
         "background": "assets/images/background/ending_alone.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "alone_3"
     },
     "alone_3": {
         "background": "assets/images/background/ending_alone.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "alone_4"
     },
     "alone_4": {
         "background": "assets/images/background/ending_alone.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "alone_5"
     },
     "alone_5": {
         "background": "assets/images/background/ending_alone.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -1234,7 +1104,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/room_school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "affinityChar": "Teacher",
         "affinityBranches": [
             { "minAffinity": 80, "next": "hidden_perfect_homeroom_1" },
@@ -1260,28 +1129,24 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_perfect_homeroom_3"
     },
     "hidden_perfect_homeroom_3": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_shy.png",
         "night": true,
-        "fade": true,
         "next": "hidden_perfect_homeroom_4"
     },
     "hidden_perfect_homeroom_4": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_shy.png",
         "night": true,
-        "fade": true,
         "next": "hidden_perfect_homeroom_5"
     },
     "hidden_perfect_homeroom_5": {
         "background": "assets/images/background/ending_perfect_teacher.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -1292,7 +1157,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/nurse_room.jpg",
         "character": null,
         "night": true,
-        "fade": true,
         "affinityChar": "Nurse",
         "affinityBranches": [
             { "minAffinity": 80, "next": "hidden_perfect_nurse_1" },
@@ -1318,28 +1182,24 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_perfect_nurse_3"
     },
     "hidden_perfect_nurse_3": {
         "background": "assets/images/background/nurse_home_event1.png",
         "character": "assets/images/characters/nurse_shy.png",
         "night": true,
-        "fade": true,
         "next": "hidden_perfect_nurse_4"
     },
     "hidden_perfect_nurse_4": {
         "background": "assets/images/background/nurse_home_event1.png",
         "character": "assets/images/characters/nurse_shy.png",
         "night": true,
-        "fade": true,
         "next": "hidden_perfect_nurse_5"
     },
     "hidden_perfect_nurse_5": {
         "background": "assets/images/background/ending_perfect_nurse.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -1359,49 +1219,42 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_homeroom_3"
     },
     "hidden_true_homeroom_3": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_homeroom_4"
     },
     "hidden_true_homeroom_4": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_homeroom_5"
     },
     "hidden_true_homeroom_5": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_homeroom_6"
     },
     "hidden_true_homeroom_6": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_shy.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_homeroom_7"
     },
     "hidden_true_homeroom_7": {
         "background": "assets/images/background/cafe.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "hidden_true_homeroom_8"
     },
     "hidden_true_homeroom_8": {
         "background": "assets/images/background/ending_true_teacher.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -1420,21 +1273,18 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "hidden_good_homeroom_3"
     },
     "hidden_good_homeroom_3": {
         "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "hidden_good_homeroom_4"
     },
     "hidden_good_homeroom_4": {
         "background": "assets/images/background/ending_good_teacher.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -1454,49 +1304,42 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_nurse_3"
     },
     "hidden_true_nurse_3": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_nurse_4"
     },
     "hidden_true_nurse_4": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_nurse_5"
     },
     "hidden_true_nurse_5": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_nurse_6"
     },
     "hidden_true_nurse_6": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_nurse_7"
     },
     "hidden_true_nurse_7": {
         "background": "assets/images/background/nurse_home_event1.png",
         "character": "assets/images/characters/nurse_shy.png",
         "night": true,
-        "fade": true,
         "next": "hidden_true_nurse_8"
     },
     "hidden_true_nurse_8": {
         "background": "assets/images/background/ending_true_nurse.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -1515,21 +1358,18 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
-        "fade": true,
         "next": "hidden_good_nurse_3"
     },
     "hidden_good_nurse_3": {
         "background": "assets/images/background/nurse_room.jpg",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "hidden_good_nurse_4"
     },
     "hidden_good_nurse_4": {
         "background": "assets/images/background/ending_good_nurse.png",
         "character": null,
         "night": true,
-        "fade": true,
         "next": "day5_credits"
     },
 
@@ -1540,7 +1380,6 @@ Object.assign(SCENARIO[5], {
         "background": null,
         "character": null,
         "night": true,
-        "fade": true,
         "type": "credits",
         "next": "day5_ending_restart"
     },
@@ -1548,7 +1387,6 @@ Object.assign(SCENARIO[5], {
         "background": null,
         "character": null,
         "night": true,
-        "fade": true,
         "choices": [
             {
                 "next": "index.html"
