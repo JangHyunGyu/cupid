@@ -182,7 +182,7 @@
     },
     "bitter_epilogue_1": {
         "name": "Yo",
-        "text": "*Despues de la graduacion. El contacto se volvio escaso. Una vez al mes se convirtio en cada dos meses, y dejar mensajes sin leer se hizo costumbre.*"
+        "text": "*Después de la graduación. El contacto se volvió escaso. Una vez al mes pasó a cada dos meses, dejar mensajes sin leer se hizo costumbre, y un día — cuando intenté escribir algo y no supe qué decir — supe que había terminado.*"
     },
     "bitter_epilogue_2": {
         "name": "Yo",
@@ -258,11 +258,11 @@
     },
     "true_dain_2": {
         "name": "Yo",
-        "text": "*Dain toma la mano de {name} y la coloca sobre su pecho.*"
+        "text": "*Dain toma la mano de {name} — la atrae y la apoya sobre su pecho izquierdo. Sin decir nada.*"
     },
     "true_dain_3": {
-        "name": "Dain",
-        "text": "Creo que estoy muy nerviosa ahora. Pon tu mano aquí."
+        "name": "Yo",
+        "text": "*Los latidos bajo mis dedos son nítidos.*"
     },
     "true_dain_4": {
         "name": "Yo",
@@ -274,7 +274,7 @@
     },
     "true_dain_6": {
         "name": "Dain",
-        "text": "¿Por qué me miras así? Me da vergüenza."
+        "text": "*cubriéndose la cara a medias con el balón* Por qué me miras así... No juegues así."
     },
     "true_dain_7": {
         "name": "Yo",
@@ -290,7 +290,7 @@
     },
     "true_yuna_bridge": {
         "name": "Yo",
-        "text": "*Salí del ático y subí a la azotea. Nos sentamos juntos en la barandilla. Las estrellas de Yuna — desde aquí se ven más cerca.*"
+        "text": "*Las estrellas de Yuna aún están aquí, justo frente a mí.*"
     },
     "true_dain_bridge": {
         "name": "Yo",
@@ -347,7 +347,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "Eres un completo idiota. Pero como volviste, te perdono esta vez."
+        "text": "...Qué despistado eres. Pero ya que volviste, puedo perdonarte."
     },
     "good_1_dain": {
         "name": "Dain",
@@ -454,8 +454,8 @@
         "text": "*Seoyeon sonrió primero. ...Bien. Al menos eres honesto. No fue mi imaginación que escuché rechinar de dientes detrás de esa sonrisa.*"
     },
     "harem_2": {
-        "name": "Yo",
-        "text": "*Yuna bajó la cabeza. Por mucho rato. Y cuando la levantó, sus ojos secos sonreían. ...Canalla. Dos frases de emoción comprimidas en esa sola palabra.*"
+        "name": "Yuna",
+        "text": "...Idiota."
     },
     "harem_3": {
         "name": "Yo",
@@ -571,7 +571,7 @@
     },
     "alone_3": {
         "name": "{name}",
-        "text": "*Los cerezos caen al otro lado de la ventana. Los mismos pétalos que me rozaron la nariz hace cinco días ahora están pegados al suelo. Desde dentro de la habitación, ni siquiera hacen ruido.*"
+        "text": "*Los cerezos se dispersan ahora llevados por el viento.*"
     },
     "alone_4": {
         "name": "{name}",
@@ -723,5 +723,101 @@
     "hidden_good_nurse_4": {
         "name": "Yo",
         "text": "*Ese corazón — esta vez definitivamente no es interés médico.\n\n─── Enfermera GOOD END ───*"
+    },
+    "perfect_seo_5b": {
+        "name": "Yo",
+        "text": "*La azotea del Día 1. El parque del Día 4. Y ahora. — El mismo lugar, un significado diferente. Cada momento converge aquí.*"
+    },
+    "perfect_dain_2b": {
+        "name": "Yo",
+        "text": "*Sin exclamación. Por primera vez. — Dain está hablando de un comienzo que no es el voleibol.*"
+    },
+    "perfect_dain_3b": {
+        "name": "Yo",
+        "text": "*Dain deja el balón en la cancha. Se da la vuelta y sonríe. Una sonrisa sin signo de exclamación.*"
+    },
+    "perfect_epilogue_bridge_seo": {
+        "name": "Sistema",
+        "text": "*Epílogo — Un año después*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "Sistema",
+        "text": "*Epílogo — Un año después*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "Sistema",
+        "text": "*Epílogo — Un año después*"
+    },
+    "true_seo_6b": {
+        "name": "Seoyeon",
+        "text": "Siempre tuve que sonreír. Pero contigo solo quiero ser yo misma."
+    },
+    "true_seo_7b": {
+        "name": "Yo",
+        "text": "*Seoyeon extiende su meñique.*"
+    },
+    "true_yuna_6b": {
+        "name": "Yuna",
+        "text": "No te vayas. Quédate aquí esta noche."
+    },
+    "true_dain_2b": {
+        "name": "Yo",
+        "text": "*Rápido. Una velocidad que no necesita palabras.*"
+    },
+    "true_dain_8b": {
+        "name": "Yo",
+        "text": "*El signo de exclamación ha vuelto. — Pero esta vez es uno de verdad.*"
+    },
+    "good_1_yuna_b": {
+        "name": "Yo",
+        "text": "*Yuna me pasa una nota. «La próxima vez no te pierdas.» — Corta. Y cálida.*"
+    },
+    "good_epilogue_1": {
+        "name": "Yo",
+        "text": "*Pero fue ese titubeo el que me mostró lo que de verdad sentía.*"
+    },
+    "good_epilogue_2": {
+        "name": "Yo",
+        "text": "*No estaba perdido. Era solo el proceso de encontrarte.*"
+    },
+    "good_epilogue_3": {
+        "name": "Yo",
+        "text": "*El amor imperfecto también es amor. Quizás es más valioso precisamente por ser incompleto.*"
+    },
+    "good_epilogue_1_yuna": {
+        "name": "Yo",
+        "text": "*Pero fue ese titubeo el que me mostró lo que de verdad sentía.*"
+    },
+    "good_epilogue_2_yuna": {
+        "name": "Yo",
+        "text": "*No estaba perdido. Era solo el proceso de encontrarte.*"
+    },
+    "good_epilogue_3_yuna": {
+        "name": "Yo",
+        "text": "*El amor imperfecto también es amor. Quizás es más valioso precisamente por ser incompleto.*"
+    },
+    "good_epilogue_1_dain": {
+        "name": "Yo",
+        "text": "*Pero fue ese titubeo el que me mostró lo que de verdad sentía.*"
+    },
+    "good_epilogue_2_dain": {
+        "name": "Yo",
+        "text": "*No estaba perdido. Era solo el proceso de encontrarte.*"
+    },
+    "good_epilogue_3_dain": {
+        "name": "Yo",
+        "text": "*El amor imperfecto también es amor. Quizás es más valioso precisamente por ser incompleto.*"
+    },
+    "confess_fail_cg_seo": {
+        "name": "Yo",
+        "text": ""
+    },
+    "confess_fail_cg_yuna": {
+        "name": "Yo",
+        "text": ""
+    },
+    "confess_fail_cg_dain": {
+        "name": "Yo",
+        "text": ""
     }
 }
