@@ -20,16 +20,17 @@ prompt = (
     "brown very short pixie cut hair above ears with slightly messy sporty texture, "
     "bright sparkling green eyes with star-shaped highlights, cute baby face with round eyes and small nose, "
     "6.5-head-tall proportions, dating sim art style, energetic Korean high school girl, "
-    "body facing slightly right with face looking at viewer, left hand on hip confident pose, "
+    "body turned 10 degrees to the right side, face looking at viewer, "
+    "both hands placed on waist, arms akimbo power pose, fingers resting on hips, not touching clothes, "
     "athletic volleyball player with hourglass curvy figure, "
     "large rounded chest stretching the uniform, slim toned waist, "
     "natural athletic hips, toned thighs visible below very short navy dolphin shorts, "
     "wearing sleeveless volleyball jersey white base with orange and navy accent lines, "
     "ETAURS team name and number 19 printed on chest, no logo near collar, "
-    "black arm sleeve on left arm only, right arm bare, "
+    "wearing one single black arm sleeve on her left arm only and right arm is completely bare with no accessories, "
     "bright cool smile showing teeth, energetic sporty girl vibe, "
     "cut at mid-thigh level, 1024x1024 resolution, "
-    "solid black background, soft diffused front lighting with subtle rim light"
+    "solid bright magenta pink chroma key background, soft diffused front lighting with subtle rim light"
 )
 
 negative = (

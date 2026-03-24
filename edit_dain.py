@@ -16,7 +16,7 @@ if not api_key:
     exit(1)
 
 # 레퍼런스 이미지 읽기 (candidate_2)
-ref_path = os.path.join(os.path.dirname(__file__), "assets", "images", "characters", "dain_normal_edited_1.png")
+ref_path = os.path.join(os.path.dirname(__file__), "assets", "images", "characters", "dain_normal.png")
 with open(ref_path, "rb") as f:
     img_b64 = base64.b64encode(f.read()).decode("utf-8")
 
@@ -32,7 +32,7 @@ payload = {
                 }
             },
             {
-                "text": "Edit this anime character image. Make her hips slightly narrower, about 10-15% less wide than current. Keep the hourglass shape but more natural athletic proportions. Keep everything else exactly the same - same face, hair, chest size, uniform, navy shorts, pose, green background. Output one single image."
+                "text": "Redraw this exact same anime character in high quality 1024x1024 resolution. Keep everything identical - same pose, same face, same hair, same outfit, same text ETAURS 19, same green background. Just make it higher resolution and sharper with clean detailed lineart. Output one single image."
             }
         ]
     }],
