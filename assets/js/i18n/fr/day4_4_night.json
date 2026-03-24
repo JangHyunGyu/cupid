@@ -434,7 +434,7 @@
         "text": "*Les yeux de Yuna brillent de larmes. — C’est la première fois que je l’entends parler autant.*",
         "choices": [
             "Je ne suis pas cet aîné. Je suis moi. Mais je resterai à tes côtés.",
-            "Même si je suis son remplaçant, ça me va. Je veux être la personne dont tu as besoin.",
+            "Laisse tomber cet aîné. Celui qui est devant toi maintenant, c'est moi.",
             "...Alors tu t’es rapprochée de moi à cause de lui ? Comme remplaçant ?"
         ]
     },
@@ -536,7 +536,7 @@
     },
     "day4_night_sleep": {
         "name": "Moi",
-        "text": "*Quand je ferme les yeux, le visage de cette personne apparaît. M’endormir ainsi ne serait pas si mal.*"
+        "text": "*Je ferme les yeux. Demain, c’est le dernier jour. — Il me reste encore des choses à dire.*"
     },
     "day4_final": {
         "name": "Moi",

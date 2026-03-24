@@ -434,7 +434,7 @@
         "text": "*Yunas Augen glänzen feucht. — Das ist das erste Mal, dass ich sie so viel reden höre.*",
         "choices": [
             "Ich bin nicht dieser Senior. Ich bin ich. Aber ich bleibe an deiner Seite.",
-            "Sein Ersatz zu sein ist mir egal. Ich will die Person sein, die du brauchst.",
+            "Vergiss diesen Senior. Der, der jetzt vor dir steht, bin ich.",
             "...Also bist du wegen ihm auf mich zugekommen? Als Ersatz?"
         ]
     },
@@ -536,7 +536,7 @@
     },
     "day4_night_sleep": {
         "name": "Ich",
-        "text": "*Wenn ich die Augen schließe, erscheint das Gesicht dieser Person. So einzuschlafen wäre schön.*"
+        "text": "*Ich schließe die Augen. Morgen ist der letzte Tag. — Es gibt noch Dinge, die gesagt werden müssen.*"
     },
     "day4_final": {
         "name": "Ich",

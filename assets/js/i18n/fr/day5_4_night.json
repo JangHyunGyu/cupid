@@ -319,11 +319,11 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*Elle a parlé.*"
+        "text": "*Une voix se fait entendre devant moi.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*Elle a fait un pas vers moi.*"
+        "text": "*Elle a fait un pas en avant.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
@@ -343,11 +343,11 @@
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+        "text": "*Seoyeon fait semblant d'être parfaite — mais moi non plus, je ne l'étais pas. C'est peut-être pour ça qu'on va bien ensemble.*"
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*L'amour imparfait reste de l'amour. C'est peut-être justement parce qu'il manque quelque chose qu'il est si précieux.*"
+        "text": "*Ce qui manque, on a le temps de le combler. Les cerisiers refleuriront l'année prochaine.*"
     },
     "good_5_seo": {
         "name": "{name}",
@@ -359,11 +359,11 @@
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+        "text": "*Yuna poursuivait l'ombre de quelqu'un qui avait disparu. Je sais maintenant — que je ne suis pas cette ombre.*"
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*L'amour imparfait reste de l'amour. C'est peut-être justement parce qu'il manque quelque chose qu'il est si précieux.*"
+        "text": "*Je veux qu'on se souvienne de moi pour ce que je suis, pas comme un remplaçant. Même si ça prend du temps.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -375,11 +375,11 @@
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+        "text": "*Dain continuait de courir même quand ses genoux la faisaient souffrir. Moi aussi — je peux encore courir un peu.*"
     },
     "good_4_dain": {
         "name": "{name}",
-        "text": "*L'amour imparfait reste de l'amour. C'est peut-être justement parce qu'il manque quelque chose qu'il est si précieux.*"
+        "text": "*Le dernier service n'est pas encore arrivé. Le match n'est pas fini.*"
     },
     "good_5_dain": {
         "name": "{name}",

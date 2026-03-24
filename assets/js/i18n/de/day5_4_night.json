@@ -319,11 +319,11 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*Sie sprach.*"
+        "text": "*Von vorne ist eine Stimme zu hören.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*Sie kam einen Schritt näher.*"
+        "text": "*Sie kam einen Schritt auf mich zu.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
@@ -343,11 +343,11 @@
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+        "text": "*Seoyeon tut so, als wäre sie perfekt — aber ich war es auch nicht. Vielleicht passen wir deshalb zusammen.*"
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*Unvollkommene Liebe ist auch Liebe. Vielleicht ist sie gerade deshalb so kostbar, weil etwas fehlt.*"
+        "text": "*Was fehlt, dafür ist noch Zeit. Die Kirschblüten blühen auch nächstes Jahr.*"
     },
     "good_5_seo": {
         "name": "{name}",
@@ -359,11 +359,11 @@
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+        "text": "*Yuna jagte dem Schatten von jemandem nach, der verschwunden war. Ich weiß jetzt — ich bin nicht dieser Schatten.*"
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*Unvollkommene Liebe ist auch Liebe. Vielleicht ist sie gerade deshalb so kostbar, weil etwas fehlt.*"
+        "text": "*Ich will als ich selbst in Erinnerung bleiben, nicht als Ersatz. Auch wenn es Zeit braucht.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -375,11 +375,11 @@
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+        "text": "*Dain lief weiter, auch wenn ihre Knie schmerzten. Ich kann — auch noch ein bisschen weiterlaufen.*"
     },
     "good_4_dain": {
         "name": "{name}",
-        "text": "*Unvollkommene Liebe ist auch Liebe. Vielleicht ist sie gerade deshalb so kostbar, weil etwas fehlt.*"
+        "text": "*Der letzte Aufschlag ist noch nicht gekommen. Das Spiel ist noch nicht vorbei.*"
     },
     "good_5_dain": {
         "name": "{name}",
