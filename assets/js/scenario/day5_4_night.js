@@ -46,13 +46,13 @@ Object.assign(SCENARIO[5], {
                 "condition": "ending_harem"
             },
             {
+                "next": "day5_ending_good",
+                "condition": "day4_confession_accepted"
+            },
+            {
                 "next": "day5_ending_mayhem",
                 "condition": "day3_has_multiple_dates",
                 "excludeCondition": "ending_harem"
-            },
-            {
-                "next": "day5_ending_good",
-                "condition": "day4_confession_accepted"
             },
             {
                 "next": "ending_confessed_aff_check",
