@@ -653,16 +653,6 @@ Object.assign(SCENARIO[5], {
     "true_epilogue_4": {
         "character": null,
         "night": true,
-        "next": "true_epilogue_5"
-    },
-    "true_epilogue_5": {
-        "character": null,
-        "night": true,
-        "next": "true_epilogue_6"
-    },
-    "true_epilogue_6": {
-        "character": null,
-        "night": true,
         "next": "true_epilogue_7"
     },
     "true_epilogue_7": {
