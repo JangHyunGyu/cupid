@@ -434,7 +434,7 @@
         "text": "*Yuna's eyes are glistening. — This is the first time I've heard her talk this much.*",
         "choices": [
             "I'm not that senior. I'm me. But I'll still stay by your side.",
-            "I'm okay being his stand-in. I want to be the person you need.",
+            "Forget about that senior. The one standing in front of you right now is me.",
             "...So you approached me because of him? As a replacement?"
         ]
     },
@@ -536,7 +536,7 @@
     },
     "day4_night_sleep": {
         "name": "Me",
-        "text": "*When I close my eyes, that person's face appears. I wouldn't mind falling asleep like this.*"
+        "text": "*I close my eyes. Tomorrow is the last day. — There are still things left to say.*"
     },
     "day4_final": {
         "name": "Me",

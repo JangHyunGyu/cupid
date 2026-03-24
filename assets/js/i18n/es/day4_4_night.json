@@ -434,7 +434,7 @@
         "text": "*Los ojos de Yuna brillan húmedos. — Es la primera vez que la oigo hablar tanto.*",
         "choices": [
             "No soy ese senior. Soy yo. Pero me quedaré a tu lado.",
-            "No me importa ser su sustituto. Quiero ser la persona que necesitas.",
+            "Olvídate de ese senior. Quien está frente a ti ahora soy yo.",
             "...¿Así que te acercaste a mí por él? ¿Como reemplazo?"
         ]
     },
@@ -536,7 +536,7 @@
     },
     "day4_night_sleep": {
         "name": "Yo",
-        "text": "*Cuando cierro los ojos, aparece el rostro de esa persona. No me importaría quedarme dormido así.*"
+        "text": "*Cierro los ojos. Mañana es el último día. — Aún quedan cosas por decir.*"
     },
     "day4_final": {
         "name": "Yo",

@@ -318,11 +318,11 @@
         "text": "*To someone, it might have seemed like I gave hope only to take it away. I’m sorry.*"
     },
     "good_1b": {
-        "name": "Me",
-        "text": "*She spoke.*"
+        "name": "{name}",
+        "text": "*A voice comes from ahead.*"
     },
     "good_1c": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She took a step closer.*"
     },
     "good_1_seo": {
@@ -343,11 +343,11 @@
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*I wasn’t lost. It was just the process of finding you.*"
+        "text": "*Seoyeon pretends to be perfect — but I wasn’t perfect either. Maybe that’s why we fit.*"
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*Imperfect love is still love. Maybe it’s more precious precisely because it falls short.*"
+        "text": "*There’s time to fill what’s missing. The cherry blossoms will bloom again next year.*"
     },
     "good_5_seo": {
         "name": "{name}",
@@ -359,11 +359,11 @@
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*I wasn’t lost. It was just the process of finding you.*"
+        "text": "*Yuna was chasing the shadow of someone who disappeared. I know now — I’m not that shadow.*"
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*Imperfect love is still love. Maybe it’s more precious precisely because it falls short.*"
+        "text": "*I want to be remembered as myself, not as a stand-in. Even if it takes time.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -375,11 +375,11 @@
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*I wasn’t lost. It was just the process of finding you.*"
+        "text": "*Dain kept running even when her knees hurt. I can — keep running a little longer too.*"
     },
     "good_4_dain": {
         "name": "{name}",
-        "text": "*Imperfect love is still love. Maybe it’s more precious precisely because it falls short.*"
+        "text": "*The last serve hasn’t come over yet. The match isn’t over.*"
     },
     "good_5_dain": {
         "name": "{name}",
