@@ -337,21 +337,53 @@
         "name": "Dain",
         "text": "Hey, ich war echt sauer, weißt du? ...Aber am Ende bist du zu mir gekommen. Das reicht mir."
     },
-    "good_2": {
+    "good_2_seo": {
         "name": "{name}",
-        "text": "*Aber gerade weil ich schwankte, verstand ich, was meine wahren Gefühle sind.*"
+        "text": "*Wir gehen nebeneinander. Kirschblüten wirbeln unter den Straßenlaternen. Ein Blütenblatt legt sich auf Seoyeons Haar.*"
     },
-    "good_3": {
-        "name": "Ich",
+    "good_3_seo": {
+        "name": "{name}",
         "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
     },
-    "good_4": {
-        "name": "Ich",
-        "text": "*Unvollkommene Liebe ist auch Liebe. Vielleicht ist sie gerade deshalb kostbarer, weil sie unvollkommen ist.*"
-    },
-    "good_5": {
+    "good_4_seo": {
         "name": "{name}",
-        "text": "*Unvollkommen, und das ist in Ordnung. Die Geschichte ist noch nicht vorbei.*"
+        "text": "*Unvollkommene Liebe ist auch Liebe. Vielleicht ist sie gerade deshalb so kostbar, weil etwas fehlt.*"
+    },
+    "good_5_seo": {
+        "name": "{name}",
+        "text": "*Selbst wenn der Kirschblütenweg endet, ist das in Ordnung. Die Geschichte ist noch nicht vorbei.*"
+    },
+    "good_2_yuna": {
+        "name": "{name}",
+        "text": "*Wir sind aufs Dach gestiegen. Yuna lehnt schon am Geländer. Die Nachtlandschaft breitet sich unter unseren Füßen aus.*"
+    },
+    "good_3_yuna": {
+        "name": "{name}",
+        "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+    },
+    "good_4_yuna": {
+        "name": "{name}",
+        "text": "*Unvollkommene Liebe ist auch Liebe. Vielleicht ist sie gerade deshalb so kostbar, weil etwas fehlt.*"
+    },
+    "good_5_yuna": {
+        "name": "{name}",
+        "text": "*Ein einzelner Stern ist zu sehen. Unvollkommen, und das ist in Ordnung. Die Geschichte ist noch nicht vorbei.*"
+    },
+    "good_2_dain": {
+        "name": "{name}",
+        "text": "*Wir stehen nebeneinander vor dem Schultor. Die Abendsonne geht unter. Dain hält einen Volleyball in einer Hand.*"
+    },
+    "good_3_dain": {
+        "name": "{name}",
+        "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+    },
+    "good_4_dain": {
+        "name": "{name}",
+        "text": "*Unvollkommene Liebe ist auch Liebe. Vielleicht ist sie gerade deshalb so kostbar, weil etwas fehlt.*"
+    },
+    "good_5_dain": {
+        "name": "{name}",
+        "text": "*Die Sonne geht hinter dem Schultor unter. Unvollkommen, und das ist in Ordnung. Die Geschichte ist noch nicht vorbei.*"
     },
     "good_5_cg_seo": {
         "name": "System",
