@@ -1145,28 +1145,28 @@ Object.assign(SCENARIO[5], {
         "next": "friend_8"
     },
     "friend_8": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/ending_friend.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_9"
     },
     "friend_9": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/ending_friend.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_10"
     },
     "friend_10": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/ending_friend.png",
         "character": null,
         "night": true,
         "fade": true,
         "next": "friend_11"
     },
     "friend_11": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/ending_friend.png",
         "character": null,
         "night": true,
         "fade": true,
