@@ -85,9 +85,9 @@ Object.assign(SCENARIO[5], {
         "fade": true,
         "affinityChar": "Seoyeon",
         "affinityBranches": [
-            { "minAffinity": 70, "next": "perfect_seo_1" },
-            { "minAffinity": 50, "next": "true_seo_1" },
-            { "minAffinity": 30, "next": "day5_ending_good" },
+            { "minAffinity": 80, "next": "perfect_seo_1" },
+            { "minAffinity": 60, "next": "true_seo_1" },
+            { "minAffinity": 40, "next": "day5_ending_good" },
             { "minAffinity": 0, "next": "bitter_seo_1" }
         ],
         "next": "bitter_seo_1"
@@ -99,9 +99,9 @@ Object.assign(SCENARIO[5], {
         "fade": true,
         "affinityChar": "Yuna",
         "affinityBranches": [
-            { "minAffinity": 70, "next": "perfect_yuna_1" },
-            { "minAffinity": 50, "next": "true_yuna_1" },
-            { "minAffinity": 30, "next": "day5_ending_good" },
+            { "minAffinity": 80, "next": "perfect_yuna_1" },
+            { "minAffinity": 60, "next": "true_yuna_1" },
+            { "minAffinity": 40, "next": "day5_ending_good" },
             { "minAffinity": 0, "next": "bitter_yuna_1" }
         ],
         "next": "bitter_yuna_1"
@@ -113,9 +113,9 @@ Object.assign(SCENARIO[5], {
         "fade": true,
         "affinityChar": "Dain",
         "affinityBranches": [
-            { "minAffinity": 70, "next": "perfect_dain_1" },
-            { "minAffinity": 50, "next": "true_dain_1" },
-            { "minAffinity": 30, "next": "day5_ending_good" },
+            { "minAffinity": 80, "next": "perfect_dain_1" },
+            { "minAffinity": 60, "next": "true_dain_1" },
+            { "minAffinity": 40, "next": "day5_ending_good" },
             { "minAffinity": 0, "next": "bitter_dain_1" }
         ],
         "next": "bitter_dain_1"
