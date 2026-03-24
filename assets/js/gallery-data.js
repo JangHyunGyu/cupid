@@ -707,7 +707,7 @@ class GalleryData {
             ,
                 name: '서연과의 약속',
                 character: '서연',
-                description: '석양이 물드는 옥상에서, 서연이 팔짱을 끼며 어깨에 기대는 순간',
+                description: '석양이 물드는 옥상에서, 서연이 품에 안겨 올려다보는 순간',
                 file: 'assets/images/background/ending_perfect_seoyeon.png',
                 thumbnail: 'assets/images/background/ending_perfect_seoyeon.png'
             },
@@ -717,7 +717,7 @@ class GalleryData {
             ,
                 name: '유나의 온기',
                 character: '유나',
-                description: '달빛 아래 아지트에서, 유나가 처음으로 등 뒤에서 안아준 밤',
+                description: '달빛 아래 아지트에서, 유나가 처음으로 품에 안긴 밤',
                 file: 'assets/images/background/ending_perfect_yuna.png',
                 thumbnail: 'assets/images/background/ending_perfect_yuna.png'
             },
@@ -859,10 +859,10 @@ class GalleryData {
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
             },
-            { id: 'ending_perfect_seoyeon', name: 'Promise with Seoyeon', character: 'Seoyeon', description: 'On the sunset rooftop, Seoyeon leans on your shoulder', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
+            { id: 'ending_perfect_seoyeon', name: 'Promise with Seoyeon', character: 'Seoyeon', description: 'On the sunset rooftop, Seoyeon holds you close and looks up', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
                 unlockHint: "Reach Seoyeon Perfect Ending"
             },
-            { id: 'ending_perfect_yuna', name: 'Yuna\'s Warmth', character: 'Yuna', description: 'In the moonlit hideout, Yuna hugs you from behind for the first time', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
+            { id: 'ending_perfect_yuna', name: 'Yuna\'s Warmth', character: 'Yuna', description: 'In the moonlit hideout, Yuna holds you close for the first time', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "Reach Yuna Perfect Ending"
             },
             { id: 'ending_perfect_dain', name: 'Dain\'s Victory', character: 'Dain', description: 'In the sunset gym, Dain leaps into your arms', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
@@ -936,10 +936,10 @@ class GalleryData {
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
             },
-            { id: 'ending_perfect_seoyeon', name: 'Promesa con Seoyeon', character: 'Seoyeon', description: 'En la azotea al atardecer, Seoyeon se apoya en tu hombro', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
+            { id: 'ending_perfect_seoyeon', name: 'Promesa con Seoyeon', character: 'Seoyeon', description: 'En la azotea al atardecer, Seoyeon se abraza a ti y te mira', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
                 unlockHint: "Alcanza el Final Perfecto de Seoyeon"
             },
-            { id: 'ending_perfect_yuna', name: 'La calidez de Yuna', character: 'Yuna', description: 'En el escondite bajo la luz de la luna, Yuna te abraza por detrás', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
+            { id: 'ending_perfect_yuna', name: 'La calidez de Yuna', character: 'Yuna', description: 'En el escondite bajo la luz de la luna, Yuna se abraza a ti por primera vez', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "Alcanza el Final Perfecto de Yuna"
             },
             { id: 'ending_perfect_dain', name: 'La victoria de Dain', character: 'Dain', description: 'En el gimnasio al atardecer, Dain salta a tus brazos', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
@@ -1013,10 +1013,10 @@ class GalleryData {
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
             },
-            { id: 'ending_perfect_seoyeon', name: 'ソヨンとの約束', character: 'ソヨン', description: '夕焼けの屋上で、ソヨンが肩にもたれかかる瞬間', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
+            { id: 'ending_perfect_seoyeon', name: 'ソヨンとの約束', character: 'ソヨン', description: '夕焼けの屋上で、ソヨンが胸に飛び込んで見上げる瞬間', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
                 unlockHint: "ソヨンのパーフェクトエンディングに到達"
             },
-            { id: 'ending_perfect_yuna', name: 'ユナの温もり', character: 'ユナ', description: '月明かりの隠れ家で、ユナが初めて後ろから抱きしめた夜', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
+            { id: 'ending_perfect_yuna', name: 'ユナの温もり', character: 'ユナ', description: '月明かりの隠れ家で、ユナが初めて胸に飛び込んだ夜', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "ユナのパーフェクトエンディングに到達"
             },
             { id: 'ending_perfect_dain', name: 'ダインの勝利', character: 'ダイン', description: '夕日の体育館で、ダインが飛びついて抱きついた瞬間', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
@@ -1090,10 +1090,10 @@ class GalleryData {
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
             },
-            { id: 'ending_perfect_seoyeon', name: 'Promesse avec Seoyeon', character: 'Seoyeon', description: 'Sur le toit au coucher du soleil, Seoyeon s\'appuie sur ton épaule', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
+            { id: 'ending_perfect_seoyeon', name: 'Promesse avec Seoyeon', character: 'Seoyeon', description: 'Sur le toit au coucher du soleil, Seoyeon se blottit contre toi et lève les yeux', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
                 unlockHint: "Atteindre la fin parfaite de Seoyeon"
             },
-            { id: 'ending_perfect_yuna', name: 'La chaleur de Yuna', character: 'Yuna', description: 'Dans le repaire au clair de lune, Yuna t\'enlace par derrière', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
+            { id: 'ending_perfect_yuna', name: 'La chaleur de Yuna', character: 'Yuna', description: 'Dans le repaire au clair de lune, Yuna se blottit contre toi pour la première fois', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "Atteindre la fin parfaite de Yuna"
             },
             { id: 'ending_perfect_dain', name: 'La victoire de Dain', character: 'Dain', description: 'Dans le gymnase au coucher du soleil, Dain saute dans tes bras', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
@@ -1167,10 +1167,10 @@ class GalleryData {
                 file: 'assets/images/background/dain_depression_event1.png',
                 thumbnail: 'assets/images/background/dain_depression_event1.png'
             },
-            { id: 'ending_perfect_seoyeon', name: 'Versprechen mit Seoyeon', character: 'Seoyeon', description: 'Auf dem Dach bei Sonnenuntergang, Seoyeon lehnt sich an deine Schulter', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
+            { id: 'ending_perfect_seoyeon', name: 'Versprechen mit Seoyeon', character: 'Seoyeon', description: 'Auf dem Dach bei Sonnenuntergang, Seoyeon schmiegt sich an dich und blickt auf', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
                 unlockHint: "Erreiche Seoyeons perfektes Ende"
             },
-            { id: 'ending_perfect_yuna', name: 'Yunas Wärme', character: 'Yuna', description: 'Im mondbeleuchteten Versteck umarmt Yuna dich zum ersten Mal von hinten', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
+            { id: 'ending_perfect_yuna', name: 'Yunas Wärme', character: 'Yuna', description: 'Im mondbeleuchteten Versteck schmiegt sich Yuna zum ersten Mal an dich', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
                 unlockHint: "Erreiche Yunas perfektes Ende"
             },
             { id: 'ending_perfect_dain', name: 'Dains Sieg', character: 'Dain', description: 'In der Turnhalle bei Sonnenuntergang springt Dain in deine Arme', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
