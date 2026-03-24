@@ -41,7 +41,7 @@
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*처음으로 안경을 벗고 — 울고 있다.*"
+        "text": "*안경 너머로 눈물이 흐르고 있다. — 처음 보는 서연의 표정이다.*"
     },
     "perfect_seo_3": {
         "name": "서연",
@@ -807,5 +807,17 @@
     "confess_fail_cg_dain": {
         "name": "{name}",
         "text": ""
+    },
+    "perfect_epilogue_bridge_seo": {
+        "name": "시스템",
+        "text": "*에필로그 — 1년 후*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "시스템",
+        "text": "*에필로그 — 1년 후*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "시스템",
+        "text": "*에필로그 — 1년 후*"
     }
 }

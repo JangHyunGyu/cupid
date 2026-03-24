@@ -305,16 +305,31 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_perfect_seoyeon.png",
         "character": null,
         "night": true,
-        "next": "perfect_epilogue_2_seo"
+        "next": "perfect_epilogue_bridge_seo"
     },
     "perfect_epilogue_1_yuna": {
         "background": "assets/images/background/ending_perfect_yuna.png",
         "character": null,
         "night": true,
-        "next": "perfect_epilogue_2_yuna"
+        "next": "perfect_epilogue_bridge_yuna"
     },
     "perfect_epilogue_1_dain": {
         "background": "assets/images/background/ending_perfect_dain.png",
+        "character": null,
+        "night": true,
+        "next": "perfect_epilogue_bridge_dain"
+    },
+    "perfect_epilogue_bridge_seo": {
+        "character": null,
+        "night": true,
+        "next": "perfect_epilogue_2_seo"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "character": null,
+        "night": true,
+        "next": "perfect_epilogue_2_yuna"
+    },
+    "perfect_epilogue_bridge_dain": {
         "character": null,
         "night": true,
         "next": "perfect_epilogue_2_dain"
