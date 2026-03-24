@@ -1237,9 +1237,10 @@ Object.assign(SCENARIO[5], {
         "affinityChar": "Teacher",
         "affinityBranches": [
             { "minAffinity": 80, "next": "hidden_perfect_homeroom_1" },
-            { "minAffinity": 0, "next": "hidden_true_homeroom_1" }
+            { "minAffinity": 40, "next": "hidden_true_homeroom_1" },
+            { "minAffinity": 0, "next": "hidden_good_homeroom_1" }
         ],
-        "next": "hidden_true_homeroom_1"
+        "next": "hidden_good_homeroom_1"
     },
 
     // =========================================================================
@@ -1294,9 +1295,10 @@ Object.assign(SCENARIO[5], {
         "affinityChar": "Nurse",
         "affinityBranches": [
             { "minAffinity": 80, "next": "hidden_perfect_nurse_1" },
-            { "minAffinity": 0, "next": "hidden_true_nurse_1" }
+            { "minAffinity": 40, "next": "hidden_true_nurse_1" },
+            { "minAffinity": 0, "next": "hidden_good_nurse_1" }
         ],
-        "next": "hidden_true_nurse_1"
+        "next": "hidden_good_nurse_1"
     },
 
     // =========================================================================
