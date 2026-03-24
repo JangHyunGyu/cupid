@@ -1413,6 +1413,16 @@ body::-webkit-scrollbar-thumb:hover {
     .tab-nav {
         gap: 6px;
     }
+
+    /* CG 그리드: 태블릿 대응 */
+    .cg-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 12px;
+    }
+
+    .cg-card .card-info h4 {
+        font-size: 0.85rem;
+    }
 }
 
 /* 모바일 세로 (480px 이하) */
@@ -1449,6 +1459,25 @@ body::-webkit-scrollbar-thumb:hover {
     /* 카드 이미지 더 작게 */
     .card-image {
         height: 180px;
+    }
+
+    /* CG 그리드: 모바일 대응 */
+    .cg-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 5px;
+    }
+
+    .cg-card .card-info {
+        padding: 6px 8px;
+    }
+
+    .cg-card .card-info h4 {
+        font-size: 0.7rem;
+    }
+
+    .cg-card .card-info p {
+        font-size: 0.6rem;
     }
 }
 
