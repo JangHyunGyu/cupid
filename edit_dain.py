@@ -16,7 +16,7 @@ if not api_key:
     exit(1)
 
 # 레퍼런스 이미지 읽기 (candidate_2)
-ref_path = os.path.join(os.path.dirname(__file__), "assets", "images", "characters", "dain_normal_candidate_3.png")
+ref_path = os.path.join(os.path.dirname(__file__), "assets", "images", "characters", "dain_normal.png")
 with open(ref_path, "rb") as f:
     img_b64 = base64.b64encode(f.read()).decode("utf-8")
 
@@ -32,7 +32,7 @@ payload = {
                 }
             },
             {
-                "text": "Edit this anime character image. Make her chest MUCH bigger and more voluminous - very large round breasts that stretch and pull the uniform fabric extremely tight. Keep everything else exactly the same - same face, same short pixie hair, same pose, same outfit colors, same text ETAURS 19, same magenta pink background, same art style and quality. Only change the chest size to be significantly larger. Output at 1024x1024 resolution. Output one single image."
+                "text": "Edit ONLY the outfit of this anime character. Replace the volleyball uniform with a navy and white two-piece sports bikini top and bikini bottom. The bikini top is a small triangle sports bra. The bikini bottom is small. Remove the arm sleeve completely, both arms bare. Add small water droplets on skin. DO NOT change the body shape, chest size, waist, hips, or any body proportions at all. Keep the exact same body, face, hair, pose, and magenta pink background. Output at 1024x1024 resolution. Output one single image."
             }
         ]
     }],
@@ -55,7 +55,7 @@ if resp.status_code == 200:
             if "inlineData" in part:
                 img_data = base64.b64decode(part["inlineData"]["data"])
                 count += 1
-                path = os.path.join(out_dir, f"dain_normal_edited_{count}.png")
+                path = os.path.join(out_dir, f"dain_bikini_v2.png")
                 with open(path, "wb") as f:
                     f.write(img_data)
                 print(f"  Saved: {path} ({len(img_data)} bytes)")
