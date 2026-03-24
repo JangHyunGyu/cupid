@@ -16,7 +16,7 @@ if not api_key:
     exit(1)
 
 # 레퍼런스 이미지 읽기 (candidate_2)
-ref_path = "assets/images/characters/dain_normal_candidate_2.png"
+ref_path = "assets/images/characters/dain.png"
 with open(ref_path, "rb") as f:
     img_b64 = base64.b64encode(f.read()).decode("utf-8")
 
@@ -32,7 +32,7 @@ payload = {
                 }
             },
             {
-                "text": "Edit this anime character image. Keep the same large chest size. Flip her body direction so she faces slightly to the left side instead of right, with her face still looking toward the viewer. Keep the uniform text ETAURS 19 readable and correct (not mirrored). Same green chroma key background, same art style, same face, same hair. Output only one single image."
+                "text": "Using this character as reference, redraw her as a high quality anime visual novel character sprite. She should have: brown very short pixie cut hair, bright sparkling green eyes with star-shaped highlights, baby face with bright round cute eyes and small cute button nose, 6.5-head-tall proportions, athletic volleyball player with very curvy glamorous figure and large chest, wearing volleyball uniform (white base with orange lines, ETAURS team name, number 19 on chest), navy hot pants, black arm sleeve on left arm only, right hand on hip confident pose, bright cool smile showing teeth, energetic sporty girl vibe, upper body portrait, 1024x1024 resolution, solid bright green chroma key background, soft diffused front lighting, clean lineart, vivid digital cel shading. Output one single high quality image."
             }
         ]
     }],
