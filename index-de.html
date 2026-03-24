@@ -25,7 +25,7 @@
             const CURRENT_VERSION = '2.0.0';
             // Register Service Worker (skip on local dev)
             if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
-                navigator.serviceWorker.register('service-worker.js')
+                navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
                     .then(reg => console.log('[SW] Registriert:', reg.scope))
                     .catch(err => console.log('[SW] Registrierung fehlgeschlagen:', err));
             }
@@ -722,7 +722,7 @@
     <div id="landing-container">
         <!-- Title Heroines -->
         <div class="title-heroines">
-            <img src="assets/images/characters/dain_normal.webp?v=2.3.2" alt="" class="title-heroine pos-1" loading="eager">
+            <img src="assets/images/characters/dain_normal.png?v=2.3.2" alt="" class="title-heroine pos-1" loading="eager">
             <img src="assets/images/characters/teacher_normal.webp?v=2.3.2" alt="" class="title-heroine pos-2" loading="eager">
             <img src="assets/images/characters/seyoun_normal.webp?v=2.3.2" alt="" class="title-heroine pos-3" loading="eager">
             <img src="assets/images/characters/nurse_normal.webp?v=2.3.2" alt="" class="title-heroine pos-4" loading="eager">
