@@ -135,6 +135,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: clamp(60px, 13vh, 130px);
             color: white;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
         }
@@ -169,20 +170,20 @@
         }
 
         .visual-h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            letter-spacing: 5px;
+            font-size: clamp(2rem, 6vmin, 4rem);
+            margin-bottom: clamp(0.2rem, 1vh, 1rem);
+            letter-spacing: clamp(2px, 0.5vw, 5px);
             color: #ff69b4;
         }
 
         p {
-            font-size: 1.5rem;
-            margin-bottom: 3rem;
+            font-size: clamp(0.85rem, 2.5vmin, 1.5rem);
+            margin-bottom: clamp(0.8rem, 3vh, 3rem);
         }
 
         .start-btn {
-            padding: 15px 50px;
-            font-size: 1.5rem;
+            padding: clamp(8px, 1.5vh, 15px) clamp(30px, 7vw, 50px);
+            font-size: clamp(0.95rem, 2.2vmin, 1.5rem);
             background: #ff69b4;
             color: white;
             border: none;
@@ -201,27 +202,32 @@
 
         .footer {
             position: absolute;
-            bottom: 30px;
+            bottom: clamp(5px, 2.5vh, 30px);
             z-index: 2;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            gap: clamp(3px, 1vh, 15px);
+        }
+
+        .footer p {
+            font-size: clamp(0.55rem, 1.3vmin, 0.85rem) !important;
+            margin-bottom: clamp(1px, 0.4vh, 5px) !important;
         }
 
         .contact-links {
             display: flex;
-            gap: 20px;
+            gap: clamp(8px, 1.5vw, 20px);
         }
 
         .contact-link {
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(5px);
-            padding: 10px 20px;
+            padding: clamp(4px, 0.8vh, 10px) clamp(10px, 1.8vw, 20px);
             border-radius: 20px;
             color: white;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: clamp(0.65rem, 1.5vmin, 0.9rem);
             border: 1px solid rgba(255, 255, 255, 0.3);
             transition: all 0.2s;
             cursor: pointer;
@@ -229,105 +235,6 @@
 
         .contact-link:hover {
             background: rgba(255, 255, 255, 0.4);
-        }
-
-        /* 모바일 세로모드 최적화 */
-        @media (max-width: 768px) and (orientation: portrait) {
-            
-
-            .visual-h1 {
-                font-size: 3rem;
-                margin-bottom: 0.5rem;
-            }
-
-            p {
-                font-size: 1.2rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .start-btn {
-                padding: 12px 40px;
-                font-size: 1.2rem;
-            }
-
-            .footer {
-                bottom: 20px;
-            }
-        }
-
-        /* 작은 모바일 화면 최적화 */
-        @media (max-width: 480px) and (orientation: portrait) {
-
-            .visual-h1 {
-                font-size: 2.5rem;
-                margin-bottom: 0.3rem;
-            }
-
-            p {
-                font-size: 1rem;
-                margin-bottom: 1rem;
-            }
-
-            .start-btn {
-                padding: 10px 35px;
-                font-size: 1.1rem;
-            }
-
-            .footer {
-                bottom: 15px;
-                gap: 8px;
-            }
-
-            .contact-links {
-                gap: 12px;
-            }
-
-            .contact-link {
-                padding: 6px 15px;
-                font-size: 0.8rem;
-            }
-
-            .footer p {
-                font-size: 0.75rem !important;
-                margin-bottom: 3px !important;
-            }
-        }
-
-        /* 모바일 가로모드 최적화 */
-        @media (max-height: 500px) and (orientation: landscape) {
-            .visual-h1 {
-                font-size: 2rem;
-                margin-bottom: 0.2rem;
-            }
-
-            p {
-                font-size: 1rem;
-                margin-bottom: 1rem;
-            }
-
-            .start-btn {
-                padding: 8px 25px;
-                font-size: 1.1rem;
-            }
-
-            .footer {
-                bottom: 5px;
-                gap: 2px;
-            }
-
-            .contact-links {
-                gap: 10px;
-            }
-
-            .contact-link {
-                padding: 4px 12px;
-                font-size: 0.75rem;
-            }
-
-            .footer p {
-                font-size: 0.7rem !important;
-                margin-bottom: 2px !important;
-            }
         }
 
         /* Modal Styles */
@@ -824,7 +731,7 @@
         <div class="content">
             <div class="visual-h1" role="heading" aria-level="2">CUPID</div>
             <p>Die Geschichte deines ersten Tages an einer neuen Schule</p>
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: clamp(6px, 1.2vh, 12px);">
                 <button id="start-btn" onclick="startGame()" class="start-btn" style="border:none; cursor:pointer; opacity: 0.5;" disabled>Neues Spiel</button>
                 <button id="continue-btn" onclick="continueGame()" class="start-btn"
                     style="border:none; cursor:pointer; background: linear-gradient(135deg, #6b5b95, #4a4070); opacity: 0.5;"
@@ -838,8 +745,8 @@
                 <button class="contact-link" onclick="openContactModal()"> Kontakt</button>
                 <button class="contact-link" onclick="installApp()"> App installieren</button>
             </div>
-            <p style="font-size: 0.85rem; margin-bottom: 5px; color: #ffb6c1;">Advisor: Yujin Kim, Sanghun Lee</p>
-            <p style="font-size: 0.8rem; opacity: 0.7;"> 2026 ArcherLab. All rights reserved. (v1.2.5)</p>
+            <p style="color: #ffb6c1;">Advisor: Yujin Kim, Sanghun Lee</p>
+            <p style="opacity: 0.7;"> 2026 ArcherLab. All rights reserved. (v1.2.5)</p>
         </div>
     </div>
 
