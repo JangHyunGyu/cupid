@@ -293,7 +293,9 @@ class GalleryProgress {
         if (this.isAdmin) return true;
         this.refresh();
         const trueEnding = this.data.characters?.[charId]?.trueEndingCleared || false;
-        const bikiniUnlocked = this.getAffinity(charId) >= 100 && this.getFreeTalkCount(charId) >= 30;
+        const hiddenChars = ['teacher', 'nurse'];
+        const affinityThreshold = hiddenChars.includes(charId) ? 80 : 100;
+        const bikiniUnlocked = this.getAffinity(charId) >= affinityThreshold && this.getFreeTalkCount(charId) >= 30;
         return trueEnding && bikiniUnlocked;
     }
 

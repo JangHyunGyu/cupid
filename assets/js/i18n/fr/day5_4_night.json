@@ -95,7 +95,16 @@
         "name": "Moi",
         "text": "*Dain pose le ballon sur le terrain. Elle se retourne et sourit. Un sourire sans points d'exclamation.*"
     },
-    "perfect_epilogue_1": {
+    "perfect_epilogue_1": {},
+    "perfect_epilogue_1_seo": {
+        "name": "Moi",
+        "text": "*Chaque choix pointait vers une seule personne. Ce n'etait pas cinq jours — chaque jour etait tout.*"
+    },
+    "perfect_epilogue_1_yuna": {
+        "name": "Moi",
+        "text": "*Chaque choix pointait vers une seule personne. Ce n'etait pas cinq jours — chaque jour etait tout.*"
+    },
+    "perfect_epilogue_1_dain": {
         "name": "Moi",
         "text": "*Chaque choix pointait vers une seule personne. Ce n'etait pas cinq jours — chaque jour etait tout.*"
     },
@@ -263,7 +272,16 @@
         "name": "Moi",
         "text": "*Le rire de Dain résonne encore dans mes oreilles.*"
     },
-    "true_epilogue_1": {
+    "true_epilogue_1": {},
+    "true_epilogue_1_seo": {
+        "name": "Moi",
+        "text": "*Cinq jours.*"
+    },
+    "true_epilogue_1_yuna": {
+        "name": "Moi",
+        "text": "*Cinq jours.*"
+    },
+    "true_epilogue_1_dain": {
         "name": "Moi",
         "text": "*Cinq jours.*"
     },

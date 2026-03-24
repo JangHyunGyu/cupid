@@ -95,7 +95,16 @@
         "name": "{name}",
         "text": "*다인이 배구공을 코트에 내려놓는다. 돌아서서 웃는다. 느낌표 없는 웃음.*"
     },
-    "perfect_epilogue_1": {
+    "perfect_epilogue_1": {},
+    "perfect_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*모든 선택이 하나의 사람을 향해 있었다. 5일이 아니라, 하루하루가 전부였다.*"
+    },
+    "perfect_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*모든 선택이 하나의 사람을 향해 있었다. 5일이 아니라, 하루하루가 전부였다.*"
+    },
+    "perfect_epilogue_1_dain": {
         "name": "{name}",
         "text": "*모든 선택이 하나의 사람을 향해 있었다. 5일이 아니라, 하루하루가 전부였다.*"
     },
@@ -263,7 +272,16 @@
         "name": "{name}",
         "text": "*다인의 웃음이 아직 귓가에 남아 있다.*"
     },
-    "true_epilogue_1": {
+    "true_epilogue_1": {},
+    "true_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*5일이었다.*"
+    },
+    "true_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*5일이었다.*"
+    },
+    "true_epilogue_1_dain": {
         "name": "{name}",
         "text": "*5일이었다.*"
     },

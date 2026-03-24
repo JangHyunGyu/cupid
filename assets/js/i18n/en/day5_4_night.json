@@ -95,7 +95,16 @@
         "name": "Me",
         "text": "*Dain sets the volleyball down on the court. She turns and smiles. A smile without exclamation marks.*"
     },
-    "perfect_epilogue_1": {
+    "perfect_epilogue_1": {},
+    "perfect_epilogue_1_seo": {
+        "name": "Me",
+        "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
+    },
+    "perfect_epilogue_1_yuna": {
+        "name": "Me",
+        "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
+    },
+    "perfect_epilogue_1_dain": {
         "name": "Me",
         "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
     },
@@ -263,7 +272,16 @@
         "name": "Me",
         "text": "*Dain's laughter still lingers in my ears.*"
     },
-    "true_epilogue_1": {
+    "true_epilogue_1": {},
+    "true_epilogue_1_seo": {
+        "name": "Me",
+        "text": "*It was five days.*"
+    },
+    "true_epilogue_1_yuna": {
+        "name": "Me",
+        "text": "*It was five days.*"
+    },
+    "true_epilogue_1_dain": {
         "name": "Me",
         "text": "*It was five days.*"
     },
