@@ -108,17 +108,41 @@
         "name": "Moi",
         "text": "*Chaque choix pointait vers une seule personne. Ce n'etait pas cinq jours — chaque jour etait tout.*"
     },
-    "perfect_epilogue_2": {
+    "perfect_epilogue_2_seo": {
         "name": "Moi",
-        "text": "*Un an plus tard. Jour de la rentree universitaire. Un message sur mon telephone.*"
+        "text": "*Jour de la cérémonie d'entrée à l'université. Un message sur mon téléphone. 'J'ai arrosé la plante aujourd'hui. — Mais reviens vite.'*"
     },
-    "perfect_epilogue_3": {
+    "perfect_epilogue_2_yuna": {
         "name": "Moi",
-        "text": "*Beaucoup de choses ont change. Mais certaines non. — Cette personne est toujours a mes cotes.*"
+        "text": "*Le premier roman de Yuna a été publié. La dédicace : 'À la troisième étoile.'*"
     },
-    "perfect_epilogue_4": {
+    "perfect_epilogue_2_dain": {
+        "name": "Moi",
+        "text": "*Dain est devenue commentatrice sportive. Elle sourit devant la caméra. Mais cette fois, c'est un vrai sourire.*"
+    },
+    "perfect_epilogue_3_seo": {
+        "name": "Moi",
+        "text": "*Seoyeon a changé. Elle sait que ce n'est pas grave de ne pas être parfaite. Les sourires non répétés sont devenus son quotidien.*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "Moi",
+        "text": "*Yuna parle toujours peu. Mais ses phrases se sont allongées. Seulement avec moi.*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "Moi",
+        "text": "*Parfois elle dit que son genou lui fait mal. À chaque fois, je m'assieds à côté d'elle sans rien dire. C'est comme ça qu'on fonctionne.*"
+    },
+    "perfect_epilogue_4_seo": {
         "name": "Système",
-        "text": "─── PERFECT END ───"
+        "text": "─── PERFECT END (Seoyeon) ───"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "Système",
+        "text": "─── PERFECT END (Yuna) ───"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "Système",
+        "text": "─── PERFECT END (Dain) ───"
     },
     "bitter_seo_1": {
         "name": "Moi",
@@ -296,14 +320,6 @@
     "true_epilogue_4": {
         "name": "Moi",
         "text": "*Mon genou n'a pas guéri. Ma famille n'est pas plus heureuse. Ceux qui sont partis ne sont pas revenus. — Mais au moins, je n'ai plus besoin de m'entraîner à pleurer seul. Plus maintenant.*"
-    },
-    "true_epilogue_5": {
-        "name": "Moi",
-        "text": ""
-    },
-    "true_epilogue_6": {
-        "name": "Moi",
-        "text": ""
     },
     "true_epilogue_7": {
         "name": "Système",

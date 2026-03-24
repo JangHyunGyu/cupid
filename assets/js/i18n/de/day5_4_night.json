@@ -108,17 +108,41 @@
         "name": "Ich",
         "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht funf Tage — jeder einzelne Tag war alles.*"
     },
-    "perfect_epilogue_2": {
+    "perfect_epilogue_2_seo": {
         "name": "Ich",
-        "text": "*Ein Jahr spater. Tag der Universitatseinschreibung. Eine Nachricht auf meinem Handy.*"
+        "text": "*Tag der Universitätseinschreibung. Eine Nachricht auf meinem Handy. 'Hab heute die Pflanze gegossen. — Aber komm bald nach Hause.'*"
     },
-    "perfect_epilogue_3": {
+    "perfect_epilogue_2_yuna": {
         "name": "Ich",
-        "text": "*Vieles hat sich geandert. Aber manches nicht. — Diese Person ist immer noch an meiner Seite.*"
+        "text": "*Yunas erster Roman wurde veröffentlicht. Die Widmung: 'Dem dritten Stern.'*"
     },
-    "perfect_epilogue_4": {
+    "perfect_epilogue_2_dain": {
+        "name": "Ich",
+        "text": "*Dain wurde Sportkommentatorin. Vor der Kamera lächelt sie. Aber diesmal ist es ein echtes Lächeln.*"
+    },
+    "perfect_epilogue_3_seo": {
+        "name": "Ich",
+        "text": "*Seoyeon hat sich verändert. Sie weiß, dass es in Ordnung ist, nicht perfekt zu sein. Ungeübte Lächeln sind zu ihrem Alltag geworden.*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "Ich",
+        "text": "*Yuna redet immer noch wenig. Aber ihre Sätze sind länger geworden. Nur mir gegenüber.*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "Ich",
+        "text": "*Manchmal sagt sie, ihr Knie tut weh. Dann setze ich mich einfach neben sie und sage nichts. So machen wir das.*"
+    },
+    "perfect_epilogue_4_seo": {
         "name": "System",
-        "text": "─── PERFECT END ───"
+        "text": "─── PERFECT END (Seoyeon) ───"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "System",
+        "text": "─── PERFECT END (Yuna) ───"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "System",
+        "text": "─── PERFECT END (Dain) ───"
     },
     "bitter_seo_1": {
         "name": "Ich",
@@ -296,14 +320,6 @@
     "true_epilogue_4": {
         "name": "Ich",
         "text": "*Mein Knie ist nicht geheilt. Meine Familie ist nicht glücklicher. Die Menschen, die gegangen sind, sind nicht zurückgekommen. — Aber zumindest muss ich nicht mehr üben, allein zu weinen. Nicht mehr.*"
-    },
-    "true_epilogue_5": {
-        "name": "Ich",
-        "text": ""
-    },
-    "true_epilogue_6": {
-        "name": "Ich",
-        "text": ""
     },
     "true_epilogue_7": {
         "name": "System",
