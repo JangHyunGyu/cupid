@@ -95,7 +95,16 @@
         "name": "Ich",
         "text": "*Dain legt den Volleyball auf das Spielfeld. Sie dreht sich um und lachelt. Ein Lacheln ohne Ausrufezeichen.*"
     },
-    "perfect_epilogue_1": {
+    "perfect_epilogue_1": {},
+    "perfect_epilogue_1_seo": {
+        "name": "Ich",
+        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht funf Tage — jeder einzelne Tag war alles.*"
+    },
+    "perfect_epilogue_1_yuna": {
+        "name": "Ich",
+        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht funf Tage — jeder einzelne Tag war alles.*"
+    },
+    "perfect_epilogue_1_dain": {
         "name": "Ich",
         "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht funf Tage — jeder einzelne Tag war alles.*"
     },
@@ -263,7 +272,16 @@
         "name": "Ich",
         "text": "*Dains Lachen klingt noch in meinen Ohren.*"
     },
-    "true_epilogue_1": {
+    "true_epilogue_1": {},
+    "true_epilogue_1_seo": {
+        "name": "Ich",
+        "text": "*Es waren fünf Tage.*"
+    },
+    "true_epilogue_1_yuna": {
+        "name": "Ich",
+        "text": "*Es waren fünf Tage.*"
+    },
+    "true_epilogue_1_dain": {
         "name": "Ich",
         "text": "*Es waren fünf Tage.*"
     },

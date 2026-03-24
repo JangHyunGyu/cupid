@@ -95,7 +95,16 @@
         "name": "僕",
         "text": "*ダインがバレーボールをコートに置く。振り返って笑う。ビックリマークのない笑顔。*"
     },
-    "perfect_epilogue_1": {
+    "perfect_epilogue_1": {},
+    "perfect_epilogue_1_seo": {
+        "name": "僕",
+        "text": "*すべての選択が一人に向いていた。5日間じゃなくて、一日一日がすべてだった。*"
+    },
+    "perfect_epilogue_1_yuna": {
+        "name": "僕",
+        "text": "*すべての選択が一人に向いていた。5日間じゃなくて、一日一日がすべてだった。*"
+    },
+    "perfect_epilogue_1_dain": {
         "name": "僕",
         "text": "*すべての選択が一人に向いていた。5日間じゃなくて、一日一日がすべてだった。*"
     },
@@ -263,7 +272,16 @@
         "name": "僕",
         "text": "*ダインの笑い声がまだ耳に残っている。*"
     },
-    "true_epilogue_1": {
+    "true_epilogue_1": {},
+    "true_epilogue_1_seo": {
+        "name": "僕",
+        "text": "*5日間だった。*"
+    },
+    "true_epilogue_1_yuna": {
+        "name": "僕",
+        "text": "*5日間だった。*"
+    },
+    "true_epilogue_1_dain": {
         "name": "僕",
         "text": "*5日間だった。*"
     },

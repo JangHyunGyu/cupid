@@ -13,7 +13,7 @@ Object.assign(SCENARIO[5], {
     // ENDING START — main entry & condition routing
     // =========================================================================
     "ending_start": {
-        "background": null,
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -68,7 +68,7 @@ Object.assign(SCENARIO[5], {
     // ENDING AFFINITY CHECK — route → character affinity branch
     // =========================================================================
     "ending_affinity_check": {
-        "background": null,
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -79,7 +79,7 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "ending_aff_check_seo": {
-        "background": null,
+        "background": "assets/images/background/top_school.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -93,7 +93,7 @@ Object.assign(SCENARIO[5], {
         "next": "bitter_seo_1"
     },
     "ending_aff_check_yuna": {
-        "background": null,
+        "background": "assets/images/background/yuna_hideout.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -107,7 +107,7 @@ Object.assign(SCENARIO[5], {
         "next": "bitter_yuna_1"
     },
     "ending_aff_check_dain": {
-        "background": null,
+        "background": "assets/images/background/gym.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -125,7 +125,7 @@ Object.assign(SCENARIO[5], {
     // CONFESSED AFFINITY CHECK — day5_confessed + affinity 50+/50-
     // =========================================================================
     "ending_confessed_aff_check": {
-        "background": null,
+        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -137,7 +137,7 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "ending_confessed_aff_seo": {
-        "background": null,
+        "background": "assets/images/background/top_school.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -148,7 +148,7 @@ Object.assign(SCENARIO[5], {
         "next": "day5_ending_confess_fail"
     },
     "ending_confessed_aff_yuna": {
-        "background": null,
+        "background": "assets/images/background/yuna_hideout.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -159,7 +159,7 @@ Object.assign(SCENARIO[5], {
         "next": "day5_ending_confess_fail"
     },
     "ending_confessed_aff_dain": {
-        "background": null,
+        "background": "assets/images/background/gym.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -297,7 +297,32 @@ Object.assign(SCENARIO[5], {
     // PERFECT END — Shared Epilogue
     // =========================================================================
     "perfect_epilogue_1": {
-        "background": null,
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "perfect_epilogue_1_seo" },
+            { "condition": "route_yuna", "next": "perfect_epilogue_1_yuna" },
+            { "next": "perfect_epilogue_1_dain" }
+        ]
+    },
+    "perfect_epilogue_1_seo": {
+        "background": "assets/images/background/ending_perfect_seoyeon.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "perfect_epilogue_2"
+    },
+    "perfect_epilogue_1_yuna": {
+        "background": "assets/images/background/ending_perfect_yuna.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "perfect_epilogue_2"
+    },
+    "perfect_epilogue_1_dain": {
+        "background": "assets/images/background/ending_perfect_dain.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -621,7 +646,32 @@ Object.assign(SCENARIO[5], {
 
     // ── Shared epilogue ──
     "true_epilogue_1": {
-        "background": null,
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "true_epilogue_1_seo" },
+            { "condition": "route_yuna", "next": "true_epilogue_1_yuna" },
+            { "next": "true_epilogue_1_dain" }
+        ]
+    },
+    "true_epilogue_1_seo": {
+        "background": "assets/images/background/ending_true_seoyeon.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "true_epilogue_2"
+    },
+    "true_epilogue_1_yuna": {
+        "background": "assets/images/background/ending_true_yuna.png",
+        "character": null,
+        "night": true,
+        "fade": true,
+        "next": "true_epilogue_2"
+    },
+    "true_epilogue_1_dain": {
+        "background": "assets/images/background/ending_true_dain.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -1125,13 +1175,13 @@ Object.assign(SCENARIO[5], {
     // TEACHER PERFECT / TRUE LOVE — Affinity Check
     // =========================================================================
     "hidden_perfect_homeroom_check": {
-        "background": null,
+        "background": "assets/images/background/room_school.png",
         "character": null,
         "night": true,
         "fade": true,
         "affinityChar": "Teacher",
         "affinityBranches": [
-            { "minAffinity": 60, "next": "hidden_perfect_homeroom_1" },
+            { "minAffinity": 80, "next": "hidden_perfect_homeroom_1" },
             { "minAffinity": 0, "next": "hidden_true_homeroom_1" }
         ],
         "next": "hidden_true_homeroom_1"
@@ -1182,13 +1232,13 @@ Object.assign(SCENARIO[5], {
     // NURSE PERFECT / TRUE LOVE — Affinity Check
     // =========================================================================
     "hidden_perfect_nurse_check": {
-        "background": null,
+        "background": "assets/images/background/nurse_room.jpg",
         "character": null,
         "night": true,
         "fade": true,
         "affinityChar": "Nurse",
         "affinityBranches": [
-            { "minAffinity": 60, "next": "hidden_perfect_nurse_1" },
+            { "minAffinity": 80, "next": "hidden_perfect_nurse_1" },
             { "minAffinity": 0, "next": "hidden_true_nurse_1" }
         ],
         "next": "hidden_true_nurse_1"
