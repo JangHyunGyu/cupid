@@ -691,11 +691,26 @@
         "name": "{name}",
         "text": "*Side by side on the living room couch. The sun is setting outside the window. Instead of a bandage, fingers are touching.*"
     },
+    "hidden_perfect_nurse_3b": {
+        "name": "School Nurse",
+        "text": "*She leans against me.* ...I don't need excuses anymore. Not a patient, not a student."
+    },
     "hidden_perfect_nurse_4": {
         "name": "School Nurse",
-        "text": "*She leans against me.* ...I don't need excuses anymore. Not a patient, not a student. Just — someone I want to be with.\n\n─── School Nurse PERFECT END ───"
+        "text": "*Her hand reaches up and grabs my tie. Not playful. Her eyes are serious.* ...I'm not letting you leave tonight."
     },
-    "hidden_perfect_nurse_5": {},
+    "hidden_perfect_nurse_4b": {
+        "name": "{name}",
+        "text": "*Morning. Light seeping through the curtains. Breathing beside me. — The person who used to take three minutes to put on a bandage is now asleep holding my hand.*"
+    },
+    "hidden_perfect_nurse_5": {
+        "name": "School Nurse",
+        "text": "*She opens her eyes. Smiles.* ...Does it hurt anywhere? Want me to take a look? *— Not a joke. Not this time.*"
+    },
+    "hidden_perfect_nurse_5b": {
+        "name": "{name}",
+        "text": "*Just — someone I want to be with. Right here.\n\n─── School Nurse PERFECT END ───*"
+    },
     "hidden_true_homeroom_1": {
         "name": "Me",
         "text": "*Graduation day. — Time has passed. The uniform isn't stiff anymore.*"
