@@ -145,7 +145,7 @@
     },
     "hallway_5": {
         "name": "Seoyeon",
-        "text": "Das Dach ist normalerweise abgeschlossen. Privileg der Vorsitzenden."
+        "text": "Als Schülerratsvorsitzende gibt es ein paar Türen, die ich öffnen kann."
     },
     "hallway_6": {
         "name": "{name}",
@@ -153,11 +153,11 @@
     },
     "hallway_7": {
         "name": "Seoyeon",
-        "text": "...Du bist aufmerksam."
+        "text": "...Wenn du neugierig bist, komm in der Mittagspause mit."
     },
     "hallway_8": {
         "name": "Ich",
-        "text": "*Sie hat gezögert. 0,5 Sekunden. Wahrscheinlich nichts, aber irgendwie bleibt es hängen.*"
+        "text": "*Plötzlich habe ich Mittagspläne. — Dabei hab ich nie zugesagt.*"
     },
     "hallway_9": {
         "name": "Ich",
