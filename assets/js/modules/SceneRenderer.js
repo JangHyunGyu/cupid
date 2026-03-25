@@ -540,16 +540,23 @@ class SceneRenderer {
         if (!scene.stats) return;
 
         // { Seoyeon: { affinity: 10 }, ... } 또는 { Seoyeon: 10, ... } 형태 모두 지원
+        // 모든 호감도 변화를 수집 후 위치 분산 표시
+        const changes = [];
         for (const [char, stats] of Object.entries(scene.stats)) {
             const charKey = this.charNameMap[char] || char;
-            // 숫자 직접 지정(예: { Seoyeon: 3 }) 또는 객체 지정(예: { Seoyeon: { affinity: 3 } }) 모두 처리
             const affinityChange = typeof stats === 'number' ? stats : stats?.affinity;
             if (affinityChange && this.stateManager.stats[charKey]) {
                 const newValue = this.stateManager.changeAffinity(charKey, affinityChange);
-                this.uiManager.showAffinityChange(affinityChange, charKey);
                 this.galleryManager.updateMaxAffinity(charKey, newValue);
                 this.galleryManager.checkAffinityUnlock(charKey, newValue);
+                changes.push({ amount: affinityChange, charKey });
             }
+        }
+
+        if (changes.length === 1) {
+            this.uiManager.showAffinityChange(changes[0].amount, changes[0].charKey);
+        } else if (changes.length > 1) {
+            this.uiManager.showAffinityChangeMulti(changes);
         }
     }
 
