@@ -8,6 +8,31 @@ const API_KEY = fs.readFileSync(path.join(__dirname, '..', '.env.txt'), 'utf8')
 if (!API_KEY) { console.error('API key not found'); process.exit(1); }
 
 const CG_PROMPTS = [
+    // ── 다인 엔딩 CG (normal 레퍼런스 기반 재생성) ──
+    {
+        id: 'ending_perfect_dain',
+        output: 'assets/images/background/ending_perfect_dain.png',
+        refImage: 'assets/images/characters/dain_normal.webp',
+        prompt: `Using this character as STRICT reference — keep her EXACT appearance: very short brown pixie cut hair (ears fully visible, no long hair), bright green eyes, tanned healthy skin, extremely large bust stretching the uniform tight (keep this body proportion exactly), white ETAURS #19 volleyball uniform with orange and navy lines, navy dolphin hot pants, black arm sleeve on LEFT arm ONLY (right arm is bare). Create an anime visual novel event CG: sunset-lit gymnasium scene. Orange sunlight streaming through tall gym windows casting long shadows on wooden floor. She is jumping into the male student's arms in a big hug, legs lifted off the ground. Male student (short dark brown hair, navy blazer uniform, face shown only from jaw/side profile) catches her while smiling. Sweat drops on her forehead, bright energetic smile showing teeth. A volleyball rolling on the gym floor. Warm golden backlight silhouetting both figures. Energetic youthful romance, joyful embrace. 1024x1024, anime art style, no text no watermark.`
+    },
+    {
+        id: 'ending_true_dain',
+        output: 'assets/images/background/ending_true_dain.png',
+        refImage: 'assets/images/characters/dain_normal.webp',
+        prompt: `Using this character as STRICT reference — keep her EXACT appearance: very short brown pixie cut hair (ears fully visible, no long hair), bright green eyes, tanned healthy skin, extremely large bust stretching the uniform tight (keep this body proportion exactly), white ETAURS #19 volleyball uniform with orange and navy lines, navy dolphin hot pants, black arm sleeve on LEFT arm ONLY (right arm is bare). Create an anime visual novel event CG: gymnasium wall scene at sunset. Both sitting on gym floor leaning against the wall side by side. She is leaning her head on the male student's shoulder with eyes gently closed, holding a volleyball in her lap. Male student (short dark brown hair, navy blazer uniform, face shown from side/jaw only) looking down at her softly. Warm orange sunset light through gym windows. Volleyball net in background. Quiet intimate peaceful moment. 1024x1024, anime art style, no text no watermark.`
+    },
+    {
+        id: 'ending_good_dain',
+        output: 'assets/images/background/ending_good_dain.png',
+        refImage: 'assets/images/characters/dain_normal.webp',
+        prompt: `Using this character as STRICT reference — keep her EXACT appearance: very short brown pixie cut hair (ears fully visible, no long hair), bright green eyes, tanned healthy skin, extremely large bust stretching the uniform tight (keep this body proportion exactly), white ETAURS #19 volleyball uniform with orange and navy lines, navy dolphin hot pants, black arm sleeve on LEFT arm ONLY (right arm is bare). Create an anime visual novel event CG: school gate at sunset. She and male student (short dark brown hair, navy blazer uniform) standing at the school gate facing each other, both making fist bumps with bright grins. She has a red sports bag on her shoulder. Warm sunset sky with orange and purple clouds behind school building silhouette. Cheerful energetic friendship-turning-to-love atmosphere. 1024x1024, anime art style, no text no watermark.`
+    },
+    {
+        id: 'ending_confess_fail_dain',
+        output: 'assets/images/background/ending_confess_fail_dain.png',
+        refImage: 'assets/images/characters/dain_normal.webp',
+        prompt: `Using this character as STRICT reference — keep her EXACT appearance: very short brown pixie cut hair (ears fully visible, no long hair), bright green eyes, tanned healthy skin, extremely large bust stretching the uniform tight (keep this body proportion exactly), white ETAURS #19 volleyball uniform with orange and navy lines, navy dolphin hot pants, black arm sleeve on LEFT arm ONLY (right arm is bare). Create an anime visual novel event CG: outdoor park at sunset. She is wiping a tear from her eye with one hand while waving goodbye with the other hand, putting on a brave smile despite watery eyes. Male student's back silhouette (short dark brown hair, navy blazer) in foreground watching her. Sunset sky, warm but melancholic lighting. Bittersweet farewell atmosphere. 1024x1024, anime art style, no text no watermark.`
+    },
     {
         id: 'nurse_home_event1',
         output: 'assets/images/background/nurse_home_event1.png',

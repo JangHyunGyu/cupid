@@ -1069,13 +1069,12 @@ Object.assign(SCENARIO[5], {
         "next": "confess_fail_1"
     },
     "confess_fail_1": {
-        "background": "assets/images/background/park.png",
         "character": null,
         "night": true,
         "next": "confess_fail_2"
     },
     "confess_fail_2": {
-        "background": "assets/images/background/park.png",
+        "character": null,
         "character": null,
         "night": true,
         "next": "confess_fail_3"
