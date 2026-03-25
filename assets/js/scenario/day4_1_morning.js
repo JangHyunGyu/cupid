@@ -314,7 +314,7 @@ Object.assign(SCENARIO[4], {
     // === HIDDEN Day 4 보건선생님 주말 아침 전용 씬 (nurse_day4_afterschool) ===
     "hidden_nurse_d4_morning_1": {
         "background": "assets/images/background/nurse_room.jpg",
-        "bgm": "morning.mp3",
+        "bgm": "morning_calm.mp3",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_morning_2"
     },
