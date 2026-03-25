@@ -603,19 +603,43 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*La cérémonie est terminée. — Je suis seul dans la salle de classe vide quand la porte s'ouvre.*"
+        "text": "*La cérémonie est terminée. Je suis seul dans la salle de classe vide. Les traces de craie sur le tableau n'ont pas encore été effacées.*"
+    },
+    "hidden_perfect_homeroom_1b": {
+        "name": "{name}",
+        "text": "*La porte s'ouvre. — C'est elle. Cardigan beige. Une enveloppe de documents dans la main.*"
     },
     "hidden_perfect_homeroom_2": {
-        "name": "Homeroom Teacher",
-        "text": "Je savais que tu serais encore là. — Prépare-toi. On a un endroit où aller."
+        "name": "Professeure",
+        "text": "Félicitations pour ton diplôme. ...Tous les papiers sont faits. Mon travail en tant que ta prof est terminé."
+    },
+    "hidden_perfect_homeroom_2b": {
+        "name": "{name}",
+        "text": "Le manuscrit est toujours dans le tiroir de votre bureau ?"
+    },
+    "hidden_perfect_homeroom_2c": {
+        "name": "Professeure",
+        "text": "*Elle s'arrête un instant.* ...Prends soin de toi. Ne me — contacte pas."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
-        "text": "*La terrasse d'un café. Les cerisiers virevoltent. La prof en civil — non, la personne qui n'est plus prof est assise en face de moi.*"
+        "text": "*Trois ans plus tard.*"
+    },
+    "hidden_perfect_homeroom_3b": {
+        "name": "{name}",
+        "text": "*La terrasse d'un café. Les cerisiers virevoltent. En entrant — j'aperçois des cheveux bruns ondulés familiers près de la fenêtre. Une veste en lin au lieu du cardigan.*"
+    },
+    "hidden_perfect_homeroom_3c": {
+        "name": "Professeure",
+        "text": "...Oh. Je suis surprise aussi. *Elle pose sa tasse de café.* Tu veux t'asseoir ?"
     },
     "hidden_perfect_homeroom_4": {
-        "name": "Homeroom Teacher",
-        "text": "J'ai terminé le manuscrit. Envoyé à l'éditeur. — Il y a un nom sur la première page. Le nom de mon premier lecteur.\n\n─── Homeroom Teacher PERFECT END ───"
+        "name": "Professeure",
+        "text": "J'ai terminé le manuscrit. Envoyé à l'éditeur. — Il y a un nom sur la première page. Le nom de mon premier lecteur."
+    },
+    "hidden_perfect_homeroom_4b": {
+        "name": "Professeure",
+        "text": "*Ses yeux sourient derrière ses lunettes.* Je ne suis plus ta prof — alors je peux dire ça, non ?\n\n─── Professeure PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},
