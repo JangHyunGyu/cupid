@@ -197,11 +197,79 @@
         "name": "Schulkrankenschwester",
         "text": "Okay~ Komm gut heim! — Komm bald wieder."
     },
-    "hidden_nurse_d4_freetalk": {
+    "hidden_nurse_d4_morning_1": {
+        "name": "{name}",
+        "text": "*Sonntagmorgen. Ich gehe aus Gewohnheit zum Krankenzimmer. — Seit wann ist das zur Gewohnheit geworden?*"
+    },
+    "hidden_nurse_d4_morning_2": {
+        "name": "{name}",
+        "text": "*Ich öffne die Tür des Krankenzimmers. Die Schulkrankenschwester sitzt auf ihrem Stuhl. In ihrem weißen Kittel. — Aber etwas ist anders als sonst. Keine Scherzhaftigkeit.*"
+    },
+    "hidden_nurse_d4_morning_3": {
         "name": "Schulkrankenschwester",
-        "text": "*Im Gespräch mit der Schulkrankenschwester beim Imbiss.*",
-        "context": "Tag 4. Am Wochenende bei Vorbereitungen geholfen und zusammen gegessen. Ton: Das Gespräch ist ernst geworden. Date-Aufregung und Nervosität. Mehr Aufrichtigkeit als Witze. Momente emotionaler Ehrlichkeit.",
-        "personality": "In Freizeitkleidung wirkt sie wie eine große Schwester. Pendelt zwischen Scherz und Ernsthaftigkeit."
+        "text": "Ach, du bist gekommen."
+    },
+    "hidden_nurse_d4_morning_4": {
+        "name": "{name}",
+        "text": "*Ihr 'du bist gekommen' ist einen halben Ton tiefer als sonst. — Ich habe gelernt, die Emotionen dieser Person an ihrer Stimme abzulesen.*"
+    },
+    "hidden_nurse_d4_morning_5": {
+        "name": "{name}",
+        "text": "Ist das die letzte Beratungsstunde?"
+    },
+    "hidden_nurse_d4_morning_6": {
+        "name": "Schulkrankenschwester",
+        "text": "Beratung... *sie dreht ihren Stuhl* Ja. Die letzte Beratung."
+    },
+    "hidden_nurse_d4_morning_7": {
+        "name": "{name}",
+        "text": "*Die Schulkrankenschwester tut so, als würde sie Papiere auf ihrem Schreibtisch sortieren — aber sie blättert zum dritten Mal dieselbe Seite um.*"
+    },
+    "hidden_nurse_d4_morning_8": {
+        "name": "Schulkrankenschwester",
+        "text": "Darf ich dich etwas fragen?"
+    },
+    "hidden_nurse_d4_morning_9": {
+        "name": "{name}",
+        "text": "Was denn?"
+    },
+    "hidden_nurse_d4_morning_10": {
+        "name": "{name}",
+        "text": "*Die Schulkrankenschwester berührt ihre Brille. Die Augen, die dahinter sichtbar werden, sind größer als erwartet. Augen, die hinter der Scherzhaftigkeit verborgen waren.*"
+    },
+    "hidden_nurse_d4_morning_11": {
+        "name": "Schulkrankenschwester",
+        "text": "...Wirst du nach deinem Schulabschluss auch noch hierherkommenommen?"
+    },
+    "hidden_nurse_d4_morning_choice": {
+        "name": "{name}",
+        "text": "*Es ist keine Frage. — Es ist das Gesicht von jemandem, der die Antwort bereits fürchtet. Unsere Blicke treffen sich. Ihr ernster Ausdruck ohne ihre gewöhnliche Scherzhaftigkeit. — Ich habe diese Person noch nie so ungeschützt gesehen.*",
+        "choices": [
+            "Ja, ich komme.",
+            "..."
+        ]
+    },
+    "hidden_nurse_d4_morning_choice_a": {
+        "name": "{name}",
+        "text": "Ja, ich komme."
+    },
+    "hidden_nurse_d4_morning_choice_b": {
+        "name": "{name}",
+        "text": "*Stille.*"
+    },
+    "hidden_nurse_d4_morning_12": {
+        "name": "Schulkrankenschwester",
+        "text": "...Wirklich?"
+    },
+    "hidden_nurse_d4_morning_13": {
+        "name": "{name}",
+        "text": "*'Wirklich?' — Ihr Wort, um Aufrichtigkeit zu bestätigen. Heute habe ich es zuerst gehört. Ein Moment der Stille. Durch ihre Brille sehen ihre Augen feucht aus. — Die Linse ist beschlagen. Ich kann nicht sagen, ob es Dampf oder Tränen sind. Die Schulkrankenschwester spricht erneut mit einem helleren Ton, aber ihre Stimme zittert. Die Scherzhaftigkeit kehrt zurück. — Aber unter ihren lächelnden Augen gibt es eine Spur von etwas, das fließt.*"
+    },
+    "hidden_nurse_d4_morning_freetalk": {
+        "name": "Schulkrankenschwester",
+        "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
+        "context": "Tag 4. Der Abschiedsmoment, wenn sie fragt, ob du nach deinem Schulabschluss wiederkommst. Die Szene, in der beide ihre wahren Herzen zeigen. Ton: Tieferes, emotionaleres Gespräch. Die Wahrheit hinter der Scherzhaftigkeit. Die Bedeutung, beim Namen genannt zu werden.",
+        "personality": "Die Schulkrankenschwester ist vorsichtig und ehrlich. Sie möchte dich beim Namen nennen, aber sie ist in einer vorsichtigen Position. Tränen kommen bei deinem Versprechen."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",

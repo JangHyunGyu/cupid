@@ -109,7 +109,12 @@
     },
     "after_end": {
         "name": "Ich",
-        "text": "*Sie geht mit einem Lächeln vorbei.*"
+        "text": "*Sie geht mit einem Lächeln vorbei.*",
+        "choices": [
+            "Lehrerzimmer",
+            "Schulsekretariat",
+            "Nach Hause gehen"
+        ]
     },
     "after_hidden_homeroom_1": {
         "name": "Ich",

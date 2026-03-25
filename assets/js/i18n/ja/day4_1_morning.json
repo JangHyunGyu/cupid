@@ -197,11 +197,79 @@
         "name": "保健先生",
         "text": "いいよ～気をつけてね！——またおいで。"
     },
-    "hidden_nurse_d4_freetalk": {
+    "hidden_nurse_d4_morning_1": {
+        "name": "{name}",
+        "text": "*日曜日の朝。習慣のように保健室に向かっている。——いつからこんなに習慣になってしまったんだろう。*"
+    },
+    "hidden_nurse_d4_morning_2": {
+        "name": "{name}",
+        "text": "*保健室のドアを開く。保健先生が椅子に座っている。白衣を着て。——だけどいつもと違う。いつもの茶目っ気がない。*"
+    },
+    "hidden_nurse_d4_morning_3": {
         "name": "保健先生",
-        "text": "*保健先生と屋台で会話中。*",
-        "context": "Day 4。週末に健康診断準備を手伝って一緒に食事。 トーン：真剣になった会話。デートのドキドキと緊張。冗談より本音が多くなる。感情が素直になる瞬間。",
-        "personality": "私服だとお姉さんみたい。いたずらと本気が行き来する。"
+        "text": "あ、来た。"
+    },
+    "hidden_nurse_d4_morning_4": {
+        "name": "{name}",
+        "text": "*『来た』のトーンがいつもより半音低い。——この人の感情はトーンで読むしかない。*"
+    },
+    "hidden_nurse_d4_morning_5": {
+        "name": "{name}",
+        "text": "最後の相談なんですね？"
+    },
+    "hidden_nurse_d4_morning_6": {
+        "name": "保健先生",
+        "text": "相談か... *椅子を回しながら* そっか。最後の相談か。"
+    },
+    "hidden_nurse_d4_morning_7": {
+        "name": "{name}",
+        "text": "*保健先生が机の上の書類を整理するふりをしているが——同じ紙を三度目めくっている。*"
+    },
+    "hidden_nurse_d4_morning_8": {
+        "name": "保健先生",
+        "text": "こんなこと聞いてもいい？"
+    },
+    "hidden_nurse_d4_morning_9": {
+        "name": "{name}",
+        "text": "何ですか？"
+    },
+    "hidden_nurse_d4_morning_10": {
+        "name": "{name}",
+        "text": "*保健先生がメガネに触れる。メガネの向こうに見える瞳は思ったより大きい。茶目っ気の裏に隠れていた瞳。*"
+    },
+    "hidden_nurse_d4_morning_11": {
+        "name": "保健先生",
+        "text": "...卒業した後もここに来てくれる？"
+    },
+    "hidden_nurse_d4_morning_choice": {
+        "name": "{name}",
+        "text": "*質問ではない。——もう答えを恐れている顔。目を合わせる。普段の茶目っ気が消えた真剣な顔で。——この人がこんなに無防備なのは初めてだ。*",
+        "choices": [
+            "来ます。",
+            "..."
+        ]
+    },
+    "hidden_nurse_d4_morning_choice_a": {
+        "name": "{name}",
+        "text": "来ます。"
+    },
+    "hidden_nurse_d4_morning_choice_b": {
+        "name": "{name}",
+        "text": "*沈黙。*"
+    },
+    "hidden_nurse_d4_morning_12": {
+        "name": "保健先生",
+        "text": "...本当に？"
+    },
+    "hidden_nurse_d4_morning_13": {
+        "name": "{name}",
+        "text": "*『本当に』。——この人の本心確認用の言葉。今日は私が先に聞いた。少しの間。保健先生のメガネ越しに瞳が潤んで見える。——レンズが曇っている。朝靄なのか、涙なのか。保健先生が再び明るいトーンで、だけど声が震えながら話す。茶目っ気が戻ってきた。——だけど笑う目の下に何かが流れた跡がある。*"
+    },
+    "hidden_nurse_d4_morning_freetalk": {
+        "name": "保健先生",
+        "text": "*保健室で保健先生と話している。*",
+        "context": "4日目。卒業後も来るのか問う別れの瞬間。互いの本心が明かされるシーン。トーン：感情が深まった会話。冗談の裏の真実。名前で呼ぶことの意味。",
+        "personality": "保健先生は慎重で正直。名前で呼びたいけど慎重な立場。学生の誓いに涙が出る。"
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",

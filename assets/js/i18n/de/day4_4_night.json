@@ -693,6 +693,14 @@
         "name": "Yuna",
         "text": "...Weil du warm bist."
     },
+    "night_nurse_msg_1": {
+        "name": "Schulkrankenschwester",
+        "text": "Das, was du heute in meinem Krankenzimmer gesagt hast... Ich kann nachts nicht aufhören, daran zu denken."
+    },
+    "night_nurse_msg_2": {
+        "name": "{name}",
+        "text": "*Eine Nachricht von der Schulkrankenschwester kam an. 23 Uhr. Nur ein Satz.*"
+    },
     "wall_seo_to_park": {
         "name": "{name}",
         "text": "*Ich verließ das Haus und ging zum Park.*"
