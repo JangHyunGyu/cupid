@@ -633,6 +633,18 @@
         "name": "Frau Lehrerin",
         "text": "...Oh. Ich bin auch überrascht. *Sie stellt ihre Kaffeetasse ab.* Möchtest du dich setzen?"
     },
+    "hidden_perfect_homeroom_3d": {
+        "name": "{name}",
+        "text": "Ging es Ihnen gut? ...Ich habe gehört, Sie haben die Schule verlassen."
+    },
+    "hidden_perfect_homeroom_3e": {
+        "name": "Frau Lehrerin",
+        "text": "*Sie schmunzelt.* Ich habe aufgehört zu unterrichten. Schreibe nur noch. Arbeite auch Teilzeit in einem Café. — Und du?"
+    },
+    "hidden_perfect_homeroom_3f": {
+        "name": "{name}",
+        "text": "*Sie — nein, diese Person nippt an ihrem Kaffee. Dieselbe Person, die vor drei Jahren hinter dem Pult stand, aber die Atmosphäre ist anders. Die Anspannung ist aus ihren Schultern gewichen. Im guten Sinne.*"
+    },
     "hidden_perfect_homeroom_4": {
         "name": "Frau Lehrerin",
         "text": "Das Manuskript ist fertig. Beim Verlag eingereicht. — Auf der ersten Seite steht ein Name. Der Name meines ersten Lesers."
