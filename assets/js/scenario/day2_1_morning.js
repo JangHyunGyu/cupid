@@ -329,7 +329,6 @@ Object.assign(SCENARIO[2], {
     "hidden_homeroom_d2_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "condition": "homeroom_day1",
         "next": "hidden_homeroom_d2_2"
     },
     "hidden_homeroom_d2_2": {

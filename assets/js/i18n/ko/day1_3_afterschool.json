@@ -109,7 +109,12 @@
     },
     "after_end": {
         "name": "{name}",
-        "text": "*미소를 남기고 지나간다.*"
+        "text": "*미소를 남기고 지나간다.*",
+        "choices": [
+            "교무실",
+            "보건실",
+            "하교"
+        ]
     },
 
     "after_hidden_homeroom_1": {
@@ -253,7 +258,7 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "보건선생님",
-        "text": "*멈칫한다.* ...눈이 좋네. 환자가 의사 걱정하는 거 처음 봐."
+        "text": "*멈칫한다.* ...눈이 좋네. 환자가 선생님 걱정하는 거 처음 봐."
     },
     "after_nurse_enter_choice_b": {
         "name": "보건선생님",
