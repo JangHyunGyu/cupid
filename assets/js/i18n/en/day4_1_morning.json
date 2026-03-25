@@ -271,6 +271,10 @@
         "context": "Day 4. The moment of farewell when asking if she'll come back after graduation. The scene where both show their true hearts. Tone: Deeper, more emotional conversation. Truth behind the playfulness. The meaning of being called by name.",
         "personality": "The school nurse is careful and honest. She wants to call out your name but is in a cautious position. Tears come at your promise."
     },
+    "hidden_nurse_d4_freetalk": {
+        "name": "Nurse",
+        "text": "*Chatting with the nurse at the snack bar.*"
+    },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
         "text": "*We headed back to the nurse's office.*"
