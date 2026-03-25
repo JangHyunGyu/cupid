@@ -691,11 +691,26 @@
         "name": "{name}",
         "text": "*Nebeneinander auf dem Wohnzimmersofa. Die Sonne geht hinter dem Fenster unter. Statt eines Pflasters berühren sich die Finger.*"
     },
-    "hidden_perfect_nurse_4": {
-        "name": "School Nurse",
-        "text": "*Sie lehnt sich an mich.* ...Ich brauche keine Ausreden mehr. Kein Patient, kein Schüler. Einfach — jemand, bei dem ich sein will.\n\n─── School Nurse PERFECT END ───"
+    "hidden_perfect_nurse_3b": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie lehnt sich an mich.* ...Ich brauche keine Ausreden mehr. Kein Patient, kein Schüler."
     },
-    "hidden_perfect_nurse_5": {},
+    "hidden_perfect_nurse_4": {
+        "name": "Schulkrankenschwester",
+        "text": "*Ihre Hand greift nach meiner Krawatte. Nicht verspielt. Ihre Augen sind ernst.* ...Heute Nacht lasse ich dich nicht gehen."
+    },
+    "hidden_perfect_nurse_4b": {
+        "name": "{name}",
+        "text": "*Morgen. Licht sickert durch die Vorhänge. Atmen neben mir. — Die Person, die drei Minuten brauchte, um ein Pflaster zu kleben, schläft jetzt mit meiner Hand in ihrer.*"
+    },
+    "hidden_perfect_nurse_5": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie öffnet die Augen. Lächelt.* ...Tut irgendwas weh? Soll ich nachschauen? *— Kein Scherz. Nicht diesmal.*"
+    },
+    "hidden_perfect_nurse_5b": {
+        "name": "{name}",
+        "text": "*Einfach — jemand, bei dem ich sein will. Hier.\n\n─── Schulkrankenschwester PERFECT END ───*"
+    },
     "hidden_true_homeroom_1": {
         "name": "Ich",
         "text": "*Abschlusstag. — Die Zeit ist vergangen. Die Uniform ist nicht mehr steif.*"
