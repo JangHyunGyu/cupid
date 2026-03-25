@@ -89,11 +89,11 @@
     },
     "after5_end": {
         "name": "Me",
-        "text": "*Checking the ending entry conditions. Top affinity and Day 3 exclusive event flag. If conditions aren't met, it leads to FRIEND END or ALONE END.*"
+        "text": "*The sunset paints the schoolyard. Were five days really this short? — The moment of the final choice draws near.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*At the previous school, it was the same. I couldn't say it. And regretted it.*"
+        "text": "*My feet stop. The setting sun casts a long shadow behind me.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*The sun is setting. Time is running out.*",
+        "text": "*If not now, I'll never be able to say it.*",
         "choices": [
             "This time, I'll confess",
             "...I couldn't say anything"
@@ -109,11 +109,11 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*I ran. Toward that person. — This time, I'll say it.*"
+        "text": "*I turn around. My voice trembles. — But this time.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "*I said it. Clumsy, broken — but I said it.*"
+        "text": "Hey — I have something to tell you."
     },
     "after5_confess_react_seo": {
         "name": "Seoyeon",
@@ -133,7 +133,7 @@
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*The sunset faded. Just like my words.*"
+        "text": "*The evening breeze blows in. The shadow behind me grows longer. — I'm alone.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",

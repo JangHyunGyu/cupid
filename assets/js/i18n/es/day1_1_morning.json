@@ -145,7 +145,7 @@
     },
     "hallway_5": {
         "name": "Seoyeon",
-        "text": "La azotea normalmente está cerrada con llave. Privilegio de presidenta."
+        "text": "Ser la presidenta del consejo estudiantil significa que hay varias puertas que puedo abrir."
     },
     "hallway_6": {
         "name": "{name}",
@@ -153,11 +153,11 @@
     },
     "hallway_7": {
         "name": "Seoyeon",
-        "text": "...Eres perspicaz."
+        "text": "...Si te da curiosidad, sígueme a la hora de comer."
     },
     "hallway_8": {
         "name": "Yo",
-        "text": "*Dudó un instante. 0,5 segundos. Probablemente no sea nada, pero por alguna razón se me queda grabado.*"
+        "text": "*De repente tengo planes para comer. — Ni siquiera dije que sí.*"
     },
     "hallway_9": {
         "name": "Yo",

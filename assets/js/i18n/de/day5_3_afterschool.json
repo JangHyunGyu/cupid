@@ -89,11 +89,11 @@
     },
     "after5_end": {
         "name": "Ich",
-        "text": "*Prüfung der Ending-Eintrittsbedingungen. Höchste Zuneigung und Day-3-Exklusiv-Event-Flag. Bei Nichterfüllung führt es zum FRIEND END oder ALONE END.*"
+        "text": "*Der Sonnenuntergang taucht den Schulhof in Farbe. Waren fünf Tage wirklich so kurz? — Der Moment der letzten Entscheidung rückt näher.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*An der alten Schule war es genauso. Ich konnte es nicht sagen. Und bereute es.*"
+        "text": "*Meine Schritte halten inne. Die untergehende Sonne wirft einen langen Schatten hinter mir.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Die Sonne geht unter. Die Zeit läuft ab.*",
+        "text": "*Wenn nicht jetzt, dann nie.*",
         "choices": [
             "Diesmal gestehe ich es",
             "...Ich konnte nichts sagen"
@@ -109,11 +109,11 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Ich rannte. Zu dieser Person. — Diesmal sage ich es.*"
+        "text": "*Ich drehe mich um. Meine Stimme zittert. — Aber diesmal.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "*Ich habe es gesagt. Unbeholfen, gebrochen — aber ich habe es gesagt.*"
+        "text": "Hey... ich muss dir etwas sagen."
     },
     "after5_confess_react_seo": {
         "name": "Seoyeon",
@@ -133,7 +133,7 @@
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*Der Sonnenuntergang verblasste. Genau wie meine Worte.*"
+        "text": "*Der Abendwind weht. Der Schatten hinter mir wird länger. — Ich bin allein.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",

@@ -89,11 +89,11 @@
     },
     "after5_end": {
         "name": "僕",
-        "text": "*エンディング進入条件を確認する。好感度1位とDay 3専用イベントフラグ。条件未達の場合、FRIEND ENDまたはALONE ENDへ。*"
+        "text": "*夕日が校庭を染めている。5日間がこんなに短かったとは。——最後の選択の瞬間が近づいてくる。*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*前の学校でも同じだった。言えなかった。そして後悔した。*"
+        "text": "*足が止まる。夕日が背中の後ろに長い影を作る。*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*夕日が沈んでいく。時間がない。*",
+        "text": "*今言わなければ、永遠に言えない。*",
         "choices": [
             "今度は告白する",
             "...何も言えなかった"
@@ -109,11 +109,11 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*走った。あの人に向かって。— 今度は言う。*"
+        "text": "*振り返る。声が震える。——でも今度こそ。*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "*言った。不格好で、ぎこちなくて — でも言った。*"
+        "text": "あのさ——僕、君に言いたいことがあるんだ。"
     },
     "after5_confess_react_seo": {
         "name": "ソヨン",
@@ -133,7 +133,7 @@
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*夕焼けが消えた。言葉と一緒に。*"
+        "text": "*夕風が吹いてくる。背中の後ろの影が伸びていく。——一人だ。*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
