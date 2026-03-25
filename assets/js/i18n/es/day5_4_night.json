@@ -603,19 +603,43 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*La graduación terminó. — Estoy solo en el aula vacía cuando la puerta se abre.*"
+        "text": "*La graduación terminó. Estoy solo en el aula vacía. Las marcas de tiza en la pizarra aún no se han borrado.*"
+    },
+    "hidden_perfect_homeroom_1b": {
+        "name": "{name}",
+        "text": "*La puerta se abre. — Es ella. Cárdigan beige. Tiene un sobre de documentos en la mano.*"
     },
     "hidden_perfect_homeroom_2": {
-        "name": "Homeroom Teacher",
-        "text": "Sabía que seguirías aquí. — Prepárate. Hay un lugar al que tenemos que ir."
+        "name": "Profesora",
+        "text": "Felicidades por graduarte. ...Ya entregué todo el papeleo. Mi trabajo como tu profesora terminó."
+    },
+    "hidden_perfect_homeroom_2b": {
+        "name": "{name}",
+        "text": "¿El manuscrito sigue en el cajón de tu escritorio?"
+    },
+    "hidden_perfect_homeroom_2c": {
+        "name": "Profesora",
+        "text": "*Se detiene un momento.* ...Cuídate. No me — contactes."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
-        "text": "*La terraza de un café. Los cerezos revolotean. La profesora de ropa casual — no, la persona que ya no es profesora está sentada frente a mí.*"
+        "text": "*Tres años después.*"
+    },
+    "hidden_perfect_homeroom_3b": {
+        "name": "{name}",
+        "text": "*La terraza de un café. Los cerezos revolotean. Al entrar — veo un cabello castaño ondulado familiar junto a la ventana. Una chaqueta de lino en lugar del cárdigan.*"
+    },
+    "hidden_perfect_homeroom_3c": {
+        "name": "Profesora",
+        "text": "...Oh. Yo también estoy sorprendida. *Deja su taza de café.* ¿Quieres sentarte?"
     },
     "hidden_perfect_homeroom_4": {
-        "name": "Homeroom Teacher",
-        "text": "Terminé el manuscrito. Lo envié a la editorial. — En la primera página hay un nombre. El nombre de mi primer lector.\n\n─── Homeroom Teacher PERFECT END ───"
+        "name": "Profesora",
+        "text": "Terminé el manuscrito. Lo envié a la editorial. — En la primera página hay un nombre. El nombre de mi primer lector."
+    },
+    "hidden_perfect_homeroom_4b": {
+        "name": "Profesora",
+        "text": "*Sus ojos sonríen detrás de sus gafas.* Ya no soy tu profesora — así que puedo decir esto, ¿verdad?\n\n─── Profesora PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},
