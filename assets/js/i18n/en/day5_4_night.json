@@ -633,6 +633,18 @@
         "name": "Ms. Kim",
         "text": "...Oh. I'm surprised too. *She sets down her coffee cup.* Want to sit?"
     },
+    "hidden_perfect_homeroom_3d": {
+        "name": "{name}",
+        "text": "Have you been well? ...Ah, should I still use formal speech?"
+    },
+    "hidden_perfect_homeroom_3e": {
+        "name": "Ms. Kim",
+        "text": "*She smirks.* I quit teaching. Just writing now. Working part-time at a cafe too. — What about you?"
+    },
+    "hidden_perfect_homeroom_3f": {
+        "name": "{name}",
+        "text": "*She — no, this person sips her coffee. The same person who stood behind the podium three years ago, but the atmosphere is different. The tension is gone from her shoulders. In a good way.*"
+    },
     "hidden_perfect_homeroom_4": {
         "name": "Ms. Kim",
         "text": "I finished the manuscript. Submitted it to the publisher. — There's a name on the first page. The name of my first reader."
