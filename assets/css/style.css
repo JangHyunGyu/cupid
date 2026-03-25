@@ -657,6 +657,51 @@ html[lang="de"] #message {
     }
 }
 
+/* ─── 엔딩/에필로그 전용 대화창 스타일 ─── */
+#dialogue-box.ending-mode {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow:
+        0 0 30px rgba(255, 255, 255, 0.08),
+        0 0 60px rgba(255, 105, 180, 0.06),
+        inset 0 0 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.8s ease;
+}
+
+#dialogue-box.ending-mode #name-tag {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 200, 220, 0.9));
+    color: #1a1a2e;
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.3);
+}
+
+#dialogue-box.ending-mode #message {
+    line-height: 2;
+    letter-spacing: 0.02em;
+}
+
+/* 엔딩 모드 진입/해제 트랜지션 */
+#dialogue-box.ending-fade-in {
+    animation: endingBoxAppear 1s ease forwards;
+}
+
+@keyframes endingBoxAppear {
+    from {
+        background: rgba(0, 0, 0, 0.5);
+        border-color: #ff69b4;
+        box-shadow: none;
+    }
+    to {
+        background: rgba(0, 0, 0, 0.7);
+        border-color: rgba(255, 255, 255, 0.4);
+        box-shadow:
+            0 0 30px rgba(255, 255, 255, 0.08),
+            0 0 60px rgba(255, 105, 180, 0.06),
+            inset 0 0 40px rgba(0, 0, 0, 0.3);
+    }
+}
+
 /* 남은 대화 횟수 표시 */
 #chat-turn-indicator {
     color: #ff69b4;

@@ -291,6 +291,16 @@ class GameEngine {
         });
     }
 
+    /**
+     * 엔딩/에필로그 씬 판별
+     * — 이 씬들은 타이핑 스킵 불가 (플레이어가 대사를 끝까지 읽도록 강제)
+     */
+    _isEndingScene(sceneId) {
+        if (!sceneId) return false;
+        return /^(perfect_|good_|bitter_|confess_fail_|harem_|hidden_perfect_|hidden_good_|ending_|day5_ending_)/.test(sceneId)
+            || sceneId.includes('_epilogue_') || sceneId.includes('epilogue_');
+    }
+
     /** 대화창 클릭 처리 */
     async handleDialogueClick() {
         // 씬 렌더링 중이면 클릭 무시 (배경/캐릭터 로딩 완료 전 스킵 방지)
@@ -299,8 +309,9 @@ class GameEngine {
         // 엔딩 CG 감상 중이면 클릭 무시 (4초간 스킵 불가)
         if (this._cgLocked) return;
 
-        // 타이핑 중이면 스킵
+        // 타이핑 중이면 스킵 (단, 엔딩/에필로그는 스킵 불가 — 끝까지 감상)
         if (this.dialogueSystem.isCurrentlyTyping()) {
+            if (this._isEndingScene(this.sceneRenderer.currentSceneId)) return;
             this.dialogueSystem.requestSkip();
             return;
         }
@@ -853,6 +864,22 @@ class GameEngine {
 
         // 현재 씬 ID 저장 (다른 곳에서 참조용)
         this.sceneRenderer.currentSceneId = sceneId;
+
+        // ─────────────────────────────────────────────────────────
+        // 🎬 엔딩/에필로그 모드 토글
+        // ─────────────────────────────────────────────────────────
+        const isEnding = this._isEndingScene(sceneId);
+        if (isEnding && !this.dialogueSystem._endingMode) {
+            this.dialogueSystem._endingMode = true;
+            if (this.uiManager.dialogueBox) {
+                this.uiManager.dialogueBox.classList.add('ending-mode', 'ending-fade-in');
+            }
+        } else if (!isEnding && this.dialogueSystem._endingMode) {
+            this.dialogueSystem._endingMode = false;
+            if (this.uiManager.dialogueBox) {
+                this.uiManager.dialogueBox.classList.remove('ending-mode', 'ending-fade-in');
+            }
+        }
 
         // GA4 가상 페이지뷰 전송 (SPA 보정)
         if (window.sendGAPageView) window.sendGAPageView(sceneId);

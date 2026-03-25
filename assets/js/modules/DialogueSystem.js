@@ -53,6 +53,10 @@ class DialogueSystem {
          */
         this.typingSpeed = 30;
 
+        /** 엔딩 모드 — 느린 타이핑 + 스킵 불가 */
+        this._endingMode = false;
+        this._endingTypingSpeed = 50;  // 엔딩: 한 글자당 50ms (약 1.7배 느림)
+
         /** 캐릭터 표시 이름 → 내부 키 매핑 (공통 상수 참조) */
         this.charNameMap = CHAR_NAME_MAP;
 
@@ -296,7 +300,8 @@ class DialogueSystem {
                 }
 
                 const elapsed = timestamp - startTime;
-                const targetIndex = Math.min(Math.floor(elapsed / this.typingSpeed), textPart.length);
+                const speed = this._endingMode ? this._endingTypingSpeed : this.typingSpeed;
+                const targetIndex = Math.min(Math.floor(elapsed / speed), textPart.length);
 
                 if (charIndex < targetIndex) {
                     const currentText = textPart.substring(0, targetIndex);
