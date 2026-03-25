@@ -619,7 +619,7 @@
     },
     "hidden_perfect_homeroom_2c": {
         "name": "Frau Lehrerin",
-        "text": "*Sie hält kurz inne.* ...Pass auf dich auf. Kontaktiere mich — nicht."
+        "text": "*Sie hält kurz inne. Will noch etwas sagen, schließt dann den Mund.* ...Pass auf dich auf."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
@@ -635,31 +635,47 @@
     },
     "hidden_perfect_homeroom_3d": {
         "name": "{name}",
-        "text": "Ging es Ihnen gut? ...Ich habe gehört, Sie haben die Schule verlassen."
+        "text": "Ging es Ihnen gut? Ich habe gehört, Sie haben die Schule verlassen."
     },
     "hidden_perfect_homeroom_3e": {
         "name": "Frau Lehrerin",
-        "text": "*Sie schmunzelt.* Ich habe aufgehört zu unterrichten. Schreibe nur noch. Arbeite auch Teilzeit in einem Café. — Und du?"
+        "text": "*Sie schmunzelt.* Habe aufgehört zu unterrichten. Schreibe nur noch. Teilzeit im Café. — Und du?"
     },
     "hidden_perfect_homeroom_3f": {
+        "name": "Frau Lehrerin",
+        "text": "...Können wir uns wiedersehen? Ich komme jeden Donnerstag hierher."
+    },
+    "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*Sie — nein, diese Person nippt an ihrem Kaffee. Dieselbe Person, die vor drei Jahren hinter dem Pult stand, aber die Atmosphäre ist anders. Die Anspannung ist aus ihren Schultern gewichen. Im guten Sinne.*"
+        "text": "*Aus dem 'nächsten Mal' wurde das übernächste und wieder das nächste. Jeden Donnerstag derselbe Platz. Als der Barista fragte 'Paartisch?', konnte keiner von uns antworten.*"
     },
     "hidden_perfect_homeroom_4": {
-        "name": "Frau Lehrerin",
-        "text": "Das Manuskript ist fertig. Beim Verlag eingereicht. — Auf der ersten Seite steht ein Name. Der Name meines ersten Lesers."
+        "name": "{name}",
+        "text": "*An einem Donnerstag. Statt ins Café gingen wir durch die Straßen. Nebeneinander. Beide taten so, als bemerkten wir nicht, dass sich unsere Schatten überlappten.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Frau Lehrerin",
-        "text": "*Ihre Augen lächeln über die Kaffeetasse hinweg.* Ich bin nicht mehr deine Lehrerin — also darf ich das sagen, oder?"
+        "text": "*Sie nimmt ein Buch in der Buchhandlung.* Lies das. — Willst du der erste Leser meines Manuskripts sein?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*Ich hole einen Blumenstrauß aus meiner Tasche. Drei Jahre lang geplant war das nicht. Ich habe nur auf dem Weg einen Blumenladen gesehen. — Aber mein Körper hat sich von selbst bewegt.*"
+        "text": "*Ich nahm das Manuskript. Schlug die erste Seite auf. — Eine Widmung. 'Für die Person, die mir die Worte beibrachte, die ich am Abschlusstag nicht sagen konnte.'*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Frau Lehrerin",
-        "text": "*Sie nimmt den Strauß und starrt ihn lange an.* ...Das ist kein pädagogisches Interesse. Das hier nicht.\n\n─── Frau Lehrerin PERFECT END ───"
+        "text": "*Sie wendet den Blick ab.* ...Es ist nur ein Roman. Fiktion. *Ihre Stimme wird leiser.* ...Du weißt, dass es das nicht ist, oder?"
+    },
+    "hidden_perfect_homeroom_4e": {
+        "name": "{name}",
+        "text": "*Nächster Donnerstag. Ich wartete nicht vor dem Café. — Ich wartete vor dem Blumenladen.*"
+    },
+    "hidden_perfect_homeroom_4f": {
+        "name": "{name}",
+        "text": "*Ich reichte ihr den Strauß.* Das ist kein pädagogisches Interesse. Nicht von meiner Seite."
+    },
+    "hidden_perfect_homeroom_4g": {
+        "name": "Frau Lehrerin",
+        "text": "*Sie nimmt den Strauß und starrt ihn lange an. Ihre Hände zittern. — Sie lächelt.* ...Meins auch nicht.\n\n─── Frau Lehrerin PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},
