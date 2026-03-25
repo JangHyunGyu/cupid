@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "Yo",
-        "text": "*Segundo dia. El uniforme se siente un poco mas comodo que ayer. No se si me estoy adaptando rapido o rindiendome rapido.*"
+        "text": "*Segundo día. El uniforme se siente un poco más cómodo que ayer. No se si me estoy adaptando rápido o rindiéndome rápido.*"
     },
     "morning2_start_2": {
         "name": "Yo",
@@ -9,7 +9,7 @@
     },
     "morning2_dain_1": {
         "name": "Dain",
-        "text": "¡¿Llegaste?!¡ Buenos dias!!"
+        "text": "¡¿Llegaste?!¡ Buenos días!!"
     },
     "morning2_dain_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "¿Jaja, ¡con eso?!¡ Necesitas hacer mas ejercicio!"
+        "text": "¿Jaja, ¡con eso?!¡ Necesitas hacer más ejercicio!"
     },
     "morning2_dain_4": {
         "name": "{name}",
@@ -61,7 +61,7 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Solo iba de paso. -- Que tengas otro dia divertido."
+        "text": "Solo iba de pasó. -- Que tengas otro día divertido."
     },
     "morning2_minsu_1": {
         "name": "Yo",
@@ -73,7 +73,7 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "¿Oye, dos dias como alumno nuevo y la presidenta del consejo viene a saludarte? Yo llevo un ano aqui y ni me mira."
+        "text": "¿Oye, dos días como alumno nuevo y la presidenta del consejo viene a saludarte? Yo llevo un año aquí y ni me mira."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "¡¿La presidenta tambien esta interesada en el alumno nuevo? Que popular!"
+        "text": "¡¿La presidenta también está interesada en el alumno nuevo? Que popular!"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -97,15 +97,15 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "Yo te encontre primero, ¡asi que eres nuestro alumno nuevo!¡ Lo reclamo!¡ Es mio!"
+        "text": "Yo te encontre primero, ¡así que eres nuestro alumno nuevo!¡ Lo reclamo!¡ Es mio!"
     },
     "morning2_break_1": {
         "name": "Yo",
-        "text": "*Se puede reclamar a una persona? -- Pero por alguna razon no tengo ganas de discutir.*"
+        "text": "*Se puede reclamar a una persona? -- Pero por alguna razón no tengo ganas de discutir.*"
     },
     "morning2_seo_dust_1": {
         "name": "Yo",
-        "text": "*Descanso despues de la primera clase. Me cruzo con Seoyeon en el pasillo. Se detiene. Mira mi hombro.*"
+        "text": "*Descanso después de la primera clase. Me cruzo con Seoyeon en el pasillo. Se detiene. Mira mi hombro.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
@@ -173,7 +173,7 @@
     },
     "morning2_haeun_6": {
         "name": "Haeun",
-        "text": "Ella no suele ser asi. Acercarse a otro estudiante primero... llevo un ano observandola y es la primera vez."
+        "text": "Ella no suele ser así. Acercarse a otro estudiante primero... llevo un año observándola y es la primera vez."
     },
     "morning2_haeun_6b": {
         "name": "Haeun",
@@ -189,7 +189,7 @@
     },
     "morning2_end": {
         "name": "Yo",
-        "text": "*Alguien que nunca se acerco a nadie primero en todo un ano... vino a mi primero? Que significa eso?*"
+        "text": "*Alguien que nunca se acercó a nadie primero en todo un año... vino a mi primero? Que significa eso?*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Profesora",

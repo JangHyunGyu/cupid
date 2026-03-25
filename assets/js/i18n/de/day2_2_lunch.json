@@ -18,7 +18,7 @@
     },
     "lunch2_yuna_1": {
         "name": "Ich",
-        "text": "*Der Bibliotheksanbau. Ein aelteres Gebaeude als das Hauptgebaeude. Kaum Schueler hier.*"
+        "text": "*Der Bibliotheksanbau. Ein aelteres Gebaeude als das Hauptgebaeude. Kaum Schüler hier.*"
     },
     "lunch2_yuna_2": {
         "name": "Ich",
@@ -34,7 +34,7 @@
     },
     "lunch2_yuna_5": {
         "name": "Yuna",
-        "text": "Du haettest auch nicht kommen koennen."
+        "text": "Du haettest auch nicht kommen können."
     },
     "lunch2_yuna_6": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "Ich",
-        "text": "*Yuna oeffnet ihr Buch. Ein Signal, dass das Gespraech vorbei ist.*"
+        "text": "*Yuna öffnet ihr Buch. Ein Signal, dass das Gespraech vorbei ist.*"
     },
     "lunch2_yuna_c1_8": {
         "name": "Ich",
@@ -146,11 +146,11 @@
     },
     "lunch2_yuna_c1_14": {
         "name": "Ich",
-        "text": "*Ich war immer stolz auf mein Feingefuehl. -- Ich lag falsch. Nicht bei dieser Person.*"
+        "text": "*Ich war immer stolz auf mein Feingefühl. -- Ich lag falsch. Nicht bei dieser Person.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "Ich",
-        "text": "*Ich setze mich wortlos neben sie. Yuna schaut kurz herueber.*"
+        "text": "*Ich setze mich wortlos neben sie. Yuna schaut kurz herüber.*"
     },
     "lunch2_yuna_c2_2": {
         "name": "Ich",
@@ -182,7 +182,7 @@
     },
     "lunch2_yuna_c2_9": {
         "name": "Ich",
-        "text": "*Zwei Saetze. Fuer Yuna ist das eine lange Rede. -- Und alles steckt in diesen zwei Saetzen.*"
+        "text": "*Zwei Saetze. Für Yuna ist das eine lange Rede. -- Und alles steckt in diesen zwei Saetzen.*"
     },
     "lunch2_yuna_end": {
         "name": "Ich",
@@ -206,7 +206,7 @@
     },
     "lunch2_seo_5": {
         "name": "{name}",
-        "text": "Die Brise ist auch schoen."
+        "text": "Die Brise ist auch schön."
     },
     "lunch2_seo_6": {
         "name": "Seoyeon",
@@ -214,11 +214,11 @@
     },
     "lunch2_seo_7": {
         "name": "Ich",
-        "text": "*Sie schien mehr hoeren zu wollen -- aber ich habe absichtlich zurueckgehalten.*"
+        "text": "*Sie schien mehr hören zu wollen -- aber ich habe absichtlich zurückgehalten.*"
     },
     "lunch2_seo_8": {
         "name": "Ich",
-        "text": "*Beim Essen -- die Dachtuer oeffnet sich. Dain ist hochgekommen.*"
+        "text": "*Beim Essen -- die Dachtür öffnet sich. Dain ist hochgekommen.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -250,7 +250,7 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Wieso, stoert es dich?"
+        "text": "Wieso, stört es dich?"
     },
     "lunch2_seo_17": {
         "name": "Dain",
@@ -270,7 +270,7 @@
     },
     "lunch2_seo_choice": {
         "name": "Ich",
-        "text": "*Seoyeons Hand kommt naeher.*",
+        "text": "*Seoyeons Hand kommt näher.*",
         "choices": [
             "Still halten",
             "Ich wisch das selbst ab"
@@ -298,7 +298,7 @@
     },
     "lunch2_seo_c2_1": {
         "name": "Ich",
-        "text": "*Ich wische mir mit dem Handruecken den Mund ab.*"
+        "text": "*Ich wische mir mit dem Handrücken den Mund ab.*"
     },
     "lunch2_seo_c2_2": {
         "name": "Seoyeon",
@@ -362,7 +362,7 @@
     },
     "lunch2_dain_11": {
         "name": "Dain",
-        "text": "Hey, was ist mit der Praesidentin los? Warum starrt sie?"
+        "text": "Hey, was ist mit der Präsidentin los? Warum starrt sie?"
     },
     "lunch2_dain_12": {
         "name": "{name}",
@@ -370,7 +370,7 @@
     },
     "lunch2_dain_13": {
         "name": "Dain",
-        "text": "Hmm... bist du mit der Praesidentin auch befreundet?"
+        "text": "Hmm... bist du mit der Präsidentin auch befreundet?"
     },
     "lunch2_dain_choice": {
         "name": "Ich",
@@ -378,7 +378,7 @@
         "choices": [
             "Wir haben gestern ein bisschen geredet",
             "Sie hat mir nur die Schule gezeigt?",
-            "Wieso, stoert es dich?"
+            "Wieso, stört es dich?"
         ]
     },
     "lunch2_dain_c1_1": {
@@ -387,7 +387,7 @@
     },
     "lunch2_dain_c2_1": {
         "name": "Ich",
-        "text": "*Dain nickt und beisst in ihr Soboro-Brot. Tut so, als waere es ihr egal.*"
+        "text": "*Dain nickt und beisst in ihr Soboro-Brot. Tut so, als wäre es ihr egal.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
@@ -395,7 +395,7 @@
     },
     "lunch2_dain_c3_2": {
         "name": "Ich",
-        "text": "*Ihre Ohrlaeppchen. Rot. -- Die Maedchen an dieser Schule haben sehr ehrliche Ohren.*"
+        "text": "*Ihre Ohrlaeppchen. Rot. -- Die Mädchen an dieser Schule haben sehr ehrliche Ohren.*"
     },
     "lunch2_dain_end": {
         "name": "Ich",

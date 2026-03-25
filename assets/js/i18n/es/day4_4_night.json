@@ -49,7 +49,7 @@
     },
     "wall_seo_11": {
         "name": "Seoyeon",
-        "text": "Mamá me dijo: 'Al menos tú tienes que ser perfecta para mantener esta familia'."
+        "text": "Mamá me dijo: 'Al menos tú tienes que ser perfecta para mantener está familia'."
     },
     "wall_seo_12": {
         "name": "Seoyeon",
@@ -111,7 +111,7 @@
         "name": "Yo",
         "text": "*Seoyeon se seca las lágrimas, mirándome con ojos temblorosos.*",
         "choices": [
-            "Me gusta más esta Seoyeon que la perfecta.",
+            "Me gusta más está Seoyeon que la perfecta.",
             "No eres la presidenta del consejo para mí — eres solo Seoyeon, mi novia.",
             "Sinceramente, pensé que eras perfecta. Pero gracias por mostrarme este lado tuyo."
         ]
@@ -283,7 +283,7 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "Es gracioso, ¿no? Llevo pisando esta cancha todos los días desde los cinco años... y ahora resulta que ya no puedo."
+        "text": "Es gracioso, ¿no? Llevo pisando está cancha todos los días desde los cinco años... y ahora resulta que ya no puedo."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
@@ -331,7 +331,7 @@
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...Je. Duele. Pero se siente extrañamente liberador. — Me alegro de que mi último golpe en esta cancha haya sido una colocación de {name}."
+        "text": "...Je. Duele. Pero se siente extrañamente liberador. — Me alegro de que mi último golpe en está cancha haya sido una colocación de {name}."
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
@@ -415,7 +415,7 @@
     },
     "wall_yuna_13": {
         "name": "Yuna",
-        "text": "Un día se trasladó. Sin contacto. Solo esta carta."
+        "text": "Un día se trasladó. Sin contacto. Solo está carta."
     },
     "wall_yuna_14": {
         "name": "Yuna",
@@ -552,7 +552,7 @@
     },
     "wall_seo_pre_low_1": {
         "name": "Yo",
-        "text": "*Seoyeon guarda silencio. Tengo que dar el primer paso.*"
+        "text": "*Seoyeon guarda silencio. Tengo que dar el primer pasó.*"
     },
     "wall_seo_pre_low_1b": {
         "name": "Yo",
