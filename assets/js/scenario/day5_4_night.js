@@ -531,7 +531,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_true_seoyeon.png",
         "character": null,
         "night": true,
-        "next": "true_epilogue_1"
+        "next": "true_epilogue_1_seo"
     },
 
     // ── Yuna TRUE route ──
@@ -590,7 +590,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_true_yuna.png",
         "character": null,
         "night": true,
-        "next": "true_epilogue_1"
+        "next": "true_epilogue_1_yuna"
     },
 
     // ── Dain TRUE route ──
@@ -661,18 +661,10 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_true_dain.png",
         "character": null,
         "night": true,
-        "next": "true_epilogue_1"
+        "next": "true_epilogue_1_dain"
     },
 
     // ── Shared epilogue ──
-    "true_epilogue_1": {
-        "character": null,
-        "branches": [
-            { "condition": "route_seoyeon", "next": "true_epilogue_1_seo" },
-            { "condition": "route_yuna", "next": "true_epilogue_1_yuna" },
-            { "next": "true_epilogue_1_dain" }
-        ]
-    },
     "true_epilogue_1_seo": {
         "background": "assets/images/background/ending_true_seoyeon.png",
         "character": null,
