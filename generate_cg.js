@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const API_KEY = fs.readFileSync(path.join(__dirname, '..', '.env.txt'), 'utf8')
+const API_KEY = fs.readFileSync(path.join(__dirname, '..', '.env'), 'utf8')
     .split('\n').find(l => l.startsWith('GEMINI_API_KEY='))
     ?.split('=')[1]?.trim();
 
