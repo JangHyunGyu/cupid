@@ -25,7 +25,7 @@
     },
     "night2_msg_6": {
         "name": "Yuna",
-        "text": "...Terminaste el libro?"
+        "text": "¿...Terminaste el libro?"
     },
     "night2_msg_dain_specific": {
         "name": "Dain",
@@ -57,7 +57,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "¡¡Oye!! ¡¡Qué haces mañana?!"
+        "text": "¡¡Oye!! ¿¡¡Qué haces mañana?!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -73,7 +73,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "¡¡Oye!! ¡¡Qué haces mañana?!"
+        "text": "¡¡Oye!! ¿¡¡Qué haces mañana?!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
@@ -102,7 +102,7 @@
     },
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "Jajaja no aguantas el picante?!"
+        "text": "¿Jajaja no aguantas el picante?!"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
@@ -154,7 +154,7 @@
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "?"
+        "text": "¿?"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",

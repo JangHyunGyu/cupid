@@ -38,11 +38,11 @@
     },
     "lunch2_yuna_6": {
         "name": "{name}",
-        "text": "Por que?"
+        "text": "¿Por que?"
     },
     "lunch2_yuna_7": {
         "name": "Yuna",
-        "text": "Parece que te estas llevando bien con la ruidosa. Eso es mas divertido, no?"
+        "text": "Parece que te estas llevando bien con la ruidosa. ¿Eso es mas divertido, no?"
     },
     "lunch2_yuna_8": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "lunch2_yuna_13": {
         "name": "{name}",
-        "text": "Que es este lugar? Una sala de lectura secreta?"
+        "text": "¿Que es este lugar?¿ Una sala de lectura secreta?"
     },
     "lunch2_yuna_14": {
         "name": "Yuna",
@@ -82,7 +82,7 @@
     },
     "lunch2_yuna_17": {
         "name": "{name}",
-        "text": "Habia?"
+        "text": "¿Habia?"
     },
     "lunch2_yuna_choice": {
         "name": "Yo",
@@ -110,7 +110,7 @@
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
-        "text": "No se comunico?"
+        "text": "¿No se comunico?"
     },
     "lunch2_yuna_c1_6": {
         "name": "Yuna",
@@ -126,7 +126,7 @@
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
-        "text": "Ese sunbae, quiza simplemente se graduo? Los mayores siempre pierden el contacto."
+        "text": "¿Ese sunbae, quiza simplemente se graduo? Los mayores siempre pierden el contacto."
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
@@ -194,7 +194,7 @@
     },
     "lunch2_seo_2": {
         "name": "Seoyeon",
-        "text": "Volviste. Te gusto, eh?"
+        "text": "Volviste. ¿Te gusto, eh?"
     },
     "lunch2_seo_3": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "lunch2_seo_4": {
         "name": "Seoyeon",
-        "text": "Es por la comida?"
+        "text": "¿Es por la comida?"
     },
     "lunch2_seo_5": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Oh! Aqui estaban?! Los encontre!"
+        "text": "Oh! ¿Aqui estaban?! Los encontre!"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
@@ -250,7 +250,7 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Por que, te molesta?"
+        "text": "¿Por que, te molesta?"
     },
     "lunch2_seo_17": {
         "name": "Dain",
@@ -286,7 +286,7 @@
     },
     "lunch2_seo_c1_3": {
         "name": "Dain",
-        "text": "Que acabo de ver?!"
+        "text": "¿Que acabo de ver?!"
     },
     "lunch2_seo_c1_4": {
         "name": "Seoyeon",
@@ -342,11 +342,11 @@
     },
     "lunch2_dain_6": {
         "name": "Dain",
-        "text": "...Esto esta amanado?!"
+        "text": "¿...Esto esta amanado?!"
     },
     "lunch2_dain_7": {
         "name": "{name}",
-        "text": "Como se amana un piedra-papel-tijeras?"
+        "text": "¿Como se amana un piedra-papel-tijeras?"
     },
     "lunch2_dain_8": {
         "name": "Dain",
@@ -362,7 +362,7 @@
     },
     "lunch2_dain_11": {
         "name": "Dain",
-        "text": "Oye, que le pasa a la presidenta? Por que nos mira asi?"
+        "text": "¿Oye, que le pasa a la presidenta?¿ Por que nos mira asi?"
     },
     "lunch2_dain_12": {
         "name": "{name}",
@@ -370,7 +370,7 @@
     },
     "lunch2_dain_13": {
         "name": "Dain",
-        "text": "Hmm... eres cercano a la presidenta tambien?"
+        "text": "Hmm... ¿eres cercano a la presidenta tambien?"
     },
     "lunch2_dain_choice": {
         "name": "Yo",
