@@ -651,7 +651,15 @@
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Professeure",
-        "text": "*Ses yeux sourient par-dessus la tasse de café.* Je ne suis plus ta prof — alors je peux dire ça, non ?\n\n─── Professeure PERFECT END ───"
+        "text": "*Ses yeux sourient par-dessus la tasse de café.* Je ne suis plus ta prof — alors je peux dire ça, non ?"
+    },
+    "hidden_perfect_homeroom_4c": {
+        "name": "{name}",
+        "text": "*Je sors un bouquet de mon sac. Je n'ai pas préparé ça pendant trois ans. J'ai juste vu un fleuriste en venant. — Mais mon corps a bougé tout seul.*"
+    },
+    "hidden_perfect_homeroom_4d": {
+        "name": "Professeure",
+        "text": "*Elle prend le bouquet et le regarde longuement.* ...Ce n'est pas de l'intérêt professionnel. Pas ça.\n\n─── Professeure PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},

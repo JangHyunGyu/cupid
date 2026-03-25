@@ -651,7 +651,15 @@
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Ms. Kim",
-        "text": "*Her eyes smile over the coffee cup.* I'm not your teacher anymore — so I can say this, right?\n\n─── Homeroom Teacher PERFECT END ───"
+        "text": "*Her eyes smile over the coffee cup.* I'm not your teacher anymore — so I can say this, right?"
+    },
+    "hidden_perfect_homeroom_4c": {
+        "name": "{name}",
+        "text": "*I pull a bouquet from my bag. I didn't plan this for three years. I just saw a flower shop on the way here. — But my body moved on its own.*"
+    },
+    "hidden_perfect_homeroom_4d": {
+        "name": "Ms. Kim",
+        "text": "*She takes the bouquet and stares at it for a long time.* ...This isn't professional interest. Not this.\n\n─── Homeroom Teacher PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},
