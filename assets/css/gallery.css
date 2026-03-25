@@ -791,8 +791,8 @@ body::-webkit-scrollbar-thumb:hover {
 /* CG 카드 이미지 영역 */
 .cg-card .card-image {
     position: relative;
-    aspect-ratio: 16/9;
-    /* 16:9 비율 유지 */
+    aspect-ratio: 1/1;
+    /* 1:1 비율 — 원본 CG와 동일 비율로 크롭 없음 */
     overflow: hidden;
 }
 
@@ -801,7 +801,8 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* 영역을 채우도록 자름 */
+    object-position: center top;
+    /* 캐릭터 얼굴이 주로 상단에 위치 → 상단 기준 크롭 */
 }
 
 /* 잠긴 CG 카드 배경 - 화려한 그라데이션 */
@@ -1084,8 +1085,8 @@ body::-webkit-scrollbar-thumb:hover {
 /* CG 닫기 버튼 특수 스타일 */
 .cg-close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: max(10px, env(safe-area-inset-top, 10px));
+    right: max(10px, env(safe-area-inset-right, 10px));
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -1479,6 +1480,89 @@ body::-webkit-scrollbar-thumb:hover {
 
     .cg-card .card-info p {
         font-size: 0.6rem;
+    }
+}
+
+/* 모바일 가로 모드 (높이가 낮은 landscape) */
+@media (max-height: 500px) and (orientation: landscape) {
+
+    /* CG 뷰어: 가로모드에서 이미지가 잘리지 않도록 */
+    .cg-viewer {
+        max-height: 60vh;
+        margin-bottom: 8px;
+    }
+
+    .cg-viewer img {
+        max-height: 60vh;
+    }
+
+    /* CG 모달: 가로모드 최적화 */
+    .cg-modal-content {
+        max-width: 95vw;
+        max-height: 95vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+
+    /* CG 정보를 이미지 옆으로 배치 */
+    .cg-info {
+        max-width: 200px;
+        text-align: left;
+    }
+
+    .cg-info h3 {
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+    }
+
+    .cg-info p {
+        font-size: 0.75rem;
+    }
+
+    /* 닫기 버튼 위치 조정 (노치 대응) */
+    .cg-close-btn {
+        top: 8px;
+        right: max(8px, env(safe-area-inset-right, 8px));
+    }
+
+    /* 캐릭터 모달도 가로모드 대응 */
+    .modal-content {
+        max-height: 95vh;
+        flex-direction: row;
+    }
+
+    .modal-body {
+        flex-direction: row;
+    }
+
+    .character-preview {
+        min-height: unset;
+        max-height: 80vh;
+    }
+
+    .character-preview img {
+        max-height: 70vh;
+    }
+
+    /* CG 그리드: 가로모드에서 더 많은 카드 표시 */
+    .cg-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+/* 태블릿 가로 (1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* CG 그리드: 태블릿 가로 최적화 */
+    .cg-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 14px;
+    }
+
+    .cg-modal-content {
+        max-width: 85vw;
     }
 }
 
