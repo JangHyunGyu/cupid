@@ -695,7 +695,7 @@
     },
     "night_nurse_msg_1": {
         "name": "Schulkrankenschwester",
-        "text": "Das, was du heute in meinem Krankenzimmer gesagt hast... Ich kann nachts nicht aufhören, daran zu denken."
+        "text": "Das, was du heute im Krankenzimmer gesagt hast... Ich kann nachts nicht aufhören, daran zu denken."
     },
     "night_nurse_msg_2": {
         "name": "{name}",
