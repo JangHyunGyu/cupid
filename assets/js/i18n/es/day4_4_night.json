@@ -693,6 +693,14 @@
         "name": "Yuna",
         "text": "...Porque eres cálido."
     },
+    "night_nurse_msg_1": {
+        "name": "Enfermera",
+        "text": "Lo que dijiste en mi oficina hoy... No puedo dejar de pensar en ello durante la noche."
+    },
+    "night_nurse_msg_2": {
+        "name": "{name}",
+        "text": "*Un mensaje de la enfermera llegó. 11 PM. Solo una oración.*"
+    },
     "wall_seo_to_park": {
         "name": "{name}",
         "text": "*Salí de casa y me dirigí al parque.*"

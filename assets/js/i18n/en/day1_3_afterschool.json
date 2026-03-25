@@ -109,7 +109,12 @@
     },
     "after_end": {
         "name": "Me",
-        "text": "*She leaves with a smile.*"
+        "text": "*She leaves with a smile.*",
+        "choices": [
+            "Office",
+            "Infirmary",
+            "Go home"
+        ]
     },
     "after_hidden_homeroom_1": {
         "name": "Me",

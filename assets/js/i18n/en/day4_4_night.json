@@ -693,6 +693,14 @@
         "name": "Yuna",
         "text": "...Because you're warm."
     },
+    "night_nurse_msg_1": {
+        "name": "School Nurse",
+        "text": "What you said in my office today... I keep thinking about it at night."
+    },
+    "night_nurse_msg_2": {
+        "name": "{name}",
+        "text": "*A message from the school nurse came through. 11 PM. Just one sentence.*"
+    },
     "wall_seo_to_park": {
         "name": "{name}",
         "text": "*I left the house and headed to the park.*"

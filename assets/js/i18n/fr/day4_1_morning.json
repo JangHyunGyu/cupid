@@ -197,11 +197,79 @@
         "name": "Infirmière",
         "text": "D'accord~ Rentre bien ! — Reviens bientôt."
     },
-    "hidden_nurse_d4_freetalk": {
+    "hidden_nurse_d4_morning_1": {
+        "name": "{name}",
+        "text": "*Dimanche matin. Je me dirige vers l'infirmerie par habitude. — Depuis quand est-ce devenu une habitude?*"
+    },
+    "hidden_nurse_d4_morning_2": {
+        "name": "{name}",
+        "text": "*J'ouvre la porte de l'infirmerie. L'infirmière est assise dans sa chaise. En blouse blanche. — Mais quelque chose est différent d'habitude. Il n'y a pas sa malice habituelle.*"
+    },
+    "hidden_nurse_d4_morning_3": {
         "name": "Infirmière",
-        "text": "*En train de discuter avec l'infirmière dans un snack.*",
-        "context": "Jour 4. Aidé aux préparatifs et mangé ensemble. Ton : La conversation est devenue sérieuse. Excitation et nervosité du rendez-vous. Plus de sincérité que de blagues. Moments d'honnêteté émotionnelle.",
-        "personality": "En civil, elle fait plus grande sœur. Oscille entre enjouement et sincérité."
+        "text": "Oh, tu es venu."
+    },
+    "hidden_nurse_d4_morning_4": {
+        "name": "{name}",
+        "text": "*Son « tu es venu » est d'une demi-octave plus basse que d'habitude. — J'ai appris à lire les émotions de cette personne par la tonalité.*"
+    },
+    "hidden_nurse_d4_morning_5": {
+        "name": "{name}",
+        "text": "C'est la dernière consultation?"
+    },
+    "hidden_nurse_d4_morning_6": {
+        "name": "Infirmière",
+        "text": "Consultation... *elle fait tourner sa chaise* Ouais. La dernière consultation."
+    },
+    "hidden_nurse_d4_morning_7": {
+        "name": "{name}",
+        "text": "*L'infirmière fait semblant de ranger les papiers sur son bureau — mais elle tourne la même feuille pour la troisième fois.*"
+    },
+    "hidden_nurse_d4_morning_8": {
+        "name": "Infirmière",
+        "text": "Je peux te poser une question?"
+    },
+    "hidden_nurse_d4_morning_9": {
+        "name": "{name}",
+        "text": "Quoi?"
+    },
+    "hidden_nurse_d4_morning_10": {
+        "name": "{name}",
+        "text": "*L'infirmière se touche les lunettes. Les yeux visibles à travers sont plus grands que prévu. Les yeux qui étaient cachés derrière la malice.*"
+    },
+    "hidden_nurse_d4_morning_11": {
+        "name": "Infirmière",
+        "text": "...Reviendras-tu à l'infirmerie après tes études?"
+    },
+    "hidden_nurse_d4_morning_choice": {
+        "name": "{name}",
+        "text": "*Ce n'est pas une question. — C'est le visage de quelqu'un qui redoute déjà la réponse. Nos regards se croisent. Son expression sérieuse sans sa malice habituelle. — Je n'ai jamais vu cette personne aussi vulnérable.*",
+        "choices": [
+            "Je reviendrai.",
+            "..."
+        ]
+    },
+    "hidden_nurse_d4_morning_choice_a": {
+        "name": "{name}",
+        "text": "Je reviendrai."
+    },
+    "hidden_nurse_d4_morning_choice_b": {
+        "name": "{name}",
+        "text": "*Silence.*"
+    },
+    "hidden_nurse_d4_morning_12": {
+        "name": "Infirmière",
+        "text": "...Vraiment?"
+    },
+    "hidden_nurse_d4_morning_13": {
+        "name": "{name}",
+        "text": "*« Vraiment. » — Son mot pour confirmer la sincérité. Aujourd'hui, je l'ai entendu en première. Un instant de silence. À travers ses lunettes, ses yeux ont l'air humide. — La lentille est embuée. Je ne peux pas dire si c'est de la buée ou des larmes. L'infirmière parle de nouveau avec un ton plus léger, mais sa voix tremble. La malice revient. — Mais sous ses yeux souriants, il y a une trace de quelque chose qui coule.*"
+    },
+    "hidden_nurse_d4_morning_freetalk": {
+        "name": "Infirmière",
+        "text": "*En train de discuter avec l'infirmière à l'infirmerie.*",
+        "context": "Jour 4. Le moment des adieux quand elle demande si tu reviendras après tes études. La scène où les deux montrent leurs vrais cœurs. Ton : Conversation plus profonde et émotionnelle. La vérité derrière la malice. Le sens d'être appelé par son nom.",
+        "personality": "L'infirmière est prudente et honnête. Elle veut t'appeler par ton nom mais elle est dans une position prudente. Des larmes coulent à ta promesse."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
