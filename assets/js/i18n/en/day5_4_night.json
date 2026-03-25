@@ -603,19 +603,43 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*Graduation is over. — I'm alone in the empty classroom when the door opens.*"
+        "text": "*Graduation is over. I'm alone in the empty classroom. The chalk marks on the blackboard haven't been erased yet.*"
+    },
+    "hidden_perfect_homeroom_1b": {
+        "name": "{name}",
+        "text": "*The door opens. — It's her. Beige cardigan. Holding a document envelope.*"
     },
     "hidden_perfect_homeroom_2": {
-        "name": "Homeroom Teacher",
-        "text": "I knew you'd still be here. — Get ready. There's somewhere we need to go."
+        "name": "Ms. Kim",
+        "text": "Congratulations on graduating. ...The paperwork's all done. My job as your teacher is finished now."
+    },
+    "hidden_perfect_homeroom_2b": {
+        "name": "{name}",
+        "text": "Is the manuscript still in your desk drawer?"
+    },
+    "hidden_perfect_homeroom_2c": {
+        "name": "Ms. Kim",
+        "text": "*She pauses.* ...Take care. Don't — contact me."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
-        "text": "*A cafe terrace. Cherry blossoms drifting. The homeroom teacher in casual clothes — no, the person who's no longer a teacher sits across from me.*"
+        "text": "*Three years later.*"
+    },
+    "hidden_perfect_homeroom_3b": {
+        "name": "{name}",
+        "text": "*A cafe terrace. Cherry blossoms drifting. Walking in — I spot familiar brown wavy hair by the window. A linen jacket instead of a cardigan.*"
+    },
+    "hidden_perfect_homeroom_3c": {
+        "name": "Ms. Kim",
+        "text": "...Oh. I'm surprised too. *She sets down her coffee cup.* Want to sit?"
     },
     "hidden_perfect_homeroom_4": {
-        "name": "Homeroom Teacher",
-        "text": "I finished the manuscript. Submitted it to the publisher. — There's a name on the first page. The name of my first reader.\n\n─── Homeroom Teacher PERFECT END ───"
+        "name": "Ms. Kim",
+        "text": "I finished the manuscript. Submitted it to the publisher. — There's a name on the first page. The name of my first reader."
+    },
+    "hidden_perfect_homeroom_4b": {
+        "name": "Ms. Kim",
+        "text": "*Her eyes smile behind her glasses.* I'm not your teacher anymore — so I can say this, right?\n\n─── Homeroom Teacher PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},

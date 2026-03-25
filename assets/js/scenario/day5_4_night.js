@@ -1246,30 +1246,62 @@ Object.assign(SCENARIO[5], {
         "fade": true,
         "bgm": "ending.mp3",
         "setFlags": ["ending_perfect", "isDating_Teacher"],
+        "next": "hidden_perfect_homeroom_1b"
+    },
+    "hidden_perfect_homeroom_1b": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "night": true,
         "next": "hidden_perfect_homeroom_2"
     },
     "hidden_perfect_homeroom_2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "night": true,
+        "next": "hidden_perfect_homeroom_2b"
+    },
+    "hidden_perfect_homeroom_2b": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "night": true,
+        "next": "hidden_perfect_homeroom_2c"
+    },
+    "hidden_perfect_homeroom_2c": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_sad.png",
+        "night": true,
         "next": "hidden_perfect_homeroom_3"
     },
     "hidden_perfect_homeroom_3": {
-        "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/teacher_shy.png",
+        "background": null,
+        "character": null,
         "night": true,
+        "fade": true,
+        "next": "hidden_perfect_homeroom_3b"
+    },
+    "hidden_perfect_homeroom_3b": {
+        "background": "assets/images/background/cafe.png",
+        "character": null,
+        "next": "hidden_perfect_homeroom_3c"
+    },
+    "hidden_perfect_homeroom_3c": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_smile.png",
         "next": "hidden_perfect_homeroom_4"
     },
     "hidden_perfect_homeroom_4": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_shy.png",
-        "night": true,
+        "next": "hidden_perfect_homeroom_4b"
+    },
+    "hidden_perfect_homeroom_4b": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_shy.png",
         "next": "hidden_perfect_homeroom_5"
     },
     "hidden_perfect_homeroom_5": {
         "background": "assets/images/background/ending_perfect_teacher.png",
         "character": null,
-        "night": true,
         "next": "day5_credits"
     },
 
@@ -1309,13 +1341,13 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_perfect_nurse_3": {
         "background": "assets/images/background/nurse_home_event1.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": null,
         "night": true,
         "next": "hidden_perfect_nurse_4"
     },
     "hidden_perfect_nurse_4": {
         "background": "assets/images/background/nurse_home_event1.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": null,
         "night": true,
         "next": "hidden_perfect_nurse_5"
     },
@@ -1455,7 +1487,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_true_nurse_7": {
         "background": "assets/images/background/nurse_home_event1.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": null,
         "night": true,
         "next": "hidden_true_nurse_8"
     },
