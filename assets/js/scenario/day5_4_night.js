@@ -1291,7 +1291,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_perfect_homeroom_3d": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/teacher_smile.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_perfect_homeroom_3e"
     },
     "hidden_perfect_homeroom_3e": {
@@ -1302,16 +1302,47 @@ Object.assign(SCENARIO[5], {
     "hidden_perfect_homeroom_3f": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_shy.png",
+        "next": "hidden_perfect_homeroom_3g"
+    },
+    "hidden_perfect_homeroom_3g": {
+        "background": null,
+        "character": null,
+        "fade": true,
         "next": "hidden_perfect_homeroom_4"
     },
     "hidden_perfect_homeroom_4": {
-        "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/teacher_shy.png",
+        "background": "assets/images/background/street.png",
+        "character": null,
         "next": "hidden_perfect_homeroom_4b"
     },
     "hidden_perfect_homeroom_4b": {
+        "background": "assets/images/background/bookstore.png",
+        "character": "assets/images/characters/teacher_smile.png",
+        "next": "hidden_perfect_homeroom_4c"
+    },
+    "hidden_perfect_homeroom_4c": {
+        "background": "assets/images/background/bookstore.png",
+        "character": "assets/images/characters/teacher_shy.png",
+        "next": "hidden_perfect_homeroom_4d"
+    },
+    "hidden_perfect_homeroom_4d": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_shy.png",
+        "next": "hidden_perfect_homeroom_4e"
+    },
+    "hidden_perfect_homeroom_4e": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_perfect_homeroom_4f"
+    },
+    "hidden_perfect_homeroom_4f": {
+        "background": "assets/images/background/cafe.png",
+        "character": null,
+        "next": "hidden_perfect_homeroom_4g"
+    },
+    "hidden_perfect_homeroom_4g": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_smile.png",
         "next": "hidden_perfect_homeroom_5"
     },
     "hidden_perfect_homeroom_5": {
