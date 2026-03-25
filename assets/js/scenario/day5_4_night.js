@@ -407,7 +407,7 @@ Object.assign(SCENARIO[5], {
         "next": "bitter_yuna_2"
     },
     "bitter_yuna_2": {
-        "background": "assets/images/background/library.png",
+        "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_sad.png",
         "night": true,
         "next": "bitter_yuna_3"
