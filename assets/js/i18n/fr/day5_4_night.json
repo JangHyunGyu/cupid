@@ -619,7 +619,7 @@
     },
     "hidden_perfect_homeroom_2c": {
         "name": "Professeure",
-        "text": "*Elle s'arrête un instant.* ...Prends soin de toi. Ne me — contacte pas."
+        "text": "*Elle s'arrête un instant. Sur le point de dire quelque chose de plus, elle ferme la bouche.* ...Prends soin de toi."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
@@ -635,31 +635,47 @@
     },
     "hidden_perfect_homeroom_3d": {
         "name": "{name}",
-        "text": "Vous allez bien ? ...J'ai entendu dire que vous aviez quitté l'école."
+        "text": "Vous allez bien ? J'ai entendu dire que vous aviez quitté l'école."
     },
     "hidden_perfect_homeroom_3e": {
         "name": "Professeure",
-        "text": "*Elle sourit en coin.* J'ai arrêté d'enseigner. Je ne fais qu'écrire maintenant. Je travaille aussi à mi-temps dans un café. — Et toi ?"
+        "text": "*Elle sourit en coin.* J'ai arrêté d'enseigner. Je ne fais qu'écrire. Mi-temps dans un café aussi. — Et toi ?"
     },
     "hidden_perfect_homeroom_3f": {
+        "name": "Professeure",
+        "text": "...On peut se revoir ? Je viens ici tous les jeudis."
+    },
+    "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*Elle — non, cette personne sirote son café. La même personne qui se tenait derrière le bureau il y a trois ans, mais l'atmosphère est différente. La tension a quitté ses épaules. Dans le bon sens.*"
+        "text": "*Ce « la prochaine fois » est devenu la fois d'après, puis encore la suivante. Même place chaque jeudi. Quand le barista a demandé « Table pour couple ? », aucun de nous n'a pu répondre.*"
     },
     "hidden_perfect_homeroom_4": {
-        "name": "Professeure",
-        "text": "J'ai terminé le manuscrit. Envoyé à l'éditeur. — Il y a un nom sur la première page. Le nom de mon premier lecteur."
+        "name": "{name}",
+        "text": "*Un jeudi. On a marché dans les rues au lieu d'aller au café. Côte à côte. Tous les deux faisant semblant de ne pas remarquer nos ombres qui se chevauchaient.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Professeure",
-        "text": "*Ses yeux sourient par-dessus la tasse de café.* Je ne suis plus ta prof — alors je peux dire ça, non ?"
+        "text": "*Elle prend un livre à la librairie.* Lis ça. — Tu veux être le premier lecteur de mon manuscrit ?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*Je sors un bouquet de mon sac. Je n'ai pas préparé ça pendant trois ans. J'ai juste vu un fleuriste en venant. — Mais mon corps a bougé tout seul.*"
+        "text": "*J'ai pris le manuscrit. Tourné la première page. — Il y a une dédicace. « À la personne qui m'a appris les mots que je n'ai pas pu dire le jour de la remise des diplômes. »*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Professeure",
-        "text": "*Elle prend le bouquet et le regarde longuement.* ...Ce n'est pas de l'intérêt professionnel. Pas ça.\n\n─── Professeure PERFECT END ───"
+        "text": "*Elle détourne le regard.* ...C'est juste un roman. De la fiction. *Sa voix diminue.* ...Tu sais que ce n'en est pas, hein ?"
+    },
+    "hidden_perfect_homeroom_4e": {
+        "name": "{name}",
+        "text": "*Le jeudi suivant. Je n'ai pas attendu devant le café. — J'ai attendu devant le fleuriste.*"
+    },
+    "hidden_perfect_homeroom_4f": {
+        "name": "{name}",
+        "text": "*Je lui ai tendu le bouquet.* Ce n'est pas de l'intérêt professionnel. Pas de mon côté."
+    },
+    "hidden_perfect_homeroom_4g": {
+        "name": "Professeure",
+        "text": "*Elle prend le bouquet et le fixe longuement. Ses mains tremblent. — Elle sourit.* ...Moi non plus.\n\n─── Professeure PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},
