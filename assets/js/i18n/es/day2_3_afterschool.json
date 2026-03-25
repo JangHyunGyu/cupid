@@ -1,7 +1,7 @@
 {
     "after2_start": {
         "name": "Yo",
-        "text": "*Despues de clases. Dos notificaciones en mi telefono.*\n\nDain: Ven al gimnasio!! ¿Hoy va en serio!!\nSeoyeon: Puedes venir a la sala del consejo? Nos falta gente.\n\n*Nada de Yuna. -- Asi es Yuna. Pero al recoger mi mochila, la nota de la manana cae del bolsillo. Las palabras 'anexo de la biblioteca' me llaman la atencion.*"
+        "text": "*Despues de clases. ¡Dos notificaciones en mi telefono.*\n\nDain: Ven al gimnasio!!¡ ¿Hoy va en serio!!\nSeoyeon: Puedes venir a la sala del consejo? Nos falta gente.\n\n*Nada de Yuna. -- Asi es Yuna. Pero al recoger mi mochila, la nota de la manana cae del bolsillo. Las palabras 'anexo de la biblioteca' me llaman la atencion.*"
     },
     "after2_choice": {
         "name": "Yo",
@@ -18,7 +18,7 @@
     },
     "after2_dain_2": {
         "name": "Dain",
-        "text": "¿Viniste?! Llegas tarde!!"
+        "text": "¡¿Viniste?!¡ Llegas tarde!!"
     },
     "after2_dain_3": {
         "name": "{name}",
@@ -26,7 +26,7 @@
     },
     "after2_dain_4": {
         "name": "Dain",
-        "text": "Yo llegue diez minutos antes!!"
+        "text": "¡Yo llegue diez minutos antes!!"
     },
     "after2_dain_5": {
         "name": "Yo",
@@ -34,7 +34,7 @@
     },
     "after2_dain_6": {
         "name": "Dain",
-        "text": "Bueno, la apuesta! Cinco saques -- si pasas tres o mas por la red, ganas! Si no, el tteokbokki de hoy lo pagas tu!"
+        "text": "Bueno, ¡la apuesta! Cinco saques -- si pasas tres o mas por la red, ¡ganas! Si no, ¡el tteokbokki de hoy lo pagas tu!"
     },
     "after2_dain_7": {
         "name": "{name}",
@@ -42,7 +42,7 @@
     },
     "after2_dain_8": {
         "name": "Dain",
-        "text": "Tengo hambre!!"
+        "text": "¡Tengo hambre!!"
     },
     "after2_dain_9": {
         "name": "Yo",
@@ -50,7 +50,7 @@
     },
     "after2_dain_10": {
         "name": "Dain",
-        "text": "*¿Con los ojos bien abiertos* Eh? Iba a ir suave, pero parece que no puedo.\n\n*Dain baja su postura. Sus ojos han cambiado.*\n\nAhora va en serio!"
+        "text": "*¿Con los ojos bien abiertos* Eh? Iba a ir suave, pero parece que no puedo.\n\n*Dain baja su postura. ¡Sus ojos han cambiado.*\n\nAhora va en serio!"
     },
     "after2_dain_11": {
         "name": "Yo",
@@ -58,7 +58,7 @@
     },
     "after2_dain_12": {
         "name": "Dain",
-        "text": "Aaaargh!! Perdi!! ¿-- Pero eres bueno?! ¿Dijiste que no hacias deporte?!"
+        "text": "¡Aaaargh!!¡ Perdi!! ¿-- ¡Pero eres bueno?!¡ ¿Dijiste que no hacias deporte?!"
     },
     "after2_dain_13": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*¿Genuinamente sorprendida* Que?! ¿Me enganaste?!"
+        "text": "*¡¿Genuinamente sorprendida* Que?!¡ ¿Me enganaste?!"
     },
     "after2_dain_15": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "after2_dain_16": {
         "name": "Dain",
-        "text": "*Dandome un puneton en el hombro* Tramposo!! Jajaja -- pero fue divertido!"
+        "text": "*¡Dandome un puneton en el hombro* Tramposo!! Jajaja -- ¡pero fue divertido!"
     },
     "after2_dain_end": {
         "name": "Yo",
@@ -90,7 +90,7 @@
     },
     "after2_dain_end_2c": {
         "name": "Dain",
-        "text": "Un 'poco' no juega asi! -- Admitelo, eres bueno."
+        "text": "¡Un 'poco' no juega asi! -- Admitelo, eres bueno."
     },
     "after2_dain_end_2d": {
         "name": "{name}",
@@ -102,7 +102,7 @@
     },
     "after2_dain_end_3b": {
         "name": "Dain",
-        "text": "...Obvio! Yo era becada deportiva!"
+        "text": "¡...Obvio!¡ Yo era becada deportiva!"
     },
     "after2_dain_end_3c": {
         "name": "Yo",
@@ -110,7 +110,7 @@
     },
     "after2_dain_end_3d": {
         "name": "Dain",
-        "text": "Ahh esta muy picante!! Agua, agua!!"
+        "text": "¡Ahh esta muy picante!! Agua, ¡agua!!"
     },
     "after2_dain_end_3e": {
         "name": "Yo",

@@ -177,7 +177,7 @@
     },
     "date_dain_2": {
         "name": "Dain",
-        "text": "Llegaste!! ¿Casi llegas tarde, no?!"
+        "text": "¡Llegaste!! ¿Casi llegas tarde, ¡no?!"
     },
     "date_dain_3": {
         "name": "{name}",
@@ -185,7 +185,7 @@
     },
     "date_dain_4": {
         "name": "Dain",
-        "text": "Yo llegué hace veinte minutos!!"
+        "text": "¡Yo llegué hace veinte minutos!!"
     },
     "date_dain_compliment_choice": {
         "name": "Yo",
@@ -217,7 +217,7 @@
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "Obvio!! Hoy estoy en mi mejor momento!!"
+        "text": "¡Obvio!!¡ Hoy estoy en mi mejor momento!!"
     },
     "date_dain_arcade": {
         "name": "Yo",
@@ -225,15 +225,15 @@
     },
     "date_dain_arcade_2": {
         "name": "Dain",
-        "text": "Bien, apostemos!! El que pierda paga los refrescos!!"
+        "text": "Bien, ¡apostemos!!¡ El que pierda paga los refrescos!!"
     },
     "date_dain_arcade_3": {
         "name": "Dain",
-        "text": "Sin apuestas no es divertido!!"
+        "text": "¡Sin apuestas no es divertido!!"
     },
     "date_dain_rhythm": {
         "name": "Dain",
-        "text": "Combo completo!! ¿Lo viste?!"
+        "text": "¡Combo completo!!¡ ¿Lo viste?!"
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "date_dain_rhythm_3": {
         "name": "Dain",
-        "text": "Jaja, obvio!! Este no necesita rodillas!!"
+        "text": "Jaja, ¡obvio!!¡ Este no necesita rodillas!!"
     },
     "date_dain_knee": {
         "name": "Yo",
@@ -261,7 +261,7 @@
     },
     "date_dain_shop_3": {
         "name": "Dain",
-        "text": "No es nada! Vamos!"
+        "text": "¡No es nada!¡ Vamos!"
     },
     "date_dain_end": {
         "name": "Yo",

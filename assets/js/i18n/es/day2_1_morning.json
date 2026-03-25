@@ -9,7 +9,7 @@
     },
     "morning2_dain_1": {
         "name": "Dain",
-        "text": "¿Llegaste?! Buenos dias!!"
+        "text": "¡¿Llegaste?!¡ Buenos dias!!"
     },
     "morning2_dain_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "¿Jaja, con eso?! Necesitas hacer mas ejercicio!"
+        "text": "¿Jaja, ¡con eso?!¡ Necesitas hacer mas ejercicio!"
     },
     "morning2_dain_4": {
         "name": "{name}",
@@ -25,7 +25,7 @@
     },
     "morning2_dain_5": {
         "name": "Dain",
-        "text": "Esto es lo normal! Tu eres el que anda bajo de pilas!"
+        "text": "¡Esto es lo normal!¡ Tu eres el que anda bajo de pilas!"
     },
     "morning2_dain_6": {
         "name": "Yo",
@@ -89,7 +89,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "¿La presidenta tambien esta interesada en el alumno nuevo? Que popular!"
+        "text": "¡¿La presidenta tambien esta interesada en el alumno nuevo? Que popular!"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "Yo te encontre primero, asi que eres nuestro alumno nuevo! Lo reclamo! Es mio!"
+        "text": "Yo te encontre primero, ¡asi que eres nuestro alumno nuevo!¡ Lo reclamo!¡ Es mio!"
     },
     "morning2_break_1": {
         "name": "Yo",
@@ -137,7 +137,7 @@
     },
     "morning2_dain_react_3": {
         "name": "Dain",
-        "text": "Oye! ¿Que fue eso?! ¿Te toco el hombro?!"
+        "text": "¡Oye!¡ ¿Que fue eso?!¡ ¿Te toco el hombro?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "morning2_dain_react_5": {
         "name": "Dain",
-        "text": "Polvo... ¿de verdad habia polvo?!"
+        "text": "Polvo... ¡¿de verdad habia polvo?!"
     },
     "morning2_dain_react_6": {
         "name": "Yo",
