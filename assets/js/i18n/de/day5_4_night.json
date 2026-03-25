@@ -655,15 +655,15 @@
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Frau Lehrerin",
-        "text": "*Sie nimmt ein Buch in der Buchhandlung.* Lies das. — Willst du der erste Leser meines Manuskripts sein?"
+        "text": "*Sie bleibt plötzlich in der Buchhandlung stehen.* ...Ich habe mein Manuskript fertig. Willst du es lesen?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*Ich nahm das Manuskript. Schlug die erste Seite auf. — Eine Widmung. 'Für die Person, die mir die Worte beibrachte, die ich am Abschlusstag nicht sagen konnte.'*"
+        "text": "*Ich las es zu Hause. Die ganze Nacht. — Die Art, wie die Hauptfigur sprach, kam mir bekannt vor. Zu bekannt.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Frau Lehrerin",
-        "text": "*Sie wendet den Blick ab.* ...Es ist nur ein Roman. Fiktion. *Ihre Stimme wird leiser.* ...Du weißt, dass es das nicht ist, oder?"
+        "text": "*Nächster Donnerstag. Sie rührte ihren Kaffee länger als üblich.* ...Und, wie war's?"
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",

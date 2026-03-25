@@ -655,15 +655,15 @@
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Professeure",
-        "text": "*Elle prend un livre à la librairie.* Lis ça. — Tu veux être le premier lecteur de mon manuscrit ?"
+        "text": "*Elle s'arrête brusquement à la librairie.* ...J'ai terminé mon manuscrit. Tu veux le lire ?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*J'ai pris le manuscrit. Tourné la première page. — Il y a une dédicace. « À la personne qui m'a appris les mots que je n'ai pas pu dire le jour de la remise des diplômes. »*"
+        "text": "*Je l'ai lu chez moi. Toute la nuit. — La façon dont parlait le personnage principal m'était familière. Trop familière.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Professeure",
-        "text": "*Elle détourne le regard.* ...C'est juste un roman. De la fiction. *Sa voix diminue.* ...Tu sais que ce n'en est pas, hein ?"
+        "text": "*Le jeudi suivant. Elle a remué son café plus longtemps que d'habitude.* ...Alors, c'était comment ?"
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",
