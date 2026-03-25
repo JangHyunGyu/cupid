@@ -1387,16 +1387,32 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/nurse_home_event1.png",
         "character": null,
         "night": true,
+        "next": "hidden_perfect_nurse_3b"
+    },
+    "hidden_perfect_nurse_3b": {
+        "background": "assets/images/background/nurse_home_event1.png",
+        "character": null,
+        "night": true,
         "next": "hidden_perfect_nurse_4"
     },
     "hidden_perfect_nurse_4": {
         "background": "assets/images/background/nurse_home_event1.png",
         "character": null,
         "night": true,
+        "next": "hidden_perfect_nurse_4b"
+    },
+    "hidden_perfect_nurse_4b": {
+        "background": "assets/images/background/ending_perfect_nurse.png",
+        "character": null,
+        "night": true,
         "next": "hidden_perfect_nurse_5"
     },
     "hidden_perfect_nurse_5": {
-        "background": "assets/images/background/ending_perfect_nurse.png",
+        "character": null,
+        "night": true,
+        "next": "hidden_perfect_nurse_5b"
+    },
+    "hidden_perfect_nurse_5b": {
         "character": null,
         "night": true,
         "next": "day5_credits"
