@@ -691,11 +691,26 @@
         "name": "{name}",
         "text": "*Côte à côte sur le canapé du salon. Le soleil se couche derrière la vitre. Au lieu d'un pansement, ce sont les doigts qui se touchent.*"
     },
-    "hidden_perfect_nurse_4": {
-        "name": "School Nurse",
-        "text": "*Elle s'appuie contre moi.* ...Plus besoin d'excuses. Ni patient, ni élève. Juste — quelqu'un avec qui j'ai envie d'être.\n\n─── School Nurse PERFECT END ───"
+    "hidden_perfect_nurse_3b": {
+        "name": "Infirmière",
+        "text": "*Elle s'appuie contre moi.* ...Plus besoin d'excuses. Ni patient, ni élève."
     },
-    "hidden_perfect_nurse_5": {},
+    "hidden_perfect_nurse_4": {
+        "name": "Infirmière",
+        "text": "*Sa main remonte et attrape ma cravate. Pas espiègle. Ses yeux sont sérieux.* ...Ce soir, tu ne pars pas."
+    },
+    "hidden_perfect_nurse_4b": {
+        "name": "{name}",
+        "text": "*Matin. La lumière filtre à travers les rideaux. Une respiration à côté de moi. — Celle qui prenait trois minutes pour poser un pansement dort maintenant en tenant ma main.*"
+    },
+    "hidden_perfect_nurse_5": {
+        "name": "Infirmière",
+        "text": "*Elle ouvre les yeux. Sourit.* ...Tu as mal quelque part ? Je peux regarder ? *— Pas une blague. Pas cette fois.*"
+    },
+    "hidden_perfect_nurse_5b": {
+        "name": "{name}",
+        "text": "*Juste — quelqu'un avec qui j'ai envie d'être. Ici.\n\n─── Infirmière PERFECT END ───*"
+    },
     "hidden_true_homeroom_1": {
         "name": "Moi",
         "text": "*Jour de la remise des diplômes. — Le temps a passé. L'uniforme n'est plus raide.*"
