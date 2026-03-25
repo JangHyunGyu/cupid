@@ -1,0 +1,212 @@
+[
+  {
+    "file": "day2_2_lunch",
+    "lang": "en",
+    "node": "lunch2_seo_end",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_2_lunch",
+    "lang": "ja",
+    "node": "lunch2_seo_end",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_2_lunch",
+    "lang": "es",
+    "node": "lunch2_seo_end",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_2_lunch",
+    "lang": "fr",
+    "node": "lunch2_seo_end",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_2_lunch",
+    "lang": "de",
+    "node": "lunch2_seo_end",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "en",
+    "node": "night2_msg_2",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "en",
+    "node": "night2_msg_3",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "en",
+    "node": "night2_msg_4",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "en",
+    "node": "night2_msg_5",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "en",
+    "node": "night2_msg_6",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "ja",
+    "node": "night2_msg_2",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "ja",
+    "node": "night2_msg_3",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "ja",
+    "node": "night2_msg_4",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "ja",
+    "node": "night2_msg_5",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "ja",
+    "node": "night2_msg_6",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "es",
+    "node": "night2_msg_2",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "es",
+    "node": "night2_msg_3",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "es",
+    "node": "night2_msg_4",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "es",
+    "node": "night2_msg_5",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "es",
+    "node": "night2_msg_6",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "fr",
+    "node": "night2_msg_2",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "fr",
+    "node": "night2_msg_3",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "fr",
+    "node": "night2_msg_4",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "fr",
+    "node": "night2_msg_5",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "fr",
+    "node": "night2_msg_6",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "de",
+    "node": "night2_msg_2",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "de",
+    "node": "night2_msg_3",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "de",
+    "node": "night2_msg_4",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "de",
+    "node": "night2_msg_5",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day2_4_night",
+    "lang": "de",
+    "node": "night2_msg_6",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day4_4_night",
+    "lang": "en",
+    "node": "wall_seo_2",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day4_4_night",
+    "lang": "ja",
+    "node": "wall_seo_2",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day4_4_night",
+    "lang": "es",
+    "node": "wall_seo_2",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day4_4_night",
+    "lang": "fr",
+    "node": "wall_seo_2",
+    "type": "EXTRA_IN_LANG"
+  },
+  {
+    "file": "day4_4_night",
+    "lang": "de",
+    "node": "wall_seo_2",
+    "type": "EXTRA_IN_LANG"
+  }
+]
