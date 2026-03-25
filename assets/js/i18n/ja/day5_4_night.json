@@ -603,19 +603,43 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*卒業式が終わった。——空き教室に一人残っていると、ドアが開いた。*"
+        "text": "*卒業式が終わった。空き教室に一人残っている。黒板のチョーク跡がまだ消えていない。*"
+    },
+    "hidden_perfect_homeroom_1b": {
+        "name": "{name}",
+        "text": "*ドアが開く。——担任だ。ベージュのカーディガン。手に書類封筒を持っている。*"
     },
     "hidden_perfect_homeroom_2": {
         "name": "担任先生",
-        "text": "まだここにいると思った。——準備して。行くところがある。"
+        "text": "卒業おめでとう。...書類は全部出した。先生としての仕事はもう終わり。"
+    },
+    "hidden_perfect_homeroom_2b": {
+        "name": "{name}",
+        "text": "教卓の引き出しに原稿、まだありますか？"
+    },
+    "hidden_perfect_homeroom_2c": {
+        "name": "担任先生",
+        "text": "*少し止まる。* ...元気でね。連絡は——しないで。"
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
-        "text": "*カフェのテラス。桜が舞っている。私服姿の担任が——いや、もう先生ではない人が向かいに座っている。*"
+        "text": "*3年後。*"
+    },
+    "hidden_perfect_homeroom_3b": {
+        "name": "{name}",
+        "text": "*カフェのテラス。桜が舞っている。入ると——窓際の席に見覚えのある茶色いウェーブヘアが見える。カーディガンの代わりにリネンジャケット。*"
+    },
+    "hidden_perfect_homeroom_3c": {
+        "name": "担任先生",
+        "text": "...あ。私も驚いた。*コーヒーカップを置く。* 座る？"
     },
     "hidden_perfect_homeroom_4": {
         "name": "担任先生",
-        "text": "原稿、完成した。出版社に出した。——最初のページに名前がある。最初の読者の名前。\n\n─── 担任先生 PERFECT END ───"
+        "text": "原稿、完成した。出版社に出した。——最初のページに名前がある。最初の読者の名前。"
+    },
+    "hidden_perfect_homeroom_4b": {
+        "name": "担任先生",
+        "text": "*眼鏡の奥の目が笑う。* もう先生じゃないから——こういうこと言ってもいいよね？\n\n─── 担任先生 PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},
