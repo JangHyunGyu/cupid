@@ -9,7 +9,7 @@
     },
     "night_start_3": {
         "name": "僕",
-        "text": "*スマホが鸣る。学校のメッセンジャー。*"
+        "text": "*スマホが鳴る。学校のメッセンジャー。*"
     },
     "night_msg_seo_1": {
         "name": "ソヨン",
@@ -61,7 +61,7 @@
     },
     "night_late_transition": {
         "name": "僕",
-        "text": "*寝ようとしたら——スマホがもう一度鸣る。*"
+        "text": "*寝ようとしたら——スマホがもう一度鳴る。*"
     },
     "night_late_transition_2": {
         "name": "僕",
