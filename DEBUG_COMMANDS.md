@@ -38,9 +38,8 @@ gameEngine.stateManager.setDay(5)
 
 ### PERFECT END — 서연 (호감도 80+, 고백 수락, 단독 루트)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Seoyeon.affinity = 90;
-gameEngine.stateManager.stats.Yuna.affinity = 20;
-gameEngine.stateManager.stats.Dain.affinity = 20;
 gameEngine.stateManager.setFlag("route_seoyeon");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
 gameEngine.stateManager.setDay(5);
@@ -49,9 +48,8 @@ gameEngine.renderScene("perfect_seo_1");
 
 ### PERFECT END — 유나 (호감도 80+)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Yuna.affinity = 90;
-gameEngine.stateManager.stats.Seoyeon.affinity = 20;
-gameEngine.stateManager.stats.Dain.affinity = 20;
 gameEngine.stateManager.setFlag("route_yuna");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
 gameEngine.stateManager.setDay(5);
@@ -60,9 +58,8 @@ gameEngine.renderScene("perfect_yuna_1");
 
 ### PERFECT END — 다인 (호감도 80+)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Dain.affinity = 90;
-gameEngine.stateManager.stats.Seoyeon.affinity = 20;
-gameEngine.stateManager.stats.Yuna.affinity = 20;
 gameEngine.stateManager.setFlag("route_dain");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
 gameEngine.stateManager.setDay(5);
@@ -71,6 +68,7 @@ gameEngine.renderScene("perfect_dain_1");
 
 ### TRUE LOVE END — 서연 (호감도 60-79)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Seoyeon.affinity = 70;
 gameEngine.stateManager.setFlag("route_seoyeon");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
@@ -80,6 +78,7 @@ gameEngine.renderScene("true_seo_1");
 
 ### TRUE LOVE END — 유나 (호감도 60-79)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Yuna.affinity = 70;
 gameEngine.stateManager.setFlag("route_yuna");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
@@ -89,6 +88,7 @@ gameEngine.renderScene("true_yuna_1");
 
 ### TRUE LOVE END — 다인 (호감도 60-79)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Dain.affinity = 70;
 gameEngine.stateManager.setFlag("route_dain");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
@@ -98,6 +98,7 @@ gameEngine.renderScene("true_dain_1");
 
 ### BITTERSWEET END — 서연 (호감도 0-39)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Seoyeon.affinity = 20;
 gameEngine.stateManager.setFlag("route_seoyeon");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
@@ -107,6 +108,7 @@ gameEngine.renderScene("bitter_seo_1");
 
 ### BITTERSWEET END — 유나 (호감도 0-39)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Yuna.affinity = 20;
 gameEngine.stateManager.setFlag("route_yuna");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
@@ -116,6 +118,7 @@ gameEngine.renderScene("bitter_yuna_1");
 
 ### BITTERSWEET END — 다인 (호감도 0-39)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Dain.affinity = 20;
 gameEngine.stateManager.setFlag("route_dain");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
@@ -125,6 +128,7 @@ gameEngine.renderScene("bitter_dain_1");
 
 ### GOOD END — 서연 루트 (고백 수락 + 호감도 40-59)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Seoyeon.affinity = 50;
 gameEngine.stateManager.setFlag("route_seoyeon");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
@@ -135,6 +139,7 @@ gameEngine.renderScene("day5_ending_good");
 
 ### GOOD END — 유나 루트
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Yuna.affinity = 50;
 gameEngine.stateManager.setFlag("route_yuna");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
@@ -145,6 +150,7 @@ gameEngine.renderScene("day5_ending_good");
 
 ### GOOD END — 다인 루트
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Dain.affinity = 50;
 gameEngine.stateManager.setFlag("route_dain");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
@@ -155,6 +161,7 @@ gameEngine.renderScene("day5_ending_good");
 
 ### CONFESS FAIL END — 서연 (고백했으나 호감 부족)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Seoyeon.affinity = 30;
 gameEngine.stateManager.setFlag("route_seoyeon");
 gameEngine.stateManager.setFlag("day5_confessed");
@@ -164,6 +171,7 @@ gameEngine.renderScene("day5_ending_confess_fail");
 
 ### CONFESS FAIL END — 유나
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Yuna.affinity = 30;
 gameEngine.stateManager.setFlag("route_yuna");
 gameEngine.stateManager.setFlag("day5_confessed");
@@ -173,6 +181,7 @@ gameEngine.renderScene("day5_ending_confess_fail");
 
 ### CONFESS FAIL END — 다인
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Dain.affinity = 30;
 gameEngine.stateManager.setFlag("route_dain");
 gameEngine.stateManager.setFlag("day5_confessed");
@@ -182,6 +191,7 @@ gameEngine.renderScene("day5_ending_confess_fail");
 
 ### MAYHEM END (셋 다 좋아했지만 선택 못함)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.setFlag("day3_has_multiple_dates");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("day5_ending_mayhem");
@@ -189,6 +199,7 @@ gameEngine.renderScene("day5_ending_mayhem");
 
 ### HAREM END (셋 다 고백 + 수락)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.setFlag("ending_harem");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("day5_ending_harem");
@@ -196,18 +207,21 @@ gameEngine.renderScene("day5_ending_harem");
 
 ### FRIEND END (고백 안 함, 루트 없음)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("day5_ending_friend");
 ```
 
 ### ALONE END (아무 관계 없음)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("day5_ending_alone");
 ```
 
 ### TEACHER PERFECT END (호감도 80+)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Teacher.affinity = 90;
 gameEngine.stateManager.setFlag("homeroom_day5");
 gameEngine.stateManager.setDay(5);
@@ -216,6 +230,7 @@ gameEngine.renderScene("hidden_perfect_homeroom_1");
 
 ### TEACHER TRUE LOVE END (호감도 40-79)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Teacher.affinity = 60;
 gameEngine.stateManager.setFlag("homeroom_day5");
 gameEngine.stateManager.setDay(5);
@@ -224,6 +239,7 @@ gameEngine.renderScene("hidden_true_homeroom_1");
 
 ### TEACHER GOOD END (호감도 0-39)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Teacher.affinity = 20;
 gameEngine.stateManager.setFlag("homeroom_day5");
 gameEngine.stateManager.setDay(5);
@@ -232,6 +248,7 @@ gameEngine.renderScene("hidden_good_homeroom_1");
 
 ### NURSE PERFECT END (호감도 80+)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Nurse.affinity = 90;
 gameEngine.stateManager.setFlag("nurse_day5");
 gameEngine.stateManager.setDay(5);
@@ -240,6 +257,7 @@ gameEngine.renderScene("hidden_perfect_nurse_1");
 
 ### NURSE TRUE LOVE END (호감도 40-79)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Nurse.affinity = 60;
 gameEngine.stateManager.setFlag("nurse_day5");
 gameEngine.stateManager.setDay(5);
@@ -248,6 +266,7 @@ gameEngine.renderScene("hidden_true_nurse_1");
 
 ### NURSE GOOD END (호감도 0-39)
 ```js
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.stats.Nurse.affinity = 20;
 gameEngine.stateManager.setFlag("nurse_day5");
 gameEngine.stateManager.setDay(5);
