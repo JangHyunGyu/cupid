@@ -21,6 +21,9 @@ gameEngine.stateManager.stats.Nurse.affinity = 60
 // 플래그 설정
 gameEngine.stateManager.setFlag("플래그명")
 
+// 모든 플래그·호감도 초기화 (엔딩 테스트 전 필수!)
+gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
+
 // 현재 상태 확인
 console.table(gameEngine.stateManager.stats)
 console.log(gameEngine.stateManager.flags)
