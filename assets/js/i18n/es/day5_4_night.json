@@ -633,6 +633,18 @@
         "name": "Profesora",
         "text": "...Oh. Yo también estoy sorprendida. *Deja su taza de café.* ¿Quieres sentarte?"
     },
+    "hidden_perfect_homeroom_3d": {
+        "name": "{name}",
+        "text": "¿Has estado bien? ...Ah, ¿debería seguir hablándote de usted?"
+    },
+    "hidden_perfect_homeroom_3e": {
+        "name": "Profesora",
+        "text": "*Sonríe de lado.* Dejé la enseñanza. Solo escribo ahora. También trabajo medio tiempo en un café. — ¿Y tú?"
+    },
+    "hidden_perfect_homeroom_3f": {
+        "name": "{name}",
+        "text": "*Ella — no, esta persona toma un sorbo de café. La misma persona que estaba detrás del podio hace tres años, pero la atmósfera es diferente. La tensión ha desaparecido de sus hombros. En el buen sentido.*"
+    },
     "hidden_perfect_homeroom_4": {
         "name": "Profesora",
         "text": "Terminé el manuscrito. Lo envié a la editorial. — En la primera página hay un nombre. El nombre de mi primer lector."
