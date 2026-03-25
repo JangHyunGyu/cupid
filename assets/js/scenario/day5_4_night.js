@@ -198,7 +198,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_perfect_seoyeon.png",
         "character": null,
         "night": true,
-        "next": "perfect_epilogue_1"
+        "next": "perfect_epilogue_1_seo"
     },
 
     // =========================================================================
@@ -235,7 +235,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_perfect_yuna.png",
         "character": null,
         "night": true,
-        "next": "perfect_epilogue_1"
+        "next": "perfect_epilogue_1_yuna"
     },
 
     // =========================================================================
@@ -284,25 +284,12 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_perfect_dain.png",
         "character": null,
         "night": true,
-        "next": "perfect_seo_5b"
-    },
-    "perfect_seo_5b": {
-        "character": null,
-        "night": true,
-        "next": "perfect_epilogue_1"
+        "next": "perfect_epilogue_1_dain"
     },
 
     // =========================================================================
     // PERFECT END — Shared Epilogue
     // =========================================================================
-    "perfect_epilogue_1": {
-        "character": null,
-        "branches": [
-            { "condition": "route_seoyeon", "next": "perfect_epilogue_1_seo" },
-            { "condition": "route_yuna", "next": "perfect_epilogue_1_yuna" },
-            { "next": "perfect_epilogue_1_dain" }
-        ]
-    },
     "perfect_epilogue_1_seo": {
         "background": "assets/images/background/ending_perfect_seoyeon.png",
         "character": null,
