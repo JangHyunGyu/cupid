@@ -173,11 +173,11 @@
     },
     "morning2_haeun_6": {
         "name": "Haeun",
-        "text": "She's not usually like that. Approaching another student first... I've watched her for a year and this is the first time."
+        "text": "She doesn't usually do that. Approaching someone first... I've known her for a year, and this is the first time."
     },
     "morning2_haeun_6b": {
         "name": "Haeun",
-        "text": "So I have a favor to ask. — Please don't shake her up. She's barely holding herself together as it is."
+        "text": "So I have a favor to ask. — Please be careful with her. She's more fragile than she lets on."
     },
     "morning2_haeun_6c": {
         "name": "{name}",
@@ -225,7 +225,7 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "Me",
-        "text": "*The drawer. Did he just glance at it? — Through the crack I can see a stack of papers. Looks like manuscript pages.*"
+        "text": "*The drawer. Did she just glance at it? — Through the crack I can see a stack of papers. Looks like manuscript pages.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Homeroom Teacher",

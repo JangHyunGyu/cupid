@@ -49,7 +49,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Me",
-        "text": "*Her voice is calm. Not cold, but it has that tone of someone who anticipated everything.*"
+        "text": "*Her voice is calm. Not cold, but measured — like she already knows how this conversation ends.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "seoyeon_choice": {
         "name": "Me",
-        "text": "*How should I respond?*",
+        "text": "*What do I say to that?*",
         "choices": [
             "Don't tell me you came out early because you're interested in me?",
             "How much is the guide fee?"
@@ -121,7 +121,7 @@
     },
     "choice_joke_2": {
         "name": "{name}",
-        "text": "That's one scary council president."
+        "text": "That's one scary student council president."
     },
     "choice_joke_3": {
         "name": "Seoyeon",
@@ -157,7 +157,7 @@
     },
     "hallway_8": {
         "name": "Me",
-        "text": "*She hesitated. 0.5 seconds. Probably nothing, but somehow it sticks in my mind.*"
+        "text": "*She hesitated — just half a second. Probably nothing, but it stays with me.*"
     },
     "hallway_9": {
         "name": "Me",

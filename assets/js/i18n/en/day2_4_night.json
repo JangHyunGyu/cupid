@@ -134,7 +134,7 @@
     },
     "night2_reply_seo_5": {
         "name": "Me",
-        "text": "*She said 'up to you,' but the tone suggests something will happen if I don't show up.*"
+        "text": "*'Up to you,' she said. But it doesn't feel optional.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "Me",
-        "text": "*The third star? — I open the window and look up at the night sky. I can see stars. I'm not sure which one is the third, but. A very Yuna-like riddle. Someone who never gives you the answer. — Someone who makes you want to find it.*"
+        "text": "*The third star? — I open the window and look up. I can see stars, but I don't know which one is the third. Very Yuna. Someone who never gives you the answer. — Someone who makes you want to find it.*"
     },
     "night2_end_1": {
         "name": "Me",
