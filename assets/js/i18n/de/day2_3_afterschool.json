@@ -1,14 +1,14 @@
 {
     "after2_start": {
         "name": "Ich",
-        "text": "*Nach der Schule. Zwei Benachrichtigungen auf meinem Handy.*\n\nDain: Komm in die Turnhalle!! Heute wird's ernst!!\nSeoyeon: Kannst du zur Schuelerratskammer kommen? Uns fehlen Haende.\n\n*Nichts von Yuna. -- Das ist Yuna. Aber beim Packen meiner Tasche faellt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' fallen mir ins Auge.*"
+        "text": "*Nach der Schule. Zwei Benachrichtigungen auf meinem Handy.*\n\nDain: Komm in die Turnhalle!! Heute wird's ernst!!\nSeoyeon: Kannst du zur Schülerratskammer kommen? Uns fehlen Haende.\n\n*Nichts von Yuna. -- Das ist Yuna. Aber beim Packen meiner Tasche faellt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' fallen mir ins Auge.*"
     },
     "after2_choice": {
         "name": "Ich",
         "text": "*Wohin soll ich gehen?*",
         "choices": [
             "Zur Turnhalle (Dain)",
-            "Zur Schuelerratskammer (Seoyeon)",
+            "Zur Schülerratskammer (Seoyeon)",
             "Am Bibliotheksanbau vorbeischauen (Yuna)"
         ]
     },
@@ -22,19 +22,19 @@
     },
     "after2_dain_3": {
         "name": "{name}",
-        "text": "Ich bin fuenf Minuten frueh dran."
+        "text": "Ich bin fuenf Minuten früh dran."
     },
     "after2_dain_4": {
         "name": "Dain",
-        "text": "Ich war zehn Minuten frueh dran!!"
+        "text": "Ich war zehn Minuten früh dran!!"
     },
     "after2_dain_5": {
         "name": "Ich",
-        "text": "*Das heisst, du warst frueh dran, nicht dass ich spaet bin.*"
+        "text": "*Das heisst, du warst früh dran, nicht dass ich spaet bin.*"
     },
     "after2_dain_6": {
         "name": "Dain",
-        "text": "Also, die Wette! Fuenf Aufschlaege -- schaffst du drei oder mehr uebers Netz, gewinnst du! Wenn nicht, zahlst du heute Tteokbokki!"
+        "text": "Also, die Wette! Fuenf Aufschlaege -- schaffst du drei oder mehr übers Netz, gewinnst du! Wenn nicht, zahlst du heute Tteokbokki!"
     },
     "after2_dain_7": {
         "name": "{name}",
@@ -46,15 +46,15 @@
     },
     "after2_dain_9": {
         "name": "Ich",
-        "text": "*Ich schlage auf. -- Ueberraschenderweise geht der zweite Aufschlag sauber uebers Netz.*"
+        "text": "*Ich schlage auf. -- Überraschenderweise geht der zweite Aufschlag sauber übers Netz.*"
     },
     "after2_dain_10": {
         "name": "Dain",
-        "text": "*Mit grossen Augen* Huh? Ich wollte eigentlich locker spielen, aber das geht wohl nicht.\n\n*Dain geht in die Hocke. Ihre Augen haben sich veraendert.*\n\nJetzt geb ich alles!"
+        "text": "*Mit grossen Augen* Huh? Ich wollte eigentlich locker spielen, aber das geht wohl nicht.\n\n*Dain geht in die Hocke. Ihre Augen haben sich verändert.*\n\nJetzt geb ich alles!"
     },
     "after2_dain_11": {
         "name": "Ich",
-        "text": "*Der Ballwechsel geht hin und her. Dains Bewegung ist -- eindeutig nicht gewoehnlich. Schnell, praezise, Muskelgedaechtnis in Aktion.*\n\n*Dieses Maedchen ist wirklich gut. Nicht nur 'mag Sport' gut -- sie bewegt sich wie jemand, der einmal alles darauf gesetzt hat.*\n\n*Endstand: 3 zu 2. Ich hab knapp gewonnen.*"
+        "text": "*Der Ballwechsel geht hin und her. Dains Bewegung ist -- eindeutig nicht gewoehnlich. Schnell, praezise, Muskelgedaechtnis in Aktion.*\n\n*Dieses Mädchen ist wirklich gut. Nicht nur 'mag Sport' gut -- sie bewegt sich wie jemand, der einmal alles darauf gesetzt hat.*\n\n*Endstand: 3 zu 2. Ich hab knapp gewonnen.*"
     },
     "after2_dain_12": {
         "name": "Dain",
@@ -66,7 +66,7 @@
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*Ehrlich ueberrascht* Was?! Wurde ich reingelegt?!"
+        "text": "*Ehrlich überrascht* Was?! Wurde ich reingelegt?!"
     },
     "after2_dain_15": {
         "name": "{name}",
@@ -102,7 +102,7 @@
     },
     "after2_dain_end_3b": {
         "name": "Dain",
-        "text": "...Natuerlich! Ich war Sportstipendiatin!"
+        "text": "...Natürlich! Ich war Sportstipendiatin!"
     },
     "after2_dain_end_3c": {
         "name": "Ich",
@@ -118,7 +118,7 @@
     },
     "after2_seo_1": {
         "name": "Ich",
-        "text": "*Die Schuelerratskammer. Seoyeon sitzt hinter einem Stapel Dokumente. Allein.*"
+        "text": "*Die Schülerratskammer. Seoyeon sitzt hinter einem Stapel Dokumente. Allein.*"
     },
     "after2_seo_2": {
         "name": "Seoyeon",
@@ -166,7 +166,7 @@
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "...Du bist ueberraschend nuetzlich."
+        "text": "...Du bist überraschend nuetzlich."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -178,9 +178,9 @@
     },
     "after2_seo_choice1": {
         "name": "Ich",
-        "text": "*Es direkt ein Kompliment zu nennen. -- Das scheint selten fuer jemanden wie sie.*\n\n*Beim Sortieren dreht Seoyeon ihren Nacken. Scheint verspannt zu sein.*",
+        "text": "*Es direkt ein Kompliment zu nennen. -- Das scheint selten für jemanden wie sie.*\n\n*Beim Sortieren dreht Seoyeon ihren Nacken. Scheint verspannt zu sein.*",
         "choices": [
-            "Der Sonnenuntergang ist wunderschoen. -- Oh, ich meinte draussen, nicht dich.",
+            "Der Sonnenuntergang ist wunderschön. -- Oh, ich meinte draussen, nicht dich.",
             "Hast du Nackenschmerzen? Mach mal Pause."
         ]
     },
@@ -206,7 +206,7 @@
     },
     "after2_seo_neck_high": {
         "name": "Ich",
-        "text": "*Ich schliesse die Augen und ueberlasse mich ihr.*"
+        "text": "*Ich schliesse die Augen und überlasse mich ihr.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
@@ -214,15 +214,15 @@
     },
     "after2_seo_neck_low": {
         "name": "Ich",
-        "text": "*Ich weiche leicht zurueck.*\n\nWas machst du da ploetzlich."
+        "text": "*Ich weiche leicht zurück.*\n\nWas machst du da plötzlich."
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "*Zieht ihre Haende zurueck* ...Ist nichts.\n\n*Ihr Ausdruck erstarrt fuer eine halbe Sekunde. -- Dann laechelt sie sofort. Perfekt.*"
+        "text": "*Zieht ihre Haende zurück* ...Ist nichts.\n\n*Ihr Ausdruck erstarrt für eine halbe Sekunde. -- Dann laechelt sie sofort. Perfekt.*"
     },
     "after2_seo_9": {
         "name": "Ich",
-        "text": "*Der Sonnenuntergang taucht die Schuelerratskammer in Licht. Die Papierarbeit ist fast fertig.*"
+        "text": "*Der Sonnenuntergang taucht die Schülerratskammer in Licht. Die Papierarbeit ist fast fertig.*"
     },
     "after2_seo_choice2": {
         "name": "Ich",
@@ -238,11 +238,11 @@
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
-        "text": "...Ich mag diese Zeit. Wenn ich allein in der Schuelerratskammer bin, muss ich keine Rolle spielen."
+        "text": "...Ich mag diese Zeit. Wenn ich allein in der Schülerratskammer bin, muss ich keine Rolle spielen."
     },
     "after2_seo_stay_3": {
         "name": "{name}",
-        "text": "Selbst die Schuelerratspraesidentin ruht sich mal aus?"
+        "text": "Selbst die Schülerratspräsidentin ruht sich mal aus?"
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
@@ -250,7 +250,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "Ich",
-        "text": "*'Ausser hier.' -- Ob Dach oder Schuelerratskammer, Seoyeon ist jemand, der einen Ort braucht, an dem sie die Maske abnehmen kann.*"
+        "text": "*'Ausser hier.' -- Ob Dach oder Schülerratskammer, Seoyeon ist jemand, der einen Ort braucht, an dem sie die Maske abnehmen kann.*"
     },
     "after2_seo_leave": {
         "name": "Ich",
@@ -258,15 +258,15 @@
     },
     "after2_seo_end": {
         "name": "Ich",
-        "text": "*Ich verlasse die Schuelerratskammer. Der Sonnenuntergang faerbt den Flur.*"
+        "text": "*Ich verlasse die Schülerratskammer. Der Sonnenuntergang faerbt den Flur.*"
     },
     "after2_yuna_1": {
         "name": "Ich",
-        "text": "*Von Yuna kam keine Nachricht. Aber meine Fuesse gehen Richtung Bibliothek. Warum? -- Weiss nicht genau. Vielleicht wegen dem Morgenzettel.*\n\n*Der Flur des Anbaus. Keine Menschenseele. -- Die Tuer zum geheimen Leseraum steht einen Spalt offen.*"
+        "text": "*Von Yuna kam keine Nachricht. Aber meine Fuesse gehen Richtung Bibliothek. Warum? -- Weiss nicht genau. Vielleicht wegen dem Morgenzettel.*\n\n*Der Flur des Anbaus. Keine Menschenseele. -- Die Tür zum geheimen Leseraum steht einen Spalt offen.*"
     },
     "after2_yuna_2": {
         "name": "Ich",
-        "text": "*Ich schleiche mich rein. Yuna sitzt auf dem Sofa und liest. Der Sonnenuntergang stroemt durchs Fenster.*\n\n*Yuna schaut hoch. Sie ist nicht ueberrascht.*"
+        "text": "*Ich schleiche mich rein. Yuna sitzt auf dem Sofa und liest. Der Sonnenuntergang stroemt durchs Fenster.*\n\n*Yuna schaut hoch. Sie ist nicht überrascht.*"
     },
     "after2_yuna_3": {
         "name": "Yuna",
@@ -286,7 +286,7 @@
     },
     "after2_yuna_7": {
         "name": "{name}",
-        "text": "Die Tuer war offen."
+        "text": "Die Tür war offen."
     },
     "after2_yuna_8": {
         "name": "Yuna",
@@ -294,7 +294,7 @@
     },
     "after2_yuna_8b": {
         "name": "Ich",
-        "text": "*Eine zufaellig offene Tuer. -- Yunas 'zufaellig' ist gleichbedeutend mit 'absichtlich'.*\n\n*Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrhoerer.*"
+        "text": "*Eine zufaellig offene Tür. -- Yunas 'zufaellig' ist gleichbedeutend mit 'absichtlich'.*\n\n*Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrhoerer.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -302,11 +302,11 @@
     },
     "after2_yuna_8d": {
         "name": "Ich",
-        "text": "*Ein ruhiges Klavierstueck ertönt. Der Sonnenuntergang faerbt den Raum.*"
+        "text": "*Ein ruhiges Klavierstück ertönt. Der Sonnenuntergang faerbt den Raum.*"
     },
     "after2_yuna_9": {
         "name": "Ich",
-        "text": "*Yuna liest ihr Buch, und ich hoere die Musik. Keine Worte. -- Ueberhaupt nicht unangenehm.*"
+        "text": "*Yuna liest ihr Buch, und ich hoere die Musik. Keine Worte. -- Überhaupt nicht unangenehm.*"
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
@@ -322,10 +322,10 @@
     },
     "after2_yuna_choice": {
         "name": "Ich",
-        "text": "*Yuna hat zwei Saetze gesagt. -- Fuer sie ist das dasselbe wie 'danke'.*",
+        "text": "*Yuna hat zwei Saetze gesagt. -- Für sie ist das dasselbe wie 'danke'.*",
         "choices": [
             "Soll ich jeden Tag kommen?",
-            "Es ist schoen, weil es ruhig ist"
+            "Es ist schön, weil es ruhig ist"
         ]
     },
     "after2_yuna_everyday": {
@@ -334,7 +334,7 @@
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "...Komm, wenn du willst. Ich halt dich nicht auf.\n\n*'Ich halt dich nicht auf.' -- In Yunas Sprache uebersetzt heisst das 'bitte komm'.*"
+        "text": "...Komm, wenn du willst. Ich halt dich nicht auf.\n\n*'Ich halt dich nicht auf.' -- In Yunas Sprache übersetzt heisst das 'bitte komm'.*"
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -346,7 +346,7 @@
     },
     "after2_yuna_end": {
         "name": "Ich",
-        "text": "*Der Sonnenuntergang verblasst. Neben Yuna sitzen und Musik hoeren. Ein Moment, in dem keine Worte noetig sind.*"
+        "text": "*Der Sonnenuntergang verblasst. Neben Yuna sitzen und Musik hören. Ein Moment, in dem keine Worte noetig sind.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",

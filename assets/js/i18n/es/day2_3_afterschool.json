@@ -1,11 +1,11 @@
 {
     "after2_start": {
         "name": "Yo",
-        "text": "*Despues de clases. ¡Dos notificaciones en mi telefono.*\n\nDain: Ven al gimnasio!!¡ ¿Hoy va en serio!!\nSeoyeon: Puedes venir a la sala del consejo? Nos falta gente.\n\n*Nada de Yuna. -- Asi es Yuna. Pero al recoger mi mochila, la nota de la manana cae del bolsillo. Las palabras 'anexo de la biblioteca' me llaman la atencion.*"
+        "text": "*Despues de clases. ¡Dos notificaciones en mi telefono.*\n\nDain: Ven al gimnasio!!¡ ¿Hoy va en serio!!\nSeoyeon: Puedes venir a la sala del consejo? Nos falta gente.\n\n*Nada de Yuna. -- Asi es Yuna. Pero al recoger mi mochila, la nota de la manana cae del bolsillo. Las palabras 'anexo de la biblioteca' me llaman la atención.*"
     },
     "after2_choice": {
         "name": "Yo",
-        "text": "*A donde deberia ir?*",
+        "text": "*A donde debería ir?*",
         "choices": [
             "Al gimnasio (Dain)",
             "A la sala del consejo estudiantil (Seoyeon)",
@@ -14,7 +14,7 @@
     },
     "after2_dain_1": {
         "name": "Yo",
-        "text": "*El gimnasio. Dain esta calentando frente a la red de voleibol.*"
+        "text": "*El gimnasio. Dain está calentando frente a la red de voleibol.*"
     },
     "after2_dain_2": {
         "name": "Dain",
@@ -34,7 +34,7 @@
     },
     "after2_dain_6": {
         "name": "Dain",
-        "text": "Bueno, ¡la apuesta! Cinco saques -- si pasas tres o mas por la red, ¡ganas! Si no, ¡el tteokbokki de hoy lo pagas tu!"
+        "text": "Bueno, ¡la apuesta! Cinco saques -- si pasas tres o más por la red, ¡ganas! Si no, ¡el tteokbokki de hoy lo pagas tu!"
     },
     "after2_dain_7": {
         "name": "{name}",
@@ -90,7 +90,7 @@
     },
     "after2_dain_end_2c": {
         "name": "Dain",
-        "text": "¡Un 'poco' no juega asi! -- Admitelo, eres bueno."
+        "text": "¡Un 'poco' no juega así! -- Admitelo, eres bueno."
     },
     "after2_dain_end_2d": {
         "name": "{name}",
@@ -110,15 +110,15 @@
     },
     "after2_dain_end_3d": {
         "name": "Dain",
-        "text": "¡Ahh esta muy picante!! Agua, ¡agua!!"
+        "text": "¡Ahh está muy picante!! Agua, ¡agua!!"
     },
     "after2_dain_end_3e": {
         "name": "Yo",
-        "text": "*El tema cambio. -- Si lo cambio a proposito o de verdad estaba picante. Probablemente ambas.*"
+        "text": "*El tema cambio. -- Si lo cambio a propósito o de verdad estaba picante. Probablemente ambas.*"
     },
     "after2_seo_1": {
         "name": "Yo",
-        "text": "*La sala del consejo estudiantil. Seoyeon esta sentada detras de una pila de documentos. Sola.*"
+        "text": "*La sala del consejo estudiantil. Seoyeon está sentada detrás de una pila de documentos. Sola.*"
     },
     "after2_seo_2": {
         "name": "Seoyeon",
@@ -194,7 +194,7 @@
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
-        "text": "Estoy bien. Esto es cosa de todos los dias."
+        "text": "Estoy bien. Esto es cosa de todos los días."
     },
     "after2_seo_neck_react": {
         "name": "Yo",
@@ -202,7 +202,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "Esta muy tenso. No te muevas un momento.\n\n*Seoyeon se levanta y viene detras de mi. Pone las manos sobre mis hombros.*"
+        "text": "Esta muy tenso. No te muevas un momento.\n\n*Seoyeon se levanta y viene detrás de mi. Pone las manos sobre mis hombros.*"
     },
     "after2_seo_neck_high": {
         "name": "Yo",
@@ -218,17 +218,17 @@
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "*Retirando las manos* ...No es nada.\n\n*Su expresion se congela por medio segundo. -- Y luego sonrie de inmediato. Perfectamente.*"
+        "text": "*Retirando las manos* ...No es nada.\n\n*Su expresión se congela por medio segundo. -- Y luego sonrie de inmediato. Perfectamente.*"
     },
     "after2_seo_9": {
         "name": "Yo",
-        "text": "*El atardecer bana la sala del consejo. El papeleo esta casi terminado.*"
+        "text": "*El atardecer bana la sala del consejo. El papeleo está casi terminado.*"
     },
     "after2_seo_choice2": {
         "name": "Yo",
-        "text": "*El papeleo esta casi terminado.*",
+        "text": "*El papeleo está casi terminado.*",
         "choices": [
-            "Me quedo un poco mas? Parece que aun queda algo",
+            "Me quedo un poco más? Parece que aun queda algo",
             "Si terminamos, me voy"
         ]
     },
@@ -246,11 +246,11 @@
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
-        "text": "Nunca. -- Excepto aqui."
+        "text": "Nunca. -- Excepto aquí."
     },
     "after2_seo_stay_3c": {
         "name": "Yo",
-        "text": "*'Excepto aqui.' -- Ya sea la azotea o la sala del consejo, Seoyeon es alguien que necesita un lugar donde pueda quitarse la mascara.*"
+        "text": "*'Excepto aquí.' -- Ya sea la azotea o la sala del consejo, Seoyeon es alguien que necesita un lugar donde pueda quitarse la mascara.*"
     },
     "after2_seo_leave": {
         "name": "Yo",
@@ -262,11 +262,11 @@
     },
     "after2_yuna_1": {
         "name": "Yo",
-        "text": "*No hubo mensaje de Yuna. Pero mis pies se dirigen hacia la biblioteca. Por que? -- No estoy seguro. Tal vez por la nota de la manana.*\n\n*El pasillo del anexo. Ni un alma. -- La puerta de la sala de lectura secreta esta entreabierta.*"
+        "text": "*No hubo mensaje de Yuna. Pero mis pies se dirigen hacia la biblioteca. Por que? -- No estoy seguro. Tal vez por la nota de la manana.*\n\n*El pasillo del anexo. Ni un alma. -- La puerta de la sala de lectura secreta está entreabierta.*"
     },
     "after2_yuna_2": {
         "name": "Yo",
-        "text": "*Entro silenciosamente. Yuna esta en el sofa, leyendo. El atardecer entra por la ventana.*\n\n*Yuna levanta la mirada. No se sorprende.*"
+        "text": "*Entro silenciosamente. Yuna está en el sofa, leyendo. El atardecer entra por la ventana.*\n\n*Yuna levanta la mirada. No se sorprende.*"
     },
     "after2_yuna_3": {
         "name": "Yuna",
@@ -294,7 +294,7 @@
     },
     "after2_yuna_8b": {
         "name": "Yo",
-        "text": "*Una puerta abierta por casualidad. -- La 'casualidad' de Yuna es sinonimo de 'a proposito'.*\n\n*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*"
+        "text": "*Una puerta abierta por casualidad. -- La 'casualidad' de Yuna es sinonimo de 'a propósito'.*\n\n*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -302,15 +302,15 @@
     },
     "after2_yuna_8d": {
         "name": "Yo",
-        "text": "*Suena una pieza tranquila de piano. El atardecer esta pintando la habitacion.*"
+        "text": "*Suena una pieza tranquila de piano. El atardecer está pintando la habitacion.*"
     },
     "after2_yuna_9": {
         "name": "Yo",
-        "text": "*Yuna lee su libro y yo escucho la musica. Sin palabras. -- Nada incomodo.*"
+        "text": "*Yuna lee su libro y yo escucho la música. Sin palabras. -- Nada incomodo.*"
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
-        "text": "*Despues de un largo rato* ...Alguien que viene aqui despues de clases."
+        "text": "*Despues de un largo rato* ...Alguien que viene aquí después de clases."
     },
     "after2_yuna_choice_pre2": {
         "name": "{name}",
@@ -324,7 +324,7 @@
         "name": "Yo",
         "text": "*Yuna dijo dos frases. -- Para ella, eso es lo mismo que 'gracias'.*",
         "choices": [
-            "Deberia venir todos los dias?",
+            "Deberia venir todos los días?",
             "Es agradable porque es tranquilo"
         ]
     },
@@ -346,7 +346,7 @@
     },
     "after2_yuna_end": {
         "name": "Yo",
-        "text": "*El atardecer se desvanece. Sentados lado a lado con Yuna, escuchando musica. Un momento donde no se necesitan palabras.*"
+        "text": "*El atardecer se desvanece. Sentados lado a lado con Yuna, escuchando música. Un momento donde no se necesitan palabras.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",

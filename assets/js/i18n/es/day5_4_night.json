@@ -45,11 +45,11 @@
     },
     "perfect_seo_3": {
         "name": "Seoyeon",
-        "text": "...Esta es una expresion que no practique."
+        "text": "...Esta es una expresión que no practique."
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
-        "text": "Incluso despues de graduarme, vendre aqui. Estas plantas solo crecen cuando tu estas."
+        "text": "Incluso después de graduarme, vendre aquí. Estas plantas solo crecen cuando tu estás."
     },
     "perfect_seo_5": {
         "name": "Yo",
@@ -69,7 +69,7 @@
     },
     "perfect_yuna_4": {
         "name": "Yo",
-        "text": "*La ultima frase del relato: 'Habia alguien que nunca desaparecio. Gracias a esa persona, yo tambien decidi no desaparecer.'*"
+        "text": "*La última frase del relato: 'Habia alguien que nunca desaparecio. Gracias a esa persona, yo también decidi no desaparecer.'*"
     },
     "perfect_yuna_5": {
         "name": "Yo",
@@ -77,11 +77,11 @@
     },
     "perfect_dain_1": {
         "name": "Yo",
-        "text": "*El gimnasio. Dain lanza su ultimo saque. Mientras se quita las vendas.*"
+        "text": "*El gimnasio. Dain lanza su último saque. Mientras se quita las vendas.*"
     },
     "perfect_dain_2": {
         "name": "Dain",
-        "text": "Este es el ultimo pase. — Pero tambien es un comienzo."
+        "text": "Este es el último pase. — Pero también es un comienzo."
     },
     "perfect_dain_3": {
         "name": "Dain",
@@ -98,15 +98,15 @@
     "perfect_epilogue_1": {},
     "perfect_epilogue_1_seo": {
         "name": "Yo",
-        "text": "*Cada eleccion apuntaba a una persona. No fueron cinco dias — cada dia lo fue todo.*"
+        "text": "*Cada eleccion apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "Yo",
-        "text": "*Cada eleccion apuntaba a una persona. No fueron cinco dias — cada dia lo fue todo.*"
+        "text": "*Cada eleccion apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "Yo",
-        "text": "*Cada eleccion apuntaba a una persona. No fueron cinco dias — cada dia lo fue todo.*"
+        "text": "*Cada eleccion apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
     },
     "perfect_epilogue_2_seo": {
         "name": "Yo",
@@ -150,7 +150,7 @@
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "...Pense que funcionaria. Creo que ambos nos quedamos un paso cortos."
+        "text": "...Pense que funcionaria. Creo que ambos nos quedamos un pasó cortos."
     },
     "bitter_seo_3": {
         "name": "Yo",
@@ -162,7 +162,7 @@
     },
     "bitter_yuna_2": {
         "name": "Yuna",
-        "text": "...A veces pienso en ti. Cuando huelo la biblioteca. Deberia haber dicho mas en ese entonces."
+        "text": "...A veces pienso en ti. Cuando huelo la biblioteca. Deberia haber dicho más en ese entonces."
     },
     "bitter_yuna_3": {
         "name": "Yo",
@@ -186,7 +186,7 @@
     },
     "bitter_epilogue_2": {
         "name": "Yo",
-        "text": "*El registro de cinco dias permanece. No duele. Solo — no fue suficiente. Para ninguno de los dos.*"
+        "text": "*El registro de cinco días permanece. No duele. Solo — no fue suficiente. Para ninguno de los dos.*"
     },
     "bitter_epilogue_3": {
         "name": "Sistema",
@@ -339,7 +339,7 @@
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*Dio un paso hacia mí.*"
+        "text": "*Dio un pasó hacia mí.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",

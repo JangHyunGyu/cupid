@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "Ich",
-        "text": "*Zurueck zuhause. Geduscht und aufs Bett gelegt -- dann stroemen die Messenger-Benachrichtigungen herein.*"
+        "text": "*Zurück zuhause. Geduscht und aufs Bett gelegt -- dann stroemen die Messenger-Benachrichtigungen herein.*"
     },
     "night2_msg_1": {
         "name": "Ich",
@@ -17,11 +17,11 @@
     },
     "night2_msg_4": {
         "name": "Seoyeon",
-        "text": "Danke fuer heute. Wir waren frueher fertig dank dir"
+        "text": "Danke für heute. Wir waren früher fertig dank dir"
     },
     "night2_msg_5": {
         "name": "Seoyeon",
-        "text": "Ich ruf dich vielleicht naechstes Mal wieder, also sei vorbereitet"
+        "text": "Ich ruf dich vielleicht nächstes Mal wieder, also sei vorbereitet"
     },
     "night2_msg_6": {
         "name": "Yuna",
@@ -85,7 +85,7 @@
     },
     "night2_msg_7": {
         "name": "Ich",
-        "text": "*Ich muss allen dreien gleichzeitig antworten. -- Ich weiss nicht, ob das Glueck oder Qual ist.*"
+        "text": "*Ich muss allen dreien gleichzeitig antworten. -- Ich weiss nicht, ob das Glück oder Qual ist.*"
     },
     "night2_choice": {
         "name": "Ich",
@@ -114,7 +114,7 @@
     },
     "night2_reply_dain_5": {
         "name": "Ich",
-        "text": "*Wieder drei Nachrichten am Stueck. Diese Person hoert nie nach einem Satz auf.*"
+        "text": "*Wieder drei Nachrichten am Stück. Diese Person hoert nie nach einem Satz auf.*"
     },
     "night2_reply_seo_1": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "...Schoen zu hoeren"
+        "text": "...Schoen zu hören"
     },
     "night2_reply_yuna_3": {
         "name": "Ich",
@@ -158,11 +158,11 @@
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "Den Grund sag ich dir spaeter"
+        "text": "Den Grund sag ich dir später"
     },
     "night2_reply_yuna_7": {
         "name": "Ich",
-        "text": "*Der dritte Stern? -- Ich oeffne das Fenster und schaue in den Nachthimmel. Sterne sind zu sehen. Welcher der dritte ist, weiss ich nicht, aber. Ein sehr Yuna-typisches Raetsel. Jemand, der nie die Antwort verraet. -- Jemand, der einen dazu bringt, sie finden zu wollen.*"
+        "text": "*Der dritte Stern? -- Ich öffne das Fenster und schaue in den Nachthimmel. Sterne sind zu sehen. Welcher der dritte ist, weiss ich nicht, aber. Ein sehr Yuna-typisches Raetsel. Jemand, der nie die Antwort verraet. -- Jemand, der einen dazu bringt, sie finden zu wollen.*"
     },
     "night2_end_1": {
         "name": "Ich",
@@ -202,7 +202,7 @@
     },
     "night2_end_2": {
         "name": "Ich",
-        "text": "*Der zweite Tag ist vorbei. Am ersten Tag war es Neugier. Ich fragte mich, was fuer Menschen sie sind.*"
+        "text": "*Der zweite Tag ist vorbei. Am ersten Tag war es Neugier. Ich fragte mich, was für Menschen sie sind.*"
     },
     "night2_end_3": {
         "name": "Ich",
@@ -210,7 +210,7 @@
     },
     "night2_end_4": {
         "name": "Ich",
-        "text": "*Zwischen 'im Kopf herumgehen' und 'verliebt sein' ist noch Abstand. -- Aber dieser Abstand fuehlt sich kuerzer an als gestern.*"
+        "text": "*Zwischen 'im Kopf herumgehen' und 'verliebt sein' ist noch Abstand. -- Aber dieser Abstand fühlt sich kuerzer an als gestern.*"
     },
     "night2_seo_freetalk": {
         "name": "Seoyeon",

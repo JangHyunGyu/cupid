@@ -9,7 +9,7 @@
     },
     "lunch2_choice": {
         "name": "Yo",
-        "text": "*Con quien deberia ir?*",
+        "text": "*Con quien debería ir?*",
         "choices": [
             "Seguir la nota de Yuna hacia el anexo de la biblioteca",
             "Seguir a Seoyeon a la azotea",
@@ -18,7 +18,7 @@
     },
     "lunch2_yuna_1": {
         "name": "Yo",
-        "text": "*El anexo de la biblioteca. Un edificio mas antiguo que el principal. Casi no hay estudiantes.*"
+        "text": "*El anexo de la biblioteca. Un edificio más antiguo que el principal. Casi no hay estudiantes.*"
     },
     "lunch2_yuna_2": {
         "name": "Yo",
@@ -42,7 +42,7 @@
     },
     "lunch2_yuna_7": {
         "name": "Yuna",
-        "text": "Parece que te estas llevando bien con la ruidosa. ¿Eso es mas divertido, no?"
+        "text": "Parece que te estás llevando bien con la ruidosa. ¿Eso es más divertido, no?"
     },
     "lunch2_yuna_8": {
         "name": "{name}",
@@ -78,7 +78,7 @@
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
-        "text": "Habia una persona mas aqui."
+        "text": "Habia una persona más aquí."
     },
     "lunch2_yuna_17": {
         "name": "{name}",
@@ -86,15 +86,15 @@
     },
     "lunch2_yuna_choice": {
         "name": "Yo",
-        "text": "*Nada sigue despues de 'habia'. Pasado. -- Deberia preguntar?*",
+        "text": "*Nada sigue después de 'habia'. Pasado. -- Deberia preguntar?*",
         "choices": [
-            "Esa persona, donde esta ahora?",
+            "Esa persona, donde está ahora?",
             "No preguntar y sentarse a su lado"
         ]
     },
     "lunch2_yuna_c1_1": {
         "name": "Yuna",
-        "text": "...Se fue. Hace un ano."
+        "text": "...Se fue. Hace un año."
     },
     "lunch2_yuna_c1_2": {
         "name": "Yo",
@@ -118,7 +118,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "Yo",
-        "text": "*Yuna abre su libro. Una senal de que la conversacion termino.*"
+        "text": "*Yuna abre su libro. Una senal de que la conversación termino.*"
     },
     "lunch2_yuna_c1_8": {
         "name": "Yo",
@@ -170,7 +170,7 @@
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",
-        "text": "...La razon por la que me gusta este lugar."
+        "text": "...La razón por la que me gusta este lugar."
     },
     "lunch2_yuna_c2_7": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "lunch2_yuna_c2_9": {
         "name": "Yo",
-        "text": "*Dos frases. Es un discurso largo para Yuna. -- Y todo esta contenido en esas dos frases.*"
+        "text": "*Dos frases. Es un discurso largo para Yuna. -- Y todo está contenido en esas dos frases.*"
     },
     "lunch2_yuna_end": {
         "name": "Yo",
@@ -190,7 +190,7 @@
     },
     "lunch2_seo_1": {
         "name": "Yo",
-        "text": "*La azotea. El mismo lugar que ayer. Seoyeon esta desplegando su fiambrera.*"
+        "text": "*La azotea. El mismo lugar que ayer. Seoyeon está desplegando su fiambrera.*"
     },
     "lunch2_seo_2": {
         "name": "Seoyeon",
@@ -206,7 +206,7 @@
     },
     "lunch2_seo_5": {
         "name": "{name}",
-        "text": "La brisa tambien esta bien."
+        "text": "La brisa también está bien."
     },
     "lunch2_seo_6": {
         "name": "Seoyeon",
@@ -214,7 +214,7 @@
     },
     "lunch2_seo_7": {
         "name": "Yo",
-        "text": "*Parecia querer escuchar mas -- pero me contuve a proposito.*"
+        "text": "*Parecia querer escuchar más -- pero me contuve a propósito.*"
     },
     "lunch2_seo_8": {
         "name": "Yo",
@@ -258,7 +258,7 @@
     },
     "lunch2_seo_18": {
         "name": "Yo",
-        "text": "*Los angulos de este triangulo se estan afilando. -- Y me siento menos como un vertice y mas como un sacrificio.*"
+        "text": "*Los ángulos de este triángulo se estan afilando. -- Y me siento menos como un vértice y más como un sacrificio.*"
     },
     "lunch2_seo_19": {
         "name": "Yo",
@@ -310,7 +310,7 @@
     },
     "lunch2_seo_end": {
         "name": "Yo",
-        "text": "*La calidez de las yemas de Seoyeon aun persiste en la comisura de mis labios. -- Junto con la expresion atonita de Dain.*"
+        "text": "*La calidez de las yemas de Seoyeon aun persiste en la comisura de mis labios. -- Junto con la expresión atonita de Dain.*"
     },
     "lunch2_seo_end_c1": {
         "name": "Yo",
@@ -342,7 +342,7 @@
     },
     "lunch2_dain_6": {
         "name": "Dain",
-        "text": "¡¿...Esto esta amanado?!"
+        "text": "¡¿...Esto está amanado?!"
     },
     "lunch2_dain_7": {
         "name": "{name}",
@@ -362,7 +362,7 @@
     },
     "lunch2_dain_11": {
         "name": "Dain",
-        "text": "¿Oye, que le pasa a la presidenta?¿ Por que nos mira asi?"
+        "text": "¿Oye, que le pasa a la presidenta?¿ Por que nos mira así?"
     },
     "lunch2_dain_12": {
         "name": "{name}",
@@ -370,7 +370,7 @@
     },
     "lunch2_dain_13": {
         "name": "Dain",
-        "text": "Hmm... ¿eres cercano a la presidenta tambien?"
+        "text": "Hmm... ¿eres cercano a la presidenta también?"
     },
     "lunch2_dain_choice": {
         "name": "Yo",
@@ -383,7 +383,7 @@
     },
     "lunch2_dain_c1_1": {
         "name": "Yo",
-        "text": "*La expresion de Dain se tensa sutilmente. Muerde su soboro y gira la cabeza.*"
+        "text": "*La expresión de Dain se tensa sutilmente. Muerde su soboro y gira la cabeza.*"
     },
     "lunch2_dain_c2_1": {
         "name": "Yo",
@@ -399,7 +399,7 @@
     },
     "lunch2_dain_end": {
         "name": "Yo",
-        "text": "*El crujido del pan de soboro de Dain es inusualmente fuerte. La mirada de Seoyeon, las orejas rojas de Dain -- la hora del almuerzo se complica mas cada dia.*"
+        "text": "*El crujido del pan de soboro de Dain es inusualmente fuerte. La mirada de Seoyeon, las orejas rojas de Dain -- la hora del almuerzo se complica más cada día.*"
     },
     "lunch2_seo_1_check": {
         "name": "{name}",

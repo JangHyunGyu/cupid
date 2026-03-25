@@ -1,11 +1,11 @@
 {
     "morning2_start": {
         "name": "Ich",
-        "text": "*Tag zwei. Die Uniform fuehlt sich etwas bequemer an als gestern. Passe ich mich schnell an, oder gebe ich schnell auf?*"
+        "text": "*Tag zwei. Die Uniform fühlt sich etwas bequemer an als gestern. Passe ich mich schnell an, oder gebe ich schnell auf?*"
     },
     "morning2_start_2": {
         "name": "Ich",
-        "text": "*In dem Moment, als ich die Klassentuer oeffne -- ein Schlag in den Ruecken.*"
+        "text": "*In dem Moment, als ich die Klassentür öffne -- ein Schlag in den Rücken.*"
     },
     "morning2_dain_1": {
         "name": "Dain",
@@ -21,7 +21,7 @@
     },
     "morning2_dain_4": {
         "name": "{name}",
-        "text": "Ist es nicht etwas frueh fuer so viel Energie?"
+        "text": "Ist es nicht etwas früh für so viel Energie?"
     },
     "morning2_dain_5": {
         "name": "Dain",
@@ -29,7 +29,7 @@
     },
     "morning2_dain_6": {
         "name": "Ich",
-        "text": "*Wenn es eine Welt gaebe, in der diese Lautstaerke um 8 Uhr morgens normal waere, waere Dain deren Praesidentin.*"
+        "text": "*Wenn es eine Welt gaebe, in der diese Lautstaerke um 8 Uhr morgens normal wäre, wäre Dain deren Präsidentin.*"
     },
     "morning2_note_1": {
         "name": "Ich",
@@ -57,11 +57,11 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "Die Schuelerratspraesidentin kommt bis ins Klassenzimmer zum Gruessen?"
+        "text": "Die Schülerratspräsidentin kommt bis ins Klassenzimmer zum Grüßen?"
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Ich bin nur vorbeigekommen. -- Hab auch heute einen schoenen Tag."
+        "text": "Ich bin nur vorbeigekommen. -- Hab auch heute einen schönen Tag."
     },
     "morning2_minsu_1": {
         "name": "Ich",
@@ -73,7 +73,7 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Alter, zwei Tage als Neuer und die Schuelerratspraesidentin kommt dich gruessen? Ich bin seit einem Jahr hier und sie guckt mich nicht mal an."
+        "text": "Alter, zwei Tage als Neuer und die Schülerratspräsidentin kommt dich grüßen? Ich bin seit einem Jahr hier und sie guckt mich nicht mal an."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "Ist die Praesidentin auch am Neuen interessiert? Ganz schoen beliebt!"
+        "text": "Ist die Präsidentin auch am Neuen interessiert? Ganz schön beliebt!"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -113,7 +113,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "Ich",
-        "text": "*Seoyeons Hand greift zu meiner Schulter. Sie wischt etwas ab. Natuerlich. Zu natuerlich.*"
+        "text": "*Seoyeons Hand greift zu meiner Schulter. Sie wischt etwas ab. Natürlich. Zu natürlich.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -133,7 +133,7 @@
     },
     "morning2_dain_react_2": {
         "name": "Ich",
-        "text": "*Seoyeon geht weiter, als waere nichts gewesen. Dains Stimme kommt von hinten.*"
+        "text": "*Seoyeon geht weiter, als wäre nichts gewesen. Dains Stimme kommt von hinten.*"
     },
     "morning2_dain_react_3": {
         "name": "Dain",
@@ -153,11 +153,11 @@
     },
     "morning2_haeun_1": {
         "name": "Ich",
-        "text": "*Im Flur, wo Seoyeon verschwunden ist -- ein Maedchen mit einem Schuelerrats-Armband kommt naeher.*"
+        "text": "*Im Flur, wo Seoyeon verschwunden ist -- ein Mädchen mit einem Schülerrats-Armband kommt näher.*"
     },
     "morning2_haeun_2": {
         "name": "Haeun",
-        "text": "Entschuldigung, du bist der neue Schueler, oder? Ich bin Haeun, die Vizepraesidentin des Schuelerrats."
+        "text": "Entschuldigung, du bist der neue Schüler, oder? Ich bin Haeun, die Vizepräsidentin des Schülerrats."
     },
     "morning2_haeun_3": {
         "name": "{name}",
@@ -165,15 +165,15 @@
     },
     "morning2_haeun_4": {
         "name": "Haeun",
-        "text": "Die Praesidentin... also Seoyeon Sunbae scheint sich in letzter Zeit etwas veraendert zu haben."
+        "text": "Die Präsidentin... also Seoyeon Sunbae scheint sich in letzter Zeit etwas verändert zu haben."
     },
     "morning2_haeun_5": {
         "name": "{name}",
-        "text": "Veraendert wie?"
+        "text": "Verändert wie?"
     },
     "morning2_haeun_6": {
         "name": "Haeun",
-        "text": "Normalerweise ist sie nicht so. Auf einen anderen Schueler zuerst zugehen... ich beobachte sie seit einem Jahr und das ist das erste Mal."
+        "text": "Normalerweise ist sie nicht so. Auf einen anderen Schüler zuerst zugehen... ich beobachte sie seit einem Jahr und das ist das erste Mal."
     },
     "morning2_haeun_6b": {
         "name": "Haeun",
