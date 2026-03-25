@@ -1287,6 +1287,21 @@ Object.assign(SCENARIO[5], {
     "hidden_perfect_homeroom_3c": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_smile.png",
+        "next": "hidden_perfect_homeroom_3d"
+    },
+    "hidden_perfect_homeroom_3d": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_smile.png",
+        "next": "hidden_perfect_homeroom_3e"
+    },
+    "hidden_perfect_homeroom_3e": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_perfect_homeroom_3f"
+    },
+    "hidden_perfect_homeroom_3f": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/teacher_shy.png",
         "next": "hidden_perfect_homeroom_4"
     },
     "hidden_perfect_homeroom_4": {
@@ -1334,8 +1349,8 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_perfect_nurse_2"
     },
     "hidden_perfect_nurse_2": {
-        "background": "assets/images/background/nurse_room.jpg",
-        "character": "assets/images/characters/nurse_normal.png",
+        "background": "assets/images/background/nurse_house.png",
+        "character": null,
         "night": true,
         "next": "hidden_perfect_nurse_3"
     },
