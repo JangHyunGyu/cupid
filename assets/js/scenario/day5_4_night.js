@@ -1336,17 +1336,15 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_perfect_homeroom_4f"
     },
     "hidden_perfect_homeroom_4f": {
-        "background": "assets/images/background/cafe.png",
+        "background": "assets/images/background/ending_perfect_teacher.png",
         "character": null,
         "next": "hidden_perfect_homeroom_4g"
     },
     "hidden_perfect_homeroom_4g": {
-        "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/teacher_smile.png",
+        "character": null,
         "next": "hidden_perfect_homeroom_5"
     },
     "hidden_perfect_homeroom_5": {
-        "background": "assets/images/background/ending_perfect_teacher.png",
         "character": null,
         "next": "day5_credits"
     },
