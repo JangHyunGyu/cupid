@@ -655,15 +655,15 @@
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Ms. Kim",
-        "text": "*She picks up a book at the bookstore.* Read this. — Will you be my manuscript's first reader?"
+        "text": "*She stops suddenly at the bookstore.* ...I finished my manuscript. Want to read it?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*I took the manuscript. Turned to the first page. — There's a dedication. 'To the person who taught me the words I couldn't say on graduation day.'*"
+        "text": "*I read it at home. All night. — The way the main character spoke felt familiar. Too familiar.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Ms. Kim",
-        "text": "*She turns away.* ...It's just a novel. Fiction. *Her voice gets smaller.* ...You know it's not, right?"
+        "text": "*Next Thursday. She stirred her coffee longer than usual.* ...How was it?"
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",
