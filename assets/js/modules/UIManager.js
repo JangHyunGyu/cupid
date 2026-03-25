@@ -467,8 +467,64 @@ class UIManager {
         popup.appendChild(value);
         document.body.appendChild(popup);
 
-        // 8초 후 자동 제거 (더 오래 유지)
-        setTimeout(() => popup.remove(), 8000);
+        // 4초 후 자동 제거
+        setTimeout(() => popup.remove(), 4000);
+    }
+
+    /**
+     * 여러 캐릭터 호감도 동시 변화 표시 (좌/우 분산 배치)
+     * @param {Array} changes - [{amount, charKey}, ...]
+     */
+    showAffinityChangeMulti(changes) {
+        if (!changes || changes.length === 0) return;
+
+        // 양수를 먼저, 음수를 나중에 정렬
+        const sorted = [...changes].sort((a, b) => b.amount - a.amount);
+
+        // 캐릭터 이름 매핑
+        const nameMap = {
+            Seoyeon: '서연', Yuna: '유나', Dain: '다인',
+            Teacher: '담임', Nurse: '보건'
+        };
+
+        // 위치 배열: 캐릭터 수에 따라 분산
+        const positions = sorted.length === 2
+            ? ['30%', '70%']
+            : sorted.length === 3
+                ? ['20%', '50%', '80%']
+                : ['15%', '38%', '62%', '85%'];
+
+        // 양수 효과음 1번만
+        if (window.soundManager) {
+            const hasPositive = sorted.some(c => c.amount > 0);
+            const sfx = hasPositive ? 'assets/audio/sfx/affinity_up.mp3' : 'assets/audio/sfx/affinity_down.mp3';
+            soundManager.playSfx(sfx);
+        }
+
+        sorted.forEach((change, i) => {
+            const popup = document.createElement('div');
+            popup.className = `affinity-popup affinity-popup-multi ${change.amount > 0 ? 'positive' : 'negative'}`;
+            popup.style.left = positions[i] ?? '50%';
+
+            const label = document.createElement('span');
+            label.className = 'affinity-char-label';
+            label.textContent = nameMap[change.charKey] ?? change.charKey;
+
+            const emoji = document.createElement('span');
+            emoji.className = 'emoji';
+            emoji.textContent = change.amount > 0 ? '💕' : '💔';
+
+            const value = document.createElement('span');
+            value.className = 'value';
+            value.textContent = change.amount > 0 ? `+${change.amount}` : `${change.amount}`;
+
+            popup.appendChild(label);
+            popup.appendChild(emoji);
+            popup.appendChild(value);
+            document.body.appendChild(popup);
+
+            setTimeout(() => popup.remove(), 4000);
+        });
     }
 
     /**
