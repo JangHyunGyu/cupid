@@ -317,9 +317,17 @@
         "name": "Yo",
         "text": "*Pero mirando atrás — creo que ya estaba decidido desde el momento en que nuestras miradas se cruzaron por primera vez. Solo tardé cinco días en admitirlo.*"
     },
-    "true_epilogue_4": {
+    "true_epilogue_4_seo": {
         "name": "Yo",
-        "text": "*Mi rodilla no se ha curado. Mi familia no es más feliz. Las personas que se fueron no han vuelto. — Pero al menos ya no tengo que practicar llorar a solas. Ya no.*"
+        "text": "*Su familia no ha mejorado. Las llamadas de su madre siguen siendo frías, y las sonrisas ensayadas no han parado. — Pero ahora tiene a alguien a quien mostrar su rostro sin ensayar. Ya no.*"
+    },
+    "true_epilogue_4_yuna": {
+        "name": "Yo",
+        "text": "*La persona que se fue no ha vuelto. El número del senior sigue sin aparecer, y el asiento del rincón de la biblioteca sigue vacío. — Pero ahora tiene a alguien con quien hablar con su voz, no solo con notas. Ya no.*"
+    },
+    "true_epilogue_4_dain": {
+        "name": "Yo",
+        "text": "*Su rodilla no se ha curado. Sigue vendándose cada mañana, y la nota de alarma aún tiene dos signos de exclamación. — Pero ahora tiene a alguien que escucha cuando sus frases terminan en punto. Ya no.*"
     },
     "true_epilogue_7": {
         "name": "Sistema",

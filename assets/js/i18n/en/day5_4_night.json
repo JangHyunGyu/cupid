@@ -317,9 +317,17 @@
         "name": "Me",
         "text": "*But looking back — I think it was already decided the moment our eyes first met. It just took five days to admit it.*"
     },
-    "true_epilogue_4": {
+    "true_epilogue_4_seo": {
         "name": "Me",
-        "text": "*The knee hasn't healed. The family isn't any happier. The people who left haven't come back. — But at least I don't have to practice crying alone anymore. Not anymore.*"
+        "text": "*Her family hasn't gotten better. Her mother's calls are still cold, and the rehearsed smiles haven't stopped. — But now there's someone she can show her unrehearsed face to. Not anymore.*"
+    },
+    "true_epilogue_4_yuna": {
+        "name": "Me",
+        "text": "*The person who left hasn't come back. The senior's number is still gone, and the corner seat in the library is still empty. — But now there's someone she can speak to with her voice, not just notes. Not anymore.*"
+    },
+    "true_epilogue_4_dain": {
+        "name": "Me",
+        "text": "*The knee hasn't healed. She still wraps the bandage every morning, and the alarm memo still has two exclamation marks. — But now there's someone who'll listen when her sentences end with a period. Not anymore.*"
     },
     "true_epilogue_7": {
         "name": "System",
