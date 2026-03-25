@@ -691,11 +691,26 @@
         "name": "{name}",
         "text": "*Sentados uno al lado del otro en el sofá del salón. El sol se pone tras la ventana. En vez de una tirita, son los dedos los que se tocan.*"
     },
-    "hidden_perfect_nurse_4": {
-        "name": "School Nurse",
-        "text": "*Se recuesta contra mí.* ...Ya no necesito excusas. Ni paciente, ni estudiante. Solo — alguien con quien quiero estar.\n\n─── School Nurse PERFECT END ───"
+    "hidden_perfect_nurse_3b": {
+        "name": "Enfermera",
+        "text": "*Se recuesta contra mí.* ...Ya no necesito excusas. Ni paciente, ni estudiante."
     },
-    "hidden_perfect_nurse_5": {},
+    "hidden_perfect_nurse_4": {
+        "name": "Enfermera",
+        "text": "*Su mano sube y agarra mi corbata. No es juguetona. Sus ojos son serios.* ...Esta noche no te dejo ir."
+    },
+    "hidden_perfect_nurse_4b": {
+        "name": "{name}",
+        "text": "*Mañana. Luz filtrándose entre las cortinas. Respiración a mi lado. — La persona que tardaba tres minutos en poner una tirita ahora duerme sosteniendo mi mano.*"
+    },
+    "hidden_perfect_nurse_5": {
+        "name": "Enfermera",
+        "text": "*Abre los ojos. Sonríe.* ...¿Te duele algo? ¿Quieres que te revise? *— No es broma. Esta vez no.*"
+    },
+    "hidden_perfect_nurse_5b": {
+        "name": "{name}",
+        "text": "*Solo — alguien con quien quiero estar. Aquí.\n\n─── Enfermera PERFECT END ───*"
+    },
     "hidden_true_homeroom_1": {
         "name": "Yo",
         "text": "*Día de graduación. — Ha pasado el tiempo. El uniforme ya no es rígido.*"
