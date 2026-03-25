@@ -619,7 +619,7 @@
     },
     "hidden_perfect_homeroom_2c": {
         "name": "담임선생님",
-        "text": "*잠깐 멈춘다.* ...잘 지내. 연락은 — 하지 마."
+        "text": "*잠깐 멈춘다. 뭔가 더 말하려다 입을 닫는다.* ...잘 지내."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
@@ -635,31 +635,47 @@
     },
     "hidden_perfect_homeroom_3d": {
         "name": "{name}",
-        "text": "잘 지내셨어요? ...학교 그만두셨다고 들었는데."
+        "text": "잘 지내셨어요? 학교 그만두셨다고 들었는데."
     },
     "hidden_perfect_homeroom_3e": {
         "name": "담임선생님",
         "text": "*피식 웃는다.* 학교 그만두고 글만 쓰고 있어. 카페 알바도 하고. — 넌?"
     },
     "hidden_perfect_homeroom_3f": {
+        "name": "담임선생님",
+        "text": "...다음에 또 볼 수 있어? 여기 매주 목요일에 와."
+    },
+    "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*담임이 — 아니, 이 사람이 커피를 홀짝인다. 3년 전 교탁 뒤에 서 있던 사람과 같은 사람인데, 분위기가 다르다. 어깨에서 힘이 빠져 있다. 좋은 의미로.*"
+        "text": "*그 '다음'이 다다음이 되고, 또 그다음이 됐다. 목요일마다 같은 자리. 카페 직원이 '커플석이에요?' 물었을 때 둘 다 대답을 못 했다.*"
     },
     "hidden_perfect_homeroom_4": {
-        "name": "담임선생님",
-        "text": "원고 완성했어. 출판사에 넣었어. — 첫 페이지에 이름이 있어. 첫 번째 독자의 이름."
+        "name": "{name}",
+        "text": "*어느 목요일. 카페 대신 거리를 걸었다. 나란히. 그림자가 겹치는 걸 둘 다 모른 척했다.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "담임선생님",
-        "text": "*커피잔 너머로 눈이 웃는다.* 이제 선생님이 아니니까 — 이런 말 해도 되지?"
+        "text": "*서점에서 책 한 권을 집어 든다.* 이거 읽어봐. — 내 원고 첫 번째 독자가 돼줄래?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*가방에서 꽃다발을 꺼냈다. 3년 동안 준비한 건 아니다. 카페 올 때 꽃집이 보여서. — 근데 몸이 먼저 움직였다.*"
+        "text": "*원고를 받았다. 첫 페이지를 넘겼다. — 헌사가 있다. '졸업식 날, 하지 못한 말을 가르쳐준 사람에게.'*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "담임선생님",
-        "text": "*꽃다발을 받아 들고, 한참을 내려다본다.* ...교육적 관심이 아니야. 이건.\n\n─── 담임선생님 PERFECT END ───"
+        "text": "*고개를 돌린다.* ...그냥 소설이야. 픽션. *목소리가 작아진다.* ...아닌 거 알지?"
+    },
+    "hidden_perfect_homeroom_4e": {
+        "name": "{name}",
+        "text": "*다음 목요일. 카페 앞에서 기다리지 않았다. — 꽃집 앞에서 기다렸다.*"
+    },
+    "hidden_perfect_homeroom_4f": {
+        "name": "{name}",
+        "text": "*꽃다발을 건넸다.* 이거 교육적 관심 아닙니다. 제 쪽은요."
+    },
+    "hidden_perfect_homeroom_4g": {
+        "name": "담임선생님",
+        "text": "*꽃다발을 받아 들고, 한참을 내려다본다. 손이 떨린다. — 웃는다.* ...나도.\n\n─── 담임선생님 PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_true_homeroom_1": {
