@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "Ich",
-        "text": "*Zurück zuhause. Geduscht und aufs Bett gelegt -- dann stroemen die Messenger-Benachrichtigungen herein.*"
+        "text": "*Zurück zuhause. Geduscht und aufs Bett gelegt -- dann strömen die Messenger-Benachrichtigungen herein.*"
     },
     "night2_msg_1": {
         "name": "Ich",
@@ -85,7 +85,7 @@
     },
     "night2_msg_7": {
         "name": "Ich",
-        "text": "*Ich muss allen dreien gleichzeitig antworten. -- Ich weiss nicht, ob das Glück oder Qual ist.*"
+        "text": "*Ich muss allen dreien gleichzeitig antworten. -- Ich weiß nicht, ob das Glück oder Qual ist.*"
     },
     "night2_choice": {
         "name": "Ich",
@@ -114,7 +114,7 @@
     },
     "night2_reply_dain_5": {
         "name": "Ich",
-        "text": "*Wieder drei Nachrichten am Stück. Diese Person hoert nie nach einem Satz auf.*"
+        "text": "*Wieder drei Nachrichten am Stück. Diese Person hört nie nach einem Satz auf.*"
     },
     "night2_reply_seo_1": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "night2_reply_seo_5": {
         "name": "Ich",
-        "text": "*Sie sagte 'liegt bei dir', aber der Ton deutet an, dass etwas passiert, wenn ich nicht auftauche.*"
+        "text": "*'Liegt bei dir', sagte sie. Aber es fühlt sich nicht freiwillig an.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "...Schoen zu hören"
+        "text": "...Schön zu hören"
     },
     "night2_reply_yuna_3": {
         "name": "Ich",
@@ -162,7 +162,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "Ich",
-        "text": "*Der dritte Stern? -- Ich öffne das Fenster und schaue in den Nachthimmel. Sterne sind zu sehen. Welcher der dritte ist, weiss ich nicht, aber. Ein sehr Yuna-typisches Raetsel. Jemand, der nie die Antwort verraet. -- Jemand, der einen dazu bringt, sie finden zu wollen.*"
+        "text": "*Der dritte Stern? -- Ich öffne das Fenster und schaue in den Nachthimmel. Sterne sind zu sehen. Welcher der dritte ist, weiß ich nicht, aber. Ein sehr Yuna-typisches Rätsel. Jemand, der nie die Antwort verrät. -- Jemand, der einen dazu bringt, sie finden zu wollen.*"
     },
     "night2_end_1": {
         "name": "Ich",

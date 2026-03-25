@@ -13,7 +13,7 @@
     },
     "morning2_dain_2": {
         "name": "{name}",
-        "text": "...Du haettest mir fast das Rueckgrat gebrochen."
+        "text": "...Du hättest mir fast das Rückgrat gebrochen."
     },
     "morning2_dain_3": {
         "name": "Dain",
@@ -29,11 +29,11 @@
     },
     "morning2_dain_6": {
         "name": "Ich",
-        "text": "*Wenn es eine Welt gaebe, in der diese Lautstaerke um 8 Uhr morgens normal wäre, wäre Dain deren Präsidentin.*"
+        "text": "*Wenn es eine Welt gäbe, in der diese Lautstärke um 8 Uhr morgens normal wäre, wäre Dain deren Präsidentin.*"
     },
     "morning2_note_1": {
         "name": "Ich",
-        "text": "*Ich will mich gerade setzen, als -- mir ein gefalteter Zettel auf meinem Tisch auffaellt.*"
+        "text": "*Ich will mich gerade setzen, als -- mir ein gefalteter Zettel auf meinem Tisch auffällt.*"
     },
     "morning2_note_2": {
         "name": "Ich",
@@ -137,7 +137,7 @@
     },
     "morning2_dain_react_3": {
         "name": "Dain",
-        "text": "Hey! Was war das gerade?! Hat sie deine Schulter beruehrt?!"
+        "text": "Hey! Was war das gerade?! Hat sie deine Schulter berührt?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
