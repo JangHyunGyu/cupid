@@ -20,20 +20,22 @@ Object.assign(SCENARIO[5], {
             {
                 "next": "hidden_perfect_homeroom_check",
                 "condition": "homeroom_day5",
-                "excludeCondition": "day3_has_multiple_dates"
+                "excludeCondition": "day3_has_multiple_dates || day4_confession_accepted"
             },
             {
                 "next": "hidden_good_homeroom_1",
-                "condition": "homeroom_day5"
+                "condition": "homeroom_day5",
+                "excludeCondition": "day4_confession_accepted"
             },
             {
                 "next": "hidden_perfect_nurse_check",
                 "condition": "nurse_day5",
-                "excludeCondition": "day3_has_multiple_dates"
+                "excludeCondition": "day3_has_multiple_dates || day4_confession_accepted"
             },
             {
                 "next": "hidden_good_nurse_1",
-                "condition": "nurse_day5"
+                "condition": "nurse_day5",
+                "excludeCondition": "day4_confession_accepted"
             },
             {
                 "next": "ending_affinity_check",
@@ -137,7 +139,7 @@ Object.assign(SCENARIO[5], {
         "night": true,
         "affinityChar": "Seoyeon",
         "affinityBranches": [
-            { "minAffinity": 40, "next": "day5_ending_good" }
+            { "minAffinity": 50, "next": "day5_ending_good" }
         ],
         "next": "day5_ending_confess_fail"
     },
@@ -147,7 +149,7 @@ Object.assign(SCENARIO[5], {
         "night": true,
         "affinityChar": "Yuna",
         "affinityBranches": [
-            { "minAffinity": 40, "next": "day5_ending_good" }
+            { "minAffinity": 50, "next": "day5_ending_good" }
         ],
         "next": "day5_ending_confess_fail"
     },
@@ -157,7 +159,7 @@ Object.assign(SCENARIO[5], {
         "night": true,
         "affinityChar": "Dain",
         "affinityBranches": [
-            { "minAffinity": 40, "next": "day5_ending_good" }
+            { "minAffinity": 50, "next": "day5_ending_good" }
         ],
         "next": "day5_ending_confess_fail"
     },

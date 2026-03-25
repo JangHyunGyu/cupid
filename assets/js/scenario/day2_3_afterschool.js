@@ -685,7 +685,6 @@ Object.assign(SCENARIO[2], {
     "hidden_nurse_d2_1": {
         "background": "assets/images/background/nurse_room.jpg",
         "character": "assets/images/characters/nurse_normal.png",
-        "condition": "nurse_day1",
         "next": "hidden_nurse_d2_2"
     },
     "hidden_nurse_d2_2": {

@@ -290,7 +290,20 @@ Object.assign(SCENARIO[1], {
     "after_end": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "after_hidden_homeroom_1"
+        "choices": [
+            {
+                "next": "after_hidden_homeroom_1",
+                "setFlags": ["homeroom_day1_choice"]
+            },
+            {
+                "next": "after_hidden_nurse_intro",
+                "setFlags": ["nurse_day1_choice"]
+            },
+            {
+                "next": "night_start",
+                "setFlags": ["skip_hidden_day1"]
+            }
+        ]
     },
 
     // =========================================================================
@@ -338,7 +351,7 @@ Object.assign(SCENARIO[1], {
     "after_homeroom_ok_2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "after_hidden_nurse_intro"
+        "next": "night_start"
     },
     "after_homeroom_honest_1": {
         "background": "assets/images/background/school_hallway.png",
@@ -419,7 +432,7 @@ Object.assign(SCENARIO[1], {
         "type": "free_talk",
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "after_hidden_nurse_intro"
+        "next": "night_start"
     },
 
     // =========================================================================

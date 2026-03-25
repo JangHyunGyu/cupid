@@ -53,7 +53,6 @@ Object.assign(SCENARIO[3], {
     "night3_faithful_msg_seo_1": {
         "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
-        "condition": "seoyeon_day3_event",
         "next": "night3_faithful_msg_seo_2"
     },
     "night3_faithful_msg_seo_2": {
@@ -69,7 +68,6 @@ Object.assign(SCENARIO[3], {
     "night3_faithful_msg_yuna_1": {
         "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
-        "condition": "yuna_day3_event",
         "next": "night3_faithful_msg_yuna_2"
     },
     "night3_faithful_msg_yuna_2": {
@@ -80,7 +78,6 @@ Object.assign(SCENARIO[3], {
     "night3_faithful_msg_dain_1": {
         "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
-        "condition": "dain_day3_event",
         "next": "night3_faithful_msg_dain_2"
     },
     "night3_faithful_msg_dain_2": {
@@ -162,7 +159,6 @@ Object.assign(SCENARIO[3], {
     "night3_cheat_msg_1": {
         "character": null,
         "night": true,
-        "condition": "day3_has_multiple_dates",
         "next": "night3_cheat_msg_2"
     },
     "night3_cheat_msg_2": {

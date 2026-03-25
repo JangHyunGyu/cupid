@@ -22,6 +22,7 @@ Object.assign(SCENARIO[5], {
     "morning5_mood_check": {
         "background": "assets/images/background/room_school.png",
         "character": null,
+        "affinityChar": "selectByHighestAffinity",
         "affinityBranches": [
             { "minAffinity": 80, "next": "morning5_mood_high" },
             { "minAffinity": 50, "next": "morning5_mood_mid" },

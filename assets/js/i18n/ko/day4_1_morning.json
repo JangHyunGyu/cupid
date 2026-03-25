@@ -200,5 +200,79 @@
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
         "text": "*보건실로 돌아왔다.*"
+    },
+    "hidden_nurse_d4_morning_1": {
+        "name": "{name}",
+        "text": "*주말 아침. 습관처럼 보건실로 향한다. — 습관이 된 건 언제부터였지.*"
+    },
+    "hidden_nurse_d4_morning_2": {
+        "name": "{name}",
+        "text": "*보건실 문을 열었다. 보건선생님이 의자에 앉아 있다. 흰 가운 차림. — 근데 평소와 다르다. 장난기가 없다.*"
+    },
+    "hidden_nurse_d4_morning_3": {
+        "name": "보건선생님",
+        "text": "어, 왔어."
+    },
+    "hidden_nurse_d4_morning_4": {
+        "name": "{name}",
+        "text": "*'어, 왔어'가 평소보다 반 톤 낮다. — 이 사람의 감정은 톤으로 읽어야 한다.*"
+    },
+    "hidden_nurse_d4_morning_5": {
+        "name": "{name}",
+        "text": "마지막 상담이에요?"
+    },
+    "hidden_nurse_d4_morning_6": {
+        "name": "보건선생님",
+        "text": "상담이라... *의자를 돌리며* 맞아. 마지막 상담."
+    },
+    "hidden_nurse_d4_morning_7": {
+        "name": "{name}",
+        "text": "*보건선생님이 책상 위 서류를 정리하는 척하지만 — 같은 종이를 세 번째 넘기고 있다.*"
+    },
+    "hidden_nurse_d4_morning_8": {
+        "name": "보건선생님",
+        "text": "이런 거 물어봐도 돼?"
+    },
+    "hidden_nurse_d4_morning_9": {
+        "name": "{name}",
+        "text": "뭔데요?"
+    },
+    "hidden_nurse_d4_morning_10": {
+        "name": "{name}",
+        "text": "*보건선생님이 안경을 만진다. 안경 너머로 보이는 눈이 생각보다 크다. 장난기 뒤에 숨어 있던 눈.*"
+    },
+    "hidden_nurse_d4_morning_11": {
+        "name": "보건선생님",
+        "text": "...졸업하고도 보건실에 올 거야?"
+    },
+    "hidden_nurse_d4_morning_choice": {
+        "name": "{name}",
+        "text": "*질문이 아니다. — 대답을 이미 두려워하고 있는 얼굴이다. 눈을 마주친다. 평소 장난기가 사라진 진지한 얼굴로. — 이 사람이 이렇게 무방비한 건 처음이다.*",
+        "choices": [
+            "올게요.",
+            "..."
+        ]
+    },
+    "hidden_nurse_d4_morning_choice_a": {
+        "name": "{name}",
+        "text": "올게요."
+    },
+    "hidden_nurse_d4_morning_choice_b": {
+        "name": "{name}",
+        "text": "*침묵.*"
+    },
+    "hidden_nurse_d4_morning_12": {
+        "name": "보건선생님",
+        "text": "...진짜로?"
+    },
+    "hidden_nurse_d4_morning_13": {
+        "name": "{name}",
+        "text": "*'진짜로'. — 이 사람의 진심 확인 단어. 오늘은 내가 먼저 들었다. 잠깐의 침묵. 보건선생님의 안경 너머로 눈이 촉촉해 보인다. — 렌즈가 뿌옇다. 김이 서린 건지, 눈이 젖은 건지. 보건선생님이 다시 밝은 톤으로, 하지만 목소리가 떨리며 말한다. 장난기가 돌아왔다. — 근데 웃는 눈 아래로 뭔가 흐른 자국이 있다.*"
+    },
+    "hidden_nurse_d4_morning_freetalk": {
+        "name": "보건선생님",
+        "text": "*보건선생님과 보건실에서 대화 중.*",
+        "context": "Day 4. 졸업 후에도 올 것인지 묻는 이별의 순간. 서로의 진심이 드러나는 장면. 톤: 감정이 깊어진 대화. 장난기 뒤의 진실. 이름을 부르는 것의 의미.",
+        "personality": "보건선생님은 조심스럽고 솔직하다. 이름으로 부르고 싶지만 조심스러운 입장. 학생의 다짐에 눈물이 난다."
     }
 }
