@@ -7,26 +7,6 @@
         "name": "Moi",
         "text": "*Des messages de trois personnes.*"
     },
-    "night2_msg_2": {
-        "name": "Dain",
-        "text": "He !! Le tteokbokki d'aujourd'hui etait trop bon !!"
-    },
-    "night2_msg_3": {
-        "name": "Dain",
-        "text": "Demain on refait un pari !! Avec un autre jeu !!"
-    },
-    "night2_msg_4": {
-        "name": "Seoyeon",
-        "text": "Merci pour aujourd'hui. On a fini tot grace a toi"
-    },
-    "night2_msg_5": {
-        "name": "Seoyeon",
-        "text": "Je risque de te rappeler la prochaine fois, alors sois pret"
-    },
-    "night2_msg_6": {
-        "name": "Yuna",
-        "text": "...T'as fini le livre ?"
-    },
     "night2_msg_dain_specific": {
         "name": "Dain",
         "text": "Hé !! Le tteokbokki d'aujourd'hui était trop bon !!"

@@ -7,26 +7,6 @@
         "name": "Me",
         "text": "*Messages from three people.*"
     },
-    "night2_msg_2": {
-        "name": "Dain",
-        "text": "Hey!! The tteokbokki today was so good!!"
-    },
-    "night2_msg_3": {
-        "name": "Dain",
-        "text": "Let's do another bet tomorrow!! Different game!!"
-    },
-    "night2_msg_4": {
-        "name": "Seoyeon",
-        "text": "Thanks for today. We finished early thanks to you"
-    },
-    "night2_msg_5": {
-        "name": "Seoyeon",
-        "text": "I might call you again next time, so be prepared"
-    },
-    "night2_msg_6": {
-        "name": "Yuna",
-        "text": "...Have you finished the book?"
-    },
     "night2_msg_dain_specific": {
         "name": "Dain",
         "text": "Hey!! The tteokbokki today was amazing!!"
