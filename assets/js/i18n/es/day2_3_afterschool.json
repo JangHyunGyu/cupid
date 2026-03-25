@@ -1,7 +1,7 @@
 {
     "after2_start": {
         "name": "Yo",
-        "text": "*Despues de clases. Dos notificaciones en mi telefono.*\n\nDain: Ven al gimnasio!! Hoy va en serio!!\nSeoyeon: Puedes venir a la sala del consejo? Nos falta gente.\n\n*Nada de Yuna. -- Asi es Yuna. Pero al recoger mi mochila, la nota de la manana cae del bolsillo. Las palabras 'anexo de la biblioteca' me llaman la atencion.*"
+        "text": "*Despues de clases. Dos notificaciones en mi telefono.*\n\nDain: Ven al gimnasio!! ¿Hoy va en serio!!\nSeoyeon: Puedes venir a la sala del consejo? Nos falta gente.\n\n*Nada de Yuna. -- Asi es Yuna. Pero al recoger mi mochila, la nota de la manana cae del bolsillo. Las palabras 'anexo de la biblioteca' me llaman la atencion.*"
     },
     "after2_choice": {
         "name": "Yo",
@@ -18,7 +18,7 @@
     },
     "after2_dain_2": {
         "name": "Dain",
-        "text": "Viniste?! Llegas tarde!!"
+        "text": "¿Viniste?! Llegas tarde!!"
     },
     "after2_dain_3": {
         "name": "{name}",
@@ -38,7 +38,7 @@
     },
     "after2_dain_7": {
         "name": "{name}",
-        "text": "Tteokbokki de la nada?"
+        "text": "¿Tteokbokki de la nada?"
     },
     "after2_dain_8": {
         "name": "Dain",
@@ -50,7 +50,7 @@
     },
     "after2_dain_10": {
         "name": "Dain",
-        "text": "*Con los ojos bien abiertos* Eh? Iba a ir suave, pero parece que no puedo.\n\n*Dain baja su postura. Sus ojos han cambiado.*\n\nAhora va en serio!"
+        "text": "*¿Con los ojos bien abiertos* Eh? Iba a ir suave, pero parece que no puedo.\n\n*Dain baja su postura. Sus ojos han cambiado.*\n\nAhora va en serio!"
     },
     "after2_dain_11": {
         "name": "Yo",
@@ -58,7 +58,7 @@
     },
     "after2_dain_12": {
         "name": "Dain",
-        "text": "Aaaargh!! Perdi!! -- Pero eres bueno?! Dijiste que no hacias deporte?!"
+        "text": "Aaaargh!! Perdi!! ¿-- Pero eres bueno?! ¿Dijiste que no hacias deporte?!"
     },
     "after2_dain_13": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*Genuinamente sorprendida* Que?! Me enganaste?!"
+        "text": "*¿Genuinamente sorprendida* Que?! ¿Me enganaste?!"
     },
     "after2_dain_15": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "after2_dain_end_2": {
         "name": "Dain",
-        "text": "Oye, de verdad sabes de deportes, no?"
+        "text": "¿Oye, de verdad sabes de deportes, no?"
     },
     "after2_dain_end_2b": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "Estos van por fecha, esos por club. -- Se te da bien organizar?"
+        "text": "Estos van por fecha, esos por club. ¿-- Se te da bien organizar?"
     },
     "after2_seo_8a2": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "after2_seo_8b3": {
         "name": "{name}",
-        "text": "Eso es un cumplido?"
+        "text": "¿Eso es un cumplido?"
     },
     "after2_seo_8b4": {
         "name": "Seoyeon",
@@ -242,7 +242,7 @@
     },
     "after2_seo_stay_3": {
         "name": "{name}",
-        "text": "Incluso la presidenta del consejo descansa?"
+        "text": "¿Incluso la presidenta del consejo descansa?"
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
@@ -278,7 +278,7 @@
     },
     "after2_yuna_5": {
         "name": "Yuna",
-        "text": "Tengo que llamarte para que vengas?"
+        "text": "¿Tengo que llamarte para que vengas?"
     },
     "after2_yuna_6": {
         "name": "Yo",
