@@ -317,9 +317,17 @@
         "name": "Ich",
         "text": "*Aber rückblickend — ich glaube, es war schon in dem Moment entschieden, als sich unsere Blicke zum ersten Mal trafen. Ich brauchte nur fünf Tage, um es zuzugeben.*"
     },
-    "true_epilogue_4": {
+    "true_epilogue_4_seo": {
         "name": "Ich",
-        "text": "*Mein Knie ist nicht geheilt. Meine Familie ist nicht glücklicher. Die Menschen, die gegangen sind, sind nicht zurückgekommen. — Aber zumindest muss ich nicht mehr üben, allein zu weinen. Nicht mehr.*"
+        "text": "*Ihre Familie ist nicht besser geworden. Die Anrufe ihrer Mutter sind immer noch kalt, und das einstudierte Lächeln hat nicht aufgehört. — Aber jetzt gibt es jemanden, dem sie ihr ungeübtes Gesicht zeigen kann. Nicht mehr.*"
+    },
+    "true_epilogue_4_yuna": {
+        "name": "Ich",
+        "text": "*Die Person, die gegangen ist, ist nicht zurückgekommen. Die Nummer des Seniors fehlt immer noch, und der Platz in der Bibliotheksecke ist immer noch leer. — Aber jetzt gibt es jemanden, mit dem sie mit ihrer Stimme sprechen kann, nicht nur mit Notizen. Nicht mehr.*"
+    },
+    "true_epilogue_4_dain": {
+        "name": "Ich",
+        "text": "*Ihr Knie ist nicht geheilt. Sie wickelt immer noch jeden Morgen den Verband, und die Alarm-Notiz hat immer noch zwei Ausrufezeichen. — Aber jetzt gibt es jemanden, der zuhört, wenn ihre Sätze mit einem Punkt enden. Nicht mehr.*"
     },
     "true_epilogue_7": {
         "name": "System",

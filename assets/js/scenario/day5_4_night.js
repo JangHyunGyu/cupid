@@ -407,7 +407,7 @@ Object.assign(SCENARIO[5], {
         "next": "bitter_yuna_2"
     },
     "bitter_yuna_2": {
-        "background": "assets/images/background/room_my.png",
+        "background": "assets/images/background/library.png",
         "character": "assets/images/characters/yuna_sad.png",
         "night": true,
         "next": "bitter_yuna_3"
@@ -694,6 +694,25 @@ Object.assign(SCENARIO[5], {
         "next": "true_epilogue_4"
     },
     "true_epilogue_4": {
+        "character": null,
+        "night": true,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "true_epilogue_4_seo" },
+            { "condition": "route_yuna", "next": "true_epilogue_4_yuna" },
+            { "next": "true_epilogue_4_dain" }
+        ]
+    },
+    "true_epilogue_4_seo": {
+        "character": null,
+        "night": true,
+        "next": "true_epilogue_7"
+    },
+    "true_epilogue_4_yuna": {
+        "character": null,
+        "night": true,
+        "next": "true_epilogue_7"
+    },
+    "true_epilogue_4_dain": {
         "character": null,
         "night": true,
         "next": "true_epilogue_7"
