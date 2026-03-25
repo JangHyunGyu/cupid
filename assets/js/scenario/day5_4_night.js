@@ -178,13 +178,13 @@ Object.assign(SCENARIO[5], {
     },
     "perfect_seo_2": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "character": "assets/images/characters/seyoun_cry.png",
         "night": true,
         "next": "perfect_seo_3"
     },
     "perfect_seo_3": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "character": "assets/images/characters/seyoun_cry.png",
         "night": true,
         "next": "perfect_seo_4"
     },
