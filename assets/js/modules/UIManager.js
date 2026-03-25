@@ -498,7 +498,7 @@ class UIManager {
         if (window.soundManager) {
             const hasPositive = sorted.some(c => c.amount > 0);
             const sfx = hasPositive ? 'assets/audio/sfx/affinity_up.mp3' : 'assets/audio/sfx/affinity_down.mp3';
-            soundManager.playSfx(sfx);
+            window.soundManager.playSfx(sfx);
         }
 
         sorted.forEach((change, i) => {

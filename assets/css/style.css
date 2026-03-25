@@ -1223,6 +1223,38 @@ html[lang="de"] .modal-content p {
     gap: 0.5rem;
 }
 
+/* 멀티 호감도 팝업 (여러 캐릭터 동시 변화) */
+.affinity-popup.affinity-popup-multi {
+    flex-direction: column;
+    font-size: 2rem;
+    top: 35%;
+}
+
+.affinity-popup-multi .affinity-char-label {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.9;
+    letter-spacing: 0.05em;
+}
+
+.affinity-popup-multi .emoji {
+    font-size: 2.5rem;
+}
+
+.affinity-popup-multi .value {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 480px) {
+    .affinity-popup.affinity-popup-multi {
+        font-size: 1.4rem;
+        top: 30%;
+    }
+    .affinity-popup-multi .emoji { font-size: 1.8rem; }
+    .affinity-popup-multi .value { font-size: 1.3rem; }
+    .affinity-popup-multi .affinity-char-label { font-size: 0.8rem; }
+}
+
 /* 긍정적 변화 (+) */
 .affinity-popup.positive {
     color: #ff6b9d;
