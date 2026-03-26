@@ -246,6 +246,7 @@ Object.assign(SCENARIO[1], {
         "type": "free_talk",
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_end_1"
     }
@@ -254,6 +255,7 @@ Object.assign(SCENARIO[1], {
         "type": "free_talk",
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_end_1"
     },
@@ -302,6 +304,7 @@ Object.assign(SCENARIO[1], {
         "type": "free_talk",
         "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_end_1"
     }
