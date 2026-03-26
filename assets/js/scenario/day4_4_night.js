@@ -65,37 +65,37 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "wall_seo_pre_high_1": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_seo_pre_high_2"
     },
     "wall_seo_pre_high_2": {
-        "character": "assets/images/characters/seyoun_sad.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_sad.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_seo_to_park"
     },
     "wall_seo_pre_low_1": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_seo_pre_low_1b"
     },
     "wall_seo_pre_low_1b": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_seo_pre_low_2"
     },
     "wall_seo_pre_low_2": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_seo_2"
     },
     "wall_seo_2": {
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_seo_to_park"
@@ -456,37 +456,37 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "wall_dain_pre_high_1": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_dain_pre_high_2"
     },
     "wall_dain_pre_high_2": {
-        "character": "assets/images/characters/dain_sad.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_sad.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_dain_3"
     },
     "wall_dain_pre_low_1": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_dain_pre_low_2"
     },
     "wall_dain_pre_low_2": {
-        "character": "assets/images/characters/dain_laugh.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_laugh.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_dain_2"
     },
     "wall_dain_2": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_dain_3"
     },
     "wall_dain_3": {
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_dain_4"
@@ -887,25 +887,25 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "wall_yuna_pre_high_1": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_yuna_pre_high_2"
     },
     "wall_yuna_pre_high_2": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_yuna_3"
     },
     "wall_yuna_pre_low_1": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_yuna_pre_low_2"
     },
     "wall_yuna_pre_low_2": {
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_my.png",
         "night": true,
         "next": "wall_yuna_2"

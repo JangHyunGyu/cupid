@@ -487,12 +487,48 @@ class UIManager {
             Teacher: '담임', Nurse: '보건'
         };
 
-        // 위치 배열: 캐릭터 수에 따라 분산
-        const positions = sorted.length === 2
-            ? ['30%', '70%']
-            : sorted.length === 3
-                ? ['20%', '50%', '80%']
-                : ['15%', '38%', '62%', '85%'];
+        // 캐릭터 키 → 이미지 파일명 매핑 (화면 표시 여부 판별용)
+        const charFileMap = {
+            Seoyeon: 'seyoun', Yuna: 'yuna', Dain: 'dain',
+            Teacher: 'teacher', Nurse: 'nurse'
+        };
+
+        // 현재 화면에 보이는 캐릭터 슬롯 확인
+        const slots = [
+            { el: document.getElementById('char-left'), pos: '20%' },
+            { el: document.getElementById('char-center'), pos: '50%' },
+            { el: document.getElementById('char-right'), pos: '75%' }
+        ];
+        const visibleChars = {};
+        for (const slot of slots) {
+            const img = slot.el?.querySelector('img');
+            if (img && img.src) {
+                const src = img.src.toLowerCase();
+                for (const [key, file] of Object.entries(charFileMap)) {
+                    if (src.includes(file)) visibleChars[key] = slot.pos;
+                }
+            }
+        }
+
+        // 위치 계산: 화면에 보이는 캐릭터는 해당 슬롯 위치, 안 보이는 캐릭터는 나머지에 분산
+        const onScreen = [];
+        const offScreen = [];
+        for (const change of sorted) {
+            if (visibleChars[change.charKey]) {
+                onScreen.push({ ...change, left: visibleChars[change.charKey] });
+            } else {
+                offScreen.push(change);
+            }
+        }
+
+        // 화면에 없는 캐릭터들의 분산 위치 (화면 캐릭터 위치 피해서)
+        const usedPositions = new Set(onScreen.map(c => c.left));
+        const sidePositions = ['25%', '75%', '15%', '85%'].filter(p => !usedPositions.has(p));
+        offScreen.forEach((change, i) => {
+            change.left = sidePositions[i] ?? (i % 2 === 0 ? '25%' : '75%');
+        });
+
+        const allChanges = [...onScreen, ...offScreen];
 
         // 양수 효과음 1번만
         if (window.soundManager) {
@@ -501,10 +537,10 @@ class UIManager {
             window.soundManager.playSfx(sfx);
         }
 
-        sorted.forEach((change, i) => {
+        allChanges.forEach((change) => {
             const popup = document.createElement('div');
             popup.className = `affinity-popup affinity-popup-multi ${change.amount > 0 ? 'positive' : 'negative'}`;
-            popup.style.left = positions[i] ?? '50%';
+            popup.style.left = change.left;
 
             const label = document.createElement('span');
             label.className = 'affinity-char-label';

@@ -270,7 +270,7 @@ Object.assign(SCENARIO[4], {
     },
     "hidden_nurse_d4_meal_walk": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "next": "hidden_nurse_d4_meal_1"
     },
     "hidden_nurse_d4_meal_1": {
