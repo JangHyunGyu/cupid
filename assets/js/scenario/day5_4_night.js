@@ -1365,7 +1365,7 @@ Object.assign(SCENARIO[5], {
     // NURSE PERFECT / TRUE LOVE — Affinity Check
     // =========================================================================
     "hidden_perfect_nurse_check": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": null,
         "night": true,
         "affinityChar": "Nurse",
@@ -1381,7 +1381,7 @@ Object.assign(SCENARIO[5], {
     // NURSE PERFECT END (Hidden Route — Affinity 80+)
     // =========================================================================
     "hidden_perfect_nurse_1": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": null,
         "night": true,
         "fade": true,
@@ -1596,7 +1596,7 @@ Object.assign(SCENARIO[5], {
     // NURSE GOOD END (Hidden Route)
     // =========================================================================
     "hidden_good_nurse_1": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "fade": true,
@@ -1604,13 +1604,13 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_good_nurse_2"
     },
     "hidden_good_nurse_2": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "hidden_good_nurse_3"
     },
     "hidden_good_nurse_3": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": null,
         "night": true,
         "next": "hidden_good_nurse_4"

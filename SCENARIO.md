@@ -6181,7 +6181,7 @@ ending_start → branches (순서대로 첫 매칭):
 - 체육관: `gym.png`
 - 도서관/별관: `library_old.png`
 - 매점: `store.png`
-- 보건실: `nurse_room.jpg` (주의: jpg)
+- 보건실: `nurse_room.png` (주의: jpg)
 - 교무실/학생회실: `teacher_office.png`
 - 주인공 방: `room_my.png`
 - 카페: `cafe.png`

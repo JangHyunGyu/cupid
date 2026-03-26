@@ -18,7 +18,7 @@
 | library_old.png | 도서관 | 유나 점심, Day5 투어 |
 | yuna_hideout.png | 유나 비밀공간(별관) | 유나 방과후, 고백, Wall |
 | teacher_office.png | 교무실/학생회실 | 서연 방과후, 담임 히든 |
-| nurse_room.jpg | 보건실 | 보건선생님 히든 루트 전체 |
+| nurse_room.png | 보건실 | 보건선생님 히든 루트 전체 |
 | gym.png | 체육관 | 다인 방과후, 고백, Wall |
 | playground.png | 놀이터/운동장 | (현재 미사용) |
 | street.png | 거리/떡볶이집 | 다인 Day2 방과후, Day4 데이트 |
@@ -200,10 +200,10 @@
 ### 히든: 보건선생님 첫 만남
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
 |--------|------|--------|-----------|
-| after_nurse_enter_1 ~ 12 | nurse_room.jpg | nurse_normal | 보건실 방문, 파스, "만져보고 싶었어" |
-| after_nurse_freetalk | nurse_room.jpg | nurse_normal | **프리토킹** |
+| after_nurse_enter_1 ~ 12 | nurse_room.png | nurse_normal | 보건실 방문, 파스, "만져보고 싶었어" |
+| after_nurse_freetalk | nurse_room.png | nurse_normal | **프리토킹** |
 
-**배경 근거**: 보건실 안에서의 대화 → nurse_room.jpg
+**배경 근거**: 보건실 안에서의 대화 → nurse_room.png
 
 ---
 
@@ -355,7 +355,7 @@
 |----|------|--------|-----------|
 | 일반 | student_room.png | 없음 | 주말, 데이트 준비 |
 | 담임 히든 | cafe.png | teacher_normal/smile | 카페에서 원고 전달 |
-| 보건 히든 | nurse_room.jpg | nurse_normal | 건강검진 도움 |
+| 보건 히든 | nurse_room.png | nurse_normal | 건강검진 도움 |
 
 ---
 
@@ -433,7 +433,7 @@
 |----|------|--------|-----------|
 | morning5_start ~ end | room_school.png | 없음/각 캐릭터 | 마지막 날 행사, 세 방향 신호 |
 | 담임 히든 | room_school.png | teacher_normal | 7년의 원고 전달 |
-| 보건 히든 | nurse_room.jpg | nurse_normal | 밴드에 "카페에서 만나자" |
+| 보건 히든 | nurse_room.png | nurse_normal | 밴드에 "카페에서 만나자" |
 
 ---
 
