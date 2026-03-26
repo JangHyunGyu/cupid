@@ -23,7 +23,7 @@ const DELAY_MS = 12000; // 요청 간 12초 대기 (rate limit 방지)
 // ──────────────────────────────────────────
 // negativePrompt가 API에서 제거됨 → 프롬프트 본문 끝에 금지 조건 직접 삽입
 const NEG_COMMON = ''; // 레거시 참조용 (API에서 negativePrompt 미지원)
-const AVOID_SUFFIX = '. The image must NOT contain any text, letters, words, numbers, watermarks, signatures, logos, UI elements, subtitles, film strips, film negatives, white borders, letterboxing, top/bottom bars, frame borders, or any overlay. No people, no characters, no human figures.';
+const AVOID_SUFFIX = '. 절대 금지: 텍스트, 글자, 숫자, 워터마크, 로고, 자막, 필름 스트립, 필름 네거티브, 흰색 테두리, 위아래 검은 바, 레터박스, 프레임 테두리, 사람, 인물. The image must NOT contain any text, letters, words, numbers, watermarks, logos, subtitles, film strips, film negatives, white borders, black bars, letterboxing, top/bottom bars, frame borders, or any overlay. No people, no characters, no human figures. Pure background illustration only.';
 
 const backgrounds = [
   // ── 10. 학교 내부 ──
