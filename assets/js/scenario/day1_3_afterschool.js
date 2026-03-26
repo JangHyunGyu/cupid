@@ -445,12 +445,12 @@ Object.assign(SCENARIO[1], {
     },
     "after_hidden_nurse_intro_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "next": "after_hidden_nurse_choice"
     },
     "after_hidden_nurse_choice": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "choices": [
             {
                 "next": "after_nurse_enter_1",
@@ -464,7 +464,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_skip": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "next": "night_start"
     },
     "after_nurse_enter_1": {
