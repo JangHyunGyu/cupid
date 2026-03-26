@@ -21,7 +21,9 @@ const DELAY_MS = 12000; // 요청 간 12초 대기 (rate limit 방지)
 // ──────────────────────────────────────────
 // 배경 프롬프트 정의 (PROMPTS_READY.md 기준)
 // ──────────────────────────────────────────
-const NEG_COMMON = '저퀄리티, 흐릿한, 3D 렌더링, 실사 사진, 인물 포함, 캐릭터 포함, 사람 포함, 워터마크, 서명, 텍스트, 글자, 로고, 필름 네거티브, 필름 스트립, 흰색 테두리, 흰색 여백, 위아래 여백, 필름 프레임, 상하 흰색 바, letterbox, film strip, film negative, white border, text overlay, subtitle';
+// negativePrompt가 API에서 제거됨 → 프롬프트 본문 끝에 금지 조건 직접 삽입
+const NEG_COMMON = ''; // 레거시 참조용 (API에서 negativePrompt 미지원)
+const AVOID_SUFFIX = '. The image must NOT contain any text, letters, words, numbers, watermarks, signatures, logos, UI elements, subtitles, film strips, film negatives, white borders, letterboxing, top/bottom bars, frame borders, or any overlay. No people, no characters, no human figures.';
 
 const backgrounds = [
   // ── 10. 학교 내부 ──
@@ -233,7 +235,7 @@ async function generateImage(bg, index, total) {
     const modelLabel = model.includes('ultra') ? 'Ultra' : 'Standard';
     try {
       console.log(`  → ${modelLabel} 생성 중...`);
-      const imgBuf = await callImagenAPI(model, bg.prompt, bg.negative);
+      const imgBuf = await callImagenAPI(model, bg.prompt + AVOID_SUFFIX);
       fs.writeFileSync(outPath, imgBuf);
       const kb = (imgBuf.length / 1024).toFixed(0);
       console.log(`  ✓ 저장 완료: ${outPath} (${kb}KB)`);
