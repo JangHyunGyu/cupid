@@ -1,326 +1,326 @@
 {
-    "start": {
-        "name": "Me",
-        "text": "*April. Cherry blossoms scatter in the breeze.*"
-    },
-    "start_2": {
-        "name": "Me",
-        "text": "*My uniform is still stiff. There's a faint smell of starch. Even though I ironed it yesterday, the creases have a mind of their own. Already off to a bad start with this uniform.*"
-    },
-    "start_3": {
-        "name": "Me",
-        "text": "*Starting today, I'm a student at this school. A transfer. First time.*"
-    },
-    "start_3b": {
-        "name": "{name}",
-        "text": "*My hand fidgets with the edge of my phone inside my pocket. I hate to admit it, but it's a habit that only comes out when I'm nervous.*"
-    },
-    "start_4": {
-        "name": "Me",
-        "text": "*My phone buzzes in my pocket. The old school group chat. I see a name flash on the screen — and shove the phone back in. Not yet.*"
-    },
-    "start_5": {
-        "name": "Me",
-        "text": "*A cherry blossom petal brushes my nose. — I almost sneezed. If this were a drama, this is the part where some pretty girl bumps into me.*"
-    },
-    "start_6": {
-        "name": "Me",
-        "text": "*Reality is just a sneeze.*"
-    },
-    "name_input_scene": {
-        "name": "System",
-        "text": "Transfer student, what is your name?"
-    },
-    "gate_1": {
-        "name": "Me",
-        "text": "*I'm standing in front of an unfamiliar school gate. It's a pretty big school. Clean buildings, spacious grounds.*"
-    },
-    "gate_2": {
-        "name": "Me",
-        "text": "*Students pass through the gate in small groups. My uniform is the only one blindingly crisp. Like a billboard — 'I'm new here.'*"
-    },
-    "gate_3": {
-        "name": "Me",
-        "text": "*A girl is standing by the gate. She casually flips her long black hair — behind her glasses, her steps are relaxed. Not a hint of hurry.*"
-    },
-    "seoyeon_meet_1": {
-        "name": "Seoyeon",
-        "text": "Transfer student? You're {name}, right?"
-    },
-    "seoyeon_meet_2": {
-        "name": "Me",
-        "text": "*Her voice is calm. Not cold, but measured — like she already knows how this conversation ends.*"
-    },
-    "seoyeon_meet_3": {
-        "name": "{name}",
-        "text": "That's me. How'd you know?"
-    },
-    "seoyeon_meet_4": {
-        "name": "Seoyeon",
-        "text": "I'm the student council president. Guiding new students is my job."
-    },
-    "seoyeon_meet_5": {
-        "name": "Seoyeon",
-        "text": "Follow me. I'll show you around."
-    },
-    "seoyeon_meet_6": {
-        "name": "{name}",
-        "text": "The president herself? I'm honored."
-    },
-    "seoyeon_meet_7": {
-        "name": "Seoyeon",
-        "text": "Whether you're honored or not — that's for me to decide."
-    },
-    "seoyeon_meet_8": {
-        "name": "Me",
-        "text": "*She smirks. Just the corner of her lips lifting. Whether it's calculated or just who she is — I can't tell yet.*"
-    },
-    "seoyeon_meet_9": {
-        "name": "Me",
-        "text": "*Seoyeon walks toward the gate, beckoning with a wave.*"
-    },
-    "seoyeon_choice": {
-        "name": "Me",
-        "text": "*What do I say to that?*",
-        "choices": [
-            "Don't tell me you came out early because you're interested in me?",
-            "How much is the guide fee?"
-        ]
-    },
-    "choice_flirt_1": {
-        "name": "Me",
-        "text": "*Seoyeon stops walking and turns around. Not surprised — more amused.*"
-    },
-    "choice_flirt_2": {
-        "name": "Seoyeon",
-        "text": "Wow. First day and you're already not backing down. I'll remember your name."
-    },
-    "choice_flirt_3": {
-        "name": "{name}",
-        "text": "A point system?"
-    },
-    "choice_flirt_4": {
-        "name": "Seoyeon",
-        "text": "You're the first person at this school to talk back to me."
-    },
-    "choice_flirt_5": {
-        "name": "{name}",
-        "text": "I'm flattered."
-    },
-    "choice_flirt_6": {
-        "name": "Seoyeon",
-        "text": "You don't know yet if it's flattery or disaster."
-    },
-    "choice_flirt_7": {
-        "name": "Me",
-        "text": "*She's smiling. She seems genuinely entertained. A student council president with this kind of energy on day one.*"
-    },
-    "choice_joke_1": {
-        "name": "Seoyeon",
-        "text": "It's free. — But the interest builds up later."
-    },
-    "choice_joke_2": {
-        "name": "{name}",
-        "text": "That's one scary student council president."
-    },
-    "choice_joke_3": {
-        "name": "Seoyeon",
-        "text": "At least it won't be boring."
-    },
-    "hallway_1": {
-        "name": "Me",
-        "text": "*Seoyeon guides me through the hallway. Passing students greet her. She acknowledges each one with a nod.*"
-    },
-    "hallway_2": {
-        "name": "Me",
-        "text": "*Popular or feared — probably both.*"
-    },
-    "hallway_3": {
-        "name": "Seoyeon",
-        "text": "Third-year building is here, library's over there. Snack bar is in the basement."
-    },
-    "hallway_4": {
-        "name": "Me",
-        "text": "*Seoyeon pulls out a key from her pocket and gives it a little shake.*"
-    },
-    "hallway_5": {
-        "name": "Seoyeon",
-        "text": "Being student council president means there are a few doors I can open."
-    },
-    "hallway_6": {
-        "name": "{name}",
-        "text": "You got a secret hideout or something?"
-    },
-    "hallway_7": {
-        "name": "Seoyeon",
-        "text": "...If you're curious, follow me at lunch."
-    },
-    "hallway_8": {
-        "name": "Me",
-        "text": "*Suddenly I have lunch plans. — I never even said yes.*"
-    },
-    "hallway_9": {
-        "name": "Me",
-        "text": "*We arrive in front of the classroom.*"
-    },
-    "hallway_10": {
-        "name": "Seoyeon",
-        "text": "Here it is. Go on in."
-    },
-    "hallway_11": {
-        "name": "{name}",
-        "text": "Will you guide me at lunch too?"
-    },
-    "hallway_12": {
-        "name": "Seoyeon",
-        "text": "That depends on how well you do."
-    },
-    "hallway_13": {
-        "name": "Me",
-        "text": "*Seoyeon turns and gives a light wave. She doesn't look back.*"
-    },
-    "hallway_14": {
-        "name": "Me",
-        "text": "*Her posture is straight. Perfectly straight. — Like she's practiced it.*"
-    },
-    "classroom_1": {
-        "name": "Me",
-        "text": "*I open the classroom door. Eyes pour onto me.*"
-    },
-    "classroom_2": {
-        "name": "Me",
-        "text": "*I expected it, but the weight of 30 stares is still heavy.*"
-    },
-    "classroom_3": {
-        "name": "Homeroom Teacher",
-        "text": "Everyone, we have a transfer student joining our class today. Go ahead and introduce yourself."
-    },
-    "classroom_4": {
-        "name": "{name}",
-        "text": "I'm {name}. Nice to meet you all."
-    },
-    "classroom_5": {
-        "name": "Me",
-        "text": "*Short and clean. No point in dragging it out.*"
-    },
-    "classroom_6": {
-        "name": "Me",
-        "text": "*A whistle from one side of the room.*"
-    },
-    "classroom_dain_1": {
-        "name": "Dain",
-        "text": "Oh! A boy transfer student! Finally."
-    },
-    "classroom_dain_2": {
-        "name": "Me",
-        "text": "*Brown bob cut, volleyball jersey still on. A voice brimming with energy. She's half-standing from her seat. The kid next to her is pulling her down, but it's no use.*"
-    },
-    "classroom_dain_3": {
-        "name": "Homeroom Teacher",
-        "text": "Dain, please quiet down... And stop wearing your jersey in class."
-    },
-    "classroom_dain_4": {
-        "name": "Dain",
-        "text": "Aw, teach! Changing out of my jersey is such a hassle, what can I do? Anyway, welcome, new kid!"
-    },
-    "classroom_dain_5": {
-        "name": "Me",
-        "text": "*She has no volume control. But her face is so genuinely happy that you can't dislike her.*"
-    },
-    "classroom_yuna_1": {
-        "name": "Me",
-        "text": "*I shift my gaze and spot a girl in the far back by the window, resting her chin on her hand, staring outside. She seems uninterested in my introduction.*"
-    },
-    "classroom_yuna_2": {
-        "name": "Me",
-        "text": "*Silver-white hair. Red eyes, half-closed and drowsy. Tattoos cover her arms. — She doesn't even glance this way. As if a transfer student is nothing special.*"
-    },
-    "classroom_yuna_3": {
-        "name": "Me",
-        "text": "*The students around her don't look in Yuna's direction. Deliberately. As if no one's sitting there at all.*"
-    },
-    "classroom_yuna_4": {
-        "name": "Me",
-        "text": "*Someone in the front row whispers. '...Don't talk to her, she's scary.' — Close enough for Yuna to hear. But her expression doesn't change. She's used to it.*"
-    },
-    "classroom_seat_1": {
-        "name": "Me",
-        "text": "*The homeroom teacher points to an empty seat.*"
-    },
-    "classroom_seat_2": {
-        "name": "Me",
-        "text": "*It's next to Dain. Saved — or doomed — I'm not sure which, but at least it won't be quiet.*"
-    },
-    "classroom_minsu_1": {
-        "name": "Me",
-        "text": "*As I go to sit down — the boy in the seat ahead turns around.*"
-    },
-    "classroom_minsu_2": {
-        "name": "Minsu",
-        "text": "Hey, transfer kid. Welcome. — And a word of advice."
-    },
-    "classroom_minsu_3": {
-        "name": "{name}",
-        "text": "About what?"
-    },
-    "classroom_minsu_4": {
-        "name": "Minsu",
-        "text": "Your stamina."
-    },
-    "classroom_dain_talk_1": {
-        "name": "Me",
-        "text": "*Good to know there's at least one sensible person here. — His name tag says 'Minsu.'*"
-    },
-    "classroom_dain_talk_2": {
-        "name": "Me",
-        "text": "*The moment I sit down, Dain leans in. Zero concept of personal space.*"
-    },
-    "classroom_dain_talk_3": {
-        "name": "Dain",
-        "text": "Hey, {name}! Do you like sports?!"
-    },
-    "classroom_dain_talk_4": {
-        "name": "{name}",
-        "text": "Out of nowhere?"
-    },
-    "classroom_dain_talk_5": {
-        "name": "Dain",
-        "text": "Just asking! I need someone to hit the gym with after school! Someone to toss balls for me!"
-    },
-    "classroom_dain_talk_6": {
-        "name": "{name}",
-        "text": "Am I a ball machine?"
-    },
-    "classroom_dain_talk_7": {
-        "name": "Dain",
-        "text": "Hahaha, you're probably better than a ball machine! Probably!"
-    },
-    "classroom_dain_talk_8": {
-        "name": "Me",
-        "text": "*She said 'probably.' Meaning I might be better than a ball machine. My position is precarious.*"
-    },
-    "classroom_yuna_note_1": {
-        "name": "Me",
-        "text": "*A folded note lands on my desk. — I look back and the girl with the silver-white hair by the window is staring outside again. Despite her tattoo-covered arms — the handwriting on the note is neat.*"
-    },
-    "classroom_yuna_note_2": {
-        "name": "Me",
-        "text": "*I unfold the note.*"
-    },
-    "classroom_yuna_note_3": {
-        "name": "Me",
-        "text": "*'Rough spot you got stuck in. — Yuna'*"
-    },
-    "classroom_yuna_note_4": {
-        "name": "Me",
-        "text": "*Neat handwriting. And — the message is oddly comforting.*"
-    },
-    "classroom_yuna_note_5": {
-        "name": "Me",
-        "text": "*I glance toward Yuna. She's still looking out the window. But I think the tip of her ear just moved.*"
-    },
-    "classroom_yuna_note_6": {
-        "name": "Me",
-        "text": "*Pretending not to care, or genuinely not caring. — Interesting.*"
-    }
+  "start": {
+    "name": "Me",
+    "text": "*April. Cherry blossoms scatter in the breeze.*"
+  },
+  "start_2": {
+    "name": "Me",
+    "text": "*My uniform is still stiff. There's a faint smell of starch. Even though I ironed it yesterday, the creases have a mind of their own. Already off to a bad start with this uniform.*"
+  },
+  "start_3": {
+    "name": "Me",
+    "text": "*Starting today, I'm a student at this school. A transfer. First time.*"
+  },
+  "start_3b": {
+    "name": "{name}",
+    "text": "*My hand fidgets with the edge of my phone inside my pocket. I hate to admit it, but it's a habit that only comes out when I'm nervous.*"
+  },
+  "start_4": {
+    "name": "Me",
+    "text": "*My phone buzzes in my pocket. The old school group chat. I see a name flash on the screen — and shove the phone back in. Not yet.*"
+  },
+  "start_5": {
+    "name": "Me",
+    "text": "*A cherry blossom petal brushes my nose. — I almost sneezed. If this were a drama, this is the part where some pretty girl bumps into me.*"
+  },
+  "start_6": {
+    "name": "Me",
+    "text": "*Reality is just a sneeze.*"
+  },
+  "name_input_scene": {
+    "name": "System",
+    "text": "Transfer student, what is your name?"
+  },
+  "gate_1": {
+    "name": "Me",
+    "text": "*I'm standing in front of an unfamiliar school gate. It's a pretty big school. Clean buildings, spacious grounds.*"
+  },
+  "gate_2": {
+    "name": "Me",
+    "text": "*Students pass through the gate in small groups. My uniform is the only one blindingly crisp. Like a billboard — 'I'm new here.'*"
+  },
+  "gate_3": {
+    "name": "Me",
+    "text": "*A girl is standing by the gate. She casually flips her long black hair — behind her glasses, her steps are relaxed. Not a hint of hurry.*"
+  },
+  "seoyeon_meet_1": {
+    "name": "Seoyeon",
+    "text": "Transfer student? You're {name}, right?"
+  },
+  "seoyeon_meet_2": {
+    "name": "Me",
+    "text": "*Her voice is calm. Not cold, but measured — like she already knows how this conversation ends.*"
+  },
+  "seoyeon_meet_3": {
+    "name": "{name}",
+    "text": "That's me. How'd you know?"
+  },
+  "seoyeon_meet_4": {
+    "name": "Seoyeon",
+    "text": "I'm the student council president. Guiding new students is my job."
+  },
+  "seoyeon_meet_5": {
+    "name": "Seoyeon",
+    "text": "Follow me. I'll show you around."
+  },
+  "seoyeon_meet_6": {
+    "name": "{name}",
+    "text": "The president herself? I'm honored."
+  },
+  "seoyeon_meet_7": {
+    "name": "Seoyeon",
+    "text": "Whether you're honored or not — that's for me to decide."
+  },
+  "seoyeon_meet_8": {
+    "name": "Me",
+    "text": "*She smirks. Just the corner of her lips lifting. Whether it's calculated or just who she is — I can't tell yet.*"
+  },
+  "seoyeon_meet_9": {
+    "name": "Me",
+    "text": "*Seoyeon walks toward the gate, beckoning with a wave.*"
+  },
+  "seoyeon_choice": {
+    "name": "Me",
+    "text": "*What do I say to that?*",
+    "choices": [
+      "Don't tell me you came out early because you're interested in me?",
+      "How much is the guide fee?"
+    ]
+  },
+  "choice_flirt_1": {
+    "name": "Me",
+    "text": "*Seoyeon stops walking and turns around. Not surprised — more amused.*"
+  },
+  "choice_flirt_2": {
+    "name": "Seoyeon",
+    "text": "Wow. This is a first — someone like you on day one. Interest +1."
+  },
+  "choice_flirt_3": {
+    "name": "{name}",
+    "text": "A point system?"
+  },
+  "choice_flirt_4": {
+    "name": "Seoyeon",
+    "text": "Must be the transfer student thing — you don't know how to read the room. That's fun."
+  },
+  "choice_flirt_5": {
+    "name": "{name}",
+    "text": "I'm flattered."
+  },
+  "choice_flirt_6": {
+    "name": "Seoyeon",
+    "text": "You don't know yet if it's flattery or disaster."
+  },
+  "choice_flirt_7": {
+    "name": "Me",
+    "text": "*She's smiling. She seems genuinely entertained. A student council president with this kind of energy on day one.*"
+  },
+  "choice_joke_1": {
+    "name": "Seoyeon",
+    "text": "It's free. — But the interest builds up later."
+  },
+  "choice_joke_2": {
+    "name": "{name}",
+    "text": "That's one scary student council president."
+  },
+  "choice_joke_3": {
+    "name": "Seoyeon",
+    "text": "At least it won't be boring."
+  },
+  "hallway_1": {
+    "name": "Me",
+    "text": "*Seoyeon guides me through the hallway. Passing students greet her. She acknowledges each one with a nod.*"
+  },
+  "hallway_2": {
+    "name": "Me",
+    "text": "*Popular or feared — probably both.*"
+  },
+  "hallway_3": {
+    "name": "Seoyeon",
+    "text": "Third-year building is here, library's over there. Snack bar is in the basement."
+  },
+  "hallway_4": {
+    "name": "Me",
+    "text": "*Seoyeon pulls out a key from her pocket and gives it a little shake.*"
+  },
+  "hallway_5": {
+    "name": "Seoyeon",
+    "text": "The rooftop is usually locked. Student council president privilege."
+  },
+  "hallway_6": {
+    "name": "{name}",
+    "text": "You got a secret hideout or something?"
+  },
+  "hallway_7": {
+    "name": "Seoyeon",
+    "text": "...If you're curious, follow me at lunch."
+  },
+  "hallway_8": {
+    "name": "Me",
+    "text": "*Suddenly I have lunch plans. — I never even said yes.*"
+  },
+  "hallway_9": {
+    "name": "Me",
+    "text": "*We arrive in front of the classroom.*"
+  },
+  "hallway_10": {
+    "name": "Seoyeon",
+    "text": "Here it is. Go on in."
+  },
+  "hallway_11": {
+    "name": "{name}",
+    "text": "Will you guide me at lunch too?"
+  },
+  "hallway_12": {
+    "name": "Seoyeon",
+    "text": "That depends on how well you do."
+  },
+  "hallway_13": {
+    "name": "Me",
+    "text": "*Seoyeon turns and gives a light wave. She doesn't look back.*"
+  },
+  "hallway_14": {
+    "name": "Me",
+    "text": "*Her posture is straight. Perfectly straight. — Like she's practiced it.*"
+  },
+  "classroom_1": {
+    "name": "Me",
+    "text": "*I open the classroom door. Eyes pour onto me.*"
+  },
+  "classroom_2": {
+    "name": "Me",
+    "text": "*I expected it, but the weight of 30 stares is still heavy.*"
+  },
+  "classroom_3": {
+    "name": "Homeroom Teacher",
+    "text": "Everyone, we have a transfer student joining our class today. Go ahead and introduce yourself."
+  },
+  "classroom_4": {
+    "name": "{name}",
+    "text": "I'm {name}. Nice to meet you all."
+  },
+  "classroom_5": {
+    "name": "Me",
+    "text": "*Short and clean. No point in dragging it out.*"
+  },
+  "classroom_6": {
+    "name": "Me",
+    "text": "*A whistle from one side of the room.*"
+  },
+  "classroom_dain_1": {
+    "name": "Dain",
+    "text": "Oh! A boy transfer student! Finally."
+  },
+  "classroom_dain_2": {
+    "name": "Me",
+    "text": "*Brown bob cut, volleyball jersey still on. A voice brimming with energy. She's half-standing from her seat. The kid next to her is pulling her down, but it's no use.*"
+  },
+  "classroom_dain_3": {
+    "name": "Homeroom Teacher",
+    "text": "Dain, please quiet down... And stop wearing your jersey in class."
+  },
+  "classroom_dain_4": {
+    "name": "Dain",
+    "text": "Ugh teach, I don't wanna change. Anyway, welcome transfer student!"
+  },
+  "classroom_dain_5": {
+    "name": "Me",
+    "text": "*She has no volume control. But her face is so genuinely happy that you can't dislike her.*"
+  },
+  "classroom_yuna_1": {
+    "name": "Me",
+    "text": "*I shift my gaze and spot a girl in the far back by the window, resting her chin on her hand, staring outside. She seems uninterested in my introduction.*"
+  },
+  "classroom_yuna_2": {
+    "name": "Me",
+    "text": "*Silver-white hair. Red eyes, half-closed and drowsy. Tattoos cover her arms. — She doesn't even glance this way. As if a transfer student is nothing special.*"
+  },
+  "classroom_yuna_3": {
+    "name": "Me",
+    "text": "*The students around her don't look in Yuna's direction. Deliberately. As if no one's sitting there at all.*"
+  },
+  "classroom_yuna_4": {
+    "name": "Me",
+    "text": "*Someone in the front row whispers. '...Don't talk to her, she's scary.' — Close enough for Yuna to hear. But her expression doesn't change. She's used to it.*"
+  },
+  "classroom_seat_1": {
+    "name": "Me",
+    "text": "*The homeroom teacher points to an empty seat.*"
+  },
+  "classroom_seat_2": {
+    "name": "Me",
+    "text": "*It's next to Dain. Saved — or doomed — I'm not sure which, but at least it won't be quiet.*"
+  },
+  "classroom_minsu_1": {
+    "name": "Me",
+    "text": "*As I go to sit down — the boy in the seat ahead turns around.*"
+  },
+  "classroom_minsu_2": {
+    "name": "Minsu",
+    "text": "Hey, transfer kid. Welcome. — And a word of advice."
+  },
+  "classroom_minsu_3": {
+    "name": "{name}",
+    "text": "About what?"
+  },
+  "classroom_minsu_4": {
+    "name": "Minsu",
+    "text": "Your stamina."
+  },
+  "classroom_dain_talk_1": {
+    "name": "Me",
+    "text": "*Good to know there's at least one sensible person here. — His name tag says 'Minsu.'*"
+  },
+  "classroom_dain_talk_2": {
+    "name": "Me",
+    "text": "*The moment I sit down, Dain leans in. Zero concept of personal space.*"
+  },
+  "classroom_dain_talk_3": {
+    "name": "Dain",
+    "text": "Hey, {name}! Do you like sports?!"
+  },
+  "classroom_dain_talk_4": {
+    "name": "{name}",
+    "text": "Out of nowhere?"
+  },
+  "classroom_dain_talk_5": {
+    "name": "Dain",
+    "text": "Just asking! I need someone to hit the gym with after school! Someone to toss balls for me!"
+  },
+  "classroom_dain_talk_6": {
+    "name": "{name}",
+    "text": "Am I a ball machine?"
+  },
+  "classroom_dain_talk_7": {
+    "name": "Dain",
+    "text": "Hahaha, you're probably better than a ball machine! Probably!"
+  },
+  "classroom_dain_talk_8": {
+    "name": "Me",
+    "text": "*She said 'probably.' Meaning I might be better than a ball machine. My position is precarious.*"
+  },
+  "classroom_yuna_note_1": {
+    "name": "Me",
+    "text": "*A folded note lands on my desk. — I look back and the girl with the silver-white hair by the window is staring outside again. Despite her tattoo-covered arms — the handwriting on the note is neat.*"
+  },
+  "classroom_yuna_note_2": {
+    "name": "Me",
+    "text": "*I unfold the note.*"
+  },
+  "classroom_yuna_note_3": {
+    "name": "Me",
+    "text": "*'Rough spot you got stuck in. — Yuna'*"
+  },
+  "classroom_yuna_note_4": {
+    "name": "Me",
+    "text": "*Neat handwriting. And — the message is oddly comforting.*"
+  },
+  "classroom_yuna_note_5": {
+    "name": "Me",
+    "text": "*I glance toward Yuna. She's still looking out the window. But I think the tip of her ear just moved.*"
+  },
+  "classroom_yuna_note_6": {
+    "name": "Me",
+    "text": "*Pretending not to care, or genuinely not caring. — Interesting.*"
+  }
 }

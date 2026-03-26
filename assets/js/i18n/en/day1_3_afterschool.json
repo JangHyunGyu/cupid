@@ -244,7 +244,7 @@
     },
     "after_nurse_enter_4": {
         "name": "School Nurse",
-        "text": "Transfer student? In the nurse's office on day one — you must be drained. What's bothering you?"
+        "text": "You're the transfer student, right? Already in the nurse's office on day one. Must be stressed out~"
     },
     "after_nurse_enter_5": {
         "name": "Me",
