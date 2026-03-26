@@ -273,7 +273,9 @@
   },
   "hidden_nurse_d4_freetalk": {
     "name": "Enfermera",
-    "text": "*Conversando con la enfermera en el puesto de comida.*"
+    "text": "*Conversando con la enfermera en el puesto de comida.*",
+    "context": "Día 4. Fin de semana. Ayudó con la preparación del chequeo médico y comiendo en un puesto de comida. Hablando sobre el agotamiento del hospital universitario. Tono: La conversación se ha vuelto seria. Emoción y tensión de una cita. Más sinceridad que bromas. Momentos donde las emociones se vuelven honestas.",
+    "personality": "La enfermera en ropa casual parece una hermana mayor. La alegría y la sinceridad se alternan, y ella entiende el peso de ser llamada por su nombre."
   },
   "hidden_nurse_d4_meal_1b": {
     "name": "{name}",

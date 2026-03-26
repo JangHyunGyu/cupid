@@ -273,7 +273,9 @@
   },
   "hidden_nurse_d4_freetalk": {
     "name": "Nurse",
-    "text": "*Chatting with the nurse at the snack bar.*"
+    "text": "*Chatting with the nurse at the snack bar.*",
+    "context": "Day 4. Weekend. Helped with health checkup prep and eating at a snack bar. Talking about university hospital burnout. Tone: Conversation has become serious. Excitement and tension of a date. More sincerity than jokes. Moments where emotions become honest.",
+    "personality": "The nurse in casual clothes feels like an older sister. Playfulness and sincerity alternate, and she understands the weight of being called by name."
   },
   "hidden_nurse_d4_meal_1b": {
     "name": "{name}",

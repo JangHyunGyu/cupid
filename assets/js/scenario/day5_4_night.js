@@ -60,6 +60,10 @@ Object.assign(SCENARIO[5], {
                 "condition": "day5_confessed"
             },
             {
+                "next": "day5_ending_friend",
+                "condition": "day4_waited"
+            },
+            {
                 "next": "day5_ending_alone"
             }
         ]
