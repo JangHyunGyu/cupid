@@ -21,16 +21,16 @@ const DELAY_MS = 12000; // 요청 간 12초 대기 (rate limit 방지)
 // ──────────────────────────────────────────
 // 배경 프롬프트 정의 (PROMPTS_READY.md 기준)
 // ──────────────────────────────────────────
-// negativePrompt가 API에서 제거됨 → 프롬프트 본문 끝에 금지 조건 직접 삽입
-const NEG_COMMON = ''; // 레거시 참조용 (API에서 negativePrompt 미지원)
-const AVOID_SUFFIX = '. 절대 금지: 텍스트, 글자, 숫자, 워터마크, 로고, 자막, 필름 스트립, 필름 네거티브, 흰색 테두리, 위아래 검은 바, 레터박스, 프레임 테두리, 사람, 인물. The image must NOT contain any text, letters, words, numbers, watermarks, logos, subtitles, film strips, film negatives, white borders, black bars, letterboxing, top/bottom bars, frame borders, or any overlay. No people, no characters, no human figures. Pure background illustration only.';
+const NEG_COMMON = '저퀄리티, 흐릿한, 3D 렌더링, 실사 사진, 인물 포함, 캐릭터 포함, 사람 포함, 워터마크, 서명, 텍스트, 글자, 로고, 필름 네거티브, 필름 스트립, 흰색 테두리, 흰색 여백, 위아래 여백, 위아래 검은 바, 레터박스, 프레임 테두리, film strip, film negative, white border, black bars, letterbox';
+const AVOID_PREFIX = 'NO film strips, NO borders, NO text, NO letterboxing, NO frame edges. Clean full-bleed illustration with no borders or overlays. ';
+const AVOID_SUFFIX = '. 절대 금지: 텍스트, 글자, 숫자, 워터마크, 필름 스트립, 필름 네거티브, 흰색 테두리, 위아래 검은 바, 레터박스, 프레임 테두리, 사람, 인물. No text, no film strips, no borders, no letterboxing, no frame, no overlay, no people. Pure background illustration only.';
 
 const backgrounds = [
   // ── 10. 학교 내부 ──
   {
     filename: 'room_school.png',
     label: '교실',
-    prompt: '비주얼 노벨 배경 일러스트, 깔끔한 선화, 선명한 디지털 셀 채색, 한국 고등학교 교실 내부, 낮 시간대 밝은 자연광, 왼쪽 창문으로 따스한 햇살이 비스듬히 들어옴, 창밖으로 벚꽃 나무가 보임, 30석 규모 나무 책상과 의자가 줄지어 배치됨, 앞쪽 녹색 칠판과 교탁, 교탁 위에 출석부와 분필, 천장에 형광등, 뒤쪽 벽에 게시판과 시간표, 교실 옆면에 사물함, 깨끗하게 정돈된 교실 분위기, 창문 커튼이 바람에 살짝 흔들림, 봄 햇살이 책상 위에 따뜻한 그림자를 드리움, 아늑하고 평온한 일상적 분위기, 연애 시뮬레이션 게임 배경, 정면 시점, 1024x1024 해상도',
+    prompt: '비주얼 노벨 배경 일러스트, 깔끔한 선화, 선명한 디지털 셀 채색, 한국 고등학교 교실 내부, 낮 시간대 밝은 자연광, 왼쪽 창문으로 따스한 햇살이 비스듬히 들어옴, 창밖으로 벚꽃 나무가 보임, 30석 규모 나무 책상과 의자가 줄지어 배치됨, 앞쪽 깨끗한 녹색 칠판과 교탁, 천장에 형광등, 교실 옆면에 사물함, 깨끗하게 정돈된 교실 분위기, 창문 커튼이 바람에 살짝 흔들림, 봄 햇살이 책상 위에 따뜻한 그림자를 드리움, 아늑하고 평온한 일상적 분위기, 연애 시뮬레이션 게임 배경, 정면 시점, 1024x1024 해상도',
     negative: `${NEG_COMMON}, 어두운 조명, 밤, 공포 분위기`
   },
   {
@@ -235,7 +235,7 @@ async function generateImage(bg, index, total) {
     const modelLabel = model.includes('ultra') ? 'Ultra' : 'Standard';
     try {
       console.log(`  → ${modelLabel} 생성 중...`);
-      const imgBuf = await callImagenAPI(model, bg.prompt + AVOID_SUFFIX);
+      const imgBuf = await callImagenAPI(model, AVOID_PREFIX + bg.prompt + AVOID_SUFFIX);
       fs.writeFileSync(outPath, imgBuf);
       const kb = (imgBuf.length / 1024).toFixed(0);
       console.log(`  ✓ 저장 완료: ${outPath} (${kb}KB)`);
