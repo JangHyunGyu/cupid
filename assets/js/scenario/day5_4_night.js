@@ -272,7 +272,7 @@ Object.assign(SCENARIO[5], {
     },
     "perfect_dain_3b": {
         "background": "assets/images/background/gym.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "perfect_dain_4"
     },
@@ -1255,7 +1255,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_perfect_homeroom_3g": {
         "background": null,
-        "character": null,
+        "character": "assets/images/characters/teacher_shy.png",
         "fade": true,
         "next": "hidden_perfect_homeroom_4b"
     },

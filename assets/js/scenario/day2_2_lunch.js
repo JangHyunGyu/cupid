@@ -153,7 +153,7 @@ Object.assign(SCENARIO[2], {
         "next": "lunch2_yuna_choice"
     },
     "lunch2_yuna_choice": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "choices": [
             {
