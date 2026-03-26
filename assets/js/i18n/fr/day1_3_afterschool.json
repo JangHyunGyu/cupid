@@ -244,7 +244,7 @@
     },
     "after_nurse_enter_4": {
         "name": "Infirmière",
-        "text": "Le nouveau ? À l'infirmerie dès le premier jour — t'es vidé. Qu'est-ce qui ne va pas ?"
+        "text": "C'est le nouveau, non ? Déjà à l'infirmerie le premier jour. Tu dois être stressé~"
     },
     "after_nurse_enter_5": {
         "name": "Moi",
