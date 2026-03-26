@@ -69,7 +69,7 @@ Object.assign(SCENARIO[4], {
         "next": "confess_seo_choice"
     },
     "confess_seo_choice": {
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/top_school.png",
         "sunset": true,
         "choices": [
@@ -228,7 +228,7 @@ Object.assign(SCENARIO[4], {
         "next": "confess_yuna_choice"
     },
     "confess_yuna_choice": {
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "choices": [
@@ -369,7 +369,7 @@ Object.assign(SCENARIO[4], {
         "next": "confess_dain_choice"
     },
     "confess_dain_choice": {
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "background": "assets/images/background/gym.png",
         "sunset": true,
         "choices": [

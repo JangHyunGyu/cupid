@@ -75,7 +75,7 @@ Object.assign(SCENARIO[3], {
         "next": "lunch3_choice"
     },
     "lunch3_choice": {
-        "character": null,
+        "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
         "choices": [
             { "next": "lunch3_give_seo_1" },
