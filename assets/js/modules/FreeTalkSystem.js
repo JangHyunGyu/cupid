@@ -576,6 +576,112 @@ class FreeTalkSystem {
             // JSON 응답 파싱 → {text, expression, affinity} 구조체 반환
             const parsed = this.parseJsonResponse(reply);
 
+            // ─────────────────────────────────────────────────────────
+            // 🔑 히든 키워드 시스템: 캐릭터 트라우마/비밀 관련 키워드 감지
+            // ─────────────────────────────────────────────────────────
+            // 플레이어가 캐릭터의 민감한 주제를 언급하면 AI 응답을
+            // 사전 스크립팅된 특수 반응으로 교체한다. 캐릭터당 1회 한정.
+            if (parsed && text) {
+                const _kwLang = window.GAME_LANG || document.documentElement.lang || 'ko';
+                const _lowerText = text.toLowerCase();
+                const _kwFlag = `keyword_${charKey.toLowerCase()}`;
+
+                // 캐릭터별 히든 키워드 정의
+                const HIDDEN_KEYWORDS = {
+                    "유나": {
+                        flag: "keyword_yuna_junho",
+                        keywords: { ko: ["준호", "이준호"], en: ["junho", "lee junho"], ja: ["ジュンホ"], es: ["junho"], fr: ["junho"], de: ["junho"] },
+                        response: {
+                            ko: "*3초간 침묵.* \"...그 이름. 어디서 들었어.\" *1초.* \"...아무것도 아니야.\"",
+                            en: "*3 seconds of silence.* \"...That name. Where did you hear it.\" *1 second.* \"...It's nothing.\"",
+                            ja: "*3秒の沈黙。* \"...その名前。どこで聞いたの。\" *1秒。* \"...なんでもない。\"",
+                            es: "*3 segundos de silencio.* \"...Ese nombre. ¿Dónde lo escuchaste?\" *1 segundo.* \"...No es nada.\"",
+                            fr: "*3 secondes de silence.* \"...Ce nom. Où l'as-tu entendu ?\" *1 seconde.* \"...Ce n'est rien.\"",
+                            de: "*3 Sekunden Stille.* \"...Dieser Name. Wo hast du den gehört?\" *1 Sekunde.* \"...Es ist nichts.\""
+                        },
+                        expression: "sad", affinity: 5
+                    },
+                    "서연": {
+                        flag: "keyword_seo_family",
+                        keywords: { ko: ["엄마", "부모님", "이혼"], en: ["mom", "mother", "parents", "divorce"], ja: ["お母さん", "両親", "離婚"], es: ["mamá", "padres", "divorcio"], fr: ["maman", "parents", "divorce"], de: ["mama", "eltern", "scheidung"] },
+                        response: {
+                            ko: "*젓가락을 내려놓는다.* \"...그 얘기는.\" *0.5초.* *미소가 돌아온다. 연습된 미소.* \"왜 갑자기?\"",
+                            en: "*Sets down chopsticks.* \"...That topic.\" *0.5 sec.* *The smile returns. A practiced smile.* \"Why suddenly?\"",
+                            ja: "*箸を置く。* \"...その話は。\" *0.5秒。* *笑顔が戻る。練習された笑顔。* \"なんで急に？\"",
+                            es: "*Deja los palillos.* \"...Ese tema.\" *0.5 seg.* *La sonrisa regresa. Una sonrisa ensayada.* \"¿Por qué de repente?\"",
+                            fr: "*Pose les baguettes.* \"...Ce sujet.\" *0,5 sec.* *Le sourire revient. Un sourire répété.* \"Pourquoi soudainement ?\"",
+                            de: "*Legt die Stäbchen ab.* \"...Das Thema.\" *0,5 Sek.* *Das Lächeln kehrt zurück. Ein einstudiertes Lächeln.* \"Warum plötzlich?\""
+                        },
+                        expression: "sad", affinity: 5
+                    },
+                    "다인": {
+                        flag: "keyword_dain_knee",
+                        keywords: { ko: ["무릎", "인대", "수술", "프로"], en: ["knee", "ligament", "surgery", "pro"], ja: ["膝", "靭帯", "手術", "プロ"], es: ["rodilla", "ligamento", "cirugía", "profesional"], fr: ["genou", "ligament", "chirurgie", "pro"], de: ["knie", "band", "operation", "profi"] },
+                        response: {
+                            ko: "*웃음이 멈춘다.* \"...\" *1초.* \"괜찮아!! 별거 아냐!!\" *느낌표가 돌아왔지만 목소리가 반 톤 높다.*",
+                            en: "*The smile stops.* \"...\" *1 sec.* \"I'm fine!! It's nothing!!\" *The exclamation marks are back, but half a tone too high.*",
+                            ja: "*笑顔が止まる。* \"...\" *1秒。* \"大丈夫!! 何でもないよ!!\" *ビックリマークは戻ったが、声が半トーン高い。*",
+                            es: "*La sonrisa se detiene.* \"...\" *1 seg.* \"¡¡Estoy bien!! ¡¡No es nada!!\" *Los signos de exclamación volvieron, pero medio tono más alto.*",
+                            fr: "*Le sourire s'arrête.* \"...\" *1 sec.* \"Ça va !! C'est rien !!\" *Les points d'exclamation sont revenus, mais d'un demi-ton trop haut.*",
+                            de: "*Das Lächeln stoppt.* \"...\" *1 Sek.* \"Mir geht's gut!! Ist nichts!!\" *Die Ausrufezeichen sind zurück, aber einen halben Ton zu hoch.*"
+                        },
+                        expression: "sad", affinity: 5
+                    },
+                    "담임": {
+                        flag: "keyword_homeroom_writing",
+                        keywords: { ko: ["원고", "소설", "등단"], en: ["manuscript", "novel", "debut"], ja: ["原稿", "小説", "デビュー"], es: ["manuscrito", "novela", "debut"], fr: ["manuscrit", "roman", "début"], de: ["manuskript", "roman", "debüt"] },
+                        response: {
+                            ko: "*볼펜을 만지작거리던 손이 멈춘다.* \"...누구한테 들었어?\" *0.7초.* \"아무것도 아니야. 업무 서류야.\"",
+                            en: "*The hand fidgeting with the pen stops.* \"...Who told you?\" *0.7 sec.* \"It's nothing. Just paperwork.\"",
+                            ja: "*ボールペンをいじっていた手が止まる。* \"...誰に聞いたの？\" *0.7秒。* \"何でもない。業務書類だよ。\"",
+                            es: "*La mano que jugueteaba con el bolígrafo se detiene.* \"...¿Quién te lo dijo?\" *0.7 seg.* \"No es nada. Solo papeleo.\"",
+                            fr: "*La main qui jouait avec le stylo s'arrête.* \"...Qui t'a dit ça ?\" *0,7 sec.* \"Ce n'est rien. Juste de la paperasse.\"",
+                            de: "*Die Hand, die mit dem Kugelschreiber spielte, hält inne.* \"...Wer hat dir das erzählt?\" *0,7 Sek.* \"Es ist nichts. Nur Papierkram.\""
+                        },
+                        expression: "shy", affinity: 5
+                    },
+                    "보건": {
+                        flag: "keyword_nurse_hospital",
+                        keywords: { ko: ["환자", "대학병원", "응급실"], en: ["patient", "hospital", "er", "emergency"], ja: ["患者", "大学病院", "救急"], es: ["paciente", "hospital", "emergencia"], fr: ["patient", "hôpital", "urgences"], de: ["patient", "krankenhaus", "notaufnahme"] },
+                        response: {
+                            ko: "*청진기를 만지는 손이 멈춘다.* *목소리가 한 톤 낮아진다.* \"...옛날 얘기야.\" *다시 웃는다.* \"여기선 다 괜찮아~\"",
+                            en: "*The hand touching the stethoscope stops.* *Voice drops a tone.* \"...That's an old story.\" *Smiles again.* \"Everyone's fine here~\"",
+                            ja: "*聴診器に触れていた手が止まる。* *声が一トーン低くなる。* \"...昔の話だよ。\" *また笑う。* \"ここではみんな大丈夫~\"",
+                            es: "*La mano que toca el estetoscopio se detiene.* *La voz baja un tono.* \"...Es una vieja historia.\" *Sonríe de nuevo.* \"Aquí todos están bien~\"",
+                            fr: "*La main touchant le stéthoscope s'arrête.* *La voix baisse d'un ton.* \"...C'est une vieille histoire.\" *Sourit à nouveau.* \"Ici tout le monde va bien~\"",
+                            de: "*Die Hand am Stethoskop hält inne.* *Die Stimme senkt sich um einen Ton.* \"...Das ist eine alte Geschichte.\" *Lächelt wieder.* \"Hier ist alles gut~\""
+                        },
+                        expression: "shy", affinity: 3
+                    }
+                };
+
+                const kwData = HIDDEN_KEYWORDS[charKey];
+                if (kwData && !this.stateManager.getFlag(kwData.flag)) {
+                    const kwList = kwData.keywords[_kwLang] || kwData.keywords['en'] || [];
+                    const triggered = kwList.some(kw => _lowerText.includes(kw.toLowerCase()));
+                    if (triggered) {
+                        // 키워드 발동: AI 응답을 스크립팅된 반응으로 교체
+                        parsed.text = kwData.response[_kwLang] || kwData.response['en'];
+                        parsed.expression = kwData.expression;
+                        parsed.affinity = kwData.affinity;
+                        this.stateManager.setFlag(kwData.flag, true);
+
+                        // 시스템 프롬프트에 민감 주제 언급 컨텍스트 추가
+                        if (this.freeTalkHistory.length > 0 && this.freeTalkHistory[0].role === "system") {
+                            const sensitiveNote = {
+                                ko: "\n[주의: 플레이어가 민감한 주제를 언급했습니다. 약간 경계하는 톤을 유지하되, 자연스럽게 대화를 이어가세요.]",
+                                en: "\n[NOTE: The player mentioned a sensitive topic. Maintain a slightly guarded tone while continuing naturally.]",
+                                ja: "\n[注意: プレイヤーがデリケートな話題に触れました。少し警戒しつつ、自然に会話を続けてください。]",
+                                es: "\n[NOTA: El jugador mencionó un tema sensible. Mantén un tono ligeramente cauteloso mientras continúas naturalmente.]",
+                                fr: "\n[NOTE : Le joueur a mentionné un sujet sensible. Gardez un ton légèrement réservé tout en continuant naturellement.]",
+                                de: "\n[HINWEIS: Der Spieler hat ein sensibles Thema angesprochen. Behalten Sie einen leicht vorsichtigen Ton bei.]"
+                            };
+                            this.freeTalkHistory[0].content += sensitiveNote[_kwLang] || sensitiveNote['en'];
+                        }
+                    }
+                }
+            }
+
             if (parsed) {
                 // ─────────────────────────────────────────────────────────
                 // 🛡️ NSFW 안전장치: 저호감도에서 신체적/성적 행동 시 호감도 증가 차단
