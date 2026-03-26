@@ -1259,6 +1259,69 @@ html[lang="de"] .modal-content p {
     .affinity-popup-multi .affinity-char-label { font-size: 0.8rem; }
 }
 
+/* 화면 밖 캐릭터 호감도 — 옆에서 슬라이드인 되는 이름 태그 */
+.affinity-nametag {
+    position: fixed;
+    top: 45%;
+    z-index: 9999;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+    font-weight: 700;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+.affinity-nametag-left {
+    left: 0;
+    animation: nametagSlideLeft 4s ease-out forwards;
+}
+
+.affinity-nametag-right {
+    right: 0;
+    left: auto;
+    border-radius: 1.5rem 0 0 1.5rem;
+    animation: nametagSlideRight 4s ease-out forwards;
+}
+
+.affinity-nametag.positive { color: #ff6b9d; }
+.affinity-nametag.negative { color: #7799ff; }
+
+.affinity-nametag-name {
+    font-size: 1.1rem;
+    color: #fff;
+    opacity: 0.95;
+}
+
+.affinity-nametag-value {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+@keyframes nametagSlideLeft {
+    0% { transform: translateX(-100%); opacity: 0; }
+    10% { transform: translateX(0); opacity: 1; }
+    75% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes nametagSlideRight {
+    0% { transform: translateX(100%); opacity: 0; }
+    10% { transform: translateX(0); opacity: 1; }
+    75% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+@media (max-width: 480px) {
+    .affinity-nametag { padding: 0.4rem 0.8rem; gap: 0.4rem; }
+    .affinity-nametag-name { font-size: 0.85rem; }
+    .affinity-nametag-value { font-size: 1rem; }
+}
+
 /* 긍정적 변화 (+) */
 .affinity-popup.positive {
     color: #ff6b9d;

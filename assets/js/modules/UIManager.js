@@ -528,8 +528,6 @@ class UIManager {
             change.left = sidePositions[i] ?? (i % 2 === 0 ? '25%' : '75%');
         });
 
-        const allChanges = [...onScreen, ...offScreen];
-
         // 양수 효과음 1번만
         if (window.soundManager) {
             const hasPositive = sorted.some(c => c.amount > 0);
@@ -537,7 +535,8 @@ class UIManager {
             window.soundManager.playSfx(sfx);
         }
 
-        allChanges.forEach((change) => {
+        // 화면에 보이는 캐릭터: 기존 팝업
+        onScreen.forEach((change) => {
             const popup = document.createElement('div');
             popup.className = `affinity-popup affinity-popup-multi ${change.amount > 0 ? 'positive' : 'negative'}`;
             popup.style.left = change.left;
@@ -560,6 +559,28 @@ class UIManager {
             document.body.appendChild(popup);
 
             setTimeout(() => popup.remove(), 4000);
+        });
+
+        // 화면에 안 보이는 캐릭터: 옆에서 슬라이드인 되는 이름 태그
+        offScreen.forEach((change, i) => {
+            const tag = document.createElement('div');
+            const isPositive = change.amount > 0;
+            const side = i % 2 === 0 ? 'left' : 'right';
+            tag.className = `affinity-nametag affinity-nametag-${side} ${isPositive ? 'positive' : 'negative'}`;
+
+            const name = document.createElement('span');
+            name.className = 'affinity-nametag-name';
+            name.textContent = nameMap[change.charKey] ?? change.charKey;
+
+            const val = document.createElement('span');
+            val.className = 'affinity-nametag-value';
+            val.textContent = `${isPositive ? '+' : ''}${change.amount} ${isPositive ? '💕' : '💔'}`;
+
+            tag.appendChild(name);
+            tag.appendChild(val);
+            document.body.appendChild(tag);
+
+            setTimeout(() => tag.remove(), 4000);
         });
     }
 
