@@ -633,10 +633,6 @@
     "name": "Professeure",
     "text": "...Oh. Je suis surprise aussi. *Elle pose sa tasse de café.* Tu veux t'asseoir ?"
   },
-  "hidden_perfect_homeroom_3d": {
-    "name": "{name}",
-    "text": "Vous allez bien ? J'ai entendu dire que vous aviez quitté l'école."
-  },
   "hidden_perfect_homeroom_3e": {
     "name": "Professeure",
     "text": "*Elle sourit en coin.* J'ai arrêté d'enseigner. Je ne fais qu'écrire. Mi-temps dans un café aussi. — Et toi ?"
@@ -647,11 +643,7 @@
   },
   "hidden_perfect_homeroom_3g": {
     "name": "{name}",
-    "text": "*Ce « la prochaine fois » est devenu la fois d'après, puis encore la suivante. Même place chaque jeudi. Quand le barista a demandé « Table pour couple ? », aucun de nous n'a pu répondre.*"
-  },
-  "hidden_perfect_homeroom_4": {
-    "name": "{name}",
-    "text": "*Un jeudi. On a marché dans les rues au lieu d'aller au café. Côte à côte. Tous les deux faisant semblant de ne pas remarquer nos ombres qui se chevauchaient.*"
+    "text": "*Ce « la prochaine fois » est devenu la fois d'après, puis encore la suivante. Même place chaque jeudi. Quand le barista a demandé « Table pour couple ? », aucun de nous n'a pu répondre. Un jeudi. On a marché dans les rues au lieu d'aller au café. Côte à côte. Tous les deux faisant semblant de ne pas remarquer nos ombres qui se chevauchaient.*"
   },
   "hidden_perfect_homeroom_4b": {
     "name": "Professeure",

@@ -1287,11 +1287,6 @@ Object.assign(SCENARIO[5], {
     "hidden_perfect_homeroom_3c": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/teacher_smile.png",
-        "next": "hidden_perfect_homeroom_3d"
-    },
-    "hidden_perfect_homeroom_3d": {
-        "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_perfect_homeroom_3e"
     },
     "hidden_perfect_homeroom_3e": {
@@ -1308,11 +1303,6 @@ Object.assign(SCENARIO[5], {
         "background": null,
         "character": null,
         "fade": true,
-        "next": "hidden_perfect_homeroom_4"
-    },
-    "hidden_perfect_homeroom_4": {
-        "background": "assets/images/background/street.png",
-        "character": null,
         "next": "hidden_perfect_homeroom_4b"
     },
     "hidden_perfect_homeroom_4b": {

@@ -633,10 +633,6 @@
     "name": "Ms. Kim",
     "text": "...Oh. I'm surprised too. *She sets down her coffee cup.* Want to sit?"
   },
-  "hidden_perfect_homeroom_3d": {
-    "name": "{name}",
-    "text": "Have you been well? I heard you left the school."
-  },
   "hidden_perfect_homeroom_3e": {
     "name": "Ms. Kim",
     "text": "*She smirks.* Quit teaching. Just writing now. Part-time at a cafe too. — What about you?"
@@ -647,11 +643,7 @@
   },
   "hidden_perfect_homeroom_3g": {
     "name": "{name}",
-    "text": "*That 'next time' became the time after, and the time after that. Same seat every Thursday. When the barista asked 'Couple's table?', neither of us could answer.*"
-  },
-  "hidden_perfect_homeroom_4": {
-    "name": "{name}",
-    "text": "*One Thursday. We walked the streets instead of the cafe. Side by side. Both pretending not to notice our shadows overlapping.*"
+    "text": "*That 'next time' became the time after, and the time after that. Same seat every Thursday. When the barista asked 'Couple's table?', neither of us could answer. One Thursday. We walked the streets instead of the cafe. Side by side. Both pretending not to notice our shadows overlapping.*"
   },
   "hidden_perfect_homeroom_4b": {
     "name": "Ms. Kim",
