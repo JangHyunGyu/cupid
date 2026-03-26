@@ -272,8 +272,8 @@
         "personality": "保健先生は慎重で正直。名前で呼びたいけど慎重な立場。学生の誓いに涙が出る。"
     },
     "hidden_nurse_d4_freetalk": {
-        "name": "保健の先生",
-        "text": "*保健の先生と軽食屋で話している。*"
+        "name": "保健先生",
+        "text": "*保健先生と軽食屋で話している。*"
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",

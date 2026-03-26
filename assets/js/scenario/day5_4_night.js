@@ -1341,10 +1341,28 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_perfect_homeroom_4g"
     },
     "hidden_perfect_homeroom_4g": {
+        "background": "assets/images/background/ending_perfect_teacher.png",
         "character": null,
         "next": "hidden_perfect_homeroom_5"
     },
     "hidden_perfect_homeroom_5": {
+        "character": null,
+        "next": "hidden_perfect_homeroom_ep1"
+    },
+    "hidden_perfect_homeroom_ep1": {
+        "background": "assets/images/background/ending_perfect_teacher.png",
+        "character": null,
+        "next": "hidden_perfect_homeroom_ep2"
+    },
+    "hidden_perfect_homeroom_ep2": {
+        "character": null,
+        "next": "hidden_perfect_homeroom_ep3"
+    },
+    "hidden_perfect_homeroom_ep3": {
+        "character": null,
+        "next": "hidden_perfect_homeroom_ep4"
+    },
+    "hidden_perfect_homeroom_ep4": {
         "character": null,
         "next": "day5_credits"
     },
@@ -1379,7 +1397,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_perfect_nurse_2": {
         "background": "assets/images/background/nurse_house.png",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "hidden_perfect_nurse_3"
     },
@@ -1408,11 +1426,33 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_perfect_nurse_5"
     },
     "hidden_perfect_nurse_5": {
+        "background": "assets/images/background/ending_perfect_nurse.png",
         "character": null,
         "night": true,
         "next": "hidden_perfect_nurse_5b"
     },
     "hidden_perfect_nurse_5b": {
+        "character": null,
+        "night": true,
+        "next": "hidden_perfect_nurse_ep1"
+    },
+    "hidden_perfect_nurse_ep1": {
+        "background": "assets/images/background/ending_perfect_nurse.png",
+        "character": null,
+        "night": true,
+        "next": "hidden_perfect_nurse_ep2"
+    },
+    "hidden_perfect_nurse_ep2": {
+        "character": null,
+        "night": true,
+        "next": "hidden_perfect_nurse_ep3"
+    },
+    "hidden_perfect_nurse_ep3": {
+        "character": null,
+        "night": true,
+        "next": "hidden_perfect_nurse_ep4"
+    },
+    "hidden_perfect_nurse_ep4": {
         "character": null,
         "night": true,
         "next": "day5_credits"
