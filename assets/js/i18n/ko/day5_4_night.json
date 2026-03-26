@@ -95,7 +95,6 @@
     "name": "{name}",
     "text": "*다인이 뛰어올랐다. 받을 준비 같은 건 없었다. 배구공이 바닥을 굴러가고 — 석양 빛 체육관에 두 사람의 그림자만 남았다.*"
   },
-  "perfect_epilogue_1": {},
   "perfect_epilogue_1_seo": {
     "name": "{name}",
     "text": "*모든 선택이 하나의 사람을 향해 있었다. 5일이 아니라, 하루하루가 전부였다.*"
@@ -296,7 +295,6 @@
     "name": "{name}",
     "text": "*다인의 웃음이 아직 귓가에 남아 있다.*"
   },
-  "true_epilogue_1": {},
   "true_epilogue_1_seo": {
     "name": "{name}",
     "text": "*5일이었다.*"
@@ -798,10 +796,6 @@
   "hidden_good_nurse_4": {
     "name": "{name}",
     "text": "*하트가 — 이번에는 확실히 의료적 관심이 아니다.\n\n─── 보건선생님 GOOD END ───*"
-  },
-  "perfect_seo_5b": {
-    "name": "{name}",
-    "text": "*Day 1의 옥상. Day 4의 공원. 그리고 지금. — 같은 장소, 다른 의미. 모든 장면이 여기로 수렴한다.*"
   },
   "perfect_dain_2b": {
     "name": "{name}",

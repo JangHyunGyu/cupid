@@ -95,7 +95,6 @@
     "name": "Yo",
     "text": "*Dain saltó. No estaba preparado. El balón rodó por el suelo — y en el gimnasio bañado por el atardecer, solo quedaron dos sombras.*"
   },
-  "perfect_epilogue_1": {},
   "perfect_epilogue_1_seo": {
     "name": "Yo",
     "text": "*Cada eleccion apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
@@ -296,7 +295,6 @@
     "name": "Yo",
     "text": "*La risa de Dain aún resuena en mis oídos.*"
   },
-  "true_epilogue_1": {},
   "true_epilogue_1_seo": {
     "name": "Yo",
     "text": "*Fueron cinco días.*"
@@ -798,10 +796,6 @@
   "hidden_good_nurse_4": {
     "name": "Yo",
     "text": "*Ese corazón — esta vez definitivamente no es interés médico.\n\n─── Enfermera GOOD END ───*"
-  },
-  "perfect_seo_5b": {
-    "name": "Yo",
-    "text": "*La azotea del Día 1. El parque del Día 4. Y ahora. — El mismo lugar, un significado diferente. Cada momento converge aquí.*"
   },
   "perfect_dain_2b": {
     "name": "Yo",
