@@ -1,708 +1,708 @@
 {
-    "day4_night_start": {
-        "name": "Ich",
-        "text": "*Ich bin wieder zu Hause. Im Bett liegend ziehen die Erinnerungen des Tages wie ein Film an mir vorbei.*"
-    },
-    "day4_night_branch": {
-        "name": "System",
-        "text": ""
-    },
-    "wall_seo_1": {
-        "name": "Ich",
-        "text": "*22 Uhr. Ein Anruf von Seoyeon. Kein Lachen in ihrer Stimme.*"
-    },
-    "wall_seo_2": {
-        "name": "Seoyeon",
-        "text": "Kannst du jetzt rauskommen? Zum Park. — Tut mir leid, so plötzlich."
-    },
-    "wall_seo_3": {
-        "name": "Ich",
-        "text": "*Seoyeon sitzt auf einer Parkbank. Ihre Augen sind rot.*"
-    },
-    "wall_seo_4": {
-        "name": "Ich",
-        "text": "Seoyeon. Was ist los?"
-    },
-    "wall_seo_5": {
-        "name": "Seoyeon",
-        "text": "...Setz dich."
-    },
-    "wall_seo_6": {
-        "name": "Ich",
-        "text": "*Ich setze mich neben sie. Seoyeon starrt geradeaus. Lange Zeit.*"
-    },
-    "wall_seo_7": {
-        "name": "Seoyeon",
-        "text": "Meine Mutter hat heute angerufen."
-    },
-    "wall_seo_8": {
-        "name": "Seoyeon",
-        "text": "Sie hat sich wieder mit Papa gestritten."
-    },
-    "wall_seo_9": {
-        "name": "Ich",
-        "text": "*Seoyeon lächelt. — Nicht ihr gewöhnliches gelassenes Lächeln. Ein Lächeln zur Selbstverteidigung.*"
-    },
-    "wall_seo_10": {
-        "name": "Seoyeon",
-        "text": "Unser Haus sieht von außen normal aus, oder? Großes Haus, schönes Auto, Tochter als Schülerratsvorsitzende. Aber Mama und Papa sind seit einem Jahr Fremde unter einem Dach. Sie haben nur die Scheidungspapiere nicht eingereicht."
-    },
-    "wall_seo_11": {
-        "name": "Seoyeon",
-        "text": "Mama hat gesagt: «Wenigstens du musst perfekt sein, damit diese Familie zusammenhält.»"
-    },
-    "wall_seo_12": {
-        "name": "Seoyeon",
-        "text": "Ich war zehn. — Sie hat das zu einer Zehnjährigen gesagt."
-    },
-    "wall_seo_13": {
-        "name": "Seoyeon",
-        "text": "Von da an habe ich angefangen, vor dem Spiegel Lächeln zu üben. Den Winkel, um die Lippen anzuheben, das Timing, um die Augen zusammenzukneifen."
-    },
-    "wall_seo_14": {
-        "name": "Seoyeon",
-        "text": "Jedes Mal, wenn ich gelobt wurde, dachte ich: «Dieses Lächeln ist auch geübt — hat irgendjemand je das wahre Ich gesehen?»"
-    },
-    "wall_seo_15": {
-        "name": "Ich",
-        "text": "*Seoyeon hörte auf zu sprechen. Mit zitternden Händen nahm sie ihre Brille ab und umklammerte sie. Es ist das erste Mal, dass ich Seoyeons Gesicht ohne Brille sehe. Ihre Hände sind fest auf ihren Knien zusammengepresst.*"
-    },
-    "wall_seo_hug_choice": {
-        "name": "Ich",
-        "text": "*Seoyeon weint. So habe ich sie noch nie gesehen.*",
-        "choices": [
-            "Sie in den Arm nehmen",
-            "Ihr meinen kleinen Finger reichen"
-        ]
-    },
-    "wall_seo_hug_1": {
-        "name": "Ich",
-        "text": "*Ich nahm Seoyeon in den Arm.*"
-    },
-    "wall_seo_hug_2": {
-        "name": "Ich",
-        "text": "*Seoyeon vergrub ihr Gesicht an meiner Brust. Mein Schulhemd wird nass.*"
-    },
-    "wall_seo_hug_3": {
-        "name": "Seoyeon",
-        "text": "...Vor jemandem weinen — das ist das erste Mal seit der Grundschule. Acht Jahre. — Die ganze Zeit habe ich nur allein im Badezimmer geweint."
-    },
-    "wall_seo_pinky_1": {
-        "name": "Ich",
-        "text": "*Ich strecke meinen kleinen Finger aus.*"
-    },
-    "wall_seo_pinky_2": {
-        "name": "Ich",
-        "text": "Ich verspreche es. Wenn du weinen willst, darfst du vor mir weinen."
-    },
-    "wall_seo_pinky_3": {
-        "name": "Ich",
-        "text": "*Seoyeon starrt meinen kleinen Finger an.*"
-    },
-    "wall_seo_pinky_4": {
-        "name": "Seoyeon",
-        "text": "...Warum bist du so. Warum machst du — so leicht Versprechen."
-    },
-    "wall_seo_pinky_5": {
-        "name": "Seoyeon",
-        "text": "Alle sagen das und verschwinden dann."
-    },
-    "wall_seo_line_choice": {
-        "name": "Ich",
-        "text": "*Seoyeon wischt sich die Tränen ab und schaut mit zitternden Augen zu mir hoch.*",
-        "choices": [
-            "Ich mag diese Seoyeon lieber als die perfekte.",
-            "Du bist für mich nicht die Schülerratsvorsitzende — du bist einfach Seoyeon, meine Freundin.",
-            "Ehrlich gesagt dachte ich, du wärst makellos. Aber danke, dass du mir diese Seite zeigst."
-        ]
-    },
-    "wall_seo_line_react_1": {
-        "name": "Seoyeon",
-        "text": "...Wirklich?"
-    },
-    "wall_seo_line_react_2": {
-        "name": "Seoyeon",
-        "text": "...Freundin?"
-    },
-    "wall_seo_line_react_3": {
-        "name": "Seoyeon",
-        "text": "...Danke, schätze ich."
-    },
-    "wall_seo_after_line": {
-        "name": "Seoyeon",
-        "text": "Ist das wirklich in Ordnung?"
-    },
-    "wall_seo_after_line_2": {
-        "name": "Seoyeon",
-        "text": "Dieses Gesicht — es ist gerade ein Chaos, oder? Make-up verschmiert, Augen geschwollen. — Ist das wirklich in Ordnung?"
-    },
-    "wall_seo_after_line_3": {
-        "name": "Ich",
-        "text": "Es ist in Ordnung."
-    },
-    "wall_seo_after_line_4": {
-        "name": "Ich",
-        "text": "*Seoyeon lächelt. Ein ungeübtes Lächeln. — Das Make-up ist verschmiert, die Augen geschwollen. Aber ich kann den Blick nicht abwenden.*"
-    },
-    "wall_seo_after_line_5": {
-        "name": "Seoyeon",
-        "text": "Zum ersten Mal seit acht Jahren glaube ich, dass mein ungeübtes Gesicht vielleicht in Ordnung ist."
-    },
-    "wall_seo_glimpse_1": {
-        "name": "Ich",
-        "text": "*Auf dem Heimweg, nachdem ich Seoyeon nach Hause gebracht habe. — Ich komme an der Schule vorbei.*"
-    },
-    "wall_seo_glimpse_2": {
-        "name": "Ich",
-        "text": "*Im Fenster der Turnhalle brennt Licht. Notbeleuchtung. Jemand dribbelt allein einen Ball. — Ich kann schwach die Trikotnummer erkennen. Es ist Dain.*"
-    },
-    "wall_seo_glimpse_3": {
-        "name": "Ich",
-        "text": "*...Allein in der Turnhalle um 23 Uhr? Sie hat sich heute nicht bei mir gemeldet.*"
-    },
-    "wall_seo_glimpse_4": {
-        "name": "Ich",
-        "text": "*Ich blieb kurz stehen — und ging weiter. Heute Nacht gehört Seoyeon. Aber meine Füße sind schwer.*"
-    },
-    "wall_dain_1": {
-        "name": "Ich",
-        "text": "*22 Uhr. Eine Nachricht von Dain.*"
-    },
-    "wall_dain_2": {
-        "name": "Dain",
-        "text": "Hey, hast du gerade Zeit? lol"
-    },
-    "wall_dain_3": {
-        "name": "Dain",
-        "text": "Komm einfach lol! Ich hab die Hintertür der Turnhalle offen gelassen!"
-    },
-    "wall_dain_4": {
-        "name": "Ich",
-        "text": "*Die dunkle Turnhalle, nur von Notbeleuchtung erhellt. Dain dribbelt allein einen Volleyball. Sie lächelt stärker als sonst.*"
-    },
-    "wall_dain_5": {
-        "name": "Dain",
-        "text": "Du bist da?! Du bist spät!!"
-    },
-    "wall_dain_6": {
-        "name": "Ich",
-        "text": "Was machst du nachts in der Schule?"
-    },
-    "wall_dain_7": {
-        "name": "Dain",
-        "text": "Ich schleich mich manchmal rein! Zum Trainieren!!"
-    },
-    "wall_dain_8": {
-        "name": "Dain",
-        "text": "Stell mir zu!! Nur einmal!!"
-    },
-    "wall_dain_9": {
-        "name": "Ich",
-        "text": "*Ich stelle zu. Dain springt hoch — Schmetterschlag. Im Moment der Landung — greift sie sich ans rechte Knie und geht in die Hocke.*"
-    },
-    "wall_dain_10": {
-        "name": "Dain",
-        "text": "Nein, alles gut!! Nur kurz umgeknickt lol, ist nich..."
-    },
-    "wall_dain_11": {
-        "name": "Ich",
-        "text": "*Ihre Hand am Knie ist weiß geworden. — Das ist nicht nichts.*"
-    },
-    "wall_dain_12": {
-        "name": "Ich",
-        "text": "Dain. Dir geht es nicht gut."
-    },
-    "wall_dain_13": {
-        "name": "Ich",
-        "text": "*Ich setze mich wortlos neben sie. Dain schließt den Mund. Langes Schweigen.*"
-    },
-    "wall_dain_14": {
-        "name": "Dain",
-        "text": "...Kreuzband."
-    },
-    "wall_dain_15": {
-        "name": "Dain",
-        "text": "Letzten Sommer."
-    },
-    "wall_dain_16": {
-        "name": "Ich",
-        "text": "*Dain macht einen Gesichtsausdruck, den ich noch nie gesehen habe. Dain, ohne Lächeln.*"
-    },
-    "wall_dain_17": {
-        "name": "Dain",
-        "text": "Ich wurde operiert, und der Arzt — er hat es ganz vorsichtig gesagt. «Der Alltag wird in Ordnung sein, aber so springen wie früher...» — Ich weiß nicht mehr, was danach kam. Danach war alles still."
-    },
-    "wall_dain_18": {
-        "name": "Dain",
-        "text": "Sportstipendium. Profi. Nationalmannschaft. — Seit ich fünf war, war das alles. Und es endete in einem Satz."
-    },
-    "wall_dain_19": {
-        "name": "Dain",
-        "text": "Ich hab es niemandem gesagt. Nicht mal meinen Eltern. «Dain wäre nicht Dain, wenn sie nicht spielen könnte!» — Das wollte ich nicht hören."
-    },
-    "wall_dain_20": {
-        "name": "Dain",
-        "text": "Jedes Mal, wenn jemand in der Schule sagte «So voller Energie!» — hier drin. ...dachte ich, ich sterbe."
-    },
-    "wall_dain_21": {
-        "name": "Dain",
-        "text": "Heute auch. Als ich beim Date herumgelaufen bin. Als ich neben dir fröhlich getan habe. Mein Knie hat geschrien."
-    },
-    "wall_dain_22": {
-        "name": "Dain",
-        "text": "— Aber wenn ich dir auch noch zeige, dass es wehtut, dann bleibt mir nichts mehr."
-    },
-    "wall_dain_choice": {
-        "name": "Ich",
-        "text": "*Dain umklammert den Volleyball, den Kopf gesenkt. Ihre Schultern zittern.*",
-        "choices": [
-            "...Darf ich mich neben dich setzen?",
-            "Du darfst weinen. Du musst nicht fröhlich tun. Nicht vor mir.",
-            "...Lass uns aufstehen. Noch einmal."
-        ]
-    },
-    "wall_dain_newdream_1": {
-        "name": "{name}",
-        "text": "*Ich setzte mich neben Dain. Der Hallenboden ist kalt. Ich sagte nichts.*"
-    },
-    "wall_dain_newdream_2": {
-        "name": "{name}",
-        "text": "*Dain sagt auch nichts. — Seltsamer Moment. Zum ersten Mal herrscht mehr als eine Minute Stille neben Dain.*"
-    },
-    "wall_dain_newdream_3": {
-        "name": "Dain",
-        "text": "...Warum sagst du nichts?"
-    },
-    "wall_dain_newdream_4": {
-        "name": "{name}",
-        "text": "Damit ich zuhören kann, wenn du reden willst."
-    },
-    "wall_dain_newdream_5": {
-        "name": "{name}",
-        "text": "*Dain schaut auf ihre Hände auf den Knien. Ballt die Fäuste, öffnet sie wieder.*"
-    },
-    "wall_dain_newdream_6": {
-        "name": "Dain",
-        "text": "Echt witzig, oder? Seit ich fünf bin, stand ich jeden Tag auf diesem Feld... und jetzt soll es vorbei sein."
-    },
-    "wall_dain_newdream_7": {
-        "name": "Dain",
-        "text": "Aber mit dir neben mir — fühlt sich der Boden weniger kalt an."
-    },
-    "wall_dain_newdream_8": {
-        "name": "{name}",
-        "text": "*Nicht einen Ball auf dem Feld schlagen, sondern neben jemandem sitzen. — Für Dain war auch das wahrscheinlich das erste Mal.*"
-    },
-    "wall_dain_cry_1": {
-        "name": "Ich",
-        "text": "*Dain brach auf dem Spielfeld zusammen. Sie fing an zu weinen, den Volleyball umklammernd.*"
-    },
-    "wall_dain_cry_2": {
-        "name": "Ich",
-        "text": "*Als wären ein Jahr zurückgehaltener Tränen auf einmal herausgebrochen. Das Schluchzen hallt durch die leere Turnhalle.*"
-    },
-    "wall_dain_cry_3": {
-        "name": "Dain",
-        "text": "Ganz allein... jeden Morgen mein Knie bandagiert..."
-    },
-    "wall_dain_cry_4": {
-        "name": "Dain",
-        "text": "Ich hab es in meinen Handywecker geschrieben. «Lächle heute!!» steht da..."
-    },
-    "wall_dain_cry_5": {
-        "name": "Dain",
-        "text": "Jeden Morgen hab ich das gesehen... diese zwei Ausrufezeichen... und mich gezwungen zu lächeln..."
-    },
-    "wall_dain_cry_6": {
-        "name": "Ich",
-        "text": "*Sie hat zwei Ausrufezeichen in diese Weckernachricht geschrieben — weil eines nicht einmal gereicht hätte, sich selbst zu täuschen.*"
-    },
-    "wall_dain_lastspike_1": {
-        "name": "Ich",
-        "text": "*Ich streckte die Hand aus. Dain ergriff sie. Wir standen beide auf. — Ich stellte ihr zu.*"
-    },
-    "wall_dain_lastspike_2": {
-        "name": "Ich",
-        "text": "*Dain biss die Zähne zusammen und sprang — der perfekte Schmetterschlag. Der Ball knallt auf den Boden.*"
-    },
-    "wall_dain_lastspike_3": {
-        "name": "Ich",
-        "text": "*Sie griff sich bei der Landung ans Knie — aber sie lächelt.*"
-    },
-    "wall_dain_lastspike_4": {
-        "name": "Dain",
-        "text": "...Heh. Es tut weh. Aber es fühlt sich seltsam befreiend an. — Ich bin froh, dass mein letzter Schlag auf diesem Feld ein Zuspiel von {name} war."
-    },
-    "wall_dain_lastspike_5": {
-        "name": "Dain",
-        "text": "Tschüss, Spielfeld."
-    },
-    "wall_dain_lastspike_6": {
-        "name": "Dain",
-        "text": "— Dreizehn Jahre seit ich fünf war. Danke."
-    },
-    "wall_dain_farewell_1": {
-        "name": "Ich",
-        "text": "*Ein Satz von Dain ohne ein einziges Ausrufezeichen. — Das allein ist das Gewicht des Abschieds.*"
-    },
-    "wall_dain_farewell_2": {
-        "name": "Ich",
-        "text": "*Ich verlasse die Turnhalle mit Dain. Wir kommen am Hintertor der Schule vorbei.*"
-    },
-    "wall_dain_glimpse_1": {
-        "name": "Ich",
-        "text": "*Ich sehe Licht im Fenster des Bibliotheksanbaus. Eine kleine Schreibtischlampe.*"
-    },
-    "wall_dain_glimpse_2": {
-        "name": "Ich",
-        "text": "*Es ist Yuna. Allein sitzend. Ob sie liest oder einfach nur dasitzt — von hier kann ich es nicht sagen.*"
-    },
-    "wall_dain_glimpse_3": {
-        "name": "Ich",
-        "text": "*Yuna hat mir heute keine Nachricht geschrieben. — Yuna schreibt nie. Ob das normal ist oder nur heute so — weiß ich nicht.*"
-    },
-    "wall_dain_glimpse_4": {
-        "name": "Ich",
-        "text": "*Ich tat, als hätte ich nichts gesehen. — Aber warum fühlt sich mein Herz so an.*"
-    },
-    "wall_yuna_1": {
-        "name": "Ich",
-        "text": "*22 Uhr. Eine Nachricht von Yuna. «Hintertor der Schule. Komm jetzt.»*"
-    },
-    "wall_yuna_2": {
-        "name": "Ich",
-        "text": "*Die Schule bei Nacht wirkt wie ein anderer Ort. Yuna steht am Hintertor. Sie sieht — unruhiger aus als sonst.*"
-    },
-    "wall_yuna_3": {
-        "name": "Yuna",
-        "text": "Folge mir."
-    },
-    "wall_yuna_4": {
-        "name": "Ich",
-        "text": "*Yuna geht zum Bibliotheksanbau. An ihrem geheimen Leseplätzchen vorbei — tiefer hinein. Der Archivraum im Keller.*"
-    },
-    "wall_yuna_5": {
-        "name": "Ich",
-        "text": "*Zwischen verstaubten Regalen. Yuna zieht einen alten Umschlag heraus.*"
-    },
-    "wall_yuna_6": {
-        "name": "Yuna",
-        "text": "Das hier. Habe ich vor einem Jahr bekommen."
-    },
-    "wall_yuna_7": {
-        "name": "Ich",
-        "text": "*Ein Brief im Umschlag. — «An Yuna. Es tut mir leid. Ich muss aus Gründen gehen, die ich nicht erklären kann. — Junho Lee»*"
-    },
-    "wall_yuna_8": {
-        "name": "Ich",
-        "text": "...Junho Lee?"
-    },
-    "wall_yuna_9": {
-        "name": "Yuna",
-        "text": "Ein Senior, der früher mit mir herkam. — Die einzige Person, mit der ich eng war."
-    },
-    "wall_yuna_10": {
-        "name": "Yuna",
-        "text": "In der Mittelstufe war ich unsichtbar. Niemand in der Klasse hat mit mir geredet."
-    },
-    "wall_yuna_11": {
-        "name": "Yuna",
-        "text": "Er war der Erste. «Mir hat gefallen, was du geschrieben hast» — diese Worte. Für mich war das der Beweis, dass ich existiere."
-    },
-    "wall_yuna_12": {
-        "name": "Ich",
-        "text": "*Yunas Sätze sind viel länger als sonst. — Es ist das erste Mal, dass ich sie so viel reden höre.*"
-    },
-    "wall_yuna_13": {
-        "name": "Yuna",
-        "text": "Eines Tages wechselte er die Schule. Ohne Kontakt. Nur dieser Brief."
-    },
-    "wall_yuna_14": {
-        "name": "Yuna",
-        "text": "Die Person, die bewiesen hat, dass ich existiere — war verschwunden. Ich fühlte, als würde ich wieder unsichtbar werden."
-    },
-    "wall_yuna_15": {
-        "name": "Yuna",
-        "text": "Als du das erste Mal in die Bibliothek kamst. Du hattest eine ähnliche Ausstrahlung wie er. — Deshalb hatte ich Angst. Wenn ich mich wieder annähere, könntest du auch verschwinden."
-    },
-    "wall_yuna_16": {
-        "name": "Yuna",
-        "text": "Aber du kamst jeden Tag. Still. — Ohne zu verschwinden."
-    },
-    "wall_yuna_choice": {
-        "name": "Ich",
-        "text": "*Yunas Augen glänzen feucht. — Das ist das erste Mal, dass ich sie so viel reden höre.*",
-        "choices": [
-            "Ich bin nicht dieser Senior. Ich bin ich. Aber ich bleibe an deiner Seite.",
-            "Vergiss diesen Senior. Der, der jetzt vor dir steht, bin ich.",
-            "...Also bist du wegen ihm auf mich zugekommen? Als Ersatz?"
-        ]
-    },
-    "wall_yuna_moved_1": {
-        "name": "Yuna",
-        "text": "...Am Anfang habe ich vielleicht seinem Schatten nachgejagt."
-    },
-    "wall_yuna_moved_2": {
-        "name": "Yuna",
-        "text": "Aber jetzt..."
-    },
-    "wall_yuna_moved_3": {
-        "name": "Ich",
-        "text": "*Yuna hebt den Kopf. Das sind nicht ihre üblichen schläfrigen Augen. Sie sieht mich direkt an, ohne zu schwanken.*"
-    },
-    "wall_yuna_moved_4": {
-        "name": "Yuna",
-        "text": "Jetzt sehe ich dich. Nur dich."
-    },
-    "wall_yuna_moved_5": {
-        "name": "Ich",
-        "text": "*Yuna hat vier Sätze hintereinander gesagt. — Das kommt einem Geständnis gleich.*"
-    },
-    "wall_yuna_sub_1": {
-        "name": "Yuna",
-        "text": "...Bild dir nichts ein. Du bist kein Ersatz. Du bist längst mehr als genug, so wie du bist."
-    },
-    "wall_yuna_sub_2": {
-        "name": "Ich",
-        "text": "*Yuna lächelte leise. Unbeholfen, aber aufrichtig.*"
-    },
-    "wall_yuna_reject_1": {
-        "name": "Yuna",
-        "text": "......Denkst du das?"
-    },
-    "wall_yuna_reject_2": {
-        "name": "Yuna",
-        "text": "...Ja. Vielleicht war es so."
-    },
-    "wall_yuna_reject_3": {
-        "name": "Ich",
-        "text": "*Yuna dreht sich um. Ihre Schritte sind schnell. — Nicht ganz rennen, aber der Gang von jemandem, der rennen will.*"
-    },
-    "wall_yuna_reject_4": {
-        "name": "Ich",
-        "text": "*Das war die schlechteste Wahl. — Ich kann hören, wie sich Yunas Mauer wieder schließt.*"
-    },
-    "wall_yuna_glimpse_1": {
-        "name": "Ich",
-        "text": "*Ich verlasse die Schule und lasse Yuna zurück. Am Haupttor vorbei.*"
-    },
-    "wall_yuna_glimpse_2": {
-        "name": "Ich",
-        "text": "*Unter der Straßenlaterne vor dem Schultor. Seoyeon steht dort. — Nein, sie stand dort. Handy in der Hand, tippt etwas und löscht es. Tippt und löscht.*"
-    },
-    "wall_yuna_glimpse_3": {
-        "name": "Ich",
-        "text": "*Ich weiß nicht, wem sie schreiben will. — Doch, ich glaube schon.*"
-    },
-    "wall_yuna_glimpse_4": {
-        "name": "Ich",
-        "text": "*Seoyeon steckt ihr Handy in die Tasche und dreht sich um. Ihr Rücken ist gerade. Perfekt gerade. — Die Nacht kommt auch für die, die man nicht gewählt hat. Und sie verbringt diese Nacht allein.*"
-    },
-    "day4_night_regret": {
-        "name": "Ich",
-        "text": "*...Ich hätte es heute sagen können. Unter diesem Sonnenuntergang war es der perfekte Moment.*"
-    },
-    "day4_night_regret_2": {
-        "name": "Ich",
-        "text": "*Es ist okay. Morgen ist noch ein Tag. Morgen, ganz bestimmt.*"
-    },
-    "day4_night_regret_msg_branch": {
-        "name": "System",
-        "text": ""
-    },
-    "day4_night_regret_msg_seo": {
-        "name": "Seoyeon",
-        "text": "Heute hat Spaß gemacht. Hast du morgen auch Zeit?"
-    },
-    "day4_night_regret_msg_dain": {
-        "name": "Dain",
-        "text": "Heute war mega lustig!! Hast du morgen Zeit?!"
-    },
-    "day4_night_regret_msg_yuna": {
-        "name": "Yuna",
-        "text": "...Heute hat Spaß gemacht. Morgen auch okay?"
-    },
-    "day4_night_regret_msg": {
-        "name": "Ich",
-        "text": "*Eine Nachricht auf dem Handy. «Heute hat Spaß gemacht. Hast du morgen auch Zeit?»*"
-    },
-    "day4_night_regret_reply": {
-        "name": "Ich",
-        "text": "*«Ja, lass uns morgen auch treffen.» Morgen sage ich es auf jeden Fall.*"
-    },
-    "day4_night_reflect": {
-        "name": "Ich",
-        "text": "*So ging der Samstag vorüber. Was wird morgen bringen.*"
-    },
-    "day4_night_sleep": {
-        "name": "Ich",
-        "text": "*Ich schließe die Augen. Morgen ist der letzte Tag. — Es gibt noch Dinge, die gesagt werden müssen.*"
-    },
-    "day4_final": {
-        "name": "Ich",
-        "text": "*Die Samstagnacht wird tiefer. Morgen ist Sonntag — der letzte Tag.*"
-    },
-    "wall_seo_pre_high_1": {
-        "name": "Seoyeon",
-        "text": "...Darf ich heute ehrlich sein?"
-    },
-    "wall_seo_pre_high_2": {
-        "name": "Ich",
-        "text": "*Seoyeon spricht zuerst. Freiwillig. — Das ist das erste Mal.*"
-    },
-    "wall_seo_pre_low_1": {
-        "name": "Ich",
-        "text": "*Seoyeon schweigt. Ich muss den ersten Schritt machen.*"
-    },
-    "wall_seo_pre_low_1b": {
-        "name": "Ich",
-        "text": "*Ich habe eine Nachricht geschickt. \"Seoyeon, alles okay?\" — Eine Minute. Gelesen. Keine Antwort. Dann — mein Handy klingelt.*"
-    },
-    "wall_seo_pre_low_2": {
-        "name": "Seoyeon",
-        "text": "...Ich hab deine Nachricht gesehen. Kannst du jetzt rauskommen? Der Park. — Entschuldigung, so plötzlich."
-    },
-    "wall_seo_mention_1": {
-        "name": "Seoyeon",
-        "text": "...Dain scheint es in letzter Zeit schwer zu haben. Du weißt, dass du der Grund bist, oder?"
-    },
-    "wall_seo_mention_2": {
-        "name": "Seoyeon",
-        "text": "Mir geht es gut. Ich wurde zuerst gewählt. — Aber es beschäftigt mich trotzdem ein wenig."
-    },
-    "wall_seo_mention_3": {
-        "name": "Ich",
-        "text": "*Seoyeon schaut kurz in die Ferne. — Dann schaut sie mich wieder an. Ihr Blick ist fest.*"
-    },
-    "wall_seo_skin_check": {},
-    "wall_seo_skin70_1": {
-        "name": "Ich",
-        "text": "*Seoyeon streckt zuerst ihren kleinen Finger aus. Sie hört dort nicht auf. Sie nimmt meine Hand.*"
-    },
-    "wall_seo_skin70_2": {
-        "name": "Ich",
-        "text": "*Sie drückt ihre Lippen auf meine Stirn.*"
-    },
-    "wall_seo_skin70_3": {
-        "name": "Seoyeon",
-        "text": "...Das habe ich nicht geübt."
-    },
-    "wall_seo_skin60_1": {
-        "name": "Ich",
-        "text": "*Im Riesenrad lehnt sich Seoyeon an meine Schulter.*"
-    },
-    "wall_seo_skin60_2": {
-        "name": "Seoyeon",
-        "text": "...Höhen machen mir ein bisschen Angst."
-    },
-    "wall_dain_pre_high_1": {
-        "name": "Dain",
-        "text": "...Können wir heute über etwas anderes als Sport reden?"
-    },
-    "wall_dain_pre_high_2": {
-        "name": "Ich",
-        "text": "*Dain ist ungewöhnlich still. — Ein Ton, den ich noch nie gehört habe.*"
-    },
-    "wall_dain_pre_low_1": {
-        "name": "Ich",
-        "text": "*Dain zwingt sich zu lachen.*"
-    },
-    "wall_dain_pre_low_2": {
-        "name": "Dain",
-        "text": "Haha, heute hat Spaß gemacht, oder!"
-    },
-    "wall_dain_mention_1": {
-        "name": "Dain",
-        "text": "Weißt du, was Seoyeon zu mir gesagt hat? ...Nichts. Sie hat nichts gesagt. Das war schlimmer."
-    },
-    "wall_dain_mention_2": {
-        "name": "Dain",
-        "text": "Hätte sie was gesagt, hätte ich wenigstens dagegen kämpfen können. Wenn jemand nichts sagt, fühlt man sich wie der Böse."
-    },
-    "wall_dain_mention_3": {
-        "name": "Ich",
-        "text": "*Dain hält kurz inne. — Dann geht sie wieder. Mit leichterem Schritt.*"
-    },
-    "wall_dain_skin_check": {},
-    "wall_dain_skin70_1": {
-        "name": "Ich",
-        "text": "*Dain weint und fällt mir in die Arme.*"
-    },
-    "wall_dain_skin70_2": {
-        "name": "Dain",
-        "text": "Lass nicht los."
-    },
-    "wall_dain_skin70_3": {
-        "name": "Ich",
-        "text": "*Mein Hemd wird nass. Dains Hände umklammern meinen Rücken. Sie lässt nicht locker.*"
-    },
-    "wall_dain_skin60_1": {
-        "name": "Ich",
-        "text": "*Nach dem Sportzentrum sitzen wir auf einer Bank. Dain legt sich ohne Vorwarnung auf meinen Schoß.*"
-    },
-    "wall_dain_skin60_2": {
-        "name": "Dain",
-        "text": "Nur fünf Minuten. Aufladen."
-    },
-    "wall_yuna_pre_high_1": {
-        "name": "Yuna",
-        "text": "...Heute rede ich ohne Zettel."
-    },
-    "wall_yuna_pre_high_2": {
-        "name": "Ich",
-        "text": "*Yuna spricht direkt statt über Zettel. Ihre Sätze sind schon lang. — Die Mauer sinkt.*"
-    },
-    "wall_yuna_pre_low_1": {
-        "name": "Ich",
-        "text": "*Yuna reicht mir einen Zettel.*"
-    },
-    "wall_yuna_pre_low_2": {
-        "name": "Ich",
-        "text": "*Noch zu früh, es mit Worten zu sagen.*"
-    },
-    "wall_yuna_mention_1": {
-        "name": "Yuna",
-        "text": "...Dain hat geweint. Im Krankenzimmer."
-    },
-    "wall_yuna_mention_2": {
-        "name": "Yuna",
-        "text": "Weil du mich gewählt hast. ...Ich sollte mich entschuldigen. Aber die Worte kommen nicht. Das hasse ich noch mehr."
-    },
-    "wall_yuna_mention_3": {
-        "name": "Ich",
-        "text": "*Kurze Stille. — Yunas Ehrlichkeit wiegt noch schwerer.*"
-    },
-    "wall_yuna_skin_check": {},
-    "wall_yuna_skin70_1": {
-        "name": "Yuna",
-        "text": "Darf ich näher kommen?"
-    },
-    "wall_yuna_skin70_2": {
-        "name": "Ich",
-        "text": "*Sie lehnt sich an meine Schulter. Sie hält meine Hand fest.*"
-    },
-    "wall_yuna_skin70_3": {
-        "name": "Ich",
-        "text": "*Yunas Körpertemperatur ist niedrig. Aber die Hand, die sie hält, brennt.*"
-    },
-    "wall_yuna_skin60_1": {
-        "name": "Ich",
-        "text": "*Zwischen den Regalen des Antiquariats. Yuna drückt von hinten ihre Stirn an meinen Rücken.*"
-    },
-    "wall_yuna_skin60_2": {
-        "name": "Yuna",
-        "text": "...Weil du warm bist."
-    },
-    "night_nurse_msg_1": {
-        "name": "Schulkrankenschwester",
-        "text": "Das, was du heute im Krankenzimmer gesagt hast... Ich kann nachts nicht aufhören, daran zu denken."
-    },
-    "night_nurse_msg_2": {
-        "name": "{name}",
-        "text": "*Eine Nachricht von der Schulkrankenschwester kam an. 23 Uhr. Nur ein Satz.*"
-    },
-    "wall_seo_to_park": {
-        "name": "{name}",
-        "text": "*Ich verließ das Haus und ging zum Park.*"
-    }
+  "day4_night_start": {
+    "name": "Ich",
+    "text": "*Ich bin wieder zu Hause. Im Bett liegend ziehen die Erinnerungen des Tages wie ein Film an mir vorbei.*"
+  },
+  "day4_night_branch": {
+    "name": "System",
+    "text": ""
+  },
+  "wall_seo_1": {
+    "name": "Ich",
+    "text": "*22 Uhr. Ein Anruf von Seoyeon. Kein Lachen in ihrer Stimme.*"
+  },
+  "wall_seo_2": {
+    "name": "Seoyeon",
+    "text": "Kannst du jetzt rauskommen? Zum Park. — Tut mir leid, so plötzlich."
+  },
+  "wall_seo_3": {
+    "name": "Ich",
+    "text": "*Seoyeon sitzt auf einer Parkbank. Ihre Augen sind rot.*"
+  },
+  "wall_seo_4": {
+    "name": "Ich",
+    "text": "Seoyeon. Was ist los?"
+  },
+  "wall_seo_5": {
+    "name": "Seoyeon",
+    "text": "...Setz dich."
+  },
+  "wall_seo_6": {
+    "name": "Ich",
+    "text": "*Ich setze mich neben sie. Seoyeon starrt geradeaus. Lange Zeit.*"
+  },
+  "wall_seo_7": {
+    "name": "Seoyeon",
+    "text": "Meine Mutter hat heute angerufen."
+  },
+  "wall_seo_8": {
+    "name": "Seoyeon",
+    "text": "Sie hat sich wieder mit Papa gestritten."
+  },
+  "wall_seo_9": {
+    "name": "Ich",
+    "text": "*Seoyeon lächelt. — Nicht ihr gewöhnliches gelassenes Lächeln. Ein Lächeln zur Selbstverteidigung.*"
+  },
+  "wall_seo_10": {
+    "name": "Seoyeon",
+    "text": "Unser Haus sieht von außen normal aus, oder? Großes Haus, schönes Auto, Tochter als Schülerratsvorsitzende. Aber Mama und Papa sind seit einem Jahr Fremde unter einem Dach. Sie haben nur die Scheidungspapiere nicht eingereicht."
+  },
+  "wall_seo_11": {
+    "name": "Seoyeon",
+    "text": "Mama hat gesagt: «Wenigstens du musst perfekt sein, damit diese Familie zusammenhält.»"
+  },
+  "wall_seo_12": {
+    "name": "Seoyeon",
+    "text": "Ich war zehn. — Sie hat das zu einer Zehnjährigen gesagt."
+  },
+  "wall_seo_13": {
+    "name": "Seoyeon",
+    "text": "Von da an habe ich angefangen, vor dem Spiegel Lächeln zu üben. Den Winkel, um die Lippen anzuheben, das Timing, um die Augen zusammenzukneifen."
+  },
+  "wall_seo_14": {
+    "name": "Seoyeon",
+    "text": "Jedes Mal, wenn ich gelobt wurde, dachte ich: «Dieses Lächeln ist auch geübt — hat irgendjemand je das wahre Ich gesehen?»"
+  },
+  "wall_seo_15": {
+    "name": "Ich",
+    "text": "*Seoyeon hörte auf zu sprechen. Mit zitternden Händen nahm sie ihre Brille ab und umklammerte sie. Es ist das erste Mal, dass ich Seoyeons Gesicht ohne Brille sehe. Ihre Hände sind fest auf ihren Knien zusammengepresst.*"
+  },
+  "wall_seo_hug_choice": {
+    "name": "Ich",
+    "text": "*Seoyeon weint. So habe ich sie noch nie gesehen.*",
+    "choices": [
+      "Sie in den Arm nehmen",
+      "Ihr meinen kleinen Finger reichen"
+    ]
+  },
+  "wall_seo_hug_1": {
+    "name": "Ich",
+    "text": "*Ich nahm Seoyeon in den Arm.*"
+  },
+  "wall_seo_hug_2": {
+    "name": "Ich",
+    "text": "*Seoyeon vergrub ihr Gesicht an meiner Brust. Mein Schulhemd wird nass.*"
+  },
+  "wall_seo_hug_3": {
+    "name": "Seoyeon",
+    "text": "...Vor jemandem weinen — das ist das erste Mal seit der Grundschule. Acht Jahre. — Die ganze Zeit habe ich nur allein im Badezimmer geweint."
+  },
+  "wall_seo_pinky_1": {
+    "name": "Ich",
+    "text": "*Ich strecke meinen kleinen Finger aus.*"
+  },
+  "wall_seo_pinky_2": {
+    "name": "Ich",
+    "text": "Ich verspreche es. Wenn du weinen willst, darfst du vor mir weinen."
+  },
+  "wall_seo_pinky_3": {
+    "name": "Ich",
+    "text": "*Seoyeon starrt meinen kleinen Finger an.*"
+  },
+  "wall_seo_pinky_4": {
+    "name": "Seoyeon",
+    "text": "...Warum bist du so. Warum machst du — so leicht Versprechen."
+  },
+  "wall_seo_pinky_5": {
+    "name": "Seoyeon",
+    "text": "Alle sagen das und verschwinden dann."
+  },
+  "wall_seo_line_choice": {
+    "name": "Ich",
+    "text": "*Seoyeon wischt sich die Tränen ab und schaut mit zitternden Augen zu mir hoch.*",
+    "choices": [
+      "Ich mag diese Seoyeon lieber als die perfekte.",
+      "Du bist für mich nicht die Schülerratsvorsitzende — du bist einfach Seoyeon, meine Freundin.",
+      "Ehrlich gesagt dachte ich, du wärst makellos. Aber danke, dass du mir diese Seite zeigst."
+    ]
+  },
+  "wall_seo_line_react_1": {
+    "name": "Seoyeon",
+    "text": "...Wirklich?"
+  },
+  "wall_seo_line_react_2": {
+    "name": "Seoyeon",
+    "text": "...Freundin?"
+  },
+  "wall_seo_line_react_3": {
+    "name": "Seoyeon",
+    "text": "...Danke, schätze ich."
+  },
+  "wall_seo_after_line": {
+    "name": "Seoyeon",
+    "text": "Ist das wirklich in Ordnung?"
+  },
+  "wall_seo_after_line_2": {
+    "name": "Seoyeon",
+    "text": "Dieses Gesicht — es ist gerade ein Chaos, oder? Make-up verschmiert, Augen geschwollen. — Ist das wirklich in Ordnung?"
+  },
+  "wall_seo_after_line_3": {
+    "name": "Ich",
+    "text": "Es ist in Ordnung."
+  },
+  "wall_seo_after_line_4": {
+    "name": "Ich",
+    "text": "*Seoyeon lächelt. Ihre Mundwinkel bewegen sich von allein. — Das Make-up ist verschmiert, die Augen geschwollen. Aber ich kann den Blick nicht abwenden.*"
+  },
+  "wall_seo_after_line_5": {
+    "name": "Seoyeon",
+    "text": "Zum ersten Mal seit acht Jahren glaube ich, dass mein ungeübtes Gesicht vielleicht in Ordnung ist."
+  },
+  "wall_seo_glimpse_1": {
+    "name": "Ich",
+    "text": "*Auf dem Heimweg, nachdem ich Seoyeon nach Hause gebracht habe. — Ich komme an der Schule vorbei.*"
+  },
+  "wall_seo_glimpse_2": {
+    "name": "Ich",
+    "text": "*Im Fenster der Turnhalle brennt Licht. Notbeleuchtung. Jemand dribbelt allein einen Ball. — Ich kann schwach die Trikotnummer erkennen. Es ist Dain.*"
+  },
+  "wall_seo_glimpse_3": {
+    "name": "Ich",
+    "text": "*...Allein in der Turnhalle um 23 Uhr? Sie hat sich heute nicht bei mir gemeldet.*"
+  },
+  "wall_seo_glimpse_4": {
+    "name": "Ich",
+    "text": "*Ich blieb kurz stehen — und ging weiter. Heute Nacht gehört Seoyeon. Aber meine Füße sind schwer.*"
+  },
+  "wall_dain_1": {
+    "name": "Ich",
+    "text": "*22 Uhr. Eine Nachricht von Dain.*"
+  },
+  "wall_dain_2": {
+    "name": "Dain",
+    "text": "Hey, hast du gerade Zeit? lol"
+  },
+  "wall_dain_3": {
+    "name": "Dain",
+    "text": "Komm einfach lol! Ich hab die Hintertür der Turnhalle offen gelassen!"
+  },
+  "wall_dain_4": {
+    "name": "Ich",
+    "text": "*Die dunkle Turnhalle, nur von Notbeleuchtung erhellt. Dain dribbelt allein einen Volleyball. Sie lächelt stärker als sonst.*"
+  },
+  "wall_dain_5": {
+    "name": "Dain",
+    "text": "Du bist da?! Du bist spät!!"
+  },
+  "wall_dain_6": {
+    "name": "Ich",
+    "text": "Was machst du nachts in der Schule?"
+  },
+  "wall_dain_7": {
+    "name": "Dain",
+    "text": "Ich schleich mich manchmal rein! Zum Trainieren!!"
+  },
+  "wall_dain_8": {
+    "name": "Dain",
+    "text": "Stell mir zu!! Nur einmal!!"
+  },
+  "wall_dain_9": {
+    "name": "Ich",
+    "text": "*Ich stelle zu. Dain springt hoch — Schmetterschlag. Im Moment der Landung — greift sie sich ans rechte Knie und geht in die Hocke.*"
+  },
+  "wall_dain_10": {
+    "name": "Dain",
+    "text": "Nein, alles gut!! Nur kurz umgeknickt lol, ist nich..."
+  },
+  "wall_dain_11": {
+    "name": "Ich",
+    "text": "*Ihre Hand am Knie ist weiß geworden. — Das ist nicht nichts.*"
+  },
+  "wall_dain_12": {
+    "name": "Ich",
+    "text": "Dain. Dir geht es nicht gut."
+  },
+  "wall_dain_13": {
+    "name": "Ich",
+    "text": "*Ich setze mich wortlos neben sie. Dain schließt den Mund. Langes Schweigen.*"
+  },
+  "wall_dain_14": {
+    "name": "Dain",
+    "text": "...Kreuzband."
+  },
+  "wall_dain_15": {
+    "name": "Dain",
+    "text": "Letzten Sommer."
+  },
+  "wall_dain_16": {
+    "name": "Ich",
+    "text": "*Dain macht einen Gesichtsausdruck, den ich noch nie gesehen habe. Dain, ohne Lächeln.*"
+  },
+  "wall_dain_17": {
+    "name": "Dain",
+    "text": "Ich wurde operiert, und der Arzt — er hat es ganz vorsichtig gesagt. «Der Alltag wird in Ordnung sein, aber so springen wie früher...» — Ich weiß nicht mehr, was danach kam. Danach war alles still."
+  },
+  "wall_dain_18": {
+    "name": "Dain",
+    "text": "Sportstipendium. Profi. Nationalmannschaft. — Seit ich fünf war, war das alles. Und es endete in einem Satz."
+  },
+  "wall_dain_19": {
+    "name": "Dain",
+    "text": "Ich hab es niemandem gesagt. Nicht mal meinen Eltern. «Dain wäre nicht Dain, wenn sie nicht spielen könnte!» — Das wollte ich nicht hören."
+  },
+  "wall_dain_20": {
+    "name": "Dain",
+    "text": "Jedes Mal, wenn jemand in der Schule sagte «So voller Energie!» — hier drin. ...dachte ich, ich sterbe."
+  },
+  "wall_dain_21": {
+    "name": "Dain",
+    "text": "Heute auch. Als ich beim Date herumgelaufen bin. Als ich neben dir fröhlich getan habe. Mein Knie hat geschrien."
+  },
+  "wall_dain_22": {
+    "name": "Dain",
+    "text": "— Aber wenn ich dir auch noch zeige, dass es wehtut, dann bleibt mir nichts mehr."
+  },
+  "wall_dain_choice": {
+    "name": "Ich",
+    "text": "*Dain umklammert den Volleyball, den Kopf gesenkt. Ihre Schultern zittern.*",
+    "choices": [
+      "...Darf ich mich neben dich setzen?",
+      "Du darfst weinen. Du musst nicht fröhlich tun. Nicht vor mir.",
+      "...Lass uns aufstehen. Noch einmal."
+    ]
+  },
+  "wall_dain_newdream_1": {
+    "name": "{name}",
+    "text": "*Ich setzte mich neben Dain. Der Hallenboden ist kalt. Ich sagte nichts.*"
+  },
+  "wall_dain_newdream_2": {
+    "name": "{name}",
+    "text": "*Dain sagt auch nichts. — Seltsamer Moment. Zum ersten Mal herrscht mehr als eine Minute Stille neben Dain.*"
+  },
+  "wall_dain_newdream_3": {
+    "name": "Dain",
+    "text": "...Warum sagst du nichts?"
+  },
+  "wall_dain_newdream_4": {
+    "name": "{name}",
+    "text": "Damit ich zuhören kann, wenn du reden willst."
+  },
+  "wall_dain_newdream_5": {
+    "name": "{name}",
+    "text": "*Dain schaut auf ihre Hände auf den Knien. Ballt die Fäuste, öffnet sie wieder.*"
+  },
+  "wall_dain_newdream_6": {
+    "name": "Dain",
+    "text": "Echt witzig, oder? Seit ich fünf bin, stand ich jeden Tag auf diesem Feld... und jetzt soll es vorbei sein."
+  },
+  "wall_dain_newdream_7": {
+    "name": "Dain",
+    "text": "Aber mit dir neben mir — fühlt sich der Boden weniger kalt an."
+  },
+  "wall_dain_newdream_8": {
+    "name": "{name}",
+    "text": "*Nicht einen Ball auf dem Feld schlagen, sondern neben jemandem sitzen. — Für Dain war auch das wahrscheinlich das erste Mal.*"
+  },
+  "wall_dain_cry_1": {
+    "name": "Ich",
+    "text": "*Dain brach auf dem Spielfeld zusammen. Sie fing an zu weinen, den Volleyball umklammernd.*"
+  },
+  "wall_dain_cry_2": {
+    "name": "Ich",
+    "text": "*Als wären ein Jahr zurückgehaltener Tränen auf einmal herausgebrochen. Das Schluchzen hallt durch die leere Turnhalle.*"
+  },
+  "wall_dain_cry_3": {
+    "name": "Dain",
+    "text": "Ganz allein... jeden Morgen mein Knie bandagiert..."
+  },
+  "wall_dain_cry_4": {
+    "name": "Dain",
+    "text": "Ich hab es in meinen Handywecker geschrieben. «Lächle heute!!» steht da..."
+  },
+  "wall_dain_cry_5": {
+    "name": "Dain",
+    "text": "Jeden Morgen hab ich das gesehen... diese zwei Ausrufezeichen... und mich gezwungen zu lächeln..."
+  },
+  "wall_dain_cry_6": {
+    "name": "Ich",
+    "text": "*Sie hat zwei Ausrufezeichen in diese Weckernachricht geschrieben — weil eines nicht einmal gereicht hätte, sich selbst zu täuschen.*"
+  },
+  "wall_dain_lastspike_1": {
+    "name": "Ich",
+    "text": "*Ich streckte die Hand aus. Dain ergriff sie. Wir standen beide auf. — Ich stellte ihr zu.*"
+  },
+  "wall_dain_lastspike_2": {
+    "name": "Ich",
+    "text": "*Dain biss die Zähne zusammen und sprang — der perfekte Schmetterschlag. Der Ball knallt auf den Boden.*"
+  },
+  "wall_dain_lastspike_3": {
+    "name": "Ich",
+    "text": "*Sie griff sich bei der Landung ans Knie — aber sie lächelt.*"
+  },
+  "wall_dain_lastspike_4": {
+    "name": "Dain",
+    "text": "...Heh. Es tut weh. Aber es fühlt sich seltsam befreiend an. — Ich bin froh, dass mein letzter Schlag auf diesem Feld ein Zuspiel von {name} war."
+  },
+  "wall_dain_lastspike_5": {
+    "name": "Dain",
+    "text": "Tschüss, Spielfeld."
+  },
+  "wall_dain_lastspike_6": {
+    "name": "Dain",
+    "text": "— Dreizehn Jahre seit ich fünf war. Danke."
+  },
+  "wall_dain_farewell_1": {
+    "name": "Ich",
+    "text": "*Ein Satz von Dain ohne ein einziges Ausrufezeichen. — Das allein ist das Gewicht des Abschieds.*"
+  },
+  "wall_dain_farewell_2": {
+    "name": "Ich",
+    "text": "*Ich verlasse die Turnhalle mit Dain. Wir kommen am Hintertor der Schule vorbei.*"
+  },
+  "wall_dain_glimpse_1": {
+    "name": "Ich",
+    "text": "*Ich sehe Licht im Fenster des Bibliotheksanbaus. Eine kleine Schreibtischlampe.*"
+  },
+  "wall_dain_glimpse_2": {
+    "name": "Ich",
+    "text": "*Es ist Yuna. Allein sitzend. Ob sie liest oder einfach nur dasitzt — von hier kann ich es nicht sagen.*"
+  },
+  "wall_dain_glimpse_3": {
+    "name": "Ich",
+    "text": "*Yuna hat mir heute keine Nachricht geschrieben. — Yuna schreibt nie. Ob das normal ist oder nur heute so — weiß ich nicht.*"
+  },
+  "wall_dain_glimpse_4": {
+    "name": "Ich",
+    "text": "*Ich tat, als hätte ich nichts gesehen. — Aber warum fühlt sich mein Herz so an.*"
+  },
+  "wall_yuna_1": {
+    "name": "Ich",
+    "text": "*22 Uhr. Eine Nachricht von Yuna. «Hintertor der Schule. Komm jetzt.»*"
+  },
+  "wall_yuna_2": {
+    "name": "Ich",
+    "text": "*Die Schule bei Nacht wirkt wie ein anderer Ort. Yuna steht am Hintertor. Sie sieht — unruhiger aus als sonst.*"
+  },
+  "wall_yuna_3": {
+    "name": "Yuna",
+    "text": "Folge mir."
+  },
+  "wall_yuna_4": {
+    "name": "Ich",
+    "text": "*Yuna geht zum Bibliotheksanbau. An ihrem geheimen Leseplätzchen vorbei — tiefer hinein. Der Archivraum im Keller.*"
+  },
+  "wall_yuna_5": {
+    "name": "Ich",
+    "text": "*Zwischen verstaubten Regalen. Yuna zieht einen alten Umschlag heraus.*"
+  },
+  "wall_yuna_6": {
+    "name": "Yuna",
+    "text": "Das hier. Habe ich vor einem Jahr bekommen."
+  },
+  "wall_yuna_7": {
+    "name": "Ich",
+    "text": "*Ein Brief im Umschlag. — «An Yuna. Es tut mir leid. Ich muss aus Gründen gehen, die ich nicht erklären kann. — Junho Lee»*"
+  },
+  "wall_yuna_8": {
+    "name": "Ich",
+    "text": "...Junho Lee?"
+  },
+  "wall_yuna_9": {
+    "name": "Yuna",
+    "text": "Ein Senior, der früher mit mir herkam. — Die einzige Person, mit der ich eng war."
+  },
+  "wall_yuna_10": {
+    "name": "Yuna",
+    "text": "In der Mittelstufe war ich unsichtbar. Niemand in der Klasse hat mit mir geredet."
+  },
+  "wall_yuna_11": {
+    "name": "Yuna",
+    "text": "Er war der Erste. «Mir hat gefallen, was du geschrieben hast» — diese Worte. Für mich war das der Beweis, dass ich existiere."
+  },
+  "wall_yuna_12": {
+    "name": "Ich",
+    "text": "*Yunas Sätze sind viel länger als sonst. — Es ist das erste Mal, dass ich sie so viel reden höre.*"
+  },
+  "wall_yuna_13": {
+    "name": "Yuna",
+    "text": "Eines Tages wechselte er die Schule. Ohne Kontakt. Nur dieser Brief."
+  },
+  "wall_yuna_14": {
+    "name": "Yuna",
+    "text": "Die Person, die bewiesen hat, dass ich existiere — war verschwunden. Ich fühlte, als würde ich wieder unsichtbar werden."
+  },
+  "wall_yuna_15": {
+    "name": "Yuna",
+    "text": "Als du das erste Mal in die Bibliothek kamst. Du hattest eine ähnliche Ausstrahlung wie er. — Deshalb hatte ich Angst. Wenn ich mich wieder annähere, könntest du auch verschwinden."
+  },
+  "wall_yuna_16": {
+    "name": "Yuna",
+    "text": "Aber du kamst jeden Tag. Still. — Ohne zu verschwinden."
+  },
+  "wall_yuna_choice": {
+    "name": "Ich",
+    "text": "*Yunas Augen glänzen feucht. — Das ist das erste Mal, dass ich sie so viel reden höre.*",
+    "choices": [
+      "Ich bin nicht dieser Senior. Ich bin ich. Aber ich bleibe an deiner Seite.",
+      "Vergiss diesen Senior. Der, der jetzt vor dir steht, bin ich.",
+      "...Also bist du wegen ihm auf mich zugekommen? Als Ersatz?"
+    ]
+  },
+  "wall_yuna_moved_1": {
+    "name": "Yuna",
+    "text": "...Am Anfang habe ich vielleicht seinem Schatten nachgejagt."
+  },
+  "wall_yuna_moved_2": {
+    "name": "Yuna",
+    "text": "Aber jetzt..."
+  },
+  "wall_yuna_moved_3": {
+    "name": "Ich",
+    "text": "*Yuna hebt den Kopf. Das sind nicht ihre üblichen schläfrigen Augen. Sie sieht mich direkt an, ohne zu schwanken.*"
+  },
+  "wall_yuna_moved_4": {
+    "name": "Yuna",
+    "text": "Jetzt sehe ich dich. Nur dich."
+  },
+  "wall_yuna_moved_5": {
+    "name": "Ich",
+    "text": "*Yuna hat vier Sätze hintereinander gesagt. — Das kommt einem Geständnis gleich.*"
+  },
+  "wall_yuna_sub_1": {
+    "name": "Yuna",
+    "text": "...Bild dir nichts ein. Du bist kein Ersatz. Du bist längst mehr als genug, so wie du bist."
+  },
+  "wall_yuna_sub_2": {
+    "name": "Ich",
+    "text": "*Yuna lächelte leise. Unbeholfen, aber aufrichtig.*"
+  },
+  "wall_yuna_reject_1": {
+    "name": "Yuna",
+    "text": "......Denkst du das?"
+  },
+  "wall_yuna_reject_2": {
+    "name": "Yuna",
+    "text": "...Ja. Vielleicht war es so."
+  },
+  "wall_yuna_reject_3": {
+    "name": "Ich",
+    "text": "*Yuna dreht sich um. Ihre Schritte sind schnell. — Nicht ganz rennen, aber der Gang von jemandem, der rennen will.*"
+  },
+  "wall_yuna_reject_4": {
+    "name": "Ich",
+    "text": "*Das war die schlechteste Wahl. — Ich kann hören, wie sich Yunas Mauer wieder schließt.*"
+  },
+  "wall_yuna_glimpse_1": {
+    "name": "Ich",
+    "text": "*Ich verlasse die Schule und lasse Yuna zurück. Am Haupttor vorbei.*"
+  },
+  "wall_yuna_glimpse_2": {
+    "name": "Ich",
+    "text": "*Unter der Straßenlaterne vor dem Schultor. Seoyeon steht dort. — Nein, sie stand dort. Handy in der Hand, tippt etwas und löscht es. Tippt und löscht.*"
+  },
+  "wall_yuna_glimpse_3": {
+    "name": "Ich",
+    "text": "*Ich weiß nicht, wem sie schreiben will. — Doch, ich glaube schon.*"
+  },
+  "wall_yuna_glimpse_4": {
+    "name": "Ich",
+    "text": "*Seoyeon steckt ihr Handy in die Tasche und dreht sich um. Ihr Rücken ist gerade. Perfekt gerade. — Die Nacht kommt auch für die, die man nicht gewählt hat. Und sie verbringt diese Nacht allein.*"
+  },
+  "day4_night_regret": {
+    "name": "Ich",
+    "text": "*...Ich hätte es heute sagen können. Unter diesem Sonnenuntergang war es der perfekte Moment.*"
+  },
+  "day4_night_regret_2": {
+    "name": "Ich",
+    "text": "*Es ist okay. Morgen ist noch ein Tag. Morgen, ganz bestimmt.*"
+  },
+  "day4_night_regret_msg_branch": {
+    "name": "System",
+    "text": ""
+  },
+  "day4_night_regret_msg_seo": {
+    "name": "Seoyeon",
+    "text": "Heute hat Spaß gemacht. Hast du morgen auch Zeit?"
+  },
+  "day4_night_regret_msg_dain": {
+    "name": "Dain",
+    "text": "Heute war mega lustig!! Hast du morgen Zeit?!"
+  },
+  "day4_night_regret_msg_yuna": {
+    "name": "Yuna",
+    "text": "...Heute hat Spaß gemacht. Morgen auch okay?"
+  },
+  "day4_night_regret_msg": {
+    "name": "Ich",
+    "text": "*Eine Nachricht auf dem Handy. «Heute hat Spaß gemacht. Hast du morgen auch Zeit?»*"
+  },
+  "day4_night_regret_reply": {
+    "name": "Ich",
+    "text": "*«Ja, lass uns morgen auch treffen.» Morgen sage ich es auf jeden Fall.*"
+  },
+  "day4_night_reflect": {
+    "name": "Ich",
+    "text": "*So ging der Samstag vorüber. Was wird morgen bringen.*"
+  },
+  "day4_night_sleep": {
+    "name": "Ich",
+    "text": "*Ich schließe die Augen. Morgen ist der letzte Tag. — Es gibt noch Dinge, die gesagt werden müssen.*"
+  },
+  "day4_final": {
+    "name": "Ich",
+    "text": "*Die Samstagnacht wird tiefer. Morgen ist Sonntag — der letzte Tag.*"
+  },
+  "wall_seo_pre_high_1": {
+    "name": "Seoyeon",
+    "text": "...Darf ich heute ehrlich sein?"
+  },
+  "wall_seo_pre_high_2": {
+    "name": "Ich",
+    "text": "*Seoyeon spricht zuerst. Freiwillig. — Das ist das erste Mal.*"
+  },
+  "wall_seo_pre_low_1": {
+    "name": "Ich",
+    "text": "*Seoyeon schweigt. Ich muss den ersten Schritt machen.*"
+  },
+  "wall_seo_pre_low_1b": {
+    "name": "Ich",
+    "text": "*Ich habe eine Nachricht geschickt. \"Seoyeon, alles okay?\" — Eine Minute. Gelesen. Keine Antwort. Dann — mein Handy klingelt.*"
+  },
+  "wall_seo_pre_low_2": {
+    "name": "Seoyeon",
+    "text": "...Ich hab deine Nachricht gesehen. Kannst du jetzt rauskommen? Der Park. — Entschuldigung, so plötzlich."
+  },
+  "wall_seo_mention_1": {
+    "name": "Seoyeon",
+    "text": "...Dain scheint es in letzter Zeit schwer zu haben. Du weißt, dass du der Grund bist, oder?"
+  },
+  "wall_seo_mention_2": {
+    "name": "Seoyeon",
+    "text": "Mir geht es gut. Ich wurde zuerst gewählt. — Aber es beschäftigt mich trotzdem ein wenig."
+  },
+  "wall_seo_mention_3": {
+    "name": "Ich",
+    "text": "*Seoyeon schaut kurz in die Ferne. — Dann schaut sie mich wieder an. Ihr Blick ist fest.*"
+  },
+  "wall_seo_skin_check": {},
+  "wall_seo_skin70_1": {
+    "name": "Ich",
+    "text": "*Seoyeon streckt zuerst ihren kleinen Finger aus. Sie hört dort nicht auf. Sie nimmt meine Hand.*"
+  },
+  "wall_seo_skin70_2": {
+    "name": "Ich",
+    "text": "*Sie drückt ihre Lippen auf meine Stirn.*"
+  },
+  "wall_seo_skin70_3": {
+    "name": "Seoyeon",
+    "text": "...Das habe ich nicht geübt."
+  },
+  "wall_seo_skin60_1": {
+    "name": "Ich",
+    "text": "*Im Riesenrad lehnt sich Seoyeon an meine Schulter.*"
+  },
+  "wall_seo_skin60_2": {
+    "name": "Seoyeon",
+    "text": "...Höhen machen mir ein bisschen Angst."
+  },
+  "wall_dain_pre_high_1": {
+    "name": "Dain",
+    "text": "...Können wir heute über etwas anderes als Sport reden?"
+  },
+  "wall_dain_pre_high_2": {
+    "name": "Ich",
+    "text": "*Dain ist ungewöhnlich still. — Ein Ton, den ich noch nie gehört habe.*"
+  },
+  "wall_dain_pre_low_1": {
+    "name": "Ich",
+    "text": "*Dain zwingt sich zu lachen.*"
+  },
+  "wall_dain_pre_low_2": {
+    "name": "Dain",
+    "text": "Haha, heute hat Spaß gemacht, oder!"
+  },
+  "wall_dain_mention_1": {
+    "name": "Dain",
+    "text": "Weißt du, was Seoyeon zu mir gesagt hat? ...Nichts. Sie hat nichts gesagt. Das war schlimmer."
+  },
+  "wall_dain_mention_2": {
+    "name": "Dain",
+    "text": "Hätte sie was gesagt, hätte ich wenigstens dagegen kämpfen können. Wenn jemand nichts sagt, fühlt man sich wie der Böse."
+  },
+  "wall_dain_mention_3": {
+    "name": "Ich",
+    "text": "*Dain hält kurz inne. — Dann geht sie wieder. Mit leichterem Schritt.*"
+  },
+  "wall_dain_skin_check": {},
+  "wall_dain_skin70_1": {
+    "name": "Ich",
+    "text": "*Dain weint und fällt mir in die Arme.*"
+  },
+  "wall_dain_skin70_2": {
+    "name": "Dain",
+    "text": "Lass nicht los."
+  },
+  "wall_dain_skin70_3": {
+    "name": "Ich",
+    "text": "*Mein Hemd wird nass. Dains Hände umklammern meinen Rücken. Sie lässt nicht locker.*"
+  },
+  "wall_dain_skin60_1": {
+    "name": "Ich",
+    "text": "*Nach dem Sportzentrum sitzen wir auf einer Bank. Dain legt sich ohne Vorwarnung auf meinen Schoß.*"
+  },
+  "wall_dain_skin60_2": {
+    "name": "Dain",
+    "text": "Nur fünf Minuten. Aufladen."
+  },
+  "wall_yuna_pre_high_1": {
+    "name": "Yuna",
+    "text": "...Heute rede ich ohne Zettel."
+  },
+  "wall_yuna_pre_high_2": {
+    "name": "Ich",
+    "text": "*Yuna spricht direkt statt über Zettel. Ihre Sätze sind schon lang. — Die Mauer sinkt.*"
+  },
+  "wall_yuna_pre_low_1": {
+    "name": "Ich",
+    "text": "*Yuna reicht mir einen Zettel.*"
+  },
+  "wall_yuna_pre_low_2": {
+    "name": "Ich",
+    "text": "*Noch zu früh, es mit Worten zu sagen.*"
+  },
+  "wall_yuna_mention_1": {
+    "name": "Yuna",
+    "text": "...Dain hat geweint. Im Krankenzimmer."
+  },
+  "wall_yuna_mention_2": {
+    "name": "Yuna",
+    "text": "Weil du mich gewählt hast. ...Ich sollte mich entschuldigen. Aber die Worte kommen nicht. Das hasse ich noch mehr."
+  },
+  "wall_yuna_mention_3": {
+    "name": "Ich",
+    "text": "*Kurze Stille. — Yunas Ehrlichkeit wiegt noch schwerer.*"
+  },
+  "wall_yuna_skin_check": {},
+  "wall_yuna_skin70_1": {
+    "name": "Yuna",
+    "text": "Darf ich näher kommen?"
+  },
+  "wall_yuna_skin70_2": {
+    "name": "Ich",
+    "text": "*Sie lehnt sich an meine Schulter. Sie hält meine Hand fest.*"
+  },
+  "wall_yuna_skin70_3": {
+    "name": "Ich",
+    "text": "*Yunas Körpertemperatur ist niedrig. Aber die Hand, die sie hält, brennt.*"
+  },
+  "wall_yuna_skin60_1": {
+    "name": "Ich",
+    "text": "*Zwischen den Regalen des Antiquariats. Yuna drückt von hinten ihre Stirn an meinen Rücken.*"
+  },
+  "wall_yuna_skin60_2": {
+    "name": "Yuna",
+    "text": "...Weil du warm bist."
+  },
+  "night_nurse_msg_1": {
+    "name": "Schulkrankenschwester",
+    "text": "Das, was du heute im Krankenzimmer gesagt hast... Ich kann nachts nicht aufhören, daran zu denken."
+  },
+  "night_nurse_msg_2": {
+    "name": "{name}",
+    "text": "*Eine Nachricht von der Schulkrankenschwester kam an. 23 Uhr. Nur ein Satz.*"
+  },
+  "wall_seo_to_park": {
+    "name": "{name}",
+    "text": "*Ich verließ das Haus und ging zum Park.*"
+  }
 }
