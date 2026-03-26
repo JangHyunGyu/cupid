@@ -25,7 +25,7 @@
             const CURRENT_VERSION = '2.0.0';
             // 서비스 워커 등록 (로컬 개발 환경에서는 스킵)
             if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
-                navigator.serviceWorker.register('service-worker.js')
+                navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
                     .then(reg => console.log('[SW] 등록 완료:', reg.scope))
                     .catch(err => console.log('[SW] 등록 실패:', err));
             }
@@ -1147,7 +1147,7 @@
         });
 
         function closeSettingsModal(e) {
-            if (e && e.target !== e.currentTarget && e.target.id !== 'settingsModal') return;
+            if (e && e.target !== e.currentTarget) return;
             document.getElementById('settingsModal').classList.remove('is-open');
         }
 

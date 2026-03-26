@@ -695,7 +695,7 @@ Object.assign(SCENARIO[3], {
     "haeun_warn_2b": {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/haeun_normal.png",
         "next": "haeun_warn_3"
     },
     "haeun_warn_3": {
@@ -713,13 +713,13 @@ Object.assign(SCENARIO[3], {
     "haeun_warn_4b": {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/haeun_normal.png",
         "next": "haeun_warn_5"
     },
     "haeun_warn_5": {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/haeun_normal.png",
         "next": "haeun_warn_5b"
     },
     "haeun_warn_5b": {
@@ -731,7 +731,7 @@ Object.assign(SCENARIO[3], {
     "haeun_warn_5c": {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/haeun_normal.png",
         "next": "haeun_warn_6"
     },
     "haeun_warn_6": {
@@ -800,13 +800,13 @@ Object.assign(SCENARIO[3], {
     "minsu_d3_5b": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_d3_6"
     },
     "minsu_d3_6": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_d3_6b"
     },
     "minsu_d3_6b": {
@@ -824,13 +824,13 @@ Object.assign(SCENARIO[3], {
     "minsu_d3_8": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_d3_9"
     },
     "minsu_d3_9": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_d3_10"
     },
     "minsu_d3_10": {

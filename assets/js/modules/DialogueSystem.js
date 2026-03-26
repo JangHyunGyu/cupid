@@ -186,6 +186,7 @@ class DialogueSystem {
             es: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Profesora", Nurse: "Enfermera" },
             ja: { Seoyeon: "ソヨン", Yuna: "ユナ", Dain: "ダイン", Teacher: "担任先生", Nurse: "保健先生" },
             fr: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Professeur Principal", Nurse: "Infirmière Scolaire" },
+            de: { Seoyeon: "Seoyeon", Yuna: "Yuna", Dain: "Dain", Teacher: "Homeroom", Nurse: "Health Room" },
             ko: { Seoyeon: "서연", Yuna: "유나", Dain: "다인", Teacher: "담임선생님", Nurse: "보건선생님" }
         };
         const charNames = charNamesByLang[lang] || charNamesByLang.ko;

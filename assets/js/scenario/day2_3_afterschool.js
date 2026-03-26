@@ -684,7 +684,7 @@ Object.assign(SCENARIO[2], {
     "minsu_warn_3": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_4"
     },
     "minsu_warn_4": {
@@ -696,7 +696,7 @@ Object.assign(SCENARIO[2], {
     "minsu_warn_5": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_6"
     },
     "minsu_warn_6": {
@@ -708,7 +708,7 @@ Object.assign(SCENARIO[2], {
     "minsu_warn_7": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_8"
     },
     "minsu_warn_8": {
@@ -720,7 +720,7 @@ Object.assign(SCENARIO[2], {
     "minsu_warn_8b": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_9"
     },
     "minsu_warn_9": {
@@ -732,7 +732,7 @@ Object.assign(SCENARIO[2], {
     "minsu_warn_10": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_11"
     },
     "minsu_warn_11": {
@@ -744,7 +744,7 @@ Object.assign(SCENARIO[2], {
     "minsu_warn_11b": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_11c"
     },
     "minsu_warn_11c": {
@@ -756,7 +756,7 @@ Object.assign(SCENARIO[2], {
     "minsu_warn_12": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_13"
     },
     "minsu_warn_13": {
@@ -768,13 +768,13 @@ Object.assign(SCENARIO[2], {
     "minsu_warn_13b": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_14"
     },
     "minsu_warn_14": {
         "background": "assets/images/background/school.png",
         "sunset": true,
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_warn_15"
     },
     "minsu_warn_15": {

@@ -176,7 +176,7 @@ Object.assign(SCENARIO[2], {
         "next": "morning2_dain_claim_1"
     },
     "morning2_dain_claim_1": {
-        "character": null,
+        "character": "assets/images/characters/minsu_smirk.png",
         "background": "assets/images/background/room_school.png",
         "next": "morning2_dain_claim_2"
     },
