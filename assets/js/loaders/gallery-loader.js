@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // 갤러리 스크립트 로드 (document.write는 동기적)
 (function () {
     const basePath = 'assets/js/';
-    const version = '2.3.3';
+    const version = '2.3.4';
 
     const scripts = [
         // 1. 데이터 및 진행도 (의존성 없음)
