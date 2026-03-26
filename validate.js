@@ -224,7 +224,7 @@ for (const [, { scene }] of Object.entries(allScenes)) {
         if (c.setFlags) c.setFlags.forEach(f => setFlags.add(f));
     });
 
-    const addChecked = (c) => { if (typeof c === 'string') checkedFlags.add(c); };
+    const addChecked = (c) => { if (typeof c === 'string') c.split(/\s*(?:\|\||&&)\s*/).forEach(f => { if (f) checkedFlags.add(f); }); };
     if (scene.condition) addChecked(scene.condition);
     if (scene.choices) scene.choices.forEach(c => { addChecked(c.condition); addChecked(c.excludeCondition); });
     if (scene.branches) scene.branches.forEach(b => { addChecked(b.condition); addChecked(b.excludeCondition); });
@@ -1635,8 +1635,13 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     if (scene.hasOwnProperty('character') && scene.character === null && NAME_TO_PREFIX[speakerName]) {
         // characters 슬롯이 있으면 괜찮음 (메신저/투명 캐릭터 연출)
         if (!scene.characters) {
-            warnings.push('[IMAGE_MATCH] ' + sceneId + ': speaker="' + speakerName + '" 인데 character=null (캐릭터가 말하는데 이미지 없음)');
-            charMatchWarnings++;
+            // CG/이벤트/엔딩 배경에서는 캐릭터가 이미지에 포함되어 있으므로 제외
+            const bg = scene.background || '';
+            const isCgBackground = /ending_|_event\d/.test(bg);
+            if (!isCgBackground) {
+                warnings.push('[IMAGE_MATCH] ' + sceneId + ': speaker="' + speakerName + '" 인데 character=null (캐릭터가 말하는데 이미지 없음)');
+                charMatchWarnings++;
+            }
         }
     }
     // 반대: character가 있는데 name이 "{name}"(주인공)인 경우는 정상 (나레이션에서 대화 상대 유지)
