@@ -532,9 +532,13 @@ html[lang="de"] #message {
     border-radius: 8px;
     padding: 8px 12px;
     color: #fff;
-    font-size: 0.95rem;
+    font-size: 16px;
     outline: none;
     min-width: 0;
+    /* 모바일에서 부모의 user-select:none이 input 포커스를 방해하지 않도록 명시 */
+    -webkit-user-select: text !important;
+    user-select: text !important;
+    touch-action: auto;
 }
 
 #chat-input:focus-visible {

@@ -414,6 +414,13 @@ class FreeTalkSystem {
         // 스킵 버튼 활성화 (대화 중단 가능하도록)
         if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
 
+        // 채팅 입력창 활성화 (이전 세션에서 disabled 상태로 남아있을 수 있음)
+        if (this.uiManager.chatInput) {
+            this.uiManager.chatInput.disabled = false;
+            this.uiManager.chatInput.readOnly = false;
+        }
+        if (this.uiManager.chatSendBtn) this.uiManager.chatSendBtn.disabled = false;
+
         // ─────────────────────────────────────────────────────────────
         // 초기 대사 표시 (씬에 text가 있는 경우)
         // ─────────────────────────────────────────────────────────────
@@ -422,6 +429,11 @@ class FreeTalkSystem {
         if (scene.text) {
             await this.dialogueSystem.typeText(scene.text, scene.name);
             this.freeTalkHistory.push({ role: "assistant", content: scene.text });
+        }
+
+        // 초기 대사 출력 후 입력창에 포커스 (모바일 키보드 활성화)
+        if (this.uiManager.chatInput) {
+            this.uiManager.chatInput.focus();
         }
     }
 
