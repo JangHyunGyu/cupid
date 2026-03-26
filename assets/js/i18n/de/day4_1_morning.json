@@ -273,7 +273,9 @@
   },
   "hidden_nurse_d4_freetalk": {
     "name": "Schulkrankenschwester",
-    "text": "*Unterhaltung mit der Krankenschwester im Imbiss.*"
+    "text": "*Unterhaltung mit der Krankenschwester im Imbiss.*",
+    "context": "Tag 4. Wochenende. Beim Gesundheitscheck geholfen und im Imbiss gegessen. Gespräch über Burnout im Universitätskrankenhaus. Ton: Das Gespräch ist ernst geworden. Aufregung und Anspannung eines Dates. Mehr Aufrichtigkeit als Scherze. Momente, in denen Emotionen ehrlich werden.",
+    "personality": "Die Krankenschwester in Freizeitkleidung wirkt wie eine ältere Schwester. Verspieltheit und Aufrichtigkeit wechseln sich ab, und sie versteht das Gewicht, beim Namen genannt zu werden."
   },
   "hidden_nurse_d4_meal_1b": {
     "name": "{name}",
