@@ -146,7 +146,7 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_nurse_d5_check"
     },
     "hidden_nurse_d5_check": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": null,
         "branches": [
             { "condition": "nurse_day4", "next": "hidden_nurse_d5_1" },
@@ -154,32 +154,32 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "hidden_nurse_d5_1": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_2"
     },
     "hidden_nurse_d5_2": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_3"
     },
     "hidden_nurse_d5_3": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_4"
     },
     "hidden_nurse_d5_4": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_5"
     },
     "hidden_nurse_d5_5": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_choice"
     },
     "hidden_nurse_d5_choice": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
             {
@@ -193,22 +193,22 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "hidden_nurse_d5_choice_a": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_shy.png",
         "next": "hidden_nurse_d5_6"
     },
     "hidden_nurse_d5_choice_b": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_6"
     },
     "hidden_nurse_d5_6": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_7"
     },
     "hidden_nurse_d5_7": {
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "setFlag": "nurse_day5",
         "stats": { "Nurse": { "affinity": 7 } },
@@ -216,7 +216,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_nurse_d5_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/nurse_room.jpg",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "morning5_end"
     },
