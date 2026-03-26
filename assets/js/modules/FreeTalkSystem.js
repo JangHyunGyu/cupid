@@ -448,7 +448,7 @@ class FreeTalkSystem {
         if (confirmed) {
             // 타이핑 중이면 중단
             if (this.dialogueSystem.isCurrentlyTyping()) {
-                this.dialogueSystem.skipTyping();
+                this.dialogueSystem.requestSkip();
             }
             this.freeTalkTurns = this.currentMaxTurns;
             this.stateManager.setFlag(`messaged_${this.currentSceneId}`);
@@ -600,7 +600,7 @@ class FreeTalkSystem {
 
                 // 캐릭터별 히든 키워드 정의
                 const HIDDEN_KEYWORDS = {
-                    "유나": {
+                    "Yuna": {
                         flag: "keyword_yuna_junho",
                         keywords: { ko: ["준호", "이준호"], en: ["junho", "lee junho"], ja: ["ジュンホ"], es: ["junho"], fr: ["junho"], de: ["junho"] },
                         response: {
@@ -613,7 +613,7 @@ class FreeTalkSystem {
                         },
                         expression: "sad", affinity: 5
                     },
-                    "서연": {
+                    "Seoyeon": {
                         flag: "keyword_seo_family",
                         keywords: { ko: ["엄마", "부모님", "이혼"], en: ["mom", "mother", "parents", "divorce"], ja: ["お母さん", "両親", "離婚"], es: ["mamá", "padres", "divorcio"], fr: ["maman", "parents", "divorce"], de: ["mama", "eltern", "scheidung"] },
                         response: {
@@ -626,7 +626,7 @@ class FreeTalkSystem {
                         },
                         expression: "sad", affinity: 5
                     },
-                    "다인": {
+                    "Dain": {
                         flag: "keyword_dain_knee",
                         keywords: { ko: ["무릎", "인대", "수술", "프로"], en: ["knee", "ligament", "surgery", "pro"], ja: ["膝", "靭帯", "手術", "プロ"], es: ["rodilla", "ligamento", "cirugía", "profesional"], fr: ["genou", "ligament", "chirurgie", "pro"], de: ["knie", "band", "operation", "profi"] },
                         response: {
@@ -639,7 +639,7 @@ class FreeTalkSystem {
                         },
                         expression: "sad", affinity: 5
                     },
-                    "담임": {
+                    "Teacher": {
                         flag: "keyword_homeroom_writing",
                         keywords: { ko: ["원고", "소설", "등단"], en: ["manuscript", "novel", "debut"], ja: ["原稿", "小説", "デビュー"], es: ["manuscrito", "novela", "debut"], fr: ["manuscrit", "roman", "début"], de: ["manuskript", "roman", "debüt"] },
                         response: {
@@ -652,7 +652,7 @@ class FreeTalkSystem {
                         },
                         expression: "shy", affinity: 5
                     },
-                    "보건": {
+                    "Nurse": {
                         flag: "keyword_nurse_hospital",
                         keywords: { ko: ["환자", "대학병원", "응급실"], en: ["patient", "hospital", "er", "emergency"], ja: ["患者", "大学病院", "救急"], es: ["paciente", "hospital", "emergencia"], fr: ["patient", "hôpital", "urgences"], de: ["patient", "krankenhaus", "notaufnahme"] },
                         response: {
