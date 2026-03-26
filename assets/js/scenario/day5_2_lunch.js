@@ -95,7 +95,7 @@ Object.assign(SCENARIO[5], {
     // ── 유나 루트 ──
     "tour_yuna_1_check": {
         "character": null,
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "bgm": "sunset1.mp3",
         "branches": [
             { "condition": "chose_yuna_lunch", "next": "tour_yuna_1" },
@@ -104,61 +104,61 @@ Object.assign(SCENARIO[5], {
     },
     "tour_yuna_1": {
         "character": "assets/images/characters/yuna_normal.png",
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "next": "tour_yuna_2"
     },
     "tour_yuna_1b": {
         "character": "assets/images/characters/yuna_normal.png",
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "next": "tour_yuna_2"
     },
     "tour_yuna_2": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_3"
     },
     "tour_yuna_3": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_4"
     },
     "tour_yuna_4": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_5"
     },
     "tour_yuna_5": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_6"
     },
     "tour_yuna_6": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
         "next": "tour_yuna_7"
     },
     "tour_yuna_7": {
         "character": "assets/images/characters/yuna_normal.png",
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "next": "tour_yuna_8"
     },
     "tour_yuna_8": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_9"
     },
     "tour_yuna_9": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_10"
     },
     "tour_yuna_10": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "next": "tour_yuna_11"
     },
     "tour_yuna_11": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "stats": {
             "Yuna": {
@@ -168,12 +168,12 @@ Object.assign(SCENARIO[5], {
         "next": "tour_yuna_freetalk"
     },
     "tour_yuna_end": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "next": "tour_yuna_end_2"
     },
     "tour_yuna_end_2": {
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "next": "after5_start"
     },
@@ -283,7 +283,7 @@ Object.assign(SCENARIO[5], {
 ,
     "tour_yuna_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/library_old.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_end"
     }
