@@ -232,7 +232,7 @@
     },
     "after_nurse_enter_1": {
         "name": "Ich",
-        "text": "*Ich öffne die Tür zum Krankenzimmer. Ein leichter Desinfektionsgeruch. Weiße Vorhänge, ein weißes Bett, ein kleiner Schreibtisch. Am Schreibtisch sitzt eine Frau. Weißer Kittel, ein Stethoskop um den Hals. Langes braunes Haar locker zusammengebunden, sie beobachtet mich über ihre Brille hinweg, das Kinn auf eine Hand gestützt. Sie hat gerade etwas gelesen — und blickt auf.*"
+        "text": "*Ich öffne die Tür zum Krankenzimmer. Ein leichter Desinfektionsgeruch. Weiße Vorhänge, ein weißes Bett, ein kleiner Schreibtisch. Am Schreibtisch sitzt eine Frau. Weißer Kittel, ein Stethoskop um den Hals. Ein gepflegter aschvioletter Bob-Schnitt, sie beobachtet mich über ihre Brille hinweg, das Kinn auf eine Hand gestützt. Sie hat gerade etwas gelesen — und blickt auf.*"
     },
     "after_nurse_enter_2": {
         "name": "Schulkrankenschwester",
