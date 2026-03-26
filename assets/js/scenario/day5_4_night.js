@@ -1490,7 +1490,7 @@ Object.assign(SCENARIO[5], {
     // NURSE TRUE LOVE END (Hidden Route)
     // =========================================================================
     "hidden_true_nurse_1": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/cafe.png",
         "character": null,
         "night": true,
         "fade": true,
