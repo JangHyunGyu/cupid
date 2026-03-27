@@ -599,6 +599,48 @@ Object.assign(SCENARIO[1], {
     "lunch_yuna_26": {
         "character": "assets/images/characters/yuna_normal.png",
         "background": "assets/images/background/library_old.png",
+        "next": "lunch_yuna_choice"
+    },
+    "lunch_yuna_choice": {
+        "background": "assets/images/background/library_old.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "choices": [
+            {
+                "next": "lunch_yuna_c1_1",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 5
+                    }
+                }
+            },
+            {
+                "next": "lunch_yuna_c2_1",
+                "stats": {
+                    "Yuna": {
+                        "affinity": 3
+                    }
+                }
+            }
+        ]
+    },
+    "lunch_yuna_c1_1": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/library_old.png",
+        "next": "lunch_yuna_c1_2"
+    },
+    "lunch_yuna_c1_2": {
+        "character": "assets/images/characters/yuna_smile.png",
+        "background": "assets/images/background/library_old.png",
+        "next": "lunch_yuna_freetalk"
+    },
+    "lunch_yuna_c2_1": {
+        "background": "assets/images/background/library_old.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "lunch_yuna_c2_2"
+    },
+    "lunch_yuna_c2_2": {
+        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/library_old.png",
         "next": "lunch_yuna_freetalk"
     },
 

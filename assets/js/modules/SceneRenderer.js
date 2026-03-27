@@ -34,10 +34,14 @@
  */
 // WebP 지원 감지 (1회만 실행)
 const _webpSupport = (() => {
-    const canvas = document.createElement('canvas');
-    canvas.width = 1;
-    canvas.height = 1;
-    return canvas.toDataURL('image/webp').startsWith('data:image/webp');
+    try {
+        const canvas = document.createElement('canvas');
+        canvas.width = 1;
+        canvas.height = 1;
+        return canvas.toDataURL('image/webp').startsWith('data:image/webp');
+    } catch (e) {
+        return false;
+    }
 })();
 
 /**

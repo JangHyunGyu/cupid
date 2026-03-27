@@ -517,6 +517,7 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "morning3_multi_from_seo": {
+        "background": "assets/images/background/room_school.png",
         "character": null,
         "branches": [
             {
@@ -533,6 +534,7 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "morning3_multi_from_dain": {
+        "background": "assets/images/background/room_school.png",
         "character": null,
         "branches": [
             {
@@ -665,7 +667,7 @@ Object.assign(SCENARIO[3], {
     // =========================================================================
     "hidden_nurse_d3_check": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "branches": [
             { "condition": "nurse_day2", "next": "hidden_nurse_d3_1" },
             { "next": "morning3_date_seo_1" }

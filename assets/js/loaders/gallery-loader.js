@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const version = '2.3.4';
 
     const scripts = [
+        // 0. 모듈 설정 (ASSET_VERSION 등)
+        'modules/config.js',
         // 1. 데이터 및 진행도 (의존성 없음)
         'gallery-data.js',
         'gallery-progress.js',
