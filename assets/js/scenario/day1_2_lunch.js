@@ -66,7 +66,7 @@ Object.assign(SCENARIO[1], {
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 5, "next": "lunch_seo_1_aff_high" },
-            { "minAffinity": 0, "next": "lunch_seo_1_aff_default" }
+            { "minAffinity": -100, "next": "lunch_seo_1_aff_default" }
         ],
         "next": "lunch_seo_1_aff_default"
     },

@@ -166,7 +166,7 @@ Object.assign(SCENARIO[2], {
         "affinityChar": "Dain",
         "affinityBranches": [
             { "minAffinity": 30, "next": "night2_reply_dain_react_high" },
-            { "minAffinity": 0, "next": "night2_reply_dain_react_default" }
+            { "minAffinity": -100, "next": "night2_reply_dain_react_default" }
         ],
         "next": "night2_reply_dain_react_default"
     },
@@ -217,7 +217,7 @@ Object.assign(SCENARIO[2], {
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 30, "next": "night2_reply_seo_react_high" },
-            { "minAffinity": 0, "next": "night2_reply_seo_react_default" }
+            { "minAffinity": -100, "next": "night2_reply_seo_react_default" }
         ],
         "next": "night2_reply_seo_react_default"
     },
@@ -280,7 +280,7 @@ Object.assign(SCENARIO[2], {
         "affinityChar": "Yuna",
         "affinityBranches": [
             { "minAffinity": 30, "next": "night2_reply_yuna_react_high" },
-            { "minAffinity": 0, "next": "night2_reply_yuna_react_default" }
+            { "minAffinity": -100, "next": "night2_reply_yuna_react_default" }
         ],
         "next": "night2_reply_yuna_react_default"
     },
