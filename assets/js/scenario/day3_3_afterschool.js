@@ -51,7 +51,7 @@ Object.assign(SCENARIO[3], {
     "after3_reject_for_seo_3": {
         "background": "assets/images/background/library_old.png",
         "sunset": true,
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "next": "after3_reject_for_seo_4"
     },
     "after3_reject_for_seo_4": {
@@ -127,7 +127,7 @@ Object.assign(SCENARIO[3], {
     "after3_reject_for_dain_3": {
         "background": "assets/images/background/library_old.png",
         "sunset": true,
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "next": "after3_reject_for_dain_3b"
     },
     "after3_reject_for_dain_3b": {

@@ -30,7 +30,7 @@ Object.assign(SCENARIO[2], {
     "after2_msg_yuna": {
         "background": "assets/images/background/room_school.png",
         "sunset": true,
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "branches": [
             { "condition": "nurse_day1", "next": "after2_nurse_transition" },
             { "next": "after2_choice" }

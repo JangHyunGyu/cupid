@@ -81,12 +81,12 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_greet_yuna_1": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "next": "morning2_greet_yuna_2"
     },
     "morning2_greet_yuna_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "next": "morning2_greet_yuna_others"
     },
     // B-1.5: 유나 쪽지 시 나머지 반응
@@ -141,17 +141,17 @@ Object.assign(SCENARIO[2], {
         "next": "morning2_note_1"
     },
     "morning2_note_1": {
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_school.png",
         "next": "morning2_note_2"
     },
     "morning2_note_2": {
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_school.png",
         "next": "morning2_note_3"
     },
     "morning2_note_3": {
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "background": "assets/images/background/room_school.png",
         "next": "morning2_seo_1"
     },

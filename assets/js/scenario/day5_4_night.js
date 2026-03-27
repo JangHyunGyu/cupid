@@ -411,7 +411,7 @@ Object.assign(SCENARIO[5], {
     },
     "bitter_yuna_3": {
         "background": "assets/images/background/ending_bittersweet.png",
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "next": "bitter_epilogue_1"
     },
 
@@ -918,7 +918,7 @@ Object.assign(SCENARIO[5], {
     },
     "mayhem_2": {
         "background": "assets/images/background/ending_mayhem.png",
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "next": "mayhem_3"
     },
     "mayhem_3": {
