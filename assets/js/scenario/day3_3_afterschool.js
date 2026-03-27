@@ -13,8 +13,43 @@ Object.assign(SCENARIO[3], {
         "sunset": true,
         "bgm": "sunset1.mp3",
         "character": null,
-        "next": "after3_choice"
+        "next": "after3_route_check"
     },
+    // 약속 기반 자동 루트 확정: 아침에 수락한 데이트가 있으면 자동으로 해당 루트
+    "after3_route_check": {
+        "background": "assets/images/background/school_hallway.png",
+        "sunset": true,
+        "character": null,
+        "branches": [
+            { "condition": "accepted_dain_date", "next": "after3_auto_dain" },
+            { "condition": "accepted_yuna_date", "next": "after3_auto_yuna" },
+            { "condition": "accepted_seoyeon_date", "next": "after3_auto_seo" },
+            { "next": "after3_choice" }
+        ]
+    },
+    // 자동 루트 — 약속한 캐릭터 쪽으로 자연스럽게 이동 + 플래그 설정
+    "after3_auto_dain": {
+        "background": "assets/images/background/school_hallway.png",
+        "sunset": true,
+        "character": null,
+        "setFlags": ["route_dain"],
+        "next": "after3_reject_for_dain_1"
+    },
+    "after3_auto_yuna": {
+        "background": "assets/images/background/school_hallway.png",
+        "sunset": true,
+        "character": null,
+        "setFlags": ["route_yuna"],
+        "next": "after3_reject_for_yuna_1"
+    },
+    "after3_auto_seo": {
+        "background": "assets/images/background/school_hallway.png",
+        "sunset": true,
+        "character": null,
+        "setFlags": ["route_seoyeon"],
+        "next": "after3_reject_for_seo_1"
+    },
+    // 약속 없을 때만 수동 선택
     "after3_choice": {
         "character": null,
         "background": "assets/images/background/school_hallway.png",
