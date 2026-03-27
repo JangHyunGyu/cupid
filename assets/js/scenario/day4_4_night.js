@@ -61,7 +61,7 @@ Object.assign(SCENARIO[4], {
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 60, "next": "wall_seo_pre_high_1" },
-            { "minAffinity": 0, "next": "wall_seo_pre_low_1" }
+            { "minAffinity": -100, "next": "wall_seo_pre_low_1" }
         ]
     },
     "wall_seo_pre_high_1": {
@@ -377,7 +377,7 @@ Object.assign(SCENARIO[4], {
         "affinityBranches": [
             { "minAffinity": 70, "next": "wall_seo_skin70_1" },
             { "minAffinity": 60, "next": "wall_seo_skin60_1" },
-            { "minAffinity": 0, "next": "wall_seo_glimpse_1" }
+            { "minAffinity": -100, "next": "wall_seo_glimpse_1" }
         ]
     },
     "wall_seo_skin70_1": {
@@ -452,7 +452,7 @@ Object.assign(SCENARIO[4], {
         "affinityChar": "Dain",
         "affinityBranches": [
             { "minAffinity": 60, "next": "wall_dain_pre_high_1" },
-            { "minAffinity": 0, "next": "wall_dain_pre_low_1" }
+            { "minAffinity": -100, "next": "wall_dain_pre_low_1" }
         ]
     },
     "wall_dain_pre_high_1": {
@@ -808,7 +808,7 @@ Object.assign(SCENARIO[4], {
         "affinityBranches": [
             { "minAffinity": 70, "next": "wall_dain_skin70_1" },
             { "minAffinity": 60, "next": "wall_dain_skin60_1" },
-            { "minAffinity": 0, "next": "wall_dain_glimpse_1" }
+            { "minAffinity": -100, "next": "wall_dain_glimpse_1" }
         ]
     },
     "wall_dain_skin70_1": {
@@ -883,7 +883,7 @@ Object.assign(SCENARIO[4], {
         "affinityChar": "Yuna",
         "affinityBranches": [
             { "minAffinity": 60, "next": "wall_yuna_pre_high_1" },
-            { "minAffinity": 0, "next": "wall_yuna_pre_low_1" }
+            { "minAffinity": -100, "next": "wall_yuna_pre_low_1" }
         ]
     },
     "wall_yuna_pre_high_1": {
@@ -1095,7 +1095,7 @@ Object.assign(SCENARIO[4], {
         "affinityBranches": [
             { "minAffinity": 70, "next": "wall_yuna_skin70_1" },
             { "minAffinity": 60, "next": "wall_yuna_skin60_1" },
-            { "minAffinity": 0, "next": "wall_yuna_glimpse_1" }
+            { "minAffinity": -100, "next": "wall_yuna_glimpse_1" }
         ]
     },
     "wall_yuna_skin70_1": {

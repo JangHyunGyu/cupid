@@ -1696,6 +1696,225 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
 
 console.log('[IMAGE_CHECK] 이미지 매칭 검증 완료 (누락: ' + imageMissing + ', 캐릭터매칭: ' + charMatchWarnings + ', 배경일관성: ' + bgInconsistencies + ')\n');
 
+// =====================================================================
+// ===== 렌더링 규칙 검증 (밤 메신저 opacity, 캐릭터 깜빡임, 호감도 데드엔드) =====
+// =====================================================================
+console.log('[RENDER_CHECK] 렌더링 규칙 검증 시작...');
+let renderIssues = 0;
+
+// RD-1: 밤 메신저 씬 opacity 검사 — room_my + night + NPC 화자 + opacity 없음
+for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
+    if (!scene.night || !scene.background) continue;
+    if (!scene.background.includes('room_my')) continue;
+    if (scene.type === 'free_talk') continue;
+
+    const i18n = i18nData[sceneId];
+    const speaker = i18n?.name;
+    if (!speaker || speaker === '{name}' || speaker === '나') continue;
+
+    // characters 형식(opacity 포함)이면 OK
+    if (scene.characters) continue;
+
+    // character가 있으면 opacity 누락
+    if (scene.character && scene.character !== null) {
+        errors.push('[RENDER_OPACITY] "' + sceneId + '" (day' + day + '): 밤 메신저 씬인데 opacity 누락 (화자: ' + speaker + ', 캐릭터: ' + path.basename(scene.character) + ')');
+        renderIssues++;
+    }
+}
+
+// RD-2: 호감도 분기 데드엔드 검사 — affinityBranches의 최저 minAffinity가 0 이상이고 fallback 없음
+for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
+    if (!scene.affinityBranches) continue;
+    const mins = scene.affinityBranches.map(b => b.minAffinity ?? 0);
+    const lowest = Math.min(...mins);
+    const hasFallback = !!scene.next || !!scene.fallback;
+    if (lowest >= 0 && !hasFallback) {
+        errors.push('[RENDER_DEADEND] "' + sceneId + '" (day' + day + '): affinityBranches 최소=' + lowest + ', fallback 없음 — 음수 호감도에서 데드엔드');
+        renderIssues++;
+    }
+}
+
+console.log('[RENDER_CHECK] 렌더링 규칙 검증 완료 (' + renderIssues + '건 발견)\n');
+
+// =====================================================================
+// ===== 플레이테스트 리포트 생성 (PLAYTEST_REPORT.md) =====
+// =====================================================================
+console.log('[REPORT] 플레이테스트 리포트 생성...');
+
+// 엔딩 식별: credits 직전 씬을 엔딩명으로 사용
+function getEndingName(pathRenders) {
+    for (let i = pathRenders.length - 1; i >= 0; i--) {
+        const sid = pathRenders[i];
+        if (sid !== 'day5_credits' && sid !== 'day5_ending_restart' && !sid.endsWith('.html')) return sid;
+    }
+    return pathRenders[pathRenders.length - 1] || 'unknown';
+}
+
+// 렌더링 상태 추출
+function extractRenderInfo(sceneId) {
+    const entry = allScenes[sceneId];
+    if (!entry) return null;
+    const scene = entry.scene;
+    const i18n = i18nData[sceneId] || {};
+
+    let character = null, opacity = 1;
+    if (scene.characters) {
+        const center = scene.characters.center;
+        if (center) {
+            character = typeof center === 'object' ? center.src : center;
+            opacity = typeof center === 'object' ? (center.opacity ?? 1) : 1;
+        }
+    } else if (scene.character) {
+        character = scene.character;
+    }
+
+    const charShort = character ? character.replace(/assets\/images\/characters\//g, '').replace(/\.png/g, '') : '없음';
+    const bgShort = scene.background ? scene.background.replace('assets/images/background/', '').replace(/\.(png|jpg)/, '') : '없음';
+
+    return {
+        sceneId, day: entry.day,
+        speaker: i18n.name || null,
+        text: i18n.text || null,
+        background: bgShort, character: charShort, opacity,
+        night: !!scene.night, sunset: !!scene.sunset,
+        type: scene.type || 'dialogue',
+    };
+}
+
+// DFS 리포트용 — 선택지 분기만 추적, 상태 기반 resolve
+const reportPaths = [];
+const reportMax = 10000;
+let reportExplored = 0;
+const rStack = [{ sceneId: 'start', state: new SimState(), trail: ['start'], choices: [], depth: 0 }];
+
+while (rStack.length > 0 && reportExplored < reportMax) {
+    const { sceneId, state, trail, choices, depth } = rStack.pop();
+    if (depth > MAX_STEPS) continue;
+
+    if (sceneId && sceneId.endsWith('.html')) {
+        reportPaths.push({ endScene: getEndingName(trail), trail, choices, stats: { ...state.stats } });
+        reportExplored++;
+        continue;
+    }
+
+    const entry = allScenes[sceneId];
+    if (!entry) continue;
+    const scene = entry.scene;
+    simApplyScene(scene, state);
+
+    if (scene.type === 'credits') {
+        const nextId = simResolveNext(scene, state);
+        if (nextId) {
+            rStack.push({ sceneId: nextId, state: state.clone(), trail: [...trail, nextId], choices, depth: depth + 1 });
+        } else {
+            reportPaths.push({ endScene: getEndingName(trail), trail, choices, stats: { ...state.stats } });
+        }
+        reportExplored++;
+        continue;
+    }
+
+    if (scene.type === 'free_talk' || scene.type === 'input') {
+        const nextId = simResolveNext(scene, state);
+        if (nextId) rStack.push({ sceneId: nextId, state: state.clone(), trail: [...trail, nextId], choices, depth: depth + 1 });
+        continue;
+    }
+
+    if (scene.choices && scene.choices.length > 0) {
+        const available = simGetAvailableChoices(scene.choices, state);
+        for (const choice of available) {
+            const cs = state.clone();
+            simApplyChoice(choice, cs);
+            const cText = choice.text || (i18nData[sceneId]?.choices?.[available.indexOf(choice)]?.text) || '(선택)';
+            const nc = [...choices, { scene: sceneId, text: cText }];
+            if (choice.affinityBranches) {
+                for (const ab of choice.affinityBranches) {
+                    if (ab.next) rStack.push({ sceneId: ab.next, state: cs.clone(), trail: [...trail, ab.next], choices: nc, depth: depth + 1 });
+                }
+                if (choice.next) rStack.push({ sceneId: choice.next, state: cs.clone(), trail: [...trail, choice.next], choices: nc, depth: depth + 1 });
+            } else if (choice.next) {
+                rStack.push({ sceneId: choice.next, state: cs, trail: [...trail, choice.next], choices: nc, depth: depth + 1 });
+            }
+        }
+        continue;
+    }
+
+    const nextId = simResolveNext(scene, state);
+    if (nextId) rStack.push({ sceneId: nextId, state: state.clone(), trail: [...trail, nextId], choices, depth: depth + 1 });
+}
+
+// 엔딩 통계
+const endingStats = {};
+for (const p of reportPaths) {
+    endingStats[p.endScene] = (endingStats[p.endScene] || 0) + 1;
+}
+const sortedEndings = Object.entries(endingStats).sort((a, b) => b[1] - a[1]);
+
+// 엔딩별 대표 경로 (가장 짧은 것)
+const repPaths = {};
+for (const p of reportPaths) {
+    if (!repPaths[p.endScene] || p.trail.length < repPaths[p.endScene].trail.length) {
+        repPaths[p.endScene] = p;
+    }
+}
+
+// MD 리포트 생성
+let md = '# Cupid 플레이테스트 리포트\n\n';
+md += '> 생성: ' + new Date().toLocaleString('ko-KR') + '\n\n';
+md += '## 요약\n\n| 항목 | 값 |\n|------|----|';
+md += '\n| 탐색 경로 | ' + reportExplored + '개 |';
+md += '\n| 완료 경로 | ' + reportPaths.length + '개 |';
+md += '\n| 엔딩 종류 | ' + sortedEndings.length + '종 |';
+md += '\n| 전체 씬 | ' + Object.keys(allScenes).length + '개 |\n\n';
+
+md += '## 엔딩 도달 통계\n\n| 엔딩 | 도달 경로 수 |\n|------|-------------|\n';
+for (const [ending, count] of sortedEndings) {
+    md += '| `' + ending + '` | ' + count + ' |\n';
+}
+md += '\n';
+
+md += '## 경로 상세 (엔딩별 대표 경로)\n\n';
+for (const [ending, p] of Object.entries(repPaths).sort((a, b) => a[0].localeCompare(b[0]))) {
+    md += '### ' + ending + '\n\n';
+    if (p.choices.length > 0) {
+        md += '**선택지:**\n';
+        for (const c of p.choices) md += '- `' + c.scene + '`: ' + c.text + '\n';
+        md += '\n';
+    }
+    md += '**최종 호감도:** 서연=' + p.stats.Seoyeon + ' 유나=' + p.stats.Yuna + ' 다인=' + p.stats.Dain + ' 담임=' + p.stats.Teacher + ' 보건=' + p.stats.Nurse + '\n\n';
+
+    md += '<details>\n<summary>씬 타임라인 (' + p.trail.length + '씬)</summary>\n\n';
+    md += '| # | 씬 ID | 화자 | 배경 | 캐릭터 | OP | 밤 | 대사 (앞 30자) |\n';
+    md += '|---|--------|------|------|--------|----|----|----------------|\n';
+    let curDay = 0;
+    for (let i = 0; i < p.trail.length; i++) {
+        const r = extractRenderInfo(p.trail[i]);
+        if (!r) continue;
+        if (r.day !== curDay) { curDay = r.day; md += '| | **Day ' + curDay + '** | | | | | | |\n'; }
+        const txt = r.text ? r.text.replace(/\|/g, '｜').replace(/\n/g, ' ').slice(0, 30) : '';
+        md += '| ' + (i+1) + ' | `' + r.sceneId + '` | ' + (r.speaker||'') + ' | ' + r.background + ' | ' + r.character + ' | ' + (r.opacity < 1 ? r.opacity : '') + ' | ' + (r.night ? '🌙' : r.sunset ? '🌅' : '') + ' | ' + txt + ' |\n';
+    }
+    md += '\n</details>\n\n';
+}
+
+// 씬 커버리지
+const visitedInReport = new Set();
+for (const p of reportPaths) p.trail.forEach(s => visitedInReport.add(s));
+const unvisitedReport = Object.keys(allScenes).filter(id => !visitedInReport.has(id));
+md += '## 씬 커버리지\n\n';
+md += '- 전체: ' + Object.keys(allScenes).length + '개\n';
+md += '- 방문: ' + visitedInReport.size + '개 (' + (visitedInReport.size / Object.keys(allScenes).length * 100).toFixed(1) + '%)\n';
+md += '- 미방문: ' + unvisitedReport.length + '개\n';
+if (unvisitedReport.length > 0) {
+    md += '\n**미방문 씬:**\n';
+    const byDay = {};
+    for (const id of unvisitedReport) { const d = allScenes[id].day; (byDay[d] = byDay[d] || []).push(id); }
+    for (const d of Object.keys(byDay).sort()) md += '- Day ' + d + ': ' + byDay[d].join(', ') + '\n';
+}
+
+fs.writeFileSync(path.join(__dirname, 'PLAYTEST_REPORT.md'), md, 'utf8');
+console.log('[REPORT] 플레이테스트 리포트 생성 완료 — ' + reportExplored + '경로, ' + sortedEndings.length + '종 엔딩');
+console.log('[REPORT] → PLAYTEST_REPORT.md\n');
+
 // ===== Print Results =====
 console.log('========== CUPID VALIDATION RESULTS ==========\n');
 console.log('Total scenes: ' + Object.keys(allScenes).length);
