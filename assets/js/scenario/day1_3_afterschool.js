@@ -494,7 +494,6 @@ Object.assign(SCENARIO[1], {
         "next": "after_homeroom_freetalk"
     },
     "after_homeroom_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/teacher_normal.png",
@@ -638,7 +637,6 @@ Object.assign(SCENARIO[1], {
         "next": "after_nurse_freetalk"
     },
     "after_nurse_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/nurse_room.png",
         "sunset": true,
         "character": "assets/images/characters/nurse_normal.png",

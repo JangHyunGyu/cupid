@@ -404,7 +404,6 @@ Object.assign(SCENARIO[4], {
         "next": "hidden_nurse_d4_morning_freetalk"
     },
     "hidden_nurse_d4_morning_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_check"
