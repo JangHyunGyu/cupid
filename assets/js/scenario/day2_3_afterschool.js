@@ -219,6 +219,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/street.png",
         "sunset": true,
         "character": "assets/images/characters/dain_shy.png",
+        "stats": { "Seoyeon": { "affinity": -5 }, "Yuna": { "affinity": -5 } },
         "next": "minsu_warn_1"
     },
     "after2_seo_1": {
@@ -464,6 +465,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/student_room.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_normal.png",
+        "stats": { "Dain": { "affinity": -5 }, "Yuna": { "affinity": -5 } },
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 25, "next": "after2_seo_skinship_1" },
@@ -636,6 +638,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "character": "assets/images/characters/yuna_smile.png",
+        "stats": { "Seoyeon": { "affinity": -5 }, "Dain": { "affinity": -5 } },
         "affinityChar": "Yuna",
         "affinityBranches": [
             { "minAffinity": 25, "next": "after2_yuna_skinship_1" },
