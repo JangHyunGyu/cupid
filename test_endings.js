@@ -18,7 +18,11 @@ class S {
     ga(c) { return this.s[c] ?? 0; }
     ca(c, a) { if (this.s[c] !== undefined) this.s[c] = Math.max(-100, Math.min(100, this.s[c] + a)); }
     sf(n, v = true) { this.f[n] = v; }
-    gf(n) { return this.f[n] ?? false; }
+    gf(n) {
+        if (n.includes('||')) return n.split('||').some(f => this.f[f.trim()] ?? false);
+        if (n.includes('&&')) return n.split('&&').every(f => this.f[f.trim()] ?? false);
+        return this.f[n] ?? false;
+    }
 }
 function ap(sc, st) { if (sc.setFlag) st.sf(sc.setFlag); if (sc.setFlags) sc.setFlags.forEach(f => st.sf(f)); if (sc.clearFlags) sc.clearFlags.forEach(f => st.sf(f, false)); if (sc.stats) for (const [k, v] of Object.entries(sc.stats)) st.ca(k, typeof v === 'number' ? v : (v?.affinity || 0)); }
 function apC(c, st) { if (c.setFlag) st.sf(c.setFlag); if (c.setFlags) c.setFlags.forEach(f => st.sf(f)); if (c.stats) for (const [k, v] of Object.entries(c.stats)) st.ca(k, typeof v === 'number' ? v : (v?.affinity || 0)); }
@@ -120,9 +124,9 @@ const tests = [
       force: { 'after3_choice': 0, 'morning3_date_seo_choice': 0, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
                'confess_seo_choice': 1, 'after5_last_chance_choice': 0 } },
 
-    // Friend: route확정 + Day4 고백거절(day4_waited) + Day5 고백안함 + !day3_has_multiple_dates
+    // Friend: 히든스킵 + route확정 + 고백거절(day4_waited) + Day5 고백안함
     { name: 'Friend', check: 'day5_ending_friend', target: 'Seoyeon', avoid: ['Yuna', 'Dain'],
-      force: { 'morning3_date_seo_choice': 0, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
+      force: { 'after_end': 2, 'morning3_date_seo_choice': 0, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
                'confess_seo_choice': 1, 'after5_last_chance_choice': 1 } },
 
     // Alone: 히든스킵 + 데이트 전부거절 + 루트 미확정 → fallback
@@ -157,18 +161,13 @@ const tests = [
       force: { 'after_end': 0, 'morning3_date_seo_choice': 1, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
                'confess_seo_choice': 1, 'confess_yuna_choice': 1, 'confess_dain_choice': 1 } },
 
-    // Hidden Good(담임): homeroom_day5 + !day4_confession_accepted → ending_start branch[1]
-    // 담임 호감도를 낮은 선택지로 골라서 <60 유지 (Good = catch-all)
+    // Hidden Good(담임): homeroom_day5 + !day4_confession_accepted + !day3_has_multiple_dates
+    // ending_start[1]: homeroom_day5 + excl=day4_confession_accepted
     { name: 'Hidden Good(담임)', check: 'hidden_good_homeroom_1', target: null,
       avoid: ['Seoyeon', 'Yuna', 'Dain'],
       force: { 'after_end': 0, 'morning3_date_seo_choice': 1, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
                'confess_seo_choice': 1, 'confess_yuna_choice': 1, 'confess_dain_choice': 1,
-               'after5_last_chance_choice': 1, 'after3_choice': 0,
-               'after_hidden_homeroom_choice': 0, 'after_homeroom_honest_choice2': 1,
-               'hidden_homeroom_d2_choice1': 1, 'hidden_homeroom_d2_choice2': 0,
-               'hidden_homeroom_d3_choice': 1, 'hidden_homeroom_d3_reveal_choice': 1,
-               'hidden_homeroom_d4_choice': 1, 'hidden_homeroom_d4_cafe_choice': 1,
-               'hidden_homeroom_d5_choice': 1 } },
+               'after5_last_chance_choice': 1, 'after3_choice': 0 } },
 
     // Hidden Perfect(보건): 보건 루트 + 올인 + 데이트 거절
     { name: 'Hidden Perfect(보건)', check: 'hidden_perfect_nurse_1', target: 'Nurse',
@@ -182,17 +181,12 @@ const tests = [
       force: { 'after_end': 1, 'morning3_date_seo_choice': 1, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
                'confess_seo_choice': 1, 'confess_yuna_choice': 1, 'confess_dain_choice': 1 } },
 
-    // Hidden Good(보건): nurse_day5 + !day4_confession_accepted → ending_start branch[3]
+    // Hidden Good(보건): nurse_day5 + !day4_confession_accepted
     { name: 'Hidden Good(보건)', check: 'hidden_good_nurse_1', target: null,
       avoid: ['Seoyeon', 'Yuna', 'Dain'],
       force: { 'after_end': 1, 'morning3_date_seo_choice': 1, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
                'confess_seo_choice': 1, 'confess_yuna_choice': 1, 'confess_dain_choice': 1,
-               'after5_last_chance_choice': 1, 'after3_choice': 0,
-               'after_hidden_nurse_choice': 0, 'after_nurse_enter_choice': 1,
-               'hidden_nurse_d2_choice1': 1, 'hidden_nurse_d2_choice2': 0,
-               'hidden_nurse_d3_choice1': 1, 'hidden_nurse_d3_choice2': 1,
-               'hidden_nurse_d4_name_choice': 1, 'hidden_nurse_d4_choice': 1,
-               'hidden_nurse_d5_choice': 1 } },
+               'after5_last_chance_choice': 1, 'after3_choice': 0 } },
 ];
 
 let pass = 0, fail = 0;
