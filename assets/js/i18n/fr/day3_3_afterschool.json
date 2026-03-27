@@ -21,7 +21,7 @@
     },
     "after3_multi_choice": {
         "name": "{name}",
-        "text": "*Les rendez-vous se chevauchent. — Elles attendent toutes les deux. Vers qui aller en premier ?*",
+        "text": "*Les rendez-vous se chevauchent. — Elles attendent toutes. Vers qui aller en premier ?*",
         "choices": [
             "Aller voir Seoyeon",
             "Aller voir Yuna",

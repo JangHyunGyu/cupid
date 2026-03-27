@@ -21,7 +21,7 @@
     },
     "after3_multi_choice": {
         "name": "{name}",
-        "text": "*Los planes se superponen. — Las dos están esperando. ¿A quién voy primero?*",
+        "text": "*Los planes se superponen. — Todas están esperando. ¿A quién voy primero?*",
         "choices": [
             "Ir con Seoyeon",
             "Ir con Yuna",
