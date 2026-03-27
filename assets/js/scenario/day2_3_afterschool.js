@@ -368,7 +368,7 @@ Object.assign(SCENARIO[2], {
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 50, "next": "after2_seo_neck_high" },
-            { "minAffinity": 0, "next": "after2_seo_neck_low" }
+            { "minAffinity": -100, "next": "after2_seo_neck_low" }
         ]
     },
     "after2_seo_neck_high": {

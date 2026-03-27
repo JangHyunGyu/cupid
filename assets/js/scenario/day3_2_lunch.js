@@ -99,7 +99,7 @@ Object.assign(SCENARIO[3], {
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 40, "next": "lunch3_seo_skin_1" },
-            { "minAffinity": 0, "next": "lunch3_give_seo_2" }
+            { "minAffinity": -100, "next": "lunch3_give_seo_2" }
         ]
     },
     "lunch3_seo_skin_1": {
@@ -206,7 +206,7 @@ Object.assign(SCENARIO[3], {
         "affinityChar": "Dain",
         "affinityBranches": [
             { "minAffinity": 40, "next": "lunch3_dain_skin_1" },
-            { "minAffinity": 0, "next": "lunch3_give_dain_2" }
+            { "minAffinity": -100, "next": "lunch3_give_dain_2" }
         ]
     },
     "lunch3_dain_skin_1": {
@@ -276,7 +276,7 @@ Object.assign(SCENARIO[3], {
         "affinityChar": "Yuna",
         "affinityBranches": [
             { "minAffinity": 40, "next": "lunch3_yuna_skin_1" },
-            { "minAffinity": 0, "next": "lunch3_give_yuna_2" }
+            { "minAffinity": -100, "next": "lunch3_give_yuna_2" }
         ]
     },
     "lunch3_yuna_skin_1": {

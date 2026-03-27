@@ -42,7 +42,7 @@ Object.assign(SCENARIO[3], {
         "affinityBranches": [
             { "minAffinity": 35, "next": "morning3_seo_gate_warm_1" },
             { "minAffinity": 15, "next": "morning3_seo_gate_2" },
-            { "minAffinity": 0, "next": "morning3_seo_gate_cold_1" }
+            { "minAffinity": -100, "next": "morning3_seo_gate_cold_1" }
         ]
     },
     // --- 서연 warm (35+) ---
@@ -125,7 +125,7 @@ Object.assign(SCENARIO[3], {
         "affinityBranches": [
             { "minAffinity": 35, "next": "morning3_yuna_gate_warm_1" },
             { "minAffinity": 15, "next": "morning3_yuna_gate_2" },
-            { "minAffinity": 0, "next": "morning3_yuna_gate_cold_1" }
+            { "minAffinity": -100, "next": "morning3_yuna_gate_cold_1" }
         ]
     },
     // --- 유나 warm (35+) ---
@@ -203,7 +203,7 @@ Object.assign(SCENARIO[3], {
         "affinityBranches": [
             { "minAffinity": 35, "next": "morning3_dain_gate_warm_1" },
             { "minAffinity": 15, "next": "morning3_dain_gate_2" },
-            { "minAffinity": 0, "next": "morning3_dain_gate_cold_1" }
+            { "minAffinity": -100, "next": "morning3_dain_gate_cold_1" }
         ]
     },
     // --- 다인 warm (35+) ---
