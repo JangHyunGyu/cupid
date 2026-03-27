@@ -695,34 +695,7 @@ class FreeTalkSystem {
             }
 
             if (parsed) {
-                // ─────────────────────────────────────────────────────────
-                // 🛡️ NSFW 안전장치: 저호감도에서 신체적/성적 행동 시 호감도 증가 차단
-                // ─────────────────────────────────────────────────────────
-                // AI가 프롬프트를 무시하고 긍정적으로 반응할 경우를 대비한 코드 레벨 방어
-                const currentAffinity = (this.stateManager.stats[charKey] || {}).affinity || 0;
-                const isDatingCurrent = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
-                if (!isDatingCurrent && parsed.affinity > 0 && text) {
-                    // * 안 내용에서 신체적/성적 키워드 감지
-                    const parenContent = (text.match(/\*([^*]+)\*/g) || []).join(' ').toLowerCase();
-                    if (parenContent) {
-                        const nsfwKeywords = /키스|뽀뽀|껴안|포옹|안아|만지|잡아|스킨십|가슴|엉덩이|허벅지|입술|핥|빨|벗|더듬|쓰다듬|몸|허리|볼[에를]|kiss|hug|embrac|touch|grab|grope|fond|caress|strip|undress|breast|butt|thigh|lip|lick|suck|body|waist|cheek/i;
-                        if (nsfwKeywords.test(parenContent)) {
-                            if (currentAffinity <= 30) {
-                                // 저호감도: 호감도 증가 완전 차단, 강제 감소
-                                parsed.affinity = Math.min(parsed.affinity, -5);
-                                if (parsed.expression === 'shy' || parsed.expression === 'shy2') {
-                                    parsed.expression = 'angry';
-                                }
-                            } else if (currentAffinity <= 70) {
-                                // 중간 호감도: 호감도 증가를 0으로 캡
-                                parsed.affinity = Math.min(parsed.affinity, 0);
-                                if (parsed.expression === 'shy' || parsed.expression === 'shy2') {
-                                    parsed.expression = 'pout';
-                                }
-                            }
-                        }
-                    }
-                }
+                // NSFW 판단은 AI 프롬프트에 위임 (코드 레벨 강제 차단 없음)
 
                 // JSON 필드에서 표정 변화 처리
                 if (parsed.expression) {
@@ -957,6 +930,8 @@ class FreeTalkSystem {
      */
     applyAffinity(change, scene) {
         if (!change || change === 0) return;
+        // 턴당 호감도 범위 제한: -5 ~ +5
+        change = Math.max(-5, Math.min(5, change));
         const charKey = this.charNameMap[scene.name] || scene.name;
         if (this.stateManager.stats[charKey]) {
             const newValue = this.stateManager.changeAffinity(charKey, change);
