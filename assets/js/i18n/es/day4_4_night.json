@@ -49,7 +49,7 @@
     },
     "wall_seo_11": {
         "name": "Seoyeon",
-        "text": "Mamá me dijo: 'Al menos tú tienes que ser perfecta para mantener está familia'."
+        "text": "Mamá me dijo: 'Al menos tú tienes que ser perfecta para mantener esta familia'."
     },
     "wall_seo_12": {
         "name": "Seoyeon",
@@ -111,7 +111,7 @@
         "name": "{name}",
         "text": "*Seoyeon se seca las lágrimas, mirándome con ojos temblorosos.*",
         "choices": [
-            "Me gusta más está Seoyeon que la perfecta.",
+            "Me gusta más esta Seoyeon que la perfecta.",
             "No eres la presidenta del consejo para mí — eres solo Seoyeon, mi novia.",
             "Sinceramente, pensé que eras perfecta. Pero gracias por mostrarme este lado tuyo."
         ]
@@ -154,7 +154,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
-        "text": "*Hay una luz en la ventana del gimnasio. Luces de emergencia. Alguien está botando un balón solo. — Puedo distinguir vagamente el número de la camiseta. Es Dain.*"
+        "text": "*Hay una luz en la ventana del gimnasio. Luces de emergencia. Alguien esta botando un balón solo. — Puedo distinguir vagamente el número de la camiseta. Es Dain.*"
     },
     "wall_seo_glimpse_3": {
         "name": "{name}",
@@ -283,7 +283,7 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "Es gracioso, ¿no? Llevo pisando está cancha todos los días desde los cinco años... y ahora resulta que ya no puedo."
+        "text": "Es gracioso, ¿no? Llevo pisando esta cancha todos los días desde los cinco años... y ahora resulta que ya no puedo."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
@@ -331,7 +331,7 @@
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...Je. Duele. Pero se siente extrañamente liberador. — Me alegro de que mi último golpe en está cancha haya sido una colocación de {name}."
+        "text": "...Je. Duele. Pero se siente extrañamente liberador. — Me alegro de que mi último golpe en esta cancha haya sido una colocación de {name}."
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
@@ -415,7 +415,7 @@
     },
     "wall_yuna_13": {
         "name": "Yuna",
-        "text": "Un día se trasladó. Sin contacto. Solo está carta."
+        "text": "Un día se trasladó. Sin contacto. Solo esta carta."
     },
     "wall_yuna_14": {
         "name": "Yuna",
@@ -434,7 +434,7 @@
         "text": "*Los ojos de Yuna brillan húmedos. — Es la primera vez que la oigo hablar tanto.*",
         "choices": [
             "No soy ese senior. Soy yo. Pero me quedaré a tu lado.",
-            "Olvídate de ese senior. Quien está frente a ti ahora soy yo.",
+            "Olvídate de ese senior. Quien esta frente a ti ahora soy yo.",
             "...¿Así que te acercaste a mí por él? ¿Como reemplazo?"
         ]
     },
@@ -532,7 +532,7 @@
     },
     "day4_night_reflect": {
         "name": "{name}",
-        "text": "*Así pasó el sábado. Qué traerá el mañana.*"
+        "text": "*Así paso el sábado. Qué traerá el mañana.*"
     },
     "day4_night_sleep": {
         "name": "{name}",
@@ -552,7 +552,7 @@
     },
     "wall_seo_pre_low_1": {
         "name": "{name}",
-        "text": "*Seoyeon guarda silencio. Tengo que dar el primer pasó.*"
+        "text": "*Seoyeon guarda silencio. Tengo que dar el primer paso.*"
     },
     "wall_seo_pre_low_1b": {
         "name": "{name}",

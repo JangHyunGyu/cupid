@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Hora del almuerzo. A diferencia de ayer, tengo la nota de Yuna en el bolsillo. Al final del pasillo, Seoyeon se dirige hacia la azotea con una fiambrera, y Dain me hace senas hacia la tienda de la escuela otra vez.*"
+        "text": "*Hora del almuerzo. A diferencia de ayer, tengo la nota de Yuna en el bolsillo. Al final del pasillo, Seoyeon se dirige hacia la azotea con una fiambrera, y Dain me hace señas hacia la tienda de la escuela otra vez.*"
     },
     "lunch2_start_2": {
         "name": "{name}",
@@ -30,15 +30,15 @@
     },
     "lunch2_yuna_4": {
         "name": "{name}",
-        "text": "Recibi tu nota."
+        "text": "Recibí tu nota."
     },
     "lunch2_yuna_5": {
         "name": "Yuna",
-        "text": "Podrias no haber venido."
+        "text": "Podrías no haber venido."
     },
     "lunch2_yuna_6": {
         "name": "{name}",
-        "text": "¿Por que?"
+        "text": "¿Por qué?"
     },
     "lunch2_yuna_7": {
         "name": "Yuna",
@@ -62,11 +62,11 @@
     },
     "lunch2_yuna_12": {
         "name": "{name}",
-        "text": "*Aparece una pequena habitacion. La luz del sol entra por la ventana, con un sofa viejo y una estanteria.*"
+        "text": "*Aparece una pequeña habitación. La luz del sol entra por la ventana, con un sofa viejo y una estanteria.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
-        "text": "¿Que es este lugar?¿ Una sala de lectura secreta?"
+        "text": "¿Qué es este lugar?¿ Una sala de lectura secreta?"
     },
     "lunch2_yuna_14": {
         "name": "Yuna",
@@ -78,15 +78,15 @@
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
-        "text": "Habia una persona más aquí."
+        "text": "Había una persona más aquí."
     },
     "lunch2_yuna_17": {
         "name": "{name}",
-        "text": "¿Habia?"
+        "text": "¿Había?"
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Nada sigue después de 'habia'. Pasado. -- Deberia preguntar?*",
+        "text": "*Nada sigue después de 'había'. Pasado. -- Debería preguntar?*",
         "choices": [
             "Esa persona, donde está ahora?",
             "No preguntar y sentarse a su lado"
@@ -110,19 +110,19 @@
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
-        "text": "¿No se comunico?"
+        "text": "¿No se comunicó?"
     },
     "lunch2_yuna_c1_6": {
         "name": "Yuna",
-        "text": "...No lo se. Si no quiso, o no pudo."
+        "text": "...No lo sé. Si no quiso, o no pudo."
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "*Yuna abre su libro. Una senal de que la conversación termino.*"
+        "text": "*Yuna abre su libro. Una senal de que la conversación terminó.*"
     },
     "lunch2_yuna_c1_8": {
         "name": "{name}",
-        "text": "*Deberia cambiar el ambiente. -- Intentare dejarlo pasar con ligereza.*"
+        "text": "*Debería cambiar el ambiente. -- Intentare dejarlo pasar con ligereza.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
@@ -138,15 +138,15 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "{name}",
-        "text": "*Meti la pata. Intentar restarlo importancia solo hizo que pareciera que trivializaba su herida.*"
+        "text": "*Metí la pata. Intentar restarlo importancia solo hizo que pareciera que trivializaba su herida.*"
     },
     "lunch2_yuna_c1_13": {
         "name": "{name}",
-        "text": "*Un silencio incomodo sigue. Solo el sonido de las paginas al pasar llena la habitacion.*"
+        "text": "*Un silencio incómodo sigue. Solo el sonido de las páginas al pasar llena la habitación.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
-        "text": "*Siempre me enorgulleci de ser perceptivo. -- Estaba equivocado. No con esta persona.*"
+        "text": "*Siempre me enorgullecí de ser perceptivo. -- Estaba equivocado. No con esta persona.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
@@ -186,7 +186,7 @@
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*El 'habia' de Yuna sigue dando vueltas en mi cabeza. El significado de este lugar que me mostro... va calando poco a poco.*"
+        "text": "*El 'había' de Yuna sigue dando vueltas en mi cabeza. El significado de este lugar que me mostró... va calando poco a poco.*"
     },
     "lunch2_seo_1": {
         "name": "{name}",
@@ -214,7 +214,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*Parecia querer escuchar más -- pero me contuve a propósito.*"
+        "text": "*Parecía querer escuchar más -- pero me contuve a propósito.*"
     },
     "lunch2_seo_8": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "¡Oh!¡ ¿Aqui estaban?!¡ Los encontre!"
+        "text": "¡Oh!¡ ¿Aquí estaban?!¡ Los encontre!"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
@@ -234,7 +234,7 @@
     },
     "lunch2_seo_12": {
         "name": "{name}",
-        "text": "*Dain se sienta sin dudarlo. El ceno de Seoyeon se frunce muy ligeramente.*"
+        "text": "*Dain se sienta sin dudarlo. El ceño de Seoyeon se frunce muy ligeramente.*"
     },
     "lunch2_seo_13": {
         "name": "Dain",
@@ -278,7 +278,7 @@
     },
     "lunch2_seo_c1_1": {
         "name": "{name}",
-        "text": "*El dedo de Seoyeon roza la comisura de mis labios. Suavemente. Despacio. -- Mas despacio de lo necesario.*"
+        "text": "*El dedo de Seoyeon roza la comisura de mis labios. Suavemente. Despacio. -- Más despacio de lo necesario.*"
     },
     "lunch2_seo_c1_2": {
         "name": "Seoyeon",
@@ -286,7 +286,7 @@
     },
     "lunch2_seo_c1_3": {
         "name": "Dain",
-        "text": "¡¿Que acabo de ver?!"
+        "text": "¡¿Qué acabo de ver?!"
     },
     "lunch2_seo_c1_4": {
         "name": "Seoyeon",
@@ -306,11 +306,11 @@
     },
     "lunch2_seo_c2_3": {
         "name": "{name}",
-        "text": "*Parece un poco molesta. -- Pero su compostura es impecable. Tipico de ella.*"
+        "text": "*Parece un poco molesta. -- Pero su compostura es impecable. Típico de ella.*"
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
-        "text": "*Donde pasó la mano de Seoyeon aún me tiene pensando. — Y los ojos sorprendidos de Dain también.*"
+        "text": "*Donde paso la mano de Seoyeon aún me tiene pensando. — Y los ojos sorprendidos de Dain también.*"
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
@@ -322,7 +322,7 @@
     },
     "lunch2_dain_2": {
         "name": "Dain",
-        "text": "¡Hoy pierdes!!¡ Preparate!!"
+        "text": "¡Hoy pierdes!!¡ Prepárate!!"
     },
     "lunch2_dain_3": {
         "name": "{name}",
@@ -338,7 +338,7 @@
     },
     "lunch2_dain_6": {
         "name": "Dain",
-        "text": "¡¿...Esto está amanado?!"
+        "text": "¡¿...Esto está amañado?!"
     },
     "lunch2_dain_7": {
         "name": "{name}",
@@ -391,7 +391,7 @@
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
-        "text": "*Sus lobulos. Rojos. -- Las chicas de esta escuela tienen orejas muy honestas.*"
+        "text": "*Sus lóbulos. Rojos. -- Las chicas de esta escuela tienen orejas muy honestas.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",

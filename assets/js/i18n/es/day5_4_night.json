@@ -37,7 +37,7 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*La azotea de Seoyeon. Esta de pie entre las macetas que ella misma cultivo.*"
+        "text": "*La azotea de Seoyeon. Esta de pie entre las macetas que ella misma cultivó.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -53,15 +53,15 @@
     },
     "perfect_seo_5": {
         "name": "{name}",
-        "text": "*Seoyeon extiende la mano. No el menique. La mano entera.*"
+        "text": "*Seoyeon extiende la mano. No el meñique. La mano entera.*"
     },
     "perfect_yuna_1": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca, el atico secreto. Yuna me entrega un relato.*"
+        "text": "*El anexo de la biblioteca, el ático secreto. Yuna me entrega un relato.*"
     },
     "perfect_yuna_2": {
         "name": "{name}",
-        "text": "*El titulo es el nombre del protagonista.*"
+        "text": "*El título es el nombre del protagonista.*"
     },
     "perfect_yuna_3": {
         "name": "Yuna",
@@ -69,7 +69,7 @@
     },
     "perfect_yuna_4": {
         "name": "{name}",
-        "text": "*La última frase del relato: 'Habia alguien que nunca desaparecio. Gracias a esa persona, yo también decidi no desaparecer.'*"
+        "text": "*La última frase del relato: 'Había alguien que nunca desapareció. Gracias a esa persona, yo también decidí no desaparecer.'*"
     },
     "perfect_yuna_5": {
         "name": "{name}",
@@ -97,15 +97,15 @@
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Cada eleccion apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
+        "text": "*Cada elección apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Cada eleccion apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
+        "text": "*Cada elección apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Cada eleccion apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
+        "text": "*Cada elección apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
     },
     "perfect_epilogue_2_seo": {
         "name": "{name}",
@@ -149,7 +149,7 @@
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "...Pense que funcionaria. Creo que ambos nos quedamos un pasó cortos."
+        "text": "...Pensé que funcionaria. Creo que ambos nos quedamos un paso cortos."
     },
     "bitter_seo_3": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "bitter_yuna_2": {
         "name": "Yuna",
-        "text": "...A veces pienso en ti. Cuando huelo la biblioteca. Deberia haber dicho más en ese entonces."
+        "text": "...A veces pienso en ti. Cuando huelo la biblioteca. Debería haber dicho más en ese entonces."
     },
     "bitter_yuna_3": {
         "name": "{name}",
@@ -173,7 +173,7 @@
     },
     "bitter_dain_2": {
         "name": "Dain",
-        "text": "Fue divertido, ¡en serio! ...Pero creo que solo fue diversion. Eso es un poco triste."
+        "text": "Fue divertido, ¡en serio! ...Pero creo que solo fue diversión. Eso es un poco triste."
     },
     "bitter_dain_3": {
         "name": "{name}",
@@ -181,7 +181,7 @@
     },
     "bitter_epilogue_1": {
         "name": "{name}",
-        "text": "*Después de la graduación. El contacto se volvió escaso. Una vez al mes pasó a cada dos meses, dejar mensajes sin leer se hizo costumbre, y un día — cuando intenté escribir algo y no supe qué decir — supe que había terminado.*"
+        "text": "*Después de la graduación. El contacto se volvió escaso. Una vez al mes paso a cada dos meses, dejar mensajes sin leer se hizo costumbre, y un día — cuando intenté escribir algo y no supe qué decir — supe que había terminado.*"
     },
     "bitter_epilogue_2": {
         "name": "{name}",
@@ -345,7 +345,7 @@
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*Dio un pasó hacia mí.*"
+        "text": "*Dio un paso hacia mí.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
@@ -425,7 +425,7 @@
     },
     "mayhem_1": {
         "name": "{name}",
-        "text": "*Seoyeon pasó a mi lado en el pasillo. No giró la cabeza. Esos 0,5 segundos — esta vez fue una cuchilla dirigida a mí.*"
+        "text": "*Seoyeon paso a mi lado en el pasillo. No giró la cabeza. Esos 0,5 segundos — esta vez fue una cuchilla dirigida a mí.*"
     },
     "mayhem_2": {
         "name": "{name}",
@@ -477,7 +477,7 @@
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*Y aun así, hoy las tres sonríen. Aun sabiendo la ruina de mañana — no puedo soltar el hoy.*"
+        "text": "*Y aun así, hoy las tres sonríen. Aún sabiendo la ruina de mañana — no puedo soltar el hoy.*"
     },
     "harem_7": {
         "name": "{name}",

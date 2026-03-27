@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*Segundo día. El uniforme se siente un poco más cómodo que ayer. No se si me estoy adaptando rápido o rindiéndome rápido.*"
+        "text": "*Segundo día. El uniforme se siente un poco más cómodo que ayer. No sé si me estoy adaptando rápido o rindiéndome rápido.*"
     },
     "morning2_start_2": {
         "name": "{name}",
@@ -21,15 +21,15 @@
     },
     "morning2_dain_4": {
         "name": "{name}",
-        "text": "¿No es un poco temprano para tanta energia?"
+        "text": "¿No es un poco temprano para tanta energía?"
     },
     "morning2_dain_5": {
         "name": "Dain",
-        "text": "¡Esto es lo normal!¡ Tu eres el que anda bajo de pilas!"
+        "text": "¡Esto es lo normal!¡ Tú eres el que anda bajo de pilas!"
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*Si existiera un mundo donde este volumen a las 8 de la manana fuera normal, Dain seria su presidenta.*"
+        "text": "*Si existiera un mundo donde este volumen a las 8 de la mañana fuera normal, Dain seria su presidenta.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "morning2_note_3": {
         "name": "{name}",
-        "text": "*La misma letra prolija de ayer. Corta. Y el lugar es especifico. -- El 'anexo' de la biblioteca? Es un lugar diferente al de ayer.*"
+        "text": "*La misma letra prolija de ayer. Corta. Y el lugar es específico. -- El 'anexo' de la biblioteca? Es un lugar diferente al de ayer.*"
     },
     "morning2_seo_1": {
         "name": "{name}",
@@ -61,7 +61,7 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Solo iba de pasó. -- Que tengas otro día divertido."
+        "text": "Solo iba de paso. -- Que tengas otro día divertido."
     },
     "morning2_minsu_1": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
-        "text": "Tenias algo en la ropa."
+        "text": "Tenías algo en la ropa."
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
@@ -133,11 +133,11 @@
     },
     "morning2_dain_react_2": {
         "name": "{name}",
-        "text": "*Seoyeon se aleja como si nada hubiera pasado. La voz de Dain llega desde atras.*"
+        "text": "*Seoyeon se aleja como si nada hubiera pasado. La voz de Dain llega desde atrás.*"
     },
     "morning2_dain_react_3": {
         "name": "Dain",
-        "text": "¡Oye!¡ ¿Que fue eso?!¡ ¿Te toco el hombro?!"
+        "text": "¡Oye!¡ ¿Qué fue eso?!¡ ¿Te toco el hombro?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
@@ -145,19 +145,19 @@
     },
     "morning2_dain_react_5": {
         "name": "Dain",
-        "text": "Polvo... ¡¿de verdad habia polvo?!"
+        "text": "Polvo... ¡¿de verdad había polvo?!"
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*Probablemente si habia. Quiza. -- Pero no creo que ese sea el punto.*"
+        "text": "*Probablemente si había. Quiza. -- Pero no creo que ese sea el punto.*"
     },
     "morning2_haeun_1": {
         "name": "{name}",
-        "text": "*En el pasillo donde desaparecio Seoyeon... una chica con una pulsera del consejo estudiantil se acerca.*"
+        "text": "*En el pasillo donde desapareció Seoyeon... una chica con una pulsera del consejo estudiantil se acerca.*"
     },
     "morning2_haeun_2": {
         "name": "Haeun",
-        "text": "¿Disculpa, tu eres el alumno nuevo, verdad? Soy Haeun, la vicepresidenta del consejo estudiantil."
+        "text": "¿Disculpa, tú eres el alumno nuevo, verdad? Soy Haeun, la vicepresidenta del consejo estudiantil."
     },
     "morning2_haeun_3": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "morning2_haeun_4": {
         "name": "Haeun",
-        "text": "La presidenta... o sea, Seoyeon sunbae parece un poco diferente ultimamente."
+        "text": "La presidenta... o sea, Seoyeon sunbae parece un poco diferente últimamente."
     },
     "morning2_haeun_5": {
         "name": "{name}",
