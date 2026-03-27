@@ -412,11 +412,10 @@ Object.assign(SCENARIO[4], {
     "morning4_end": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "selectByHighestAffinity": true,
         "branches": [
-            {"character": "Seoyeon", "next": "date_seo_1"},
-            {"character": "Yuna", "next": "date_yuna_1"},
-            {"character": "Dain", "next": "date_dain_1"}
+            {"condition": "route_seoyeon", "next": "date_seo_1"},
+            {"condition": "route_yuna", "next": "date_yuna_1"},
+            {"condition": "route_dain", "next": "date_dain_1"}
         ],
         "next": "date_seo_1"
     }

@@ -126,8 +126,14 @@ class StateManager {
      * @returns {boolean} 플래그 값 (없으면 false)
      */
     getFlag(flagName) {
+        // || 를 먼저 분리 (OR가 낮은 우선순위), 각 OR 그룹 안에서 && 처리
         if (flagName.includes('||')) {
-            return flagName.split('||').some(f => this.flags[f.trim()] ?? false);
+            return flagName.split('||').some(orPart => {
+                if (orPart.includes('&&')) {
+                    return orPart.split('&&').every(f => this.flags[f.trim()] ?? false);
+                }
+                return this.flags[orPart.trim()] ?? false;
+            });
         }
         if (flagName.includes('&&')) {
             return flagName.split('&&').every(f => this.flags[f.trim()] ?? false);

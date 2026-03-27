@@ -108,24 +108,6 @@ async function cacheFirst(request, cacheName) {
 }
 
 /**
- * Stale-while-revalidate: 캐시 즉시 반환 + 백그라운드에서 네트워크 갱신
- * CSS/JS 등 빠른 응답이 중요하면서도 갱신이 필요한 에셋에 적합
- */
-async function staleWhileRevalidate(request, cacheName) {
-    const cache = await caches.open(cacheName);
-    const cached = await cache.match(request);
-
-    const fetchPromise = fetch(request).then(response => {
-        if (response.ok) {
-            cache.put(request, response.clone());
-        }
-        return response;
-    }).catch(() => null);
-
-    return cached || await fetchPromise || new Response('Offline', { status: 503 });
-}
-
-/**
  * Network-only: 항상 네트워크에서 직접 로드 (캐시 사용 안 함)
  * 소스코드(CSS/JS) 수정 사항을 즉시 반영하기 위해 사용
  */

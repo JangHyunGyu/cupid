@@ -456,8 +456,8 @@ class FreeTalkSystem {
             this.isFreeTalking = false;
             this.isProcessingChat = false;
 
-            const endMsg = { es: "\n\n(La conversación ha terminado.)", ja: "\n\n（会話が終了しました。）", en: "\n\n(Conversation ended. Click to continue.)", fr: "\n\n(La conversation est terminée.)", de: "\n\n(Gespräch beendet. Klicke, um fortzufahren.)" }[lang] || "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
-            this.uiManager.messageEl.textContent += endMsg;
+            const endMsg = { es: "<br><br>(La conversación ha terminado.)", ja: "<br><br>（会話が終了しました。）", en: "<br><br>(Conversation ended. Click to continue.)", fr: "<br><br>(La conversation est terminée.)", de: "<br><br>(Gespräch beendet. Klicke, um fortzufahren.)" }[lang] || "<br><br>(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+            this.uiManager.messageEl.innerHTML += endMsg;
         }
     }
 
@@ -1055,8 +1055,8 @@ class FreeTalkSystem {
 
             // 종료 안내 메시지
             const langEnd = window.GAME_LANG || document.documentElement.lang || 'ko';
-            const endMsg = { es: "\n\n(La conversación ha terminado.)", ja: "\n\n（会話が終了しました。）", en: "\n\n(Conversation ended. Click to continue.)", fr: "\n\n(La conversation est terminée.)", de: "\n\n(Gespräch beendet. Klicke, um fortzufahren.)" }[langEnd] || "\n\n(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
-            this.uiManager.messageEl.textContent += endMsg;
+            const endMsg = { es: "<br><br>(La conversación ha terminado.)", ja: "<br><br>（会話が終了しました。）", en: "<br><br>(Conversation ended. Click to continue.)", fr: "<br><br>(La conversation est terminée.)", de: "<br><br>(Gespräch beendet. Klicke, um fortzufahren.)" }[langEnd] || "<br><br>(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+            this.uiManager.messageEl.innerHTML += endMsg;
         }, 500);
     }
 }

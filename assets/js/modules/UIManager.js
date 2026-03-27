@@ -218,10 +218,13 @@ class UIManager {
         // 버튼 안의 아이콘을 카메라 이모지로 통일
         try { this.imageUploadBtn.innerHTML = '<span aria-hidden="true">📸</span>'; } catch (e) {}
 
-        this.imageUploadBtn.addEventListener('click', () => {
-            if (this.chatInput && this.chatInput.disabled) return;
-            this.imageUploadInput.click();
-        });
+        if (!this.imageUploadBtn.dataset.bound) {
+            this.imageUploadBtn.addEventListener('click', () => {
+                if (this.chatInput && this.chatInput.disabled) return;
+                this.imageUploadInput.click();
+            });
+            this.imageUploadBtn.dataset.bound = '1';
+        }
 
         // input 역시 채팅 입력 래퍼 안으로 이동
         if (chatInputWrapper && this.imageUploadInput && this.imageUploadInput.parentElement !== chatInputWrapper) {
@@ -482,10 +485,16 @@ class UIManager {
         const sorted = [...changes].sort((a, b) => b.amount - a.amount);
 
         // 캐릭터 이름 매핑
-        const nameMap = {
-            Seoyeon: '서연', Yuna: '유나', Dain: '다인',
-            Teacher: '담임', Nurse: '보건'
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
+        const nameMapByLang = {
+            ko: { Seoyeon: '서연', Yuna: '유나', Dain: '다인', Teacher: '담임', Nurse: '보건' },
+            ja: { Seoyeon: 'ソヨン', Yuna: 'ユナ', Dain: 'ダイン', Teacher: '担任', Nurse: '保健' },
+            en: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Teacher', Nurse: 'Nurse' },
+            es: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Profesora', Nurse: 'Enfermera' },
+            fr: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professeure', Nurse: 'Infirmière' },
+            de: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Lehrerin', Nurse: 'Krankenschwester' }
         };
+        const nameMap = nameMapByLang[lang] || nameMapByLang['ko'];
 
         // 캐릭터 키 → 이미지 파일명 매핑 (화면 표시 여부 판별용)
         const charFileMap = {

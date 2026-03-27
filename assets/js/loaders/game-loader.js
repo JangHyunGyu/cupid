@@ -272,11 +272,13 @@
             var p = window.location.pathname;
             parts.push('path:' + p);
             parts.push('online:' + navigator.onLine);
-            if (window.__game) {
-                var g = window.__game;
+            if (window.gameEngine) {
+                var g = window.gameEngine;
                 if (g.stateManager) {
                     if (g.stateManager.currentDay) parts.push('day:' + g.stateManager.currentDay);
-                    if (g.stateManager.currentScene) parts.push('scene:' + g.stateManager.currentScene);
+                }
+                if (g.sceneRenderer) {
+                    if (g.sceneRenderer.currentSceneId) parts.push('scene:' + g.sceneRenderer.currentSceneId);
                 }
             }
             parts.push('vw:' + window.innerWidth + 'x' + window.innerHeight);
