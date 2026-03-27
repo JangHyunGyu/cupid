@@ -18,13 +18,13 @@ Object.assign(SCENARIO[2], {
     "after2_msg_dain": {
         "background": "assets/images/background/room_school.png",
         "sunset": true,
-        "character": { "center": { "src": "assets/images/characters/dain_active.png", "opacity": 0.35 } },
+        "characters": { "center": { "src": "assets/images/characters/dain_active.png", "opacity": 0.35 } },
         "next": "after2_msg_seo"
     },
     "after2_msg_seo": {
         "background": "assets/images/background/room_school.png",
         "sunset": true,
-        "character": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "next": "after2_msg_yuna"
     },
     "after2_msg_yuna": {
