@@ -221,11 +221,11 @@
         "text": "*La prof principale est assise au bureau, en train d'écrire. Elle s'arrête et lève la tête. — Nos regards se croisent.*"
     },
     "hidden_homeroom_d3_3": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "......"
     },
     "hidden_homeroom_d3_4": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...C'est rien. Des documents. — ...Être observateur, c'est bien. Parfois, c'est un défaut."
     },
     "hidden_homeroom_d3_choice": {
@@ -237,19 +237,19 @@
         ]
     },
     "hidden_homeroom_d3_reveal_1": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...Trop gênant pour appeler ça un roman. Trop vieux pour de l'exercice. Sept ans."
     },
     "hidden_homeroom_d3_reveal_2": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "J'ai commencé à la fac. Écriture créative. Après le diplôme, j'ai postulé à des prix littéraires — refusé trois fois en deux ans."
     },
     "hidden_homeroom_d3_reveal_3": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "J'ai passé le concours de l'enseignement. Prof de français. — Une aspirante romancière qui enseigne la littérature. Ironique, non ?"
     },
     "hidden_homeroom_d3_reveal_4": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Ce serait plus simple de dire que j'ai abandonné. Mais je continue à le sortir dans des salles vides — alors je suppose que non."
     },
     "hidden_homeroom_d3_reveal_choice": {
@@ -261,15 +261,15 @@
         ]
     },
     "hidden_homeroom_d3_reveal_choice_a": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Elle reste muette un instant.* ...De la persévérance. T'es le premier à le voir comme ça."
     },
     "hidden_homeroom_d3_reveal_choice_b": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "...La salle de classe est l'endroit le plus calme. Ironique, non ?"
     },
     "hidden_homeroom_d3_reveal_5": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...N'en parle à personne. Un prof qui partage ça avec un élève — c'est un secret."
     },
     "hidden_homeroom_d3_reveal_6": {
@@ -277,7 +277,7 @@
         "text": "*Elle sourit. Pas son sourire sec habituel — un peu maladroit. — ...Premier candidat lecteur en sept ans.*"
     },
     "hidden_homeroom_d3_hide_1": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...D'accord, fais comme si t'avais rien vu. S'il te plaît. — ...Merci."
     },
     "hidden_homeroom_d3_end": {
@@ -285,7 +285,7 @@
         "text": "*Elle replace ses cheveux derrière son oreille et sort. — 'S'il te plaît' est un mot rare chez elle.*"
     },
     "hidden_homeroom_d3_freetalk": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "*En train de discuter avec la prof principale dans la salle vide.*",
         "context": "Jour 3 matin. Découvert la prof en train d'écrire un manuscrit. Ton : Lumineux en surface mais des ombres en dessous. Parfois le sourire n'atteint pas les yeux. La sincérité transparaît dans la conversation décontractée.",
         "personality": "La prof était une aspirante romancière. Elle est devenue prof mais n'a jamais abandonné son rêve."

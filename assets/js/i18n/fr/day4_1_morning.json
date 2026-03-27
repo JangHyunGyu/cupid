@@ -48,7 +48,7 @@
         "text": "*Le portail est entrouvert. Quelqu'un sort. C'est la prof principale. En civil.*"
     },
     "hidden_homeroom_d4_2": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...Hein ? {name} ?"
     },
     "hidden_homeroom_d4_3": {
@@ -56,11 +56,11 @@
         "text": "Madame ? C'est le weekend, qu'est-ce que vous faites là ?"
     },
     "hidden_homeroom_d4_4": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Ah, c'est que — de la paperasse. ...Une prof reste une prof même le weekend."
     },
     "hidden_homeroom_d4_5": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...T'as mangé ? Un café, ça va, non ? — Enfin, un jus pour toi."
     },
     "hidden_homeroom_d4_choice": {
@@ -72,15 +72,15 @@
         ]
     },
     "hidden_homeroom_d4_cafe_1": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Première fois que je prends un verre avec un élève en dehors de l'école. Franchement ? Un peu gênant."
     },
     "hidden_homeroom_d4_cafe_2": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...Un peu. Après que tu m'aies découvert hier — j'ai pu écrire davantage. Être découvert, c'était... un soulagement."
     },
     "hidden_homeroom_d4_cafe_3": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Tu sais ce qui est le plus dur dans l'écriture ? Trouver le premier lecteur. Sans quelqu'un pour lire — l'histoire ne se termine jamais."
     },
     "hidden_homeroom_d4_cafe_choice": {
@@ -92,15 +92,15 @@
         ]
     },
     "hidden_homeroom_d4_cafe_choice_a": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Elle enveloppe la tasse de ses deux mains.* ...Secret. Tu le sauras en lisant."
     },
     "hidden_homeroom_d4_cafe_choice_b": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "C'est pas lourd. Lis, c'est tout. — Rien que ça, ça suffit."
     },
     "hidden_homeroom_d4_cafe_4": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...Tu veux bien être mon premier lecteur ?"
     },
     "hidden_homeroom_d4_cafe_5": {
@@ -108,15 +108,15 @@
         "text": "J'ai envie de le lire."
     },
     "hidden_homeroom_d4_cafe_6": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...Merci. Mais n'en parle à personne — d'accord ? ...C'est notre secret."
     },
     "hidden_homeroom_d4_decline": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...T'as raison. Je devrais pas. Allez, c'est le weekend. — Va t'amuser."
     },
     "hidden_homeroom_d4_freetalk": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "*En train de discuter avec la prof principale au café.*",
         "context": "Jour 4. Rencontre fortuite le weekend, café ensemble. Elle m'a demandé d'être son premier lecteur. Ton : La conversation est devenue sérieuse. Excitation et nervosité du rendez-vous. Plus de sincérité que de blagues. Moments d'honnêteté émotionnelle.",
         "personality": "La prof est plus détendue en civil. Déchirée entre passion pour l'écriture et sentiments."

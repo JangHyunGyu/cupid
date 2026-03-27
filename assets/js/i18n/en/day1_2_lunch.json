@@ -465,5 +465,29 @@
     "lunch_seo_1_aff_default": {
         "name": "Seoyeon",
         "text": "...You sitting down or what?"
+    },
+    "lunch_yuna_choice": {
+        "name": "{name}",
+        "text": "*I notice the book Yuna is reading.*",
+        "choices": [
+            "Is that book any good? Maybe I should read it too.",
+            "So you like reading."
+        ]
+    },
+    "lunch_yuna_c1_1": {
+        "name": "Yuna",
+        "text": "...This one? It's pretty good. Want me to lend it to you?"
+    },
+    "lunch_yuna_c1_2": {
+        "name": "Yuna",
+        "text": "...Let's talk about it when you finish. I'm curious what you think."
+    },
+    "lunch_yuna_c2_1": {
+        "name": "Yuna",
+        "text": "...Well, there's nothing else to do."
+    },
+    "lunch_yuna_c2_2": {
+        "name": "Yuna",
+        "text": "...But this library isn't bad. It's quiet."
     }
 }
