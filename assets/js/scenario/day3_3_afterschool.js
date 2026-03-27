@@ -119,7 +119,7 @@ Object.assign(SCENARIO[3], {
         "next": "after3_reject_for_dain_3"
     },
     "after3_reject_for_dain_3": {
-        "background": "assets/images/background/yuna_hideout.png",
+        "background": "assets/images/background/library_old.png",
         "sunset": true,
         "character": null,
         "next": "after3_reject_for_dain_3b"

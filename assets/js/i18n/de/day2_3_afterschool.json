@@ -1,7 +1,23 @@
 {
     "after2_start": {
         "name": "{name}",
-        "text": "*Nach der Schule. Zwei Benachrichtigungen auf meinem Handy.*\n\nDain: Komm in die Turnhalle!! Heute wird's ernst!!\nSeoyeon: Kannst du zur Schülerratskammer kommen? Uns fehlen Hände.\n\n*Nichts von Yuna. -- Das ist Yuna. Aber beim Packen meiner Tasche fällt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' fallen mir ins Auge.*"
+        "text": "*Nach der Schule. Zwei Benachrichtigungen auf meinem Handy.*"
+    },
+    "after2_msg_dain": {
+        "name": "Dain",
+        "text": "Komm in die Turnhalle!! Heute wird's ernst!!"
+    },
+    "after2_msg_seo": {
+        "name": "Seoyeon",
+        "text": "Kannst du zur Schülerratskammer kommen? Uns fehlen Hände."
+    },
+    "after2_msg_yuna": {
+        "name": "{name}",
+        "text": "*Nichts von Yuna. — Das ist Yuna. Aber beim Packen meiner Tasche fällt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' fallen mir ins Auge.*"
+    },
+    "after2_nurse_transition": {
+        "name": "{name}",
+        "text": "*Aber — die Schürfwunde am Ellbogen vom Sportunterricht stört mich die ganze Zeit. Ich sollte beim Krankenzimmer vorbeischauen.*"
     },
     "after2_choice": {
         "name": "{name}",
