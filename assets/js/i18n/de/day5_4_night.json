@@ -77,7 +77,7 @@
     },
     "perfect_dain_1": {
         "name": "{name}",
-        "text": "*Die Turnhalle. Dain schlagt ihren letzten Aufschlag. Wahrend sie ihre Bandagen lost.*"
+        "text": "*Die Turnhalle. Dain schlägt ihren letzten Aufschlag. Während sie ihre Bandagen löst.*"
     },
     "perfect_dain_2": {
         "name": "Dain",
@@ -97,15 +97,15 @@
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht funf Tage — jeder einzelne Tag war alles.*"
+        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht fünf Tage — jeder einzelne Tag war alles.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht funf Tage — jeder einzelne Tag war alles.*"
+        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht fünf Tage — jeder einzelne Tag war alles.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht funf Tage — jeder einzelne Tag war alles.*"
+        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht fünf Tage — jeder einzelne Tag war alles.*"
     },
     "perfect_epilogue_2_seo": {
         "name": "{name}",
@@ -149,7 +149,7 @@
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "...Ich dachte, es wurde klappen. Wir waren wohl beide einen Schritt zu kurz."
+        "text": "...Ich dachte, es würde klappen. Wir waren wohl beide einen Schritt zu kurz."
     },
     "bitter_seo_3": {
         "name": "{name}",
@@ -185,7 +185,7 @@
     },
     "bitter_epilogue_2": {
         "name": "{name}",
-        "text": "*Die Erinnerung an funf Tage bleibt. Es tut nicht weh. Es war nur — nicht genug. Fur uns beide.*"
+        "text": "*Die Erinnerung an fünf Tage bleibt. Es tut nicht weh. Es war nur — nicht genug. Für uns beide.*"
     },
     "bitter_epilogue_3": {
         "name": "System",

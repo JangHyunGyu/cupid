@@ -1,7 +1,7 @@
 {
     "after2_start": {
         "name": "{name}",
-        "text": "*Nach der Schule. Zwei Benachrichtigungen auf meinem Handy.*\n\nDain: Komm in die Turnhalle!! Heute wird's ernst!!\nSeoyeon: Kannst du zur Schülerratskammer kommen? Uns fehlen Haende.\n\n*Nichts von Yuna. -- Das ist Yuna. Aber beim Packen meiner Tasche fällt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' fallen mir ins Auge.*"
+        "text": "*Nach der Schule. Zwei Benachrichtigungen auf meinem Handy.*\n\nDain: Komm in die Turnhalle!! Heute wird's ernst!!\nSeoyeon: Kannst du zur Schülerratskammer kommen? Uns fehlen Hände.\n\n*Nichts von Yuna. -- Das ist Yuna. Aber beim Packen meiner Tasche fällt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' fallen mir ins Auge.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -14,15 +14,15 @@
     },
     "after2_dain_1": {
         "name": "{name}",
-        "text": "*Die Turnhalle. Dain macht Aufwärmuebungen vor dem Volleyballnetz.*"
+        "text": "*Die Turnhalle. Dain macht Aufwärmübungen vor dem Volleyballnetz.*"
     },
     "after2_dain_2": {
         "name": "Dain",
-        "text": "Du bist da?! Du bist spaet!!"
+        "text": "Du bist da?! Du bist spät!!"
     },
     "after2_dain_3": {
         "name": "{name}",
-        "text": "Ich bin fuenf Minuten früh dran."
+        "text": "Ich bin fünf Minuten früh dran."
     },
     "after2_dain_4": {
         "name": "Dain",
@@ -30,11 +30,11 @@
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*Das heißt, du warst früh dran, nicht dass ich spaet bin.*"
+        "text": "*Das heißt, du warst früh dran, nicht dass ich spät bin.*"
     },
     "after2_dain_6": {
         "name": "Dain",
-        "text": "Also, die Wette! Fuenf Aufschlaege -- schaffst du drei oder mehr übers Netz, gewinnst du! Wenn nicht, zahlst du heute Tteokbokki!"
+        "text": "Also, die Wette! Fünf Aufschläge -- schaffst du drei oder mehr übers Netz, gewinnst du! Wenn nicht, zahlst du heute Tteokbokki!"
     },
     "after2_dain_7": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "after2_dain_11": {
         "name": "{name}",
-        "text": "*Der Ballwechsel geht hin und her. Dains Bewegung ist -- eindeutig nicht gewoehnlich. Schnell, praezise, Muskelgedaechtnis in Aktion.*\n\n*Dieses Mädchen ist wirklich gut. Nicht nur 'mag Sport' gut -- sie bewegt sich wie jemand, der einmal alles darauf gesetzt hat.*\n\n*Endstand: 3 zu 2. Ich hab knapp gewonnen.*"
+        "text": "*Der Ballwechsel geht hin und her. Dains Bewegung ist -- eindeutig nicht gewöhnlich. Schnell, präzise, Muskelgedächtnis in Aktion.*\n\n*Dieses Mädchen ist wirklich gut. Nicht nur 'mag Sport' gut -- sie bewegt sich wie jemand, der einmal alles darauf gesetzt hat.*\n\n*Endstand: 3 zu 2. Ich hab knapp gewonnen.*"
     },
     "after2_dain_12": {
         "name": "Dain",
@@ -74,7 +74,7 @@
     },
     "after2_dain_16": {
         "name": "Dain",
-        "text": "*Boxt mir in die Schulter* Du Betrueger!! Hahaha -- aber das hat Spaß gemacht!"
+        "text": "*Boxt mir in die Schulter* Du Betrüger!! Hahaha -- aber das hat Spaß gemacht!"
     },
     "after2_dain_end": {
         "name": "{name}",
@@ -98,7 +98,7 @@
     },
     "after2_dain_end_3": {
         "name": "{name}",
-        "text": "*Dain hält die Staebchen an. Nur einen Moment.*"
+        "text": "*Dain hält die Stäbchen an. Nur einen Moment.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
@@ -142,7 +142,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*Das Wort 'bitten' scheint im Vokabular dieser Person nicht zu existieren.*\n\n*Ich fange an, Dokumente zu sortieren. Veranstaltungsbudgets, Vereinsantraege. Es ist ziemlich viel.*"
+        "text": "*Das Wort 'bitten' scheint im Vokabular dieser Person nicht zu existieren.*\n\n*Ich fange an, Dokumente zu sortieren. Veranstaltungsbudgets, Vereinsanträge. Es ist ziemlich viel.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -166,7 +166,7 @@
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "...Du bist überraschend nuetzlich."
+        "text": "...Du bist überraschend nützlich."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
-        "text": "Geht schon. Das ist alltaeglich."
+        "text": "Geht schon. Das ist alltäglich."
     },
     "after2_seo_neck_react": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "Das ist wirklich verspannt. Bleib kurz still.\n\n*Seoyeon steht auf und kommt hinter mich. Sie legt ihre Haende auf meine Schultern.*"
+        "text": "Das ist wirklich verspannt. Bleib kurz still.\n\n*Seoyeon steht auf und kommt hinter mich. Sie legt ihre Hände auf meine Schultern.*"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "*Zieht ihre Haende zurück* ...Ist nichts.\n\n*Ihr Ausdruck erstarrt für eine halbe Sekunde. -- Dann laechelt sie sofort. Perfekt.*"
+        "text": "*Zieht ihre Hände zurück* ...Ist nichts.\n\n*Ihr Ausdruck erstarrt für eine halbe Sekunde. -- Dann lächelt sie sofort. Perfekt.*"
     },
     "after2_seo_9": {
         "name": "{name}",
@@ -258,7 +258,7 @@
     },
     "after2_seo_end": {
         "name": "{name}",
-        "text": "*Ich verlasse die Schülerratskammer. Der Sonnenuntergang faerbt den Flur.*"
+        "text": "*Ich verlasse die Schülerratskammer. Der Sonnenuntergang färbt den Flur.*"
     },
     "after2_yuna_1": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "after2_yuna_2": {
         "name": "{name}",
-        "text": "*Ich schleiche mich rein. Yuna sitzt auf dem Sofa und liest. Der Sonnenuntergang stroemt durchs Fenster.*\n\n*Yuna schaut hoch. Sie ist nicht überrascht.*"
+        "text": "*Ich schleiche mich rein. Yuna sitzt auf dem Sofa und liest. Der Sonnenuntergang strömt durchs Fenster.*\n\n*Yuna schaut hoch. Sie ist nicht überrascht.*"
     },
     "after2_yuna_3": {
         "name": "Yuna",
@@ -290,11 +290,11 @@
     },
     "after2_yuna_8": {
         "name": "Yuna",
-        "text": "...Zufaellig."
+        "text": "...Zufällig."
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Eine zufaellig offene Tür. -- Yunas 'zufaellig' ist gleichbedeutend mit 'absichtlich'.*\n\n*Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrhörer.*"
+        "text": "*Eine zufällig offene Tür. -- Yunas 'zufällig' ist gleichbedeutend mit 'absichtlich'.*\n\n*Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrhörer.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -302,7 +302,7 @@
     },
     "after2_yuna_8d": {
         "name": "{name}",
-        "text": "*Ein ruhiges Klavierstück ertönt. Der Sonnenuntergang faerbt den Raum.*"
+        "text": "*Ein ruhiges Klavierstück ertönt. Der Sonnenuntergang färbt den Raum.*"
     },
     "after2_yuna_9": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Der Sonnenuntergang verblasst. Neben Yuna sitzen und Musik hören. Ein Moment, in dem keine Worte noetig sind.*"
+        "text": "*Der Sonnenuntergang verblasst. Neben Yuna sitzen und Musik hören. Ein Moment, in dem keine Worte nötig sind.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
