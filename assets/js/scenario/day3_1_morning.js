@@ -346,7 +346,7 @@ Object.assign(SCENARIO[3], {
         "choices": [
             {
                 "next": "morning3_date_seo_accept",
-                "setFlags": ["accepted_seoyeon_date", "route_seoyeon"],
+                "setFlags": ["accepted_seoyeon_date"],
                 "stats": {
                     "Seoyeon": {
                         "affinity": 5
@@ -406,7 +406,7 @@ Object.assign(SCENARIO[3], {
         "choices": [
             {
                 "next": "morning3_date_dain_accept",
-                "setFlags": ["accepted_dain_date", "route_dain"],
+                "setFlags": ["accepted_dain_date"],
                 "stats": {
                     "Dain": {
                         "affinity": 7
@@ -474,7 +474,7 @@ Object.assign(SCENARIO[3], {
         "choices": [
             {
                 "next": "morning3_date_yuna_accept",
-                "setFlags": ["accepted_yuna_date", "route_yuna"],
+                "setFlags": ["accepted_yuna_date"],
                 "stats": { "Yuna": { "affinity": 7 } }
             },
             {
