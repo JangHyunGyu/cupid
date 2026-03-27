@@ -2023,6 +2023,94 @@ fs.writeFileSync(path.join(__dirname, 'PLAYTEST_REPORT.md'), md, 'utf8');
 console.log('[REPORT] 플레이테스트 리포트 생성 완료 — ' + reportExplored + '경로, ' + sortedEndings.length + '종 엔딩');
 console.log('[REPORT] → PLAYTEST_REPORT.md\n');
 
+// ===== TEST: 25종 엔딩 타겟 도달 검증 =====
+console.log('[ENDING_CHECK] 25종 엔딩 타겟 도달 검증 시작...');
+
+// 25종 엔딩 정의: { name, flags, stats, expectedScenes(도달해야 할 씬 목록) }
+const endingTests = [
+    // 메인 3인 PERFECT (80+)
+    { name: '서연 PERFECT', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 85 }, expect: ['perfect_epilogue_4_seo'] },
+    { name: '유나 PERFECT', flags: { day4_confession_accepted: true, route_yuna: true, met_yuna: true }, stats: { Yuna: 85 }, expect: ['perfect_epilogue_4_yuna'] },
+    { name: '다인 PERFECT', flags: { day4_confession_accepted: true, route_dain: true, met_dain: true }, stats: { Dain: 85 }, expect: ['perfect_epilogue_4_dain'] },
+    // 메인 3인 TRUE (60~79)
+    { name: '서연 TRUE', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 70 }, expect: ['true_epilogue_7'] },
+    { name: '유나 TRUE', flags: { day4_confession_accepted: true, route_yuna: true, met_yuna: true }, stats: { Yuna: 70 }, expect: ['true_epilogue_7'] },
+    { name: '다인 TRUE', flags: { day4_confession_accepted: true, route_dain: true, met_dain: true }, stats: { Dain: 70 }, expect: ['true_epilogue_7'] },
+    // 메인 3인 GOOD (40~59)
+    { name: '서연 GOOD', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 50 }, expect: ['good_5_cg_seo'] },
+    { name: '유나 GOOD', flags: { day4_confession_accepted: true, route_yuna: true, met_yuna: true }, stats: { Yuna: 50 }, expect: ['good_5_cg_yuna'] },
+    { name: '다인 GOOD', flags: { day4_confession_accepted: true, route_dain: true, met_dain: true }, stats: { Dain: 50 }, expect: ['good_5_cg_dain'] },
+    // 메인 3인 BITTERSWEET (<40)
+    { name: '서연 BITTERSWEET', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 20 }, expect: ['bitter_epilogue_3'] },
+    { name: '유나 BITTERSWEET', flags: { day4_confession_accepted: true, route_yuna: true, met_yuna: true }, stats: { Yuna: 20 }, expect: ['bitter_epilogue_3'] },
+    { name: '다인 BITTERSWEET', flags: { day4_confession_accepted: true, route_dain: true, met_dain: true }, stats: { Dain: 20 }, expect: ['bitter_epilogue_3'] },
+    // 담임 3종
+    { name: '담임 PERFECT', flags: { homeroom_day5: true }, stats: { Teacher: 85 }, expect: ['hidden_perfect_homeroom_ep4'] },
+    { name: '담임 TRUE LOVE', flags: { homeroom_day5: true }, stats: { Teacher: 70 }, expect: ['hidden_true_homeroom_8'] },
+    { name: '담임 GOOD', flags: { homeroom_day5: true }, stats: { Teacher: 40 }, expect: ['hidden_good_homeroom_4'] },
+    // 보건 3종
+    { name: '보건 PERFECT', flags: { nurse_day5: true }, stats: { Nurse: 85 }, expect: ['hidden_perfect_nurse_ep4'] },
+    { name: '보건 TRUE LOVE', flags: { nurse_day5: true }, stats: { Nurse: 70 }, expect: ['hidden_true_nurse_8'] },
+    { name: '보건 GOOD', flags: { nurse_day5: true }, stats: { Nurse: 40 }, expect: ['hidden_good_nurse_4'] },
+    // 특수 엔딩
+    { name: 'HAREM END', flags: { ending_harem: true }, stats: {}, expect: ['harem_8'] },
+    { name: 'GOOD END (구제)', flags: { day4_confession_accepted: true, day3_has_multiple_dates: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 50 }, expect: ['good_5_cg_seo'] },
+    { name: 'MAYHEM END', flags: { day3_has_multiple_dates: true }, stats: {}, expect: ['mayhem_7'] },
+    { name: 'GOOD END (뒤늦은 고백)', flags: { day5_confessed: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 55 }, expect: ['good_5_cg_seo'] },
+    { name: 'CONFESS FAIL END', flags: { day5_confessed: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 30 }, expect: ['confess_fail_5'] },
+    { name: 'FRIEND END', flags: { day4_waited: true }, stats: {}, expect: ['friend_12'] },
+    { name: 'ALONE END', flags: {}, stats: {}, expect: ['alone_5'] },
+];
+
+const endingResults = { pass: [], fail: [] };
+for (const test of endingTests) {
+    const state = new SimState();
+    // 플래그 설정
+    for (const [flag, val] of Object.entries(test.flags)) state.setFlag(flag, val);
+    // 스탯 설정
+    for (const [char, val] of Object.entries(test.stats)) state.stats[char] = val;
+    // ending_start에서 시뮬레이션
+    const trail = [];
+    let current = 'ending_start';
+    let reached = false;
+    for (let i = 0; i < 500; i++) {
+        if (!current || current.endsWith('.html')) break;
+        trail.push(current);
+        if (test.expect.includes(current)) { reached = true; break; }
+        const entry = allScenes[current];
+        if (!entry) break;
+        const scene = entry.scene;
+        simApplyScene(scene, state);
+        if (scene.type === 'credits') {
+            const nxt = simResolveNext(scene, state);
+            if (nxt) { current = nxt; continue; } else break;
+        }
+        if (scene.choices && scene.choices.length > 0) {
+            const avail = simGetAvailableChoices(scene.choices, state);
+            if (avail.length === 0) break;
+            simApplyChoice(avail[0], state);
+            current = avail[0].next || simResolveNext(scene, state);
+            continue;
+        }
+        const next = simResolveNext(scene, state);
+        if (!next) break;
+        current = next;
+    }
+    if (reached) {
+        endingResults.pass.push(test.name);
+    } else {
+        endingResults.fail.push({ name: test.name, lastScene: trail[trail.length - 1] || '(none)', trail: trail.slice(-5) });
+        errors.push('[ENDING_CHECK] "' + test.name + '" 미도달 — 마지막 씬: ' + (trail[trail.length - 1] || 'none') + ' (기대: ' + test.expect.join('/') + ')');
+    }
+}
+
+console.log('[ENDING_CHECK] 결과: ' + endingResults.pass.length + '/25 도달, ' + endingResults.fail.length + '개 실패');
+if (endingResults.fail.length > 0) {
+    for (const f of endingResults.fail) {
+        console.log('  ❌ ' + f.name + ' → 마지막: ' + f.lastScene + ' (경로: ' + f.trail.join(' → ') + ')');
+    }
+}
+
 // ===== Print Results =====
 console.log('========== CUPID VALIDATION RESULTS ==========\n');
 console.log('Total scenes: ' + Object.keys(allScenes).length);
