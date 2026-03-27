@@ -1216,7 +1216,7 @@ html[lang="de"] .modal-content p {
     left: 50%;
     top: 40%;
     transform: translateX(-50%);
-    font-size: 2.8rem;
+    font-size: clamp(1.6rem, 4.5vmin, 3.2rem);
     font-weight: bold;
     pointer-events: none;
     z-index: 9999;
@@ -1224,39 +1224,29 @@ html[lang="de"] .modal-content p {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 2px 2px 8px rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: clamp(0.3rem, 0.8vmin, 0.6rem);
 }
 
 /* 멀티 호감도 팝업 (여러 캐릭터 동시 변화) */
 .affinity-popup.affinity-popup-multi {
     flex-direction: column;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 3vmin, 2.2rem);
     top: 35%;
 }
 
 .affinity-popup-multi .affinity-char-label {
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 1.6vmin, 1.1rem);
     font-weight: 600;
     opacity: 0.9;
     letter-spacing: 0.05em;
 }
 
 .affinity-popup-multi .emoji {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 4vmin, 2.8rem);
 }
 
 .affinity-popup-multi .value {
-    font-size: 1.8rem;
-}
-
-@media (max-width: 480px) {
-    .affinity-popup.affinity-popup-multi {
-        font-size: 1.4rem;
-        top: 30%;
-    }
-    .affinity-popup-multi .emoji { font-size: 1.8rem; }
-    .affinity-popup-multi .value { font-size: 1.3rem; }
-    .affinity-popup-multi .affinity-char-label { font-size: 0.8rem; }
+    font-size: clamp(1.1rem, 2.8vmin, 2rem);
 }
 
 /* 화면 밖 캐릭터 호감도 — 옆에서 슬라이드인 되는 이름 태그 */
@@ -1267,8 +1257,8 @@ html[lang="de"] .modal-content p {
     pointer-events: none;
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    padding: 0.6rem 1.2rem;
+    gap: clamp(0.3rem, 1vmin, 0.7rem);
+    padding: clamp(0.35rem, 0.9vmin, 0.7rem) clamp(0.7rem, 1.8vmin, 1.4rem);
     border-radius: 0 1.5rem 1.5rem 0;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(6px);
@@ -1292,13 +1282,13 @@ html[lang="de"] .modal-content p {
 .affinity-nametag.negative { color: #7799ff; }
 
 .affinity-nametag-name {
-    font-size: 1.1rem;
+    font-size: clamp(0.8rem, 1.8vmin, 1.2rem);
     color: #fff;
     opacity: 0.95;
 }
 
 .affinity-nametag-value {
-    font-size: 1.3rem;
+    font-size: clamp(0.9rem, 2.1vmin, 1.4rem);
     font-weight: 900;
 }
 
@@ -1316,11 +1306,7 @@ html[lang="de"] .modal-content p {
     100% { transform: translateX(100%); opacity: 0; }
 }
 
-@media (max-width: 480px) {
-    .affinity-nametag { padding: 0.4rem 0.8rem; gap: 0.4rem; }
-    .affinity-nametag-name { font-size: 0.85rem; }
-    .affinity-nametag-value { font-size: 1rem; }
-}
+/* nametag 반응형은 clamp()로 처리 — 별도 미디어쿼리 불필요 */
 
 /* 긍정적 변화 (+) */
 .affinity-popup.positive {
@@ -1338,12 +1324,12 @@ html[lang="de"] .modal-content p {
 }
 
 .affinity-popup .emoji {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 6vmin, 4rem);
     animation: emojiSpin 0.6s ease-out;
 }
 
 .affinity-popup .value {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 4vmin, 3rem);
     font-weight: 900;
 }
 
@@ -1351,7 +1337,7 @@ html[lang="de"] .modal-content p {
 @keyframes affinityFloat {
     0% {
         opacity: 0;
-        transform: translateX(-50%) translateY(30px) scale(0.3) rotate(-5deg);
+        transform: translateX(-50%) translateY(4vh) scale(0.3) rotate(-5deg);
     }
 
     10% {
@@ -1360,33 +1346,33 @@ html[lang="de"] .modal-content p {
     }
 
     20% {
-        transform: translateX(-50%) translateY(-15px) scale(1.2) rotate(-1deg);
+        transform: translateX(-50%) translateY(-2vh) scale(1.2) rotate(-1deg);
     }
 
     30% {
-        transform: translateX(-50%) translateY(-5px) scale(1.1) rotate(0deg);
+        transform: translateX(-50%) translateY(-0.7vh) scale(1.1) rotate(0deg);
     }
 
     40% {
-        transform: translateX(-50%) translateY(-5px) scale(1.05) rotate(0deg);
+        transform: translateX(-50%) translateY(-0.7vh) scale(1.05) rotate(0deg);
     }
 
     50% {
-        transform: translateX(-50%) translateY(-10px) scale(1.15) rotate(0deg);
+        transform: translateX(-50%) translateY(-1.3vh) scale(1.15) rotate(0deg);
     }
 
     60% {
-        transform: translateX(-50%) translateY(-5px) scale(1) rotate(0deg);
+        transform: translateX(-50%) translateY(-0.7vh) scale(1) rotate(0deg);
     }
 
     85% {
         opacity: 1;
-        transform: translateX(-50%) translateY(-30px) scale(1) rotate(0deg);
+        transform: translateX(-50%) translateY(-4vh) scale(1) rotate(0deg);
     }
 
     100% {
         opacity: 0;
-        transform: translateX(-50%) translateY(-100px) scale(0.6) rotate(3deg);
+        transform: translateX(-50%) translateY(-13vh) scale(0.6) rotate(3deg);
     }
 }
 
