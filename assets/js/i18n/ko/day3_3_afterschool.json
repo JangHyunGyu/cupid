@@ -38,7 +38,15 @@
   },
   "after3_reject_for_yuna_3": {
     "name": "{name}",
-    "text": "*다인이 체육관에서 혼자 공을 치고 있다. 나를 보고 \"아, 안녕!\" 하지만 얼굴을 돌린다. 눈이 빨갛다.*"
+    "text": "*다인이 체육관에서 혼자 공을 치고 있다.*"
+  },
+  "after3_reject_for_yuna_3_dain": {
+    "name": "다인",
+    "text": "아, 안녕!"
+  },
+  "after3_reject_for_yuna_3_react": {
+    "name": "{name}",
+    "text": "*하지만 얼굴을 돌린다. 눈이 빨갛다.*"
   },
   "after3_reject_for_yuna_4": {
     "name": "{name}",

@@ -316,8 +316,16 @@
         "text": "*Yuna's handwriting. One sentence longer than yesterday. — On the back, in tiny letters: 'Library annex at lunch.'*"
     },
     "morning2_greet_yuna_others": {
+        "name": "Seoyeon",
+        "text": "A letter this early?"
+    },
+    "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*Seoyeon walks by. \"A letter this early?\" She's smiling. But her eyes linger on the note for half a second. Dain: \"What's that! Let me see!\" She reaches for it.*"
+        "text": "*She's smiling. But her eyes linger on the note for half a second.*"
+    },
+    "morning2_greet_yuna_others_dain": {
+        "name": "Dain",
+        "text": "What's that! Let me see!"
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",

@@ -449,7 +449,15 @@
     },
     "after3_reject_for_yuna_3": {
         "name": "{name}",
-        "text": "*Dain frappe des balles seule au gymnase. Elle me voit et dit 'Ah, salut !' mais détourne le visage. Ses yeux sont rouges.*"
+        "text": "*Dain frappe des balles seule au gymnase.*"
+    },
+    "after3_reject_for_yuna_3_dain": {
+        "name": "Dain",
+        "text": "Ah, salut !"
+    },
+    "after3_reject_for_yuna_3_react": {
+        "name": "{name}",
+        "text": "*Mais elle détourne le visage. Ses yeux sont rouges.*"
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",

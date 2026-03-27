@@ -78,6 +78,18 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/gym.png",
         "sunset": true,
         "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_reject_for_yuna_3_dain"
+    },
+    "after3_reject_for_yuna_3_dain": {
+        "background": "assets/images/background/gym.png",
+        "sunset": true,
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_reject_for_yuna_3_react"
+    },
+    "after3_reject_for_yuna_3_react": {
+        "background": "assets/images/background/gym.png",
+        "sunset": true,
+        "character": "assets/images/characters/dain_sad.png",
         "next": "after3_reject_for_yuna_4"
     },
     "after3_reject_for_yuna_4": {

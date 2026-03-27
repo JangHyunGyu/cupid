@@ -449,7 +449,15 @@
     },
     "after3_reject_for_yuna_3": {
         "name": "{name}",
-        "text": "*ダインが体育館で一人ボールを打っている。僕を見て「あ、やっほー！」でも顔をそらす。目が赤い。*"
+        "text": "*ダインが体育館で一人ボールを打っている。*"
+    },
+    "after3_reject_for_yuna_3_dain": {
+        "name": "ダイン",
+        "text": "「あ、やっほー！」"
+    },
+    "after3_reject_for_yuna_3_react": {
+        "name": "{name}",
+        "text": "*でも顔をそらす。目が赤い。*"
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
