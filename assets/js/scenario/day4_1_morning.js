@@ -414,11 +414,8 @@ Object.assign(SCENARIO[4], {
         "character": null,
         "branches": [
             {"condition": "route_dain", "next": "date_dain_1"},
-            {"condition": "accepted_dain_date", "next": "date_dain_1"},
             {"condition": "route_yuna", "next": "date_yuna_1"},
-            {"condition": "accepted_yuna_date", "next": "date_yuna_1"},
             {"condition": "route_seoyeon", "next": "date_seo_1"},
-            {"condition": "accepted_seoyeon_date", "next": "date_seo_1"},
             {"next": "date_seo_1"}
         ]
     }
