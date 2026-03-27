@@ -201,7 +201,7 @@
     },
     "date_dain_pretty_high_2": {
         "name": "ダイン",
-        "text": "ちょっ！！予告なしに！！そういうこと言うなって！！"
+        "text": "「ちょっ！！予告なしに！！そういうこと言うなって！！」"
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
@@ -213,7 +213,7 @@
     },
     "date_dain_pretty_low": {
         "name": "ダイン",
-        "text": "え、急に！！ ……笑 ありがとうだけど、恥ずかしいからもうやめて。"
+        "text": "「え、急に！！ ……笑 ありがとうだけど、恥ずかしいからもうやめて。」"
     },
     "date_dain_bright": {
         "name": "ダイン",
@@ -257,7 +257,7 @@
     },
     "date_dain_shop_2": {
         "name": "{name}",
-        "text": "ダイン？"
+        "text": "「ダイン？」"
     },
     "date_dain_shop_3": {
         "name": "ダイン",
@@ -287,11 +287,11 @@
     },
     "pre_confess_minsu": {
         "name": "ミンス",
-        "text": "おい、デート中だろ？一言だけ"
+        "text": "「おい、デート中だろ？一言だけ」"
     },
     "pre_confess_minsu_2": {
         "name": "ミンス",
-        "text": "今度はちゃんとやれ。逃げるなよ"
+        "text": "「今度はちゃんとやれ。逃げるなよ」"
     },
     "pre_confess_callback": {
         "name": "{name}",

@@ -193,7 +193,7 @@
     },
     "hidden_homeroom_d2_1": {
         "name": "担任先生",
-        "text": "あ、{name}。ちょっと職員室に。"
+        "text": "「あ、{name}。ちょっと職員室に。」"
     },
     "hidden_homeroom_d2_2": {
         "name": "{name}",
@@ -201,7 +201,7 @@
     },
     "hidden_homeroom_d2_3": {
         "name": "担任先生",
-        "text": "前の学校の成績見たんだけど、国語が良かったね。読むのが好き？"
+        "text": "「前の学校の成績見たんだけど、国語が良かったね。読むのが好き？」"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
@@ -217,11 +217,11 @@
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "担任先生",
-        "text": "...そう。まあ、聞いてみただけ。"
+        "text": "「...そう。まあ、聞いてみただけ。」"
     },
     "hidden_homeroom_d2_5": {
         "name": "担任先生",
-        "text": "...そうか。まあ、ただ聞いてみただけだ。"
+        "text": "「...そうか。まあ、ただ聞いてみただけだ。」"
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
@@ -229,19 +229,19 @@
     },
     "hidden_homeroom_d2_7": {
         "name": "担任先生",
-        "text": "適応はどう？昨日より良くなった？"
+        "text": "「適応はどう？昨日より良くなった？」"
     },
     "hidden_homeroom_d2_8": {
         "name": "担任先生",
-        "text": "ダインはうるさいだろ？——あれが普通なんだ。でも悪い子じゃない。どちらかというと心配なタイプだ。"
+        "text": "「ダインはうるさいだろ？——あれが普通なんだ。でも悪い子じゃない。どちらかというと心配なタイプだ。」"
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
-        "text": "ありがとうございます、先生。"
+        "text": "「ありがとうございます、先生。」"
     },
     "hidden_homeroom_d2_10": {
         "name": "担任先生",
-        "text": "まあ、先生が生徒を心配するのは当たり前だから。業務だよ、業務。"
+        "text": "「まあ、先生が生徒を心配するのは当たり前だから。業務だよ、業務。」"
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -257,11 +257,11 @@
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "担任先生",
-        "text": "当然のことだよ。行きな。"
+        "text": "「当然のことだよ。行きな。」"
     },
     "hidden_homeroom_d2_11": {
         "name": "担任先生",
-        "text": "...転校生だからって特別扱いしたら他の子がなんて言うか。"
+        "text": "「...転校生だからって特別扱いしたら他の子がなんて言うか。」"
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",
@@ -269,7 +269,7 @@
     },
     "morning2_greet_seo_1": {
         "name": "ソヨン",
-        "text": "昨日屋上で言ったこと、まだ有効？"
+        "text": "「昨日屋上で言ったこと、まだ有効？」"
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
@@ -285,7 +285,7 @@
     },
     "morning2_greet_dain_1": {
         "name": "ダイン",
-        "text": "ねえ！昨日楽しかったよね、今日も一緒に何かしよ！"
+        "text": "「ねえ！昨日楽しかったよね、今日も一緒に何かしよ！」"
     },
     "morning2_greet_dain_2": {
         "name": "{name}",
