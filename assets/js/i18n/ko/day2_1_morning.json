@@ -287,7 +287,15 @@
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
-        "text": "*서연이 클립보드를 넘기며 지나간다. \"에너지 좋다.\" 빈정인지 감탄인지 알 수 없다. 유나는 무반응. 하지만 쪽지를 쓰던 손이 멈춰 있다.*"
+        "text": "*서연이 클립보드를 넘기며 지나간다.*"
+    },
+    "morning2_greet_dain_others_seo": {
+        "name": "서연",
+        "text": "에너지 좋다."
+    },
+    "morning2_greet_dain_others_yuna": {
+        "name": "{name}",
+        "text": "*빈정인지 감탄인지 알 수 없다. 유나는 무반응. 하지만 쪽지를 쓰던 손이 멈춰 있다.*"
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",

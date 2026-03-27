@@ -293,7 +293,15 @@
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
-        "text": "*Seoyeon pasa hojeando su portapapeles. \"Qué energía.\" No se sabe si es sarcasmo o admiración. Yuna no reacciona. Pero la mano que escribía se ha detenido.*"
+        "text": "*Seoyeon pasa hojeando su portapapeles.*"
+    },
+    "morning2_greet_dain_others_seo": {
+        "name": "Seoyeon",
+        "text": "Qué energía."
+    },
+    "morning2_greet_dain_others_yuna": {
+        "name": "{name}",
+        "text": "*No se sabe si es sarcasmo o admiración. Yuna no reacciona. Pero la mano que escribía se ha detenido.*"
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",

@@ -293,7 +293,15 @@
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
-        "text": "*Seoyeon passe en feuilletant son bloc. \"Quelle énergie.\" Sarcasme ou admiration ? Yuna ne réagit pas. Mais sa main qui écrivait s'est arrêtée.*"
+        "text": "*Seoyeon passe en feuilletant son bloc.*"
+    },
+    "morning2_greet_dain_others_seo": {
+        "name": "Seoyeon",
+        "text": "Quelle énergie."
+    },
+    "morning2_greet_dain_others_yuna": {
+        "name": "{name}",
+        "text": "*Sarcasme ou admiration ? Yuna ne réagit pas. Mais sa main qui écrivait s'est arrêtée.*"
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",

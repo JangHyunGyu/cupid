@@ -293,7 +293,15 @@
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
-        "text": "*ソヨンがクリップボードをめくりながら通り過ぎる。「元気だね。」皮肉か感心か分からない。ユナは無反応。でもメモを書いていた手が止まっている。*"
+        "text": "*ソヨンがクリップボードをめくりながら通り過ぎる。*"
+    },
+    "morning2_greet_dain_others_seo": {
+        "name": "ソヨン",
+        "text": "「元気だね。」"
+    },
+    "morning2_greet_dain_others_yuna": {
+        "name": "{name}",
+        "text": "*皮肉か感心か分からない。ユナは無反応。でもメモを書いていた手が止まっている。*"
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
