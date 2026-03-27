@@ -1444,7 +1444,7 @@ console.log('[FREETALK_CHECK] AI 프리토킹 검증 시작...');
 // FT-1: 모든 free_talk 씬에 필수 필드 확인 (name, next)
 for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     if (scene.type !== 'free_talk') continue;
-    if (!scene.name && !scene.character) {
+    if (!scene.name && !scene.character && !scene.characters) {
         errors.push('[FREETALK_SCENE] "' + sceneId + '" (day' + day + '): free_talk 씬에 name/character 없음 — 캐릭터 식별 불가');
     }
     if (!scene.next && !scene.branches && !scene.affinityBranches) {
