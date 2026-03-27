@@ -124,7 +124,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
-            { "next": "hidden_homeroom_d4_cafe_1", "stats": { "Teacher": { "affinity": 10 } } },
+            { "next": "hidden_homeroom_d4_cafe_1", "stats": { "Teacher": { "affinity": 12 } } },
             { "next": "hidden_homeroom_d4_decline", "stats": { "Teacher": { "affinity": 5 } } }
         ]
     },
@@ -150,7 +150,7 @@ Object.assign(SCENARIO[4], {
         "choices": [
             {
                 "next": "hidden_homeroom_d4_cafe_choice_a",
-                "stats": { "Teacher": { "affinity": 10 } }
+                "stats": { "Teacher": { "affinity": 12 } }
             },
             {
                 "next": "hidden_homeroom_d4_cafe_choice_b",
@@ -237,7 +237,7 @@ Object.assign(SCENARIO[4], {
         "choices": [
             {
                 "next": "hidden_nurse_d4_name_choice_a",
-                "stats": { "Nurse": { "affinity": 10 } }
+                "stats": { "Nurse": { "affinity": 12 } }
             },
             {
                 "next": "hidden_nurse_d4_name_choice_b",
@@ -264,7 +264,7 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
-            { "next": "hidden_nurse_d4_meal_walk", "stats": { "Nurse": { "affinity": 10 } } },
+            { "next": "hidden_nurse_d4_meal_walk", "stats": { "Nurse": { "affinity": 12 } } },
             { "next": "hidden_nurse_d4_pass", "stats": { "Nurse": { "affinity": 3 } } }
         ]
     },

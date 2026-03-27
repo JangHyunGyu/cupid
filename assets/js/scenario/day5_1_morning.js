@@ -104,7 +104,7 @@ Object.assign(SCENARIO[5], {
         "choices": [
             {
                 "next": "hidden_homeroom_d5_choice_a",
-                "stats": { "Teacher": { "affinity": 12 } }
+                "stats": { "Teacher": { "affinity": 14 } }
             },
             {
                 "next": "hidden_homeroom_d5_choice_b",
@@ -136,7 +136,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "setFlag": "homeroom_day5",
-        "stats": { "Teacher": { "affinity": 5 } },
+        "stats": { "Teacher": { "affinity": 7 } },
         "next": "hidden_homeroom_d5_freetalk"
     },
     "hidden_homeroom_d5_freetalk": {
@@ -184,7 +184,7 @@ Object.assign(SCENARIO[5], {
         "choices": [
             {
                 "next": "hidden_nurse_d5_choice_a",
-                "stats": { "Nurse": { "affinity": 12 } }
+                "stats": { "Nurse": { "affinity": 14 } }
             },
             {
                 "next": "hidden_nurse_d5_choice_b",
@@ -211,7 +211,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
         "setFlag": "nurse_day5",
-        "stats": { "Nurse": { "affinity": 7 } },
+        "stats": { "Nurse": { "affinity": 9 } },
         "next": "hidden_nurse_d5_freetalk"
     },
     "hidden_nurse_d5_freetalk": {

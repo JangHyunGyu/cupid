@@ -34,7 +34,7 @@ Object.assign(SCENARIO[2], {
         "sunset": true,
         "bgm": "daily2.mp3",
         "character": "assets/images/characters/dain_active.png",
-        "stats": { "Dain": { "affinity": 8 }, "Seoyeon": { "affinity": -5 }, "Yuna": { "affinity": -5 } },
+        "stats": { "Dain": { "affinity": 10 }, "Seoyeon": { "affinity": -5 }, "Yuna": { "affinity": -5 } },
         "setFlags": ["chose_dain_after2"],
         "next": "after2_dain_2"
     },
@@ -504,7 +504,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": { "Yuna": { "affinity": 8 }, "Seoyeon": { "affinity": -5 }, "Dain": { "affinity": -5 } },
+        "stats": { "Yuna": { "affinity": 10 }, "Seoyeon": { "affinity": -5 }, "Dain": { "affinity": -5 } },
         "next": "after2_yuna_3"
     },
     "after2_yuna_3": {
@@ -594,7 +594,7 @@ Object.assign(SCENARIO[2], {
                 "next": "after2_yuna_everyday",
                 "stats": {
                     "Yuna": {
-                        "affinity": 8
+                        "affinity": 10
                     }
                 }
             },
@@ -832,7 +832,7 @@ Object.assign(SCENARIO[2], {
         "choices": [
             {
                 "next": "hidden_nurse_d2_choice1_a",
-                "stats": { "Nurse": { "affinity": 8 } }
+                "stats": { "Nurse": { "affinity": 10 } }
             },
             {
                 "next": "hidden_nurse_d2_choice1_b",
@@ -871,7 +871,7 @@ Object.assign(SCENARIO[2], {
         "choices": [
             {
                 "next": "hidden_nurse_d2_choice2_a",
-                "stats": { "Nurse": { "affinity": 5 } }
+                "stats": { "Nurse": { "affinity": 7 } }
             },
             {
                 "next": "hidden_nurse_d2_choice2_b",

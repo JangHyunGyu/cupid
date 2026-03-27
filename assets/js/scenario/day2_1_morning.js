@@ -347,7 +347,7 @@ Object.assign(SCENARIO[2], {
         "choices": [
             {
                 "next": "hidden_homeroom_d2_choice1_a",
-                "stats": { "Teacher": { "affinity": 8 } }
+                "stats": { "Teacher": { "affinity": 10 } }
             },
             {
                 "next": "hidden_homeroom_d2_choice1_b",
@@ -401,7 +401,7 @@ Object.assign(SCENARIO[2], {
         "choices": [
             {
                 "next": "hidden_homeroom_d2_choice2_a",
-                "stats": { "Teacher": { "affinity": 5 } }
+                "stats": { "Teacher": { "affinity": 7 } }
             },
             {
                 "next": "hidden_homeroom_d2_choice2_b",

@@ -409,7 +409,7 @@ Object.assign(SCENARIO[3], {
                 "setFlags": ["accepted_dain_date"],
                 "stats": {
                     "Dain": {
-                        "affinity": 5
+                        "affinity": 7
                     }
                 }
             },
@@ -475,7 +475,7 @@ Object.assign(SCENARIO[3], {
             {
                 "next": "morning3_date_yuna_accept",
                 "setFlags": ["accepted_yuna_date"],
-                "stats": { "Yuna": { "affinity": 5 } }
+                "stats": { "Yuna": { "affinity": 7 } }
             },
             {
                 "next": "morning3_date_yuna_decline",
@@ -583,7 +583,7 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
-            { "next": "hidden_homeroom_d3_reveal_1", "stats": { "Teacher": { "affinity": 10 } } },
+            { "next": "hidden_homeroom_d3_reveal_1", "stats": { "Teacher": { "affinity": 12 } } },
             { "next": "hidden_homeroom_d3_hide_1", "stats": { "Teacher": { "affinity": 3 } } }
         ]
     },
@@ -613,7 +613,7 @@ Object.assign(SCENARIO[3], {
         "choices": [
             {
                 "next": "hidden_homeroom_d3_reveal_choice_a",
-                "stats": { "Teacher": { "affinity": 7 } }
+                "stats": { "Teacher": { "affinity": 9 } }
             },
             {
                 "next": "hidden_homeroom_d3_reveal_choice_b",
@@ -702,7 +702,7 @@ Object.assign(SCENARIO[3], {
         "choices": [
             {
                 "next": "hidden_nurse_d3_choice1_a",
-                "stats": { "Nurse": { "affinity": 5 } }
+                "stats": { "Nurse": { "affinity": 7 } }
             },
             {
                 "next": "hidden_nurse_d3_choice1_b",
@@ -741,7 +741,7 @@ Object.assign(SCENARIO[3], {
         "choices": [
             {
                 "next": "hidden_nurse_d3_choice2_a",
-                "stats": { "Nurse": { "affinity": 10 } }
+                "stats": { "Nurse": { "affinity": 12 } }
             },
             {
                 "next": "hidden_nurse_d3_choice2_b",
