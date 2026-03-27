@@ -619,6 +619,7 @@ Object.assign(SCENARIO[2], {
     "lunch2_dain_end": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_pout.png",
+        "stats": { "Seoyeon": { "affinity": -3 }, "Yuna": { "affinity": -3 } },
         "next": "after2_start"
     }
 });
