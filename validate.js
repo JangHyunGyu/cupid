@@ -727,6 +727,18 @@ class SimState {
 function simResolveNext(scene, state) {
     // 1. affinityBranches
     if (scene.affinityBranches && scene.affinityBranches.length > 0) {
+        if (scene.affinityChar) {
+            // 단일 캐릭터 호감도 분기 (affinityChar 지정)
+            const currentAff = state.getAffinity(scene.affinityChar);
+            const sorted = [...scene.affinityBranches]
+                .map((b, i) => ({ ...b, _i: i }))
+                .sort((a, b) => (b.minAffinity || 0) - (a.minAffinity || 0) || a._i - b._i);
+            for (const branch of sorted) {
+                if (currentAff >= (branch.minAffinity || 0)) return branch.next;
+            }
+            return scene.next || scene.fallback || null;
+        }
+        // 다중 캐릭터 호감도 분기 (각 branch에 char 지정)
         for (const ab of scene.affinityBranches) {
             const charKey = ab.char || ab.character;
             if (charKey && state.getAffinity(charKey) >= (ab.minAffinity || 0)) {
@@ -1781,65 +1793,157 @@ function extractRenderInfo(sceneId) {
     };
 }
 
-// DFS 리포트용 — 선택지 분기만 추적, 상태 기반 resolve
+// DFS 리포트용 — 선택지 셔플 + 엔딩 다양성 확보
 const reportPaths = [];
 const reportMax = 10000;
 let reportExplored = 0;
-const rStack = [{ sceneId: 'start', state: new SimState(), trail: ['start'], choices: [], depth: 0 }];
 
-while (rStack.length > 0 && reportExplored < reportMax) {
-    const { sceneId, state, trail, choices, depth } = rStack.pop();
-    if (depth > MAX_STEPS) continue;
-
-    if (sceneId && sceneId.endsWith('.html')) {
-        reportPaths.push({ endScene: getEndingName(trail), trail, choices, stats: { ...state.stats } });
-        reportExplored++;
-        continue;
+// 셔플 함수 (Fisher-Yates)
+function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
     }
+    return a;
+}
 
-    const entry = allScenes[sceneId];
-    if (!entry) continue;
-    const scene = entry.scene;
-    simApplyScene(scene, state);
+// 타겟 캐릭터 전용 선택 — 해당 캐릭터 관련 선택지만 고름 (DFS 아닌 단일 경로)
+function pickBestChoice(choices, target, sceneId) {
+    if (!target || choices.length <= 1) return choices[0];
+    const keywords = {
+        Seoyeon: ['seo', 'seoyeon', '서연'],
+        Yuna: ['yuna', '유나'],
+        Dain: ['dain', '다인'],
+        Teacher: ['homeroom', 'teacher', '담임'],
+        Nurse: ['nurse', '보건'],
+    }[target] || [];
+    for (const c of choices) {
+        const parts = [c.text || '', c.next || '', sceneId || '', c.setFlag || '', ...(c.setFlags || [])];
+        if (c.stats) parts.push(...Object.keys(c.stats));
+        const txt = parts.join(' ').toLowerCase();
+        if (keywords.some(k => txt.includes(k))) return c;
+    }
+    return choices[0]; // 매칭 없으면 첫 번째
+}
 
-    if (scene.type === 'credits') {
-        const nextId = simResolveNext(scene, state);
-        if (nextId) {
-            rStack.push({ sceneId: nextId, state: state.clone(), trail: [...trail, nextId], choices, depth: depth + 1 });
-        } else {
-            reportPaths.push({ endScene: getEndingName(trail), trail, choices, stats: { ...state.stats } });
+// 단일 경로 시뮬레이션 — 타겟 캐릭터에 맞춰 최적 선택지를 고르며 한 경로만 추적
+function simulateSinglePath(target) {
+    const state = new SimState();
+    const trail = ['start'];
+    const choicesMade = [];
+    let sceneId = 'start';
+
+    for (let step = 0; step < MAX_STEPS; step++) {
+        if (!sceneId || sceneId.endsWith('.html')) break;
+        const entry = allScenes[sceneId];
+        if (!entry) break;
+        const scene = entry.scene;
+        simApplyScene(scene, state);
+
+        if (scene.type === 'credits') {
+            const nextId = simResolveNext(scene, state);
+            if (nextId) { trail.push(nextId); sceneId = nextId; } else break;
+            continue;
         }
-        reportExplored++;
-        continue;
+        if (scene.type === 'free_talk' || scene.type === 'input') {
+            const nextId = simResolveNext(scene, state);
+            if (nextId) { trail.push(nextId); sceneId = nextId; } else break;
+            continue;
+        }
+        if (scene.choices && scene.choices.length > 0) {
+            const available = simGetAvailableChoices(scene.choices, state);
+            if (available.length === 0) break;
+            const chosen = pickBestChoice(available, target, sceneId);
+            simApplyChoice(chosen, state);
+            const cText = chosen.text || (i18nData[sceneId]?.choices?.[available.indexOf(chosen)]?.text) || '(선택)';
+            choicesMade.push({ scene: sceneId, text: cText });
+            // choice-level affinityBranches resolve
+            let nextId = null;
+            if (chosen.affinityBranches && chosen.affinityChar) {
+                const aff = state.getAffinity(chosen.affinityChar);
+                const sorted = [...chosen.affinityBranches].sort((a, b) => (b.minAffinity || 0) - (a.minAffinity || 0));
+                for (const b of sorted) { if (aff >= (b.minAffinity || 0)) { nextId = b.next; break; } }
+            }
+            if (!nextId) nextId = chosen.next;
+            if (nextId) { trail.push(nextId); sceneId = nextId; } else break;
+            continue;
+        }
+        const nextId = simResolveNext(scene, state);
+        if (nextId) { trail.push(nextId); sceneId = nextId; } else break;
     }
+    return { endScene: getEndingName(trail), trail, choices: choicesMade, stats: { ...state.stats } };
+}
 
-    if (scene.type === 'free_talk' || scene.type === 'input') {
+// 전략별 타겟 경로 생성 — 각 캐릭터 루트 + 특수 엔딩 조합
+const strategies = [
+    'Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse',   // 메인 5캐릭터
+    null,                                               // 무작위 (alone/friend 등)
+];
+const foundEndings = new Set();
+
+for (const target of strategies) {
+    const result = simulateSinglePath(target);
+    reportPaths.push(result);
+    foundEndings.add(result.endScene);
+    reportExplored++;
+}
+
+// 추가 DFS 탐색 — 남은 경로 수 채우기 (셔플 다양성)
+function shuffleArr(arr) { const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+const ROUNDS = 10;
+const PER_ROUND = Math.floor((reportMax - reportExplored) / ROUNDS);
+
+for (let round = 0; round < ROUNDS && reportExplored < reportMax; round++) {
+    const rStack = [{ sceneId: 'start', state: new SimState(), trail: ['start'], choices: [], depth: 0 }];
+    let roundExplored = 0;
+
+    while (rStack.length > 0 && roundExplored < PER_ROUND && reportExplored < reportMax) {
+        const { sceneId, state, trail, choices, depth } = rStack.pop();
+        if (depth > MAX_STEPS) continue;
+
+        if (sceneId && sceneId.endsWith('.html')) {
+            reportPaths.push({ endScene: getEndingName(trail), trail, choices, stats: { ...state.stats } });
+            reportExplored++; roundExplored++;
+            continue;
+        }
+        const entry = allScenes[sceneId];
+        if (!entry) continue;
+        const scene = entry.scene;
+        simApplyScene(scene, state);
+
+        if (scene.type === 'credits') {
+            const nextId = simResolveNext(scene, state);
+            if (nextId) rStack.push({ sceneId: nextId, state: state.clone(), trail: [...trail, nextId], choices, depth: depth + 1 });
+            else reportPaths.push({ endScene: getEndingName(trail), trail, choices, stats: { ...state.stats } });
+            reportExplored++; roundExplored++;
+            continue;
+        }
+        if (scene.type === 'free_talk' || scene.type === 'input') {
+            const nextId = simResolveNext(scene, state);
+            if (nextId) rStack.push({ sceneId: nextId, state: state.clone(), trail: [...trail, nextId], choices, depth: depth + 1 });
+            continue;
+        }
+        if (scene.choices && scene.choices.length > 0) {
+            for (const choice of shuffleArr(simGetAvailableChoices(scene.choices, state))) {
+                const cs = state.clone();
+                simApplyChoice(choice, cs);
+                const cText = choice.text || (i18nData[sceneId]?.choices?.[simGetAvailableChoices(scene.choices, state).indexOf(choice)]?.text) || '(선택)';
+                const nc = [...choices, { scene: sceneId, text: cText }];
+                if (choice.affinityBranches) {
+                    for (const ab of choice.affinityBranches) {
+                        if (ab.next) rStack.push({ sceneId: ab.next, state: cs.clone(), trail: [...trail, ab.next], choices: nc, depth: depth + 1 });
+                    }
+                    if (choice.next) rStack.push({ sceneId: choice.next, state: cs.clone(), trail: [...trail, choice.next], choices: nc, depth: depth + 1 });
+                } else if (choice.next) {
+                    rStack.push({ sceneId: choice.next, state: cs, trail: [...trail, choice.next], choices: nc, depth: depth + 1 });
+                }
+            }
+            continue;
+        }
         const nextId = simResolveNext(scene, state);
         if (nextId) rStack.push({ sceneId: nextId, state: state.clone(), trail: [...trail, nextId], choices, depth: depth + 1 });
-        continue;
     }
-
-    if (scene.choices && scene.choices.length > 0) {
-        const available = simGetAvailableChoices(scene.choices, state);
-        for (const choice of available) {
-            const cs = state.clone();
-            simApplyChoice(choice, cs);
-            const cText = choice.text || (i18nData[sceneId]?.choices?.[available.indexOf(choice)]?.text) || '(선택)';
-            const nc = [...choices, { scene: sceneId, text: cText }];
-            if (choice.affinityBranches) {
-                for (const ab of choice.affinityBranches) {
-                    if (ab.next) rStack.push({ sceneId: ab.next, state: cs.clone(), trail: [...trail, ab.next], choices: nc, depth: depth + 1 });
-                }
-                if (choice.next) rStack.push({ sceneId: choice.next, state: cs.clone(), trail: [...trail, choice.next], choices: nc, depth: depth + 1 });
-            } else if (choice.next) {
-                rStack.push({ sceneId: choice.next, state: cs, trail: [...trail, choice.next], choices: nc, depth: depth + 1 });
-            }
-        }
-        continue;
-    }
-
-    const nextId = simResolveNext(scene, state);
-    if (nextId) rStack.push({ sceneId: nextId, state: state.clone(), trail: [...trail, nextId], choices, depth: depth + 1 });
 }
 
 // 엔딩 통계
