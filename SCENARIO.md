@@ -41,7 +41,7 @@
 
 ### 호감도 적립 구조
 
-**선택지 기반 적립 (학생 최적 ~100, 담임/보건 최적 ~80):**
+**선택지 기반 적립 (학생 최적 ~100, 담임/보건 최적 ~100):**
 
 | 구간 | 호감도 변동 | 누적 |
 |------|-----------|------|
@@ -97,8 +97,8 @@
 | 엔딩 | 호감도 조건 | 기타 조건 |
 |------|-----------|----------|
 | **PERFECT END** | 80+ | `hidden_route_day5` + `!day3_has_multiple_dates` |
-| **TRUE LOVE END** | 40~79 | `hidden_route_day5` + `!day3_has_multiple_dates` |
-| **GOOD END** | 0~39 또는 복수데이트 | `hidden_route_day5` |
+| **TRUE LOVE END** | 60~79 | `hidden_route_day5` + `!day3_has_multiple_dates` |
+| **GOOD END** | 60 미만 | `hidden_route_day5` |
 
 ### 갤러리 해금 조건
 
@@ -141,11 +141,11 @@
 | 11 | **다인 GOOD END** | 다인 | 40~59 | `day4_confession_accepted` + `route_dain` + `!day3_has_multiple_dates` |
 | 12 | **다인 BITTERSWEET END** | 다인 | 40 미만 | `day4_confession_accepted` + `route_dain` + `!day3_has_multiple_dates` |
 | 13 | **담임 PERFECT END** | 담임 | 80+ | `homeroom_day5` + `!day3_has_multiple_dates` |
-| 14 | **담임 TRUE LOVE END** | 담임 | 40~79 | `homeroom_day5` + `!day3_has_multiple_dates` |
-| 15 | **담임 GOOD END** | 담임 | 0~39 또는 복수데이트 | `homeroom_day5` |
+| 14 | **담임 TRUE LOVE END** | 담임 | 60~79 | `homeroom_day5` + `!day3_has_multiple_dates` |
+| 15 | **담임 GOOD END** | 담임 | 60 미만 | `homeroom_day5` |
 | 16 | **보건 PERFECT END** | 보건 | 80+ | `nurse_day5` + `!day3_has_multiple_dates` |
-| 17 | **보건 TRUE LOVE END** | 보건 | 40~79 | `nurse_day5` + `!day3_has_multiple_dates` |
-| 18 | **보건 GOOD END** | 보건 | 0~39 또는 복수데이트 | `nurse_day5` |
+| 17 | **보건 TRUE LOVE END** | 보건 | 60~79 | `nurse_day5` + `!day3_has_multiple_dates` |
+| 18 | **보건 GOOD END** | 보건 | 60 미만 | `nurse_day5` |
 | 19 | **HAREM END** | - | - | `ending_harem` (양다리 + lunch3 나눠 먹기로 발각 회피) |
 | 20 | **GOOD END (구제)** | - | - | `day4_confession_accepted` + `day3_has_multiple_dates` (고백 수락으로 구제) |
 | 21 | **MAYHEM END** | - | - | `day3_has_multiple_dates` + `!ending_harem` + `!day4_confession_accepted` |
@@ -195,11 +195,11 @@
 ### Day 2 아침 — 등교 인사 분기 (A-2)
 
 **위치**: Day 2 아침 등교 시퀀스 (호감도 최고 캐릭터 기준, 1명만 출력)
-- 서연 호감 15+: 서연이 먼저 다가온다. "어제 옥상에서 한 말, 아직 유효한 거지?"
+- 서연 호감 10+: 서연이 먼저 다가온다. "어제 옥상에서 한 말, 아직 유효한 거지?"
 - 서연 기본: 서연이 멀리서 눈인사만 한다. 표정은 읽을 수 없다.
-- 다인 호감 15+: 다인이 뒤에서 어깨를 탁 친다. "야! 어제 재밌었다, 오늘도 같이 뭐 하자!"
+- 다인 호감 10+: 다인이 뒤에서 어깨를 탁 친다. "야! 어제 재밌었다, 오늘도 같이 뭐 하자!"
 - 다인 기본: 다인이 반 친구들과 웃으며 지나간다. 나를 보고 가볍게 손을 흔든다.
-- 유나 호감 15+: 책상 위에 접힌 쪽지가 놓여 있다. "...어제, 고마웠어."
+- 유나 호감 10+: 책상 위에 접힌 쪽지가 놓여 있다. "...어제, 고마웠어."
 - 유나 기본: 유나는 창가 자리에서 책을 읽고 있다. 내가 오는 걸 알고도 모른 척.
 
 ### Day 2 밤 — 문자 답장 호감도 반영 (A-3)

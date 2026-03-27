@@ -18,9 +18,9 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/room_school.png",
         "character": null,
         "affinityBranches": [
-            { "char": "Seoyeon", "minAffinity": 15, "next": "morning2_greet_seo_1" },
-            { "char": "Dain", "minAffinity": 15, "next": "morning2_greet_dain_1" },
-            { "char": "Yuna", "minAffinity": 15, "next": "morning2_greet_yuna_1" }
+            { "char": "Seoyeon", "minAffinity": 10, "next": "morning2_greet_seo_1" },
+            { "char": "Dain", "minAffinity": 10, "next": "morning2_greet_dain_1" },
+            { "char": "Yuna", "minAffinity": 10, "next": "morning2_greet_yuna_1" }
         ],
         "next": "morning2_dain_1"
     },
