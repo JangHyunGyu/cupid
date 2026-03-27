@@ -111,6 +111,10 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
             errors.push('[IMG_MISSING] ' + sceneId + ': character="' + scene.character + '" file not found');
         }
     }
+    // character가 객체인 경우 — characters(복수) 필드를 써야 함
+    if (scene.character && typeof scene.character === 'object') {
+        errors.push('[CHAR_TYPE] ' + sceneId + ': character 필드에 객체가 들어옴 — "characters"(복수) 필드를 사용해야 합니다. getAssetUrl() 런타임 에러 발생');
+    }
     // characters (multi-position)
     if (scene.characters) {
         for (const [pos, val] of Object.entries(scene.characters)) {
