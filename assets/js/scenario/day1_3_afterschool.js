@@ -389,7 +389,7 @@ Object.assign(SCENARIO[1], {
             },
             {
                 "next": "after_homeroom_honest_1",
-                "stats": { "Teacher": { "affinity": 5 } }
+                "stats": { "Teacher": { "affinity": 7 } }
             }
         ]
     },
@@ -448,7 +448,7 @@ Object.assign(SCENARIO[1], {
         "choices": [
             {
                 "next": "after_homeroom_honest_choice2a",
-                "stats": { "Teacher": { "affinity": 8 } }
+                "stats": { "Teacher": { "affinity": 10 } }
             },
             {
                 "next": "after_homeroom_honest_choice2b",
@@ -523,7 +523,7 @@ Object.assign(SCENARIO[1], {
         "choices": [
             {
                 "next": "after_nurse_enter_1",
-                "stats": { "Nurse": { "affinity": 5 } }
+                "stats": { "Nurse": { "affinity": 7 } }
             },
             {
                 "next": "after_nurse_skip",
@@ -586,7 +586,7 @@ Object.assign(SCENARIO[1], {
         "choices": [
             {
                 "next": "after_nurse_enter_choice_a",
-                "stats": { "Nurse": { "affinity": 8 } }
+                "stats": { "Nurse": { "affinity": 10 } }
             },
             {
                 "next": "after_nurse_enter_choice_b",

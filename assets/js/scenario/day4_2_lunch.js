@@ -178,7 +178,7 @@ Object.assign(SCENARIO[4], {
                 "next": "date_yuna_bright",
                 "stats": {
                     "Yuna": {
-                        "affinity": 5
+                        "affinity": 7
                     }
                 }
             }
@@ -319,7 +319,7 @@ Object.assign(SCENARIO[4], {
                 "next": "date_dain_bright",
                 "stats": {
                     "Dain": {
-                        "affinity": 5
+                        "affinity": 7
                     }
                 }
             },

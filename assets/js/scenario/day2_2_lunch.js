@@ -79,7 +79,7 @@ Object.assign(SCENARIO[2], {
     "lunch2_yuna_3": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": { "Yuna": { "affinity": 8 }, "Seoyeon": { "affinity": -3 }, "Dain": { "affinity": -3 } },
+        "stats": { "Yuna": { "affinity": 10 }, "Seoyeon": { "affinity": -3 }, "Dain": { "affinity": -3 } },
         "next": "lunch2_yuna_4"
     },
     "lunch2_yuna_4": {
@@ -168,7 +168,7 @@ Object.assign(SCENARIO[2], {
                 "next": "lunch2_yuna_c2_1",
                 "stats": {
                     "Yuna": {
-                        "affinity": 5
+                        "affinity": 7
                     }
                 }
             }
@@ -487,7 +487,7 @@ Object.assign(SCENARIO[2], {
     "lunch2_dain_2": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
-        "stats": { "Dain": { "affinity": 8 }, "Seoyeon": { "affinity": -3 }, "Yuna": { "affinity": -3 } },
+        "stats": { "Dain": { "affinity": 10 }, "Seoyeon": { "affinity": -3 }, "Yuna": { "affinity": -3 } },
         "branches": [
             { "condition": "chose_dain_lunch", "next": "lunch2_dain_3" },
             { "next": "lunch2_dain_3b" }
@@ -587,7 +587,7 @@ Object.assign(SCENARIO[2], {
                 "next": "lunch2_dain_c3_1",
                 "stats": {
                     "Dain": {
-                        "affinity": 5
+                        "affinity": 7
                     }
                 }
             }

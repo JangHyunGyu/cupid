@@ -195,7 +195,7 @@ Object.assign(SCENARIO[4], {
                 "next": "wall_seo_hug_1",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 12
+                        "affinity": 14
                     }
                 },
                 "setFlag": "day4_hugged_seoyeon"
@@ -204,7 +204,7 @@ Object.assign(SCENARIO[4], {
                 "next": "wall_seo_pinky_1",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 12
+                        "affinity": 14
                     }
                 },
                 "setFlag": "day4_pinky_seoyeon"
@@ -274,7 +274,7 @@ Object.assign(SCENARIO[4], {
                 "next": "wall_seo_line_react_1",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 8
+                        "affinity": 10
                     }
                 }
             },
@@ -282,7 +282,7 @@ Object.assign(SCENARIO[4], {
                 "next": "wall_seo_line_react_2",
                 "stats": {
                     "Seoyeon": {
-                        "affinity": 8
+                        "affinity": 10
                     }
                 }
             },
@@ -624,7 +624,7 @@ Object.assign(SCENARIO[4], {
                 "next": "wall_dain_cry_1",
                 "stats": {
                     "Dain": {
-                        "affinity": 15
+                        "affinity": 17
                     }
                 },
                 "setFlag": "day4_dain_tears"
@@ -1011,7 +1011,7 @@ Object.assign(SCENARIO[4], {
                 "next": "wall_yuna_moved_1",
                 "stats": {
                     "Yuna": {
-                        "affinity": 12
+                        "affinity": 14
                     }
                 },
                 "setFlag": "day4_yuna_ally"

@@ -162,7 +162,7 @@ Object.assign(SCENARIO[5], {
         "character": "assets/images/characters/yuna_shy.png",
         "stats": {
             "Yuna": {
-                "affinity": 5
+                "affinity": 7
             }
         },
         "next": "tour_yuna_freetalk"
@@ -263,7 +263,7 @@ Object.assign(SCENARIO[5], {
         "character": "assets/images/characters/dain_shy.png",
         "stats": {
             "Dain": {
-                "affinity": 5
+                "affinity": 7
             }
         },
         "next": "tour_dain_freetalk"

@@ -326,7 +326,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_yuna_choice2",
                 "stats": {
                     "Yuna": {
-                        "affinity": 10
+                        "affinity": 12
                     }
                 }
             }
@@ -444,7 +444,7 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_dain_choice1",
                 "stats": {
                     "Dain": {
-                        "affinity": 10
+                        "affinity": 12
                     }
                 }
             },

@@ -195,7 +195,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_give_dain_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "stats": { "Dain": { "affinity": 5 } },
+        "stats": { "Dain": { "affinity": 7 } },
         "setFlags": ["lunch3_gave_dain"],
         "next": "lunch3_dain_skin_check"
     },
@@ -265,7 +265,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_give_yuna_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": { "Yuna": { "affinity": 5 } },
+        "stats": { "Yuna": { "affinity": 7 } },
         "setFlags": ["lunch3_gave_yuna"],
         "next": "lunch3_yuna_skin_check"
     },
